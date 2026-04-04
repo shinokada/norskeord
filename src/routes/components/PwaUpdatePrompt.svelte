@@ -3,7 +3,9 @@
 
 	const { needRefresh, offlineReady, updateServiceWorker } = useRegisterSW({
 		onRegistered(r: ServiceWorkerRegistration | undefined) {
-			console.log('SW registered:', r);
+			if (import.meta.env.DEV) {
+				console.log('SW registered:', r);
+			}
 		},
 		onRegisterError(error: unknown) {
 			console.error('SW registration error:', error);
