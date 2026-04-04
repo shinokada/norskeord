@@ -28,7 +28,7 @@
 	let settingsOpen = $state(false);
 	let showGear = $state(false);
 
-	function speak() {
+	export function speak() {
 		if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
 			window.speechSynthesis.cancel();
 			const utterance = new SpeechSynthesisUtterance(word);
@@ -103,7 +103,7 @@
 					if (typeof v === 'string') speed = v;
 				}}
 			>
-				{#each speedOptions as opt}
+				{#each speedOptions as opt (opt.value)}
 					<ButtonToggle value={opt.value}>{opt.label}</ButtonToggle>
 				{/each}
 			</ButtonToggleGroup>
@@ -118,7 +118,7 @@
 					if (typeof v === 'string') pitch = v;
 				}}
 			>
-				{#each toneOptions as opt}
+				{#each toneOptions as opt (opt.value)}
 					<ButtonToggle value={opt.value}>{opt.label}</ButtonToggle>
 				{/each}
 			</ButtonToggleGroup>
