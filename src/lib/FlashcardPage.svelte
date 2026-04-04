@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { twMerge } from 'tailwind-merge';
-	import { Flashcard, ArrowRight, ArrowUp, ArrowDown } from '$lib';
+	import { Flashcard, ArrowRight, ArrowUp, ArrowDown, SpeakButton } from '$lib';
 	import { Modal, Button } from 'flowbite-svelte';
 	import SearchLinks from './SearchLinks.svelte';
 	import { getRandomPair } from '$lib/utils.js';
@@ -143,6 +143,7 @@
 	};
 
 	let langlang = $state('noreng');
+	let norskWord = $derived(langlang === 'noreng' ? front : back);
 
 	// Initialize with first word
 	$effect(() => {
@@ -285,6 +286,10 @@
 			Use ← → ↑ ↓ to navigate cards. Press N for new card. Or use buttons below.
 		{/if}
 	</p>
+
+	<div class="mt-2">
+		<SpeakButton word={norskWord} />
+	</div>
 
 	<!-- BUTTONS -->
 	<div class="grid grid-cols-3 gap-2 pt-4 sm:flex-row sm:justify-between">
