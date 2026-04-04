@@ -1,6 +1,7 @@
 export { default as Flashcard } from './Flashcard.svelte';
 export { default as FlashcardPage } from './FlashcardPage.svelte';
 export { default as FlashcardPageExtended } from './FlashcardPageExtended.svelte';
+export { default as VocabFlashcardPage } from './VocabFlashcardPage.svelte';
 
 export { default as No } from './No.svelte';
 export { default as RadioButton } from './RadioButton.svelte';
