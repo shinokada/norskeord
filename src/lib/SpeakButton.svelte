@@ -29,9 +29,11 @@
 	let showGear = $state(false);
 
 	export function speak() {
+		const text = word.trim();
+		if (!text) return;
 		if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
 			window.speechSynthesis.cancel();
-			const utterance = new SpeechSynthesisUtterance(word);
+			const utterance = new SpeechSynthesisUtterance(text);
 			utterance.lang = 'nb-NO';
 			utterance.rate = parseFloat(speed);
 			utterance.pitch = parseFloat(pitch);
