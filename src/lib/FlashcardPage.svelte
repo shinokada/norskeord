@@ -274,7 +274,7 @@
 		</div>
 	</Modal>
 	<!-- FLASHCARD -->
-	<div class="flip-box h-96 w-full bg-transparent md:w-1/2">
+	<div class="flip-box min-h-48 sm:min-h-64 md:min-h-96 w-full bg-transparent md:w-1/2">
 		{@render flashcard()}
 	</div>
 
