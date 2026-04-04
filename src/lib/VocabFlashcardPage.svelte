@@ -262,7 +262,7 @@
 
 		<button
 			type="button"
-			class="inline-flex w-full bg-gray-300 p-2 text-right disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+			class="inline-flex w-full items-center justify-end bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
 			onclick={newCard}
 			disabled={entries.length === 0}
 		>
