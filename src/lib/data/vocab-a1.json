@@ -1,0 +1,2279 @@
+[
+	{
+		"norsk": "hei",
+		"english": "hi",
+		"example": "Hei! Hvordan har du det?",
+		"example_english": "Hi! How are you?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "interjection"
+	},
+	{
+		"norsk": "hallo",
+		"english": "hello",
+		"example": "Hallo, jeg heter Anna.",
+		"example_english": "Hello, my name is Anna.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "interjection"
+	},
+	{
+		"norsk": "god morgen",
+		"english": "good morning",
+		"example": "God morgen! Vil du ha kaffe?",
+		"example_english": "Good morning! Do you want coffee?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "god dag",
+		"english": "good day",
+		"example": "God dag! Hva heter du?",
+		"example_english": "Good day! What is your name?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "god kveld",
+		"english": "good evening",
+		"example": "God kveld! Kom inn.",
+		"example_english": "Good evening! Come in.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "god natt",
+		"english": "good night",
+		"example": "God natt! Sov godt.",
+		"example_english": "Good night! Sleep well.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "ha det bra",
+		"english": "goodbye / take care",
+		"example": "Ha det bra! Vi ses i morgen.",
+		"example_english": "Take care! See you tomorrow.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "ha det",
+		"english": "bye",
+		"example": "Ha det! Vi snakkes.",
+		"example_english": "Bye! Talk to you later.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "takk",
+		"english": "thank you",
+		"example": "Takk for maten.",
+		"example_english": "Thank you for the food.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "interjection"
+	},
+	{
+		"norsk": "tusen takk",
+		"english": "thank you very much",
+		"example": "Tusen takk for hjelpen!",
+		"example_english": "Thank you very much for the help!",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "vær så snill",
+		"english": "please",
+		"example": "Vær så snill, kan du hjelpe meg?",
+		"example_english": "Please, can you help me?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "unnskyld",
+		"english": "excuse me / sorry",
+		"example": "Unnskyld, hvor er toalettet?",
+		"example_english": "Excuse me, where is the toilet?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "interjection"
+	},
+	{
+		"norsk": "beklager",
+		"english": "I'm sorry",
+		"example": "Beklager, jeg er sen.",
+		"example_english": "I'm sorry, I am late.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "verb"
+	},
+	{
+		"norsk": "ja",
+		"english": "yes",
+		"example": "Ja, jeg liker kaffe.",
+		"example_english": "Yes, I like coffee.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "adverb"
+	},
+	{
+		"norsk": "nei",
+		"english": "no",
+		"example": "Nei, jeg vil ikke.",
+		"example_english": "No, I don't want to.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "adverb"
+	},
+	{
+		"norsk": "Hvordan har du det?",
+		"english": "How are you?",
+		"example": "Hei! Hvordan har du det?",
+		"example_english": "Hi! How are you?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Jeg har det bra",
+		"english": "I'm fine",
+		"example": "Jeg har det bra, takk.",
+		"example_english": "I'm fine, thank you.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Hva heter du?",
+		"english": "What is your name?",
+		"example": "Hva heter du? Jeg heter Lars.",
+		"example_english": "What is your name? My name is Lars.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Jeg heter ...",
+		"english": "My name is ...",
+		"example": "Jeg heter Maria. Hva heter du?",
+		"example_english": "My name is Maria. What is your name?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "hyggelig å møte deg",
+		"english": "nice to meet you",
+		"example": "Hyggelig å møte deg, Lars!",
+		"example_english": "Nice to meet you, Lars!",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "velkommen",
+		"english": "welcome",
+		"example": "Velkommen til Norge!",
+		"example_english": "Welcome to Norway!",
+		"level": "A1",
+		"category": "greetings",
+		"part": "interjection"
+	},
+	{
+		"norsk": "vi ses",
+		"english": "see you later",
+		"example": "Ha det! Vi ses i morgen.",
+		"example_english": "Bye! See you tomorrow.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "på gjensyn",
+		"english": "goodbye (formal)",
+		"example": "Takk for i dag. På gjensyn!",
+		"example_english": "Thank you for today. Goodbye!",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Hvor er du fra?",
+		"english": "Where are you from?",
+		"example": "Hei! Hvor er du fra?",
+		"example_english": "Hi! Where are you from?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Jeg er fra ...",
+		"english": "I am from ...",
+		"example": "Jeg er fra Japan. Og du?",
+		"example_english": "I am from Japan. And you?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Snakker du norsk?",
+		"english": "Do you speak Norwegian?",
+		"example": "Snakker du norsk? Litt.",
+		"example_english": "Do you speak Norwegian? A little.",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Kan du gjenta det?",
+		"english": "Can you repeat that?",
+		"example": "Kan du gjenta det, vær så snill?",
+		"example_english": "Can you repeat that, please?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Jeg forstår ikke",
+		"english": "I don't understand",
+		"example": "Jeg forstår ikke. Kan du snakke saktere?",
+		"example_english": "I don't understand. Can you speak more slowly?",
+		"level": "A1",
+		"category": "greetings",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "én / ett",
+		"english": "one",
+		"example": "Jeg har ett eple.",
+		"example_english": "I have one apple.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "to",
+		"english": "two",
+		"example": "Jeg har to katter.",
+		"example_english": "I have two cats.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tre",
+		"english": "three",
+		"example": "Vi har tre rom.",
+		"example_english": "We have three rooms.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "fire",
+		"english": "four",
+		"example": "Hun har fire søsken.",
+		"example_english": "She has four siblings.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "fem",
+		"english": "five",
+		"example": "Det er fem epler på bordet.",
+		"example_english": "There are five apples on the table.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "seks",
+		"english": "six",
+		"example": "Barna har seks bøker.",
+		"example_english": "The children have six books.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "syv",
+		"english": "seven",
+		"example": "Det er syv dager i uka.",
+		"example_english": "There are seven days in a week.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "åtte",
+		"english": "eight",
+		"example": "Han er åtte år gammel.",
+		"example_english": "He is eight years old.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "ni",
+		"english": "nine",
+		"example": "Hun starter på jobb klokka ni.",
+		"example_english": "She starts work at nine o'clock.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "ti",
+		"english": "ten",
+		"example": "Det er ti elever i klassen.",
+		"example_english": "There are ten students in the class.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "elleve",
+		"english": "eleven",
+		"example": "Bussen går klokka elleve.",
+		"example_english": "The bus leaves at eleven o'clock.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tolv",
+		"english": "twelve",
+		"example": "Vi spiser lunsj klokka tolv.",
+		"example_english": "We eat lunch at twelve o'clock.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tretten",
+		"english": "thirteen",
+		"example": "Hun er tretten år gammel.",
+		"example_english": "She is thirteen years old.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "fjorten",
+		"english": "fourteen",
+		"example": "Han bor i gate nummer fjorten.",
+		"example_english": "He lives on street number fourteen.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "femten",
+		"english": "fifteen",
+		"example": "Det er femten minutter til bussen.",
+		"example_english": "It is fifteen minutes until the bus.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "seksten",
+		"english": "sixteen",
+		"example": "Jeg ble seksten år i går.",
+		"example_english": "I turned sixteen yesterday.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "sytten",
+		"english": "seventeen",
+		"example": "Det er sytten elever her.",
+		"example_english": "There are seventeen students here.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "atten",
+		"english": "eighteen",
+		"example": "Man kan kjøre bil når man er atten.",
+		"example_english": "You can drive a car when you are eighteen.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "nitten",
+		"english": "nineteen",
+		"example": "Klokka er nitten.",
+		"example_english": "It is seven o'clock (19:00).",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tjue",
+		"english": "twenty",
+		"example": "Han er tjue år gammel.",
+		"example_english": "He is twenty years old.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tretti",
+		"english": "thirty",
+		"example": "Bussen er tretti minutter sen.",
+		"example_english": "The bus is thirty minutes late.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "førti",
+		"english": "forty",
+		"example": "Det er førti elever på skolen.",
+		"example_english": "There are forty students at the school.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "femti",
+		"english": "fifty",
+		"example": "Boken koster femti kroner.",
+		"example_english": "The book costs fifty kroner.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "hundre",
+		"english": "one hundred",
+		"example": "Det er hundre kroner i lommeboka.",
+		"example_english": "There are one hundred kroner in my wallet.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tusen",
+		"english": "one thousand",
+		"example": "Boken koster tusen kroner.",
+		"example_english": "The book costs one thousand kroner.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "null",
+		"english": "zero",
+		"example": "Det er null grader ute.",
+		"example_english": "It is zero degrees outside.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "første",
+		"english": "first",
+		"example": "Hun kom på første plass.",
+		"example_english": "She came in first place.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+	{
+		"norsk": "andre",
+		"english": "second",
+		"example": "Han bor i andre etasje.",
+		"example_english": "He lives on the second floor.",
+		"level": "A1",
+		"category": "numbers",
+		"part": "adjective"
+	},
+
+	{
+		"norsk": "rød",
+		"english": "red",
+		"example": "Bilen er rød.",
+		"example_english": "The car is red.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "blå",
+		"english": "blue",
+		"example": "Himmelen er blå.",
+		"example_english": "The sky is blue.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "gul",
+		"english": "yellow",
+		"example": "Solen er gul.",
+		"example_english": "The sun is yellow.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "grønn",
+		"english": "green",
+		"example": "Gresset er grønt.",
+		"example_english": "The grass is green.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "hvit",
+		"english": "white",
+		"example": "Snøen er hvit.",
+		"example_english": "The snow is white.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "svart",
+		"english": "black",
+		"example": "Katten er svart.",
+		"example_english": "The cat is black.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "grå",
+		"english": "grey",
+		"example": "Himmelen er grå i dag.",
+		"example_english": "The sky is grey today.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "brun",
+		"english": "brown",
+		"example": "Hunden er brun.",
+		"example_english": "The dog is brown.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "rosa",
+		"english": "pink",
+		"example": "Blomsten er rosa.",
+		"example_english": "The flower is pink.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "oransje",
+		"english": "orange",
+		"example": "Appelsinen er oransje.",
+		"example_english": "The orange is orange-coloured.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "lilla",
+		"english": "purple",
+		"example": "Disse blomstene er lilla.",
+		"example_english": "These flowers are purple.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "beige",
+		"english": "beige",
+		"example": "Veggen er beige.",
+		"example_english": "The wall is beige.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "turkis",
+		"english": "turquoise",
+		"example": "Havet er turkis.",
+		"example_english": "The sea is turquoise.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "mørk",
+		"english": "dark",
+		"example": "Rommet er mørkt.",
+		"example_english": "The room is dark.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "lys",
+		"english": "light / bright",
+		"example": "Stuen er lys og fin.",
+		"example_english": "The living room is light and nice.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en farge",
+		"english": "a colour",
+		"example": "Hva er din favorittfarge?",
+		"example_english": "What is your favourite colour?",
+		"level": "A1",
+		"category": "colors",
+		"part": "noun"
+	},
+	{
+		"norsk": "fargerik",
+		"english": "colourful",
+		"example": "Maleriet er veldig fargerikt.",
+		"example_english": "The painting is very colourful.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "mørkeblå",
+		"english": "dark blue",
+		"example": "Jakken hans er mørkeblå.",
+		"example_english": "His jacket is dark blue.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "lyseblå",
+		"english": "light blue",
+		"example": "Himmelen er lyseblå om morgenen.",
+		"example_english": "The sky is light blue in the morning.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+	{
+		"norsk": "lysegrønn",
+		"english": "light green",
+		"example": "Planten har lysegrønne blader.",
+		"example_english": "The plant has light green leaves.",
+		"level": "A1",
+		"category": "colors",
+		"part": "adjective"
+	},
+
+	{
+		"norsk": "en mor",
+		"english": "a mother",
+		"example": "Min mor heter Kari.",
+		"example_english": "My mother's name is Kari.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en far",
+		"english": "a father",
+		"example": "Min far er lærer.",
+		"example_english": "My father is a teacher.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "et barn",
+		"english": "a child",
+		"example": "Barnet leker i parken.",
+		"example_english": "The child is playing in the park.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sønn",
+		"english": "a son",
+		"example": "Han har en sønn som heter Ole.",
+		"example_english": "He has a son named Ole.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei datter",
+		"english": "a daughter",
+		"example": "Hun har to døtre.",
+		"example_english": "She has two daughters.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bror",
+		"english": "a brother",
+		"example": "Min bror er fem år gammel.",
+		"example_english": "My brother is five years old.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei søster",
+		"english": "a sister",
+		"example": "Jeg har to søstre.",
+		"example_english": "I have two sisters.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bestemor",
+		"english": "a grandmother",
+		"example": "Min bestemor bor i Bergen.",
+		"example_english": "My grandmother lives in Bergen.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bestefar",
+		"english": "a grandfather",
+		"example": "Min bestefar liker å fiske.",
+		"example_english": "My grandfather likes to fish.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en onkel",
+		"english": "an uncle",
+		"example": "Min onkel bor i Oslo.",
+		"example_english": "My uncle lives in Oslo.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei tante",
+		"english": "an aunt",
+		"example": "Tanta mi er veldig snill.",
+		"example_english": "My aunt is very kind.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fetter",
+		"english": "a male cousin",
+		"example": "Min fetter er eldre enn meg.",
+		"example_english": "My cousin is older than me.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei kusine",
+		"english": "a female cousin",
+		"example": "Kusinen min bor i Trondheim.",
+		"example_english": "My cousin lives in Trondheim.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mann",
+		"english": "a husband / a man",
+		"example": "Mannen min heter Per.",
+		"example_english": "My husband's name is Per.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei kone",
+		"english": "a wife",
+		"example": "Kona hans er lege.",
+		"example_english": "His wife is a doctor.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en familie",
+		"english": "a family",
+		"example": "Vi er en liten familie.",
+		"example_english": "We are a small family.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en forelder",
+		"english": "a parent",
+		"example": "Begge foreldrene mine jobber.",
+		"example_english": "Both my parents work.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "et søsken",
+		"english": "a sibling",
+		"example": "Har du søsken?",
+		"example_english": "Do you have siblings?",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "et barnebarn",
+		"english": "a grandchild",
+		"example": "Bestemoren har tre barnebarn.",
+		"example_english": "The grandmother has three grandchildren.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en baby",
+		"english": "a baby",
+		"example": "Babyen sover nå.",
+		"example_english": "The baby is sleeping now.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en svigermor",
+		"english": "a mother-in-law",
+		"example": "Svigermoren min er veldig hyggelig.",
+		"example_english": "My mother-in-law is very nice.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en svigerfar",
+		"english": "a father-in-law",
+		"example": "Svigerfaren min er pensjonist.",
+		"example_english": "My father-in-law is retired.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tvilling",
+		"english": "a twin",
+		"example": "De er tvillinger.",
+		"example_english": "They are twins.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "en nevø",
+		"english": "a nephew",
+		"example": "Nevøen min er to år.",
+		"example_english": "My nephew is two years old.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei niese",
+		"english": "a niece",
+		"example": "Niesen min går på skole.",
+		"example_english": "My niece goes to school.",
+		"level": "A1",
+		"category": "family",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "et hode",
+		"english": "a head",
+		"example": "Jeg har vondt i hodet.",
+		"example_english": "I have a headache.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et øye",
+		"english": "an eye",
+		"example": "Hun har blå øyne.",
+		"example_english": "She has blue eyes.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et øre",
+		"english": "an ear",
+		"example": "Jeg hører med ørene mine.",
+		"example_english": "I hear with my ears.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en nese",
+		"english": "a nose",
+		"example": "Nesa mi er kald.",
+		"example_english": "My nose is cold.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en munn",
+		"english": "a mouth",
+		"example": "Åpne munnen din.",
+		"example_english": "Open your mouth.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tann",
+		"english": "a tooth",
+		"example": "Jeg pusser tennene mine to ganger om dagen.",
+		"example_english": "I brush my teeth twice a day.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hals",
+		"english": "a throat / neck",
+		"example": "Jeg har vondt i halsen.",
+		"example_english": "I have a sore throat.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en skulder",
+		"english": "a shoulder",
+		"example": "Han har brede skuldre.",
+		"example_english": "He has broad shoulders.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en arm",
+		"english": "an arm",
+		"example": "Jeg har vondt i armen.",
+		"example_english": "I have pain in my arm.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei hånd",
+		"english": "a hand",
+		"example": "Ta meg i hånden.",
+		"example_english": "Hold my hand.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en finger",
+		"english": "a finger",
+		"example": "Hun skar fingeren sin.",
+		"example_english": "She cut her finger.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mage",
+		"english": "a stomach",
+		"example": "Jeg har vondt i magen.",
+		"example_english": "I have a stomach ache.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et bein",
+		"english": "a leg",
+		"example": "Han brakk beinet sitt.",
+		"example_english": "He broke his leg.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et kne",
+		"english": "a knee",
+		"example": "Kneet mitt gjør vondt.",
+		"example_english": "My knee hurts.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fot",
+		"english": "a foot",
+		"example": "Jeg har store føtter.",
+		"example_english": "I have big feet.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kropp",
+		"english": "a body",
+		"example": "Kroppen trenger mat og hvile.",
+		"example_english": "The body needs food and rest.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et hjerte",
+		"english": "a heart",
+		"example": "Hjertet hans er sunt.",
+		"example_english": "His heart is healthy.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et hår",
+		"english": "hair",
+		"example": "Hun har langt hår.",
+		"example_english": "She has long hair.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en rygg",
+		"english": "a back",
+		"example": "Jeg har vondt i ryggen.",
+		"example_english": "I have back pain.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et ansikt",
+		"english": "a face",
+		"example": "Han har et vennlig ansikt.",
+		"example_english": "He has a friendly face.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en albue",
+		"english": "an elbow",
+		"example": "Han støtte albuen sin.",
+		"example_english": "He bumped his elbow.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tå",
+		"english": "a toe",
+		"example": "Jeg slo tåa mi.",
+		"example_english": "I stubbed my toe.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "et bryst",
+		"english": "a chest",
+		"example": "Brystet hans er bredt.",
+		"example_english": "His chest is broad.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en legg",
+		"english": "a calf",
+		"example": "Han har sterke legger.",
+		"example_english": "He has strong calves.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tommelfinger",
+		"english": "a thumb",
+		"example": "Hun gir tommel opp.",
+		"example_english": "She gives a thumbs up.",
+		"level": "A1",
+		"category": "body",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "et brød",
+		"english": "bread",
+		"example": "Jeg spiser brød til frokost.",
+		"example_english": "I eat bread for breakfast.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "melk",
+		"english": "milk",
+		"example": "Kan du kjøpe melk?",
+		"example_english": "Can you buy milk?",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "et egg",
+		"english": "an egg",
+		"example": "Jeg vil ha to egg til frokost.",
+		"example_english": "I want two eggs for breakfast.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ost",
+		"english": "cheese",
+		"example": "Jeg liker ost på brødet.",
+		"example_english": "I like cheese on my bread.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "et smør",
+		"english": "butter",
+		"example": "Legg smør på brødet.",
+		"example_english": "Put butter on the bread.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fisk",
+		"english": "fish (food)",
+		"example": "Vi spiser fisk til middag.",
+		"example_english": "We eat fish for dinner.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "et kjøtt",
+		"english": "meat",
+		"example": "Han spiser ikke kjøtt.",
+		"example_english": "He does not eat meat.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kylling",
+		"english": "chicken",
+		"example": "Kylling er sunt å spise.",
+		"example_english": "Chicken is healthy to eat.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en suppe",
+		"english": "soup",
+		"example": "Vil du ha suppe?",
+		"example_english": "Do you want soup?",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "et eple",
+		"english": "an apple",
+		"example": "Jeg spiser et eple om dagen.",
+		"example_english": "I eat an apple a day.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en banan",
+		"english": "a banana",
+		"example": "Aper liker bananer.",
+		"example_english": "Monkeys like bananas.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en appelsin",
+		"english": "an orange",
+		"example": "Appelsiner er fulle av vitamin C.",
+		"example_english": "Oranges are full of vitamin C.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tomat",
+		"english": "a tomato",
+		"example": "Tomater er røde.",
+		"example_english": "Tomatoes are red.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en potet",
+		"english": "a potato",
+		"example": "Vi har poteter til middag.",
+		"example_english": "We have potatoes for dinner.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en løk",
+		"english": "an onion",
+		"example": "Løk gir god smak i maten.",
+		"example_english": "Onion gives good flavour to food.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en gulrot",
+		"english": "a carrot",
+		"example": "Gulrøtter er sunne.",
+		"example_english": "Carrots are healthy.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "vann",
+		"english": "water",
+		"example": "Jeg drikker mye vann.",
+		"example_english": "I drink a lot of water.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en juice",
+		"english": "juice",
+		"example": "Vil du ha appelsinjuice?",
+		"example_english": "Do you want orange juice?",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kaffe",
+		"english": "coffee",
+		"example": "Nordmenn drikker mye kaffe.",
+		"example_english": "Norwegians drink a lot of coffee.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en te",
+		"english": "tea",
+		"example": "Vil du ha en kopp te?",
+		"example_english": "Do you want a cup of tea?",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "sukker",
+		"english": "sugar",
+		"example": "Vil du ha sukker i kaffen?",
+		"example_english": "Do you want sugar in your coffee?",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "salt",
+		"english": "salt",
+		"example": "Maten trenger mer salt.",
+		"example_english": "The food needs more salt.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sjokolade",
+		"english": "chocolate",
+		"example": "Barn liker sjokolade.",
+		"example_english": "Children like chocolate.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "en is",
+		"english": "ice cream",
+		"example": "Vi spiser is om sommeren.",
+		"example_english": "We eat ice cream in the summer.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+	{
+		"norsk": "ris",
+		"english": "rice",
+		"example": "Vi spiser ris til middag.",
+		"example_english": "We eat rice for dinner.",
+		"level": "A1",
+		"category": "food",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en hund",
+		"english": "a dog",
+		"example": "Hunden min heter Max.",
+		"example_english": "My dog's name is Max.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en katt",
+		"english": "a cat",
+		"example": "Katten sover på sofaen.",
+		"example_english": "The cat is sleeping on the sofa.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hest",
+		"english": "a horse",
+		"example": "Hesten løper fort.",
+		"example_english": "The horse runs fast.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei ku",
+		"english": "a cow",
+		"example": "Kua er på jordet.",
+		"example_english": "The cow is in the field.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en gris",
+		"english": "a pig",
+		"example": "Grisen er rosa.",
+		"example_english": "The pig is pink.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sau",
+		"english": "a sheep",
+		"example": "Sauer er hvite.",
+		"example_english": "Sheep are white.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fugl",
+		"english": "a bird",
+		"example": "Fuglen synger om morgenen.",
+		"example_english": "The bird sings in the morning.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mus",
+		"english": "a mouse",
+		"example": "Musen er liten.",
+		"example_english": "The mouse is small.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kanin",
+		"english": "a rabbit",
+		"example": "Kaninen spiser gulrøtter.",
+		"example_english": "The rabbit eats carrots.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "et lam",
+		"english": "a lamb",
+		"example": "Lammet er ved siden av mora.",
+		"example_english": "The lamb is next to its mother.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en rev",
+		"english": "a fox",
+		"example": "Reven er smart.",
+		"example_english": "The fox is smart.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bjørn",
+		"english": "a bear",
+		"example": "Bjørnen sover om vinteren.",
+		"example_english": "The bear sleeps in the winter.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "et ekorn",
+		"english": "a squirrel",
+		"example": "Ekornet klatrer i treet.",
+		"example_english": "The squirrel climbs the tree.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ulv",
+		"english": "a wolf",
+		"example": "Ulven bor i skogen.",
+		"example_english": "The wolf lives in the forest.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en elg",
+		"english": "a moose",
+		"example": "Elgen er Norges største dyr.",
+		"example_english": "The moose is Norway's largest animal.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ørn",
+		"english": "an eagle",
+		"example": "Ørnen flyr høyt.",
+		"example_english": "The eagle flies high.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en and",
+		"english": "a duck",
+		"example": "Anda svømmer i dammen.",
+		"example_english": "The duck is swimming in the pond.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en høne",
+		"english": "a hen",
+		"example": "Høna legger egg.",
+		"example_english": "The hen lays eggs.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en løve",
+		"english": "a lion",
+		"example": "Løven er kongen av dyrene.",
+		"example_english": "The lion is the king of the animals.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en elefant",
+		"english": "an elephant",
+		"example": "Elefanten har lang snabel.",
+		"example_english": "The elephant has a long trunk.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en slange",
+		"english": "a snake",
+		"example": "Slangen er lang.",
+		"example_english": "The snake is long.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en edderkopp",
+		"english": "a spider",
+		"example": "Edderkoppen lager nett.",
+		"example_english": "The spider makes a web.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en frosk",
+		"english": "a frog",
+		"example": "Frosken er grønn.",
+		"example_english": "The frog is green.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fisk",
+		"english": "a fish (animal)",
+		"example": "Fisken svømmer i havet.",
+		"example_english": "The fish swims in the sea.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tiger",
+		"english": "a tiger",
+		"example": "Tigeren er stor og sterk.",
+		"example_english": "The tiger is big and strong.",
+		"level": "A1",
+		"category": "animals",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "et hus",
+		"english": "a house",
+		"example": "Vi bor i et rødt hus.",
+		"example_english": "We live in a red house.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en leilighet",
+		"english": "an apartment",
+		"example": "Hun bor i en leilighet i Oslo.",
+		"example_english": "She lives in an apartment in Oslo.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et rom",
+		"english": "a room",
+		"example": "Huset har tre rom.",
+		"example_english": "The house has three rooms.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et kjøkken",
+		"english": "a kitchen",
+		"example": "Vi lager mat på kjøkkenet.",
+		"example_english": "We cook food in the kitchen.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en stue",
+		"english": "a living room",
+		"example": "Vi ser på TV i stuen.",
+		"example_english": "We watch TV in the living room.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et soverom",
+		"english": "a bedroom",
+		"example": "Barnet sover på soverommet.",
+		"example_english": "The child is sleeping in the bedroom.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et baderom",
+		"english": "a bathroom",
+		"example": "Badet er rent.",
+		"example_english": "The bathroom is clean.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dør",
+		"english": "a door",
+		"example": "Lukk døra, vær så snill.",
+		"example_english": "Close the door, please.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et vindu",
+		"english": "a window",
+		"example": "Åpne vinduet, det er varmt.",
+		"example_english": "Open the window, it's hot.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et bord",
+		"english": "a table",
+		"example": "Maten er på bordet.",
+		"example_english": "The food is on the table.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en stol",
+		"english": "a chair",
+		"example": "Sett deg på stolen.",
+		"example_english": "Sit down on the chair.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei seng",
+		"english": "a bed",
+		"example": "Jeg er trøtt og vil sove i senga.",
+		"example_english": "I am tired and want to sleep in bed.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sofa",
+		"english": "a sofa",
+		"example": "Katten sitter på sofaen.",
+		"example_english": "The cat is sitting on the sofa.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et gulv",
+		"english": "a floor",
+		"example": "Gulvet er rent.",
+		"example_english": "The floor is clean.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et tak",
+		"english": "a ceiling / a roof",
+		"example": "Taket er hvitt.",
+		"example_english": "The ceiling is white.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en vegg",
+		"english": "a wall",
+		"example": "Bildet henger på veggen.",
+		"example_english": "The picture hangs on the wall.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lampe",
+		"english": "a lamp",
+		"example": "Lampen lyser i stuen.",
+		"example_english": "The lamp lights up the living room.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et skap",
+		"english": "a wardrobe / a cupboard",
+		"example": "Klærne er i skapet.",
+		"example_english": "The clothes are in the wardrobe.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et kjøleskap",
+		"english": "a refrigerator",
+		"example": "Melken er i kjøleskapet.",
+		"example_english": "The milk is in the refrigerator.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ovn",
+		"english": "an oven / a stove",
+		"example": "Hun baker i ovnen.",
+		"example_english": "She bakes in the oven.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "et teppe",
+		"english": "a rug / a carpet",
+		"example": "Teppet er rødt.",
+		"example_english": "The rug is red.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en gardin",
+		"english": "a curtain",
+		"example": "Gardinene er hvite.",
+		"example_english": "The curtains are white.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en nøkkel",
+		"english": "a key",
+		"example": "Hvor er nøkkelen min?",
+		"example_english": "Where is my key?",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hage",
+		"english": "a garden",
+		"example": "Vi har en stor hage.",
+		"example_english": "We have a large garden.",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+	{
+		"norsk": "en adresse",
+		"english": "an address",
+		"example": "Hva er adressen din?",
+		"example_english": "What is your address?",
+		"level": "A1",
+		"category": "home",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "mandag",
+		"english": "Monday",
+		"example": "Vi begynner skolen på mandag.",
+		"example_english": "We start school on Monday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "tirsdag",
+		"english": "Tuesday",
+		"example": "Jeg har norsk på tirsdag.",
+		"example_english": "I have Norwegian on Tuesday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "onsdag",
+		"english": "Wednesday",
+		"example": "Vi spiser pizza på onsdag.",
+		"example_english": "We eat pizza on Wednesday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "torsdag",
+		"english": "Thursday",
+		"example": "Torsdag er min favorittdag.",
+		"example_english": "Thursday is my favourite day.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "fredag",
+		"english": "Friday",
+		"example": "Vi ser film på fredag.",
+		"example_english": "We watch a film on Friday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "lørdag",
+		"english": "Saturday",
+		"example": "Lørdag er en fridag.",
+		"example_english": "Saturday is a day off.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "søndag",
+		"english": "Sunday",
+		"example": "Vi spiser middag med familien på søndag.",
+		"example_english": "We eat dinner with the family on Sunday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dag",
+		"english": "a day",
+		"example": "Det er syv dager i ei uke.",
+		"example_english": "There are seven days in a week.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "ei uke",
+		"english": "a week",
+		"example": "Jeg er i Norge i to uker.",
+		"example_english": "I am in Norway for two weeks.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "en måned",
+		"english": "a month",
+		"example": "Det er tolv måneder i et år.",
+		"example_english": "There are twelve months in a year.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "et år",
+		"english": "a year",
+		"example": "Han er fem år gammel.",
+		"example_english": "He is five years old.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "i dag",
+		"english": "today",
+		"example": "I dag er det mandag.",
+		"example_english": "Today is Monday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "adverb"
+	},
+	{
+		"norsk": "i morgen",
+		"english": "tomorrow",
+		"example": "I morgen er det tirsdag.",
+		"example_english": "Tomorrow is Tuesday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "adverb"
+	},
+	{
+		"norsk": "i går",
+		"english": "yesterday",
+		"example": "I går var det søndag.",
+		"example_english": "Yesterday was Sunday.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "adverb"
+	},
+	{
+		"norsk": "januar",
+		"english": "January",
+		"example": "Januar er den første måneden.",
+		"example_english": "January is the first month.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "februar",
+		"english": "February",
+		"example": "Februar er en kort måned.",
+		"example_english": "February is a short month.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "mars",
+		"english": "March",
+		"example": "Mars er en vårmåned.",
+		"example_english": "March is a spring month.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "april",
+		"english": "April",
+		"example": "Det regner i april.",
+		"example_english": "It rains in April.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "mai",
+		"english": "May",
+		"example": "Mai er en fin måned i Norge.",
+		"example_english": "May is a nice month in Norway.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "juni",
+		"english": "June",
+		"example": "Vi er på ferie i juni.",
+		"example_english": "We are on holiday in June.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "juli",
+		"english": "July",
+		"example": "Juli er den varmeste måneden.",
+		"example_english": "July is the warmest month.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "august",
+		"english": "August",
+		"example": "Skolen starter i august.",
+		"example_english": "School starts in August.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "september",
+		"english": "September",
+		"example": "Høsten begynner i september.",
+		"example_english": "Autumn begins in September.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "oktober",
+		"english": "October",
+		"example": "Det er Halloween i oktober.",
+		"example_english": "It is Halloween in October.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "november",
+		"english": "November",
+		"example": "Det er mørkt i november.",
+		"example_english": "It is dark in November.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+	{
+		"norsk": "desember",
+		"english": "December",
+		"example": "Jul er i desember.",
+		"example_english": "Christmas is in December.",
+		"level": "A1",
+		"category": "days-months",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en skole",
+		"english": "a school",
+		"example": "Jeg går på skole hver dag.",
+		"example_english": "I go to school every day.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lærer",
+		"english": "a teacher",
+		"example": "Læreren min er snill.",
+		"example_english": "My teacher is kind.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en elev",
+		"english": "a pupil / a student",
+		"example": "Det er tjue elever i klassen.",
+		"example_english": "There are twenty pupils in the class.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "et klasserom",
+		"english": "a classroom",
+		"example": "Klasserommet er stort.",
+		"example_english": "The classroom is large.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bok",
+		"english": "a book",
+		"example": "Jeg leser en bok.",
+		"example_english": "I am reading a book.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en penn",
+		"english": "a pen",
+		"example": "Kan jeg låne pennen din?",
+		"example_english": "Can I borrow your pen?",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en blyant",
+		"english": "a pencil",
+		"example": "Jeg skriver med blyant.",
+		"example_english": "I write with a pencil.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "et papir",
+		"english": "paper",
+		"example": "Kan du gi meg et stykke papir?",
+		"example_english": "Can you give me a piece of paper?",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ryggsekk",
+		"english": "a backpack",
+		"example": "Ryggsekken min er tung.",
+		"example_english": "My backpack is heavy.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tavle",
+		"english": "a blackboard / whiteboard",
+		"example": "Læreren skriver på tavla.",
+		"example_english": "The teacher writes on the board.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "et viskelær",
+		"english": "an eraser",
+		"example": "Jeg trenger et viskelær.",
+		"example_english": "I need an eraser.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en linjal",
+		"english": "a ruler",
+		"example": "Kan du gi meg linjalen?",
+		"example_english": "Can you give me the ruler?",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "et hefte",
+		"english": "a notebook",
+		"example": "Jeg skriver i heftet mitt.",
+		"example_english": "I write in my notebook.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en datamaskin",
+		"english": "a computer",
+		"example": "Vi bruker datamaskin på skolen.",
+		"example_english": "We use computers at school.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ordbok",
+		"english": "a dictionary",
+		"example": "Jeg ser opp ord i ordboka.",
+		"example_english": "I look up words in the dictionary.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "et bilde",
+		"english": "a picture",
+		"example": "Læreren viser et bilde.",
+		"example_english": "The teacher shows a picture.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lekse",
+		"english": "homework",
+		"example": "Jeg gjør lekser etter skolen.",
+		"example_english": "I do homework after school.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en klasse",
+		"english": "a class",
+		"example": "Jeg er i klasse 1A.",
+		"example_english": "I am in class 1A.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "en time",
+		"english": "a lesson / an hour",
+		"example": "Norsktimen er klokka ni.",
+		"example_english": "The Norwegian lesson is at nine o'clock.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "et spørsmål",
+		"english": "a question",
+		"example": "Har du et spørsmål?",
+		"example_english": "Do you have a question?",
+		"level": "A1",
+		"category": "classroom",
+		"part": "noun"
+	},
+	{
+		"norsk": "å lese",
+		"english": "to read",
+		"example": "Jeg liker å lese bøker.",
+		"example_english": "I like to read books.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "verb"
+	},
+	{
+		"norsk": "å skrive",
+		"english": "to write",
+		"example": "Vi skriver i bøkene våre.",
+		"example_english": "We write in our books.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "verb"
+	},
+	{
+		"norsk": "å lære",
+		"english": "to learn",
+		"example": "Jeg lærer norsk.",
+		"example_english": "I am learning Norwegian.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "verb"
+	},
+	{
+		"norsk": "å spørre",
+		"english": "to ask",
+		"example": "Du kan spørre læreren.",
+		"example_english": "You can ask the teacher.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "verb"
+	},
+	{
+		"norsk": "å svare",
+		"english": "to answer",
+		"example": "Han svarer på spørsmålet.",
+		"example_english": "He answers the question.",
+		"level": "A1",
+		"category": "classroom",
+		"part": "verb"
+	}
+]

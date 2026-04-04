@@ -1,4 +1,91 @@
 import type { SVGAttributes } from 'svelte/elements';
+
+export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+
+export type PartOfSpeech =
+	| 'noun'
+	| 'verb'
+	| 'adjective'
+	| 'adverb'
+	| 'pronoun'
+	| 'preposition'
+	| 'conjunction'
+	| 'interjection'
+	| 'phrase';
+
+export const CATEGORIES_BY_LEVEL = {
+	A1: [
+		'greetings',
+		'numbers',
+		'colors',
+		'family',
+		'body',
+		'food',
+		'animals',
+		'home',
+		'days-months',
+		'classroom'
+	],
+	A2: [
+		'shopping',
+		'transport',
+		'clothing',
+		'hobbies',
+		'directions',
+		'occupations',
+		'sports',
+		'health-basic',
+		'weather',
+		'time'
+	],
+	B1: [
+		'travel',
+		'environment',
+		'media',
+		'culture',
+		'technology',
+		'relationships',
+		'education',
+		'work',
+		'city-life',
+		'traditions'
+	],
+	B2: [
+		'politics',
+		'economics',
+		'social-issues',
+		'arts',
+		'science',
+		'emotions',
+		'idioms',
+		'history',
+		'law',
+		'literature'
+	],
+	C1: [
+		'philosophy',
+		'academic',
+		'formal-writing',
+		'rhetoric',
+		'complex-emotions',
+		'professional',
+		'abstract-concepts'
+	],
+	C2: ['literary', 'archaic', 'proverbs', 'highly-formal', 'technical', 'nuanced-distinctions']
+} as const;
+
+export type Category = (typeof CATEGORIES_BY_LEVEL)[CEFRLevel][number];
+
+export interface VocabEntry {
+	norsk: string;
+	english: string;
+	example: string;
+	example_english?: string;
+	level: CEFRLevel;
+	category: Category;
+	part: PartOfSpeech;
+}
+
 type TitleType = {
 	id?: string;
 	title?: string;

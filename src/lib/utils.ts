@@ -102,12 +102,10 @@ export function getRandomPair(
 }
 
 export function openTab(word: string, website: string) {
-	let baseUrl = '';
-	if (website === 'google') {
-		baseUrl = 'https://translate.google.com/?hl=en&tab=TT&sl=no&tl=en&op=translate&text=';
-	} else {
-		baseUrl = 'https://ordbokene.no/bm/search?q=';
-	}
+	const baseUrl =
+		website === 'google'
+			? 'https://translate.google.com/?hl=en&tab=TT&sl=no&tl=en&op=translate&text='
+			: 'https://ordbokene.no/bm/search?q=';
 
 	const url = baseUrl + encodeURIComponent(word);
 	window.open(url, '_blank');

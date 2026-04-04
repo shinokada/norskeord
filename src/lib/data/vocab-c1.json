@@ -1,0 +1,1583 @@
+[
+	{
+		"norsk": "en ontologi",
+		"english": "ontology (study of being/existence)",
+		"example": "Ontologi stiller spørsmål om hva som eksisterer.",
+		"example_english": "Ontology asks questions about what exists.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en epistemologi",
+		"english": "epistemology (theory of knowledge)",
+		"example": "Epistemologi undersøker grensene for menneskelig erkjennelse.",
+		"example_english": "Epistemology investigates the limits of human knowledge.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "et aksiom",
+		"english": "an axiom",
+		"example": "Matematikk bygger på ubeviselige aksiomer.",
+		"example_english": "Mathematics is built on unprovable axioms.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "dialektikk",
+		"english": "dialectics",
+		"example": "Hegels dialektikk beskriver how ideer utvikler seg gjennom motsetninger.",
+		"example_english": "Hegel's dialectics describes how ideas develop through contradictions.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fenomenologi",
+		"english": "phenomenology",
+		"example": "Husserl grunnla fenomenologien som filosofisk metode.",
+		"example_english": "Husserl founded phenomenology as a philosophical method.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "et postulat",
+		"english": "a postulate",
+		"example": "Filosofen lanserte et dristig postulat.",
+		"example_english": "The philosopher put forward a bold postulate.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "determinisme",
+		"english": "determinism",
+		"example": "Determinisme hevder at alle hendelser er forutbestemte.",
+		"example_english": "Determinism holds that all events are predetermined.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fri vilje",
+		"english": "free will",
+		"example": "Eksisterer fri vilje i en deterministisk verden?",
+		"example_english": "Does free will exist in a deterministic world?",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et etisk dilemma",
+		"english": "an ethical dilemma",
+		"example": "Trolleyproblemet er et klassisk etisk dilemma.",
+		"example_english": "The trolley problem is a classic ethical dilemma.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "phrase"
+	},
+	{
+		"norsk": "utilitarisme",
+		"english": "utilitarianism",
+		"example": "Utilitarisme vurderer handlinger etter deres konsekvenser.",
+		"example_english": "Utilitarianism evaluates actions by their consequences.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dyd",
+		"english": "a virtue",
+		"example": "Aristoteles mente at dyden lå i middelveien.",
+		"example_english": "Aristotle believed that virtue lay in the middle path.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "nihilisme",
+		"english": "nihilism",
+		"example": "Nihilisme avviser objektive verdier og mening.",
+		"example_english": "Nihilism rejects objective values and meaning.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "eksistensialisme",
+		"english": "existentialism",
+		"example": "Sartre mente at eksistensen kommer før essensen.",
+		"example_english": "Sartre believed that existence precedes essence.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "et paradoks",
+		"english": "a paradox",
+		"example": "Zenons paradokser utfordrer vår forståelse av bevegelse.",
+		"example_english": "Zeno's paradoxes challenge our understanding of motion.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en deduksjon",
+		"english": "deduction",
+		"example": "Sokratisk metode bruker deduksjon til å avdekke sannhet.",
+		"example_english": "The Socratic method uses deduction to uncover truth.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en induksjon",
+		"english": "induction",
+		"example": "Vitenskapelig induksjon trekker generelle lover fra observasjoner.",
+		"example_english": "Scientific induction draws general laws from observations.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en subjektivitet",
+		"english": "subjectivity",
+		"example": "Subjektivitet preger vår oppfatning av verden.",
+		"example_english": "Subjectivity characterises our perception of the world.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en objektivitet",
+		"english": "objectivity",
+		"example": "Objektivitet i vitenskapen er et ideal som er vanskelig å nå.",
+		"example_english": "Objectivity in science is an ideal that is hard to achieve.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "metafysikk",
+		"english": "metaphysics",
+		"example": "Metafysikk undersøker virkelighetens grunnleggende struktur.",
+		"example_english": "Metaphysics investigates the fundamental structure of reality.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "relativisme",
+		"english": "relativism",
+		"example": "Moralsk relativisme hevder at sannhet er kulturbetinget.",
+		"example_english": "Moral relativism holds that truth is culture-dependent.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en syllogisme",
+		"english": "a syllogism",
+		"example": "Et syllogisme trekker en konklusjon fra to premisser.",
+		"example_english": "A syllogism draws a conclusion from two premises.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "empirisme",
+		"english": "empiricism",
+		"example": "Empirisme hevder at kunnskap stammer fra sanseerfaringer.",
+		"example_english": "Empiricism holds that knowledge comes from sensory experience.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "rasjonalisme",
+		"english": "rationalism",
+		"example": "Descartes er en sentral rasjonalistisk tenker.",
+		"example_english": "Descartes is a key rationalist thinker.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "å reflektere over",
+		"english": "to reflect upon / to contemplate",
+		"example": "Filosofer reflekterer over meningen med livet.",
+		"example_english": "Philosophers reflect upon the meaning of life.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en transcendens",
+		"english": "transcendence",
+		"example": "Kants transcendensfilosofi skiller fenomen fra noumenon.",
+		"example_english": "Kant's philosophy of transcendence distinguishes phenomenon from noumenon.",
+		"level": "C1",
+		"category": "philosophy",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "et forskningsdesign",
+		"english": "a research design",
+		"example": "Valg av forskningsdesign er avgjørende for studiens gyldighet.",
+		"example_english": "The choice of research design is crucial for the study's validity.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en metodologi",
+		"english": "a methodology",
+		"example": "Metodologien ble begrunnet grundig i metodekapittelet.",
+		"example_english": "The methodology was thoroughly justified in the methods chapter.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en litteraturgjennomgang",
+		"english": "a literature review",
+		"example": "Litteraturgjennomgangen identifiserte tre sentrale teorier.",
+		"example_english": "The literature review identified three central theories.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en diskurs",
+		"english": "a discourse",
+		"example": "Den akademiske diskursen om klimaet er kompleks.",
+		"example_english": "The academic discourse on climate is complex.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en avhandling",
+		"english": "a thesis / a dissertation",
+		"example": "Avhandlingen ble forsvart for en komité.",
+		"example_english": "The thesis was defended before a committee.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fagfellevurdering",
+		"english": "peer review",
+		"example": "Artikkelen gikk gjennom streng fagfellevurdering.",
+		"example_english": "The article went through rigorous peer review.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å sitere",
+		"english": "to cite / to quote",
+		"example": "Du må sitere alle kilder korrekt.",
+		"example_english": "You must cite all sources correctly.",
+		"level": "C1",
+		"category": "academic",
+		"part": "verb"
+	},
+	{
+		"norsk": "en tverrfaglig",
+		"english": "interdisciplinary",
+		"example": "Prosjektet krevde en tverrfaglig tilnærming.",
+		"example_english": "The project required an interdisciplinary approach.",
+		"level": "C1",
+		"category": "academic",
+		"part": "adjective"
+	},
+	{
+		"norsk": "et forskningsgap",
+		"english": "a research gap",
+		"example": "Studien fyller et tydelig forskningsgap.",
+		"example_english": "The study fills a clear research gap.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å operasjonalisere",
+		"english": "to operationalise",
+		"example": "Vi må operasjonalisere begrepet 'velvære'.",
+		"example_english": "We need to operationalise the concept of 'wellbeing'.",
+		"level": "C1",
+		"category": "academic",
+		"part": "verb"
+	},
+	{
+		"norsk": "en kvalitativ metode",
+		"english": "qualitative method",
+		"example": "Intervjuer er en typisk kvalitativ metode.",
+		"example_english": "Interviews are a typical qualitative method.",
+		"level": "C1",
+		"category": "academic",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en kvantitativ metode",
+		"english": "quantitative method",
+		"example": "Spørreundersøkelser gir kvantitative data.",
+		"example_english": "Surveys provide quantitative data.",
+		"level": "C1",
+		"category": "academic",
+		"part": "phrase"
+	},
+	{
+		"norsk": "validitet",
+		"english": "validity",
+		"example": "Studiens validitet avhenger av målinstrumentet.",
+		"example_english": "The study's validity depends on the measurement instrument.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "reliabilitet",
+		"english": "reliability",
+		"example": "Høy reliabilitet sikrer reproduserbare resultater.",
+		"example_english": "High reliability ensures reproducible results.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bias",
+		"english": "bias",
+		"example": "Seleksjonsbias kan skade studiens konklusjoner.",
+		"example_english": "Selection bias can harm the study's conclusions.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en implikasjon",
+		"english": "an implication",
+		"example": "Funnene har viktige implikasjoner for politikkutforming.",
+		"example_english": "The findings have important implications for policy-making.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å konseptualisere",
+		"english": "to conceptualise",
+		"example": "Det er utfordrende å konseptualisere abstrakte fenomener.",
+		"example_english": "It is challenging to conceptualise abstract phenomena.",
+		"level": "C1",
+		"category": "academic",
+		"part": "verb"
+	},
+	{
+		"norsk": "et rammeverk",
+		"english": "a framework",
+		"example": "Vi bruker Bourdieus rammeverk i analysen.",
+		"example_english": "We use Bourdieu's framework in the analysis.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en triangulering",
+		"english": "triangulation (research method)",
+		"example": "Datasamling ble styrket gjennom metodetriangulering.",
+		"example_english": "Data collection was strengthened through methodological triangulation.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en generaliserbarhet",
+		"english": "generalisability",
+		"example": "Studiens generaliserbarhet er begrenset av utvalget.",
+		"example_english": "The study's generalisability is limited by the sample.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en konsensus",
+		"english": "a consensus",
+		"example": "Det er vitenskapelig konsensus om menneskeskapte klimaendringer.",
+		"example_english": "There is scientific consensus on human-caused climate change.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å destillere",
+		"english": "to distil (information)",
+		"example": "Artikkelen destillerer kompleks forskning til kjernepunkter.",
+		"example_english": "The article distils complex research into key points.",
+		"level": "C1",
+		"category": "academic",
+		"part": "verb"
+	},
+	{
+		"norsk": "en problemstilling",
+		"english": "a research question / a thesis statement",
+		"example": "Problemstillingen definerer hva studien søker å besvare.",
+		"example_english": "The research question defines what the study seeks to answer.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "et paradigme",
+		"english": "a paradigm",
+		"example": "Kuhns paradigmebegrep forklarer vitenskapelige revolusjoner.",
+		"example_english": "Kuhn's concept of paradigm explains scientific revolutions.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en syntese",
+		"english": "a synthesis",
+		"example": "Konklusjonen presenterer en syntese av funnene.",
+		"example_english": "The conclusion presents a synthesis of the findings.",
+		"level": "C1",
+		"category": "academic",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "å redegjøre for",
+		"english": "to account for / to elaborate on",
+		"example": "I det følgende vil jeg redegjøre for studiens metode.",
+		"example_english": "In what follows I will account for the study's method.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "med utgangspunkt i",
+		"english": "based on / starting from",
+		"example": "Med utgangspunkt i disse dataene kan vi konkludere.",
+		"example_english": "Based on these data we can conclude.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å drøfte",
+		"english": "to discuss / to examine critically",
+		"example": "Oppgaven drøfter to motstridende syn.",
+		"example_english": "The paper examines two opposing views.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "å belyse",
+		"english": "to shed light on / to illuminate",
+		"example": "Analysen belyser strukturelle årsaker til problemet.",
+		"example_english": "The analysis sheds light on the structural causes of the problem.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "i lys av",
+		"english": "in light of",
+		"example": "I lys av nye funn må teorien revideres.",
+		"example_english": "In light of new findings, the theory must be revised.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å anføre",
+		"english": "to cite / to adduce (an argument)",
+		"example": "Forfatteren anfører tre ganger så sterke argumenter.",
+		"example_english": "The author adduces three equally strong arguments.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "å presisere",
+		"english": "to specify / to clarify precisely",
+		"example": "Rapportens forfatter presiserer at dataene er foreløpige.",
+		"example_english": "The report's author specifies that the data are preliminary.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "herunder",
+		"english": "including / comprising",
+		"example": "Studien omhandler alle nordiske land, herunder Island.",
+		"example_english": "The study covers all Nordic countries, including Iceland.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "adverb"
+	},
+	{
+		"norsk": "det fremgår av",
+		"english": "it appears from / it is evident from",
+		"example": "Det fremgår av rapporten at kostnadene øker.",
+		"example_english": "It is evident from the report that costs are rising.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å underbygge",
+		"english": "to substantiate / to underpin",
+		"example": "Eksemplene underbygger argumentasjonen.",
+		"example_english": "The examples substantiate the argument.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "følgelig",
+		"english": "consequently / therefore",
+		"example": "Ressursene er knappe; følgelig må vi prioritere.",
+		"example_english": "Resources are scarce; consequently we must prioritise.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "adverb"
+	},
+	{
+		"norsk": "ytterligere",
+		"english": "further / additionally",
+		"example": "Ytterligere forskning er nødvendig.",
+		"example_english": "Further research is necessary.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "adverb"
+	},
+	{
+		"norsk": "en begrepsavklaring",
+		"english": "a definition of terms / clarification of concepts",
+		"example": "En begrepsavklaring er nødvendig innledningsvis.",
+		"example_english": "A definition of terms is necessary at the outset.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "noun"
+	},
+	{
+		"norsk": "å problematisere",
+		"english": "to problematise / to call into question",
+		"example": "Artikkelen problematiserer den rådende teorien.",
+		"example_english": "The article calls the prevailing theory into question.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "ikke desto mindre",
+		"english": "nevertheless / nonetheless",
+		"example": "Resultatene er usikre; ikke desto mindre er de lovende.",
+		"example_english": "The results are uncertain; nevertheless they are promising.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "i henhold til",
+		"english": "in accordance with / pursuant to",
+		"example": "I henhold til loven har alle rett til forsvar.",
+		"example_english": "In accordance with the law, everyone has the right to a defence.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å konkludere med at",
+		"english": "to conclude that",
+		"example": "Vi konkluderer med at tiltaket har hatt effekt.",
+		"example_english": "We conclude that the measure has had an effect.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en innvending",
+		"english": "an objection",
+		"example": "En mulig innvending mot denne tolkningen er at …",
+		"example_english": "A possible objection to this interpretation is that …",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "noun"
+	},
+	{
+		"norsk": "å nuansere",
+		"english": "to nuance / to qualify",
+		"example": "Det er viktig å nuansere dette bildet.",
+		"example_english": "It is important to nuance this picture.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "å argumentere for at",
+		"english": "to argue that",
+		"example": "Forfatteren argumenterer for at politikken bør endres.",
+		"example_english": "The author argues that the policy should be changed.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å avgrense",
+		"english": "to delimit / to narrow down",
+		"example": "Vi har avgrenset studien til å gjelde norske ungdommer.",
+		"example_english": "We have delimited the study to apply to Norwegian youth.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "verb"
+	},
+	{
+		"norsk": "en implikasjon",
+		"english": "an implication",
+		"example": "Funnene har viktige politiske implikasjoner.",
+		"example_english": "The findings have important policy implications.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "noun"
+	},
+	{
+		"norsk": "å peke på",
+		"english": "to point to / to highlight",
+		"example": "Rapporten peker på tre sentrale utfordringer.",
+		"example_english": "The report points to three central challenges.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+	{
+		"norsk": "foreliggende",
+		"english": "present / at hand / existing",
+		"example": "Foreliggende studier gir ikke et entydig svar.",
+		"example_english": "Existing studies do not provide an unambiguous answer.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "adjective"
+	},
+	{
+		"norsk": "å bidra til",
+		"english": "to contribute to",
+		"example": "Studien bidrar til å fylle et kunnskapshull.",
+		"example_english": "The study contributes to filling a knowledge gap.",
+		"level": "C1",
+		"category": "formal-writing",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "en retorisk strategi",
+		"english": "a rhetorical strategy",
+		"example": "Forfatteren bruker emosjonelle appeller som retorisk strategi.",
+		"example_english": "The author uses emotional appeals as a rhetorical strategy.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "phrase"
+	},
+	{
+		"norsk": "ethos",
+		"english": "ethos (appeal to credibility)",
+		"example": "Taleren bygger ethos gjennom sin faglige bakgrunn.",
+		"example_english": "The speaker builds ethos through their professional background.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "pathos",
+		"english": "pathos (appeal to emotion)",
+		"example": "Bruken av pathos beveger tilhørerne.",
+		"example_english": "The use of pathos moves the audience.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "logos",
+		"english": "logos (appeal to logic)",
+		"example": "Argumentet er konstruert rundt logosbaserte bevis.",
+		"example_english": "The argument is built around logos-based evidence.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en anafora",
+		"english": "anaphora (repetition at the start of clauses)",
+		"example": "Talen bruker anafora for å understreke budskapet.",
+		"example_english": "The speech uses anaphora to emphasise the message.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en antitese",
+		"english": "an antithesis",
+		"example": "Antitesen skaper en slående kontrast i teksten.",
+		"example_english": "The antithesis creates a striking contrast in the text.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en overtalelse",
+		"english": "persuasion",
+		"example": "Retorikk er kunsten å overbevise og overtale.",
+		"example_english": "Rhetoric is the art of convincing and persuading.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en retorisk spørsmål",
+		"english": "a rhetorical question",
+		"example": "Taleren brukte retoriske spørsmål for å engasjere publikum.",
+		"example_english": "The speaker used rhetorical questions to engage the audience.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en hyperbel",
+		"english": "hyperbole",
+		"example": "Markedsføringen bygger på overdrevne hyperbeler.",
+		"example_english": "The marketing is built on exaggerated hyperbole.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en litotes",
+		"english": "litotes (understatement using negation)",
+		"example": "Det er ikke så lite utfordrende — er et eksempel på litotes.",
+		"example_english": "'It is not entirely without challenges' is an example of litotes.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en allegori",
+		"english": "an allegory",
+		"example": "Orwells Dyregård er en politisk allegori.",
+		"example_english": "Orwell's Animal Farm is a political allegory.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en eufemisme",
+		"english": "a euphemism",
+		"example": "Uttrykket 'gikk bort' er en eufemisme for 'døde'.",
+		"example_english": "The expression 'passed away' is a euphemism for 'died'.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "et syllepsis",
+		"english": "syllepsis (using one word to govern two)",
+		"example": "Syllepsis kan skape komisk effekt i teksten.",
+		"example_english": "Syllepsis can create a comic effect in the text.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en chiasme",
+		"english": "chiasmus (inverted parallelism)",
+		"example": "Chiasme skaper eleganse gjennom speilvendt struktur.",
+		"example_english": "Chiasmus creates elegance through mirrored structure.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "kairos",
+		"english": "kairos (the opportune moment)",
+		"example": "En god taler vet å utnytte kairos.",
+		"example_english": "A good speaker knows how to exploit kairos.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en prosopopeia",
+		"english": "personification / prosopopoeia",
+		"example": "Diktet personifiserer havet som en sint gud.",
+		"example_english": "The poem personifies the sea as an angry god.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "å disponere",
+		"english": "to structure / to organise (a text)",
+		"example": "En god tale er tydelig disponert.",
+		"example_english": "A good speech is clearly structured.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "verb"
+	},
+	{
+		"norsk": "en topos",
+		"english": "a topos (commonplace / standard argument)",
+		"example": "Appell til natur er et vanlig retorisk topos.",
+		"example_english": "Appeal to nature is a common rhetorical topos.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en inversjon",
+		"english": "inversion (of word order for effect)",
+		"example": "Inversjon brukes i poetisk og høytidelig prosa.",
+		"example_english": "Inversion is used in poetic and solemn prose.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "å engasjere",
+		"english": "to engage (an audience)",
+		"example": "En dyktig taler klarer å engasjere sitt publikum.",
+		"example_english": "A skilled speaker manages to engage their audience.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "verb"
+	},
+	{
+		"norsk": "en narrasjon",
+		"english": "narration / storytelling (as rhetorical mode)",
+		"example": "Narrasjon som virkemiddel skaper nærhet til tilhørerne.",
+		"example_english": "Narration as a device creates closeness with the listeners.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bevisføring",
+		"english": "argumentation / presentation of proof",
+		"example": "Bevisføringen i talen var systematisk og overbevisende.",
+		"example_english": "The argumentation in the speech was systematic and convincing.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en konklusjon",
+		"english": "a conclusion (closing of a speech)",
+		"example": "En sterk konklusjon etterlater et varig inntrykk.",
+		"example_english": "A strong conclusion leaves a lasting impression.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en innledning",
+		"english": "an introduction / an exordium",
+		"example": "Innledningen må fange lytterens oppmerksomhet.",
+		"example_english": "The introduction must capture the listener's attention.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+	{
+		"norsk": "en appell",
+		"english": "an appeal",
+		"example": "Appellen til medeleven engasjerte hele forsamlingen.",
+		"example_english": "The appeal to the fellow student engaged the entire assembly.",
+		"level": "C1",
+		"category": "rhetoric",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "sjelelig uro",
+		"english": "inner turmoil / spiritual unease",
+		"example": "Han led av en dyp sjelelig uro han ikke klarte å sette ord på.",
+		"example_english": "He suffered from a deep inner turmoil he was unable to put into words.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "melankolsk",
+		"english": "melancholy / melancholic",
+		"example": "Høsten gjør ham alltid litt melankolsk.",
+		"example_english": "Autumn always makes him a little melancholic.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "adjective"
+	},
+	{
+		"norsk": "angst",
+		"english": "existential anxiety / dread",
+		"example": "Kierkegaard beskriver angst som en grunnleggende menneskelig tilstand.",
+		"example_english": "Kierkegaard describes angst as a fundamental human condition.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "eksistensielt tomrom",
+		"english": "existential void / emptiness",
+		"example": "Etter pensjonering opplevde han et eksistensielt tomrom.",
+		"example_english": "After retirement he experienced an existential void.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "empatisk resonans",
+		"english": "empathic resonance",
+		"example": "Kunstverket skapte en sterk empatisk resonans hos betrakterne.",
+		"example_english": "The artwork created a strong empathic resonance in viewers.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "vemod",
+		"english": "wistfulness / gentle sadness",
+		"example": "Musikken var preget av et vakkert vemod.",
+		"example_english": "The music was characterised by a beautiful wistfulness.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "å bearbeide",
+		"english": "to process (emotions)",
+		"example": "Terapien hjalp henne å bearbeide sorgen.",
+		"example_english": "The therapy helped her process her grief.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "verb"
+	},
+	{
+		"norsk": "ambivalent",
+		"english": "ambivalent",
+		"example": "Hun var ambivalent overfor tilbudet — glad og redd på samme tid.",
+		"example_english": "She was ambivalent about the offer — glad and scared at the same time.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "adjective"
+	},
+	{
+		"norsk": "fremmedgjøring",
+		"english": "alienation / estrangement",
+		"example": "Storbylivet kan føre til en dyptgående fremmedgjøring.",
+		"example_english": "City life can lead to a profound sense of alienation.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "katarsis",
+		"english": "catharsis",
+		"example": "Forestillingen ga publikum en sterk katarsis.",
+		"example_english": "The performance gave the audience a powerful catharsis.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "selverkjennelse",
+		"english": "self-knowledge / self-awareness",
+		"example": "Selverkjennelse er forutsetningen for personlig vekst.",
+		"example_english": "Self-knowledge is the precondition for personal growth.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "en forsonlighet",
+		"english": "reconciliation / conciliatoriness",
+		"example": "En tone av forsonlighet preget samtalen.",
+		"example_english": "A tone of conciliatoriness characterised the conversation.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "ærefrykt",
+		"english": "awe / reverence",
+		"example": "Han betraktet fjorden med stille ærefrykt.",
+		"example_english": "He contemplated the fjord with quiet awe.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "å lengte etter",
+		"english": "to yearn for / to long for",
+		"example": "Hun lengtet etter det landet hun hadde forlatt.",
+		"example_english": "She yearned for the country she had left behind.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "oppriktighet",
+		"english": "sincerity / genuineness",
+		"example": "Det var en oppriktig beklagelse uten baktanker.",
+		"example_english": "It was a sincere apology without ulterior motives.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "å fortrenge",
+		"english": "to repress / to suppress",
+		"example": "Han hadde fortrengt minnene fra barndommen.",
+		"example_english": "He had repressed the memories from his childhood.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "verb"
+	},
+	{
+		"norsk": "sårbarhet",
+		"english": "vulnerability",
+		"example": "Det krever mot å vise sårbarhet.",
+		"example_english": "It takes courage to show vulnerability.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "kognitive dissonansen",
+		"english": "cognitive dissonance",
+		"example": "Kognitiv dissonans oppstår når tro og atferd er i konflikt.",
+		"example_english": "Cognitive dissonance arises when beliefs and behaviour are in conflict.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "å projisere",
+		"english": "to project (emotions onto others)",
+		"example": "Vi projiserer ofte egne feil over på andre.",
+		"example_english": "We often project our own faults onto others.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "verb"
+	},
+	{
+		"norsk": "en indre monolog",
+		"english": "an inner monologue",
+		"example": "Den indre monologen avslører karakterens tvil.",
+		"example_english": "The inner monologue reveals the character's doubts.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "skadefryd",
+		"english": "schadenfreude (pleasure at another's misfortune)",
+		"example": "Det er ikke pent å kjenne på skadefryd.",
+		"example_english": "It is not nice to feel schadenfreude.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sinnstilstand",
+		"english": "a state of mind",
+		"example": "Kunst kan skifte vår sinnstilstand dramatisk.",
+		"example_english": "Art can shift our state of mind dramatically.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "forsoning",
+		"english": "reconciliation",
+		"example": "Forsoning etter krig er en lang prosess.",
+		"example_english": "Reconciliation after war is a long process.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "eksistensiell ensomhet",
+		"english": "existential loneliness",
+		"example": "Eksistensiell ensomhet kan ikke lindres av selskap alene.",
+		"example_english": "Existential loneliness cannot be relieved by company alone.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "ettertanke",
+		"english": "reflection / afterthought",
+		"example": "Med ettertanke innser jeg at jeg tok feil.",
+		"example_english": "On reflection I realise I was wrong.",
+		"level": "C1",
+		"category": "complex-emotions",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en konfidensiell",
+		"english": "confidential",
+		"example": "Alle opplysninger behandles konfidensielt.",
+		"example_english": "All information is treated confidentially.",
+		"level": "C1",
+		"category": "professional",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en forhandling",
+		"english": "a negotiation",
+		"example": "Lønnsforhandlingene ble avsluttet med et kompromiss.",
+		"example_english": "The salary negotiations ended in a compromise.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "et nettverk",
+		"english": "a (professional) network",
+		"example": "Et godt profesjonelt nettverk er uvurderlig.",
+		"example_english": "A good professional network is invaluable.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "å delegere",
+		"english": "to delegate",
+		"example": "En god leder vet å delegere oppgaver.",
+		"example_english": "A good leader knows how to delegate tasks.",
+		"level": "C1",
+		"category": "professional",
+		"part": "verb"
+	},
+	{
+		"norsk": "en strategiplan",
+		"english": "a strategic plan",
+		"example": "Bedriften utarbeidet en femårig strategiplan.",
+		"example_english": "The company developed a five-year strategic plan.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "å fasilitere",
+		"english": "to facilitate",
+		"example": "HR fasiliterer onboardingsprosessen.",
+		"example_english": "HR facilitates the onboarding process.",
+		"level": "C1",
+		"category": "professional",
+		"part": "verb"
+	},
+	{
+		"norsk": "en interessent",
+		"english": "a stakeholder",
+		"example": "Alle interessenter ble konsultert i prosessen.",
+		"example_english": "All stakeholders were consulted in the process.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "en gjennomførbarhet",
+		"english": "feasibility",
+		"example": "En gjennomførbarhetsstudie ble iverksatt.",
+		"example_english": "A feasibility study was initiated.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "å optimalisere",
+		"english": "to optimise",
+		"example": "Vi arbeider kontinuerlig for å optimalisere arbeidsflyten.",
+		"example_english": "We continually work to optimise the workflow.",
+		"level": "C1",
+		"category": "professional",
+		"part": "verb"
+	},
+	{
+		"norsk": "en retningslinje",
+		"english": "a guideline / a directive",
+		"example": "Retningslinjene for datahåndtering er strenge.",
+		"example_english": "The guidelines for data handling are strict.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "etterlevelse",
+		"english": "compliance",
+		"example": "Etterlevelse av GDPR er et krav.",
+		"example_english": "Compliance with GDPR is a requirement.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fusjon",
+		"english": "a merger",
+		"example": "Fusjonen mellom de to selskapene skapte markedsuro.",
+		"example_english": "The merger between the two companies created market turbulence.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "å implementere",
+		"english": "to implement",
+		"example": "Vi implementerte de nye rutinene gradvis.",
+		"example_english": "We implemented the new procedures gradually.",
+		"level": "C1",
+		"category": "professional",
+		"part": "verb"
+	},
+	{
+		"norsk": "en benchmark",
+		"english": "a benchmark",
+		"example": "Bransjens benchmark for leveringstid er to dager.",
+		"example_english": "The industry benchmark for delivery time is two days.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "en KPI",
+		"english": "a KPI (key performance indicator)",
+		"example": "Vi følger nøye med på KPI-ene hvert kvartal.",
+		"example_english": "We closely monitor the KPIs each quarter.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "å outsource",
+		"english": "to outsource",
+		"example": "Bedriften outsourcer IT-driften.",
+		"example_english": "The company outsources its IT operations.",
+		"level": "C1",
+		"category": "professional",
+		"part": "verb"
+	},
+	{
+		"norsk": "en målgruppe",
+		"english": "a target group / a target audience",
+		"example": "Kampanjen er rettet mot en yngre målgruppe.",
+		"example_english": "The campaign is aimed at a younger target group.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "et omdømme",
+		"english": "a reputation",
+		"example": "Et solgt omdømme er vanskelig å gjenoppbygge.",
+		"example_english": "A damaged reputation is difficult to rebuild.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "en årsrapport",
+		"english": "an annual report",
+		"example": "Årsrapporten viste solid vekst.",
+		"example_english": "The annual report showed solid growth.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "å skalere",
+		"english": "to scale (a business)",
+		"example": "Oppstarten klarte å skalere raskt.",
+		"example_english": "The start-up managed to scale quickly.",
+		"level": "C1",
+		"category": "professional",
+		"part": "verb"
+	},
+	{
+		"norsk": "en medarbeidersamtale",
+		"english": "a performance review / an appraisal interview",
+		"example": "Medarbeidersamtalen gjennomføres en gang i året.",
+		"example_english": "The performance review is conducted once a year.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "en disrupsjon",
+		"english": "disruption",
+		"example": "Digital disrupsjon endrer tradisjonelle bransjer.",
+		"example_english": "Digital disruption is changing traditional industries.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "innovasjon",
+		"english": "innovation",
+		"example": "Innovasjon er motoren i bedriftens vekst.",
+		"example_english": "Innovation is the engine of the company's growth.",
+		"level": "C1",
+		"category": "professional",
+		"part": "noun"
+	},
+	{
+		"norsk": "en agil tilnærming",
+		"english": "an agile approach",
+		"example": "Prosjektteamet brukte en agil tilnærming.",
+		"example_english": "The project team used an agile approach.",
+		"level": "C1",
+		"category": "professional",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å rapportere til",
+		"english": "to report to (a manager)",
+		"example": "Hun rapporterer direkte til styret.",
+		"example_english": "She reports directly to the board.",
+		"level": "C1",
+		"category": "professional",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "frihet",
+		"english": "freedom / liberty (as abstract concept)",
+		"example": "Frihet er et verdibegrep med mange tolkninger.",
+		"example_english": "Freedom is a value concept with many interpretations.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "rettferdighet",
+		"english": "justice / fairness",
+		"example": "Rettferdighet er en av demokratiets grunnpilarer.",
+		"example_english": "Justice is one of the cornerstones of democracy.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "sannhet",
+		"english": "truth",
+		"example": "Hva er sannhet? Filosofer har diskutert dette i årtusener.",
+		"example_english": "What is truth? Philosophers have debated this for millennia.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "mening",
+		"english": "meaning / purpose",
+		"example": "Søken etter mening er et universelt menneskelig trekk.",
+		"example_english": "The search for meaning is a universal human trait.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "tid",
+		"english": "time (as abstract concept)",
+		"example": "Tid er et mysterium som filosofer forsøker å forstå.",
+		"example_english": "Time is a mystery that philosophers attempt to understand.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "bevissthet",
+		"english": "consciousness / awareness",
+		"example": "Bevissthetens natur er fortsatt et åpent spørsmål.",
+		"example_english": "The nature of consciousness remains an open question.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "identitet",
+		"english": "identity",
+		"example": "Nasjonal identitet er sammensatt og dynamisk.",
+		"example_english": "National identity is complex and dynamic.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kontinuitet",
+		"english": "continuity",
+		"example": "Kontinuitet i politikk sikrer forutsigbarhet.",
+		"example_english": "Continuity in policy ensures predictability.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dualitet",
+		"english": "a duality",
+		"example": "Dualiteten mellom godt og ondt er et universelt tema.",
+		"example_english": "The duality between good and evil is a universal theme.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "kompleksitet",
+		"english": "complexity",
+		"example": "Samfunnets kompleksitet gjør enkle løsninger umulige.",
+		"example_english": "Society's complexity makes simple solutions impossible.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en grense",
+		"english": "a limit / a boundary (conceptual)",
+		"example": "Grensen mellom kunst og propaganda er flytende.",
+		"example_english": "The boundary between art and propaganda is fluid.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en struktur",
+		"english": "structure (as abstract organising principle)",
+		"example": "Sosiale strukturer påvirker individets handlingsrom.",
+		"example_english": "Social structures influence the individual's room for action.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "å formidle",
+		"english": "to convey / to communicate (an idea)",
+		"example": "Kunstneren formidler en intens sorg gjennom sitt verk.",
+		"example_english": "The artist conveys an intense sorrow through their work.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "verb"
+	},
+	{
+		"norsk": "intersubjektivitet",
+		"english": "intersubjectivity",
+		"example": "Intersubjektivitet er grunnlaget for felles forståelse.",
+		"example_english": "Intersubjectivity is the basis of shared understanding.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en årsakssammenheng",
+		"english": "a causal relationship",
+		"example": "Det er ikke alltid enkelt å fastslå en årsakssammenheng.",
+		"example_english": "It is not always easy to establish a causal relationship.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en analogi",
+		"english": "an analogy",
+		"example": "En analogi kan gjøre abstrakte ideer lettere å forstå.",
+		"example_english": "An analogy can make abstract ideas easier to understand.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "et dilemma",
+		"english": "a dilemma",
+		"example": "Valget mellom lojalitet og ærlighet er et dilemma.",
+		"example_english": "The choice between loyalty and honesty is a dilemma.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en legitimitet",
+		"english": "legitimacy",
+		"example": "Statens legitimitet hviler på folkets tillit.",
+		"example_english": "The state's legitimacy rests on the trust of the people.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en norm",
+		"english": "a norm",
+		"example": "Sosiale normer styrer atferd uformelt.",
+		"example_english": "Social norms govern behaviour informally.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "et pluralisme",
+		"english": "pluralism",
+		"example": "Et demokrati er avhengig av et levende pluralisme.",
+		"example_english": "A democracy depends on a vibrant pluralism.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en universalisme",
+		"english": "universalism",
+		"example": "Universalisme hevder at visse verdier gjelder alle.",
+		"example_english": "Universalism holds that certain values apply to everyone.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en partikularisme",
+		"english": "particularism",
+		"example": "Partikularisme vektlegger kulturelle og lokale særtrekk.",
+		"example_english": "Particularism emphasises cultural and local particularities.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "å abstrahere",
+		"english": "to abstract / to generalise conceptually",
+		"example": "Vi abstrahere fra konkrete tilfeller til generelle prinsipper.",
+		"example_english": "We abstract from concrete cases to general principles.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "verb"
+	},
+	{
+		"norsk": "en konstruksjon",
+		"english": "a construction (social/conceptual)",
+		"example": "Kjønn sees av mange som en sosial konstruksjon.",
+		"example_english": "Gender is seen by many as a social construction.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	},
+	{
+		"norsk": "hegemoni",
+		"english": "hegemony",
+		"example": "Kulturelt hegemoni påvirker hva vi anser som normalt.",
+		"example_english": "Cultural hegemony influences what we consider normal.",
+		"level": "C1",
+		"category": "abstract-concepts",
+		"part": "noun"
+	}
+]
