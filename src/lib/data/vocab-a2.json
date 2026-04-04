@@ -424,7 +424,7 @@
 		"part": "phrase"
 	},
 	{
-		"norsk": "en fergje",
+		"norsk": "en ferge",
 		"english": "a ferry",
 		"example": "Vi tar fergen til øya.",
 		"example_english": "We take the ferry to the island.",
@@ -436,7 +436,7 @@
 	{
 		"norsk": "en jakke",
 		"english": "a jacket",
-		"example": "Jeg ta på meg jakken fordi det er kaldt.",
+		"example": "Jeg tar på meg jakken fordi det er kaldt.",
 		"example_english": "I put on my jacket because it is cold.",
 		"level": "A2",
 		"category": "clothing",
@@ -479,7 +479,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "ei sko",
+		"norsk": "en sko",
 		"english": "a shoe",
 		"example": "Jeg trenger nye sko.",
 		"example_english": "I need new shoes.",
@@ -1554,10 +1554,10 @@
 		"part": "verb"
 	},
 	{
-		"norsk": "en premier",
-		"english": "a championship / a first place",
-		"example": "Laget tok premieren i år.",
-		"example_english": "The team took the championship this year.",
+		"norsk": "en premie",
+		"english": "a prize / an award",
+		"example": "Laget tok premien i år.",
+		"example_english": "The team won the prize this year.",
 		"level": "A2",
 		"category": "sports",
 		"part": "noun"

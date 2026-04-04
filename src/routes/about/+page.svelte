@@ -23,7 +23,9 @@
 		></P
 	>
 	<P
-		>In Norway, every city and town has dedicated volunteers who offer free Norwegian courses, such as Røde Kors Norsktrening. I would like to express my sincere gratitude to all the volunteers who are helping us learn Norwegian.</P
+		>In Norway, every city and town has dedicated volunteers who offer free Norwegian courses, such
+		as Røde Kors Norsktrening. I would like to express my sincere gratitude to all the volunteers
+		who are helping us learn Norwegian.</P
 	>
 
 	<Heading tag="h2" class="text-2xl">LexiLearn Hub Apps</Heading>
@@ -52,7 +54,7 @@
 		</Li>
 		<Li class="hover:text-red-700 hover:underline">
 			<A href="https://flexilexi-dictionary.codewithshin.com/" class="me-4 hover:underline md:me-6"
-				>Fexilexi dictionary (English/Norwegian/Japanese)</A
+				>FlexiLexi dictionary (English/Norwegian/Japanese)</A
 			>
 		</Li>
 	</List>

@@ -244,7 +244,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "et litteraturgjennomgang",
+		"norsk": "en litteraturgjennomgang",
 		"english": "a literature review",
 		"example": "Litteraturgjennomgangen identifiserte tre sentrale teorier.",
 		"example_english": "The literature review identified three central theories.",
@@ -551,7 +551,7 @@
 		"part": "adverb"
 	},
 	{
-		"norsk": "yderligere",
+		"norsk": "ytterligere",
 		"english": "further / additionally",
 		"example": "Ytterligere forskning er nødvendig.",
 		"example_english": "Further research is necessary.",
@@ -761,7 +761,7 @@
 	{
 		"norsk": "en litotes",
 		"english": "litotes (understatement using negation)",
-		"example": "Det er ikke s å lite utfordrende — er et eksempel på litotes.",
+		"example": "Det er ikke så lite utfordrende — er et eksempel på litotes.",
 		"example_english": "'It is not entirely without challenges' is an example of litotes.",
 		"level": "C1",
 		"category": "rhetoric",

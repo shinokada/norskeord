@@ -223,7 +223,7 @@
 		{#if isTouch}
 			Tap to flip · ← → to navigate · ↑↓ to toggle translation
 		{:else}
-			Space/Enter to flip · ← → to navigate · N for new card · E to toggle translation
+			Space/Enter to flip · ←↑ →↓ to navigate · N for new card · E to toggle translation
 		{/if}
 	</p>
 
@@ -239,11 +239,8 @@
 		</button>
 
 		<button
-			onclick={() => {
-				if (currentIndex < history.length - 1) next();
-			}}
+			onclick={next}
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
-			disabled={currentIndex >= history.length - 1}
 		>
 			<ArrowDown class="mr-4" />
 			Forward

@@ -36,7 +36,7 @@
 		"part": "verb"
 	},
 	{
-		"norsk": "et overnatting",
+		"norsk": "en overnatting",
 		"english": "accommodation",
 		"example": "Hva er de beste overnattingsstedene i Bergen?",
 		"example_english": "What are the best accommodation options in Bergen?",
@@ -81,7 +81,7 @@
 		"part": "verb"
 	},
 	{
-		"norsk": "en sehensverdighet",
+		"norsk": "en severdighet",
 		"english": "a sight / an attraction",
 		"example": "Hvilke severdigheter bør vi besøke?",
 		"example_english": "Which sights should we visit?",
@@ -108,7 +108,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en visa",
+		"norsk": "et visum",
 		"english": "a visa",
 		"example": "Du trenger visum for å reise til Russland.",
 		"example_english": "You need a visa to travel to Russia.",
@@ -271,7 +271,7 @@
 		"part": "adjective"
 	},
 	{
-		"norsk": "en utslipp",
+		"norsk": "et utslipp",
 		"english": "an emission",
 		"example": "CO₂-utslippene må reduseres.",
 		"example_english": "CO₂ emissions must be reduced.",
@@ -433,9 +433,9 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "CO₂-avtrykt",
+		"norsk": "CO₂-avtrykk",
 		"english": "carbon footprint",
-		"example": "Jeg prøver å redusere mitt CO₂-avtrykt.",
+		"example": "Jeg prøver å redusere mitt CO₂-avtrykk.",
 		"example_english": "I try to reduce my carbon footprint.",
 		"level": "B1",
 		"category": "environment",
@@ -831,7 +831,7 @@
 		"part": "adjective"
 	},
 	{
-		"norsk": "et gallerit",
+		"norsk": "et galleri",
 		"english": "a gallery",
 		"example": "Vi gikk på galleri i helgen.",
 		"example_english": "We went to a gallery at the weekend.",
@@ -1502,7 +1502,7 @@
 	{
 		"norsk": "en bachelor",
 		"english": "a bachelor's degree",
-		"example": "Jeg tar en bachelor i史 informatikk.",
+		"example": "Jeg tar en bachelor i informatikk.",
 		"example_english": "I am taking a bachelor's degree in computer science.",
 		"level": "B1",
 		"category": "education",

@@ -27,7 +27,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en protagonisten",
+		"norsk": "en protagonist",
 		"english": "a protagonist",
 		"example": "Protagonisten gjennomgår en dramatisk indre forvandling.",
 		"example_english": "The protagonist undergoes a dramatic inner transformation.",
@@ -535,7 +535,7 @@
 	{
 		"norsk": "Kjært barn har mange navn.",
 		"english": "A beloved child has many names. (something valued gets many labels)",
-		"example": "Kafeen kalles både «stamstedет» og «hjørnet» — kjært barn har mange navn.",
+		"example": "Kafeen kalles både «stamstedet» og «hjørnet» — kjært barn har mange navn.",
 		"example_english": "The café is called both 'the local' and 'the corner' — a beloved child has many names.",
 		"level": "C2",
 		"category": "proverbs",
@@ -985,7 +985,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en halvledere",
+		"norsk": "en halvleder",
 		"english": "a semiconductor",
 		"example": "Halvledere er grunnlaget for moderne elektronikk.",
 		"example_english": "Semiconductors are the foundation of modern electronics.",
@@ -994,9 +994,9 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en entanglementement",
+		"norsk": "en kvantesammenfiltring",
 		"english": "quantum entanglement",
-		"example": "Kvantefiltfanging muliggjør øyeblikkelig korrelasjon mellom partikler.",
+		"example": "Kvantesammenfiltring muliggjør øyeblikkelig korrelasjon mellom partikler.",
 		"example_english": "Quantum entanglement enables instant correlation between particles.",
 		"level": "C2",
 		"category": "technical",

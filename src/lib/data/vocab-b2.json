@@ -822,7 +822,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en sympfoni",
+		"norsk": "en symfoni",
 		"english": "a symphony",
 		"example": "Griegs Peer Gynt Suite er kjent over hele verden.",
 		"example_english": "Grieg's Peer Gynt Suite is known all over the world.",
@@ -1600,7 +1600,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "et imperiet",
+		"norsk": "et imperium",
 		"english": "an empire",
 		"example": "Det britiske imperiet var en gang verdens største.",
 		"example_english": "The British Empire was once the world's largest.",
@@ -1627,8 +1627,8 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "et primærkilder",
-		"english": "primary sources",
+		"norsk": "en primærkilde",
+		"english": "a primary source",
 		"example": "Historikere bruker primærkilder som brev og dagbøker.",
 		"example_english": "Historians use primary sources such as letters and diaries.",
 		"level": "B2",
@@ -1726,7 +1726,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "et fredsavtale",
+		"norsk": "en fredsavtale",
 		"english": "a peace agreement",
 		"example": "Fredsavtalen ble undertegnet i Paris.",
 		"example_english": "The peace agreement was signed in Paris.",
@@ -1762,7 +1762,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en reformasjonen",
+		"norsk": "reformasjonen",
 		"english": "the Reformation",
 		"example": "Reformasjonen endret religiøst liv i Europa.",
 		"example_english": "The Reformation changed religious life in Europe.",
@@ -1780,7 +1780,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en opplysningstiden",
+		"norsk": "opplysningstiden",
 		"english": "the Enlightenment",
 		"example": "Opplysningstiden fremmet fornuft og vitenskap.",
 		"example_english": "The Enlightenment promoted reason and science.",
@@ -1952,7 +1952,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en rettstat",
+		"norsk": "en rettsstat",
 		"english": "a rule-of-law state",
 		"example": "En rettsstat kjennetegnes av likebehandling.",
 		"example_english": "A rule-of-law state is characterised by equal treatment.",
@@ -1963,7 +1963,7 @@
 	{
 		"norsk": "erstatning",
 		"english": "compensation / damages",
-		"example": "Offerets famille krevde erstatning.",
+		"example": "Offerets familie krevde erstatning.",
 		"example_english": "The victim's family demanded compensation.",
 		"level": "B2",
 		"category": "law",

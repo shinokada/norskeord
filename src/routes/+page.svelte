@@ -27,13 +27,13 @@
 </p>
 
 <div class="space-y-10 text-left">
-	{#each levels as { id, label, color }}
+	{#each levels as { id, label, color } (id)}
 		{@const categories = CATEGORIES_BY_LEVEL[id]}
 		{@const badge = badgeColors[color]}
 		<div>
 			<h2 class="mb-3 text-xl font-semibold dark:text-white">{label}</h2>
 			<div class="flex flex-wrap gap-2">
-				{#each categories as cat}
+				{#each categories as cat (cat)}
 					<a
 						href="/{id.toLowerCase()}/{cat}"
 						class="{badge} rounded-full px-3 py-1 text-sm font-medium transition-opacity hover:opacity-75"
