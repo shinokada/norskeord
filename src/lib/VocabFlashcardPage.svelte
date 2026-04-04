@@ -188,6 +188,9 @@
 			tabindex="0"
 			role="button"
 			aria-pressed={showCardBack}
+			aria-label={showCardBack
+				? 'Flashcard showing answer, press to show question'
+				: 'Flashcard showing question, press to reveal answer'}
 		>
 			<Flashcard front={current?.front} back={current?.back} {showCardBack} />
 		</div>
@@ -216,6 +219,7 @@
 						</p>
 					{/if}
 					<button
+						type="button"
 						class="text-sm text-blue-600 hover:underline dark:text-blue-400"
 						onclick={() => (showExampleEnglish = !showExampleEnglish)}
 					>
@@ -258,8 +262,9 @@
 
 		<button
 			type="button"
-			class="inline-flex w-full bg-gray-300 p-2 text-right sm:p-4 dark:bg-gray-700"
+			class="inline-flex w-full bg-gray-300 p-2 text-right sm:p-4 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-gray-700"
 			onclick={newCard}
+			disabled={entries.length === 0}
 		>
 			NEW CARD
 			<ArrowRight class="ml-4" />
