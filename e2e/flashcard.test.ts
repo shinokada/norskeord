@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('home page has expected h1', async ({ page }) => {
 	await page.goto('/');
-	expect(await page.textContent('h1')).toBe('Norske flashcard');
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Norske flashcard');
 });
 
 test('home page shows all CEFR level headings', async ({ page }) => {
@@ -25,10 +25,7 @@ test('home page has category links for A1', async ({ page }) => {
 		'href',
 		'/a1/greetings'
 	);
-	await expect(page.getByRole('link', { name: 'animals' })).toHaveAttribute(
-		'href',
-		'/a1/animals'
-	);
+	await expect(page.getByRole('link', { name: 'animals' })).toHaveAttribute('href', '/a1/animals');
 });
 
 test('A1 greetings flashcard page loads and shows title', async ({ page }) => {
@@ -57,5 +54,5 @@ test('C1 philosophy flashcard page loads', async ({ page }) => {
 
 test('about page has expected h1', async ({ page }) => {
 	await page.goto('/about');
-	expect(await page.textContent('h1')).toBe('About');
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText('About');
 });
