@@ -1,0 +1,2261 @@
+[
+	{
+		"norsk": "et demokrati",
+		"english": "a democracy",
+		"example": "Norge er et demokrati med frie valg.",
+		"example_english": "Norway is a democracy with free elections.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en regjering",
+		"english": "a government",
+		"example": "Regjeringen la frem et nytt statsbudsjett.",
+		"example_english": "The government presented a new state budget.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et valg",
+		"english": "an election",
+		"example": "Stortingsvalget avholdes hvert fjerde år.",
+		"example_english": "Parliamentary elections are held every four years.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "å stemme",
+		"english": "to vote",
+		"example": "Alle over 18 år har rett til å stemme.",
+		"example_english": "Everyone over 18 has the right to vote.",
+		"level": "B2",
+		"category": "politics",
+		"part": "verb"
+	},
+	{
+		"norsk": "et parti",
+		"english": "a (political) party",
+		"example": "Hvilket parti stemmer du på?",
+		"example_english": "Which party do you vote for?",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en statsminister",
+		"english": "a prime minister",
+		"example": "Statsministeren holdt en pressekonferanse.",
+		"example_english": "The prime minister held a press conference.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "Stortinget",
+		"english": "the Storting (Norwegian parliament)",
+		"example": "Stortinget vedtok den nye loven.",
+		"example_english": "The Storting passed the new law.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en opposisjon",
+		"english": "an opposition",
+		"example": "Opposisjonen kritiserte regjeringens politikk.",
+		"example_english": "The opposition criticised the government's policy.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en politikk",
+		"english": "a policy / politics",
+		"example": "Klimapolitikken er svært omdiskutert.",
+		"example_english": "Climate policy is highly controversial.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ideologi",
+		"english": "an ideology",
+		"example": "Politiske partier er bygget på ulike ideologier.",
+		"example_english": "Political parties are built on different ideologies.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "suverenitet",
+		"english": "sovereignty",
+		"example": "Nasjonal suverenitet er et omdiskutert tema.",
+		"example_english": "National sovereignty is a debated topic.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et mandat",
+		"english": "a mandate",
+		"example": "Regjeringen fikk et klart mandat fra velgerne.",
+		"example_english": "The government received a clear mandate from the voters.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en koalisjon",
+		"english": "a coalition",
+		"example": "De dannet en mindretallskoalisjon.",
+		"example_english": "They formed a minority coalition.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "å regulere",
+		"english": "to regulate",
+		"example": "Staten regulerer finansmarkedene.",
+		"example_english": "The state regulates the financial markets.",
+		"level": "B2",
+		"category": "politics",
+		"part": "verb"
+	},
+	{
+		"norsk": "en velger",
+		"english": "a voter",
+		"example": "Velgerne er skuffet over løftebruddet.",
+		"example_english": "Voters are disappointed over the broken promise.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en grunnlov",
+		"english": "a constitution",
+		"example": "Grunnloven av 1814 er Norges øverste lov.",
+		"example_english": "The Constitution of 1814 is Norway's supreme law.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en minister",
+		"english": "a minister",
+		"example": "Utenriksministeren møtte sin russiske kollega.",
+		"example_english": "The foreign minister met his Russian counterpart.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et veto",
+		"english": "a veto",
+		"example": "Presidenten brukte sin vetorett.",
+		"example_english": "The president used their veto power.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "diplomatisk",
+		"english": "diplomatic",
+		"example": "Den diplomatiske løsningen tok måneder.",
+		"example_english": "The diplomatic solution took months.",
+		"level": "B2",
+		"category": "politics",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en sanksjon",
+		"english": "a sanction",
+		"example": "EU innførte sanksjoner mot landet.",
+		"example_english": "The EU imposed sanctions against the country.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en reform",
+		"english": "a reform",
+		"example": "Pensjonsreformen var kontroversiell.",
+		"example_english": "The pension reform was controversial.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en statsborger",
+		"english": "a citizen",
+		"example": "Hun ble norsk statsborger i fjor.",
+		"example_english": "She became a Norwegian citizen last year.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "å lovfeste",
+		"english": "to enshrine in law / to legislate",
+		"example": "Retten ble lovfestet i 1978.",
+		"example_english": "The right was enshrined in law in 1978.",
+		"level": "B2",
+		"category": "politics",
+		"part": "verb"
+	},
+	{
+		"norsk": "en folkeavstemning",
+		"english": "a referendum",
+		"example": "Det ble holdt folkeavstemning om EU-medlemskap.",
+		"example_english": "A referendum was held on EU membership.",
+		"level": "B2",
+		"category": "politics",
+		"part": "noun"
+	},
+	{
+		"norsk": "upartisk",
+		"english": "impartial / non-partisan",
+		"example": "Dommeren skal alltid være upartisk.",
+		"example_english": "The judge must always be impartial.",
+		"level": "B2",
+		"category": "politics",
+		"part": "adjective"
+	},
+
+	{
+		"norsk": "en økonomi",
+		"english": "an economy",
+		"example": "Den norske økonomien er sterk.",
+		"example_english": "The Norwegian economy is strong.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "inflasjon",
+		"english": "inflation",
+		"example": "Inflasjonen har steget det siste året.",
+		"example_english": "Inflation has risen over the past year.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en rente",
+		"english": "an interest rate",
+		"example": "Norges Bank satte opp renten.",
+		"example_english": "Norges Bank raised the interest rate.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et budsjett",
+		"english": "a budget",
+		"example": "Regjeringen la frem statsbudsjettet.",
+		"example_english": "The government presented the state budget.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et bruttonasjonalprodukt",
+		"english": "gross domestic product (GDP)",
+		"example": "BNP vokste med to prosent.",
+		"example_english": "GDP grew by two percent.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en skatt",
+		"english": "a tax",
+		"example": "Norge har høye skatter og gode velferdstjenester.",
+		"example_english": "Norway has high taxes and good welfare services.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en investering",
+		"english": "an investment",
+		"example": "Investeringen ga god avkastning.",
+		"example_english": "The investment yielded a good return.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et marked",
+		"english": "a market",
+		"example": "Arbeidsmarkedet er presset.",
+		"example_english": "The labour market is under pressure.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en eksport",
+		"english": "an export",
+		"example": "Norges viktigste eksport er olje og gass.",
+		"example_english": "Norway's most important exports are oil and gas.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en import",
+		"english": "an import",
+		"example": "Vi importerer mye fra Asia.",
+		"example_english": "We import a lot from Asia.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "handelsbalanse",
+		"english": "trade balance",
+		"example": "Norge har positiv handelsbalanse.",
+		"example_english": "Norway has a positive trade balance.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en resessjon",
+		"english": "a recession",
+		"example": "Landet er inne i en dyp resessjon.",
+		"example_english": "The country is in a deep recession.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "velferdsstaten",
+		"english": "the welfare state",
+		"example": "Velferdsstaten sikrer borgernes grunnleggende behov.",
+		"example_english": "The welfare state secures citizens' basic needs.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en gjeld",
+		"english": "debt",
+		"example": "Statens gjeld er under kontroll.",
+		"example_english": "The state's debt is under control.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "privatisering",
+		"english": "privatisation",
+		"example": "Privatiseringen av jernbanen er omdiskutert.",
+		"example_english": "The privatisation of the railway is controversial.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et oljefond",
+		"english": "a sovereign wealth fund / oil fund",
+		"example": "Oljefondet er verdens største statlige investeringsfond.",
+		"example_english": "The oil fund is the world's largest sovereign wealth fund.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en arbeidsledig",
+		"english": "an unemployed person",
+		"example": "Antall arbeidsledige sank i fjor.",
+		"example_english": "The number of unemployed fell last year.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en børs",
+		"english": "a stock exchange",
+		"example": "Oslo Børs steg kraftig i dag.",
+		"example_english": "Oslo Stock Exchange rose sharply today.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "globalisering",
+		"english": "globalisation",
+		"example": "Globalisering har skapt nye markeder.",
+		"example_english": "Globalisation has created new markets.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "å subsidiere",
+		"english": "to subsidise",
+		"example": "Staten subsidierer jordbruket.",
+		"example_english": "The state subsidises agriculture.",
+		"level": "B2",
+		"category": "economics",
+		"part": "verb"
+	},
+	{
+		"norsk": "en konkurranse",
+		"english": "competition",
+		"example": "Hard konkurranse presser prisene ned.",
+		"example_english": "Hard competition pushes prices down.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sentralbank",
+		"english": "a central bank",
+		"example": "Norges Bank er landets sentralbank.",
+		"example_english": "Norges Bank is the country's central bank.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "å deregulere",
+		"english": "to deregulate",
+		"example": "Myndighetene deregulerte energimarkedet.",
+		"example_english": "The authorities deregulated the energy market.",
+		"level": "B2",
+		"category": "economics",
+		"part": "verb"
+	},
+	{
+		"norsk": "produktivitet",
+		"english": "productivity",
+		"example": "Høy produktivitet er et mål for bedrifter.",
+		"example_english": "High productivity is a goal for companies.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et overskudd",
+		"english": "a surplus",
+		"example": "Norge har hatt budsjettoverskudd i mange år.",
+		"example_english": "Norway has had budget surpluses for many years.",
+		"level": "B2",
+		"category": "economics",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "ulikhet",
+		"english": "inequality",
+		"example": "Sosial ulikhet er et voksende problem.",
+		"example_english": "Social inequality is a growing problem.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "diskriminering",
+		"english": "discrimination",
+		"example": "Diskriminering på grunn av kjønn er ulovlig.",
+		"example_english": "Discrimination on the basis of gender is illegal.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "integrering",
+		"english": "integration",
+		"example": "Integrering av flyktninger tar tid.",
+		"example_english": "Integration of refugees takes time.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en flyktning",
+		"english": "a refugee",
+		"example": "Mange flyktninger søker asyl i Europa.",
+		"example_english": "Many refugees seek asylum in Europe.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "fattigdom",
+		"english": "poverty",
+		"example": "Barnefattigdom er et alvorlig samfunnsproblem.",
+		"example_english": "Child poverty is a serious social problem.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en rettighet",
+		"english": "a right",
+		"example": "Alle har rett til gratis utdanning.",
+		"example_english": "Everyone has the right to free education.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "likestilling",
+		"english": "gender equality",
+		"example": "Norge er ledende innen likestilling.",
+		"example_english": "Norway is a leader in gender equality.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "rasisme",
+		"english": "racism",
+		"example": "Rasisme er forbudt ved norsk lov.",
+		"example_english": "Racism is prohibited by Norwegian law.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fordom",
+		"english": "a prejudice / a bias",
+		"example": "Vi må jobbe mot fordommer i samfunnet.",
+		"example_english": "We must work against prejudice in society.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "vold",
+		"english": "violence",
+		"example": "Vold i nære relasjoner er underrapportert.",
+		"example_english": "Domestic violence is underreported.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en inkludering",
+		"english": "inclusion",
+		"example": "Inkludering av alle grupper er viktig.",
+		"example_english": "Inclusion of all groups is important.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en marginalisert gruppe",
+		"english": "a marginalised group",
+		"example": "Politikerne ignorerer ofte marginaliserte grupper.",
+		"example_english": "Politicians often ignore marginalised groups.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et sikkerhetsnett",
+		"english": "a safety net",
+		"example": "Det sosiale sikkerhetsnettet hindrer ekstrem fattigdom.",
+		"example_english": "The social safety net prevents extreme poverty.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hjemløs",
+		"english": "a homeless person",
+		"example": "Antall hjemløse øker i storbyene.",
+		"example_english": "The number of homeless people is rising in large cities.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "psykisk helse",
+		"english": "mental health",
+		"example": "Psykisk helse bør tas like alvorlig som fysisk.",
+		"example_english": "Mental health should be taken as seriously as physical health.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "phrase"
+	},
+	{
+		"norsk": "rusmisbruk",
+		"english": "substance abuse / drug abuse",
+		"example": "Rusmisbruk er et komplekst problem.",
+		"example_english": "Substance abuse is a complex problem.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en velferdsstat",
+		"english": "a welfare state",
+		"example": "Den nordiske velferdsstatsmodellen er anerkjent globalt.",
+		"example_english": "The Nordic welfare state model is recognised globally.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "aktivisme",
+		"english": "activism",
+		"example": "Klimaaktivisme har vokst blant unge.",
+		"example_english": "Climate activism has grown among young people.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "å demonstrere",
+		"english": "to demonstrate / to protest",
+		"example": "Tusenvis demonstrerte i gatene.",
+		"example_english": "Thousands demonstrated in the streets.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "verb"
+	},
+	{
+		"norsk": "en minoritet",
+		"english": "a minority",
+		"example": "Samer er en urfolksminoritet i Norge.",
+		"example_english": "Sami people are an indigenous minority in Norway.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "ytringsfriheten",
+		"english": "freedom of expression",
+		"example": "Ytringsfriheten er grunnlovsfestet.",
+		"example_english": "Freedom of expression is enshrined in the constitution.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "sosial mobilitet",
+		"english": "social mobility",
+		"example": "Utdanning fremmer sosial mobilitet.",
+		"example_english": "Education promotes social mobility.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et asyl",
+		"english": "asylum",
+		"example": "Han søkte asyl i Norge.",
+		"example_english": "He applied for asylum in Norway.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hatytring",
+		"english": "hate speech",
+		"example": "Hatytringer er straffbart.",
+		"example_english": "Hate speech is punishable by law.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+	{
+		"norsk": "solidaritet",
+		"english": "solidarity",
+		"example": "Solidaritet med de svakerestilte er viktig.",
+		"example_english": "Solidarity with the most vulnerable is important.",
+		"level": "B2",
+		"category": "social-issues",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "et kunstverk",
+		"english": "a work of art",
+		"example": "Kunstverk speiler samfunnet de er skapt i.",
+		"example_english": "Works of art reflect the society in which they are created.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "abstrakt",
+		"english": "abstract",
+		"example": "Abstrakt kunst er åpen for tolkning.",
+		"example_english": "Abstract art is open to interpretation.",
+		"level": "B2",
+		"category": "arts",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en komposisjon",
+		"english": "a composition",
+		"example": "Komposisjonen viser dyptgående kunstnerisk innsikt.",
+		"example_english": "The composition shows profound artistic insight.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "et perspektiv",
+		"english": "a perspective",
+		"example": "Maleriet bruker lineærperspektiv.",
+		"example_english": "The painting uses linear perspective.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en estetikk",
+		"english": "aesthetics",
+		"example": "Japansk estetikk legger vekt på enkelhet.",
+		"example_english": "Japanese aesthetics emphasises simplicity.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en installasjonskunst",
+		"english": "installation art",
+		"example": "Installasjonskunst utfordrer rommet vi er i.",
+		"example_english": "Installation art challenges the space we are in.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en koreografi",
+		"english": "choreography",
+		"example": "Koreografien ble mottatt med stående applaus.",
+		"example_english": "The choreography was met with a standing ovation.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en arkitektur",
+		"english": "architecture",
+		"example": "Norsk trearkitektur er unik.",
+		"example_english": "Norwegian timber architecture is unique.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kritiker",
+		"english": "a critic",
+		"example": "Kunstkritikeren ga verket fem stjerner.",
+		"example_english": "The art critic gave the work five stars.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "å tolke",
+		"english": "to interpret",
+		"example": "Det er vanskelig å tolke dette diktet.",
+		"example_english": "It is difficult to interpret this poem.",
+		"level": "B2",
+		"category": "arts",
+		"part": "verb"
+	},
+	{
+		"norsk": "en avantgarde",
+		"english": "the avant-garde",
+		"example": "Avantgardekunst provoserer med vilje.",
+		"example_english": "Avant-garde art provokes deliberately.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "et motiv",
+		"english": "a motif / a subject",
+		"example": "Naturen er et gjennomgående motiv hos Munch.",
+		"example_english": "Nature is a recurring motif in Munch's work.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mottager av pris",
+		"english": "an award recipient / a prize winner",
+		"example": "Hun er mottaker av Nordisk råds litteraturpris.",
+		"example_english": "She is the recipient of the Nordic Council's Literature Prize.",
+		"level": "B2",
+		"category": "arts",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et mesterverk",
+		"english": "a masterpiece",
+		"example": "Skriket regnes som et mesterverk.",
+		"example_english": "The Scream is considered a masterpiece.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en provokasjon",
+		"english": "a provocation",
+		"example": "Forestillingen var en bevisst provokasjon.",
+		"example_english": "The performance was a deliberate provocation.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en filmserie",
+		"english": "a film series / a franchise",
+		"example": "Filmserien fikk blandet kritikk.",
+		"example_english": "The film series received mixed reviews.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sympfoni",
+		"english": "a symphony",
+		"example": "Griegs Peer Gynt Suite er kjent over hele verden.",
+		"example_english": "Grieg's Peer Gynt Suite is known all over the world.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "et regi",
+		"english": "direction (film/theatre)",
+		"example": "Regien var imponerende.",
+		"example_english": "The direction was impressive.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "å portrettere",
+		"english": "to portray",
+		"example": "Romanen portretterer livet i etterkrigstiden.",
+		"example_english": "The novel portrays life in the post-war period.",
+		"level": "B2",
+		"category": "arts",
+		"part": "verb"
+	},
+	{
+		"norsk": "en patronasje",
+		"english": "patronage",
+		"example": "Kunstens patronasje sikrer overlevelse for kunstnere.",
+		"example_english": "Patronage of the arts ensures survival for artists.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "et kulturbudsjett",
+		"english": "a cultural budget",
+		"example": "Kulturbudsjettet ble kuttet med ti prosent.",
+		"example_english": "The cultural budget was cut by ten percent.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en symbolikk",
+		"english": "symbolism",
+		"example": "Symbolikken i maleriet er rik.",
+		"example_english": "The symbolism in the painting is rich.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "improvisasjon",
+		"english": "improvisation",
+		"example": "Jazz bygger på improvisasjon.",
+		"example_english": "Jazz is built on improvisation.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "en utstillingsåpning",
+		"english": "an exhibition opening / a vernissage",
+		"example": "Vi var på utstillingsåpning i galleriet.",
+		"example_english": "We attended the exhibition opening at the gallery.",
+		"level": "B2",
+		"category": "arts",
+		"part": "noun"
+	},
+	{
+		"norsk": "visuelle virkemidler",
+		"english": "visual devices / visual techniques",
+		"example": "Kunstneren bruker sterke visuelle virkemidler.",
+		"example_english": "The artist uses strong visual devices.",
+		"level": "B2",
+		"category": "arts",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "et eksperiment",
+		"english": "an experiment",
+		"example": "Eksperimentet ga overraskende resultater.",
+		"example_english": "The experiment produced surprising results.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hypotese",
+		"english": "a hypothesis",
+		"example": "Forskerne testet hypotesen over to år.",
+		"example_english": "The researchers tested the hypothesis over two years.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "et funn",
+		"english": "a finding / a discovery",
+		"example": "Funnene ble publisert i et fagfellevurdert tidsskrift.",
+		"example_english": "The findings were published in a peer-reviewed journal.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "å forske på",
+		"english": "to research / to investigate",
+		"example": "De forsker på effekten av medisin.",
+		"example_english": "They research the effect of medication.",
+		"level": "B2",
+		"category": "science",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en forsker",
+		"english": "a researcher / a scientist",
+		"example": "Forskeren presenterte resultatene på konferansen.",
+		"example_english": "The researcher presented the results at the conference.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "en teori",
+		"english": "a theory",
+		"example": "Evolusjonsteori er godt vitenskapelig fundert.",
+		"example_english": "Evolutionary theory is well scientifically founded.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "genetikk",
+		"english": "genetics",
+		"example": "Genetikk forklarer mange arvelige sykdommer.",
+		"example_english": "Genetics explains many hereditary diseases.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "kvantemekanikk",
+		"english": "quantum mechanics",
+		"example": "Kvantemekanikk er vanskelig å forstå intuitivt.",
+		"example_english": "Quantum mechanics is difficult to understand intuitively.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "en modell",
+		"english": "a model",
+		"example": "Klimamodeller forutsier fremtidige temperaturer.",
+		"example_english": "Climate models predict future temperatures.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "å analysere",
+		"english": "to analyse",
+		"example": "Vi analyserte dataene statistisk.",
+		"example_english": "We analysed the data statistically.",
+		"level": "B2",
+		"category": "science",
+		"part": "verb"
+	},
+	{
+		"norsk": "en variabel",
+		"english": "a variable",
+		"example": "Forskerne kontrollerte for alle variabler.",
+		"example_english": "The researchers controlled for all variables.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "et laboratorium",
+		"english": "a laboratory",
+		"example": "Prøvene ble analysert i laboratoriet.",
+		"example_english": "The samples were analysed in the laboratory.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "bioteknologi",
+		"english": "biotechnology",
+		"example": "Bioteknologi brukes i medisin og landbruk.",
+		"example_english": "Biotechnology is used in medicine and agriculture.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "en oppdagelse",
+		"english": "a discovery",
+		"example": "Oppdagelsen av penicillin reddet millioner.",
+		"example_english": "The discovery of penicillin saved millions.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "vitenskapelig",
+		"english": "scientific",
+		"example": "Vitenskapelige metoder sikrer pålitelige resultater.",
+		"example_english": "Scientific methods ensure reliable results.",
+		"level": "B2",
+		"category": "science",
+		"part": "adjective"
+	},
+	{
+		"norsk": "et peer review",
+		"english": "peer review",
+		"example": "Alle artikler gjennomgår peer review.",
+		"example_english": "All articles undergo peer review.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "fysikk",
+		"english": "physics",
+		"example": "Fysikk beskriver naturens grunnleggende lover.",
+		"example_english": "Physics describes the fundamental laws of nature.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "kjemi",
+		"english": "chemistry",
+		"example": "Kjemi er viktig for å forstå materialer.",
+		"example_english": "Chemistry is important for understanding materials.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "en banebrytende",
+		"english": "groundbreaking / pioneering",
+		"example": "Det var et banebrytende funn.",
+		"example_english": "It was a groundbreaking discovery.",
+		"level": "B2",
+		"category": "science",
+		"part": "adjective"
+	},
+	{
+		"norsk": "reproduserbar",
+		"english": "reproducible",
+		"example": "Resultatene må være reproduserbare.",
+		"example_english": "The results must be reproducible.",
+		"level": "B2",
+		"category": "science",
+		"part": "adjective"
+	},
+	{
+		"norsk": "et paradigmeskifte",
+		"english": "a paradigm shift",
+		"example": "Einsteins relativitetsteori var et paradigmeskifte.",
+		"example_english": "Einstein's theory of relativity was a paradigm shift.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "å dokumentere",
+		"english": "to document",
+		"example": "Vi dokumenterte alle steg i prosessen.",
+		"example_english": "We documented all steps in the process.",
+		"level": "B2",
+		"category": "science",
+		"part": "verb"
+	},
+	{
+		"norsk": "en sonde",
+		"english": "a probe",
+		"example": "Romsondet sendte bilder fra Mars.",
+		"example_english": "The space probe sent images from Mars.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "en evolusjon",
+		"english": "evolution",
+		"example": "Evolusjon er en langsommelig prosess.",
+		"example_english": "Evolution is a slow process.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+	{
+		"norsk": "nanoteknologi",
+		"english": "nanotechnology",
+		"example": "Nanoteknologi kan revolusjonere medisinen.",
+		"example_english": "Nanotechnology can revolutionise medicine.",
+		"level": "B2",
+		"category": "science",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "sjalusi",
+		"english": "jealousy",
+		"example": "Sjalusi kan ødelegge et godt forhold.",
+		"example_english": "Jealousy can destroy a good relationship.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "skam",
+		"english": "shame",
+		"example": "Hun følte dyp skam over det som hadde skjedd.",
+		"example_english": "She felt deep shame about what had happened.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "skyld",
+		"english": "guilt",
+		"example": "Han sleit med skyldfølelse i lang tid.",
+		"example_english": "He struggled with feelings of guilt for a long time.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "beundring",
+		"english": "admiration",
+		"example": "Jeg har stor beundring for hennes mot.",
+		"example_english": "I have great admiration for her courage.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "forakt",
+		"english": "contempt / disdain",
+		"example": "Han skjulte ikke sin forakt.",
+		"example_english": "He did not hide his contempt.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "nostalgi",
+		"english": "nostalgia",
+		"example": "Gamle sanger vekker nostalgi.",
+		"example_english": "Old songs stir up nostalgia.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "ambivalens",
+		"english": "ambivalence",
+		"example": "Jeg føler ambivalens overfor beslutningen.",
+		"example_english": "I feel ambivalence about the decision.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "fortvilelse",
+		"english": "despair / desperation",
+		"example": "Han var fylt av fortvilelse.",
+		"example_english": "He was filled with despair.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lettelse",
+		"english": "relief",
+		"example": "Hun puste lettet ut da faren var over.",
+		"example_english": "She breathed a sigh of relief when the danger was over.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "mistenksomhet",
+		"english": "suspicion / distrust",
+		"example": "Mistenksomhet svekker tilliten i teamet.",
+		"example_english": "Suspicion weakens trust within the team.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "entusiasme",
+		"english": "enthusiasm",
+		"example": "Hun angrep oppgaven med entusiasme.",
+		"example_english": "She attacked the task with enthusiasm.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "likegyldighet",
+		"english": "indifference",
+		"example": "Hans likegyldighet overfor situasjonen sjokkerte oss.",
+		"example_english": "His indifference to the situation shocked us.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "harme",
+		"english": "indignation / resentment",
+		"example": "Urettferdigheten fylte henne med harme.",
+		"example_english": "The injustice filled her with indignation.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "resignasjon",
+		"english": "resignation",
+		"example": "Med resignasjon aksepterte han utfallet.",
+		"example_english": "With resignation he accepted the outcome.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "medfølelse",
+		"english": "compassion / empathy",
+		"example": "God omsorg krever medfølelse.",
+		"example_english": "Good care requires compassion.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "undring",
+		"english": "wonder / amazement",
+		"example": "Barnas undring over naturen er smittende.",
+		"example_english": "Children's wonder at nature is contagious.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "bitterhet",
+		"english": "bitterness",
+		"example": "Gammelt svik kan etterlate bitterhet.",
+		"example_english": "Old betrayal can leave bitterness behind.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "hjertesorg",
+		"english": "heartbreak / heartache",
+		"example": "Bruddet fylte ham med hjertesorg.",
+		"example_english": "The break-up filled him with heartbreak.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "pågangsmot",
+		"english": "drive / determination / grit",
+		"example": "Pågangsmot er nøkkelen til suksess.",
+		"example_english": "Drive is the key to success.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "selvtillit",
+		"english": "self-confidence / self-esteem",
+		"example": "Suksess bygger selvtillit.",
+		"example_english": "Success builds self-confidence.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "frustrasjon",
+		"english": "frustration",
+		"example": "Frustrasjon over byråkratiet er forståelig.",
+		"example_english": "Frustration with bureaucracy is understandable.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "opprørthet",
+		"english": "outrage / upset",
+		"example": "Nyheten skapte stor opprørthet.",
+		"example_english": "The news caused great outrage.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "å overvelde",
+		"english": "to overwhelm",
+		"example": "Inntrykkene overveldet henne.",
+		"example_english": "The impressions overwhelmed her.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "verb"
+	},
+	{
+		"norsk": "takknemlighet",
+		"english": "gratitude",
+		"example": "Han uttrykte stor takknemlighet for hjelpen.",
+		"example_english": "He expressed great gratitude for the help.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+	{
+		"norsk": "håpløshet",
+		"english": "hopelessness",
+		"example": "Håpløshet er et symptom på depresjon.",
+		"example_english": "Hopelessness is a symptom of depression.",
+		"level": "B2",
+		"category": "emotions",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "å slå to fluer i en smekk",
+		"english": "to kill two birds with one stone",
+		"example": "Jeg handlet og besøkte vennen — jeg slo to fluer i en smekk.",
+		"example_english": "I did the shopping and visited my friend — I killed two birds with one stone.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ha hendene fulle",
+		"english": "to have one's hands full",
+		"example": "Med tre barn har hun hendene fulle.",
+		"example_english": "With three children she has her hands full.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å sette foten ned",
+		"english": "to put one's foot down",
+		"example": "Faren satte foten ned da sønnen ville slutte på skolen.",
+		"example_english": "The father put his foot down when his son wanted to drop out of school.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ta seg vann over hodet",
+		"english": "to bite off more than one can chew / to get in over one's head",
+		"example": "Han tok seg vann over hodet med det prosjektet.",
+		"example_english": "He bit off more than he could chew with that project.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å gå som katten rundt den varme grøten",
+		"english": "to beat around the bush",
+		"example": "Slutt å gå som katten rundt den varme grøten — si hva du mener!",
+		"example_english": "Stop beating around the bush — say what you mean!",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ha is i magen",
+		"english": "to keep cool / to keep one's nerve",
+		"example": "I kriser er det viktig å ha is i magen.",
+		"example_english": "In crises it is important to keep your nerve.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ta saken i egne hender",
+		"english": "to take matters into one's own hands",
+		"example": "Når ingen andre hjalp, tok hun saken i egne hender.",
+		"example_english": "When nobody else helped, she took matters into her own hands.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å bite i det sure eplet",
+		"english": "to bite the bullet",
+		"example": "Til slutt beit han i det sure eplet.",
+		"example_english": "In the end he bit the bullet.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "det er ikke alltid gull det som glimrer",
+		"english": "all that glitters is not gold",
+		"example": "Det er ikke alltid gull det som glimrer — les kontrakten nøye.",
+		"example_english": "All that glitters is not gold — read the contract carefully.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å kjøre seg fast",
+		"english": "to get stuck / to hit a dead end",
+		"example": "Diskusjonen kjørte seg fast.",
+		"example_english": "The discussion hit a dead end.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å brenne alle broer",
+		"english": "to burn all bridges",
+		"example": "Husk at du ikke må brenne alle broer.",
+		"example_english": "Remember not to burn all your bridges.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ha noe på hjertet",
+		"english": "to have something on one's mind",
+		"example": "Det virker som du har noe på hjertet.",
+		"example_english": "It seems like you have something on your mind.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å stikke fingeren i jorda",
+		"english": "to test the waters / to get a feel for something",
+		"example": "La oss stikke fingeren i jorda før vi bestemmer oss.",
+		"example_english": "Let's test the waters before we decide.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å legge kortene på bordet",
+		"english": "to lay one's cards on the table",
+		"example": "Det er på tide å legge kortene på bordet.",
+		"example_english": "It is time to lay our cards on the table.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ta tyren ved hornene",
+		"english": "to take the bull by the horns",
+		"example": "Du er nødt til å ta tyren ved hornene.",
+		"example_english": "You need to take the bull by the horns.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å komme til kort",
+		"english": "to fall short / to be inadequate",
+		"example": "Planen kom til kort i møte med virkeligheten.",
+		"example_english": "The plan fell short when faced with reality.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å holde masken",
+		"english": "to keep up appearances / to keep a straight face",
+		"example": "Det var vanskelig å holde masken.",
+		"example_english": "It was hard to keep a straight face.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å sove på det",
+		"english": "to sleep on it",
+		"example": "Det er et vanskelig valg — sov på det.",
+		"example_english": "It is a difficult choice — sleep on it.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ha bein i nesa",
+		"english": "to have backbone / to be assertive",
+		"example": "Du må ha bein i nesa for å lykkes der.",
+		"example_english": "You need to have backbone to succeed there.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å se seg selv i speilet",
+		"english": "to look at oneself in the mirror / to self-reflect",
+		"example": "Før du kritiserer andre, se deg selv i speilet.",
+		"example_english": "Before criticising others, look at yourself in the mirror.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å snakke rett fra leveren",
+		"english": "to speak one's mind / to speak frankly",
+		"example": "Jeg snakker rett fra leveren: planen er dårlig.",
+		"example_english": "I'm speaking frankly: the plan is bad.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å male fanden på veggen",
+		"english": "to paint a gloomy picture / to imagine the worst",
+		"example": "Ikke mal fanden på veggen — det ordner seg.",
+		"example_english": "Don't imagine the worst — it will work itself out.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å gå rundt grøten",
+		"english": "to avoid the issue / to talk around something",
+		"example": "Slutt å gå rundt grøten og si det du tenker.",
+		"example_english": "Stop avoiding the issue and say what you think.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å stå på egne ben",
+		"english": "to stand on one's own two feet",
+		"example": "Han lærte tidlig å stå på egne ben.",
+		"example_english": "He learned early to stand on his own two feet.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å snu kappen etter vinden",
+		"english": "to turn one's coat / to change sides with the wind",
+		"example": "En politiker som snur kappen etter vinden mister tilliten.",
+		"example_english": "A politician who changes with the wind loses trust.",
+		"level": "B2",
+		"category": "idioms",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "en epoke",
+		"english": "an era / an epoch",
+		"example": "Vikingtiden er en fascinerende epoke.",
+		"example_english": "The Viking Age is a fascinating era.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sivilisasjon",
+		"english": "a civilisation",
+		"example": "Den romerske sivilisasjonen varte i mange hundre år.",
+		"example_english": "Roman civilisation lasted for many hundreds of years.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "et imperiet",
+		"english": "an empire",
+		"example": "Det britiske imperiet var en gang verdens største.",
+		"example_english": "The British Empire was once the world's largest.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en revolusjon",
+		"english": "a revolution",
+		"example": "Den franske revolusjonen forandret Europa.",
+		"example_english": "The French Revolution changed Europe.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "kolonisering",
+		"english": "colonisation",
+		"example": "Kolonisering hadde store konsekvenser for urfolk.",
+		"example_english": "Colonisation had major consequences for indigenous peoples.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "et primærkilder",
+		"english": "primary sources",
+		"example": "Historikere bruker primærkilder som brev og dagbøker.",
+		"example_english": "Historians use primary sources such as letters and diaries.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "et arkeologi",
+		"english": "archaeology",
+		"example": "Arkeologi avdekker fortiden gjennom utgravinger.",
+		"example_english": "Archaeology uncovers the past through excavations.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en arv",
+		"english": "a legacy / heritage",
+		"example": "Industrialiseringen etterlot en varig arv.",
+		"example_english": "Industrialisation left a lasting legacy.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en krig",
+		"english": "a war",
+		"example": "Den andre verdenskrigen tok millioner av liv.",
+		"example_english": "The Second World War took millions of lives.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "okkupasjon",
+		"english": "occupation (of a country)",
+		"example": "Norge var under tysk okkupasjon 1940–45.",
+		"example_english": "Norway was under German occupation 1940–45.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en frigjøring",
+		"english": "a liberation",
+		"example": "8. mai markerer frigjøringen av Norge.",
+		"example_english": "8 May marks the liberation of Norway.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "union",
+		"english": "a union",
+		"example": "Sverige og Norge var i union mellom 1814 og 1905.",
+		"example_english": "Sweden and Norway were in a union between 1814 and 1905.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "migrasjon",
+		"english": "migration",
+		"example": "Migrasjon har formet moderne nasjoner.",
+		"example_english": "Migration has shaped modern nations.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "et monument",
+		"english": "a monument",
+		"example": "Monumentet ble reist til minne om krigens ofre.",
+		"example_english": "The monument was erected in memory of the war's victims.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "nasjonalisme",
+		"english": "nationalism",
+		"example": "Nasjonalisme var en sterk kraft på 1800-tallet.",
+		"example_english": "Nationalism was a powerful force in the 19th century.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "historiografi",
+		"english": "historiography",
+		"example": "Historiografi handler om hvordan historien skrives.",
+		"example_english": "Historiography concerns how history is written.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "et fredsavtale",
+		"english": "a peace agreement",
+		"example": "Fredsavtalen ble undertegnet i Paris.",
+		"example_english": "The peace agreement was signed in Paris.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en grunnlegging",
+		"english": "a founding / an establishment",
+		"example": "Grunnleggingen av Oslo skjedde på 1000-tallet.",
+		"example_english": "The founding of Oslo took place in the 11th century.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "å tolke fortiden",
+		"english": "to interpret the past",
+		"example": "Historikere tolker fortiden ut fra nye perspektiver.",
+		"example_english": "Historians interpret the past from new perspectives.",
+		"level": "B2",
+		"category": "history",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en kilde",
+		"english": "a (historical) source",
+		"example": "Sagalitteraturen er en viktig kilde til vikingtiden.",
+		"example_english": "Saga literature is an important source for the Viking Age.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en reformasjonen",
+		"english": "the Reformation",
+		"example": "Reformasjonen endret religiøst liv i Europa.",
+		"example_english": "The Reformation changed religious life in Europe.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "industrialisering",
+		"english": "industrialisation",
+		"example": "Industrialisering forandret samfunnsstrukturen.",
+		"example_english": "Industrialisation changed the structure of society.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en opplysningstiden",
+		"english": "the Enlightenment",
+		"example": "Opplysningstiden fremmet fornuft og vitenskap.",
+		"example_english": "The Enlightenment promoted reason and science.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tidslinje",
+		"english": "a timeline",
+		"example": "Læreren tegnet en tidslinje over norsk historie.",
+		"example_english": "The teacher drew a timeline of Norwegian history.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+	{
+		"norsk": "et genosid",
+		"english": "genocide",
+		"example": "Folkemord er et av historiens største forbrytelser.",
+		"example_english": "Genocide is one of history's greatest crimes.",
+		"level": "B2",
+		"category": "history",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en domstol",
+		"english": "a court (of law)",
+		"example": "Saken ble ført for domstolen.",
+		"example_english": "The case was brought before the court.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dommer",
+		"english": "a judge",
+		"example": "Dommeren leste opp dommen.",
+		"example_english": "The judge read out the verdict.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en advokat",
+		"english": "a lawyer / an attorney",
+		"example": "Advokaten forsvarte klienten sin.",
+		"example_english": "The lawyer defended their client.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "et lovbrudd",
+		"english": "a criminal offence",
+		"example": "Tyveriet er et lovbrudd.",
+		"example_english": "The theft is a criminal offence.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en straffesak",
+		"english": "a criminal case",
+		"example": "Straffesaken tiltrakk seg mye medieoppmerksomhet.",
+		"example_english": "The criminal case attracted a lot of media attention.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "å anke",
+		"english": "to appeal (a verdict)",
+		"example": "De bestemte seg for å anke dommen.",
+		"example_english": "They decided to appeal the verdict.",
+		"level": "B2",
+		"category": "law",
+		"part": "verb"
+	},
+	{
+		"norsk": "en tiltalt",
+		"english": "a defendant / an accused",
+		"example": "Den tiltalte nektet for alle anklager.",
+		"example_english": "The defendant denied all charges.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "et vitne",
+		"english": "a witness",
+		"example": "Vitnet forklarte seg under ed.",
+		"example_english": "The witness testified under oath.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "et bevis",
+		"english": "evidence / proof",
+		"example": "Bevisene pekte klart mot tiltalte.",
+		"example_english": "The evidence pointed clearly to the defendant.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en straff",
+		"english": "a punishment / a sentence",
+		"example": "Straffen var fem år i fengsel.",
+		"example_english": "The punishment was five years in prison.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "uskyld",
+		"english": "innocence",
+		"example": "Han hevdet sin uskyld.",
+		"example_english": "He maintained his innocence.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en rettssak",
+		"english": "a trial / a lawsuit",
+		"example": "Rettssaken varte i tre uker.",
+		"example_english": "The trial lasted three weeks.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kontrakt",
+		"english": "a contract",
+		"example": "Les kontrakten nøye før du skriver under.",
+		"example_english": "Read the contract carefully before you sign.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "juridisk",
+		"english": "legal / juridical",
+		"example": "Juridisk rådgivning er dyrt.",
+		"example_english": "Legal advice is expensive.",
+		"level": "B2",
+		"category": "law",
+		"part": "adjective"
+	},
+	{
+		"norsk": "menneskerettigheter",
+		"english": "human rights",
+		"example": "FN beskytter menneskerettighetene globalt.",
+		"example_english": "The UN protects human rights globally.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en anklagelse",
+		"english": "an accusation / a charge",
+		"example": "Anklagelsene ble ikke bevist.",
+		"example_english": "The accusations were not proven.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en rettstat",
+		"english": "a rule-of-law state",
+		"example": "En rettsstat kjennetegnes av likebehandling.",
+		"example_english": "A rule-of-law state is characterised by equal treatment.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "erstatning",
+		"english": "compensation / damages",
+		"example": "Offerets famille krevde erstatning.",
+		"example_english": "The victim's family demanded compensation.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en paragraf",
+		"english": "a clause / a paragraph (in law)",
+		"example": "Paragraf 185 i straffeloven forbyr hatytringer.",
+		"example_english": "Paragraph 185 of the Penal Code prohibits hate speech.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "å tiltale",
+		"english": "to charge / to indict",
+		"example": "Politiet tiltalte ham for grovt tyveri.",
+		"example_english": "The police charged him with aggravated theft.",
+		"level": "B2",
+		"category": "law",
+		"part": "verb"
+	},
+	{
+		"norsk": "rettssikkerhet",
+		"english": "legal certainty / due process",
+		"example": "Rettssikkerhet er en grunnleggende demokratisk verdi.",
+		"example_english": "Legal certainty is a fundamental democratic value.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en forsvarer",
+		"english": "a defence lawyer",
+		"example": "Forsvareren argumenterte kraftig for frifinnelse.",
+		"example_english": "The defence lawyer argued strongly for acquittal.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "en aktor",
+		"english": "a prosecutor",
+		"example": "Aktoren la frem sterk bevis.",
+		"example_english": "The prosecutor presented strong evidence.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+	{
+		"norsk": "å frikjenne",
+		"english": "to acquit",
+		"example": "Retten frikjente ham for mangel på bevis.",
+		"example_english": "The court acquitted him for lack of evidence.",
+		"level": "B2",
+		"category": "law",
+		"part": "verb"
+	},
+	{
+		"norsk": "en rettspraksis",
+		"english": "case law / legal precedent",
+		"example": "Rettspraksis gir veiledning til fremtidige saker.",
+		"example_english": "Case law provides guidance for future cases.",
+		"level": "B2",
+		"category": "law",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "et narrativ",
+		"english": "a narrative",
+		"example": "Romanen har et ikke-lineært narrativ.",
+		"example_english": "The novel has a non-linear narrative.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en protagonist",
+		"english": "a protagonist",
+		"example": "Protagonisten gjennomgår en sterk indre reise.",
+		"example_english": "The protagonist undergoes a powerful inner journey.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en antagonist",
+		"english": "an antagonist",
+		"example": "Antagonisten representerer det onde i samfunnet.",
+		"example_english": "The antagonist represents the evil in society.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en forteller",
+		"english": "a narrator",
+		"example": "Fortelleren er upålitelig og farger historien.",
+		"example_english": "The narrator is unreliable and colours the story.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en metafor",
+		"english": "a metaphor",
+		"example": "Forfatteren bruker lyset som metafor for håp.",
+		"example_english": "The author uses light as a metaphor for hope.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et tema",
+		"english": "a theme",
+		"example": "Et sentralt tema i romanen er frihet.",
+		"example_english": "A central theme in the novel is freedom.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et symbol",
+		"english": "a symbol",
+		"example": "Havet er et symbol på det ukjente.",
+		"example_english": "The sea is a symbol of the unknown.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "å karakterisere",
+		"english": "to characterise",
+		"example": "Forfatteren karakteriserer helten som ambivalent.",
+		"example_english": "The author characterises the hero as ambivalent.",
+		"level": "B2",
+		"category": "literature",
+		"part": "verb"
+	},
+	{
+		"norsk": "en ironi",
+		"english": "irony",
+		"example": "Teksten er full av bitter ironi.",
+		"example_english": "The text is full of bitter irony.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en allegori",
+		"english": "an allegory",
+		"example": "Dyrefarden er en allegori over politisk makt.",
+		"example_english": "The animal farm is an allegory about political power.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et klimaks",
+		"english": "a climax",
+		"example": "Klimakset i handlingen er svært dramatisk.",
+		"example_english": "The climax of the plot is very dramatic.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en handling",
+		"english": "a plot",
+		"example": "Handlingen er kompleks med mange tråder.",
+		"example_english": "The plot is complex with many threads.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bikarakter",
+		"english": "a secondary / minor character",
+		"example": "Bikarakterene tilfører dybde til historien.",
+		"example_english": "The minor characters add depth to the story.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et prolog",
+		"english": "a prologue",
+		"example": "Prologens hint om slutten skapte spenning.",
+		"example_english": "The prologue's hints about the ending created suspense.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et epilog",
+		"english": "an epilogue",
+		"example": "I epilogen får vi vite hva som skjer etterpå.",
+		"example_english": "In the epilogue we find out what happens afterwards.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dystopi",
+		"english": "a dystopia",
+		"example": "Orwells 1984 er en klassisk dystopi.",
+		"example_english": "Orwell's 1984 is a classic dystopia.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en utopi",
+		"english": "a utopia",
+		"example": "Mores Utopia beskriver et perfekt samfunn.",
+		"example_english": "More's Utopia describes a perfect society.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et dramaturgi",
+		"english": "dramaturgy",
+		"example": "Dramaturgien i stykket er klassisk.",
+		"example_english": "The dramaturgy of the play is classical.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lyrikk",
+		"english": "lyric poetry / lyricism",
+		"example": "Norsk lyrikk fra romantikken er vakker.",
+		"example_english": "Norwegian lyric poetry from the Romantic period is beautiful.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en prosa",
+		"english": "prose",
+		"example": "Hun skriver klar og vakker prosa.",
+		"example_english": "She writes clear and beautiful prose.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et tilbakeblikk",
+		"english": "a flashback",
+		"example": "Tilbakeblikk avslører heltens fortid.",
+		"example_english": "Flashbacks reveal the hero's past.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en litteraturkritikk",
+		"english": "literary criticism",
+		"example": "Litteraturkritikken hjelper oss å forstå tekster dypere.",
+		"example_english": "Literary criticism helps us understand texts more deeply.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "et stream of consciousness",
+		"english": "stream of consciousness",
+		"example": "Virginia Woolf er kjent for stream of consciousness.",
+		"example_english": "Virginia Woolf is known for stream of consciousness.",
+		"level": "B2",
+		"category": "literature",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en sjanger",
+		"english": "a genre",
+		"example": "Hvilken sjanger liker du best?",
+		"example_english": "Which genre do you like best?",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kanon",
+		"english": "a (literary) canon",
+		"example": "Ibsen er en del av den norske litterære kanon.",
+		"example_english": "Ibsen is part of the Norwegian literary canon.",
+		"level": "B2",
+		"category": "literature",
+		"part": "noun"
+	}
+]

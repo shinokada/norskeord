@@ -1,0 +1,1357 @@
+[
+	{
+		"norsk": "å stige ned i",
+		"english": "to descend into (literary)",
+		"example": "Helten stiger ned i underverdenen for å hente sin elskede.",
+		"example_english": "The hero descends into the underworld to retrieve his beloved.",
+		"level": "C2",
+		"category": "literary",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en eleganse",
+		"english": "elegance (of style)",
+		"example": "Prosaen er preget av en sjelden eleganse.",
+		"example_english": "The prose is characterised by a rare elegance.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en epifani",
+		"english": "an epiphany",
+		"example": "I romanens klimaks opplever protagonisten en dyptgående epifani.",
+		"example_english": "At the novel's climax the protagonist experiences a profound epiphany.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en protagonisten",
+		"english": "a protagonist",
+		"example": "Protagonisten gjennomgår en dramatisk indre forvandling.",
+		"example_english": "The protagonist undergoes a dramatic inner transformation.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en antagonist",
+		"english": "an antagonist",
+		"example": "Antagonisten representerer de destruktive kreftene i samfunnet.",
+		"example_english": "The antagonist represents the destructive forces in society.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en intertekstualitet",
+		"english": "intertextuality",
+		"example": "Romanen er rik på intertekstualitet med norrøne sagaer.",
+		"example_english": "The novel is rich in intertextuality with Norse sagas.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "et leitmotiv",
+		"english": "a leitmotif",
+		"example": "Havet er et gjennomgående leitmotiv i hans forfatterskap.",
+		"example_english": "The sea is a recurring leitmotif throughout his authorship.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en pastisj",
+		"english": "a pastiche",
+		"example": "Novellen er en bevisst pastisj av romantikkens stil.",
+		"example_english": "The short story is a deliberate pastiche of Romanticism's style.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ekfrase",
+		"english": "ekphrasis (literary description of art)",
+		"example": "Diktet er en klassisk ekfrase over Munchs 'Skriket'.",
+		"example_english": "The poem is a classical ekphrasis of Munch's 'The Scream'.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lakonisk stil",
+		"english": "a laconic style",
+		"example": "Forfatterinnen er kjent for sin lakoniske stil.",
+		"example_english": "The author is known for her laconic style.",
+		"level": "C2",
+		"category": "literary",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et frampek",
+		"english": "foreshadowing",
+		"example": "Det tidlige frampeket varsler en tragisk slutt.",
+		"example_english": "The early foreshadowing heralds a tragic ending.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en tilbakeblikk",
+		"english": "a flashback",
+		"example": "Romanen struktureres gjennom tilbakeblikk.",
+		"example_english": "The novel is structured through flashbacks.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en upålitelig forteller",
+		"english": "an unreliable narrator",
+		"example": "Den upålitelige fortelleren skaper tvil hos leseren.",
+		"example_english": "The unreliable narrator creates doubt in the reader.",
+		"level": "C2",
+		"category": "literary",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et stream of consciousness",
+		"english": "stream of consciousness",
+		"example": "Woolf brukte stream of consciousness som narrativ teknikk.",
+		"example_english": "Woolf used stream of consciousness as a narrative technique.",
+		"level": "C2",
+		"category": "literary",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en dystopi",
+		"english": "a dystopia",
+		"example": "Orwells 1984 er en klassisk litterær dystopi.",
+		"example_english": "Orwell's 1984 is a classic literary dystopia.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en utopi",
+		"english": "a utopia",
+		"example": "More beskrev en utopi som et ideelt samfunn.",
+		"example_english": "More described a utopia as an ideal society.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bildungsroman",
+		"english": "a bildungsroman (coming-of-age novel)",
+		"example": "Hamsuns 'Sult' er en norsk bildungsroman.",
+		"example_english": "Hamsun's 'Hunger' is a Norwegian bildungsroman.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mise en abyme",
+		"english": "mise en abyme (story within a story)",
+		"example": "Teksten leker med mise en abyme gjennom boken i boken.",
+		"example_english": "The text plays with mise en abyme through the book within the book.",
+		"level": "C2",
+		"category": "literary",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en ironi av skjebnen",
+		"english": "an irony of fate",
+		"example": "At han dør akkurat der han ble født, er en ironi av skjebnen.",
+		"example_english": "That he dies exactly where he was born is an irony of fate.",
+		"level": "C2",
+		"category": "literary",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en peripeti",
+		"english": "a peripeteia (sudden reversal of fortune)",
+		"example": "Peripetien inntreffer i tredje akt og snur alt på hodet.",
+		"example_english": "The peripeteia occurs in act three and turns everything upside down.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hamartia",
+		"english": "hamartia (a tragic flaw)",
+		"example": "Heltens hamartia er hans ubegrenste stolthet.",
+		"example_english": "The hero's hamartia is his boundless pride.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en katafore",
+		"english": "cataphora (forward reference)",
+		"example": "Katafore i åpningslinjen skaper spenning i teksten.",
+		"example_english": "Cataphora in the opening line creates suspense in the text.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en synekdoke",
+		"english": "synecdoche (part for whole or whole for part)",
+		"example": "'Seil i horisonten' er en synekdoke for et skip.",
+		"example_english": "'Sail on the horizon' is a synecdoche for a ship.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en metonymi",
+		"english": "metonymy",
+		"example": "'Kronen' som metonymi for kongehuset er vanlig i litteraturen.",
+		"example_english": "'The Crown' as metonymy for the royal house is common in literature.",
+		"level": "C2",
+		"category": "literary",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lyrisk prosa",
+		"english": "lyrical prose",
+		"example": "Teksten er skrevet i en vakker lyrisk prosa.",
+		"example_english": "The text is written in beautiful lyrical prose.",
+		"level": "C2",
+		"category": "literary",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "sanneligen",
+		"english": "verily / truly (archaic affirmation)",
+		"example": "Sanneligen sier jeg dere, dette verket er unikt.",
+		"example_english": "Verily I tell you, this work is unique.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "adverb"
+	},
+	{
+		"norsk": "hvo",
+		"english": "who / whoever (archaic form of 'hvem')",
+		"example": "Hvo som vil leve, må kjempe.",
+		"example_english": "Whoever wishes to live must fight.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "pronoun"
+	},
+	{
+		"norsk": "hvad",
+		"english": "what (archaic form of 'hva')",
+		"example": "Hvad er det du søker i denne verden?",
+		"example_english": "What is it you seek in this world?",
+		"level": "C2",
+		"category": "archaic",
+		"part": "pronoun"
+	},
+	{
+		"norsk": "thi",
+		"english": "for / because (archaic conjunction)",
+		"example": "Han tok farvel, thi veien var lang.",
+		"example_english": "He said farewell, for the road was long.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "conjunction"
+	},
+	{
+		"norsk": "ei",
+		"english": "not / nor (archaic negation)",
+		"example": "Ei skal jeg vike, ei skal jeg falle.",
+		"example_english": "I shall not yield, I shall not fall.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "adverb"
+	},
+	{
+		"norsk": "en fædrene arv",
+		"english": "a paternal / ancestral heritage",
+		"example": "Han forvaltet den fædrene arv med stolthet.",
+		"example_english": "He managed the ancestral heritage with pride.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "phrase"
+	},
+	{
+		"norsk": "hulderfolk",
+		"english": "the hidden folk / huldra people (mythological)",
+		"example": "Bestemor fortalte sagn om hulder og hulderfolk.",
+		"example_english": "Grandmother told tales of the huldra and the hidden folk.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "et sagn",
+		"english": "a legend / a folk tale",
+		"example": "Sagnet om Peer Gynt lever videre i norsk kultur.",
+		"example_english": "The legend of Peer Gynt lives on in Norwegian culture.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å kvede",
+		"english": "to sing / to recite (poetry, archaic)",
+		"example": "Skalden kvedet om vikingenes bragder.",
+		"example_english": "The skald sang of the Vikings' deeds.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "verb"
+	},
+	{
+		"norsk": "en skald",
+		"english": "a skald (Old Norse poet)",
+		"example": "Skalden var hoffets fremste forteller.",
+		"example_english": "The skald was the court's foremost storyteller.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ting (historisk)",
+		"english": "a thing / assembly (historical Norse council)",
+		"example": "Tinget var stedet der folk avgjorde tvister.",
+		"example_english": "The thing was the place where people settled disputes.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å lyde",
+		"english": "to obey / to sound (archaic sense)",
+		"example": "Alle landets menn skulle lyde kongen.",
+		"example_english": "All the country's men were to obey the king.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "verb"
+	},
+	{
+		"norsk": "et len",
+		"english": "a fief / a county (historical)",
+		"example": "Lensmennene styrte sine respektive len.",
+		"example_english": "The liegemen governed their respective fiefs.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en krønike",
+		"english": "a chronicle",
+		"example": "Middelalderens krøniker gir oss et innblikk i fortiden.",
+		"example_english": "The medieval chronicles give us an insight into the past.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å arve mantel",
+		"english": "to inherit the mantle / to take over a role (archaic metaphor)",
+		"example": "Han arvet mantelen etter sin lærde far.",
+		"example_english": "He inherited the mantle from his learned father.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Norrønt",
+		"english": "Old Norse (language)",
+		"example": "Mange stedsnavn stammer fra det norrøne språket.",
+		"example_english": "Many place names derive from the Old Norse language.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en edda",
+		"english": "an Edda (Old Norse poem collection)",
+		"example": "Eddaen er en uvurderlig kilde til norrøn mytologi.",
+		"example_english": "The Edda is an invaluable source of Norse mythology.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å feste tro til",
+		"english": "to give credence to / to believe (archaic expression)",
+		"example": "Ingen ville lenger feste tro til profetens ord.",
+		"example_english": "No one would any longer give credence to the prophet's words.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et kvede",
+		"english": "a lay / a poem (archaic)",
+		"example": "Kvedet om Sigurd er det mest kjente av alle.",
+		"example_english": "The lay of Sigurd is the most famous of all.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å ihukomme",
+		"english": "to remember / to commemorate (archaic)",
+		"example": "Vi bør ihukomme de som ofret livet for friheten.",
+		"example_english": "We should remember those who sacrificed their lives for freedom.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "verb"
+	},
+	{
+		"norsk": "derfra",
+		"english": "from there / thence (archaic/formal)",
+		"example": "Han reiste til Bergen og derfra videre til utlandet.",
+		"example_english": "He travelled to Bergen and thence abroad.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "adverb"
+	},
+	{
+		"norsk": "en vise",
+		"english": "a ballad / a verse (traditional)",
+		"example": "Den gamle visen forteller om kjærlighetssorg.",
+		"example_english": "The old ballad tells of heartache.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "å råde over",
+		"english": "to have dominion over / to rule over (archaic)",
+		"example": "Kongen rådde over et vidt rike.",
+		"example_english": "The king had dominion over a vast realm.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et blot",
+		"english": "a blót (Norse sacrificial feast)",
+		"example": "Midvinterblottet var det viktigste religiøse ritualet.",
+		"example_english": "The midwinter blót was the most important religious ritual.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+	{
+		"norsk": "en jarl",
+		"english": "a jarl (Norse chieftain / earl)",
+		"example": "Jarlen kontrollerte kyststripen med jernhånd.",
+		"example_english": "The jarl controlled the coastline with an iron hand.",
+		"level": "C2",
+		"category": "archaic",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "Den som graver en grop for andre, faller selv i den.",
+		"english": "He who digs a pit for others falls into it himself.",
+		"example": "Han prøvde å avsløre kollegaen, men endte med å bli avslørt selv — den som graver en grop for andre, faller selv i den.",
+		"example_english": "He tried to expose his colleague but ended up being exposed himself — he who digs a pit for others falls into it himself.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Borte bra, hjemme best.",
+		"english": "There's no place like home. (lit. Away good, home best.)",
+		"example": "Etter tre måneder i utlandet følte hun at borte bra, hjemme best.",
+		"example_english": "After three months abroad she felt there's no place like home.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Ingen røyk uten ild.",
+		"english": "There's no smoke without fire.",
+		"example": "Ryktene fortsetter å spre seg — ingen røyk uten ild.",
+		"example_english": "The rumours keep spreading — there's no smoke without fire.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Den tidlig står opp, får mye gjort.",
+		"english": "The early bird gets the worm. (lit. One who rises early gets much done.)",
+		"example": "Han starter alltid arbeidsdagen kl. 06 — den tidlig står opp, får mye gjort.",
+		"example_english": "He always starts the working day at 06:00 — the early bird gets the worm.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Øvelse gjør mester.",
+		"english": "Practice makes perfect. (lit. Practice makes master.)",
+		"example": "Du spiller feil tone om og om igjen, men øvelse gjør mester.",
+		"example_english": "You play the wrong note again and again, but practice makes perfect.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Mange bekker små gjør en stor å.",
+		"english": "Many a little makes a mickle. / Every little helps. (lit. Many small streams make a big river.)",
+		"example": "Spar litt hver dag — mange bekker små gjør en stor å.",
+		"example_english": "Save a little every day — every little helps.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Æren er bedre enn gull.",
+		"english": "Honour is better than gold.",
+		"example": "Han valgte integritet fremfor lønn — æren er bedre enn gull.",
+		"example_english": "He chose integrity over salary — honour is better than gold.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Livet er ikke noen dans på roser.",
+		"english": "Life is not a bed of roses. (lit. Life is not a dance on roses.)",
+		"example": "Ingen lovet henne det ville bli lett — livet er ikke noen dans på roser.",
+		"example_english": "No one promised her it would be easy — life is not a bed of roses.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Det er ingen skam å snu.",
+		"english": "There's no shame in changing your mind / turning back.",
+		"example": "Halvveis opp fjellet snudde de — det er ingen skam å snu.",
+		"example_english": "Halfway up the mountain they turned back — there's no shame in turning back.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Kjært barn har mange navn.",
+		"english": "A beloved child has many names. (something valued gets many labels)",
+		"example": "Kafeen kalles både «stamstedет» og «hjørnet» — kjært barn har mange navn.",
+		"example_english": "The café is called both 'the local' and 'the corner' — a beloved child has many names.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Man skal ikke selge skinnet før bjørnen er skutt.",
+		"english": "Don't count your chickens before they hatch. (lit. Don't sell the hide before the bear is shot.)",
+		"example": "Ikke feir seieren ennå — man skal ikke selge skinnet før bjørnen er skutt.",
+		"example_english": "Don't celebrate the victory yet — don't count your chickens before they hatch.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Den som tier, samtykker.",
+		"english": "Silence implies consent. (lit. One who is silent consents.)",
+		"example": "Ingen protesterte, og lederen konkluderte: den som tier, samtykker.",
+		"example_english": "No one protested, and the leader concluded: silence implies consent.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Sannhet og tro er ikke det samme.",
+		"english": "Truth and belief are not the same thing.",
+		"example": "Han trodde han hadde rett, men sannhet og tro er ikke det samme.",
+		"example_english": "He believed he was right, but truth and belief are not the same thing.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Bedre sent enn aldri.",
+		"english": "Better late than never.",
+		"example": "Han dukket opp to timer forsinket — men bedre sent enn aldri.",
+		"example_english": "He turned up two hours late — but better late than never.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Ord er sølv, men taushet er gull.",
+		"english": "Speech is silver, silence is golden.",
+		"example": "Han sa ingenting og vant respekt — ord er sølv, men taushet er gull.",
+		"example_english": "He said nothing and earned respect — speech is silver, silence is golden.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Ensomhet er den vises selskap.",
+		"english": "Solitude is the companion of the wise.",
+		"example": "Han trivdes alene med bøkene sine — ensomhet er den vises selskap.",
+		"example_english": "He was content alone with his books — solitude is the companion of the wise.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Den som lever skjult, lever godt.",
+		"english": "One who lives hidden lives well. / A quiet life is a good life.",
+		"example": "De fant lykken i en liten bygd — den som lever skjult, lever godt.",
+		"example_english": "They found happiness in a small village — a quiet life is a good life.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Ingenting er nytt under solen.",
+		"english": "There is nothing new under the sun.",
+		"example": "Folk klager over ungdommen som alltid — ingenting er nytt under solen.",
+		"example_english": "People complain about youth as always — there is nothing new under the sun.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Ende god, alt godt.",
+		"english": "All's well that ends well.",
+		"example": "Det var dramatisk underveis, men ende god, alt godt.",
+		"example_english": "It was dramatic along the way, but all's well that ends well.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Av skade blir man vis.",
+		"english": "One becomes wise through hardship. / Learn from your mistakes.",
+		"example": "Han gjentok ikke feilen — av skade blir man vis.",
+		"example_english": "He did not repeat the mistake — one becomes wise through hardship.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Gammel vane er vond å vende.",
+		"english": "Old habits die hard. (lit. Old habit is difficult to turn.)",
+		"example": "Han prøvde å slutte å røyke, men gammel vane er vond å vende.",
+		"example_english": "He tried to quit smoking but old habits die hard.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Epler faller ikke langt fra stammen.",
+		"english": "The apple doesn't fall far from the tree.",
+		"example": "Datteren er like sta som faren — epler faller ikke langt fra stammen.",
+		"example_english": "The daughter is just as stubborn as the father — the apple doesn't fall far from the tree.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Tida leger alle sår.",
+		"english": "Time heals all wounds.",
+		"example": "Det gjør vondt nå, men tida leger alle sår.",
+		"example_english": "It hurts now, but time heals all wounds.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Uten mat og drikke duger helten ikke.",
+		"english": "Even a hero is nothing without food and drink.",
+		"example": "Pausen var godt fortjent — uten mat og drikke duger helten ikke.",
+		"example_english": "The break was well deserved — even a hero is nothing without food and drink.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+	{
+		"norsk": "Det er ikke gull alt som glimrer.",
+		"english": "All that glitters is not gold.",
+		"example": "Tilbudet så fristende ut, men det er ikke gull alt som glimrer.",
+		"example_english": "The offer looked tempting, but all that glitters is not gold.",
+		"level": "C2",
+		"category": "proverbs",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "idet",
+		"english": "as / at the moment when (formal temporal conjunction)",
+		"example": "Idet dommen falt, ble det stille i salen.",
+		"example_english": "As the verdict was delivered, the courtroom fell silent.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "conjunction"
+	},
+	{
+		"norsk": "hvorigjennom",
+		"english": "through which / whereby (formal relative adverb)",
+		"example": "Det ble inngått en avtale hvorigjennom begge parter fikk innrømmelser.",
+		"example_english": "An agreement was reached whereby both parties received concessions.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "adverb"
+	},
+	{
+		"norsk": "undertegnede",
+		"english": "the undersigned",
+		"example": "Undertegnede bekrefter herved å ha mottatt dokumentene.",
+		"example_english": "The undersigned hereby confirms receipt of the documents.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "pronoun"
+	},
+	{
+		"norsk": "herved",
+		"english": "hereby",
+		"example": "Vi kunngjør herved opphevelsen av den tidligere beslutningen.",
+		"example_english": "We hereby announce the annulment of the previous decision.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "adverb"
+	},
+	{
+		"norsk": "foranstående",
+		"english": "the foregoing / the preceding",
+		"example": "Foranstående bestemmelser gjelder med umiddelbar virkning.",
+		"example_english": "The foregoing provisions take effect immediately.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "adjective"
+	},
+	{
+		"norsk": "å besørge",
+		"english": "to arrange / to ensure (formal, administrative)",
+		"example": "Sekretariatet besørger oversendelse av saksdokumentene.",
+		"example_english": "The secretariat will arrange the submission of case documents.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "verb"
+	},
+	{
+		"norsk": "å anmode om",
+		"english": "to formally request / to call upon",
+		"example": "Departementet anmoder om en skriftlig redegjørelse.",
+		"example_english": "The ministry formally requests a written account.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å bilegge",
+		"english": "to settle / to resolve (a dispute, formal)",
+		"example": "Partene klarte å bilegge tvisten utenfor retten.",
+		"example_english": "The parties managed to settle the dispute out of court.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "verb"
+	},
+	{
+		"norsk": "i overensstemmelse med",
+		"english": "in conformity with / in accordance with",
+		"example": "Vedtaket er fattet i overensstemmelse med gjeldende regelverk.",
+		"example_english": "The decision was made in conformity with applicable regulations.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å meddele",
+		"english": "to inform / to communicate officially",
+		"example": "Vi tillater oss å meddele at søknaden er innvilget.",
+		"example_english": "We allow ourselves to inform you that the application has been approved.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "verb"
+	},
+	{
+		"norsk": "en bevilgning",
+		"english": "an appropriation / a grant (of funds)",
+		"example": "Stortinget vedtok en bevilgning til museet.",
+		"example_english": "Parliament approved an appropriation for the museum.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "noun"
+	},
+	{
+		"norsk": "å fremme en klage",
+		"english": "to lodge a complaint / to raise an objection formally",
+		"example": "Borgerne fremmet en klage overfor tilsynsorganet.",
+		"example_english": "The citizens lodged a complaint with the supervisory body.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "phrase"
+	},
+	{
+		"norsk": "uoppfordret",
+		"english": "unsolicited / without being asked",
+		"example": "Han sendte inn kommentarer uoppfordret.",
+		"example_english": "He submitted comments unsolicited.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "adverb"
+	},
+	{
+		"norsk": "en fullmakt",
+		"english": "a power of attorney / an authorisation",
+		"example": "En skriftlig fullmakt er påkrevd for å handle på vegne av andre.",
+		"example_english": "A written power of attorney is required to act on behalf of others.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "noun"
+	},
+	{
+		"norsk": "å gi avkall på",
+		"english": "to waive / to relinquish",
+		"example": "Parten valgte å gi avkall på retten til å anke.",
+		"example_english": "The party chose to waive the right to appeal.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "phrase"
+	},
+	{
+		"norsk": "ikrafttredelse",
+		"english": "entry into force / effective date",
+		"example": "Ikrafttredelsen er satt til første januar neste år.",
+		"example_english": "Entry into force is set for the first of January next year.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "noun"
+	},
+	{
+		"norsk": "å ratifisere",
+		"english": "to ratify",
+		"example": "Tre land gjenstår å ratifisere avtalen.",
+		"example_english": "Three countries remain to ratify the agreement.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "verb"
+	},
+	{
+		"norsk": "en dispensasjon",
+		"english": "a dispensation / an exemption",
+		"example": "Det ble innvilget dispensasjon fra byggeforbudet.",
+		"example_english": "A dispensation from the building prohibition was granted.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "noun"
+	},
+	{
+		"norsk": "stadfeste",
+		"english": "to confirm / to uphold (a decision)",
+		"example": "Høyesterett stadfestet lagmannsrettens dom.",
+		"example_english": "The Supreme Court upheld the court of appeal's verdict.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "verb"
+	},
+	{
+		"norsk": "en innstilling",
+		"english": "a recommendation / a nomination (formal document)",
+		"example": "Komiteens innstilling ble lagt frem for Stortinget.",
+		"example_english": "The committee's recommendation was presented to Parliament.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "noun"
+	},
+	{
+		"norsk": "å avsi dom",
+		"english": "to pronounce / to deliver a judgment",
+		"example": "Dommeren avsier dom om to uker.",
+		"example_english": "The judge will deliver judgment in two weeks.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å hjemle",
+		"english": "to authorise by law / to justify legally",
+		"example": "Tiltaket hjemles i forvaltningsloven § 24.",
+		"example_english": "The measure is authorised by Section 24 of the Public Administration Act.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "verb"
+	},
+	{
+		"norsk": "en betenkning",
+		"english": "a formal opinion / a memorandum",
+		"example": "Juristene avga en betenkning om avtalens gyldighet.",
+		"example_english": "The lawyers issued a formal opinion on the agreement's validity.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "noun"
+	},
+	{
+		"norsk": "å tilkjenne",
+		"english": "to award / to adjudge",
+		"example": "Retten tilkjente saksøker erstatning.",
+		"example_english": "The court awarded the plaintiff compensation.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "verb"
+	},
+	{
+		"norsk": "overensstemmende",
+		"english": "consistent with / conforming to",
+		"example": "Handlingen er overensstemmende med avtalens vilkår.",
+		"example_english": "The action is consistent with the terms of the agreement.",
+		"level": "C2",
+		"category": "highly-formal",
+		"part": "adjective"
+	},
+
+	{
+		"norsk": "epigenetikk",
+		"english": "epigenetics",
+		"example": "Epigenetikk studerer arvelighet uten endring i DNA-sekvensen.",
+		"example_english": "Epigenetics studies heredity without changes in the DNA sequence.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kvantefysikk",
+		"english": "quantum physics",
+		"example": "Kvantefysikk utfordrer klassisk mekanistisk tenkning.",
+		"example_english": "Quantum physics challenges classical mechanical thinking.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en superledning",
+		"english": "superconductivity",
+		"example": "Superledning gjør materialer resistansefrie ved lave temperaturer.",
+		"example_english": "Superconductivity makes materials resistance-free at low temperatures.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en algoritme",
+		"english": "an algorithm",
+		"example": "Algoritmen sorterer millioner av datapunkter på sekunder.",
+		"example_english": "The algorithm sorts millions of data points in seconds.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en rekursjon",
+		"english": "recursion (computing)",
+		"example": "Rekursjon brukes der en funksjon kaller seg selv.",
+		"example_english": "Recursion is used where a function calls itself.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en maskinlæring",
+		"english": "machine learning",
+		"example": "Maskinlæring lar systemet forbedre seg gjennom erfaring.",
+		"example_english": "Machine learning lets the system improve through experience.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "et nevralt nettverk",
+		"english": "a neural network",
+		"example": "Nevrale nettverk etterlikner hjernens struktur.",
+		"example_english": "Neural networks mimic the structure of the brain.",
+		"level": "C2",
+		"category": "technical",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en biobank",
+		"english": "a biobank",
+		"example": "Biobankens prøver brukes i medisinsk forskning.",
+		"example_english": "The biobank's samples are used in medical research.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en nanoteknikk",
+		"english": "nanotechnology",
+		"example": "Nanoteknikk opererer på atomnivå.",
+		"example_english": "Nanotechnology operates at the atomic level.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en halvledere",
+		"english": "a semiconductor",
+		"example": "Halvledere er grunnlaget for moderne elektronikk.",
+		"example_english": "Semiconductors are the foundation of modern electronics.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en entanglementement",
+		"english": "quantum entanglement",
+		"example": "Kvantefiltfanging muliggjør øyeblikkelig korrelasjon mellom partikler.",
+		"example_english": "Quantum entanglement enables instant correlation between particles.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kryptering",
+		"english": "encryption",
+		"example": "Ende-til-ende-kryptering beskytter privat kommunikasjon.",
+		"example_english": "End-to-end encryption protects private communication.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bioinformatikk",
+		"english": "bioinformatics",
+		"example": "Bioinformatikk kombinerer biologi og datavitenskap.",
+		"example_english": "Bioinformatics combines biology and data science.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "et proteom",
+		"english": "a proteome",
+		"example": "Proteomforskning kartlegger alle proteiner i en organisme.",
+		"example_english": "Proteome research maps all proteins in an organism.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en termodynamikk",
+		"english": "thermodynamics",
+		"example": "Den andre termodynamiske loven beskriver entropi.",
+		"example_english": "The second law of thermodynamics describes entropy.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en entropi",
+		"english": "entropy",
+		"example": "Entropi øker alltid i et lukket system.",
+		"example_english": "Entropy always increases in a closed system.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en polarisering",
+		"english": "polarisation (physics / optics)",
+		"example": "Polarisering av lys er grunnlaget for LCD-skjermer.",
+		"example_english": "Polarisation of light is the basis of LCD screens.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kompilator",
+		"english": "a compiler",
+		"example": "Kompilatoren oversetter kildekode til maskinkode.",
+		"example_english": "The compiler translates source code into machine code.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en virtualisering",
+		"english": "virtualisation",
+		"example": "Virtualisering lar ett fysisk system kjøre flere virtuelle maskiner.",
+		"example_english": "Virtualisation allows one physical system to run multiple virtual machines.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "et API",
+		"english": "an API (application programming interface)",
+		"example": "API-et muliggjør kommunikasjon mellom ulike programvarer.",
+		"example_english": "The API enables communication between different software.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en latens",
+		"english": "latency",
+		"example": "Lav latens er avgjørende for sanntidsapplikasjoner.",
+		"example_english": "Low latency is crucial for real-time applications.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en skalerbarhet",
+		"english": "scalability",
+		"example": "Systemarkitekturen er designet for høy skalerbarhet.",
+		"example_english": "The system architecture is designed for high scalability.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en parallellprosessering",
+		"english": "parallel processing",
+		"example": "Parallellprosessering øker datamaskinens kapasitet betraktelig.",
+		"example_english": "Parallel processing significantly increases the computer's capacity.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en abstraksjonslag",
+		"english": "an abstraction layer",
+		"example": "Abstraksjonslag skjuler kompleksiteten fra sluttbrukeren.",
+		"example_english": "Abstraction layers hide complexity from the end user.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mikrotjeneste",
+		"english": "a microservice",
+		"example": "Arkitekturen er delt inn i uavhengige mikrotjenester.",
+		"example_english": "The architecture is divided into independent microservices.",
+		"level": "C2",
+		"category": "technical",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "å informere vs. å opplyse",
+		"english": "'å informere' (neutral) vs. 'å opplyse' (implies providing factual detail, often official)",
+		"example": "Myndigheten opplyser innbyggerne, ikke bare informerer dem.",
+		"example_english": "The authority informs citizens with facts, not merely notifies them.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "glad vs. lykkelig",
+		"english": "'glad' (pleased / happy about something specific) vs. 'lykkelig' (deeply happy / in a state of happiness)",
+		"example": "Jeg er glad for gaven, men lykkelig i livet mitt som helhet.",
+		"example_english": "I am pleased about the gift, but deeply happy in my life as a whole.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å se vs. å betrakte",
+		"english": "'å se' (to see / look) vs. 'å betrakte' (to contemplate / to regard thoughtfully)",
+		"example": "Hun betraktet maleriet i ti minutter uten å si noe.",
+		"example_english": "She contemplated the painting for ten minutes without saying anything.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å bruke vs. å benytte vs. å anvende",
+		"english": "'å bruke' (everyday use) vs. 'å benytte' (formal, deliberate use) vs. 'å anvende' (apply, often theoretical)",
+		"example": "Vi bruker tid daglig, benytter anledningen ved behov, og anvender teorien i forskning.",
+		"example_english": "We use time daily, take the opportunity when needed, and apply the theory in research.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et problem vs. en utfordring",
+		"english": "'et problem' (implies difficulty, negativity) vs. 'en utfordring' (neutral/positive framing of a difficulty)",
+		"example": "Ledere omtaler problemer som utfordringer for å fremme løsningsorientering.",
+		"example_english": "Leaders refer to problems as challenges to promote a solution-oriented mindset.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å tro vs. å mene vs. å anse",
+		"english": "'å tro' (to believe, often faith/uncertainty) vs. 'å mene' (to think/have an opinion) vs. 'å anse' (to regard/consider formally)",
+		"example": "Jeg tror det er sant, men mener vi bør undersøke det, og anser det som uavklart.",
+		"example_english": "I believe it is true, but think we should investigate it, and consider it unresolved.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "snill vs. vennlig vs. hyggelig",
+		"english": "'snill' (kind/good-natured) vs. 'vennlig' (friendly/courteous) vs. 'hyggelig' (pleasant/nice to be around)",
+		"example": "En snill sjel, en vennlig tone og en hyggelig samtale — tre ulike kvaliteter.",
+		"example_english": "A kind soul, a friendly tone, and a pleasant conversation — three different qualities.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å forstå vs. å begripe vs. å fatte",
+		"english": "'å forstå' (to understand, general) vs. 'å begripe' (to grasp fully, often with effort) vs. 'å fatte' (idiomatic, often in negation: 'jeg fatter det ikke')",
+		"example": "Jeg forstår teorien, men begriper ikke konsekvensene — jeg fatter det rett og slett ikke.",
+		"example_english": "I understand the theory but don't grasp the consequences — I simply can't get my head around it.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et folk vs. et nasjon",
+		"english": "'et folk' (a people, ethnic/cultural group) vs. 'en nasjon' (a nation, political unit)",
+		"example": "Det samiske folket er et folk uten en egen nasjon.",
+		"example_english": "The Sámi people are a people without their own nation.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å gjøre vs. å foreta vs. å utføre",
+		"english": "'å gjøre' (general 'do/make') vs. 'å foreta' (to undertake, formal) vs. 'å utføre' (to carry out/execute a task)",
+		"example": "Jeg gjør oppgaver, foretar en reise og utfører et oppdrag.",
+		"example_english": "I do tasks, undertake a journey, and carry out a mission.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å lede vs. å styre vs. å administrere",
+		"english": "'å lede' (to lead, inspire direction) vs. 'å styre' (to manage/control) vs. 'å administrere' (to administer, handle logistics)",
+		"example": "En god leder leder sine folk, styrer ressurser og administrerer prosesser.",
+		"example_english": "A good leader leads their people, manages resources, and administers processes.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en grunn vs. en årsak vs. en begrunnelse",
+		"english": "'en grunn' (a reason, general) vs. 'en årsak' (a cause, more factual/scientific) vs. 'en begrunnelse' (a justification/rationale given)",
+		"example": "Grunnen er personlig, årsaken vitenskapelig og begrunnelsen offisiell.",
+		"example_english": "The reason is personal, the cause scientific, and the rationale official.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å kritisere vs. å klandre vs. å bebreide",
+		"english": "'å kritisere' (to criticise, arguably constructive) vs. 'å klandre' (to blame) vs. 'å bebreide' (to reproach, more personal/emotional)",
+		"example": "Kollegaen kritiserte rapporten, men klandret og bebridet ingen direkte.",
+		"example_english": "The colleague criticised the report but blamed and reproached no one directly.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "tilfeldig vs. tilfeldigvis",
+		"english": "'tilfeldig' (adjective: random, accidental) vs. 'tilfeldigvis' (adverb: by chance, coincidentally)",
+		"example": "Det var et tilfeldig møte; tilfeldigvis var vi begge på togstasjonen.",
+		"example_english": "It was a chance encounter; coincidentally we were both at the train station.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å ta seg av vs. å ivareta vs. å pleie",
+		"english": "'å ta seg av' (informal: to look after) vs. 'å ivareta' (formal: to safeguard/attend to) vs. 'å pleie' (to care for/nurse, often medical or habitual)",
+		"example": "Familien tar seg av ham, kommunen ivaretar hans rettigheter, og sykepleieren pleier ham.",
+		"example_english": "The family looks after him, the municipality safeguards his rights, and the nurse cares for him.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å si fra vs. å varsle vs. å melde",
+		"english": "'å si fra' (informal: to speak up/tell someone) vs. 'å varsle' (to blow the whistle / alert formally) vs. 'å melde' (to report officially)",
+		"example": "Hun sa fra til kollega, varslet arbeidsgiveren og meldte forholdet til politiet.",
+		"example_english": "She told her colleague, blew the whistle to her employer, and reported the matter to the police.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "nøyaktig vs. presis vs. korrekt",
+		"english": "'nøyaktig' (exact, measured accurately) vs. 'presis' (precise, with fine detail) vs. 'korrekt' (correct, free of error)",
+		"example": "Instrumentet er nøyaktig, beskrivelsen er presis, og svaret er korrekt.",
+		"example_english": "The instrument is exact, the description is precise, and the answer is correct.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å endre vs. å forandre vs. å modifisere",
+		"english": "'å endre' (to change, often formal/official) vs. 'å forandre' (to change, broader/personal) vs. 'å modifisere' (to modify, technical/partial change)",
+		"example": "Vi endre vedtektene, hun forandret seg som person, og ingeniøren modifiserte designet.",
+		"example_english": "We amended the statutes, she changed as a person, and the engineer modified the design.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å fremme vs. å fremstille vs. å presentere",
+		"english": "'å fremme' (to promote/advance a cause) vs. 'å fremstille' (to depict/portray/produce) vs. 'å presentere' (to present/introduce)",
+		"example": "Vi fremmer likestilling, fremstiller data i grafer og presenterer funn for styret.",
+		"example_english": "We promote equality, depict data in graphs, and present findings to the board.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å oppnå vs. å oppfylle vs. å realisere",
+		"english": "'å oppnå' (to achieve/attain a goal) vs. 'å oppfylle' (to fulfil a requirement/promise) vs. 'å realisere' (to realise/bring to fruition, often a plan)",
+		"example": "Vi oppnår mål, oppfyller krav og realiserer drømmer.",
+		"example_english": "We achieve goals, fulfil requirements, and realise dreams.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å hindre vs. å forhindre vs. å forebygge",
+		"english": "'å hindre' (to hinder/obstruct, often active) vs. 'å forhindre' (to prevent something specific) vs. 'å forebygge' (to prevent proactively/systematically)",
+		"example": "Trafikken hindret oss, reglene forhindret ulykken, og programmet forebygger sykdom.",
+		"example_english": "Traffic hindered us, the rules prevented the accident, and the programme prevents disease.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å la vs. å tillate vs. å godkjenne",
+		"english": "'å la' (informal: to let/allow) vs. 'å tillate' (to permit, more formal) vs. 'å godkjenne' (to approve/authorise officially)",
+		"example": "Foreldrene lar ham spille, loven tillater det, og kommunen godkjenner anlegget.",
+		"example_english": "The parents let him play, the law permits it, and the municipality approves the facility.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å skaffe vs. å anskaffe vs. å erverve",
+		"english": "'å skaffe' (informal: to get/obtain) vs. 'å anskaffe' (formal: to procure/acquire) vs. 'å erverve' (very formal: to acquire, often property or rights)",
+		"example": "Han skaffet billett, kommunen anskaffet busser og selskapet ervervet tomten.",
+		"example_english": "He got a ticket, the municipality procured buses, and the company acquired the plot.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å begrense vs. å innskrenke vs. å avgrense",
+		"english": "'å begrense' (to limit/reduce) vs. 'å innskrenke' (to restrict, often rights or freedoms) vs. 'å avgrense' (to delimit/define the scope)",
+		"example": "Vi begrenser kostnadene, loven innskrenker friheten og metoden avgrenser analysen.",
+		"example_english": "We limit costs, the law restricts freedom, and the method delimits the analysis.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å velge vs. å foretrekke vs. å prioritere",
+		"english": "'å velge' (to choose) vs. 'å foretrekke' (to prefer) vs. 'å prioritere' (to prioritise, implies ranking)",
+		"example": "Jeg velger kaffe, foretrekker espresso og prioriterer avkoffeinert om kvelden.",
+		"example_english": "I choose coffee, prefer espresso, and prioritise decaf in the evening.",
+		"level": "C2",
+		"category": "nuanced-distinctions",
+		"part": "phrase"
+	}
+]
