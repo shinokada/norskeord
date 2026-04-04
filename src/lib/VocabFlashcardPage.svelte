@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Flashcard, ArrowRight, ArrowUp, ArrowDown, SpeakButton } from '$lib';
+	import { Flashcard, ArrowRight, ArrowUp, ArrowDown } from '$lib';
+	import SpeakButton from '$lib/SpeakButton.svelte';
 	import { Button } from 'flowbite-svelte';
 	import type { VocabEntry } from '$lib/types';
 
@@ -19,6 +20,7 @@
 	let showExampleEnglish = $state(false);
 	let history = $state<HistoryItem[]>([]);
 	let currentIndex = $state(-1);
+	let speakButtonRef = $state<SpeakButton | undefined>(undefined);
 
 	// touch
 	let isTouch = $state(false);
@@ -137,6 +139,9 @@
 		} else if (e.key === 'e' || e.key === 'E') {
 			e.preventDefault();
 			showExampleEnglish = !showExampleEnglish;
+		} else if (e.key === 'p' || e.key === 'P') {
+			e.preventDefault();
+			speakButtonRef?.speak();
 		}
 	}
 
@@ -204,7 +209,7 @@
 			>
 				{current.entry.part}
 			</span>
-			<SpeakButton word={current.entry.norsk} />
+			<SpeakButton bind:this={speakButtonRef} word={current.entry.norsk} />
 		</div>
 	{/if}
 
