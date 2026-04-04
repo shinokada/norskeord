@@ -47,6 +47,7 @@
 	}
 
 	function newCard() {
+		if (entries.length === 0) return;
 		resetCardState();
 		const item = makeItem(randomEntry(), mode);
 		history = [...history, item];
@@ -54,7 +55,10 @@
 	}
 
 	function setMode(m: Mode) {
+		if (m === mode) return;
 		mode = m;
+		history = [];
+		currentIndex = -1;
 		newCard();
 	}
 
@@ -111,8 +115,12 @@
 	}
 
 	function handleKeyDown(e: KeyboardEvent) {
-		const target = e.target as HTMLElement;
-		if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)
+		const target = e.target as HTMLElement | null;
+		if (
+			!target ||
+			target.closest('button, a, input, textarea, select, summary') ||
+			target.isContentEditable
+		)
 			return;
 		if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
 			e.preventDefault();
@@ -230,6 +238,7 @@
 	<!-- Nav buttons -->
 	<div class="grid grid-cols-3 gap-2 pt-4">
 		<button
+			type="button"
 			onclick={prev}
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
 			disabled={currentIndex <= 0}
@@ -239,6 +248,7 @@
 		</button>
 
 		<button
+			type="button"
 			onclick={next}
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
 		>
@@ -247,6 +257,7 @@
 		</button>
 
 		<button
+			type="button"
 			class="inline-flex w-full bg-gray-300 p-2 text-right sm:p-4 dark:bg-gray-700"
 			onclick={newCard}
 		>

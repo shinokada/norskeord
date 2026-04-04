@@ -69,13 +69,13 @@
 		<Li class="hover:text-red-700 hover:underline">
 			<A href="https://svelte.dev" class="me-4 hover:underline md:me-6">Svelte: {svelteVersion}</A>
 		</Li>
-		<Li>
+		<Li class="hover:text-red-700 hover:underline">
 			<A href="https://kit.svelte.dev/docs/introduction" class="me-4 hover:underline md:me-6"
 				>SvelteKit: {svelteKitVersion}</A
 			>
 		</Li>
 		<Li class="hover:text-red-700 hover:underline">
-			<A href="https://vitejs.dev/" class="hover:underline">Vite: {viteVersion}</A>
+			<A href="https://vitejs.dev/" class="me-4 hover:underline md:me-6">Vite: {viteVersion}</A>
 		</Li>
 	</List>
 
