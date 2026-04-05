@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { Flashcard, ArrowRight, ArrowUp, ArrowDown } from '$lib';
+	import SpeakButton from '$lib/SpeakButton.svelte';
 	import { Button } from 'flowbite-svelte';
 	import type { VocabEntry } from '$lib/types';
 
@@ -19,6 +20,7 @@
 	let showExampleEnglish = $state(false);
 	let history = $state<HistoryItem[]>([]);
 	let currentIndex = $state(-1);
+	let speakButtonRef = $state<SpeakButton | undefined>(undefined);
 
 	// touch
 	let isTouch = $state(false);
@@ -137,6 +139,9 @@
 		} else if (e.key === 'e' || e.key === 'E') {
 			e.preventDefault();
 			showExampleEnglish = !showExampleEnglish;
+		} else if (e.key === 'p' || e.key === 'P') {
+			e.preventDefault();
+			speakButtonRef?.speak();
 		}
 	}
 
@@ -196,13 +201,16 @@
 		</div>
 	</div>
 
-	<!-- Part of speech badge -->
+	<!-- Part of speech badge & Pronounce -->
 	{#if current}
-		<span
-			class="mt-3 rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
-		>
-			{current.entry.part}
-		</span>
+		<div class="mt-3 flex items-center gap-3">
+			<span
+				class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+			>
+				{current.entry.part}
+			</span>
+			<SpeakButton bind:this={speakButtonRef} word={current.entry.norsk} />
+		</div>
 	{/if}
 
 	<!-- Example section -->
@@ -235,7 +243,7 @@
 		{#if isTouch}
 			Tap to flip · ← → to navigate · ↑↓ to toggle translation
 		{:else}
-			Space/Enter to flip · ←↑ →↓ to navigate · N for new card · E to toggle translation
+			Space/Enter to flip · ←↑ →↓ to navigate · N for new card · E to toggle translation · P to pronounce
 		{/if}
 	</p>
 
