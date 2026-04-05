@@ -85,7 +85,7 @@
 	}
 
 	function next() {
-		if (completed) return;
+		if (completed || deck.length === 0) return;
 		if (currentIndex < deck.length - 1) {
 			currentIndex++;
 			resetCardState();
@@ -144,16 +144,16 @@
 		} else if (e.key === 'ArrowRight') {
 			e.preventDefault();
 			next();
-		} else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+		} else if (!completed && current && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
 			e.preventDefault();
 			toggleBack();
-		} else if (e.key === ' ' || e.key === 'Enter') {
+		} else if (!completed && current && (e.key === ' ' || e.key === 'Enter')) {
 			e.preventDefault();
 			toggleBack();
 		} else if (e.key === 'r' || e.key === 'R') {
 			e.preventDefault();
 			restart();
-		} else if (e.key === 'e' || e.key === 'E') {
+		} else if (!completed && current && (e.key === 'e' || e.key === 'E')) {
 			e.preventDefault();
 			showExampleEnglish = !showExampleEnglish;
 		} else if (e.key === 'p' || e.key === 'P') {
@@ -189,12 +189,18 @@
 	<div
 		class="mt-4 mb-2 flex justify-center gap-4 text-lg font-medium text-gray-700 dark:text-gray-300"
 	>
-		<Button color="gray">{completed ? deck.length : currentIndex + 1}/{deck.length}</Button>
+		<Button color="gray">{deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}</Button>
 	</div>
 
 	<!-- Flashcard -->
 	<div class="flip-box h-96 w-full bg-transparent md:w-1/2">
-		{#if completed}
+		{#if deck.length === 0}
+			<div class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800">
+				<p class="text-lg font-medium text-gray-700 dark:text-gray-300">
+					No vocabulary items found for this selection.
+				</p>
+			</div>
+		{:else if completed}
 			<div class="flex h-full flex-col items-center justify-center gap-6 rounded-xl bg-custom-blue">
 				<p class="text-2xl font-semibold text-white">🎉 All {deck.length} cards done!</p>
 				<button
@@ -293,7 +299,7 @@
 			type="button"
 			onclick={next}
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
-			disabled={completed}
+			disabled={completed || deck.length === 0}
 		>
 			<ArrowDown class="mr-4" />
 			Forward
