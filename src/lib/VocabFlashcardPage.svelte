@@ -73,6 +73,11 @@
 	}
 
 	function prev() {
+		if (completed) {
+			// Exit completion screen back to the last card
+			completed = false;
+			return;
+		}
 		if (currentIndex > 0) {
 			currentIndex--;
 			resetCardState();
@@ -96,10 +101,15 @@
 	// Rebuild deck whenever entries changes (new category/level)
 	$effect(() => {
 		const e = entries;
-		if (e.length > 0) {
-			mode = 'noreng';
-			buildDeck(e, 'noreng');
+		if (e.length === 0) {
+			deck = [];
+			currentIndex = 0;
+			completed = false;
+			resetCardState();
+			return;
 		}
+		// Preserve the user's chosen mode across category/level switches
+		buildDeck(e, mode);
 	});
 
 	function handleTouchStart(e: TouchEvent) {
@@ -222,7 +232,7 @@
 	</div>
 
 	<!-- Part of speech badge & Pronounce -->
-	{#if current}
+	{#if !completed && current}
 		<div class="mt-3 flex items-center gap-3">
 			<span
 				class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
@@ -234,7 +244,7 @@
 	{/if}
 
 	<!-- Example section -->
-	{#if current}
+	{#if !completed && current}
 		<div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 dark:bg-gray-800">
 			<p class="text-base text-gray-700 italic dark:text-gray-300">
 				"{current.entry.example}"
@@ -273,7 +283,7 @@
 			type="button"
 			onclick={prev}
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
-			disabled={currentIndex <= 0}
+			disabled={currentIndex <= 0 && !completed}
 		>
 			<ArrowUp class="mr-4" />
 			Previous
