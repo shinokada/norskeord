@@ -61,7 +61,8 @@ Each entry in all `src/lib/data/vocab-*.json` files gains new fields per languag
 
 - Translation field: `[language_code]` — e.g. `spanish`, `ukrainian`, `polish`
 - Example translation field: `example_[language_code]` — e.g. `example_spanish`
-- All fields are **required** for every entry
+- Translation fields (`spanish`, `ukrainian`, `polish`) are **required** for every entry
+- Example translation fields (`example_spanish`, `example_ukrainian`, `example_polish`) are **optional** — not every word naturally has a useful example sentence in all languages, and the UI already guards with `{#if}`
 
 ---
 
@@ -96,6 +97,16 @@ export interface VocabEntry {
   category: Category;
   part: PartOfSpeech;
 }
+
+// Type-safe helpers for dynamic field access — centralises type assertions
+// so they don't need to be scattered across components.
+export function getTranslation(entry: VocabEntry, language: Language): string {
+  return entry[language as keyof VocabEntry] as string;
+}
+
+export function getExampleTranslation(entry: VocabEntry, language: Language): string | undefined {
+  return entry[`example_${language}` as keyof VocabEntry] as string | undefined;
+}
 ```
 
 ---
@@ -110,10 +121,14 @@ import { LANGUAGES, type Language } from '$lib/types';
 const STORAGE_KEY = 'norske-flashcard-language';
 
 function createLanguageStore() {
-  const stored =
-    typeof localStorage !== 'undefined'
-      ? (localStorage.getItem(STORAGE_KEY) as Language | null)
-      : null;
+  let stored: Language | null = null;
+  if (typeof localStorage !== 'undefined') {
+    try {
+      stored = localStorage.getItem(STORAGE_KEY) as Language | null;
+    } catch (e) {
+      console.warn('Failed to read language preference from localStorage:', e);
+    }
+  }
 
   // Guard against stale or invalid stored values
   const initial: Language = stored && stored in LANGUAGES ? stored : 'english';
@@ -127,7 +142,11 @@ function createLanguageStore() {
     set(lang: Language) {
       current = lang;
       if (typeof localStorage !== 'undefined') {
-        localStorage.setItem(STORAGE_KEY, lang);
+        try {
+          localStorage.setItem(STORAGE_KEY, lang);
+        } catch (e) {
+          console.warn('Failed to save language preference to localStorage:', e);
+        }
       }
     }
   };
@@ -138,6 +157,7 @@ export const languageStore = createLanguageStore();
 
 **Notes:**
 - `typeof localStorage !== 'undefined'` guards against SSR
+- `localStorage.getItem()` and `localStorage.setItem()` are wrapped in try-catch — in some browsers with strict privacy settings or when storage quota is exceeded these can throw
 - The `stored in LANGUAGES` guard protects against invalid values if languages are renamed or removed in future
 - Defaults to `'english'` if nothing is stored
 
@@ -164,8 +184,10 @@ let { entries, title = 'Vocab', language = 'english' }: Props = $props();
 #### `makeItem` change
 
 ```ts
+import { getTranslation } from '$lib/types';
+
 function makeItem(entry: VocabEntry, m: Mode): HistoryItem {
-  const translation = entry[language];
+  const translation = getTranslation(entry, language);
   return {
     entry,
     front: m === 'noreng' ? entry.norsk : translation,
@@ -190,22 +212,28 @@ Update button labels to reflect the selected language dynamically:
 #### Example section change
 
 ```svelte
+<script lang="ts">
+  import { getExampleTranslation } from '$lib/types';
+</script>
+
 {#if current}
   <div class="...">
     <p class="... italic">"{current.entry.example}"</p>
-    {#if current.entry[`example_${language}`]}
+    {#if getExampleTranslation(current.entry, language)}
       <div class="mt-2">
-        {#if showExampleEnglish}
-          <p class="...">"{current.entry[`example_${language}`]}"</p>
+        {#if showExampleTranslation}
+          <p class="...">"{getExampleTranslation(current.entry, language)}"</p>
         {/if}
-        <button onclick={() => (showExampleEnglish = !showExampleEnglish)}>
-          {showExampleEnglish ? 'Hide translation' : 'Show translation'}
+        <button onclick={() => (showExampleTranslation = !showExampleTranslation)}>
+          {showExampleTranslation ? 'Hide translation' : 'Show translation'}
         </button>
       </div>
     {/if}
   </div>
 {/if}
 ```
+
+> **Note:** `showExampleEnglish` should be renamed to `showExampleTranslation` to reflect that it now controls any language, not just English.
 
 ---
 
@@ -230,7 +258,7 @@ Add a language selector dropdown driven by `LANGUAGES`. Import `languageStore` a
   <Dropdown>
     {#each Object.entries(LANGUAGES) as [code, { name, flag }]}
       <DropdownItem
-        onclick={() => languageStore.set(code)}
+        onclick={() => languageStore.set(code as Language)}
         class={languageStore.current === code ? 'font-semibold' : ''}
       >
         {flag} {name}
@@ -291,11 +319,15 @@ Use this prompt to generate the new fields for each batch of entries:
 > - `"spanish"` — the Spanish translation of the `norsk` field
 > - `"ukrainian"` — the Ukrainian translation of the `norsk` field
 > - `"polish"` — the Polish translation of the `norsk` field
-> - `"example_spanish"` — a natural Spanish sentence using only {LEVEL}-level vocabulary that translates `example`
+> - `"example_spanish"` — a natural Spanish sentence using only **A1**-level vocabulary that translates `example` (omit if no natural translation exists)
 > - `"example_ukrainian"` — same in Ukrainian
 > - `"example_polish"` — same in Polish
 >
 > Return only the updated JSON array with no explanation.
+
+**Important:** Replace `A1` in the prompt above with the actual CEFR level of the file being processed (`A1`, `A2`, `B1`, `B2`, `C1`, or `C2`). For example, when processing `vocab-b1.json`, use `B1`-level vocabulary in the example sentences.
+
+**Quality assurance:** Since translations are AI-generated in bulk, spot-check a sample of entries per level (5–10 words) against a dictionary or native speaker before shipping. Pay particular attention to words with multiple meanings where context matters.
 
 ---
 
@@ -310,12 +342,7 @@ Use this prompt to generate the new fields for each batch of entries:
 
 ## TypeScript Consideration
 
-Accessing `entry[language]` and `entry[\`example_${language}\`]` dynamically will need a type assertion since TypeScript cannot narrow the template literal key at compile time:
-
-```ts
-const translation = entry[language as keyof VocabEntry] as string;
-const exampleTranslation = entry[`example_${language}` as keyof VocabEntry] as string | undefined;
-```
+Accessing `entry[language]` and `entry[\`example_${language}\`]` dynamically requires type assertions since TypeScript cannot narrow template literal keys at compile time. Rather than scattering these assertions across components, use the `getTranslation` and `getExampleTranslation` helpers defined in `src/lib/types.ts` (see section 1 above). This centralises all assertions in one place and keeps component code clean.
 
 ---
 
