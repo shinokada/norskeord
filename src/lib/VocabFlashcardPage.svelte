@@ -13,13 +13,14 @@
 	let { entries, title = 'Vocab' }: Props = $props();
 
 	type Mode = 'noreng' | 'engnor';
-	type HistoryItem = { entry: VocabEntry; front: string; back: string };
+	type DeckItem = { entry: VocabEntry; front: string; back: string };
 
 	let mode = $state<Mode>('noreng');
 	let showCardBack = $state(false);
 	let showExampleEnglish = $state(false);
-	let history = $state<HistoryItem[]>([]);
-	let currentIndex = $state(-1);
+	let deck = $state<DeckItem[]>([]);
+	let currentIndex = $state(0);
+	let completed = $state(false);
 	let speakButtonRef = $state<SpeakButton | undefined>(undefined);
 
 	// touch
@@ -31,11 +32,16 @@
 		isTouch = window.matchMedia('(pointer: coarse)').matches;
 	});
 
-	function randomEntry(): VocabEntry {
-		return entries[Math.floor(Math.random() * entries.length)];
+	function shuffle<T>(arr: T[]): T[] {
+		const a = [...arr];
+		for (let i = a.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[a[i], a[j]] = [a[j], a[i]];
+		}
+		return a;
 	}
 
-	function makeItem(entry: VocabEntry, m: Mode): HistoryItem {
+	function makeDeckItem(entry: VocabEntry, m: Mode): DeckItem {
 		return {
 			entry,
 			front: m === 'noreng' ? entry.norsk : entry.english,
@@ -43,28 +49,35 @@
 		};
 	}
 
+	function buildDeck(es: VocabEntry[], m: Mode) {
+		deck = shuffle(es).map((e) => makeDeckItem(e, m));
+		currentIndex = 0;
+		completed = false;
+		showCardBack = false;
+		showExampleEnglish = false;
+	}
+
 	function resetCardState() {
 		showCardBack = false;
 		showExampleEnglish = false;
 	}
 
-	function newCard() {
-		if (entries.length === 0) return;
-		resetCardState();
-		const item = makeItem(randomEntry(), mode);
-		history = [...history, item];
-		currentIndex = history.length - 1;
+	function restart() {
+		buildDeck(entries, mode);
 	}
 
 	function setMode(m: Mode) {
 		if (m === mode) return;
 		mode = m;
-		history = [];
-		currentIndex = -1;
-		newCard();
+		buildDeck(entries, m);
 	}
 
 	function prev() {
+		if (completed) {
+			// Exit completion screen back to the last card
+			completed = false;
+			return;
+		}
 		if (currentIndex > 0) {
 			currentIndex--;
 			resetCardState();
@@ -72,30 +85,31 @@
 	}
 
 	function next() {
-		if (currentIndex < history.length - 1) {
+		if (completed || deck.length === 0) return;
+		if (currentIndex < deck.length - 1) {
 			currentIndex++;
 			resetCardState();
 		} else {
-			newCard();
+			completed = true;
 		}
 	}
 
 	const toggleBack = () => (showCardBack = !showCardBack);
 
-	let current = $derived(history[currentIndex]);
+	let current = $derived(deck[currentIndex]);
 
-	// Reset and initialise whenever entries changes (new category/level)
+	// Rebuild deck whenever entries changes (new category/level)
 	$effect(() => {
-		// Access entries here so Svelte tracks it as a dependency
 		const e = entries;
-		if (e.length > 0) {
-			mode = 'noreng';
-			showCardBack = false;
-			showExampleEnglish = false;
-			const item = makeItem(e[Math.floor(Math.random() * e.length)], 'noreng');
-			history = [item];
+		if (e.length === 0) {
+			deck = [];
 			currentIndex = 0;
+			completed = false;
+			resetCardState();
+			return;
 		}
+		// Preserve the user's chosen mode across category/level switches
+		buildDeck(e, mode);
 	});
 
 	function handleTouchStart(e: TouchEvent) {
@@ -124,19 +138,22 @@
 			target.isContentEditable
 		)
 			return;
-		if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+		if (e.key === 'ArrowLeft') {
 			e.preventDefault();
 			prev();
-		} else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+		} else if (e.key === 'ArrowRight') {
 			e.preventDefault();
 			next();
-		} else if (e.key === ' ' || e.key === 'Enter') {
+		} else if (!completed && current && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
 			e.preventDefault();
 			toggleBack();
-		} else if (e.key === 'n' || e.key === 'N') {
+		} else if (!completed && current && (e.key === ' ' || e.key === 'Enter')) {
 			e.preventDefault();
-			newCard();
-		} else if (e.key === 'e' || e.key === 'E') {
+			toggleBack();
+		} else if (e.key === 'r' || e.key === 'R') {
+			e.preventDefault();
+			restart();
+		} else if (!completed && current && (e.key === 'e' || e.key === 'E')) {
 			e.preventDefault();
 			showExampleEnglish = !showExampleEnglish;
 		} else if (e.key === 'p' || e.key === 'P') {
@@ -172,37 +189,56 @@
 	<div
 		class="mt-4 mb-2 flex justify-center gap-4 text-lg font-medium text-gray-700 dark:text-gray-300"
 	>
-		<Button color="gray">{currentIndex + 1}/{history.length}</Button>
+		<Button color="gray">{deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}</Button>
 	</div>
 
 	<!-- Flashcard -->
 	<div class="flip-box h-96 w-full bg-transparent md:w-1/2">
-		<div
-			class="flip-box-inner"
-			class:flip-it={showCardBack}
-			onclick={toggleBack}
-			onkeydown={(e) => {
-				if (e.key === 'Enter' || e.key === ' ') {
-					e.preventDefault();
-					e.stopPropagation();
-					toggleBack();
-				}
-			}}
-			ontouchstart={handleTouchStart}
-			ontouchend={handleTouchEnd}
-			tabindex="0"
-			role="button"
-			aria-pressed={showCardBack}
-			aria-label={showCardBack
-				? 'Flashcard showing answer, press to show question'
-				: 'Flashcard showing question, press to reveal answer'}
-		>
-			<Flashcard front={current?.front} back={current?.back} {showCardBack} />
-		</div>
+		{#if deck.length === 0}
+			<div class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800">
+				<p class="text-lg font-medium text-gray-700 dark:text-gray-300">
+					No vocabulary items found for this selection.
+				</p>
+			</div>
+		{:else if completed}
+			<div class="flex h-full flex-col items-center justify-center gap-6 rounded-xl bg-custom-blue">
+				<p class="text-2xl font-semibold text-white">🎉 All {deck.length} cards done!</p>
+				<button
+					type="button"
+					onclick={restart}
+					class="rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+				>
+					Shuffle &amp; Restart
+				</button>
+			</div>
+		{:else}
+			<div
+				class="flip-box-inner"
+				class:flip-it={showCardBack}
+				onclick={toggleBack}
+				onkeydown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						e.preventDefault();
+						e.stopPropagation();
+						toggleBack();
+					}
+				}}
+				ontouchstart={handleTouchStart}
+				ontouchend={handleTouchEnd}
+				tabindex="0"
+				role="button"
+				aria-pressed={showCardBack}
+				aria-label={showCardBack
+					? 'Flashcard showing answer, press to show question'
+					: 'Flashcard showing question, press to reveal answer'}
+			>
+				<Flashcard front={current?.front} back={current?.back} {showCardBack} />
+			</div>
+		{/if}
 	</div>
 
 	<!-- Part of speech badge & Pronounce -->
-	{#if current}
+	{#if !completed && current}
 		<div class="mt-3 flex items-center gap-3">
 			<span
 				class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
@@ -214,7 +250,7 @@
 	{/if}
 
 	<!-- Example section -->
-	{#if current}
+	{#if !completed && current}
 		<div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 dark:bg-gray-800">
 			<p class="text-base text-gray-700 italic dark:text-gray-300">
 				"{current.entry.example}"
@@ -243,7 +279,7 @@
 		{#if isTouch}
 			Tap to flip · ← → to navigate · ↑↓ to toggle translation
 		{:else}
-			Space/Enter to flip · ←↑ →↓ to navigate · N for new card · E to toggle translation · P to pronounce
+			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · P to pronounce
 		{/if}
 	</p>
 
@@ -253,7 +289,7 @@
 			type="button"
 			onclick={prev}
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
-			disabled={currentIndex <= 0}
+			disabled={currentIndex <= 0 && !completed}
 		>
 			<ArrowUp class="mr-4" />
 			Previous
@@ -263,6 +299,7 @@
 			type="button"
 			onclick={next}
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+			disabled={completed || deck.length === 0}
 		>
 			<ArrowDown class="mr-4" />
 			Forward
@@ -271,10 +308,10 @@
 		<button
 			type="button"
 			class="inline-flex w-full items-center justify-end bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
-			onclick={newCard}
+			onclick={restart}
 			disabled={entries.length === 0}
 		>
-			NEW CARD
+			RESTART
 			<ArrowRight class="ml-4" />
 		</button>
 	</div>
