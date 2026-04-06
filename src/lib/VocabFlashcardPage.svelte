@@ -157,10 +157,10 @@
 		} else if (!completed && current && (e.key === 'e' || e.key === 'E')) {
 			e.preventDefault();
 			showExampleEnglish = !showExampleEnglish;
-		} else if (e.key === '/') {
+		} else if (!completed && current && e.key === '/') {
 			e.preventDefault();
 			speakButtonRef?.speak();
-		} else if (e.key === '.') {
+		} else if (!completed && current && e.key === '.') {
 			e.preventDefault();
 			speakExampleRef?.speak();
 		}
@@ -287,7 +287,7 @@
 		{#if isTouch}
 			Tap to flip · ← → to navigate · ↑↓ to toggle translation
 		{:else}
-			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to pronounce · . for example
+			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to pronounce word · . to pronounce example phrase
 		{/if}
 	</p>
 
