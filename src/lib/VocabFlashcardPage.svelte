@@ -258,13 +258,13 @@
 				<SpeakButton bind:this={speakExampleRef} word={current.entry.example} />
 			</div>
 			<p class="text-base text-gray-700 italic dark:text-gray-300">
-				"{current.entry.example}"
+				{current.entry.example}
 			</p>
 			{#if current.entry.example_english}
 				<div class="mt-2">
 					{#if showExampleEnglish}
 						<p class="mb-1 text-sm text-gray-500 dark:text-gray-400">
-							"{current.entry.example_english}"
+						{current.entry.example_english}
 						</p>
 					{/if}
 					<button
