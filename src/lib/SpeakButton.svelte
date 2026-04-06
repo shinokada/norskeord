@@ -45,6 +45,9 @@
 				const nora = candidates.find((v) => v.name.includes('Nora'));
 				selectedVoiceName = (nora ?? candidates[0]).name;
 			}
+		} else {
+			norwegianVoices = [];
+			selectedVoiceName = '';
 		}
 	}
 
