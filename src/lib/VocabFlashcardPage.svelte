@@ -22,6 +22,7 @@
 	let currentIndex = $state(0);
 	let completed = $state(false);
 	let speakButtonRef = $state<SpeakButton | undefined>(undefined);
+	let speakExampleRef = $state<SpeakButton | undefined>(undefined);
 
 	// touch
 	let isTouch = $state(false);
@@ -156,9 +157,12 @@
 		} else if (!completed && current && (e.key === 'e' || e.key === 'E')) {
 			e.preventDefault();
 			showExampleEnglish = !showExampleEnglish;
-		} else if (e.key === 'p' || e.key === 'P') {
+		} else if (!completed && current && e.key === '/') {
 			e.preventDefault();
 			speakButtonRef?.speak();
+		} else if (!completed && current && e.key === '.') {
+			e.preventDefault();
+			speakExampleRef?.speak();
 		}
 	}
 
@@ -252,14 +256,18 @@
 	<!-- Example section -->
 	{#if !completed && current}
 		<div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 dark:bg-gray-800">
+			<div class="mb-2 flex items-center gap-2">
+				<span class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300">phrase</span>
+				<SpeakButton bind:this={speakExampleRef} word={current.entry.example} />
+			</div>
 			<p class="text-base text-gray-700 italic dark:text-gray-300">
-				"{current.entry.example}"
+				{current.entry.example}
 			</p>
 			{#if current.entry.example_english}
 				<div class="mt-2">
 					{#if showExampleEnglish}
 						<p class="mb-1 text-sm text-gray-500 dark:text-gray-400">
-							"{current.entry.example_english}"
+						{current.entry.example_english}
 						</p>
 					{/if}
 					<button
@@ -279,7 +287,7 @@
 		{#if isTouch}
 			Tap to flip · ← → to navigate · ↑↓ to toggle translation
 		{:else}
-			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · P to pronounce
+			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to pronounce word · . to pronounce example phrase
 		{/if}
 	</p>
 
