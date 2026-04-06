@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Modal from 'flowbite-svelte/Modal.svelte';
 	import ButtonToggleGroup from 'flowbite-svelte/ButtonToggleGroup.svelte';
 	import ButtonToggle from 'flowbite-svelte/ButtonToggle.svelte';
@@ -28,17 +29,82 @@
 	let settingsOpen = $state(false);
 	let showGear = $state(false);
 
+	let norwegianVoices = $state<SpeechSynthesisVoice[]>([]);
+	let selectedVoiceName = $state('');
+	let mounted = false;
+	let pendingVoicesChangedHandler: EventListener | null = null;
+
+	function loadVoices() {
+		if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+		const all = window.speechSynthesis.getVoices();
+		const noVoices = all.filter((v) => v.lang.startsWith('nb') || v.lang.startsWith('no'));
+		const candidates = noVoices.length > 0 ? noVoices : all;
+		if (candidates.length > 0) {
+			norwegianVoices = candidates;
+			if (!selectedVoiceName || !candidates.find((v) => v.name === selectedVoiceName)) {
+				const nora = candidates.find((v) => v.name.includes('Nora'));
+				selectedVoiceName = (nora ?? candidates[0]).name;
+			}
+		}
+	}
+
+	onMount(() => {
+		mounted = true;
+		loadVoices();
+		if (!('speechSynthesis' in window)) return;
+		window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
+		return () => {
+			mounted = false;
+			window.speechSynthesis.removeEventListener('voiceschanged', loadVoices);
+			if (pendingVoicesChangedHandler) {
+				window.speechSynthesis.removeEventListener('voiceschanged', pendingVoicesChangedHandler);
+				pendingVoicesChangedHandler = null;
+			}
+		};
+	});
+
 	export function speak() {
 		const text = word.trim();
 		if (!text) return;
-		if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-			window.speechSynthesis.cancel();
-			const utterance = new SpeechSynthesisUtterance(text);
-			utterance.lang = 'nb-NO';
+		if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+
+		window.speechSynthesis.cancel();
+
+		const utterance = new SpeechSynthesisUtterance(text);
+		utterance.lang = 'nb-NO';
+
+		const doSpeak = () => {
+			if (!mounted) return;
+			const voices = window.speechSynthesis.getVoices();
+			const voice = selectedVoiceName
+				? voices.find((v) => v.name === selectedVoiceName)
+				: voices.find((v) => v.lang.startsWith('nb') || v.lang.startsWith('no'));
+			if (voice) utterance.voice = voice;
+			// Set rate/pitch after voice to prevent browser resetting them
 			utterance.rate = parseFloat(speed);
 			utterance.pitch = parseFloat(pitch);
+
+			if (window.speechSynthesis.paused) {
+				window.speechSynthesis.resume();
+			}
 			window.speechSynthesis.speak(utterance);
 			showGear = true;
+		};
+
+		const voices = window.speechSynthesis.getVoices();
+		if (voices.length > 0) {
+			doSpeak();
+		} else {
+			if (pendingVoicesChangedHandler) {
+				window.speechSynthesis.removeEventListener('voiceschanged', pendingVoicesChangedHandler);
+			}
+			pendingVoicesChangedHandler = () => {
+				pendingVoicesChangedHandler = null;
+				doSpeak();
+			};
+			window.speechSynthesis.addEventListener('voiceschanged', pendingVoicesChangedHandler, {
+				once: true
+			});
 		}
 	}
 </script>
@@ -96,6 +162,22 @@
 <!-- Voice Settings Modal -->
 <Modal bind:open={settingsOpen} title="Voice Settings" size="sm">
 	<div class="space-y-6">
+		<!-- Voice -->
+		{#if norwegianVoices.length > 0}
+			<div>
+				<p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">Voice</p>
+				<select
+					aria-label="Voice"
+					bind:value={selectedVoiceName}
+					class="w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-500 dark:focus:ring-blue-500"
+				>
+					{#each norwegianVoices as v (v.name)}
+						<option value={v.name}>{v.name}</option>
+					{/each}
+				</select>
+			</div>
+		{/if}
+
 		<!-- Speed -->
 		<div>
 			<p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">Speed</p>
