@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Flashcard, ArrowRight, ArrowUp, ArrowDown } from '$lib';
+	import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
 	import SpeakButton from '$lib/SpeakButton.svelte';
 	import { Button } from 'flowbite-svelte';
 	import type { VocabEntry } from '$lib/types';
@@ -290,7 +290,7 @@
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
 			disabled={currentIndex <= 0 && !completed}
 		>
-			<ArrowUp class="mr-4" />
+			<ArrowLeft class="mr-4" />
 			Previous
 		</button>
 
@@ -300,18 +300,17 @@
 			class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
 			disabled={completed || deck.length === 0}
 		>
-			<ArrowDown class="mr-4" />
-			Forward
+			<ArrowRight class="mr-4" />
+			Next
 		</button>
 
 		<button
 			type="button"
-			class="inline-flex w-full items-center justify-end bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+			class="inline-flex w-full items-center justify-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
 			onclick={restart}
 			disabled={entries.length === 0}
 		>
 			RESTART
-			<ArrowRight class="ml-4" />
 		</button>
 	</div>
 </div>
