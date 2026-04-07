@@ -27,7 +27,6 @@
 	// touch
 	let isTouch = $state(false);
 	let touchStartX = 0;
-	let touchStartY = 0;
 
 	onMount(() => {
 		isTouch = window.matchMedia('(pointer: coarse)').matches;
@@ -115,20 +114,12 @@
 
 	function handleTouchStart(e: TouchEvent) {
 		touchStartX = e.changedTouches[0].screenX;
-		touchStartY = e.changedTouches[0].screenY;
 	}
 
 	function handleTouchEnd(e: TouchEvent) {
 		const dx = e.changedTouches[0].screenX - touchStartX;
-		const dy = e.changedTouches[0].screenY - touchStartY;
-		if (Math.abs(dx) > Math.abs(dy)) {
-			if (dx < -30) next();
-			else if (dx > 30) prev();
-		} else {
-			if (Math.abs(dy) > 30 && current?.entry.example_english) {
-				showExampleEnglish = !showExampleEnglish;
-			}
-		}
+		if (dx < -30) next();
+		else if (dx > 30) prev();
 	}
 
 	function handleKeyDown(e: KeyboardEvent) {
@@ -285,7 +276,7 @@
 	<!-- Hint -->
 	<p class="mt-4 rounded bg-gray-900 px-2 py-1 text-white">
 		{#if isTouch}
-			Tap to flip · ← → to navigate · ↑↓ to toggle translation
+			Tap to flip · ← → to navigate
 		{:else}
 			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to pronounce word · . to pronounce example phrase
 		{/if}
