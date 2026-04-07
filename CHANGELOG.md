@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.4.0
+
+### Minor Changes
+
+- feat: new vocab, structure, etc
+
 ## 1.2.0
 
 ### Minor Changes
