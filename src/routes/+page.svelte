@@ -6,8 +6,14 @@
 
 	onMount(async () => {
 		const last = localStorage.getItem('last-flashcard-path');
-		// eslint-disable-next-line svelte/no-navigation-without-resolve
-		if (last) await goto(last, { replaceState: true });
+		if (last) {
+			try {
+				// eslint-disable-next-line svelte/no-navigation-without-resolve
+				await goto(last, { replaceState: true });
+			} catch {
+				localStorage.removeItem('last-flashcard-path');
+			}
+		}
 	});
 
 	const levels = [
