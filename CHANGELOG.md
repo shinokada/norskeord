@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 1.5.1
+
+### Patch Changes
+
+- fix: Redirects now only run on fresh page loads to prevent unexpected in-app navigation.
+  fix: Invalid or malformed saved flashcard links are cleared to avoid failed redirects.
+  fix: Auto-redirect behavior tightened so users aren’t sent to incorrect pages and stored bad paths are removed.
+
 ## 1.5.0
 
 ### Minor Changes
