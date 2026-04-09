@@ -16,10 +16,9 @@
 
 	const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
 
-	// Persist last-visited flashcard page
-	const flashcardPathPattern = /^\/[a-z]\d\//;
+	// Persist last-visited page
 	$effect(() => {
-		if (browser && flashcardPathPattern.test(page.url.pathname)) {
+		if (browser) {
 			localStorage.setItem('last-flashcard-path', page.url.pathname);
 		}
 	});
