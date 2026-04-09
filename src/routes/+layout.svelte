@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import { browser } from '$app/environment';
+	import { afterNavigate } from '$app/navigation';
 	import { Runatics } from 'runatics';
 	import { MetaTags, deepMerge } from 'runes-meta-tags';
 	import { page } from '$app/state';
@@ -17,10 +17,11 @@
 
 	const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
 
-	// Persist last-visited page (only for valid restorable paths)
-	$effect(() => {
-		if (browser && validFlashcardPathPattern.test(page.url.pathname)) {
-			localStorage.setItem('last-flashcard-path', page.url.pathname);
+	// Persist last-visited page on in-app navigations only.
+	// Using afterNavigate (not $effect) so cold-start at / never overwrites the stored path.
+	afterNavigate(({ from, to }) => {
+		if (from !== null && to?.url.pathname && validFlashcardPathPattern.test(to.url.pathname)) {
+			localStorage.setItem('last-flashcard-path', to.url.pathname);
 		}
 	});
 </script>
