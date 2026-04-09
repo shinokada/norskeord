@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
 	import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
 	import SpeakButton from '$lib/SpeakButton.svelte';
 	import { Button } from 'flowbite-svelte';
@@ -15,9 +16,24 @@
 	type Mode = 'noreng' | 'engnor';
 	type DeckItem = { entry: VocabEntry; front: string; back: string };
 
-	let mode = $state<Mode>('noreng');
+	const LS_MODE = 'vocab-flashcard-mode';
+	const LS_SHOW_EXAMPLE = 'vocab-flashcard-show-example';
+
+	function getInitialMode(): Mode {
+		if (!browser) return 'noreng';
+		const saved = localStorage.getItem(LS_MODE);
+		return saved === 'noreng' || saved === 'engnor' ? saved : 'noreng';
+	}
+
+	function getInitialShowExample(): boolean {
+		if (!browser) return false;
+		return localStorage.getItem(LS_SHOW_EXAMPLE) === 'true';
+	}
+
+	let mode = $state<Mode>(getInitialMode());
+	let showExampleDefault = $state(getInitialShowExample());
 	let showCardBack = $state(false);
-	let showExampleEnglish = $state(false);
+	let showExampleEnglish = $state(getInitialShowExample());
 	let deck = $state<DeckItem[]>([]);
 	let currentIndex = $state(0);
 	let completed = $state(false);
@@ -54,12 +70,12 @@
 		currentIndex = 0;
 		completed = false;
 		showCardBack = false;
-		showExampleEnglish = false;
+		showExampleEnglish = showExampleDefault;
 	}
 
 	function resetCardState() {
 		showCardBack = false;
-		showExampleEnglish = false;
+		showExampleEnglish = showExampleDefault;
 	}
 
 	function restart() {
@@ -69,6 +85,7 @@
 	function setMode(m: Mode) {
 		if (m === mode) return;
 		mode = m;
+		localStorage.setItem(LS_MODE, m);
 		buildDeck(entries, m);
 	}
 
@@ -148,6 +165,8 @@
 		} else if (!completed && current && (e.key === 'e' || e.key === 'E')) {
 			e.preventDefault();
 			showExampleEnglish = !showExampleEnglish;
+			showExampleDefault = showExampleEnglish;
+			localStorage.setItem(LS_SHOW_EXAMPLE, String(showExampleEnglish));
 		} else if (!completed && current && e.key === '/') {
 			e.preventDefault();
 			speakButtonRef?.speak();
@@ -184,24 +203,28 @@
 	<div
 		class="mt-4 mb-2 flex justify-center gap-4 text-lg font-medium text-gray-700 dark:text-gray-300"
 	>
-		<Button color="gray">{deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}</Button>
+		<Button color="gray"
+			>{deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}</Button
+		>
 	</div>
 
 	<!-- Flashcard -->
 	<div class="flip-box h-96 w-full bg-transparent md:w-1/2">
 		{#if deck.length === 0}
-			<div class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800">
+			<div
+				class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
+			>
 				<p class="text-lg font-medium text-gray-700 dark:text-gray-300">
 					No vocabulary items found for this selection.
 				</p>
 			</div>
 		{:else if completed}
-			<div class="flex h-full flex-col items-center justify-center gap-6 rounded-xl bg-custom-blue">
+			<div class="bg-custom-blue flex h-full flex-col items-center justify-center gap-6 rounded-xl">
 				<p class="text-2xl font-semibold text-white">🎉 All {deck.length} cards done!</p>
 				<button
 					type="button"
 					onclick={restart}
-					class="rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+					class="rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none"
 				>
 					Shuffle &amp; Restart
 				</button>
@@ -248,7 +271,10 @@
 	{#if !completed && current}
 		<div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 dark:bg-gray-800">
 			<div class="mb-2 flex items-center gap-2">
-				<span class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300">phrase</span>
+				<span
+					class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+					>phrase</span
+				>
 				<SpeakButton bind:this={speakExampleRef} word={current.entry.example} />
 			</div>
 			<p class="text-base text-gray-700 italic dark:text-gray-300">
@@ -258,13 +284,17 @@
 				<div class="mt-2">
 					{#if showExampleEnglish}
 						<p class="mb-1 text-sm text-gray-500 dark:text-gray-400">
-						{current.entry.example_english}
+							{current.entry.example_english}
 						</p>
 					{/if}
 					<button
 						type="button"
 						class="text-sm text-blue-600 hover:underline dark:text-blue-400"
-						onclick={() => (showExampleEnglish = !showExampleEnglish)}
+						onclick={() => {
+							showExampleEnglish = !showExampleEnglish;
+							showExampleDefault = showExampleEnglish;
+							localStorage.setItem(LS_SHOW_EXAMPLE, String(showExampleEnglish));
+						}}
 					>
 						{showExampleEnglish ? 'Hide translation' : 'Show translation'}
 					</button>
@@ -278,7 +308,8 @@
 		{#if isTouch}
 			Tap to flip · ← → to navigate
 		{:else}
-			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to pronounce word · . to pronounce example phrase
+			Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to
+			pronounce word · . to pronounce example phrase
 		{/if}
 	</p>
 

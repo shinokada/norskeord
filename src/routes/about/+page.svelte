@@ -30,7 +30,7 @@
 
 	<Heading tag="h2" class="text-2xl">LexiLearn Hub Apps</Heading>
 
-	<List class="m-4 list-disc p-4 text-left text-lg dark:text-gray-400">
+	<List class="list-disc text-left text-lg dark:text-gray-400">
 		<Li class="hover:text-red-700 hover:underline">
 			<A href="https://gjett-norsk.codewithshin.com/" class="me-4 hover:underline md:me-6"
 				>Gjett Norsk</A
@@ -54,13 +54,13 @@
 		</Li>
 		<Li class="hover:text-red-700 hover:underline">
 			<A href="https://flexilexi-dictionary.codewithshin.com/" class="me-4 hover:underline md:me-6"
-				>FlexiLexi dictionary (English/Norwegian/Japanese)</A
+				>FlexiLexi dictionary</A
 			>
 		</Li>
 	</List>
 
 	<Heading tag="h2" class="text-2xl">Technical info</Heading>
-	<List class="m-4 list-disc p-4 text-left text-lg dark:text-gray-400">
+	<List class="list-disc text-left text-lg dark:text-gray-400">
 		<Li class="hover:text-red-700 hover:underline">
 			<A href="https://norske-flashcard.codewithshin.com/" class="me-4 hover:underline md:me-6"
 				>{removeHyphensAndCapitalize(name)} : {version}</A
@@ -80,7 +80,7 @@
 	</List>
 
 	<Heading tag="h2" class="text-2xl">Repo</Heading>
-	<List class="m-4 list-disc p-4 text-left text-lg dark:text-gray-400">
+	<List class="list-disc text-left text-lg dark:text-gray-400">
 		<Li class="hover:text-red-700 hover:underline">
 			<A href="https://github.com/shinokada/norske-flashcard" class="me-4 hover:underline md:me-6"
 				>Github repo</A
