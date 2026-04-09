@@ -1,15 +1,14 @@
 <script lang="ts">
 	import { afterNavigate, goto } from '$app/navigation';
 	import { CATEGORIES_BY_LEVEL } from '$lib/types';
-	import { removeHyphensAndCapitalize } from '$lib/utils';
+	import { removeHyphensAndCapitalize, validFlashcardPathPattern } from '$lib/utils';
 
 	// Only auto-redirect on direct/fresh page loads (from === null),
 	// not when the user explicitly navigates home via an in-app link.
 	afterNavigate(async ({ from }) => {
 		if (from !== null) return;
-		const validPathPattern = /^(\/|\/about|\/[a-z]\d\/[^/]+)$/;
 		const last = localStorage.getItem('last-flashcard-path');
-		if (last && validPathPattern.test(last)) {
+		if (last && validFlashcardPathPattern.test(last)) {
 			try {
 				// eslint-disable-next-line svelte/no-navigation-without-resolve
 				await goto(last, { replaceState: true });
