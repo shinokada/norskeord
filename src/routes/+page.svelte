@@ -1,6 +1,20 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	import { CATEGORIES_BY_LEVEL } from '$lib/types';
 	import { removeHyphensAndCapitalize } from '$lib/utils';
+
+	onMount(async () => {
+		const last = localStorage.getItem('last-flashcard-path');
+		if (last) {
+			try {
+				// eslint-disable-next-line svelte/no-navigation-without-resolve
+				await goto(last, { replaceState: true });
+			} catch {
+				localStorage.removeItem('last-flashcard-path');
+			}
+		}
+	});
 
 	const levels = [
 		{ id: 'A1', label: 'A1 — Beginner', color: 'green' },
@@ -36,7 +50,7 @@
 				{#each categories as cat (cat)}
 					<a
 						href="/{id.toLowerCase()}/{cat}"
-						class="{badge} rounded-full px-3 py-1 text-sm font-medium transition-opacity hover:opacity-75"
+						class="{badge} rounded-full px-4 py-1.5 font-medium transition-opacity hover:opacity-75"
 					>
 						{removeHyphensAndCapitalize(cat)}
 					</a>

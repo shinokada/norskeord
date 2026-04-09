@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	import { browser } from '$app/environment';
 	import { Runatics } from 'runatics';
 	import { MetaTags, deepMerge } from 'runes-meta-tags';
 	import { page } from '$app/state';
@@ -14,6 +15,14 @@
 	);
 
 	const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
+
+	// Persist last-visited flashcard page
+	const flashcardPathPattern = /^\/[a-z]\d\//;
+	$effect(() => {
+		if (browser && flashcardPathPattern.test(page.url.pathname)) {
+			localStorage.setItem('last-flashcard-path', page.url.pathname);
+		}
+	});
 </script>
 
 <Runatics {analyticsId} />
