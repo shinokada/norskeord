@@ -22,8 +22,7 @@
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test",
 		"ch": "npx changeset",
-		"cv": "npx changeset version",
-		"cp": "npx changeset publish"
+		"cv": "npx changeset version"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.30.0",
