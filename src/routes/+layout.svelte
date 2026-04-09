@@ -7,6 +7,7 @@
 	import Nav from './components/Nav.svelte';
 	import Footer from './components/Footer.svelte';
 	import PwaUpdatePrompt from './components/PwaUpdatePrompt.svelte';
+	import { validFlashcardPathPattern } from '$lib/utils';
 	let { children, data } = $props();
 	let metaTags = $derived(
 		page.data.pageMetaTags
@@ -16,9 +17,9 @@
 
 	const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
 
-	// Persist last-visited page
+	// Persist last-visited page (only for valid restorable paths)
 	$effect(() => {
-		if (browser) {
+		if (browser && validFlashcardPathPattern.test(page.url.pathname)) {
 			localStorage.setItem('last-flashcard-path', page.url.pathname);
 		}
 	});
