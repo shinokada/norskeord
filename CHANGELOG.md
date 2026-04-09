@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.5.0
+
+### Minor Changes
+
+- feat: persistent button and page choices
+
 ## 1.4.0
 
 ### Minor Changes
