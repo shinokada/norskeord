@@ -1,6 +1,14 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	import { CATEGORIES_BY_LEVEL } from '$lib/types';
 	import { removeHyphensAndCapitalize } from '$lib/utils';
+
+	onMount(async () => {
+		const last = localStorage.getItem('last-flashcard-path');
+		// eslint-disable-next-line svelte/no-navigation-without-resolve
+		if (last) await goto(last, { replaceState: true });
+	});
 
 	const levels = [
 		{ id: 'A1', label: 'A1 — Beginner', color: 'green' },
