@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 1.6.0
+
+### Minor Changes
+
+- New Features:
+  - Expanded vocabulary for A1–B2 with ~4,900 new entries across many topics (cooking, adjectives, nature, chores, finance, medicine, business, religion, etc.).
+  - Added a Resources page with curated external learning links.
+  - Navigation updated to include a "More" dropdown containing About and Resources.
+
+  Documentation:
+  - Added a CEFR-aligned category expansion plan and adjective-priority guidance.
+  - Minor wording correction in multi-language docs.
+
+  Style:
+  - Adjusted heading capitalization and category badge spacing.
+
 ## 1.5.1
 
 ### Patch Changes
