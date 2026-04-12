@@ -129,8 +129,8 @@
 
 Adjectives are currently severely underrepresented and drop at each level:
 
-| Level | Current adjectives                               | % of total | Action                                         |
-| ----- | ------------------------------------------------ | ---------- | ---------------------------------------------- |
+| Level | Current adjectives                               | % of total | Action                                          |
+| ----- | ------------------------------------------------ | ---------- | ----------------------------------------------- |
 | A1    | 0 descriptive (47 total = numbers + colors only) | ~0% real   | ⚠️ Add **basic adjectives** category            |
 | A2    | 21 scattered                                     | 8.5%       | ⚠️ Add **descriptive adjectives** category      |
 | B1    | 15 scattered                                     | 6.0%       | ⚠️ Add **opinion & degree adjectives** category |

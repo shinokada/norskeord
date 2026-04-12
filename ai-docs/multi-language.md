@@ -10,10 +10,10 @@ Allow users to study Norwegian vocabulary using their native language instead of
 
 | Code      | Name      | Flag |
 | --------- | --------- | ---- |
-| english   | English   | 🇺🇸    |
-| spanish   | Spanish   | 🇪🇸    |
-| ukrainian | Ukrainian | 🇺🇦    |
-| polish    | Polish    | 🇵🇱    |
+| english   | English   | 🇺🇸   |
+| spanish   | Spanish   | 🇪🇸   |
+| ukrainian | Ukrainian | 🇺🇦   |
+| polish    | Polish    | 🇵🇱   |
 
 Add more by extending `LANGUAGES` in `src/lib/types.ts` — no other structural changes needed.
 
@@ -342,7 +342,7 @@ Use this prompt to generate the new fields for each batch of entries:
 
 ## TypeScript Consideration
 
-Accessing `entry[language]` and `entry[\`example_\${language}\`]` dynamically requires type assertions since TypeScript cannot narrow template literal keys at compile time. Rather than scattering these assertions across components, use the `getTranslation` and `getExampleTranslation` helpers defined in `src/lib/types.ts` (see section 1 above). This centralises all assertions in one place and keeps component code clean.
+Accessing `entry[language]` and `entry[\`example\_\${language}\`]`dynamically requires type assertions since TypeScript cannot narrow template literal keys at compile time. Rather than scattering these assertions across components, use the`getTranslation`and`getExampleTranslation`helpers defined in`src/lib/types.ts` (see section 1 above). This centralises all assertions in one place and keeps component code clean.
 
 ---
 

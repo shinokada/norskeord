@@ -6,7 +6,9 @@
 		NavUl,
 		NavHamburger,
 		DarkMode,
-		MegaMenu, Dropdown, DropdownItem
+		MegaMenu,
+		Dropdown,
+		DropdownItem
 	} from 'flowbite-svelte';
 	import No from '$lib/No.svelte';
 	import { page } from '$app/state';
@@ -64,27 +66,27 @@
 		class="order-2 lg:order-1"
 		classes={{ active: activeClass, nonActive: nonActiveClass, ul: 'p-0' }}
 	>
-		{#each menus as { level, items }}
+		{#each menus as { level, items } (level)}
 			<NavLi class="cursor-pointer">
 				{level}
 				<ChevronDownOutline size="sm" class="ms-1 inline" />
 			</NavLi>
 
 			<MegaMenu {items} ulClass="!gap-x-8">
-			{#snippet children({ item })}
-				<a href={item.href} class={linkClass}>
-					{item.name}
-				</a>
-			{/snippet}
-		</MegaMenu>
+				{#snippet children({ item })}
+					<a href={item.href} class={linkClass}>
+						{item.name}
+					</a>
+				{/snippet}
+			</MegaMenu>
 		{/each}
 
 		<NavLi class="cursor-pointer">
-      More<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
-    </NavLi>
-    <Dropdown simple class="w-44">
-      <DropdownItem href="/about">About</DropdownItem>
-      <DropdownItem href="/resources">Resources</DropdownItem>
-    </Dropdown>
+			More<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
+		</NavLi>
+		<Dropdown simple class="w-44">
+			<DropdownItem href="/about">About</DropdownItem>
+			<DropdownItem href="/resources">Resources</DropdownItem>
+		</Dropdown>
 	</NavUl>
 </Navbar>

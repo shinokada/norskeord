@@ -31,7 +31,7 @@ test('home page has category links for A1', async ({ page }) => {
 test('A1 greetings flashcard page loads and shows title', async ({ page }) => {
 	await page.goto('/a1/greetings');
 	await expect(page.getByRole('heading', { level: 1 })).toContainText('A1');
-	await expect(page.getByRole('heading', { level: 1 })).toContainText('greetings');
+	await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå A1 — Greetings');
 });
 
 test('A1 greetings page has mode toggle buttons', async ({ page }) => {
@@ -43,16 +43,16 @@ test('A1 greetings page has mode toggle buttons', async ({ page }) => {
 test('B1 travel flashcard page loads', async ({ page }) => {
 	await page.goto('/b1/travel');
 	await expect(page.getByRole('heading', { level: 1 })).toContainText('B1');
-	await expect(page.getByRole('heading', { level: 1 })).toContainText('travel');
+	await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå B1 — Travel');
 });
 
 test('C1 philosophy flashcard page loads', async ({ page }) => {
 	await page.goto('/c1/philosophy');
 	await expect(page.getByRole('heading', { level: 1 })).toContainText('C1');
-	await expect(page.getByRole('heading', { level: 1 })).toContainText('philosophy');
+	await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå C1 — Philosophy');
 });
 
 test('about page has expected h1', async ({ page }) => {
 	await page.goto('/about');
-	await expect(page.getByRole('heading', { level: 1 })).toHaveText('About');
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText('ABOUT');
 });
