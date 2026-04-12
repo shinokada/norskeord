@@ -2856,9 +2856,9 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "en oppusning",
+		"norsk": "en oppussing",
 		"english": "a renovation / a refurbishment",
-		"example": "Kjøkkenet trenger oppusning.",
+		"example": "Kjøkkenet trenger oppussing.",
 		"example_english": "The kitchen needs renovation.",
 		"level": "B1",
 		"category": "housing-renting",
@@ -2910,7 +2910,7 @@
 		"part": "adjective"
 	},
 	{
-		"norsk": "et etasje",
+		"norsk": "en etasje",
 		"english": "a floor / a storey",
 		"example": "Vi bor på tredje etasje.",
 		"example_english": "We live on the third floor.",
@@ -3265,7 +3265,7 @@
 	{
 		"norsk": "å heve penger",
 		"english": "to withdraw money",
-		"example": "Jeg skal heve penger i minibankben.",
+		"example": "Jeg skal heve penger i minibanken.",
 		"example_english": "I need to withdraw money from the ATM.",
 		"level": "B1",
 		"category": "finance-banking",
@@ -3335,7 +3335,7 @@
 		"part": "verb"
 	},
 	{
-		"norsk": "et kontoutskrift",
+		"norsk": "en kontoutskrift",
 		"english": "a bank statement",
 		"example": "Jeg fikk kontoutskriften på e-post.",
 		"example_english": "I received the bank statement by email.",

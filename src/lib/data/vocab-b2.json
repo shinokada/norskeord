@@ -2702,7 +2702,7 @@
 		"part": "phrase"
 	},
 	{
-		"norsk": "en kontradiksjoner",
+		"norsk": "en kontradiksjon",
 		"english": "a contradiction",
 		"example": "Det er en indre kontradiksjon i argumentet.",
 		"example_english": "There is an internal contradiction in the argument.",
@@ -3462,7 +3462,7 @@
 		"part": "noun"
 	},
 	{
-		"norsk": "et bønn",
+		"norsk": "en bønn",
 		"english": "a prayer",
 		"example": "Hun ba sin kveldsbønn.",
 		"example_english": "She said her evening prayer.",

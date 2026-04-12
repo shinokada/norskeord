@@ -36,7 +36,7 @@
 ### New categories
 
 - [x] **descriptive adjectives** — Appearance, personality, quantity: _pen, stygg, snill, streng, mange, få, nok, tung, lett, ren, skitten_
-- [x] **cooking** — Kitchen verbs and utensils, distinct from A1 food (ingredients): _å steke, å koke, å bake, en gryte, en stekepanne, en ovn, en kniv, et oppskrift_
+- [x] **cooking** — Kitchen verbs and utensils, distinct from A1 food (ingredients): _å steke, å koke, å bake, en gryte, en stekepanne, en ovn, en kniv, en oppskrift_
 - [x] **nature** — Landscape and outdoors, very relevant for Norway: _en skog, et fjell, en elv, en sjø, et tre, en blomst, en strand, et felt_
 - [x] **house chores** — Daily routines: _å vaske, å støvsuge, å rydde, å lage mat, å handle, å kaste søppel_
 - [x] **communication** — Phone, email, messaging basics: _å ringe, å sende, en melding, en e-post, et svar, å snakke, å skrive_
@@ -51,7 +51,7 @@
 
 - [x] **opinion & degree adjectives** — Expressing nuance and stance: _viktig, nødvendig, mulig, umulig, sannsynlig, overraskende, fornøyd, skuffet, enig, uenig_
 - [x] **food & cooking (advanced)** — Restaurant language, recipes, cuisine: _en rett, en meny, å bestille, å anbefale, krydder, en ingrediens, vegetarisk, allergisk_
-- [x] **housing & renting** — Leases, neighbourhoods, moving: _å leie, en utleier, en leietaker, et husleie, å flytte inn, å flytte ut, en nabo, et nabolag_
+- [x] **housing & renting** — Leases, neighbourhoods, moving: _å leie, en utleier, en leietaker, en husleie, å flytte inn, å flytte ut, en nabo, et nabolag_
 - [x] **health & body (intermediate)** — Doctor visits, symptoms, lifestyle (beyond A2 health-basic): _en resept, et sykehus, en lege, å trene, et symptom, en allergi, å undersøke_
 - [x] **finance & banking** — Budgeting and transactions: _en konto, å spare, et lån, en regning, å betale, en rente, et budsjett, en skatt_
 
