@@ -1353,5 +1353,335 @@
 		"level": "C2",
 		"category": "nuanced-distinctions",
 		"part": "phrase"
+	},
+
+	{
+		"norsk": "en jurisdiksjon",
+		"english": "a jurisdiction",
+		"example": "Saken faller utenfor norsk jurisdiksjon.",
+		"example_english": "The case falls outside Norwegian jurisdiction.",
+		"level": "C2",
+		"category": "advanced-law-justice",
+		"part": "noun"
+	},
+	{
+		"norsk": "å anke",
+		"english": "to appeal (a verdict)",
+		"example": "Forsvareren besluttet å anke dommen.",
+		"example_english": "The defence decided to appeal the verdict.",
+		"level": "C2",
+		"category": "advanced-law-justice",
+		"part": "verb"
+	},
+	{
+		"norsk": "rettspraksis",
+		"english": "case law / legal precedent",
+		"example": "Rettpraksis tilsier et mildere straffenivå.",
+		"example_english": "Case law suggests a more lenient level of punishment.",
+		"level": "C2",
+		"category": "advanced-law-justice",
+		"part": "noun"
+	},
+	{
+		"norsk": "straffrihet",
+		"english": "impunity",
+		"example": "Straffrihet undergraver rettsstaten.",
+		"example_english": "Impunity undermines the rule of law.",
+		"level": "C2",
+		"category": "advanced-law-justice",
+		"part": "noun"
+	},
+	{
+		"norsk": "prejudikat",
+		"english": "precedent (binding)",
+		"example": "Høyesteretts prejudikat veileder lavere domstoler.",
+		"example_english": "The Supreme Court's precedent guides lower courts.",
+		"level": "C2",
+		"category": "advanced-law-justice",
+		"part": "noun"
+	},
+	{
+		"norsk": "habilitet",
+		"english": "impartiality / legal competence",
+		"example": "Dommerens habilitet ble vurdert før saken startet.",
+		"example_english": "The judge's impartiality was assessed before the case began.",
+		"level": "C2",
+		"category": "advanced-law-justice",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en synapse",
+		"english": "a synapse",
+		"example": "Læring styrker forbindelser mellom synapser.",
+		"example_english": "Learning strengthens connections between synapses.",
+		"level": "C2",
+		"category": "neuroscience-cognition",
+		"part": "noun"
+	},
+	{
+		"norsk": "et nevron",
+		"english": "a neuron",
+		"example": "Hjernen inneholder milliarder av nevroner.",
+		"example_english": "The brain contains billions of neurons.",
+		"level": "C2",
+		"category": "neuroscience-cognition",
+		"part": "noun"
+	},
+	{
+		"norsk": "nevroplastisitet",
+		"english": "neuroplasticity",
+		"example": "Nevroplastisitet gjør at hjernen kan omorganisere seg.",
+		"example_english": "Neuroplasticity allows the brain to reorganise itself.",
+		"level": "C2",
+		"category": "neuroscience-cognition",
+		"part": "noun"
+	},
+	{
+		"norsk": "prefrontal",
+		"english": "prefrontal (cortex)",
+		"example": "Prefrontal aktivitet henger sammen med beslutningstaking.",
+		"example_english": "Prefrontal activity is linked to decision-making.",
+		"level": "C2",
+		"category": "neuroscience-cognition",
+		"part": "adjective"
+	},
+	{
+		"norsk": "hippocampus",
+		"english": "hippocampus",
+		"example": "Hippocampus spiller en nøkkelrolle i hukommelse.",
+		"example_english": "The hippocampus plays a key role in memory.",
+		"level": "C2",
+		"category": "neuroscience-cognition",
+		"part": "noun"
+	},
+	{
+		"norsk": "EEG",
+		"english": "EEG (electroencephalogram)",
+		"example": "EEG måler elektrisk aktivitet i hjernen.",
+		"example_english": "EEG measures electrical activity in the brain.",
+		"level": "C2",
+		"category": "neuroscience-cognition",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "karbonnøytral",
+		"english": "carbon neutral",
+		"example": "Byen har som mål å bli karbonnøytral innen 2035.",
+		"example_english": "The city aims to be carbon neutral by 2035.",
+		"level": "C2",
+		"category": "climate-environment-policy",
+		"part": "adjective"
+	},
+	{
+		"norsk": "et klimabudsjett",
+		"english": "a climate budget",
+		"example": "Klimabudsjettet viser utslippsbanen fram mot 2030.",
+		"example_english": "The climate budget shows the emission pathway toward 2030.",
+		"level": "C2",
+		"category": "climate-environment-policy",
+		"part": "noun"
+	},
+	{
+		"norsk": "biodiversitet",
+		"english": "biodiversity",
+		"example": "Biodiversitet er avgjørende for robuste økosystemer.",
+		"example_english": "Biodiversity is crucial for resilient ecosystems.",
+		"level": "C2",
+		"category": "climate-environment-policy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en utslippskvote",
+		"english": "an emissions allowance",
+		"example": "Bedriften kjøpte ekstra utslippskvoter.",
+		"example_english": "The company bought additional emissions allowances.",
+		"level": "C2",
+		"category": "climate-environment-policy",
+		"part": "noun"
+	},
+	{
+		"norsk": "karbonfangst",
+		"english": "carbon capture",
+		"example": "Karbonfangst kan redusere industriens utslipp betydelig.",
+		"example_english": "Carbon capture can significantly reduce industrial emissions.",
+		"level": "C2",
+		"category": "climate-environment-policy",
+		"part": "noun"
+	},
+	{
+		"norsk": "sirkulær økonomi",
+		"english": "circular economy",
+		"example": "Sirkulær økonomi fremmer gjenbruk av ressurser.",
+		"example_english": "The circular economy promotes reuse of resources.",
+		"level": "C2",
+		"category": "climate-environment-policy",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "sosial mobilitet",
+		"english": "social mobility",
+		"example": "Sosial mobilitet er lavere i samfunn med store ulikheter.",
+		"example_english": "Social mobility is lower in societies with large inequalities.",
+		"level": "C2",
+		"category": "sociology-anthropology",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et paradigme",
+		"english": "a paradigm",
+		"example": "Et paradigmeskifte kan endre forskningsfeltet totalt.",
+		"example_english": "A paradigm shift can change the research field entirely.",
+		"level": "C2",
+		"category": "sociology-anthropology",
+		"part": "noun"
+	},
+	{
+		"norsk": "å assimilere",
+		"english": "to assimilate",
+		"example": "Mange innvandrere ønsker å assimilere delvis, ikke fullt ut.",
+		"example_english": "Many immigrants wish to assimilate partially, not fully.",
+		"level": "C2",
+		"category": "sociology-anthropology",
+		"part": "verb"
+	},
+	{
+		"norsk": "habitus",
+		"english": "habitus (Bourdieu)",
+		"example": "Habitus former våre preferanser og handlinger.",
+		"example_english": "Habitus shapes our preferences and actions.",
+		"level": "C2",
+		"category": "sociology-anthropology",
+		"part": "noun"
+	},
+	{
+		"norsk": "kulturarv",
+		"english": "cultural heritage",
+		"example": "Kulturarv bevares gjennom museer og tradisjoner.",
+		"example_english": "Cultural heritage is preserved through museums and traditions.",
+		"level": "C2",
+		"category": "sociology-anthropology",
+		"part": "noun"
+	},
+	{
+		"norsk": "etnografi",
+		"english": "ethnography",
+		"example": "Etnografi innebærer feltarbeid og observasjon.",
+		"example_english": "Ethnography involves fieldwork and observation.",
+		"level": "C2",
+		"category": "sociology-anthropology",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en diversifisering",
+		"english": "diversification",
+		"example": "Diversifisering reduserer risikoen i porteføljen.",
+		"example_english": "Diversification reduces risk in the portfolio.",
+		"level": "C2",
+		"category": "advanced-business-strategy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en markedsandel",
+		"english": "a market share",
+		"example": "Selskapet økte markedsandelen i fjor.",
+		"example_english": "The company increased its market share last year.",
+		"level": "C2",
+		"category": "advanced-business-strategy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en portefølje",
+		"english": "a portfolio",
+		"example": "Porteføljen skal balanseres mellom risiko og avkastning.",
+		"example_english": "The portfolio should balance risk and return.",
+		"level": "C2",
+		"category": "advanced-business-strategy",
+		"part": "noun"
+	},
+	{
+		"norsk": "et oppkjøp",
+		"english": "an acquisition",
+		"example": "Oppkjøpet styrker selskapets posisjon i markedet.",
+		"example_english": "The acquisition strengthens the company's position in the market.",
+		"level": "C2",
+		"category": "advanced-business-strategy",
+		"part": "noun"
+	},
+	{
+		"norsk": "å børsnotere",
+		"english": "to list on the stock exchange",
+		"example": "De planlegger å børsnotere selskapet neste år.",
+		"example_english": "They plan to list the company on the stock exchange next year.",
+		"level": "C2",
+		"category": "advanced-business-strategy",
+		"part": "verb"
+	},
+	{
+		"norsk": "et konkurransefortrinn",
+		"english": "a competitive advantage",
+		"example": "Innovasjon gir et langsiktig konkurransefortrinn.",
+		"example_english": "Innovation provides a long-term competitive advantage.",
+		"level": "C2",
+		"category": "advanced-business-strategy",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "tomhet",
+		"english": "emptiness / void",
+		"example": "Han beskrev en følelse av eksistensiell tomhet.",
+		"example_english": "He described a feeling of existential emptiness.",
+		"level": "C2",
+		"category": "existential-abstract",
+		"part": "noun"
+	},
+	{
+		"norsk": "det sublime",
+		"english": "the sublime",
+		"example": "Fjellene ga henne en opplevelse av det sublime.",
+		"example_english": "The mountains gave her an experience of the sublime.",
+		"level": "C2",
+		"category": "existential-abstract",
+		"part": "noun"
+	},
+	{
+		"norsk": "forgjengelighet",
+		"english": "impermanence / transience",
+		"example": "Kunstverket tematiserer livets forgjengelighet.",
+		"example_english": "The artwork explores life's impermanence.",
+		"level": "C2",
+		"category": "existential-abstract",
+		"part": "noun"
+	},
+	{
+		"norsk": "å transcendere",
+		"english": "to transcend",
+		"example": "Meditasjon kan hjelpe oss å transcendere egoet.",
+		"example_english": "Meditation can help us transcend the ego.",
+		"level": "C2",
+		"category": "existential-abstract",
+		"part": "verb"
+	},
+	{
+		"norsk": "eksistens",
+		"english": "existence",
+		"example": "Filosofen grublet over eksistens og mening.",
+		"example_english": "The philosopher pondered existence and meaning.",
+		"level": "C2",
+		"category": "existential-abstract",
+		"part": "noun"
+	},
+	{
+		"norsk": "en identitet",
+		"english": "an identity",
+		"example": "Identitet kan være både valgt og pålagt.",
+		"example_english": "Identity can be both chosen and imposed.",
+		"level": "C2",
+		"category": "existential-abstract",
+		"part": "noun"
 	}
 ]

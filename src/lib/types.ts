@@ -91,9 +91,30 @@ export const CATEGORIES_BY_LEVEL = {
 		'rhetoric',
 		'complex-emotions',
 		'professional',
-		'abstract-concepts'
+		'abstract-concepts',
+		'politics-democracy',
+		'linguistics',
+		'media-journalism',
+		'architecture-design',
+		'diplomacy-international',
+		'finance-economics',
+		'medicine-healthcare',
+		'psychology-advanced'
 	],
-	C2: ['literary', 'archaic', 'proverbs', 'highly-formal', 'technical', 'nuanced-distinctions']
+	C2: [
+		'literary',
+		'archaic',
+		'proverbs',
+		'highly-formal',
+		'technical',
+		'nuanced-distinctions',
+		'advanced-law-justice',
+		'neuroscience-cognition',
+		'climate-environment-policy',
+		'sociology-anthropology',
+		'advanced-business-strategy',
+		'existential-abstract'
+	]
 } as const;
 
 export type Category = (typeof CATEGORIES_BY_LEVEL)[CEFRLevel][number];
