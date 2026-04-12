@@ -11,13 +11,13 @@ Each vocabulary entry is AI-generated and stored as JSON.
 
 ```json
 {
-	"norsk": "en flyplassen",
-	"english": "the airport",
-	"example": "Vi møttes på flyplassen tidlig om morgenen.",
-	"example_english": "We met at the airport early in the morning.",
-	"level": "B1",
-	"category": "travel",
-	"part": "noun"
+  "norsk": "en flyplassen",
+  "english": "the airport",
+  "example": "Vi møttes på flyplassen tidlig om morgenen.",
+  "example_english": "We met at the airport early in the morning.",
+  "level": "B1",
+  "category": "travel",
+  "part": "noun"
 }
 ```
 
