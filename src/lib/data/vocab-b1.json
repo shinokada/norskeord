@@ -2257,5 +2257,1135 @@
 		"level": "B1",
 		"category": "traditions",
 		"part": "noun"
+	},
+
+	{
+		"norsk": "viktig",
+		"english": "important",
+		"example": "Det er viktig å lytte til andre.",
+		"example_english": "It is important to listen to others.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "nødvendig",
+		"english": "necessary",
+		"example": "Det er nødvendig å ha forsikring.",
+		"example_english": "It is necessary to have insurance.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "mulig",
+		"english": "possible",
+		"example": "Er det mulig å endre avtalen?",
+		"example_english": "Is it possible to change the appointment?",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "umulig",
+		"english": "impossible",
+		"example": "Det er umulig å spå fremtiden.",
+		"example_english": "It is impossible to predict the future.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "sannsynlig",
+		"english": "likely / probable",
+		"example": "Det er sannsynlig at det regner i morgen.",
+		"example_english": "It is likely to rain tomorrow.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "usannsynlig",
+		"english": "unlikely / improbable",
+		"example": "Det er usannsynlig at de vinner.",
+		"example_english": "It is unlikely that they will win.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "overraskende",
+		"english": "surprising",
+		"example": "Resultatet var overraskende.",
+		"example_english": "The result was surprising.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "fornøyd",
+		"english": "satisfied / pleased",
+		"example": "Jeg er fornøyd med resultatet.",
+		"example_english": "I am satisfied with the result.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "skuffet",
+		"english": "disappointed",
+		"example": "Hun var skuffet over karakteren.",
+		"example_english": "She was disappointed with the grade.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "enig",
+		"english": "in agreement / agreed",
+		"example": "Jeg er enig med deg i dette.",
+		"example_english": "I agree with you on this.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "uenig",
+		"english": "in disagreement / disagreeing",
+		"example": "Vi er uenige om den beslutningen.",
+		"example_english": "We disagree on that decision.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "relevant",
+		"english": "relevant",
+		"example": "Erfaring er relevant for stillingen.",
+		"example_english": "Experience is relevant for the position.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "irrelevant",
+		"english": "irrelevant",
+		"example": "Den kommentaren er irrelevant her.",
+		"example_english": "That comment is irrelevant here.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "typisk",
+		"english": "typical",
+		"example": "Det er typisk norsk å spise lunsj tidlig.",
+		"example_english": "It is typically Norwegian to eat lunch early.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "åpenbar",
+		"english": "obvious / evident",
+		"example": "Det er åpenbart at han er forkjølet.",
+		"example_english": "It is obvious that he has a cold.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "komplisert",
+		"english": "complicated",
+		"example": "Situasjonen er mer komplisert enn den ser ut.",
+		"example_english": "The situation is more complicated than it looks.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tydelig",
+		"english": "clear / evident",
+		"example": "Det er tydelig at hun er lei seg.",
+		"example_english": "It is clear that she is sad.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "rimelig",
+		"english": "reasonable / fair",
+		"example": "Det er en rimelig forespørsel.",
+		"example_english": "That is a reasonable request.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "urimelig",
+		"english": "unreasonable",
+		"example": "Kravet deres virker urimelig.",
+		"example_english": "Their demand seems unreasonable.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "omstridt",
+		"english": "controversial",
+		"example": "Loven er svært omstridt.",
+		"example_english": "The law is highly controversial.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "avgjørende",
+		"english": "decisive / crucial",
+		"example": "Det var et avgjørende øyeblikk.",
+		"example_english": "It was a decisive moment.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "bekymrende",
+		"english": "worrying / concerning",
+		"example": "Utviklingen er bekymrende.",
+		"example_english": "The development is concerning.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "oppmuntrende",
+		"english": "encouraging",
+		"example": "Resultatene er oppmuntrende.",
+		"example_english": "The results are encouraging.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "etter min mening",
+		"english": "in my opinion",
+		"example": "Etter min mening er det feil avgjørelse.",
+		"example_english": "In my opinion, it is the wrong decision.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "phrase"
+	},
+	{
+		"norsk": "gjennomtenkt",
+		"english": "considered / well thought-out",
+		"example": "Det var et gjennomtenkt svar.",
+		"example_english": "That was a well thought-out answer.",
+		"level": "B1",
+		"category": "opinion-adjectives",
+		"part": "adjective"
+	},
+
+	{
+		"norsk": "en rett",
+		"english": "a dish / a course",
+		"example": "Hvilken rett anbefaler du?",
+		"example_english": "Which dish do you recommend?",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "en meny",
+		"english": "a menu",
+		"example": "Kan jeg se menyen?",
+		"example_english": "Can I see the menu?",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "å bestille",
+		"english": "to order",
+		"example": "Jeg vil gjerne bestille en hovedrett.",
+		"example_english": "I would like to order a main course.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+	{
+		"norsk": "å anbefale",
+		"english": "to recommend",
+		"example": "Kan du anbefale en god vin til denne retten?",
+		"example_english": "Can you recommend a good wine for this dish?",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+	{
+		"norsk": "et krydder",
+		"english": "a spice / a herb",
+		"example": "Retten har mange eksotiske krydder.",
+		"example_english": "The dish has many exotic spices.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "vegetarisk",
+		"english": "vegetarian",
+		"example": "Har dere vegetariske alternativer?",
+		"example_english": "Do you have vegetarian options?",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "vegansk",
+		"english": "vegan",
+		"example": "Jeg spiser vegansk.",
+		"example_english": "I eat vegan.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "allergisk",
+		"english": "allergic",
+		"example": "Jeg er allergisk mot nøtter.",
+		"example_english": "I am allergic to nuts.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en forrett",
+		"english": "a starter / an appetiser",
+		"example": "Vi bestilte suppe som forrett.",
+		"example_english": "We ordered soup as a starter.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dessert",
+		"english": "a dessert",
+		"example": "Skal vi ta dessert?",
+		"example_english": "Shall we have dessert?",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "å marinere",
+		"english": "to marinate",
+		"example": "Mariner kjøttet i minst to timer.",
+		"example_english": "Marinate the meat for at least two hours.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+	{
+		"norsk": "å grille",
+		"english": "to grill / to barbecue",
+		"example": "Vi griller laks i helgen.",
+		"example_english": "We are grilling salmon at the weekend.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+	{
+		"norsk": "å dampe",
+		"english": "to steam",
+		"example": "Det er sunt å dampe grønnsaker.",
+		"example_english": "It is healthy to steam vegetables.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+	{
+		"norsk": "en oppskrift",
+		"english": "a recipe",
+		"example": "Har du en god oppskrift på lapskaus?",
+		"example_english": "Do you have a good recipe for lapskaus?",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "en porsjon",
+		"english": "a portion / a serving",
+		"example": "En porsjon er nok til to personer.",
+		"example_english": "One portion is enough for two people.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "en deig",
+		"english": "dough / batter",
+		"example": "La deigen heve i en time.",
+		"example_english": "Let the dough rise for one hour.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "å krydre",
+		"english": "to season / to spice",
+		"example": "Krydre suppen etter smak.",
+		"example_english": "Season the soup to taste.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+	{
+		"norsk": "en saus",
+		"english": "a sauce / a gravy",
+		"example": "Brunsaus passer godt til kjøttkaker.",
+		"example_english": "Brown sauce goes well with meatballs.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "et kjøkken",
+		"english": "a cuisine / a kitchen",
+		"example": "Jeg liker italiensk kjøkken.",
+		"example_english": "I like Italian cuisine.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "næringsrik",
+		"english": "nutritious",
+		"example": "Linser er veldig næringsrike.",
+		"example_english": "Lentils are very nutritious.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "fet",
+		"english": "fatty / greasy",
+		"example": "Denne retten er ganske fet.",
+		"example_english": "This dish is quite fatty.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "smakfull",
+		"english": "flavourful / tasty",
+		"example": "Gryteretten var veldig smakfull.",
+		"example_english": "The stew was very flavourful.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "å tilsette",
+		"english": "to add",
+		"example": "Tilsett litt sitron for friskhet.",
+		"example_english": "Add a little lemon for freshness.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+	{
+		"norsk": "rå",
+		"english": "raw",
+		"example": "Noen spiser rå laks i sushi.",
+		"example_english": "Some people eat raw salmon in sushi.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "å servere",
+		"english": "to serve",
+		"example": "Retten serveres varm.",
+		"example_english": "The dish is served warm.",
+		"level": "B1",
+		"category": "food-cooking-advanced",
+		"part": "verb"
+	},
+
+	{
+		"norsk": "å leie",
+		"english": "to rent / to lease",
+		"example": "Vi leier en leilighet i sentrum.",
+		"example_english": "We rent a flat in the city centre.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "verb"
+	},
+	{
+		"norsk": "en utleier",
+		"english": "a landlord / a landlady",
+		"example": "Utleieren svarte ikke på meldingen.",
+		"example_english": "The landlord did not reply to the message.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en leietaker",
+		"english": "a tenant",
+		"example": "Leietakeren betalte husleien for sent.",
+		"example_english": "The tenant paid the rent too late.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en husleie",
+		"english": "rent (monthly payment)",
+		"example": "Husleien øker hvert år.",
+		"example_english": "The rent increases every year.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "å flytte inn",
+		"english": "to move in",
+		"example": "Vi flytter inn i leiligheten på lørdag.",
+		"example_english": "We move into the flat on Saturday.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "phrase"
+	},
+	{
+		"norsk": "å flytte ut",
+		"english": "to move out",
+		"example": "Vi må flytte ut innen utgangen av måneden.",
+		"example_english": "We must move out by the end of the month.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en nabo",
+		"english": "a neighbour",
+		"example": "Naboene er veldig støyende.",
+		"example_english": "The neighbours are very noisy.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "et nabolag",
+		"english": "a neighbourhood",
+		"example": "Vi bor i et trygt nabolag.",
+		"example_english": "We live in a safe neighbourhood.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kontrakt",
+		"english": "a contract",
+		"example": "Les kontrakten nøye før du signerer.",
+		"example_english": "Read the contract carefully before signing.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "et depositum",
+		"english": "a deposit",
+		"example": "Depositumet tilsvarer to måneders husleie.",
+		"example_english": "The deposit equals two months' rent.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en eiendom",
+		"english": "a property",
+		"example": "Han eier flere eiendommer.",
+		"example_english": "He owns several properties.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "å kjøpe bolig",
+		"english": "to buy a home / property",
+		"example": "Vi drømmer om å kjøpe bolig.",
+		"example_english": "We dream of buying a home.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "phrase"
+	},
+	{
+		"norsk": "et borettslag",
+		"english": "a housing cooperative",
+		"example": "Vi kjøpte en andel i et borettslag.",
+		"example_english": "We bought a share in a housing cooperative.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en megler",
+		"english": "an estate agent / a broker",
+		"example": "Megleren viste oss tre leiligheter.",
+		"example_english": "The estate agent showed us three flats.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en visning",
+		"english": "a viewing / an open house",
+		"example": "Vi drar på visning i morgen.",
+		"example_english": "We are going to a viewing tomorrow.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "et boliglån",
+		"english": "a mortgage",
+		"example": "Vi søkte om boliglån i banken.",
+		"example_english": "We applied for a mortgage at the bank.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en oppussing",
+		"english": "a renovation / a refurbishment",
+		"example": "Kjøkkenet trenger oppussing.",
+		"example_english": "The kitchen needs renovation.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hage",
+		"english": "a garden",
+		"example": "Huset har en stor hage.",
+		"example_english": "The house has a large garden.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "et fellesareal",
+		"english": "a communal area",
+		"example": "Fellesarealet deles av alle beboerne.",
+		"example_english": "The communal area is shared by all residents.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "å si opp leiekontrakten",
+		"english": "to give notice / to terminate the lease",
+		"example": "Vi sa opp leiekontrakten med tre måneders varsel.",
+		"example_english": "We gave three months' notice to terminate the lease.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "phrase"
+	},
+	{
+		"norsk": "møblert",
+		"english": "furnished",
+		"example": "Leiligheten er fullt møblert.",
+		"example_english": "The flat is fully furnished.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "adjective"
+	},
+	{
+		"norsk": "umøblert",
+		"english": "unfurnished",
+		"example": "Vi leter etter en umøblert leilighet.",
+		"example_english": "We are looking for an unfurnished flat.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en etasje",
+		"english": "a floor / a storey",
+		"example": "Vi bor på tredje etasje.",
+		"example_english": "We live on the third floor.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en heis",
+		"english": "a lift / an elevator",
+		"example": "Bygningen har ikke heis.",
+		"example_english": "The building does not have a lift.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+	{
+		"norsk": "en balkong",
+		"english": "a balcony",
+		"example": "Leiligheten har en liten balkong.",
+		"example_english": "The flat has a small balcony.",
+		"level": "B1",
+		"category": "housing-renting",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en resept",
+		"english": "a prescription",
+		"example": "Legen skrev ut en resept.",
+		"example_english": "The doctor wrote out a prescription.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "et sykehus",
+		"english": "a hospital",
+		"example": "Han ble innlagt på sykehuset.",
+		"example_english": "He was admitted to hospital.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en lege",
+		"english": "a doctor / a GP",
+		"example": "Jeg bestilte time hos fastlegen.",
+		"example_english": "I booked an appointment with my GP.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "å trene",
+		"english": "to exercise / to work out",
+		"example": "Det er viktig å trene regelmessig.",
+		"example_english": "It is important to exercise regularly.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "verb"
+	},
+	{
+		"norsk": "et symptom",
+		"english": "a symptom",
+		"example": "Hva er symptomene på influensa?",
+		"example_english": "What are the symptoms of the flu?",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en allergi",
+		"english": "an allergy",
+		"example": "Hun har alvorlig allergi mot peanøtter.",
+		"example_english": "She has a severe allergy to peanuts.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "å undersøke",
+		"english": "to examine / to investigate",
+		"example": "Legen undersøkte pasienten grundig.",
+		"example_english": "The doctor examined the patient thoroughly.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "verb"
+	},
+	{
+		"norsk": "en diagnose",
+		"english": "a diagnosis",
+		"example": "Legen stilte en diagnose.",
+		"example_english": "The doctor made a diagnosis.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en behandling",
+		"english": "a treatment",
+		"example": "Behandlingen varer i seks uker.",
+		"example_english": "The treatment lasts six weeks.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en blodprøve",
+		"english": "a blood test",
+		"example": "Legen tok en blodprøve.",
+		"example_english": "The doctor took a blood test.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en røntgen",
+		"english": "an X-ray",
+		"example": "De tok røntgen av kneet hennes.",
+		"example_english": "They took an X-ray of her knee.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en spesialist",
+		"english": "a specialist",
+		"example": "Hun ble henvist til en spesialist.",
+		"example_english": "She was referred to a specialist.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "mental helse",
+		"english": "mental health",
+		"example": "Mental helse er like viktig som fysisk helse.",
+		"example_english": "Mental health is as important as physical health.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "phrase"
+	},
+	{
+		"norsk": "stress",
+		"english": "stress",
+		"example": "Kronisk stress er skadelig for kroppen.",
+		"example_english": "Chronic stress is harmful to the body.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "å forebygge",
+		"english": "to prevent",
+		"example": "Vaksinasjon forebygger alvorlige sykdommer.",
+		"example_english": "Vaccination prevents serious diseases.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "verb"
+	},
+	{
+		"norsk": "en livsstil",
+		"english": "a lifestyle",
+		"example": "En sunn livsstil er viktig for helsen.",
+		"example_english": "A healthy lifestyle is important for health.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "kronisk",
+		"english": "chronic",
+		"example": "Han lider av kroniske ryggsmerter.",
+		"example_english": "He suffers from chronic back pain.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "adjective"
+	},
+	{
+		"norsk": "akutt",
+		"english": "acute / urgent",
+		"example": "Han hadde akutte brystsmerter.",
+		"example_english": "He had acute chest pains.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en rehabilitering",
+		"english": "rehabilitation / rehab",
+		"example": "Han er i rehabilitering etter operasjonen.",
+		"example_english": "He is in rehabilitation after the operation.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en ernæring",
+		"english": "nutrition",
+		"example": "God ernæring er grunnlaget for helse.",
+		"example_english": "Good nutrition is the foundation of health.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bivirkning",
+		"english": "a side effect",
+		"example": "Medisinen har noen bivirkninger.",
+		"example_english": "The medicine has some side effects.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "et legekontor",
+		"english": "a doctor's surgery / a clinic",
+		"example": "Legekontoret er stengt på søndager.",
+		"example_english": "The doctor's surgery is closed on Sundays.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+	{
+		"norsk": "å bli frisk",
+		"english": "to recover / to get better",
+		"example": "Hun ble frisk etter to uker.",
+		"example_english": "She recovered after two weeks.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "phrase"
+	},
+	{
+		"norsk": "smertestillende",
+		"english": "painkiller / pain-relieving",
+		"example": "Han tok smertestillende tabletter.",
+		"example_english": "He took painkilling tablets.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en fastlege",
+		"english": "a GP / a regular doctor",
+		"example": "Alle i Norge har rett til en fastlege.",
+		"example_english": "Everyone in Norway is entitled to a GP.",
+		"level": "B1",
+		"category": "health-body-intermediate",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en konto",
+		"english": "an account",
+		"example": "Jeg sjekker kontoen min på nettet.",
+		"example_english": "I check my account online.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "å spare",
+		"english": "to save (money)",
+		"example": "Vi sparer til en ny bil.",
+		"example_english": "We are saving for a new car.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "verb"
+	},
+	{
+		"norsk": "et lån",
+		"english": "a loan",
+		"example": "Vi søkte om et lån i banken.",
+		"example_english": "We applied for a loan at the bank.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "en regning",
+		"english": "a bill",
+		"example": "Regningen forfaller neste uke.",
+		"example_english": "The bill is due next week.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "å betale",
+		"english": "to pay",
+		"example": "Jeg betaler alltid regningene i tide.",
+		"example_english": "I always pay the bills on time.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "verb"
+	},
+	{
+		"norsk": "en rente",
+		"english": "an interest rate",
+		"example": "Renten på boliglånet har økt.",
+		"example_english": "The interest rate on the mortgage has risen.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "et budsjett",
+		"english": "a budget",
+		"example": "Vi lager et månedlig budsjett.",
+		"example_english": "We make a monthly budget.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "en skatt",
+		"english": "a tax",
+		"example": "Skatten i Norge er relativt høy.",
+		"example_english": "Tax in Norway is relatively high.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "en bankkonto",
+		"english": "a bank account",
+		"example": "Åpne en bankkonto i Norge.",
+		"example_english": "Open a bank account in Norway.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "en overføring",
+		"english": "a transfer",
+		"example": "Jeg sender en overføring på 500 kroner.",
+		"example_english": "I am sending a transfer of 500 kroner.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "en minibank",
+		"english": "an ATM / a cash machine",
+		"example": "Er det en minibank i nærheten?",
+		"example_english": "Is there an ATM nearby?",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "å heve penger",
+		"english": "to withdraw money",
+		"example": "Jeg skal heve penger i minibanken.",
+		"example_english": "I need to withdraw money from the ATM.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en gjeld",
+		"english": "a debt",
+		"example": "Hun jobber hardt for å betale gjelden.",
+		"example_english": "She works hard to pay off her debt.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "en inntekt",
+		"english": "an income",
+		"example": "Inntekten dekker knapt utgiftene.",
+		"example_english": "The income barely covers the expenses.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "en utgift",
+		"english": "an expense / an expenditure",
+		"example": "Vi prøver å kutte ned på utgiftene.",
+		"example_english": "We are trying to cut down on expenses.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "å investere",
+		"english": "to invest",
+		"example": "Hun investerer i aksjer.",
+		"example_english": "She invests in shares.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "verb"
+	},
+	{
+		"norsk": "en aksje",
+		"english": "a share / a stock",
+		"example": "Han kjøpte aksjer i et norsk selskap.",
+		"example_english": "He bought shares in a Norwegian company.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "forsikring",
+		"english": "insurance",
+		"example": "Tegn innboforsikring når du leier bolig.",
+		"example_english": "Take out contents insurance when you rent a home.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "å nedbetale",
+		"english": "to pay off / to repay",
+		"example": "Vi nedbetaler lånet over 20 år.",
+		"example_english": "We repay the loan over 20 years.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "verb"
+	},
+	{
+		"norsk": "en kontoutskrift",
+		"english": "a bank statement",
+		"example": "Jeg fikk kontoutskriften på e-post.",
+		"example_english": "I received the bank statement by email.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "valuta",
+		"english": "currency / foreign exchange",
+		"example": "Kursen på valuta svinger daglig.",
+		"example_english": "The currency exchange rate fluctuates daily.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "å gå i balanse",
+		"english": "to break even",
+		"example": "Bedriften gikk akkurat i balanse i fjor.",
+		"example_english": "The company just broke even last year.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "phrase"
+	},
+	{
+		"norsk": "inflasjon",
+		"english": "inflation",
+		"example": "Inflasjonen gjør dagligvarer dyrere.",
+		"example_english": "Inflation makes groceries more expensive.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "økonomi",
+		"english": "economy / finances",
+		"example": "Den norske økonomien er sterk.",
+		"example_english": "The Norwegian economy is strong.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "noun"
+	},
+	{
+		"norsk": "å bruke penger",
+		"english": "to spend money",
+		"example": "Han bruker for mye penger på mat ute.",
+		"example_english": "He spends too much money eating out.",
+		"level": "B1",
+		"category": "finance-banking",
+		"part": "phrase"
 	}
 ]
