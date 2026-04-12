@@ -74,7 +74,7 @@
 
 ## C1 — Advanced _(new level — vocab-c1.json)_
 
-Implemented categories from `src/lib/data/vocab-c1.json` (7 total):
+Implemented categories from `src/lib/data/vocab-c1.json` (15 total):
 
 ### Implemented categories
 
@@ -114,12 +114,12 @@ Implemented categories from `src/lib/data/vocab-c2.json` (6 total):
 
 ### Planned new categories (add to vocab-c2.json)
 
-- [ ] **advanced law & justice** — _jurisdiksjon, å anke, rettspraksis, straffrihet, prejudikat, dissens, habilitet_
-- [ ] **neuroscience & cognition** — _synapse, nevron, kognitiv belastning, nevroplastisitet, prefrontal, hippocampus, EEG_
-- [ ] **climate & environmental policy** — _karbonnøytral, klimabudsjett, biodiversitet, utslippskvote, tilpasning, karbonfangst, sirkulær økonomi_
-- [ ] **sociology & anthropology** — _sosial mobilitet, paradigme, assimilere, struktur, kulturarv, habitus, etnografi_
-- [ ] **advanced business & strategy** — _fusjon, diversifisere, markedsandel, portefølje, oppkjøp, børsnotere, konkurransefortrinn_
-- [ ] **existential & abstract concepts** — _tomhet, det sublime, forgjengelighet, å transcendere, mening, eksistens, identitet_
+- [x] **advanced law & justice** — _jurisdiksjon, å anke, rettspraksis, straffrihet, prejudikat, dissens, habilitet_
+- [x] **neuroscience & cognition** — _synapse, nevron, kognitiv belastning, nevroplastisitet, prefrontal, hippocampus, EEG_
+- [x] **climate & environmental policy** — _karbonnøytral, klimabudsjett, biodiversitet, utslippskvote, tilpasning, karbonfangst, sirkulær økonomi_
+- [x] **sociology & anthropology** — _sosial mobilitet, paradigme, assimilere, struktur, kulturarv, habitus, etnografi_
+- [x] **advanced business & strategy** — _fusjon, diversifisere, markedsandel, portefølje, oppkjøp, børsnotere, konkurransefortrinn_
+- [x] **existential & abstract concepts** — _tomhet, det sublime, forgjengelighet, å transcendere, mening, eksistens, identitet_
 
 ---
 
