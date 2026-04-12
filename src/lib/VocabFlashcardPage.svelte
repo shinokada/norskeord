@@ -125,7 +125,9 @@
     current
       ? mode === 'noreng'
         ? (current.entry.example_english ?? '')
-        : current.entry.example
+        : current.entry.example_english
+          ? current.entry.example
+          : ''
       : ''
   );
 

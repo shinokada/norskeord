@@ -16,8 +16,8 @@
     color = 'currentColor',
     variation = 'outline',
     viewBox = '0 0 24 24',
-    strokeWidth = '0 0 24 24',
-    ariaLabel = 'arrow left',
+    strokeWidth = '1.5',
+    ariaLabel = 'arrow right',
     class: classname = '',
     ...attributes
   }: CtxType = $props();

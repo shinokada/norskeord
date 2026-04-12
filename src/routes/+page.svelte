@@ -29,7 +29,8 @@
     { id: 'C2', label: 'C2 — Mastery', color: 'pink' }
   ] as const;
 
-  const badgeColors: Record<string, string> = {
+  type BadgeColor = 'green' | 'teal' | 'blue' | 'indigo' | 'purple' | 'pink';
+  const badgeColors: Record<BadgeColor, string> = {
     green: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
     teal: 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200',
     blue: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
