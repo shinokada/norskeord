@@ -63,50 +63,63 @@
 
 ### New categories
 
-- [ ] **advanced adjectives** — Abstract, formal, academic register: _tvetydig, paradoksal, inngående, omfattende, nyansert, uunngåelig, gjennomgripende_
-- [ ] **philosophy** — Arguments, ethics, abstract concepts: _et argument, en verdi, å reflektere, et dilemma, en norm, å rettferdiggjøre, frihet_
-- [ ] **medicine & health (advanced)** — Clinical and public health: _en diagnose, en behandling, forebygging, kronisk, folkehelse, en pasient, et symptom_
-- [ ] **psychology** — Behaviour and mental health discourse: _bevissthet, et traume, å bearbeide, en terapeut, kognitiv, atferd, en reaksjon_
-- [ ] **business & management** — Corporate vocabulary: _en strategi, å forhandle, en bedrift, et møte, en leder, et prosjekt, en avtale_
-- [ ] **religion & belief** — Secular and religious cultural literacy: _en tro, et ritual, å tilbe, en kirke, en moske, hellig, en tradisjon_
+- [x] **advanced adjectives** — Abstract, formal, academic register: _tvetydig, paradoksal, inngående, omfattende, nyansert, uunngåelig, gjennomgripende_
+- [x] **philosophy** — Arguments, ethics, abstract concepts: _et argument, en verdi, å reflektere, et dilemma, en norm, å rettferdiggjøre, frihet_
+- [x] **medicine & health (advanced)** — Clinical and public health: _en diagnose, en behandling, forebygging, kronisk, folkehelse, en pasient, et symptom_
+- [x] **psychology** — Behaviour and mental health discourse: _bevissthet, et traume, å bearbeide, en terapeut, kognitiv, atferd, en reaksjon_
+- [x] **business & management** — Corporate vocabulary: _en strategi, å forhandle, en bedrift, et møte, en leder, et prosjekt, en avtale_
+- [x] **religion & belief** — Secular and religious cultural literacy: _en tro, et ritual, å tilbe, en kirke, en moske, hellig, en tradisjon_
 
 ---
 
 ## C1 — Advanced _(new level — vocab-c1.json)_
 
-> C1 learners express themselves fluently on complex, academic, and professional topics.
+Implemented categories from `src/lib/data/vocab-c1.json` (15 total):
 
-### New categories
+### Implemented categories
 
-- [ ] **academic writing** — _et argument, en hypotese, å drøfte, en konklusjon, et perspektiv, å analysere, en kilde, et sammendrag_
-- [ ] **politics & democracy (advanced)** — Nuanced political terms beyond B2: _et lovforslag, å ratifisere, en valgkrets, et flertall, en opposisjon, å debattere_
-- [ ] **philosophy & ethics** — _et dilemma, en norm, å rettferdiggjøre, en verdi, frihet, rettferdighet, en konsekvens_
-- [ ] **linguistics & language** — _et morsmål, en dialekt, å oversette, tospråklig, et uttrykk, grammatikk, en aksent_
-- [ ] **media & journalism (advanced)** — _en redaktør, å sensurere, en kilde, troverdighet, en agenda, et intervju, å publisere_
-- [ ] **architecture & design** — _et bygg, en fasade, bærekraftig, et monument, å restaurere, en arkitekt, et rom_
-- [ ] **psychology (advanced)** — _bevissthet, et traume, å bearbeide, en terapeut, kognitiv, en personlighet, en mekanisme_
-- [ ] **diplomacy & international relations** — _en ambassade, å forhandle, en traktat, suverenitet, et samarbeid, et forbund, en konflikt_
-- [ ] **finance & economics (advanced)** — _inflasjon, et aksjemarked, å investere, en gjeld, likviditet, et underskudd, en valuta_
-- [ ] **medicine & healthcare (advanced)** — _en diagnose, forebygging, en behandling, kronisk, folkehelse, en klinisk studie_
+- [x] **philosophy** — _ontologi, epistemologi, determinisme, fri vilje, utilitarisme, syllogisme_
+- [x] **academic research** — _forskningsdesign, metodologi, litteraturgjennomgang, fagfellevurdering, validitet, reliabilitet_
+- [x] **formal writing & connectors** — _å drøfte, å belyse, i lys av, å presisere, følgelig, ytterligere, å problematisere_
+- [x] **rhetoric** — _ethos, pathos, logos, anafora, antitese, chiasme, kairos_
+- [x] **complex emotions** — _melankolsk, angst, fremmedgjøring, katarsis, ærefrykt, sårbarhet_
+- [x] **professional & business** — _forhandling, interessent, etterlevelse, fusjon, KPI, skalere_
+- [x] **abstract concepts** — _frihet, rettferdighet, bevissthet, hegemoni, pluralisme, konstruksjon_
+
+### Planned new categories (add to vocab-c1.json)
+
+- [x] **politics & democracy (advanced)** — _lovforslag, å ratifisere, valgkrets, flertall, opposisjon, koalisjon, grunnlov_
+- [x] **linguistics & language** — _morsmål, dialekt, å oversette, tospråklig, idiom, grammatikk, aksent_
+- [x] **media & journalism (advanced)** — _redaktør, sensur, kildekritikk, troverdighet, agenda, intervju, publisere_
+- [x] **architecture & design** — _fasade, bærekraftig, monument, å restaurere, estetikk, plantegning, romprogram_
+- [x] **diplomacy & international relations** — _ambassade, traktat, suverenitet, multilateralt, forbund, konfliktløsning, sanksjon_
+- [x] **finance & economics (advanced)** — _inflasjon, aksjemarked, likviditet, underskudd, valuta, derivat, konjunktur_
+- [x] **medicine & healthcare (advanced)** — _diagnose, forebygging, kronisk, folkehelse, klinisk studie, prognose, epidemi_
+- [x] **psychology (advanced)** — _traume, terapeut, kognitiv, personlighet, mekanisme, psykose, metakognisjon_
 
 ---
 
 ## C2 — Mastery _(new level — vocab-c2.json)_
 
-> C2 learners operate at near-native level with rare, literary, and highly specialised vocabulary.
+Implemented categories from `src/lib/data/vocab-c2.json` (6 total):
 
-### New categories
+### Implemented categories
 
-- [ ] **rhetoric & argumentation** — _å polemisere, en syllogisme, retorisk, å underbygge, en påstand, en premiss, å motbevise_
-- [ ] **literary analysis** — _et narrativ, en metafor, ironi, et motiv, en sjanger, et symbol, en forteller_
-- [ ] **advanced idioms & proverbs** — _å ha is i magen, å kaste blår i øynene, å ta bladet fra munnen, å slå to fluer i en smekk_
-- [ ] **Norse mythology & culture** — Uniquely Norwegian: _Odin, Valhall, norrønt, en saga, et eddadikt, norrøn mytologi, en viking_
-- [ ] **advanced law & justice** — _en jurisdiksjon, å anke, en paragraf, rettspraksis, straffrihet, en dom, å frikjenne_
-- [ ] **neuroscience & cognition** — _en synapse, nevrologisk, kognitiv belastning, bevissthetsnivå, hukommelse, et nevron_
-- [ ] **climate & environmental policy** — Beyond B1 environment: _karbonnøytral, et klimabudsjett, biodiversitet, en utslippskvote, et klimamål_
-- [ ] **sociology & anthropology** — _en norm, sosial mobilitet, et paradigme, å assimilere, en kultur, en struktur_
-- [ ] **advanced business & strategy** — _en fusjon, å diversifisere, markedsandel, en portefølje, et oppkjøp, å børsnotere_
-- [ ] **existential & abstract concepts** — _tomhet, det sublime, forgjengelighet, å transcendere, mening, eksistens, en identitet_
+- [x] **literary & narratology** — _epifani, protagonist, intertekstualitet, leitmotiv, mise en abyme, peripeti, metonymi_
+- [x] **archaic & Norse heritage** — _hvo, thi, skald, ting, blot, Norrønt, å kvede_
+- [x] **proverbs & idioms (advanced)** — _«Øvelse gjør mester», «Man skal ikke selge skinnet før bjørnen er skutt», «Ord er sølv, men taushet er gull»_
+- [x] **highly formal / legal-administrative** — _idet, undertegnede, å anmode om, ikrafttredelse, å ratifisere, å hjemle, å avsi dom_
+- [x] **technical & scientific** — _epigenetikk, kvantefysikk, superledning, algoritme, nevralt nettverk, nanoteknikk, kvantesammenfiltring_
+- [x] **nuanced distinctions** — _å informere vs. å opplyse, glad vs. lykkelig, å forstå vs. å begripe, å hindre vs. å forebygge, å skaffe vs. å anskaffe_
+
+### Planned new categories (add to vocab-c2.json)
+
+- [x] **advanced law & justice** — _jurisdiksjon, å anke, rettspraksis, straffrihet, prejudikat, dissens, habilitet_
+- [x] **neuroscience & cognition** — _synapse, nevron, kognitiv belastning, nevroplastisitet, prefrontal, hippocampus, EEG_
+- [x] **climate & environmental policy** — _karbonnøytral, klimabudsjett, biodiversitet, utslippskvote, tilpasning, karbonfangst, sirkulær økonomi_
+- [x] **sociology & anthropology** — _sosial mobilitet, paradigme, assimilere, struktur, kulturarv, habitus, etnografi_
+- [x] **advanced business & strategy** — _fusjon, diversifisere, markedsandel, portefølje, oppkjøp, børsnotere, konkurransefortrinn_
+- [x] **existential & abstract concepts** — _tomhet, det sublime, forgjengelighet, å transcendere, mening, eksistens, identitet_
 
 ---
 
@@ -118,8 +131,8 @@
 | A2    | 10                  | 5              | 15          |
 | B1    | 10                  | 5              | 15          |
 | B2    | 10                  | 6              | 16          |
-| C1    | 7 (new)             | 10             | 10          |
-| C2    | 0 (new)             | 10             | 10          |
+| C1    | 7 (in vocab)        | 8              | 15          |
+| C2    | 6 (in vocab)        | 6              | 12          |
 
 **Total new categories: 42** — at 25 words each = **1,050 new vocab entries**
 
@@ -129,8 +142,8 @@
 
 Adjectives are currently severely underrepresented and drop at each level:
 
-| Level | Current adjectives                               | % of total | Action                                          |
-| ----- | ------------------------------------------------ | ---------- | ----------------------------------------------- |
+| Level | Current adjectives                               | % of total | Action                                         |
+| ----- | ------------------------------------------------ | ---------- | ---------------------------------------------- |
 | A1    | 0 descriptive (47 total = numbers + colors only) | ~0% real   | ⚠️ Add **basic adjectives** category            |
 | A2    | 21 scattered                                     | 8.5%       | ⚠️ Add **descriptive adjectives** category      |
 | B1    | 15 scattered                                     | 6.0%       | ⚠️ Add **opinion & degree adjectives** category |

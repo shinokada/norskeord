@@ -1579,5 +1579,516 @@
 		"level": "C1",
 		"category": "abstract-concepts",
 		"part": "noun"
+	},
+	{
+		"norsk": "et lovforslag",
+		"english": "a bill (proposed law)",
+		"example": "Lovforslaget skal behandles i komiteen neste uke.",
+		"example_english": "The bill will be reviewed in committee next week.",
+		"level": "C1",
+		"category": "politics-democracy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en valgkrets",
+		"english": "an electoral district",
+		"example": "Hun stilte til valg i en liten valgkrets i nord.",
+		"example_english": "She ran in a small electoral district in the north.",
+		"level": "C1",
+		"category": "politics-democracy",
+		"part": "noun"
+	},
+	{
+		"norsk": "et flertall",
+		"english": "a majority",
+		"example": "Regjeringen trenger et flertall for å få budsjettet vedtatt.",
+		"example_english": "The government needs a majority to pass the budget.",
+		"level": "C1",
+		"category": "politics-democracy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en opposisjon",
+		"english": "an opposition",
+		"example": "Opposisjonen krevde større åpenhet i prosessen.",
+		"example_english": "The opposition demanded greater transparency in the process.",
+		"level": "C1",
+		"category": "politics-democracy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en koalisjon",
+		"english": "a coalition",
+		"example": "Partiene dannet en koalisjon for å få makt.",
+		"example_english": "The parties formed a coalition to gain power.",
+		"level": "C1",
+		"category": "politics-democracy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en grunnlov",
+		"english": "a constitution",
+		"example": "Grunnloven sikrer ytringsfriheten.",
+		"example_english": "The constitution guarantees freedom of speech.",
+		"level": "C1",
+		"category": "politics-democracy",
+		"part": "noun"
+	},
+	{
+		"norsk": "å ratifisere",
+		"english": "to ratify",
+		"example": "Parlamentet ratifiserte avtalen etter lange forhandlinger.",
+		"example_english": "Parliament ratified the agreement after long negotiations.",
+		"level": "C1",
+		"category": "politics-democracy",
+		"part": "verb"
+	},
+
+	{
+		"norsk": "et morsmål",
+		"english": "a mother tongue",
+		"example": "Norsk er hennes morsmål, men hun kan fem språk.",
+		"example_english": "Norwegian is her mother tongue, but she speaks five languages.",
+		"level": "C1",
+		"category": "linguistics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en dialekt",
+		"english": "a dialect",
+		"example": "Dialekten avslører ofte hvor i landet du kommer fra.",
+		"example_english": "Your dialect often reveals where in the country you come from.",
+		"level": "C1",
+		"category": "linguistics",
+		"part": "noun"
+	},
+	{
+		"norsk": "å oversette",
+		"english": "to translate",
+		"example": "Hun oversetter romaner fra fransk til norsk.",
+		"example_english": "She translates novels from French to Norwegian.",
+		"level": "C1",
+		"category": "linguistics",
+		"part": "verb"
+	},
+	{
+		"norsk": "tospråklig",
+		"english": "bilingual",
+		"example": "Han vokste opp i et tospråklig hjem.",
+		"example_english": "He grew up in a bilingual home.",
+		"level": "C1",
+		"category": "linguistics",
+		"part": "adjective"
+	},
+	{
+		"norsk": "et idiom",
+		"english": "an idiom",
+		"example": "Idiomatiske uttrykk kan være vanskelige å oversette.",
+		"example_english": "Idiomatic expressions can be difficult to translate.",
+		"level": "C1",
+		"category": "linguistics",
+		"part": "noun"
+	},
+	{
+		"norsk": "grammatikk",
+		"english": "grammar",
+		"example": "Grammatikk er strukturen som holder språket sammen.",
+		"example_english": "Grammar is the structure that holds language together.",
+		"level": "C1",
+		"category": "linguistics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en aksent",
+		"english": "an accent",
+		"example": "Aksenten hennes er tydelig britisk.",
+		"example_english": "Her accent is distinctly British.",
+		"level": "C1",
+		"category": "linguistics",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en redaktør",
+		"english": "an editor",
+		"example": "Redaktøren godkjenner alle artiklene før publisering.",
+		"example_english": "The editor approves all articles before publication.",
+		"level": "C1",
+		"category": "media-journalism",
+		"part": "noun"
+	},
+	{
+		"norsk": "sensur",
+		"english": "censorship",
+		"example": "Filmen møtte sensur på grunn av voldelige scener.",
+		"example_english": "The film faced censorship because of violent scenes.",
+		"level": "C1",
+		"category": "media-journalism",
+		"part": "noun"
+	},
+	{
+		"norsk": "kildekritikk",
+		"english": "source criticism",
+		"example": "Journalister må alltid utøve kildekritikk.",
+		"example_english": "Journalists must always practice source criticism.",
+		"level": "C1",
+		"category": "media-journalism",
+		"part": "noun"
+	},
+	{
+		"norsk": "troverdighet",
+		"english": "credibility",
+		"example": "Avisens troverdighet økte etter avsløringen.",
+		"example_english": "The newspaper's credibility rose after the exposé.",
+		"level": "C1",
+		"category": "media-journalism",
+		"part": "noun"
+	},
+	{
+		"norsk": "en agenda",
+		"english": "an agenda (hidden or stated)",
+		"example": "Programlederens agenda ble tydelig under debatten.",
+		"example_english": "The host's agenda became clear during the debate.",
+		"level": "C1",
+		"category": "media-journalism",
+		"part": "noun"
+	},
+	{
+		"norsk": "et intervju",
+		"english": "an interview",
+		"example": "Intervjuet gikk direkte på lufta.",
+		"example_english": "The interview aired live.",
+		"level": "C1",
+		"category": "media-journalism",
+		"part": "noun"
+	},
+	{
+		"norsk": "å publisere",
+		"english": "to publish",
+		"example": "Magasinet publiserer en ny utgave hver uke.",
+		"example_english": "The magazine publishes a new issue every week.",
+		"level": "C1",
+		"category": "media-journalism",
+		"part": "verb"
+	},
+
+	{
+		"norsk": "en fasade",
+		"english": "a facade",
+		"example": "Byggets fasade er dekket av glass.",
+		"example_english": "The building's facade is covered with glass.",
+		"level": "C1",
+		"category": "architecture-design",
+		"part": "noun"
+	},
+	{
+		"norsk": "bærekraftig",
+		"english": "sustainable",
+		"example": "Prosjektet bruker bærekraftige materialer.",
+		"example_english": "The project uses sustainable materials.",
+		"level": "C1",
+		"category": "architecture-design",
+		"part": "adjective"
+	},
+	{
+		"norsk": "et monument",
+		"english": "a monument",
+		"example": "Monumentet hedrer krigens falne.",
+		"example_english": "The monument honours the fallen of the war.",
+		"level": "C1",
+		"category": "architecture-design",
+		"part": "noun"
+	},
+	{
+		"norsk": "å restaurere",
+		"english": "to restore",
+		"example": "De restaurerer den gamle kirken med stor omsorg.",
+		"example_english": "They are restoring the old church with great care.",
+		"level": "C1",
+		"category": "architecture-design",
+		"part": "verb"
+	},
+	{
+		"norsk": "estetikk",
+		"english": "aesthetics",
+		"example": "Estetikk handler om hvordan vi opplever skjønnhet.",
+		"example_english": "Aesthetics is about how we experience beauty.",
+		"level": "C1",
+		"category": "architecture-design",
+		"part": "noun"
+	},
+	{
+		"norsk": "en plantegning",
+		"english": "a blueprint / floor plan",
+		"example": "Arkitekten presenterte en detaljert plantegning.",
+		"example_english": "The architect presented a detailed floor plan.",
+		"level": "C1",
+		"category": "architecture-design",
+		"part": "noun"
+	},
+	{
+		"norsk": "et romprogram",
+		"english": "a space plan",
+		"example": "Romprogrammet definerer hvordan arealet skal brukes.",
+		"example_english": "The space plan defines how the area will be used.",
+		"level": "C1",
+		"category": "architecture-design",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en ambassade",
+		"english": "an embassy",
+		"example": "Ambassaden hjelper borgere i utlandet.",
+		"example_english": "The embassy assists citizens abroad.",
+		"level": "C1",
+		"category": "diplomacy-international",
+		"part": "noun"
+	},
+	{
+		"norsk": "en traktat",
+		"english": "a treaty",
+		"example": "Landene signerte en traktat om våpenkontroll.",
+		"example_english": "The countries signed a treaty on arms control.",
+		"level": "C1",
+		"category": "diplomacy-international",
+		"part": "noun"
+	},
+	{
+		"norsk": "suverenitet",
+		"english": "sovereignty",
+		"example": "Suverenitet innebærer retten til selvbestemmelse.",
+		"example_english": "Sovereignty entails the right to self-determination.",
+		"level": "C1",
+		"category": "diplomacy-international",
+		"part": "noun"
+	},
+	{
+		"norsk": "multilateralt",
+		"english": "multilateral",
+		"example": "Avtalen ble forhandlet fram multilateralt.",
+		"example_english": "The agreement was negotiated multilaterally.",
+		"level": "C1",
+		"category": "diplomacy-international",
+		"part": "adverb"
+	},
+	{
+		"norsk": "et forbund",
+		"english": "an alliance",
+		"example": "Forbundet styrker regionalt samarbeid.",
+		"example_english": "The alliance strengthens regional cooperation.",
+		"level": "C1",
+		"category": "diplomacy-international",
+		"part": "noun"
+	},
+	{
+		"norsk": "konfliktløsning",
+		"english": "conflict resolution",
+		"example": "Diplomater er trent i konfliktløsning.",
+		"example_english": "Diplomats are trained in conflict resolution.",
+		"level": "C1",
+		"category": "diplomacy-international",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sanksjon",
+		"english": "a sanction",
+		"example": "Sanksjonene ble innført for å presse frem forhandlinger.",
+		"example_english": "The sanctions were imposed to push for negotiations.",
+		"level": "C1",
+		"category": "diplomacy-international",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "inflasjon",
+		"english": "inflation",
+		"example": "Inflasjon svekker kjøpekraften.",
+		"example_english": "Inflation weakens purchasing power.",
+		"level": "C1",
+		"category": "finance-economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et aksjemarked",
+		"english": "a stock market",
+		"example": "Aksjemarkedet falt etter nyhetene.",
+		"example_english": "The stock market dropped after the news.",
+		"level": "C1",
+		"category": "finance-economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "likviditet",
+		"english": "liquidity",
+		"example": "Banken må sikre tilstrekkelig likviditet.",
+		"example_english": "The bank must ensure sufficient liquidity.",
+		"level": "C1",
+		"category": "finance-economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et underskudd",
+		"english": "a deficit",
+		"example": "Statsbudsjettet viser et stort underskudd.",
+		"example_english": "The state budget shows a large deficit.",
+		"level": "C1",
+		"category": "finance-economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en valuta",
+		"english": "a currency",
+		"example": "Valutaen styrket seg mot euro.",
+		"example_english": "The currency strengthened against the euro.",
+		"level": "C1",
+		"category": "finance-economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "et derivat",
+		"english": "a derivative",
+		"example": "Derivater brukes til å hedge risiko.",
+		"example_english": "Derivatives are used to hedge risk.",
+		"level": "C1",
+		"category": "finance-economics",
+		"part": "noun"
+	},
+	{
+		"norsk": "en konjunktur",
+		"english": "a business cycle",
+		"example": "Økonomien er i en svak konjunktur nå.",
+		"example_english": "The economy is in a weak business cycle now.",
+		"level": "C1",
+		"category": "finance-economics",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en diagnose",
+		"english": "a diagnosis",
+		"example": "Riktig diagnose er avgjørende for behandlingen.",
+		"example_english": "A correct diagnosis is crucial for treatment.",
+		"level": "C1",
+		"category": "medicine-healthcare",
+		"part": "noun"
+	},
+	{
+		"norsk": "forebygging",
+		"english": "prevention",
+		"example": "Forebygging reduserer behovet for behandling.",
+		"example_english": "Prevention reduces the need for treatment.",
+		"level": "C1",
+		"category": "medicine-healthcare",
+		"part": "noun"
+	},
+	{
+		"norsk": "kronisk",
+		"english": "chronic",
+		"example": "Kronisk smerte krever langvarig oppfølging.",
+		"example_english": "Chronic pain requires long-term follow-up.",
+		"level": "C1",
+		"category": "medicine-healthcare",
+		"part": "adjective"
+	},
+	{
+		"norsk": "folkehelse",
+		"english": "public health",
+		"example": "Folkehelse handler om befolkningens samlede helse.",
+		"example_english": "Public health concerns the population's overall health.",
+		"level": "C1",
+		"category": "medicine-healthcare",
+		"part": "noun"
+	},
+	{
+		"norsk": "en klinisk studie",
+		"english": "a clinical study",
+		"example": "Den kliniske studien tester en ny vaksine.",
+		"example_english": "The clinical study tests a new vaccine.",
+		"level": "C1",
+		"category": "medicine-healthcare",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en prognose",
+		"english": "a prognosis",
+		"example": "Prognosen er god hvis behandlingen starter tidlig.",
+		"example_english": "The prognosis is good if treatment starts early.",
+		"level": "C1",
+		"category": "medicine-healthcare",
+		"part": "noun"
+	},
+	{
+		"norsk": "en epidemi",
+		"english": "an epidemic",
+		"example": "Epidemien spredte seg raskt i byen.",
+		"example_english": "The epidemic spread quickly in the city.",
+		"level": "C1",
+		"category": "medicine-healthcare",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "et traume",
+		"english": "a trauma",
+		"example": "Traumet påvirket henne i flere år.",
+		"example_english": "The trauma affected her for years.",
+		"level": "C1",
+		"category": "psychology-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "en terapeut",
+		"english": "a therapist",
+		"example": "Terapeuten hjalp pasienten med å bearbeide opplevelsen.",
+		"example_english": "The therapist helped the patient process the experience.",
+		"level": "C1",
+		"category": "psychology-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "kognitiv",
+		"english": "cognitive",
+		"example": "Kognitiv terapi fokuserer på tankemønstre.",
+		"example_english": "Cognitive therapy focuses on thought patterns.",
+		"level": "C1",
+		"category": "psychology-advanced",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en personlighet",
+		"english": "a personality",
+		"example": "Personlighet formes av både arv og miljø.",
+		"example_english": "Personality is shaped by both heredity and environment.",
+		"level": "C1",
+		"category": "psychology-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mekanisme",
+		"english": "a mechanism",
+		"example": "Forskerne studerer mekanismene bak læring.",
+		"example_english": "Researchers study the mechanisms behind learning.",
+		"level": "C1",
+		"category": "psychology-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "en psykose",
+		"english": "a psychosis",
+		"example": "Psykose krever rask behandling.",
+		"example_english": "Psychosis requires prompt treatment.",
+		"level": "C1",
+		"category": "psychology-advanced",
+		"part": "noun"
+	},
+	{
+		"norsk": "metakognisjon",
+		"english": "metacognition",
+		"example": "Metakognisjon handler om å tenke over egen tenkning.",
+		"example_english": "Metacognition is about thinking about your own thinking.",
+		"level": "C1",
+		"category": "psychology-advanced",
+		"part": "noun"
 	}
 ]
