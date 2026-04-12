@@ -10,7 +10,7 @@
 </script>
 
 <div class="mx-auto max-w-4xl p-8 text-left">
-	<Heading tag="h1" class="text-3xl">About</Heading>
+	<Heading tag="h1" class="text-3xl">ABOUT</Heading>
 	<P>
 		Norsk-Flashcard is for Norwegian learners who want to learn Norwegian vocabulary. It provides
 		flashcards with Norwegian words on the front and English translations on the back, along with

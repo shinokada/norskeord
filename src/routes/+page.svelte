@@ -54,7 +54,7 @@
 				{#each categories as cat (cat)}
 					<a
 						href="/{id.toLowerCase()}/{cat}"
-						class="{badge} rounded-full px-4 py-1.5 font-medium transition-opacity hover:opacity-75"
+						class="{badge} rounded-full px-4 py-1 font-medium transition-opacity hover:opacity-75"
 					>
 						{removeHyphensAndCapitalize(cat)}
 					</a>

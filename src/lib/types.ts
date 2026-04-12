@@ -24,7 +24,13 @@ export const CATEGORIES_BY_LEVEL = {
 		'animals',
 		'home',
 		'days-months',
-		'classroom'
+		'classroom',
+		'basic-adjectives',
+		'basic-verbs',
+		'pronouns-and-questions',
+		'feelings',
+		'weather',
+		'transportation'
 	],
 	A2: [
 		'shopping',
@@ -36,7 +42,12 @@ export const CATEGORIES_BY_LEVEL = {
 		'sports',
 		'health-basic',
 		'weather',
-		'time'
+		'time',
+		'descriptive-adjectives',
+		'cooking',
+		'nature',
+		'house-chores',
+		'communication'
 	],
 	B1: [
 		'travel',
@@ -48,7 +59,12 @@ export const CATEGORIES_BY_LEVEL = {
 		'education',
 		'work',
 		'city-life',
-		'traditions'
+		'traditions',
+		'opinion-adjectives',
+		'food-cooking-advanced',
+		'housing-renting',
+		'health-body-intermediate',
+		'finance-banking'
 	],
 	B2: [
 		'politics',
@@ -60,7 +76,13 @@ export const CATEGORIES_BY_LEVEL = {
 		'idioms',
 		'history',
 		'law',
-		'literature'
+		'literature',
+		'advanced-adjectives',
+		'philosophy',
+		'medicine',
+		'psychology',
+		'business',
+		'religion'
 	],
 	C1: [
 		'philosophy',

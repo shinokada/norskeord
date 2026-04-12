@@ -2257,5 +2257,1361 @@
 		"level": "B2",
 		"category": "literature",
 		"part": "noun"
+	},
+
+	{
+		"norsk": "tvetydig",
+		"english": "ambiguous",
+		"example": "Budskapet i talen var tvetydig.",
+		"example_english": "The message in the speech was ambiguous.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "paradoksal",
+		"english": "paradoxical",
+		"example": "Det er paradoksalt at rikdom kan skape ensomhet.",
+		"example_english": "It is paradoxical that wealth can create loneliness.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "inngående",
+		"english": "in-depth / thorough",
+		"example": "Hun ga en inngående analyse av problemet.",
+		"example_english": "She gave an in-depth analysis of the problem.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "omfattende",
+		"english": "extensive / comprehensive",
+		"example": "Rapporten er svært omfattende.",
+		"example_english": "The report is very comprehensive.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "nyansert",
+		"english": "nuanced",
+		"example": "Et nyansert svar er bedre enn et enkelt ja eller nei.",
+		"example_english": "A nuanced answer is better than a simple yes or no.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "uunngåelig",
+		"english": "inevitable / unavoidable",
+		"example": "Konflikten virket uunngåelig.",
+		"example_english": "The conflict seemed inevitable.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "gjennomgripende",
+		"english": "pervasive / far-reaching",
+		"example": "Teknologien har hatt en gjennomgripende innvirkning på samfunnet.",
+		"example_english": "Technology has had a pervasive impact on society.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "subtil",
+		"english": "subtle",
+		"example": "Forskjellen mellom de to versjonene er subtil.",
+		"example_english": "The difference between the two versions is subtle.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "ambisiøs",
+		"english": "ambitious",
+		"example": "Planen er ambisiøs, men gjennomførbar.",
+		"example_english": "The plan is ambitious but feasible.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "kontroversiell",
+		"english": "controversial",
+		"example": "Loven var svært kontroversiell.",
+		"example_english": "The law was highly controversial.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "iøynefallende",
+		"english": "striking / eye-catching",
+		"example": "Designet er iøynefallende og moderne.",
+		"example_english": "The design is striking and modern.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "motsigende",
+		"english": "contradictory",
+		"example": "Vitneforklaringene var motsigende.",
+		"example_english": "The witness statements were contradictory.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "kompleks",
+		"english": "complex",
+		"example": "Situasjonen er mer kompleks enn den ser ut.",
+		"example_english": "The situation is more complex than it appears.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tilbørlig",
+		"english": "appropriate / due",
+		"example": "Saken ble behandlet med tilbørlig forsiktighet.",
+		"example_english": "The matter was handled with appropriate care.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "udiskutabel",
+		"english": "indisputable / unquestionable",
+		"example": "Bevisene er udiskutable.",
+		"example_english": "The evidence is indisputable.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "vesentlig",
+		"english": "essential / significant",
+		"example": "Det er en vesentlig forskjell mellom de to begrepene.",
+		"example_english": "There is a significant difference between the two concepts.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "forgjengelig",
+		"english": "transient / perishable",
+		"example": "Berømmelse er forgjengelig.",
+		"example_english": "Fame is transient.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "avgrenset",
+		"english": "limited / defined / bounded",
+		"example": "Prosjektet har et avgrenset omfang.",
+		"example_english": "The project has a limited scope.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "fremtredende",
+		"english": "prominent / outstanding",
+		"example": "Hun er en fremtredende forsker i sitt felt.",
+		"example_english": "She is a prominent researcher in her field.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "flyktig",
+		"english": "fleeting / volatile",
+		"example": "Lykke kan være flyktig.",
+		"example_english": "Happiness can be fleeting.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "langvarig",
+		"english": "long-lasting / prolonged",
+		"example": "Krigen hadde langvarige konsekvenser.",
+		"example_english": "The war had long-lasting consequences.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "nødtvungen",
+		"english": "forced / reluctant",
+		"example": "Det var en nødtvungen beslutning.",
+		"example_english": "It was a reluctant decision.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "ubevisst",
+		"english": "unconscious / unaware",
+		"example": "Fordomme er ofte ubevisste.",
+		"example_english": "Prejudices are often unconscious.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "grunnleggende",
+		"english": "fundamental / basic",
+		"example": "Dette er et grunnleggende prinsipp i demokratiet.",
+		"example_english": "This is a fundamental principle of democracy.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+	{
+		"norsk": "tilsvarende",
+		"english": "corresponding / equivalent",
+		"example": "Det finnes ikke noe tilsvarende begrep på norsk.",
+		"example_english": "There is no corresponding term in Norwegian.",
+		"level": "B2",
+		"category": "advanced-adjectives",
+		"part": "adjective"
+	},
+
+	{
+		"norsk": "et argument",
+		"english": "an argument",
+		"example": "Han la frem et overbevisende argument.",
+		"example_english": "He presented a convincing argument.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en verdi",
+		"english": "a value",
+		"example": "Rettferdighet er en grunnleggende verdi.",
+		"example_english": "Justice is a fundamental value.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "å reflektere",
+		"english": "to reflect / to contemplate",
+		"example": "Vi bør reflektere over konsekvensene.",
+		"example_english": "We should reflect on the consequences.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "verb"
+	},
+	{
+		"norsk": "et dilemma",
+		"english": "a dilemma",
+		"example": "Han stod overfor et moralsk dilemma.",
+		"example_english": "He faced a moral dilemma.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en norm",
+		"english": "a norm",
+		"example": "Sosiale normer varierer mellom kulturer.",
+		"example_english": "Social norms vary between cultures.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "å rettferdiggjøre",
+		"english": "to justify",
+		"example": "Kan man rettferdiggjøre løgn for å beskytte noen?",
+		"example_english": "Can one justify lying to protect someone?",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "verb"
+	},
+	{
+		"norsk": "frihet",
+		"english": "freedom / liberty",
+		"example": "Frihet og ansvar henger sammen.",
+		"example_english": "Freedom and responsibility are connected.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "etikk",
+		"english": "ethics",
+		"example": "Medisinsk etikk stiller vanskelige spørsmål.",
+		"example_english": "Medical ethics raises difficult questions.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "moral",
+		"english": "morality / morals",
+		"example": "Moral handler om hva som er rett og galt.",
+		"example_english": "Morality concerns what is right and wrong.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en påstand",
+		"english": "a claim / an assertion",
+		"example": "Påstanden ble ikke støttet av bevis.",
+		"example_english": "The claim was not supported by evidence.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en konsekvens",
+		"english": "a consequence",
+		"example": "Vi må tenke på de langsiktige konsekvensene.",
+		"example_english": "We must think about the long-term consequences.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "rettferdighet",
+		"english": "justice / fairness",
+		"example": "Rettferdighet er et sentralt tema i filosofien.",
+		"example_english": "Justice is a central theme in philosophy.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en sannhet",
+		"english": "a truth",
+		"example": "Hva er egentlig sannheten?",
+		"example_english": "What is truth, really?",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "bevissthet",
+		"english": "consciousness / awareness",
+		"example": "Bevisstheten er et mysterium for vitenskapen.",
+		"example_english": "Consciousness is a mystery for science.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en hypotese",
+		"english": "a hypothesis",
+		"example": "Filosofer tester hypoteser gjennom logisk argumentasjon.",
+		"example_english": "Philosophers test hypotheses through logical argumentation.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "å motsi",
+		"english": "to contradict",
+		"example": "Handlingene hans motsier ordene hans.",
+		"example_english": "His actions contradict his words.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "verb"
+	},
+	{
+		"norsk": "subjektiv",
+		"english": "subjective",
+		"example": "Skjønnhet er subjektiv.",
+		"example_english": "Beauty is subjective.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "adjective"
+	},
+	{
+		"norsk": "objektiv",
+		"english": "objective",
+		"example": "Vi trenger en objektiv vurdering.",
+		"example_english": "We need an objective assessment.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "adjective"
+	},
+	{
+		"norsk": "eksistens",
+		"english": "existence",
+		"example": "Hva er meningen med eksistensen?",
+		"example_english": "What is the meaning of existence?",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "en premiss",
+		"english": "a premise",
+		"example": "Argumentet bygger på en feil premiss.",
+		"example_english": "The argument rests on a false premise.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "relativisme",
+		"english": "relativism",
+		"example": "Kulturell relativisme hevder at normer er kulturbetingede.",
+		"example_english": "Cultural relativism claims that norms are culture-dependent.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "å drøfte",
+		"english": "to discuss / to examine critically",
+		"example": "Vi drøftet spørsmålet fra flere vinkler.",
+		"example_english": "We examined the question from several angles.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "verb"
+	},
+	{
+		"norsk": "en ideologi",
+		"english": "an ideology",
+		"example": "Ideologien påvirker hvordan vi ser på verden.",
+		"example_english": "Ideology influences how we view the world.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+	{
+		"norsk": "abstrakt tenkning",
+		"english": "abstract thinking",
+		"example": "Filosofi krever evne til abstrakt tenkning.",
+		"example_english": "Philosophy requires the ability for abstract thinking.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en kontradiksjoner",
+		"english": "a contradiction",
+		"example": "Det er en indre kontradiksjon i argumentet.",
+		"example_english": "There is an internal contradiction in the argument.",
+		"level": "B2",
+		"category": "philosophy",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en diagnose",
+		"english": "a diagnosis",
+		"example": "Legen stilte en diagnose etter grundig undersøkelse.",
+		"example_english": "The doctor made a diagnosis after a thorough examination.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en behandling",
+		"english": "a treatment",
+		"example": "Behandlingen varte i seks måneder.",
+		"example_english": "The treatment lasted six months.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "forebygging",
+		"english": "prevention",
+		"example": "Forebygging er bedre enn behandling.",
+		"example_english": "Prevention is better than treatment.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "kronisk",
+		"english": "chronic",
+		"example": "Hun lever med kroniske ryggsmerter.",
+		"example_english": "She lives with chronic back pain.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "adjective"
+	},
+	{
+		"norsk": "folkehelse",
+		"english": "public health",
+		"example": "Folkehelsen er bedret de siste tiårene.",
+		"example_english": "Public health has improved over recent decades.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en pasient",
+		"english": "a patient",
+		"example": "Pasienten ble skrevet ut etter tre dager.",
+		"example_english": "The patient was discharged after three days.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "et symptom",
+		"english": "a symptom",
+		"example": "Feber er et vanlig symptom på infeksjon.",
+		"example_english": "Fever is a common symptom of infection.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en resept",
+		"english": "a prescription",
+		"example": "Du trenger resept for å kjøpe den medisinen.",
+		"example_english": "You need a prescription to buy that medicine.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "et sykehus",
+		"english": "a hospital",
+		"example": "Han ble innlagt på sykehus.",
+		"example_english": "He was admitted to hospital.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en allergi",
+		"english": "an allergy",
+		"example": "Hun har allergi mot nøtter.",
+		"example_english": "She has an allergy to nuts.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "å undersøke",
+		"english": "to examine / to investigate",
+		"example": "Legen undersøkte pasienten grundig.",
+		"example_english": "The doctor examined the patient thoroughly.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "verb"
+	},
+	{
+		"norsk": "en bivirkning",
+		"english": "a side effect",
+		"example": "Medisinen kan ha bivirkninger.",
+		"example_english": "The medicine can have side effects.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en vaksine",
+		"english": "a vaccine",
+		"example": "Vaksinen beskytter mot influensa.",
+		"example_english": "The vaccine protects against influenza.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "immunsystemet",
+		"english": "the immune system",
+		"example": "Et sterkt immunsystem bekjemper infeksjoner.",
+		"example_english": "A strong immune system fights infections.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en operasjon",
+		"english": "an operation / surgery",
+		"example": "Operasjonen var vellykket.",
+		"example_english": "The operation was successful.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "smittsom",
+		"english": "contagious / infectious",
+		"example": "Sykdommen er svært smittsom.",
+		"example_english": "The disease is highly contagious.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en epidemi",
+		"english": "an epidemic",
+		"example": "En epidemi av influensa spredte seg raskt.",
+		"example_english": "An epidemic of influenza spread quickly.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "rehabilitering",
+		"english": "rehabilitation",
+		"example": "Rehabilitering etter hjerneslag tar tid.",
+		"example_english": "Rehabilitation after a stroke takes time.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en klinisk studie",
+		"english": "a clinical trial",
+		"example": "Legemidlet gjennomgår kliniske studier.",
+		"example_english": "The drug is undergoing clinical trials.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en infeksjon",
+		"english": "an infection",
+		"example": "Antibiotika brukes mot bakterielle infeksjoner.",
+		"example_english": "Antibiotics are used against bacterial infections.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "blodtrykk",
+		"english": "blood pressure",
+		"example": "Høyt blodtrykk er en risikofaktor for hjertesykdom.",
+		"example_english": "High blood pressure is a risk factor for heart disease.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "en oversikt",
+		"english": "an overview / a survey",
+		"example": "Legen ga en oversikt over behandlingsalternativene.",
+		"example_english": "The doctor gave an overview of the treatment options.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "å diagnostisere",
+		"english": "to diagnose",
+		"example": "Han ble diagnostisert med diabetes.",
+		"example_english": "He was diagnosed with diabetes.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "verb"
+	},
+	{
+		"norsk": "et legemiddel",
+		"english": "a medicine / a drug / a pharmaceutical",
+		"example": "Nye legemidler godkjennes av legemiddelverket.",
+		"example_english": "New drugs are approved by the medicines authority.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "noun"
+	},
+	{
+		"norsk": "palliativ omsorg",
+		"english": "palliative care",
+		"example": "Palliativ omsorg fokuserer på livskvalitet.",
+		"example_english": "Palliative care focuses on quality of life.",
+		"level": "B2",
+		"category": "medicine",
+		"part": "phrase"
+	},
+
+	{
+		"norsk": "bevissthet",
+		"english": "consciousness / awareness",
+		"example": "Psykologer studerer bevissthetens grenser.",
+		"example_english": "Psychologists study the limits of consciousness.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "et traume",
+		"english": "a trauma",
+		"example": "Traumet satt dypt etter ulykken.",
+		"example_english": "The trauma ran deep after the accident.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "å bearbeide",
+		"english": "to process (emotionally)",
+		"example": "Det tok tid å bearbeide sorgen.",
+		"example_english": "It took time to process the grief.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "verb"
+	},
+	{
+		"norsk": "en terapeut",
+		"english": "a therapist",
+		"example": "Han gikk til terapeut for å få hjelp.",
+		"example_english": "He went to a therapist to get help.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "kognitiv",
+		"english": "cognitive",
+		"example": "Kognitiv terapi hjelper ved angst og depresjon.",
+		"example_english": "Cognitive therapy helps with anxiety and depression.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "adjective"
+	},
+	{
+		"norsk": "atferd",
+		"english": "behaviour",
+		"example": "Atferden endret seg etter behandlingen.",
+		"example_english": "The behaviour changed after the treatment.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "en reaksjon",
+		"english": "a reaction / a response",
+		"example": "Reaksjonen på nyheten var sterk.",
+		"example_english": "The reaction to the news was strong.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "angst",
+		"english": "anxiety",
+		"example": "Angst kan hindre mennesker i å fungere normalt.",
+		"example_english": "Anxiety can prevent people from functioning normally.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "depresjon",
+		"english": "depression",
+		"example": "Depresjon er en av de vanligste psykiske lidelsene.",
+		"example_english": "Depression is one of the most common mental disorders.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "selvbilde",
+		"english": "self-image",
+		"example": "Et positivt selvbilde er viktig for trivsel.",
+		"example_english": "A positive self-image is important for wellbeing.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "en mekanisme",
+		"english": "a mechanism",
+		"example": "Forsvarsmekanismer beskytter oss mot smerte.",
+		"example_english": "Defence mechanisms protect us from pain.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "motivasjon",
+		"english": "motivation",
+		"example": "Motivasjon er nøkkelen til læring.",
+		"example_english": "Motivation is the key to learning.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "tilknytning",
+		"english": "attachment / bonding",
+		"example": "Tidlig tilknytning mellom barn og foreldre er avgjørende.",
+		"example_english": "Early attachment between child and parent is crucial.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "en personlighet",
+		"english": "a personality",
+		"example": "Personligheten formes av både arv og miljø.",
+		"example_english": "Personality is shaped by both heredity and environment.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "hukommelse",
+		"english": "memory",
+		"example": "Hukommelsen svekkes ofte med alderen.",
+		"example_english": "Memory often weakens with age.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "en projeksjon",
+		"english": "a projection",
+		"example": "Det er en projeksjon å tillegge andre dine egne følelser.",
+		"example_english": "It is a projection to attribute your own feelings to others.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "stress",
+		"english": "stress",
+		"example": "Langvarig stress kan føre til utbrenthet.",
+		"example_english": "Prolonged stress can lead to burnout.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "empati",
+		"english": "empathy",
+		"example": "Empati er evnen til å sette seg inn i andres situasjon.",
+		"example_english": "Empathy is the ability to put yourself in others' shoes.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "resiliens",
+		"english": "resilience",
+		"example": "Resiliens hjelper oss å komme oss etter motgang.",
+		"example_english": "Resilience helps us recover from adversity.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "det ubevisste",
+		"english": "the unconscious",
+		"example": "Freud utviklet teorien om det ubevisste.",
+		"example_english": "Freud developed the theory of the unconscious.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "phrase"
+	},
+	{
+		"norsk": "en lidelse",
+		"english": "a disorder / an ailment",
+		"example": "OCD er en angstlidelse.",
+		"example_english": "OCD is an anxiety disorder.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "å fordøye",
+		"english": "to digest / to come to terms with",
+		"example": "Det var vanskelig å fordøye det hun hadde sagt.",
+		"example_english": "It was hard to come to terms with what she had said.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "verb"
+	},
+	{
+		"norsk": "identitet",
+		"english": "identity",
+		"example": "Ungdomstid er preget av søken etter identitet.",
+		"example_english": "Adolescence is marked by a search for identity.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "et mønster",
+		"english": "a pattern",
+		"example": "Terapeuten hjelper deg å se atferdsmønstre.",
+		"example_english": "The therapist helps you see behavioural patterns.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+	{
+		"norsk": "selvrefleksjon",
+		"english": "self-reflection",
+		"example": "Selvrefleksjon er viktig for personlig vekst.",
+		"example_english": "Self-reflection is important for personal growth.",
+		"level": "B2",
+		"category": "psychology",
+		"part": "noun"
+	},
+
+	{
+		"norsk": "en strategi",
+		"english": "a strategy",
+		"example": "Selskapet trenger en ny forretningsstrategi.",
+		"example_english": "The company needs a new business strategy.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "å forhandle",
+		"english": "to negotiate",
+		"example": "De forhandlet om betingelsene i kontrakten.",
+		"example_english": "They negotiated the terms of the contract.",
+		"level": "B2",
+		"category": "business",
+		"part": "verb"
+	},
+	{
+		"norsk": "en bedrift",
+		"english": "a company / a business",
+		"example": "Bedriften ble grunnlagt i 1995.",
+		"example_english": "The company was founded in 1995.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "et møte",
+		"english": "a meeting",
+		"example": "Vi har styremøte på fredag.",
+		"example_english": "We have a board meeting on Friday.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "en leder",
+		"english": "a manager / a leader",
+		"example": "En god leder motiverer de ansatte.",
+		"example_english": "A good leader motivates the employees.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "et prosjekt",
+		"english": "a project",
+		"example": "Prosjektet ble levert i tide.",
+		"example_english": "The project was delivered on time.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "en avtale",
+		"english": "a deal / an agreement",
+		"example": "De inngikk en avtale med en ny leverandør.",
+		"example_english": "They made a deal with a new supplier.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "et marked",
+		"english": "a market",
+		"example": "Selskapet ekspanderer til det asiatiske markedet.",
+		"example_english": "The company is expanding into the Asian market.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "en omsetning",
+		"english": "revenue / turnover",
+		"example": "Omsetningen økte med 20 prosent i fjor.",
+		"example_english": "Revenue increased by 20 percent last year.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "et overskudd",
+		"english": "a profit / a surplus",
+		"example": "Selskapet gikk med overskudd for første gang.",
+		"example_english": "The company made a profit for the first time.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "et underskudd",
+		"english": "a deficit / a loss",
+		"example": "Kvartalet endte med underskudd.",
+		"example_english": "The quarter ended with a deficit.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "en aksjonær",
+		"english": "a shareholder",
+		"example": "Aksjonærene fikk god avkastning i år.",
+		"example_english": "Shareholders got a good return this year.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "å rekruttere",
+		"english": "to recruit",
+		"example": "Bedriften rekrutterer nye talenter.",
+		"example_english": "The company is recruiting new talent.",
+		"level": "B2",
+		"category": "business",
+		"part": "verb"
+	},
+	{
+		"norsk": "en leverandør",
+		"english": "a supplier",
+		"example": "Vi byttet til en mer pålitelig leverandør.",
+		"example_english": "We switched to a more reliable supplier.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "markedsføring",
+		"english": "marketing",
+		"example": "God markedsføring er avgjørende for salg.",
+		"example_english": "Good marketing is crucial for sales.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "en fusjon",
+		"english": "a merger",
+		"example": "De to selskapene gjennomgikk en fusjon.",
+		"example_english": "The two companies underwent a merger.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "å outsource",
+		"english": "to outsource",
+		"example": "De valgte å outsource IT-driften.",
+		"example_english": "They chose to outsource IT operations.",
+		"level": "B2",
+		"category": "business",
+		"part": "verb"
+	},
+	{
+		"norsk": "en konkurrent",
+		"english": "a competitor",
+		"example": "Vi overvåker konkurrentenes priser.",
+		"example_english": "We monitor competitors' prices.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "bærekraft",
+		"english": "sustainability",
+		"example": "Bærekraft er høyt på agendaen for moderne bedrifter.",
+		"example_english": "Sustainability is high on the agenda for modern companies.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "en kunde",
+		"english": "a customer / a client",
+		"example": "Kunden er alltid i fokus.",
+		"example_english": "The customer is always the focus.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "en portefølje",
+		"english": "a portfolio",
+		"example": "Investeringsporteføljen er godt diversifisert.",
+		"example_english": "The investment portfolio is well diversified.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "et budsjett",
+		"english": "a budget",
+		"example": "Vi holdt oss innenfor budsjettet.",
+		"example_english": "We stayed within the budget.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "å delegere",
+		"english": "to delegate",
+		"example": "En god leder vet å delegere oppgaver.",
+		"example_english": "A good leader knows how to delegate tasks.",
+		"level": "B2",
+		"category": "business",
+		"part": "verb"
+	},
+	{
+		"norsk": "en oppstart",
+		"english": "a startup",
+		"example": "Oslo har et voksende oppstartsmiljø.",
+		"example_english": "Oslo has a growing startup ecosystem.",
+		"level": "B2",
+		"category": "business",
+		"part": "noun"
+	},
+	{
+		"norsk": "å skalere",
+		"english": "to scale (a business)",
+		"example": "Målet er å skalere virksomheten internasjonalt.",
+		"example_english": "The goal is to scale the business internationally.",
+		"level": "B2",
+		"category": "business",
+		"part": "verb"
+	},
+
+	{
+		"norsk": "en tro",
+		"english": "a belief / a faith",
+		"example": "Religiøs tro gir mange mennesker mening.",
+		"example_english": "Religious faith gives many people meaning.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "et ritual",
+		"english": "a ritual",
+		"example": "Ritualene varierer mellom religioner.",
+		"example_english": "Rituals vary between religions.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "å tilbe",
+		"english": "to worship",
+		"example": "De tilber en gud de kaller skaperen.",
+		"example_english": "They worship a god they call the creator.",
+		"level": "B2",
+		"category": "religion",
+		"part": "verb"
+	},
+	{
+		"norsk": "en kirke",
+		"english": "a church",
+		"example": "Den norske kirke er en luthersk kirke.",
+		"example_english": "The Church of Norway is a Lutheran church.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "en moske",
+		"english": "a mosque",
+		"example": "Det er flere moskeer i Oslo.",
+		"example_english": "There are several mosques in Oslo.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "hellig",
+		"english": "holy / sacred",
+		"example": "Jerusalem er hellig for tre religioner.",
+		"example_english": "Jerusalem is holy to three religions.",
+		"level": "B2",
+		"category": "religion",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en tradisjon",
+		"english": "a tradition",
+		"example": "Mange tradisjoner har religiøse røtter.",
+		"example_english": "Many traditions have religious roots.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "en gud",
+		"english": "a god",
+		"example": "Ulike kulturer har dyrket ulike guder.",
+		"example_english": "Different cultures have worshipped different gods.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "et bønn",
+		"english": "a prayer",
+		"example": "Hun ba sin kveldsbønn.",
+		"example_english": "She said her evening prayer.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "en prest",
+		"english": "a priest / a minister",
+		"example": "Presten holdt en rørende tale.",
+		"example_english": "The priest gave a moving speech.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "sekularisering",
+		"english": "secularisation",
+		"example": "Sekularisering har økt i Norge de siste tiårene.",
+		"example_english": "Secularisation has increased in Norway in recent decades.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "et tempel",
+		"english": "a temple",
+		"example": "Templet ble bygget for tusen år siden.",
+		"example_english": "The temple was built a thousand years ago.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "en pilgrimsreise",
+		"english": "a pilgrimage",
+		"example": "Pilegrimer reiser til Santiago de Compostela.",
+		"example_english": "Pilgrims travel to Santiago de Compostela.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "å faste",
+		"english": "to fast",
+		"example": "Muslimer faster i løpet av ramadan.",
+		"example_english": "Muslims fast during Ramadan.",
+		"level": "B2",
+		"category": "religion",
+		"part": "verb"
+	},
+	{
+		"norsk": "en profet",
+		"english": "a prophet",
+		"example": "Moses regnes som en profet i jødedommen.",
+		"example_english": "Moses is regarded as a prophet in Judaism.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "et kloster",
+		"english": "a monastery / a convent",
+		"example": "Munker lever i kloster.",
+		"example_english": "Monks live in a monastery.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "synkretisme",
+		"english": "syncretism",
+		"example": "Synkretisme blander elementer fra ulike religioner.",
+		"example_english": "Syncretism blends elements from different religions.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "en konfesjon",
+		"english": "a denomination / a confession",
+		"example": "Det finnes mange kristne konfesjoner.",
+		"example_english": "There are many Christian denominations.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "ateisme",
+		"english": "atheism",
+		"example": "Ateisme er utbredt i Skandinavia.",
+		"example_english": "Atheism is widespread in Scandinavia.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "agnostisisme",
+		"english": "agnosticism",
+		"example": "Agnostisisme innebærer at man ikke vet om gud finnes.",
+		"example_english": "Agnosticism means not knowing whether god exists.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "en skrift",
+		"english": "a scripture / a text",
+		"example": "Bibelen er den kristne hellige skriften.",
+		"example_english": "The Bible is the Christian holy scripture.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "transcendent",
+		"english": "transcendent",
+		"example": "Religiøse opplevelser beskrives ofte som transcendente.",
+		"example_english": "Religious experiences are often described as transcendent.",
+		"level": "B2",
+		"category": "religion",
+		"part": "adjective"
+	},
+	{
+		"norsk": "en seremoni",
+		"english": "a ceremony",
+		"example": "Bryllupsseremonien ble holdt i kirken.",
+		"example_english": "The wedding ceremony was held in the church.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "et offer",
+		"english": "a sacrifice / an offering",
+		"example": "Offer var vanlig i mange antikke religioner.",
+		"example_english": "Sacrifice was common in many ancient religions.",
+		"level": "B2",
+		"category": "religion",
+		"part": "noun"
+	},
+	{
+		"norsk": "religiøs toleranse",
+		"english": "religious tolerance",
+		"example": "Religiøs toleranse er en demokratisk verdi.",
+		"example_english": "Religious tolerance is a democratic value.",
+		"level": "B2",
+		"category": "religion",
+		"part": "phrase"
 	}
 ]
