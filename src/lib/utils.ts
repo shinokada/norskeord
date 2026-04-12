@@ -1,15 +1,12 @@
 export const validFlashcardPathPattern = /^(\/|\/about|\/[a-z]\d\/[^/]+)$/;
 
 export function removeHyphensAndCapitalize(str: string) {
-	// Handle empty string or strings without '-'
-	if (!str || !str.includes('-')) {
-		return str;
-	}
+	if (!str) return str;
 
-	// Capitalize the first letter (including after hyphens)
+	// Capitalize the first letter of every word (including after hyphens)
 	const capitalized = str.replace(/(^|\s|-)\w/g, (match) => match.toUpperCase());
 
-	// Remove hyphens and ensure spaces after words
+	// Remove hyphens and collapse extra spaces
 	return capitalized.replace(/-|\s{2,}/g, ' ');
 }
 

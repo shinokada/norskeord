@@ -6,7 +6,7 @@
 		NavUl,
 		NavHamburger,
 		DarkMode,
-		MegaMenu
+		MegaMenu, Dropdown, DropdownItem
 	} from 'flowbite-svelte';
 	import No from '$lib/No.svelte';
 	import { page } from '$app/state';
@@ -15,52 +15,29 @@
 	import ChevronDownOutline from './ChevronDownOutline.svelte';
 
 	let activeUrl = $derived(page.url.pathname);
-	let activeClass = 'p-2 text-base hover:text-gray-500';
-	let nonActiveClass = 'p-2 text-base hover:text-gray-500';
+
+	const activeClass = 'p-2 text-base hover:text-gray-500';
+	const nonActiveClass = 'p-2 text-base hover:text-gray-500';
 
 	const linkClass =
 		'flex items-center gap-1.5 py-1 text-sm text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400';
-	const badgeClass =
-		'shrink-0 rounded bg-gray-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-gray-500 dark:bg-gray-600 dark:text-gray-400';
 
-	const aNiva = [
-		...CATEGORIES_BY_LEVEL.A1.map((c) => ({
+	// 🔹 Helper to build menu items
+	function buildItems(level: keyof typeof CATEGORIES_BY_LEVEL) {
+		return CATEGORIES_BY_LEVEL[level].map((c) => ({
 			name: removeHyphensAndCapitalize(c),
-			href: `/a1/${c}`,
-			level: 'A1'
-		})),
-		...CATEGORIES_BY_LEVEL.A2.map((c) => ({
-			name: removeHyphensAndCapitalize(c),
-			href: `/a2/${c}`,
-			level: 'A2'
-		}))
-	];
+			href: `/${level.toLowerCase()}/${c}`,
+			level
+		}));
+	}
 
-	const bNiva = [
-		...CATEGORIES_BY_LEVEL.B1.map((c) => ({
-			name: removeHyphensAndCapitalize(c),
-			href: `/b1/${c}`,
-			level: 'B1'
-		})),
-		...CATEGORIES_BY_LEVEL.B2.map((c) => ({
-			name: removeHyphensAndCapitalize(c),
-			href: `/b2/${c}`,
-			level: 'B2'
-		}))
-	];
+	// 🔹 Centralized config
+	const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 
-	const cNiva = [
-		...CATEGORIES_BY_LEVEL.C1.map((c) => ({
-			name: removeHyphensAndCapitalize(c),
-			href: `/c1/${c}`,
-			level: 'C1'
-		})),
-		...CATEGORIES_BY_LEVEL.C2.map((c) => ({
-			name: removeHyphensAndCapitalize(c),
-			href: `/c2/${c}`,
-			level: 'C2'
-		}))
-	];
+	const menus = levels.map((level) => ({
+		level,
+		items: buildItems(level)
+	}));
 </script>
 
 <Navbar
@@ -71,56 +48,43 @@
 >
 	<NavBrand href="/">
 		<No size="40" class="inline" />
-		<span class="ml-2 self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-			>Norske flashcard</span
-		>
+		<span class="ml-2 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+			Norske flashcard
+		</span>
 	</NavBrand>
+
 	<div class="flex items-center lg:order-2">
 		<DarkMode class="inline-block hover:text-gray-900 dark:hover:text-white" />
 		<NavHamburger />
 	</div>
+
 	<NavUl
 		breakpoint="lg"
 		{activeUrl}
 		class="order-2 lg:order-1"
 		classes={{ active: activeClass, nonActive: nonActiveClass, ul: 'p-0' }}
 	>
-		<NavLi class="cursor-pointer">
-			Nivå A <ChevronDownOutline size="sm" class="ms-1 inline" />
-		</NavLi>
-		<MegaMenu items={aNiva}>
+		{#each menus as { level, items }}
+			<NavLi class="cursor-pointer">
+				{level}
+				<ChevronDownOutline size="sm" class="ms-1 inline" />
+			</NavLi>
+
+			<MegaMenu {items} ulClass="!gap-x-8">
 			{#snippet children({ item })}
 				<a href={item.href} class={linkClass}>
-					<span class={badgeClass}>{item.level}</span>
 					{item.name}
 				</a>
 			{/snippet}
 		</MegaMenu>
+		{/each}
 
 		<NavLi class="cursor-pointer">
-			Nivå B <ChevronDownOutline size="sm" class="ms-1 inline" />
-		</NavLi>
-		<MegaMenu items={bNiva}>
-			{#snippet children({ item })}
-				<a href={item.href} class={linkClass}>
-					<span class={badgeClass}>{item.level}</span>
-					{item.name}
-				</a>
-			{/snippet}
-		</MegaMenu>
-
-		<NavLi class="cursor-pointer">
-			Nivå C <ChevronDownOutline size="sm" class="ms-1 inline" />
-		</NavLi>
-		<MegaMenu items={cNiva}>
-			{#snippet children({ item })}
-				<a href={item.href} class={linkClass}>
-					<span class={badgeClass}>{item.level}</span>
-					{item.name}
-				</a>
-			{/snippet}
-		</MegaMenu>
-
-		<NavLi href="/about">About</NavLi>
+      More<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
+    </NavLi>
+    <Dropdown simple class="w-44">
+      <DropdownItem href="/about">About</DropdownItem>
+      <DropdownItem href="/resources">Resources</DropdownItem>
+    </Dropdown>
 	</NavUl>
 </Navbar>
