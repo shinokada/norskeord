@@ -1,5 +1,5 @@
 <script>
-	import { A, P, Heading, List, Li } from 'flowbite-svelte';
+	import { A, Heading, List, Li } from 'flowbite-svelte';
 </script>
 
 <div class="mx-auto max-w-4xl p-8 text-left">
