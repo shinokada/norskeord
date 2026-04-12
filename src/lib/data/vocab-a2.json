@@ -1,3359 +1,3359 @@
 [
-	{
-		"norsk": "en butikk",
-		"english": "a shop / a store",
-		"example": "Jeg går i butikken etter jobben.",
-		"example_english": "I go to the shop after work.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "en pris",
-		"english": "a price",
-		"example": "Hva er prisen på denne jakken?",
-		"example_english": "What is the price of this jacket?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "å betale",
-		"english": "to pay",
-		"example": "Kan jeg betale med kort?",
-		"example_english": "Can I pay by card?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "verb"
-	},
-	{
-		"norsk": "å kjøpe",
-		"english": "to buy",
-		"example": "Jeg vil kjøpe en ny bok.",
-		"example_english": "I want to buy a new book.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "verb"
-	},
-	{
-		"norsk": "å selge",
-		"english": "to sell",
-		"example": "De selger frukt på torget.",
-		"example_english": "They sell fruit at the market.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "verb"
-	},
-	{
-		"norsk": "billig",
-		"english": "cheap / inexpensive",
-		"example": "Denne skjorten er veldig billig.",
-		"example_english": "This shirt is very cheap.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "adjective"
-	},
-	{
-		"norsk": "dyr",
-		"english": "expensive",
-		"example": "Den nye mobilen er altfor dyr.",
-		"example_english": "The new phone is far too expensive.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "adjective"
-	},
-	{
-		"norsk": "en kasse",
-		"english": "a checkout / a till",
-		"example": "Det er lang kø ved kassen.",
-		"example_english": "There is a long queue at the checkout.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kvittering",
-		"english": "a receipt",
-		"example": "Kan jeg få kvitteringen?",
-		"example_english": "Can I have the receipt?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "et tilbud",
-		"english": "a sale / a deal / an offer",
-		"example": "Det er tilbud på melk i dag.",
-		"example_english": "There is a deal on milk today.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "en pose",
-		"english": "a bag",
-		"example": "Vil du ha en pose?",
-		"example_english": "Do you want a bag?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "å prøve",
-		"english": "to try / to try on",
-		"example": "Kan jeg prøve denne buksen?",
-		"example_english": "Can I try on these trousers?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "verb"
-	},
-	{
-		"norsk": "et kjøpesenter",
-		"english": "a shopping centre",
-		"example": "Vi møtes på kjøpesenteret klokka tre.",
-		"example_english": "We will meet at the shopping centre at three.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "en rabatt",
-		"english": "a discount",
-		"example": "Studenter får ti prosent rabatt.",
-		"example_english": "Students get ten percent discount.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "å bytte",
-		"english": "to exchange / to swap",
-		"example": "Jeg vil bytte denne jakken til en større.",
-		"example_english": "I want to exchange this jacket for a larger one.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "verb"
-	},
-	{
-		"norsk": "en størrelse",
-		"english": "a size",
-		"example": "Har dere denne i størrelse medium?",
-		"example_english": "Do you have this in size medium?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "et supermarked",
-		"english": "a supermarket",
-		"example": "Vi handler mat på supermarkedet.",
-		"example_english": "We buy food at the supermarket.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "penger",
-		"english": "money",
-		"example": "Jeg har ikke nok penger med meg.",
-		"example_english": "I don't have enough money with me.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "et kort",
-		"english": "a (bank/credit) card",
-		"example": "Unnskyld, tar dere kort?",
-		"example_english": "Excuse me, do you accept card?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kø",
-		"english": "a queue",
-		"example": "Det er lang kø i butikken.",
-		"example_english": "There is a long queue in the shop.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "å handle",
-		"english": "to shop / to do shopping",
-		"example": "Vi handler mat hver lørdag.",
-		"example_english": "We do grocery shopping every Saturday.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "verb"
-	},
-	{
-		"norsk": "en matvare",
-		"english": "a food item / groceries",
-		"example": "Jeg trenger å kjøpe noen matvarer.",
-		"example_english": "I need to buy some groceries.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "åpningstider",
-		"english": "opening hours",
-		"example": "Hva er åpningstidene på lørdag?",
-		"example_english": "What are the opening hours on Saturday?",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "en krone",
-		"english": "a krone (Norwegian currency)",
-		"example": "Det koster hundre kroner.",
-		"example_english": "It costs one hundred kroner.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "noun"
-	},
-	{
-		"norsk": "gratis",
-		"english": "free (of charge)",
-		"example": "Parkering er gratis her.",
-		"example_english": "Parking is free here.",
-		"level": "A2",
-		"category": "shopping",
-		"part": "adjective"
-	},
+  {
+    "norsk": "en butikk",
+    "english": "a shop / a store",
+    "example": "Jeg går i butikken etter jobben.",
+    "example_english": "I go to the shop after work.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "en pris",
+    "english": "a price",
+    "example": "Hva er prisen på denne jakken?",
+    "example_english": "What is the price of this jacket?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "å betale",
+    "english": "to pay",
+    "example": "Kan jeg betale med kort?",
+    "example_english": "Can I pay by card?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "verb"
+  },
+  {
+    "norsk": "å kjøpe",
+    "english": "to buy",
+    "example": "Jeg vil kjøpe en ny bok.",
+    "example_english": "I want to buy a new book.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "verb"
+  },
+  {
+    "norsk": "å selge",
+    "english": "to sell",
+    "example": "De selger frukt på torget.",
+    "example_english": "They sell fruit at the market.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "verb"
+  },
+  {
+    "norsk": "billig",
+    "english": "cheap / inexpensive",
+    "example": "Denne skjorten er veldig billig.",
+    "example_english": "This shirt is very cheap.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "adjective"
+  },
+  {
+    "norsk": "dyr",
+    "english": "expensive",
+    "example": "Den nye mobilen er altfor dyr.",
+    "example_english": "The new phone is far too expensive.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "adjective"
+  },
+  {
+    "norsk": "en kasse",
+    "english": "a checkout / a till",
+    "example": "Det er lang kø ved kassen.",
+    "example_english": "There is a long queue at the checkout.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kvittering",
+    "english": "a receipt",
+    "example": "Kan jeg få kvitteringen?",
+    "example_english": "Can I have the receipt?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "et tilbud",
+    "english": "a sale / a deal / an offer",
+    "example": "Det er tilbud på melk i dag.",
+    "example_english": "There is a deal on milk today.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "en pose",
+    "english": "a bag",
+    "example": "Vil du ha en pose?",
+    "example_english": "Do you want a bag?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "å prøve",
+    "english": "to try / to try on",
+    "example": "Kan jeg prøve denne buksen?",
+    "example_english": "Can I try on these trousers?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "verb"
+  },
+  {
+    "norsk": "et kjøpesenter",
+    "english": "a shopping centre",
+    "example": "Vi møtes på kjøpesenteret klokka tre.",
+    "example_english": "We will meet at the shopping centre at three.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "en rabatt",
+    "english": "a discount",
+    "example": "Studenter får ti prosent rabatt.",
+    "example_english": "Students get ten percent discount.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "å bytte",
+    "english": "to exchange / to swap",
+    "example": "Jeg vil bytte denne jakken til en større.",
+    "example_english": "I want to exchange this jacket for a larger one.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "verb"
+  },
+  {
+    "norsk": "en størrelse",
+    "english": "a size",
+    "example": "Har dere denne i størrelse medium?",
+    "example_english": "Do you have this in size medium?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "et supermarked",
+    "english": "a supermarket",
+    "example": "Vi handler mat på supermarkedet.",
+    "example_english": "We buy food at the supermarket.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "penger",
+    "english": "money",
+    "example": "Jeg har ikke nok penger med meg.",
+    "example_english": "I don't have enough money with me.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "et kort",
+    "english": "a (bank/credit) card",
+    "example": "Unnskyld, tar dere kort?",
+    "example_english": "Excuse me, do you accept card?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kø",
+    "english": "a queue",
+    "example": "Det er lang kø i butikken.",
+    "example_english": "There is a long queue in the shop.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "å handle",
+    "english": "to shop / to do shopping",
+    "example": "Vi handler mat hver lørdag.",
+    "example_english": "We do grocery shopping every Saturday.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "verb"
+  },
+  {
+    "norsk": "en matvare",
+    "english": "a food item / groceries",
+    "example": "Jeg trenger å kjøpe noen matvarer.",
+    "example_english": "I need to buy some groceries.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "åpningstider",
+    "english": "opening hours",
+    "example": "Hva er åpningstidene på lørdag?",
+    "example_english": "What are the opening hours on Saturday?",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "en krone",
+    "english": "a krone (Norwegian currency)",
+    "example": "Det koster hundre kroner.",
+    "example_english": "It costs one hundred kroner.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "noun"
+  },
+  {
+    "norsk": "gratis",
+    "english": "free (of charge)",
+    "example": "Parkering er gratis her.",
+    "example_english": "Parking is free here.",
+    "level": "A2",
+    "category": "shopping",
+    "part": "adjective"
+  },
 
-	{
-		"norsk": "en buss",
-		"english": "a bus",
-		"example": "Jeg tar bussen til jobben.",
-		"example_english": "I take the bus to work.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "et tog",
-		"english": "a train",
-		"example": "Toget går klokka åtte.",
-		"example_english": "The train leaves at eight o'clock.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en bil",
-		"english": "a car",
-		"example": "Han kjører bil til jobb.",
-		"example_english": "He drives a car to work.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sykkel",
-		"english": "a bicycle",
-		"example": "Jeg sykler til skolen om sommeren.",
-		"example_english": "I cycle to school in the summer.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "et fly",
-		"english": "an aeroplane",
-		"example": "Vi reiser med fly til London.",
-		"example_english": "We travel by plane to London.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en båt",
-		"english": "a boat",
-		"example": "Vi tok båten over fjorden.",
-		"example_english": "We took the boat across the fjord.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en trikk",
-		"english": "a tram",
-		"example": "Trikken er rask i sentrum.",
-		"example_english": "The tram is fast in the city centre.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en T-bane",
-		"english": "an underground / a metro",
-		"example": "Ta T-banen til Nationaltheatret.",
-		"example_english": "Take the metro to Nationaltheatret.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en taxi",
-		"english": "a taxi",
-		"example": "Kan du bestille en taxi til meg?",
-		"example_english": "Can you order a taxi for me?",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en stasjon",
-		"english": "a station",
-		"example": "Vi møtes på togstasjonen.",
-		"example_english": "We will meet at the train station.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en holdeplass",
-		"english": "a bus stop",
-		"example": "Holdeplassen er rett rundt hjørnet.",
-		"example_english": "The bus stop is just around the corner.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en billett",
-		"english": "a ticket",
-		"example": "Jeg kjøpte billett på nettet.",
-		"example_english": "I bought a ticket online.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "å reise",
-		"english": "to travel",
-		"example": "Vi reiser til Bergen neste uke.",
-		"example_english": "We are travelling to Bergen next week.",
-		"level": "A2",
-		"category": "transport",
-		"part": "verb"
-	},
-	{
-		"norsk": "å kjøre",
-		"english": "to drive",
-		"example": "Hun kjører fort.",
-		"example_english": "She drives fast.",
-		"level": "A2",
-		"category": "transport",
-		"part": "verb"
-	},
-	{
-		"norsk": "å gå",
-		"english": "to walk / to go",
-		"example": "Vi går til skolen.",
-		"example_english": "We walk to school.",
-		"level": "A2",
-		"category": "transport",
-		"part": "verb"
-	},
-	{
-		"norsk": "å sykle",
-		"english": "to cycle",
-		"example": "Han sykler til jobben hver dag.",
-		"example_english": "He cycles to work every day.",
-		"level": "A2",
-		"category": "transport",
-		"part": "verb"
-	},
-	{
-		"norsk": "en flyplass",
-		"english": "an airport",
-		"example": "Flyplassen er langt fra sentrum.",
-		"example_english": "The airport is far from the city centre.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "sen",
-		"english": "late",
-		"example": "Toget er ti minutter sent.",
-		"example_english": "The train is ten minutes late.",
-		"level": "A2",
-		"category": "transport",
-		"part": "adjective"
-	},
-	{
-		"norsk": "en avgang",
-		"english": "a departure",
-		"example": "Avgangen er klokka tolv.",
-		"example_english": "The departure is at twelve o'clock.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "en ankomst",
-		"english": "an arrival",
-		"example": "Ankomsten er forsinket.",
-		"example_english": "The arrival is delayed.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
-	{
-		"norsk": "å bytte",
-		"english": "to change (transport)",
-		"example": "Du må bytte tog i Oslo.",
-		"example_english": "You need to change trains in Oslo.",
-		"level": "A2",
-		"category": "transport",
-		"part": "verb"
-	},
-	{
-		"norsk": "rett frem",
-		"english": "straight ahead",
-		"example": "Kjør rett frem til rundkjøringen.",
-		"example_english": "Drive straight ahead to the roundabout.",
-		"level": "A2",
-		"category": "transport",
-		"part": "phrase"
-	},
-	{
-		"norsk": "en ferge",
-		"english": "a ferry",
-		"example": "Vi tar fergen til øya.",
-		"example_english": "We take the ferry to the island.",
-		"level": "A2",
-		"category": "transport",
-		"part": "noun"
-	},
+  {
+    "norsk": "en buss",
+    "english": "a bus",
+    "example": "Jeg tar bussen til jobben.",
+    "example_english": "I take the bus to work.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "et tog",
+    "english": "a train",
+    "example": "Toget går klokka åtte.",
+    "example_english": "The train leaves at eight o'clock.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bil",
+    "english": "a car",
+    "example": "Han kjører bil til jobb.",
+    "example_english": "He drives a car to work.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sykkel",
+    "english": "a bicycle",
+    "example": "Jeg sykler til skolen om sommeren.",
+    "example_english": "I cycle to school in the summer.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "et fly",
+    "english": "an aeroplane",
+    "example": "Vi reiser med fly til London.",
+    "example_english": "We travel by plane to London.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en båt",
+    "english": "a boat",
+    "example": "Vi tok båten over fjorden.",
+    "example_english": "We took the boat across the fjord.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en trikk",
+    "english": "a tram",
+    "example": "Trikken er rask i sentrum.",
+    "example_english": "The tram is fast in the city centre.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en T-bane",
+    "english": "an underground / a metro",
+    "example": "Ta T-banen til Nationaltheatret.",
+    "example_english": "Take the metro to Nationaltheatret.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en taxi",
+    "english": "a taxi",
+    "example": "Kan du bestille en taxi til meg?",
+    "example_english": "Can you order a taxi for me?",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en stasjon",
+    "english": "a station",
+    "example": "Vi møtes på togstasjonen.",
+    "example_english": "We will meet at the train station.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en holdeplass",
+    "english": "a bus stop",
+    "example": "Holdeplassen er rett rundt hjørnet.",
+    "example_english": "The bus stop is just around the corner.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en billett",
+    "english": "a ticket",
+    "example": "Jeg kjøpte billett på nettet.",
+    "example_english": "I bought a ticket online.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "å reise",
+    "english": "to travel",
+    "example": "Vi reiser til Bergen neste uke.",
+    "example_english": "We are travelling to Bergen next week.",
+    "level": "A2",
+    "category": "transport",
+    "part": "verb"
+  },
+  {
+    "norsk": "å kjøre",
+    "english": "to drive",
+    "example": "Hun kjører fort.",
+    "example_english": "She drives fast.",
+    "level": "A2",
+    "category": "transport",
+    "part": "verb"
+  },
+  {
+    "norsk": "å gå",
+    "english": "to walk / to go",
+    "example": "Vi går til skolen.",
+    "example_english": "We walk to school.",
+    "level": "A2",
+    "category": "transport",
+    "part": "verb"
+  },
+  {
+    "norsk": "å sykle",
+    "english": "to cycle",
+    "example": "Han sykler til jobben hver dag.",
+    "example_english": "He cycles to work every day.",
+    "level": "A2",
+    "category": "transport",
+    "part": "verb"
+  },
+  {
+    "norsk": "en flyplass",
+    "english": "an airport",
+    "example": "Flyplassen er langt fra sentrum.",
+    "example_english": "The airport is far from the city centre.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "sen",
+    "english": "late",
+    "example": "Toget er ti minutter sent.",
+    "example_english": "The train is ten minutes late.",
+    "level": "A2",
+    "category": "transport",
+    "part": "adjective"
+  },
+  {
+    "norsk": "en avgang",
+    "english": "a departure",
+    "example": "Avgangen er klokka tolv.",
+    "example_english": "The departure is at twelve o'clock.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "en ankomst",
+    "english": "an arrival",
+    "example": "Ankomsten er forsinket.",
+    "example_english": "The arrival is delayed.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
+  {
+    "norsk": "å bytte",
+    "english": "to change (transport)",
+    "example": "Du må bytte tog i Oslo.",
+    "example_english": "You need to change trains in Oslo.",
+    "level": "A2",
+    "category": "transport",
+    "part": "verb"
+  },
+  {
+    "norsk": "rett frem",
+    "english": "straight ahead",
+    "example": "Kjør rett frem til rundkjøringen.",
+    "example_english": "Drive straight ahead to the roundabout.",
+    "level": "A2",
+    "category": "transport",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en ferge",
+    "english": "a ferry",
+    "example": "Vi tar fergen til øya.",
+    "example_english": "We take the ferry to the island.",
+    "level": "A2",
+    "category": "transport",
+    "part": "noun"
+  },
 
-	{
-		"norsk": "en jakke",
-		"english": "a jacket",
-		"example": "Jeg tar på meg jakken fordi det er kaldt.",
-		"example_english": "I put on my jacket because it is cold.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en bukse",
-		"english": "trousers",
-		"example": "Han har på seg en blå bukse.",
-		"example_english": "He is wearing blue trousers.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en skjorte",
-		"english": "a shirt",
-		"example": "Han har hvit skjorte på jobbintervjuet.",
-		"example_english": "He wears a white shirt to the job interview.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kjole",
-		"english": "a dress",
-		"example": "Hun har på seg en rød kjole.",
-		"example_english": "She is wearing a red dress.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en genser",
-		"english": "a jumper / a sweater",
-		"example": "Jeg tar på meg genseren.",
-		"example_english": "I put on my jumper.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sko",
-		"english": "a shoe",
-		"example": "Jeg trenger nye sko.",
-		"example_english": "I need new shoes.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sokk",
-		"english": "a sock",
-		"example": "Jeg finner ikke sokkene mine.",
-		"example_english": "I can't find my socks.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "ei lue",
-		"english": "a (woolly) hat / beanie",
-		"example": "Ta på deg lua, det er kaldt!",
-		"example_english": "Put on your hat, it is cold!",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "et skjerf",
-		"english": "a scarf",
-		"example": "Hun har et langt, rødt skjerf.",
-		"example_english": "She has a long red scarf.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en frakk",
-		"english": "a coat",
-		"example": "En varm frakk er viktig om vinteren.",
-		"example_english": "A warm coat is important in winter.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "et undertøy",
-		"english": "underwear",
-		"example": "Undertøy av ull holder deg varm.",
-		"example_english": "Wool underwear keeps you warm.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en t-skjorte",
-		"english": "a T-shirt",
-		"example": "Jeg bruker t-skjorte om sommeren.",
-		"example_english": "I wear a T-shirt in the summer.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en shorts",
-		"english": "shorts",
-		"example": "Han har på seg shorts på stranden.",
-		"example_english": "He is wearing shorts on the beach.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "å kle seg",
-		"english": "to get dressed",
-		"example": "Barn trenger hjelp til å kle seg.",
-		"example_english": "Children need help to get dressed.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "verb"
-	},
-	{
-		"norsk": "å ha på seg",
-		"english": "to wear / to have on",
-		"example": "Hva har du på deg i dag?",
-		"example_english": "What are you wearing today?",
-		"level": "A2",
-		"category": "clothing",
-		"part": "verb"
-	},
-	{
-		"norsk": "et belte",
-		"english": "a belt",
-		"example": "Jeg glemte beltet hjemme.",
-		"example_english": "I forgot my belt at home.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "hansker",
-		"english": "gloves",
-		"example": "Ta med hansker, det er minusgrader.",
-		"example_english": "Bring gloves, it is below zero.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en drakt",
-		"english": "a suit",
-		"example": "Han har på seg drakt på møtet.",
-		"example_english": "He is wearing a suit at the meeting.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "en pyjamas",
-		"english": "pyjamas",
-		"example": "Barna tar på seg pyjamasen.",
-		"example_english": "The children put on their pyjamas.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "strikket",
-		"english": "knitted",
-		"example": "Bestemor ga meg en strikket genser.",
-		"example_english": "Grandma gave me a knitted jumper.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "adjective"
-	},
-	{
-		"norsk": "trang",
-		"english": "tight / narrow",
-		"example": "Disse buksene er litt for trange.",
-		"example_english": "These trousers are a bit too tight.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "adjective"
-	},
-	{
-		"norsk": "løs",
-		"english": "loose / baggy",
-		"example": "Jeg foretrekker løse bukser.",
-		"example_english": "I prefer loose trousers.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "adjective"
-	},
-	{
-		"norsk": "et antrekk",
-		"english": "an outfit",
-		"example": "Det er et fint antrekk du har på deg!",
-		"example_english": "That is a nice outfit you are wearing!",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "mote",
-		"english": "fashion",
-		"example": "Hun er alltid oppdatert på moten.",
-		"example_english": "She is always up to date with fashion.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "noun"
-	},
-	{
-		"norsk": "å vaske klær",
-		"english": "to do laundry / to wash clothes",
-		"example": "Jeg vasker klær hver mandag.",
-		"example_english": "I do laundry every Monday.",
-		"level": "A2",
-		"category": "clothing",
-		"part": "phrase"
-	},
+  {
+    "norsk": "en jakke",
+    "english": "a jacket",
+    "example": "Jeg tar på meg jakken fordi det er kaldt.",
+    "example_english": "I put on my jacket because it is cold.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bukse",
+    "english": "trousers",
+    "example": "Han har på seg en blå bukse.",
+    "example_english": "He is wearing blue trousers.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skjorte",
+    "english": "a shirt",
+    "example": "Han har hvit skjorte på jobbintervjuet.",
+    "example_english": "He wears a white shirt to the job interview.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kjole",
+    "english": "a dress",
+    "example": "Hun har på seg en rød kjole.",
+    "example_english": "She is wearing a red dress.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en genser",
+    "english": "a jumper / a sweater",
+    "example": "Jeg tar på meg genseren.",
+    "example_english": "I put on my jumper.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sko",
+    "english": "a shoe",
+    "example": "Jeg trenger nye sko.",
+    "example_english": "I need new shoes.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sokk",
+    "english": "a sock",
+    "example": "Jeg finner ikke sokkene mine.",
+    "example_english": "I can't find my socks.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "ei lue",
+    "english": "a (woolly) hat / beanie",
+    "example": "Ta på deg lua, det er kaldt!",
+    "example_english": "Put on your hat, it is cold!",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "et skjerf",
+    "english": "a scarf",
+    "example": "Hun har et langt, rødt skjerf.",
+    "example_english": "She has a long red scarf.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en frakk",
+    "english": "a coat",
+    "example": "En varm frakk er viktig om vinteren.",
+    "example_english": "A warm coat is important in winter.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "et undertøy",
+    "english": "underwear",
+    "example": "Undertøy av ull holder deg varm.",
+    "example_english": "Wool underwear keeps you warm.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en t-skjorte",
+    "english": "a T-shirt",
+    "example": "Jeg bruker t-skjorte om sommeren.",
+    "example_english": "I wear a T-shirt in the summer.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en shorts",
+    "english": "shorts",
+    "example": "Han har på seg shorts på stranden.",
+    "example_english": "He is wearing shorts on the beach.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "å kle seg",
+    "english": "to get dressed",
+    "example": "Barn trenger hjelp til å kle seg.",
+    "example_english": "Children need help to get dressed.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "verb"
+  },
+  {
+    "norsk": "å ha på seg",
+    "english": "to wear / to have on",
+    "example": "Hva har du på deg i dag?",
+    "example_english": "What are you wearing today?",
+    "level": "A2",
+    "category": "clothing",
+    "part": "verb"
+  },
+  {
+    "norsk": "et belte",
+    "english": "a belt",
+    "example": "Jeg glemte beltet hjemme.",
+    "example_english": "I forgot my belt at home.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "hansker",
+    "english": "gloves",
+    "example": "Ta med hansker, det er minusgrader.",
+    "example_english": "Bring gloves, it is below zero.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en drakt",
+    "english": "a suit",
+    "example": "Han har på seg drakt på møtet.",
+    "example_english": "He is wearing a suit at the meeting.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "en pyjamas",
+    "english": "pyjamas",
+    "example": "Barna tar på seg pyjamasen.",
+    "example_english": "The children put on their pyjamas.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "strikket",
+    "english": "knitted",
+    "example": "Bestemor ga meg en strikket genser.",
+    "example_english": "Grandma gave me a knitted jumper.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "adjective"
+  },
+  {
+    "norsk": "trang",
+    "english": "tight / narrow",
+    "example": "Disse buksene er litt for trange.",
+    "example_english": "These trousers are a bit too tight.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "adjective"
+  },
+  {
+    "norsk": "løs",
+    "english": "loose / baggy",
+    "example": "Jeg foretrekker løse bukser.",
+    "example_english": "I prefer loose trousers.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "adjective"
+  },
+  {
+    "norsk": "et antrekk",
+    "english": "an outfit",
+    "example": "Det er et fint antrekk du har på deg!",
+    "example_english": "That is a nice outfit you are wearing!",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "mote",
+    "english": "fashion",
+    "example": "Hun er alltid oppdatert på moten.",
+    "example_english": "She is always up to date with fashion.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "norsk": "å vaske klær",
+    "english": "to do laundry / to wash clothes",
+    "example": "Jeg vasker klær hver mandag.",
+    "example_english": "I do laundry every Monday.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "phrase"
+  },
 
-	{
-		"norsk": "en hobby",
-		"english": "a hobby",
-		"example": "Hva er hobbyen din?",
-		"example_english": "What is your hobby?",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "noun"
-	},
-	{
-		"norsk": "å lese",
-		"english": "to read",
-		"example": "Jeg liker å lese romaner.",
-		"example_english": "I like to read novels.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å spille",
-		"english": "to play (instrument/game)",
-		"example": "Han spiller gitar.",
-		"example_english": "He plays guitar.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å tegne",
-		"english": "to draw",
-		"example": "Hun liker å tegne dyr.",
-		"example_english": "She likes to draw animals.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å male",
-		"english": "to paint",
-		"example": "Han maler bilder i helgene.",
-		"example_english": "He paints pictures at weekends.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å synge",
-		"english": "to sing",
-		"example": "Vi synger i koret.",
-		"example_english": "We sing in the choir.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å danse",
-		"english": "to dance",
-		"example": "Hun danser ballett to ganger i uka.",
-		"example_english": "She dances ballet twice a week.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å fotografere",
-		"english": "to take photographs",
-		"example": "Jeg liker å fotografere naturen.",
-		"example_english": "I like to photograph nature.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å lage mat",
-		"english": "to cook",
-		"example": "Moren min liker å lage mat.",
-		"example_english": "My mother likes to cook.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å se på film",
-		"english": "to watch films",
-		"example": "Vi ser på film hver fredag.",
-		"example_english": "We watch films every Friday.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å spille dataspill",
-		"english": "to play video games",
-		"example": "Han spiller dataspill med venner.",
-		"example_english": "He plays video games with friends.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å strikke",
-		"english": "to knit",
-		"example": "Bestemor strikker en genser til meg.",
-		"example_english": "Grandma is knitting a jumper for me.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å sy",
-		"english": "to sew",
-		"example": "Hun syr egne klær.",
-		"example_english": "She sews her own clothes.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å fiske",
-		"english": "to fish",
-		"example": "Pappa liker å fiske om sommeren.",
-		"example_english": "Dad likes to fish in the summer.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "å løpe",
-		"english": "to run / to jog",
-		"example": "Jeg løper fem kilometer om morgenen.",
-		"example_english": "I run five kilometres in the morning.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "et instrument",
-		"english": "an instrument",
-		"example": "Spiller du et instrument?",
-		"example_english": "Do you play an instrument?",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "noun"
-	},
-	{
-		"norsk": "en konsert",
-		"english": "a concert",
-		"example": "Vi drar på konsert i helgen.",
-		"example_english": "We are going to a concert at the weekend.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "noun"
-	},
-	{
-		"norsk": "en tur",
-		"english": "a trip / a hike / a walk",
-		"example": "Vi tar en tur i skogen.",
-		"example_english": "We are going for a walk in the forest.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "noun"
-	},
-	{
-		"norsk": "å svømme",
-		"english": "to swim",
-		"example": "Barna svømmer i bassenget.",
-		"example_english": "The children are swimming in the pool.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "et bibliotek",
-		"english": "a library",
-		"example": "Jeg låner bøker på biblioteket.",
-		"example_english": "I borrow books from the library.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "noun"
-	},
-	{
-		"norsk": "å samle på",
-		"english": "to collect",
-		"example": "Han samler på frimerker.",
-		"example_english": "He collects stamps.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å reise",
-		"english": "to travel",
-		"example": "Jeg liker å reise til nye steder.",
-		"example_english": "I like to travel to new places.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "verb"
-	},
-	{
-		"norsk": "en hage",
-		"english": "a garden",
-		"example": "Hun jobber i hagen om sommeren.",
-		"example_english": "She works in the garden in the summer.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "noun"
-	},
-	{
-		"norsk": "å gå på tur",
-		"english": "to go hiking",
-		"example": "Vi går på tur i fjellet.",
-		"example_english": "We go hiking in the mountains.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "phrase"
-	},
-	{
-		"norsk": "et spill",
-		"english": "a game / a board game",
-		"example": "Vi spiller spill etter middag.",
-		"example_english": "We play games after dinner.",
-		"level": "A2",
-		"category": "hobbies",
-		"part": "noun"
-	},
+  {
+    "norsk": "en hobby",
+    "english": "a hobby",
+    "example": "Hva er hobbyen din?",
+    "example_english": "What is your hobby?",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  },
+  {
+    "norsk": "å lese",
+    "english": "to read",
+    "example": "Jeg liker å lese romaner.",
+    "example_english": "I like to read novels.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å spille",
+    "english": "to play (instrument/game)",
+    "example": "Han spiller gitar.",
+    "example_english": "He plays guitar.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å tegne",
+    "english": "to draw",
+    "example": "Hun liker å tegne dyr.",
+    "example_english": "She likes to draw animals.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å male",
+    "english": "to paint",
+    "example": "Han maler bilder i helgene.",
+    "example_english": "He paints pictures at weekends.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å synge",
+    "english": "to sing",
+    "example": "Vi synger i koret.",
+    "example_english": "We sing in the choir.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å danse",
+    "english": "to dance",
+    "example": "Hun danser ballett to ganger i uka.",
+    "example_english": "She dances ballet twice a week.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å fotografere",
+    "english": "to take photographs",
+    "example": "Jeg liker å fotografere naturen.",
+    "example_english": "I like to photograph nature.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å lage mat",
+    "english": "to cook",
+    "example": "Moren min liker å lage mat.",
+    "example_english": "My mother likes to cook.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å se på film",
+    "english": "to watch films",
+    "example": "Vi ser på film hver fredag.",
+    "example_english": "We watch films every Friday.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å spille dataspill",
+    "english": "to play video games",
+    "example": "Han spiller dataspill med venner.",
+    "example_english": "He plays video games with friends.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å strikke",
+    "english": "to knit",
+    "example": "Bestemor strikker en genser til meg.",
+    "example_english": "Grandma is knitting a jumper for me.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å sy",
+    "english": "to sew",
+    "example": "Hun syr egne klær.",
+    "example_english": "She sews her own clothes.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å fiske",
+    "english": "to fish",
+    "example": "Pappa liker å fiske om sommeren.",
+    "example_english": "Dad likes to fish in the summer.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "å løpe",
+    "english": "to run / to jog",
+    "example": "Jeg løper fem kilometer om morgenen.",
+    "example_english": "I run five kilometres in the morning.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "et instrument",
+    "english": "an instrument",
+    "example": "Spiller du et instrument?",
+    "example_english": "Do you play an instrument?",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  },
+  {
+    "norsk": "en konsert",
+    "english": "a concert",
+    "example": "Vi drar på konsert i helgen.",
+    "example_english": "We are going to a concert at the weekend.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  },
+  {
+    "norsk": "en tur",
+    "english": "a trip / a hike / a walk",
+    "example": "Vi tar en tur i skogen.",
+    "example_english": "We are going for a walk in the forest.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  },
+  {
+    "norsk": "å svømme",
+    "english": "to swim",
+    "example": "Barna svømmer i bassenget.",
+    "example_english": "The children are swimming in the pool.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "et bibliotek",
+    "english": "a library",
+    "example": "Jeg låner bøker på biblioteket.",
+    "example_english": "I borrow books from the library.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  },
+  {
+    "norsk": "å samle på",
+    "english": "to collect",
+    "example": "Han samler på frimerker.",
+    "example_english": "He collects stamps.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å reise",
+    "english": "to travel",
+    "example": "Jeg liker å reise til nye steder.",
+    "example_english": "I like to travel to new places.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "verb"
+  },
+  {
+    "norsk": "en hage",
+    "english": "a garden",
+    "example": "Hun jobber i hagen om sommeren.",
+    "example_english": "She works in the garden in the summer.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  },
+  {
+    "norsk": "å gå på tur",
+    "english": "to go hiking",
+    "example": "Vi går på tur i fjellet.",
+    "example_english": "We go hiking in the mountains.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "phrase"
+  },
+  {
+    "norsk": "et spill",
+    "english": "a game / a board game",
+    "example": "Vi spiller spill etter middag.",
+    "example_english": "We play games after dinner.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  },
 
-	{
-		"norsk": "til venstre",
-		"english": "to the left",
-		"example": "Ta til venstre ved lyskrysset.",
-		"example_english": "Turn left at the traffic lights.",
-		"level": "A2",
-		"category": "directions",
-		"part": "phrase"
-	},
-	{
-		"norsk": "til høyre",
-		"english": "to the right",
-		"example": "Butikken er til høyre.",
-		"example_english": "The shop is to the right.",
-		"level": "A2",
-		"category": "directions",
-		"part": "phrase"
-	},
-	{
-		"norsk": "rett frem",
-		"english": "straight ahead",
-		"example": "Gå rett frem til du ser et kjøpesenter.",
-		"example_english": "Go straight ahead until you see a shopping centre.",
-		"level": "A2",
-		"category": "directions",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å snu",
-		"english": "to turn",
-		"example": "Snu til venstre ved kirken.",
-		"example_english": "Turn left at the church.",
-		"level": "A2",
-		"category": "directions",
-		"part": "verb"
-	},
-	{
-		"norsk": "et kart",
-		"english": "a map",
-		"example": "Har du et kart over byen?",
-		"example_english": "Do you have a map of the city?",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "et lyskryss",
-		"english": "traffic lights",
-		"example": "Stopp ved lyskrysset.",
-		"example_english": "Stop at the traffic lights.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "et hjørne",
-		"english": "a corner",
-		"example": "Banken er rundt hjørnet.",
-		"example_english": "The bank is around the corner.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "en vei",
-		"english": "a road / a way",
-		"example": "Hvilken vei er det til sentrum?",
-		"example_english": "Which way is it to the city centre?",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "en gate",
-		"english": "a street",
-		"example": "Restauranten er i Karl Johans gate.",
-		"example_english": "The restaurant is on Karl Johans street.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "ved siden av",
-		"english": "next to / beside",
-		"example": "Parken er ved siden av skolen.",
-		"example_english": "The park is next to the school.",
-		"level": "A2",
-		"category": "directions",
-		"part": "preposition"
-	},
-	{
-		"norsk": "overfor",
-		"english": "opposite / across from",
-		"example": "Hotellet er overfor togstasjonen.",
-		"example_english": "The hotel is opposite the train station.",
-		"level": "A2",
-		"category": "directions",
-		"part": "preposition"
-	},
-	{
-		"norsk": "mellom",
-		"english": "between",
-		"example": "Biblioteket er mellom banken og parken.",
-		"example_english": "The library is between the bank and the park.",
-		"level": "A2",
-		"category": "directions",
-		"part": "preposition"
-	},
-	{
-		"norsk": "langt unna",
-		"english": "far away",
-		"example": "Er det langt unna herfra?",
-		"example_english": "Is it far away from here?",
-		"level": "A2",
-		"category": "directions",
-		"part": "phrase"
-	},
-	{
-		"norsk": "nær",
-		"english": "near / close",
-		"example": "Hotellet er nær flyplassen.",
-		"example_english": "The hotel is near the airport.",
-		"level": "A2",
-		"category": "directions",
-		"part": "adjective"
-	},
-	{
-		"norsk": "nord",
-		"english": "north",
-		"example": "Tromsø er i nord.",
-		"example_english": "Tromsø is in the north.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "sør",
-		"english": "south",
-		"example": "Vi reiser sørover i sommer.",
-		"example_english": "We are travelling south this summer.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "øst",
-		"english": "east",
-		"example": "Solen går opp i øst.",
-		"example_english": "The sun rises in the east.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "vest",
-		"english": "west",
-		"example": "Bergen er på vestkysten.",
-		"example_english": "Bergen is on the west coast.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "å gå forbi",
-		"english": "to pass / to go past",
-		"example": "Gå forbi kirken og snu til høyre.",
-		"example_english": "Go past the church and turn right.",
-		"level": "A2",
-		"category": "directions",
-		"part": "phrase"
-	},
-	{
-		"norsk": "en rundkjøring",
-		"english": "a roundabout",
-		"example": "Ta av ved rundkjøringen.",
-		"example_english": "Take the exit at the roundabout.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "en bro",
-		"english": "a bridge",
-		"example": "Kjør over broen.",
-		"example_english": "Drive over the bridge.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
-	{
-		"norsk": "Hvor er ...?",
-		"english": "Where is ...?",
-		"example": "Unnskyld, hvor er nærmeste apotek?",
-		"example_english": "Excuse me, where is the nearest pharmacy?",
-		"level": "A2",
-		"category": "directions",
-		"part": "phrase"
-	},
-	{
-		"norsk": "Hvordan kommer jeg til ...?",
-		"english": "How do I get to ...?",
-		"example": "Hvordan kommer jeg til togstasjonen?",
-		"example_english": "How do I get to the train station?",
-		"level": "A2",
-		"category": "directions",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å krysse",
-		"english": "to cross",
-		"example": "Kryss gaten ved overgangen.",
-		"example_english": "Cross the street at the crossing.",
-		"level": "A2",
-		"category": "directions",
-		"part": "verb"
-	},
-	{
-		"norsk": "en fotgjengerovergang",
-		"english": "a pedestrian crossing / a zebra crossing",
-		"example": "Bruk fotgjengerovergangen.",
-		"example_english": "Use the pedestrian crossing.",
-		"level": "A2",
-		"category": "directions",
-		"part": "noun"
-	},
+  {
+    "norsk": "til venstre",
+    "english": "to the left",
+    "example": "Ta til venstre ved lyskrysset.",
+    "example_english": "Turn left at the traffic lights.",
+    "level": "A2",
+    "category": "directions",
+    "part": "phrase"
+  },
+  {
+    "norsk": "til høyre",
+    "english": "to the right",
+    "example": "Butikken er til høyre.",
+    "example_english": "The shop is to the right.",
+    "level": "A2",
+    "category": "directions",
+    "part": "phrase"
+  },
+  {
+    "norsk": "rett frem",
+    "english": "straight ahead",
+    "example": "Gå rett frem til du ser et kjøpesenter.",
+    "example_english": "Go straight ahead until you see a shopping centre.",
+    "level": "A2",
+    "category": "directions",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å snu",
+    "english": "to turn",
+    "example": "Snu til venstre ved kirken.",
+    "example_english": "Turn left at the church.",
+    "level": "A2",
+    "category": "directions",
+    "part": "verb"
+  },
+  {
+    "norsk": "et kart",
+    "english": "a map",
+    "example": "Har du et kart over byen?",
+    "example_english": "Do you have a map of the city?",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "et lyskryss",
+    "english": "traffic lights",
+    "example": "Stopp ved lyskrysset.",
+    "example_english": "Stop at the traffic lights.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "et hjørne",
+    "english": "a corner",
+    "example": "Banken er rundt hjørnet.",
+    "example_english": "The bank is around the corner.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "en vei",
+    "english": "a road / a way",
+    "example": "Hvilken vei er det til sentrum?",
+    "example_english": "Which way is it to the city centre?",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "en gate",
+    "english": "a street",
+    "example": "Restauranten er i Karl Johans gate.",
+    "example_english": "The restaurant is on Karl Johans street.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "ved siden av",
+    "english": "next to / beside",
+    "example": "Parken er ved siden av skolen.",
+    "example_english": "The park is next to the school.",
+    "level": "A2",
+    "category": "directions",
+    "part": "preposition"
+  },
+  {
+    "norsk": "overfor",
+    "english": "opposite / across from",
+    "example": "Hotellet er overfor togstasjonen.",
+    "example_english": "The hotel is opposite the train station.",
+    "level": "A2",
+    "category": "directions",
+    "part": "preposition"
+  },
+  {
+    "norsk": "mellom",
+    "english": "between",
+    "example": "Biblioteket er mellom banken og parken.",
+    "example_english": "The library is between the bank and the park.",
+    "level": "A2",
+    "category": "directions",
+    "part": "preposition"
+  },
+  {
+    "norsk": "langt unna",
+    "english": "far away",
+    "example": "Er det langt unna herfra?",
+    "example_english": "Is it far away from here?",
+    "level": "A2",
+    "category": "directions",
+    "part": "phrase"
+  },
+  {
+    "norsk": "nær",
+    "english": "near / close",
+    "example": "Hotellet er nær flyplassen.",
+    "example_english": "The hotel is near the airport.",
+    "level": "A2",
+    "category": "directions",
+    "part": "adjective"
+  },
+  {
+    "norsk": "nord",
+    "english": "north",
+    "example": "Tromsø er i nord.",
+    "example_english": "Tromsø is in the north.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "sør",
+    "english": "south",
+    "example": "Vi reiser sørover i sommer.",
+    "example_english": "We are travelling south this summer.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "øst",
+    "english": "east",
+    "example": "Solen går opp i øst.",
+    "example_english": "The sun rises in the east.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "vest",
+    "english": "west",
+    "example": "Bergen er på vestkysten.",
+    "example_english": "Bergen is on the west coast.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "å gå forbi",
+    "english": "to pass / to go past",
+    "example": "Gå forbi kirken og snu til høyre.",
+    "example_english": "Go past the church and turn right.",
+    "level": "A2",
+    "category": "directions",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en rundkjøring",
+    "english": "a roundabout",
+    "example": "Ta av ved rundkjøringen.",
+    "example_english": "Take the exit at the roundabout.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bro",
+    "english": "a bridge",
+    "example": "Kjør over broen.",
+    "example_english": "Drive over the bridge.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
+  {
+    "norsk": "Hvor er ...?",
+    "english": "Where is ...?",
+    "example": "Unnskyld, hvor er nærmeste apotek?",
+    "example_english": "Excuse me, where is the nearest pharmacy?",
+    "level": "A2",
+    "category": "directions",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Hvordan kommer jeg til ...?",
+    "english": "How do I get to ...?",
+    "example": "Hvordan kommer jeg til togstasjonen?",
+    "example_english": "How do I get to the train station?",
+    "level": "A2",
+    "category": "directions",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å krysse",
+    "english": "to cross",
+    "example": "Kryss gaten ved overgangen.",
+    "example_english": "Cross the street at the crossing.",
+    "level": "A2",
+    "category": "directions",
+    "part": "verb"
+  },
+  {
+    "norsk": "en fotgjengerovergang",
+    "english": "a pedestrian crossing / a zebra crossing",
+    "example": "Bruk fotgjengerovergangen.",
+    "example_english": "Use the pedestrian crossing.",
+    "level": "A2",
+    "category": "directions",
+    "part": "noun"
+  },
 
-	{
-		"norsk": "en jobb",
-		"english": "a job",
-		"example": "Jeg har ny jobb!",
-		"example_english": "I have a new job!",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en lege",
-		"english": "a doctor",
-		"example": "Legen tar imot pasienter om morgenen.",
-		"example_english": "The doctor sees patients in the morning.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sykepleier",
-		"english": "a nurse",
-		"example": "Sykepleieren jobber på sykehuset.",
-		"example_english": "The nurse works at the hospital.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en lærer",
-		"english": "a teacher",
-		"example": "Læreren underviser norsk.",
-		"example_english": "The teacher teaches Norwegian.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en ingeniør",
-		"english": "an engineer",
-		"example": "Han er ingeniør i en oljebedrift.",
-		"example_english": "He is an engineer at an oil company.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kokk",
-		"english": "a chef / a cook",
-		"example": "Kokken lager deilig mat.",
-		"example_english": "The chef makes delicious food.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sjåfør",
-		"english": "a driver",
-		"example": "Bussjåføren er alltid hyggelig.",
-		"example_english": "The bus driver is always friendly.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en advokat",
-		"english": "a lawyer",
-		"example": "Min søster er advokat.",
-		"example_english": "My sister is a lawyer.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en politimann",
-		"english": "a police officer",
-		"example": "Politimannen hjalp oss.",
-		"example_english": "The police officer helped us.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en brannmann",
-		"english": "a firefighter",
-		"example": "Brannmennene kom raskt.",
-		"example_english": "The firefighters arrived quickly.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en journalist",
-		"english": "a journalist",
-		"example": "Journalisten intervjuet politikeren.",
-		"example_english": "The journalist interviewed the politician.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en arkitekt",
-		"english": "an architect",
-		"example": "Arkitekten tegnet et flott hus.",
-		"example_english": "The architect designed a beautiful house.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en frisør",
-		"english": "a hairdresser",
-		"example": "Jeg bestilte time hos frisøren.",
-		"example_english": "I booked an appointment at the hairdresser's.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en butikkansatt",
-		"english": "a shop assistant",
-		"example": "Den butikkansatte var veldig hjelpsomme.",
-		"example_english": "The shop assistant was very helpful.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en bonde",
-		"english": "a farmer",
-		"example": "Bonden jobber ute hele dagen.",
-		"example_english": "The farmer works outside all day.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en pilot",
-		"english": "a pilot",
-		"example": "Piloten ønsket passasjerene velkommen.",
-		"example_english": "The pilot welcomed the passengers.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en tannlege",
-		"english": "a dentist",
-		"example": "Jeg er redd for å gå til tannlegen.",
-		"example_english": "I am scared of going to the dentist.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "å jobbe",
-		"english": "to work",
-		"example": "Hun jobber deltid.",
-		"example_english": "She works part-time.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "verb"
-	},
-	{
-		"norsk": "en bedrift",
-		"english": "a company / a business",
-		"example": "Han arbeider i en stor bedrift.",
-		"example_english": "He works at a large company.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en lønn",
-		"english": "a salary / wages",
-		"example": "Lønnen min er ikke så høy.",
-		"example_english": "My salary is not that high.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "deltid",
-		"english": "part-time",
-		"example": "Jeg jobber deltid på kafeen.",
-		"example_english": "I work part-time at the café.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "heltid",
-		"english": "full-time",
-		"example": "Hun har ny heltidsjobb.",
-		"example_english": "She has a new full-time job.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kollega",
-		"english": "a colleague",
-		"example": "Kollegaene mine er hyggelige.",
-		"example_english": "My colleagues are friendly.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sjef",
-		"english": "a boss / a manager",
-		"example": "Sjefen min er streng, men rettferdig.",
-		"example_english": "My boss is strict but fair.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "noun"
-	},
-	{
-		"norsk": "å søke jobb",
-		"english": "to apply for a job",
-		"example": "Han søker jobb som lærer.",
-		"example_english": "He is applying for a job as a teacher.",
-		"level": "A2",
-		"category": "occupations",
-		"part": "phrase"
-	},
+  {
+    "norsk": "en jobb",
+    "english": "a job",
+    "example": "Jeg har ny jobb!",
+    "example_english": "I have a new job!",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en lege",
+    "english": "a doctor",
+    "example": "Legen tar imot pasienter om morgenen.",
+    "example_english": "The doctor sees patients in the morning.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sykepleier",
+    "english": "a nurse",
+    "example": "Sykepleieren jobber på sykehuset.",
+    "example_english": "The nurse works at the hospital.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en lærer",
+    "english": "a teacher",
+    "example": "Læreren underviser norsk.",
+    "example_english": "The teacher teaches Norwegian.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en ingeniør",
+    "english": "an engineer",
+    "example": "Han er ingeniør i en oljebedrift.",
+    "example_english": "He is an engineer at an oil company.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kokk",
+    "english": "a chef / a cook",
+    "example": "Kokken lager deilig mat.",
+    "example_english": "The chef makes delicious food.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sjåfør",
+    "english": "a driver",
+    "example": "Bussjåføren er alltid hyggelig.",
+    "example_english": "The bus driver is always friendly.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en advokat",
+    "english": "a lawyer",
+    "example": "Min søster er advokat.",
+    "example_english": "My sister is a lawyer.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en politimann",
+    "english": "a police officer",
+    "example": "Politimannen hjalp oss.",
+    "example_english": "The police officer helped us.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en brannmann",
+    "english": "a firefighter",
+    "example": "Brannmennene kom raskt.",
+    "example_english": "The firefighters arrived quickly.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en journalist",
+    "english": "a journalist",
+    "example": "Journalisten intervjuet politikeren.",
+    "example_english": "The journalist interviewed the politician.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en arkitekt",
+    "english": "an architect",
+    "example": "Arkitekten tegnet et flott hus.",
+    "example_english": "The architect designed a beautiful house.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en frisør",
+    "english": "a hairdresser",
+    "example": "Jeg bestilte time hos frisøren.",
+    "example_english": "I booked an appointment at the hairdresser's.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en butikkansatt",
+    "english": "a shop assistant",
+    "example": "Den butikkansatte var veldig hjelpsomme.",
+    "example_english": "The shop assistant was very helpful.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bonde",
+    "english": "a farmer",
+    "example": "Bonden jobber ute hele dagen.",
+    "example_english": "The farmer works outside all day.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en pilot",
+    "english": "a pilot",
+    "example": "Piloten ønsket passasjerene velkommen.",
+    "example_english": "The pilot welcomed the passengers.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en tannlege",
+    "english": "a dentist",
+    "example": "Jeg er redd for å gå til tannlegen.",
+    "example_english": "I am scared of going to the dentist.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "å jobbe",
+    "english": "to work",
+    "example": "Hun jobber deltid.",
+    "example_english": "She works part-time.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "verb"
+  },
+  {
+    "norsk": "en bedrift",
+    "english": "a company / a business",
+    "example": "Han arbeider i en stor bedrift.",
+    "example_english": "He works at a large company.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en lønn",
+    "english": "a salary / wages",
+    "example": "Lønnen min er ikke så høy.",
+    "example_english": "My salary is not that high.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "deltid",
+    "english": "part-time",
+    "example": "Jeg jobber deltid på kafeen.",
+    "example_english": "I work part-time at the café.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "heltid",
+    "english": "full-time",
+    "example": "Hun har ny heltidsjobb.",
+    "example_english": "She has a new full-time job.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kollega",
+    "english": "a colleague",
+    "example": "Kollegaene mine er hyggelige.",
+    "example_english": "My colleagues are friendly.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sjef",
+    "english": "a boss / a manager",
+    "example": "Sjefen min er streng, men rettferdig.",
+    "example_english": "My boss is strict but fair.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "noun"
+  },
+  {
+    "norsk": "å søke jobb",
+    "english": "to apply for a job",
+    "example": "Han søker jobb som lærer.",
+    "example_english": "He is applying for a job as a teacher.",
+    "level": "A2",
+    "category": "occupations",
+    "part": "phrase"
+  },
 
-	{
-		"norsk": "å spille fotball",
-		"english": "to play football",
-		"example": "Jeg spiller fotball med venner.",
-		"example_english": "I play football with friends.",
-		"level": "A2",
-		"category": "sports",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å svømme",
-		"english": "to swim",
-		"example": "Han svømmer en kilometr hver dag.",
-		"example_english": "He swims one kilometre every day.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "å løpe",
-		"english": "to run",
-		"example": "Hun løper 5 km om morgenen.",
-		"example_english": "She runs 5 km in the morning.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "å sykle",
-		"english": "to cycle",
-		"example": "Vi sykler i fjellet om sommeren.",
-		"example_english": "We cycle in the mountains in summer.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "å trene",
-		"english": "to exercise / to train",
-		"example": "Han trener på treningssenter tre ganger i uka.",
-		"example_english": "He trains at the gym three times a week.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "et treningssenter",
-		"english": "a gym",
-		"example": "Jeg har meldt meg inn på treningssenteret.",
-		"example_english": "I have joined the gym.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kamp",
-		"english": "a match / a game",
-		"example": "Vi skal se kampen på TV.",
-		"example_english": "We are going to watch the match on TV.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "et lag",
-		"english": "a team",
-		"example": "Hvilket lag heier du på?",
-		"example_english": "Which team do you support?",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "å vinne",
-		"english": "to win",
-		"example": "Norge vant kampen.",
-		"example_english": "Norway won the match.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "å tape",
-		"english": "to lose",
-		"example": "Vi tapte med to mål.",
-		"example_english": "We lost by two goals.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "en spiller",
-		"english": "a player",
-		"example": "Han er den beste spilleren på laget.",
-		"example_english": "He is the best player on the team.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "en trener",
-		"english": "a coach / a trainer",
-		"example": "Treneren er veldig dyktig.",
-		"example_english": "The trainer is very skilled.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "å gå på ski",
-		"english": "to go skiing",
-		"example": "Nordmenn liker å gå på ski.",
-		"example_english": "Norwegians like to go skiing.",
-		"level": "A2",
-		"category": "sports",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å skate",
-		"english": "to skate",
-		"example": "Barna skater på isen.",
-		"example_english": "The children are skating on the ice.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "volleyball",
-		"english": "volleyball",
-		"example": "Vi spiller volleyball på stranden.",
-		"example_english": "We play volleyball on the beach.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "tennis",
-		"english": "tennis",
-		"example": "Vil du spille tennis med meg?",
-		"example_english": "Do you want to play tennis with me?",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "et mål",
-		"english": "a goal",
-		"example": "Han scoret et mål i første omgang.",
-		"example_english": "He scored a goal in the first half.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "en dommer",
-		"english": "a referee",
-		"example": "Dommeren blåste i fløyta.",
-		"example_english": "The referee blew the whistle.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "å heie på",
-		"english": "to cheer for / to support",
-		"example": "Vi heier på det norske laget.",
-		"example_english": "We cheer for the Norwegian team.",
-		"level": "A2",
-		"category": "sports",
-		"part": "phrase"
-	},
-	{
-		"norsk": "en stadion",
-		"english": "a stadium",
-		"example": "Stadion var full av folk.",
-		"example_english": "The stadium was full of people.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "basketball",
-		"english": "basketball",
-		"example": "Jeg spiller basketball med klassen min.",
-		"example_english": "I play basketball with my class.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "sport",
-		"english": "sport",
-		"example": "Hvilken sport liker du?",
-		"example_english": "Which sport do you like?",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
-	{
-		"norsk": "aktiv",
-		"english": "active",
-		"example": "Han er veldig aktiv og trener mye.",
-		"example_english": "He is very active and trains a lot.",
-		"level": "A2",
-		"category": "sports",
-		"part": "adjective"
-	},
-	{
-		"norsk": "å konkurrere",
-		"english": "to compete",
-		"example": "De konkurrerer i nasjonale mesterskap.",
-		"example_english": "They compete in national championships.",
-		"level": "A2",
-		"category": "sports",
-		"part": "verb"
-	},
-	{
-		"norsk": "en premie",
-		"english": "a prize / an award",
-		"example": "Laget tok premien i år.",
-		"example_english": "The team won the prize this year.",
-		"level": "A2",
-		"category": "sports",
-		"part": "noun"
-	},
+  {
+    "norsk": "å spille fotball",
+    "english": "to play football",
+    "example": "Jeg spiller fotball med venner.",
+    "example_english": "I play football with friends.",
+    "level": "A2",
+    "category": "sports",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å svømme",
+    "english": "to swim",
+    "example": "Han svømmer en kilometr hver dag.",
+    "example_english": "He swims one kilometre every day.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "å løpe",
+    "english": "to run",
+    "example": "Hun løper 5 km om morgenen.",
+    "example_english": "She runs 5 km in the morning.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "å sykle",
+    "english": "to cycle",
+    "example": "Vi sykler i fjellet om sommeren.",
+    "example_english": "We cycle in the mountains in summer.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "å trene",
+    "english": "to exercise / to train",
+    "example": "Han trener på treningssenter tre ganger i uka.",
+    "example_english": "He trains at the gym three times a week.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "et treningssenter",
+    "english": "a gym",
+    "example": "Jeg har meldt meg inn på treningssenteret.",
+    "example_english": "I have joined the gym.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kamp",
+    "english": "a match / a game",
+    "example": "Vi skal se kampen på TV.",
+    "example_english": "We are going to watch the match on TV.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "et lag",
+    "english": "a team",
+    "example": "Hvilket lag heier du på?",
+    "example_english": "Which team do you support?",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "å vinne",
+    "english": "to win",
+    "example": "Norge vant kampen.",
+    "example_english": "Norway won the match.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "å tape",
+    "english": "to lose",
+    "example": "Vi tapte med to mål.",
+    "example_english": "We lost by two goals.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "en spiller",
+    "english": "a player",
+    "example": "Han er den beste spilleren på laget.",
+    "example_english": "He is the best player on the team.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "en trener",
+    "english": "a coach / a trainer",
+    "example": "Treneren er veldig dyktig.",
+    "example_english": "The trainer is very skilled.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "å gå på ski",
+    "english": "to go skiing",
+    "example": "Nordmenn liker å gå på ski.",
+    "example_english": "Norwegians like to go skiing.",
+    "level": "A2",
+    "category": "sports",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å skate",
+    "english": "to skate",
+    "example": "Barna skater på isen.",
+    "example_english": "The children are skating on the ice.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "volleyball",
+    "english": "volleyball",
+    "example": "Vi spiller volleyball på stranden.",
+    "example_english": "We play volleyball on the beach.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "tennis",
+    "english": "tennis",
+    "example": "Vil du spille tennis med meg?",
+    "example_english": "Do you want to play tennis with me?",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "et mål",
+    "english": "a goal",
+    "example": "Han scoret et mål i første omgang.",
+    "example_english": "He scored a goal in the first half.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "en dommer",
+    "english": "a referee",
+    "example": "Dommeren blåste i fløyta.",
+    "example_english": "The referee blew the whistle.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "å heie på",
+    "english": "to cheer for / to support",
+    "example": "Vi heier på det norske laget.",
+    "example_english": "We cheer for the Norwegian team.",
+    "level": "A2",
+    "category": "sports",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en stadion",
+    "english": "a stadium",
+    "example": "Stadion var full av folk.",
+    "example_english": "The stadium was full of people.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "basketball",
+    "english": "basketball",
+    "example": "Jeg spiller basketball med klassen min.",
+    "example_english": "I play basketball with my class.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "sport",
+    "english": "sport",
+    "example": "Hvilken sport liker du?",
+    "example_english": "Which sport do you like?",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
+  {
+    "norsk": "aktiv",
+    "english": "active",
+    "example": "Han er veldig aktiv og trener mye.",
+    "example_english": "He is very active and trains a lot.",
+    "level": "A2",
+    "category": "sports",
+    "part": "adjective"
+  },
+  {
+    "norsk": "å konkurrere",
+    "english": "to compete",
+    "example": "De konkurrerer i nasjonale mesterskap.",
+    "example_english": "They compete in national championships.",
+    "level": "A2",
+    "category": "sports",
+    "part": "verb"
+  },
+  {
+    "norsk": "en premie",
+    "english": "a prize / an award",
+    "example": "Laget tok premien i år.",
+    "example_english": "The team won the prize this year.",
+    "level": "A2",
+    "category": "sports",
+    "part": "noun"
+  },
 
-	{
-		"norsk": "syk",
-		"english": "sick / ill",
-		"example": "Jeg er syk og kan ikke komme på jobb.",
-		"example_english": "I am sick and cannot come to work.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "adjective"
-	},
-	{
-		"norsk": "et sykehus",
-		"english": "a hospital",
-		"example": "Han er innlagt på sykehuset.",
-		"example_english": "He is admitted to the hospital.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "et apotek",
-		"english": "a pharmacy",
-		"example": "Jeg kjøper medisin på apoteket.",
-		"example_english": "I buy medicine at the pharmacy.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "en medisin",
-		"english": "a medicine",
-		"example": "Ta to tabletter med medisin.",
-		"example_english": "Take two tablets of medicine.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "vondt",
-		"english": "pain / ache (har vondt = to be in pain)",
-		"example": "Jeg har vondt i hodet.",
-		"example_english": "I have a headache.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "adjective"
-	},
-	{
-		"norsk": "en forkjølelse",
-		"english": "a cold",
-		"example": "Jeg har forkjølelse og feber.",
-		"example_english": "I have a cold and a fever.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "en feber",
-		"english": "a fever",
-		"example": "Barnet har høy feber.",
-		"example_english": "The child has a high fever.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "en allergi",
-		"english": "an allergy",
-		"example": "Jeg er allergisk mot pollen.",
-		"example_english": "I am allergic to pollen.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "en resept",
-		"english": "a prescription",
-		"example": "Legen ga meg en resept.",
-		"example_english": "The doctor gave me a prescription.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "å legge seg",
-		"english": "to lie down / to go to bed",
-		"example": "Legg deg og hvil.",
-		"example_english": "Lie down and rest.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "verb"
-	},
-	{
-		"norsk": "å hvile",
-		"english": "to rest",
-		"example": "Du må hvile når du er syk.",
-		"example_english": "You need to rest when you are sick.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "verb"
-	},
-	{
-		"norsk": "en time",
-		"english": "an appointment",
-		"example": "Jeg har time hos legen klokka to.",
-		"example_english": "I have an appointment at the doctor's at two.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "trøtt",
-		"english": "tired",
-		"example": "Jeg er veldig trøtt i dag.",
-		"example_english": "I am very tired today.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "adjective"
-	},
-	{
-		"norsk": "sunn",
-		"english": "healthy",
-		"example": "Frukt og grønnsaker er sunn mat.",
-		"example_english": "Fruit and vegetables are healthy food.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "adjective"
-	},
-	{
-		"norsk": "å føle seg",
-		"english": "to feel",
-		"example": "Hvordan føler du deg i dag?",
-		"example_english": "How do you feel today?",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "verb"
-	},
-	{
-		"norsk": "en skade",
-		"english": "an injury",
-		"example": "Han fikk en skade under kampen.",
-		"example_english": "He got an injury during the match.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "å brekke",
-		"english": "to break / to fracture",
-		"example": "Hun brakk hånden sin.",
-		"example_english": "She broke her hand.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "verb"
-	},
-	{
-		"norsk": "et plaster",
-		"english": "a plaster / a bandage",
-		"example": "Kan du gi meg et plaster?",
-		"example_english": "Can you give me a plaster?",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "hoste",
-		"english": "a cough / to cough",
-		"example": "Jeg hoster og har sår hals.",
-		"example_english": "I have a cough and a sore throat.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "å nyse",
-		"english": "to sneeze",
-		"example": "Han nøs mange ganger.",
-		"example_english": "He sneezed many times.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "verb"
-	},
-	{
-		"norsk": "kvalm",
-		"english": "nauseous / sick",
-		"example": "Jeg er kvalm, jeg vil ikke spise.",
-		"example_english": "I feel nauseous, I don't want to eat.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "adjective"
-	},
-	{
-		"norsk": "en vaksine",
-		"english": "a vaccine",
-		"example": "Barn får vaksine på helsestasjonen.",
-		"example_english": "Children receive vaccines at the health centre.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "en operasjon",
-		"english": "an operation",
-		"example": "Han trenger en operasjon.",
-		"example_english": "He needs an operation.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "blod",
-		"english": "blood",
-		"example": "Legen tok en blodprøve.",
-		"example_english": "The doctor took a blood test.",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
-	{
-		"norsk": "en ambulanse",
-		"english": "an ambulance",
-		"example": "Ring 113 for ambulanse!",
-		"example_english": "Call 113 for an ambulance!",
-		"level": "A2",
-		"category": "health-basic",
-		"part": "noun"
-	},
+  {
+    "norsk": "syk",
+    "english": "sick / ill",
+    "example": "Jeg er syk og kan ikke komme på jobb.",
+    "example_english": "I am sick and cannot come to work.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "adjective"
+  },
+  {
+    "norsk": "et sykehus",
+    "english": "a hospital",
+    "example": "Han er innlagt på sykehuset.",
+    "example_english": "He is admitted to the hospital.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et apotek",
+    "english": "a pharmacy",
+    "example": "Jeg kjøper medisin på apoteket.",
+    "example_english": "I buy medicine at the pharmacy.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en medisin",
+    "english": "a medicine",
+    "example": "Ta to tabletter med medisin.",
+    "example_english": "Take two tablets of medicine.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "vondt",
+    "english": "pain / ache (har vondt = to be in pain)",
+    "example": "Jeg har vondt i hodet.",
+    "example_english": "I have a headache.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "adjective"
+  },
+  {
+    "norsk": "en forkjølelse",
+    "english": "a cold",
+    "example": "Jeg har forkjølelse og feber.",
+    "example_english": "I have a cold and a fever.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en feber",
+    "english": "a fever",
+    "example": "Barnet har høy feber.",
+    "example_english": "The child has a high fever.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en allergi",
+    "english": "an allergy",
+    "example": "Jeg er allergisk mot pollen.",
+    "example_english": "I am allergic to pollen.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en resept",
+    "english": "a prescription",
+    "example": "Legen ga meg en resept.",
+    "example_english": "The doctor gave me a prescription.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å legge seg",
+    "english": "to lie down / to go to bed",
+    "example": "Legg deg og hvil.",
+    "example_english": "Lie down and rest.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "å hvile",
+    "english": "to rest",
+    "example": "Du må hvile når du er syk.",
+    "example_english": "You need to rest when you are sick.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "en time",
+    "english": "an appointment",
+    "example": "Jeg har time hos legen klokka to.",
+    "example_english": "I have an appointment at the doctor's at two.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "trøtt",
+    "english": "tired",
+    "example": "Jeg er veldig trøtt i dag.",
+    "example_english": "I am very tired today.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "adjective"
+  },
+  {
+    "norsk": "sunn",
+    "english": "healthy",
+    "example": "Frukt og grønnsaker er sunn mat.",
+    "example_english": "Fruit and vegetables are healthy food.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "adjective"
+  },
+  {
+    "norsk": "å føle seg",
+    "english": "to feel",
+    "example": "Hvordan føler du deg i dag?",
+    "example_english": "How do you feel today?",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "en skade",
+    "english": "an injury",
+    "example": "Han fikk en skade under kampen.",
+    "example_english": "He got an injury during the match.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å brekke",
+    "english": "to break / to fracture",
+    "example": "Hun brakk hånden sin.",
+    "example_english": "She broke her hand.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "et plaster",
+    "english": "a plaster / a bandage",
+    "example": "Kan du gi meg et plaster?",
+    "example_english": "Can you give me a plaster?",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "hoste",
+    "english": "a cough / to cough",
+    "example": "Jeg hoster og har sår hals.",
+    "example_english": "I have a cough and a sore throat.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å nyse",
+    "english": "to sneeze",
+    "example": "Han nøs mange ganger.",
+    "example_english": "He sneezed many times.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "kvalm",
+    "english": "nauseous / sick",
+    "example": "Jeg er kvalm, jeg vil ikke spise.",
+    "example_english": "I feel nauseous, I don't want to eat.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "adjective"
+  },
+  {
+    "norsk": "en vaksine",
+    "english": "a vaccine",
+    "example": "Barn får vaksine på helsestasjonen.",
+    "example_english": "Children receive vaccines at the health centre.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en operasjon",
+    "english": "an operation",
+    "example": "Han trenger en operasjon.",
+    "example_english": "He needs an operation.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "blod",
+    "english": "blood",
+    "example": "Legen tok en blodprøve.",
+    "example_english": "The doctor took a blood test.",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en ambulanse",
+    "english": "an ambulance",
+    "example": "Ring 113 for ambulanse!",
+    "example_english": "Call 113 for an ambulance!",
+    "level": "A2",
+    "category": "health-basic",
+    "part": "noun"
+  },
 
-	{
-		"norsk": "vær",
-		"english": "weather",
-		"example": "Hva er været i dag?",
-		"example_english": "What is the weather like today?",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "det regner",
-		"english": "it is raining",
-		"example": "Det regner, ta med paraply.",
-		"example_english": "It is raining, bring an umbrella.",
-		"level": "A2",
-		"category": "weather",
-		"part": "phrase"
-	},
-	{
-		"norsk": "det snør",
-		"english": "it is snowing",
-		"example": "Det snør mye i januar.",
-		"example_english": "It snows a lot in January.",
-		"level": "A2",
-		"category": "weather",
-		"part": "phrase"
-	},
-	{
-		"norsk": "det er sol",
-		"english": "it is sunny",
-		"example": "Det er sol og varmt i dag!",
-		"example_english": "It is sunny and warm today!",
-		"level": "A2",
-		"category": "weather",
-		"part": "phrase"
-	},
-	{
-		"norsk": "vind",
-		"english": "wind",
-		"example": "Det er sterk vind langs kysten.",
-		"example_english": "There is strong wind along the coast.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "skyet",
-		"english": "cloudy",
-		"example": "Det er skyet og grått i dag.",
-		"example_english": "It is cloudy and grey today.",
-		"level": "A2",
-		"category": "weather",
-		"part": "adjective"
-	},
-	{
-		"norsk": "varm",
-		"english": "warm / hot",
-		"example": "Det er varmt om sommeren i Sør-Norge.",
-		"example_english": "It is warm in the summer in southern Norway.",
-		"level": "A2",
-		"category": "weather",
-		"part": "adjective"
-	},
-	{
-		"norsk": "kald",
-		"english": "cold",
-		"example": "Det er veldig kaldt om vinteren.",
-		"example_english": "It is very cold in winter.",
-		"level": "A2",
-		"category": "weather",
-		"part": "adjective"
-	},
-	{
-		"norsk": "en temperatur",
-		"english": "a temperature",
-		"example": "Temperaturen er fem grader.",
-		"example_english": "The temperature is five degrees.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "en paraply",
-		"english": "an umbrella",
-		"example": "Glem ikke paraplyen!",
-		"example_english": "Don't forget the umbrella!",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sky",
-		"english": "a cloud",
-		"example": "Det er mange skyer på himmelen.",
-		"example_english": "There are many clouds in the sky.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "tåke",
-		"english": "fog",
-		"example": "Det er tett tåke om morgenen.",
-		"example_english": "There is thick fog in the morning.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "is",
-		"english": "ice",
-		"example": "Det er glatt is på veien.",
-		"example_english": "There is slippery ice on the road.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "snø",
-		"english": "snow",
-		"example": "Det er mye snø i fjellet.",
-		"example_english": "There is a lot of snow in the mountains.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "et tordenvær",
-		"english": "a thunderstorm",
-		"example": "Det kommer et tordenvær i kveld.",
-		"example_english": "There is a thunderstorm coming tonight.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "sol",
-		"english": "sun",
-		"example": "Solen skinner hele dagen.",
-		"example_english": "The sun shines all day.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "regn",
-		"english": "rain",
-		"example": "Det er mye regn om høsten.",
-		"example_english": "There is a lot of rain in autumn.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "en prognose",
-		"english": "a (weather) forecast",
-		"example": "Prognosen sier sol i morgen.",
-		"example_english": "The forecast says sun tomorrow.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "fuktig",
-		"english": "humid / damp",
-		"example": "Det er fuktig luft om sommeren.",
-		"example_english": "The air is humid in the summer.",
-		"level": "A2",
-		"category": "weather",
-		"part": "adjective"
-	},
-	{
-		"norsk": "grader",
-		"english": "degrees",
-		"example": "Det er minus ti grader ute.",
-		"example_english": "It is minus ten degrees outside.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "en storm",
-		"english": "a storm",
-		"example": "Stormen skadet mange hus.",
-		"example_english": "The storm damaged many houses.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "klart",
-		"english": "clear (weather)",
-		"example": "Det er klart vær og stjernehimmel.",
-		"example_english": "There is clear weather and a starry sky.",
-		"level": "A2",
-		"category": "weather",
-		"part": "adjective"
-	},
-	{
-		"norsk": "en årstid",
-		"english": "a season",
-		"example": "Hvilken årstid liker du best?",
-		"example_english": "Which season do you like best?",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "et regnvær",
-		"english": "rainy weather",
-		"example": "Oslo har mye regnvær om høsten.",
-		"example_english": "Oslo has a lot of rainy weather in autumn.",
-		"level": "A2",
-		"category": "weather",
-		"part": "noun"
-	},
-	{
-		"norsk": "varmt",
-		"english": "it is warm",
-		"example": "Det er varmt og fint i dag.",
-		"example_english": "It is warm and nice today.",
-		"level": "A2",
-		"category": "weather",
-		"part": "adjective"
-	},
+  {
+    "norsk": "vær",
+    "english": "weather",
+    "example": "Hva er været i dag?",
+    "example_english": "What is the weather like today?",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "det regner",
+    "english": "it is raining",
+    "example": "Det regner, ta med paraply.",
+    "example_english": "It is raining, bring an umbrella.",
+    "level": "A2",
+    "category": "weather",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det snør",
+    "english": "it is snowing",
+    "example": "Det snør mye i januar.",
+    "example_english": "It snows a lot in January.",
+    "level": "A2",
+    "category": "weather",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det er sol",
+    "english": "it is sunny",
+    "example": "Det er sol og varmt i dag!",
+    "example_english": "It is sunny and warm today!",
+    "level": "A2",
+    "category": "weather",
+    "part": "phrase"
+  },
+  {
+    "norsk": "vind",
+    "english": "wind",
+    "example": "Det er sterk vind langs kysten.",
+    "example_english": "There is strong wind along the coast.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "skyet",
+    "english": "cloudy",
+    "example": "Det er skyet og grått i dag.",
+    "example_english": "It is cloudy and grey today.",
+    "level": "A2",
+    "category": "weather",
+    "part": "adjective"
+  },
+  {
+    "norsk": "varm",
+    "english": "warm / hot",
+    "example": "Det er varmt om sommeren i Sør-Norge.",
+    "example_english": "It is warm in the summer in southern Norway.",
+    "level": "A2",
+    "category": "weather",
+    "part": "adjective"
+  },
+  {
+    "norsk": "kald",
+    "english": "cold",
+    "example": "Det er veldig kaldt om vinteren.",
+    "example_english": "It is very cold in winter.",
+    "level": "A2",
+    "category": "weather",
+    "part": "adjective"
+  },
+  {
+    "norsk": "en temperatur",
+    "english": "a temperature",
+    "example": "Temperaturen er fem grader.",
+    "example_english": "The temperature is five degrees.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "en paraply",
+    "english": "an umbrella",
+    "example": "Glem ikke paraplyen!",
+    "example_english": "Don't forget the umbrella!",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sky",
+    "english": "a cloud",
+    "example": "Det er mange skyer på himmelen.",
+    "example_english": "There are many clouds in the sky.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "tåke",
+    "english": "fog",
+    "example": "Det er tett tåke om morgenen.",
+    "example_english": "There is thick fog in the morning.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "is",
+    "english": "ice",
+    "example": "Det er glatt is på veien.",
+    "example_english": "There is slippery ice on the road.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "snø",
+    "english": "snow",
+    "example": "Det er mye snø i fjellet.",
+    "example_english": "There is a lot of snow in the mountains.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "et tordenvær",
+    "english": "a thunderstorm",
+    "example": "Det kommer et tordenvær i kveld.",
+    "example_english": "There is a thunderstorm coming tonight.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "sol",
+    "english": "sun",
+    "example": "Solen skinner hele dagen.",
+    "example_english": "The sun shines all day.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "regn",
+    "english": "rain",
+    "example": "Det er mye regn om høsten.",
+    "example_english": "There is a lot of rain in autumn.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "en prognose",
+    "english": "a (weather) forecast",
+    "example": "Prognosen sier sol i morgen.",
+    "example_english": "The forecast says sun tomorrow.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "fuktig",
+    "english": "humid / damp",
+    "example": "Det er fuktig luft om sommeren.",
+    "example_english": "The air is humid in the summer.",
+    "level": "A2",
+    "category": "weather",
+    "part": "adjective"
+  },
+  {
+    "norsk": "grader",
+    "english": "degrees",
+    "example": "Det er minus ti grader ute.",
+    "example_english": "It is minus ten degrees outside.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "en storm",
+    "english": "a storm",
+    "example": "Stormen skadet mange hus.",
+    "example_english": "The storm damaged many houses.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "klart",
+    "english": "clear (weather)",
+    "example": "Det er klart vær og stjernehimmel.",
+    "example_english": "There is clear weather and a starry sky.",
+    "level": "A2",
+    "category": "weather",
+    "part": "adjective"
+  },
+  {
+    "norsk": "en årstid",
+    "english": "a season",
+    "example": "Hvilken årstid liker du best?",
+    "example_english": "Which season do you like best?",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "et regnvær",
+    "english": "rainy weather",
+    "example": "Oslo har mye regnvær om høsten.",
+    "example_english": "Oslo has a lot of rainy weather in autumn.",
+    "level": "A2",
+    "category": "weather",
+    "part": "noun"
+  },
+  {
+    "norsk": "varmt",
+    "english": "it is warm",
+    "example": "Det er varmt og fint i dag.",
+    "example_english": "It is warm and nice today.",
+    "level": "A2",
+    "category": "weather",
+    "part": "adjective"
+  },
 
-	{
-		"norsk": "klokka",
-		"english": "the time / o'clock",
-		"example": "Hva er klokka?",
-		"example_english": "What time is it?",
-		"level": "A2",
-		"category": "time",
-		"part": "noun"
-	},
-	{
-		"norsk": "et kvarter",
-		"english": "a quarter (of an hour)",
-		"example": "Bussen går om et kvarter.",
-		"example_english": "The bus leaves in a quarter of an hour.",
-		"level": "A2",
-		"category": "time",
-		"part": "noun"
-	},
-	{
-		"norsk": "halvt",
-		"english": "half past",
-		"example": "Klokka er halv åtte.",
-		"example_english": "It is half past seven.",
-		"level": "A2",
-		"category": "time",
-		"part": "adjective"
-	},
-	{
-		"norsk": "om morgenen",
-		"english": "in the morning",
-		"example": "Jeg drikker kaffe om morgenen.",
-		"example_english": "I drink coffee in the morning.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "om ettermiddagen",
-		"english": "in the afternoon",
-		"example": "Vi møtes om ettermiddagen.",
-		"example_english": "We meet in the afternoon.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "om kvelden",
-		"english": "in the evening",
-		"example": "Vi spiser middag om kvelden.",
-		"example_english": "We eat dinner in the evening.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "om natten",
-		"english": "at night",
-		"example": "Jeg sover dårlig om natten.",
-		"example_english": "I sleep badly at night.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "neste uke",
-		"english": "next week",
-		"example": "Vi reiser neste uke.",
-		"example_english": "We are travelling next week.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "forrige uke",
-		"english": "last week",
-		"example": "Forrige uke var jeg i Bergen.",
-		"example_english": "Last week I was in Bergen.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "i år",
-		"english": "this year",
-		"example": "I år skal vi besøke besteforeldrene.",
-		"example_english": "This year we will visit the grandparents.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "neste år",
-		"english": "next year",
-		"example": "Neste år begynner jeg på universitetet.",
-		"example_english": "Next year I start at university.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "alltid",
-		"english": "always",
-		"example": "Han er alltid sen.",
-		"example_english": "He is always late.",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "ofte",
-		"english": "often",
-		"example": "Jeg er ofte trøtt om morgenen.",
-		"example_english": "I am often tired in the morning.",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "sjelden",
-		"english": "rarely / seldom",
-		"example": "Jeg spiser sjelden søtsaker.",
-		"example_english": "I rarely eat sweets.",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "aldri",
-		"english": "never",
-		"example": "Jeg drikker aldri alkohol.",
-		"example_english": "I never drink alcohol.",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "noen ganger",
-		"english": "sometimes",
-		"example": "Noen ganger sykler jeg til jobben.",
-		"example_english": "Sometimes I cycle to work.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "vanligvis",
-		"english": "usually",
-		"example": "Jeg spiser vanligvis frokost klokka åtte.",
-		"example_english": "I usually eat breakfast at eight o'clock.",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "snart",
-		"english": "soon",
-		"example": "Middagen er snart klar.",
-		"example_english": "Dinner will be ready soon.",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "allerede",
-		"english": "already",
-		"example": "Er du allerede ferdig?",
-		"example_english": "Are you already finished?",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "ennå",
-		"english": "yet / still",
-		"example": "Er du ikke ferdig ennå?",
-		"example_english": "Are you not finished yet?",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "for lenge siden",
-		"english": "a long time ago",
-		"example": "Det skjedde for lenge siden.",
-		"example_english": "That happened a long time ago.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "nylig",
-		"english": "recently",
-		"example": "Jeg har nylig byttet jobb.",
-		"example_english": "I have recently changed jobs.",
-		"level": "A2",
-		"category": "time",
-		"part": "adverb"
-	},
-	{
-		"norsk": "siden",
-		"english": "since / ago",
-		"example": "Jeg har bodd her siden mars.",
-		"example_english": "I have lived here since March.",
-		"level": "A2",
-		"category": "time",
-		"part": "preposition"
-	},
-	{
-		"norsk": "i løpet av",
-		"english": "during / within",
-		"example": "I løpet av uka skal vi besøke venner.",
-		"example_english": "During the week we will visit friends.",
-		"level": "A2",
-		"category": "time",
-		"part": "phrase"
-	},
-	{
-		"norsk": "et minutt",
-		"english": "a minute",
-		"example": "Vent ett minutt, vær så snill.",
-		"example_english": "Wait one minute, please.",
-		"level": "A2",
-		"category": "time",
-		"part": "noun"
-	},
-	{
-		"norsk": "pen",
-		"english": "pretty / beautiful",
-		"example": "Hun er en pen jente.",
-		"example_english": "She is a pretty girl.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "stygg",
-		"english": "ugly",
-		"example": "Den bygningen er veldig stygg.",
-		"example_english": "That building is very ugly.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "snill",
-		"english": "kind / nice",
-		"example": "Han er alltid snill mot alle.",
-		"example_english": "He is always kind to everyone.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "streng",
-		"english": "strict",
-		"example": "Læreren er ganske streng.",
-		"example_english": "The teacher is quite strict.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "morsom",
-		"english": "funny / fun",
-		"example": "Filmen var veldig morsom.",
-		"example_english": "The film was very funny.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "kjedelig",
-		"english": "boring",
-		"example": "Møtet var veldig kjedelig.",
-		"example_english": "The meeting was very boring.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "travel",
-		"english": "busy",
-		"example": "Jeg er veldig travel i dag.",
-		"example_english": "I am very busy today.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "rolig",
-		"english": "calm / quiet",
-		"example": "Det er en rolig gate.",
-		"example_english": "It is a calm street.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "høflig",
-		"english": "polite",
-		"example": "Barnet er veldig høflig.",
-		"example_english": "The child is very polite.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "flink",
-		"english": "good at / clever",
-		"example": "Hun er flink i matematikk.",
-		"example_english": "She is good at mathematics.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "tung",
-		"english": "heavy",
-		"example": "Kofferten er veldig tung.",
-		"example_english": "The suitcase is very heavy.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "lett",
-		"english": "light / easy",
-		"example": "Oppgaven var ganske lett.",
-		"example_english": "The task was quite easy.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "ren",
-		"english": "clean",
-		"example": "Kjøkkenet er rent og ryddig.",
-		"example_english": "The kitchen is clean and tidy.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "skitten",
-		"english": "dirty",
-		"example": "Klærne er skitne etter fotball.",
-		"example_english": "The clothes are dirty after football.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "mange",
-		"english": "many / a lot of",
-		"example": "Det er mange folk i parken.",
-		"example_english": "There are many people in the park.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "få",
-		"english": "few",
-		"example": "Det er få biler på veien.",
-		"example_english": "There are few cars on the road.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "nok",
-		"english": "enough",
-		"example": "Har du nok penger?",
-		"example_english": "Do you have enough money?",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "glad",
-		"english": "happy / pleased",
-		"example": "Jeg er glad for å se deg.",
-		"example_english": "I am glad to see you.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "sulten",
-		"english": "hungry",
-		"example": "Jeg er sulten etter treningen.",
-		"example_english": "I am hungry after the workout.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "tørst",
-		"english": "thirsty",
-		"example": "Kan jeg få vann? Jeg er tørst.",
-		"example_english": "Can I have water? I am thirsty.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "syk",
-		"english": "sick / ill",
-		"example": "Han er syk og ligger hjemme.",
-		"example_english": "He is sick and staying at home.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "frisk",
-		"english": "healthy / well",
-		"example": "Hun er frisk igjen etter sykdommen.",
-		"example_english": "She is well again after the illness.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "sterk",
-		"english": "strong",
-		"example": "Han er sterk og trener mye.",
-		"example_english": "He is strong and trains a lot.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "svak",
-		"english": "weak",
-		"example": "Signalet er veldig svakt her.",
-		"example_english": "The signal is very weak here.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "vennlig",
-		"english": "friendly",
-		"example": "Naboene våre er veldig vennlige.",
-		"example_english": "Our neighbours are very friendly.",
-		"level": "A2",
-		"category": "descriptive-adjectives",
-		"part": "adjective"
-	},
-	{
-		"norsk": "å steke",
-		"english": "to fry / to roast",
-		"example": "Jeg steker egg til frokost.",
-		"example_english": "I fry eggs for breakfast.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "verb"
-	},
-	{
-		"norsk": "å koke",
-		"english": "to boil / to cook",
-		"example": "Kok vannet i ti minutter.",
-		"example_english": "Boil the water for ten minutes.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "verb"
-	},
-	{
-		"norsk": "å bake",
-		"english": "to bake",
-		"example": "Hun baker brød hver lørdag.",
-		"example_english": "She bakes bread every Saturday.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "verb"
-	},
-	{
-		"norsk": "å skjære",
-		"english": "to cut / to slice",
-		"example": "Skjær grønnsakene i biter.",
-		"example_english": "Cut the vegetables into pieces.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "verb"
-	},
-	{
-		"norsk": "å blande",
-		"english": "to mix / to blend",
-		"example": "Bland mel og sukker i en bolle.",
-		"example_english": "Mix flour and sugar in a bowl.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "verb"
-	},
-	{
-		"norsk": "å smake",
-		"english": "to taste",
-		"example": "Smak på suppen og tilsett salt.",
-		"example_english": "Taste the soup and add salt.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "verb"
-	},
-	{
-		"norsk": "å varme opp",
-		"english": "to heat up / to warm up",
-		"example": "Varm opp maten i mikrobølgeovnen.",
-		"example_english": "Heat up the food in the microwave.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "verb"
-	},
-	{
-		"norsk": "en gryte",
-		"english": "a pot / a casserole dish",
-		"example": "Suppen koker i gryta.",
-		"example_english": "The soup is boiling in the pot.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "en stekepanne",
-		"english": "a frying pan",
-		"example": "Varm opp stekepannen før du steker.",
-		"example_english": "Heat up the frying pan before frying.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "en ovn",
-		"english": "an oven",
-		"example": "Sett ovnen på 180 grader.",
-		"example_english": "Set the oven to 180 degrees.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kniv",
-		"english": "a knife",
-		"example": "Bruk en skarp kniv til å skjære.",
-		"example_english": "Use a sharp knife to cut.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "en skjærefjøl",
-		"english": "a chopping board",
-		"example": "Legg grønnsakene på skjærefjølen.",
-		"example_english": "Put the vegetables on the chopping board.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "en bolle",
-		"english": "a bowl",
-		"example": "Ha ingrediensene i en stor bolle.",
-		"example_english": "Put the ingredients in a large bowl.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "et oppskrift",
-		"english": "a recipe",
-		"example": "Jeg følger en oppskrift fra nettet.",
-		"example_english": "I follow a recipe from the internet.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "en ingrediens",
-		"english": "an ingredient",
-		"example": "Sjekk at du har alle ingrediensene.",
-		"example_english": "Check that you have all the ingredients.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "salt",
-		"english": "salt",
-		"example": "Tilsett litt salt i vannet.",
-		"example_english": "Add a little salt to the water.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "pepper",
-		"english": "pepper",
-		"example": "Krydre kjøttet med salt og pepper.",
-		"example_english": "Season the meat with salt and pepper.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "olje",
-		"english": "oil",
-		"example": "Ha litt olje i pannen.",
-		"example_english": "Put a little oil in the pan.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "smør",
-		"english": "butter",
-		"example": "Smør brødet med smør.",
-		"example_english": "Spread the bread with butter.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "mel",
-		"english": "flour",
-		"example": "Tilsett to kopper mel i deigen.",
-		"example_english": "Add two cups of flour to the dough.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "sukker",
-		"english": "sugar",
-		"example": "Vil du ha sukker i kaffen?",
-		"example_english": "Would you like sugar in your coffee?",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "et måltid",
-		"english": "a meal",
-		"example": "Vi spiser tre måltider om dagen.",
-		"example_english": "We eat three meals a day.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "ferdig",
-		"english": "ready / done / finished",
-		"example": "Maten er ferdig om ti minutter.",
-		"example_english": "The food will be ready in ten minutes.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "adjective"
-	},
-	{
-		"norsk": "rå",
-		"english": "raw",
-		"example": "Ikke spis rått kjøtt.",
-		"example_english": "Do not eat raw meat.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "adjective"
-	},
-	{
-		"norsk": "en kjele",
-		"english": "a kettle / a saucepan",
-		"example": "Kok vannet i kjelen.",
-		"example_english": "Boil the water in the kettle.",
-		"level": "A2",
-		"category": "cooking",
-		"part": "noun"
-	},
-	{
-		"norsk": "en skog",
-		"english": "a forest / a wood",
-		"example": "Vi går tur i skogen om helgen.",
-		"example_english": "We go for a walk in the forest at the weekend.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "et fjell",
-		"english": "a mountain",
-		"example": "Fjellet er dekket av snø om vinteren.",
-		"example_english": "The mountain is covered in snow in winter.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en elv",
-		"english": "a river",
-		"example": "Elven renner gjennom dalen.",
-		"example_english": "The river flows through the valley.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en sjø",
-		"english": "a lake",
-		"example": "Vi bader i sjøen om sommeren.",
-		"example_english": "We swim in the lake in summer.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "et tre",
-		"english": "a tree",
-		"example": "Det er et stort tre i hagen.",
-		"example_english": "There is a big tree in the garden.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en blomst",
-		"english": "a flower",
-		"example": "Blomstene blomstrer om våren.",
-		"example_english": "The flowers bloom in spring.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en strand",
-		"english": "a beach",
-		"example": "Vi slapper av på stranden.",
-		"example_english": "We relax on the beach.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en dal",
-		"english": "a valley",
-		"example": "Landsbyen ligger i en grønn dal.",
-		"example_english": "The village lies in a green valley.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en kyst",
-		"english": "a coast",
-		"example": "Norge har en lang kyst.",
-		"example_english": "Norway has a long coast.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en øy",
-		"english": "an island",
-		"example": "Vi reiste til en liten øy.",
-		"example_english": "We travelled to a small island.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en fjord",
-		"english": "a fjord",
-		"example": "Sognefjorden er Norges lengste fjord.",
-		"example_english": "Sognefjord is Norway's longest fjord.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "et felt",
-		"english": "a field",
-		"example": "Kyr beiter på feltet.",
-		"example_english": "Cows graze in the field.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en stein",
-		"english": "a stone / a rock",
-		"example": "Barnet plukket opp en stein.",
-		"example_english": "The child picked up a stone.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "jord",
-		"english": "soil / earth",
-		"example": "Planten vokser i god jord.",
-		"example_english": "The plant grows in good soil.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en fugl",
-		"english": "a bird",
-		"example": "Fuglene synger om morgenen.",
-		"example_english": "The birds sing in the morning.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "en fisk",
-		"english": "a fish",
-		"example": "Det er mye fisk i elven.",
-		"example_english": "There are many fish in the river.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "et dyr",
-		"english": "an animal",
-		"example": "Mange dyr lever i skogen.",
-		"example_english": "Many animals live in the forest.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "naturen",
-		"english": "nature (in general)",
-		"example": "Jeg elsker å være ute i naturen.",
-		"example_english": "I love being out in nature.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "å vokse",
-		"english": "to grow",
-		"example": "Treet vokser sakte.",
-		"example_english": "The tree grows slowly.",
-		"level": "A2",
-		"category": "nature",
-		"part": "verb"
-	},
-	{
-		"norsk": "å svømme",
-		"english": "to swim",
-		"example": "Vi svømmer i sjøen om sommeren.",
-		"example_english": "We swim in the lake in summer.",
-		"level": "A2",
-		"category": "nature",
-		"part": "verb"
-	},
-	{
-		"norsk": "å gå tur",
-		"english": "to go for a walk / to hike",
-		"example": "Vi går tur i fjellet i helgen.",
-		"example_english": "We go for a walk in the mountains at the weekend.",
-		"level": "A2",
-		"category": "nature",
-		"part": "verb"
-	},
-	{
-		"norsk": "vakker",
-		"english": "beautiful / gorgeous",
-		"example": "Utsikten er vakker fra toppen.",
-		"example_english": "The view is beautiful from the top.",
-		"level": "A2",
-		"category": "nature",
-		"part": "adjective"
-	},
-	{
-		"norsk": "stille",
-		"english": "quiet / still / calm",
-		"example": "Det er stille i skogen om morgenen.",
-		"example_english": "It is quiet in the forest in the morning.",
-		"level": "A2",
-		"category": "nature",
-		"part": "adjective"
-	},
-	{
-		"norsk": "frisk luft",
-		"english": "fresh air",
-		"example": "Det er godt med frisk luft ute.",
-		"example_english": "The fresh air outside is wonderful.",
-		"level": "A2",
-		"category": "nature",
-		"part": "phrase"
-	},
-	{
-		"norsk": "en å",
-		"english": "a stream / a creek",
-		"example": "Vi hørte lyden av en liten å.",
-		"example_english": "We heard the sound of a small stream.",
-		"level": "A2",
-		"category": "nature",
-		"part": "noun"
-	},
-	{
-		"norsk": "å vaske",
-		"english": "to wash / to clean",
-		"example": "Jeg vasker klær på lørdag.",
-		"example_english": "I wash clothes on Saturday.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å støvsuge",
-		"english": "to vacuum",
-		"example": "Jeg støvsuger stuen en gang i uka.",
-		"example_english": "I vacuum the living room once a week.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å rydde",
-		"english": "to tidy up",
-		"example": "Rydd rommet ditt før middag.",
-		"example_english": "Tidy up your room before dinner.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å lage mat",
-		"english": "to cook / to make food",
-		"example": "Hvem lager mat i dag?",
-		"example_english": "Who is cooking today?",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å handle",
-		"english": "to shop / to do the shopping",
-		"example": "Vi handler mat på fredager.",
-		"example_english": "We do the food shopping on Fridays.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å kaste søppel",
-		"english": "to take out the rubbish",
-		"example": "Kan du kaste søppelet?",
-		"example_english": "Can you take out the rubbish?",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å tørke av",
-		"english": "to wipe / to dust",
-		"example": "Tørk av bordet etter middagen.",
-		"example_english": "Wipe the table after dinner.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å vaske opp",
-		"english": "to wash up / to do the dishes",
-		"example": "Jeg vasker opp etter middagen.",
-		"example_english": "I do the dishes after dinner.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å stryke",
-		"english": "to iron",
-		"example": "Jeg stryker skjortene mine på søndag.",
-		"example_english": "I iron my shirts on Sunday.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å henge opp",
-		"english": "to hang up",
-		"example": "Heng opp klærne til tørk.",
-		"example_english": "Hang up the clothes to dry.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å pusse tenner",
-		"english": "to brush teeth",
-		"example": "Puss tennene dine to ganger om dagen.",
-		"example_english": "Brush your teeth twice a day.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "et søppel",
-		"english": "rubbish / waste",
-		"example": "Legg søppelet i søppelbøtta.",
-		"example_english": "Put the rubbish in the bin.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "en støvsuger",
-		"english": "a vacuum cleaner",
-		"example": "Støvsugeren er i skapet.",
-		"example_english": "The vacuum cleaner is in the cupboard.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "en mopp",
-		"english": "a mop",
-		"example": "Bruk en mopp til å vaske gulvet.",
-		"example_english": "Use a mop to wash the floor.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "et oppvaskmiddel",
-		"english": "washing-up liquid / dish soap",
-		"example": "Vi trenger mer oppvaskmiddel.",
-		"example_english": "We need more washing-up liquid.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "en klut",
-		"english": "a cloth / a rag",
-		"example": "Tørk av benken med en klut.",
-		"example_english": "Wipe the counter with a cloth.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "en vaskemaskin",
-		"english": "a washing machine",
-		"example": "Legg klærne i vaskemaskinen.",
-		"example_english": "Put the clothes in the washing machine.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "et oppvaskkum",
-		"english": "a kitchen sink",
-		"example": "Skyll grønnsakene i oppvaskkummen.",
-		"example_english": "Rinse the vegetables in the kitchen sink.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "ryddig",
-		"english": "tidy / neat",
-		"example": "Hold leiligheten ryddig.",
-		"example_english": "Keep the apartment tidy.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "adjective"
-	},
-	{
-		"norsk": "skitten",
-		"english": "dirty",
-		"example": "Gulvet er skittent og må vaskes.",
-		"example_english": "The floor is dirty and needs washing.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "adjective"
-	},
-	{
-		"norsk": "hver dag",
-		"english": "every day",
-		"example": "Jeg lufter hunden hver dag.",
-		"example_english": "I walk the dog every day.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "phrase"
-	},
-	{
-		"norsk": "å rydde opp",
-		"english": "to clean up / to clear up",
-		"example": "Rydd opp etter middagen.",
-		"example_english": "Clean up after dinner.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "verb"
-	},
-	{
-		"norsk": "å lufte hunden",
-		"english": "to walk the dog",
-		"example": "Jeg lufter hunden to ganger om dagen.",
-		"example_english": "I walk the dog twice a day.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "phrase"
-	},
-	{
-		"norsk": "en bøtte",
-		"english": "a bucket / a bin",
-		"example": "Fyll bøtten med vann.",
-		"example_english": "Fill the bucket with water.",
-		"level": "A2",
-		"category": "house-chores",
-		"part": "noun"
-	},
-	{
-		"norsk": "å ringe",
-		"english": "to call / to phone",
-		"example": "Jeg ringer deg i kveld.",
-		"example_english": "I will call you this evening.",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å sende",
-		"english": "to send",
-		"example": "Kan du sende meg adressen?",
-		"example_english": "Can you send me the address?",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å skrive",
-		"english": "to write",
-		"example": "Jeg skriver en e-post til sjefen.",
-		"example_english": "I am writing an email to the boss.",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å svare",
-		"english": "to answer / to reply",
-		"example": "Svar på meldingen min!",
-		"example_english": "Reply to my message!",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å snakke med",
-		"english": "to talk to / to speak with",
-		"example": "Jeg vil snakke med deg om det.",
-		"example_english": "I want to talk to you about that.",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å spørre",
-		"english": "to ask",
-		"example": "Kan jeg spørre deg om noe?",
-		"example_english": "Can I ask you something?",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å fortelle",
-		"english": "to tell",
-		"example": "Fortell meg hva som skjedde.",
-		"example_english": "Tell me what happened.",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å forstå",
-		"english": "to understand",
-		"example": "Jeg forstår ikke hva du mener.",
-		"example_english": "I do not understand what you mean.",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å gjenta",
-		"english": "to repeat",
-		"example": "Kan du gjenta det du sa?",
-		"example_english": "Can you repeat what you said?",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "å møtes",
-		"english": "to meet up",
-		"example": "Vi møtes på kaféen klokka tre.",
-		"example_english": "We meet up at the café at three o'clock.",
-		"level": "A2",
-		"category": "communication",
-		"part": "verb"
-	},
-	{
-		"norsk": "en melding",
-		"english": "a message",
-		"example": "Jeg har fått en ny melding.",
-		"example_english": "I have received a new message.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "en e-post",
-		"english": "an email",
-		"example": "Send meg en e-post med detaljene.",
-		"example_english": "Send me an email with the details.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "et svar",
-		"english": "a reply / an answer",
-		"example": "Jeg venter på svaret ditt.",
-		"example_english": "I am waiting for your reply.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "en samtale",
-		"english": "a conversation",
-		"example": "Vi hadde en lang samtale.",
-		"example_english": "We had a long conversation.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "en telefon",
-		"english": "a telephone / a phone",
-		"example": "Telefonen din ringer.",
-		"example_english": "Your phone is ringing.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "et nummer",
-		"english": "a number",
-		"example": "Hva er telefonnummeret ditt?",
-		"example_english": "What is your phone number?",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "et møte",
-		"english": "a meeting",
-		"example": "Vi har et møte klokka ti.",
-		"example_english": "We have a meeting at ten o'clock.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "en avtale",
-		"english": "an appointment / an agreement",
-		"example": "Jeg har en avtale hos legen.",
-		"example_english": "I have an appointment with the doctor.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "sosiale medier",
-		"english": "social media",
-		"example": "Hun bruker mye tid på sosiale medier.",
-		"example_english": "She spends a lot of time on social media.",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "internett",
-		"english": "the internet",
-		"example": "Har du tilgang til internett?",
-		"example_english": "Do you have access to the internet?",
-		"level": "A2",
-		"category": "communication",
-		"part": "noun"
-	},
-	{
-		"norsk": "tydelig",
-		"english": "clear / distinct",
-		"example": "Vær tydelig når du forklarer.",
-		"example_english": "Be clear when you explain.",
-		"level": "A2",
-		"category": "communication",
-		"part": "adjective"
-	},
-	{
-		"norsk": "høflig",
-		"english": "polite",
-		"example": "Vær høflig når du skriver til kunder.",
-		"example_english": "Be polite when writing to customers.",
-		"level": "A2",
-		"category": "communication",
-		"part": "adjective"
-	},
-	{
-		"norsk": "Kan du hjelpe meg?",
-		"english": "Can you help me?",
-		"example": "Unnskyld, kan du hjelpe meg?",
-		"example_english": "Excuse me, can you help me?",
-		"level": "A2",
-		"category": "communication",
-		"part": "phrase"
-	},
-	{
-		"norsk": "Jeg forstår ikke.",
-		"english": "I don't understand.",
-		"example": "Beklager, jeg forstår ikke.",
-		"example_english": "Sorry, I don't understand.",
-		"level": "A2",
-		"category": "communication",
-		"part": "phrase"
-	},
-	{
-		"norsk": "Kan du snakke saktere?",
-		"english": "Can you speak more slowly?",
-		"example": "Kan du snakke litt saktere, takk?",
-		"example_english": "Can you speak a little more slowly, please?",
-		"level": "A2",
-		"category": "communication",
-		"part": "phrase"
-	}
+  {
+    "norsk": "klokka",
+    "english": "the time / o'clock",
+    "example": "Hva er klokka?",
+    "example_english": "What time is it?",
+    "level": "A2",
+    "category": "time",
+    "part": "noun"
+  },
+  {
+    "norsk": "et kvarter",
+    "english": "a quarter (of an hour)",
+    "example": "Bussen går om et kvarter.",
+    "example_english": "The bus leaves in a quarter of an hour.",
+    "level": "A2",
+    "category": "time",
+    "part": "noun"
+  },
+  {
+    "norsk": "halvt",
+    "english": "half past",
+    "example": "Klokka er halv åtte.",
+    "example_english": "It is half past seven.",
+    "level": "A2",
+    "category": "time",
+    "part": "adjective"
+  },
+  {
+    "norsk": "om morgenen",
+    "english": "in the morning",
+    "example": "Jeg drikker kaffe om morgenen.",
+    "example_english": "I drink coffee in the morning.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "om ettermiddagen",
+    "english": "in the afternoon",
+    "example": "Vi møtes om ettermiddagen.",
+    "example_english": "We meet in the afternoon.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "om kvelden",
+    "english": "in the evening",
+    "example": "Vi spiser middag om kvelden.",
+    "example_english": "We eat dinner in the evening.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "om natten",
+    "english": "at night",
+    "example": "Jeg sover dårlig om natten.",
+    "example_english": "I sleep badly at night.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "neste uke",
+    "english": "next week",
+    "example": "Vi reiser neste uke.",
+    "example_english": "We are travelling next week.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "forrige uke",
+    "english": "last week",
+    "example": "Forrige uke var jeg i Bergen.",
+    "example_english": "Last week I was in Bergen.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i år",
+    "english": "this year",
+    "example": "I år skal vi besøke besteforeldrene.",
+    "example_english": "This year we will visit the grandparents.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "neste år",
+    "english": "next year",
+    "example": "Neste år begynner jeg på universitetet.",
+    "example_english": "Next year I start at university.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "alltid",
+    "english": "always",
+    "example": "Han er alltid sen.",
+    "example_english": "He is always late.",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "ofte",
+    "english": "often",
+    "example": "Jeg er ofte trøtt om morgenen.",
+    "example_english": "I am often tired in the morning.",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "sjelden",
+    "english": "rarely / seldom",
+    "example": "Jeg spiser sjelden søtsaker.",
+    "example_english": "I rarely eat sweets.",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "aldri",
+    "english": "never",
+    "example": "Jeg drikker aldri alkohol.",
+    "example_english": "I never drink alcohol.",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "noen ganger",
+    "english": "sometimes",
+    "example": "Noen ganger sykler jeg til jobben.",
+    "example_english": "Sometimes I cycle to work.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "vanligvis",
+    "english": "usually",
+    "example": "Jeg spiser vanligvis frokost klokka åtte.",
+    "example_english": "I usually eat breakfast at eight o'clock.",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "snart",
+    "english": "soon",
+    "example": "Middagen er snart klar.",
+    "example_english": "Dinner will be ready soon.",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "allerede",
+    "english": "already",
+    "example": "Er du allerede ferdig?",
+    "example_english": "Are you already finished?",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "ennå",
+    "english": "yet / still",
+    "example": "Er du ikke ferdig ennå?",
+    "example_english": "Are you not finished yet?",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "for lenge siden",
+    "english": "a long time ago",
+    "example": "Det skjedde for lenge siden.",
+    "example_english": "That happened a long time ago.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "nylig",
+    "english": "recently",
+    "example": "Jeg har nylig byttet jobb.",
+    "example_english": "I have recently changed jobs.",
+    "level": "A2",
+    "category": "time",
+    "part": "adverb"
+  },
+  {
+    "norsk": "siden",
+    "english": "since / ago",
+    "example": "Jeg har bodd her siden mars.",
+    "example_english": "I have lived here since March.",
+    "level": "A2",
+    "category": "time",
+    "part": "preposition"
+  },
+  {
+    "norsk": "i løpet av",
+    "english": "during / within",
+    "example": "I løpet av uka skal vi besøke venner.",
+    "example_english": "During the week we will visit friends.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
+    "norsk": "et minutt",
+    "english": "a minute",
+    "example": "Vent ett minutt, vær så snill.",
+    "example_english": "Wait one minute, please.",
+    "level": "A2",
+    "category": "time",
+    "part": "noun"
+  },
+  {
+    "norsk": "pen",
+    "english": "pretty / beautiful",
+    "example": "Hun er en pen jente.",
+    "example_english": "She is a pretty girl.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "stygg",
+    "english": "ugly",
+    "example": "Den bygningen er veldig stygg.",
+    "example_english": "That building is very ugly.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "snill",
+    "english": "kind / nice",
+    "example": "Han er alltid snill mot alle.",
+    "example_english": "He is always kind to everyone.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "streng",
+    "english": "strict",
+    "example": "Læreren er ganske streng.",
+    "example_english": "The teacher is quite strict.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "morsom",
+    "english": "funny / fun",
+    "example": "Filmen var veldig morsom.",
+    "example_english": "The film was very funny.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "kjedelig",
+    "english": "boring",
+    "example": "Møtet var veldig kjedelig.",
+    "example_english": "The meeting was very boring.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "travel",
+    "english": "busy",
+    "example": "Jeg er veldig travel i dag.",
+    "example_english": "I am very busy today.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "rolig",
+    "english": "calm / quiet",
+    "example": "Det er en rolig gate.",
+    "example_english": "It is a calm street.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "høflig",
+    "english": "polite",
+    "example": "Barnet er veldig høflig.",
+    "example_english": "The child is very polite.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "flink",
+    "english": "good at / clever",
+    "example": "Hun er flink i matematikk.",
+    "example_english": "She is good at mathematics.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "tung",
+    "english": "heavy",
+    "example": "Kofferten er veldig tung.",
+    "example_english": "The suitcase is very heavy.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "lett",
+    "english": "light / easy",
+    "example": "Oppgaven var ganske lett.",
+    "example_english": "The task was quite easy.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "ren",
+    "english": "clean",
+    "example": "Kjøkkenet er rent og ryddig.",
+    "example_english": "The kitchen is clean and tidy.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "skitten",
+    "english": "dirty",
+    "example": "Klærne er skitne etter fotball.",
+    "example_english": "The clothes are dirty after football.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "mange",
+    "english": "many / a lot of",
+    "example": "Det er mange folk i parken.",
+    "example_english": "There are many people in the park.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "få",
+    "english": "few",
+    "example": "Det er få biler på veien.",
+    "example_english": "There are few cars on the road.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "nok",
+    "english": "enough",
+    "example": "Har du nok penger?",
+    "example_english": "Do you have enough money?",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "glad",
+    "english": "happy / pleased",
+    "example": "Jeg er glad for å se deg.",
+    "example_english": "I am glad to see you.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "sulten",
+    "english": "hungry",
+    "example": "Jeg er sulten etter treningen.",
+    "example_english": "I am hungry after the workout.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "tørst",
+    "english": "thirsty",
+    "example": "Kan jeg få vann? Jeg er tørst.",
+    "example_english": "Can I have water? I am thirsty.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "syk",
+    "english": "sick / ill",
+    "example": "Han er syk og ligger hjemme.",
+    "example_english": "He is sick and staying at home.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "frisk",
+    "english": "healthy / well",
+    "example": "Hun er frisk igjen etter sykdommen.",
+    "example_english": "She is well again after the illness.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "sterk",
+    "english": "strong",
+    "example": "Han er sterk og trener mye.",
+    "example_english": "He is strong and trains a lot.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "svak",
+    "english": "weak",
+    "example": "Signalet er veldig svakt her.",
+    "example_english": "The signal is very weak here.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "vennlig",
+    "english": "friendly",
+    "example": "Naboene våre er veldig vennlige.",
+    "example_english": "Our neighbours are very friendly.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "norsk": "å steke",
+    "english": "to fry / to roast",
+    "example": "Jeg steker egg til frokost.",
+    "example_english": "I fry eggs for breakfast.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "norsk": "å koke",
+    "english": "to boil / to cook",
+    "example": "Kok vannet i ti minutter.",
+    "example_english": "Boil the water for ten minutes.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "norsk": "å bake",
+    "english": "to bake",
+    "example": "Hun baker brød hver lørdag.",
+    "example_english": "She bakes bread every Saturday.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "norsk": "å skjære",
+    "english": "to cut / to slice",
+    "example": "Skjær grønnsakene i biter.",
+    "example_english": "Cut the vegetables into pieces.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "norsk": "å blande",
+    "english": "to mix / to blend",
+    "example": "Bland mel og sukker i en bolle.",
+    "example_english": "Mix flour and sugar in a bowl.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "norsk": "å smake",
+    "english": "to taste",
+    "example": "Smak på suppen og tilsett salt.",
+    "example_english": "Taste the soup and add salt.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "norsk": "å varme opp",
+    "english": "to heat up / to warm up",
+    "example": "Varm opp maten i mikrobølgeovnen.",
+    "example_english": "Heat up the food in the microwave.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "norsk": "en gryte",
+    "english": "a pot / a casserole dish",
+    "example": "Suppen koker i gryta.",
+    "example_english": "The soup is boiling in the pot.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "en stekepanne",
+    "english": "a frying pan",
+    "example": "Varm opp stekepannen før du steker.",
+    "example_english": "Heat up the frying pan before frying.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "en ovn",
+    "english": "an oven",
+    "example": "Sett ovnen på 180 grader.",
+    "example_english": "Set the oven to 180 degrees.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kniv",
+    "english": "a knife",
+    "example": "Bruk en skarp kniv til å skjære.",
+    "example_english": "Use a sharp knife to cut.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skjærefjøl",
+    "english": "a chopping board",
+    "example": "Legg grønnsakene på skjærefjølen.",
+    "example_english": "Put the vegetables on the chopping board.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bolle",
+    "english": "a bowl",
+    "example": "Ha ingrediensene i en stor bolle.",
+    "example_english": "Put the ingredients in a large bowl.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "et oppskrift",
+    "english": "a recipe",
+    "example": "Jeg følger en oppskrift fra nettet.",
+    "example_english": "I follow a recipe from the internet.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "en ingrediens",
+    "english": "an ingredient",
+    "example": "Sjekk at du har alle ingrediensene.",
+    "example_english": "Check that you have all the ingredients.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "salt",
+    "english": "salt",
+    "example": "Tilsett litt salt i vannet.",
+    "example_english": "Add a little salt to the water.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "pepper",
+    "english": "pepper",
+    "example": "Krydre kjøttet med salt og pepper.",
+    "example_english": "Season the meat with salt and pepper.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "olje",
+    "english": "oil",
+    "example": "Ha litt olje i pannen.",
+    "example_english": "Put a little oil in the pan.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "smør",
+    "english": "butter",
+    "example": "Smør brødet med smør.",
+    "example_english": "Spread the bread with butter.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "mel",
+    "english": "flour",
+    "example": "Tilsett to kopper mel i deigen.",
+    "example_english": "Add two cups of flour to the dough.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "sukker",
+    "english": "sugar",
+    "example": "Vil du ha sukker i kaffen?",
+    "example_english": "Would you like sugar in your coffee?",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "et måltid",
+    "english": "a meal",
+    "example": "Vi spiser tre måltider om dagen.",
+    "example_english": "We eat three meals a day.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "ferdig",
+    "english": "ready / done / finished",
+    "example": "Maten er ferdig om ti minutter.",
+    "example_english": "The food will be ready in ten minutes.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "adjective"
+  },
+  {
+    "norsk": "rå",
+    "english": "raw",
+    "example": "Ikke spis rått kjøtt.",
+    "example_english": "Do not eat raw meat.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "adjective"
+  },
+  {
+    "norsk": "en kjele",
+    "english": "a kettle / a saucepan",
+    "example": "Kok vannet i kjelen.",
+    "example_english": "Boil the water in the kettle.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skog",
+    "english": "a forest / a wood",
+    "example": "Vi går tur i skogen om helgen.",
+    "example_english": "We go for a walk in the forest at the weekend.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "et fjell",
+    "english": "a mountain",
+    "example": "Fjellet er dekket av snø om vinteren.",
+    "example_english": "The mountain is covered in snow in winter.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en elv",
+    "english": "a river",
+    "example": "Elven renner gjennom dalen.",
+    "example_english": "The river flows through the valley.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sjø",
+    "english": "a lake",
+    "example": "Vi bader i sjøen om sommeren.",
+    "example_english": "We swim in the lake in summer.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "et tre",
+    "english": "a tree",
+    "example": "Det er et stort tre i hagen.",
+    "example_english": "There is a big tree in the garden.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en blomst",
+    "english": "a flower",
+    "example": "Blomstene blomstrer om våren.",
+    "example_english": "The flowers bloom in spring.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en strand",
+    "english": "a beach",
+    "example": "Vi slapper av på stranden.",
+    "example_english": "We relax on the beach.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en dal",
+    "english": "a valley",
+    "example": "Landsbyen ligger i en grønn dal.",
+    "example_english": "The village lies in a green valley.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kyst",
+    "english": "a coast",
+    "example": "Norge har en lang kyst.",
+    "example_english": "Norway has a long coast.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en øy",
+    "english": "an island",
+    "example": "Vi reiste til en liten øy.",
+    "example_english": "We travelled to a small island.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en fjord",
+    "english": "a fjord",
+    "example": "Sognefjorden er Norges lengste fjord.",
+    "example_english": "Sognefjord is Norway's longest fjord.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "et felt",
+    "english": "a field",
+    "example": "Kyr beiter på feltet.",
+    "example_english": "Cows graze in the field.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en stein",
+    "english": "a stone / a rock",
+    "example": "Barnet plukket opp en stein.",
+    "example_english": "The child picked up a stone.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "jord",
+    "english": "soil / earth",
+    "example": "Planten vokser i god jord.",
+    "example_english": "The plant grows in good soil.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en fugl",
+    "english": "a bird",
+    "example": "Fuglene synger om morgenen.",
+    "example_english": "The birds sing in the morning.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "en fisk",
+    "english": "a fish",
+    "example": "Det er mye fisk i elven.",
+    "example_english": "There are many fish in the river.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "et dyr",
+    "english": "an animal",
+    "example": "Mange dyr lever i skogen.",
+    "example_english": "Many animals live in the forest.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "naturen",
+    "english": "nature (in general)",
+    "example": "Jeg elsker å være ute i naturen.",
+    "example_english": "I love being out in nature.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "å vokse",
+    "english": "to grow",
+    "example": "Treet vokser sakte.",
+    "example_english": "The tree grows slowly.",
+    "level": "A2",
+    "category": "nature",
+    "part": "verb"
+  },
+  {
+    "norsk": "å svømme",
+    "english": "to swim",
+    "example": "Vi svømmer i sjøen om sommeren.",
+    "example_english": "We swim in the lake in summer.",
+    "level": "A2",
+    "category": "nature",
+    "part": "verb"
+  },
+  {
+    "norsk": "å gå tur",
+    "english": "to go for a walk / to hike",
+    "example": "Vi går tur i fjellet i helgen.",
+    "example_english": "We go for a walk in the mountains at the weekend.",
+    "level": "A2",
+    "category": "nature",
+    "part": "verb"
+  },
+  {
+    "norsk": "vakker",
+    "english": "beautiful / gorgeous",
+    "example": "Utsikten er vakker fra toppen.",
+    "example_english": "The view is beautiful from the top.",
+    "level": "A2",
+    "category": "nature",
+    "part": "adjective"
+  },
+  {
+    "norsk": "stille",
+    "english": "quiet / still / calm",
+    "example": "Det er stille i skogen om morgenen.",
+    "example_english": "It is quiet in the forest in the morning.",
+    "level": "A2",
+    "category": "nature",
+    "part": "adjective"
+  },
+  {
+    "norsk": "frisk luft",
+    "english": "fresh air",
+    "example": "Det er godt med frisk luft ute.",
+    "example_english": "The fresh air outside is wonderful.",
+    "level": "A2",
+    "category": "nature",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en å",
+    "english": "a stream / a creek",
+    "example": "Vi hørte lyden av en liten å.",
+    "example_english": "We heard the sound of a small stream.",
+    "level": "A2",
+    "category": "nature",
+    "part": "noun"
+  },
+  {
+    "norsk": "å vaske",
+    "english": "to wash / to clean",
+    "example": "Jeg vasker klær på lørdag.",
+    "example_english": "I wash clothes on Saturday.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å støvsuge",
+    "english": "to vacuum",
+    "example": "Jeg støvsuger stuen en gang i uka.",
+    "example_english": "I vacuum the living room once a week.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å rydde",
+    "english": "to tidy up",
+    "example": "Rydd rommet ditt før middag.",
+    "example_english": "Tidy up your room before dinner.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å lage mat",
+    "english": "to cook / to make food",
+    "example": "Hvem lager mat i dag?",
+    "example_english": "Who is cooking today?",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å handle",
+    "english": "to shop / to do the shopping",
+    "example": "Vi handler mat på fredager.",
+    "example_english": "We do the food shopping on Fridays.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å kaste søppel",
+    "english": "to take out the rubbish",
+    "example": "Kan du kaste søppelet?",
+    "example_english": "Can you take out the rubbish?",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å tørke av",
+    "english": "to wipe / to dust",
+    "example": "Tørk av bordet etter middagen.",
+    "example_english": "Wipe the table after dinner.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å vaske opp",
+    "english": "to wash up / to do the dishes",
+    "example": "Jeg vasker opp etter middagen.",
+    "example_english": "I do the dishes after dinner.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å stryke",
+    "english": "to iron",
+    "example": "Jeg stryker skjortene mine på søndag.",
+    "example_english": "I iron my shirts on Sunday.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å henge opp",
+    "english": "to hang up",
+    "example": "Heng opp klærne til tørk.",
+    "example_english": "Hang up the clothes to dry.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å pusse tenner",
+    "english": "to brush teeth",
+    "example": "Puss tennene dine to ganger om dagen.",
+    "example_english": "Brush your teeth twice a day.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "et søppel",
+    "english": "rubbish / waste",
+    "example": "Legg søppelet i søppelbøtta.",
+    "example_english": "Put the rubbish in the bin.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "en støvsuger",
+    "english": "a vacuum cleaner",
+    "example": "Støvsugeren er i skapet.",
+    "example_english": "The vacuum cleaner is in the cupboard.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "en mopp",
+    "english": "a mop",
+    "example": "Bruk en mopp til å vaske gulvet.",
+    "example_english": "Use a mop to wash the floor.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "et oppvaskmiddel",
+    "english": "washing-up liquid / dish soap",
+    "example": "Vi trenger mer oppvaskmiddel.",
+    "example_english": "We need more washing-up liquid.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "en klut",
+    "english": "a cloth / a rag",
+    "example": "Tørk av benken med en klut.",
+    "example_english": "Wipe the counter with a cloth.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "en vaskemaskin",
+    "english": "a washing machine",
+    "example": "Legg klærne i vaskemaskinen.",
+    "example_english": "Put the clothes in the washing machine.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "et oppvaskkum",
+    "english": "a kitchen sink",
+    "example": "Skyll grønnsakene i oppvaskkummen.",
+    "example_english": "Rinse the vegetables in the kitchen sink.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "ryddig",
+    "english": "tidy / neat",
+    "example": "Hold leiligheten ryddig.",
+    "example_english": "Keep the apartment tidy.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "adjective"
+  },
+  {
+    "norsk": "skitten",
+    "english": "dirty",
+    "example": "Gulvet er skittent og må vaskes.",
+    "example_english": "The floor is dirty and needs washing.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "adjective"
+  },
+  {
+    "norsk": "hver dag",
+    "english": "every day",
+    "example": "Jeg lufter hunden hver dag.",
+    "example_english": "I walk the dog every day.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å rydde opp",
+    "english": "to clean up / to clear up",
+    "example": "Rydd opp etter middagen.",
+    "example_english": "Clean up after dinner.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
+  },
+  {
+    "norsk": "å lufte hunden",
+    "english": "to walk the dog",
+    "example": "Jeg lufter hunden to ganger om dagen.",
+    "example_english": "I walk the dog twice a day.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en bøtte",
+    "english": "a bucket / a bin",
+    "example": "Fyll bøtten med vann.",
+    "example_english": "Fill the bucket with water.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
+    "norsk": "å ringe",
+    "english": "to call / to phone",
+    "example": "Jeg ringer deg i kveld.",
+    "example_english": "I will call you this evening.",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å sende",
+    "english": "to send",
+    "example": "Kan du sende meg adressen?",
+    "example_english": "Can you send me the address?",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å skrive",
+    "english": "to write",
+    "example": "Jeg skriver en e-post til sjefen.",
+    "example_english": "I am writing an email to the boss.",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å svare",
+    "english": "to answer / to reply",
+    "example": "Svar på meldingen min!",
+    "example_english": "Reply to my message!",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å snakke med",
+    "english": "to talk to / to speak with",
+    "example": "Jeg vil snakke med deg om det.",
+    "example_english": "I want to talk to you about that.",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å spørre",
+    "english": "to ask",
+    "example": "Kan jeg spørre deg om noe?",
+    "example_english": "Can I ask you something?",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å fortelle",
+    "english": "to tell",
+    "example": "Fortell meg hva som skjedde.",
+    "example_english": "Tell me what happened.",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å forstå",
+    "english": "to understand",
+    "example": "Jeg forstår ikke hva du mener.",
+    "example_english": "I do not understand what you mean.",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å gjenta",
+    "english": "to repeat",
+    "example": "Kan du gjenta det du sa?",
+    "example_english": "Can you repeat what you said?",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "å møtes",
+    "english": "to meet up",
+    "example": "Vi møtes på kaféen klokka tre.",
+    "example_english": "We meet up at the café at three o'clock.",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "norsk": "en melding",
+    "english": "a message",
+    "example": "Jeg har fått en ny melding.",
+    "example_english": "I have received a new message.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "en e-post",
+    "english": "an email",
+    "example": "Send meg en e-post med detaljene.",
+    "example_english": "Send me an email with the details.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "et svar",
+    "english": "a reply / an answer",
+    "example": "Jeg venter på svaret ditt.",
+    "example_english": "I am waiting for your reply.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "en samtale",
+    "english": "a conversation",
+    "example": "Vi hadde en lang samtale.",
+    "example_english": "We had a long conversation.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "en telefon",
+    "english": "a telephone / a phone",
+    "example": "Telefonen din ringer.",
+    "example_english": "Your phone is ringing.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "et nummer",
+    "english": "a number",
+    "example": "Hva er telefonnummeret ditt?",
+    "example_english": "What is your phone number?",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "et møte",
+    "english": "a meeting",
+    "example": "Vi har et møte klokka ti.",
+    "example_english": "We have a meeting at ten o'clock.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "en avtale",
+    "english": "an appointment / an agreement",
+    "example": "Jeg har en avtale hos legen.",
+    "example_english": "I have an appointment with the doctor.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "sosiale medier",
+    "english": "social media",
+    "example": "Hun bruker mye tid på sosiale medier.",
+    "example_english": "She spends a lot of time on social media.",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "internett",
+    "english": "the internet",
+    "example": "Har du tilgang til internett?",
+    "example_english": "Do you have access to the internet?",
+    "level": "A2",
+    "category": "communication",
+    "part": "noun"
+  },
+  {
+    "norsk": "tydelig",
+    "english": "clear / distinct",
+    "example": "Vær tydelig når du forklarer.",
+    "example_english": "Be clear when you explain.",
+    "level": "A2",
+    "category": "communication",
+    "part": "adjective"
+  },
+  {
+    "norsk": "høflig",
+    "english": "polite",
+    "example": "Vær høflig når du skriver til kunder.",
+    "example_english": "Be polite when writing to customers.",
+    "level": "A2",
+    "category": "communication",
+    "part": "adjective"
+  },
+  {
+    "norsk": "Kan du hjelpe meg?",
+    "english": "Can you help me?",
+    "example": "Unnskyld, kan du hjelpe meg?",
+    "example_english": "Excuse me, can you help me?",
+    "level": "A2",
+    "category": "communication",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Jeg forstår ikke.",
+    "english": "I don't understand.",
+    "example": "Beklager, jeg forstår ikke.",
+    "example_english": "Sorry, I don't understand.",
+    "level": "A2",
+    "category": "communication",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Kan du snakke saktere?",
+    "english": "Can you speak more slowly?",
+    "example": "Kan du snakke litt saktere, takk?",
+    "example_english": "Can you speak a little more slowly, please?",
+    "level": "A2",
+    "category": "communication",
+    "part": "phrase"
+  }
 ]
