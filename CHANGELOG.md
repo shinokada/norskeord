@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 1.6.1
+
+### Patch Changes
+
+- Style:
+  - Standardized indentation and whitespace across the project for consistent formatting.
+
+  Improvements:
+  - Flashcard pages now choose and display language-specific example phrases and their translations more reliably.
+
+  Bug Fixes:
+  - Improved robustness of random selection and link-opening behavior to prevent edge-case failures.
+
+  Accessibility:
+  - Minor icon/label adjustments to improve clarity and assistive technology accuracy.
+
 ## 1.6.0
 
 ### Minor Changes
