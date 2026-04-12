@@ -16,7 +16,7 @@
     color = 'currentColor',
     variation = 'outline',
     viewBox = '0 0 24 24',
-    strokeWidth = '0 0 24 24',
+    strokeWidth = '1.5',
     ariaLabel = 'arrow left',
     class: classname = '',
     ...attributes

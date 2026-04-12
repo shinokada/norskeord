@@ -11,6 +11,9 @@ export function removeHyphensAndCapitalize(str: string) {
 }
 
 export function randomword(wordList: string[]) {
+  if (wordList.length === 0) {
+    throw new Error('wordList must not be empty');
+  }
   return wordList[Math.floor(Math.random() * wordList.length)];
 }
 
@@ -18,6 +21,9 @@ export function getRandomItemFromDictionary<T>(dictionary: { [key: string]: T })
   [key: string]: T;
 } {
   const keys = Object.keys(dictionary);
+  if (keys.length === 0) {
+    throw new Error('dictionary must not be empty');
+  }
   const randomKey = keys[Math.floor(Math.random() * keys.length)];
 
   return {
@@ -30,6 +36,11 @@ export const randomNumberGenerator = (
   max: number,
   maxConsecutiveRepeats: number
 ): (() => number) => {
+  const rangeSize = max - min + 1;
+  if (rangeSize <= 0) {
+    throw new Error('Invalid range: min must be <= max');
+  }
+  const windowSize = Math.min(Math.max(maxConsecutiveRepeats, 0), rangeSize - 1);
   const previousNumbers: number[] = [];
 
   return () => {
@@ -39,7 +50,7 @@ export const randomNumberGenerator = (
       randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     } while (previousNumbers.includes(randomNumber));
 
-    if (previousNumbers.length >= maxConsecutiveRepeats) {
+    if (previousNumbers.length >= windowSize) {
       previousNumbers.shift();
     }
 
@@ -107,7 +118,7 @@ export function openTab(word: string, website: string) {
       : 'https://ordbokene.no/bm/search?q=';
 
   const url = baseUrl + encodeURIComponent(word);
-  window.open(url, '_blank');
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 export function cleanWord(word: string) {
