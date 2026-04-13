@@ -1,5 +1,6 @@
 <script>
   import '../app.css';
+  import { onMount } from 'svelte';
   import { afterNavigate } from '$app/navigation';
   import { Runatics } from 'runatics';
   import { MetaTags, deepMerge } from 'runes-meta-tags';
@@ -23,6 +24,35 @@
     if (from !== null && to?.url.pathname && validFlashcardPathPattern.test(to.url.pathname)) {
       localStorage.setItem('last-flashcard-path', to.url.pathname);
     }
+  });
+
+  // Prevent horizontal swipe-to-pan on Android PWA.
+  // CSS overflow-x:hidden is ignored by the Android WebView in standalone mode,
+  // so we block touchmove events whose horizontal component exceeds the vertical one.
+  onMount(() => {
+    let startX = 0;
+    let startY = 0;
+
+    function onTouchStart(e: TouchEvent) {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    }
+
+    function onTouchMove(e: TouchEvent) {
+      const dx = Math.abs(e.touches[0].clientX - startX);
+      const dy = Math.abs(e.touches[0].clientY - startY);
+      if (dx > dy) {
+        e.preventDefault();
+      }
+    }
+
+    document.addEventListener('touchstart', onTouchStart, { passive: true });
+    document.addEventListener('touchmove', onTouchMove, { passive: false });
+
+    return () => {
+      document.removeEventListener('touchstart', onTouchStart);
+      document.removeEventListener('touchmove', onTouchMove);
+    };
   });
 </script>
 
