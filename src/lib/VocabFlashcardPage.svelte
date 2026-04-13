@@ -381,6 +381,7 @@
     transform-style: preserve-3d;
     cursor: pointer;
     user-select: none;
+    touch-action: pan-y;
   }
   .flip-it {
     transform: rotateY(180deg);
