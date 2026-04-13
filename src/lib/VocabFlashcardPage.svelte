@@ -205,7 +205,7 @@
   );
 </script>
 
-<div class="flex flex-col items-center">
+<div class="flex w-full flex-col items-center overflow-hidden">
   <h1 class="m-4 text-3xl">{title}</h1>
 
   <!-- Mode toggle -->
@@ -333,7 +333,7 @@
   </p>
 
   <!-- Nav buttons -->
-  <div class="grid grid-cols-3 gap-2 pt-4">
+  <div class="grid w-full grid-cols-3 gap-2 pt-4">
     <button
       type="button"
       onclick={prev}

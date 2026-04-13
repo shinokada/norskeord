@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.6.7
+
+### Patch Changes
+
+- fix: mobile sway, add w-full overflow-hidden
+
 ## 1.6.6
 
 ### Patch Changes
