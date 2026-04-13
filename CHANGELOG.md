@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.6.5
+
+### Patch Changes
+
+- fix: PWA sway right and left
+
 ## 1.6.4
 
 ### Patch Changes
