@@ -60,7 +60,7 @@
 <MetaTags {...metaTags} />
 <Nav />
 
-<section class="overflow-x-hidden border-b border-gray-300 pb-8 dark:border-gray-600">
+<section class="border-b border-gray-300 pb-8 dark:border-gray-600">
   <div class="mx-auto max-w-screen-xl px-4 text-center">
     {@render children()}
   </div>
