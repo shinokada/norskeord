@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.6.6
+
+### Patch Changes
+
+- fix: add lang ts to +layout
+
 ## 1.6.5
 
 ### Patch Changes
