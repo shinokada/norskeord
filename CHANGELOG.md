@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.6.8
+
+### Patch Changes
+
+- fix: mobile right side cut
+
 ## 1.6.7
 
 ### Patch Changes

@@ -205,7 +205,7 @@
   );
 </script>
 
-<div class="flex w-full flex-col items-center overflow-hidden">
+<div class="flex w-full flex-col items-center">
   <h1 class="m-4 text-3xl">{title}</h1>
 
   <!-- Mode toggle -->
