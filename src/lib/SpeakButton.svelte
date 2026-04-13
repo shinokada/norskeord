@@ -38,12 +38,11 @@
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
     const all = window.speechSynthesis.getVoices();
     const noVoices = all.filter((v) => v.lang.startsWith('nb') || v.lang.startsWith('no'));
-    const candidates = noVoices.length > 0 ? noVoices : all;
-    if (candidates.length > 0) {
-      norwegianVoices = candidates;
-      if (!selectedVoiceName || !candidates.find((v) => v.name === selectedVoiceName)) {
-        const nora = candidates.find((v) => v.name.includes('Nora'));
-        selectedVoiceName = (nora ?? candidates[0]).name;
+    if (noVoices.length > 0) {
+      norwegianVoices = noVoices;
+      if (!selectedVoiceName || !noVoices.find((v) => v.name === selectedVoiceName)) {
+        const nora = noVoices.find((v) => v.name.includes('Nora'));
+        selectedVoiceName = (nora ?? noVoices[0]).name;
       }
     } else {
       norwegianVoices = [];
@@ -81,7 +80,7 @@
       const voices = window.speechSynthesis.getVoices();
       const voice = selectedVoiceName
         ? voices.find((v) => v.name === selectedVoiceName)
-        : voices.find((v) => v.lang.startsWith('nb') || v.lang.startsWith('no'));
+        : (voices.find((v) => v.lang.startsWith('nb') || v.lang.startsWith('no')) ?? voices[0]);
       if (voice) utterance.voice = voice;
       // Set rate/pitch after voice to prevent browser resetting them
       utterance.rate = parseFloat(speed);
