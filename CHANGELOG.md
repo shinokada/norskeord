@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.6.3
+
+### Patch Changes
+
+- fix: overflow-x
+
 ## 1.6.2
 
 ### Patch Changes
