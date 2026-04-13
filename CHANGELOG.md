@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 1.6.4
+
+### Patch Changes
+
+- fix: app.html and app.css
+
 ## 1.6.3
 
 ### Patch Changes
