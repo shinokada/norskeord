@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.0.0
+
+### Major Changes
+
+- feat:
+  - Added a Word/Phrase toggle to customize flashcard display; flashcards now show front/back content appropriate to the selected type and remember your preference.
+    UI Changes:
+  - Offline-ready and update-available notifications replaced with dismissable toasts featuring clearer titles, icons, and simplified actions.
+    Tests:
+  - End-to-end tests updated to validate card-type labels and persistence behavior.
+    Breaking Change:
+  - Vocab entry data now requires example translations to be present (update imports/data accordingly).
+
 ## 1.6.9
 
 ### Patch Changes
