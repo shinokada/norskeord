@@ -145,11 +145,17 @@
 
   function deriveExampleTranslation(entry: VocabEntry, m: Mode, ct: CardType): string {
     if (ct === 'phrase') return m === 'noreng' ? entry.english : entry.norsk;
-    return m === 'noreng' ? (entry.example_english ?? '') : (entry.example_english ? entry.example : '');
+    return m === 'noreng'
+      ? (entry.example_english ?? '')
+      : entry.example_english
+        ? entry.example
+        : '';
   }
 
   let currentExample = $derived(current ? deriveExample(current.entry, mode, cardType) : '');
-  let currentExampleTranslation = $derived(current ? deriveExampleTranslation(current.entry, mode, cardType) : '');
+  let currentExampleTranslation = $derived(
+    current ? deriveExampleTranslation(current.entry, mode, cardType) : ''
+  );
 
   // Rebuild deck whenever entries changes (new category/level)
   $effect(() => {
@@ -306,7 +312,10 @@
       >
         {current.entry.part}
       </span>
-      <SpeakButton bind:this={speakButtonRef} word={cardType === 'word' ? current.entry.norsk : current.front} />
+      <SpeakButton
+        bind:this={speakButtonRef}
+        word={cardType === 'word' ? current.entry.norsk : current.front}
+      />
     </div>
   {/if}
 
