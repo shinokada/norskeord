@@ -38,6 +38,13 @@ test('A1 greetings page has mode toggle buttons', async ({ page }) => {
   await page.goto('/a1/greetings');
   await expect(page.getByRole('button', { name: 'Norsk' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Word' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Norsk' }).click();
+  await page.getByRole('button', { name: 'Word' }).click();
+  await page.reload();
+
+  await expect(page.getByRole('button', { name: 'English' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Phrase' })).toBeVisible();
 });
 
 test('B1 travel flashcard page loads', async ({ page }) => {

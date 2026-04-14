@@ -314,7 +314,7 @@
       </span>
       <SpeakButton
         bind:this={speakButtonRef}
-        word={cardType === 'word' ? current.entry.norsk : current.front}
+        word={cardType === 'word' ? current.entry.norsk : current.entry.example}
       />
     </div>
   {/if}
@@ -361,7 +361,7 @@
       Tap to flip · ← → to navigate
     {:else}
       Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to
-      pronounce word · . to pronounce example phrase
+      pronounce word · . to pronounce {cardType === 'word' ? 'example phrase' : 'word'}
     {/if}
   </p>
 
