@@ -36,8 +36,8 @@ test('A1 greetings flashcard page loads and shows title', async ({ page }) => {
 
 test('A1 greetings page has mode toggle buttons', async ({ page }) => {
   await page.goto('/a1/greetings');
-  await expect(page.getByRole('button', { name: 'Norsk → English' })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'English → Norsk' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Norsk' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Word' })).toBeVisible();
 });
 
 test('B1 travel flashcard page loads', async ({ page }) => {

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Toast } from 'flowbite-svelte';
-  import { CheckCircleSolid, RotateOutline } from 'flowbite-svelte-icons';
+  import { CheckCircleSolid, RefreshOutline } from 'flowbite-svelte-icons';
   import { useRegisterSW } from 'virtual:pwa-register/svelte';
 
   const { needRefresh, offlineReady, updateServiceWorker } = useRegisterSW({
@@ -41,7 +41,7 @@
   <div class="fixed right-4 bottom-4 z-50">
     <Toast color="blue" dismissable onclose={close}>
       {#snippet icon()}
-        <RotateOutline class="h-5 w-5" />
+        <RefreshOutline class="h-5 w-5" />
       {/snippet}
       <div class="flex flex-col gap-2">
         <span class="text-sm font-medium">New version available.</span>
