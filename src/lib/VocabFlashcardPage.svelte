@@ -14,9 +14,11 @@
   let { entries, title = 'Vocab' }: Props = $props();
 
   type Mode = 'noreng' | 'engnor';
+  type CardType = 'word' | 'phrase';
   type DeckItem = { entry: VocabEntry; front: string; back: string };
 
   const LS_MODE = 'vocab-flashcard-mode';
+  const LS_CARD_TYPE = 'vocab-flashcard-card-type';
   const LS_SHOW_EXAMPLE = 'vocab-flashcard-show-example';
 
   function getInitialMode(): Mode {
@@ -25,12 +27,19 @@
     return saved === 'noreng' || saved === 'engnor' ? saved : 'noreng';
   }
 
+  function getInitialCardType(): CardType {
+    if (!browser) return 'word';
+    const saved = localStorage.getItem(LS_CARD_TYPE);
+    return saved === 'word' || saved === 'phrase' ? saved : 'word';
+  }
+
   function getInitialShowExample(): boolean {
     if (!browser) return false;
     return localStorage.getItem(LS_SHOW_EXAMPLE) === 'true';
   }
 
   let mode = $state<Mode>(getInitialMode());
+  let cardType = $state<CardType>(getInitialCardType());
   let showExampleDefault = $state(getInitialShowExample());
   let showCardBack = $state(false);
   let showExampleEnglish = $state(getInitialShowExample());
@@ -57,7 +66,16 @@
     return a;
   }
 
-  function makeDeckItem(entry: VocabEntry, m: Mode): DeckItem {
+  function makeDeckItem(entry: VocabEntry, m: Mode, ct: CardType): DeckItem {
+    if (ct === 'phrase') {
+      const norskExample = entry.example;
+      const engExample = entry.example_english ?? entry.example;
+      return {
+        entry,
+        front: m === 'noreng' ? norskExample : engExample,
+        back: m === 'noreng' ? engExample : norskExample
+      };
+    }
     return {
       entry,
       front: m === 'noreng' ? entry.norsk : entry.english,
@@ -65,8 +83,8 @@
     };
   }
 
-  function buildDeck(es: VocabEntry[], m: Mode) {
-    deck = shuffle(es).map((e) => makeDeckItem(e, m));
+  function buildDeck(es: VocabEntry[], m: Mode, ct: CardType) {
+    deck = shuffle(es).map((e) => makeDeckItem(e, m, ct));
     currentIndex = 0;
     completed = false;
     showCardBack = false;
@@ -79,14 +97,21 @@
   }
 
   function restart() {
-    buildDeck(entries, mode);
+    buildDeck(entries, mode, cardType);
   }
 
   function setMode(m: Mode) {
     if (m === mode) return;
     mode = m;
     localStorage.setItem(LS_MODE, m);
-    buildDeck(entries, m);
+    buildDeck(entries, m, cardType);
+  }
+
+  function setCardType(ct: CardType) {
+    if (ct === cardType) return;
+    cardType = ct;
+    localStorage.setItem(LS_CARD_TYPE, ct);
+    buildDeck(entries, mode, ct);
   }
 
   function prev() {
@@ -114,20 +139,26 @@
   const toggleBack = () => (showCardBack = !showCardBack);
 
   let current = $derived(deck[currentIndex]);
+  // In word mode: example sentence for the phrase section
+  // In phrase mode: the vocab word for the word section
   let currentExample = $derived(
     current
-      ? mode === 'noreng'
-        ? current.entry.example
-        : (current.entry.example_english ?? current.entry.example)
+      ? cardType === 'phrase'
+        ? mode === 'noreng' ? current.entry.norsk : current.entry.english
+        : mode === 'noreng'
+          ? current.entry.example
+          : (current.entry.example_english ?? current.entry.example)
       : ''
   );
   let currentExampleTranslation = $derived(
     current
-      ? mode === 'noreng'
-        ? (current.entry.example_english ?? '')
-        : current.entry.example_english
-          ? current.entry.example
-          : ''
+      ? cardType === 'phrase'
+        ? mode === 'noreng' ? current.entry.english : current.entry.norsk
+        : mode === 'noreng'
+          ? (current.entry.example_english ?? '')
+          : current.entry.example_english
+            ? current.entry.example
+            : ''
       : ''
   );
 
@@ -135,6 +166,7 @@
   $effect(() => {
     const e = entries;
     const m = mode;
+    const ct = cardType;
     untrack(() => {
       if (e.length === 0) {
         deck = [];
@@ -143,8 +175,7 @@
         resetCardState();
         return;
       }
-      // Preserve the user's chosen mode across category/level switches
-      buildDeck(e, m);
+      buildDeck(e, m, ct);
     });
   });
 
@@ -195,26 +226,30 @@
     }
   }
 
-  const modeButtonBase =
-    'font-medium rounded-lg text-lg px-3 sm:px-5 py-1 sm:py-2.5 me-1 sm:me-2 mb-1 sm:mb-2 focus:outline-none focus:ring-4 transition-opacity';
-  const norengCls = $derived(
-    `${modeButtonBase} text-white bg-green-700 hover:bg-green-800 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ${mode === 'noreng' ? 'opacity-100' : 'opacity-50'}`
-  );
-  const engnorCls = $derived(
-    `${modeButtonBase} text-white bg-purple-700 hover:bg-purple-800 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 ${mode === 'engnor' ? 'opacity-100' : 'opacity-50'}`
-  );
+  const modeButtonCls =
+    'font-medium rounded-lg text-lg px-3 sm:px-5 py-1 sm:py-2.5 me-1 sm:me-2 mb-1 sm:mb-2 focus:outline-none focus:ring-4 text-white bg-green-700 hover:bg-green-800 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800';
+  const cardTypeButtonCls =
+    'font-medium rounded-lg text-lg px-3 sm:px-5 py-1 sm:py-2.5 me-1 sm:me-2 mb-1 sm:mb-2 focus:outline-none focus:ring-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800';
 </script>
 
 <div class="flex w-full flex-col items-center">
   <h1 class="m-4 text-3xl">{title}</h1>
 
-  <!-- Mode toggle -->
+  <!-- Mode + CardType toggles -->
   <div class="flex justify-center">
-    <button type="button" class={norengCls} onclick={() => setMode('noreng')}>
-      Norsk → English
+    <button
+      type="button"
+      class={modeButtonCls}
+      onclick={() => setMode(mode === 'noreng' ? 'engnor' : 'noreng')}
+    >
+      {mode === 'noreng' ? 'Norsk' : 'English'}
     </button>
-    <button type="button" class={engnorCls} onclick={() => setMode('engnor')}>
-      English → Norsk
+    <button
+      type="button"
+      class={cardTypeButtonCls}
+      onclick={() => setCardType(cardType === 'word' ? 'phrase' : 'word')}
+    >
+      {cardType === 'word' ? 'Word' : 'Phrase'}
     </button>
   </div>
 
@@ -282,17 +317,17 @@
       >
         {current.entry.part}
       </span>
-      <SpeakButton bind:this={speakButtonRef} word={current.entry.norsk} />
+      <SpeakButton bind:this={speakButtonRef} word={cardType === 'word' ? current.entry.norsk : current.front} />
     </div>
   {/if}
 
-  <!-- Example section -->
+  <!-- Example / Word section -->
   {#if !completed && current}
     <div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 dark:bg-gray-800">
       <div class="mb-2 flex items-center gap-2">
         <span
           class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
-          >phrase</span
+          >{cardType === 'word' ? 'phrase' : 'word'}</span
         >
         <SpeakButton bind:this={speakExampleRef} word={currentExample} />
       </div>
