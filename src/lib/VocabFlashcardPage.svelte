@@ -104,14 +104,12 @@
     if (m === mode) return;
     mode = m;
     localStorage.setItem(LS_MODE, m);
-    buildDeck(entries, m, cardType);
   }
 
   function setCardType(ct: CardType) {
     if (ct === cardType) return;
     cardType = ct;
     localStorage.setItem(LS_CARD_TYPE, ct);
-    buildDeck(entries, mode, ct);
   }
 
   function prev() {
@@ -139,28 +137,19 @@
   const toggleBack = () => (showCardBack = !showCardBack);
 
   let current = $derived(deck[currentIndex]);
-  // In word mode: example sentence for the phrase section
-  // In phrase mode: the vocab word for the word section
-  let currentExample = $derived(
-    current
-      ? cardType === 'phrase'
-        ? mode === 'noreng' ? current.entry.norsk : current.entry.english
-        : mode === 'noreng'
-          ? current.entry.example
-          : (current.entry.example_english ?? current.entry.example)
-      : ''
-  );
-  let currentExampleTranslation = $derived(
-    current
-      ? cardType === 'phrase'
-        ? mode === 'noreng' ? current.entry.english : current.entry.norsk
-        : mode === 'noreng'
-          ? (current.entry.example_english ?? '')
-          : current.entry.example_english
-            ? current.entry.example
-            : ''
-      : ''
-  );
+
+  function deriveExample(entry: VocabEntry, m: Mode, ct: CardType): string {
+    if (ct === 'phrase') return m === 'noreng' ? entry.norsk : entry.english;
+    return m === 'noreng' ? entry.example : (entry.example_english ?? entry.example);
+  }
+
+  function deriveExampleTranslation(entry: VocabEntry, m: Mode, ct: CardType): string {
+    if (ct === 'phrase') return m === 'noreng' ? entry.english : entry.norsk;
+    return m === 'noreng' ? (entry.example_english ?? '') : (entry.example_english ? entry.example : '');
+  }
+
+  let currentExample = $derived(current ? deriveExample(current.entry, mode, cardType) : '');
+  let currentExampleTranslation = $derived(current ? deriveExampleTranslation(current.entry, mode, cardType) : '');
 
   // Rebuild deck whenever entries changes (new category/level)
   $effect(() => {
