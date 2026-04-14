@@ -69,7 +69,7 @@
   function makeDeckItem(entry: VocabEntry, m: Mode, ct: CardType): DeckItem {
     if (ct === 'phrase') {
       const norskExample = entry.example;
-      const engExample = entry.example_english ?? entry.example;
+      const engExample = entry.example_english;
       return {
         entry,
         front: m === 'noreng' ? norskExample : engExample,
@@ -140,16 +140,12 @@
 
   function deriveExample(entry: VocabEntry, m: Mode, ct: CardType): string {
     if (ct === 'phrase') return m === 'noreng' ? entry.norsk : entry.english;
-    return m === 'noreng' ? entry.example : (entry.example_english ?? entry.example);
+    return m === 'noreng' ? entry.example : entry.example_english;
   }
 
   function deriveExampleTranslation(entry: VocabEntry, m: Mode, ct: CardType): string {
     if (ct === 'phrase') return m === 'noreng' ? entry.english : entry.norsk;
-    return m === 'noreng'
-      ? (entry.example_english ?? '')
-      : entry.example_english
-        ? entry.example
-        : '';
+    return m === 'noreng' ? entry.example_english : entry.example;
   }
 
   let currentExample = $derived(current ? deriveExample(current.entry, mode, cardType) : '');
