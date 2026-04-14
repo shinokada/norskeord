@@ -123,7 +123,7 @@ export interface VocabEntry {
   norsk: string;
   english: string;
   example: string;
-  example_english?: string;
+  example_english: string;
   level: CEFRLevel;
   category: Category;
   part: PartOfSpeech;
