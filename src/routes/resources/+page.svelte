@@ -4,6 +4,24 @@
 
 <div class="mx-auto max-w-4xl p-8 text-left">
   <Heading tag="h1" class="text-3xl">FREE RESOURCES</Heading>
+
+  <Heading tag="h2" class="text-2xl">Norsktrening</Heading>
+  <List class="list-disc text-left text-lg dark:text-gray-400">
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://www.rodekors.no/tilbudene/norsktrening/" class="me-4 hover:underline md:me-6"
+        >Røde Kors (Oslo, Kristiansand, Bergen, Tromsø, Trondheim)</A
+      >
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://caritas.no/kurs/norsktrening-2/" class="me-4 hover:underline md:me-6"
+        >Caritas Norge (Oslo)</A
+      >
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://www.kianorge.no/aktivitet/sprakkafe-i-oslo-tullinsgate" class="me-4 hover:underline md:me-6">KIA Norge (Oslo)</A>
+    </Li>
+  </List>
+
   <Heading tag="h2" class="text-2xl">Online Learning</Heading>
   <List class="list-disc text-left text-lg dark:text-gray-400">
     <Li class="hover:text-red-700 hover:underline">
