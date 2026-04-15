@@ -3,8 +3,40 @@
 </script>
 
 <div class="mx-auto max-w-4xl p-8 text-left">
-  <Heading tag="h1" class="text-3xl">RESOURCES</Heading>
-  <Heading tag="h2" class="text-2xl">Other Flashcard Apps</Heading>
+  <Heading tag="h1" class="text-3xl">FREE RESOURCES</Heading>
+  <Heading tag="h2" class="text-2xl">Online Learning</Heading>
+  <List class="list-disc text-left text-lg dark:text-gray-400">
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://www.ntnu.edu/learnnow/" class="me-4 hover:underline md:me-6"
+        >Learn NoW</A
+      >
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://www.ntnu.edu/learnnow2-hs/" class="me-4 hover:underline md:me-6"
+        >Learn Now 2</A
+      >
+    </Li>
+  </List>
+
+  <Heading tag="h2" class="text-2xl">Reading</Heading>
+  <List class="list-disc text-left text-lg dark:text-gray-400">
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://lesnorsk.no/" class="me-4 hover:underline md:me-6"
+        >Lesnorsk av Sissel Ofstad</A
+      >
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://www.klartale.no/" class="me-4 hover:underline md:me-6">Klar Tale</A>
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="hhttps://deichman.no/sok/form:%20%22Lettlest%2C%20enkelt%20innhold%22?language=languages_Norsk+%28bokm%C3%A5l%29&audience=work.audiences_Voksne" class="me-4 hover:underline md:me-6">Deichman</A>
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://barneboker.no/" class="me-4 hover:underline md:me-6">Barnebøker for Norge</A>
+    </Li>
+  </List> 
+
+  <Heading tag="h2" class="text-2xl">Vocaburary/Flashcard</Heading>
   <List class="list-disc text-left text-lg dark:text-gray-400">
     <Li class="hover:text-red-700 hover:underline">
       <A href="https://norskflashcards.no/" class="me-4 hover:underline md:me-6"
@@ -17,6 +49,24 @@
       >
     </Li>
   </List>
+
+  <Heading tag="h2" class="text-2xl">Listening</Heading>
+  <List class="list-disc text-left text-lg dark:text-gray-400">
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://laernorsknaa.com/" class="me-4 hover:underline md:me-6">Lær norsk nå</A>
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://www.youtube.com/@NorsklrerKarense" class="me-4 hover:underline md:me-6"
+        >Norsklærer Karense</A
+      >
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
+      <A href="https://lingu.no/norskpodden" class="me-4 hover:underline md:me-6"
+        >Lingu</A
+      >
+    </Li>
+  </List>
+
   <Heading tag="h2" class="text-2xl">Grammar</Heading>
   <List class="list-disc text-left text-lg dark:text-gray-400">
     <Li class="hover:text-red-700 hover:underline">
