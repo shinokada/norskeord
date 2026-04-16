@@ -13,6 +13,11 @@
       >
     </Li>
     <Li class="hover:text-red-700 hover:underline">
+      <A href="https://oslo.norsktrening.rodekors.no/pamelding/digital/norsktrening" class="me-4 hover:underline md:me-6"
+        >Røde Kors Online Tranining</A
+      >
+    </Li>
+    <Li class="hover:text-red-700 hover:underline">
       <A href="https://caritas.no/kurs/norsktrening-2/" class="me-4 hover:underline md:me-6"
         >Caritas Norge (Oslo)</A
       >
