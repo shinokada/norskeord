@@ -1,4 +1,5 @@
 import type { SVGAttributes } from 'svelte/elements';
+import type { Card } from 'ts-fsrs';
 
 export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 
@@ -119,8 +120,19 @@ export const CATEGORIES_BY_LEVEL = {
 
 export type Category = (typeof CATEGORIES_BY_LEVEL)[CEFRLevel][number];
 
+export type FSRSRating = 'again' | 'hard' | 'good' | 'easy';
+
+export interface CardProgress {
+  fsrs: Card;
+  seenCount: number;
+  lastSeen: string; // ISO date string
+  level: CEFRLevel;
+  category: Category;
+}
+
 export interface VocabEntry {
   norsk: string;
+  lemma?: string; 
   english: string;
   example: string;
   example_english: string;

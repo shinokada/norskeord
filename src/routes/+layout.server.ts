@@ -2,7 +2,7 @@ import { ANALYTICS_ID_LANGUAGE_APP } from '$env/static/private';
 import type { MetaProps } from 'runes-meta-tags';
 import { metaTitle, metaDescription, metaImg } from 'runes-meta-tags';
 
-export const load = ({ url }) => {
+export const load = ({ url, locals }) => {
   const title = metaTitle(url.pathname, __NAME__);
   const basicDesc = 'Master Norwegian Vocabulary with Flashcard.';
   const description = metaDescription(url.pathname, basicDesc);
@@ -33,8 +33,12 @@ export const load = ({ url }) => {
       imageHeight: '630'
     }
   };
+
   return {
     layoutMetaTags,
-    ANALYTICS_ID_LANGUAGE_APP
+    ANALYTICS_ID_LANGUAGE_APP,
+    // Auth state — available as $page.data.user and $page.data.plan in all routes
+    user: locals.user,
+    plan: locals.plan
   };
 };

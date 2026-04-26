@@ -194,7 +194,10 @@
       <ButtonToggleGroup
         value={speed}
         onSelect={(v) => {
-          if (typeof v === 'string') { speed = v; localStorage.setItem(LS_SPEED, v); }
+          if (typeof v === 'string') {
+            speed = v;
+            localStorage.setItem(LS_SPEED, v);
+          }
         }}
       >
         {#each speedOptions as opt (opt.value)}
@@ -209,7 +212,10 @@
       <ButtonToggleGroup
         value={pitch}
         onSelect={(v) => {
-          if (typeof v === 'string') { pitch = v; localStorage.setItem(LS_PITCH, v); }
+          if (typeof v === 'string') {
+            pitch = v;
+            localStorage.setItem(LS_PITCH, v);
+          }
         }}
       >
         {#each toneOptions as opt (opt.value)}
