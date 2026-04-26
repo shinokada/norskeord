@@ -1,5 +1,6 @@
 <script lang="ts">
   import {
+    Avatar,
     Navbar,
     NavLi,
     NavBrand,
@@ -10,7 +11,8 @@
     Dropdown,
     DropdownItem,
     DropdownDivider,
-    DropdownHeader
+    DropdownHeader,
+    DropdownGroup
   } from 'flowbite-svelte';
   import No from '$lib/No.svelte';
   import { page } from '$app/state';
@@ -84,24 +86,41 @@
   </NavBrand>
 
   <div class="flex items-center gap-2 lg:order-2">
-    <a
-      href="/plus"
-      class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
+  <button
+      type="button"
+      onclick={toggleLocale}
+      aria-label="Switch language"
+      class="hidden rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 sm:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
     >
-      {m.nav_plus_badge()}
-    </a>
+      {currentLocale === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
+    </button>
     {#if user}
-      <span class="hidden text-xs text-gray-500 sm:inline dark:text-gray-400">
+    <Avatar class="acs" size="sm" />
+    <Dropdown simple class="w-56" triggeredBy=".acs">
+      <DropdownHeader>
+        <span class="hidden text-xs text-gray-500 sm:inline dark:text-gray-400">
         {user.email}
       </span>
-      <button
-        type="button"
-        onclick={logout}
-        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 sm:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-      >
-        {m.nav_log_out()}
-      </button>
+      </DropdownHeader>
+      <DropdownDivider />
+      <DropdownGroup>
+      <DropdownItem href="/stats">{m.nav_my_progress()}</DropdownItem>
+      <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
+      <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
+      {#if user}
+        <DropdownItem onclick={logout}>{m.nav_log_out()}</DropdownItem>
+      {:else}
+        <DropdownItem href="/auth/login">{m.nav_log_in()}</DropdownItem>
+      {/if}
+      </DropdownGroup>
+    </Dropdown>
     {:else}
+      <a
+        href="/plus"
+        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
+      >
+        {m.nav_plus_badge()}
+      </a>
       <a
         href="/auth/login"
         class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 sm:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
@@ -109,14 +128,6 @@
         {m.nav_log_in()}
       </a>
     {/if}
-    <button
-      type="button"
-      onclick={toggleLocale}
-      aria-label="Switch language"
-      class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 sm:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-    >
-      {currentLocale === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
-    </button>
     <DarkMode class="inline-block hover:text-gray-900 dark:hover:text-white" />
     <NavHamburger />
   </div>
@@ -129,12 +140,12 @@
   >
     <!-- Per-level mega-menus — all categories, no gating -->
     {#each menus as { level, items } (level)}
-      <NavLi class="cursor-pointer">
+      <NavLi id="mega-trigger-{level}" class="cursor-pointer">
         {level}
         <ChevronDownOutline size="sm" class="ms-1 inline" />
       </NavLi>
 
-      <MegaMenu {items} classes={{ ul: '!gap-x-6' }}>
+      <MegaMenu {items} triggeredBy="#mega-trigger-{level}" classes={{ ul: '!gap-x-6' }}>
         {#snippet children({ item })}
           <a href={item.href} class={linkClass}>
             {item.name}
@@ -143,30 +154,6 @@
       </MegaMenu>
     {/each}
 
-    <!-- Structured "More" dropdown -->
-    <NavLi class="cursor-pointer">
-      {m.nav_more()}<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
-    </NavLi>
-    <Dropdown simple class="w-56">
-      <DropdownItem href="/">Browse all decks</DropdownItem>
-      <DropdownItem href="/stats">{m.nav_my_progress()}</DropdownItem>
-      <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
-      <DropdownItem href="/plus">{m.nav_plus()}</DropdownItem>
-      <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
-
-      <DropdownItem href="/plus">
-        <span class="text-gray-400 dark:text-gray-500">Word-of-the-day</span>
-      </DropdownItem>
-
-      <DropdownDivider />
-
-      <!-- Account / locale -->
-      <DropdownItem href="/about">{m.nav_about()}</DropdownItem>
-      {#if user}
-        <DropdownItem onclick={logout}>{m.nav_log_out()}</DropdownItem>
-      {:else}
-        <DropdownItem href="/auth/login">{m.nav_log_in()}</DropdownItem>
-      {/if}
-    </Dropdown>
+    
   </NavUl>
 </Navbar>

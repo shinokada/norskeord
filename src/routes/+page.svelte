@@ -148,23 +148,31 @@
 </script>
 
 <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
-<div class="relative -mx-4 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-20 text-center mt-8">
+<div
+  class="relative -mx-4 mt-8 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-20 text-center"
+>
   <!-- Decorative blur blobs -->
-  <div class="pointer-events-none absolute -top-20 -left-20 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl"></div>
-  <div class="pointer-events-none absolute -right-16 bottom-0 h-64 w-64 rounded-full bg-blue-400/10 blur-3xl"></div>
+  <div
+    class="pointer-events-none absolute -top-20 -left-20 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl"
+  ></div>
+  <div
+    class="pointer-events-none absolute -right-16 bottom-0 h-64 w-64 rounded-full bg-blue-400/10 blur-3xl"
+  ></div>
 
   <div class="relative mx-auto max-w-2xl">
-    <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-indigo-200 uppercase backdrop-blur-sm">
+    <div
+      class="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-indigo-200 uppercase backdrop-blur-sm"
+    >
       Norwegian vocabulary and phrase
     </div>
 
-    <h1 class="mt-0 mb-4 text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+    <h1 class="mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
       Learn Norwegian vocabulary/phrase that <span class="text-indigo-300">actually sticks</span>
     </h1>
 
     <p class="mb-6 text-lg leading-relaxed text-indigo-100/80">
-      Flashcards built for Norskprøven candidates, new immigrants, and serious learners.
-      Smart scheduling shows you the right word at the right time — so nothing slips through the cracks.
+      Flashcards built for Norskprøven candidates, new immigrants, and serious learners. Smart
+      scheduling shows you the right word at the right time — so nothing slips through the cracks.
     </p>
 
     <div class="flex flex-wrap justify-center gap-3">
@@ -185,8 +193,12 @@
 </div>
 
 <!-- ── Social proof / feature strip ────────────────────────────────────── -->
-<div class="relative -mx-4 border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900/60 mb-12">
-  <div class="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5">
+<div
+  class="relative -mx-4 mb-12 border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900/60"
+>
+  <div
+    class="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5"
+  >
     {#each features as f (f.label)}
       <span class="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300">
         <span class="text-lg">{f.icon}</span>
@@ -195,7 +207,6 @@
     {/each}
   </div>
 </div>
-
 
 <!-- ── Deck picker ──────────────────────────────────────────────────────── -->
 <div id="deck-picker" class="scroll-mt-20 space-y-10 text-left">
