@@ -1,6 +1,7 @@
 [
   {
     "norsk": "en butikk",
+    "lemma": "butikk",
     "english": "a shop / a store",
     "example": "Jeg går i butikken etter jobben.",
     "example_english": "I go to the shop after work.",
@@ -10,6 +11,7 @@
   },
   {
     "norsk": "en pris",
+    "lemma": "pris",
     "english": "a price",
     "example": "Hva er prisen på denne jakken?",
     "example_english": "What is the price of this jacket?",
@@ -19,6 +21,7 @@
   },
   {
     "norsk": "å betale",
+    "lemma": "betale",
     "english": "to pay",
     "example": "Kan jeg betale med kort?",
     "example_english": "Can I pay by card?",
@@ -28,6 +31,7 @@
   },
   {
     "norsk": "å kjøpe",
+    "lemma": "kjøpe",
     "english": "to buy",
     "example": "Jeg vil kjøpe en ny bok.",
     "example_english": "I want to buy a new book.",
@@ -37,6 +41,7 @@
   },
   {
     "norsk": "å selge",
+    "lemma": "selge",
     "english": "to sell",
     "example": "De selger frukt på torget.",
     "example_english": "They sell fruit at the market.",
@@ -46,6 +51,7 @@
   },
   {
     "norsk": "billig",
+    "lemma": "billig",
     "english": "cheap / inexpensive",
     "example": "Denne skjorten er veldig billig.",
     "example_english": "This shirt is very cheap.",
@@ -55,6 +61,7 @@
   },
   {
     "norsk": "dyr",
+    "lemma": "dyr",
     "english": "expensive",
     "example": "Den nye mobilen er altfor dyr.",
     "example_english": "The new phone is far too expensive.",
@@ -64,6 +71,7 @@
   },
   {
     "norsk": "en kasse",
+    "lemma": "kasse",
     "english": "a checkout / a till",
     "example": "Det er lang kø ved kassen.",
     "example_english": "There is a long queue at the checkout.",
@@ -73,6 +81,7 @@
   },
   {
     "norsk": "en kvittering",
+    "lemma": "kvittering",
     "english": "a receipt",
     "example": "Kan jeg få kvitteringen?",
     "example_english": "Can I have the receipt?",
@@ -82,6 +91,7 @@
   },
   {
     "norsk": "et tilbud",
+    "lemma": "tilbud",
     "english": "a sale / a deal / an offer",
     "example": "Det er tilbud på melk i dag.",
     "example_english": "There is a deal on milk today.",
@@ -91,6 +101,7 @@
   },
   {
     "norsk": "en pose",
+    "lemma": "pose",
     "english": "a bag",
     "example": "Vil du ha en pose?",
     "example_english": "Do you want a bag?",
@@ -100,6 +111,7 @@
   },
   {
     "norsk": "å prøve",
+    "lemma": "prøve",
     "english": "to try / to try on",
     "example": "Kan jeg prøve denne buksen?",
     "example_english": "Can I try on these trousers?",
@@ -109,6 +121,7 @@
   },
   {
     "norsk": "et kjøpesenter",
+    "lemma": "kjøpesenter",
     "english": "a shopping centre",
     "example": "Vi møtes på kjøpesenteret klokka tre.",
     "example_english": "We will meet at the shopping centre at three.",
@@ -118,6 +131,7 @@
   },
   {
     "norsk": "en rabatt",
+    "lemma": "rabatt",
     "english": "a discount",
     "example": "Studenter får ti prosent rabatt.",
     "example_english": "Students get ten percent discount.",
@@ -127,6 +141,7 @@
   },
   {
     "norsk": "å bytte",
+    "lemma": "bytte",
     "english": "to exchange / to swap",
     "example": "Jeg vil bytte denne jakken til en større.",
     "example_english": "I want to exchange this jacket for a larger one.",
@@ -136,6 +151,7 @@
   },
   {
     "norsk": "en størrelse",
+    "lemma": "størrelse",
     "english": "a size",
     "example": "Har dere denne i størrelse medium?",
     "example_english": "Do you have this in size medium?",
@@ -145,6 +161,7 @@
   },
   {
     "norsk": "et supermarked",
+    "lemma": "supermarked",
     "english": "a supermarket",
     "example": "Vi handler mat på supermarkedet.",
     "example_english": "We buy food at the supermarket.",
@@ -154,6 +171,7 @@
   },
   {
     "norsk": "penger",
+    "lemma": "penger",
     "english": "money",
     "example": "Jeg har ikke nok penger med meg.",
     "example_english": "I don't have enough money with me.",
@@ -163,6 +181,7 @@
   },
   {
     "norsk": "et kort",
+    "lemma": "kort",
     "english": "a (bank/credit) card",
     "example": "Unnskyld, tar dere kort?",
     "example_english": "Excuse me, do you accept card?",
@@ -172,6 +191,7 @@
   },
   {
     "norsk": "en kø",
+    "lemma": "kø",
     "english": "a queue",
     "example": "Det er lang kø i butikken.",
     "example_english": "There is a long queue in the shop.",
@@ -181,6 +201,7 @@
   },
   {
     "norsk": "å handle",
+    "lemma": "handle",
     "english": "to shop / to do shopping",
     "example": "Vi handler mat hver lørdag.",
     "example_english": "We do grocery shopping every Saturday.",
@@ -190,6 +211,7 @@
   },
   {
     "norsk": "en matvare",
+    "lemma": "matvare",
     "english": "a food item / groceries",
     "example": "Jeg trenger å kjøpe noen matvarer.",
     "example_english": "I need to buy some groceries.",
@@ -199,6 +221,7 @@
   },
   {
     "norsk": "åpningstider",
+    "lemma": "åpningstider",
     "english": "opening hours",
     "example": "Hva er åpningstidene på lørdag?",
     "example_english": "What are the opening hours on Saturday?",
@@ -208,6 +231,7 @@
   },
   {
     "norsk": "en krone",
+    "lemma": "krone",
     "english": "a krone (Norwegian currency)",
     "example": "Det koster hundre kroner.",
     "example_english": "It costs one hundred kroner.",
@@ -217,6 +241,7 @@
   },
   {
     "norsk": "gratis",
+    "lemma": "gratis",
     "english": "free (of charge)",
     "example": "Parkering er gratis her.",
     "example_english": "Parking is free here.",
@@ -224,9 +249,9 @@
     "category": "shopping",
     "part": "adjective"
   },
-
   {
     "norsk": "en buss",
+    "lemma": "buss",
     "english": "a bus",
     "example": "Jeg tar bussen til jobben.",
     "example_english": "I take the bus to work.",
@@ -236,6 +261,7 @@
   },
   {
     "norsk": "et tog",
+    "lemma": "tog",
     "english": "a train",
     "example": "Toget går klokka åtte.",
     "example_english": "The train leaves at eight o'clock.",
@@ -245,6 +271,7 @@
   },
   {
     "norsk": "en bil",
+    "lemma": "bil",
     "english": "a car",
     "example": "Han kjører bil til jobb.",
     "example_english": "He drives a car to work.",
@@ -254,6 +281,7 @@
   },
   {
     "norsk": "en sykkel",
+    "lemma": "sykkel",
     "english": "a bicycle",
     "example": "Jeg sykler til skolen om sommeren.",
     "example_english": "I cycle to school in the summer.",
@@ -263,6 +291,7 @@
   },
   {
     "norsk": "et fly",
+    "lemma": "fly",
     "english": "an aeroplane",
     "example": "Vi reiser med fly til London.",
     "example_english": "We travel by plane to London.",
@@ -272,6 +301,7 @@
   },
   {
     "norsk": "en båt",
+    "lemma": "båt",
     "english": "a boat",
     "example": "Vi tok båten over fjorden.",
     "example_english": "We took the boat across the fjord.",
@@ -281,6 +311,7 @@
   },
   {
     "norsk": "en trikk",
+    "lemma": "trikk",
     "english": "a tram",
     "example": "Trikken er rask i sentrum.",
     "example_english": "The tram is fast in the city centre.",
@@ -290,6 +321,7 @@
   },
   {
     "norsk": "en T-bane",
+    "lemma": "T-bane",
     "english": "an underground / a metro",
     "example": "Ta T-banen til Nationaltheatret.",
     "example_english": "Take the metro to Nationaltheatret.",
@@ -299,6 +331,7 @@
   },
   {
     "norsk": "en taxi",
+    "lemma": "taxi",
     "english": "a taxi",
     "example": "Kan du bestille en taxi til meg?",
     "example_english": "Can you order a taxi for me?",
@@ -308,6 +341,7 @@
   },
   {
     "norsk": "en stasjon",
+    "lemma": "stasjon",
     "english": "a station",
     "example": "Vi møtes på togstasjonen.",
     "example_english": "We will meet at the train station.",
@@ -317,6 +351,7 @@
   },
   {
     "norsk": "en holdeplass",
+    "lemma": "holdeplass",
     "english": "a bus stop",
     "example": "Holdeplassen er rett rundt hjørnet.",
     "example_english": "The bus stop is just around the corner.",
@@ -326,6 +361,7 @@
   },
   {
     "norsk": "en billett",
+    "lemma": "billett",
     "english": "a ticket",
     "example": "Jeg kjøpte billett på nettet.",
     "example_english": "I bought a ticket online.",
@@ -335,6 +371,7 @@
   },
   {
     "norsk": "å reise",
+    "lemma": "reise",
     "english": "to travel",
     "example": "Vi reiser til Bergen neste uke.",
     "example_english": "We are travelling to Bergen next week.",
@@ -344,6 +381,7 @@
   },
   {
     "norsk": "å kjøre",
+    "lemma": "kjøre",
     "english": "to drive",
     "example": "Hun kjører fort.",
     "example_english": "She drives fast.",
@@ -353,6 +391,7 @@
   },
   {
     "norsk": "å gå",
+    "lemma": "gå",
     "english": "to walk / to go",
     "example": "Vi går til skolen.",
     "example_english": "We walk to school.",
@@ -362,6 +401,7 @@
   },
   {
     "norsk": "å sykle",
+    "lemma": "sykle",
     "english": "to cycle",
     "example": "Han sykler til jobben hver dag.",
     "example_english": "He cycles to work every day.",
@@ -371,6 +411,7 @@
   },
   {
     "norsk": "en flyplass",
+    "lemma": "flyplass",
     "english": "an airport",
     "example": "Flyplassen er langt fra sentrum.",
     "example_english": "The airport is far from the city centre.",
@@ -380,6 +421,7 @@
   },
   {
     "norsk": "sen",
+    "lemma": "sen",
     "english": "late",
     "example": "Toget er ti minutter sent.",
     "example_english": "The train is ten minutes late.",
@@ -389,6 +431,7 @@
   },
   {
     "norsk": "en avgang",
+    "lemma": "avgang",
     "english": "a departure",
     "example": "Avgangen er klokka tolv.",
     "example_english": "The departure is at twelve o'clock.",
@@ -398,6 +441,7 @@
   },
   {
     "norsk": "en ankomst",
+    "lemma": "ankomst",
     "english": "an arrival",
     "example": "Ankomsten er forsinket.",
     "example_english": "The arrival is delayed.",
@@ -407,6 +451,7 @@
   },
   {
     "norsk": "å bytte",
+    "lemma": "bytte",
     "english": "to change (transport)",
     "example": "Du må bytte tog i Oslo.",
     "example_english": "You need to change trains in Oslo.",
@@ -416,6 +461,7 @@
   },
   {
     "norsk": "rett frem",
+    "lemma": "rett frem",
     "english": "straight ahead",
     "example": "Kjør rett frem til rundkjøringen.",
     "example_english": "Drive straight ahead to the roundabout.",
@@ -425,6 +471,7 @@
   },
   {
     "norsk": "en ferge",
+    "lemma": "ferge",
     "english": "a ferry",
     "example": "Vi tar fergen til øya.",
     "example_english": "We take the ferry to the island.",
@@ -432,9 +479,9 @@
     "category": "transport",
     "part": "noun"
   },
-
   {
     "norsk": "en jakke",
+    "lemma": "jakke",
     "english": "a jacket",
     "example": "Jeg tar på meg jakken fordi det er kaldt.",
     "example_english": "I put on my jacket because it is cold.",
@@ -444,6 +491,7 @@
   },
   {
     "norsk": "en bukse",
+    "lemma": "bukse",
     "english": "trousers",
     "example": "Han har på seg en blå bukse.",
     "example_english": "He is wearing blue trousers.",
@@ -453,6 +501,7 @@
   },
   {
     "norsk": "en skjorte",
+    "lemma": "skjorte",
     "english": "a shirt",
     "example": "Han har hvit skjorte på jobbintervjuet.",
     "example_english": "He wears a white shirt to the job interview.",
@@ -462,6 +511,7 @@
   },
   {
     "norsk": "en kjole",
+    "lemma": "kjole",
     "english": "a dress",
     "example": "Hun har på seg en rød kjole.",
     "example_english": "She is wearing a red dress.",
@@ -471,6 +521,7 @@
   },
   {
     "norsk": "en genser",
+    "lemma": "genser",
     "english": "a jumper / a sweater",
     "example": "Jeg tar på meg genseren.",
     "example_english": "I put on my jumper.",
@@ -480,6 +531,7 @@
   },
   {
     "norsk": "en sko",
+    "lemma": "sko",
     "english": "a shoe",
     "example": "Jeg trenger nye sko.",
     "example_english": "I need new shoes.",
@@ -489,6 +541,7 @@
   },
   {
     "norsk": "en sokk",
+    "lemma": "sokk",
     "english": "a sock",
     "example": "Jeg finner ikke sokkene mine.",
     "example_english": "I can't find my socks.",
@@ -498,6 +551,7 @@
   },
   {
     "norsk": "ei lue",
+    "lemma": "lue",
     "english": "a (woolly) hat / beanie",
     "example": "Ta på deg lua, det er kaldt!",
     "example_english": "Put on your hat, it is cold!",
@@ -507,6 +561,7 @@
   },
   {
     "norsk": "et skjerf",
+    "lemma": "skjerf",
     "english": "a scarf",
     "example": "Hun har et langt, rødt skjerf.",
     "example_english": "She has a long red scarf.",
@@ -516,6 +571,7 @@
   },
   {
     "norsk": "en frakk",
+    "lemma": "frakk",
     "english": "a coat",
     "example": "En varm frakk er viktig om vinteren.",
     "example_english": "A warm coat is important in winter.",
@@ -525,6 +581,7 @@
   },
   {
     "norsk": "et undertøy",
+    "lemma": "undertøy",
     "english": "underwear",
     "example": "Undertøy av ull holder deg varm.",
     "example_english": "Wool underwear keeps you warm.",
@@ -534,6 +591,7 @@
   },
   {
     "norsk": "en t-skjorte",
+    "lemma": "t-skjorte",
     "english": "a T-shirt",
     "example": "Jeg bruker t-skjorte om sommeren.",
     "example_english": "I wear a T-shirt in the summer.",
@@ -543,6 +601,7 @@
   },
   {
     "norsk": "en shorts",
+    "lemma": "shorts",
     "english": "shorts",
     "example": "Han har på seg shorts på stranden.",
     "example_english": "He is wearing shorts on the beach.",
@@ -552,6 +611,7 @@
   },
   {
     "norsk": "å kle seg",
+    "lemma": "kle seg",
     "english": "to get dressed",
     "example": "Barn trenger hjelp til å kle seg.",
     "example_english": "Children need help to get dressed.",
@@ -561,6 +621,7 @@
   },
   {
     "norsk": "å ha på seg",
+    "lemma": "ha på seg",
     "english": "to wear / to have on",
     "example": "Hva har du på deg i dag?",
     "example_english": "What are you wearing today?",
@@ -570,6 +631,7 @@
   },
   {
     "norsk": "et belte",
+    "lemma": "belte",
     "english": "a belt",
     "example": "Jeg glemte beltet hjemme.",
     "example_english": "I forgot my belt at home.",
@@ -579,6 +641,7 @@
   },
   {
     "norsk": "hansker",
+    "lemma": "hansker",
     "english": "gloves",
     "example": "Ta med hansker, det er minusgrader.",
     "example_english": "Bring gloves, it is below zero.",
@@ -588,6 +651,7 @@
   },
   {
     "norsk": "en drakt",
+    "lemma": "drakt",
     "english": "a suit",
     "example": "Han har på seg drakt på møtet.",
     "example_english": "He is wearing a suit at the meeting.",
@@ -597,6 +661,7 @@
   },
   {
     "norsk": "en pyjamas",
+    "lemma": "pyjamas",
     "english": "pyjamas",
     "example": "Barna tar på seg pyjamasen.",
     "example_english": "The children put on their pyjamas.",
@@ -606,6 +671,7 @@
   },
   {
     "norsk": "strikket",
+    "lemma": "strikket",
     "english": "knitted",
     "example": "Bestemor ga meg en strikket genser.",
     "example_english": "Grandma gave me a knitted jumper.",
@@ -615,6 +681,7 @@
   },
   {
     "norsk": "trang",
+    "lemma": "trang",
     "english": "tight / narrow",
     "example": "Disse buksene er litt for trange.",
     "example_english": "These trousers are a bit too tight.",
@@ -624,6 +691,7 @@
   },
   {
     "norsk": "løs",
+    "lemma": "løs",
     "english": "loose / baggy",
     "example": "Jeg foretrekker løse bukser.",
     "example_english": "I prefer loose trousers.",
@@ -633,6 +701,7 @@
   },
   {
     "norsk": "et antrekk",
+    "lemma": "antrekk",
     "english": "an outfit",
     "example": "Det er et fint antrekk du har på deg!",
     "example_english": "That is a nice outfit you are wearing!",
@@ -642,6 +711,7 @@
   },
   {
     "norsk": "mote",
+    "lemma": "mote",
     "english": "fashion",
     "example": "Hun er alltid oppdatert på moten.",
     "example_english": "She is always up to date with fashion.",
@@ -651,6 +721,7 @@
   },
   {
     "norsk": "å vaske klær",
+    "lemma": "å vaske klær",
     "english": "to do laundry / to wash clothes",
     "example": "Jeg vasker klær hver mandag.",
     "example_english": "I do laundry every Monday.",
@@ -658,9 +729,9 @@
     "category": "clothing",
     "part": "phrase"
   },
-
   {
     "norsk": "en hobby",
+    "lemma": "hobby",
     "english": "a hobby",
     "example": "Hva er hobbyen din?",
     "example_english": "What is your hobby?",
@@ -670,6 +741,7 @@
   },
   {
     "norsk": "å lese",
+    "lemma": "lese",
     "english": "to read",
     "example": "Jeg liker å lese romaner.",
     "example_english": "I like to read novels.",
@@ -679,6 +751,7 @@
   },
   {
     "norsk": "å spille",
+    "lemma": "spille",
     "english": "to play (instrument/game)",
     "example": "Han spiller gitar.",
     "example_english": "He plays guitar.",
@@ -688,6 +761,7 @@
   },
   {
     "norsk": "å tegne",
+    "lemma": "tegne",
     "english": "to draw",
     "example": "Hun liker å tegne dyr.",
     "example_english": "She likes to draw animals.",
@@ -697,6 +771,7 @@
   },
   {
     "norsk": "å male",
+    "lemma": "male",
     "english": "to paint",
     "example": "Han maler bilder i helgene.",
     "example_english": "He paints pictures at weekends.",
@@ -706,6 +781,7 @@
   },
   {
     "norsk": "å synge",
+    "lemma": "synge",
     "english": "to sing",
     "example": "Vi synger i koret.",
     "example_english": "We sing in the choir.",
@@ -715,6 +791,7 @@
   },
   {
     "norsk": "å danse",
+    "lemma": "danse",
     "english": "to dance",
     "example": "Hun danser ballett to ganger i uka.",
     "example_english": "She dances ballet twice a week.",
@@ -724,6 +801,7 @@
   },
   {
     "norsk": "å fotografere",
+    "lemma": "fotografere",
     "english": "to take photographs",
     "example": "Jeg liker å fotografere naturen.",
     "example_english": "I like to photograph nature.",
@@ -733,6 +811,7 @@
   },
   {
     "norsk": "å lage mat",
+    "lemma": "å lage mat",
     "english": "to cook",
     "example": "Moren min liker å lage mat.",
     "example_english": "My mother likes to cook.",
@@ -742,6 +821,7 @@
   },
   {
     "norsk": "å se på film",
+    "lemma": "å se på film",
     "english": "to watch films",
     "example": "Vi ser på film hver fredag.",
     "example_english": "We watch films every Friday.",
@@ -751,6 +831,7 @@
   },
   {
     "norsk": "å spille dataspill",
+    "lemma": "å spille dataspill",
     "english": "to play video games",
     "example": "Han spiller dataspill med venner.",
     "example_english": "He plays video games with friends.",
@@ -760,6 +841,7 @@
   },
   {
     "norsk": "å strikke",
+    "lemma": "strikke",
     "english": "to knit",
     "example": "Bestemor strikker en genser til meg.",
     "example_english": "Grandma is knitting a jumper for me.",
@@ -769,6 +851,7 @@
   },
   {
     "norsk": "å sy",
+    "lemma": "sy",
     "english": "to sew",
     "example": "Hun syr egne klær.",
     "example_english": "She sews her own clothes.",
@@ -778,6 +861,7 @@
   },
   {
     "norsk": "å fiske",
+    "lemma": "fiske",
     "english": "to fish",
     "example": "Pappa liker å fiske om sommeren.",
     "example_english": "Dad likes to fish in the summer.",
@@ -787,6 +871,7 @@
   },
   {
     "norsk": "å løpe",
+    "lemma": "løpe",
     "english": "to run / to jog",
     "example": "Jeg løper fem kilometer om morgenen.",
     "example_english": "I run five kilometres in the morning.",
@@ -796,6 +881,7 @@
   },
   {
     "norsk": "et instrument",
+    "lemma": "instrument",
     "english": "an instrument",
     "example": "Spiller du et instrument?",
     "example_english": "Do you play an instrument?",
@@ -805,6 +891,7 @@
   },
   {
     "norsk": "en konsert",
+    "lemma": "konsert",
     "english": "a concert",
     "example": "Vi drar på konsert i helgen.",
     "example_english": "We are going to a concert at the weekend.",
@@ -814,6 +901,7 @@
   },
   {
     "norsk": "en tur",
+    "lemma": "tur",
     "english": "a trip / a hike / a walk",
     "example": "Vi tar en tur i skogen.",
     "example_english": "We are going for a walk in the forest.",
@@ -823,6 +911,7 @@
   },
   {
     "norsk": "å svømme",
+    "lemma": "svømme",
     "english": "to swim",
     "example": "Barna svømmer i bassenget.",
     "example_english": "The children are swimming in the pool.",
@@ -832,6 +921,7 @@
   },
   {
     "norsk": "et bibliotek",
+    "lemma": "bibliotek",
     "english": "a library",
     "example": "Jeg låner bøker på biblioteket.",
     "example_english": "I borrow books from the library.",
@@ -841,6 +931,7 @@
   },
   {
     "norsk": "å samle på",
+    "lemma": "å samle på",
     "english": "to collect",
     "example": "Han samler på frimerker.",
     "example_english": "He collects stamps.",
@@ -850,6 +941,7 @@
   },
   {
     "norsk": "å reise",
+    "lemma": "reise",
     "english": "to travel",
     "example": "Jeg liker å reise til nye steder.",
     "example_english": "I like to travel to new places.",
@@ -859,6 +951,7 @@
   },
   {
     "norsk": "en hage",
+    "lemma": "hage",
     "english": "a garden",
     "example": "Hun jobber i hagen om sommeren.",
     "example_english": "She works in the garden in the summer.",
@@ -868,6 +961,7 @@
   },
   {
     "norsk": "å gå på tur",
+    "lemma": "å gå på tur",
     "english": "to go hiking",
     "example": "Vi går på tur i fjellet.",
     "example_english": "We go hiking in the mountains.",
@@ -877,6 +971,7 @@
   },
   {
     "norsk": "et spill",
+    "lemma": "spill",
     "english": "a game / a board game",
     "example": "Vi spiller spill etter middag.",
     "example_english": "We play games after dinner.",
@@ -884,9 +979,9 @@
     "category": "hobbies",
     "part": "noun"
   },
-
   {
     "norsk": "til venstre",
+    "lemma": "til venstre",
     "english": "to the left",
     "example": "Ta til venstre ved lyskrysset.",
     "example_english": "Turn left at the traffic lights.",
@@ -896,6 +991,7 @@
   },
   {
     "norsk": "til høyre",
+    "lemma": "til høyre",
     "english": "to the right",
     "example": "Butikken er til høyre.",
     "example_english": "The shop is to the right.",
@@ -905,6 +1001,7 @@
   },
   {
     "norsk": "rett frem",
+    "lemma": "rett frem",
     "english": "straight ahead",
     "example": "Gå rett frem til du ser et kjøpesenter.",
     "example_english": "Go straight ahead until you see a shopping centre.",
@@ -914,6 +1011,7 @@
   },
   {
     "norsk": "å snu",
+    "lemma": "snu",
     "english": "to turn",
     "example": "Snu til venstre ved kirken.",
     "example_english": "Turn left at the church.",
@@ -923,6 +1021,7 @@
   },
   {
     "norsk": "et kart",
+    "lemma": "kart",
     "english": "a map",
     "example": "Har du et kart over byen?",
     "example_english": "Do you have a map of the city?",
@@ -932,6 +1031,7 @@
   },
   {
     "norsk": "et lyskryss",
+    "lemma": "lyskryss",
     "english": "traffic lights",
     "example": "Stopp ved lyskrysset.",
     "example_english": "Stop at the traffic lights.",
@@ -941,6 +1041,7 @@
   },
   {
     "norsk": "et hjørne",
+    "lemma": "hjørne",
     "english": "a corner",
     "example": "Banken er rundt hjørnet.",
     "example_english": "The bank is around the corner.",
@@ -950,6 +1051,7 @@
   },
   {
     "norsk": "en vei",
+    "lemma": "vei",
     "english": "a road / a way",
     "example": "Hvilken vei er det til sentrum?",
     "example_english": "Which way is it to the city centre?",
@@ -959,6 +1061,7 @@
   },
   {
     "norsk": "en gate",
+    "lemma": "gate",
     "english": "a street",
     "example": "Restauranten er i Karl Johans gate.",
     "example_english": "The restaurant is on Karl Johans street.",
@@ -968,6 +1071,7 @@
   },
   {
     "norsk": "ved siden av",
+    "lemma": "ved siden av",
     "english": "next to / beside",
     "example": "Parken er ved siden av skolen.",
     "example_english": "The park is next to the school.",
@@ -977,6 +1081,7 @@
   },
   {
     "norsk": "overfor",
+    "lemma": "overfor",
     "english": "opposite / across from",
     "example": "Hotellet er overfor togstasjonen.",
     "example_english": "The hotel is opposite the train station.",
@@ -986,6 +1091,7 @@
   },
   {
     "norsk": "mellom",
+    "lemma": "mellom",
     "english": "between",
     "example": "Biblioteket er mellom banken og parken.",
     "example_english": "The library is between the bank and the park.",
@@ -995,6 +1101,7 @@
   },
   {
     "norsk": "langt unna",
+    "lemma": "langt unna",
     "english": "far away",
     "example": "Er det langt unna herfra?",
     "example_english": "Is it far away from here?",
@@ -1004,6 +1111,7 @@
   },
   {
     "norsk": "nær",
+    "lemma": "nær",
     "english": "near / close",
     "example": "Hotellet er nær flyplassen.",
     "example_english": "The hotel is near the airport.",
@@ -1013,6 +1121,7 @@
   },
   {
     "norsk": "nord",
+    "lemma": "nord",
     "english": "north",
     "example": "Tromsø er i nord.",
     "example_english": "Tromsø is in the north.",
@@ -1022,6 +1131,7 @@
   },
   {
     "norsk": "sør",
+    "lemma": "sør",
     "english": "south",
     "example": "Vi reiser sørover i sommer.",
     "example_english": "We are travelling south this summer.",
@@ -1031,6 +1141,7 @@
   },
   {
     "norsk": "øst",
+    "lemma": "øst",
     "english": "east",
     "example": "Solen går opp i øst.",
     "example_english": "The sun rises in the east.",
@@ -1040,6 +1151,7 @@
   },
   {
     "norsk": "vest",
+    "lemma": "vest",
     "english": "west",
     "example": "Bergen er på vestkysten.",
     "example_english": "Bergen is on the west coast.",
@@ -1049,6 +1161,7 @@
   },
   {
     "norsk": "å gå forbi",
+    "lemma": "å gå forbi",
     "english": "to pass / to go past",
     "example": "Gå forbi kirken og snu til høyre.",
     "example_english": "Go past the church and turn right.",
@@ -1058,6 +1171,7 @@
   },
   {
     "norsk": "en rundkjøring",
+    "lemma": "rundkjøring",
     "english": "a roundabout",
     "example": "Ta av ved rundkjøringen.",
     "example_english": "Take the exit at the roundabout.",
@@ -1067,6 +1181,7 @@
   },
   {
     "norsk": "en bro",
+    "lemma": "bro",
     "english": "a bridge",
     "example": "Kjør over broen.",
     "example_english": "Drive over the bridge.",
@@ -1076,6 +1191,7 @@
   },
   {
     "norsk": "Hvor er ...?",
+    "lemma": "Hvor er ...?",
     "english": "Where is ...?",
     "example": "Unnskyld, hvor er nærmeste apotek?",
     "example_english": "Excuse me, where is the nearest pharmacy?",
@@ -1085,6 +1201,7 @@
   },
   {
     "norsk": "Hvordan kommer jeg til ...?",
+    "lemma": "Hvordan kommer jeg til ...?",
     "english": "How do I get to ...?",
     "example": "Hvordan kommer jeg til togstasjonen?",
     "example_english": "How do I get to the train station?",
@@ -1094,6 +1211,7 @@
   },
   {
     "norsk": "å krysse",
+    "lemma": "krysse",
     "english": "to cross",
     "example": "Kryss gaten ved overgangen.",
     "example_english": "Cross the street at the crossing.",
@@ -1103,6 +1221,7 @@
   },
   {
     "norsk": "en fotgjengerovergang",
+    "lemma": "fotgjengerovergang",
     "english": "a pedestrian crossing / a zebra crossing",
     "example": "Bruk fotgjengerovergangen.",
     "example_english": "Use the pedestrian crossing.",
@@ -1110,9 +1229,9 @@
     "category": "directions",
     "part": "noun"
   },
-
   {
     "norsk": "en jobb",
+    "lemma": "jobb",
     "english": "a job",
     "example": "Jeg har ny jobb!",
     "example_english": "I have a new job!",
@@ -1122,6 +1241,7 @@
   },
   {
     "norsk": "en lege",
+    "lemma": "lege",
     "english": "a doctor",
     "example": "Legen tar imot pasienter om morgenen.",
     "example_english": "The doctor sees patients in the morning.",
@@ -1131,6 +1251,7 @@
   },
   {
     "norsk": "en sykepleier",
+    "lemma": "sykepleier",
     "english": "a nurse",
     "example": "Sykepleieren jobber på sykehuset.",
     "example_english": "The nurse works at the hospital.",
@@ -1140,6 +1261,7 @@
   },
   {
     "norsk": "en lærer",
+    "lemma": "lærer",
     "english": "a teacher",
     "example": "Læreren underviser norsk.",
     "example_english": "The teacher teaches Norwegian.",
@@ -1149,6 +1271,7 @@
   },
   {
     "norsk": "en ingeniør",
+    "lemma": "ingeniør",
     "english": "an engineer",
     "example": "Han er ingeniør i en oljebedrift.",
     "example_english": "He is an engineer at an oil company.",
@@ -1158,6 +1281,7 @@
   },
   {
     "norsk": "en kokk",
+    "lemma": "kokk",
     "english": "a chef / a cook",
     "example": "Kokken lager deilig mat.",
     "example_english": "The chef makes delicious food.",
@@ -1167,6 +1291,7 @@
   },
   {
     "norsk": "en sjåfør",
+    "lemma": "sjåfør",
     "english": "a driver",
     "example": "Bussjåføren er alltid hyggelig.",
     "example_english": "The bus driver is always friendly.",
@@ -1176,6 +1301,7 @@
   },
   {
     "norsk": "en advokat",
+    "lemma": "advokat",
     "english": "a lawyer",
     "example": "Min søster er advokat.",
     "example_english": "My sister is a lawyer.",
@@ -1185,6 +1311,7 @@
   },
   {
     "norsk": "en politimann",
+    "lemma": "politimann",
     "english": "a police officer",
     "example": "Politimannen hjalp oss.",
     "example_english": "The police officer helped us.",
@@ -1194,6 +1321,7 @@
   },
   {
     "norsk": "en brannmann",
+    "lemma": "brannmann",
     "english": "a firefighter",
     "example": "Brannmennene kom raskt.",
     "example_english": "The firefighters arrived quickly.",
@@ -1203,6 +1331,7 @@
   },
   {
     "norsk": "en journalist",
+    "lemma": "journalist",
     "english": "a journalist",
     "example": "Journalisten intervjuet politikeren.",
     "example_english": "The journalist interviewed the politician.",
@@ -1212,6 +1341,7 @@
   },
   {
     "norsk": "en arkitekt",
+    "lemma": "arkitekt",
     "english": "an architect",
     "example": "Arkitekten tegnet et flott hus.",
     "example_english": "The architect designed a beautiful house.",
@@ -1221,6 +1351,7 @@
   },
   {
     "norsk": "en frisør",
+    "lemma": "frisør",
     "english": "a hairdresser",
     "example": "Jeg bestilte time hos frisøren.",
     "example_english": "I booked an appointment at the hairdresser's.",
@@ -1230,6 +1361,7 @@
   },
   {
     "norsk": "en butikkansatt",
+    "lemma": "butikkansatt",
     "english": "a shop assistant",
     "example": "Den butikkansatte var veldig hjelpsomme.",
     "example_english": "The shop assistant was very helpful.",
@@ -1239,6 +1371,7 @@
   },
   {
     "norsk": "en bonde",
+    "lemma": "bonde",
     "english": "a farmer",
     "example": "Bonden jobber ute hele dagen.",
     "example_english": "The farmer works outside all day.",
@@ -1248,6 +1381,7 @@
   },
   {
     "norsk": "en pilot",
+    "lemma": "pilot",
     "english": "a pilot",
     "example": "Piloten ønsket passasjerene velkommen.",
     "example_english": "The pilot welcomed the passengers.",
@@ -1257,6 +1391,7 @@
   },
   {
     "norsk": "en tannlege",
+    "lemma": "tannlege",
     "english": "a dentist",
     "example": "Jeg er redd for å gå til tannlegen.",
     "example_english": "I am scared of going to the dentist.",
@@ -1266,6 +1401,7 @@
   },
   {
     "norsk": "å jobbe",
+    "lemma": "jobbe",
     "english": "to work",
     "example": "Hun jobber deltid.",
     "example_english": "She works part-time.",
@@ -1275,6 +1411,7 @@
   },
   {
     "norsk": "en bedrift",
+    "lemma": "bedrift",
     "english": "a company / a business",
     "example": "Han arbeider i en stor bedrift.",
     "example_english": "He works at a large company.",
@@ -1284,6 +1421,7 @@
   },
   {
     "norsk": "en lønn",
+    "lemma": "lønn",
     "english": "a salary / wages",
     "example": "Lønnen min er ikke så høy.",
     "example_english": "My salary is not that high.",
@@ -1293,6 +1431,7 @@
   },
   {
     "norsk": "deltid",
+    "lemma": "deltid",
     "english": "part-time",
     "example": "Jeg jobber deltid på kafeen.",
     "example_english": "I work part-time at the café.",
@@ -1302,6 +1441,7 @@
   },
   {
     "norsk": "heltid",
+    "lemma": "heltid",
     "english": "full-time",
     "example": "Hun har ny heltidsjobb.",
     "example_english": "She has a new full-time job.",
@@ -1311,6 +1451,7 @@
   },
   {
     "norsk": "en kollega",
+    "lemma": "kollega",
     "english": "a colleague",
     "example": "Kollegaene mine er hyggelige.",
     "example_english": "My colleagues are friendly.",
@@ -1320,6 +1461,7 @@
   },
   {
     "norsk": "en sjef",
+    "lemma": "sjef",
     "english": "a boss / a manager",
     "example": "Sjefen min er streng, men rettferdig.",
     "example_english": "My boss is strict but fair.",
@@ -1329,6 +1471,7 @@
   },
   {
     "norsk": "å søke jobb",
+    "lemma": "å søke jobb",
     "english": "to apply for a job",
     "example": "Han søker jobb som lærer.",
     "example_english": "He is applying for a job as a teacher.",
@@ -1336,9 +1479,9 @@
     "category": "occupations",
     "part": "phrase"
   },
-
   {
     "norsk": "å spille fotball",
+    "lemma": "å spille fotball",
     "english": "to play football",
     "example": "Jeg spiller fotball med venner.",
     "example_english": "I play football with friends.",
@@ -1348,6 +1491,7 @@
   },
   {
     "norsk": "å svømme",
+    "lemma": "svømme",
     "english": "to swim",
     "example": "Han svømmer en kilometr hver dag.",
     "example_english": "He swims one kilometre every day.",
@@ -1357,6 +1501,7 @@
   },
   {
     "norsk": "å løpe",
+    "lemma": "løpe",
     "english": "to run",
     "example": "Hun løper 5 km om morgenen.",
     "example_english": "She runs 5 km in the morning.",
@@ -1366,6 +1511,7 @@
   },
   {
     "norsk": "å sykle",
+    "lemma": "sykle",
     "english": "to cycle",
     "example": "Vi sykler i fjellet om sommeren.",
     "example_english": "We cycle in the mountains in summer.",
@@ -1375,6 +1521,7 @@
   },
   {
     "norsk": "å trene",
+    "lemma": "trene",
     "english": "to exercise / to train",
     "example": "Han trener på treningssenter tre ganger i uka.",
     "example_english": "He trains at the gym three times a week.",
@@ -1384,6 +1531,7 @@
   },
   {
     "norsk": "et treningssenter",
+    "lemma": "treningssenter",
     "english": "a gym",
     "example": "Jeg har meldt meg inn på treningssenteret.",
     "example_english": "I have joined the gym.",
@@ -1393,6 +1541,7 @@
   },
   {
     "norsk": "en kamp",
+    "lemma": "kamp",
     "english": "a match / a game",
     "example": "Vi skal se kampen på TV.",
     "example_english": "We are going to watch the match on TV.",
@@ -1402,6 +1551,7 @@
   },
   {
     "norsk": "et lag",
+    "lemma": "lag",
     "english": "a team",
     "example": "Hvilket lag heier du på?",
     "example_english": "Which team do you support?",
@@ -1411,6 +1561,7 @@
   },
   {
     "norsk": "å vinne",
+    "lemma": "vinne",
     "english": "to win",
     "example": "Norge vant kampen.",
     "example_english": "Norway won the match.",
@@ -1420,6 +1571,7 @@
   },
   {
     "norsk": "å tape",
+    "lemma": "tape",
     "english": "to lose",
     "example": "Vi tapte med to mål.",
     "example_english": "We lost by two goals.",
@@ -1429,6 +1581,7 @@
   },
   {
     "norsk": "en spiller",
+    "lemma": "spiller",
     "english": "a player",
     "example": "Han er den beste spilleren på laget.",
     "example_english": "He is the best player on the team.",
@@ -1438,6 +1591,7 @@
   },
   {
     "norsk": "en trener",
+    "lemma": "trener",
     "english": "a coach / a trainer",
     "example": "Treneren er veldig dyktig.",
     "example_english": "The trainer is very skilled.",
@@ -1447,6 +1601,7 @@
   },
   {
     "norsk": "å gå på ski",
+    "lemma": "å gå på ski",
     "english": "to go skiing",
     "example": "Nordmenn liker å gå på ski.",
     "example_english": "Norwegians like to go skiing.",
@@ -1456,6 +1611,7 @@
   },
   {
     "norsk": "å skate",
+    "lemma": "skate",
     "english": "to skate",
     "example": "Barna skater på isen.",
     "example_english": "The children are skating on the ice.",
@@ -1465,6 +1621,7 @@
   },
   {
     "norsk": "volleyball",
+    "lemma": "volleyball",
     "english": "volleyball",
     "example": "Vi spiller volleyball på stranden.",
     "example_english": "We play volleyball on the beach.",
@@ -1474,6 +1631,7 @@
   },
   {
     "norsk": "tennis",
+    "lemma": "tennis",
     "english": "tennis",
     "example": "Vil du spille tennis med meg?",
     "example_english": "Do you want to play tennis with me?",
@@ -1483,6 +1641,7 @@
   },
   {
     "norsk": "et mål",
+    "lemma": "mål",
     "english": "a goal",
     "example": "Han scoret et mål i første omgang.",
     "example_english": "He scored a goal in the first half.",
@@ -1492,6 +1651,7 @@
   },
   {
     "norsk": "en dommer",
+    "lemma": "dommer",
     "english": "a referee",
     "example": "Dommeren blåste i fløyta.",
     "example_english": "The referee blew the whistle.",
@@ -1501,6 +1661,7 @@
   },
   {
     "norsk": "å heie på",
+    "lemma": "å heie på",
     "english": "to cheer for / to support",
     "example": "Vi heier på det norske laget.",
     "example_english": "We cheer for the Norwegian team.",
@@ -1510,6 +1671,7 @@
   },
   {
     "norsk": "en stadion",
+    "lemma": "stadion",
     "english": "a stadium",
     "example": "Stadion var full av folk.",
     "example_english": "The stadium was full of people.",
@@ -1519,6 +1681,7 @@
   },
   {
     "norsk": "basketball",
+    "lemma": "basketball",
     "english": "basketball",
     "example": "Jeg spiller basketball med klassen min.",
     "example_english": "I play basketball with my class.",
@@ -1528,6 +1691,7 @@
   },
   {
     "norsk": "sport",
+    "lemma": "sport",
     "english": "sport",
     "example": "Hvilken sport liker du?",
     "example_english": "Which sport do you like?",
@@ -1537,6 +1701,7 @@
   },
   {
     "norsk": "aktiv",
+    "lemma": "aktiv",
     "english": "active",
     "example": "Han er veldig aktiv og trener mye.",
     "example_english": "He is very active and trains a lot.",
@@ -1546,6 +1711,7 @@
   },
   {
     "norsk": "å konkurrere",
+    "lemma": "konkurrere",
     "english": "to compete",
     "example": "De konkurrerer i nasjonale mesterskap.",
     "example_english": "They compete in national championships.",
@@ -1555,6 +1721,7 @@
   },
   {
     "norsk": "en premie",
+    "lemma": "premie",
     "english": "a prize / an award",
     "example": "Laget tok premien i år.",
     "example_english": "The team won the prize this year.",
@@ -1562,9 +1729,9 @@
     "category": "sports",
     "part": "noun"
   },
-
   {
     "norsk": "syk",
+    "lemma": "syk",
     "english": "sick / ill",
     "example": "Jeg er syk og kan ikke komme på jobb.",
     "example_english": "I am sick and cannot come to work.",
@@ -1574,6 +1741,7 @@
   },
   {
     "norsk": "et sykehus",
+    "lemma": "sykehus",
     "english": "a hospital",
     "example": "Han er innlagt på sykehuset.",
     "example_english": "He is admitted to the hospital.",
@@ -1583,6 +1751,7 @@
   },
   {
     "norsk": "et apotek",
+    "lemma": "apotek",
     "english": "a pharmacy",
     "example": "Jeg kjøper medisin på apoteket.",
     "example_english": "I buy medicine at the pharmacy.",
@@ -1592,6 +1761,7 @@
   },
   {
     "norsk": "en medisin",
+    "lemma": "medisin",
     "english": "a medicine",
     "example": "Ta to tabletter med medisin.",
     "example_english": "Take two tablets of medicine.",
@@ -1601,6 +1771,7 @@
   },
   {
     "norsk": "vondt",
+    "lemma": "vondt",
     "english": "pain / ache (har vondt = to be in pain)",
     "example": "Jeg har vondt i hodet.",
     "example_english": "I have a headache.",
@@ -1610,6 +1781,7 @@
   },
   {
     "norsk": "en forkjølelse",
+    "lemma": "forkjølelse",
     "english": "a cold",
     "example": "Jeg har forkjølelse og feber.",
     "example_english": "I have a cold and a fever.",
@@ -1619,6 +1791,7 @@
   },
   {
     "norsk": "en feber",
+    "lemma": "feber",
     "english": "a fever",
     "example": "Barnet har høy feber.",
     "example_english": "The child has a high fever.",
@@ -1628,6 +1801,7 @@
   },
   {
     "norsk": "en allergi",
+    "lemma": "allergi",
     "english": "an allergy",
     "example": "Jeg er allergisk mot pollen.",
     "example_english": "I am allergic to pollen.",
@@ -1637,6 +1811,7 @@
   },
   {
     "norsk": "en resept",
+    "lemma": "resept",
     "english": "a prescription",
     "example": "Legen ga meg en resept.",
     "example_english": "The doctor gave me a prescription.",
@@ -1646,6 +1821,7 @@
   },
   {
     "norsk": "å legge seg",
+    "lemma": "legge seg",
     "english": "to lie down / to go to bed",
     "example": "Legg deg og hvil.",
     "example_english": "Lie down and rest.",
@@ -1655,6 +1831,7 @@
   },
   {
     "norsk": "å hvile",
+    "lemma": "hvile",
     "english": "to rest",
     "example": "Du må hvile når du er syk.",
     "example_english": "You need to rest when you are sick.",
@@ -1664,6 +1841,7 @@
   },
   {
     "norsk": "en time",
+    "lemma": "time",
     "english": "an appointment",
     "example": "Jeg har time hos legen klokka to.",
     "example_english": "I have an appointment at the doctor's at two.",
@@ -1673,6 +1851,7 @@
   },
   {
     "norsk": "trøtt",
+    "lemma": "trøtt",
     "english": "tired",
     "example": "Jeg er veldig trøtt i dag.",
     "example_english": "I am very tired today.",
@@ -1682,6 +1861,7 @@
   },
   {
     "norsk": "sunn",
+    "lemma": "sunn",
     "english": "healthy",
     "example": "Frukt og grønnsaker er sunn mat.",
     "example_english": "Fruit and vegetables are healthy food.",
@@ -1691,6 +1871,7 @@
   },
   {
     "norsk": "å føle seg",
+    "lemma": "føle seg",
     "english": "to feel",
     "example": "Hvordan føler du deg i dag?",
     "example_english": "How do you feel today?",
@@ -1700,6 +1881,7 @@
   },
   {
     "norsk": "en skade",
+    "lemma": "skade",
     "english": "an injury",
     "example": "Han fikk en skade under kampen.",
     "example_english": "He got an injury during the match.",
@@ -1709,6 +1891,7 @@
   },
   {
     "norsk": "å brekke",
+    "lemma": "brekke",
     "english": "to break / to fracture",
     "example": "Hun brakk hånden sin.",
     "example_english": "She broke her hand.",
@@ -1718,6 +1901,7 @@
   },
   {
     "norsk": "et plaster",
+    "lemma": "plaster",
     "english": "a plaster / a bandage",
     "example": "Kan du gi meg et plaster?",
     "example_english": "Can you give me a plaster?",
@@ -1727,6 +1911,7 @@
   },
   {
     "norsk": "hoste",
+    "lemma": "hoste",
     "english": "a cough / to cough",
     "example": "Jeg hoster og har sår hals.",
     "example_english": "I have a cough and a sore throat.",
@@ -1736,6 +1921,7 @@
   },
   {
     "norsk": "å nyse",
+    "lemma": "nyse",
     "english": "to sneeze",
     "example": "Han nøs mange ganger.",
     "example_english": "He sneezed many times.",
@@ -1745,6 +1931,7 @@
   },
   {
     "norsk": "kvalm",
+    "lemma": "kvalm",
     "english": "nauseous / sick",
     "example": "Jeg er kvalm, jeg vil ikke spise.",
     "example_english": "I feel nauseous, I don't want to eat.",
@@ -1754,6 +1941,7 @@
   },
   {
     "norsk": "en vaksine",
+    "lemma": "vaksine",
     "english": "a vaccine",
     "example": "Barn får vaksine på helsestasjonen.",
     "example_english": "Children receive vaccines at the health centre.",
@@ -1763,6 +1951,7 @@
   },
   {
     "norsk": "en operasjon",
+    "lemma": "operasjon",
     "english": "an operation",
     "example": "Han trenger en operasjon.",
     "example_english": "He needs an operation.",
@@ -1772,6 +1961,7 @@
   },
   {
     "norsk": "blod",
+    "lemma": "blod",
     "english": "blood",
     "example": "Legen tok en blodprøve.",
     "example_english": "The doctor took a blood test.",
@@ -1781,6 +1971,7 @@
   },
   {
     "norsk": "en ambulanse",
+    "lemma": "ambulanse",
     "english": "an ambulance",
     "example": "Ring 113 for ambulanse!",
     "example_english": "Call 113 for an ambulance!",
@@ -1788,9 +1979,9 @@
     "category": "health-basic",
     "part": "noun"
   },
-
   {
     "norsk": "vær",
+    "lemma": "vær",
     "english": "weather",
     "example": "Hva er været i dag?",
     "example_english": "What is the weather like today?",
@@ -1800,6 +1991,7 @@
   },
   {
     "norsk": "det regner",
+    "lemma": "det regner",
     "english": "it is raining",
     "example": "Det regner, ta med paraply.",
     "example_english": "It is raining, bring an umbrella.",
@@ -1809,6 +2001,7 @@
   },
   {
     "norsk": "det snør",
+    "lemma": "det snør",
     "english": "it is snowing",
     "example": "Det snør mye i januar.",
     "example_english": "It snows a lot in January.",
@@ -1818,6 +2011,7 @@
   },
   {
     "norsk": "det er sol",
+    "lemma": "det er sol",
     "english": "it is sunny",
     "example": "Det er sol og varmt i dag!",
     "example_english": "It is sunny and warm today!",
@@ -1827,6 +2021,7 @@
   },
   {
     "norsk": "vind",
+    "lemma": "vind",
     "english": "wind",
     "example": "Det er sterk vind langs kysten.",
     "example_english": "There is strong wind along the coast.",
@@ -1836,6 +2031,7 @@
   },
   {
     "norsk": "skyet",
+    "lemma": "skyet",
     "english": "cloudy",
     "example": "Det er skyet og grått i dag.",
     "example_english": "It is cloudy and grey today.",
@@ -1845,6 +2041,7 @@
   },
   {
     "norsk": "varm",
+    "lemma": "varm",
     "english": "warm / hot",
     "example": "Det er varmt om sommeren i Sør-Norge.",
     "example_english": "It is warm in the summer in southern Norway.",
@@ -1854,6 +2051,7 @@
   },
   {
     "norsk": "kald",
+    "lemma": "kald",
     "english": "cold",
     "example": "Det er veldig kaldt om vinteren.",
     "example_english": "It is very cold in winter.",
@@ -1863,6 +2061,7 @@
   },
   {
     "norsk": "en temperatur",
+    "lemma": "temperatur",
     "english": "a temperature",
     "example": "Temperaturen er fem grader.",
     "example_english": "The temperature is five degrees.",
@@ -1872,6 +2071,7 @@
   },
   {
     "norsk": "en paraply",
+    "lemma": "paraply",
     "english": "an umbrella",
     "example": "Glem ikke paraplyen!",
     "example_english": "Don't forget the umbrella!",
@@ -1881,6 +2081,7 @@
   },
   {
     "norsk": "en sky",
+    "lemma": "sky",
     "english": "a cloud",
     "example": "Det er mange skyer på himmelen.",
     "example_english": "There are many clouds in the sky.",
@@ -1890,6 +2091,7 @@
   },
   {
     "norsk": "tåke",
+    "lemma": "tåke",
     "english": "fog",
     "example": "Det er tett tåke om morgenen.",
     "example_english": "There is thick fog in the morning.",
@@ -1899,6 +2101,7 @@
   },
   {
     "norsk": "is",
+    "lemma": "is",
     "english": "ice",
     "example": "Det er glatt is på veien.",
     "example_english": "There is slippery ice on the road.",
@@ -1908,6 +2111,7 @@
   },
   {
     "norsk": "snø",
+    "lemma": "snø",
     "english": "snow",
     "example": "Det er mye snø i fjellet.",
     "example_english": "There is a lot of snow in the mountains.",
@@ -1917,6 +2121,7 @@
   },
   {
     "norsk": "et tordenvær",
+    "lemma": "tordenvær",
     "english": "a thunderstorm",
     "example": "Det kommer et tordenvær i kveld.",
     "example_english": "There is a thunderstorm coming tonight.",
@@ -1926,6 +2131,7 @@
   },
   {
     "norsk": "sol",
+    "lemma": "sol",
     "english": "sun",
     "example": "Solen skinner hele dagen.",
     "example_english": "The sun shines all day.",
@@ -1935,6 +2141,7 @@
   },
   {
     "norsk": "regn",
+    "lemma": "regn",
     "english": "rain",
     "example": "Det er mye regn om høsten.",
     "example_english": "There is a lot of rain in autumn.",
@@ -1944,6 +2151,7 @@
   },
   {
     "norsk": "en prognose",
+    "lemma": "prognose",
     "english": "a (weather) forecast",
     "example": "Prognosen sier sol i morgen.",
     "example_english": "The forecast says sun tomorrow.",
@@ -1953,6 +2161,7 @@
   },
   {
     "norsk": "fuktig",
+    "lemma": "fuktig",
     "english": "humid / damp",
     "example": "Det er fuktig luft om sommeren.",
     "example_english": "The air is humid in the summer.",
@@ -1962,6 +2171,7 @@
   },
   {
     "norsk": "grader",
+    "lemma": "grader",
     "english": "degrees",
     "example": "Det er minus ti grader ute.",
     "example_english": "It is minus ten degrees outside.",
@@ -1971,6 +2181,7 @@
   },
   {
     "norsk": "en storm",
+    "lemma": "storm",
     "english": "a storm",
     "example": "Stormen skadet mange hus.",
     "example_english": "The storm damaged many houses.",
@@ -1980,6 +2191,7 @@
   },
   {
     "norsk": "klart",
+    "lemma": "klart",
     "english": "clear (weather)",
     "example": "Det er klart vær og stjernehimmel.",
     "example_english": "There is clear weather and a starry sky.",
@@ -1989,6 +2201,7 @@
   },
   {
     "norsk": "en årstid",
+    "lemma": "årstid",
     "english": "a season",
     "example": "Hvilken årstid liker du best?",
     "example_english": "Which season do you like best?",
@@ -1998,6 +2211,7 @@
   },
   {
     "norsk": "et regnvær",
+    "lemma": "regnvær",
     "english": "rainy weather",
     "example": "Oslo har mye regnvær om høsten.",
     "example_english": "Oslo has a lot of rainy weather in autumn.",
@@ -2007,6 +2221,7 @@
   },
   {
     "norsk": "varmt",
+    "lemma": "varmt",
     "english": "it is warm",
     "example": "Det er varmt og fint i dag.",
     "example_english": "It is warm and nice today.",
@@ -2014,9 +2229,9 @@
     "category": "weather",
     "part": "adjective"
   },
-
   {
     "norsk": "klokka",
+    "lemma": "klokka",
     "english": "the time / o'clock",
     "example": "Hva er klokka?",
     "example_english": "What time is it?",
@@ -2026,6 +2241,7 @@
   },
   {
     "norsk": "et kvarter",
+    "lemma": "kvarter",
     "english": "a quarter (of an hour)",
     "example": "Bussen går om et kvarter.",
     "example_english": "The bus leaves in a quarter of an hour.",
@@ -2035,6 +2251,7 @@
   },
   {
     "norsk": "halvt",
+    "lemma": "halvt",
     "english": "half past",
     "example": "Klokka er halv åtte.",
     "example_english": "It is half past seven.",
@@ -2044,6 +2261,7 @@
   },
   {
     "norsk": "om morgenen",
+    "lemma": "om morgenen",
     "english": "in the morning",
     "example": "Jeg drikker kaffe om morgenen.",
     "example_english": "I drink coffee in the morning.",
@@ -2053,6 +2271,7 @@
   },
   {
     "norsk": "om ettermiddagen",
+    "lemma": "om ettermiddagen",
     "english": "in the afternoon",
     "example": "Vi møtes om ettermiddagen.",
     "example_english": "We meet in the afternoon.",
@@ -2062,6 +2281,7 @@
   },
   {
     "norsk": "om kvelden",
+    "lemma": "om kvelden",
     "english": "in the evening",
     "example": "Vi spiser middag om kvelden.",
     "example_english": "We eat dinner in the evening.",
@@ -2071,6 +2291,7 @@
   },
   {
     "norsk": "om natten",
+    "lemma": "om natten",
     "english": "at night",
     "example": "Jeg sover dårlig om natten.",
     "example_english": "I sleep badly at night.",
@@ -2080,6 +2301,7 @@
   },
   {
     "norsk": "neste uke",
+    "lemma": "neste uke",
     "english": "next week",
     "example": "Vi reiser neste uke.",
     "example_english": "We are travelling next week.",
@@ -2089,6 +2311,7 @@
   },
   {
     "norsk": "forrige uke",
+    "lemma": "forrige uke",
     "english": "last week",
     "example": "Forrige uke var jeg i Bergen.",
     "example_english": "Last week I was in Bergen.",
@@ -2098,6 +2321,7 @@
   },
   {
     "norsk": "i år",
+    "lemma": "i år",
     "english": "this year",
     "example": "I år skal vi besøke besteforeldrene.",
     "example_english": "This year we will visit the grandparents.",
@@ -2107,6 +2331,7 @@
   },
   {
     "norsk": "neste år",
+    "lemma": "neste år",
     "english": "next year",
     "example": "Neste år begynner jeg på universitetet.",
     "example_english": "Next year I start at university.",
@@ -2116,6 +2341,7 @@
   },
   {
     "norsk": "alltid",
+    "lemma": "alltid",
     "english": "always",
     "example": "Han er alltid sen.",
     "example_english": "He is always late.",
@@ -2125,6 +2351,7 @@
   },
   {
     "norsk": "ofte",
+    "lemma": "ofte",
     "english": "often",
     "example": "Jeg er ofte trøtt om morgenen.",
     "example_english": "I am often tired in the morning.",
@@ -2134,6 +2361,7 @@
   },
   {
     "norsk": "sjelden",
+    "lemma": "sjelden",
     "english": "rarely / seldom",
     "example": "Jeg spiser sjelden søtsaker.",
     "example_english": "I rarely eat sweets.",
@@ -2143,6 +2371,7 @@
   },
   {
     "norsk": "aldri",
+    "lemma": "aldri",
     "english": "never",
     "example": "Jeg drikker aldri alkohol.",
     "example_english": "I never drink alcohol.",
@@ -2152,6 +2381,7 @@
   },
   {
     "norsk": "noen ganger",
+    "lemma": "noen ganger",
     "english": "sometimes",
     "example": "Noen ganger sykler jeg til jobben.",
     "example_english": "Sometimes I cycle to work.",
@@ -2161,6 +2391,7 @@
   },
   {
     "norsk": "vanligvis",
+    "lemma": "vanligvis",
     "english": "usually",
     "example": "Jeg spiser vanligvis frokost klokka åtte.",
     "example_english": "I usually eat breakfast at eight o'clock.",
@@ -2170,6 +2401,7 @@
   },
   {
     "norsk": "snart",
+    "lemma": "snart",
     "english": "soon",
     "example": "Middagen er snart klar.",
     "example_english": "Dinner will be ready soon.",
@@ -2179,6 +2411,7 @@
   },
   {
     "norsk": "allerede",
+    "lemma": "allerede",
     "english": "already",
     "example": "Er du allerede ferdig?",
     "example_english": "Are you already finished?",
@@ -2188,6 +2421,7 @@
   },
   {
     "norsk": "ennå",
+    "lemma": "ennå",
     "english": "yet / still",
     "example": "Er du ikke ferdig ennå?",
     "example_english": "Are you not finished yet?",
@@ -2197,6 +2431,7 @@
   },
   {
     "norsk": "for lenge siden",
+    "lemma": "for lenge siden",
     "english": "a long time ago",
     "example": "Det skjedde for lenge siden.",
     "example_english": "That happened a long time ago.",
@@ -2206,6 +2441,7 @@
   },
   {
     "norsk": "nylig",
+    "lemma": "nylig",
     "english": "recently",
     "example": "Jeg har nylig byttet jobb.",
     "example_english": "I have recently changed jobs.",
@@ -2215,6 +2451,7 @@
   },
   {
     "norsk": "siden",
+    "lemma": "siden",
     "english": "since / ago",
     "example": "Jeg har bodd her siden mars.",
     "example_english": "I have lived here since March.",
@@ -2224,6 +2461,7 @@
   },
   {
     "norsk": "i løpet av",
+    "lemma": "i løpet av",
     "english": "during / within",
     "example": "I løpet av uka skal vi besøke venner.",
     "example_english": "During the week we will visit friends.",
@@ -2233,6 +2471,7 @@
   },
   {
     "norsk": "et minutt",
+    "lemma": "minutt",
     "english": "a minute",
     "example": "Vent ett minutt, vær så snill.",
     "example_english": "Wait one minute, please.",
@@ -2242,6 +2481,7 @@
   },
   {
     "norsk": "pen",
+    "lemma": "pen",
     "english": "pretty / beautiful",
     "example": "Hun er en pen jente.",
     "example_english": "She is a pretty girl.",
@@ -2251,6 +2491,7 @@
   },
   {
     "norsk": "stygg",
+    "lemma": "stygg",
     "english": "ugly",
     "example": "Den bygningen er veldig stygg.",
     "example_english": "That building is very ugly.",
@@ -2260,6 +2501,7 @@
   },
   {
     "norsk": "snill",
+    "lemma": "snill",
     "english": "kind / nice",
     "example": "Han er alltid snill mot alle.",
     "example_english": "He is always kind to everyone.",
@@ -2269,6 +2511,7 @@
   },
   {
     "norsk": "streng",
+    "lemma": "streng",
     "english": "strict",
     "example": "Læreren er ganske streng.",
     "example_english": "The teacher is quite strict.",
@@ -2278,6 +2521,7 @@
   },
   {
     "norsk": "morsom",
+    "lemma": "morsom",
     "english": "funny / fun",
     "example": "Filmen var veldig morsom.",
     "example_english": "The film was very funny.",
@@ -2287,6 +2531,7 @@
   },
   {
     "norsk": "kjedelig",
+    "lemma": "kjedelig",
     "english": "boring",
     "example": "Møtet var veldig kjedelig.",
     "example_english": "The meeting was very boring.",
@@ -2296,6 +2541,7 @@
   },
   {
     "norsk": "travel",
+    "lemma": "travel",
     "english": "busy",
     "example": "Jeg er veldig travel i dag.",
     "example_english": "I am very busy today.",
@@ -2305,6 +2551,7 @@
   },
   {
     "norsk": "rolig",
+    "lemma": "rolig",
     "english": "calm / quiet",
     "example": "Det er en rolig gate.",
     "example_english": "It is a calm street.",
@@ -2314,6 +2561,7 @@
   },
   {
     "norsk": "høflig",
+    "lemma": "høflig",
     "english": "polite",
     "example": "Barnet er veldig høflig.",
     "example_english": "The child is very polite.",
@@ -2323,6 +2571,7 @@
   },
   {
     "norsk": "flink",
+    "lemma": "flink",
     "english": "good at / clever",
     "example": "Hun er flink i matematikk.",
     "example_english": "She is good at mathematics.",
@@ -2332,6 +2581,7 @@
   },
   {
     "norsk": "tung",
+    "lemma": "tung",
     "english": "heavy",
     "example": "Kofferten er veldig tung.",
     "example_english": "The suitcase is very heavy.",
@@ -2341,6 +2591,7 @@
   },
   {
     "norsk": "lett",
+    "lemma": "lett",
     "english": "light / easy",
     "example": "Oppgaven var ganske lett.",
     "example_english": "The task was quite easy.",
@@ -2350,6 +2601,7 @@
   },
   {
     "norsk": "ren",
+    "lemma": "ren",
     "english": "clean",
     "example": "Kjøkkenet er rent og ryddig.",
     "example_english": "The kitchen is clean and tidy.",
@@ -2359,6 +2611,7 @@
   },
   {
     "norsk": "skitten",
+    "lemma": "skitten",
     "english": "dirty",
     "example": "Klærne er skitne etter fotball.",
     "example_english": "The clothes are dirty after football.",
@@ -2368,6 +2621,7 @@
   },
   {
     "norsk": "mange",
+    "lemma": "mange",
     "english": "many / a lot of",
     "example": "Det er mange folk i parken.",
     "example_english": "There are many people in the park.",
@@ -2377,6 +2631,7 @@
   },
   {
     "norsk": "få",
+    "lemma": "få",
     "english": "few",
     "example": "Det er få biler på veien.",
     "example_english": "There are few cars on the road.",
@@ -2386,6 +2641,7 @@
   },
   {
     "norsk": "nok",
+    "lemma": "nok",
     "english": "enough",
     "example": "Har du nok penger?",
     "example_english": "Do you have enough money?",
@@ -2395,6 +2651,7 @@
   },
   {
     "norsk": "glad",
+    "lemma": "glad",
     "english": "happy / pleased",
     "example": "Jeg er glad for å se deg.",
     "example_english": "I am glad to see you.",
@@ -2404,6 +2661,7 @@
   },
   {
     "norsk": "sulten",
+    "lemma": "sulten",
     "english": "hungry",
     "example": "Jeg er sulten etter treningen.",
     "example_english": "I am hungry after the workout.",
@@ -2413,6 +2671,7 @@
   },
   {
     "norsk": "tørst",
+    "lemma": "tørst",
     "english": "thirsty",
     "example": "Kan jeg få vann? Jeg er tørst.",
     "example_english": "Can I have water? I am thirsty.",
@@ -2422,6 +2681,7 @@
   },
   {
     "norsk": "syk",
+    "lemma": "syk",
     "english": "sick / ill",
     "example": "Han er syk og ligger hjemme.",
     "example_english": "He is sick and staying at home.",
@@ -2431,6 +2691,7 @@
   },
   {
     "norsk": "frisk",
+    "lemma": "frisk",
     "english": "healthy / well",
     "example": "Hun er frisk igjen etter sykdommen.",
     "example_english": "She is well again after the illness.",
@@ -2440,6 +2701,7 @@
   },
   {
     "norsk": "sterk",
+    "lemma": "sterk",
     "english": "strong",
     "example": "Han er sterk og trener mye.",
     "example_english": "He is strong and trains a lot.",
@@ -2449,6 +2711,7 @@
   },
   {
     "norsk": "svak",
+    "lemma": "svak",
     "english": "weak",
     "example": "Signalet er veldig svakt her.",
     "example_english": "The signal is very weak here.",
@@ -2458,6 +2721,7 @@
   },
   {
     "norsk": "vennlig",
+    "lemma": "vennlig",
     "english": "friendly",
     "example": "Naboene våre er veldig vennlige.",
     "example_english": "Our neighbours are very friendly.",
@@ -2467,6 +2731,7 @@
   },
   {
     "norsk": "å steke",
+    "lemma": "steke",
     "english": "to fry / to roast",
     "example": "Jeg steker egg til frokost.",
     "example_english": "I fry eggs for breakfast.",
@@ -2476,6 +2741,7 @@
   },
   {
     "norsk": "å koke",
+    "lemma": "koke",
     "english": "to boil / to cook",
     "example": "Kok vannet i ti minutter.",
     "example_english": "Boil the water for ten minutes.",
@@ -2485,6 +2751,7 @@
   },
   {
     "norsk": "å bake",
+    "lemma": "bake",
     "english": "to bake",
     "example": "Hun baker brød hver lørdag.",
     "example_english": "She bakes bread every Saturday.",
@@ -2494,6 +2761,7 @@
   },
   {
     "norsk": "å skjære",
+    "lemma": "skjære",
     "english": "to cut / to slice",
     "example": "Skjær grønnsakene i biter.",
     "example_english": "Cut the vegetables into pieces.",
@@ -2503,6 +2771,7 @@
   },
   {
     "norsk": "å blande",
+    "lemma": "blande",
     "english": "to mix / to blend",
     "example": "Bland mel og sukker i en bolle.",
     "example_english": "Mix flour and sugar in a bowl.",
@@ -2512,6 +2781,7 @@
   },
   {
     "norsk": "å smake",
+    "lemma": "smake",
     "english": "to taste",
     "example": "Smak på suppen og tilsett salt.",
     "example_english": "Taste the soup and add salt.",
@@ -2521,6 +2791,7 @@
   },
   {
     "norsk": "å varme opp",
+    "lemma": "varme opp",
     "english": "to heat up / to warm up",
     "example": "Varm opp maten i mikrobølgeovnen.",
     "example_english": "Heat up the food in the microwave.",
@@ -2530,6 +2801,7 @@
   },
   {
     "norsk": "en gryte",
+    "lemma": "gryte",
     "english": "a pot / a casserole dish",
     "example": "Suppen koker i gryta.",
     "example_english": "The soup is boiling in the pot.",
@@ -2539,6 +2811,7 @@
   },
   {
     "norsk": "en stekepanne",
+    "lemma": "stekepanne",
     "english": "a frying pan",
     "example": "Varm opp stekepannen før du steker.",
     "example_english": "Heat up the frying pan before frying.",
@@ -2548,6 +2821,7 @@
   },
   {
     "norsk": "en ovn",
+    "lemma": "ovn",
     "english": "an oven",
     "example": "Sett ovnen på 180 grader.",
     "example_english": "Set the oven to 180 degrees.",
@@ -2557,6 +2831,7 @@
   },
   {
     "norsk": "en kniv",
+    "lemma": "kniv",
     "english": "a knife",
     "example": "Bruk en skarp kniv til å skjære.",
     "example_english": "Use a sharp knife to cut.",
@@ -2566,6 +2841,7 @@
   },
   {
     "norsk": "en skjærefjøl",
+    "lemma": "skjærefjøl",
     "english": "a chopping board",
     "example": "Legg grønnsakene på skjærefjølen.",
     "example_english": "Put the vegetables on the chopping board.",
@@ -2575,6 +2851,7 @@
   },
   {
     "norsk": "en bolle",
+    "lemma": "bolle",
     "english": "a bowl",
     "example": "Ha ingrediensene i en stor bolle.",
     "example_english": "Put the ingredients in a large bowl.",
@@ -2584,6 +2861,7 @@
   },
   {
     "norsk": "et oppskrift",
+    "lemma": "oppskrift",
     "english": "a recipe",
     "example": "Jeg følger en oppskrift fra nettet.",
     "example_english": "I follow a recipe from the internet.",
@@ -2593,6 +2871,7 @@
   },
   {
     "norsk": "en ingrediens",
+    "lemma": "ingrediens",
     "english": "an ingredient",
     "example": "Sjekk at du har alle ingrediensene.",
     "example_english": "Check that you have all the ingredients.",
@@ -2602,6 +2881,7 @@
   },
   {
     "norsk": "salt",
+    "lemma": "salt",
     "english": "salt",
     "example": "Tilsett litt salt i vannet.",
     "example_english": "Add a little salt to the water.",
@@ -2611,6 +2891,7 @@
   },
   {
     "norsk": "pepper",
+    "lemma": "pepper",
     "english": "pepper",
     "example": "Krydre kjøttet med salt og pepper.",
     "example_english": "Season the meat with salt and pepper.",
@@ -2620,6 +2901,7 @@
   },
   {
     "norsk": "olje",
+    "lemma": "olje",
     "english": "oil",
     "example": "Ha litt olje i pannen.",
     "example_english": "Put a little oil in the pan.",
@@ -2629,6 +2911,7 @@
   },
   {
     "norsk": "smør",
+    "lemma": "smør",
     "english": "butter",
     "example": "Smør brødet med smør.",
     "example_english": "Spread the bread with butter.",
@@ -2638,6 +2921,7 @@
   },
   {
     "norsk": "mel",
+    "lemma": "mel",
     "english": "flour",
     "example": "Tilsett to kopper mel i deigen.",
     "example_english": "Add two cups of flour to the dough.",
@@ -2647,6 +2931,7 @@
   },
   {
     "norsk": "sukker",
+    "lemma": "sukker",
     "english": "sugar",
     "example": "Vil du ha sukker i kaffen?",
     "example_english": "Would you like sugar in your coffee?",
@@ -2656,6 +2941,7 @@
   },
   {
     "norsk": "et måltid",
+    "lemma": "måltid",
     "english": "a meal",
     "example": "Vi spiser tre måltider om dagen.",
     "example_english": "We eat three meals a day.",
@@ -2665,6 +2951,7 @@
   },
   {
     "norsk": "ferdig",
+    "lemma": "ferdig",
     "english": "ready / done / finished",
     "example": "Maten er ferdig om ti minutter.",
     "example_english": "The food will be ready in ten minutes.",
@@ -2674,6 +2961,7 @@
   },
   {
     "norsk": "rå",
+    "lemma": "rå",
     "english": "raw",
     "example": "Ikke spis rått kjøtt.",
     "example_english": "Do not eat raw meat.",
@@ -2683,6 +2971,7 @@
   },
   {
     "norsk": "en kjele",
+    "lemma": "kjele",
     "english": "a kettle / a saucepan",
     "example": "Kok vannet i kjelen.",
     "example_english": "Boil the water in the kettle.",
@@ -2692,6 +2981,7 @@
   },
   {
     "norsk": "en skog",
+    "lemma": "skog",
     "english": "a forest / a wood",
     "example": "Vi går tur i skogen om helgen.",
     "example_english": "We go for a walk in the forest at the weekend.",
@@ -2701,6 +2991,7 @@
   },
   {
     "norsk": "et fjell",
+    "lemma": "fjell",
     "english": "a mountain",
     "example": "Fjellet er dekket av snø om vinteren.",
     "example_english": "The mountain is covered in snow in winter.",
@@ -2710,6 +3001,7 @@
   },
   {
     "norsk": "en elv",
+    "lemma": "elv",
     "english": "a river",
     "example": "Elven renner gjennom dalen.",
     "example_english": "The river flows through the valley.",
@@ -2719,6 +3011,7 @@
   },
   {
     "norsk": "en sjø",
+    "lemma": "sjø",
     "english": "a lake",
     "example": "Vi bader i sjøen om sommeren.",
     "example_english": "We swim in the lake in summer.",
@@ -2728,6 +3021,7 @@
   },
   {
     "norsk": "et tre",
+    "lemma": "tre",
     "english": "a tree",
     "example": "Det er et stort tre i hagen.",
     "example_english": "There is a big tree in the garden.",
@@ -2737,6 +3031,7 @@
   },
   {
     "norsk": "en blomst",
+    "lemma": "blomst",
     "english": "a flower",
     "example": "Blomstene blomstrer om våren.",
     "example_english": "The flowers bloom in spring.",
@@ -2746,6 +3041,7 @@
   },
   {
     "norsk": "en strand",
+    "lemma": "strand",
     "english": "a beach",
     "example": "Vi slapper av på stranden.",
     "example_english": "We relax on the beach.",
@@ -2755,6 +3051,7 @@
   },
   {
     "norsk": "en dal",
+    "lemma": "dal",
     "english": "a valley",
     "example": "Landsbyen ligger i en grønn dal.",
     "example_english": "The village lies in a green valley.",
@@ -2764,6 +3061,7 @@
   },
   {
     "norsk": "en kyst",
+    "lemma": "kyst",
     "english": "a coast",
     "example": "Norge har en lang kyst.",
     "example_english": "Norway has a long coast.",
@@ -2773,6 +3071,7 @@
   },
   {
     "norsk": "en øy",
+    "lemma": "øy",
     "english": "an island",
     "example": "Vi reiste til en liten øy.",
     "example_english": "We travelled to a small island.",
@@ -2782,6 +3081,7 @@
   },
   {
     "norsk": "en fjord",
+    "lemma": "fjord",
     "english": "a fjord",
     "example": "Sognefjorden er Norges lengste fjord.",
     "example_english": "Sognefjord is Norway's longest fjord.",
@@ -2791,6 +3091,7 @@
   },
   {
     "norsk": "et felt",
+    "lemma": "felt",
     "english": "a field",
     "example": "Kyr beiter på feltet.",
     "example_english": "Cows graze in the field.",
@@ -2800,6 +3101,7 @@
   },
   {
     "norsk": "en stein",
+    "lemma": "stein",
     "english": "a stone / a rock",
     "example": "Barnet plukket opp en stein.",
     "example_english": "The child picked up a stone.",
@@ -2809,6 +3111,7 @@
   },
   {
     "norsk": "jord",
+    "lemma": "jord",
     "english": "soil / earth",
     "example": "Planten vokser i god jord.",
     "example_english": "The plant grows in good soil.",
@@ -2818,6 +3121,7 @@
   },
   {
     "norsk": "en fugl",
+    "lemma": "fugl",
     "english": "a bird",
     "example": "Fuglene synger om morgenen.",
     "example_english": "The birds sing in the morning.",
@@ -2827,6 +3131,7 @@
   },
   {
     "norsk": "en fisk",
+    "lemma": "fisk",
     "english": "a fish",
     "example": "Det er mye fisk i elven.",
     "example_english": "There are many fish in the river.",
@@ -2836,6 +3141,7 @@
   },
   {
     "norsk": "et dyr",
+    "lemma": "dyr",
     "english": "an animal",
     "example": "Mange dyr lever i skogen.",
     "example_english": "Many animals live in the forest.",
@@ -2845,6 +3151,7 @@
   },
   {
     "norsk": "naturen",
+    "lemma": "naturen",
     "english": "nature (in general)",
     "example": "Jeg elsker å være ute i naturen.",
     "example_english": "I love being out in nature.",
@@ -2854,6 +3161,7 @@
   },
   {
     "norsk": "å vokse",
+    "lemma": "vokse",
     "english": "to grow",
     "example": "Treet vokser sakte.",
     "example_english": "The tree grows slowly.",
@@ -2863,6 +3171,7 @@
   },
   {
     "norsk": "å svømme",
+    "lemma": "svømme",
     "english": "to swim",
     "example": "Vi svømmer i sjøen om sommeren.",
     "example_english": "We swim in the lake in summer.",
@@ -2872,6 +3181,7 @@
   },
   {
     "norsk": "å gå tur",
+    "lemma": "gå tur",
     "english": "to go for a walk / to hike",
     "example": "Vi går tur i fjellet i helgen.",
     "example_english": "We go for a walk in the mountains at the weekend.",
@@ -2881,6 +3191,7 @@
   },
   {
     "norsk": "vakker",
+    "lemma": "vakker",
     "english": "beautiful / gorgeous",
     "example": "Utsikten er vakker fra toppen.",
     "example_english": "The view is beautiful from the top.",
@@ -2890,6 +3201,7 @@
   },
   {
     "norsk": "stille",
+    "lemma": "stille",
     "english": "quiet / still / calm",
     "example": "Det er stille i skogen om morgenen.",
     "example_english": "It is quiet in the forest in the morning.",
@@ -2899,6 +3211,7 @@
   },
   {
     "norsk": "frisk luft",
+    "lemma": "frisk luft",
     "english": "fresh air",
     "example": "Det er godt med frisk luft ute.",
     "example_english": "The fresh air outside is wonderful.",
@@ -2908,6 +3221,7 @@
   },
   {
     "norsk": "en å",
+    "lemma": "å",
     "english": "a stream / a creek",
     "example": "Vi hørte lyden av en liten å.",
     "example_english": "We heard the sound of a small stream.",
@@ -2917,6 +3231,7 @@
   },
   {
     "norsk": "å vaske",
+    "lemma": "vaske",
     "english": "to wash / to clean",
     "example": "Jeg vasker klær på lørdag.",
     "example_english": "I wash clothes on Saturday.",
@@ -2926,6 +3241,7 @@
   },
   {
     "norsk": "å støvsuge",
+    "lemma": "støvsuge",
     "english": "to vacuum",
     "example": "Jeg støvsuger stuen en gang i uka.",
     "example_english": "I vacuum the living room once a week.",
@@ -2935,6 +3251,7 @@
   },
   {
     "norsk": "å rydde",
+    "lemma": "rydde",
     "english": "to tidy up",
     "example": "Rydd rommet ditt før middag.",
     "example_english": "Tidy up your room before dinner.",
@@ -2944,6 +3261,7 @@
   },
   {
     "norsk": "å lage mat",
+    "lemma": "lage mat",
     "english": "to cook / to make food",
     "example": "Hvem lager mat i dag?",
     "example_english": "Who is cooking today?",
@@ -2953,6 +3271,7 @@
   },
   {
     "norsk": "å handle",
+    "lemma": "handle",
     "english": "to shop / to do the shopping",
     "example": "Vi handler mat på fredager.",
     "example_english": "We do the food shopping on Fridays.",
@@ -2962,6 +3281,7 @@
   },
   {
     "norsk": "å kaste søppel",
+    "lemma": "kaste søppel",
     "english": "to take out the rubbish",
     "example": "Kan du kaste søppelet?",
     "example_english": "Can you take out the rubbish?",
@@ -2971,6 +3291,7 @@
   },
   {
     "norsk": "å tørke av",
+    "lemma": "tørke av",
     "english": "to wipe / to dust",
     "example": "Tørk av bordet etter middagen.",
     "example_english": "Wipe the table after dinner.",
@@ -2980,6 +3301,7 @@
   },
   {
     "norsk": "å vaske opp",
+    "lemma": "vaske opp",
     "english": "to wash up / to do the dishes",
     "example": "Jeg vasker opp etter middagen.",
     "example_english": "I do the dishes after dinner.",
@@ -2989,6 +3311,7 @@
   },
   {
     "norsk": "å stryke",
+    "lemma": "stryke",
     "english": "to iron",
     "example": "Jeg stryker skjortene mine på søndag.",
     "example_english": "I iron my shirts on Sunday.",
@@ -2998,6 +3321,7 @@
   },
   {
     "norsk": "å henge opp",
+    "lemma": "henge opp",
     "english": "to hang up",
     "example": "Heng opp klærne til tørk.",
     "example_english": "Hang up the clothes to dry.",
@@ -3007,6 +3331,7 @@
   },
   {
     "norsk": "å pusse tenner",
+    "lemma": "pusse tenner",
     "english": "to brush teeth",
     "example": "Puss tennene dine to ganger om dagen.",
     "example_english": "Brush your teeth twice a day.",
@@ -3016,6 +3341,7 @@
   },
   {
     "norsk": "et søppel",
+    "lemma": "søppel",
     "english": "rubbish / waste",
     "example": "Legg søppelet i søppelbøtta.",
     "example_english": "Put the rubbish in the bin.",
@@ -3025,6 +3351,7 @@
   },
   {
     "norsk": "en støvsuger",
+    "lemma": "støvsuger",
     "english": "a vacuum cleaner",
     "example": "Støvsugeren er i skapet.",
     "example_english": "The vacuum cleaner is in the cupboard.",
@@ -3034,6 +3361,7 @@
   },
   {
     "norsk": "en mopp",
+    "lemma": "mopp",
     "english": "a mop",
     "example": "Bruk en mopp til å vaske gulvet.",
     "example_english": "Use a mop to wash the floor.",
@@ -3043,6 +3371,7 @@
   },
   {
     "norsk": "et oppvaskmiddel",
+    "lemma": "oppvaskmiddel",
     "english": "washing-up liquid / dish soap",
     "example": "Vi trenger mer oppvaskmiddel.",
     "example_english": "We need more washing-up liquid.",
@@ -3052,6 +3381,7 @@
   },
   {
     "norsk": "en klut",
+    "lemma": "klut",
     "english": "a cloth / a rag",
     "example": "Tørk av benken med en klut.",
     "example_english": "Wipe the counter with a cloth.",
@@ -3061,6 +3391,7 @@
   },
   {
     "norsk": "en vaskemaskin",
+    "lemma": "vaskemaskin",
     "english": "a washing machine",
     "example": "Legg klærne i vaskemaskinen.",
     "example_english": "Put the clothes in the washing machine.",
@@ -3070,6 +3401,7 @@
   },
   {
     "norsk": "et oppvaskkum",
+    "lemma": "oppvaskkum",
     "english": "a kitchen sink",
     "example": "Skyll grønnsakene i oppvaskkummen.",
     "example_english": "Rinse the vegetables in the kitchen sink.",
@@ -3079,6 +3411,7 @@
   },
   {
     "norsk": "ryddig",
+    "lemma": "ryddig",
     "english": "tidy / neat",
     "example": "Hold leiligheten ryddig.",
     "example_english": "Keep the apartment tidy.",
@@ -3088,6 +3421,7 @@
   },
   {
     "norsk": "skitten",
+    "lemma": "skitten",
     "english": "dirty",
     "example": "Gulvet er skittent og må vaskes.",
     "example_english": "The floor is dirty and needs washing.",
@@ -3097,6 +3431,7 @@
   },
   {
     "norsk": "hver dag",
+    "lemma": "hver dag",
     "english": "every day",
     "example": "Jeg lufter hunden hver dag.",
     "example_english": "I walk the dog every day.",
@@ -3106,6 +3441,7 @@
   },
   {
     "norsk": "å rydde opp",
+    "lemma": "rydde opp",
     "english": "to clean up / to clear up",
     "example": "Rydd opp etter middagen.",
     "example_english": "Clean up after dinner.",
@@ -3115,6 +3451,7 @@
   },
   {
     "norsk": "å lufte hunden",
+    "lemma": "å lufte hunden",
     "english": "to walk the dog",
     "example": "Jeg lufter hunden to ganger om dagen.",
     "example_english": "I walk the dog twice a day.",
@@ -3124,6 +3461,7 @@
   },
   {
     "norsk": "en bøtte",
+    "lemma": "bøtte",
     "english": "a bucket / a bin",
     "example": "Fyll bøtten med vann.",
     "example_english": "Fill the bucket with water.",
@@ -3133,6 +3471,7 @@
   },
   {
     "norsk": "å ringe",
+    "lemma": "ringe",
     "english": "to call / to phone",
     "example": "Jeg ringer deg i kveld.",
     "example_english": "I will call you this evening.",
@@ -3142,6 +3481,7 @@
   },
   {
     "norsk": "å sende",
+    "lemma": "sende",
     "english": "to send",
     "example": "Kan du sende meg adressen?",
     "example_english": "Can you send me the address?",
@@ -3151,6 +3491,7 @@
   },
   {
     "norsk": "å skrive",
+    "lemma": "skrive",
     "english": "to write",
     "example": "Jeg skriver en e-post til sjefen.",
     "example_english": "I am writing an email to the boss.",
@@ -3160,6 +3501,7 @@
   },
   {
     "norsk": "å svare",
+    "lemma": "svare",
     "english": "to answer / to reply",
     "example": "Svar på meldingen min!",
     "example_english": "Reply to my message!",
@@ -3169,6 +3511,7 @@
   },
   {
     "norsk": "å snakke med",
+    "lemma": "snakke med",
     "english": "to talk to / to speak with",
     "example": "Jeg vil snakke med deg om det.",
     "example_english": "I want to talk to you about that.",
@@ -3178,6 +3521,7 @@
   },
   {
     "norsk": "å spørre",
+    "lemma": "spørre",
     "english": "to ask",
     "example": "Kan jeg spørre deg om noe?",
     "example_english": "Can I ask you something?",
@@ -3187,6 +3531,7 @@
   },
   {
     "norsk": "å fortelle",
+    "lemma": "fortelle",
     "english": "to tell",
     "example": "Fortell meg hva som skjedde.",
     "example_english": "Tell me what happened.",
@@ -3196,6 +3541,7 @@
   },
   {
     "norsk": "å forstå",
+    "lemma": "forstå",
     "english": "to understand",
     "example": "Jeg forstår ikke hva du mener.",
     "example_english": "I do not understand what you mean.",
@@ -3205,6 +3551,7 @@
   },
   {
     "norsk": "å gjenta",
+    "lemma": "gjenta",
     "english": "to repeat",
     "example": "Kan du gjenta det du sa?",
     "example_english": "Can you repeat what you said?",
@@ -3214,6 +3561,7 @@
   },
   {
     "norsk": "å møtes",
+    "lemma": "møtes",
     "english": "to meet up",
     "example": "Vi møtes på kaféen klokka tre.",
     "example_english": "We meet up at the café at three o'clock.",
@@ -3223,6 +3571,7 @@
   },
   {
     "norsk": "en melding",
+    "lemma": "melding",
     "english": "a message",
     "example": "Jeg har fått en ny melding.",
     "example_english": "I have received a new message.",
@@ -3232,6 +3581,7 @@
   },
   {
     "norsk": "en e-post",
+    "lemma": "e-post",
     "english": "an email",
     "example": "Send meg en e-post med detaljene.",
     "example_english": "Send me an email with the details.",
@@ -3241,6 +3591,7 @@
   },
   {
     "norsk": "et svar",
+    "lemma": "svar",
     "english": "a reply / an answer",
     "example": "Jeg venter på svaret ditt.",
     "example_english": "I am waiting for your reply.",
@@ -3250,6 +3601,7 @@
   },
   {
     "norsk": "en samtale",
+    "lemma": "samtale",
     "english": "a conversation",
     "example": "Vi hadde en lang samtale.",
     "example_english": "We had a long conversation.",
@@ -3259,6 +3611,7 @@
   },
   {
     "norsk": "en telefon",
+    "lemma": "telefon",
     "english": "a telephone / a phone",
     "example": "Telefonen din ringer.",
     "example_english": "Your phone is ringing.",
@@ -3268,6 +3621,7 @@
   },
   {
     "norsk": "et nummer",
+    "lemma": "nummer",
     "english": "a number",
     "example": "Hva er telefonnummeret ditt?",
     "example_english": "What is your phone number?",
@@ -3277,6 +3631,7 @@
   },
   {
     "norsk": "et møte",
+    "lemma": "møte",
     "english": "a meeting",
     "example": "Vi har et møte klokka ti.",
     "example_english": "We have a meeting at ten o'clock.",
@@ -3286,6 +3641,7 @@
   },
   {
     "norsk": "en avtale",
+    "lemma": "avtale",
     "english": "an appointment / an agreement",
     "example": "Jeg har en avtale hos legen.",
     "example_english": "I have an appointment with the doctor.",
@@ -3295,6 +3651,7 @@
   },
   {
     "norsk": "sosiale medier",
+    "lemma": "sosiale medier",
     "english": "social media",
     "example": "Hun bruker mye tid på sosiale medier.",
     "example_english": "She spends a lot of time on social media.",
@@ -3304,6 +3661,7 @@
   },
   {
     "norsk": "internett",
+    "lemma": "internett",
     "english": "the internet",
     "example": "Har du tilgang til internett?",
     "example_english": "Do you have access to the internet?",
@@ -3313,6 +3671,7 @@
   },
   {
     "norsk": "tydelig",
+    "lemma": "tydelig",
     "english": "clear / distinct",
     "example": "Vær tydelig når du forklarer.",
     "example_english": "Be clear when you explain.",
@@ -3322,6 +3681,7 @@
   },
   {
     "norsk": "høflig",
+    "lemma": "høflig",
     "english": "polite",
     "example": "Vær høflig når du skriver til kunder.",
     "example_english": "Be polite when writing to customers.",
@@ -3331,6 +3691,7 @@
   },
   {
     "norsk": "Kan du hjelpe meg?",
+    "lemma": "Kan du hjelpe meg?",
     "english": "Can you help me?",
     "example": "Unnskyld, kan du hjelpe meg?",
     "example_english": "Excuse me, can you help me?",
@@ -3340,6 +3701,7 @@
   },
   {
     "norsk": "Jeg forstår ikke.",
+    "lemma": "Jeg forstår ikke.",
     "english": "I don't understand.",
     "example": "Beklager, jeg forstår ikke.",
     "example_english": "Sorry, I don't understand.",
@@ -3349,6 +3711,7 @@
   },
   {
     "norsk": "Kan du snakke saktere?",
+    "lemma": "Kan du snakke saktere?",
     "english": "Can you speak more slowly?",
     "example": "Kan du snakke litt saktere, takk?",
     "example_english": "Can you speak a little more slowly, please?",

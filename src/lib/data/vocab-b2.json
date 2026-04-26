@@ -1,6 +1,7 @@
 [
   {
     "norsk": "et demokrati",
+    "lemma": "demokrati",
     "english": "a democracy",
     "example": "Norge er et demokrati med frie valg.",
     "example_english": "Norway is a democracy with free elections.",
@@ -10,6 +11,7 @@
   },
   {
     "norsk": "en regjering",
+    "lemma": "regjering",
     "english": "a government",
     "example": "Regjeringen la frem et nytt statsbudsjett.",
     "example_english": "The government presented a new state budget.",
@@ -19,6 +21,7 @@
   },
   {
     "norsk": "et valg",
+    "lemma": "valg",
     "english": "an election",
     "example": "Stortingsvalget avholdes hvert fjerde år.",
     "example_english": "Parliamentary elections are held every four years.",
@@ -28,6 +31,7 @@
   },
   {
     "norsk": "å stemme",
+    "lemma": "stemme",
     "english": "to vote",
     "example": "Alle over 18 år har rett til å stemme.",
     "example_english": "Everyone over 18 has the right to vote.",
@@ -37,6 +41,7 @@
   },
   {
     "norsk": "et parti",
+    "lemma": "parti",
     "english": "a (political) party",
     "example": "Hvilket parti stemmer du på?",
     "example_english": "Which party do you vote for?",
@@ -46,6 +51,7 @@
   },
   {
     "norsk": "en statsminister",
+    "lemma": "statsminister",
     "english": "a prime minister",
     "example": "Statsministeren holdt en pressekonferanse.",
     "example_english": "The prime minister held a press conference.",
@@ -55,6 +61,7 @@
   },
   {
     "norsk": "Stortinget",
+    "lemma": "Stortinget",
     "english": "the Storting (Norwegian parliament)",
     "example": "Stortinget vedtok den nye loven.",
     "example_english": "The Storting passed the new law.",
@@ -64,6 +71,7 @@
   },
   {
     "norsk": "en opposisjon",
+    "lemma": "opposisjon",
     "english": "an opposition",
     "example": "Opposisjonen kritiserte regjeringens politikk.",
     "example_english": "The opposition criticised the government's policy.",
@@ -73,6 +81,7 @@
   },
   {
     "norsk": "en politikk",
+    "lemma": "politikk",
     "english": "a policy / politics",
     "example": "Klimapolitikken er svært omdiskutert.",
     "example_english": "Climate policy is highly controversial.",
@@ -82,6 +91,7 @@
   },
   {
     "norsk": "en ideologi",
+    "lemma": "ideologi",
     "english": "an ideology",
     "example": "Politiske partier er bygget på ulike ideologier.",
     "example_english": "Political parties are built on different ideologies.",
@@ -91,6 +101,7 @@
   },
   {
     "norsk": "suverenitet",
+    "lemma": "suverenitet",
     "english": "sovereignty",
     "example": "Nasjonal suverenitet er et omdiskutert tema.",
     "example_english": "National sovereignty is a debated topic.",
@@ -100,6 +111,7 @@
   },
   {
     "norsk": "et mandat",
+    "lemma": "mandat",
     "english": "a mandate",
     "example": "Regjeringen fikk et klart mandat fra velgerne.",
     "example_english": "The government received a clear mandate from the voters.",
@@ -109,6 +121,7 @@
   },
   {
     "norsk": "en koalisjon",
+    "lemma": "koalisjon",
     "english": "a coalition",
     "example": "De dannet en mindretallskoalisjon.",
     "example_english": "They formed a minority coalition.",
@@ -118,6 +131,7 @@
   },
   {
     "norsk": "å regulere",
+    "lemma": "regulere",
     "english": "to regulate",
     "example": "Staten regulerer finansmarkedene.",
     "example_english": "The state regulates the financial markets.",
@@ -127,6 +141,7 @@
   },
   {
     "norsk": "en velger",
+    "lemma": "velger",
     "english": "a voter",
     "example": "Velgerne er skuffet over løftebruddet.",
     "example_english": "Voters are disappointed over the broken promise.",
@@ -136,6 +151,7 @@
   },
   {
     "norsk": "en grunnlov",
+    "lemma": "grunnlov",
     "english": "a constitution",
     "example": "Grunnloven av 1814 er Norges øverste lov.",
     "example_english": "The Constitution of 1814 is Norway's supreme law.",
@@ -145,6 +161,7 @@
   },
   {
     "norsk": "en minister",
+    "lemma": "minister",
     "english": "a minister",
     "example": "Utenriksministeren møtte sin russiske kollega.",
     "example_english": "The foreign minister met his Russian counterpart.",
@@ -154,6 +171,7 @@
   },
   {
     "norsk": "et veto",
+    "lemma": "veto",
     "english": "a veto",
     "example": "Presidenten brukte sin vetorett.",
     "example_english": "The president used their veto power.",
@@ -163,6 +181,7 @@
   },
   {
     "norsk": "diplomatisk",
+    "lemma": "diplomatisk",
     "english": "diplomatic",
     "example": "Den diplomatiske løsningen tok måneder.",
     "example_english": "The diplomatic solution took months.",
@@ -172,6 +191,7 @@
   },
   {
     "norsk": "en sanksjon",
+    "lemma": "sanksjon",
     "english": "a sanction",
     "example": "EU innførte sanksjoner mot landet.",
     "example_english": "The EU imposed sanctions against the country.",
@@ -181,6 +201,7 @@
   },
   {
     "norsk": "en reform",
+    "lemma": "reform",
     "english": "a reform",
     "example": "Pensjonsreformen var kontroversiell.",
     "example_english": "The pension reform was controversial.",
@@ -190,6 +211,7 @@
   },
   {
     "norsk": "en statsborger",
+    "lemma": "statsborger",
     "english": "a citizen",
     "example": "Hun ble norsk statsborger i fjor.",
     "example_english": "She became a Norwegian citizen last year.",
@@ -199,6 +221,7 @@
   },
   {
     "norsk": "å lovfeste",
+    "lemma": "lovfeste",
     "english": "to enshrine in law / to legislate",
     "example": "Retten ble lovfestet i 1978.",
     "example_english": "The right was enshrined in law in 1978.",
@@ -208,6 +231,7 @@
   },
   {
     "norsk": "en folkeavstemning",
+    "lemma": "folkeavstemning",
     "english": "a referendum",
     "example": "Det ble holdt folkeavstemning om EU-medlemskap.",
     "example_english": "A referendum was held on EU membership.",
@@ -217,6 +241,7 @@
   },
   {
     "norsk": "upartisk",
+    "lemma": "upartisk",
     "english": "impartial / non-partisan",
     "example": "Dommeren skal alltid være upartisk.",
     "example_english": "The judge must always be impartial.",
@@ -224,9 +249,9 @@
     "category": "politics",
     "part": "adjective"
   },
-
   {
     "norsk": "en økonomi",
+    "lemma": "økonomi",
     "english": "an economy",
     "example": "Den norske økonomien er sterk.",
     "example_english": "The Norwegian economy is strong.",
@@ -236,6 +261,7 @@
   },
   {
     "norsk": "inflasjon",
+    "lemma": "inflasjon",
     "english": "inflation",
     "example": "Inflasjonen har steget det siste året.",
     "example_english": "Inflation has risen over the past year.",
@@ -245,6 +271,7 @@
   },
   {
     "norsk": "en rente",
+    "lemma": "rente",
     "english": "an interest rate",
     "example": "Norges Bank satte opp renten.",
     "example_english": "Norges Bank raised the interest rate.",
@@ -254,6 +281,7 @@
   },
   {
     "norsk": "et budsjett",
+    "lemma": "budsjett",
     "english": "a budget",
     "example": "Regjeringen la frem statsbudsjettet.",
     "example_english": "The government presented the state budget.",
@@ -263,6 +291,7 @@
   },
   {
     "norsk": "et bruttonasjonalprodukt",
+    "lemma": "bruttonasjonalprodukt",
     "english": "gross domestic product (GDP)",
     "example": "BNP vokste med to prosent.",
     "example_english": "GDP grew by two percent.",
@@ -272,6 +301,7 @@
   },
   {
     "norsk": "en skatt",
+    "lemma": "skatt",
     "english": "a tax",
     "example": "Norge har høye skatter og gode velferdstjenester.",
     "example_english": "Norway has high taxes and good welfare services.",
@@ -281,6 +311,7 @@
   },
   {
     "norsk": "en investering",
+    "lemma": "investering",
     "english": "an investment",
     "example": "Investeringen ga god avkastning.",
     "example_english": "The investment yielded a good return.",
@@ -290,6 +321,7 @@
   },
   {
     "norsk": "et marked",
+    "lemma": "marked",
     "english": "a market",
     "example": "Arbeidsmarkedet er presset.",
     "example_english": "The labour market is under pressure.",
@@ -299,6 +331,7 @@
   },
   {
     "norsk": "en eksport",
+    "lemma": "eksport",
     "english": "an export",
     "example": "Norges viktigste eksport er olje og gass.",
     "example_english": "Norway's most important exports are oil and gas.",
@@ -308,6 +341,7 @@
   },
   {
     "norsk": "en import",
+    "lemma": "import",
     "english": "an import",
     "example": "Vi importerer mye fra Asia.",
     "example_english": "We import a lot from Asia.",
@@ -317,6 +351,7 @@
   },
   {
     "norsk": "handelsbalanse",
+    "lemma": "handelsbalanse",
     "english": "trade balance",
     "example": "Norge har positiv handelsbalanse.",
     "example_english": "Norway has a positive trade balance.",
@@ -326,6 +361,7 @@
   },
   {
     "norsk": "en resessjon",
+    "lemma": "resessjon",
     "english": "a recession",
     "example": "Landet er inne i en dyp resessjon.",
     "example_english": "The country is in a deep recession.",
@@ -335,6 +371,7 @@
   },
   {
     "norsk": "velferdsstaten",
+    "lemma": "velferdsstaten",
     "english": "the welfare state",
     "example": "Velferdsstaten sikrer borgernes grunnleggende behov.",
     "example_english": "The welfare state secures citizens' basic needs.",
@@ -344,6 +381,7 @@
   },
   {
     "norsk": "en gjeld",
+    "lemma": "gjeld",
     "english": "debt",
     "example": "Statens gjeld er under kontroll.",
     "example_english": "The state's debt is under control.",
@@ -353,6 +391,7 @@
   },
   {
     "norsk": "privatisering",
+    "lemma": "privatisering",
     "english": "privatisation",
     "example": "Privatiseringen av jernbanen er omdiskutert.",
     "example_english": "The privatisation of the railway is controversial.",
@@ -362,6 +401,7 @@
   },
   {
     "norsk": "et oljefond",
+    "lemma": "oljefond",
     "english": "a sovereign wealth fund / oil fund",
     "example": "Oljefondet er verdens største statlige investeringsfond.",
     "example_english": "The oil fund is the world's largest sovereign wealth fund.",
@@ -371,6 +411,7 @@
   },
   {
     "norsk": "en arbeidsledig",
+    "lemma": "arbeidsledig",
     "english": "an unemployed person",
     "example": "Antall arbeidsledige sank i fjor.",
     "example_english": "The number of unemployed fell last year.",
@@ -380,6 +421,7 @@
   },
   {
     "norsk": "en børs",
+    "lemma": "børs",
     "english": "a stock exchange",
     "example": "Oslo Børs steg kraftig i dag.",
     "example_english": "Oslo Stock Exchange rose sharply today.",
@@ -389,6 +431,7 @@
   },
   {
     "norsk": "globalisering",
+    "lemma": "globalisering",
     "english": "globalisation",
     "example": "Globalisering har skapt nye markeder.",
     "example_english": "Globalisation has created new markets.",
@@ -398,6 +441,7 @@
   },
   {
     "norsk": "å subsidiere",
+    "lemma": "subsidiere",
     "english": "to subsidise",
     "example": "Staten subsidierer jordbruket.",
     "example_english": "The state subsidises agriculture.",
@@ -407,6 +451,7 @@
   },
   {
     "norsk": "en konkurranse",
+    "lemma": "konkurranse",
     "english": "competition",
     "example": "Hard konkurranse presser prisene ned.",
     "example_english": "Hard competition pushes prices down.",
@@ -416,6 +461,7 @@
   },
   {
     "norsk": "en sentralbank",
+    "lemma": "sentralbank",
     "english": "a central bank",
     "example": "Norges Bank er landets sentralbank.",
     "example_english": "Norges Bank is the country's central bank.",
@@ -425,6 +471,7 @@
   },
   {
     "norsk": "å deregulere",
+    "lemma": "deregulere",
     "english": "to deregulate",
     "example": "Myndighetene deregulerte energimarkedet.",
     "example_english": "The authorities deregulated the energy market.",
@@ -434,6 +481,7 @@
   },
   {
     "norsk": "produktivitet",
+    "lemma": "produktivitet",
     "english": "productivity",
     "example": "Høy produktivitet er et mål for bedrifter.",
     "example_english": "High productivity is a goal for companies.",
@@ -443,6 +491,7 @@
   },
   {
     "norsk": "et overskudd",
+    "lemma": "overskudd",
     "english": "a surplus",
     "example": "Norge har hatt budsjettoverskudd i mange år.",
     "example_english": "Norway has had budget surpluses for many years.",
@@ -450,9 +499,9 @@
     "category": "economics",
     "part": "noun"
   },
-
   {
     "norsk": "ulikhet",
+    "lemma": "ulikhet",
     "english": "inequality",
     "example": "Sosial ulikhet er et voksende problem.",
     "example_english": "Social inequality is a growing problem.",
@@ -462,6 +511,7 @@
   },
   {
     "norsk": "diskriminering",
+    "lemma": "diskriminering",
     "english": "discrimination",
     "example": "Diskriminering på grunn av kjønn er ulovlig.",
     "example_english": "Discrimination on the basis of gender is illegal.",
@@ -471,6 +521,7 @@
   },
   {
     "norsk": "integrering",
+    "lemma": "integrering",
     "english": "integration",
     "example": "Integrering av flyktninger tar tid.",
     "example_english": "Integration of refugees takes time.",
@@ -480,6 +531,7 @@
   },
   {
     "norsk": "en flyktning",
+    "lemma": "flyktning",
     "english": "a refugee",
     "example": "Mange flyktninger søker asyl i Europa.",
     "example_english": "Many refugees seek asylum in Europe.",
@@ -489,6 +541,7 @@
   },
   {
     "norsk": "fattigdom",
+    "lemma": "fattigdom",
     "english": "poverty",
     "example": "Barnefattigdom er et alvorlig samfunnsproblem.",
     "example_english": "Child poverty is a serious social problem.",
@@ -498,6 +551,7 @@
   },
   {
     "norsk": "en rettighet",
+    "lemma": "rettighet",
     "english": "a right",
     "example": "Alle har rett til gratis utdanning.",
     "example_english": "Everyone has the right to free education.",
@@ -507,6 +561,7 @@
   },
   {
     "norsk": "likestilling",
+    "lemma": "likestilling",
     "english": "gender equality",
     "example": "Norge er ledende innen likestilling.",
     "example_english": "Norway is a leader in gender equality.",
@@ -516,6 +571,7 @@
   },
   {
     "norsk": "rasisme",
+    "lemma": "rasisme",
     "english": "racism",
     "example": "Rasisme er forbudt ved norsk lov.",
     "example_english": "Racism is prohibited by Norwegian law.",
@@ -525,6 +581,7 @@
   },
   {
     "norsk": "en fordom",
+    "lemma": "fordom",
     "english": "a prejudice / a bias",
     "example": "Vi må jobbe mot fordommer i samfunnet.",
     "example_english": "We must work against prejudice in society.",
@@ -534,6 +591,7 @@
   },
   {
     "norsk": "vold",
+    "lemma": "vold",
     "english": "violence",
     "example": "Vold i nære relasjoner er underrapportert.",
     "example_english": "Domestic violence is underreported.",
@@ -543,6 +601,7 @@
   },
   {
     "norsk": "en inkludering",
+    "lemma": "inkludering",
     "english": "inclusion",
     "example": "Inkludering av alle grupper er viktig.",
     "example_english": "Inclusion of all groups is important.",
@@ -552,6 +611,7 @@
   },
   {
     "norsk": "en marginalisert gruppe",
+    "lemma": "en marginalisert gruppe",
     "english": "a marginalised group",
     "example": "Politikerne ignorerer ofte marginaliserte grupper.",
     "example_english": "Politicians often ignore marginalised groups.",
@@ -561,6 +621,7 @@
   },
   {
     "norsk": "et sikkerhetsnett",
+    "lemma": "sikkerhetsnett",
     "english": "a safety net",
     "example": "Det sosiale sikkerhetsnettet hindrer ekstrem fattigdom.",
     "example_english": "The social safety net prevents extreme poverty.",
@@ -570,6 +631,7 @@
   },
   {
     "norsk": "en hjemløs",
+    "lemma": "hjemløs",
     "english": "a homeless person",
     "example": "Antall hjemløse øker i storbyene.",
     "example_english": "The number of homeless people is rising in large cities.",
@@ -579,6 +641,7 @@
   },
   {
     "norsk": "psykisk helse",
+    "lemma": "psykisk helse",
     "english": "mental health",
     "example": "Psykisk helse bør tas like alvorlig som fysisk.",
     "example_english": "Mental health should be taken as seriously as physical health.",
@@ -588,6 +651,7 @@
   },
   {
     "norsk": "rusmisbruk",
+    "lemma": "rusmisbruk",
     "english": "substance abuse / drug abuse",
     "example": "Rusmisbruk er et komplekst problem.",
     "example_english": "Substance abuse is a complex problem.",
@@ -597,6 +661,7 @@
   },
   {
     "norsk": "en velferdsstat",
+    "lemma": "velferdsstat",
     "english": "a welfare state",
     "example": "Den nordiske velferdsstatsmodellen er anerkjent globalt.",
     "example_english": "The Nordic welfare state model is recognised globally.",
@@ -606,6 +671,7 @@
   },
   {
     "norsk": "aktivisme",
+    "lemma": "aktivisme",
     "english": "activism",
     "example": "Klimaaktivisme har vokst blant unge.",
     "example_english": "Climate activism has grown among young people.",
@@ -615,6 +681,7 @@
   },
   {
     "norsk": "å demonstrere",
+    "lemma": "demonstrere",
     "english": "to demonstrate / to protest",
     "example": "Tusenvis demonstrerte i gatene.",
     "example_english": "Thousands demonstrated in the streets.",
@@ -624,6 +691,7 @@
   },
   {
     "norsk": "en minoritet",
+    "lemma": "minoritet",
     "english": "a minority",
     "example": "Samer er en urfolksminoritet i Norge.",
     "example_english": "Sami people are an indigenous minority in Norway.",
@@ -633,6 +701,7 @@
   },
   {
     "norsk": "ytringsfriheten",
+    "lemma": "ytringsfriheten",
     "english": "freedom of expression",
     "example": "Ytringsfriheten er grunnlovsfestet.",
     "example_english": "Freedom of expression is enshrined in the constitution.",
@@ -642,6 +711,7 @@
   },
   {
     "norsk": "sosial mobilitet",
+    "lemma": "sosial mobilitet",
     "english": "social mobility",
     "example": "Utdanning fremmer sosial mobilitet.",
     "example_english": "Education promotes social mobility.",
@@ -651,6 +721,7 @@
   },
   {
     "norsk": "et asyl",
+    "lemma": "asyl",
     "english": "asylum",
     "example": "Han søkte asyl i Norge.",
     "example_english": "He applied for asylum in Norway.",
@@ -660,6 +731,7 @@
   },
   {
     "norsk": "en hatytring",
+    "lemma": "hatytring",
     "english": "hate speech",
     "example": "Hatytringer er straffbart.",
     "example_english": "Hate speech is punishable by law.",
@@ -669,6 +741,7 @@
   },
   {
     "norsk": "solidaritet",
+    "lemma": "solidaritet",
     "english": "solidarity",
     "example": "Solidaritet med de svakerestilte er viktig.",
     "example_english": "Solidarity with the most vulnerable is important.",
@@ -676,9 +749,9 @@
     "category": "social-issues",
     "part": "noun"
   },
-
   {
     "norsk": "et kunstverk",
+    "lemma": "kunstverk",
     "english": "a work of art",
     "example": "Kunstverk speiler samfunnet de er skapt i.",
     "example_english": "Works of art reflect the society in which they are created.",
@@ -688,6 +761,7 @@
   },
   {
     "norsk": "abstrakt",
+    "lemma": "abstrakt",
     "english": "abstract",
     "example": "Abstrakt kunst er åpen for tolkning.",
     "example_english": "Abstract art is open to interpretation.",
@@ -697,6 +771,7 @@
   },
   {
     "norsk": "en komposisjon",
+    "lemma": "komposisjon",
     "english": "a composition",
     "example": "Komposisjonen viser dyptgående kunstnerisk innsikt.",
     "example_english": "The composition shows profound artistic insight.",
@@ -706,6 +781,7 @@
   },
   {
     "norsk": "et perspektiv",
+    "lemma": "perspektiv",
     "english": "a perspective",
     "example": "Maleriet bruker lineærperspektiv.",
     "example_english": "The painting uses linear perspective.",
@@ -715,6 +791,7 @@
   },
   {
     "norsk": "en estetikk",
+    "lemma": "estetikk",
     "english": "aesthetics",
     "example": "Japansk estetikk legger vekt på enkelhet.",
     "example_english": "Japanese aesthetics emphasises simplicity.",
@@ -724,6 +801,7 @@
   },
   {
     "norsk": "en installasjonskunst",
+    "lemma": "installasjonskunst",
     "english": "installation art",
     "example": "Installasjonskunst utfordrer rommet vi er i.",
     "example_english": "Installation art challenges the space we are in.",
@@ -733,6 +811,7 @@
   },
   {
     "norsk": "en koreografi",
+    "lemma": "koreografi",
     "english": "choreography",
     "example": "Koreografien ble mottatt med stående applaus.",
     "example_english": "The choreography was met with a standing ovation.",
@@ -742,6 +821,7 @@
   },
   {
     "norsk": "en arkitektur",
+    "lemma": "arkitektur",
     "english": "architecture",
     "example": "Norsk trearkitektur er unik.",
     "example_english": "Norwegian timber architecture is unique.",
@@ -751,6 +831,7 @@
   },
   {
     "norsk": "en kritiker",
+    "lemma": "kritiker",
     "english": "a critic",
     "example": "Kunstkritikeren ga verket fem stjerner.",
     "example_english": "The art critic gave the work five stars.",
@@ -760,6 +841,7 @@
   },
   {
     "norsk": "å tolke",
+    "lemma": "tolke",
     "english": "to interpret",
     "example": "Det er vanskelig å tolke dette diktet.",
     "example_english": "It is difficult to interpret this poem.",
@@ -769,6 +851,7 @@
   },
   {
     "norsk": "en avantgarde",
+    "lemma": "avantgarde",
     "english": "the avant-garde",
     "example": "Avantgardekunst provoserer med vilje.",
     "example_english": "Avant-garde art provokes deliberately.",
@@ -778,6 +861,7 @@
   },
   {
     "norsk": "et motiv",
+    "lemma": "motiv",
     "english": "a motif / a subject",
     "example": "Naturen er et gjennomgående motiv hos Munch.",
     "example_english": "Nature is a recurring motif in Munch's work.",
@@ -787,6 +871,7 @@
   },
   {
     "norsk": "en mottager av pris",
+    "lemma": "en mottager av pris",
     "english": "an award recipient / a prize winner",
     "example": "Hun er mottaker av Nordisk råds litteraturpris.",
     "example_english": "She is the recipient of the Nordic Council's Literature Prize.",
@@ -796,6 +881,7 @@
   },
   {
     "norsk": "et mesterverk",
+    "lemma": "mesterverk",
     "english": "a masterpiece",
     "example": "Skriket regnes som et mesterverk.",
     "example_english": "The Scream is considered a masterpiece.",
@@ -805,6 +891,7 @@
   },
   {
     "norsk": "en provokasjon",
+    "lemma": "provokasjon",
     "english": "a provocation",
     "example": "Forestillingen var en bevisst provokasjon.",
     "example_english": "The performance was a deliberate provocation.",
@@ -814,6 +901,7 @@
   },
   {
     "norsk": "en filmserie",
+    "lemma": "filmserie",
     "english": "a film series / a franchise",
     "example": "Filmserien fikk blandet kritikk.",
     "example_english": "The film series received mixed reviews.",
@@ -823,6 +911,7 @@
   },
   {
     "norsk": "en symfoni",
+    "lemma": "symfoni",
     "english": "a symphony",
     "example": "Griegs Peer Gynt Suite er kjent over hele verden.",
     "example_english": "Grieg's Peer Gynt Suite is known all over the world.",
@@ -832,6 +921,7 @@
   },
   {
     "norsk": "et regi",
+    "lemma": "regi",
     "english": "direction (film/theatre)",
     "example": "Regien var imponerende.",
     "example_english": "The direction was impressive.",
@@ -841,6 +931,7 @@
   },
   {
     "norsk": "å portrettere",
+    "lemma": "portrettere",
     "english": "to portray",
     "example": "Romanen portretterer livet i etterkrigstiden.",
     "example_english": "The novel portrays life in the post-war period.",
@@ -850,6 +941,7 @@
   },
   {
     "norsk": "en patronasje",
+    "lemma": "patronasje",
     "english": "patronage",
     "example": "Kunstens patronasje sikrer overlevelse for kunstnere.",
     "example_english": "Patronage of the arts ensures survival for artists.",
@@ -859,6 +951,7 @@
   },
   {
     "norsk": "et kulturbudsjett",
+    "lemma": "kulturbudsjett",
     "english": "a cultural budget",
     "example": "Kulturbudsjettet ble kuttet med ti prosent.",
     "example_english": "The cultural budget was cut by ten percent.",
@@ -868,6 +961,7 @@
   },
   {
     "norsk": "en symbolikk",
+    "lemma": "symbolikk",
     "english": "symbolism",
     "example": "Symbolikken i maleriet er rik.",
     "example_english": "The symbolism in the painting is rich.",
@@ -877,6 +971,7 @@
   },
   {
     "norsk": "improvisasjon",
+    "lemma": "improvisasjon",
     "english": "improvisation",
     "example": "Jazz bygger på improvisasjon.",
     "example_english": "Jazz is built on improvisation.",
@@ -886,6 +981,7 @@
   },
   {
     "norsk": "en utstillingsåpning",
+    "lemma": "utstillingsåpning",
     "english": "an exhibition opening / a vernissage",
     "example": "Vi var på utstillingsåpning i galleriet.",
     "example_english": "We attended the exhibition opening at the gallery.",
@@ -895,6 +991,7 @@
   },
   {
     "norsk": "visuelle virkemidler",
+    "lemma": "visuelle virkemidler",
     "english": "visual devices / visual techniques",
     "example": "Kunstneren bruker sterke visuelle virkemidler.",
     "example_english": "The artist uses strong visual devices.",
@@ -902,9 +999,9 @@
     "category": "arts",
     "part": "phrase"
   },
-
   {
     "norsk": "et eksperiment",
+    "lemma": "eksperiment",
     "english": "an experiment",
     "example": "Eksperimentet ga overraskende resultater.",
     "example_english": "The experiment produced surprising results.",
@@ -914,6 +1011,7 @@
   },
   {
     "norsk": "en hypotese",
+    "lemma": "hypotese",
     "english": "a hypothesis",
     "example": "Forskerne testet hypotesen over to år.",
     "example_english": "The researchers tested the hypothesis over two years.",
@@ -923,6 +1021,7 @@
   },
   {
     "norsk": "et funn",
+    "lemma": "funn",
     "english": "a finding / a discovery",
     "example": "Funnene ble publisert i et fagfellevurdert tidsskrift.",
     "example_english": "The findings were published in a peer-reviewed journal.",
@@ -932,6 +1031,7 @@
   },
   {
     "norsk": "å forske på",
+    "lemma": "å forske på",
     "english": "to research / to investigate",
     "example": "De forsker på effekten av medisin.",
     "example_english": "They research the effect of medication.",
@@ -941,6 +1041,7 @@
   },
   {
     "norsk": "en forsker",
+    "lemma": "forsker",
     "english": "a researcher / a scientist",
     "example": "Forskeren presenterte resultatene på konferansen.",
     "example_english": "The researcher presented the results at the conference.",
@@ -950,6 +1051,7 @@
   },
   {
     "norsk": "en teori",
+    "lemma": "teori",
     "english": "a theory",
     "example": "Evolusjonsteori er godt vitenskapelig fundert.",
     "example_english": "Evolutionary theory is well scientifically founded.",
@@ -959,6 +1061,7 @@
   },
   {
     "norsk": "genetikk",
+    "lemma": "genetikk",
     "english": "genetics",
     "example": "Genetikk forklarer mange arvelige sykdommer.",
     "example_english": "Genetics explains many hereditary diseases.",
@@ -968,6 +1071,7 @@
   },
   {
     "norsk": "kvantemekanikk",
+    "lemma": "kvantemekanikk",
     "english": "quantum mechanics",
     "example": "Kvantemekanikk er vanskelig å forstå intuitivt.",
     "example_english": "Quantum mechanics is difficult to understand intuitively.",
@@ -977,6 +1081,7 @@
   },
   {
     "norsk": "en modell",
+    "lemma": "modell",
     "english": "a model",
     "example": "Klimamodeller forutsier fremtidige temperaturer.",
     "example_english": "Climate models predict future temperatures.",
@@ -986,6 +1091,7 @@
   },
   {
     "norsk": "å analysere",
+    "lemma": "analysere",
     "english": "to analyse",
     "example": "Vi analyserte dataene statistisk.",
     "example_english": "We analysed the data statistically.",
@@ -995,6 +1101,7 @@
   },
   {
     "norsk": "en variabel",
+    "lemma": "variabel",
     "english": "a variable",
     "example": "Forskerne kontrollerte for alle variabler.",
     "example_english": "The researchers controlled for all variables.",
@@ -1004,6 +1111,7 @@
   },
   {
     "norsk": "et laboratorium",
+    "lemma": "laboratorium",
     "english": "a laboratory",
     "example": "Prøvene ble analysert i laboratoriet.",
     "example_english": "The samples were analysed in the laboratory.",
@@ -1013,6 +1121,7 @@
   },
   {
     "norsk": "bioteknologi",
+    "lemma": "bioteknologi",
     "english": "biotechnology",
     "example": "Bioteknologi brukes i medisin og landbruk.",
     "example_english": "Biotechnology is used in medicine and agriculture.",
@@ -1022,6 +1131,7 @@
   },
   {
     "norsk": "en oppdagelse",
+    "lemma": "oppdagelse",
     "english": "a discovery",
     "example": "Oppdagelsen av penicillin reddet millioner.",
     "example_english": "The discovery of penicillin saved millions.",
@@ -1031,6 +1141,7 @@
   },
   {
     "norsk": "vitenskapelig",
+    "lemma": "vitenskapelig",
     "english": "scientific",
     "example": "Vitenskapelige metoder sikrer pålitelige resultater.",
     "example_english": "Scientific methods ensure reliable results.",
@@ -1040,6 +1151,7 @@
   },
   {
     "norsk": "et peer review",
+    "lemma": "peer review",
     "english": "peer review",
     "example": "Alle artikler gjennomgår peer review.",
     "example_english": "All articles undergo peer review.",
@@ -1049,6 +1161,7 @@
   },
   {
     "norsk": "fysikk",
+    "lemma": "fysikk",
     "english": "physics",
     "example": "Fysikk beskriver naturens grunnleggende lover.",
     "example_english": "Physics describes the fundamental laws of nature.",
@@ -1058,6 +1171,7 @@
   },
   {
     "norsk": "kjemi",
+    "lemma": "kjemi",
     "english": "chemistry",
     "example": "Kjemi er viktig for å forstå materialer.",
     "example_english": "Chemistry is important for understanding materials.",
@@ -1067,6 +1181,7 @@
   },
   {
     "norsk": "en banebrytende",
+    "lemma": "en banebrytende",
     "english": "groundbreaking / pioneering",
     "example": "Det var et banebrytende funn.",
     "example_english": "It was a groundbreaking discovery.",
@@ -1076,6 +1191,7 @@
   },
   {
     "norsk": "reproduserbar",
+    "lemma": "reproduserbar",
     "english": "reproducible",
     "example": "Resultatene må være reproduserbare.",
     "example_english": "The results must be reproducible.",
@@ -1085,6 +1201,7 @@
   },
   {
     "norsk": "et paradigmeskifte",
+    "lemma": "paradigmeskifte",
     "english": "a paradigm shift",
     "example": "Einsteins relativitetsteori var et paradigmeskifte.",
     "example_english": "Einstein's theory of relativity was a paradigm shift.",
@@ -1094,6 +1211,7 @@
   },
   {
     "norsk": "å dokumentere",
+    "lemma": "dokumentere",
     "english": "to document",
     "example": "Vi dokumenterte alle steg i prosessen.",
     "example_english": "We documented all steps in the process.",
@@ -1103,6 +1221,7 @@
   },
   {
     "norsk": "en sonde",
+    "lemma": "sonde",
     "english": "a probe",
     "example": "Romsondet sendte bilder fra Mars.",
     "example_english": "The space probe sent images from Mars.",
@@ -1112,6 +1231,7 @@
   },
   {
     "norsk": "en evolusjon",
+    "lemma": "evolusjon",
     "english": "evolution",
     "example": "Evolusjon er en langsommelig prosess.",
     "example_english": "Evolution is a slow process.",
@@ -1121,6 +1241,7 @@
   },
   {
     "norsk": "nanoteknologi",
+    "lemma": "nanoteknologi",
     "english": "nanotechnology",
     "example": "Nanoteknologi kan revolusjonere medisinen.",
     "example_english": "Nanotechnology can revolutionise medicine.",
@@ -1128,9 +1249,9 @@
     "category": "science",
     "part": "noun"
   },
-
   {
     "norsk": "sjalusi",
+    "lemma": "sjalusi",
     "english": "jealousy",
     "example": "Sjalusi kan ødelegge et godt forhold.",
     "example_english": "Jealousy can destroy a good relationship.",
@@ -1140,6 +1261,7 @@
   },
   {
     "norsk": "skam",
+    "lemma": "skam",
     "english": "shame",
     "example": "Hun følte dyp skam over det som hadde skjedd.",
     "example_english": "She felt deep shame about what had happened.",
@@ -1149,6 +1271,7 @@
   },
   {
     "norsk": "skyld",
+    "lemma": "skyld",
     "english": "guilt",
     "example": "Han sleit med skyldfølelse i lang tid.",
     "example_english": "He struggled with feelings of guilt for a long time.",
@@ -1158,6 +1281,7 @@
   },
   {
     "norsk": "beundring",
+    "lemma": "beundring",
     "english": "admiration",
     "example": "Jeg har stor beundring for hennes mot.",
     "example_english": "I have great admiration for her courage.",
@@ -1167,6 +1291,7 @@
   },
   {
     "norsk": "forakt",
+    "lemma": "forakt",
     "english": "contempt / disdain",
     "example": "Han skjulte ikke sin forakt.",
     "example_english": "He did not hide his contempt.",
@@ -1176,6 +1301,7 @@
   },
   {
     "norsk": "nostalgi",
+    "lemma": "nostalgi",
     "english": "nostalgia",
     "example": "Gamle sanger vekker nostalgi.",
     "example_english": "Old songs stir up nostalgia.",
@@ -1185,6 +1311,7 @@
   },
   {
     "norsk": "ambivalens",
+    "lemma": "ambivalens",
     "english": "ambivalence",
     "example": "Jeg føler ambivalens overfor beslutningen.",
     "example_english": "I feel ambivalence about the decision.",
@@ -1194,6 +1321,7 @@
   },
   {
     "norsk": "fortvilelse",
+    "lemma": "fortvilelse",
     "english": "despair / desperation",
     "example": "Han var fylt av fortvilelse.",
     "example_english": "He was filled with despair.",
@@ -1203,6 +1331,7 @@
   },
   {
     "norsk": "en lettelse",
+    "lemma": "lettelse",
     "english": "relief",
     "example": "Hun puste lettet ut da faren var over.",
     "example_english": "She breathed a sigh of relief when the danger was over.",
@@ -1212,6 +1341,7 @@
   },
   {
     "norsk": "mistenksomhet",
+    "lemma": "mistenksomhet",
     "english": "suspicion / distrust",
     "example": "Mistenksomhet svekker tilliten i teamet.",
     "example_english": "Suspicion weakens trust within the team.",
@@ -1221,6 +1351,7 @@
   },
   {
     "norsk": "entusiasme",
+    "lemma": "entusiasme",
     "english": "enthusiasm",
     "example": "Hun angrep oppgaven med entusiasme.",
     "example_english": "She attacked the task with enthusiasm.",
@@ -1230,6 +1361,7 @@
   },
   {
     "norsk": "likegyldighet",
+    "lemma": "likegyldighet",
     "english": "indifference",
     "example": "Hans likegyldighet overfor situasjonen sjokkerte oss.",
     "example_english": "His indifference to the situation shocked us.",
@@ -1239,6 +1371,7 @@
   },
   {
     "norsk": "harme",
+    "lemma": "harme",
     "english": "indignation / resentment",
     "example": "Urettferdigheten fylte henne med harme.",
     "example_english": "The injustice filled her with indignation.",
@@ -1248,6 +1381,7 @@
   },
   {
     "norsk": "resignasjon",
+    "lemma": "resignasjon",
     "english": "resignation",
     "example": "Med resignasjon aksepterte han utfallet.",
     "example_english": "With resignation he accepted the outcome.",
@@ -1257,6 +1391,7 @@
   },
   {
     "norsk": "medfølelse",
+    "lemma": "medfølelse",
     "english": "compassion / empathy",
     "example": "God omsorg krever medfølelse.",
     "example_english": "Good care requires compassion.",
@@ -1266,6 +1401,7 @@
   },
   {
     "norsk": "undring",
+    "lemma": "undring",
     "english": "wonder / amazement",
     "example": "Barnas undring over naturen er smittende.",
     "example_english": "Children's wonder at nature is contagious.",
@@ -1275,6 +1411,7 @@
   },
   {
     "norsk": "bitterhet",
+    "lemma": "bitterhet",
     "english": "bitterness",
     "example": "Gammelt svik kan etterlate bitterhet.",
     "example_english": "Old betrayal can leave bitterness behind.",
@@ -1284,6 +1421,7 @@
   },
   {
     "norsk": "hjertesorg",
+    "lemma": "hjertesorg",
     "english": "heartbreak / heartache",
     "example": "Bruddet fylte ham med hjertesorg.",
     "example_english": "The break-up filled him with heartbreak.",
@@ -1293,6 +1431,7 @@
   },
   {
     "norsk": "pågangsmot",
+    "lemma": "pågangsmot",
     "english": "drive / determination / grit",
     "example": "Pågangsmot er nøkkelen til suksess.",
     "example_english": "Drive is the key to success.",
@@ -1302,6 +1441,7 @@
   },
   {
     "norsk": "selvtillit",
+    "lemma": "selvtillit",
     "english": "self-confidence / self-esteem",
     "example": "Suksess bygger selvtillit.",
     "example_english": "Success builds self-confidence.",
@@ -1311,6 +1451,7 @@
   },
   {
     "norsk": "frustrasjon",
+    "lemma": "frustrasjon",
     "english": "frustration",
     "example": "Frustrasjon over byråkratiet er forståelig.",
     "example_english": "Frustration with bureaucracy is understandable.",
@@ -1320,6 +1461,7 @@
   },
   {
     "norsk": "opprørthet",
+    "lemma": "opprørthet",
     "english": "outrage / upset",
     "example": "Nyheten skapte stor opprørthet.",
     "example_english": "The news caused great outrage.",
@@ -1329,6 +1471,7 @@
   },
   {
     "norsk": "å overvelde",
+    "lemma": "overvelde",
     "english": "to overwhelm",
     "example": "Inntrykkene overveldet henne.",
     "example_english": "The impressions overwhelmed her.",
@@ -1338,6 +1481,7 @@
   },
   {
     "norsk": "takknemlighet",
+    "lemma": "takknemlighet",
     "english": "gratitude",
     "example": "Han uttrykte stor takknemlighet for hjelpen.",
     "example_english": "He expressed great gratitude for the help.",
@@ -1347,6 +1491,7 @@
   },
   {
     "norsk": "håpløshet",
+    "lemma": "håpløshet",
     "english": "hopelessness",
     "example": "Håpløshet er et symptom på depresjon.",
     "example_english": "Hopelessness is a symptom of depression.",
@@ -1354,9 +1499,9 @@
     "category": "emotions",
     "part": "noun"
   },
-
   {
     "norsk": "å slå to fluer i en smekk",
+    "lemma": "å slå to fluer i en smekk",
     "english": "to kill two birds with one stone",
     "example": "Jeg handlet og besøkte vennen — jeg slo to fluer i en smekk.",
     "example_english": "I did the shopping and visited my friend — I killed two birds with one stone.",
@@ -1366,6 +1511,7 @@
   },
   {
     "norsk": "å ha hendene fulle",
+    "lemma": "å ha hendene fulle",
     "english": "to have one's hands full",
     "example": "Med tre barn har hun hendene fulle.",
     "example_english": "With three children she has her hands full.",
@@ -1375,6 +1521,7 @@
   },
   {
     "norsk": "å sette foten ned",
+    "lemma": "å sette foten ned",
     "english": "to put one's foot down",
     "example": "Faren satte foten ned da sønnen ville slutte på skolen.",
     "example_english": "The father put his foot down when his son wanted to drop out of school.",
@@ -1384,6 +1531,7 @@
   },
   {
     "norsk": "å ta seg vann over hodet",
+    "lemma": "å ta seg vann over hodet",
     "english": "to bite off more than one can chew / to get in over one's head",
     "example": "Han tok seg vann over hodet med det prosjektet.",
     "example_english": "He bit off more than he could chew with that project.",
@@ -1393,6 +1541,7 @@
   },
   {
     "norsk": "å gå som katten rundt den varme grøten",
+    "lemma": "å gå som katten rundt den varme grøten",
     "english": "to beat around the bush",
     "example": "Slutt å gå som katten rundt den varme grøten — si hva du mener!",
     "example_english": "Stop beating around the bush — say what you mean!",
@@ -1402,6 +1551,7 @@
   },
   {
     "norsk": "å ha is i magen",
+    "lemma": "å ha is i magen",
     "english": "to keep cool / to keep one's nerve",
     "example": "I kriser er det viktig å ha is i magen.",
     "example_english": "In crises it is important to keep your nerve.",
@@ -1411,6 +1561,7 @@
   },
   {
     "norsk": "å ta saken i egne hender",
+    "lemma": "å ta saken i egne hender",
     "english": "to take matters into one's own hands",
     "example": "Når ingen andre hjalp, tok hun saken i egne hender.",
     "example_english": "When nobody else helped, she took matters into her own hands.",
@@ -1420,6 +1571,7 @@
   },
   {
     "norsk": "å bite i det sure eplet",
+    "lemma": "å bite i det sure eplet",
     "english": "to bite the bullet",
     "example": "Til slutt beit han i det sure eplet.",
     "example_english": "In the end he bit the bullet.",
@@ -1429,6 +1581,7 @@
   },
   {
     "norsk": "det er ikke alltid gull det som glimrer",
+    "lemma": "det er ikke alltid gull det som glimrer",
     "english": "all that glitters is not gold",
     "example": "Det er ikke alltid gull det som glimrer — les kontrakten nøye.",
     "example_english": "All that glitters is not gold — read the contract carefully.",
@@ -1438,6 +1591,7 @@
   },
   {
     "norsk": "å kjøre seg fast",
+    "lemma": "å kjøre seg fast",
     "english": "to get stuck / to hit a dead end",
     "example": "Diskusjonen kjørte seg fast.",
     "example_english": "The discussion hit a dead end.",
@@ -1447,6 +1601,7 @@
   },
   {
     "norsk": "å brenne alle broer",
+    "lemma": "å brenne alle broer",
     "english": "to burn all bridges",
     "example": "Husk at du ikke må brenne alle broer.",
     "example_english": "Remember not to burn all your bridges.",
@@ -1456,6 +1611,7 @@
   },
   {
     "norsk": "å ha noe på hjertet",
+    "lemma": "å ha noe på hjertet",
     "english": "to have something on one's mind",
     "example": "Det virker som du har noe på hjertet.",
     "example_english": "It seems like you have something on your mind.",
@@ -1465,6 +1621,7 @@
   },
   {
     "norsk": "å stikke fingeren i jorda",
+    "lemma": "å stikke fingeren i jorda",
     "english": "to test the waters / to get a feel for something",
     "example": "La oss stikke fingeren i jorda før vi bestemmer oss.",
     "example_english": "Let's test the waters before we decide.",
@@ -1474,6 +1631,7 @@
   },
   {
     "norsk": "å legge kortene på bordet",
+    "lemma": "å legge kortene på bordet",
     "english": "to lay one's cards on the table",
     "example": "Det er på tide å legge kortene på bordet.",
     "example_english": "It is time to lay our cards on the table.",
@@ -1483,6 +1641,7 @@
   },
   {
     "norsk": "å ta tyren ved hornene",
+    "lemma": "å ta tyren ved hornene",
     "english": "to take the bull by the horns",
     "example": "Du er nødt til å ta tyren ved hornene.",
     "example_english": "You need to take the bull by the horns.",
@@ -1492,6 +1651,7 @@
   },
   {
     "norsk": "å komme til kort",
+    "lemma": "å komme til kort",
     "english": "to fall short / to be inadequate",
     "example": "Planen kom til kort i møte med virkeligheten.",
     "example_english": "The plan fell short when faced with reality.",
@@ -1501,6 +1661,7 @@
   },
   {
     "norsk": "å holde masken",
+    "lemma": "å holde masken",
     "english": "to keep up appearances / to keep a straight face",
     "example": "Det var vanskelig å holde masken.",
     "example_english": "It was hard to keep a straight face.",
@@ -1510,6 +1671,7 @@
   },
   {
     "norsk": "å sove på det",
+    "lemma": "å sove på det",
     "english": "to sleep on it",
     "example": "Det er et vanskelig valg — sov på det.",
     "example_english": "It is a difficult choice — sleep on it.",
@@ -1519,6 +1681,7 @@
   },
   {
     "norsk": "å ha bein i nesa",
+    "lemma": "å ha bein i nesa",
     "english": "to have backbone / to be assertive",
     "example": "Du må ha bein i nesa for å lykkes der.",
     "example_english": "You need to have backbone to succeed there.",
@@ -1528,6 +1691,7 @@
   },
   {
     "norsk": "å se seg selv i speilet",
+    "lemma": "å se seg selv i speilet",
     "english": "to look at oneself in the mirror / to self-reflect",
     "example": "Før du kritiserer andre, se deg selv i speilet.",
     "example_english": "Before criticising others, look at yourself in the mirror.",
@@ -1537,6 +1701,7 @@
   },
   {
     "norsk": "å snakke rett fra leveren",
+    "lemma": "å snakke rett fra leveren",
     "english": "to speak one's mind / to speak frankly",
     "example": "Jeg snakker rett fra leveren: planen er dårlig.",
     "example_english": "I'm speaking frankly: the plan is bad.",
@@ -1546,6 +1711,7 @@
   },
   {
     "norsk": "å male fanden på veggen",
+    "lemma": "å male fanden på veggen",
     "english": "to paint a gloomy picture / to imagine the worst",
     "example": "Ikke mal fanden på veggen — det ordner seg.",
     "example_english": "Don't imagine the worst — it will work itself out.",
@@ -1555,6 +1721,7 @@
   },
   {
     "norsk": "å gå rundt grøten",
+    "lemma": "å gå rundt grøten",
     "english": "to avoid the issue / to talk around something",
     "example": "Slutt å gå rundt grøten og si det du tenker.",
     "example_english": "Stop avoiding the issue and say what you think.",
@@ -1564,6 +1731,7 @@
   },
   {
     "norsk": "å stå på egne ben",
+    "lemma": "å stå på egne ben",
     "english": "to stand on one's own two feet",
     "example": "Han lærte tidlig å stå på egne ben.",
     "example_english": "He learned early to stand on his own two feet.",
@@ -1573,6 +1741,7 @@
   },
   {
     "norsk": "å snu kappen etter vinden",
+    "lemma": "å snu kappen etter vinden",
     "english": "to turn one's coat / to change sides with the wind",
     "example": "En politiker som snur kappen etter vinden mister tilliten.",
     "example_english": "A politician who changes with the wind loses trust.",
@@ -1580,9 +1749,9 @@
     "category": "idioms",
     "part": "phrase"
   },
-
   {
     "norsk": "en epoke",
+    "lemma": "epoke",
     "english": "an era / an epoch",
     "example": "Vikingtiden er en fascinerende epoke.",
     "example_english": "The Viking Age is a fascinating era.",
@@ -1592,6 +1761,7 @@
   },
   {
     "norsk": "en sivilisasjon",
+    "lemma": "sivilisasjon",
     "english": "a civilisation",
     "example": "Den romerske sivilisasjonen varte i mange hundre år.",
     "example_english": "Roman civilisation lasted for many hundreds of years.",
@@ -1601,6 +1771,7 @@
   },
   {
     "norsk": "et imperium",
+    "lemma": "imperium",
     "english": "an empire",
     "example": "Det britiske imperiet var en gang verdens største.",
     "example_english": "The British Empire was once the world's largest.",
@@ -1610,6 +1781,7 @@
   },
   {
     "norsk": "en revolusjon",
+    "lemma": "revolusjon",
     "english": "a revolution",
     "example": "Den franske revolusjonen forandret Europa.",
     "example_english": "The French Revolution changed Europe.",
@@ -1619,6 +1791,7 @@
   },
   {
     "norsk": "kolonisering",
+    "lemma": "kolonisering",
     "english": "colonisation",
     "example": "Kolonisering hadde store konsekvenser for urfolk.",
     "example_english": "Colonisation had major consequences for indigenous peoples.",
@@ -1628,6 +1801,7 @@
   },
   {
     "norsk": "en primærkilde",
+    "lemma": "primærkilde",
     "english": "a primary source",
     "example": "Historikere bruker primærkilder som brev og dagbøker.",
     "example_english": "Historians use primary sources such as letters and diaries.",
@@ -1637,6 +1811,7 @@
   },
   {
     "norsk": "et arkeologi",
+    "lemma": "arkeologi",
     "english": "archaeology",
     "example": "Arkeologi avdekker fortiden gjennom utgravinger.",
     "example_english": "Archaeology uncovers the past through excavations.",
@@ -1646,6 +1821,7 @@
   },
   {
     "norsk": "en arv",
+    "lemma": "arv",
     "english": "a legacy / heritage",
     "example": "Industrialiseringen etterlot en varig arv.",
     "example_english": "Industrialisation left a lasting legacy.",
@@ -1655,6 +1831,7 @@
   },
   {
     "norsk": "en krig",
+    "lemma": "krig",
     "english": "a war",
     "example": "Den andre verdenskrigen tok millioner av liv.",
     "example_english": "The Second World War took millions of lives.",
@@ -1664,6 +1841,7 @@
   },
   {
     "norsk": "okkupasjon",
+    "lemma": "okkupasjon",
     "english": "occupation (of a country)",
     "example": "Norge var under tysk okkupasjon 1940–45.",
     "example_english": "Norway was under German occupation 1940–45.",
@@ -1673,6 +1851,7 @@
   },
   {
     "norsk": "en frigjøring",
+    "lemma": "frigjøring",
     "english": "a liberation",
     "example": "8. mai markerer frigjøringen av Norge.",
     "example_english": "8 May marks the liberation of Norway.",
@@ -1682,6 +1861,7 @@
   },
   {
     "norsk": "union",
+    "lemma": "union",
     "english": "a union",
     "example": "Sverige og Norge var i union mellom 1814 og 1905.",
     "example_english": "Sweden and Norway were in a union between 1814 and 1905.",
@@ -1691,6 +1871,7 @@
   },
   {
     "norsk": "migrasjon",
+    "lemma": "migrasjon",
     "english": "migration",
     "example": "Migrasjon har formet moderne nasjoner.",
     "example_english": "Migration has shaped modern nations.",
@@ -1700,6 +1881,7 @@
   },
   {
     "norsk": "et monument",
+    "lemma": "monument",
     "english": "a monument",
     "example": "Monumentet ble reist til minne om krigens ofre.",
     "example_english": "The monument was erected in memory of the war's victims.",
@@ -1709,6 +1891,7 @@
   },
   {
     "norsk": "nasjonalisme",
+    "lemma": "nasjonalisme",
     "english": "nationalism",
     "example": "Nasjonalisme var en sterk kraft på 1800-tallet.",
     "example_english": "Nationalism was a powerful force in the 19th century.",
@@ -1718,6 +1901,7 @@
   },
   {
     "norsk": "historiografi",
+    "lemma": "historiografi",
     "english": "historiography",
     "example": "Historiografi handler om hvordan historien skrives.",
     "example_english": "Historiography concerns how history is written.",
@@ -1727,6 +1911,7 @@
   },
   {
     "norsk": "en fredsavtale",
+    "lemma": "fredsavtale",
     "english": "a peace agreement",
     "example": "Fredsavtalen ble undertegnet i Paris.",
     "example_english": "The peace agreement was signed in Paris.",
@@ -1736,6 +1921,7 @@
   },
   {
     "norsk": "en grunnlegging",
+    "lemma": "grunnlegging",
     "english": "a founding / an establishment",
     "example": "Grunnleggingen av Oslo skjedde på 1000-tallet.",
     "example_english": "The founding of Oslo took place in the 11th century.",
@@ -1745,6 +1931,7 @@
   },
   {
     "norsk": "å tolke fortiden",
+    "lemma": "å tolke fortiden",
     "english": "to interpret the past",
     "example": "Historikere tolker fortiden ut fra nye perspektiver.",
     "example_english": "Historians interpret the past from new perspectives.",
@@ -1754,6 +1941,7 @@
   },
   {
     "norsk": "en kilde",
+    "lemma": "kilde",
     "english": "a (historical) source",
     "example": "Sagalitteraturen er en viktig kilde til vikingtiden.",
     "example_english": "Saga literature is an important source for the Viking Age.",
@@ -1763,6 +1951,7 @@
   },
   {
     "norsk": "reformasjonen",
+    "lemma": "reformasjonen",
     "english": "the Reformation",
     "example": "Reformasjonen endret religiøst liv i Europa.",
     "example_english": "The Reformation changed religious life in Europe.",
@@ -1772,6 +1961,7 @@
   },
   {
     "norsk": "industrialisering",
+    "lemma": "industrialisering",
     "english": "industrialisation",
     "example": "Industrialisering forandret samfunnsstrukturen.",
     "example_english": "Industrialisation changed the structure of society.",
@@ -1781,6 +1971,7 @@
   },
   {
     "norsk": "opplysningstiden",
+    "lemma": "opplysningstiden",
     "english": "the Enlightenment",
     "example": "Opplysningstiden fremmet fornuft og vitenskap.",
     "example_english": "The Enlightenment promoted reason and science.",
@@ -1790,6 +1981,7 @@
   },
   {
     "norsk": "en tidslinje",
+    "lemma": "tidslinje",
     "english": "a timeline",
     "example": "Læreren tegnet en tidslinje over norsk historie.",
     "example_english": "The teacher drew a timeline of Norwegian history.",
@@ -1799,6 +1991,7 @@
   },
   {
     "norsk": "et genosid",
+    "lemma": "genosid",
     "english": "genocide",
     "example": "Folkemord er et av historiens største forbrytelser.",
     "example_english": "Genocide is one of history's greatest crimes.",
@@ -1806,9 +1999,9 @@
     "category": "history",
     "part": "noun"
   },
-
   {
     "norsk": "en domstol",
+    "lemma": "domstol",
     "english": "a court (of law)",
     "example": "Saken ble ført for domstolen.",
     "example_english": "The case was brought before the court.",
@@ -1818,6 +2011,7 @@
   },
   {
     "norsk": "en dommer",
+    "lemma": "dommer",
     "english": "a judge",
     "example": "Dommeren leste opp dommen.",
     "example_english": "The judge read out the verdict.",
@@ -1827,6 +2021,7 @@
   },
   {
     "norsk": "en advokat",
+    "lemma": "advokat",
     "english": "a lawyer / an attorney",
     "example": "Advokaten forsvarte klienten sin.",
     "example_english": "The lawyer defended their client.",
@@ -1836,6 +2031,7 @@
   },
   {
     "norsk": "et lovbrudd",
+    "lemma": "lovbrudd",
     "english": "a criminal offence",
     "example": "Tyveriet er et lovbrudd.",
     "example_english": "The theft is a criminal offence.",
@@ -1845,6 +2041,7 @@
   },
   {
     "norsk": "en straffesak",
+    "lemma": "straffesak",
     "english": "a criminal case",
     "example": "Straffesaken tiltrakk seg mye medieoppmerksomhet.",
     "example_english": "The criminal case attracted a lot of media attention.",
@@ -1854,6 +2051,7 @@
   },
   {
     "norsk": "å anke",
+    "lemma": "anke",
     "english": "to appeal (a verdict)",
     "example": "De bestemte seg for å anke dommen.",
     "example_english": "They decided to appeal the verdict.",
@@ -1863,6 +2061,7 @@
   },
   {
     "norsk": "en tiltalt",
+    "lemma": "tiltalt",
     "english": "a defendant / an accused",
     "example": "Den tiltalte nektet for alle anklager.",
     "example_english": "The defendant denied all charges.",
@@ -1872,6 +2071,7 @@
   },
   {
     "norsk": "et vitne",
+    "lemma": "vitne",
     "english": "a witness",
     "example": "Vitnet forklarte seg under ed.",
     "example_english": "The witness testified under oath.",
@@ -1881,6 +2081,7 @@
   },
   {
     "norsk": "et bevis",
+    "lemma": "bevis",
     "english": "evidence / proof",
     "example": "Bevisene pekte klart mot tiltalte.",
     "example_english": "The evidence pointed clearly to the defendant.",
@@ -1890,6 +2091,7 @@
   },
   {
     "norsk": "en straff",
+    "lemma": "straff",
     "english": "a punishment / a sentence",
     "example": "Straffen var fem år i fengsel.",
     "example_english": "The punishment was five years in prison.",
@@ -1899,6 +2101,7 @@
   },
   {
     "norsk": "uskyld",
+    "lemma": "uskyld",
     "english": "innocence",
     "example": "Han hevdet sin uskyld.",
     "example_english": "He maintained his innocence.",
@@ -1908,6 +2111,7 @@
   },
   {
     "norsk": "en rettssak",
+    "lemma": "rettssak",
     "english": "a trial / a lawsuit",
     "example": "Rettssaken varte i tre uker.",
     "example_english": "The trial lasted three weeks.",
@@ -1917,6 +2121,7 @@
   },
   {
     "norsk": "en kontrakt",
+    "lemma": "kontrakt",
     "english": "a contract",
     "example": "Les kontrakten nøye før du skriver under.",
     "example_english": "Read the contract carefully before you sign.",
@@ -1926,6 +2131,7 @@
   },
   {
     "norsk": "juridisk",
+    "lemma": "juridisk",
     "english": "legal / juridical",
     "example": "Juridisk rådgivning er dyrt.",
     "example_english": "Legal advice is expensive.",
@@ -1935,6 +2141,7 @@
   },
   {
     "norsk": "menneskerettigheter",
+    "lemma": "menneskerettigheter",
     "english": "human rights",
     "example": "FN beskytter menneskerettighetene globalt.",
     "example_english": "The UN protects human rights globally.",
@@ -1944,6 +2151,7 @@
   },
   {
     "norsk": "en anklagelse",
+    "lemma": "anklagelse",
     "english": "an accusation / a charge",
     "example": "Anklagelsene ble ikke bevist.",
     "example_english": "The accusations were not proven.",
@@ -1953,6 +2161,7 @@
   },
   {
     "norsk": "en rettsstat",
+    "lemma": "rettsstat",
     "english": "a rule-of-law state",
     "example": "En rettsstat kjennetegnes av likebehandling.",
     "example_english": "A rule-of-law state is characterised by equal treatment.",
@@ -1962,6 +2171,7 @@
   },
   {
     "norsk": "erstatning",
+    "lemma": "erstatning",
     "english": "compensation / damages",
     "example": "Offerets familie krevde erstatning.",
     "example_english": "The victim's family demanded compensation.",
@@ -1971,6 +2181,7 @@
   },
   {
     "norsk": "en paragraf",
+    "lemma": "paragraf",
     "english": "a clause / a paragraph (in law)",
     "example": "Paragraf 185 i straffeloven forbyr hatytringer.",
     "example_english": "Paragraph 185 of the Penal Code prohibits hate speech.",
@@ -1980,6 +2191,7 @@
   },
   {
     "norsk": "å tiltale",
+    "lemma": "tiltale",
     "english": "to charge / to indict",
     "example": "Politiet tiltalte ham for grovt tyveri.",
     "example_english": "The police charged him with aggravated theft.",
@@ -1989,6 +2201,7 @@
   },
   {
     "norsk": "rettssikkerhet",
+    "lemma": "rettssikkerhet",
     "english": "legal certainty / due process",
     "example": "Rettssikkerhet er en grunnleggende demokratisk verdi.",
     "example_english": "Legal certainty is a fundamental democratic value.",
@@ -1998,6 +2211,7 @@
   },
   {
     "norsk": "en forsvarer",
+    "lemma": "forsvarer",
     "english": "a defence lawyer",
     "example": "Forsvareren argumenterte kraftig for frifinnelse.",
     "example_english": "The defence lawyer argued strongly for acquittal.",
@@ -2007,6 +2221,7 @@
   },
   {
     "norsk": "en aktor",
+    "lemma": "aktor",
     "english": "a prosecutor",
     "example": "Aktoren la frem sterk bevis.",
     "example_english": "The prosecutor presented strong evidence.",
@@ -2016,6 +2231,7 @@
   },
   {
     "norsk": "å frikjenne",
+    "lemma": "frikjenne",
     "english": "to acquit",
     "example": "Retten frikjente ham for mangel på bevis.",
     "example_english": "The court acquitted him for lack of evidence.",
@@ -2025,6 +2241,7 @@
   },
   {
     "norsk": "en rettspraksis",
+    "lemma": "rettspraksis",
     "english": "case law / legal precedent",
     "example": "Rettspraksis gir veiledning til fremtidige saker.",
     "example_english": "Case law provides guidance for future cases.",
@@ -2032,9 +2249,9 @@
     "category": "law",
     "part": "noun"
   },
-
   {
     "norsk": "et narrativ",
+    "lemma": "narrativ",
     "english": "a narrative",
     "example": "Romanen har et ikke-lineært narrativ.",
     "example_english": "The novel has a non-linear narrative.",
@@ -2044,6 +2261,7 @@
   },
   {
     "norsk": "en protagonist",
+    "lemma": "protagonist",
     "english": "a protagonist",
     "example": "Protagonisten gjennomgår en sterk indre reise.",
     "example_english": "The protagonist undergoes a powerful inner journey.",
@@ -2053,6 +2271,7 @@
   },
   {
     "norsk": "en antagonist",
+    "lemma": "antagonist",
     "english": "an antagonist",
     "example": "Antagonisten representerer det onde i samfunnet.",
     "example_english": "The antagonist represents the evil in society.",
@@ -2062,6 +2281,7 @@
   },
   {
     "norsk": "en forteller",
+    "lemma": "forteller",
     "english": "a narrator",
     "example": "Fortelleren er upålitelig og farger historien.",
     "example_english": "The narrator is unreliable and colours the story.",
@@ -2071,6 +2291,7 @@
   },
   {
     "norsk": "en metafor",
+    "lemma": "metafor",
     "english": "a metaphor",
     "example": "Forfatteren bruker lyset som metafor for håp.",
     "example_english": "The author uses light as a metaphor for hope.",
@@ -2080,6 +2301,7 @@
   },
   {
     "norsk": "et tema",
+    "lemma": "tema",
     "english": "a theme",
     "example": "Et sentralt tema i romanen er frihet.",
     "example_english": "A central theme in the novel is freedom.",
@@ -2089,6 +2311,7 @@
   },
   {
     "norsk": "et symbol",
+    "lemma": "symbol",
     "english": "a symbol",
     "example": "Havet er et symbol på det ukjente.",
     "example_english": "The sea is a symbol of the unknown.",
@@ -2098,6 +2321,7 @@
   },
   {
     "norsk": "å karakterisere",
+    "lemma": "karakterisere",
     "english": "to characterise",
     "example": "Forfatteren karakteriserer helten som ambivalent.",
     "example_english": "The author characterises the hero as ambivalent.",
@@ -2107,6 +2331,7 @@
   },
   {
     "norsk": "en ironi",
+    "lemma": "ironi",
     "english": "irony",
     "example": "Teksten er full av bitter ironi.",
     "example_english": "The text is full of bitter irony.",
@@ -2116,6 +2341,7 @@
   },
   {
     "norsk": "en allegori",
+    "lemma": "allegori",
     "english": "an allegory",
     "example": "Dyrefarden er en allegori over politisk makt.",
     "example_english": "The animal farm is an allegory about political power.",
@@ -2125,6 +2351,7 @@
   },
   {
     "norsk": "et klimaks",
+    "lemma": "klimaks",
     "english": "a climax",
     "example": "Klimakset i handlingen er svært dramatisk.",
     "example_english": "The climax of the plot is very dramatic.",
@@ -2134,6 +2361,7 @@
   },
   {
     "norsk": "en handling",
+    "lemma": "handling",
     "english": "a plot",
     "example": "Handlingen er kompleks med mange tråder.",
     "example_english": "The plot is complex with many threads.",
@@ -2143,6 +2371,7 @@
   },
   {
     "norsk": "en bikarakter",
+    "lemma": "bikarakter",
     "english": "a secondary / minor character",
     "example": "Bikarakterene tilfører dybde til historien.",
     "example_english": "The minor characters add depth to the story.",
@@ -2152,6 +2381,7 @@
   },
   {
     "norsk": "et prolog",
+    "lemma": "prolog",
     "english": "a prologue",
     "example": "Prologens hint om slutten skapte spenning.",
     "example_english": "The prologue's hints about the ending created suspense.",
@@ -2161,6 +2391,7 @@
   },
   {
     "norsk": "et epilog",
+    "lemma": "epilog",
     "english": "an epilogue",
     "example": "I epilogen får vi vite hva som skjer etterpå.",
     "example_english": "In the epilogue we find out what happens afterwards.",
@@ -2170,6 +2401,7 @@
   },
   {
     "norsk": "en dystopi",
+    "lemma": "dystopi",
     "english": "a dystopia",
     "example": "Orwells 1984 er en klassisk dystopi.",
     "example_english": "Orwell's 1984 is a classic dystopia.",
@@ -2179,6 +2411,7 @@
   },
   {
     "norsk": "en utopi",
+    "lemma": "utopi",
     "english": "a utopia",
     "example": "Mores Utopia beskriver et perfekt samfunn.",
     "example_english": "More's Utopia describes a perfect society.",
@@ -2188,6 +2421,7 @@
   },
   {
     "norsk": "et dramaturgi",
+    "lemma": "dramaturgi",
     "english": "dramaturgy",
     "example": "Dramaturgien i stykket er klassisk.",
     "example_english": "The dramaturgy of the play is classical.",
@@ -2197,6 +2431,7 @@
   },
   {
     "norsk": "en lyrikk",
+    "lemma": "lyrikk",
     "english": "lyric poetry / lyricism",
     "example": "Norsk lyrikk fra romantikken er vakker.",
     "example_english": "Norwegian lyric poetry from the Romantic period is beautiful.",
@@ -2206,6 +2441,7 @@
   },
   {
     "norsk": "en prosa",
+    "lemma": "prosa",
     "english": "prose",
     "example": "Hun skriver klar og vakker prosa.",
     "example_english": "She writes clear and beautiful prose.",
@@ -2215,6 +2451,7 @@
   },
   {
     "norsk": "et tilbakeblikk",
+    "lemma": "tilbakeblikk",
     "english": "a flashback",
     "example": "Tilbakeblikk avslører heltens fortid.",
     "example_english": "Flashbacks reveal the hero's past.",
@@ -2224,6 +2461,7 @@
   },
   {
     "norsk": "en litteraturkritikk",
+    "lemma": "litteraturkritikk",
     "english": "literary criticism",
     "example": "Litteraturkritikken hjelper oss å forstå tekster dypere.",
     "example_english": "Literary criticism helps us understand texts more deeply.",
@@ -2233,6 +2471,7 @@
   },
   {
     "norsk": "et stream of consciousness",
+    "lemma": "et stream of consciousness",
     "english": "stream of consciousness",
     "example": "Virginia Woolf er kjent for stream of consciousness.",
     "example_english": "Virginia Woolf is known for stream of consciousness.",
@@ -2242,6 +2481,7 @@
   },
   {
     "norsk": "en sjanger",
+    "lemma": "sjanger",
     "english": "a genre",
     "example": "Hvilken sjanger liker du best?",
     "example_english": "Which genre do you like best?",
@@ -2251,6 +2491,7 @@
   },
   {
     "norsk": "en kanon",
+    "lemma": "kanon",
     "english": "a (literary) canon",
     "example": "Ibsen er en del av den norske litterære kanon.",
     "example_english": "Ibsen is part of the Norwegian literary canon.",
@@ -2258,9 +2499,9 @@
     "category": "literature",
     "part": "noun"
   },
-
   {
     "norsk": "tvetydig",
+    "lemma": "tvetydig",
     "english": "ambiguous",
     "example": "Budskapet i talen var tvetydig.",
     "example_english": "The message in the speech was ambiguous.",
@@ -2270,6 +2511,7 @@
   },
   {
     "norsk": "paradoksal",
+    "lemma": "paradoksal",
     "english": "paradoxical",
     "example": "Det er paradoksalt at rikdom kan skape ensomhet.",
     "example_english": "It is paradoxical that wealth can create loneliness.",
@@ -2279,6 +2521,7 @@
   },
   {
     "norsk": "inngående",
+    "lemma": "inngående",
     "english": "in-depth / thorough",
     "example": "Hun ga en inngående analyse av problemet.",
     "example_english": "She gave an in-depth analysis of the problem.",
@@ -2288,6 +2531,7 @@
   },
   {
     "norsk": "omfattende",
+    "lemma": "omfattende",
     "english": "extensive / comprehensive",
     "example": "Rapporten er svært omfattende.",
     "example_english": "The report is very comprehensive.",
@@ -2297,6 +2541,7 @@
   },
   {
     "norsk": "nyansert",
+    "lemma": "nyansert",
     "english": "nuanced",
     "example": "Et nyansert svar er bedre enn et enkelt ja eller nei.",
     "example_english": "A nuanced answer is better than a simple yes or no.",
@@ -2306,6 +2551,7 @@
   },
   {
     "norsk": "uunngåelig",
+    "lemma": "uunngåelig",
     "english": "inevitable / unavoidable",
     "example": "Konflikten virket uunngåelig.",
     "example_english": "The conflict seemed inevitable.",
@@ -2315,6 +2561,7 @@
   },
   {
     "norsk": "gjennomgripende",
+    "lemma": "gjennomgripende",
     "english": "pervasive / far-reaching",
     "example": "Teknologien har hatt en gjennomgripende innvirkning på samfunnet.",
     "example_english": "Technology has had a pervasive impact on society.",
@@ -2324,6 +2571,7 @@
   },
   {
     "norsk": "subtil",
+    "lemma": "subtil",
     "english": "subtle",
     "example": "Forskjellen mellom de to versjonene er subtil.",
     "example_english": "The difference between the two versions is subtle.",
@@ -2333,6 +2581,7 @@
   },
   {
     "norsk": "ambisiøs",
+    "lemma": "ambisiøs",
     "english": "ambitious",
     "example": "Planen er ambisiøs, men gjennomførbar.",
     "example_english": "The plan is ambitious but feasible.",
@@ -2342,6 +2591,7 @@
   },
   {
     "norsk": "kontroversiell",
+    "lemma": "kontroversiell",
     "english": "controversial",
     "example": "Loven var svært kontroversiell.",
     "example_english": "The law was highly controversial.",
@@ -2351,6 +2601,7 @@
   },
   {
     "norsk": "iøynefallende",
+    "lemma": "iøynefallende",
     "english": "striking / eye-catching",
     "example": "Designet er iøynefallende og moderne.",
     "example_english": "The design is striking and modern.",
@@ -2360,6 +2611,7 @@
   },
   {
     "norsk": "motsigende",
+    "lemma": "motsigende",
     "english": "contradictory",
     "example": "Vitneforklaringene var motsigende.",
     "example_english": "The witness statements were contradictory.",
@@ -2369,6 +2621,7 @@
   },
   {
     "norsk": "kompleks",
+    "lemma": "kompleks",
     "english": "complex",
     "example": "Situasjonen er mer kompleks enn den ser ut.",
     "example_english": "The situation is more complex than it appears.",
@@ -2378,6 +2631,7 @@
   },
   {
     "norsk": "tilbørlig",
+    "lemma": "tilbørlig",
     "english": "appropriate / due",
     "example": "Saken ble behandlet med tilbørlig forsiktighet.",
     "example_english": "The matter was handled with appropriate care.",
@@ -2387,6 +2641,7 @@
   },
   {
     "norsk": "udiskutabel",
+    "lemma": "udiskutabel",
     "english": "indisputable / unquestionable",
     "example": "Bevisene er udiskutable.",
     "example_english": "The evidence is indisputable.",
@@ -2396,6 +2651,7 @@
   },
   {
     "norsk": "vesentlig",
+    "lemma": "vesentlig",
     "english": "essential / significant",
     "example": "Det er en vesentlig forskjell mellom de to begrepene.",
     "example_english": "There is a significant difference between the two concepts.",
@@ -2405,6 +2661,7 @@
   },
   {
     "norsk": "forgjengelig",
+    "lemma": "forgjengelig",
     "english": "transient / perishable",
     "example": "Berømmelse er forgjengelig.",
     "example_english": "Fame is transient.",
@@ -2414,6 +2671,7 @@
   },
   {
     "norsk": "avgrenset",
+    "lemma": "avgrenset",
     "english": "limited / defined / bounded",
     "example": "Prosjektet har et avgrenset omfang.",
     "example_english": "The project has a limited scope.",
@@ -2423,6 +2681,7 @@
   },
   {
     "norsk": "fremtredende",
+    "lemma": "fremtredende",
     "english": "prominent / outstanding",
     "example": "Hun er en fremtredende forsker i sitt felt.",
     "example_english": "She is a prominent researcher in her field.",
@@ -2432,6 +2691,7 @@
   },
   {
     "norsk": "flyktig",
+    "lemma": "flyktig",
     "english": "fleeting / volatile",
     "example": "Lykke kan være flyktig.",
     "example_english": "Happiness can be fleeting.",
@@ -2441,6 +2701,7 @@
   },
   {
     "norsk": "langvarig",
+    "lemma": "langvarig",
     "english": "long-lasting / prolonged",
     "example": "Krigen hadde langvarige konsekvenser.",
     "example_english": "The war had long-lasting consequences.",
@@ -2450,6 +2711,7 @@
   },
   {
     "norsk": "nødtvungen",
+    "lemma": "nødtvungen",
     "english": "forced / reluctant",
     "example": "Det var en nødtvungen beslutning.",
     "example_english": "It was a reluctant decision.",
@@ -2459,6 +2721,7 @@
   },
   {
     "norsk": "ubevisst",
+    "lemma": "ubevisst",
     "english": "unconscious / unaware",
     "example": "Fordomme er ofte ubevisste.",
     "example_english": "Prejudices are often unconscious.",
@@ -2468,6 +2731,7 @@
   },
   {
     "norsk": "grunnleggende",
+    "lemma": "grunnleggende",
     "english": "fundamental / basic",
     "example": "Dette er et grunnleggende prinsipp i demokratiet.",
     "example_english": "This is a fundamental principle of democracy.",
@@ -2477,6 +2741,7 @@
   },
   {
     "norsk": "tilsvarende",
+    "lemma": "tilsvarende",
     "english": "corresponding / equivalent",
     "example": "Det finnes ikke noe tilsvarende begrep på norsk.",
     "example_english": "There is no corresponding term in Norwegian.",
@@ -2484,9 +2749,9 @@
     "category": "advanced-adjectives",
     "part": "adjective"
   },
-
   {
     "norsk": "et argument",
+    "lemma": "argument",
     "english": "an argument",
     "example": "Han la frem et overbevisende argument.",
     "example_english": "He presented a convincing argument.",
@@ -2496,6 +2761,7 @@
   },
   {
     "norsk": "en verdi",
+    "lemma": "verdi",
     "english": "a value",
     "example": "Rettferdighet er en grunnleggende verdi.",
     "example_english": "Justice is a fundamental value.",
@@ -2505,6 +2771,7 @@
   },
   {
     "norsk": "å reflektere",
+    "lemma": "reflektere",
     "english": "to reflect / to contemplate",
     "example": "Vi bør reflektere over konsekvensene.",
     "example_english": "We should reflect on the consequences.",
@@ -2514,6 +2781,7 @@
   },
   {
     "norsk": "et dilemma",
+    "lemma": "dilemma",
     "english": "a dilemma",
     "example": "Han stod overfor et moralsk dilemma.",
     "example_english": "He faced a moral dilemma.",
@@ -2523,6 +2791,7 @@
   },
   {
     "norsk": "en norm",
+    "lemma": "norm",
     "english": "a norm",
     "example": "Sosiale normer varierer mellom kulturer.",
     "example_english": "Social norms vary between cultures.",
@@ -2532,6 +2801,7 @@
   },
   {
     "norsk": "å rettferdiggjøre",
+    "lemma": "rettferdiggjøre",
     "english": "to justify",
     "example": "Kan man rettferdiggjøre løgn for å beskytte noen?",
     "example_english": "Can one justify lying to protect someone?",
@@ -2541,6 +2811,7 @@
   },
   {
     "norsk": "frihet",
+    "lemma": "frihet",
     "english": "freedom / liberty",
     "example": "Frihet og ansvar henger sammen.",
     "example_english": "Freedom and responsibility are connected.",
@@ -2550,6 +2821,7 @@
   },
   {
     "norsk": "etikk",
+    "lemma": "etikk",
     "english": "ethics",
     "example": "Medisinsk etikk stiller vanskelige spørsmål.",
     "example_english": "Medical ethics raises difficult questions.",
@@ -2559,6 +2831,7 @@
   },
   {
     "norsk": "moral",
+    "lemma": "moral",
     "english": "morality / morals",
     "example": "Moral handler om hva som er rett og galt.",
     "example_english": "Morality concerns what is right and wrong.",
@@ -2568,6 +2841,7 @@
   },
   {
     "norsk": "en påstand",
+    "lemma": "påstand",
     "english": "a claim / an assertion",
     "example": "Påstanden ble ikke støttet av bevis.",
     "example_english": "The claim was not supported by evidence.",
@@ -2577,6 +2851,7 @@
   },
   {
     "norsk": "en konsekvens",
+    "lemma": "konsekvens",
     "english": "a consequence",
     "example": "Vi må tenke på de langsiktige konsekvensene.",
     "example_english": "We must think about the long-term consequences.",
@@ -2586,6 +2861,7 @@
   },
   {
     "norsk": "rettferdighet",
+    "lemma": "rettferdighet",
     "english": "justice / fairness",
     "example": "Rettferdighet er et sentralt tema i filosofien.",
     "example_english": "Justice is a central theme in philosophy.",
@@ -2595,6 +2871,7 @@
   },
   {
     "norsk": "en sannhet",
+    "lemma": "sannhet",
     "english": "a truth",
     "example": "Hva er egentlig sannheten?",
     "example_english": "What is truth, really?",
@@ -2604,6 +2881,7 @@
   },
   {
     "norsk": "bevissthet",
+    "lemma": "bevissthet",
     "english": "consciousness / awareness",
     "example": "Bevisstheten er et mysterium for vitenskapen.",
     "example_english": "Consciousness is a mystery for science.",
@@ -2613,6 +2891,7 @@
   },
   {
     "norsk": "en hypotese",
+    "lemma": "hypotese",
     "english": "a hypothesis",
     "example": "Filosofer tester hypoteser gjennom logisk argumentasjon.",
     "example_english": "Philosophers test hypotheses through logical argumentation.",
@@ -2622,6 +2901,7 @@
   },
   {
     "norsk": "å motsi",
+    "lemma": "motsi",
     "english": "to contradict",
     "example": "Handlingene hans motsier ordene hans.",
     "example_english": "His actions contradict his words.",
@@ -2631,6 +2911,7 @@
   },
   {
     "norsk": "subjektiv",
+    "lemma": "subjektiv",
     "english": "subjective",
     "example": "Skjønnhet er subjektiv.",
     "example_english": "Beauty is subjective.",
@@ -2640,6 +2921,7 @@
   },
   {
     "norsk": "objektiv",
+    "lemma": "objektiv",
     "english": "objective",
     "example": "Vi trenger en objektiv vurdering.",
     "example_english": "We need an objective assessment.",
@@ -2649,6 +2931,7 @@
   },
   {
     "norsk": "eksistens",
+    "lemma": "eksistens",
     "english": "existence",
     "example": "Hva er meningen med eksistensen?",
     "example_english": "What is the meaning of existence?",
@@ -2658,6 +2941,7 @@
   },
   {
     "norsk": "en premiss",
+    "lemma": "premiss",
     "english": "a premise",
     "example": "Argumentet bygger på en feil premiss.",
     "example_english": "The argument rests on a false premise.",
@@ -2667,6 +2951,7 @@
   },
   {
     "norsk": "relativisme",
+    "lemma": "relativisme",
     "english": "relativism",
     "example": "Kulturell relativisme hevder at normer er kulturbetingede.",
     "example_english": "Cultural relativism claims that norms are culture-dependent.",
@@ -2676,6 +2961,7 @@
   },
   {
     "norsk": "å drøfte",
+    "lemma": "drøfte",
     "english": "to discuss / to examine critically",
     "example": "Vi drøftet spørsmålet fra flere vinkler.",
     "example_english": "We examined the question from several angles.",
@@ -2685,6 +2971,7 @@
   },
   {
     "norsk": "en ideologi",
+    "lemma": "ideologi",
     "english": "an ideology",
     "example": "Ideologien påvirker hvordan vi ser på verden.",
     "example_english": "Ideology influences how we view the world.",
@@ -2694,6 +2981,7 @@
   },
   {
     "norsk": "abstrakt tenkning",
+    "lemma": "abstrakt tenkning",
     "english": "abstract thinking",
     "example": "Filosofi krever evne til abstrakt tenkning.",
     "example_english": "Philosophy requires the ability for abstract thinking.",
@@ -2703,6 +2991,7 @@
   },
   {
     "norsk": "en kontradiksjon",
+    "lemma": "kontradiksjon",
     "english": "a contradiction",
     "example": "Det er en indre kontradiksjon i argumentet.",
     "example_english": "There is an internal contradiction in the argument.",
@@ -2710,9 +2999,9 @@
     "category": "philosophy",
     "part": "noun"
   },
-
   {
     "norsk": "en diagnose",
+    "lemma": "diagnose",
     "english": "a diagnosis",
     "example": "Legen stilte en diagnose etter grundig undersøkelse.",
     "example_english": "The doctor made a diagnosis after a thorough examination.",
@@ -2722,6 +3011,7 @@
   },
   {
     "norsk": "en behandling",
+    "lemma": "behandling",
     "english": "a treatment",
     "example": "Behandlingen varte i seks måneder.",
     "example_english": "The treatment lasted six months.",
@@ -2731,6 +3021,7 @@
   },
   {
     "norsk": "forebygging",
+    "lemma": "forebygging",
     "english": "prevention",
     "example": "Forebygging er bedre enn behandling.",
     "example_english": "Prevention is better than treatment.",
@@ -2740,6 +3031,7 @@
   },
   {
     "norsk": "kronisk",
+    "lemma": "kronisk",
     "english": "chronic",
     "example": "Hun lever med kroniske ryggsmerter.",
     "example_english": "She lives with chronic back pain.",
@@ -2749,6 +3041,7 @@
   },
   {
     "norsk": "folkehelse",
+    "lemma": "folkehelse",
     "english": "public health",
     "example": "Folkehelsen er bedret de siste tiårene.",
     "example_english": "Public health has improved over recent decades.",
@@ -2758,6 +3051,7 @@
   },
   {
     "norsk": "en pasient",
+    "lemma": "pasient",
     "english": "a patient",
     "example": "Pasienten ble skrevet ut etter tre dager.",
     "example_english": "The patient was discharged after three days.",
@@ -2767,6 +3061,7 @@
   },
   {
     "norsk": "et symptom",
+    "lemma": "symptom",
     "english": "a symptom",
     "example": "Feber er et vanlig symptom på infeksjon.",
     "example_english": "Fever is a common symptom of infection.",
@@ -2776,6 +3071,7 @@
   },
   {
     "norsk": "en resept",
+    "lemma": "resept",
     "english": "a prescription",
     "example": "Du trenger resept for å kjøpe den medisinen.",
     "example_english": "You need a prescription to buy that medicine.",
@@ -2785,6 +3081,7 @@
   },
   {
     "norsk": "et sykehus",
+    "lemma": "sykehus",
     "english": "a hospital",
     "example": "Han ble innlagt på sykehus.",
     "example_english": "He was admitted to hospital.",
@@ -2794,6 +3091,7 @@
   },
   {
     "norsk": "en allergi",
+    "lemma": "allergi",
     "english": "an allergy",
     "example": "Hun har allergi mot nøtter.",
     "example_english": "She has an allergy to nuts.",
@@ -2803,6 +3101,7 @@
   },
   {
     "norsk": "å undersøke",
+    "lemma": "undersøke",
     "english": "to examine / to investigate",
     "example": "Legen undersøkte pasienten grundig.",
     "example_english": "The doctor examined the patient thoroughly.",
@@ -2812,6 +3111,7 @@
   },
   {
     "norsk": "en bivirkning",
+    "lemma": "bivirkning",
     "english": "a side effect",
     "example": "Medisinen kan ha bivirkninger.",
     "example_english": "The medicine can have side effects.",
@@ -2821,6 +3121,7 @@
   },
   {
     "norsk": "en vaksine",
+    "lemma": "vaksine",
     "english": "a vaccine",
     "example": "Vaksinen beskytter mot influensa.",
     "example_english": "The vaccine protects against influenza.",
@@ -2830,6 +3131,7 @@
   },
   {
     "norsk": "immunsystemet",
+    "lemma": "immunsystemet",
     "english": "the immune system",
     "example": "Et sterkt immunsystem bekjemper infeksjoner.",
     "example_english": "A strong immune system fights infections.",
@@ -2839,6 +3141,7 @@
   },
   {
     "norsk": "en operasjon",
+    "lemma": "operasjon",
     "english": "an operation / surgery",
     "example": "Operasjonen var vellykket.",
     "example_english": "The operation was successful.",
@@ -2848,6 +3151,7 @@
   },
   {
     "norsk": "smittsom",
+    "lemma": "smittsom",
     "english": "contagious / infectious",
     "example": "Sykdommen er svært smittsom.",
     "example_english": "The disease is highly contagious.",
@@ -2857,6 +3161,7 @@
   },
   {
     "norsk": "en epidemi",
+    "lemma": "epidemi",
     "english": "an epidemic",
     "example": "En epidemi av influensa spredte seg raskt.",
     "example_english": "An epidemic of influenza spread quickly.",
@@ -2866,6 +3171,7 @@
   },
   {
     "norsk": "rehabilitering",
+    "lemma": "rehabilitering",
     "english": "rehabilitation",
     "example": "Rehabilitering etter hjerneslag tar tid.",
     "example_english": "Rehabilitation after a stroke takes time.",
@@ -2875,6 +3181,7 @@
   },
   {
     "norsk": "en klinisk studie",
+    "lemma": "en klinisk studie",
     "english": "a clinical trial",
     "example": "Legemidlet gjennomgår kliniske studier.",
     "example_english": "The drug is undergoing clinical trials.",
@@ -2884,6 +3191,7 @@
   },
   {
     "norsk": "en infeksjon",
+    "lemma": "infeksjon",
     "english": "an infection",
     "example": "Antibiotika brukes mot bakterielle infeksjoner.",
     "example_english": "Antibiotics are used against bacterial infections.",
@@ -2893,6 +3201,7 @@
   },
   {
     "norsk": "blodtrykk",
+    "lemma": "blodtrykk",
     "english": "blood pressure",
     "example": "Høyt blodtrykk er en risikofaktor for hjertesykdom.",
     "example_english": "High blood pressure is a risk factor for heart disease.",
@@ -2902,6 +3211,7 @@
   },
   {
     "norsk": "en oversikt",
+    "lemma": "oversikt",
     "english": "an overview / a survey",
     "example": "Legen ga en oversikt over behandlingsalternativene.",
     "example_english": "The doctor gave an overview of the treatment options.",
@@ -2911,6 +3221,7 @@
   },
   {
     "norsk": "å diagnostisere",
+    "lemma": "diagnostisere",
     "english": "to diagnose",
     "example": "Han ble diagnostisert med diabetes.",
     "example_english": "He was diagnosed with diabetes.",
@@ -2920,6 +3231,7 @@
   },
   {
     "norsk": "et legemiddel",
+    "lemma": "legemiddel",
     "english": "a medicine / a drug / a pharmaceutical",
     "example": "Nye legemidler godkjennes av legemiddelverket.",
     "example_english": "New drugs are approved by the medicines authority.",
@@ -2929,6 +3241,7 @@
   },
   {
     "norsk": "palliativ omsorg",
+    "lemma": "palliativ omsorg",
     "english": "palliative care",
     "example": "Palliativ omsorg fokuserer på livskvalitet.",
     "example_english": "Palliative care focuses on quality of life.",
@@ -2936,9 +3249,9 @@
     "category": "medicine",
     "part": "phrase"
   },
-
   {
     "norsk": "bevissthet",
+    "lemma": "bevissthet",
     "english": "consciousness / awareness",
     "example": "Psykologer studerer bevissthetens grenser.",
     "example_english": "Psychologists study the limits of consciousness.",
@@ -2948,6 +3261,7 @@
   },
   {
     "norsk": "et traume",
+    "lemma": "traume",
     "english": "a trauma",
     "example": "Traumet satt dypt etter ulykken.",
     "example_english": "The trauma ran deep after the accident.",
@@ -2957,6 +3271,7 @@
   },
   {
     "norsk": "å bearbeide",
+    "lemma": "bearbeide",
     "english": "to process (emotionally)",
     "example": "Det tok tid å bearbeide sorgen.",
     "example_english": "It took time to process the grief.",
@@ -2966,6 +3281,7 @@
   },
   {
     "norsk": "en terapeut",
+    "lemma": "terapeut",
     "english": "a therapist",
     "example": "Han gikk til terapeut for å få hjelp.",
     "example_english": "He went to a therapist to get help.",
@@ -2975,6 +3291,7 @@
   },
   {
     "norsk": "kognitiv",
+    "lemma": "kognitiv",
     "english": "cognitive",
     "example": "Kognitiv terapi hjelper ved angst og depresjon.",
     "example_english": "Cognitive therapy helps with anxiety and depression.",
@@ -2984,6 +3301,7 @@
   },
   {
     "norsk": "atferd",
+    "lemma": "atferd",
     "english": "behaviour",
     "example": "Atferden endret seg etter behandlingen.",
     "example_english": "The behaviour changed after the treatment.",
@@ -2993,6 +3311,7 @@
   },
   {
     "norsk": "en reaksjon",
+    "lemma": "reaksjon",
     "english": "a reaction / a response",
     "example": "Reaksjonen på nyheten var sterk.",
     "example_english": "The reaction to the news was strong.",
@@ -3002,6 +3321,7 @@
   },
   {
     "norsk": "angst",
+    "lemma": "angst",
     "english": "anxiety",
     "example": "Angst kan hindre mennesker i å fungere normalt.",
     "example_english": "Anxiety can prevent people from functioning normally.",
@@ -3011,6 +3331,7 @@
   },
   {
     "norsk": "depresjon",
+    "lemma": "depresjon",
     "english": "depression",
     "example": "Depresjon er en av de vanligste psykiske lidelsene.",
     "example_english": "Depression is one of the most common mental disorders.",
@@ -3020,6 +3341,7 @@
   },
   {
     "norsk": "selvbilde",
+    "lemma": "selvbilde",
     "english": "self-image",
     "example": "Et positivt selvbilde er viktig for trivsel.",
     "example_english": "A positive self-image is important for wellbeing.",
@@ -3029,6 +3351,7 @@
   },
   {
     "norsk": "en mekanisme",
+    "lemma": "mekanisme",
     "english": "a mechanism",
     "example": "Forsvarsmekanismer beskytter oss mot smerte.",
     "example_english": "Defence mechanisms protect us from pain.",
@@ -3038,6 +3361,7 @@
   },
   {
     "norsk": "motivasjon",
+    "lemma": "motivasjon",
     "english": "motivation",
     "example": "Motivasjon er nøkkelen til læring.",
     "example_english": "Motivation is the key to learning.",
@@ -3047,6 +3371,7 @@
   },
   {
     "norsk": "tilknytning",
+    "lemma": "tilknytning",
     "english": "attachment / bonding",
     "example": "Tidlig tilknytning mellom barn og foreldre er avgjørende.",
     "example_english": "Early attachment between child and parent is crucial.",
@@ -3056,6 +3381,7 @@
   },
   {
     "norsk": "en personlighet",
+    "lemma": "personlighet",
     "english": "a personality",
     "example": "Personligheten formes av både arv og miljø.",
     "example_english": "Personality is shaped by both heredity and environment.",
@@ -3065,6 +3391,7 @@
   },
   {
     "norsk": "hukommelse",
+    "lemma": "hukommelse",
     "english": "memory",
     "example": "Hukommelsen svekkes ofte med alderen.",
     "example_english": "Memory often weakens with age.",
@@ -3074,6 +3401,7 @@
   },
   {
     "norsk": "en projeksjon",
+    "lemma": "projeksjon",
     "english": "a projection",
     "example": "Det er en projeksjon å tillegge andre dine egne følelser.",
     "example_english": "It is a projection to attribute your own feelings to others.",
@@ -3083,6 +3411,7 @@
   },
   {
     "norsk": "stress",
+    "lemma": "stress",
     "english": "stress",
     "example": "Langvarig stress kan føre til utbrenthet.",
     "example_english": "Prolonged stress can lead to burnout.",
@@ -3092,6 +3421,7 @@
   },
   {
     "norsk": "empati",
+    "lemma": "empati",
     "english": "empathy",
     "example": "Empati er evnen til å sette seg inn i andres situasjon.",
     "example_english": "Empathy is the ability to put yourself in others' shoes.",
@@ -3101,6 +3431,7 @@
   },
   {
     "norsk": "resiliens",
+    "lemma": "resiliens",
     "english": "resilience",
     "example": "Resiliens hjelper oss å komme oss etter motgang.",
     "example_english": "Resilience helps us recover from adversity.",
@@ -3110,6 +3441,7 @@
   },
   {
     "norsk": "det ubevisste",
+    "lemma": "det ubevisste",
     "english": "the unconscious",
     "example": "Freud utviklet teorien om det ubevisste.",
     "example_english": "Freud developed the theory of the unconscious.",
@@ -3119,6 +3451,7 @@
   },
   {
     "norsk": "en lidelse",
+    "lemma": "lidelse",
     "english": "a disorder / an ailment",
     "example": "OCD er en angstlidelse.",
     "example_english": "OCD is an anxiety disorder.",
@@ -3128,6 +3461,7 @@
   },
   {
     "norsk": "å fordøye",
+    "lemma": "fordøye",
     "english": "to digest / to come to terms with",
     "example": "Det var vanskelig å fordøye det hun hadde sagt.",
     "example_english": "It was hard to come to terms with what she had said.",
@@ -3137,6 +3471,7 @@
   },
   {
     "norsk": "identitet",
+    "lemma": "identitet",
     "english": "identity",
     "example": "Ungdomstid er preget av søken etter identitet.",
     "example_english": "Adolescence is marked by a search for identity.",
@@ -3146,6 +3481,7 @@
   },
   {
     "norsk": "et mønster",
+    "lemma": "mønster",
     "english": "a pattern",
     "example": "Terapeuten hjelper deg å se atferdsmønstre.",
     "example_english": "The therapist helps you see behavioural patterns.",
@@ -3155,6 +3491,7 @@
   },
   {
     "norsk": "selvrefleksjon",
+    "lemma": "selvrefleksjon",
     "english": "self-reflection",
     "example": "Selvrefleksjon er viktig for personlig vekst.",
     "example_english": "Self-reflection is important for personal growth.",
@@ -3162,9 +3499,9 @@
     "category": "psychology",
     "part": "noun"
   },
-
   {
     "norsk": "en strategi",
+    "lemma": "strategi",
     "english": "a strategy",
     "example": "Selskapet trenger en ny forretningsstrategi.",
     "example_english": "The company needs a new business strategy.",
@@ -3174,6 +3511,7 @@
   },
   {
     "norsk": "å forhandle",
+    "lemma": "forhandle",
     "english": "to negotiate",
     "example": "De forhandlet om betingelsene i kontrakten.",
     "example_english": "They negotiated the terms of the contract.",
@@ -3183,6 +3521,7 @@
   },
   {
     "norsk": "en bedrift",
+    "lemma": "bedrift",
     "english": "a company / a business",
     "example": "Bedriften ble grunnlagt i 1995.",
     "example_english": "The company was founded in 1995.",
@@ -3192,6 +3531,7 @@
   },
   {
     "norsk": "et møte",
+    "lemma": "møte",
     "english": "a meeting",
     "example": "Vi har styremøte på fredag.",
     "example_english": "We have a board meeting on Friday.",
@@ -3201,6 +3541,7 @@
   },
   {
     "norsk": "en leder",
+    "lemma": "leder",
     "english": "a manager / a leader",
     "example": "En god leder motiverer de ansatte.",
     "example_english": "A good leader motivates the employees.",
@@ -3210,6 +3551,7 @@
   },
   {
     "norsk": "et prosjekt",
+    "lemma": "prosjekt",
     "english": "a project",
     "example": "Prosjektet ble levert i tide.",
     "example_english": "The project was delivered on time.",
@@ -3219,6 +3561,7 @@
   },
   {
     "norsk": "en avtale",
+    "lemma": "avtale",
     "english": "a deal / an agreement",
     "example": "De inngikk en avtale med en ny leverandør.",
     "example_english": "They made a deal with a new supplier.",
@@ -3228,6 +3571,7 @@
   },
   {
     "norsk": "et marked",
+    "lemma": "marked",
     "english": "a market",
     "example": "Selskapet ekspanderer til det asiatiske markedet.",
     "example_english": "The company is expanding into the Asian market.",
@@ -3237,6 +3581,7 @@
   },
   {
     "norsk": "en omsetning",
+    "lemma": "omsetning",
     "english": "revenue / turnover",
     "example": "Omsetningen økte med 20 prosent i fjor.",
     "example_english": "Revenue increased by 20 percent last year.",
@@ -3246,6 +3591,7 @@
   },
   {
     "norsk": "et overskudd",
+    "lemma": "overskudd",
     "english": "a profit / a surplus",
     "example": "Selskapet gikk med overskudd for første gang.",
     "example_english": "The company made a profit for the first time.",
@@ -3255,6 +3601,7 @@
   },
   {
     "norsk": "et underskudd",
+    "lemma": "underskudd",
     "english": "a deficit / a loss",
     "example": "Kvartalet endte med underskudd.",
     "example_english": "The quarter ended with a deficit.",
@@ -3264,6 +3611,7 @@
   },
   {
     "norsk": "en aksjonær",
+    "lemma": "aksjonær",
     "english": "a shareholder",
     "example": "Aksjonærene fikk god avkastning i år.",
     "example_english": "Shareholders got a good return this year.",
@@ -3273,6 +3621,7 @@
   },
   {
     "norsk": "å rekruttere",
+    "lemma": "rekruttere",
     "english": "to recruit",
     "example": "Bedriften rekrutterer nye talenter.",
     "example_english": "The company is recruiting new talent.",
@@ -3282,6 +3631,7 @@
   },
   {
     "norsk": "en leverandør",
+    "lemma": "leverandør",
     "english": "a supplier",
     "example": "Vi byttet til en mer pålitelig leverandør.",
     "example_english": "We switched to a more reliable supplier.",
@@ -3291,6 +3641,7 @@
   },
   {
     "norsk": "markedsføring",
+    "lemma": "markedsføring",
     "english": "marketing",
     "example": "God markedsføring er avgjørende for salg.",
     "example_english": "Good marketing is crucial for sales.",
@@ -3300,6 +3651,7 @@
   },
   {
     "norsk": "en fusjon",
+    "lemma": "fusjon",
     "english": "a merger",
     "example": "De to selskapene gjennomgikk en fusjon.",
     "example_english": "The two companies underwent a merger.",
@@ -3309,6 +3661,7 @@
   },
   {
     "norsk": "å outsource",
+    "lemma": "outsource",
     "english": "to outsource",
     "example": "De valgte å outsource IT-driften.",
     "example_english": "They chose to outsource IT operations.",
@@ -3318,6 +3671,7 @@
   },
   {
     "norsk": "en konkurrent",
+    "lemma": "konkurrent",
     "english": "a competitor",
     "example": "Vi overvåker konkurrentenes priser.",
     "example_english": "We monitor competitors' prices.",
@@ -3327,6 +3681,7 @@
   },
   {
     "norsk": "bærekraft",
+    "lemma": "bærekraft",
     "english": "sustainability",
     "example": "Bærekraft er høyt på agendaen for moderne bedrifter.",
     "example_english": "Sustainability is high on the agenda for modern companies.",
@@ -3336,6 +3691,7 @@
   },
   {
     "norsk": "en kunde",
+    "lemma": "kunde",
     "english": "a customer / a client",
     "example": "Kunden er alltid i fokus.",
     "example_english": "The customer is always the focus.",
@@ -3345,6 +3701,7 @@
   },
   {
     "norsk": "en portefølje",
+    "lemma": "portefølje",
     "english": "a portfolio",
     "example": "Investeringsporteføljen er godt diversifisert.",
     "example_english": "The investment portfolio is well diversified.",
@@ -3354,6 +3711,7 @@
   },
   {
     "norsk": "et budsjett",
+    "lemma": "budsjett",
     "english": "a budget",
     "example": "Vi holdt oss innenfor budsjettet.",
     "example_english": "We stayed within the budget.",
@@ -3363,6 +3721,7 @@
   },
   {
     "norsk": "å delegere",
+    "lemma": "delegere",
     "english": "to delegate",
     "example": "En god leder vet å delegere oppgaver.",
     "example_english": "A good leader knows how to delegate tasks.",
@@ -3372,6 +3731,7 @@
   },
   {
     "norsk": "en oppstart",
+    "lemma": "oppstart",
     "english": "a startup",
     "example": "Oslo har et voksende oppstartsmiljø.",
     "example_english": "Oslo has a growing startup ecosystem.",
@@ -3381,6 +3741,7 @@
   },
   {
     "norsk": "å skalere",
+    "lemma": "skalere",
     "english": "to scale (a business)",
     "example": "Målet er å skalere virksomheten internasjonalt.",
     "example_english": "The goal is to scale the business internationally.",
@@ -3388,9 +3749,9 @@
     "category": "business",
     "part": "verb"
   },
-
   {
     "norsk": "en tro",
+    "lemma": "tro",
     "english": "a belief / a faith",
     "example": "Religiøs tro gir mange mennesker mening.",
     "example_english": "Religious faith gives many people meaning.",
@@ -3400,6 +3761,7 @@
   },
   {
     "norsk": "et ritual",
+    "lemma": "ritual",
     "english": "a ritual",
     "example": "Ritualene varierer mellom religioner.",
     "example_english": "Rituals vary between religions.",
@@ -3409,6 +3771,7 @@
   },
   {
     "norsk": "å tilbe",
+    "lemma": "tilbe",
     "english": "to worship",
     "example": "De tilber en gud de kaller skaperen.",
     "example_english": "They worship a god they call the creator.",
@@ -3418,6 +3781,7 @@
   },
   {
     "norsk": "en kirke",
+    "lemma": "kirke",
     "english": "a church",
     "example": "Den norske kirke er en luthersk kirke.",
     "example_english": "The Church of Norway is a Lutheran church.",
@@ -3427,6 +3791,7 @@
   },
   {
     "norsk": "en moske",
+    "lemma": "moske",
     "english": "a mosque",
     "example": "Det er flere moskeer i Oslo.",
     "example_english": "There are several mosques in Oslo.",
@@ -3436,6 +3801,7 @@
   },
   {
     "norsk": "hellig",
+    "lemma": "hellig",
     "english": "holy / sacred",
     "example": "Jerusalem er hellig for tre religioner.",
     "example_english": "Jerusalem is holy to three religions.",
@@ -3445,6 +3811,7 @@
   },
   {
     "norsk": "en tradisjon",
+    "lemma": "tradisjon",
     "english": "a tradition",
     "example": "Mange tradisjoner har religiøse røtter.",
     "example_english": "Many traditions have religious roots.",
@@ -3454,6 +3821,7 @@
   },
   {
     "norsk": "en gud",
+    "lemma": "gud",
     "english": "a god",
     "example": "Ulike kulturer har dyrket ulike guder.",
     "example_english": "Different cultures have worshipped different gods.",
@@ -3463,6 +3831,7 @@
   },
   {
     "norsk": "en bønn",
+    "lemma": "bønn",
     "english": "a prayer",
     "example": "Hun ba sin kveldsbønn.",
     "example_english": "She said her evening prayer.",
@@ -3472,6 +3841,7 @@
   },
   {
     "norsk": "en prest",
+    "lemma": "prest",
     "english": "a priest / a minister",
     "example": "Presten holdt en rørende tale.",
     "example_english": "The priest gave a moving speech.",
@@ -3481,6 +3851,7 @@
   },
   {
     "norsk": "sekularisering",
+    "lemma": "sekularisering",
     "english": "secularisation",
     "example": "Sekularisering har økt i Norge de siste tiårene.",
     "example_english": "Secularisation has increased in Norway in recent decades.",
@@ -3490,6 +3861,7 @@
   },
   {
     "norsk": "et tempel",
+    "lemma": "tempel",
     "english": "a temple",
     "example": "Templet ble bygget for tusen år siden.",
     "example_english": "The temple was built a thousand years ago.",
@@ -3499,6 +3871,7 @@
   },
   {
     "norsk": "en pilgrimsreise",
+    "lemma": "pilgrimsreise",
     "english": "a pilgrimage",
     "example": "Pilegrimer reiser til Santiago de Compostela.",
     "example_english": "Pilgrims travel to Santiago de Compostela.",
@@ -3508,6 +3881,7 @@
   },
   {
     "norsk": "å faste",
+    "lemma": "faste",
     "english": "to fast",
     "example": "Muslimer faster i løpet av ramadan.",
     "example_english": "Muslims fast during Ramadan.",
@@ -3517,6 +3891,7 @@
   },
   {
     "norsk": "en profet",
+    "lemma": "profet",
     "english": "a prophet",
     "example": "Moses regnes som en profet i jødedommen.",
     "example_english": "Moses is regarded as a prophet in Judaism.",
@@ -3526,6 +3901,7 @@
   },
   {
     "norsk": "et kloster",
+    "lemma": "kloster",
     "english": "a monastery / a convent",
     "example": "Munker lever i kloster.",
     "example_english": "Monks live in a monastery.",
@@ -3535,6 +3911,7 @@
   },
   {
     "norsk": "synkretisme",
+    "lemma": "synkretisme",
     "english": "syncretism",
     "example": "Synkretisme blander elementer fra ulike religioner.",
     "example_english": "Syncretism blends elements from different religions.",
@@ -3544,6 +3921,7 @@
   },
   {
     "norsk": "en konfesjon",
+    "lemma": "konfesjon",
     "english": "a denomination / a confession",
     "example": "Det finnes mange kristne konfesjoner.",
     "example_english": "There are many Christian denominations.",
@@ -3553,6 +3931,7 @@
   },
   {
     "norsk": "ateisme",
+    "lemma": "ateisme",
     "english": "atheism",
     "example": "Ateisme er utbredt i Skandinavia.",
     "example_english": "Atheism is widespread in Scandinavia.",
@@ -3562,6 +3941,7 @@
   },
   {
     "norsk": "agnostisisme",
+    "lemma": "agnostisisme",
     "english": "agnosticism",
     "example": "Agnostisisme innebærer at man ikke vet om gud finnes.",
     "example_english": "Agnosticism means not knowing whether god exists.",
@@ -3571,6 +3951,7 @@
   },
   {
     "norsk": "en skrift",
+    "lemma": "skrift",
     "english": "a scripture / a text",
     "example": "Bibelen er den kristne hellige skriften.",
     "example_english": "The Bible is the Christian holy scripture.",
@@ -3580,6 +3961,7 @@
   },
   {
     "norsk": "transcendent",
+    "lemma": "transcendent",
     "english": "transcendent",
     "example": "Religiøse opplevelser beskrives ofte som transcendente.",
     "example_english": "Religious experiences are often described as transcendent.",
@@ -3589,6 +3971,7 @@
   },
   {
     "norsk": "en seremoni",
+    "lemma": "seremoni",
     "english": "a ceremony",
     "example": "Bryllupsseremonien ble holdt i kirken.",
     "example_english": "The wedding ceremony was held in the church.",
@@ -3598,6 +3981,7 @@
   },
   {
     "norsk": "et offer",
+    "lemma": "offer",
     "english": "a sacrifice / an offering",
     "example": "Offer var vanlig i mange antikke religioner.",
     "example_english": "Sacrifice was common in many ancient religions.",
@@ -3607,6 +3991,7 @@
   },
   {
     "norsk": "religiøs toleranse",
+    "lemma": "religiøs toleranse",
     "english": "religious tolerance",
     "example": "Religiøs toleranse er en demokratisk verdi.",
     "example_english": "Religious tolerance is a democratic value.",

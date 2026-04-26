@@ -1,10 +1,15 @@
 <script lang="ts">
   import { onMount, untrack } from 'svelte';
   import { browser } from '$app/environment';
+  import { page } from '$app/state';
   import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
   import SpeakButton from '$lib/SpeakButton.svelte';
   import { Button } from 'flowbite-svelte';
   import type { VocabEntry } from '$lib/types';
+  import { saveProgress, loadProgressMap, countDueToday, previewIntervals } from '$lib/progress';
+  import type { FSRSRating, CardProgress } from '$lib/types';
+  import { State } from 'ts-fsrs';
+  import * as m from '$lib/paraglide/messages.js';
 
   interface Props {
     entries: VocabEntry[];
@@ -15,11 +20,24 @@
 
   type Mode = 'noreng' | 'engnor';
   type CardType = 'word' | 'phrase';
+  type DeckMode = 'all' | 'due';
   type DeckItem = { entry: VocabEntry; front: string; back: string };
+
+  // ── 2-D: undo snapshot ──────────────────────────────────────────────────────
+  interface UndoSnapshot {
+    entry: VocabEntry;
+    previousProgress: CardProgress | null; // null = card had never been rated
+    previousMap: Record<string, CardProgress>;
+    previousIndex: number;
+    timer: ReturnType<typeof setInterval>;
+    countdown: number;
+  }
 
   const LS_MODE = 'vocab-flashcard-mode';
   const LS_CARD_TYPE = 'vocab-flashcard-card-type';
   const LS_SHOW_EXAMPLE = 'vocab-flashcard-show-example';
+  const LS_DECK_MODE = 'vocab-flashcard-deck-mode';
+  const NEW_CARD_SESSION_LIMIT = 15;
 
   function getInitialMode(): Mode {
     if (!browser) return 'noreng';
@@ -38,8 +56,15 @@
     return localStorage.getItem(LS_SHOW_EXAMPLE) === 'true';
   }
 
+  function getInitialDeckMode(): DeckMode {
+    if (!browser) return 'all';
+    const saved = localStorage.getItem(LS_DECK_MODE);
+    return saved === 'due' ? 'due' : 'all';
+  }
+
   let mode = $state<Mode>(getInitialMode());
   let cardType = $state<CardType>(getInitialCardType());
+  let deckMode = $state<DeckMode>(getInitialDeckMode());
   let showExampleDefault = $state(getInitialShowExample());
   let showCardBack = $state(false);
   let showExampleEnglish = $state(getInitialShowExample());
@@ -48,6 +73,15 @@
   let completed = $state(false);
   let speakButtonRef = $state<SpeakButton | undefined>(undefined);
   let speakExampleRef = $state<SpeakButton | undefined>(undefined);
+  let progressMap = $state<Record<string, CardProgress>>({});
+  let dueCount = $state(0);
+
+  // 2-B: track new-card count for this session
+  let sessionNewCardCount = $state(0);
+
+  // 2-D: undo state
+  let undoSnapshot = $state<UndoSnapshot | null>(null);
+  let undoCountdown = $state(0);
 
   // touch
   let isTouch = $state(false);
@@ -55,7 +89,11 @@
 
   onMount(() => {
     isTouch = window.matchMedia('(pointer: coarse)').matches;
+    progressMap = loadProgressMap();
+    dueCount = countDueToday(progressMap);
   });
+
+  // ── Deck building ────────────────────────────────────────────────────────────
 
   function shuffle<T>(arr: T[]): T[] {
     const a = [...arr];
@@ -66,29 +104,63 @@
     return a;
   }
 
-  function makeDeckItem(entry: VocabEntry, m: Mode, ct: CardType): DeckItem {
+  function makeDeckItem(entry: VocabEntry, mo: Mode, ct: CardType): DeckItem {
     if (ct === 'phrase') {
-      const norskExample = entry.example;
-      const engExample = entry.example_english;
       return {
         entry,
-        front: m === 'noreng' ? norskExample : engExample,
-        back: m === 'noreng' ? engExample : norskExample
+        front: mo === 'noreng' ? entry.example : entry.example_english,
+        back: mo === 'noreng' ? entry.example_english : entry.example
       };
     }
     return {
       entry,
-      front: m === 'noreng' ? entry.norsk : entry.english,
-      back: m === 'noreng' ? entry.english : entry.norsk
+      front: mo === 'noreng' ? entry.norsk : entry.english,
+      back: mo === 'noreng' ? entry.english : entry.norsk
     };
   }
 
-  function buildDeck(es: VocabEntry[], m: Mode, ct: CardType) {
-    deck = shuffle(es).map((e) => makeDeckItem(e, m, ct));
+  /**
+   * 2-B: Build due deck.
+   *
+   * Priority order: overdue → new (capped at NEW_CARD_SESSION_LIMIT) → requeue
+   * "Again" cards get pushed to the back with a requeue flag rather than
+   * dropped, so the session doesn't end prematurely.
+   */
+  function buildDueDeck(
+    es: VocabEntry[],
+    mo: Mode,
+    ct: CardType,
+    pm: Record<string, CardProgress>
+  ): DeckItem[] {
+    const now = new Date();
+    const overdue: VocabEntry[] = [];
+    const newCards: VocabEntry[] = [];
+
+    for (const e of es) {
+      const p = pm[e.norsk];
+      if (!p) {
+        newCards.push(e);
+      } else if (new Date(p.fsrs.due) <= now) {
+        overdue.push(e);
+      }
+    }
+
+    const newCapped = shuffle(newCards).slice(0, NEW_CARD_SESSION_LIMIT);
+    return [...shuffle(overdue), ...newCapped].map((e) => makeDeckItem(e, mo, ct));
+  }
+
+  function buildDeck(es: VocabEntry[], mo: Mode, ct: CardType, dm: DeckMode) {
+    const items =
+      dm === 'due'
+        ? buildDueDeck(es, mo, ct, progressMap)
+        : shuffle(es).map((e) => makeDeckItem(e, mo, ct));
+    deck = items;
     currentIndex = 0;
     completed = false;
     showCardBack = false;
     showExampleEnglish = showExampleDefault;
+    sessionNewCardCount = 0;
+    clearUndo();
   }
 
   function resetCardState() {
@@ -97,13 +169,13 @@
   }
 
   function restart() {
-    buildDeck(entries, mode, cardType);
+    buildDeck(entries, mode, cardType, deckMode);
   }
 
-  function setMode(m: Mode) {
-    if (m === mode) return;
-    mode = m;
-    localStorage.setItem(LS_MODE, m);
+  function setMode(mo: Mode) {
+    if (mo === mode) return;
+    mode = mo;
+    localStorage.setItem(LS_MODE, mo);
   }
 
   function setCardType(ct: CardType) {
@@ -112,9 +184,16 @@
     localStorage.setItem(LS_CARD_TYPE, ct);
   }
 
+  function setDeckMode(dm: DeckMode) {
+    if (dm === deckMode) return;
+    deckMode = dm;
+    localStorage.setItem(LS_DECK_MODE, dm);
+  }
+
+  // ── Navigation ───────────────────────────────────────────────────────────────
+
   function prev() {
     if (completed) {
-      // Exit completion screen back to the last card
       completed = false;
       return;
     }
@@ -138,14 +217,14 @@
 
   let current = $derived(deck[currentIndex]);
 
-  function deriveExample(entry: VocabEntry, m: Mode, ct: CardType): string {
-    if (ct === 'phrase') return m === 'noreng' ? entry.norsk : entry.english;
-    return m === 'noreng' ? entry.example : entry.example_english;
+  function deriveExample(entry: VocabEntry, mo: Mode, ct: CardType): string {
+    if (ct === 'phrase') return mo === 'noreng' ? entry.norsk : entry.english;
+    return mo === 'noreng' ? entry.example : entry.example_english;
   }
 
-  function deriveExampleTranslation(entry: VocabEntry, m: Mode, ct: CardType): string {
-    if (ct === 'phrase') return m === 'noreng' ? entry.english : entry.norsk;
-    return m === 'noreng' ? entry.example_english : entry.example;
+  function deriveExampleTranslation(entry: VocabEntry, mo: Mode, ct: CardType): string {
+    if (ct === 'phrase') return mo === 'noreng' ? entry.english : entry.norsk;
+    return mo === 'noreng' ? entry.example_english : entry.example;
   }
 
   let currentExample = $derived(current ? deriveExample(current.entry, mode, cardType) : '');
@@ -153,22 +232,86 @@
     current ? deriveExampleTranslation(current.entry, mode, cardType) : ''
   );
 
-  // Rebuild deck whenever entries changes (new category/level)
+  // ── 2-C: interval preview ────────────────────────────────────────────────────
+
+  let intervals = $derived.by(() => {
+    if (!current || !showCardBack) return null;
+    return previewIntervals(progressMap[current.entry.norsk] ?? null, new Date());
+  });
+
+  // ── 2-B: requeue "Again" cards in due mode ───────────────────────────────────
+
+  /**
+   * When a card is rated "again" in due mode, push a fresh copy to the end
+   * of the deck so the user sees it again this session.
+   */
+  function requeueCard(item: DeckItem) {
+    deck = [...deck, { ...item }];
+  }
+
+  // ── 2-D: undo helpers ────────────────────────────────────────────────────────
+
+  function clearUndo() {
+    if (undoSnapshot) {
+      clearInterval(undoSnapshot.timer);
+      undoSnapshot = null;
+    }
+    undoCountdown = 0;
+  }
+
+  function startUndoTimer(snapshot: Omit<UndoSnapshot, 'timer' | 'countdown'>) {
+    clearUndo();
+    let seconds = 5;
+    undoCountdown = seconds;
+    const timer = setInterval(() => {
+      seconds--;
+      undoCountdown = seconds;
+      if (seconds <= 0) clearUndo();
+    }, 1000);
+    undoSnapshot = { ...snapshot, timer, countdown: seconds };
+  }
+
+  function undo() {
+    if (!undoSnapshot) return;
+    const { entry, previousProgress, previousMap, previousIndex } = undoSnapshot;
+    clearUndo();
+
+    // Restore progressMap (in memory and localStorage)
+    if (previousProgress === null) {
+      localStorage.removeItem(`progress-${entry.norsk}`);
+    } else {
+      localStorage.setItem(`progress-${entry.norsk}`, JSON.stringify(previousProgress));
+    }
+    progressMap = previousMap;
+    dueCount = countDueToday(previousMap);
+
+    // Step back to the card that was just rated
+    currentIndex = previousIndex;
+    resetCardState();
+    completed = false;
+  }
+
+  // ── Rebuild deck when entries / mode / cardType / deckMode changes ───────────
+
   $effect(() => {
     const e = entries;
-    const m = mode;
+    const mo = mode;
     const ct = cardType;
+    const dm = deckMode;
     untrack(() => {
       if (e.length === 0) {
         deck = [];
         currentIndex = 0;
         completed = false;
         resetCardState();
+        clearUndo();
         return;
       }
-      buildDeck(e, m, ct);
+      buildDeck(e, mo, ct, dm);
     });
   });
+
+  // ── Input handlers ────────────────────────────────────────────────────────────
 
   function handleTouchStart(e: TouchEvent) {
     touchStartX = e.changedTouches[0].screenX;
@@ -214,8 +357,54 @@
     } else if (!completed && current && e.key === '.') {
       e.preventDefault();
       speakExampleRef?.speak();
+    } else if (!completed && current && e.key === '1') {
+      e.preventDefault();
+      rate('again');
+    } else if (!completed && current && e.key === '2') {
+      e.preventDefault();
+      rate('hard');
+    } else if (!completed && current && e.key === '3') {
+      e.preventDefault();
+      rate('good');
+    } else if (!completed && current && e.key === '4') {
+      e.preventDefault();
+      rate('easy');
+    } else if (e.key === 'z' || e.key === 'Z') {
+      e.preventDefault();
+      undo();
     }
   }
+
+  // ── Rating ───────────────────────────────────────────────────────────────────
+
+  async function rate(rating: FSRSRating) {
+    if (!current) return;
+
+    const entry = current.entry;
+    const previousProgress = progressMap[entry.norsk] ?? null;
+    const previousMap = { ...progressMap };
+    const previousIndex = currentIndex;
+
+    // Track new cards for 2-B session cap
+    const isNew = previousProgress === null || previousProgress.fsrs.state === State.New;
+    if (isNew) sessionNewCardCount++;
+
+    const userId = page.data.user?.id ?? null;
+    progressMap = saveProgress(entry, rating, progressMap, userId);
+    dueCount = countDueToday(progressMap);
+
+    // 2-D: arm undo (before navigation so index is still pointing at the rated card)
+    startUndoTimer({ entry, previousProgress, previousMap, previousIndex });
+
+    // 2-B: requeue "again" cards in due mode
+    if (rating === 'again' && deckMode === 'due') {
+      requeueCard(current);
+    }
+
+    next();
+  }
+
+  // ── Button styles ─────────────────────────────────────────────────────────────
 
   const modeButtonCls =
     'font-medium rounded-lg text-lg px-3 sm:px-5 py-1 sm:py-2.5 me-1 sm:me-2 mb-1 sm:mb-2 focus:outline-none focus:ring-4 text-white bg-green-700 hover:bg-green-800 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800';
@@ -226,31 +415,63 @@
 <div class="flex w-full flex-col items-center">
   <h1 class="m-4 text-3xl">{title}</h1>
 
-  <!-- Mode + CardType toggles -->
-  <div class="flex justify-center">
+  <!-- Mode + CardType + DeckMode toggles -->
+  <div class="flex flex-wrap justify-center gap-1">
     <button
       type="button"
       class={modeButtonCls}
       onclick={() => setMode(mode === 'noreng' ? 'engnor' : 'noreng')}
     >
-      {mode === 'noreng' ? 'Norsk' : 'English'}
+      {mode === 'noreng' ? m.flashcard_norsk() : m.flashcard_english()}
     </button>
     <button
       type="button"
       class={cardTypeButtonCls}
       onclick={() => setCardType(cardType === 'word' ? 'phrase' : 'word')}
     >
-      {cardType === 'word' ? 'Word' : 'Phrase'}
+      {cardType === 'word' ? m.flashcard_word() : m.flashcard_phrase()}
+    </button>
+
+    <!-- 2-B: deck mode toggle -->
+    <button
+      type="button"
+      onclick={() => setDeckMode(deckMode === 'all' ? 'due' : 'all')}
+      class="mb-1 rounded-lg px-3 py-1 text-sm font-semibold transition-colors sm:mb-2 sm:px-4 sm:py-2 {deckMode ===
+      'due'
+        ? 'bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500'
+        : 'border border-gray-300 text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700'}"
+    >
+      {deckMode === 'due'
+        ? m.flashcard_review_due({ count: String(dueCount) })
+        : m.flashcard_all_cards()}
     </button>
   </div>
 
-  <!-- Counter -->
+  <!-- Counter row -->
   <div
-    class="mt-4 mb-2 flex justify-center gap-4 text-lg font-medium text-gray-700 dark:text-gray-300"
+    class="mt-4 mb-2 flex flex-wrap justify-center gap-3 text-lg font-medium text-gray-700 dark:text-gray-300"
   >
     <Button color="gray"
       >{deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}</Button
     >
+    {#if dueCount > 0 && deckMode === 'all'}
+      <span
+        class="inline-flex items-center rounded-full bg-orange-100 px-3 py-0.5 text-sm font-medium text-orange-800 dark:bg-orange-900 dark:text-orange-200"
+      >
+        {m.flashcard_due({ count: String(dueCount) })}
+      </span>
+    {/if}
+
+    <!-- 2-D: undo button with countdown -->
+    {#if undoSnapshot}
+      <button
+        type="button"
+        onclick={undo}
+        class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200 dark:bg-yellow-900 dark:text-yellow-200 dark:hover:bg-yellow-800"
+      >
+        ↩ {m.flashcard_undo_countdown({ seconds: String(undoCountdown) })}
+      </button>
+    {/if}
   </div>
 
   <!-- Flashcard -->
@@ -260,18 +481,20 @@
         class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
       >
         <p class="text-lg font-medium text-gray-700 dark:text-gray-300">
-          No vocabulary items found for this selection.
+          {deckMode === 'due' ? m.flashcard_no_items() : m.flashcard_no_items()}
         </p>
       </div>
     {:else if completed}
       <div class="bg-custom-blue flex h-full flex-col items-center justify-center gap-6 rounded-xl">
-        <p class="text-2xl font-semibold text-white">🎉 All {deck.length} cards done!</p>
+        <p class="text-2xl font-semibold text-white">
+          {m.flashcard_all_done({ count: String(deck.length) })}
+        </p>
         <button
           type="button"
           onclick={restart}
           class="rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none"
         >
-          Shuffle &amp; Restart
+          {m.flashcard_shuffle_restart()}
         </button>
       </div>
     {:else}
@@ -300,6 +523,73 @@
     {/if}
   </div>
 
+  <!-- 2-B: new-card cap notice -->
+  {#if deckMode === 'due' && sessionNewCardCount >= NEW_CARD_SESSION_LIMIT}
+    <p class="mt-2 text-xs text-gray-400 dark:text-gray-500">
+      {m.flashcard_new_limit()}
+    </p>
+  {/if}
+
+  <!-- FSRS Rating buttons (visible after flip) -->
+  {#if !completed && current && showCardBack}
+    <div class="mt-4 flex flex-wrap justify-center gap-2">
+      <div class="flex flex-col items-center gap-0.5">
+        <button
+          type="button"
+          onclick={() => rate('again')}
+          class="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none dark:bg-red-500 dark:hover:bg-red-600"
+        >
+          {m.flashcard_again()} <kbd class="ml-1 rounded bg-red-800 px-1 text-xs opacity-70">1</kbd>
+        </button>
+        <!-- 2-C: interval preview -->
+        {#if intervals}
+          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.again}</span>
+        {/if}
+      </div>
+
+      <div class="flex flex-col items-center gap-0.5">
+        <button
+          type="button"
+          onclick={() => rate('hard')}
+          class="rounded-lg bg-orange-500 px-4 py-2 text-sm font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+        >
+          {m.flashcard_hard()}
+          <kbd class="ml-1 rounded bg-orange-700 px-1 text-xs opacity-70">2</kbd>
+        </button>
+        {#if intervals}
+          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.hard}</span>
+        {/if}
+      </div>
+
+      <div class="flex flex-col items-center gap-0.5">
+        <button
+          type="button"
+          onclick={() => rate('good')}
+          class="rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-500 dark:hover:bg-green-600"
+        >
+          {m.flashcard_good()}
+          <kbd class="ml-1 rounded bg-green-800 px-1 text-xs opacity-70">3</kbd>
+        </button>
+        {#if intervals}
+          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.good}</span>
+        {/if}
+      </div>
+
+      <div class="flex flex-col items-center gap-0.5">
+        <button
+          type="button"
+          onclick={() => rate('easy')}
+          class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600"
+        >
+          {m.flashcard_easy()} <kbd class="ml-1 rounded bg-blue-800 px-1 text-xs opacity-70">4</kbd>
+        </button>
+        {#if intervals}
+          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.easy}</span>
+        {/if}
+      </div>
+    </div>
+  {/if}
+
   <!-- Part of speech badge & Pronounce -->
   {#if !completed && current}
     <div class="mt-3 flex items-center gap-3">
@@ -321,7 +611,7 @@
       <div class="mb-2 flex items-center gap-2">
         <span
           class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
-          >{cardType === 'word' ? 'phrase' : 'word'}</span
+          >{cardType === 'word' ? m.flashcard_phrase() : m.flashcard_word()}</span
         >
         <SpeakButton bind:this={speakExampleRef} word={currentExample} />
       </div>
@@ -344,7 +634,7 @@
               localStorage.setItem(LS_SHOW_EXAMPLE, String(showExampleEnglish));
             }}
           >
-            {showExampleEnglish ? 'Hide translation' : 'Show translation'}
+            {showExampleEnglish ? m.flashcard_hide_translation() : m.flashcard_show_translation()}
           </button>
         </div>
       {/if}
@@ -354,10 +644,10 @@
   <!-- Hint -->
   <p class="mt-4 rounded bg-gray-900 px-2 py-1 text-white">
     {#if isTouch}
-      Tap to flip · ← → to navigate
+      {m.flashcard_hint_touch()}
     {:else}
-      Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to
-      pronounce word · . to pronounce {cardType === 'word' ? 'example phrase' : 'word'}
+      {m.flashcard_hint_desktop_prefix()}
+      {cardType === 'word' ? m.flashcard_hint_example_phrase() : m.flashcard_hint_word()}
     {/if}
   </p>
 
@@ -370,7 +660,7 @@
       disabled={currentIndex <= 0 && !completed}
     >
       <ArrowLeft class="mr-4" />
-      Previous
+      {m.flashcard_previous()}
     </button>
 
     <button
@@ -379,7 +669,7 @@
       onclick={restart}
       disabled={entries.length === 0}
     >
-      RESTART
+      {m.flashcard_restart()}
     </button>
 
     <button
@@ -389,7 +679,7 @@
       disabled={completed || deck.length === 0}
     >
       <ArrowRight class="mr-4" />
-      Next
+      {m.flashcard_next()}
     </button>
   </div>
 </div>

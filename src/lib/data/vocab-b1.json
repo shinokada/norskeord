@@ -1,6 +1,7 @@
 [
   {
     "norsk": "å reise",
+    "lemma": "reise",
     "english": "to travel",
     "example": "Vi reiser til utlandet hvert år.",
     "example_english": "We travel abroad every year.",
@@ -10,6 +11,7 @@
   },
   {
     "norsk": "et pass",
+    "lemma": "pass",
     "english": "a passport",
     "example": "Ikke glem passet ditt!",
     "example_english": "Don't forget your passport!",
@@ -19,6 +21,7 @@
   },
   {
     "norsk": "en bagasje",
+    "lemma": "bagasje",
     "english": "luggage / baggage",
     "example": "Bagasjen min ble forsinket.",
     "example_english": "My luggage was delayed.",
@@ -28,6 +31,7 @@
   },
   {
     "norsk": "å booke",
+    "lemma": "booke",
     "english": "to book / to reserve",
     "example": "Jeg booket hotell på nettet.",
     "example_english": "I booked a hotel online.",
@@ -37,6 +41,7 @@
   },
   {
     "norsk": "en overnatting",
+    "lemma": "overnatting",
     "english": "accommodation",
     "example": "Hva er de beste overnattingsstedene i Bergen?",
     "example_english": "What are the best accommodation options in Bergen?",
@@ -46,6 +51,7 @@
   },
   {
     "norsk": "en turisme",
+    "lemma": "turisme",
     "english": "tourism",
     "example": "Turismen er viktig for den norske økonomien.",
     "example_english": "Tourism is important for the Norwegian economy.",
@@ -55,6 +61,7 @@
   },
   {
     "norsk": "en turist",
+    "lemma": "turist",
     "english": "a tourist",
     "example": "Oslo er populært blant turister.",
     "example_english": "Oslo is popular among tourists.",
@@ -64,6 +71,7 @@
   },
   {
     "norsk": "en reiseplan",
+    "lemma": "reiseplan",
     "english": "an itinerary",
     "example": "Vi laget en detaljert reiseplan.",
     "example_english": "We made a detailed itinerary.",
@@ -73,6 +81,7 @@
   },
   {
     "norsk": "å utforske",
+    "lemma": "utforske",
     "english": "to explore",
     "example": "Vi utforsket gamle bydeler.",
     "example_english": "We explored old city districts.",
@@ -82,6 +91,7 @@
   },
   {
     "norsk": "en severdighet",
+    "lemma": "severdighet",
     "english": "a sight / an attraction",
     "example": "Hvilke severdigheter bør vi besøke?",
     "example_english": "Which sights should we visit?",
@@ -91,6 +101,7 @@
   },
   {
     "norsk": "å pakke",
+    "lemma": "pakke",
     "english": "to pack",
     "example": "Jeg pakker alltid for mye.",
     "example_english": "I always pack too much.",
@@ -100,6 +111,7 @@
   },
   {
     "norsk": "en valuta",
+    "lemma": "valuta",
     "english": "a currency",
     "example": "Hvilken valuta brukes i Japan?",
     "example_english": "Which currency is used in Japan?",
@@ -109,6 +121,7 @@
   },
   {
     "norsk": "et visum",
+    "lemma": "visum",
     "english": "a visa",
     "example": "Du trenger visum for å reise til Russland.",
     "example_english": "You need a visa to travel to Russia.",
@@ -118,6 +131,7 @@
   },
   {
     "norsk": "en forsikring",
+    "lemma": "forsikring",
     "english": "insurance",
     "example": "Jeg kjøpte reiseforsikring.",
     "example_english": "I bought travel insurance.",
@@ -127,6 +141,7 @@
   },
   {
     "norsk": "lokal",
+    "lemma": "lokal",
     "english": "local",
     "example": "Vi prøvde lokal mat overalt.",
     "example_english": "We tried local food everywhere.",
@@ -136,6 +151,7 @@
   },
   {
     "norsk": "en omvisning",
+    "lemma": "omvisning",
     "english": "a guided tour",
     "example": "Vi tok en omvisning av slottet.",
     "example_english": "We took a guided tour of the castle.",
@@ -145,6 +161,7 @@
   },
   {
     "norsk": "et jetlag",
+    "lemma": "jetlag",
     "english": "jet lag",
     "example": "Jeg hadde jetlag i tre dager.",
     "example_english": "I had jet lag for three days.",
@@ -154,6 +171,7 @@
   },
   {
     "norsk": "å veksle penger",
+    "lemma": "å veksle penger",
     "english": "to exchange money",
     "example": "Jeg vekslet penger på flyplassen.",
     "example_english": "I exchanged money at the airport.",
@@ -163,6 +181,7 @@
   },
   {
     "norsk": "et hospits",
+    "lemma": "hospits",
     "english": "a hostel",
     "example": "Vi bodde på et billig hospits.",
     "example_english": "We stayed in a cheap hostel.",
@@ -172,6 +191,7 @@
   },
   {
     "norsk": "en reiseguide",
+    "lemma": "reiseguide",
     "english": "a travel guide",
     "example": "Reiseguiden hadde nyttig informasjon.",
     "example_english": "The travel guide had useful information.",
@@ -181,6 +201,7 @@
   },
   {
     "norsk": "innenlands",
+    "lemma": "innenlands",
     "english": "domestic / inland",
     "example": "Vi tok et innenlandsfly.",
     "example_english": "We took a domestic flight.",
@@ -190,6 +211,7 @@
   },
   {
     "norsk": "utenlands",
+    "lemma": "utenlands",
     "english": "abroad / overseas",
     "example": "Han har jobbet utenlands i fem år.",
     "example_english": "He has worked abroad for five years.",
@@ -199,6 +221,7 @@
   },
   {
     "norsk": "en avreise",
+    "lemma": "avreise",
     "english": "a departure",
     "example": "Avreisen er tidlig om morgenen.",
     "example_english": "The departure is early in the morning.",
@@ -208,6 +231,7 @@
   },
   {
     "norsk": "å orientere seg",
+    "lemma": "å orientere seg",
     "english": "to find one's bearings / to orientate oneself",
     "example": "Det tok tid å orientere seg i den nye byen.",
     "example_english": "It took time to find our bearings in the new city.",
@@ -217,6 +241,7 @@
   },
   {
     "norsk": "en kultur",
+    "lemma": "kultur",
     "english": "a culture",
     "example": "Jeg elsker å oppleve nye kulturer.",
     "example_english": "I love experiencing new cultures.",
@@ -224,9 +249,9 @@
     "category": "travel",
     "part": "noun"
   },
-
   {
     "norsk": "miljøet",
+    "lemma": "miljøet",
     "english": "the environment",
     "example": "Vi må ta vare på miljøet.",
     "example_english": "We must take care of the environment.",
@@ -236,6 +261,7 @@
   },
   {
     "norsk": "klimaendringer",
+    "lemma": "klimaendringer",
     "english": "climate change",
     "example": "Klimaendringer er en global utfordring.",
     "example_english": "Climate change is a global challenge.",
@@ -245,6 +271,7 @@
   },
   {
     "norsk": "å resirkulere",
+    "lemma": "resirkulere",
     "english": "to recycle",
     "example": "Jeg resirkulerer glass, papir og plast.",
     "example_english": "I recycle glass, paper and plastic.",
@@ -254,6 +281,7 @@
   },
   {
     "norsk": "forurensning",
+    "lemma": "forurensning",
     "english": "pollution",
     "example": "Luftforurensning er et problem i storbyer.",
     "example_english": "Air pollution is a problem in large cities.",
@@ -263,6 +291,7 @@
   },
   {
     "norsk": "bærekraftig",
+    "lemma": "bærekraftig",
     "english": "sustainable",
     "example": "Vi trenger mer bærekraftig energi.",
     "example_english": "We need more sustainable energy.",
@@ -272,6 +301,7 @@
   },
   {
     "norsk": "et utslipp",
+    "lemma": "utslipp",
     "english": "an emission",
     "example": "CO₂-utslippene må reduseres.",
     "example_english": "CO₂ emissions must be reduced.",
@@ -281,6 +311,7 @@
   },
   {
     "norsk": "fornybar energi",
+    "lemma": "fornybar energi",
     "english": "renewable energy",
     "example": "Norge bruker mye fornybar energi.",
     "example_english": "Norway uses a lot of renewable energy.",
@@ -290,6 +321,7 @@
   },
   {
     "norsk": "en natur",
+    "lemma": "natur",
     "english": "nature",
     "example": "Norsk natur er fantastisk.",
     "example_english": "Norwegian nature is fantastic.",
@@ -299,6 +331,7 @@
   },
   {
     "norsk": "å spare energi",
+    "lemma": "å spare energi",
     "english": "to save energy",
     "example": "Vi prøver å spare energi hjemme.",
     "example_english": "We try to save energy at home.",
@@ -308,6 +341,7 @@
   },
   {
     "norsk": "et drivhus",
+    "lemma": "drivhus",
     "english": "a greenhouse / a hothouse",
     "example": "Drivhuseffekten varmer opp kloden.",
     "example_english": "The greenhouse effect is warming the planet.",
@@ -317,6 +351,7 @@
   },
   {
     "norsk": "biologisk mangfold",
+    "lemma": "biologisk mangfold",
     "english": "biodiversity",
     "example": "Biologisk mangfold er truet mange steder.",
     "example_english": "Biodiversity is threatened in many places.",
@@ -326,6 +361,7 @@
   },
   {
     "norsk": "en avskoging",
+    "lemma": "avskoging",
     "english": "deforestation",
     "example": "Avskoging er en stor trussel mot regnskogen.",
     "example_english": "Deforestation is a great threat to the rainforest.",
@@ -335,6 +371,7 @@
   },
   {
     "norsk": "å bevare",
+    "lemma": "bevare",
     "english": "to conserve / to preserve",
     "example": "Vi må bevare naturreservatene.",
     "example_english": "We must conserve natural reserves.",
@@ -344,6 +381,7 @@
   },
   {
     "norsk": "et avfall",
+    "lemma": "avfall",
     "english": "waste / rubbish",
     "example": "Vi sorterer avfallet i ulike kategorier.",
     "example_english": "We sort waste into different categories.",
@@ -353,6 +391,7 @@
   },
   {
     "norsk": "en solenergi",
+    "lemma": "solenergi",
     "english": "solar energy",
     "example": "Solenergi er rent og fornybart.",
     "example_english": "Solar energy is clean and renewable.",
@@ -362,6 +401,7 @@
   },
   {
     "norsk": "en vindmølle",
+    "lemma": "vindmølle",
     "english": "a wind turbine",
     "example": "Det bygges mange vindmøller langs kysten.",
     "example_english": "Many wind turbines are being built along the coast.",
@@ -371,6 +411,7 @@
   },
   {
     "norsk": "global oppvarming",
+    "lemma": "global oppvarming",
     "english": "global warming",
     "example": "Global oppvarming truer isbjørnene.",
     "example_english": "Global warming threatens polar bears.",
@@ -380,6 +421,7 @@
   },
   {
     "norsk": "å redusere",
+    "lemma": "redusere",
     "english": "to reduce",
     "example": "Vi må redusere plastforbruket.",
     "example_english": "We must reduce plastic consumption.",
@@ -389,6 +431,7 @@
   },
   {
     "norsk": "plast",
+    "lemma": "plast",
     "english": "plastic",
     "example": "Mye plast havner i havet.",
     "example_english": "A lot of plastic ends up in the ocean.",
@@ -398,6 +441,7 @@
   },
   {
     "norsk": "et naturreservat",
+    "lemma": "naturreservat",
     "english": "a nature reserve",
     "example": "Turistene besøkte naturreservatet.",
     "example_english": "The tourists visited the nature reserve.",
@@ -407,6 +451,7 @@
   },
   {
     "norsk": "å forurense",
+    "lemma": "forurense",
     "english": "to pollute",
     "example": "Fabrikken forurenser elven.",
     "example_english": "The factory pollutes the river.",
@@ -416,6 +461,7 @@
   },
   {
     "norsk": "truet",
+    "lemma": "truet",
     "english": "threatened / endangered",
     "example": "Mange dyrearter er truet av utryddelse.",
     "example_english": "Many animal species are threatened with extinction.",
@@ -425,6 +471,7 @@
   },
   {
     "norsk": "et klimamål",
+    "lemma": "klimamål",
     "english": "a climate target",
     "example": "Norge har ambisiøse klimamål.",
     "example_english": "Norway has ambitious climate targets.",
@@ -434,6 +481,7 @@
   },
   {
     "norsk": "CO₂-avtrykk",
+    "lemma": "CO₂-avtrykk",
     "english": "carbon footprint",
     "example": "Jeg prøver å redusere mitt CO₂-avtrykk.",
     "example_english": "I try to reduce my carbon footprint.",
@@ -443,6 +491,7 @@
   },
   {
     "norsk": "en oversvømmelse",
+    "lemma": "oversvømmelse",
     "english": "a flood",
     "example": "Kraftig regn førte til oversvømmelse.",
     "example_english": "Heavy rain led to flooding.",
@@ -450,9 +499,9 @@
     "category": "environment",
     "part": "noun"
   },
-
   {
     "norsk": "medier",
+    "lemma": "medier",
     "english": "media",
     "example": "Sosiale medier er veldig populært.",
     "example_english": "Social media is very popular.",
@@ -462,6 +511,7 @@
   },
   {
     "norsk": "en nyhet",
+    "lemma": "nyhet",
     "english": "a news item / news",
     "example": "Jeg leser nyheter på mobilen.",
     "example_english": "I read news on my phone.",
@@ -471,6 +521,7 @@
   },
   {
     "norsk": "en avis",
+    "lemma": "avis",
     "english": "a newspaper",
     "example": "Han leser avisen om morgenen.",
     "example_english": "He reads the newspaper in the morning.",
@@ -480,6 +531,7 @@
   },
   {
     "norsk": "et nettsted",
+    "lemma": "nettsted",
     "english": "a website",
     "example": "Finn mer på nettstedet vårt.",
     "example_english": "Find more on our website.",
@@ -489,6 +541,7 @@
   },
   {
     "norsk": "sosiale medier",
+    "lemma": "sosiale medier",
     "english": "social media",
     "example": "Unge bruker mye tid på sosiale medier.",
     "example_english": "Young people spend a lot of time on social media.",
@@ -498,6 +551,7 @@
   },
   {
     "norsk": "en podcast",
+    "lemma": "podcast",
     "english": "a podcast",
     "example": "Jeg hører på en norsk podcast.",
     "example_english": "I listen to a Norwegian podcast.",
@@ -507,6 +561,7 @@
   },
   {
     "norsk": "å strømme",
+    "lemma": "strømme",
     "english": "to stream",
     "example": "Vi strømmer serier på Netflix.",
     "example_english": "We stream series on Netflix.",
@@ -516,6 +571,7 @@
   },
   {
     "norsk": "en reporter",
+    "lemma": "reporter",
     "english": "a reporter",
     "example": "Reporteren intervjuet vitner.",
     "example_english": "The reporter interviewed witnesses.",
@@ -525,6 +581,7 @@
   },
   {
     "norsk": "troverdige",
+    "lemma": "troverdige",
     "english": "credible / reliable",
     "example": "Det er viktig å bruke troverdige kilder.",
     "example_english": "It is important to use credible sources.",
@@ -534,6 +591,7 @@
   },
   {
     "norsk": "falske nyheter",
+    "lemma": "falske nyheter",
     "english": "fake news",
     "example": "Falske nyheter sprer seg fort på internett.",
     "example_english": "Fake news spreads quickly on the internet.",
@@ -543,6 +601,7 @@
   },
   {
     "norsk": "en overskrift",
+    "lemma": "overskrift",
     "english": "a headline",
     "example": "Overskriften var veldig provoserende.",
     "example_english": "The headline was very provocative.",
@@ -552,6 +611,7 @@
   },
   {
     "norsk": "å publisere",
+    "lemma": "publisere",
     "english": "to publish",
     "example": "Hun publiserte artikkelen sin.",
     "example_english": "She published her article.",
@@ -561,6 +621,7 @@
   },
   {
     "norsk": "en kilde",
+    "lemma": "kilde",
     "english": "a source",
     "example": "Sjekk kilden før du deler.",
     "example_english": "Check the source before sharing.",
@@ -570,6 +631,7 @@
   },
   {
     "norsk": "pressefrihet",
+    "lemma": "pressefrihet",
     "english": "freedom of the press",
     "example": "Pressefrihet er en grunnleggende rettighet.",
     "example_english": "Freedom of the press is a fundamental right.",
@@ -579,6 +641,7 @@
   },
   {
     "norsk": "en kommentar",
+    "lemma": "kommentar",
     "english": "a comment",
     "example": "Kommentarfeltet var fullt av meninger.",
     "example_english": "The comment section was full of opinions.",
@@ -588,6 +651,7 @@
   },
   {
     "norsk": "å dele",
+    "lemma": "dele",
     "english": "to share",
     "example": "Ikke del personlig informasjon på nettet.",
     "example_english": "Don't share personal information online.",
@@ -597,6 +661,7 @@
   },
   {
     "norsk": "en influenser",
+    "lemma": "influenser",
     "english": "an influencer",
     "example": "Hun er en kjent influenser.",
     "example_english": "She is a well-known influencer.",
@@ -606,6 +671,7 @@
   },
   {
     "norsk": "en reklame",
+    "lemma": "reklame",
     "english": "an advertisement",
     "example": "Det er mye reklame på TV.",
     "example_english": "There is a lot of advertising on TV.",
@@ -615,6 +681,7 @@
   },
   {
     "norsk": "sendetid",
+    "lemma": "sendetid",
     "english": "airtime / broadcast time",
     "example": "Programmet har sendetid klokka åtte.",
     "example_english": "The programme airs at eight o'clock.",
@@ -624,6 +691,7 @@
   },
   {
     "norsk": "en blogg",
+    "lemma": "blogg",
     "english": "a blog",
     "example": "Han skriver en populær matblogg.",
     "example_english": "He writes a popular food blog.",
@@ -633,6 +701,7 @@
   },
   {
     "norsk": "personvern",
+    "lemma": "personvern",
     "english": "privacy / data protection",
     "example": "Personvern på nettet er viktig.",
     "example_english": "Online privacy is important.",
@@ -642,6 +711,7 @@
   },
   {
     "norsk": "å kritisere",
+    "lemma": "kritisere",
     "english": "to criticise",
     "example": "Avisen kritiserte regjeringens beslutning.",
     "example_english": "The newspaper criticised the government's decision.",
@@ -651,6 +721,7 @@
   },
   {
     "norsk": "digital",
+    "lemma": "digital",
     "english": "digital",
     "example": "Vi lever i en digital tidsalder.",
     "example_english": "We live in a digital age.",
@@ -660,6 +731,7 @@
   },
   {
     "norsk": "en debatt",
+    "lemma": "debatt",
     "english": "a debate",
     "example": "Politikerne hadde en livlig debatt.",
     "example_english": "The politicians had a lively debate.",
@@ -669,6 +741,7 @@
   },
   {
     "norsk": "et intervju",
+    "lemma": "intervju",
     "english": "an interview",
     "example": "Hun ga et intervju til NRK.",
     "example_english": "She gave an interview to NRK.",
@@ -676,9 +749,9 @@
     "category": "media",
     "part": "noun"
   },
-
   {
     "norsk": "en tradisjon",
+    "lemma": "tradisjon",
     "english": "a tradition",
     "example": "Julenissen er en norsk tradisjon.",
     "example_english": "Father Christmas is a Norwegian tradition.",
@@ -688,6 +761,7 @@
   },
   {
     "norsk": "et museum",
+    "lemma": "museum",
     "english": "a museum",
     "example": "Vi besøkte Nasjonalmuseet.",
     "example_english": "We visited the National Museum.",
@@ -697,6 +771,7 @@
   },
   {
     "norsk": "et teater",
+    "lemma": "teater",
     "english": "a theatre",
     "example": "Jeg liker å gå på teater.",
     "example_english": "I like going to the theatre.",
@@ -706,6 +781,7 @@
   },
   {
     "norsk": "en utstilling",
+    "lemma": "utstilling",
     "english": "an exhibition",
     "example": "Det er en ny utstilling på galleriet.",
     "example_english": "There is a new exhibition at the gallery.",
@@ -715,6 +791,7 @@
   },
   {
     "norsk": "et maleri",
+    "lemma": "maleri",
     "english": "a painting",
     "example": "Munchs maleri er verdensberømt.",
     "example_english": "Munch's painting is world-famous.",
@@ -724,6 +801,7 @@
   },
   {
     "norsk": "en skulptur",
+    "lemma": "skulptur",
     "english": "a sculpture",
     "example": "Vigelandsparken er full av skulpturer.",
     "example_english": "Vigeland Park is full of sculptures.",
@@ -733,6 +811,7 @@
   },
   {
     "norsk": "et konserthus",
+    "lemma": "konserthus",
     "english": "a concert hall",
     "example": "Oslo konserthus er et flott bygg.",
     "example_english": "Oslo Concert Hall is a beautiful building.",
@@ -742,6 +821,7 @@
   },
   {
     "norsk": "et folkeeventyr",
+    "lemma": "folkeeventyr",
     "english": "a folk tale",
     "example": "Askeladden er kjent fra norske folkeeventyr.",
     "example_english": "Askeladden is known from Norwegian folk tales.",
@@ -751,6 +831,7 @@
   },
   {
     "norsk": "arv",
+    "lemma": "arv",
     "english": "heritage / inheritance",
     "example": "Stavkirker er en del av norsk kulturarv.",
     "example_english": "Stave churches are part of Norway's cultural heritage.",
@@ -760,6 +841,7 @@
   },
   {
     "norsk": "en festival",
+    "lemma": "festival",
     "english": "a festival",
     "example": "Vi dro på musikkfestival i sommer.",
     "example_english": "We went to a music festival this summer.",
@@ -769,6 +851,7 @@
   },
   {
     "norsk": "å feire",
+    "lemma": "feire",
     "english": "to celebrate",
     "example": "Vi feirer 17. mai med tog.",
     "example_english": "We celebrate the 17th of May with a parade.",
@@ -778,6 +861,7 @@
   },
   {
     "norsk": "en kunstner",
+    "lemma": "kunstner",
     "english": "an artist",
     "example": "Edvard Munch er en berømt norsk kunstner.",
     "example_english": "Edvard Munch is a famous Norwegian artist.",
@@ -787,6 +871,7 @@
   },
   {
     "norsk": "et kunstverk",
+    "lemma": "kunstverk",
     "english": "a work of art",
     "example": "Kunstverket ble solgt for millioner.",
     "example_english": "The work of art was sold for millions.",
@@ -796,6 +881,7 @@
   },
   {
     "norsk": "en roman",
+    "lemma": "roman",
     "english": "a novel",
     "example": "Jeg leser en spennende roman.",
     "example_english": "I am reading an exciting novel.",
@@ -805,6 +891,7 @@
   },
   {
     "norsk": "et dikt",
+    "lemma": "dikt",
     "english": "a poem",
     "example": "Han skrev et vakkert dikt.",
     "example_english": "He wrote a beautiful poem.",
@@ -814,6 +901,7 @@
   },
   {
     "norsk": "en forfatter",
+    "lemma": "forfatter",
     "english": "an author / a writer",
     "example": "Ibsen er en kjent norsk forfatter.",
     "example_english": "Ibsen is a well-known Norwegian author.",
@@ -823,6 +911,7 @@
   },
   {
     "norsk": "flerkulturell",
+    "lemma": "flerkulturell",
     "english": "multicultural",
     "example": "Oslo er en flerkulturell by.",
     "example_english": "Oslo is a multicultural city.",
@@ -832,6 +921,7 @@
   },
   {
     "norsk": "et galleri",
+    "lemma": "galleri",
     "english": "a gallery",
     "example": "Vi gikk på galleri i helgen.",
     "example_english": "We went to a gallery at the weekend.",
@@ -841,6 +931,7 @@
   },
   {
     "norsk": "bunad",
+    "lemma": "bunad",
     "english": "bunad (Norwegian national costume)",
     "example": "Mange nordmenn bærer bunad på 17. mai.",
     "example_english": "Many Norwegians wear bunad on the 17th of May.",
@@ -850,6 +941,7 @@
   },
   {
     "norsk": "å inspirere",
+    "lemma": "inspirere",
     "english": "to inspire",
     "example": "Naturen inspirerte mange norske kunstnere.",
     "example_english": "Nature inspired many Norwegian artists.",
@@ -859,6 +951,7 @@
   },
   {
     "norsk": "en sjanger",
+    "lemma": "sjanger",
     "english": "a genre",
     "example": "Krimsjangeren er veldig populær i Norge.",
     "example_english": "The crime genre is very popular in Norway.",
@@ -868,6 +961,7 @@
   },
   {
     "norsk": "en forestilling",
+    "lemma": "forestilling",
     "english": "a performance / a show",
     "example": "Forestillingen varte i to timer.",
     "example_english": "The performance lasted two hours.",
@@ -877,6 +971,7 @@
   },
   {
     "norsk": "kulturell",
+    "lemma": "kulturell",
     "english": "cultural",
     "example": "Det er mange kulturelle arrangementer om sommeren.",
     "example_english": "There are many cultural events in the summer.",
@@ -886,6 +981,7 @@
   },
   {
     "norsk": "et folkemuseum",
+    "lemma": "folkemuseum",
     "english": "an open-air museum / folk museum",
     "example": "Norsk Folkemuseum viser gamle bygninger.",
     "example_english": "The Norwegian Folk Museum shows old buildings.",
@@ -895,6 +991,7 @@
   },
   {
     "norsk": "å oversette",
+    "lemma": "oversette",
     "english": "to translate",
     "example": "Boken ble oversatt til 20 språk.",
     "example_english": "The book was translated into 20 languages.",
@@ -902,9 +999,9 @@
     "category": "culture",
     "part": "verb"
   },
-
   {
     "norsk": "teknologi",
+    "lemma": "teknologi",
     "english": "technology",
     "example": "Teknologi forandrer samfunnet raskt.",
     "example_english": "Technology is changing society quickly.",
@@ -914,6 +1011,7 @@
   },
   {
     "norsk": "en datamaskin",
+    "lemma": "datamaskin",
     "english": "a computer",
     "example": "Jeg jobber på datamaskinen hele dagen.",
     "example_english": "I work on the computer all day.",
@@ -923,6 +1021,7 @@
   },
   {
     "norsk": "internett",
+    "lemma": "internett",
     "english": "the internet",
     "example": "Han er alltid på internett.",
     "example_english": "He is always on the internet.",
@@ -932,6 +1031,7 @@
   },
   {
     "norsk": "en app",
+    "lemma": "app",
     "english": "an app",
     "example": "Det finnes en app for alt.",
     "example_english": "There is an app for everything.",
@@ -941,6 +1041,7 @@
   },
   {
     "norsk": "kunstig intelligens",
+    "lemma": "kunstig intelligens",
     "english": "artificial intelligence",
     "example": "Kunstig intelligens brukes i mange bransjer.",
     "example_english": "Artificial intelligence is used in many industries.",
@@ -950,6 +1051,7 @@
   },
   {
     "norsk": "et passord",
+    "lemma": "passord",
     "english": "a password",
     "example": "Bruk et sterkt passord!",
     "example_english": "Use a strong password!",
@@ -959,6 +1061,7 @@
   },
   {
     "norsk": "å laste ned",
+    "lemma": "å laste ned",
     "english": "to download",
     "example": "Kan du laste ned programmet?",
     "example_english": "Can you download the programme?",
@@ -968,6 +1071,7 @@
   },
   {
     "norsk": "å laste opp",
+    "lemma": "å laste opp",
     "english": "to upload",
     "example": "Jeg laster opp bilder til skyen.",
     "example_english": "I upload photos to the cloud.",
@@ -977,6 +1081,7 @@
   },
   {
     "norsk": "en server",
+    "lemma": "server",
     "english": "a server",
     "example": "Serveren er nede for vedlikehold.",
     "example_english": "The server is down for maintenance.",
@@ -986,6 +1091,7 @@
   },
   {
     "norsk": "et nettverk",
+    "lemma": "nettverk",
     "english": "a network",
     "example": "Nettverket er tregt i dag.",
     "example_english": "The network is slow today.",
@@ -995,6 +1101,7 @@
   },
   {
     "norsk": "cybersikkerhet",
+    "lemma": "cybersikkerhet",
     "english": "cybersecurity",
     "example": "Cybersikkerhet er en voksende bransje.",
     "example_english": "Cybersecurity is a growing industry.",
@@ -1004,6 +1111,7 @@
   },
   {
     "norsk": "å programmere",
+    "lemma": "programmere",
     "english": "to program / to code",
     "example": "Barna lærer å programmere på skolen.",
     "example_english": "Children learn to program at school.",
@@ -1013,6 +1121,7 @@
   },
   {
     "norsk": "smarttelefon",
+    "lemma": "smarttelefon",
     "english": "smartphone",
     "example": "De fleste bruker smarttelefon daglig.",
     "example_english": "Most people use a smartphone daily.",
@@ -1022,6 +1131,7 @@
   },
   {
     "norsk": "en sky",
+    "lemma": "sky",
     "english": "the cloud (data)",
     "example": "Dataene er lagret i skyen.",
     "example_english": "The data is stored in the cloud.",
@@ -1031,6 +1141,7 @@
   },
   {
     "norsk": "automatisering",
+    "lemma": "automatisering",
     "english": "automation",
     "example": "Automatisering erstatter mange jobber.",
     "example_english": "Automation is replacing many jobs.",
@@ -1040,6 +1151,7 @@
   },
   {
     "norsk": "en robot",
+    "lemma": "robot",
     "english": "a robot",
     "example": "Roboter brukes i bilproduksjon.",
     "example_english": "Robots are used in car manufacturing.",
@@ -1049,6 +1161,7 @@
   },
   {
     "norsk": "å oppdatere",
+    "lemma": "oppdatere",
     "english": "to update",
     "example": "Husk å oppdatere programvaren.",
     "example_english": "Remember to update the software.",
@@ -1058,6 +1171,7 @@
   },
   {
     "norsk": "en skjerm",
+    "lemma": "skjerm",
     "english": "a screen / a monitor",
     "example": "Skjermen min er for liten.",
     "example_english": "My screen is too small.",
@@ -1067,6 +1181,7 @@
   },
   {
     "norsk": "trådløst",
+    "lemma": "trådløst",
     "english": "wireless",
     "example": "Hodetelefonene er trådløse.",
     "example_english": "The headphones are wireless.",
@@ -1076,6 +1191,7 @@
   },
   {
     "norsk": "et søkemotorsøk",
+    "lemma": "søkemotorsøk",
     "english": "a search engine",
     "example": "Bruk en søkemotor for å finne svaret.",
     "example_english": "Use a search engine to find the answer.",
@@ -1085,6 +1201,7 @@
   },
   {
     "norsk": "å hacke",
+    "lemma": "hacke",
     "english": "to hack",
     "example": "Kontoen hans ble hacket.",
     "example_english": "His account was hacked.",
@@ -1094,6 +1211,7 @@
   },
   {
     "norsk": "en algoritme",
+    "lemma": "algoritme",
     "english": "an algorithm",
     "example": "Algoritmen anbefaler innhold basert på historikk.",
     "example_english": "The algorithm recommends content based on history.",
@@ -1103,6 +1221,7 @@
   },
   {
     "norsk": "batteri",
+    "lemma": "batteri",
     "english": "battery",
     "example": "Telefonen har lite batteri.",
     "example_english": "The phone has a low battery.",
@@ -1112,6 +1231,7 @@
   },
   {
     "norsk": "å sikkerhetskopiere",
+    "lemma": "sikkerhetskopiere",
     "english": "to back up (data)",
     "example": "Sikkerhetskopier filene dine regelmessig.",
     "example_english": "Back up your files regularly.",
@@ -1121,6 +1241,7 @@
   },
   {
     "norsk": "et tastatur",
+    "lemma": "tastatur",
     "english": "a keyboard",
     "example": "Tastaturet mitt er ødelagt.",
     "example_english": "My keyboard is broken.",
@@ -1128,9 +1249,9 @@
     "category": "technology",
     "part": "noun"
   },
-
   {
     "norsk": "et forhold",
+    "lemma": "forhold",
     "english": "a relationship",
     "example": "De har et godt forhold til hverandre.",
     "example_english": "They have a good relationship with each other.",
@@ -1140,6 +1261,7 @@
   },
   {
     "norsk": "en venn",
+    "lemma": "venn",
     "english": "a friend",
     "example": "Han er min beste venn.",
     "example_english": "He is my best friend.",
@@ -1149,6 +1271,7 @@
   },
   {
     "norsk": "å stole på",
+    "lemma": "å stole på",
     "english": "to trust",
     "example": "Jeg stoler fullstendig på henne.",
     "example_english": "I trust her completely.",
@@ -1158,6 +1281,7 @@
   },
   {
     "norsk": "å støtte",
+    "lemma": "støtte",
     "english": "to support",
     "example": "Familien støtter meg alltid.",
     "example_english": "My family always supports me.",
@@ -1167,6 +1291,7 @@
   },
   {
     "norsk": "å misforstå",
+    "lemma": "misforstå",
     "english": "to misunderstand",
     "example": "Jeg tror du misforstår situasjonen.",
     "example_english": "I think you misunderstand the situation.",
@@ -1176,6 +1301,7 @@
   },
   {
     "norsk": "en konflikt",
+    "lemma": "konflikt",
     "english": "a conflict",
     "example": "De løste konflikten med dialog.",
     "example_english": "They solved the conflict through dialogue.",
@@ -1185,6 +1311,7 @@
   },
   {
     "norsk": "å kommunisere",
+    "lemma": "kommunisere",
     "english": "to communicate",
     "example": "Det er viktig å kommunisere åpent.",
     "example_english": "It is important to communicate openly.",
@@ -1194,6 +1321,7 @@
   },
   {
     "norsk": "å gifte seg",
+    "lemma": "å gifte seg",
     "english": "to get married",
     "example": "De gifter seg neste sommer.",
     "example_english": "They are getting married next summer.",
@@ -1203,6 +1331,7 @@
   },
   {
     "norsk": "en skilsmisse",
+    "lemma": "skilsmisse",
     "english": "a divorce",
     "example": "Skilsmissen var vanskelig for barna.",
     "example_english": "The divorce was difficult for the children.",
@@ -1212,6 +1341,7 @@
   },
   {
     "norsk": "en kjæreste",
+    "lemma": "kjæreste",
     "english": "a boyfriend / girlfriend",
     "example": "Har du en kjæreste?",
     "example_english": "Do you have a boyfriend/girlfriend?",
@@ -1221,6 +1351,7 @@
   },
   {
     "norsk": "en nabo",
+    "lemma": "nabo",
     "english": "a neighbour",
     "example": "Vi har fine naboer.",
     "example_english": "We have nice neighbours.",
@@ -1230,6 +1361,7 @@
   },
   {
     "norsk": "respekt",
+    "lemma": "respekt",
     "english": "respect",
     "example": "Gjensidig respekt er viktig i et forhold.",
     "example_english": "Mutual respect is important in a relationship.",
@@ -1239,6 +1371,7 @@
   },
   {
     "norsk": "å bry seg om",
+    "lemma": "å bry seg om",
     "english": "to care about",
     "example": "Hun bryr seg mye om andre.",
     "example_english": "She cares a lot about others.",
@@ -1248,6 +1381,7 @@
   },
   {
     "norsk": "lojalitet",
+    "lemma": "lojalitet",
     "english": "loyalty",
     "example": "Lojalitet er en viktig egenskap hos en venn.",
     "example_english": "Loyalty is an important quality in a friend.",
@@ -1257,6 +1391,7 @@
   },
   {
     "norsk": "å forsone seg",
+    "lemma": "å forsone seg",
     "english": "to make up / to reconcile",
     "example": "De forsonet seg etter krangelen.",
     "example_english": "They made up after the argument.",
@@ -1266,6 +1401,7 @@
   },
   {
     "norsk": "en krangel",
+    "lemma": "krangel",
     "english": "an argument / a quarrel",
     "example": "Vi hadde en krangel om vasken.",
     "example_english": "We had an argument about the washing up.",
@@ -1275,6 +1411,7 @@
   },
   {
     "norsk": "å inkludere",
+    "lemma": "inkludere",
     "english": "to include",
     "example": "Det er viktig å inkludere alle.",
     "example_english": "It is important to include everyone.",
@@ -1284,6 +1421,7 @@
   },
   {
     "norsk": "vennskap",
+    "lemma": "vennskap",
     "english": "friendship",
     "example": "Deres vennskap har vart i mange år.",
     "example_english": "Their friendship has lasted for many years.",
@@ -1293,6 +1431,7 @@
   },
   {
     "norsk": "å savne",
+    "lemma": "savne",
     "english": "to miss (someone)",
     "example": "Jeg savner deg veldig.",
     "example_english": "I miss you very much.",
@@ -1302,6 +1441,7 @@
   },
   {
     "norsk": "ærlig",
+    "lemma": "ærlig",
     "english": "honest",
     "example": "Vær ærlig mot deg selv og andre.",
     "example_english": "Be honest with yourself and others.",
@@ -1311,6 +1451,7 @@
   },
   {
     "norsk": "omsorg",
+    "lemma": "omsorg",
     "english": "care / compassion",
     "example": "Hun viser mye omsorg for pasientene.",
     "example_english": "She shows a lot of care for the patients.",
@@ -1320,6 +1461,7 @@
   },
   {
     "norsk": "å hjelpe",
+    "lemma": "hjelpe",
     "english": "to help",
     "example": "Kan du hjelpe meg med dette?",
     "example_english": "Can you help me with this?",
@@ -1329,6 +1471,7 @@
   },
   {
     "norsk": "ensomhet",
+    "lemma": "ensomhet",
     "english": "loneliness",
     "example": "Ensomhet er et voksende problem i samfunnet.",
     "example_english": "Loneliness is a growing problem in society.",
@@ -1338,6 +1481,7 @@
   },
   {
     "norsk": "å møte opp",
+    "lemma": "å møte opp",
     "english": "to show up / to meet",
     "example": "Det betyr mye at du møtte opp.",
     "example_english": "It means a lot that you showed up.",
@@ -1347,6 +1491,7 @@
   },
   {
     "norsk": "tillit",
+    "lemma": "tillit",
     "english": "trust / confidence",
     "example": "Det tar tid å bygge tillit.",
     "example_english": "It takes time to build trust.",
@@ -1354,9 +1499,9 @@
     "category": "relationships",
     "part": "noun"
   },
-
   {
     "norsk": "en utdanning",
+    "lemma": "utdanning",
     "english": "an education",
     "example": "Utdanning er gratis i Norge.",
     "example_english": "Education is free in Norway.",
@@ -1366,6 +1511,7 @@
   },
   {
     "norsk": "et universitet",
+    "lemma": "universitet",
     "english": "a university",
     "example": "Jeg studerer ved Universitetet i Oslo.",
     "example_english": "I study at the University of Oslo.",
@@ -1375,6 +1521,7 @@
   },
   {
     "norsk": "en høyskole",
+    "lemma": "høyskole",
     "english": "a college / a university college",
     "example": "Han går på høyskolen i Kristiansand.",
     "example_english": "He attends the college in Kristiansand.",
@@ -1384,6 +1531,7 @@
   },
   {
     "norsk": "et fag",
+    "lemma": "fag",
     "english": "a subject / a course",
     "example": "Mitt favorittfag er norsk.",
     "example_english": "My favourite subject is Norwegian.",
@@ -1393,6 +1541,7 @@
   },
   {
     "norsk": "en eksamen",
+    "lemma": "eksamen",
     "english": "an exam",
     "example": "Jeg har eksamen neste uke.",
     "example_english": "I have an exam next week.",
@@ -1402,6 +1551,7 @@
   },
   {
     "norsk": "en karakter",
+    "lemma": "karakter",
     "english": "a grade / a mark",
     "example": "Jeg fikk god karakter på prøven.",
     "example_english": "I got a good grade on the test.",
@@ -1411,6 +1561,7 @@
   },
   {
     "norsk": "å studere",
+    "lemma": "studere",
     "english": "to study",
     "example": "Hun studerer medisin.",
     "example_english": "She is studying medicine.",
@@ -1420,6 +1571,7 @@
   },
   {
     "norsk": "et pensum",
+    "lemma": "pensum",
     "english": "a curriculum / a syllabus",
     "example": "Pensumet er veldig bredt.",
     "example_english": "The curriculum is very broad.",
@@ -1429,6 +1581,7 @@
   },
   {
     "norsk": "en stipend",
+    "lemma": "stipend",
     "english": "a scholarship / a grant",
     "example": "Han fikk stipend for å studere i utlandet.",
     "example_english": "He received a scholarship to study abroad.",
@@ -1438,6 +1591,7 @@
   },
   {
     "norsk": "et bibliotek",
+    "lemma": "bibliotek",
     "english": "a library",
     "example": "Jeg studerer på biblioteket.",
     "example_english": "I study at the library.",
@@ -1447,6 +1601,7 @@
   },
   {
     "norsk": "en forelesning",
+    "lemma": "forelesning",
     "english": "a lecture",
     "example": "Forelesningen starter klokka ni.",
     "example_english": "The lecture starts at nine o'clock.",
@@ -1456,6 +1611,7 @@
   },
   {
     "norsk": "et seminar",
+    "lemma": "seminar",
     "english": "a seminar",
     "example": "Vi diskuterer temaet i seminaret.",
     "example_english": "We discuss the topic in the seminar.",
@@ -1465,6 +1621,7 @@
   },
   {
     "norsk": "en oppgave",
+    "lemma": "oppgave",
     "english": "an assignment / a task",
     "example": "Jeg må levere oppgaven innen fredag.",
     "example_english": "I must hand in the assignment by Friday.",
@@ -1474,6 +1631,7 @@
   },
   {
     "norsk": "å bestå",
+    "lemma": "bestå",
     "english": "to pass (an exam)",
     "example": "Jeg bestod eksamen!",
     "example_english": "I passed the exam!",
@@ -1483,6 +1641,7 @@
   },
   {
     "norsk": "å stryke",
+    "lemma": "stryke",
     "english": "to fail (an exam)",
     "example": "Han strøk på matematikkeksamen.",
     "example_english": "He failed the maths exam.",
@@ -1492,6 +1651,7 @@
   },
   {
     "norsk": "frivillig",
+    "lemma": "frivillig",
     "english": "voluntary / optional",
     "example": "Deltakelsen er frivillig.",
     "example_english": "Participation is voluntary.",
@@ -1501,6 +1661,7 @@
   },
   {
     "norsk": "en bachelor",
+    "lemma": "bachelor",
     "english": "a bachelor's degree",
     "example": "Jeg tar en bachelor i informatikk.",
     "example_english": "I am taking a bachelor's degree in computer science.",
@@ -1510,6 +1671,7 @@
   },
   {
     "norsk": "en master",
+    "lemma": "master",
     "english": "a master's degree",
     "example": "Hun tar en master i økonomi.",
     "example_english": "She is doing a master's degree in economics.",
@@ -1519,6 +1681,7 @@
   },
   {
     "norsk": "å forske",
+    "lemma": "forske",
     "english": "to research",
     "example": "Han forsker på klimaendringer.",
     "example_english": "He researches climate change.",
@@ -1528,6 +1691,7 @@
   },
   {
     "norsk": "en student",
+    "lemma": "student",
     "english": "a student",
     "example": "Oslo er en studentby.",
     "example_english": "Oslo is a student city.",
@@ -1537,6 +1701,7 @@
   },
   {
     "norsk": "livslang læring",
+    "lemma": "livslang læring",
     "english": "lifelong learning",
     "example": "Livslang læring er viktig i arbeidslivet.",
     "example_english": "Lifelong learning is important in working life.",
@@ -1546,6 +1711,7 @@
   },
   {
     "norsk": "et vitnemål",
+    "lemma": "vitnemål",
     "english": "a certificate / a diploma",
     "example": "Jeg fikk vitnemålet i juni.",
     "example_english": "I received my diploma in June.",
@@ -1555,6 +1721,7 @@
   },
   {
     "norsk": "obligatorisk",
+    "lemma": "obligatorisk",
     "english": "compulsory / mandatory",
     "example": "Grunnskolen er obligatorisk i Norge.",
     "example_english": "Primary school is compulsory in Norway.",
@@ -1564,6 +1731,7 @@
   },
   {
     "norsk": "en veileder",
+    "lemma": "veileder",
     "english": "a supervisor / an adviser",
     "example": "Veilederen hjelper meg med avhandlingen.",
     "example_english": "The supervisor helps me with the thesis.",
@@ -1573,6 +1741,7 @@
   },
   {
     "norsk": "å lære",
+    "lemma": "lære",
     "english": "to learn",
     "example": "Det er aldri for sent å lære.",
     "example_english": "It is never too late to learn.",
@@ -1580,9 +1749,9 @@
     "category": "education",
     "part": "verb"
   },
-
   {
     "norsk": "et arbeid",
+    "lemma": "arbeid",
     "english": "work / labour",
     "example": "Arbeidet er krevende, men givende.",
     "example_english": "The work is demanding but rewarding.",
@@ -1592,6 +1761,7 @@
   },
   {
     "norsk": "en arbeidsgiver",
+    "lemma": "arbeidsgiver",
     "english": "an employer",
     "example": "Arbeidsgiveren tilbyr gode fordeler.",
     "example_english": "The employer offers good benefits.",
@@ -1601,6 +1771,7 @@
   },
   {
     "norsk": "en arbeidstaker",
+    "lemma": "arbeidstaker",
     "english": "an employee",
     "example": "Arbeidstakerne streiker for høyere lønn.",
     "example_english": "The employees are striking for higher pay.",
@@ -1610,6 +1781,7 @@
   },
   {
     "norsk": "et jobbintervju",
+    "lemma": "jobbintervju",
     "english": "a job interview",
     "example": "Jeg er nervøs for jobbintervjuet.",
     "example_english": "I am nervous about the job interview.",
@@ -1619,6 +1791,7 @@
   },
   {
     "norsk": "en CV",
+    "lemma": "CV",
     "english": "a CV / résumé",
     "example": "Oppdater CV-en før du søker.",
     "example_english": "Update your CV before applying.",
@@ -1628,6 +1801,7 @@
   },
   {
     "norsk": "arbeidsmarkedet",
+    "lemma": "arbeidsmarkedet",
     "english": "the labour market",
     "example": "Arbeidsmarkedet i Norge er stabilt.",
     "example_english": "The labour market in Norway is stable.",
@@ -1637,6 +1811,7 @@
   },
   {
     "norsk": "å ansette",
+    "lemma": "ansette",
     "english": "to hire / to employ",
     "example": "Bedriften ansetter nye folk.",
     "example_english": "The company is hiring new people.",
@@ -1646,6 +1821,7 @@
   },
   {
     "norsk": "å si opp",
+    "lemma": "å si opp",
     "english": "to resign / to quit",
     "example": "Hun sa opp jobben.",
     "example_english": "She resigned from her job.",
@@ -1655,6 +1831,7 @@
   },
   {
     "norsk": "å bli oppsagt",
+    "lemma": "å bli oppsagt",
     "english": "to be dismissed / to be laid off",
     "example": "Han ble oppsagt etter nedbemanningen.",
     "example_english": "He was laid off after the redundancy.",
@@ -1664,6 +1841,7 @@
   },
   {
     "norsk": "arbeidsledighet",
+    "lemma": "arbeidsledighet",
     "english": "unemployment",
     "example": "Arbeidsledigheten er lav i Norge.",
     "example_english": "Unemployment is low in Norway.",
@@ -1673,6 +1851,7 @@
   },
   {
     "norsk": "en overtid",
+    "lemma": "overtid",
     "english": "overtime",
     "example": "Han jobber mye overtid.",
     "example_english": "He works a lot of overtime.",
@@ -1682,6 +1861,7 @@
   },
   {
     "norsk": "en fagforening",
+    "lemma": "fagforening",
     "english": "a trade union",
     "example": "Han er med i fagforeningen.",
     "example_english": "He is a member of the trade union.",
@@ -1691,6 +1871,7 @@
   },
   {
     "norsk": "et møte",
+    "lemma": "møte",
     "english": "a meeting",
     "example": "Vi har møte kl. 10.",
     "example_english": "We have a meeting at 10.",
@@ -1700,6 +1881,7 @@
   },
   {
     "norsk": "hjemmekontor",
+    "lemma": "hjemmekontor",
     "english": "home office / remote work",
     "example": "Jeg jobber hjemmefra to dager i uka.",
     "example_english": "I work from home two days a week.",
@@ -1709,6 +1891,7 @@
   },
   {
     "norsk": "en frist",
+    "lemma": "frist",
     "english": "a deadline",
     "example": "Fristen er på fredag.",
     "example_english": "The deadline is on Friday.",
@@ -1718,6 +1901,7 @@
   },
   {
     "norsk": "et prosjekt",
+    "lemma": "prosjekt",
     "english": "a project",
     "example": "Vi jobber med et stort prosjekt.",
     "example_english": "We are working on a large project.",
@@ -1727,6 +1911,7 @@
   },
   {
     "norsk": "å samarbeide",
+    "lemma": "samarbeide",
     "english": "to collaborate / to work together",
     "example": "Vi samarbeider godt i teamet.",
     "example_english": "We collaborate well in the team.",
@@ -1736,6 +1921,7 @@
   },
   {
     "norsk": "en permisjon",
+    "lemma": "permisjon",
     "english": "leave (from work)",
     "example": "Hun er i foreldrepermisjon.",
     "example_english": "She is on parental leave.",
@@ -1745,6 +1931,7 @@
   },
   {
     "norsk": "en karriere",
+    "lemma": "karriere",
     "english": "a career",
     "example": "Hun har hatt en imponerende karriere.",
     "example_english": "She has had an impressive career.",
@@ -1754,6 +1941,7 @@
   },
   {
     "norsk": "produktiv",
+    "lemma": "produktiv",
     "english": "productive",
     "example": "Jeg er mest produktiv om morgenen.",
     "example_english": "I am most productive in the morning.",
@@ -1763,6 +1951,7 @@
   },
   {
     "norsk": "et ansvar",
+    "lemma": "ansvar",
     "english": "a responsibility",
     "example": "Han har mye ansvar i stillingen.",
     "example_english": "He has a lot of responsibility in the position.",
@@ -1772,6 +1961,7 @@
   },
   {
     "norsk": "en kompetanse",
+    "lemma": "kompetanse",
     "english": "competence / skills",
     "example": "Hun har høy kompetanse innen IT.",
     "example_english": "She has high competence in IT.",
@@ -1781,6 +1971,7 @@
   },
   {
     "norsk": "å fremme",
+    "lemma": "fremme",
     "english": "to promote / to advance",
     "example": "Hun ble fremmet til leder.",
     "example_english": "She was promoted to manager.",
@@ -1790,6 +1981,7 @@
   },
   {
     "norsk": "arbeidsmiljø",
+    "lemma": "arbeidsmiljø",
     "english": "working environment",
     "example": "Et godt arbeidsmiljø er viktig.",
     "example_english": "A good working environment is important.",
@@ -1799,6 +1991,7 @@
   },
   {
     "norsk": "en pause",
+    "lemma": "pause",
     "english": "a break",
     "example": "Vi tar pause klokka tolv.",
     "example_english": "We take a break at twelve.",
@@ -1806,9 +1999,9 @@
     "category": "work",
     "part": "noun"
   },
-
   {
     "norsk": "et bysentrum",
+    "lemma": "bysentrum",
     "english": "a city centre",
     "example": "Vi bor i bysentrum.",
     "example_english": "We live in the city centre.",
@@ -1818,6 +2011,7 @@
   },
   {
     "norsk": "en bydel",
+    "lemma": "bydel",
     "english": "a neighbourhood / a borough",
     "example": "Grünerløkka er en populær bydel i Oslo.",
     "example_english": "Grünerløkka is a popular neighbourhood in Oslo.",
@@ -1827,6 +2021,7 @@
   },
   {
     "norsk": "kollektivtransport",
+    "lemma": "kollektivtransport",
     "english": "public transport",
     "example": "Oslo har godt kollektivtransport.",
     "example_english": "Oslo has good public transport.",
@@ -1836,6 +2031,7 @@
   },
   {
     "norsk": "et torg",
+    "lemma": "torg",
     "english": "a (town) square",
     "example": "Det er marked på torget hver lørdag.",
     "example_english": "There is a market on the square every Saturday.",
@@ -1845,6 +2041,7 @@
   },
   {
     "norsk": "en park",
+    "lemma": "park",
     "english": "a park",
     "example": "Vi spiser lunsj i parken.",
     "example_english": "We eat lunch in the park.",
@@ -1854,6 +2051,7 @@
   },
   {
     "norsk": "trafikk",
+    "lemma": "trafikk",
     "english": "traffic",
     "example": "Det er mye trafikk i rushtimen.",
     "example_english": "There is a lot of traffic during rush hour.",
@@ -1863,6 +2061,7 @@
   },
   {
     "norsk": "en rushtid",
+    "lemma": "rushtid",
     "english": "rush hour",
     "example": "Unngå rushtiden om du kan.",
     "example_english": "Avoid rush hour if you can.",
@@ -1872,6 +2071,7 @@
   },
   {
     "norsk": "å bo i by",
+    "lemma": "å bo i by",
     "english": "to live in a city",
     "example": "Jeg foretrekker å bo i by.",
     "example_english": "I prefer to live in a city.",
@@ -1881,6 +2081,7 @@
   },
   {
     "norsk": "en leilighet",
+    "lemma": "leilighet",
     "english": "a flat / an apartment",
     "example": "Vi leier en leilighet i sentrum.",
     "example_english": "We rent a flat in the city centre.",
@@ -1890,6 +2091,7 @@
   },
   {
     "norsk": "husleie",
+    "lemma": "husleie",
     "english": "rent",
     "example": "Husleien er dyr i Oslo.",
     "example_english": "Rent is expensive in Oslo.",
@@ -1899,6 +2101,7 @@
   },
   {
     "norsk": "en café",
+    "lemma": "café",
     "english": "a café",
     "example": "Vi møtes på kafeen.",
     "example_english": "We meet at the café.",
@@ -1908,6 +2111,7 @@
   },
   {
     "norsk": "en restaurant",
+    "lemma": "restaurant",
     "english": "a restaurant",
     "example": "Vi spiser middag på restaurant.",
     "example_english": "We eat dinner at a restaurant.",
@@ -1917,6 +2121,7 @@
   },
   {
     "norsk": "en gate",
+    "lemma": "gate",
     "english": "a street",
     "example": "Karl Johans gate er Oslos hovedgate.",
     "example_english": "Karl Johans gate is Oslo's main street.",
@@ -1926,6 +2131,7 @@
   },
   {
     "norsk": "en kø",
+    "lemma": "kø",
     "english": "a queue",
     "example": "Det er alltid lang kø i helga.",
     "example_english": "There is always a long queue at the weekend.",
@@ -1935,6 +2141,7 @@
   },
   {
     "norsk": "en bygning",
+    "lemma": "bygning",
     "english": "a building",
     "example": "Rådhuset er en historisk bygning.",
     "example_english": "The town hall is a historic building.",
@@ -1944,6 +2151,7 @@
   },
   {
     "norsk": "urban",
+    "lemma": "urban",
     "english": "urban",
     "example": "Jeg liker det urbane livet.",
     "example_english": "I like urban life.",
@@ -1953,6 +2161,7 @@
   },
   {
     "norsk": "støy",
+    "lemma": "støy",
     "english": "noise",
     "example": "Det er mye støy i byen om natten.",
     "example_english": "There is a lot of noise in the city at night.",
@@ -1962,6 +2171,7 @@
   },
   {
     "norsk": "en infrastruktur",
+    "lemma": "infrastruktur",
     "english": "infrastructure",
     "example": "Bypolitikerne investerer i infrastrukturen.",
     "example_english": "City politicians are investing in the infrastructure.",
@@ -1971,6 +2181,7 @@
   },
   {
     "norsk": "mangfoldig",
+    "lemma": "mangfoldig",
     "english": "diverse",
     "example": "Oslo er en mangfoldig by.",
     "example_english": "Oslo is a diverse city.",
@@ -1980,6 +2191,7 @@
   },
   {
     "norsk": "en pendler",
+    "lemma": "pendler",
     "english": "a commuter",
     "example": "Mange pendlere tar toget til Oslo.",
     "example_english": "Many commuters take the train to Oslo.",
@@ -1989,6 +2201,7 @@
   },
   {
     "norsk": "nabolaget",
+    "lemma": "nabolaget",
     "english": "the neighbourhood",
     "example": "Vi kjenner mange i nabolaget.",
     "example_english": "We know many people in the neighbourhood.",
@@ -1998,6 +2211,7 @@
   },
   {
     "norsk": "en boligpris",
+    "lemma": "boligpris",
     "english": "a property price / house price",
     "example": "Boligprisene stiger hvert år.",
     "example_english": "Property prices rise every year.",
@@ -2007,6 +2221,7 @@
   },
   {
     "norsk": "grøntareal",
+    "lemma": "grøntareal",
     "english": "green space",
     "example": "Det trengs mer grøntareal i byene.",
     "example_english": "More green space is needed in cities.",
@@ -2016,6 +2231,7 @@
   },
   {
     "norsk": "fortau",
+    "lemma": "fortau",
     "english": "pavement / sidewalk",
     "example": "Gå på fortauet, ikke i veien.",
     "example_english": "Walk on the pavement, not in the road.",
@@ -2025,6 +2241,7 @@
   },
   {
     "norsk": "sykkelsti",
+    "lemma": "sykkelsti",
     "english": "a cycle path / a bike lane",
     "example": "Oslo har mange sykkelstier.",
     "example_english": "Oslo has many cycle paths.",
@@ -2032,9 +2249,9 @@
     "category": "city-life",
     "part": "noun"
   },
-
   {
     "norsk": "en tradisjon",
+    "lemma": "tradisjon",
     "english": "a tradition",
     "example": "Pepperkakebaking er en norsk juletradisjon.",
     "example_english": "Baking gingerbread is a Norwegian Christmas tradition.",
@@ -2044,6 +2261,7 @@
   },
   {
     "norsk": "17. mai",
+    "lemma": "17. mai",
     "english": "the 17th of May (Norway's National Day)",
     "example": "17. mai er Norges nasjonaldag.",
     "example_english": "The 17th of May is Norway's National Day.",
@@ -2053,6 +2271,7 @@
   },
   {
     "norsk": "et barnetog",
+    "lemma": "barnetog",
     "english": "a children's parade",
     "example": "Barnetog er en del av 17. mai-feiringen.",
     "example_english": "A children's parade is part of the 17th of May celebrations.",
@@ -2062,6 +2281,7 @@
   },
   {
     "norsk": "jul",
+    "lemma": "jul",
     "english": "Christmas",
     "example": "Jul er den største høytiden i Norge.",
     "example_english": "Christmas is the biggest holiday in Norway.",
@@ -2071,6 +2291,7 @@
   },
   {
     "norsk": "påske",
+    "lemma": "påske",
     "english": "Easter",
     "example": "Mange nordmenn er i fjellet i påsken.",
     "example_english": "Many Norwegians are in the mountains at Easter.",
@@ -2080,6 +2301,7 @@
   },
   {
     "norsk": "midtsommer",
+    "lemma": "midtsommer",
     "english": "midsummer / St. Hans",
     "example": "Vi feirer midtsommer med bål.",
     "example_english": "We celebrate midsummer with a bonfire.",
@@ -2089,6 +2311,7 @@
   },
   {
     "norsk": "en høytid",
+    "lemma": "høytid",
     "english": "a public holiday / a festive period",
     "example": "Julaften er en viktig høytid.",
     "example_english": "Christmas Eve is an important festive occasion.",
@@ -2098,6 +2321,7 @@
   },
   {
     "norsk": "et rituale",
+    "lemma": "rituale",
     "english": "a ritual / a custom",
     "example": "Å pynte juletreet er et familierituale.",
     "example_english": "Decorating the Christmas tree is a family ritual.",
@@ -2107,6 +2331,7 @@
   },
   {
     "norsk": "å pynte",
+    "lemma": "pynte",
     "english": "to decorate",
     "example": "Vi pynter huset til jul.",
     "example_english": "We decorate the house for Christmas.",
@@ -2116,6 +2341,7 @@
   },
   {
     "norsk": "lusekofte",
+    "lemma": "lusekofte",
     "english": "lusekofte (traditional Norwegian sweater)",
     "example": "Lusekofte er et typisk norsk plagg.",
     "example_english": "The lusekofte is a typical Norwegian garment.",
@@ -2125,6 +2351,7 @@
   },
   {
     "norsk": "rakfisk",
+    "lemma": "rakfisk",
     "english": "rakfisk (fermented trout)",
     "example": "Rakfisk er en tradisjonell norsk delikatesse.",
     "example_english": "Rakfisk is a traditional Norwegian delicacy.",
@@ -2134,6 +2361,7 @@
   },
   {
     "norsk": "pinnekjøtt",
+    "lemma": "pinnekjøtt",
     "english": "pinnekjøtt (cured lamb ribs)",
     "example": "Vi spiser pinnekjøtt til jul.",
     "example_english": "We eat pinnekjøtt at Christmas.",
@@ -2143,6 +2371,7 @@
   },
   {
     "norsk": "friluftsliv",
+    "lemma": "friluftsliv",
     "english": "outdoor life / connection with nature",
     "example": "Friluftsliv er en sentral del av norsk kultur.",
     "example_english": "Outdoor life is a central part of Norwegian culture.",
@@ -2152,6 +2381,7 @@
   },
   {
     "norsk": "allehelgensdag",
+    "lemma": "allehelgensdag",
     "english": "All Saints' Day",
     "example": "Allehelgensdag feires 1. november.",
     "example_english": "All Saints' Day is celebrated on 1 November.",
@@ -2161,6 +2391,7 @@
   },
   {
     "norsk": "en bunadsskjorte",
+    "lemma": "bunadsskjorte",
     "english": "a bunad blouse / shirt",
     "example": "Bunadsskjorten syes for hånd.",
     "example_english": "The bunad shirt is sewn by hand.",
@@ -2170,6 +2401,7 @@
   },
   {
     "norsk": "norsk mat",
+    "lemma": "norsk mat",
     "english": "Norwegian (traditional) food",
     "example": "Norsk mat inkluderer mye fisk og poteter.",
     "example_english": "Norwegian food includes a lot of fish and potatoes.",
@@ -2179,6 +2411,7 @@
   },
   {
     "norsk": "å ønske hverandre glad jul",
+    "lemma": "å ønske hverandre glad jul",
     "english": "to wish each other Merry Christmas",
     "example": "Vi ønsker hverandre glad jul på julaften.",
     "example_english": "We wish each other Merry Christmas on Christmas Eve.",
@@ -2188,6 +2421,7 @@
   },
   {
     "norsk": "en nissefigur",
+    "lemma": "nissefigur",
     "english": "a gnome / a Christmas elf figure",
     "example": "Barna liker nissefigurer i advent.",
     "example_english": "Children like Christmas elf figures in Advent.",
@@ -2197,6 +2431,7 @@
   },
   {
     "norsk": "advent",
+    "lemma": "advent",
     "english": "Advent",
     "example": "Advent starter fire søndager før jul.",
     "example_english": "Advent starts four Sundays before Christmas.",
@@ -2206,6 +2441,7 @@
   },
   {
     "norsk": "julenissen",
+    "lemma": "julenissen",
     "english": "Father Christmas / Santa Claus",
     "example": "Barna venter spent på julenissen.",
     "example_english": "The children wait eagerly for Father Christmas.",
@@ -2215,6 +2451,7 @@
   },
   {
     "norsk": "sang",
+    "lemma": "sang",
     "english": "singing / a song",
     "example": "Sang er en viktig del av norske feiringer.",
     "example_english": "Singing is an important part of Norwegian celebrations.",
@@ -2224,6 +2461,7 @@
   },
   {
     "norsk": "en fest",
+    "lemma": "fest",
     "english": "a party / a celebration",
     "example": "Vi arrangerte en stor fest.",
     "example_english": "We organised a big celebration.",
@@ -2233,6 +2471,7 @@
   },
   {
     "norsk": "å overlevere",
+    "lemma": "overlevere",
     "english": "to hand down / to pass on",
     "example": "Tradisjoner overleveres fra generasjon til generasjon.",
     "example_english": "Traditions are passed down from generation to generation.",
@@ -2242,6 +2481,7 @@
   },
   {
     "norsk": "en generasjon",
+    "lemma": "generasjon",
     "english": "a generation",
     "example": "Hver generasjon viderefører kulturen.",
     "example_english": "Each generation carries the culture forward.",
@@ -2251,6 +2491,7 @@
   },
   {
     "norsk": "folkemusikk",
+    "lemma": "folkemusikk",
     "english": "folk music",
     "example": "Folkemusikk er en viktig del av norsk arv.",
     "example_english": "Folk music is an important part of Norwegian heritage.",
@@ -2258,9 +2499,9 @@
     "category": "traditions",
     "part": "noun"
   },
-
   {
     "norsk": "viktig",
+    "lemma": "viktig",
     "english": "important",
     "example": "Det er viktig å lytte til andre.",
     "example_english": "It is important to listen to others.",
@@ -2270,6 +2511,7 @@
   },
   {
     "norsk": "nødvendig",
+    "lemma": "nødvendig",
     "english": "necessary",
     "example": "Det er nødvendig å ha forsikring.",
     "example_english": "It is necessary to have insurance.",
@@ -2279,6 +2521,7 @@
   },
   {
     "norsk": "mulig",
+    "lemma": "mulig",
     "english": "possible",
     "example": "Er det mulig å endre avtalen?",
     "example_english": "Is it possible to change the appointment?",
@@ -2288,6 +2531,7 @@
   },
   {
     "norsk": "umulig",
+    "lemma": "umulig",
     "english": "impossible",
     "example": "Det er umulig å spå fremtiden.",
     "example_english": "It is impossible to predict the future.",
@@ -2297,6 +2541,7 @@
   },
   {
     "norsk": "sannsynlig",
+    "lemma": "sannsynlig",
     "english": "likely / probable",
     "example": "Det er sannsynlig at det regner i morgen.",
     "example_english": "It is likely to rain tomorrow.",
@@ -2306,6 +2551,7 @@
   },
   {
     "norsk": "usannsynlig",
+    "lemma": "usannsynlig",
     "english": "unlikely / improbable",
     "example": "Det er usannsynlig at de vinner.",
     "example_english": "It is unlikely that they will win.",
@@ -2315,6 +2561,7 @@
   },
   {
     "norsk": "overraskende",
+    "lemma": "overraskende",
     "english": "surprising",
     "example": "Resultatet var overraskende.",
     "example_english": "The result was surprising.",
@@ -2324,6 +2571,7 @@
   },
   {
     "norsk": "fornøyd",
+    "lemma": "fornøyd",
     "english": "satisfied / pleased",
     "example": "Jeg er fornøyd med resultatet.",
     "example_english": "I am satisfied with the result.",
@@ -2333,6 +2581,7 @@
   },
   {
     "norsk": "skuffet",
+    "lemma": "skuffet",
     "english": "disappointed",
     "example": "Hun var skuffet over karakteren.",
     "example_english": "She was disappointed with the grade.",
@@ -2342,6 +2591,7 @@
   },
   {
     "norsk": "enig",
+    "lemma": "enig",
     "english": "in agreement / agreed",
     "example": "Jeg er enig med deg i dette.",
     "example_english": "I agree with you on this.",
@@ -2351,6 +2601,7 @@
   },
   {
     "norsk": "uenig",
+    "lemma": "uenig",
     "english": "in disagreement / disagreeing",
     "example": "Vi er uenige om den beslutningen.",
     "example_english": "We disagree on that decision.",
@@ -2360,6 +2611,7 @@
   },
   {
     "norsk": "relevant",
+    "lemma": "relevant",
     "english": "relevant",
     "example": "Erfaring er relevant for stillingen.",
     "example_english": "Experience is relevant for the position.",
@@ -2369,6 +2621,7 @@
   },
   {
     "norsk": "irrelevant",
+    "lemma": "irrelevant",
     "english": "irrelevant",
     "example": "Den kommentaren er irrelevant her.",
     "example_english": "That comment is irrelevant here.",
@@ -2378,6 +2631,7 @@
   },
   {
     "norsk": "typisk",
+    "lemma": "typisk",
     "english": "typical",
     "example": "Det er typisk norsk å spise lunsj tidlig.",
     "example_english": "It is typically Norwegian to eat lunch early.",
@@ -2387,6 +2641,7 @@
   },
   {
     "norsk": "åpenbar",
+    "lemma": "åpenbar",
     "english": "obvious / evident",
     "example": "Det er åpenbart at han er forkjølet.",
     "example_english": "It is obvious that he has a cold.",
@@ -2396,6 +2651,7 @@
   },
   {
     "norsk": "komplisert",
+    "lemma": "komplisert",
     "english": "complicated",
     "example": "Situasjonen er mer komplisert enn den ser ut.",
     "example_english": "The situation is more complicated than it looks.",
@@ -2405,6 +2661,7 @@
   },
   {
     "norsk": "tydelig",
+    "lemma": "tydelig",
     "english": "clear / evident",
     "example": "Det er tydelig at hun er lei seg.",
     "example_english": "It is clear that she is sad.",
@@ -2414,6 +2671,7 @@
   },
   {
     "norsk": "rimelig",
+    "lemma": "rimelig",
     "english": "reasonable / fair",
     "example": "Det er en rimelig forespørsel.",
     "example_english": "That is a reasonable request.",
@@ -2423,6 +2681,7 @@
   },
   {
     "norsk": "urimelig",
+    "lemma": "urimelig",
     "english": "unreasonable",
     "example": "Kravet deres virker urimelig.",
     "example_english": "Their demand seems unreasonable.",
@@ -2432,6 +2691,7 @@
   },
   {
     "norsk": "omstridt",
+    "lemma": "omstridt",
     "english": "controversial",
     "example": "Loven er svært omstridt.",
     "example_english": "The law is highly controversial.",
@@ -2441,6 +2701,7 @@
   },
   {
     "norsk": "avgjørende",
+    "lemma": "avgjørende",
     "english": "decisive / crucial",
     "example": "Det var et avgjørende øyeblikk.",
     "example_english": "It was a decisive moment.",
@@ -2450,6 +2711,7 @@
   },
   {
     "norsk": "bekymrende",
+    "lemma": "bekymrende",
     "english": "worrying / concerning",
     "example": "Utviklingen er bekymrende.",
     "example_english": "The development is concerning.",
@@ -2459,6 +2721,7 @@
   },
   {
     "norsk": "oppmuntrende",
+    "lemma": "oppmuntrende",
     "english": "encouraging",
     "example": "Resultatene er oppmuntrende.",
     "example_english": "The results are encouraging.",
@@ -2468,6 +2731,7 @@
   },
   {
     "norsk": "etter min mening",
+    "lemma": "etter min mening",
     "english": "in my opinion",
     "example": "Etter min mening er det feil avgjørelse.",
     "example_english": "In my opinion, it is the wrong decision.",
@@ -2477,6 +2741,7 @@
   },
   {
     "norsk": "gjennomtenkt",
+    "lemma": "gjennomtenkt",
     "english": "considered / well thought-out",
     "example": "Det var et gjennomtenkt svar.",
     "example_english": "That was a well thought-out answer.",
@@ -2484,9 +2749,9 @@
     "category": "opinion-adjectives",
     "part": "adjective"
   },
-
   {
     "norsk": "en rett",
+    "lemma": "rett",
     "english": "a dish / a course",
     "example": "Hvilken rett anbefaler du?",
     "example_english": "Which dish do you recommend?",
@@ -2496,6 +2761,7 @@
   },
   {
     "norsk": "en meny",
+    "lemma": "meny",
     "english": "a menu",
     "example": "Kan jeg se menyen?",
     "example_english": "Can I see the menu?",
@@ -2505,6 +2771,7 @@
   },
   {
     "norsk": "å bestille",
+    "lemma": "bestille",
     "english": "to order",
     "example": "Jeg vil gjerne bestille en hovedrett.",
     "example_english": "I would like to order a main course.",
@@ -2514,6 +2781,7 @@
   },
   {
     "norsk": "å anbefale",
+    "lemma": "anbefale",
     "english": "to recommend",
     "example": "Kan du anbefale en god vin til denne retten?",
     "example_english": "Can you recommend a good wine for this dish?",
@@ -2523,6 +2791,7 @@
   },
   {
     "norsk": "et krydder",
+    "lemma": "krydder",
     "english": "a spice / a herb",
     "example": "Retten har mange eksotiske krydder.",
     "example_english": "The dish has many exotic spices.",
@@ -2532,6 +2801,7 @@
   },
   {
     "norsk": "vegetarisk",
+    "lemma": "vegetarisk",
     "english": "vegetarian",
     "example": "Har dere vegetariske alternativer?",
     "example_english": "Do you have vegetarian options?",
@@ -2541,6 +2811,7 @@
   },
   {
     "norsk": "vegansk",
+    "lemma": "vegansk",
     "english": "vegan",
     "example": "Jeg spiser vegansk.",
     "example_english": "I eat vegan.",
@@ -2550,6 +2821,7 @@
   },
   {
     "norsk": "allergisk",
+    "lemma": "allergisk",
     "english": "allergic",
     "example": "Jeg er allergisk mot nøtter.",
     "example_english": "I am allergic to nuts.",
@@ -2559,6 +2831,7 @@
   },
   {
     "norsk": "en forrett",
+    "lemma": "forrett",
     "english": "a starter / an appetiser",
     "example": "Vi bestilte suppe som forrett.",
     "example_english": "We ordered soup as a starter.",
@@ -2568,6 +2841,7 @@
   },
   {
     "norsk": "en dessert",
+    "lemma": "dessert",
     "english": "a dessert",
     "example": "Skal vi ta dessert?",
     "example_english": "Shall we have dessert?",
@@ -2577,6 +2851,7 @@
   },
   {
     "norsk": "å marinere",
+    "lemma": "marinere",
     "english": "to marinate",
     "example": "Mariner kjøttet i minst to timer.",
     "example_english": "Marinate the meat for at least two hours.",
@@ -2586,6 +2861,7 @@
   },
   {
     "norsk": "å grille",
+    "lemma": "grille",
     "english": "to grill / to barbecue",
     "example": "Vi griller laks i helgen.",
     "example_english": "We are grilling salmon at the weekend.",
@@ -2595,6 +2871,7 @@
   },
   {
     "norsk": "å dampe",
+    "lemma": "dampe",
     "english": "to steam",
     "example": "Det er sunt å dampe grønnsaker.",
     "example_english": "It is healthy to steam vegetables.",
@@ -2604,6 +2881,7 @@
   },
   {
     "norsk": "en oppskrift",
+    "lemma": "oppskrift",
     "english": "a recipe",
     "example": "Har du en god oppskrift på lapskaus?",
     "example_english": "Do you have a good recipe for lapskaus?",
@@ -2613,6 +2891,7 @@
   },
   {
     "norsk": "en porsjon",
+    "lemma": "porsjon",
     "english": "a portion / a serving",
     "example": "En porsjon er nok til to personer.",
     "example_english": "One portion is enough for two people.",
@@ -2622,6 +2901,7 @@
   },
   {
     "norsk": "en deig",
+    "lemma": "deig",
     "english": "dough / batter",
     "example": "La deigen heve i en time.",
     "example_english": "Let the dough rise for one hour.",
@@ -2631,6 +2911,7 @@
   },
   {
     "norsk": "å krydre",
+    "lemma": "krydre",
     "english": "to season / to spice",
     "example": "Krydre suppen etter smak.",
     "example_english": "Season the soup to taste.",
@@ -2640,6 +2921,7 @@
   },
   {
     "norsk": "en saus",
+    "lemma": "saus",
     "english": "a sauce / a gravy",
     "example": "Brunsaus passer godt til kjøttkaker.",
     "example_english": "Brown sauce goes well with meatballs.",
@@ -2649,6 +2931,7 @@
   },
   {
     "norsk": "et kjøkken",
+    "lemma": "kjøkken",
     "english": "a cuisine / a kitchen",
     "example": "Jeg liker italiensk kjøkken.",
     "example_english": "I like Italian cuisine.",
@@ -2658,6 +2941,7 @@
   },
   {
     "norsk": "næringsrik",
+    "lemma": "næringsrik",
     "english": "nutritious",
     "example": "Linser er veldig næringsrike.",
     "example_english": "Lentils are very nutritious.",
@@ -2667,6 +2951,7 @@
   },
   {
     "norsk": "fet",
+    "lemma": "fet",
     "english": "fatty / greasy",
     "example": "Denne retten er ganske fet.",
     "example_english": "This dish is quite fatty.",
@@ -2676,6 +2961,7 @@
   },
   {
     "norsk": "smakfull",
+    "lemma": "smakfull",
     "english": "flavourful / tasty",
     "example": "Gryteretten var veldig smakfull.",
     "example_english": "The stew was very flavourful.",
@@ -2685,6 +2971,7 @@
   },
   {
     "norsk": "å tilsette",
+    "lemma": "tilsette",
     "english": "to add",
     "example": "Tilsett litt sitron for friskhet.",
     "example_english": "Add a little lemon for freshness.",
@@ -2694,6 +2981,7 @@
   },
   {
     "norsk": "rå",
+    "lemma": "rå",
     "english": "raw",
     "example": "Noen spiser rå laks i sushi.",
     "example_english": "Some people eat raw salmon in sushi.",
@@ -2703,6 +2991,7 @@
   },
   {
     "norsk": "å servere",
+    "lemma": "servere",
     "english": "to serve",
     "example": "Retten serveres varm.",
     "example_english": "The dish is served warm.",
@@ -2710,9 +2999,9 @@
     "category": "food-cooking-advanced",
     "part": "verb"
   },
-
   {
     "norsk": "å leie",
+    "lemma": "leie",
     "english": "to rent / to lease",
     "example": "Vi leier en leilighet i sentrum.",
     "example_english": "We rent a flat in the city centre.",
@@ -2722,6 +3011,7 @@
   },
   {
     "norsk": "en utleier",
+    "lemma": "utleier",
     "english": "a landlord / a landlady",
     "example": "Utleieren svarte ikke på meldingen.",
     "example_english": "The landlord did not reply to the message.",
@@ -2731,6 +3021,7 @@
   },
   {
     "norsk": "en leietaker",
+    "lemma": "leietaker",
     "english": "a tenant",
     "example": "Leietakeren betalte husleien for sent.",
     "example_english": "The tenant paid the rent too late.",
@@ -2740,6 +3031,7 @@
   },
   {
     "norsk": "en husleie",
+    "lemma": "husleie",
     "english": "rent (monthly payment)",
     "example": "Husleien øker hvert år.",
     "example_english": "The rent increases every year.",
@@ -2749,6 +3041,7 @@
   },
   {
     "norsk": "å flytte inn",
+    "lemma": "å flytte inn",
     "english": "to move in",
     "example": "Vi flytter inn i leiligheten på lørdag.",
     "example_english": "We move into the flat on Saturday.",
@@ -2758,6 +3051,7 @@
   },
   {
     "norsk": "å flytte ut",
+    "lemma": "å flytte ut",
     "english": "to move out",
     "example": "Vi må flytte ut innen utgangen av måneden.",
     "example_english": "We must move out by the end of the month.",
@@ -2767,6 +3061,7 @@
   },
   {
     "norsk": "en nabo",
+    "lemma": "nabo",
     "english": "a neighbour",
     "example": "Naboene er veldig støyende.",
     "example_english": "The neighbours are very noisy.",
@@ -2776,6 +3071,7 @@
   },
   {
     "norsk": "et nabolag",
+    "lemma": "nabolag",
     "english": "a neighbourhood",
     "example": "Vi bor i et trygt nabolag.",
     "example_english": "We live in a safe neighbourhood.",
@@ -2785,6 +3081,7 @@
   },
   {
     "norsk": "en kontrakt",
+    "lemma": "kontrakt",
     "english": "a contract",
     "example": "Les kontrakten nøye før du signerer.",
     "example_english": "Read the contract carefully before signing.",
@@ -2794,6 +3091,7 @@
   },
   {
     "norsk": "et depositum",
+    "lemma": "depositum",
     "english": "a deposit",
     "example": "Depositumet tilsvarer to måneders husleie.",
     "example_english": "The deposit equals two months' rent.",
@@ -2803,6 +3101,7 @@
   },
   {
     "norsk": "en eiendom",
+    "lemma": "eiendom",
     "english": "a property",
     "example": "Han eier flere eiendommer.",
     "example_english": "He owns several properties.",
@@ -2812,6 +3111,7 @@
   },
   {
     "norsk": "å kjøpe bolig",
+    "lemma": "å kjøpe bolig",
     "english": "to buy a home / property",
     "example": "Vi drømmer om å kjøpe bolig.",
     "example_english": "We dream of buying a home.",
@@ -2821,6 +3121,7 @@
   },
   {
     "norsk": "et borettslag",
+    "lemma": "borettslag",
     "english": "a housing cooperative",
     "example": "Vi kjøpte en andel i et borettslag.",
     "example_english": "We bought a share in a housing cooperative.",
@@ -2830,6 +3131,7 @@
   },
   {
     "norsk": "en megler",
+    "lemma": "megler",
     "english": "an estate agent / a broker",
     "example": "Megleren viste oss tre leiligheter.",
     "example_english": "The estate agent showed us three flats.",
@@ -2839,6 +3141,7 @@
   },
   {
     "norsk": "en visning",
+    "lemma": "visning",
     "english": "a viewing / an open house",
     "example": "Vi drar på visning i morgen.",
     "example_english": "We are going to a viewing tomorrow.",
@@ -2848,6 +3151,7 @@
   },
   {
     "norsk": "et boliglån",
+    "lemma": "boliglån",
     "english": "a mortgage",
     "example": "Vi søkte om boliglån i banken.",
     "example_english": "We applied for a mortgage at the bank.",
@@ -2857,6 +3161,7 @@
   },
   {
     "norsk": "en oppussing",
+    "lemma": "oppussing",
     "english": "a renovation / a refurbishment",
     "example": "Kjøkkenet trenger oppussing.",
     "example_english": "The kitchen needs renovation.",
@@ -2866,6 +3171,7 @@
   },
   {
     "norsk": "en hage",
+    "lemma": "hage",
     "english": "a garden",
     "example": "Huset har en stor hage.",
     "example_english": "The house has a large garden.",
@@ -2875,6 +3181,7 @@
   },
   {
     "norsk": "et fellesareal",
+    "lemma": "fellesareal",
     "english": "a communal area",
     "example": "Fellesarealet deles av alle beboerne.",
     "example_english": "The communal area is shared by all residents.",
@@ -2884,6 +3191,7 @@
   },
   {
     "norsk": "å si opp leiekontrakten",
+    "lemma": "å si opp leiekontrakten",
     "english": "to give notice / to terminate the lease",
     "example": "Vi sa opp leiekontrakten med tre måneders varsel.",
     "example_english": "We gave three months' notice to terminate the lease.",
@@ -2893,6 +3201,7 @@
   },
   {
     "norsk": "møblert",
+    "lemma": "møblert",
     "english": "furnished",
     "example": "Leiligheten er fullt møblert.",
     "example_english": "The flat is fully furnished.",
@@ -2902,6 +3211,7 @@
   },
   {
     "norsk": "umøblert",
+    "lemma": "umøblert",
     "english": "unfurnished",
     "example": "Vi leter etter en umøblert leilighet.",
     "example_english": "We are looking for an unfurnished flat.",
@@ -2911,6 +3221,7 @@
   },
   {
     "norsk": "en etasje",
+    "lemma": "etasje",
     "english": "a floor / a storey",
     "example": "Vi bor på tredje etasje.",
     "example_english": "We live on the third floor.",
@@ -2920,6 +3231,7 @@
   },
   {
     "norsk": "en heis",
+    "lemma": "heis",
     "english": "a lift / an elevator",
     "example": "Bygningen har ikke heis.",
     "example_english": "The building does not have a lift.",
@@ -2929,6 +3241,7 @@
   },
   {
     "norsk": "en balkong",
+    "lemma": "balkong",
     "english": "a balcony",
     "example": "Leiligheten har en liten balkong.",
     "example_english": "The flat has a small balcony.",
@@ -2936,9 +3249,9 @@
     "category": "housing-renting",
     "part": "noun"
   },
-
   {
     "norsk": "en resept",
+    "lemma": "resept",
     "english": "a prescription",
     "example": "Legen skrev ut en resept.",
     "example_english": "The doctor wrote out a prescription.",
@@ -2948,6 +3261,7 @@
   },
   {
     "norsk": "et sykehus",
+    "lemma": "sykehus",
     "english": "a hospital",
     "example": "Han ble innlagt på sykehuset.",
     "example_english": "He was admitted to hospital.",
@@ -2957,6 +3271,7 @@
   },
   {
     "norsk": "en lege",
+    "lemma": "lege",
     "english": "a doctor / a GP",
     "example": "Jeg bestilte time hos fastlegen.",
     "example_english": "I booked an appointment with my GP.",
@@ -2966,6 +3281,7 @@
   },
   {
     "norsk": "å trene",
+    "lemma": "trene",
     "english": "to exercise / to work out",
     "example": "Det er viktig å trene regelmessig.",
     "example_english": "It is important to exercise regularly.",
@@ -2975,6 +3291,7 @@
   },
   {
     "norsk": "et symptom",
+    "lemma": "symptom",
     "english": "a symptom",
     "example": "Hva er symptomene på influensa?",
     "example_english": "What are the symptoms of the flu?",
@@ -2984,6 +3301,7 @@
   },
   {
     "norsk": "en allergi",
+    "lemma": "allergi",
     "english": "an allergy",
     "example": "Hun har alvorlig allergi mot peanøtter.",
     "example_english": "She has a severe allergy to peanuts.",
@@ -2993,6 +3311,7 @@
   },
   {
     "norsk": "å undersøke",
+    "lemma": "undersøke",
     "english": "to examine / to investigate",
     "example": "Legen undersøkte pasienten grundig.",
     "example_english": "The doctor examined the patient thoroughly.",
@@ -3002,6 +3321,7 @@
   },
   {
     "norsk": "en diagnose",
+    "lemma": "diagnose",
     "english": "a diagnosis",
     "example": "Legen stilte en diagnose.",
     "example_english": "The doctor made a diagnosis.",
@@ -3011,6 +3331,7 @@
   },
   {
     "norsk": "en behandling",
+    "lemma": "behandling",
     "english": "a treatment",
     "example": "Behandlingen varer i seks uker.",
     "example_english": "The treatment lasts six weeks.",
@@ -3020,6 +3341,7 @@
   },
   {
     "norsk": "en blodprøve",
+    "lemma": "blodprøve",
     "english": "a blood test",
     "example": "Legen tok en blodprøve.",
     "example_english": "The doctor took a blood test.",
@@ -3029,6 +3351,7 @@
   },
   {
     "norsk": "en røntgen",
+    "lemma": "røntgen",
     "english": "an X-ray",
     "example": "De tok røntgen av kneet hennes.",
     "example_english": "They took an X-ray of her knee.",
@@ -3038,6 +3361,7 @@
   },
   {
     "norsk": "en spesialist",
+    "lemma": "spesialist",
     "english": "a specialist",
     "example": "Hun ble henvist til en spesialist.",
     "example_english": "She was referred to a specialist.",
@@ -3047,6 +3371,7 @@
   },
   {
     "norsk": "mental helse",
+    "lemma": "mental helse",
     "english": "mental health",
     "example": "Mental helse er like viktig som fysisk helse.",
     "example_english": "Mental health is as important as physical health.",
@@ -3056,6 +3381,7 @@
   },
   {
     "norsk": "stress",
+    "lemma": "stress",
     "english": "stress",
     "example": "Kronisk stress er skadelig for kroppen.",
     "example_english": "Chronic stress is harmful to the body.",
@@ -3065,6 +3391,7 @@
   },
   {
     "norsk": "å forebygge",
+    "lemma": "forebygge",
     "english": "to prevent",
     "example": "Vaksinasjon forebygger alvorlige sykdommer.",
     "example_english": "Vaccination prevents serious diseases.",
@@ -3074,6 +3401,7 @@
   },
   {
     "norsk": "en livsstil",
+    "lemma": "livsstil",
     "english": "a lifestyle",
     "example": "En sunn livsstil er viktig for helsen.",
     "example_english": "A healthy lifestyle is important for health.",
@@ -3083,6 +3411,7 @@
   },
   {
     "norsk": "kronisk",
+    "lemma": "kronisk",
     "english": "chronic",
     "example": "Han lider av kroniske ryggsmerter.",
     "example_english": "He suffers from chronic back pain.",
@@ -3092,6 +3421,7 @@
   },
   {
     "norsk": "akutt",
+    "lemma": "akutt",
     "english": "acute / urgent",
     "example": "Han hadde akutte brystsmerter.",
     "example_english": "He had acute chest pains.",
@@ -3101,6 +3431,7 @@
   },
   {
     "norsk": "en rehabilitering",
+    "lemma": "rehabilitering",
     "english": "rehabilitation / rehab",
     "example": "Han er i rehabilitering etter operasjonen.",
     "example_english": "He is in rehabilitation after the operation.",
@@ -3110,6 +3441,7 @@
   },
   {
     "norsk": "en ernæring",
+    "lemma": "ernæring",
     "english": "nutrition",
     "example": "God ernæring er grunnlaget for helse.",
     "example_english": "Good nutrition is the foundation of health.",
@@ -3119,6 +3451,7 @@
   },
   {
     "norsk": "en bivirkning",
+    "lemma": "bivirkning",
     "english": "a side effect",
     "example": "Medisinen har noen bivirkninger.",
     "example_english": "The medicine has some side effects.",
@@ -3128,6 +3461,7 @@
   },
   {
     "norsk": "et legekontor",
+    "lemma": "legekontor",
     "english": "a doctor's surgery / a clinic",
     "example": "Legekontoret er stengt på søndager.",
     "example_english": "The doctor's surgery is closed on Sundays.",
@@ -3137,6 +3471,7 @@
   },
   {
     "norsk": "å bli frisk",
+    "lemma": "å bli frisk",
     "english": "to recover / to get better",
     "example": "Hun ble frisk etter to uker.",
     "example_english": "She recovered after two weeks.",
@@ -3146,6 +3481,7 @@
   },
   {
     "norsk": "smertestillende",
+    "lemma": "smertestillende",
     "english": "painkiller / pain-relieving",
     "example": "Han tok smertestillende tabletter.",
     "example_english": "He took painkilling tablets.",
@@ -3155,6 +3491,7 @@
   },
   {
     "norsk": "en fastlege",
+    "lemma": "fastlege",
     "english": "a GP / a regular doctor",
     "example": "Alle i Norge har rett til en fastlege.",
     "example_english": "Everyone in Norway is entitled to a GP.",
@@ -3162,9 +3499,9 @@
     "category": "health-body-intermediate",
     "part": "noun"
   },
-
   {
     "norsk": "en konto",
+    "lemma": "konto",
     "english": "an account",
     "example": "Jeg sjekker kontoen min på nettet.",
     "example_english": "I check my account online.",
@@ -3174,6 +3511,7 @@
   },
   {
     "norsk": "å spare",
+    "lemma": "spare",
     "english": "to save (money)",
     "example": "Vi sparer til en ny bil.",
     "example_english": "We are saving for a new car.",
@@ -3183,6 +3521,7 @@
   },
   {
     "norsk": "et lån",
+    "lemma": "lån",
     "english": "a loan",
     "example": "Vi søkte om et lån i banken.",
     "example_english": "We applied for a loan at the bank.",
@@ -3192,6 +3531,7 @@
   },
   {
     "norsk": "en regning",
+    "lemma": "regning",
     "english": "a bill",
     "example": "Regningen forfaller neste uke.",
     "example_english": "The bill is due next week.",
@@ -3201,6 +3541,7 @@
   },
   {
     "norsk": "å betale",
+    "lemma": "betale",
     "english": "to pay",
     "example": "Jeg betaler alltid regningene i tide.",
     "example_english": "I always pay the bills on time.",
@@ -3210,6 +3551,7 @@
   },
   {
     "norsk": "en rente",
+    "lemma": "rente",
     "english": "an interest rate",
     "example": "Renten på boliglånet har økt.",
     "example_english": "The interest rate on the mortgage has risen.",
@@ -3219,6 +3561,7 @@
   },
   {
     "norsk": "et budsjett",
+    "lemma": "budsjett",
     "english": "a budget",
     "example": "Vi lager et månedlig budsjett.",
     "example_english": "We make a monthly budget.",
@@ -3228,6 +3571,7 @@
   },
   {
     "norsk": "en skatt",
+    "lemma": "skatt",
     "english": "a tax",
     "example": "Skatten i Norge er relativt høy.",
     "example_english": "Tax in Norway is relatively high.",
@@ -3237,6 +3581,7 @@
   },
   {
     "norsk": "en bankkonto",
+    "lemma": "bankkonto",
     "english": "a bank account",
     "example": "Åpne en bankkonto i Norge.",
     "example_english": "Open a bank account in Norway.",
@@ -3246,6 +3591,7 @@
   },
   {
     "norsk": "en overføring",
+    "lemma": "overføring",
     "english": "a transfer",
     "example": "Jeg sender en overføring på 500 kroner.",
     "example_english": "I am sending a transfer of 500 kroner.",
@@ -3255,6 +3601,7 @@
   },
   {
     "norsk": "en minibank",
+    "lemma": "minibank",
     "english": "an ATM / a cash machine",
     "example": "Er det en minibank i nærheten?",
     "example_english": "Is there an ATM nearby?",
@@ -3264,6 +3611,7 @@
   },
   {
     "norsk": "å heve penger",
+    "lemma": "å heve penger",
     "english": "to withdraw money",
     "example": "Jeg skal heve penger i minibanken.",
     "example_english": "I need to withdraw money from the ATM.",
@@ -3273,6 +3621,7 @@
   },
   {
     "norsk": "en gjeld",
+    "lemma": "gjeld",
     "english": "a debt",
     "example": "Hun jobber hardt for å betale gjelden.",
     "example_english": "She works hard to pay off her debt.",
@@ -3282,6 +3631,7 @@
   },
   {
     "norsk": "en inntekt",
+    "lemma": "inntekt",
     "english": "an income",
     "example": "Inntekten dekker knapt utgiftene.",
     "example_english": "The income barely covers the expenses.",
@@ -3291,6 +3641,7 @@
   },
   {
     "norsk": "en utgift",
+    "lemma": "utgift",
     "english": "an expense / an expenditure",
     "example": "Vi prøver å kutte ned på utgiftene.",
     "example_english": "We are trying to cut down on expenses.",
@@ -3300,6 +3651,7 @@
   },
   {
     "norsk": "å investere",
+    "lemma": "investere",
     "english": "to invest",
     "example": "Hun investerer i aksjer.",
     "example_english": "She invests in shares.",
@@ -3309,6 +3661,7 @@
   },
   {
     "norsk": "en aksje",
+    "lemma": "aksje",
     "english": "a share / a stock",
     "example": "Han kjøpte aksjer i et norsk selskap.",
     "example_english": "He bought shares in a Norwegian company.",
@@ -3318,6 +3671,7 @@
   },
   {
     "norsk": "forsikring",
+    "lemma": "forsikring",
     "english": "insurance",
     "example": "Tegn innboforsikring når du leier bolig.",
     "example_english": "Take out contents insurance when you rent a home.",
@@ -3327,6 +3681,7 @@
   },
   {
     "norsk": "å nedbetale",
+    "lemma": "nedbetale",
     "english": "to pay off / to repay",
     "example": "Vi nedbetaler lånet over 20 år.",
     "example_english": "We repay the loan over 20 years.",
@@ -3336,6 +3691,7 @@
   },
   {
     "norsk": "en kontoutskrift",
+    "lemma": "kontoutskrift",
     "english": "a bank statement",
     "example": "Jeg fikk kontoutskriften på e-post.",
     "example_english": "I received the bank statement by email.",
@@ -3345,6 +3701,7 @@
   },
   {
     "norsk": "valuta",
+    "lemma": "valuta",
     "english": "currency / foreign exchange",
     "example": "Kursen på valuta svinger daglig.",
     "example_english": "The currency exchange rate fluctuates daily.",
@@ -3354,6 +3711,7 @@
   },
   {
     "norsk": "å gå i balanse",
+    "lemma": "å gå i balanse",
     "english": "to break even",
     "example": "Bedriften gikk akkurat i balanse i fjor.",
     "example_english": "The company just broke even last year.",
@@ -3363,6 +3721,7 @@
   },
   {
     "norsk": "inflasjon",
+    "lemma": "inflasjon",
     "english": "inflation",
     "example": "Inflasjonen gjør dagligvarer dyrere.",
     "example_english": "Inflation makes groceries more expensive.",
@@ -3372,6 +3731,7 @@
   },
   {
     "norsk": "økonomi",
+    "lemma": "økonomi",
     "english": "economy / finances",
     "example": "Den norske økonomien er sterk.",
     "example_english": "The Norwegian economy is strong.",
@@ -3381,6 +3741,7 @@
   },
   {
     "norsk": "å bruke penger",
+    "lemma": "å bruke penger",
     "english": "to spend money",
     "example": "Han bruker for mye penger på mat ute.",
     "example_english": "He spends too much money eating out.",

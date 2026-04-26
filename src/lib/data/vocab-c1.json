@@ -1,6 +1,7 @@
 [
   {
     "norsk": "en ontologi",
+    "lemma": "ontologi",
     "english": "ontology (study of being/existence)",
     "example": "Ontologi stiller spørsmål om hva som eksisterer.",
     "example_english": "Ontology asks questions about what exists.",
@@ -10,6 +11,7 @@
   },
   {
     "norsk": "en epistemologi",
+    "lemma": "epistemologi",
     "english": "epistemology (theory of knowledge)",
     "example": "Epistemologi undersøker grensene for menneskelig erkjennelse.",
     "example_english": "Epistemology investigates the limits of human knowledge.",
@@ -19,6 +21,7 @@
   },
   {
     "norsk": "et aksiom",
+    "lemma": "aksiom",
     "english": "an axiom",
     "example": "Matematikk bygger på ubeviselige aksiomer.",
     "example_english": "Mathematics is built on unprovable axioms.",
@@ -28,6 +31,7 @@
   },
   {
     "norsk": "dialektikk",
+    "lemma": "dialektikk",
     "english": "dialectics",
     "example": "Hegels dialektikk beskriver how ideer utvikler seg gjennom motsetninger.",
     "example_english": "Hegel's dialectics describes how ideas develop through contradictions.",
@@ -37,6 +41,7 @@
   },
   {
     "norsk": "en fenomenologi",
+    "lemma": "fenomenologi",
     "english": "phenomenology",
     "example": "Husserl grunnla fenomenologien som filosofisk metode.",
     "example_english": "Husserl founded phenomenology as a philosophical method.",
@@ -46,6 +51,7 @@
   },
   {
     "norsk": "et postulat",
+    "lemma": "postulat",
     "english": "a postulate",
     "example": "Filosofen lanserte et dristig postulat.",
     "example_english": "The philosopher put forward a bold postulate.",
@@ -55,6 +61,7 @@
   },
   {
     "norsk": "determinisme",
+    "lemma": "determinisme",
     "english": "determinism",
     "example": "Determinisme hevder at alle hendelser er forutbestemte.",
     "example_english": "Determinism holds that all events are predetermined.",
@@ -64,6 +71,7 @@
   },
   {
     "norsk": "en fri vilje",
+    "lemma": "en fri vilje",
     "english": "free will",
     "example": "Eksisterer fri vilje i en deterministisk verden?",
     "example_english": "Does free will exist in a deterministic world?",
@@ -73,6 +81,7 @@
   },
   {
     "norsk": "et etisk dilemma",
+    "lemma": "et etisk dilemma",
     "english": "an ethical dilemma",
     "example": "Trolleyproblemet er et klassisk etisk dilemma.",
     "example_english": "The trolley problem is a classic ethical dilemma.",
@@ -82,6 +91,7 @@
   },
   {
     "norsk": "utilitarisme",
+    "lemma": "utilitarisme",
     "english": "utilitarianism",
     "example": "Utilitarisme vurderer handlinger etter deres konsekvenser.",
     "example_english": "Utilitarianism evaluates actions by their consequences.",
@@ -91,6 +101,7 @@
   },
   {
     "norsk": "en dyd",
+    "lemma": "dyd",
     "english": "a virtue",
     "example": "Aristoteles mente at dyden lå i middelveien.",
     "example_english": "Aristotle believed that virtue lay in the middle path.",
@@ -100,6 +111,7 @@
   },
   {
     "norsk": "nihilisme",
+    "lemma": "nihilisme",
     "english": "nihilism",
     "example": "Nihilisme avviser objektive verdier og mening.",
     "example_english": "Nihilism rejects objective values and meaning.",
@@ -109,6 +121,7 @@
   },
   {
     "norsk": "eksistensialisme",
+    "lemma": "eksistensialisme",
     "english": "existentialism",
     "example": "Sartre mente at eksistensen kommer før essensen.",
     "example_english": "Sartre believed that existence precedes essence.",
@@ -118,6 +131,7 @@
   },
   {
     "norsk": "et paradoks",
+    "lemma": "paradoks",
     "english": "a paradox",
     "example": "Zenons paradokser utfordrer vår forståelse av bevegelse.",
     "example_english": "Zeno's paradoxes challenge our understanding of motion.",
@@ -127,6 +141,7 @@
   },
   {
     "norsk": "en deduksjon",
+    "lemma": "deduksjon",
     "english": "deduction",
     "example": "Sokratisk metode bruker deduksjon til å avdekke sannhet.",
     "example_english": "The Socratic method uses deduction to uncover truth.",
@@ -136,6 +151,7 @@
   },
   {
     "norsk": "en induksjon",
+    "lemma": "induksjon",
     "english": "induction",
     "example": "Vitenskapelig induksjon trekker generelle lover fra observasjoner.",
     "example_english": "Scientific induction draws general laws from observations.",
@@ -145,6 +161,7 @@
   },
   {
     "norsk": "en subjektivitet",
+    "lemma": "subjektivitet",
     "english": "subjectivity",
     "example": "Subjektivitet preger vår oppfatning av verden.",
     "example_english": "Subjectivity characterises our perception of the world.",
@@ -154,6 +171,7 @@
   },
   {
     "norsk": "en objektivitet",
+    "lemma": "objektivitet",
     "english": "objectivity",
     "example": "Objektivitet i vitenskapen er et ideal som er vanskelig å nå.",
     "example_english": "Objectivity in science is an ideal that is hard to achieve.",
@@ -163,6 +181,7 @@
   },
   {
     "norsk": "metafysikk",
+    "lemma": "metafysikk",
     "english": "metaphysics",
     "example": "Metafysikk undersøker virkelighetens grunnleggende struktur.",
     "example_english": "Metaphysics investigates the fundamental structure of reality.",
@@ -172,6 +191,7 @@
   },
   {
     "norsk": "relativisme",
+    "lemma": "relativisme",
     "english": "relativism",
     "example": "Moralsk relativisme hevder at sannhet er kulturbetinget.",
     "example_english": "Moral relativism holds that truth is culture-dependent.",
@@ -181,6 +201,7 @@
   },
   {
     "norsk": "en syllogisme",
+    "lemma": "syllogisme",
     "english": "a syllogism",
     "example": "Et syllogisme trekker en konklusjon fra to premisser.",
     "example_english": "A syllogism draws a conclusion from two premises.",
@@ -190,6 +211,7 @@
   },
   {
     "norsk": "empirisme",
+    "lemma": "empirisme",
     "english": "empiricism",
     "example": "Empirisme hevder at kunnskap stammer fra sanseerfaringer.",
     "example_english": "Empiricism holds that knowledge comes from sensory experience.",
@@ -199,6 +221,7 @@
   },
   {
     "norsk": "rasjonalisme",
+    "lemma": "rasjonalisme",
     "english": "rationalism",
     "example": "Descartes er en sentral rasjonalistisk tenker.",
     "example_english": "Descartes is a key rationalist thinker.",
@@ -208,6 +231,7 @@
   },
   {
     "norsk": "å reflektere over",
+    "lemma": "å reflektere over",
     "english": "to reflect upon / to contemplate",
     "example": "Filosofer reflekterer over meningen med livet.",
     "example_english": "Philosophers reflect upon the meaning of life.",
@@ -217,6 +241,7 @@
   },
   {
     "norsk": "en transcendens",
+    "lemma": "transcendens",
     "english": "transcendence",
     "example": "Kants transcendensfilosofi skiller fenomen fra noumenon.",
     "example_english": "Kant's philosophy of transcendence distinguishes phenomenon from noumenon.",
@@ -224,9 +249,9 @@
     "category": "philosophy",
     "part": "noun"
   },
-
   {
     "norsk": "et forskningsdesign",
+    "lemma": "forskningsdesign",
     "english": "a research design",
     "example": "Valg av forskningsdesign er avgjørende for studiens gyldighet.",
     "example_english": "The choice of research design is crucial for the study's validity.",
@@ -236,6 +261,7 @@
   },
   {
     "norsk": "en metodologi",
+    "lemma": "metodologi",
     "english": "a methodology",
     "example": "Metodologien ble begrunnet grundig i metodekapittelet.",
     "example_english": "The methodology was thoroughly justified in the methods chapter.",
@@ -245,6 +271,7 @@
   },
   {
     "norsk": "en litteraturgjennomgang",
+    "lemma": "litteraturgjennomgang",
     "english": "a literature review",
     "example": "Litteraturgjennomgangen identifiserte tre sentrale teorier.",
     "example_english": "The literature review identified three central theories.",
@@ -254,6 +281,7 @@
   },
   {
     "norsk": "en diskurs",
+    "lemma": "diskurs",
     "english": "a discourse",
     "example": "Den akademiske diskursen om klimaet er kompleks.",
     "example_english": "The academic discourse on climate is complex.",
@@ -263,6 +291,7 @@
   },
   {
     "norsk": "en avhandling",
+    "lemma": "avhandling",
     "english": "a thesis / a dissertation",
     "example": "Avhandlingen ble forsvart for en komité.",
     "example_english": "The thesis was defended before a committee.",
@@ -272,6 +301,7 @@
   },
   {
     "norsk": "en fagfellevurdering",
+    "lemma": "fagfellevurdering",
     "english": "peer review",
     "example": "Artikkelen gikk gjennom streng fagfellevurdering.",
     "example_english": "The article went through rigorous peer review.",
@@ -281,6 +311,7 @@
   },
   {
     "norsk": "å sitere",
+    "lemma": "sitere",
     "english": "to cite / to quote",
     "example": "Du må sitere alle kilder korrekt.",
     "example_english": "You must cite all sources correctly.",
@@ -290,6 +321,7 @@
   },
   {
     "norsk": "en tverrfaglig",
+    "lemma": "en tverrfaglig",
     "english": "interdisciplinary",
     "example": "Prosjektet krevde en tverrfaglig tilnærming.",
     "example_english": "The project required an interdisciplinary approach.",
@@ -299,6 +331,7 @@
   },
   {
     "norsk": "et forskningsgap",
+    "lemma": "forskningsgap",
     "english": "a research gap",
     "example": "Studien fyller et tydelig forskningsgap.",
     "example_english": "The study fills a clear research gap.",
@@ -308,6 +341,7 @@
   },
   {
     "norsk": "å operasjonalisere",
+    "lemma": "operasjonalisere",
     "english": "to operationalise",
     "example": "Vi må operasjonalisere begrepet 'velvære'.",
     "example_english": "We need to operationalise the concept of 'wellbeing'.",
@@ -317,6 +351,7 @@
   },
   {
     "norsk": "en kvalitativ metode",
+    "lemma": "en kvalitativ metode",
     "english": "qualitative method",
     "example": "Intervjuer er en typisk kvalitativ metode.",
     "example_english": "Interviews are a typical qualitative method.",
@@ -326,6 +361,7 @@
   },
   {
     "norsk": "en kvantitativ metode",
+    "lemma": "en kvantitativ metode",
     "english": "quantitative method",
     "example": "Spørreundersøkelser gir kvantitative data.",
     "example_english": "Surveys provide quantitative data.",
@@ -335,6 +371,7 @@
   },
   {
     "norsk": "validitet",
+    "lemma": "validitet",
     "english": "validity",
     "example": "Studiens validitet avhenger av målinstrumentet.",
     "example_english": "The study's validity depends on the measurement instrument.",
@@ -344,6 +381,7 @@
   },
   {
     "norsk": "reliabilitet",
+    "lemma": "reliabilitet",
     "english": "reliability",
     "example": "Høy reliabilitet sikrer reproduserbare resultater.",
     "example_english": "High reliability ensures reproducible results.",
@@ -353,6 +391,7 @@
   },
   {
     "norsk": "en bias",
+    "lemma": "bias",
     "english": "bias",
     "example": "Seleksjonsbias kan skade studiens konklusjoner.",
     "example_english": "Selection bias can harm the study's conclusions.",
@@ -362,6 +401,7 @@
   },
   {
     "norsk": "en implikasjon",
+    "lemma": "implikasjon",
     "english": "an implication",
     "example": "Funnene har viktige implikasjoner for politikkutforming.",
     "example_english": "The findings have important implications for policy-making.",
@@ -371,6 +411,7 @@
   },
   {
     "norsk": "å konseptualisere",
+    "lemma": "konseptualisere",
     "english": "to conceptualise",
     "example": "Det er utfordrende å konseptualisere abstrakte fenomener.",
     "example_english": "It is challenging to conceptualise abstract phenomena.",
@@ -380,6 +421,7 @@
   },
   {
     "norsk": "et rammeverk",
+    "lemma": "rammeverk",
     "english": "a framework",
     "example": "Vi bruker Bourdieus rammeverk i analysen.",
     "example_english": "We use Bourdieu's framework in the analysis.",
@@ -389,6 +431,7 @@
   },
   {
     "norsk": "en triangulering",
+    "lemma": "triangulering",
     "english": "triangulation (research method)",
     "example": "Datasamling ble styrket gjennom metodetriangulering.",
     "example_english": "Data collection was strengthened through methodological triangulation.",
@@ -398,6 +441,7 @@
   },
   {
     "norsk": "en generaliserbarhet",
+    "lemma": "generaliserbarhet",
     "english": "generalisability",
     "example": "Studiens generaliserbarhet er begrenset av utvalget.",
     "example_english": "The study's generalisability is limited by the sample.",
@@ -407,6 +451,7 @@
   },
   {
     "norsk": "en konsensus",
+    "lemma": "konsensus",
     "english": "a consensus",
     "example": "Det er vitenskapelig konsensus om menneskeskapte klimaendringer.",
     "example_english": "There is scientific consensus on human-caused climate change.",
@@ -416,6 +461,7 @@
   },
   {
     "norsk": "å destillere",
+    "lemma": "destillere",
     "english": "to distil (information)",
     "example": "Artikkelen destillerer kompleks forskning til kjernepunkter.",
     "example_english": "The article distils complex research into key points.",
@@ -425,6 +471,7 @@
   },
   {
     "norsk": "en problemstilling",
+    "lemma": "problemstilling",
     "english": "a research question / a thesis statement",
     "example": "Problemstillingen definerer hva studien søker å besvare.",
     "example_english": "The research question defines what the study seeks to answer.",
@@ -434,6 +481,7 @@
   },
   {
     "norsk": "et paradigme",
+    "lemma": "paradigme",
     "english": "a paradigm",
     "example": "Kuhns paradigmebegrep forklarer vitenskapelige revolusjoner.",
     "example_english": "Kuhn's concept of paradigm explains scientific revolutions.",
@@ -443,6 +491,7 @@
   },
   {
     "norsk": "en syntese",
+    "lemma": "syntese",
     "english": "a synthesis",
     "example": "Konklusjonen presenterer en syntese av funnene.",
     "example_english": "The conclusion presents a synthesis of the findings.",
@@ -450,9 +499,9 @@
     "category": "academic",
     "part": "noun"
   },
-
   {
     "norsk": "å redegjøre for",
+    "lemma": "å redegjøre for",
     "english": "to account for / to elaborate on",
     "example": "I det følgende vil jeg redegjøre for studiens metode.",
     "example_english": "In what follows I will account for the study's method.",
@@ -462,6 +511,7 @@
   },
   {
     "norsk": "med utgangspunkt i",
+    "lemma": "med utgangspunkt i",
     "english": "based on / starting from",
     "example": "Med utgangspunkt i disse dataene kan vi konkludere.",
     "example_english": "Based on these data we can conclude.",
@@ -471,6 +521,7 @@
   },
   {
     "norsk": "å drøfte",
+    "lemma": "drøfte",
     "english": "to discuss / to examine critically",
     "example": "Oppgaven drøfter to motstridende syn.",
     "example_english": "The paper examines two opposing views.",
@@ -480,6 +531,7 @@
   },
   {
     "norsk": "å belyse",
+    "lemma": "belyse",
     "english": "to shed light on / to illuminate",
     "example": "Analysen belyser strukturelle årsaker til problemet.",
     "example_english": "The analysis sheds light on the structural causes of the problem.",
@@ -489,6 +541,7 @@
   },
   {
     "norsk": "i lys av",
+    "lemma": "i lys av",
     "english": "in light of",
     "example": "I lys av nye funn må teorien revideres.",
     "example_english": "In light of new findings, the theory must be revised.",
@@ -498,6 +551,7 @@
   },
   {
     "norsk": "å anføre",
+    "lemma": "anføre",
     "english": "to cite / to adduce (an argument)",
     "example": "Forfatteren anfører tre ganger så sterke argumenter.",
     "example_english": "The author adduces three equally strong arguments.",
@@ -507,6 +561,7 @@
   },
   {
     "norsk": "å presisere",
+    "lemma": "presisere",
     "english": "to specify / to clarify precisely",
     "example": "Rapportens forfatter presiserer at dataene er foreløpige.",
     "example_english": "The report's author specifies that the data are preliminary.",
@@ -516,6 +571,7 @@
   },
   {
     "norsk": "herunder",
+    "lemma": "herunder",
     "english": "including / comprising",
     "example": "Studien omhandler alle nordiske land, herunder Island.",
     "example_english": "The study covers all Nordic countries, including Iceland.",
@@ -525,6 +581,7 @@
   },
   {
     "norsk": "det fremgår av",
+    "lemma": "det fremgår av",
     "english": "it appears from / it is evident from",
     "example": "Det fremgår av rapporten at kostnadene øker.",
     "example_english": "It is evident from the report that costs are rising.",
@@ -534,6 +591,7 @@
   },
   {
     "norsk": "å underbygge",
+    "lemma": "underbygge",
     "english": "to substantiate / to underpin",
     "example": "Eksemplene underbygger argumentasjonen.",
     "example_english": "The examples substantiate the argument.",
@@ -543,6 +601,7 @@
   },
   {
     "norsk": "følgelig",
+    "lemma": "følgelig",
     "english": "consequently / therefore",
     "example": "Ressursene er knappe; følgelig må vi prioritere.",
     "example_english": "Resources are scarce; consequently we must prioritise.",
@@ -552,6 +611,7 @@
   },
   {
     "norsk": "ytterligere",
+    "lemma": "ytterligere",
     "english": "further / additionally",
     "example": "Ytterligere forskning er nødvendig.",
     "example_english": "Further research is necessary.",
@@ -561,6 +621,7 @@
   },
   {
     "norsk": "en begrepsavklaring",
+    "lemma": "begrepsavklaring",
     "english": "a definition of terms / clarification of concepts",
     "example": "En begrepsavklaring er nødvendig innledningsvis.",
     "example_english": "A definition of terms is necessary at the outset.",
@@ -570,6 +631,7 @@
   },
   {
     "norsk": "å problematisere",
+    "lemma": "problematisere",
     "english": "to problematise / to call into question",
     "example": "Artikkelen problematiserer den rådende teorien.",
     "example_english": "The article calls the prevailing theory into question.",
@@ -579,6 +641,7 @@
   },
   {
     "norsk": "ikke desto mindre",
+    "lemma": "ikke desto mindre",
     "english": "nevertheless / nonetheless",
     "example": "Resultatene er usikre; ikke desto mindre er de lovende.",
     "example_english": "The results are uncertain; nevertheless they are promising.",
@@ -588,6 +651,7 @@
   },
   {
     "norsk": "i henhold til",
+    "lemma": "i henhold til",
     "english": "in accordance with / pursuant to",
     "example": "I henhold til loven har alle rett til forsvar.",
     "example_english": "In accordance with the law, everyone has the right to a defence.",
@@ -597,6 +661,7 @@
   },
   {
     "norsk": "å konkludere med at",
+    "lemma": "å konkludere med at",
     "english": "to conclude that",
     "example": "Vi konkluderer med at tiltaket har hatt effekt.",
     "example_english": "We conclude that the measure has had an effect.",
@@ -606,6 +671,7 @@
   },
   {
     "norsk": "en innvending",
+    "lemma": "innvending",
     "english": "an objection",
     "example": "En mulig innvending mot denne tolkningen er at …",
     "example_english": "A possible objection to this interpretation is that …",
@@ -615,6 +681,7 @@
   },
   {
     "norsk": "å nuansere",
+    "lemma": "nuansere",
     "english": "to nuance / to qualify",
     "example": "Det er viktig å nuansere dette bildet.",
     "example_english": "It is important to nuance this picture.",
@@ -624,6 +691,7 @@
   },
   {
     "norsk": "å argumentere for at",
+    "lemma": "å argumentere for at",
     "english": "to argue that",
     "example": "Forfatteren argumenterer for at politikken bør endres.",
     "example_english": "The author argues that the policy should be changed.",
@@ -633,6 +701,7 @@
   },
   {
     "norsk": "å avgrense",
+    "lemma": "avgrense",
     "english": "to delimit / to narrow down",
     "example": "Vi har avgrenset studien til å gjelde norske ungdommer.",
     "example_english": "We have delimited the study to apply to Norwegian youth.",
@@ -642,6 +711,7 @@
   },
   {
     "norsk": "en implikasjon",
+    "lemma": "implikasjon",
     "english": "an implication",
     "example": "Funnene har viktige politiske implikasjoner.",
     "example_english": "The findings have important policy implications.",
@@ -651,6 +721,7 @@
   },
   {
     "norsk": "å peke på",
+    "lemma": "å peke på",
     "english": "to point to / to highlight",
     "example": "Rapporten peker på tre sentrale utfordringer.",
     "example_english": "The report points to three central challenges.",
@@ -660,6 +731,7 @@
   },
   {
     "norsk": "foreliggende",
+    "lemma": "foreliggende",
     "english": "present / at hand / existing",
     "example": "Foreliggende studier gir ikke et entydig svar.",
     "example_english": "Existing studies do not provide an unambiguous answer.",
@@ -669,6 +741,7 @@
   },
   {
     "norsk": "å bidra til",
+    "lemma": "å bidra til",
     "english": "to contribute to",
     "example": "Studien bidrar til å fylle et kunnskapshull.",
     "example_english": "The study contributes to filling a knowledge gap.",
@@ -676,9 +749,9 @@
     "category": "formal-writing",
     "part": "phrase"
   },
-
   {
     "norsk": "en retorisk strategi",
+    "lemma": "en retorisk strategi",
     "english": "a rhetorical strategy",
     "example": "Forfatteren bruker emosjonelle appeller som retorisk strategi.",
     "example_english": "The author uses emotional appeals as a rhetorical strategy.",
@@ -688,6 +761,7 @@
   },
   {
     "norsk": "ethos",
+    "lemma": "ethos",
     "english": "ethos (appeal to credibility)",
     "example": "Taleren bygger ethos gjennom sin faglige bakgrunn.",
     "example_english": "The speaker builds ethos through their professional background.",
@@ -697,6 +771,7 @@
   },
   {
     "norsk": "pathos",
+    "lemma": "pathos",
     "english": "pathos (appeal to emotion)",
     "example": "Bruken av pathos beveger tilhørerne.",
     "example_english": "The use of pathos moves the audience.",
@@ -706,6 +781,7 @@
   },
   {
     "norsk": "logos",
+    "lemma": "logos",
     "english": "logos (appeal to logic)",
     "example": "Argumentet er konstruert rundt logosbaserte bevis.",
     "example_english": "The argument is built around logos-based evidence.",
@@ -715,6 +791,7 @@
   },
   {
     "norsk": "en anafora",
+    "lemma": "anafora",
     "english": "anaphora (repetition at the start of clauses)",
     "example": "Talen bruker anafora for å understreke budskapet.",
     "example_english": "The speech uses anaphora to emphasise the message.",
@@ -724,6 +801,7 @@
   },
   {
     "norsk": "en antitese",
+    "lemma": "antitese",
     "english": "an antithesis",
     "example": "Antitesen skaper en slående kontrast i teksten.",
     "example_english": "The antithesis creates a striking contrast in the text.",
@@ -733,6 +811,7 @@
   },
   {
     "norsk": "en overtalelse",
+    "lemma": "overtalelse",
     "english": "persuasion",
     "example": "Retorikk er kunsten å overbevise og overtale.",
     "example_english": "Rhetoric is the art of convincing and persuading.",
@@ -742,6 +821,7 @@
   },
   {
     "norsk": "en retorisk spørsmål",
+    "lemma": "en retorisk spørsmål",
     "english": "a rhetorical question",
     "example": "Taleren brukte retoriske spørsmål for å engasjere publikum.",
     "example_english": "The speaker used rhetorical questions to engage the audience.",
@@ -751,6 +831,7 @@
   },
   {
     "norsk": "en hyperbel",
+    "lemma": "hyperbel",
     "english": "hyperbole",
     "example": "Markedsføringen bygger på overdrevne hyperbeler.",
     "example_english": "The marketing is built on exaggerated hyperbole.",
@@ -760,6 +841,7 @@
   },
   {
     "norsk": "en litotes",
+    "lemma": "litotes",
     "english": "litotes (understatement using negation)",
     "example": "Det er ikke så lite utfordrende — er et eksempel på litotes.",
     "example_english": "'It is not entirely without challenges' is an example of litotes.",
@@ -769,6 +851,7 @@
   },
   {
     "norsk": "en allegori",
+    "lemma": "allegori",
     "english": "an allegory",
     "example": "Orwells Dyregård er en politisk allegori.",
     "example_english": "Orwell's Animal Farm is a political allegory.",
@@ -778,6 +861,7 @@
   },
   {
     "norsk": "en eufemisme",
+    "lemma": "eufemisme",
     "english": "a euphemism",
     "example": "Uttrykket 'gikk bort' er en eufemisme for 'døde'.",
     "example_english": "The expression 'passed away' is a euphemism for 'died'.",
@@ -787,6 +871,7 @@
   },
   {
     "norsk": "et syllepsis",
+    "lemma": "syllepsis",
     "english": "syllepsis (using one word to govern two)",
     "example": "Syllepsis kan skape komisk effekt i teksten.",
     "example_english": "Syllepsis can create a comic effect in the text.",
@@ -796,6 +881,7 @@
   },
   {
     "norsk": "en chiasme",
+    "lemma": "chiasme",
     "english": "chiasmus (inverted parallelism)",
     "example": "Chiasme skaper eleganse gjennom speilvendt struktur.",
     "example_english": "Chiasmus creates elegance through mirrored structure.",
@@ -805,6 +891,7 @@
   },
   {
     "norsk": "kairos",
+    "lemma": "kairos",
     "english": "kairos (the opportune moment)",
     "example": "En god taler vet å utnytte kairos.",
     "example_english": "A good speaker knows how to exploit kairos.",
@@ -814,6 +901,7 @@
   },
   {
     "norsk": "en prosopopeia",
+    "lemma": "prosopopeia",
     "english": "personification / prosopopoeia",
     "example": "Diktet personifiserer havet som en sint gud.",
     "example_english": "The poem personifies the sea as an angry god.",
@@ -823,6 +911,7 @@
   },
   {
     "norsk": "å disponere",
+    "lemma": "disponere",
     "english": "to structure / to organise (a text)",
     "example": "En god tale er tydelig disponert.",
     "example_english": "A good speech is clearly structured.",
@@ -832,6 +921,7 @@
   },
   {
     "norsk": "en topos",
+    "lemma": "topos",
     "english": "a topos (commonplace / standard argument)",
     "example": "Appell til natur er et vanlig retorisk topos.",
     "example_english": "Appeal to nature is a common rhetorical topos.",
@@ -841,6 +931,7 @@
   },
   {
     "norsk": "en inversjon",
+    "lemma": "inversjon",
     "english": "inversion (of word order for effect)",
     "example": "Inversjon brukes i poetisk og høytidelig prosa.",
     "example_english": "Inversion is used in poetic and solemn prose.",
@@ -850,6 +941,7 @@
   },
   {
     "norsk": "å engasjere",
+    "lemma": "engasjere",
     "english": "to engage (an audience)",
     "example": "En dyktig taler klarer å engasjere sitt publikum.",
     "example_english": "A skilled speaker manages to engage their audience.",
@@ -859,6 +951,7 @@
   },
   {
     "norsk": "en narrasjon",
+    "lemma": "narrasjon",
     "english": "narration / storytelling (as rhetorical mode)",
     "example": "Narrasjon som virkemiddel skaper nærhet til tilhørerne.",
     "example_english": "Narration as a device creates closeness with the listeners.",
@@ -868,6 +961,7 @@
   },
   {
     "norsk": "en bevisføring",
+    "lemma": "bevisføring",
     "english": "argumentation / presentation of proof",
     "example": "Bevisføringen i talen var systematisk og overbevisende.",
     "example_english": "The argumentation in the speech was systematic and convincing.",
@@ -877,6 +971,7 @@
   },
   {
     "norsk": "en konklusjon",
+    "lemma": "konklusjon",
     "english": "a conclusion (closing of a speech)",
     "example": "En sterk konklusjon etterlater et varig inntrykk.",
     "example_english": "A strong conclusion leaves a lasting impression.",
@@ -886,6 +981,7 @@
   },
   {
     "norsk": "en innledning",
+    "lemma": "innledning",
     "english": "an introduction / an exordium",
     "example": "Innledningen må fange lytterens oppmerksomhet.",
     "example_english": "The introduction must capture the listener's attention.",
@@ -895,6 +991,7 @@
   },
   {
     "norsk": "en appell",
+    "lemma": "appell",
     "english": "an appeal",
     "example": "Appellen til medeleven engasjerte hele forsamlingen.",
     "example_english": "The appeal to the fellow student engaged the entire assembly.",
@@ -902,9 +999,9 @@
     "category": "rhetoric",
     "part": "noun"
   },
-
   {
     "norsk": "sjelelig uro",
+    "lemma": "sjelelig uro",
     "english": "inner turmoil / spiritual unease",
     "example": "Han led av en dyp sjelelig uro han ikke klarte å sette ord på.",
     "example_english": "He suffered from a deep inner turmoil he was unable to put into words.",
@@ -914,6 +1011,7 @@
   },
   {
     "norsk": "melankolsk",
+    "lemma": "melankolsk",
     "english": "melancholy / melancholic",
     "example": "Høsten gjør ham alltid litt melankolsk.",
     "example_english": "Autumn always makes him a little melancholic.",
@@ -923,6 +1021,7 @@
   },
   {
     "norsk": "angst",
+    "lemma": "angst",
     "english": "existential anxiety / dread",
     "example": "Kierkegaard beskriver angst som en grunnleggende menneskelig tilstand.",
     "example_english": "Kierkegaard describes angst as a fundamental human condition.",
@@ -932,6 +1031,7 @@
   },
   {
     "norsk": "eksistensielt tomrom",
+    "lemma": "eksistensielt tomrom",
     "english": "existential void / emptiness",
     "example": "Etter pensjonering opplevde han et eksistensielt tomrom.",
     "example_english": "After retirement he experienced an existential void.",
@@ -941,6 +1041,7 @@
   },
   {
     "norsk": "empatisk resonans",
+    "lemma": "empatisk resonans",
     "english": "empathic resonance",
     "example": "Kunstverket skapte en sterk empatisk resonans hos betrakterne.",
     "example_english": "The artwork created a strong empathic resonance in viewers.",
@@ -950,6 +1051,7 @@
   },
   {
     "norsk": "vemod",
+    "lemma": "vemod",
     "english": "wistfulness / gentle sadness",
     "example": "Musikken var preget av et vakkert vemod.",
     "example_english": "The music was characterised by a beautiful wistfulness.",
@@ -959,6 +1061,7 @@
   },
   {
     "norsk": "å bearbeide",
+    "lemma": "bearbeide",
     "english": "to process (emotions)",
     "example": "Terapien hjalp henne å bearbeide sorgen.",
     "example_english": "The therapy helped her process her grief.",
@@ -968,6 +1071,7 @@
   },
   {
     "norsk": "ambivalent",
+    "lemma": "ambivalent",
     "english": "ambivalent",
     "example": "Hun var ambivalent overfor tilbudet — glad og redd på samme tid.",
     "example_english": "She was ambivalent about the offer — glad and scared at the same time.",
@@ -977,6 +1081,7 @@
   },
   {
     "norsk": "fremmedgjøring",
+    "lemma": "fremmedgjøring",
     "english": "alienation / estrangement",
     "example": "Storbylivet kan føre til en dyptgående fremmedgjøring.",
     "example_english": "City life can lead to a profound sense of alienation.",
@@ -986,6 +1091,7 @@
   },
   {
     "norsk": "katarsis",
+    "lemma": "katarsis",
     "english": "catharsis",
     "example": "Forestillingen ga publikum en sterk katarsis.",
     "example_english": "The performance gave the audience a powerful catharsis.",
@@ -995,6 +1101,7 @@
   },
   {
     "norsk": "selverkjennelse",
+    "lemma": "selverkjennelse",
     "english": "self-knowledge / self-awareness",
     "example": "Selverkjennelse er forutsetningen for personlig vekst.",
     "example_english": "Self-knowledge is the precondition for personal growth.",
@@ -1004,6 +1111,7 @@
   },
   {
     "norsk": "en forsonlighet",
+    "lemma": "forsonlighet",
     "english": "reconciliation / conciliatoriness",
     "example": "En tone av forsonlighet preget samtalen.",
     "example_english": "A tone of conciliatoriness characterised the conversation.",
@@ -1013,6 +1121,7 @@
   },
   {
     "norsk": "ærefrykt",
+    "lemma": "ærefrykt",
     "english": "awe / reverence",
     "example": "Han betraktet fjorden med stille ærefrykt.",
     "example_english": "He contemplated the fjord with quiet awe.",
@@ -1022,6 +1131,7 @@
   },
   {
     "norsk": "å lengte etter",
+    "lemma": "å lengte etter",
     "english": "to yearn for / to long for",
     "example": "Hun lengtet etter det landet hun hadde forlatt.",
     "example_english": "She yearned for the country she had left behind.",
@@ -1031,6 +1141,7 @@
   },
   {
     "norsk": "oppriktighet",
+    "lemma": "oppriktighet",
     "english": "sincerity / genuineness",
     "example": "Det var en oppriktig beklagelse uten baktanker.",
     "example_english": "It was a sincere apology without ulterior motives.",
@@ -1040,6 +1151,7 @@
   },
   {
     "norsk": "å fortrenge",
+    "lemma": "fortrenge",
     "english": "to repress / to suppress",
     "example": "Han hadde fortrengt minnene fra barndommen.",
     "example_english": "He had repressed the memories from his childhood.",
@@ -1049,6 +1161,7 @@
   },
   {
     "norsk": "sårbarhet",
+    "lemma": "sårbarhet",
     "english": "vulnerability",
     "example": "Det krever mot å vise sårbarhet.",
     "example_english": "It takes courage to show vulnerability.",
@@ -1058,6 +1171,7 @@
   },
   {
     "norsk": "kognitive dissonansen",
+    "lemma": "kognitive dissonansen",
     "english": "cognitive dissonance",
     "example": "Kognitiv dissonans oppstår når tro og atferd er i konflikt.",
     "example_english": "Cognitive dissonance arises when beliefs and behaviour are in conflict.",
@@ -1067,6 +1181,7 @@
   },
   {
     "norsk": "å projisere",
+    "lemma": "projisere",
     "english": "to project (emotions onto others)",
     "example": "Vi projiserer ofte egne feil over på andre.",
     "example_english": "We often project our own faults onto others.",
@@ -1076,6 +1191,7 @@
   },
   {
     "norsk": "en indre monolog",
+    "lemma": "en indre monolog",
     "english": "an inner monologue",
     "example": "Den indre monologen avslører karakterens tvil.",
     "example_english": "The inner monologue reveals the character's doubts.",
@@ -1085,6 +1201,7 @@
   },
   {
     "norsk": "skadefryd",
+    "lemma": "skadefryd",
     "english": "schadenfreude (pleasure at another's misfortune)",
     "example": "Det er ikke pent å kjenne på skadefryd.",
     "example_english": "It is not nice to feel schadenfreude.",
@@ -1094,6 +1211,7 @@
   },
   {
     "norsk": "en sinnstilstand",
+    "lemma": "sinnstilstand",
     "english": "a state of mind",
     "example": "Kunst kan skifte vår sinnstilstand dramatisk.",
     "example_english": "Art can shift our state of mind dramatically.",
@@ -1103,6 +1221,7 @@
   },
   {
     "norsk": "forsoning",
+    "lemma": "forsoning",
     "english": "reconciliation",
     "example": "Forsoning etter krig er en lang prosess.",
     "example_english": "Reconciliation after war is a long process.",
@@ -1112,6 +1231,7 @@
   },
   {
     "norsk": "eksistensiell ensomhet",
+    "lemma": "eksistensiell ensomhet",
     "english": "existential loneliness",
     "example": "Eksistensiell ensomhet kan ikke lindres av selskap alene.",
     "example_english": "Existential loneliness cannot be relieved by company alone.",
@@ -1121,6 +1241,7 @@
   },
   {
     "norsk": "ettertanke",
+    "lemma": "ettertanke",
     "english": "reflection / afterthought",
     "example": "Med ettertanke innser jeg at jeg tok feil.",
     "example_english": "On reflection I realise I was wrong.",
@@ -1128,9 +1249,9 @@
     "category": "complex-emotions",
     "part": "noun"
   },
-
   {
     "norsk": "en konfidensiell",
+    "lemma": "en konfidensiell",
     "english": "confidential",
     "example": "Alle opplysninger behandles konfidensielt.",
     "example_english": "All information is treated confidentially.",
@@ -1140,6 +1261,7 @@
   },
   {
     "norsk": "en forhandling",
+    "lemma": "forhandling",
     "english": "a negotiation",
     "example": "Lønnsforhandlingene ble avsluttet med et kompromiss.",
     "example_english": "The salary negotiations ended in a compromise.",
@@ -1149,6 +1271,7 @@
   },
   {
     "norsk": "et nettverk",
+    "lemma": "nettverk",
     "english": "a (professional) network",
     "example": "Et godt profesjonelt nettverk er uvurderlig.",
     "example_english": "A good professional network is invaluable.",
@@ -1158,6 +1281,7 @@
   },
   {
     "norsk": "å delegere",
+    "lemma": "delegere",
     "english": "to delegate",
     "example": "En god leder vet å delegere oppgaver.",
     "example_english": "A good leader knows how to delegate tasks.",
@@ -1167,6 +1291,7 @@
   },
   {
     "norsk": "en strategiplan",
+    "lemma": "strategiplan",
     "english": "a strategic plan",
     "example": "Bedriften utarbeidet en femårig strategiplan.",
     "example_english": "The company developed a five-year strategic plan.",
@@ -1176,6 +1301,7 @@
   },
   {
     "norsk": "å fasilitere",
+    "lemma": "fasilitere",
     "english": "to facilitate",
     "example": "HR fasiliterer onboardingsprosessen.",
     "example_english": "HR facilitates the onboarding process.",
@@ -1185,6 +1311,7 @@
   },
   {
     "norsk": "en interessent",
+    "lemma": "interessent",
     "english": "a stakeholder",
     "example": "Alle interessenter ble konsultert i prosessen.",
     "example_english": "All stakeholders were consulted in the process.",
@@ -1194,6 +1321,7 @@
   },
   {
     "norsk": "en gjennomførbarhet",
+    "lemma": "gjennomførbarhet",
     "english": "feasibility",
     "example": "En gjennomførbarhetsstudie ble iverksatt.",
     "example_english": "A feasibility study was initiated.",
@@ -1203,6 +1331,7 @@
   },
   {
     "norsk": "å optimalisere",
+    "lemma": "optimalisere",
     "english": "to optimise",
     "example": "Vi arbeider kontinuerlig for å optimalisere arbeidsflyten.",
     "example_english": "We continually work to optimise the workflow.",
@@ -1212,6 +1341,7 @@
   },
   {
     "norsk": "en retningslinje",
+    "lemma": "retningslinje",
     "english": "a guideline / a directive",
     "example": "Retningslinjene for datahåndtering er strenge.",
     "example_english": "The guidelines for data handling are strict.",
@@ -1221,6 +1351,7 @@
   },
   {
     "norsk": "etterlevelse",
+    "lemma": "etterlevelse",
     "english": "compliance",
     "example": "Etterlevelse av GDPR er et krav.",
     "example_english": "Compliance with GDPR is a requirement.",
@@ -1230,6 +1361,7 @@
   },
   {
     "norsk": "en fusjon",
+    "lemma": "fusjon",
     "english": "a merger",
     "example": "Fusjonen mellom de to selskapene skapte markedsuro.",
     "example_english": "The merger between the two companies created market turbulence.",
@@ -1239,6 +1371,7 @@
   },
   {
     "norsk": "å implementere",
+    "lemma": "implementere",
     "english": "to implement",
     "example": "Vi implementerte de nye rutinene gradvis.",
     "example_english": "We implemented the new procedures gradually.",
@@ -1248,6 +1381,7 @@
   },
   {
     "norsk": "en benchmark",
+    "lemma": "benchmark",
     "english": "a benchmark",
     "example": "Bransjens benchmark for leveringstid er to dager.",
     "example_english": "The industry benchmark for delivery time is two days.",
@@ -1257,6 +1391,7 @@
   },
   {
     "norsk": "en KPI",
+    "lemma": "KPI",
     "english": "a KPI (key performance indicator)",
     "example": "Vi følger nøye med på KPI-ene hvert kvartal.",
     "example_english": "We closely monitor the KPIs each quarter.",
@@ -1266,6 +1401,7 @@
   },
   {
     "norsk": "å outsource",
+    "lemma": "outsource",
     "english": "to outsource",
     "example": "Bedriften outsourcer IT-driften.",
     "example_english": "The company outsources its IT operations.",
@@ -1275,6 +1411,7 @@
   },
   {
     "norsk": "en målgruppe",
+    "lemma": "målgruppe",
     "english": "a target group / a target audience",
     "example": "Kampanjen er rettet mot en yngre målgruppe.",
     "example_english": "The campaign is aimed at a younger target group.",
@@ -1284,6 +1421,7 @@
   },
   {
     "norsk": "et omdømme",
+    "lemma": "omdømme",
     "english": "a reputation",
     "example": "Et solgt omdømme er vanskelig å gjenoppbygge.",
     "example_english": "A damaged reputation is difficult to rebuild.",
@@ -1293,6 +1431,7 @@
   },
   {
     "norsk": "en årsrapport",
+    "lemma": "årsrapport",
     "english": "an annual report",
     "example": "Årsrapporten viste solid vekst.",
     "example_english": "The annual report showed solid growth.",
@@ -1302,6 +1441,7 @@
   },
   {
     "norsk": "å skalere",
+    "lemma": "skalere",
     "english": "to scale (a business)",
     "example": "Oppstarten klarte å skalere raskt.",
     "example_english": "The start-up managed to scale quickly.",
@@ -1311,6 +1451,7 @@
   },
   {
     "norsk": "en medarbeidersamtale",
+    "lemma": "medarbeidersamtale",
     "english": "a performance review / an appraisal interview",
     "example": "Medarbeidersamtalen gjennomføres en gang i året.",
     "example_english": "The performance review is conducted once a year.",
@@ -1320,6 +1461,7 @@
   },
   {
     "norsk": "en disrupsjon",
+    "lemma": "disrupsjon",
     "english": "disruption",
     "example": "Digital disrupsjon endrer tradisjonelle bransjer.",
     "example_english": "Digital disruption is changing traditional industries.",
@@ -1329,6 +1471,7 @@
   },
   {
     "norsk": "innovasjon",
+    "lemma": "innovasjon",
     "english": "innovation",
     "example": "Innovasjon er motoren i bedriftens vekst.",
     "example_english": "Innovation is the engine of the company's growth.",
@@ -1338,6 +1481,7 @@
   },
   {
     "norsk": "en agil tilnærming",
+    "lemma": "en agil tilnærming",
     "english": "an agile approach",
     "example": "Prosjektteamet brukte en agil tilnærming.",
     "example_english": "The project team used an agile approach.",
@@ -1347,6 +1491,7 @@
   },
   {
     "norsk": "å rapportere til",
+    "lemma": "å rapportere til",
     "english": "to report to (a manager)",
     "example": "Hun rapporterer direkte til styret.",
     "example_english": "She reports directly to the board.",
@@ -1354,9 +1499,9 @@
     "category": "professional",
     "part": "phrase"
   },
-
   {
     "norsk": "frihet",
+    "lemma": "frihet",
     "english": "freedom / liberty (as abstract concept)",
     "example": "Frihet er et verdibegrep med mange tolkninger.",
     "example_english": "Freedom is a value concept with many interpretations.",
@@ -1366,6 +1511,7 @@
   },
   {
     "norsk": "rettferdighet",
+    "lemma": "rettferdighet",
     "english": "justice / fairness",
     "example": "Rettferdighet er en av demokratiets grunnpilarer.",
     "example_english": "Justice is one of the cornerstones of democracy.",
@@ -1375,6 +1521,7 @@
   },
   {
     "norsk": "sannhet",
+    "lemma": "sannhet",
     "english": "truth",
     "example": "Hva er sannhet? Filosofer har diskutert dette i årtusener.",
     "example_english": "What is truth? Philosophers have debated this for millennia.",
@@ -1384,6 +1531,7 @@
   },
   {
     "norsk": "mening",
+    "lemma": "mening",
     "english": "meaning / purpose",
     "example": "Søken etter mening er et universelt menneskelig trekk.",
     "example_english": "The search for meaning is a universal human trait.",
@@ -1393,6 +1541,7 @@
   },
   {
     "norsk": "tid",
+    "lemma": "tid",
     "english": "time (as abstract concept)",
     "example": "Tid er et mysterium som filosofer forsøker å forstå.",
     "example_english": "Time is a mystery that philosophers attempt to understand.",
@@ -1402,6 +1551,7 @@
   },
   {
     "norsk": "bevissthet",
+    "lemma": "bevissthet",
     "english": "consciousness / awareness",
     "example": "Bevissthetens natur er fortsatt et åpent spørsmål.",
     "example_english": "The nature of consciousness remains an open question.",
@@ -1411,6 +1561,7 @@
   },
   {
     "norsk": "identitet",
+    "lemma": "identitet",
     "english": "identity",
     "example": "Nasjonal identitet er sammensatt og dynamisk.",
     "example_english": "National identity is complex and dynamic.",
@@ -1420,6 +1571,7 @@
   },
   {
     "norsk": "en kontinuitet",
+    "lemma": "kontinuitet",
     "english": "continuity",
     "example": "Kontinuitet i politikk sikrer forutsigbarhet.",
     "example_english": "Continuity in policy ensures predictability.",
@@ -1429,6 +1581,7 @@
   },
   {
     "norsk": "en dualitet",
+    "lemma": "dualitet",
     "english": "a duality",
     "example": "Dualiteten mellom godt og ondt er et universelt tema.",
     "example_english": "The duality between good and evil is a universal theme.",
@@ -1438,6 +1591,7 @@
   },
   {
     "norsk": "kompleksitet",
+    "lemma": "kompleksitet",
     "english": "complexity",
     "example": "Samfunnets kompleksitet gjør enkle løsninger umulige.",
     "example_english": "Society's complexity makes simple solutions impossible.",
@@ -1447,6 +1601,7 @@
   },
   {
     "norsk": "en grense",
+    "lemma": "grense",
     "english": "a limit / a boundary (conceptual)",
     "example": "Grensen mellom kunst og propaganda er flytende.",
     "example_english": "The boundary between art and propaganda is fluid.",
@@ -1456,6 +1611,7 @@
   },
   {
     "norsk": "en struktur",
+    "lemma": "struktur",
     "english": "structure (as abstract organising principle)",
     "example": "Sosiale strukturer påvirker individets handlingsrom.",
     "example_english": "Social structures influence the individual's room for action.",
@@ -1465,6 +1621,7 @@
   },
   {
     "norsk": "å formidle",
+    "lemma": "formidle",
     "english": "to convey / to communicate (an idea)",
     "example": "Kunstneren formidler en intens sorg gjennom sitt verk.",
     "example_english": "The artist conveys an intense sorrow through their work.",
@@ -1474,6 +1631,7 @@
   },
   {
     "norsk": "intersubjektivitet",
+    "lemma": "intersubjektivitet",
     "english": "intersubjectivity",
     "example": "Intersubjektivitet er grunnlaget for felles forståelse.",
     "example_english": "Intersubjectivity is the basis of shared understanding.",
@@ -1483,6 +1641,7 @@
   },
   {
     "norsk": "en årsakssammenheng",
+    "lemma": "årsakssammenheng",
     "english": "a causal relationship",
     "example": "Det er ikke alltid enkelt å fastslå en årsakssammenheng.",
     "example_english": "It is not always easy to establish a causal relationship.",
@@ -1492,6 +1651,7 @@
   },
   {
     "norsk": "en analogi",
+    "lemma": "analogi",
     "english": "an analogy",
     "example": "En analogi kan gjøre abstrakte ideer lettere å forstå.",
     "example_english": "An analogy can make abstract ideas easier to understand.",
@@ -1501,6 +1661,7 @@
   },
   {
     "norsk": "et dilemma",
+    "lemma": "dilemma",
     "english": "a dilemma",
     "example": "Valget mellom lojalitet og ærlighet er et dilemma.",
     "example_english": "The choice between loyalty and honesty is a dilemma.",
@@ -1510,6 +1671,7 @@
   },
   {
     "norsk": "en legitimitet",
+    "lemma": "legitimitet",
     "english": "legitimacy",
     "example": "Statens legitimitet hviler på folkets tillit.",
     "example_english": "The state's legitimacy rests on the trust of the people.",
@@ -1519,6 +1681,7 @@
   },
   {
     "norsk": "en norm",
+    "lemma": "norm",
     "english": "a norm",
     "example": "Sosiale normer styrer atferd uformelt.",
     "example_english": "Social norms govern behaviour informally.",
@@ -1528,6 +1691,7 @@
   },
   {
     "norsk": "et pluralisme",
+    "lemma": "pluralisme",
     "english": "pluralism",
     "example": "Et demokrati er avhengig av et levende pluralisme.",
     "example_english": "A democracy depends on a vibrant pluralism.",
@@ -1537,6 +1701,7 @@
   },
   {
     "norsk": "en universalisme",
+    "lemma": "universalisme",
     "english": "universalism",
     "example": "Universalisme hevder at visse verdier gjelder alle.",
     "example_english": "Universalism holds that certain values apply to everyone.",
@@ -1546,6 +1711,7 @@
   },
   {
     "norsk": "en partikularisme",
+    "lemma": "partikularisme",
     "english": "particularism",
     "example": "Partikularisme vektlegger kulturelle og lokale særtrekk.",
     "example_english": "Particularism emphasises cultural and local particularities.",
@@ -1555,6 +1721,7 @@
   },
   {
     "norsk": "å abstrahere",
+    "lemma": "abstrahere",
     "english": "to abstract / to generalise conceptually",
     "example": "Vi abstrahere fra konkrete tilfeller til generelle prinsipper.",
     "example_english": "We abstract from concrete cases to general principles.",
@@ -1564,6 +1731,7 @@
   },
   {
     "norsk": "en konstruksjon",
+    "lemma": "konstruksjon",
     "english": "a construction (social/conceptual)",
     "example": "Kjønn sees av mange som en sosial konstruksjon.",
     "example_english": "Gender is seen by many as a social construction.",
@@ -1573,6 +1741,7 @@
   },
   {
     "norsk": "hegemoni",
+    "lemma": "hegemoni",
     "english": "hegemony",
     "example": "Kulturelt hegemoni påvirker hva vi anser som normalt.",
     "example_english": "Cultural hegemony influences what we consider normal.",
@@ -1582,6 +1751,7 @@
   },
   {
     "norsk": "et lovforslag",
+    "lemma": "lovforslag",
     "english": "a bill (proposed law)",
     "example": "Lovforslaget skal behandles i komiteen neste uke.",
     "example_english": "The bill will be reviewed in committee next week.",
@@ -1591,6 +1761,7 @@
   },
   {
     "norsk": "en valgkrets",
+    "lemma": "valgkrets",
     "english": "an electoral district",
     "example": "Hun stilte til valg i en liten valgkrets i nord.",
     "example_english": "She ran in a small electoral district in the north.",
@@ -1600,6 +1771,7 @@
   },
   {
     "norsk": "et flertall",
+    "lemma": "flertall",
     "english": "a majority",
     "example": "Regjeringen trenger et flertall for å få budsjettet vedtatt.",
     "example_english": "The government needs a majority to pass the budget.",
@@ -1609,6 +1781,7 @@
   },
   {
     "norsk": "en opposisjon",
+    "lemma": "opposisjon",
     "english": "an opposition",
     "example": "Opposisjonen krevde større åpenhet i prosessen.",
     "example_english": "The opposition demanded greater transparency in the process.",
@@ -1618,6 +1791,7 @@
   },
   {
     "norsk": "en koalisjon",
+    "lemma": "koalisjon",
     "english": "a coalition",
     "example": "Partiene dannet en koalisjon for å få makt.",
     "example_english": "The parties formed a coalition to gain power.",
@@ -1627,6 +1801,7 @@
   },
   {
     "norsk": "en grunnlov",
+    "lemma": "grunnlov",
     "english": "a constitution",
     "example": "Grunnloven sikrer ytringsfriheten.",
     "example_english": "The constitution guarantees freedom of speech.",
@@ -1636,6 +1811,7 @@
   },
   {
     "norsk": "å ratifisere",
+    "lemma": "ratifisere",
     "english": "to ratify",
     "example": "Parlamentet ratifiserte avtalen etter lange forhandlinger.",
     "example_english": "Parliament ratified the agreement after long negotiations.",
@@ -1643,9 +1819,9 @@
     "category": "politics-democracy",
     "part": "verb"
   },
-
   {
     "norsk": "et morsmål",
+    "lemma": "morsmål",
     "english": "a mother tongue",
     "example": "Norsk er hennes morsmål, men hun kan fem språk.",
     "example_english": "Norwegian is her mother tongue, but she speaks five languages.",
@@ -1655,6 +1831,7 @@
   },
   {
     "norsk": "en dialekt",
+    "lemma": "dialekt",
     "english": "a dialect",
     "example": "Dialekten avslører ofte hvor i landet du kommer fra.",
     "example_english": "Your dialect often reveals where in the country you come from.",
@@ -1664,6 +1841,7 @@
   },
   {
     "norsk": "å oversette",
+    "lemma": "oversette",
     "english": "to translate",
     "example": "Hun oversetter romaner fra fransk til norsk.",
     "example_english": "She translates novels from French to Norwegian.",
@@ -1673,6 +1851,7 @@
   },
   {
     "norsk": "tospråklig",
+    "lemma": "tospråklig",
     "english": "bilingual",
     "example": "Han vokste opp i et tospråklig hjem.",
     "example_english": "He grew up in a bilingual home.",
@@ -1682,6 +1861,7 @@
   },
   {
     "norsk": "et idiom",
+    "lemma": "idiom",
     "english": "an idiom",
     "example": "Idiomatiske uttrykk kan være vanskelige å oversette.",
     "example_english": "Idiomatic expressions can be difficult to translate.",
@@ -1691,6 +1871,7 @@
   },
   {
     "norsk": "grammatikk",
+    "lemma": "grammatikk",
     "english": "grammar",
     "example": "Grammatikk er strukturen som holder språket sammen.",
     "example_english": "Grammar is the structure that holds language together.",
@@ -1700,6 +1881,7 @@
   },
   {
     "norsk": "en aksent",
+    "lemma": "aksent",
     "english": "an accent",
     "example": "Aksenten hennes er tydelig britisk.",
     "example_english": "Her accent is distinctly British.",
@@ -1707,9 +1889,9 @@
     "category": "linguistics",
     "part": "noun"
   },
-
   {
     "norsk": "en redaktør",
+    "lemma": "redaktør",
     "english": "an editor",
     "example": "Redaktøren godkjenner alle artiklene før publisering.",
     "example_english": "The editor approves all articles before publication.",
@@ -1719,6 +1901,7 @@
   },
   {
     "norsk": "sensur",
+    "lemma": "sensur",
     "english": "censorship",
     "example": "Filmen møtte sensur på grunn av voldelige scener.",
     "example_english": "The film faced censorship because of violent scenes.",
@@ -1728,6 +1911,7 @@
   },
   {
     "norsk": "kildekritikk",
+    "lemma": "kildekritikk",
     "english": "source criticism",
     "example": "Journalister må alltid utøve kildekritikk.",
     "example_english": "Journalists must always practice source criticism.",
@@ -1737,6 +1921,7 @@
   },
   {
     "norsk": "troverdighet",
+    "lemma": "troverdighet",
     "english": "credibility",
     "example": "Avisens troverdighet økte etter avsløringen.",
     "example_english": "The newspaper's credibility rose after the exposé.",
@@ -1746,6 +1931,7 @@
   },
   {
     "norsk": "en agenda",
+    "lemma": "agenda",
     "english": "an agenda (hidden or stated)",
     "example": "Programlederens agenda ble tydelig under debatten.",
     "example_english": "The host's agenda became clear during the debate.",
@@ -1755,6 +1941,7 @@
   },
   {
     "norsk": "et intervju",
+    "lemma": "intervju",
     "english": "an interview",
     "example": "Intervjuet gikk direkte på lufta.",
     "example_english": "The interview aired live.",
@@ -1764,6 +1951,7 @@
   },
   {
     "norsk": "å publisere",
+    "lemma": "publisere",
     "english": "to publish",
     "example": "Magasinet publiserer en ny utgave hver uke.",
     "example_english": "The magazine publishes a new issue every week.",
@@ -1771,9 +1959,9 @@
     "category": "media-journalism",
     "part": "verb"
   },
-
   {
     "norsk": "en fasade",
+    "lemma": "fasade",
     "english": "a facade",
     "example": "Byggets fasade er dekket av glass.",
     "example_english": "The building's facade is covered with glass.",
@@ -1783,6 +1971,7 @@
   },
   {
     "norsk": "bærekraftig",
+    "lemma": "bærekraftig",
     "english": "sustainable",
     "example": "Prosjektet bruker bærekraftige materialer.",
     "example_english": "The project uses sustainable materials.",
@@ -1792,6 +1981,7 @@
   },
   {
     "norsk": "et monument",
+    "lemma": "monument",
     "english": "a monument",
     "example": "Monumentet hedrer krigens falne.",
     "example_english": "The monument honours the fallen of the war.",
@@ -1801,6 +1991,7 @@
   },
   {
     "norsk": "å restaurere",
+    "lemma": "restaurere",
     "english": "to restore",
     "example": "De restaurerer den gamle kirken med stor omsorg.",
     "example_english": "They are restoring the old church with great care.",
@@ -1810,6 +2001,7 @@
   },
   {
     "norsk": "estetikk",
+    "lemma": "estetikk",
     "english": "aesthetics",
     "example": "Estetikk handler om hvordan vi opplever skjønnhet.",
     "example_english": "Aesthetics is about how we experience beauty.",
@@ -1819,6 +2011,7 @@
   },
   {
     "norsk": "en plantegning",
+    "lemma": "plantegning",
     "english": "a blueprint / floor plan",
     "example": "Arkitekten presenterte en detaljert plantegning.",
     "example_english": "The architect presented a detailed floor plan.",
@@ -1828,6 +2021,7 @@
   },
   {
     "norsk": "et romprogram",
+    "lemma": "romprogram",
     "english": "a space plan",
     "example": "Romprogrammet definerer hvordan arealet skal brukes.",
     "example_english": "The space plan defines how the area will be used.",
@@ -1835,9 +2029,9 @@
     "category": "architecture-design",
     "part": "noun"
   },
-
   {
     "norsk": "en ambassade",
+    "lemma": "ambassade",
     "english": "an embassy",
     "example": "Ambassaden hjelper borgere i utlandet.",
     "example_english": "The embassy assists citizens abroad.",
@@ -1847,6 +2041,7 @@
   },
   {
     "norsk": "en traktat",
+    "lemma": "traktat",
     "english": "a treaty",
     "example": "Landene signerte en traktat om våpenkontroll.",
     "example_english": "The countries signed a treaty on arms control.",
@@ -1856,6 +2051,7 @@
   },
   {
     "norsk": "suverenitet",
+    "lemma": "suverenitet",
     "english": "sovereignty",
     "example": "Suverenitet innebærer retten til selvbestemmelse.",
     "example_english": "Sovereignty entails the right to self-determination.",
@@ -1865,6 +2061,7 @@
   },
   {
     "norsk": "multilateralt",
+    "lemma": "multilateralt",
     "english": "multilateral",
     "example": "Avtalen ble forhandlet fram multilateralt.",
     "example_english": "The agreement was negotiated multilaterally.",
@@ -1874,6 +2071,7 @@
   },
   {
     "norsk": "et forbund",
+    "lemma": "forbund",
     "english": "an alliance",
     "example": "Forbundet styrker regionalt samarbeid.",
     "example_english": "The alliance strengthens regional cooperation.",
@@ -1883,6 +2081,7 @@
   },
   {
     "norsk": "konfliktløsning",
+    "lemma": "konfliktløsning",
     "english": "conflict resolution",
     "example": "Diplomater er trent i konfliktløsning.",
     "example_english": "Diplomats are trained in conflict resolution.",
@@ -1892,6 +2091,7 @@
   },
   {
     "norsk": "en sanksjon",
+    "lemma": "sanksjon",
     "english": "a sanction",
     "example": "Sanksjonene ble innført for å presse frem forhandlinger.",
     "example_english": "The sanctions were imposed to push for negotiations.",
@@ -1899,9 +2099,9 @@
     "category": "diplomacy-international",
     "part": "noun"
   },
-
   {
     "norsk": "inflasjon",
+    "lemma": "inflasjon",
     "english": "inflation",
     "example": "Inflasjon svekker kjøpekraften.",
     "example_english": "Inflation weakens purchasing power.",
@@ -1911,6 +2111,7 @@
   },
   {
     "norsk": "et aksjemarked",
+    "lemma": "aksjemarked",
     "english": "a stock market",
     "example": "Aksjemarkedet falt etter nyhetene.",
     "example_english": "The stock market dropped after the news.",
@@ -1920,6 +2121,7 @@
   },
   {
     "norsk": "likviditet",
+    "lemma": "likviditet",
     "english": "liquidity",
     "example": "Banken må sikre tilstrekkelig likviditet.",
     "example_english": "The bank must ensure sufficient liquidity.",
@@ -1929,6 +2131,7 @@
   },
   {
     "norsk": "et underskudd",
+    "lemma": "underskudd",
     "english": "a deficit",
     "example": "Statsbudsjettet viser et stort underskudd.",
     "example_english": "The state budget shows a large deficit.",
@@ -1938,6 +2141,7 @@
   },
   {
     "norsk": "en valuta",
+    "lemma": "valuta",
     "english": "a currency",
     "example": "Valutaen styrket seg mot euro.",
     "example_english": "The currency strengthened against the euro.",
@@ -1947,6 +2151,7 @@
   },
   {
     "norsk": "et derivat",
+    "lemma": "derivat",
     "english": "a derivative",
     "example": "Derivater brukes til å hedge risiko.",
     "example_english": "Derivatives are used to hedge risk.",
@@ -1956,6 +2161,7 @@
   },
   {
     "norsk": "en konjunktur",
+    "lemma": "konjunktur",
     "english": "a business cycle",
     "example": "Økonomien er i en svak konjunktur nå.",
     "example_english": "The economy is in a weak business cycle now.",
@@ -1963,9 +2169,9 @@
     "category": "finance-economics",
     "part": "noun"
   },
-
   {
     "norsk": "en diagnose",
+    "lemma": "diagnose",
     "english": "a diagnosis",
     "example": "Riktig diagnose er avgjørende for behandlingen.",
     "example_english": "A correct diagnosis is crucial for treatment.",
@@ -1975,6 +2181,7 @@
   },
   {
     "norsk": "forebygging",
+    "lemma": "forebygging",
     "english": "prevention",
     "example": "Forebygging reduserer behovet for behandling.",
     "example_english": "Prevention reduces the need for treatment.",
@@ -1984,6 +2191,7 @@
   },
   {
     "norsk": "kronisk",
+    "lemma": "kronisk",
     "english": "chronic",
     "example": "Kronisk smerte krever langvarig oppfølging.",
     "example_english": "Chronic pain requires long-term follow-up.",
@@ -1993,6 +2201,7 @@
   },
   {
     "norsk": "folkehelse",
+    "lemma": "folkehelse",
     "english": "public health",
     "example": "Folkehelse handler om befolkningens samlede helse.",
     "example_english": "Public health concerns the population's overall health.",
@@ -2002,6 +2211,7 @@
   },
   {
     "norsk": "en klinisk studie",
+    "lemma": "en klinisk studie",
     "english": "a clinical study",
     "example": "Den kliniske studien tester en ny vaksine.",
     "example_english": "The clinical study tests a new vaccine.",
@@ -2011,6 +2221,7 @@
   },
   {
     "norsk": "en prognose",
+    "lemma": "prognose",
     "english": "a prognosis",
     "example": "Prognosen er god hvis behandlingen starter tidlig.",
     "example_english": "The prognosis is good if treatment starts early.",
@@ -2020,6 +2231,7 @@
   },
   {
     "norsk": "en epidemi",
+    "lemma": "epidemi",
     "english": "an epidemic",
     "example": "Epidemien spredte seg raskt i byen.",
     "example_english": "The epidemic spread quickly in the city.",
@@ -2027,9 +2239,9 @@
     "category": "medicine-healthcare",
     "part": "noun"
   },
-
   {
     "norsk": "et traume",
+    "lemma": "traume",
     "english": "a trauma",
     "example": "Traumet påvirket henne i flere år.",
     "example_english": "The trauma affected her for years.",
@@ -2039,6 +2251,7 @@
   },
   {
     "norsk": "en terapeut",
+    "lemma": "terapeut",
     "english": "a therapist",
     "example": "Terapeuten hjalp pasienten med å bearbeide opplevelsen.",
     "example_english": "The therapist helped the patient process the experience.",
@@ -2048,6 +2261,7 @@
   },
   {
     "norsk": "kognitiv",
+    "lemma": "kognitiv",
     "english": "cognitive",
     "example": "Kognitiv terapi fokuserer på tankemønstre.",
     "example_english": "Cognitive therapy focuses on thought patterns.",
@@ -2057,6 +2271,7 @@
   },
   {
     "norsk": "en personlighet",
+    "lemma": "personlighet",
     "english": "a personality",
     "example": "Personlighet formes av både arv og miljø.",
     "example_english": "Personality is shaped by both heredity and environment.",
@@ -2066,6 +2281,7 @@
   },
   {
     "norsk": "en mekanisme",
+    "lemma": "mekanisme",
     "english": "a mechanism",
     "example": "Forskerne studerer mekanismene bak læring.",
     "example_english": "Researchers study the mechanisms behind learning.",
@@ -2075,6 +2291,7 @@
   },
   {
     "norsk": "en psykose",
+    "lemma": "psykose",
     "english": "a psychosis",
     "example": "Psykose krever rask behandling.",
     "example_english": "Psychosis requires prompt treatment.",
@@ -2084,6 +2301,7 @@
   },
   {
     "norsk": "metakognisjon",
+    "lemma": "metakognisjon",
     "english": "metacognition",
     "example": "Metakognisjon handler om å tenke over egen tenkning.",
     "example_english": "Metacognition is about thinking about your own thinking.",
