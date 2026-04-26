@@ -3718,5 +3718,1130 @@
     "level": "A2",
     "category": "communication",
     "part": "phrase"
+  },
+   {
+    "norsk": "et hjerte",
+    "english": "a heart",
+    "example": "Hjertet slår fort når du løper.",
+    "example_english": "The heart beats fast when you run.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en lunge",
+    "english": "a lung",
+    "example": "Lungene hjelper oss å puste.",
+    "example_english": "The lungs help us to breathe.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "et kne",
+    "english": "a knee",
+    "example": "Jeg slo kneet mitt.",
+    "example_english": "I hurt my knee.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en albue",
+    "english": "an elbow",
+    "example": "Han støtte albuen i bordet.",
+    "example_english": "He hit his elbow on the table.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en nakke",
+    "english": "a neck",
+    "example": "Nakken min er stiv.",
+    "example_english": "My neck is stiff.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skulder",
+    "english": "a shoulder",
+    "example": "Hun har vondt i skulderen.",
+    "example_english": "She has pain in her shoulder.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en håndledd",
+    "english": "a wrist",
+    "example": "Håndleddet er skadet.",
+    "example_english": "The wrist is injured.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en ankel",
+    "english": "an ankle",
+    "example": "Han vrikket ankelen.",
+    "example_english": "He twisted his ankle.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "muskler",
+    "english": "muscles",
+    "example": "Trening gjør musklene sterke.",
+    "example_english": "Exercise makes the muscles strong.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "et sår",
+    "english": "a wound / sore",
+    "example": "Såret er rengjort og bandasjert.",
+    "example_english": "The wound is cleaned and bandaged.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bandasje",
+    "english": "a bandage",
+    "example": "Legen legger på en bandasje.",
+    "example_english": "The doctor puts on a bandage.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "å puste",
+    "english": "to breathe",
+    "example": "Pust rolig og dypt.",
+    "example_english": "Breathe calmly and deeply.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "verb"
+  },
+  {
+    "norsk": "å hoste",
+    "english": "to cough",
+    "example": "Han hoster mye om vinteren.",
+    "example_english": "He coughs a lot in winter.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "verb"
+  },
+  {
+    "norsk": "å nyse",
+    "english": "to sneeze",
+    "example": "Blomstene får meg til å nyse.",
+    "example_english": "The flowers make me sneeze.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "verb"
+  },
+  {
+    "norsk": "å svette",
+    "english": "to sweat",
+    "example": "Jeg svetter etter trening.",
+    "example_english": "I sweat after exercise.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "verb"
+  },
+  {
+    "norsk": "å skade seg",
+    "english": "to hurt oneself",
+    "example": "Han skadet seg under kampen.",
+    "example_english": "He hurt himself during the game.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "verb"
+  },
+  {
+    "norsk": "vondt i hodet",
+    "english": "headache",
+    "example": "Jeg har vondt i hodet.",
+    "example_english": "I have a headache.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "phrase"
+  },
+  {
+    "norsk": "vondt i magen",
+    "english": "stomachache",
+    "example": "Barnet har vondt i magen.",
+    "example_english": "The child has a stomachache.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "phrase"
+  },
+  {
+    "norsk": "høy feber",
+    "english": "high fever",
+    "example": "Hun har høy feber og må hvile.",
+    "example_english": "She has a high fever and must rest.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "phrase"
+  },
+  {
+    "norsk": "et legekontor",
+    "english": "a doctor's office",
+    "example": "Jeg har time på legekontoret.",
+    "example_english": "I have an appointment at the doctor's office.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "en time",
+    "english": "an appointment",
+    "example": "Kan jeg bestille en time?",
+    "example_english": "Can I book an appointment?",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "noun"
+  },
+  {
+    "norsk": "å ta temperaturen",
+    "english": "to take someone's temperature",
+    "example": "Sykepleieren tar temperaturen.",
+    "example_english": "The nurse takes the temperature.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "phrase"
+  },
+  {
+    "norsk": "allergisk mot",
+    "english": "allergic to",
+    "example": "Jeg er allergisk mot nøtter.",
+    "example_english": "I am allergic to nuts.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sove godt",
+    "english": "to sleep well",
+    "example": "Jeg sover godt når jeg er sliten.",
+    "example_english": "I sleep well when I am tired.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "phrase"
+  },
+  {
+    "norsk": "sunn mat",
+    "english": "healthy food",
+    "example": "Det er viktig å spise sunn mat.",
+    "example_english": "It is important to eat healthy food.",
+    "level": "A2",
+    "category": "body-health-expanded",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en fest",
+    "english": "a party",
+    "example": "Vi er invitert til en fest.",
+    "example_english": "We are invited to a party.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "en invitasjon",
+    "english": "an invitation",
+    "example": "Jeg fikk en invitasjon til bryllupet.",
+    "example_english": "I received an invitation to the wedding.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "et bryllup",
+    "english": "a wedding",
+    "example": "Bryllupet er i august.",
+    "example_english": "The wedding is in August.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bursdag",
+    "english": "a birthday",
+    "example": "I dag er det bursdagen min.",
+    "example_english": "Today is my birthday.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "en gave",
+    "english": "a gift / present",
+    "example": "Jeg kjøpte en gave til henne.",
+    "example_english": "I bought a gift for her.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "en nabo",
+    "english": "a neighbour",
+    "example": "Naboen er vennlig og hjelper oss.",
+    "example_english": "The neighbour is friendly and helps us.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bekjent",
+    "english": "an acquaintance",
+    "example": "Han er en bekjent, ikke en nær venn.",
+    "example_english": "He is an acquaintance, not a close friend.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "å hilse på",
+    "english": "to greet",
+    "example": "Jeg hils på naboen om morgenen.",
+    "example_english": "I greet the neighbour in the morning.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "verb"
+  },
+  {
+    "norsk": "å invitere",
+    "english": "to invite",
+    "example": "Vi inviterer venner til middag.",
+    "example_english": "We invite friends to dinner.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "verb"
+  },
+  {
+    "norsk": "å takke",
+    "english": "to thank",
+    "example": "Husk å takke for maten.",
+    "example_english": "Remember to thank for the food.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "verb"
+  },
+  {
+    "norsk": "å feire",
+    "english": "to celebrate",
+    "example": "Vi feirer bursdagen hans.",
+    "example_english": "We celebrate his birthday.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "verb"
+  },
+  {
+    "norsk": "å avtale",
+    "english": "to arrange / agree on",
+    "example": "Vi avtaler å møtes klokken to.",
+    "example_english": "We arrange to meet at two o'clock.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "verb"
+  },
+  {
+    "norsk": "å treffe venner",
+    "english": "to meet friends",
+    "example": "Jeg treffer venner i helgen.",
+    "example_english": "I meet friends at the weekend.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "hyggelig selskap",
+    "english": "good company",
+    "example": "Det er godt å ha hyggelig selskap.",
+    "example_english": "It is nice to have good company.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en samtale",
+    "english": "a conversation",
+    "example": "Vi hadde en lang og god samtale.",
+    "example_english": "We had a long and good conversation.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "å holde kontakten",
+    "english": "to keep in touch",
+    "example": "Vi prøver å holde kontakten.",
+    "example_english": "We try to keep in touch.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å si unnskyld",
+    "english": "to apologise",
+    "example": "Han sa unnskyld for forsinkelsen.",
+    "example_english": "He apologised for the delay.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gratulere",
+    "english": "to congratulate",
+    "example": "Jeg gratulerer deg med dagen!",
+    "example_english": "I congratulate you on your birthday!",
+    "level": "A2",
+    "category": "social-life",
+    "part": "verb"
+  },
+  {
+    "norsk": "lykke til",
+    "english": "good luck",
+    "example": "Lykke til på eksamen!",
+    "example_english": "Good luck on the exam!",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "god helg",
+    "english": "have a good weekend",
+    "example": "Ha en god helg!",
+    "example_english": "Have a good weekend!",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "god tur",
+    "english": "have a good trip",
+    "example": "God tur til deg!",
+    "example_english": "Have a good trip!",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en klem",
+    "english": "a hug",
+    "example": "Hun ga ham en stor klem.",
+    "example_english": "She gave him a big hug.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "frivillig arbeid",
+    "english": "voluntary work",
+    "example": "Hun gjør frivillig arbeid på helgene.",
+    "example_english": "She does voluntary work at weekends.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å delta",
+    "english": "to participate",
+    "example": "Alle kan delta i aktiviteten.",
+    "example_english": "Everyone can participate in the activity.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "verb"
+  },
+  {
+    "norsk": "et arrangement",
+    "english": "an event",
+    "example": "Arrangementet starter klokken tre.",
+    "example_english": "The event starts at three o'clock.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "noun"
+  },
+  {
+    "norsk": "en datamaskin",
+    "english": "a computer",
+    "example": "Jeg bruker datamaskinen på jobben.",
+    "example_english": "I use the computer at work.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en mobiltelefon",
+    "english": "a mobile phone",
+    "example": "Mobiltelefonen min er tom for batteri.",
+    "example_english": "My mobile phone is out of battery.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "internett",
+    "english": "the internet",
+    "example": "Internett er tilgjengelig overalt.",
+    "example_english": "The internet is available everywhere.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et passord",
+    "english": "a password",
+    "example": "Du må ha et sterkt passord.",
+    "example_english": "You must have a strong password.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en app",
+    "english": "an app",
+    "example": "Jeg laster ned en ny app.",
+    "example_english": "I download a new app.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skjerm",
+    "english": "a screen",
+    "example": "Skjermen er stor og klar.",
+    "example_english": "The screen is large and clear.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et tastatur",
+    "english": "a keyboard",
+    "example": "Tastaturet er trådløst.",
+    "example_english": "The keyboard is wireless.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en mus",
+    "english": "a mouse (computer)",
+    "example": "Jeg bruker mus til datamaskinen.",
+    "example_english": "I use a mouse for the computer.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å laste ned",
+    "english": "to download",
+    "example": "Jeg laster ned musikk.",
+    "example_english": "I download music.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "å sende en e-post",
+    "english": "to send an email",
+    "example": "Jeg sender en e-post til sjefen.",
+    "example_english": "I send an email to the boss.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å søke på nett",
+    "english": "to search online",
+    "example": "Jeg søker på nett etter informasjon.",
+    "example_english": "I search online for information.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "wifi",
+    "english": "wifi",
+    "example": "Har du wifi her?",
+    "example_english": "Do you have wifi here?",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et batteri",
+    "english": "a battery",
+    "example": "Batteriet er nesten tomt.",
+    "example_english": "The battery is nearly empty.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å lade",
+    "english": "to charge",
+    "example": "Jeg må lade telefonen.",
+    "example_english": "I need to charge the phone.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "sosiale medier",
+    "english": "social media",
+    "example": "Hun bruker mye tid på sosiale medier.",
+    "example_english": "She spends a lot of time on social media.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en melding",
+    "english": "a message",
+    "example": "Jeg fikk en melding fra ham.",
+    "example_english": "I received a message from him.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å ringe",
+    "english": "to call (phone)",
+    "example": "Kan du ringe meg senere?",
+    "example_english": "Can you call me later?",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "å ta et bilde",
+    "english": "to take a photo",
+    "example": "Jeg tar et bilde av utsikten.",
+    "example_english": "I take a photo of the view.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en nettside",
+    "english": "a website",
+    "example": "Nettsiden er enkel å bruke.",
+    "example_english": "The website is easy to use.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å slå på",
+    "english": "to turn on",
+    "example": "Kan du slå på lyset?",
+    "example_english": "Can you turn on the light?",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "å slå av",
+    "english": "to turn off",
+    "example": "Slå av datamaskinen når du er ferdig.",
+    "example_english": "Turn off the computer when you are done.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "en høyttaler",
+    "english": "a speaker",
+    "example": "Musikken spilles gjennom høyttaleren.",
+    "example_english": "The music plays through the speaker.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "hodetelefoner",
+    "english": "headphones",
+    "example": "Jeg bruker hodetelefoner på toget.",
+    "example_english": "I use headphones on the train.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et kamera",
+    "english": "a camera",
+    "example": "Kameraet tar fine bilder.",
+    "example_english": "The camera takes nice pictures.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å skrive ut",
+    "english": "to print",
+    "example": "Jeg skriver ut dokumentet.",
+    "example_english": "I print the document.",
+    "level": "A2",
+    "category": "technology-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "naturen",
+    "english": "nature",
+    "example": "Det er viktig å ta vare på naturen.",
+    "example_english": "It is important to take care of nature.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et tre",
+    "english": "a tree",
+    "example": "Treet er gammelt og stort.",
+    "example_english": "The tree is old and large.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en blomst",
+    "english": "a flower",
+    "example": "Blomstene vokser i hagen.",
+    "example_english": "The flowers grow in the garden.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et fjell",
+    "english": "a mountain",
+    "example": "Vi klatret opp fjellet.",
+    "example_english": "We climbed the mountain.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en elv",
+    "english": "a river",
+    "example": "Elven renner gjennom skogen.",
+    "example_english": "The river flows through the forest.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "et hav",
+    "english": "an ocean / sea",
+    "example": "Havet er dypt og blått.",
+    "example_english": "The ocean is deep and blue.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en strand",
+    "english": "a beach",
+    "example": "Om sommeren er vi på stranden.",
+    "example_english": "In summer we go to the beach.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skog",
+    "english": "a forest",
+    "example": "Skogen er full av dyr.",
+    "example_english": "The forest is full of animals.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en innsjø",
+    "english": "a lake",
+    "example": "Vi fisker i innsjøen.",
+    "example_english": "We fish in the lake.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en dal",
+    "english": "a valley",
+    "example": "Dalen er grønn og vakker.",
+    "example_english": "The valley is green and beautiful.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en øy",
+    "english": "an island",
+    "example": "Øya er liten og koselig.",
+    "example_english": "The island is small and cosy.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kyst",
+    "english": "a coast",
+    "example": "Kysten er vakker om sommeren.",
+    "example_english": "The coast is beautiful in summer.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å resirkulere",
+    "english": "to recycle",
+    "example": "Vi resirkulerer glass og papir.",
+    "example_english": "We recycle glass and paper.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "verb"
+  },
+  {
+    "norsk": "å spare energi",
+    "english": "to save energy",
+    "example": "Slå av lyset for å spare energi.",
+    "example_english": "Turn off the light to save energy.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "søppel",
+    "english": "rubbish / litter",
+    "example": "Ikke kast søppel i naturen.",
+    "example_english": "Do not throw litter in nature.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "forurensning",
+    "english": "pollution",
+    "example": "Forurensning er skadelig for naturen.",
+    "example_english": "Pollution is harmful to nature.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "rent vann",
+    "english": "clean water",
+    "example": "Rent vann er viktig for helsen.",
+    "example_english": "Clean water is important for health.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "frisk luft",
+    "english": "fresh air",
+    "example": "Vi går ut for å få frisk luft.",
+    "example_english": "We go out to get some fresh air.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "sol og skyer",
+    "english": "sun and clouds",
+    "example": "I dag er det sol og skyer.",
+    "example_english": "Today there is sun and clouds.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "et dyr",
+    "english": "an animal",
+    "example": "Mange dyr lever i skogen.",
+    "example_english": "Many animals live in the forest.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en fugl",
+    "english": "a bird",
+    "example": "Fuglene synger om morgenen.",
+    "example_english": "The birds sing in the morning.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en fisk",
+    "english": "a fish",
+    "example": "Fiskene svømmer i havet.",
+    "example_english": "The fish swim in the ocean.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "å gå på tur",
+    "english": "to go hiking",
+    "example": "Vi liker å gå på tur i naturen.",
+    "example_english": "We like to go hiking in nature.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "phrase"
+  },
+  {
+    "norsk": "et naturreservat",
+    "english": "a nature reserve",
+    "example": "Naturreservatet beskytter sjeldne planter.",
+    "example_english": "The nature reserve protects rare plants.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "klima",
+    "english": "climate",
+    "example": "Klimaet i Norge er kaldt om vinteren.",
+    "example_english": "The climate in Norway is cold in winter.",
+    "level": "A2",
+    "category": "environment-basic",
+    "part": "noun"
+  },
+  {
+    "norsk": "en krone",
+    "english": "a krone (Norwegian currency)",
+    "example": "En kopp kaffe koster tretti kroner.",
+    "example_english": "A cup of coffee costs thirty kroner.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en hundrelapp",
+    "english": "a hundred-krone note",
+    "example": "Jeg betalte med en hundrelapp.",
+    "example_english": "I paid with a hundred-krone note.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en mynter",
+    "english": "coins",
+    "example": "Jeg har litt mynter i lommen.",
+    "example_english": "I have some coins in my pocket.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en pris",
+    "english": "a price",
+    "example": "Prisen er for høy.",
+    "example_english": "The price is too high.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "gratis",
+    "english": "free (of charge)",
+    "example": "Inngangen er gratis for barn.",
+    "example_english": "The entrance is free for children.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "adjective"
+  },
+  {
+    "norsk": "billig",
+    "english": "cheap / inexpensive",
+    "example": "Denne jakken er veldig billig.",
+    "example_english": "This jacket is very cheap.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "adjective"
+  },
+  {
+    "norsk": "dyr",
+    "english": "expensive",
+    "example": "Restauranten er for dyr.",
+    "example_english": "The restaurant is too expensive.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "adjective"
+  },
+  {
+    "norsk": "et kort",
+    "english": "a card (payment)",
+    "example": "Kan jeg betale med kort?",
+    "example_english": "Can I pay by card?",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "kontanter",
+    "english": "cash",
+    "example": "Jeg betaler med kontanter.",
+    "example_english": "I pay with cash.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kvittering",
+    "english": "a receipt",
+    "example": "Kan jeg få kvitteringen?",
+    "example_english": "Can I have the receipt?",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en rabatt",
+    "english": "a discount",
+    "example": "Er det noen rabatt på dette?",
+    "example_english": "Is there any discount on this?",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "å spare penger",
+    "english": "to save money",
+    "example": "Jeg prøver å spare penger.",
+    "example_english": "I am trying to save money.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bruke penger",
+    "english": "to spend money",
+    "example": "Han bruker mye penger på mat.",
+    "example_english": "He spends a lot of money on food.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "phrase"
+  },
+  {
+    "norsk": "et budsjett",
+    "english": "a budget",
+    "example": "Vi lager et budsjett for måneden.",
+    "example_english": "We make a budget for the month.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en inntekt",
+    "english": "an income",
+    "example": "Inntekten hennes er god.",
+    "example_english": "Her income is good.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en utgift",
+    "english": "an expense",
+    "example": "Husleie er en stor utgift.",
+    "example_english": "Rent is a big expense.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "halv pris",
+    "english": "half price",
+    "example": "Billettene koster halv pris for barn.",
+    "example_english": "Tickets cost half price for children.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på salg",
+    "english": "on sale",
+    "example": "Disse skoene er på salg.",
+    "example_english": "These shoes are on sale.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bytte",
+    "english": "to exchange / return",
+    "example": "Jeg vil bytte denne genseren.",
+    "example_english": "I would like to exchange this sweater.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "verb"
+  },
+  {
+    "norsk": "vekslepenger",
+    "english": "change (money)",
+    "example": "Her er vekslepengene dine.",
+    "example_english": "Here is your change.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "to hundre",
+    "english": "two hundred",
+    "example": "Det koster to hundre kroner.",
+    "example_english": "It costs two hundred kroner.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "fem hundre",
+    "english": "five hundred",
+    "example": "Jeg har fem hundre kroner igjen.",
+    "example_english": "I have five hundred kroner left.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "en million",
+    "english": "a million",
+    "example": "Huset koster en million kroner.",
+    "example_english": "The house costs a million kroner.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "noun"
+  },
+  {
+    "norsk": "å låne penger",
+    "english": "to borrow money",
+    "example": "Kan jeg låne hundre kroner?",
+    "example_english": "Can I borrow a hundred kroner?",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å betale tilbake",
+    "english": "to pay back",
+    "example": "Jeg betaler tilbake i morgen.",
+    "example_english": "I will pay back tomorrow.",
+    "level": "A2",
+    "category": "money-numbers",
+    "part": "phrase"
   }
 ]

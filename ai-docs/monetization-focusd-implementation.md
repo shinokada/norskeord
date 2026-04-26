@@ -6,21 +6,22 @@ This document translates the strategy in `monetization-focusd-plan.md` into conc
 
 ## Status Overview
 
-| Phase | Description | Status |
-|-------|-------------|--------|
-| 0 | Quick wins (FSRS, /stats, /norskproven, /plus, i18n) | ✅ Complete |
-| 1 | Supabase auth + progress sync | ✅ Complete |
-| 2-A–D | Full FSRS UX (session structure, intervals, undo) | ✅ Complete |
-| 2-E | FSRS personal weight optimisation (Edge Function) | ⬜ Not started |
-| 3 | Freemium gating + Lemon Squeezy payments | ⬜ Not started |
-| 4 | Growth features (profile, quiz, streaks, SEO) | ⬜ Not started |
-| 5 | Email service | ⬜ Not started |
+| Phase | Description                                          | Status         |
+| ----- | ---------------------------------------------------- | -------------- |
+| 0     | Quick wins (FSRS, /stats, /norskproven, /plus, i18n) | ✅ Complete    |
+| 1     | Supabase auth + progress sync                        | ✅ Complete    |
+| 2-A–D | Full FSRS UX (session structure, intervals, undo)    | ✅ Complete    |
+| 2-E   | FSRS personal weight optimisation (Edge Function)    | ⬜ Not started |
+| 3     | Freemium gating + Lemon Squeezy payments             | ⬜ Not started |
+| 4     | Growth features (profile, quiz, streaks, SEO)        | ⬜ Not started |
+| 5     | Email service                                        | ⬜ Not started |
 
 ---
 
 ## Phase 0 — Quick Wins ✅ Complete
 
 ### 0-A: FSRS rating buttons ✅
+
 Implemented in `src/lib/VocabFlashcardPage.svelte` and `src/lib/progress.ts`.
 
 - Again / Hard / Good / Easy buttons appear after flipping
@@ -29,6 +30,7 @@ Implemented in `src/lib/VocabFlashcardPage.svelte` and `src/lib/progress.ts`.
 - `FSRSRating` and `CardProgress` types defined in `src/lib/types.ts`
 
 ### 0-B: `/stats` route ✅
+
 Implemented in `src/routes/stats/+page.svelte`.
 
 - CEFR estimate hero stat ("You're solidly A2") derived from category coverage per level
@@ -38,6 +40,7 @@ Implemented in `src/routes/stats/+page.svelte`.
 - Reset all progress button with confirmation step
 
 ### 0-C: `/norskproven` route ✅
+
 Implemented in `src/routes/norskproven/+page.svelte`.
 
 - Curated A2 and B1 exam-essential category grids with exam relevance notes
@@ -47,6 +50,7 @@ Implemented in `src/routes/norskproven/+page.svelte`.
 - No auth required — fully public
 
 ### 0-D: `/plus` pricing page ✅
+
 Implemented in `src/routes/plus/+page.svelte` and `src/routes/plus/waitlist/+server.ts`.
 
 - Hero, email waitlist signup form with validation and loading state
@@ -57,6 +61,7 @@ Implemented in `src/routes/plus/+page.svelte` and `src/routes/plus/waitlist/+ser
 - `supabase/waitlist.sql` defines the table with open insert RLS
 
 ### 0-E: i18n via Paraglide ✅
+
 Paraglide is fully wired up with `en` and `nb` (Norwegian Bokmål).
 
 - Language switcher in `Nav.svelte` — toggles locale, persists to `localStorage`
@@ -88,6 +93,7 @@ Paraglide is fully wired up with `en` and `nb` (Norwegian Bokmål).
 - `Nav.svelte` shows email + Log out when authenticated, Log in when not
 
 ### 1-C: Progress sync on login ✅
+
 Implemented in `src/lib/progress.ts` as `syncProgressOnLogin(userId)`.
 
 - Upserts all `localStorage` entries to `card_progress` in Supabase (local wins on conflict)
@@ -102,6 +108,7 @@ Implemented in `src/lib/progress.ts` as `syncProgressOnLogin(userId)`.
 ### 2-A: ts-fsrs wiring ✅
 
 `saveProgress()` in `src/lib/progress.ts` fully implements FSRS scheduling:
+
 - Looks up or creates a `ts-fsrs` `Card` via `createEmptyCard()`
 - Calls `fsrs.next(card, now, grade)` for the updated card state and due date
 - Writes to `localStorage` and dual-writes to Supabase when logged in
@@ -109,6 +116,7 @@ Implemented in `src/lib/progress.ts` as `syncProgressOnLogin(userId)`.
 ### 2-B: Structured due session ✅
 
 `VocabFlashcardPage.svelte` implements the full due-mode session:
+
 - `deckMode` state: `'all'` (random shuffle) or `'due'` (structured session)
 - **New card cap:** `NEW_CARD_SESSION_LIMIT = 15` per session; `sessionNewCardCount` tracked in state; cap notice shown in UI
 - **Due deck order:** overdue cards first (shuffled), then new cards (shuffled, capped)
@@ -133,6 +141,7 @@ Implemented in `src/lib/progress.ts` as `syncProgressOnLogin(userId)`.
 **Goal:** After ~1,000 reviews, a Supabase Edge Function runs `fsrs.optimizer` on the user's review history and stores personalised weights. Subsequent sessions initialise `new FSRS({ w: userWeights })`.
 
 **Supabase schema addition needed:**
+
 ```sql
 create table if not exists user_settings (
   user_id      uuid primary key references auth.users(id) on delete cascade,
@@ -142,6 +151,7 @@ create table if not exists user_settings (
 ```
 
 **Edge Function:** `supabase/functions/optimise-fsrs-weights/index.ts`
+
 - Triggered when `saveProgress` detects `reps % 1000 === 0 && reps >= 1000`
 - Pulls user's full review history from `card_progress`
 - Runs `fsrs.optimizer` from `ts-fsrs`
@@ -149,12 +159,12 @@ create table if not exists user_settings (
 
 **Optimisation schedule:**
 
-| Reviews | Action |
-|---------|--------|
-| 0–999 | Default FSRS weights |
-| 1,000 | First optimisation |
-| Every +1,000 (up to 5,000) | Re-optimise |
-| 5,000+ | Re-optimise every +5,000 |
+| Reviews                    | Action                   |
+| -------------------------- | ------------------------ |
+| 0–999                      | Default FSRS weights     |
+| 1,000                      | First optimisation       |
+| Every +1,000 (up to 5,000) | Re-optimise              |
+| 5,000+                     | Re-optimise every +5,000 |
 
 ---
 
@@ -165,7 +175,7 @@ create table if not exists user_settings (
 `locals.plan` is already threaded through to `$page.data.plan` in every route. The `subscriptions` table is defined in `supabase/schema.sql`. The remaining work is:
 
 1. **Read plan from Supabase** in `src/hooks.server.ts` — replace the hardcoded `'free'` with a lookup against the `subscriptions` table using the authenticated `user.id`.
-2. **Gate FSRS features** in `VocabFlashcardPage.svelte` — hide the "Due" deck mode toggle and rating buttons for free users; show a focused upsell instead: *"FSRS scheduling is a Norskeord Plus feature."* Link to `/plus`.
+2. **Gate FSRS features** in `VocabFlashcardPage.svelte` — hide the "Due" deck mode toggle and rating buttons for free users; show a focused upsell instead: _"FSRS scheduling is a Norskeord Plus feature."_ Link to `/plus`.
 3. **Gate detailed stats** in `/stats` — the CEFR estimate is always free (it's the hook); the per-category breakdown and pace forecast are Plus-only.
 4. **Gate progress sync** — free users use `localStorage` only; Plus users get the dual-write to Supabase.
 
@@ -174,11 +184,13 @@ Note: the `subscriptions` table uses `plan: 'free' | 'pro'` — this should be c
 ### 3-B: Lemon Squeezy integration
 
 **New files needed:**
+
 - `src/routes/api/lemon/webhook/+server.ts` — receives `subscription_created`, `subscription_updated`, `subscription_cancelled` events; verifies signature; updates `subscriptions` table
 - `src/routes/api/lemon/checkout/+server.ts` — creates a Lemon Squeezy checkout URL for the authenticated user and returns it
 - `src/lib/server/lemonsqueezy.ts` — webhook signature verification helper
 
 **Checkout flow:**
+
 1. User clicks "Upgrade to Norskeord Plus" on `/plus`
 2. Frontend calls `POST /api/lemon/checkout`
 3. Server creates Lemon Squeezy checkout URL via their REST API and redirects
@@ -193,6 +205,7 @@ Note: the `subscriptions` table uses `plan: 'free' | 'pro'` — this should be c
 Four sections:
 
 **Account**
+
 - Display name and email (editable via Supabase Auth `updateUser`)
 - Avatar (upload to Supabase Storage, or initials fallback)
 - Target CEFR level selector (A1–B2) — persisted to `user_settings`, drives the pace forecast on `/stats`
@@ -200,14 +213,17 @@ Four sections:
 - Flashcard display preferences (Norwegian→English or reverse; words or phrases) — currently in `localStorage` as `vocab-flashcard-mode` and `vocab-flashcard-card-type`; for Plus users, persist to `user_settings`
 
 **Subscription**
+
 - Current plan (Free / Plus Monthly / Plus Annual) with renewal date from `subscriptions.valid_until`
 - Upgrade / manage billing button (Lemon Squeezy customer portal link)
 
 **Notifications (Plus only)**
+
 - Daily study reminder toggle (default: off) — PWA web push at 7 pm local time if no cards studied that day; framed as "8 cards due today", not a streak reminder
 - Email lesson service toggle (default: off at signup)
 
 **Danger zone**
+
 - Export my data — JSON download of all `card_progress` rows for the user
 - Delete account — calls Supabase Admin API to delete the user and cascades to all their data
 
@@ -216,6 +232,7 @@ Four sections:
 **New route:** `src/routes/quiz/+page.svelte`
 
 Three sub-modes:
+
 - Multiple choice (4 options, 1 correct) — needs a `getDistractors(entry, allEntries, n=3)` helper picking wrong answers from the same CEFR level
 - Fill-in-the-blank (type the Norwegian word given the English)
 - Type-the-answer (full translation)
@@ -233,6 +250,7 @@ Reuses `VocabEntry[]` from existing JSON data. Quiz ratings feed back into FSRS 
 ### 4-D: SEO content pages
 
 Beyond `/norskproven`, additional SSR pages targeting organic search:
+
 - `/norwegian-a1-vocabulary` — renders vocabulary list from existing JSON data files, indexable by search engines
 - `/norwegian-b1-vocabulary` — targets job interview and university prep searches
 - `/learn-norwegian-online` — general landing page
@@ -250,6 +268,7 @@ Full design decisions are documented in [`ai-docs/email-service.md`](./email-ser
 **Stack addition:** `pnpm add resend`
 
 **Supabase schema additions:**
+
 ```sql
 create table email_subscribers (
   user_id       uuid primary key references auth.users(id) on delete cascade,
@@ -271,6 +290,7 @@ create table daily_lessons (
 ```
 
 **Supabase Edge Function** (`supabase/functions/send-daily-email/index.ts`):
+
 - Triggered by `pg_cron` each weekday at 07:00 Oslo time
 - Checks which levels are scheduled for that day of week
 - Fetches the matching `daily_lessons` row
@@ -278,6 +298,7 @@ create table daily_lessons (
 - Sends via Resend
 
 **Send schedule:**
+
 ```ts
 const SEND_DAYS: Record<string, number[]> = {
   A1: [1, 3, 5], // Mon, Wed, Fri
@@ -285,7 +306,7 @@ const SEND_DAYS: Record<string, number[]> = {
   B1: [1, 2, 3, 4, 5], // Mon–Fri
   B2: [1, 2, 3, 4, 5],
   C1: [2, 4], // Tue, Thu
-  C2: [2, 4],
+  C2: [2, 4]
 };
 ```
 
@@ -302,7 +323,8 @@ Exercises are links to this page rather than embedded in the email. Shows the da
 ### 5-D: Level-change screen update
 
 When a user changes their CEFR level in the Profile page, the confirmation screen must state the new send schedule:
-> *"You've moved to B1. You'll now receive emails Monday through Friday."*
+
+> _"You've moved to B1. You'll now receive emails Monday through Friday."_
 
 No separate notification email is sent.
 
@@ -310,35 +332,36 @@ No separate notification email is sent.
 
 ## Implementation Order Summary
 
-| Step | Task | Status | Effort |
-|------|------|--------|--------|
-| 0-A | FSRS rating buttons | ✅ | — |
-| 0-B | `/stats` with CEFR estimate | ✅ | — |
-| 0-C | `/norskproven` route | ✅ | — |
-| 0-D | `/plus` pricing + waitlist | ✅ | — |
-| 0-E | i18n via Paraglide (en + nb) | ✅ | — |
-| 1-A/B | Supabase auth + server hooks | ✅ | — |
-| 1-C | localStorage → Supabase sync | ✅ | — |
-| 2-A | ts-fsrs full wiring | ✅ | — |
-| 2-B | Due session: new cap + requeue | ✅ | — |
-| 2-C | Rating preview (interval display) | ✅ | — |
-| 2-D | Undo last rating | ✅ | — |
-| 2-E | FSRS weight optimisation (Edge Function) | ⬜ | 1 day |
-| 3-A | Feature gating (read plan from Supabase, gate FSRS + stats) | ⬜ | 3h |
-| 3-B | Lemon Squeezy payments | ⬜ | 1 day |
-| 4-A | Profile page | ⬜ | 1 day |
-| 4-B | Quiz mode | ⬜ | 2 days |
-| 4-C | Daily streaks + push | ⬜ | 1 day |
-| 4-D | SEO content pages | ⬜ | 2–3h |
-| 5-A | Email service (Resend + pg_cron) | ⬜ | 2 days |
-| 5-B | Daily lesson content generation | ⬜ | ongoing |
-| 5-C | `/daily/[level]/[date]` exercise page | ⬜ | 1 day |
+| Step  | Task                                                        | Status | Effort  |
+| ----- | ----------------------------------------------------------- | ------ | ------- |
+| 0-A   | FSRS rating buttons                                         | ✅     | —       |
+| 0-B   | `/stats` with CEFR estimate                                 | ✅     | —       |
+| 0-C   | `/norskproven` route                                        | ✅     | —       |
+| 0-D   | `/plus` pricing + waitlist                                  | ✅     | —       |
+| 0-E   | i18n via Paraglide (en + nb)                                | ✅     | —       |
+| 1-A/B | Supabase auth + server hooks                                | ✅     | —       |
+| 1-C   | localStorage → Supabase sync                                | ✅     | —       |
+| 2-A   | ts-fsrs full wiring                                         | ✅     | —       |
+| 2-B   | Due session: new cap + requeue                              | ✅     | —       |
+| 2-C   | Rating preview (interval display)                           | ✅     | —       |
+| 2-D   | Undo last rating                                            | ✅     | —       |
+| 2-E   | FSRS weight optimisation (Edge Function)                    | ⬜     | 1 day   |
+| 3-A   | Feature gating (read plan from Supabase, gate FSRS + stats) | ⬜     | 3h      |
+| 3-B   | Lemon Squeezy payments                                      | ⬜     | 1 day   |
+| 4-A   | Profile page                                                | ⬜     | 1 day   |
+| 4-B   | Quiz mode                                                   | ⬜     | 2 days  |
+| 4-C   | Daily streaks + push                                        | ⬜     | 1 day   |
+| 4-D   | SEO content pages                                           | ⬜     | 2–3h    |
+| 5-A   | Email service (Resend + pg_cron)                            | ⬜     | 2 days  |
+| 5-B   | Daily lesson content generation                             | ⬜     | ongoing |
+| 5-C   | `/daily/[level]/[date]` exercise page                       | ⬜     | 1 day   |
 
 ---
 
 ## Files Reference
 
 ### Completed files
+
 ```
 src/lib/types.ts                                (FSRSRating, CardProgress)
 src/lib/progress.ts                             (saveProgress, loadProgressMap, syncProgressOnLogin, previewIntervals)
@@ -363,6 +386,7 @@ messages/nb.json                                (Norwegian Bokmål translations)
 ```
 
 ### Files to create
+
 ```
 supabase/functions/optimise-fsrs-weights/       (Phase 2-E)
 src/routes/api/lemon/webhook/+server.ts         (Phase 3-B)
@@ -375,6 +399,7 @@ supabase/functions/send-daily-email/index.ts    (Phase 5-A)
 ```
 
 ### Files to modify (upcoming phases)
+
 ```
 src/hooks.server.ts                             (Phase 3-A: read plan from subscriptions table)
 src/lib/VocabFlashcardPage.svelte               (Phase 3-A: gate due mode + rating buttons)

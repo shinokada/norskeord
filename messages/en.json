@@ -11,8 +11,8 @@
   "nav_resources": "Resources",
   "nav_see_all": "See all {level} categories →",
   "nav_more": "More",
-  "nav_switch_to_norwegian": "🇳🇴 Norsk",
-  "nav_switch_to_english": "🇺🇸 English",
+  "nav_switch_to_norwegian": "🇳🇴 NO",
+  "nav_switch_to_english": "🇺🇸 EN",
 
   "flashcard_norsk": "Norsk",
   "flashcard_english": "English",
@@ -42,7 +42,7 @@
   "flashcard_next": "Next",
 
   "stats_title": "Your Progress",
-  "stats_subtitle": "All data is stored locally on this device.",
+  "stats_subtitle": "Progress is saved to this device. Sign in to sync across devices.",
   "stats_back": "← Back",
   "stats_loading": "Loading…",
   "stats_empty_heading": "No cards reviewed yet",
@@ -72,7 +72,7 @@
   "stats_seen_col": "Seen",
   "stats_due_col": "Due",
   "stats_danger_zone": "Danger zone",
-  "stats_danger_body": "This will permanently delete all your review history from this device.",
+  "stats_danger_body": "This will delete your review history from this device. If you are signed in, your data remains in the cloud.",
   "stats_confirm_question": "Are you sure? This cannot be undone.",
   "stats_confirm_yes": "Yes, reset everything",
   "stats_cancel": "Cancel",

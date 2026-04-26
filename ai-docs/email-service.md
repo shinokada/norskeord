@@ -30,6 +30,7 @@ Fixed per CEFR level — no user-configurable frequency. Weekends off for everyo
 | C1 / C2 | Tue, Thu           | 2           |
 
 **Rationale:**
+
 - A1/A2: Beginners need recovery time. 3x/week maintains momentum without overwhelming.
 - B1/B2: The sweet spot for daily study. Motivated learners, rich enough content, consistent exposure.
 - C1/C2: Advanced learners consume Norwegian elsewhere. Fewer, higher-quality emails fit their workflow.
@@ -43,7 +44,8 @@ When a user moves to a new level (e.g. A2 → B1), their email frequency changes
 User can choose only one level.
 
 Example confirmation copy:
-> *You've moved to B1. You'll now receive emails Monday through Friday.*
+
+> _You've moved to B1. You'll now receive emails Monday through Friday._
 
 ---
 
@@ -64,14 +66,15 @@ No Mailchimp, no Mailgun, no Sendgrid needed.
 Supabase has `pg_cron` built in. A cron job runs each morning, checks which levels are scheduled to receive email that day, picks the right lesson, and calls a Supabase Edge Function that sends via Resend.
 
 Day-of-week logic:
+
 ```ts
 const SEND_DAYS: Record<string, number[]> = {
-  'A1': [1, 3, 5], // Mon, Wed, Fri
-  'A2': [1, 3, 5],
-  'B1': [1, 2, 3, 4, 5], // Mon–Fri
-  'B2': [1, 2, 3, 4, 5],
-  'C1': [2, 4], // Tue, Thu
-  'C2': [2, 4],
+  A1: [1, 3, 5], // Mon, Wed, Fri
+  A2: [1, 3, 5],
+  B1: [1, 2, 3, 4, 5], // Mon–Fri
+  B2: [1, 2, 3, 4, 5],
+  C1: [2, 4], // Tue, Thu
+  C2: [2, 4]
 };
 ```
 
@@ -122,11 +125,13 @@ Should users be access only own level?
 **URL structure:** `/daily/[level]/[date]` where `level` is `a`, `b`, or `c` (matching the email group, not the specific CEFR sublevel).
 
 Examples:
+
 - `/daily/a/2026-04-23` — A1/A2 content for that date
 - `/daily/b/2026-04-23` — B1/B2 content for that date
 - `/daily/c/2026-04-23` — C1/C2 content for that date
 
 **Why level-scoped and not a single `/daily/2026-04-23`:**
+
 - Content is fundamentally different per level group — different text, vocabulary, and exercises
 - The URL is self-contained: it always shows the correct content regardless of the user's current level
 - Handles edge cases cleanly — forwarded emails, level changes, and old links all resolve correctly
@@ -141,11 +146,10 @@ Examples:
 This feature is **Phase 5** — after monetization (Phase 3) and growth features (Phase 4) are in place. It is a retention and engagement tool for paying Pro users, not a standalone product.
 
 Minimum viable scope for first launch:
+
 - `email_subscribers` and `daily_lessons` tables in Supabase
 - Edge Function: send email via Resend for a given level + date
 - `pg_cron` job: fires each weekday morning, calls Edge Function for applicable levels
 - Opt-in toggle in user account settings
 - Level-change confirmation screen updated to show new send schedule
 - 4–6 weeks of lesson content pre-generated per level before launch
-
-

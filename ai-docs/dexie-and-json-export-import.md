@@ -28,17 +28,17 @@ import type { VocabEntry, CEFRLevel } from './types';
 // A tag applied by the user to a specific word
 export interface WordTag {
   id?: number;
-  listId: string;        // e.g. 'norske-a1' or 'downloaded-oslo-pack'
-  wordId: string;        // `${norsk}__${level}__${category}` — see makeWordId()
+  listId: string; // e.g. 'norske-a1' or 'downloaded-oslo-pack'
+  wordId: string; // `${norsk}__${level}__${category}` — see makeWordId()
   tag: 'learned' | 'difficult';
-  updatedAt: number;     // Date.now()
+  updatedAt: number; // Date.now()
 }
 
 // A downloaded word list (not the built-in ones bundled in /src/lib/data)
 export interface WordList {
-  id: string;            // slug, e.g. 'oslo-daily-pack'
+  id: string; // slug, e.g. 'oslo-daily-pack'
   title: string;
-  language: string;      // 'nb' for Norwegian
+  language: string; // 'nb' for Norwegian
   level?: CEFRLevel;
   entries: VocabEntry[];
   downloadedAt: number;
@@ -63,7 +63,7 @@ class AppDB extends Dexie {
       // ++id = auto-increment PK; compound index on [listId+wordId] for fast lookup
       tags: '++id, [listId+wordId], listId, tag',
       wordLists: 'id',
-      voiceSettings: 'id',
+      voiceSettings: 'id'
     });
   }
 }
@@ -85,6 +85,7 @@ Replace the three `localStorage` keys added in v2 (`voice-settings-speed`, `-pit
 ### `src/lib/SpeakButton.svelte` changes
 
 **Read on mount:**
+
 ```ts
 import { db } from './db';
 import { onMount } from 'svelte';
@@ -105,6 +106,7 @@ onMount(async () => {
 ```
 
 **Write on change** (replace `localStorage.setItem` calls):
+
 ```ts
 async function saveVoiceSettings() {
   await db.voiceSettings.put({
@@ -120,6 +122,7 @@ async function saveVoiceSettings() {
 ```
 
 **One-time migration** (optional, for existing users):
+
 ```ts
 onMount(async () => {
   // Migrate from localStorage if Dexie record doesn't exist yet
@@ -150,10 +153,7 @@ export type Tag = 'learned' | 'difficult';
 
 export async function setTag(listId: string, entry: VocabEntry, tag: Tag | null) {
   const wordId = makeWordId(entry);
-  const existing = await db.tags
-    .where('[listId+wordId]')
-    .equals([listId, wordId])
-    .first();
+  const existing = await db.tags.where('[listId+wordId]').equals([listId, wordId]).first();
 
   if (tag === null) {
     if (existing?.id) await db.tags.delete(existing.id);
@@ -219,11 +219,13 @@ Add two small toggle buttons (✓ Learned / ★ Difficult) below the flashcard i
     <button
       onclick={() => toggleTag('learned')}
       class={currentTag === 'learned' ? 'bg-green-500 text-white ...' : 'bg-gray-200 ...'}
-    >✓ Learned</button>
+      >✓ Learned</button
+    >
     <button
       onclick={() => toggleTag('difficult')}
       class={currentTag === 'difficult' ? 'bg-red-400 text-white ...' : 'bg-gray-200 ...'}
-    >★ Difficult</button>
+      >★ Difficult</button
+    >
   </div>
 {/if}
 ```
@@ -329,7 +331,7 @@ export async function exportBackup(): Promise<void> {
     exportedAt: Date.now(),
     tags: await db.tags.toArray(),
     wordLists: await db.wordLists.toArray(),
-    voiceSettings: await db.voiceSettings.toArray(),
+    voiceSettings: await db.voiceSettings.toArray()
   };
   const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);

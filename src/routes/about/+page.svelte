@@ -1,12 +1,5 @@
 <script>
-  import { removeHyphensAndCapitalize } from '$lib/utils';
-  import { A, P, Heading, List, Li } from 'flowbite-svelte';
-
-  const name = __NAME__;
-  const version = __VERSION__;
-  const svelteVersion = __SVELTE_VERSION__;
-  const svelteKitVersion = __SVELTEKIT_VERSION__;
-  const viteVersion = __VITE_VERSION__;
+  import { P, Heading } from 'flowbite-svelte';
 </script>
 
 <div class="mx-auto max-w-4xl p-8 text-left">
@@ -22,5 +15,4 @@
     as Røde Kors Norsktrening. I would like to express my sincere gratitude to all the volunteers
     who are helping us learn Norwegian.</P
   >
-
 </div>

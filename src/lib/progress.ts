@@ -231,9 +231,7 @@ export function previewIntervals(existing: CardProgress | null, now: Date): Sche
   // timestamp (e.g. in tests or when the card isn't overdue yet). The scheduling
   // state (stability, difficulty, reps, etc.) is preserved so FSRS produces the
   // correct next intervals for a card at this maturity level.
-  const card = existing
-    ? { ...existing.fsrs, due: now, last_review: now }
-    : createEmptyCard(now);
+  const card = existing ? { ...existing.fsrs, due: now, last_review: now } : createEmptyCard(now);
 
   const labels = {} as Record<FSRSRating, string>;
   for (const [r, grade] of Object.entries(RATING_MAP) as [FSRSRating, Grade][]) {

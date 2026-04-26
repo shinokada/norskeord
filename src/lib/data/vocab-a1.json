@@ -4028,5 +4028,905 @@
     "level": "A1",
     "category": "transportation",
     "part": "phrase"
+  },
+  {
+    "norsk": "et bad",
+    "english": "a bath",
+    "example": "Jeg tar et bad om kvelden.",
+    "example_english": "I take a bath in the evening.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en pute",
+    "english": "a pillow",
+    "example": "Puten er myk og god.",
+    "example_english": "The pillow is soft and nice.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "et teppe",
+    "english": "a rug / blanket",
+    "example": "Vi har et rød teppe i stuen.",
+    "example_english": "We have a red rug in the living room.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kopp",
+    "english": "a cup",
+    "example": "Jeg drikker kaffe av en kopp.",
+    "example_english": "I drink coffee from a cup.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en tallerken",
+    "english": "a plate",
+    "example": "Maten er på tallerkenen.",
+    "example_english": "The food is on the plate.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "et glass",
+    "english": "a glass",
+    "example": "Jeg vil ha et glass vann.",
+    "example_english": "I would like a glass of water.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skje",
+    "english": "a spoon",
+    "example": "Jeg spiser suppe med en skje.",
+    "example_english": "I eat soup with a spoon.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en gaffel",
+    "english": "a fork",
+    "example": "Kan du gi meg en gaffel?",
+    "example_english": "Can you give me a fork?",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kniv",
+    "english": "a knife",
+    "example": "Vi bruker kniv til å skjære brød.",
+    "example_english": "We use a knife to cut bread.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bøtte",
+    "english": "a bucket",
+    "example": "Han fyller bøtten med vann.",
+    "example_english": "He fills the bucket with water.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kanne",
+    "english": "a kettle / jug",
+    "example": "Kannen er full av te.",
+    "example_english": "The kettle is full of tea.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kurv",
+    "english": "a basket",
+    "example": "Vi legger frukten i kurven.",
+    "example_english": "We put the fruit in the basket.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en hylle",
+    "english": "a shelf",
+    "example": "Bøkene står på hyllen.",
+    "example_english": "The books are on the shelf.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "et gulvteppe",
+    "english": "a carpet",
+    "example": "Vi har et stort gulvteppe.",
+    "example_english": "We have a large carpet.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en vask",
+    "english": "a sink",
+    "example": "Vasken er på badet.",
+    "example_english": "The sink is in the bathroom.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en dusj",
+    "english": "a shower",
+    "example": "Jeg tar en dusj om morgenen.",
+    "example_english": "I take a shower in the morning.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en speil",
+    "english": "a mirror",
+    "example": "Speilet henger på veggen.",
+    "example_english": "The mirror hangs on the wall.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en klokke",
+    "english": "a clock",
+    "example": "Klokken er på veggen i stuen.",
+    "example_english": "The clock is on the wall in the living room.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "et bilde",
+    "english": "a picture / painting",
+    "example": "Det er et fint bilde på veggen.",
+    "example_english": "There is a nice picture on the wall.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en pære",
+    "english": "a light bulb",
+    "example": "Pæren er gått.",
+    "example_english": "The light bulb has burned out.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "et lys",
+    "english": "a light / candle",
+    "example": "Vi tenner et lys om kvelden.",
+    "example_english": "We light a candle in the evening.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en søppelbøtte",
+    "english": "a trash can",
+    "example": "Kast det i søppelbøtten.",
+    "example_english": "Throw it in the trash can.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "et håndkle",
+    "english": "a towel",
+    "example": "Håndkleet henger på badet.",
+    "example_english": "The towel hangs in the bathroom.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en stige",
+    "english": "a ladder",
+    "example": "Han klatrer opp stigen.",
+    "example_english": "He climbs up the ladder.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en panne",
+    "english": "a pan",
+    "example": "Jeg steker egg i pannen.",
+    "example_english": "I fry eggs in the pan.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
+  },
+  {
+    "norsk": "en butikk",
+    "english": "a shop / store",
+    "example": "Butikken åpner klokken ni.",
+    "example_english": "The shop opens at nine o'clock.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et marked",
+    "english": "a market",
+    "example": "Vi kjøper grønnsaker på markedet.",
+    "example_english": "We buy vegetables at the market.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et sykehus",
+    "english": "a hospital",
+    "example": "Han er på sykehuset.",
+    "example_english": "He is at the hospital.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en park",
+    "english": "a park",
+    "example": "Barna leker i parken.",
+    "example_english": "The children play in the park.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et bibliotek",
+    "english": "a library",
+    "example": "Jeg låner bøker på biblioteket.",
+    "example_english": "I borrow books at the library.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bank",
+    "english": "a bank",
+    "example": "Banken er i sentrum.",
+    "example_english": "The bank is in the city centre.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en restaurant",
+    "english": "a restaurant",
+    "example": "Vi spiser middag på en restaurant.",
+    "example_english": "We eat dinner at a restaurant.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kafe",
+    "english": "a café",
+    "example": "Kafen serverer god kaffe.",
+    "example_english": "The café serves good coffee.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et apotek",
+    "english": "a pharmacy",
+    "example": "Jeg kjøper medisin på apoteket.",
+    "example_english": "I buy medicine at the pharmacy.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kirke",
+    "english": "a church",
+    "example": "Kirken er gammel og fin.",
+    "example_english": "The church is old and beautiful.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en gate",
+    "english": "a street",
+    "example": "Vi bor i en stille gate.",
+    "example_english": "We live in a quiet street.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et torg",
+    "english": "a town square",
+    "example": "Det er mange folk på torget.",
+    "example_english": "There are many people in the town square.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et museum",
+    "english": "a museum",
+    "example": "Vi besøker museet på lørdag.",
+    "example_english": "We visit the museum on Saturday.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et hotell",
+    "english": "a hotel",
+    "example": "Hotellet er nær sentrum.",
+    "example_english": "The hotel is near the city centre.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en flyplass",
+    "english": "an airport",
+    "example": "Flyet går fra flyplassen.",
+    "example_english": "The plane departs from the airport.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et svømmebasseng",
+    "english": "a swimming pool",
+    "example": "Jeg svømmer i bassenget.",
+    "example_english": "I swim in the pool.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skole",
+    "english": "a school",
+    "example": "Barna går på skole hver dag.",
+    "example_english": "The children go to school every day.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et kjøpesenter",
+    "english": "a shopping centre",
+    "example": "Vi handler på kjøpesenteret.",
+    "example_english": "We shop at the shopping centre.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et kontor",
+    "english": "an office",
+    "example": "Hun jobber på et kontor.",
+    "example_english": "She works in an office.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en lekeplass",
+    "english": "a playground",
+    "example": "Barna er på lekeplassen.",
+    "example_english": "The children are at the playground.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et stadion",
+    "english": "a stadium",
+    "example": "Det er mange folk på stadion.",
+    "example_english": "There are many people at the stadium.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en treningssenter",
+    "english": "a gym",
+    "example": "Jeg trener på treningssenter.",
+    "example_english": "I work out at the gym.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en politistasjon",
+    "english": "a police station",
+    "example": "Politistasjonen er i sentrum.",
+    "example_english": "The police station is in the centre.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en brannstasjon",
+    "english": "a fire station",
+    "example": "Brannstasjonen er nær skolen.",
+    "example_english": "The fire station is near the school.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "et postkontor",
+    "english": "a post office",
+    "example": "Jeg sender pakken fra postkontoret.",
+    "example_english": "I send the package from the post office.",
+    "level": "A1",
+    "category": "basic-places",
+    "part": "noun"
+  },
+  {
+    "norsk": "en jakke",
+    "english": "a jacket",
+    "example": "Det er kaldt, ta på jakken.",
+    "example_english": "It is cold, put on the jacket.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en bukse",
+    "english": "trousers / pants",
+    "example": "Han har på seg svarte bukser.",
+    "example_english": "He is wearing black trousers.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skjorte",
+    "english": "a shirt",
+    "example": "Skjorten er hvit og fin.",
+    "example_english": "The shirt is white and nice.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en kjole",
+    "english": "a dress",
+    "example": "Hun har på seg en rød kjole.",
+    "example_english": "She is wearing a red dress.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en genser",
+    "english": "a sweater",
+    "example": "Genseren er varm og koselig.",
+    "example_english": "The sweater is warm and cosy.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sko",
+    "english": "a shoe",
+    "example": "Skoene er for små.",
+    "example_english": "The shoes are too small.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en sokk",
+    "english": "a sock",
+    "example": "Jeg har på meg varme sokker.",
+    "example_english": "I am wearing warm socks.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en hatt",
+    "english": "a hat",
+    "example": "Han har en blå hatt på hodet.",
+    "example_english": "He has a blue hat on his head.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "et skjerf",
+    "english": "a scarf",
+    "example": "Skjerfet holder nakken varm.",
+    "example_english": "The scarf keeps the neck warm.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "hansker",
+    "english": "gloves",
+    "example": "Det er kaldt, bruk hansker.",
+    "example_english": "It is cold, use gloves.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en frakk",
+    "english": "a coat",
+    "example": "Frakken er lang og varm.",
+    "example_english": "The coat is long and warm.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en t-skjorte",
+    "english": "a t-shirt",
+    "example": "Om sommeren bruker jeg t-skjorte.",
+    "example_english": "In summer I wear a t-shirt.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "shorts",
+    "english": "shorts",
+    "example": "Shorts er bra i varmt vær.",
+    "example_english": "Shorts are good in warm weather.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "et belte",
+    "english": "a belt",
+    "example": "Beltet holder buksene oppe.",
+    "example_english": "The belt keeps the trousers up.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "et slips",
+    "english": "a tie",
+    "example": "Han bruker slips på jobben.",
+    "example_english": "He wears a tie at work.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en lue",
+    "english": "a beanie / woollen hat",
+    "example": "Luen er varm og myk.",
+    "example_english": "The beanie is warm and soft.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "støvler",
+    "english": "boots",
+    "example": "Jeg bruker støvler om vinteren.",
+    "example_english": "I wear boots in winter.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "sandaler",
+    "english": "sandals",
+    "example": "Sandaler er behagelige om sommeren.",
+    "example_english": "Sandals are comfortable in summer.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "pyjamas",
+    "english": "pyjamas",
+    "example": "Jeg tar på meg pyjamas om kvelden.",
+    "example_english": "I put on pyjamas in the evening.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "undertøy",
+    "english": "underwear",
+    "example": "Undertøy vaskes ofte.",
+    "example_english": "Underwear is washed often.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en dress",
+    "english": "a suit",
+    "example": "Han har på seg en mørk dress.",
+    "example_english": "He is wearing a dark suit.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en skjørt",
+    "english": "a skirt",
+    "example": "Skjørtet er blått og fint.",
+    "example_english": "The skirt is blue and nice.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "en regnjakke",
+    "english": "a raincoat",
+    "example": "Ta med regnjakken, det regner.",
+    "example_english": "Bring the raincoat, it is raining.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "noun"
+  },
+  {
+    "norsk": "å kle på seg",
+    "english": "to get dressed",
+    "example": "Jeg kler på meg etter dusjen.",
+    "example_english": "I get dressed after the shower.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "verb"
+  },
+  {
+    "norsk": "å kle av seg",
+    "english": "to get undressed",
+    "example": "Han kler av seg før han legger seg.",
+    "example_english": "He gets undressed before going to bed.",
+    "level": "A1",
+    "category": "basic-clothes",
+    "part": "verb"
+  },
+  {
+    "norsk": "å stå opp",
+    "english": "to get up",
+    "example": "Jeg står opp klokken syv.",
+    "example_english": "I get up at seven o'clock.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å sitte",
+    "english": "to sit",
+    "example": "Hun sitter på stolen.",
+    "example_english": "She sits on the chair.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å stå",
+    "english": "to stand",
+    "example": "Han står ved vinduet.",
+    "example_english": "He stands by the window.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å ligge",
+    "english": "to lie down",
+    "example": "Katten ligger på sofaen.",
+    "example_english": "The cat is lying on the sofa.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å løpe",
+    "english": "to run",
+    "example": "Barna løper i parken.",
+    "example_english": "The children run in the park.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å hoppe",
+    "english": "to jump",
+    "example": "Han hopper over pyttene.",
+    "example_english": "He jumps over the puddles.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å kaste",
+    "english": "to throw",
+    "example": "Hun kaster ballen til ham.",
+    "example_english": "She throws the ball to him.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å fange",
+    "english": "to catch",
+    "example": "Han fanger ballen.",
+    "example_english": "He catches the ball.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å bære",
+    "english": "to carry",
+    "example": "Hun bærer en tung pose.",
+    "example_english": "She carries a heavy bag.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å trekke",
+    "english": "to pull",
+    "example": "Han trekker i døren.",
+    "example_english": "He pulls the door.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å skyve",
+    "english": "to push",
+    "example": "Hun skyver vognen.",
+    "example_english": "She pushes the pram.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å vente",
+    "english": "to wait",
+    "example": "Jeg venter på bussen.",
+    "example_english": "I am waiting for the bus.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å stoppe",
+    "english": "to stop",
+    "example": "Bussen stopper her.",
+    "example_english": "The bus stops here.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å begynne",
+    "english": "to begin / start",
+    "example": "Skolen begynner klokken åtte.",
+    "example_english": "School begins at eight o'clock.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å slutte",
+    "english": "to finish / stop",
+    "example": "Jobben slutter klokken fire.",
+    "example_english": "Work finishes at four o'clock.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å finne",
+    "english": "to find",
+    "example": "Kan du finne nøkkelen?",
+    "example_english": "Can you find the key?",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å miste",
+    "english": "to lose",
+    "example": "Jeg mistet bussen.",
+    "example_english": "I missed the bus.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å betale",
+    "english": "to pay",
+    "example": "Jeg betaler med kort.",
+    "example_english": "I pay by card.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å hente",
+    "english": "to fetch / pick up",
+    "example": "Han henter barna fra skolen.",
+    "example_english": "He picks up the children from school.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å legge",
+    "english": "to put / lay",
+    "example": "Hun legger boken på bordet.",
+    "example_english": "She puts the book on the table.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å hente",
+    "english": "to get / collect",
+    "example": "Kan du hente melk?",
+    "example_english": "Can you get some milk?",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å trykke",
+    "english": "to press / push",
+    "example": "Trykk på knappen.",
+    "example_english": "Press the button.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å tegne",
+    "english": "to draw",
+    "example": "Barnet tegner et hus.",
+    "example_english": "The child draws a house.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å synge",
+    "english": "to sing",
+    "example": "Vi synger en sang.",
+    "example_english": "We sing a song.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
+  },
+  {
+    "norsk": "å male",
+    "english": "to paint",
+    "example": "Hun maler et bilde.",
+    "example_english": "She paints a picture.",
+    "level": "A1",
+    "category": "simple-actions",
+    "part": "verb"
   }
 ]
