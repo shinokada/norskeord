@@ -13,8 +13,9 @@
       >
     </Li>
     <Li class="hover:text-red-700 hover:underline">
-      <A href="https://oslo.norsktrening.rodekors.no/pamelding/digital/norsktrening" class="me-4 hover:underline md:me-6"
-        >Røde Kors Online Tranining</A
+      <A
+        href="https://oslo.norsktrening.rodekors.no/pamelding/digital/norsktrening"
+        class="me-4 hover:underline md:me-6">Røde Kors Online Tranining</A
       >
     </Li>
     <Li class="hover:text-red-700 hover:underline">
@@ -23,16 +24,17 @@
       >
     </Li>
     <Li class="hover:text-red-700 hover:underline">
-      <A href="https://www.kianorge.no/aktivitet/sprakkafe-i-oslo-tullinsgate" class="me-4 hover:underline md:me-6">KIA Norge (Oslo)</A>
+      <A
+        href="https://www.kianorge.no/aktivitet/sprakkafe-i-oslo-tullinsgate"
+        class="me-4 hover:underline md:me-6">KIA Norge (Oslo)</A
+      >
     </Li>
   </List>
 
   <Heading tag="h2" class="text-2xl">Online Learning</Heading>
   <List class="list-disc text-left text-lg dark:text-gray-400">
     <Li class="hover:text-red-700 hover:underline">
-      <A href="https://www.ntnu.edu/learnnow/" class="me-4 hover:underline md:me-6"
-        >Learn NoW</A
-      >
+      <A href="https://www.ntnu.edu/learnnow/" class="me-4 hover:underline md:me-6">Learn NoW</A>
     </Li>
     <Li class="hover:text-red-700 hover:underline">
       <A href="https://www.ntnu.edu/learnnow2-hs/" class="me-4 hover:underline md:me-6"
@@ -52,12 +54,15 @@
       <A href="https://www.klartale.no/" class="me-4 hover:underline md:me-6">Klar Tale</A>
     </Li>
     <Li class="hover:text-red-700 hover:underline">
-      <A href="hhttps://deichman.no/sok/form:%20%22Lettlest%2C%20enkelt%20innhold%22?language=languages_Norsk+%28bokm%C3%A5l%29&audience=work.audiences_Voksne" class="me-4 hover:underline md:me-6">Deichman</A>
+      <A
+        href="hhttps://deichman.no/sok/form:%20%22Lettlest%2C%20enkelt%20innhold%22?language=languages_Norsk+%28bokm%C3%A5l%29&audience=work.audiences_Voksne"
+        class="me-4 hover:underline md:me-6">Deichman</A
+      >
     </Li>
     <Li class="hover:text-red-700 hover:underline">
       <A href="https://barneboker.no/" class="me-4 hover:underline md:me-6">Barnebøker for Norge</A>
     </Li>
-  </List> 
+  </List>
 
   <Heading tag="h2" class="text-2xl">Vocaburary/Flashcard</Heading>
   <List class="list-disc text-left text-lg dark:text-gray-400">
@@ -84,9 +89,7 @@
       >
     </Li>
     <Li class="hover:text-red-700 hover:underline">
-      <A href="https://lingu.no/norskpodden" class="me-4 hover:underline md:me-6"
-        >Lingu</A
-      >
+      <A href="https://lingu.no/norskpodden" class="me-4 hover:underline md:me-6">Lingu</A>
     </Li>
   </List>
 

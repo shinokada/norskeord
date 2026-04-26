@@ -1,4 +1,7 @@
 <script lang="ts">
+  import type { Pathname } from '$app/types';
+  import { resolve } from '$app/paths';
+  import { locales, localizeHref } from '$lib/paraglide/runtime';
   import '../app.css';
   import { onMount } from 'svelte';
   import { afterNavigate } from '$app/navigation';
@@ -9,7 +12,9 @@
   import Footer from './components/Footer.svelte';
   import PwaUpdatePrompt from './components/PwaUpdatePrompt.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
+
   let { children, data } = $props();
+
   let metaTags = $derived(
     page.data.pageMetaTags
       ? deepMerge(page.data.layoutMetaTags, page.data.pageMetaTags)
@@ -41,6 +46,7 @@
     function onTouchMove(e: TouchEvent) {
       const dx = Math.abs(e.touches[0].clientX - startX);
       const dy = Math.abs(e.touches[0].clientY - startY);
+
       if (dx > dy) {
         e.preventDefault();
       }
@@ -61,10 +67,14 @@
 <Nav />
 
 <section class="border-b border-gray-300 pb-8 dark:border-gray-600">
-  <div class="mx-auto max-w-screen-xl px-4 text-center">
-    {@render children()}
-  </div>
+  <div class="mx-auto max-w-7xl px-4 text-center">{@render children()}</div>
 </section>
 
 <Footer />
 <PwaUpdatePrompt />
+
+<div style="display:none">
+  {#each locales as locale (locale)}
+    <a href={resolve(localizeHref(page.url.pathname, { locale }) as Pathname)}>{locale}</a>
+  {/each}
+</div>
