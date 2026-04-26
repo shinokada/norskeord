@@ -11,8 +11,8 @@
   "nav_resources": "Ressurser",
   "nav_see_all": "Se alle {level}-kategorier →",
   "nav_more": "Mer",
-  "nav_switch_to_norwegian": "🇳🇴 Norsk",
-  "nav_switch_to_english": "🇺🇸 English",
+  "nav_switch_to_norwegian": "🇳🇴 NO",
+  "nav_switch_to_english": "🇺🇸 EN",
 
   "flashcard_norsk": "Norsk",
   "flashcard_english": "Engelsk",
@@ -42,7 +42,7 @@
   "flashcard_next": "Neste",
 
   "stats_title": "Din fremgang",
-  "stats_subtitle": "Alle data er lagret lokalt på denne enheten.",
+  "stats_subtitle": "Fremgangen lagres på denne enheten. Logg inn for å synkronisere på tvers av enheter.",
   "stats_back": "← Tilbake",
   "stats_loading": "Laster…",
   "stats_empty_heading": "Ingen kort er øvd på ennå",
@@ -72,7 +72,7 @@
   "stats_seen_col": "Sett",
   "stats_due_col": "Forfalt",
   "stats_danger_zone": "Faresone",
-  "stats_danger_body": "Dette vil slette all øvingshistorikk på denne enheten for alltid.",
+  "stats_danger_body": "Dette vil slette øvingshistorikken din fra denne enheten. Hvis du er logget inn, er dataene dine fortsatt lagret i skyen.",
   "stats_confirm_question": "Er du sikker? Dette kan ikke angres.",
   "stats_confirm_yes": "Ja, slett alt",
   "stats_cancel": "Avbryt",

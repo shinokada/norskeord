@@ -31,7 +31,11 @@ export const CATEGORIES_BY_LEVEL = {
     'pronouns-and-questions',
     'feelings',
     'weather',
-    'transportation'
+    'transportation',
+    'household-items',
+    'basic-places',
+    'basic-clothes',
+    'simple-actions'
   ],
   A2: [
     'shopping',
@@ -48,7 +52,14 @@ export const CATEGORIES_BY_LEVEL = {
     'cooking',
     'nature',
     'house-chores',
-    'communication'
+    'communication',
+    'health-body-intermediate',
+    'finance-banking',
+    'body-health-expanded',
+    'social-life',
+    'technology-basic',
+    'environment-basic',
+    'money-numbers'
   ],
   B1: [
     'travel',
@@ -65,7 +76,24 @@ export const CATEGORIES_BY_LEVEL = {
     'food-cooking-advanced',
     'housing-renting',
     'health-body-intermediate',
-    'finance-banking'
+    'finance-banking',
+    'dreams-ambitions',
+    'opinions-arguments',
+    'norwegian-society',
+    'communication-skills',
+    'housing-urban-life',
+    'mental-wellbeing',
+    'sports-fitness',
+    'arts-culture',
+    'economics-personal-finance',
+    'environment-b1',
+    'science-nature',
+    'media-journalism-b1',
+    'workplace',
+    'relationships-family',
+    'politics-civics',
+    'language-learning',
+    'health-system'
   ],
   B2: [
     'politics',
@@ -83,7 +111,24 @@ export const CATEGORIES_BY_LEVEL = {
     'medicine',
     'psychology',
     'business',
-    'religion'
+    'religion',
+    'environment',
+    'technology',
+    'media',
+    'education',
+    'language',
+    'argumentation',
+    'abstract-nouns',
+    'advanced-verbs',
+    'geography',
+    'culture',
+    'global-issues',
+    'academic-language',
+    'discourse-markers',
+    'work-career',
+    'relationships',
+    'communication',
+    ''
   ],
   C1: [
     'philosophy',
@@ -132,7 +177,7 @@ export interface CardProgress {
 
 export interface VocabEntry {
   norsk: string;
-  lemma?: string; 
+  lemma?: string;
   english: string;
   example: string;
   example_english: string;

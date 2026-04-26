@@ -1,4 +1,5 @@
 import type { PageLoad } from './$types';
+export const ssr = false;
 import type { VocabEntry } from '$lib/types';
 
 const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
