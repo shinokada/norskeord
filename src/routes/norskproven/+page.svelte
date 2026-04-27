@@ -1,7 +1,9 @@
 <script lang="ts">
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import * as m from '$lib/paraglide/messages.js';
+  import { page } from '$app/state';
 
+  const user = $derived(page.data.user);
   // Curated exam-essential categories per level, ordered by exam relevance
   const examSections = [
     {
@@ -106,12 +108,21 @@
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
       {m.norskproven_subheading()}
     </p>
-    <a
-      href="/stats"
-      class="mt-5 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
-    >
-      {m.norskproven_cta_progress()}
-    </a>
+    {#if user}
+      <a
+        href="/stats"
+        class="mt-5 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
+      >
+        {m.norskproven_cta_progress()}
+      </a>
+    {:else}
+      <a
+        href="/plus"
+        class="mt-5 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
+      >
+        {m.nav_plus_badge()}
+      </a>
+    {/if}
   </div>
 
   <!-- ── What is Norskprøven ───────────────────────────────────────────────────── -->

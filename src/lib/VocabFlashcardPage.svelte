@@ -87,10 +87,20 @@
   let isTouch = $state(false);
   let touchStartX = 0;
 
+  // 3-A: plan from layout server data
+  let plan = $derived(page.data.plan as 'free' | 'plus');
+  let isPlus = $derived(plan === 'plus');
+
   onMount(() => {
     isTouch = window.matchMedia('(pointer: coarse)').matches;
     progressMap = loadProgressMap();
     dueCount = countDueToday(progressMap);
+
+    // 3-A: if free user has due mode stored, reset it to 'all'
+    if (!isPlus && deckMode === 'due') {
+      deckMode = 'all';
+      localStorage.setItem(LS_DECK_MODE, 'all');
+    }
   });
 
   // ── Deck building ────────────────────────────────────────────────────────────
@@ -185,6 +195,8 @@
   }
 
   function setDeckMode(dm: DeckMode) {
+    // 3-A: free users cannot switch to due mode
+    if (!isPlus && dm === 'due') return;
     if (dm === deckMode) return;
     deckMode = dm;
     localStorage.setItem(LS_DECK_MODE, dm);
@@ -377,7 +389,7 @@
 
   // ── Rating ───────────────────────────────────────────────────────────────────
 
-  async function rate(rating: FSRSRating) {
+  function rate(rating: FSRSRating) {
     if (!current) return;
 
     const entry = current.entry;
@@ -389,7 +401,8 @@
     const isNew = previousProgress === null || previousProgress.fsrs.state === State.New;
     if (isNew) sessionNewCardCount++;
 
-    const userId = page.data.user?.id ?? null;
+    // 3-A: only pass userId for Plus users (free users get localStorage only)
+    const userId = isPlus ? (page.data.user?.id ?? null) : null;
     progressMap = saveProgress(entry, rating, progressMap, userId);
     dueCount = countDueToday(progressMap);
 
@@ -432,20 +445,52 @@
       {cardType === 'word' ? m.flashcard_word() : m.flashcard_phrase()}
     </button>
 
-    <!-- 2-B: deck mode toggle -->
-    <button
-      type="button"
-      onclick={() => setDeckMode(deckMode === 'all' ? 'due' : 'all')}
-      class="mb-1 rounded-lg px-3 py-1 text-sm font-semibold transition-colors sm:mb-2 sm:px-4 sm:py-2 {deckMode ===
-      'due'
-        ? 'bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500'
-        : 'border border-gray-300 text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700'}"
-    >
-      {deckMode === 'due'
-        ? m.flashcard_review_due({ count: String(dueCount) })
-        : m.flashcard_all_cards()}
-    </button>
+    <!-- 2-B / 3-A: deck mode toggle — Plus only -->
+    {#if isPlus}
+      <button
+        type="button"
+        onclick={() => setDeckMode(deckMode === 'all' ? 'due' : 'all')}
+        class="mb-1 rounded-lg px-3 py-1 text-sm font-semibold transition-colors sm:mb-2 sm:px-4 sm:py-2 {deckMode ===
+        'due'
+          ? 'bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500'
+          : 'border border-gray-300 text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700'}"
+      >
+        {deckMode === 'due'
+          ? m.flashcard_review_due({ count: String(dueCount) })
+          : m.flashcard_all_cards()}
+      </button>
+    {:else}
+      <!-- 3-A: upsell button for free users -->
+      <a
+        href="/plus"
+        class="mb-1 inline-flex items-center gap-1.5 rounded-lg border border-orange-300 px-3 py-1 text-sm font-semibold text-orange-600 transition-colors hover:bg-orange-50 sm:mb-2 sm:px-4 sm:py-2 dark:border-orange-700 dark:text-orange-400 dark:hover:bg-orange-900/20"
+        title={m.flashcard_plus_due_heading()}
+      >
+        <span>⭐</span>
+        {m.flashcard_all_cards()}
+      </a>
+    {/if}
   </div>
+
+  <!-- 3-A: Plus upsell banner for free users (shown below controls) -->
+  {#if !isPlus && dueCount > 0}
+    <div
+      class="mt-3 w-full max-w-lg rounded-xl border border-orange-200 bg-orange-50 px-5 py-4 dark:border-orange-800 dark:bg-orange-900/20"
+    >
+      <p class="font-semibold text-orange-700 dark:text-orange-300">
+        {m.flashcard_plus_due_heading()}
+      </p>
+      <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+        {m.flashcard_plus_due_body()}
+      </p>
+      <a
+        href="/plus"
+        class="mt-2 inline-block text-sm font-semibold text-orange-700 hover:underline dark:text-orange-300"
+      >
+        {m.flashcard_plus_upgrade()}
+      </a>
+    </div>
+  {/if}
 
   <!-- Counter row -->
   <div
@@ -481,7 +526,7 @@
         class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
       >
         <p class="text-lg font-medium text-gray-700 dark:text-gray-300">
-          {deckMode === 'due' ? m.flashcard_no_items() : m.flashcard_no_items()}
+          {m.flashcard_no_items()}
         </p>
       </div>
     {:else if completed}
@@ -530,7 +575,7 @@
     </p>
   {/if}
 
-  <!-- FSRS Rating buttons (visible after flip) -->
+  <!-- FSRS Rating buttons (visible after flip — free for all users) -->
   {#if !completed && current && showCardBack}
     <div class="mt-4 flex flex-wrap justify-center gap-2">
       <div class="flex flex-col items-center gap-0.5">

@@ -9,7 +9,7 @@ import type { Handle } from '@sveltejs/kit';
  * Validates the Supabase session cookie and exposes:
  *   - locals.supabase  — authenticated server client for this request
  *   - locals.user      — the authenticated User object, or null
- *   - locals.plan      — 'pro' | 'free' (defaults to 'free' until Phase 3)
+ *   - locals.plan      — 'plus' | 'free' (read from subscriptions table)
  */
 const originalHandle: Handle = async ({ event, resolve }) => {
   const supabase = createSupabaseServerClient(event.cookies);
@@ -23,9 +23,18 @@ const originalHandle: Handle = async ({ event, resolve }) => {
 
   event.locals.user = user ?? null;
 
-  // Phase 3 will look up the subscriptions table here.
-  // For now everyone is 'free'.
-  event.locals.plan = 'free';
+  // Phase 3-A: read plan from subscriptions table.
+  // Falls back to 'free' for unauthenticated users or missing rows.
+  if (user) {
+    const { data } = await supabase
+      .from('subscriptions')
+      .select('plan')
+      .eq('user_id', user.id)
+      .maybeSingle();
+    event.locals.plan = (data?.plan as 'free' | 'plus') ?? 'free';
+  } else {
+    event.locals.plan = 'free';
+  }
 
   return resolve(event, {
     // Required by @supabase/ssr: let it set the auth cookie on the response.
@@ -39,13 +48,6 @@ const handleParaglide: Handle = ({ event, resolve }) =>
     event.request = request;
 
     return resolve(event, {
-      /**
-       * Runs on every server request.
-       * Validates the Supabase session cookie and exposes:
-       *   - locals.supabase  — authenticated server client for this request
-       *   - locals.user      — the authenticated User object, or null
-       *   - locals.plan      — 'pro' | 'free' (defaults to 'free' until Phase 3)
-       */
       transformPageChunk: ({ html }) =>
         html
           .replace('%paraglide.lang%', locale)
@@ -54,7 +56,3 @@ const handleParaglide: Handle = ({ event, resolve }) =>
   });
 
 export const handle = sequence(originalHandle, handleParaglide);
-// getUser() validates the JWT with Supabase's servers — never trust locals.session alone.
-// Phase 3 will look up the subscriptions table here.
-// For now everyone is 'free'.
-// Required by @supabase/ssr: let it set the auth cookie on the response.
