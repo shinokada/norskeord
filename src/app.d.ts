@@ -6,11 +6,11 @@ declare global {
     interface Locals {
       supabase: SupabaseClient;
       user: User | null;
-      plan: 'free' | 'pro';
+      plan: 'free' | 'plus';
     }
     interface PageData {
       user: User | null;
-      plan: 'free' | 'pro';
+      plan: 'free' | 'plus';
     }
     // interface Error {}
     // interface PageState {}

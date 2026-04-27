@@ -2,16 +2,18 @@
 
 ## Tiers
 
-|                                         | Free                  | Norskeord Plus                   |
-| --------------------------------------- | --------------------- | -------------------------------- |
-| Vocabulary (A1–C2)                      | ✅ All categories     | ✅ All categories                |
-| Random shuffle                          | ✅                    | ✅                               |
-| FSRS scheduling                         | ❌                    | ✅                               |
-| Progress sync across devices            | ❌                    | ✅                               |
-| Stats: CEFR estimate + pace forecast    | Basic                 | Full                             |
-| Email lesson service                    | ❌                    | ✅                               |
-| AI-generated Norskprøven exam questions | 1 free sample (A1–A2) | All levels (A1–A2, A2–B1, B1–B2) |
-| Price                                   | Free                  | 49 NOK/month · 499 NOK/year      |
+| Feature                                | Free | Plus                        |
+| -------------------------------------- | ---- | --------------------------- |
+| All vocabulary (A1–C2)                 | ✅   | ✅                          |
+| FSRS rating buttons                    | ✅   | ✅                          |
+| Basic CEFR estimate                    | ✅   | ✅                          |
+| Due today smart deck                   | ✅   | ✅                          |
+| Per-category breakdown + pace forecast | ❌   | ✅                          |
+| Progress sync across devices           | ❌   | ✅                          |
+| Email lesson service                   | ❌   | ✅                          |
+| Full Norskprøven exam questions        | ❌   | ✅                          |
+| FSRS weight optimisation               | ❌   | ✅                          |
+| Price                                  | Free | 49 NOK/month · 499 NOK/year |
 
 **Why a feature gate, not a content gate:** The competition (Anki, Duolingo) is free on content. Gating vocabulary categories loses users before they are hooked. The differentiator is the _system_ — FSRS scheduling and honest progress tracking — not the word lists.
 

@@ -86,7 +86,7 @@
   </NavBrand>
 
   <div class="flex items-center gap-2 lg:order-2">
-  <button
+    <button
       type="button"
       onclick={toggleLocale}
       aria-label="Switch language"
@@ -94,27 +94,7 @@
     >
       {currentLocale === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
     </button>
-    {#if user}
-    <Avatar class="acs" size="sm" />
-    <Dropdown simple class="w-56" triggeredBy=".acs">
-      <DropdownHeader>
-        <span class="hidden text-xs text-gray-500 sm:inline dark:text-gray-400">
-        {user.email}
-      </span>
-      </DropdownHeader>
-      <DropdownDivider />
-      <DropdownGroup>
-      <DropdownItem href="/stats">{m.nav_my_progress()}</DropdownItem>
-      <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
-      <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
-      {#if user}
-        <DropdownItem onclick={logout}>{m.nav_log_out()}</DropdownItem>
-      {:else}
-        <DropdownItem href="/auth/login">{m.nav_log_in()}</DropdownItem>
-      {/if}
-      </DropdownGroup>
-    </Dropdown>
-    {:else}
+    {#if !user}
       <a
         href="/plus"
         class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
@@ -128,6 +108,28 @@
         {m.nav_log_in()}
       </a>
     {/if}
+    <Avatar class="acs" size="sm" />
+    <Dropdown simple class="w-56" triggeredBy=".acs">
+      {#if user}
+        <DropdownHeader>
+          <span class="hidden text-xs text-gray-500 sm:inline dark:text-gray-400">
+            {user.email}
+          </span>
+        </DropdownHeader>
+        <DropdownDivider />
+        <DropdownGroup>
+          <DropdownItem href="/stats">{m.nav_my_progress()}</DropdownItem>
+          <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
+          <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
+          <DropdownItem onclick={logout}>{m.nav_log_out()}</DropdownItem>
+        </DropdownGroup>
+      {:else}
+        <DropdownGroup>
+          <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
+          <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
+        </DropdownGroup>
+      {/if}
+    </Dropdown>
     <DarkMode class="inline-block hover:text-gray-900 dark:hover:text-white" />
     <NavHamburger />
   </div>
@@ -153,7 +155,5 @@
         {/snippet}
       </MegaMenu>
     {/each}
-
-    
   </NavUl>
 </Navbar>

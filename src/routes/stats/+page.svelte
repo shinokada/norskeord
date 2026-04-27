@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { page } from '$app/state';
   import { loadProgressMap, countDueToday } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/types';
   import { removeHyphensAndCapitalize } from '$lib/utils';
@@ -12,6 +13,10 @@
   let confirmReset = $state(false);
   let sortBy = $state<'due' | 'new'>('due');
   let mounted = $state(false);
+
+  // 3-A: plan gate
+  let plan = $derived(page.data.plan as 'free' | 'plus');
+  let isPlus = $derived(plan === 'plus');
 
   // ── Derived totals ────────────────────────────────────────────────────────────
   const allCards = $derived(Object.values(progressMap));
@@ -306,74 +311,94 @@
       {/each}
     </div>
 
-    <!-- ── Per-category breakdown ─────────────────────────────────────────────── -->
-    <div class="mb-4 flex items-center justify-between">
-      <h2 class="text-xl font-semibold dark:text-white">{m.stats_by_category()}</h2>
-      <div class="flex gap-2">
-        <button
-          onclick={() => (sortBy = 'due')}
-          class="rounded-lg px-3 py-1 text-sm font-medium transition-colors {sortBy === 'due'
-            ? 'bg-blue-600 text-white'
-            : 'border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
-        >
-          {m.stats_sort_most_due()}
-        </button>
-        <button
-          onclick={() => (sortBy = 'new')}
-          class="rounded-lg px-3 py-1 text-sm font-medium transition-colors {sortBy === 'new'
-            ? 'bg-blue-600 text-white'
-            : 'border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
-        >
-          {m.stats_sort_most_new()}
-        </button>
+    <!-- ── Per-category breakdown — Plus only (3-A) ───────────────────────────── -->
+    {#if isPlus}
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-xl font-semibold dark:text-white">{m.stats_by_category()}</h2>
+        <div class="flex gap-2">
+          <button
+            onclick={() => (sortBy = 'due')}
+            class="rounded-lg px-3 py-1 text-sm font-medium transition-colors {sortBy === 'due'
+              ? 'bg-blue-600 text-white'
+              : 'border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
+          >
+            {m.stats_sort_most_due()}
+          </button>
+          <button
+            onclick={() => (sortBy = 'new')}
+            class="rounded-lg px-3 py-1 text-sm font-medium transition-colors {sortBy === 'new'
+              ? 'bg-blue-600 text-white'
+              : 'border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
+          >
+            {m.stats_sort_most_new()}
+          </button>
+        </div>
       </div>
-    </div>
 
-    {#if categoryStats.length === 0}
-      <p class="text-sm text-gray-400 dark:text-gray-500">{m.stats_no_category_data()}</p>
-    {:else}
-      <div class="mb-8 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
-        <table class="w-full text-sm">
-          <thead class="bg-gray-50 dark:bg-gray-800">
-            <tr>
-              <th class="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300"
-                >{m.stats_category_col()}</th
-              >
-              <th class="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300"
-                >{m.stats_level_col()}</th
-              >
-              <th class="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300"
-                >{m.stats_seen_col()}</th
-              >
-              <th class="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300"
-                >{m.stats_due_col()}</th
-              >
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100 bg-white dark:divide-gray-700 dark:bg-gray-900">
-            {#each categoryStats as cs (`${cs.level}-${cs.category}`)}
-              <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                <td class="px-4 py-2.5 dark:text-gray-200">
-                  <a
-                    href="/{cs.level.toLowerCase()}/{cs.category}"
-                    class="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
-                  >
-                    {removeHyphensAndCapitalize(cs.category)}
-                  </a>
-                </td>
-                <td class="px-4 py-2.5 font-medium {levelTextColors[cs.level]}">{cs.level}</td>
-                <td class="px-4 py-2.5 text-right text-gray-600 dark:text-gray-400">{cs.seen}</td>
-                <td class="px-4 py-2.5 text-right">
-                  {#if cs.due > 0}
-                    <span class="font-semibold text-red-600 dark:text-red-400">{cs.due}</span>
-                  {:else}
-                    <span class="text-gray-400">0</span>
-                  {/if}
-                </td>
+      {#if categoryStats.length === 0}
+        <p class="text-sm text-gray-400 dark:text-gray-500">{m.stats_no_category_data()}</p>
+      {:else}
+        <div class="mb-8 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+          <table class="w-full text-sm">
+            <thead class="bg-gray-50 dark:bg-gray-800">
+              <tr>
+                <th class="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300"
+                  >{m.stats_category_col()}</th
+                >
+                <th class="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300"
+                  >{m.stats_level_col()}</th
+                >
+                <th class="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300"
+                  >{m.stats_seen_col()}</th
+                >
+                <th class="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300"
+                  >{m.stats_due_col()}</th
+                >
               </tr>
-            {/each}
-          </tbody>
-        </table>
+            </thead>
+            <tbody class="divide-y divide-gray-100 bg-white dark:divide-gray-700 dark:bg-gray-900">
+              {#each categoryStats as cs (`${cs.level}-${cs.category}`)}
+                <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                  <td class="px-4 py-2.5 dark:text-gray-200">
+                    <a
+                      href="/{cs.level.toLowerCase()}/{cs.category}"
+                      class="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
+                    >
+                      {removeHyphensAndCapitalize(cs.category)}
+                    </a>
+                  </td>
+                  <td class="px-4 py-2.5 font-medium {levelTextColors[cs.level]}">{cs.level}</td>
+                  <td class="px-4 py-2.5 text-right text-gray-600 dark:text-gray-400">{cs.seen}</td>
+                  <td class="px-4 py-2.5 text-right">
+                    {#if cs.due > 0}
+                      <span class="font-semibold text-red-600 dark:text-red-400">{cs.due}</span>
+                    {:else}
+                      <span class="text-gray-400">0</span>
+                    {/if}
+                  </td>
+                </tr>
+              {/each}
+            </tbody>
+          </table>
+        </div>
+      {/if}
+    {:else}
+      <!-- 3-A: upsell for free users -->
+      <div
+        class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
+      >
+        <p class="font-semibold text-orange-700 dark:text-orange-300">
+          ⭐ {m.stats_plus_category_heading()}
+        </p>
+        <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+          {m.stats_plus_category_body()}
+        </p>
+        <a
+          href="/plus"
+          class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+        >
+          {m.stats_plus_upgrade()}
+        </a>
       </div>
     {/if}
 

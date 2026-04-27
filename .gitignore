@@ -25,7 +25,7 @@ vite.config.ts.timestamp-*
 
 # vite-plugin-pwa
 dev-dist/
-supabase/
+supabase/.temp
 
 # Paraglide
 src/lib/paraglide

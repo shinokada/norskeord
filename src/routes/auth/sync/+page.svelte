@@ -9,8 +9,10 @@
 
   onMount(async () => {
     const userId = page.data.user?.id;
+    // 3-A: only sync progress to Supabase for Plus users
+    const isPlus = (page.data.plan as 'free' | 'plus') === 'plus';
 
-    if (userId) {
+    if (userId && isPlus) {
       try {
         await syncProgressOnLogin(userId);
       } catch {

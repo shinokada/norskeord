@@ -11,7 +11,7 @@ This document translates the strategy in `monetization-focusd-plan.md` into conc
 | 0     | Quick wins (FSRS, /stats, /norskproven, /plus, i18n) | ✅ Complete    |
 | 1     | Supabase auth + progress sync                        | ✅ Complete    |
 | 2-A–D | Full FSRS UX (session structure, intervals, undo)    | ✅ Complete    |
-| 2-E   | FSRS personal weight optimisation (Edge Function)    | ⬜ Not started |
+| 2-E   | FSRS personal weight optimisation (Edge Function)    | ✅ Complete    |
 | 3     | Freemium gating + Lemon Squeezy payments             | ⬜ Not started |
 | 4     | Growth features (profile, quiz, streaks, SEO)        | ⬜ Not started |
 | 5     | Email service                                        | ⬜ Not started |
@@ -136,7 +136,7 @@ Implemented in `src/lib/progress.ts` as `syncProgressOnLogin(userId)`.
 - `clearUndo()` called on deck rebuild and when the next card is rated
 - Keyboard shortcut: `Z`
 
-### 2-E: FSRS personal weight optimisation ⬜ Not started
+### 2-E: FSRS personal weight optimisation
 
 **Goal:** After ~1,000 reviews, a Supabase Edge Function runs `fsrs.optimizer` on the user's review history and stores personalised weights. Subsequent sessions initialise `new FSRS({ w: userWeights })`.
 
@@ -145,9 +145,27 @@ Implemented in `src/lib/progress.ts` as `syncProgressOnLogin(userId)`.
 ```sql
 create table if not exists user_settings (
   user_id      uuid primary key references auth.users(id) on delete cascade,
-  fsrs_weights numeric[] default null,   -- null = use default weights
+  fsrs_weights numeric[] default null,
   updated_at   timestamptz default now()
 );
+```
+
+Add policies:
+
+```sql
+alter table user_settings enable row level security;
+
+create policy "Users can read own settings"
+  on user_settings for select
+  using (auth.uid() = user_id);
+
+create policy "Users can upsert own settings"
+  on user_settings for insert
+  with check (auth.uid() = user_id);
+
+create policy "Users can update own settings"
+  on user_settings for update
+  using (auth.uid() = user_id);
 ```
 
 **Edge Function:** `supabase/functions/optimise-fsrs-weights/index.ts`
@@ -345,7 +363,7 @@ No separate notification email is sent.
 | 2-B   | Due session: new cap + requeue                              | ✅     | —       |
 | 2-C   | Rating preview (interval display)                           | ✅     | —       |
 | 2-D   | Undo last rating                                            | ✅     | —       |
-| 2-E   | FSRS weight optimisation (Edge Function)                    | ⬜     | 1 day   |
+| 2-E   | FSRS weight optimisation (Edge Function)                    | ✅     | —       |
 | 3-A   | Feature gating (read plan from Supabase, gate FSRS + stats) | ⬜     | 3h      |
 | 3-B   | Lemon Squeezy payments                                      | ⬜     | 1 day   |
 | 4-A   | Profile page                                                | ⬜     | 1 day   |
@@ -406,3 +424,5 @@ src/lib/VocabFlashcardPage.svelte               (Phase 3-A: gate due mode + rati
 src/routes/stats/+page.svelte                   (Phase 3-A: gate per-category detail)
 supabase/schema.sql                             (Phase 2-E: user_settings; Phase 5: email tables)
 ```
+
+NorskordNorskordNorskordNorskordNorskordNorskordNorskordNorskeordNorskeordNorskeordNorskeordNorskeordNorskeordNorskeord

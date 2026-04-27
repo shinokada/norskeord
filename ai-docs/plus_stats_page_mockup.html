@@ -1,0 +1,736 @@
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: var(--font-sans);
+  }
+  .page {
+    max-width: 680px;
+    padding: 1.5rem 0;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 99px;
+    background: #cecbf6;
+    color: #3c3489;
+  }
+  .badge-plus {
+    background: #c0dd97;
+    color: #27500a;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+  }
+  .card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 1rem 1.25rem;
+  }
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  .metric {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-md);
+    padding: 0.75rem 1rem;
+  }
+  .metric-val {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+  .metric-lbl {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+  }
+  .metric-val.red {
+    color: var(--color-text-danger);
+  }
+  .metric-val.green {
+    color: var(--color-text-success);
+  }
+  .metric-val.amber {
+    color: var(--color-text-warning);
+  }
+  .divider {
+    border: none;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    margin: 1.5rem 0;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .spacer {
+    flex: 1;
+  }
+  .plus-gate {
+    background: var(--color-background-secondary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .plus-gate-text {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    flex: 1;
+  }
+  .plus-gate-text strong {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+  .btn-plus {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: var(--border-radius-md);
+    background: #3c3489;
+    color: #eeedfe;
+    border: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .chart-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .chart-bar-label {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    width: 24px;
+    text-align: right;
+  }
+  .chart-bar-bg {
+    flex: 1;
+    height: 10px;
+    background: var(--color-background-secondary);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .chart-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+  }
+  .chart-bar-count {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    width: 28px;
+  }
+  .heatmap-grid {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 3px;
+  }
+  .heatmap-cell {
+    aspect-ratio: 1;
+    border-radius: 2px;
+  }
+  .h0 {
+    background: var(--color-background-secondary);
+  }
+  .h1 {
+    background: #c0dd97;
+  }
+  .h2 {
+    background: #97c459;
+  }
+  .h3 {
+    background: #639922;
+  }
+  .h4 {
+    background: #3b6d11;
+  }
+  .forecast-line {
+    position: relative;
+    height: 80px;
+  }
+  .forecast-svg {
+    width: 100%;
+    height: 100%;
+  }
+  .cat-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+  }
+  .cat-name {
+    font-size: 13px;
+    color: var(--color-text-primary);
+    flex: 1;
+  }
+  .cat-level {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 1px 6px;
+    border-radius: 99px;
+  }
+  .cat-seen {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    width: 36px;
+    text-align: right;
+  }
+  .cat-due {
+    font-size: 12px;
+    font-weight: 500;
+    width: 36px;
+    text-align: right;
+  }
+  .cat-due.has-due {
+    color: var(--color-text-danger);
+  }
+  .cat-due.no-due {
+    color: var(--color-text-tertiary);
+  }
+  .leg {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .leg-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    color: var(--color-text-secondary);
+  }
+  .leg-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+</style>
+
+<div class="page">
+  <div class="row" style="margin-bottom: 1.5rem">
+    <div>
+      <h1 style="font-size: 22px; font-weight: 500; color: var(--color-text-primary)">
+        Your progress
+      </h1>
+      <p style="font-size: 13px; color: var(--color-text-secondary); margin-top: 3px">
+        Progress is saved to this device. Sign in to sync across devices.
+      </p>
+    </div>
+    <div class="spacer"></div>
+    <span class="badge badge-plus">Plus</span>
+  </div>
+
+  <!-- CEFR estimate — free -->
+  <div
+    class="card"
+    style="
+      margin-bottom: 1.5rem;
+      border-left: 3px solid #5dcaa5;
+      border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;
+    "
+  >
+    <p class="section-label">Estimated CEFR level</p>
+    <p style="font-size: 15px; color: var(--color-text-primary); margin-top: 4px">
+      You have covered 81% of A2 and 23% of B1 — you are solidly <strong>A2</strong>.
+    </p>
+    <span class="badge" style="margin-top: 8px">Free</span>
+  </div>
+
+  <!-- Summary metrics — free -->
+  <div class="metric-grid">
+    <div class="metric">
+      <div class="metric-val">247</div>
+      <div class="metric-lbl">Cards seen</div>
+    </div>
+    <div class="metric">
+      <div class="metric-val red">12</div>
+      <div class="metric-lbl">Due today</div>
+    </div>
+    <div class="metric">
+      <div class="metric-val green">183</div>
+      <div class="metric-lbl">In review</div>
+    </div>
+    <div class="metric">
+      <div class="metric-val amber">8</div>
+      <div class="metric-lbl">Relearning</div>
+    </div>
+  </div>
+
+  <!-- By level — free -->
+  <p class="section-title">By level</p>
+  <div class="card" style="margin-bottom: 1.5rem">
+    <div class="chart-bar-wrap">
+      <div class="chart-bar-label" style="color: #0f6e56">A1</div>
+      <div class="chart-bar-bg">
+        <div class="chart-bar-fill" style="width: 100%; background: #1d9e75"></div>
+      </div>
+      <div class="chart-bar-count">96</div>
+    </div>
+    <div class="chart-bar-wrap">
+      <div class="chart-bar-label" style="color: #0f6e56">A2</div>
+      <div class="chart-bar-bg">
+        <div class="chart-bar-fill" style="width: 78%; background: #5dcaa5"></div>
+      </div>
+      <div class="chart-bar-count">88</div>
+    </div>
+    <div class="chart-bar-wrap">
+      <div class="chart-bar-label" style="color: #185fa5">B1</div>
+      <div class="chart-bar-bg">
+        <div class="chart-bar-fill" style="width: 36%; background: #378add"></div>
+      </div>
+      <div class="chart-bar-count">41</div>
+    </div>
+    <div class="chart-bar-wrap">
+      <div class="chart-bar-label" style="color: #185fa5">B2</div>
+      <div class="chart-bar-bg">
+        <div class="chart-bar-fill" style="width: 14%; background: #85b7eb"></div>
+      </div>
+      <div class="chart-bar-count">16</div>
+    </div>
+    <div class="chart-bar-wrap">
+      <div class="chart-bar-label" style="color: #534ab7">C1</div>
+      <div class="chart-bar-bg">
+        <div class="chart-bar-fill" style="width: 4%; background: #afa9ec"></div>
+      </div>
+      <div class="chart-bar-count">5</div>
+    </div>
+    <div class="chart-bar-wrap">
+      <div class="chart-bar-label" style="color: #534ab7">C2</div>
+      <div class="chart-bar-bg">
+        <div class="chart-bar-fill" style="width: 1%; background: #cecbf6"></div>
+      </div>
+      <div class="chart-bar-count">1</div>
+    </div>
+    <div class="leg">
+      <span class="badge">Free</span>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- PLUS SECTION HEADER -->
+  <div class="row" style="margin-bottom: 1rem">
+    <p class="section-title" style="margin-bottom: 0">Plus insights</p>
+    <div class="spacer"></div>
+    <span class="badge badge-plus">Plus</span>
+  </div>
+
+  <!-- Pace forecast — plus -->
+  <div class="card" style="margin-bottom: 1rem">
+    <p class="section-label">Pace forecast</p>
+    <p
+      style="font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 6px 0 2px"
+    >
+      B1 in approximately 4 months
+    </p>
+    <p style="font-size: 12px; color: var(--color-text-secondary); margin-bottom: 12px">
+      At your current rate of ~18 cards/day, targeting B1 by <strong>October 2025</strong>.
+    </p>
+    <div class="forecast-line">
+      <svg
+        class="forecast-svg"
+        viewBox="0 0 500 80"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="0"
+          y1="70"
+          x2="500"
+          y2="70"
+          stroke="var(--color-border-tertiary)"
+          stroke-width="0.5"
+        />
+        <polyline
+          points="0,68 60,60 120,50 180,38 240,28 300,18 360,10"
+          fill="none"
+          stroke="#1D9E75"
+          stroke-width="2"
+        />
+        <polyline
+          points="360,10 420,4 500,1"
+          fill="none"
+          stroke="#1D9E75"
+          stroke-width="2"
+          stroke-dasharray="5,4"
+          opacity="0.5"
+        />
+        <circle cx="360" cy="10" r="3.5" fill="#1D9E75" />
+        <text x="365" y="8" font-size="10" fill="#0F6E56" font-family="var(--font-sans)">now</text>
+        <text
+          x="430"
+          y="4"
+          font-size="10"
+          fill="#0F6E56"
+          font-family="var(--font-sans)"
+          opacity="0.6"
+        >
+          B1 ✓
+        </text>
+        <text
+          x="0"
+          y="79"
+          font-size="9"
+          fill="var(--color-text-tertiary)"
+          font-family="var(--font-sans)"
+        >
+          Jun
+        </text>
+        <text
+          x="115"
+          y="79"
+          font-size="9"
+          fill="var(--color-text-tertiary)"
+          font-family="var(--font-sans)"
+        >
+          Jul
+        </text>
+        <text
+          x="235"
+          y="79"
+          font-size="9"
+          fill="var(--color-text-tertiary)"
+          font-family="var(--font-sans)"
+        >
+          Aug
+        </text>
+        <text
+          x="355"
+          y="79"
+          font-size="9"
+          fill="var(--color-text-tertiary)"
+          font-family="var(--font-sans)"
+        >
+          Sep
+        </text>
+        <text
+          x="455"
+          y="79"
+          font-size="9"
+          fill="var(--color-text-tertiary)"
+          font-family="var(--font-sans)"
+        >
+          Oct
+        </text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Activity heatmap — plus -->
+  <div class="card" style="margin-bottom: 1rem">
+    <p class="section-label">Study activity — last 15 weeks</p>
+    <div class="heatmap-grid" style="margin-top: 8px">
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h2"></div>
+      <div class="heatmap-cell h1"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h4"></div>
+      <div class="heatmap-cell h3"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h0"></div>
+      <div class="heatmap-cell h0"></div>
+    </div>
+    <div class="leg" style="margin-top: 10px; align-items: center">
+      <span style="font-size: 11px; color: var(--color-text-secondary)">Less</span>
+      <div
+        class="heatmap-cell h0"
+        style="width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0"
+      ></div>
+      <div
+        class="heatmap-cell h1"
+        style="width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0"
+      ></div>
+      <div
+        class="heatmap-cell h2"
+        style="width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0"
+      ></div>
+      <div
+        class="heatmap-cell h3"
+        style="width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0"
+      ></div>
+      <div
+        class="heatmap-cell h4"
+        style="width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0"
+      ></div>
+      <span style="font-size: 11px; color: var(--color-text-secondary)">More</span>
+    </div>
+  </div>
+
+  <!-- Due forecast — plus -->
+  <div class="card" style="margin-bottom: 1rem">
+    <p class="section-label">Cards due — next 7 days</p>
+    <div style="display: flex; align-items: flex-end; gap: 6px; height: 64px; margin-top: 10px">
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px">
+        <div
+          style="
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          "
+        >
+          <div style="height: 80%; background: #378add; border-radius: 3px 3px 0 0"></div>
+        </div>
+        <span style="font-size: 10px; color: var(--color-text-secondary)">Mon</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px">
+        <div
+          style="
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          "
+        >
+          <div style="height: 55%; background: #378add; border-radius: 3px 3px 0 0"></div>
+        </div>
+        <span style="font-size: 10px; color: var(--color-text-secondary)">Tue</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px">
+        <div
+          style="
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          "
+        >
+          <div
+            style="
+              height: 90%;
+              background: var(--color-background-danger);
+              border-radius: 3px 3px 0 0;
+              border: 0.5px solid var(--color-border-danger);
+            "
+          ></div>
+        </div>
+        <span style="font-size: 10px; color: var(--color-text-danger); font-weight: 500">Wed</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px">
+        <div
+          style="
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          "
+        >
+          <div style="height: 40%; background: #378add; border-radius: 3px 3px 0 0"></div>
+        </div>
+        <span style="font-size: 10px; color: var(--color-text-secondary)">Thu</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px">
+        <div
+          style="
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          "
+        >
+          <div style="height: 65%; background: #378add; border-radius: 3px 3px 0 0"></div>
+        </div>
+        <span style="font-size: 10px; color: var(--color-text-secondary)">Fri</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px">
+        <div
+          style="
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          "
+        >
+          <div style="height: 30%; background: #85b7eb; border-radius: 3px 3px 0 0"></div>
+        </div>
+        <span style="font-size: 10px; color: var(--color-text-secondary)">Sat</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px">
+        <div
+          style="
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          "
+        >
+          <div style="height: 20%; background: #85b7eb; border-radius: 3px 3px 0 0"></div>
+        </div>
+        <span style="font-size: 10px; color: var(--color-text-secondary)">Sun</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Per-category breakdown — plus -->
+  <div class="card" style="margin-bottom: 1.5rem">
+    <div class="row" style="margin-bottom: 10px">
+      <p class="section-label" style="margin-bottom: 0">By category</p>
+      <div class="spacer"></div>
+      <span style="font-size: 11px; color: var(--color-text-secondary)">Sorted by most due</span>
+    </div>
+    <div class="cat-row">
+      <span class="cat-name">Health — basic</span
+      ><span class="cat-level" style="background: #e6f1fb; color: #185fa5">A2</span
+      ><span class="cat-seen">32</span><span class="cat-due has-due">7</span>
+    </div>
+    <div class="cat-row">
+      <span class="cat-name">Work</span
+      ><span class="cat-level" style="background: #e6f1fb; color: #185fa5">B1</span
+      ><span class="cat-seen">24</span><span class="cat-due has-due">5</span>
+    </div>
+    <div class="cat-row">
+      <span class="cat-name">Greetings</span
+      ><span class="cat-level" style="background: #eaf3de; color: #3b6d11">A1</span
+      ><span class="cat-seen">16</span><span class="cat-due no-due">0</span>
+    </div>
+    <div class="cat-row">
+      <span class="cat-name">Family</span
+      ><span class="cat-level" style="background: #eaf3de; color: #3b6d11">A1</span
+      ><span class="cat-seen">14</span><span class="cat-due no-due">0</span>
+    </div>
+    <div class="cat-row" style="border-bottom: none">
+      <span class="cat-name" style="color: var(--color-text-secondary)">+ 18 more categories</span
+      ><span class="spacer"></span
+      ><span style="font-size: 12px; color: var(--color-text-info)">show all</span>
+    </div>
+  </div>
+
+  <!-- Free upsell banner -->
+  <div class="plus-gate">
+    <div style="font-size: 20px">✦</div>
+    <div class="plus-gate-text">
+      <strong>Unlock Plus insights</strong><br />Pace forecast, activity heatmap, and due forecast
+      require a Plus subscription.
+    </div>
+    <button class="btn-plus">Upgrade to Plus</button>
+  </div>
+</div>
