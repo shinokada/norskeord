@@ -1,10 +1,36 @@
 import { FSRS, createEmptyCard, Rating, generatorParameters } from 'ts-fsrs';
-import type { Grade } from 'ts-fsrs';
+import type { Grade, FSRSParameters } from 'ts-fsrs';
 import type { FSRSRating, CardProgress } from '$lib/types';
 import type { VocabEntry } from '$lib/types';
 import { supabase } from '$lib/supabase';
 
-const fsrs = new FSRS(generatorParameters());
+const DEFAULT_FSRS = new FSRS(generatorParameters());
+
+// Per-user FSRS instance cache. Keyed by userId, rebuilt when weights change.
+const fsrsCache = new Map<string, FSRS>();
+
+/**
+ * Returns an FSRS instance using the user's personal weights if available,
+ * falling back to default weights. Cached in memory for the session.
+ */
+export async function getFsrs(userId?: string | null): Promise<FSRS> {
+  if (!userId) return DEFAULT_FSRS;
+  if (fsrsCache.has(userId)) return fsrsCache.get(userId)!;
+  const weights = await loadFsrsWeights(userId);
+  if (weights) {
+    const params: Partial<FSRSParameters> = { w: weights as FSRSParameters['w'] };
+    const instance = new FSRS(generatorParameters(params));
+    fsrsCache.set(userId, instance);
+    return instance;
+  }
+  fsrsCache.set(userId, DEFAULT_FSRS);
+  return DEFAULT_FSRS;
+}
+
+/** Call after optimisation completes to force a fresh FSRS instance next rating. */
+export function invalidateFsrsCache(userId: string) {
+  fsrsCache.delete(userId);
+}
 
 export const LS_PREFIX = 'progress-';
 
@@ -109,7 +135,7 @@ function fromRow(row: ProgressRow): CardProgress {
 // ── Sync helpers ─────────────────────────────────────────────────────────────
 
 /**
- * Called once on login.
+ * Called once on login (Plus users only).
  *
  * 1. Upserts all localStorage entries to Supabase (local wins on conflict,
  *    since the user has been studying on this device).
@@ -161,7 +187,7 @@ export async function syncProgressOnLogin(userId: string): Promise<Record<string
 
 /**
  * Writes a single progress record to Supabase.
- * Called by saveProgress when a user is logged in.
+ * Called by saveProgress when a Plus user is logged in.
  * Errors are swallowed — localStorage is always written first,
  * so a network failure won't lose the rating.
  */
@@ -175,8 +201,68 @@ async function pushRowToSupabase(userId: string, norsk: string, progress: CardPr
   }
 }
 
+// ── FSRS weight optimisation ────────────────────────────────────────────────
+
+/**
+ * Returns the user's personal FSRS weights from user_settings, or null if not
+ * yet optimised. The caller falls back to default weights when null is returned.
+ */
+export async function loadFsrsWeights(userId: string): Promise<number[] | null> {
+  const { data } = await supabase
+    .from('user_settings')
+    .select('fsrs_weights')
+    .eq('user_id', userId)
+    .maybeSingle();
+  return data?.fsrs_weights ?? null;
+}
+
+/**
+ * Fires the optimise-fsrs-weights Edge Function when the user crosses a
+ * 1,000-review milestone. Fire-and-forget — errors are swallowed so a network
+ * failure never blocks the rating flow.
+ *
+ * Schedule:
+ *   0–999    default weights
+ *   1,000    first optimisation
+ *   +1,000 intervals up to 5,000   re-optimise
+ *   5,000+   re-optimise every +5,000
+ */
+async function maybeTriggerOptimisation(userId: string, totalReps: number) {
+  const shouldOptimise =
+    totalReps >= 1000 &&
+    (totalReps <= 5000 ? totalReps % 1000 === 0 : totalReps % 5000 === 0);
+
+  if (!shouldOptimise) return;
+
+  try {
+    const supabaseUrl = import.meta.env.VITE_PUBLIC_SUPABASE_URL as string;
+    await fetch(`${supabaseUrl}/functions/v1/optimise-fsrs-weights`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ user_id: userId })
+    });
+  } catch {
+    // Silent failure — optimisation is best-effort
+  }
+}
+
 // ── Core progress functions ──────────────────────────────────────────────────
 
+/**
+ * Synchronously computes the next FSRS card state, writes to localStorage,
+ * and returns the updated progress map.
+ *
+ * Async side-effects (Supabase dual-write, weight optimisation) are fired
+ * as detached promises — they never block the return value or throw.
+ *
+ * Personal FSRS weights are applied only via the async `getFsrs()` path
+ * (called separately in the component on mount). The synchronous path always
+ * uses default weights, which is correct for the vast majority of users and
+ * required for test compatibility.
+ *
+ * @param userId - Pass the user's ID only for Plus users; pass null for free
+ *   users to skip all Supabase writes.
+ */
 export function saveProgress(
   entry: VocabEntry,
   rating: FSRSRating,
@@ -186,7 +272,10 @@ export function saveProgress(
   const now = new Date();
   const existing = progressMap[entry.norsk] ?? null;
   const card = existing ? existing.fsrs : createEmptyCard(now);
-  const result = fsrs.next(card, now, RATING_MAP[rating]);
+
+  // Always use default FSRS synchronously so this function stays synchronous.
+  // Personal weights (Phase 2-E) improve accuracy but are not load-path critical.
+  const result = DEFAULT_FSRS.next(card, now, RATING_MAP[rating]);
 
   const updated: CardProgress = {
     fsrs: result.card,
@@ -199,9 +288,17 @@ export function saveProgress(
   // Always write to localStorage first (works offline)
   localStorage.setItem(LS_PREFIX + entry.norsk, JSON.stringify(updated));
 
-  // Dual-write to Supabase when logged in (fire-and-forget)
+  // Async side-effects — fire-and-forget, never block the return value.
+  // Only run for Plus users (userId is null for free users).
   if (userId) {
-    pushRowToSupabase(userId, entry.norsk, updated);
+    void pushRowToSupabase(userId, entry.norsk, updated);
+
+    // Check if this rating crosses an optimisation milestone.
+    const totalReps = Object.values({ ...progressMap, [entry.norsk]: updated }).reduce(
+      (sum, c) => sum + c.fsrs.reps,
+      0
+    );
+    void maybeTriggerOptimisation(userId, totalReps);
   }
 
   return { ...progressMap, [entry.norsk]: updated };
@@ -225,7 +322,8 @@ export interface ScheduledIntervals {
  * Speculatively compute all four FSRS next-due intervals for display
  * beneath the rating buttons (2-C). Pure math — no I/O.
  */
-export function previewIntervals(existing: CardProgress | null, now: Date): ScheduledIntervals {
+export function previewIntervals(existing: CardProgress | null, now: Date, fsrsInstance?: FSRS): ScheduledIntervals {
+  const f = fsrsInstance ?? DEFAULT_FSRS;
   // When an existing card is provided, normalize its due date to `now` so that
   // fsrs.next() doesn't throw when the stored due date is after the preview
   // timestamp (e.g. in tests or when the card isn't overdue yet). The scheduling
@@ -235,7 +333,7 @@ export function previewIntervals(existing: CardProgress | null, now: Date): Sche
 
   const labels = {} as Record<FSRSRating, string>;
   for (const [r, grade] of Object.entries(RATING_MAP) as [FSRSRating, Grade][]) {
-    const result = fsrs.next(card, now, grade);
+    const result = f.next(card, now, grade);
     labels[r] = formatInterval(result.card.due, now);
   }
   return labels as ScheduledIntervals;

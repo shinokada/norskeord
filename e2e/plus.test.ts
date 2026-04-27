@@ -18,8 +18,8 @@ test.describe('/plus page', () => {
 
   // ── Content ───────────────────────────────────────────────────────────────
 
-  test('shows "Coming soon" badge', async ({ page }) => {
-    await expect(page.getByText('Coming soon', { exact: true })).toBeVisible();
+  test('shows "Soon" badge in comparison table header', async ({ page }) => {
+    await expect(page.getByText('Soon', { exact: true })).toBeVisible();
   });
 
   test('shows hero heading', async ({ page }) => {
@@ -39,7 +39,7 @@ test.describe('/plus page', () => {
       'Study only what you need today',
       'Full B1 to C2 access',
       'Cross-device sync',
-      'Norskprøven B1 full prep'
+      'Norskprøven B1 full preparation'
     ]) {
       await expect(page.getByRole('heading', { name: title, level: 3 })).toBeVisible();
     }
@@ -79,7 +79,6 @@ test.describe('/plus page', () => {
   });
 
   test('shows success state after valid email submission', async ({ page }) => {
-    // Mock the API so the test works without a real Supabase connection
     await page.route('/plus/waitlist', async (route) => {
       await route.fulfill({
         status: 200,
@@ -111,7 +110,6 @@ test.describe('/plus page', () => {
   });
 
   test('button is disabled and shows "Saving…" while submitting', async ({ page }) => {
-    // Delay the response so we can observe the loading state
     await page.route('/plus/waitlist', async (route) => {
       await new Promise((r) => setTimeout(r, 500));
       await route.fulfill({
