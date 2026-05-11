@@ -1,6 +1,14 @@
 <script lang="ts">
   import * as m from '$lib/paraglide/messages.js';
 
+  // Server-provided auth/plan state
+  let { data } = $props<{ data: { isLoggedIn: boolean; isPlus: boolean } }>();
+
+  // Checkout state
+  let checkoutLoading = $state(false);
+  let checkoutError = $state('');
+
+  // Waitlist state
   let emailSubmitted = $state(false);
   let emailValue = $state('');
   let emailError = $state('');
@@ -67,9 +75,32 @@
     }
   ]);
 
+  async function handleCheckout() {
+    checkoutError = '';
+    checkoutLoading = true;
+    try {
+      const res = await fetch('/api/lemon/checkout', { method: 'POST' });
+      const result = await res.json();
+
+      if (!res.ok) {
+        if (result.error === 'login_required') {
+          window.location.href = '/auth/login?next=/plus';
+          return;
+        }
+        checkoutError = m.checkout_error_generic();
+        return;
+      }
+
+      window.location.href = result.checkoutUrl;
+    } catch {
+      checkoutError = m.checkout_error_generic();
+    } finally {
+      checkoutLoading = false;
+    }
+  }
+
   async function handleSignup() {
     emailError = '';
-
     if (!emailValue.trim()) {
       emailError = m.plus_error_empty();
       return;
@@ -78,7 +109,6 @@
       emailError = m.plus_error_invalid();
       return;
     }
-
     submitting = true;
     try {
       const res = await fetch('/plus/waitlist', {
@@ -86,13 +116,11 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: emailValue })
       });
-      const data = await res.json();
-
+      const result = await res.json();
       if (!res.ok) {
-        emailError = data.error ?? m.plus_error_generic();
+        emailError = result.error ?? m.plus_error_generic();
         return;
       }
-
       emailSubmitted = true;
     } catch {
       emailError = m.plus_error_network();
@@ -111,52 +139,51 @@
     <p class="mx-auto mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-400">
       {m.plus_subheading()}
     </p>
-    <p class="mt-3 text-sm text-gray-400 dark:text-gray-500">
-      {m.plus_notify_prompt()}
-    </p>
   </div>
 
-  <!-- ── Email signup ───────────────────────────────────────────────────────────── -->
+  <!-- ── Checkout CTA ───────────────────────────────────────────────────────────── -->
   <div
     class="mb-14 rounded-2xl border border-indigo-200 bg-indigo-50 p-8 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
   >
-    {#if emailSubmitted}
-      <p class="text-2xl">🎉</p>
-      <p class="mt-3 text-lg font-semibold dark:text-white">{m.plus_success_heading()}</p>
+    {#if data.isPlus}
+      <!-- Already a Plus member -->
+      <p class="text-lg font-semibold dark:text-white">✓ You are a Plus member</p>
       <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
-        {m.plus_success_body({ email: emailValue })}
+        Manage your subscription from the Lemon Squeezy customer portal.
+      </p>
+      <!-- Phase 4-A: replace with a real portal URL -->
+      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">
+        {m.plus_manage_subscription()}
       </p>
     {:else}
-      <p class="mb-5 text-base font-semibold text-indigo-800 dark:text-indigo-200">
-        {m.plus_signup_cta()}
+      <p class="mb-2 text-lg font-semibold text-indigo-800 dark:text-indigo-200">
+        {m.plus_checkout_cta()}
       </p>
-      <div class="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        <div class="w-full sm:w-72">
-          <input
-            type="email"
-            name="email"
-            placeholder="your@email.com"
-            autocomplete="email"
-            bind:value={emailValue}
-            disabled={submitting}
-            class="w-full rounded-lg border border-indigo-300 bg-white px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-indigo-700 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
-          />
-          {#if emailError}
-            <p class="mt-1 text-left text-xs text-red-500">{emailError}</p>
-          {/if}
-        </div>
+      <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+        Cancel any time. All progress carries over automatically.
+      </p>
+
+      {#if data.isLoggedIn}
         <button
           type="button"
-          onclick={handleSignup}
-          disabled={submitting}
-          class="w-full shrink-0 rounded-lg bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 disabled:opacity-50 sm:w-auto"
+          onclick={handleCheckout}
+          disabled={checkoutLoading}
+          class="rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700 disabled:opacity-50"
         >
-          {submitting ? m.plus_saving() : m.plus_notify_button()}
+          {checkoutLoading ? m.plus_activating() : m.plus_checkout_cta()}
         </button>
-      </div>
-      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">
-        {m.plus_no_spam()}
-      </p>
+      {:else}
+        <a
+          href="/auth/login?next=/plus"
+          class="inline-block rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700"
+        >
+          {m.plus_sign_in_to_upgrade()}
+        </a>
+      {/if}
+
+      {#if checkoutError}
+        <p class="mt-3 text-sm text-red-500">{checkoutError}</p>
+      {/if}
     {/if}
   </div>
 
@@ -182,21 +209,16 @@
     <table class="w-full text-sm">
       <thead>
         <tr class="border-b border-gray-200 dark:border-gray-700">
-          <th class="px-5 py-3 text-left font-semibold text-gray-500 dark:text-gray-400"
-            >{m.plus_table_feature()}</th
-          >
-          <th class="px-5 py-3 text-center font-semibold text-gray-500 dark:text-gray-400"
-            >{m.plus_table_free()}</th
-          >
+          <th class="px-5 py-3 text-left font-semibold text-gray-500 dark:text-gray-400">
+            {m.plus_table_feature()}
+          </th>
+          <th class="px-5 py-3 text-center font-semibold text-gray-500 dark:text-gray-400">
+            {m.plus_table_free()}
+          </th>
           <th
             class="bg-indigo-50 px-5 py-3 text-center font-semibold text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300"
           >
             {m.plus_table_plus()}
-            <span
-              class="ml-1.5 rounded-full bg-indigo-100 px-2 py-0.5 text-xs dark:bg-indigo-800 dark:text-indigo-200"
-            >
-              {m.plus_table_soon()}
-            </span>
           </th>
         </tr>
       </thead>
@@ -233,6 +255,46 @@
     <h3 class="mb-2 text-base font-bold dark:text-white">{m.plus_how_heading()}</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_1()}</p>
     <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_2()}</p>
+  </div>
+
+  <!-- ── Waitlist (secondary CTA — keep during launch period) ───────────────────── -->
+  <div
+    class="mb-14 rounded-2xl border border-gray-200 bg-gray-50 p-8 text-center dark:border-gray-700 dark:bg-gray-800/40"
+  >
+    <p class="mb-1 text-base font-semibold dark:text-white">{m.plus_notify_prompt()}</p>
+    {#if emailSubmitted}
+      <p class="mt-3 text-2xl">🎉</p>
+      <p class="mt-2 text-sm font-semibold dark:text-white">{m.plus_success_heading()}</p>
+      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        {m.plus_success_body({ email: emailValue })}
+      </p>
+    {:else}
+      <div class="mt-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+        <div class="w-full sm:w-72">
+          <input
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            bind:value={emailValue}
+            disabled={submitting}
+            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+          />
+          {#if emailError}
+            <p class="mt-1 text-left text-xs text-red-500">{emailError}</p>
+          {/if}
+        </div>
+        <button
+          type="button"
+          onclick={handleSignup}
+          disabled={submitting}
+          class="w-full shrink-0 rounded-lg bg-gray-800 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 disabled:opacity-50 dark:bg-gray-200 dark:text-gray-900 sm:w-auto"
+        >
+          {submitting ? m.plus_saving() : m.plus_notify_button()}
+        </button>
+      </div>
+      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">{m.plus_no_spam()}</p>
+    {/if}
   </div>
 
   <!-- ── Bottom CTA ─────────────────────────────────────────────────────────────── -->
