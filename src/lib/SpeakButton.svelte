@@ -24,8 +24,17 @@
     { value: '1.3', label: 'High' }
   ];
 
-  let speed = $state('1');
-  let pitch = $state('1');
+  const LS_SPEED = 'voice-settings-speed';
+  const LS_PITCH = 'voice-settings-pitch';
+  const LS_VOICE = 'voice-settings-voice';
+
+  function getSaved(key: string, fallback: string): string {
+    if (typeof window === 'undefined') return fallback;
+    return localStorage.getItem(key) ?? fallback;
+  }
+
+  let speed = $state(getSaved(LS_SPEED, '1'));
+  let pitch = $state(getSaved(LS_PITCH, '1'));
   let settingsOpen = $state(false);
   let showGear = $state(false);
 
@@ -40,7 +49,10 @@
     const noVoices = all.filter((v) => v.lang.startsWith('nb') || v.lang.startsWith('no'));
     if (noVoices.length > 0) {
       norwegianVoices = noVoices;
-      if (!selectedVoiceName || !noVoices.find((v) => v.name === selectedVoiceName)) {
+      const saved = localStorage.getItem(LS_VOICE);
+      if (saved && noVoices.find((v) => v.name === saved)) {
+        selectedVoiceName = saved;
+      } else if (!selectedVoiceName || !noVoices.find((v) => v.name === selectedVoiceName)) {
         const nora = noVoices.find((v) => v.name.includes('Nora'));
         selectedVoiceName = (nora ?? noVoices[0]).name;
       }
@@ -166,6 +178,7 @@
         <select
           aria-label="Voice"
           bind:value={selectedVoiceName}
+          onchange={() => localStorage.setItem(LS_VOICE, selectedVoiceName)}
           class="w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-500 dark:focus:ring-blue-500"
         >
           {#each norwegianVoices as v (v.name)}
@@ -181,7 +194,10 @@
       <ButtonToggleGroup
         value={speed}
         onSelect={(v) => {
-          if (typeof v === 'string') speed = v;
+          if (typeof v === 'string') {
+            speed = v;
+            localStorage.setItem(LS_SPEED, v);
+          }
         }}
       >
         {#each speedOptions as opt (opt.value)}
@@ -196,7 +212,10 @@
       <ButtonToggleGroup
         value={pitch}
         onSelect={(v) => {
-          if (typeof v === 'string') pitch = v;
+          if (typeof v === 'string') {
+            pitch = v;
+            localStorage.setItem(LS_PITCH, v);
+          }
         }}
       >
         {#each toneOptions as opt (opt.value)}

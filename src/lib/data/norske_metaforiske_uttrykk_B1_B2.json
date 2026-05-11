@@ -1,0 +1,502 @@
+[
+  {
+    "norsk": "å være i skyene",
+    "lemma": "å være i skyene",
+    "english": "to be overjoyed / on cloud nine",
+    "example": "Hun er i skyene etter at hun fikk jobben.",
+    "example_english": "She is on cloud nine after she got the job.",
+    "level": "B1",
+    "category": "feelings",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å gå på veggen",
+    "lemma": "å gå på veggen",
+    "english": "to hit the wall / burn out",
+    "example": "Han jobbet så mye at han gikk på veggen.",
+    "example_english": "He worked so much that he burned out.",
+    "level": "B2",
+    "category": "stress",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha is i magen",
+    "lemma": "å ha is i magen",
+    "english": "to stay calm under pressure",
+    "example": "Du må ha is i magen i en vanskelig situasjon.",
+    "example_english": "You need to stay calm in a difficult situation.",
+    "level": "B1",
+    "category": "personality",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å treffe spikeren på hodet",
+    "lemma": "å treffe spikeren på hodet",
+    "english": "to hit the nail on the head",
+    "example": "Du traff spikeren på hodet med kommentaren din.",
+    "example_english": "You hit the nail on the head with your comment.",
+    "level": "B1",
+    "category": "communication",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å komme til hektene",
+    "lemma": "å komme til hektene",
+    "english": "to recover / get back on one's feet",
+    "example": "Jeg håper du snart kommer til hektene igjen.",
+    "example_english": "I hope you get back on your feet soon.",
+    "level": "B1",
+    "category": "health",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha sommerfugler i magen",
+    "lemma": "å ha sommerfugler i magen",
+    "english": "to have butterflies in one's stomach",
+    "example": "Hun hadde sommerfugler i magen før intervjuet.",
+    "example_english": "She had butterflies in her stomach before the interview.",
+    "level": "B1",
+    "category": "feelings",
+    "part": "idiom"
+  },
+  {
+    "norsk": "ugler i mosen",
+    "lemma": "ugler i mosen",
+    "english": "something is suspicious",
+    "example": "Det er ugler i mosen med den avtalen.",
+    "example_english": "Something is fishy about that deal.",
+    "level": "B2",
+    "category": "suspicion",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å bite i det sure eplet",
+    "lemma": "å bite i det sure eplet",
+    "english": "to bite the bullet",
+    "example": "Han måtte bite i det sure eplet og betale regningen.",
+    "example_english": "He had to bite the bullet and pay the bill.",
+    "level": "B2",
+    "category": "acceptance",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å spise som en spurv",
+    "lemma": "å spise som en spurv",
+    "english": "to eat very little",
+    "example": "Hun spiser som en spurv om morgenen.",
+    "example_english": "She eats like a bird in the morning.",
+    "level": "B1",
+    "category": "food",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å falle i god jord",
+    "lemma": "å falle i god jord",
+    "english": "to be well received",
+    "example": "Planene hennes falt i god jord hos sjefen.",
+    "example_english": "Her plans were well received by the boss.",
+    "level": "B2",
+    "category": "communication",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha bein i nesa",
+    "lemma": "å ha bein i nesa",
+    "english": "to be determined",
+    "example": "Hun har bein i nesa og gir aldri opp.",
+    "example_english": "She is determined and never gives up.",
+    "level": "B1",
+    "category": "personality",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være på tynn is",
+    "lemma": "å være på tynn is",
+    "english": "to be on thin ice",
+    "example": "Nå er du på tynn is med læreren.",
+    "example_english": "Now you are on thin ice with the teacher.",
+    "level": "B2",
+    "category": "risk",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å kaste inn håndkleet",
+    "lemma": "å kaste inn håndkleet",
+    "english": "to throw in the towel",
+    "example": "Han kastet inn håndkleet etter mange forsøk.",
+    "example_english": "He threw in the towel after many attempts.",
+    "level": "B1",
+    "category": "effort",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ta beina på nakken",
+    "lemma": "å ta beina på nakken",
+    "english": "to run away fast",
+    "example": "Tyven tok beina på nakken.",
+    "example_english": "The thief ran away quickly.",
+    "level": "B1",
+    "category": "action",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha mange baller i lufta",
+    "lemma": "å ha mange baller i lufta",
+    "english": "to juggle many things",
+    "example": "Jeg har mange baller i lufta denne uka.",
+    "example_english": "I have many things going on this week.",
+    "level": "B1",
+    "category": "work",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være helt grønn",
+    "lemma": "å være helt grønn",
+    "english": "to be inexperienced",
+    "example": "Jeg er helt grønn i dette faget.",
+    "example_english": "I am completely new to this subject.",
+    "level": "B1",
+    "category": "learning",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å se rødt",
+    "lemma": "å se rødt",
+    "english": "to become furious",
+    "example": "Han så rødt da han hørte nyheten.",
+    "example_english": "He saw red when he heard the news.",
+    "level": "B1",
+    "category": "feelings",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å gå rett vest",
+    "lemma": "å gå rett vest",
+    "english": "to fail badly",
+    "example": "Prosjektet gikk rett vest.",
+    "example_english": "The project went completely wrong.",
+    "level": "B2",
+    "category": "failure",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å stå med skjegget i postkassa",
+    "lemma": "å stå med skjegget i postkassa",
+    "english": "to be caught in an awkward situation",
+    "example": "Han sto med skjegget i postkassa.",
+    "example_english": "He was left in an awkward spot.",
+    "level": "B2",
+    "category": "embarrassment",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha noe på hjertet",
+    "lemma": "å ha noe på hjertet",
+    "english": "to have something important to say",
+    "example": "Jeg har noe på hjertet.",
+    "example_english": "I have something important to say.",
+    "level": "B1",
+    "category": "communication",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være ute på glattisen",
+    "lemma": "å være ute på glattisen",
+    "english": "to be in trouble",
+    "example": "Nå er du ute på glattisen.",
+    "example_english": "Now you are in trouble.",
+    "level": "B2",
+    "category": "risk",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ta seg vann over hodet",
+    "lemma": "å ta seg vann over hodet",
+    "english": "to take on too much",
+    "example": "Hun tok seg vann over hodet med prosjektet.",
+    "example_english": "She took on more than she could handle.",
+    "level": "B2",
+    "category": "stress",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å holde hodet kaldt",
+    "lemma": "å holde hodet kaldt",
+    "english": "to keep a cool head",
+    "example": "Du må holde hodet kaldt.",
+    "example_english": "You must keep a cool head.",
+    "level": "B1",
+    "category": "personality",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha rent mel i posen",
+    "lemma": "å ha rent mel i posen",
+    "english": "to have nothing to hide",
+    "example": "Har du rent mel i posen?",
+    "example_english": "Do you have nothing to hide?",
+    "level": "B2",
+    "category": "honesty",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å gå som varmt hvetebrød",
+    "lemma": "å gå som varmt hvetebrød",
+    "english": "to sell quickly",
+    "example": "Billettene går som varmt hvetebrød.",
+    "example_english": "The tickets are selling like hotcakes.",
+    "level": "B1",
+    "category": "success",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være midt i smørøyet",
+    "lemma": "å være midt i smørøyet",
+    "english": "to be in an ideal position",
+    "example": "Leiligheten ligger midt i smørøyet.",
+    "example_english": "The apartment is in a perfect location.",
+    "level": "B2",
+    "category": "place",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være høyt oppe og langt nede",
+    "lemma": "å være høyt oppe og langt nede",
+    "english": "to have emotional ups and downs",
+    "example": "Hun er høyt oppe og langt nede for tiden.",
+    "example_english": "She has emotional ups and downs lately.",
+    "level": "B2",
+    "category": "feelings",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å få blod på tann",
+    "lemma": "å få blod på tann",
+    "english": "to get motivated for more",
+    "example": "Etter seieren fikk han blod på tann.",
+    "example_english": "After the victory, he wanted more.",
+    "level": "B2",
+    "category": "motivation",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha et ess i ermet",
+    "lemma": "å ha et ess i ermet",
+    "english": "to have an ace up one's sleeve",
+    "example": "Hun hadde et ess i ermet.",
+    "example_english": "She had an ace up her sleeve.",
+    "level": "B2",
+    "category": "strategy",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å sitte på gjerdet",
+    "lemma": "å sitte på gjerdet",
+    "english": "to be undecided",
+    "example": "Han sitter på gjerdet i saken.",
+    "example_english": "He is sitting on the fence about it.",
+    "level": "B1",
+    "category": "decision",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å hoppe etter Wirkola",
+    "lemma": "å hoppe etter Wirkola",
+    "english": "to follow a hard act",
+    "example": "Det er vanskelig å hoppe etter Wirkola.",
+    "example_english": "It is hard to follow a great performance.",
+    "level": "B2",
+    "category": "challenge",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha tunga rett i munnen",
+    "lemma": "å ha tunga rett i munnen",
+    "english": "to stay focused",
+    "example": "Her må du ha tunga rett i munnen.",
+    "example_english": "You need to stay sharp here.",
+    "level": "B1",
+    "category": "focus",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være på bølgelengde",
+    "lemma": "å være på bølgelengde",
+    "english": "to be on the same wavelength",
+    "example": "Vi er på bølgelengde.",
+    "example_english": "We are on the same wavelength.",
+    "level": "B1",
+    "category": "relationship",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å få fotfeste",
+    "lemma": "å få fotfeste",
+    "english": "to gain a foothold",
+    "example": "Bedriften fikk fotfeste i markedet.",
+    "example_english": "The company gained a foothold in the market.",
+    "level": "B2",
+    "category": "success",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være i samme båt",
+    "lemma": "å være i samme båt",
+    "english": "to be in the same boat",
+    "example": "Vi er i samme båt.",
+    "example_english": "We are in the same boat.",
+    "level": "B1",
+    "category": "relationship",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ta noe med en klype salt",
+    "lemma": "å ta noe med en klype salt",
+    "english": "to take with a grain of salt",
+    "example": "Ta ryktet med en klype salt.",
+    "example_english": "Take the rumor with a grain of salt.",
+    "level": "B2",
+    "category": "judgment",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å snakke rett fra levra",
+    "lemma": "å snakke rett fra levra",
+    "english": "to speak bluntly",
+    "example": "Han snakker rett fra levra.",
+    "example_english": "He speaks very bluntly.",
+    "level": "B2",
+    "category": "communication",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha en finger med i spillet",
+    "lemma": "å ha en finger med i spillet",
+    "english": "to be involved secretly",
+    "example": "Hun hadde en finger med i spillet.",
+    "example_english": "She had a hand in it.",
+    "level": "B2",
+    "category": "involvement",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å få kalde føtter",
+    "lemma": "å få kalde føtter",
+    "english": "to get cold feet",
+    "example": "Han fikk kalde føtter før bryllupet.",
+    "example_english": "He got cold feet before the wedding.",
+    "level": "B1",
+    "category": "feelings",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være et stykke unna",
+    "lemma": "å være et stykke unna",
+    "english": "to be far from",
+    "example": "Vi er et stykke unna målet.",
+    "example_english": "We are far from the goal.",
+    "level": "B1",
+    "category": "progress",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å gå rundt grøten",
+    "lemma": "å gå rundt grøten",
+    "english": "to beat around the bush",
+    "example": "Ikke gå rundt grøten.",
+    "example_english": "Don't beat around the bush.",
+    "level": "B1",
+    "category": "communication",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha hodet over vannet",
+    "lemma": "å ha hodet over vannet",
+    "english": "to stay afloat",
+    "example": "Familien klarer så vidt å holde hodet over vannet.",
+    "example_english": "The family is barely staying afloat.",
+    "level": "B2",
+    "category": "finance",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha noe i bakhodet",
+    "lemma": "å ha noe i bakhodet",
+    "english": "to keep in mind",
+    "example": "Ha det i bakhodet.",
+    "example_english": "Keep that in mind.",
+    "level": "B1",
+    "category": "thinking",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å miste tråden",
+    "lemma": "å miste tråden",
+    "english": "to lose track",
+    "example": "Beklager, jeg mistet tråden.",
+    "example_english": "Sorry, I lost my train of thought.",
+    "level": "B1",
+    "category": "communication",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å stå på egne bein",
+    "lemma": "å stå på egne bein",
+    "english": "to stand on one's own feet",
+    "example": "Nå står han på egne bein.",
+    "example_english": "Now he stands on his own feet.",
+    "level": "B1",
+    "category": "independence",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å ha vind i seilene",
+    "lemma": "å ha vind i seilene",
+    "english": "to have momentum",
+    "example": "Selskapet har vind i seilene.",
+    "example_english": "The company has momentum.",
+    "level": "B2",
+    "category": "success",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å møte veggen",
+    "lemma": "å møte veggen",
+    "english": "to crash from exhaustion",
+    "example": "Etter maratonet møtte hun veggen.",
+    "example_english": "After the marathon, she hit the wall.",
+    "level": "B2",
+    "category": "stress",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å holde kortene tett til brystet",
+    "lemma": "å holde kortene tett til brystet",
+    "english": "to keep one's cards close",
+    "example": "Hun holder kortene tett til brystet.",
+    "example_english": "She keeps her cards close to her chest.",
+    "level": "B2",
+    "category": "strategy",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være et hestehode foran",
+    "lemma": "å være et hestehode foran",
+    "english": "to be far ahead",
+    "example": "Laget vårt er et hestehode foran.",
+    "example_english": "Our team is well ahead.",
+    "level": "B2",
+    "category": "competition",
+    "part": "idiom"
+  },
+  {
+    "norsk": "å være på kanten",
+    "lemma": "å være på kanten",
+    "english": "to be close to losing control",
+    "example": "Han er på kanten av sammenbrudd.",
+    "example_english": "He is on the edge of a breakdown.",
+    "level": "B2",
+    "category": "stress",
+    "part": "idiom"
+  }
+]
