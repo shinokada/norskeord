@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
 import type { MetaProps } from 'runes-meta-tags';
 
-export const load: PageServerLoad = ({ url }) => {
+export const load: PageServerLoad = ({ locals, url }) => {
   const title = 'Norske Flashcard Plus — Study Smarter, Remember More';
   const description =
     'Upgrade to Plus for smart review scheduling, full A1–C2 vocabulary access, cross-device sync, and complete Norskprøven exam prep. Built for serious Norwegian learners.';
@@ -25,5 +25,9 @@ export const load: PageServerLoad = ({ url }) => {
     }
   };
 
-  return { pageMetaTags };
+  return {
+    pageMetaTags,
+    isLoggedIn: locals.user !== null,
+    isPlus: locals.plan === 'plus'
+  };
 };
