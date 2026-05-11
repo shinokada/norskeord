@@ -292,5 +292,16 @@
   "category_c2_climate-environment-policy": "Climate & Environment Policy",
   "category_c2_sociology-anthropology": "Sociology & Anthropology",
   "category_c2_advanced-business-strategy": "Advanced Business Strategy",
-  "category_c2_existential-abstract": "Existential & Abstract"
+  "category_c2_existential-abstract": "Existential & Abstract",
+
+  "plus_checkout_cta": "Upgrade to Plus — €4.99/month",
+  "plus_checkout_cta_annual": "Upgrade to Plus — €39/year",
+  "plus_manage_subscription": "Manage subscription →",
+  "plus_sign_in_to_upgrade": "Sign in to upgrade",
+  "plus_activating": "Redirecting to checkout…",
+  "plus_success_heading": "You're now a Plus member 🎉",
+  "plus_success_body": "Your personalised Due Today deck is ready. It may take a few seconds to activate.",
+  "plus_success_cta": "Start studying →",
+  "checkout_error_generic": "Could not start checkout. Please try again.",
+  "checkout_error_login_required": "Please sign in to upgrade."
 }

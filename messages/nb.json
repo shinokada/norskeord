@@ -292,5 +292,16 @@
   "category_c2_climate-environment-policy": "Klima- og miljøpolitikk",
   "category_c2_sociology-anthropology": "Sosiologi og antropologi",
   "category_c2_advanced-business-strategy": "Avansert forretningsstrategi",
-  "category_c2_existential-abstract": "Eksistensielt og abstrakt"
+  "category_c2_existential-abstract": "Eksistensielt og abstrakt",
+
+  "plus_checkout_cta": "Oppgrader til Plus — €4,99/måned",
+  "plus_checkout_cta_annual": "Oppgrader til Plus — €39/år",
+  "plus_manage_subscription": "Administrer abonnement →",
+  "plus_sign_in_to_upgrade": "Logg inn for å oppgradere",
+  "plus_activating": "Videresender til betaling…",
+  "plus_success_heading": "Du er nå Plus-medlem 🎉",
+  "plus_success_body": "Den personlige listen over kort som forfaller i dag er klar. Det kan ta noen sekunder før planen aktiveres.",
+  "plus_success_cta": "Begynn å studere →",
+  "checkout_error_generic": "Kunne ikke starte betaling. Vennligst prøv igjen.",
+  "checkout_error_login_required": "Logg inn for å oppgradere."
 }
