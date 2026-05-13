@@ -6,9 +6,9 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('index page has expected h1', async ({ page }) => {
-  await expect(
-    page.getByRole('heading', { level: 1 })
-  ).toContainText('Learn Norwegian vocabulary/phrase that actually sticks');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText(
+    'Learn Norwegian vocabulary/phrase that actually sticks'
+  );
 });
 
 test('index page has expected meta title', async ({ page }) => {

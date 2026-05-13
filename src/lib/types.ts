@@ -128,7 +128,7 @@ export const CATEGORIES_BY_LEVEL = {
     'work-career',
     'relationships',
     'communication',
-    ''
+    'uttrykk-preview'
   ],
   C1: [
     'philosophy',
@@ -164,6 +164,100 @@ export const CATEGORIES_BY_LEVEL = {
 } as const;
 
 export type Category = (typeof CATEGORIES_BY_LEVEL)[CEFRLevel][number];
+
+/**
+ * Categories that require a Plus subscription.
+ * Free users can see these in the picker but cannot open them.
+ * A1 and A2 are always fully free — not listed here.
+ */
+export const PLUS_CATEGORIES = new Set<string>([
+  // B1 — plus-only (22)
+  'b1/city-life',
+  'b1/traditions',
+  'b1/opinion-adjectives',
+  'b1/food-cooking-advanced',
+  'b1/housing-renting',
+  'b1/finance-banking',
+  'b1/dreams-ambitions',
+  'b1/opinions-arguments',
+  'b1/communication-skills',
+  'b1/housing-urban-life',
+  'b1/mental-wellbeing',
+  'b1/sports-fitness',
+  'b1/arts-culture',
+  'b1/economics-personal-finance',
+  'b1/environment-b1',
+  'b1/science-nature',
+  'b1/media-journalism-b1',
+  'b1/workplace',
+  'b1/relationships-family',
+  'b1/politics-civics',
+  'b1/language-learning',
+  'b1/health-system',
+  // B2 — plus-only (28 vocab + full uttrykk)
+  'b2/arts',
+  'b2/emotions',
+  'b2/idioms',
+  'b2/history',
+  'b2/law',
+  'b2/literature',
+  'b2/advanced-adjectives',
+  'b2/philosophy',
+  'b2/medicine',
+  'b2/psychology',
+  'b2/business',
+  'b2/religion',
+  'b2/environment',
+  'b2/technology',
+  'b2/media',
+  'b2/education',
+  'b2/language',
+  'b2/argumentation',
+  'b2/abstract-nouns',
+  'b2/advanced-verbs',
+  'b2/geography',
+  'b2/culture',
+  'b2/global-issues',
+  'b2/academic-language',
+  'b2/discourse-markers',
+  'b2/work-career',
+  'b2/relationships',
+  'b2/communication',
+  'b2/uttrykk',
+  // C1 — all plus
+  'c1/philosophy',
+  'c1/academic',
+  'c1/formal-writing',
+  'c1/rhetoric',
+  'c1/complex-emotions',
+  'c1/professional',
+  'c1/abstract-concepts',
+  'c1/politics-democracy',
+  'c1/linguistics',
+  'c1/media-journalism',
+  'c1/architecture-design',
+  'c1/diplomacy-international',
+  'c1/finance-economics',
+  'c1/medicine-healthcare',
+  'c1/psychology-advanced',
+  // C2 — all plus
+  'c2/literary',
+  'c2/archaic',
+  'c2/proverbs',
+  'c2/highly-formal',
+  'c2/technical',
+  'c2/nuanced-distinctions',
+  'c2/advanced-law-justice',
+  'c2/neuroscience-cognition',
+  'c2/climate-environment-policy',
+  'c2/sociology-anthropology',
+  'c2/advanced-business-strategy',
+  'c2/existential-abstract'
+]);
+
+export function isPlusCategory(level: string, category: string): boolean {
+  return PLUS_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
+}
 
 export type FSRSRating = 'again' | 'hard' | 'good' | 'easy';
 
