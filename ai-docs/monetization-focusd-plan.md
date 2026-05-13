@@ -2,18 +2,18 @@
 
 ## Tiers
 
-| Feature                                | Free | Plus                        |
-| -------------------------------------- | ---- | --------------------------- |
-| All vocabulary (A1–C2)                 | ✅   | ✅                          |
-| FSRS rating buttons                    | ✅   | ✅                          |
-| Basic CEFR estimate                    | ✅   | ✅                          |
-| Due today smart deck                   | ✅   | ✅                          |
-| Per-category breakdown + pace forecast | ❌   | ✅                          |
-| Progress sync across devices           | ❌   | ✅                          |
-| Email lesson service                   | ❌   | ✅                          |
-| Full Norskprøven exam questions        | ❌   | ✅                          |
-| FSRS weight optimisation               | ❌   | ✅                          |
-| Price                                  | Free | 49 NOK/month · 499 NOK/year |
+| Feature                                | Free | Plus         |
+| -------------------------------------- | ---- | ------------ |
+| All vocabulary (A1–C2)                 | ✅   | ✅           |
+| FSRS rating buttons                    | ✅   | ✅           |
+| Basic CEFR estimate                    | ✅   | ✅           |
+| Due today smart deck                   | ✅   | ✅           |
+| Per-category breakdown + pace forecast | ❌   | ✅           |
+| Progress sync across devices           | ❌   | ✅           |
+| Email lesson service                   | ❌   | ✅           |
+| Full Norskprøven exam questions        | ❌   | ✅           |
+| FSRS weight optimisation               | ❌   | ✅           |
+| Price                                  | Free | 49 NOK/month |
 
 **Why a feature gate, not a content gate:** The competition (Anki, Duolingo) is free on content. Gating vocabulary categories loses users before they are hooked. The differentiator is the _system_ — FSRS scheduling and honest progress tracking — not the word lists.
 
@@ -99,8 +99,9 @@ The profile page serves two purposes: personal settings and subscription status.
 - Flashcard display preferences: Norwegian→English or English→Norwegian; words only or include phrases
 
 **Subscription**
+How can Lemon Squeezy do recuring monthly payment?
 
-- Current plan (Free / Plus Monthly / Plus Annual) with renewal date
+- Current plan (Free / Plus) with renewal date
 - Upgrade / manage billing button (Lemon Squeezy customer portal link)
 
 **Notifications (Plus only)**

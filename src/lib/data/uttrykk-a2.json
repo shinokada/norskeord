@@ -1,0 +1,992 @@
+[
+  {
+    "norsk": "å gå på ski",
+    "lemma": "å gå på ski",
+    "english": "to go skiing",
+    "example": "Hun liker å gå på ski om vinteren.",
+    "example_english": "She likes to go skiing in the winter.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "for varmt/kaldt",
+    "lemma": "for varmt/kaldt",
+    "english": "too warm, too cold",
+    "example": "Det er for kaldt ute i dag.",
+    "example_english": "It is too cold outside today.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "stress",
+    "lemma": "stress",
+    "english": "stress",
+    "example": "Det er mye stress på jobben.",
+    "example_english": "There is a lot of stress at work.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Fryser du?: Ja, det er veldig kaldt.",
+    "lemma": "Fryser du?: Ja, det er veldig kaldt.",
+    "english": "Are you cold? Yes, it is very cold.",
+    "example": "Fryser du? Ja, det er veldig kaldt i dag.",
+    "example_english": "Are you cold? Yes, it is very cold today.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Svetter du?: Ja, det er veldig varmt.",
+    "lemma": "Svetter du?: Ja, det er veldig varmt.",
+    "english": "Are you sweating? Yes, it is very warm.",
+    "example": "Svetter du? Ja, det er veldig varmt her.",
+    "example_english": "Are you sweating? Yes, it is very warm here.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Er dere forelsket?: Ja, det er vi.",
+    "lemma": "Er dere forelsket?: Ja, det er vi.",
+    "english": "Are you in love? Yes, we are.",
+    "example": "Er dere forelsket? Ja, det er vi.",
+    "example_english": "Are you in love? Yes, we are.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Bor dere sammen?: Ja, vi er samboere.",
+    "lemma": "Bor dere sammen?: Ja, vi er samboere.",
+    "english": "Do you live together? Yes, we are cohabiting.",
+    "example": "Bor dere sammen? Ja, vi er samboere.",
+    "example_english": "Do you live together? Yes, we are cohabiting.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Regner det veldig mye?: Ja, det øsregner.",
+    "lemma": "Regner det veldig mye?: Ja, det øsregner.",
+    "english": "Is it raining a lot? Yes, it is pouring.",
+    "example": "Regner det mye? Ja, det øsregner ute.",
+    "example_english": "Is it raining a lot? Yes, it is pouring outside.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Er det veldig kaldt?: Ja, det er iskaldt.",
+    "lemma": "Er det veldig kaldt?: Ja, det er iskaldt.",
+    "english": "Is it very cold? Yes, it is ice cold.",
+    "example": "Er det veldig kaldt? Ja, det er iskaldt i dag.",
+    "example_english": "Is it very cold? Yes, it is ice cold today.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Er du veldig sulten?: Ja, jeg er skrubbsulten.",
+    "lemma": "Er du veldig sulten?: Ja, jeg er skrubbsulten.",
+    "english": "Are you very hungry? Yes, I am starving.",
+    "example": "Er du sulten? Ja, jeg er skrubbsulten!",
+    "example_english": "Are you hungry? Yes, I am starving!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Velkommen. Takk skal du ha.",
+    "lemma": "Velkommen. Takk skal du ha.",
+    "english": "Welcome. Thank you very much.",
+    "example": "Velkommen hit! Takk skal du ha.",
+    "example_english": "Welcome here! Thank you very much.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Velkommen tilbake. Takk for det.",
+    "lemma": "Velkommen tilbake. Takk for det.",
+    "english": "Welcome back. Thank you.",
+    "example": "Velkommen tilbake! Takk for det.",
+    "example_english": "Welcome back! Thank you.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
+    "lemma": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
+    "english": "Shall I order a glass of beer for you? Just water for me, thanks.",
+    "example": "Skal jeg bestille noe til deg? Bare vann til meg, takk.",
+    "example_english": "Shall I order something for you? Just water for me, thanks.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en stund",
+    "lemma": "en stund",
+    "english": "a while",
+    "example": "Jeg har ventet her en stund.",
+    "example_english": "I have been waiting here for a while.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en feil",
+    "lemma": "en feil",
+    "english": "a mistake, a fault",
+    "example": "Jeg gjorde en feil på prøven.",
+    "example_english": "I made a mistake on the test.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å se ... ut",
+    "lemma": "å se ... ut",
+    "english": "to look, to appear",
+    "example": "Det ser veldig godt ut!",
+    "example_english": "That looks very good!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å slå seg ned",
+    "lemma": "å slå seg ned",
+    "english": "to settle down, to sit down",
+    "example": "Kan jeg slå meg ned her?",
+    "example_english": "Can I sit down here?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å legge merke til",
+    "lemma": "å legge merke til",
+    "english": "to notice",
+    "example": "Jeg la merke til at hun var trist.",
+    "example_english": "I noticed that she was sad.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stole på noen",
+    "lemma": "å stole på noen",
+    "english": "to trust someone",
+    "example": "Jeg stoler på deg.",
+    "example_english": "I trust you.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå hånd i hånd",
+    "lemma": "å gå hånd i hånd",
+    "english": "to walk hand in hand",
+    "example": "De går hånd i hånd i parken.",
+    "example_english": "They walk hand in hand in the park.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha rett i noe",
+    "lemma": "å ha rett i noe",
+    "english": "to be right about something",
+    "example": "Du har rett i det.",
+    "example_english": "You are right about that.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha rett til noe",
+    "lemma": "å ha rett til noe",
+    "english": "to have the right to something",
+    "example": "Alle har rett til utdanning.",
+    "example_english": "Everyone has the right to education.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være avhengig av noe",
+    "lemma": "å være avhengig av noe",
+    "english": "to be dependent on something",
+    "example": "Jeg er avhengig av bussen for å komme meg til jobb.",
+    "example_english": "I am dependent on the bus to get to work.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være forsynt",
+    "lemma": "å være forsynt",
+    "english": "to be full, to have had enough (food)",
+    "example": "Nei takk, jeg er forsynt.",
+    "example_english": "No thank you, I have had enough.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det kan du si.",
+    "lemma": "Det kan du si.",
+    "english": "You can say that again., That's true.",
+    "example": "Det er dyrt her. Det kan du si!",
+    "example_english": "It is expensive here. You can say that again!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Takk for i dag.",
+    "lemma": "Takk for i dag.",
+    "english": "Thanks for today.",
+    "example": "Vi er ferdige. Takk for i dag!",
+    "example_english": "We are done. Thanks for today!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Takk for sist.",
+    "lemma": "Takk for sist.",
+    "english": "Thanks for last time.",
+    "example": "Hyggelig å se deg igjen. Takk for sist!",
+    "example_english": "Nice to see you again. Thanks for last time!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Takk for maten.",
+    "lemma": "Takk for maten.",
+    "english": "Thanks for the food.",
+    "example": "Det smakte godt. Takk for maten!",
+    "example_english": "It tasted good. Thanks for the food!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Ha det bra så lenge.",
+    "lemma": "Ha det bra så lenge.",
+    "english": "Take care for now., Goodbye for now.",
+    "example": "Jeg går nå. Ha det bra så lenge!",
+    "example_english": "I am leaving now. Take care for now!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Dette er ...",
+    "lemma": "Dette er ...",
+    "english": "This is ...",
+    "example": "Dette er vennen min, Kari.",
+    "example_english": "This is my friend, Kari.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Vi ses!",
+    "lemma": "Vi ses!",
+    "english": "See you!",
+    "example": "Vi ses i morgen!",
+    "example_english": "See you tomorrow!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Ha det!",
+    "lemma": "Ha det!",
+    "english": "Bye!, Take care!",
+    "example": "Ha det bra! Vi ses snart.",
+    "example_english": "Take care! See you soon.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Ha en god dag!",
+    "lemma": "Ha en god dag!",
+    "english": "Have a good day!",
+    "example": "Ha en god dag på jobben!",
+    "example_english": "Have a good day at work!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Hva slags",
+    "lemma": "Hva slags",
+    "english": "What kind of",
+    "example": "Hva slags mat liker du?",
+    "example_english": "What kind of food do you like?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Klart det!",
+    "lemma": "Klart det!",
+    "english": "Of course!, Sure!",
+    "example": "Kan du hjelpe meg? Klart det!",
+    "example_english": "Can you help me? Of course!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha sommerfugler i magen",
+    "lemma": "å ha sommerfugler i magen",
+    "english": "to have butterflies in one's stomach",
+    "example": "Jeg er nervøs og har sommerfugler i magen.",
+    "example_english": "I am nervous and have butterflies in my stomach.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha rett",
+    "lemma": "å ha rett",
+    "english": "to be right",
+    "example": "Du har rett, det er kaldt i dag.",
+    "example_english": "You are right, it is cold today.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli godkjent",
+    "lemma": "å bli godkjent",
+    "english": "to be approved, accepted",
+    "example": "Søknaden hennes ble godkjent.",
+    "example_english": "Her application was approved.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli lei av",
+    "lemma": "å bli lei av",
+    "english": "to get tired of, fed up with",
+    "example": "Jeg er lei av å vente på bussen.",
+    "example_english": "I am tired of waiting for the bus.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å føle seg",
+    "lemma": "å føle seg",
+    "english": "to feel (a certain way)",
+    "example": "Hvordan føler du deg i dag?",
+    "example_english": "How do you feel today?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få øye på",
+    "lemma": "å få øye på",
+    "english": "to spot, to catch sight of",
+    "example": "Jeg fikk øye på en venn i butikken.",
+    "example_english": "I spotted a friend in the shop.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha ansvar for",
+    "lemma": "å ha ansvar for",
+    "english": "to be responsible for",
+    "example": "Hun har ansvar for barna på skolen.",
+    "example_english": "She is responsible for the children at school.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å legge vekt på",
+    "lemma": "å legge vekt på",
+    "english": "to emphasise, to place importance on",
+    "example": "Vi legger vekt på godt samarbeid.",
+    "example_english": "We place importance on good teamwork.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være interessert i",
+    "lemma": "å være interessert i",
+    "english": "to be interested in",
+    "example": "Er du interessert i sport?",
+    "example_english": "Are you interested in sport?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være født",
+    "lemma": "å være født",
+    "english": "to be born",
+    "example": "Jeg er født i Norge.",
+    "example_english": "I was born in Norway.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Et lite øyeblikk.",
+    "lemma": "Et lite øyeblikk.",
+    "english": "Just a moment.",
+    "example": "Et lite øyeblikk, jeg henter det nå.",
+    "example_english": "Just a moment, I will get it now.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Beklager, det er helt fullt.",
+    "lemma": "Beklager, det er helt fullt.",
+    "english": "Sorry, it is completely full.",
+    "example": "Beklager, det er helt fullt i dag.",
+    "example_english": "Sorry, it is completely full today.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "For en service!",
+    "lemma": "For en service!",
+    "english": "What great service!",
+    "example": "Maten kom fort. For en service!",
+    "example_english": "The food came quickly. What great service!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Nå er det din tur.",
+    "lemma": "Nå er det din tur.",
+    "english": "Now it is your turn.",
+    "example": "Jeg er ferdig. Nå er det din tur.",
+    "example_english": "I am done. Now it is your turn.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Takk for hjelpen.",
+    "lemma": "Takk for hjelpen.",
+    "english": "Thanks for the help.",
+    "example": "Du er snill. Takk for hjelpen!",
+    "example_english": "You are kind. Thanks for the help!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i nærheten",
+    "lemma": "i nærheten",
+    "english": "nearby, in the area",
+    "example": "Det er en butikk i nærheten.",
+    "example_english": "There is a shop nearby.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "med en gang",
+    "lemma": "med en gang",
+    "english": "right away, immediately",
+    "example": "Jeg kommer med en gang.",
+    "example_english": "I am coming right away.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "vondt",
+    "lemma": "vondt",
+    "english": "pain, hurt, sore",
+    "example": "Gjør det vondt? Ja, jeg har vondt i hodet.",
+    "example_english": "Does it hurt? Yes, I have a headache.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta feil",
+    "lemma": "å ta feil",
+    "english": "to be wrong, to make a mistake",
+    "example": "Beklager, jeg tok feil.",
+    "example_english": "Sorry, I was wrong.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være lei seg",
+    "lemma": "å være lei seg",
+    "english": "to be sad, upset",
+    "example": "Hun er lei seg fordi hun er syk.",
+    "example_english": "She is sad because she is sick.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ringe etter",
+    "lemma": "å ringe etter",
+    "english": "to call for, to phone for",
+    "example": "Han ringer etter ambulansen.",
+    "example_english": "He is calling for an ambulance.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være i form",
+    "lemma": "å være i form",
+    "english": "to be in shape, fit",
+    "example": "Hun er i veldig god form.",
+    "example_english": "She is in very good shape.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å holde seg i form",
+    "lemma": "å holde seg i form",
+    "english": "to keep fit, stay in shape",
+    "example": "Han trener for å holde seg i form.",
+    "example_english": "He exercises to keep fit.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "faktisk",
+    "lemma": "faktisk",
+    "english": "actually, in fact",
+    "example": "Jeg er faktisk veldig trøtt i dag.",
+    "example_english": "I am actually very tired today.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være enig i",
+    "lemma": "å være enig i",
+    "english": "to agree with",
+    "example": "Det er jeg enig i.",
+    "example_english": "I agree with that.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være på vei",
+    "lemma": "å være på vei",
+    "english": "to be on the way",
+    "example": "Vi er på vei til butikken.",
+    "example_english": "We are on the way to the shop.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "sur",
+    "lemma": "sur",
+    "english": "angry, sour, grumpy",
+    "example": "Han er sur fordi han er trøtt.",
+    "example_english": "He is grumpy because he is tired.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå over",
+    "lemma": "å gå over",
+    "english": "to pass, to go away (e.g. pain, mood)",
+    "example": "Det går snart over.",
+    "example_english": "It will pass soon.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Ta til høyre i Kirkegata.",
+    "lemma": "Ta til høyre i Kirkegata.",
+    "english": "Turn right on Kirkegata.",
+    "example": "Ta til høyre ved skolen.",
+    "example_english": "Turn right at the school.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Ta til venstre.",
+    "lemma": "Ta til venstre.",
+    "english": "Turn left.",
+    "example": "Ta til venstre ved butikken.",
+    "example_english": "Turn left at the shop.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Kjør rett fram.",
+    "lemma": "Kjør rett fram.",
+    "english": "Drive straight ahead.",
+    "example": "Kjør rett fram til rundkjøringen.",
+    "example_english": "Drive straight ahead to the roundabout.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Hvor ligger leiligheten?",
+    "lemma": "Hvor ligger leiligheten?",
+    "english": "Where is the flat located?",
+    "example": "Hvor ligger leiligheten? Den ligger i sentrum.",
+    "example_english": "Where is the flat located? It is in the city centre.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Den ligger på venstre side.",
+    "lemma": "Den ligger på venstre side.",
+    "english": "It is on the left side.",
+    "example": "Butikken ligger på venstre side av gata.",
+    "example_english": "The shop is on the left side of the street.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Sofaen står foran vinduet.",
+    "lemma": "Sofaen står foran vinduet.",
+    "english": "The sofa is in front of the window.",
+    "example": "Bordet står foran vinduet.",
+    "example_english": "The table is in front of the window.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Den står mellom døra og skapet.",
+    "lemma": "Den står mellom døra og skapet.",
+    "english": "It stands between the door and the wardrobe.",
+    "example": "Stolen står mellom bordet og veggen.",
+    "example_english": "The chair stands between the table and the wall.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å like godt",
+    "lemma": "å like godt",
+    "english": "to really like, to enjoy",
+    "example": "Jeg liker godt å gå på tur.",
+    "example_english": "I really like going for walks.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å like bedre (enn)",
+    "lemma": "å like bedre (enn)",
+    "english": "to prefer, to like more (than)",
+    "example": "Jeg liker kaffe bedre enn te.",
+    "example_english": "I prefer coffee to tea.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å like best",
+    "lemma": "å like best",
+    "english": "to like most, to like best",
+    "example": "Jeg liker best å spise hjemme.",
+    "example_english": "I like eating at home best.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bestemme seg",
+    "lemma": "å bestemme seg",
+    "english": "to make up one's mind, to decide",
+    "example": "Har du bestemt deg?",
+    "example_english": "Have you made up your mind?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha rett til",
+    "lemma": "å ha rett til",
+    "english": "to have the right to",
+    "example": "Alle har rett til fri utdanning.",
+    "example_english": "Everyone has the right to free education.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i løpet av",
+    "lemma": "i løpet av",
+    "english": "within, during, over the course of",
+    "example": "Jeg vil lære norsk i løpet av ett år.",
+    "example_english": "I want to learn Norwegian within one year.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å pynte seg",
+    "lemma": "å pynte seg",
+    "english": "to dress up, to get dressed up",
+    "example": "Hun pynter seg til festen.",
+    "example_english": "She is dressing up for the party.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ønske seg",
+    "lemma": "å ønske seg",
+    "english": "to wish for, to want (as a gift)",
+    "example": "Hva ønsker du deg til bursdagen?",
+    "example_english": "What do you wish for for your birthday?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å holde en tale",
+    "lemma": "å holde en tale",
+    "english": "to give a speech",
+    "example": "Han holder en tale på festen.",
+    "example_english": "He is giving a speech at the party.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gratulere",
+    "lemma": "å gratulere",
+    "english": "to congratulate",
+    "example": "Gratulerer med dagen!",
+    "example_english": "Happy birthday! / Congratulations!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å fylle ut",
+    "lemma": "å fylle ut",
+    "english": "to fill in, to fill out (a form)",
+    "example": "Kan du fylle ut dette skjemaet?",
+    "example_english": "Can you fill out this form?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ordne seg",
+    "lemma": "å ordne seg",
+    "english": "to work out, to sort itself out",
+    "example": "Ikke vær bekymret, det ordner seg.",
+    "example_english": "Don't worry, it will work out.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta det med ro",
+    "lemma": "å ta det med ro",
+    "english": "to take it easy, to relax",
+    "example": "Du er syk. Ta det med ro!",
+    "example_english": "You are sick. Take it easy!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "jul og nyttår",
+    "lemma": "jul og nyttår",
+    "english": "Christmas and New Year",
+    "example": "God jul og godt nyttår!",
+    "example_english": "Merry Christmas and Happy New Year!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "fram og tilbake",
+    "lemma": "fram og tilbake",
+    "english": "back and forth",
+    "example": "Han går fram og tilbake i rommet.",
+    "example_english": "He walks back and forth in the room.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i mål",
+    "lemma": "i mål",
+    "english": "done, finished, at the goal",
+    "example": "Er du i mål med oppgaven?",
+    "example_english": "Are you done with the task?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "smak",
+    "lemma": "smak",
+    "english": "taste",
+    "example": "Denne maten har god smak.",
+    "example_english": "This food has a good taste.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "smaken",
+    "lemma": "smaken",
+    "english": "the taste",
+    "example": "Han kjenner den søte smaken av jordbær.",
+    "example_english": "He tastes the sweet taste of strawberries.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "til huset",
+    "lemma": "til huset",
+    "english": "for the house",
+    "example": "Vi kjøpte nye møbler til huset.",
+    "example_english": "We bought new furniture for the house.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å starte for seg selv",
+    "lemma": "å starte for seg selv",
+    "english": "to start one's own business",
+    "example": "Hun vil gjerne starte for seg selv.",
+    "example_english": "She would like to start her own business.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få sitt eget",
+    "lemma": "å få sitt eget",
+    "english": "to have one's own (place, business)",
+    "example": "Han vil gjerne få sitt eget kontor.",
+    "example_english": "He would like to have his own office.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å klare seg selv",
+    "lemma": "å klare seg selv",
+    "english": "to manage on one's own, to be self-sufficient",
+    "example": "Barna klarer seg selv nå.",
+    "example_english": "The children manage on their own now.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å se lyst på livet",
+    "lemma": "å se lyst på livet",
+    "english": "to look on the bright side of life",
+    "example": "Hun prøver å se lyst på livet.",
+    "example_english": "She tries to look on the bright side of life.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta lang tid",
+    "lemma": "å ta lang tid",
+    "english": "to take a long time",
+    "example": "Det tar lang tid å lære norsk.",
+    "example_english": "It takes a long time to learn Norwegian.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha tid",
+    "lemma": "å ha tid",
+    "english": "to have time",
+    "example": "Jeg har ikke tid til å hjelpe deg nå.",
+    "example_english": "I do not have time to help you now.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å lengte hjem",
+    "lemma": "å lengte hjem",
+    "english": "to long for home, to be homesick",
+    "example": "Han lengter hjem til familien sin.",
+    "example_english": "He longs for home and his family.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gi opp",
+    "lemma": "å gi opp",
+    "english": "to give up",
+    "example": "Ikke gi opp! Du klarer det.",
+    "example_english": "Do not give up! You can do it.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å melde seg inn",
+    "lemma": "å melde seg inn",
+    "english": "to join, to sign up (for a club or organisation)",
+    "example": "Hun meldte seg inn i en fotballklubb.",
+    "example_english": "She joined a football club.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ved siden av",
+    "lemma": "ved siden av",
+    "english": "next to, alongside, in addition to",
+    "example": "Han studerer ved siden av jobben.",
+    "example_english": "He studies alongside his job.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  }
+]

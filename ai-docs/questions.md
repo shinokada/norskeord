@@ -2,6 +2,11 @@ You can access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
+
+- Since we have Preferences Interface languages, should we remove the navigation language button? If not, changing the language using this button should change the Preference as well.
+- Plus member and logged in (registered) needs to be explained the differences in about page.
+- /stats page has "Your Progress Progress is saved to this device. Sign in to sync across devices." Even I signed in (not plus member) it still has it.
+
 - In /plus page, Free vs Plus section shows that "Rate each card after flipping" and "Progress stats page" are included to Free. I think these should be plus only according to ai-docs/monetization-focusd-plan.md.
 - What does Stats: CEFR estimate + pace forecast Basic/Full in ai-docs/monetization-focusd-plan.md mean?
 - In flashcard page, there is All cards/Review due button and "xxx due" badge. This should be removed and the daily new words should be in the homepage with flash-card picking up level from Profile page.

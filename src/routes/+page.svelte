@@ -1,6 +1,7 @@
 <script lang="ts">
   import { afterNavigate, goto } from '$app/navigation';
-  import { CATEGORIES_BY_LEVEL } from '$lib/types';
+  import { page } from '$app/stores';
+  import { CATEGORIES_BY_LEVEL, isPlusCategory } from '$lib/types';
   import { validFlashcardPathPattern } from '$lib/utils';
   import * as m from '$lib/paraglide/messages.js';
 
@@ -20,6 +21,8 @@
       localStorage.removeItem('last-flashcard-path');
     }
   });
+
+  $: isPlus = $page.data.plan === 'plus';
 
   const levels = [
     { id: 'A1', label: () => m.home_level_a1(), color: 'green' },
@@ -95,6 +98,8 @@
     b2_psychology: m.category_b2_psychology,
     b2_business: m.category_b2_business,
     b2_religion: m.category_b2_religion,
+    'b2_uttrykk-preview': m['category_b2_uttrykk-preview'],
+    b2_uttrykk: m.category_b2_uttrykk,
     c1_philosophy: m.category_c1_philosophy,
     c1_academic: m.category_c1_academic,
     'c1_formal-writing': m['category_c1_formal-writing'],
@@ -140,10 +145,10 @@
   };
 
   const features = [
-    { icon: '🧠', label: 'FSRS spaced repetition' },
-    { icon: '🔊', label: 'Audio on every card' },
-    { icon: '📚', label: 'A1–C2 vocabulary' },
-    { icon: '🎯', label: 'Norskprøven prep' }
+    { icon: '🧠', label: 'Smart scheduling', href: '/about' },
+    { icon: '🔊', label: 'Audio on every card', href: null },
+    { icon: '📚', label: 'A1–C2 vocabulary', href: null },
+    { icon: '🎯', label: 'Norskprøven prep', href: '/norskproven' }
   ];
 </script>
 
@@ -202,7 +207,11 @@
     {#each features as f (f.label)}
       <span class="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300">
         <span class="text-lg">{f.icon}</span>
-        {f.label}
+        {#if f.href}
+          <a href={f.href} class="hover:underline">{f.label}</a>
+        {:else}
+          {f.label}
+        {/if}
       </span>
     {/each}
   </div>
@@ -217,11 +226,14 @@
       <h2 class="mb-3 text-xl font-semibold dark:text-white">{level.label()}</h2>
       <div class="flex flex-wrap gap-2">
         {#each categories as cat (cat)}
+          {@const locked = !isPlus && isPlusCategory(level.id, cat)}
           <a
-            href="/{level.id.toLowerCase()}/{cat}"
-            class="{badge} rounded-full px-4 py-0.5 font-medium transition-opacity hover:opacity-75"
+            href={locked ? '/plus?ref=category-lock' : `/${level.id.toLowerCase()}/${cat}`}
+            class="{badge} rounded-full px-4 py-0.5 font-medium transition-opacity hover:opacity-75
+                   {locked ? 'cursor-default opacity-60' : ''}"
+            title={locked ? m.plus_category_locked() : undefined}
           >
-            {getCategoryName(level.id, cat)}
+            {locked ? '🔒 ' : ''}{getCategoryName(level.id, cat)}
           </a>
         {/each}
       </div>

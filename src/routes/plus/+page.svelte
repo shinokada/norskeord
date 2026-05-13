@@ -21,19 +21,29 @@
       pro: { value: m.plus_row_vocab_plus(), yes: true }
     },
     {
+      feature: m.plus_row_b1c2(),
+      free: { value: m.plus_row_b1c2_free(), yes: false },
+      pro: { value: m.plus_row_b1c2_plus(), yes: true }
+    },
+    {
+      feature: m.plus_row_phrases(),
+      free: { value: m.plus_row_phrases_free(), yes: false },
+      pro: { value: m.plus_row_phrases_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_rating(),
       free: { value: m.plus_row_rating_included(), yes: true },
       pro: { value: m.plus_row_rating_included(), yes: true }
     },
     {
+      feature: m.plus_row_stats(),
+      free: { value: m.plus_row_stats_free(), yes: true },
+      pro: { value: m.plus_row_stats_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_due(),
       free: { value: m.plus_row_due_free(), yes: false },
       pro: { value: m.plus_row_due_plus(), yes: true }
-    },
-    {
-      feature: m.plus_row_stats(),
-      free: { value: m.plus_row_stats_included(), yes: true },
-      pro: { value: m.plus_row_stats_included(), yes: true }
     },
     {
       feature: m.plus_row_sync(),
@@ -264,9 +274,9 @@
     <p class="mb-1 text-base font-semibold dark:text-white">{m.plus_notify_prompt()}</p>
     {#if emailSubmitted}
       <p class="mt-3 text-2xl">🎉</p>
-      <p class="mt-2 text-sm font-semibold dark:text-white">{m.plus_success_heading()}</p>
+      <p class="mt-2 text-sm font-semibold dark:text-white">{m.plus_notify_success_heading()}</p>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
-        {m.plus_success_body({ email: emailValue })}
+        {m.plus_notify_success_body({ email: emailValue })}
       </p>
     {:else}
       <div class="mt-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
@@ -288,7 +298,7 @@
           type="button"
           onclick={handleSignup}
           disabled={submitting}
-          class="w-full shrink-0 rounded-lg bg-gray-800 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 disabled:opacity-50 dark:bg-gray-200 dark:text-gray-900 sm:w-auto"
+          class="w-full shrink-0 rounded-lg bg-gray-800 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 disabled:opacity-50 sm:w-auto dark:bg-gray-200 dark:text-gray-900"
         >
           {submitting ? m.plus_saving() : m.plus_notify_button()}
         </button>
