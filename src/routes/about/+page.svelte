@@ -1,18 +1,107 @@
 <script>
-  import { P, Heading } from 'flowbite-svelte';
+  import { Heading } from 'flowbite-svelte';
 </script>
 
-<div class="mx-auto max-w-4xl p-8 text-left">
-  <Heading tag="h1" class="text-3xl">ABOUT</Heading>
-  <P>
-    Norsk-Flashcard is for Norwegian learners who want to learn Norwegian vocabulary. It provides
-    flashcards with Norwegian words on the front and English translations on the back, along with
-    example sentences. The app is designed to be simple and user-friendly, making it easy for
-    learners to practice and expand their Norwegian vocabulary.
-  </P>
-  <P
-    >In Norway, every city and town has dedicated volunteers who offer free Norwegian courses, such
+<div class="mx-auto max-w-3xl px-4 py-12 text-left">
+  <Heading tag="h1" class="mb-2 text-3xl font-bold dark:text-white">About Norskeord</Heading>
+  <p class="mb-8 text-gray-500 dark:text-gray-400">
+    A vocabulary app built for serious Norwegian learners.
+  </p>
+
+  <p class="mb-6 text-gray-700 dark:text-gray-300">
+    Norskeord is a flashcard app for Norwegian learners who want to build vocabulary that actually
+    sticks — from everyday A1 words all the way up to C2. It covers all CEFR levels, includes audio
+    on every card, and is designed with Norskprøven candidates in mind.
+  </p>
+
+  <p class="mb-10 text-gray-700 dark:text-gray-300">
+    In Norway, every city and town has dedicated volunteers who offer free Norwegian courses, such
     as Røde Kors Norsktrening. I would like to express my sincere gratitude to all the volunteers
-    who are helping us learn Norwegian.</P
+    who are helping us learn Norwegian.
+  </p>
+
+  <!-- Smart scheduling section -->
+  <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
+    >How smart scheduling works</Heading
   >
+
+  <p class="mb-4 text-gray-700 dark:text-gray-300">
+    When you flip a card, you rate how well you remembered the word — <strong>Again</strong>,
+    <strong>Hard</strong>, <strong>Good</strong>, or <strong>Easy</strong>. The app uses that rating
+    to decide when to show you that card again.
+  </p>
+
+  <p class="mb-4 text-gray-700 dark:text-gray-300">
+    The idea is simple: the best time to review a word is just before you would naturally forget it.
+    Review it too soon and you waste time on something you already know. Wait too long and you have
+    to relearn it from scratch. Smart scheduling finds the sweet spot.
+  </p>
+
+  <p class="mb-4 text-gray-700 dark:text-gray-300">
+    Words you find easy come back less often — maybe in a week, then a month, then several months.
+    Words you keep forgetting come back sooner, sometimes within the same session. Over time, the
+    app builds a personalised schedule for each word based on your own memory.
+  </p>
+
+  <p class="mb-10 text-gray-700 dark:text-gray-300">
+    This is why rating cards honestly matters. Tapping <strong>Easy</strong> on a word you are not
+    sure about will push it out of your deck for a long time. Tapping <strong>Again</strong> on something
+    you genuinely forgot brings it back quickly. The more accurately you rate, the more effective your
+    study sessions become.
+  </p>
+
+  <!-- Card states -->
+  <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
+    >What the progress labels mean</Heading
+  >
+
+  <div class="mb-10 space-y-3">
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block rounded-full bg-gray-200 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+        >New</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">You have not seen this word yet.</p>
+    </div>
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block rounded-full bg-yellow-100 px-3 py-0.5 text-xs font-semibold text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300"
+        >Learning</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">
+        You have seen this word but it has not settled into long-term memory yet. Keep rating it and
+        it will graduate soon.
+      </p>
+    </div>
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block rounded-full bg-green-100 px-3 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
+        >Memorized</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">
+        This word has moved into long-term memory. It will come back for review occasionally to keep
+        it fresh.
+      </p>
+    </div>
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block rounded-full bg-orange-100 px-3 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
+        >Forgotten</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">
+        You rated this word <em>Again</em> after it was memorized. It is back in practice and will come
+        back more frequently until it sticks again.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="rounded-xl border border-blue-200 bg-blue-50 px-5 py-4 dark:border-blue-800 dark:bg-blue-900/20"
+  >
+    <p class="text-sm text-blue-700 dark:text-blue-300">
+      <strong>Plus tip:</strong> Norskeord Plus builds a personal <em>Due today</em> deck from your
+      ratings — a short, focused session of only the words your memory needs right now.
+      <a href="/plus" class="font-semibold underline">Learn more about Plus →</a>
+    </p>
+  </div>
 </div>

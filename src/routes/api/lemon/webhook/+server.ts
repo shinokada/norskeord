@@ -14,10 +14,7 @@
 import { json } from '@sveltejs/kit';
 import { createClient } from '@supabase/supabase-js';
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
-import {
-  SUPABASE_SERVICE_ROLE_KEY,
-  LEMONSQUEEZY_WEBHOOK_SECRET
-} from '$env/static/private';
+import { SUPABASE_SERVICE_ROLE_KEY, LEMONSQUEEZY_WEBHOOK_SECRET } from '$env/static/private';
 import {
   verifyLemonSqueezyWebhook,
   type LemonSqueezyWebhookPayload,

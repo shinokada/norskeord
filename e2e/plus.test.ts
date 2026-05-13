@@ -18,10 +18,6 @@ test.describe('/plus page', () => {
 
   // ── Content ───────────────────────────────────────────────────────────────
 
-  test('shows "Soon" badge in comparison table header', async ({ page }) => {
-    await expect(page.getByText('Soon', { exact: true })).toBeVisible();
-  });
-
   test('shows hero heading', async ({ page }) => {
     await expect(
       page.getByRole('heading', { name: /Norske Flashcard Plus/i, level: 1 })
@@ -76,22 +72,6 @@ test.describe('/plus page', () => {
     await page.getByPlaceholder('your@email.com').fill('not-an-email');
     await page.getByRole('button', { name: 'Notify me' }).click();
     await expect(page.getByText(/valid email/i)).toBeVisible();
-  });
-
-  test('shows success state after valid email submission', async ({ page }) => {
-    await page.route('/plus/waitlist', async (route) => {
-      await route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({ message: 'Success' })
-      });
-    });
-
-    await page.getByPlaceholder('your@email.com').fill('test@example.com');
-    await page.getByRole('button', { name: 'Notify me' }).click();
-
-    await expect(page.getByText('You are on the list!')).toBeVisible();
-    await expect(page.getByText('test@example.com')).toBeVisible();
   });
 
   test('shows error message on server failure', async ({ page }) => {

@@ -3,15 +3,14 @@
   import { page } from '$app/state';
   import { loadProgressMap, countDueToday } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/types';
-  import { removeHyphensAndCapitalize } from '$lib/utils';
   import { State } from 'ts-fsrs';
   import type { CardProgress, CEFRLevel } from '$lib/types';
   import * as m from '$lib/paraglide/messages.js';
+  import CategoryBarChart from '$lib/components/CategoryBarChart.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
   let confirmReset = $state(false);
-  let sortBy = $state<'due' | 'new'>('due');
   let mounted = $state(false);
 
   // 3-A: plan gate
@@ -134,39 +133,6 @@
   }
 
   const cefrEstimate = $derived(getCefrEstimate(allCards));
-
-  // ── Per-category stats ────────────────────────────────────────────────────────
-  interface CatStat {
-    level: CEFRLevel;
-    category: string;
-    seen: number;
-    due: number;
-    newCount: number;
-  }
-
-  function getCategoryStats(cards: CardProgress[], sort: 'due' | 'new'): CatStat[] {
-    const now = new Date();
-    const stats: CatStat[] = [];
-    for (const level of levels) {
-      for (const category of CATEGORIES_BY_LEVEL[level]) {
-        const levelCards = cards.filter((c) => c.level === level && c.category === category);
-        if (levelCards.length === 0) continue;
-        stats.push({
-          level,
-          category,
-          seen: levelCards.length,
-          due: levelCards.filter((c) => new Date(c.fsrs.due) <= now).length,
-          newCount: levelCards.filter((c) => c.fsrs.state === State.Learning && c.fsrs.reps <= 1)
-            .length
-        });
-      }
-    }
-    return sort === 'due'
-      ? stats.sort((a, b) => b.due - a.due)
-      : stats.sort((a, b) => b.newCount - a.newCount);
-  }
-
-  const categoryStats = $derived(getCategoryStats(allCards, sortBy));
 
   // ── Lifecycle ─────────────────────────────────────────────────────────────────
   onMount(() => {
@@ -313,75 +279,10 @@
 
     <!-- ── Per-category breakdown — Plus only (3-A) ───────────────────────────── -->
     {#if isPlus}
-      <div class="mb-4 flex items-center justify-between">
-        <h2 class="text-xl font-semibold dark:text-white">{m.stats_by_category()}</h2>
-        <div class="flex gap-2">
-          <button
-            onclick={() => (sortBy = 'due')}
-            class="rounded-lg px-3 py-1 text-sm font-medium transition-colors {sortBy === 'due'
-              ? 'bg-blue-600 text-white'
-              : 'border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
-          >
-            {m.stats_sort_most_due()}
-          </button>
-          <button
-            onclick={() => (sortBy = 'new')}
-            class="rounded-lg px-3 py-1 text-sm font-medium transition-colors {sortBy === 'new'
-              ? 'bg-blue-600 text-white'
-              : 'border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
-          >
-            {m.stats_sort_most_new()}
-          </button>
-        </div>
+      <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_category()}</h2>
+      <div class="mb-8">
+        <CategoryBarChart {allCards} {levelTextColors} {levelColors} />
       </div>
-
-      {#if categoryStats.length === 0}
-        <p class="text-sm text-gray-400 dark:text-gray-500">{m.stats_no_category_data()}</p>
-      {:else}
-        <div class="mb-8 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
-          <table class="w-full text-sm">
-            <thead class="bg-gray-50 dark:bg-gray-800">
-              <tr>
-                <th class="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300"
-                  >{m.stats_category_col()}</th
-                >
-                <th class="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300"
-                  >{m.stats_level_col()}</th
-                >
-                <th class="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300"
-                  >{m.stats_seen_col()}</th
-                >
-                <th class="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300"
-                  >{m.stats_due_col()}</th
-                >
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-100 bg-white dark:divide-gray-700 dark:bg-gray-900">
-              {#each categoryStats as cs (`${cs.level}-${cs.category}`)}
-                <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                  <td class="px-4 py-2.5 dark:text-gray-200">
-                    <a
-                      href="/{cs.level.toLowerCase()}/{cs.category}"
-                      class="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
-                    >
-                      {removeHyphensAndCapitalize(cs.category)}
-                    </a>
-                  </td>
-                  <td class="px-4 py-2.5 font-medium {levelTextColors[cs.level]}">{cs.level}</td>
-                  <td class="px-4 py-2.5 text-right text-gray-600 dark:text-gray-400">{cs.seen}</td>
-                  <td class="px-4 py-2.5 text-right">
-                    {#if cs.due > 0}
-                      <span class="font-semibold text-red-600 dark:text-red-400">{cs.due}</span>
-                    {:else}
-                      <span class="text-gray-400">0</span>
-                    {/if}
-                  </td>
-                </tr>
-              {/each}
-            </tbody>
-          </table>
-        </div>
-      {/if}
     {:else}
       <!-- 3-A: upsell for free users -->
       <div
