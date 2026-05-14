@@ -229,8 +229,7 @@ export async function loadFsrsWeights(userId: string): Promise<number[] | null> 
  */
 async function maybeTriggerOptimisation(userId: string, totalReps: number) {
   const shouldOptimise =
-    totalReps >= 1000 &&
-    (totalReps <= 5000 ? totalReps % 1000 === 0 : totalReps % 5000 === 0);
+    totalReps >= 1000 && (totalReps <= 5000 ? totalReps % 1000 === 0 : totalReps % 5000 === 0);
 
   if (!shouldOptimise) return;
 
@@ -322,7 +321,11 @@ export interface ScheduledIntervals {
  * Speculatively compute all four FSRS next-due intervals for display
  * beneath the rating buttons (2-C). Pure math — no I/O.
  */
-export function previewIntervals(existing: CardProgress | null, now: Date, fsrsInstance?: FSRS): ScheduledIntervals {
+export function previewIntervals(
+  existing: CardProgress | null,
+  now: Date,
+  fsrsInstance?: FSRS
+): ScheduledIntervals {
   const f = fsrsInstance ?? DEFAULT_FSRS;
   // When an existing card is provided, normalize its due date to `now` so that
   // fsrs.next() doesn't throw when the stored due date is after the preview

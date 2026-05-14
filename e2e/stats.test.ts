@@ -24,10 +24,10 @@ const SEED_VALUE = JSON.stringify({
 test.describe('/stats page — free user (unauthenticated)', () => {
   test.beforeEach(async ({ page }) => {
     // Write the seed entry before the page loads so onMount picks it up
-    await page.addInitScript(
-      ({ key, value }) => localStorage.setItem(key, value),
-      { key: SEED_KEY, value: SEED_VALUE }
-    );
+    await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+      key: SEED_KEY,
+      value: SEED_VALUE
+    });
     await page.goto('/stats');
   });
 
@@ -38,9 +38,7 @@ test.describe('/stats page — free user (unauthenticated)', () => {
 
   // 3-A: free users see the Plus upsell card instead
   test('shows Plus upsell card with link to /plus', async ({ page }) => {
-    await expect(
-      page.getByText('Per-category breakdown is a Plus feature')
-    ).toBeVisible();
+    await expect(page.getByText('Per-category breakdown is a Plus feature')).toBeVisible();
     const upgradeLink = page.getByRole('link', { name: /upgrade to plus/i });
     await expect(upgradeLink).toBeVisible();
     await expect(upgradeLink).toHaveAttribute('href', '/plus');

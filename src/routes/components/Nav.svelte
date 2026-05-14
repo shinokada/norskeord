@@ -16,14 +16,15 @@
   } from 'flowbite-svelte';
   import No from '$lib/No.svelte';
   import { page } from '$app/state';
-  import { CATEGORIES_BY_LEVEL } from '$lib/types';
+  import { CATEGORIES_BY_LEVEL, isPlusCategory } from '$lib/types';
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import ChevronDownOutline from './ChevronDownOutline.svelte';
   import { onMount } from 'svelte';
-  import { getLocale, setLocale } from '$lib/paraglide/runtime';
   import * as m from '$lib/paraglide/messages.js';
+  import { localeStore } from '$lib/localeStore.svelte';
 
   const user = $derived(page.data.user);
+  const displayName = $derived(page.data.displayName as string | null);
 
   async function logout() {
     await fetch('/auth/logout', { method: 'POST' });
@@ -38,11 +39,13 @@
   const linkClass =
     'flex items-center gap-1.5 py-0.5 text-sm text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400';
 
-  // All categories are free — no content gate per monetization plan
+  let isPlus = $derived(page.data.plan === 'plus');
+
   function buildItems(level: keyof typeof CATEGORIES_BY_LEVEL) {
     return CATEGORIES_BY_LEVEL[level].map((c) => ({
       name: removeHyphensAndCapitalize(c),
-      href: `/${level.toLowerCase()}/${c}`
+      href: `/${level.toLowerCase()}/${c}`,
+      locked: isPlusCategory(level, c)
     }));
   }
 
@@ -53,22 +56,28 @@
     items: buildItems(level)
   }));
 
-  // Language switcher
-  let currentLocale = $state(getLocale());
+  // Language switcher — backed by the shared localeStore so the nav button
+  // and PreferencesSection always reflect the same value.
+  async function toggleLocale() {
+    const next = localeStore.current === 'en' ? 'nb' : 'en';
+    localeStore.set(next);
 
-  function toggleLocale() {
-    const next = currentLocale === 'en' ? 'nb' : 'en';
-    currentLocale = next;
-    localStorage.setItem('locale', next);
-    setLocale(next);
+    // Persist to profile when the user is logged in (fire-and-forget).
+    if (user) {
+      try {
+        await fetch('/api/profile/language', {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ locale: next })
+        });
+      } catch {
+        console.warn('[Nav] Failed to persist locale to profile');
+      }
+    }
   }
 
   onMount(() => {
-    const saved = localStorage.getItem('locale');
-    if (saved === 'nb' || saved === 'en') {
-      currentLocale = saved;
-      setLocale(saved, { reload: false });
-    }
+    localeStore.init();
   });
 </script>
 
@@ -90,48 +99,49 @@
       type="button"
       onclick={toggleLocale}
       aria-label="Switch language"
-      class="hidden rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 sm:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+      class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
     >
-      {currentLocale === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
+      {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
     </button>
     {#if !user}
       <a
         href="/plus"
-        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
+        class="inline-block rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
       >
         {m.nav_plus_badge()}
       </a>
       <a
         href="/auth/login"
-        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 sm:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="inline-block rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {m.nav_log_in()}
       </a>
     {/if}
-    <Avatar class="acs" size="sm" />
-    <Dropdown simple class="w-56" triggeredBy=".acs">
-      {#if user}
+    {#if user}
+      <Avatar class="acs" size="sm" />
+      <Dropdown simple class="w-56" triggeredBy=".acs">
         <DropdownHeader>
-          <span class="hidden text-xs text-gray-500 sm:inline dark:text-gray-400">
+          {#if displayName}
+            <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">
+              {displayName}
+            </span>
+          {/if}
+          <span
+            class="block text-xs text-gray-500 dark:text-gray-400 {displayName ? 'mt-0.5' : ''}"
+          >
             {user.email}
           </span>
         </DropdownHeader>
         <DropdownDivider />
         <DropdownGroup>
+          <DropdownItem href="/my-profile">{m.nav_my_profile()}</DropdownItem>
           <DropdownItem href="/stats">{m.nav_my_progress()}</DropdownItem>
-          <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
-          <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
           <DropdownItem onclick={logout}>{m.nav_log_out()}</DropdownItem>
         </DropdownGroup>
-      {:else}
-        <DropdownGroup>
-          <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
-          <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
-        </DropdownGroup>
-      {/if}
-    </Dropdown>
+      </Dropdown>
+    {/if}
     <DarkMode class="inline-block hover:text-gray-900 dark:hover:text-white" />
-    <NavHamburger />
+    <NavHamburger class="ms-0" />
   </div>
 
   <NavUl
@@ -149,11 +159,24 @@
 
       <MegaMenu {items} triggeredBy="#mega-trigger-{level}" classes={{ ul: '!gap-x-6' }}>
         {#snippet children({ item })}
-          <a href={item.href} class={linkClass}>
-            {item.name}
+          {@const locked = !isPlus && item.locked}
+          <a
+            href={locked ? '/plus?ref=category-lock' : item.href}
+            class="{linkClass} {locked ? 'opacity-50' : ''}"
+            title={locked ? m.plus_category_locked() : undefined}
+          >
+            {item.name}{locked ? ' 🔒' : ''}
           </a>
         {/snippet}
       </MegaMenu>
     {/each}
+    <NavLi class="cursor-pointer">
+      More<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
+    </NavLi>
+    <Dropdown simple class="w-44">
+      <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
+      <DropdownItem href="/about">{m.nav_about()}</DropdownItem>
+      <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
+    </Dropdown>
   </NavUl>
 </Navbar>
