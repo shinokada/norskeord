@@ -1,7 +1,8 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
   import type { Profile } from '$lib/server/profile';
-  import { setLocale } from '$lib/paraglide/runtime';
+  import { localeStore } from '$lib/localeStore.svelte';
+  import * as m from '$lib/paraglide/messages.js';
 
   let { profile }: { profile: Profile | null } = $props();
 
@@ -13,7 +14,10 @@
 
   // Derive defaults from the profile prop so they stay reactive if the prop changes.
   let targetLevel = $derived(profile?.target_level ?? 'B1');
-  let uiLanguage = $derived(profile?.ui_language ?? 'en');
+  // uiLanguage uses writable $derived so the radio can be changed freely
+  // before saving while staying in sync with the nav button toggle.
+  // Written back to the store on save via applyToLocalStorage().
+  let uiLanguage = $derived.by<'en' | 'nb'>(() => localeStore.current);
   let cardDirection = $derived(profile?.card_direction ?? 'no_en');
   // include_phrases: true → 'phrase', false → 'word'
   let cardType = $derived((profile?.include_phrases ?? false) ? 'phrase' : 'word');
@@ -21,15 +25,17 @@
   function applyToLocalStorage() {
     localStorage.setItem('vocab-flashcard-mode', cardDirection === 'en_no' ? 'engnor' : 'noreng');
     localStorage.setItem('vocab-flashcard-card-type', cardType);
-    localStorage.setItem('locale', uiLanguage);
-    setLocale(uiLanguage, { reload: false });
+    // Write through the store so the nav button updates reactively.
+    localeStore.set(uiLanguage);
   }
 </script>
 
 <section
   class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800"
 >
-  <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">Preferences</h2>
+  <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
+    {m.profile_prefs_heading()}
+  </h2>
 
   <form
     method="POST"
@@ -45,7 +51,7 @@
           saved = true;
           setTimeout(() => (saved = false), 2500);
         } else if (result.type === 'failure') {
-          errorMsg = (result.data?.message as string) ?? 'Failed to save.';
+          errorMsg = (result.data?.message as string) ?? m.profile_error_generic();
         }
         // Don't invalidateAll — it causes the component to re-init from
         // the profile prop mid-flight, dropping the local $state values.
@@ -60,7 +66,7 @@
         for="target_level"
         class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
       >
-        Target level
+        {m.profile_prefs_target_level()}
       </label>
       <select
         id="target_level"
@@ -73,14 +79,14 @@
         {/each}
       </select>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
-        Used for pace forecasting on your progress page.
+        {m.profile_prefs_target_level_hint()}
       </p>
     </div>
 
     <!-- Interface language -->
     <div>
       <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
-        Interface language
+        {m.profile_prefs_ui_language()}
       </p>
       <div class="flex gap-3">
         {#each [{ value: 'en', label: '🇺🇸 English' }, { value: 'nb', label: '🇳🇴 Norsk Bokmål' }] as opt (opt.value)}
@@ -97,15 +103,17 @@
         {/each}
       </div>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
-        Saves your preference and switches the interface immediately.
+        {m.profile_prefs_ui_language_hint()}
       </p>
     </div>
 
     <!-- Card direction -->
     <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Card direction</p>
+      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
+        {m.profile_prefs_card_direction()}
+      </p>
       <div class="flex gap-3">
-        {#each [{ value: 'no_en', label: 'Norwegian → English' }, { value: 'en_no', label: 'English → Norwegian' }] as opt (opt.value)}
+        {#each [{ value: 'no_en', label: m.profile_prefs_card_direction_no_en() }, { value: 'en_no', label: m.profile_prefs_card_direction_en_no() }] as opt (opt.value)}
           <label class="flex cursor-pointer items-center gap-2">
             <input
               type="radio"
@@ -119,15 +127,17 @@
         {/each}
       </div>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
-        Takes effect on the next flashcard deck you open.
+        {m.profile_prefs_card_direction_hint()}
       </p>
     </div>
 
     <!-- Card type -->
     <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Card type</p>
+      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
+        {m.profile_prefs_card_type()}
+      </p>
       <div class="flex gap-3">
-        {#each [{ value: 'word', label: 'Word' }, { value: 'phrase', label: 'Phrase' }] as opt (opt.value)}
+        {#each [{ value: 'word', label: m.profile_prefs_card_type_word() }, { value: 'phrase', label: m.profile_prefs_card_type_phrase() }] as opt (opt.value)}
           <label class="flex cursor-pointer items-center gap-2">
             <input
               type="radio"
@@ -141,7 +151,7 @@
         {/each}
       </div>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
-        Default card type shown when you open a deck.
+        {m.profile_prefs_card_type_hint()}
       </p>
     </div>
 
@@ -154,7 +164,7 @@
       disabled={saving}
       class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
     >
-      {saving ? 'Saving…' : saved ? '✓ Saved' : 'Save changes'}
+      {saving ? m.profile_saving() : saved ? m.profile_saved() : m.profile_save()}
     </button>
   </form>
 </section>

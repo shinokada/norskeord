@@ -2,6 +2,7 @@
   import type { Pathname } from '$app/types';
   import { resolve } from '$app/paths';
   import { locales, localizeHref } from '$lib/paraglide/runtime';
+  import { localeStore } from '$lib/localeStore.svelte';
   import '../app.css';
   import { onMount } from 'svelte';
   import { afterNavigate } from '$app/navigation';
@@ -64,13 +65,17 @@
 
 <Runatics {analyticsId} />
 <MetaTags {...metaTags} />
-<Nav />
 
-<section class="border-b border-gray-300 pb-8 dark:border-gray-600">
-  <div class="mx-auto max-w-7xl px-4 text-center">{@render children()}</div>
-</section>
+{#key localeStore.current}
+  <Nav />
 
-<Footer />
+  <section class="border-b border-gray-300 pb-8 dark:border-gray-600">
+    <div class="mx-auto max-w-7xl px-4 text-center">{@render children()}</div>
+  </section>
+
+  <Footer />
+{/key}
+
 <PwaUpdatePrompt />
 
 <div style="display:none">
