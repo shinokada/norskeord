@@ -16,7 +16,7 @@ import {
 } from '$env/static/private';
 import type { RequestHandler } from './$types';
 
-export const POST: RequestHandler = async ({ locals, request, url }) => {
+export const POST: RequestHandler = async ({ locals, url }) => {
   // 1. Require auth
   if (!locals.user) {
     return json({ error: 'login_required' }, { status: 401 });

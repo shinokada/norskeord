@@ -4,7 +4,7 @@
   import { page } from '$app/state';
   import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
   import SpeakButton from '$lib/SpeakButton.svelte';
-  import { Button } from 'flowbite-svelte';
+  import { Button, Tooltip } from 'flowbite-svelte';
   import type { VocabEntry } from '$lib/types';
   import { saveProgress, loadProgressMap, countDueToday, previewIntervals } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
@@ -87,6 +87,10 @@
   let isTouch = $state(false);
   let touchStartX = 0;
 
+  // Step 5: Detect uttrykk-preview category for banner
+  let isUttrykkPreview = $derived(entries.length > 0 && entries[0].category === 'uttrykk-preview');
+  const UTTRYKK_FULL_COUNT = 310;
+
   // 3-A: plan from layout server data
   let plan = $derived(page.data.plan as 'free' | 'plus');
   let isPlus = $derived(plan === 'plus');
@@ -96,8 +100,11 @@
     progressMap = loadProgressMap();
     dueCount = countDueToday(progressMap);
 
-    // 3-A: if free user has due mode stored, reset it to 'all'
-    if (!isPlus && deckMode === 'due') {
+    // 3-A: Plus users are always in due mode
+    if (isPlus) {
+      deckMode = 'due';
+      localStorage.setItem(LS_DECK_MODE, 'due');
+    } else if (deckMode === 'due') {
       deckMode = 'all';
       localStorage.setItem(LS_DECK_MODE, 'all');
     }
@@ -192,14 +199,6 @@
     if (ct === cardType) return;
     cardType = ct;
     localStorage.setItem(LS_CARD_TYPE, ct);
-  }
-
-  function setDeckMode(dm: DeckMode) {
-    // 3-A: free users cannot switch to due mode
-    if (!isPlus && dm === 'due') return;
-    if (dm === deckMode) return;
-    deckMode = dm;
-    localStorage.setItem(LS_DECK_MODE, dm);
   }
 
   // ── Navigation ───────────────────────────────────────────────────────────────
@@ -417,6 +416,31 @@
     next();
   }
 
+  // ── Interval label helpers ──────────────────────────────────────────────────
+
+  /**
+   * Expand a compact interval string (e.g. "1m", "6m", "10m", "8d", "3h")
+   * into a human-readable tooltip label.
+   */
+  function expandInterval(raw: string): string {
+    if (!raw) return '';
+    const match = raw.match(/^(\d+)([smhd])$/);
+    if (!match) return raw;
+    const n = parseInt(match[1], 10);
+    const unit = match[2];
+    if (unit === 's') return n === 1 ? '1 second' : `${n} seconds`;
+    if (unit === 'm') return n === 1 ? '1 minute' : `${n} minutes`;
+    if (unit === 'h') return n === 1 ? '1 hour' : `${n} hours`;
+    if (unit === 'd') return n === 1 ? '1 day' : `${n} days`;
+    return raw;
+  }
+
+  function intervalTooltip(raw: string | undefined, rating: FSRSRating): string {
+    if (!raw) return '';
+    if (rating === 'again') return 'Review again soon';
+    return `Next review: ${expandInterval(raw)}`;
+  }
+
   // ── Button styles ─────────────────────────────────────────────────────────────
 
   const modeButtonCls =
@@ -445,32 +469,16 @@
       {cardType === 'word' ? m.flashcard_word() : m.flashcard_phrase()}
     </button>
 
-    <!-- 2-B / 3-A: deck mode toggle — Plus only -->
-    {#if isPlus}
-      <button
-        type="button"
-        onclick={() => setDeckMode(deckMode === 'all' ? 'due' : 'all')}
-        class="mb-1 rounded-lg px-3 py-1 text-sm font-semibold transition-colors sm:mb-2 sm:px-4 sm:py-2 {deckMode ===
-        'due'
-          ? 'bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500'
-          : 'border border-gray-300 text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700'}"
-      >
-        {deckMode === 'due'
-          ? m.flashcard_review_due({ count: String(dueCount) })
-          : m.flashcard_all_cards()}
-      </button>
-    {:else}
-      <!-- 3-A: upsell button for free users -->
-      <a
-        href="/plus"
-        class="mb-1 inline-flex items-center gap-1.5 rounded-lg border border-orange-300 px-3 py-1 text-sm font-semibold text-orange-600 transition-colors hover:bg-orange-50 sm:mb-2 sm:px-4 sm:py-2 dark:border-orange-700 dark:text-orange-400 dark:hover:bg-orange-900/20"
-        title={m.flashcard_plus_due_heading()}
-      >
-        <span>⭐</span>
-        {m.flashcard_all_cards()}
-      </a>
-    {/if}
+    <!-- 2-B / 3-A: deck mode toggle removed; Plus users always use due mode -->
   </div>
+
+  <!-- Link to profile preferences -->
+  <a
+    href="/my-profile"
+    class="mt-1 text-xs text-gray-400 hover:text-gray-600 hover:underline dark:text-gray-500 dark:hover:text-gray-300"
+  >
+    {m.flashcard_change_defaults()}
+  </a>
 
   <!-- 3-A: Plus upsell banner for free users (shown below controls) -->
   {#if !isPlus && dueCount > 0}
@@ -518,6 +526,20 @@
       </button>
     {/if}
   </div>
+
+  <!-- Step 5: uttrykk preview banner -->
+  {#if isUttrykkPreview}
+    <div
+      class="mb-3 w-full max-w-lg rounded-xl border border-indigo-200 bg-indigo-50 px-5 py-3 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
+    >
+      <p class="text-sm text-indigo-700 dark:text-indigo-300">
+        {m.plus_uttrykk_preview_banner({ count: String(entries.length) })}
+        <a href="/plus" class="ml-1 font-semibold underline hover:no-underline">
+          {m.plus_uttrykk_preview_cta({ total: String(UTTRYKK_FULL_COUNT) })}
+        </a>
+      </p>
+    </div>
+  {/if}
 
   <!-- Flashcard -->
   <div class="flip-box h-96 w-full bg-transparent md:w-1/2">
@@ -578,60 +600,67 @@
   <!-- FSRS Rating buttons (visible after flip — free for all users) -->
   {#if !completed && current && showCardBack}
     <div class="mt-4 flex flex-wrap justify-center gap-2">
-      <div class="flex flex-col items-center gap-0.5">
-        <button
-          type="button"
-          onclick={() => rate('again')}
-          class="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none dark:bg-red-500 dark:hover:bg-red-600"
-        >
-          {m.flashcard_again()} <kbd class="ml-1 rounded bg-red-800 px-1 text-xs opacity-70">1</kbd>
-        </button>
-        <!-- 2-C: interval preview -->
-        {#if intervals}
-          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.again}</span>
-        {/if}
-      </div>
+      <!-- Again -->
+      <button
+        id="btn-again"
+        type="button"
+        onclick={() => rate('again')}
+        class="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none dark:bg-red-500 dark:hover:bg-red-600"
+      >
+        {m.flashcard_again()} <kbd class="ml-1 rounded bg-red-800 px-1 text-xs opacity-70">1</kbd>
+      </button>
+      {#if intervals}
+        <Tooltip triggeredBy="#btn-again" placement="top">
+          {intervalTooltip(intervals.again, 'again')}
+        </Tooltip>
+      {/if}
 
-      <div class="flex flex-col items-center gap-0.5">
-        <button
-          type="button"
-          onclick={() => rate('hard')}
-          class="rounded-lg bg-orange-500 px-4 py-2 text-sm font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
-        >
-          {m.flashcard_hard()}
-          <kbd class="ml-1 rounded bg-orange-700 px-1 text-xs opacity-70">2</kbd>
-        </button>
-        {#if intervals}
-          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.hard}</span>
-        {/if}
-      </div>
+      <!-- Hard -->
+      <button
+        id="btn-hard"
+        type="button"
+        onclick={() => rate('hard')}
+        class="rounded-lg bg-orange-500 px-4 py-2 text-sm font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+      >
+        {m.flashcard_hard()}
+        <kbd class="ml-1 rounded bg-orange-700 px-1 text-xs opacity-70">2</kbd>
+      </button>
+      {#if intervals}
+        <Tooltip triggeredBy="#btn-hard" placement="top">
+          {intervalTooltip(intervals.hard, 'hard')}
+        </Tooltip>
+      {/if}
 
-      <div class="flex flex-col items-center gap-0.5">
-        <button
-          type="button"
-          onclick={() => rate('good')}
-          class="rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-500 dark:hover:bg-green-600"
-        >
-          {m.flashcard_good()}
-          <kbd class="ml-1 rounded bg-green-800 px-1 text-xs opacity-70">3</kbd>
-        </button>
-        {#if intervals}
-          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.good}</span>
-        {/if}
-      </div>
+      <!-- Good -->
+      <button
+        id="btn-good"
+        type="button"
+        onclick={() => rate('good')}
+        class="rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-500 dark:hover:bg-green-600"
+      >
+        {m.flashcard_good()}
+        <kbd class="ml-1 rounded bg-green-800 px-1 text-xs opacity-70">3</kbd>
+      </button>
+      {#if intervals}
+        <Tooltip triggeredBy="#btn-good" placement="top">
+          {intervalTooltip(intervals.good, 'good')}
+        </Tooltip>
+      {/if}
 
-      <div class="flex flex-col items-center gap-0.5">
-        <button
-          type="button"
-          onclick={() => rate('easy')}
-          class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600"
-        >
-          {m.flashcard_easy()} <kbd class="ml-1 rounded bg-blue-800 px-1 text-xs opacity-70">4</kbd>
-        </button>
-        {#if intervals}
-          <span class="text-xs text-gray-400 dark:text-gray-500">{intervals.easy}</span>
-        {/if}
-      </div>
+      <!-- Easy -->
+      <button
+        id="btn-easy"
+        type="button"
+        onclick={() => rate('easy')}
+        class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600"
+      >
+        {m.flashcard_easy()} <kbd class="ml-1 rounded bg-blue-800 px-1 text-xs opacity-70">4</kbd>
+      </button>
+      {#if intervals}
+        <Tooltip triggeredBy="#btn-easy" placement="top">
+          {intervalTooltip(intervals.easy, 'easy')}
+        </Tooltip>
+      {/if}
     </div>
   {/if}
 
