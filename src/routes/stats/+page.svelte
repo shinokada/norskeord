@@ -14,6 +14,8 @@
   let mounted = $state(false);
 
   // 3-A: plan gate
+  let user = $derived(page.data.user);
+  let displayName = $derived(page.data.displayName as string | null);
   let plan = $derived(page.data.plan as 'free' | 'plus');
   let isPlus = $derived(plan === 'plus');
 
@@ -160,9 +162,15 @@
   <!-- Header -->
   <div class="mb-8 flex items-center justify-between">
     <div>
-      <h1 class="text-3xl font-bold dark:text-white">{m.stats_title()}</h1>
+      <h1 class="text-3xl font-bold dark:text-white">
+        {displayName ? m.stats_title_named({ name: displayName }) : m.stats_title()}
+      </h1>
       <p class="mt-1 text-gray-500 dark:text-gray-400">
-        {m.stats_subtitle()}
+        {isPlus
+          ? m.stats_subtitle_plus()
+          : user
+            ? m.stats_subtitle_free()
+            : m.stats_subtitle_guest()}
       </p>
     </div>
   </div>
@@ -209,7 +217,7 @@
 
     <!-- ── Per-level breakdown ────────────────────────────────────────────────── -->
     <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_level()}</h2>
-    <div class="mb-8 space-y-4">
+    <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
       {#each levelStats as ls (ls.level)}
         <div
           class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800"

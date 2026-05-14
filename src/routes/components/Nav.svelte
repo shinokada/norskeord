@@ -20,10 +20,11 @@
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import ChevronDownOutline from './ChevronDownOutline.svelte';
   import { onMount } from 'svelte';
-  import { getLocale, setLocale } from '$lib/paraglide/runtime';
   import * as m from '$lib/paraglide/messages.js';
+  import { localeStore } from '$lib/localeStore.svelte';
 
   const user = $derived(page.data.user);
+  const displayName = $derived(page.data.displayName as string | null);
 
   async function logout() {
     await fetch('/auth/logout', { method: 'POST' });
@@ -55,22 +56,28 @@
     items: buildItems(level)
   }));
 
-  // Language switcher
-  let currentLocale = $state(getLocale());
+  // Language switcher — backed by the shared localeStore so the nav button
+  // and PreferencesSection always reflect the same value.
+  async function toggleLocale() {
+    const next = localeStore.current === 'en' ? 'nb' : 'en';
+    localeStore.set(next);
 
-  function toggleLocale() {
-    const next = currentLocale === 'en' ? 'nb' : 'en';
-    currentLocale = next;
-    localStorage.setItem('locale', next);
-    setLocale(next);
+    // Persist to profile when the user is logged in (fire-and-forget).
+    if (user) {
+      try {
+        await fetch('/api/profile/language', {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ locale: next })
+        });
+      } catch {
+        console.warn('[Nav] Failed to persist locale to profile');
+      }
+    }
   }
 
   onMount(() => {
-    const saved = localStorage.getItem('locale');
-    if (saved === 'nb' || saved === 'en') {
-      currentLocale = saved;
-      setLocale(saved, { reload: false });
-    }
+    localeStore.init();
   });
 </script>
 
@@ -94,7 +101,7 @@
       aria-label="Switch language"
       class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
     >
-      {currentLocale === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
+      {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
     </button>
     {#if !user}
       <a
@@ -114,7 +121,14 @@
       <Avatar class="acs" size="sm" />
       <Dropdown simple class="w-56" triggeredBy=".acs">
         <DropdownHeader>
-          <span class="inline text-xs text-gray-500 dark:text-gray-300">
+          {#if displayName}
+            <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">
+              {displayName}
+            </span>
+          {/if}
+          <span
+            class="block text-xs text-gray-500 dark:text-gray-400 {displayName ? 'mt-0.5' : ''}"
+          >
             {user.email}
           </span>
         </DropdownHeader>
