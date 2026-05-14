@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Profile } from '$lib/server/profile';
+  import * as m from '$lib/paraglide/messages.js';
 
   let {
     profile,
@@ -34,21 +35,23 @@
 <section
   class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800"
 >
-  <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">Subscription</h2>
+  <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
+    {m.profile_sub_heading()}
+  </h2>
 
   {#if !isPlus}
     <!-- Free user -->
     <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
-          Plan: <span class="font-normal">Free</span>
+          {m.profile_sub_plan_free()}
         </p>
       </div>
       <a
         href="/plus"
         class="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
       >
-        Upgrade to Plus — 49 NOK/month →
+        {m.profile_sub_upgrade_cta()}
       </a>
     </div>
   {:else if status === 'cancelled'}
@@ -57,10 +60,12 @@
       class="rounded-lg border border-orange-200 bg-orange-50 p-4 dark:border-orange-800 dark:bg-orange-900/20"
     >
       <p class="text-sm font-semibold text-orange-700 dark:text-orange-300">
-        Plus (cancels {endsAt || 'at end of billing period'})
+        {endsAt
+          ? m.profile_sub_cancelled_heading({ endsAt })
+          : m.profile_sub_cancelled_heading_no_date()}
       </p>
       <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-        Your Plus access continues until the end of the current period.
+        {m.profile_sub_cancelled_body()}
       </p>
     </div>
     {#if billingPortalUrl}
@@ -71,7 +76,7 @@
           rel="noopener noreferrer"
           class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
         >
-          Reactivate →
+          {m.profile_sub_reactivate()}
         </a>
         <a
           href={billingPortalUrl}
@@ -79,7 +84,7 @@
           rel="noopener noreferrer"
           class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
         >
-          Manage billing →
+          {m.profile_sub_manage_billing()}
         </a>
       </div>
     {/if}
@@ -87,10 +92,13 @@
     <!-- Active Plus (status === 'active' or null pre-Phase-2B) -->
     <div class="space-y-2">
       <p class="text-sm text-gray-700 dark:text-gray-300">
-        Plan: <span class="font-semibold text-indigo-600 dark:text-indigo-400">Plus</span>
+        {m.profile_sub_plan_label()}
+        <span class="font-semibold text-indigo-600 dark:text-indigo-400">
+          {m.profile_sub_plan_plus()}
+        </span>
       </p>
       {#if renewsAt}
-        <p class="text-sm text-gray-500 dark:text-gray-400">Renews: {renewsAt}</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">{m.profile_sub_renews()} {renewsAt}</p>
       {/if}
     </div>
     {#if billingPortalUrl}
@@ -100,18 +108,20 @@
         rel="noopener noreferrer"
         class="mt-4 inline-block rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
-        Manage billing →
+        {m.profile_sub_manage_billing()}
       </a>
     {:else}
       <!-- Phase 2-B: portal URL not yet wired up -->
-      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">Billing management coming soon.</p>
+      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">{m.profile_sub_billing_soon()}</p>
     {/if}
   {/if}
 
   <!-- Plus-only notification toggles -->
   {#if isPlus && status !== 'cancelled'}
     <div class="mt-6 border-t border-gray-100 pt-5 dark:border-gray-700">
-      <p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">Notifications</p>
+      <p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
+        {m.profile_sub_notifications_heading()}
+      </p>
       <div class="space-y-3">
         <label class="flex cursor-pointer items-center gap-3">
           <input
@@ -121,7 +131,8 @@
             class="h-4 w-4 rounded accent-indigo-600"
           />
           <span class="text-sm text-gray-600 dark:text-gray-400">
-            Daily study reminder <span class="text-xs text-gray-400">(coming soon)</span>
+            {m.profile_sub_daily_reminder()}
+            <span class="text-xs text-gray-400">({m.profile_sub_coming_soon()})</span>
           </span>
         </label>
         <label class="flex cursor-pointer items-center gap-3">
@@ -132,15 +143,20 @@
             class="h-4 w-4 rounded accent-indigo-600"
           />
           <span class="text-sm text-gray-600 dark:text-gray-400">
-            Weekly vocabulary email <span class="text-xs text-gray-400">(coming soon)</span>
+            {m.profile_sub_weekly_email()}
+            <span class="text-xs text-gray-400">({m.profile_sub_coming_soon()})</span>
           </span>
         </label>
       </div>
     </div>
   {:else if !isPlus}
     <div class="mt-6 border-t border-gray-100 pt-5 dark:border-gray-700">
-      <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">Notifications</p>
-      <p class="text-xs text-gray-400 dark:text-gray-500">Available with Plus.</p>
+      <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+        {m.profile_sub_notifications_heading()}
+      </p>
+      <p class="text-xs text-gray-400 dark:text-gray-500">
+        {m.profile_sub_notifications_plus_only()}
+      </p>
     </div>
   {/if}
 </section>

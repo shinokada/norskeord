@@ -172,13 +172,10 @@ A recurring email service for Plus users delivering short Norwegian texts with o
 
 **Send schedule:**
 
-| Level   | Days          | Emails/week |
-| ------- | ------------- | ----------- |
-| A1 / A2 | Mon, Wed, Fri | 3           |
-| B1 / B2 | Mon–Fri       | 5           |
-| C1 / C2 | Tue, Thu      | 2           |
-
-Weekends off for all levels. Frequency maps to learning intensity: beginners need recovery time, intermediate learners benefit from daily exposure, advanced learners get fewer but higher-quality emails. When a user changes CEFR level, the new send schedule is shown on the level-change confirmation screen.
+| Level   | Days | Emails/week |
+| ------- | ---- | ----------- |
+| A1 / A2 | Fri  | 1           |
+| B1 / B2 | Fri  | 1           |
 
 **Stack:** Resend (free tier: 3k/month) + Supabase Edge Functions + `pg_cron`. No Mailchimp or Mailgun needed.
 
