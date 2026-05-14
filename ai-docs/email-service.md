@@ -1,6 +1,6 @@
 # Email Service
 
-This document summarises the decisions made about a daily email service for Norske Flashcard, complementing the flashcard and audio experience on the website.
+This document summarises the decisions made about a weekly email service for Norske Flashcard, complementing the flashcard and audio experience on the website.
 
 ---
 
@@ -10,6 +10,8 @@ A recurring email service that supplements flashcard study with short, realistic
 Users can only subscribe one level only.
 
 ### Each email contains
+
+A1/A2 has the same content, B1/B2 has the same content, C1/C2 has the same content.
 
 1. **Short, realistic text** — 5–10 sentences, the core of every email. Natural, not textbook-stilted.
 2. **One language focus** — one grammar point, one pattern, one register shift. Not multiple.
@@ -21,31 +23,23 @@ Users can only subscribe one level only.
 
 ## Send Schedule
 
-Fixed per CEFR level — no user-configurable frequency. Weekends off for everyone.
+Fixed per CEFR level — no user-configurable frequency.
 
-| Level   | Days               | Emails/week |
-| ------- | ------------------ | ----------- |
-| A1 / A2 | Mon, Wed, Fri      | 3           |
-| B1 / B2 | Mon–Fri (weekdays) | 5           |
-| C1 / C2 | Tue, Thu           | 2           |
-
-**Rationale:**
-
-- A1/A2: Beginners need recovery time. 3x/week maintains momentum without overwhelming.
-- B1/B2: The sweet spot for daily study. Motivated learners, rich enough content, consistent exposure.
-- C1/C2: Advanced learners consume Norwegian elsewhere. Fewer, higher-quality emails fit their workflow.
-- Weekends off: Engagement drops on weekends; it also gives a natural content prep window.
+| Level | Days | Emails/week |
+| ----- | ---- | ----------- |
+| A     | Fri  | 1           |
+| B     | Fri  | 1           |
+| C     | Fri  | 1           |
 
 ---
 
 ## Level Changes
 
-When a user moves to a new level (e.g. A2 → B1), their email frequency changes (3x → 5x/week). This is handled silently — no separate notification email — but the **level-change confirmation screen** in the app mentions the new send schedule explicitly.
 User can choose only one level.
 
 Example confirmation copy:
 
-> _You've moved to B1. You'll now receive emails Monday through Friday._
+> _You've moved to B1. You'll now receive emails Friday._
 
 ---
 
@@ -69,12 +63,12 @@ Day-of-week logic:
 
 ```ts
 const SEND_DAYS: Record<string, number[]> = {
-  A1: [1, 3, 5], // Mon, Wed, Fri
-  A2: [1, 3, 5],
-  B1: [1, 2, 3, 4, 5], // Mon–Fri
-  B2: [1, 2, 3, 4, 5],
-  C1: [2, 4], // Tue, Thu
-  C2: [2, 4]
+  A1: [5], // Fri
+  A2: [5],
+  B1: [5],
+  B2: [5],
+  C1: [5],
+  C2: [5]
 };
 ```
 

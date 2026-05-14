@@ -7,10 +7,12 @@ declare global {
       supabase: SupabaseClient;
       user: User | null;
       plan: 'free' | 'plus';
+      displayName: string | null;
     }
     interface PageData {
       user: User | null;
       plan: 'free' | 'plus';
+      displayName: string | null;
     }
     // interface Error {}
     // interface PageState {}

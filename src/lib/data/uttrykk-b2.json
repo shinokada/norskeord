@@ -1,0 +1,3102 @@
+[
+  {
+    "norsk": "Toppen av lykke",
+    "lemma": "Toppen av lykke",
+    "english": "the peak of happiness, absolute bliss",
+    "example": "Den dagen jeg fikk datteren min i armene for første gang, var toppen av lykke.",
+    "example_english": "The day I held my daughter in my arms for the first time was the peak of happiness.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å koble av",
+    "lemma": "å koble av",
+    "english": "to unwind, to switch off, to relax",
+    "example": "Etter en lang arbeidsuke er det viktig å koble av og gjøre noe man liker.",
+    "example_english": "After a long working week it is important to unwind and do something you enjoy.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "balsam for sjelen",
+    "lemma": "balsam for sjelen",
+    "english": "balm for the soul, soothing comfort",
+    "example": "En rolig spasertur i skogen er ren balsam for sjelen etter en stressende dag.",
+    "example_english": "A quiet walk in the forest is pure balm for the soul after a stressful day.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sette pris på",
+    "lemma": "å sette pris på",
+    "english": "to appreciate, to value",
+    "example": "Jeg setter stor pris på at du tok deg tid til å hjelpe meg med prosjektet.",
+    "example_english": "I really appreciate that you took the time to help me with the project.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta noe for gitt",
+    "lemma": "å ta noe for gitt",
+    "english": "to take something for granted",
+    "example": "Vi tar alt for ofte friheten og helsen vår for gitt, inntil vi mister dem.",
+    "example_english": "We far too often take our freedom and health for granted, until we lose them.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det er ingen tvil om",
+    "lemma": "Det er ingen tvil om",
+    "english": "there is no doubt about, it is undeniable",
+    "example": "Det er ingen tvil om at klimaendringene krever handling fra alle land i verden.",
+    "example_english": "There is no doubt that climate change requires action from every country in the world.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "frisk og rask",
+    "lemma": "frisk og rask",
+    "english": "fit and well, in good health",
+    "example": "Etter tre ukers sykeleie var hun endelig frisk og rask og klar for jobb igjen.",
+    "example_english": "After three weeks in bed she was finally fit and well and ready for work again.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "kroppen sier fra",
+    "lemma": "kroppen sier fra",
+    "english": "the body protests, the body gives a signal",
+    "example": "Kroppen sier fra når du driver med for mye og sover for lite over tid.",
+    "example_english": "The body gives signals when you overdo things and sleep too little over time.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "nå og da",
+    "lemma": "nå og da",
+    "english": "now and then, from time to time",
+    "example": "Nå og da er det godt å bryte rutinen og gjøre noe spontant og uventet.",
+    "example_english": "Now and then it is good to break the routine and do something spontaneous and unexpected.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å regne med",
+    "lemma": "å regne med",
+    "english": "to count on, to expect, to take into account",
+    "example": "Du kan alltid regne med at hun holder sitt ord, uansett hva som skjer.",
+    "example_english": "You can always count on her to keep her word, no matter what happens.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Sist, men ikke minst",
+    "lemma": "Sist, men ikke minst",
+    "english": "last but not least",
+    "example": "Sist, men ikke minst, vil jeg takke alle frivillige som bidro til at arrangementet ble vellykket.",
+    "example_english": "Last but not least, I want to thank all the volunteers who contributed to making the event a success.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha høy grad av noe",
+    "lemma": "å ha høy grad av noe",
+    "english": "to have a high degree of something",
+    "example": "Yrket krever at man har høy grad av nøyaktighet og evne til å konsentrere seg.",
+    "example_english": "The profession requires that one has a high degree of accuracy and the ability to concentrate.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være klar over",
+    "lemma": "å være klar over",
+    "english": "to be aware of, to be conscious of",
+    "example": "Politikerne er klar over at reformene vil møte motstand i store deler av befolkningen.",
+    "example_english": "The politicians are aware that the reforms will meet resistance in large parts of the population.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å havne på førsteplass",
+    "lemma": "å havne på førsteplass",
+    "english": "to end up in first place, to come first",
+    "example": "Ingen hadde trodd at det lille lokallaget skulle havne på førsteplass i turneringen.",
+    "example_english": "Nobody had believed that the small local team would end up in first place in the tournament.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ideelt sett",
+    "lemma": "ideelt sett",
+    "english": "ideally, in an ideal world",
+    "example": "Ideelt sett burde alle barn ha tilgang til høykvalitets utdanning, uavhengig av bakgrunn.",
+    "example_english": "Ideally, all children should have access to high-quality education, regardless of background.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det er en tankevekker",
+    "lemma": "Det er en tankevekker",
+    "english": "it is food for thought, it makes you think",
+    "example": "At over halvparten av maten vi produserer kastes hvert år, er virkelig en tankevekker.",
+    "example_english": "That over half of the food we produce is thrown away every year is truly food for thought.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være takknemlig for",
+    "lemma": "å være takknemlig for",
+    "english": "to be grateful for, to be thankful for",
+    "example": "Han er takknemlig for all støtten han fikk fra familien under den vanskelige perioden.",
+    "example_english": "He is grateful for all the support he received from his family during the difficult period.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha godt av noe",
+    "lemma": "å ha godt av noe",
+    "english": "to benefit from something, to do one good",
+    "example": "Det ville ha godt av deg å ta en lengre pause og tenke gjennom situasjonen nøye.",
+    "example_english": "It would do you good to take a longer break and think through the situation carefully.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være motstander av",
+    "lemma": "å være motstander av",
+    "english": "to be opposed to, to be against",
+    "example": "Hun er en sterk motstander av atomkraft og har demonstrert mot det i mange år.",
+    "example_english": "She is a strong opponent of nuclear power and has demonstrated against it for many years.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå altfor langt",
+    "lemma": "å gå altfor langt",
+    "english": "to go too far, to cross the line",
+    "example": "Kritikken var berettiget i starten, men journalisten gikk altfor langt i sine påstander.",
+    "example_english": "The criticism was justified at first, but the journalist went too far in his claims.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å benytte seg av",
+    "lemma": "å benytte seg av",
+    "english": "to make use of, to take advantage of, to utilize",
+    "example": "Alle studenter bør benytte seg av de gratis veiledingstjenestene som universitetet tilbyr.",
+    "example_english": "All students should make use of the free counselling services offered by the university.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det er utenkelig",
+    "lemma": "Det er utenkelig",
+    "english": "it is unthinkable, it is inconceivable",
+    "example": "Det er utenkelig at et demokratisk samfunn skulle tillate slik behandling av sine innbyggere.",
+    "example_english": "It is unthinkable that a democratic society would allow such treatment of its citizens.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få lønna til å strekke til",
+    "lemma": "å få lønna til å strekke til",
+    "english": "to make one's wage stretch, to make ends meet",
+    "example": "Med de høye prisene er det krevende å få lønna til å strekke til for barnefamilier.",
+    "example_english": "With the high prices it is challenging to make the wage stretch for families with children.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i trygge omgivelser",
+    "lemma": "i trygge omgivelser",
+    "english": "in safe surroundings, in a secure environment",
+    "example": "Barn lærer best og trives best i trygge omgivelser der de føler seg sett og hørt.",
+    "example_english": "Children learn best and thrive best in safe surroundings where they feel seen and heard.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha krav på noe",
+    "lemma": "å ha krav på noe",
+    "english": "to be entitled to something, to have a right to",
+    "example": "Som ansatt i over to år har du krav på fem ukers betalt ferie i henhold til loven.",
+    "example_english": "As an employee for over two years you are entitled to five weeks of paid holiday under the law.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ende opp med",
+    "lemma": "å ende opp med",
+    "english": "to end up with, to wind up",
+    "example": "Dersom vi ikke gjør noe nå, kan vi ende opp med uopprettelige skader på miljøet.",
+    "example_english": "If we do not act now, we may end up with irreparable damage to the environment.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "prisen å betale",
+    "lemma": "prisen å betale",
+    "english": "the price to pay, the cost",
+    "example": "Konstant jag etter suksess kan være prisen å betale for å forsømme relasjoner og helse.",
+    "example_english": "A constant chase for success can be the price to pay for neglecting relationships and health.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det stikk motsatte",
+    "lemma": "det stikk motsatte",
+    "english": "the exact opposite, the very opposite",
+    "example": "Det hun sa i intervjuet var det stikk motsatte av hva hun hadde lovet velgerne sine.",
+    "example_english": "What she said in the interview was the exact opposite of what she had promised her voters.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å prestere maksimalt",
+    "lemma": "å prestere maksimalt",
+    "english": "to perform at one's best, to give maximum performance",
+    "example": "Toppidrettsutøvere trener metodisk for å prestere maksimalt på de viktigste konkurransene.",
+    "example_english": "Elite athletes train methodically to perform at their best at the most important competitions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "frie tøyler",
+    "lemma": "frie tøyler",
+    "english": "free rein, complete freedom to act",
+    "example": "Sjefen ga det kreative teamet frie tøyler til å utvikle konseptet på sin egen måte.",
+    "example_english": "The boss gave the creative team free rein to develop the concept in their own way.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være oppkalt etter",
+    "lemma": "å være oppkalt etter",
+    "english": "to be named after",
+    "example": "Biblioteket er oppkalt etter den kjente forfatteren som vokste opp i denne byen.",
+    "example_english": "The library is named after the famous author who grew up in this city.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stille høye krav",
+    "lemma": "å stille høye krav",
+    "english": "to set high standards, to demand a great deal",
+    "example": "En god leder stiller høye krav til seg selv før han stiller dem til andre.",
+    "example_english": "A good leader sets high standards for himself before setting them for others.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "rett og slett",
+    "lemma": "rett og slett",
+    "english": "simply, just, plain and simple",
+    "example": "Det er rett og slett ikke akseptabelt å behandle kolleger på en nedlatende måte.",
+    "example_english": "It is simply not acceptable to treat colleagues in a condescending way.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å henge med venner",
+    "lemma": "å henge med venner",
+    "english": "to hang out with friends",
+    "example": "I helgene liker hun best å henge med venner og slappe av uten noe spesielt program.",
+    "example_english": "At weekends she most likes to hang out with friends and relax without any specific agenda.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det er en balansegang",
+    "lemma": "Det er en balansegang",
+    "english": "it is a balancing act, it requires balance",
+    "example": "Det er en konstant balansegang mellom å gi barna frihet og å beskytte dem fra fare.",
+    "example_english": "It is a constant balancing act between giving children freedom and protecting them from harm.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli motivert av",
+    "lemma": "å bli motivert av",
+    "english": "to be motivated by, to be driven by",
+    "example": "Hun blir motivert av utfordringer og gir alltid sitt beste når det virkelig teller.",
+    "example_english": "She is motivated by challenges and always gives her best when it really counts.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å satse på",
+    "lemma": "å satse på",
+    "english": "to invest in, to bet on, to focus on",
+    "example": "Regjeringen har bestemt seg for å satse på fornybar energi i de kommende årene.",
+    "example_english": "The government has decided to invest in renewable energy in the coming years.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stikke seg ut",
+    "lemma": "å stikke seg ut",
+    "english": "to stand out, to distinguish oneself",
+    "example": "For å lykkes i et konkurransepreget marked må bedriften stikke seg ut fra mengden.",
+    "example_english": "To succeed in a competitive market the company must stand out from the crowd.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å støtte opp om",
+    "lemma": "å støtte opp om",
+    "english": "to support, to back up, to rally behind",
+    "example": "Det er viktig at skolesystemet støtter opp om elevenes individuelle behov og talenter.",
+    "example_english": "It is important that the school system supports pupils' individual needs and talents.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å heie på",
+    "lemma": "å heie på",
+    "english": "to cheer on, to root for",
+    "example": "Hele nabolaget stod langs veien og heiet på maratonløperne da de passerte.",
+    "example_english": "The whole neighbourhood stood along the road cheering on the marathon runners as they passed.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i takt med",
+    "lemma": "i takt med",
+    "english": "in step with, in line with, keeping pace with",
+    "example": "Lønningene har ikke økt i takt med de stadig stigende levekostnadene de siste årene.",
+    "example_english": "Wages have not increased in step with the ever-rising cost of living in recent years.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å lønne seg",
+    "lemma": "å lønne seg",
+    "english": "to pay off, to be worth it",
+    "example": "Det lønner seg alltid å investere tid i å lære seg nye ferdigheter i løpet av karrieren.",
+    "example_english": "It always pays off to invest time in learning new skills throughout one's career.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å følge med på",
+    "lemma": "å følge med på",
+    "english": "to keep track of, to follow, to pay attention to",
+    "example": "Det er krevende å følge med på alle endringene i regelverket innen denne bransjen.",
+    "example_english": "It is demanding to keep track of all the regulatory changes in this industry.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i motsetning til",
+    "lemma": "i motsetning til",
+    "english": "in contrast to, unlike, as opposed to",
+    "example": "I motsetning til søsteren sin foretrekker hun å jobbe alene fremfor i team.",
+    "example_english": "In contrast to her sister, she prefers to work alone rather than in a team.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "som skapt for",
+    "lemma": "som skapt for",
+    "english": "made for, perfectly suited to",
+    "example": "Med sin tålmodighet og sitt engasjement er han som skapt for læreryrket.",
+    "example_english": "With his patience and commitment he is made for the teaching profession.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å skyte fart",
+    "lemma": "å skyte fart",
+    "english": "to pick up speed, to accelerate, to gain momentum",
+    "example": "Etter den første nølende fasen begynte prosjektet å skyte fart og levere resultater.",
+    "example_english": "After the initial hesitant phase the project began to pick up speed and deliver results.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å komme til bunns i",
+    "lemma": "å komme til bunns i",
+    "english": "to get to the bottom of, to fully understand",
+    "example": "Granskingskommisjonen ble nedsatt for å komme til bunns i årsaken til ulykken.",
+    "example_english": "The inquiry commission was set up to get to the bottom of the cause of the accident.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være skrudd sammen",
+    "lemma": "å være skrudd sammen",
+    "english": "to be put together, to be wired, to handle things well",
+    "example": "Hun er godt skrudd sammen og takler press og kritikk med imponerende ro.",
+    "example_english": "She is well put together and handles pressure and criticism with impressive composure.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å skåre høyt",
+    "lemma": "å skåre høyt",
+    "english": "to score high, to rank highly",
+    "example": "Norge skårer høyt på internasjonale målinger av livskvalitet og innbyggernes tilfredshet.",
+    "example_english": "Norway scores high on international measurements of quality of life and citizens' satisfaction.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å komme til uttrykk",
+    "lemma": "å komme til uttrykk",
+    "english": "to be expressed, to manifest, to find expression",
+    "example": "Kulturforskjellene kan komme til uttrykk i ulike forventninger til arbeidsmiljøet.",
+    "example_english": "Cultural differences can be expressed in different expectations about the work environment.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta stilling til",
+    "lemma": "å ta stilling til",
+    "english": "to take a stance on, to address, to decide about",
+    "example": "Politikerne må til slutt ta stilling til de vanskelige etiske spørsmålene rundt teknologien.",
+    "example_english": "Politicians must ultimately take a stance on the difficult ethical questions surrounding the technology.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gi utslag i",
+    "lemma": "å gi utslag i",
+    "english": "to result in, to manifest as, to show up as",
+    "example": "Økt stress over lengre tid kan gi utslag i søvnproblemer og konsentrasjonsvansker.",
+    "example_english": "Increased stress over a longer period can result in sleep problems and concentration difficulties.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å tilbringe tid med",
+    "lemma": "å tilbringe tid med",
+    "english": "to spend time with",
+    "example": "Studier viser at barn som tilbringer tid med foreldrene, trives bedre på skolen.",
+    "example_english": "Studies show that children who spend time with their parents do better at school.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få mulighet til",
+    "lemma": "å få mulighet til",
+    "english": "to get the opportunity to, to have the chance to",
+    "example": "Alle ansatte bør få mulighet til faglig utvikling og kompetanseheving i løpet av karrieren.",
+    "example_english": "All employees should get the opportunity for professional development and skills enhancement during their career.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å føle seg trygg med",
+    "lemma": "å føle seg trygg med",
+    "english": "to feel safe with, to feel comfortable with",
+    "example": "Det er avgjørende at pasienter føler seg trygge med legen sin og kan snakke åpent.",
+    "example_english": "It is crucial that patients feel safe with their doctor and can speak openly.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være et skolelys",
+    "lemma": "å være et skolelys",
+    "english": "to be academically gifted, to be a bright student",
+    "example": "Han var ikke akkurat et skolelys, men hans praktiske evner og kreativitet var enestående.",
+    "example_english": "He was not exactly an academic star, but his practical skills and creativity were exceptional.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "midt på treet",
+    "lemma": "midt på treet",
+    "english": "mediocre, average, run-of-the-mill",
+    "example": "Resultatene var midt på treet – verken spesielt gode eller spesielt dårlige, bare middelmådige.",
+    "example_english": "The results were mediocre – neither particularly good nor particularly bad, just average.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "lettere sagt enn gjort",
+    "lemma": "lettere sagt enn gjort",
+    "english": "easier said than done",
+    "example": "Å bryte dårlige vaner er lettere sagt enn gjort, og krever tålmodighet over tid.",
+    "example_english": "Breaking bad habits is easier said than done and requires patience over time.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "bli oppmuntret",
+    "lemma": "bli oppmuntret",
+    "english": "to be encouraged, to receive encouragement",
+    "example": "Mange unge kunstnere trenger å bli oppmuntret av lærere og familie for å tørre å satse.",
+    "example_english": "Many young artists need to be encouraged by teachers and family to dare to pursue their ambitions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gi opp",
+    "lemma": "å gi opp",
+    "english": "to give up, to quit",
+    "example": "Gi aldri opp drømmene dine, selv om veien dit er lang og full av hindringer.",
+    "example_english": "Never give up on your dreams, even if the road there is long and full of obstacles.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å henge sammen",
+    "lemma": "å henge sammen",
+    "english": "to hang together, to be connected, to make sense",
+    "example": "Rapporten henger ikke helt sammen – argumentene er motstridende og konklusjonen er uklar.",
+    "example_english": "The report does not quite hang together – the arguments are contradictory and the conclusion is unclear.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få selvtillit",
+    "lemma": "å få selvtillit",
+    "english": "to gain self-confidence, to build confidence",
+    "example": "Å mestre nye ferdigheter er en fin måte å få selvtillit på, uansett alder.",
+    "example_english": "Mastering new skills is a great way to gain self-confidence, regardless of age.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli skuffet",
+    "lemma": "å bli skuffet",
+    "english": "to be disappointed",
+    "example": "Publikum ble skuffet da konserten ble avlyst med bare noen timers varsel.",
+    "example_english": "The audience was disappointed when the concert was cancelled with only a few hours' notice.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha mye på hjertet",
+    "lemma": "å ha mye på hjertet",
+    "english": "to have a lot on one's mind, to have much to say",
+    "example": "Etter møtet var det tydelig at mange medarbeidere hadde mye på hjertet om arbeidsforholdene.",
+    "example_english": "After the meeting it was clear that many employees had a lot on their minds about working conditions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være oppdatert",
+    "lemma": "å være oppdatert",
+    "english": "to be up to date, to be well-informed",
+    "example": "Det er viktig å være oppdatert på de nyeste forskningsresultatene innen sitt fagfelt.",
+    "example_english": "It is important to be up to date on the latest research findings within one's field.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å smile fra øre til øre",
+    "lemma": "å smile fra øre til øre",
+    "english": "to beam from ear to ear, to grin broadly",
+    "example": "Da hun fikk vite at hun hadde bestått eksamen, smilte hun fra øre til øre av glede.",
+    "example_english": "When she found out she had passed the exam, she beamed from ear to ear with joy.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å forsørge seg selv",
+    "lemma": "å forsørge seg selv",
+    "english": "to support oneself, to be self-sufficient",
+    "example": "Etter endt utdanning ønsket han å forsørge seg selv og bli uavhengig av foreldrene.",
+    "example_english": "After finishing his education he wanted to support himself and become independent of his parents.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det står respekt av",
+    "lemma": "Det står respekt av",
+    "english": "it commands respect, it is admirable",
+    "example": "Det står respekt av måten hun håndterte krisen på – rolig, besluttsom og rettferdig.",
+    "example_english": "It commands respect the way she handled the crisis – calmly, decisively and fairly.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å hvile på laurbærene",
+    "lemma": "å hvile på laurbærene",
+    "english": "to rest on one's laurels, to be complacent after success",
+    "example": "Etter den store seieren er det lett å hvile på laurbærene, men det er en farlig felle.",
+    "example_english": "After the great victory it is easy to rest on one's laurels, but that is a dangerous trap.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å nyte tilværelsen",
+    "lemma": "å nyte tilværelsen",
+    "english": "to enjoy life, to savour one's existence",
+    "example": "I pensjonstilværelsen har han endelig funnet tid til å nyte tilværelsen uten stress.",
+    "example_english": "In retirement he has finally found time to enjoy life without stress.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sette seg godt til rette",
+    "lemma": "å sette seg godt til rette",
+    "english": "to make oneself comfortable, to settle in",
+    "example": "Gjestene satte seg godt til rette i de myke sofaene mens vertskapet forberedte maten.",
+    "example_english": "The guests made themselves comfortable in the soft sofas while the hosts prepared the food.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bidra til",
+    "lemma": "å bidra til",
+    "english": "to contribute to, to help bring about",
+    "example": "Alle kan bidra til et bedre miljø gjennom bevisste valg i hverdagen.",
+    "example_english": "Everyone can contribute to a better environment through conscious choices in daily life.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å henvende seg til",
+    "lemma": "å henvende seg til",
+    "english": "to address, to turn to, to contact",
+    "example": "Dersom du har spørsmål, kan du henvende seg til resepsjonen i første etasje.",
+    "example_english": "If you have questions, you can turn to the reception on the first floor.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det haster",
+    "lemma": "det haster",
+    "english": "it is urgent, there is no time to lose",
+    "example": "Det haster å finne løsninger på klimakrisen før skadene blir irreversible.",
+    "example_english": "It is urgent to find solutions to the climate crisis before the damage becomes irreversible.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å følge opp",
+    "lemma": "å følge opp",
+    "english": "to follow up, to follow through, to monitor",
+    "example": "Ledelsen lovet å følge opp de ansattes bekymringer innen utgangen av måneden.",
+    "example_english": "Management promised to follow up on employees' concerns by the end of the month.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være opplyst om",
+    "lemma": "å være opplyst om",
+    "english": "to be informed about, to be aware of",
+    "example": "Pasientene har rett til å være opplyst om alle behandlingsalternativene som finnes.",
+    "example_english": "Patients have the right to be informed about all the treatment options available.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være bevisst på",
+    "lemma": "å være bevisst på",
+    "english": "to be conscious of, to be mindful of",
+    "example": "Det er viktig å være bevisst på hvilken effekt ordvalgene våre har på andre mennesker.",
+    "example_english": "It is important to be conscious of the effect our choice of words has on other people.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "som følge av",
+    "lemma": "som følge av",
+    "english": "as a result of, as a consequence of",
+    "example": "Som følge av pandemien ble mange bedrifter tvunget til å omstille seg raskt og drastisk.",
+    "example_english": "As a result of the pandemic many businesses were forced to adapt quickly and drastically.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha oversikt over",
+    "lemma": "å ha oversikt over",
+    "english": "to have an overview of, to have a grasp of",
+    "example": "En god prosjektleder må alltid ha oversikt over alle oppgaver og tidsfrister.",
+    "example_english": "A good project manager must always have an overview of all tasks and deadlines.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sitte løst",
+    "lemma": "å sitte løst",
+    "english": "to sit loosely, to be uncertain, to be at risk",
+    "example": "Etter den negative rapporten sitter sjefens stilling ganske løst i organisasjonen.",
+    "example_english": "After the negative report the boss's position sits rather loosely within the organisation.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "alt mellom himmel og jord",
+    "lemma": "alt mellom himmel og jord",
+    "english": "everything under the sun, every conceivable thing",
+    "example": "De har prøvd alt mellom himmel og jord for å finne en løsning uten hell.",
+    "example_english": "They have tried everything under the sun to find a solution without success.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være i stand til",
+    "lemma": "å være i stand til",
+    "english": "to be capable of, to be able to",
+    "example": "Med riktig trening og motivasjon er mennesket i stand til utrolige prestasjoner.",
+    "example_english": "With proper training and motivation a person is capable of incredible achievements.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å tie noe i hjel",
+    "lemma": "å tie noe i hjel",
+    "english": "to hush something up, to suppress by silence",
+    "example": "Myndighetene forsøkte å tie skandalen i hjel, men pressen avdekket sannheten.",
+    "example_english": "The authorities tried to hush up the scandal, but the press uncovered the truth.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i likhet med",
+    "lemma": "i likhet med",
+    "english": "like, similarly to, in common with",
+    "example": "I likhet med mange nordmenn tilbringer hun helst ferien i den norske naturen.",
+    "example_english": "Like many Norwegians, she prefers to spend her holiday in Norwegian nature.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli rammet av",
+    "lemma": "å bli rammet av",
+    "english": "to be hit by, to be struck by, to be affected by",
+    "example": "Hele regionen ble rammet av kraftige flommer etter de voldsomme nedbørsmengdene.",
+    "example_english": "The entire region was hit by severe floods after the tremendous amounts of rainfall.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stenge ned",
+    "lemma": "å stenge ned",
+    "english": "to shut down, to close down",
+    "example": "Under pandemien ble restauranter og kulturarenaer beordret å stenge ned over natten.",
+    "example_english": "During the pandemic restaurants and cultural venues were ordered to shut down overnight.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i fredstid",
+    "lemma": "i fredstid",
+    "english": "in peacetime, during times of peace",
+    "example": "Ressursene som brukes på militæret i fredstid, kunne alternativt gå til skole og helse.",
+    "example_english": "The resources spent on the military in peacetime could alternatively go to schools and health.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli hyllet for",
+    "lemma": "å bli hyllet for",
+    "english": "to be acclaimed for, to be praised for",
+    "example": "Filmskaperen ble hyllet for sitt modige og originale blikk på norsk samtidshistorie.",
+    "example_english": "The filmmaker was acclaimed for his courageous and original perspective on contemporary Norwegian history.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ikke nødvendigvis",
+    "lemma": "ikke nødvendigvis",
+    "english": "not necessarily",
+    "example": "At noe er dyrt, betyr ikke nødvendigvis at det er av bedre kvalitet enn billige alternativer.",
+    "example_english": "The fact that something is expensive does not necessarily mean it is of better quality than cheaper alternatives.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å glede seg over",
+    "lemma": "å glede seg over",
+    "english": "to be pleased about, to take pleasure in",
+    "example": "Det er lett å glemme å glede seg over de små tingene i en travel hverdag.",
+    "example_english": "It is easy to forget to take pleasure in the small things in a busy everyday life.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det er på høy tid",
+    "lemma": "det er på høy tid",
+    "english": "it is high time, it is about time",
+    "example": "Det er på høy tid at politikerne tar ansvar og gjennomfører de nødvendige reformene.",
+    "example_english": "It is high time that politicians took responsibility and implemented the necessary reforms.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være fortvilet over",
+    "lemma": "å være fortvilet over",
+    "english": "to be in despair over, to be distraught about",
+    "example": "Hun var fortvilet over nyheten om at sykdommen ikke kunne kureres med kjent behandling.",
+    "example_english": "She was in despair over the news that the disease could not be cured with known treatment.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta mot til seg",
+    "lemma": "å ta mot til seg",
+    "english": "to pluck up courage, to summon one's courage",
+    "example": "Han tok endelig mot til seg og ba om økt lønn etter tre år uten lønnsforhandlinger.",
+    "example_english": "He finally plucked up courage and asked for a pay rise after three years without salary negotiations.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sette livet på vent",
+    "lemma": "å sette livet på vent",
+    "english": "to put one's life on hold",
+    "example": "Mange pårørende setter livet på vent for å pleie syke familiemedlemmer over lang tid.",
+    "example_english": "Many carers put their lives on hold to care for sick family members over a long period.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være opptatt av",
+    "lemma": "å være opptatt av",
+    "english": "to be preoccupied with, to care about, to be focused on",
+    "example": "Hun er svært opptatt av bærekraft og stiller strenge krav til leverandørene sine.",
+    "example_english": "She is very focused on sustainability and sets strict requirements for her suppliers.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ved hjelp av",
+    "lemma": "ved hjelp av",
+    "english": "with the help of, by means of",
+    "example": "Ved hjelp av moderne teknologi kan legene nå stille diagnoser raskere og mer presist.",
+    "example_english": "With the help of modern technology doctors can now make diagnoses more quickly and precisely.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det er delte meninger om",
+    "lemma": "Det er delte meninger om",
+    "english": "there are divided opinions on, people disagree about",
+    "example": "Det er delte meninger om hvorvidt arbeidstiden bør reduseres til fire dager i uken.",
+    "example_english": "There are divided opinions on whether working hours should be reduced to four days a week.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å jukse seg til",
+    "lemma": "å jukse seg til",
+    "english": "to cheat one's way to, to obtain by cheating",
+    "example": "Han jukset seg til karakterene og fikk etter hvert en jobb han ikke var kvalifisert for.",
+    "example_english": "He cheated his way to his grades and eventually got a job he was not qualified for.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å føre med seg",
+    "lemma": "å føre med seg",
+    "english": "to bring about, to lead to, to entail",
+    "example": "Digitalisering fører med seg mange fordeler, men også nye utfordringer for arbeidslivet.",
+    "example_english": "Digitalisation brings about many advantages, but also new challenges for working life.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stå i fare for",
+    "lemma": "å stå i fare for",
+    "english": "to be at risk of, to be in danger of",
+    "example": "Arten står i fare for å utryddes dersom ikke habitatet beskyttes umiddelbart.",
+    "example_english": "The species is at risk of extinction if its habitat is not protected immediately.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "med unntak av",
+    "lemma": "med unntak av",
+    "english": "with the exception of, except for",
+    "example": "Med unntak av ett enkelt land stemte hele FN-komiteen for resolusjonen.",
+    "example_english": "With the exception of one single country, the entire UN committee voted for the resolution.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stå i arbeid",
+    "lemma": "å stå i arbeid",
+    "english": "to be in employment, to be working",
+    "example": "Det er et politisk mål at flest mulig skal stå i arbeid og bidra til fellesskapet.",
+    "example_english": "It is a political goal that as many people as possible should be in employment and contribute to the community.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bidra til fellesskapet",
+    "lemma": "å bidra til fellesskapet",
+    "english": "to contribute to the community, to give back to society",
+    "example": "Frivillig arbeid er en fin måte å bidra til fellesskapet og møte nye mennesker på.",
+    "example_english": "Voluntary work is a great way to contribute to the community and meet new people.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være i ferd med",
+    "lemma": "å være i ferd med",
+    "english": "to be in the process of, to be about to",
+    "example": "Selskapet er i ferd med å gjennomføre sin største restrukturering på over et tiår.",
+    "example_english": "The company is in the process of carrying out its largest restructuring in over a decade.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å betale prisen",
+    "lemma": "å betale prisen",
+    "english": "to pay the price, to face the consequences",
+    "example": "De som ignorerte advarslene, måtte til slutt betale prisen for sin likegyldighet.",
+    "example_english": "Those who ignored the warnings ultimately had to pay the price for their indifference.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få opp øynene",
+    "lemma": "å få opp øynene",
+    "english": "to have one's eyes opened, to realize",
+    "example": "Reisen til fattige land fikk ham virkelig opp øynene for sine egne privilegier.",
+    "example_english": "The trip to poor countries really opened his eyes to his own privileges.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en dråpe i havet",
+    "lemma": "en dråpe i havet",
+    "english": "a drop in the ocean, a negligible amount",
+    "example": "Donasjonene var et godt tegn, men i forhold til behovet var de bare en dråpe i havet.",
+    "example_english": "The donations were a good sign, but in relation to the need they were just a drop in the ocean.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det skal ikke så mye til",
+    "lemma": "det skal ikke så mye til",
+    "english": "it does not take much, a little goes a long way",
+    "example": "Det skal ikke så mye til for å gjøre en stor forskjell i andres liv hver dag.",
+    "example_english": "It does not take much to make a big difference in other people's lives every day.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å skjerpe seg",
+    "lemma": "å skjerpe seg",
+    "english": "to pull oneself together, to sharpen up",
+    "example": "Treneren sa klart fra at spillerne måtte skjerpe seg dersom de ville beholde plassen.",
+    "example_english": "The coach made it clear that the players needed to sharpen up if they wanted to keep their place.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta seg sammen",
+    "lemma": "å ta seg sammen",
+    "english": "to pull oneself together, to get a grip",
+    "example": "Etter det tunge tapet bestemte hun seg for å ta seg sammen og fortsette kampen.",
+    "example_english": "After the heavy defeat she decided to pull herself together and continue the fight.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være innstilt på",
+    "lemma": "å være innstilt på",
+    "english": "to be prepared for, to be ready for, to expect",
+    "example": "Du bør være innstilt på at prosessen kan ta lengre tid enn du opprinnelig hadde håpet.",
+    "example_english": "You should be prepared for the process to take longer than you had originally hoped.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i verste fall",
+    "lemma": "i verste fall",
+    "english": "in the worst case, at worst",
+    "example": "I verste fall kan de manglende sikkerhetstiltakene føre til alvorlige ulykker på anlegget.",
+    "example_english": "In the worst case the missing safety measures could lead to serious accidents at the facility.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det provoserer meg at",
+    "lemma": "Det provoserer meg at",
+    "english": "it provokes me that, it angers me that",
+    "example": "Det provoserer meg at ressurssterke grupper konsekvent slipper unna med lovbrudd uten konsekvenser.",
+    "example_english": "It angers me that resourceful groups consistently get away with breaking the law without consequences.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det spørs hvor dypt det stikker",
+    "lemma": "det spørs hvor dypt det stikker",
+    "english": "the question is how deep it cuts, how serious it really is",
+    "example": "Han sa han ikke brydde seg om kritikken, men det spørs hvor dypt det egentlig stakk.",
+    "example_english": "He said he did not care about the criticism, but the question is how deep it really cut.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "når det kommer til stykket",
+    "lemma": "når det kommer til stykket",
+    "english": "when it comes down to it, when push comes to shove",
+    "example": "Når det kommer til stykket, handler de fleste valg om å prioritere det som virkelig teller.",
+    "example_english": "When it comes down to it, most choices are about prioritising what truly matters.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å følge noens eksempel",
+    "lemma": "å følge noens eksempel",
+    "english": "to follow someone's example, to emulate someone",
+    "example": "Yngre politikere burde følge hennes eksempel og prioritere åpenhet og ærlighet.",
+    "example_english": "Younger politicians should follow her example and prioritise transparency and honesty.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ikke finne seg i",
+    "lemma": "å ikke finne seg i",
+    "english": "not to put up with, not to tolerate",
+    "example": "Han nektet å finne seg i den urettferdige behandlingen og klaget saken inn for retten.",
+    "example_english": "He refused to put up with the unfair treatment and brought the case to court.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å vie seg til",
+    "lemma": "å vie seg til",
+    "english": "to dedicate oneself to, to devote oneself to",
+    "example": "Hun valgte å vie seg til forskning på sjeldne sykdommer og la karrieremulighetene vente.",
+    "example_english": "She chose to dedicate herself to research on rare diseases and put career opportunities aside.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å vekke oppsikt",
+    "lemma": "å vekke oppsikt",
+    "english": "to attract attention, to cause a stir",
+    "example": "Utstillingen vakte stor oppsikt med sine kontroversielle og politisk ladede kunstverk.",
+    "example_english": "The exhibition caused a great stir with its controversial and politically charged artworks.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være dårlig informert",
+    "lemma": "å være dårlig informert",
+    "english": "to be poorly informed, to be misinformed",
+    "example": "Mange velger å stemme uten å sette seg inn i sakene og er dermed dårlig informert.",
+    "example_english": "Many people choose to vote without studying the issues and are therefore poorly informed.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å spille på følelser",
+    "lemma": "å spille på følelser",
+    "english": "to play on emotions, to appeal to feelings",
+    "example": "Reklamen spiller bevisst på følelser for å påvirke forbrukernes kjøpsbeslutninger.",
+    "example_english": "The advertisement deliberately plays on emotions to influence consumers' purchasing decisions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å skape engasjement rundt noe",
+    "lemma": "å skape engasjement rundt noe",
+    "english": "to generate engagement around something, to mobilise interest",
+    "example": "Organisasjonen jobber hardt for å skape engasjement rundt klimasaken blant unge.",
+    "example_english": "The organisation works hard to generate engagement around the climate issue among young people.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være nødt til",
+    "lemma": "å være nødt til",
+    "english": "to be forced to, to have no choice but to",
+    "example": "Vi er nødt til å gjøre drastiske endringer dersom vi ønsker å bevare planeten for fremtiden.",
+    "example_english": "We are forced to make drastic changes if we want to preserve the planet for the future.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gjøre seg fortjent til",
+    "lemma": "å gjøre seg fortjent til",
+    "english": "to earn, to deserve through effort",
+    "example": "Hun hadde jobbet hardt i mange år og hadde virkelig gjort seg fortjent til prisen.",
+    "example_english": "She had worked hard for many years and had truly earned the award.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å innføre tiltak",
+    "lemma": "å innføre tiltak",
+    "english": "to introduce measures, to implement measures",
+    "example": "Kommunen valgte å innføre tiltak mot støy etter mange klager fra beboerne i området.",
+    "example_english": "The municipality chose to introduce measures against noise following many complaints from residents in the area.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta grep",
+    "lemma": "å ta grep",
+    "english": "to take action, to take firm measures",
+    "example": "Ledelsen måtte ta grep for å stoppe den eskalerende konflikten mellom avdelingene.",
+    "example_english": "Management had to take action to stop the escalating conflict between the departments.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå over til",
+    "lemma": "å gå over til",
+    "english": "to switch to, to transition to",
+    "example": "Stadig flere bedrifter velger å gå over til fornybare energikilder for å kutte utslipp.",
+    "example_english": "More and more businesses are choosing to switch to renewable energy sources to cut emissions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på bekostning av",
+    "lemma": "på bekostning av",
+    "english": "at the expense of",
+    "example": "Mange steder prioriteres økonomisk vekst på bekostning av miljø og sosial rettferdighet.",
+    "example_english": "In many places economic growth is prioritised at the expense of the environment and social justice.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stå for",
+    "lemma": "å stå for",
+    "english": "to stand for, to represent, to vouch for",
+    "example": "Partiet hevder å stå for likestilling, men handlingene deres forteller en annen historie.",
+    "example_english": "The party claims to stand for equality, but their actions tell a different story.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha stor betydning for",
+    "lemma": "å ha stor betydning for",
+    "english": "to be of great importance to, to matter greatly for",
+    "example": "Tidlig innsats i barnehagen har stor betydning for barns later sosiale og faglige utvikling.",
+    "example_english": "Early intervention in kindergarten is of great importance for children's later social and academic development.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å rette søkelyset mot",
+    "lemma": "å rette søkelyset mot",
+    "english": "to shine a light on, to focus attention on",
+    "example": "Rapporten retter søkelyset mot de alvorlige konsekvensene av sosial ulikhet i landet.",
+    "example_english": "The report shines a light on the serious consequences of social inequality in the country.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i overkant",
+    "lemma": "i overkant",
+    "english": "a bit too much, on the excessive side",
+    "example": "Prisen for inngangsbilletten var i overkant høy sammenlignet med hva arrangementet tilbød.",
+    "example_english": "The price of the entry ticket was a bit too high compared to what the event offered.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i stor skala",
+    "lemma": "i stor skala",
+    "english": "on a large scale, at great scale",
+    "example": "Solenergi produseres nå i stor skala og konkurrerer prismessig med fossile energikilder.",
+    "example_english": "Solar energy is now produced on a large scale and competes on price with fossil energy sources.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha potensial til",
+    "lemma": "å ha potensial til",
+    "english": "to have the potential to, to have what it takes",
+    "example": "Teknologien har potensial til å revolusjonere måten vi behandler kroniske sykdommer på.",
+    "example_english": "The technology has the potential to revolutionise the way we treat chronic diseases.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å starte på null",
+    "lemma": "å starte på null",
+    "english": "to start from scratch, to start from zero",
+    "example": "Etter brannen mistet de alt og måtte starte helt på null med ingenting i bakhånd.",
+    "example_english": "After the fire they lost everything and had to start completely from scratch with nothing in reserve.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gang etter gang",
+    "lemma": "gang etter gang",
+    "english": "time after time, again and again",
+    "example": "Gang etter gang har hun bevist at hun er den mest pålitelige personen i teamet.",
+    "example_english": "Time after time she has proved that she is the most reliable person in the team.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "nok en gang",
+    "lemma": "nok en gang",
+    "english": "once again, yet again",
+    "example": "Nok en gang skuffet myndighetene innbyggerne ved å utsette de lovede forbedringene.",
+    "example_english": "Once again the authorities disappointed the citizens by postponing the promised improvements.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli styrt av",
+    "lemma": "å bli styrt av",
+    "english": "to be driven by, to be governed by, to be ruled by",
+    "example": "For mange blir beslutninger styrt av frykt fremfor rasjonell vurdering av situasjonen.",
+    "example_english": "For many people decisions are driven by fear rather than a rational assessment of the situation.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha rett til",
+    "lemma": "å ha rett til",
+    "english": "to have the right to, to be entitled to",
+    "example": "Alle arbeidstakere har rett til et trygt og helsefremmende arbeidsmiljø per norsk lov.",
+    "example_english": "All employees have the right to a safe and health-promoting work environment under Norwegian law.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "uavhengig av",
+    "lemma": "uavhengig av",
+    "english": "regardless of, independent of, irrespective of",
+    "example": "Alle innbyggere skal behandles likt, uavhengig av bakgrunn, kjønn eller sosial status.",
+    "example_english": "All citizens shall be treated equally, regardless of background, gender or social status.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å legge vekt på",
+    "lemma": "å legge vekt på",
+    "english": "to emphasise, to place importance on",
+    "example": "I ansettelsesprosessen la selskapet stor vekt på søkernes kommunikasjonsevner og teamånd.",
+    "example_english": "In the hiring process the company placed great importance on applicants' communication skills and team spirit.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "med tanke på",
+    "lemma": "med tanke på",
+    "english": "considering, with regard to, given",
+    "example": "Med tanke på alle utfordringene vi har møtt, er resultatet faktisk ganske imponerende.",
+    "example_english": "Considering all the challenges we have faced, the result is actually quite impressive.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gi tilgang til",
+    "lemma": "å gi tilgang til",
+    "english": "to give access to, to provide access to",
+    "example": "Biblioteket gir gratis tilgang til tusenvis av e-bøker og digitale ressurser for alle.",
+    "example_english": "The library gives free access to thousands of e-books and digital resources for everyone.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være etterspurt",
+    "lemma": "å være etterspurt",
+    "english": "to be in demand, to be sought after",
+    "example": "Fagfolk med kompetanse innen kunstig intelligens er svært etterspurt på arbeidsmarkedet.",
+    "example_english": "Professionals with expertise in artificial intelligence are highly in demand on the job market.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være rettet mot",
+    "lemma": "å være rettet mot",
+    "english": "to be aimed at, to be directed at",
+    "example": "Kampanjen er rettet mot unge voksne mellom atten og tjuefem år i hele landet.",
+    "example_english": "The campaign is aimed at young adults between eighteen and twenty-five across the whole country.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i tillegg til",
+    "lemma": "i tillegg til",
+    "english": "in addition to, as well as",
+    "example": "I tillegg til norsk snakker hun flytende engelsk, spansk og mandarin.",
+    "example_english": "In addition to Norwegian she speaks fluent English, Spanish and Mandarin.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gjøre til sitt eget",
+    "lemma": "å gjøre til sitt eget",
+    "english": "to make one's own, to adapt to one's own style",
+    "example": "Hun tok den klassiske melodien og gjorde den til sin helt egen med ny tekst og rytme.",
+    "example_english": "She took the classic melody and made it entirely her own with new lyrics and rhythm.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha utbytte av",
+    "lemma": "å ha utbytte av",
+    "english": "to benefit from, to gain from",
+    "example": "Elevene har stort utbytte av undervisningsformer som fremmer aktiv deltakelse og refleksjon.",
+    "example_english": "Pupils gain greatly from teaching methods that promote active participation and reflection.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli utvist",
+    "lemma": "å bli utvist",
+    "english": "to be expelled, to be sent off, to be deported",
+    "example": "Spilleren ble utvist etter en rå takling og måtte se resten av kampen fra tribunen.",
+    "example_english": "The player was sent off after a brutal tackle and had to watch the rest of the match from the stands.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta i bruk",
+    "lemma": "å ta i bruk",
+    "english": "to put into use, to adopt, to start using",
+    "example": "Sykehuset var tidlig ute med å ta i bruk robotteknologi i operasjonssalen.",
+    "example_english": "The hospital was an early adopter of robotic technology in the operating theatre.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "vurdering for læring",
+    "lemma": "vurdering for læring",
+    "english": "assessment for learning, formative assessment",
+    "example": "Vurdering for læring handler om å gi tilbakemeldinger som hjelper elevene til å utvikle seg.",
+    "example_english": "Assessment for learning is about giving feedback that helps pupils to develop.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "bli bevisst på",
+    "lemma": "bli bevisst på",
+    "english": "to become aware of, to grow conscious of",
+    "example": "Kurset hjalp deltakerne til å bli bevisste på egne kommunikasjonsmønstre og blindsoner.",
+    "example_english": "The course helped participants to become aware of their own communication patterns and blind spots.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i hovedsak",
+    "lemma": "i hovedsak",
+    "english": "mainly, primarily, for the most part",
+    "example": "Boken handler i hovedsak om de psykologiske ettervirkningene av langvarig isolasjon.",
+    "example_english": "The book deals mainly with the psychological after-effects of prolonged isolation.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å rette seg i ryggen",
+    "lemma": "å rette seg i ryggen",
+    "english": "to straighten up, to stand tall, to assert oneself",
+    "example": "Det er på tide å rette seg i ryggen og si tydelig fra om hva man mener og ønsker.",
+    "example_english": "It is time to stand tall and say clearly what one thinks and wants.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "nåde dere",
+    "lemma": "nåde dere",
+    "english": "you'd better watch out, woe betide you",
+    "example": "Nåde dere hvis dere ikke har gjort leksene til i morgen, sa læreren med et strengt blikk.",
+    "example_english": "You had better watch out if you have not done your homework by tomorrow, the teacher said with a stern look.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å holde kjeft",
+    "lemma": "å holde kjeft",
+    "english": "to keep quiet, to shut up",
+    "example": "Han ble bedt om å holde kjeft under møtet, noe han opplevde som svært nedverdigende.",
+    "example_english": "He was told to keep quiet during the meeting, which he found extremely demeaning.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å begripe seg på",
+    "lemma": "å begripe seg på",
+    "english": "to make sense of, to understand, to get one's head around",
+    "example": "Jeg klarer ikke å begripe meg på hvordan noen kan behandle andre mennesker på den måten.",
+    "example_english": "I cannot make sense of how anyone can treat other people in that way.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta seg selv i å si noe",
+    "lemma": "å ta seg selv i å si noe",
+    "english": "to catch oneself saying something",
+    "example": "Hun tok seg selv i å si noe diskriminerende og ble svært flau over det.",
+    "example_english": "She caught herself saying something discriminatory and was very embarrassed about it.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å snakke ned noe eller noen",
+    "lemma": "å snakke ned noe eller noen",
+    "english": "to talk down something or someone, to belittle, to disparage",
+    "example": "Det er uproduktivt å snakke ned andres ideer uten å komme med konstruktive alternativer.",
+    "example_english": "It is counterproductive to talk down others' ideas without offering constructive alternatives.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å utgjøre en forskjell",
+    "lemma": "å utgjøre en forskjell",
+    "english": "to make a difference",
+    "example": "Selv små tiltak kan utgjøre en stor forskjell for sårbare grupper i samfunnet.",
+    "example_english": "Even small measures can make a big difference for vulnerable groups in society.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "søren meg",
+    "lemma": "søren meg",
+    "english": "good grief, damn it, blimey",
+    "example": "Søren meg, jeg glemte å betale regningen igjen – nå får jeg sikkert et gebyr.",
+    "example_english": "Good grief, I forgot to pay the bill again – now I will probably get a fine.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å rakke ned på",
+    "lemma": "å rakke ned på",
+    "english": "to put down, to run down, to badmouth",
+    "example": "Det er urettferdig å rakke ned på folk bak ryggen i stedet for å ta det opp direkte.",
+    "example_english": "It is unfair to put people down behind their backs instead of raising it directly.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en halvstudert røver",
+    "lemma": "en halvstudert røver",
+    "english": "a know-it-all with half-knowledge, a self-taught amateur",
+    "example": "Ikke lytt til den halvstuderte røveren – søk heller råd hos en kvalifisert spesialist.",
+    "example_english": "Do not listen to that half-baked know-it-all – seek advice from a qualified specialist instead.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stikke dypt",
+    "lemma": "å stikke dypt",
+    "english": "to cut deep, to sting, to hurt deeply",
+    "example": "Ordene hennes stakk dypt og han tenkte på dem lenge etter at samtalen var over.",
+    "example_english": "Her words cut deep and he thought about them long after the conversation was over.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få tunnelsyn",
+    "lemma": "å få tunnelsyn",
+    "english": "to get tunnel vision, to become narrow-minded",
+    "example": "Under press kan ledere få tunnelsyn og overse viktige signaler fra omgivelsene.",
+    "example_english": "Under pressure leaders can get tunnel vision and overlook important signals from their surroundings.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli en del av noe",
+    "lemma": "å bli en del av noe",
+    "english": "to become part of something, to be included",
+    "example": "Det tok tid, men til slutt ble hun en naturlig del av det sosiale miljøet på jobben.",
+    "example_english": "It took time, but eventually she became a natural part of the social environment at work.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "en læringskurve",
+    "lemma": "en læringskurve",
+    "english": "a learning curve",
+    "example": "Det er en bratt læringskurve å starte i ny jobb, men det blir lettere etter hvert.",
+    "example_english": "Starting a new job involves a steep learning curve, but it gets easier over time.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på kort varsel",
+    "lemma": "på kort varsel",
+    "english": "at short notice, at short order",
+    "example": "Teamet klarte å levere et imponerende resultat på svært kort varsel.",
+    "example_english": "The team managed to deliver an impressive result at very short notice.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "med andre ord",
+    "lemma": "med andre ord",
+    "english": "in other words, that is to say",
+    "example": "Budsjettet ble ikke godkjent – med andre ord må vi finne rimeligere løsninger.",
+    "example_english": "The budget was not approved – in other words we need to find cheaper solutions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gjøre noe meningsfylt",
+    "lemma": "å gjøre noe meningsfylt",
+    "english": "to do something meaningful, to do something worthwhile",
+    "example": "Hun byttet ut den høytlønnede jobben for å gjøre noe mer meningsfylt for samfunnet.",
+    "example_english": "She swapped the high-paying job to do something more meaningful for society.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bidra til samfunnet",
+    "lemma": "å bidra til samfunnet",
+    "english": "to contribute to society",
+    "example": "Frivilligarbeid er en konkret måte å bidra til samfunnet og møte andre engasjerte mennesker.",
+    "example_english": "Voluntary work is a concrete way to contribute to society and meet other committed people.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "med jevne mellomrom",
+    "lemma": "med jevne mellomrom",
+    "english": "at regular intervals, periodically",
+    "example": "Med jevne mellomrom evalueres alle ansatte, slik at eventuelle problemer kan tas opp tidlig.",
+    "example_english": "At regular intervals all employees are evaluated so that any problems can be raised early.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det hadde vært noe, det",
+    "lemma": "Det hadde vært noe, det",
+    "english": "that would be something, wouldn't that be something",
+    "example": "En uke uten e-post og møter – det hadde virkelig vært noe, det!",
+    "example_english": "A week without emails and meetings – that really would be something!",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Du sier noe",
+    "lemma": "Du sier noe",
+    "english": "you're telling me, you can say that again, you've got a point",
+    "example": "\"Det er dyrt å bo i Oslo.\" – \"Du sier noe. Jeg bruker halvparten av lønnen på leie.\"",
+    "example_english": "\"It is expensive to live in Oslo.\" – \"You're telling me. I spend half my wage on rent.\"",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å skli ut",
+    "lemma": "å skli ut",
+    "english": "to slip up, to go off track, to lose focus",
+    "example": "Etter noen måneder begynte treningsrutinen hans å skli ut og han trente stadig sjeldnere.",
+    "example_english": "After a few months his training routine began to slip and he trained less and less frequently.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Jeg skal vedde på at",
+    "lemma": "Jeg skal vedde på at",
+    "english": "I bet that, I would wager that",
+    "example": "Jeg skal vedde på at de aldri hadde tenkt på den løsningen uten innspill fra de unge.",
+    "example_english": "I bet they would never have thought of that solution without input from the young people.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det er lov å drømme",
+    "lemma": "Det er lov å drømme",
+    "english": "one is allowed to dream, it is fine to dream",
+    "example": "Jeg vet det er urealistisk, men det er lov å drømme om å vinne i Lotto.",
+    "example_english": "I know it is unrealistic, but one is allowed to dream about winning the lottery.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å tilby seg",
+    "lemma": "å tilby seg",
+    "english": "to offer, to volunteer",
+    "example": "Hun tilbød seg å ta ansvar for prosjektet da ingen andre meldte sin interesse.",
+    "example_english": "She offered to take responsibility for the project when nobody else expressed an interest.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det viste seg at",
+    "lemma": "Det viste seg at",
+    "english": "it turned out that, it emerged that",
+    "example": "Det viste seg at feilen kom fra en enkelt linje med kode skrevet for ti år siden.",
+    "example_english": "It turned out that the error came from a single line of code written ten years ago.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "sosial dumping",
+    "lemma": "sosial dumping",
+    "english": "social dumping, undercutting wages and conditions",
+    "example": "Fagforeningene krever strengere regler for å hindre sosial dumping innen byggebransjen.",
+    "example_english": "The trade unions demand stricter rules to prevent social dumping in the construction industry.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det innebærer at",
+    "lemma": "Det innebærer at",
+    "english": "this means that, this implies that",
+    "example": "Det innebærer at alle ansatte må gjennomgå obligatorisk opplæring i datasikkerhet.",
+    "example_english": "This means that all employees must complete mandatory training in data security.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sette noe ut på anbud",
+    "lemma": "å sette noe ut på anbud",
+    "english": "to put something out to tender",
+    "example": "Kommunen valgte å sette vedlikeholdsarbeidet ut på anbud for å spare penger.",
+    "example_english": "The municipality chose to put the maintenance work out to tender in order to save money.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det er god grunn til å",
+    "lemma": "Det er god grunn til å",
+    "english": "there is good reason to, there are solid grounds for",
+    "example": "Det er god grunn til å tro at de nye tiltakene vil ha en positiv effekt på folkehelsen.",
+    "example_english": "There is good reason to believe that the new measures will have a positive effect on public health.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å takke ja til",
+    "lemma": "å takke ja til",
+    "english": "to accept, to say yes to",
+    "example": "Etter lang betenkningstid valgte hun å takke ja til tilbudet og flytte til Oslo.",
+    "example_english": "After lengthy consideration she chose to accept the offer and move to Oslo.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sette ord på",
+    "lemma": "å sette ord på",
+    "english": "to put into words, to articulate",
+    "example": "Det er vanskelig å sette ord på den følelsen av lettelse du kjenner etter en krevende periode.",
+    "example_english": "It is difficult to put into words the feeling of relief you sense after a demanding period.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bære galt av sted",
+    "lemma": "å bære galt av sted",
+    "english": "to go badly wrong, to go off the rails",
+    "example": "Dersom ledelsen ikke griper inn snart, kan hele prosjektet bære galt av sted.",
+    "example_english": "If management does not intervene soon, the entire project could go badly wrong.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå på rundgang",
+    "lemma": "å gå på rundgang",
+    "english": "to do the rounds, to circulate, to go around",
+    "example": "Etter valget gikk ryktene på rundgang om hvem som ville bli utnevnt til statsråder.",
+    "example_english": "After the election rumours were doing the rounds about who would be appointed ministers.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være forberedt på å gjøre noe",
+    "lemma": "å være forberedt på å gjøre noe",
+    "english": "to be prepared to do something",
+    "example": "En god leder må alltid være forberedt på å ta vanskelige beslutninger under press.",
+    "example_english": "A good leader must always be prepared to make difficult decisions under pressure.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Man skulle kanskje tro at",
+    "lemma": "Man skulle kanskje tro at",
+    "english": "one might think that, you would perhaps suppose that",
+    "example": "Man skulle kanskje tro at mer penger alltid gir mer lykke, men forskning viser noe annet.",
+    "example_english": "One might think that more money always brings more happiness, but research suggests otherwise.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha bruk for",
+    "lemma": "å ha bruk for",
+    "english": "to have use for, to need",
+    "example": "I fremtiden vil alle ha bruk for grunnleggende digitale ferdigheter i arbeidslivet.",
+    "example_english": "In the future everyone will need basic digital skills in working life.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha kjennskap til",
+    "lemma": "å ha kjennskap til",
+    "english": "to have knowledge of, to be familiar with",
+    "example": "Det er en fordel å ha kjennskap til lokale skikker og tradisjoner når man bor i utlandet.",
+    "example_english": "It is an advantage to be familiar with local customs and traditions when living abroad.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å overlate noe til noen",
+    "lemma": "å overlate noe til noen",
+    "english": "to leave something to someone, to hand over to",
+    "example": "Hun bestemte seg for å overlate det daglige ansvaret til nestlederen og fokusere på strategi.",
+    "example_english": "She decided to leave the daily responsibility to the deputy and focus on strategy.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ikke noe å hige etter",
+    "lemma": "ikke noe å hige etter",
+    "english": "nothing to aspire to, nothing to strive for",
+    "example": "En karriere uten mening eller personlig vekst er ikke noe å hige etter.",
+    "example_english": "A career without meaning or personal growth is nothing to aspire to.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å se langt etter",
+    "lemma": "å se langt etter",
+    "english": "to have no chance of getting, to kiss goodbye to",
+    "example": "Uten bedre infrastruktur kan distriktet se langt etter tilflyttere og nye bedrifter.",
+    "example_english": "Without better infrastructure the district can kiss goodbye to new residents and businesses.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta til takke med",
+    "lemma": "å ta til takke med",
+    "english": "to make do with, to settle for",
+    "example": "Da de beste alternativene var utsolgt, måtte de ta til takke med det som var igjen.",
+    "example_english": "When the best options were sold out, they had to make do with what was left.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "nederst på rangstigen",
+    "lemma": "nederst på rangstigen",
+    "english": "at the bottom of the hierarchy, at the lowest rung",
+    "example": "I mange land befinner kvinner seg fortsatt nederst på rangstigen i næringsliv og politikk.",
+    "example_english": "In many countries women still find themselves at the bottom of the hierarchy in business and politics.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "All ære til",
+    "lemma": "All ære til",
+    "english": "all credit to, full credit to",
+    "example": "All ære til de frivillige som jobbet dag og natt for å redde dyrene etter flommen.",
+    "example_english": "All credit to the volunteers who worked day and night to rescue the animals after the flood.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få samfunnet til å gå rundt",
+    "lemma": "å få samfunnet til å gå rundt",
+    "english": "to keep society running, to make society function",
+    "example": "Det er de vanlige menneskene i hverdagsyrkene som virkelig får samfunnet til å gå rundt.",
+    "example_english": "It is ordinary people in everyday jobs who really keep society running.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å jobbe seg opp fra gulvet",
+    "lemma": "å jobbe seg opp fra gulvet",
+    "english": "to work one's way up from nothing, to start from the bottom",
+    "example": "Han har jobbet seg opp fra gulvet og bygget en suksessrik bedrift gjennom hardt arbeid.",
+    "example_english": "He has worked his way up from nothing and built a successful business through hard work.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å komme i skade for",
+    "lemma": "å komme i skade for",
+    "english": "to accidentally end up doing, to do by mistake",
+    "example": "Han kom i skade for å si noe upassende og måtte be om unnskyldning etterpå.",
+    "example_english": "He accidentally ended up saying something inappropriate and had to apologise afterwards.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å snakke ned noe",
+    "lemma": "å snakke ned noe",
+    "english": "to talk something down, to dismiss, to belittle",
+    "example": "Det er ikke konstruktivt å snakke ned andres forslag uten å presentere egne alternativer.",
+    "example_english": "It is not constructive to talk down others' proposals without presenting your own alternatives.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli tatt på senga",
+    "lemma": "å bli tatt på senga",
+    "english": "to be caught off guard, to be taken by surprise",
+    "example": "Lederne ble tatt på senga av den brå krisen og hadde ingen beredskapsplan.",
+    "example_english": "The leaders were caught off guard by the sudden crisis and had no contingency plan.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på kryss og tvers",
+    "lemma": "på kryss og tvers",
+    "english": "criss-cross, in all directions, all over the place",
+    "example": "Journalisten reiste på kryss og tvers i landet for å samle historier til reportasjen.",
+    "example_english": "The journalist travelled criss-cross across the country to collect stories for the feature.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å treffe spikeren på hodet",
+    "lemma": "å treffe spikeren på hodet",
+    "english": "to hit the nail on the head",
+    "example": "Kommentaren hennes traff spikeren på hodet og oppsummerte problemstillingen perfekt.",
+    "example_english": "Her comment hit the nail on the head and summarised the issue perfectly.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sirkle rundt",
+    "lemma": "å sirkle rundt",
+    "english": "to circle around, to beat around the bush",
+    "example": "Slutt å sirkle rundt problemet og si rett ut hva du mener er den beste løsningen.",
+    "example_english": "Stop circling around the problem and say straight out what you think the best solution is.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Den som lever, får se",
+    "lemma": "Den som lever, får se",
+    "english": "time will tell, we shall see, only time will tell",
+    "example": "Om det nye systemet faktisk fungerer bedre? Den som lever, får se.",
+    "example_english": "Whether the new system will actually work better? Time will tell.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å holde samfunnet i gang",
+    "lemma": "å holde samfunnet i gang",
+    "english": "to keep society running, to keep things functioning",
+    "example": "Helsepersonell og lærere er blant de som holder samfunnet i gang i krevende tider.",
+    "example_english": "Healthcare workers and teachers are among those who keep society running in demanding times.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha en følelse av",
+    "lemma": "å ha en følelse av",
+    "english": "to have a feeling of, to have a sense of",
+    "example": "Mange innvandrere har en følelse av å stå med ett ben i to ulike kulturer.",
+    "example_english": "Many immigrants have a feeling of standing with one foot in two different cultures.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha tilgang til",
+    "lemma": "å ha tilgang til",
+    "english": "to have access to",
+    "example": "Ikke alle elever har tilgang til de digitale verktøyene som trengs i moderne undervisning.",
+    "example_english": "Not all pupils have access to the digital tools needed in modern teaching.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å basere noe på",
+    "lemma": "å basere noe på",
+    "english": "to base something on, to found something on",
+    "example": "Beslutningen bør baseres på solid forskning, ikke på magefølelse og politisk press.",
+    "example_english": "The decision should be based on solid research, not on gut feeling and political pressure.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli lurt trill rundt",
+    "lemma": "å bli lurt trill rundt",
+    "english": "to be completely deceived, to be taken for a complete ride",
+    "example": "Hun innså for sent at hun hadde blitt lurt trill rundt av den karismatiske svindleren.",
+    "example_english": "She realised too late that she had been completely taken for a ride by the charismatic fraudster.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gi seg ut for",
+    "lemma": "å gi seg ut for",
+    "english": "to pose as, to pretend to be, to pass oneself off as",
+    "example": "Han ga seg ut for å være lege og lurte til seg sensitive pasientopplysninger.",
+    "example_english": "He posed as a doctor and tricked his way to sensitive patient information.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ruste noen for noe",
+    "lemma": "å ruste noen for noe",
+    "english": "to prepare someone for something, to equip someone for",
+    "example": "Skolens oppgave er å ruste elevene for et arbeidsliv og samfunn i rask endring.",
+    "example_english": "The school's task is to equip pupils for a working life and society undergoing rapid change.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i større grad",
+    "lemma": "i større grad",
+    "english": "to a greater extent, more so",
+    "example": "Fremtidens yrkesliv vil i større grad kreve evne til kontinuerlig læring og omstilling.",
+    "example_english": "The working life of the future will to a greater extent require the ability to learn and adapt continuously.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å følge med i nyhetsbildet",
+    "lemma": "å følge med i nyhetsbildet",
+    "english": "to follow the news, to keep up with current events",
+    "example": "Det er en demokratisk plikt å følge med i nyhetsbildet og holde seg informert.",
+    "example_english": "It is a democratic duty to follow the news and keep oneself informed.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å orientere seg",
+    "lemma": "å orientere seg",
+    "english": "to orientate oneself, to find one's bearings",
+    "example": "Det tok tid å orientere seg i det nye landet, men gradvis ble livet enklere.",
+    "example_english": "It took time to find one's bearings in the new country, but gradually life became easier.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "tilnærmet alle",
+    "lemma": "tilnærmet alle",
+    "english": "virtually everyone, almost all",
+    "example": "Tilnærmet alle barn i Norge har i dag tilgang til barnehage, uavhengig av økonomi.",
+    "example_english": "Virtually all children in Norway today have access to kindergarten, regardless of finances.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i forbindelse med",
+    "lemma": "i forbindelse med",
+    "english": "in connection with, in relation to",
+    "example": "I forbindelse med jubileet arrangeres det konserter og utstillinger i hele byen.",
+    "example_english": "In connection with the anniversary, concerts and exhibitions are being arranged throughout the city.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å aldri tvile",
+    "lemma": "å aldri tvile",
+    "english": "to never doubt, to have complete conviction",
+    "example": "Hun aldri tvilte på at rettferdigheten til slutt ville seire i rettssalen.",
+    "example_english": "She never doubted that justice would ultimately prevail in the courtroom.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "fleip eller fakta",
+    "lemma": "fleip eller fakta",
+    "english": "myth or fact, joke or reality",
+    "example": "Fleip eller fakta: Er det sant at vi bare bruker ti prosent av hjernens kapasitet?",
+    "example_english": "Myth or fact: Is it true that we only use ten per cent of the brain's capacity?",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta noe på alvor",
+    "lemma": "å ta noe på alvor",
+    "english": "to take something seriously",
+    "example": "Det er avgjørende at myndighetene tar tegn på mental helse-krise blant unge på alvor.",
+    "example_english": "It is crucial that the authorities take signs of mental health crisis among young people seriously.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å komme til orde",
+    "lemma": "å komme til orde",
+    "english": "to get a word in, to be given a chance to speak",
+    "example": "I store møter er det lett at stille stemmer aldri får komme til orde.",
+    "example_english": "In large meetings it is easy for quiet voices never to get a chance to speak.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sende signaler",
+    "lemma": "å sende signaler",
+    "english": "to send signals, to communicate intentions",
+    "example": "Sentralbanken sender tydelige signaler om at rentene ikke vil senkes før neste år.",
+    "example_english": "The central bank is sending clear signals that interest rates will not be lowered before next year.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å uttale seg offentlig",
+    "lemma": "å uttale seg offentlig",
+    "english": "to comment publicly, to make a public statement",
+    "example": "Legen nektet å uttale seg offentlig om saken av hensyn til pasientens personvern.",
+    "example_english": "The doctor refused to comment publicly on the case out of consideration for the patient's privacy.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å lide under",
+    "lemma": "å lide under",
+    "english": "to suffer under, to be harmed by",
+    "example": "Mange arbeidere lider under dårlige arbeidsforhold som myndighetene er klar over.",
+    "example_english": "Many workers suffer under poor working conditions that the authorities are aware of.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli utsatt for",
+    "lemma": "å bli utsatt for",
+    "english": "to be exposed to, to be subjected to, to be subjected to",
+    "example": "Ansatte som blir utsatt for mobbing på arbeidsplassen, har rett til støtte og beskyttelse.",
+    "example_english": "Employees who are subjected to bullying in the workplace have the right to support and protection.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli oppfordret til",
+    "lemma": "å bli oppfordret til",
+    "english": "to be encouraged to, to be urged to",
+    "example": "Innbyggerne ble oppfordret til å redusere strømforbruket i perioden med kaldt vær.",
+    "example_english": "Residents were urged to reduce electricity consumption during the period of cold weather.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få inntrykk av",
+    "lemma": "å få inntrykk av",
+    "english": "to get the impression of, to gather that",
+    "example": "Fra samtalen fikk jeg inntrykk av at han ikke var fornøyd med avtalen som var inngått.",
+    "example_english": "From the conversation I got the impression that he was not happy with the agreement that had been made.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å treffe rett i hjertet",
+    "lemma": "å treffe rett i hjertet",
+    "english": "to hit right in the heart, to touch deeply",
+    "example": "Sangens tekst traff rett i hjertet og fikk mange i salen til å begynne å gråte.",
+    "example_english": "The song's lyrics hit right in the heart and made many people in the hall begin to cry.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i deres egne øyne",
+    "lemma": "i deres egne øyne",
+    "english": "in their own eyes, from their own perspective",
+    "example": "I deres egne øyne handlet de alltid rettferdig, selv om andre opplevde det annerledes.",
+    "example_english": "In their own eyes they always acted justly, even though others experienced it differently.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på sitt beste",
+    "lemma": "på sitt beste",
+    "english": "at one's best, at its finest",
+    "example": "Denne forestillingen viser teateret på sitt beste – modig, originalt og dypt rørende.",
+    "example_english": "This production shows the theatre at its finest – courageous, original and deeply moving.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta for gitt",
+    "lemma": "å ta for gitt",
+    "english": "to take for granted",
+    "example": "Vi tar demokratiet for gitt, men det krever aktive borgere for å fungere godt.",
+    "example_english": "We take democracy for granted, but it requires active citizens to function well.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få til",
+    "lemma": "å få til",
+    "english": "to manage to, to succeed in, to pull off",
+    "example": "Mot alle odds klarte de å få til en fredelig løsning på den langvarige konflikten.",
+    "example_english": "Against all odds they managed to pull off a peaceful resolution to the long-standing conflict.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på vegne av",
+    "lemma": "på vegne av",
+    "english": "on behalf of",
+    "example": "Direktøren takket på vegne av hele organisasjonen for det hardt arbeidet alle hadde lagt ned.",
+    "example_english": "The director expressed thanks on behalf of the entire organisation for the hard work everyone had put in.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bry seg om",
+    "lemma": "å bry seg om",
+    "english": "to care about, to be concerned about",
+    "example": "Ledere som genuint bryr seg om de ansatte, skaper sterkere og mer lojale team.",
+    "example_english": "Leaders who genuinely care about their employees create stronger and more loyal teams.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å trekke seg unna",
+    "lemma": "å trekke seg unna",
+    "english": "to withdraw, to pull away, to distance oneself",
+    "example": "Etter bruddet trakk han seg unna vennene og holdt seg for det meste for seg selv.",
+    "example_english": "After the break-up he withdrew from his friends and kept mostly to himself.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "til sammenligning",
+    "lemma": "til sammenligning",
+    "english": "by comparison, for comparison",
+    "example": "Norge bruker svært lite på militæret; til sammenligning bruker USA en langt høyere andel.",
+    "example_english": "Norway spends very little on the military; by comparison, the US spends a far higher proportion.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å prøve ut",
+    "lemma": "å prøve ut",
+    "english": "to test out, to try out, to pilot",
+    "example": "Kommunen ønsker å prøve ut en ny modell for eldreomsorg i to bydeler i første omgang.",
+    "example_english": "The municipality wants to try out a new model for elderly care in two districts initially.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stille til ansvar",
+    "lemma": "å stille til ansvar",
+    "english": "to hold to account, to call to account",
+    "example": "Pressen har en viktig oppgave i å stille politikere og maktpersoner til ansvar.",
+    "example_english": "The press has an important role in holding politicians and people in power to account.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å heie fram",
+    "lemma": "å heie fram",
+    "english": "to encourage, to cheer forward, to support actively",
+    "example": "Lærere som heier fram alle elever, uansett ferdighetsnivå, gjør en uvurderlig innsats.",
+    "example_english": "Teachers who actively encourage all pupils regardless of skill level make an invaluable contribution.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gjøre en forskjell",
+    "lemma": "å gjøre en forskjell",
+    "english": "to make a difference",
+    "example": "Du trenger ikke være berømt for å gjøre en ekte forskjell i andres liv.",
+    "example_english": "You do not need to be famous to make a real difference in other people's lives.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "så det monner",
+    "lemma": "så det monner",
+    "english": "significantly, enough to make a real difference",
+    "example": "For å endre situasjonen må investeringene økes, og det monner.",
+    "example_english": "To change the situation the investments must increase significantly and to a meaningful degree.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å fase ut",
+    "lemma": "å fase ut",
+    "english": "to phase out, to gradually eliminate",
+    "example": "Regjeringen planlegger å fase ut alle bensinbiler innen utgangen av dette tiåret.",
+    "example_english": "The government plans to phase out all petrol cars by the end of this decade.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sette en stopper for",
+    "lemma": "å sette en stopper for",
+    "english": "to put a stop to, to halt",
+    "example": "Myndighetene satte endelig en stopper for den ulovlige dumping av giftig avfall i elva.",
+    "example_english": "The authorities finally put a stop to the illegal dumping of toxic waste in the river.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å komme noen til gode",
+    "lemma": "å komme noen til gode",
+    "english": "to benefit someone, to be of benefit to",
+    "example": "De ekstra midlene til helse vil komme særlig dem med kroniske lidelser til gode.",
+    "example_english": "The extra funds for health will particularly benefit those with chronic conditions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå ut på",
+    "lemma": "å gå ut på",
+    "english": "to consist in, to be about, to involve",
+    "example": "Jobben hans går i hovedsak ut på å koordinere samarbeid mellom ulike offentlige etater.",
+    "example_english": "His job mainly consists in coordinating cooperation between various public agencies.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha tiltro til",
+    "lemma": "å ha tiltro til",
+    "english": "to have confidence in, to trust",
+    "example": "For at systemet skal fungere, må innbyggerne ha tiltro til de demokratiske institusjonene.",
+    "example_english": "For the system to function citizens must have confidence in the democratic institutions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "bli siktet for",
+    "lemma": "bli siktet for",
+    "english": "to be charged with, to be a suspect in",
+    "example": "Den mistenkte ble siktet for grov korrupsjon etter en lang etterforskning.",
+    "example_english": "The suspect was charged with serious corruption following a lengthy investigation.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å reise tiltale mot",
+    "lemma": "å reise tiltale mot",
+    "english": "to bring charges against, to prosecute",
+    "example": "Påtalemyndigheten besluttet å reise tiltale mot selskapet for grove brudd på arbeidsmiljøloven.",
+    "example_english": "The prosecution decided to bring charges against the company for serious violations of the working environment act.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å overbevise om",
+    "lemma": "å overbevise om",
+    "english": "to convince of, to persuade of",
+    "example": "Det var vanskelig å overbevise styret om at den risikable investeringen var nødvendig.",
+    "example_english": "It was difficult to convince the board that the risky investment was necessary.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha det siste ordet",
+    "lemma": "å ha det siste ordet",
+    "english": "to have the last word, to have the final say",
+    "example": "I denne familien er det alltid bestemoren som har det siste ordet ved viktige avgjørelser.",
+    "example_english": "In this family it is always the grandmother who has the last word on important decisions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å avgjøre om",
+    "lemma": "å avgjøre om",
+    "english": "to decide whether, to determine whether",
+    "example": "Juryen vil avgjøre om tiltalte er skyldig etter å ha vurdert all fremlagt bevisføring.",
+    "example_english": "The jury will decide whether the defendant is guilty after considering all the evidence presented.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å komme fram til",
+    "lemma": "å komme fram til",
+    "english": "to arrive at, to reach, to come to",
+    "example": "Etter lange forhandlinger klarte partene endelig å komme fram til en felles løsning.",
+    "example_english": "After lengthy negotiations the parties finally managed to arrive at a common solution.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli dømt til",
+    "lemma": "å bli dømt til",
+    "english": "to be sentenced to, to be convicted to",
+    "example": "Han ble dømt til fire års fengsel for svindel med offentlige midler.",
+    "example_english": "He was sentenced to four years in prison for fraud involving public funds.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sende et signal om",
+    "lemma": "å sende et signal om",
+    "english": "to send a signal about, to signal",
+    "example": "Avgjørelsen sender et tydelig signal om at lovbrudd ikke vil bli tolerert.",
+    "example_english": "The decision sends a clear signal that violations of the law will not be tolerated.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha rulleblad",
+    "lemma": "å ha rulleblad",
+    "english": "to have a criminal record",
+    "example": "Søkeren hadde rulleblad, noe som kompliserte ansettelsesprosessen betraktelig.",
+    "example_english": "The applicant had a criminal record, which considerably complicated the hiring process.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli løslatt på prøve",
+    "lemma": "å bli løslatt på prøve",
+    "english": "to be released on parole",
+    "example": "Etter to år ble han løslatt på prøve under forutsetning av at han fulgte opp behandlingen.",
+    "example_english": "After two years he was released on parole on condition that he continued with treatment.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å trekke fra",
+    "lemma": "å trekke fra",
+    "english": "to deduct, to subtract, to withdraw",
+    "example": "Skatten trekkes automatisk fra lønnen din hvert år, så du slipper å tenke på det.",
+    "example_english": "Tax is automatically deducted from your salary each year, so you do not need to think about it.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å vekke oppmerksomhet",
+    "lemma": "å vekke oppmerksomhet",
+    "english": "to attract attention, to draw notice",
+    "example": "Kunstverket vakte oppmerksomhet internasjonalt og ble omtalt i ledende kunsttidsskrifter.",
+    "example_english": "The artwork attracted international attention and was covered in leading art journals.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være pålagt",
+    "lemma": "å være pålagt",
+    "english": "to be required, to be obliged, to be mandated",
+    "example": "Alle arbeidsgivere er pålagt å tilby HMS-opplæring til nyansatte innen de første månedene.",
+    "example_english": "All employers are required to provide health and safety training to new employees within the first months.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få skikk på livet",
+    "lemma": "å få skikk på livet",
+    "english": "to get one's life in order, to sort one's life out",
+    "example": "Etter en turbulent periode bestemte han seg for endelig å få skikk på livet.",
+    "example_english": "After a turbulent period he decided to finally get his life in order.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sitte inne",
+    "lemma": "å sitte inne med",
+    "english": "to serve time in prison, to be locked up",
+    "example": "Han satt inne i tre år og brukte tiden til å ta utdanning og reflektere over livet.",
+    "example_english": "He served three years in prison and used the time to get an education and reflect on his life.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på livstid",
+    "lemma": "på livstid",
+    "english": "for life, life-long",
+    "example": "Han ble idømt fengsel på livstid for de grove forbrytelsene han hadde begått.",
+    "example_english": "He was sentenced to life in prison for the serious crimes he had committed.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å slippe unna",
+    "lemma": "å slippe unna",
+    "english": "to get away with, to escape, to evade",
+    "example": "Lenge klarte han å slippe unna med juks, men etter hvert ble han avslørt.",
+    "example_english": "For a long time he managed to get away with cheating, but eventually he was exposed.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være på hils med",
+    "lemma": "å være på hils med",
+    "english": "to be on speaking terms with, to barely know",
+    "example": "Vi er bare på hils med naboen; vi har aldri hatt en ordentlig samtale.",
+    "example_english": "We are only on nodding terms with the neighbour; we have never had a proper conversation.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være preget av",
+    "lemma": "å være preget av",
+    "english": "to be marked by, to be characterised by",
+    "example": "Oppveksten hans var preget av fattigdom og usikkerhet, men han klarte seg godt.",
+    "example_english": "His upbringing was marked by poverty and insecurity, but he managed well.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å spille på frykt",
+    "lemma": "å spille på frykt",
+    "english": "to play on fear, to exploit fear",
+    "example": "Populistiske politikere spiller bevisst på frykt for å mobilisere velgerne sine.",
+    "example_english": "Populist politicians deliberately play on fear to mobilise their voters.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha i bakhodet",
+    "lemma": "å ha i bakhodet",
+    "english": "to bear in mind, to keep in the back of one's mind",
+    "example": "Det er greit å ha i bakhodet at planene kan endre seg etter hvert som situasjonen utvikler seg.",
+    "example_english": "It is fine to bear in mind that plans may change as the situation develops.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å få fotfeste",
+    "lemma": "å få fotfeste",
+    "english": "to gain a foothold, to get established",
+    "example": "Det tok tid for det nye partiet å få fotfeste i politikken, men nå vokser det raskt.",
+    "example_english": "It took time for the new party to gain a foothold in politics, but now it is growing quickly.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å relatere til",
+    "lemma": "å relatere til",
+    "english": "to relate to, to identify with",
+    "example": "Mange unge klarer ikke å relatere til politikerne og føler seg ikke representert.",
+    "example_english": "Many young people are unable to relate to politicians and do not feel represented.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å resultere i",
+    "lemma": "å resultere i",
+    "english": "to result in, to lead to",
+    "example": "Mangel på søvn over tid kan resultere i alvorlige helseproblemer og redusert livskvalitet.",
+    "example_english": "Lack of sleep over time can result in serious health problems and reduced quality of life.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "stadig vekk",
+    "lemma": "stadig vekk",
+    "english": "constantly, all the time, repeatedly",
+    "example": "Han gjør stadig vekk de samme feilene, til tross for at han har blitt advart mange ganger.",
+    "example_english": "He constantly makes the same mistakes, despite having been warned many times.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være involvert i",
+    "lemma": "å være involvert i",
+    "english": "to be involved in",
+    "example": "Etterforskningen avdekket at han hadde vært involvert i korrupsjon i mange år.",
+    "example_english": "The investigation revealed that he had been involved in corruption for many years.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i prinsippet",
+    "lemma": "i prinsippet",
+    "english": "in principle, theoretically",
+    "example": "I prinsippet er alle like for loven, men i praksis er det ikke alltid tilfelle.",
+    "example_english": "In principle everyone is equal before the law, but in practice that is not always the case.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "for sin tid",
+    "lemma": "for sin tid",
+    "english": "for its time, ahead of its time",
+    "example": "Arkitekturen var revolusjonerende for sin tid og inspirerte en hel generasjon arkitekter.",
+    "example_english": "The architecture was revolutionary for its time and inspired an entire generation of architects.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha mye til felles",
+    "lemma": "å ha mye til felles",
+    "english": "to have a lot in common",
+    "example": "Til tross for ulik bakgrunn viste det seg at de hadde utrolig mye til felles.",
+    "example_english": "Despite different backgrounds it turned out that they had an incredible amount in common.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å markere avstand til",
+    "lemma": "å markere avstand til",
+    "english": "to distance oneself from, to dissociate from",
+    "example": "Partilederen var rask til å markere avstand til den kontroversielle uttalelsen.",
+    "example_english": "The party leader was quick to distance himself from the controversial statement.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å framstille noe/noen som",
+    "lemma": "å framstille noe/noen som",
+    "english": "to portray something/someone as, to present as",
+    "example": "Mediene framstilte henne som en helt, men sannheten var langt mer sammensatt.",
+    "example_english": "The media portrayed her as a hero, but the truth was far more nuanced.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i etterkant av",
+    "lemma": "i etterkant av",
+    "english": "in the aftermath of, following",
+    "example": "I etterkant av skandalen valgte direktøren å trekke seg fra stillingen sin.",
+    "example_english": "In the aftermath of the scandal the director chose to step down from his position.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gjøre en innsats",
+    "lemma": "å gjøre en innsats",
+    "english": "to make an effort, to put in effort",
+    "example": "Alle som gjør en innsats for fellesskapet, fortjener anerkjennelse for bidraget sitt.",
+    "example_english": "Everyone who makes an effort for the community deserves recognition for their contribution.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være en stemme for de svakeste",
+    "lemma": "å være en stemme for de svakeste",
+    "english": "to be a voice for the most vulnerable",
+    "example": "Organisasjonen har i mange år vært en viktig stemme for de svakeste i samfunnet.",
+    "example_english": "The organisation has for many years been an important voice for the most vulnerable in society.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gripe inn",
+    "lemma": "å gripe inn",
+    "english": "to intervene, to step in",
+    "example": "Politiet ble tvunget til å gripe inn da demonstrasjonen eskalerte til vold.",
+    "example_english": "The police were forced to intervene when the demonstration escalated into violence.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stille til rådighet",
+    "lemma": "å stille til rådighet",
+    "english": "to make available, to put at the disposal of",
+    "example": "Kommunen stilte lokaler til rådighet for flyktningene som kom til landet.",
+    "example_english": "The municipality made premises available for the refugees who arrived in the country.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å skape en motvekt til",
+    "lemma": "å skape en motvekt til",
+    "english": "to create a counterweight to, to provide a counterbalance",
+    "example": "Uavhengige medier er avgjørende for å skape en motvekt til statlig propaganda.",
+    "example_english": "Independent media are crucial for creating a counterweight to state propaganda.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være forpliktet til",
+    "lemma": "å være forpliktet til",
+    "english": "to be committed to, to be obligated to",
+    "example": "Som signatar er landet forpliktet til å overholde avtalens krav og frister.",
+    "example_english": "As a signatory the country is committed to complying with the agreement's requirements and deadlines.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stille til disposisjon",
+    "lemma": "å stille til disposisjon",
+    "english": "to make available, to place at someone's disposal",
+    "example": "Bedriften stilte biler til disposisjon for de ansatte under det store prosjektet.",
+    "example_english": "The company placed cars at the disposal of employees during the major project.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i regi av",
+    "lemma": "i regi av",
+    "english": "organised by, under the auspices of, run by",
+    "example": "Konferansen ble arrangert i regi av universitetet og samlet eksperter fra hele verden.",
+    "example_english": "The conference was organised by the university and brought together experts from around the world.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være en støttespiller",
+    "lemma": "å være en støttespiller",
+    "english": "to be a pillar of support, to be a supporter",
+    "example": "Moren hans var alltid en støttespiller som ga ham mot til å forfølge drømmene.",
+    "example_english": "His mother was always a pillar of support who gave him the courage to pursue his dreams.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i utgangspunktet",
+    "lemma": "i utgangspunktet",
+    "english": "initially, in principle, from the outset",
+    "example": "I utgangspunktet var planen å fullføre prosjektet innen seks måneder.",
+    "example_english": "Initially the plan was to complete the project within six months.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå mot strømmen",
+    "lemma": "å gå mot strømmen",
+    "english": "to go against the current, to swim against the tide",
+    "example": "Det krever mot å gå mot strømmen og utfordre etablerte normer i samfunnet.",
+    "example_english": "It takes courage to swim against the tide and challenge established norms in society.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å bli isolert",
+    "lemma": "å bli isolert",
+    "english": "to become isolated, to be cut off",
+    "example": "Under pandemien ble mange eldre isolert fra familie og venner over lang tid.",
+    "example_english": "During the pandemic many elderly people became isolated from family and friends for a long time.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta sin tid",
+    "lemma": "å ta sin tid",
+    "english": "to take one's time, to not rush",
+    "example": "Kvalitetsarbeid tar sin tid, og det er bedre å levere sent enn å levere noe halvferdig.",
+    "example_english": "Quality work takes its time, and it is better to deliver late than to deliver something half-finished.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å sette noe i fare",
+    "lemma": "å sette noe i fare",
+    "english": "to put something at risk, to jeopardise",
+    "example": "Korrupsjonen truet med å sette hele fredsavtalen i fare på et kritisk tidspunkt.",
+    "example_english": "The corruption threatened to put the entire peace agreement at risk at a critical moment.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å dilte etter",
+    "lemma": "å dilte etter",
+    "english": "to trail behind, to tag along, to follow blindly",
+    "example": "Det er ikke tillitsvekkende for et land å bare dilte etter andres beslutninger.",
+    "example_english": "It is not credible for a country to simply trail behind the decisions of others.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "i høyeste grad",
+    "lemma": "i høyeste grad",
+    "english": "in the highest degree, extremely, most certainly",
+    "example": "Spørsmålet om rettferdighet er i høyeste grad relevant i dagens politiske debatt.",
+    "example_english": "The question of justice is extremely relevant in today's political debate.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha kapasitet til",
+    "lemma": "å ha kapasitet til",
+    "english": "to have the capacity to, to have the resources for",
+    "example": "Helsevesenet har ikke kapasitet til å håndtere en ny stor pandemi uten ekstra ressurser.",
+    "example_english": "The health service does not have the capacity to handle a new major pandemic without extra resources.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å kaste penger ut av vinduet",
+    "lemma": "å kaste penger ut av vinduet",
+    "english": "to throw money out of the window, to waste money",
+    "example": "Å investere i dårlig planlagte prosjekter er å kaste penger ut av vinduet.",
+    "example_english": "Investing in poorly planned projects is like throwing money out of the window.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå rett i lomma på",
+    "lemma": "å gå rett i lomma på",
+    "english": "to go straight into the pocket of, to benefit financially",
+    "example": "Subsidiene gikk rett i lomma på de store selskapene i stedet for til forbrukerne.",
+    "example_english": "The subsidies went straight into the pockets of the large companies instead of to consumers.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "fremfor alt",
+    "lemma": "fremfor alt",
+    "english": "above all, most of all",
+    "example": "Fremfor alt er det viktig å bevare tilliten mellom innbyggerne og de folkevalgte.",
+    "example_english": "Above all it is important to preserve the trust between citizens and their elected representatives.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "på godt og vondt",
+    "lemma": "på godt og vondt",
+    "english": "for better or worse, through thick and thin",
+    "example": "Familien sto sammen på godt og vondt gjennom alle livets opp- og nedturer.",
+    "example_english": "The family stood together for better or worse through all of life's ups and downs.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gå foran",
+    "lemma": "å gå foran",
+    "english": "to lead the way, to set an example",
+    "example": "Norge kan gå foran som et godt eksempel på bærekraftig energiomstilling for andre land.",
+    "example_english": "Norway can lead the way as a good example of sustainable energy transition for other countries.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gi avkall på",
+    "lemma": "å gi avkall på",
+    "english": "to give up, to forgo, to renounce",
+    "example": "For å leve mer bærekraftig er mange villige til å gi avkall på visse luksusgoder.",
+    "example_english": "In order to live more sustainably many people are willing to forgo certain luxury goods.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "tingenes tilstand",
+    "lemma": "tingenes tilstand",
+    "english": "the state of things, the current situation",
+    "example": "Rapporten gir et nedslående bilde av tingenes tilstand i den offentlige skolen.",
+    "example_english": "The report paints a dispiriting picture of the state of things in the public school system.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha overskudd til",
+    "lemma": "å ha overskudd til",
+    "english": "to have the energy to, to have the capacity for",
+    "example": "Etter en krevende arbeidsuke har jeg sjelden overskudd til å møte mange mennesker.",
+    "example_english": "After a demanding working week I rarely have the energy to meet many people.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å være avhengig av",
+    "lemma": "å være avhengig av",
+    "english": "to be dependent on, to rely on",
+    "example": "Mange kommuner er avhengige av statlige overføringer for å opprettholde gode tjenester.",
+    "example_english": "Many municipalities are dependent on state transfers to maintain good services.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "som regel",
+    "lemma": "som regel",
+    "english": "as a rule, usually, generally",
+    "example": "Som regel løses de fleste konflikter bedre gjennom dialog enn gjennom konfrontasjon.",
+    "example_english": "As a rule most conflicts are resolved better through dialogue than through confrontation.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "så å si",
+    "lemma": "så å si",
+    "english": "so to speak, as it were, practically",
+    "example": "Sosiale medier har så å si blitt en integrert del av det daglige livet til de unge.",
+    "example_english": "Social media have, so to speak, become an integral part of young people's daily lives.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å slå seg ned",
+    "lemma": "å slå seg ned",
+    "english": "to settle down, to settle in a place",
+    "example": "Etter mange år i utlandet valgte de å slå seg ned i en liten kystby i Sør-Norge.",
+    "example_english": "After many years abroad they chose to settle down in a small coastal town in southern Norway.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ikke noe videre",
+    "lemma": "ikke noe videre",
+    "english": "nothing special, not up to much, mediocre",
+    "example": "Maten var ikke noe videre, men atmosfæren på restauranten var veldig hyggelig.",
+    "example_english": "The food was nothing special, but the atmosphere at the restaurant was very pleasant.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å innrette seg",
+    "lemma": "å innrette seg",
+    "english": "to adapt, to adjust, to organise one's life",
+    "example": "Etter pensjoneringen tok det tid å innrette seg til en ny rytme uten faste arbeidsdager.",
+    "example_english": "After retirement it took time to adjust to a new rhythm without regular working days.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  }
+]

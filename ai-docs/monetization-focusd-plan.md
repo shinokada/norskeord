@@ -2,18 +2,18 @@
 
 ## Tiers
 
-| Feature                                | Free | Plus                        |
-| -------------------------------------- | ---- | --------------------------- |
-| All vocabulary (A1–C2)                 | ✅   | ✅                          |
-| FSRS rating buttons                    | ✅   | ✅                          |
-| Basic CEFR estimate                    | ✅   | ✅                          |
-| Due today smart deck                   | ✅   | ✅                          |
-| Per-category breakdown + pace forecast | ❌   | ✅                          |
-| Progress sync across devices           | ❌   | ✅                          |
-| Email lesson service                   | ❌   | ✅                          |
-| Full Norskprøven exam questions        | ❌   | ✅                          |
-| FSRS weight optimisation               | ❌   | ✅                          |
-| Price                                  | Free | 49 NOK/month · 499 NOK/year |
+| Feature                                | Free | Plus         |
+| -------------------------------------- | ---- | ------------ |
+| All vocabulary (A1–C2)                 | ✅   | ✅           |
+| FSRS rating buttons                    | ✅   | ✅           |
+| Basic CEFR estimate                    | ✅   | ✅           |
+| Due today smart deck                   | ✅   | ✅           |
+| Per-category breakdown + pace forecast | ❌   | ✅           |
+| Progress sync across devices           | ❌   | ✅           |
+| Email lesson service                   | ❌   | ✅           |
+| Full Norskprøven exam questions        | ❌   | ✅           |
+| FSRS weight optimisation               | ❌   | ✅           |
+| Price                                  | Free | 49 NOK/month |
 
 **Why a feature gate, not a content gate:** The competition (Anki, Duolingo) is free on content. Gating vocabulary categories loses users before they are hooked. The differentiator is the _system_ — FSRS scheduling and honest progress tracking — not the word lists.
 
@@ -99,8 +99,9 @@ The profile page serves two purposes: personal settings and subscription status.
 - Flashcard display preferences: Norwegian→English or English→Norwegian; words only or include phrases
 
 **Subscription**
+How can Lemon Squeezy do recuring monthly payment?
 
-- Current plan (Free / Plus Monthly / Plus Annual) with renewal date
+- Current plan (Free / Plus) with renewal date
 - Upgrade / manage billing button (Lemon Squeezy customer portal link)
 
 **Notifications (Plus only)**
@@ -171,13 +172,10 @@ A recurring email service for Plus users delivering short Norwegian texts with o
 
 **Send schedule:**
 
-| Level   | Days          | Emails/week |
-| ------- | ------------- | ----------- |
-| A1 / A2 | Mon, Wed, Fri | 3           |
-| B1 / B2 | Mon–Fri       | 5           |
-| C1 / C2 | Tue, Thu      | 2           |
-
-Weekends off for all levels. Frequency maps to learning intensity: beginners need recovery time, intermediate learners benefit from daily exposure, advanced learners get fewer but higher-quality emails. When a user changes CEFR level, the new send schedule is shown on the level-change confirmation screen.
+| Level   | Days | Emails/week |
+| ------- | ---- | ----------- |
+| A1 / A2 | Fri  | 1           |
+| B1 / B2 | Fri  | 1           |
 
 **Stack:** Resend (free tier: 3k/month) + Supabase Edge Functions + `pg_cron`. No Mailchimp or Mailgun needed.
 

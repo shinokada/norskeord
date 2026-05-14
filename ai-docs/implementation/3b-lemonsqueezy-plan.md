@@ -16,6 +16,7 @@ LEMONSQUEEZY_WEBHOOK_SECRET=    # set when creating the webhook in LS dashboard
 ```
 
 Also needed in `.env`:
+
 ```
 SUPABASE_SERVICE_ROLE_KEY=      # already set for Phase 1 — confirm it is there
 ```
@@ -82,28 +83,28 @@ export async function verifyLemonSqueezyWebhook(
   rawBody: string,
   signature: string,
   secret: string
-): Promise<boolean>
+): Promise<boolean>;
 
 // Type for the webhook payload (only the fields we use)
 export interface LemonSqueezyWebhookPayload {
   meta: {
-    event_name: string  // e.g. 'subscription_created'
-    custom_data?: { user_id?: string }
-  }
+    event_name: string; // e.g. 'subscription_created'
+    custom_data?: { user_id?: string };
+  };
   data: {
-    id: string          // subscription_id
+    id: string; // subscription_id
     attributes: {
-      order_id: number
-      customer_id: number
-      variant_id: number
-      status: string    // 'active' | 'cancelled' | 'expired' | 'past_due' | 'on_trial'
-      ends_at: string | null
-      billing_anchor: number
+      order_id: number;
+      customer_id: number;
+      variant_id: number;
+      status: string; // 'active' | 'cancelled' | 'expired' | 'past_due' | 'on_trial'
+      ends_at: string | null;
+      billing_anchor: number;
       first_subscription_item: {
-        billing_cycle_anchor: string
-      }
-    }
-  }
+        billing_cycle_anchor: string;
+      };
+    };
+  };
 }
 ```
 
@@ -120,6 +121,7 @@ POST endpoint. Called from the `/plus` page when a logged-in user clicks "Upgrad
 **Response:** JSON `{ checkoutUrl: string }` or error
 
 **Logic:**
+
 1. Require auth — return 401 if `locals.user` is null with body `{ error: 'login_required' }` (client redirects to `/auth/login?next=/plus`)
 2. Call Lemon Squeezy `POST /v1/checkouts` with:
    - `store_id`, `variant_id` from env
@@ -130,6 +132,7 @@ POST endpoint. Called from the `/plus` page when a logged-in user clicks "Upgrad
 4. Client does `window.location.href = checkoutUrl` (or use LS overlay JS — see note below)
 
 **Lemon Squeezy API call:**
+
 ```ts
 const response = await fetch('https://api.lemonsqueezy.com/v1/checkouts', {
   method: 'POST',
@@ -156,10 +159,11 @@ const response = await fetch('https://api.lemonsqueezy.com/v1/checkouts', {
       }
     }
   })
-})
+});
 ```
 
 **Note on LS overlay vs redirect:**
+
 - Overlay: add `<script src="https://app.lemonsqueezy.com/js/lemon.js"></script>` to layout, checkout URL gets class `lemonsqueezy-button` — no redirect, modal pops up inline. Nicer UX.
 - Redirect: simpler, no extra script. Recommended for first pass.
 
@@ -197,14 +201,16 @@ Select events: `subscription_created`, `subscription_updated`, `subscription_can
 ```
 
 **Use the Supabase service role client** (not the user client) — webhooks arrive without a user cookie:
+
 ```ts
-import { createClient } from '@supabase/supabase-js'
-const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
+import { createClient } from '@supabase/supabase-js';
+const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 ```
 
 **Idempotency:** Lemon Squeezy may retry webhooks. The `upsert` on `user_id` primary key is naturally idempotent for `subscription_created`. For `subscription_updated`, always overwrite — LS sends the full current state each time.
 
 **`valid_until` mapping:**
+
 - Monthly: `attributes.ends_at` is the current period end
 - Annual: same field
 - On cancellation: `ends_at` is when access should end — keep `plan='plus'` until then
@@ -224,6 +230,7 @@ src/routes/plus/success/+page.server.ts   — redirects to /stats if not logged 
 ```
 
 Content:
+
 - "You're now a Plus member 🎉" heading
 - "Your Due Today deck is ready" body
 - CTA: "Start studying →" → `/a1/greetings` (or user's last level)
@@ -238,16 +245,19 @@ The plan may not be `'plus'` yet when this page loads (webhook is async). Don't 
 Replace the waitlist email form with a real checkout CTA once LS is wired up.
 
 **Logged-in user:**
+
 ```
 [Upgrade to Plus — €X/month]  ← calls POST /api/lemon/checkout
 ```
 
 **Logged-out user:**
+
 ```
 [Sign in to upgrade]  ← href="/auth/login?next=/plus"
 ```
 
 **Already Plus:**
+
 ```
 [Manage subscription]  ← href from LS customer portal API (Phase 4-A)
 ```
@@ -255,11 +265,12 @@ Replace the waitlist email form with a real checkout CTA once LS is wired up.
 Keep the waitlist form visible below the CTA during the transition period so people who don't want to pay yet can still join the list.
 
 Add a `+page.server.ts` to pass `isLoggedIn` and `isPlus` to the page:
+
 ```ts
 export const load = ({ locals }) => ({
   isLoggedIn: locals.user !== null,
   isPlus: locals.plan === 'plus'
-})
+});
 ```
 
 ---
@@ -267,6 +278,7 @@ export const load = ({ locals }) => ({
 ### Step 6 — i18n keys to add
 
 `messages/en.json`:
+
 ```json
 "plus_checkout_cta": "Upgrade to Plus — €{price}/month",
 "plus_checkout_cta_annual": "Upgrade to Plus — €{price}/year",
@@ -341,7 +353,7 @@ User (browser)          /plus page        /api/lemon/checkout      Lemon Squeezy
 ## Open decisions (resolve before coding)
 
 1. **Monthly only or monthly + annual?** — annual needs two variant IDs and a billing_interval toggle on `/plus`
-2. **Price point** — needs to be in i18n strings and on the page; €4.99/mo and €39/yr are common for small indie apps
+2. **Price point** — needs to be in i18n strings and on the page; 49 NOK/mo for small indie apps
 3. **LS overlay vs redirect checkout** — overlay is nicer UX; redirect is simpler to implement first
 4. **Waitlist form** — keep it during launch or remove once payments are live?
 5. **Cancellation grace period display** — show "Your Plus access continues until {date}" banner when `status='cancelled'`?

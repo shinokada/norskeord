@@ -12,6 +12,9 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 
 ===== Solved =========
 
+- Since we have Preferences Interface languages, should we remove the navigation language button? If not, changing the language using this button should change the Preference as well.
+- Plus member and logged in (registered) needs to be explained the differences in about page.
+- /stats page has "Your Progress Progress is saved to this device. Sign in to sync across devices." Even I signed in (not plus member) it still has it.
 - /stats page has "All data is stored locally on this device." Is this correct? Shouldn't it be stored DB, otherwise cleaning cache delete data.
 - Focus on level A/B since C needs a lot more vocab. (See the table below)
 - Currently each level has around 15 categories and each category contain 25 word. This means each level (A/B/C) has round 375 words. And I think this is not enough to master foreign language. Either increase words within categoies or add new categories. Which one is better? May be I can adopt both?
@@ -58,3 +61,5 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 2. Clicking a flag doesn't change languages. Solved
 3. Use American flag for British flag. Solved
 4. Add unit tests. Not worth
+
+==============
