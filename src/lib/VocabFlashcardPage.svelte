@@ -242,6 +242,10 @@
   let currentExampleTranslation = $derived(
     current ? deriveExampleTranslation(current.entry, mode, cardType) : ''
   );
+  // Always the Norwegian text for TTS — regardless of card direction.
+  let currentExampleNorsk = $derived(
+    current ? (cardType === 'phrase' ? current.entry.norsk : current.entry.example) : ''
+  );
 
   // ── 2-C: interval preview ────────────────────────────────────────────────────
 
@@ -667,11 +671,29 @@
   <!-- Part of speech badge & Pronounce -->
   {#if !completed && current}
     <div class="mt-3 flex items-center gap-3">
-      <span
-        class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
-      >
-        {current.entry.part}
-      </span>
+      {#if cardType !== 'phrase'}
+        <span
+          class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+        >
+          {current.entry.part === 'noun'
+            ? m.part_noun()
+            : current.entry.part === 'verb'
+              ? m.part_verb()
+              : current.entry.part === 'adjective'
+                ? m.part_adjective()
+                : current.entry.part === 'adverb'
+                  ? m.part_adverb()
+                  : current.entry.part === 'pronoun'
+                    ? m.part_pronoun()
+                    : current.entry.part === 'preposition'
+                      ? m.part_preposition()
+                      : current.entry.part === 'conjunction'
+                        ? m.part_conjunction()
+                        : current.entry.part === 'interjection'
+                          ? m.part_interjection()
+                          : m.part_phrase()}
+        </span>
+      {/if}
       <SpeakButton
         bind:this={speakButtonRef}
         word={cardType === 'word' ? current.entry.norsk : current.entry.example}
@@ -687,7 +709,7 @@
           class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
           >{cardType === 'word' ? m.flashcard_phrase() : m.flashcard_word()}</span
         >
-        <SpeakButton bind:this={speakExampleRef} word={currentExample} />
+        <SpeakButton bind:this={speakExampleRef} word={currentExampleNorsk} />
       </div>
       <p class="text-base text-gray-700 italic dark:text-gray-300">
         {currentExample}
