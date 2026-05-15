@@ -35,7 +35,9 @@ export const CATEGORIES_BY_LEVEL = {
     'household-items',
     'basic-places',
     'basic-clothes',
-    'simple-actions'
+    'simple-actions',
+    'uttrykk',
+    'uttrykk-preview'
   ],
   A2: [
     'shopping',
@@ -59,7 +61,9 @@ export const CATEGORIES_BY_LEVEL = {
     'social-life',
     'technology-basic',
     'environment-basic',
-    'money-numbers'
+    'money-numbers',
+    'uttrykk',
+    'uttrykk-preview'
   ],
   B1: [
     'travel',
@@ -93,7 +97,9 @@ export const CATEGORIES_BY_LEVEL = {
     'relationships-family',
     'politics-civics',
     'language-learning',
-    'health-system'
+    'health-system',
+    'uttrykk',
+    'uttrykk-preview'
   ],
   B2: [
     'politics',
@@ -128,6 +134,7 @@ export const CATEGORIES_BY_LEVEL = {
     'work-career',
     'relationships',
     'communication',
+    'uttrykk',
     'uttrykk-preview'
   ],
   C1: [
@@ -224,6 +231,10 @@ export const PLUS_CATEGORIES = new Set<string>([
   'b2/relationships',
   'b2/communication',
   'b2/uttrykk',
+  // uttrykk — full decks are Plus-only; preview is free
+  'a1/uttrykk',
+  'a2/uttrykk',
+  'b1/uttrykk',
   // C1 — all plus
   'c1/philosophy',
   'c1/academic',
