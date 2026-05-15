@@ -118,7 +118,7 @@
       </a>
     {/if}
     {#if user}
-      <Avatar class="acs" size="sm" />
+      <Avatar class="acs ml-2.5" size="xs" />
       <Dropdown simple class="w-56" triggeredBy=".acs">
         <DropdownHeader>
           {#if displayName}
@@ -170,6 +170,31 @@
         {/snippet}
       </MegaMenu>
     {/each}
+
+    <!-- Quiz nav item — visible to all, locked for non-Plus -->
+    {#if isPlus}
+      <NavLi
+        href="/quiz"
+        class="cursor-pointer"
+        onclick={(e: MouseEvent) => {
+          if (activeUrl === '/quiz') {
+            e.preventDefault();
+            window.dispatchEvent(new CustomEvent('quiz:reset'));
+          }
+        }}
+      >
+        {m.nav_quiz()}
+      </NavLi>
+    {:else}
+      <NavLi
+        href="/plus?ref=nav-quiz"
+        class="cursor-pointer opacity-60"
+        title={m.nav_quiz_plus_only()}
+      >
+        {m.nav_quiz()} 🔒
+      </NavLi>
+    {/if}
+
     <NavLi class="cursor-pointer">
       More<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
     </NavLi>

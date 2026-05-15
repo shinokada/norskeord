@@ -1,6 +1,6 @@
 <script lang="ts">
   import { afterNavigate, goto } from '$app/navigation';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { CATEGORIES_BY_LEVEL, isPlusCategory } from '$lib/types';
   import { validFlashcardPathPattern } from '$lib/utils';
   import * as m from '$lib/paraglide/messages.js';
@@ -22,7 +22,7 @@
     }
   });
 
-  $: isPlus = $page.data.plan === 'plus';
+  let isPlus = $derived(page.data.plan === 'plus');
 
   const levels = [
     { id: 'A1', label: () => m.home_level_a1(), color: 'green' },

@@ -1,0 +1,683 @@
+<script lang="ts">
+  import { onMount, untrack } from 'svelte';
+  import { browser } from '$app/environment';
+  import { page } from '$app/state';
+  import SpeakButton from '$lib/SpeakButton.svelte';
+  import {
+    buildQuizSession,
+    levenshtein,
+    type QuizQuestion,
+    type MultipleChoiceQuestion,
+    type FillBlankQuestion,
+    type TypeAnswerQuestion
+  } from '$lib/quiz';
+  import { loadProgressMap, saveProgress } from '$lib/progress';
+  import type { FSRSRating, CardProgress } from '$lib/types';
+  import * as m from '$lib/paraglide/messages';
+
+  let { data } = $props();
+
+  // Types
+
+  type QuizState = 'idle' | 'questioning' | 'revealing' | 'summary';
+
+  interface QuizResult {
+    question: QuizQuestion;
+    correct: boolean;
+    userAnswer: string;
+  }
+
+  // State
+
+  let quizState: QuizState = $state('idle');
+  let questions: QuizQuestion[] = $state([]);
+  let currentIndex = $state(0);
+  let selectedOption: number | null = $state(null); // MC only
+  let typedAnswer = $state(''); // fill / type
+  let isCorrect: boolean | null = $state(null);
+  let progressMap: Record<string, CardProgress> = $state({});
+  let correctCount = $state(0);
+  let results: QuizResult[] = $state([]);
+  let inputRef: HTMLInputElement | null = $state(null);
+
+  // Idle picker state.
+  // untrack() prevents Svelte registering data as a reactive dependency of the
+  // $state initializer, fixing the state_referenced_locally warning.
+  // data.level is lowercased in +page.ts; vocab entries use uppercase ("A1",
+  // "B2", ...) so we uppercase to match the <option> values.
+  let selectedLevel: string = $state(untrack(() => (data.level ? data.level.toUpperCase() : '')));
+  let selectedCategory: string = $state(untrack(() => data.category ?? ''));
+
+  // Derived
+
+  let isPlus = $derived(page.data.plan === 'plus');
+  let userId = $derived(isPlus ? (page.data.user?.id ?? null) : null);
+  let current = $derived(questions[currentIndex]);
+  let progress = $derived(
+    questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0
+  );
+
+  // Unique levels and categories for the picker — sourced from allEntries so
+  // the full A1-B2 list is available regardless of any pre-filtered default.
+  let availableLevels = $derived(
+    [...new Set(data.allEntries.map((e: { level: string }) => e.level))].sort()
+  );
+  let availableCategories = $derived.by(() => {
+    const src = selectedLevel
+      ? data.allEntries.filter((e: { level: string }) => e.level === selectedLevel)
+      : data.allEntries;
+
+    return [...new Set(src.map((e: { category: string }) => e.category))].sort() as string[];
+  });
+
+  // Entries to quiz on — filtered from allEntries by picker selections so that
+  // changing the level picker always produces the correct word pool.
+  let quizEntries = $derived.by(() => {
+    let es = data.allEntries as import('$lib/types').VocabEntry[];
+
+    if (selectedLevel) es = es.filter((e) => e.level === selectedLevel);
+    if (selectedCategory) es = es.filter((e) => e.category === selectedCategory);
+
+    return es;
+  });
+
+  onMount(() => {
+    // Client-side Plus gate. We read plan from page.data (via the isPlus
+    // derived) rather than from the load function's parent() call, because
+    // the Playwright __data.json interceptor patches the layout node that
+    // page.data reads from — making this work correctly in e2e tests.
+    if (!isPlus) {
+      window.location.replace('/plus?ref=quiz-gate');
+      return;
+    }
+
+    if (browser) {
+      progressMap = loadProgressMap();
+    }
+    window.addEventListener('quiz:reset', handleQuizReset);
+    return () => window.removeEventListener('quiz:reset', handleQuizReset);
+  });
+
+  // Quiz control
+
+  function startQuiz() {
+    const entries = quizEntries;
+    if (entries.length === 0) return;
+    questions = buildQuizSession(entries, data.allEntries, progressMap, 10);
+    currentIndex = 0;
+    correctCount = 0;
+    results = [];
+    selectedOption = null;
+    typedAnswer = '';
+    isCorrect = null;
+    quizState = 'questioning';
+  }
+
+  function submitAnswer(userAnswer: string | number) {
+    if (!current || quizState !== 'questioning') return;
+
+    let rating: FSRSRating;
+    let correct: boolean;
+    let answerStr: string;
+
+    if (current.type === 'mc') {
+      const q = current as MultipleChoiceQuestion;
+      correct = userAnswer === q.correctIndex;
+      selectedOption = userAnswer as number;
+      answerStr = q.options[userAnswer as number] ?? '';
+      rating = correct ? 'good' : 'again';
+    } else {
+      const q = current as FillBlankQuestion | TypeAnswerQuestion;
+      answerStr = (userAnswer as string).trim();
+      const normalised = answerStr.toLowerCase();
+      const expected = q.answer.toLowerCase();
+      const dist = levenshtein(normalised, expected);
+      if (dist === 0) {
+        correct = true;
+        rating = 'good';
+      } else if (dist <= 1) {
+        correct = true;
+        rating = 'hard';
+      } else {
+        correct = false;
+        rating = 'again';
+      }
+      typedAnswer = answerStr;
+    }
+
+    if (correct) correctCount++;
+    isCorrect = correct;
+    results = [...results, { question: current, correct, userAnswer: answerStr }];
+    progressMap = saveProgress(current.entry, rating, progressMap, userId);
+    quizState = 'revealing';
+  }
+
+  function markEasy() {
+    if (!current || quizState !== 'revealing') return;
+    progressMap = saveProgress(current.entry, 'easy', progressMap, userId);
+  }
+
+  function nextQuestion() {
+    if (currentIndex < questions.length - 1) {
+      currentIndex++;
+      selectedOption = null;
+      typedAnswer = '';
+      isCorrect = null;
+      quizState = 'questioning';
+    } else {
+      quizState = 'summary';
+    }
+  }
+
+  function goToIdle() {
+    quizState = 'idle';
+    questions = [];
+    currentIndex = 0;
+    correctCount = 0;
+    results = [];
+    selectedOption = null;
+    typedAnswer = '';
+    isCorrect = null;
+  }
+
+  function restartQuiz() {
+    startQuiz();
+  }
+
+  // Keyboard handling
+
+  function handleKeyDown(e: KeyboardEvent) {
+    const target = e.target as HTMLElement | null;
+    const inInput = target?.tagName === 'INPUT' || target?.tagName === 'TEXTAREA';
+
+    if (quizState === 'questioning' && current?.type === 'mc' && !inInput) {
+      const keyMap: Record<string, number> = { a: 0, b: 1, c: 2, d: 3 };
+      const idx = keyMap[e.key.toLowerCase()];
+      if (idx !== undefined && idx < (current as MultipleChoiceQuestion).options.length) {
+        e.preventDefault();
+        submitAnswer(idx);
+        return;
+      }
+    }
+
+    if (quizState === 'revealing') {
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        nextQuestion();
+      }
+    }
+
+    if (quizState === 'summary' && (e.key === 'r' || e.key === 'R')) {
+      e.preventDefault();
+      restartQuiz();
+    }
+  }
+
+  // Fired when the user clicks the Quiz nav link while already on /quiz.
+  function handleQuizReset() {
+    goToIdle();
+  }
+
+  // Focus text input when question changes to a fill/type question.
+  $effect(() => {
+    if (quizState === 'questioning' && current && current.type !== 'mc') {
+      setTimeout(() => inputRef?.focus(), 0);
+    }
+  });
+
+  // Helpers
+
+  function optionLabel(i: number): string {
+    return String.fromCharCode(65 + i); // A, B, C, D
+  }
+
+  function formatCategory(cat: string): string {
+    return cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  }
+
+  function formatLevel(level: string): string {
+    return level.toUpperCase();
+  }
+
+  function scoreEmoji(correct: number, total: number): string {
+    const pct = total > 0 ? correct / total : 0;
+    if (pct >= 0.9) return '🎉';
+    if (pct >= 0.7) return '👍';
+    if (pct >= 0.5) return '💪';
+    return '📖';
+  }
+</script>
+
+<svelte:window onkeydown={handleKeyDown} />
+
+<div class="mx-auto max-w-2xl px-4 py-8">
+  {#if quizState === 'idle'}
+    <div class="text-center">
+      <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.quiz_title()}</h1>
+      <p class="mb-8 text-gray-500 dark:text-gray-400">
+        {m.quiz_subtitle()}
+      </p>
+
+      <div class="mb-8 space-y-4 text-left">
+        <!-- Level -->
+        <div>
+          <label
+            for="quiz-level"
+            class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            {m.quiz_label_level()}
+          </label>
+          <select
+            id="quiz-level"
+            bind:value={selectedLevel}
+            onchange={() => {
+              selectedCategory = '';
+            }}
+            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+          >
+            <option value="">{m.quiz_label_all_levels()}</option>
+            {#each availableLevels as level (level)}
+              <option value={level}>{formatLevel(level)}</option>
+            {/each}
+          </select>
+        </div>
+
+        <!-- Category -->
+        <div>
+          <label
+            for="quiz-category"
+            class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            {m.quiz_label_category()}
+            <span class="font-normal text-gray-400">{m.quiz_label_category_optional()}</span>
+          </label>
+          <select
+            id="quiz-category"
+            bind:value={selectedCategory}
+            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+          >
+            <option value="">{m.quiz_label_all_categories()}</option>
+            {#each availableCategories as cat (cat)}
+              <option value={cat}>{formatCategory(cat)}</option>
+            {/each}
+          </select>
+        </div>
+      </div>
+
+      <p class="mb-6 text-sm text-gray-400 dark:text-gray-500">
+        {m.quiz_pool_hint({ count: quizEntries.length, session: Math.min(10, quizEntries.length) })}
+      </p>
+
+      <button
+        type="button"
+        onclick={startQuiz}
+        disabled={quizEntries.length === 0}
+        class="rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+      >
+        {m.quiz_start()}
+      </button>
+    </div>
+  {:else if quizState === 'questioning' && current}
+    <!-- Progress bar -->
+    <div class="mb-6">
+      <div class="mb-1 flex justify-between text-xs text-gray-400 dark:text-gray-500">
+        <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
+        <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
+      </div>
+      <div class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+        <div
+          class="h-full rounded-full bg-indigo-500 transition-all duration-300"
+          style="width: {progress}%"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Question card -->
+    <div
+      class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+    >
+      {#if current.type === 'mc'}
+        {@const q = current as MultipleChoiceQuestion}
+        <p
+          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500"
+        >
+          {m.quiz_mc_prompt()}
+        </p>
+        <p class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{q.prompt}</p>
+        <div class="space-y-3">
+          {#each q.options as option, i (i)}
+            <button
+              type="button"
+              onclick={() => submitAnswer(i)}
+              class="flex w-full items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 text-left text-sm font-medium text-gray-700 transition-colors hover:border-indigo-400 hover:bg-indigo-50 focus:ring-2 focus:ring-indigo-300 focus:outline-none dark:border-gray-600 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:bg-indigo-900/20"
+            >
+              <span
+                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-100 text-xs font-bold dark:bg-gray-700"
+              >
+                {optionLabel(i)}
+              </span>
+              {option}
+            </button>
+          {/each}
+        </div>
+        <p class="mt-4 text-xs text-gray-400 dark:text-gray-600">{m.quiz_mc_hint()}</p>
+      {:else if current.type === 'fill'}
+        {@const q = current as FillBlankQuestion}
+        <p
+          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500"
+        >
+          {m.quiz_fill_prompt()}
+        </p>
+        <p class="mb-2 text-lg font-medium text-gray-900 italic dark:text-white">
+          "{q.sentence}"
+        </p>
+        <p class="mb-6 text-sm text-indigo-500 dark:text-indigo-400">
+          {q.entry.english}
+        </p>
+        <div class="flex gap-2">
+          <input
+            bind:this={inputRef}
+            type="text"
+            bind:value={typedAnswer}
+            placeholder={m.quiz_fill_placeholder()}
+            onkeydown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                submitAnswer(typedAnswer);
+              }
+            }}
+            class="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+          />
+          <button
+            type="button"
+            onclick={() => submitAnswer(typedAnswer)}
+            class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
+          >
+            {m.quiz_check()}
+          </button>
+        </div>
+        <div class="mt-3 flex gap-3">
+          <button
+            type="button"
+            onclick={() => submitAnswer('')}
+            class="text-xs text-gray-400 hover:text-gray-600 hover:underline dark:hover:text-gray-300"
+          >
+            {m.quiz_skip()}
+          </button>
+        </div>
+      {:else}
+        {@const q = current as TypeAnswerQuestion}
+        <p
+          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500"
+        >
+          {m.quiz_type_prompt()}
+        </p>
+        <p class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">"{q.prompt}"</p>
+        <div class="flex gap-2">
+          <input
+            bind:this={inputRef}
+            type="text"
+            bind:value={typedAnswer}
+            placeholder={m.quiz_type_placeholder()}
+            onkeydown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                submitAnswer(typedAnswer);
+              }
+            }}
+            class="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+          />
+          <button
+            type="button"
+            onclick={() => submitAnswer(typedAnswer)}
+            class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
+          >
+            {m.quiz_check()}
+          </button>
+        </div>
+        <div class="mt-3">
+          <button
+            type="button"
+            onclick={() => submitAnswer('')}
+            class="text-xs text-gray-400 hover:text-gray-600 hover:underline dark:hover:text-gray-300"
+          >
+            {m.quiz_skip()}
+          </button>
+        </div>
+      {/if}
+    </div>
+  {:else if quizState === 'revealing' && current}
+    <!-- Progress bar (frozen at current position) -->
+    <div class="mb-6">
+      <div class="mb-1 flex justify-between text-xs text-gray-400 dark:text-gray-500">
+        <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
+        <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
+      </div>
+      <div class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+        <div
+          class="h-full rounded-full bg-indigo-500 transition-all duration-300"
+          style="width: {progress}%"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Result card -->
+    <div
+      class="rounded-2xl border {isCorrect
+        ? 'border-green-300 bg-green-50 dark:border-green-700 dark:bg-green-900/20'
+        : 'border-red-300 bg-red-50 dark:border-red-700 dark:bg-red-900/20'} p-6 shadow-sm"
+    >
+      <div class="mb-4 flex items-center gap-2">
+        {#if isCorrect}
+          <span class="text-2xl">&#x2713;</span>
+          <span class="font-semibold text-green-700 dark:text-green-300">{m.quiz_correct()}</span>
+        {:else}
+          <span class="text-2xl">&#x2717;</span>
+          <span class="font-semibold text-red-700 dark:text-red-300">{m.quiz_incorrect()}</span>
+        {/if}
+      </div>
+
+      {#if current.type === 'mc'}
+        {@const q = current as MultipleChoiceQuestion}
+        <div class="mb-4 space-y-2">
+          {#each q.options as option, i (i)}
+            <div
+              class="flex items-center gap-3 rounded-xl px-4 py-2.5 text-sm
+              {i === q.correctIndex
+                ? 'bg-green-100 font-semibold text-green-800 dark:bg-green-800/30 dark:text-green-200'
+                : i === selectedOption && !isCorrect
+                  ? 'bg-red-100 text-red-700 dark:bg-red-800/30 dark:text-red-300'
+                  : 'text-gray-500 dark:text-gray-400'}"
+            >
+              <span
+                class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold
+                {i === q.correctIndex
+                  ? 'bg-green-200 dark:bg-green-700'
+                  : i === selectedOption && !isCorrect
+                    ? 'bg-red-200 dark:bg-red-700'
+                    : 'bg-gray-100 dark:bg-gray-700'}"
+              >
+                {optionLabel(i)}
+              </span>
+              {option}
+              {#if i === q.correctIndex}
+                <span class="ml-auto text-green-600 dark:text-green-400">&#x2713;</span>
+              {:else if i === selectedOption && !isCorrect}
+                <span class="ml-auto text-red-500 dark:text-red-400">&#x2717;</span>
+              {/if}
+            </div>
+          {/each}
+        </div>
+      {:else}
+        {@const q = current as FillBlankQuestion | TypeAnswerQuestion}
+        {#if !isCorrect}
+          <p
+            class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400"
+          >
+            {m.quiz_correct_answer()}
+          </p>
+          <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">{q.answer}</p>
+        {/if}
+        {#if typedAnswer && typedAnswer !== q.answer}
+          <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+            {m.quiz_you_wrote()}
+            <span class="font-medium text-gray-700 dark:text-gray-200"
+              >{typedAnswer || '&#x2014;'}</span
+            >
+          </p>
+        {/if}
+      {/if}
+
+      <!-- Example sentence + audio -->
+      <div class="mt-2 rounded-lg bg-white/60 px-4 py-3 dark:bg-gray-800/60">
+        <p class="text-sm text-gray-700 italic dark:text-gray-300">
+          {current.entry.example}
+        </p>
+        <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
+          {current.entry.example_english}
+        </p>
+        <div class="mt-2 flex items-center gap-2">
+          <SpeakButton word={current.entry.norsk} />
+          <span class="text-xs text-gray-400">
+            {current.entry.part} · {current.entry.level}
+          </span>
+        </div>
+      </div>
+
+      <!-- Actions row -->
+      <div class="mt-5 flex items-center justify-between">
+        {#if isCorrect}
+          <button
+            type="button"
+            onclick={markEasy}
+            class="rounded-md border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-500 hover:border-gray-400 hover:text-gray-700 focus:ring-2 focus:ring-gray-200 focus:outline-none dark:border-gray-600 dark:text-gray-400 dark:hover:border-gray-500 dark:hover:text-gray-200"
+          >
+            {m.quiz_mark_easy()}
+          </button>
+        {:else}
+          <span></span>
+        {/if}
+
+        <button
+          type="button"
+          onclick={nextQuestion}
+          class="rounded-lg bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
+        >
+          {currentIndex < questions.length - 1 ? m.quiz_next() : m.quiz_see_results()}
+        </button>
+      </div>
+      <p class="mt-2 text-right text-xs text-gray-400 dark:text-gray-600">
+        {m.quiz_continue_hint()}
+      </p>
+    </div>
+  {:else if quizState === 'summary'}
+    <div class="text-center">
+      <p class="mb-1 text-5xl">{scoreEmoji(correctCount, questions.length)}</p>
+      <h2 class="mt-3 text-2xl font-bold dark:text-white">{m.quiz_session_done()}</h2>
+      <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
+        {m.quiz_score({ correct: correctCount, total: questions.length })}
+      </p>
+
+      <!-- Per-question result list -->
+      <div class="mt-8 space-y-2 text-left">
+        {#each results as result, i (i)}
+          <div
+            class="flex items-start gap-3 rounded-xl border px-4 py-3 text-sm
+            {result.correct
+              ? 'border-green-200 bg-green-50 dark:border-green-800 dark:bg-green-900/10'
+              : 'border-red-200 bg-red-50 dark:border-red-800 dark:bg-red-900/10'}"
+          >
+            <span class="mt-0.5 text-base {result.correct ? 'text-green-500' : 'text-red-500'}">
+              {result.correct ? '&#x2713;' : '&#x2717;'}
+            </span>
+            <div class="min-w-0 flex-1">
+              <p class="font-medium text-gray-800 dark:text-gray-100">
+                {result.question.entry.norsk}
+                <span class="ml-1 font-normal text-gray-500 dark:text-gray-400">
+                  &#x2014; {result.question.entry.english}
+                </span>
+              </p>
+              {#if !result.correct && result.userAnswer}
+                <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">
+                  {m.quiz_you_answered()}
+                  {result.userAnswer}
+                </p>
+              {/if}
+            </div>
+            <span
+              class="shrink-0 rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-500 dark:bg-gray-700 dark:text-gray-400"
+            >
+              {result.question.type === 'mc'
+                ? m.quiz_type_mc()
+                : result.question.type === 'fill'
+                  ? m.quiz_type_fill()
+                  : m.quiz_type_type()}
+            </span>
+          </div>
+        {/each}
+      </div>
+
+      <!-- Next quiz picker -->
+      <div class="mt-8 space-y-4 text-left">
+        <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Next quiz settings</p>
+        <!-- Level -->
+        <div>
+          <label
+            for="summary-level"
+            class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            {m.quiz_label_level()}
+          </label>
+          <select
+            id="summary-level"
+            bind:value={selectedLevel}
+            onchange={() => {
+              selectedCategory = '';
+            }}
+            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+          >
+            <option value="">{m.quiz_label_all_levels()}</option>
+            {#each availableLevels as level (level)}
+              <option value={level}>{formatLevel(level)}</option>
+            {/each}
+          </select>
+        </div>
+        <!-- Category -->
+        <div>
+          <label
+            for="summary-category"
+            class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            {m.quiz_label_category()}
+            <span class="font-normal text-gray-400">{m.quiz_label_category_optional()}</span>
+          </label>
+          <select
+            id="summary-category"
+            bind:value={selectedCategory}
+            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+          >
+            <option value="">{m.quiz_label_all_categories()}</option>
+            {#each availableCategories as cat (cat)}
+              <option value={cat}>{formatCategory(cat)}</option>
+            {/each}
+          </select>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <button
+          type="button"
+          onclick={startQuiz}
+          disabled={quizEntries.length === 0}
+          class="rounded-lg bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 dark:bg-indigo-500 dark:hover:bg-indigo-600"
+        >
+          {m.quiz_restart()}
+        </button>
+      </div>
+      <p class="mt-4 text-xs text-gray-400 dark:text-gray-600">
+        {m.quiz_restart_hint()}
+      </p>
+    </div>
+  {/if}
+</div>
