@@ -40,8 +40,16 @@ CREATE TABLE public.profiles (
   updated_at timestamp with time zone DEFAULT now(),
   voice_speed numeric NOT NULL DEFAULT 1.0 CHECK (voice_speed = ANY (ARRAY[0.5, 0.75, 1.0, 1.25, 1.5])),
   voice_pitch numeric NOT NULL DEFAULT 1.0 CHECK (voice_pitch = ANY (ARRAY[0.7, 1.0, 1.3])),
+  push_subscription jsonb,
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.study_days (
+  user_id uuid NOT NULL,
+  day date NOT NULL,
+  cards integer NOT NULL DEFAULT 1,
+  CONSTRAINT study_days_pkey PRIMARY KEY (user_id, day),
+  CONSTRAINT study_days_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
 CREATE TABLE public.subscriptions (
   user_id uuid NOT NULL,
