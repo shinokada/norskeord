@@ -1,0 +1,116 @@
+å gjespe: to yawn
+en veske: a bag
+alt: all
+skrivesaker: stationary
+halspastiller: cough drops, throat pastilles
+grønt: green (noun)
+å smelle: to bang, to slap
+et skritt: a step
+trappa: stairs
+å bråke: to make a fuss
+å fnise: to giggle
+å hviske: to whisper
+å bevege seg: to move
+å krype: to crawl
+en dyne: a duvet
+sakte: (adjektiv/adverb) slow/slowly
+trange: narrow
+en stillhet: a silence
+et asylmottak: a asylum reception
+en ventetid: a waiting time
+en slekt: a family
+å vise: to show
+en sysak: a sawing item
+en perle: a pearl
+en trådsnelle: thread spool
+å se på: to look at
+et fang: a lap
+et broderi: an embroidery
+et strikketøy: a knitwear
+en hekleduk: a crochet cloth
+å skrape: to scratch
+en stolbein: a chair leg
+en kjeks: a biscuit
+å nikke: to nod
+en rull: a roll
+en penge­seddel: a banknote
+et kinn: a chin
+en tømrer: a builder
+
+## Home
+
+### på kjøkkenet
+
+en brødrister: a toaster
+en oppvaskmaskin: a dishwasher
+en kjøkkenmaskin: a dough mixer
+en skuff: a drawer
+en tøffel: a slipper
+en vannkoker: kettle
+en fruktskål: fruit bowl
+en tekanne: teapot
+en kaffemaskin: coffee machine
+en søppelbøtte: a trash bin
+en kjele: a boiler, a saucepan
+
+### kom og spis
+
+en kanne: a jug
+en skål: a bowl
+en skje: a spoon
+et spisebord: a dining table
+en frokostblanding: a cereal
+en spagetti: a spagetti
+en duk: a tablecloth
+et salt: a salt
+en pepper: a pepper
+
+### vi slapper av
+
+en lenestol: an armchair
+en krakk: footstool
+en peis: a fireplace
+en pynt: an ornament
+en fjernkontroll: a remote control
+et salongbord: coffee table
+et bilde: a picture
+en pute: a cushion
+en sofa: a sofa
+
+### vaske og rydde
+
+en bøtte: a bucket
+en gummihanske: a rubber glove
+et vaskemiddel: a washing liquid
+en sokk: a sock
+en stikk-kontakt: a plug
+et strykejern: an iron
+et strykebrett: an ironing board
+et feiebrett: a dustpan
+en skurebørste: a scrubbing brush
+en støvsuger: a vacuum cleaner
+en støvkost: a duster
+en kost: a bloom
+en svamp: a sponge
+
+### skal vi leke?
+
+en maling: a paint
+en bok: a book
+en klinkekule: a marble
+en bro: a bridge
+en pult: a desk
+farger: crayons
+en gyngehest: a rocking horse
+leker: toys
+en kloss: a building block
+
+### splisj splasj
+
+en hårbørste: a hairbrush
+en kran: a tap
+en boble: a bubble
+et badekar: a bathtub
+en sjampo: a shampoo
+en gummiand: a rubber duck
+en balsam: a conditioner

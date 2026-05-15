@@ -1,0 +1,102 @@
+[
+  {
+    "norsk": "i tillegg",
+    "lemma": "i tillegg",
+    "english": "in addition, besides",
+    "example": "Jeg snakker norsk, og i tillegg kan jeg litt spansk.",
+    "example_english": "I speak Norwegian, and in addition I know a bit of Spanish.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "stikke innom",
+    "lemma": "stikke innom",
+    "english": "to drop by, to pop in",
+    "example": "Kan du stikke innom meg etter jobb?",
+    "example_english": "Can you drop by my place after work?",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "regne med",
+    "lemma": "regne med",
+    "english": "to count on, to expect, to assume",
+    "example": "Du kan regne med at jeg kommer i tide.",
+    "example_english": "You can count on me arriving on time.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "sette pris på",
+    "lemma": "sette pris på",
+    "english": "to appreciate, to value",
+    "example": "Jeg setter stor pris på at du hjelper meg.",
+    "example_english": "I really appreciate you helping me.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ta vare på",
+    "lemma": "ta vare på",
+    "english": "to take care of, to look after",
+    "example": "Det er viktig å ta vare på helsa si.",
+    "example_english": "It is important to take care of your health.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ikke bare bare",
+    "lemma": "ikke bare bare",
+    "english": "not so simple, not easy at all",
+    "example": "Det er ikke bare bare å flytte til et nytt land.",
+    "example_english": "Moving to a new country is not easy at all.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gå glipp av",
+    "lemma": "gå glipp av",
+    "english": "to miss out on, to miss",
+    "example": "Jeg gikk glipp av konserten fordi jeg var syk.",
+    "example_english": "I missed the concert because I was ill.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "lønne seg",
+    "lemma": "lønne seg",
+    "english": "to be worth it, to pay off",
+    "example": "Det lønner seg å øve norsk hver dag.",
+    "example_english": "It pays off to practise Norwegian every day.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Det nytter ikke",
+    "lemma": "Det nytter ikke",
+    "english": "It's no use, It won't work",
+    "example": "Det nytter ikke å klage — vi må finne en løsning.",
+    "example_english": "It's no use complaining — we need to find a solution.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "rett og slett",
+    "lemma": "rett og slett",
+    "english": "simply, just, plain and simple",
+    "example": "Det er rett og slett ikke godt nok.",
+    "example_english": "It is simply not good enough.",
+    "level": "B1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  }
+]

@@ -988,5 +988,285 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
+  },
+  {
+    "norsk": "komme an på",
+    "lemma": "komme an på",
+    "english": "to depend on",
+    "example": "Det kommer an på været.",
+    "example_english": "It depends on the weather.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde på",
+    "lemma": "holde på",
+    "english": "to be in the middle of, to be busy doing",
+    "example": "Jeg holder på å lage middag.",
+    "example_english": "I am in the middle of making dinner.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "stå til",
+    "lemma": "stå til",
+    "english": "how things are, how it is going",
+    "example": "Hvordan står det til?",
+    "example_english": "How are things going?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "komme på",
+    "lemma": "komme på",
+    "english": "to think of, to remember",
+    "example": "Jeg kommer ikke på navnet hans.",
+    "example_english": "I cannot think of his name.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "legge til",
+    "lemma": "legge til",
+    "english": "to add",
+    "example": "Kan du legge til litt mer salt?",
+    "example_english": "Can you add a little more salt?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ha behov for",
+    "lemma": "ha behov for",
+    "english": "to need, to have a need for",
+    "example": "Jeg har behov for mer søvn.",
+    "example_english": "I need more sleep.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde øye med",
+    "lemma": "holde øye med",
+    "english": "to keep an eye on",
+    "example": "Kan du holde øye med barna?",
+    "example_english": "Can you keep an eye on the children?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde med",
+    "lemma": "holde med",
+    "english": "to support, to side with",
+    "example": "Hvem holder du med?",
+    "example_english": "Who do you support?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde seg fast",
+    "lemma": "holde seg fast",
+    "english": "to hold on tight",
+    "example": "Hold deg fast når bussen starter.",
+    "example_english": "Hold on tight when the bus starts.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "se an",
+    "lemma": "se an",
+    "english": "to wait and see, to assess the situation",
+    "example": "Vi får se an hvordan det går.",
+    "example_english": "We will wait and see how it goes.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "det er bare å",
+    "lemma": "det er bare å",
+    "english": "feel free to, just go ahead and",
+    "example": "Det er bare å spørre hvis du lurer på noe.",
+    "example_english": "Feel free to ask if you are wondering about something.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gå an",
+    "lemma": "gå an",
+    "english": "to be possible, to be acceptable",
+    "example": "Går det an å bytte plass?",
+    "example_english": "Is it possible to swap seats?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ha tenkt",
+    "lemma": "ha tenkt",
+    "english": "to plan to, to intend to",
+    "example": "Jeg har tenkt å begynne å trene.",
+    "example_english": "I plan to start exercising.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde opp",
+    "lemma": "holde opp",
+    "english": "to stop, to cease",
+    "example": "Regnet holdt opp etter en stund.",
+    "example_english": "The rain stopped after a while.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "komme over",
+    "lemma": "komme over",
+    "english": "to come across, to get over",
+    "example": "Jeg kom over en interessant bok i butikken.",
+    "example_english": "I came across an interesting book in the shop.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "skulle til å",
+    "lemma": "skulle til å",
+    "english": "to be about to",
+    "example": "Jeg skulle til å ringe deg.",
+    "example_english": "I was about to call you.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "legge på seg",
+    "lemma": "legge på seg",
+    "english": "to gain weight",
+    "example": "Han har lagt på seg litt i vinter.",
+    "example_english": "He has gained a bit of weight this winter.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "kjenne igjen",
+    "lemma": "kjenne igjen",
+    "english": "to recognise",
+    "example": "Jeg kjente igjen stemmen hennes med en gang.",
+    "example_english": "I recognised her voice immediately.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde til",
+    "lemma": "holde til",
+    "english": "to be located, to be based",
+    "example": "Kontoret holder til i sentrum.",
+    "example_english": "The office is located in the city centre.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "kunne hende",
+    "lemma": "kunne hende",
+    "english": "might happen, it may be that",
+    "example": "Det kan hende vi kommer litt sent.",
+    "example_english": "It might be that we arrive a little late.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "finne sted",
+    "lemma": "finne sted",
+    "english": "to take place",
+    "example": "Konserten finner sted på fredag.",
+    "example_english": "The concert takes place on Friday.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gå tom for",
+    "lemma": "gå tom for",
+    "english": "to run out of",
+    "example": "Vi har gått tom for melk.",
+    "example_english": "We have run out of milk.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "få med seg",
+    "lemma": "få med seg",
+    "english": "to catch, to follow, to understand",
+    "example": "Fikk du med deg hva hun sa?",
+    "example_english": "Did you catch what she said?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gå av",
+    "lemma": "gå av",
+    "english": "to step down, to get off",
+    "example": "Hvor skal du gå av?",
+    "example_english": "Where are you getting off?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gå med på",
+    "lemma": "gå med på",
+    "english": "to agree to, to go along with",
+    "example": "Hun gikk med på forslaget.",
+    "example_english": "She agreed to the proposal.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "bli til",
+    "lemma": "bli til",
+    "english": "to come into being, to become",
+    "example": "Hvordan ble denne tradisjonen til?",
+    "example_english": "How did this tradition come into being?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "være til",
+    "lemma": "være til",
+    "english": "to exist, to be of use",
+    "example": "Er det til hjelp?",
+    "example_english": "Is it of any use?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "la være",
+    "lemma": "la være",
+    "english": "to refrain, to leave alone, to not bother",
+    "example": "La være å røre det!",
+    "example_english": "Leave it alone!",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
   }
 ]

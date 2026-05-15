@@ -3098,5 +3098,35 @@
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
+  },
+  {
+    "norsk": "i hvert fall",
+    "lemma": "i hvert fall",
+    "english": "at least, in any case, anyway",
+    "example": "Jeg er ikke sikker, men i hvert fall bør vi prøve.",
+    "example_english": "I am not sure, but in any case we should try.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ta opp",
+    "lemma": "ta opp",
+    "english": "to bring up, to raise (a topic)",
+    "example": "Han tok opp spørsmålet om finansiering på møtet.",
+    "example_english": "He brought up the question of funding at the meeting.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "sikte til",
+    "lemma": "sikte til",
+    "english": "to refer to, to allude to",
+    "example": "Hva sikter du til når du sier det?",
+    "example_english": "What are you referring to when you say that?",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
   }
 ]

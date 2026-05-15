@@ -33,7 +33,7 @@
 </script>
 
 <section
-  class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800"
+  class="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_sub_heading()}
@@ -82,7 +82,7 @@
           href={billingPortalUrl}
           target="_blank"
           rel="noopener noreferrer"
-          class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+          class="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-white/10 dark:text-gray-300"
         >
           {m.profile_sub_manage_billing()}
         </a>
@@ -106,7 +106,7 @@
         href={billingPortalUrl}
         target="_blank"
         rel="noopener noreferrer"
-        class="mt-4 inline-block rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="mt-4 inline-block rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-white/10 dark:text-gray-300"
       >
         {m.profile_sub_manage_billing()}
       </a>
@@ -118,7 +118,7 @@
 
   <!-- Plus-only notification toggles -->
   {#if isPlus && status !== 'cancelled'}
-    <div class="mt-6 border-t border-gray-100 pt-5 dark:border-gray-700">
+    <div class="mt-6 border-t border-white/10 pt-5">
       <p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_sub_notifications_heading()}
       </p>
@@ -150,7 +150,7 @@
       </div>
     </div>
   {:else if !isPlus}
-    <div class="mt-6 border-t border-gray-100 pt-5 dark:border-gray-700">
+    <div class="mt-6 border-t border-white/10 pt-5">
       <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
         {m.profile_sub_notifications_heading()}
       </p>

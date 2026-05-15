@@ -58,11 +58,17 @@ export const actions: Actions = {
     // card_type radio: 'word' | 'phrase' → stored as include_phrases boolean
     const card_type = data.get('card_type') as string | null;
     const include_phrases = card_type === 'phrase';
+    const voice_speed_raw = data.get('voice_speed') as string | null;
+    const voice_pitch_raw = data.get('voice_pitch') as string | null;
+    const voice_speed = voice_speed_raw ? parseFloat(voice_speed_raw) : null;
+    const voice_pitch = voice_pitch_raw ? parseFloat(voice_pitch_raw) : null;
 
     const validLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     const validLanguages = ['en', 'nb'];
     const validDirections = ['no_en', 'en_no'];
     const validCardTypes = ['word', 'phrase'];
+    const validSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5];
+    const validPitches = [0.7, 1.0, 1.3];
 
     if (target_level && !validLevels.includes(target_level)) {
       return fail(422, { field: 'target_level', message: 'Invalid level.' });
@@ -76,12 +82,20 @@ export const actions: Actions = {
     if (card_type && !validCardTypes.includes(card_type)) {
       return fail(422, { field: 'card_type', message: 'Invalid card type.' });
     }
+    if (voice_speed !== null && !validSpeeds.includes(voice_speed)) {
+      return fail(422, { field: 'voice_speed', message: 'Invalid speed.' });
+    }
+    if (voice_pitch !== null && !validPitches.includes(voice_pitch)) {
+      return fail(422, { field: 'voice_pitch', message: 'Invalid tone.' });
+    }
 
     const update: ProfileUpdate = {
       ...(target_level && { target_level }),
       ...(ui_language && { ui_language }),
       ...(card_direction && { card_direction }),
-      include_phrases
+      include_phrases,
+      ...(voice_speed !== null && { voice_speed }),
+      ...(voice_pitch !== null && { voice_pitch })
     };
 
     const { error } = await upsertProfile(locals.supabase, locals.user.id, update);

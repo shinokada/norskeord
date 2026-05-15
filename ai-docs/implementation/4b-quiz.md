@@ -1,6 +1,6 @@
 # Phase 4-B: Quiz Mode
 
-## Status: ⬜ Not started
+## Status: ✅ Complete
 
 Companion to `monetization-focusd-implementation.md` (Phase 4-B entry).
 
@@ -130,9 +130,9 @@ State lives entirely in the `+page.svelte` component. No server state needed bey
 
 ## Implementation steps
 
-### Step 1 — `getDistractors` helper in `src/lib/quiz.ts` (~30 min)
+### Step 1 — `src/lib/quiz.ts` + `src/lib/quiz.test.ts` (~30 min) ✅ Done
 
-Create `src/lib/quiz.ts`:
+Create `src/lib/quiz.ts` — pure logic, no Svelte, no `$app` imports:
 
 ```ts
 import type { VocabEntry } from '$lib/types';
@@ -271,11 +271,11 @@ function shuffle<T>(arr: T[]): T[] {
 }
 ```
 
-This file is pure logic — no Svelte, no imports from `$app`. Fully unit-testable.
+See the [Testing section](#testing) below for unit test coverage targets. `quiz.test.ts` is created alongside `quiz.ts` in this step.
 
 ---
 
-### Step 2 — Route `src/routes/quiz/+page.ts` (~20 min)
+### Step 2 — Route `src/routes/quiz/+page.ts` (~20 min) ✅ Done
 
 ```ts
 import { redirect } from '@sveltejs/kit';
@@ -318,7 +318,7 @@ export const load: PageLoad = async ({ url, parent }) => {
 
 ---
 
-### Step 3 — `src/routes/quiz/+page.svelte` (~3h)
+### Step 3 — `src/routes/quiz/+page.svelte` (~3h) ✅ Done
 
 High-level structure — implement in this order:
 
@@ -473,9 +473,9 @@ function nextQuestion() {
 
 ---
 
-### Step 4 — Plus gate upsell (`src/routes/quiz/+page.svelte` idle state) (~20 min)
+### Step 4 — Plus gate + Nav link (~20 min) ✅ Done
 
-The `+page.ts` already redirects free users to `/plus?ref=quiz-gate`. No additional gate needed in the template. However, add a small quiz entry point on the home page or in the Nav for Plus users — a "Quiz" link that goes to `/quiz`.
+The `+page.ts` already redirects free users to `/plus?ref=quiz-gate`. No additional gate needed in the template. Add a "Quiz" link in the Nav for Plus users.
 
 In `src/routes/components/Nav.svelte`, add to the authenticated + Plus nav items:
 
@@ -487,7 +487,7 @@ In `src/routes/components/Nav.svelte`, add to the authenticated + Plus nav items
 
 ---
 
-### Step 5 — i18n keys (~20 min)
+### Step 5 — i18n keys (~20 min) ✅ Done
 
 Add to `messages/en.json`:
 
@@ -521,14 +521,14 @@ Add Norwegian translations to `messages/nb.json` for all new keys.
 
 ---
 
-### Step 6 — `/plus` page update (~20 min)
+### Step 6 — `/plus` page update (~20 min) ✅ Done
 
-Add quiz mode to the Plus features section of `src/routes/plus/+page.svelte`:
+Added quiz mode to the Plus features section of `src/routes/plus/+page.svelte`:
 
-- Add a row to the Free vs Plus table: `"Quiz mode" | — | Included`
-- Add a feature card: "Test yourself with quizzes" (4-option MC, fill-in-the-blank, typed answers — all feeding your review schedule)
+- Added a row to the Free vs Plus table: `"Quiz mode" | — | Included`
+- Added a feature card: "Quiz yourself, not just flip" (MC, fill-in-the-blank, typed answers — all feeding the review schedule)
 
-Update `messages/en.json`:
+New keys added to both `messages/en.json` and `messages/nb.json`:
 
 ```json
 "plus_row_quiz": "Quiz mode",
@@ -540,37 +540,85 @@ Update `messages/en.json`:
 
 ---
 
-## Files to create
+### Step 7 — `e2e/quiz.test.ts` (~45 min) ✅ Done
+
+Written at `e2e/quiz.test.ts`. See the [Testing section](#testing) below.
+
+---
+
+## Testing
+
+### Unit tests — `src/lib/quiz.test.ts`
+
+`quiz.ts` is pure logic with no Svelte or `$app` imports, so it runs in the `server` vitest project with no mocking overhead. Tests are written alongside the implementation in Step 1 and are already complete.
+
+**Coverage targets:**
+
+| Function            | What to cover                                                                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `levenshtein`       | identical (0), single sub/insert/delete (1), longer differences, empty strings, symmetry, Norwegian characters (ø, å, æ)                  |
+| `getDistractors`    | returns exactly n, never includes target, never duplicates english, prefers same level, falls back when pool is small, output is shuffled |
+| `buildMCQuestion`   | type 'mc', 4 options, correct present, `correctIndex` accurate, both directions, options unique, correct position is shuffled             |
+| `buildFillQuestion` | type 'fill', answer is `entry.norsk`, blanks verbatim match, fallback prompt on inflected forms                                           |
+| `buildTypeQuestion` | type 'type', prompt is english, answer is norsk                                                                                           |
+| `buildQuizSession`  | respects count, handles pool smaller than count, valid types, 50/25/25 distribution, due before new, future-due cards excluded, empty []  |
+
+`quiz.test.ts` is created alongside `quiz.ts` in Step 1 and covers all of the above (37 tests).
+
+---
+
+### E2E tests — `e2e/quiz.test.ts` (Step 7) ✅ Done
+
+Written at `e2e/quiz.test.ts`. Uses the same Playwright setup as `e2e/flashcard.test.ts`. The Plus plan is injected by intercepting SvelteKit's `__data.json` response and patching the `plan` field.
+
+**Tests implemented:**
+
+| Test                   | What it verifies                                        |
+| ---------------------- | ------------------------------------------------------- |
+| Gate — free redirect   | `/quiz` → `/plus` for unauthenticated users             |
+| Gate — Plus access     | Plus user sees start screen                             |
+| Full session           | Complete 10-question session reaches summary with score |
+| FSRS write             | Answering writes a `progress-*` key to localStorage     |
+| Keyboard A             | Pressing `a` selects first MC option                    |
+| Keyboard Space         | Space advances from reveal to next question             |
+| Restart                | "Try again" from summary returns to question 1          |
+| Plus page table        | `/plus` comparison table includes "Quiz mode" row       |
+| Plus page feature card | `/plus` feature cards include quiz copy                 |
+
+---
+
+## Files created / modified
 
 ```
-src/lib/quiz.ts                          — distractor helper, question builders, session builder
-src/routes/quiz/+page.ts                 — load (Plus gate + data)
-src/routes/quiz/+page.svelte             — quiz UI
+src/lib/quiz.ts                          — distractor helper, question builders, session builder ✅
+src/lib/quiz.test.ts                     — unit tests for quiz.ts ✅
+src/routes/quiz/+page.ts                 — load (Plus gate + data) ✅
+src/routes/quiz/+page.svelte             — quiz UI ✅
+e2e/quiz.test.ts                         — Playwright e2e tests ✅
 ```
 
-## Files to modify
-
 ```
-src/routes/components/Nav.svelte         — add Quiz link for Plus users
-src/routes/plus/+page.svelte             — add quiz to feature table + cards
-messages/en.json                         — new i18n keys
-messages/nb.json                         — Norwegian translations
+src/routes/components/Nav.svelte         — Quiz link for Plus users ✅
+src/routes/plus/+page.svelte             — quiz row + feature card ✅
+messages/en.json                         — all new i18n keys ✅
+messages/nb.json                         — Norwegian translations ✅
 ```
 
 ---
 
 ## Implementation order and effort
 
-| Step | Task                                              | Effort |
-| ---- | ------------------------------------------------- | ------ |
-| 1    | `src/lib/quiz.ts` (helpers + session builder)     | 30 min |
-| 2    | `src/routes/quiz/+page.ts` (load + Plus gate)     | 20 min |
-| 3    | `src/routes/quiz/+page.svelte` (UI state machine) | 3h     |
-| 4    | Nav link for Plus users                           | 20 min |
-| 5    | i18n keys (en + nb)                               | 20 min |
-| 6    | `/plus` page quiz row + feature card              | 20 min |
+| Step | Task                                              | Effort | Status  |
+| ---- | ------------------------------------------------- | ------ | ------- |
+| 1    | `src/lib/quiz.ts` + `quiz.test.ts` (unit tests)   | 30 min | ✅ Done |
+| 2    | `src/routes/quiz/+page.ts` (load + Plus gate)     | 20 min | ✅ Done |
+| 3    | `src/routes/quiz/+page.svelte` (UI state machine) | 3h     | ✅ Done |
+| 4    | Nav link for Plus users                           | 20 min | ✅ Done |
+| 5    | i18n keys (en + nb)                               | 20 min | ✅ Done |
+| 6    | `/plus` page quiz row + feature card              | 20 min | ✅ Done |
+| 7    | `e2e/quiz.test.ts` (Playwright)                   | 45 min | ✅ Done |
 
-**Total:** ~4.5h
+**Total:** ~5.25h
 
 ---
 
@@ -585,5 +633,3 @@ messages/nb.json                         — Norwegian translations
 4. **`easy` override:** After revealing a correct answer, show a small "Mark as easy" button to issue an `easy` rating instead of `good`. This is a one-tap override for words the user finds trivial. Worth including in the initial build.
 
 5. **C1/C2 in distractor pool:** The current plan loads A1–B2 for the distractor pool. C1/C2 data is available but adds loading weight. Omit from the initial build; add later if B2+ quiz users request it.
-
-6. **Playwright tests:** Add at minimum an e2e test covering: free-user redirect to `/plus`, Plus user can start and complete a 10-question session, FSRS progress is written to localStorage after each answer. Mock the vocab JSON imports to keep tests fast.

@@ -1098,5 +1098,55 @@
     "level": "A1",
     "category": "uttrykk",
     "part": "phrase"
+  },
+  {
+    "norsk": "si ifra",
+    "lemma": "si ifra",
+    "english": "to let someone know, to speak up",
+    "example": "Si ifra hvis du trenger hjelp.",
+    "example_english": "Let me know if you need help.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "hoppe over",
+    "lemma": "hoppe over",
+    "english": "to skip",
+    "example": "Kan vi hoppe over denne oppgaven?",
+    "example_english": "Can we skip this task?",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ta imot",
+    "lemma": "ta imot",
+    "english": "to receive, to catch",
+    "example": "Hun tok imot gaven med et smil.",
+    "example_english": "She received the gift with a smile.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "reise seg",
+    "lemma": "reise seg",
+    "english": "to get up, to stand up",
+    "example": "Han reiste seg fra stolen.",
+    "example_english": "He got up from the chair.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "runde av",
+    "lemma": "runde av",
+    "english": "to finish, to round off",
+    "example": "La oss runde av for i dag.",
+    "example_english": "Let us finish up for today.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
   }
 ]

@@ -118,7 +118,7 @@
       </a>
     {/if}
     {#if user}
-      <Avatar class="acs" size="sm" />
+      <Avatar class="acs ml-2.5" size="xs" />
       <Dropdown simple class="w-56" triggeredBy=".acs">
         <DropdownHeader>
           {#if displayName}
@@ -160,22 +160,49 @@
       <MegaMenu {items} triggeredBy="#mega-trigger-{level}" classes={{ ul: '!gap-x-6' }}>
         {#snippet children({ item })}
           {@const locked = !isPlus && item.locked}
-          <a
-            href={locked ? '/plus?ref=category-lock' : item.href}
-            class="{linkClass} {locked ? 'opacity-50' : ''}"
-            title={locked ? m.plus_category_locked() : undefined}
-          >
-            {item.name}{locked ? ' 🔒' : ''}
-          </a>
+          {#if !(isPlus && item.href?.endsWith('/uttrykk-preview'))}
+            <a
+              href={locked ? '/plus?ref=category-lock' : item.href}
+              class="{linkClass} {locked ? 'opacity-50' : ''}"
+              title={locked ? m.plus_category_locked() : undefined}
+            >
+              {item.name}{locked ? ' 🔒' : ''}
+            </a>
+          {/if}
         {/snippet}
       </MegaMenu>
     {/each}
+
+    <!-- Quiz nav item — visible to all, locked for non-Plus -->
+    {#if isPlus}
+      <NavLi
+        href="/quiz"
+        class="cursor-pointer"
+        onclick={(e: MouseEvent) => {
+          if (activeUrl === '/quiz') {
+            e.preventDefault();
+            window.dispatchEvent(new CustomEvent('quiz:reset'));
+          }
+        }}
+      >
+        {m.nav_quiz()}
+      </NavLi>
+    {:else}
+      <NavLi
+        href="/plus?ref=nav-quiz"
+        class="cursor-pointer opacity-60"
+        title={m.nav_quiz_plus_only()}
+      >
+        {m.nav_quiz()} 🔒
+      </NavLi>
+    {/if}
+
     <NavLi class="cursor-pointer">
       More<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
     </NavLi>
     <Dropdown simple class="w-44">
       <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
-      <DropdownItem href="/about">{m.nav_about()}</DropdownItem>
+      <DropdownItem href="/guide">{m.nav_about()}</DropdownItem>
       <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
     </Dropdown>
   </NavUl>
