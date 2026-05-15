@@ -176,6 +176,9 @@ export type Category = (typeof CATEGORIES_BY_LEVEL)[CEFRLevel][number];
  * Categories that require a Plus subscription.
  * Free users can see these in the picker but cannot open them.
  * A1 and A2 are always fully free — not listed here.
+ *
+ * C1 free (first 5): philosophy, academic, formal-writing, rhetoric, complex-emotions
+ * C2 free (first 4): literary, archaic, proverbs, highly-formal
  */
 export const PLUS_CATEGORIES = new Set<string>([
   // B1 — plus-only (22)
@@ -235,12 +238,7 @@ export const PLUS_CATEGORIES = new Set<string>([
   'a1/uttrykk',
   'a2/uttrykk',
   'b1/uttrykk',
-  // C1 — all plus
-  'c1/philosophy',
-  'c1/academic',
-  'c1/formal-writing',
-  'c1/rhetoric',
-  'c1/complex-emotions',
+  // C1 — first 5 free; rest plus-only
   'c1/professional',
   'c1/abstract-concepts',
   'c1/politics-democracy',
@@ -251,11 +249,7 @@ export const PLUS_CATEGORIES = new Set<string>([
   'c1/finance-economics',
   'c1/medicine-healthcare',
   'c1/psychology-advanced',
-  // C2 — all plus
-  'c2/literary',
-  'c2/archaic',
-  'c2/proverbs',
-  'c2/highly-formal',
+  // C2 — first 4 free; rest plus-only
   'c2/technical',
   'c2/nuanced-distinctions',
   'c2/advanced-law-justice',

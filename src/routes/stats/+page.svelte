@@ -1,17 +1,30 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { page } from '$app/state';
-  import { loadProgressMap, countDueToday } from '$lib/progress';
+  import {
+    loadProgressMap,
+    countDueToday,
+    getStreakFromLocalStorage,
+    loadStudyDays,
+    buildActivityGrid
+  } from '$lib/progress';
+  import type { ActivityCell } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/types';
   import { State } from 'ts-fsrs';
   import type { CardProgress, CEFRLevel } from '$lib/types';
   import * as m from '$lib/paraglide/messages.js';
   import CategoryBarChart from '$lib/components/CategoryBarChart.svelte';
+  import ActivityChart from '$lib/components/ActivityChart.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
   let confirmReset = $state(false);
   let mounted = $state(false);
+
+  // Activity chart state
+  let activityCells = $state<ActivityCell[]>([]);
+  let streak = $state(0);
+  let activityLoading = $state(true);
 
   // 3-A: plan gate
   let user = $derived(page.data.user);
@@ -137,9 +150,31 @@
   const cefrEstimate = $derived(getCefrEstimate(allCards));
 
   // ── Lifecycle ─────────────────────────────────────────────────────────────────
-  onMount(() => {
+  onMount(async () => {
     progressMap = loadProgressMap();
     mounted = true;
+
+    // Load activity chart — free users use localStorage, Plus users use Supabase
+    const userId = page.data.user?.id as string | undefined;
+    if (isPlus && userId) {
+      // Plus: load from study_days table
+      const studyDays = await loadStudyDays(userId);
+      activityCells = buildActivityGrid(studyDays, 26);
+      streak = getStreakFromLocalStorage(progressMap);
+    } else {
+      // Free: derive from localStorage lastSeen values
+      const localStudyDays: Record<string, number> = {};
+      for (const p of Object.values(progressMap)) {
+        if (p.lastSeen) {
+          const d = new Date(p.lastSeen);
+          const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+          localStudyDays[key] = (localStudyDays[key] ?? 0) + 1;
+        }
+      }
+      activityCells = buildActivityGrid(localStudyDays, 26);
+      streak = getStreakFromLocalStorage(progressMap);
+    }
+    activityLoading = false;
   });
 
   function handleReset() {
@@ -180,7 +215,7 @@
   {:else if totalSeen === 0}
     <!-- Empty state -->
     <div
-      class="rounded-xl border border-gray-200 bg-gray-50 p-10 text-center dark:border-gray-700 dark:bg-gray-800/40"
+      class="rounded-xl border border-white/10 bg-white/5 p-10 text-center backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
     >
       <p class="text-2xl">📚</p>
       <p class="mt-3 text-lg font-medium dark:text-white">{m.stats_empty_heading()}</p>
@@ -203,11 +238,19 @@
       <p class="mt-1 text-base text-gray-800 dark:text-gray-200">{cefrEstimate}</p>
     </div>
 
+    <!-- ── Activity chart ────────────────────────────────────────────────────── -->
+    <div
+      class="mb-6 rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
+    >
+      <p class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Activity</p>
+      <ActivityChart cells={activityCells} {streak} loading={activityLoading} />
+    </div>
+
     <!-- ── Summary cards ──────────────────────────────────────────────────────── -->
     <div class="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
       {#each [{ label: m.stats_cards_seen(), value: totalSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_due_today(), value: dueToday, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_in_review(), value: byState.review, color: 'text-green-600 dark:text-green-400' }, { label: m.stats_relearning(), value: byState.relearning, color: 'text-orange-600 dark:text-orange-400' }] as stat (stat.label)}
         <div
-          class="rounded-xl border border-gray-200 bg-white p-4 text-center dark:border-gray-700 dark:bg-gray-800"
+          class="rounded-xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
         >
           <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
           <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{stat.label}</p>
@@ -220,7 +263,7 @@
     <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
       {#each levelStats as ls (ls.level)}
         <div
-          class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800"
+          class="rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
         >
           <div class="mb-2 flex items-center justify-between">
             <span class="font-semibold {levelTextColors[ls.level]}">{ls.level}</span>
@@ -231,7 +274,7 @@
             </span>
           </div>
           <!-- Stacked progress bar -->
-          <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-gray-700">
+          <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
             {#if ls.seen > 0}
               <div class="flex h-full">
                 {#if ls.learning > 0}
@@ -312,7 +355,7 @@
     {/if}
 
     <!-- ── Reset ──────────────────────────────────────────────────────────────── -->
-    <div class="mt-8 border-t border-gray-200 pt-8 dark:border-gray-700">
+    <div class="mt-8 border-t border-white/10 pt-8">
       <h2 class="mb-2 text-base font-semibold text-gray-700 dark:text-gray-300">
         {m.stats_danger_zone()}
       </h2>
@@ -332,7 +375,7 @@
           </button>
           <button
             onclick={() => (confirmReset = false)}
-            class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+            class="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-white/10 dark:text-gray-300"
           >
             {m.stats_cancel()}
           </button>

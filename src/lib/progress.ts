@@ -291,6 +291,7 @@ export function saveProgress(
   // Only run for Plus users (userId is null for free users).
   if (userId) {
     void pushRowToSupabase(userId, entry.norsk, updated);
+    void recordStudyDay(userId);
 
     // Check if this rating crosses an optimisation milestone.
     const totalReps = Object.values({ ...progressMap, [entry.norsk]: updated }).reduce(
@@ -306,6 +307,114 @@ export function saveProgress(
 export function countDueToday(progressMap: Record<string, CardProgress>): number {
   const now = new Date();
   return Object.values(progressMap).filter((p) => new Date(p.fsrs.due) <= now).length;
+}
+
+// ── Streak + activity helpers ──────────────────────────────────────────────────
+
+/**
+ * Returns today's date as a YYYY-MM-DD string in the user's local timezone.
+ */
+export function todayLocalDate(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+/**
+ * Counts the current streak (consecutive calendar days with at least one card
+ * reviewed) using `lastSeen` values from localStorage. Works entirely
+ * client-side — used for free users and as an immediate value before the
+ * Supabase `study_days` fetch completes.
+ */
+export function getStreakFromLocalStorage(progressMap: Record<string, CardProgress>): number {
+  const studiedDates = new Set<string>();
+  for (const p of Object.values(progressMap)) {
+    if (p.lastSeen) {
+      const d = new Date(p.lastSeen);
+      studiedDates.add(
+        `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+      );
+    }
+  }
+
+  let streak = 0;
+  const cursor = new Date();
+  // If today has no activity yet, start counting from yesterday
+  const todayStr = todayLocalDate();
+  if (!studiedDates.has(todayStr)) {
+    cursor.setDate(cursor.getDate() - 1);
+  }
+
+  while (true) {
+    const dateStr = `${cursor.getFullYear()}-${String(cursor.getMonth() + 1).padStart(2, '0')}-${String(cursor.getDate()).padStart(2, '0')}`;
+    if (!studiedDates.has(dateStr)) break;
+    streak++;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+
+  return streak;
+}
+
+/**
+ * Upserts a study_days row for today, incrementing the card count.
+ * Fire-and-forget — called from saveProgress for Plus users.
+ */
+export async function recordStudyDay(userId: string): Promise<void> {
+  try {
+    const today = todayLocalDate();
+    // Use raw SQL upsert with increment via RPC to avoid a read-modify-write
+    await supabase.rpc('upsert_study_day', { p_user_id: userId, p_day: today });
+  } catch {
+    // Silent failure — streak data is non-critical
+  }
+}
+
+/**
+ * Fetches all study_days rows for a Plus user.
+ * Returns a map of { 'YYYY-MM-DD': cardCount }.
+ */
+export async function loadStudyDays(userId: string): Promise<Record<string, number>> {
+  const { data } = await supabase.from('study_days').select('day, cards').eq('user_id', userId);
+  const result: Record<string, number> = {};
+  if (data) {
+    for (const row of data as { day: string; cards: number }[]) {
+      result[row.day] = row.cards;
+    }
+  }
+  return result;
+}
+
+export interface ActivityCell {
+  date: string; // YYYY-MM-DD
+  count: number; // cards reviewed that day
+  level: 0 | 1 | 2 | 3 | 4; // 0=none 1=1-5 2=6-15 3=16-30 4=30+
+  weekday: 1 | 3 | 5; // 1=Mon 3=Wed 5=Fri
+}
+
+/**
+ * Builds the Mon/Wed/Fri activity grid for the chart.
+ * Returns cells in chronological order (oldest first).
+ * @param studyDays  Map of { 'YYYY-MM-DD': cardCount }
+ * @param weeks      How many weeks back to include (default 12)
+ */
+export function buildActivityGrid(studyDays: Record<string, number>, weeks = 12): ActivityCell[] {
+  const cells: ActivityCell[] = [];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // Walk back `weeks * 7` days, collect Mon/Wed/Fri only
+  const totalDays = weeks * 7;
+  for (let i = totalDays - 1; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const wd = d.getDay(); // 0=Sun 1=Mon ... 5=Fri 6=Sat
+    if (wd !== 1 && wd !== 3 && wd !== 5) continue;
+    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const count = studyDays[dateStr] ?? 0;
+    const level: ActivityCell['level'] =
+      count === 0 ? 0 : count <= 5 ? 1 : count <= 15 ? 2 : count <= 30 ? 3 : 4;
+    cells.push({ date: dateStr, count, level, weekday: wd as 1 | 3 | 5 });
+  }
+  return cells;
 }
 
 // ── Rating preview ───────────────────────────────────────────────────────────

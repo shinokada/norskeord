@@ -28,7 +28,7 @@
 </script>
 
 <section
-  class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800"
+  class="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_account_heading()}
@@ -78,7 +78,7 @@
         maxlength="40"
         value={profile?.display_name ?? ''}
         placeholder={m.profile_account_display_name_placeholder()}
-        class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none sm:max-w-xs dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+        class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none sm:max-w-xs dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100 dark:placeholder-gray-500"
       />
       {#if errorMsg}
         <p class="mt-1 text-xs text-red-500">{errorMsg}</p>
@@ -104,7 +104,7 @@
   </form>
 
   <!-- Export data -->
-  <div class="mt-6 border-t border-gray-100 pt-5 dark:border-gray-700">
+  <div class="mt-6 border-t border-white/10 pt-5 dark:border-white/10">
     <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -115,7 +115,7 @@
       <button
         type="button"
         onclick={handleExport}
-        class="mt-2 shrink-0 rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 sm:mt-0 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="mt-2 shrink-0 rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-white/10 sm:mt-0 dark:text-gray-300"
       >
         {m.profile_account_export_button()}
       </button>

@@ -160,7 +160,7 @@
       <MegaMenu {items} triggeredBy="#mega-trigger-{level}" classes={{ ul: '!gap-x-6' }}>
         {#snippet children({ item })}
           {@const locked = !isPlus && item.locked}
-          {#if !(isPlus && item.href.endsWith('/uttrykk-preview'))}
+          {#if !(isPlus && item.href?.endsWith('/uttrykk-preview'))}
             <a
               href={locked ? '/plus?ref=category-lock' : item.href}
               class="{linkClass} {locked ? 'opacity-50' : ''}"
@@ -202,7 +202,7 @@
     </NavLi>
     <Dropdown simple class="w-44">
       <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
-      <DropdownItem href="/about">{m.nav_about()}</DropdownItem>
+      <DropdownItem href="/guide">{m.nav_about()}</DropdownItem>
       <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
     </Dropdown>
   </NavUl>

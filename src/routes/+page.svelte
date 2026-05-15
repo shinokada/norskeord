@@ -7,21 +7,24 @@
 
   // Only auto-redirect on direct/fresh page loads (from === null),
   // not when the user explicitly navigates home via an in-app link.
-  afterNavigate(async ({ from }) => {
-    if (from !== null) return;
-    const last = localStorage.getItem('last-flashcard-path');
-    if (last && validFlashcardPathPattern.test(last)) {
-      try {
-        // eslint-disable-next-line svelte/no-navigation-without-resolve
-        await goto(last, { replaceState: true });
-      } catch {
+  afterNavigate(async ({ from, complete }) => {
+    if (from === null) {
+      const last = localStorage.getItem('last-flashcard-path');
+      if (last && validFlashcardPathPattern.test(last)) {
+        try {
+          // eslint-disable-next-line svelte/no-navigation-without-resolve
+          await goto(last as Parameters<typeof goto>[0], { replaceState: true });
+        } catch {
+          localStorage.removeItem('last-flashcard-path');
+        }
+      } else if (last) {
         localStorage.removeItem('last-flashcard-path');
       }
-    } else if (last) {
-      localStorage.removeItem('last-flashcard-path');
     }
+    await complete;
   });
 
+  let user = $derived(page.data.user);
   let isPlus = $derived(page.data.plan === 'plus');
 
   const levels = [
@@ -135,6 +138,7 @@
   }
 
   type BadgeColor = 'green' | 'teal' | 'blue' | 'indigo' | 'purple' | 'pink';
+
   const badgeColors: Record<BadgeColor, string> = {
     green: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
     teal: 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200',
@@ -144,17 +148,37 @@
     pink: 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200'
   };
 
+  // Card left-border accent and heading colour per level
+  const cardAccents: Record<BadgeColor, { heading: string }> = {
+    green: { heading: 'text-green-700 dark:text-green-400' },
+    teal: { heading: 'text-teal-700 dark:text-teal-400' },
+    blue: { heading: 'text-blue-700 dark:text-blue-400' },
+    indigo: { heading: 'text-indigo-700 dark:text-indigo-400' },
+    purple: { heading: 'text-purple-700 dark:text-purple-400' },
+    pink: { heading: 'text-pink-700 dark:text-pink-400' }
+  };
+
   const features = [
-    { icon: '🧠', label: 'Smart scheduling', href: '/about' },
+    { icon: '🧠', label: 'Smart scheduling', href: '/guide' },
     { icon: '🔊', label: 'Audio on every card', href: null },
     { icon: '📚', label: 'A1–C2 vocabulary', href: null },
     { icon: '🎯', label: 'Norskprøven prep', href: '/norskproven' }
   ];
+
+  // QR code share widget
+  let showQr = $state(false);
+  const APP_URL = 'https://norskeord.no/';
+
+  // Count visible categories per level (excluding uttrykk-preview for plus users)
+  function visibleCategoryCount(levelId: string): number {
+    const cats = CATEGORIES_BY_LEVEL[levelId as keyof typeof CATEGORIES_BY_LEVEL];
+    return cats.filter((cat) => !(isPlus && cat === 'uttrykk-preview')).length;
+  }
 </script>
 
 <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
 <div
-  class="relative -mx-4 mt-8 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-20 text-center"
+  class="relative mt-8 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-20 text-center"
 >
   <!-- Decorative blur blobs -->
   <div
@@ -172,7 +196,7 @@
     </div>
 
     <h1 class="mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
-      Learn Norwegian vocabulary/phrase that <span class="text-indigo-300">actually sticks</span>
+      Learn Norwegian vocabulary & phrase that <span class="text-indigo-300">actually sticks</span>
     </h1>
 
     <p class="mb-6 text-lg leading-relaxed text-indigo-100/80">
@@ -181,25 +205,55 @@
     </p>
 
     <div class="flex flex-wrap justify-center gap-3">
-      <a
-        href="#deck-picker"
-        class="rounded-xl bg-white px-6 py-3 text-sm font-bold text-indigo-900 shadow-lg transition hover:bg-indigo-50"
-      >
-        Browse decks →
-      </a>
-      <a
-        href="/norskproven"
-        class="rounded-xl border border-indigo-300/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
-      >
-        Norskprøven prep
-      </a>
+      {#if !user}
+        <a
+          href="/auth/login"
+          class="rounded-xl border border-indigo-200/25 px-6 py-3 text-sm font-medium text-indigo-200/80 transition hover:border-indigo-200/50 hover:text-white"
+        >
+          Get started free →
+        </a>
+      {/if}
     </div>
+
+    {#if !user}
+      <p class="mt-3 text-xs text-indigo-300/50">Free forever — no credit card required</p>
+    {/if}
+
+    <!-- Share / QR toggle -->
+    <div class="mt-6 flex justify-center">
+      <button
+        type="button"
+        onclick={() => (showQr = !showQr)}
+        class="inline-flex items-center gap-1.5 rounded-full border border-indigo-300/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-indigo-200 backdrop-blur-sm transition hover:bg-white/20"
+      >
+        📱 {showQr ? 'Hide QR code' : 'Share this app'}
+      </button>
+    </div>
+
+    {#if showQr}
+      <div class="mt-4 flex flex-col items-center gap-2">
+        <div class="rounded-xl bg-white p-3 shadow-lg">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data={encodeURIComponent(
+              APP_URL
+            )}"
+            alt="QR code for norskeord.no"
+            width="160"
+            height="160"
+            class="block"
+          />
+        </div>
+        <p class="text-xs text-indigo-200/70">
+          Scan to open <strong class="text-indigo-200">norskeord.no</strong> on any device
+        </p>
+      </div>
+    {/if}
   </div>
 </div>
 
 <!-- ── Social proof / feature strip ────────────────────────────────────── -->
 <div
-  class="relative -mx-4 mb-12 border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900/60"
+  class="relative mb-12 border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-rose-700"
 >
   <div
     class="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5"
@@ -218,19 +272,35 @@
 </div>
 
 <!-- ── Deck picker ──────────────────────────────────────────────────────── -->
-<div id="deck-picker" class="scroll-mt-20 space-y-10 text-left">
+<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
   {#each levels as level (level.id)}
     {@const categories = CATEGORIES_BY_LEVEL[level.id]}
     {@const badge = badgeColors[level.color]}
-    <div>
-      <h2 class="mb-3 text-xl font-semibold dark:text-white">{level.label()}</h2>
+    {@const accent = cardAccents[level.color]}
+    {@const count = visibleCategoryCount(level.id)}
+    <div
+      class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm
+             dark:border-white/10 dark:bg-indigo-950/60"
+    >
+      <!-- Card header -->
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-lg font-bold {accent.heading}">{level.label()}</h2>
+        <span
+          class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-500
+                 dark:bg-gray-700 dark:text-gray-400"
+        >
+          {count} decks
+        </span>
+      </div>
+
+      <!-- Category pills -->
       <div class="flex flex-wrap gap-2">
         {#each categories as cat (cat)}
           {#if !(isPlus && cat === 'uttrykk-preview')}
             {@const locked = !isPlus && isPlusCategory(level.id, cat)}
             <a
               href={locked ? '/plus?ref=category-lock' : `/${level.id.toLowerCase()}/${cat}`}
-              class="{badge} rounded-full px-4 py-0.5 font-medium transition-opacity hover:opacity-75
+              class="{badge} rounded-full px-3 py-0.5 text-sm font-medium transition-opacity hover:opacity-75
                      {locked ? 'cursor-default opacity-60' : ''}"
               title={locked ? m.plus_category_locked() : undefined}
             >
