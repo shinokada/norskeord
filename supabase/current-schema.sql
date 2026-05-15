@@ -38,6 +38,8 @@ CREATE TABLE public.profiles (
   ls_renews_at timestamp with time zone,
   ls_ends_at timestamp with time zone,
   updated_at timestamp with time zone DEFAULT now(),
+  voice_speed numeric NOT NULL DEFAULT 1.0 CHECK (voice_speed = ANY (ARRAY[0.5, 0.75, 1.0, 1.25, 1.5])),
+  voice_pitch numeric NOT NULL DEFAULT 1.0 CHECK (voice_pitch = ANY (ARRAY[0.7, 1.0, 1.3])),
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
 );
