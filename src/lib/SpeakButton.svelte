@@ -3,9 +3,11 @@
 
   interface Props {
     word: string;
+    /** Button label text. Defaults to "Pronounce". Use "Pronounce phrase" for multi-word entries. */
+    label?: string;
   }
 
-  let { word }: Props = $props();
+  let { word, label = 'Pronounce' }: Props = $props();
 
   const LS_SPEED = 'voice-settings-speed';
   const LS_PITCH = 'voice-settings-pitch';
@@ -112,8 +114,8 @@
   type="button"
   onclick={speak}
   class="inline-flex items-center gap-1.5 rounded-lg bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
-  title="Pronounce Norwegian word"
-  aria-label="Pronounce {word}"
+  title="{label} in Norwegian"
+  aria-label="{label}: {word}"
 >
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
     <path
@@ -123,5 +125,5 @@
       d="M15.932 7.757a.75.75 0 0 1 1.061 0 6 6 0 0 1 0 8.486.75.75 0 0 1-1.06-1.061 4.5 4.5 0 0 0 0-6.364.75.75 0 0 1 0-1.061Z"
     />
   </svg>
-  Pronounce
+  {label}
 </button>

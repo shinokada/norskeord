@@ -47,3 +47,39 @@ create policy "Users can read their own subscription"
 
 -- Service role (used by webhook handler) can insert/update subscriptions.
 -- No RLS policy needed for that — the webhook uses the service role key server-side.
+
+-- ── study_days ─────────────────────────────────────────────────────────────────
+-- One row per (user, calendar date). Upserted by saveProgress for Plus users.
+-- Free users compute streaks client-side from localStorage.
+create table if not exists study_days (
+  user_id   uuid references auth.users(id) on delete cascade not null,
+  day       date not null,
+  cards     int not null default 1,
+  primary key (user_id, day)
+);
+
+alter table study_days enable row level security;
+
+create policy "Users manage own study days"
+  on study_days for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+-- ── profiles.push_subscription ─────────────────────────────────────────────────
+-- Web Push subscription JSON stored per Plus user.
+-- Written by POST /api/push/subscribe, deleted on unsubscribe.
+alter table profiles add column if not exists push_subscription jsonb default null;
+
+-- ── upsert_study_day RPC ───────────────────────────────────────────────────────
+-- Increments the card count for a given user/day, inserting if absent.
+-- Called from the client via supabase.rpc() to avoid a read-modify-write race.
+create or replace function upsert_study_day(p_user_id uuid, p_day date)
+returns void
+language sql
+security definer
+as $
+  insert into study_days (user_id, day, cards)
+  values (p_user_id, p_day, 1)
+  on conflict (user_id, day)
+  do update set cards = study_days.cards + 1;
+$;

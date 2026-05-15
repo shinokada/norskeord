@@ -4,7 +4,7 @@ import { injectPlusPlan } from './helpers.js';
 test('home page has expected h1', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'Learn Norwegian vocabulary/phrase that actually sticks'
+    'Learn Norwegian vocabulary & phrase that actually sticks'
   );
 });
 
@@ -86,13 +86,14 @@ test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ 
   await expect(page.getByRole('button', { name: /good/i })).toBeVisible();
 });
 
-// Plus member: free user is redirected away from C1 philosophy
-test('free user is redirected from C1 philosophy to /plus', async ({ page }) => {
-  await page.goto('/c1/philosophy');
+// free user is redirected away from a Plus-only C1 category (linguistics is Plus-only)
+test('free user is redirected from C1 linguistics to /plus', async ({ page }) => {
+  await page.goto('/c1/linguistics');
+  await page.waitForURL(/\/plus/, { timeout: 10000 });
   await expect(page).toHaveURL(/\/plus/);
 });
 
 test('about page has expected h1', async ({ page }) => {
   await page.goto('/about');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('About Norskeord');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Guide to Norskeord');
 });
