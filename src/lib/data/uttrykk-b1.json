@@ -2148,5 +2148,195 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase"
+  },
+  {
+    "norsk": "se for seg",
+    "lemma": "se for seg",
+    "english": "to imagine, to picture",
+    "example": "Kan du se for deg hvordan det vil se ut?",
+    "example_english": "Can you imagine what it will look like?",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "trekke frem",
+    "lemma": "trekke frem",
+    "english": "to highlight, to bring up, to point out",
+    "example": "Hun trakk frem et viktig poeng i debatten.",
+    "example_english": "She highlighted an important point in the debate.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "komme av",
+    "lemma": "komme av",
+    "english": "to be caused by, to stem from",
+    "example": "Hva kommer det av at du er så trøtt?",
+    "example_english": "What is causing you to be so tired?",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gå opp for",
+    "lemma": "gå opp for",
+    "english": "to realise, to dawn on",
+    "example": "Det går opp for meg at jeg har gjort en feil.",
+    "example_english": "I am realising that I have made a mistake.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde ved like",
+    "lemma": "holde ved like",
+    "english": "to maintain, to keep up",
+    "example": "Det er viktig å holde norskkunnskapene ved like.",
+    "example_english": "It is important to maintain your Norwegian skills.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "finne opp",
+    "lemma": "finne opp",
+    "english": "to invent",
+    "example": "Hvem fant opp telefonen?",
+    "example_english": "Who invented the telephone?",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "legge opp til",
+    "lemma": "legge opp til",
+    "english": "to plan for, to facilitate, to set up",
+    "example": "Læreren la opp til en åpen diskusjon.",
+    "example_english": "The teacher set up an open discussion.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "gi etter",
+    "lemma": "gi etter",
+    "english": "to give in, to yield",
+    "example": "Til slutt ga han etter og sa ja.",
+    "example_english": "In the end he gave in and said yes.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "stå fram som",
+    "lemma": "stå fram som",
+    "english": "to come out as, to present oneself as",
+    "example": "Han står fram som en tydelig leder.",
+    "example_english": "He presents himself as a clear leader.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "stå på spill",
+    "lemma": "stå på spill",
+    "english": "to be at stake",
+    "example": "Det står mye på spill for begge parter.",
+    "example_english": "A lot is at stake for both parties.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ta tak i",
+    "lemma": "ta tak i",
+    "english": "to address, to tackle, to deal with",
+    "example": "Vi må ta tak i dette problemet nå.",
+    "example_english": "We need to tackle this problem now.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "holde mål",
+    "lemma": "holde mål",
+    "english": "to meet the standard, to hold up",
+    "example": "Kvaliteten på arbeidet hans holder ikke mål.",
+    "example_english": "The quality of his work does not meet the standard.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ligge godt an",
+    "lemma": "ligge godt an",
+    "english": "to be in a good position, to be on track",
+    "example": "Vi ligger godt an til å nå målet.",
+    "example_english": "We are in a good position to reach the target.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "slå til",
+    "lemma": "slå til",
+    "english": "to strike, to happen suddenly, to work out",
+    "example": "Sykdommen slo til plutselig.",
+    "example_english": "The illness struck suddenly.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "ta fatt på",
+    "lemma": "ta fatt på",
+    "english": "to embark on, to set about",
+    "example": "Vi tok fatt på den lange vandringen tidlig om morgenen.",
+    "example_english": "We embarked on the long hike early in the morning.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "slå an",
+    "lemma": "slå an",
+    "english": "to become popular, to catch on",
+    "example": "Den nye trenden slo an blant unge.",
+    "example_english": "The new trend caught on among young people.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "skulle til",
+    "lemma": "skulle til",
+    "english": "what is required, what it takes",
+    "example": "Hva skal til for å lykkes?",
+    "example_english": "What does it take to succeed?",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "komme overens",
+    "lemma": "komme overens",
+    "english": "to get along, to get on well",
+    "example": "De to kollegene kommer veldig godt overens.",
+    "example_english": "The two colleagues get along very well.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "norsk": "finne tonen",
+    "lemma": "finne tonen",
+    "english": "to hit it off, to find common ground",
+    "example": "De fant tonen med en gang de møttes.",
+    "example_english": "They hit it off as soon as they met.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
   }
 ]

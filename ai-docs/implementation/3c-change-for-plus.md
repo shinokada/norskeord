@@ -1,6 +1,6 @@
 # Phase 3-C: Content Gating Strategy — Categories & Phrases
 
-## Status: ⬜ Not started
+## Status: Done
 
 Companion to `3b-lemonsqueezy-plan.md` (payment wiring) and `monetization-focusd-plan.md` (strategy).
 This document defines **what content is gated**, **why**, and **how to implement it**.

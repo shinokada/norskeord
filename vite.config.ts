@@ -68,6 +68,7 @@ export default defineConfig(({ mode }) => ({
     paraglideVitePlugin({ project: './project.inlang', outdir: './src/lib/paraglide' })
   ],
   define: {
+    __VAPID_PUBLIC_KEY__: JSON.stringify(process.env.PUBLIC_VAPID_KEY ?? ''),
     __NAME__: JSON.stringify(pkg.name),
     __DESCRIPTION__: JSON.stringify(pkg.description),
     __VERSION__: JSON.stringify(pkg.version),

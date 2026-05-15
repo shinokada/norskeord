@@ -7,7 +7,9 @@
   let errorMsg = $state('');
 </script>
 
-<section class="rounded-xl border border-red-200 bg-white p-6 dark:border-red-900 dark:bg-gray-800">
+<section
+  class="rounded-xl border border-red-300/30 bg-white/5 p-6 backdrop-blur-sm dark:border-red-800/40 dark:bg-red-950/20"
+>
   <h2 class="mb-1 text-base font-semibold text-red-600 dark:text-red-400">
     {m.profile_danger_heading()}
   </h2>
@@ -58,7 +60,7 @@
           <button
             type="button"
             onclick={() => (confirmed = false)}
-            class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+            class="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-white/10 dark:text-gray-300"
           >
             {m.profile_cancel()}
           </button>

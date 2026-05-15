@@ -40,6 +40,10 @@
   let results: QuizResult[] = $state([]);
   let inputRef: HTMLInputElement | null = $state(null);
 
+  // Toast for "Mark as easy" confirmation
+  let showToast = $state(false);
+  let toastTimer: ReturnType<typeof setTimeout> | null = null;
+
   // Idle picker state.
   // untrack() prevents Svelte registering data as a reactive dependency of the
   // $state initializer, fixing the state_referenced_locally warning.
@@ -95,7 +99,10 @@
       progressMap = loadProgressMap();
     }
     window.addEventListener('quiz:reset', handleQuizReset);
-    return () => window.removeEventListener('quiz:reset', handleQuizReset);
+    return () => {
+      window.removeEventListener('quiz:reset', handleQuizReset);
+      if (toastTimer) clearTimeout(toastTimer);
+    };
   });
 
   // Quiz control
@@ -155,6 +162,12 @@
   function markEasy() {
     if (!current || quizState !== 'revealing') return;
     progressMap = saveProgress(current.entry, 'easy', progressMap, userId);
+    // Show a brief confirmation toast
+    showToast = true;
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      showToast = false;
+    }, 2500);
   }
 
   function nextQuestion() {
@@ -232,6 +245,7 @@
   }
 
   function formatCategory(cat: string): string {
+    if (cat === 'uttrykk') return 'Uttrykk (Phrases)';
     return cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   }
 
@@ -249,6 +263,29 @@
 </script>
 
 <svelte:window onkeydown={handleKeyDown} />
+
+<!-- "Mark as easy" confirmation toast (fixed, bottom-centre) -->
+{#if showToast}
+  <div class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2" role="status" aria-live="polite">
+    <div
+      class="flex items-center gap-2 rounded-xl bg-green-600 px-5 py-3 text-sm font-medium text-white shadow-lg"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-4 w-4 shrink-0"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      Marked as easy
+    </div>
+  </div>
+{/if}
 
 <div class="mx-auto max-w-2xl px-4 py-8">
   {#if quizState === 'idle'}
@@ -469,10 +506,10 @@
     >
       <div class="mb-4 flex items-center gap-2">
         {#if isCorrect}
-          <span class="text-2xl">&#x2713;</span>
+          <span class="text-2xl">✓</span>
           <span class="font-semibold text-green-700 dark:text-green-300">{m.quiz_correct()}</span>
         {:else}
-          <span class="text-2xl">&#x2717;</span>
+          <span class="text-2xl">✗</span>
           <span class="font-semibold text-red-700 dark:text-red-300">{m.quiz_incorrect()}</span>
         {/if}
       </div>
@@ -501,9 +538,9 @@
               </span>
               {option}
               {#if i === q.correctIndex}
-                <span class="ml-auto text-green-600 dark:text-green-400">&#x2713;</span>
+                <span class="ml-auto text-green-600 dark:text-green-400">✓</span>
               {:else if i === selectedOption && !isCorrect}
-                <span class="ml-auto text-red-500 dark:text-red-400">&#x2717;</span>
+                <span class="ml-auto text-red-500 dark:text-red-400">✗</span>
               {/if}
             </div>
           {/each}
@@ -521,26 +558,32 @@
         {#if typedAnswer && typedAnswer !== q.answer}
           <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
             {m.quiz_you_wrote()}
-            <span class="font-medium text-gray-700 dark:text-gray-200"
-              >{typedAnswer || '&#x2014;'}</span
-            >
+            <span class="font-medium text-gray-700 dark:text-gray-200">{typedAnswer || '—'}</span>
           </p>
         {/if}
       {/if}
 
-      <!-- Example sentence + audio -->
-      <div class="mt-2 rounded-lg bg-white/60 px-4 py-3 dark:bg-gray-800/60">
+      <!-- Answer word + its own Pronounce button -->
+      <div class="mb-3 flex items-center gap-3">
+        <span class="text-lg font-bold text-gray-800 dark:text-white">
+          {current.entry.norsk}
+        </span>
+        <SpeakButton word={current.entry.norsk} label="Pronounce" />
+        <span class="text-xs text-gray-400 dark:text-gray-500">
+          {current.entry.part} · {current.entry.level}
+        </span>
+      </div>
+
+      <!-- Example sentence with its own separate Pronounce sentence button -->
+      <div class="rounded-lg bg-white/60 px-4 py-3 dark:bg-gray-800/60">
         <p class="text-sm text-gray-700 italic dark:text-gray-300">
           {current.entry.example}
         </p>
         <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
           {current.entry.example_english}
         </p>
-        <div class="mt-2 flex items-center gap-2">
-          <SpeakButton word={current.entry.norsk} />
-          <span class="text-xs text-gray-400">
-            {current.entry.part} · {current.entry.level}
-          </span>
+        <div class="mt-2">
+          <SpeakButton word={current.entry.example} label="Pronounce sentence" />
         </div>
       </div>
 
@@ -588,13 +631,13 @@
               : 'border-red-200 bg-red-50 dark:border-red-800 dark:bg-red-900/10'}"
           >
             <span class="mt-0.5 text-base {result.correct ? 'text-green-500' : 'text-red-500'}">
-              {result.correct ? '&#x2713;' : '&#x2717;'}
+              {result.correct ? '✓' : '✗'}
             </span>
             <div class="min-w-0 flex-1">
               <p class="font-medium text-gray-800 dark:text-gray-100">
                 {result.question.entry.norsk}
                 <span class="ml-1 font-normal text-gray-500 dark:text-gray-400">
-                  &#x2014; {result.question.entry.english}
+                  — {result.question.entry.english}
                 </span>
               </p>
               {#if !result.correct && result.userAnswer}

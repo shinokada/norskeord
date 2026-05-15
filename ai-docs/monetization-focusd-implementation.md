@@ -6,8 +6,8 @@ This document translates the strategy in `monetization-focusd-plan.md` into conc
 
 ## Status Overview
 
-| Phase | Description                                          | Status        |
-| ----- | ---------------------------------------------------- | ------------- |
+| Phase | Description                                          | Status         |
+| ----- | ---------------------------------------------------- | -------------- |
 | 0     | Quick wins (FSRS, /stats, /norskproven, /plus, i18n) | ✅ Complete    |
 | 1     | Supabase auth + progress sync                        | ✅ Complete    |
 | 2-A–D | Full FSRS UX (session structure, intervals, undo)    | ✅ Complete    |
@@ -186,7 +186,7 @@ create policy "Users can update own settings"
 
 ---
 
-## Phase 3 — Freemium Gating + Payments ⬜ - Completed
+## Phase 3 — Freemium Gating + Payments ✅ Completed
 
 ### 3-A: Feature flags by plan
 
@@ -218,9 +218,9 @@ Note: the `subscriptions` table uses `plan: 'free' | 'pro'` — this should be c
 
 ## Please see 3c-change-for-plus.md for more detailed implementation. DONE
 
-## Phase 4 — Growth Features ⬜ Not started
+## Phase 4 — Growth Features
 
-### 4-A: Profile page (`/profile`)
+### 4-A: Profile page (`/profile`) ✅ Completed
 
 Four sections:
 
@@ -247,7 +247,7 @@ Four sections:
 - Export my data — JSON download of all `card_progress` rows for the user
 - Delete account — calls Supabase Admin API to delete the user and cascades to all their data
 
-### 4-B: Quiz mode
+### 4-B: Quiz mode ✅ Completed
 
 **New route:** `src/routes/quiz/+page.svelte`
 
@@ -259,11 +259,13 @@ Three sub-modes:
 
 Reuses `VocabEntry[]` from existing JSON data. Quiz ratings feed back into FSRS via `saveProgress()` just like flashcard mode. Quiz mode is a natural Plus feature gate.
 
-### 4-C: Expression/Uttrykk
+### 4-C: Expression/Uttrykk ✅ Completed
 
-Read ai-docs/implementation/expression.md
+Done. Added to categories.
 
 ### 4-D: Daily streaks + push notifications
+
+Read implementation plan in ai-docs/implementation/daily-streaks-push-notifications.md for more details.
 
 - Add `streak` and `last_study_date` to a `user_stats` table in Supabase; increment when the user rates at least one card per calendar day
 - Display streak count on `/stats` or in Nav
@@ -280,6 +282,11 @@ Beyond `/norskproven`, additional SSR pages targeting organic search:
 - `/learn-norwegian-online` — general landing page
 
 These are `+page.server.ts` pages that pull from the existing CEFR JSON data — no new data work needed.
+
+### 4-F: Avatar upload
+
+For plus members, they can upload avatar image.
+The avatar display should be 200 x 200 px or 150 x 150 px?
 
 ---
 
@@ -320,7 +327,7 @@ create table daily_lessons (
 - Sends via Resend
 
 **Send schedule:**
-There is no send schedule unless I have automation for this. Until then 2-3 times a month for Level A (A1/A2) and Level B (B1/B2). A1/A2 get the same news 
+There is no send schedule unless I have automation for this. Until then 2-3 times a month for Level A (A1/A2) and Level B (B1/B2). A1/A2 get the same news
 
 ### 5-B: Content generation
 
@@ -346,27 +353,27 @@ No separate notification email is sent.
 
 | Step  | Task                                                        | Status | Effort  |
 | ----- | ----------------------------------------------------------- | ------ | ------- |
-| 0-A   | FSRS rating buttons                                         | ✅      | —       |
-| 0-B   | `/stats` with CEFR estimate                                 | ✅      | —       |
-| 0-C   | `/norskproven` route                                        | ✅      | —       |
-| 0-D   | `/plus` pricing + waitlist                                  | ✅      | —       |
-| 0-E   | i18n via Paraglide (en + nb)                                | ✅      | —       |
-| 1-A/B | Supabase auth + server hooks                                | ✅      | —       |
-| 1-C   | localStorage → Supabase sync                                | ✅      | —       |
-| 2-A   | ts-fsrs full wiring                                         | ✅      | —       |
-| 2-B   | Due session: new cap + requeue                              | ✅      | —       |
-| 2-C   | Rating preview (interval display)                           | ✅      | —       |
-| 2-D   | Undo last rating                                            | ✅      | —       |
-| 2-E   | FSRS weight optimisation (Edge Function)                    | ✅      | —       |
-| 3-A   | Feature gating (read plan from Supabase, gate FSRS + stats) | ⬜      | 3h      |
-| 3-B   | Lemon Squeezy payments                                      | ⬜      | 1 day   |
-| 4-A   | Profile page                                                | ⬜      | 1 day   |
-| 4-B   | Quiz mode                                                   | ⬜      | 2 days  |
-| 4-C   | Daily streaks + push                                        | ⬜      | 1 day   |
-| 4-D   | SEO content pages                                           | ⬜      | 2–3h    |
-| 5-A   | Email service (Resend + pg_cron)                            | ⬜      | 2 days  |
-| 5-B   | Daily lesson content generation                             | ⬜      | ongoing |
-| 5-C   | `/daily/[level]/[date]` exercise page                       | ⬜      | 1 day   |
+| 0-A   | FSRS rating buttons                                         | ✅     | —       |
+| 0-B   | `/stats` with CEFR estimate                                 | ✅     | —       |
+| 0-C   | `/norskproven` route                                        | ✅     | —       |
+| 0-D   | `/plus` pricing + waitlist                                  | ✅     | —       |
+| 0-E   | i18n via Paraglide (en + nb)                                | ✅     | —       |
+| 1-A/B | Supabase auth + server hooks                                | ✅     | —       |
+| 1-C   | localStorage → Supabase sync                                | ✅     | —       |
+| 2-A   | ts-fsrs full wiring                                         | ✅     | —       |
+| 2-B   | Due session: new cap + requeue                              | ✅     | —       |
+| 2-C   | Rating preview (interval display)                           | ✅     | —       |
+| 2-D   | Undo last rating                                            | ✅     | —       |
+| 2-E   | FSRS weight optimisation (Edge Function)                    | ✅     | —       |
+| 3-A   | Feature gating (read plan from Supabase, gate FSRS + stats) | ⬜     | 3h      |
+| 3-B   | Lemon Squeezy payments                                      | ⬜     | 1 day   |
+| 4-A   | Profile page                                                | ⬜     | 1 day   |
+| 4-B   | Quiz mode                                                   | ⬜     | 2 days  |
+| 4-C   | Daily streaks + push                                        | ⬜     | 1 day   |
+| 4-D   | SEO content pages                                           | ⬜     | 2–3h    |
+| 5-A   | Email service (Resend + pg_cron)                            | ⬜     | 2 days  |
+| 5-B   | Daily lesson content generation                             | ⬜     | ongoing |
+| 5-C   | `/daily/[level]/[date]` exercise page                       | ⬜     | 1 day   |
 
 ---
 
