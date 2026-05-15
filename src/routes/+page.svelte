@@ -226,15 +226,17 @@
       <h2 class="mb-3 text-xl font-semibold dark:text-white">{level.label()}</h2>
       <div class="flex flex-wrap gap-2">
         {#each categories as cat (cat)}
-          {@const locked = !isPlus && isPlusCategory(level.id, cat)}
-          <a
-            href={locked ? '/plus?ref=category-lock' : `/${level.id.toLowerCase()}/${cat}`}
-            class="{badge} rounded-full px-4 py-0.5 font-medium transition-opacity hover:opacity-75
-                   {locked ? 'cursor-default opacity-60' : ''}"
-            title={locked ? m.plus_category_locked() : undefined}
-          >
-            {locked ? '🔒 ' : ''}{getCategoryName(level.id, cat)}
-          </a>
+          {#if !(isPlus && cat === 'uttrykk-preview')}
+            {@const locked = !isPlus && isPlusCategory(level.id, cat)}
+            <a
+              href={locked ? '/plus?ref=category-lock' : `/${level.id.toLowerCase()}/${cat}`}
+              class="{badge} rounded-full px-4 py-0.5 font-medium transition-opacity hover:opacity-75
+                     {locked ? 'cursor-default opacity-60' : ''}"
+              title={locked ? m.plus_category_locked() : undefined}
+            >
+              {locked ? '🔒 ' : ''}{getCategoryName(level.id, cat)}
+            </a>
+          {/if}
         {/each}
       </div>
     </div>

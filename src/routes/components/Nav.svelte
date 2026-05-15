@@ -160,13 +160,15 @@
       <MegaMenu {items} triggeredBy="#mega-trigger-{level}" classes={{ ul: '!gap-x-6' }}>
         {#snippet children({ item })}
           {@const locked = !isPlus && item.locked}
-          <a
-            href={locked ? '/plus?ref=category-lock' : item.href}
-            class="{linkClass} {locked ? 'opacity-50' : ''}"
-            title={locked ? m.plus_category_locked() : undefined}
-          >
-            {item.name}{locked ? ' 🔒' : ''}
-          </a>
+          {#if !(isPlus && item.href.endsWith('/uttrykk-preview'))}
+            <a
+              href={locked ? '/plus?ref=category-lock' : item.href}
+              class="{linkClass} {locked ? 'opacity-50' : ''}"
+              title={locked ? m.plus_category_locked() : undefined}
+            >
+              {item.name}{locked ? ' 🔒' : ''}
+            </a>
+          {/if}
         {/snippet}
       </MegaMenu>
     {/each}
