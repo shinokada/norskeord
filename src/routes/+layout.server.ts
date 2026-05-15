@@ -34,16 +34,18 @@ export const load = async ({ url, locals }) => {
     }
   };
 
-  // Fetch display_name for the nav dropdown and stats heading.
-  // Single-column select — minimal overhead on every request.
+  // Fetch display_name and target_level for the nav and quiz defaults.
+  // Single-row select — minimal overhead on every request.
   let displayName: string | null = null;
+  let targetLevel: string | null = null;
   if (locals.user) {
     const { data } = await locals.supabase
       .from('profiles')
-      .select('display_name')
+      .select('display_name, target_level')
       .eq('id', locals.user.id)
       .maybeSingle();
     displayName = data?.display_name ?? null;
+    targetLevel = data?.target_level ?? null;
   }
 
   return {
@@ -52,6 +54,7 @@ export const load = async ({ url, locals }) => {
     // Auth state — available as $page.data.user and $page.data.plan in all routes
     user: locals.user,
     plan: locals.plan,
-    displayName
+    displayName,
+    targetLevel
   };
 };
