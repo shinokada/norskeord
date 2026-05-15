@@ -1,0 +1,102 @@
+[
+  {
+    "norsk": "å gå på ski",
+    "lemma": "å gå på ski",
+    "english": "to go skiing",
+    "example": "Hun liker å gå på ski om vinteren.",
+    "example_english": "She likes to go skiing in the winter.",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Fryser du?: Ja, det er veldig kaldt.",
+    "lemma": "Fryser du?: Ja, det er veldig kaldt.",
+    "english": "Are you cold? Yes, it is very cold.",
+    "example": "Fryser du? Ja, det er veldig kaldt i dag.",
+    "example_english": "Are you cold? Yes, it is very cold today.",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å legge merke til",
+    "lemma": "å legge merke til",
+    "english": "to notice",
+    "example": "Jeg la merke til at hun var trist.",
+    "example_english": "I noticed that she was sad.",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å stole på noen",
+    "lemma": "å stole på noen",
+    "english": "to trust someone",
+    "example": "Jeg stoler på deg.",
+    "example_english": "I trust you.",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Takk for maten.",
+    "lemma": "Takk for maten.",
+    "english": "Thanks for the food.",
+    "example": "Det smakte godt. Takk for maten!",
+    "example_english": "It tasted good. Thanks for the food!",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Klart det!",
+    "lemma": "Klart det!",
+    "english": "Of course!, Sure!",
+    "example": "Kan du hjelpe meg? Klart det!",
+    "example_english": "Can you help me? Of course!",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "med en gang",
+    "lemma": "med en gang",
+    "english": "right away, immediately",
+    "example": "Jeg kommer med en gang.",
+    "example_english": "I am coming right away.",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ta det med ro",
+    "lemma": "å ta det med ro",
+    "english": "to take it easy, to relax",
+    "example": "Du er syk. Ta det med ro!",
+    "example_english": "You are sick. Take it easy!",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å ha sommerfugler i magen",
+    "lemma": "å ha sommerfugler i magen",
+    "english": "to have butterflies in one's stomach",
+    "example": "Jeg er nervøs og har sommerfugler i magen.",
+    "example_english": "I am nervous and have butterflies in my stomach.",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "å gi opp",
+    "lemma": "å gi opp",
+    "english": "to give up",
+    "example": "Ikke gi opp! Du klarer det.",
+    "example_english": "Do not give up! You can do it.",
+    "level": "A2",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  }
+]

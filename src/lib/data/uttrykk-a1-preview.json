@@ -1,0 +1,102 @@
+[
+  {
+    "norsk": "Hvor kommer du fra? Jeg kommer fra Bergen.",
+    "lemma": "Hvor kommer du fra? Jeg kommer fra Bergen.",
+    "english": "Where are you from? I am from Bergen.",
+    "example": "Hvor kommer du fra? Jeg kommer fra Polen.",
+    "example_english": "Where are you from? I am from Poland.",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Hvor bor du? Jeg bor i Norge.",
+    "lemma": "Hvor bor du? Jeg bor i Norge.",
+    "english": "Where do you live? I live in Norway.",
+    "example": "Hvor bor du? Jeg bor i Oslo.",
+    "example_english": "Where do you live? I live in Oslo.",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Hva heter du? Jeg heter Peter.",
+    "lemma": "Hva heter du? Jeg heter Peter.",
+    "english": "What is your name? My name is Peter.",
+    "example": "Hva heter du? Jeg heter Anna.",
+    "example_english": "What is your name? My name is Anna.",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Hvordan går det? Fint. / Ganske bra, takk. / Sånn passe.",
+    "lemma": "Hvordan går det? Fint. / Ganske bra, takk. / Sånn passe.",
+    "english": "How are you? Fine. / Quite good, thanks. / So-so.",
+    "example": "Hvordan går det? Ganske bra, takk.",
+    "example_english": "How are you? Quite good, thanks.",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Unnskyld, jeg forstår ikke.",
+    "lemma": "Unnskyld, jeg forstår ikke.",
+    "english": "Excuse me, I do not understand.",
+    "example": "Unnskyld, jeg forstår ikke. Kan du gjenta?",
+    "example_english": "Excuse me, I do not understand. Can you repeat?",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Hyggelig å treffe deg. I like måte.",
+    "lemma": "Hyggelig å treffe deg. I like måte.",
+    "english": "Nice to meet you. Likewise.",
+    "example": "Hyggelig å treffe deg, Peter! I like måte.",
+    "example_english": "Nice to meet you, Peter! Likewise.",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Ha det bra! Ha det!",
+    "lemma": "Ha det bra! Ha det!",
+    "english": "Take care! Bye!",
+    "example": "Ha det bra! Ha det!",
+    "example_english": "Take care! Bye!",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "Lykke til! Takk skal du ha.",
+    "lemma": "Lykke til! Takk skal du ha.",
+    "english": "Good luck! Thank you very much.",
+    "example": "Lykke til på prøven! Takk skal du ha.",
+    "example_english": "Good luck on the test! Thank you very much.",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "har lyst på",
+    "lemma": "har lyst på",
+    "english": "want / feel like",
+    "example": "Har du lyst på et glass vann?",
+    "example_english": "Do you want a glass of water?",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  },
+  {
+    "norsk": "for å",
+    "lemma": "for å",
+    "english": "in order to",
+    "example": "Jeg går til butikken for å kjøpe mat.",
+    "example_english": "I go to the shop in order to buy food.",
+    "level": "A1",
+    "category": "uttrykk-preview",
+    "part": "phrase"
+  }
+]

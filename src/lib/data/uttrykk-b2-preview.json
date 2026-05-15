@@ -30,31 +30,11 @@
     "part": "phrase"
   },
   {
-    "norsk": "i tillegg til",
-    "lemma": "i tillegg til",
-    "english": "in addition to, as well as",
-    "example": "I tillegg til norsk snakker hun flytende engelsk, spansk og mandarin.",
-    "example_english": "In addition to Norwegian she speaks fluent English, Spanish and Mandarin.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
     "norsk": "med tanke på",
     "lemma": "med tanke på",
     "english": "considering, with regard to, given",
     "example": "Med tanke på alle utfordringene vi har møtt, er resultatet faktisk ganske imponerende.",
     "example_english": "Considering all the challenges we have faced, the result is actually quite impressive.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
-    "norsk": "som regel",
-    "lemma": "som regel",
-    "english": "as a rule, usually, generally",
-    "example": "Som regel løses de fleste konflikter bedre gjennom dialog enn gjennom konfrontasjon.",
-    "example_english": "As a rule most conflicts are resolved better through dialogue than through confrontation.",
     "level": "B2",
     "category": "uttrykk-preview",
     "part": "phrase"
@@ -70,31 +50,11 @@
     "part": "phrase"
   },
   {
-    "norsk": "i utgangspunktet",
-    "lemma": "i utgangspunktet",
-    "english": "initially, in principle, from the outset",
-    "example": "I utgangspunktet var planen å fullføre prosjektet innen seks måneder.",
-    "example_english": "Initially the plan was to complete the project within six months.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
     "norsk": "fremfor alt",
     "lemma": "fremfor alt",
     "english": "above all, most of all",
     "example": "Fremfor alt er det viktig å bevare tilliten mellom innbyggerne og de folkevalgte.",
     "example_english": "Above all it is important to preserve the trust between citizens and their elected representatives.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
-    "norsk": "i større grad",
-    "lemma": "i større grad",
-    "english": "to a greater extent, more so",
-    "example": "Fremtidens yrkesliv vil i større grad kreve evne til kontinuerlig læring og omstilling.",
-    "example_english": "The working life of the future will to a greater extent require the ability to learn and adapt continuously.",
     "level": "B2",
     "category": "uttrykk-preview",
     "part": "phrase"
@@ -110,51 +70,11 @@
     "part": "phrase"
   },
   {
-    "norsk": "å legge vekt på",
-    "lemma": "å legge vekt på",
-    "english": "to emphasise, to place importance on",
-    "example": "I ansettelsesprosessen la selskapet stor vekt på søkernes kommunikasjonsevner og teamånd.",
-    "example_english": "In the hiring process the company placed great importance on applicants' communication skills and team spirit.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
-    "norsk": "å være opptatt av",
-    "lemma": "å være opptatt av",
-    "english": "to be preoccupied with, to care about, to be focused on",
-    "example": "Hun er svært opptatt av bærekraft og stiller strenge krav til leverandørene sine.",
-    "example_english": "She is very focused on sustainability and sets strict requirements for her suppliers.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
     "norsk": "å ta på alvor",
     "lemma": "å ta noe på alvor",
     "english": "to take something seriously",
     "example": "Det er avgjørende at myndighetene tar tegn på mental helse-krise blant unge på alvor.",
     "example_english": "It is crucial that the authorities take signs of mental health crisis among young people seriously.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
-    "norsk": "å bidra til",
-    "lemma": "å bidra til",
-    "english": "to contribute to, to help bring about",
-    "example": "Alle kan bidra til et bedre miljø gjennom bevisste valg i hverdagen.",
-    "example_english": "Everyone can contribute to a better environment through conscious choices in daily life.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
-    "norsk": "i forbindelse med",
-    "lemma": "i forbindelse med",
-    "english": "in connection with, in relation to",
-    "example": "I forbindelse med jubileet arrangeres det konserter og utstillinger i hele byen.",
-    "example_english": "In connection with the anniversary, concerts and exhibitions are being arranged throughout the city.",
     "level": "B2",
     "category": "uttrykk-preview",
     "part": "phrase"
@@ -170,31 +90,11 @@
     "part": "phrase"
   },
   {
-    "norsk": "å gjøre en forskjell",
-    "lemma": "å gjøre en forskjell",
-    "english": "to make a difference",
-    "example": "Du trenger ikke være berømt for å gjøre en ekte forskjell i andres liv.",
-    "example_english": "You do not need to be famous to make a real difference in other people's lives.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
     "norsk": "Det er ingen tvil om",
     "lemma": "Det er ingen tvil om",
     "english": "there is no doubt about, it is undeniable",
     "example": "Det er ingen tvil om at klimaendringene krever handling fra alle land i verden.",
     "example_english": "There is no doubt that climate change requires action from every country in the world.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
-    "norsk": "på vegne av",
-    "lemma": "på vegne av",
-    "english": "on behalf of",
-    "example": "Direktøren takket på vegne av hele organisasjonen for det hardt arbeidet alle hadde lagt ned.",
-    "example_english": "The director expressed thanks on behalf of the entire organisation for the hard work everyone had put in.",
     "level": "B2",
     "category": "uttrykk-preview",
     "part": "phrase"
