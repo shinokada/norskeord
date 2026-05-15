@@ -1,9 +1,10 @@
 import { expect, test } from '@playwright/test';
+import { injectPlusPlan } from './helpers.js';
 
 test('home page has expected h1', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'Learn Norwegian vocabulary/phrase that actually sticks'
+    'Learn Norwegian vocabulary & phrase that actually sticks'
   );
 });
 
@@ -68,30 +69,31 @@ test('B1 travel flashcard page loads', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå B1 — Travel');
 });
 
-// test('C1 philosophy flashcard page loads', async ({ page }) => {
-//   // c1/philosophy is Plus-only; inject plan: 'plus' via the layout data endpoint
-//   // so the page load doesn't redirect to /plus.
-//   await page.route('**/__data.json*', async (route) => {
-//     const response = await route.fetch();
-//     try {
-//       const json = await response.json();
-//       if (Array.isArray(json.nodes)) {
-//         for (const node of json.nodes) {
-//           if (node && typeof node === 'object' && 'plan' in node) {
-//             node.plan = 'plus';
-//           }
-//         }
-//       }
-//       await route.fulfill({ json });
-//     } catch {
-//       await route.fulfill({ response });
-//     }
-//   });
-//   await page.goto('/c1/philosophy');
-//   await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå C1 — Philosophy');
-// });
+// Plus member: C1 philosophy page loads with cards and FSRS rating buttons
+test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/c1/philosophy');
+
+  // heading shows correct level and category
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå C1 — Philosophy');
+
+  // card counter is visible (format: "1/N")
+  await expect(page.getByRole('button', { name: /^\d+\/\d+$/ })).toBeVisible();
+
+  // flip the card and confirm FSRS rating buttons appear
+  await page.getByRole('button', { name: /flashcard showing question/i }).click();
+  await expect(page.getByRole('button', { name: /again/i })).toBeVisible();
+  await expect(page.getByRole('button', { name: /good/i })).toBeVisible();
+});
+
+// free user is redirected away from a Plus-only C1 category (linguistics is Plus-only)
+test('free user is redirected from C1 linguistics to /plus', async ({ page }) => {
+  await page.goto('/c1/linguistics');
+  await page.waitForURL(/\/plus/, { timeout: 10000 });
+  await expect(page).toHaveURL(/\/plus/);
+});
 
 test('about page has expected h1', async ({ page }) => {
   await page.goto('/about');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('About Norskeord');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Guide to Norskeord');
 });

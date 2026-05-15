@@ -56,6 +56,11 @@
       pro: { value: m.plus_row_exam_plus(), yes: true }
     },
     {
+      feature: m.plus_row_quiz(),
+      free: { value: m.plus_row_quiz_free(), yes: false },
+      pro: { value: m.plus_row_quiz_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_support(),
       free: { value: m.plus_row_support_free(), yes: false },
       pro: { value: m.plus_row_support_plus(), yes: true }
@@ -82,6 +87,11 @@
       icon: '🎯',
       title: m.plus_feature_4_title(),
       body: m.plus_feature_4_body()
+    },
+    {
+      icon: '❓',
+      title: m.plus_feature_5_title(),
+      body: m.plus_feature_5_body()
     }
   ]);
 

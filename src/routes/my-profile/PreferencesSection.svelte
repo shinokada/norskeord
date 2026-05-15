@@ -12,6 +12,23 @@
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 
+  const speedOptions = [
+    { value: '0.5', label: '0.5×' },
+    { value: '0.75', label: '0.75×' },
+    { value: '1', label: '1×' },
+    { value: '1.25', label: '1.25×' },
+    { value: '1.5', label: '1.5×' }
+  ];
+
+  const toneOptions = [
+    { value: '0.7', label: 'Low' },
+    { value: '1', label: 'Default' },
+    { value: '1.3', label: 'High' }
+  ];
+
+  const LS_SPEED = 'voice-settings-speed';
+  const LS_PITCH = 'voice-settings-pitch';
+
   // Derive defaults from the profile prop so they stay reactive if the prop changes.
   let targetLevel = $derived(profile?.target_level ?? 'B1');
   // uiLanguage uses writable $derived so the radio can be changed freely
@@ -21,17 +38,21 @@
   let cardDirection = $derived(profile?.card_direction ?? 'no_en');
   // include_phrases: true → 'phrase', false → 'word'
   let cardType = $derived((profile?.include_phrases ?? false) ? 'phrase' : 'word');
+  let voiceSpeed = $derived(String(profile?.voice_speed ?? 1));
+  let voicePitch = $derived(String(profile?.voice_pitch ?? 1));
 
   function applyToLocalStorage() {
     localStorage.setItem('vocab-flashcard-mode', cardDirection === 'en_no' ? 'engnor' : 'noreng');
     localStorage.setItem('vocab-flashcard-card-type', cardType);
+    localStorage.setItem(LS_SPEED, voiceSpeed);
+    localStorage.setItem(LS_PITCH, voicePitch);
     // Write through the store so the nav button updates reactively.
     localeStore.set(uiLanguage);
   }
 </script>
 
 <section
-  class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800"
+  class="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_prefs_heading()}
@@ -72,7 +93,7 @@
         id="target_level"
         name="target_level"
         bind:value={targetLevel}
-        class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+        class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100"
       >
         {#each levels as level (level)}
           <option value={level}>{level}</option>
@@ -152,6 +173,54 @@
       </div>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
         {m.profile_prefs_card_type_hint()}
+      </p>
+    </div>
+
+    <!-- Pronunciation speed -->
+    <div>
+      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
+        {m.profile_prefs_voice_speed()}
+      </p>
+      <div class="flex flex-wrap gap-2">
+        {#each speedOptions as opt (opt.value)}
+          <label class="flex cursor-pointer items-center gap-1.5">
+            <input
+              type="radio"
+              name="voice_speed"
+              value={opt.value}
+              bind:group={voiceSpeed}
+              class="accent-indigo-600"
+            />
+            <span class="text-sm text-gray-700 dark:text-gray-300">{opt.label}</span>
+          </label>
+        {/each}
+      </div>
+      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        {m.profile_prefs_voice_speed_hint()}
+      </p>
+    </div>
+
+    <!-- Pronunciation tone -->
+    <div>
+      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
+        {m.profile_prefs_voice_tone()}
+      </p>
+      <div class="flex gap-4">
+        {#each toneOptions as opt (opt.value)}
+          <label class="flex cursor-pointer items-center gap-1.5">
+            <input
+              type="radio"
+              name="voice_pitch"
+              value={opt.value}
+              bind:group={voicePitch}
+              class="accent-indigo-600"
+            />
+            <span class="text-sm text-gray-700 dark:text-gray-300">{opt.label}</span>
+          </label>
+        {/each}
+      </div>
+      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        {m.profile_prefs_voice_tone_hint()}
       </p>
     </div>
 
