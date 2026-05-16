@@ -294,6 +294,34 @@ describe('buildQuizSession', () => {
     expect(session).toHaveLength(5);
   });
 
+  it('defaults to 10 questions when count is omitted', () => {
+    // POOL has 10 entries — all new (no progress)
+    const session = buildQuizSession(POOL, POOL, {});
+    expect(session).toHaveLength(10);
+  });
+
+  it('respects count=5', () => {
+    const session = buildQuizSession(POOL, POOL, {}, 5);
+    expect(session).toHaveLength(5);
+  });
+
+  it('respects count=15 when pool has enough entries', () => {
+    // Build a pool of 20 entries
+    const bigPool = Array.from({ length: 20 }, (_, i) =>
+      makeEntry({ norsk: `word${i}`, english: `word ${i} en` })
+    );
+    const session = buildQuizSession(bigPool, bigPool, {}, 15);
+    expect(session).toHaveLength(15);
+  });
+
+  it('respects count=20 when pool has enough entries', () => {
+    const bigPool = Array.from({ length: 25 }, (_, i) =>
+      makeEntry({ norsk: `word${i}`, english: `word ${i} en` })
+    );
+    const session = buildQuizSession(bigPool, bigPool, {}, 20);
+    expect(session).toHaveLength(20);
+  });
+
   it('returns fewer questions when entries are fewer than count', () => {
     const tiny = POOL.slice(0, 3);
     const session = buildQuizSession(tiny, POOL, {}, 10);

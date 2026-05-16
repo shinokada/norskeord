@@ -1,10 +1,37 @@
 import { redirect, fail } from '@sveltejs/kit';
-import { SUPABASE_SERVICE_ROLE_KEY } from '$env/static/private';
+import { SUPABASE_SERVICE_ROLE_KEY, LEMONSQUEEZY_API_KEY } from '$env/static/private';
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { createClient } from '@supabase/supabase-js';
 import { getProfile, upsertProfile, deleteAccount } from '$lib/server/profile';
 import type { PageServerLoad, Actions } from './$types';
 import type { ProfileUpdate } from '$lib/server/profile';
+
+// ── Lemon Squeezy customer portal ────────────────────────────────────────────
+
+/**
+ * Fetches a Lemon Squeezy customer portal URL for the given subscription ID.
+ * The portal URL is embedded in the subscription object's urls attribute.
+ * Returns null on any failure so the UI degrades gracefully.
+ */
+async function fetchBillingPortalUrl(subscriptionId: string): Promise<string | null> {
+  try {
+    const res = await fetch(`https://api.lemonsqueezy.com/v1/subscriptions/${subscriptionId}`, {
+      headers: {
+        Authorization: `Bearer ${LEMONSQUEEZY_API_KEY}`,
+        Accept: 'application/vnd.api+json'
+      }
+    });
+    if (!res.ok) {
+      console.error('[billing-portal] LS API error:', res.status, await res.text());
+      return null;
+    }
+    const data = await res.json();
+    return (data?.data?.attributes?.urls?.customer_portal as string) ?? null;
+  } catch (err) {
+    console.error('[billing-portal] fetch failed:', err);
+    return null;
+  }
+}
 
 // ── Load ─────────────────────────────────────────────────────────────────────
 
@@ -13,7 +40,22 @@ export const load: PageServerLoad = async ({ locals }) => {
 
   const profile = await getProfile(locals.supabase, locals.user.id);
 
-  const billingPortalUrl: string | null = null;
+  const isPlus = locals.plan === 'plus';
+
+  // ls_customer_id lives in the subscriptions table (written by the LS webhook),
+  // not in profiles. Look it up there for Plus users.
+  let billingPortalUrl: string | null = null;
+  if (isPlus) {
+    const { data: sub } = await locals.supabase
+      .from('subscriptions')
+      .select('lemon_squeezy_subscription_id')
+      .eq('user_id', locals.user.id)
+      .maybeSingle();
+    const subscriptionId = sub?.lemon_squeezy_subscription_id ?? null;
+    if (subscriptionId) {
+      billingPortalUrl = await fetchBillingPortalUrl(subscriptionId);
+    }
+  }
 
   return {
     profile,
@@ -62,6 +104,14 @@ export const actions: Actions = {
     const voice_pitch_raw = data.get('voice_pitch') as string | null;
     const voice_speed = voice_speed_raw ? parseFloat(voice_speed_raw) : null;
     const voice_pitch = voice_pitch_raw ? parseFloat(voice_pitch_raw) : null;
+    const session_limit_raw = data.get('session_limit') as string | null;
+    const session_limit =
+      session_limit_raw === null || session_limit_raw === 'all'
+        ? null
+        : parseInt(session_limit_raw, 10);
+    const quiz_limit_raw = data.get('quiz_limit') as string | null;
+    const quiz_limit =
+      quiz_limit_raw === null || quiz_limit_raw === 'default' ? null : parseInt(quiz_limit_raw, 10);
 
     const validLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     const validLanguages = ['en', 'nb'];
@@ -69,6 +119,8 @@ export const actions: Actions = {
     const validCardTypes = ['word', 'phrase'];
     const validSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5];
     const validPitches = [0.7, 1.0, 1.3];
+    const validLimits = [10, 20, 30, 50, null];
+    const validQuizLimits = [5, 10, 15, 20, null];
 
     if (target_level && !validLevels.includes(target_level)) {
       return fail(422, { field: 'target_level', message: 'Invalid level.' });
@@ -88,6 +140,12 @@ export const actions: Actions = {
     if (voice_pitch !== null && !validPitches.includes(voice_pitch)) {
       return fail(422, { field: 'voice_pitch', message: 'Invalid tone.' });
     }
+    if (!validLimits.includes(session_limit)) {
+      return fail(422, { field: 'session_limit', message: 'Invalid session limit.' });
+    }
+    if (!validQuizLimits.includes(quiz_limit)) {
+      return fail(422, { field: 'quiz_limit', message: 'Invalid quiz limit.' });
+    }
 
     const update: ProfileUpdate = {
       ...(target_level && { target_level }),
@@ -95,7 +153,9 @@ export const actions: Actions = {
       ...(card_direction && { card_direction }),
       include_phrases,
       ...(voice_speed !== null && { voice_speed }),
-      ...(voice_pitch !== null && { voice_pitch })
+      ...(voice_pitch !== null && { voice_pitch }),
+      session_limit,
+      quiz_limit
     };
 
     const { error } = await upsertProfile(locals.supabase, locals.user.id, update);
@@ -115,11 +175,42 @@ export const actions: Actions = {
 
     const userId = locals.user.id;
 
-    // Phase 2-B: cancel LS subscription here before deleting the user.
-    // const profile = await getProfile(locals.supabase, userId);
-    // if (profile?.ls_subscription_id) {
-    //   await cancelLemonSqueezySubscription(profile.ls_subscription_id);
-    // }
+    // Cancel LS subscription before deleting the user.
+    const { data: sub } = await locals.supabase
+      .from('subscriptions')
+      .select('lemon_squeezy_subscription_id')
+      .eq('user_id', userId)
+      .maybeSingle();
+
+    if (sub?.lemon_squeezy_subscription_id) {
+      try {
+        const res = await fetch(
+          `https://api.lemonsqueezy.com/v1/subscriptions/${sub.lemon_squeezy_subscription_id}`,
+          {
+            method: 'DELETE',
+            headers: {
+              Authorization: `Bearer ${LEMONSQUEEZY_API_KEY}`,
+              Accept: 'application/vnd.api+json'
+            }
+          }
+        );
+        if (!res.ok && res.status !== 404) {
+          // 404 = already cancelled/doesn't exist, safe to proceed
+          const body = await res.text();
+          console.error('[delete-account] LS cancel failed:', res.status, body);
+          return fail(500, {
+            field: 'deleteAccount',
+            message: 'Failed to cancel your subscription. Please try again or contact support.'
+          });
+        }
+      } catch (err) {
+        console.error('[delete-account] LS cancel error:', err);
+        return fail(500, {
+          field: 'deleteAccount',
+          message: 'Failed to cancel your subscription. Please try again or contact support.'
+        });
+      }
+    }
 
     const supabaseAdmin = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
     const { error } = await deleteAccount(supabaseAdmin, userId);

@@ -8,7 +8,7 @@
 </script>
 
 <section
-  class="rounded-xl border border-red-300/30 bg-white/5 p-6 backdrop-blur-sm dark:border-red-800/40 dark:bg-red-950/20"
+  class="rounded-xl border border-red-200 bg-red-50 p-6 dark:border-red-800/40 dark:bg-red-950/20"
 >
   <h2 class="mb-1 text-base font-semibold text-red-600 dark:text-red-400">
     {m.profile_danger_heading()}
