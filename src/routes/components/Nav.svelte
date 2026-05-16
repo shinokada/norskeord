@@ -105,7 +105,7 @@
     </button>
     {#if !user}
       <a
-        href="/plus"
+        href="/plus?checkout=1"
         class="inline-block rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
       >
         {m.nav_plus_badge()}
@@ -136,6 +136,9 @@
         <DropdownGroup>
           <DropdownItem href="/my-profile">{m.nav_my_profile()}</DropdownItem>
           <DropdownItem href="/stats">{m.nav_my_progress()}</DropdownItem>
+          {#if isPlus}
+            <DropdownItem href="/plus">{m.nav_plus()}</DropdownItem>
+          {/if}
           <DropdownItem onclick={logout}>{m.nav_log_out()}</DropdownItem>
         </DropdownGroup>
       </Dropdown>
@@ -202,7 +205,7 @@
     </NavLi>
     <Dropdown simple class="w-44">
       <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
-      <DropdownItem href="/guide">{m.nav_about()}</DropdownItem>
+      <DropdownItem href="/guide">{m.nav_guide()}</DropdownItem>
       <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
     </Dropdown>
   </NavUl>

@@ -110,7 +110,11 @@
   function startQuiz() {
     const entries = quizEntries;
     if (entries.length === 0) return;
-    questions = buildQuizSession(entries, data.allEntries, progressMap, 10);
+    // Read quiz limit from localStorage (set via Preferences). 'default' or
+    // missing → 10. Cap to available entries.
+    const raw = browser ? (localStorage.getItem('vocab-quiz-limit') ?? 'default') : 'default';
+    const quizCount = raw === 'default' ? 10 : Math.max(1, parseInt(raw, 10) || 10);
+    questions = buildQuizSession(entries, data.allEntries, progressMap, quizCount);
     currentIndex = 0;
     correctCount = 0;
     results = [];
@@ -342,7 +346,13 @@
       </div>
 
       <p class="mb-6 text-sm text-gray-400 dark:text-gray-500">
-        {m.quiz_pool_hint({ count: quizEntries.length, session: Math.min(10, quizEntries.length) })}
+        {m.quiz_pool_hint({
+          count: quizEntries.length,
+          session: Math.min(
+            browser ? parseInt(localStorage.getItem('vocab-quiz-limit') ?? '10') || 10 : 10,
+            quizEntries.length
+          )
+        })}
       </p>
 
       <button
