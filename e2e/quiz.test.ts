@@ -25,7 +25,7 @@ async function answerAndAdvance(page: Page) {
 // ---------------------------------------------------------------------------
 // Helper: run a full session until "Session complete!" or the safety guard
 // ---------------------------------------------------------------------------
-async function completeSession(page: Page) {
+async function completeSession(page: Page, maxQuestions = 20) {
   let answered = 0;
   while (
     !(await page
@@ -34,7 +34,7 @@ async function completeSession(page: Page) {
       .catch(() => false))
   ) {
     await answerAndAdvance(page);
-    if (++answered > 15) break; // safety guard — 10-question session + some slack
+    if (++answered > maxQuestions + 5) break; // safety guard with slack
   }
 }
 
@@ -145,6 +145,41 @@ test('Try again from summary resets the session', async ({ page }) => {
   // Should be back in the questioning state (first question visible, not idle/summary)
   await expect(page.getByText(/question 1 of/i)).toBeVisible();
   await expect(page.getByText(/session complete/i)).not.toBeVisible();
+});
+
+// ===========================================================================
+// Quiz session limit preference
+// ===========================================================================
+
+test('quiz respects vocab-quiz-limit from localStorage', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/quiz');
+
+  // Set quiz limit to 5 via localStorage before starting
+  await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '5'));
+  await page.reload();
+
+  await page.getByRole('button', { name: /start quiz/i }).click();
+
+  // The question counter should show "of 5"
+  await expect(page.getByText(/of 5/i)).toBeVisible();
+
+  await completeSession(page, 5);
+  await expect(page.getByText(/session complete/i)).toBeVisible();
+  // Score should be out of 5
+  await expect(page.getByText(/of 5 correct/i)).toBeVisible();
+});
+
+test('quiz uses 10 questions by default (no localStorage key)', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/quiz');
+
+  // Ensure no limit is set
+  await page.evaluate(() => localStorage.removeItem('vocab-quiz-limit'));
+  await page.reload();
+
+  await page.getByRole('button', { name: /start quiz/i }).click();
+  await expect(page.getByText(/of 10/i)).toBeVisible();
 });
 
 // ===========================================================================

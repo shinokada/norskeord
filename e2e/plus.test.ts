@@ -56,52 +56,14 @@ test.describe('/plus page', () => {
     );
   });
 
-  // ── Email signup form ─────────────────────────────────────────────────────
+  // ── Checkout CTA ──────────────────────────────────────────────────────────
 
-  test('shows email input and notify button', async ({ page }) => {
-    await expect(page.getByPlaceholder('your@email.com')).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Notify me' })).toBeVisible();
+  test('shows sign in to upgrade button for logged-out users', async ({ page }) => {
+    await expect(page.getByRole('link', { name: /sign in to upgrade/i })).toBeVisible();
   });
 
-  test('shows error when submitting empty email', async ({ page }) => {
-    await page.getByRole('button', { name: 'Notify me' }).click();
-    await expect(page.getByText(/enter your email/i)).toBeVisible();
-  });
-
-  test('shows error for malformed email', async ({ page }) => {
-    await page.getByPlaceholder('your@email.com').fill('not-an-email');
-    await page.getByRole('button', { name: 'Notify me' }).click();
-    await expect(page.getByText(/valid email/i)).toBeVisible();
-  });
-
-  test('shows error message on server failure', async ({ page }) => {
-    await page.route('/plus/waitlist', async (route) => {
-      await route.fulfill({
-        status: 500,
-        contentType: 'application/json',
-        body: JSON.stringify({ error: 'Something went wrong. Please try again.' })
-      });
-    });
-
-    await page.getByPlaceholder('your@email.com').fill('test@example.com');
-    await page.getByRole('button', { name: 'Notify me' }).click();
-
-    await expect(page.getByText(/something went wrong/i)).toBeVisible();
-  });
-
-  test('button is disabled and shows "Saving…" while submitting', async ({ page }) => {
-    await page.route('/plus/waitlist', async (route) => {
-      await new Promise((r) => setTimeout(r, 500));
-      await route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({ message: 'Success' })
-      });
-    });
-
-    await page.getByPlaceholder('your@email.com').fill('test@example.com');
-    await page.getByRole('button', { name: 'Notify me' }).click();
-
-    await expect(page.getByRole('button', { name: 'Saving…' })).toBeDisabled();
+  test('sign in link points to login with checkout intent', async ({ page }) => {
+    const link = page.getByRole('link', { name: /sign in to upgrade/i });
+    await expect(link).toHaveAttribute('href', /\/auth\/login.*checkout/);
   });
 });

@@ -41,6 +41,8 @@ CREATE TABLE public.profiles (
   voice_speed numeric NOT NULL DEFAULT 1.0 CHECK (voice_speed = ANY (ARRAY[0.5, 0.75, 1.0, 1.25, 1.5])),
   voice_pitch numeric NOT NULL DEFAULT 1.0 CHECK (voice_pitch = ANY (ARRAY[0.7, 1.0, 1.3])),
   push_subscription jsonb,
+  session_limit integer CHECK (session_limit IS NULL OR (session_limit = ANY (ARRAY[10, 20, 30, 50]))),
+  quiz_limit integer CHECK (quiz_limit IS NULL OR (quiz_limit = ANY (ARRAY[5, 10, 15, 20]))),
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
 );
@@ -69,10 +71,4 @@ CREATE TABLE public.user_settings (
   updated_at timestamp with time zone DEFAULT now(),
   CONSTRAINT user_settings_pkey PRIMARY KEY (user_id),
   CONSTRAINT user_settings_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
-);
-CREATE TABLE public.waitlist (
-  id uuid NOT NULL DEFAULT gen_random_uuid(),
-  email text NOT NULL UNIQUE,
-  created_at timestamp with time zone NOT NULL DEFAULT now(),
-  CONSTRAINT waitlist_pkey PRIMARY KEY (id)
 );

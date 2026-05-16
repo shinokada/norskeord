@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Profile } from '$lib/server/profile';
   import * as m from '$lib/paraglide/messages.js';
+  import { subscribeToPush, unsubscribeFromPush } from '$lib/push';
 
   let {
     profile,
@@ -30,10 +31,59 @@
 
   const renewsAt = $derived(formatDate(profile?.ls_renews_at ?? null));
   const endsAt = $derived(formatDate(profile?.ls_ends_at ?? null));
+
+  // Checkout
+  let checkoutLoading = $state(false);
+  let checkoutError = $state('');
+
+  async function handleCheckout() {
+    checkoutError = '';
+    checkoutLoading = true;
+    try {
+      const res = await fetch('/api/lemon/checkout', { method: 'POST' });
+      const result = await res.json();
+      if (!res.ok) {
+        checkoutError = m.checkout_error_generic();
+        return;
+      }
+      window.location.href = result.checkoutUrl;
+    } catch {
+      checkoutError = m.checkout_error_generic();
+    } finally {
+      checkoutLoading = false;
+    }
+  }
+
+  // Push notification toggle
+  let dailyReminder = $derived(profile?.daily_reminder ?? false);
+  let reminderLoading = $state(false);
+  let reminderError = $state('');
+
+  async function handleReminderToggle() {
+    reminderError = '';
+    reminderLoading = true;
+    const turningOn = !dailyReminder; // capture desired state before any async work
+    try {
+      if (turningOn) {
+        const sub = await subscribeToPush();
+        if (!sub) {
+          reminderError = 'Could not enable notifications. Please check your browser settings.';
+          return;
+        }
+      } else {
+        await unsubscribeFromPush();
+      }
+    } catch (err) {
+      console.error('[push] toggle failed:', err);
+      reminderError = 'Something went wrong. Please try again.';
+    } finally {
+      reminderLoading = false;
+    }
+  }
 </script>
 
 <section
-  class="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
+  class="rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_sub_heading()}
@@ -47,13 +97,18 @@
           {m.profile_sub_plan_free()}
         </p>
       </div>
-      <a
-        href="/plus"
-        class="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
+      <button
+        type="button"
+        onclick={handleCheckout}
+        disabled={checkoutLoading}
+        class="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
       >
-        {m.profile_sub_upgrade_cta()}
-      </a>
+        {checkoutLoading ? m.plus_activating() : m.profile_sub_upgrade_cta()}
+      </button>
     </div>
+    {#if checkoutError}
+      <p class="mt-2 text-xs text-red-500">{checkoutError}</p>
+    {/if}
   {:else if status === 'cancelled'}
     <!-- Cancelled — still in grace period -->
     <div
@@ -118,7 +173,7 @@
 
   <!-- Plus-only notification toggles -->
   {#if isPlus && status !== 'cancelled'}
-    <div class="mt-6 border-t border-white/10 pt-5">
+    <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
       <p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_sub_notifications_heading()}
       </p>
@@ -126,15 +181,21 @@
         <label class="flex cursor-pointer items-center gap-3">
           <input
             type="checkbox"
-            checked={profile?.daily_reminder ?? false}
-            disabled
-            class="h-4 w-4 rounded accent-indigo-600"
+            checked={dailyReminder}
+            disabled={reminderLoading}
+            onclick={handleReminderToggle}
+            class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
           />
           <span class="text-sm text-gray-600 dark:text-gray-400">
             {m.profile_sub_daily_reminder()}
-            <span class="text-xs text-gray-400">({m.profile_sub_coming_soon()})</span>
+            {#if reminderLoading}
+              <span class="text-xs text-gray-400">Saving…</span>
+            {/if}
           </span>
         </label>
+        {#if reminderError}
+          <p class="text-xs text-red-500">{reminderError}</p>
+        {/if}
         <label class="flex cursor-pointer items-center gap-3">
           <input
             type="checkbox"
@@ -150,7 +211,7 @@
       </div>
     </div>
   {:else if !isPlus}
-    <div class="mt-6 border-t border-white/10 pt-5">
+    <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
       <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
         {m.profile_sub_notifications_heading()}
       </p>

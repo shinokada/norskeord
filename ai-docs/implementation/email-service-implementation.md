@@ -78,6 +78,19 @@ CREATE POLICY "Plus users can read approved lessons"
   );
 
 -- Service role (used by Edge Functions) bypasses RLS automatically.
+
+-- ── email_subscribers_with_email view ──────────────────────────────────────────
+-- Joins subscriber records with the user email from auth.users.
+-- Only accessible with the service role key (used by Edge Functions).
+CREATE VIEW email_subscribers_with_email AS
+SELECT
+  es.user_id,
+  es.level,
+  es.active,
+  es.subscribed_at,
+  au.email
+FROM email_subscribers es
+JOIN auth.users au ON au.id = es.user_id;
 ```
 
 Run it:
@@ -89,38 +102,97 @@ npx supabase db push
 
 ---
 
-## Step 2 — Resend Setup
+## Step 2 — Install Packages & Environment Variables
+
+### Install packages
 
 ```bash
 pnpm add resend
+pnpm add -D @anthropic-ai/sdk tsx
 ```
 
-Add to `.env.local` (and to Supabase Edge Function secrets):
+- `resend` — email sending (runtime dependency)
+- `@anthropic-ai/sdk` — Claude API client used by the generation script
+- `tsx` — runs the generation script as TypeScript without a compile step
 
+### Add to `package.json` scripts
+
+```json
+"generate:lessons": "npx tsx --env-file=.env scripts/generate-lessons.ts"
 ```
+
+### Environment variables
+
+Add all of the following to your `.env` file (the one that already has your Supabase keys):
+
+```bash
+# ── Anthropic ─────────────────────────────────────────────────────────────────
+# Used by: scripts/generate-lessons.ts (runs locally)
+# Get your key at: https://console.anthropic.com → API Keys
+# NOTE: This is a separate pay-per-use API key, NOT your Claude.ai chat subscription.
+# Cost: ~$0.15–0.25 to generate a full 6-week lesson buffer (12 lessons total).
+ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxx
+
+# ── Resend ────────────────────────────────────────────────────────────────────
+# Used by: supabase/functions/send-lesson-email (Edge Function)
+# Sign up at: https://resend.com → API Keys
 RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
 EMAIL_FROM=Norskeord <lessons@norskeord.com>
+
+# ── App ───────────────────────────────────────────────────────────────────────
+# Base URL used to build unsubscribe links and exercise page URLs in sent emails.
+APP_URL=https://norskeord.com
+
+# ── Unsubscribe link signing ──────────────────────────────────────────────────
+# Any random 32-byte hex string. Keep this secret — anyone with it can unsubscribe any user.
+# Generate one:
+#   node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+UNSUBSCRIBE_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# ── Admin ─────────────────────────────────────────────────────────────────────
+# Your Supabase user UUID — protects /admin/lessons so only you can access it.
+# Find it: Supabase Dashboard → Authentication → Users → copy the UUID next to your email.
+ADMIN_USER_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-Verify the `norskeord.com` sending domain in the Resend dashboard (DNS TXT + DKIM records).
+The generation script reads `ANTHROPIC_API_KEY`, `PUBLIC_SUPABASE_URL`, and `SUPABASE_SERVICE_ROLE_KEY` directly from `.env` via the `--env-file=.env` flag, so no extra configuration is needed to run it.
+
+### Supabase Edge Function secrets
+
+The Edge Functions run in Supabase's cloud and cannot read your local `.env`. Set these separately in **Supabase Dashboard → Settings → Edge Functions → Secrets**:
+
+| Secret               | Value         |
+| -------------------- | ------------- |
+| `RESEND_API_KEY`     | same as above |
+| `EMAIL_FROM`         | same as above |
+| `APP_URL`            | same as above |
+| `UNSUBSCRIBE_SECRET` | same as above |
+
+`SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are injected automatically — you do not need to add those.
+
+`ADMIN_USER_ID` is only used by the SvelteKit app, not by Edge Functions, so it does not need to be added here.
+
+### Verify the sending domain
+
+In the Resend dashboard → Domains → Add Domain → enter `norskeord.com`. Resend will give you DNS records (TXT for SPF and CNAME for DKIM) to add in your DNS provider. Emails won't deliver reliably until this is done.
 
 ---
 
 ## Step 3 — Lesson Generation Script
 
-This runs locally (or as an on-demand Edge Function) to top up the buffer.
-Create `scripts/generate-lessons.ts`:
+This runs locally to top up the lesson buffer. Create `scripts/generate-lessons.ts`:
 
-```ts
+````ts
 /**
  * generate-lessons.ts
  *
  * Generates upcoming lesson content via Claude API and stores in daily_lessons.
- * Run manually or trigger as a Supabase Edge Function.
+ * Run manually whenever you want to top up the buffer (aim for 6 weeks ahead).
  *
  * Usage:
- *   npx tsx scripts/generate-lessons.ts
+ *   pnpm generate:lessons
  *
+ * Reads from .env automatically via --env-file=.env in the npm script.
  * Env vars required:
  *   ANTHROPIC_API_KEY
  *   PUBLIC_SUPABASE_URL
@@ -212,7 +284,7 @@ Schema:
 Rules:
 - vocabulary: exactly 6 to 8 items, choose words that are high-frequency but not trivially basic
 - exercises: exactly 2 to 3 items
-- main_text: realistic everyday or professional Norwegian, not textbook-stilted`,
+- main_text: realistic everyday or professional Norwegian, not textbook-stilted`
 };
 
 // ── Generation ─────────────────────────────────────────────────────────────────
@@ -220,7 +292,7 @@ Rules:
 async function generateLesson(group: LevelGroup, date: Date): Promise<object> {
   const dateStr = date.toISOString().slice(0, 10);
   const message = await anthropic.messages.create({
-    model: 'claude-opus-4-6',
+    model: 'claude-sonnet-4-6',
     max_tokens: 1500,
     system: SYSTEM_PROMPT[group],
     messages: [
@@ -233,7 +305,10 @@ async function generateLesson(group: LevelGroup, date: Date): Promise<object> {
 
   const raw = message.content[0].type === 'text' ? message.content[0].text : '';
   // Strip any accidental markdown fences before parsing.
-  const clean = raw.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '').trim();
+  const clean = raw
+    .replace(/^```(?:json)?\n?/, '')
+    .replace(/\n?```$/, '')
+    .trim();
   return JSON.parse(clean);
 }
 
@@ -289,13 +364,7 @@ async function main() {
 }
 
 main().catch(console.error);
-```
-
-Add to `package.json` scripts:
-
-```json
-"generate:lessons": "npx tsx scripts/generate-lessons.ts"
-```
+````
 
 Run it:
 
@@ -303,20 +372,41 @@ Run it:
 pnpm generate:lessons
 ```
 
+You should see output like:
+
+```
+[gen]  A 2026-06-06 — generating…
+[ok]   A 2026-06-06 — stored
+[gen]  A 2026-06-20 — generating…
+[ok]   A 2026-06-20 — stored
+[gen]  B 2026-06-06 — generating…
+...
+Done. Generated: 12, Skipped: 0
+```
+
+Re-running is safe — already-stored lessons are skipped.
+
 ---
 
 ## Step 4 — Admin Review Page
+
+The admin page requires you to be logged in **as your specific account**. The guard reads `ADMIN_USER_ID` from the environment — no user ID is hardcoded in source code.
 
 Create `src/routes/admin/lessons/+page.server.ts`:
 
 ```ts
 import { createSupabaseServerClient } from '$lib/server/supabase';
-import { redirect } from '@sveltejs/kit';
+import { redirect, error } from '@sveltejs/kit';
+import { ADMIN_USER_ID } from '$env/static/private';
 import type { PageServerLoad, Actions } from './$types';
 
 export const load: PageServerLoad = async ({ cookies, locals }) => {
-  // Guard: only allow admin (hardcode your user_id or check a role flag).
+  // Must be logged in.
   if (!locals.user) throw redirect(303, '/auth/login');
+
+  // Must be the admin account. ADMIN_USER_ID is read from .env at build time.
+  // Any other logged-in user gets a 403, not a redirect (to avoid leaking the route).
+  if (locals.user.id !== ADMIN_USER_ID) throw error(403, 'Forbidden');
 
   const supabase = createSupabaseServerClient(cookies);
   const { data: lessons } = await supabase
@@ -329,13 +419,15 @@ export const load: PageServerLoad = async ({ cookies, locals }) => {
 };
 
 export const actions: Actions = {
-  approve: async ({ request, cookies }) => {
+  approve: async ({ request, cookies, locals }) => {
+    if (!locals.user || locals.user.id !== ADMIN_USER_ID) throw error(403, 'Forbidden');
     const supabase = createSupabaseServerClient(cookies);
     const data = await request.formData();
     const id = data.get('id') as string;
     await supabase.from('daily_lessons').update({ approved: true }).eq('id', id);
   },
-  reject: async ({ request, cookies }) => {
+  reject: async ({ request, cookies, locals }) => {
+    if (!locals.user || locals.user.id !== ADMIN_USER_ID) throw error(403, 'Forbidden');
     const supabase = createSupabaseServerClient(cookies);
     const data = await request.formData();
     const id = data.get('id') as string;
@@ -343,6 +435,9 @@ export const actions: Actions = {
   }
 };
 ```
+
+**Why `$env/static/private` instead of `process.env`?**
+SvelteKit's `$env/static/private` reads from `.env` at build time and keeps the value server-side only — it never reaches the browser. `process.env` works too, but SvelteKit will warn you to use its own env module for consistency. Either works; the static import is the idiomatic choice here.
 
 Create `src/routes/admin/lessons/+page.svelte`:
 
@@ -361,7 +456,7 @@ Create `src/routes/admin/lessons/+page.svelte`:
     <header>
       <strong>{lesson.lesson_date}</strong> — Level {groups[lesson.level_group]}
       {#if lesson.approved}
-        <span class="badge approved">Approved</span>
+        <span class="badge approved">✓ Approved</span>
       {:else}
         <span class="badge pending">Pending review</span>
       {/if}
@@ -410,14 +505,14 @@ Create `src/routes/api/email/unsubscribe/+server.ts`:
 
 ```ts
 import { createClient } from '@supabase/supabase-js';
-import { json, error } from '@sveltejs/kit';
+import { error } from '@sveltejs/kit';
+import { UNSUBSCRIBE_SECRET, SUPABASE_SERVICE_ROLE_KEY } from '$env/static/private';
+import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import type { RequestHandler } from './$types';
 import { createHmac } from 'crypto';
 
-const SECRET = process.env.UNSUBSCRIBE_SECRET!; // add to .env.local
-
 function verifyToken(userId: string, token: string): boolean {
-  const expected = createHmac('sha256', SECRET).update(userId).digest('hex');
+  const expected = createHmac('sha256', UNSUBSCRIBE_SECRET).update(userId).digest('hex');
   return token === expected;
 }
 
@@ -429,15 +524,9 @@ export const GET: RequestHandler = async ({ url }) => {
     throw error(400, 'Invalid unsubscribe link');
   }
 
-  const supabase = createClient(
-    process.env.PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
-  );
+  const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
-  await supabase
-    .from('email_subscribers')
-    .update({ active: false })
-    .eq('user_id', userId);
+  await supabase.from('email_subscribers').update({ active: false }).eq('user_id', userId);
 
   return new Response(
     '<html><body><h2>Unsubscribed</h2><p>You will no longer receive Norwegian lesson emails from Norskeord.</p></body></html>',
@@ -451,18 +540,13 @@ Token generation helper (used in the Edge Function when building emails):
 ```ts
 // src/lib/server/email-token.ts
 import { createHmac } from 'crypto';
-
-export function unsubscribeToken(userId: string): string {
-  return createHmac('sha256', process.env.UNSUBSCRIBE_SECRET!).update(userId).digest('hex');
-}
+import { UNSUBSCRIBE_SECRET } from '$env/static/private';
 
 export function unsubscribeUrl(userId: string, baseUrl: string): string {
-  const token = unsubscribeToken(userId);
+  const token = createHmac('sha256', UNSUBSCRIBE_SECRET).update(userId).digest('hex');
   return `${baseUrl}/api/email/unsubscribe?uid=${userId}&token=${token}`;
 }
 ```
-
-Add `UNSUBSCRIBE_SECRET` (any random 32-byte hex string) to `.env.local` and to Supabase Edge Function secrets.
 
 ---
 
@@ -490,9 +574,10 @@ Create `supabase/functions/send-lesson-email/index.ts`:
  *   RESEND_API_KEY
  *   EMAIL_FROM         e.g. "Norskeord <lessons@norskeord.com>"
  *   APP_URL            e.g. "https://norskeord.com"
- *   UNSUBSCRIBE_SECRET (same value as in .env.local)
+ *   UNSUBSCRIBE_SECRET (same value as in .env)
  *
  * SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are injected automatically.
+ * ADMIN_USER_ID is NOT needed here — it is only used by the SvelteKit app.
  */
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
@@ -529,15 +614,10 @@ interface Lesson {
 interface Subscriber {
   user_id: string;
   level: string;
-  email: string; // joined from auth.users
+  email: string;
 }
 
 // ── Schedule helpers ───────────────────────────────────────────────────────────
-
-const LEVEL_GROUP: Record<string, LevelGroup> = {
-  A1: 'A', A2: 'A',
-  B1: 'B', B2: 'B',
-};
 
 function isSendDay(group: LevelGroup, date: Date): boolean {
   if (date.getDay() !== 5) return false;
@@ -547,24 +627,32 @@ function isSendDay(group: LevelGroup, date: Date): boolean {
 
 // ── Token helper ───────────────────────────────────────────────────────────────
 
-function unsubscribeUrl(userId: string, secret: string, appUrl: string): string {
+function buildUnsubscribeUrl(userId: string, secret: string, appUrl: string): string {
   const token = createHmac('sha256', secret).update(userId).digest('hex');
   return `${appUrl}/api/email/unsubscribe?uid=${userId}&token=${token}`;
 }
 
 // ── Email template ─────────────────────────────────────────────────────────────
 
-function buildEmailHtml(lesson: Lesson, subscriber: Subscriber, appUrl: string, unsubUrl: string): string {
+function buildEmailHtml(
+  lesson: Lesson,
+  subscriber: Subscriber,
+  appUrl: string,
+  unsubUrl: string
+): string {
   const levelLabel = lesson.level_group === 'A' ? 'A1/A2' : 'B1/B2';
   const dailyPageUrl = `${appUrl}/daily/${lesson.level_group.toLowerCase()}/${lesson.lesson_date}`;
 
   const vocabRows = lesson.vocabulary
-    .map(v => `<tr><td><strong>${v.norsk}</strong></td><td>${v.english}</td><td><em>${v.example}</em></td></tr>`)
+    .map(
+      (v) =>
+        `<tr><td><strong>${v.norsk}</strong></td><td>${v.english}</td><td><em>${v.example}</em></td></tr>`
+    )
     .join('');
 
   const exerciseItems = lesson.exercises
     .map((ex, i) => {
-      const opts = ex.options ? `<ul>${ex.options.map(o => `<li>${o}</li>`).join('')}</ul>` : '';
+      const opts = ex.options ? `<ul>${ex.options.map((o) => `<li>${o}</li>`).join('')}</ul>` : '';
       return `<p><strong>${i + 1}.</strong> ${ex.prompt}${opts}</p>`;
     })
     .join('');
@@ -639,14 +727,12 @@ Deno.serve(async (req: Request) => {
   for (const group of ['A', 'B'] as LevelGroup[]) {
     results[group] = { sent: 0, skipped: 0, failed: 0 };
 
-    // Skip if today is not a send day for this group.
     if (!isSendDay(group, today)) {
       console.log(`[skip] group=${group} — not a send day`);
       results[group].skipped = -1; // sentinel: not applicable today
       continue;
     }
 
-    // Fetch the approved lesson for today.
     const { data: lesson, error: lessonErr } = await supabase
       .from('daily_lessons')
       .select('*')
@@ -660,10 +746,8 @@ Deno.serve(async (req: Request) => {
       continue;
     }
 
-    // Fetch active subscribers for this level group.
-    // We join email from auth.users via a view or RPC — see note below.
     const { data: subscribers, error: subErr } = await supabase
-      .from('email_subscribers_with_email') // view defined in schema step below
+      .from('email_subscribers_with_email')
       .select('user_id, level, email')
       .eq('active', true)
       .in('level', group === 'A' ? ['A1', 'A2'] : ['B1', 'B2']);
@@ -676,7 +760,8 @@ Deno.serve(async (req: Request) => {
     console.log(`[send] group=${group} lesson=${todayStr} subscribers=${subscribers.length}`);
 
     for (const sub of subscribers as Subscriber[]) {
-      const html = buildEmailHtml(lesson as Lesson, sub, appUrl, unsubscribeUrl(sub.user_id, unsubSecret, appUrl));
+      const unsubUrl = buildUnsubscribeUrl(sub.user_id, unsubSecret, appUrl);
+      const html = buildEmailHtml(lesson as Lesson, sub, appUrl, unsubUrl);
 
       const { error: sendErr } = await resend.emails.send({
         from: emailFrom,
@@ -704,30 +789,14 @@ Deno.serve(async (req: Request) => {
 });
 ```
 
-**Subscriber email view** — add to the migration SQL (auth.users is not directly queryable via RLS, but the service role can):
-
-```sql
--- View that joins email_subscribers with the user email from auth.users.
--- Only accessible with the service role key (used by Edge Functions).
-CREATE VIEW email_subscribers_with_email AS
-SELECT
-  es.user_id,
-  es.level,
-  es.active,
-  es.subscribed_at,
-  au.email
-FROM email_subscribers es
-JOIN auth.users au ON au.id = es.user_id;
-```
-
 ---
 
 ## Step 7 — pg_cron Schedule
 
 In the Supabase Dashboard → Database → Cron Jobs, add:
 
-| Name | Schedule | Command |
-|---|---|---|
+| Name                | Schedule    | Command                                                                                                                                               |
+| ------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `send-lesson-email` | `0 8 * * 5` | `SELECT net.http_post(url := 'https://<ref>.supabase.co/functions/v1/send-lesson-email', headers := '{"Authorization": "Bearer <anon-key>"}'::jsonb)` |
 
 This fires every Friday at 08:00 UTC. The function itself checks `isSendDay` per group, so A/B emails only go out on the 1st and 3rd Friday. No emails are wasted on off-weeks.
@@ -824,7 +893,7 @@ Create `src/routes/daily/[level]/[date]/+page.svelte`:
         {:else}
           <input type="text" bind:value={answers[i]} placeholder="Skriv svaret…" />
         {/if}
-        <button on:click={() => revealed[i] = true}>Vis svar</button>
+        <button on:click={() => (revealed[i] = true)}>Vis svar</button>
         {#if revealed[i]}
           <p class="answer">✓ {ex.answer}</p>
         {/if}
@@ -844,11 +913,7 @@ In `src/routes/profile/+page.svelte` (Phase 4-A), add to the Notifications secti
 <!-- Email lesson service (Plus only) -->
 {#if data.plan === 'plus'}
   <label>
-    <input
-      type="checkbox"
-      checked={emailSubscribed}
-      on:change={toggleEmailSubscription}
-    />
+    <input type="checkbox" checked={emailSubscribed} on:change={toggleEmailSubscription} />
     Receive Norwegian lesson emails
     {#if emailSubscribed}
       <span class="meta">(biweekly, {levelGroup === 'A' ? 'A1/A2' : 'B1/B2'} level)</span>
@@ -879,7 +944,7 @@ toggleEmail: async ({ request, cookies, locals }) => {
       .update({ active: false })
       .eq('user_id', locals.user.id);
   }
-}
+};
 ```
 
 ---
@@ -896,13 +961,13 @@ In `generate-lessons.ts`, change the insert to:
 ```ts
 await supabase.from('daily_lessons').insert({
   // ...
-  approved: true   // ← was false
+  approved: true // ← was false
 });
 ```
 
-**Option B — Auto-approve via a Supabase Edge Function**
+**Option B — Auto-approve via a Supabase Edge Function (recommended)**
 
-Create `supabase/functions/auto-approve-lessons/index.ts` that runs weekly (e.g. every Monday at 06:00 UTC via pg_cron):
+Create `supabase/functions/auto-approve-lessons/index.ts` that runs weekly (every Monday at 06:00 UTC via pg_cron):
 
 ```ts
 Deno.serve(async () => {
@@ -911,8 +976,9 @@ Deno.serve(async () => {
     Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
   );
 
-  // Auto-approve all lessons that were generated more than 48 hours ago
-  // and are scheduled more than 3 days from now (buffer to catch any issues).
+  // Auto-approve lessons generated more than 48 hours ago.
+  // This gives you a window to spot-check /admin/lessons and reject anything bad.
+  // Everything else is approved automatically before the Friday send.
   const cutoff = new Date();
   cutoff.setHours(cutoff.getHours() - 48);
 
@@ -934,44 +1000,55 @@ Deno.serve(async () => {
 
 pg_cron schedule: `0 6 * * 1` (every Monday at 06:00 UTC).
 
-This gives you a 48-hour window after generation to spot-check the `/admin/lessons` page and reject anything bad. Everything else gets approved automatically before the Friday send. No action required on your end in normal operation.
+Normal operation with Option B: run `pnpm generate:lessons` on Monday → check `/admin/lessons` if you want → Wednesday the auto-approve function fires → Friday the send function finds approved lessons and sends. No required action from you in steady state.
 
 ---
 
 ## Files Summary
 
 ```
-scripts/generate-lessons.ts                              ← Step 3 (run locally or on-demand)
+scripts/generate-lessons.ts                              ← Step 3
 supabase/migrations/006_email_service.sql                ← Step 1
 supabase/functions/send-lesson-email/index.ts            ← Step 6
-supabase/functions/auto-approve-lessons/index.ts         ← Step 9 (optional)
-src/lib/server/email-token.ts                            ← Step 5
+supabase/functions/auto-approve-lessons/index.ts         ← Automation Option B
 src/routes/api/email/unsubscribe/+server.ts              ← Step 5
+src/lib/server/email-token.ts                            ← Step 5
 src/routes/admin/lessons/+page.server.ts                 ← Step 4
 src/routes/admin/lessons/+page.svelte                    ← Step 4
 src/routes/daily/[level]/[date]/+page.server.ts          ← Step 8
 src/routes/daily/[level]/[date]/+page.svelte             ← Step 8
 ```
 
-Env vars to add:
+### Env vars to add to `.env`
+
+```bash
+ANTHROPIC_API_KEY=          # console.anthropic.com → API Keys (pay-per-use, not Claude.ai)
+RESEND_API_KEY=             # resend.com → API Keys
+EMAIL_FROM=                 # e.g. Norskeord <lessons@norskeord.com>
+APP_URL=                    # e.g. https://norskeord.com
+UNSUBSCRIBE_SECRET=         # node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+ADMIN_USER_ID=              # Supabase Dashboard → Authentication → Users → your UUID
 ```
-RESEND_API_KEY=
-EMAIL_FROM=Norskeord <lessons@norskeord.com>
-APP_URL=https://norskeord.com
-UNSUBSCRIBE_SECRET=<32-byte hex>
-ANTHROPIC_API_KEY=  (already exists if used elsewhere)
+
+### Supabase Edge Function secrets (set separately in dashboard)
+
+```
+RESEND_API_KEY, EMAIL_FROM, APP_URL, UNSUBSCRIBE_SECRET
 ```
 
 ---
 
 ## Launch Checklist
 
-- [ ] Migration `006_email_service.sql` applied to production
-- [ ] `norskeord.com` sending domain verified in Resend dashboard
-- [ ] All env vars set in Supabase Edge Function secrets
+- [ ] `pnpm add resend` and `pnpm add -D @anthropic-ai/sdk tsx`
+- [ ] All env vars added to `.env`
+- [ ] Migration `006_email_service.sql` applied (`npx supabase db push`)
+- [ ] `norskeord.com` sending domain verified in Resend dashboard (DNS TXT + DKIM)
+- [ ] Edge Function secrets set in Supabase dashboard
 - [ ] `pnpm generate:lessons` run to pre-generate 6 weeks of A and B content
-- [ ] All generated lessons reviewed at `/admin/lessons`
-- [ ] `send-lesson-email` Edge Function deployed and manually triggered with a test subscriber
-- [ ] `pg_cron` job scheduled
-- [ ] Auto-approve function deployed (optional, after first few months)
-- [ ] Email subscription toggle live in Profile page
+- [ ] Generated lessons reviewed at `/admin/lessons` and approved
+- [ ] `send-lesson-email` Edge Function deployed (`npx supabase functions deploy send-lesson-email`)
+- [ ] Edge Function manually triggered once to verify with a test subscriber
+- [ ] `pg_cron` job scheduled (every Friday 08:00 UTC)
+- [ ] `auto-approve-lessons` Edge Function deployed and scheduled (every Monday 06:00 UTC)
+- [ ] Email subscription toggle live in Profile page (Phase 4-A)
