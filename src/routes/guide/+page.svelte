@@ -50,6 +50,65 @@
     study sessions become.
   </p>
 
+  <!-- Rating buttons -->
+  <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
+    >Which button should I tap?</Heading
+  >
+
+  <p class="mb-6 text-gray-700 dark:text-gray-300">
+    After flipping a card, ask yourself one question: <em>how easy was it to recall that word?</em>
+    Pick the button that honestly matches your experience.
+  </p>
+
+  <div class="mb-4 space-y-3">
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block shrink-0 rounded-lg bg-red-100 px-3 py-1 text-sm font-semibold text-red-700 dark:bg-red-900/40 dark:text-red-300"
+        >Again</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">
+        You could not recall it, guessed wrong, or needed the answer to make sense of the word. The
+        card comes back later in the same session so you get another try today.
+      </p>
+    </div>
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block shrink-0 rounded-lg bg-orange-100 px-3 py-1 text-sm font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
+        >Hard</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">
+        You got it, but it took real effort — slow, hesitant, or nearly wrong. The next review
+        interval grows only a little.
+      </p>
+    </div>
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block shrink-0 rounded-lg bg-green-100 px-3 py-1 text-sm font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
+        >Good</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">
+        You recalled it correctly with normal effort. This is the right pick for most cards most of
+        the time — the scheduling algorithm is built around it.
+      </p>
+    </div>
+    <div class="flex items-start gap-3">
+      <span
+        class="mt-0.5 inline-block shrink-0 rounded-lg bg-blue-100 px-3 py-1 text-sm font-semibold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300"
+        >Easy</span
+      >
+      <p class="text-gray-700 dark:text-gray-300">
+        It felt immediately obvious — no hesitation at all. The next review jumps much further into
+        the future. Use it sparingly; overusing Easy can leave gaps in your memory.
+      </p>
+    </div>
+  </div>
+
+  <p class="mb-10 text-gray-700 dark:text-gray-300">
+    Not sure which to pick? <strong>Good</strong> is almost always the right default. Use
+    <strong>Again</strong> and <strong>Easy</strong> only when the difference is clear-cut — they have
+    the biggest effect on your schedule.
+  </p>
+
   <!-- Card states -->
   <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
     >What the progress labels mean</Heading

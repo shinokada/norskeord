@@ -93,7 +93,9 @@ export const POST: RequestHandler = async ({ request }) => {
         .from('subscriptions')
         .update({
           status: 'cancelled' satisfies SubscriptionStatus,
-          valid_until: attrs.ends_at ?? null
+          valid_until: attrs.ends_at ?? null,
+          lemon_squeezy_customer_id: String(attrs.customer_id),
+          lemon_squeezy_subscription_id: subscriptionId
         })
         .eq('user_id', userId);
 
@@ -111,7 +113,9 @@ export const POST: RequestHandler = async ({ request }) => {
         .update({
           plan: 'free',
           status: 'expired' satisfies SubscriptionStatus,
-          valid_until: null
+          valid_until: null,
+          lemon_squeezy_customer_id: String(attrs.customer_id),
+          lemon_squeezy_subscription_id: subscriptionId
         })
         .eq('user_id', userId);
 
@@ -125,7 +129,11 @@ export const POST: RequestHandler = async ({ request }) => {
     case 'subscription_paused': {
       const { error } = await supabase
         .from('subscriptions')
-        .update({ status: 'past_due' satisfies SubscriptionStatus })
+        .update({
+          status: 'past_due' satisfies SubscriptionStatus,
+          lemon_squeezy_customer_id: String(attrs.customer_id),
+          lemon_squeezy_subscription_id: subscriptionId
+        })
         .eq('user_id', userId);
 
       if (error) {
@@ -140,7 +148,9 @@ export const POST: RequestHandler = async ({ request }) => {
         .from('subscriptions')
         .update({
           status: 'active' satisfies SubscriptionStatus,
-          valid_until: attrs.ends_at ?? null
+          valid_until: attrs.ends_at ?? null,
+          lemon_squeezy_customer_id: String(attrs.customer_id),
+          lemon_squeezy_subscription_id: subscriptionId
         })
         .eq('user_id', userId);
 

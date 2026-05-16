@@ -1,35 +1,17 @@
+# Questions
+
 You can access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ## Plus related
 
-- /plus email lesson for Plus member update for 2-3 times a month for level A/B and A1 and A2 has the same email, B1 and B2 has the same email to reduce manual work. Automate using AI as much as possible.
 - Plus stats image for Free vs Plus
-
-- what are difference between again/hard and hard/good and good/easy?
-  /plus page? When should user click one of these?
-- daily streaks push notifications in Free vs Plus table
-- Currently there is Plus button for un-logged in user. And this is hidden when you are a plus member. When a plus member want to see /plus page, you need to add /plus to URL. For a better UI, should we change the Plus button to a nav item?
+- Add daily streaks push notifications in Free vs Plus table
 
 ===========
 
-- # /quiz: how about phrase quiz with fill and write in Norwegian. This is challenging but is good for users who want to learn phrases. No multiple choice since it is easy.
-
-## Home page
-
-- In the home page, I don't think I need Browse decks button.
-- Use a card for each level in two columns
-
 ## Others
-
-- In /quiz page Category doesn't include Uttrykk
-- When I select a correct answer in a multiple question, there is "Mark as easy" button and when I click it nothing happens. It should have action feedback or response telling either Marked as easy / Done / Marked / etc using toast or alert from flowbite-svelte.
-- In /quiz multiple choice answer has a phrase and Pronounce. But the Pronounce uses a word not the phrase and it is very confusing.
-- In quiz Session complete page it has &#x2717; and &#x2713; like the following:
-
-&#x2713; en anmeldelse — a review / critique
-&#x2717; en skulptur — a sculpture
 
 - Since this app is forcused to A1-B2, I can open more categories for C1 and C2. (5-6 categories open for C1 and C2)
 - /about page should be guide?
@@ -52,7 +34,19 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 
 5. **C1/C2 in distractor pool:** The current plan loads A1–B2 for the distractor pool. C1/C2 data is available but adds loading weight. Omit from the initial build; add later if B2+ quiz users request it.
 
-===== Solved =========
+## Solved
+
+- /plus email lesson for Plus member update for 2-3 times a month for level A/B and A1 and A2 has the same email, B1 and B2 has the same email to reduce manual work. Automate using AI as much as possible.
+- Currently there is Plus button for un-logged in user. And this is hidden when you are a plus member. When a plus member want to see /plus page, you need to add /plus to URL. For a better UI, should we change the Plus button to a nav item?
+- In the home page, I don't think I need Browse decks button.
+- Use a card for each level in two columns
+- In /quiz page Category doesn't include Uttrykk
+- When I select a correct answer in a multiple question, there is "Mark as easy" button and when I click it nothing happens. It should have action feedback or response telling either Marked as easy / Done / Marked / etc using toast or alert from flowbite-svelte.
+- In /quiz multiple choice answer has a phrase and Pronounce. But the Pronounce uses a word not the phrase and it is very confusing.
+- In quiz Session complete page it has &#x2717; and &#x2713; like the following:
+
+&#x2713; en anmeldelse — a review / critique
+&#x2717; en skulptur — a sculpture
 
 1. Problem: After finishing a quiz and want to go back to Quiz home to select level and category require going to another page and click top nav Quiz. Clicking the top nav Quiz should go back to selection page.
 

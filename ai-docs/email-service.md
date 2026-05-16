@@ -73,15 +73,18 @@ Send schedule logic:
 type LevelGroup = 'A' | 'B' | 'C';
 
 const LEVEL_GROUP: Record<string, LevelGroup> = {
-  A1: 'A', A2: 'A',
-  B1: 'B', B2: 'B',
-  C1: 'C', C2: 'C',
+  A1: 'A',
+  A2: 'A',
+  B1: 'B',
+  B2: 'B',
+  C1: 'C',
+  C2: 'C'
 };
 
 /** Returns true if today is a send day for the given level group. */
 function isSendDay(group: LevelGroup, date: Date): boolean {
   if (date.getDay() !== 5) return false; // must be Friday
-  if (group === 'C') return true;        // C sends every Friday
+  if (group === 'C') return true; // C sends every Friday
   // A and B: only 1st and 3rd Friday of the month
   const fridayIndex = Math.ceil(date.getDate() / 7); // 1, 2, 3, 4, or 5
   return fridayIndex === 1 || fridayIndex === 3;
@@ -108,7 +111,7 @@ async function generateUpcomingLessons() {
 
     const lesson = await callClaudeAPI({
       system: LESSON_SYSTEM_PROMPT[group],
-      user: `Generate a lesson for ${group} learners for ${date}.`,
+      user: `Generate a lesson for ${group} learners for ${date}.`
     });
     await db.dailyLessons.insert({ level_group: group, lesson_date: date, ...lesson });
   }
@@ -152,6 +155,7 @@ CREATE TABLE daily_lessons (
 ```
 
 Key design decisions:
+
 - `level_group` (`A`/`B`/`C`) replaces per-sublevel `level` — A1 and A2 share one row, B1 and B2 share one row. This halves the content table size and generation work.
 - `approved` flag supports the optional human review step before sending.
 - No `frequency` or `unsubscribe_token` columns — frequency is derived from `level_group` at send time, and unsubscribe uses a signed URL with `user_id`.
