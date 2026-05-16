@@ -37,6 +37,7 @@
   const LS_CARD_TYPE = 'vocab-flashcard-card-type';
   const LS_SHOW_EXAMPLE = 'vocab-flashcard-show-example';
   const LS_DECK_MODE = 'vocab-flashcard-deck-mode';
+  const LS_SESSION_LIMIT = 'vocab-flashcard-session-limit';
   const NEW_CARD_SESSION_LIMIT = 15;
 
   function getInitialMode(): Mode {
@@ -60,6 +61,14 @@
     if (!browser) return 'all';
     const saved = localStorage.getItem(LS_DECK_MODE);
     return saved === 'due' ? 'due' : 'all';
+  }
+
+  function getSessionLimit(): number | null {
+    if (!browser) return 20;
+    const saved = localStorage.getItem(LS_SESSION_LIMIT);
+    if (!saved || saved === 'all') return null;
+    const n = parseInt(saved, 10);
+    return isNaN(n) ? 20 : n;
   }
 
   let mode = $state<Mode>(getInitialMode());
@@ -167,10 +176,13 @@
   }
 
   function buildDeck(es: VocabEntry[], mo: Mode, ct: CardType, dm: DeckMode) {
+    const limit = getSessionLimit();
     const items =
       dm === 'due'
         ? buildDueDeck(es, mo, ct, progressMap)
-        : shuffle(es).map((e) => makeDeckItem(e, mo, ct));
+        : shuffle(es)
+            .slice(0, limit ?? es.length)
+            .map((e) => makeDeckItem(e, mo, ct));
     deck = items;
     currentIndex = 0;
     completed = false;
