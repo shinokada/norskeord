@@ -23,11 +23,12 @@
     }
 
     submitting = true;
+    const next = page.url.searchParams.get('next') ?? '/';
     const { error: authError } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        // After clicking the magic link, Supabase redirects here to exchange the code.
-        emailRedirectTo: `${window.location.origin}/auth/callback`
+        // Carry `next` through so the callback can redirect correctly after login.
+        emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`
       }
     });
     submitting = false;

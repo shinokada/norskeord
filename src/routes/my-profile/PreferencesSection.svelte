@@ -40,19 +40,42 @@
   let cardType = $derived((profile?.include_phrases ?? false) ? 'phrase' : 'word');
   let voiceSpeed = $derived(String(profile?.voice_speed ?? 1));
   let voicePitch = $derived(String(profile?.voice_pitch ?? 1));
+  // session_limit: null in DB → default to '20'; number → its string value
+  let sessionLimit = $derived(
+    profile?.session_limit != null ? String(profile.session_limit) : '20'
+  );
+  // quiz_limit: null in DB → default to 'default' sentinel; number → its string value
+  let quizLimit = $derived(profile?.quiz_limit != null ? String(profile.quiz_limit) : 'default');
+
+  const sessionLimitOptions = [
+    { value: '10', label: '10 cards' },
+    { value: '20', label: '20 cards (default)' },
+    { value: '30', label: '30 cards' },
+    { value: '50', label: '50 cards' },
+    { value: 'all', label: 'All cards' }
+  ];
+
+  const quizLimitOptions = [
+    { value: '5', label: '5 questions' },
+    { value: 'default', label: '10 questions (default)' },
+    { value: '15', label: '15 questions' },
+    { value: '20', label: '20 questions' }
+  ];
 
   function applyToLocalStorage() {
     localStorage.setItem('vocab-flashcard-mode', cardDirection === 'en_no' ? 'engnor' : 'noreng');
     localStorage.setItem('vocab-flashcard-card-type', cardType);
     localStorage.setItem(LS_SPEED, voiceSpeed);
     localStorage.setItem(LS_PITCH, voicePitch);
+    localStorage.setItem('vocab-flashcard-session-limit', sessionLimit);
+    localStorage.setItem('vocab-quiz-limit', quizLimit);
     // Write through the store so the nav button updates reactively.
     localeStore.set(uiLanguage);
   }
 </script>
 
 <section
-  class="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
+  class="rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_prefs_heading()}
@@ -221,6 +244,52 @@
       </div>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
         {m.profile_prefs_voice_tone_hint()}
+      </p>
+    </div>
+
+    <!-- Session card limit -->
+    <div>
+      <label
+        for="session_limit"
+        class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+      >
+        {m.profile_prefs_session_limit()}
+      </label>
+      <select
+        id="session_limit"
+        name="session_limit"
+        bind:value={sessionLimit}
+        class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100"
+      >
+        {#each sessionLimitOptions as opt (opt.value)}
+          <option value={opt.value}>{opt.label}</option>
+        {/each}
+      </select>
+      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        {m.profile_prefs_session_limit_hint()}
+      </p>
+    </div>
+
+    <!-- Quiz questions per session -->
+    <div>
+      <label
+        for="quiz_limit"
+        class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+      >
+        {m.profile_prefs_quiz_limit()}
+      </label>
+      <select
+        id="quiz_limit"
+        name="quiz_limit"
+        bind:value={quizLimit}
+        class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100"
+      >
+        {#each quizLimitOptions as opt (opt.value)}
+          <option value={opt.value}>{opt.label}</option>
+        {/each}
+      </select>
+      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        {m.profile_prefs_quiz_limit_hint()}
       </p>
     </div>
 

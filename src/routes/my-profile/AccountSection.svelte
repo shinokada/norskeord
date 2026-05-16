@@ -28,7 +28,7 @@
 </script>
 
 <section
-  class="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
+  class="rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_account_heading()}
@@ -104,7 +104,7 @@
   </form>
 
   <!-- Export data -->
-  <div class="mt-6 border-t border-white/10 pt-5 dark:border-white/10">
+  <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
     <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
