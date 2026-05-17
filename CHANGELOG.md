@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.1.0
+
+### Minor Changes
+
+- feat: email service and quiz features
+
 ## 2.0.0
 
 ### Major Changes
