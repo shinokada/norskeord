@@ -22,6 +22,26 @@ CREATE TABLE public.card_progress (
   CONSTRAINT card_progress_pkey PRIMARY KEY (id),
   CONSTRAINT card_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
+CREATE TABLE public.daily_lessons (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  level_group text NOT NULL CHECK (level_group = ANY (ARRAY['A'::text, 'B'::text])),
+  lesson_date date NOT NULL,
+  focus_topic text NOT NULL,
+  main_text text NOT NULL,
+  vocabulary jsonb NOT NULL,
+  exercises jsonb NOT NULL,
+  approved boolean NOT NULL DEFAULT false,
+  generated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT daily_lessons_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.email_subscribers (
+  user_id uuid NOT NULL,
+  level text NOT NULL CHECK (level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C1'::text, 'C2'::text])),
+  subscribed_at timestamp with time zone DEFAULT now(),
+  active boolean DEFAULT true,
+  CONSTRAINT email_subscribers_pkey PRIMARY KEY (user_id),
+  CONSTRAINT email_subscribers_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
 CREATE TABLE public.profiles (
   id uuid NOT NULL,
   display_name text,

@@ -124,7 +124,6 @@ test('Space advances from reveal to next question', async ({ page }) => {
   await page.keyboard.press('Space');
 
   // Should now be on question 2 (Next button gone, new question showing)
-  // The question counter should have advanced
   await expect(page.getByText(/question 2 of/i)).toBeVisible();
 });
 

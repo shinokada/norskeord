@@ -223,5 +223,45 @@ export const actions: Actions = {
     }
 
     redirect(302, '/?deleted=1');
+  },
+
+  toggleEmail: async ({ locals }) => {
+    if (!locals.user) redirect(302, '/auth/login');
+    if (locals.plan !== 'plus')
+      return fail(403, { field: 'toggleEmail', message: 'Plus required.' });
+
+    const profile = await getProfile(locals.supabase, locals.user.id);
+    const next = !(profile?.email_lesson ?? false);
+
+    // 1. Update the profile flag so the UI reflects the preference.
+    const { error: profileErr } = await upsertProfile(locals.supabase, locals.user.id, {
+      email_lesson: next
+    });
+    if (profileErr) {
+      return fail(500, { field: 'toggleEmail', message: 'Failed to save. Please try again.' });
+    }
+
+    // 2. Keep email_subscribers in sync.
+    if (next) {
+      // Subscribe: upsert a row with the user's current level.
+      const level = profile?.target_level ?? 'A1';
+      const { error: subErr } = await locals.supabase
+        .from('email_subscribers')
+        .upsert({ user_id: locals.user.id, level, active: true }, { onConflict: 'user_id' });
+      if (subErr) {
+        console.error('[toggleEmail] upsert subscriber failed:', subErr.message);
+      }
+    } else {
+      // Unsubscribe: mark inactive (preserves the row for audit/re-subscribe).
+      const { error: subErr } = await locals.supabase
+        .from('email_subscribers')
+        .update({ active: false })
+        .eq('user_id', locals.user.id);
+      if (subErr) {
+        console.error('[toggleEmail] deactivate subscriber failed:', subErr.message);
+      }
+    }
+
+    return { success: true, action: 'toggleEmail', emailLesson: next };
   }
 };
