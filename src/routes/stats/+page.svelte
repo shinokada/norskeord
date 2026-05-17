@@ -154,15 +154,17 @@
     progressMap = loadProgressMap();
     mounted = true;
 
-    // Load activity chart — free users use localStorage, Plus users use Supabase
+    streak = getStreakFromLocalStorage(progressMap);
+
     const userId = page.data.user?.id as string | undefined;
-    if (isPlus && userId) {
-      // Plus: load from study_days table
+
+    if (userId) {
+      // Any logged-in user (free or Plus): load activity from Supabase study_days
+      // so the chart is consistent across devices.
       const studyDays = await loadStudyDays(userId);
       activityCells = buildActivityGrid(studyDays, 26);
-      streak = getStreakFromLocalStorage(progressMap);
     } else {
-      // Free: derive from localStorage lastSeen values
+      // Anonymous guest: derive activity from localStorage lastSeen values
       const localStudyDays: Record<string, number> = {};
       for (const p of Object.values(progressMap)) {
         if (p.lastSeen) {
@@ -172,8 +174,8 @@
         }
       }
       activityCells = buildActivityGrid(localStudyDays, 26);
-      streak = getStreakFromLocalStorage(progressMap);
     }
+
     activityLoading = false;
   });
 
@@ -207,6 +209,16 @@
             ? m.stats_subtitle_free()
             : m.stats_subtitle_guest()}
       </p>
+      {#if !isPlus}
+        <p class="mt-2 text-sm text-indigo-600 dark:text-indigo-400">
+          🔁 {user ? m.stats_sync_upsell_free() : m.stats_sync_upsell_guest()}
+          <a
+            href="/plus"
+            class="ml-1 font-semibold underline underline-offset-2 hover:text-indigo-800 dark:hover:text-indigo-200"
+            >{m.stats_sync_upsell_cta()}</a
+          >
+        </p>
+      {/if}
     </div>
   </div>
 

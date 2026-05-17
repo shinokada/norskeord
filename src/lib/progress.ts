@@ -356,7 +356,7 @@ export function getStreakFromLocalStorage(progressMap: Record<string, CardProgre
 
 /**
  * Upserts a study_days row for today, incrementing the card count.
- * Fire-and-forget — called from saveProgress for Plus users.
+ * Fire-and-forget — called from saveProgress for Plus users only.
  */
 export async function recordStudyDay(userId: string): Promise<void> {
   try {
@@ -387,33 +387,43 @@ export interface ActivityCell {
   date: string; // YYYY-MM-DD
   count: number; // cards reviewed that day
   level: 0 | 1 | 2 | 3 | 4; // 0=none 1=1-5 2=6-15 3=16-30 4=30+
-  weekday: 1 | 3 | 5; // 1=Mon 3=Wed 5=Fri
+  weekday: 1 | 2 | 3 | 4 | 5 | 6 | 7; // 1=Mon … 7=Sun (ISO)
 }
 
 /**
- * Builds the Mon/Wed/Fri activity grid for the chart.
- * Returns cells in chronological order (oldest first).
+ * Builds the full 7-day-per-week activity grid for the chart.
+ * Returns cells in chronological order (oldest first), one per calendar day.
  * @param studyDays  Map of { 'YYYY-MM-DD': cardCount }
- * @param weeks      How many weeks back to include (default 12)
+ * @param weeks      How many weeks back to include (default 26)
  */
-export function buildActivityGrid(studyDays: Record<string, number>, weeks = 12): ActivityCell[] {
+export function buildActivityGrid(studyDays: Record<string, number>, weeks = 26): ActivityCell[] {
   const cells: ActivityCell[] = [];
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  // Walk back `weeks * 7` days, collect Mon/Wed/Fri only
-  const totalDays = weeks * 7;
-  for (let i = totalDays - 1; i >= 0; i--) {
-    const d = new Date(today);
-    d.setDate(today.getDate() - i);
-    const wd = d.getDay(); // 0=Sun 1=Mon ... 5=Fri 6=Sat
-    if (wd !== 1 && wd !== 3 && wd !== 5) continue;
-    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  // Find the Monday that starts `weeks` weeks ago
+  const dayOfWeek = today.getDay() || 7; // Sun=0 → 7 (ISO weekday)
+  const startOfThisWeek = new Date(today);
+  startOfThisWeek.setDate(today.getDate() - (dayOfWeek - 1));
+
+  const startDate = new Date(startOfThisWeek);
+  startDate.setDate(startOfThisWeek.getDate() - (weeks - 1) * 7);
+
+  // Walk day-by-day from startDate to today
+  const cursor = new Date(startDate);
+  while (cursor <= today) {
+    const wd = cursor.getDay(); // 0=Sun … 6=Sat
+    const isoWeekday = (wd === 0 ? 7 : wd) as ActivityCell['weekday']; // 1=Mon … 7=Sun
+
+    const dateStr = `${cursor.getFullYear()}-${String(cursor.getMonth() + 1).padStart(2, '0')}-${String(cursor.getDate()).padStart(2, '0')}`;
     const count = studyDays[dateStr] ?? 0;
     const level: ActivityCell['level'] =
       count === 0 ? 0 : count <= 5 ? 1 : count <= 15 ? 2 : count <= 30 ? 3 : 4;
-    cells.push({ date: dateStr, count, level, weekday: wd as 1 | 3 | 5 });
+
+    cells.push({ date: dateStr, count, level, weekday: isoWeekday });
+    cursor.setDate(cursor.getDate() + 1);
   }
+
   return cells;
 }
 
