@@ -163,4 +163,72 @@
       <a href="/plus" class="font-semibold underline">Learn more about Plus →</a>
     </p>
   </div>
+
+  <!-- FAQ -->
+  <Heading tag="h2" class="mt-12 mb-6 text-2xl font-semibold dark:text-white">FAQ</Heading>
+
+  <div class="space-y-6">
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        What is the daily study reminder?
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        A browser push notification sent once a day to remind you to study. To enable it, go to
+        <a href="/my-profile" class="underline">Profile</a> → Notifications → Daily study reminder. Your
+        browser will ask for permission the first time.
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        I enabled the reminder but nothing arrives. Why?
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Check that your browser is allowed to send notifications in your OS settings (System
+        Settings → Notifications). On iPhone, notifications only work if you have added Norskeord to
+        your home screen first (Share → Add to Home Screen).
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        What are Norwegian lesson emails?
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Biweekly emails with a short Norwegian text, a vocabulary list, and exercises — matched to
+        your level. Available to Plus members. Enable it under
+        <a href="/my-profile" class="underline">Profile</a> → Notifications.
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        My progress isn't showing on my other device.
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Progress syncs across devices for Plus members. Free accounts store progress on the current
+        device only. <a href="/plus" class="underline">Upgrade to Plus →</a>
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">Can I use Norskeord offline?</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Yes. Install it as an app (Share → Add to Home Screen on iPhone, or the install prompt in
+        Chrome) and flashcard decks you have opened before will work without an internet connection.
+        Ratings are saved locally and sync when you reconnect.
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        What is the difference between Free and Plus?
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Free gives you all A1 and A2 vocabulary plus a preview of B1/B2. Plus unlocks all levels
+        (B1–C2), smart Due today scheduling, cross-device sync, quiz mode, and lesson emails.
+        <a href="/plus" class="underline">See the full comparison →</a>
+      </p>
+    </div>
+  </div>
 </div>
