@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { enhance } from '$app/forms';
   import type { Profile } from '$lib/server/profile';
   import * as m from '$lib/paraglide/messages.js';
   import { subscribeToPush, unsubscribeFromPush } from '$lib/push';
@@ -58,6 +59,11 @@
   let dailyReminder = $derived(profile?.daily_reminder ?? false);
   let reminderLoading = $state(false);
   let reminderError = $state('');
+
+  // Email lesson toggle
+  let emailLesson = $derived.by(() => profile?.email_lesson ?? false);
+  let emailLoading = $state(false);
+  let emailError = $state('');
 
   async function handleReminderToggle() {
     reminderError = '';
@@ -196,18 +202,53 @@
         {#if reminderError}
           <p class="text-xs text-red-500">{reminderError}</p>
         {/if}
-        <label class="flex cursor-pointer items-center gap-3">
-          <input
-            type="checkbox"
-            checked={profile?.email_lesson ?? false}
-            disabled
-            class="h-4 w-4 rounded accent-indigo-600"
-          />
-          <span class="text-sm text-gray-600 dark:text-gray-400">
-            {m.profile_sub_weekly_email()}
-            <span class="text-xs text-gray-400">({m.profile_sub_coming_soon()})</span>
-          </span>
-        </label>
+
+        <!-- Email lesson toggle -->
+        <form
+          method="POST"
+          action="?/toggleEmail"
+          use:enhance={() => {
+            emailLoading = true;
+            emailError = '';
+            return async ({ result, update }) => {
+              emailLoading = false;
+              if (result.type === 'success') {
+                emailLesson =
+                  (result.data as { emailLesson?: boolean })?.emailLesson ?? emailLesson;
+              } else if (result.type === 'failure') {
+                emailError = (result.data?.message as string) ?? m.profile_error_generic();
+                // Revert optimistic toggle on failure.
+              }
+              await update({ reset: false });
+            };
+          }}
+        >
+          <label class="flex cursor-pointer items-start gap-3">
+            <input
+              type="checkbox"
+              name="email_lesson"
+              checked={emailLesson}
+              disabled={emailLoading}
+              onchange={(e) => {
+                emailLesson = (e.currentTarget as HTMLInputElement).checked;
+                (e.currentTarget.closest('form') as HTMLFormElement).requestSubmit();
+              }}
+              class="mt-0.5 h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
+            />
+            <span class="text-sm text-gray-600 dark:text-gray-400">
+              {m.profile_sub_weekly_email()}
+              {#if emailLoading}
+                <span class="text-xs text-gray-400">Saving…</span>
+              {/if}
+              <span class="mt-0.5 block text-xs text-gray-400 dark:text-gray-500">
+                {m.profile_sub_email_hint()}
+              </span>
+            </span>
+          </label>
+          {#if emailError}
+            <p class="mt-1 text-xs text-red-500">{emailError}</p>
+          {/if}
+        </form>
       </div>
     </div>
   {:else if !isPlus}

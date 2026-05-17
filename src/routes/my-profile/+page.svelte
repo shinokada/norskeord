@@ -12,7 +12,7 @@
   <title>{m.profile_title()} — Norskeord</title>
 </svelte:head>
 
-<div class="mx-auto max-w-2xl px-4 py-10">
+<div class="mx-auto max-w-2xl px-4 py-10 text-left">
   <div class="mb-8">
     <h1 class="text-3xl font-bold dark:text-white">{m.profile_title()}</h1>
     {#if data.user?.email}
