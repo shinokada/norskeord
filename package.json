@@ -9,6 +9,11 @@
   },
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -22,9 +27,11 @@
     "test": "npm run test:unit -- --run && npm run test:e2e",
     "test:e2e": "playwright test",
     "ch": "npx changeset",
-    "cv": "npx changeset version"
+    "cv": "npx changeset version",
+    "generate:lessons": "npx tsx --env-file=.env scripts/generate-lessons.ts"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.96.0",
     "@changesets/cli": "^2.31.0",
     "@eslint/compat": "^2.1.0",
     "@eslint/js": "^10.0.1",
@@ -58,6 +65,7 @@
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.0",
     "terser": "^5.47.1",
+    "tsx": "^4.22.0",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.59.3",
     "vite": "^8.0.13",
@@ -74,6 +82,7 @@
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.105.4",
+    "resend": "^6.12.3",
     "ts-fsrs": "^5.3.3"
   }
 }

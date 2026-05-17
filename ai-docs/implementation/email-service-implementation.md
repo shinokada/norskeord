@@ -26,7 +26,7 @@ The doc mentions "a signed URL with `user_id`" but doesn't specify the signing m
 
 ---
 
-## Step 1 — Supabase Schema
+## Step 1 — Supabase Schema ✅ Done
 
 Create `supabase/migrations/006_email_service.sql`:
 
@@ -102,7 +102,7 @@ npx supabase db push
 
 ---
 
-## Step 2 — Install Packages & Environment Variables
+## Step 2 — Install Packages & Environment Variables ✅ Done
 
 ### Install packages
 
@@ -137,11 +137,11 @@ ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxx
 # Used by: supabase/functions/send-lesson-email (Edge Function)
 # Sign up at: https://resend.com → API Keys
 RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
-EMAIL_FROM=Norskeord <lessons@norskeord.com>
+EMAIL_FROM=Norskeord <norskeord.no@gmail.com>
 
 # ── App ───────────────────────────────────────────────────────────────────────
 # Base URL used to build unsubscribe links and exercise page URLs in sent emails.
-APP_URL=https://norskeord.com
+APP_URL=https://norskeord.no
 
 # ── Unsubscribe link signing ──────────────────────────────────────────────────
 # Any random 32-byte hex string. Keep this secret — anyone with it can unsubscribe any user.
@@ -174,11 +174,11 @@ The Edge Functions run in Supabase's cloud and cannot read your local `.env`. Se
 
 ### Verify the sending domain
 
-In the Resend dashboard → Domains → Add Domain → enter `norskeord.com`. Resend will give you DNS records (TXT for SPF and CNAME for DKIM) to add in your DNS provider. Emails won't deliver reliably until this is done.
+In the Resend dashboard → Domains → Add Domain → enter `norskeord.no`. Resend will give you DNS records (TXT for SPF and CNAME for DKIM) to add in your DNS provider. Emails won't deliver reliably until this is done.
 
 ---
 
-## Step 3 — Lesson Generation Script
+## Step 3 — Lesson Generation Script ✅ Done
 
 This runs locally to top up the lesson buffer. Create `scripts/generate-lessons.ts`:
 
@@ -388,7 +388,7 @@ Re-running is safe — already-stored lessons are skipped.
 
 ---
 
-## Step 4 — Admin Review Page
+## Step 4 — Admin Review Page ✅ Done
 
 The admin page requires you to be logged in **as your specific account**. The guard reads `ADMIN_USER_ID` from the environment — no user ID is hardcoded in source code.
 
@@ -499,7 +499,7 @@ This is intentionally minimal — plain HTML, no styling — since it's an inter
 
 ---
 
-## Step 5 — Unsubscribe Endpoint
+## Step 5 — Unsubscribe Endpoint ✅ Done
 
 Create `src/routes/api/email/unsubscribe/+server.ts`:
 
@@ -550,7 +550,7 @@ export function unsubscribeUrl(userId: string, baseUrl: string): string {
 
 ---
 
-## Step 6 — Send Email Edge Function
+## Step 6 — Send Email Edge Function ✅ Done
 
 Create `supabase/functions/send-lesson-email/index.ts`:
 
@@ -572,8 +572,8 @@ Create `supabase/functions/send-lesson-email/index.ts`:
  *
  * Required secrets (Supabase Dashboard → Settings → Edge Functions):
  *   RESEND_API_KEY
- *   EMAIL_FROM         e.g. "Norskeord <lessons@norskeord.com>"
- *   APP_URL            e.g. "https://norskeord.com"
+ *   EMAIL_FROM         e.g. "Norskeord <lessons@norskeord.no>"
+ *   APP_URL            e.g. "https://norskeord.no"
  *   UNSUBSCRIBE_SECRET (same value as in .env)
  *
  * SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are injected automatically.
@@ -791,7 +791,7 @@ Deno.serve(async (req: Request) => {
 
 ---
 
-## Step 7 — pg_cron Schedule
+## Step 7 — pg_cron Schedule - NOT DONE YET
 
 In the Supabase Dashboard → Database → Cron Jobs, add:
 
@@ -803,7 +803,7 @@ This fires every Friday at 08:00 UTC. The function itself checks `isSendDay` per
 
 ---
 
-## Step 8 — `/daily/[level]/[date]` Exercise Page
+## Step 8 — `/daily/[level]/[date]` Exercise Page ✅ Done
 
 Create `src/routes/daily/[level]/[date]/+page.server.ts`:
 
@@ -905,7 +905,7 @@ Create `src/routes/daily/[level]/[date]/+page.svelte`:
 
 ---
 
-## Step 9 — Profile Page: Subscription Toggle
+## Step 9 — Profile Page: Subscription Toggle ✅ Done
 
 In `src/routes/profile/+page.svelte` (Phase 4-A), add to the Notifications section:
 
@@ -1024,8 +1024,8 @@ src/routes/daily/[level]/[date]/+page.svelte             ← Step 8
 ```bash
 ANTHROPIC_API_KEY=          # console.anthropic.com → API Keys (pay-per-use, not Claude.ai)
 RESEND_API_KEY=             # resend.com → API Keys
-EMAIL_FROM=                 # e.g. Norskeord <lessons@norskeord.com>
-APP_URL=                    # e.g. https://norskeord.com
+EMAIL_FROM=                 # e.g. Norskeord <lessons@norskeord.no>
+APP_URL=                    # e.g. https://norskeord.no
 UNSUBSCRIBE_SECRET=         # node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ADMIN_USER_ID=              # Supabase Dashboard → Authentication → Users → your UUID
 ```
@@ -1043,7 +1043,7 @@ RESEND_API_KEY, EMAIL_FROM, APP_URL, UNSUBSCRIBE_SECRET
 - [ ] `pnpm add resend` and `pnpm add -D @anthropic-ai/sdk tsx`
 - [ ] All env vars added to `.env`
 - [ ] Migration `006_email_service.sql` applied (`npx supabase db push`)
-- [ ] `norskeord.com` sending domain verified in Resend dashboard (DNS TXT + DKIM)
+- [ ] `norskeord.no` sending domain verified in Resend dashboard (DNS TXT + DKIM)
 - [ ] Edge Function secrets set in Supabase dashboard
 - [ ] `pnpm generate:lessons` run to pre-generate 6 weeks of A and B content
 - [ ] Generated lessons reviewed at `/admin/lessons` and approved
