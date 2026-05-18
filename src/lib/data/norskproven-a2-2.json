@@ -1,0 +1,278 @@
+{
+  "reading": [
+    {
+      "id": "rp-a2-2-001",
+      "level": "A2",
+      "title": "Ny nabo",
+      "text": "Lars har fått en ny nabo. Hun heter Sofia og kommer fra Polen. Hun snakker litt norsk, men ikke så mye ennå. Lars inviterer henne på kaffe og viser henne rundt i nabolaget. Sofia er glad og takker Lars for hjelpen.",
+      "questions": [
+        {
+          "id": "rq-a2-2-001-1",
+          "prompt": "Hvor kommer Sofia fra?",
+          "options": [
+            { "id": "a", "text": "Sverige." },
+            { "id": "b", "text": "Polen." },
+            { "id": "c", "text": "Danmark." },
+            { "id": "d", "text": "Tyskland." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-a2-2-001-2",
+          "prompt": "Hva gjør Lars for Sofia?",
+          "options": [
+            { "id": "a", "text": "Han hjelper henne å finne jobb." },
+            { "id": "b", "text": "Han inviterer henne på kaffe og viser henne nabolaget." },
+            { "id": "c", "text": "Han lærer henne norsk." },
+            { "id": "d", "text": "Han kjøper mat til henne." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-2-002",
+      "level": "A2",
+      "title": "På biblioteket",
+      "text": "Mia går til biblioteket for å låne bøker. Hun finner to bøker hun vil ha, men kortet hennes virker ikke. Bibliotekaren sier at kortet er utløpt og at hun må fornye det. Mia betaler en liten avgift og får et nytt kort. Hun låner bøkene og går hjem.",
+      "questions": [
+        {
+          "id": "rq-a2-2-002-1",
+          "prompt": "Hva er problemet med Mias kort?",
+          "options": [
+            { "id": "a", "text": "Hun har glemt det hjemme." },
+            { "id": "b", "text": "Det er ødelagt." },
+            { "id": "c", "text": "Det er utløpt." },
+            { "id": "d", "text": "Det tilhører en annen person." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-2-002-2",
+          "prompt": "Hva gjør Mia til slutt?",
+          "options": [
+            { "id": "a", "text": "Hun går hjem uten bøker." },
+            { "id": "b", "text": "Hun fornyer kortet og låner bøkene." },
+            { "id": "c", "text": "Hun kjøper bøkene i stedet." },
+            { "id": "d", "text": "Hun bestiller bøkene på nett." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-2-003",
+      "level": "A2",
+      "title": "Trening i parken",
+      "text": "Hver lørdag morgen trener Erik i parken nær hjemmet. Han løper i tretti minutter og gjør øvelser etterpå. I dag er det kaldt og overskyet, men Erik drar likevel. Han møter naboen sin Per, som også er ute og jogger. De løper sammen og avtaler å møtes neste lørdag også.",
+      "questions": [
+        {
+          "id": "rq-a2-2-003-1",
+          "prompt": "Hvor lenge løper Erik?",
+          "options": [
+            { "id": "a", "text": "Femten minutter." },
+            { "id": "b", "text": "Tjue minutter." },
+            { "id": "c", "text": "Tretti minutter." },
+            { "id": "d", "text": "En time." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-2-003-2",
+          "prompt": "Hvem møter Erik i parken?",
+          "options": [
+            { "id": "a", "text": "En venn fra jobben." },
+            { "id": "b", "text": "Naboen sin." },
+            { "id": "c", "text": "Broren sin." },
+            { "id": "d", "text": "En fremmed person." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-2-004",
+      "level": "A2",
+      "title": "Bursdag",
+      "text": "I dag er det Annas bursdag. Hun fyller tjuefem år. Familien hennes har laget en overraskelse. Når Anna kommer hjem fra jobb, er stua full av ballonger og venner. Moren har bakt en sjokoladekake. Anna blir veldig glad og rørt.",
+      "questions": [
+        {
+          "id": "rq-a2-2-004-1",
+          "prompt": "Hvor gammel blir Anna?",
+          "options": [
+            { "id": "a", "text": "Tjue år." },
+            { "id": "b", "text": "Tjuetre år." },
+            { "id": "c", "text": "Tjuefem år." },
+            { "id": "d", "text": "Tredve år." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-2-004-2",
+          "prompt": "Hva har moren laget?",
+          "options": [
+            { "id": "a", "text": "En jordbærkake." },
+            { "id": "b", "text": "En sjokoladekake." },
+            { "id": "c", "text": "En gulrotkake." },
+            { "id": "d", "text": "En eplekake." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-2-005",
+      "level": "A2",
+      "title": "På kafé",
+      "text": "Tom og Lena møtes på en kafé i sentrum. Tom bestiller en latte og et horn, mens Lena vil ha en americano og en croissant. Kelneren sier at de dessverre er tomme for croissanter i dag. Lena velger et horn i stedet. De setter seg ved vinduet og prater i en time.",
+      "questions": [
+        {
+          "id": "rq-a2-2-005-1",
+          "prompt": "Hva vil Lena egentlig ha å spise?",
+          "options": [
+            { "id": "a", "text": "Et horn." },
+            { "id": "b", "text": "En muffin." },
+            { "id": "c", "text": "En croissant." },
+            { "id": "d", "text": "En sandwich." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-2-005-2",
+          "prompt": "Hvor lenge er Tom og Lena på kaféen?",
+          "options": [
+            { "id": "a", "text": "En halvtime." },
+            { "id": "b", "text": "En time." },
+            { "id": "c", "text": "To timer." },
+            { "id": "d", "text": "Tre kvarter." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "wp-a2-2-001",
+      "level": "A2",
+      "situation": "Du har nettopp begynt i en ny jobb. Sjefen din ber deg om å sende en kort e-post til teamet og presentere deg selv.",
+      "task": "Skriv en kort e-post der du presenterer deg selv. Fortell hvem du er, hvor du kommer fra, og hva du skal jobbe med.",
+      "wordCountMin": 40,
+      "wordCountMax": 80,
+      "modelAnswer": "Hei alle sammen!\n\nJeg heter Maria og jeg er ny her. Jeg kommer fra Brasil, men jeg har bodd i Norge i tre år. Jeg skal jobbe som kundeservicemedarbeider og gleder meg til å bli kjent med dere alle.\n\nHilsen Maria",
+      "modelNotes": "A good A2 introduction email uses simple present tense, basic personal information, and a friendly closing. Sentences are short and clear."
+    },
+    {
+      "id": "wp-a2-2-002",
+      "level": "A2",
+      "situation": "Du skal på ferie neste uke og kan ikke passe på nabohunden som du pleier.",
+      "task": "Skriv en kort melding til naboen din og forklar situasjonen. Foreslå en løsning.",
+      "wordCountMin": 40,
+      "wordCountMax": 80,
+      "modelAnswer": "Hei Ingrid!\n\nJeg er dessverre på ferie neste uke fra mandag til søndag, så jeg kan ikke passe på Bella denne gangen. Beklager!\n\nKanskje du kan spørre Knut i nummer 12? Han er hjemme og er glad i hunder. Jeg kan gi deg nummeret hans hvis du vil.\n\nHilsen Jonas",
+      "modelNotes": "This task tests the ability to apologise, explain briefly, and offer a practical suggestion — all common A2 writing scenarios."
+    },
+    {
+      "id": "wp-a2-2-003",
+      "level": "A2",
+      "situation": "Du har mistet jakken din på bussen og vil kontakte busselskapet.",
+      "task": "Skriv en kort melding til busselskapet. Beskriv jakken og si hvilken buss du tok.",
+      "wordCountMin": 40,
+      "wordCountMax": 80,
+      "modelAnswer": "Hei!\n\nJeg glemte jakken min på bussen i går kveld. Jeg tok buss nummer 31 fra Jernbanetorget klokka 19.15.\n\nJakken er mørkeblå med glidelås og har et lite lommetørkle i lommen. Kan dere sjekke om den er funnet?\n\nMed vennlig hilsen, Reza Ahmadi. Telefon: 456 78 900.",
+      "modelNotes": "Describes a lost item accurately and includes relevant practical details — route, time, appearance. Good use of simple past tense."
+    },
+    {
+      "id": "wp-a2-2-004",
+      "level": "A2",
+      "situation": "Du vil invitere en venn fra norskkurset til et lite selskap hjemme hos deg.",
+      "task": "Skriv en invitasjon. Oppgi tid, sted og hva dere skal gjøre.",
+      "wordCountMin": 40,
+      "wordCountMax": 80,
+      "modelAnswer": "Hei Fatima!\n\nJeg har lyst til å invitere deg på et lite selskap hjemme hos meg på lørdag den 15. mars klokka 18.00. Vi skal spise middag og høre på musikk. Det blir hyggelig!\n\nDu kan ta trikken til Majorstuen og gå tre minutter. Adressen er Kirkeveien 45.\n\nKan du komme? Send meg en melding!\n\nHilsen Nadia",
+      "modelNotes": "Includes all required details — who, what, when, where — in a friendly and natural tone appropriate for A2."
+    },
+    {
+      "id": "wp-a2-2-005",
+      "level": "A2",
+      "situation": "Du vil melde deg på et norskkurs hos Folkeuniversitetet.",
+      "task": "Skriv en e-post til Folkeuniversitetet og spør om et norskkurs. Fortell om ditt nåværende nivå og spør om pris og tider.",
+      "wordCountMin": 40,
+      "wordCountMax": 80,
+      "modelAnswer": "Hei!\n\nJeg vil gjerne melde meg på et norskkurs. Jeg er på A2-nivå og har tatt kurs i ett år. Jeg jobber hverdager, så jeg trenger et kurs på kveldstid eller i helgene.\n\nKan dere fortelle meg hva kurset koster og hvilke tider dere tilbyr?\n\nMed vennlig hilsen, Ali Hassan",
+      "modelNotes": "Requests practical information politely and provides relevant background details. Good use of modal verbs (vil gjerne, kan dere)."
+    }
+  ],
+  "oral": [
+    {
+      "id": "op-a2-2-001",
+      "level": "A2",
+      "scenario": "Du er ny i en by og spør en forbipasserende om veien til rådhuset.",
+      "questions": [
+        "Unnskyld, vet du hvor rådhuset er?",
+        "Hvor langt er det herfra?",
+        "Kan jeg gå dit, eller bør jeg ta bussen?",
+        "Tusen takk for hjelpen!"
+      ],
+      "tips": "Practice asking for and understanding directions. Key phrases: til venstre, til høyre, rett frem, ta første avkjøring, ca. X minutter.",
+      "modelAnswer": "Unnskyld, vet du hvor rådhuset er? Takk! Er det langt herfra? Kan jeg gå, eller bør jeg ta bussen? Ok, så jeg skal gå rett frem, så ta til venstre ved kirken — og da er det der? Tusen takk for hjelpen, det var veldig hyggelig av deg!",
+      "modelNotes": "Demonstrates asking for clarification (Er det langt? Kan jeg gå?) and repeating back directions to confirm — both strong strategies in the oral exam."
+    },
+    {
+      "id": "op-a2-2-002",
+      "level": "A2",
+      "scenario": "Du er på NAV-kontoret og trenger hjelp med å registrere deg som arbeidssøker.",
+      "questions": [
+        "Hva er grunnen til at du er her i dag?",
+        "Hvor lenge har du vært uten jobb?",
+        "Hva slags type jobb ser du etter?",
+        "Har du registrert deg på nav.no?"
+      ],
+      "tips": "NAV is Norway's welfare and employment service. Practice explaining your situation simply and answering official-sounding questions calmly.",
+      "modelAnswer": "Jeg er her fordi jeg mistet jobben min for to måneder siden og vil registrere meg som arbeidssøker. Jeg ser etter arbeid innen renhold eller kantine. Jeg har ikke registrert meg på nav.no ennå — kan du hjelpe meg med det her?",
+      "modelNotes": "Explains the situation clearly, names a job type, and asks for practical help. Simple, direct language is exactly right for an official appointment scenario at A2."
+    },
+    {
+      "id": "op-a2-2-003",
+      "level": "A2",
+      "scenario": "Du ringer legen din for å bestille en time.",
+      "questions": [
+        "Hva er grunnen til at du vil ha en time?",
+        "Passer det mandag klokka 10, eller foretrekker du ettermiddag?",
+        "Har du fastlege hos oss fra før?",
+        "Kan du bekrefte navn og fødselsdato?"
+      ],
+      "tips": "Phone appointments are common in Norwegian daily life. Practice spelling your name, giving dates, and expressing symptoms clearly.",
+      "modelAnswer": "Hei, jeg vil gjerne bestille en time hos legen. Jeg har hatt vondt i halsen og litt feber i to dager. Mandag klokka 10 passer fint. Ja, jeg har fastlege der. Jeg heter Sara Ahmadi — S-A-R-A, Ahmadi — A-H-M-A-D-I. Fødselsår er 1990, født 15. mars.",
+      "modelNotes": "Models spelling out a name (important A2 skill), giving a birth date, stating symptoms, and confirming time. Calm and clear register suits a phone call scenario."
+    },
+    {
+      "id": "op-a2-2-004",
+      "level": "A2",
+      "scenario": "Du snakker med en kollega om helgeplaner.",
+      "questions": [
+        "Hva skal du gjøre i helgen?",
+        "Liker du å være ute i naturen?",
+        "Har du noen faste helgerutiner?",
+        "Hva gjør du vanligvis på søndager?"
+      ],
+      "tips": "Weekend plans are a typical small-talk topic at work. Use future tense: skal + infinitive (jeg skal dra på tur), or present tense for habits.",
+      "modelAnswer": "I helgen skal jeg besøke svigerforeldrene mine på lørdag. På søndag pleier jeg å være hjemme, lage god mat og slappe av. Jeg liker ikke så mye å være ute i naturen når det er kaldt, men om sommeren drar vi gjerne på tur. Hva med deg — skal du gjøre noe spesielt?",
+      "modelNotes": "Mixes near-future (skal + inf) and habitual present. Honest about personal preference and redirects to the other person — showing natural conversation skills."
+    },
+    {
+      "id": "op-a2-2-005",
+      "level": "A2",
+      "scenario": "Du er i matbutikken og finner ikke det du ser etter. Du spør en ansatt om hjelp.",
+      "questions": [
+        "Hva leter du etter?",
+        "Har du prøvd å se i den andre gangen?",
+        "Vi har det ikke på lager — kan noe annet fungere?",
+        "Trenger du hjelp med noe annet?"
+      ],
+      "tips": "Grocery store interactions are very common in the A2 oral exam. Useful vocab: hylle (shelf), gang (aisle), på lager (in stock), alternativ (alternative).",
+      "modelAnswer": "Unnskyld, jeg leter etter rismel — vet du hvilken hylle det står i? Jeg har sett i bakevaresgangen, men fant det ikke. Nei, jeg har ikke prøvd den andre gangen. Er det ikke på lager? Ok — har dere kanskje maismel eller mandelmel som alternativ? Tusen takk for hjelpen!",
+      "modelNotes": "Shows persistence (asks follow-up questions), accepts the situation gracefully, and asks for an alternative — all signs of communicative flexibility valued at A2."
+    }
+  ]
+}

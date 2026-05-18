@@ -36,6 +36,30 @@ en rull: a roll
 en penge­seddel: a banknote
 et kinn: a chin
 en tømrer: a builder
+å glo: to stare
+frekk: rude, cheeky
+annerledes: different
+en lapskaus: stew
+forferdelig: terrible
+å snufse: to snuff
+å hyle: to howl
+meget: very
+berømt: famous
+å tilgi: to forgive
+å rekke: to give
+lurt: slyly
+innvendig: inside
+en støvlett: a boot
+matt: powerless, weak
+å deise: to fall
+ålreit: all right
+unntatt: except
+rågod: awesome
+sånn: like that, such
+
+
+
+
 
 ## Home
 
@@ -114,3 +138,27 @@ et badekar: a bathtub
 en sjampo: a shampoo
 en gummiand: a rubber duck
 en balsam: a conditioner
+
+## others
+
+nydelig: lovely
+ei brud: a bride
+å banke: to beat
+å greie: to manage
+heldigvis: fortunately
+en prest: a priest
+gjennomføres: carried out
+å sjenere: to bother, annoy
+framkommelig, fremkommelig: accessibility
+en bukett: a bouquet
+oppi: up, on
+kjekk: nice, handsome
+å bjeffe: to bark
+klam: clammy
+øm: sore
+å mumle: to mumble
+klengete: clingy
+stram: tight
+å gjemme: to hide
+å rape: to burp
+en katastrofe: a disaster

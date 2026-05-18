@@ -1,7 +1,28 @@
 import { type Page } from '@playwright/test';
 
 /**
- * Patch plan → 'plus' for both SSR and CSR (ssr:false) routes.
+ * Set the Paraglide locale cookie to Norwegian ('nb') so the app renders
+ * in Norwegian during tests. Without this the strategy falls back to the
+ * base locale ('en') and all Norwegian text assertions fail.
+ *
+ * Must be called before page.goto() so the cookie is present on the first
+ * request. Playwright requires the domain to be set on the cookie, so we
+ * set it to 'localhost'.
+ */
+export async function setNorwegianLocale(page: Page) {
+  await page.context().addCookies([
+    {
+      name: 'PARAGLIDE_LOCALE',
+      value: 'nb',
+      domain: 'localhost',
+      path: '/'
+    }
+  ]);
+}
+
+/**
+ * Patch plan → 'plus' for both SSR and CSR (ssr:false) routes, and also
+ * set the Norwegian locale cookie so assertions match Norwegian UI text.
  *
  * Two strategies are needed:
  *
@@ -15,6 +36,7 @@ import { type Page } from '@playwright/test';
  *    data[data[0].plan] holds the actual plan string. We patch that index.
  */
 export async function injectPlusPlan(page: Page) {
+  await setNorwegianLocale(page);
   // Strategy 1: patch the HTML document (covers SSR routes).
   await page.route('**', async (route) => {
     const request = route.request();
@@ -24,23 +46,19 @@ export async function injectPlusPlan(page: Page) {
     if (url.includes('__data.json')) {
       const response = await route.fetch();
       try {
-        const json = await response.json();
-        if (Array.isArray(json.nodes)) {
-          for (const node of json.nodes) {
-            if (node?.type === 'data' && Array.isArray(node.data)) {
-              const indexMap = node.data[0];
-              if (indexMap && typeof indexMap === 'object' && 'plan' in indexMap) {
-                const planIndex = indexMap.plan;
-                if (typeof planIndex === 'number') {
-                  node.data[planIndex] = 'plus';
-                }
-              }
-            }
-          }
-        }
-        await route.fulfill({ json });
+        const text = await response.text();
+        // Replace every occurrence of the plan string value in the JSON.
+        // SvelteKit deduplicates data so 'free' may appear as a bare string
+        // value anywhere in the nodes array — a text replace is more robust
+        // than trying to navigate the index-map structure.
+        const patched = text.replace(/"free"/g, '"plus"');
+        await route.fulfill({
+          status: response.status(),
+          headers: response.headers(),
+          body: patched
+        });
       } catch {
-        await route.fulfill({ response });
+        await route.continue();
       }
       return;
     }
