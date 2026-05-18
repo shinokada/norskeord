@@ -149,7 +149,39 @@
 
   const cefrEstimate = $derived(getCefrEstimate(allCards));
 
-  // ── Lifecycle ─────────────────────────────────────────────────────────────────
+  // ── Share / clipboard ───────────────────────────────────────────────────────
+  let copied = $state(false);
+
+  function buildShareText(): string {
+    const parts: string[] = [];
+
+    if (byState.review > 0) {
+      parts.push(`${byState.review} Norwegian words memorized`);
+    } else if (totalSeen > 0) {
+      parts.push(`${totalSeen} Norwegian words explored`);
+    }
+
+    // Extract the highest solid CEFR level from the estimate string
+    const levelMatch = cefrEstimate.match(/\b(A1|A2|B1|B2|C1|C2)\b/);
+    if (levelMatch) parts.push(`currently at ${levelMatch[0]}`);
+
+    if (streak >= 3) parts.push(`${streak}-day streak 🔥`);
+
+    return parts.join(' · ') + ' 🇳🇴 norskeord.no';
+  }
+
+  async function handleShare() {
+    const text = buildShareText();
+    try {
+      await navigator.clipboard.writeText(text);
+      copied = true;
+      setTimeout(() => (copied = false), 2500);
+    } catch {
+      // Fallback: prompt with pre-filled text
+      prompt('Copy and share:', text);
+    }
+  }
+
   onMount(async () => {
     progressMap = loadProgressMap();
     mounted = true;
@@ -197,7 +229,7 @@
 
 <div class="mx-auto max-w-4xl px-4 py-8 text-left">
   <!-- Header -->
-  <div class="mb-8 flex items-center justify-between">
+  <div class="mb-8 flex items-start justify-between gap-4">
     <div>
       <h1 class="text-3xl font-bold dark:text-white">
         {displayName ? m.stats_title_named({ name: displayName }) : m.stats_title()}
@@ -220,6 +252,18 @@
         </p>
       {/if}
     </div>
+    {#if mounted && totalSeen > 0}
+      <button
+        type="button"
+        onclick={handleShare}
+        class="shrink-0 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium transition
+          {copied
+          ? 'border-green-400 bg-green-50 text-green-700 dark:border-green-600 dark:bg-green-900/20 dark:text-green-400'
+          : 'text-gray-600 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
+      >
+        {copied ? '✓ Copied!' : '📋 Share progress'}
+      </button>
+    {/if}
   </div>
 
   {#if !mounted}

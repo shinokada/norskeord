@@ -208,15 +208,21 @@
       {#if !user}
         <a
           href="/auth/login"
+          class="rounded-xl bg-indigo-500 px-6 py-3 text-sm font-semibold text-white shadow transition hover:bg-indigo-400"
+        >
+          Free forever — get started →
+        </a>
+        <a
+          href="/plus"
           class="rounded-xl border border-indigo-200/25 px-6 py-3 text-sm font-medium text-indigo-200/80 transition hover:border-indigo-200/50 hover:text-white"
         >
-          Get started free →
+          See Plus features →
         </a>
       {/if}
     </div>
 
     {#if !user}
-      <p class="mt-3 text-xs text-indigo-300/50">Free forever — no credit card required</p>
+      <p class="mt-3 text-xs text-indigo-300/50">No credit card required</p>
     {/if}
 
     <!-- Share / QR toggle -->
