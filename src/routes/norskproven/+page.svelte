@@ -4,6 +4,7 @@
   import { page } from '$app/state';
 
   const user = $derived(page.data.user);
+  const plan = $derived(page.data.plan);
   // Curated exam-essential categories per level, ordered by exam relevance
   const examSections = [
     {
@@ -108,10 +109,29 @@
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
       {m.norskproven_subheading()}
     </p>
-    {#if user}
+    {#if plan === 'plus'}
+      <a
+        href="/norskproven/practice"
+        class="mt-5 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
+      >
+        {m.norskproven_practice_start()} →
+      </a>
       <a
         href="/stats"
+        class="mt-5 inline-flex items-center gap-2 rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+      >
+        {m.norskproven_cta_progress()}
+      </a>
+    {:else if user}
+      <a
+        href="/plus?ref=norskproven-practice"
         class="mt-5 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
+      >
+        {m.nav_plus_badge()} — {m.norskproven_practice_heading()}
+      </a>
+      <a
+        href="/stats"
+        class="mt-5 inline-flex items-center gap-2 rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {m.norskproven_cta_progress()}
       </a>

@@ -22,8 +22,48 @@
     return '?';
   });
 
-  function handleExport() {
+  function _handleExport() {
     window.location.href = '/api/export';
+  }
+
+  let reportLoading = $state(false);
+
+  async function handleProgressReport() {
+    reportLoading = true;
+    try {
+      // Read progressMap from localStorage
+      const progressMap: Record<string, unknown> = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key?.startsWith('progress-')) {
+          try {
+            const raw = localStorage.getItem(key);
+            if (raw) progressMap[key.slice('progress-'.length)] = JSON.parse(raw);
+          } catch {
+            /* skip malformed */
+          }
+        }
+      }
+
+      const res = await fetch('/api/progress-report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ progressMap })
+      });
+
+      if (!res.ok) throw new Error('Failed');
+
+      // Open the HTML report in a new tab — window.print() fires automatically
+      const html = await res.text();
+      const blob = new Blob([html], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank');
+      setTimeout(() => URL.revokeObjectURL(url), 60_000);
+    } catch {
+      alert('Could not generate report. Please try again.');
+    } finally {
+      reportLoading = false;
+    }
   }
 </script>
 
@@ -35,13 +75,12 @@
   </h2>
 
   <!-- Avatar placeholder -->
-  <div class="mb-6 flex items-center gap-4">
+  <div class="mb-6">
     <div
       class="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-lg font-bold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
     >
       {initials()}
     </div>
-    <p class="text-sm text-gray-500 dark:text-gray-400">{m.profile_account_avatar_soon()}</p>
   </div>
 
   <form
@@ -103,21 +142,22 @@
     </button>
   </form>
 
-  <!-- Export data -->
+  <!-- Progress report -->
   <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
     <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
       <div>
-        <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
-          {m.profile_account_export_heading()}
+        <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Progress report</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400">
+          Your CEFR level, cards seen, and strongest &amp; weakest categories as a printable PDF.
         </p>
-        <p class="text-xs text-gray-500 dark:text-gray-400">{m.profile_account_export_body()}</p>
       </div>
       <button
         type="button"
-        onclick={handleExport}
-        class="mt-2 shrink-0 rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-white/10 sm:mt-0 dark:text-gray-300"
+        onclick={handleProgressReport}
+        disabled={reportLoading}
+        class="mt-2 shrink-0 rounded-lg border border-indigo-300 px-4 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50 disabled:opacity-50 sm:mt-0 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-indigo-900/20"
       >
-        {m.profile_account_export_button()}
+        {reportLoading ? 'Generating…' : '↓ Download report'}
       </button>
     </div>
   </div>

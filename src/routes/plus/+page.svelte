@@ -19,7 +19,7 @@
   });
 
   // Build the login URL carrying checkout intent, preserving any ?ref= for analytics
-  const loginHref = $derived(() => {
+  const loginHref = $derived.by(() => {
     const next = encodeURIComponent('/plus?checkout=1');
     return `/auth/login?next=${next}`;
   });
@@ -51,6 +51,11 @@
       pro: { value: m.plus_row_stats_plus(), yes: true }
     },
     {
+      feature: m.plus_row_per_category_stats(),
+      free: { value: m.plus_row_per_category_stats_free(), yes: false },
+      pro: { value: m.plus_row_per_category_stats_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_due(),
       free: { value: m.plus_row_due_free(), yes: false },
       pro: { value: m.plus_row_due_plus(), yes: true }
@@ -61,14 +66,24 @@
       pro: { value: m.plus_row_sync_plus(), yes: true }
     },
     {
-      feature: m.plus_row_exam(),
-      free: { value: m.plus_row_exam_free(), yes: false },
-      pro: { value: m.plus_row_exam_plus(), yes: true }
+      feature: m.plus_row_norskproven_practice(),
+      free: { value: m.plus_row_norskproven_practice_free(), yes: false },
+      pro: { value: m.plus_row_norskproven_practice_plus(), yes: true }
+    },
+    {
+      feature: m.plus_row_download_progress(),
+      free: { value: m.plus_row_download_progress_free(), yes: false },
+      pro: { value: m.plus_row_download_progress_plus(), yes: true }
     },
     {
       feature: m.plus_row_quiz(),
       free: { value: m.plus_row_quiz_free(), yes: false },
       pro: { value: m.plus_row_quiz_plus(), yes: true }
+    },
+    {
+      feature: m.plus_row_email_lessons(),
+      free: { value: m.plus_row_email_lessons_free(), yes: false },
+      pro: { value: m.plus_row_email_lessons_plus(), yes: false, soon: true }
     },
     {
       feature: m.plus_row_support(),
@@ -94,9 +109,14 @@
       body: m.plus_feature_3_body()
     },
     {
-      icon: '🎯',
+      icon: '📊',
       title: m.plus_feature_4_title(),
       body: m.plus_feature_4_body()
+    },
+    {
+      icon: '📝',
+      title: m.plus_feature_norskproven_title(),
+      body: m.plus_feature_norskproven_body()
     },
     {
       icon: '❓',
@@ -173,7 +193,7 @@
         </button>
       {:else}
         <a
-          href={loginHref()}
+          href={loginHref}
           class="inline-block rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700"
         >
           {m.plus_sign_in_to_upgrade()}
@@ -237,6 +257,11 @@
               {#if row.pro.yes}
                 <span class="font-semibold text-indigo-600 dark:text-indigo-400">✓</span>
                 <span class="ml-1 text-gray-700 dark:text-gray-300">{row.pro.value}</span>
+              {:else if row.pro.soon}
+                <span
+                  class="inline-block rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
+                  >{row.pro.value}</span
+                >
               {:else}
                 <span class="text-gray-300 dark:text-gray-600">{row.pro.value}</span>
               {/if}

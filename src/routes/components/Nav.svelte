@@ -117,6 +117,14 @@
         {m.nav_log_in()}
       </a>
     {/if}
+    {#if user && !isPlus}
+      <a
+        href="/plus"
+        class="inline-block rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
+      >
+        {m.nav_plus_badge()}
+      </a>
+    {/if}
     {#if user}
       <Avatar class="acs ml-2.5" size="xs" />
       <Dropdown simple class="w-56" triggeredBy=".acs">
@@ -176,32 +184,25 @@
       </MegaMenu>
     {/each}
 
-    <!-- Quiz nav item — visible to all, locked for non-Plus -->
-    {#if isPlus}
-      <NavLi
-        href="/quiz"
-        class="cursor-pointer"
-        onclick={(e: MouseEvent) => {
-          if (activeUrl === '/quiz') {
-            e.preventDefault();
-            window.dispatchEvent(new CustomEvent('quiz:reset'));
-          }
-        }}
-      >
-        {m.nav_quiz()}
-      </NavLi>
-    {:else}
-      <NavLi
-        href="/plus?ref=nav-quiz"
-        class="cursor-pointer opacity-60"
-        title={m.nav_quiz_plus_only()}
-      >
-        {m.nav_quiz()} 🔒
-      </NavLi>
-    {/if}
+    <!-- Prepare dropdown — Quiz + Practice Tests, both Plus-only -->
+    <NavLi class="cursor-pointer">
+      {m.nav_prepare()}<ChevronDownOutline
+        class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
+      />
+    </NavLi>
+    <Dropdown simple class="w-44">
+      <DropdownItem href={isPlus ? '/quiz' : '/plus?ref=nav-quiz'}>
+        {m.nav_quiz()}{isPlus ? '' : ' 🔒'}
+      </DropdownItem>
+      <DropdownItem href={isPlus ? '/norskproven/practice' : '/plus?ref=nav-practice-tests'}>
+        {m.nav_practice_tests()}{isPlus ? '' : ' 🔒'}
+      </DropdownItem>
+    </Dropdown>
 
     <NavLi class="cursor-pointer">
-      More<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
+      {m.nav_more()}<ChevronDownOutline
+        class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
+      />
     </NavLi>
     <Dropdown simple class="w-44">
       <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>

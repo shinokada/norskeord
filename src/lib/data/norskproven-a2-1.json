@@ -1,0 +1,278 @@
+{
+  "reading": [
+    {
+      "id": "rp-a2-001",
+      "level": "A2",
+      "title": "Legekontoret",
+      "text": "Kari skal til legen i dag. Hun har vondt i halsen og feber. Resepsjonisten sier at legen er ledig klokka 14.00. Kari bestiller time og takker for hjelpen.",
+      "questions": [
+        {
+          "id": "rq-a2-001-1",
+          "prompt": "Hvorfor skal Kari til legen?",
+          "options": [
+            { "id": "a", "text": "Hun har vondt i magen." },
+            { "id": "b", "text": "Hun har vondt i halsen og feber." },
+            { "id": "c", "text": "Hun vil ha en ny resept." },
+            { "id": "d", "text": "Hun er gravid." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-a2-001-2",
+          "prompt": "Når er timen hos legen?",
+          "options": [
+            { "id": "a", "text": "Klokka 10.00." },
+            { "id": "b", "text": "Klokka 12.00." },
+            { "id": "c", "text": "Klokka 14.00." },
+            { "id": "d", "text": "Klokka 16.00." }
+          ],
+          "correctId": "c"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-002",
+      "level": "A2",
+      "title": "På butikken",
+      "text": "Ole er på matbutikken. Han trenger melk, brød og epler. Han finner melken i kjøledisken og brødet ved inngangen. Han spør en ansatt om eplene. Den ansatte sier at de er slutt, men at det kommer nye i morgen. Ole kjøper melk og brød og går hjem.",
+      "questions": [
+        {
+          "id": "rq-a2-002-1",
+          "prompt": "Hva mangler butikken?",
+          "options": [
+            { "id": "a", "text": "Melk." },
+            { "id": "b", "text": "Brød." },
+            { "id": "c", "text": "Epler." },
+            { "id": "d", "text": "Smør." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-002-2",
+          "prompt": "Hva kjøper Ole?",
+          "options": [
+            { "id": "a", "text": "Melk og epler." },
+            { "id": "b", "text": "Brød og epler." },
+            { "id": "c", "text": "Melk, brød og epler." },
+            { "id": "d", "text": "Melk og brød." }
+          ],
+          "correctId": "d"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-003",
+      "level": "A2",
+      "title": "Bussen til jobben",
+      "text": "Anna tar bussen til jobben hver dag. Bussen går klokka 07.45 fra stoppestedet nær hjemmet hennes. Turen tar ca. 20 minutter. I dag er bussen forsinket med ti minutter fordi det er mye trafikk. Anna ringer sjefen sin og sier at hun kommer litt sent.",
+      "questions": [
+        {
+          "id": "rq-a2-003-1",
+          "prompt": "Når går bussen normalt?",
+          "options": [
+            { "id": "a", "text": "07.30." },
+            { "id": "b", "text": "07.45." },
+            { "id": "c", "text": "08.00." },
+            { "id": "d", "text": "08.15." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-a2-003-2",
+          "prompt": "Hva gjør Anna når bussen er forsinket?",
+          "options": [
+            { "id": "a", "text": "Hun tar taxi." },
+            { "id": "b", "text": "Hun går til jobben." },
+            { "id": "c", "text": "Hun ringer sjefen sin." },
+            { "id": "d", "text": "Hun venter på neste buss." }
+          ],
+          "correctId": "c"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-004",
+      "level": "A2",
+      "title": "En ny leilighet",
+      "text": "Lars og Mia leter etter en ny leilighet i Oslo. De vil ha to soverom og en balkong. Leien må være under 15 000 kroner i måneden. De finner en leilighet på Grünerløkka med to soverom, men uten balkong. Leien er 13 500 kroner. De bestemmer seg for å se på den.",
+      "questions": [
+        {
+          "id": "rq-a2-004-1",
+          "prompt": "Hva mangler leiligheten på Grünerløkka?",
+          "options": [
+            { "id": "a", "text": "To soverom." },
+            { "id": "b", "text": "En balkong." },
+            { "id": "c", "text": "Et kjøkken." },
+            { "id": "d", "text": "En parkeringsplass." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-a2-004-2",
+          "prompt": "Hva er leien for leiligheten?",
+          "options": [
+            { "id": "a", "text": "12 000 kroner." },
+            { "id": "b", "text": "13 500 kroner." },
+            { "id": "c", "text": "15 000 kroner." },
+            { "id": "d", "text": "16 500 kroner." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-005",
+      "level": "A2",
+      "title": "På biblioteket",
+      "text": "Sofia går til biblioteket for å låne bøker. Hun vil ha en norsk roman og en kokebok. Bibliotekaren hjelper henne å finne bøkene. Sofia låner tre bøker og må levere dem tilbake innen tre uker. Hvis hun leverer dem for sent, må hun betale en liten avgift.",
+      "questions": [
+        {
+          "id": "rq-a2-005-1",
+          "prompt": "Når må Sofia levere bøkene tilbake?",
+          "options": [
+            { "id": "a", "text": "Innen en uke." },
+            { "id": "b", "text": "Innen to uker." },
+            { "id": "c", "text": "Innen tre uker." },
+            { "id": "d", "text": "Innen fire uker." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-005-2",
+          "prompt": "Hva skjer hvis Sofia leverer bøkene for sent?",
+          "options": [
+            { "id": "a", "text": "Hun kan ikke låne bøker igjen." },
+            { "id": "b", "text": "Hun må betale en liten avgift." },
+            { "id": "c", "text": "Hun må snakke med biblioteksjefen." },
+            { "id": "d", "text": "Ingenting skjer." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "wp-a2-001",
+      "level": "A2",
+      "situation": "Du bor i en leilighet. Det er et problem med varmen.",
+      "task": "Skriv en melding til huseieren din. Fortell om problemet og be om hjelp. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei,\n\nJeg skriver fordi det er et problem med varmen i leiligheten min. Det er veldig kaldt, og varmen virker ikke. Kan du hjelpe meg? Jeg trenger at det blir fikset så snart som mulig.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Short and direct. Uses a formal greeting and sign-off. States the problem clearly and makes a polite request. Stays within the word count."
+    },
+    {
+      "id": "wp-a2-002",
+      "level": "A2",
+      "situation": "Du vil ha en ekstrajobb. Du ser en annonse i butikkvinduet.",
+      "task": "Skriv en lapp som kan henge på butikken. Fortell hva du kan gjøre og hvorfor de bør ansette deg. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei!\n\nJeg heter Anna Hansen og søker ekstrajobb. Jeg er 28 år og snakker norsk og engelsk. Jeg er rolig, punktlig og liker å jobbe med mennesker. Jeg har erfaring fra butikk. Ring meg gjerne på 12345678.\n\nHilsen Anna",
+      "modelNotes": "Presents key information concisely: name, languages, personal qualities and experience. Uses a friendly but professional tone. Includes contact details."
+    },
+    {
+      "id": "wp-a2-003",
+      "level": "A2",
+      "situation": "Vennen din inviterer deg til bursdag på lørdag, men du kan ikke komme.",
+      "task": "Skriv en melding til vennen din. Forklar hvorfor du ikke kan komme og foreslå noe dere kan gjøre en annen dag. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei Sara!\n\nTusen takk for invitasjonen! Dessverre kan jeg ikke komme på lørdag fordi jeg jobber hele dagen. Jeg er veldig lei meg for det. Kan vi kanskje møtes til kaffe neste uke i stedet?\n\nKlem, Anna",
+      "modelNotes": "Acknowledges the invitation, gives a clear reason for declining, expresses regret, and suggests an alternative. Friendly and natural in tone."
+    },
+    {
+      "id": "wp-a2-004",
+      "level": "A2",
+      "situation": "Du har funnet en glemt bag på bussen.",
+      "task": "Skriv en melding til Ruter (busskompaniet). Beskriv bagen og si hvilken buss du var på. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei,\n\nJeg fant en svart bag på buss nummer 37 i dag klokka 15.30, retning Majorstua. Bagen er mellomstor og har en rød glidelukker. Jeg leverte den til bussjåføren. Kan dere hjelpe eieren med å få den tilbake?\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Describes the bag clearly (colour, size, zip). Gives time, bus number and direction. Reports what was done. Uses formal language appropriate for a company."
+    },
+    {
+      "id": "wp-a2-005",
+      "level": "A2",
+      "situation": "Du har bestilt en pakke på nett, men pakken har ikke kommet etter to uker.",
+      "task": "Skriv en e-post til nettbutikken. Forklar situasjonen og be om hjelp. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei,\n\nJeg bestilte en jakke fra nettbutikken deres for to uker siden (ordrenummer 48291), men pakken har ikke kommet ennå. Kan dere sjekke hva som har skjedd? Vennligst ta kontakt med meg så snart som mulig.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Includes key details: what was ordered, how long ago, and an order number. Makes a clear, polite request. Formal tone appropriate for customer service."
+    }
+  ],
+  "oral": [
+    {
+      "id": "op-a2-001",
+      "level": "A2",
+      "scenario": "Du møter en ny nabo. Introduser deg selv og bli kjent med naboen.",
+      "questions": [
+        "Hva heter du og hvor kommer du fra?",
+        "Hvor lenge har du bodd her?",
+        "Hva liker du å gjøre på fritiden?",
+        "Har du familie i Norge?"
+      ],
+      "tips": "Speak in full sentences. You can ask the examiner questions back — this shows communication skills.",
+      "modelAnswer": "Jeg heter Omar og jeg kommer fra Somalia. Jeg har bodd her i leilighet 4B i omtrent tre måneder. På fritiden liker jeg å gå turer, lage mat og se på filmer. Jeg har litt familie i Norge — broren min bor i Bergen. Hva med deg — har du bodd her lenge?",
+      "modelNotes": "A good A2 self-introduction uses simple present tense, gives concrete details, and shows willingness to interact by asking the examiner a question back."
+    },
+    {
+      "id": "op-a2-002",
+      "level": "A2",
+      "scenario": "Du skal fortelle om hvordan du bruker datamaskin eller telefon på norskskolen.",
+      "questions": [
+        "Bruker du datamaskin eller mobil på skolen?",
+        "Hva bruker du den til?",
+        "Er det lett eller vanskelig å bruke?",
+        "Hva liker du best med teknologi på skolen?"
+      ],
+      "tips": "Prepare 3–4 sentences about a typical school day. Use words like: 'først', 'deretter', 'så' to structure your answer.",
+      "modelAnswer": "Ja, vi bruker datamaskin på norskkurset. Først logger vi inn og går gjennom nye ord. Deretter øver vi på uttale med lydøvelser. Jeg synes det er litt vanskelig noen ganger, men det hjelper mye å høre og repetere. Jeg liker spesielt å bruke ordlister på nett.",
+      "modelNotes": "Uses sequencing words (først, deretter), gives honest nuance ('litt vanskelig'), and adds a personal preference. This shows communicative range at A2."
+    },
+    {
+      "id": "op-a2-003",
+      "level": "A2",
+      "scenario": "Snakk om hva du pleier å gjøre på lørdager.",
+      "questions": [
+        "Hva gjør du vanligvis på lørdager?",
+        "Gjør du noe spesielt med familien?",
+        "Liker du å gå ut eller være hjemme?",
+        "Hva er favorittaktiviteten din i helgen?"
+      ],
+      "tips": "Talk about routines using present tense. Add details like times and places to make your answer richer.",
+      "modelAnswer": "På lørdager sover jeg litt lenge, og så lager jeg en god frokost. Ofte går jeg på handletur eller trøner på senteret. Noen lørdager er jeg hjemme med familien og lager middag sammen. Min favorittaktivitet er å gå tur i skogen nær hjemmet — det er veldig avslappende.",
+      "modelNotes": "Covers routine activities with time markers and places. Ends with a personal favourite and a simple reason, which adds natural depth to an A2 answer."
+    },
+    {
+      "id": "op-a2-004",
+      "level": "A2",
+      "scenario": "Fortell om et sted du har lyst til å reise til.",
+      "questions": [
+        "Hvor har du lyst til å reise?",
+        "Hvorfor vil du reise dit?",
+        "Hva vil du gjøre der?",
+        "Har du vært der før?"
+      ],
+      "tips": "You can talk about a real or imaginary trip. Use 'jeg vil' and 'jeg har lyst til å' to express wishes.",
+      "modelAnswer": "Jeg har veldig lyst til å reise til Japan. Jeg synes japansk kultur er veldig spennende — maten, templene og naturen. Jeg vil besøke Tokyo og Kyoto. Der vil jeg spise ekte sushi og se tradisjonelle festivaler. Jeg har ikke vært der før, men jeg håper å reise dit neste år.",
+      "modelNotes": "Uses 'har lyst til å', 'vil' and 'håper' naturally. Mentions specific places and activities. Appropriate vocabulary and sentence length for A2."
+    },
+    {
+      "id": "op-a2-005",
+      "level": "A2",
+      "scenario": "Snakk om været i Norge og hva du tenker om det.",
+      "questions": [
+        "Hva synes du om været i Norge?",
+        "Hva er været som i landet ditt?",
+        "Hva er din favorittitid på året?",
+        "Hva gjør du når det er dårlig vær?"
+      ],
+      "tips": "Weather is a common warm-up topic in the exam. Practice adjectives like: varm, kald, regnfull, solrik, overskyet.",
+      "modelAnswer": "Jeg synes været i Norge kan være ganske krevende — det er mye regn og mørkt om vinteren. I hjemlandet mitt er det mye varmere og solrikere. Min favorittid på året er sommeren i Norge, fordi det er lyst lenge og folk er mer ute. Når det er dårlig vær, liker jeg å lese eller se på film hjemme.",
+      "modelNotes": "Compares home country climate with Norway, uses weather adjectives correctly, and gives a specific activity for bad weather. Natural and complete for A2."
+    }
+  ]
+}

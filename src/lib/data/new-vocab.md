@@ -114,3 +114,19 @@ et badekar: a bathtub
 en sjampo: a shampoo
 en gummiand: a rubber duck
 en balsam: a conditioner
+
+## others
+
+nydelig: lovely
+ei brud: a bride
+å banke: to beat
+å greie: to manage
+heldigvis: fortunately
+en prest: a priest
+gjennomføres: carried out
+å sjenere: to bother, annoy
+framkommelig, fremkommelig: accessibility
+en bukett: a bouquet
+oppi: up, on
+kjekk: nice, handsome
+å bjeffe: to bark

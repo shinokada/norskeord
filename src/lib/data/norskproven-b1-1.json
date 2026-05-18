@@ -1,0 +1,278 @@
+{
+  "reading": [
+    {
+      "id": "rp-b1-001",
+      "level": "B1",
+      "title": "Hjemmekontor – fordeler og ulemper",
+      "text": "Mange nordmenn jobber hjemmefra en eller flere dager i uken. Arbeidsgivere mener at hjemmekontor kan øke produktiviteten, fordi ansatte slipper å bruke tid på reise. Samtidig er det noen ulemper. Noen synes det er vanskelig å skille mellom jobb og fritid når man jobber hjemme. Andre savner kollegaene og det sosiale miljøet på kontoret. Forskere anbefaler at man lager klare rutiner og tar regelmessige pauser for å trives med hjemmekontor.",
+      "questions": [
+        {
+          "id": "rq-b1-001-1",
+          "prompt": "Hva er en av fordelene med hjemmekontor ifølge teksten?",
+          "options": [
+            { "id": "a", "text": "Man kan jobbe lengre dager." },
+            { "id": "b", "text": "Man slipper å bruke tid på reise." },
+            { "id": "c", "text": "Man tjener mer penger." },
+            { "id": "d", "text": "Man trenger ikke møter." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-001-2",
+          "prompt": "Hva anbefaler forskerne for å trives med hjemmekontor?",
+          "options": [
+            { "id": "a", "text": "Å jobbe uten pauser for å bli ferdig raskere." },
+            { "id": "b", "text": "Å alltid jobbe på et kafé." },
+            { "id": "c", "text": "Å lage klare rutiner og ta regelmessige pauser." },
+            { "id": "d", "text": "Å slutte å jobbe hjemmefra." }
+          ],
+          "correctId": "c"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-002",
+      "level": "B1",
+      "title": "Frivillighetsarbeid i Norge",
+      "text": "Norge har en lang tradisjon for frivillighetsarbeid. Over halvparten av den norske befolkningen deltar i frivillig arbeid hvert år. Frivillige bidrar innen mange områder, blant annet idrett, kultur og hjelpearbeid. Mange organisasjoner er avhengige av frivillige for å kunne tilby tjenestene sine. Forskning viser at frivillighetsarbeid er bra for folkehelsen – det gir en følelse av mening og tilhørighet, og kan redusere ensomhet.",
+      "questions": [
+        {
+          "id": "rq-b1-002-1",
+          "prompt": "Hvor stor andel av den norske befolkningen deltar i frivillig arbeid?",
+          "options": [
+            { "id": "a", "text": "Under en tredjedel." },
+            { "id": "b", "text": "Omtrent en tredjedel." },
+            { "id": "c", "text": "Over halvparten." },
+            { "id": "d", "text": "Nesten alle." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-b1-002-2",
+          "prompt": "Hvilken positiv effekt har frivillighetsarbeid på folkehelsen ifølge teksten?",
+          "options": [
+            { "id": "a", "text": "Det gir bedre lønn." },
+            { "id": "b", "text": "Det gir en følelse av mening og tilhørighet." },
+            { "id": "c", "text": "Det fører til flere venner på jobb." },
+            { "id": "d", "text": "Det gir bedre fysisk helse." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-003",
+      "level": "B1",
+      "title": "Digitale betalingsløsninger",
+      "text": "Norge er et av landene i verden som bruker minst kontanter. De fleste nordmenn betaler med kort eller mobil i butikker, restauranter og kollektivtrafikk. Løsninger som Vipps er svært populære – mange bruker dem til å dele regninger med venner eller betale for mindre tjenester. Noen eldre og folk uten smarttelefon kan imidlertid oppleve det som utfordrende når kontanter ikke lenger aksepteres alle steder.",
+      "questions": [
+        {
+          "id": "rq-b1-003-1",
+          "prompt": "Hva er Vipps kjent for i teksten?",
+          "options": [
+            { "id": "a", "text": "Det er en ny type kontantkort." },
+            { "id": "b", "text": "Det brukes til å dele regninger og betale for tjenester." },
+            { "id": "c", "text": "Det er et nettbanksystem for bedrifter." },
+            { "id": "d", "text": "Det erstatter kontanter i alle butikker." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-003-2",
+          "prompt": "Hvem kan oppleve problemer med den kontantfrie utviklingen?",
+          "options": [
+            { "id": "a", "text": "Unge med smarttelefon." },
+            { "id": "b", "text": "Ansatte i butikker." },
+            { "id": "c", "text": "Eldre og folk uten smarttelefon." },
+            { "id": "d", "text": "Turister fra andre land." }
+          ],
+          "correctId": "c"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-004",
+      "level": "B1",
+      "title": "Norsk matkultur i endring",
+      "text": "Den norske matkulturen har forandret seg mye de siste tiårene. Tradisjonell norsk mat som fårikål og lutefisk er fortsatt populær, men nordmenn spiser nå også mye mat fra andre kulturer. Pizza, taco og sushi er blant de mest spiste rettene i Norge. Økt innvandring og globalisering har bidratt til et rikere og mer variert mattilbud. Mange nordmenn er interessert i matlaging og ser gjerne matlagingsprogrammer på TV.",
+      "questions": [
+        {
+          "id": "rq-b1-004-1",
+          "prompt": "Hva har bidratt til et mer variert mattilbud i Norge?",
+          "options": [
+            { "id": "a", "text": "Økt interesse for tradisjonell norsk mat." },
+            { "id": "b", "text": "Økt innvandring og globalisering." },
+            { "id": "c", "text": "Nye norske matlagingsskjemaer." },
+            { "id": "d", "text": "Importforbud på utenlandsk mat." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-004-2",
+          "prompt": "Hvilke retter nevnes som blant de mest spiste i Norge i dag?",
+          "options": [
+            { "id": "a", "text": "Fårikål og lutefisk." },
+            { "id": "b", "text": "Pizza, taco og sushi." },
+            { "id": "c", "text": "Grøt og fisk." },
+            { "id": "d", "text": "Hamburger og kebab." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-005",
+      "level": "B1",
+      "title": "Ungdom og sosiale medier",
+      "text": "Norske ungdommer bruker mye tid på sosiale medier som Instagram, TikTok og Snapchat. En undersøkelse viser at tenåringer i gjennomsnitt bruker over tre timer på sosiale medier hver dag. Eksperter er delte i synet på dette. Noen mener sosiale medier skaper press og påvirker selvbilde negativt, spesielt for unge jenter. Andre fremhever at det kan styrke vennskap og gi tilgang til viktig informasjon. Mange skoler har innført regler om mobilbruk i klasserommet.",
+      "questions": [
+        {
+          "id": "rq-b1-005-1",
+          "prompt": "Hvor mye tid bruker tenåringer i gjennomsnitt på sosiale medier per dag?",
+          "options": [
+            { "id": "a", "text": "Under én time." },
+            { "id": "b", "text": "Omtrent to timer." },
+            { "id": "c", "text": "Over tre timer." },
+            { "id": "d", "text": "Mer enn fem timer." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-b1-005-2",
+          "prompt": "Hva sier noen eksperter er en positiv side ved sosiale medier?",
+          "options": [
+            { "id": "a", "text": "Det gir bedre karakterer på skolen." },
+            { "id": "b", "text": "Det kan styrke vennskap og gi tilgang til informasjon." },
+            { "id": "c", "text": "Det gjør ungdom mer kreative." },
+            { "id": "d", "text": "Det reduserer skjermbruk totalt sett." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "wp-b1-001",
+      "level": "B1",
+      "situation": "Du vil lage en sommerfest i borettslaget ditt.",
+      "task": "Skriv en e-post til styret i borettslaget. Forklar hvorfor dette er en god idé og hva du trenger hjelp til. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg skriver for å foreslå at vi arrangerer en sommerfest i borettslaget i slutten av juni. Jeg synes det ville være en fin anledning for naboene til å bli bedre kjent med hverandre og skape et godt fellesskap.\n\nJeg tenker vi kan ha grilling, musikk og leker for barna i bakgården. Jeg kan ta ansvar for planleggingen og invitasjonene, men trenger hjelp fra styret til å booke bakgården og finne ut om vi kan bruke strøm til musikkanlegget.\n\nDersom dere synes dette er en god idé, kan vi møtes for å diskutere detaljene.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Clearly states the proposal and justification. Offers to take responsibility while asking for specific help. Closes with a suggestion to meet — showing initiative. Formal register appropriate for a housing board."
+    },
+    {
+      "id": "wp-b1-002",
+      "level": "B1",
+      "situation": "Du har sett en stillingsannonse for en deltidsjobb som butikkassistent.",
+      "task": "Skriv en søknad. Fortell om deg selv, din erfaring og hvorfor du passer til jobben. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg søker stillingen som butikkassistent som ble annonsert på finn.no. Jeg er 30 år, fra Polen, og har bodd i Norge i tre år. Jeg snakker norsk på B1-nivå og engelsk flytende.\n\nJeg har to års erfaring som kasserer i en dagligvarebutikk i hjemlandets og er vant til å jobbe med kunder. Jeg er serviceinnstilt, pålitelig og trives godt i et aktivt arbeidsmiljø.\n\nJeg er tilgjengelig hverdager etter klokken 14.00 og i helger. Jeg håper dere tar kontakt.\n\nMed vennlig hilsen,\nAnna Hansen\nTlf: 12345678",
+      "modelNotes": "Structured as a real job application: personal intro, relevant experience, availability and contact info. Uses formal language. Showing awareness of own language level is natural at this stage."
+    },
+    {
+      "id": "wp-b1-003",
+      "level": "B1",
+      "situation": "Du er misfornøyd med en tjeneste du har betalt for.",
+      "task": "Skriv en klage til kundeservice. Forklar hva problemet er og hva du forventer at de gjør. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg kontakter dere fordi jeg er svært misfornøyd med en reparasjonstjeneste jeg bestilte hos dere 3. mai. Teknikeren kom to timer etter avtalt tid og fikset ikke problemet. Jeg måtte bestille en ny time og ta fri fra jobben igjen.\n\nJeg forventer at dere enten refunderer halvparten av beløpet jeg betalte, eller tilbyr en gratis ekstra service. Jeg er ellers en fast kunde og håper at dere tar denne tilbakemeldingen på alvor.\n\nVennligst ta kontakt innen fem virkedager.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "States the problem with specific details (date, what went wrong). Makes a concrete, reasonable demand. Tone is firm but professional — not aggressive. Gives a deadline for response."
+    },
+    {
+      "id": "wp-b1-004",
+      "level": "B1",
+      "situation": "En norsk venn spør om du vil bli med på en fjeltur neste helg.",
+      "task": "Skriv en melding og svar på invitasjonen. Si om du vil bli med eller ikke, og forklar hvorfor. Legg til noen spørsmål om turen. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei Thomas!\n\nTakk for invitasjonen – det høres veldig gøy ut! Jeg har aldri vært på fjellet om vinteren, så jeg er spent. Jeg vil gjerne bli med!\n\nJeg har noen spørsmål: Hvor skal vi gå, og hvor lang er turen? Trenger jeg spesielt utstyr som tursko eller staver? Og hva er planen for mat – skal vi ta med nistepakke?\n\nJeg er litt usikker på formen min, men jeg er motivert og gleder meg. Hvor møtes vi og når?\n\nGleder meg til å høre mer!\nAnna",
+      "modelNotes": "Accepts enthusiastically, asks several relevant practical questions. Natural and friendly register. Shows curiosity about Norwegian outdoor life — culturally appropriate."
+    },
+    {
+      "id": "wp-b1-005",
+      "level": "B1",
+      "situation": "Du har lest en artikkel om at skolen i din by vil kutte i antall timer med gym og kroppsøving.",
+      "task": "Skriv en e-post til lokalavisen der du gir uttrykk for din mening om dette. Gi argumenter for synet ditt. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg har lest at skolene i kommunen vår vil kutte timer i kroppsøving, og jeg er sterkt imot dette.\n\nRegelmessig fysisk aktivitet er svært viktig for barn og unges helse, både fysisk og mentalt. Forskning viser at elever som er aktive, konsentrerer seg bedre og presterer bedre på skolen. Mange barn får ikke nok bevegelse hjemme, og skolen er derfor en viktig arena.\n\nI stedet for å kutte, burde kommunen satse mer på idrett og friluftsliv i skolen. Jeg håper avisen tar opp denne saken og at politikerne lytter til foreldre og lærere.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Takes a clear stance and backs it with two arguments (health, concentration). Addresses the counterargument implicitly by noting that school is a key arena. Calls for action — appropriate for a letter to a newspaper."
+    }
+  ],
+  "oral": [
+    {
+      "id": "op-b1-001",
+      "level": "B1",
+      "scenario": "Synes du det er bra at folk er opptatt av kropp og helse? Gi din mening og begrunn den.",
+      "questions": [
+        "Hva synes du om at folk er opptatt av kropp og helse?",
+        "Kan man bli for opptatt av helse og utseende?",
+        "Hva tror du er den beste måten å holde seg frisk på?",
+        "Er kroppsfokus noe som påvirker deg personlig?"
+      ],
+      "tips": "Structure your answer: state your opinion, give 2–3 reasons, then add a nuance or 'on the other hand'. Use phrases like: 'Jeg mener at...', 'På den ene siden...', 'På den andre siden...'.",
+      "modelAnswer": "Jeg mener det er bra at folk er opptatt av helse, fordi det gir bedre livskvalitet og færre sykdommer. På den ene siden er det positivt med sunn mat og mosjon. På den andre siden synes jeg vi kan bli for opptatt av utseende — spesielt på sosiale medier. Det viktigste er å ha en balansert livsstil og være fornuftig, ikke ekstrem. Personlig prøver jeg å trene to-tre ganger i uken og spise variert.",
+      "modelNotes": "Opens with a clear stance, uses 'på den ene siden / på den andre siden' correctly, and adds personal experience — exactly what B1 oral examiners look for."
+    },
+    {
+      "id": "op-b1-002",
+      "level": "B1",
+      "scenario": "Synes du det er viktig å ta vare på kulturen fra hjemlandet ditt når du bor i Norge?",
+      "questions": [
+        "Hva betyr kultur fra hjemlandet for deg?",
+        "Hvordan holder du kontakten med din opprinnelige kultur?",
+        "Kan det by på utfordringer å balansere to kulturer?",
+        "Hva synes du er det beste med å leve i to kulturer?"
+      ],
+      "tips": "Personal experience makes your answer richer. You can agree or disagree — what matters is that you explain your reasoning clearly.",
+      "modelAnswer": "For meg er kulturen fra hjemlandet veldig viktig. Jeg feirer tradisjonelle høytider og lager mat fra hjemlandet. Jeg holder kontakten med familien hjemme via videosamtaler. Det kan være krevende å balansere to kulturer, men jeg synes det er en styrke — jeg føler meg hjemme både her og der. Det beste er at jeg kan ta det beste fra begge verdener.",
+      "modelNotes": "Shares concrete practices (feirer høytider, videosamtaler), acknowledges a challenge, and reframes it positively. Strong B1 structure with personal voice."
+    },
+    {
+      "id": "op-b1-003",
+      "level": "B1",
+      "scenario": "Synes du at alle ungdommer bør ta en utdanning etter videregående skole?",
+      "questions": [
+        "Hva mener du om høyere utdanning for alle?",
+        "Hva er fordelene og ulempene ved å ta en universitetsutdanning?",
+        "Finnes det gode alternativer til universitetet?",
+        "Hva er din egen erfaring med utdanning?"
+      ],
+      "tips": "Think about both sides before you speak. Norwegian examiners appreciate a nuanced answer more than a one-sided one. Use 'riktignok' and 'likevel' to show nuance.",
+      "modelAnswer": "Jeg mener ikke alle bør ta universitetsutdanning — det finnes mange gode alternativer, som fagbrev og yrkesopplæring. Fordelene med høyere utdanning er bedre jobbmuligheter og høyere lønn på sikt. Ulempene er at det tar lang tid og kan være dyrt. Riktignok er utdanning viktig, men det viktigste er å velge noe man liker og er flink til. Jeg tok selv et år med fagkurs før jeg begynte på høyskole.",
+      "modelNotes": "Nuanced answer that avoids a simple yes/no. Uses 'riktignok' correctly and draws on personal experience. Good B1 argumentation structure."
+    },
+    {
+      "id": "op-b1-004",
+      "level": "B1",
+      "scenario": "Hva er positivt og negativt med å jobbe veldig mye?",
+      "questions": [
+        "Hva er fordelene med å jobbe mye?",
+        "Hva er ulempene?",
+        "Hvordan bør man balansere jobb og fritid?",
+        "Kjenner du noen som jobber for mye? Hva tenker du om det?"
+      ],
+      "tips": "This is an opinion task — you don't need to agree with a particular view. What matters is that you support your ideas with examples or reasons.",
+      "modelAnswer": "Fordelene med å jobbe mye er at man tjener mer, bygger karriere og føler mestring. Men ulempene er store — man kan bli utbrent, gjøre mindre for familien og miste hobbyer. Jeg mener balansen mellom jobb og fritid er helt avgjørende for et godt liv. Jeg kjenner noen som jobber sju dager i uken — de er pliktoppfyllende, men virker alltid slitne. Det er ikke sånn jeg vil ha det.",
+      "modelNotes": "States pros and cons concisely, takes a clear personal stance, and uses a real example (kjenner noen) to ground the opinion. Appropriate fluency and complexity for B1."
+    },
+    {
+      "id": "op-b1-005",
+      "level": "B1",
+      "scenario": "Kan dere snakke om hva dere mener er det beste man kan gjøre for å bli kjent med nye folk?",
+      "questions": [
+        "Hva gjør du for å bli kjent med nye mennesker?",
+        "Hvor er de beste stedene å møte nye venner?",
+        "Er det vanskeligere å bli kjent med nordmenn enn folk fra andre land? Hvorfor?",
+        "Har du et godt eksempel på en gang du ble kjent med noen på en uventet måte?"
+      ],
+      "tips": "Speak from experience — concrete examples are more convincing than general statements. If the examiner also speaks, make sure to respond to what they say, not just your own thoughts.",
+      "modelAnswer": "Jeg blir kjent med nye folk på norskskolen, på jobben og i nærmiljøet. De beste stedene er kurs, frivillig arbeid og idretts lag. Jeg synes det kan være litt vanskeligere å bli kjent med nordmenn enn folk fra andre land — de er hyggelige, men ikke alltid så åpne i starten. Men en gang ble jeg kjent med naboen min da vi begge sto fast i heisen — vi lo så mye og har vært venner siden!",
+      "modelNotes": "Uses concrete examples and locations, gives a nuanced view of meeting Norwegians, and ends with a memorable anecdote — engaging and natural for B1."
+    }
+  ]
+}

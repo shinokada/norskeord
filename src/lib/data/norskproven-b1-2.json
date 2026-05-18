@@ -1,0 +1,278 @@
+{
+  "reading": [
+    {
+      "id": "rp-b1-2-001",
+      "level": "B1",
+      "title": "Frivillighet i Norge",
+      "text": "Norge har en lang tradisjon for frivillig arbeid. Rundt halvparten av den norske befolkningen deltar i frivillige organisasjoner hvert år, enten innen idrett, kultur eller veldedighet. Forskning viser at frivillig arbeid ikke bare er bra for samfunnet, men også for den enkeltes helse og trivsel. Mange innvandrere opplever at frivillighet er en god måte å bli kjent med nordmenn og lære språket på. Kommunene oppfordrer derfor folk til å delta i lokale organisasjoner.",
+      "questions": [
+        {
+          "id": "rq-b1-2-001-1",
+          "prompt": "Hvor stor andel av nordmenn deltar i frivillig arbeid hvert år?",
+          "options": [
+            { "id": "a", "text": "En fjerdedel." },
+            { "id": "b", "text": "En tredjedel." },
+            { "id": "c", "text": "Rundt halvparten." },
+            { "id": "d", "text": "De fleste." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-b1-2-001-2",
+          "prompt": "Hva er en fordel med frivillighet for innvandrere, ifølge teksten?",
+          "options": [
+            { "id": "a", "text": "De får bedre betalt jobb." },
+            { "id": "b", "text": "De kan lære norsk og bli kjent med nordmenn." },
+            { "id": "c", "text": "De slipper å betale skatt." },
+            { "id": "d", "text": "De får norsk statsborgerskap raskere." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-2-002",
+      "level": "B1",
+      "title": "Boligmarkedet i norske byer",
+      "text": "Boligprisene i store norske byer har steget kraftig de siste ti årene. Mange unge sliter med å komme inn på boligmarkedet fordi de ikke har nok egenkapital. For å kjøpe bolig i Norge må man som regel ha minst 15 prosent av kjøpesummen i egenkapital. Noen kommuner tilbyr startlån til førstegangskjøpere som ikke oppfyller bankens krav. Eksperter advarer likevel om at høye boliglån kan gi privatøkonomiske problemer dersom rentene stiger.",
+      "questions": [
+        {
+          "id": "rq-b1-2-002-1",
+          "prompt": "Hvor mye egenkapital kreves som regel for å kjøpe bolig i Norge?",
+          "options": [
+            { "id": "a", "text": "10 prosent." },
+            { "id": "b", "text": "15 prosent." },
+            { "id": "c", "text": "20 prosent." },
+            { "id": "d", "text": "25 prosent." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-2-002-2",
+          "prompt": "Hva er startlån?",
+          "options": [
+            { "id": "a", "text": "Et lån fra arbeidsgiveren din." },
+            { "id": "b", "text": "Et lån fra staten til dem som ikke klarer bankens krav." },
+            { "id": "c", "text": "Et rentefritt lån til alle studenter." },
+            { "id": "d", "text": "Et lån fra kommunen til bedrifter." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-2-003",
+      "level": "B1",
+      "title": "Digital hverdag",
+      "text": "Norske myndigheter har de siste årene satset mye på digitalisering av offentlige tjenester. De fleste innbyggere kan nå ordne alt fra skattemeldingen til legetimen via mobilen. Likevel er det grupper som faller utenfor den digitale hverdagen, særlig eldre og personer med lav digital kompetanse. Regjeringen har derfor innført tiltak som gratis datakurs på biblioteker og muligheten til å få hjelp per telefon. Målet er at alle skal ha tilgang til de samme tjenestene.",
+      "questions": [
+        {
+          "id": "rq-b1-2-003-1",
+          "prompt": "Hvem faller ofte utenfor den digitale hverdagen?",
+          "options": [
+            { "id": "a", "text": "Unge voksne og studenter." },
+            { "id": "b", "text": "Eldre og de med lav digital kompetanse." },
+            { "id": "c", "text": "Innvandrere med høy utdanning." },
+            { "id": "d", "text": "Ansatte i det offentlige." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-2-003-2",
+          "prompt": "Hvilket tiltak har regjeringen innført for å hjelpe?",
+          "options": [
+            { "id": "a", "text": "Gratis internett til alle." },
+            { "id": "b", "text": "Gratis datakurs på biblioteker og telefonhjelp." },
+            { "id": "c", "text": "Nye offentlige kontorer i alle bydeler." },
+            { "id": "d", "text": "Påbudt opplæring i alle bedrifter." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-2-004",
+      "level": "B1",
+      "title": "Mat og identitet",
+      "text": "Matkultur er en viktig del av norsk identitet. Tradisjonelle retter som lutefisk, rakfisk og fårikål er knyttet til årstider og høytider. Men norsk matkultur er i endring. Innvandring har bidratt til at nordmenn er blitt mer åpne for internasjonal mat, og i dag finner man pizzaer, sushi og kebab over hele landet. Ernæringseksperter påpeker at dette ikke nødvendigvis er negativt – mangfold i kosten kan gi bedre ernæring, så lenge man velger varierte og næringsrike matvarer.",
+      "questions": [
+        {
+          "id": "rq-b1-2-004-1",
+          "prompt": "Hva har bidratt til at nordmenn er blitt mer åpne for internasjonal mat?",
+          "options": [
+            { "id": "a", "text": "Norsk eksport av mat." },
+            { "id": "b", "text": "Innvandring." },
+            { "id": "c", "text": "Nye norske kokkeskoler." },
+            { "id": "d", "text": "Statlige kampanjer." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-2-004-2",
+          "prompt": "Hva mener ernæringseksperter om endringen i norsk kosthold?",
+          "options": [
+            { "id": "a", "text": "Det er alltid negativt med utenlandsk mat." },
+            { "id": "b", "text": "Mangfold i kosten kan faktisk være positivt." },
+            { "id": "c", "text": "Nordmenn bør holde seg til tradisjonell mat." },
+            { "id": "d", "text": "Pizza og kebab er usunne og bør unngås." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-2-005",
+      "level": "B1",
+      "title": "Foreldrepermisjon i Norge",
+      "text": "Norge har et av verdens mest sjenerøse foreldrepermisjonsordninger. Foreldre har rett til opptil 49 uker med full lønn, eller 59 uker med 80 prosent lønn etter fødsel. Av disse ukene er ti øremerket fedrekvote, altså uker som bare far kan ta ut. Formålet med fedrekvoten er å øke fedres involvering i barneoppdragelsen og fremme likestilling i hjemmet. Forskning viser at barn med fedre som tar permisjon, utvikler bedre sosiale ferdigheter.",
+      "questions": [
+        {
+          "id": "rq-b1-2-005-1",
+          "prompt": "Hva er fedrekvoten?",
+          "options": [
+            { "id": "a", "text": "Uker som bare mor kan ta ut." },
+            { "id": "b", "text": "Uker som er øremerket far." },
+            { "id": "c", "text": "Ekstra ferie for begge foreldre." },
+            { "id": "d", "text": "Lønnskompensasjon fra arbeidsgiver." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-2-005-2",
+          "prompt": "Hva viser forskning om barn der far tar permisjon?",
+          "options": [
+            { "id": "a", "text": "De gjør det bedre på skolen faglig." },
+            { "id": "b", "text": "De utvikler bedre sosiale ferdigheter." },
+            { "id": "c", "text": "De sover bedre om natten." },
+            { "id": "d", "text": "De lærer å snakke tidligere." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "wp-b1-2-001",
+      "level": "B1",
+      "situation": "Du er medlem av et lokalt idrettslag og styret vurderer å øke kontingenten med 30 prosent. Du er uenig i dette.",
+      "task": "Skriv en e-post til styret der du argumenterer mot økningen. Forklar hvorfor du er uenig og foreslå et alternativ.",
+      "wordCountMin": 80,
+      "wordCountMax": 150,
+      "modelAnswer": "Hei!\n\nJeg har lest om den foreslåtte kontingentøkningen på 30 prosent og vil gjerne komme med noen synspunkter.\n\nJeg forstår at lagets kostnader øker, men en så stor økning på én gang kan føre til at mange medlemmer melder seg ut, særlig barnefamilier og unge voksne. Det vil på sikt gi lagets økonomi enda større problemer.\n\nEt alternativ kan være å øke kontingenten med 10 prosent nå og heller organisere en dugnad eller et arrangement for å samle inn ekstra midler. På den måten fordeler vi kostnadene og engasjerer medlemmene.\n\nJeg håper styret tar dette med i vurderingen.\n\nMed vennlig hilsen, Khalid Hussain",
+      "modelNotes": "Good B1 argumentative writing acknowledges the other side, states a clear position, uses connectives (men, særlig, på den måten), and ends with a constructive suggestion."
+    },
+    {
+      "id": "wp-b1-2-002",
+      "level": "B1",
+      "situation": "Du har nettopp hatt et jobbintervju og vil sende en takkmelding til arbeidsgiveren.",
+      "task": "Skriv en profesjonell e-post der du takker for intervjuet, uttrykker din interesse for stillingen og nevner noe konkret fra samtalen.",
+      "wordCountMin": 80,
+      "wordCountMax": 150,
+      "modelAnswer": "Hei Marianne,\n\nTusen takk for hyggelig samtale i går. Det var veldig interessant å høre mer om avdelingens arbeid med bærekraft og de planlagte prosjektene for neste år.\n\nJeg vil gjerne understreke at jeg er svært motivert for denne stillingen. Kombinasjonen av prosjektledelse og tverrfaglig samarbeid er akkurat det jeg ser etter, og jeg tror min erfaring fra lignende roller vil komme godt med.\n\nJeg ser frem til å høre fra dere, og ta gjerne kontakt om dere trenger ytterligere informasjon.\n\nMed vennlig hilsen, Ana Pereira",
+      "modelNotes": "References something specific from the interview, uses formal register throughout, and ends proactively — all marks of good B1 professional writing."
+    },
+    {
+      "id": "wp-b1-2-003",
+      "level": "B1",
+      "situation": "Kommunen din planlegger å legge ned det lokale biblioteket for å spare penger. Du mener dette er en dårlig idé.",
+      "task": "Skriv et leserinnlegg til lokalavisen der du argumenterer for å bevare biblioteket. Bruk minst to argumenter.",
+      "wordCountMin": 80,
+      "wordCountMax": 150,
+      "modelAnswer": "Bevar biblioteket vårt!\n\nJeg leste med bekymring at kommunen vurderer å legge ned biblioteket for å spare penger. Dette er etter min mening en kortsiktig løsning med alvorlige konsekvenser.\n\nFor det første er biblioteket en viktig møteplass for alle, uavhengig av økonomi. Det er et av få offentlige steder der alle er velkomne uten å betale noe. For mange eldre og ensomme er det en del av hverdagen.\n\nFor det andre er biblioteket avgjørende for barn og unges leseferdigheter. Forskning viser at tilgang til bøker i nærmiljøet øker leselysten og skoleresultatene.\n\nJeg oppfordrer kommunen til å finne andre innsparingsmuligheter og la biblioteket stå.\n\nMed hilsen, Yuki Tanaka",
+      "modelNotes": "Uses discourse markers (For det første / For det andre), addresses counter-argument implicitly, and ends with a clear call to action — hallmarks of good B1 opinion writing."
+    },
+    {
+      "id": "wp-b1-2-004",
+      "level": "B1",
+      "situation": "Du bor i en leilighet og har hatt vannlekkasje som har skadet gulvet. Utleieren din svarer ikke på meldingene dine.",
+      "task": "Skriv en formell e-post til utleieren der du beskriver problemet, minner om dine rettigheter og krever handling innen en bestemt frist.",
+      "wordCountMin": 80,
+      "wordCountMax": 150,
+      "modelAnswer": "Hei,\n\nJeg skriver angående vannlekkasjen på badet i leiligheten min i Storgata 12B. Jeg har sendt deg tre meldinger om dette siden 5. mai, men har ikke mottatt svar.\n\nLekkasjen har nå skadet parkettgulvet i gangen. Ifølge husleieloven er utleier ansvarlig for vedlikehold og reparasjoner som dette. Jeg ber deg derfor ta kontakt med en fagperson og ordne dette innen fredag 20. mai.\n\nDersom jeg ikke hører fra deg innen fristen, vil jeg kontakte Husleietvistutvalget for videre hjelp.\n\nMed vennlig hilsen, Irina Sokolova, leilighet 12B",
+      "modelNotes": "Formal complaint letters at B1 level should state facts clearly, reference relevant rights, set a deadline, and mention consequences — all demonstrated here."
+    },
+    {
+      "id": "wp-b1-2-005",
+      "level": "B1",
+      "situation": "Bedriften du jobber i tilbyr ansatte kurs for å utvikle ferdighetene sine. Du vil søke om å delta på et lederskapskurs.",
+      "task": "Skriv en søknad til HR-avdelingen der du begrunner hvorfor du ønsker å delta på kurset og hva du kan bidra med etterpå.",
+      "wordCountMin": 80,
+      "wordCountMax": 150,
+      "modelAnswer": "Hei,\n\nJeg vil gjerne søke om plass på lederskapskurset som tilbys ansatte i høst.\n\nJeg har jobbet i kundeserviceavdelingen i to år og ønsker å utvikle meg videre. Jeg opplever stadig situasjoner der det er behov for bedre koordinering og kommunikasjon i teamet, og jeg tror kurset vil gi meg verktøy til å håndtere dette bedre.\n\nEtter kurset ønsker jeg å dele det jeg har lært med kollegaene mine og bidra til et sterkere teamarbeid i avdelingen. Jeg er også interessert i å ta mer ansvar på sikt.\n\nJeg håper dere vurderer søknaden min positivt.\n\nMed vennlig hilsen, David Mensah",
+      "modelNotes": "A strong B1 workplace application explains motivation, connects the course to real work needs, and shows awareness of how learning benefits the team — not just the individual."
+    }
+  ],
+  "oral": [
+    {
+      "id": "op-b1-2-001",
+      "level": "B1",
+      "scenario": "Du er på et foreldremøte på barneskolen. Læreren foreslår mer lekser, men du er ikke enig.",
+      "questions": [
+        "Hva er din mening om mengden lekser barna har nå?",
+        "Mener du at lekser alltid er til barnets beste?",
+        "Hvordan balanserer du lekser og fritid hjemme?",
+        "Hva er alternativet til mer lekser, etter din mening?"
+      ],
+      "tips": "This is a typical B1 discussion scenario. Practice expressing disagreement politely: 'Jeg er ikke helt enig fordi…', 'På den ene siden… men på den andre siden…'",
+      "modelAnswer": "Jeg synes barna har nok lekser allerede. På den ene siden kan lekser hjelpe barn med å repetere det de lærer på skolen. Men på den andre siden trenger barn også tid til å leke, hvile og være med familien. Jeg er ikke helt enig i at mer lekser gir bedre resultater — forskning viser at kvalitet er viktigere enn mengde. Et alternativ kan være kortere, mer målrettede lekser som tar maks 20 minutter.",
+      "modelNotes": "Politely disagrees with a position, uses contrast markers, references research (appropriately at B1), and offers a constructive alternative — a complete B1 discussion response."
+    },
+    {
+      "id": "op-b1-2-002",
+      "level": "B1",
+      "scenario": "Du er i et jobbintervju for en stilling som butikksjef. Intervjueren spør om dine lederegenskaper.",
+      "questions": [
+        "Kan du fortelle litt om deg selv og din erfaring?",
+        "Hva gjør du når det oppstår konflikter i teamet?",
+        "Hvordan motiverer du ansatte som ikke presterer godt nok?",
+        "Hvor ser du deg selv om fem år?"
+      ],
+      "tips": "Use concrete examples: 'Da jeg jobbet som…, opplevde jeg at…' This shows rather than tells. Practice past tense for experience and modal verbs for future plans.",
+      "modelAnswer": "Jeg heter Amina Hassan og har tre års erfaring fra varehandel, bl.a. som assisterende butikksjef. Når det oppstår konflikter i teamet, prøver jeg å snakke med begge parter separat og finne en løsning sammen. For å motivere ansatte er det viktig å gi konkret tilbakemelding og anerkjenne innsatsen deres. Om fem år ser jeg meg selv i en større lederrolle, gjerne i en bedrift som satser på belæring og utvikling.",
+      "modelNotes": "Introduces clearly, uses past tense for experience, modal verbs (prøver å, er det viktig å) for approach, and future tense for career plans. Concrete and structured."
+    },
+    {
+      "id": "op-b1-2-003",
+      "level": "B1",
+      "scenario": "Du diskuterer bruk av sosiale medier med en venn. Du mener vi bruker for mye tid på det.",
+      "questions": [
+        "Hvor mye tid bruker du selv på sosiale medier?",
+        "Hva synes du er de største ulempene med sosiale medier?",
+        "Har sosiale medier noen positive sider, etter din mening?",
+        "Hva kan man gjøre for å begrense bruken?"
+      ],
+      "tips": "Practice giving balanced arguments: 'På den ene siden er det positivt at… men på den andre siden kan det føre til…' Use discourse markers to show your reasoning.",
+      "modelAnswer": "Jeg bruker sosiale medier ca. en time om dagen, mest til å holde kontakt med familie i hjemlandet. Jeg synes de største ulempene er at det tar mye tid og kan gjøre oss misnøyde med eget liv når vi sammenligner oss med andre. På den ene siden er det positivt at man kan nå hele verden med ett klikk. Men på den andre siden tror jeg mye skjermtid går ut over søvn og konsentrasjon. Jeg tror det hjelper å legge fra seg telefonen en time før leggetid.",
+      "modelNotes": "Personal usage figure grounds the answer in reality, 'på den ene siden / på den andre siden' used correctly, and ends with a practical tip showing active engagement."
+    },
+    {
+      "id": "op-b1-2-004",
+      "level": "B1",
+      "scenario": "Du søker om å leie en ny leilighet og snakker med utleieren på telefon.",
+      "questions": [
+        "Kan du presentere deg selv og fortelle litt om din situasjon?",
+        "Hvorfor vil du flytte fra der du bor nå?",
+        "Har du faste inntekter, og kan du dokumentere dem?",
+        "Har du spørsmål om leiligheten eller leievilkårene?"
+      ],
+      "tips": "Norwegian rental conversations often involve explaining your income, current living situation, and asking practical questions. Key vocab: depositum, husleie, inkludert strøm, oppsigelsestid.",
+      "modelAnswer": "Hei, jeg heter Carlos og er interessert i leiligheten. Jeg jobber som ingeniør i full stilling og har fast inntekt — jeg kan sende lønnslipper hvis nødvendig. Jeg vil flytte fordi jeg trenger mer plass og bor for langt fra jobben nå. Jeg har noen spørsmål: Er strøm inkludert i husleien? Og hva er depositumkravet? Hvor lang er oppsigelsestiden?",
+      "modelNotes": "Introduces proactively, addresses income question directly, explains move reason briefly, and asks practical questions using key rental vocabulary. Professional and clear."
+    },
+    {
+      "id": "op-b1-2-005",
+      "level": "B1",
+      "scenario": "Du deltar på et møte i bydelsutvalget om et nytt sykkelveianlegg i nabolaget ditt.",
+      "questions": [
+        "Hva er din holdning til det planlagte sykkelveianlegget?",
+        "Tror du det vil påvirke trafikken i området positivt eller negativt?",
+        "Er det noe du savner i planene som ble presentert?",
+        "Hva mener du er den viktigste transporten utfordringen i bydelen?"
+      ],
+      "tips": "Civic meetings (bydelsutvalg) are a realistic B1 oral scenario. Practice expressing opinions on community issues and suggesting improvements with phrases like: 'Jeg mener at…', 'Det hadde vært bedre om…'",
+      "modelAnswer": "Jeg er positiv til sykkelveianlegget. Det vil gjøre det tryggere å sykle og redusere biltrafikken. På den positive siden får vi bedre miljø og folk blir mer aktive. Jeg savner imidlertid mer informasjon om parkeringsplasser — hva skjer med dem? Den viktigste utfordringen i bydelen vår er etter min mening mangelen på sikre skoleveier for barn. Det hadde vært bedre om planene inkluderte så godt som belæring langs disse rutene.",
+      "modelNotes": "Supports the proposal but raises a specific concern and names a broader local challenge. Uses 'etter min mening' and 'det hadde vært bedre om' correctly. Civic register appropriate for B1."
+    }
+  ]
+}

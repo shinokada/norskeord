@@ -4,7 +4,11 @@ I have added the path, /Users/shinichiokada/Svelte/svelte-languages/norskeord to
 
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
-====
+---
+
+---
+
+ai-docs/implementation/email-service-implementation.md
 Done up to Step 6.
 I tested and it worked:
 
@@ -25,19 +29,11 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
 ## Plus related
 
 - Plus stats image for Free vs Plus
-- Add daily streaks push notifications in Free vs Plus table
 
 ===========
 
 ## Others
 
-- Since this app is forcused to A1-B2, I can open more categories for C1 and C2. (5-6 categories open for C1 and C2)
-- /about page should be guide?
-- CTA button for Free forever to log in page.
-- QR code in home and other pages
-- Adding CTA button for Free forever to the home page
-- What does Stats: CEFR estimate + pace forecast Basic/Full in ai-docs/monetization-focusd-plan.md mean?
-- In flashcard page, there is All cards/Review due button and "xxx due" badge. This should be removed and the daily new words should be in the homepage with flash-card picking up level from Profile page.
 - The Undo button is too far from Again, Hard, Good, Easy buttons.
 
 ## QUIZ Open decisions
@@ -54,6 +50,62 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
 
 ## Solved
 
+- In flashcard page, there is All cards/Review due button and "xxx due" badge. This should be removed and the daily new words should be in the homepage with flash-card picking up level from Profile page. This is intetional.
+- Adding CTA button for Free forever to the home page
+- Add [Free forever to get started] button and link to login in the home page hero section.
+- Free users and logged in has no plus button in the top nav as non-logged in user.
+- Non-plus user has [xx due] next to the counter. But plus users don't have it. This is intentional.
+
+- Since this app is forcused to A1-B2, I can open more categories for C1 and C2. (5-6 categories open for C1 and C2)
+- /about page should be guide?
+- CTA button for Free forever to log in page.
+- QR code in home and other pages
+
+###/guide FAQ section
+
+1. How can I change the flashcard preferences?
+   You can find Preference secion in your Pofile page to change Target level, default interface language, default card direction, card type, pronounciation speed and tone, number of cards per session, number of quations per quiz if you are plus users.
+
+2. add Plus member section or add "If you are a plus user ..." in the answer and add a consice answer to the following question.
+
+- How can I print out my progress?
+  You can go to ...
+- I have a question, how can I get in touch with you?
+  You can find a form ...
+
+### /plus
+
+- Add daily streaks push notifications in Free vs Plus table
+
+update content and table
+
+- Norskprøven B1 full preparation is duplicate of Exam practice, not just vocabulary. So replace it with Category stats
+- Free vs Plus table
+  1. Add category stats and Free: - and Plus: Included
+  2. Can you confirm Due today smart deck is only for plus user?
+  3. Norskprøven B1 preparation row should be deleted since it is duplicate of Norskprøven practice tests and it is not accurate. We provide A1 and B1
+  4. Regarding Priority support, I should add my email to plus user or add a form. Which is easier?
+  5. email lesson for plus user but it should Coming soon
+
+### Profile
+
+- Export my data now export PDF
+
+### email service
+
+- postpone until we have enough plus members. So it should mention Coming soon.
+
+### norskproven
+
+For /norskproven/practice page
+
+- shouldn't it norskproven be norskprove? https://prove.hkdir.no/ has https://prove.hkdir.no/norskprove-a1-b2
+- all /norskproven/practice pages has no title. Shouldn't they have a title with i18n.
+- norskproven/practice/1/oral/b1 or a1 have ` - trykk for å avsløre`. I don't think we need this since clicking doesn't work and there is Next question button at the bottom.
+  And it can be good to show modal answer
+- Oral page can have example answer like writing page after the given time or showing a button for model answer.
+- "Spørsmål" in oral page is not clear. It can be more clear like "Svar på følgende spørsmål"
+- Currently Quiz is in the main menu and it has a lock icon for free users. And when you logged in as a plus user you have practice test (/norskproven/practice) under More dropdown. I'm wondering add a new dropdown Prepare with Quiz and Practice tests and for free users link to /plus page and for plus members add actual links. What do you think?
 - /plus email lesson for Plus member update for 2-3 times a month for level A/B and A1 and A2 has the same email, B1 and B2 has the same email to reduce manual work. Automate using AI as much as possible.
 - Currently there is Plus button for un-logged in user. And this is hidden when you are a plus member. When a plus member want to see /plus page, you need to add /plus to URL. For a better UI, should we change the Plus button to a nav item?
 - In the home page, I don't think I need Browse decks button.
