@@ -1,0 +1,278 @@
+{
+  "reading": [
+    {
+      "id": "rp-b1-3-001",
+      "level": "B1",
+      "title": "Klimaendringer og hverdagsvalg",
+      "text": "Stadig flere nordmenn er bekymret for klimaendringene og prøver å gjøre mer bærekraftige valg i hverdagen. Mange velger å redusere kjøttforbruket, bruke kollektivtransport og handle brukte klær. En undersøkelse fra 2023 viser at to av tre nordmenn mener enkeltpersoner har et ansvar for å handle miljøvennlig. Samtidig mener mange at politikerne og næringslivet bærer det største ansvaret for å løse klimaproblemet. Debatten om hvem som er ansvarlig for klimatiltak er fortsatt aktuell.",
+      "questions": [
+        {
+          "id": "rq-b1-3-001-1",
+          "prompt": "Hva viser undersøkelsen fra 2023 ifølge teksten?",
+          "options": [
+            { "id": "a", "text": "Nordmenn kjøper mer kjøtt enn før." },
+            { "id": "b", "text": "To av tre nordmenn mener enkeltpersoner har et klimaansvar." },
+            { "id": "c", "text": "De fleste nordmenn er ikke bekymret for klimaet." },
+            { "id": "d", "text": "Næringslivet har løst klimaproblemet." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-3-001-2",
+          "prompt": "Hva mener mange nordmenn om hvem som bærer det største klimaansvaret?",
+          "options": [
+            { "id": "a", "text": "Enkeltpersoner." },
+            { "id": "b", "text": "Unge mennesker." },
+            { "id": "c", "text": "Politikerne og næringslivet." },
+            { "id": "d", "text": "Skolen og forskerne." }
+          ],
+          "correctId": "c"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-3-002",
+      "level": "B1",
+      "title": "Den norske velferdsstaten",
+      "text": "Norge er kjent for sin velferdsstat, som tilbyr gratis grunnskole og videregående opplæring, rimelig høyere utdanning og et offentlig helsevesen for alle. Systemet finansieres gjennom høye skatter og inntekter fra olje og gass. Mange innvandrere setter pris på de sosiale tjenestene, som barnehage og NAV-støtte, men noen synes det norske byråkratiet kan være utfordrende å navigere. Det pågår politisk debatt om hvorvidt velferdsgodene er bærekraftige på sikt, særlig med tanke på en aldrende befolkning.",
+      "questions": [
+        {
+          "id": "rq-b1-3-002-1",
+          "prompt": "Hvordan finansieres den norske velferdsstaten ifølge teksten?",
+          "options": [
+            { "id": "a", "text": "Gjennom private donasjoner." },
+            { "id": "b", "text": "Gjennom høye skatter og oljeinntekter." },
+            { "id": "c", "text": "Gjennom EU-midler." },
+            { "id": "d", "text": "Gjennom innvandrernes bidrag." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-3-002-2",
+          "prompt": "Hva er et av de politiske bekymringstemaene rundt velferdsstaten?",
+          "options": [
+            { "id": "a", "text": "For mange unge mennesker i landet." },
+            { "id": "b", "text": "Om godene er bærekraftige med tanke på en aldrende befolkning." },
+            { "id": "c", "text": "At skattenivået er for lavt." },
+            { "id": "d", "text": "At helsevesenet er for dyrt for alle." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-3-003",
+      "level": "B1",
+      "title": "Elbiler i Norge",
+      "text": "Norge er verdensledende i bruk av elektriske biler. Over halvparten av nye biler som selges i Norge er elbiler. Staten har stimulert overgangen gjennom fordeler som lavere avgifter, gratis parkering og tilgang til kollektivfelt. Kritikere peker på at elbiler er dyre i innkjøp og at ladeinfrastrukturen utenfor byene fortsatt er mangelfull. Likevel er det bred politisk enighet om at elektrifisering av transportsektoren er viktig for å nå Norges klimamål.",
+      "questions": [
+        {
+          "id": "rq-b1-3-003-1",
+          "prompt": "Hva er en av fordelene elbileiere har hatt i Norge ifølge teksten?",
+          "options": [
+            { "id": "a", "text": "Gratis bensin." },
+            { "id": "b", "text": "Gratis parkering og tilgang til kollektivfelt." },
+            { "id": "c", "text": "Billigere forsikring." },
+            { "id": "d", "text": "Gratis veiavgifter overalt i landet." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-3-003-2",
+          "prompt": "Hva kritiseres elbilsatsingen for?",
+          "options": [
+            { "id": "a", "text": "At elbiler er for farlige å kjøre." },
+            { "id": "b", "text": "At elbiler er dyre og ladeinfrastrukturen utenfor byene er mangelfull." },
+            { "id": "c", "text": "At staten bruker for lite penger på elbiler." },
+            { "id": "d", "text": "At elbiler er for tunge for norske veier." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-3-004",
+      "level": "B1",
+      "title": "Ensomhet blant hjemmekontor-ansatte",
+      "text": "Etter pandemien beholder mange norske arbeidsplasser en hybridmodell der ansatte deler tiden mellom kontor og hjemmekontor. Forskning viser at fleksibilitet øker jobbtilfredshet, men at mangel på daglig kontakt med kolleger kan føre til ensomhet og redusert tilhørighet. Særlig nyansatte og unge arbeidstakere rapporterer at de savner den uformelle læringen som skjer på kontoret. Mange bedrifter svarer med å innføre faste kontordager og sosiale arrangementer for å styrke fellesskapet.",
+      "questions": [
+        {
+          "id": "rq-b1-3-004-1",
+          "prompt": "Hvem rapporterer spesielt om å savne uformell læring på kontoret?",
+          "options": [
+            { "id": "a", "text": "Seniorer med lang erfaring." },
+            { "id": "b", "text": "Ledere og sjefer." },
+            { "id": "c", "text": "Nyansatte og unge arbeidstakere." },
+            { "id": "d", "text": "Deltidsansatte." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-b1-3-004-2",
+          "prompt": "Hva gjør mange bedrifter for å motvirke ensomhet fra hjemmekontor?",
+          "options": [
+            { "id": "a", "text": "De forbyr hjemmekontor helt." },
+            { "id": "b", "text": "De innfører faste kontordager og sosiale arrangementer." },
+            { "id": "c", "text": "De gir ansatte høyere lønn." },
+            { "id": "d", "text": "De ansetter flere folk." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-b1-3-005",
+      "level": "B1",
+      "title": "Integrering i Norge",
+      "text": "Integrering av innvandrere er et sentralt politisk tema i Norge. Myndighetene tilbyr obligatoriske introduksjonsprogrammer som inkluderer norskopplæring og kunnskap om det norske samfunnet. Forskning viser at språkkunnskaper er den viktigste faktoren for å lykkes i arbeidsmarkedet. Mange innvandrere opplever imidlertid at det er vanskelig å få jobb som svarer til utdannelsen de har fra hjemlandet. Frivillige organisasjoner spiller en viktig rolle i å hjelpe nykommere med å bygge nettverk og bli kjent med norsk kultur.",
+      "questions": [
+        {
+          "id": "rq-b1-3-005-1",
+          "prompt": "Hva viser forskning er den viktigste faktoren for å lykkes i arbeidsmarkedet?",
+          "options": [
+            { "id": "a", "text": "Å ha høy utdanning fra hjemlandet." },
+            { "id": "b", "text": "Språkkunnskaper." },
+            { "id": "c", "text": "Å bo i en stor by." },
+            { "id": "d", "text": "Å ha norske venner." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-b1-3-005-2",
+          "prompt": "Hvilken rolle spiller frivillige organisasjoner i integreringen?",
+          "options": [
+            { "id": "a", "text": "De gir innvandrere penger og boliger." },
+            { "id": "b", "text": "De hjelper med å bygge nettverk og bli kjent med norsk kultur." },
+            { "id": "c", "text": "De gjennomfører obligatoriske norskprøver." },
+            { "id": "d", "text": "De administrerer introduksjonsprogrammene." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "wp-b1-3-001",
+      "level": "B1",
+      "situation": "Naboen din har begynt å parkere bilen sin foran inngangen til huset ditt, slik at det er vanskelig å komme inn og ut.",
+      "task": "Skriv en høflig men tydelig beskjed til naboen. Beskriv problemet, forklar konsekvensene og foreslå en løsning. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg håper dette er greit å ta opp. Jeg har lagt merke til at bilen din av og til står parkert rett foran inngangsdøren vår. Dette gjør det vanskelig for oss å komme inn og ut med barnevogn og handlevogn, og i nødstilfeller kan det også blokkere adkomsten for utrykningskjøretøy.\n\nJeg forstår at parkeringsplassene i området er knappe, og det setter jeg pris på at du har med i vurderingen. Kunne du parkere litt lenger borte, for eksempel ved siden av garasjen?\n\nTusen takk for forståelsen.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Raises a genuine concern without being accusatory. Acknowledges the neighbour's situation — this shows social awareness. Provides a concrete, reasonable alternative. Closing is warm. Good B1 register."
+    },
+    {
+      "id": "wp-b1-3-002",
+      "level": "B1",
+      "situation": "Du søker jobb som assistent i en barnehage. Du har ikke jobbet i barnehage før, men du har relevant erfaring.",
+      "task": "Skriv et søknadsbrev. Presenter deg selv, begrunn interessen din og forklar hva du kan bidra med. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg søker med dette stillingen som barnehageassistent ved Solstrålen barnehage. Jeg er 32 år, opprinnelig fra Etiopia, og har bodd i Norge i fire år.\n\nJeg har ikke formell barnehageerfaring, men jobbet i tre år som barnepasshjelp og fritidsleder i hjemlandet mitt. Jeg er glad i barn, tålmodig og flink til å skape trygge og lekne rammer. Jeg snakker norsk på B1-nivå og er motivert for å lære mer.\n\nJeg mener jeg kan bidra med kulturell mangfold og engasjement i hverdagen. Jeg håper på en mulighet til å presentere meg nærmere.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Honest about the gap in formal experience but reframes with transferable skills. Cultural diversity as a strength is relevant in Norwegian childcare. Formal but warm register. Within word count."
+    },
+    {
+      "id": "wp-b1-3-003",
+      "level": "B1",
+      "situation": "Lokalavisen din vil ha lesernes meninger om at kommunen planlegger å bygge ned et grøntareal i nabolaget for å lage parkeringsplass.",
+      "task": "Skriv et leserinnlegg der du gir uttrykk for din mening. Bruk minst to argumenter. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg er sterkt imot planen om å bygge parkeringsplass på grøntarealet i nabolaget vårt.\n\nFor det første er grønne lunger i bymiljøet svært viktige for folkehelsen. Barn og familier bruker parken til lek og rekreasjon, og trær og planter bidrar til bedre luftkvalitet. For det andre sender det et feil signal i en tid da vi bør satse på kollektivtransport og redusere biltrafikk i byene.\n\nJeg forstår at behovet for parkering er reelt, men ber kommunen utrede alternative løsninger — for eksempel et parkeringshus i utkanten av nabolaget.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Takes a clear stance, uses 'for det første / for det andre' to structure arguments. Acknowledges the opposing view without conceding the core argument — a strong B1 essay technique."
+    },
+    {
+      "id": "wp-b1-3-004",
+      "level": "B1",
+      "situation": "Du bor i et borettslag. Noen beboere bryter reglene om søppelsortering gjentatte ganger.",
+      "task": "Skriv en e-post til styret i borettslaget. Beskriv problemet, forklar konsekvensene og foreslå ett eller to tiltak. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei,\n\nJeg skriver for å informere styret om et vedvarende problem med søppelsorteringen i borettslaget. De siste månedene har det gjentatte ganger blitt kastet restavfall i beholderne for papir og plast, noe som fører til ekstra kostnader og at hele borettslaget får advarsler fra kommunen.\n\nJeg foreslår to tiltak: For det første at styret sender ut en påminnelse til alle beboere med klare instrukser på flere språk. For det andre kan man vurdere å sette opp synlige skilt ved søppelrommet.\n\nJeg håper dere tar dette på alvor.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Uses 'for det første / for det andre' for structure. Suggests multilingual signs — culturally aware given the context. Formal, constructive tone appropriate for a housing board."
+    },
+    {
+      "id": "wp-b1-3-005",
+      "level": "B1",
+      "situation": "Du har en viktig prøve på norskkurset, men du er syk og kan ikke møte opp.",
+      "task": "Skriv en e-post til læreren din. Forklar situasjonen, legg ved dokumentasjon hvis mulig, og be om å ta prøven på et annet tidspunkt. Skriv 80–120 ord.",
+      "wordCountMin": 80,
+      "wordCountMax": 120,
+      "modelAnswer": "Hei Frøken Nilsen,\n\nJeg skriver for å informere deg om at jeg dessverre ikke kan delta på prøven i morgen. Jeg er syk med feber og hoste, og legen har anbefalt meg å holde meg hjemme.\n\nJeg legger ved en legeattest som dokumentasjon. Jeg beklager at dette skjer på kort varsel, og jeg forsikrer deg om at jeg har forberedt meg godt til prøven.\n\nKan vi finne et annet tidspunkt der jeg kan ta prøven? Jeg er tilgjengelig fra torsdag denne uken.\n\nTusen takk for forståelsen.\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Explains the absence clearly, mentions documentation (standard in Norway), apologises without over-explaining, and proposes a concrete solution. Respectful formal register for a teacher."
+    }
+  ],
+  "oral": [
+    {
+      "id": "op-b1-3-001",
+      "level": "B1",
+      "scenario": "Mener du at enkeltpersoner har et ansvar for å leve mer miljøvennlig? Gi din mening og begrunn den.",
+      "questions": [
+        "Hva gjør du selv for å ta vare på miljøet?",
+        "Synes du det er enkeltpersonens eller politikernes ansvar å løse klimaproblemet?",
+        "Hvilke livsstilsendringer synes du er vanskeligst å gjøre?",
+        "Er du optimistisk eller pessimistisk når det gjelder klimaet?"
+      ],
+      "tips": "Structure: state your position → give two reasons → acknowledge the other side → close with a personal reflection. Use 'riktignok', 'likevel', 'selv om' to show nuance.",
+      "modelAnswer": "Jeg mener at enkeltpersoner har et ansvar, men at det ikke er nok alene. Jeg prøver selv å reise kollektivt, spise mindre kjøtt og sortere søppel. Riktignok er det store strukturelle endringer som trengs — strengere lover og internasjonale avtaler. Likevel tror jeg at holdningsendringer i befolkningen legger press på politikerne. Den vanskeligste endringen for meg er å reise mindre med fly. Jeg er litt pessimistisk, men håper teknologien og politikken kan ta oss i riktig retning.",
+      "modelNotes": "Balances personal responsibility with structural critique. Uses 'riktignok' and 'likevel' correctly. Ends with honest ambivalence — more convincing than false optimism at B1."
+    },
+    {
+      "id": "op-b1-3-002",
+      "level": "B1",
+      "scenario": "Hva tenker du om likestilling mellom menn og kvinner i Norge — er Norge et godt forbilde?",
+      "questions": [
+        "Hva vet du om likestilling i Norge?",
+        "Synes du kvinner og menn har like muligheter i arbeidslivet?",
+        "Er det forskjell på kjønnsroller i hjemlandet ditt og i Norge?",
+        "Hva er din egen erfaring med likestilling?"
+      ],
+      "tips": "You may agree or disagree with the idea that Norway is a good role model. Back your view with examples. You can draw on personal experience — examiners appreciate this.",
+      "modelAnswer": "Norge er et av verdens mest likestilte land, noe jeg setter stor pris på. Kvinner har gode muligheter i arbeidslivet og mange er i toppstillinger. Likevel finnes det fortsatt lønnsforskjeller mellom menn og kvinner, særlig i visse bransjer. I hjemlandet mitt er kjønnsrollene mer tradisjonelle — kvinner forventes ofte å ta mer ansvar hjemme. Jeg synes den norske modellen er et godt mål å strekke seg etter, selv om det er rom for forbedring.",
+      "modelNotes": "Praises Norway while noting real limitations. Cross-cultural comparison adds depth. Personal stance is nuanced — not uncritical praise. Good B1 structure."
+    },
+    {
+      "id": "op-b1-3-003",
+      "level": "B1",
+      "scenario": "Kan sosiale medier true demokratiet, eller er de en fordel for det?",
+      "questions": [
+        "Hva er de positive sidene ved sosiale medier for demokratiet?",
+        "Hva er de negative sidene?",
+        "Har du personlig opplevd feilinformasjon på nett?",
+        "Hva mener du bør gjøres for å gjøre sosiale medier tryggere?"
+      ],
+      "tips": "This is an opinion + argumentation task. Prepare both sides. Use discourse markers: 'på den ene siden', 'på den andre siden', 'derimot', 'i tillegg'. End with your personal view.",
+      "modelAnswer": "Sosiale medier kan styrke demokratiet ved å gi vanlige folk en stemme og spre viktig informasjon raskt. På den ene siden kan aktivister og journalister nå ut til mange uten store ressurser. På den andre siden spres feilinformasjon lett, og algoritmene viser oss ofte bare det vi allerede tror på — det skaper et ekkorom. Jeg har selv sett nyheter på Facebook som viste seg å være usanne. Jeg mener plattformene bør ha et større ansvar for å merke falske nyheter, og at mediekritikk bør læres i skolen.",
+      "modelNotes": "Strong argumentation structure with balanced pros and cons. Personal example (Facebook) makes it real. Ends with a policy suggestion — shows civic engagement appropriate for B1."
+    },
+    {
+      "id": "op-b1-3-004",
+      "level": "B1",
+      "scenario": "Hva tror du er grunnen til at nordmenn er så glad i friluftsliv og å bruke tid ute i naturen?",
+      "questions": [
+        "Hva er ditt inntrykk av nordmenns forhold til naturen?",
+        "Har du selv prøvd typiske norske friluftsaktiviteter?",
+        "Finnes det en tilsvarende kultur for friluftsliv i hjemlandet ditt?",
+        "Hva synes du om allemannsretten — retten til å ferdes fritt i naturen?"
+      ],
+      "tips": "Cultural insight is valued here. You can reflect on differences between cultures without being negative about either. Use 'det virker som om', 'jeg har inntrykk av' to hedge your opinions.",
+      "modelAnswer": "Jeg har inntrykk av at nordmenn vokser opp med en sterk forbindelse til naturen — det er en del av identiteten. Det virker som om friluftsliv handler like mye om rekreasjon og mental helse som om sport. Jeg har prøvd å gå på ski og vandre i fjellet, og det er virkelig godt for sjelen. I hjemlandet mitt er folk mer hjemme på fritiden og naturen brukes ikke på samme måte. Allemannsretten synes jeg er en fantastisk tanke — at alle kan bruke naturen uansett hvem som eier den. Det er veldig norsk.",
+      "modelNotes": "Uses hedging language naturally. Shows cultural awareness and genuine curiosity. Personal experience of skiing adds credibility. Comment on allemannsretten shows broader civic knowledge at B1."
+    },
+    {
+      "id": "op-b1-3-005",
+      "level": "B1",
+      "scenario": "Er det viktig å lære norsk godt for å integrere seg i det norske samfunnet?",
+      "questions": [
+        "Hva betyr norskkunnskaper for deg personlig?",
+        "Opplever du at norsk er vanskelig å lære? Hva er vanskeligst?",
+        "Hva hjelper deg mest til å lære norsk?",
+        "Tror du man kan leve godt i Norge uten å snakke norsk?"
+      ],
+      "tips": "Speak from your own experience — you are learning Norwegian, so you have a lot to say! Use 'på den ene siden / på den andre siden', 'jeg tror', 'etter min erfaring'.",
+      "modelAnswer": "Etter min erfaring er norskkunnskaper helt avgjørende for å integrere seg. Språket åpner dørene til arbeidslivet, skolen og det sosiale livet. Jeg synes norsk er relativt lett å lese, men vanskeligst er dialektene — nordmenn snakker veldig forskjellig. Det som hjelper meg mest er å se norske serier med undertekster og å bruke språket aktivt på jobb og med naboer. Jeg tror det er mulig å klare seg uten norsk i store byer med mye engelsk, men man går glipp av mye. Full deltakelse krever norsk.",
+      "modelNotes": "Highly personal and authentic. Distinguishes between reading/dialects — shows linguistic awareness. Offers nuance on whether English suffices. Strong, honest B1 answer."
+    }
+  ]
+}

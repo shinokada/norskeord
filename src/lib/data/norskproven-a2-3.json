@@ -1,0 +1,278 @@
+{
+  "reading": [
+    {
+      "id": "rp-a2-3-001",
+      "level": "A2",
+      "title": "Første skoledag",
+      "text": "Maria starter på en ny skole i dag. Hun møter læreren sin, Frøken Hansen, i klasserommet. Frøken Hansen hjelper Maria å finne plassen sin og presenterer henne for de andre elevene. Etter timen inviterer en klassekamerat Maria med på kantinen for å spise lunsj.",
+      "questions": [
+        {
+          "id": "rq-a2-3-001-1",
+          "prompt": "Hvem hjelper Maria å finne plassen sin?",
+          "options": [
+            { "id": "a", "text": "En klassekamerat." },
+            { "id": "b", "text": "Rektor." },
+            { "id": "c", "text": "Frøken Hansen." },
+            { "id": "d", "text": "Moren hennes." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-3-001-2",
+          "prompt": "Hva gjør Maria og klassekameraten etter timen?",
+          "options": [
+            { "id": "a", "text": "De går hjem." },
+            { "id": "b", "text": "De spiser lunsj på kantinen." },
+            { "id": "c", "text": "De leser bøker." },
+            { "id": "d", "text": "De spiller fotball." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-3-002",
+      "level": "A2",
+      "title": "På postkontoret",
+      "text": "Reza skal sende en pakke til familien sin i Iran. Han går til postkontoret og venter i kø. Betjenten spør hva som er i pakken, og Reza svarer at det er klær og bøker. Betjenten veier pakken og sier at det koster 350 kroner å sende den. Reza betaler med kort.",
+      "questions": [
+        {
+          "id": "rq-a2-3-002-1",
+          "prompt": "Hva er i pakken Reza sender?",
+          "options": [
+            { "id": "a", "text": "Mat og drikke." },
+            { "id": "b", "text": "Leker og godteri." },
+            { "id": "c", "text": "Klær og bøker." },
+            { "id": "d", "text": "Elektronikk og smykker." }
+          ],
+          "correctId": "c"
+        },
+        {
+          "id": "rq-a2-3-002-2",
+          "prompt": "Hva koster det å sende pakken?",
+          "options": [
+            { "id": "a", "text": "150 kroner." },
+            { "id": "b", "text": "250 kroner." },
+            { "id": "c", "text": "350 kroner." },
+            { "id": "d", "text": "450 kroner." }
+          ],
+          "correctId": "c"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-3-003",
+      "level": "A2",
+      "title": "Svømmekurs",
+      "text": "Nora melder seg på et svømmekurs for voksne. Kurset starter i januar og varer i åtte uker. Det er trening hver tirsdag kveld fra klokka 18.00 til 19.30. Nora trenger badebukse, badehette og et håndkle. Hun gleder seg til å lære å svømme bedre.",
+      "questions": [
+        {
+          "id": "rq-a2-3-003-1",
+          "prompt": "Når er svømmekurset?",
+          "options": [
+            { "id": "a", "text": "Mandag morgen." },
+            { "id": "b", "text": "Tirsdag kveld." },
+            { "id": "c", "text": "Onsdag ettermiddag." },
+            { "id": "d", "text": "Fredag kveld." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-a2-3-003-2",
+          "prompt": "Hva trenger Nora til kurset?",
+          "options": [
+            { "id": "a", "text": "Treningssko og vannflaske." },
+            { "id": "b", "text": "Badebukse, badehette og håndkle." },
+            { "id": "c", "text": "Yogamatte og hansker." },
+            { "id": "d", "text": "Sykkelhjels og hansker." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-3-004",
+      "level": "A2",
+      "title": "Campingtur",
+      "text": "Familien Andersen drar på campingtur i juli. De tar med telt, soveposer og mat. De finner en fin plass ved en innsjø. Barna fisker og bader, mens foreldrene lager mat over bål. Om kvelden ser de på stjernene. Det er ingen strøm eller internett, og alle er fornøyde.",
+      "questions": [
+        {
+          "id": "rq-a2-3-004-1",
+          "prompt": "Hva gjør barna på campingturen?",
+          "options": [
+            { "id": "a", "text": "De sykler i skogen." },
+            { "id": "b", "text": "De fisker og bader." },
+            { "id": "c", "text": "De lager mat over bål." },
+            { "id": "d", "text": "De spiller fotball." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-a2-3-004-2",
+          "prompt": "Hva er det ikke på campingplassen?",
+          "options": [
+            { "id": "a", "text": "En innsjø." },
+            { "id": "b", "text": "Strøm og internett." },
+            { "id": "c", "text": "Et bål." },
+            { "id": "d", "text": "Et telt." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    },
+    {
+      "id": "rp-a2-3-005",
+      "level": "A2",
+      "title": "Hos frisøren",
+      "text": "Per skal klippe seg i dag. Han ringer frisørsalongen og bestiller time til klokka 11.00 på fredag. Frisøren spør hva slags klipp han ønsker. Per sier at han vil ha det litt kortere på sidene og litt lengre på toppen. Timen tar ca. 30 minutter og koster 450 kroner.",
+      "questions": [
+        {
+          "id": "rq-a2-3-005-1",
+          "prompt": "Når er Pers time hos frisøren?",
+          "options": [
+            { "id": "a", "text": "Torsdag klokka 10.00." },
+            { "id": "b", "text": "Fredag klokka 11.00." },
+            { "id": "c", "text": "Lørdag klokka 11.00." },
+            { "id": "d", "text": "Fredag klokka 13.00." }
+          ],
+          "correctId": "b"
+        },
+        {
+          "id": "rq-a2-3-005-2",
+          "prompt": "Hva vil Per ha?",
+          "options": [
+            { "id": "a", "text": "Veldig kort klipp over hele hodet." },
+            { "id": "b", "text": "Litt kortere på sidene og litt lengre på toppen." },
+            { "id": "c", "text": "Langt hår på sidene." },
+            { "id": "d", "text": "Nytt hårfarge." }
+          ],
+          "correctId": "b"
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "wp-a2-3-001",
+      "level": "A2",
+      "situation": "Du har fått hjelp av en nabo med noe viktig.",
+      "task": "Skriv en takkebeskjed til naboen din. Fortell hva du takker for og si noe hyggelig. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei Ingrid!\n\nJeg vil gjerne takke deg for at du passet på katten min i forrige uke. Det var veldig snilt av deg! Katten hadde det bra, og jeg var ikke bekymret i det hele tatt. Jeg setter stor pris på hjelpen din.\n\nHilsen Anna",
+      "modelNotes": "Brief and warm. States clearly what the favour was and gives a genuine personal reaction. Suitable length and vocabulary for A2."
+    },
+    {
+      "id": "wp-a2-3-002",
+      "level": "A2",
+      "situation": "Barnet ditt begynner på en ny barnehage neste uke.",
+      "task": "Skriv en e-post til barnehagen. Fortell litt om barnet ditt og spør om noe du lurer på. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei,\n\nSønnen min, Luca, begynner hos dere på mandag. Han er tre år og liker å tegne og leke med biler. Han spiser ikke fisk. Kan dere si hva barna trenger å ha med seg den første dagen?\n\nMed vennlig hilsen,\nAnna Hansen",
+      "modelNotes": "Introduces the child with relevant details (age, interests, dietary note). Asks one practical question. Appropriate formal greeting for an institution."
+    },
+    {
+      "id": "wp-a2-3-003",
+      "level": "A2",
+      "situation": "Naboen din spiller høy musikk sent på kvelden, og du sover dårlig.",
+      "task": "Skriv en lapp til naboen din. Beskriv problemet og be om hjelp. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei!\n\nJeg heter Anna og bor i leilighet 3C. Jeg har lyst til å snakke med deg om noe. Om natten er musikken din veldig høy, og det er vanskelig for meg å sove. Kan du skru ned litt etter klokka 22? Takk!\n\nHilsen Anna",
+      "modelNotes": "Polite and direct. Identifies the writer, states the problem clearly, gives a specific request with a time. Neighbourly tone rather than aggressive."
+    },
+    {
+      "id": "wp-a2-3-004",
+      "level": "A2",
+      "situation": "Du trenger en fridag fra jobben neste fredag.",
+      "task": "Skriv en melding til sjefen din. Forklar hvorfor du trenger fri og si om du kan ta igjen arbeidet. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei,\n\nJeg lurer på om jeg kan få fri neste fredag. Datteren min har en skoleavslutning, og jeg vil gjerne være der. Jeg kan jobbe ekstra tirsdag eller onsdag for å ta igjen arbeidet. Gi meg beskjed hva som passer.\n\nMed vennlig hilsen,\nAnna",
+      "modelNotes": "States the reason honestly, offers to make up the work — showing responsibility. Ends with an open question. Natural tone for a message to a direct manager."
+    },
+    {
+      "id": "wp-a2-3-005",
+      "level": "A2",
+      "situation": "Du har glemt en legettime og må avlyse.",
+      "task": "Skriv en melding til legekontoret. Forklar situasjonen og be om en ny time. Skriv 40–60 ord.",
+      "wordCountMin": 40,
+      "wordCountMax": 60,
+      "modelAnswer": "Hei,\n\nJeg hadde en time hos Dr. Berg i dag klokka 10.00, men jeg glemte det dessverre. Jeg beklager veldig. Kan jeg få en ny time så snart som mulig? Jeg er ledig hverdager mellom 9 og 14.\n\nMed vennlig hilsen,\nAnna Hansen\nFødselsdato: 15.03.1990",
+      "modelNotes": "Apologises briefly without over-explaining. Provides availability information to help the receptionist book. Including birth date is a realistic Norwegian medical admin detail."
+    }
+  ],
+  "oral": [
+    {
+      "id": "op-a2-3-001",
+      "level": "A2",
+      "scenario": "Fortell om en vanlig dag i livet ditt — fra du våkner til du legger deg.",
+      "questions": [
+        "Hva gjør du når du våkner om morgenen?",
+        "Hva spiser du til frokost?",
+        "Hva gjør du på kvelden?",
+        "Har du noen faste rutiner du liker?"
+      ],
+      "tips": "Use time expressions: 'om morgenen', 'klokka...', 'etterpå', 'til slutt'. Keep sentences simple and add small details to make your answer interesting.",
+      "modelAnswer": "Jeg våkner vanligvis klokka 07.00. Jeg dusjer og spiser frokost — oftest brød med ost og en kopp kaffe. Etterpå tar jeg bussen til jobb. Jeg jobber fra 08.30 til 16.00. Om kvelden lager jeg middag og ser litt på TV. Jeg legger meg rundt 23.00. Jeg liker å gå en kort tur etter middag — det hjelper meg å slappe av.",
+      "modelNotes": "Good use of time markers and a logical sequence. Adding a personal habit at the end shows communicative initiative appropriate for A2."
+    },
+    {
+      "id": "op-a2-3-002",
+      "level": "A2",
+      "scenario": "Snakk om hva du liker å spise og drikke.",
+      "questions": [
+        "Hva er favorittmaten din?",
+        "Lager du mat selv eller kjøper du ferdigmat?",
+        "Hva er typisk norsk mat du har prøvd?",
+        "Hva spiser du ikke?"
+      ],
+      "tips": "Vocabulary to prepare: rett, ingredienser, smake, krydder, søt, salt, sterk. You can talk about food from your home country too.",
+      "modelAnswer": "Favorittmaten min er pasta med tomataus og kjøttboller. Jeg lager mat selv nesten hver dag fordi det er billigere og sunnere. Jeg har prøvd noen norske retter — jeg liker laks og pølse, men jeg liker ikke brunost. Det er for søtt for meg! Hjemme lager vi mye krydret mat, noe jeg savner litt her.",
+      "modelNotes": "Covers all expected elements: favourite food, cooking habits, Norwegian food experience, and a dislike. Honest personal contrast with home country adds natural depth."
+    },
+    {
+      "id": "op-a2-3-003",
+      "level": "A2",
+      "scenario": "Fortell om naturen i Norge og hva du synes om den.",
+      "questions": [
+        "Hva synes du om naturen i Norge?",
+        "Har du vært på tur i norsk natur?",
+        "Hva er forskjellen på naturen her og i hjemlandet ditt?",
+        "Liker du å være ute i naturen?"
+      ],
+      "tips": "Useful words: fjord, fjell, skog, innsjø, tur, friluftsliv, natur, vakker. It is fine to say you find something difficult — this is honest and natural.",
+      "modelAnswer": "Naturen i Norge er veldig vakker. Jeg synes fjordene og fjellene er imponerende. Jeg har vært på noen korte turer i skogen nær der jeg bor. I hjemlandet mitt er det mye varmere og tørrere — ikke så mange grønne skoger. Jeg liker å gå tur, men jeg er ikke så vant til kald og regnfull natur ennå.",
+      "modelNotes": "Covers opinion, personal experience, comparison, and preference. Honest admission of being unaccustomed to the climate is natural and relatable at A2."
+    },
+    {
+      "id": "op-a2-3-004",
+      "level": "A2",
+      "scenario": "Snakk om kollektivtransport — buss, trikk, T-bane — og om du bruker det.",
+      "questions": [
+        "Bruker du kollektivtransport i hverdagen?",
+        "Hva synes du om kollektivtransporten i din by?",
+        "Hva er forskjellen fra hjemlandet ditt?",
+        "Foretrekker du buss, tog eller sykkel?"
+      ],
+      "tips": "Vocabulary: holdeplass, rutetabell, forsinkelse, månedskort, billettautomat. Even if you rarely use public transport, you can explain why.",
+      "modelAnswer": "Ja, jeg bruker T-banen og bussen hver dag. Jeg synes kollektivtransporten i Oslo er veldig bra — bussene kommer oftest i tide og det er lett å kjøpe billett med mobilen. I hjemlandet mitt er det ikke så mange bussruter, og det er vanlig å bruke bil. Jeg foretrekker T-banen her fordi den er rask og jeg slipper å finne parkering.",
+      "modelNotes": "Practical and concrete. Good comparison structure. Preference is stated with a clear reason — appropriate communicative range for A2."
+    },
+    {
+      "id": "op-a2-3-005",
+      "level": "A2",
+      "scenario": "Fortell om en høytid eller fest du liker å feire.",
+      "questions": [
+        "Hvilken høytid liker du best?",
+        "Hva gjør du vanligvis på den dagen?",
+        "Hvem feirer du med?",
+        "Er det noe spesielt du spiser eller gjør den dagen?"
+      ],
+      "tips": "You can talk about any celebration — Norwegian or from your home country. Use past tense for memories and present tense for habits.",
+      "modelAnswer": "Jeg liker best å feire id. Det er en muslimsk høytid etter ramadan. Vi våkner tidlig, ber og kler oss i fine klær. Hele familien samles hjemme — vi lager masse mat, spesielt søte kaker og kjøttretter. Barna får gaver og penger. Jeg savner å feire med familien i hjemlandet, men vi feirer det her i Norge også med venner.",
+      "modelNotes": "Gives specific cultural details, uses both present and emotional reflection. Mentioning how the celebration adapts to life in Norway is excellent for A2 communicative competence."
+    }
+  ]
+}

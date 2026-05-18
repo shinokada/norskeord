@@ -36,6 +36,17 @@ en rull: a roll
 en penge­seddel: a banknote
 et kinn: a chin
 en tømrer: a builder
+å glo: to stare
+frekk: rude, cheeky
+annerledes: different
+
+
+
+
+
+
+
+
 
 ## Home
 
@@ -133,3 +144,8 @@ kjekk: nice, handsome
 klam: clammy
 øm: sore
 å mumle: to mumble
+klengete: clingy
+stram: tight
+å gjemme: to hide
+å rape: to burp
+en katastrofe: a disaster
