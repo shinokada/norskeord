@@ -80,10 +80,10 @@ test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ 
   // card counter is visible (format: "1/N")
   await expect(page.getByRole('button', { name: /^\d+\/\d+$/ })).toBeVisible();
 
-  // flip the card and confirm FSRS rating buttons appear
+  // flip the card and confirm FSRS rating buttons appear (en: Again/Good, nb: Igjen/Bra)
   await page.getByRole('button', { name: /flashcard showing question/i }).click();
-  await expect(page.getByRole('button', { name: /again/i })).toBeVisible();
-  await expect(page.getByRole('button', { name: /good/i })).toBeVisible();
+  await expect(page.getByRole('button', { name: /again|igjen/i })).toBeVisible();
+  await expect(page.getByRole('button', { name: /good|bra/i })).toBeVisible();
 });
 
 // free user is redirected away from a Plus-only C1 category (linguistics is Plus-only)

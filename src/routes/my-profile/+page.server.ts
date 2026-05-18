@@ -1,5 +1,11 @@
 import { redirect, fail } from '@sveltejs/kit';
-import { SUPABASE_SERVICE_ROLE_KEY, LEMONSQUEEZY_API_KEY } from '$env/static/private';
+import {
+  SUPABASE_SERVICE_ROLE_KEY,
+  LEMONSQUEEZY_API_KEY,
+  RESEND_API_KEY,
+  EMAIL_FROM,
+  ADMIN_USER_ID
+} from '$env/static/private';
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { createClient } from '@supabase/supabase-js';
 import { getProfile, upsertProfile, deleteAccount } from '$lib/server/profile';
@@ -263,5 +269,70 @@ export const actions: Actions = {
     }
 
     return { success: true, action: 'toggleEmail', emailLesson: next };
+  },
+
+  supportContact: async ({ request, locals }) => {
+    if (!locals.user) redirect(302, '/auth/login');
+    if (locals.plan !== 'plus')
+      return fail(403, { field: 'supportContact', message: 'Plus required.' });
+
+    const data = await request.formData();
+    const subject = ((data.get('subject') as string) ?? '').trim();
+    const message = ((data.get('message') as string) ?? '').trim();
+
+    if (!subject) return fail(422, { field: 'supportContact', message: 'Please enter a subject.' });
+    if (message.length < 10)
+      return fail(422, {
+        field: 'supportContact',
+        message: 'Please enter a message (at least 10 characters).'
+      });
+    if (message.length > 2000)
+      return fail(422, {
+        field: 'supportContact',
+        message: 'Message is too long (max 2000 characters).'
+      });
+
+    const profile = await getProfile(locals.supabase, locals.user.id);
+    const fromName = profile?.display_name ?? 'A Plus member';
+    const fromEmail = locals.user.email ?? 'unknown';
+
+    // Look up ADMIN_USER_ID's email to send to
+    const supabaseAdmin = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+    const { data: adminData } = await supabaseAdmin.auth.admin.getUserById(ADMIN_USER_ID);
+    const adminEmail = adminData?.user?.email;
+
+    if (!adminEmail) {
+      console.error('[supportContact] Could not resolve admin email');
+      return fail(500, {
+        field: 'supportContact',
+        message: 'Could not send message. Please try again.'
+      });
+    }
+
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: EMAIL_FROM,
+        to: adminEmail,
+        reply_to: fromEmail,
+        subject: `[Plus Support] ${subject}`,
+        text: `From: ${fromName} <${fromEmail}>\nUser ID: ${locals.user.id}\n\n${message}`
+      })
+    });
+
+    if (!res.ok) {
+      const body = await res.text();
+      console.error('[supportContact] Resend error:', res.status, body);
+      return fail(500, {
+        field: 'supportContact',
+        message: 'Failed to send message. Please try again.'
+      });
+    }
+
+    return { success: true, action: 'supportContact' };
   }
 };
