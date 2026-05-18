@@ -15,8 +15,8 @@ async function answerAndAdvance(page: Page) {
     await input.press('Enter');
   }
 
-  // After answering, the Next / See results button should appear
-  const next = page.getByRole('button', { name: /next|see results/i });
+  // After answering, the Next / See results button should appear (en: Next / See results, nb: Neste / Se resultater)
+  const next = page.getByRole('button', { name: /next|see results|neste|se resultater/i });
   if (await next.isVisible({ timeout: 3000 }).catch(() => false)) {
     await next.click();
   }
@@ -29,7 +29,7 @@ async function completeSession(page: Page, maxQuestions = 20) {
   let answered = 0;
   while (
     !(await page
-      .getByText(/session complete/i)
+      .getByText(/session complete|økt fullført/i)
       .isVisible({ timeout: 500 })
       .catch(() => false))
   ) {
@@ -64,9 +64,9 @@ test('Plus user can complete a quiz session and see summary', async ({ page }) =
 
   await completeSession(page);
 
-  await expect(page.getByText(/session complete/i)).toBeVisible();
-  await expect(page.getByText(/of \d+ correct/i)).toBeVisible();
-  await expect(page.getByRole('button', { name: /try again/i })).toBeVisible();
+  await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible();
+  await expect(page.getByText(/of \d+ correct|av \d+ riktige/i)).toBeVisible();
+  await expect(page.getByRole('button', { name: /try again|prøv igjen/i })).toBeVisible();
 });
 
 // ===========================================================================
@@ -99,8 +99,8 @@ test('keyboard shortcut A selects first MC option', async ({ page }) => {
   const optionA = page.getByRole('button', { name: /^A\b/ });
   if (await optionA.isVisible({ timeout: 3000 }).catch(() => false)) {
     await page.keyboard.press('a');
-    // After selecting via keyboard, the Next button should appear
-    await expect(page.getByRole('button', { name: /next/i })).toBeVisible();
+    // After selecting via keyboard, the Next button should appear (en: Next, nb: Neste)
+    await expect(page.getByRole('button', { name: /next|neste/i })).toBeVisible();
   }
 });
 
@@ -119,12 +119,12 @@ test('Space advances from reveal to next question', async ({ page }) => {
     await input.press('Enter');
   }
 
-  // Now in reveal state — press Space to advance
-  await expect(page.getByRole('button', { name: /next/i })).toBeVisible();
+  // Now in reveal state — press Space to advance (en: Next, nb: Neste)
+  await expect(page.getByRole('button', { name: /next|neste/i })).toBeVisible();
   await page.keyboard.press('Space');
 
-  // Should now be on question 2 (Next button gone, new question showing)
-  await expect(page.getByText(/question 2 of/i)).toBeVisible();
+  // Should now be on question 2 (en: 'Question 2 of', nb: 'Spørsmål 2 av')
+  await expect(page.getByText(/question 2 of|spørsmål 2 av/i)).toBeVisible();
 });
 
 // ===========================================================================
@@ -138,12 +138,12 @@ test('Try again from summary resets the session', async ({ page }) => {
 
   await completeSession(page);
 
-  await expect(page.getByText(/session complete/i)).toBeVisible();
-  await page.getByRole('button', { name: /try again/i }).click();
+  await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible();
+  await page.getByRole('button', { name: /try again|prøv igjen/i }).click();
 
-  // Should be back in the questioning state (first question visible, not idle/summary)
-  await expect(page.getByText(/question 1 of/i)).toBeVisible();
-  await expect(page.getByText(/session complete/i)).not.toBeVisible();
+  // Should be back in the questioning state (en: 'Question 1 of', nb: 'Spørsmål 1 av')
+  await expect(page.getByText(/question 1 of|spørsmål 1 av/i)).toBeVisible();
+  await expect(page.getByText(/session complete|økt fullført/i)).not.toBeVisible();
 });
 
 // ===========================================================================
@@ -160,13 +160,13 @@ test('quiz respects vocab-quiz-limit from localStorage', async ({ page }) => {
 
   await page.getByRole('button', { name: /start quiz/i }).click();
 
-  // The question counter should show "of 5"
-  await expect(page.getByText(/of 5/i)).toBeVisible();
+  // The question counter should show "of 5" (en) or "av 5" (nb)
+  await expect(page.getByText(/of 5|av 5/i)).toBeVisible();
 
   await completeSession(page, 5);
-  await expect(page.getByText(/session complete/i)).toBeVisible();
-  // Score should be out of 5
-  await expect(page.getByText(/of 5 correct/i)).toBeVisible();
+  await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible();
+  // Score should be out of 5 (en: 'of 5 correct', nb: 'av 5 riktige')
+  await expect(page.getByText(/of 5 correct|av 5 riktige/i)).toBeVisible();
 });
 
 test('quiz uses 10 questions by default (no localStorage key)', async ({ page }) => {
@@ -178,7 +178,8 @@ test('quiz uses 10 questions by default (no localStorage key)', async ({ page })
   await page.reload();
 
   await page.getByRole('button', { name: /start quiz/i }).click();
-  await expect(page.getByText(/of 10/i)).toBeVisible();
+  // en: 'Question 1 of 10', nb: 'Spørsmål 1 av 10'
+  await expect(page.getByText(/of 10|av 10/i)).toBeVisible();
 });
 
 // ===========================================================================

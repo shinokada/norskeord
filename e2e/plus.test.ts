@@ -35,7 +35,7 @@ test.describe('/plus page', () => {
       'Study only what you need today',
       'Full B1 to C2 access',
       'Cross-device sync',
-      'Norskprøven B1 full preparation'
+      'Per-category progress breakdown'
     ]) {
       await expect(page.getByRole('heading', { name: title, level: 3 })).toBeVisible();
     }

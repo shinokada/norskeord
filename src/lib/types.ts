@@ -308,3 +308,67 @@ export interface Props extends BaseProps {
   desc?: DescType;
   ariaLabel?: string;
 }
+
+// ── Norskprøven Practice ─────────────────────────────────────────────────────
+
+/** Level for Norskprøven practice: A2 or B1 */
+export type NorskprovenLevel = 'A2' | 'B1';
+
+/** Test type */
+export type NorskprovenTestType = 'reading' | 'writing' | 'oral';
+
+// ── Reading ──────────────────────────────────────────────────────────────────
+
+export interface ReadingOption {
+  id: string; // 'a' | 'b' | 'c' | 'd'
+  text: string;
+}
+
+export interface ReadingQuestion {
+  id: string; // e.g. 'rq-001'
+  prompt: string; // question text
+  options: ReadingOption[];
+  correctId: string; // matches one option.id
+}
+
+export interface ReadingPassage {
+  id: string; // e.g. 'rp-a2-001'
+  level: NorskprovenLevel;
+  title: string; // passage title shown above the text
+  text: string; // the Norwegian passage (1–5 short paragraphs)
+  imageUrl?: string; // optional path to static/ asset
+  questions: ReadingQuestion[];
+}
+
+// ── Writing ──────────────────────────────────────────────────────────────────
+
+export interface WritingPrompt {
+  id: string; // e.g. 'wp-a2-001'
+  level: NorskprovenLevel;
+  situation: string; // context sentence
+  task: string; // the instruction
+  wordCountMin: number;
+  wordCountMax: number;
+  modelAnswer: string; // full example answer
+  modelNotes?: string; // optional explanation of what makes this answer good
+}
+
+// ── Oral ─────────────────────────────────────────────────────────────────────
+
+export interface OralPrompt {
+  id: string; // e.g. 'op-a2-001'
+  level: NorskprovenLevel;
+  scenario: string; // brief role-play setup or discussion topic
+  questions: string[]; // 2–4 discussion questions the examiner may ask
+  tips?: string; // preparation tip for the candidate
+  modelAnswer?: string; // example of a good response, revealed after practice
+  modelNotes?: string; // optional explanation of what makes this answer good
+}
+
+// ── Aggregated ───────────────────────────────────────────────────────────────
+
+export interface NorskprovenData {
+  reading: ReadingPassage[];
+  writing: WritingPrompt[];
+  oral: OralPrompt[];
+}

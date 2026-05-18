@@ -230,5 +230,46 @@
         <a href="/plus" class="underline">See the full comparison →</a>
       </p>
     </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        How do I change my flashcard preferences?
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Go to <a href="/my-profile" class="underline">Profile</a> → Preferences. From there you can set
+        your target level, interface language, default card direction (Norwegian → English or reversed),
+        card type (word or phrase), pronunciation speed and tone, and the number of cards per session.
+        Plus members also have a questions-per-quiz setting.
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        How do I download my progress report?
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Go to <a href="/my-profile" class="underline">Profile</a> → Account and click
+        <strong>Download Progress report</strong>. This exports all your card history as a file you
+        can save or share.
+        <span
+          class="ml-1 inline-block rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
+          >✶ Plus</span
+        > feature.
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-gray-800 dark:text-gray-100">
+        I have a question — how can I get in touch?
+      </p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        Plus members have a <strong>Contact support</strong> button at the bottom of the
+        <a href="/my-profile" class="underline">Profile</a> page for direct priority support.
+        <span
+          class="ml-1 inline-block rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
+          >✶ Plus</span
+        >
+      </p>
+    </div>
   </div>
 </div>
