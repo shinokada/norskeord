@@ -15,16 +15,20 @@ export const load: PageLoad = async ({ params, parent }) => {
   if (level !== 'A2' && level !== 'B1') redirect(302, '/norskproven/practice');
 
   const test = params.test;
-  if (test !== '1' && test !== '2') redirect(302, '/norskproven/practice');
+  if (test !== '1' && test !== '2' && test !== '3') redirect(302, '/norskproven/practice');
 
   const raw =
     level === 'A2'
       ? test === '1'
         ? await import('$lib/data/norskproven-a2-1.json')
-        : await import('$lib/data/norskproven-a2-2.json')
+        : test === '2'
+          ? await import('$lib/data/norskproven-a2-2.json')
+          : await import('$lib/data/norskproven-a2-3.json')
       : test === '1'
         ? await import('$lib/data/norskproven-b1-1.json')
-        : await import('$lib/data/norskproven-b1-2.json');
+        : test === '2'
+          ? await import('$lib/data/norskproven-b1-2.json')
+          : await import('$lib/data/norskproven-b1-3.json');
 
   const data = raw.default as unknown as NorskprovenData;
 

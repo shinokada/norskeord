@@ -50,8 +50,8 @@
   ] as const;
 
   // ── Test counts — increment this when adding a new test set ───────────────
-  // To add Test 3: set testCount to 3 and add norskproven-{level}-3.json files.
-  const testCount = 2;
+  // To add Test 4: set testCount to 4 and add norskproven-{level}-4.json files.
+  const testCount = 3;
   const tests = Array.from({ length: testCount }, (_, i) => i + 1);
 
   // ── Client-side Plus gate ──────────────────────────────────────────────────
