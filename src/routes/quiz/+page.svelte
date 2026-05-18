@@ -268,6 +268,16 @@
 
 <svelte:window onkeydown={handleKeyDown} />
 
+<svelte:head>
+  <title>
+    {selectedLevel && selectedCategory
+      ? `Quiz · ${formatLevel(selectedLevel)} · ${formatCategory(selectedCategory)} — Norskeord`
+      : selectedLevel
+        ? `Quiz · ${formatLevel(selectedLevel)} — Norskeord`
+        : 'Quiz — Norskeord'}
+  </title>
+</svelte:head>
+
 <!-- "Mark as easy" confirmation toast (fixed, bottom-centre) -->
 {#if showToast}
   <div class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2" role="status" aria-live="polite">
@@ -292,6 +302,17 @@
 {/if}
 
 <div class="mx-auto max-w-2xl px-4 py-8">
+  {#if quizState !== 'idle'}
+    <div class="mb-4">
+      <button
+        type="button"
+        onclick={goToIdle}
+        class="inline-flex items-center gap-1 text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+      >
+        ← {m.quiz_title()}
+      </button>
+    </div>
+  {/if}
   {#if quizState === 'idle'}
     <div class="text-center">
       <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.quiz_title()}</h1>
