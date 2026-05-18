@@ -130,3 +130,6 @@ en bukett: a bouquet
 oppi: up, on
 kjekk: nice, handsome
 å bjeffe: to bark
+klam: clammy
+øm: sore
+å mumle: to mumble
