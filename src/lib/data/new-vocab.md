@@ -39,14 +39,7 @@ en tømrer: a builder
 å glo: to stare
 frekk: rude, cheeky
 annerledes: different
-
-
-
-
-
-
-
-
+en lapskaus: stew
 
 ## Home
 

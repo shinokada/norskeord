@@ -82,7 +82,10 @@
           "prompt": "Hva kritiseres elbilsatsingen for?",
           "options": [
             { "id": "a", "text": "At elbiler er for farlige å kjøre." },
-            { "id": "b", "text": "At elbiler er dyre og ladeinfrastrukturen utenfor byene er mangelfull." },
+            {
+              "id": "b",
+              "text": "At elbiler er dyre og ladeinfrastrukturen utenfor byene er mangelfull."
+            },
             { "id": "c", "text": "At staten bruker for lite penger på elbiler." },
             { "id": "d", "text": "At elbiler er for tunge for norske veier." }
           ],
