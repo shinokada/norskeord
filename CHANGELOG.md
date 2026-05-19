@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.2.0
+
+### Minor Changes
+
+- feat: Session limit management now respects Plus membership and device syncing preferences.
+  - **New Features**
+    - Session limit management now respects Plus membership and device syncing preferences.
+    - Activity tracking enhanced for Plus subscribers with Supabase integration.
+    - UI now clearly differentiates Plus-exclusive features (daily reminders, cross-device sync).
+  - **Bug Fixes**
+    - Fixed PWA update refresh behavior to properly reload after service worker updates.
+  - **Documentation**
+    - Added "Rating Flow" guide explaining card state transitions and rating mechanics.
+    - Expanded vocabulary documentation.
+
 ## 2.1.0
 
 ### Minor Changes
