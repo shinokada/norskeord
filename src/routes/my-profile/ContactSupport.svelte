@@ -1,6 +1,8 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
 
+  declare const __VERSION__: string;
+
   let open = $state(false);
   let sending = $state(false);
   let sent = $state(false);
@@ -61,6 +63,7 @@
         };
       }}
     >
+      <input type="hidden" name="app_version" value={__VERSION__} />
       <div>
         <label
           for="support-subject"

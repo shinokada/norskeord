@@ -640,6 +640,19 @@
 
   <!-- FSRS Rating buttons (visible after flip — free for all users) -->
   {#if !completed && current && showCardBack}
+    {@const lastRating = progressMap[current.entry.norsk]?.lastRating}
+    {#if lastRating}
+      {@const labelMap = { again: 'Again', hard: 'Hard', good: 'Good', easy: 'Easy' }}
+      {@const colorMap = {
+        again: 'bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400',
+        hard: 'bg-orange-100 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400',
+        good: 'bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400',
+        easy: 'bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400'
+      }}
+      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">
+        Last: <span class="inline-block rounded-full px-2 py-0.5 text-xs font-medium {colorMap[lastRating]}">{labelMap[lastRating]}</span>
+      </p>
+    {/if}
     <div class="mt-4 flex flex-wrap justify-center gap-2">
       <!-- Again -->
       <button
