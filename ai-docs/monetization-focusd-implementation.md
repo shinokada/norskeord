@@ -6,8 +6,8 @@ This document translates the strategy in `monetization-focusd-plan.md` into conc
 
 ## Status Overview
 
-| Phase | Description                                          | Status         |
-| ----- | ---------------------------------------------------- | -------------- |
+| Phase | Description                                          | Status        |
+| ----- | ---------------------------------------------------- | ------------- |
 | 0     | Quick wins (FSRS, /stats, /norskproven, /plus, i18n) | ✅ Complete    |
 | 1     | Supabase auth + progress sync                        | ✅ Complete    |
 | 2-A–D | Full FSRS UX (session structure, intervals, undo)    | ✅ Complete    |
@@ -283,7 +283,7 @@ Beyond `/norskproven`, additional SSR pages targeting organic search:
 
 These are `+page.server.ts` pages that pull from the existing CEFR JSON data — no new data work needed.
 
-### 4-F: Avatar upload
+### 4-F: Avatar upload (Not doing this)
 
 For plus members, they can upload avatar image.
 The avatar display should be 200 x 200 px or 150 x 150 px?
@@ -353,27 +353,27 @@ No separate notification email is sent.
 
 | Step  | Task                                                        | Status | Effort  |
 | ----- | ----------------------------------------------------------- | ------ | ------- |
-| 0-A   | FSRS rating buttons                                         | ✅     | —       |
-| 0-B   | `/stats` with CEFR estimate                                 | ✅     | —       |
-| 0-C   | `/norskproven` route                                        | ✅     | —       |
-| 0-D   | `/plus` pricing + waitlist                                  | ✅     | —       |
-| 0-E   | i18n via Paraglide (en + nb)                                | ✅     | —       |
-| 1-A/B | Supabase auth + server hooks                                | ✅     | —       |
-| 1-C   | localStorage → Supabase sync                                | ✅     | —       |
-| 2-A   | ts-fsrs full wiring                                         | ✅     | —       |
-| 2-B   | Due session: new cap + requeue                              | ✅     | —       |
-| 2-C   | Rating preview (interval display)                           | ✅     | —       |
-| 2-D   | Undo last rating                                            | ✅     | —       |
-| 2-E   | FSRS weight optimisation (Edge Function)                    | ✅     | —       |
-| 3-A   | Feature gating (read plan from Supabase, gate FSRS + stats) | ⬜     | 3h      |
-| 3-B   | Lemon Squeezy payments                                      | ⬜     | 1 day   |
-| 4-A   | Profile page                                                | ⬜     | 1 day   |
-| 4-B   | Quiz mode                                                   | ⬜     | 2 days  |
-| 4-C   | Daily streaks + push                                        | ⬜     | 1 day   |
-| 4-D   | SEO content pages                                           | ⬜     | 2–3h    |
-| 5-A   | Email service (Resend + pg_cron)                            | ⬜     | 2 days  |
-| 5-B   | Daily lesson content generation                             | ⬜     | ongoing |
-| 5-C   | `/daily/[level]/[date]` exercise page                       | ⬜     | 1 day   |
+| 0-A   | FSRS rating buttons                                         | ✅      | —       |
+| 0-B   | `/stats` with CEFR estimate                                 | ✅      | —       |
+| 0-C   | `/norskproven` route                                        | ✅      | —       |
+| 0-D   | `/plus` pricing + waitlist                                  | ✅      | —       |
+| 0-E   | i18n via Paraglide (en + nb)                                | ✅      | —       |
+| 1-A/B | Supabase auth + server hooks                                | ✅      | —       |
+| 1-C   | localStorage → Supabase sync                                | ✅      | —       |
+| 2-A   | ts-fsrs full wiring                                         | ✅      | —       |
+| 2-B   | Due session: new cap + requeue                              | ✅      | —       |
+| 2-C   | Rating preview (interval display)                           | ✅      | —       |
+| 2-D   | Undo last rating                                            | ✅      | —       |
+| 2-E   | FSRS weight optimisation (Edge Function)                    | ✅      | —       |
+| 3-A   | Feature gating (read plan from Supabase, gate FSRS + stats) | ⬜      | 3h      |
+| 3-B   | Lemon Squeezy payments                                      | ⬜      | 1 day   |
+| 4-A   | Profile page                                                | ⬜      | 1 day   |
+| 4-B   | Quiz mode                                                   | ⬜      | 2 days  |
+| 4-C   | Daily streaks + push                                        | ⬜      | 1 day   |
+| 4-D   | SEO content pages                                           | ⬜      | 2–3h    |
+| 5-A   | Email service (Resend + pg_cron)                            | ⬜      | 2 days  |
+| 5-B   | Daily lesson content generation                             | ⬜      | ongoing |
+| 5-C   | `/daily/[level]/[date]` exercise page                       | ⬜      | 1 day   |
 
 ---
 
