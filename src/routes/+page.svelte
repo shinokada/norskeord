@@ -159,10 +159,10 @@
   };
 
   const features = [
-    { icon: '🧠', label: 'Smart scheduling', href: '/guide' },
-    { icon: '🔊', label: 'Audio on every card', href: null },
-    { icon: '📚', label: 'A1–C2 vocabulary', href: null },
-    { icon: '🎯', label: 'Norskprøven prep', href: '/norskproven' }
+    { icon: '🧠', label: () => m.home_features_smart(), href: '/guide' },
+    { icon: '🔊', label: () => m.home_features_audio(), href: null },
+    { icon: '📚', label: () => m.home_features_vocab(), href: null },
+    { icon: '🎯', label: () => m.home_features_norskproven(), href: '/norskproven' }
   ];
 
   // QR code share widget
@@ -173,6 +173,22 @@
   function visibleCategoryCount(levelId: string): number {
     const cats = CATEGORIES_BY_LEVEL[levelId as keyof typeof CATEGORIES_BY_LEVEL];
     return cats.filter((cat) => !(isPlus && cat === 'uttrykk-preview')).length;
+  }
+
+  // For free users: how many locked categories to collapse into a "+N with Plus" badge.
+  // Only collapse when there are 3 or more locked cats (keeps A1/A2 as-is).
+  const COLLAPSE_THRESHOLD = 3;
+
+  function lockedCategoryCount(levelId: string): number {
+    if (isPlus) return 0;
+    const cats = CATEGORIES_BY_LEVEL[levelId as keyof typeof CATEGORIES_BY_LEVEL];
+    return cats.filter(
+      (cat) => cat !== 'uttrykk-preview' && isPlusCategory(levelId, cat)
+    ).length;
+  }
+
+  function shouldCollapse(levelId: string): boolean {
+    return !isPlus && lockedCategoryCount(levelId) >= COLLAPSE_THRESHOLD;
   }
 </script>
 
@@ -192,16 +208,15 @@
     <div
       class="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-indigo-200 uppercase backdrop-blur-sm"
     >
-      Norwegian vocabulary and phrase
+      {m.home_hero_badge()}
     </div>
 
     <h1 class="mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
-      Learn Norwegian vocabulary & phrase that <span class="text-indigo-300">actually sticks</span>
+      {m.home_hero_heading()} <span class="text-indigo-300">{m.home_hero_heading_highlight()}</span>
     </h1>
 
     <p class="mb-6 text-lg leading-relaxed text-indigo-100/80">
-      Flashcards built for Norskprøven candidates, new immigrants, and serious learners. Smart
-      scheduling shows you the right word at the right time — so nothing slips through the cracks.
+      {m.home_hero_body()}
     </p>
 
     <div class="flex flex-wrap justify-center gap-3">
@@ -210,19 +225,19 @@
           href="/auth/login"
           class="rounded-xl bg-indigo-500 px-6 py-3 text-sm font-semibold text-white shadow transition hover:bg-indigo-400"
         >
-          Free forever — get started →
+          {m.home_hero_cta_free()}
         </a>
         <a
           href="/plus"
           class="rounded-xl border border-indigo-200/25 px-6 py-3 text-sm font-medium text-indigo-200/80 transition hover:border-indigo-200/50 hover:text-white"
         >
-          See Plus features →
+          {m.home_hero_cta_plus()}
         </a>
       {/if}
     </div>
 
     {#if !user}
-      <p class="mt-3 text-xs text-indigo-300/50">No credit card required</p>
+      <p class="mt-3 text-xs text-indigo-300/50">{m.home_hero_no_cc()}</p>
     {/if}
 
     <!-- Share / QR toggle -->
@@ -232,7 +247,7 @@
         onclick={() => (showQr = !showQr)}
         class="inline-flex items-center gap-1.5 rounded-full border border-indigo-300/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-indigo-200 backdrop-blur-sm transition hover:bg-white/20"
       >
-        📱 {showQr ? 'Hide QR code' : 'Share this app'}
+        {showQr ? m.home_hero_hide_qr() : m.home_hero_share()}
       </button>
     </div>
 
@@ -243,14 +258,14 @@
             src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data={encodeURIComponent(
               APP_URL
             )}"
-            alt="QR code for norskeord.no"
+            alt={m.home_hero_qr_alt()}
             width="160"
             height="160"
             class="block"
           />
         </div>
         <p class="text-xs text-indigo-200/70">
-          Scan to open <strong class="text-indigo-200">norskeord.no</strong> on any device
+          {m.home_hero_qr_body({ site: 'norskeord.no' })}
         </p>
       </div>
     {/if}
@@ -264,13 +279,13 @@
   <div
     class="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5"
   >
-    {#each features as f (f.label)}
+    {#each features as f (f.icon)}
       <span class="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300">
         <span class="text-lg">{f.icon}</span>
         {#if f.href}
-          <a href={f.href} class="hover:underline">{f.label}</a>
+          <a href={f.href} class="hover:underline">{f.label()}</a>
         {:else}
-          {f.label}
+          {f.label()}
         {/if}
       </span>
     {/each}
@@ -304,16 +319,28 @@
         {#each categories as cat (cat)}
           {#if !(isPlus && cat === 'uttrykk-preview')}
             {@const locked = !isPlus && isPlusCategory(level.id, cat)}
-            <a
-              href={locked ? '/plus?ref=category-lock' : `/${level.id.toLowerCase()}/${cat}`}
-              class="{badge} rounded-full px-3 py-0.5 text-sm font-medium transition-opacity hover:opacity-75
-                     {locked ? 'cursor-default opacity-60' : ''}"
-              title={locked ? m.plus_category_locked() : undefined}
-            >
-              {locked ? '🔒 ' : ''}{getCategoryName(level.id, cat)}
-            </a>
+            {#if locked && shouldCollapse(level.id)}
+              <!-- skip: will be shown as a single +N badge below -->
+            {:else}
+              <a
+                href={locked ? '/plus?ref=category-lock' : `/${level.id.toLowerCase()}/${cat}`}
+                class="{badge} rounded-full px-3 py-0.5 text-sm font-medium transition-opacity hover:opacity-75
+                       {locked ? 'cursor-default opacity-60' : ''}"
+                title={locked ? m.plus_category_locked() : undefined}
+              >
+                {locked ? '🔒 ' : ''}{getCategoryName(level.id, cat)}
+              </a>
+            {/if}
           {/if}
         {/each}
+        {#if shouldCollapse(level.id)}
+          <a
+            href="/plus?ref=category-lock"
+            class="rounded-full border border-indigo-300 bg-indigo-50 px-3 py-0.5 text-sm font-medium text-indigo-600 transition-opacity hover:opacity-75 dark:border-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
+          >
+            +{lockedCategoryCount(level.id)} with Plus →
+          </a>
+        {/if}
       </div>
     </div>
   {/each}
