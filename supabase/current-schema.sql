@@ -93,6 +93,5 @@ CREATE TABLE public.user_settings (
   CONSTRAINT user_settings_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
 
-
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
 -- Manually maintained. See ./current-functions.sql for Functions
