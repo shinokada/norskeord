@@ -190,13 +190,14 @@
 
     const userId = page.data.user?.id as string | undefined;
 
-    if (userId) {
-      // Any logged-in user (free or Plus): load activity from Supabase study_days
-      // so the chart is consistent across devices.
+    if (userId && isPlus) {
+      // Plus users: activity is synced to Supabase study_days across devices.
       const studyDays = await loadStudyDays(userId);
       activityCells = buildActivityGrid(studyDays, 26);
     } else {
-      // Anonymous guest: derive activity from localStorage lastSeen values
+      // Free logged-in users and anonymous guests: derive from localStorage
+      // lastSeen values. (recordStudyDay is only called for Plus users in
+      // saveProgress, so study_days is always empty for free accounts.)
       const localStudyDays: Record<string, number> = {};
       for (const p of Object.values(progressMap)) {
         if (p.lastSeen) {
@@ -299,7 +300,7 @@
       class="mb-6 rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
     >
       <p class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Activity</p>
-      <ActivityChart cells={activityCells} {streak} loading={activityLoading} />
+      <ActivityChart cells={activityCells} {streak} loading={activityLoading} {isPlus} />
     </div>
 
     <!-- ── Summary cards ──────────────────────────────────────────────────────── -->

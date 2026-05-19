@@ -114,7 +114,7 @@
     >What the progress labels mean</Heading
   >
 
-  <div class="mb-10 space-y-3">
+  <div class="mb-6 space-y-3">
     <div class="flex items-start gap-3">
       <span
         class="mt-0.5 inline-block rounded-full bg-gray-200 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:bg-gray-700 dark:text-gray-300"
@@ -151,6 +151,65 @@
         You rated this word <em>Again</em> after it was memorized. It is back in practice and will come
         back more frequently until it sticks again.
       </p>
+    </div>
+  </div>
+
+  <!-- Rating flow -->
+  <Heading tag="h3" class="mb-3 text-lg font-semibold dark:text-white"
+    >How cards move between states</Heading
+  >
+
+  <p class="mb-4 text-gray-700 dark:text-gray-300">
+    The key thing to know: only tapping <strong>Again</strong> on a
+    <span
+      class="inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
+      >Memorized</span
+    > card makes it
+    <span
+      class="inline-block rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
+      >Forgotten</span
+    >. Tapping <strong>Again</strong> on a
+    <span
+      class="inline-block rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-semibold text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300"
+      >Learning</span
+    > card just keeps it in Learning — it does not turn orange.
+  </p>
+
+  <div class="mb-10 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+    <div class="flex items-baseline gap-2">
+      <span
+        class="shrink-0 rounded-full bg-gray-200 px-2 py-0.5 text-xs font-semibold text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+        >New</span
+      >
+      <span>→ any rating → <span class="font-medium">Learning</span></span>
+    </div>
+    <div class="flex items-baseline gap-2">
+      <span
+        class="shrink-0 rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-semibold text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300"
+        >Learning</span
+      >
+      <span
+        >→ Good / Easy → <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard →
+        stays Learning</span
+      >
+    </div>
+    <div class="flex items-baseline gap-2">
+      <span
+        class="shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
+        >Memorized</span
+      >
+      <span
+        >→ Hard / Good / Easy → stays Memorized &nbsp;·&nbsp; Again → <span class="font-medium"
+          >Forgotten</span
+        ></span
+      >
+    </div>
+    <div class="flex items-baseline gap-2">
+      <span
+        class="shrink-0 rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
+        >Forgotten</span
+      >
+      <span>→ Good / Easy → back to <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard → stays Forgotten</span>
     </div>
   </div>
 

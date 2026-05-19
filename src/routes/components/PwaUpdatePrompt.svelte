@@ -20,7 +20,11 @@
   }
 
   async function update() {
-    await updateServiceWorker(true);
+    // skipWaiting without auto-reload, then hard-reload ourselves.
+    // Passing false avoids a race where updateServiceWorker(true) fires
+    // the reload before the new SW has fully activated.
+    await updateServiceWorker(false);
+    window.location.reload();
   }
 </script>
 
