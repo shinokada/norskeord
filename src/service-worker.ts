@@ -17,6 +17,16 @@
 /// <reference lib="webworker" />
 declare const self: ServiceWorkerGlobalScope;
 
+// ── Skip waiting (PWA update prompt) ─────────────────────────────────────────
+// vite-plugin-pwa sends a SKIP_WAITING message when the user clicks "Reload".
+// Without this handler the new SW sits in "waiting" forever and the page
+// never reloads.
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
 // ── Push event ────────────────────────────────────────────────────────────────
 
 self.addEventListener('push', (event) => {

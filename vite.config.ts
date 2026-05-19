@@ -67,7 +67,7 @@ export default defineConfig(({ mode }) => {
             }
           ]
         },
-        devOptions: { enabled: true, type: 'module' }
+        devOptions: { enabled: false }
       }),
       paraglideVitePlugin({ project: './project.inlang', outdir: './src/lib/paraglide' })
     ],
