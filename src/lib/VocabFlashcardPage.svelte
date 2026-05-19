@@ -7,7 +7,7 @@
   import SpeakButton from '$lib/SpeakButton.svelte';
   import { Button, Tooltip } from 'flowbite-svelte';
   import type { VocabEntry } from '$lib/types';
-  import { saveProgress, loadProgressMap, countDueToday, previewIntervals } from '$lib/progress';
+  import { saveProgress, loadProgressMap, countDueToday, previewIntervals, lsPrefix } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
   import { State } from 'ts-fsrs';
   import * as m from '$lib/paraglide/messages.js';
@@ -114,7 +114,7 @@
 
   onMount(() => {
     isTouch = window.matchMedia('(pointer: coarse)').matches;
-    progressMap = loadProgressMap();
+    progressMap = loadProgressMap(page.data.user?.id ?? null);
     dueCount = countDueToday(progressMap);
 
     // Keep localSessionLimit in sync if the user updates it in another tab
@@ -328,10 +328,11 @@
     clearUndo();
 
     // Restore progressMap (in memory and localStorage)
+    const prefix = lsPrefix(page.data.user?.id ?? null);
     if (previousProgress === null) {
-      localStorage.removeItem(`progress-${entry.norsk}`);
+      localStorage.removeItem(prefix + entry.norsk);
     } else {
-      localStorage.setItem(`progress-${entry.norsk}`, JSON.stringify(previousProgress));
+      localStorage.setItem(prefix + entry.norsk, JSON.stringify(previousProgress));
     }
     progressMap = previousMap;
     dueCount = countDueToday(previousMap);

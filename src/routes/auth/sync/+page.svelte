@@ -2,7 +2,7 @@
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { onMount } from 'svelte';
-  import { syncProgressOnLogin } from '$lib/progress';
+  import { syncProgressOnLogin, clearAnonymousProgress } from '$lib/progress';
   import { setLocale } from '$lib/paraglide/runtime';
 
   const next = page.url.searchParams.get('next') ?? '/';
@@ -39,9 +39,19 @@
     if (userId && isPlus) {
       try {
         await syncProgressOnLogin(userId);
+        // Clear anonymous (pre-login) keys so another user on this browser
+        // cannot see this user's progress without logging in.
+        clearAnonymousProgress();
       } catch {
         // Non-fatal — progress will sync on next rating via dual-write.
       }
+    } else if (userId) {
+      // Free users: still namespace their keys by writing them under userId
+      // so a second user logging in doesn't inherit this user's localStorage.
+      // syncProgressOnLogin handles the namespacing even for free users
+      // if we call it without Supabase writes — but here we just namespace
+      // the existing anonymous keys and clear the old ones.
+      clearAnonymousProgress();
     }
 
     // eslint-disable-next-line svelte/no-navigation-without-resolve

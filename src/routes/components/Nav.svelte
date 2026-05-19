@@ -22,11 +22,16 @@
   import { onMount } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
+  import { clearUserProgress } from '$lib/progress';
 
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
 
   async function logout() {
+    // Clear this user's namespaced localStorage data before navigating away,
+    // so the next person who opens the browser starts with a clean slate.
+    const userId = user?.id;
+    if (userId) clearUserProgress(userId);
     await fetch('/auth/logout', { method: 'POST' });
     window.location.href = '/';
   }
