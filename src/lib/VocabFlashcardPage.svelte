@@ -44,7 +44,7 @@
   const LS_CARD_TYPE = 'vocab-flashcard-card-type';
   const LS_SHOW_EXAMPLE = 'vocab-flashcard-show-example';
   const LS_DECK_MODE = 'vocab-flashcard-deck-mode';
-  const NEW_CARD_SESSION_LIMIT = 15;
+  const NEW_CARD_SESSION_LIMIT = 20;
 
   function getInitialMode(): Mode {
     if (!browser) return 'noreng';
@@ -197,7 +197,7 @@
       }
     }
 
-    const newCap = Math.min(NEW_CARD_SESSION_LIMIT, limit ?? NEW_CARD_SESSION_LIMIT);
+    const newCap = limit ?? NEW_CARD_SESSION_LIMIT;
     const shuffledOverdue = shuffle(overdue);
     const newCapped = shuffle(newCards).slice(0, newCap);
     const combined = [...shuffledOverdue, ...newCapped];
