@@ -38,14 +38,16 @@ export const load = async ({ url, locals }) => {
   // Single-row select — minimal overhead on every request.
   let displayName: string | null = null;
   let targetLevel: string | null = null;
+  let sessionLimit: number | null = null;
   if (locals.user) {
     const { data } = await locals.supabase
       .from('profiles')
-      .select('display_name, target_level')
+      .select('display_name, target_level, session_limit')
       .eq('id', locals.user.id)
       .maybeSingle();
     displayName = data?.display_name ?? null;
     targetLevel = data?.target_level ?? null;
+    sessionLimit = data?.session_limit ?? null;
   }
 
   return {
@@ -55,6 +57,7 @@ export const load = async ({ url, locals }) => {
     user: locals.user,
     plan: locals.plan,
     displayName,
-    targetLevel
+    targetLevel,
+    sessionLimit
   };
 };
