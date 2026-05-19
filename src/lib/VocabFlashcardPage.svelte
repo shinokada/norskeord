@@ -84,6 +84,18 @@
   let undoSnapshot = $state<UndoSnapshot | null>(null);
   let undoCountdown = $state(0);
 
+  // session limit — DB value (cross-device) takes priority; localStorage is the fallback for
+  // unauthenticated users or when no profile value is set.
+  // Uses $derived so it stays in sync if the prop changes (e.g. navigation).
+  let sessionLimit = $derived<number | null>(
+    profileSessionLimit !== null && profileSessionLimit !== undefined
+      ? profileSessionLimit
+      : localSessionLimit
+  );
+
+  // localStorage fallback — read synchronously at init (browser only), kept reactive for storage events
+  let localSessionLimit = $state<number | null>(browser ? getSessionLimit(localStorage) : 20);
+
   // touch
   let isTouch = $state(false);
   let touchStartX = 0;
@@ -95,11 +107,24 @@
   // 3-A: plan from layout server data
   let plan = $derived(page.data.plan as 'free' | 'plus');
   let isPlus = $derived(plan === 'plus');
+  // session limit from layout server data (cross-device); falls back to localStorage for guests
+  let profileSessionLimit = $derived<number | null>(
+    (page.data.sessionLimit as number | null | undefined) ?? null
+  );
 
   onMount(() => {
     isTouch = window.matchMedia('(pointer: coarse)').matches;
     progressMap = loadProgressMap();
     dueCount = countDueToday(progressMap);
+
+    // Keep localSessionLimit in sync if the user updates it in another tab
+    // (only matters for unauthenticated users — logged-in users use the DB value)
+    function onStorageChange(e: StorageEvent) {
+      if (e.key === 'vocab-flashcard-session-limit' && profileSessionLimit === null) {
+        localSessionLimit = getSessionLimit(localStorage);
+      }
+    }
+    window.addEventListener('storage', onStorageChange);
 
     // 3-A: Plus users are always in due mode
     if (isPlus) {
@@ -109,6 +134,8 @@
       deckMode = 'all';
       localStorage.setItem(LS_DECK_MODE, 'all');
     }
+
+    return () => window.removeEventListener('storage', onStorageChange);
   });
 
   // ── Deck building ────────────────────────────────────────────────────────────
@@ -148,7 +175,8 @@
     es: VocabEntry[],
     mo: Mode,
     ct: CardType,
-    pm: Record<string, CardProgress>
+    pm: Record<string, CardProgress>,
+    limit: number | null
   ): DeckItem[] {
     const now = new Date();
     const overdue: VocabEntry[] = [];
@@ -163,15 +191,19 @@
       }
     }
 
-    const newCapped = shuffle(newCards).slice(0, NEW_CARD_SESSION_LIMIT);
-    return [...shuffle(overdue), ...newCapped].map((e) => makeDeckItem(e, mo, ct));
+    const newCap = Math.min(NEW_CARD_SESSION_LIMIT, limit ?? NEW_CARD_SESSION_LIMIT);
+    const shuffledOverdue = shuffle(overdue);
+    const newCapped = shuffle(newCards).slice(0, newCap);
+    const combined = [...shuffledOverdue, ...newCapped];
+    // Apply overall session limit after combining overdue + new
+    const limited = limit != null ? combined.slice(0, limit) : combined;
+    return limited.map((e) => makeDeckItem(e, mo, ct));
   }
 
-  function buildDeck(es: VocabEntry[], mo: Mode, ct: CardType, dm: DeckMode) {
-    const limit = browser ? getSessionLimit(localStorage) : 20;
+  function buildDeck(es: VocabEntry[], mo: Mode, ct: CardType, dm: DeckMode, limit: number | null) {
     const items =
       dm === 'due'
-        ? buildDueDeck(es, mo, ct, progressMap)
+        ? buildDueDeck(es, mo, ct, progressMap, limit)
         : shuffle(es)
             .slice(0, limit ?? es.length)
             .map((e) => makeDeckItem(e, mo, ct));
@@ -190,7 +222,7 @@
   }
 
   function restart() {
-    buildDeck(entries, mode, cardType, deckMode);
+    buildDeck(entries, mode, cardType, deckMode, sessionLimit);
   }
 
   function setMode(mo: Mode) {
@@ -317,6 +349,7 @@
     const mo = mode;
     const ct = cardType;
     const dm = deckMode;
+    const lim = sessionLimit;
     untrack(() => {
       if (e.length === 0) {
         deck = [];
@@ -326,7 +359,7 @@
         clearUndo();
         return;
       }
-      buildDeck(e, mo, ct, dm);
+      buildDeck(e, mo, ct, dm, lim);
     });
   });
 
