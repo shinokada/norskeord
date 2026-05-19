@@ -11,9 +11,10 @@
     cells: ActivityCell[]; // from buildActivityGrid()
     streak: number; // current consecutive-day streak
     loading?: boolean;
+    isPlus?: boolean;
   }
 
-  let { cells, streak, loading = false }: Props = $props();
+  let { cells, streak, loading = false, isPlus = true }: Props = $props();
 
   const ROW_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
@@ -142,14 +143,22 @@
 </script>
 
 <div class="space-y-2">
-  <!-- Streak badge -->
-  <div class="flex items-center gap-2">
+  <!-- Streak badge + Plus teaser -->
+  <div class="flex flex-wrap items-center gap-2">
     {#if streak > 0}
       <span class="text-base font-semibold text-gray-700 dark:text-gray-300">
         🔥 {streak} day{streak === 1 ? '' : 's'}
       </span>
     {:else}
       <span class="text-sm text-gray-400 dark:text-gray-500">No current streak</span>
+    {/if}
+    {#if !isPlus}
+      <a
+        href="/plus"
+        class="rounded-full border border-indigo-200 px-2 py-0.5 text-xs text-indigo-500 hover:bg-indigo-50 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-indigo-900/20"
+      >
+        🔔 Daily reminders — Plus
+      </a>
     {/if}
   </div>
 
@@ -221,7 +230,7 @@
       {/if}
     </div>
 
-    <!-- Legend -->
+    <!-- Legend + device-only label for free users -->
     <div class="flex items-center gap-1.5 text-sm text-gray-400 dark:text-gray-500">
       <span>Less</span>
       {#each LEVEL_CLASSES as cls (cls)}
@@ -229,5 +238,17 @@
       {/each}
       <span>More</span>
     </div>
+
+    {#if !isPlus}
+      <p class="text-xs text-gray-400 dark:text-gray-500">
+        Tracked on this device only ·
+        <a
+          href="/plus"
+          class="underline underline-offset-2 hover:text-indigo-500 dark:hover:text-indigo-400"
+        >
+          Sync across devices →
+        </a>
+      </p>
+    {/if}
   {/if}
 </div>
