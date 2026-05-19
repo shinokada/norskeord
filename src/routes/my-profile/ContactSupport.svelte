@@ -1,7 +1,9 @@
+<script module lang="ts">
+  declare const __VERSION__: string;
+</script>
+
 <script lang="ts">
   import { enhance } from '$app/forms';
-
-  declare const __VERSION__: string;
 
   let open = $state(false);
   let sending = $state(false);
