@@ -24,7 +24,10 @@
     return `/auth/login?next=${next}`;
   });
 
-  const tableRows = $derived([
+  type TableCell = { value: string; yes: boolean; soon?: boolean };
+  type TableRow = { feature: string; free: TableCell; pro: TableCell };
+
+  const tableRows = $derived<TableRow[]>([
     {
       feature: m.plus_row_vocab(),
       free: { value: m.plus_row_vocab_free(), yes: true },
