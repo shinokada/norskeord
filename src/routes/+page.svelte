@@ -182,9 +182,7 @@
   function lockedCategoryCount(levelId: string): number {
     if (isPlus) return 0;
     const cats = CATEGORIES_BY_LEVEL[levelId as keyof typeof CATEGORIES_BY_LEVEL];
-    return cats.filter(
-      (cat) => cat !== 'uttrykk-preview' && isPlusCategory(levelId, cat)
-    ).length;
+    return cats.filter((cat) => cat !== 'uttrykk-preview' && isPlusCategory(levelId, cat)).length;
   }
 
   function shouldCollapse(levelId: string): boolean {
