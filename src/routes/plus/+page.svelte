@@ -81,11 +81,6 @@
       pro: { value: m.plus_row_quiz_plus(), yes: true }
     },
     {
-      feature: m.plus_row_email_lessons(),
-      free: { value: m.plus_row_email_lessons_free(), yes: false },
-      pro: { value: m.plus_row_email_lessons_plus(), yes: false, soon: true }
-    },
-    {
       feature: m.plus_row_support(),
       free: { value: m.plus_row_support_free(), yes: false },
       pro: { value: m.plus_row_support_plus(), yes: true }
