@@ -57,10 +57,6 @@ unntatt: except
 rågod: awesome
 sånn: like that, such
 
-
-
-
-
 ## Home
 
 ### på kjøkkenet
