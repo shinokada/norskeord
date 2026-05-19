@@ -7,7 +7,13 @@
   import SpeakButton from '$lib/SpeakButton.svelte';
   import { Button, Tooltip } from 'flowbite-svelte';
   import type { VocabEntry } from '$lib/types';
-  import { saveProgress, loadProgressMap, countDueToday, previewIntervals, lsPrefix } from '$lib/progress';
+  import {
+    saveProgress,
+    loadProgressMap,
+    countDueToday,
+    previewIntervals,
+    lsPrefix
+  } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
   import { State } from 'ts-fsrs';
   import * as m from '$lib/paraglide/messages.js';
@@ -84,15 +90,6 @@
   let undoSnapshot = $state<UndoSnapshot | null>(null);
   let undoCountdown = $state(0);
 
-  // session limit — DB value (cross-device) takes priority; localStorage is the fallback for
-  // unauthenticated users or when no profile value is set.
-  // Uses $derived so it stays in sync if the prop changes (e.g. navigation).
-  let sessionLimit = $derived<number | null>(
-    profileSessionLimit !== null && profileSessionLimit !== undefined
-      ? profileSessionLimit
-      : localSessionLimit
-  );
-
   // localStorage fallback — read synchronously at init (browser only), kept reactive for storage events
   let localSessionLimit = $state<number | null>(browser ? getSessionLimit(localStorage) : 20);
 
@@ -110,6 +107,15 @@
   // session limit from layout server data (cross-device); falls back to localStorage for guests
   let profileSessionLimit = $derived<number | null>(
     (page.data.sessionLimit as number | null | undefined) ?? null
+  );
+
+  // session limit — DB value (cross-device) takes priority; localStorage is the fallback for
+  // unauthenticated users or when no profile value is set.
+  // Uses $derived so it stays in sync if the prop changes (e.g. navigation).
+  let sessionLimit = $derived<number | null>(
+    profileSessionLimit !== null && profileSessionLimit !== undefined
+      ? profileSessionLimit
+      : localSessionLimit
   );
 
   onMount(() => {
@@ -651,7 +657,10 @@
         easy: 'bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400'
       }}
       <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">
-        Last: <span class="inline-block rounded-full px-2 py-0.5 text-xs font-medium {colorMap[lastRating]}">{labelMap[lastRating]}</span>
+        Last: <span
+          class="inline-block rounded-full px-2 py-0.5 text-xs font-medium {colorMap[lastRating]}"
+          >{labelMap[lastRating]}</span
+        >
       </p>
     {/if}
     <div class="mt-4 flex flex-wrap justify-center gap-2">

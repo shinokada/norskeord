@@ -5,43 +5,7 @@ I have added the path, /Users/shinichiokada/Svelte/svelte-languages/norskeord to
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ---
-### How rating works
-Adding simplified following content to explain about the flow:
-- New → you've never seen it
-- Learning → you've seen it but haven't consolidated it yet (still in the initial learning steps)
-- Memorized → FSRS moved it to Review state (you passed the learning steps)
-- Forgotten → you rated "Again" on a card that was in Review — it drops back to Relearning
 
-In practice, you won't see orange "Forgotten" bars until you've been using the app long enough that some previously-memorized cards come up for review and you press "Again" on them. Since your data only goes back to May 11, most cards are still in Learning/Review, so Forgotten is likely empty or very small right now. It will appear naturally over time as you review older cards.
-
-From New (never seen):
-
-- Any rating (Again/Hard/Good/Easy) → moves to Learning
-
-From Learning (still consolidating):
-
-- Again / Hard → stays in Learning, resets steps
-- Good / Easy → graduates to Review (= "Memorized") once all learning steps are passed
-
-From Review (memorized):
-
-- Again → drops to Relearning (= "Forgotten") 🟠
-- Hard / Good / Easy → stays in Review, interval gets longer or shorter depending on rating
-
-From Relearning (forgotten):
-
-- Again / Hard → stays in Relearning
-- Good / Easy → graduates back to Review (memorized again)
-
-So in short:
-| Legend label | FSRS State | How you get there                      |
-| ------------ | ---------- | -------------------------------------- |
-| New          | New        | Never rated                            |
-| Learning     | Learning   | Rated at least once, not yet graduated |
-| Memorized    | Review     | Passed learning steps                  |
-| Forgotten    | Relearning | Hit "Again" on a memorized card        |
-
-The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 ---
 
 ai-docs/implementation/email-service-implementation.md
@@ -108,6 +72,48 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
   You can go to ...
 - I have a question, how can I get in touch with you?
   You can find a form ...
+
+### FAQ
+
+### How rating works
+
+Adding simplified following content to explain about the flow:
+
+- New → you've never seen it
+- Learning → you've seen it but haven't consolidated it yet (still in the initial learning steps)
+- Memorized → FSRS moved it to Review state (you passed the learning steps)
+- Forgotten → you rated "Again" on a card that was in Review — it drops back to Relearning
+
+In practice, you won't see orange "Forgotten" bars until you've been using the app long enough that some previously-memorized cards come up for review and you press "Again" on them. Since your data only goes back to May 11, most cards are still in Learning/Review, so Forgotten is likely empty or very small right now. It will appear naturally over time as you review older cards.
+
+From New (never seen):
+
+- Any rating (Again/Hard/Good/Easy) → moves to Learning
+
+From Learning (still consolidating):
+
+- Again / Hard → stays in Learning, resets steps
+- Good / Easy → graduates to Review (= "Memorized") once all learning steps are passed
+
+From Review (memorized):
+
+- Again → drops to Relearning (= "Forgotten") 🟠
+- Hard / Good / Easy → stays in Review, interval gets longer or shorter depending on rating
+
+From Relearning (forgotten):
+
+- Again / Hard → stays in Relearning
+- Good / Easy → graduates back to Review (memorized again)
+
+So in short:
+| Legend label | FSRS State | How you get there |
+| ------------ | ---------- | -------------------------------------- |
+| New | New | Never rated |
+| Learning | Learning | Rated at least once, not yet graduated |
+| Memorized | Review | Passed learning steps |
+| Forgotten | Relearning | Hit "Again" on a memorized card |
+
+The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 
 ### /plus
 

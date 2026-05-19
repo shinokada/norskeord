@@ -58,7 +58,6 @@ rågod: awesome
 sånn: like that, such
 stedatter: a stepdaughter (use stedøtre for example)
 
-
 ## Home
 
 ### på kjøkkenet

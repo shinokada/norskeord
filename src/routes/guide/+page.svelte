@@ -164,7 +164,8 @@
     <span
       class="inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
       >Memorized</span
-    > card makes it
+    >
+    card makes it
     <span
       class="inline-block rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
       >Forgotten</span
@@ -189,8 +190,8 @@
         >Learning</span
       >
       <span
-        >→ Good / Easy → <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard →
-        stays Learning</span
+        >→ Good / Easy → <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard → stays
+        Learning</span
       >
     </div>
     <div class="flex items-baseline gap-2">
@@ -209,7 +210,10 @@
         class="shrink-0 rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
         >Forgotten</span
       >
-      <span>→ Good / Easy → back to <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard → stays Forgotten</span>
+      <span
+        >→ Good / Easy → back to <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard
+        → stays Forgotten</span
+      >
     </div>
   </div>
 
