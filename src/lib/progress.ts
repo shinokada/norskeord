@@ -34,6 +34,63 @@ export function invalidateFsrsCache(userId: string) {
 
 export const LS_PREFIX = 'progress-';
 
+/**
+ * Returns the localStorage key prefix for a given user.
+ * - Logged-in users:  'progress-{userId}-'
+ * - Anonymous users:  'progress-'
+ *
+ * Namespacing prevents one user's study data from bleeding into another
+ * account when the same browser is used by multiple people.
+ */
+export function lsPrefix(userId?: string | null): string {
+  return userId ? `${LS_PREFIX}${userId}-` : LS_PREFIX;
+}
+
+/**
+ * Removes all anonymous (non-user-namespaced) progress keys from localStorage.
+ * Called after a successful login sync so the anonymous data is no longer
+ * accessible without authentication.
+ */
+export function clearAnonymousProgress(): void {
+  const keysToRemove: string[] = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    // Anonymous keys start with 'progress-' but NOT 'progress-{uuid}-'
+    // A UUID always starts with a hex character, never a digit pattern used
+    // in norsk words, so we check: starts with LS_PREFIX but the next char
+    // after the prefix is NOT part of a UUID segment.
+    // Simpler: anonymous keys do NOT contain a second '-' after 'progress-'
+    // because UUIDs always produce 'progress-<uuid>-<norsk>'.
+    if (key?.startsWith(LS_PREFIX)) {
+      const rest = key.slice(LS_PREFIX.length);
+      // UUID-namespaced keys have the form '<uuid>-<norsk>', i.e. rest contains '-'
+      // Anonymous keys have the form '<norsk>' which never contains the UUID pattern.
+      // We detect anonymous keys by checking they do NOT look like 'xxxxxxxx-xxxx-...'
+      const looksLikeUuidNamespaced = /^[0-9a-f]{8}-/.test(rest);
+      if (!looksLikeUuidNamespaced) {
+        keysToRemove.push(key);
+      }
+    }
+  }
+  keysToRemove.forEach((k) => localStorage.removeItem(k));
+}
+
+/**
+ * Removes all progress keys belonging to a specific user from localStorage.
+ * Called on logout so the next person who opens the browser sees no progress.
+ */
+export function clearUserProgress(userId: string): void {
+  const prefix = lsPrefix(userId);
+  const keysToRemove: string[] = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key?.startsWith(prefix)) {
+      keysToRemove.push(key);
+    }
+  }
+  keysToRemove.forEach((k) => localStorage.removeItem(k));
+}
+
 const RATING_MAP: Record<FSRSRating, Grade> = {
   again: Rating.Again,
   hard: Rating.Hard,
@@ -43,11 +100,17 @@ const RATING_MAP: Record<FSRSRating, Grade> = {
 
 // ── Local storage ────────────────────────────────────────────────────────────
 
-export function loadProgressMap(): Record<string, CardProgress> {
+/**
+ * Loads the progress map from localStorage for the given user.
+ * Pass `userId` for logged-in users so only their namespaced keys are read.
+ * Pass nothing / null for anonymous (pre-login) use.
+ */
+export function loadProgressMap(userId?: string | null): Record<string, CardProgress> {
+  const prefix = lsPrefix(userId);
   const map: Record<string, CardProgress> = {};
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key?.startsWith(LS_PREFIX)) {
+    if (key?.startsWith(prefix)) {
       try {
         const raw = localStorage.getItem(key);
         if (raw) {
@@ -57,7 +120,7 @@ export function loadProgressMap(): Record<string, CardProgress> {
           if (parsed.fsrs.last_review) {
             parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
           }
-          map[key.slice(LS_PREFIX.length)] = parsed;
+          map[key.slice(prefix.length)] = parsed;
         }
       } catch {
         // Ignore malformed entries
@@ -145,9 +208,14 @@ function fromRow(row: ProgressRow): CardProgress {
  * Returns the merged progress map so the caller can update UI state.
  */
 export async function syncProgressOnLogin(userId: string): Promise<Record<string, CardProgress>> {
-  const local = loadProgressMap();
+  // Load any anonymous progress (pre-login) to merge it into the user's account.
+  const anonymousLocal = loadProgressMap(null);
+  // Also load any already-namespaced progress for this user (e.g. from a previous session).
+  const userLocal = loadProgressMap(userId);
+  // Merge: user-namespaced entries win over anonymous ones for the same word.
+  const local = { ...anonymousLocal, ...userLocal };
 
-  // 1. Push local → Supabase
+  // 1. Push local → Supabase (both anonymous and user-namespaced merged above)
   const localEntries = Object.entries(local);
   if (localEntries.length > 0) {
     const rows = localEntries.map(([norsk, progress]) => ({
@@ -171,14 +239,26 @@ export async function syncProgressOnLogin(userId: string): Promise<Record<string
 
   const merged = { ...local };
 
+  const userPrefix = lsPrefix(userId);
   if (remoteRows) {
     for (const row of remoteRows as ProgressRow[]) {
       if (!merged[row.norsk]) {
-        // Card exists remotely but not locally — write it to localStorage
+        // Card exists remotely but not locally — write it to user-namespaced localStorage
         const progress = fromRow(row);
-        localStorage.setItem(LS_PREFIX + row.norsk, JSON.stringify(progress));
+        localStorage.setItem(userPrefix + row.norsk, JSON.stringify(progress));
         merged[row.norsk] = progress;
+      } else {
+        // Ensure the merged local entry is written under the user-namespaced key
+        localStorage.setItem(userPrefix + row.norsk, JSON.stringify(merged[row.norsk]));
       }
+    }
+  }
+
+  // Also write any local-only entries (not yet in Supabase) under user-namespaced keys
+  for (const [norsk, progress] of Object.entries(merged)) {
+    const userKey = userPrefix + norsk;
+    if (!localStorage.getItem(userKey)) {
+      localStorage.setItem(userKey, JSON.stringify(progress));
     }
   }
 
@@ -286,7 +366,8 @@ export function saveProgress(
   };
 
   // Always write to localStorage first (works offline)
-  localStorage.setItem(LS_PREFIX + entry.norsk, JSON.stringify(updated));
+  const prefix = lsPrefix(userId);
+  localStorage.setItem(prefix + entry.norsk, JSON.stringify(updated));
 
   // Async side-effects — fire-and-forget, never block the return value.
   // Only run for Plus users (userId is null for free users).
