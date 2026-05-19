@@ -67,10 +67,13 @@
     // When collapsing, replace all non-preview locked items with a single sentinel badge item.
     const items = collapse
       ? [
-          ...allItems.filter(
-            (item) => !item.locked || item.href?.endsWith('/uttrykk-preview')
-          ),
-          { name: `+${lockedCount} with Plus →`, href: '/plus?ref=nav-mega', locked: false, isPlusBadge: true }
+          ...allItems.filter((item) => !item.locked || item.href?.endsWith('/uttrykk-preview')),
+          {
+            name: `+${lockedCount} with Plus →`,
+            href: '/plus?ref=nav-mega',
+            locked: false,
+            isPlusBadge: true
+          }
         ]
       : allItems;
     return { level, items, lockedCount, collapse };
@@ -182,7 +185,7 @@
     classes={{ active: activeClass, nonActive: nonActiveClass, ul: 'p-0' }}
   >
     <!-- Per-level mega-menus — all categories, no gating -->
-    {#each menus as { level, items, lockedCount, collapse } (level)}
+    {#each menus as { level, items } (level)}
       <NavLi id="mega-trigger-{level}" class="cursor-pointer">
         {level}
         <ChevronDownOutline size="sm" class="ms-1 inline" />
