@@ -5,6 +5,10 @@
 
   const { needRefresh, offlineReady, updateServiceWorker } = useRegisterSW({
     onRegistered(r: ServiceWorkerRegistration | undefined) {
+      // Poll for updates every hour instead of on every focus/visibility change
+      if (r) {
+        setInterval(() => r.update(), 60 * 60 * 1000);
+      }
       if (import.meta.env.DEV) {
         console.log('SW registered:', r);
       }
@@ -20,12 +24,8 @@
   }
 
   async function update() {
-    // Set needRefresh to false immediately so the prompt doesn't reappear
-    // during the reload triggered by the new SW taking control.
     needRefresh.set(false);
     await updateServiceWorker(true);
-    // Hard reload as a fallback in case the SW-triggered reload races.
-    window.location.reload();
   }
 </script>
 
