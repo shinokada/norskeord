@@ -12,13 +12,13 @@ importers:
         specifier: ^0.10.3
         version: 0.10.3(@supabase/supabase-js@2.106.0)
       '@supabase/supabase-js':
-        specifier: ^2.105.4
+        specifier: ^2.106.0
         version: 2.106.0
       resend:
         specifier: ^6.12.3
         version: 6.12.3
       ts-fsrs:
-        specifier: ^5.3.3
+        specifier: ^5.4.0
         version: 5.4.0
     devDependencies:
       '@anthropic-ai/sdk':
@@ -43,10 +43,10 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1(@sveltejs/kit@2.60.1(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.55.8(@typescript-eslint/types@8.59.4))(vite@8.0.13(esbuild@0.28.0)(jiti@2.7.0)(terser@5.47.1)(tsx@4.22.2)))(svelte@5.55.8(@typescript-eslint/types@8.59.4))(typescript@6.0.3)(vite@8.0.13(esbuild@0.28.0)(jiti@2.7.0)(terser@5.47.1)(tsx@4.22.2)))
       '@sveltejs/adapter-vercel':
-        specifier: ^5.6.4
+        specifier: ^5.10.3
         version: 5.10.3(@sveltejs/kit@2.60.1(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.55.8(@typescript-eslint/types@8.59.4))(vite@8.0.13(esbuild@0.28.0)(jiti@2.7.0)(terser@5.47.1)(tsx@4.22.2)))(svelte@5.55.8(@typescript-eslint/types@8.59.4))(typescript@6.0.3)(vite@8.0.13(esbuild@0.28.0)(jiti@2.7.0)(terser@5.47.1)(tsx@4.22.2)))(rollup@4.60.4)
       '@sveltejs/kit':
-        specifier: ^2.60.0
+        specifier: ^2.60.1
         version: 2.60.1(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.55.8(@typescript-eslint/types@8.59.4))(vite@8.0.13(esbuild@0.28.0)(jiti@2.7.0)(terser@5.47.1)(tsx@4.22.2)))(svelte@5.55.8(@typescript-eslint/types@8.59.4))(typescript@6.0.3)(vite@8.0.13(esbuild@0.28.0)(jiti@2.7.0)(terser@5.47.1)(tsx@4.22.2))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^7.1.2
@@ -67,7 +67,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       eslint:
-        specifier: ^10.3.0
+        specifier: ^10.4.0
         version: 10.4.0(jiti@2.7.0)
       eslint-config-prettier:
         specifier: ^10.1.8
@@ -112,7 +112,7 @@ importers:
         specifier: ^1.0.12
         version: 1.0.12(svelte@5.55.8(@typescript-eslint/types@8.59.4))
       svelte:
-        specifier: ^5.55.6
+        specifier: ^5.55.8
         version: 5.55.8(@typescript-eslint/types@8.59.4)
       svelte-check:
         specifier: ^4.4.8
@@ -127,13 +127,13 @@ importers:
         specifier: ^5.47.1
         version: 5.47.1
       tsx:
-        specifier: ^4.22.0
+        specifier: ^4.22.2
         version: 4.22.2
       typescript:
         specifier: ~6.0.3
         version: 6.0.3
       typescript-eslint:
-        specifier: ^8.59.3
+        specifier: ^8.59.4
         version: 8.59.4(eslint@10.4.0(jiti@2.7.0))(typescript@6.0.3)
       vite:
         specifier: ^8.0.13
@@ -2310,8 +2310,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.358:
-    resolution: {integrity: sha512-EO7tKm3QxRqTs1lSuPXzl6yRAwznehp0AH9OoMOIC+4mQzTFday8FJCO5KU6J/TFSQXEOahNq4vTKpz1jmCVOA==}
+  electron-to-chromium@1.5.359:
+    resolution: {integrity: sha512-8lPELWuYZIWk7NDvCNthtmMw/7Q5Wu25NpM4djFMHBmk8DubPAtL4YTOp7ou0e7HyJtwkVlWv8XMLURnrtgJQw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -6197,7 +6197,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.10.31
       caniuse-lite: 1.0.30001793
-      electron-to-chromium: 1.5.358
+      electron-to-chromium: 1.5.359
       node-releases: 2.0.44
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
@@ -6365,7 +6365,7 @@ snapshots:
     dependencies:
       jake: 10.9.4
 
-  electron-to-chromium@1.5.358: {}
+  electron-to-chromium@1.5.359: {}
 
   emoji-regex@8.0.0: {}
 
