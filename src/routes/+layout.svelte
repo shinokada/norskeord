@@ -9,7 +9,6 @@
   import { page } from '$app/state';
   import Nav from './components/Nav.svelte';
   import Footer from './components/Footer.svelte';
-  import PwaUpdatePrompt from './components/PwaUpdatePrompt.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
 
   let { children, data } = $props();
@@ -96,8 +95,6 @@
 
   <Footer />
 {/key}
-
-<PwaUpdatePrompt />
 
 <div style="display:none">
   {#each locales as locale (locale)}
