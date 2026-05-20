@@ -20,11 +20,12 @@
   }
 
   async function update() {
-    // updateServiceWorker(true) sends SKIP_WAITING to the new SW and
-    // then reloads once the new SW has fully activated and taken control.
-    // Passing false + manual reload creates a race where the page reloads
-    // before the SW activates, causing needRefresh to fire again on every reload.
+    // Set needRefresh to false immediately so the prompt doesn't reappear
+    // during the reload triggered by the new SW taking control.
+    needRefresh.set(false);
     await updateServiceWorker(true);
+    // Hard reload as a fallback in case the SW-triggered reload races.
+    window.location.reload();
   }
 </script>
 
