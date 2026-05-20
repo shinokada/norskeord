@@ -8,8 +8,6 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 
 ## SEO
 
-- SSR on [level]/[category] pages — this is the biggest remaining item. export const ssr = false in +page.ts means Google gets a blank HTML shell for every deck page. Fixing it requires moving the vocab loading into a +page.server.ts so the HTML is pre-rendered. The gating logic needs care — locals.plan is only available server-side, which actually makes this cleaner. This is a meaningful refactor (~50 lines) and worth doing as a dedicated task.
-- hreflang tags for en/nb — the layout already links to both locale variants in a hidden <div>, but proper <link rel="alternate" hreflang="..."> tags in <head> would be stronger for bilingual indexing.
 - og:image — the layout references metaImg() but it's not clear what image is actually being served. If it resolves to nothing or a placeholder, social shares and Google's image preview will be blank. Worth auditing.
 
 ---
@@ -55,7 +53,8 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
 5. **C1/C2 in distractor pool:** The current plan loads A1–B2 for the distractor pool. C1/C2 data is available but adds loading weight. Omit from the initial build; add later if B2+ quiz users request it.
 
 ## Solved
-
+- hreflang tags for en/nb — the layout already links to both locale variants in a hidden <div>, but proper <link rel="alternate" hreflang="..."> tags in <head> would be stronger for bilingual indexing.
+- SEO: SSR on [level]/[category] pages — this is the biggest remaining item. export const ssr = false in +page.ts means Google gets a blank HTML shell for every deck page. Fixing it requires moving the vocab loading into a +page.server.ts so the HTML is pre-rendered. The gating logic needs care — locals.plan is only available server-side, which actually makes this cleaner. This is a meaningful refactor (~50 lines) and worth doing as a dedicated task.
 - In flashcard page, there is All cards/Review due button and "xxx due" badge. This should be removed and the daily new words should be in the homepage with flash-card picking up level from Profile page. This is intetional.
 - Adding CTA button for Free forever to the home page
 - Add [Free forever to get started] button and link to login in the home page hero section.
@@ -112,12 +111,12 @@ From Relearning (forgotten):
 - Good / Easy → graduates back to Review (memorized again)
 
 So in short:
-| Legend label | FSRS State | How you get there |
+| Legend label | FSRS State | How you get there                      |
 | ------------ | ---------- | -------------------------------------- |
-| New | New | Never rated |
-| Learning | Learning | Rated at least once, not yet graduated |
-| Memorized | Review | Passed learning steps |
-| Forgotten | Relearning | Hit "Again" on a memorized card |
+| New          | New        | Never rated                            |
+| Learning     | Learning   | Rated at least once, not yet graduated |
+| Memorized    | Review     | Passed learning steps                  |
+| Forgotten    | Relearning | Hit "Again" on a memorized card        |
 
 The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 
