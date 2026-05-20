@@ -5,6 +5,12 @@ import { injectPlusPlan } from './helpers.js';
 // Helper: answer one question regardless of type, then click Next
 // ---------------------------------------------------------------------------
 async function answerAndAdvance(page: Page) {
+  // Wait for the questioning state to be ready (en: 'Question', nb: 'Spørsmål')
+  await page
+    .getByText(/question \d+ of|spørsmål \d+ av/i)
+    .waitFor({ state: 'visible', timeout: 5000 })
+    .catch(() => {}); // may already be in revealing state — that's fine
+
   const optionA = page.getByRole('button', { name: /^A\b/ });
   const input = page.getByRole('textbox');
 
@@ -13,11 +19,16 @@ async function answerAndAdvance(page: Page) {
   } else if (await input.isVisible({ timeout: 2000 }).catch(() => false)) {
     await input.fill('test');
     await input.press('Enter');
+  } else {
+    // Neither visible — may be between states; give it a moment
+    await page.waitForTimeout(300);
+    return;
   }
 
   // After answering, the Next / See results button should appear (en: Next / See results, nb: Neste / Se resultater)
   const next = page.getByRole('button', { name: /next|see results|neste|se resultater/i });
-  if (await next.isVisible({ timeout: 3000 }).catch(() => false)) {
+  await next.waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
+  if (await next.isVisible({ timeout: 500 }).catch(() => false)) {
     await next.click();
   }
 }

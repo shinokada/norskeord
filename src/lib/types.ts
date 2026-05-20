@@ -270,6 +270,7 @@ export interface CardProgress {
   fsrs: Card;
   seenCount: number;
   lastSeen: string; // ISO date string
+  lastRating?: FSRSRating; // most recent rating
   level: CEFRLevel;
   category: Category;
 }

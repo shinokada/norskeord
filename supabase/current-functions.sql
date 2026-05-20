@@ -1,14 +1,8 @@
 
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
--- Manually maintained below.
+-- From supabase upsert_study_day function
 
-CREATE OR REPLACE FUNCTION public.upsert_study_day(p_user_id uuid, p_day date)
-RETURNS void
-LANGUAGE sql
-SECURITY DEFINER
-AS $$
-  insert into study_days (user_id, day, cards)
-  values (p_user_id, p_day, 1)
-  on conflict (user_id, day)
-  do update set cards = study_days.cards + 1;
-$$;
+INSERT INTO study_days (user_id, day, cards)
+VALUES (p_user_id, p_day, 1)
+ON CONFLICT (user_id, day)
+DO UPDATE SET cards = study_days.cards + 1;

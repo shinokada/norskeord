@@ -1,0 +1,23 @@
+1. Demo Video: A video demonstrating the functionality and features of your product.
+
+Please see the attache video or visit https://norskeord.no/
+
+2. Pricing Information: A breakdown of the pricing for your product.
+Currently we have only one tier, Plus.
+
+Plus tier: 49 NOK/month. Cancel any time. All progress carries over automatically when upgrading from the free plan.
+
+3. Product Overview: A description of your product, including its key features and benefits.
+
+Norskeord Plus
+Norskeord is a Norwegian vocabulary and phrase learning tool built for Norskprøven candidates, new immigrants, and serious learners. The free plan covers all A1 and A2 vocabulary categories. Plus unlocks the full library and intelligent review features.
+
+What's included with Plus:
+a) Smart review scheduling — After rating each flashcard (Again, Hard, Good, or Easy), the app calculates the optimal time to show that card again. Words you know well appear less frequently; words you struggle with return sooner. Plus users receive a personalised Due Today deck built from this data, ensuring every study session is focused and efficient.
+b) Full vocabulary access (A1–C2) — Unlock all 97 vocabulary categories from B1 through C2, covering politics, law, medicine, literature, business, psychology, and more. Includes the complete phrase library (uttrykk) at every level.
+c) Norskprøven practice tests — Authentic exam-style tasks at A2 and B1 level: reading passages with multiple-choice questions, structured writing prompts with model answers, and oral role-play scenarios.
+d) Cross-device sync — Review history is stored in the cloud and synchronised across phone, tablet, and desktop automatically.
+e) Per-category progress breakdown — See exactly which categories need the most attention, including cards seen, cards due today, and pace data across all levels.
+f) Quiz mode — Multiple-choice, fill-in-the-blank, and typed-answer questions for active recall practice. Every answer updates the smart review schedule.
+g) Progress report download — Export a full summary of your review history as a structured data file.
+h) Priority support — Direct access to the developer for questions or issues.

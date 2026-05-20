@@ -24,7 +24,10 @@
     return `/auth/login?next=${next}`;
   });
 
-  const tableRows = $derived([
+  type TableCell = { value: string; yes: boolean; soon?: boolean };
+  type TableRow = { feature: string; free: TableCell; pro: TableCell };
+
+  const tableRows = $derived<TableRow[]>([
     {
       feature: m.plus_row_vocab(),
       free: { value: m.plus_row_vocab_free(), yes: true },
@@ -79,11 +82,6 @@
       feature: m.plus_row_quiz(),
       free: { value: m.plus_row_quiz_free(), yes: false },
       pro: { value: m.plus_row_quiz_plus(), yes: true }
-    },
-    {
-      feature: m.plus_row_email_lessons(),
-      free: { value: m.plus_row_email_lessons_free(), yes: false },
-      pro: { value: m.plus_row_email_lessons_plus(), yes: false, soon: true }
     },
     {
       feature: m.plus_row_support(),
@@ -223,6 +221,40 @@
   </div>
 
   <!-- ── Free vs Plus comparison table ──────────────────────────────────────────── -->
+  <!-- ── What’s unlocked at each level ────────────────────────────────────────── -->
+  <h2 class="mb-5 text-2xl font-bold dark:text-white">{m.plus_unlocked_heading()}</h2>
+  <div class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+    {#each [{ label: m.plus_unlocked_a1_label, teaser: m.plus_unlocked_a1_teaser, free: true, color: 'green' }, { label: m.plus_unlocked_a2_label, teaser: m.plus_unlocked_a2_teaser, free: true, color: 'teal' }, { label: m.plus_unlocked_b1_label, teaser: m.plus_unlocked_b1_teaser, free: false, color: 'blue' }, { label: m.plus_unlocked_b2_label, teaser: m.plus_unlocked_b2_teaser, free: false, color: 'indigo' }, { label: m.plus_unlocked_c1_label, teaser: m.plus_unlocked_c1_teaser, free: false, color: 'purple' }, { label: m.plus_unlocked_c2_label, teaser: m.plus_unlocked_c2_teaser, free: false, color: 'pink' }] as row (row.color)}
+      <div
+        class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800"
+      >
+        <div class="mb-1.5 flex items-center justify-between gap-2">
+          <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">{row.label()}</span>
+          {#if row.free}
+            <span
+              class="shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700 dark:bg-green-900/40 dark:text-green-300"
+              >Free</span
+            >
+          {:else}
+            <span
+              class="shrink-0 rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
+              >❖ Plus</span
+            >
+          {/if}
+        </div>
+        <p class="text-xs text-gray-500 dark:text-gray-400">{row.teaser()}</p>
+      </div>
+    {/each}
+  </div>
+  <p class="mb-14 text-sm text-gray-500 dark:text-gray-400">
+    {m.plus_unlocked_free_note()}
+    <a
+      href="/"
+      class="font-medium text-indigo-600 underline hover:text-indigo-500 dark:text-indigo-400"
+      >{m.plus_unlocked_cta()}</a
+    >
+  </p>
+
   <h2 class="mb-5 text-2xl font-bold dark:text-white">{m.plus_table_heading()}</h2>
   <div class="mb-14 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
     <table class="w-full text-sm">

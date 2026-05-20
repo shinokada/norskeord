@@ -22,11 +22,16 @@
   import { onMount } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
+  import { clearUserProgress } from '$lib/progress';
 
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
 
   async function logout() {
+    // Clear this user's namespaced localStorage data before navigating away,
+    // so the next person who opens the browser starts with a clean slate.
+    const userId = user?.id;
+    if (userId) clearUserProgress(userId);
     await fetch('/auth/logout', { method: 'POST' });
     window.location.href = '/';
   }
@@ -41,6 +46,8 @@
 
   let isPlus = $derived(page.data.plan === 'plus');
 
+  const COLLAPSE_THRESHOLD = 3;
+
   function buildItems(level: keyof typeof CATEGORIES_BY_LEVEL) {
     return CATEGORIES_BY_LEVEL[level].map((c) => ({
       name: removeHyphensAndCapitalize(c),
@@ -51,10 +58,26 @@
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 
-  const menus = levels.map((level) => ({
-    level,
-    items: buildItems(level)
-  }));
+  const menus = levels.map((level) => {
+    const allItems = buildItems(level);
+    const lockedCount = !isPlus
+      ? allItems.filter((item) => item.locked && !item.href?.endsWith('/uttrykk-preview')).length
+      : 0;
+    const collapse = !isPlus && lockedCount >= COLLAPSE_THRESHOLD;
+    // When collapsing, replace all non-preview locked items with a single sentinel badge item.
+    const items = collapse
+      ? [
+          ...allItems.filter((item) => !item.locked || item.href?.endsWith('/uttrykk-preview')),
+          {
+            name: `+${lockedCount} with Plus →`,
+            href: '/plus?ref=nav-mega',
+            locked: false,
+            isPlusBadge: true
+          }
+        ]
+      : allItems;
+    return { level, items, lockedCount, collapse };
+  });
 
   // Language switcher — backed by the shared localeStore so the nav button
   // and PreferencesSection always reflect the same value.
@@ -171,7 +194,15 @@
       <MegaMenu {items} triggeredBy="#mega-trigger-{level}" classes={{ ul: '!gap-x-6' }}>
         {#snippet children({ item })}
           {@const locked = !isPlus && item.locked}
-          {#if !(isPlus && item.href?.endsWith('/uttrykk-preview'))}
+          {@const isPreview = item.href?.endsWith('/uttrykk-preview')}
+          {#if item.isPlusBadge}
+            <a
+              href={item.href}
+              class="flex items-center gap-1 py-0.5 text-sm font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
+            >
+              {item.name}
+            </a>
+          {:else if !(isPlus && isPreview)}
             <a
               href={locked ? '/plus?ref=category-lock' : item.href}
               class="{linkClass} {locked ? 'opacity-50' : ''}"

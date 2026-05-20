@@ -279,6 +279,7 @@ export const actions: Actions = {
     const data = await request.formData();
     const subject = ((data.get('subject') as string) ?? '').trim();
     const message = ((data.get('message') as string) ?? '').trim();
+    const appVersion = ((data.get('app_version') as string) ?? '').trim();
 
     if (!subject) return fail(422, { field: 'supportContact', message: 'Please enter a subject.' });
     if (message.length < 10)
@@ -320,7 +321,7 @@ export const actions: Actions = {
         to: adminEmail,
         reply_to: fromEmail,
         subject: `[Plus Support] ${subject}`,
-        text: `From: ${fromName} <${fromEmail}>\nUser ID: ${locals.user.id}\n\n${message}`
+        text: `From: ${fromName} <${fromEmail}>\nUser ID: ${locals.user.id}\nApp version: ${appVersion || 'unknown'}\n\n${message}`
       })
     });
 
