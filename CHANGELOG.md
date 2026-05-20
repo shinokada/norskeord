@@ -1,5 +1,12 @@
 # norske-flashcard
 
+## 2.3.1
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Fixed PWA update behavior to reliably reload the application after service worker updates, preventing the update prompt from reappearing unexpectedly.
+
 ## 2.3.0
 
 ### Minor Changes
