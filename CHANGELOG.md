@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.2.1
+
+### Patch Changes
+
+- - **New Features**
+    - Flashcard backs show a “Last” rating badge with labeled, styled ratings.
+    - App version shown in footer and included with support reports.
+    - “What’s unlocked at each level” section added to Plus page with level teasers.
+  - **Changes**
+    - Progress is now scoped per-user, merged on login; anonymous progress cleared after sync and user-scoped progress cleared on logout.
+    - In-session new-card cap increased from 15 to 20.
+    - Removed email-lesson toggle and its row from the Free vs Plus comparison.
+    - Home/hero text localized; locked categories collapse into a “+N with Plus” badge.
+  - **Security**
+    - Migration tightens study-day upsert execution and removes an exposed view.
+
 ## 2.2.0
 
 ### Minor Changes
