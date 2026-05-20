@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { locales, localizeHref } from '$lib/paraglide/runtime';
+  import { locales, localizeHref, localizeUrl } from '$lib/paraglide/runtime';
   import { localeStore } from '$lib/localeStore.svelte';
   import '../app.css';
   import { onMount } from 'svelte';
@@ -21,6 +21,17 @@
   );
 
   const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
+
+  const SITE_URL = 'https://norskeord.no';
+
+  // hreflang alternate URLs — built from the canonical site URL so they're
+  // absolute and correct even during SSR (page.url.origin may be localhost).
+  const hreflangLinks = $derived(
+    locales.map((locale) => ({
+      locale,
+      href: localizeUrl(new URL(page.url.pathname, SITE_URL), { locale }).href
+    }))
+  );
 
   // Persist last-visited page on in-app navigations only.
   // Using afterNavigate (not $effect) so cold-start at / never overwrites the stored path.
@@ -60,6 +71,18 @@
     };
   });
 </script>
+
+<svelte:head>
+  {#each hreflangLinks as { locale, href } (locale)}
+    <link rel="alternate" hreflang={locale} {href} />
+  {/each}
+  <!-- x-default points to the canonical (English) URL -->
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href={hreflangLinks.find((l) => l.locale === 'en')?.href ?? ''}
+  />
+</svelte:head>
 
 <Runatics {analyticsId} />
 <MetaTags {...metaTags} />
