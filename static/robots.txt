@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /auth
+Disallow: /my-profile
+Disallow: /stats
 
-Sitemap: https://norske-flashcard.codewithshin.com/sitemap.xml
+Sitemap: https://norskeord.no/sitemap.xml

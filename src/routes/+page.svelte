@@ -169,6 +169,40 @@
   let showQr = $state(false);
   const APP_URL = 'https://norskeord.no/';
 
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Norskeord',
+    url: 'https://norskeord.no',
+    description:
+      'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation.',
+    inLanguage: ['en', 'nb'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://norskeord.no/{search_term_string}',
+      'query-input': 'required name=search_term_string'
+    }
+  };
+
+  const learningResourceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: 'Norskeord — Norwegian Vocabulary Flashcards',
+    description:
+      'Flashcard decks covering A1 to C2 Norwegian vocabulary with audio, spaced repetition scheduling, and Norskprøven exam preparation.',
+    url: 'https://norskeord.no',
+    inLanguage: 'nb',
+    educationalLevel: 'A1 to C2 (CEFR)',
+    learningResourceType: 'Flashcard',
+    teaches: 'Norwegian vocabulary',
+    isAccessibleForFree: true,
+    provider: {
+      '@type': 'Organization',
+      name: 'Norskeord',
+      url: 'https://norskeord.no'
+    }
+  };
+
   // Count visible categories per level (excluding uttrykk-preview for plus users)
   function visibleCategoryCount(levelId: string): number {
     const cats = CATEGORIES_BY_LEVEL[levelId as keyof typeof CATEGORIES_BY_LEVEL];
@@ -188,7 +222,17 @@
   function shouldCollapse(levelId: string): boolean {
     return !isPlus && lockedCategoryCount(levelId) >= COLLAPSE_THRESHOLD;
   }
+  const websiteSchemaJson = JSON.stringify(websiteSchema);
+  const learningResourceSchemaJson = JSON.stringify(learningResourceSchema);
 </script>
+
+<!-- ── Structured data ────────────────────────────────────────────────── -->
+<svelte:head>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html '<scr' + 'ipt type="application/ld+json">' + websiteSchemaJson + '</scr' + 'ipt>'}
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html '<scr' + 'ipt type="application/ld+json">' + learningResourceSchemaJson + '</scr' + 'ipt>'}
+</svelte:head>
 
 <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
 <div
