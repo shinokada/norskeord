@@ -19,7 +19,7 @@ test('index page has expected meta description', async ({ page }) => {
   const metaDescription = page.locator('meta[name="description"]');
   await expect(metaDescription).toHaveAttribute(
     'content',
-    'Master Norwegian Vocabulary with Flashcard.'
+    'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
   );
 });
 
@@ -27,7 +27,7 @@ test('index page has expected meta keywords', async ({ page }) => {
   const metaKeywords = page.locator('meta[name="keywords"]');
   await expect(metaKeywords).toHaveAttribute(
     'content',
-    'Norwegian, language game, flashcards, learning, language'
+    'Norwegian vocabulary, learn Norwegian, flashcards, Norskprøven, CEFR, A1 A2 B1 B2 C1 C2, spaced repetition, Norwegian words'
   );
 });
 
@@ -37,10 +37,10 @@ test('index page has expected meta og', async ({ page }) => {
   const metaOgDescription = page.locator('meta[property="og:description"]');
   await expect(metaOgDescription).toHaveAttribute(
     'content',
-    'Master Norwegian Vocabulary with Flashcard.'
+    'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
   );
   const metaOgUrl = page.locator('meta[property="og:url"]');
-  await expect(metaOgUrl).toHaveAttribute('content', 'http://localhost:4173/');
+  await expect(metaOgUrl).toHaveAttribute('content', 'https://norskeord.no/');
   const metaOgImage = page.locator('meta[property="og:image"]');
   await expect(metaOgImage).toHaveAttribute(
     'content',
@@ -54,7 +54,7 @@ test('index page has expected meta twitter', async ({ page }) => {
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
   await expect(metaTwitterDescription).toHaveAttribute(
     'content',
-    'Master Norwegian Vocabulary with Flashcard.'
+    'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
   );
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
   await expect(metaTwitterImage).toHaveAttribute(

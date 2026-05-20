@@ -1,6 +1,83 @@
 <script>
   import { Heading } from 'flowbite-svelte';
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the daily study reminder?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A browser push notification sent once a day to remind you to study. Enable it under Profile → Notifications → Daily study reminder.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'I enabled the reminder but nothing arrives. Why?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Check that your browser is allowed to send notifications in your OS settings. On iPhone, notifications only work if you have added Norskeord to your home screen first (Share → Add to Home Screen).'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What are Norwegian lesson emails?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Biweekly emails with a short Norwegian text, a vocabulary list, and exercises matched to your level. Available to Plus members. Enable under Profile → Notifications.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: "My progress isn't showing on my other device.",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Progress syncs across devices for Plus members. Free accounts store progress on the current device only.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I use Norskeord offline?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Install it as an app (Share → Add to Home Screen on iPhone, or the install prompt in Chrome) and flashcard decks you have opened before will work without an internet connection.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between Free and Plus?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Free gives you all A1 and A2 vocabulary plus a preview of B1/B2. Plus unlocks all levels (B1–C2), smart Due today scheduling, cross-device sync, quiz mode, and lesson emails.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I change my flashcard preferences?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Go to Profile → Preferences. You can set your target level, interface language, default card direction, card type, pronunciation speed, and number of cards per session.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I download my progress report?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Go to Profile → Account and click Download Progress report. This exports all your card history as a file you can save or share. This is a Plus feature.'
+        }
+      }
+    ]
+  };
+  const faqSchemaJson = JSON.stringify(faqSchema);
 </script>
+
+<svelte:head>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html '<scr' + 'ipt type="application/ld+json">' + faqSchemaJson + '</scr' + 'ipt>'}
+</svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-12 text-left">
   <Heading tag="h1" class="mb-2 text-3xl font-bold dark:text-white">Guide to Norskeord</Heading>
@@ -164,7 +241,8 @@
     <span
       class="inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
       >Memorized</span
-    > card makes it
+    >
+    card makes it
     <span
       class="inline-block rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
       >Forgotten</span
@@ -189,8 +267,8 @@
         >Learning</span
       >
       <span
-        >→ Good / Easy → <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard →
-        stays Learning</span
+        >→ Good / Easy → <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard → stays
+        Learning</span
       >
     </div>
     <div class="flex items-baseline gap-2">
@@ -209,7 +287,10 @@
         class="shrink-0 rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
         >Forgotten</span
       >
-      <span>→ Good / Easy → back to <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard → stays Forgotten</span>
+      <span
+        >→ Good / Easy → back to <span class="font-medium">Memorized</span> &nbsp;·&nbsp; Again / Hard
+        → stays Forgotten</span
+      >
     </div>
   </div>
 
