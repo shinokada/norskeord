@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.3.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added hreflang alternate links with x-default for improved multi-language SEO.
+  - **Improvements**
+    - Moved vocabulary/category loading to server-side for better SSR and performance.
+    - Enforced redirects and tighter access control for Plus-only and preview content.
+  - **Chores**
+    - Updated package manager settings (pnpm specified) and Node engine requirement (Node 20+).
+    - Added workspace/build configuration and Vercel deployment configuration.
+    - Relaxed npm engine-strict enforcement.
+  - **Documentation**
+    - Reorganized SEO notes into resolved items.
+
 ## 2.2.1
 
 ### Patch Changes
