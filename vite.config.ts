@@ -20,7 +20,8 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       devtoolsJson(),
       VitePWA({
-        registerType: 'autoUpdate',
+        registerType: 'prompt',
+        injectRegister: 'auto',
         manifest: {
           name: 'Norske Flashcard',
           short_name: 'Norske',
