@@ -104,6 +104,8 @@
   // 3-A: plan from layout server data
   let plan = $derived(page.data.plan as 'free' | 'plus');
   let isPlus = $derived(plan === 'plus');
+  let isGuest = $derived(page.data.user === null);
+
   // session limit from layout server data (cross-device); falls back to localStorage for guests
   let profileSessionLimit = $derived<number | null>(
     (page.data.sessionLimit as number | null | undefined) ?? null
@@ -600,10 +602,29 @@
         </p>
       </div>
     {:else if completed}
-      <div class="bg-custom-blue flex h-full flex-col items-center justify-center gap-6 rounded-xl">
+      <div class="bg-custom-blue flex h-full flex-col items-center justify-center gap-4 rounded-xl">
         <p class="text-2xl font-semibold text-white">
           {m.flashcard_all_done({ count: String(deck.length) })}
         </p>
+
+        <!-- Guest post-session login nudge -->
+        {#if isGuest}
+          <div class="mx-4 rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+            <p class="text-sm font-semibold text-white">
+              🎉 Great session! Log in to save your progress.
+            </p>
+            <p class="mt-0.5 text-xs text-white/70">
+              Your ratings are stored on this device only — log in to keep them safe across devices.
+            </p>
+            <a
+              href="/auth/login"
+              class="mt-2 inline-block rounded-lg bg-white px-4 py-1.5 text-sm font-semibold text-blue-700 hover:bg-white/90"
+            >
+              Log in for free →
+            </a>
+          </div>
+        {/if}
+
         <button
           type="button"
           onclick={restart}
@@ -838,6 +859,22 @@
       {m.flashcard_next()}
     </button>
   </div>
+
+  <!-- Guest persistent footer nudge (shown below nav, only for non-logged-in users) -->
+  {#if isGuest}
+    <div class="mt-6 w-full max-w-lg border-t border-gray-200 pt-4 text-center dark:border-gray-700">
+      <p class="text-xs text-gray-400 dark:text-gray-500">
+        📌 Your progress is saved on this device only.
+        <a
+          href="/auth/login"
+          class="font-medium text-indigo-500 hover:underline dark:text-indigo-400"
+        >
+          Log in for free
+        </a>
+        to keep it safe across devices.
+      </p>
+    </div>
+  {/if}
 </div>
 
 <svelte:window onkeydown={handleKeyDown} />

@@ -223,7 +223,7 @@
     return !isPlus && lockedCategoryCount(levelId) >= COLLAPSE_THRESHOLD;
   }
   const websiteSchemaJson = JSON.stringify(websiteSchema);
-  const learningResourceSchemaJson = JSON.stringify(learningResourceSchema);
+  const learningSchemaJson = JSON.stringify(learningResourceSchema);
 </script>
 
 <!-- ── Structured data ────────────────────────────────────────────────── -->
@@ -231,7 +231,7 @@
   <!-- eslint-disable-next-line svelte/no-at-html-tags -->
   {@html '<scr' + 'ipt type="application/ld+json">' + websiteSchemaJson + '</scr' + 'ipt>'}
   <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-  {@html '<scr' + 'ipt type="application/ld+json">' + learningResourceSchemaJson + '</scr' + 'ipt>'}
+  {@html '<scr' + 'ipt type="application/ld+json">' + learningSchemaJson + '</scr' + 'ipt>'}
 </svelte:head>
 
 <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
@@ -365,7 +365,7 @@
               <!-- skip: will be shown as a single +N badge below -->
             {:else}
               <a
-                href={locked ? '/plus?ref=category-lock' : `/${level.id.toLowerCase()}/${cat}`}
+                href={locked ? '/plus' : `/${level.id.toLowerCase()}/${cat}`}
                 class="{badge} rounded-full px-3 py-0.5 text-sm font-medium transition-opacity hover:opacity-75
                        {locked ? 'cursor-default opacity-60' : ''}"
                 title={locked ? m.plus_category_locked() : undefined}
@@ -377,7 +377,7 @@
         {/each}
         {#if shouldCollapse(level.id)}
           <a
-            href="/plus?ref=category-lock"
+            href="/plus"
             class="rounded-full border border-indigo-300 bg-indigo-50 px-3 py-0.5 text-sm font-medium text-indigo-600 transition-opacity hover:opacity-75 dark:border-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
           >
             +{lockedCategoryCount(level.id)} with Plus →
