@@ -44,7 +44,7 @@ test('index page has expected meta og', async ({ page }) => {
   const metaOgImage = page.locator('meta[property="og:image"]');
   await expect(metaOgImage).toHaveAttribute(
     'content',
-    'https://open-graph-vercel.vercel.app/api/norske-flashcard'
+    'https://open-graph-vercel.vercel.app/api/norskeord'
   );
 });
 
@@ -59,6 +59,6 @@ test('index page has expected meta twitter', async ({ page }) => {
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
   await expect(metaTwitterImage).toHaveAttribute(
     'content',
-    'https://open-graph-vercel.vercel.app/api/norske-flashcard'
+    'https://open-graph-vercel.vercel.app/api/norskeord'
   );
 });

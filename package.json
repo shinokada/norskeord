@@ -1,11 +1,11 @@
 {
-  "name": "norske-flashcard",
+  "name": "norskeord",
   "version": "2.3.2",
   "description": "Norwegian(Bokmål) - English flashcard",
-  "homepage": "https://norske-flashcard.codewithshin.com/",
+  "homepage": "https://norskeord.no/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shinokada/norske-flashcard"
+    "url": "https://github.com/shinokada/norskeord"
   },
   "private": true,
   "type": "module",

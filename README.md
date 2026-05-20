@@ -2,7 +2,7 @@
 
 ## Learn Norwegian wih flashcard
 
-[Website](https://norske-flashcard.codewithshin.com/)
+[Website](https://norskeord.no/)
 
 ### Commands for creating dictionaries
 
