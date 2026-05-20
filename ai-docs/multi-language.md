@@ -10,10 +10,10 @@ Allow users to study Norwegian vocabulary using their native language instead of
 
 | Code      | Name      | Flag |
 | --------- | --------- | ---- |
-| english   | English   | 🇺🇸   |
-| spanish   | Spanish   | 🇪🇸   |
-| ukrainian | Ukrainian | 🇺🇦   |
-| polish    | Polish    | 🇵🇱   |
+| english   | English   | 🇺🇸    |
+| spanish   | Spanish   | 🇪🇸    |
+| ukrainian | Ukrainian | 🇺🇦    |
+| polish    | Polish    | 🇵🇱    |
 
 Add more by extending `LANGUAGES` in `src/lib/types.ts` — no other structural changes needed.
 
@@ -118,7 +118,7 @@ Svelte 5 rune-based store that reads/writes to localStorage.
 ```ts
 import { LANGUAGES, type Language } from '$lib/types';
 
-const STORAGE_KEY = 'norske-flashcard-language';
+const STORAGE_KEY = 'norskeord-language';
 
 function createLanguageStore() {
   let stored: Language | null = null;

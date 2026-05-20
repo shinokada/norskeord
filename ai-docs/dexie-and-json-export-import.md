@@ -58,7 +58,7 @@ class AppDB extends Dexie {
   voiceSettings!: Table<VoiceSettings>;
 
   constructor() {
-    super('norske-flashcard');
+    super('norskeord');
     this.version(1).stores({
       // ++id = auto-increment PK; compound index on [listId+wordId] for fast lookup
       tags: '++id, [listId+wordId], listId, tag',
@@ -337,7 +337,7 @@ export async function exportBackup(): Promise<void> {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `norske-flashcard-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  a.download = `norskeord-backup-${new Date().toISOString().slice(0, 10)}.json`;
   a.click();
   URL.revokeObjectURL(url);
 }
