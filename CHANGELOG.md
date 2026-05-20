@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.3.4
+
+### Patch Changes
+
+- fix: add level to og image
+
 ## 2.3.3
 
 ### Patch Changes
