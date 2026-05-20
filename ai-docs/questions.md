@@ -6,6 +6,12 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 
 ---
 
+## SEO
+
+- SSR on [level]/[category] pages — this is the biggest remaining item. export const ssr = false in +page.ts means Google gets a blank HTML shell for every deck page. Fixing it requires moving the vocab loading into a +page.server.ts so the HTML is pre-rendered. The gating logic needs care — locals.plan is only available server-side, which actually makes this cleaner. This is a meaningful refactor (~50 lines) and worth doing as a dedicated task.
+- hreflang tags for en/nb — the layout already links to both locale variants in a hidden <div>, but proper <link rel="alternate" hreflang="..."> tags in <head> would be stronger for bilingual indexing.
+- og:image — the layout references metaImg() but it's not clear what image is actually being served. If it resolves to nothing or a placeholder, social shares and Google's image preview will be blank. Worth auditing.
+
 ---
 
 ai-docs/implementation/email-service-implementation.md

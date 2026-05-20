@@ -16,7 +16,7 @@ export const load: PageServerLoad = ({ locals, url }) => {
       title,
       description,
       url: url.href,
-      siteName: 'Norske Flashcard'
+      siteName: 'Norskeord'
     },
     twitter: {
       card: 'summary_large_image',

@@ -290,7 +290,7 @@ The avatar display should be 200 x 200 px or 150 x 150 px?
 
 ---
 
-## Phase 5 — Email Service ⬜ Not started
+## Phase 5 — Email Service
 
 Full design decisions are documented in [`ai-docs/email-service.md`](./email-service.md). Summary below.
 
