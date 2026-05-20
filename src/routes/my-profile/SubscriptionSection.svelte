@@ -60,11 +60,6 @@
   let reminderLoading = $state(false);
   let reminderError = $state('');
 
-  // Email lesson toggle — disabled until email service launches (vars prefixed _ to satisfy lint)
-  let _emailLesson = $derived.by(() => profile?.email_lesson ?? false);
-  let _emailLoading = $state(false);
-  let _emailError = $state('');
-
   async function handleReminderToggle() {
     reminderError = '';
     reminderLoading = true;
@@ -202,26 +197,6 @@
         {#if reminderError}
           <p class="text-xs text-red-500">{reminderError}</p>
         {/if}
-
-        <!-- Email lesson toggle — disabled until email service launches -->
-        <label class="flex cursor-not-allowed items-start gap-3 opacity-60">
-          <input
-            type="checkbox"
-            disabled
-            class="mt-0.5 h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
-          />
-          <span class="text-sm text-gray-600 dark:text-gray-400">
-            {m.profile_sub_weekly_email()}
-            <span
-              class="ml-1.5 rounded-full bg-gray-200 px-2 py-0.5 text-xs font-medium text-gray-500 dark:bg-gray-700 dark:text-gray-400"
-            >
-              {m.profile_sub_coming_soon()}
-            </span>
-            <span class="mt-0.5 block text-xs text-gray-400 dark:text-gray-500">
-              {m.profile_sub_email_hint()}
-            </span>
-          </span>
-        </label>
       </div>
     </div>
 

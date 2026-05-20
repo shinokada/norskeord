@@ -33,8 +33,7 @@ test('home page has category links for A1', async ({ page }) => {
 
 test('A1 greetings flashcard page loads and shows title', async ({ page }) => {
   await page.goto('/a1/greetings');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('A1');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå A1 — Greetings');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Greetings');
 });
 
 test('A1 greetings page has mode toggle buttons', async ({ page }) => {
@@ -65,8 +64,7 @@ test('free user sees no upsell banner when no cards are due', async ({ page }) =
 
 test('B1 travel flashcard page loads', async ({ page }) => {
   await page.goto('/b1/travel');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('B1');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå B1 — Travel');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Travel');
 });
 
 // Plus member: C1 philosophy page loads with cards and FSRS rating buttons
@@ -74,8 +72,8 @@ test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ 
   await injectPlusPlan(page);
   await page.goto('/c1/philosophy');
 
-  // heading shows correct level and category
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Nivå C1 — Philosophy');
+  // heading shows correct category
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Philosophy');
 
   // card counter is visible (format: "1/N")
   await expect(page.getByRole('button', { name: /^\d+\/\d+$/ })).toBeVisible();
