@@ -10,10 +10,10 @@ Allow users to study Norwegian vocabulary using their native language instead of
 
 | Code      | Name      | Flag |
 | --------- | --------- | ---- |
-| english   | English   | 🇺🇸    |
-| spanish   | Spanish   | 🇪🇸    |
-| ukrainian | Ukrainian | 🇺🇦    |
-| polish    | Polish    | 🇵🇱    |
+| english   | English   | 🇺🇸   |
+| spanish   | Spanish   | 🇪🇸   |
+| ukrainian | Ukrainian | 🇺🇦   |
+| polish    | Polish    | 🇵🇱   |
 
 Add more by extending `LANGUAGES` in `src/lib/types.ts` — no other structural changes needed.
 
