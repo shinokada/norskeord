@@ -1,6 +1,6 @@
 # Blog planning
 
-Currently I have src/routes/admin/lessons directory made for email service. 
+Currently I have src/routes/admin/lessons directory made for email service.
 Should I use this for blog?
 
 ## Example title
@@ -104,6 +104,5 @@ treg
 ## How to add blog
 
 - Do I need CRUD in /admin/article?
-Or markdown with markdown frontmatter for SEO?
+  Or markdown with markdown frontmatter for SEO?
 - Use ADMIN_USER_ID in .env file to access admin page
-

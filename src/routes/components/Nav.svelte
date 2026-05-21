@@ -239,6 +239,7 @@
       <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
       <DropdownItem href="/guide">{m.nav_guide()}</DropdownItem>
       <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
+      <DropdownItem href="/blog">Blog</DropdownItem>
     </Dropdown>
   </NavUl>
 </Navbar>
