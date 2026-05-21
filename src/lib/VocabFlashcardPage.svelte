@@ -609,7 +609,9 @@
 
         <!-- Guest post-session login nudge -->
         {#if isGuest}
-          <div class="mx-4 rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+          <div
+            class="mx-4 rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm"
+          >
             <p class="text-sm font-semibold text-white">
               🎉 Great session! Log in to save your progress.
             </p>
@@ -632,6 +634,12 @@
         >
           {m.flashcard_shuffle_restart()}
         </button>
+        <a
+          href="/stats"
+          class="text-sm text-white/80 underline hover:text-white hover:no-underline"
+        >
+          {m.flashcard_view_stats()}
+        </a>
       </div>
     {:else}
       <div
@@ -862,7 +870,9 @@
 
   <!-- Guest persistent footer nudge (shown below nav, only for non-logged-in users) -->
   {#if isGuest}
-    <div class="mt-6 w-full max-w-lg border-t border-gray-200 pt-4 text-center dark:border-gray-700">
+    <div
+      class="mt-6 w-full max-w-lg border-t border-gray-200 pt-4 text-center dark:border-gray-700"
+    >
       <p class="text-xs text-gray-400 dark:text-gray-500">
         📌 Your progress is saved on this device only.
         <a

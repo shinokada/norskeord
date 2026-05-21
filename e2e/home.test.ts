@@ -12,7 +12,7 @@ test('index page has expected h1', async ({ page }) => {
 });
 
 test('index page has expected meta title', async ({ page }) => {
-  await expect(page).toHaveTitle('Norske Flashcard');
+  await expect(page).toHaveTitle('Norskeord');
 });
 
 test('index page has expected meta description', async ({ page }) => {
@@ -33,7 +33,7 @@ test('index page has expected meta keywords', async ({ page }) => {
 
 test('index page has expected meta og', async ({ page }) => {
   const metaOgTitle = page.locator('meta[property="og:title"]');
-  await expect(metaOgTitle).toHaveAttribute('content', 'Norske Flashcard');
+  await expect(metaOgTitle).toHaveAttribute('content', 'Norskeord');
   const metaOgDescription = page.locator('meta[property="og:description"]');
   await expect(metaOgDescription).toHaveAttribute(
     'content',
@@ -50,7 +50,7 @@ test('index page has expected meta og', async ({ page }) => {
 
 test('index page has expected meta twitter', async ({ page }) => {
   const metaTwitterTitle = page.locator('meta[name="twitter:title"]');
-  await expect(metaTwitterTitle).toHaveAttribute('content', 'Norske Flashcard');
+  await expect(metaTwitterTitle).toHaveAttribute('content', 'Norskeord');
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
   await expect(metaTwitterDescription).toHaveAttribute(
     'content',
