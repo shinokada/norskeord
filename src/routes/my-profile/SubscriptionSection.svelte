@@ -2,7 +2,6 @@
   import type { Profile } from '$lib/server/profile';
   import * as m from '$lib/paraglide/messages.js';
   import { subscribeToPush, unsubscribeFromPush } from '$lib/push';
-  import ContactSupport from './ContactSupport.svelte';
 
   let {
     profile,
@@ -56,14 +55,14 @@
   }
 
   // Push notification toggle
-  let dailyReminder = $derived(profile?.daily_reminder ?? false);
+  let dailyReminder = $state(profile?.daily_reminder ?? false);
   let reminderLoading = $state(false);
   let reminderError = $state('');
 
   async function handleReminderToggle() {
     reminderError = '';
     reminderLoading = true;
-    const turningOn = !dailyReminder; // capture desired state before any async work
+    const turningOn = !dailyReminder;
     try {
       if (turningOn) {
         const sub = await subscribeToPush();
@@ -71,8 +70,10 @@
           reminderError = 'Could not enable notifications. Please check your browser settings.';
           return;
         }
+        dailyReminder = true;
       } else {
         await unsubscribeFromPush();
+        dailyReminder = false;
       }
     } catch (err) {
       console.error('[push] toggle failed:', err);
@@ -199,9 +200,9 @@
         {/if}
       </div>
     </div>
+  {/if}
 
-    <ContactSupport />
-  {:else if !isPlus}
+  {#if !isPlus}
     <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
       <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
         {m.profile_sub_notifications_heading()}
