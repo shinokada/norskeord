@@ -1,6 +1,6 @@
 ---
-title: 'Sakte vs Langsomt — Hva er forskjellen?'
-description: "Both mean 'slowly' — but one sounds more natural in everyday speech."
+title: 'Sakte vs Langsomt'
+description: "Sakte is the one you'll hear in conversation. Langsomt is the one you'll read."
 slug: sakte-vs-langsomt
 cefr: A2
 publishedAt: 2026-05-21

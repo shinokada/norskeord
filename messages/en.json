@@ -10,7 +10,7 @@
   "nav_guide": "Guide",
   "nav_resources": "Resources",
   "nav_see_all": "See all {level} categories →",
-  "nav_more": "More",
+  "nav_more": "Learn",
   "nav_switch_to_norwegian": "🇳🇴 NO",
   "nav_switch_to_english": "🇺🇸 EN",
   "nav_quiz": "Quiz",
@@ -315,6 +315,10 @@
   "norskproven_cta_a2": "Start A2 Health",
   "norskproven_cta_b1": "Start B1 Work",
   "norskproven_cta_stats": "View my progress",
+
+  "blog_subheading": "Short, practical articles about Norwegian vocabulary and usage.",
+  "blog_section_guides": "Guides",
+  "blog_section_level": "Level {level}",
 
   "home_heading": "Norske flashcard",
   "home_subheading": "Practice Norwegian vocabulary from A1 to C2. Pick a level and a category to get started.",
