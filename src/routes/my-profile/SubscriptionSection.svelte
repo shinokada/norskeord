@@ -54,8 +54,10 @@
     }
   }
 
-  // Push notification toggle
-  let dailyReminder = $state(profile?.daily_reminder ?? false);
+  // Push notification toggle — writable $derived keeps in sync with profile prop
+  // while still allowing local mutations from handleReminderToggle.
+  let dailyReminder = $derived.by(() => profile?.daily_reminder ?? false);
+
   let reminderLoading = $state(false);
   let reminderError = $state('');
 

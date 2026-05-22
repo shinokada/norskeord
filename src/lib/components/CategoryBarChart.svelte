@@ -73,18 +73,20 @@
       const now = new Date();
       // Plus users use 'uttrykk' (full deck); 'uttrykk-preview' is a free-user alias
       // that redirects to 'uttrykk' for Plus — hide it to avoid a duplicate empty row.
-      const cats: CatBarStat[] = CATEGORIES_BY_LEVEL[level].filter((c) => c !== 'uttrykk-preview').map((category) => {
-        const catCards = allCards.filter((c) => c.level === level && c.category === category);
-        return {
-          category,
-          total: totalForCategory(level, category),
-          seen: catCards.length,
-          review: catCards.filter((c) => c.fsrs.state === State.Review).length,
-          learning: catCards.filter((c) => c.fsrs.state === State.Learning).length,
-          relearning: catCards.filter((c) => c.fsrs.state === State.Relearning).length,
-          due: catCards.filter((c) => new Date(c.fsrs.due) <= now).length
-        };
-      });
+      const cats: CatBarStat[] = CATEGORIES_BY_LEVEL[level]
+        .filter((c) => c !== 'uttrykk-preview')
+        .map((category) => {
+          const catCards = allCards.filter((c) => c.level === level && c.category === category);
+          return {
+            category,
+            total: totalForCategory(level, category),
+            seen: catCards.length,
+            review: catCards.filter((c) => c.fsrs.state === State.Review).length,
+            learning: catCards.filter((c) => c.fsrs.state === State.Learning).length,
+            relearning: catCards.filter((c) => c.fsrs.state === State.Relearning).length,
+            due: catCards.filter((c) => new Date(c.fsrs.due) <= now).length
+          };
+        });
 
       return {
         level,

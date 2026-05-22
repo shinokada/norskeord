@@ -23,9 +23,7 @@
     cefrOrder
       .map((level) => ({
         level,
-        posts: data.posts.filter(
-          (p) => p.type !== 'guide' && cefrLevels(p.cefr).includes(level)
-        )
+        posts: data.posts.filter((p) => p.type !== 'guide' && cefrLevels(p.cefr).includes(level))
       }))
       .filter((g) => g.posts.length > 0)
   );
@@ -63,7 +61,7 @@
                 <p class="font-semibold text-gray-900 dark:text-white">{post.title}</p>
                 <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">{post.description}</p>
               </div>
-              <span class="text-xs text-gray-400 dark:text-gray-500 shrink-0 mt-1"
+              <span class="mt-1 shrink-0 text-xs text-gray-400 dark:text-gray-500"
                 >{formatDate(post.publishedAt)}</span
               >
             </div>
