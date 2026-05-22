@@ -5,6 +5,11 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
 
+  interface Props {
+    isPlus: boolean;
+  }
+  let { isPlus }: Props = $props();
+
   let open = $state(false);
   let sending = $state(false);
   let sent = $state(false);
@@ -24,8 +29,12 @@
 <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
   <div class="flex items-center justify-between">
     <div>
-      <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Priority support</p>
-      <p class="text-xs text-gray-400 dark:text-gray-500">Get help directly from the developer</p>
+      <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
+        {isPlus ? 'Priority support' : 'Support'}
+      </p>
+      <p class="text-xs text-gray-400 dark:text-gray-500">
+        {isPlus ? 'Get help directly from the developer' : 'Send a message to the developer'}
+      </p>
     </div>
     {#if !sent}
       <button
@@ -107,6 +116,10 @@
       {#if errorMsg}
         <p class="text-xs text-red-500">{errorMsg}</p>
       {/if}
+
+      <p class="text-xs text-gray-400 dark:text-gray-500">
+        Your IP address and browser info are collected with this message for abuse prevention.
+      </p>
 
       <button
         type="submit"
