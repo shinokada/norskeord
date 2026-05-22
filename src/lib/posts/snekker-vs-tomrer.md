@@ -1,6 +1,6 @@
 ---
 title: 'Snekker vs Tømrer'
-description: "Tømrer builds the house. Snekker makes it liveable — and in everyday speech, does both."
+description: 'Tømrer builds the house. Snekker makes it liveable — and in everyday speech, does both.'
 slug: snekker-vs-tomrer
 cefr: B1
 publishedAt: 2026-05-21

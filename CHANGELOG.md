@@ -53,7 +53,7 @@
 ### Minor Changes
 
 - **New Features**
-    - Added hreflang alternate links with x-default for improved multi-language SEO.
+  - Added hreflang alternate links with x-default for improved multi-language SEO.
 - **Improvements**
   - Moved vocabulary/category loading to server-side for better SSR and performance.
   - Enforced redirects and tighter access control for Plus-only and preview content.
@@ -171,12 +171,15 @@
 - Standardized indentation and whitespace across the project for consistent formatting.
 
 Improvements:
+
 - Flashcard pages now choose and display language-specific example phrases and their translations more reliably.
 
 Bug Fixes:
+
 - Improved robustness of random selection and link-opening behavior to prevent edge-case failures.
 
 Accessibility:
+
 - Minor icon/label adjustments to improve clarity and assistive technology accuracy.
 
 ## 1.6.0
@@ -189,10 +192,12 @@ Accessibility:
 - Navigation updated to include a "More" dropdown containing About and Resources.
 
 Documentation:
+
 - Added a CEFR-aligned category expansion plan and adjective-priority guidance.
 - Minor wording correction in multi-language docs.
 
 Style:
+
 - Adjusted heading capitalization and category badge spacing.
 
 ## 1.5.1
@@ -230,6 +235,7 @@ Style:
 - Maintain component-specific features (verb modes, explanation modes)
 
 Components updated:
+
 - FlashcardPage.svelte (Japanese with verb support)
 - FlashcardPage.svelte (Norske basic version)
 - FlashcardPageExtended.svelte (Norske with explanation mode)

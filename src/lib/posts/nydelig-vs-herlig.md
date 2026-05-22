@@ -1,6 +1,6 @@
 ---
 title: 'Nydelig vs Herlig'
-description: "Nydelig is about how something looks. Herlig is about how it feels to experience."
+description: 'Nydelig is about how something looks. Herlig is about how it feels to experience.'
 slug: nydelig-vs-herlig
 cefr: A2
 publishedAt: 2026-05-21

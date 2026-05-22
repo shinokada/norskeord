@@ -2,7 +2,7 @@
 title: 'Slik bruker du Norskeord best'
 description: 'Forskningsbaserte tips for å lære mer på kortere tid – med Norskeord som verktøy.'
 slug: slik-bruker-du-norskeord
-cefr: [A1,A2,B1,B2]
+cefr: [A1, A2, B1, B2]
 type: guide
 publishedAt: 2026-05-22
 tags: [studietips, læring, spaced-repetition]
@@ -22,7 +22,7 @@ I Norskeord passer dette perfekt til en **Due-økt**. Gå gjennom kortene som fo
 
 ## Gjenkjenning er ikke det samme som å huske
 
-Det er stor forskjell på å *gjenkjenne* et ord når du ser det og å *huske* det når du trenger det. Å lese ordlister på nytt og på nytt gir en behagelig følelse av at du kan det – men det er en illusjon.
+Det er stor forskjell på å _gjenkjenne_ et ord når du ser det og å _huske_ det når du trenger det. Å lese ordlister på nytt og på nytt gir en behagelig følelse av at du kan det – men det er en illusjon.
 
 Det beste du kan gjøre: sett kortmodus til **Phrase** og velg **English** som standardspråk i profilen din. Da ser du den engelske frasen og må aktivt skrive eller si den norske oversettelsen **før** du snur kortet. Det er dette som kalles aktiv gjenkalling, og det er slik hjernen faktisk lagrer ny kunnskap – gjennom mening og produksjon, ikke gjennom gjentakelse.
 
@@ -47,8 +47,8 @@ Start med **10 minutter om dagen**. Når det føles automatisk, kan du utvide. K
 **Lykke til!**
 
 ---
-**In English**
----
+
+## **In English**
 
 ## Study smarter, not longer
 
