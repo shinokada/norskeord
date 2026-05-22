@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.4.0
+
+### Minor Changes
+
+- - **New Features**
+    - Dedicated blog with articles/guides grouped by CEFR level, badges, dates, back navigation; “Blog” added to nav and “Learn” nav label.
+    - Support contact form available to all logged-in users (updated UI text and abuse-prevention notice).
+  - **Documentation**
+    - Many new and draft articles, blog planning/implementation notes, Open Graph guidance, and a publishing checklist.
+  - **UI**
+    - Category bar chart includes uttrykk totals correctly; flashcard action label added (“View my progress →”).
+  - **Tests**
+    - New unit and end-to-end tests for blog parsing, index, and post pages.
+
 ## 2.3.5
 
 ### Patch Changes
