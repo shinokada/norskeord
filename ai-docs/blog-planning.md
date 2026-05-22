@@ -43,8 +43,9 @@ For examples
 - English support underneath
 - lots of examples
 
-### More important points
+### Important points
 
+- Use simple English and use Norwegian according to their level target or cefr value.
 - Short explanation
 - Real-life examples
 - Common mistakes
@@ -58,70 +59,18 @@ For examples
 - polished explanations
 
 ## Example article
+See published posts in src/lib/posts directory.
 
-```
-Sakte vs Langsomt
-Kort forklaring
+## To Dos
+Topic groupings — some drafts naturally cluster and could become stronger pillar posts:
 
-Både sakte og langsomt betyr “slowly” på engelsk.
+- "få" series — fa.md, fa-tak-i.md, fa-noe-pa.md could be one comprehensive "Phrasal verbs with få" post, or separate posts like your published ones.
+- "good" synonyms — god-bra-fin.md and god-bra-grei.md overlap and could be merged or sequenced (Part 1 / Part 2).
+- Adverbs — sakte-vs-langsomt.md is already published, and fort-vs-raskt.md, langsomt-vs-sakte.md are in draft — make sure there's no duplication.
+- Direction/location — direction-location.md, fram-frem.md, frem-fremme.md, fremme.md are all related and could form a mini-series.
 
-Men:
-
-sakte brukes mest i dagligtale
-langsomt høres ofte litt mer formelt ut
-In English
-
-Both sakte and langsomt mean “slowly.”
-
-However:
-
-sakte is more common in everyday speech
-langsomt can sound slightly more formal or descriptive
-
-In many situations, they are interchangeable.
-
-Eksempler
-1. Snakk sakte, vær så snill.
-
-Speak slowly, please.
-
-This is the most natural expression in conversation.
-
-2. Trafikken går langsomt i dag.
-
-Traffic is moving slowly today.
-
-“Langsomt” sounds natural here because it describes a situation or process.
-
-3. Han går sakte hjemover.
-
-He walks slowly home.
-
-Very common in spoken Norwegian.
-
-Vanlige feil
-
-❌ Han snakker langsomt til meg
-⭕ Han snakker sakte til meg
-
-“Langsomt” is not grammatically wrong here, but “sakte” sounds much more natural in conversation.
-
-Husk dette
-sakte → everyday speech
-langsomt → slightly more formal/descriptive
-Nivå
-
-A2–B1
-
-Relaterte ord
-fort
-raskt
-hurtig
-treg
-```
-
-## How to add blog
-
-- Do I need CRUD in /admin/article?
-  Or markdown with markdown frontmatter for SEO?
-- Use ADMIN_USER_ID in .env file to access admin page
+## Suggestions about how to strengthen further
+1. Add a TL;DR at the very top of each post (one sentence, English). AI Overviews grab this. Your description field in the frontmatter is close, but a visible summary block at the top of the article body helps both readers and crawlers.
+2. Lean into the "as a learner" voice — the fact that these come from your own questions as someone learning Norwegian is a differentiator. A brief "I came across this sentence and was confused by..." opening makes the post feel human and trustworthy, not AI-generated.
+3. Internal linking — once you have 15–20 posts, link between related ones (e.g. the sakte-vs-langsomt post links to fort-vs-raskt). This builds topical authority around Norwegian vocabulary nuance.
+4. Prioritise drafts by search intent — posts like v2-regelen.md (V2 word order rule), skulle.md, and god-bra-fin.md likely have high search volume because they're grammar concepts that trip up learners at A2/B1. Those should be next in the publishing queue.

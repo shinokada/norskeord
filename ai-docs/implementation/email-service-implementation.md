@@ -1,3 +1,5 @@
+NOT DOING THIS ANYMORE
+
 # Email Service — Implementation Guide
 
 This document translates `ai-docs/email-service.md` into concrete implementation steps.
