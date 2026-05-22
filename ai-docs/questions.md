@@ -5,32 +5,11 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ---
-I did some http://localhost:5173/a1/uttrykk flashcards, but /stats page doesn't show the progress.
+I did some flashcards at http://localhost:5173/a1/uttrykk, but /stats page doesn't show the progress.
 
 ---
-Since the last session is frozen, let me paste what we discussed in the last session first.
+In blog, if I want to keep as a draft, not showing in /blog page, how can I do it? Can I leave `publishedAt:` empty?
 
-
-```
-On the data model
-The cleanest approach is to change cefr to accept either a string or an array — cefr: string | string[] — and then the OG image logic renders multiple badges. That keeps backward compatibility (all existing posts stay as single strings) while allowing guides to say cefr: [A1, A2, B1, B2, C1, C2] or just cefr: [A1, A2].
-Alternatively, for guide posts specifically, you could just use cefr: All as a special sentinel value and render it differently in the OG image.
-Which is better?
-The array approach is more flexible long-term — you might write a vocabulary post that genuinely bridges two levels (e.g. a B1/B2 grammar point). The All sentinel is simpler but less expressive.
-One question before I touch anything — where does the OG image get generated? Is it a Sveltekit endpoint like /api/og or similar, or is it a static image? I want to see how cefr is currently consumed there before changing the type, so nothing breaks.
-```
-
-
-And I replied:
-
-```
-It is generated in /Users/shinichiokada/Vercel/open-graph-vercel/pages/api/norskeord.tsx and you have an access right.I think the array approach is better.
-```
-
-
-I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
-
-Can you check if the array approach is implemented in norskeord and open-graph-vercel projects?
 ---
 
 ## contact

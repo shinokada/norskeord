@@ -12,6 +12,10 @@
   import vocabB2 from '$lib/data/vocab-b2.json';
   import vocabC1 from '$lib/data/vocab-c1.json';
   import vocabC2 from '$lib/data/vocab-c2.json';
+  import uttrykkA1 from '$lib/data/uttrykk-a1.json';
+  import uttrykkA2 from '$lib/data/uttrykk-a2.json';
+  import uttrykkB1 from '$lib/data/uttrykk-b1.json';
+  import uttrykkB2 from '$lib/data/uttrykk-b2.json';
 
   interface Props {
     allCards: CardProgress[];
@@ -30,7 +34,18 @@
     C2: vocabC2 as { category: string }[]
   };
 
+  // Uttrykk entries live in separate files, not the main vocab JSONs.
+  const uttrykkByLevel: Record<string, { category: string }[]> = {
+    A1: uttrykkA1 as { category: string }[],
+    A2: uttrykkA2 as { category: string }[],
+    B1: uttrykkB1 as { category: string }[],
+    B2: uttrykkB2 as { category: string }[]
+  };
+
   function totalForCategory(level: string, category: string): number {
+    if (category === 'uttrykk') {
+      return (uttrykkByLevel[level] ?? []).length;
+    }
     return (vocabByLevel[level] ?? []).filter((v) => v.category === category).length;
   }
 
@@ -56,7 +71,9 @@
   const levelGroups = $derived<LevelGroup[]>(
     levels.map((level) => {
       const now = new Date();
-      const cats: CatBarStat[] = CATEGORIES_BY_LEVEL[level].map((category) => {
+      // Plus users use 'uttrykk' (full deck); 'uttrykk-preview' is a free-user alias
+      // that redirects to 'uttrykk' for Plus — hide it to avoid a duplicate empty row.
+      const cats: CatBarStat[] = CATEGORIES_BY_LEVEL[level].filter((c) => c !== 'uttrykk-preview').map((category) => {
         const catCards = allCards.filter((c) => c.level === level && c.category === category);
         return {
           category,
