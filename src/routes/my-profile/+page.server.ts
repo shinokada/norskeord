@@ -273,8 +273,7 @@ export const actions: Actions = {
 
   supportContact: async ({ request, locals }) => {
     if (!locals.user) redirect(302, '/auth/login');
-    if (locals.plan !== 'plus')
-      return fail(403, { field: 'supportContact', message: 'Plus required.' });
+    // Available to all logged-in users (free + plus)
 
     const data = await request.formData();
     const subject = ((data.get('subject') as string) ?? '').trim();
@@ -293,12 +292,34 @@ export const actions: Actions = {
         message: 'Message is too long (max 2000 characters).'
       });
 
+    // Collect fingerprint fields for abuse prevention (GDPR: legitimate interest, disclosed in privacy policy)
+    const ip =
+      request.headers.get('x-forwarded-for')?.split(',')[0].trim() ??
+      request.headers.get('x-real-ip') ??
+      null;
+    const userAgent = request.headers.get('user-agent') ?? null;
+
     const profile = await getProfile(locals.supabase, locals.user.id);
-    const fromName = profile?.display_name ?? 'A Plus member';
+    const fromName = profile?.display_name ?? (locals.plan === 'plus' ? 'A Plus member' : 'A user');
     const fromEmail = locals.user.email ?? 'unknown';
 
-    // Look up ADMIN_USER_ID's email to send to
+    // Store in DB via service role (bypasses RLS)
     const supabaseAdmin = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+
+    const { error: dbError } = await supabaseAdmin.from('contact_messages').insert({
+      user_id: locals.user.id,
+      subject,
+      message,
+      app_version: appVersion || null,
+      ip_address: ip,
+      user_agent: userAgent
+    });
+    if (dbError) {
+      console.error('[supportContact] DB insert failed:', dbError.message);
+      // Non-fatal: still attempt to send the email
+    }
+
+    // Look up ADMIN_USER_ID's email to send to
     const { data: adminData } = await supabaseAdmin.auth.admin.getUserById(ADMIN_USER_ID);
     const adminEmail = adminData?.user?.email;
 
@@ -310,6 +331,7 @@ export const actions: Actions = {
       });
     }
 
+    const planLabel = locals.plan === 'plus' ? 'Plus' : 'Free';
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -320,8 +342,8 @@ export const actions: Actions = {
         from: EMAIL_FROM,
         to: adminEmail,
         reply_to: fromEmail,
-        subject: `[Plus Support] ${subject}`,
-        text: `From: ${fromName} <${fromEmail}>\nUser ID: ${locals.user.id}\nApp version: ${appVersion || 'unknown'}\n\n${message}`
+        subject: `[${planLabel} Support] ${subject}`,
+        text: `From: ${fromName} <${fromEmail}>\nUser ID: ${locals.user.id}\nPlan: ${planLabel}\nApp version: ${appVersion || 'unknown'}\nIP: ${ip ?? 'unknown'}\n\n${message}`
       })
     });
 
