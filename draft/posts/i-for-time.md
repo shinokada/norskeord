@@ -1,6 +1,5 @@
-
 👉 **“i” is used for time**
-But not *all* time expressions. There are **two different meanings**:
+But not _all_ time expressions. There are **two different meanings**:
 
 ---
 
@@ -8,12 +7,12 @@ But not *all* time expressions. There are **two different meanings**:
 
 This is what you’re thinking of:
 
-* Jeg bodde der **i to år**
-* Jeg jobbet **i tre timer**
-* Hun studerte **i fem år**
+- Jeg bodde der **i to år**
+- Jeg jobbet **i tre timer**
+- Hun studerte **i fem år**
 
 👉 This means:
-➡️ *for a period of time*
+➡️ _for a period of time_
 
 ---
 
@@ -25,19 +24,19 @@ Compare:
 
 ### ✅ Duration (correct)
 
-* Jeg bodde der **i to år**
+- Jeg bodde der **i to år**
   (= I lived there for two years)
 
 ### ❌ Wrong
 
-* Jeg har bodd der i to år ❌ (sometimes wrong!)
+- Jeg har bodd der i to år ❌ (sometimes wrong!)
 
 ### ✅ Correct (ongoing situation)
 
-* Jeg har bodd der **i to år nå**
-* Jeg har bodd der **i to år allerede**
+- Jeg har bodd der **i to år nå**
+- Jeg har bodd der **i to år allerede**
 
-👉 With **present perfect**, “i” often needs context like *nå / allerede*
+👉 With **present perfect**, “i” often needs context like _nå / allerede_
 
 ---
 
@@ -45,12 +44,12 @@ Compare:
 
 This is where learners mix things up:
 
-* Jeg flyttet hit **for to år siden**
+- Jeg flyttet hit **for to år siden**
   = I moved here two years ago
 
 👉 NOT:
 
-* ❌ i to år siden
+- ❌ i to år siden
 
 ---
 
@@ -58,13 +57,13 @@ This is where learners mix things up:
 
 Used for specific periods/events:
 
-* **på mandag**
-* **på kvelden**
-* **på vinteren**
+- **på mandag**
+- **på kvelden**
+- **på vinteren**
 
 But:
 
-* **i dag**, **i morgen**, **i går**
+- **i dag**, **i morgen**, **i går**
 
 👉 No perfect logic—must learn patterns
 
@@ -74,17 +73,17 @@ But:
 
 ### A.
 
-* Jeg bodde der **i to år**
+- Jeg bodde der **i to år**
   → duration (finished)
 
 ### B.
 
-* Jeg har bodd der **i to år**
+- Jeg har bodd der **i to år**
   → still true now
 
 ### C.
 
-* Jeg bodde der **for to år siden**
+- Jeg bodde der **for to år siden**
   → point in the past
 
 ---
@@ -99,13 +98,13 @@ You said:
 
 But if you want to be more specific:
 
-* Jeg har lært norsk **i to år**
-* Jeg har lært norsk **lenge**
+- Jeg har lært norsk **i to år**
+- Jeg har lært norsk **lenge**
 
 👉 Difference:
 
-* **lenge** = vague
-* **i to år** = exact
+- **lenge** = vague
+- **i to år** = exact
 
 ---
 
@@ -113,11 +112,11 @@ But if you want to be more specific:
 
 Choose: **i / for / – (no preposition)**
 
-1. Jeg bodde der ___ tre år.
-2. Jeg flyttet hit ___ tre år siden.
-3. Jeg har jobbet her ___ tre måneder.
-4. Vi sees ___ morgen.
-5. Jeg trener ___ kvelden.
+1. Jeg bodde der \_\_\_ tre år.
+2. Jeg flyttet hit \_\_\_ tre år siden.
+3. Jeg har jobbet her \_\_\_ tre måneder.
+4. Vi sees \_\_\_ morgen.
+5. Jeg trener \_\_\_ kvelden.
 
 ---
 
@@ -133,8 +132,8 @@ Choose: **i / for / – (no preposition)**
 
 # 🧠 Final rule (simple version)
 
-* **i + time = duration**
-* **for … siden = ago**
-* **på = specific days/periods**
+- **i + time = duration**
+- **for … siden = ago**
+- **på = specific days/periods**
 
 ---

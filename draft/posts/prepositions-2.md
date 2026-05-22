@@ -8,9 +8,9 @@ I’ll make it as clear and practical as possible.
 
 Think of it like this:
 
-* **i** → inside a time period
-* **på** → specific / habitual time points
-* **om** → future / “in (time)”
+- **i** → inside a time period
+- **på** → specific / habitual time points
+- **om** → future / “in (time)”
 
 ---
 
@@ -18,19 +18,19 @@ Think of it like this:
 
 Used for:
 
-* days (some cases)
-* months, years
-* parts of the day
+- days (some cases)
+- months, years
+- parts of the day
 
 ### Examples:
 
-* **i dag** = today
-* **i morgen** = tomorrow
-* **i går** = yesterday
-* **i april**, **i 2024**
-* **i sommer**
+- **i dag** = today
+- **i morgen** = tomorrow
+- **i går** = yesterday
+- **i april**, **i 2024**
+- **i sommer**
 
-👉 Think: *inside a time frame*
+👉 Think: _inside a time frame_
 
 ---
 
@@ -38,17 +38,17 @@ Used for:
 
 Used for:
 
-* days of the week
-* parts of the day (more specific/habitual)
-* events
+- days of the week
+- parts of the day (more specific/habitual)
+- events
 
 ### Examples:
 
-* **på mandag**
-* **på kvelden**
-* **på morgenen**
-* **på ferie**
-* **på fest**
+- **på mandag**
+- **på kvelden**
+- **på morgenen**
+- **på ferie**
+- **på fest**
 
 👉 Often = something scheduled or recurring
 
@@ -56,8 +56,8 @@ Used for:
 
 # ⚠️ Key contrast (very important)
 
-* **i kveld** = tonight (general)
-* **på kvelden** = in the evening (habit / general time)
+- **i kveld** = tonight (general)
+- **på kvelden** = in the evening (habit / general time)
 
 ---
 
@@ -65,13 +65,13 @@ Used for:
 
 Used for:
 
-* something that will happen after some time
+- something that will happen after some time
 
 ### Examples:
 
-* Vi sees **om to dager**
-* Jeg er ferdig **om en time**
-* Hun kommer **om litt**
+- Vi sees **om to dager**
+- Jeg er ferdig **om en time**
+- Hun kommer **om litt**
 
 👉 Think:
 ➡️ “after X time from now”
@@ -82,36 +82,36 @@ Used for:
 
 ### A.
 
-* Jeg reiser **i morgen**
+- Jeg reiser **i morgen**
   → fixed day (tomorrow)
 
 ### B.
 
-* Jeg reiser **om to dager**
+- Jeg reiser **om to dager**
   → after two days from now
 
 ---
 
 ### A.
 
-* Jeg trener **på kvelden**
+- Jeg trener **på kvelden**
   → habit
 
 ### B.
 
-* Jeg trener **i kveld**
+- Jeg trener **i kveld**
   → specific evening (today)
 
 ---
 
 ### A.
 
-* Jeg bodde der **i tre år**
+- Jeg bodde der **i tre år**
   → duration
 
 ### B.
 
-* Jeg flyttet hit **for tre år siden**
+- Jeg flyttet hit **for tre år siden**
   → past point
 
 ---
@@ -144,21 +144,21 @@ Choose: **i / på / om**
 
 ### A.
 
-1. Vi sees ___ to dager.
-2. Jeg trener ___ morgenen.
-3. Hun kommer ___ kveld.
-4. Jeg begynner ___ mandag.
-5. Jeg er ferdig ___ en time.
+1. Vi sees \_\_\_ to dager.
+2. Jeg trener \_\_\_ morgenen.
+3. Hun kommer \_\_\_ kveld.
+4. Jeg begynner \_\_\_ mandag.
+5. Jeg er ferdig \_\_\_ en time.
 
 ---
 
 ### B.
 
-6. Jeg liker å lese ___ kvelden.
-7. Vi dro dit ___ sommeren.
-8. Jeg besøker deg ___ morgen.
-9. Han flyttet hit ___ to år siden.
-10. Vi skal på ferie ___ juli.
+6. Jeg liker å lese \_\_\_ kvelden.
+7. Vi dro dit \_\_\_ sommeren.
+8. Jeg besøker deg \_\_\_ morgen.
+9. Han flyttet hit \_\_\_ to år siden.
+10. Vi skal på ferie \_\_\_ juli.
 
 ---
 
@@ -179,10 +179,10 @@ Choose: **i / på / om**
 
 # 🧠 Final cheat sheet
 
-* **i morgen / i dag / i går**
-* **på mandag / på kvelden**
-* **om to dager / om en time**
-* **i tre år (duration)**
-* **for tre år siden (ago)**
+- **i morgen / i dag / i går**
+- **på mandag / på kvelden**
+- **om to dager / om en time**
+- **i tre år (duration)**
+- **for tre år siden (ago)**
 
 ---

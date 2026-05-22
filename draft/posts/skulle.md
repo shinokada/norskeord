@@ -1,4 +1,4 @@
-Her betyr **«skulle»** ikke bare *would* eller *should*. I denne setningen betyr det ofte **«var planlagt å / skulle til å / was going to / was supposed to»**.
+Her betyr **«skulle»** ikke bare _would_ eller _should_. I denne setningen betyr det ofte **«var planlagt å / skulle til å / was going to / was supposed to»**.
 
 Setningen:
 
@@ -19,27 +19,24 @@ fortid → plan → handling
 
 Eksempler:
 
-* **Jeg skulle møte henne klokka fem.**
+- **Jeg skulle møte henne klokka fem.**
   = I was going to / was supposed to meet her at five.
 
-* **Vi skulle kjøpe hus, men ombestemte oss.**
+- **Vi skulle kjøpe hus, men ombestemte oss.**
   = We were going to buy a house, but changed our minds.
 
-* **Toget skulle gå klokka åtte.**
+- **Toget skulle gå klokka åtte.**
   = The train was scheduled to leave at eight.
 
 **«Skulle»** kan ha flere betydninger:
 
 1. **plan / intention / was going to** ✅ (her)
-
-   * *Han skulle reise hjem.*
+   - _Han skulle reise hjem._
 
 2. **burde / should**
-
-   * *Du skulle ringe moren din.*
+   - _Du skulle ringe moren din._
 
 3. **hypotetisk / if ... were to**
-
-   * *Hvis det skulle regne, blir vi hjemme.*
+   - _Hvis det skulle regne, blir vi hjemme._
 
 I setningen din er betydningen **nr. 1: plan eller det som var meningen å skje**.

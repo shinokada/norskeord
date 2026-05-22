@@ -6,11 +6,11 @@ Det kan brukes på to måter:
 
 Da betyr det at noe er **klart eller sikkert**.
 
-* **Det er sikkert at hun kommer.**
-  = *It is certain that she is coming.*
+- **Det er sikkert at hun kommer.**
+  = _It is certain that she is coming._
 
-* **Én ting er sikkert: Vi må gjøre noe.**
-  = *One thing is certain: We have to do something.*
+- **Én ting er sikkert: Vi må gjøre noe.**
+  = _One thing is certain: We have to do something._
 
 Her betyr **sikkert** = **certain / definite**.
 
@@ -20,12 +20,12 @@ Her betyr **sikkert** = **certain / definite**.
 
 I dagligtale betyr det ofte **“probably”**.
 
-* **Kommer han i kveld?**
+- **Kommer han i kveld?**
   — **Det er sikkert.**
-  = *Probably.* / *Most likely.*
+  = _Probably._ / _Most likely._
 
-* **Hun er sikkert hjemme nå.**
-  = *She is probably home now.*
+- **Hun er sikkert hjemme nå.**
+  = _She is probably home now._
 
 Her betyr **sikkert** = **probably / likely**, ikke 100 % sikkert.
 
@@ -33,16 +33,16 @@ Her betyr **sikkert** = **probably / likely**, ikke 100 % sikkert.
 
 ### Forskjell:
 
-* **Det er sikkert at …** → **certainty** (helt sikkert)
-* **Han er sikkert …** → ofte **probability** (sannsynligvis)
+- **Det er sikkert at …** → **certainty** (helt sikkert)
+- **Han er sikkert …** → ofte **probability** (sannsynligvis)
 
 ---
 
 Liten grammatikk:
 **det** er et **formelt subjekt** (dummy subject), som i:
 
-* **Det regner**
-* **Det er vanskelig**
-* **Det er sikkert**
+- **Det regner**
+- **Det er vanskelig**
+- **Det er sikkert**
 
 Her betyr **det** ikke noe konkret; det bare fyller subjektplassen.

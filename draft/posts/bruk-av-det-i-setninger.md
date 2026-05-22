@@ -9,10 +9,10 @@ Godt spørsmål. Her er forskjellen:
    → **«Mange små poser»** er subjektet.
    → Dette er den vanlige, direkte setningsbygningen.
 
-* **Mange små poser** = subjekt
-* **kommer ut** = verbal
+- **Mange små poser** = subjekt
+- **kommer ut** = verbal
 
-Betydning: *Many small bags come out.*
+Betydning: _Many small bags come out._
 
 ---
 
@@ -20,17 +20,17 @@ Betydning: *Many small bags come out.*
    → Her bruker norsk **formelt subjekt**: **det**.
    → Det egentlige subjektet (**mange små poser**) kommer senere i setningen.
 
-* **Det** = formelt subjekt (tom plassholder)
-* **kommer ut** = verbal
-* **mange små poser** = egentlige subjekt
+- **Det** = formelt subjekt (tom plassholder)
+- **kommer ut** = verbal
+- **mange små poser** = egentlige subjekt
 
 Betydningen er nesten den samme:
-*There come out many small bags / Many small bags come out.*
+_There come out many small bags / Many small bags come out._
 
 På engelsk ligner det på **there is / there are**:
 
-* **There are many small bags coming out.**
-* Norsk: **Det kommer ut mange små poser.**
+- **There are many small bags coming out.**
+- Norsk: **Det kommer ut mange små poser.**
 
 Her betyr **det** egentlig ikke noe konkret; det bare fyller subjektplassen.
 
@@ -40,24 +40,24 @@ Her betyr **det** egentlig ikke noe konkret; det bare fyller subjektplassen.
 
 På norsk må en helsetning vanligvis ha noe i subjektplass først. Når subjektet er:
 
-* **ukjent**
-* **ny informasjon**
-* **ubestemt** (ikke bestemt form)
+- **ukjent**
+- **ny informasjon**
+- **ubestemt** (ikke bestemt form)
 
 bruker vi ofte **det**.
 
 Eksempler:
 
-* **Det står en mann utenfor.**
+- **Det står en mann utenfor.**
   (= En mann står utenfor.)
 
-* **Det ligger en bok på bordet.**
+- **Det ligger en bok på bordet.**
   (= En bok ligger på bordet.)
 
-* **Det skjedde en ulykke.**
+- **Det skjedde en ulykke.**
   (= En ulykke skjedde.)
 
-* **Det kom mange mennesker.**
+- **Det kom mange mennesker.**
   (= Mange mennesker kom.)
 
 ---
@@ -75,15 +75,15 @@ Også mulig:
 
 Forskjellig fokus:
 
-* **Det kom en katt …** → *det skjedde noe; hva var det? en katt kom*
-* **En katt kom …** → fokus på katten fra start
+- **Det kom en katt …** → _det skjedde noe; hva var det? en katt kom_
+- **En katt kom …** → fokus på katten fra start
 
 ---
 
 I setningen din:
 
-* **Mange små poser kommer ut** → fokus på **posene**
-* **Det kommer ut mange små poser** → fokus på **det som skjer / det som kommer ut**
+- **Mange små poser kommer ut** → fokus på **posene**
+- **Det kommer ut mange små poser** → fokus på **det som skjer / det som kommer ut**
 
 Liten nyanse, nesten samme mening.
 

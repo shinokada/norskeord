@@ -1,13 +1,13 @@
 ---
 title: 'God vs Bra vs Grei — When "Good" Fades Into "Okay"'
-description: "God is genuinely good. Bra is solidly positive. Grei is just okay — acceptable, decent, nothing special."
+description: 'God is genuinely good. Bra is solidly positive. Grei is just okay — acceptable, decent, nothing special.'
 slug: god-bra-grei
 cefr: A2
 publishedAt:
 tags: [adjectives, comparison, vocabulary]
 ---
 
-> **TL;DR:** *God*, *bra*, and *grei* form a scale from strong to neutral. Understanding the difference keeps you from accidentally calling something mediocre when you meant it was great.
+> **TL;DR:** _God_, _bra_, and _grei_ form a scale from strong to neutral. Understanding the difference keeps you from accidentally calling something mediocre when you meant it was great.
 
 ## Kort forklaring
 
@@ -89,11 +89,11 @@ _He's a decent guy._
 
 ## Sammenligningstabell
 
-|          | Styrke    | Tone                          | Eksempel           |
-| -------- | --------- | ----------------------------- | ------------------ |
-| **god**  | Sterk     | Genuint bra / høy kvalitet    | God bok · god venn |
-| **bra**  | Middels+  | Solid positivt · allsidig     | Bra film · bra idé |
-| **grei** | Nøytral   | Ok · akseptabelt · «ikke noe» | Grei film · greit  |
+|          | Styrke   | Tone                          | Eksempel           |
+| -------- | -------- | ----------------------------- | ------------------ |
+| **god**  | Sterk    | Genuint bra / høy kvalitet    | God bok · god venn |
+| **bra**  | Middels+ | Solid positivt · allsidig     | Bra film · bra idé |
+| **grei** | Nøytral  | Ok · akseptabelt · «ikke noe» | Grei film · greit  |
 
 ---
 

@@ -14,10 +14,10 @@ Perfect—that’s the **natural and correct version**:
 
 # 🧠 Word by word
 
-* **jeg** = I
-* **må** = must / need to
-* **få tak i** = get hold of / manage to reach
-* **henne** = her
+- **jeg** = I
+- **må** = must / need to
+- **få tak i** = get hold of / manage to reach
+- **henne** = her
 
 ---
 
@@ -35,20 +35,20 @@ It is used when there is some difficulty or uncertainty.
 
 ### 1. You can’t reach someone
 
-* Jeg må få tak i henne
+- Jeg må få tak i henne
   → I need to reach her
 
-* Jeg får ikke tak i henne
+- Jeg får ikke tak i henne
   → I can’t reach her
 
 ---
 
 ### 2. Finding something
 
-* Jeg må få tak i en ny telefon
+- Jeg må få tak i en ny telefon
   → I need to get a new phone
 
-* Klarer du å få tak i billettene?
+- Klarer du å få tak i billettene?
   → Can you get hold of the tickets?
 
 ---
@@ -70,7 +70,7 @@ It is used when there is some difficulty or uncertainty.
 
 So:
 
-* **få tak i** = manage to reach/get something
+- **få tak i** = manage to reach/get something
 
 ---
 
@@ -78,7 +78,7 @@ So:
 
 Think:
 
-> “Can I *get hold of* her?”
+> “Can I _get hold of_ her?”
 
 = **få tak i henne**
 
@@ -86,9 +86,9 @@ Think:
 
 # ✍️ Examples
 
-* Jeg prøver å få tak i legen
-* Har du fått tak i henne?
-* Jeg fikk ikke tak i ham i går
+- Jeg prøver å få tak i legen
+- Har du fått tak i henne?
+- Jeg fikk ikke tak i ham i går
 
 ---
 

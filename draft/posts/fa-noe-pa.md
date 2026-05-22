@@ -6,11 +6,11 @@
 
 # 🧠 Literal breakdown:
 
-* **jeg** = I
-* **får** = get / manage / succeed
-* **den** = it (object, often clothing or item)
-* **ikke** = not
-* **på** = on / on (put on / wear)
+- **jeg** = I
+- **får** = get / manage / succeed
+- **den** = it (object, often clothing or item)
+- **ikke** = not
+- **på** = on / on (put on / wear)
 
 ---
 
@@ -27,19 +27,16 @@ You use this when talking about **clothes or things you put on your body**:
 
 ### Examples:
 
-* Jacket too small:
-
-  * Jeg får ikke jakken på
+- Jacket too small:
+  - Jeg får ikke jakken på
     → I can’t get the jacket on
 
-* Shoes too tight:
-
-  * Jeg får ikke skoene på
+- Shoes too tight:
+  - Jeg får ikke skoene på
     → I can’t get the shoes on
 
-* Ring stuck:
-
-  * Jeg får ikke ringen på
+- Ring stuck:
+  - Jeg får ikke ringen på
     → I can’t get the ring on
 
 ---
@@ -50,9 +47,9 @@ You use this when talking about **clothes or things you put on your body**:
 
 It’s a very Norwegian structure:
 
-* få den på = get it on
-* få skoene på = get the shoes on
-* få jakken på = get the jacket on
+- få den på = get it on
+- få skoene på = get the shoes on
+- få jakken på = get the jacket on
 
 ---
 
@@ -60,12 +57,12 @@ It’s a very Norwegian structure:
 
 ### Positive:
 
-* Jeg får den på
+- Jeg får den på
   → I can put it on
 
 ### Negative:
 
-* Jeg får den ikke på
+- Jeg får den ikke på
   → I can’t put it on
 
 ---
@@ -81,9 +78,9 @@ It means:
 
 # 🧠 Similar structures
 
-* Jeg får det til = I manage it
-* Jeg får den ikke til = I can’t manage it
-* Jeg får den ikke på = I can’t get it on
+- Jeg får det til = I manage it
+- Jeg får den ikke til = I can’t manage it
+- Jeg får den ikke på = I can’t get it on
 
 ---
 
@@ -99,7 +96,7 @@ It means:
 
 # 🧠 Simple rule
 
-* **ta på seg** = neutral “put on”
-* **få på** = “manage to put on (often difficult)”
+- **ta på seg** = neutral “put on”
+- **få på** = “manage to put on (often difficult)”
 
 ---

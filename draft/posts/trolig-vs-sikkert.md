@@ -6,19 +6,19 @@
 
 Examples:
 
-* **Han kommer trolig i morgen.**
+- **Han kommer trolig i morgen.**
   = He will **probably** come tomorrow.
   → I think so, but I’m not sure.
 
-* **Det blir trolig regn senere.**
+- **Det blir trolig regn senere.**
   = It will **probably** rain later.
 
-* **Hun er trolig hjemme nå.**
+- **Hun er trolig hjemme nå.**
   = She is **likely** at home now.
 
 You often see **trolig** in news or formal writing:
 
-* **Politiet tror brannen var påsatt. Det var trolig en ulykke.**
+- **Politiet tror brannen var påsatt. Det var trolig en ulykke.**
   = It was probably an accident.
 
 ---
@@ -31,14 +31,14 @@ You often see **trolig** in news or formal writing:
 
 When expressing strong certainty:
 
-* **Det er sikkert.**
+- **Det er sikkert.**
   = That is certain.
 
-* **Han kommer sikkert.**
+- **Han kommer sikkert.**
   = He is **definitely** coming.
   → I’m quite sure.
 
-* **Nå er våren kommet, helt sikkert.**
+- **Nå er våren kommet, helt sikkert.**
   = Spring has arrived, for sure.
 
 This is **stronger than trolig**.
@@ -52,13 +52,13 @@ Certainty scale:
 
 In everyday Norwegian, **sikkert** often means **probably**, similar to English “probably / I bet / I’m sure”.
 
-* **Han er sikkert hjemme nå.**
+- **Han er sikkert hjemme nå.**
   = He’s probably home now.
 
-* **Det går sikkert bra.**
+- **Det går sikkert bra.**
   = It’ll probably / surely be fine.
 
-* **Hun har sikkert glemt det.**
+- **Hun har sikkert glemt det.**
   = She’s probably forgotten it.
 
 Here it does **not** mean 100% certainty—it’s more like a confident guess.
@@ -69,13 +69,13 @@ Here it does **not** mean 100% certainty—it’s more like a confident guess.
 
 Compare:
 
-* **Han kommer trolig i morgen.**
+- **Han kommer trolig i morgen.**
   → neutral estimate (“likely”)
 
-* **Han kommer sikkert i morgen.**
+- **Han kommer sikkert i morgen.**
   → confident expectation (“I’m pretty sure”)
 
-* **Han kommer kanskje i morgen.**
+- **Han kommer kanskje i morgen.**
   → much less certain (“maybe”)
 
 ---
@@ -87,15 +87,15 @@ Compare:
 
 Norwegians often say:
 
-* **Det ordner seg sikkert.** (natural speech)
+- **Det ordner seg sikkert.** (natural speech)
 
 More formal:
 
-* **Det vil trolig ordne seg.**
+- **Det vil trolig ordne seg.**
 
 ---
 
-A related word is **sannsynligvis**. It sits somewhat between **trolig** and conversational **sikkert** in tone. 
+A related word is **sannsynligvis**. It sits somewhat between **trolig** and conversational **sikkert** in tone.
 
 Here’s how **trolig**, **sannsynligvis**, and **sikkert** differ:
 
@@ -109,17 +109,17 @@ Here’s how **trolig**, **sannsynligvis**, and **sikkert** differ:
 
 This is often used when something seems probable based on facts or clues.
 
-* **Det blir trolig regn i kveld.**
+- **Det blir trolig regn i kveld.**
   → Rain is likely tonight.
 
-* **Han er trolig hjemme.**
+- **Han er trolig hjemme.**
   → He’s likely at home.
 
 Feeling: **“Based on what I know, this seems likely.”**
 
 This sounds a bit like news language:
 
-* **Årsaken var trolig teknisk feil.**
+- **Årsaken var trolig teknisk feil.**
   = The cause was probably a technical fault.
 
 ---
@@ -128,8 +128,8 @@ This sounds a bit like news language:
 
 This is the most neutral general word for “probably.”
 
-* **Det blir sannsynligvis regn i kveld.**
-* **Han er sannsynligvis hjemme.**
+- **Det blir sannsynligvis regn i kveld.**
+- **Han er sannsynligvis hjemme.**
 
 Feeling: **plain probability**, neither especially formal nor especially emotional.
 
@@ -141,10 +141,10 @@ Compared with **trolig**, it often sounds a little less formal and more common i
 
 This often expresses the speaker’s confidence or intuition.
 
-* **Det blir sikkert regn i kveld.**
+- **Det blir sikkert regn i kveld.**
   → I’m pretty sure it’ll rain.
 
-* **Han er sikkert hjemme.**
+- **Han er sikkert hjemme.**
   → He’s probably home / I bet he’s home.
 
 Feeling: **“I strongly suspect this is true.”**
@@ -157,28 +157,28 @@ This is more subjective (speaker feeling) than **trolig** / **sannsynligvis**.
 
 Imagine your friend is late:
 
-* **Han kommer trolig snart.**
+- **Han kommer trolig snart.**
   → It seems likely he’ll come soon. (neutral observation)
 
-* **Han kommer sannsynligvis snart.**
+- **Han kommer sannsynligvis snart.**
   → He’ll probably come soon. (neutral probability)
 
-* **Han kommer sikkert snart.**
+- **Han kommer sikkert snart.**
   → He’ll probably come soon / I’m sure he will. (confident)
 
 ---
 
 ## Quick memory trick
 
-* **trolig** → **likely** (fact-based guess)
-* **sannsynligvis** → **probably** (neutral)
-* **sikkert** → **I’m pretty sure** (confident guess)
+- **trolig** → **likely** (fact-based guess)
+- **sannsynligvis** → **probably** (neutral)
+- **sikkert** → **I’m pretty sure** (confident guess)
 
 ---
 
 One small note: **sikkert** can also mean **certainly / definitely**, depending on context:
 
-* **Er du sikker?** = Are you sure?
-* **Ja, helt sikkert.** = Yes, absolutely / definitely.
+- **Er du sikker?** = Are you sure?
+- **Ja, helt sikkert.** = Yes, absolutely / definitely.
 
 That meaning is stronger than “probably.” Context tells you which meaning is meant.

@@ -3,7 +3,6 @@
 Currently I have src/routes/admin/lessons directory made for email service.
 Should I use this for blog?
 
-
 ## Example title
 
 - “Difference Between ‘sakte’ and ‘langsomt’”
@@ -24,16 +23,16 @@ Should I use this for blog?
 - “When to Use ‘ligge’, ‘stå’, and ‘sitte’”
 - “Sakte vs langsomt Explained”
 
-
 ## Description
+
 Each post should take a different angle — register contrast, semantic boundary, sensory distinction, practical usage rule, and a real-world framing — so the listing reads as a curated collection rather than a template.
 
 For examples
+
 1. Lead with the answer — "Skifte is broader; bytte always involves a swap."
 2. Lead with the confusion — "Easy to mix up, but they point in opposite directions."
 3. Lead with a concrete use case — "Use orke when you're tired, klare when something is too hard."
 4. Lead with what's surprising — "Nydelig is about looks — herlig is about how it feels."
-
 
 ## Post Structure
 
@@ -59,9 +58,11 @@ For examples
 - polished explanations
 
 ## Example article
+
 See published posts in src/lib/posts directory.
 
 ## To Dos
+
 Topic groupings — some drafts naturally cluster and could become stronger pillar posts:
 
 - "få" series — fa.md, fa-tak-i.md, fa-noe-pa.md could be one comprehensive "Phrasal verbs with få" post, or separate posts like your published ones.
@@ -70,6 +71,7 @@ Topic groupings — some drafts naturally cluster and could become stronger pill
 - Direction/location — direction-location.md, fram-frem.md, frem-fremme.md, fremme.md are all related and could form a mini-series.
 
 ## Suggestions about how to strengthen further
+
 1. Add a TL;DR at the very top of each post (one sentence, English). AI Overviews grab this. Your description field in the frontmatter is close, but a visible summary block at the top of the article body helps both readers and crawlers.
 2. Lean into the "as a learner" voice — the fact that these come from your own questions as someone learning Norwegian is a differentiator. A brief "I came across this sentence and was confused by..." opening makes the post feel human and trustworthy, not AI-generated.
 3. Internal linking — once you have 15–20 posts, link between related ones (e.g. the sakte-vs-langsomt post links to fort-vs-raskt). This builds topical authority around Norwegian vocabulary nuance.

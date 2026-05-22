@@ -8,31 +8,29 @@ Setningen:
 
 Grammatikken:
 
-* **det er lov å + infinitiv**
+- **det er lov å + infinitiv**
   = it is allowed / okay to ...
 
 Eksempler:
 
-* **Det er lov å feile.**
+- **Det er lov å feile.**
   = It’s okay to make mistakes.
 
-* **Er det lov å spørre?**
+- **Er det lov å spørre?**
   = Is it okay / allowed to ask?
 
-* **Det er ikke lov å røyke her.**
+- **Det er ikke lov å røyke her.**
   = Smoking is not allowed here.
 
 Pass på: **lov** kan bety forskjellige ting:
 
 1. **lov = tillatt** (adjektiv-lignende uttrykk) ✅
-
-   * Det er **lov** å være lei seg.
-   * Er det **lov** å ta bilder?
+   - Det er **lov** å være lei seg.
+   - Er det **lov** å ta bilder?
 
 2. **en lov = a law** (substantiv)
-
-   * Stortinget vedtar **lover**.
-   * Norges **lover** må følges.
+   - Stortinget vedtar **lover**.
+   - Norges **lover** må følges.
 
 Samme ord, ulik betydning.
 

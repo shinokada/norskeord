@@ -10,19 +10,19 @@ This is the most basic and neutral word.
 
 Usually about:
 
-* needing sleep
-* low energy
-* feeling tired in general
+- needing sleep
+- low energy
+- feeling tired in general
 
 ### Examples
 
-* Jeg er trøtt.
+- Jeg er trøtt.
   = I’m tired.
 
-* Jeg er så trøtt i dag.
+- Jeg er så trøtt i dag.
   = I’m so tired today.
 
-* Barna er trøtte.
+- Barna er trøtte.
   = The children are sleepy/tired.
 
 ### Important
@@ -33,38 +33,38 @@ Usually about:
 
 ## 2. **sliten** = worn out / exhausted
 
-This is stronger than *trøtt*.
+This is stronger than _trøtt_.
 
 It means:
 
-* physically exhausted
-* mentally drained
-* “worn down”
+- physically exhausted
+- mentally drained
+- “worn down”
 
 ### Examples
 
-* Jeg er helt sliten etter jobb.
+- Jeg er helt sliten etter jobb.
   = I’m completely exhausted after work.
 
-* Hun ser sliten ut.
+- Hun ser sliten ut.
   = She looks worn out.
 
-* Etter maratonet var han veldig sliten.
+- Etter maratonet var han veldig sliten.
   = After the marathon he was very exhausted.
 
-### Difference from *trøtt*
+### Difference from _trøtt_
 
-* *trøtt* → need sleep
-* *sliten* → exhausted from effort/stress
+- _trøtt_ → need sleep
+- _sliten_ → exhausted from effort/stress
 
 You can be:
 
-* trøtt without being sliten
-* sliten without being trøtt
+- trøtt without being sliten
+- sliten without being trøtt
 
 Example:
 
-* Jeg er sliten, men ikke trøtt ennå.
+- Jeg er sliten, men ikke trøtt ennå.
   = I’m exhausted, but not sleepy yet.
 
 ---
@@ -77,19 +77,19 @@ Literally “worn out.”
 
 Used for:
 
-* extreme exhaustion
-* no energy left
-* also objects that are worn out
+- extreme exhaustion
+- no energy left
+- also objects that are worn out
 
 ### Examples
 
-* Jeg er helt utslitt.
+- Jeg er helt utslitt.
   = I’m completely exhausted.
 
-* Skoene er utslitte.
+- Skoene er utslitte.
   = The shoes are worn out.
 
-This is stronger and more dramatic than *sliten*.
+This is stronger and more dramatic than _sliten_.
 
 ---
 
@@ -99,19 +99,19 @@ More formal or literary.
 
 Often:
 
-* medical
-* emotional
-* serious fatigue
+- medical
+- emotional
+- serious fatigue
 
 ### Examples
 
-* Hun var fysisk og psykisk utmattet.
+- Hun var fysisk og psykisk utmattet.
   = She was physically and mentally exhausted.
 
-* Pasienten følte seg utmattet.
+- Pasienten følte seg utmattet.
   = The patient felt fatigued.
 
-Less common in everyday casual speech than *sliten*.
+Less common in everyday casual speech than _sliten_.
 
 ---
 
@@ -121,10 +121,10 @@ These are intensifiers.
 
 ### Examples
 
-* Jeg er dønn sliten.
+- Jeg er dønn sliten.
   = I’m dead tired.
 
-* Jeg er kjempesliten.
+- Jeg er kjempesliten.
   = I’m super exhausted.
 
 Very common in spoken Norwegian.
@@ -137,21 +137,21 @@ Not physically tired.
 
 Means:
 
-* fed up
-* tired of something emotionally
+- fed up
+- tired of something emotionally
 
 ### Examples
 
-* Jeg er lei av vinteren.
+- Jeg er lei av vinteren.
   = I’m tired of winter.
 
-* Hun er lei av å vente.
+- Hun er lei av å vente.
   = She’s tired of waiting.
 
 This is closer to:
 
-* “fed up”
-* “sick of”
+- “fed up”
+- “sick of”
 
 ---
 
@@ -171,12 +171,12 @@ This is closer to:
 
 ### Very common:
 
-* trøtt og sliten
+- trøtt og sliten
   = tired and exhausted
 
 ### Example:
 
-* Jeg er trøtt og sliten etter reisen.
+- Jeg er trøtt og sliten etter reisen.
   = I’m tired and exhausted after the trip.
 
 Norwegians often use both together.
@@ -193,8 +193,8 @@ Usually sounds temporary and normal.
 
 Can sometimes imply:
 
-* stress
-* hard work
-* emotional burden
+- stress
+- hard work
+- emotional burden
 
-So *sliten* can feel heavier emotionally.
+So _sliten_ can feel heavier emotionally.

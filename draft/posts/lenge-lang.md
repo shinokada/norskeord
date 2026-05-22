@@ -3,43 +3,44 @@ Explanation 1
 På norsk bruker vi **ikke ett ord** som “long” på engelsk. Vi deler det opp:
 
 ---
+
 Great question—this is a classic Norwegian distinction that trips people up.
 
 At a high level:
 
-* ***lang*** = adjective → describes a noun
-* ***lenge*** = adverb → describes a verb (time/duration)
+- **_lang_** = adjective → describes a noun
+- **_lenge_** = adverb → describes a verb (time/duration)
 
 ---
 
 ## 1. **lang** (adjective = “long”)
 
-You use ***lang*** to describe *things* (length, duration, etc.).
+You use **_lang_** to describe _things_ (length, duration, etc.).
 
 ### Examples:
 
-* En **lang** vei = a long road
-* En **lang** dag = a long day
-* Et **langt** møte = a long meeting
-* Lange ferier = long vacations
+- En **lang** vei = a long road
+- En **lang** dag = a long day
+- Et **langt** møte = a long meeting
+- Lange ferier = long vacations
 
 👉 It changes form depending on gender/number:
 
-* lang (en-word)
-* langt (et-word)
-* lange (plural/definite)
+- lang (en-word)
+- langt (et-word)
+- lange (plural/definite)
 
 ---
 
 ## 2. **lenge** (adverb = “for a long time”)
 
-You use ***lenge*** to describe *how long something happens*.
+You use **_lenge_** to describe _how long something happens_.
 
 ### Examples:
 
-* Jeg ventet **lenge** = I waited a long time
-* Hun bodde der **lenge** = She lived there for a long time
-* Det varer **lenge** = It lasts a long time
+- Jeg ventet **lenge** = I waited a long time
+- Hun bodde der **lenge** = She lived there for a long time
+- Det varer **lenge** = It lasts a long time
 
 👉 It does **not** change form.
 
@@ -47,16 +48,16 @@ You use ***lenge*** to describe *how long something happens*.
 
 ## 3. Key difference (simple rule)
 
-* **lang → thing (noun)**
-* **lenge → action (verb)**
+- **lang → thing (noun)**
+- **lenge → action (verb)**
 
 Compare:
 
-* Det var en **lang** dag
-  → describes the *day* (noun)
+- Det var en **lang** dag
+  → describes the _day_ (noun)
 
-* Jeg jobbet **lenge**
-  → describes the *working* (verb)
+- Jeg jobbet **lenge**
+  → describes the _working_ (verb)
 
 ---
 
@@ -64,11 +65,11 @@ Compare:
 
 ### ❌ Wrong:
 
-* Jeg jobbet **lang**
+- Jeg jobbet **lang**
 
 ### ✅ Correct:
 
-* Jeg jobbet **lenge**
+- Jeg jobbet **lenge**
 
 ---
 
@@ -76,10 +77,10 @@ Compare:
 
 This can mean **“as long as”** or **“for a long time”**, depending on context:
 
-* Jeg blir her **så lenge** du vil
+- Jeg blir her **så lenge** du vil
   = I stay as long as you want
 
-* Jeg har ventet **så lenge**
+- Jeg har ventet **så lenge**
   = I have waited so long
 
 ---
@@ -92,11 +93,11 @@ Explanation 2
 
 Eksempler:
 
-* Jeg ventet **lenge**.
-* Hun har bodd her **lenge**.
-* Det er **lenge siden** jeg så ham.
+- Jeg ventet **lenge**.
+- Hun har bodd her **lenge**.
+- Det er **lenge siden** jeg så ham.
 
-👉 Tenk: *hvor lenge?* (how long time)
+👉 Tenk: _hvor lenge?_ (how long time)
 
 ---
 
@@ -106,11 +107,11 @@ Eksempler:
 
 Eksempler:
 
-* En **lang** vei
-* Et **langt** bord
-* Mange **lange** dager
+- En **lang** vei
+- Et **langt** bord
+- Mange **lange** dager
 
-👉 Tenk: *hvor lang?* (how long physically)
+👉 Tenk: _hvor lang?_ (how long physically)
 
 ---
 
@@ -118,18 +119,18 @@ Eksempler:
 
 Disse kan ikke byttes:
 
-❌ *Jeg ventet lang*
+❌ _Jeg ventet lang_
 ✔️ Jeg ventet **lenge**
 
-❌ *En lenge vei*
+❌ _En lenge vei_
 ✔️ En **lang** vei
 
 ---
 
 ## 🧠 En enkel huskeregel
 
-* **Tid → lenge (med -e)**
-* **Ting/avstand → lang**
+- **Tid → lenge (med -e)**
+- **Ting/avstand → lang**
 
 ---
 
@@ -137,8 +138,8 @@ Disse kan ikke byttes:
 
 Noen ganger brukes **lang** også med tid, men da betyr det noe litt annet:
 
-* En **lang dag** → føles tung/slitsom (ikke bare varighet)
-* Jeg ventet **lenge** → handler bare om tid
+- En **lang dag** → føles tung/slitsom (ikke bare varighet)
+- Jeg ventet **lenge** → handler bare om tid
 
 ---
 

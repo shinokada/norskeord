@@ -7,15 +7,15 @@
 # 🧠 Meaning:
 
 👉 **She doesn’t know where I have gone / what has happened to me**
-👉 More naturally in English: *She doesn’t know where I am / where I’ve disappeared to*
+👉 More naturally in English: _She doesn’t know where I am / where I’ve disappeared to_
 
 ---
 
 # 🔍 Word by word:
 
-* **hun vet ikke** = she doesn’t know
-* **hvor** = where
-* **det har blitt av meg** = what has become of me / where I’ve ended up
+- **hun vet ikke** = she doesn’t know
+- **hvor** = where
+- **det har blitt av meg** = what has become of me / where I’ve ended up
 
 ---
 
@@ -31,7 +31,7 @@ It is a fixed expression and NOT literal.
 
 Literally:
 
-* “what has become of me”
+- “what has become of me”
 
 But in natural Norwegian:
 👉 **where I have gone / where I am now**
@@ -42,12 +42,12 @@ But in natural Norwegian:
 
 ### Normal:
 
-* Hun vet ikke hvor jeg er
+- Hun vet ikke hvor jeg er
   → She doesn’t know where I am
 
 ### More emotional / idiomatic:
 
-* Hun vet ikke hvor det har blitt av meg
+- Hun vet ikke hvor det har blitt av meg
   → She doesn’t know where I’ve disappeared to
 
 ---
@@ -56,20 +56,20 @@ But in natural Norwegian:
 
 ### 1. People
 
-* Hva har blitt av ham?
+- Hva har blitt av ham?
   → What happened to him?
 
-* Hvor ble det av henne?
+- Hvor ble det av henne?
   → Where did she go?
 
 ---
 
 ### 2. Things
 
-* Hva ble det av nøklene?
+- Hva ble det av nøklene?
   → What happened to the keys?
 
-* Jeg vet ikke hva som ble av boken
+- Jeg vet ikke hva som ble av boken
   → I don’t know what happened to the book
 
 ---
@@ -84,15 +84,15 @@ You don’t translate it word-for-word.
 
 # 🔥 Simple meaning rule
 
-* **hvor jeg er** = factual
-* **hvor det har blitt av meg** = slightly emotional / “where I disappeared to”
+- **hvor jeg er** = factual
+- **hvor det har blitt av meg** = slightly emotional / “where I disappeared to”
 
 ---
 
 # 🎭 Tone difference
 
-* Neutral: *Hun vet ikke hvor jeg er*
-* Slightly dramatic/expressive: *Hun vet ikke hvor det har blitt av meg*
+- Neutral: _Hun vet ikke hvor jeg er_
+- Slightly dramatic/expressive: _Hun vet ikke hvor det har blitt av meg_
 
 ---
 

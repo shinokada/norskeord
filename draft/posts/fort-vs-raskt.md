@@ -1,4 +1,4 @@
-Både **«fort»** og **«raskt»** betyr omtrent *quickly / fast* på engelsk, men de brukes litt forskjellig.
+Både **«fort»** og **«raskt»** betyr omtrent _quickly / fast_ på engelsk, men de brukes litt forskjellig.
 
 ## 1. «Fort» = vanligst om tempo eller fart i handlinger
 
@@ -6,10 +6,10 @@ Både **«fort»** og **«raskt»** betyr omtrent *quickly / fast* på engelsk, 
 
 Eksempler:
 
-* Han løper fort.
-* Kan du snakke litt fortere?
-* Bilen kjører fort.
-* Det gikk fort!
+- Han løper fort.
+- Kan du snakke litt fortere?
+- Bilen kjører fort.
+- Det gikk fort!
 
 Her beskriver ordet **hvordan handlingen skjer**.
 
@@ -19,14 +19,14 @@ Her beskriver ordet **hvordan handlingen skjer**.
 
 Eksempler:
 
-* Hun svarte raskt på e-posten.
-* Situasjonen utviklet seg raskt.
-* Vi må handle raskt.
+- Hun svarte raskt på e-posten.
+- Situasjonen utviklet seg raskt.
+- Vi må handle raskt.
 
 I mange setninger kan begge brukes:
 
-* Han løp fort.
-* Han løp raskt.
+- Han løp fort.
+- Han løp raskt.
 
 Men «fort» høres ofte mer muntlig og naturlig ut i hverdagsnorsk.
 
@@ -36,16 +36,16 @@ Men «fort» høres ofte mer muntlig og naturlig ut i hverdagsnorsk.
 
 «Rask» kan beskrive en person eller ting:
 
-* en rask bil
-* en rask løsning
-* hun er veldig rask
+- en rask bil
+- en rask løsning
+- hun er veldig rask
 
 Men «fort» brukes nesten aldri som adjektiv i moderne norsk.
 
 Man sier:
 
-* ❌ en fort bil
-* ✅ en rask bil
+- ❌ en fort bil
+- ✅ en rask bil
 
 ---
 
@@ -55,13 +55,13 @@ Dette er en ekstra betydning som «raskt» ikke har.
 
 Eksempler:
 
-* Vi sees fort.
-* Han kommer fort tilbake.
+- Vi sees fort.
+- Han kommer fort tilbake.
 
 Her betyr det omtrent:
 
-* snart
-* om ikke lenge
+- snart
+- om ikke lenge
 
 ---
 

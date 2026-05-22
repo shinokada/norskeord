@@ -6,9 +6,6 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 
 ---
 
-
-
-
 ---
 
 ai-docs/implementation/email-service-implementation.md
@@ -109,12 +106,12 @@ From Relearning (forgotten):
 - Good / Easy → graduates back to Review (memorized again)
 
 So in short:
-| Legend label | FSRS State | How you get there                      |
+| Legend label | FSRS State | How you get there |
 | ------------ | ---------- | -------------------------------------- |
-| New          | New        | Never rated                            |
-| Learning     | Learning   | Rated at least once, not yet graduated |
-| Memorized    | Review     | Passed learning steps                  |
-| Forgotten    | Relearning | Hit "Again" on a memorized card        |
+| New | New | Never rated |
+| Learning | Learning | Rated at least once, not yet graduated |
+| Memorized | Review | Passed learning steps |
+| Forgotten | Relearning | Hit "Again" on a memorized card |
 
 The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 

@@ -6,14 +6,14 @@ Great—let’s make this practical and close to **Norskprøven (B1/B2)** style.
 
 Velg **lang** eller **lenge**:
 
-1. Jeg måtte vente ______ på bussen.
-2. Det var en veldig ______ film.
-3. Hun har bodd i Norge ______.
-4. Vi hadde en ______ samtale i går.
-5. Har du vært her ______?
-6. Det tok ______ tid å lære norsk.
-7. Dette er den ______ veien til sentrum.
-8. Jeg jobbet ______ i går kveld.
+1. Jeg måtte vente **\_\_** på bussen.
+2. Det var en veldig **\_\_** film.
+3. Hun har bodd i Norge **\_\_**.
+4. Vi hadde en **\_\_** samtale i går.
+5. Har du vært her **\_\_**?
+6. Det tok **\_\_** tid å lære norsk.
+7. Dette er den **\_\_** veien til sentrum.
+8. Jeg jobbet **\_\_** i går kveld.
 
 ---
 
@@ -21,11 +21,11 @@ Velg **lang** eller **lenge**:
 
 Bruk **lang** eller **lenge**:
 
-1. I går hadde jeg en __________ dag fordi …
-2. Jeg har lært norsk __________ fordi …
-3. Det var en __________ reise til …
-4. Jeg måtte vente __________ før …
-5. Vi snakket sammen __________ om …
+1. I går hadde jeg en \***\*\_\_\*\*** dag fordi …
+2. Jeg har lært norsk \***\*\_\_\*\*** fordi …
+3. Det var en \***\*\_\_\*\*** reise til …
+4. Jeg måtte vente \***\*\_\_\*\*** før …
+5. Vi snakket sammen \***\*\_\_\*\*** om …
 
 ---
 

@@ -1,7 +1,6 @@
-
 # Sentence:
 
-* **Han er lærer, og han har en time.**
+- **Han er lærer, og han har en time.**
 
 ---
 
@@ -15,7 +14,7 @@
 
 In school context:
 
-* Han har en time
+- Han har en time
   = He has a class (to teach)
 
 👉 This is the **correct meaning in your sentence**
@@ -24,8 +23,8 @@ In school context:
 
 ### Examples:
 
-* Jeg har en time i norsk
-* Læreren har en time nå
+- Jeg har en time i norsk
+- Læreren har en time nå
 
 ---
 
@@ -33,7 +32,7 @@ In school context:
 
 It can also mean duration:
 
-* Jeg ventet i en time
+- Jeg ventet i en time
   = I waited for one hour
 
 ---
@@ -42,7 +41,7 @@ It can also mean duration:
 
 ### Look at context:
 
-* **Han er lærer → teaching context**
+- **Han er lærer → teaching context**
   👉 “en time” = **lesson/class**
 
 ---
@@ -51,25 +50,25 @@ It can also mean duration:
 
 ### A.
 
-* Jeg har en time
+- Jeg har en time
   → I have a class
 
 ### B.
 
-* Jeg jobbet i en time
+- Jeg jobbet i en time
   → I worked for one hour
 
 👉 Notice:
 
-* **no “i” → class**
-* **“i” + time → duration**
+- **no “i” → class**
+- **“i” + time → duration**
 
 ---
 
 # 🧠 Key rule (super useful)
 
-* **en time** = lesson OR hour
-* **i en time** = always duration (hour)
+- **en time** = lesson OR hour
+- **i en time** = always duration (hour)
 
 ---
 

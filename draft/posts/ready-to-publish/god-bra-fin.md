@@ -7,7 +7,7 @@ publishedAt:
 tags: [adjectives, comparison, vocabulary]
 ---
 
-> **TL;DR:** English uses "good" for almost everything. Norwegian makes you choose: *god* (quality/taste), *bra* (general positive), *fin* (nice/pretty), *flink* (skilled).
+> **TL;DR:** English uses "good" for almost everything. Norwegian makes you choose: _god_ (quality/taste), _bra_ (general positive), _fin_ (nice/pretty), _flink_ (skilled).
 
 ## Kort forklaring
 
@@ -107,20 +107,21 @@ _The children were good and tidied up._
 → Well-behaved, made an effort.
 
 **Forskjell — god vs flink:**
+
 - **god i norsk** → has strong Norwegian ability
 - **flink i norsk** → skilled and hardworking at Norwegian
-*(Flink points more to effort and capability; god to the result.)*
+  _(Flink points more to effort and capability; god to the result.)_
 
 ---
 
 ## Sammenligningstabell
 
-| Norsk     | Meaning                      | Typical use               |
-| --------- | ---------------------------- | ------------------------- |
-| **god**   | good (quality, taste, moral) | mat · person · samtale    |
+| Norsk     | Meaning                      | Typical use                |
+| --------- | ---------------------------- | -------------------------- |
+| **god**   | good (quality, taste, moral) | mat · person · samtale     |
 | **bra**   | good (general, everyday)     | film · idé · «det går bra» |
-| **fin**   | nice, pretty, pleasant       | vær · jakke · dag         |
-| **flink** | skilled, capable, diligent   | i matte · til å snakke    |
+| **fin**   | nice, pretty, pleasant       | vær · jakke · dag          |
+| **flink** | skilled, capable, diligent   | i matte · til å snakke     |
 
 ---
 

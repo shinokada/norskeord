@@ -8,23 +8,23 @@ Brukes om noe som **fortsetter**, eller noe som **ikke har skjedd til nå**.
 
 ### = fortsatt / fremdeles (still)
 
-* Jeg er **ennå** sulten.
+- Jeg er **ennå** sulten.
   → I am **still** hungry.
 
-* Hun bor **ennå** i Oslo.
+- Hun bor **ennå** i Oslo.
   → She **still** lives in Oslo.
 
 ### = ikke ... ennå (not yet)
 
-* Jeg har ikke spist **ennå**.
+- Jeg har ikke spist **ennå**.
   → I haven't eaten **yet**.
 
-* Bussen har ikke kommet **ennå**.
+- Bussen har ikke kommet **ennå**.
   → The bus hasn't arrived **yet**.
 
 Her kan man ofte også si **enda** i dagligtale:
 
-* Jeg har ikke spist **enda**. ✅
+- Jeg har ikke spist **enda**. ✅
   Men **ennå** er ofte regnet som litt mer standard i skrift.
 
 ---
@@ -37,11 +37,11 @@ Her kan man ofte også si **enda** i dagligtale:
 
 I mange setninger betyr det akkurat det samme:
 
-* Er du **enda** våken?
+- Er du **enda** våken?
   = Er du **ennå** våken?
   → Are you still awake?
 
-* Har han ikke kommet **enda**?
+- Har han ikke kommet **enda**?
   = ... **ennå**
   → Hasn't he come yet?
 
@@ -51,13 +51,13 @@ I mange setninger betyr det akkurat det samme:
 
 Her er stor forskjell.
 
-* Det ble **enda** verre.
+- Det ble **enda** verre.
   → It became **even worse**.
 
-* Hun er **enda** flinkere enn før.
+- Hun er **enda** flinkere enn før.
   → She is **even better** than before.
 
-* Kan du snakke **enda** høyere?
+- Kan du snakke **enda** høyere?
   → even louder
 
 Her kan du **ikke** bruke «ennå».
@@ -84,14 +84,14 @@ Bruk **enda** når du mener:
 
 Mange nordmenn bruker **enda** nesten overalt i tale:
 
-* Jeg har ikke sett den **enda**.
-* Er du **enda** her?
+- Jeg har ikke sett den **enda**.
+- Er du **enda** her?
 
 Det høres helt naturlig ut.
 
 Men i mer formell skrift ser man ofte:
 
-* Jeg har ikke sett den **ennå**.
+- Jeg har ikke sett den **ennå**.
 
 ---
 
@@ -99,8 +99,8 @@ Mini-test:
 
 Hvilken passer best?
 
-1. «Jeg er ikke ferdig ___».
-2. «Det ble ___ vanskeligere.»
+1. «Jeg er ikke ferdig \_\_\_».
+2. «Det ble \_\_\_ vanskeligere.»
 
 Svar:
 1 → **ennå / enda** (begge)

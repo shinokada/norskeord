@@ -8,8 +8,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* Nå forstår jeg det. Det **gir mening**.
-* Det du sier **gir mening**.
+- Nå forstår jeg det. Det **gir mening**.
+- Det du sier **gir mening**.
 
 👉 Use when something becomes logical or clear.
 
@@ -21,9 +21,9 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* **Det kommer an på** været.
-* **Det kommer an på** hvor mye det koster.
-* **Det kommer an på** situasjonen.
+- **Det kommer an på** været.
+- **Det kommer an på** hvor mye det koster.
+- **Det kommer an på** situasjonen.
 
 👉 One of the most useful expressions in Norwegian.
 
@@ -35,9 +35,9 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* Det **ser ut til at** det blir regn.
-* Det **ser ut til at** han er syk.
-* Det **ser ut til at** vi er forsinket.
+- Det **ser ut til at** det blir regn.
+- Det **ser ut til at** han er syk.
+- Det **ser ut til at** vi er forsinket.
 
 👉 Use when you are not 100% sure.
 
@@ -49,8 +49,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* Du jobber her, ikke sant?
-* Ja, det **stemmer**.
+- Du jobber her, ikke sant?
+- Ja, det **stemmer**.
 
 👉 Very common in conversation.
 
@@ -62,8 +62,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* Jeg er syk, det **betyr at** jeg blir hjemme.
-* Det er stengt, det **betyr at** vi må vente.
+- Jeg er syk, det **betyr at** jeg blir hjemme.
+- Det er stengt, det **betyr at** vi må vente.
 
 ---
 
@@ -73,8 +73,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* Jeg er sliten, men jeg jobber **uansett**.
-* **Uansett**, vi må gå nå.
+- Jeg er sliten, men jeg jobber **uansett**.
+- **Uansett**, vi må gå nå.
 
 ---
 
@@ -84,8 +84,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* **For så vidt** er jeg enig.
-* Det er **for så vidt** riktig.
+- **For så vidt** er jeg enig.
+- Det er **for så vidt** riktig.
 
 👉 Very Norwegian nuance word.
 
@@ -97,8 +97,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* Det **er ikke sikkert** at han kommer.
-* Jeg vet ikke. Det **er ikke sikkert**.
+- Det **er ikke sikkert** at han kommer.
+- Jeg vet ikke. Det **er ikke sikkert**.
 
 ---
 
@@ -108,8 +108,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* **Det er jo slik at** vi må spare penger.
-* **Det er jo slik at** alle gjør feil.
+- **Det er jo slik at** vi må spare penger.
+- **Det er jo slik at** alle gjør feil.
 
 ---
 
@@ -119,8 +119,8 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 ### Examples:
 
-* Du må **ha is i magen**.
-* Han har is i magen i stressede situasjoner.
+- Du må **ha is i magen**.
+- Han har is i magen i stressede situasjoner.
 
 ---
 
@@ -128,9 +128,9 @@ Here are some very common **Norskprøven-friendly expressions (B1–B2)** with c
 
 Instead of:
 
-* “I think…” → use **det ser ut til at…**
-* “Maybe…” → use **det kommer an på…**
-* “That’s right” → use **det stemmer**
+- “I think…” → use **det ser ut til at…**
+- “Maybe…” → use **det kommer an på…**
+- “That’s right” → use **det stemmer**
 
 ---
 

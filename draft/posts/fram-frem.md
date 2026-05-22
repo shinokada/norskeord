@@ -1,5 +1,4 @@
-
-👉 **There is almost no difference in meaning between *fram* and *frem*.**
+👉 **There is almost no difference in meaning between _fram_ and _frem_.**
 
 The difference is mainly about **style and preference**, not meaning.
 
@@ -7,15 +6,15 @@ The difference is mainly about **style and preference**, not meaning.
 
 # 🧠 1. Core idea
 
-* **fram = more informal / spoken**
-* **frem = more formal / written (Bokmål standard)**
+- **fram = more informal / spoken**
+- **frem = more formal / written (Bokmål standard)**
 
 👉 Both mean:
 
-* forward
-* ahead
-* to the front
-* to arrive (in expressions)
+- forward
+- ahead
+- to the front
+- to arrive (in expressions)
 
 ---
 
@@ -23,9 +22,9 @@ The difference is mainly about **style and preference**, not meaning.
 
 Most Norwegians (especially in speech) often say:
 
-* Kom **fram**!
-* Vi er **fram**me
-* Gå **fram**over
+- Kom **fram**!
+- Vi er **fram**me
+- Gå **fram**over
 
 👉 Sounds natural and relaxed
 
@@ -35,14 +34,14 @@ Most Norwegians (especially in speech) often say:
 
 You’ll more often see:
 
-* Kom **frem**
-* Vi er **fremme**
-* Gå **fremover**
+- Kom **frem**
+- Vi er **fremme**
+- Gå **fremover**
 
 👉 This is what you should prefer in:
 
-* exams (Norskprøven)
-* formal writing
+- exams (Norskprøven)
+- formal writing
 
 ---
 
@@ -50,8 +49,8 @@ You’ll more often see:
 
 Some words are more commonly written one way:
 
-* **fremme** (much more common than *framme* in writing)
-* **fremover** (more standard than *framover*)
+- **fremme** (much more common than _framme_ in writing)
+- **fremover** (more standard than _framover_)
 
 👉 So even if “fram” exists, **“frem-” forms dominate in writing**
 
@@ -69,13 +68,13 @@ Some words are more commonly written one way:
 
 # 🔥 Examples
 
-* Vi kom **fram** til Oslo (spoken)
+- Vi kom **fram** til Oslo (spoken)
 
-* Vi kom **frem** til Oslo (written)
+- Vi kom **frem** til Oslo (written)
 
-* Gå **fram**! (casual)
+- Gå **fram**! (casual)
 
-* Gå **frem**! (neutral/formal)
+- Gå **frem**! (neutral/formal)
 
 ---
 
@@ -85,9 +84,9 @@ Some words are more commonly written one way:
 
 ✅ Use **frem**
 
-* safer
-* more standard
-* always correct in writing
+- safer
+- more standard
+- always correct in writing
 
 👉 But understand **fram** when listening
 
@@ -95,7 +94,7 @@ Some words are more commonly written one way:
 
 # 🧠 Simple rule
 
-* Speaking → both (fram very common)
-* Writing → use **frem**
+- Speaking → both (fram very common)
+- Writing → use **frem**
 
 ---

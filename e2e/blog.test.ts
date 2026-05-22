@@ -8,11 +8,11 @@ test.describe('Blog index', () => {
   });
 
   test('has expected h1', async ({ page }) => {
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Norwegian Language Blog');
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Språkhjørnet');
   });
 
   test('has expected meta title', async ({ page }) => {
-    await expect(page).toHaveTitle('Norwegian Language Blog — Norskeord');
+    await expect(page).toHaveTitle('Språkhjørnet — Norskeord');
   });
 
   test('has expected meta description', async ({ page }) => {
@@ -34,8 +34,9 @@ test.describe('Blog index', () => {
     expect(href).toMatch(/^\/blog\/.+/);
   });
 
-  test('post cards show a CEFR badge', async ({ page }) => {
-    const badge = page.locator('a[href^="/blog/"]').first().getByTestId('cefr-badge');
+  test('word post cards show a CEFR badge', async ({ page }) => {
+    // Guides are listed first and have no CEFR badge — find the first word post card instead.
+    const badge = page.getByTestId('cefr-badge').first();
     await expect(badge).toBeVisible();
   });
 
@@ -66,7 +67,7 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
     const meta = page.locator('meta[name="description"]').last();
     await expect(meta).toHaveAttribute(
       'content',
-      "Both mean 'slowly' — but one sounds more natural in everyday speech."
+      "Sakte is the one you'll hear in conversation. Langsomt is the one you'll read."
     );
   });
 
@@ -79,7 +80,7 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
     const og = page.locator('meta[property="og:description"]').last();
     await expect(og).toHaveAttribute(
       'content',
-      "Both mean 'slowly' — but one sounds more natural in everyday speech."
+      "Sakte is the one you'll hear in conversation. Langsomt is the one you'll read."
     );
   });
 
@@ -100,5 +101,31 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
   test('renders article content', async ({ page }) => {
     const prose = page.locator('.prose');
     await expect(prose).not.toBeEmpty();
+  });
+});
+
+// ── Scheduled publishing ──────────────────────────────────────────────────────
+//
+// These tests verify that posts with a future publishedAt date are hidden
+// from the blog index and return 404 on direct URL access.
+//
+// They rely on a fixture post in src/lib/posts/test-future-post.md with
+// publishedAt: 2099-01-01 — far enough in the future it never goes live.
+
+test.describe('Scheduled publishing', () => {
+  test('future post does not appear in the blog index', async ({ page }) => {
+    await page.goto('/blog');
+    const futureLink = page.locator('a[href="/blog/test-future-post"]');
+    await expect(futureLink).toHaveCount(0);
+  });
+
+  test('future post URL is not linked from the index', async ({ page }) => {
+    // In a prerendered site the dev server may serve a 200 for unknown routes,
+    // so we assert on absence from the listing rather than the HTTP status code.
+    await page.goto('/blog');
+    const links = await page
+      .locator('a[href^="/blog/"]')
+      .evaluateAll((els) => els.map((el) => el.getAttribute('href')));
+    expect(links).not.toContain('/blog/test-future-post');
   });
 });

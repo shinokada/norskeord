@@ -8,20 +8,20 @@ La oss dele den opp:
 
 Verbet er **å finne fram**, og det betyr ofte:
 
-* **ta fram / hente fram / bringe out**
-* finne noe som var lagt bort
+- **ta fram / hente fram / bringe out**
+- finne noe som var lagt bort
 
 Eksempler:
 
-* **Han fant fram boka.**
-  = *He took out / brought out the book.*
+- **Han fant fram boka.**
+  = _He took out / brought out the book._
 
-* **Jeg fant fram passet mitt.**
-  = *I got my passport out.*
+- **Jeg fant fram passet mitt.**
+  = _I got my passport out._
 
 I setningen din:
 
-* **hun finner fram celloen**
+- **hun finner fram celloen**
   = **hun tar fram celloen** / **hun henter fram celloen**
 
 (altså: celloen var kanskje i et skap, et etui eller et annet sted)
@@ -30,13 +30,13 @@ I setningen din:
 
 ### 2) **spiller lenge**
 
-* **å spille** = to play (et instrument)
-* **lenge** = for a long time
+- **å spille** = to play (et instrument)
+- **lenge** = for a long time
 
 Eksempel:
 
-* **Hun spiller piano lenge hver kveld.**
-  = *She plays piano for a long time every evening.*
+- **Hun spiller piano lenge hver kveld.**
+  = _She plays piano for a long time every evening._
 
 ---
 

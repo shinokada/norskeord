@@ -1,7 +1,7 @@
 It is common to mix **two different rules**, which is very understandable:
 
 1. **V2 / inversion** (verb before subject)
-2. **Placement of *ikke*** in main vs subordinate clauses
+2. **Placement of _ikke_** in main vs subordinate clauses
 
 They’re related, but not the same thing.
 
@@ -18,10 +18,10 @@ If another element comes first, you get inversion:
 
 Structure:
 
-* **Hjemme hos foreldrene** = first element
-* **gjorde** = finite verb (must be 2nd)
-* **ikke**
-* **Ida** = subject
+- **Hjemme hos foreldrene** = first element
+- **gjorde** = finite verb (must be 2nd)
+- **ikke**
+- **Ida** = subject
 
 So:
 
@@ -44,9 +44,9 @@ Example:
 
 Structure:
 
-* subject = Ida
-* **ikke**
-* verb = gjorde
+- subject = Ida
+- **ikke**
+- verb = gjorde
 
 So:
 
@@ -74,7 +74,7 @@ This is probably the rule you were thinking of.
 
 That’s the key contrast:
 
-* **main clause → verb + ikke**
-* **subordinate clause → ikke + verb**
+- **main clause → verb + ikke**
+- **subordinate clause → ikke + verb**
 
 So your intuition about **ikke before verb in leddsetning** was **correct** — it just applies to a different rule than the sentence you asked about.

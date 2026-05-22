@@ -1,6 +1,6 @@
 ---
 title: 'V2-regelen — Why the Verb Always Comes Second'
-description: "In Norwegian main clauses, the verb must always be the second element — no matter what comes first. This is the V2 rule, and it explains why word order shifts when a sentence starts with time or place."
+description: 'In Norwegian main clauses, the verb must always be the second element — no matter what comes first. This is the V2 rule, and it explains why word order shifts when a sentence starts with time or place.'
 slug: v2-regelen
 cefr: A2
 publishedAt:
@@ -71,21 +71,21 @@ Her er «Hjemme hos foreldrene» første ledd — og da må verbet komme på pla
 
 Når setningen er negativ, kommer **ikke** etter verbet — men fortsatt foran subjektet når inversjon skjer:
 
-| Setning                        | Struktur                                      |
-| ------------------------------ | --------------------------------------------- |
-| Ida gjorde **ikke** husarbeid. | [Subjekt] + [Verb] + **ikke** + ...           |
+| Setning                         | Struktur                                      |
+| ------------------------------- | --------------------------------------------- |
+| Ida gjorde **ikke** husarbeid.  | [Subjekt] + [Verb] + **ikke** + ...           |
 | Hjemme gjorde **ikke** Ida det. | [Første ledd] + [Verb] + **ikke** + [Subjekt] |
 
 ---
 
 ## Sammenligningstabell
 
-| Første ledd       | Verb    | ikke | Subjekt | Resten          |
-| ----------------- | ------- | ---- | ------- | --------------- |
-| Ida               | gjorde  | ikke | —       | så mye husarbeid |
-| Hjemme hos fam.   | gjorde  | ikke | Ida     | så mye husarbeid |
-| I går             | kjøpte  | ikke | Per     | brød            |
-| På skolen         | snakker | ikke | barna   | engelsk         |
+| Første ledd     | Verb    | ikke | Subjekt | Resten           |
+| --------------- | ------- | ---- | ------- | ---------------- |
+| Ida             | gjorde  | ikke | —       | så mye husarbeid |
+| Hjemme hos fam. | gjorde  | ikke | Ida     | så mye husarbeid |
+| I går           | kjøpte  | ikke | Per     | brød             |
+| På skolen       | snakker | ikke | barna   | engelsk          |
 
 ---
 

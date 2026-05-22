@@ -6,11 +6,11 @@ You’re right to focus on this—**prepositions are one of the hardest parts of
 
 Think like this:
 
-* **i** → inside / in
-* **på** → on / at (surface, places, institutions)
-* **ved** → by / near / using
-* **med** → with
-* **for** → for (purpose, duration, benefit)
+- **i** → inside / in
+- **på** → on / at (surface, places, institutions)
+- **ved** → by / near / using
+- **med** → with
+- **for** → for (purpose, duration, benefit)
 
 ---
 
@@ -20,14 +20,14 @@ Think like this:
 
 Used for:
 
-* rooms, countries, cities
-* time periods
+- rooms, countries, cities
+- time periods
 
 ### Examples:
 
-* Jeg bor **i Oslo**
-* Hun er **i huset**
-* **I går**, **i fjor**, **i sommer**
+- Jeg bor **i Oslo**
+- Hun er **i huset**
+- **I går**, **i fjor**, **i sommer**
 
 ---
 
@@ -35,15 +35,15 @@ Used for:
 
 Used for:
 
-* surfaces
-* many locations (schools, work, events)
+- surfaces
+- many locations (schools, work, events)
 
 ### Examples:
 
-* Boken ligger **på bordet**
-* Jeg er **på jobb**
-* Hun studerer **på universitetet**
-* Vi er **på fest**
+- Boken ligger **på bordet**
+- Jeg er **på jobb**
+- Hun studerer **på universitetet**
+- Vi er **på fest**
 
 👉 “på” is often **just something you must learn**
 
@@ -55,19 +55,19 @@ Three main meanings:
 
 ### 1. Near a place
 
-* Han sitter **ved bordet** (by the table)
+- Han sitter **ved bordet** (by the table)
 
 ### 2. Using something
 
-* Hun reiste til Danmark **ved hjelp av ferje** ❌ (unnatural)
-* Better: **med ferje** ✅
+- Hun reiste til Danmark **ved hjelp av ferje** ❌ (unnatural)
+- Better: **med ferje** ✅
 
 👉 “ved” is more formal for “using”
 
 ### 3. Fixed expressions
 
-* **ved siden av** = next to
-* **ved slutten av dagen**
+- **ved siden av** = next to
+- **ved slutten av dagen**
 
 ---
 
@@ -75,18 +75,18 @@ Three main meanings:
 
 Used for:
 
-* together
-* tools / transport
+- together
+- tools / transport
 
 ### Examples:
 
-* Jeg snakker **med henne**
-* Jeg skriver **med penn**
-* Jeg reiser **med tog / med ferje**
+- Jeg snakker **med henne**
+- Jeg skriver **med penn**
+- Jeg reiser **med tog / med ferje**
 
 👉 This is why your sentence should be:
 
-* **med ferje** ✅ (not *ved ferje*)
+- **med ferje** ✅ (not _ved ferje_)
 
 ---
 
@@ -96,22 +96,22 @@ Used for:
 
 ### 1. Duration
 
-* Jeg bodde der **i tre år** (neutral)
-* Jeg bodde der **for tre år siden** (time ago!)
+- Jeg bodde der **i tre år** (neutral)
+- Jeg bodde der **for tre år siden** (time ago!)
 
 👉 Important difference:
 
-* **i tre år** = duration
-* **for tre år siden** = ago
+- **i tre år** = duration
+- **for tre år siden** = ago
 
 ### 2. Reason
 
-* Takk **for hjelpen**
-* Jeg gjør det **for deg**
+- Takk **for hjelpen**
+- Jeg gjør det **for deg**
 
 ### 3. Too / excessive
 
-* Det er **for dyrt**
+- Det er **for dyrt**
 
 ---
 
@@ -149,21 +149,21 @@ Fill in: **i / på / med / ved / for**
 
 ### A.
 
-1. Jeg bor ___ Norge.
-2. Hun sitter ___ bordet.
-3. Vi reiser ___ tog.
-4. Jeg er ___ jobb nå.
-5. Takk ___ hjelpen.
+1. Jeg bor \_\_\_ Norge.
+2. Hun sitter \_\_\_ bordet.
+3. Vi reiser \_\_\_ tog.
+4. Jeg er \_\_\_ jobb nå.
+5. Takk \_\_\_ hjelpen.
 
 ---
 
 ### B.
 
-6. Han står ___ siden av meg.
-7. Jeg studerer ___ universitetet.
-8. Vi var ___ ferie i sommer.
-9. Hun kom hit ___ tre dager siden.
-10. Jeg skriver ___ blyant.
+6. Han står \_\_\_ siden av meg.
+7. Jeg studerer \_\_\_ universitetet.
+8. Vi var \_\_\_ ferie i sommer.
+9. Hun kom hit \_\_\_ tre dager siden.
+10. Jeg skriver \_\_\_ blyant.
 
 ---
 
@@ -188,10 +188,10 @@ Don’t try to memorize rules only. Instead:
 
 👉 Learn **chunks**:
 
-* på jobb
-* i Oslo
-* med buss
-* for lenge siden
-* ved siden av
+- på jobb
+- i Oslo
+- med buss
+- for lenge siden
+- ved siden av
 
 ---

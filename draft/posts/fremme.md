@@ -2,7 +2,7 @@
 
 ---
 
-# 🧭 Meaning of *fremme*
+# 🧭 Meaning of _fremme_
 
 **“fremme” = arrived / reached the destination**
 
@@ -10,9 +10,9 @@
 
 # ✅ Your sentence:
 
-* **Vi er fremme i Oslo**
-  👉 *We have arrived in Oslo*
-  👉 *We are now in Oslo (after traveling)*
+- **Vi er fremme i Oslo**
+  👉 _We have arrived in Oslo_
+  👉 _We are now in Oslo (after traveling)_
 
 ---
 
@@ -22,12 +22,12 @@ Compare:
 
 ### A.
 
-* Vi er **i Oslo**
+- Vi er **i Oslo**
   → We are in Oslo (just location)
 
 ### B.
 
-* Vi er **fremme i Oslo**
+- Vi er **fremme i Oslo**
   → We arrived in Oslo (focus on arrival/result)
 
 ---
@@ -36,16 +36,16 @@ Compare:
 
 You travel → then you say:
 
-* **Nå er vi fremme!**
+- **Nå er vi fremme!**
   = We’ve arrived!
 
 ---
 
 # 📍 More examples
 
-* Vi er fremme **på hotellet**
-* Toget er fremme **på stasjonen**
-* Endelig er vi fremme!
+- Vi er fremme **på hotellet**
+- Toget er fremme **på stasjonen**
+- Endelig er vi fremme!
 
 ---
 
@@ -63,20 +63,20 @@ You travel → then you say:
 
 ### 1. **komme fram**
 
-* Vi **kom fram** til Oslo
+- Vi **kom fram** til Oslo
   = We arrived (action)
 
 ### 2. **være fremme**
 
-* Vi **er fremme** i Oslo
+- Vi **er fremme** i Oslo
   = We have arrived (result/state)
 
 ---
 
 # 🧠 Simple rule
 
-* **komme fram** → movement
-* **være fremme** → result (already there)
+- **komme fram** → movement
+- **være fremme** → result (already there)
 
 ---
 
@@ -84,9 +84,9 @@ You travel → then you say:
 
 What sounds natural?
 
-1. Vi er fremme ___ Oslo
-2. Vi kom fram ___ Oslo
-3. Endelig er vi ___
+1. Vi er fremme \_\_\_ Oslo
+2. Vi kom fram \_\_\_ Oslo
+3. Endelig er vi \_\_\_
 
 ---
 

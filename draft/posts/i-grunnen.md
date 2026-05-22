@@ -6,20 +6,20 @@ I setningen:
 
 betyr det omtrent:
 
-* «Han er egentlig ganske søt han også.»
-* «Når jeg tenker etter, er han ganske søt også.»
+- «Han er egentlig ganske søt han også.»
+- «Når jeg tenker etter, er han ganske søt også.»
 
 Det gir ofte en litt mykere eller mer ettertenksom tone.
 
 ### Eksempler
 
-* «Jeg liker henne ikke så godt … men hun er i grunnen snill.»
+- «Jeg liker henne ikke så godt … men hun er i grunnen snill.»
   → egentlig / når jeg tenker etter
 
-* «Det var i grunnen en god idé.»
+- «Det var i grunnen en god idé.»
   → faktisk en god idé
 
-* «Jeg er i grunnen enig med deg.»
+- «Jeg er i grunnen enig med deg.»
   → egentlig enig
 
 I din setning kan det høres ut som personen først ikke syntes han var søt, men så tenker litt mer og innrømmer det.

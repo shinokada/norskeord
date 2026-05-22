@@ -6,18 +6,18 @@ hvordan kan det ha seg? is very **Norwegian and very useful** at B1/B2.
 
 👉 It means:
 
-* **How is that possible?**
-* **How can that be?**
-* **How did that happen?**
+- **How is that possible?**
+- **How can that be?**
+- **How did that happen?**
 
 ---
 
 # 🧠 Literal breakdown (why it’s confusing)
 
-* **hvordan** = how
-* **kan** = can
-* **det** = it
-* **ha seg** = (idiomatic → “be the case / happen”)
+- **hvordan** = how
+- **kan** = can
+- **det** = it
+- **ha seg** = (idiomatic → “be the case / happen”)
 
 👉 You **cannot translate “ha seg” directly**.
 It’s an **expression**, not literal Norwegian.
@@ -34,23 +34,23 @@ It’s an **expression**, not literal Norwegian.
 
 ### 1.
 
-* Han besto ikke eksamen.
-* **Hvordan kan det ha seg?**
+- Han besto ikke eksamen.
+- **Hvordan kan det ha seg?**
   👉 How is that possible?
 
 ---
 
 ### 2.
 
-* Hun var ikke på jobb i dag.
-* **Hvordan kan det ha seg?**
+- Hun var ikke på jobb i dag.
+- **Hvordan kan det ha seg?**
 
 ---
 
 ### 3.
 
-* Det er mye billigere her.
-* **Hvordan kan det ha seg?**
+- Det er mye billigere her.
+- **Hvordan kan det ha seg?**
 
 ---
 
@@ -58,9 +58,9 @@ It’s an **expression**, not literal Norwegian.
 
 This expression shows:
 
-* surprise
-* curiosity
-* sometimes mild confusion
+- surprise
+- curiosity
+- sometimes mild confusion
 
 👉 Not aggressive, just wondering
 
@@ -70,12 +70,12 @@ This expression shows:
 
 ### Slightly simpler:
 
-* **Hvordan er det mulig?**
+- **Hvordan er det mulig?**
   = How is that possible?
 
 ### More direct:
 
-* **Hva skjedde?**
+- **Hva skjedde?**
   = What happened?
 
 ---
@@ -84,8 +84,8 @@ This expression shows:
 
 Use it when:
 
-* something is unexpected
-* you want an explanation
+- something is unexpected
+- you want an explanation
 
 ---
 
@@ -93,12 +93,12 @@ Use it when:
 
 Respond naturally:
 
-* Han snakker flytende norsk etter bare 3 måneder.
+- Han snakker flytende norsk etter bare 3 måneder.
   👉 Hva sier du?
 
 ✅ Possible answer:
 
-* **Hvordan kan det ha seg?**
+- **Hvordan kan det ha seg?**
 
 ---
 

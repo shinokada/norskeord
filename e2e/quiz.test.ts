@@ -130,8 +130,11 @@ test('Space advances from reveal to next question', async ({ page }) => {
     await input.press('Enter');
   }
 
-  // Now in reveal state — press Space to advance (en: Next, nb: Neste)
-  await expect(page.getByRole('button', { name: /next|neste/i })).toBeVisible();
+  // Now in reveal state — press Space to advance.
+  // Target the indigo navigation button specifically to avoid matching the
+  // pronounce button whose aria-label also contains "neste" (nb).
+  const nextBtn = page.locator('button.bg-indigo-600', { hasText: /next|neste/i });
+  await expect(nextBtn).toBeVisible();
   await page.keyboard.press('Space');
 
   // Should now be on question 2 (en: 'Question 2 of', nb: 'Spørsmål 2 av')

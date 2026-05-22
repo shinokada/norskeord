@@ -23,9 +23,9 @@ But in modern Norwegian, it is often:
 
 # 📍 Break it down:
 
-* **hvor** = where
-* **jeg er** = I am
-* **hen** = “at / to where (emphasis)”
+- **hvor** = where
+- **jeg er** = I am
+- **hen** = “at / to where (emphasis)”
 
 So:
 
@@ -38,8 +38,8 @@ So:
 
 Both are correct:
 
-* Hun vet ikke hvor jeg er
-* Hun vet ikke hvor jeg er hen
+- Hun vet ikke hvor jeg er
+- Hun vet ikke hvor jeg er hen
 
 👉 Same meaning
 
@@ -51,19 +51,19 @@ Mainly in **spoken Norwegian**, especially:
 
 ### 1. Questions
 
-* Hvor skal du hen? = Where are you going?
-* Hvor er du hen? = Where are you?
+- Hvor skal du hen? = Where are you going?
+- Hvor er du hen? = Where are you?
 
 ### 2. Indirect questions (like your sentence)
 
-* Hun vet ikke hvor jeg er hen
+- Hun vet ikke hvor jeg er hen
 
 ---
 
 # 🚗 Think of it like:
 
-👉 “Where are you *at*?”
-👉 “Where are you going *to*?”
+👉 “Where are you _at_?”
+👉 “Where are you going _to_?”
 
 It adds a slight **directional feeling**
 
@@ -71,9 +71,9 @@ It adds a slight **directional feeling**
 
 # ⚠️ Important note
 
-* “hen” is **not necessary**
-* It is more **spoken / informal**
-* In writing, many people just skip it
+- “hen” is **not necessary**
+- It is more **spoken / informal**
+- In writing, many people just skip it
 
 ---
 
@@ -81,18 +81,18 @@ It adds a slight **directional feeling**
 
 ### A (with hen)
 
-* Hvor skal du hen? (very common spoken)
+- Hvor skal du hen? (very common spoken)
 
 ### B (without hen)
 
-* Hvor skal du? (also correct, slightly more neutral)
+- Hvor skal du? (also correct, slightly more neutral)
 
 ---
 
 # 🧠 Simple rule
 
-* **hvor + verb** → basic question
-* **hvor + hen** → spoken emphasis on place/direction
+- **hvor + verb** → basic question
+- **hvor + hen** → spoken emphasis on place/direction
 
 ---
 

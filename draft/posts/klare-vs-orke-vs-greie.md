@@ -10,24 +10,24 @@ Disse tre ordene kan alle oversettes med «manage» på engelsk, men de betyr li
 
 ### Eksempler:
 
-* Jeg klarte prøven.
+- Jeg klarte prøven.
   (= I passed / managed the test.)
 
-* Klarer du å løfte denne?
+- Klarer du å løfte denne?
   (= Are you able to lift this?)
 
-* Jeg klarte ikke å sove.
+- Jeg klarte ikke å sove.
   (= I couldn’t manage to sleep.)
 
 «Klare» brukes veldig mye om:
 
-* å få til noe
+- å få til noe
 
-* å ha evne til noe
+- å ha evne til noe
 
-* å overleve økonomisk eller praktisk
+- å overleve økonomisk eller praktisk
 
-* Vi klarer oss fint.
+- Vi klarer oss fint.
   (= We manage fine.)
 
 ---
@@ -42,20 +42,20 @@ Disse tre ordene kan alle oversettes med «manage» på engelsk, men de betyr li
 
 ### Eksempler:
 
-* Jeg orker ikke å gå ut i dag.
+- Jeg orker ikke å gå ut i dag.
   (= I don’t have the energy/feel like going out.)
 
-* Orker du å hjelpe meg?
+- Orker du å hjelpe meg?
   (= Do you have the energy/willingness to help?)
 
-* Hun orket ikke mer.
+- Hun orket ikke mer.
   (= She couldn’t go on anymore.)
 
 Man kan ofte klare noe, men ikke orke det.
 
 ### Eksempel:
 
-* Jeg kan gjøre det, men jeg orker ikke.
+- Jeg kan gjøre det, men jeg orker ikke.
   (= I’m able to do it, but I don’t feel up to it.)
 
 ---
@@ -70,18 +70,18 @@ Man kan ofte klare noe, men ikke orke det.
 
 ### Eksempler:
 
-* Jeg greide å finne huset.
-* Hun greier seg alene.
-* Greier du dette?
+- Jeg greide å finne huset.
+- Hun greier seg alene.
+- Greier du dette?
 
 Forskjellen er ofte stil og tone:
 
-* «klare» → vanligst og mest nøytralt
-* «greie» → litt mer muntlig i mange dialekter
+- «klare» → vanligst og mest nøytralt
+- «greie» → litt mer muntlig i mange dialekter
 
 Noen synes også:
 
-* «greie» kan høres litt mer ut som «klare til slutt etter litt strev».
+- «greie» kan høres litt mer ut som «klare til slutt etter litt strev».
 
 ---
 
@@ -107,11 +107,11 @@ Noen synes også:
 
 ### Eksempel:
 
-* Jeg klarer ikke å løpe 10 km.
+- Jeg klarer ikke å løpe 10 km.
   (for vanskelig fysisk)
 
-* Jeg orker ikke å løpe 10 km.
+- Jeg orker ikke å løpe 10 km.
   (for sliten / ikke motivert)
 
-* Jeg greier ikke å løpe 10 km.
+- Jeg greier ikke å løpe 10 km.
   (klarer det ikke)

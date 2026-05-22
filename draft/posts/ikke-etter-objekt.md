@@ -1,10 +1,9 @@
-
 I setningen **«Han sviktet meg ikke.»** står **ikke** faktisk **etter verbet**:
 
-* **Han** = subjekt
-* **sviktet** = verb
-* **meg** = objekt
-* **ikke** = negasjon
+- **Han** = subjekt
+- **sviktet** = verb
+- **meg** = objekt
+- **ikke** = negasjon
 
 Rekkefølgen er altså:
 
@@ -17,12 +16,12 @@ Så **«ikke» kommer etter verbet**, men fordi **objektet «meg»** står mello
 
 **Uten objekt:**
 
-* Han **sviktet ikke**.
+- Han **sviktet ikke**.
   (verb + ikke)
 
 **Med objekt:**
 
-* Han **sviktet meg ikke**.
+- Han **sviktet meg ikke**.
   (verb + objekt + ikke)
 
 Begge er riktige.
@@ -33,9 +32,9 @@ Dette er vanlig på norsk: **«ikke» kommer ofte etter objektet i helsetninger*
 
 Flere eksempler:
 
-* Jeg **liker deg ikke**.
-* Hun **forstår meg ikke**.
-* Vi **kjenner ham ikke**.
+- Jeg **liker deg ikke**.
+- Hun **forstår meg ikke**.
+- Vi **kjenner ham ikke**.
 
 Mønster:
 
@@ -45,8 +44,8 @@ Mønster:
 
 Men i **leddsetninger** kommer **ikke før verbet**:
 
-* fordi han **ikke sviktet meg**
-* at jeg **ikke kjenner ham**
+- fordi han **ikke sviktet meg**
+- at jeg **ikke kjenner ham**
 
 Her er mønsteret:
 
