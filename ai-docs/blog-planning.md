@@ -3,6 +3,7 @@
 Currently I have src/routes/admin/lessons directory made for email service.
 Should I use this for blog?
 
+
 ## Example title
 
 - “Difference Between ‘sakte’ and ‘langsomt’”
@@ -15,8 +16,26 @@ Should I use this for blog?
 - “Norwegian expressions with body parts”
 - “How to type Norwegian symbols on Mac”
 - “Denne vs dette”
+- “50 Common Norwegian Expressions Used Every Day”
+- “Difference Between ‘synes’, ‘tenke’, and ‘tro’”
+- “How Norwegians Actually Use ‘jo’”
+- “A1 Norwegian Verbs You Must Know”
+- “Norskprøven B1 Writing Tips”
+- “When to Use ‘ligge’, ‘stå’, and ‘sitte’”
+- “Sakte vs langsomt Explained”
 
-## Structure
+
+## Description
+Each post should take a different angle — register contrast, semantic boundary, sensory distinction, practical usage rule, and a real-world framing — so the listing reads as a curated collection rather than a template.
+
+For examples
+1. Lead with the answer — "Skifte is broader; bytte always involves a swap."
+2. Lead with the confusion — "Easy to mix up, but they point in opposite directions."
+3. Lead with a concrete use case — "Use orke when you're tired, klare when something is too hard."
+4. Lead with what's surprising — "Nydelig is about looks — herlig is about how it feels."
+
+
+## Post Structure
 
 - Simple Norwegian + English explanations
 - Norwegian first
@@ -41,7 +60,7 @@ Should I use this for blog?
 ## Example article
 
 ```
-Sakte vs Langsomt — Hva er forskjellen?
+Sakte vs Langsomt
 Kort forklaring
 
 Både sakte og langsomt betyr “slowly” på engelsk.

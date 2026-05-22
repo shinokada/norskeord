@@ -1,6 +1,6 @@
 ---
-title: 'Bytte vs Skifte — Hva er forskjellen?'
-description: "Both can mean 'to change' — but they are used in different situations."
+title: 'Bytte vs Skifte'
+description: "Bytte is always a swap. Skifte is any kind of change — including ones that happen on their own."
 slug: bytte-vs-skifte
 cefr: A2
 publishedAt: 2026-05-21
@@ -42,12 +42,12 @@ _I need to change clothes._
 
 ## Sammenligningstabell
 
-|                    | bytte                        | skifte                            |
-| ------------------ | ---------------------------- | --------------------------------- |
-| Meaning            | replace / swap               | change / transition               |
-| Focus              | one thing → another thing    | change of state or type           |
-| Exchange with someone | ✅ bytte med noen          | ❌ ikke skifte med noen           |
-| Register           | everyday                     | everyday / slightly formal        |
+|                       | bytte                     | skifte                     |
+| --------------------- | ------------------------- | -------------------------- |
+| Meaning               | replace / swap            | change / transition        |
+| Focus                 | one thing → another thing | change of state or type    |
+| Exchange with someone | ✅ bytte med noen          | ❌ ikke skifte med noen     |
+| Register              | everyday                  | everyday / slightly formal |
 
 ---
 

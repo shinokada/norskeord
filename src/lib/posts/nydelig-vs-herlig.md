@@ -1,6 +1,6 @@
 ---
-title: 'Nydelig vs Herlig — Hva er forskjellen?'
-description: "Both are positive words — but one is about beauty, the other about feeling."
+title: 'Nydelig vs Herlig'
+description: "Nydelig is about how something looks. Herlig is about how it feels to experience."
 slug: nydelig-vs-herlig
 cefr: A2
 publishedAt: 2026-05-21
@@ -40,12 +40,12 @@ _We had a lovely evening / We had a wonderful evening._
 
 ## Sammenligningstabell
 
-|              | nydelig                              | herlig                                  |
-| ------------ | ------------------------------------ | --------------------------------------- |
-| Meaning      | beautiful, lovely, gorgeous          | wonderful, delightful, marvellous       |
-| Focus        | appearance / sensory impression      | feeling / experience                    |
-| Used for     | looks, nature, weather, food, voice  | experiences, moods, people, situations  |
-| Register     | everyday                             | everyday                                |
+|          | nydelig                             | herlig                                 |
+| -------- | ----------------------------------- | -------------------------------------- |
+| Meaning  | beautiful, lovely, gorgeous         | wonderful, delightful, marvellous      |
+| Focus    | appearance / sensory impression     | feeling / experience                   |
+| Used for | looks, nature, weather, food, voice | experiences, moods, people, situations |
+| Register | everyday                            | everyday                               |
 
 ---
 

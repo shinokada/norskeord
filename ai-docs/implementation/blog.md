@@ -74,7 +74,7 @@ Every `.md` file in `src/lib/posts/` must have this frontmatter:
 
 ```yaml
 ---
-title: 'Sakte vs Langsomt — Hva er forskjellen?'
+title: 'Sakte vs Langsomt'
 description: "Both mean 'slowly' — but one sounds more natural in everyday speech."
 slug: sakte-vs-langsomt
 cefr: A2
@@ -323,7 +323,7 @@ This is all you need with Tailwind v4. No `tailwind.config.js` changes required.
 
 ```markdown
 ---
-title: 'Sakte vs Langsomt — Hva er forskjellen?'
+title: 'Sakte vs Langsomt'
 description: "Both mean 'slowly' — but one sounds more natural in everyday speech."
 slug: sakte-vs-langsomt
 cefr: A2
@@ -699,7 +699,7 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
   });
 
   test('has expected meta title', async ({ page }) => {
-    await expect(page).toHaveTitle('Sakte vs Langsomt — Hva er forskjellen? — Norskeord');
+    await expect(page).toHaveTitle('Sakte vs Langsomt — Norskeord');
   });
 
   test('has expected meta description', async ({ page }) => {
@@ -712,7 +712,7 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
 
   test('has expected og:title', async ({ page }) => {
     const og = page.locator('meta[property="og:title"]');
-    await expect(og).toHaveAttribute('content', 'Sakte vs Langsomt — Hva er forskjellen?');
+    await expect(og).toHaveAttribute('content', 'Sakte vs Langsomt');
   });
 
   test('has expected og:description', async ({ page }) => {

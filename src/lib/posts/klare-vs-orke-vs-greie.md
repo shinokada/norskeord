@@ -1,6 +1,6 @@
 ---
-title: 'Klare vs Orke vs Greie — Hva er forskjellen?'
-description: "All three can mean 'manage' in English — but they express very different things."
+title: 'Klare vs Orke vs Greie'
+description: "Use orke when you're tired. Use klare when something is too hard. Use greie when you just got there."
 slug: klare-vs-orke-vs-greie
 cefr: B1
 publishedAt: 2026-05-21
@@ -41,11 +41,11 @@ _I'm able to do it, but I don't feel up to it._
 
 ## Sammenligningstabell
 
-|        | Hovedidé                     | Eksempel                    |
-| ------ | ---------------------------- | --------------------------- |
-| klare  | lykkes / være i stand til    | Jeg klarte oppgaven.        |
-| orke   | ha energi eller vilje        | Jeg orker ikke oppgaven.    |
-| greie  | få til / mestre              | Jeg greide oppgaven.        |
+|       | Hovedidé                  | Eksempel                 |
+| ----- | ------------------------- | ------------------------ |
+| klare | lykkes / være i stand til | Jeg klarte oppgaven.     |
+| orke  | ha energi eller vilje     | Jeg orker ikke oppgaven. |
+| greie | få til / mestre           | Jeg greide oppgaven.     |
 
 ---
 
