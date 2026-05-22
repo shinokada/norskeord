@@ -64,7 +64,7 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
 - CTA button for Free forever to log in page.
 - QR code in home and other pages
 
-###/guide FAQ section
+### /guide FAQ section
 
 1. How can I change the flashcard preferences?
    You can find Preference secion in your Pofile page to change Target level, default interface language, default card direction, card type, pronounciation speed and tone, number of cards per session, number of quations per quiz if you are plus users.

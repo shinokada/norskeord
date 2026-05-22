@@ -16,22 +16,40 @@ export function cefrLevels(cefr: string | string[]): string[] {
   return Array.isArray(cefr) ? cefr : [cefr];
 }
 
-/** Sort posts newest-first, filter out any with missing required fields. */
-export function parsePosts(modules: Record<string, RawPostModule>): PostMeta[] {
+/** Returns true if publishedAt is today or in the past. */
+export function isPublished(publishedAt: string, now = new Date()): boolean {
+  const publish = new Date(publishedAt);
+  // Compare date only (ignore time) so timezone differences don't flip a post on/off mid-day.
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const publishDay = new Date(publish.getFullYear(), publish.getMonth(), publish.getDate());
+  return publishDay <= today;
+}
+
+/** Sort posts newest-first, filter out any with missing required fields or a future publishedAt. */
+export function parsePosts(modules: Record<string, RawPostModule>, now = new Date()): PostMeta[] {
   return Object.values(modules)
     .map((mod) => mod.metadata)
-    .filter((m): m is PostMeta => !!(m?.title && m?.slug && m?.publishedAt))
+    .filter(
+      (m): m is PostMeta =>
+        !!(m?.title && m?.slug && m?.publishedAt && isPublished(m.publishedAt, now))
+    )
     .map((m) => ({ ...m, type: m.type ?? 'word' }))
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 }
 
-/** Find a post by slug. Returns null if not found. */
+/** Find a post by slug. Returns null if not found or if publishedAt is in the future. */
 export function findPostBySlug(
   modules: Record<string, RawPostModule>,
-  slug: string
+  slug: string,
+  now = new Date()
 ): { meta: PostMeta; content: unknown } | null {
   for (const mod of Object.values(modules)) {
-    if (mod.metadata?.slug === slug && mod.metadata.title && mod.metadata.publishedAt) {
+    if (
+      mod.metadata?.slug === slug &&
+      mod.metadata.title &&
+      mod.metadata.publishedAt &&
+      isPublished(mod.metadata.publishedAt, now)
+    ) {
       return { meta: mod.metadata as PostMeta, content: mod.default };
     }
   }
