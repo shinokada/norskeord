@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { parsePosts, findPostBySlug, type RawPostModule } from './blog';
+import { parsePosts, findPostBySlug, cefrLevels, type RawPostModule } from './blog';
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 
@@ -7,7 +7,7 @@ function makeMod(
   overrides: Partial<{
     title: string;
     slug: string;
-    cefr: string;
+    cefr: string | string[];
     publishedAt: string;
     description: string;
   }> = {}
@@ -24,6 +24,22 @@ function makeMod(
     default: {} // Svelte component placeholder
   };
 }
+
+// ── cefrLevels ────────────────────────────────────────────────────────────────
+
+describe('cefrLevels', () => {
+  it('wraps a single string in an array', () => {
+    expect(cefrLevels('B1')).toEqual(['B1']);
+  });
+
+  it('returns an array unchanged', () => {
+    expect(cefrLevels(['A1', 'A2', 'B1'])).toEqual(['A1', 'A2', 'B1']);
+  });
+
+  it('handles a single-element array', () => {
+    expect(cefrLevels(['C2'])).toEqual(['C2']);
+  });
+});
 
 // ── parsePosts ────────────────────────────────────────────────────────────────
 
@@ -87,10 +103,15 @@ describe('parsePosts', () => {
     expect(result).toHaveLength(1);
   });
 
-  it('preserves all frontmatter fields', () => {
+  it('preserves a string cefr field', () => {
     const result = parsePosts({ 'a.md': makeMod({ cefr: 'B1' }) });
     expect(result[0].cefr).toBe('B1');
     expect(result[0].description).toBe('A test post.');
+  });
+
+  it('preserves an array cefr field', () => {
+    const result = parsePosts({ 'a.md': makeMod({ cefr: ['A1', 'A2', 'B1', 'B2'] }) });
+    expect(result[0].cefr).toEqual(['A1', 'A2', 'B1', 'B2']);
   });
 });
 
@@ -99,7 +120,8 @@ describe('parsePosts', () => {
 describe('findPostBySlug', () => {
   const modules = {
     'sakte.md': makeMod({ slug: 'sakte-vs-langsomt', title: 'Sakte vs Langsomt' }),
-    'denne.md': makeMod({ slug: 'denne-vs-dette', title: 'Denne vs Dette' })
+    'denne.md': makeMod({ slug: 'denne-vs-dette', title: 'Denne vs Dette' }),
+    'guide.md': makeMod({ slug: 'slik-bruker-du', title: 'Guide', cefr: ['A1', 'A2', 'B1', 'B2'] })
   };
 
   it('returns the matching post when slug exists', () => {
@@ -129,5 +151,11 @@ describe('findPostBySlug', () => {
   it('matches the second post correctly', () => {
     const result = findPostBySlug(modules, 'denne-vs-dette');
     expect(result!.meta.title).toBe('Denne vs Dette');
+  });
+
+  it('returns an array cefr for guide posts', () => {
+    const result = findPostBySlug(modules, 'slik-bruker-du');
+    expect(Array.isArray(result!.meta.cefr)).toBe(true);
+    expect(result!.meta.cefr).toEqual(['A1', 'A2', 'B1', 'B2']);
   });
 });

@@ -59,7 +59,7 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
   });
 
   test('has expected meta title', async ({ page }) => {
-    await expect(page).toHaveTitle('Sakte vs Langsomt — Hva er forskjellen? — Norskeord');
+    await expect(page).toHaveTitle('Sakte vs Langsomt — Norskeord');
   });
 
   test('has expected meta description', async ({ page }) => {
@@ -72,7 +72,7 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
 
   test('has expected og:title', async ({ page }) => {
     const og = page.locator('meta[property="og:title"]').last();
-    await expect(og).toHaveAttribute('content', 'Sakte vs Langsomt — Hva er forskjellen?');
+    await expect(og).toHaveAttribute('content', 'Sakte vs Langsomt');
   });
 
   test('has expected og:description', async ({ page }) => {

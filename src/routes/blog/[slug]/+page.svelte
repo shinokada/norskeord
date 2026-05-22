@@ -2,6 +2,7 @@
   import { Badge } from 'flowbite-svelte';
   import type { PageData } from './$types';
   import type { Component } from 'svelte';
+  import { cefrLevels } from '$lib/blog';
 
   let { data }: { data: PageData } = $props();
 
@@ -15,6 +16,8 @@
     C1: 'purple',
     C2: 'pink'
   };
+
+  const levels = $derived(cefrLevels(data.meta.cefr));
 
   function formatDate(iso: string) {
     return new Date(iso).toLocaleDateString('en-GB', {
@@ -40,9 +43,11 @@
     </a>
     <h1 class="mb-3 text-3xl font-bold dark:text-white">{data.meta.title}</h1>
     <div class="flex items-center gap-3">
-      <Badge color={cefrColors[data.meta.cefr] ?? 'blue'} data-testid="cefr-badge"
-        >{data.meta.cefr}</Badge
-      >
+      <div class="flex items-center gap-1">
+        {#each levels as lvl (lvl)}
+          <Badge color={cefrColors[lvl] ?? 'blue'} data-testid="cefr-badge">{lvl}</Badge>
+        {/each}
+      </div>
       <span class="text-sm text-gray-400">{formatDate(data.meta.publishedAt)}</span>
     </div>
   </div>

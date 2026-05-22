@@ -1,6 +1,6 @@
 ---
-title: 'Snekker vs Tømrer — Hva er forskjellen?'
-description: "Both are woodworking trades — but they cover different kinds of work."
+title: 'Snekker vs Tømrer'
+description: "Tømrer builds the house. Snekker makes it liveable — and in everyday speech, does both."
 slug: snekker-vs-tomrer
 cefr: B1
 publishedAt: 2026-05-21
@@ -36,12 +36,12 @@ _I'm going to call a carpenter to renovate the house._
 
 ## Sammenligningstabell
 
-|                | tømrer                          | snekker                          |
-| -------------- | ------------------------------- | -------------------------------- |
-| Meaning        | carpenter / structural builder  | joiner / finish carpenter        |
-| Main work      | walls, roofs, frames, houses    | furniture, kitchens, stairs, doors |
-| Workplace      | building site                   | workshop or indoors              |
-| Register       | technical / everyday            | everyday (also used generally)   |
+|           | tømrer                         | snekker                            |
+| --------- | ------------------------------ | ---------------------------------- |
+| Meaning   | carpenter / structural builder | joiner / finish carpenter          |
+| Main work | walls, roofs, frames, houses   | furniture, kitchens, stairs, doors |
+| Workplace | building site                  | workshop or indoors                |
+| Register  | technical / everyday           | everyday (also used generally)     |
 
 ---
 
