@@ -1,3 +1,9 @@
 {
-  "installCommand": "pnpm install"
+  "installCommand": "pnpm install",
+  "crons": [
+    {
+      "path": "/api/publish-scheduled",
+      "schedule": "0 6 * * *"
+    }
+  ]
 }
