@@ -10,7 +10,7 @@
   "nav_guide": "Guide",
   "nav_resources": "Ressurser",
   "nav_see_all": "Se alle {level}-kategorier →",
-  "nav_more": "Mer",
+  "nav_more": "Lær",
   "nav_switch_to_norwegian": "🇳🇴 NO",
   "nav_switch_to_english": "🇺🇸 EN",
   "nav_quiz": "Quiz",
@@ -86,6 +86,7 @@
   "flashcard_restart": "START PÅ NYTT",
   "flashcard_next": "Neste",
   "flashcard_change_defaults": "Endre standardinnstillinger i Profil →",
+  "flashcard_view_stats": "Se min fremgang →",
 
   "part_noun": "Substantiv",
   "part_verb": "Verb",
@@ -322,6 +323,10 @@
   "norskproven_cta_a2": "Start A2 Helse",
   "norskproven_cta_b1": "Start B1 Arbeid",
   "norskproven_cta_stats": "Se min fremgang",
+
+  "blog_subheading": "Korte, praktiske artikler om norsk ordforråd og språkbruk.",
+  "blog_section_guides": "Guider",
+  "blog_section_level": "Nivå {level}",
 
   "home_heading": "Norske flashcard",
   "home_subheading": "Øv norsk ordforråd fra A1 til C2. Velg et nivå og en kategori for å begynne.",
