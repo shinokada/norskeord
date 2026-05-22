@@ -3,6 +3,7 @@
   import PreferencesSection from './PreferencesSection.svelte';
   import SubscriptionSection from './SubscriptionSection.svelte';
   import DangerZone from './DangerZone.svelte';
+  import ContactSupport from './ContactSupport.svelte';
   import * as m from '$lib/paraglide/messages.js';
 
   let { data } = $props();
@@ -28,6 +29,7 @@
       plan={data.plan}
       billingPortalUrl={data.billingPortalUrl}
     />
+    <ContactSupport isPlus={data.plan === 'plus'} />
     <DangerZone />
   </div>
 </div>

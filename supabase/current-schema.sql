@@ -22,6 +22,18 @@ CREATE TABLE public.card_progress (
   CONSTRAINT card_progress_pkey PRIMARY KEY (id),
   CONSTRAINT card_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
+CREATE TABLE public.contact_messages (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  subject text NOT NULL,
+  message text NOT NULL,
+  app_version text,
+  ip_address text,
+  user_agent text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT contact_messages_pkey PRIMARY KEY (id),
+  CONSTRAINT contact_messages_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE
+);
 CREATE TABLE public.daily_lessons (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   level_group text NOT NULL CHECK (level_group = ANY (ARRAY['A'::text, 'B'::text])),
