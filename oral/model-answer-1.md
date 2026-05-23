@@ -10,11 +10,11 @@
 
 ### Useful expressions
 
-* avslappet stemning
-* på menyen
-* det viktigste for meg ville vært …
-* et sted hvor …
-* selv om
+- avslappet stemning
+- på menyen
+- det viktigste for meg ville vært …
+- et sted hvor …
+- selv om
 
 ---
 
@@ -30,11 +30,11 @@
 
 ### Useful expressions
 
-* plutselig
-* utrolig vakkert
-* i virkeligheten
-* jeg kommer til å huske det lenge
-* nesten litt uvirkelig
+- plutselig
+- utrolig vakkert
+- i virkeligheten
+- jeg kommer til å huske det lenge
+- nesten litt uvirkelig
 
 ---
 
@@ -50,11 +50,11 @@
 
 ### Useful expressions
 
-* en av de mest …
-* følelsesladet
-* å bli rørt
-* generelt
-* hva som virkelig er viktig
+- en av de mest …
+- følelsesladet
+- å bli rørt
+- generelt
+- hva som virkelig er viktig
 
 ---
 
@@ -70,11 +70,11 @@
 
 ### Useful expressions
 
-* stressende dag
-* å slappe av
-* å roe ned tankene
-* små ting kan gjøre stor forskjell
-* å være i bedre humør
+- stressende dag
+- å slappe av
+- å roe ned tankene
+- små ting kan gjøre stor forskjell
+- å være i bedre humør
 
 ---
 
@@ -90,8 +90,8 @@
 
 ### Useful expressions
 
-* spesielt glad for
-* nyttig
-* akkurat hva jeg ønsket meg
-* personlige gaver
-* betyr mer enn
+- spesielt glad for
+- nyttig
+- akkurat hva jeg ønsket meg
+- personlige gaver
+- betyr mer enn
