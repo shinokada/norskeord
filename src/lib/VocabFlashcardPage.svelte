@@ -25,7 +25,7 @@
 
   let { entries, title = 'Vocab' }: Props = $props();
 
-  type Mode = 'noreng' | 'engnor';
+  type Mode = 'noreng' | 'engnor' | 'defnor';
   type CardType = 'word' | 'phrase';
   type DeckMode = 'all' | 'due';
   type DeckItem = { entry: VocabEntry; front: string; back: string };
@@ -49,7 +49,7 @@
   function getInitialMode(): Mode {
     if (!browser) return 'noreng';
     const saved = localStorage.getItem(LS_MODE);
-    return saved === 'noreng' || saved === 'engnor' ? saved : 'noreng';
+    return saved === 'noreng' || saved === 'engnor' || saved === 'defnor' ? saved : 'noreng';
   }
 
   function getInitialCardType(): CardType {
@@ -96,6 +96,13 @@
   // touch
   let isTouch = $state(false);
   let touchStartX = 0;
+
+  // Whether any entry in the current category has a definition — gates the defnor cycle
+  let hasDefinitions = $derived(entries.some((e) => !!e.definition));
+
+  // Effective mode: if the category has no definitions and mode is defnor, treat as noreng.
+  // This avoids mutating `mode` in the $effect and breaking deck rebuilds.
+  let effectiveMode = $derived<Mode>(mode === 'defnor' && !hasDefinitions ? 'noreng' : mode);
 
   // Step 5: Detect uttrykk-preview category for banner
   let isUttrykkPreview = $derived(entries.length > 0 && entries[0].category === 'uttrykk-preview');
@@ -165,6 +172,13 @@
         back: mo === 'noreng' ? entry.example_english : entry.example
       };
     }
+    if (mo === 'defnor') {
+      return {
+        entry,
+        front: entry.definition ?? entry.english, // fallback for entries without a definition
+        back: entry.norsk
+      };
+    }
     return {
       entry,
       front: mo === 'noreng' ? entry.norsk : entry.english,
@@ -189,8 +203,9 @@
     const now = new Date();
     const overdue: VocabEntry[] = [];
     const newCards: VocabEntry[] = [];
+    const filtered = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
 
-    for (const e of es) {
+    for (const e of filtered) {
       const p = pm[e.norsk];
       if (!p) {
         newCards.push(e);
@@ -209,11 +224,12 @@
   }
 
   function buildDeck(es: VocabEntry[], mo: Mode, ct: CardType, dm: DeckMode, limit: number | null) {
+    const source = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
     const items =
       dm === 'due'
         ? buildDueDeck(es, mo, ct, progressMap, limit)
-        : shuffle(es)
-            .slice(0, limit ?? es.length)
+        : shuffle(source)
+            .slice(0, limit ?? source.length)
             .map((e) => makeDeckItem(e, mo, ct));
     deck = items;
     currentIndex = 0;
@@ -236,6 +252,11 @@
   function setMode(mo: Mode) {
     if (mo === mode) return;
     mode = mo;
+    // defnor only makes sense with Word cards — force it
+    if (mo === 'defnor' && cardType !== 'word') {
+      cardType = 'word';
+      localStorage.setItem(LS_CARD_TYPE, 'word');
+    }
     localStorage.setItem(LS_MODE, mo);
   }
 
@@ -282,9 +303,11 @@
     return mo === 'noreng' ? entry.example_english : entry.example;
   }
 
-  let currentExample = $derived(current ? deriveExample(current.entry, mode, cardType) : '');
+  let currentExample = $derived(
+    current ? deriveExample(current.entry, effectiveMode, cardType) : ''
+  );
   let currentExampleTranslation = $derived(
-    current ? deriveExampleTranslation(current.entry, mode, cardType) : ''
+    current ? deriveExampleTranslation(current.entry, effectiveMode, cardType) : ''
   );
   // Always the Norwegian text for TTS — regardless of card direction.
   let currentExampleNorsk = $derived(
@@ -355,7 +378,9 @@
 
   $effect(() => {
     const e = entries;
-    const mo = mode;
+    // Read effectiveMode so the effect re-runs when mode or hasDefinitions changes.
+    // Also read entries directly (above) so it re-runs on category navigation.
+    const mo = effectiveMode;
     const ct = cardType;
     const dm = deckMode;
     const lim = sessionLimit;
@@ -507,9 +532,22 @@
     <button
       type="button"
       class={modeButtonCls}
-      onclick={() => setMode(mode === 'noreng' ? 'engnor' : 'noreng')}
+      onclick={() => {
+        if (cardType === 'phrase' || !hasDefinitions) {
+          // two-way toggle for phrases or categories without definitions (A1/A2)
+          setMode(mode === 'noreng' ? 'engnor' : 'noreng');
+        } else {
+          // cycle: noreng → engnor → defnor → noreng
+          const next: Record<Mode, Mode> = { noreng: 'engnor', engnor: 'defnor', defnor: 'noreng' };
+          setMode(next[mode]);
+        }
+      }}
     >
-      {mode === 'noreng' ? m.flashcard_norsk() : m.flashcard_english()}
+      {effectiveMode === 'noreng'
+        ? m.flashcard_norsk()
+        : effectiveMode === 'engnor'
+          ? m.flashcard_english()
+          : m.flashcard_definition()}
     </button>
     <button
       type="button"
@@ -593,12 +631,20 @@
 
   <!-- Flashcard -->
   <div class="flip-box h-96 w-full bg-transparent md:w-1/2">
-    {#if deck.length === 0}
+    {#if deck.length === 0 && mode !== 'defnor'}
       <div
         class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
       >
         <p class="text-lg font-medium text-gray-700 dark:text-gray-300">
           {m.flashcard_no_items()}
+        </p>
+      </div>
+    {:else if deck.length === 0 && mode === 'defnor'}
+      <div
+        class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
+      >
+        <p class="text-lg font-medium text-gray-700 dark:text-gray-300">
+          {m.flashcard_no_definitions_available()}
         </p>
       </div>
     {:else if completed}

@@ -1,8 +1,8 @@
-*Hei! Velkommen til den herlige og litt kaotiske verdenen av norsk!* (Welcome to the lovely and slightly chaotic world of Norwegian!)
+_Hei! Velkommen til den herlige og litt kaotiske verdenen av norsk!_ (Welcome to the lovely and slightly chaotic world of Norwegian!)
 
 Since you are at an **A2+ level**, you already have a solid foundation of vocabulary and basic grammar. However, Norwegian poses two unique hurdles for listening and speaking: **dialects** and **melody (pitch accent)**.
 
-Because Norwegians are fiercely proud of their local dialects and use them everywhere (even on the national news), standard textbook Norwegian (*Bokmål*) can sound very different in the wild.
+Because Norwegians are fiercely proud of their local dialects and use them everywhere (even on the national news), standard textbook Norwegian (_Bokmål_) can sound very different in the wild.
 
 Here is your tailored roadmap to break through the A2+ ceiling in Norwegian.
 
@@ -10,20 +10,16 @@ Here is your tailored roadmap to break through the A2+ ceiling in Norwegian.
 
 ### 🟢 A1: Building the Foundation (Slow, Clear, and Repetitive)
 
-At the A1 level, your brain needs maximum processing time. You need standard *Østnorsk* (Eastern/Oslo dialect) spoken at a deliberately slow pace.
+At the A1 level, your brain needs maximum processing time. You need standard _Østnorsk_ (Eastern/Oslo dialect) spoken at a deliberately slow pace.
 
-* **Podcast: *Norsk for deg* (by Cecilie Lønn)**
-* **Why it works:** Cecilie Lønn is a renowned Norwegian teacher. Her early podcast episodes and YouTube videos are tailored specifically for absolute beginners. She pronounces every single syllable carefully.
+- **Podcast: _Norsk for deg_ (by Cecilie Lønn)**
+- **Why it works:** Cecilie Lønn is a renowned Norwegian teacher. Her early podcast episodes and YouTube videos are tailored specifically for absolute beginners. She pronounces every single syllable carefully.
 
+- **YouTube: _Norwegian Class 101_**
+- **Why it works:** Great for bite-sized A1 listening. They use simple dialogues (like ordering food or asking for directions) accompanied by on-screen text so you can visually connect the sounds to the words.
 
-* **YouTube: *Norwegian Class 101***
-* **Why it works:** Great for bite-sized A1 listening. They use simple dialogues (like ordering food or asking for directions) accompanied by on-screen text so you can visually connect the sounds to the words.
-
-
-* **Audiobooks: *Klar for Norge* or *På Vei* (Audio)**
-* **Why it works:** If you can get your hands on the audio tracks that accompany standard A1 textbooks (like *På Vei* or *God i Norsk 1*), listen to them on repeat. They are perfectly calibrated for your vocabulary level.
-
-
+- **Audiobooks: _Klar for Norge_ or _På Vei_ (Audio)**
+- **Why it works:** If you can get your hands on the audio tracks that accompany standard A1 textbooks (like _På Vei_ or _God i Norsk 1_), listen to them on repeat. They are perfectly calibrated for your vocabulary level.
 
 ---
 
@@ -33,17 +29,17 @@ At your level, you want content that uses standard vocabulary but is spoken slig
 
 ### 1. Podcasts (The Gold Standard)
 
-* **Lær norsk nå! (Learn Norwegian Now):** Hosted by Marius, this is arguably the best intermediate podcast out there. He speaks clearly, uses natural grammar, and discusses interesting topics (history, culture, daily life) rather than just "textbook" themes.
-* **Norsklærer Karense:** A staple for any Norwegian learner. Her podcast episodes are short, practical, and highly focused on the transition from A2 to B1.
-* **Forklart (by Aftenposten):** Once *Lær norsk nå* starts feeling easy, try this daily news podcast. It explains one current event per day in clear, professional Norwegian. It's fast, but short enough to listen to multiple times.
+- **Lær norsk nå! (Learn Norwegian Now):** Hosted by Marius, this is arguably the best intermediate podcast out there. He speaks clearly, uses natural grammar, and discusses interesting topics (history, culture, daily life) rather than just "textbook" themes.
+- **Norsklærer Karense:** A staple for any Norwegian learner. Her podcast episodes are short, practical, and highly focused on the transition from A2 to B1.
+- **Forklart (by Aftenposten):** Once _Lær norsk nå_ starts feeling easy, try this daily news podcast. It explains one current event per day in clear, professional Norwegian. It's fast, but short enough to listen to multiple times.
 
 ### 2. Video & TV (NRK is your best friend)
 
-As long as you are in Norway (or using a VPN), **NRK TV** is a goldmine because *everything* has Norwegian subtitles (`TEKST-TV`).
+As long as you are in Norway (or using a VPN), **NRK TV** is a goldmine because _everything_ has Norwegian subtitles (`TEKST-TV`).
 
-* **Norsk for deg:** Look up Cecile Lønn's videos on YouTube for clear grammatical explanations and listening practice.
-* **Supernytt (on NRK):** This is a daily news show designed for children/teenagers. The presenters speak exceptionally clearly, use visual aids, and cover adult topics but in an accessible way.
-* **Side om Side (on NRK):** A hilarious comedy series about Norwegian suburban life. Watch with Norwegian subtitles on. It will expose you to standard *Østnorsk* (Eastern Norwegian) and everyday slang.
+- **Norsk for deg:** Look up Cecile Lønn's videos on YouTube for clear grammatical explanations and listening practice.
+- **Supernytt (on NRK):** This is a daily news show designed for children/teenagers. The presenters speak exceptionally clearly, use visual aids, and cover adult topics but in an accessible way.
+- **Side om Side (on NRK):** A hilarious comedy series about Norwegian suburban life. Watch with Norwegian subtitles on. It will expose you to standard _Østnorsk_ (Eastern Norwegian) and everyday slang.
 
 ---
 
@@ -53,23 +49,18 @@ Here are the highest-yield listening resources for Norwegian, categorized strict
 
 ---
 
-
 ### 🔵 B1: Navigating the "Intermediate Plateau" (Natural Speed, Controlled Vocabulary)
 
 At B1, you transition away from "teacher language" and start listening to content made for the general public, but with simpler structures.
 
-* **Podcast: *Forklart* (by Aftenposten)**
-* **Why it works:** This is a daily news podcast that breaks down one current event in 15 minutes. The journalists speak very professional, clear Norwegian. It pushes your vocabulary into politics, society, and climate.
+- **Podcast: _Forklart_ (by Aftenposten)**
+- **Why it works:** This is a daily news podcast that breaks down one current event in 15 minutes. The journalists speak very professional, clear Norwegian. It pushes your vocabulary into politics, society, and climate.
 
+- **TV Show: _Supernytt_ (NRK TV)**
+- **Why it works:** As mentioned for A2+, this children’s news show remains a gold standard for B1. It uses adult topics but avoids overly complex, academic jargon.
 
-* **TV Show: *Supernytt* (NRK TV)**
-* **Why it works:** As mentioned for A2+, this children’s news show remains a gold standard for B1. It uses adult topics but avoids overly complex, academic jargon.
-
-
-* **Podcast: *Norske tilstander* (NRK Radio)**
-* **Why it works:** A radio show/podcast discussing Norwegian culture, habits, and current events. It features different guests, which provides excellent exposure to mild regional accents without being overwhelmingly difficult.
-
-
+- **Podcast: _Norske tilstander_ (NRK Radio)**
+- **Why it works:** A radio show/podcast discussing Norwegian culture, habits, and current events. It features different guests, which provides excellent exposure to mild regional accents without being overwhelmingly difficult.
 
 ---
 
@@ -77,22 +68,16 @@ At B1, you transition away from "teacher language" and start listening to conten
 
 At B2, the training wheels are entirely off. Your goal is to get used to overlapping speech, heavy dialects, cultural references, and high-speed slang.
 
-* **Podcast: *Misjonen* (with Atle Antonsen and Johan Golden)**
-* **Why it works:** This is one of Norway's most popular comedy/satire radio shows. They talk incredibly fast, interrupt each other, laugh over sentences, and read bizarre local news clips from all over Norway. If you can understand *Misjonen*, you can understand almost any Norwegian in a bar.
+- **Podcast: _Misjonen_ (with Atle Antonsen and Johan Golden)**
+- **Why it works:** This is one of Norway's most popular comedy/satire radio shows. They talk incredibly fast, interrupt each other, laugh over sentences, and read bizarre local news clips from all over Norway. If you can understand _Misjonen_, you can understand almost any Norwegian in a bar.
 
+- **TV Show: _Rådebank_ or _Exit_ (NRK TV)**
+- **Why it works:**
+- _Rådebank_ features young characters from the Telemark region. It is incredible for learning modern slang, raw emotion, and non-Oslo dialects.
+- _Exit_ is a dark drama based on the lives of Oslo's financial elite. It moves at lightning speed and uses heavy corporate/financial jargon and raw Oslo street-slang.
 
-* **TV Show: *Rådebank* or *Exit* (NRK TV)**
-* **Why it works:**
-* *Rådebank* features young characters from the Telemark region. It is incredible for learning modern slang, raw emotion, and non-Oslo dialects.
-* *Exit* is a dark drama based on the lives of Oslo's financial elite. It moves at lightning speed and uses heavy corporate/financial jargon and raw Oslo street-slang.
-
-
-
-
-* **Podcast: *Hele Historien* (NRK Radio)**
-* **Why it works:** A documentary-style podcast that deep-dives into major historical events in Norway (like the construction of the oil platforms, famous crimes, or sports triumphs). It uses real archive audio, meaning you will hear historical voices and a massive variety of regional dialects from across the decades.
-
-
+- **Podcast: _Hele Historien_ (NRK Radio)**
+- **Why it works:** A documentary-style podcast that deep-dives into major historical events in Norway (like the construction of the oil platforms, famous crimes, or sports triumphs). It uses real archive audio, meaning you will hear historical voices and a massive variety of regional dialects from across the decades.
 
 ---
 
@@ -100,4 +85,4 @@ At B2, the training wheels are entirely off. Your goal is to get used to overlap
 
 Whenever you watch something on NRK TV, **always turn on the Norwegian subtitles (`Undertekster`)**.
 
-Norwegian spelling (*Bokmål*) is highly phonetic, but spoken Norwegian compresses words heavily (e.g., *Jeg har ikke* often sounds like *"Jække"*). Having the text on the screen bridges the gap between what your eyes know and what your ears are trying to catch.
+Norwegian spelling (_Bokmål_) is highly phonetic, but spoken Norwegian compresses words heavily (e.g., _Jeg har ikke_ often sounds like _"Jække"_). Having the text on the screen bridges the gap between what your eyes know and what your ears are trying to catch.

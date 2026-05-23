@@ -5,16 +5,18 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ---
+
 ## sitemap
+
 Update /src/routes/sitemap.xml/+server.ts
 
 ---
-- For B1/B2/C1/C2 how can I do the following? A picture is hard but simple  Norwegian explanation is doable.
- 
+
+- For B1/B2/C1/C2 how can I do the following? A picture is hard but simple Norwegian explanation is doable.
+
 **Graduate to Monolingual Clues:** As an A2 learner approaching B1, the goal is to stop using English prompts entirely. If you use custom flashcard apps (like Anki), try making cards where the front is a **picture** or a simple Norwegian explanation, and the back is the Norwegian phrase you want to use.
 
-Add Option of Monolingual approach for above B1.
----
+## Add Option of Monolingual approach for above B1.
 
 ai-docs/implementation/email-service-implementation.md
 Done up to Step 6.
@@ -114,12 +116,12 @@ From Relearning (forgotten):
 - Good / Easy → graduates back to Review (memorized again)
 
 So in short:
-| Legend label | FSRS State | How you get there                      |
+| Legend label | FSRS State | How you get there |
 | ------------ | ---------- | -------------------------------------- |
-| New          | New        | Never rated                            |
-| Learning     | Learning   | Rated at least once, not yet graduated |
-| Memorized    | Review     | Passed learning steps                  |
-| Forgotten    | Relearning | Hit "Again" on a memorized card        |
+| New | New | Never rated |
+| Learning | Learning | Rated at least once, not yet graduated |
+| Memorized | Review | Passed learning steps |
+| Forgotten | Relearning | Hit "Again" on a memorized card |
 
 The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 

@@ -4,8 +4,8 @@ Using English-to-Norwegian flashcards requires a strategic approach given your n
 
 ### The Good: Why Phrase Flashcards WorkWell
 
-* **You absorb grammar naturally:** By memorizing a phrase like *"Jeg gleder meg til å..."* (I am looking forward to...), you are learning the syntax, the preposition *til*, and the infinitive *å* as one single rhythmic sound piece. You don't have to overthink the rules when you want to use it.
-* **It mimics real-life conversations:** We don't speak in individual words; we speak in phrases. Having immediate access to whole sentences significantly speeds up your reaction time.
+- **You absorb grammar naturally:** By memorizing a phrase like _"Jeg gleder meg til å..."_ (I am looking forward to...), you are learning the syntax, the preposition _til_, and the infinitive _å_ as one single rhythmic sound piece. You don't have to overthink the rules when you want to use it.
+- **It mimics real-life conversations:** We don't speak in individual words; we speak in phrases. Having immediate access to whole sentences significantly speeds up your reaction time.
 
 ### The Trap: Why it might feed your "Double-Translation" problem
 

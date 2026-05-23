@@ -160,5 +160,4 @@ stram: tight
 å rape: to burp
 en katastrofe: a disaster
 
-
 å forestille seg: to imagine, Kan man forestille seg det utenkelige?

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
+  import { untrack } from 'svelte';
   import type { Profile } from '$lib/server/profile';
   import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages.js';
@@ -11,6 +12,7 @@
   let errorMsg = $state('');
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
+  const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C1', 'C2']);
 
   const speedOptions = [
     { value: '0.5', label: '0.5×' },
@@ -35,7 +37,9 @@
   // before saving while staying in sync with the nav button toggle.
   // Written back to the store on save via applyToLocalStorage().
   let uiLanguage = $derived.by<'en' | 'nb'>(() => localeStore.current);
-  let cardDirection = $derived(profile?.card_direction ?? 'no_en');
+  // $state so bind:group can write to it; untrack() suppresses the Svelte warning about
+  // capturing the initial prop value — that's intentional here.
+  let cardDirection = $state(untrack(() => profile?.card_direction ?? 'no_en'));
   // include_phrases: true → 'phrase', false → 'word'
   let cardType = $derived((profile?.include_phrases ?? false) ? 'phrase' : 'word');
   let voiceSpeed = $derived(String(profile?.voice_speed ?? 1));
@@ -62,8 +66,31 @@
     { value: '20', label: '20 questions' }
   ];
 
+  // Card direction options: 'def_no' is only shown for Word type at B1+
+  let cardDirectionOptions = $derived.by(() => {
+    const base = [
+      { value: 'no_en', label: m.profile_prefs_card_direction_no_en() },
+      { value: 'en_no', label: m.profile_prefs_card_direction_en_no() }
+    ];
+    if (cardType === 'word' && B1_PLUS_LEVELS.has(targetLevel)) {
+      return [...base, { value: 'def_no', label: m.profile_prefs_card_direction_def_no() }];
+    }
+    return base;
+  });
+
+  // If def_no is selected but the user switches to phrase or A1/A2, fall back to no_en
+  let effectiveCardDirection = $derived(
+    cardDirection === 'def_no' && (cardType !== 'word' || !B1_PLUS_LEVELS.has(targetLevel))
+      ? 'no_en'
+      : cardDirection
+  );
+
+  // Whether to show the definition-mode explanatory note
+  let showDefNote = $derived(cardType === 'word' && B1_PLUS_LEVELS.has(targetLevel));
+
   function applyToLocalStorage() {
-    localStorage.setItem('vocab-flashcard-mode', cardDirection === 'en_no' ? 'engnor' : 'noreng');
+    const modeMap: Record<string, string> = { no_en: 'noreng', en_no: 'engnor', def_no: 'defnor' };
+    localStorage.setItem('vocab-flashcard-mode', modeMap[effectiveCardDirection] ?? 'noreng');
     localStorage.setItem('vocab-flashcard-card-type', cardType);
     localStorage.setItem(LS_SPEED, voiceSpeed);
     localStorage.setItem(LS_PITCH, voicePitch);
@@ -156,13 +183,14 @@
       <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_prefs_card_direction()}
       </p>
-      <div class="flex gap-3">
-        {#each [{ value: 'no_en', label: m.profile_prefs_card_direction_no_en() }, { value: 'en_no', label: m.profile_prefs_card_direction_en_no() }] as opt (opt.value)}
+      <div class="flex flex-wrap gap-3">
+        {#each cardDirectionOptions as opt (opt.value)}
           <label class="flex cursor-pointer items-center gap-2">
             <input
               type="radio"
               name="card_direction"
               value={opt.value}
+              checked={effectiveCardDirection === opt.value}
               bind:group={cardDirection}
               class="accent-indigo-600"
             />
@@ -173,6 +201,11 @@
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
         {m.profile_prefs_card_direction_hint()}
       </p>
+      {#if showDefNote}
+        <p class="mt-1 text-xs text-indigo-600 dark:text-indigo-400">
+          {m.profile_prefs_card_direction_def_note()}
+        </p>
+      {/if}
     </div>
 
     <!-- Card type -->

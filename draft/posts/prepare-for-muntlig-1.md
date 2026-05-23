@@ -1,3 +1,11 @@
+Muntlig practice series Part 1
+
+## About Norskeprøven muntlig
+
+FILL UP HERE
+
+In this post we are going to practice 5 questions. After reading a question, answer before checking the model answer.
+
 ## 1. «Om du skulle åpne restaurant eller bar, hva slags sted skulle det vært?»
 
 ### A2 model answer
@@ -95,3 +103,5 @@
 - akkurat hva jeg ønsket meg
 - personlige gaver
 - betyr mer enn
+
+We can continue with the next 5 cards afterward.
