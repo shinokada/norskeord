@@ -281,6 +281,7 @@ export interface VocabEntry {
   english: string;
   example: string;
   example_english: string;
+  definition?: string; // monolingual Norwegian definition of the word (B1+)
   level: CEFRLevel;
   category: Category;
   part: PartOfSpeech;
