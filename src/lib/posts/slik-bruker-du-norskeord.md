@@ -30,7 +30,7 @@ Det beste du kan gjøre: sett kortmodus til **Phrase** og velg **English** som s
 
 ## Vurder kortene ærlig
 
-Etter hvert kort ber Norskeord deg vurdere hvor godt du husket: **Igjen / Vanskelig / Bra / Lett**. Dette styrer FSRS-algoritmen som bestemmer når du ser kortet igjen. Vær ærlig – algoritmen er kalibrert for å minimere glemming, men bare hvis du gir den riktige signaler.
+Etter hvert kort ber Norskeord deg vurdere hvor godt du husket: **Gjenta(Repeat) / Vanskelig(Hard) / Bra(Good) / Lett(Easy)**. Dette styrer FSRS-algoritmen som bestemmer når du ser kortet igjen. Vær ærlig – algoritmen er kalibrert for å minimere glemming, men bare hvis du gir den riktige signaler.
 
 ---
 
