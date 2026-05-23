@@ -5,6 +5,7 @@
     "english": "the environment",
     "example": "Vi må ta vare på miljøet.",
     "example_english": "We must take care of the environment.",
+    "definition": "Det store systemet av natur rundt oss — luft, vann, jord og alle levende ting.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -15,6 +16,7 @@
     "english": "climate change",
     "example": "Klimaendringer er en global utfordring.",
     "example_english": "Climate change is a global challenge.",
+    "definition": "Når været og temperaturen på jorden forandrer seg over lang tid, ofte fordi mennesker forurenser.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -25,6 +27,7 @@
     "english": "to recycle",
     "example": "Jeg resirkulerer glass, papir og plast.",
     "example_english": "I recycle glass, paper and plastic.",
+    "definition": "Å bruke gamle ting på nytt eller lage nye produkter av dem, for å ikke kaste dem.",
     "level": "B1",
     "category": "environment",
     "part": "verb"
@@ -35,6 +38,7 @@
     "english": "pollution",
     "example": "Luftforurensning er et problem i storbyer.",
     "example_english": "Air pollution is a problem in large cities.",
+    "definition": "Når luft, vann eller jord blir skadet av kjemikalier, søppel eller røyk slik at det er dårlig for helsen.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -45,6 +49,7 @@
     "english": "sustainable",
     "example": "Vi trenger mer bærekraftig energi.",
     "example_english": "We need more sustainable energy.",
+    "definition": "Noe som kan brukes lenge uten å skade naturen eller bruke opp ressurser for fremtidige generasjoner.",
     "level": "B1",
     "category": "environment",
     "part": "adjective"
@@ -55,6 +60,7 @@
     "english": "an emission",
     "example": "CO₂-utslippene må reduseres.",
     "example_english": "CO₂ emissions must be reduced.",
+    "definition": "Gasser eller stoffer som slippes ut i luften fra biler, fabrikker og andre kilder.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -65,6 +71,7 @@
     "english": "renewable energy",
     "example": "Norge bruker mye fornybar energi.",
     "example_english": "Norway uses a lot of renewable energy.",
+    "definition": "Energi fra naturlige kilder som aldri tar slutt, som sol, vind og vann.",
     "level": "B1",
     "category": "environment",
     "part": "phrase"
@@ -75,6 +82,7 @@
     "english": "nature",
     "example": "Norsk natur er fantastisk.",
     "example_english": "Norwegian nature is fantastic.",
+    "definition": "Alt som finnes i verden uten å være laget av mennesker — trær, fjell, elver og dyr.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -85,6 +93,7 @@
     "english": "to save energy",
     "example": "Vi prøver å spare energi hjemme.",
     "example_english": "We try to save energy at home.",
+    "definition": "Å bruke mindre strøm eller varme for å hjelpe miljøet og betale mindre penger.",
     "level": "B1",
     "category": "environment",
     "part": "phrase"
@@ -95,6 +104,7 @@
     "english": "a greenhouse / a hothouse",
     "example": "Drivhuseffekten varmer opp kloden.",
     "example_english": "The greenhouse effect is warming the planet.",
+    "definition": "Når gasser i luften holder på varmen fra solen og gjør det varmere på jorden.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -105,6 +115,7 @@
     "english": "biodiversity",
     "example": "Biologisk mangfold er truet mange steder.",
     "example_english": "Biodiversity is threatened in many places.",
+    "definition": "Mange ulike typer planter, dyr og andre levende ting som lever på jorden.",
     "level": "B1",
     "category": "environment",
     "part": "phrase"
@@ -115,6 +126,7 @@
     "english": "deforestation",
     "example": "Avskoging er en stor trussel mot regnskogen.",
     "example_english": "Deforestation is a great threat to the rainforest.",
+    "definition": "Når mange trær i en skog hugges ned og skogen forsvinner.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -125,6 +137,7 @@
     "english": "to conserve / to preserve",
     "example": "Vi må bevare naturreservatene.",
     "example_english": "We must conserve natural reserves.",
+    "definition": "Å ta vare på noe slik at det ikke forsvinner eller blir ødelagt.",
     "level": "B1",
     "category": "environment",
     "part": "verb"
@@ -135,6 +148,7 @@
     "english": "waste / rubbish",
     "example": "Vi sorterer avfallet i ulike kategorier.",
     "example_english": "We sort waste into different categories.",
+    "definition": "Ting vi ikke vil ha mer og kaster bort — mat, papir, glass og annet søppel.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -145,6 +159,7 @@
     "english": "solar energy",
     "example": "Solenergi er rent og fornybart.",
     "example_english": "Solar energy is clean and renewable.",
+    "definition": "Energi som kommer fra sollyset, brukt til å lage strøm.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -155,6 +170,7 @@
     "english": "a wind turbine",
     "example": "Det bygges mange vindmøller langs kysten.",
     "example_english": "Many wind turbines are being built along the coast.",
+    "definition": "En stor maskin med vinger som snurrer i vinden og lager strøm.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
@@ -165,6 +181,7 @@
     "english": "global warming",
     "example": "Global oppvarming truer isbjørnene.",
     "example_english": "Global warming threatens polar bears.",
+    "definition": "Når temperaturen på hele jorden stiger fordi det er for mye CO₂ i luften.",
     "level": "B1",
     "category": "environment",
     "part": "phrase"
@@ -175,6 +192,7 @@
     "english": "to reduce",
     "example": "Vi må redusere plastforbruket.",
     "example_english": "We must reduce plastic consumption.",
+    "definition": "Å gjøre noe mindre eller bruke mindre av noe.",
     "level": "B1",
     "category": "environment",
     "part": "verb"
@@ -185,6 +203,7 @@
     "english": "plastic",
     "example": "Mye plast havner i havet.",
     "example_english": "A lot of plastic ends up in the ocean.",
+    "definition": "Et materiale laget av kjemikalier, brukt i poser, flasker og mange andre produkter.",
     "level": "B1",
     "category": "environment",
     "part": "noun"
