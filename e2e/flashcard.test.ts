@@ -84,7 +84,9 @@ test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ 
   const flipCard = page.getByRole('button', { name: /flashcard showing question/i });
   await expect(flipCard).toBeVisible({ timeout: 10000 });
   await flipCard.click({ force: true });
-  await expect(page.getByRole('button', { name: /again|igjen|gjenta/i })).toBeVisible({ timeout: 10000 });
+  await expect(page.getByRole('button', { name: /again|igjen|gjenta/i })).toBeVisible({
+    timeout: 10000
+  });
   await expect(page.getByRole('button', { name: /good|bra/i })).toBeVisible();
 });
 
