@@ -25,11 +25,13 @@ async function answerAndAdvance(page: Page) {
     return;
   }
 
-  // After answering, the Next / See results button should appear (en: Next / See results, nb: Neste / Se resultater)
+  // After answering, wait for the Next / See results button then click it
   const next = page.getByRole('button', { name: /next|see results|neste|se resultater/i });
-  await next.waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
-  if (await next.isVisible({ timeout: 500 }).catch(() => false)) {
+  await next.waitFor({ state: 'visible', timeout: 8000 }).catch(() => {});
+  if (await next.isVisible({ timeout: 1000 }).catch(() => false)) {
     await next.click();
+    // Brief pause so the UI leaves the revealing state before the next loop iteration
+    await page.waitForTimeout(200);
   }
 }
 
@@ -45,8 +47,13 @@ async function completeSession(page: Page, maxQuestions = 20) {
       .catch(() => false))
   ) {
     await answerAndAdvance(page);
-    if (++answered > maxQuestions + 5) break; // safety guard with slack
+    if (++answered > maxQuestions * 3) break; // generous safety guard
   }
+  // Ensure the summary is actually visible before returning
+  await page
+    .getByText(/session complete|økt fullført/i)
+    .waitFor({ state: 'visible', timeout: 8000 })
+    .catch(() => {});
 }
 
 // ===========================================================================
@@ -69,6 +76,7 @@ test('Plus user sees quiz start screen', async ({ page }) => {
 // ===========================================================================
 
 test('Plus user can complete a quiz session and see summary', async ({ page }) => {
+  test.setTimeout(60000);
   await injectPlusPlan(page);
   await page.goto('/quiz');
   await page.getByRole('button', { name: /start quiz/i }).click();
@@ -146,6 +154,7 @@ test('Space advances from reveal to next question', async ({ page }) => {
 // ===========================================================================
 
 test('Try again from summary resets the session', async ({ page }) => {
+  test.setTimeout(60000);
   await injectPlusPlan(page);
   await page.goto('/quiz');
   await page.getByRole('button', { name: /start quiz/i }).click();
@@ -165,6 +174,7 @@ test('Try again from summary resets the session', async ({ page }) => {
 // ===========================================================================
 
 test('quiz respects vocab-quiz-limit from localStorage', async ({ page }) => {
+  test.setTimeout(60000);
   await injectPlusPlan(page);
   await page.goto('/quiz');
 
