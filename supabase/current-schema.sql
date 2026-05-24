@@ -32,7 +32,7 @@ CREATE TABLE public.contact_messages (
   user_agent text,
   created_at timestamp with time zone NOT NULL DEFAULT now(),
   CONSTRAINT contact_messages_pkey PRIMARY KEY (id),
-  CONSTRAINT contact_messages_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE
+  CONSTRAINT contact_messages_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
 CREATE TABLE public.daily_lessons (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
@@ -60,7 +60,7 @@ CREATE TABLE public.profiles (
   avatar_url text,
   target_level text DEFAULT 'B1'::text CHECK (target_level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C1'::text, 'C2'::text])),
   ui_language text DEFAULT 'en'::text CHECK (ui_language = ANY (ARRAY['en'::text, 'nb'::text])),
-  card_direction text DEFAULT 'no_en'::text CHECK (card_direction = ANY (ARRAY['no_en'::text, 'en_no'::text])),
+  card_direction text DEFAULT 'no_en'::text CHECK (card_direction = ANY (ARRAY['no_en'::text, 'en_no'::text, 'def_no'::text])),
   include_phrases boolean DEFAULT true,
   daily_reminder boolean DEFAULT false,
   email_lesson boolean DEFAULT false,
