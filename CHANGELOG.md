@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.6.0
+
+### Minor Changes
+
+- - **New Features**
+    - Definition → Norwegian flashcard mode for vocabulary learners at B1+ levels
+    - Norwegian learning blog posts on improving listening skills, speaking techniques, and study strategies
+    - Oral practice content with 20 guided prompts and model answers (4-part series)
+    - Monolingual Norwegian definitions for vocabulary entries
+    - Study day streak tracking and push notification reminders for Plus members
+  - **Localization**
+    - Added translation keys for definition flashcard UI and profile preferences
+  - **Updates**
+    - Extended flashcard direction preferences to support definition mode
+
 ## 2.5.0
 
 ### Minor Changes
