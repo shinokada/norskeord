@@ -1,4 +1,4 @@
-# email service todos
+# email service todos NOT DOING THIS ANY MORE
 
 [Implementation guide](./implementation/email-service-implementation.md)
 

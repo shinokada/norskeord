@@ -6,7 +6,17 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 
 ---
 
+## sitemap
+
+Update /src/routes/sitemap.xml/+server.ts
+
 ---
+
+- For B1/B2/C1/C2 how can I do the following? A picture is hard but simple Norwegian explanation is doable.
+
+**Graduate to Monolingual Clues:** As an A2 learner approaching B1, the goal is to stop using English prompts entirely. If you use custom flashcard apps (like Anki), try making cards where the front is a **picture** or a simple Norwegian explanation, and the back is the Norwegian phrase you want to use.
+
+## Add Option of Monolingual approach for above B1.
 
 ai-docs/implementation/email-service-implementation.md
 Done up to Step 6.

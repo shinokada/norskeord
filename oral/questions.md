@@ -1,0 +1,19 @@
+- Om du skulle åpne restaurant eller bar, hva slags sted skulle det vært?
+- Når var sist gang du så noe fantastisk på himmelen (regnbue, nordlys, formørkelse, meteorstorm...)?
+- Hvilken film synes du er mest rørende?
+- Hva redder dagen når du har hatt en vanskelig dag?
+- Nevn en presang som du ble spesielt glad for.
+- Hva er noe du tidligere har kjøpt som du i dag virkelig ikke skjønner hvorfor du gjorde?
+- Hva foretrekker du av musikalkonsert, teater, musikal, revy, standup og danseforestilling?
+- Hva er det viktigste i et vennskap?
+- Når var sist gang du vant noe?
+- Hvis du kunne fått svar på én ting om din fremtid, hva ville du spurt om?
+- Hvis du spilte i et band, hvilken rolle ville du helst hatt?
+- Hva er det beste rådet du har fått, og fra hvem?
+- Hva er det hyggeligste som har skjedd i dag?
+- Hva var det morsomste du gjorde i helgen?
+- Hva var din første jobb?
+- Kan du huske sist gang du begynte å gråte av glede?
+- Hvilken sport er du best i?
+- Vil du helst dykke i the Great Barrier Reef eller bestige Galdhøpiggen?
+- I stedet for vann, hva burde ha vært i springen?
