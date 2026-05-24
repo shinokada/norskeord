@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.5.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added scheduled blog post publishing automation
+    - Introduced 30+ new Norwegian language learning blog posts covering grammar rules, vocabulary distinctions, phrases, and practical usage examples
+  - **Documentation**
+    - Updated blog planning guidelines with improved structure and author guidance
+    - Enhanced blog post planning with topic grouping and publication strategies
+
 ## 2.4.0
 
 ### Minor Changes

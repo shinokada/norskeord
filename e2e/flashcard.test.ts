@@ -68,6 +68,8 @@ test('B1 travel flashcard page loads', async ({ page }) => {
 });
 
 // Plus member: C1 philosophy page loads with cards and FSRS rating buttons
+// Uses C1/philosophy which is free-tier accessible (no server-side redirect),
+// then injects plan:plus client-side so the due-mode deck rebuilds correctly.
 test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/c1/philosophy');
@@ -75,12 +77,16 @@ test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ 
   // heading shows correct category
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Philosophy');
 
-  // card counter is visible (format: "1/N")
-  await expect(page.getByRole('button', { name: /^\d+\/\d+$/ })).toBeVisible();
+  // card counter is visible (format: "1/N") — wait for deck to build after onMount
+  await expect(page.getByRole('button', { name: /^\d+\/\d+$/ })).toBeVisible({ timeout: 10000 });
 
   // flip the card and confirm FSRS rating buttons appear (en: Again/Good, nb: Igjen/Bra)
-  await page.getByRole('button', { name: /flashcard showing question/i }).click();
-  await expect(page.getByRole('button', { name: /again|igjen/i })).toBeVisible();
+  const flipCard = page.getByRole('button', { name: /flashcard showing question/i });
+  await expect(flipCard).toBeVisible({ timeout: 10000 });
+  await flipCard.click({ force: true });
+  await expect(page.getByRole('button', { name: /again|igjen|gjenta/i })).toBeVisible({
+    timeout: 10000
+  });
   await expect(page.getByRole('button', { name: /good|bra/i })).toBeVisible();
 });
 

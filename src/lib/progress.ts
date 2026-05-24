@@ -373,7 +373,7 @@ export function saveProgress(
   // Only run for Plus users (userId is null for free users).
   if (userId) {
     void pushRowToSupabase(userId, entry.norsk, updated);
-    void recordStudyDay();
+    void recordStudyDay(userId);
 
     // Check if this rating crosses an optimisation milestone.
     const totalReps = Object.values({ ...progressMap, [entry.norsk]: updated }).reduce(
@@ -440,11 +440,10 @@ export function getStreakFromLocalStorage(progressMap: Record<string, CardProgre
  * Upserts a study_days row for today, incrementing the card count.
  * Fire-and-forget — called from saveProgress for Plus users only.
  */
-export async function recordStudyDay(): Promise<void> {
+export async function recordStudyDay(userId: string): Promise<void> {
   try {
     const today = todayLocalDate();
-    // Use raw SQL upsert with increment via RPC to avoid a read-modify-write
-    await supabase.rpc('upsert_study_day', { p_day: today });
+    await supabase.rpc('upsert_study_day', { p_user_id: userId, p_day: today });
   } catch {
     // Silent failure — streak data is non-critical
   }
