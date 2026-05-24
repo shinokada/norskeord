@@ -20,6 +20,8 @@ import type { ProfileUpdate } from '$lib/server/profile';
  * Returns null on any failure so the UI degrades gracefully.
  */
 async function fetchBillingPortalUrl(subscriptionId: string): Promise<string | null> {
+  // Skip if the API key is missing or a placeholder (common in dev)
+  if (!LEMONSQUEEZY_API_KEY || LEMONSQUEEZY_API_KEY === 'your_lemonsqueezy_api_key') return null;
   try {
     const res = await fetch(`https://api.lemonsqueezy.com/v1/subscriptions/${subscriptionId}`, {
       headers: {
@@ -28,7 +30,10 @@ async function fetchBillingPortalUrl(subscriptionId: string): Promise<string | n
       }
     });
     if (!res.ok) {
-      console.error('[billing-portal] LS API error:', res.status, await res.text());
+      // 401 = expired/invalid key, 404 = subscription not found — suppress both in logs
+      if (res.status !== 401 && res.status !== 404) {
+        console.error('[billing-portal] LS API error:', res.status, await res.text());
+      }
       return null;
     }
     const data = await res.json();
@@ -121,7 +126,7 @@ export const actions: Actions = {
 
     const validLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     const validLanguages = ['en', 'nb'];
-    const validDirections = ['no_en', 'en_no'];
+    const validDirections = ['no_en', 'en_no', 'def_no'];
     const validCardTypes = ['word', 'phrase'];
     const validSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5];
     const validPitches = [0.7, 1.0, 1.3];

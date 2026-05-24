@@ -18,7 +18,7 @@ Forskning viser at konsentrasjonen faller kraftig etter omtrent 25–30 minutter
 
 I Norskeord passer dette perfekt til en Due økt. Gå igjennom Due-kortene.
 
-Ta en pause når du kjenner at fokuset svekkes, og kom tilbake for en ny runde. 
+Ta en pause når du kjenner at fokuset svekkes, og kom tilbake for en ny runde.
 
 ---
 
@@ -26,8 +26,7 @@ Ta en pause når du kjenner at fokuset svekkes, og kom tilbake for en ny runde.
 
 Det er stor forskjell på å _gjenkjenne_ et ord når du ser det og å _huske_ det når du trenger det. Å lese ordlister gjentatte ganger gir en behagelig følelse av at du kan det, men det er en illusjon.
 
-Den beste framgangsmåten er å sette kortmodus til **Phrase** og velge **English** som standardspråk i profilen din. Når du ser den engelske frasen, sier eller skriver du ned den norske oversettelsen **før** du snur kortet. Det er dette som kalles aktiv læring. Det er slik hjernen faktisk lagrer ny kunnskap. Man lærer gjennom mening og aktiv deltagelse, ikke blind repetisjon. 
-
+Den beste framgangsmåten er å sette kortmodus til **Phrase** og velge **English** som standardspråk i profilen din. Når du ser den engelske frasen, sier eller skriver du ned den norske oversettelsen **før** du snur kortet. Det er dette som kalles aktiv læring. Det er slik hjernen faktisk lagrer ny kunnskap. Man lærer gjennom mening og aktiv deltagelse, ikke blind repetisjon.
 
 ---
 
@@ -54,6 +53,7 @@ Start med **10 minutter om dagen**. Når vanen har satt seg, kan du utvide. Kort
 ## **In English**
 
 ## Study smarter, not longer
+
 Research shows focus drops sharply after about **25–30 minutes**. The fix: study in short bursts, take a **5-minute break**, then return. Your concentration resets to nearly 100%.
 
 In Norskeord, this maps perfectly onto a **Due session**. Work through your Due cards, take a break when focus fades, and come back for another round.
