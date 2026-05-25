@@ -205,8 +205,9 @@ Deno.serve(async (req: Request) => {
   if (emailReminderIds.length > 0) {
     // auth.admin.listUsers() returns all users — filter to our set.
     // For large user bases a paginated approach would be needed; fine for now.
-    const { data: usersData, error: usersError } =
-      await supabase.auth.admin.listUsers({ perPage: 1000 });
+    const { data: usersData, error: usersError } = await supabase.auth.admin.listUsers({
+      perPage: 1000
+    });
 
     if (usersError) {
       console.error('[send-reminders] Failed to fetch user emails:', usersError.message);
