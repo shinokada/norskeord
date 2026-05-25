@@ -11,6 +11,7 @@ export interface Profile {
   card_direction: 'no_en' | 'en_no' | 'def_no';
   include_phrases: boolean;
   daily_reminder: boolean;
+  email_reminder: boolean;
   email_lesson: boolean;
   voice_speed: number;
   voice_pitch: number;
@@ -34,6 +35,7 @@ export type ProfileUpdate = Partial<
     | 'card_direction'
     | 'include_phrases'
     | 'daily_reminder'
+    | 'email_reminder'
     | 'email_lesson'
     | 'voice_speed'
     | 'voice_pitch'

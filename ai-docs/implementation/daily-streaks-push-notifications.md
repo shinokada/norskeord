@@ -166,3 +166,37 @@ vite.config.ts                                        (Phase E — VAPID key)
 messages/en.json                                      (streak + push strings)
 messages/nb.json
 ```
+
+## Bug fix
+
+### Supabase dashboard: Turn off "Verify JWT with legacy secret"
+
+This is the right approach for a server-to-server cron call. The function should handle its own auth (or just trust all callers since it's only reachable via your cron). Toggle it OFF in the Settings page you're looking at now and click Save changes. This removes the gateway-level JWT check entirely.
+
+### Supabase Dashboard → Integrations → Cron → Push Notifications → Edit
+
+```
+SELECT net.http_post(
+  url := 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push-reminders',
+  headers := jsonb_build_object(
+    'Content-Type', 'application/json',
+    'Authorization', 'Bearer ' || current_setting('app.supabase_anon_key', true)
+  ),
+  body := '{}'::jsonb
+);
+```
+
+## Current status
+
+Using command from https://supabase.com/dashboard/project/yyohrwgwoubvwjhwnaec/functions/send-push-reminders/details
+
+```
+curl -L -X POST 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push-reminders' \
+  -H 'Authorization: Bearer <USE PUBLIC_SUPABASE_PUBLISHABLE_KEY from .env>' \
+  -H 'apikey: <USE PUBLIC_SUPABASE_PUBLISHABLE_KEY from .env>' \
+  -H 'Content-Type: application/json' \
+  --data '{"name":"Functions"}'
+{"ok":true,"sent":1,"failed":0,"skipped":0,"stale_cleaned":0}%
+```
+
+This `sent:1` means the push notification was successfully delivered to your browser/device.
