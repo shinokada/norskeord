@@ -1,5 +1,12 @@
 # norske-flashcard
 
+## 2.7.1
+
+### Patch Changes
+
+- fix: vocab-a1.json
+  fix: notification-time helper comment
+
 ## 2.7.0
 
 ### Minor Changes
