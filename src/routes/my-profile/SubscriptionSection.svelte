@@ -231,6 +231,12 @@
           </label>
           <p class="mt-0.5 ml-7 text-xs text-gray-400 dark:text-gray-500">
             {m.profile_sub_daily_reminder_hint()}
+            <a
+              href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline hover:text-gray-600 dark:hover:text-gray-300"
+            >What's that in my time?</a>
           </p>
           {#if reminderError}
             <p class="mt-1 ml-7 text-xs text-red-500">{reminderError}</p>
@@ -258,6 +264,12 @@
           </label>
           <p class="mt-0.5 ml-7 text-xs text-gray-400 dark:text-gray-500">
             {m.profile_sub_email_reminder_hint()}
+            <a
+              href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline hover:text-gray-600 dark:hover:text-gray-300"
+            >What's that in my time?</a>
           </p>
           {#if emailReminderError}
             <p class="mt-1 ml-7 text-xs text-red-500">{emailReminderError}</p>
