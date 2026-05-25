@@ -63,6 +63,7 @@ CREATE TABLE public.profiles (
   card_direction text DEFAULT 'no_en'::text CHECK (card_direction = ANY (ARRAY['no_en'::text, 'en_no'::text, 'def_no'::text])),
   include_phrases boolean DEFAULT true,
   daily_reminder boolean DEFAULT false,
+  email_reminder boolean NOT NULL DEFAULT false,
   email_lesson boolean DEFAULT false,
   ls_customer_id text,
   ls_subscription_id text,

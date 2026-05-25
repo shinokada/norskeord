@@ -1,9 +1,11 @@
 /**
- * GET /api/email/unsubscribe?uid=<userId>&token=<hmac>
+ * GET /api/email/unsubscribe?uid=<userId>&token=<hmac>&action=<lesson|reminder>
  *
- * One-click unsubscribe link included in every lesson email.
- * Verifies the HMAC token, sets active=false in email_subscribers,
- * and renders a plain confirmation page.
+ * One-click unsubscribe link included in every lesson and reminder email.
+ * Verifies the HMAC token then applies the correct DB write based on action:
+ *
+ *   action=lesson   → sets email_subscribers.active = false  (default, backwards-compatible)
+ *   action=reminder → sets profiles.email_reminder = false
  *
  * Token is generated with: HMAC-SHA256(UNSUBSCRIBE_SECRET, userId)
  * See src/lib/server/email-token.ts for the generation helper.
@@ -22,7 +24,6 @@ function verifyToken(userId: string, token: string): boolean {
     const b = new Uint8Array(Buffer.from(expected, 'hex'));
     return a.byteLength === b.byteLength && timingSafeEqual(a, b);
   } catch {
-    // Buffer lengths differ — invalid token format
     return false;
   }
 }
@@ -54,6 +55,7 @@ function html(title: string, heading: string, body: string): Response {
 export const GET: RequestHandler = async ({ url }) => {
   const userId = url.searchParams.get('uid');
   const token = url.searchParams.get('token');
+  const action = url.searchParams.get('action') ?? 'lesson';
 
   if (!userId || !token) {
     return html(
@@ -73,13 +75,38 @@ export const GET: RequestHandler = async ({ url }) => {
 
   const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
+  if (action === 'reminder') {
+    // Daily email reminder — clear the toggle in profiles
+    const { error } = await supabase
+      .from('profiles')
+      .update({ email_reminder: false })
+      .eq('id', userId);
+
+    if (error) {
+      console.error('[unsubscribe] reminder DB error:', error.message);
+      return html(
+        'Something went wrong',
+        'Something went wrong',
+        'We could not process your request. Please try again or contact us.'
+      );
+    }
+
+    return html(
+      'Unsubscribed',
+      'You have been unsubscribed',
+      'You will no longer receive daily reminder emails from Norskeord. ' +
+        'You can re-enable them at any time from your <a href="/my-profile">profile settings</a>.'
+    );
+  }
+
+  // Default: action=lesson — clear the lesson email subscription
   const { error } = await supabase
     .from('email_subscribers')
     .update({ active: false })
     .eq('user_id', userId);
 
   if (error) {
-    console.error('[unsubscribe] DB error:', error.message);
+    console.error('[unsubscribe] lesson DB error:', error.message);
     return html(
       'Something went wrong',
       'Something went wrong',
