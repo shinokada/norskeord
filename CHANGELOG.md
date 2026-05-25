@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.7.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added daily email reminders for Plus users sent at 19:00 UTC when study hasn't occurred that day.
+    - Added email reminder toggle in profile settings with Plus-only access.
+    - Extended unsubscribe functionality to support both lesson and reminder emails.
+  - **Documentation**
+    - Added comprehensive email reminder implementation guide.
+    - Updated push notification documentation.
+  - **Localization**
+    - Added English and Norwegian translations for email reminder preferences.
+
 ## 2.6.0
 
 ### Minor Changes
