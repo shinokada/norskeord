@@ -54,10 +54,8 @@
     }
   }
 
-  // Push notification toggle — writable $derived keeps in sync with profile prop
-  // while still allowing local mutations from handleReminderToggle.
+  // ── Push reminder toggle ─────────────────────────────────────────────────────
   let dailyReminder = $derived.by(() => profile?.daily_reminder ?? false);
-
   let reminderLoading = $state(false);
   let reminderError = $state('');
 
@@ -82,6 +80,38 @@
       reminderError = 'Something went wrong. Please try again.';
     } finally {
       reminderLoading = false;
+    }
+  }
+
+  // ── Email reminder toggle ────────────────────────────────────────────────────
+  let emailReminder = $derived.by(() => profile?.email_reminder ?? false);
+  let emailReminderLoading = $state(false);
+  let emailReminderError = $state('');
+  let emailReminderSaved = $state(false);
+
+  async function handleEmailReminderToggle() {
+    emailReminderError = '';
+    emailReminderLoading = true;
+    emailReminderSaved = false;
+    const turningOn = !emailReminder;
+    try {
+      const res = await fetch('/api/profile/email-reminder', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ enabled: turningOn })
+      });
+      if (!res.ok) {
+        emailReminderError = 'Something went wrong. Please try again.';
+        return;
+      }
+      emailReminder = turningOn;
+      emailReminderSaved = true;
+      setTimeout(() => (emailReminderSaved = false), 2500);
+    } catch (err) {
+      console.error('[email-reminder] toggle failed:', err);
+      emailReminderError = 'Something went wrong. Please try again.';
+    } finally {
+      emailReminderLoading = false;
     }
   }
 </script>
@@ -181,25 +211,58 @@
       <p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_sub_notifications_heading()}
       </p>
-      <div class="space-y-3">
-        <label class="flex cursor-pointer items-center gap-3">
-          <input
-            type="checkbox"
-            checked={dailyReminder}
-            disabled={reminderLoading}
-            onclick={handleReminderToggle}
-            class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
-          />
-          <span class="text-sm text-gray-600 dark:text-gray-400">
-            {m.profile_sub_daily_reminder()}
-            {#if reminderLoading}
-              <span class="text-xs text-gray-400">Saving…</span>
-            {/if}
-          </span>
-        </label>
-        {#if reminderError}
-          <p class="text-xs text-red-500">{reminderError}</p>
-        {/if}
+      <div class="space-y-4">
+        <!-- Push reminder -->
+        <div>
+          <label class="flex cursor-pointer items-center gap-3">
+            <input
+              type="checkbox"
+              checked={dailyReminder}
+              disabled={reminderLoading}
+              onclick={handleReminderToggle}
+              class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
+            />
+            <span class="text-sm text-gray-600 dark:text-gray-400">
+              {m.profile_sub_daily_reminder()}
+              {#if reminderLoading}
+                <span class="text-xs text-gray-400">Saving…</span>
+              {/if}
+            </span>
+          </label>
+          <p class="mt-0.5 ml-7 text-xs text-gray-400 dark:text-gray-500">
+            {m.profile_sub_daily_reminder_hint()}
+          </p>
+          {#if reminderError}
+            <p class="mt-1 ml-7 text-xs text-red-500">{reminderError}</p>
+          {/if}
+        </div>
+
+        <!-- Email reminder -->
+        <div>
+          <label class="flex cursor-pointer items-center gap-3">
+            <input
+              type="checkbox"
+              checked={emailReminder}
+              disabled={emailReminderLoading}
+              onclick={handleEmailReminderToggle}
+              class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
+            />
+            <span class="text-sm text-gray-600 dark:text-gray-400">
+              {m.profile_sub_email_reminder()}
+              {#if emailReminderLoading}
+                <span class="text-xs text-gray-400">Saving…</span>
+              {:else if emailReminderSaved}
+                <span class="text-xs text-indigo-500">✓ Saved</span>
+              {/if}
+            </span>
+          </label>
+          <p class="mt-0.5 ml-7 text-xs text-gray-400 dark:text-gray-500">
+            {m.profile_sub_email_reminder_hint()}
+          </p>
+          {#if emailReminderError}
+            <p class="mt-1 ml-7 text-xs text-red-500">{emailReminderError}</p>
+          {/if}
+        </div>
       </div>
     </div>
   {/if}
