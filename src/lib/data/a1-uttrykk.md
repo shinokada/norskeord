@@ -5,7 +5,7 @@ Hvilke språk snakker du? Jeg snakker gresk og norsk.
 Hva heter det på norsk? Det heter arabisk.
 Hva heter du? Jeg heter Peter.
 Hovdan staver du det? P-E-T-E-R.
-Kommer du fram Brazil? Nei, jeg kommer ikke fra Tyskland.
+Kommer du fram Brazil? Nei, jeg kommer fra Tyskland.
 Snakker du engelsk? Ja, jeg snakker engelsk.
 Hyggelig å treffe deg. I like måte.
 Unnskyld, jeg forstår ikke.
