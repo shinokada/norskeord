@@ -283,13 +283,13 @@ This feature deliberately reuses the same infrastructure that Phase 5 will need:
 
 Implementing email reminders now de-risks Phase 5 — you'll have Resend wired up, domain verified, and a working send/unsubscribe loop before tackling the more complex lesson pipeline.
 
-
 ## Manual test
+
 There are three things to test independently:
 
 ---
 
-**1. The UI toggle (Phase C)**  ✅ Done
+**1. The UI toggle (Phase C)** ✅ Done
 
 Open `/my-profile` as a Plus user, scroll to Notifications, and check the "Daily email reminder" checkbox. You should see "Saving…" briefly then "✓ Saved". Uncheck it and verify the same. If it shows an error, check the browser console — the `PATCH /api/profile/email-reminder` response will tell you what went wrong.
 
@@ -317,6 +317,7 @@ curl -X PATCH https://norskeord.no/api/profile/email-reminder \
 Or easier — just use the browser toggle and watch the Network tab in DevTools.
 
 ### Result from Network tab
+
 ```
 Request URL
 http://localhost:5173/api/profile/email-reminder
@@ -329,6 +330,7 @@ Remote Address
 Referrer Policy
 strict-origin-when-cross-origin
 ```
+
 ---
 
 **3. The Edge Function (Phase F) — the actual email send**
@@ -354,27 +356,42 @@ curl -L -X POST 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push
 A successful response now looks like:
 
 ```json
-{ "ok": true, "push_sent": 1, "push_failed": 0, "email_sent": 1, "email_failed": 0, "skipped": 0, "stale_cleaned": 0 }
+{
+  "ok": true,
+  "push_sent": 1,
+  "push_failed": 0,
+  "email_sent": 1,
+  "email_failed": 0,
+  "skipped": 0,
+  "stale_cleaned": 0
+}
 ```
 
 Check your inbox. If `email_sent` is 1 but no email arrives, check the Resend dashboard → Logs for delivery status.
 
 ### Result ✅ Done
 
-**Issue 1 — JWT error:** The first attempt returned `{"code":"UNAUTHORIZED_INVALID_JWT_FORMAT","message":"Invalid JWT"}` because the function was configured to verify JWTs using the legacy secret, but the publishable key is not a user JWT. Fixed by disabling **"Verify JWT with legacy secret"** in the Supabase Dashboard → Functions → send-push-reminders → Details.
+**Issue 1 — JWT error:** The first attempt returned `
+Check https://supabase.com/dashboard/project/yyohrwgwoubvwjhwnaec/functions/send-push-reminders/details if `Verify JWT with legacy secret` is off.
+{"code":"UNAUTHORIZED_INVALID_JWT_FORMAT","message":"Invalid JWT"}` because the function was configured to verify JWTs using the legacy secret, but the publishable key is not a user JWT. Fixed by disabling **"Verify JWT with legacy secret"** in the Supabase Dashboard → Functions → send-push-reminders → Details.
 
 **Issue 2 — Wrong `EMAIL_FROM` secret:** After fixing the JWT, the response was `email_sent:0, email_failed:1`. The Edge Function log showed:
+
 ```
 [send-reminders] email failed for user=...: The gmail.com domain is not verified.
 Please, add and verify your domain on https://resend.com/domains
 ```
+
 The `EMAIL_FROM` secret in Supabase had been set to a Gmail address. Fixed by re-setting it to match `.env` exactly:
+
 ```
 EMAIL_FROM=Norskeord <no-reply@norskeord.no>
 ```
+
 Note: you do **not** need a real inbox at `no-reply@norskeord.no` — Resend only requires DNS verification that you control the domain. Add the SPF/DKIM records Resend provides at [resend.com/domains](https://resend.com/domains).
 
 **Final result:**
+
 ```
 norskeord git:(feat/email-notification) ✗ curl -L -X POST 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push-reminders' \
   -H 'Authorization: Bearer sb_publishable_xxxxx' \
@@ -383,8 +400,8 @@ norskeord git:(feat/email-notification) ✗ curl -L -X POST 'https://yyohrwgwoub
   --data '{"name":"Functions"}'
 {"ok":true,"push_sent":1,"push_failed":0,"email_sent":1,"email_failed":0,"skipped":0,"stale_cleaned":0}%
 ```
-Email confirmed delivered to inbox. ✅
----
+
+## Email confirmed delivered to inbox. ✅
 
 **4. The unsubscribe link (Phase G)**
 
@@ -394,8 +411,12 @@ You can also construct the URL manually to test without receiving an email. Run 
 
 ```ts
 import { createHmac } from 'crypto';
-const token = createHmac('sha256', '<your-UNSUBSCRIBE_SECRET>').update('<your-user-id>').digest('hex');
-console.log(`https://norskeord.no/api/email/unsubscribe?uid=<your-user-id>&token=${token}&action=reminder`);
+const token = createHmac('sha256', '<your-UNSUBSCRIBE_SECRET>')
+  .update('<your-user-id>')
+  .digest('hex');
+console.log(
+  `https://norskeord.no/api/email/unsubscribe?uid=<your-user-id>&token=${token}&action=reminder`
+);
 ```
 
 Then open that URL in a browser and verify the confirmation page appears and `email_reminder` is set to `false`.
@@ -409,6 +430,7 @@ npx supabase functions deploy send-push-reminders
 ```
 
 This is done:
+
 ```
 norskeord git:(feat/email-notification) ✗ npx supabase functions deploy send-push-reminders
 Need to install the following packages:
