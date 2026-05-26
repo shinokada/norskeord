@@ -8,7 +8,13 @@
 </script>
 
 {#if data.entries.length > 0}
-  <VocabFlashcardPage entries={data.entries} title={categoryName} />
+  <VocabFlashcardPage
+    entries={data.entries}
+    title={categoryName}
+    level={data.level}
+    prevCategory={data.prevCategory}
+    nextCategory={data.nextCategory}
+  />
 {:else}
   <div class="py-16 text-center">
     <h1 class="text-2xl font-semibold text-gray-700 dark:text-gray-300">{categoryName}</h1>

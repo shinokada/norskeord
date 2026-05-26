@@ -42,7 +42,7 @@ const POOL: VocabEntry[] = [
   makeEntry({ norsk: 'jobbe', english: 'to work' }),
   makeEntry({ norsk: 'reise', english: 'to travel', category: 'travel' }),
   makeEntry({ norsk: 'spise', english: 'to eat', category: 'food' }),
-  makeEntry({ norsk: 'sove', english: 'to sleep', category: 'health-basic' }),
+  makeEntry({ norsk: 'sove', english: 'to sleep', category: 'health' }),
   makeEntry({ norsk: 'lese', english: 'to read', category: 'education' }),
   makeEntry({ norsk: 'skrive', english: 'to write', category: 'education' }),
   makeEntry({ norsk: 'snakke', english: 'to speak', category: 'communication' }),
@@ -51,13 +51,13 @@ const POOL: VocabEntry[] = [
     norsk: 'gå',
     english: 'to walk',
     level: 'A1',
-    category: 'basic-verbs'
+    category: 'verbs'
   }),
   makeEntry({
     norsk: 'komme',
     english: 'to come',
     level: 'A1',
-    category: 'basic-verbs'
+    category: 'verbs'
   })
 ];
 
