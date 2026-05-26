@@ -1080,16 +1080,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en skulder",
-    "lemma": "skulder",
-    "english": "a shoulder",
-    "example": "Han har brede skuldre.",
-    "example_english": "He has broad shoulders.",
-    "level": "A1",
-    "category": "body",
-    "part": "noun"
-  },
-  {
     "norsk": "en arm",
     "lemma": "arm",
     "english": "an arm",
@@ -1140,16 +1130,6 @@
     "part": "noun"
   },
   {
-    "norsk": "et kne",
-    "lemma": "kne",
-    "english": "a knee",
-    "example": "Kneet mitt gjør vondt.",
-    "example_english": "My knee hurts.",
-    "level": "A1",
-    "category": "body",
-    "part": "noun"
-  },
-  {
     "norsk": "en fot",
     "lemma": "fot",
     "english": "a foot",
@@ -1165,16 +1145,6 @@
     "english": "a body",
     "example": "Kroppen trenger mat og hvile.",
     "example_english": "The body needs food and rest.",
-    "level": "A1",
-    "category": "body",
-    "part": "noun"
-  },
-  {
-    "norsk": "et hjerte",
-    "lemma": "hjerte",
-    "english": "a heart",
-    "example": "Hjertet hans er sunt.",
-    "example_english": "His heart is healthy.",
     "level": "A1",
     "category": "body",
     "part": "noun"
@@ -1205,16 +1175,6 @@
     "english": "a face",
     "example": "Han har et vennlig ansikt.",
     "example_english": "He has a friendly face.",
-    "level": "A1",
-    "category": "body",
-    "part": "noun"
-  },
-  {
-    "norsk": "en albue",
-    "lemma": "albue",
-    "english": "an elbow",
-    "example": "Han støtte albuen sin.",
-    "example_english": "He bumped his elbow.",
     "level": "A1",
     "category": "body",
     "part": "noun"
@@ -1735,16 +1695,6 @@
     "english": "a frog",
     "example": "Frosken er grønn.",
     "example_english": "The frog is green.",
-    "level": "A1",
-    "category": "animals",
-    "part": "noun"
-  },
-  {
-    "norsk": "en fisk",
-    "lemma": "fisk",
-    "english": "a fish (animal)",
-    "example": "Fisken svømmer i havet.",
-    "example_english": "The fish swims in the sea.",
     "level": "A1",
     "category": "animals",
     "part": "noun"
@@ -2500,33 +2450,13 @@
     "part": "verb"
   },
   {
-    "norsk": "å spørre",
-    "lemma": "spørre",
-    "english": "to ask",
-    "example": "Du kan spørre læreren.",
-    "example_english": "You can ask the teacher.",
-    "level": "A1",
-    "category": "classroom",
-    "part": "verb"
-  },
-  {
-    "norsk": "å svare",
-    "lemma": "svare",
-    "english": "to answer",
-    "example": "Han svarer på spørsmålet.",
-    "example_english": "He answers the question.",
-    "level": "A1",
-    "category": "classroom",
-    "part": "verb"
-  },
-  {
     "norsk": "stor",
     "lemma": "stor",
     "english": "big / large",
     "example": "Huset er veldig stort.",
     "example_english": "The house is very big.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2536,7 +2466,7 @@
     "example": "Katten er liten.",
     "example_english": "The cat is small.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2546,7 +2476,7 @@
     "example": "Jeg har en ny sykkel.",
     "example_english": "I have a new bike.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2556,7 +2486,7 @@
     "example": "Bestefar er gammel.",
     "example_english": "Grandfather is old.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2566,7 +2496,7 @@
     "example": "Maten er veldig god.",
     "example_english": "The food is very good.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2576,7 +2506,7 @@
     "example": "Været er dårlig i dag.",
     "example_english": "The weather is bad today.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2586,7 +2516,7 @@
     "example": "Suppen er varm.",
     "example_english": "The soup is warm.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2596,7 +2526,7 @@
     "example": "Det er kaldt ute i dag.",
     "example_english": "It is cold outside today.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2606,17 +2536,7 @@
     "example": "Barna er glade i dag.",
     "example_english": "The children are happy today.",
     "level": "A1",
-    "category": "basic-adjectives",
-    "part": "adjective"
-  },
-  {
-    "norsk": "lei seg",
-    "lemma": "lei seg",
-    "english": "sad",
-    "example": "Han er lei seg fordi hunden er syk.",
-    "example_english": "He is sad because the dog is sick.",
-    "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2626,7 +2546,7 @@
     "example": "Jeg er veldig trett i dag.",
     "example_english": "I am very tired today.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2636,7 +2556,7 @@
     "example": "Er du sulten? Vil du ha mat?",
     "example_english": "Are you hungry? Do you want food?",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2646,7 +2566,7 @@
     "example": "Jeg er tørst. Kan jeg få vann?",
     "example_english": "I am thirsty. Can I have some water?",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2656,7 +2576,7 @@
     "example": "Det er et fint hus.",
     "example_english": "It is a nice house.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2666,7 +2586,7 @@
     "example": "Han er veldig høy.",
     "example_english": "He is very tall.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2676,7 +2596,7 @@
     "example": "Hun har langt hår.",
     "example_english": "She has long hair.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2686,7 +2606,7 @@
     "example": "Hun har kort hår.",
     "example_english": "She has short hair.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2696,7 +2616,7 @@
     "example": "Ryggsekken er tung.",
     "example_english": "The backpack is heavy.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2706,7 +2626,7 @@
     "example": "Denne oppgaven er lett.",
     "example_english": "This task is easy.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2716,7 +2636,7 @@
     "example": "Hun er ung og energisk.",
     "example_english": "She is young and energetic.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2726,7 +2646,7 @@
     "example": "Læreren er veldig snill.",
     "example_english": "The teacher is very kind.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2736,7 +2656,7 @@
     "example": "Glasset er fullt.",
     "example_english": "The glass is full.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2746,7 +2666,7 @@
     "example": "Flasken er tom.",
     "example_english": "The bottle is empty.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2756,17 +2676,7 @@
     "example": "Kjøkkenet er rent.",
     "example_english": "The kitchen is clean.",
     "level": "A1",
-    "category": "basic-adjectives",
-    "part": "adjective"
-  },
-  {
-    "norsk": "skitten",
-    "lemma": "skitten",
-    "english": "dirty",
-    "example": "Skoene mine er skitne.",
-    "example_english": "My shoes are dirty.",
-    "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2776,7 +2686,7 @@
     "example": "Han er veldig sterk.",
     "example_english": "He is very strong.",
     "level": "A1",
-    "category": "basic-adjectives",
+    "category": "adjectives",
     "part": "adjective"
   },
   {
@@ -2786,7 +2696,7 @@
     "example": "Jeg er norsk.",
     "example_english": "I am Norwegian.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2796,7 +2706,7 @@
     "example": "Jeg har en hund.",
     "example_english": "I have a dog.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2806,7 +2716,7 @@
     "example": "Jeg går til skolen.",
     "example_english": "I walk to school.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2816,7 +2726,7 @@
     "example": "Vi spiser middag klokka seks.",
     "example_english": "We eat dinner at six o'clock.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2826,7 +2736,7 @@
     "example": "Hun drikker kaffe om morgenen.",
     "example_english": "She drinks coffee in the morning.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2836,7 +2746,7 @@
     "example": "Jeg sover åtte timer hver natt.",
     "example_english": "I sleep eight hours every night.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2846,7 +2756,7 @@
     "example": "Jeg snakker litt norsk.",
     "example_english": "I speak a little Norwegian.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2856,7 +2766,7 @@
     "example": "Vi ser på TV om kvelden.",
     "example_english": "We watch TV in the evening.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2866,7 +2776,7 @@
     "example": "Jeg hører på musikk.",
     "example_english": "I listen to music.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2876,7 +2786,7 @@
     "example": "Kan du komme hit?",
     "example_english": "Can you come here?",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2886,7 +2796,7 @@
     "example": "Jeg heter Lars.",
     "example_english": "My name is Lars.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2896,7 +2806,7 @@
     "example": "Jeg bor i Oslo.",
     "example_english": "I live in Oslo.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2906,7 +2816,7 @@
     "example": "Han jobber på kontoret.",
     "example_english": "He works at the office.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2916,7 +2826,7 @@
     "example": "Jeg liker sjokolade.",
     "example_english": "I like chocolate.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2926,7 +2836,7 @@
     "example": "Jeg vil ha en kopp te.",
     "example_english": "I want a cup of tea.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2936,7 +2846,7 @@
     "example": "Kan du hjelpe meg?",
     "example_english": "Can you help me?",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2946,17 +2856,7 @@
     "example": "Jeg kjøper mat i butikken.",
     "example_english": "I buy food at the shop.",
     "level": "A1",
-    "category": "basic-verbs",
-    "part": "verb"
-  },
-  {
-    "norsk": "å selge",
-    "lemma": "selge",
-    "english": "to sell",
-    "example": "De selger frukt her.",
-    "example_english": "They sell fruit here.",
-    "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2966,7 +2866,7 @@
     "example": "Barna leker i parken.",
     "example_english": "The children are playing in the park.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2976,7 +2876,7 @@
     "example": "Kan du hjelpe meg med leksene?",
     "example_english": "Can you help me with the homework?",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2986,7 +2886,7 @@
     "example": "Jeg forstår ikke dette ordet.",
     "example_english": "I do not understand this word.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -2996,7 +2896,7 @@
     "example": "Kan du åpne vinduet?",
     "example_english": "Can you open the window?",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -3006,7 +2906,7 @@
     "example": "Lukk døra, vær så snill.",
     "example_english": "Close the door, please.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -3016,7 +2916,7 @@
     "example": "Kan du gi meg boken?",
     "example_english": "Can you give me the book?",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -3026,7 +2926,7 @@
     "example": "Ta et eple fra bordet.",
     "example_english": "Take an apple from the table.",
     "level": "A1",
-    "category": "basic-verbs",
+    "category": "verbs",
     "part": "verb"
   },
   {
@@ -3290,16 +3190,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "glad",
-    "lemma": "glad",
-    "english": "happy",
-    "example": "Jeg er veldig glad i dag!",
-    "example_english": "I am very happy today!",
-    "level": "A1",
-    "category": "feelings",
-    "part": "adjective"
-  },
-  {
     "norsk": "lei seg",
     "lemma": "lei seg",
     "english": "sad",
@@ -3470,16 +3360,6 @@
     "part": "adjective"
   },
   {
-    "norsk": "syk",
-    "lemma": "syk",
-    "english": "sick / ill",
-    "example": "Jeg er syk og vil sove.",
-    "example_english": "I am sick and want to sleep.",
-    "level": "A1",
-    "category": "feelings",
-    "part": "adjective"
-  },
-  {
     "norsk": "frisk",
     "lemma": "frisk",
     "english": "healthy / well",
@@ -3488,16 +3368,6 @@
     "level": "A1",
     "category": "feelings",
     "part": "adjective"
-  },
-  {
-    "norsk": "å føle seg",
-    "lemma": "føle seg",
-    "english": "to feel",
-    "example": "Hvordan føler du deg i dag?",
-    "example_english": "How do you feel today?",
-    "level": "A1",
-    "category": "feelings",
-    "part": "verb"
   },
   {
     "norsk": "å smile",
@@ -3630,31 +3500,11 @@
     "part": "noun"
   },
   {
-    "norsk": "temperatur",
-    "lemma": "temperatur",
-    "english": "temperature",
-    "example": "Temperaturen er fem grader.",
-    "example_english": "The temperature is five degrees.",
-    "level": "A1",
-    "category": "weather",
-    "part": "noun"
-  },
-  {
     "norsk": "en grad",
     "lemma": "grad",
     "english": "a degree",
     "example": "Det er ti grader ute.",
     "example_english": "It is ten degrees outside.",
-    "level": "A1",
-    "category": "weather",
-    "part": "noun"
-  },
-  {
-    "norsk": "tåke",
-    "lemma": "tåke",
-    "english": "fog",
-    "example": "Det er tåke om morgenen.",
-    "example_english": "There is fog in the morning.",
     "level": "A1",
     "category": "weather",
     "part": "noun"
@@ -3675,16 +3525,6 @@
     "english": "lightning",
     "example": "Jeg ser lyn på himmelen.",
     "example_english": "I see lightning in the sky.",
-    "level": "A1",
-    "category": "weather",
-    "part": "noun"
-  },
-  {
-    "norsk": "en sky",
-    "lemma": "sky",
-    "english": "a cloud",
-    "example": "Det er mange skyer i dag.",
-    "example_english": "There are many clouds today.",
     "level": "A1",
     "category": "weather",
     "part": "noun"
@@ -3768,16 +3608,6 @@
     "level": "A1",
     "category": "weather",
     "part": "verb"
-  },
-  {
-    "norsk": "fuktig",
-    "lemma": "fuktig",
-    "english": "humid / damp",
-    "example": "Det er fuktig luft ved kysten.",
-    "example_english": "The air is humid near the coast.",
-    "level": "A1",
-    "category": "weather",
-    "part": "adjective"
   },
   {
     "norsk": "sol og skyer",
@@ -3950,16 +3780,6 @@
     "part": "verb"
   },
   {
-    "norsk": "å sykle",
-    "lemma": "sykle",
-    "english": "to cycle",
-    "example": "Hun sykler til jobben.",
-    "example_english": "She cycles to work.",
-    "level": "A1",
-    "category": "transportation",
-    "part": "verb"
-  },
-  {
     "norsk": "å fly",
     "lemma": "fly",
     "english": "to fly",
@@ -3975,16 +3795,6 @@
     "english": "a road / a way",
     "example": "Veien er lang.",
     "example_english": "The road is long.",
-    "level": "A1",
-    "category": "transportation",
-    "part": "noun"
-  },
-  {
-    "norsk": "en bro",
-    "lemma": "bro",
-    "english": "a bridge",
-    "example": "Vi kjører over broen.",
-    "example_english": "We drive over the bridge.",
     "level": "A1",
     "category": "transportation",
     "part": "noun"
@@ -4041,6 +3851,7 @@
   },
   {
     "norsk": "et bad",
+    "lemma": "bad",
     "english": "a bath",
     "example": "Jeg tar et bad om kvelden.",
     "example_english": "I take a bath in the evening.",
@@ -4050,6 +3861,7 @@
   },
   {
     "norsk": "en pute",
+    "lemma": "pute",
     "english": "a pillow",
     "example": "Puten er myk og god.",
     "example_english": "The pillow is soft and nice.",
@@ -4058,16 +3870,8 @@
     "part": "noun"
   },
   {
-    "norsk": "et teppe",
-    "english": "a rug / blanket",
-    "example": "Vi har et rødt teppe i soverommet.",
-    "example_english": "We have a red rug in the  bedroom.",
-    "level": "A1",
-    "category": "household-items",
-    "part": "noun"
-  },
-  {
     "norsk": "en kopp",
+    "lemma": "kopp",
     "english": "a cup",
     "example": "Det er kaffe i koppen.",
     "example_english": "There is coffee in the cup.",
@@ -4077,6 +3881,7 @@
   },
   {
     "norsk": "en tallerken",
+    "lemma": "tallerken",
     "english": "a plate",
     "example": "Maten er på tallerkenen.",
     "example_english": "The food is on the plate.",
@@ -4086,6 +3891,7 @@
   },
   {
     "norsk": "et glass",
+    "lemma": "glass",
     "english": "a glass",
     "example": "Jeg vil ha et glass vann.",
     "example_english": "I want a glass of water.",
@@ -4095,6 +3901,7 @@
   },
   {
     "norsk": "en skje",
+    "lemma": "skje",
     "english": "a spoon",
     "example": "Jeg spiser suppe med skje.",
     "example_english": "I eat soup with a spoon.",
@@ -4104,6 +3911,7 @@
   },
   {
     "norsk": "en gaffel",
+    "lemma": "gaffel",
     "english": "a fork",
     "example": "Kan du gi meg en gaffel?",
     "example_english": "Can you give me a fork?",
@@ -4113,6 +3921,7 @@
   },
   {
     "norsk": "en kniv",
+    "lemma": "kniv",
     "english": "a knife",
     "example": "Vi bruker kniv til å skjære brød.",
     "example_english": "We use a knife to cut bread.",
@@ -4122,6 +3931,7 @@
   },
   {
     "norsk": "ei bøtte",
+    "lemma": "bøtte",
     "english": "a bucket",
     "example": "Han fyller bøtta med vann.",
     "example_english": "He fills the bucket with water.",
@@ -4131,6 +3941,7 @@
   },
   {
     "norsk": "en kanne",
+    "lemma": "kanne",
     "english": "a kettle / jug",
     "example": "Kannen er full av te.",
     "example_english": "The kettle is full of tea.",
@@ -4140,6 +3951,7 @@
   },
   {
     "norsk": "en kurv",
+    "lemma": "kurv",
     "english": "a basket",
     "example": "Vi legger frukten i kurven.",
     "example_english": "We put the fruit in the basket.",
@@ -4149,6 +3961,7 @@
   },
   {
     "norsk": "en hylle",
+    "lemma": "hylle",
     "english": "a shelf",
     "example": "Bøkene står på hyllen.",
     "example_english": "The books are on the shelf.",
@@ -4158,6 +3971,7 @@
   },
   {
     "norsk": "et gulvteppe",
+    "lemma": "gulvteppe",
     "english": "a carpet",
     "example": "Vi har et stort gulvteppe i stuen.",
     "example_english": "We have a large carpet in the living room.",
@@ -4167,6 +3981,7 @@
   },
   {
     "norsk": "en vask",
+    "lemma": "vask",
     "english": "a sink",
     "example": "Vasken er på badet.",
     "example_english": "The sink is in the bathroom.",
@@ -4176,6 +3991,7 @@
   },
   {
     "norsk": "en dusj",
+    "lemma": "dusj",
     "english": "a shower",
     "example": "Det er dusj på badet.",
     "example_english": "There is a shower in the bathroom.",
@@ -4185,6 +4001,7 @@
   },
   {
     "norsk": "et speil",
+    "lemma": "speil",
     "english": "a mirror",
     "example": "Speilet henger på veggen.",
     "example_english": "The mirror hangs on the wall.",
@@ -4194,6 +4011,7 @@
   },
   {
     "norsk": "en klokke",
+    "lemma": "klokke",
     "english": "a clock",
     "example": "Klokken henger på veggen i stuen.",
     "example_english": "The clock hangs on the wall in the living room.",
@@ -4202,16 +4020,8 @@
     "part": "noun"
   },
   {
-    "norsk": "et bilde",
-    "english": "a picture / painting",
-    "example": "Det er et fint bilde.",
-    "example_english": "It is a nice picture.",
-    "level": "A1",
-    "category": "household-items",
-    "part": "noun"
-  },
-  {
     "norsk": "en spære",
+    "lemma": "spære",
     "english": "a light bulb",
     "example": "Pæren er gått.",
     "example_english": "The light bulb has burned out.",
@@ -4221,6 +4031,7 @@
   },
   {
     "norsk": "et lys",
+    "lemma": "lys",
     "english": "a light / candle",
     "example": "Vi tenner et lys om kvelden.",
     "example_english": "We light a candle in the evening.",
@@ -4230,6 +4041,7 @@
   },
   {
     "norsk": "ei søppelbøtte",
+    "lemma": "søppelbøtte",
     "english": "a trash can",
     "example": "Kast det i søppelbøtta.",
     "example_english": "Throw it in the trash can.",
@@ -4239,6 +4051,7 @@
   },
   {
     "norsk": "et håndkle",
+    "lemma": "håndkle",
     "english": "a towel",
     "example": "Håndkleet henger på badet.",
     "example_english": "The towel hangs in the bathroom.",
@@ -4248,6 +4061,7 @@
   },
   {
     "norsk": "en stige",
+    "lemma": "stige",
     "english": "a ladder",
     "example": "Han klatrer opp stigen.",
     "example_english": "He climbs up the ladder.",
@@ -4257,6 +4071,7 @@
   },
   {
     "norsk": "en panne",
+    "lemma": "panne",
     "english": "a pan",
     "example": "Jeg steker egg i pannen.",
     "example_english": "I fry eggs in the pan.",
@@ -4266,677 +4081,652 @@
   },
   {
     "norsk": "en butikk",
+    "lemma": "butikk",
     "english": "a shop / store",
     "example": "Butikken åpner klokken ni.",
     "example_english": "The shop opens at nine o'clock.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et marked",
+    "lemma": "marked",
     "english": "a market",
     "example": "Vi kjøper grønnsaker på markedet.",
     "example_english": "We buy vegetables at the market.",
     "level": "A1",
-    "category": "basic-places",
-    "part": "noun"
-  },
-  {
-    "norsk": "et sykehus",
-    "english": "a hospital",
-    "example": "Han er på sykehuset.",
-    "example_english": "He is at the hospital.",
-    "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en park",
+    "lemma": "park",
     "english": "a park",
     "example": "Barna leker i parken.",
     "example_english": "The children play in the park.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et bibliotek",
+    "lemma": "bibliotek",
     "english": "a library",
     "example": "Jeg låner bøker på biblioteket.",
     "example_english": "I borrow books at the library.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en bank",
+    "lemma": "bank",
     "english": "a bank",
     "example": "Banken er i sentrum.",
     "example_english": "The bank is in the city centre.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en restaurant",
+    "lemma": "restaurant",
     "english": "a restaurant",
     "example": "Vi spiser middag på en restaurant.",
     "example_english": "We eat dinner at a restaurant.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en kafe",
+    "lemma": "kafe",
     "english": "a café",
     "example": "Kafeen serverer god kaffe.",
     "example_english": "The café serves good coffee.",
     "level": "A1",
-    "category": "basic-places",
-    "part": "noun"
-  },
-  {
-    "norsk": "et apotek",
-    "english": "a pharmacy",
-    "example": "Jeg kjøper medisin på apoteket.",
-    "example_english": "I buy medicine at the pharmacy.",
-    "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en kirke",
+    "lemma": "kirke",
     "english": "a church",
     "example": "Kirken er gammel og fin.",
     "example_english": "The church is old and beautiful.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en gate",
+    "lemma": "gate",
     "english": "a street",
     "example": "Vi bor i en stille gate.",
     "example_english": "We live in a quiet street.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et torg",
+    "lemma": "torg",
     "english": "a town square",
     "example": "Det er mange folk på torget.",
     "example_english": "There are many people in the town square.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et museum",
+    "lemma": "museum",
     "english": "a museum",
     "example": "Vi besøker museet på lørdag.",
     "example_english": "We visit the museum on Saturday.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et hotell",
+    "lemma": "hotell",
     "english": "a hotel",
     "example": "Hotellet er nær sentrum.",
     "example_english": "The hotel is near the city centre.",
     "level": "A1",
-    "category": "basic-places",
-    "part": "noun"
-  },
-  {
-    "norsk": "en flyplass",
-    "english": "an airport",
-    "example": "Flyet går fra flyplassen.",
-    "example_english": "The plane departs from the airport.",
-    "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et svømmebasseng",
+    "lemma": "svømmebasseng",
     "english": "a swimming pool",
     "example": "Svømmebassenget er stort.",
     "example_english": "The swimming pool is big.",
     "level": "A1",
-    "category": "basic-places",
-    "part": "noun"
-  },
-  {
-    "norsk": "en skole",
-    "english": "a school",
-    "example": "Barna går på skole hver dag.",
-    "example_english": "The children go to school every day.",
-    "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et kjøpesenter",
+    "lemma": "kjøpesenter",
     "english": "a shopping centre",
     "example": "Vi handler på kjøpesenteret.",
     "example_english": "We shop at the shopping centre.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et kontor",
+    "lemma": "kontor",
     "english": "an office",
     "example": "Hun jobber på et kontor.",
     "example_english": "She works in an office.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en lekeplass",
+    "lemma": "lekeplass",
     "english": "a playground",
     "example": "Barna er på lekeplassen.",
     "example_english": "The children are at the playground.",
     "level": "A1",
-    "category": "basic-places",
-    "part": "noun"
-  },
-  {
-    "norsk": "et stadion",
-    "english": "a stadium",
-    "example": "Det er mange folk på stadionet.",
-    "example_english": "There are many people at the stadium.",
-    "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en treningssenter",
+    "lemma": "treningssenter",
     "english": "a gym",
     "example": "Jeg trener på treningssenter.",
     "example_english": "I work out at the gym.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en politistasjon",
+    "lemma": "politistasjon",
     "english": "a police station",
     "example": "Politistasjonen er i sentrum.",
     "example_english": "The police station is in the city centre.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en brannstasjon",
+    "lemma": "brannstasjon",
     "english": "a fire station",
     "example": "Brannstasjonen er nær skolen.",
     "example_english": "The fire station is near the school.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "et postkontor",
+    "lemma": "postkontor",
     "english": "a post office",
     "example": "Jeg sender pakken fra postkontoret.",
     "example_english": "I send the package from the post office.",
     "level": "A1",
-    "category": "basic-places",
+    "category": "places",
     "part": "noun"
   },
   {
     "norsk": "en jakke",
+    "lemma": "jakke",
     "english": "a jacket",
     "example": "Det er kaldt, ta på jakken.",
     "example_english": "It is cold, put on the jacket.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en bukse",
+    "lemma": "bukse",
     "english": "trousers / pants",
     "example": "Han har på seg svarte bukser.",
     "example_english": "He is wearing black trousers.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en skjorte",
+    "lemma": "skjorte",
     "english": "a shirt",
     "example": "Skjorten er hvit og fin.",
     "example_english": "The shirt is white and nice.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en kjole",
+    "lemma": "kjole",
     "english": "a dress",
     "example": "Hun har på seg en rød kjole.",
     "example_english": "She is wearing a red dress.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en genser",
+    "lemma": "genser",
     "english": "a sweater",
     "example": "Genseren er varm.",
     "example_english": "The sweater is warm.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en sko",
+    "lemma": "sko",
     "english": "a shoe",
     "example": "Skoene er for små.",
     "example_english": "The shoes are too small.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en sokk",
+    "lemma": "sokk",
     "english": "a sock",
     "example": "Jeg har på meg varme sokker.",
     "example_english": "I am wearing warm socks.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en hatt",
+    "lemma": "hatt",
     "english": "a hat",
     "example": "Han har en blå hatt på hodet.",
     "example_english": "He wears a blue hat.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "et skjerf",
+    "lemma": "skjerf",
     "english": "a scarf",
     "example": "Skjerfet holder halsen varm.",
     "example_english": "The scarf keeps the neck warm.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "hansker",
+    "lemma": "hansker",
     "english": "gloves",
     "example": "Det er kaldt, bruk hansker.",
     "example_english": "It is cold, use gloves.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en frakk",
+    "lemma": "frakk",
     "english": "a coat",
     "example": "Frakken er lang og varm.",
     "example_english": "The coat is long and warm.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en t-skjorte",
+    "lemma": "t-skjorte",
     "english": "a t-shirt",
     "example": "Om sommeren bruker jeg t-skjorte.",
     "example_english": "In the summer I wear a t-shirt.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "shorts",
+    "lemma": "shorts",
     "english": "shorts",
     "example": "Shorts er bra i varmt vær.",
     "example_english": "Shorts are good in warm weather.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "et belte",
+    "lemma": "belte",
     "english": "a belt",
     "example": "Beltet holder buksene oppe.",
     "example_english": "The belt keeps the trousers in place.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "et slips",
+    "lemma": "slips",
     "english": "a tie",
     "example": "Han bruker slips på jobben.",
     "example_english": "He wears a tie at work.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en lue",
+    "lemma": "lue",
     "english": "a beanie / woollen hat",
     "example": "Luen er varm og myk.",
     "example_english": "The beanie is warm and soft.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "støvler",
+    "lemma": "støvler",
     "english": "boots",
     "example": "Jeg bruker støvler om vinteren.",
     "example_english": "I wear boots in winter.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "sandaler",
+    "lemma": "sandaler",
     "english": "sandals",
     "example": "Sandaler er behagelig om sommeren.",
     "example_english": "Sandals are comfortable in summer.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "pyjamas",
+    "lemma": "pyjamas",
     "english": "pyjamas",
     "example": "Jeg tar på meg pyjamas om kvelden.",
     "example_english": "I put on pyjamas in the evening.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "undertøy",
+    "lemma": "undertøy",
     "english": "underwear",
     "example": "Undertøy vaskes ofte.",
     "example_english": "Underwear is washed often.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en dress",
+    "lemma": "dress",
     "english": "a suit",
     "example": "Han har på seg en mørk dress.",
     "example_english": "He is wearing a dark suit.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en skjørt",
+    "lemma": "skjørt",
     "english": "a skirt",
     "example": "Skjørtet er blått og fint.",
     "example_english": "The skirt is blue and nice.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "en regnjakke",
+    "lemma": "regnjakke",
     "english": "a raincoat",
     "example": "Ta med regnjakken, det regner.",
     "example_english": "Bring the raincoat, it is raining.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "noun"
   },
   {
     "norsk": "å kle på seg",
+    "lemma": "kle på seg",
     "english": "to get dressed",
     "example": "Jeg kler på meg etter dusjen.",
     "example_english": "I get dressed after the shower.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "verb"
   },
   {
     "norsk": "å kle av seg",
+    "lemma": "kle av seg",
     "english": "to get undressed",
     "example": "Han kler av seg før han legger seg.",
     "example_english": "He gets undressed before going to bed.",
     "level": "A1",
-    "category": "basic-clothes",
+    "category": "clothes",
     "part": "verb"
   },
   {
     "norsk": "å stå opp",
+    "lemma": "stå opp",
     "english": "to get up",
     "example": "Jeg står opp klokken syv.",
     "example_english": "I get up at seven o'clock.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å sitte",
+    "lemma": "sitte",
     "english": "to sit",
     "example": "Hun sitter på stolen.",
     "example_english": "She sits on the chair.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å stå",
+    "lemma": "stå",
     "english": "to stand",
     "example": "Han står ved vinduet.",
     "example_english": "He stands by the window.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å ligge",
+    "lemma": "ligge",
     "english": "to lie down",
     "example": "Katten ligger på sofaen.",
     "example_english": "The cat is lying on the sofa.",
     "level": "A1",
-    "category": "simple-actions",
-    "part": "verb"
-  },
-  {
-    "norsk": "å løpe",
-    "english": "to run",
-    "example": "Barna løper i parken.",
-    "example_english": "The children run in the park.",
-    "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å hoppe",
+    "lemma": "hoppe",
     "english": "to jump",
     "example": "Han hopper over sølepyttene.",
     "example_english": "He jumps over the puddles.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å kaste",
+    "lemma": "kaste",
     "english": "to throw",
     "example": "Hun kaster ballen til ham.",
     "example_english": "She throws the ball to him.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å fange",
+    "lemma": "fange",
     "english": "to catch",
     "example": "Han fanger ballen.",
     "example_english": "He catches the ball.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å bære",
+    "lemma": "bære",
     "english": "to carry",
     "example": "Hun bærer en tung pose.",
     "example_english": "She carries a heavy bag.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å trekke",
+    "lemma": "trekke",
     "english": "to pull",
     "example": "Han trekker i tauet.",
     "example_english": "He pulls the rope.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å skyve",
+    "lemma": "skyve",
     "english": "to push",
     "example": "Hun skyver barnevognen.",
     "example_english": "She pushes the pram.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å vente",
+    "lemma": "vente",
     "english": "to wait",
     "example": "Jeg venter på bussen.",
     "example_english": "I am waiting for the bus.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å stoppe",
+    "lemma": "stoppe",
     "english": "to stop",
     "example": "Bussen stopper her.",
     "example_english": "The bus stops here.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å begynne",
+    "lemma": "begynne",
     "english": "to begin / start",
     "example": "Skolen begynner klokken åtte.",
     "example_english": "School begins at eight o'clock.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å slutte",
+    "lemma": "slutte",
     "english": "to finish / stop",
     "example": "Jobben slutter klokken fire.",
     "example_english": "Work finishes at four o'clock.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å finne",
+    "lemma": "finne",
     "english": "to find",
     "example": "Kan du finne nøkkelen?",
     "example_english": "Can you find the key?",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å miste",
+    "lemma": "miste",
     "english": "to lose",
     "example": "Jeg har mistet nøkkelen.",
     "example_english": "I have lost the key.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å betale",
+    "lemma": "betale",
     "english": "to pay",
     "example": "Jeg betaler med kort.",
     "example_english": "I pay by card.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å hente",
+    "lemma": "hente",
     "english": "to fetch / pick up",
     "example": "Han henter barna fra skolen.",
     "example_english": "He picks up the children from school.",
     "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å legge",
+    "lemma": "legge",
     "english": "to put / lay",
     "example": "Hun legger boken på bordet.",
     "example_english": "She puts the book on the table.",
     "level": "A1",
-    "category": "simple-actions",
-    "part": "verb"
-  },
-  {
-    "norsk": "å hente",
-    "english": "to get / collect",
-    "example": "Kan du hente melk?",
-    "example_english": "Can you get some milk?",
-    "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   },
   {
     "norsk": "å trykke",
+    "lemma": "trykke",
     "english": "to press / push",
     "example": "Trykk på knappen.",
     "example_english": "Press the button.",
     "level": "A1",
-    "category": "simple-actions",
-    "part": "verb"
-  },
-  {
-    "norsk": "å tegne",
-    "english": "to draw",
-    "example": "Barnet tegner et hus.",
-    "example_english": "The child draws a house.",
-    "level": "A1",
-    "category": "simple-actions",
-    "part": "verb"
-  },
-  {
-    "norsk": "å synge",
-    "english": "to sing",
-    "example": "Vi synger en sang.",
-    "example_english": "We sing a song.",
-    "level": "A1",
-    "category": "simple-actions",
-    "part": "verb"
-  },
-  {
-    "norsk": "å male",
-    "english": "to paint",
-    "example": "Hun maler et bilde.",
-    "example_english": "She paints a picture.",
-    "level": "A1",
-    "category": "simple-actions",
+    "category": "actions",
     "part": "verb"
   }
 ]

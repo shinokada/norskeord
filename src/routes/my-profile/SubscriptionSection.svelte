@@ -236,7 +236,8 @@
               target="_blank"
               rel="noopener noreferrer"
               class="underline hover:text-gray-600 dark:hover:text-gray-300"
-            >What's that in my time?</a>
+              >What's that in my time?</a
+            >
           </p>
           {#if reminderError}
             <p class="mt-1 ml-7 text-xs text-red-500">{reminderError}</p>
@@ -269,7 +270,8 @@
               target="_blank"
               rel="noopener noreferrer"
               class="underline hover:text-gray-600 dark:hover:text-gray-300"
-            >What's that in my time?</a>
+              >What's that in my time?</a
+            >
           </p>
           {#if emailReminderError}
             <p class="mt-1 ml-7 text-xs text-red-500">{emailReminderError}</p>
