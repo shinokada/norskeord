@@ -74,9 +74,8 @@ async function countDueCards(
 }
 
 /** Build the notification body string. */
-function buildBody(dueCount: number): string {
-  if (dueCount <= 0) return 'You have cards due today — keep your streak going 🔥';
-  return `${dueCount} card${dueCount === 1 ? '' : 's'} due today — keep your streak going 🔥`;
+function buildBody(): string {
+  return 'Time to practice — keep your streak going 🔥';
 }
 
 /** Send a Web Push notification to a single subscription. */
@@ -259,7 +258,7 @@ Deno.serve(async (req: Request) => {
 
   for (const profile of toNotify) {
     const dueCount = await countDueCards(supabase, profile.id);
-    const bodyText = buildBody(dueCount);
+    const bodyText = buildBody();
 
     // ── Web push ──────────────────────────────────────────────────────────────
     if (profile.daily_reminder && profile.push_subscription) {
