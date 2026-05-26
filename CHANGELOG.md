@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- - **New Features**
+  - **New Features**
     - Added Previous/Next category navigation links and level badge display in vocab flashcards
   - **Vocabulary Updates**
     - Reorganized A1/A2 category slugs and labels; broad renaming (removed many "basic"/"simple" prefixes)

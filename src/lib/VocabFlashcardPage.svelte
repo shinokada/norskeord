@@ -895,7 +895,7 @@
   <!-- Example / Word section -->
   {#if !completed && current}
     <div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 dark:bg-gray-800">
-      <div class="mb-2 flex items-center gap-2">
+      <div class="mb-2 items-center gap-2">
         <span
           class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
           >{cardType === 'word' ? m.flashcard_phrase() : m.flashcard_word()}</span
