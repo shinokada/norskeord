@@ -30,62 +30,6 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 Can you scan src/lib/data/vocab-XX.json files to find duplicates norsk entries and list them with its level.
 
-## previous next links
-
-I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
-
-I want to add Previous/Next category links and the level to the title. The following replies are from last two sessions. Some work are done but it is not completed yet. Please complete the implementation.
-
-```
-**Previous/Next category buttons** — yes, good idea. It lets users flow through the level without going back to the home page. The most natural place would be flanking the title at the top, as small secondary links (e.g. `← Nature` and `Communication →`), so they're discoverable but don't compete with the flashcard itself.
-
-**Adding the level to the title** — I'd put it as a subtle label *above* the title rather than in it. So a small muted `A2` or `A2 — Elementary` above the large `House Chores` heading. That way the category name stays prominent, but the level gives useful context (especially if someone arrives from a direct link).
-
-Together it would look something like:
-
-
-← Nature          A2 — Elementary          Communication →
-                   House Chores
-
-
-Want me to implement both? If so, let me look at the flashcard page to understand the current title layout before touching anything.
-```
-
-Part 2
-
-```
-If the first category, it doesn't have the left side previous category link and for the last category, it doesn't have a link to the next category on the right.
-Can you implement this?
-
-
-Let me find the flashcard page first.Now let me find the `VocabFlashcardPage` component and the home page to understand how categories are structured:Now let me check the `CATEGORIES_BY_LEVEL` type to understand the data structure:Good. Now I have a clear picture. Let me plan the implementation:
-
-1. **`+page.server.ts`** — add `prevCategory` and `nextCategory` to the returned data
-2. **`+page.svelte`** — pass them as props to `VocabFlashcardPage`
-3. **`VocabFlashcardPage.svelte`** — add the level label above the title, and prev/next category links flanking itI have enough context. Let me now implement the changes. The plan:
-
-**`+page.server.ts`**: compute `prevCategory` and `nextCategory` from `CATEGORIES_BY_LEVEL`, filtering out `uttrykk-preview` for Plus users (they'd see the full `uttrykk` instead). Return them in the load data.
-
-**`+page.svelte`**: pass `level`, `prevCategory`, `nextCategory` to `VocabFlashcardPage`.
-
-**`VocabFlashcardPage.svelte`**: add `level`, `prevCategory`, `nextCategory` props and render the header.The filesystem is read-only. I'll write the changes using `bash_tool` with `cat` to write the files. Let me prepare the three edits carefully.
-
-First, let me check `removeHyphensAndCapitalize` since we'll need it in the server to compute display names:Good. The `removeHyphensAndCapitalize` utility is already imported in `+page.server.ts`. Now I'll write all three files. Let me do them one at a time with `bash_tool`:The filesystem mounts are read-only in the container. I'll provide the edits as diffs to apply manually, or use `str_replace` via the edit tools. Let me check if `str_replace` works on these paths:The bracket paths aren't accessible from the container. I'll write the full file contents to the container's working directory and present them as files to copy:Now the big one — `VocabFlashcardPage.svelte`. I need to add three new props and replace the `<h1>` title block with the level label + prev/next nav header:
-```
-
-## email notification
-
-343 cards due is a big numer.
-
-```
-Your Norwegian cards are waiting 🇳🇴
-
-Norskeord · Daily reminder
-
-Your Norwegian cards are waiting 🇳🇴
-343 cards due today — keep your streak going 🔥
-```
-
 ## sitemap
 
 Update /src/routes/sitemap.xml/+server.ts
@@ -133,6 +77,20 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
 5. **C1/C2 in distractor pool:** The current plan loads A1–B2 for the distractor pool. C1/C2 data is available but adds loading weight. Omit from the initial build; add later if B2+ quiz users request it.
 
 ## Solved
+
+
+- email notification update
+
+343 cards due is a big numer.
+
+```
+Your Norwegian cards are waiting 🇳🇴
+
+Norskeord · Daily reminder
+
+Your Norwegian cards are waiting 🇳🇴
+343 cards due today — keep your streak going 🔥
+```
 
 - og:image — the layout references metaImg() but it's not clear what image is actually being served. If it resolves to nothing or a placeholder, social shares and Google's image preview will be blank. Worth auditing.
 - Should I allow contact form to logged in users? Currently only for plus users since I don't want to get unnecessary email or spam.
@@ -196,12 +154,12 @@ From Relearning (forgotten):
 - Good / Easy → graduates back to Review (memorized again)
 
 So in short:
-| Legend label | FSRS State | How you get there |
+| Legend label | FSRS State | How you get there                      |
 | ------------ | ---------- | -------------------------------------- |
-| New | New | Never rated |
-| Learning | Learning | Rated at least once, not yet graduated |
-| Memorized | Review | Passed learning steps |
-| Forgotten | Relearning | Hit "Again" on a memorized card |
+| New          | New        | Never rated                            |
+| Learning     | Learning   | Rated at least once, not yet graduated |
+| Memorized    | Review     | Passed learning steps                  |
+| Forgotten    | Relearning | Hit "Again" on a memorized card        |
 
 The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 

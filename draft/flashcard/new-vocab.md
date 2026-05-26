@@ -178,3 +178,5 @@ virket: seemed
 en frøken: miss
 enten: either
 å samsvare: to match : Forklaringen samsvarer ikke med bevisene.
+uskyldig: innocent
+å inneholde: to contain
