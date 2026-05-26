@@ -1186,7 +1186,7 @@
     "example": "Jeg er syk og vil sove.",
     "example_english": "I am sick and want to sleep.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "adjective"
   },
   {
@@ -1196,7 +1196,7 @@
     "example": "Han er på sykehuset.",
     "example_english": "He is at the hospital.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1206,7 +1206,7 @@
     "example": "Jeg kjøper medisin på apoteket.",
     "example_english": "I buy medicine at the pharmacy.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1216,7 +1216,7 @@
     "example": "Ta to tabletter med medisin.",
     "example_english": "Take two tablets of medicine.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1226,7 +1226,7 @@
     "example": "Jeg har vondt i hodet.",
     "example_english": "I have a headache.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "adjective"
   },
   {
@@ -1236,7 +1236,7 @@
     "example": "Jeg har forkjølelse og feber.",
     "example_english": "I have a cold and a fever.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1246,7 +1246,7 @@
     "example": "Barnet har høy feber.",
     "example_english": "The child has a high fever.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1256,7 +1256,7 @@
     "example": "Jeg er allergisk mot pollen.",
     "example_english": "I am allergic to pollen.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1266,7 +1266,7 @@
     "example": "Legen ga meg en resept.",
     "example_english": "The doctor gave me a prescription.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1276,7 +1276,7 @@
     "example": "Legg deg og hvil.",
     "example_english": "Lie down and rest.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "verb"
   },
   {
@@ -1286,7 +1286,7 @@
     "example": "Du må hvile når du er syk.",
     "example_english": "You need to rest when you are sick.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "verb"
   },
   {
@@ -1296,7 +1296,7 @@
     "example": "Jeg er veldig trøtt i dag.",
     "example_english": "I am very tired today.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "adjective"
   },
   {
@@ -1306,7 +1306,7 @@
     "example": "Frukt og grønnsaker er sunn mat.",
     "example_english": "Fruit and vegetables are healthy food.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "adjective"
   },
   {
@@ -1316,7 +1316,7 @@
     "example": "Hvordan føler du deg i dag?",
     "example_english": "How do you feel today?",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "verb"
   },
   {
@@ -1326,7 +1326,7 @@
     "example": "Han fikk en skade under kampen.",
     "example_english": "He got an injury during the match.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1336,7 +1336,7 @@
     "example": "Hun brakk hånden sin.",
     "example_english": "She broke her hand.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "verb"
   },
   {
@@ -1346,7 +1346,7 @@
     "example": "Kan du gi meg et plaster?",
     "example_english": "Can you give me a plaster?",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1356,7 +1356,7 @@
     "example": "Jeg hoster og har sår hals.",
     "example_english": "I have a cough and a sore throat.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1366,7 +1366,7 @@
     "example": "Han nøs mange ganger.",
     "example_english": "He sneezed many times.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "verb"
   },
   {
@@ -1376,7 +1376,7 @@
     "example": "Jeg er kvalm, jeg vil ikke spise.",
     "example_english": "I feel nauseous, I don't want to eat.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "adjective"
   },
   {
@@ -1386,7 +1386,7 @@
     "example": "Barn får vaksine på helsestasjonen.",
     "example_english": "Children receive vaccines at the health centre.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1396,7 +1396,7 @@
     "example": "Han trenger en operasjon.",
     "example_english": "He needs an operation.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1406,7 +1406,7 @@
     "example": "Legen tok en blodprøve.",
     "example_english": "The doctor took a blood test.",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -1416,7 +1416,7 @@
     "example": "Ring 113 for ambulanse!",
     "example_english": "Call 113 for an ambulance!",
     "level": "A2",
-    "category": "health-basic",
+    "category": "health",
     "part": "noun"
   },
   {
@@ -2826,7 +2826,7 @@
     "example": "Hjertet hans er sunt.",
     "example_english": "His heart is healthy.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2836,7 +2836,7 @@
     "example": "Lungene hjelper oss å puste.",
     "example_english": "The lungs help us to breathe.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2846,7 +2846,7 @@
     "example": "Kneet mitt gjør vondt.",
     "example_english": "My knee hurts.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2856,7 +2856,7 @@
     "example": "Han støtte albuen sin.",
     "example_english": "He bumped his elbow.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2866,7 +2866,7 @@
     "example": "Nakken min er stiv.",
     "example_english": "My neck is stiff.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2876,7 +2876,7 @@
     "example": "Han har brede skuldre.",
     "example_english": "He has broad shoulders.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2886,7 +2886,7 @@
     "example": "Håndleddet er skadet.",
     "example_english": "The wrist is injured.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2896,7 +2896,7 @@
     "example": "Han vrikket ankelen.",
     "example_english": "He twisted his ankle.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2906,7 +2906,7 @@
     "example": "Trening gjør musklene sterke.",
     "example_english": "Exercise makes the muscles strong.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2916,7 +2916,7 @@
     "example": "Såret er rengjort og bandasjert.",
     "example_english": "The wound is cleaned and bandaged.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2926,7 +2926,7 @@
     "example": "Legen legger på en bandasje.",
     "example_english": "The doctor puts on a bandage.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -2936,7 +2936,7 @@
     "example": "Pust rolig og dypt.",
     "example_english": "Breathe calmly and deeply.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "verb"
   },
   {
@@ -2946,7 +2946,7 @@
     "example": "Han hoster mye om vinteren.",
     "example_english": "He coughs a lot in winter.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "verb"
   },
   {
@@ -2956,7 +2956,7 @@
     "example": "Jeg svetter etter trening.",
     "example_english": "I sweat after exercise.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "verb"
   },
   {
@@ -2966,7 +2966,7 @@
     "example": "Han skadet seg under kampen.",
     "example_english": "He hurt himself during the game.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "verb"
   },
   {
@@ -2976,7 +2976,7 @@
     "example": "Jeg har vondt i hodet.",
     "example_english": "I have a headache.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "phrase"
   },
   {
@@ -2986,7 +2986,7 @@
     "example": "Barnet har vondt i magen.",
     "example_english": "The child has a stomachache.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "phrase"
   },
   {
@@ -2996,7 +2996,7 @@
     "example": "Hun har høy feber og må hvile.",
     "example_english": "She has a high fever and must rest.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "phrase"
   },
   {
@@ -3006,7 +3006,7 @@
     "example": "Jeg har time på legekontoret.",
     "example_english": "I have an appointment at the doctor's office.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "noun"
   },
   {
@@ -3016,7 +3016,7 @@
     "example": "Sykepleieren tar temperaturen.",
     "example_english": "The nurse takes the temperature.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "phrase"
   },
   {
@@ -3026,7 +3026,7 @@
     "example": "Jeg er allergisk mot nøtter.",
     "example_english": "I am allergic to nuts.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "phrase"
   },
   {
@@ -3036,7 +3036,7 @@
     "example": "Jeg sover godt når jeg er sliten.",
     "example_english": "I sleep well when I am tired.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "phrase"
   },
   {
@@ -3046,7 +3046,7 @@
     "example": "Det er viktig å spise sunn mat.",
     "example_english": "It is important to eat healthy food.",
     "level": "A2",
-    "category": "body-health-expanded",
+    "category": "body",
     "part": "phrase"
   },
   {
@@ -3296,7 +3296,7 @@
     "example": "Mobiltelefonen min er tom for batteri.",
     "example_english": "My mobile phone is out of battery.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3306,7 +3306,7 @@
     "example": "Du må ha et sterkt passord.",
     "example_english": "You must have a strong password.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3316,7 +3316,7 @@
     "example": "Jeg laster ned en ny app.",
     "example_english": "I download a new app.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3326,7 +3326,7 @@
     "example": "Skjermen er stor og klar.",
     "example_english": "The screen is large and clear.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3336,7 +3336,7 @@
     "example": "Tastaturet er trådløst.",
     "example_english": "The keyboard is wireless.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3346,7 +3346,7 @@
     "example": "Jeg laster ned musikk.",
     "example_english": "I download music.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "verb"
   },
   {
@@ -3356,7 +3356,7 @@
     "example": "Jeg sender en e-post til sjefen.",
     "example_english": "I send an email to the boss.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "phrase"
   },
   {
@@ -3366,7 +3366,7 @@
     "example": "Jeg søker på nett etter informasjon.",
     "example_english": "I search online for information.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "phrase"
   },
   {
@@ -3376,7 +3376,7 @@
     "example": "Har du wifi her?",
     "example_english": "Do you have wifi here?",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3386,7 +3386,7 @@
     "example": "Batteriet er nesten tomt.",
     "example_english": "The battery is nearly empty.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3396,7 +3396,7 @@
     "example": "Jeg må lade telefonen.",
     "example_english": "I need to charge the phone.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "verb"
   },
   {
@@ -3406,7 +3406,7 @@
     "example": "Jeg tar et bilde av utsikten.",
     "example_english": "I take a photo of the view.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "phrase"
   },
   {
@@ -3416,7 +3416,7 @@
     "example": "Nettsiden er enkel å bruke.",
     "example_english": "The website is easy to use.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3426,7 +3426,7 @@
     "example": "Kan du slå på lyset?",
     "example_english": "Can you turn on the light?",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "verb"
   },
   {
@@ -3436,7 +3436,7 @@
     "example": "Slå av datamaskinen når du er ferdig.",
     "example_english": "Turn off the computer when you are done.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "verb"
   },
   {
@@ -3446,7 +3446,7 @@
     "example": "Musikken spilles gjennom høyttaleren.",
     "example_english": "The music plays through the speaker.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3456,7 +3456,7 @@
     "example": "Jeg bruker hodetelefoner på toget.",
     "example_english": "I use headphones on the train.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3466,7 +3466,7 @@
     "example": "Kameraet tar fine bilder.",
     "example_english": "The camera takes nice pictures.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "noun"
   },
   {
@@ -3476,7 +3476,7 @@
     "example": "Jeg skriver ut dokumentet.",
     "example_english": "I print the document.",
     "level": "A2",
-    "category": "technology-basic",
+    "category": "technology",
     "part": "verb"
   },
   {
@@ -3486,7 +3486,7 @@
     "example": "Havet er dypt og blått.",
     "example_english": "The ocean is deep and blue.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "noun"
   },
   {
@@ -3496,7 +3496,7 @@
     "example": "Vi fisker i innsjøen.",
     "example_english": "We fish in the lake.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "noun"
   },
   {
@@ -3506,7 +3506,7 @@
     "example": "Vi resirkulerer glass og papir.",
     "example_english": "We recycle glass and paper.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "verb"
   },
   {
@@ -3516,7 +3516,7 @@
     "example": "Slå av lyset for å spare energi.",
     "example_english": "Turn off the light to save energy.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "phrase"
   },
   {
@@ -3526,7 +3526,7 @@
     "example": "Forurensning er skadelig for naturen.",
     "example_english": "Pollution is harmful to nature.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "noun"
   },
   {
@@ -3536,7 +3536,7 @@
     "example": "Rent vann er viktig for helsen.",
     "example_english": "Clean water is important for health.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "phrase"
   },
   {
@@ -3546,7 +3546,7 @@
     "example": "Naturreservatet beskytter sjeldne planter.",
     "example_english": "The nature reserve protects rare plants.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "noun"
   },
   {
@@ -3556,7 +3556,7 @@
     "example": "Klimaet i Norge er kaldt om vinteren.",
     "example_english": "The climate in Norway is cold in winter.",
     "level": "A2",
-    "category": "environment-basic",
+    "category": "environment",
     "part": "noun"
   },
   {
@@ -3566,7 +3566,7 @@
     "example": "En kopp kaffe koster tretti kroner.",
     "example_english": "A cup of coffee costs thirty kroner.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3576,7 +3576,7 @@
     "example": "Jeg betalte med en hundrelapp.",
     "example_english": "I paid with a hundred-krone note.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3586,7 +3586,7 @@
     "example": "Jeg har litt mynter i lommen.",
     "example_english": "I have some coins in my pocket.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3596,7 +3596,7 @@
     "example": "Inngangen er gratis for barn.",
     "example_english": "The entrance is free for children.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "adjective"
   },
   {
@@ -3606,7 +3606,7 @@
     "example": "Jeg betaler med kontanter.",
     "example_english": "I pay with cash.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3616,7 +3616,7 @@
     "example": "Jeg prøver å spare penger.",
     "example_english": "I am trying to save money.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "phrase"
   },
   {
@@ -3626,7 +3626,7 @@
     "example": "Han bruker mye penger på mat.",
     "example_english": "He spends a lot of money on food.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "phrase"
   },
   {
@@ -3636,7 +3636,7 @@
     "example": "Vi lager et budsjett for måneden.",
     "example_english": "We make a budget for the month.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3646,7 +3646,7 @@
     "example": "Inntekten hennes er god.",
     "example_english": "Her income is good.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3656,7 +3656,7 @@
     "example": "Husleie er en stor utgift.",
     "example_english": "Rent is a big expense.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3666,7 +3666,7 @@
     "example": "Billettene koster halv pris for barn.",
     "example_english": "Tickets cost half price for children.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "phrase"
   },
   {
@@ -3676,7 +3676,7 @@
     "example": "Disse skoene er på salg.",
     "example_english": "These shoes are on sale.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "phrase"
   },
   {
@@ -3686,7 +3686,7 @@
     "example": "Her er vekslepengene dine.",
     "example_english": "Here is your change.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3696,7 +3696,7 @@
     "example": "Det koster to hundre kroner.",
     "example_english": "It costs two hundred kroner.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3706,7 +3706,7 @@
     "example": "Jeg har fem hundre kroner igjen.",
     "example_english": "I have five hundred kroner left.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3716,7 +3716,7 @@
     "example": "Huset koster en million kroner.",
     "example_english": "The house costs a million kroner.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "noun"
   },
   {
@@ -3726,7 +3726,7 @@
     "example": "Kan jeg låne hundre kroner?",
     "example_english": "Can I borrow a hundred kroner?",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "phrase"
   },
   {
@@ -3736,7 +3736,7 @@
     "example": "Jeg betaler tilbake i morgen.",
     "example_english": "I will pay back tomorrow.",
     "level": "A2",
-    "category": "money-numbers",
+    "category": "money",
     "part": "phrase"
   }
 ]

@@ -2,6 +2,26 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
+/a2/finance-banking is dead.
+
+You wrote `The fixed content is ready. Now writing it back to your filesystem:`. Why don't you ask me to copy it and replace it manually rather than use `write_file` which takes a long time to complete.
+Or write a bash script or python, so that I can run it since you are not able to run it.
+
+"When editing existing files, always use edit_file with targeted patches. Never use write_file on a file that already exists."
+
+```
+"In src/lib/data/vocab-a2.json, use edit_file to rename category field values only — do not rewrite the file. Changes:
+
+health-basic → health
+health-body-intermediate → health
+body-health-expanded → body
+technology-basic → technology
+environment-basic → environment
+money-numbers → money
+
+Then apply the matching slug and i18n key changes to src/lib/types.ts, messages/en.json, and messages/nb.json using edit_file. For en.json and nb.json: remove the old keys, add new keys category_a2_health, category_a2_body, category_a2_technology, category_a2_environment, category_a2_money with proper display names. For nb.json use Norwegian display names."
+```
+
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ---
