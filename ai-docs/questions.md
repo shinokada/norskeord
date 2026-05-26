@@ -2,8 +2,6 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-/a2/finance-banking is dead.
-
 You wrote `The fixed content is ready. Now writing it back to your filesystem:`. Why don't you ask me to copy it and replace it manually rather than use `write_file` which takes a long time to complete.
 Or write a bash script or python, so that I can run it since you are not able to run it.
 
@@ -31,6 +29,49 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
 Can you scan src/lib/data/vocab-XX.json files to find duplicates norsk entries and list them with its level.
+
+## previous next links
+
+I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+
+I want to add Previous/Next category links and the level to the title. The following replies are from last two sessions. Some work are done but it is not completed yet. Please complete the implementation.
+
+```
+**Previous/Next category buttons** — yes, good idea. It lets users flow through the level without going back to the home page. The most natural place would be flanking the title at the top, as small secondary links (e.g. `← Nature` and `Communication →`), so they're discoverable but don't compete with the flashcard itself.
+
+**Adding the level to the title** — I'd put it as a subtle label *above* the title rather than in it. So a small muted `A2` or `A2 — Elementary` above the large `House Chores` heading. That way the category name stays prominent, but the level gives useful context (especially if someone arrives from a direct link).
+
+Together it would look something like:
+
+
+← Nature          A2 — Elementary          Communication →
+                   House Chores
+
+
+Want me to implement both? If so, let me look at the flashcard page to understand the current title layout before touching anything.
+```
+
+Part 2
+
+```
+If the first category, it doesn't have the left side previous category link and for the last category, it doesn't have a link to the next category on the right.
+Can you implement this?
+
+
+Let me find the flashcard page first.Now let me find the `VocabFlashcardPage` component and the home page to understand how categories are structured:Now let me check the `CATEGORIES_BY_LEVEL` type to understand the data structure:Good. Now I have a clear picture. Let me plan the implementation:
+
+1. **`+page.server.ts`** — add `prevCategory` and `nextCategory` to the returned data
+2. **`+page.svelte`** — pass them as props to `VocabFlashcardPage`
+3. **`VocabFlashcardPage.svelte`** — add the level label above the title, and prev/next category links flanking itI have enough context. Let me now implement the changes. The plan:
+
+**`+page.server.ts`**: compute `prevCategory` and `nextCategory` from `CATEGORIES_BY_LEVEL`, filtering out `uttrykk-preview` for Plus users (they'd see the full `uttrykk` instead). Return them in the load data.
+
+**`+page.svelte`**: pass `level`, `prevCategory`, `nextCategory` to `VocabFlashcardPage`.
+
+**`VocabFlashcardPage.svelte`**: add `level`, `prevCategory`, `nextCategory` props and render the header.The filesystem is read-only. I'll write the changes using `bash_tool` with `cat` to write the files. Let me prepare the three edits carefully.
+
+First, let me check `removeHyphensAndCapitalize` since we'll need it in the server to compute display names:Good. The `removeHyphensAndCapitalize` utility is already imported in `+page.server.ts`. Now I'll write all three files. Let me do them one at a time with `bash_tool`:The filesystem mounts are read-only in the container. I'll provide the edits as diffs to apply manually, or use `str_replace` via the edit tools. Let me check if `str_replace` works on these paths:The bracket paths aren't accessible from the container. I'll write the full file contents to the container's working directory and present them as files to copy:Now the big one — `VocabFlashcardPage.svelte`. I need to add three new props and replace the `<h1>` title block with the level label + prev/next nav header:
+```
 
 ## email notification
 

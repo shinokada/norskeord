@@ -177,3 +177,4 @@ virket: seemed
 å omtale: to refer, mention
 en frøken: miss
 enten: either
+å samsvare: to match : Forklaringen samsvarer ikke med bevisene.
