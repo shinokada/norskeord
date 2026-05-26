@@ -69,6 +69,11 @@
       pro: { value: m.plus_row_sync_plus(), yes: true }
     },
     {
+      feature: m.plus_row_reminder(),
+      free: { value: m.plus_row_reminder_free(), yes: false },
+      pro: { value: m.plus_row_reminder_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_norskproven_practice(),
       free: { value: m.plus_row_norskproven_practice_free(), yes: false },
       pro: { value: m.plus_row_norskproven_practice_plus(), yes: true }
