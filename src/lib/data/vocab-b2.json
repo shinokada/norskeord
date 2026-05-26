@@ -352,17 +352,6 @@
     "part": "noun"
   },
   {
-    "norsk": "et marked",
-    "lemma": "marked",
-    "english": "a market",
-    "example": "Arbeidsmarkedet er presset.",
-    "example_english": "The labour market is under pressure.",
-    "definition": "Stedet eller systemet der varer og tjenester blir kjøpt og solgt mellom bedrifter og kunder.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
     "norsk": "en eksport",
     "lemma": "eksport",
     "english": "an export",
@@ -534,17 +523,6 @@
     "example": "Høy produktivitet er et mål for bedrifter.",
     "example_english": "High productivity is a goal for companies.",
     "definition": "Et mål på hvor mye arbeid eller varer man klarer å produsere på en viss tid.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "et overskudd",
-    "lemma": "overskudd",
-    "english": "a surplus",
-    "example": "Norge har hatt budsjettoverskudd i mange år.",
-    "example_english": "Norway has had budget surpluses for many years.",
-    "definition": "Pengene som er igjen etter at en bedrift har betalt alle sine utgifter.",
     "level": "B2",
     "category": "economics",
     "part": "noun"
@@ -3179,17 +3157,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en hypotese",
-    "lemma": "hypotese",
-    "english": "a hypothesis",
-    "example": "Filosofer tester hypoteser gjennom logisk argumentasjon.",
-    "example_english": "Philosophers test hypotheses through logical argumentation.",
-    "definition": "En idé eller forklaring man tror kan være riktig, men som man ennå ikke har bevist.",
-    "level": "B2",
-    "category": "philosophy",
-    "part": "noun"
-  },
-  {
     "norsk": "å motsi",
     "lemma": "motsi",
     "english": "to contradict",
@@ -3254,17 +3221,6 @@
     "level": "B2",
     "category": "philosophy",
     "part": "noun"
-  },
-  {
-    "norsk": "å drøfte",
-    "lemma": "drøfte",
-    "english": "to discuss / to examine critically",
-    "example": "Vi drøftet spørsmålet fra flere vinkler.",
-    "example_english": "We examined the question from several angles.",
-    "definition": "Å se på et tema fra forskjellige sider og vurdere argumenter for og imot.",
-    "level": "B2",
-    "category": "philosophy",
-    "part": "verb"
   },
   {
     "norsk": "en ideologi",
@@ -3383,17 +3339,6 @@
     "example": "Du trenger resept for å kjøpe den medisinen.",
     "example_english": "You need a prescription to buy that medicine.",
     "definition": "Et offisielt papir eller digital beskjed fra legen som lar deg kjøpe sterk medisin på apoteket.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "et sykehus",
-    "lemma": "sykehus",
-    "english": "a hospital",
-    "example": "Han ble innlagt på sykehus.",
-    "example_english": "He was admitted to hospital.",
-    "definition": "Et stort sted der syke eller skadde mennesker får medisinsk hjelp og pleie.",
     "level": "B2",
     "category": "medicine",
     "part": "noun"
@@ -3573,17 +3518,6 @@
     "level": "B2",
     "category": "medicine",
     "part": "phrase"
-  },
-  {
-    "norsk": "bevissthet",
-    "lemma": "bevissthet",
-    "english": "consciousness / awareness",
-    "example": "Psykologer studerer bevissthetens grenser.",
-    "example_english": "Psychologists study the limits of consciousness.",
-    "definition": "Tilstanden der man er våken og klar over seg selv og det som skjer rundt en.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "noun"
   },
   {
     "norsk": "et traume",
@@ -4081,17 +4015,6 @@
     "part": "noun"
   },
   {
-    "norsk": "et budsjett",
-    "lemma": "budsjett",
-    "english": "a budget",
-    "example": "Vi holdt oss innenfor budsjettet.",
-    "example_english": "We stayed within the budget.",
-    "definition": "En plan som viser hvor mye penger man har, og hvordan man vil bruke dem.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
     "norsk": "å delegere",
     "lemma": "delegere",
     "english": "to delegate",
@@ -4189,17 +4112,6 @@
     "level": "B2",
     "category": "religion",
     "part": "adjective"
-  },
-  {
-    "norsk": "en tradisjon",
-    "lemma": "tradisjon",
-    "english": "a tradition",
-    "example": "Mange tradisjoner har religiøse røtter.",
-    "example_english": "Many traditions have religious roots.",
-    "definition": "Noe folk har gjort på samme måte i lang tid og fortsetter å gjøre, ofte for å markere noe viktig.",
-    "level": "B2",
-    "category": "religion",
-    "part": "noun"
   },
   {
     "norsk": "en gud",
@@ -5324,17 +5236,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "en algoritme",
-    "lemma": "algoritme",
-    "english": "an algorithm (social media)",
-    "example": "Sosiale mediers algoritmer styrer hva vi ser.",
-    "example_english": "Social media algorithms control what we see.",
-    "definition": "Et sett med regler som bestemmer hvilke innlegg og videoer du ser på nettet.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
     "norsk": "et ekkokammer",
     "lemma": "ekkokammer",
     "english": "an echo chamber",
@@ -5861,17 +5762,6 @@
     "level": "B2",
     "category": "education",
     "part": "phrase"
-  },
-  {
-    "norsk": "en veileder",
-    "lemma": "veileder",
-    "english": "a supervisor / a tutor",
-    "example": "Veilederen ga god tilbakemelding på oppgaven.",
-    "example_english": "The supervisor gave good feedback on the assignment.",
-    "definition": "En person som hjelper og gir råd til en student som skriver en stor oppgave.",
-    "level": "B2",
-    "category": "education",
-    "part": "noun"
   },
   {
     "norsk": "en disputas",
@@ -6633,17 +6523,6 @@
     "part": "verb"
   },
   {
-    "norsk": "en retorikk",
-    "lemma": "retorikk",
-    "english": "rhetoric",
-    "example": "Retorikk er kunsten å snakke overbevisende.",
-    "example_english": "Rhetoric is the art of speaking persuasively.",
-    "definition": "Kunsten å snakke eller skrive på en måte som overbeviser andre på en god måte.",
-    "level": "B2",
-    "category": "argumentation",
-    "part": "noun"
-  },
-  {
     "norsk": "et syllogisme",
     "lemma": "syllogisme",
     "english": "a syllogism",
@@ -6884,17 +6763,6 @@
     "level": "B2",
     "category": "argumentation",
     "part": "noun"
-  },
-  {
-    "norsk": "å konkludere",
-    "lemma": "konkludere",
-    "english": "to conclude",
-    "example": "Vi kan konkludere med at hypotesen stemmer.",
-    "example_english": "We can conclude that the hypothesis holds.",
-    "definition": "Å si hva du har kommet frem til etter å ha sett på et tema eller problem.",
-    "level": "B2",
-    "category": "argumentation",
-    "part": "verb"
   },
   {
     "norsk": "et standpunkt",
@@ -7629,17 +7497,6 @@
     "example": "Vi identifiserte de viktigste problemene.",
     "example_english": "We identified the most important problems.",
     "definition": "Å finne ut nøyaktig hva noe er, eller hvem noen er.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
-    "norsk": "å oppsummere",
-    "lemma": "oppsummere",
-    "english": "to summarise",
-    "example": "La meg oppsummere de viktigste punktene.",
-    "example_english": "Let me summarise the most important points.",
-    "definition": "Å si de viktigste punktene på kort tid, uten å ta med alle detaljer.",
     "level": "B2",
     "category": "advanced-verbs",
     "part": "verb"
@@ -8866,17 +8723,6 @@
     "part": "noun"
   },
   {
-    "norsk": "global oppvarming",
-    "lemma": "global oppvarming",
-    "english": "global warming",
-    "example": "Global oppvarming er en eksistensiell trussel.",
-    "example_english": "Global warming is an existential threat.",
-    "definition": "At temperaturen på jorden stiger fordi vi slipper ut for mye skadelige gasser i luften.",
-    "level": "B2",
-    "category": "global-issues",
-    "part": "phrase"
-  },
-  {
     "norsk": "en atomvåpenkontroll",
     "lemma": "atomvåpenkontroll",
     "english": "nuclear arms control",
@@ -9356,17 +9202,6 @@
     "example": "La oss oppsummere de viktigste funnene.",
     "example_english": "Let us summarise the main findings.",
     "definition": "Å si de viktigste punktene på kort tid, uten å ta med alle detaljer.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
-    "norsk": "å problematisere",
-    "lemma": "problematisere",
-    "english": "to problematise",
-    "example": "Artikkelen problematiserer den vanlige forståelsen.",
-    "example_english": "The article problematises the common understanding.",
-    "definition": "Å stille spørsmål ved noe som mange tar for gitt, og vise at det er mer komplisert.",
     "level": "B2",
     "category": "academic-language",
     "part": "verb"

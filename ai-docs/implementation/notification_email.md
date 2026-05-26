@@ -15,7 +15,7 @@ This is **not** the lesson email service from Phase 5 (`email-service.md`). That
 | Who can enable it?  | Plus users only — stored in `profiles.email_reminder`                |
 | Send time           | 19:00 UTC (same as push — they share the same Edge Function trigger) |
 | Condition           | Only sent if no `study_days` row exists for today for that user      |
-| Subject line        | `"Your Norwegian cards are waiting 🇳🇴"`                               |
+| Subject line        | `"Your Norwegian cards are waiting 🇳🇴"`                              |
 | Body copy           | `"{n} cards due today — keep your momentum going."` with CTA to app  |
 | Unsubscribe         | One-click signed URL — legally required (GDPR/CAN-SPAM)              |
 | Email provider      | Resend — already planned for Phase 5, introduce it here first        |
@@ -371,8 +371,7 @@ Check your inbox. If `email_sent` is 1 but no email arrives, check the Resend da
 
 ### Result ✅ Done
 
-**Issue 1 — JWT error:** The first attempt returned `
-Check https://supabase.com/dashboard/project/yyohrwgwoubvwjhwnaec/functions/send-push-reminders/details if `Verify JWT with legacy secret` is off.
+**Issue 1 — JWT error:** The first attempt returned `Check https://supabase.com/dashboard/project/yyohrwgwoubvwjhwnaec/functions/send-push-reminders/details if`Verify JWT with legacy secret` is off.
 {"code":"UNAUTHORIZED_INVALID_JWT_FORMAT","message":"Invalid JWT"}` because the function was configured to verify JWTs using the legacy secret, but the publishable key is not a user JWT. Fixed by disabling **"Verify JWT with legacy secret"** in the Supabase Dashboard → Functions → send-push-reminders → Details.
 
 **Issue 2 — Wrong `EMAIL_FROM` secret:** After fixing the JWT, the response was `email_sent:0, email_failed:1`. The Edge Function log showed:

@@ -3080,16 +3080,6 @@
     "part": "noun"
   },
   {
-    "norsk": "et sykehus",
-    "lemma": "sykehus",
-    "english": "a hospital",
-    "example": "Han ble innlagt på sykehus.",
-    "example_english": "He was admitted to hospital.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
     "norsk": "en allergi",
     "lemma": "allergi",
     "english": "an allergy",
@@ -5328,16 +5318,6 @@
     "level": "B2",
     "category": "education",
     "part": "phrase"
-  },
-  {
-    "norsk": "en veileder",
-    "lemma": "veileder",
-    "english": "a supervisor / a tutor",
-    "example": "Veilederen ga god tilbakemelding på oppgaven.",
-    "example_english": "The supervisor gave good feedback on the assignment.",
-    "level": "B2",
-    "category": "education",
-    "part": "noun"
   },
   {
     "norsk": "en disputas",

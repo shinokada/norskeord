@@ -550,17 +550,6 @@
     "definition": "En samtale der en journalist stiller spørsmål til noen for å få informasjon."
   },
   {
-    "norsk": "en tradisjon",
-    "lemma": "tradisjon",
-    "english": "a tradition",
-    "example": "Julenissen er en norsk tradisjon.",
-    "example_english": "Father Christmas is a Norwegian tradition.",
-    "level": "B1",
-    "category": "culture",
-    "part": "noun",
-    "definition": "Noe folk har gjort på samme måte i mange generasjoner, og som videreføres i kulturen."
-  },
-  {
     "norsk": "et museum",
     "lemma": "museum",
     "english": "a museum",
@@ -814,17 +803,6 @@
     "definition": "Et museum der man kan se gamle bygninger og gjenstander fra fortiden."
   },
   {
-    "norsk": "å oversette",
-    "lemma": "oversette",
-    "english": "to translate",
-    "example": "Boken ble oversatt til 20 språk.",
-    "example_english": "The book was translated into 20 languages.",
-    "level": "B1",
-    "category": "culture",
-    "part": "verb",
-    "definition": "Å uttrykke noe fra ett språk på et annet."
-  },
-  {
     "norsk": "teknologi",
     "lemma": "teknologi",
     "english": "technology",
@@ -966,17 +944,6 @@
     "category": "technology",
     "part": "noun",
     "definition": "En mobiltelefon med internettilgang og mange apper, som fungerer som en liten datamaskin."
-  },
-  {
-    "norsk": "en sky",
-    "lemma": "sky",
-    "english": "the cloud (data)",
-    "example": "Dataene er lagret i skyen.",
-    "example_english": "The data is stored in the cloud.",
-    "level": "B1",
-    "category": "technology",
-    "part": "noun",
-    "definition": "En tjeneste på internett der man kan lagre filer og data i stedet for på sin egen enhet."
   },
   {
     "norsk": "automatisering",
@@ -1208,17 +1175,6 @@
     "category": "relationships",
     "part": "noun",
     "definition": "En person man er i et romantisk forhold med."
-  },
-  {
-    "norsk": "en nabo",
-    "lemma": "nabo",
-    "english": "a neighbour",
-    "example": "Vi har fine naboer.",
-    "example_english": "We have nice neighbours.",
-    "level": "B1",
-    "category": "relationships",
-    "part": "noun",
-    "definition": "En person som bor i nærheten av deg."
   },
   {
     "norsk": "respekt",
@@ -1472,17 +1428,6 @@
     "category": "education",
     "part": "noun",
     "definition": "Penger en student mottar for å hjelpe med å finansiere utdanningen sin."
-  },
-  {
-    "norsk": "et bibliotek",
-    "lemma": "bibliotek",
-    "english": "a library",
-    "example": "Jeg studerer på biblioteket.",
-    "example_english": "I study at the library.",
-    "level": "B1",
-    "category": "education",
-    "part": "noun",
-    "definition": "Et sted der man kan låne bøker og bruke andre ressurser gratis."
   },
   {
     "norsk": "en forelesning",
@@ -3212,17 +3157,6 @@
     "definition": "Arbeid som gjøres for å forbedre eller reparere en bolig."
   },
   {
-    "norsk": "en hage",
-    "lemma": "hage",
-    "english": "a garden",
-    "example": "Huset har en stor hage.",
-    "example_english": "The house has a large garden.",
-    "level": "B1",
-    "category": "housing-renting",
-    "part": "noun",
-    "definition": "Et utendørs område med planter og gress knyttet til en bolig."
-  },
-  {
     "norsk": "et fellesareal",
     "lemma": "fellesareal",
     "english": "a communal area",
@@ -3309,17 +3243,6 @@
     "category": "health-body-intermediate",
     "part": "noun",
     "definition": "Et dokument fra legen som gir tillatelse til å kjøpe et legemiddel."
-  },
-  {
-    "norsk": "et sykehus",
-    "lemma": "sykehus",
-    "english": "a hospital",
-    "example": "Han ble innlagt på sykehuset.",
-    "example_english": "He was admitted to hospital.",
-    "level": "B1",
-    "category": "health-body-intermediate",
-    "part": "noun",
-    "definition": "En institusjon der pasienter mottar medisinsk behandling og pleie."
   },
   {
     "norsk": "en lege",
@@ -3441,17 +3364,6 @@
     "category": "health-body-intermediate",
     "part": "phrase",
     "definition": "Tilstanden til ens psykiske velvære og evne til å fungere i hverdagen."
-  },
-  {
-    "norsk": "stress",
-    "lemma": "stress",
-    "english": "stress",
-    "example": "Kronisk stress er skadelig for kroppen.",
-    "example_english": "Chronic stress is harmful to the body.",
-    "level": "B1",
-    "category": "health-body-intermediate",
-    "part": "noun",
-    "definition": "En tilstand av press og spenning som oppstår når man har for mange krav."
   },
   {
     "norsk": "å forebygge",
@@ -3619,17 +3531,6 @@
     "definition": "Et krav om betaling for en tjeneste eller et produkt man har brukt."
   },
   {
-    "norsk": "å betale",
-    "lemma": "betale",
-    "english": "to pay",
-    "example": "Jeg betaler alltid regningene i tide.",
-    "example_english": "I always pay the bills on time.",
-    "level": "B1",
-    "category": "finance-banking",
-    "part": "verb",
-    "definition": "Å gi penger i bytte for en vare, tjeneste eller for å gjøre opp en gjeld."
-  },
-  {
     "norsk": "en rente",
     "lemma": "rente",
     "english": "an interest rate",
@@ -3639,28 +3540,6 @@
     "category": "finance-banking",
     "part": "noun",
     "definition": "Et beløp man betaler for å låne penger, eller mottar for å spare dem."
-  },
-  {
-    "norsk": "et budsjett",
-    "lemma": "budsjett",
-    "english": "a budget",
-    "example": "Vi lager et månedlig budsjett.",
-    "example_english": "We make a monthly budget.",
-    "level": "B1",
-    "category": "finance-banking",
-    "part": "noun",
-    "definition": "Statens plan over inntekter og utgifter for et år."
-  },
-  {
-    "norsk": "en skatt",
-    "lemma": "skatt",
-    "english": "a tax",
-    "example": "Skatten i Norge er relativt høy.",
-    "example_english": "Tax in Norway is relatively high.",
-    "level": "B1",
-    "category": "finance-banking",
-    "part": "noun",
-    "definition": "Penger innbyggerne betaler til staten som finansierer offentlige tjenester."
   },
   {
     "norsk": "en bankkonto",
@@ -4990,16 +4869,6 @@
     "definition": "Å bruke argumenter for å få noen til å gjøre noe eller tro noe."
   },
   {
-    "norsk": "å oversette",
-    "english": "to translate",
-    "example": "Kan du oversette denne setningen?",
-    "example_english": "Can you translate this sentence?",
-    "level": "B1",
-    "category": "communication-skills",
-    "part": "verb",
-    "definition": "Å uttrykke noe fra ett språk på et annet."
-  },
-  {
     "norsk": "et ordforråd",
     "english": "vocabulary",
     "example": "Han har et bredt ordforråd.",
@@ -5018,16 +4887,6 @@
     "category": "communication-skills",
     "part": "adjective",
     "definition": "Å snakke et språk på en smidig og naturlig måte uten å stoppe ofte."
-  },
-  {
-    "norsk": "tydelig",
-    "english": "clear / distinct",
-    "example": "Talen hans er tydelig og forståelig.",
-    "example_english": "His speech is clear and understandable.",
-    "level": "B1",
-    "category": "communication-skills",
-    "part": "adjective",
-    "definition": "Noe som er lett å forstå og ikke gir rom for misforståelser."
   },
   {
     "norsk": "å bekrefte",
@@ -5088,16 +4947,6 @@
     "category": "housing-urban-life",
     "part": "noun",
     "definition": "En sum penger leietaker betaler på forhånd som sikkerhet."
-  },
-  {
-    "norsk": "en nabo",
-    "english": "a neighbour",
-    "example": "Naboen er støyende om kvelden.",
-    "example_english": "The neighbour is noisy in the evening.",
-    "level": "B1",
-    "category": "housing-urban-life",
-    "part": "noun",
-    "definition": "En person som bor i nærheten av deg."
   },
   {
     "norsk": "et borettslag",
@@ -6550,26 +6399,6 @@
     "definition": "Inntekten man faktisk mottar etter at skatt er trukket fra."
   },
   {
-    "norsk": "klimaendringer",
-    "english": "climate change",
-    "example": "Klimaendringene er en global trussel.",
-    "example_english": "Climate change is a global threat.",
-    "level": "B1",
-    "category": "environment-b1",
-    "part": "noun",
-    "definition": "Når været og temperaturen på jorden forandrer seg over lang tid."
-  },
-  {
-    "norsk": "global oppvarming",
-    "english": "global warming",
-    "example": "Global oppvarming smelter is ved polene.",
-    "example_english": "Global warming melts the ice at the poles.",
-    "level": "B1",
-    "category": "environment-b1",
-    "part": "phrase",
-    "definition": "Den økte gjennomsnittlige temperaturen på jordoverflaten på grunn av menneskelig aktivitet."
-  },
-  {
     "norsk": "fornybar energi",
     "english": "renewable energy",
     "example": "Fornybar energi er fremtiden.",
@@ -6988,16 +6817,6 @@
     "category": "science-nature",
     "part": "noun",
     "definition": "Elektromagnetisk stråling som vi kan se med øynene."
-  },
-  {
-    "norsk": "temperatur",
-    "english": "temperature",
-    "example": "Temperaturen i rommet er behagelig.",
-    "example_english": "The temperature in the room is comfortable.",
-    "level": "B1",
-    "category": "science-nature",
-    "part": "noun",
-    "definition": "Mål på hvor varmt eller kaldt noe er."
   },
   {
     "norsk": "et stoff",
@@ -8510,26 +8329,6 @@
     "definition": "Et sett med prinsipper og tiltak som en regjering eller organisasjon følger."
   },
   {
-    "norsk": "et budsjett",
-    "english": "a (government) budget",
-    "example": "Statsbudsjettet legges frem i oktober.",
-    "example_english": "The state budget is presented in October.",
-    "level": "B1",
-    "category": "politics-civics",
-    "part": "noun",
-    "definition": "Statens plan over inntekter og utgifter for et år."
-  },
-  {
-    "norsk": "en skatt",
-    "english": "a tax",
-    "example": "Skatter finansierer offentlige tjenester.",
-    "example_english": "Taxes finance public services.",
-    "level": "B1",
-    "category": "politics-civics",
-    "part": "noun",
-    "definition": "Penger innbyggerne betaler til staten som finansierer offentlige tjenester."
-  },
-  {
     "norsk": "ytringsfrihet",
     "english": "freedom of speech",
     "example": "Ytringsfrihet er en viktig demokratisk verdi.",
@@ -8718,16 +8517,6 @@
     "category": "language-learning",
     "part": "verb",
     "definition": "Å gjøre noe gjentatte ganger for å bli bedre."
-  },
-  {
-    "norsk": "å forstå",
-    "english": "to understand",
-    "example": "Jeg forstår meste av hva de sier.",
-    "example_english": "I understand most of what they say.",
-    "level": "B1",
-    "category": "language-learning",
-    "part": "verb",
-    "definition": "Å oppfatte meningen med noe som sies eller skrives."
   },
   {
     "norsk": "å huske",
@@ -8948,16 +8737,6 @@
     "category": "health-system",
     "part": "noun",
     "definition": "Den generelle tilstanden til kroppen og sinnet — om man er frisk eller syk."
-  },
-  {
-    "norsk": "et sykehus",
-    "english": "a hospital",
-    "example": "Sykehuset er det beste i regionen.",
-    "example_english": "The hospital is the best in the region.",
-    "level": "B1",
-    "category": "health-system",
-    "part": "noun",
-    "definition": "En institusjon der pasienter mottar medisinsk behandling og pleie."
   },
   {
     "norsk": "en fastlege",
