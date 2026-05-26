@@ -2,6 +2,8 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
+
+==========
 You wrote `The fixed content is ready. Now writing it back to your filesystem:`. Why don't you ask me to copy it and replace it manually rather than use `write_file` which takes a long time to complete.
 Or write a bash script or python, so that I can run it since you are not able to run it.
 
@@ -21,6 +23,9 @@ Then apply the matching slug and i18n key changes to src/lib/types.ts, messages/
 ```
 
 Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
+==========
+
+
 
 ---
 
@@ -30,9 +35,6 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 Can you scan src/lib/data/vocab-XX.json files to find duplicates norsk entries and list them with its level.
 
-## sitemap
-
-Update /src/routes/sitemap.xml/+server.ts
 
 ---
 
@@ -77,20 +79,6 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
 5. **C1/C2 in distractor pool:** The current plan loads A1–B2 for the distractor pool. C1/C2 data is available but adds loading weight. Omit from the initial build; add later if B2+ quiz users request it.
 
 ## Solved
-
-
-- email notification update
-
-343 cards due is a big numer.
-
-```
-Your Norwegian cards are waiting 🇳🇴
-
-Norskeord · Daily reminder
-
-Your Norwegian cards are waiting 🇳🇴
-343 cards due today — keep your streak going 🔥
-```
 
 - og:image — the layout references metaImg() but it's not clear what image is actually being served. If it resolves to nothing or a placeholder, social shares and Google's image preview will be blank. Worth auditing.
 - Should I allow contact form to logged in users? Currently only for plus users since I don't want to get unnecessary email or spam.

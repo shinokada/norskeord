@@ -63,7 +63,6 @@ CREATE TABLE public.profiles (
   card_direction text DEFAULT 'no_en'::text CHECK (card_direction = ANY (ARRAY['no_en'::text, 'en_no'::text, 'def_no'::text])),
   include_phrases boolean DEFAULT true,
   daily_reminder boolean DEFAULT false,
-  email_reminder boolean NOT NULL DEFAULT false,
   email_lesson boolean DEFAULT false,
   ls_customer_id text,
   ls_subscription_id text,
@@ -76,6 +75,7 @@ CREATE TABLE public.profiles (
   push_subscription jsonb,
   session_limit integer CHECK (session_limit IS NULL OR (session_limit = ANY (ARRAY[10, 20, 30, 50]))),
   quiz_limit integer CHECK (quiz_limit IS NULL OR (quiz_limit = ANY (ARRAY[5, 10, 15, 20]))),
+  email_reminder boolean NOT NULL DEFAULT false,
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
 );

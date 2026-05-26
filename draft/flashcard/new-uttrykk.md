@@ -11,3 +11,4 @@ få noe av noen: to get something from somebody
 å bry seg om: to care: Han brydde seg ikke om hvordan han så ut.
 å bli feitere: to get fatter
 nett i kroppen: be neat, light build
+å slippe ut av: let out: De slapp ham ut av fengselet.
