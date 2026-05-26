@@ -176,45 +176,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en subjektivitet",
-    "lemma": "subjektivitet",
-    "english": "subjectivity",
-    "example": "Subjektivitet preger vår oppfatning av verden.",
-    "example_english": "Subjectivity characterises our perception of the world.",
-    "definition": "Det at noe er basert på egne personlige følelser, meninger og erfaringer, ikke på nøytrale fakta.",
-    "level": "C1",
-    "category": "philosophy",
-    "part": "noun"
-  },
-  {
-    "norsk": "en objektivitet",
-    "lemma": "objektivitet",
-    "english": "objectivity",
-    "example": "Objektivitet i vitenskapen er et ideal som er vanskelig å nå.",
-    "example_english": "Objectivity in science is an ideal that is hard to achieve.",
-    "definition": "Det å vurdere noe uten å la egne følelser eller meninger påvirke svaret, kun basert på fakta.",
-    "level": "C1",
-    "category": "philosophy",
-    "part": "noun"
-  },
-  {
     "norsk": "metafysikk",
     "lemma": "metafysikk",
     "english": "metaphysics",
     "example": "Metafysikk undersøker virkelighetens grunnleggende struktur.",
     "example_english": "Metaphysics investigates the fundamental structure of reality.",
     "definition": "En del av filosofien som stiller grunnleggende spørsmål om virkeligheten, for eksempel hva tid, rom og bevissthet egentlig er.",
-    "level": "C1",
-    "category": "philosophy",
-    "part": "noun"
-  },
-  {
-    "norsk": "relativisme",
-    "lemma": "relativisme",
-    "english": "relativism",
-    "example": "Moralsk relativisme hevder at sannhet er kulturbetinget.",
-    "example_english": "Moral relativism holds that truth is culture-dependent.",
-    "definition": "En tanke om at sannhet og moral ikke er absolutte, men avhenger av kultur, tid eller den enkelte person.",
     "level": "C1",
     "category": "philosophy",
     "part": "noun"
@@ -286,45 +253,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en metodologi",
-    "lemma": "metodologi",
-    "english": "a methodology",
-    "example": "Metodologien ble begrunnet grundig i metodekapittelet.",
-    "example_english": "The methodology was thoroughly justified in the methods chapter.",
-    "definition": "En samlet beskrivelse av hvilke metoder og prinsipper som brukes i en studie, og hvorfor.",
-    "level": "C1",
-    "category": "academic",
-    "part": "noun"
-  },
-  {
-    "norsk": "en litteraturgjennomgang",
-    "lemma": "litteraturgjennomgang",
-    "english": "a literature review",
-    "example": "Litteraturgjennomgangen identifiserte tre sentrale teorier.",
-    "example_english": "The literature review identified three central theories.",
-    "definition": "En oversikt over og analyse av tidligere forskning og tekster om et bestemt tema.",
-    "level": "C1",
-    "category": "academic",
-    "part": "noun"
-  },
-  {
     "norsk": "en diskurs",
     "lemma": "diskurs",
     "english": "a discourse",
     "example": "Den akademiske diskursen om klimaet er kompleks.",
     "example_english": "The academic discourse on climate is complex.",
     "definition": "En bestemt måte å snakke og skrive om et tema på innenfor en gruppe eller et fagfelt.",
-    "level": "C1",
-    "category": "academic",
-    "part": "noun"
-  },
-  {
-    "norsk": "en avhandling",
-    "lemma": "avhandling",
-    "english": "a thesis / a dissertation",
-    "example": "Avhandlingen ble forsvart for en komité.",
-    "example_english": "The thesis was defended before a committee.",
-    "definition": "Et langt, grundig akademisk dokument som presenterer original forskning, ofte for en høyere grad.",
     "level": "C1",
     "category": "academic",
     "part": "noun"
@@ -383,28 +317,6 @@
     "level": "C1",
     "category": "academic",
     "part": "verb"
-  },
-  {
-    "norsk": "en kvalitativ metode",
-    "lemma": "en kvalitativ metode",
-    "english": "qualitative method",
-    "example": "Intervjuer er en typisk kvalitativ metode.",
-    "example_english": "Interviews are a typical qualitative method.",
-    "definition": "En forskningsmetode som fokuserer på å forstå meninger, erfaringer og fenomener gjennom ord og beskrivelser.",
-    "level": "C1",
-    "category": "academic",
-    "part": "phrase"
-  },
-  {
-    "norsk": "en kvantitativ metode",
-    "lemma": "en kvantitativ metode",
-    "english": "quantitative method",
-    "example": "Spørreundersøkelser gir kvantitative data.",
-    "example_english": "Surveys provide quantitative data.",
-    "definition": "En forskningsmetode som samler inn og analyserer data i form av tall og statistikk.",
-    "level": "C1",
-    "category": "academic",
-    "part": "phrase"
   },
   {
     "norsk": "validitet",
@@ -473,45 +385,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en generaliserbarhet",
-    "lemma": "generaliserbarhet",
-    "english": "generalisability",
-    "example": "Studiens generaliserbarhet er begrenset av utvalget.",
-    "example_english": "The study's generalisability is limited by the sample.",
-    "definition": "I hvilken grad man kan bruke funn fra én studie til å si noe om en større gruppe eller situasjon.",
-    "level": "C1",
-    "category": "academic",
-    "part": "noun"
-  },
-  {
     "norsk": "en konsensus",
     "lemma": "konsensus",
     "english": "a consensus",
     "example": "Det er vitenskapelig konsensus om menneskeskapte klimaendringer.",
     "example_english": "There is scientific consensus on human-caused climate change.",
     "definition": "Enighet som en gruppe mennesker eller fagpersoner har kommet frem til sammen.",
-    "level": "C1",
-    "category": "academic",
-    "part": "noun"
-  },
-  {
-    "norsk": "å destillere",
-    "lemma": "destillere",
-    "english": "to distil (information)",
-    "example": "Artikkelen destillerer kompleks forskning til kjernepunkter.",
-    "example_english": "The article distils complex research into key points.",
-    "definition": "Å trekke ut det viktigste fra mye informasjon og presentere det på en kort og tydelig måte.",
-    "level": "C1",
-    "category": "academic",
-    "part": "verb"
-  },
-  {
-    "norsk": "en problemstilling",
-    "lemma": "problemstilling",
-    "english": "a research question / a thesis statement",
-    "example": "Problemstillingen definerer hva studien søker å besvare.",
-    "example_english": "The research question defines what the study seeks to answer.",
-    "definition": "Det sentrale spørsmålet eller temaet som en oppgave eller studie prøver å svare på eller undersøke.",
     "level": "C1",
     "category": "academic",
     "part": "noun"
@@ -539,17 +418,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å redegjøre for",
-    "lemma": "å redegjøre for",
-    "english": "to account for / to elaborate on",
-    "example": "I det følgende vil jeg redegjøre for studiens metode.",
-    "example_english": "In what follows I will account for the study's method.",
-    "definition": "Å forklare noe grundig og tydelig slik at andre forstår hva det handler om.",
-    "level": "C1",
-    "category": "formal-writing",
-    "part": "phrase"
-  },
-  {
     "norsk": "med utgangspunkt i",
     "lemma": "med utgangspunkt i",
     "english": "based on / starting from",
@@ -559,28 +427,6 @@
     "level": "C1",
     "category": "formal-writing",
     "part": "phrase"
-  },
-  {
-    "norsk": "å drøfte",
-    "lemma": "drøfte",
-    "english": "to discuss / to examine critically",
-    "example": "Oppgaven drøfter to motstridende syn.",
-    "example_english": "The paper examines two opposing views.",
-    "definition": "Å se på et tema fra flere sider og vurdere ulike argumenter eller synspunkter nøye.",
-    "level": "C1",
-    "category": "formal-writing",
-    "part": "verb"
-  },
-  {
-    "norsk": "å belyse",
-    "lemma": "belyse",
-    "english": "to shed light on / to illuminate",
-    "example": "Analysen belyser strukturelle årsaker til problemet.",
-    "example_english": "The analysis sheds light on the structural causes of the problem.",
-    "definition": "Å gjøre noe klarere og lettere å forstå ved å vise det fra en ny vinkel eller med ny informasjon.",
-    "level": "C1",
-    "category": "formal-writing",
-    "part": "verb"
   },
   {
     "norsk": "i lys av",
@@ -638,28 +484,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "å underbygge",
-    "lemma": "underbygge",
-    "english": "to substantiate / to underpin",
-    "example": "Eksemplene underbygger argumentasjonen.",
-    "example_english": "The examples substantiate the argument.",
-    "definition": "Å støtte en påstand eller et argument med bevis, eksempler eller gode grunner.",
-    "level": "C1",
-    "category": "formal-writing",
-    "part": "verb"
-  },
-  {
-    "norsk": "følgelig",
-    "lemma": "følgelig",
-    "english": "consequently / therefore",
-    "example": "Ressursene er knappe; følgelig må vi prioritere.",
-    "example_english": "Resources are scarce; consequently we must prioritise.",
-    "definition": "Brukes når noe er et naturlig resultat av det som ble sagt før — omtrent som 'derfor' eller 'av den grunn'.",
-    "level": "C1",
-    "category": "formal-writing",
-    "part": "adverb"
-  },
-  {
     "norsk": "ytterligere",
     "lemma": "ytterligere",
     "english": "further / additionally",
@@ -680,28 +504,6 @@
     "level": "C1",
     "category": "formal-writing",
     "part": "noun"
-  },
-  {
-    "norsk": "å problematisere",
-    "lemma": "problematisere",
-    "english": "to problematise / to call into question",
-    "example": "Artikkelen problematiserer den rådende teorien.",
-    "example_english": "The article calls the prevailing theory into question.",
-    "definition": "Å vise at noe er mer komplisert enn det ser ut til, og stille spørsmål ved om det virkelig stemmer.",
-    "level": "C1",
-    "category": "formal-writing",
-    "part": "verb"
-  },
-  {
-    "norsk": "ikke desto mindre",
-    "lemma": "ikke desto mindre",
-    "english": "nevertheless / nonetheless",
-    "example": "Resultatene er usikre; ikke desto mindre er de lovende.",
-    "example_english": "The results are uncertain; nevertheless they are promising.",
-    "definition": "Brukes for å si at noe er sant eller skjer, selv om det finnes grunner til det motsatte — som 'likevel'.",
-    "level": "C1",
-    "category": "formal-writing",
-    "part": "phrase"
   },
   {
     "norsk": "i henhold til",
@@ -924,28 +726,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en allegori",
-    "lemma": "allegori",
-    "english": "an allegory",
-    "example": "Orwells Dyregård er en politisk allegori.",
-    "example_english": "Orwell's Animal Farm is a political allegory.",
-    "definition": "En fortelling der personer og hendelser egentlig representerer noe annet, ofte en politisk eller moralsk idé.",
-    "level": "C1",
-    "category": "rhetoric",
-    "part": "noun"
-  },
-  {
-    "norsk": "en eufemisme",
-    "lemma": "eufemisme",
-    "english": "a euphemism",
-    "example": "Uttrykket 'gikk bort' er en eufemisme for 'døde'.",
-    "example_english": "The expression 'passed away' is a euphemism for 'died'.",
-    "definition": "Et mildere eller mer høflig ord som brukes i stedet for et direkte eller ubehagelig uttrykk.",
-    "level": "C1",
-    "category": "rhetoric",
-    "part": "noun"
-  },
-  {
     "norsk": "et syllepsis",
     "lemma": "syllepsis",
     "english": "syllepsis (using one word to govern two)",
@@ -1067,28 +847,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en innledning",
-    "lemma": "innledning",
-    "english": "an introduction / an exordium",
-    "example": "Innledningen må fange lytterens oppmerksomhet.",
-    "example_english": "The introduction must capture the listener's attention.",
-    "definition": "Den første delen av en tale eller tekst, som skal vekke interesse og forberede tilhøreren på det som kommer.",
-    "level": "C1",
-    "category": "rhetoric",
-    "part": "noun"
-  },
-  {
-    "norsk": "en appell",
-    "lemma": "appell",
-    "english": "an appeal",
-    "example": "Appellen til medeleven engasjerte hele forsamlingen.",
-    "example_english": "The appeal to the fellow student engaged the entire assembly.",
-    "definition": "Et forsøk på å påvirke følelsene eller fornuften til tilhørerne for å få dem til å støtte et synspunkt.",
-    "level": "C1",
-    "category": "rhetoric",
-    "part": "noun"
-  },
-  {
     "norsk": "sjelelig uro",
     "lemma": "sjelelig uro",
     "english": "inner turmoil / spiritual unease",
@@ -1109,17 +867,6 @@
     "level": "C1",
     "category": "complex-emotions",
     "part": "adjective"
-  },
-  {
-    "norsk": "angst",
-    "lemma": "angst",
-    "english": "existential anxiety / dread",
-    "example": "Kierkegaard beskriver angst som en grunnleggende menneskelig tilstand.",
-    "example_english": "Kierkegaard describes angst as a fundamental human condition.",
-    "definition": "En dyp, ofte uforklarlig frykt for livet, fremtiden eller det å eksistere.",
-    "level": "C1",
-    "category": "complex-emotions",
-    "part": "noun"
   },
   {
     "norsk": "eksistensielt tomrom",
@@ -1153,17 +900,6 @@
     "level": "C1",
     "category": "complex-emotions",
     "part": "noun"
-  },
-  {
-    "norsk": "å bearbeide",
-    "lemma": "bearbeide",
-    "english": "to process (emotions)",
-    "example": "Terapien hjalp henne å bearbeide sorgen.",
-    "example_english": "The therapy helped her process her grief.",
-    "definition": "Å jobbe sakte gjennom vanskelige følelser eller opplevelser for å akseptere dem.",
-    "level": "C1",
-    "category": "complex-emotions",
-    "part": "verb"
   },
   {
     "norsk": "ambivalent",
@@ -1375,39 +1111,6 @@
     "part": "adjective"
   },
   {
-    "norsk": "en forhandling",
-    "lemma": "forhandling",
-    "english": "a negotiation",
-    "example": "Lønnsforhandlingene ble avsluttet med et kompromiss.",
-    "example_english": "The salary negotiations ended in a compromise.",
-    "definition": "En samtale mellom to eller flere parter der de prøver å bli enige om noe.",
-    "level": "C1",
-    "category": "professional",
-    "part": "noun"
-  },
-  {
-    "norsk": "et nettverk",
-    "lemma": "nettverk",
-    "english": "a (professional) network",
-    "example": "Et godt profesjonelt nettverk er uvurderlig.",
-    "example_english": "A good professional network is invaluable.",
-    "definition": "En gruppe mennesker man kjenner profesjonelt, og som kan hjelpe hverandre i arbeidslivet.",
-    "level": "C1",
-    "category": "professional",
-    "part": "noun"
-  },
-  {
-    "norsk": "å delegere",
-    "lemma": "delegere",
-    "english": "to delegate",
-    "example": "En god leder vet å delegere oppgaver.",
-    "example_english": "A good leader knows how to delegate tasks.",
-    "definition": "Å gi en annen person ansvar for å utføre en oppgave som man selv har ansvar for.",
-    "level": "C1",
-    "category": "professional",
-    "part": "verb"
-  },
-  {
     "norsk": "en strategiplan",
     "lemma": "strategiplan",
     "english": "a strategic plan",
@@ -1417,17 +1120,6 @@
     "level": "C1",
     "category": "professional",
     "part": "noun"
-  },
-  {
-    "norsk": "å fasilitere",
-    "lemma": "fasilitere",
-    "english": "to facilitate",
-    "example": "HR fasiliterer onboardingsprosessen.",
-    "example_english": "HR facilitates the onboarding process.",
-    "definition": "Å gjøre det lettere for en prosess eller et møte å fungere godt ved å organisere og lede det.",
-    "level": "C1",
-    "category": "professional",
-    "part": "verb"
   },
   {
     "norsk": "en interessent",
@@ -1485,28 +1177,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en fusjon",
-    "lemma": "fusjon",
-    "english": "a merger",
-    "example": "Fusjonen mellom de to selskapene skapte markedsuro.",
-    "example_english": "The merger between the two companies created market turbulence.",
-    "definition": "Når to eller flere selskaper slår seg sammen og blir én felles organisasjon.",
-    "level": "C1",
-    "category": "professional",
-    "part": "noun"
-  },
-  {
-    "norsk": "å implementere",
-    "lemma": "implementere",
-    "english": "to implement",
-    "example": "Vi implementerte de nye rutinene gradvis.",
-    "example_english": "We implemented the new procedures gradually.",
-    "definition": "Å sette en plan, et system eller nye rutiner ut i praksis i en organisasjon.",
-    "level": "C1",
-    "category": "professional",
-    "part": "verb"
-  },
-  {
     "norsk": "en benchmark",
     "lemma": "benchmark",
     "english": "a benchmark",
@@ -1524,28 +1194,6 @@
     "example": "Vi følger nøye med på KPI-ene hvert kvartal.",
     "example_english": "We closely monitor the KPIs each quarter.",
     "definition": "Et konkret tall eller mål som brukes for å måle om en virksomhet når sine viktigste mål.",
-    "level": "C1",
-    "category": "professional",
-    "part": "noun"
-  },
-  {
-    "norsk": "å outsource",
-    "lemma": "outsource",
-    "english": "to outsource",
-    "example": "Bedriften outsourcer IT-driften.",
-    "example_english": "The company outsources its IT operations.",
-    "definition": "Å la et annet firma ta seg av oppgaver som vanligvis gjøres internt i bedriften.",
-    "level": "C1",
-    "category": "professional",
-    "part": "verb"
-  },
-  {
-    "norsk": "en målgruppe",
-    "lemma": "målgruppe",
-    "english": "a target group / a target audience",
-    "example": "Kampanjen er rettet mot en yngre målgruppe.",
-    "example_english": "The campaign is aimed at a younger target group.",
-    "definition": "Den bestemte gruppen av mennesker man ønsker å nå med et budskap eller et produkt.",
     "level": "C1",
     "category": "professional",
     "part": "noun"
@@ -1571,17 +1219,6 @@
     "level": "C1",
     "category": "professional",
     "part": "noun"
-  },
-  {
-    "norsk": "å skalere",
-    "lemma": "skalere",
-    "english": "to scale (a business)",
-    "example": "Oppstarten klarte å skalere raskt.",
-    "example_english": "The start-up managed to scale quickly.",
-    "definition": "Å vokse eller utvide en virksomhet raskt uten at kostnadene øker like mye.",
-    "level": "C1",
-    "category": "professional",
-    "part": "verb"
   },
   {
     "norsk": "en medarbeidersamtale",
@@ -1639,28 +1276,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "frihet",
-    "lemma": "frihet",
-    "english": "freedom / liberty (as abstract concept)",
-    "example": "Frihet er et verdibegrep med mange tolkninger.",
-    "example_english": "Freedom is a value concept with many interpretations.",
-    "definition": "Muligheten til å tenke, velge og handle uten at andre tvinger deg eller setter grenser for deg.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
-    "norsk": "rettferdighet",
-    "lemma": "rettferdighet",
-    "english": "justice / fairness",
-    "example": "Rettferdighet er en av demokratiets grunnpilarer.",
-    "example_english": "Justice is one of the cornerstones of democracy.",
-    "definition": "Prinsippet om at alle skal behandles likt og få det de fortjener.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
     "norsk": "sannhet",
     "lemma": "sannhet",
     "english": "truth",
@@ -1689,39 +1304,6 @@
     "example": "Tid er et mysterium som filosofer forsøker å forstå.",
     "example_english": "Time is a mystery that philosophers attempt to understand.",
     "definition": "Den kontinuerlige strømmen av øyeblikk fra fortid gjennom nåtid og inn i fremtid.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
-    "norsk": "bevissthet",
-    "lemma": "bevissthet",
-    "english": "consciousness / awareness",
-    "example": "Bevissthetens natur er fortsatt et åpent spørsmål.",
-    "example_english": "The nature of consciousness remains an open question.",
-    "definition": "Evnen til å oppleve, tenke og være klar over seg selv og verden rundt seg.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
-    "norsk": "identitet",
-    "lemma": "identitet",
-    "english": "identity",
-    "example": "Nasjonal identitet er sammensatt og dynamisk.",
-    "example_english": "National identity is complex and dynamic.",
-    "definition": "Hvem man er — de egenskapene, verdiene og tilhørighetene som skiller deg fra andre.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
-    "norsk": "en kontinuitet",
-    "lemma": "kontinuitet",
-    "english": "continuity",
-    "example": "Kontinuitet i politikk sikrer forutsigbarhet.",
-    "example_english": "Continuity in policy ensures predictability.",
-    "definition": "Det at noe fortsetter på samme måte over tid uten store brudd eller endringer.",
     "level": "C1",
     "category": "abstract-concepts",
     "part": "noun"
@@ -1771,17 +1353,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å formidle",
-    "lemma": "formidle",
-    "english": "to convey / to communicate (an idea)",
-    "example": "Kunstneren formidler en intens sorg gjennom sitt verk.",
-    "example_english": "The artist conveys an intense sorrow through their work.",
-    "definition": "Å gi videre et budskap, en følelse eller en idé til andre på en tydelig måte.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "verb"
-  },
-  {
     "norsk": "intersubjektivitet",
     "lemma": "intersubjektivitet",
     "english": "intersubjectivity",
@@ -1793,56 +1364,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en årsakssammenheng",
-    "lemma": "årsakssammenheng",
-    "english": "a causal relationship",
-    "example": "Det er ikke alltid enkelt å fastslå en årsakssammenheng.",
-    "example_english": "It is not always easy to establish a causal relationship.",
-    "definition": "Et forhold der én ting direkte fører til eller skaper en annen ting.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
-    "norsk": "en analogi",
-    "lemma": "analogi",
-    "english": "an analogy",
-    "example": "En analogi kan gjøre abstrakte ideer lettere å forstå.",
-    "example_english": "An analogy can make abstract ideas easier to understand.",
-    "definition": "En sammenligning mellom to ulike ting for å vise at de fungerer på samme måte.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
-    "norsk": "et dilemma",
-    "lemma": "dilemma",
-    "english": "a dilemma",
-    "example": "Valget mellom lojalitet og ærlighet er et dilemma.",
-    "example_english": "The choice between loyalty and honesty is a dilemma.",
-    "definition": "En vanskelig situasjon der man må velge mellom to alternativer, og begge har negative sider.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
     "norsk": "en legitimitet",
     "lemma": "legitimitet",
     "english": "legitimacy",
     "example": "Statens legitimitet hviler på folkets tillit.",
     "example_english": "The state's legitimacy rests on the trust of the people.",
     "definition": "Den allmenne aksepten for at noe har rett til å eksistere eller ha makt.",
-    "level": "C1",
-    "category": "abstract-concepts",
-    "part": "noun"
-  },
-  {
-    "norsk": "en norm",
-    "lemma": "norm",
-    "english": "a norm",
-    "example": "Sosiale normer styrer atferd uformelt.",
-    "example_english": "Social norms govern behaviour informally.",
-    "definition": "En uformell regel om hva som regnes som vanlig eller akseptabelt oppførsel i et samfunn.",
     "level": "C1",
     "category": "abstract-concepts",
     "part": "noun"
@@ -1947,39 +1474,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en opposisjon",
-    "lemma": "opposisjon",
-    "english": "an opposition",
-    "example": "Opposisjonen krevde større åpenhet i prosessen.",
-    "example_english": "The opposition demanded greater transparency in the process.",
-    "definition": "De politiske partiene som ikke er med i regjering og som kritiserer og utfordrer den.",
-    "level": "C1",
-    "category": "politics-democracy",
-    "part": "noun"
-  },
-  {
-    "norsk": "en koalisjon",
-    "lemma": "koalisjon",
-    "english": "a coalition",
-    "example": "Partiene dannet en koalisjon for å få makt.",
-    "example_english": "The parties formed a coalition to gain power.",
-    "definition": "Et samarbeid mellom to eller flere partier som går sammen for å danne en regjering.",
-    "level": "C1",
-    "category": "politics-democracy",
-    "part": "noun"
-  },
-  {
-    "norsk": "en grunnlov",
-    "lemma": "grunnlov",
-    "english": "a constitution",
-    "example": "Grunnloven sikrer ytringsfriheten.",
-    "example_english": "The constitution guarantees freedom of speech.",
-    "definition": "Den viktigste loven i et land, som bestemmer hvilke rettigheter folk har og hvordan staten skal styres.",
-    "level": "C1",
-    "category": "politics-democracy",
-    "part": "noun"
-  },
-  {
     "norsk": "å ratifisere",
     "lemma": "ratifisere",
     "english": "to ratify",
@@ -2002,111 +1496,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en dialekt",
-    "lemma": "dialekt",
-    "english": "a dialect",
-    "example": "Dialekten avslører ofte hvor i landet du kommer fra.",
-    "example_english": "Your dialect often reveals where in the country you come from.",
-    "definition": "En variant av et språk som folk i et bestemt område snakker, med egne ord og uttale.",
-    "level": "C1",
-    "category": "linguistics",
-    "part": "noun"
-  },
-  {
-    "norsk": "å oversette",
-    "lemma": "oversette",
-    "english": "to translate",
-    "example": "Hun oversetter romaner fra fransk til norsk.",
-    "example_english": "She translates novels from French to Norwegian.",
-    "definition": "Å skrive eller si noe på et annet språk slik at betydningen forblir den samme.",
-    "level": "C1",
-    "category": "linguistics",
-    "part": "verb"
-  },
-  {
-    "norsk": "tospråklig",
-    "lemma": "tospråklig",
-    "english": "bilingual",
-    "example": "Han vokste opp i et tospråklig hjem.",
-    "example_english": "He grew up in a bilingual home.",
-    "definition": "Å kunne snakke to språk like godt, ofte fordi man har lært begge fra barndommen.",
-    "level": "C1",
-    "category": "linguistics",
-    "part": "adjective"
-  },
-  {
-    "norsk": "et idiom",
-    "lemma": "idiom",
-    "english": "an idiom",
-    "example": "Idiomatiske uttrykk kan være vanskelige å oversette.",
-    "example_english": "Idiomatic expressions can be difficult to translate.",
-    "definition": "Et fast uttrykk der den bokstavelige betydningen er forskjellig fra hva man egentlig mener.",
-    "level": "C1",
-    "category": "linguistics",
-    "part": "noun"
-  },
-  {
-    "norsk": "grammatikk",
-    "lemma": "grammatikk",
-    "english": "grammar",
-    "example": "Grammatikk er strukturen som holder språket sammen.",
-    "example_english": "Grammar is the structure that holds language together.",
-    "definition": "Reglene for hvordan ord settes sammen til setninger i et språk.",
-    "level": "C1",
-    "category": "linguistics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en aksent",
-    "lemma": "aksent",
-    "english": "an accent",
-    "example": "Aksenten hennes er tydelig britisk.",
-    "example_english": "Her accent is distinctly British.",
-    "definition": "Måten noen uttaler ord på, som ofte viser hvilket land eller område de kommer fra.",
-    "level": "C1",
-    "category": "linguistics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en redaktør",
-    "lemma": "redaktør",
-    "english": "an editor",
-    "example": "Redaktøren godkjenner alle artiklene før publisering.",
-    "example_english": "The editor approves all articles before publication.",
-    "definition": "En person som har ansvar for innholdet i en avis, et magasin eller en bok, og bestemmer hva som trykkes.",
-    "level": "C1",
-    "category": "media-journalism",
-    "part": "noun"
-  },
-  {
     "norsk": "sensur",
     "lemma": "sensur",
     "english": "censorship",
     "example": "Filmen møtte sensur på grunn av voldelige scener.",
     "example_english": "The film faced censorship because of violent scenes.",
     "definition": "Når myndighetene eller andre forbyr folk å se, lese eller høre bestemt innhold.",
-    "level": "C1",
-    "category": "media-journalism",
-    "part": "noun"
-  },
-  {
-    "norsk": "kildekritikk",
-    "lemma": "kildekritikk",
-    "english": "source criticism",
-    "example": "Journalister må alltid utøve kildekritikk.",
-    "example_english": "Journalists must always practice source criticism.",
-    "definition": "Å vurdere om informasjon og de som gir den er pålitelige og troverdige.",
-    "level": "C1",
-    "category": "media-journalism",
-    "part": "noun"
-  },
-  {
-    "norsk": "troverdighet",
-    "lemma": "troverdighet",
-    "english": "credibility",
-    "example": "Avisens troverdighet økte etter avsløringen.",
-    "example_english": "The newspaper's credibility rose after the exposé.",
-    "definition": "Graden av tillit andre har til deg eller til det du sier, fordi du virker ærlig og pålitelig.",
     "level": "C1",
     "category": "media-journalism",
     "part": "noun"
@@ -2123,56 +1518,12 @@
     "part": "noun"
   },
   {
-    "norsk": "et intervju",
-    "lemma": "intervju",
-    "english": "an interview",
-    "example": "Intervjuet gikk direkte på lufta.",
-    "example_english": "The interview aired live.",
-    "definition": "En samtale der en person stiller spørsmål til en annen, ofte for å få informasjon til en avis eller et program.",
-    "level": "C1",
-    "category": "media-journalism",
-    "part": "noun"
-  },
-  {
-    "norsk": "å publisere",
-    "lemma": "publisere",
-    "english": "to publish",
-    "example": "Magasinet publiserer en ny utgave hver uke.",
-    "example_english": "The magazine publishes a new issue every week.",
-    "definition": "Å gjøre en tekst, en bok eller et innhold tilgjengelig for andre å lese eller se.",
-    "level": "C1",
-    "category": "media-journalism",
-    "part": "verb"
-  },
-  {
     "norsk": "en fasade",
     "lemma": "fasade",
     "english": "a facade",
     "example": "Byggets fasade er dekket av glass.",
     "example_english": "The building's facade is covered with glass.",
     "definition": "Den ytre veggen eller forsiden av en bygning, eller et bilde man viser utad som skjuler noe annet.",
-    "level": "C1",
-    "category": "architecture-design",
-    "part": "noun"
-  },
-  {
-    "norsk": "bærekraftig",
-    "lemma": "bærekraftig",
-    "english": "sustainable",
-    "example": "Prosjektet bruker bærekraftige materialer.",
-    "example_english": "The project uses sustainable materials.",
-    "definition": "Noe som ikke skader naturen og kan fortsette over lang tid uten å bruke opp ressursene.",
-    "level": "C1",
-    "category": "architecture-design",
-    "part": "adjective"
-  },
-  {
-    "norsk": "et monument",
-    "lemma": "monument",
-    "english": "a monument",
-    "example": "Monumentet hedrer krigens falne.",
-    "example_english": "The monument honours the fallen of the war.",
-    "definition": "En stor statue eller bygning som er laget for å minne folk på en viktig person eller hendelse.",
     "level": "C1",
     "category": "architecture-design",
     "part": "noun"
@@ -2244,17 +1595,6 @@
     "part": "noun"
   },
   {
-    "norsk": "suverenitet",
-    "lemma": "suverenitet",
-    "english": "sovereignty",
-    "example": "Suverenitet innebærer retten til selvbestemmelse.",
-    "example_english": "Sovereignty entails the right to self-determination.",
-    "definition": "Retten et land har til å styre seg selv uten innblanding fra andre land.",
-    "level": "C1",
-    "category": "diplomacy-international",
-    "part": "noun"
-  },
-  {
     "norsk": "multilateralt",
     "lemma": "multilateralt",
     "english": "multilateral",
@@ -2288,28 +1628,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en sanksjon",
-    "lemma": "sanksjon",
-    "english": "a sanction",
-    "example": "Sanksjonene ble innført for å presse frem forhandlinger.",
-    "example_english": "The sanctions were imposed to push for negotiations.",
-    "definition": "Et tiltak, ofte straff eller forbud, som brukes for å presse et land til å endre sin oppførsel.",
-    "level": "C1",
-    "category": "diplomacy-international",
-    "part": "noun"
-  },
-  {
-    "norsk": "inflasjon",
-    "lemma": "inflasjon",
-    "english": "inflation",
-    "example": "Inflasjon svekker kjøpekraften.",
-    "example_english": "Inflation weakens purchasing power.",
-    "definition": "Når prisene på varer og tjenester stiger over tid, slik at penger er mindre verdt.",
-    "level": "C1",
-    "category": "finance-economics",
-    "part": "noun"
-  },
-  {
     "norsk": "et aksjemarked",
     "lemma": "aksjemarked",
     "english": "a stock market",
@@ -2327,17 +1645,6 @@
     "example": "Banken må sikre tilstrekkelig likviditet.",
     "example_english": "The bank must ensure sufficient liquidity.",
     "definition": "Hvor lett en person eller bedrift kan få tilgang til penger for å betale regninger og utgifter.",
-    "level": "C1",
-    "category": "finance-economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "et underskudd",
-    "lemma": "underskudd",
-    "english": "a deficit",
-    "example": "Statsbudsjettet viser et stort underskudd.",
-    "example_english": "The state budget shows a large deficit.",
-    "definition": "Når man bruker mer penger enn man har eller tjener, slik at det mangler penger.",
     "level": "C1",
     "category": "finance-economics",
     "part": "noun"
@@ -2373,138 +1680,6 @@
     "definition": "Den generelle tilstanden i økonomien, om den går bra eller dårlig i en periode.",
     "level": "C1",
     "category": "finance-economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en diagnose",
-    "lemma": "diagnose",
-    "english": "a diagnosis",
-    "example": "Riktig diagnose er avgjørende for behandlingen.",
-    "example_english": "A correct diagnosis is crucial for treatment.",
-    "definition": "En leges konklusjon om hvilken sykdom eller tilstand en pasient har, etter undersøkelse.",
-    "level": "C1",
-    "category": "medicine-healthcare",
-    "part": "noun"
-  },
-  {
-    "norsk": "forebygging",
-    "lemma": "forebygging",
-    "english": "prevention",
-    "example": "Forebygging reduserer behovet for behandling.",
-    "example_english": "Prevention reduces the need for treatment.",
-    "definition": "Tiltak man gjør for å hindre at noe negativt, som sykdom eller problemer, oppstår.",
-    "level": "C1",
-    "category": "medicine-healthcare",
-    "part": "noun"
-  },
-  {
-    "norsk": "kronisk",
-    "lemma": "kronisk",
-    "english": "chronic",
-    "example": "Kronisk smerte krever langvarig oppfølging.",
-    "example_english": "Chronic pain requires long-term follow-up.",
-    "definition": "Brukes om sykdom eller plager som varer lenge eller kommer tilbake igjen og igjen.",
-    "level": "C1",
-    "category": "medicine-healthcare",
-    "part": "adjective"
-  },
-  {
-    "norsk": "folkehelse",
-    "lemma": "folkehelse",
-    "english": "public health",
-    "example": "Folkehelse handler om befolkningens samlede helse.",
-    "example_english": "Public health concerns the population's overall health.",
-    "definition": "Helsetilstanden til alle mennesker i et samfunn, og arbeidet med å gjøre folk friskere og forebygge sykdom.",
-    "level": "C1",
-    "category": "medicine-healthcare",
-    "part": "noun"
-  },
-  {
-    "norsk": "en klinisk studie",
-    "lemma": "en klinisk studie",
-    "english": "a clinical study",
-    "example": "Den kliniske studien tester en ny vaksine.",
-    "example_english": "The clinical study tests a new vaccine.",
-    "definition": "En vitenskapelig undersøkelse der forskere tester om en ny medisin eller behandling er trygg og virker på pasienter.",
-    "level": "C1",
-    "category": "medicine-healthcare",
-    "part": "phrase"
-  },
-  {
-    "norsk": "en prognose",
-    "lemma": "prognose",
-    "english": "a prognosis",
-    "example": "Prognosen er god hvis behandlingen starter tidlig.",
-    "example_english": "The prognosis is good if treatment starts early.",
-    "definition": "En faglig vurdering av hvordan en sykdom eller situasjon vil utvikle seg fremover.",
-    "level": "C1",
-    "category": "medicine-healthcare",
-    "part": "noun"
-  },
-  {
-    "norsk": "en epidemi",
-    "lemma": "epidemi",
-    "english": "an epidemic",
-    "example": "Epidemien spredte seg raskt i byen.",
-    "example_english": "The epidemic spread quickly in the city.",
-    "definition": "Når en sykdom sprer seg raskt og rammer mange mennesker i et område på kort tid.",
-    "level": "C1",
-    "category": "medicine-healthcare",
-    "part": "noun"
-  },
-  {
-    "norsk": "et traume",
-    "lemma": "traume",
-    "english": "a trauma",
-    "example": "Traumet påvirket henne i flere år.",
-    "example_english": "The trauma affected her for years.",
-    "definition": "En sterk psykisk skade som oppstår etter en svært skremmende eller vond opplevelse.",
-    "level": "C1",
-    "category": "psychology-advanced",
-    "part": "noun"
-  },
-  {
-    "norsk": "en terapeut",
-    "lemma": "terapeut",
-    "english": "a therapist",
-    "example": "Terapeuten hjalp pasienten med å bearbeide opplevelsen.",
-    "example_english": "The therapist helped the patient process the experience.",
-    "definition": "En fagperson som hjelper folk med psykiske vansker eller følelsesmessige problemer gjennom samtale eller andre metoder.",
-    "level": "C1",
-    "category": "psychology-advanced",
-    "part": "noun"
-  },
-  {
-    "norsk": "kognitiv",
-    "lemma": "kognitiv",
-    "english": "cognitive",
-    "example": "Kognitiv terapi fokuserer på tankemønstre.",
-    "example_english": "Cognitive therapy focuses on thought patterns.",
-    "definition": "Det som handler om tankeprosesser som å lære, huske, forstå og løse problemer.",
-    "level": "C1",
-    "category": "psychology-advanced",
-    "part": "adjective"
-  },
-  {
-    "norsk": "en personlighet",
-    "lemma": "personlighet",
-    "english": "a personality",
-    "example": "Personlighet formes av både arv og miljø.",
-    "example_english": "Personality is shaped by both heredity and environment.",
-    "definition": "Den samlede måten en person tenker, føler og oppfører seg på, som gjør ham eller henne unik.",
-    "level": "C1",
-    "category": "psychology-advanced",
-    "part": "noun"
-  },
-  {
-    "norsk": "en mekanisme",
-    "lemma": "mekanisme",
-    "english": "a mechanism",
-    "example": "Forskerne studerer mekanismene bak læring.",
-    "example_english": "Researchers study the mechanisms behind learning.",
-    "definition": "Den måten noe virker eller fungerer på, altså prosessen bak et resultat eller en hendelse.",
-    "level": "C1",
-    "category": "psychology-advanced",
     "part": "noun"
   },
   {

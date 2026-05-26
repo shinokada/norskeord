@@ -177,6 +177,3 @@ virket: seemed
 å omtale: to refer, mention
 en frøken: miss
 enten: either
-
-
-

@@ -33,28 +33,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en protagonist",
-    "lemma": "protagonist",
-    "english": "a protagonist",
-    "example": "Protagonisten gjennomgår en dramatisk indre forvandling.",
-    "example_english": "The protagonist undergoes a dramatic inner transformation.",
-    "definition": "Hovedpersonen i en roman, film eller fortelling, som historien handler mest om.",
-    "level": "C2",
-    "category": "literary",
-    "part": "noun"
-  },
-  {
-    "norsk": "en antagonist",
-    "lemma": "antagonist",
-    "english": "an antagonist",
-    "example": "Antagonisten representerer de destruktive kreftene i samfunnet.",
-    "example_english": "The antagonist represents the destructive forces in society.",
-    "definition": "Personen eller kraften som kjemper mot hovedpersonen og skaper konflikt i historien.",
-    "level": "C2",
-    "category": "literary",
-    "part": "noun"
-  },
-  {
     "norsk": "en intertekstualitet",
     "lemma": "intertekstualitet",
     "english": "intertextuality",
@@ -141,39 +119,6 @@
     "level": "C2",
     "category": "literary",
     "part": "phrase"
-  },
-  {
-    "norsk": "et stream of consciousness",
-    "lemma": "et stream of consciousness",
-    "english": "stream of consciousness",
-    "example": "Woolf brukte stream of consciousness som narrativ teknikk.",
-    "example_english": "Woolf used stream of consciousness as a narrative technique.",
-    "definition": "En skriveteknikk der tanker og følelser flyter fritt, slik de gjør i en persons indre verden.",
-    "level": "C2",
-    "category": "literary",
-    "part": "phrase"
-  },
-  {
-    "norsk": "en dystopi",
-    "lemma": "dystopi",
-    "english": "a dystopia",
-    "example": "Orwells 1984 er en klassisk litterær dystopi.",
-    "example_english": "Orwell's 1984 is a classic literary dystopia.",
-    "definition": "En tenkt fremtidig verden der samfunnet er styrt på en brutal eller undertrykkende måte.",
-    "level": "C2",
-    "category": "literary",
-    "part": "noun"
-  },
-  {
-    "norsk": "en utopi",
-    "lemma": "utopi",
-    "english": "a utopia",
-    "example": "More beskrev en utopi som et ideelt samfunn.",
-    "example_english": "More described a utopia as an ideal society.",
-    "definition": "Et tenkt ideelt samfunn der alt er perfekt og alle mennesker lever godt.",
-    "level": "C2",
-    "category": "literary",
-    "part": "noun"
   },
   {
     "norsk": "en bildungsroman",
@@ -990,17 +935,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å ratifisere",
-    "lemma": "ratifisere",
-    "english": "to ratify",
-    "example": "Tre land gjenstår å ratifisere avtalen.",
-    "example_english": "Three countries remain to ratify the agreement.",
-    "definition": "Å godkjenne en internasjonal avtale eller traktat på offisielt statlig nivå.",
-    "level": "C2",
-    "category": "highly-formal",
-    "part": "verb"
-  },
-  {
     "norsk": "en dispensasjon",
     "lemma": "dispensasjon",
     "english": "a dispensation / an exemption",
@@ -1122,17 +1056,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en algoritme",
-    "lemma": "algoritme",
-    "english": "an algorithm",
-    "example": "Algoritmen sorterer millioner av datapunkter på sekunder.",
-    "example_english": "The algorithm sorts millions of data points in seconds.",
-    "definition": "En nøyaktig, trinn-for-trinn-oppskrift som en datamaskin følger for å løse et problem.",
-    "level": "C2",
-    "category": "technical",
-    "part": "noun"
-  },
-  {
     "norsk": "en rekursjon",
     "lemma": "rekursjon",
     "english": "recursion (computing)",
@@ -1205,17 +1128,6 @@
     "example": "Kvantesammenfiltring muliggjør øyeblikkelig korrelasjon mellom partikler.",
     "example_english": "Quantum entanglement enables instant correlation between particles.",
     "definition": "Et fenomen der to partikler er koblet sammen slik at tilstanden til den ene øyeblikkelig påvirker den andre, uansett avstand.",
-    "level": "C2",
-    "category": "technical",
-    "part": "noun"
-  },
-  {
-    "norsk": "en kryptering",
-    "lemma": "kryptering",
-    "english": "encryption",
-    "example": "Ende-til-ende-kryptering beskytter privat kommunikasjon.",
-    "example_english": "End-to-end encryption protects private communication.",
-    "definition": "En metode for å gjøre informasjon uleselig for andre, slik at bare den rette mottakeren kan lese den.",
     "level": "C2",
     "category": "technical",
     "part": "noun"
@@ -1315,17 +1227,6 @@
     "example": "Lav latens er avgjørende for sanntidsapplikasjoner.",
     "example_english": "Low latency is crucial for real-time applications.",
     "definition": "Tiden det tar for data å reise fra ett sted til et annet i et nettverk eller system. Kort tid er viktig når ting må skje umiddelbart.",
-    "level": "C2",
-    "category": "technical",
-    "part": "noun"
-  },
-  {
-    "norsk": "en skalerbarhet",
-    "lemma": "skalerbarhet",
-    "english": "scalability",
-    "example": "Systemarkitekturen er designet for høy skalerbarhet.",
-    "example_english": "The system architecture is designed for high scalability.",
-    "definition": "Hvor godt et system kan vokse og håndtere mer arbeid eller flere brukere uten å bli tregere eller slutte å fungere.",
     "level": "C2",
     "category": "technical",
     "part": "noun"
@@ -1650,17 +1551,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å anke",
-    "lemma": "anke",
-    "english": "to appeal (a verdict)",
-    "example": "Forsvareren besluttet å anke dommen.",
-    "example_english": "The defence decided to appeal the verdict.",
-    "definition": "Å be en høyere domstol om å se på en dom på nytt fordi man mener den er feil.",
-    "level": "C2",
-    "category": "advanced-law-justice",
-    "part": "verb"
-  },
-  {
     "norsk": "rettspraksis",
     "lemma": "rettspraksis",
     "english": "case law / legal precedent",
@@ -1837,28 +1727,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "sosial mobilitet",
-    "lemma": "sosial mobilitet",
-    "english": "social mobility",
-    "example": "Sosial mobilitet er lavere i samfunn med store ulikheter.",
-    "example_english": "Social mobility is lower in societies with large inequalities.",
-    "definition": "Muligheten folk har til å flytte seg til en høyere eller lavere posisjon i samfunnet enn den de ble født inn i.",
-    "level": "C2",
-    "category": "sociology-anthropology",
-    "part": "phrase"
-  },
-  {
-    "norsk": "et paradigme",
-    "lemma": "paradigme",
-    "english": "a paradigm",
-    "example": "Et paradigmeskifte kan endre forskningsfeltet totalt.",
-    "example_english": "A paradigm shift can change the research field entirely.",
-    "definition": "En grunnleggende måte å tenke på eller forstå verden innenfor et fagfelt, som de fleste er enige om.",
-    "level": "C2",
-    "category": "sociology-anthropology",
-    "part": "noun"
-  },
-  {
     "norsk": "å assimilere",
     "lemma": "assimilere",
     "english": "to assimilate",
@@ -1876,17 +1744,6 @@
     "example": "Habitus former våre preferanser og handlinger.",
     "example_english": "Habitus shapes our preferences and actions.",
     "definition": "De vanene, verdiene og måtene å oppføre seg på som en person utvikler gjennom oppvekst og miljø.",
-    "level": "C2",
-    "category": "sociology-anthropology",
-    "part": "noun"
-  },
-  {
-    "norsk": "kulturarv",
-    "lemma": "kulturarv",
-    "english": "cultural heritage",
-    "example": "Kulturarv bevares gjennom museer og tradisjoner.",
-    "example_english": "Cultural heritage is preserved through museums and traditions.",
-    "definition": "Alt det en gruppe mennesker har arvet fra tidligere generasjoner, som skikker, kunst og historiske steder.",
     "level": "C2",
     "category": "sociology-anthropology",
     "part": "noun"
@@ -1920,17 +1777,6 @@
     "example": "Selskapet økte markedsandelen i fjor.",
     "example_english": "The company increased its market share last year.",
     "definition": "Den delen av det totale salget i en bransje som ett bestemt selskap står for.",
-    "level": "C2",
-    "category": "advanced-business-strategy",
-    "part": "noun"
-  },
-  {
-    "norsk": "en portefølje",
-    "lemma": "portefølje",
-    "english": "a portfolio",
-    "example": "Porteføljen skal balanseres mellom risiko og avkastning.",
-    "example_english": "The portfolio should balance risk and return.",
-    "definition": "En samling av investeringer, for eksempel aksjer og obligasjoner, som en person eller et selskap eier.",
     "level": "C2",
     "category": "advanced-business-strategy",
     "part": "noun"
@@ -2011,17 +1857,6 @@
     "level": "C2",
     "category": "existential-abstract",
     "part": "verb"
-  },
-  {
-    "norsk": "eksistens",
-    "lemma": "eksistens",
-    "english": "existence",
-    "example": "Filosofen grublet over eksistens og mening.",
-    "example_english": "The philosopher pondered existence and meaning.",
-    "definition": "Det at noe eller noen faktisk er til, finnes og lever i verden.",
-    "level": "C2",
-    "category": "existential-abstract",
-    "part": "noun"
   },
   {
     "norsk": "en identitet",

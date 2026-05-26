@@ -200,16 +200,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å gå",
-    "lemma": "gå",
-    "english": "to walk / to go",
-    "example": "Vi går til skolen.",
-    "example_english": "We walk to school.",
-    "level": "A2",
-    "category": "transport",
-    "part": "verb"
-  },
-  {
     "norsk": "sen",
     "lemma": "sen",
     "english": "late",
@@ -740,16 +730,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en lærer",
-    "lemma": "lærer",
-    "english": "a teacher",
-    "example": "Læreren underviser norsk.",
-    "example_english": "The teacher teaches Norwegian.",
-    "level": "A2",
-    "category": "occupations",
-    "part": "noun"
-  },
-  {
     "norsk": "en ingeniør",
     "lemma": "ingeniør",
     "english": "an engineer",
@@ -878,16 +858,6 @@
     "level": "A2",
     "category": "occupations",
     "part": "noun"
-  },
-  {
-    "norsk": "å jobbe",
-    "lemma": "jobbe",
-    "english": "to work",
-    "example": "Hun jobber deltid.",
-    "example_english": "She works part-time.",
-    "level": "A2",
-    "category": "occupations",
-    "part": "verb"
   },
   {
     "norsk": "en bedrift",
@@ -1318,16 +1288,6 @@
     "level": "A2",
     "category": "health-basic",
     "part": "verb"
-  },
-  {
-    "norsk": "en time",
-    "lemma": "time",
-    "english": "an appointment",
-    "example": "Jeg har time hos legen klokka to.",
-    "example_english": "I have an appointment at the doctor's at two.",
-    "level": "A2",
-    "category": "health-basic",
-    "part": "noun"
   },
   {
     "norsk": "trøtt",
@@ -2325,16 +2285,6 @@
     "english": "soil / earth",
     "example": "Planten vokser i god jord.",
     "example_english": "The plant grows in good soil.",
-    "level": "A2",
-    "category": "nature",
-    "part": "noun"
-  },
-  {
-    "norsk": "en fugl",
-    "lemma": "fugl",
-    "english": "a bird",
-    "example": "Fuglene synger om morgenen.",
-    "example_english": "The birds sing in the morning.",
     "level": "A2",
     "category": "nature",
     "part": "noun"
@@ -3340,16 +3290,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en datamaskin",
-    "lemma": "datamaskin",
-    "english": "a computer",
-    "example": "Jeg bruker datamaskinen på jobben.",
-    "example_english": "I use the computer at work.",
-    "level": "A2",
-    "category": "technology-basic",
-    "part": "noun"
-  },
-  {
     "norsk": "en mobiltelefon",
     "lemma": "mobiltelefon",
     "english": "a mobile phone",
@@ -3395,16 +3335,6 @@
     "english": "a keyboard",
     "example": "Tastaturet er trådløst.",
     "example_english": "The keyboard is wireless.",
-    "level": "A2",
-    "category": "technology-basic",
-    "part": "noun"
-  },
-  {
-    "norsk": "en mus",
-    "lemma": "mus",
-    "english": "a mouse (computer)",
-    "example": "Jeg bruker mus til datamaskinen.",
-    "example_english": "I use a mouse for the computer.",
     "level": "A2",
     "category": "technology-basic",
     "part": "noun"
@@ -3605,16 +3535,6 @@
     "english": "clean water",
     "example": "Rent vann er viktig for helsen.",
     "example_english": "Clean water is important for health.",
-    "level": "A2",
-    "category": "environment-basic",
-    "part": "phrase"
-  },
-  {
-    "norsk": "sol og skyer",
-    "lemma": "sol og skyer",
-    "english": "sun and clouds",
-    "example": "I dag er det sol og skyer.",
-    "example_english": "Today there is sun and clouds.",
     "level": "A2",
     "category": "environment-basic",
     "part": "phrase"

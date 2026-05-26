@@ -1,104 +1,5 @@
 [
   {
-    "norsk": "et demokrati",
-    "lemma": "demokrati",
-    "english": "a democracy",
-    "example": "Norge er et demokrati med frie valg.",
-    "example_english": "Norway is a democracy with free elections.",
-    "definition": "Et system der folk velger sine ledere gjennom frie valg og har rett til å si sin mening.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en regjering",
-    "lemma": "regjering",
-    "english": "a government",
-    "example": "Regjeringen la frem et nytt statsbudsjett.",
-    "example_english": "The government presented a new state budget.",
-    "definition": "Gruppen av politikere som leder landet og tar viktige beslutninger hver dag.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "et valg",
-    "lemma": "valg",
-    "english": "an election",
-    "example": "Stortingsvalget avholdes hvert fjerde år.",
-    "example_english": "Parliamentary elections are held every four years.",
-    "definition": "En prosess der folk bestemmer hvem som skal styre landet ved å gi sin stemme.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "å stemme",
-    "lemma": "stemme",
-    "english": "to vote",
-    "example": "Alle over 18 år har rett til å stemme.",
-    "example_english": "Everyone over 18 has the right to vote.",
-    "definition": "Å velge en person eller et parti ved å si eller skrive hvem du vil ha som leder.",
-    "level": "B2",
-    "category": "politics",
-    "part": "verb"
-  },
-  {
-    "norsk": "et parti",
-    "lemma": "parti",
-    "english": "a (political) party",
-    "example": "Hvilket parti stemmer du på?",
-    "example_english": "Which party do you vote for?",
-    "definition": "En organisert gruppe mennesker med like politiske meninger som jobber sammen for å få makt.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en statsminister",
-    "lemma": "statsminister",
-    "english": "a prime minister",
-    "example": "Statsministeren holdt en pressekonferanse.",
-    "example_english": "The prime minister held a press conference.",
-    "definition": "Den øverste lederen i regjeringen, den viktigste politikeren i landet.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "Stortinget",
-    "lemma": "Stortinget",
-    "english": "the Storting (Norwegian parliament)",
-    "example": "Stortinget vedtok den nye loven.",
-    "example_english": "The Storting passed the new law.",
-    "definition": "Den høyeste politiske forsamlingen i Norge, der valgte representanter lager nye lover.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en opposisjon",
-    "lemma": "opposisjon",
-    "english": "an opposition",
-    "example": "Opposisjonen kritiserte regjeringens politikk.",
-    "example_english": "The opposition criticised the government's policy.",
-    "definition": "Partiene som ikke er i regjering, og som ofte kritiserer og utfordrer dem som styrer.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en politikk",
-    "lemma": "politikk",
-    "english": "a policy / politics",
-    "example": "Klimapolitikken er svært omdiskutert.",
-    "example_english": "Climate policy is highly controversial.",
-    "definition": "Planer og regler som en regjering eller et parti bruker for å styre og løse samfunnsproblemer.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
     "norsk": "en ideologi",
     "lemma": "ideologi",
     "english": "an ideology",
@@ -132,17 +33,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en koalisjon",
-    "lemma": "koalisjon",
-    "english": "a coalition",
-    "example": "De dannet en mindretallskoalisjon.",
-    "example_english": "They formed a minority coalition.",
-    "definition": "Et samarbeid mellom to eller flere partier som jobber sammen for å danne regjering.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
     "norsk": "å regulere",
     "lemma": "regulere",
     "english": "to regulate",
@@ -152,39 +42,6 @@
     "level": "B2",
     "category": "politics",
     "part": "verb"
-  },
-  {
-    "norsk": "en velger",
-    "lemma": "velger",
-    "english": "a voter",
-    "example": "Velgerne er skuffet over løftebruddet.",
-    "example_english": "Voters are disappointed over the broken promise.",
-    "definition": "En person som har rett til å delta i valg og gi sin stemme.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en grunnlov",
-    "lemma": "grunnlov",
-    "english": "a constitution",
-    "example": "Grunnloven av 1814 er Norges øverste lov.",
-    "example_english": "The Constitution of 1814 is Norway's supreme law.",
-    "definition": "Den viktigste og høyeste loven i et land, som bestemmer hvilke rettigheter folk har.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en minister",
-    "lemma": "minister",
-    "english": "a minister",
-    "example": "Utenriksministeren møtte sin russiske kollega.",
-    "example_english": "The foreign minister met his Russian counterpart.",
-    "definition": "En politiker som har ansvar for et bestemt område i regjeringen, for eksempel helse eller skole.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
   },
   {
     "norsk": "et veto",
@@ -207,28 +64,6 @@
     "level": "B2",
     "category": "politics",
     "part": "adjective"
-  },
-  {
-    "norsk": "en sanksjon",
-    "lemma": "sanksjon",
-    "english": "a sanction",
-    "example": "EU innførte sanksjoner mot landet.",
-    "example_english": "The EU imposed sanctions against the country.",
-    "definition": "En straff, for eksempel forbud mot handel, som land bruker mot et annet land som har gjort noe galt.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en reform",
-    "lemma": "reform",
-    "english": "a reform",
-    "example": "Pensjonsreformen var kontroversiell.",
-    "example_english": "The pension reform was controversial.",
-    "definition": "En stor endring i hvordan noe fungerer, vanligvis gjort av myndighetene for å gjøre det bedre.",
-    "level": "B2",
-    "category": "politics",
-    "part": "noun"
   },
   {
     "norsk": "en statsborger",
@@ -286,56 +121,12 @@
     "part": "noun"
   },
   {
-    "norsk": "inflasjon",
-    "lemma": "inflasjon",
-    "english": "inflation",
-    "example": "Inflasjonen har steget det siste året.",
-    "example_english": "Inflation has risen over the past year.",
-    "definition": "Når prisene på varer og tjenester stiger over tid, slik at pengene kjøper mindre.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en rente",
-    "lemma": "rente",
-    "english": "an interest rate",
-    "example": "Norges Bank satte opp renten.",
-    "example_english": "Norges Bank raised the interest rate.",
-    "definition": "Ekstra penger man betaler for å låne penger, eller mottar for å spare dem i banken.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "et budsjett",
-    "lemma": "budsjett",
-    "english": "a budget",
-    "example": "Regjeringen la frem statsbudsjettet.",
-    "example_english": "The government presented the state budget.",
-    "definition": "En plan som viser hvor mye penger man har, og hvordan man vil bruke dem.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
     "norsk": "et bruttonasjonalprodukt",
     "lemma": "bruttonasjonalprodukt",
     "english": "gross domestic product (GDP)",
     "example": "BNP vokste med to prosent.",
     "example_english": "GDP grew by two percent.",
     "definition": "Den totale verdien av alle varer og tjenester et land produserer i løpet av ett år.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en skatt",
-    "lemma": "skatt",
-    "english": "a tax",
-    "example": "Norge har høye skatter og gode velferdstjenester.",
-    "example_english": "Norway has high taxes and good welfare services.",
-    "definition": "Penger som innbyggere og bedrifter må betale til staten, som bruker dem på fellesskapet.",
     "level": "B2",
     "category": "economics",
     "part": "noun"
@@ -391,28 +182,6 @@
     "example": "Landet er inne i en dyp resessjon.",
     "example_english": "The country is in a deep recession.",
     "definition": "En periode der økonomien i et land går dårlig og mange mister jobben sin.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "velferdsstaten",
-    "lemma": "velferdsstaten",
-    "english": "the welfare state",
-    "example": "Velferdsstaten sikrer borgernes grunnleggende behov.",
-    "example_english": "The welfare state secures citizens' basic needs.",
-    "definition": "Et system der staten sørger for at alle innbyggere får hjelp til helse, utdanning og andre grunnleggende behov.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
-    "norsk": "en gjeld",
-    "lemma": "gjeld",
-    "english": "debt",
-    "example": "Statens gjeld er under kontroll.",
-    "example_english": "The state's debt is under control.",
-    "definition": "Penger man skylder til noen fordi man har lånt dem og ikke betalt dem tilbake ennå.",
     "level": "B2",
     "category": "economics",
     "part": "noun"
@@ -484,17 +253,6 @@
     "part": "verb"
   },
   {
-    "norsk": "en konkurranse",
-    "lemma": "konkurranse",
-    "english": "competition",
-    "example": "Hard konkurranse presser prisene ned.",
-    "example_english": "Hard competition pushes prices down.",
-    "definition": "En situasjon der to eller flere prøver å gjøre det bedre enn hverandre, for eksempel om kunder eller priser.",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
     "norsk": "en sentralbank",
     "lemma": "sentralbank",
     "english": "a central bank",
@@ -539,67 +297,12 @@
     "part": "noun"
   },
   {
-    "norsk": "diskriminering",
-    "lemma": "diskriminering",
-    "english": "discrimination",
-    "example": "Diskriminering på grunn av kjønn er ulovlig.",
-    "example_english": "Discrimination on the basis of gender is illegal.",
-    "definition": "Når noen behandles dårligere enn andre på grunn av for eksempel kjønn, hudfarge eller religion.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "noun"
-  },
-  {
-    "norsk": "integrering",
-    "lemma": "integrering",
-    "english": "integration",
-    "example": "Integrering av flyktninger tar tid.",
-    "example_english": "Integration of refugees takes time.",
-    "definition": "Prosessen der folk med ulik bakgrunn blir en del av det samme samfunnet og deltar i det.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "noun"
-  },
-  {
-    "norsk": "en flyktning",
-    "lemma": "flyktning",
-    "english": "a refugee",
-    "example": "Mange flyktninger søker asyl i Europa.",
-    "example_english": "Many refugees seek asylum in Europe.",
-    "definition": "En person som har flyktet fra sitt hjemland på grunn av krig, fare eller forfølgelse.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "noun"
-  },
-  {
     "norsk": "fattigdom",
     "lemma": "fattigdom",
     "english": "poverty",
     "example": "Barnefattigdom er et alvorlig samfunnsproblem.",
     "example_english": "Child poverty is a serious social problem.",
     "definition": "En situasjon der folk ikke har nok penger til å dekke grunnleggende behov som mat og bolig.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "noun"
-  },
-  {
-    "norsk": "en rettighet",
-    "lemma": "rettighet",
-    "english": "a right",
-    "example": "Alle har rett til gratis utdanning.",
-    "example_english": "Everyone has the right to free education.",
-    "definition": "Noe en person har lov til eller krav på, som er beskyttet av loven eller samfunnet.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "noun"
-  },
-  {
-    "norsk": "likestilling",
-    "lemma": "likestilling",
-    "english": "gender equality",
-    "example": "Norge er ledende innen likestilling.",
-    "example_english": "Norway is a leader in gender equality.",
-    "definition": "Når kvinner og menn har de samme mulighetene, rettighetene og behandlingen i samfunnet.",
     "level": "B2",
     "category": "social-issues",
     "part": "noun"
@@ -680,17 +383,6 @@
     "level": "B2",
     "category": "social-issues",
     "part": "noun"
-  },
-  {
-    "norsk": "psykisk helse",
-    "lemma": "psykisk helse",
-    "english": "mental health",
-    "example": "Psykisk helse bør tas like alvorlig som fysisk.",
-    "example_english": "Mental health should be taken as seriously as physical health.",
-    "definition": "Hvordan vi har det inne i oss — om vi føler oss trygge, glade eller sliter med tanker og følelser.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "phrase"
   },
   {
     "norsk": "rusmisbruk",
@@ -803,28 +495,6 @@
     "part": "noun"
   },
   {
-    "norsk": "et kunstverk",
-    "lemma": "kunstverk",
-    "english": "a work of art",
-    "example": "Kunstverk speiler samfunnet de er skapt i.",
-    "example_english": "Works of art reflect the society in which they are created.",
-    "definition": "Noe som en kunstner har laget, for eksempel et maleri, en skulptur eller et bilde.",
-    "level": "B2",
-    "category": "arts",
-    "part": "noun"
-  },
-  {
-    "norsk": "abstrakt",
-    "lemma": "abstrakt",
-    "english": "abstract",
-    "example": "Abstrakt kunst er åpen for tolkning.",
-    "example_english": "Abstract art is open to interpretation.",
-    "definition": "Noe som ikke viser virkelige ting direkte, men bruker former og farger for å uttrykke ideer eller følelser.",
-    "level": "B2",
-    "category": "arts",
-    "part": "adjective"
-  },
-  {
     "norsk": "en komposisjon",
     "lemma": "komposisjon",
     "english": "a composition",
@@ -900,17 +570,6 @@
     "level": "B2",
     "category": "arts",
     "part": "noun"
-  },
-  {
-    "norsk": "å tolke",
-    "lemma": "tolke",
-    "english": "to interpret",
-    "example": "Det er vanskelig å tolke dette diktet.",
-    "example_english": "It is difficult to interpret this poem.",
-    "definition": "Å prøve å forstå og forklare hva noe betyr, for eksempel et kunstverk eller en tekst.",
-    "level": "B2",
-    "category": "arts",
-    "part": "verb"
   },
   {
     "norsk": "en avantgarde",
@@ -1078,39 +737,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "et eksperiment",
-    "lemma": "eksperiment",
-    "english": "an experiment",
-    "example": "Eksperimentet ga overraskende resultater.",
-    "example_english": "The experiment produced surprising results.",
-    "definition": "En test eller prøve man gjør for å finne ut om noe er sant eller hvordan noe fungerer.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
-    "norsk": "en hypotese",
-    "lemma": "hypotese",
-    "english": "a hypothesis",
-    "example": "Forskerne testet hypotesen over to år.",
-    "example_english": "The researchers tested the hypothesis over two years.",
-    "definition": "En idé eller forklaring man tror kan være riktig, men som man ennå ikke har bevist.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
-    "norsk": "et funn",
-    "lemma": "funn",
-    "english": "a finding / a discovery",
-    "example": "Funnene ble publisert i et fagfellevurdert tidsskrift.",
-    "example_english": "The findings were published in a peer-reviewed journal.",
-    "definition": "Noe man har oppdaget eller lært gjennom undersøkelse eller forskning.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
     "norsk": "å forske på",
     "lemma": "å forske på",
     "english": "to research / to investigate",
@@ -1120,28 +746,6 @@
     "level": "B2",
     "category": "science",
     "part": "phrase"
-  },
-  {
-    "norsk": "en forsker",
-    "lemma": "forsker",
-    "english": "a researcher / a scientist",
-    "example": "Forskeren presenterte resultatene på konferansen.",
-    "example_english": "The researcher presented the results at the conference.",
-    "definition": "En person som jobber med å finne ny kunnskap gjennom studier og eksperimenter.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
-    "norsk": "en teori",
-    "lemma": "teori",
-    "english": "a theory",
-    "example": "Evolusjonsteori er godt vitenskapelig fundert.",
-    "example_english": "Evolutionary theory is well scientifically founded.",
-    "definition": "En grundig forklaring på noe, basert på mange bevis og mye kunnskap.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
   },
   {
     "norsk": "genetikk",
@@ -1166,17 +770,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en modell",
-    "lemma": "modell",
-    "english": "a model",
-    "example": "Klimamodeller forutsier fremtidige temperaturer.",
-    "example_english": "Climate models predict future temperatures.",
-    "definition": "En forenklet beskrivelse av noe virkelig, brukt til å forstå eller forutsi hvordan det fungerer.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
     "norsk": "å analysere",
     "lemma": "analysere",
     "english": "to analyse",
@@ -1194,17 +787,6 @@
     "example": "Forskerne kontrollerte for alle variabler.",
     "example_english": "The researchers controlled for all variables.",
     "definition": "En faktor i en undersøkelse som kan endre seg og som kan påvirke resultatet.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
-    "norsk": "et laboratorium",
-    "lemma": "laboratorium",
-    "english": "a laboratory",
-    "example": "Prøvene ble analysert i laboratoriet.",
-    "example_english": "The samples were analysed in the laboratory.",
-    "definition": "Et spesielt rom med utstyr der forskere utfører tester og eksperimenter.",
     "level": "B2",
     "category": "science",
     "part": "noun"
@@ -1249,28 +831,6 @@
     "example": "Alle artikler gjennomgår peer review.",
     "example_english": "All articles undergo peer review.",
     "definition": "En prosess der andre eksperter leser og vurderer en forskers arbeid før det publiseres.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
-    "norsk": "fysikk",
-    "lemma": "fysikk",
-    "english": "physics",
-    "example": "Fysikk beskriver naturens grunnleggende lover.",
-    "example_english": "Physics describes the fundamental laws of nature.",
-    "definition": "Vitenskapen som studerer naturen, for eksempel bevegelse, energi, lys og krefter.",
-    "level": "B2",
-    "category": "science",
-    "part": "noun"
-  },
-  {
-    "norsk": "kjemi",
-    "lemma": "kjemi",
-    "english": "chemistry",
-    "example": "Kjemi er viktig for å forstå materialer.",
-    "example_english": "Chemistry is important for understanding materials.",
-    "definition": "Vitenskapen om stoffer, hva de er laget av, og hvordan de reagerer med hverandre.",
     "level": "B2",
     "category": "science",
     "part": "noun"
@@ -1562,17 +1122,6 @@
     "part": "noun"
   },
   {
-    "norsk": "selvtillit",
-    "lemma": "selvtillit",
-    "english": "self-confidence / self-esteem",
-    "example": "Suksess bygger selvtillit.",
-    "example_english": "Success builds self-confidence.",
-    "definition": "Troen på at man er god nok og klarer ting på egenhånd.",
-    "level": "B2",
-    "category": "emotions",
-    "part": "noun"
-  },
-  {
     "norsk": "frustrasjon",
     "lemma": "frustrasjon",
     "english": "frustration",
@@ -1604,17 +1153,6 @@
     "level": "B2",
     "category": "emotions",
     "part": "verb"
-  },
-  {
-    "norsk": "takknemlighet",
-    "lemma": "takknemlighet",
-    "english": "gratitude",
-    "example": "Han uttrykte stor takknemlighet for hjelpen.",
-    "example_english": "He expressed great gratitude for the help.",
-    "definition": "Den varme følelsen man har når man er glad og setter pris på hjelp eller noe godt man har fått.",
-    "level": "B2",
-    "category": "emotions",
-    "part": "noun"
   },
   {
     "norsk": "håpløshet",
@@ -2112,17 +1650,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "en kilde",
-    "lemma": "kilde",
-    "english": "a (historical) source",
-    "example": "Sagalitteraturen er en viktig kilde til vikingtiden.",
-    "example_english": "Saga literature is an important source for the Viking Age.",
-    "definition": "Et dokument, objekt eller tekst som gir informasjon om fortiden.",
-    "level": "B2",
-    "category": "history",
-    "part": "noun"
-  },
-  {
     "norsk": "reformasjonen",
     "lemma": "reformasjonen",
     "english": "the Reformation",
@@ -2195,17 +1722,6 @@
     "example": "Dommeren leste opp dommen.",
     "example_english": "The judge read out the verdict.",
     "definition": "En person med myndighet til å bestemme resultatet av en rettssak.",
-    "level": "B2",
-    "category": "law",
-    "part": "noun"
-  },
-  {
-    "norsk": "en advokat",
-    "lemma": "advokat",
-    "english": "a lawyer / an attorney",
-    "example": "Advokaten forsvarte klienten sin.",
-    "example_english": "The lawyer defended their client.",
-    "definition": "En person med juridisk utdanning som hjelper folk med lovlige spørsmål eller forsvarer dem i retten.",
     "level": "B2",
     "category": "law",
     "part": "noun"
@@ -2310,17 +1826,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en kontrakt",
-    "lemma": "kontrakt",
-    "english": "a contract",
-    "example": "Les kontrakten nøye før du skriver under.",
-    "example_english": "Read the contract carefully before you sign.",
-    "definition": "Et skriftlig dokument der to eller flere parter lover hverandre noe som er bindende.",
-    "level": "B2",
-    "category": "law",
-    "part": "noun"
-  },
-  {
     "norsk": "juridisk",
     "lemma": "juridisk",
     "english": "legal / juridical",
@@ -2330,17 +1835,6 @@
     "level": "B2",
     "category": "law",
     "part": "adjective"
-  },
-  {
-    "norsk": "menneskerettigheter",
-    "lemma": "menneskerettigheter",
-    "english": "human rights",
-    "example": "FN beskytter menneskerettighetene globalt.",
-    "example_english": "The UN protects human rights globally.",
-    "definition": "Grunnleggende rettigheter som alle mennesker har, uansett hvem de er eller hvor de bor.",
-    "level": "B2",
-    "category": "law",
-    "part": "noun"
   },
   {
     "norsk": "en anklagelse",
@@ -2706,17 +2200,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "en sjanger",
-    "lemma": "sjanger",
-    "english": "a genre",
-    "example": "Hvilken sjanger liker du best?",
-    "example_english": "Which genre do you like best?",
-    "definition": "En bestemt type eller kategori av bøker, filmer eller musikk med felles trekk, for eksempel krim eller eventyr.",
-    "level": "B2",
-    "category": "literature",
-    "part": "noun"
-  },
-  {
     "norsk": "en kanon",
     "lemma": "kanon",
     "english": "a (literary) canon",
@@ -2726,17 +2209,6 @@
     "level": "B2",
     "category": "literature",
     "part": "noun"
-  },
-  {
-    "norsk": "tvetydig",
-    "lemma": "tvetydig",
-    "english": "ambiguous",
-    "example": "Budskapet i talen var tvetydig.",
-    "example_english": "The message in the speech was ambiguous.",
-    "definition": "Noe som kan forstås på to eller flere ulike måter, slik at man ikke er sikker på hva som menes.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
   },
   {
     "norsk": "paradoksal",
@@ -3003,17 +2475,6 @@
     "part": "adjective"
   },
   {
-    "norsk": "et argument",
-    "lemma": "argument",
-    "english": "an argument",
-    "example": "Han la frem et overbevisende argument.",
-    "example_english": "He presented a convincing argument.",
-    "definition": "En grunn eller forklaring man gir for å overbevise andre om at noe er sant eller riktig.",
-    "level": "B2",
-    "category": "philosophy",
-    "part": "noun"
-  },
-  {
     "norsk": "en verdi",
     "lemma": "verdi",
     "english": "a value",
@@ -3157,17 +2618,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å motsi",
-    "lemma": "motsi",
-    "english": "to contradict",
-    "example": "Handlingene hans motsier ordene hans.",
-    "example_english": "His actions contradict his words.",
-    "definition": "Å si eller vise at noe ikke stemmer med det som ble sagt eller gjort før.",
-    "level": "B2",
-    "category": "philosophy",
-    "part": "verb"
-  },
-  {
     "norsk": "subjektiv",
     "lemma": "subjektiv",
     "english": "subjective",
@@ -3223,17 +2673,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en ideologi",
-    "lemma": "ideologi",
-    "english": "an ideology",
-    "example": "Ideologien påvirker hvordan vi ser på verden.",
-    "example_english": "Ideology influences how we view the world.",
-    "definition": "Et sett med sterke ideer og verdier om hvordan samfunnet bør fungere.",
-    "level": "B2",
-    "category": "philosophy",
-    "part": "noun"
-  },
-  {
     "norsk": "abstrakt tenkning",
     "lemma": "abstrakt tenkning",
     "english": "abstract thinking",
@@ -3254,50 +2693,6 @@
     "level": "B2",
     "category": "philosophy",
     "part": "noun"
-  },
-  {
-    "norsk": "en diagnose",
-    "lemma": "diagnose",
-    "english": "a diagnosis",
-    "example": "Legen stilte en diagnose etter grundig undersøkelse.",
-    "example_english": "The doctor made a diagnosis after a thorough examination.",
-    "definition": "Når en lege finner ut hvilken sykdom en person har, etter å ha undersøkt dem.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "en behandling",
-    "lemma": "behandling",
-    "english": "a treatment",
-    "example": "Behandlingen varte i seks måneder.",
-    "example_english": "The treatment lasted six months.",
-    "definition": "Det en lege eller sykepleier gjør for å hjelpe en syk person å bli frisk.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "forebygging",
-    "lemma": "forebygging",
-    "english": "prevention",
-    "example": "Forebygging er bedre enn behandling.",
-    "example_english": "Prevention is better than treatment.",
-    "definition": "Det å gjøre noe på forhånd for å unngå at sykdom eller problemer oppstår.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "kronisk",
-    "lemma": "kronisk",
-    "english": "chronic",
-    "example": "Hun lever med kroniske ryggsmerter.",
-    "example_english": "She lives with chronic back pain.",
-    "definition": "Om en sykdom som varer lenge eller hele livet, og ikke forsvinner av seg selv.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "adjective"
   },
   {
     "norsk": "folkehelse",
@@ -3322,122 +2717,12 @@
     "part": "noun"
   },
   {
-    "norsk": "et symptom",
-    "lemma": "symptom",
-    "english": "a symptom",
-    "example": "Feber er et vanlig symptom på infeksjon.",
-    "example_english": "Fever is a common symptom of infection.",
-    "definition": "Et tegn på at noe er galt med kroppen, for eksempel feber eller vondt i hodet.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "en resept",
-    "lemma": "resept",
-    "english": "a prescription",
-    "example": "Du trenger resept for å kjøpe den medisinen.",
-    "example_english": "You need a prescription to buy that medicine.",
-    "definition": "Et offisielt papir eller digital beskjed fra legen som lar deg kjøpe sterk medisin på apoteket.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "en allergi",
-    "lemma": "allergi",
-    "english": "an allergy",
-    "example": "Hun har allergi mot nøtter.",
-    "example_english": "She has an allergy to nuts.",
-    "definition": "Når kroppen reagerer dårlig på noe vanlig, som mat, dyr eller pollen, og du blir syk av det.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "å undersøke",
-    "lemma": "undersøke",
-    "english": "to examine / to investigate",
-    "example": "Legen undersøkte pasienten grundig.",
-    "example_english": "The doctor examined the patient thoroughly.",
-    "definition": "Å se nøye på noe eller noen for å finne ut mer, for eksempel hva som er galt med kroppen.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "verb"
-  },
-  {
-    "norsk": "en bivirkning",
-    "lemma": "bivirkning",
-    "english": "a side effect",
-    "example": "Medisinen kan ha bivirkninger.",
-    "example_english": "The medicine can have side effects.",
-    "definition": "En uønsket effekt som medisin kan gi i tillegg til den ønskede hjelpen.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "en vaksine",
-    "lemma": "vaksine",
-    "english": "a vaccine",
-    "example": "Vaksinen beskytter mot influensa.",
-    "example_english": "The vaccine protects against influenza.",
-    "definition": "En sprøyte eller drikke som gjør at kroppen lærer å bekjempe en bestemt sykdom.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
     "norsk": "immunsystemet",
     "lemma": "immunsystemet",
     "english": "the immune system",
     "example": "Et sterkt immunsystem bekjemper infeksjoner.",
     "example_english": "A strong immune system fights infections.",
     "definition": "Den delen av kroppen som jobber med å beskytte deg mot sykdommer og skadelige bakterier.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "en operasjon",
-    "lemma": "operasjon",
-    "english": "an operation / surgery",
-    "example": "Operasjonen var vellykket.",
-    "example_english": "The operation was successful.",
-    "definition": "Når en lege åpner kroppen for å reparere eller fjerne noe som er sykt eller skadet.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "smittsom",
-    "lemma": "smittsom",
-    "english": "contagious / infectious",
-    "example": "Sykdommen er svært smittsom.",
-    "example_english": "The disease is highly contagious.",
-    "definition": "Om en sykdom som lett kan gå fra én person til en annen, for eksempel gjennom luft eller berøring.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "adjective"
-  },
-  {
-    "norsk": "en epidemi",
-    "lemma": "epidemi",
-    "english": "an epidemic",
-    "example": "En epidemi av influensa spredte seg raskt.",
-    "example_english": "An epidemic of influenza spread quickly.",
-    "definition": "Når mange mennesker på samme sted blir syke av samme sykdom på kort tid.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "rehabilitering",
-    "lemma": "rehabilitering",
-    "english": "rehabilitation",
-    "example": "Rehabilitering etter hjerneslag tar tid.",
-    "example_english": "Rehabilitation after a stroke takes time.",
-    "definition": "Trening og hjelp etter sykdom eller skade for å få tilbake normale funksjoner i kroppen.",
     "level": "B2",
     "category": "medicine",
     "part": "noun"
@@ -3542,17 +2827,6 @@
     "part": "verb"
   },
   {
-    "norsk": "en terapeut",
-    "lemma": "terapeut",
-    "english": "a therapist",
-    "example": "Han gikk til terapeut for å få hjelp.",
-    "example_english": "He went to a therapist to get help.",
-    "definition": "En person med faglig utdanning som hjelper andre med psykiske eller følelsesmessige problemer.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "noun"
-  },
-  {
     "norsk": "kognitiv",
     "lemma": "kognitiv",
     "english": "cognitive",
@@ -3570,39 +2844,6 @@
     "example": "Atferden endret seg etter behandlingen.",
     "example_english": "The behaviour changed after the treatment.",
     "definition": "Måten en person eller et dyr oppfører seg og handler på i ulike situasjoner.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "noun"
-  },
-  {
-    "norsk": "en reaksjon",
-    "lemma": "reaksjon",
-    "english": "a reaction / a response",
-    "example": "Reaksjonen på nyheten var sterk.",
-    "example_english": "The reaction to the news was strong.",
-    "definition": "Det man gjør eller føler som svar på noe som skjer eller noe man hører.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "noun"
-  },
-  {
-    "norsk": "angst",
-    "lemma": "angst",
-    "english": "anxiety",
-    "example": "Angst kan hindre mennesker i å fungere normalt.",
-    "example_english": "Anxiety can prevent people from functioning normally.",
-    "definition": "En sterk følelse av frykt eller uro, ofte uten en tydelig grunn, som kan være vanskelig å kontrollere.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "noun"
-  },
-  {
-    "norsk": "depresjon",
-    "lemma": "depresjon",
-    "english": "depression",
-    "example": "Depresjon er en av de vanligste psykiske lidelsene.",
-    "example_english": "Depression is one of the most common mental disorders.",
-    "definition": "En alvorlig psykisk tilstand der man føler seg veldig trist, tom og uten energi over lang tid.",
     "level": "B2",
     "category": "psychology",
     "part": "noun"
@@ -3680,28 +2921,6 @@
     "example": "Det er en projeksjon å tillegge andre dine egne følelser.",
     "example_english": "It is a projection to attribute your own feelings to others.",
     "definition": "Når man tror at andre har de samme følelsene eller tankene som man selv har, uten at det er sant.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "noun"
-  },
-  {
-    "norsk": "stress",
-    "lemma": "stress",
-    "english": "stress",
-    "example": "Langvarig stress kan føre til utbrenthet.",
-    "example_english": "Prolonged stress can lead to burnout.",
-    "definition": "En følelse av press eller uro fordi man har for mye å gjøre eller er bekymret for noe.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "noun"
-  },
-  {
-    "norsk": "empati",
-    "lemma": "empati",
-    "english": "empathy",
-    "example": "Empati er evnen til å sette seg inn i andres situasjon.",
-    "example_english": "Empathy is the ability to put yourself in others' shoes.",
-    "definition": "Evnen til å forstå og dele følelsene til en annen person, og se verden fra deres side.",
     "level": "B2",
     "category": "psychology",
     "part": "noun"
@@ -3806,28 +3025,6 @@
     "part": "verb"
   },
   {
-    "norsk": "en bedrift",
-    "lemma": "bedrift",
-    "english": "a company / a business",
-    "example": "Bedriften ble grunnlagt i 1995.",
-    "example_english": "The company was founded in 1995.",
-    "definition": "En organisasjon eller et firma som selger varer eller tjenester for å tjene penger.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
-    "norsk": "et møte",
-    "lemma": "møte",
-    "english": "a meeting",
-    "example": "Vi har styremøte på fredag.",
-    "example_english": "We have a board meeting on Friday.",
-    "definition": "Når to eller flere personer samles for å snakke om noe bestemt eller ta beslutninger.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
     "norsk": "en leder",
     "lemma": "leder",
     "english": "a manager / a leader",
@@ -3839,67 +3036,12 @@
     "part": "noun"
   },
   {
-    "norsk": "et prosjekt",
-    "lemma": "prosjekt",
-    "english": "a project",
-    "example": "Prosjektet ble levert i tide.",
-    "example_english": "The project was delivered on time.",
-    "definition": "En planlagt oppgave med et klart mål som man jobber med over en bestemt periode.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
-    "norsk": "en avtale",
-    "lemma": "avtale",
-    "english": "a deal / an agreement",
-    "example": "De inngikk en avtale med en ny leverandør.",
-    "example_english": "They made a deal with a new supplier.",
-    "definition": "En enighet mellom to eller flere parter om hva de skal gjøre eller levere.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
-    "norsk": "et marked",
-    "lemma": "marked",
-    "english": "a market",
-    "example": "Selskapet ekspanderer til det asiatiske markedet.",
-    "example_english": "The company is expanding into the Asian market.",
-    "definition": "Stedet eller systemet der varer og tjenester blir kjøpt og solgt mellom bedrifter og kunder.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
     "norsk": "en omsetning",
     "lemma": "omsetning",
     "english": "revenue / turnover",
     "example": "Omsetningen økte med 20 prosent i fjor.",
     "example_english": "Revenue increased by 20 percent last year.",
     "definition": "Det totale beløpet med penger en bedrift tjener ved å selge varer eller tjenester.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
-    "norsk": "et overskudd",
-    "lemma": "overskudd",
-    "english": "a profit / a surplus",
-    "example": "Selskapet gikk med overskudd for første gang.",
-    "example_english": "The company made a profit for the first time.",
-    "definition": "Pengene som er igjen etter at en bedrift har betalt alle sine utgifter.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
-    "norsk": "et underskudd",
-    "lemma": "underskudd",
-    "english": "a deficit / a loss",
-    "example": "Kvartalet endte med underskudd.",
-    "example_english": "The quarter ended with a deficit.",
-    "definition": "Når man bruker mer penger enn man tjener, og resultatet er negativt.",
     "level": "B2",
     "category": "business",
     "part": "noun"
@@ -3977,17 +3119,6 @@
     "example": "Vi overvåker konkurrentenes priser.",
     "example_english": "We monitor competitors' prices.",
     "definition": "Et annet firma som selger de samme produktene og prøver å vinne de samme kundene.",
-    "level": "B2",
-    "category": "business",
-    "part": "noun"
-  },
-  {
-    "norsk": "bærekraft",
-    "lemma": "bærekraft",
-    "english": "sustainability",
-    "example": "Bærekraft er høyt på agendaen for moderne bedrifter.",
-    "example_english": "Sustainability is high on the agenda for modern companies.",
-    "definition": "Ideen om å bruke ressurser på en måte som ikke ødelegger naturen for fremtidige generasjoner.",
     "level": "B2",
     "category": "business",
     "part": "noun"
@@ -4079,17 +3210,6 @@
     "level": "B2",
     "category": "religion",
     "part": "verb"
-  },
-  {
-    "norsk": "en kirke",
-    "lemma": "kirke",
-    "english": "a church",
-    "example": "Den norske kirke er en luthersk kirke.",
-    "example_english": "The Church of Norway is a Lutheran church.",
-    "definition": "Et bygg der kristne mennesker samles for å be og feire gudstjeneste.",
-    "level": "B2",
-    "category": "religion",
-    "part": "noun"
   },
   {
     "norsk": "en moske",
@@ -4312,39 +3432,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "klimaendringer",
-    "lemma": "klimaendringer",
-    "english": "climate change",
-    "example": "Klimaendringer påvirker hele planeten.",
-    "example_english": "Climate change affects the entire planet.",
-    "definition": "Store, langsiktige forandringer i jordens vær og temperatur, ofte på grunn av menneskelig aktivitet.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
-    "norsk": "forurensning",
-    "lemma": "forurensning",
-    "english": "pollution",
-    "example": "Luftforurensning er skadelig for helsen.",
-    "example_english": "Air pollution is harmful to health.",
-    "definition": "Skadelige stoffer i luft, vann eller jord som gjør miljøet farlig for mennesker og dyr.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
-    "norsk": "biologisk mangfold",
-    "lemma": "biologisk mangfold",
-    "english": "biodiversity",
-    "example": "Biologisk mangfold er truet globalt.",
-    "example_english": "Biodiversity is threatened globally.",
-    "definition": "Det store antallet av ulike planter, dyr og andre levende organismer som finnes på jorden.",
-    "level": "B2",
-    "category": "environment",
-    "part": "phrase"
-  },
-  {
     "norsk": "en utslipp",
     "lemma": "utslipp",
     "english": "an emission",
@@ -4354,17 +3441,6 @@
     "level": "B2",
     "category": "environment",
     "part": "noun"
-  },
-  {
-    "norsk": "fornybar energi",
-    "lemma": "fornybar energi",
-    "english": "renewable energy",
-    "example": "Norge er en stor produsent av fornybar energi.",
-    "example_english": "Norway is a large producer of renewable energy.",
-    "definition": "Energi fra naturlige kilder som solen, vinden eller vann, som ikke tar slutt og ikke forurenser.",
-    "level": "B2",
-    "category": "environment",
-    "part": "phrase"
   },
   {
     "norsk": "en drivhuseffekt",
@@ -4444,45 +3520,12 @@
     "part": "noun"
   },
   {
-    "norsk": "gjenvinning",
-    "lemma": "gjenvinning",
-    "english": "recycling",
-    "example": "Gjenvinning er viktig for å spare ressurser.",
-    "example_english": "Recycling is important for saving resources.",
-    "definition": "Å samle inn brukte materialer som papir, glass og plast for å lage nye produkter av dem.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
     "norsk": "en vindturbin",
     "lemma": "vindturbin",
     "english": "a wind turbine",
     "example": "Vindturbiner produserer fornybar elektrisitet.",
     "example_english": "Wind turbines produce renewable electricity.",
     "definition": "En stor maskin med lange armer som snurrer i vinden og lager elektrisitet av vindkraft.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
-    "norsk": "solenergi",
-    "lemma": "solenergi",
-    "english": "solar energy",
-    "example": "Solenergi er den raskest voksende energikilden.",
-    "example_english": "Solar energy is the fastest-growing energy source.",
-    "definition": "Kraft og varme som kommer direkte fra sollyset, og som kan brukes til å lage elektrisitet.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
-    "norsk": "en naturkatastrofe",
-    "lemma": "naturkatastrofe",
-    "english": "a natural disaster",
-    "example": "Naturkatastrofer øker i frekvens på grunn av klimaendringer.",
-    "example_english": "Natural disasters are increasing in frequency due to climate change.",
-    "definition": "En stor og farlig hendelse i naturen, som flom, jordskjelv eller storm, som skader mange mennesker.",
     "level": "B2",
     "category": "environment",
     "part": "noun"
@@ -4499,17 +3542,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "et naturreservat",
-    "lemma": "naturreservat",
-    "english": "a nature reserve",
-    "example": "Naturreservatet beskytter sjeldent dyreliv.",
-    "example_english": "The nature reserve protects rare wildlife.",
-    "definition": "Et område der naturen er beskyttet av loven, slik at planter og dyr kan leve i fred.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
     "norsk": "en karbonnøytral",
     "lemma": "karbonnøytral",
     "english": "carbon neutral",
@@ -4519,17 +3551,6 @@
     "level": "B2",
     "category": "environment",
     "part": "adjective"
-  },
-  {
-    "norsk": "fossilt brensel",
-    "lemma": "fossilt brensel",
-    "english": "fossil fuel",
-    "example": "Fossilt brensel er den viktigste årsaken til klimaendringer.",
-    "example_english": "Fossil fuels are the main cause of climate change.",
-    "definition": "Gamle naturmaterialer som kull, olje og gass som brennes for energi, men som forurenser mye.",
-    "level": "B2",
-    "category": "environment",
-    "part": "phrase"
   },
   {
     "norsk": "en el-bil",
@@ -4593,17 +3614,6 @@
     "example": "En sirkulær økonomi minimerer avfall.",
     "example_english": "A circular economy minimises waste.",
     "definition": "Et system der man bruker ting om igjen og lager minst mulig søppel og avfall.",
-    "level": "B2",
-    "category": "environment",
-    "part": "phrase"
-  },
-  {
-    "norsk": "global oppvarming",
-    "lemma": "global oppvarming",
-    "english": "global warming",
-    "example": "Global oppvarming truer livet på jorda.",
-    "example_english": "Global warming threatens life on earth.",
-    "definition": "At temperaturen på jorden stiger fordi vi slipper ut for mye skadelige gasser i luften.",
     "level": "B2",
     "category": "environment",
     "part": "phrase"
@@ -4708,17 +3718,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en avskoging",
-    "lemma": "avskoging",
-    "english": "deforestation",
-    "example": "Avskoging bidrar til klimaendringer.",
-    "example_english": "Deforestation contributes to climate change.",
-    "definition": "Når store skogområder blir hugget ned eller fjernet, ofte for å bruke landet til noe annet.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
     "norsk": "et karbonbudsjett",
     "lemma": "karbonbudsjett",
     "english": "a carbon budget",
@@ -4741,28 +3740,6 @@
     "part": "noun"
   },
   {
-    "norsk": "et klimamål",
-    "lemma": "klimamål",
-    "english": "a climate target",
-    "example": "Regjeringen har satt ambisiøse klimamål.",
-    "example_english": "The government has set ambitious climate targets.",
-    "definition": "Et konkret mål som et land eller en organisasjon setter seg for å bekjempe klimaendringer.",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
-  },
-  {
-    "norsk": "kunstig intelligens",
-    "lemma": "kunstig intelligens",
-    "english": "artificial intelligence",
-    "example": "Kunstig intelligens forandrer arbeidsmarkedet.",
-    "example_english": "Artificial intelligence is changing the labour market.",
-    "definition": "Datamaskiner som kan lære og løse problemer på en måte som ligner menneskelig tenkning.",
-    "level": "B2",
-    "category": "technology",
-    "part": "phrase"
-  },
-  {
     "norsk": "maskinlæring",
     "lemma": "maskinlæring",
     "english": "machine learning",
@@ -4774,34 +3751,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en algoritme",
-    "lemma": "algoritme",
-    "english": "an algorithm",
-    "example": "Algoritmer styrer anbefalingene på sosiale medier.",
-    "example_english": "Algorithms control recommendations on social media.",
-    "definition": "Et sett med regler som bestemmer hvilke innlegg og videoer du ser på nettet.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
     "norsk": "et skydatalagrings",
     "lemma": "skylagring",
     "english": "cloud storage",
     "example": "Skylagring gjør det mulig å nå filer overalt.",
     "example_english": "Cloud storage makes it possible to access files anywhere.",
     "definition": "En tjeneste der filer og data lagres på internett, ikke på din egen enhet.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
-    "norsk": "cybersikkerhet",
-    "lemma": "cybersikkerhet",
-    "english": "cybersecurity",
-    "example": "Cybersikkerhet er kritisk for bedrifter og stater.",
-    "example_english": "Cybersecurity is critical for companies and states.",
-    "definition": "Arbeidet med å beskytte datamaskiner og informasjon mot angrep og ulovlig tilgang.",
     "level": "B2",
     "category": "technology",
     "part": "noun"
@@ -4851,17 +3806,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "en datamaskin",
-    "lemma": "datamaskin",
-    "english": "a computer",
-    "example": "Datamaskiner har forandret verden.",
-    "example_english": "Computers have changed the world.",
-    "definition": "En elektronisk maskin som kan lagre, behandle og vise informasjon raskt.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
     "norsk": "en programvare",
     "lemma": "programvare",
     "english": "software",
@@ -4879,28 +3823,6 @@
     "example": "Ny maskinvare øker prosesseringshastigheten.",
     "example_english": "New hardware increases processing speed.",
     "definition": "De fysiske delene av en datamaskin, som skjerm, tastatur og prosessor.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
-    "norsk": "et nettverk",
-    "lemma": "nettverk",
-    "english": "a network",
-    "example": "Bedriftens nettverk er sikkert.",
-    "example_english": "The company's network is secure.",
-    "definition": "Et system der mange datamaskiner er koblet sammen og kan dele informasjon med hverandre.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
-    "norsk": "en server",
-    "lemma": "server",
-    "english": "a server",
-    "example": "Serveren er nede for vedlikehold.",
-    "example_english": "The server is down for maintenance.",
-    "definition": "En kraftig datamaskin som lagrer informasjon og sender den til andre datamaskiner når de trenger den.",
     "level": "B2",
     "category": "technology",
     "part": "noun"
@@ -4950,17 +3872,6 @@
     "part": "noun"
   },
   {
-    "norsk": "personvern",
-    "lemma": "personvern",
-    "english": "privacy / data protection",
-    "example": "Personvern er en grunnleggende rettighet.",
-    "example_english": "Privacy is a fundamental right.",
-    "definition": "Retten til å bestemme selv hvem som får se eller bruke din private informasjon.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
     "norsk": "en digital transformasjon",
     "lemma": "digital transformasjon",
     "english": "digital transformation",
@@ -4978,17 +3889,6 @@
     "example": "Automasjon erstatter mange repetitive jobber.",
     "example_english": "Automation replaces many repetitive jobs.",
     "definition": "Når maskiner eller datamaskiner gjør jobber som mennesker pleide å gjøre, ofte raskere og uten pauser.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
-    "norsk": "en robot",
-    "lemma": "robot",
-    "english": "a robot",
-    "example": "Roboter brukes i industriproduksjon.",
-    "example_english": "Robots are used in industrial production.",
-    "definition": "En maskin som kan utføre oppgaver automatisk, ofte i fabrikker eller farlige steder.",
     "level": "B2",
     "category": "technology",
     "part": "noun"
@@ -5203,39 +4103,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en journalist",
-    "lemma": "journalist",
-    "english": "a journalist",
-    "example": "Journalisten gravet frem det skjulte.",
-    "example_english": "The journalist uncovered the hidden truth.",
-    "definition": "En person som samler informasjon og skriver nyhetsartikler for aviser, TV eller nett.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
-    "norsk": "kildekritikk",
-    "lemma": "kildekritikk",
-    "english": "source criticism",
-    "example": "Kildekritikk er viktig i en tid med mye feilinformasjon.",
-    "example_english": "Source criticism is important in an era of much misinformation.",
-    "definition": "Det å tenke nøye over om informasjon er pålitelig og hvem som har skrevet den.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
-    "norsk": "sosiale medier",
-    "lemma": "sosiale medier",
-    "english": "social media",
-    "example": "Sosiale medier har endret hvordan vi kommuniserer.",
-    "example_english": "Social media has changed how we communicate.",
-    "definition": "Nettsteder og apper der folk deler bilder, meninger og videoer med hverandre.",
-    "level": "B2",
-    "category": "media",
-    "part": "phrase"
-  },
-  {
     "norsk": "et ekkokammer",
     "lemma": "ekkokammer",
     "english": "an echo chamber",
@@ -5264,28 +4131,6 @@
     "example": "Trykkefrihet er grunnleggende for demokratiet.",
     "example_english": "Freedom of the press is fundamental to democracy.",
     "definition": "Retten til å skrive og publisere nyheter uten at myndighetene kan stoppe det.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
-    "norsk": "en avis",
-    "lemma": "avis",
-    "english": "a newspaper",
-    "example": "Nettaviser har erstattet papiravisene for mange.",
-    "example_english": "Online newspapers have replaced print newspapers for many.",
-    "definition": "Et blad eller nettsted som publiserer nyheter og artikler om det som skjer i verden.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
-    "norsk": "en podcast",
-    "lemma": "podcast",
-    "english": "a podcast",
-    "example": "Podkaster er svært populære i Skandinavia.",
-    "example_english": "Podcasts are very popular in Scandinavia.",
-    "definition": "Et lydprogram du kan lytte til når du vil, ofte om et bestemt tema.",
     "level": "B2",
     "category": "media",
     "part": "noun"
@@ -5352,17 +4197,6 @@
     "example": "Netttroll sprer hat på nett.",
     "example_english": "Internet trolls spread hatred online.",
     "definition": "En person som skriver stygge eller provoserende ting på nett for å skape uro.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
-    "norsk": "en blogg",
-    "lemma": "blogg",
-    "english": "a blog",
-    "example": "Hun skriver en populær matblogg.",
-    "example_english": "She writes a popular food blog.",
-    "definition": "En nettside der en person jevnlig skriver om egne erfaringer eller et spesielt tema.",
     "level": "B2",
     "category": "media",
     "part": "noun"
@@ -5533,34 +4367,12 @@
     "part": "noun"
   },
   {
-    "norsk": "et intervju",
-    "lemma": "intervju",
-    "english": "an interview",
-    "example": "Intervjuet ble sendt i beste sendetid.",
-    "example_english": "The interview was broadcast in prime time.",
-    "definition": "En samtale der en person stiller spørsmål og en annen svarer, for eksempel i TV.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
     "norsk": "en publiseringsplattform",
     "lemma": "publiseringsplattform",
     "english": "a publishing platform",
     "example": "Nye publiseringsplattformer har senket terskelen for innholdsskapere.",
     "example_english": "New publishing platforms have lowered the barrier for content creators.",
     "definition": "Et nettsted eller system der man enkelt kan legge ut tekster, bilder eller videoer.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
-    "norsk": "desinformasjon",
-    "lemma": "desinformasjon",
-    "english": "disinformation",
-    "example": "Statlig desinformasjon er en alvorlig trussel mot demokratiet.",
-    "example_english": "State disinformation is a serious threat to democracy.",
-    "definition": "Falsk informasjon som noen sprer med vilje for å lure folk eller skade andre.",
     "level": "B2",
     "category": "media",
     "part": "noun"
@@ -5671,28 +4483,6 @@
     "example": "Han fikk stipend fra Lånekassen.",
     "example_english": "He received a grant from Lånekassen.",
     "definition": "Penger man får for å studere eller forske, som man ikke alltid må betale tilbake.",
-    "level": "B2",
-    "category": "education",
-    "part": "noun"
-  },
-  {
-    "norsk": "en eksamen",
-    "lemma": "eksamen",
-    "english": "an exam / an examination",
-    "example": "Eksamen avholdes i mai og juni.",
-    "example_english": "Exams are held in May and June.",
-    "definition": "En prøve på slutten av et kurs der man viser hva man har lært.",
-    "level": "B2",
-    "category": "education",
-    "part": "noun"
-  },
-  {
-    "norsk": "en karakter",
-    "lemma": "karakter",
-    "english": "a grade / a mark",
-    "example": "Hun fikk toppkarakter i matematikk.",
-    "example_english": "She got a top grade in mathematics.",
-    "definition": "Et tall eller en bokstav som viser hvor bra man gjorde det på en prøve.",
     "level": "B2",
     "category": "education",
     "part": "noun"
@@ -5828,17 +4618,6 @@
     "level": "B2",
     "category": "education",
     "part": "noun"
-  },
-  {
-    "norsk": "livslang læring",
-    "lemma": "livslang læring",
-    "english": "lifelong learning",
-    "example": "I et omskiftelig arbeidsliv er livslang læring viktig.",
-    "example_english": "In a changing work environment, lifelong learning is important.",
-    "definition": "Det å fortsette å lære nye ting gjennom hele livet, ikke bare på skolen.",
-    "level": "B2",
-    "category": "education",
-    "part": "phrase"
   },
   {
     "norsk": "en mentorordning",
@@ -6083,17 +4862,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en dialekt",
-    "lemma": "dialekt",
-    "english": "a dialect",
-    "example": "Norge har et rikt mangfold av dialekter.",
-    "example_english": "Norway has a rich diversity of dialects.",
-    "definition": "En lokal variant av et språk som folk i et bestemt område snakker.",
-    "level": "B2",
-    "category": "language",
-    "part": "noun"
-  },
-  {
     "norsk": "en sosiolingvistikk",
     "lemma": "sosiolingvistikk",
     "english": "sociolinguistics",
@@ -6122,28 +4890,6 @@
     "example": "Hun lærte norsk som andrespråk.",
     "example_english": "She learnt Norwegian as a second language.",
     "definition": "Et nytt språk man lærer etter at man allerede kan sitt første språk.",
-    "level": "B2",
-    "category": "language",
-    "part": "noun"
-  },
-  {
-    "norsk": "bokmål",
-    "lemma": "bokmål",
-    "english": "Bokmål (Norwegian written form)",
-    "example": "Bokmål er den vanligste skriftnormen.",
-    "example_english": "Bokmål is the most common written norm.",
-    "definition": "En av de to offisielle måtene å skrive norsk på, mest brukt i byene og østover.",
-    "level": "B2",
-    "category": "language",
-    "part": "noun"
-  },
-  {
-    "norsk": "nynorsk",
-    "lemma": "nynorsk",
-    "english": "Nynorsk (Norwegian written form)",
-    "example": "Nynorsk er en av to offisielle skriftnormer i Norge.",
-    "example_english": "Nynorsk is one of two official written norms in Norway.",
-    "definition": "Den andre offisielle skriftformen i Norge, bygget på gamle norske dialekter fra landet.",
     "level": "B2",
     "category": "language",
     "part": "noun"
@@ -6512,17 +5258,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å overbevise",
-    "lemma": "overbevise",
-    "english": "to convince / to persuade",
-    "example": "Hun klarte å overbevise publikum.",
-    "example_english": "She managed to convince the audience.",
-    "definition": "Å få noen til å tro på noe eller endre mening ved hjelp av gode grunner.",
-    "level": "B2",
-    "category": "argumentation",
-    "part": "verb"
-  },
-  {
     "norsk": "et syllogisme",
     "lemma": "syllogisme",
     "english": "a syllogism",
@@ -6688,17 +5423,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å avkrefte",
-    "lemma": "avkrefte",
-    "english": "to deny / to refute",
-    "example": "Myndighetene avkreftet ryktene.",
-    "example_english": "The authorities denied the rumours.",
-    "definition": "Å si offisielt at noe ikke er sant, for eksempel et rykte eller en påstand.",
-    "level": "B2",
-    "category": "argumentation",
-    "part": "verb"
-  },
-  {
     "norsk": "en gjendrivelse",
     "lemma": "gjendrivelse",
     "english": "a rebuttal",
@@ -6760,17 +5484,6 @@
     "example": "Logos bygger argumentet på fakta og logikk.",
     "example_english": "Logos builds the argument on facts and logic.",
     "definition": "Bruk av fakta, tall og logiske grunner for å overbevise andre.",
-    "level": "B2",
-    "category": "argumentation",
-    "part": "noun"
-  },
-  {
-    "norsk": "et standpunkt",
-    "lemma": "standpunkt",
-    "english": "a standpoint / a position",
-    "example": "Partiet endret sitt standpunkt etter debatten.",
-    "example_english": "The party changed its position after the debate.",
-    "definition": "Den meningen eller posisjonen noen har i en sak eller diskusjon.",
     "level": "B2",
     "category": "argumentation",
     "part": "noun"
@@ -6974,17 +5687,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en ambisjon",
-    "lemma": "ambisjon",
-    "english": "ambition",
-    "example": "Ambisjon driver oss fremover.",
-    "example_english": "Ambition drives us forward.",
-    "definition": "Et sterkt ønske om å oppnå noe stort eller å lykkes med noe viktig.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "noun"
-  },
-  {
     "norsk": "en kreativitet",
     "lemma": "kreativitet",
     "english": "creativity",
@@ -7095,67 +5797,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en mulighet",
-    "lemma": "mulighet",
-    "english": "an opportunity / a possibility",
-    "example": "Kriser skaper nye muligheter.",
-    "example_english": "Crises create new opportunities.",
-    "definition": "En situasjon der du kan gjøre noe bra eller oppnå noe du ønsker.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "noun"
-  },
-  {
-    "norsk": "en utfordring",
-    "lemma": "utfordring",
-    "english": "a challenge",
-    "example": "Den største utfordringen er å holde fokus.",
-    "example_english": "The greatest challenge is to maintain focus.",
-    "definition": "Noe som er vanskelig og krever mye innsats, men som du kan klare.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "noun"
-  },
-  {
     "norsk": "en balanse",
     "lemma": "balanse",
     "english": "balance",
     "example": "Balanse mellom arbeid og fritid er viktig.",
     "example_english": "Balance between work and leisure is important.",
     "definition": "Når to eller flere ting passer godt sammen og ingen del er for stor eller for liten.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "noun"
-  },
-  {
-    "norsk": "en sammenheng",
-    "lemma": "sammenheng",
-    "english": "a connection / context",
-    "example": "Alt henger sammen.",
-    "example_english": "Everything is connected.",
-    "definition": "En forbindelse mellom ting, eller den situasjonen noe skjer i, som hjelper deg å forstå det bedre.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "noun"
-  },
-  {
-    "norsk": "en fordel",
-    "lemma": "fordel",
-    "english": "an advantage / a benefit",
-    "example": "Tidlig start er en fordel i konkurranser.",
-    "example_english": "An early start is an advantage in competitions.",
-    "definition": "Noe som gjør det lettere for deg å lykkes, eller som er bedre enn for andre.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "noun"
-  },
-  {
-    "norsk": "en ulempe",
-    "lemma": "ulempe",
-    "english": "a disadvantage / a drawback",
-    "example": "Lange arbeidsreiser er en stor ulempe.",
-    "example_english": "Long commutes are a major drawback.",
-    "definition": "Noe negativt ved en situasjon eller et valg som gjør ting vanskeligere.",
     "level": "B2",
     "category": "abstract-nouns",
     "part": "noun"
@@ -7315,17 +5962,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en innflytelse",
-    "lemma": "innflytelse",
-    "english": "influence / authority",
-    "example": "Hennes innflytelse i styret er stor.",
-    "example_english": "Her influence on the board is great.",
-    "definition": "Makt eller evne til å påvirke hva andre gjør, tror eller bestemmer.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "noun"
-  },
-  {
     "norsk": "en årsak",
     "lemma": "årsak",
     "english": "a cause / a reason",
@@ -7346,17 +5982,6 @@
     "level": "B2",
     "category": "abstract-nouns",
     "part": "noun"
-  },
-  {
-    "norsk": "å innrømme",
-    "lemma": "innrømme",
-    "english": "to admit / to concede",
-    "example": "Han innrømmet omsider feilen.",
-    "example_english": "He finally admitted the mistake.",
-    "definition": "Å si at noe er sant, selv om det er vanskelig — for eksempel at man tok feil.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
   },
   {
     "norsk": "å opprettholde",
@@ -7392,34 +6017,12 @@
     "part": "verb"
   },
   {
-    "norsk": "å formidle",
-    "lemma": "formidle",
-    "english": "to convey / to communicate",
-    "example": "Kunstneren formidler en sterk følelse.",
-    "example_english": "The artist conveys a strong feeling.",
-    "definition": "Å gi videre et budskap, en idé eller en følelse til andre på en tydelig måte.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
     "norsk": "å tilrettelegge",
     "lemma": "tilrettelegge",
     "english": "to facilitate / to accommodate / to prepare",
     "example": "Arbeidsgiveren må tilrettelegge for ansatte med nedsatt funksjonsevne.",
     "example_english": "The employer must accommodate employees with disabilities.",
     "definition": "Å gjøre endringer slik at det blir lettere for noen å delta eller gjøre jobben sin.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
-    "norsk": "å forebygge",
-    "lemma": "forebygge",
-    "english": "to prevent",
-    "example": "God helse handler om å forebygge sykdom.",
-    "example_english": "Good health is about preventing illness.",
-    "definition": "Å gjøre noe på forhånd for å stoppe noe dårlig fra å skje.",
     "level": "B2",
     "category": "advanced-verbs",
     "part": "verb"
@@ -7788,67 +6391,12 @@
     "part": "noun"
   },
   {
-    "norsk": "et hav",
-    "lemma": "hav",
-    "english": "an ocean / a sea",
-    "example": "Atlanterhavet skiller Europa fra Amerika.",
-    "example_english": "The Atlantic Ocean separates Europe from America.",
-    "definition": "Et veldig stort område med saltvann som dekker store deler av jorden.",
-    "level": "B2",
-    "category": "geography",
-    "part": "noun"
-  },
-  {
     "norsk": "en halvøy",
     "lemma": "halvøy",
     "english": "a peninsula",
     "example": "Skandinavia er en halvøy.",
     "example_english": "Scandinavia is a peninsula.",
     "definition": "Et stykke land som er omgitt av vann på tre sider, men fortsatt festet til fastlandet.",
-    "level": "B2",
-    "category": "geography",
-    "part": "noun"
-  },
-  {
-    "norsk": "en fjord",
-    "lemma": "fjord",
-    "english": "a fjord",
-    "example": "Norske fjorder er blant verdens vakreste.",
-    "example_english": "Norwegian fjords are among the world's most beautiful.",
-    "definition": "En lang og smal havarm som går inn i landet mellom høye fjell.",
-    "level": "B2",
-    "category": "geography",
-    "part": "noun"
-  },
-  {
-    "norsk": "en elv",
-    "lemma": "elv",
-    "english": "a river",
-    "example": "Glomma er Norges lengste elv.",
-    "example_english": "The Glomma is Norway's longest river.",
-    "definition": "En stor strøm av ferskvann som renner gjennom landet og ut i havet.",
-    "level": "B2",
-    "category": "geography",
-    "part": "noun"
-  },
-  {
-    "norsk": "en innsjø",
-    "lemma": "innsjø",
-    "english": "a lake",
-    "example": "Mjøsa er Norges største innsjø.",
-    "example_english": "Mjøsa is Norway's largest lake.",
-    "definition": "Et stort område med ferskvann som er omgitt av land på alle sider.",
-    "level": "B2",
-    "category": "geography",
-    "part": "noun"
-  },
-  {
-    "norsk": "et fjell",
-    "lemma": "fjell",
-    "english": "a mountain",
-    "example": "Galdhøpiggen er Norges høyeste fjell.",
-    "example_english": "Galdhøpiggen is Norway's highest mountain.",
-    "definition": "Et veldig høyt og bratt stykke land som stikker opp fra bakken.",
     "level": "B2",
     "category": "geography",
     "part": "noun"
@@ -8294,17 +6842,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "en tradisjon",
-    "lemma": "tradisjon",
-    "english": "a tradition",
-    "example": "Norske tradisjoner er sterkt knyttet til naturen.",
-    "example_english": "Norwegian traditions are strongly connected to nature.",
-    "definition": "Noe folk har gjort på samme måte i lang tid og fortsetter å gjøre, ofte for å markere noe viktig.",
-    "level": "B2",
-    "category": "culture",
-    "part": "noun"
-  },
-  {
     "norsk": "en folkeminne",
     "lemma": "folkeminne",
     "english": "folklore",
@@ -8333,17 +6870,6 @@
     "example": "Janteloven fraråder å skille seg ut positivt.",
     "example_english": "The Law of Jante discourages standing out positively.",
     "definition": "En uuttalt regel i nordisk kultur om at man ikke skal tro at man er bedre eller viktigere enn andre.",
-    "level": "B2",
-    "category": "culture",
-    "part": "noun"
-  },
-  {
-    "norsk": "friluftsliv",
-    "lemma": "friluftsliv",
-    "english": "outdoor life / nature connection",
-    "example": "Friluftsliv er en viktig del av norsk identitet.",
-    "example_english": "Outdoor life is an important part of Norwegian identity.",
-    "definition": "Tradisjonen med å bruke mye tid ute i naturen, gå på tur og nyte livet utendørs.",
     "level": "B2",
     "category": "culture",
     "part": "noun"
@@ -8391,17 +6917,6 @@
     "level": "B2",
     "category": "culture",
     "part": "phrase"
-  },
-  {
-    "norsk": "en estetikk",
-    "lemma": "estetikk",
-    "english": "aesthetics / sense of beauty",
-    "example": "Norsk estetikk vektlegger enkelhet og naturlighet.",
-    "example_english": "Norwegian aesthetics emphasises simplicity and naturalness.",
-    "definition": "Det som handler om hva som er vakkert, og hva slags stil eller utseende man foretrekker.",
-    "level": "B2",
-    "category": "culture",
-    "part": "noun"
   },
   {
     "norsk": "en matkultur",
@@ -8756,17 +7271,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en geopolitikk",
-    "lemma": "geopolitikk",
-    "english": "geopolitics",
-    "example": "Geopolitikk er i endring med fremveksten av Kina.",
-    "example_english": "Geopolitics is changing with the rise of China.",
-    "definition": "Studiet av hvordan makt, geografi og ressurser påvirker forholdet mellom land.",
-    "level": "B2",
-    "category": "global-issues",
-    "part": "noun"
-  },
-  {
     "norsk": "imperialisme",
     "lemma": "imperialisme",
     "english": "imperialism",
@@ -9086,39 +7590,6 @@
     "part": "noun"
   },
   {
-    "norsk": "å analysere",
-    "lemma": "analysere",
-    "english": "to analyse",
-    "example": "Vi analyserte dataene ved hjelp av statistisk metode.",
-    "example_english": "We analysed the data using statistical methods.",
-    "definition": "Å se nøye på noe for å forstå hvordan det fungerer eller hva det betyr.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
-    "norsk": "å argumentere",
-    "lemma": "argumentere",
-    "english": "to argue",
-    "example": "Forfatteren argumenterer for en ny tilnærming.",
-    "example_english": "The author argues for a new approach.",
-    "definition": "Å gi grunner for at noe er sant eller riktig, ofte i en tekst eller diskusjon.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
-    "norsk": "å begrunne",
-    "lemma": "begrunne",
-    "english": "to give reasons / to justify",
-    "example": "Du må begrunne valget av metode.",
-    "example_english": "You must justify your choice of method.",
-    "definition": "Å forklare hvorfor du mener noe eller har tatt et bestemt valg.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
     "norsk": "å belyse",
     "lemma": "belyse",
     "english": "to illuminate / to shed light on",
@@ -9130,78 +7601,12 @@
     "part": "verb"
   },
   {
-    "norsk": "å demonstrere",
-    "lemma": "demonstrere",
-    "english": "to demonstrate",
-    "example": "Funnene demonstrerer at hypotesen stemmer.",
-    "example_english": "The findings demonstrate that the hypothesis holds.",
-    "definition": "Å vise tydelig at noe er sant eller at noe fungerer på en bestemt måte.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
-    "norsk": "å diskutere",
-    "lemma": "diskutere",
-    "english": "to discuss",
-    "example": "Vi diskuterer implikasjonene av resultatene.",
-    "example_english": "We discuss the implications of the results.",
-    "definition": "Å snakke eller skrive om et tema fra flere sider, gjerne med ulike meninger.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
     "norsk": "å drøfte",
     "lemma": "drøfte",
     "english": "to examine critically",
     "example": "Oppgaven drøfter ulike perspektiver på temaet.",
     "example_english": "The paper examines different perspectives on the topic.",
     "definition": "Å se på et tema fra forskjellige sider og vurdere argumenter for og imot.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
-    "norsk": "å gjøre rede for",
-    "lemma": "gjøre rede for",
-    "english": "to account for / to explain",
-    "example": "Gjør rede for de viktigste teoriene på feltet.",
-    "example_english": "Account for the most important theories in the field.",
-    "definition": "Å forklare noe grundig og tydelig slik at andre forstår det godt.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "phrase"
-  },
-  {
-    "norsk": "å illustrere",
-    "lemma": "illustrere",
-    "english": "to illustrate",
-    "example": "Eksempelet illustrerer et bredere mønster.",
-    "example_english": "The example illustrates a broader pattern.",
-    "definition": "Å bruke et eksempel for å gjøre noe vanskeleg lettere å forstå.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
-    "norsk": "å konkludere",
-    "lemma": "konkludere",
-    "english": "to conclude",
-    "example": "Vi konkluderer med at hypotesen støttes.",
-    "example_english": "We conclude that the hypothesis is supported.",
-    "definition": "Å si hva du har kommet frem til etter å ha sett på et tema eller problem.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "verb"
-  },
-  {
-    "norsk": "å oppsummere",
-    "lemma": "oppsummere",
-    "english": "to summarise",
-    "example": "La oss oppsummere de viktigste funnene.",
-    "example_english": "Let us summarise the main findings.",
-    "definition": "Å si de viktigste punktene på kort tid, uten å ta med alle detaljer.",
     "level": "B2",
     "category": "academic-language",
     "part": "verb"
@@ -9592,28 +7997,6 @@
     "part": "adverb"
   },
   {
-    "norsk": "på den ene siden",
-    "lemma": "på den ene siden",
-    "english": "on the one hand",
-    "example": "På den ene siden er det fordeler.",
-    "example_english": "On the one hand, there are advantages.",
-    "definition": "Brukes for å presentere én side av et argument før man presenterer den andre siden.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "phrase"
-  },
-  {
-    "norsk": "på den andre siden",
-    "lemma": "på den andre siden",
-    "english": "on the other hand",
-    "example": "På den andre siden er det ulemper.",
-    "example_english": "On the other hand, there are disadvantages.",
-    "definition": "Brukes for å presentere et annet syn eller argument etter at man har nevnt det første.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "phrase"
-  },
-  {
     "norsk": "med andre ord",
     "lemma": "med andre ord",
     "english": "in other words",
@@ -9867,17 +8250,6 @@
     "part": "adverb"
   },
   {
-    "norsk": "tilsvarende",
-    "lemma": "tilsvarende",
-    "english": "correspondingly / similarly",
-    "example": "Tilsvarende resultater ble funnet i andre studier.",
-    "example_english": "Correspondingly, similar results were found in other studies.",
-    "definition": "Brukes for å si at noe er likt eller på samme nivå som noe annet.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "adverb"
-  },
-  {
     "norsk": "faktisk",
     "lemma": "faktisk",
     "english": "actually / in fact",
@@ -10065,56 +8437,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en arbeidsgiver",
-    "lemma": "arbeidsgiver",
-    "english": "an employer",
-    "example": "Arbeidsgiveren er ansvarlig for arbeidsmiljøet.",
-    "example_english": "The employer is responsible for the work environment.",
-    "definition": "En person eller et firma som ansetter andre mennesker og betaler dem lønn.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
-    "norsk": "en arbeidstaker",
-    "lemma": "arbeidstaker",
-    "english": "an employee",
-    "example": "Arbeidstakere har rettigheter etter norsk lov.",
-    "example_english": "Employees have rights under Norwegian law.",
-    "definition": "En person som jobber for noen andre og får lønn for det.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
     "norsk": "et arbeidsmiljø",
     "lemma": "arbeidsmiljø",
     "english": "a work environment",
     "example": "Et godt arbeidsmiljø øker produktiviteten.",
     "example_english": "A good work environment increases productivity.",
     "definition": "Forholdene og stemningen på arbeidsplassen — både fysisk og sosialt.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
-    "norsk": "en overtid",
-    "lemma": "overtid",
-    "english": "overtime",
-    "example": "Han jobbet mye overtid den siste måneden.",
-    "example_english": "He worked a lot of overtime last month.",
-    "definition": "Timer man jobber utover den vanlige arbeidstiden, ofte med ekstra betaling.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
-    "norsk": "en permisjon",
-    "lemma": "permisjon",
-    "english": "leave (from work)",
-    "example": "Hun tok ett år i foreldrepermisjon.",
-    "example_english": "She took one year of parental leave.",
-    "definition": "En lengre periode der man har fri fra jobben, men fremdeles har stillingen sin.",
     "level": "B2",
     "category": "work-career",
     "part": "noun"
@@ -10148,17 +8476,6 @@
     "example": "Konsulenten ga viktige råd til ledelsen.",
     "example_english": "The consultant gave important advice to management.",
     "definition": "En ekspert som hjelper bedrifter eller folk med råd og løsninger innen et bestemt område.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
-    "norsk": "en mentor",
-    "lemma": "mentor",
-    "english": "a mentor",
-    "example": "En god mentor kan forme karrieren din.",
-    "example_english": "A good mentor can shape your career.",
-    "definition": "En erfaren person som veileder og hjelper en annen med å vokse faglig og personlig.",
     "level": "B2",
     "category": "work-career",
     "part": "noun"
@@ -10296,56 +8613,12 @@
     "part": "noun"
   },
   {
-    "norsk": "en CV",
-    "lemma": "CV",
-    "english": "a CV / résumé",
-    "example": "CV-en bør tilpasses stillingen du søker.",
-    "example_english": "The CV should be tailored to the position you are applying for.",
-    "definition": "Et dokument der du skriver om utdanningen din, jobberfaring og ferdigheter når du søker jobb.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
-    "norsk": "et jobbintervju",
-    "lemma": "jobbintervju",
-    "english": "a job interview",
-    "example": "Jobbintervjuet gikk svært bra.",
-    "example_english": "The job interview went very well.",
-    "definition": "Et møte der en arbeidsgiver stiller deg spørsmål for å se om du passer til en stilling.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
-    "norsk": "en søknad",
-    "lemma": "søknad",
-    "english": "a job application",
-    "example": "Søknaden ble levert via nett.",
-    "example_english": "The application was submitted online.",
-    "definition": "Et brev du skriver til en arbeidsgiver for å vise at du ønsker og passer til en bestemt jobb.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
     "norsk": "en karriereveiledning",
     "lemma": "karriereveiledning",
     "english": "career counselling / guidance",
     "example": "Karriereveiledning hjelper deg å finne riktig retning.",
     "example_english": "Career counselling helps you find the right direction.",
     "definition": "Hjelp fra en ekspert til å finne ut hvilken jobb eller utdanning som passer best for deg.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
-    "norsk": "en opplæring",
-    "lemma": "opplæring",
-    "english": "training / instruction",
-    "example": "Opplæringen av nye ansatte tar tid.",
-    "example_english": "Training of new employees takes time.",
-    "definition": "Når noen lærer deg det du trenger å vite for å gjøre en jobb eller en oppgave.",
     "level": "B2",
     "category": "work-career",
     "part": "noun"
@@ -10505,17 +8778,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en skilsmisse",
-    "lemma": "skilsmisse",
-    "english": "a divorce",
-    "example": "Skilsmissen var tøff for barna.",
-    "example_english": "The divorce was tough on the children.",
-    "definition": "Når to gifte personer bestemmer seg for å avslutte ekteskapet på en offisiell måte.",
-    "level": "B2",
-    "category": "relationships",
-    "part": "noun"
-  },
-  {
     "norsk": "et partnerskap",
     "lemma": "partnerskap",
     "english": "a partnership",
@@ -10637,34 +8899,12 @@
     "part": "phrase"
   },
   {
-    "norsk": "å forsone seg",
-    "lemma": "forsone seg",
-    "english": "to reconcile / to make up",
-    "example": "De forsonet seg etter en lang periode.",
-    "example_english": "They reconciled after a long period.",
-    "definition": "Å bli venner igjen med noen etter en krangel eller et problem mellom dere.",
-    "level": "B2",
-    "category": "relationships",
-    "part": "verb"
-  },
-  {
     "norsk": "en ekteskap",
     "lemma": "ekteskap",
     "english": "a marriage",
     "example": "Ekteskap krever arbeid fra begge parter.",
     "example_english": "Marriage requires work from both parties.",
     "definition": "Når to personer gifter seg og offisielt lever sammen som mann og kone eller partnere.",
-    "level": "B2",
-    "category": "relationships",
-    "part": "noun"
-  },
-  {
-    "norsk": "en samboer",
-    "lemma": "samboer",
-    "english": "a cohabiting partner",
-    "example": "Han er samboer med sin kjæreste.",
-    "example_english": "He lives with his partner.",
-    "definition": "En person som bor sammen med kjæresten sin uten å være gift.",
     "level": "B2",
     "category": "relationships",
     "part": "noun"
@@ -10879,28 +9119,6 @@
     "part": "noun"
   },
   {
-    "norsk": "en tilbakemelding",
-    "lemma": "tilbakemelding",
-    "english": "feedback",
-    "example": "Konstruktiv tilbakemelding hjelper oss å vokse.",
-    "example_english": "Constructive feedback helps us grow.",
-    "definition": "Det du sier til noen om hva de gjør bra eller hva de kan gjøre bedre.",
-    "level": "B2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
-    "norsk": "en misforståelse",
-    "lemma": "misforståelse",
-    "english": "a misunderstanding",
-    "example": "Misforståelser kan unngås med klar kommunikasjon.",
-    "example_english": "Misunderstandings can be avoided with clear communication.",
-    "definition": "Når noen forstår noe feil fordi beskjeden ikke var klar nok.",
-    "level": "B2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
     "norsk": "å tydeliggjøre",
     "lemma": "tydeliggjøre",
     "english": "to clarify",
@@ -10910,28 +9128,6 @@
     "level": "B2",
     "category": "communication",
     "part": "verb"
-  },
-  {
-    "norsk": "en samtale",
-    "lemma": "samtale",
-    "english": "a conversation",
-    "example": "En god samtale krever to engasjerte parter.",
-    "example_english": "A good conversation requires two engaged parties.",
-    "definition": "Når to eller flere personer snakker sammen og utveksler tanker eller informasjon.",
-    "level": "B2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
-    "norsk": "et ordforråd",
-    "lemma": "ordforråd",
-    "english": "vocabulary",
-    "example": "Et rikt ordforråd hjelper deg å kommunisere presist.",
-    "example_english": "A rich vocabulary helps you communicate precisely.",
-    "definition": "Alle de ordene en person kjenner og kan bruke når de snakker eller skriver.",
-    "level": "B2",
-    "category": "communication",
-    "part": "noun"
   },
   {
     "norsk": "formell kommunikasjon",
@@ -10954,28 +9150,6 @@
     "level": "B2",
     "category": "communication",
     "part": "phrase"
-  },
-  {
-    "norsk": "en presentasjon",
-    "lemma": "presentasjon",
-    "english": "a presentation",
-    "example": "Presentasjonen ble holdt for hele avdelingen.",
-    "example_english": "The presentation was given to the whole department.",
-    "definition": "Når en person viser frem og forklarer noe for en gruppe, ofte med bilder eller notater.",
-    "level": "B2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
-    "norsk": "en debatt",
-    "lemma": "debatt",
-    "english": "a debate",
-    "example": "Debatten ble livlig og engasjert.",
-    "example_english": "The debate was lively and engaged.",
-    "definition": "En diskusjon der folk med forskjellige meninger argumenterer for sine synspunkter.",
-    "level": "B2",
-    "category": "communication",
-    "part": "noun"
   },
   {
     "norsk": "en forhandling",
