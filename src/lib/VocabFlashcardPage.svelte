@@ -18,12 +18,27 @@
   import { State } from 'ts-fsrs';
   import * as m from '$lib/paraglide/messages.js';
 
+  interface CategoryNav {
+    slug: string;
+    label: string;
+    href: string;
+  }
+
   interface Props {
     entries: VocabEntry[];
     title?: string;
+    level?: string;
+    prevCategory?: CategoryNav | null;
+    nextCategory?: CategoryNav | null;
   }
 
-  let { entries, title = 'Vocab' }: Props = $props();
+  let {
+    entries,
+    title = 'Vocab',
+    level = '',
+    prevCategory = null,
+    nextCategory = null
+  }: Props = $props();
 
   type Mode = 'noreng' | 'engnor' | 'defnor';
   type CardType = 'word' | 'phrase';
@@ -525,7 +540,48 @@
 </script>
 
 <div class="flex w-full flex-col items-center">
-  <h1 class="m-4 text-3xl">{title}</h1>
+  <!-- Category header: prev ← | level label + title | → next -->
+  <div class="mt-4 mb-1 flex w-full items-start justify-between gap-2 px-2">
+    <!-- Prev category -->
+    <div class="flex min-w-0 flex-1 items-center">
+      {#if prevCategory}
+        <a
+          href={prevCategory.href}
+          class="inline-flex items-center gap-1 truncate rounded-lg px-2 py-1 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          title={prevCategory.label}
+        >
+          <span class="shrink-0">←</span>
+          <span class="truncate">{prevCategory.label}</span>
+        </a>
+      {/if}
+    </div>
+
+    <!-- Centre: level badge + category title -->
+    <div class="flex flex-col items-center text-center">
+      {#if level}
+        <span
+          class="text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-500"
+        >
+          {level}
+        </span>
+      {/if}
+      <h1 class="text-3xl leading-tight font-bold">{title}</h1>
+    </div>
+
+    <!-- Next category -->
+    <div class="flex min-w-0 flex-1 items-center justify-end">
+      {#if nextCategory}
+        <a
+          href={nextCategory.href}
+          class="inline-flex items-center gap-1 truncate rounded-lg px-2 py-1 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          title={nextCategory.label}
+        >
+          <span class="truncate">{nextCategory.label}</span>
+          <span class="shrink-0">→</span>
+        </a>
+      {/if}
+    </div>
+  </div>
 
   <!-- Mode + CardType + DeckMode toggles -->
   <div class="flex flex-wrap justify-center gap-1">
