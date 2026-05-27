@@ -11,7 +11,7 @@
     type FillBlankQuestion,
     type TypeAnswerQuestion
   } from '$lib/quiz';
-  import { loadProgressMap, saveProgress } from '$lib/progress';
+  import { loadProgressMap, loadProgressMapFromSupabase, saveProgress } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
   import * as m from '$lib/paraglide/messages';
 
@@ -96,7 +96,14 @@
     }
 
     if (browser) {
-      progressMap = loadProgressMap();
+      // Plus users: load from Supabase; guest/free: load from localStorage
+      if (isPlus && page.data.user?.id) {
+        loadProgressMapFromSupabase(page.data.user.id).then((map) => {
+          progressMap = map;
+        });
+      } else {
+        progressMap = loadProgressMap();
+      }
     }
     window.addEventListener('quiz:reset', handleQuizReset);
     return () => {
@@ -124,7 +131,7 @@
     quizState = 'questioning';
   }
 
-  function submitAnswer(userAnswer: string | number) {
+  async function submitAnswer(userAnswer: string | number) {
     if (!current || quizState !== 'questioning') return;
 
     let rating: FSRSRating;
@@ -159,13 +166,13 @@
     if (correct) correctCount++;
     isCorrect = correct;
     results = [...results, { question: current, correct, userAnswer: answerStr }];
-    progressMap = saveProgress(current.entry, rating, progressMap, userId);
+    progressMap = await saveProgress(current.entry, rating, progressMap, userId);
     quizState = 'revealing';
   }
 
-  function markEasy() {
+  async function markEasy() {
     if (!current || quizState !== 'revealing') return;
-    progressMap = saveProgress(current.entry, 'easy', progressMap, userId);
+    progressMap = await saveProgress(current.entry, 'easy', progressMap, userId);
     // Show a brief confirmation toast
     showToast = true;
     if (toastTimer) clearTimeout(toastTimer);

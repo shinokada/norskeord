@@ -31,7 +31,7 @@
     // Clear this user's namespaced localStorage data before navigating away,
     // so the next person who opens the browser starts with a clean slate.
     const userId = user?.id;
-    if (userId) clearUserProgress(userId);
+    if (userId) clearUserProgress();
     await fetch('/auth/logout', { method: 'POST' });
     window.location.href = '/';
   }

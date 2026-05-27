@@ -4,18 +4,18 @@
 
 ### Patch Changes
 
-  - **New Features**
-    - Added Previous/Next category navigation links and level badge display in vocab flashcards
-  - **Vocabulary Updates**
-    - Reorganized A1/A2 category slugs and labels; broad renaming (removed many "basic"/"simple" prefixes)
-    - Large content updates across A1, A2, B2, C1, C2 datasets; many entries removed, rewritten, or normalized
-    - Added new draft flashcard/vocab entries
-  - **Translations**
-    - Updated English and Norwegian message catalogs for category labels
-  - **Documentation**
-    - Expanded implementation notes, prompts, and notification-email formatting
-  - **Other**
-    - Simplified push reminder message; test fixtures adjusted
+- **New Features**
+  - Added Previous/Next category navigation links and level badge display in vocab flashcards
+- **Vocabulary Updates**
+  - Reorganized A1/A2 category slugs and labels; broad renaming (removed many "basic"/"simple" prefixes)
+  - Large content updates across A1, A2, B2, C1, C2 datasets; many entries removed, rewritten, or normalized
+  - Added new draft flashcard/vocab entries
+- **Translations**
+  - Updated English and Norwegian message catalogs for category labels
+- **Documentation**
+  - Expanded implementation notes, prompts, and notification-email formatting
+- **Other**
+  - Simplified push reminder message; test fixtures adjusted
 
 ## 2.7.1
 

@@ -1,6 +1,9 @@
 # Diskusjonstema til norskprøven
 
+From https://toppnorsk.com/2023/01/29/diskusjonstema-til-norskproven/
+
 ## Arbeidsliv
+
 Burde alle ungdommer ha en deltidsjobb?
 Burde folk over 70 år få mulighet til å jobbe?
 Bør ansatte få mulighet til å trene på jobben?
@@ -24,6 +27,7 @@ Hvordan kan vi tilrettelegge for at eldre skal stå så lenge som mulig i jobben
 I hvilke yrker tror du det vil bli økt behov for arbeidskraft i framtida?
 
 ## Barndom
+
 Bør alle barn gå i barnehage?
 Bør barn få mest mulig frihet, eller bør foreldrene sette strenge grenser?
 Bør barn ha mobiltelefon? I så fall fra hvilken alder?
@@ -47,6 +51,7 @@ Hvordan tror du barn påvirkes av dataspill?
 Kan barn lære det de skal, gjennom lek?
 
 ## Dagligliv
+
 Er det best å eie eller leie bolig?
 Er det positivt å ha venner fra flere ulike land?
 Hva er fordelene og ulempene med å bo sammen med andre?
@@ -65,6 +70,7 @@ Hvor pleier du å kjøpe mat?
 Hvordan er hjembyen din sammenlignet med byen du bor i nå?
 
 ## Familie
+
 Burde småbarnsforeldre få lengre ferie enn andre folk?
 Bør gutter og jenter oppdras på ulike måter?
 Bør man bo en stund sammen med kjæresten før man gifter seg?
@@ -79,6 +85,7 @@ Hvilke familietyper vet du om, og kan du sammenligne dem?
 Hvilke hensyn bør man ta når man er på besøk hos sine foreldre?
 
 ## Helse
+
 Burde all helsebehandling i Norge vært gratis?
 Burde prisene på sunn mat senkes og prisene på usunn mat heves?
 Burde tannlege bli gratis for alle?
@@ -100,6 +107,7 @@ Må man være frisk for å ha et godt og lykkelig liv?
 Synes du folk bør slutte å håndhilse og klemme hverandre på grunn av korona?
 
 ## Innvandring
+
 Blir innvandrere diskriminert i Norge?
 Burde det være en plikt for innvandrere å lære norsk?
 Burde det være obligatoriske norskprøver for alle som vil arbeide i Norge?
@@ -123,6 +131,7 @@ På hvilken måte kan innvandrere være en ressurs i samfunnet?
 Skyldes den høye arbeidsledigheten blant innvandrere manglende norskferdigheter eller diskriminering?
 
 ## Jobb
+
 Burde jobbsøknader vært anonyme?
 Bør arbeidsgivere legge mest vekt på utdanning eller erfaring ved ansettelser?
 Bør det bli lettere å ansette folk i midlertidige stillinger?
@@ -144,6 +153,7 @@ Hvordan kan man være en god kollega?
 Kan du fortelle om en gang du søkte jobb?
 
 ## Kjønnsroller
+
 Er det et problem at så få menn jobber innen undervisning og helse?
 Er det like muligheter for alle i Norge?
 Er det viktig at det er omtrent like mange kvinnelige som mannlige politikere?
@@ -157,6 +167,7 @@ På hvilken måte har kjønnsrollene endret seg de siste tiårene?
 Synes du det er full likestilling mellom kjønnene i Norge?
 
 ## Kultur
+
 Er nordmenn mindre sosiale enn andre folkegrupper (og i så fall på hvilken måte)?
 Fortell om en norsk bok, film eller TV-serie.
 Hva er fordelene og ulempene med å være kjendis (en kjent person)?
@@ -171,6 +182,7 @@ Hvordan skiller feiring av nyttår i Norge seg fra feiring av nyttår i ditt hje
 Hvorfor tror du nordmenn så ofte pusser opp boligene sine?
 
 ## Media
+
 Blir man mer eller mindre sosial av sosiale medier?
 Er det bra å dele personlig informasjon på nettet?
 Er det mulig å leve et liv uten Internett i Norge i dag?
@@ -191,6 +203,7 @@ Legger du ut mange bilder i sosiale medier? Hvilke reaksjoner får du?
 Synes du politikere bør være aktive på sosiale medier?
 
 ## Miljø
+
 Bør det bli forbudt å bruke biler som går på bensin og diesel?
 Bør drivstoff bli dyrere for å verne miljøet?
 Bør man fly mindre for å spare miljøet?
@@ -206,6 +219,7 @@ Hvordan påvirker transport/trafikk miljøet?
 På hvilken måte er naturen viktig for den som bor i byen?
 
 ## Politikk
+
 Burde Norge avskaffe monarkiet?
 Burde Norge bli medlem av EU?
 Burde småbarnsforeldre få ekstra ferie?
@@ -226,6 +240,7 @@ Hvilken styreform mener du er best for et land?
 Synes du kongehuset burde hatt politisk makt?
 
 ## Psykologi
+
 Bør man alltid si hva man mener?
 Bør man si ifra hvis man føler seg dårlig behandlet?
 Bør venner alltid hjelpe hverandre?
@@ -242,6 +257,7 @@ Hva kan man gjøre for å unngå stress?
 Hva trenger man for å ha et godt liv?
 
 ## Reising
+
 Bør kollektivtransport bli gratis?
 Er det bedre å reise kollektivt enn å bruke bil?
 Er du fornøyd med kollektivtilbudet på hjemstedet ditt?
@@ -252,6 +268,7 @@ Hvordan er trafikken i Norge sammenlignet med i hjemlandet ditt?
 Hvordan er kollektivtransporten i Norge sammenlignet med i hjemlandet ditt?
 
 ## Samfunn
+
 Bør innvandrere feire 17. mai?
 Er det bra at politiet er synlig ute i samfunnet, eller er synlig politi negativt?
 Er det greit å reise under en pandemi?
@@ -276,6 +293,7 @@ I hvilken del av landet er det best å bo?
 Tror du det er bedre service i butikker nå enn før i tida?
 
 ## Skole
+
 Burde alle elever få gratis skolelunsj?
 Burde alle minoritetsspråklige barn få morsmålsundervisning?
 Burde fritidsaktiviteter utenfor skoletid være gratis?
@@ -294,6 +312,7 @@ Hvordan er en god lærer?
 Hvordan kan skolen og hjemmet samarbeide på en god måte?
 
 ## Språk
+
 Bør Norge fortsette å ha to offisielle skriftspråk?
 Bør norsk skole tilby undervisning på innvandrernes morsmål, eller er det innvandrernes eget ansvar å lære barna sine morsmålet?
 Er det best å lære norsk på norskkurs eller ute i samfunnet?
@@ -309,6 +328,7 @@ Hvilket nivå i norsk bør kreves for å jobbe i Norge?
 Hvilket språklig nivå bør kreves av folk som skal jobbe i barnehager?
 
 ## Utdanning
+
 Blir det noen gang for sent å ta utdanning?
 Burde alle lære seg engelsk?
 Bør man ta mer utdanning selv om man har fast jobb?
@@ -325,6 +345,7 @@ Hvem bør betale for omskolering? Studenten, arbeidsplassen eller samfunnet?
 Hvordan tror du foreldrenes utdanningsnivå påvirker barna?
 
 ## Økonomi
+
 Burde det bli forbudt å ta opp forbrukslån?
 Burde rike folk betale mer skatt enn de gjør i dag?
 Burde Statens oljeformue deles ut til folket?

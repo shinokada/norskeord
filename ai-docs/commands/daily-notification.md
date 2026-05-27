@@ -1,4 +1,4 @@
-# To check send-push-reminders that send Web push and email notification 
+# To check send-push-reminders that send Web push and email notification
 
 ```
 curl -L -X POST 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push-reminders' \
@@ -9,6 +9,7 @@ curl -L -X POST 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push
 ```
 
 This should return:
+
 ```
 {"ok":true,"push_sent":1,"push_failed":0,"email_sent":1,"email_failed":0,"skipped":0,"stale_cleaned":0}%
 ```

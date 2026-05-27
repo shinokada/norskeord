@@ -2,7 +2,6 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-
 ==========
 You wrote `The fixed content is ready. Now writing it back to your filesystem:`. Why don't you ask me to copy it and replace it manually rather than use `write_file` which takes a long time to complete.
 Or write a bash script or python, so that I can run it since you are not able to run it.
@@ -22,10 +21,7 @@ money-numbers → money
 Then apply the matching slug and i18n key changes to src/lib/types.ts, messages/en.json, and messages/nb.json using edit_file. For en.json and nb.json: remove the old keys, add new keys category_a2_health, category_a2_body, category_a2_technology, category_a2_environment, category_a2_money with proper display names. For nb.json use Norwegian display names."
 ```
 
-Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
-==========
-
-
+# Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ---
 
@@ -34,7 +30,6 @@ Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implemen
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
 Can you scan src/lib/data/vocab-XX.json files to find duplicates norsk entries and list them with its level.
-
 
 ---
 
@@ -142,12 +137,12 @@ From Relearning (forgotten):
 - Good / Easy → graduates back to Review (memorized again)
 
 So in short:
-| Legend label | FSRS State | How you get there                      |
+| Legend label | FSRS State | How you get there |
 | ------------ | ---------- | -------------------------------------- |
-| New          | New        | Never rated                            |
-| Learning     | Learning   | Rated at least once, not yet graduated |
-| Memorized    | Review     | Passed learning steps                  |
-| Forgotten    | Relearning | Hit "Again" on a memorized card        |
+| New | New | Never rated |
+| Learning | Learning | Rated at least once, not yet graduated |
+| Memorized | Review | Passed learning steps |
+| Forgotten | Relearning | Hit "Again" on a memorized card |
 
 The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 
