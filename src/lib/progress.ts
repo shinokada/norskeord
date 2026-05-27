@@ -76,6 +76,20 @@ export function clearAnonymousProgress(): void {
 }
 
 /**
+ * Deletes all card_progress and study_days rows for a user from Supabase.
+ * Called when the user chooses "Reset everywhere" on the stats page.
+ * Errors are swallowed — the caller has already cleared localStorage.
+ */
+export async function resetProgressInSupabase(userId: string): Promise<void> {
+  try {
+    await supabase.from('card_progress').delete().eq('user_id', userId);
+    await supabase.from('study_days').delete().eq('user_id', userId);
+  } catch {
+    // Silent failure — local reset already happened
+  }
+}
+
+/**
  * Removes all progress keys belonging to a specific user from localStorage.
  * Called on logout so the next person who opens the browser sees no progress.
  */
