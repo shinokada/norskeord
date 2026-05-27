@@ -35,58 +35,16 @@ export function invalidateFsrsCache(userId: string) {
 export const LS_PREFIX = 'progress-';
 
 /**
- * Returns the localStorage key prefix for a given user.
- * - Logged-in users:  'progress-{userId}-'
- * - Anonymous users:  'progress-'
- *
- * Namespacing prevents one user's study data from bleeding into another
- * account when the same browser is used by multiple people.
- */
-export function lsPrefix(userId?: string | null): string {
-  return userId ? `${LS_PREFIX}${userId}-` : LS_PREFIX;
-}
-
-/**
- * Removes all anonymous (non-user-namespaced) progress keys from localStorage.
- * Called after a successful login sync so the anonymous data is no longer
- * accessible without authentication.
- */
-export function clearAnonymousProgress(): void {
-  const keysToRemove: string[] = [];
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    // Anonymous keys start with 'progress-' but NOT 'progress-{uuid}-'
-    // A UUID always starts with a hex character, never a digit pattern used
-    // in norsk words, so we check: starts with LS_PREFIX but the next char
-    // after the prefix is NOT part of a UUID segment.
-    // Simpler: anonymous keys do NOT contain a second '-' after 'progress-'
-    // because UUIDs always produce 'progress-<uuid>-<norsk>'.
-    if (key?.startsWith(LS_PREFIX)) {
-      const rest = key.slice(LS_PREFIX.length);
-      // UUID-namespaced keys have the form '<uuid>-<norsk>', i.e. rest contains '-'
-      // Anonymous keys have the form '<norsk>' which never contains the UUID pattern.
-      // We detect anonymous keys by checking they do NOT look like 'xxxxxxxx-xxxx-...'
-      const looksLikeUuidNamespaced = /^[0-9a-f]{8}-/.test(rest);
-      if (!looksLikeUuidNamespaced) {
-        keysToRemove.push(key);
-      }
-    }
-  }
-  keysToRemove.forEach((k) => localStorage.removeItem(k));
-}
-
-/**
- * Removes all progress keys belonging to a specific user from localStorage.
+ * Removes all progress keys for guest/free users from localStorage.
  * Called on logout so the next person who opens the browser sees no progress.
  */
-export function clearUserProgress(userId: string): void {
-  const prefix = lsPrefix(userId);
+export function clearUserProgress(): void {
+  // Guest/free users store keys as 'progress-<norsk>'.
+  // (Plus users no longer use localStorage for progress at all.)
   const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key?.startsWith(prefix)) {
-      keysToRemove.push(key);
-    }
+    if (key?.startsWith(LS_PREFIX)) keysToRemove.push(key);
   }
   keysToRemove.forEach((k) => localStorage.removeItem(k));
 }
@@ -98,29 +56,26 @@ const RATING_MAP: Record<FSRSRating, Grade> = {
   easy: Rating.Easy
 };
 
-// ── Local storage ────────────────────────────────────────────────────────────
+// ── Local storage (guest / free users only) ──────────────────────────────────
 
 /**
- * Loads the progress map from localStorage for the given user.
- * Pass `userId` for logged-in users so only their namespaced keys are read.
- * Pass nothing / null for anonymous (pre-login) use.
+ * Loads the progress map from localStorage.
+ * Only used for guest and free users. Plus users call loadProgressMapFromSupabase.
  */
-export function loadProgressMap(userId?: string | null): Record<string, CardProgress> {
-  const prefix = lsPrefix(userId);
+export function loadProgressMap(): Record<string, CardProgress> {
   const map: Record<string, CardProgress> = {};
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key?.startsWith(prefix)) {
+    if (key?.startsWith(LS_PREFIX)) {
       try {
         const raw = localStorage.getItem(key);
         if (raw) {
           const parsed = JSON.parse(raw) as CardProgress;
-          // Rehydrate due date as Date object (JSON.parse gives a string)
           parsed.fsrs.due = new Date(parsed.fsrs.due);
           if (parsed.fsrs.last_review) {
             parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
           }
-          map[key.slice(prefix.length)] = parsed;
+          map[key.slice(LS_PREFIX.length)] = parsed;
         }
       } catch {
         // Ignore malformed entries
@@ -195,89 +150,62 @@ function fromRow(row: ProgressRow): CardProgress {
   };
 }
 
-// ── Sync helpers ─────────────────────────────────────────────────────────────
+// ── Supabase — Plus users ────────────────────────────────────────────────────
 
 /**
- * Called once on login (Plus users only).
- *
- * 1. Upserts all localStorage entries to Supabase (local wins on conflict,
- *    since the user has been studying on this device).
- * 2. Pulls any rows from Supabase that are NOT in localStorage (covers cards
- *    reviewed on another device) and writes them to localStorage.
- *
- * Returns the merged progress map so the caller can update UI state.
+ * Fetches all card_progress rows for a Plus user and returns them as a
+ * CardProgress map keyed by norsk word. Called on mount for Plus users
+ * instead of loadProgressMap.
  */
-export async function syncProgressOnLogin(userId: string): Promise<Record<string, CardProgress>> {
-  // Load any anonymous progress (pre-login) to merge it into the user's account.
-  const anonymousLocal = loadProgressMap(null);
-  // Also load any already-namespaced progress for this user (e.g. from a previous session).
-  const userLocal = loadProgressMap(userId);
-  // Merge: user-namespaced entries win over anonymous ones for the same word.
-  const local = { ...anonymousLocal, ...userLocal };
+export async function loadProgressMapFromSupabase(
+  userId: string
+): Promise<Record<string, CardProgress>> {
+  const { data, error } = await supabase.from('card_progress').select('*').eq('user_id', userId);
 
-  // 1. Push local → Supabase (both anonymous and user-namespaced merged above)
-  const localEntries = Object.entries(local);
-  if (localEntries.length > 0) {
-    const rows = localEntries.map(([norsk, progress]) => ({
-      user_id: userId,
-      ...toRow(norsk, progress)
-    }));
+  if (error || !data) return {};
 
-    // Upsert in batches of 100 to stay within Supabase request limits
-    for (let i = 0; i < rows.length; i += 100) {
-      await supabase
-        .from('card_progress')
-        .upsert(rows.slice(i, i + 100), { onConflict: 'user_id,norsk' });
-    }
+  const map: Record<string, CardProgress> = {};
+  for (const row of data as ProgressRow[]) {
+    map[row.norsk] = fromRow(row);
   }
-
-  // 2. Pull remote → local (only rows not already in localStorage)
-  const { data: remoteRows } = await supabase
-    .from('card_progress')
-    .select('*')
-    .eq('user_id', userId);
-
-  const merged = { ...local };
-
-  const userPrefix = lsPrefix(userId);
-  if (remoteRows) {
-    for (const row of remoteRows as ProgressRow[]) {
-      if (!merged[row.norsk]) {
-        // Card exists remotely but not locally — write it to user-namespaced localStorage
-        const progress = fromRow(row);
-        localStorage.setItem(userPrefix + row.norsk, JSON.stringify(progress));
-        merged[row.norsk] = progress;
-      } else {
-        // Ensure the merged local entry is written under the user-namespaced key
-        localStorage.setItem(userPrefix + row.norsk, JSON.stringify(merged[row.norsk]));
-      }
-    }
-  }
-
-  // Also write any local-only entries (not yet in Supabase) under user-namespaced keys
-  for (const [norsk, progress] of Object.entries(merged)) {
-    const userKey = userPrefix + norsk;
-    if (!localStorage.getItem(userKey)) {
-      localStorage.setItem(userKey, JSON.stringify(progress));
-    }
-  }
-
-  return merged;
+  return map;
 }
 
 /**
- * Writes a single progress record to Supabase.
- * Called by saveProgress when a Plus user is logged in.
- * Errors are swallowed — localStorage is always written first,
- * so a network failure won't lose the rating.
+ * Upserts a single card_progress row for a Plus user, then returns the
+ * updated progress map. Called by saveProgress for Plus users.
+ *
+ * Returns the optimistically-updated map immediately (the Supabase write
+ * happens in the background). If the write fails silently, the in-memory
+ * map is still correct for this session.
  */
-async function pushRowToSupabase(userId: string, norsk: string, progress: CardProgress) {
+async function saveProgressToSupabase(
+  userId: string,
+  norsk: string,
+  progress: CardProgress,
+  progressMap: Record<string, CardProgress>
+): Promise<Record<string, CardProgress>> {
+  const updated = { ...progressMap, [norsk]: progress };
   try {
     await supabase
       .from('card_progress')
       .upsert({ user_id: userId, ...toRow(norsk, progress) }, { onConflict: 'user_id,norsk' });
   } catch {
-    // Silent failure — localStorage is the source of truth offline
+    // Silent failure — in-memory map is still correct for this session
+  }
+  return updated;
+}
+
+/**
+ * Deletes all card_progress and study_days rows for a user from Supabase.
+ * Called when a Plus user resets their progress from the stats page.
+ */
+export async function resetProgressInSupabase(userId: string): Promise<void> {
+  try {
+    await supabase.from('card_progress').delete().eq('user_id', userId);
+    await supabase.from('study_days').delete().eq('user_id', userId);
+  } catch {
+    // Silent failure
   }
 }
 
@@ -285,7 +213,7 @@ async function pushRowToSupabase(userId: string, norsk: string, progress: CardPr
 
 /**
  * Returns the user's personal FSRS weights from user_settings, or null if not
- * yet optimised. The caller falls back to default weights when null is returned.
+ * yet optimised.
  */
 export async function loadFsrsWeights(userId: string): Promise<number[] | null> {
   const { data } = await supabase
@@ -298,14 +226,7 @@ export async function loadFsrsWeights(userId: string): Promise<number[] | null> 
 
 /**
  * Fires the optimise-fsrs-weights Edge Function when the user crosses a
- * 1,000-review milestone. Fire-and-forget — errors are swallowed so a network
- * failure never blocks the rating flow.
- *
- * Schedule:
- *   0–999    default weights
- *   1,000    first optimisation
- *   +1,000 intervals up to 5,000   re-optimise
- *   5,000+   re-optimise every +5,000
+ * 1,000-review milestone. Fire-and-forget.
  */
 async function maybeTriggerOptimisation(userId: string, totalReps: number) {
   const shouldOptimise =
@@ -321,39 +242,33 @@ async function maybeTriggerOptimisation(userId: string, totalReps: number) {
       body: JSON.stringify({ user_id: userId })
     });
   } catch {
-    // Silent failure — optimisation is best-effort
+    // Silent failure
   }
 }
 
 // ── Core progress functions ──────────────────────────────────────────────────
 
 /**
- * Synchronously computes the next FSRS card state, writes to localStorage,
- * and returns the updated progress map.
+ * Computes the next FSRS card state and persists it.
  *
- * Async side-effects (Supabase dual-write, weight optimisation) are fired
- * as detached promises — they never block the return value or throw.
+ * - Plus users (userId present): writes directly to Supabase. localStorage is
+ *   not touched. Returns a Promise resolving to the updated map.
+ * - Guest/free users (userId null): writes synchronously to localStorage.
+ *   Returns the updated map directly (wrapped in a resolved Promise for a
+ *   uniform call signature).
  *
- * Personal FSRS weights are applied only via the async `getFsrs()` path
- * (called separately in the component on mount). The synchronous path always
- * uses default weights, which is correct for the vast majority of users and
- * required for test compatibility.
- *
- * @param userId - Pass the user's ID only for Plus users; pass null for free
- *   users to skip all Supabase writes.
+ * Callers should await this function regardless of user type.
  */
-export function saveProgress(
+export async function saveProgress(
   entry: VocabEntry,
   rating: FSRSRating,
   progressMap: Record<string, CardProgress>,
   userId?: string | null
-): Record<string, CardProgress> {
+): Promise<Record<string, CardProgress>> {
   const now = new Date();
   const existing = progressMap[entry.norsk] ?? null;
   const card = existing ? existing.fsrs : createEmptyCard(now);
 
-  // Always use default FSRS synchronously so this function stays synchronous.
-  // Personal weights (Phase 2-E) improve accuracy but are not load-path critical.
   const result = DEFAULT_FSRS.next(card, now, RATING_MAP[rating]);
 
   const updated: CardProgress = {
@@ -365,25 +280,21 @@ export function saveProgress(
     category: entry.category
   };
 
-  // Always write to localStorage first (works offline)
-  const prefix = lsPrefix(userId);
-  localStorage.setItem(prefix + entry.norsk, JSON.stringify(updated));
-
-  // Async side-effects — fire-and-forget, never block the return value.
-  // Only run for Plus users (userId is null for free users).
   if (userId) {
-    void pushRowToSupabase(userId, entry.norsk, updated);
+    // Plus: Supabase only — no localStorage
     void recordStudyDay(userId);
 
-    // Check if this rating crosses an optimisation milestone.
-    const totalReps = Object.values({ ...progressMap, [entry.norsk]: updated }).reduce(
-      (sum, c) => sum + c.fsrs.reps,
-      0
-    );
-    void maybeTriggerOptimisation(userId, totalReps);
-  }
+    const newMap = await saveProgressToSupabase(userId, entry.norsk, updated, progressMap);
 
-  return { ...progressMap, [entry.norsk]: updated };
+    const totalReps = Object.values(newMap).reduce((sum, c) => sum + c.fsrs.reps, 0);
+    void maybeTriggerOptimisation(userId, totalReps);
+
+    return newMap;
+  } else {
+    // Guest / free: localStorage only
+    localStorage.setItem(LS_PREFIX + entry.norsk, JSON.stringify(updated));
+    return { ...progressMap, [entry.norsk]: updated };
+  }
 }
 
 export function countDueToday(progressMap: Record<string, CardProgress>): number {
@@ -391,7 +302,7 @@ export function countDueToday(progressMap: Record<string, CardProgress>): number
   return Object.values(progressMap).filter((p) => new Date(p.fsrs.due) <= now).length;
 }
 
-// ── Streak + activity helpers ──────────────────────────────────────────────────
+// ── Streak + activity helpers ────────────────────────────────────────────────
 
 /**
  * Returns today's date as a YYYY-MM-DD string in the user's local timezone.
@@ -402,10 +313,8 @@ export function todayLocalDate(): string {
 }
 
 /**
- * Counts the current streak (consecutive calendar days with at least one card
- * reviewed) using `lastSeen` values from localStorage. Works entirely
- * client-side — used for free users and as an immediate value before the
- * Supabase `study_days` fetch completes.
+ * Counts the current streak from localStorage lastSeen values.
+ * Used for guest/free users only.
  */
 export function getStreakFromLocalStorage(progressMap: Record<string, CardProgress>): number {
   const studiedDates = new Set<string>();
@@ -420,7 +329,6 @@ export function getStreakFromLocalStorage(progressMap: Record<string, CardProgre
 
   let streak = 0;
   const cursor = new Date();
-  // If today has no activity yet, start counting from yesterday
   const todayStr = todayLocalDate();
   if (!studiedDates.has(todayStr)) {
     cursor.setDate(cursor.getDate() - 1);
@@ -437,21 +345,19 @@ export function getStreakFromLocalStorage(progressMap: Record<string, CardProgre
 }
 
 /**
- * Upserts a study_days row for today, incrementing the card count.
- * Fire-and-forget — called from saveProgress for Plus users only.
+ * Upserts a study_days row for today. Fire-and-forget, Plus users only.
  */
 export async function recordStudyDay(userId: string): Promise<void> {
   try {
     const today = todayLocalDate();
     await supabase.rpc('upsert_study_day', { p_user_id: userId, p_day: today });
   } catch {
-    // Silent failure — streak data is non-critical
+    // Silent failure
   }
 }
 
 /**
  * Fetches all study_days rows for a Plus user.
- * Returns a map of { 'YYYY-MM-DD': cardCount }.
  */
 export async function loadStudyDays(userId: string): Promise<Record<string, number>> {
   const { data } = await supabase.from('study_days').select('day, cards').eq('user_id', userId);
@@ -465,36 +371,28 @@ export async function loadStudyDays(userId: string): Promise<Record<string, numb
 }
 
 export interface ActivityCell {
-  date: string; // YYYY-MM-DD
-  count: number; // cards reviewed that day
-  level: 0 | 1 | 2 | 3 | 4; // 0=none 1=1-5 2=6-15 3=16-30 4=30+
-  weekday: 1 | 2 | 3 | 4 | 5 | 6 | 7; // 1=Mon … 7=Sun (ISO)
+  date: string;
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
+  weekday: 1 | 2 | 3 | 4 | 5 | 6 | 7;
 }
 
-/**
- * Builds the full 7-day-per-week activity grid for the chart.
- * Returns cells in chronological order (oldest first), one per calendar day.
- * @param studyDays  Map of { 'YYYY-MM-DD': cardCount }
- * @param weeks      How many weeks back to include (default 26)
- */
 export function buildActivityGrid(studyDays: Record<string, number>, weeks = 26): ActivityCell[] {
   const cells: ActivityCell[] = [];
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  // Find the Monday that starts `weeks` weeks ago
-  const dayOfWeek = today.getDay() || 7; // Sun=0 → 7 (ISO weekday)
+  const dayOfWeek = today.getDay() || 7;
   const startOfThisWeek = new Date(today);
   startOfThisWeek.setDate(today.getDate() - (dayOfWeek - 1));
 
   const startDate = new Date(startOfThisWeek);
   startDate.setDate(startOfThisWeek.getDate() - (weeks - 1) * 7);
 
-  // Walk day-by-day from startDate to today
   const cursor = new Date(startDate);
   while (cursor <= today) {
-    const wd = cursor.getDay(); // 0=Sun … 6=Sat
-    const isoWeekday = (wd === 0 ? 7 : wd) as ActivityCell['weekday']; // 1=Mon … 7=Sun
+    const wd = cursor.getDay();
+    const isoWeekday = (wd === 0 ? 7 : wd) as ActivityCell['weekday'];
 
     const dateStr = `${cursor.getFullYear()}-${String(cursor.getMonth() + 1).padStart(2, '0')}-${String(cursor.getDate()).padStart(2, '0')}`;
     const count = studyDays[dateStr] ?? 0;
@@ -517,21 +415,12 @@ export interface ScheduledIntervals {
   easy: string;
 }
 
-/**
- * Speculatively compute all four FSRS next-due intervals for display
- * beneath the rating buttons (2-C). Pure math — no I/O.
- */
 export function previewIntervals(
   existing: CardProgress | null,
   now: Date,
   fsrsInstance?: FSRS
 ): ScheduledIntervals {
   const f = fsrsInstance ?? DEFAULT_FSRS;
-  // When an existing card is provided, normalize its due date to `now` so that
-  // fsrs.next() doesn't throw when the stored due date is after the preview
-  // timestamp (e.g. in tests or when the card isn't overdue yet). The scheduling
-  // state (stability, difficulty, reps, etc.) is preserved so FSRS produces the
-  // correct next intervals for a card at this maturity level.
   const card = existing ? { ...existing.fsrs, due: now, last_review: now } : createEmptyCard(now);
 
   const labels = {} as Record<FSRSRating, string>;
@@ -552,4 +441,48 @@ function formatInterval(due: Date, now: Date): string {
   if (diffDays < 30) return `${diffDays}d`;
   const diffMonths = Math.round(diffDays / 30);
   return `${diffMonths}mo`;
+}
+
+// ── Free → Plus migration ──────────────────────────────────────────────────
+
+/**
+ * One-time migration: copies progress from localStorage into Supabase.
+ * Called on login for Plus users when Supabase has zero rows (i.e. the user
+ * has just upgraded from free). After a successful upsert, clears the
+ * localStorage keys so the migration never runs again on this device.
+ */
+export async function migrateLocalProgressToSupabase(userId: string): Promise<void> {
+  const localMap = loadProgressMap();
+  if (Object.keys(localMap).length === 0) return;
+
+  const rows = Object.entries(localMap).map(([norsk, progress]) => ({
+    user_id: userId,
+    ...toRow(norsk, progress)
+  }));
+
+  const { error } = await supabase
+    .from('card_progress')
+    .upsert(rows, { onConflict: 'user_id,norsk' });
+
+  if (!error) {
+    clearUserProgress(); // remove progress-* keys from localStorage
+  }
+}
+
+// ── Undo helpers (guest / free users) ───────────────────────────────────────
+
+/**
+ * Restores a previous card state to localStorage.
+ * Only called for guest/free users — Plus users restore via Supabase upsert
+ * in the component's undo() handler.
+ */
+export function restoreProgressToLocalStorage(
+  norsk: string,
+  previousProgress: CardProgress | null
+): void {
+  if (previousProgress === null) {
+    localStorage.removeItem(LS_PREFIX + norsk);
+  } else {
+    localStorage.setItem(LS_PREFIX + norsk, JSON.stringify(previousProgress));
+  }
 }
