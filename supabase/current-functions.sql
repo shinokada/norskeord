@@ -37,3 +37,25 @@ SELECT cron.schedule(
     );
   $$
 );
+
+-- ── pg_cron: cleanup-unconfirmed-users ────────────────────────────────────────
+-- Deletes auth.users rows where the email was never confirmed after 7 days.
+-- Runs daily at 03:00 UTC (05:00 Oslo) — quiet hours, low traffic.
+-- All dependent public.* rows (profiles, subscriptions, study_days, etc.)
+-- are removed automatically via ON DELETE CASCADE.
+-- See also: ./cleanup-unconfirmed-users.sql
+--
+-- To deploy: Supabase Dashboard → Integrations → Cron → + New cron job
+--   Name:     cleanup-unconfirmed-users
+--   Schedule: 0 3 * * *
+--   Command:  paste the DELETE statement below
+
+SELECT cron.schedule(
+  'cleanup-unconfirmed-users',
+  '0 3 * * *',
+  $$
+    DELETE FROM auth.users
+    WHERE email_confirmed_at IS NULL
+      AND created_at < now() - INTERVAL '7 days';
+  $$
+);
