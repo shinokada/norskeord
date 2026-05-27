@@ -4,7 +4,7 @@ import { injectPlusPlan } from './helpers.js';
 test('home page has expected h1', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'Learn Norwegian vocabulary & phrase that actually sticks'
+    'Learn Norwegian vocabulary & phrases that actually sticks'
   );
 });
 

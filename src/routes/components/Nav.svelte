@@ -129,13 +129,13 @@
     {#if !user}
       <a
         href="/plus?checkout=1"
-        class="inline-block rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
+        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
       >
         {m.nav_plus_badge()}
       </a>
       <a
         href="/auth/login"
-        class="inline-block rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 sm:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {m.nav_log_in()}
       </a>
@@ -143,14 +143,14 @@
     {#if user && !isPlus}
       <a
         href="/plus"
-        class="inline-block rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
+        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
       >
         {m.nav_plus_badge()}
       </a>
     {/if}
     {#if user}
       <Avatar class="acs ml-2.5" size="xs" />
-      <Dropdown simple class="w-56" triggeredBy=".acs">
+      <Dropdown simple class="w-56 dark:border-gray-700 dark:bg-blue-950" triggeredBy=".acs">
         <DropdownHeader>
           {#if displayName}
             <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">
@@ -165,12 +165,18 @@
         </DropdownHeader>
         <DropdownDivider />
         <DropdownGroup>
-          <DropdownItem href="/my-profile">{m.nav_my_profile()}</DropdownItem>
-          <DropdownItem href="/stats">{m.nav_my_progress()}</DropdownItem>
+          <DropdownItem class="dark:hover:bg-blue-900" href="/my-profile"
+            >{m.nav_my_profile()}</DropdownItem
+          >
+          <DropdownItem class="dark:hover:bg-blue-900" href="/stats"
+            >{m.nav_my_progress()}</DropdownItem
+          >
           {#if isPlus}
-            <DropdownItem href="/plus">{m.nav_plus()}</DropdownItem>
+            <DropdownItem class="dark:hover:bg-blue-900" href="/plus">{m.nav_plus()}</DropdownItem>
           {/if}
-          <DropdownItem onclick={logout}>{m.nav_log_out()}</DropdownItem>
+          <DropdownItem class="dark:hover:bg-blue-900" onclick={logout}
+            >{m.nav_log_out()}</DropdownItem
+          >
         </DropdownGroup>
       </Dropdown>
     {/if}
@@ -182,8 +188,42 @@
     breakpoint="lg"
     {activeUrl}
     class="order-2 lg:order-1"
-    classes={{ active: activeClass, nonActive: nonActiveClass, ul: 'p-0' }}
+    classes={{
+      active: activeClass,
+      nonActive: nonActiveClass,
+      ul: 'p-0 dark:!bg-blue-950'
+    }}
   >
+    <!-- Plus and Log in — visible only on mobile (hidden on sm+) -->
+    {#if !user}
+      <NavLi class="sm:hidden">
+        <div class="flex gap-4">
+          <a
+            href="/plus?checkout=1"
+            class="inline-block rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
+          >
+            {m.nav_plus_badge()}
+          </a>
+          <a
+            href="/auth/login"
+            class="inline-block rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+          >
+            {m.nav_log_in()}
+          </a>
+        </div>
+      </NavLi>
+    {/if}
+    {#if user && !isPlus}
+      <NavLi class="sm:hidden">
+        <a
+          href="/plus"
+          class="inline-block w-full rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
+        >
+          {m.nav_plus_badge()}
+        </a>
+      </NavLi>
+    {/if}
+
     <!-- Per-level mega-menus — all categories, no gating -->
     {#each menus as { level, items } (level)}
       <NavLi id="mega-trigger-{level}" class="cursor-pointer">
@@ -191,7 +231,12 @@
         <ChevronDownOutline size="sm" class="ms-1 inline" />
       </NavLi>
 
-      <MegaMenu {items} triggeredBy="#mega-trigger-{level}" classes={{ ul: '!gap-x-6' }}>
+      <MegaMenu
+        {items}
+        triggeredBy="#mega-trigger-{level}"
+        class="dark:border-gray-700 dark:bg-blue-950"
+        classes={{ ul: '!gap-x-6' }}
+      >
         {#snippet children({ item })}
           {@const locked = !isPlus && item.locked}
           {@const isPreview = item.href?.endsWith('/uttrykk-preview')}
@@ -221,11 +266,14 @@
         class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
       />
     </NavLi>
-    <Dropdown simple class="w-44">
-      <DropdownItem href={isPlus ? '/quiz' : '/plus?ref=nav-quiz'}>
+    <Dropdown simple class="w-44 dark:border-gray-700 dark:bg-blue-950">
+      <DropdownItem class="dark:hover:bg-blue-900" href={isPlus ? '/quiz' : '/plus?ref=nav-quiz'}>
         {m.nav_quiz()}{isPlus ? '' : ' 🔒'}
       </DropdownItem>
-      <DropdownItem href={isPlus ? '/norskproven/practice' : '/plus?ref=nav-practice-tests'}>
+      <DropdownItem
+        class="dark:hover:bg-blue-900"
+        href={isPlus ? '/norskproven/practice' : '/plus?ref=nav-practice-tests'}
+      >
         {m.nav_practice_tests()}{isPlus ? '' : ' 🔒'}
       </DropdownItem>
     </Dropdown>
@@ -235,11 +283,15 @@
         class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
       />
     </NavLi>
-    <Dropdown simple class="w-44">
-      <DropdownItem href="/norskproven">{m.nav_norskproven()}</DropdownItem>
-      <DropdownItem href="/guide">{m.nav_guide()}</DropdownItem>
-      <DropdownItem href="/resources">{m.nav_resources()}</DropdownItem>
-      <DropdownItem href="/blog">Blog</DropdownItem>
+    <Dropdown simple class="w-44 dark:border-gray-700 dark:bg-blue-950">
+      <DropdownItem class="dark:hover:bg-blue-900" href="/norskproven"
+        >{m.nav_norskproven()}</DropdownItem
+      >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/guide">{m.nav_guide()}</DropdownItem>
+      <DropdownItem class="dark:hover:bg-blue-900" href="/resources"
+        >{m.nav_resources()}</DropdownItem
+      >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/blog">Blog</DropdownItem>
     </Dropdown>
   </NavUl>
 </Navbar>
