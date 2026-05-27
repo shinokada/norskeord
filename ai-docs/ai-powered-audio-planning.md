@@ -17,18 +17,21 @@ VG's audio is indeed noticeably better than browser Web Speech API — the diffe
 Yes, and it would fit norskeord quite naturally. A few approaches:
 
 ### Option A — Pre-generate and store audio (VG's approach)
+
 Generate MP3 files for every Norwegian word/example sentence at build time or via a script, upload them to Supabase Storage, and serve them from there. The `SpeakButton` component just plays a URL instead of calling Web Speech.
 
 **Pros:** Zero latency, consistent quality everywhere, no API calls at runtime.  
 **Cons:** Storage costs (small for vocab), and you'd need to re-generate if pronunciations change. For ~2,000 B2 words + example sentences, this is maybe a few thousand API calls up-front.
 
 ### Option B — Generate on demand, cache in Supabase
+
 First request for a word generates audio via ElevenLabs API (server-side route), stores it in Supabase Storage, future plays fetch the cached file.
 
 **Pros:** Only generates what users actually encounter, no big up-front batch job.  
 **Cons:** First play has latency; requires a server-side route.
 
 ### Option C — ElevenLabs only for Plus users
+
 Free tier keeps Web Speech API, Plus users get pre-generated high-quality audio. Actually a nice monetization angle.
 
 ---
@@ -75,6 +78,7 @@ If you generate **one audio file per entry** (word + example sentence combined),
 ### Step 2 — How big are the MP3s?
 
 ElevenLabs output at standard quality (MP3, 128kbps):
+
 - A single Norwegian word: ~5–15 KB
 - A word + example sentence (~40–60 chars): ~30–60 KB
 
@@ -99,6 +103,7 @@ The real cost is the **one-time generation**, not Supabase hosting:
 4,100 entries × ~80 chars average (word + example) = **~328,000 characters**
 
 ElevenLabs pricing:
+
 - Free tier: 10,000 chars/month — not enough for a full batch
 - **Starter ($5/mo): 30,000 chars** — need 11 months, impractical
 - **Creator ($22/mo): 100,000 chars** — do it in 4 months, or just pay for one month and cancel

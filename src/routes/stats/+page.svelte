@@ -3,6 +3,7 @@
   import { page } from '$app/state';
   import {
     loadProgressMap,
+    loadProgressMapFromSupabase,
     countDueToday,
     getStreakFromLocalStorage,
     loadStudyDays,
@@ -19,7 +20,7 @@
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
-  let confirmReset = $state<null | 'device' | 'everywhere'>(null);
+  let confirmReset = $state(false);
   let resetting = $state(false);
   let mounted = $state(false);
 
@@ -185,21 +186,37 @@
   }
 
   onMount(async () => {
-    progressMap = loadProgressMap();
-    mounted = true;
-
-    streak = getStreakFromLocalStorage(progressMap);
-
     const userId = page.data.user?.id as string | undefined;
 
-    if (userId && isPlus) {
-      // Plus users: activity is synced to Supabase study_days across devices.
+    if (isPlus && userId) {
+      // Plus: single source of truth is Supabase
+      progressMap = await loadProgressMapFromSupabase(userId);
+    } else {
+      // Guest / free: localStorage
+      progressMap = loadProgressMap();
+    }
+    mounted = true;
+
+    if (isPlus && userId) {
+      streak = 0; // streak comes from study_days below
       const studyDays = await loadStudyDays(userId);
       activityCells = buildActivityGrid(studyDays, 26);
+      // Derive streak from study_days
+      const studyDaySet = new Set(Object.keys(studyDays));
+      let s = 0;
+      const todayStr = new Date().toISOString().slice(0, 10);
+      let cursorMs = Date.now();
+      // If today has no entry, start counting from yesterday
+      if (!studyDaySet.has(todayStr)) cursorMs -= 86_400_000;
+      while (true) {
+        const key = new Date(cursorMs).toISOString().slice(0, 10);
+        if (!studyDaySet.has(key)) break;
+        s++;
+        cursorMs -= 86_400_000;
+      }
+      streak = s;
     } else {
-      // Free logged-in users and anonymous guests: derive from localStorage
-      // lastSeen values. (recordStudyDay is only called for Plus users in
-      // saveProgress, so study_days is always empty for free accounts.)
+      streak = getStreakFromLocalStorage(progressMap);
       const localStudyDays: Record<string, number> = {};
       for (const p of Object.values(progressMap)) {
         if (p.lastSeen) {
@@ -214,35 +231,29 @@
     activityLoading = false;
   });
 
-  function clearLocalProgress() {
-    const userId = page.data.user?.id as string | undefined;
-    const prefix = userId ? `progress-${userId}-` : 'progress-';
-    const keysToRemove: string[] = [];
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key?.startsWith(prefix)) keysToRemove.push(key);
-    }
-    keysToRemove.forEach((k) => localStorage.removeItem(k));
-    progressMap = {};
-  }
-
   async function handleReset() {
     if (!confirmReset) return;
     resetting = true;
     try {
-      if (confirmReset === 'device') {
-        clearLocalProgress();
+      const userId = page.data.user?.id as string | undefined;
+      if (userId && isPlus) {
+        // Plus: Supabase is the only store — wipe it
+        await resetProgressInSupabase(userId);
       } else {
-        // 'everywhere': wipe local first, then cloud
-        clearLocalProgress();
-        const userId = page.data.user?.id as string | undefined;
-        if (userId) await resetProgressInSupabase(userId);
-        // Also reset activity chart
-        activityCells = buildActivityGrid({}, 26);
-        streak = 0;
+        // Guest / free: wipe localStorage
+        const prefix = 'progress-';
+        const keysToRemove: string[] = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key?.startsWith(prefix)) keysToRemove.push(key);
+        }
+        keysToRemove.forEach((k) => localStorage.removeItem(k));
       }
+      progressMap = {};
+      activityCells = buildActivityGrid({}, 26);
+      streak = 0;
     } finally {
-      confirmReset = null;
+      confirmReset = false;
       resetting = false;
     }
   }
@@ -453,7 +464,7 @@
             {resetting ? m.stats_resetting() : m.stats_confirm_yes()}
           </button>
           <button
-            onclick={() => (confirmReset = null)}
+            onclick={() => (confirmReset = false)}
             disabled={resetting}
             class="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-white/10 disabled:opacity-60 dark:text-gray-300"
           >
@@ -462,7 +473,7 @@
         </div>
       {:else}
         <button
-          onclick={() => (confirmReset = 'everywhere')}
+          onclick={() => (confirmReset = true)}
           class="rounded-lg border border-red-300 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-900/20"
         >
           {m.stats_reset_button()}

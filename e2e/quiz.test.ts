@@ -5,33 +5,44 @@ import { injectPlusPlan } from './helpers.js';
 // Helper: answer one question regardless of type, then click Next
 // ---------------------------------------------------------------------------
 async function answerAndAdvance(page: Page) {
-  // Wait for the questioning state to be ready (en: 'Question', nb: 'Spørsmål')
-  await page
-    .getByText(/question \d+ of|spørsmål \d+ av/i)
-    .waitFor({ state: 'visible', timeout: 5000 })
-    .catch(() => {}); // may already be in revealing state — that's fine
+  // Wait for either the questioning state OR the summary to be visible.
+  // This prevents the helper racing ahead when the UI is transitioning.
+  await Promise.race([
+    page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 8000 }),
+    page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 8000 })
+  ]).catch(() => {});
+
+  // If we already reached the summary, nothing left to do.
+  if (
+    await page
+      .getByText(/session complete|økt fullført/i)
+      .isVisible({ timeout: 300 })
+      .catch(() => false)
+  ) {
+    return;
+  }
 
   const optionA = page.getByRole('button', { name: /^A\b/ });
   const input = page.getByRole('textbox');
 
-  if (await optionA.isVisible({ timeout: 2000 }).catch(() => false)) {
+  if (await optionA.isVisible({ timeout: 3000 }).catch(() => false)) {
     await optionA.click();
-  } else if (await input.isVisible({ timeout: 2000 }).catch(() => false)) {
+  } else if (await input.isVisible({ timeout: 3000 }).catch(() => false)) {
     await input.fill('test');
     await input.press('Enter');
   } else {
-    // Neither visible — may be between states; give it a moment
-    await page.waitForTimeout(300);
+    // Neither visible — still transitioning; yield and let the loop retry.
+    await page.waitForTimeout(500);
     return;
   }
 
-  // After answering, wait for the Next / See results button then click it
+  // After answering, wait for the Next / See results button then click it.
   const next = page.getByRole('button', { name: /next|see results|neste|se resultater/i });
   await next.waitFor({ state: 'visible', timeout: 8000 }).catch(() => {});
   if (await next.isVisible({ timeout: 1000 }).catch(() => false)) {
     await next.click();
-    // Brief pause so the UI leaves the revealing state before the next loop iteration
-    await page.waitForTimeout(200);
+    // Brief pause so the UI leaves the revealing state before the next loop iteration.
+    await page.waitForTimeout(300);
   }
 }
 
@@ -39,20 +50,21 @@ async function answerAndAdvance(page: Page) {
 // Helper: run a full session until "Session complete!" or the safety guard
 // ---------------------------------------------------------------------------
 async function completeSession(page: Page, maxQuestions = 20) {
-  let answered = 0;
+  const safetyLimit = maxQuestions * 4; // 4× gives ample room for retries
+  let iterations = 0;
   while (
     !(await page
       .getByText(/session complete|økt fullført/i)
       .isVisible({ timeout: 500 })
       .catch(() => false))
   ) {
+    if (++iterations > safetyLimit) break;
     await answerAndAdvance(page);
-    if (++answered > maxQuestions * 3) break; // generous safety guard
   }
-  // Ensure the summary is actually visible before returning
+  // Ensure the summary is actually visible before returning.
   await page
     .getByText(/session complete|økt fullført/i)
-    .waitFor({ state: 'visible', timeout: 8000 })
+    .waitFor({ state: 'visible', timeout: 10000 })
     .catch(() => {});
 }
 

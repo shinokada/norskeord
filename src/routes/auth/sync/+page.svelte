@@ -2,8 +2,8 @@
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { onMount } from 'svelte';
-  import { syncProgressOnLogin, clearAnonymousProgress } from '$lib/progress';
   import { setLocale } from '$lib/paraglide/runtime';
+  import { loadProgressMapFromSupabase, migrateLocalProgressToSupabase } from '$lib/progress';
 
   const next = page.url.searchParams.get('next') ?? '/';
 
@@ -12,46 +12,31 @@
     const isPlus = (page.data.plan as 'free' | 'plus') === 'plus';
     const profile = page.data.profile;
 
-    // Seed localStorage from profile preferences so the app reflects
-    // what the user saved on the profile page.
+    // One-time migration: free → Plus upgrade
+    // If Supabase has no rows yet, copy whatever is in localStorage across.
+    if (isPlus && userId) {
+      const supabaseMap = await loadProgressMapFromSupabase(userId);
+      if (Object.keys(supabaseMap).length === 0) {
+        await migrateLocalProgressToSupabase(userId);
+      }
+    }
+
+    // Seed localStorage from profile preferences
     if (profile) {
-      // Card direction → VocabFlashcardPage reads 'vocab-flashcard-mode'
       const modeValue = profile.card_direction === 'en_no' ? 'engnor' : 'noreng';
       localStorage.setItem('vocab-flashcard-mode', modeValue);
 
-      // Interface language → Nav reads 'locale'
       if (profile.ui_language === 'nb' || profile.ui_language === 'en') {
         localStorage.setItem('locale', profile.ui_language);
         setLocale(profile.ui_language, { reload: false });
       }
 
-      // Include phrases → VocabFlashcardPage reads 'vocab-flashcard-card-type'
-      // Only seed if not already set — let the user's in-session toggle win.
       if (!localStorage.getItem('vocab-flashcard-card-type')) {
         localStorage.setItem(
           'vocab-flashcard-card-type',
           profile.include_phrases ? 'word' : 'word'
         );
       }
-    }
-
-    // Sync card progress for Plus users
-    if (userId && isPlus) {
-      try {
-        await syncProgressOnLogin(userId);
-        // Clear anonymous (pre-login) keys so another user on this browser
-        // cannot see this user's progress without logging in.
-        clearAnonymousProgress();
-      } catch {
-        // Non-fatal — progress will sync on next rating via dual-write.
-      }
-    } else if (userId) {
-      // Free users: still namespace their keys by writing them under userId
-      // so a second user logging in doesn't inherit this user's localStorage.
-      // syncProgressOnLogin handles the namespacing even for free users
-      // if we call it without Supabase writes — but here we just namespace
-      // the existing anonymous keys and clear the old ones.
-      clearAnonymousProgress();
     }
 
     // eslint-disable-next-line svelte/no-navigation-without-resolve

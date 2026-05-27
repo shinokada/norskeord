@@ -21,20 +21,20 @@ corpus is known ahead of time.
 
 ### Corpus size
 
-| Source                     | Est. entries | Audio content              |
-| -------------------------- | ------------ | -------------------------- |
-| vocab-a1 to vocab-c2       | ~3,500       | word + example sentence    |
-| uttrykk-a1 to uttrykk-b2   | ~400         | full phrase                |
-| norskprøven (reading texts) | ~200         | full sentence (optional)   |
-| **Total**                  | **~4,100**   |                            |
+| Source                      | Est. entries | Audio content            |
+| --------------------------- | ------------ | ------------------------ |
+| vocab-a1 to vocab-c2        | ~3,500       | word + example sentence  |
+| uttrykk-a1 to uttrykk-b2    | ~400         | full phrase              |
+| norskprøven (reading texts) | ~200         | full sentence (optional) |
+| **Total**                   | **~4,100**   |                          |
 
 One MP3 per entry (word + example combined): ~4,100 files × ~40 KB avg = **~164 MB total**.
 
 ### Supabase Storage
 
-| Resource           | Free tier allowance | Our usage  | Cost      |
-| ------------------ | ------------------- | ---------- | --------- |
-| Storage            | 1 GB                | ~164 MB    | **Free**  |
+| Resource           | Free tier allowance | Our usage            | Cost     |
+| ------------------ | ------------------- | -------------------- | -------- |
+| Storage            | 1 GB                | ~164 MB              | **Free** |
 | Egress (bandwidth) | 2 GB/month          | Low at current scale | **Free** |
 
 At ~1,000 DAU × 20 plays/day = 600,000 plays/month × 40 KB = ~24 GB egress.
@@ -44,11 +44,11 @@ Supabase Pro ($25/mo) includes 250 GB egress — well within limits even at scal
 
 ~4,100 entries × ~80 chars avg (word + example) ≈ **328,000 characters total**.
 
-| Plan           | Price   | Chars/month | Strategy                            |
-| -------------- | ------- | ----------- | ----------------------------------- |
-| Starter        | $5/mo   | 30,000      | Too slow (11 months)                |
-| Creator        | $22/mo  | 100,000     | 4 months × $22 = ~$88               |
-| **Pro**        | **$99/mo** | **500,000** | **One month covers everything. Cancel after.** |
+| Plan    | Price      | Chars/month | Strategy                                       |
+| ------- | ---------- | ----------- | ---------------------------------------------- |
+| Starter | $5/mo      | 30,000      | Too slow (11 months)                           |
+| Creator | $22/mo     | 100,000     | 4 months × $22 = ~$88                          |
+| **Pro** | **$99/mo** | **500,000** | **One month covers everything. Cancel after.** |
 
 **Recommended: Pro plan for one month (~$99 one-time), then cancel.**
 
@@ -127,7 +127,7 @@ File: `scripts/generate-audio.ts`
 function audioKey(entry: VocabEntry): string {
   const base = (entry.lemma ?? entry.norsk)
     .toLowerCase()
-    .replace(/^å /, '')        // strip verb infinitive marker
+    .replace(/^å /, '') // strip verb infinitive marker
     .replace(/^(en|et|ei) /, '') // strip Norwegian articles
     .replace(/[^a-zæøå0-9-]/g, '-')
     .replace(/-+/g, '-')
@@ -208,7 +208,8 @@ Import in app:
 // src/lib/audio.ts
 import manifest from '$lib/data/audio-manifest.json';
 
-const SUPABASE_AUDIO_BASE = import.meta.env.PUBLIC_SUPABASE_URL +
+const SUPABASE_AUDIO_BASE =
+  import.meta.env.PUBLIC_SUPABASE_URL +
   '/storage/v1/object/public/' +
   import.meta.env.PUBLIC_SUPABASE_AUDIO_BUCKET;
 
@@ -231,7 +232,7 @@ New prop:
 interface Props {
   word: string;
   label?: string;
-  audioUrl?: string | null;  // pre-generated MP3 URL; if provided, preferred over Web Speech
+  audioUrl?: string | null; // pre-generated MP3 URL; if provided, preferred over Web Speech
 }
 ```
 
@@ -271,10 +272,7 @@ Plus tier: pre-generated ElevenLabs audio.
 Implementation: pass `audioUrl` only when `isPlus` is true:
 
 ```svelte
-<SpeakButton
-  word={card.norsk}
-  audioUrl={isPlus ? getAudioUrl(card) : null}
-/>
+<SpeakButton word={card.norsk} audioUrl={isPlus ? getAudioUrl(card) : null} />
 ```
 
 Add to Plus comparison table on `/plus`:
@@ -291,6 +289,7 @@ signal rather than a paywall feature.
 Same ElevenLabs voice can be used for blog post audio (VG-style article reading).
 
 Workflow:
+
 1. At publish time, run `scripts/generate-post-audio.ts` with the post body text.
 2. Upload MP3 to Supabase Storage under `audio/posts/{slug}.mp3`.
 3. Embed in the blog post layout with a play button above the content.
@@ -301,13 +300,13 @@ No additional infrastructure needed — reuses the same bucket and voice.
 
 ## File map
 
-| File | Purpose |
-| ---- | ------- |
-| `scripts/generate-audio.ts` | Batch generation + Supabase upload script |
-| `scripts/audio-manifest.json` | Output of generation script (gitignored or committed) |
-| `src/lib/data/audio-manifest.json` | Manifest imported by the app |
-| `src/lib/audio.ts` | `getAudioUrl()` helper |
-| `src/lib/SpeakButton.svelte` | Updated to accept `audioUrl` prop |
+| File                               | Purpose                                               |
+| ---------------------------------- | ----------------------------------------------------- |
+| `scripts/generate-audio.ts`        | Batch generation + Supabase upload script             |
+| `scripts/audio-manifest.json`      | Output of generation script (gitignored or committed) |
+| `src/lib/data/audio-manifest.json` | Manifest imported by the app                          |
+| `src/lib/audio.ts`                 | `getAudioUrl()` helper                                |
+| `src/lib/SpeakButton.svelte`       | Updated to accept `audioUrl` prop                     |
 
 ---
 
