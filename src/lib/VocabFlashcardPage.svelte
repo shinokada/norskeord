@@ -6,7 +6,7 @@
   import { supabase } from '$lib/supabase';
   import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
   import SpeakButton from '$lib/SpeakButton.svelte';
-  import { Button, Tooltip } from 'flowbite-svelte';
+  import { Tooltip } from 'flowbite-svelte';
   import type { VocabEntry } from '$lib/types';
   import {
     saveProgress,
@@ -565,15 +565,24 @@
 
   // ── Button styles ─────────────────────────────────────────────────────────────
 
-  const modeButtonCls =
-    'font-medium rounded-lg text-lg px-3 sm:px-5 py-1 sm:py-2.5 me-1 sm:me-2 mb-1 sm:mb-2 focus:outline-none focus:ring-4 text-white bg-green-700 hover:bg-green-800 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800';
-  const cardTypeButtonCls =
-    'font-medium rounded-lg text-lg px-3 sm:px-5 py-1 sm:py-2.5 me-1 sm:me-2 mb-1 sm:mb-2 focus:outline-none focus:ring-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800';
+  // Segmented control helpers
+  function segmentCls(active: boolean, color: 'green' | 'blue') {
+    const base =
+      'flex-1 px-3 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-inset transition-colors';
+    if (color === 'green') {
+      return active
+        ? `${base} bg-green-700 text-white dark:bg-green-600`
+        : `${base} bg-white text-green-700 hover:bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700`;
+    }
+    return active
+      ? `${base} bg-blue-700 text-white dark:bg-blue-600`
+      : `${base} bg-white text-blue-700 hover:bg-blue-50 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700`;
+  }
 </script>
 
 <div class="flex w-full flex-col items-center">
   <!-- Category header: prev ← | level label + title | → next -->
-  <div class="mt-4 mb-1 flex w-full items-start justify-between gap-2 px-2">
+  <div class="mt-2 mb-1 flex w-full items-center justify-between gap-2 px-2">
     <!-- Prev category -->
     <div class="flex min-w-0 flex-1 items-center">
       {#if prevCategory}
@@ -589,15 +598,11 @@
     </div>
 
     <!-- Centre: level badge + category title -->
-    <div class="flex flex-col items-center text-center">
-      {#if level}
-        <span
-          class="text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-500"
-        >
-          {level}
-        </span>
-      {/if}
-      <h1 class="text-3xl leading-tight font-bold">{title}</h1>
+    <div class="flex flex-col items-center justify-center text-center">
+      <h1 class="text-xl leading-tight">
+        {#if level}<span class="mr-1 font-normal text-gray-400 dark:text-gray-500">{level} ·</span
+          >{/if}<span class="font-bold">{title}</span>
+      </h1>
     </div>
 
     <!-- Next category -->
@@ -615,38 +620,76 @@
     </div>
   </div>
 
-  <!-- Mode + CardType + DeckMode toggles -->
-  <div class="flex flex-wrap justify-center gap-1">
-    <button
-      type="button"
-      class={modeButtonCls}
-      onclick={() => {
-        if (cardType === 'phrase' || !hasDefinitions) {
-          // two-way toggle for phrases or categories without definitions (A1/A2)
-          setMode(mode === 'noreng' ? 'engnor' : 'noreng');
-        } else {
-          // cycle: noreng → engnor → defnor → noreng
-          const next: Record<Mode, Mode> = { noreng: 'engnor', engnor: 'defnor', defnor: 'noreng' };
-          setMode(next[mode]);
-        }
-      }}
+  <!-- Mode + CardType controls on one line -->
+  <div class="mt-2 flex flex-wrap items-center justify-center gap-3">
+    <!-- Mode segmented control -->
+    <div
+      class="inline-flex overflow-hidden rounded-lg border border-green-700 dark:border-green-600"
+      role="group"
+      aria-label="Card direction"
     >
-      {effectiveMode === 'noreng'
-        ? m.flashcard_norsk()
-        : effectiveMode === 'engnor'
-          ? m.flashcard_english()
-          : m.flashcard_definition()}
-    </button>
-    <button
-      type="button"
-      class={cardTypeButtonCls}
-      onclick={() => setCardType(cardType === 'word' ? 'phrase' : 'word')}
-    >
-      {cardType === 'word' ? m.flashcard_word() : m.flashcard_phrase()}
-    </button>
+      <button
+        type="button"
+        class={segmentCls(effectiveMode === 'noreng', 'green')}
+        aria-pressed={effectiveMode === 'noreng'}
+        onclick={() => setMode('noreng')}
+      >
+        {m.flashcard_norsk()}
+      </button>
+      <button
+        type="button"
+        class="{segmentCls(
+          effectiveMode === 'engnor',
+          'green'
+        )} border-l border-green-700 dark:border-green-600{hasDefinitions && cardType === 'word'
+          ? ' border-r'
+          : ''}"
+        aria-pressed={effectiveMode === 'engnor'}
+        onclick={() => setMode('engnor')}
+      >
+        {m.flashcard_english()}
+      </button>
+      {#if hasDefinitions && cardType === 'word'}
+        <button
+          type="button"
+          class={segmentCls(effectiveMode === 'defnor', 'green')}
+          aria-pressed={effectiveMode === 'defnor'}
+          onclick={() => setMode('defnor')}
+        >
+          {m.flashcard_definition()}
+        </button>
+      {/if}
+    </div>
 
-    <!-- 2-B / 3-A: deck mode toggle removed; Plus users always use due mode -->
+    <!-- CardType segmented control -->
+    <div
+      class="inline-flex overflow-hidden rounded-lg border border-blue-700 dark:border-blue-600"
+      role="group"
+      aria-label="Card type"
+    >
+      <button
+        type="button"
+        class={segmentCls(cardType === 'word', 'blue')}
+        aria-pressed={cardType === 'word'}
+        onclick={() => setCardType('word')}
+      >
+        {m.flashcard_word()}
+      </button>
+      <button
+        type="button"
+        class="{segmentCls(
+          cardType === 'phrase',
+          'blue'
+        )} border-l border-blue-700 dark:border-blue-600"
+        aria-pressed={cardType === 'phrase'}
+        onclick={() => setCardType('phrase')}
+      >
+        {m.flashcard_phrase()}
+      </button>
+    </div>
   </div>
+
+  <!-- 2-B / 3-A: deck mode toggle removed; Plus users always use due mode -->
 
   <!-- Link to profile preferences -->
   <a
@@ -676,23 +719,20 @@
     </div>
   {/if}
 
-  <!-- Counter row -->
-  <div
-    class="mt-4 mb-2 flex flex-wrap justify-center gap-3 text-lg font-medium text-gray-700 dark:text-gray-300"
-  >
-    <Button color="gray"
-      >{deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}</Button
-    >
-    {#if dueCount > 0 && deckMode === 'all'}
+  <!-- Counter row removed: counter merged into hint bar below -->
+  {#if dueCount > 0 && deckMode === 'all'}
+    <div class="mt-3 flex justify-center">
       <span
         class="inline-flex items-center rounded-full bg-orange-100 px-3 py-0.5 text-sm font-medium text-orange-800 dark:bg-orange-900 dark:text-orange-200"
       >
         {m.flashcard_due({ count: String(dueCount) })}
       </span>
-    {/if}
+    </div>
+  {/if}
 
-    <!-- 2-D: undo button with countdown -->
-    {#if undoSnapshot}
+  <!-- 2-D: undo button -->
+  {#if undoSnapshot}
+    <div class="mt-2 flex justify-center">
       <button
         type="button"
         onclick={undo}
@@ -700,8 +740,8 @@
       >
         ↩ {m.flashcard_undo_countdown({ seconds: String(undoCountdown) })}
       </button>
-    {/if}
-  </div>
+    </div>
+  {/if}
 
   <!-- Step 5: uttrykk preview banner -->
   {#if isUttrykkPreview}
@@ -717,8 +757,23 @@
     </div>
   {/if}
 
+  <!-- Hint bar with counter on the right -->
+  <div class="mt-3 flex w-full max-w-lg items-center justify-between rounded-md bg-gray-100 px-3 py-1 dark:bg-gray-800">
+    <p class="text-sm text-gray-500 sm:text-base dark:text-gray-400">
+      {#if isTouch}
+        {m.flashcard_hint_touch()}
+      {:else}
+        {m.flashcard_hint_desktop_prefix()}
+        {cardType === 'word' ? m.flashcard_hint_example_phrase() : m.flashcard_hint_word()}
+      {/if}
+    </p>
+    <span class="ml-3 shrink-0 text-sm font-medium text-gray-500 sm:text-base dark:text-gray-400">
+      {deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}
+    </span>
+  </div>
+
   <!-- Flashcard -->
-  <div class="flip-box h-96 w-full bg-transparent md:w-1/2">
+  <div class="flip-box mt-2 h-96 w-full bg-transparent md:w-1/2">
     {#if deck.length === 0 && mode !== 'defnor'}
       <div
         class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
@@ -798,6 +853,10 @@
       >
         <Flashcard front={current?.front} back={current?.back} {showCardBack} />
       </div>
+      <!-- aria-live region: announces card content to screen readers on flip/advance -->
+      <div aria-live="polite" class="sr-only">
+        {showCardBack ? current?.back : current?.front}
+      </div>
     {/if}
   </div>
 
@@ -826,15 +885,20 @@
         >
       </p>
     {/if}
-    <div class="mt-4 flex flex-wrap justify-center gap-2">
+    <div class="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center">
       <!-- Again -->
       <button
         id="btn-again"
         type="button"
         onclick={() => rate('again')}
-        class="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none dark:bg-red-500 dark:hover:bg-red-600"
+        class="flex w-full flex-col items-center justify-center rounded-lg bg-red-600 px-4 py-3 text-sm font-medium text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none sm:w-auto dark:bg-red-500 dark:hover:bg-red-600"
       >
-        {m.flashcard_again()} <kbd class="ml-1 rounded bg-red-800 px-1 text-xs opacity-70">1</kbd>
+        <span
+          >{m.flashcard_again()}
+          <kbd aria-hidden="true" class="ml-1 rounded bg-red-800 px-1 text-xs opacity-70">1</kbd
+          ></span
+        >
+        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.again ?? ''}</span>{/if}
       </button>
       {#if intervals}
         <Tooltip triggeredBy="#btn-again" placement="top">
@@ -847,10 +911,14 @@
         id="btn-hard"
         type="button"
         onclick={() => rate('hard')}
-        class="rounded-lg bg-orange-500 px-4 py-2 text-sm font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+        class="flex w-full flex-col items-center justify-center rounded-lg bg-orange-500 px-4 py-3 text-sm font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none sm:w-auto dark:bg-orange-400 dark:hover:bg-orange-500"
       >
-        {m.flashcard_hard()}
-        <kbd class="ml-1 rounded bg-orange-700 px-1 text-xs opacity-70">2</kbd>
+        <span
+          >{m.flashcard_hard()}
+          <kbd aria-hidden="true" class="ml-1 rounded bg-orange-700 px-1 text-xs opacity-70">2</kbd
+          ></span
+        >
+        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.hard ?? ''}</span>{/if}
       </button>
       {#if intervals}
         <Tooltip triggeredBy="#btn-hard" placement="top">
@@ -863,10 +931,14 @@
         id="btn-good"
         type="button"
         onclick={() => rate('good')}
-        class="rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-500 dark:hover:bg-green-600"
+        class="flex w-full flex-col items-center justify-center rounded-lg bg-green-600 px-4 py-3 text-sm font-medium text-white hover:bg-green-700 focus:ring-4 focus:ring-green-300 focus:outline-none sm:w-auto dark:bg-green-500 dark:hover:bg-green-600"
       >
-        {m.flashcard_good()}
-        <kbd class="ml-1 rounded bg-green-800 px-1 text-xs opacity-70">3</kbd>
+        <span
+          >{m.flashcard_good()}
+          <kbd aria-hidden="true" class="ml-1 rounded bg-green-800 px-1 text-xs opacity-70">3</kbd
+          ></span
+        >
+        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.good ?? ''}</span>{/if}
       </button>
       {#if intervals}
         <Tooltip triggeredBy="#btn-good" placement="top">
@@ -879,9 +951,14 @@
         id="btn-easy"
         type="button"
         onclick={() => rate('easy')}
-        class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600"
+        class="flex w-full flex-col items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none sm:w-auto dark:bg-blue-500 dark:hover:bg-blue-600"
       >
-        {m.flashcard_easy()} <kbd class="ml-1 rounded bg-blue-800 px-1 text-xs opacity-70">4</kbd>
+        <span
+          >{m.flashcard_easy()}
+          <kbd aria-hidden="true" class="ml-1 rounded bg-blue-800 px-1 text-xs opacity-70">4</kbd
+          ></span
+        >
+        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.easy ?? ''}</span>{/if}
       </button>
       {#if intervals}
         <Tooltip triggeredBy="#btn-easy" placement="top">
@@ -926,13 +1003,12 @@
 
   <!-- Example / Word section -->
   {#if !completed && current}
-    <div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 dark:bg-gray-800">
-      <div class="mb-2 items-center gap-2">
+    <div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 text-center dark:bg-gray-800">
+      <div class="mb-2 flex justify-center">
         <span
           class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
           >{cardType === 'word' ? m.flashcard_phrase() : m.flashcard_word()}</span
         >
-        <SpeakButton bind:this={speakExampleRef} word={currentExampleNorsk} />
       </div>
       <p class="text-base text-gray-700 italic dark:text-gray-300">
         {currentExample}
@@ -944,31 +1020,24 @@
               {currentExampleTranslation}
             </p>
           {/if}
-          <button
-            type="button"
-            class="text-sm text-blue-600 hover:underline dark:text-blue-400"
-            onclick={() => {
-              showExampleEnglish = !showExampleEnglish;
-              showExampleDefault = showExampleEnglish;
-              localStorage.setItem(LS_SHOW_EXAMPLE, String(showExampleEnglish));
-            }}
-          >
-            {showExampleEnglish ? m.flashcard_hide_translation() : m.flashcard_show_translation()}
-          </button>
+          <div class="mt-2 flex items-center justify-center gap-3">
+            <button
+              type="button"
+              class="text-sm text-blue-600 hover:underline dark:text-blue-400"
+              onclick={() => {
+                showExampleEnglish = !showExampleEnglish;
+                showExampleDefault = showExampleEnglish;
+                localStorage.setItem(LS_SHOW_EXAMPLE, String(showExampleEnglish));
+              }}
+            >
+              {showExampleEnglish ? m.flashcard_hide_translation() : m.flashcard_show_translation()}
+            </button>
+            <SpeakButton bind:this={speakExampleRef} word={currentExampleNorsk} />
+          </div>
         </div>
       {/if}
     </div>
   {/if}
-
-  <!-- Hint -->
-  <p class="mt-4 rounded bg-gray-900 px-2 py-1 text-white">
-    {#if isTouch}
-      {m.flashcard_hint_touch()}
-    {:else}
-      {m.flashcard_hint_desktop_prefix()}
-      {cardType === 'word' ? m.flashcard_hint_example_phrase() : m.flashcard_hint_word()}
-    {/if}
-  </p>
 
   <!-- Nav buttons -->
   <div class="grid w-full grid-cols-3 gap-2 pt-4">
