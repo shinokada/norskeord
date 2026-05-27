@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-Find duplicate 'norsk' entries across vocab-XX.json files.
+find_dupes.py
+Scans all vocab-XX.json files in the norskeord project and reports
+duplicate 'norsk' entries — both within a single file and across files.
 
 Usage:
     cd /Users/shinichiokada/Svelte/svelte-languages/norskeord/find-dupes
