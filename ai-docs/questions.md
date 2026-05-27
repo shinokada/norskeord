@@ -1,6 +1,7 @@
 # Questions
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql
 
 ==========
 You wrote `The fixed content is ready. Now writing it back to your filesystem:`. Why don't you ask me to copy it and replace it manually rather than use `write_file` which takes a long time to complete.
@@ -137,12 +138,12 @@ From Relearning (forgotten):
 - Good / Easy → graduates back to Review (memorized again)
 
 So in short:
-| Legend label | FSRS State | How you get there |
+| Legend label | FSRS State | How you get there                      |
 | ------------ | ---------- | -------------------------------------- |
-| New | New | Never rated |
-| Learning | Learning | Rated at least once, not yet graduated |
-| Memorized | Review | Passed learning steps |
-| Forgotten | Relearning | Hit "Again" on a memorized card |
+| New          | New        | Never rated                            |
+| Learning     | Learning   | Rated at least once, not yet graduated |
+| Memorized    | Review     | Passed learning steps                  |
+| Forgotten    | Relearning | Hit "Again" on a memorized card        |
 
 The key insight is that only "Again" on a Review card triggers Forgotten. "Again" on a Learning card just keeps it in Learning — it doesn't turn orange.
 
