@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.8.0
+
+### Minor Changes
+
+- - **New Features**
+    - Plus users now store and restore study progress in cloud (with migration from device storage) and can reset cloud progress across devices.
+    - Audio planning docs added for a future AI-powered TTS option.
+  - **Bug Fixes**
+    - Reset flow UX improved: separate guest vs signed-in messages, disabling while resetting, and clearer in-progress labels.
+    - Various quiz/flashcard flows made more robust with async persistence to avoid races.
+  - **Documentation**
+    - Multiple AI and implementation docs added/expanded; minor formatting and content updates to guides and examples.
+
 ## 2.7.2
 
 ### Patch Changes
