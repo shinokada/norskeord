@@ -9,19 +9,7 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 ---
 
-## Duplicates in json files
-
-I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
-
-Can you scan src/lib/data/vocab-XX.json files to find duplicates norsk entries and list them with its level.
-
----
-
-- For B1/B2/C1/C2 how can I do the following? A picture is hard but simple Norwegian explanation is doable.
-
-**Graduate to Monolingual Clues:** As an A2 learner approaching B1, the goal is to stop using English prompts entirely. If you use custom flashcard apps (like Anki), try making cards where the front is a **picture** or a simple Norwegian explanation, and the back is the Norwegian phrase you want to use.
-
-## Add Option of Monolingual approach for above B1.
+## How to test 1
 
 ai-docs/implementation/email-service-implementation.md
 Done up to Step 6.
@@ -58,6 +46,18 @@ Command: SELECT net.http_post(url := 'https://<project-ref>.supabase.co/function
 5. **C1/C2 in distractor pool:** The current plan loads A1–B2 for the distractor pool. C1/C2 data is available but adds loading weight. Omit from the initial build; add later if B2+ quiz users request it.
 
 ## Solved
+
+### Add Option of Monolingual approach for above B1.
+
+For B1/B2/C1/C2 how can I do the following? A picture is hard but simple Norwegian explanation is doable.
+
+**Graduate to Monolingual Clues:** As an A2 learner approaching B1, the goal is to stop using English prompts entirely. If you use custom flashcard apps (like Anki), try making cards where the front is a **picture** or a simple Norwegian explanation, and the back is the Norwegian phrase you want to use.
+
+### Duplicates in json files
+
+I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+
+Can you scan src/lib/data/vocab-XX.json files to find duplicates norsk entries and list them with its level.
 
 ### How to avoid write_file in prompt (But this didn't work)
 
