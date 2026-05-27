@@ -130,16 +130,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "å slå seg ned",
-    "lemma": "å slå seg ned",
-    "english": "to settle down, to settle in a place",
-    "example": "De bestemte seg for å slå seg ned i Bergen.",
-    "example_english": "They decided to settle down in Bergen.",
-    "level": "B1",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "å ha god moral",
     "lemma": "å ha god moral",
     "english": "to have good values, to have strong ethics",
@@ -860,16 +850,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "i løpet av",
-    "lemma": "i løpet av",
-    "english": "during, within, in the course of",
-    "example": "Oppgaven må leveres i løpet av en uke.",
-    "example_english": "The assignment must be handed in within a week.",
-    "level": "B1",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "være opptatt av",
     "lemma": "være opptatt av",
     "english": "to be interested in, to care about, to be engaged with",
@@ -1055,16 +1035,6 @@
     "english": "to behave, to conduct oneself",
     "example": "Husk å oppføre deg høflig når du er på besøk.",
     "example_english": "Remember to behave politely when you are visiting.",
-    "level": "B1",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "ved siden av",
-    "lemma": "ved siden av",
-    "english": "in addition to, alongside, at the same time as",
-    "example": "Ved siden av studiene jobber han som servitør.",
-    "example_english": "In addition to his studies, he works as a waiter.",
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase"
@@ -1465,16 +1435,6 @@
     "english": "a varied diet, a balanced diet",
     "example": "Et allsidig kosthold er viktig for god helse.",
     "example_english": "A varied diet is important for good health.",
-    "level": "B1",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "å holde seg i form",
-    "lemma": "å holde seg i form",
-    "english": "to stay in shape, to keep fit",
-    "example": "Han trener tre ganger i uka for å holde seg i form.",
-    "example_english": "He exercises three times a week to stay in shape.",
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase"

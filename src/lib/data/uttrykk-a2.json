@@ -110,16 +110,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "Velkommen tilbake. Takk for det.",
-    "lemma": "Velkommen tilbake. Takk for det.",
-    "english": "Welcome back. Thank you.",
-    "example": "Velkommen tilbake! Takk for det.",
-    "example_english": "Welcome back! Thank you.",
-    "level": "A2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
     "lemma": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
     "english": "Shall I order a glass of beer for you? Just water for me, thanks.",

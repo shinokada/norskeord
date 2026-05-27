@@ -320,16 +320,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "rett og slett",
-    "lemma": "rett og slett",
-    "english": "simply, just, plain and simple",
-    "example": "Det er rett og slett ikke akseptabelt å behandle kolleger på en nedlatende måte.",
-    "example_english": "It is simply not acceptable to treat colleagues in a condescending way.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "å henge med venner",
     "lemma": "å henge med venner",
     "english": "to hang out with friends",
@@ -590,16 +580,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "å gi opp",
-    "lemma": "å gi opp",
-    "english": "to give up, to quit",
-    "example": "Gi aldri opp drømmene dine, selv om veien dit er lang og full av hindringer.",
-    "example_english": "Never give up on your dreams, even if the road there is long and full of obstacles.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "å henge sammen",
     "lemma": "å henge sammen",
     "english": "to hang together, to be connected, to make sense",
@@ -825,16 +805,6 @@
     "english": "to hush something up, to suppress by silence",
     "example": "Myndighetene forsøkte å tie skandalen i hjel, men pressen avdekket sannheten.",
     "example_english": "The authorities tried to hush up the scandal, but the press uncovered the truth.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "i likhet med",
-    "lemma": "i likhet med",
-    "english": "like, similarly to, in common with",
-    "example": "I likhet med mange nordmenn tilbringer hun helst ferien i den norske naturen.",
-    "example_english": "Like many Norwegians, she prefers to spend her holiday in Norwegian nature.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1380,31 +1350,11 @@
     "part": "phrase"
   },
   {
-    "norsk": "å ha rett til",
-    "lemma": "å ha rett til",
-    "english": "to have the right to, to be entitled to",
-    "example": "Alle arbeidstakere har rett til et trygt og helsefremmende arbeidsmiljø per norsk lov.",
-    "example_english": "All employees have the right to a safe and health-promoting work environment under Norwegian law.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "uavhengig av",
     "lemma": "uavhengig av",
     "english": "regardless of, independent of, irrespective of",
     "example": "Alle innbyggere skal behandles likt, uavhengig av bakgrunn, kjønn eller sosial status.",
     "example_english": "All citizens shall be treated equally, regardless of background, gender or social status.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "å legge vekt på",
-    "lemma": "å legge vekt på",
-    "english": "to emphasise, to place importance on",
-    "example": "I ansettelsesprosessen la selskapet stor vekt på søkernes kommunikasjonsevner og teamånd.",
-    "example_english": "In the hiring process the company placed great importance on applicants' communication skills and team spirit.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1445,16 +1395,6 @@
     "english": "to be aimed at, to be directed at",
     "example": "Kampanjen er rettet mot unge voksne mellom atten og tjuefem år i hele landet.",
     "example_english": "The campaign is aimed at young adults between eighteen and twenty-five across the whole country.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "i tillegg til",
-    "lemma": "i tillegg til",
-    "english": "in addition to, as well as",
-    "example": "I tillegg til norsk snakker hun flytende engelsk, spansk og mandarin.",
-    "example_english": "In addition to Norwegian she speaks fluent English, Spanish and Mandarin.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -2860,16 +2800,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "i regi av",
-    "lemma": "i regi av",
-    "english": "organised by, under the auspices of, run by",
-    "example": "Konferansen ble arrangert i regi av universitetet og samlet eksperter fra hele verden.",
-    "example_english": "The conference was organised by the university and brought together experts from around the world.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "å være en støttespiller",
     "lemma": "å være en støttespiller",
     "english": "to be a pillar of support, to be a supporter",
@@ -3065,16 +2995,6 @@
     "english": "so to speak, as it were, practically",
     "example": "Sosiale medier har så å si blitt en integrert del av det daglige livet til de unge.",
     "example_english": "Social media have, so to speak, become an integral part of young people's daily lives.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "å slå seg ned",
-    "lemma": "å slå seg ned",
-    "english": "to settle down, to settle in a place",
-    "example": "Etter mange år i utlandet valgte de å slå seg ned i en liten kystby i Sør-Norge.",
-    "example_english": "After many years abroad they chose to settle down in a small coastal town in southern Norway.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"

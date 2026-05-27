@@ -1,0 +1,14 @@
+Entry counts: {'A1': 473, 'A2': 374, 'B1': 668, 'B2': 860, 'C1': 155, 'C2': 170}
+Total entries: 2700
+
+=== CROSS-FILE DUPLICATES (5) ===
+(Same 'norsk' value appears in different level files)
+
+  'en billett'                                   →  A1 [transportation]  |  B1 [arts-culture]
+  'en dommer'                                    →  A2 [sports]  |  B2 [law]
+  'en fisk'                                      →  A1 [food]  |  A2 [nature]
+  'lys'                                          →  A1 [colors]  |  B1 [science-nature]
+  'å stryke'                                     →  A2 [house-chores]  |  B1 [education]
+
+=== WITHIN-FILE DUPLICATES (0) ===
+(Same 'norsk' value appears twice in the same file)

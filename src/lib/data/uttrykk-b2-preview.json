@@ -20,16 +20,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "rett og slett",
-    "lemma": "rett og slett",
-    "english": "simply, just, plain and simple",
-    "example": "Det er rett og slett ikke akseptabelt å behandle kolleger på en nedlatende måte.",
-    "example_english": "It is simply not acceptable to treat colleagues in a condescending way.",
-    "level": "B2",
-    "category": "uttrykk-preview",
-    "part": "phrase"
-  },
-  {
     "norsk": "med tanke på",
     "lemma": "med tanke på",
     "english": "considering, with regard to, given",
