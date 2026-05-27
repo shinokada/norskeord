@@ -236,7 +236,7 @@
 
 <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
 <div
-  class="relative mt-8 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-20 text-center"
+  class="relative mt-4 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-10 text-center sm:mt-8 sm:py-20"
 >
   <!-- Decorative blur blobs -->
   <div
