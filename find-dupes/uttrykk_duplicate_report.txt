@@ -1,0 +1,23 @@
+Entry counts: {'A1': 115, 'A2': 126, 'B1': 234, 'B2': 313}
+Total entries: 788
+
+=== CROSS-FILE DUPLICATES (12) ===
+(Same 'norsk' value appears in different level files)
+
+  'i likhet med'                                                →  B1 [uttrykk]  |  B2 [uttrykk]
+  'i løpet av'                                                  →  A2 [uttrykk]  |  B1 [uttrykk]
+  'i regi av'                                                   →  B1 [uttrykk]  |  B2 [uttrykk]
+  'i tillegg til'                                               →  B1 [uttrykk]  |  B2 [uttrykk]
+  'rett og slett'                                               →  B1 [uttrykk]  |  B2 [uttrykk]
+  'ved siden av'                                                →  A2 [uttrykk]  |  B1 [uttrykk]
+  'Velkommen tilbake. Takk for det.'                            →  A1 [uttrykk]  |  A2 [uttrykk]
+  'å gi opp'                                                    →  A2 [uttrykk]  |  B2 [uttrykk]
+  'å ha rett til'                                               →  A2 [uttrykk]  |  B2 [uttrykk]
+  'å holde seg i form'                                          →  A2 [uttrykk]  |  B1 [uttrykk]
+  'å legge vekt på'                                             →  A2 [uttrykk]  |  B2 [uttrykk]
+  'å slå seg ned'                                               →  A2 [uttrykk]  |  B1 [uttrykk]  |  B2 [uttrykk]
+
+=== WITHIN-FILE DUPLICATES (1) ===
+(Same 'norsk' value appears twice in the same file)
+
+  'å være glad i'                                               →  A1 [uttrykk]  |  A1 [uttrykk]
