@@ -3,6 +3,7 @@
   import { onMount, untrack } from 'svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/state';
+  import { supabase } from '$lib/supabase';
   import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
   import SpeakButton from '$lib/SpeakButton.svelte';
   import { Button, Tooltip } from 'flowbite-svelte';
@@ -10,9 +11,10 @@
   import {
     saveProgress,
     loadProgressMap,
+    loadProgressMapFromSupabase,
     countDueToday,
     previewIntervals,
-    lsPrefix
+    restoreProgressToLocalStorage
   } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
   import { State } from 'ts-fsrs';
@@ -144,8 +146,18 @@
 
   onMount(() => {
     isTouch = window.matchMedia('(pointer: coarse)').matches;
-    progressMap = loadProgressMap(page.data.user?.id ?? null);
-    dueCount = countDueToday(progressMap);
+
+    // Plus users: load progress from Supabase (single source of truth).
+    // Guest/free users: load from localStorage.
+    if (isPlus && page.data.user?.id) {
+      loadProgressMapFromSupabase(page.data.user.id).then((map) => {
+        progressMap = map;
+        dueCount = countDueToday(map);
+      });
+    } else {
+      progressMap = loadProgressMap();
+      dueCount = countDueToday(progressMap);
+    }
 
     // Keep localSessionLimit in sync if the user updates it in another tab
     // (only matters for unauthenticated users — logged-in users use the DB value)
@@ -368,22 +380,41 @@
     undoSnapshot = { ...snapshot, timer, countdown: seconds };
   }
 
-  function undo() {
+  async function undo() {
     if (!undoSnapshot) return;
     const { entry, previousProgress, previousMap, previousIndex } = undoSnapshot;
     clearUndo();
 
-    // Restore progressMap (in memory and localStorage)
-    const prefix = lsPrefix(page.data.user?.id ?? null);
-    if (previousProgress === null) {
-      localStorage.removeItem(prefix + entry.norsk);
+    if (isPlus && page.data.user?.id) {
+      // Plus: restore via Supabase
+      const userId = page.data.user.id;
+      if (previousProgress === null) {
+        // Card had never been rated — delete the row
+        try {
+          await supabase
+            .from('card_progress')
+            .delete()
+            .eq('user_id', userId)
+            .eq('norsk', entry.norsk);
+        } catch {
+          /* silent */
+        }
+      } else {
+        // Re-upsert with the previous state
+        progressMap = await saveProgress(
+          entry,
+          previousProgress.lastRating ?? 'good',
+          previousMap,
+          userId
+        );
+      }
     } else {
-      localStorage.setItem(prefix + entry.norsk, JSON.stringify(previousProgress));
+      // Guest / free: restore via localStorage
+      restoreProgressToLocalStorage(entry.norsk, previousProgress);
     }
+
     progressMap = previousMap;
     dueCount = countDueToday(previousMap);
-
-    // Step back to the card that was just rated
     currentIndex = previousIndex;
     resetCardState();
     completed = false;
@@ -478,7 +509,7 @@
 
   // ── Rating ───────────────────────────────────────────────────────────────────
 
-  function rate(rating: FSRSRating) {
+  async function rate(rating: FSRSRating) {
     if (!current) return;
 
     const entry = current.entry;
@@ -492,18 +523,19 @@
 
     // 3-A: only pass userId for Plus users (free users get localStorage only)
     const userId = isPlus ? (page.data.user?.id ?? null) : null;
-    progressMap = saveProgress(entry, rating, progressMap, userId);
-    dueCount = countDueToday(progressMap);
 
-    // 2-D: arm undo (before navigation so index is still pointing at the rated card)
+    // Arm undo before the await so the snapshot is taken at the right moment
     startUndoTimer({ entry, previousProgress, previousMap, previousIndex });
 
-    // 2-B: requeue "again" cards in due mode
+    // 2-B: requeue "again" cards in due mode (before await so deck updates immediately)
     if (rating === 'again' && deckMode === 'due') {
       requeueCard(current);
     }
 
     next();
+
+    progressMap = await saveProgress(entry, rating, progressMap, userId);
+    dueCount = countDueToday(progressMap);
   }
 
   // ── Interval label helpers ──────────────────────────────────────────────────
