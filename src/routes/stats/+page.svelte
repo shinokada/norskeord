@@ -441,65 +441,28 @@
       </p>
 
       {#if confirmReset}
-        <!-- Confirmation step -->
-        <div
-          class="rounded-xl border border-red-200 bg-red-50 p-4 dark:border-red-800 dark:bg-red-900/20"
-        >
-          <p class="mb-3 text-sm font-medium text-red-700 dark:text-red-300">
-            {confirmReset === 'everywhere'
-              ? m.stats_reset_everywhere_body()
-              : m.stats_reset_device_body()}
-          </p>
-          <p class="mb-4 text-sm font-semibold text-red-600 dark:text-red-400">
+        <div class="flex flex-wrap items-center gap-3">
+          <p class="text-sm font-medium text-red-600 dark:text-red-400">
             {m.stats_confirm_question()}
           </p>
-          <div class="flex flex-wrap items-center gap-3">
-            <button
-              onclick={handleReset}
-              disabled={resetting}
-              class="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 disabled:opacity-60"
-            >
-              {resetting ? m.stats_resetting() : m.stats_confirm_yes()}
-            </button>
-            <button
-              onclick={() => (confirmReset = null)}
-              disabled={resetting}
-              class="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-white/10 disabled:opacity-60 dark:text-gray-300"
-            >
-              {m.stats_cancel()}
-            </button>
-          </div>
-        </div>
-      {:else if user}
-        <!-- Two-option layout for signed-in users -->
-        <div class="flex flex-col gap-3 sm:flex-row">
           <button
-            onclick={() => (confirmReset = 'device')}
-            class="flex-1 rounded-xl border border-orange-200 px-4 py-3 text-left hover:bg-orange-50 dark:border-orange-800 dark:hover:bg-orange-900/20"
+            onclick={handleReset}
+            disabled={resetting}
+            class="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 disabled:opacity-60"
           >
-            <p class="text-sm font-semibold text-orange-700 dark:text-orange-300">
-              {m.stats_reset_device_button()}
-            </p>
-            <p class="mt-0.5 text-xs text-orange-600 dark:text-orange-400">
-              {m.stats_reset_device_body()}
-            </p>
+            {resetting ? m.stats_resetting() : m.stats_confirm_yes()}
           </button>
           <button
-            onclick={() => (confirmReset = 'everywhere')}
-            class="flex-1 rounded-xl border border-red-200 px-4 py-3 text-left hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-900/20"
+            onclick={() => (confirmReset = null)}
+            disabled={resetting}
+            class="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-white/10 disabled:opacity-60 dark:text-gray-300"
           >
-            <p class="text-sm font-semibold text-red-700 dark:text-red-300">
-              {m.stats_reset_everywhere_button()}
-            </p>
-            <p class="mt-0.5 text-xs text-red-600 dark:text-red-400">
-              {m.stats_reset_everywhere_body()}
-            </p>
+            {m.stats_cancel()}
           </button>
         </div>
       {:else}
-        <!-- Single-button layout for guests -->
         <button
-          onclick={() => (confirmReset = 'device')}
+          onclick={() => (confirmReset = 'everywhere')}
           class="rounded-lg border border-red-300 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-900/20"
         >
           {m.stats_reset_button()}
