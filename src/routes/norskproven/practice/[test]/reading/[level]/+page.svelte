@@ -129,10 +129,10 @@
     }
   }
 
-  // ── Plus gate ──────────────────────────────────────────────────────────────
+  // ── Plus gate (Test 1 is free; Tests 2+ require Plus) ───────────────────────
   onMount(() => {
-    if (page.data.plan !== 'plus') {
-      window.location.replace('/plus?ref=norskproven-gate');
+    if (page.data.plan !== 'plus' && data.test !== '1') {
+      window.location.replace('/plus?ref=practice-test-lock');
     }
   });
 </script>

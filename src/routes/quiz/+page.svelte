@@ -13,6 +13,7 @@
   } from '$lib/quiz';
   import { loadProgressMap, loadProgressMapFromSupabase, saveProgress } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
+  import { isFreeQuizCategory, FREE_QUIZ_CATEGORIES } from '$lib/types';
   import * as m from '$lib/paraglide/messages';
 
   let { data } = $props();
@@ -45,21 +46,16 @@
   let toastTimer: ReturnType<typeof setTimeout> | null = null;
 
   // Idle picker state.
+  // Default to A1. data.level (from URL params) overrides if present.
   // untrack() prevents Svelte registering data as a reactive dependency of the
   // $state initializer, fixing the state_referenced_locally warning.
-  // data.level is lowercased in +page.ts; vocab entries use uppercase ("A1",
-  // "B2", ...) so we uppercase to match the <option> values.
-  let selectedLevel: string = $state(untrack(() => (data.level ? data.level.toUpperCase() : '')));
+  let selectedLevel: string = $state(untrack(() => (data.level ? data.level.toUpperCase() : 'A1')));
   let selectedCategory: string = $state(untrack(() => data.category ?? ''));
 
   // Derived
 
   let isPlus = $derived(page.data.plan === 'plus');
   let userId = $derived(isPlus ? (page.data.user?.id ?? null) : null);
-  let current = $derived(questions[currentIndex]);
-  let progress = $derived(
-    questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0
-  );
 
   // Unique levels and categories for the picker — sourced from allEntries so
   // the full A1-B2 list is available regardless of any pre-filtered default.
@@ -71,8 +67,43 @@
       ? data.allEntries.filter((e: { level: string }) => e.level === selectedLevel)
       : data.allEntries;
 
-    return [...new Set(src.map((e: { category: string }) => e.category))].sort() as string[];
+    // Exclude uttrykk-preview from the quiz category list (flashcard-only)
+    return [...new Set(src.map((e: { category: string }) => e.category))]
+      .filter((c) => c !== 'uttrykk-preview')
+      .sort() as string[];
   });
+
+  // Free users: categories visible in the picker for the selected level
+  let freeCategories = $derived.by(() => {
+    if (!selectedLevel) return [] as string[];
+    const level = selectedLevel.toLowerCase();
+    return availableCategories.filter((cat) => FREE_QUIZ_CATEGORIES.has(`${level}/${cat}`));
+  });
+
+  // Count of Plus-only categories for the upsell badge
+  let plusOnlyCount = $derived(
+    availableCategories.filter((cat) => !isFreeQuizCategory(selectedLevel, cat)).length
+  );
+
+  // canStart: Plus users need a level (always true now); free users need a category
+  let canStart = $derived(
+    isPlus
+      ? selectedLevel !== ''
+      : selectedCategory !== '' && isFreeQuizCategory(selectedLevel, selectedCategory)
+  );
+
+  // Category list for Plus users (all categories, no lock annotation)
+  let categoriesWithLock = $derived.by(() =>
+    availableCategories.map((cat) => ({
+      cat,
+      locked: false
+    }))
+  );
+
+  let current = $derived(questions[currentIndex]);
+  let progress = $derived(
+    questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0
+  );
 
   // Entries to quiz on — filtered from allEntries by picker selections so that
   // changing the level picker always produces the correct word pool.
@@ -86,15 +117,6 @@
   });
 
   onMount(() => {
-    // Client-side Plus gate. We read plan from page.data (via the isPlus
-    // derived) rather than from the load function's parent() call, because
-    // the Playwright __data.json interceptor patches the layout node that
-    // page.data reads from — making this work correctly in e2e tests.
-    if (!isPlus) {
-      window.location.replace('/plus?ref=quiz-gate');
-      return;
-    }
-
     if (browser) {
       // Plus users: load from Supabase; guest/free: load from localStorage
       if (isPlus && page.data.user?.id) {
@@ -344,7 +366,6 @@
             }}
             class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
           >
-            <option value="">{m.quiz_label_all_levels()}</option>
             {#each availableLevels as level (level)}
               <option value={level}>{formatLevel(level)}</option>
             {/each}
@@ -358,18 +379,49 @@
             class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
             {m.quiz_label_category()}
-            <span class="font-normal text-gray-400">{m.quiz_label_category_optional()}</span>
+            {#if isPlus}<span class="font-normal text-gray-400"
+                >{m.quiz_label_category_optional()}</span
+              >{/if}
           </label>
-          <select
-            id="quiz-category"
-            bind:value={selectedCategory}
-            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
-          >
-            <option value="">{m.quiz_label_all_categories()}</option>
-            {#each availableCategories as cat (cat)}
-              <option value={cat}>{formatCategory(cat)}</option>
-            {/each}
-          </select>
+          {#if isPlus}
+            <!-- Plus: full category select -->
+            <select
+              id="quiz-category"
+              bind:value={selectedCategory}
+              class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+            >
+              <option value="">{m.quiz_label_all_categories()}</option>
+              {#each categoriesWithLock as { cat } (cat)}
+                <option value={cat}>{formatCategory(cat)}</option>
+              {/each}
+            </select>
+          {:else}
+            <!-- Free: curated button list + upsell -->
+            <div class="flex flex-wrap gap-2">
+              {#each freeCategories as cat (cat)}
+                <button
+                  type="button"
+                  onclick={() => {
+                    selectedCategory = cat;
+                  }}
+                  class="rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors
+                    {selectedCategory === cat
+                    ? 'border-indigo-500 bg-indigo-50 text-indigo-700 dark:border-indigo-400 dark:bg-indigo-900/30 dark:text-indigo-300'
+                    : 'border-gray-300 text-gray-600 hover:border-indigo-400 hover:bg-indigo-50 dark:border-gray-600 dark:text-gray-400 dark:hover:border-indigo-500 dark:hover:bg-indigo-900/20'}"
+                >
+                  {formatCategory(cat)}
+                </button>
+              {/each}
+              {#if plusOnlyCount > 0}
+                <a
+                  href="/plus?ref=quiz-category-upsell"
+                  class="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-500 transition-colors hover:border-indigo-400 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:border-indigo-600"
+                >
+                  +{plusOnlyCount} with Plus →
+                </a>
+              {/if}
+            </div>
+          {/if}
         </div>
       </div>
 
@@ -386,7 +438,7 @@
       <button
         type="button"
         onclick={startQuiz}
-        disabled={quizEntries.length === 0}
+        disabled={quizEntries.length === 0 || !canStart}
         class="rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 dark:bg-indigo-500 dark:hover:bg-indigo-600"
       >
         {m.quiz_start()}
@@ -717,7 +769,6 @@
             }}
             class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
           >
-            <option value="">{m.quiz_label_all_levels()}</option>
             {#each availableLevels as level (level)}
               <option value={level}>{formatLevel(level)}</option>
             {/each}
@@ -730,18 +781,47 @@
             class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
             {m.quiz_label_category()}
-            <span class="font-normal text-gray-400">{m.quiz_label_category_optional()}</span>
+            {#if isPlus}<span class="font-normal text-gray-400"
+                >{m.quiz_label_category_optional()}</span
+              >{/if}
           </label>
-          <select
-            id="summary-category"
-            bind:value={selectedCategory}
-            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
-          >
-            <option value="">{m.quiz_label_all_categories()}</option>
-            {#each availableCategories as cat (cat)}
-              <option value={cat}>{formatCategory(cat)}</option>
-            {/each}
-          </select>
+          {#if isPlus}
+            <select
+              id="summary-category"
+              bind:value={selectedCategory}
+              class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+            >
+              <option value="">{m.quiz_label_all_categories()}</option>
+              {#each categoriesWithLock as { cat } (cat)}
+                <option value={cat}>{formatCategory(cat)}</option>
+              {/each}
+            </select>
+          {:else}
+            <div class="flex flex-wrap gap-2">
+              {#each freeCategories as cat (cat)}
+                <button
+                  type="button"
+                  onclick={() => {
+                    selectedCategory = cat;
+                  }}
+                  class="rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors
+                    {selectedCategory === cat
+                    ? 'border-indigo-500 bg-indigo-50 text-indigo-700 dark:border-indigo-400 dark:bg-indigo-900/30 dark:text-indigo-300'
+                    : 'border-gray-300 text-gray-600 hover:border-indigo-400 hover:bg-indigo-50 dark:border-gray-600 dark:text-gray-400 dark:hover:border-indigo-500 dark:hover:bg-indigo-900/20'}"
+                >
+                  {formatCategory(cat)}
+                </button>
+              {/each}
+              {#if plusOnlyCount > 0}
+                <a
+                  href="/plus?ref=quiz-category-upsell"
+                  class="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-500 transition-colors hover:border-indigo-400 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:border-indigo-600"
+                >
+                  +{plusOnlyCount} with Plus →
+                </a>
+              {/if}
+            </div>
+          {/if}
         </div>
       </div>
 
@@ -750,7 +830,7 @@
         <button
           type="button"
           onclick={startQuiz}
-          disabled={quizEntries.length === 0}
+          disabled={quizEntries.length === 0 || !canStart}
           class="rounded-lg bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 dark:bg-indigo-500 dark:hover:bg-indigo-600"
         >
           {m.quiz_restart()}

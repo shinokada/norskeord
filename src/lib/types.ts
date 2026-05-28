@@ -74,28 +74,28 @@ export const CATEGORIES_BY_LEVEL = {
     'work',
     'city-life',
     'traditions',
-    'opinion-adjectives',
-    'food-cooking-advanced',
-    'housing-renting',
-    'health-body-intermediate',
-    'finance-banking',
-    'dreams-ambitions',
-    'opinions-arguments',
-    'norwegian-society',
+    'expressing-opinions',
+    'cooking',
+    'accommodation',
+    'health',
+    'finance',
+    'personal-growth',
+    'reasoning',
+    'society',
     'communication-skills',
-    'housing-urban-life',
+    'urban-life',
     'mental-wellbeing',
-    'sports-fitness',
+    'fitness',
     'arts-culture',
-    'economics-personal-finance',
-    'environment-b1',
+    'economics',
+    'sustainability',
     'science-nature',
-    'media-journalism-b1',
+    'journalism',
     'workplace',
-    'relationships-family',
-    'politics-civics',
+    'family',
+    'politics',
     'language-learning',
-    'health-system',
+    'healthcare',
     'uttrykk',
     'uttrykk-preview'
   ],
@@ -182,26 +182,26 @@ export const PLUS_CATEGORIES = new Set<string>([
   // B1 — plus-only (22)
   'b1/city-life',
   'b1/traditions',
-  'b1/opinion-adjectives',
-  'b1/food-cooking-advanced',
-  'b1/housing-renting',
-  'b1/finance-banking',
-  'b1/dreams-ambitions',
-  'b1/opinions-arguments',
+  'b1/expressing-opinions',
+  'b1/cooking',
+  'b1/accommodation',
+  'b1/finance',
+  'b1/personal-growth',
+  'b1/reasoning',
   'b1/communication-skills',
-  'b1/housing-urban-life',
+  'b1/urban-life',
   'b1/mental-wellbeing',
-  'b1/sports-fitness',
+  'b1/fitness',
   'b1/arts-culture',
-  'b1/economics-personal-finance',
-  'b1/environment-b1',
+  'b1/economics',
+  'b1/sustainability',
   'b1/science-nature',
-  'b1/media-journalism-b1',
+  'b1/journalism',
   'b1/workplace',
-  'b1/relationships-family',
-  'b1/politics-civics',
+  'b1/family',
+  'b1/politics',
   'b1/language-learning',
-  'b1/health-system',
+  'b1/healthcare',
   // B2 — plus-only (28 vocab + full uttrykk)
   'b2/arts',
   'b2/emotions',
@@ -260,6 +260,49 @@ export const PLUS_CATEGORIES = new Set<string>([
 
 export function isPlusCategory(level: string, category: string): boolean {
   return PLUS_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
+}
+
+/**
+ * Top 3 categories per level available to free users in the Quiz.
+ * Derived from the first 3 non-uttrykk entries in CATEGORIES_BY_LEVEL.
+ */
+export const FREE_QUIZ_CATEGORIES = new Set<string>([
+  // A1
+  'a1/greetings',
+  'a1/numbers',
+  'a1/colors',
+  // A2
+  'a2/shopping',
+  'a2/transport',
+  'a2/clothing',
+  // B1
+  'b1/travel',
+  'b1/environment',
+  'b1/media',
+  // B2
+  'b2/politics',
+  'b2/economics',
+  'b2/social-issues',
+  // C1
+  'c1/philosophy',
+  'c1/academic',
+  'c1/formal-writing',
+  // C2
+  'c2/literary',
+  'c2/archaic',
+  'c2/proverbs'
+]);
+
+export function isFreeQuizCategory(level: string, category: string): boolean {
+  return FREE_QUIZ_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
+}
+
+/**
+ * Practice test number 1 is always free; all higher numbers require Plus.
+ * This scales automatically as new test sets are added.
+ */
+export function isFreeTest(test: number): boolean {
+  return test === 1;
 }
 
 export type FSRSRating = 'again' | 'hard' | 'good' | 'easy';

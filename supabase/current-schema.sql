@@ -76,6 +76,7 @@ CREATE TABLE public.profiles (
   session_limit integer CHECK (session_limit IS NULL OR (session_limit = ANY (ARRAY[10, 20, 30, 50]))),
   quiz_limit integer CHECK (quiz_limit IS NULL OR (quiz_limit = ANY (ARRAY[5, 10, 15, 20]))),
   email_reminder boolean NOT NULL DEFAULT false,
+  show_example boolean NOT NULL DEFAULT false,
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
 );

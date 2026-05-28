@@ -123,6 +123,8 @@ export const actions: Actions = {
     const quiz_limit_raw = data.get('quiz_limit') as string | null;
     const quiz_limit =
       quiz_limit_raw === null || quiz_limit_raw === 'default' ? null : parseInt(quiz_limit_raw, 10);
+    // show_example checkbox: present with value 'true' when checked, absent when unchecked
+    const show_example = data.get('show_example') === 'true';
 
     const validLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     const validLanguages = ['en', 'nb'];
@@ -166,7 +168,8 @@ export const actions: Actions = {
       ...(voice_speed !== null && { voice_speed }),
       ...(voice_pitch !== null && { voice_pitch }),
       session_limit,
-      quiz_limit
+      quiz_limit,
+      show_example
     };
 
     const { error } = await upsertProfile(locals.supabase, locals.user.id, update);

@@ -50,6 +50,7 @@
   );
   // quiz_limit: null in DB → default to 'default' sentinel; number → its string value
   let quizLimit = $derived(profile?.quiz_limit != null ? String(profile.quiz_limit) : 'default');
+  let showExample = $derived(profile?.show_example ?? false);
 
   const sessionLimitOptions = [
     { value: '10', label: '10 cards' },
@@ -96,6 +97,7 @@
     localStorage.setItem(LS_PITCH, voicePitch);
     localStorage.setItem('vocab-flashcard-session-limit', sessionLimit);
     localStorage.setItem('vocab-quiz-limit', quizLimit);
+    localStorage.setItem('vocab-flashcard-show-example', String(showExample));
     // Write through the store so the nav button updates reactively.
     localeStore.set(uiLanguage);
   }
@@ -323,6 +325,28 @@
       </select>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
         {m.profile_prefs_quiz_limit_hint()}
+      </p>
+    </div>
+
+    <!-- Show example translation by default -->
+    <div>
+      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
+        {m.profile_prefs_show_example()}
+      </p>
+      <label class="flex cursor-pointer items-center gap-2">
+        <input
+          type="checkbox"
+          name="show_example"
+          value="true"
+          bind:checked={showExample}
+          class="accent-indigo-600"
+        />
+        <span class="text-sm text-gray-700 dark:text-gray-300"
+          >{m.profile_prefs_show_example_label()}</span
+        >
+      </label>
+      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        {m.profile_prefs_show_example_hint()}
       </p>
     </div>
 
