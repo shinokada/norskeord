@@ -6,6 +6,8 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 ==========
 
+daily streak is not shown.
+
 # Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ---
