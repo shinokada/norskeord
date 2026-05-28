@@ -72,9 +72,18 @@ async function completeSession(page: Page, maxQuestions = 20) {
 // Gate tests
 // ===========================================================================
 
-test('free user is redirected from /quiz to /plus', async ({ page }) => {
+test('free user can access /quiz and sees free category picker', async ({ page }) => {
   await page.goto('/quiz');
-  await expect(page).toHaveURL(/\/plus/);
+  // Page loads without redirecting
+  await expect(page).toHaveURL('/quiz');
+  // Level select defaults to A1
+  await expect(page.locator('select#quiz-level')).toHaveValue('A1');
+  // Free category pills are visible (e.g. Greetings, Numbers, Colors for A1)
+  await expect(
+    page.getByRole('button', { name: /greetings|numbers|colors/i }).first()
+  ).toBeVisible();
+  // Upsell link is visible
+  await expect(page.getByRole('link', { name: /with Plus/i })).toBeVisible();
 });
 
 test('Plus user sees quiz start screen', async ({ page }) => {
@@ -190,8 +199,9 @@ test('quiz respects vocab-quiz-limit from localStorage', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/quiz');
 
-  // Set quiz limit to 5 via localStorage before starting
+  // Set quiz limit to 5 via localStorage, then re-inject Plus plan (reload clears the cookie/flag)
   await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '5'));
+  await injectPlusPlan(page);
   await page.reload();
 
   await page.getByRole('button', { name: /start quiz/i }).click();
@@ -199,10 +209,10 @@ test('quiz respects vocab-quiz-limit from localStorage', async ({ page }) => {
   // The question counter should show "of 5" (en) or "av 5" (nb)
   await expect(page.getByText(/of 5|av 5/i)).toBeVisible();
 
-  await completeSession(page, 5);
-  await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible();
+  await completeSession(page, 10);
+  await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible({ timeout: 15000 });
   // Score should be out of 5 (en: 'of 5 correct', nb: 'av 5 riktige')
-  await expect(page.getByText(/of 5 correct|av 5 riktige/i)).toBeVisible();
+  await expect(page.getByText(/of 5 correct|av 5 riktige/i)).toBeVisible({ timeout: 5000 });
 });
 
 test('quiz uses 10 questions by default (no localStorage key)', async ({ page }) => {

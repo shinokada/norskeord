@@ -6,7 +6,7 @@
   import { supabase } from '$lib/supabase';
   import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
   import SpeakButton from '$lib/SpeakButton.svelte';
-  import { Tooltip } from 'flowbite-svelte';
+
   import type { VocabEntry } from '$lib/types';
   import {
     saveProgress,
@@ -77,6 +77,8 @@
 
   function getInitialShowExample(): boolean {
     if (!browser) return false;
+    // Layout server exposes showExample directly for logged-in users (cross-device).
+    if (page.data.user) return (page.data.showExample as boolean) ?? false;
     return localStorage.getItem(LS_SHOW_EXAMPLE) === 'true';
   }
 
@@ -135,6 +137,9 @@
     (page.data.sessionLimit as number | null | undefined) ?? null
   );
 
+  // show_example from layout server (cross-device default)
+  let showExample = $derived((page.data.showExample as boolean) ?? false);
+
   // session limit — DB value (cross-device) takes priority; localStorage is the fallback for
   // unauthenticated users or when no profile value is set.
   // Uses $derived so it stays in sync if the prop changes (e.g. navigation).
@@ -157,6 +162,14 @@
     } else {
       progressMap = loadProgressMap();
       dueCount = countDueToday(progressMap);
+    }
+
+    // Seed showExampleDefault from the layout server value for logged-in users,
+    // so it syncs across devices. localStorage remains the fallback for guests.
+    if (page.data.user) {
+      showExampleDefault = showExample;
+      showExampleEnglish = showExample;
+      localStorage.setItem(LS_SHOW_EXAMPLE, String(showExample));
     }
 
     // Keep localSessionLimit in sync if the user updates it in another tab
@@ -540,27 +553,20 @@
 
   // ── Interval label helpers ──────────────────────────────────────────────────
 
-  /**
-   * Expand a compact interval string (e.g. "1m", "6m", "10m", "8d", "3h")
-   * into a human-readable tooltip label.
-   */
-  function expandInterval(raw: string): string {
+  // ── Interval inline label ────────────────────────────────────────────────────
+
+  function intervalLabel(raw: string | undefined, rating: FSRSRating): string {
+    if (rating === 'again') return 'review again';
     if (!raw) return '';
     const match = raw.match(/^(\d+)([smhd])$/);
     if (!match) return raw;
     const n = parseInt(match[1], 10);
     const unit = match[2];
-    if (unit === 's') return n === 1 ? '1 second' : `${n} seconds`;
-    if (unit === 'm') return n === 1 ? '1 minute' : `${n} minutes`;
-    if (unit === 'h') return n === 1 ? '1 hour' : `${n} hours`;
-    if (unit === 'd') return n === 1 ? '1 day' : `${n} days`;
+    if (unit === 's') return `in ${n === 1 ? '1 second' : `${n} seconds`}`;
+    if (unit === 'm') return `in ${n === 1 ? '1 minute' : `${n} minutes`}`;
+    if (unit === 'h') return `in ${n === 1 ? '1 hour' : `${n} hours`}`;
+    if (unit === 'd') return `in ${n === 1 ? '1 day' : `${n} days`}`;
     return raw;
-  }
-
-  function intervalTooltip(raw: string | undefined, rating: FSRSRating): string {
-    if (!raw) return '';
-    if (rating === 'again') return 'Review again soon';
-    return `Next review: ${expandInterval(raw)}`;
   }
 
   // ── Button styles ─────────────────────────────────────────────────────────────
@@ -588,7 +594,7 @@
       {#if prevCategory}
         <a
           href={prevCategory.href}
-          class="inline-flex items-center gap-1 truncate rounded-lg px-2 py-1 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          class="inline-flex min-h-[44px] items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
           title={prevCategory.label}
         >
           <span class="shrink-0">←</span>
@@ -610,7 +616,7 @@
       {#if nextCategory}
         <a
           href={nextCategory.href}
-          class="inline-flex items-center gap-1 truncate rounded-lg px-2 py-1 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          class="inline-flex min-h-[44px] items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
           title={nextCategory.label}
         >
           <span class="truncate">{nextCategory.label}</span>
@@ -730,18 +736,7 @@
     </div>
   {/if}
 
-  <!-- 2-D: undo button -->
-  {#if undoSnapshot}
-    <div class="mt-2 flex justify-center">
-      <button
-        type="button"
-        onclick={undo}
-        class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200 dark:bg-yellow-900 dark:text-yellow-200 dark:hover:bg-yellow-800"
-      >
-        ↩ {m.flashcard_undo_countdown({ seconds: String(undoCountdown) })}
-      </button>
-    </div>
-  {/if}
+  <!-- 2-D: undo button removed from here; rendered near rating buttons to avoid layout shift -->
 
   <!-- Step 5: uttrykk preview banner -->
   {#if isUttrykkPreview}
@@ -758,7 +753,9 @@
   {/if}
 
   <!-- Hint bar with counter on the right -->
-  <div class="mt-3 flex w-full max-w-lg items-center justify-between rounded-md bg-gray-100 px-3 py-1 dark:bg-gray-800">
+  <div
+    class="mt-3 flex w-full max-w-lg items-center justify-between rounded-md bg-gray-100 px-3 py-1 dark:bg-gray-800"
+  >
     <p class="text-sm text-gray-500 sm:text-base dark:text-gray-400">
       {#if isTouch}
         {m.flashcard_hint_touch()}
@@ -767,7 +764,14 @@
         {cardType === 'word' ? m.flashcard_hint_example_phrase() : m.flashcard_hint_word()}
       {/if}
     </p>
-    <span class="ml-3 shrink-0 text-sm font-medium text-gray-500 sm:text-base dark:text-gray-400">
+    <span
+      class="ml-3 shrink-0 text-sm font-medium text-gray-500 sm:text-base dark:text-gray-400"
+      aria-label="Card {deck.length === 0
+        ? 0
+        : completed
+          ? deck.length
+          : currentIndex + 1} of {deck.length}"
+    >
       {deck.length === 0 ? 0 : completed ? deck.length : currentIndex + 1}/{deck.length}
     </span>
   </div>
@@ -885,86 +889,81 @@
         >
       </p>
     {/if}
-    <div class="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center">
+    <div class="mx-auto mt-4 grid w-full grid-cols-2 gap-2 md:w-1/2 md:grid-cols-4">
       <!-- Again -->
       <button
-        id="btn-again"
         type="button"
         onclick={() => rate('again')}
-        class="flex w-full flex-col items-center justify-center rounded-lg bg-red-600 px-4 py-3 text-sm font-medium text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none sm:w-auto dark:bg-red-500 dark:hover:bg-red-600"
+        class="flex w-full flex-col items-center justify-between rounded-lg bg-red-600 px-4 py-3 text-sm font-medium text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none dark:bg-red-500 dark:hover:bg-red-600"
       >
         <span
           >{m.flashcard_again()}
-          <kbd aria-hidden="true" class="ml-1 rounded bg-red-800 px-1 text-xs opacity-70">1</kbd
-          ></span
-        >
-        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.again ?? ''}</span>{/if}
+          <kbd
+            aria-hidden="true"
+            class="ml-1 hidden rounded bg-red-800 px-1 text-xs opacity-70 min-[892px]:inline">1</kbd
+          >
+        </span>
+        {#if intervals}<span class="mt-auto text-xs opacity-75"
+            >{intervalLabel(intervals.again, 'again')}</span
+          >{/if}
       </button>
-      {#if intervals}
-        <Tooltip triggeredBy="#btn-again" placement="top">
-          {intervalTooltip(intervals.again, 'again')}
-        </Tooltip>
-      {/if}
 
       <!-- Hard -->
       <button
-        id="btn-hard"
         type="button"
         onclick={() => rate('hard')}
-        class="flex w-full flex-col items-center justify-center rounded-lg bg-orange-500 px-4 py-3 text-sm font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none sm:w-auto dark:bg-orange-400 dark:hover:bg-orange-500"
+        class="flex w-full flex-col items-center justify-between rounded-lg bg-orange-500 px-4 py-3 text-sm font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
       >
         <span
           >{m.flashcard_hard()}
-          <kbd aria-hidden="true" class="ml-1 rounded bg-orange-700 px-1 text-xs opacity-70">2</kbd
-          ></span
-        >
-        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.hard ?? ''}</span>{/if}
+          <kbd
+            aria-hidden="true"
+            class="ml-1 hidden rounded bg-orange-700 px-1 text-xs opacity-70 min-[892px]:inline"
+            >2</kbd
+          >
+        </span>
+        {#if intervals}<span class="mt-auto text-xs opacity-75"
+            >{intervalLabel(intervals.hard, 'hard')}</span
+          >{/if}
       </button>
-      {#if intervals}
-        <Tooltip triggeredBy="#btn-hard" placement="top">
-          {intervalTooltip(intervals.hard, 'hard')}
-        </Tooltip>
-      {/if}
 
       <!-- Good -->
       <button
-        id="btn-good"
         type="button"
         onclick={() => rate('good')}
-        class="flex w-full flex-col items-center justify-center rounded-lg bg-green-600 px-4 py-3 text-sm font-medium text-white hover:bg-green-700 focus:ring-4 focus:ring-green-300 focus:outline-none sm:w-auto dark:bg-green-500 dark:hover:bg-green-600"
+        class="flex w-full flex-col items-center justify-between rounded-lg bg-green-600 px-4 py-3 text-sm font-medium text-white hover:bg-green-700 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-500 dark:hover:bg-green-600"
       >
         <span
           >{m.flashcard_good()}
-          <kbd aria-hidden="true" class="ml-1 rounded bg-green-800 px-1 text-xs opacity-70">3</kbd
-          ></span
-        >
-        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.good ?? ''}</span>{/if}
+          <kbd
+            aria-hidden="true"
+            class="ml-1 hidden rounded bg-green-800 px-1 text-xs opacity-70 min-[892px]:inline"
+            >3</kbd
+          >
+        </span>
+        {#if intervals}<span class="mt-auto text-xs opacity-75"
+            >{intervalLabel(intervals.good, 'good')}</span
+          >{/if}
       </button>
-      {#if intervals}
-        <Tooltip triggeredBy="#btn-good" placement="top">
-          {intervalTooltip(intervals.good, 'good')}
-        </Tooltip>
-      {/if}
 
       <!-- Easy -->
       <button
-        id="btn-easy"
         type="button"
         onclick={() => rate('easy')}
-        class="flex w-full flex-col items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none sm:w-auto dark:bg-blue-500 dark:hover:bg-blue-600"
+        class="flex w-full flex-col items-center justify-between rounded-lg bg-blue-600 px-4 py-3 text-sm font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600"
       >
         <span
           >{m.flashcard_easy()}
-          <kbd aria-hidden="true" class="ml-1 rounded bg-blue-800 px-1 text-xs opacity-70">4</kbd
-          ></span
-        >
-        {#if intervals}<span class="mt-0.5 text-xs opacity-75">{intervals.easy ?? ''}</span>{/if}
+          <kbd
+            aria-hidden="true"
+            class="ml-1 hidden rounded bg-blue-800 px-1 text-xs opacity-70 min-[892px]:inline"
+            >4</kbd
+          >
+        </span>
+        {#if intervals}<span class="mt-auto text-xs opacity-75"
+            >{intervalLabel(intervals.easy, 'easy')}</span
+          >{/if}
       </button>
-      {#if intervals}
-        <Tooltip triggeredBy="#btn-easy" placement="top">
-          {intervalTooltip(intervals.easy, 'easy')}
-        </Tooltip>
-      {/if}
     </div>
   {/if}
 
@@ -998,6 +997,15 @@
         bind:this={speakButtonRef}
         word={cardType === 'word' ? current.entry.norsk : current.entry.example}
       />
+      <button
+        type="button"
+        onclick={undo}
+        disabled={!undoSnapshot}
+        tabindex={undoSnapshot ? 0 : -1}
+        class="inline-flex min-w-28 items-center justify-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-yellow-900 dark:text-yellow-200 dark:hover:bg-yellow-800"
+      >
+        ↩ {undoSnapshot ? m.flashcard_undo_countdown({ seconds: String(undoCountdown) }) : 'Undo'}
+      </button>
     </div>
   {/if}
 
@@ -1044,6 +1052,7 @@
     <button
       type="button"
       onclick={prev}
+      aria-label={m.flashcard_previous()}
       class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
       disabled={currentIndex <= 0 && !completed}
     >
@@ -1054,6 +1063,7 @@
     <button
       type="button"
       class="inline-flex w-full items-center justify-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+      aria-label={m.flashcard_restart()}
       onclick={restart}
       disabled={entries.length === 0}
     >
@@ -1063,6 +1073,7 @@
     <button
       type="button"
       onclick={next}
+      aria-label={m.flashcard_next()}
       class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
       disabled={completed || deck.length === 0}
     >
@@ -1102,11 +1113,16 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.4s;
     transform-style: preserve-3d;
     cursor: pointer;
     user-select: none;
     touch-action: pan-y;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .flip-box-inner {
+      transition: none;
+    }
   }
   .flip-it {
     transform: rotateY(180deg);
