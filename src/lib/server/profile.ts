@@ -17,6 +17,7 @@ export interface Profile {
   voice_pitch: number;
   session_limit: number | null;
   quiz_limit: number | null; // null = default (10)
+  show_example: boolean; // show example translation below the card by default
   // Lemon Squeezy fields — written by webhook only, never by client
   ls_customer_id: string | null;
   ls_subscription_id: string | null;
@@ -41,6 +42,7 @@ export type ProfileUpdate = Partial<
     | 'voice_pitch'
     | 'session_limit'
     | 'quiz_limit'
+    | 'show_example'
   >
 >;
 

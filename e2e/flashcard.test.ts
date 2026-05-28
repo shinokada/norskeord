@@ -78,7 +78,7 @@ test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ 
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Philosophy');
 
   // card counter is visible (format: "1/N") — wait for deck to build after onMount
-  await expect(page.getByRole('button', { name: /^\d+\/\d+$/ })).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText(/^\d+\/\d+$/)).toBeVisible({ timeout: 10000 });
 
   // flip the card and confirm FSRS rating buttons appear (en: Again/Good, nb: Igjen/Bra)
   const flipCard = page.getByRole('button', { name: /flashcard showing question/i });

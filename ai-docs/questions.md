@@ -1,6 +1,7 @@
 # Questions
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql
 
 ==========
@@ -8,6 +9,56 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 # Please read ad-docs/monetization-focusd-plan.md and monetization-focusd-implementation.md.
 
 ---
+
+Q: What I was worried about that some users may feel uncomfortable with any animations due to their disability or something else.
+So do you recommend flip animation speed?
+What does "show example translation by default" mean? Do you mean adding this to preference?
+
+Ans:
+Good point — for accessibility, the right answer isn't a speed preference, it's respecting `prefers-reduced-motion`. That's the OS-level setting users with vestibular disorders, epilepsy, or motion sensitivity already set system-wide. Adding a manual speed knob in the profile duplicates that signal and puts the burden back on the user. The correct fix is one CSS line:
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  .flip-box-inner {
+    transition: none;
+  }
+}
+```
+
+That covers the disability case properly, and the `0.4s` you already have is fine for everyone else. So no, I'd drop the flip animation speed preference entirely in favour of the media query.
+
+---
+
+On the second question — yes, exactly. Right now the "show/hide translation" toggle below the example sentence already works, and the preference (`LS_SHOW_EXAMPLE`) is already saved to `localStorage`. But it only persists on one device. If a user logs in on their phone after using the desktop, their preference is gone.
+
+Adding it to the profile would mean: when a user saves preferences and says "always show the translation", that choice follows them across devices, just like card direction and voice speed already do. It would be a single checkbox — something like "Show example translation by default" — backed by a new boolean column in the profile table.
+
+Whether it's worth adding depends on how often you hear from users about it. It's a small lift technically, but if most users just leave it at the default it's noise in the preferences form. I'd only add it if you see it being toggled frequently in usage data, or if users ask about it.
+
+Q: So adding "show/hide translation" to preference, we can remove it from the flashcard page. Isn't it?
+
+Ans:
+Not quite — I'd keep the toggle on the flashcard page even if you add it to preferences.
+
+The profile preference sets the _default_ when a session starts, but users often want to change it mid-session on a card-by-card basis. For example, they might default to "hide" but occasionally peek at a tricky example. Removing the inline toggle would force them to go to `/my-profile` every time they want a one-off peek, which is a significant UX regression.
+
+The right mental model is the same as card direction and card type: those are also in preferences as defaults, but the segmented controls on the flashcard page let you override them for the current session without navigating away.
+
+So the two things serve different purposes — preference = "what I usually want", inline toggle = "what I want right now" — and both should stay.
+
+Q: Ok, I understood. Can you update both media query and "show/hide translation"?
+Ans:
+Let me look at the relevant files before making any changes.Now let me check the Supabase migration files to understand the DB schema, and also check the i18n messages:Now I have a complete picture. Here's everything that needs to change across all the files:Now I have everything I need. Here's the full scope of changes required:
+
+**For `prefers-reduced-motion`:** one addition to `VocabFlashcardPage.svelte`'s `<style>` block.
+
+**For show-example-translation preference:** touches 6 places — a new migration SQL file, `profile.ts` (type + `ProfileUpdate`), `PreferencesSection.svelte` (new field + `applyToLocalStorage`), `+page.server.ts` (parse + validate + upsert), `VocabFlashcardPage.svelte` (read from profile prop), and both message files.
+
+Let's go:Now add `show_example` to the `Profile` type and `ProfileUpdate`:Now update `VocabFlashcardPage.svelte` to accept `showExampleDefault` from the profile prop. The component currently derives `showExampleDefault` from `localStorage` only. I need to check the Props interface — it currently receives `entries`, `title`, `level`, `prevCategory`, `nextCategory`. The profile default is read via `localStorage` at init. The cleanest approach, consistent with how `cardDirection` and `include_phrases` work, is to pass `showExampleDefault` in as a prop from the route's `+page.svelte` (which already gets `data.profile`). Let me check how the component is called:The `+page.server.ts` for the category page doesn't load the profile — that comes from the layout server. The profile is already available in `page.data` inside `VocabFlashcardPage.svelte` via `page` from `$app/state`, just like `plan` and `sessionLimit` are already read there. So I don't need to thread a new prop — I can read `show_example` directly from `page.data.profile` inside the component, consistent with the existing pattern.
+
+Now let's make all the remaining changes:Now update `getInitialShowExample` to prefer the profile value when the user is logged in, and seed `showExampleDefault` from it on mount:Now update `PreferencesSection.svelte` — add the `show_example` field and wire it into `applyToLocalStorage`:I notice `applyToLocalStorage` uses `LS_SHOW_EXAMPLE` constant in `VocabFlashcardPage` but I've hard-coded the string in `PreferencesSection`. Let me check what key name is used — in `VocabFlashcardPage` the constant is `const LS_SHOW_EXAMPLE = 'vocab-flashcard-show-example'`. I've used the same string, so that's consistent. Good.
+
+## Now add the `show_example` checkbox to the form UI in `PreferencesSection.svelte`, just before the save button:
 
 ## How to test 1
 
