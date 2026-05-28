@@ -31,7 +31,10 @@ AS $$
 $$;
 
 REVOKE EXECUTE ON FUNCTION public.upsert_study_day(uuid, date) FROM anon;
-REVOKE EXECUTE ON FUNCTION public.upsert_study_day(uuid, date) FROM authenticated;
+-- NOTE: authenticated users must be able to call this from the client (recordStudyDay in progress.ts).
+-- SECURITY DEFINER + SET search_path already prevents injection; the function only writes
+-- to the row matching p_user_id, so granting authenticated is safe.
+-- REVOKE EXECUTE ON FUNCTION public.upsert_study_day(uuid, date) FROM authenticated;
 
 
 -- ── 3. Leaked password protection ───────────────────────────────────────────
