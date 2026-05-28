@@ -1,5 +1,28 @@
 # norske-flashcard
 
+## 2.9.0
+
+### Minor Changes
+
+- - **New Features**
+    - Profile preference: show example translations by default (syncs across devices)
+    - Free-tier expansion: first 3 quiz categories per level and Practice Test 1 unlocked; locked items show a lock and upgrade flow
+  - **UI Improvements**
+    - Flashcard layout, labels, keyboard sizing, aria labels, and quiz/category selection refined; nav links reflect partial access
+    - Plus comparison table updated
+  - **Accessibility**
+    - prefers-reduced-motion for flip animations
+  - **Localization**
+    - New i18n strings for profile prefs; updated Plus copy
+  - **Tests**
+    - Updated end-to-end coverage for quizzes, practice tests, and flashcard counter
+  - **Data / Database**
+    - B1 vocabulary category keys renamed; DB migration adds show-example profile column
+  - **Documentation**
+    - Updated docs and implementation plan for quiz/practice changes
+  - **Chores**
+    - Bumped package manager version
+
 ## 2.8.1
 
 ### Patch Changes
