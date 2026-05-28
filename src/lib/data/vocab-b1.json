@@ -2162,7 +2162,7 @@
     "example": "Det er viktig å lytte til andre.",
     "example_english": "It is important to listen to others.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som har stor betydning og ikke kan ignoreres."
   },
@@ -2404,7 +2404,7 @@
     "example": "Hvilken rett anbefaler du?",
     "example_english": "Which dish do you recommend?",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "En bestemt matporsjon som serveres som en del av et måltid."
   },
@@ -2657,7 +2657,7 @@
     "example": "Vi leier en leilighet i sentrum.",
     "example_english": "We rent a flat in the city centre.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "verb",
     "definition": "Å betale en sum for å bruke noe som tilhører noen andre, for eksempel en bolig."
   },
@@ -2910,7 +2910,7 @@
     "example": "Hva er symptomene på influensa?",
     "example_english": "What are the symptoms of the flu?",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "Et tegn på sykdom som pasienten merker eller legen observerer."
   },
@@ -3108,7 +3108,7 @@
     "example": "Jeg sjekker kontoen min på nettet.",
     "example_english": "I check my account online.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Et register i en bank der pengene dine oppbevares."
   },
@@ -3316,7 +3316,7 @@
     "example": "Drømmen min er å bli lege.",
     "example_english": "My dream is to become a doctor.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Et sterkt ønske om noe man gjerne vil oppnå i fremtiden."
   },
@@ -3326,7 +3326,7 @@
     "example": "Hun har store ambisjoner i karrieren.",
     "example_english": "She has great ambitions in her career.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Et sterkt ønske om å lykkes og nå høye mål i livet."
   },
@@ -3336,7 +3336,7 @@
     "example": "Vi lager en plan for fremtiden.",
     "example_english": "We make a plan for the future.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "En beskrivelse av hva man skal gjøre og i hvilken rekkefølge for å nå et mål."
   },
@@ -3346,7 +3346,7 @@
     "example": "Ingen vet hva fremtiden bringer.",
     "example_english": "Nobody knows what the future holds.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Tiden som ikke har skjedd ennå — alt som kommer etter nå."
   },
@@ -3356,7 +3356,7 @@
     "example": "Vi kan lære mye av fortiden.",
     "example_english": "We can learn a lot from the past.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Alle hendelsene og erfaringene som allerede har skjedd."
   },
@@ -3366,7 +3366,7 @@
     "example": "Hardt arbeid fører til suksess.",
     "example_english": "Hard work leads to success.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Det å oppnå noe man har jobbet hardt for og ønsket seg."
   },
@@ -3376,7 +3376,7 @@
     "example": "Hun lyktes med prosjektet.",
     "example_english": "She succeeded with the project.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "verb",
     "definition": "Å klare å nå et mål eller gjøre noe bra."
   },
@@ -3386,7 +3386,7 @@
     "example": "Det er greit å mislykkes noen ganger.",
     "example_english": "It is okay to fail sometimes.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "verb",
     "definition": "Å ikke klare å nå et mål eller gjøre noe som forventet."
   },
@@ -3396,7 +3396,7 @@
     "example": "Det kan være vanskelig å motivere seg.",
     "example_english": "It can be difficult to motivate oneself.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "verb",
     "definition": "Å finne styrke og vilje til å gjøre noe, særlig når det er vanskelig."
   },
@@ -3406,7 +3406,7 @@
     "example": "Dette er en god mulighet for deg.",
     "example_english": "This is a good opportunity for you.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "En sjanse til å gjøre eller oppnå noe."
   },
@@ -3416,7 +3416,7 @@
     "example": "Han prøvde igjen etter feilen.",
     "example_english": "He tried again after the mistake.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "phrase",
     "definition": "Å forsøke på nytt etter at man har mislyktes."
   },
@@ -3426,7 +3426,7 @@
     "example": "God selvtillit er viktig i livet.",
     "example_english": "Good self-confidence is important in life.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Troen på sine egne evner og at man kan klare ting."
   },
@@ -3436,7 +3436,7 @@
     "example": "Utholdenhet er nøkkelen til suksess.",
     "example_english": "Perseverance is the key to success.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Evnen til å fortsette selv når noe er vanskelig eller tar lang tid."
   },
@@ -3446,7 +3446,7 @@
     "example": "Han liker utfordringer på jobben.",
     "example_english": "He likes challenges at work.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "En oppgave eller situasjon som krever innsats og mot å løse."
   },
@@ -3456,7 +3456,7 @@
     "example": "Noen ganger må man ta en risiko.",
     "example_english": "Sometimes one must take a risk.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "phrase",
     "definition": "Å gjøre noe der utfallet er usikkert, og der det kan gå galt."
   },
@@ -3466,7 +3466,7 @@
     "example": "Musikk er lidenskapen hennes.",
     "example_english": "Music is her passion.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Et sterkt og brennende ønske eller kjærlighet til noe."
   },
@@ -3476,7 +3476,7 @@
     "example": "Han jobber hardt for å realisere drømmene sine.",
     "example_english": "He works hard to realise his dreams.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "phrase",
     "definition": "Å faktisk oppnå eller leve ut det man har drømt om."
   },
@@ -3486,7 +3486,7 @@
     "example": "Naturen er en stor inspirasjon for henne.",
     "example_english": "Nature is a great inspiration for her.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Noe som gir deg energi og lyst til å skape eller prøve noe nytt."
   },
@@ -3496,7 +3496,7 @@
     "example": "Hun fikk et mye bedre resultat denne gangen.",
     "example_english": "She got a much better result this time.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "phrase",
     "definition": "Et resultat som er bedre enn det forrige."
   },
@@ -3506,7 +3506,7 @@
     "example": "Vi planlegger ferien nøye.",
     "example_english": "We plan the holiday carefully.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "verb",
     "definition": "Å tenke gjennom hva man skal gjøre og bestemme fremgangsmåten på forhånd."
   },
@@ -3516,7 +3516,7 @@
     "example": "Hva er rollen din i prosjektet?",
     "example_english": "What is your role in the project?",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Den funksjonen eller stillingen en person har i en gruppe eller situasjon."
   },
@@ -3526,7 +3526,7 @@
     "example": "Mentoren min hjelper meg med karrieren.",
     "example_english": "My mentor helps me with my career.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "En erfaren person som veileder og støtter en annen person i utvikling."
   },
@@ -3536,7 +3536,7 @@
     "example": "Han investerer i personlig utvikling.",
     "example_english": "He invests in personal development.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "phrase",
     "definition": "Det å lære og vokse som person for å bli bedre og mer tilfreds."
   },
@@ -3546,7 +3546,7 @@
     "example": "Kreativitet er viktig i mange yrker.",
     "example_english": "Creativity is important in many professions.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Evnen til å tenke nytt og lage noe originalt."
   },
@@ -3556,7 +3556,7 @@
     "example": "Tid er en verdifull ressurs.",
     "example_english": "Time is a valuable resource.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Noe man kan bruke til å nå et mål — tid, penger, kunnskap eller materialer."
   },
@@ -3566,7 +3566,7 @@
     "example": "Hun jobber daglig med å forbedre seg.",
     "example_english": "She works daily on improving herself.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "verb",
     "definition": "Å bli bedre enn man var, gjennom øvelse og innsats."
   },
@@ -3576,7 +3576,7 @@
     "example": "Tilbakeslaget stoppet ham ikke.",
     "example_english": "The setback did not stop him.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "noun",
     "definition": "Et steg i feil retning, når man ikke lenger er like nær målet som før."
   },
@@ -3586,7 +3586,7 @@
     "example": "Det tok tid, men hun nådde målet.",
     "example_english": "It took time, but she reached the goal.",
     "level": "B1",
-    "category": "dreams-ambitions",
+    "category": "personal-growth",
     "part": "phrase",
     "definition": "Å oppnå det man har satt seg fore."
   },
@@ -3596,7 +3596,7 @@
     "example": "Hva er din mening om dette?",
     "example_english": "What is your opinion on this?",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "noun",
     "definition": "Det man personlig tenker eller tror om noe."
   },
@@ -3866,7 +3866,7 @@
     "example": "17. mai er en viktig helligdag i Norge.",
     "example_english": "17th May is an important public holiday in Norway.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "En dag der mange har fri og markerer en religiøs eller nasjonal begivenhet."
   },
@@ -4416,7 +4416,7 @@
     "example": "Mange studenter bor i kollektiv.",
     "example_english": "Many students live in shared housing.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "En boform der flere mennesker deler en leilighet og utgiftene."
   },
@@ -4806,7 +4806,7 @@
     "example": "Han driver med mange ulike sporter.",
     "example_english": "He practises many different sports.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En fysisk aktivitet med regler som utøves for moro, helse eller konkurranse."
   },
@@ -5186,7 +5186,7 @@
     "example": "Vi betaler skatt til staten.",
     "example_english": "We pay tax to the state.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Penger innbyggerne betaler til staten som finansierer offentlige tjenester."
   },
@@ -5326,7 +5326,7 @@
     "example": "Solenergi brukes stadig mer.",
     "example_english": "Solar energy is used more and more.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Energi produsert fra sollys ved hjelp av solpaneler."
   },
@@ -5796,7 +5796,7 @@
     "example": "Jeg ser på nyheter om kvelden.",
     "example_english": "I watch the news in the evening.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "Oppdatert informasjon om hendelser i verden formidlet gjennom medier."
   },
@@ -6226,7 +6226,7 @@
     "example": "De feiret ti år med ekteskap.",
     "example_english": "They celebrated ten years of marriage.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "Et juridisk og sosialt anerkjent samliv mellom to personer."
   },
@@ -6336,7 +6336,7 @@
     "example": "Demokrati er et grunnleggende prinsipp.",
     "example_english": "Democracy is a fundamental principle.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Et styresett der innbyggerne velger sine representanter og har innflytelse på politikken."
   },
@@ -6846,7 +6846,7 @@
     "example": "God helse er det viktigste i livet.",
     "example_english": "Good health is the most important thing in life.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "Den generelle tilstanden til kroppen og sinnet — om man er frisk eller syk."
   },

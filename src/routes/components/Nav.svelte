@@ -267,14 +267,11 @@
       />
     </NavLi>
     <Dropdown simple class="w-44 dark:border-gray-700 dark:bg-blue-950">
-      <DropdownItem class="dark:hover:bg-blue-900" href={isPlus ? '/quiz' : '/plus?ref=nav-quiz'}>
-        {m.nav_quiz()}{isPlus ? '' : ' 🔒'}
+      <DropdownItem class="dark:hover:bg-blue-900" href="/quiz">
+        {m.nav_quiz()}
       </DropdownItem>
-      <DropdownItem
-        class="dark:hover:bg-blue-900"
-        href={isPlus ? '/norskproven/practice' : '/plus?ref=nav-practice-tests'}
-      >
-        {m.nav_practice_tests()}{isPlus ? '' : ' 🔒'}
+      <DropdownItem class="dark:hover:bg-blue-900" href="/norskproven/practice">
+        {m.nav_practice_tests()}
       </DropdownItem>
     </Dropdown>
 
