@@ -54,6 +54,16 @@
       pro: { value: m.plus_row_stats_plus(), yes: true }
     },
     {
+      feature: m.plus_row_norskproven_practice(),
+      free: { value: m.plus_row_norskproven_practice_free(), yes: true },
+      pro: { value: m.plus_row_norskproven_practice_plus(), yes: true }
+    },
+    {
+      feature: m.plus_row_quiz(),
+      free: { value: m.plus_row_quiz_free(), yes: true },
+      pro: { value: m.plus_row_quiz_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_per_category_stats(),
       free: { value: m.plus_row_per_category_stats_free(), yes: false },
       pro: { value: m.plus_row_per_category_stats_plus(), yes: true }
@@ -74,19 +84,9 @@
       pro: { value: m.plus_row_reminder_plus(), yes: true }
     },
     {
-      feature: m.plus_row_norskproven_practice(),
-      free: { value: m.plus_row_norskproven_practice_free(), yes: false },
-      pro: { value: m.plus_row_norskproven_practice_plus(), yes: true }
-    },
-    {
       feature: m.plus_row_download_progress(),
       free: { value: m.plus_row_download_progress_free(), yes: false },
       pro: { value: m.plus_row_download_progress_plus(), yes: true }
-    },
-    {
-      feature: m.plus_row_quiz(),
-      free: { value: m.plus_row_quiz_free(), yes: false },
-      pro: { value: m.plus_row_quiz_plus(), yes: true }
     },
     {
       feature: m.plus_row_support(),

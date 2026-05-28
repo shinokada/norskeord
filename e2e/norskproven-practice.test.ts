@@ -519,7 +519,7 @@ test.describe('/plus page updates', () => {
   test('practice tests row shows correct Plus value', async ({ page }) => {
     await page.goto('/plus');
     await expect(
-      page.getByRole('cell', { name: /reading, writing & oral|lesing, skriving og muntlig/i })
+      page.getByRole('cell', { name: /all tests \(A2 & B1\)|alle prøver \(A2 og B1\)/i })
     ).toBeVisible();
   });
 
