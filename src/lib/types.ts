@@ -262,6 +262,49 @@ export function isPlusCategory(level: string, category: string): boolean {
   return PLUS_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
 }
 
+/**
+ * Top 3 categories per level available to free users in the Quiz.
+ * Derived from the first 3 non-uttrykk entries in CATEGORIES_BY_LEVEL.
+ */
+export const FREE_QUIZ_CATEGORIES = new Set<string>([
+  // A1
+  'a1/greetings',
+  'a1/numbers',
+  'a1/colors',
+  // A2
+  'a2/shopping',
+  'a2/transport',
+  'a2/clothing',
+  // B1
+  'b1/travel',
+  'b1/environment',
+  'b1/media',
+  // B2
+  'b2/politics',
+  'b2/economics',
+  'b2/social-issues',
+  // C1
+  'c1/philosophy',
+  'c1/academic',
+  'c1/formal-writing',
+  // C2
+  'c2/literary',
+  'c2/archaic',
+  'c2/proverbs'
+]);
+
+export function isFreeQuizCategory(level: string, category: string): boolean {
+  return FREE_QUIZ_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
+}
+
+/**
+ * Practice test number 1 is always free; all higher numbers require Plus.
+ * This scales automatically as new test sets are added.
+ */
+export function isFreeTest(test: number): boolean {
+  return test === 1;
+}
+
 export type FSRSRating = 'again' | 'hard' | 'good' | 'easy';
 
 export interface CardProgress {
