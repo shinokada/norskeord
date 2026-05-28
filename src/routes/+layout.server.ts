@@ -47,15 +47,17 @@ export const load = async ({ url, locals }) => {
   let displayName: string | null = null;
   let targetLevel: string | null = null;
   let sessionLimit: number | null = null;
+  let showExample: boolean = false;
   if (locals.user) {
     const { data } = await locals.supabase
       .from('profiles')
-      .select('display_name, target_level, session_limit')
+      .select('display_name, target_level, session_limit, show_example')
       .eq('id', locals.user.id)
       .maybeSingle();
     displayName = data?.display_name ?? null;
     targetLevel = data?.target_level ?? null;
     sessionLimit = data?.session_limit ?? null;
+    showExample = data?.show_example ?? false;
   }
 
   return {
@@ -66,6 +68,7 @@ export const load = async ({ url, locals }) => {
     plan: locals.plan,
     displayName,
     targetLevel,
-    sessionLimit
+    sessionLimit,
+    showExample
   };
 };
