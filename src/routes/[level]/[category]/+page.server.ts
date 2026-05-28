@@ -70,7 +70,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
   const allCats: string[] = [...(CATEGORIES_BY_LEVEL[levelUpper] ?? [])];
   const visibleCats: string[] = isPlus
     ? allCats.filter((c) => c !== 'uttrykk-preview')
-    : allCats.filter((c) => c !== 'uttrykk');
+    : allCats.filter((c) => c !== 'uttrykk' && !isPlusCategory(level, c));
 
   // Resolve the effective category slug (uttrykk-preview → uttrykk for Plus)
   const effectiveCategory = isPlus && category === 'uttrykk-preview' ? 'uttrykk' : category;
