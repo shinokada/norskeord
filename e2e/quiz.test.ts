@@ -72,9 +72,18 @@ async function completeSession(page: Page, maxQuestions = 20) {
 // Gate tests
 // ===========================================================================
 
-test('free user is redirected from /quiz to /plus', async ({ page }) => {
+test('free user can access /quiz and sees free category picker', async ({ page }) => {
   await page.goto('/quiz');
-  await expect(page).toHaveURL(/\/plus/);
+  // Page loads without redirecting
+  await expect(page).toHaveURL('/quiz');
+  // Level select defaults to A1
+  await expect(page.locator('select#quiz-level')).toHaveValue('A1');
+  // Free category pills are visible (e.g. Greetings, Numbers, Colors for A1)
+  await expect(
+    page.getByRole('button', { name: /greetings|numbers|colors/i }).first()
+  ).toBeVisible();
+  // Upsell link is visible
+  await expect(page.getByRole('link', { name: /with Plus/i })).toBeVisible();
 });
 
 test('Plus user sees quiz start screen', async ({ page }) => {

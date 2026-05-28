@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { page } from '$app/state';
+  import { isFreeTest } from '$lib/types';
+  import { Tooltip } from 'flowbite-svelte';
   import * as m from '$lib/paraglide/messages.js';
 
   // ── Practice sections ──────────────────────────────────────────────────────
@@ -54,12 +55,8 @@
   const testCount = 3;
   const tests = Array.from({ length: testCount }, (_, i) => i + 1);
 
-  // ── Client-side Plus gate ──────────────────────────────────────────────────
-  onMount(() => {
-    if (page.data.plan !== 'plus') {
-      window.location.replace('/plus?ref=norskproven-gate');
-    }
-  });
+  // ── Plan state ──────────────────────────────────────────────────────────────
+  let isPlus = $derived(page.data.plan === 'plus');
 </script>
 
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
@@ -120,12 +117,25 @@
               <!-- Test pills -->
               <div class="mt-3 flex flex-wrap gap-2 pl-[60px]">
                 {#each tests as test (test)}
+                  {@const locked = !isPlus && !isFreeTest(test)}
+                  {@const pillId = `pill-${level}-${type.key}-${test}`}
                   <a
-                    href="/norskproven/practice/{test}/{type.key}/{level.toLowerCase()}"
-                    class="rounded-lg border px-3 py-1 text-xs font-semibold transition-colors {color.pill}"
+                    id={pillId}
+                    href={locked
+                      ? '/plus?ref=practice-test-lock'
+                      : `/norskproven/practice/${test}/${type.key}/${level.toLowerCase()}`}
+                    class="rounded-lg border px-3 py-1 text-xs font-semibold transition-colors
+                      {locked
+                      ? 'cursor-not-allowed border-gray-300 text-gray-400 opacity-50 dark:border-gray-600 dark:text-gray-500'
+                      : color.pill}"
                   >
-                    Test {test}
+                    Test {test}{locked ? ' 🔒' : ''}
                   </a>
+                  {#if locked}
+                    <Tooltip triggeredBy="#{pillId}" placement="top" class="text-xs"
+                      >Upgrade to Plus to unlock</Tooltip
+                    >
+                  {/if}
                 {/each}
               </div>
             </div>
