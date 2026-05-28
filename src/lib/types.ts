@@ -158,7 +158,6 @@ export const CATEGORIES_BY_LEVEL = {
     'proverbs',
     'highly-formal',
     'technical',
-    'nuanced-distinctions',
     'advanced-law-justice',
     'neuroscience-cognition',
     'climate-environment-policy',
@@ -249,7 +248,6 @@ export const PLUS_CATEGORIES = new Set<string>([
   'c1/psychology-advanced',
   // C2 — first 4 free; rest plus-only
   'c2/technical',
-  'c2/nuanced-distinctions',
   'c2/advanced-law-justice',
   'c2/neuroscience-cognition',
   'c2/climate-environment-policy',
