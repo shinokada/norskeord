@@ -123,7 +123,6 @@
     c2_proverbs: m.category_c2_proverbs,
     'c2_highly-formal': m['category_c2_highly-formal'],
     c2_technical: m.category_c2_technical,
-    'c2_nuanced-distinctions': m['category_c2_nuanced-distinctions'],
     'c2_advanced-law-justice': m['category_c2_advanced-law-justice'],
     'c2_neuroscience-cognition': m['category_c2_neuroscience-cognition'],
     'c2_climate-environment-policy': m['category_c2_climate-environment-policy'],
