@@ -232,6 +232,8 @@
   "login_submit": "Send sign-in link",
   "login_sending": "Sending…",
   "login_no_password_note": "No password needed. Your email is only used for authentication.",
+  "login_error_bot_check": "Bot check failed. Please try again.",
+  "login_error_generic": "Something went wrong. Please try again.",
 
   "plus_heading": "Study smarter with Norske Flashcard Plus",
   "plus_subheading": "Study smarter, not longer. Plus tracks how well you know each word and shows you only the cards worth reviewing today — so every session actually sticks.",

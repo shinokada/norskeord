@@ -2173,7 +2173,7 @@
     "example": "Det er nødvendig å ha forsikring.",
     "example_english": "It is necessary to have insurance.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe man ikke kan klare seg uten, eller som må gjøres."
   },
@@ -2184,7 +2184,7 @@
     "example": "Er det mulig å endre avtalen?",
     "example_english": "Is it possible to change the appointment?",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som kan skje eller gjøres, selv om det kanskje er vanskelig."
   },
@@ -2195,7 +2195,7 @@
     "example": "Det er umulig å spå fremtiden.",
     "example_english": "It is impossible to predict the future.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som ikke kan gjøres eller skje under noen omstendigheter."
   },
@@ -2206,7 +2206,7 @@
     "example": "Det er sannsynlig at det regner i morgen.",
     "example_english": "It is likely to rain tomorrow.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som med stor sjanse kommer til å skje eller er sant."
   },
@@ -2217,7 +2217,7 @@
     "example": "Det er usannsynlig at de vinner.",
     "example_english": "It is unlikely that they will win.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som har liten sjanse for å skje eller være sant."
   },
@@ -2228,7 +2228,7 @@
     "example": "Resultatet var overraskende.",
     "example_english": "The result was surprising.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som skjer på en uventet måte og skaper en reaksjon."
   },
@@ -2239,7 +2239,7 @@
     "example": "Jeg er enig med deg i dette.",
     "example_english": "I agree with you on this.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Å ha samme mening som en annen person om noe."
   },
@@ -2250,7 +2250,7 @@
     "example": "Vi er uenige om den beslutningen.",
     "example_english": "We disagree on that decision.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Å ha en annen mening enn en annen person om noe."
   },
@@ -2261,7 +2261,7 @@
     "example": "Erfaring er relevant for stillingen.",
     "example_english": "Experience is relevant for the position.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som har direkte sammenheng med det man snakker om eller arbeider med."
   },
@@ -2272,7 +2272,7 @@
     "example": "Den kommentaren er irrelevant her.",
     "example_english": "That comment is irrelevant here.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som ikke har noen forbindelse til det aktuelle temaet."
   },
@@ -2283,7 +2283,7 @@
     "example": "Det er typisk norsk å spise lunsj tidlig.",
     "example_english": "It is typically Norwegian to eat lunch early.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som er karakteristisk for en bestemt gruppe, tid eller situasjon."
   },
@@ -2294,7 +2294,7 @@
     "example": "Det er åpenbart at han er forkjølet.",
     "example_english": "It is obvious that he has a cold.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som er lett å se eller forstå uten å måtte tenke mye."
   },
@@ -2305,7 +2305,7 @@
     "example": "Situasjonen er mer komplisert enn den ser ut.",
     "example_english": "The situation is more complicated than it looks.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som er vanskelig å forstå eller løse fordi det har mange deler."
   },
@@ -2316,7 +2316,7 @@
     "example": "Det er en rimelig forespørsel.",
     "example_english": "That is a reasonable request.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som er fornuftig og rettferdig, eller som koster en passende pris."
   },
@@ -2327,7 +2327,7 @@
     "example": "Kravet deres virker urimelig.",
     "example_english": "Their demand seems unreasonable.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som er urettferdig eller ikke fornuftig i sammenheng."
   },
@@ -2338,7 +2338,7 @@
     "example": "Loven er svært omstridt.",
     "example_english": "The law is highly controversial.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som mange er uenige om og diskuterer med sterke meninger."
   },
@@ -2349,7 +2349,7 @@
     "example": "Det var et avgjørende øyeblikk.",
     "example_english": "It was a decisive moment.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som er ekstremt viktig og som bestemmer utfallet."
   },
@@ -2360,7 +2360,7 @@
     "example": "Utviklingen er bekymrende.",
     "example_english": "The development is concerning.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som gjør deg urolig fordi det kan føre til noe negativt."
   },
@@ -2371,7 +2371,7 @@
     "example": "Resultatene er oppmuntrende.",
     "example_english": "The results are encouraging.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som gir deg håp og lyst til å fortsette."
   },
@@ -2382,7 +2382,7 @@
     "example": "Etter min mening er det feil avgjørelse.",
     "example_english": "In my opinion, it is the wrong decision.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "phrase",
     "definition": "Et uttrykk man bruker for å markere at det man sier er ens eget syn."
   },
@@ -2393,7 +2393,7 @@
     "example": "Det var et gjennomtenkt svar.",
     "example_english": "That was a well thought-out answer.",
     "level": "B1",
-    "category": "opinion-adjectives",
+    "category": "expressing-opinions",
     "part": "adjective",
     "definition": "Noe som er planlagt og vurdert nøye før man beslutter."
   },
@@ -2415,7 +2415,7 @@
     "example": "Kan jeg se menyen?",
     "example_english": "Can I see the menu?",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "Listen over mat og drikke som er tilgjengelig på en restaurant."
   },
@@ -2426,7 +2426,7 @@
     "example": "Jeg vil gjerne bestille en hovedrett.",
     "example_english": "I would like to order a main course.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å reservere en plass, rom eller billett på forhånd."
   },
@@ -2437,7 +2437,7 @@
     "example": "Kan du anbefale en god vin til denne retten?",
     "example_english": "Can you recommend a good wine for this dish?",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å fortelle noen at noe er bra og at de bør prøve det."
   },
@@ -2448,7 +2448,7 @@
     "example": "Retten har mange eksotiske krydder.",
     "example_english": "The dish has many exotic spices.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "Et naturlig stoff som brukes for å gi mat smak og aroma."
   },
@@ -2459,7 +2459,7 @@
     "example": "Har dere vegetariske alternativer?",
     "example_english": "Do you have vegetarian options?",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "adjective",
     "definition": "En kostholdsform uten kjøtt og fisk."
   },
@@ -2470,7 +2470,7 @@
     "example": "Jeg spiser vegansk.",
     "example_english": "I eat vegan.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "adjective",
     "definition": "En kostholdsform uten noen animalske produkter."
   },
@@ -2481,7 +2481,7 @@
     "example": "Jeg er allergisk mot nøtter.",
     "example_english": "I am allergic to nuts.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "adjective",
     "definition": "Å reagere negativt på bestemte stoffer i mat eller miljøet med kroppssymptomer."
   },
@@ -2492,7 +2492,7 @@
     "example": "Vi bestilte suppe som forrett.",
     "example_english": "We ordered soup as a starter.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "Den første retten i et måltid, en liten porsjon som serveres før hovedretten."
   },
@@ -2503,7 +2503,7 @@
     "example": "Skal vi ta dessert?",
     "example_english": "Shall we have dessert?",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "Den søte retten som serveres til slutt etter et måltid."
   },
@@ -2514,7 +2514,7 @@
     "example": "Mariner kjøttet i minst to timer.",
     "example_english": "Marinate the meat for at least two hours.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å la mat ligge i en blanding av krydder og væske for å gi den smak."
   },
@@ -2525,7 +2525,7 @@
     "example": "Vi griller laks i helgen.",
     "example_english": "We are grilling salmon at the weekend.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å tilberede mat over direkte varme, for eksempel på en kullgrill."
   },
@@ -2536,7 +2536,7 @@
     "example": "Det er sunt å dampe grønnsaker.",
     "example_english": "It is healthy to steam vegetables.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å tilberede mat ved hjelp av varm damp, uten å koke den i vann."
   },
@@ -2547,7 +2547,7 @@
     "example": "Har du en god oppskrift på lapskaus?",
     "example_english": "Do you have a good recipe for lapskaus?",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "En beskrivelse av ingredienser og fremgangsmåte for å lage en matrett."
   },
@@ -2558,7 +2558,7 @@
     "example": "En porsjon er nok til to personer.",
     "example_english": "One portion is enough for two people.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "Den mengden mat som er beregnet for én person."
   },
@@ -2569,7 +2569,7 @@
     "example": "La deigen heve i en time.",
     "example_english": "Let the dough rise for one hour.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "En blanding av mel, vann og andre ingredienser brukt til å bake brød eller kaker."
   },
@@ -2580,7 +2580,7 @@
     "example": "Krydre suppen etter smak.",
     "example_english": "Season the soup to taste.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å tilsette krydder eller salt til mat for å forbedre smaken."
   },
@@ -2591,7 +2591,7 @@
     "example": "Brunsaus passer godt til kjøttkaker.",
     "example_english": "Brown sauce goes well with meatballs.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "noun",
     "definition": "En flytende tilbehørsmasse som helles over mat for å gi smak og fuktighet."
   },
@@ -2602,7 +2602,7 @@
     "example": "Linser er veldig næringsrike.",
     "example_english": "Lentils are very nutritious.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "adjective",
     "definition": "Mat som inneholder mye vitaminer, mineraler og andre stoffer kroppen trenger."
   },
@@ -2613,7 +2613,7 @@
     "example": "Denne retten er ganske fet.",
     "example_english": "This dish is quite fatty.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "adjective",
     "definition": "Mat som inneholder mye fett, eller noe som kjennes glatt og tung å spise."
   },
@@ -2624,7 +2624,7 @@
     "example": "Gryteretten var veldig smakfull.",
     "example_english": "The stew was very flavourful.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "adjective",
     "definition": "Mat som har en rik og god smak."
   },
@@ -2635,7 +2635,7 @@
     "example": "Tilsett litt sitron for friskhet.",
     "example_english": "Add a little lemon for freshness.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å legge til en ingrediens i noe man lager."
   },
@@ -2646,7 +2646,7 @@
     "example": "Retten serveres varm.",
     "example_english": "The dish is served warm.",
     "level": "B1",
-    "category": "food-cooking-advanced",
+    "category": "cooking",
     "part": "verb",
     "definition": "Å legge frem mat eller drikke for noen som skal spise."
   },
@@ -2668,7 +2668,7 @@
     "example": "Utleieren svarte ikke på meldingen.",
     "example_english": "The landlord did not reply to the message.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En person som eier en bolig og leier den ut til andre."
   },
@@ -2679,7 +2679,7 @@
     "example": "Leietakeren betalte husleien for sent.",
     "example_english": "The tenant paid the rent too late.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En person som betaler for å bo i en bolig de ikke eier."
   },
@@ -2690,7 +2690,7 @@
     "example": "Husleien øker hvert år.",
     "example_english": "The rent increases every year.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Det månedlige beløpet en leietaker betaler til utleier."
   },
@@ -2701,7 +2701,7 @@
     "example": "Vi flytter inn i leiligheten på lørdag.",
     "example_english": "We move into the flat on Saturday.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "phrase",
     "definition": "Å begynne å bo i en ny bolig."
   },
@@ -2712,7 +2712,7 @@
     "example": "Vi må flytte ut innen utgangen av måneden.",
     "example_english": "We must move out by the end of the month.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "phrase",
     "definition": "Å avslutte boforholdet og flytte til et annet sted."
   },
@@ -2723,7 +2723,7 @@
     "example": "Vi bor i et trygt nabolag.",
     "example_english": "We live in a safe neighbourhood.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Området og menneskene rundt der man bor."
   },
@@ -2734,7 +2734,7 @@
     "example": "Les kontrakten nøye før du signerer.",
     "example_english": "Read the contract carefully before signing.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En skriftlig avtale mellom arbeidsgiver og arbeidstaker om arbeidsvilkår."
   },
@@ -2745,7 +2745,7 @@
     "example": "Depositumet tilsvarer to måneders husleie.",
     "example_english": "The deposit equals two months' rent.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En sum penger leietaker betaler på forhånd som sikkerhet."
   },
@@ -2756,7 +2756,7 @@
     "example": "Han eier flere eiendommer.",
     "example_english": "He owns several properties.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Et stykke land eller en bygning som noen eier."
   },
@@ -2767,7 +2767,7 @@
     "example": "Vi drømmer om å kjøpe bolig.",
     "example_english": "We dream of buying a home.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "phrase",
     "definition": "Å betale for å overta eierskapet til en leilighet eller et hus."
   },
@@ -2778,7 +2778,7 @@
     "example": "Vi kjøpte en andel i et borettslag.",
     "example_english": "We bought a share in a housing cooperative.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En organisasjon der beboerne eier andeler i boliger."
   },
@@ -2789,7 +2789,7 @@
     "example": "Megleren viste oss tre leiligheter.",
     "example_english": "The estate agent showed us three flats.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En person som formidler kjøp og salg av boliger."
   },
@@ -2800,7 +2800,7 @@
     "example": "Vi drar på visning i morgen.",
     "example_english": "We are going to a viewing tomorrow.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Et tidspunkt der man kan se en bolig som er til salgs eller leie."
   },
@@ -2811,7 +2811,7 @@
     "example": "Vi søkte om boliglån i banken.",
     "example_english": "We applied for a mortgage at the bank.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Et lån man tar opp for å finansiere kjøp av bolig."
   },
@@ -2822,7 +2822,7 @@
     "example": "Kjøkkenet trenger oppussing.",
     "example_english": "The kitchen needs renovation.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Arbeid som gjøres for å forbedre eller reparere en bolig."
   },
@@ -2833,7 +2833,7 @@
     "example": "Fellesarealet deles av alle beboerne.",
     "example_english": "The communal area is shared by all residents.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Et område i en bygning som brukes av alle beboerne."
   },
@@ -2844,7 +2844,7 @@
     "example": "Vi sa opp leiekontrakten med tre måneders varsel.",
     "example_english": "We gave three months' notice to terminate the lease.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "phrase",
     "definition": "Å varsle utleier om at man ønsker å avslutte leieforholdet."
   },
@@ -2855,7 +2855,7 @@
     "example": "Leiligheten er fullt møblert.",
     "example_english": "The flat is fully furnished.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "adjective",
     "definition": "En bolig som allerede har møbler inkludert i leien."
   },
@@ -2866,7 +2866,7 @@
     "example": "Vi leter etter en umøblert leilighet.",
     "example_english": "We are looking for an unfurnished flat.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "adjective",
     "definition": "En bolig uten møbler, der leietaker tar med seg sitt eget."
   },
@@ -2877,7 +2877,7 @@
     "example": "Vi bor på tredje etasje.",
     "example_english": "We live on the third floor.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "Et nivå i en bygning, for eksempel første, andre eller tredje etasje."
   },
@@ -2888,7 +2888,7 @@
     "example": "Bygningen har ikke heis.",
     "example_english": "The building does not have a lift.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En innelukket plattform som frakter folk mellom etasjer i en bygning."
   },
@@ -2899,7 +2899,7 @@
     "example": "Leiligheten har en liten balkong.",
     "example_english": "The flat has a small balcony.",
     "level": "B1",
-    "category": "housing-renting",
+    "category": "accommodation",
     "part": "noun",
     "definition": "En liten utendørs plattform festet til en leilighet der man kan sitte ute."
   },
@@ -2921,7 +2921,7 @@
     "example": "Legen undersøkte pasienten grundig.",
     "example_english": "The doctor examined the patient thoroughly.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "verb",
     "definition": "Å sjekke nøye for å finne ut hva som er galt eller hva som er tilfelle."
   },
@@ -2932,7 +2932,7 @@
     "example": "Legen stilte en diagnose.",
     "example_english": "The doctor made a diagnosis.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "Legens vurdering av hvilken sykdom en pasient har."
   },
@@ -2943,7 +2943,7 @@
     "example": "Behandlingen varer i seks uker.",
     "example_english": "The treatment lasts six weeks.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "Medisinsk eller terapeutisk tiltak for å hjelpe en pasient å bli frisk."
   },
@@ -2954,7 +2954,7 @@
     "example": "Legen tok en blodprøve.",
     "example_english": "The doctor took a blood test.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "En test der man analyserer en blodprøve for å sjekke helsen."
   },
@@ -2965,7 +2965,7 @@
     "example": "De tok røntgen av kneet hennes.",
     "example_english": "They took an X-ray of her knee.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "En undersøkelse der stråler brukes til å lage bilder av innsiden av kroppen."
   },
@@ -2976,7 +2976,7 @@
     "example": "Hun ble henvist til en spesialist.",
     "example_english": "She was referred to a specialist.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "En lege med spesialisert kunnskap innenfor ett medisinsk fagområde."
   },
@@ -2987,7 +2987,7 @@
     "example": "Mental helse er like viktig som fysisk helse.",
     "example_english": "Mental health is as important as physical health.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "phrase",
     "definition": "Tilstanden til ens psykiske velvære og evne til å fungere i hverdagen."
   },
@@ -2998,7 +2998,7 @@
     "example": "Vaksinasjon forebygger alvorlige sykdommer.",
     "example_english": "Vaccination prevents serious diseases.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "verb",
     "definition": "Å ta tiltak for å hindre at noe negativt, som sykdom, skjer."
   },
@@ -3009,7 +3009,7 @@
     "example": "En sunn livsstil er viktig for helsen.",
     "example_english": "A healthy lifestyle is important for health.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "Måten man lever på — kosthold, mosjon, søvn og vaner."
   },
@@ -3020,7 +3020,7 @@
     "example": "Han lider av kroniske ryggsmerter.",
     "example_english": "He suffers from chronic back pain.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "adjective",
     "definition": "En sykdom eller tilstand som varer lenge, ofte resten av livet."
   },
@@ -3031,7 +3031,7 @@
     "example": "Han hadde akutte brystsmerter.",
     "example_english": "He had acute chest pains.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "adjective",
     "definition": "Noe som skjer plutselig og krever rask medisinsk hjelp."
   },
@@ -3042,7 +3042,7 @@
     "example": "Han er i rehabilitering etter operasjonen.",
     "example_english": "He is in rehabilitation after the operation.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "Trening og behandling etter sykdom eller skade for å komme tilbake til normalt liv."
   },
@@ -3053,7 +3053,7 @@
     "example": "God ernæring er grunnlaget for helse.",
     "example_english": "Good nutrition is the foundation of health.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "Lære om hva vi spiser og drikker, og hva kroppen trenger for å fungere godt."
   },
@@ -3064,7 +3064,7 @@
     "example": "Medisinen har noen bivirkninger.",
     "example_english": "The medicine has some side effects.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "En uønsket effekt av et legemiddel."
   },
@@ -3075,7 +3075,7 @@
     "example": "Hun ble frisk etter to uker.",
     "example_english": "She recovered after two weeks.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "phrase",
     "definition": "Å komme seg etter sykdom og bli sunn igjen."
   },
@@ -3086,7 +3086,7 @@
     "example": "Han tok smertestillende tabletter.",
     "example_english": "He took painkilling tablets.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "adjective",
     "definition": "Et legemiddel som reduserer smerte."
   },
@@ -3097,7 +3097,7 @@
     "example": "Alle i Norge har rett til en fastlege.",
     "example_english": "Everyone in Norway is entitled to a GP.",
     "level": "B1",
-    "category": "health-body-intermediate",
+    "category": "health",
     "part": "noun",
     "definition": "En lege man er registrert hos og som er ens faste kontakt i helsevesenet."
   },
@@ -3119,7 +3119,7 @@
     "example": "Vi sparer til en ny bil.",
     "example_english": "We are saving for a new car.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "verb",
     "definition": "Å sette av penger i stedet for å bruke dem."
   },
@@ -3130,7 +3130,7 @@
     "example": "Vi søkte om et lån i banken.",
     "example_english": "We applied for a loan at the bank.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Penger man låner og forplikter seg til å betale tilbake."
   },
@@ -3141,7 +3141,7 @@
     "example": "Regningen forfaller neste uke.",
     "example_english": "The bill is due next week.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Et krav om betaling for en tjeneste eller et produkt man har brukt."
   },
@@ -3152,7 +3152,7 @@
     "example": "Renten på boliglånet har økt.",
     "example_english": "The interest rate on the mortgage has risen.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Et beløp man betaler for å låne penger, eller mottar for å spare dem."
   },
@@ -3163,7 +3163,7 @@
     "example": "Åpne en bankkonto i Norge.",
     "example_english": "Open a bank account in Norway.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "En konto i en bank der man setter inn og tar ut penger."
   },
@@ -3174,7 +3174,7 @@
     "example": "Jeg sender en overføring på 500 kroner.",
     "example_english": "I am sending a transfer of 500 kroner.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Det å sende penger fra én konto til en annen."
   },
@@ -3185,7 +3185,7 @@
     "example": "Er det en minibank i nærheten?",
     "example_english": "Is there an ATM nearby?",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "En maskin på gaten der man kan ta ut kontanter."
   },
@@ -3196,7 +3196,7 @@
     "example": "Jeg skal heve penger i minibanken.",
     "example_english": "I need to withdraw money from the ATM.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "phrase",
     "definition": "Å ta ut kontanter fra en bankkonto eller minibank."
   },
@@ -3207,7 +3207,7 @@
     "example": "Hun jobber hardt for å betale gjelden.",
     "example_english": "She works hard to pay off her debt.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Penger man skylder til en bank eller en annen person."
   },
@@ -3218,7 +3218,7 @@
     "example": "Hun investerer i aksjer.",
     "example_english": "She invests in shares.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "verb",
     "definition": "Å sette inn penger i noe med håp om å tjene mer tilbake."
   },
@@ -3229,7 +3229,7 @@
     "example": "Han kjøpte aksjer i et norsk selskap.",
     "example_english": "He bought shares in a Norwegian company.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "En andel av eierskapet i en bedrift."
   },
@@ -3240,7 +3240,7 @@
     "example": "Tegn innboforsikring når du leier bolig.",
     "example_english": "Take out contents insurance when you rent a home.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "En avtale der man betaler en sum for å bli dekket mot tap eller skade."
   },
@@ -3251,7 +3251,7 @@
     "example": "Vi nedbetaler lånet over 20 år.",
     "example_english": "We repay the loan over 20 years.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "verb",
     "definition": "Å gradvis betale tilbake et lån over tid."
   },
@@ -3262,7 +3262,7 @@
     "example": "Jeg fikk kontoutskriften på e-post.",
     "example_english": "I received the bank statement by email.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Et dokument som viser alle transaksjoner på en bankkonto i en periode."
   },
@@ -3273,7 +3273,7 @@
     "example": "Kursen på valuta svinger daglig.",
     "example_english": "The currency exchange rate fluctuates daily.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Penger som brukes i et bestemt land eller region."
   },
@@ -3284,7 +3284,7 @@
     "example": "Bedriften gikk akkurat i balanse i fjor.",
     "example_english": "The company just broke even last year.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "phrase",
     "definition": "Å ha like mye inntekter som utgifter, uten overskudd eller underskudd."
   },
@@ -3295,7 +3295,7 @@
     "example": "Inflasjonen gjør dagligvarer dyrere.",
     "example_english": "Inflation makes groceries more expensive.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Når prisene stiger og pengene er verdt mindre."
   },
@@ -3306,7 +3306,7 @@
     "example": "Den norske økonomien er sterk.",
     "example_english": "The Norwegian economy is strong.",
     "level": "B1",
-    "category": "finance-banking",
+    "category": "finance",
     "part": "noun",
     "definition": "Systemet for produksjon, fordeling og forbruk av varer og tjenester."
   },
@@ -3606,7 +3606,7 @@
     "example": "Jeg er enig med deg i dette.",
     "example_english": "I agree with you on this.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "phrase",
     "definition": "Å ha samme synspunkt som en annen person."
   },
@@ -3616,7 +3616,7 @@
     "example": "Han er uenig med kollegen sin.",
     "example_english": "He disagrees with his colleague.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "phrase",
     "definition": "Å ha et annet synspunkt enn en annen person."
   },
@@ -3626,7 +3626,7 @@
     "example": "De argumenterte for sin sak.",
     "example_english": "They argued for their case.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å gi grunner for at noe er sant eller riktig."
   },
@@ -3636,7 +3636,7 @@
     "example": "Det er et godt argument.",
     "example_english": "That is a good argument.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "noun",
     "definition": "En grunn eller begrunnelse man gir for å støtte et synspunkt."
   },
@@ -3646,7 +3646,7 @@
     "example": "På den ene siden er det billig.",
     "example_english": "On the one hand it is cheap.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "phrase",
     "definition": "Et uttrykk for å introdusere ett synspunkt i en diskusjon."
   },
@@ -3656,7 +3656,7 @@
     "example": "På den andre siden er det upraktisk.",
     "example_english": "On the other hand it is impractical.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "phrase",
     "definition": "Et uttrykk for å introdusere et motstridende synspunkt."
   },
@@ -3666,7 +3666,7 @@
     "example": "Han påstår at han er uskyldig.",
     "example_english": "He claims that he is innocent.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å si at noe er sant, uten nødvendigvis å bevise det."
   },
@@ -3676,7 +3676,7 @@
     "example": "Kan du bevise det du sier?",
     "example_english": "Can you prove what you are saying?",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å vise med fakta eller logikk at noe er sant."
   },
@@ -3686,7 +3686,7 @@
     "example": "Det finnes ikke nok bevis.",
     "example_english": "There is not enough evidence.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "noun",
     "definition": "Fakta eller informasjon som viser at noe er sant eller usant."
   },
@@ -3696,7 +3696,7 @@
     "example": "Hun klarte å overbevise sjefen.",
     "example_english": "She managed to convince the boss.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å få noen til å tro det samme som deg gjennom argumenter."
   },
@@ -3706,7 +3706,7 @@
     "example": "Han holder fast ved sitt standpunkt.",
     "example_english": "He sticks to his standpoint.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "noun",
     "definition": "En bestemt mening man holder fast ved i en diskusjon."
   },
@@ -3716,7 +3716,7 @@
     "example": "De ble enige om å kompromisse.",
     "example_english": "They agreed to compromise.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å bli enige om en løsning der begge parter gir seg litt."
   },
@@ -3726,7 +3726,7 @@
     "example": "Fordelene er større enn ulempene.",
     "example_english": "The advantages are greater than the disadvantages.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "noun",
     "definition": "Noe positivt ved en situasjon eller et valg."
   },
@@ -3736,7 +3736,7 @@
     "example": "Det er noen ulemper med planen.",
     "example_english": "There are some disadvantages with the plan.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "noun",
     "definition": "Noe negativt ved en situasjon eller et valg."
   },
@@ -3746,7 +3746,7 @@
     "example": "Du motsier deg selv.",
     "example_english": "You are contradicting yourself.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å si at noe ikke er riktig eller at man er uenig."
   },
@@ -3756,7 +3756,7 @@
     "example": "Vi diskuterer problemet rolig.",
     "example_english": "We discuss the problem calmly.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å snakke om et tema med andre for å se ulike synspunkter."
   },
@@ -3766,7 +3766,7 @@
     "example": "Det er en logisk konklusjon.",
     "example_english": "It is a logical conclusion.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "adjective",
     "definition": "Noe som følger klare og fornuftige regler og er lett å forstå."
   },
@@ -3776,7 +3776,7 @@
     "example": "Det er irrasjonelt å nekte.",
     "example_english": "It is irrational to refuse.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "adjective",
     "definition": "Noe som ikke følger fornuft eller logikk."
   },
@@ -3786,7 +3786,7 @@
     "example": "Prøv å holde deg nøytral.",
     "example_english": "Try to remain neutral.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "adjective",
     "definition": "Å ikke ta side for noen av partene i en diskusjon."
   },
@@ -3796,7 +3796,7 @@
     "example": "Kan du forklare dette bedre?",
     "example_english": "Can you explain this better?",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å gjøre noe klart slik at andre forstår det bedre."
   },
@@ -3806,7 +3806,7 @@
     "example": "Han gjør rede for utgiftene.",
     "example_english": "He accounts for the expenses.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "phrase",
     "definition": "Å forklare noe grundig og vise at man forstår det."
   },
@@ -3816,7 +3816,7 @@
     "example": "Det er en klar sammenheng her.",
     "example_english": "There is a clear connection here.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "noun",
     "definition": "En forbindelse mellom to ting, eller den situasjonen noe befinner seg i."
   },
@@ -3826,7 +3826,7 @@
     "example": "Vi må ta hensyn til alle faktorer.",
     "example_english": "We must take all factors into account.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "phrase",
     "definition": "Å tenke på noe og la det påvirke beslutningen."
   },
@@ -3836,7 +3836,7 @@
     "example": "Hun innrømmer at hun tok feil.",
     "example_english": "She admits that she was wrong.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "verb",
     "definition": "Å si at noe er sant selv om det kan være ubehagelig."
   },
@@ -3846,7 +3846,7 @@
     "example": "Argumentet er svært overbevisende.",
     "example_english": "The argument is very convincing.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "adjective",
     "definition": "Noe som er så godt argumentert at man lett kan tro det."
   },
@@ -3856,7 +3856,7 @@
     "example": "Svaret hans var tvetydig.",
     "example_english": "His answer was ambiguous.",
     "level": "B1",
-    "category": "opinions-arguments",
+    "category": "reasoning",
     "part": "adjective",
     "definition": "Noe som kan forstås på to eller flere måter."
   },
@@ -3876,7 +3876,7 @@
     "example": "Dugnad er en viktig norsk tradisjon.",
     "example_english": "Communal voluntary work is an important Norwegian tradition.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Frivillig fellesarbeid der naboer eller en gruppe samles for å gjøre noe nyttig."
   },
@@ -3886,7 +3886,7 @@
     "example": "Allemannsretten gir deg rett til å ferdes i naturen.",
     "example_english": "The right to roam gives you the right to move through nature.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Den norske retten til å ferdes fritt i naturen, uavhengig av hvem som eier den."
   },
@@ -3896,7 +3896,7 @@
     "example": "Norge har en sterk velferdsstat.",
     "example_english": "Norway has a strong welfare state.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Et samfunnssystem der staten sørger for helse, trygd og andre grunnleggende tjenester."
   },
@@ -3906,7 +3906,7 @@
     "example": "Han mottar trygd fra NAV.",
     "example_english": "He receives social security from NAV.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Penger man mottar fra staten når man ikke kan jobbe, for eksempel ved sykdom."
   },
@@ -3916,7 +3916,7 @@
     "example": "Du kan søke om støtte hos NAV.",
     "example_english": "You can apply for support at NAV.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Den norske statlige etaten som administrerer arbeid, trygd og sosiale tjenester."
   },
@@ -3926,7 +3926,7 @@
     "example": "Norge er kjent for høy grad av likestilling.",
     "example_english": "Norway is known for a high degree of gender equality.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Prinsippet om at alle kjønn skal ha like rettigheter og muligheter."
   },
@@ -3936,7 +3936,7 @@
     "example": "Integrering av innvandrere er viktig.",
     "example_english": "Integration of immigrants is important.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Prosessen der innvandrere blir en del av det norske samfunnet."
   },
@@ -3946,7 +3946,7 @@
     "example": "Det bor mange innvandrere i Oslo.",
     "example_english": "Many immigrants live in Oslo.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "En person som har flyttet til et nytt land for å bo der permanent."
   },
@@ -3956,7 +3956,7 @@
     "example": "Hun søker om norsk statsborgerskap.",
     "example_english": "She is applying for Norwegian citizenship.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Den offisielle statusen som gir en person fulle rettigheter og plikter i et land."
   },
@@ -3966,7 +3966,7 @@
     "example": "Oslo er en stor kommune.",
     "example_english": "Oslo is a large municipality.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Den minste politiske enheten i Norge, styrt av lokalpolitikere."
   },
@@ -3976,7 +3976,7 @@
     "example": "Norge er delt inn i fylker.",
     "example_english": "Norway is divided into counties.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "En administrativ region i Norge, bestående av flere kommuner."
   },
@@ -3986,7 +3986,7 @@
     "example": "Stortinget vedtar lover i Norge.",
     "example_english": "The Norwegian parliament passes laws in Norway.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Norges nasjonale parlament der folkevalgte representanter lager lovene."
   },
@@ -3996,7 +3996,7 @@
     "example": "Statsministeren holder tale.",
     "example_english": "The prime minister gives a speech.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Den øverste lederen av regjeringen i et parlamentarisk demokrati."
   },
@@ -4006,7 +4006,7 @@
     "example": "Oljefondet er Norges statsfond.",
     "example_english": "The oil fund is Norway's sovereign wealth fund.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Norges statlige investeringsfond som forvalter inntekter fra olje og gass."
   },
@@ -4016,7 +4016,7 @@
     "example": "Helsevesenet i Norge er offentlig.",
     "example_english": "The healthcare system in Norway is public.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Det samlede systemet av sykehus, leger og helsetjenester i landet."
   },
@@ -4026,7 +4026,7 @@
     "example": "Det norske skattesystemet finansierer velferd.",
     "example_english": "The Norwegian tax system finances welfare.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Reglene og strukturen for hvordan staten samler inn skatter fra befolkningen."
   },
@@ -4036,7 +4036,7 @@
     "example": "Barna starter i barnehagen når de er ett år.",
     "example_english": "Children start kindergarten when they are one year old.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Et omsorgstilbud for barn under skolealder der de leker og lærer."
   },
@@ -4046,7 +4046,7 @@
     "example": "I Norge er foreldrepermisjonen lang.",
     "example_english": "In Norway, parental leave is long.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Betalt fri fra jobben som foreldre har rett til i forbindelse med fødsel."
   },
@@ -4056,7 +4056,7 @@
     "example": "En typisk nordmann liker å gå på tur.",
     "example_english": "A typical Norwegian likes to go hiking.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "En person fra Norge."
   },
@@ -4066,7 +4066,7 @@
     "example": "Bokmål er den vanligste skriftspråkstandarden.",
     "example_english": "Bokmål is the most common written language standard.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Den ene av to offisielle norske skriftspråksnormer, mest brukt i landet."
   },
@@ -4076,7 +4076,7 @@
     "example": "Nynorsk er basert på dialekter fra Vestlandet.",
     "example_english": "Nynorsk is based on dialects from Western Norway.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Den andre offisielle norske skriftspråksnormen, brukt særlig på Vestlandet."
   },
@@ -4086,7 +4086,7 @@
     "example": "Norge har mange ulike dialekter.",
     "example_english": "Norway has many different dialects.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "En regional variant av et språk med særegen uttale og ordforråd."
   },
@@ -4096,7 +4096,7 @@
     "example": "Russetiden feires av avgangselever.",
     "example_english": "The russ period is celebrated by graduating pupils.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "Feiringen blant norske avgangselever i mai, kjent for russ-drakt og moro."
   },
@@ -4106,7 +4106,7 @@
     "example": "Konfirmasjon er en viktig markering i Norge.",
     "example_english": "Confirmation is an important occasion in Norway.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "En seremoni der ungdom bekrefter sin tro eller sine verdier, ofte ved 15-årsalder."
   },
@@ -4116,7 +4116,7 @@
     "example": "Hun er gravid og venter barn.",
     "example_english": "She is pregnant and expecting a baby.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "adjective",
     "definition": "En person som venter barn og har et foster i magen."
   },
@@ -4126,7 +4126,7 @@
     "example": "Det sosiale sikkerhetsnettet hjelper sårbare grupper.",
     "example_english": "The social safety net helps vulnerable groups.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "phrase",
     "definition": "Systemet av støtteordninger som hjelper mennesker i vanskelige livssituasjoner."
   },
@@ -4136,7 +4136,7 @@
     "example": "Alle norske borgere kan stemme.",
     "example_english": "All Norwegian citizens can vote.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "verb",
     "definition": "Å avgi sin stemme ved et valg."
   },
@@ -4146,7 +4146,7 @@
     "example": "Det er valg i Norge hvert fjerde år.",
     "example_english": "There is an election in Norway every four years.",
     "level": "B1",
-    "category": "norwegian-society",
+    "category": "society",
     "part": "noun",
     "definition": "En demokratisk prosess der befolkningen velger sine representanter."
   },
@@ -4426,7 +4426,7 @@
     "example": "Fellesarealet brukes av alle beboerne.",
     "example_english": "The common area is used by all residents.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "Et areal i en bygning som deles av alle beboerne."
   },
@@ -4436,7 +4436,7 @@
     "example": "Butikkene ligger i bysentrum.",
     "example_english": "The shops are in the city centre.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "Den sentrale delen av en by der det er mest aktivitet."
   },
@@ -4446,7 +4446,7 @@
     "example": "De bor i utkanten av byen.",
     "example_english": "They live on the outskirts of the city.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "Området i ytterkanten av en by, lenger fra sentrum."
   },
@@ -4456,7 +4456,7 @@
     "example": "Leiligheten trenger oppussing.",
     "example_english": "The flat needs renovation.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "Arbeid for å forbedre eller reparere en bolig."
   },
@@ -4466,7 +4466,7 @@
     "example": "De pusset opp badet.",
     "example_english": "They renovated the bathroom.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "verb",
     "definition": "Å renovere eller forbedre en bolig gjennom arbeid og innkjøp."
   },
@@ -4476,7 +4476,7 @@
     "example": "Vi har et lagerrom i kjelleren.",
     "example_english": "We have a storage room in the basement.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "Den delen av en bygning som er under bakkenivå."
   },
@@ -4486,7 +4486,7 @@
     "example": "Loftet er fullt av gamle møbler.",
     "example_english": "The attic is full of old furniture.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "Den øverste delen av en bygning, rett under taket."
   },
@@ -4496,7 +4496,7 @@
     "example": "Jeg søker bolig i nærheten av jobben.",
     "example_english": "I am looking for housing near work.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "phrase",
     "definition": "Å lete aktivt etter en leilighet eller et hus å bo i."
   },
@@ -4506,7 +4506,7 @@
     "example": "Strømregningen er høy om vinteren.",
     "example_english": "The electricity bill is high in winter.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "noun",
     "definition": "Elektrisk energi man bruker til lys, varme og apparater hjemme."
   },
@@ -4516,7 +4516,7 @@
     "example": "Vann og avløp er inkludert i husleien.",
     "example_english": "Water and sewage are included in the rent.",
     "level": "B1",
-    "category": "housing-urban-life",
+    "category": "urban-life",
     "part": "phrase",
     "definition": "Systemet som sørger for rent vann inn og skittent vann ut av boligen."
   },
@@ -4816,7 +4816,7 @@
     "example": "Norge deltar i mesterskapet.",
     "example_english": "Norway participates in the championship.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En konkurranse der de beste utøverne kjemper om tittelen."
   },
@@ -4826,7 +4826,7 @@
     "example": "Hun vant konkurransen.",
     "example_english": "She won the competition.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Et arrangement der folk konkurrerer mot hverandre."
   },
@@ -4836,7 +4836,7 @@
     "example": "God kondisjon er viktig i fotball.",
     "example_english": "Good fitness is important in football.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Kroppens evne til å holde på fysisk aktivitet over tid."
   },
@@ -4846,7 +4846,7 @@
     "example": "Han driver med styrketrening tre ganger i uken.",
     "example_english": "He does strength training three times a week.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Øvelser der man bruker motstand for å gjøre musklene sterkere."
   },
@@ -4856,7 +4856,7 @@
     "example": "Hun praktiserer yoga hver morgen.",
     "example_english": "She practises yoga every morning.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En indisk treningsform med stillinger, pusting og meditasjon for kropp og sinn."
   },
@@ -4866,7 +4866,7 @@
     "example": "Sykling er bra for helse og miljø.",
     "example_english": "Cycling is good for health and the environment.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Det å sykle — enten som transport, mosjon eller sport."
   },
@@ -4876,7 +4876,7 @@
     "example": "Hun driver med friidrett og løping.",
     "example_english": "She does athletics and running.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Idrettsgrener som løping, hopp og kast, utøvd på bane eller vei."
   },
@@ -4886,7 +4886,7 @@
     "example": "Langrenn er Norges nasjonalsport.",
     "example_english": "Cross-country skiing is Norway's national sport.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En norsk vintersport der man går på ski over lange distanser i snølandskapet."
   },
@@ -4896,7 +4896,7 @@
     "example": "Vi kjører alpint i påsken.",
     "example_english": "We go downhill skiing at Easter.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Vintersport der man kjører ned snødekte bakker på ski."
   },
@@ -4906,7 +4906,7 @@
     "example": "Om vinteren går vi på skøyter.",
     "example_english": "In winter we go ice skating.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En vinteraktivitet der man glir over is på sko med metallblad."
   },
@@ -4916,7 +4916,7 @@
     "example": "Treneren lager et treningsprogram.",
     "example_english": "The coach creates a training programme.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En strukturert plan for hvilke øvelser man skal gjøre og når."
   },
@@ -4926,7 +4926,7 @@
     "example": "Oppvarming er viktig for å unngå skader.",
     "example_english": "Warm-up is important to avoid injuries.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Lette øvelser man gjør før trening for å forberede kroppen."
   },
@@ -4936,7 +4936,7 @@
     "example": "Husk nedkjøling etter treningen.",
     "example_english": "Remember to cool down after training.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Lette øvelser man gjør etter trening for å roe kroppen gradvis ned."
   },
@@ -4946,7 +4946,7 @@
     "example": "Strekk deg godt etter trening.",
     "example_english": "Stretch well after training.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "verb",
     "definition": "Å tøye musklene for å øke bevegeligheten og forebygge skader."
   },
@@ -4956,7 +4956,7 @@
     "example": "Hun deltar på aerobics to ganger i uken.",
     "example_english": "She attends aerobics twice a week.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En treningsform med rytmiske øvelser til musikk for å bedre kondisjonen."
   },
@@ -4966,7 +4966,7 @@
     "example": "Han løper maraton til høsten.",
     "example_english": "He runs a marathon in autumn.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Et løp over 42 kilometer som krever lang trening og utholdenhet."
   },
@@ -4976,7 +4976,7 @@
     "example": "Kampen spilles i idrettshallen.",
     "example_english": "The match is played in the sports hall.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Et innendørs bygg beregnet for sport og idrettsaktiviteter."
   },
@@ -4986,7 +4986,7 @@
     "example": "Supporterne heier ivrig på laget.",
     "example_english": "The supporters cheer enthusiastically for the team.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En person som heier på og støtter et bestemt lag eller utøver."
   },
@@ -4996,7 +4996,7 @@
     "example": "Resultatet var uventet.",
     "example_english": "The result was unexpected.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "Utfallet av en kamp eller konkurranse, for eksempel en poengsum."
   },
@@ -5006,7 +5006,7 @@
     "example": "Vil du delta i løpet?",
     "example_english": "Would you like to participate in the race?",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "verb",
     "definition": "Å ta del i en aktivitet eller konkurranse."
   },
@@ -5016,7 +5016,7 @@
     "example": "Hun er profesjonell friidrettsutøver.",
     "example_english": "She is a professional athletics competitor.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "adjective",
     "definition": "Noen som utøver en aktivitet som yrke og får betalt for det."
   },
@@ -5026,7 +5026,7 @@
     "example": "Han spiller fotball som amatør.",
     "example_english": "He plays football as an amateur.",
     "level": "B1",
-    "category": "sports-fitness",
+    "category": "fitness",
     "part": "noun",
     "definition": "En person som driver med noe for moro skyld, ikke som yrke."
   },
@@ -5196,7 +5196,7 @@
     "example": "Inntekten dekker ikke alle utgiftene.",
     "example_english": "The income does not cover all expenses.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Pengene man tjener gjennom arbeid eller andre kilder."
   },
@@ -5206,7 +5206,7 @@
     "example": "Matutgiftene er høye denne måneden.",
     "example_english": "Food expenses are high this month.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Penger man bruker på varer, tjenester eller faste kostnader."
   },
@@ -5216,7 +5216,7 @@
     "example": "Forsikringsselskapet dekker skaden.",
     "example_english": "The insurance company covers the damage.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "En bedrift som tilbyr forsikringsavtaler mot betaling."
   },
@@ -5226,7 +5226,7 @@
     "example": "Jeg veksler euro til norske kroner.",
     "example_english": "I exchange euros to Norwegian kroner.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "phrase",
     "definition": "Å bytte penger fra én valuta til en annen."
   },
@@ -5236,7 +5236,7 @@
     "example": "Fakturaen forfaller om ti dager.",
     "example_english": "The invoice is due in ten days.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Et dokument som ber om betaling for en levert vare eller tjeneste."
   },
@@ -5246,7 +5246,7 @@
     "example": "De betaler ned lånet raskt.",
     "example_english": "They are paying off the loan quickly.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "verb",
     "definition": "Å gradvis betale tilbake et lån over tid."
   },
@@ -5256,7 +5256,7 @@
     "example": "Bedriften hadde et godt overskudd.",
     "example_english": "The company had a good profit.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Når inntektene er større enn utgiftene."
   },
@@ -5266,7 +5266,7 @@
     "example": "Kommunen har underskudd i budsjettet.",
     "example_english": "The municipality has a deficit in the budget.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Når utgiftene er større enn inntektene."
   },
@@ -5276,7 +5276,7 @@
     "example": "Han sparer til pensjon.",
     "example_english": "He is saving for a pension.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Penger man mottar etter pensjoneringsalder som erstatning for lønn."
   },
@@ -5286,7 +5286,7 @@
     "example": "Arbeidsgiveren betaler pensjon.",
     "example_english": "The employer pays the pension.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "En person eller bedrift som ansetter og betaler arbeidstakere."
   },
@@ -5296,7 +5296,7 @@
     "example": "Arbeidstakeren har rett til ferie.",
     "example_english": "The employee has the right to holiday.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "En person som er ansatt og jobber for en arbeidsgiver."
   },
@@ -5306,7 +5306,7 @@
     "example": "Skattetrekket gjøres automatisk.",
     "example_english": "The tax deduction is made automatically.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Skatten som trekkes automatisk fra lønnen før man mottar den."
   },
@@ -5316,7 +5316,7 @@
     "example": "Nettoinntekten er etter skatt.",
     "example_english": "Net income is after tax.",
     "level": "B1",
-    "category": "economics-personal-finance",
+    "category": "economics",
     "part": "noun",
     "definition": "Inntekten man faktisk mottar etter at skatt er trukket fra."
   },
@@ -5336,7 +5336,7 @@
     "example": "Vindenergi er en ren energikilde.",
     "example_english": "Wind energy is a clean energy source.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Energi produsert fra vinden ved hjelp av vindturbiner."
   },
@@ -5346,7 +5346,7 @@
     "example": "Vi må redusere bruken av fossilt brensel.",
     "example_english": "We must reduce the use of fossil fuels.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "phrase",
     "definition": "Energikilder som kull, olje og gass dannet av organiske rester over millioner av år."
   },
@@ -5356,7 +5356,7 @@
     "example": "Norge jobber for å redusere CO₂-utslipp.",
     "example_english": "Norway works to reduce CO₂ emissions.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Karbondioksid som slippes ut i atmosfæren, særlig fra forbrenning av fossilt brensel."
   },
@@ -5366,7 +5366,7 @@
     "example": "Bærekraft er et viktig prinsipp.",
     "example_english": "Sustainability is an important principle.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Evnen til å møte dagens behov uten å ødelegge muligheten for fremtidige generasjoner."
   },
@@ -5376,7 +5376,7 @@
     "example": "Havnivået stiger på grunn av klimaendringer.",
     "example_english": "Sea levels are rising due to climate change.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Høyden på havoverflaten, som stiger når isbreer smelter."
   },
@@ -5386,7 +5386,7 @@
     "example": "Flommen var en naturkatastrofe.",
     "example_english": "The flood was a natural disaster.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "En alvorlig naturfenomen som flom, jordskjelv eller orkan som forårsaker stor skade."
   },
@@ -5396,7 +5396,7 @@
     "example": "Gjenvinning reduserer avfall.",
     "example_english": "Recycling reduces waste.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Prosessen der brukte materialer bearbeides for å lage nye produkter."
   },
@@ -5406,7 +5406,7 @@
     "example": "Vi produserer for mye avfall.",
     "example_english": "We produce too much waste.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Ting man kaster fordi de ikke lenger er nyttige."
   },
@@ -5416,7 +5416,7 @@
     "example": "Avskoging ødelegger habitater.",
     "example_english": "Deforestation destroys habitats.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Det å hugge ned skog i stor skala, noe som skader klimaet og biologisk mangfold."
   },
@@ -5426,7 +5426,7 @@
     "example": "Miljøvern er et viktig politisk tema.",
     "example_english": "Environmental protection is an important political topic.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Arbeid og tiltak for å beskytte naturen mot skade og forurensning."
   },
@@ -5436,7 +5436,7 @@
     "example": "Han jobber for en miljøorganisasjon.",
     "example_english": "He works for an environmental organisation.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "En organisasjon som arbeider for å beskytte miljøet."
   },
@@ -5446,7 +5446,7 @@
     "example": "Norge har mange elbiler på veiene.",
     "example_english": "Norway has many electric cars on the roads.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "En bil som drives av elektrisk motor og ikke slipper ut CO₂ direkte."
   },
@@ -5456,7 +5456,7 @@
     "example": "Vi kildesorterer avfall hjemme.",
     "example_english": "We sort waste at source at home.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "verb",
     "definition": "Å sortere søppel i ulike kategorier som glass, papir og plast."
   },
@@ -5466,7 +5466,7 @@
     "example": "Miljøavgiften gjør fossilt brensel dyrere.",
     "example_english": "The environmental tax makes fossil fuels more expensive.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "En skatt på aktiviteter som skader miljøet, for å redusere dem."
   },
@@ -5476,7 +5476,7 @@
     "example": "Hva er klimaavtrykket ditt?",
     "example_english": "What is your carbon footprint?",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Mengden klimagasser en person, bedrift eller aktivitet er ansvarlig for."
   },
@@ -5486,7 +5486,7 @@
     "example": "Gamle biler er svært forurensende.",
     "example_english": "Old cars are very polluting.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "adjective",
     "definition": "Noe som slipper ut skadelige stoffer i naturen."
   },
@@ -5496,7 +5496,7 @@
     "example": "Vannkraft er en ren energikilde.",
     "example_english": "Hydropower is a clean energy source.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "phrase",
     "definition": "Energi produsert uten utslipp av forurensende stoffer."
   },
@@ -5506,7 +5506,7 @@
     "example": "Norge produserer mye vannkraft.",
     "example_english": "Norway produces a lot of hydropower.",
     "level": "B1",
-    "category": "environment-b1",
+    "category": "sustainability",
     "part": "noun",
     "definition": "Energi produsert fra strømmende eller fallende vann."
   },
@@ -5806,7 +5806,7 @@
     "example": "Redaktøren godkjenner artikkelen.",
     "example_english": "The editor approves the article.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "En person som har ansvar for innholdet i en avis, nettside eller bok."
   },
@@ -5816,7 +5816,7 @@
     "example": "Artikkelen er interessant og velskrevet.",
     "example_english": "The article is interesting and well written.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "En skriftlig tekst i en avis eller på nett om et bestemt tema."
   },
@@ -5826,7 +5826,7 @@
     "example": "Kildekritikk er viktig ved lesing av nyheter.",
     "example_english": "Source criticism is important when reading news.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "Evnen til å vurdere om en kilde er pålitelig og informasjonen er riktig."
   },
@@ -5836,7 +5836,7 @@
     "example": "Det er for mye reklame på TV.",
     "example_english": "There is too much advertising on TV.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "Informasjon fra bedrifter som prøver å få deg til å kjøpe noe."
   },
@@ -5846,7 +5846,7 @@
     "example": "Desinformasjon er en trussel mot demokratiet.",
     "example_english": "Disinformation is a threat to democracy.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "Bevisst falsk informasjon som spres for å villede folk."
   },
@@ -5856,7 +5856,7 @@
     "example": "Troverdigheten til mediet er viktig.",
     "example_english": "The credibility of the media is important.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "Graden av tillit man kan ha til at noe er sant og pålitelig."
   },
@@ -5866,7 +5866,7 @@
     "example": "Journalisten intervjuet vitnet.",
     "example_english": "The journalist interviewed the witness.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "verb",
     "definition": "Å stille spørsmål til noen for å samle informasjon."
   },
@@ -5876,7 +5876,7 @@
     "example": "Dette er et ledende norsk medium.",
     "example_english": "This is a leading Norwegian media outlet.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "En kanal for kommunikasjon og informasjon, som TV, radio eller internett."
   },
@@ -5886,7 +5886,7 @@
     "example": "Avisen har en digital plattform.",
     "example_english": "The newspaper has a digital platform.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "phrase",
     "definition": "Et nettbasert system der folk kan dele, kommunisere og hente informasjon."
   },
@@ -5896,7 +5896,7 @@
     "example": "Jeg har abonnement på avisen.",
     "example_english": "I have a subscription to the newspaper.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "En betalt avtale om å motta et produkt eller en tjeneste regelmessig."
   },
@@ -5906,7 +5906,7 @@
     "example": "Reportasjen vant en journalistpris.",
     "example_english": "The report won a journalism award.",
     "level": "B1",
-    "category": "media-journalism-b1",
+    "category": "journalism",
     "part": "noun",
     "definition": "En grundig journalistisk tekst eller sending om et bestemt tema."
   },
@@ -6236,7 +6236,7 @@
     "example": "Vi er samboere og bor i leilighet.",
     "example_english": "We are cohabiting and live in a flat.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "En person man bor sammen med i et romantisk forhold uten å være gift."
   },
@@ -6246,7 +6246,7 @@
     "example": "De valgte å skille seg.",
     "example_english": "They chose to get divorced.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "verb",
     "definition": "Å gå gjennom den juridiske prosessen for å avslutte et ekteskap."
   },
@@ -6256,7 +6256,7 @@
     "example": "Hun er forlovet med ham.",
     "example_english": "She is engaged to him.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "En person man har forlovet seg med og planlegger å gifte seg med."
   },
@@ -6266,7 +6266,7 @@
     "example": "Det er store forskjeller mellom generasjonene.",
     "example_english": "There are big differences between generations.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "Grupper av mennesker som er født og vokser opp i ulike tidsperioder."
   },
@@ -6276,7 +6276,7 @@
     "example": "Familien gir god støtte.",
     "example_english": "The family gives good support.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "Hjelp og oppmuntring man gir til noen som trenger det."
   },
@@ -6286,7 +6286,7 @@
     "example": "Steforelderen er en positiv person.",
     "example_english": "The step-parent is a positive person.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "En voksen som er gift med eller samboer med ens forelder, men ikke ens biologiske forelder."
   },
@@ -6296,7 +6296,7 @@
     "example": "Hun er enslig forsørger for to barn.",
     "example_english": "She is a single parent for two children.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "phrase",
     "definition": "En forelder som oppdrar barn alene uten en partner."
   },
@@ -6306,7 +6306,7 @@
     "example": "Nærhet er viktig i et parforhold.",
     "example_english": "Closeness is important in a romantic relationship.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "En følelse av tett tilknytning og fortrolighet med en annen person."
   },
@@ -6316,7 +6316,7 @@
     "example": "Det er en generasjonskløft mellom dem.",
     "example_english": "There is a generation gap between them.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "noun",
     "definition": "Et gap i verdier og forståelse mellom ulike generasjoner."
   },
@@ -6326,7 +6326,7 @@
     "example": "Det er vanskelig å gi slipp på fortiden.",
     "example_english": "It is difficult to let go of the past.",
     "level": "B1",
-    "category": "relationships-family",
+    "category": "family",
     "part": "phrase",
     "definition": "Å akseptere at noe er over og slutte å holde fast på det."
   },
@@ -6346,7 +6346,7 @@
     "example": "Regjeringen styrer landet.",
     "example_english": "The government governs the country.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Den gruppen av politikere som styrer landet og tar viktige beslutninger."
   },
@@ -6356,7 +6356,7 @@
     "example": "Han er medlem av et politisk parti.",
     "example_english": "He is a member of a political party.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En organisasjon av folk med felles politiske meninger som stiller til valg."
   },
@@ -6366,7 +6366,7 @@
     "example": "Politikeren holder tale i Stortinget.",
     "example_english": "The politician gives a speech in the parliament.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En person som er aktiv i politikken og arbeider med samfunnsspørsmål."
   },
@@ -6376,7 +6376,7 @@
     "example": "Alle må følge loven.",
     "example_english": "Everyone must follow the law.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En regel vedtatt av parlamentet som alle i landet must følge."
   },
@@ -6386,7 +6386,7 @@
     "example": "Den norske grunnloven ble vedtatt i 1814.",
     "example_english": "The Norwegian constitution was adopted in 1814.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Landets viktigste juridiske dokument som fastslår innbyggernes rettigheter og statens struktur."
   },
@@ -6396,7 +6396,7 @@
     "example": "Alle har rett til gratis utdanning.",
     "example_english": "Everyone has the right to free education.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Noe man har krav på og som er beskyttet av loven."
   },
@@ -6406,7 +6406,7 @@
     "example": "Det er en plikt å stemme.",
     "example_english": "It is a duty to vote.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Noe man er forpliktet til å gjøre ifølge loven eller samfunnet."
   },
@@ -6416,7 +6416,7 @@
     "example": "Kommunevalget er hvert fjerde år.",
     "example_english": "The municipal election is every four years.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En demokratisk prosess der innbyggerne stemmer på politikere eller partier."
   },
@@ -6426,7 +6426,7 @@
     "example": "Velgerne avgjør hvem som styrer.",
     "example_english": "The voters decide who governs.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En person med rett til å stemme ved valg."
   },
@@ -6436,7 +6436,7 @@
     "example": "Valgkampanjen starter om to uker.",
     "example_english": "The election campaign starts in two weeks.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Et organisert forsøk på å påvirke folk, for eksempel i forkant av et valg."
   },
@@ -6446,7 +6446,7 @@
     "example": "Helseministeren presenterer budsjett.",
     "example_english": "The health minister presents the budget.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En person med politisk ansvar for et bestemt departement i regjeringen."
   },
@@ -6456,7 +6456,7 @@
     "example": "Opposisjonen kritiserer regjeringen.",
     "example_english": "The opposition criticises the government.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "De politiske partiene som ikke sitter i regjering og kritiserer regjeringen."
   },
@@ -6466,7 +6466,7 @@
     "example": "Regjeringen foreslår en reform av helsesystemet.",
     "example_english": "The government proposes a reform of the health system.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En endring i lover eller systemer for å forbedre noe i samfunnet."
   },
@@ -6476,7 +6476,7 @@
     "example": "Regjeringens politikk er omdiskutert.",
     "example_english": "The government's policy is controversial.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Et sett med prinsipper og tiltak som en regjering eller organisasjon følger."
   },
@@ -6486,7 +6486,7 @@
     "example": "Ytringsfrihet er en viktig demokratisk verdi.",
     "example_english": "Freedom of speech is an important democratic value.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Retten til å si og skrive hva man mener uten å bli straffet."
   },
@@ -6496,7 +6496,7 @@
     "example": "Alle har grunnleggende menneskerettigheter.",
     "example_english": "Everyone has basic human rights.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Grunnleggende rettigheter alle mennesker har, uavhengig av nasjonalitet."
   },
@@ -6506,7 +6506,7 @@
     "example": "Diskriminering er forbudt ved lov.",
     "example_english": "Discrimination is prohibited by law.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Urettferdig behandling av noen basert på kjennetegn som kjønn, rase eller religion."
   },
@@ -6516,7 +6516,7 @@
     "example": "Flyktningene søker asyl i Norge.",
     "example_english": "The refugees seek asylum in Norway.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En person som har flyktet fra landet sitt på grunn av krig eller forfølgelse."
   },
@@ -6526,7 +6526,7 @@
     "example": "Han søkte asyl i Europa.",
     "example_english": "He sought asylum in Europe.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Beskyttelse som et land gir til en person som har flyktet fra fare."
   },
@@ -6536,7 +6536,7 @@
     "example": "Regjeringen er en koalisjonsregjering.",
     "example_english": "The government is a coalition government.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Et samarbeid mellom to eller flere partier for å danne regjering."
   },
@@ -6546,7 +6546,7 @@
     "example": "Landet ilegges nye sanksjoner.",
     "example_english": "The country is imposed with new sanctions.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "Et straffetiltak som et land eller organisasjon ilegger et annet land."
   },
@@ -6556,7 +6556,7 @@
     "example": "Dette er et internasjonalt problem.",
     "example_english": "This is an international problem.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "adjective",
     "definition": "Noe som involverer eller angår flere land."
   },
@@ -6566,7 +6566,7 @@
     "example": "Norge har undertegnet FN-konvensjonen.",
     "example_english": "Norway has signed the UN convention.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En internasjonal avtale om regler som land forplikter seg til å følge."
   },
@@ -6576,7 +6576,7 @@
     "example": "Vi lever i et demokratisk samfunn.",
     "example_english": "We live in a democratic society.",
     "level": "B1",
-    "category": "politics-civics",
+    "category": "politics",
     "part": "noun",
     "definition": "En gruppe mennesker som bor og lever sammen innenfor et felles system."
   },
@@ -6856,7 +6856,7 @@
     "example": "Han er i rehabilitering etter ulykken.",
     "example_english": "He is in rehabilitation after the accident.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "Trening og omsorg etter sykdom eller skade for å gjenvinne funksjon."
   },
@@ -6866,7 +6866,7 @@
     "example": "Forebygging er bedre enn behandling.",
     "example_english": "Prevention is better than treatment.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "Tiltak for å hindre at sykdom eller uhell oppstår."
   },
@@ -6876,7 +6876,7 @@
     "example": "Influensa er svært smittsom.",
     "example_english": "Influenza is very contagious.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "adjective",
     "definition": "En sykdom som kan overføres fra en person til en annen."
   },
@@ -6886,7 +6886,7 @@
     "example": "En epidemi brøt ut i regionen.",
     "example_english": "An epidemic broke out in the region.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "En sykdom som sprer seg raskt og rammer mange i et område."
   },
@@ -6896,7 +6896,7 @@
     "example": "God ernæring er viktig for helsen.",
     "example_english": "Good nutrition is important for health.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "Lære om mat og næringsstoffer kroppen trenger for å fungere godt."
   },
@@ -6906,7 +6906,7 @@
     "example": "Et balansert kosthold er sunt.",
     "example_english": "A balanced diet is healthy.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "Maten og drikken man spiser til daglig."
   },
@@ -6916,7 +6916,7 @@
     "example": "Helseforsikring kan dekke ekstra behandling.",
     "example_english": "Health insurance can cover extra treatment.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "En forsikring som dekker kostnader til medisinsk behandling."
   },
@@ -6926,7 +6926,7 @@
     "example": "Egenandelen for lege er fastsatt.",
     "example_english": "The co-payment for the doctor is fixed.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "Den delen av legebesøk eller behandling som pasienten betaler selv."
   },
@@ -6936,7 +6936,7 @@
     "example": "Han er sykemeldt i to uker.",
     "example_english": "He is on sick leave for two weeks.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "adjective",
     "definition": "Å ha sykmelding fra legen og ha fri fra jobb på grunn av sykdom."
   },
@@ -6946,7 +6946,7 @@
     "example": "Legemidlet selges kun på resept.",
     "example_english": "The medication is sold only on prescription.",
     "level": "B1",
-    "category": "health-system",
+    "category": "healthcare",
     "part": "noun",
     "definition": "Et stoff brukt til å behandle, forebygge eller lindre sykdom."
   }

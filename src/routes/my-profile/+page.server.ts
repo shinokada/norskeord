@@ -287,6 +287,13 @@ export const actions: Actions = {
     const subject = ((data.get('subject') as string) ?? '').trim();
     const message = ((data.get('message') as string) ?? '').trim();
     const appVersion = ((data.get('app_version') as string) ?? '').trim();
+    const honeypot = ((data.get('website') as string) ?? '').trim();
+
+    // Honeypot check: bots fill in hidden fields, humans don't
+    if (honeypot) {
+      // Silently succeed so bots don't know they were caught
+      return { success: true, action: 'supportContact' };
+    }
 
     if (!subject) return fail(422, { field: 'supportContact', message: 'Please enter a subject.' });
     if (message.length < 10)
