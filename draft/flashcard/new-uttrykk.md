@@ -12,3 +12,6 @@ få noe av noen: to get something from somebody
 å bli feitere: to get fatter
 nett i kroppen: be neat, light build
 å slippe ut av: let out: De slapp ham ut av fengselet.
+det går an å: It is possible to
+så vidt det går an: as much as possible / to the limit: Han løp så fort det går an. Vi hjelper så mye det går an.
+Går det an, da?!: Seriously? Is that even possible?
