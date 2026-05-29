@@ -5,6 +5,7 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
 ==========
+
 ## Solved
 
 ## How to test 1
