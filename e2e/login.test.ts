@@ -30,7 +30,9 @@ test.describe('/auth/login page', () => {
   test('shows error when submitting empty email', async ({ page }) => {
     // Form is now a server action — wait for the POST round-trip to complete.
     await Promise.all([
-      page.waitForResponse((r) => r.url().includes('/auth/login') && r.request().method() === 'POST'),
+      page.waitForResponse(
+        (r) => r.url().includes('/auth/login') && r.request().method() === 'POST'
+      ),
       page.getByRole('button', { name: /send sign-in link/i }).click()
     ]);
     const error = page.locator('p.text-red-500, p[class*="red"]');
@@ -38,10 +40,15 @@ test.describe('/auth/login page', () => {
   });
 
   test('shows error when submitting invalid email', async ({ page }) => {
+    // Strip type="email" so the browser's native validation doesn't block the
+    // POST — we want to test the server-side validation path instead.
+    await page.locator('#email').evaluate((el) => el.removeAttribute('type'));
     await page.getByRole('textbox').fill('not-an-email');
     // Form is now a server action — wait for the POST round-trip to complete.
     await Promise.all([
-      page.waitForResponse((r) => r.url().includes('/auth/login') && r.request().method() === 'POST'),
+      page.waitForResponse(
+        (r) => r.url().includes('/auth/login') && r.request().method() === 'POST'
+      ),
       page.getByRole('button', { name: /send sign-in link/i }).click()
     ]);
     const error = page.locator('p.text-red-500, p[class*="red"]');
