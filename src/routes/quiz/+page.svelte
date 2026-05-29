@@ -330,7 +330,7 @@
   </div>
 {/if}
 
-<div class="mx-auto max-w-2xl px-4 py-8">
+<div class="mx-auto max-w-2xl px-4 py-8 text-left">
   {#if quizState !== 'idle'}
     <div class="mb-4">
       <button
@@ -445,9 +445,18 @@
       </button>
     </div>
   {:else if quizState === 'questioning' && current}
+    <!-- Page heading -->
+    <div class="mb-5">
+      <h1 class="text-xl font-bold text-gray-900 dark:text-white">
+        🧠 {m.quiz_title()}{selectedLevel
+          ? ` · ${formatLevel(selectedLevel)}`
+          : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}
+      </h1>
+    </div>
+
     <!-- Progress bar -->
     <div class="mb-6">
-      <div class="mb-1 flex justify-between text-xs text-gray-400 dark:text-gray-500">
+      <div class="mb-1 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
         <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
         <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
       </div>
@@ -574,9 +583,18 @@
       {/if}
     </div>
   {:else if quizState === 'revealing' && current}
+    <!-- Page heading -->
+    <div class="mb-5">
+      <h1 class="text-xl font-bold text-gray-900 dark:text-white">
+        🧠 {m.quiz_title()}{selectedLevel
+          ? ` · ${formatLevel(selectedLevel)}`
+          : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}
+      </h1>
+    </div>
+
     <!-- Progress bar (frozen at current position) -->
     <div class="mb-6">
-      <div class="mb-1 flex justify-between text-xs text-gray-400 dark:text-gray-500">
+      <div class="mb-1 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
         <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
         <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
       </div>

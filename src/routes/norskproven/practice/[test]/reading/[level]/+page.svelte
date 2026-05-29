@@ -143,7 +143,7 @@
 
 <svelte:window onkeydown={handleKeyDown} />
 
-<div class="mx-auto max-w-2xl px-4 py-8">
+<div class="mx-auto max-w-2xl px-4 py-8 text-left">
   {#if readingState === 'questioning' || readingState === 'revealing'}
     <!-- Page heading -->
     <div class="mb-5">
