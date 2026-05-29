@@ -20,7 +20,7 @@
       categories: [
         { slug: 'shopping', note: 'prices, everyday transactions' },
         { slug: 'transport', note: 'public transport, tickets, travel' },
-        { slug: 'health-basic', note: 'doctor visits, symptoms, medicine' },
+        { slug: 'health', note: 'doctor visits, symptoms, medicine' },
         { slug: 'occupations', note: 'jobs, workplace, daily routine' },
         { slug: 'directions', note: 'asking for and giving directions' },
         { slug: 'time', note: 'appointments, schedules, clock' },
@@ -41,12 +41,12 @@
       categories: [
         { slug: 'work', note: 'applying for jobs, workplace rights' },
         { slug: 'education', note: 'schools, courses, grades' },
-        { slug: 'health-body-intermediate', note: 'healthcare system, insurance' },
-        { slug: 'finance-banking', note: 'bank accounts, bills, tax' },
-        { slug: 'housing-renting', note: 'renting, tenancy, utilities' },
-        { slug: 'travel', note: 'planning trips, booking, describing places' },
+        { slug: 'health', note: 'healthcare system, insurance' },
         { slug: 'relationships', note: 'family, social situations, feelings' },
-        { slug: 'city-life', note: 'public services, neighbourhood, local life' }
+        { slug: 'travel', note: 'planning trips, booking, describing places' },
+        { slug: 'society', note: 'civic life, social structures' },
+        { slug: 'culture', note: 'traditions, customs, Norwegian society' },
+        { slug: 'environment', note: 'nature, climate, sustainability' }
       ]
     }
   ] as const;
@@ -201,12 +201,20 @@
 
       <!-- Link to full level -->
       <p class="mt-4 text-sm text-gray-400 dark:text-gray-500">
-        {m.norskproven_more_topics({ level: section.level })}
-        {#each ['A2', 'B1'].filter((l) => l === section.level) as _ (_)}
+        {#if section.level === 'B1' && plan !== 'plus'}
+          Want all B1 categories?
+          <a
+            href="/plus?ref=norskproven-{section.level.toLowerCase()}"
+            class="font-semibold text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300"
+          >
+            Unlock with Plus →
+          </a>
+        {:else}
+          {m.norskproven_more_topics({ level: section.level })}
           <a href="/" class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300">
             {m.norskproven_browse_all({ level: section.level })}
           </a>
-        {/each}
+        {/if}
       </p>
     </div>
   {/each}
@@ -248,7 +256,7 @@
     </p>
     <div class="mt-4 flex flex-wrap justify-center gap-3">
       <a
-        href="/a2/health-basic"
+        href="/a2/health"
         class="rounded-lg bg-teal-600 px-5 py-2 text-sm font-semibold text-white hover:bg-teal-700"
       >
         {m.norskproven_cta_a2()}
