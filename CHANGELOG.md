@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.11.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a Guide page with comprehensive help: smart scheduling, study button guidance, card state descriptions, flow tips, and a full FAQ.
+  - **Localization / Documentation**
+    - Guide content localized in English and Norwegian.
+  - **Style**
+    - Improved text alignment across practice (oral, reading, writing) and quiz pages; added dynamic quiz headings.
+  - **Tests**
+    - End-to-end login tests made more reliable by awaiting the authentication request; test results now show passing.
+
 ## 2.10.0
 
 ### Minor Changes
