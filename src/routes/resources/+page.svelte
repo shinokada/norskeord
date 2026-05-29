@@ -16,7 +16,8 @@
       resources: [
         {
           name: 'Røde Kors Norsktrening',
-          description: 'Free conversation groups in Oslo, Bergen, Trondheim, Tromsø & Kristiansand.',
+          description:
+            'Free conversation groups in Oslo, Bergen, Trondheim, Tromsø & Kristiansand.',
           href: 'https://www.rodekors.no/tilbudene/norsktrening/'
         },
         {
@@ -82,12 +83,12 @@
         },
         {
           name: 'Deichman — Lettlest',
-          description: 'Easy-reader books for adults from Oslo\'s public library catalogue.',
+          description: "Easy-reader books for adults from Oslo's public library catalogue.",
           href: 'https://deichman.no/sok/form:%20%22Lettlest%2C%20enkelt%20innhold%22?language=languages_Norsk+%28bokm%C3%A5l%29&audience=work.audiences_Voksne'
         },
         {
           name: 'Barnebøker for Norge',
-          description: 'Norwegian children\'s books — simple vocabulary and short sentences.',
+          description: "Norwegian children's books — simple vocabulary and short sentences.",
           href: 'https://barneboker.no/'
         }
       ]
@@ -179,7 +180,7 @@
         },
         {
           name: 'NAOB',
-          description: 'The Norwegian Academy\'s comprehensive Bokmål dictionary.',
+          description: "The Norwegian Academy's comprehensive Bokmål dictionary.",
           href: 'https://naob.no/'
         }
       ]
@@ -188,15 +189,17 @@
 </script>
 
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
-
   <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
   <div class="mb-10">
-    <div class="mb-3 inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-semibold tracking-wide text-green-700 uppercase dark:bg-green-900 dark:text-green-300">
+    <div
+      class="mb-3 inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-semibold tracking-wide text-green-700 uppercase dark:bg-green-900 dark:text-green-300"
+    >
       100% Free
     </div>
-    <h1 class="text-4xl font-bold leading-tight dark:text-white">Norwegian Learning Resources</h1>
+    <h1 class="text-4xl leading-tight font-bold dark:text-white">Norwegian Learning Resources</h1>
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-      A curated collection of free tools, courses, and communities to help you learn Norwegian — organised by skill.
+      A curated collection of free tools, courses, and communities to help you learn Norwegian —
+      organised by skill.
     </p>
   </div>
 
@@ -206,7 +209,9 @@
       <div class="mb-1 flex items-center gap-3">
         <span class="text-2xl">{section.icon}</span>
         <h2 class="text-2xl font-bold {section.color.heading}">{section.title}</h2>
-        <span class="rounded-full {section.color.badge} px-2.5 py-0.5 text-xs font-semibold">Free</span>
+        <span class="rounded-full {section.color.badge} px-2.5 py-0.5 text-xs font-semibold"
+          >Free</span
+        >
       </div>
       <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">{section.description}</p>
 
@@ -216,15 +221,22 @@
             href={resource.href}
             target="_blank"
             rel="noopener noreferrer"
-            class="group flex items-start justify-between rounded-xl border {section.color.border} {section.color.hover} bg-white p-4 transition-all hover:shadow-md dark:bg-gray-800"
+            class="group flex items-start justify-between rounded-xl border {section.color
+              .border} {section.color
+              .hover} bg-white p-4 transition-all hover:shadow-md dark:bg-gray-800"
           >
             <div>
-              <p class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-gray-100 dark:group-hover:text-blue-400">
+              <p
+                class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-gray-100 dark:group-hover:text-blue-400"
+              >
                 {resource.name}
               </p>
               <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">{resource.description}</p>
             </div>
-            <span class="ml-3 mt-0.5 shrink-0 text-gray-300 group-hover:text-blue-400 dark:text-gray-600">↗</span>
+            <span
+              class="mt-0.5 ml-3 shrink-0 text-gray-300 group-hover:text-blue-400 dark:text-gray-600"
+              >↗</span
+            >
           </a>
         {/each}
       </div>
@@ -232,15 +244,22 @@
   {/each}
 
   <!-- ── Footer note ───────────────────────────────────────────────────────── -->
-  <div class="rounded-xl border border-gray-200 bg-gray-50 p-6 text-center dark:border-gray-700 dark:bg-gray-800/40">
+  <div
+    class="rounded-xl border border-gray-200 bg-gray-50 p-6 text-center dark:border-gray-700 dark:bg-gray-800/40"
+  >
     <p class="text-sm text-gray-500 dark:text-gray-400">
       Know a great free resource that's missing?
       {#if user}
-        Send us a message from <a href="/my-profile" class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300">My Profile</a> and we'll add it.
+        Send us a message from <a
+          href="/my-profile"
+          class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300">My Profile</a
+        > and we'll add it.
       {:else}
-        <a href="/auth/login" class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300">Sign in</a> to send us a suggestion.
+        <a
+          href="/auth/login"
+          class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300">Sign in</a
+        > to send us a suggestion.
       {/if}
     </p>
   </div>
-
 </div>
