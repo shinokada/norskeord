@@ -48,6 +48,9 @@
     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
       {m.login_subheading()}
     </p>
+    <p class="mt-3 text-xs font-medium text-green-600 dark:text-green-400">
+      ✓ Free &nbsp;·&nbsp; No credit card required
+    </p>
   </div>
 
   {#if submitted}
