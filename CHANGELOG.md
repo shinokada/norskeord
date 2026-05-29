@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.10.0
+
+### Minor Changes
+
+- - **New Features**
+    - Login rebuilt as a form-driven flow with Cloudflare Turnstile and success UX (“Free · No credit card required”)
+  - **Updates**
+    - Vocabulary B1 categories reorganized for clearer taxonomy
+    - Norskprøven: revised A2/B1 category sets and conditional Plus upsell for B1
+    - Resources page redesigned with improved layout and external-link cards
+    - Contact form now includes invisible honeypot for improved spam protection
+  - **Documentation**
+    - Added security and monitoring guidance (login, Turnstile, rate-limiting)
+
 ## 2.9.1
 
 ### Patch Changes
