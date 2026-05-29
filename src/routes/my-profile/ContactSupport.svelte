@@ -76,7 +76,15 @@
     >
       <input type="hidden" name="app_version" value={__VERSION__} />
       <!-- Honeypot: hidden from real users, bots fill it in -->
-      <input type="text" name="website" value="" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none" />
+      <input
+        type="text"
+        name="website"
+        value=""
+        autocomplete="off"
+        tabindex="-1"
+        aria-hidden="true"
+        style="display:none"
+      />
       <div>
         <label
           for="support-subject"
