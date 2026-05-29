@@ -232,6 +232,8 @@
   "login_submit": "Send innloggingslenke",
   "login_sending": "Sender…",
   "login_no_password_note": "Ingen passord nødvendig. E-posten din brukes kun til innlogging.",
+  "login_error_bot_check": "Bot-sjekken mislyktes. Vennligst prøv igjen.",
+  "login_error_generic": "Noe gikk galt. Vennligst prøv igjen.",
 
   "plus_badge": "Kommer snart",
   "plus_heading": "Studer smartere med Norske Flashcard Plus",
