@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.9.1
+
+### Patch Changes
+
+- fix: update c2 vocab
+
 ## 2.9.0
 
 ### Minor Changes
