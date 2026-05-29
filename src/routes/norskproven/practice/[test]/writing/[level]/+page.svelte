@@ -69,7 +69,7 @@
   <title>{m.norskproven_writing_page_title({ level: data.level, test: data.test })}</title>
 </svelte:head>
 
-<div class="mx-auto max-w-2xl px-4 py-8">
+<div class="mx-auto max-w-2xl px-4 py-8 text-left">
   {#if writingState !== 'summary'}
     <!-- ── Page heading ─────────────────────────────────────────────────── -->
     <div class="mb-5">
