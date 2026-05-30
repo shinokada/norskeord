@@ -3,7 +3,7 @@ title: 'Hvor ble det av …? — The Expression That Means "Where Did It Go?"'
 description: '"Bli av" is a fixed Norwegian expression. It does not mean "become of" literally — it asks where something disappeared to.'
 slug: hvor-ble-det-av
 cefr: B1
-publishedAt: 2026-06-01
+publishedAt: 2026-06-17
 tags: [expressions, idioms, grammar]
 ---
 

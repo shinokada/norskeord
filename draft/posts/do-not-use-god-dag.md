@@ -1,1 +1,0 @@
-It's a old fashion way of saying "Good day".

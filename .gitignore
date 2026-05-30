@@ -1,6 +1,9 @@
 test-results
 node_modules
 
+# Scripts output
+scripts/*.txt
+
 # Output
 .output
 .vercel

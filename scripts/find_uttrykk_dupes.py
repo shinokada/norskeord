@@ -1,29 +1,26 @@
 #!/usr/bin/env python3
 """
-find_dupes.py
-Scans all vocab-XX.json files in the norskeord project and reports
-duplicate 'norsk' entries — both within a single file and across files.
+find_uttrykk_dupes.py
+Find duplicate 'norsk' entries across uttrykk-XX.json files.
+Excludes uttrykk-XX-preview.json files (they are subsets of the main files).
 
 Usage:
-    cd /Users/shinichiokada/Svelte/svelte-languages/norskeord/find-dupes
-    python find_dupes.py
+    python scripts/find_uttrykk_dupes.py
 """
 import json
 import os
 from collections import defaultdict
 
-# Works whether run from project root or find-dupes/
+# Works whether run from project root or scripts/
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
 base = os.path.join(project_root, "src", "lib", "data")
 
 files = {
-    'A1': os.path.join(base, 'vocab-a1.json'),
-    'A2': os.path.join(base, 'vocab-a2.json'),
-    'B1': os.path.join(base, 'vocab-b1.json'),
-    'B2': os.path.join(base, 'vocab-b2.json'),
-    'C1': os.path.join(base, 'vocab-c1.json'),
-    'C2': os.path.join(base, 'vocab-c2.json'),
+    'A1': os.path.join(base, 'uttrykk-a1.json'),
+    'A2': os.path.join(base, 'uttrykk-a2.json'),
+    'B1': os.path.join(base, 'uttrykk-b1.json'),
+    'B2': os.path.join(base, 'uttrykk-b2.json'),
 }
 
 data_by_file = {}
@@ -64,7 +61,7 @@ output.append("")
 for k in sorted(cross.keys()):
     entries = cross[k]
     parts = "  |  ".join(f"{e[1]} [{e[2]}]" for e in entries)
-    output.append(f"  {entries[0][0]!r:45s}  →  {parts}")
+    output.append(f"  {entries[0][0]!r:60s}  →  {parts}")
 
 output.append("")
 output.append(f"=== WITHIN-FILE DUPLICATES ({len(within)}) ===")
@@ -73,13 +70,13 @@ output.append("")
 for k in sorted(within.keys()):
     entries = within[k]
     parts = "  |  ".join(f"{e[1]} [{e[2]}]" for e in entries)
-    output.append(f"  {entries[0][0]!r:45s}  →  {parts}")
+    output.append(f"  {entries[0][0]!r:60s}  →  {parts}")
 
 result_text = "\n".join(output)
 print(result_text)
 
-# Write results next to this script
-out_path = os.path.join(script_dir, "vocab_duplicate_report.txt")
+# Write report next to this script
+out_path = os.path.join(script_dir, "uttrykk_duplicate_report.txt")
 with open(out_path, 'w', encoding='utf-8') as f:
     f.write(f"Entry counts: {counts}\n")
     f.write(f"Total entries: {total}\n\n")
