@@ -3,7 +3,7 @@ title: 'V2-regelen — Why the Verb Always Comes Second'
 description: 'In Norwegian main clauses, the verb must always be the second element — no matter what comes first. This is the V2 rule, and it explains why word order shifts when a sentence starts with time or place.'
 slug: v2-regelen
 cefr: A2
-publishedAt: 2026-05-31
+publishedAt: 2026-06-03
 tags: [grammar]
 ---
 
