@@ -6,7 +6,7 @@
  * files using the Anthropic API.
  *
  * Usage:
- *   node add-example-explanations.mjs [--files vocab-b1.json,vocab-b2.json] [--batch 20] [--dry-run] [--force]
+ *   node scripts/add-example-explanations.mjs [--files vocab-b1.json,vocab-b2.json] [--batch 20] [--dry-run] [--force]
  *
  * Options:
  *   --files   Comma-separated list of JSON filenames in src/lib/data/ to process.
@@ -40,7 +40,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const DATA_DIR = path.resolve(__dirname, 'src/lib/data');
+const DATA_DIR = path.resolve(__dirname, '../src/lib/data');
 
 const DEFAULT_FILES = [
   // 'vocab-b1.json',
@@ -83,7 +83,7 @@ const filesToProcess = filesArg ? filesArg.split(',').map((f) => f.trim()) : DEF
 
 // ── Load API key ─────────────────────────────────────────────────────────────
 
-const envPath = path.resolve(__dirname, '.env');
+const envPath = path.resolve(__dirname, '../.env');
 if (fs.existsSync(envPath)) {
   const envContent = fs.readFileSync(envPath, 'utf8');
   for (const line of envContent.split('\n')) {
