@@ -364,7 +364,7 @@
             onchange={() => {
               selectedCategory = '';
             }}
-            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-indigo-950/60 dark:text-gray-200"
           >
             {#each availableLevels as level (level)}
               <option value={level}>{formatLevel(level)}</option>
@@ -388,7 +388,7 @@
             <select
               id="quiz-category"
               bind:value={selectedCategory}
-              class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+              class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-indigo-950/60 dark:text-gray-200"
             >
               <option value="">{m.quiz_label_all_categories()}</option>
               {#each categoriesWithLock as { cat } (cat)}
@@ -470,7 +470,7 @@
 
     <!-- Question card -->
     <div
-      class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+      class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
     >
       {#if current.type === 'mc'}
         {@const q = current as MultipleChoiceQuestion}
@@ -683,7 +683,7 @@
       </div>
 
       <!-- Example sentence with its own separate Pronounce sentence button -->
-      <div class="rounded-lg bg-white/60 px-4 py-3 dark:bg-gray-800/60">
+      <div class="rounded-lg bg-white/60 px-4 py-3 dark:bg-indigo-950/60">
         <p class="text-sm text-gray-700 italic dark:text-gray-300">
           {current.entry.example}
         </p>
@@ -785,7 +785,7 @@
             onchange={() => {
               selectedCategory = '';
             }}
-            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+            class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-indigo-950/60 dark:text-gray-200"
           >
             {#each availableLevels as level (level)}
               <option value={level}>{formatLevel(level)}</option>
@@ -807,7 +807,7 @@
             <select
               id="summary-category"
               bind:value={selectedCategory}
-              class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+              class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-indigo-950/60 dark:text-gray-200"
             >
               <option value="">{m.quiz_label_all_categories()}</option>
               {#each categoriesWithLock as { cat } (cat)}
