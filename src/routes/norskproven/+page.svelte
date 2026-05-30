@@ -149,7 +149,7 @@
   <div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
     {#each examFacts as fact (fact.labelKey)}
       <div
-        class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-gray-800"
+        class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-indigo-950/60"
       >
         <div class="mb-1 flex items-center gap-2">
           <span class="text-xl">{fact.icon}</span>
@@ -182,7 +182,7 @@
           <a
             href="/{section.level.toLowerCase()}/{cat.slug}"
             class="group flex items-center justify-between rounded-xl border {section.color
-              .border} bg-white p-4 transition-shadow hover:shadow-md dark:bg-gray-800"
+              .border} bg-white p-4 transition-shadow hover:shadow-md dark:bg-indigo-950/60"
           >
             <div>
               <p
@@ -190,7 +190,7 @@
               >
                 {removeHyphensAndCapitalize(cat.slug)}
               </p>
-              <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">{cat.note}</p>
+              <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-400">{cat.note}</p>
             </div>
             <span class="ml-3 shrink-0 text-gray-300 group-hover:text-blue-400 dark:text-gray-600">
               →
