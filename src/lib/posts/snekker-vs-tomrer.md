@@ -4,7 +4,7 @@ description: 'Tømrer builds the house. Snekker makes it liveable — and in eve
 slug: snekker-vs-tomrer
 cefr: B1
 publishedAt: 2026-05-21
-tags: [vocabulary, professions, nouns]
+tags: [nouns, vocabulary]
 ---
 
 ## Kort forklaring

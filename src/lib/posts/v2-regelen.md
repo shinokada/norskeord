@@ -4,7 +4,7 @@ description: 'In Norwegian main clauses, the verb must always be the second elem
 slug: v2-regelen
 cefr: A2
 publishedAt: 2026-05-31
-tags: [grammar, word-order, sentence-structure]
+tags: [grammar]
 ---
 
 > **TL;DR:** In Norwegian, the verb is always the second element in a main clause. If something other than the subject comes first, the subject gets pushed after the verb.
