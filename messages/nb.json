@@ -627,5 +627,16 @@
   "guide_faq_download_q": "Hvordan laster jeg ned fremgangsrapporten min?",
   "guide_faq_download_a": "Gå til Profil → Konto og klikk Last ned fremgangsrapport. Dette eksporterer all korthistorikken din som en fil du kan lagre eller dele.",
   "guide_faq_contact_q": "Jeg har et spørsmål – hvordan kan jeg ta kontakt?",
-  "guide_faq_contact_a": "Plus-medlemmer har en Kontakt support-knapp nederst på Profil-siden for direkte prioritert støtte."
+  "guide_faq_contact_a": "Plus-medlemmer har en Kontakt support-knapp nederst på Profil-siden for direkte prioritert støtte.",
+
+  "blog_filter_level": "Nivå",
+  "blog_filter_topic": "Emne",
+  "blog_filter_clear": "Fjern filtre",
+  "blog_filter_results": "{count} artikler",
+  "blog_filter_no_results": "Ingen artikler passer til de valgte filtrene.",
+
+  "blog_search_placeholder": "Søk i artikler…",
+  "blog_search_aria": "Søk i bloggartikler",
+
+  "blog_load_more": "Last inn flere ({remaining} gjenstår)"
 }

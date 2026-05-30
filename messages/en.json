@@ -611,5 +611,16 @@
   "guide_faq_download_q": "How do I download my progress report?",
   "guide_faq_download_a": "Go to Profile → Account and click Download Progress report. This exports all your card history as a file you can save or share.",
   "guide_faq_contact_q": "I have a question — how can I get in touch?",
-  "guide_faq_contact_a": "Plus members have a Contact support button at the bottom of the Profile page for direct priority support."
+  "guide_faq_contact_a": "Plus members have a Contact support button at the bottom of the Profile page for direct priority support.",
+
+  "blog_filter_level": "Level",
+  "blog_filter_topic": "Topic",
+  "blog_filter_clear": "Clear filters",
+  "blog_filter_results": "{count} articles",
+  "blog_filter_no_results": "No articles match the selected filters.",
+
+  "blog_search_placeholder": "Search articles…",
+  "blog_search_aria": "Search blog articles",
+
+  "blog_load_more": "Load more ({remaining} remaining)"
 }
