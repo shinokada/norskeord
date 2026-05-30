@@ -223,7 +223,7 @@
             rel="noopener noreferrer"
             class="group flex items-start justify-between rounded-xl border {section.color
               .border} {section.color
-              .hover} bg-white p-4 transition-all hover:shadow-md dark:bg-gray-800"
+              .hover} bg-white p-4 transition-all hover:shadow-md dark:bg-indigo-950/60"
           >
             <div>
               <p
@@ -231,7 +231,7 @@
               >
                 {resource.name}
               </p>
-              <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">{resource.description}</p>
+              <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-400">{resource.description}</p>
             </div>
             <span
               class="mt-0.5 ml-3 shrink-0 text-gray-300 group-hover:text-blue-400 dark:text-gray-600"

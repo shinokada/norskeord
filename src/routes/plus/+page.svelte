@@ -214,7 +214,7 @@
   <div class="mb-14 grid grid-cols-1 gap-5 sm:grid-cols-2">
     {#each plusFeatures as feat (feat.title)}
       <div
-        class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-gray-800"
+        class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-indigo-950/60"
       >
         <div class="mb-2 flex items-center gap-2">
           <span class="text-2xl">{feat.icon}</span>
@@ -231,7 +231,7 @@
   <div class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
     {#each [{ label: m.plus_unlocked_a1_label, teaser: m.plus_unlocked_a1_teaser, free: true, color: 'green' }, { label: m.plus_unlocked_a2_label, teaser: m.plus_unlocked_a2_teaser, free: true, color: 'teal' }, { label: m.plus_unlocked_b1_label, teaser: m.plus_unlocked_b1_teaser, free: false, color: 'blue' }, { label: m.plus_unlocked_b2_label, teaser: m.plus_unlocked_b2_teaser, free: false, color: 'indigo' }, { label: m.plus_unlocked_c1_label, teaser: m.plus_unlocked_c1_teaser, free: false, color: 'purple' }, { label: m.plus_unlocked_c2_label, teaser: m.plus_unlocked_c2_teaser, free: false, color: 'pink' }] as row (row.color)}
       <div
-        class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800"
+        class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-indigo-950/60"
       >
         <div class="mb-1.5 flex items-center justify-between gap-2">
           <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">{row.label()}</span>
@@ -280,7 +280,7 @@
       </thead>
       <tbody class="divide-y divide-gray-100 dark:divide-gray-700">
         {#each tableRows as row (row.feature)}
-          <tr class="bg-white dark:bg-gray-900">
+          <tr class="bg-white dark:bg-indigo-950/60">
             <td class="px-5 py-3 font-medium text-gray-700 dark:text-gray-300">{row.feature}</td>
             <td class="px-5 py-3 text-center">
               {#if row.free.yes}
@@ -311,7 +311,7 @@
 
   <!-- ── How smart review works ──────────────────────────────────────────────── -->
   <div
-    class="mb-14 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800/40"
+    class="mb-14 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-indigo-950/60"
   >
     <h3 class="mb-2 text-base font-bold dark:text-white">{m.plus_how_heading()}</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_1()}</p>
