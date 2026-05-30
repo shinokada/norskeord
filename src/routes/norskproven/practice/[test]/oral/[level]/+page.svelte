@@ -146,7 +146,7 @@
     {#if current}
       <!-- ── Scenario card ─────────────────────────────────────────────── -->
       <div
-        class="mb-5 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+        class="mb-5 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
       >
         <p
           class="mb-1 text-xs font-semibold tracking-wide text-blue-600 uppercase dark:text-blue-400"
@@ -215,7 +215,7 @@
         <div class="mb-4 space-y-3">
           {#each current.questions.slice(0, revealedCount) as question, i (i)}
             <div
-              class="flex items-start gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+              class="flex items-start gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
             >
               <span
                 class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-bold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300"
