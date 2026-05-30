@@ -4,7 +4,7 @@ description: 'Bytte is always a swap. Skifte is any kind of change — including
 slug: bytte-vs-skifte
 cefr: A2
 publishedAt: 2026-05-21
-tags: [verbs, comparison]
+tags: [verbs, vocabulary]
 ---
 
 ## Kort forklaring
