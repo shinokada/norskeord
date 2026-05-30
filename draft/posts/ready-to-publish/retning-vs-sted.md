@@ -3,7 +3,7 @@ title: 'Direction vs Location — Hjem/Hjemme, Ut/Ute, Inn/Inne'
 description: 'Norwegian pairs words for movement and location: hjem vs hjemme, ut vs ute, inn vs inne, bort vs borte, frem vs fremme. The pattern is consistent once you see it.'
 slug: retning-vs-sted
 cefr: A2
-publishedAt: 2026-06-01
+publishedAt: 2026-06-22
 tags: [adverbs, grammar, word-order]
 ---
 

@@ -3,7 +3,7 @@ title: "Why Norwegians Don't Say God dag"
 description: 'God dag sounds stiff and old-fashioned in modern Norwegian. Here is what people actually say when they greet each other.'
 slug: god-dag-er-gammeldags
 cefr: A1
-publishedAt: 2026-06-01
+publishedAt: 2026-06-15
 tags: [greetings, vocabulary, speaking, register]
 ---
 
