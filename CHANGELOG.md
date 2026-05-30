@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.11.1
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Removed an incorrect entry from the phrase vocabulary database.
+  - **Chores**
+    - Updated publication schedules for multiple language learning posts.
+    - Cleaned up draft content and development artifacts.
+    - Enhanced script documentation and file path handling.
+
 ## 2.11.0
 
 ### Minor Changes
