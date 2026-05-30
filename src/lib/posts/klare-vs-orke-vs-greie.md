@@ -4,7 +4,7 @@ description: "Use orke when you're tired. Use klare when something is too hard. 
 slug: klare-vs-orke-vs-greie
 cefr: B1
 publishedAt: 2026-05-21
-tags: [verbs, comparison]
+tags: [verbs, vocabulary]
 ---
 
 ## Kort forklaring

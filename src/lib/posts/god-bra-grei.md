@@ -4,7 +4,7 @@ description: 'God is genuinely good. Bra is solidly positive. Grei is just okay 
 slug: god-bra-grei
 cefr: A2
 publishedAt: 2026-05-30
-tags: [adjectives, comparison, vocabulary]
+tags: [adjectives, vocabulary]
 ---
 
 > **TL;DR:** _God_, _bra_, and _grei_ form a scale from strong to neutral. Understanding the difference keeps you from accidentally calling something mediocre when you meant it was great.

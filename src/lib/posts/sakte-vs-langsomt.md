@@ -4,7 +4,7 @@ description: "Sakte is the one you'll hear in conversation. Langsomt is the one 
 slug: sakte-vs-langsomt
 cefr: A2
 publishedAt: 2026-05-21
-tags: [adverbs, comparison]
+tags: [adverbs, vocabulary]
 ---
 
 ## Kort forklaring
