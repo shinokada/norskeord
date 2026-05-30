@@ -3,7 +3,11 @@
   import { page } from '$app/state';
   import { onMount } from 'svelte';
   import { setLocale } from '$lib/paraglide/runtime';
-  import { loadProgressMapFromSupabase, migrateLocalProgressToSupabase } from '$lib/progress';
+  import {
+    clearUserProgress,
+    loadProgressMapFromSupabase,
+    migrateLocalProgressToSupabase
+  } from '$lib/progress';
 
   const next = page.url.searchParams.get('next') ?? '/';
 
@@ -14,10 +18,14 @@
 
     // One-time migration: free → Plus upgrade
     // If Supabase has no rows yet, copy whatever is in localStorage across.
+    // Otherwise, discard any stale localStorage progress — Supabase is the
+    // single source of truth for Plus users.
     if (isPlus && userId) {
       const supabaseMap = await loadProgressMapFromSupabase(userId);
       if (Object.keys(supabaseMap).length === 0) {
         await migrateLocalProgressToSupabase(userId);
+      } else {
+        clearUserProgress();
       }
     }
 
