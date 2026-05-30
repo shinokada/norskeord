@@ -103,7 +103,7 @@
     {#if currentPrompt}
       <!-- ── Prompt card ───────────────────────────────────────────────── -->
       <div
-        class="mb-5 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+        class="mb-5 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
       >
         <p
           class="mb-1 text-xs font-semibold tracking-wide text-blue-600 uppercase dark:text-blue-400"
@@ -133,8 +133,8 @@
           placeholder="Skriv svaret ditt her…"
           class="w-full resize-y rounded-xl border px-4 py-3 text-sm leading-relaxed text-gray-800 transition-colors focus:ring-2 focus:ring-blue-300 focus:outline-none dark:text-gray-200 dark:placeholder-gray-500
 						{writingState === 'revealed'
-            ? 'border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900'
-            : 'border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-800'}"
+            ? 'border-gray-200 bg-gray-50 dark:border-gray-600 dark:bg-gray-900'
+            : 'border-gray-300 bg-white dark:border-gray-600 dark:bg-indigo-950/60'}"
         ></textarea>
 
         <div class="mt-1 flex items-center justify-between">

@@ -182,7 +182,7 @@
     <!-- ── Passage ───────────────────────────────────────────────────────── -->
     {#if currentPassage}
       <div
-        class="mb-6 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+        class="mb-6 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
       >
         {#if currentPassage.imageUrl}
           <img
@@ -205,7 +205,7 @@
     <!-- ── Question ──────────────────────────────────────────────────────── -->
     {#if currentQuestion}
       <div
-        class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+        class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
       >
         <p class="mb-4 text-base font-semibold text-gray-900 dark:text-white">
           {currentQuestion.prompt}
@@ -306,7 +306,7 @@
       <div class="mt-8 space-y-4 text-left">
         {#each results as result, i (result.passageId)}
           <div
-            class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800"
+            class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-indigo-950/60"
           >
             <p class="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {i + 1}. {result.title}
