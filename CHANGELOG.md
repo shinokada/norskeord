@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.11.2
+
+### Patch Changes
+
+- fix: vocab-a2.json
+
 ## 2.11.1
 
 ### Patch Changes
