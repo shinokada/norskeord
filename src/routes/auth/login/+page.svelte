@@ -86,7 +86,7 @@
       <input type="hidden" name="next" value={page.url.searchParams.get('next') ?? '/'} />
 
       <div
-        class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800"
+        class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-indigo-950/60"
       >
         <label
           for="email"

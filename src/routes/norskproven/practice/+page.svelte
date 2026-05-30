@@ -94,7 +94,9 @@
         <!-- Type cards -->
         <div class="space-y-3">
           {#each types as type (type.key)}
-            <div class="rounded-2xl border {color.border} bg-white p-4 shadow-sm dark:bg-gray-800">
+            <div
+              class="rounded-2xl border {color.border} bg-white p-4 shadow-sm dark:bg-indigo-950/60"
+            >
               <div class="flex items-center gap-4">
                 <!-- Icon -->
                 <span
@@ -108,7 +110,7 @@
                   <p class="font-semibold text-gray-800 dark:text-gray-100">
                     {type.labelFn()}
                   </p>
-                  <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">
+                  <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-400">
                     {type.descFn()}
                   </p>
                 </div>
