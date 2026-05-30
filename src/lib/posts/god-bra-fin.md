@@ -4,7 +4,7 @@ description: "Norwegian has several words for 'good' — and choosing the wrong 
 slug: god-bra-fin
 cefr: A2
 publishedAt: 2026-05-27
-tags: [adjectives, comparison, vocabulary]
+tags: [adjectives, vocabulary]
 ---
 
 > **TL;DR:** English uses "good" for almost everything. Norwegian makes you choose: _god_ (quality/taste), _bra_ (general positive), _fin_ (nice/pretty), _flink_ (skilled).

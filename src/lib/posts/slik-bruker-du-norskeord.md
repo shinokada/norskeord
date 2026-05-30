@@ -5,7 +5,7 @@ slug: slik-bruker-du-norskeord
 cefr: [A1, A2, B1, B2]
 type: guide
 publishedAt: 2026-05-22
-tags: [studietips, læring, spaced-repetition]
+tags: [study-tips]
 ---
 
 _English version below._

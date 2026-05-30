@@ -1,5 +1,31 @@
 You are able to use the Svelte MCP server, where you have access to comprehensive Svelte 5 and SvelteKit documentation. Here's how to use the available tools effectively:
 
+## Blog post tags — canonical taxonomy
+
+All posts in `src/lib/posts/` must use **only** the following 9 tags in their frontmatter.
+Do not invent new tags. Pick the 1–2 that best fit.
+
+| Tag             | Use for                                                         |
+| --------------- | --------------------------------------------------------------- |
+| `adjectives`    | posts about adjective meaning, choice, or nuance                |
+| `adverbs`       | posts about adverb meaning, choice, or nuance                   |
+| `verbs`         | verb meaning, modal verbs, verb conjugation                     |
+| `nouns`         | nouns, professions, compound words, gender                      |
+| `grammar`       | word order, sentence structure, negation, prepositions, clauses |
+| `vocabulary`    | word choice, near-synonyms, nuance between words                |
+| `expressions`   | phrases, idioms, fixed expressions, colloquialisms              |
+| `pronunciation` | spoken vs written register, sounds, rhythm                      |
+| `study-tips`    | learning strategy, app usage guides                             |
+
+**Notes:**
+
+- `comparison` is NOT a tag — almost every post is a comparison, so it adds no value
+- `professions`, `word-order`, `sentence-structure` are NOT tags — use `nouns` and `grammar` instead
+- Guide posts (`type: guide`) typically use `study-tips`
+- Most word-pair posts need just 2 tags: the part-of-speech tag + `vocabulary`
+
+---
+
 ## Available Svelte MCP Tools:
 
 ### 1. list-sections

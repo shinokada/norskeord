@@ -4,7 +4,7 @@ description: 'Nydelig is about how something looks. Herlig is about how it feels
 slug: nydelig-vs-herlig
 cefr: A2
 publishedAt: 2026-05-21
-tags: [adjectives, comparison]
+tags: [adjectives, vocabulary]
 ---
 
 ## Kort forklaring
