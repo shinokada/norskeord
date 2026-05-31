@@ -85,17 +85,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "bidra til",
-    "lemma": "bidra til",
-    "english": "to contribute to",
-    "example": "Alle kan bidra til å gjøre samfunnet bedre på sin egen måte.",
-    "example_english": "Everyone can contribute to making society better in their own way.",
-    "definition": "Å hjelpe til med noe eller være en del av at noe skjer.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "bli bevisst på",
     "lemma": "bli bevisst på",
     "english": "to become aware of, to grow conscious of",
@@ -569,17 +558,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "dukke opp",
-    "lemma": "dukke opp",
-    "english": "to show up / to appear",
-    "example": "Han dukket opp på møtet uten å ha varslet noen på forhånd.",
-    "example_english": "He showed up at the meeting without having warned anyone in advance.",
-    "definition": "Komme eller vise seg på et sted, ofte uventet eller plutselig.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "elektroniske spor",
     "lemma": "elektroniske spor",
     "english": "electronic traces / digital footprints",
@@ -715,17 +693,6 @@
     "example": "Regjeringen har bestemt seg for å fase ut bruken av fossilt brensel innen 2040.",
     "example_english": "The government has decided to phase out the use of fossil fuels by 2040.",
     "definition": "Å gradvis avslutte eller stoppe bruken av noe over en bestemt tidsperiode.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "finne tonen",
-    "lemma": "finne tonen",
-    "english": "to hit it off / to find common ground",
-    "example": "De to lederne fant tonen raskt og ble enige om en felles løsning.",
-    "example_english": "The two leaders hit it off quickly and agreed on a common solution.",
-    "definition": "Klare å kommunisere godt med noen og få et naturlig og godt forhold til dem.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -924,17 +891,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "få til",
-    "lemma": "få til",
-    "english": "to manage to do / to achieve",
-    "example": "Hun jobbet hardt og fikk til slutt til å fullføre utdannelsen.",
-    "example_english": "She worked hard and finally managed to complete her education.",
-    "definition": "Lykkes med noe etter å ha prøvd eller arbeidet med det.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "få til å gå rundt",
     "lemma": "få til å gå rundt",
     "english": "to make ends meet",
@@ -974,17 +930,6 @@
     "example": "Legen lovte å følge opp pasienten etter operasjonen for å sjekke at alt gikk bra.",
     "example_english": "The doctor promised to follow up with the patient after the operation to check that everything was going well.",
     "definition": "Å sjekke videre eller ta nye steg etter at noe er startet eller sagt.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "føre med seg",
-    "lemma": "føre med seg",
-    "english": "to lead to / to bring about / to entail",
-    "example": "Klimaendringene fører med seg store utfordringer for mange land i verden.",
-    "example_english": "Climate change brings about major challenges for many countries in the world.",
-    "definition": "Å være årsak til at noe annet skjer eller oppstår som et resultat.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1116,17 +1061,6 @@
     "example": "Selskapet har valgt å gå bort fra den gamle strategien.",
     "example_english": "The company has chosen to move away from the old strategy.",
     "definition": "Å velge å ikke lenger følge eller bruke noe man tidligere gjorde eller trodde på.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "gå glipp av",
-    "lemma": "gå glipp av",
-    "english": "to miss out on",
-    "example": "Hun gikk glipp av det viktige møtet fordi toget var forsinket.",
-    "example_english": "She missed out on the important meeting because the train was delayed.",
-    "definition": "Å ikke få oppleve eller delta i noe man ønsket eller burde ha vært med på.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1565,17 +1499,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "i likhet med",
-    "lemma": "i likhet med",
-    "english": "like / similarly to / in common with",
-    "example": "I likhet med mange andre nordmenn liker hun å gå på ski om vinteren.",
-    "example_english": "Like many other Norwegians, she enjoys skiing in the winter.",
-    "definition": "Brukes for å vise at to ting eller personer er like eller har noe felles.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "i motsetning til",
     "lemma": "i motsetning til",
     "english": "in contrast to, unlike, as opposed to",
@@ -1601,17 +1524,6 @@
     "english": "in principle, theoretically",
     "example": "I prinsippet er alle like for loven, men i praksis er det ikke alltid tilfelle.",
     "example_english": "In principle everyone is equal before the law, but in practice that is not always the case.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "i regi av",
-    "lemma": "i regi av",
-    "english": "under the auspices of / organized by",
-    "example": "Konserten ble arrangert i regi av den lokale kulturforeningen.",
-    "example_english": "The concert was organized by the local cultural association.",
-    "definition": "Brukes for å si hvem som er ansvarlig for å organisere noe.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1881,17 +1793,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "komme til bunns i",
-    "lemma": "komme til bunns i",
-    "english": "to get to the bottom of / to find out the truth about",
-    "example": "Politiet jobbet hardt for å komme til bunns i saken så raskt som mulig.",
-    "example_english": "The police worked hard to get to the bottom of the case as quickly as possible.",
-    "definition": "Å finne ut hele sannheten om noe ved å undersøke det grundig.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "komme til orde",
     "lemma": "komme til orde",
     "english": "to get a word in / to get the chance to speak",
@@ -2017,17 +1918,6 @@
     "example": "Svindleren lurte trill rundt mange eldre mennesker med det falske tilbudet.",
     "example_english": "The scammer completely fooled many elderly people with the fake offer.",
     "definition": "Å lure noen fullstendig slik at de ikke oppdager at de blir bedratt.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "lønne seg",
-    "lemma": "lønne seg",
-    "english": "to be worth it, to pay off",
-    "example": "Det lønner seg å lære seg et nytt språk hvis du ønsker bedre jobbmuligheter.",
-    "example_english": "It pays off to learn a new language if you want better job opportunities.",
-    "definition": "Å gi et positivt resultat eller fordel som gjør innsatsen verdt det.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -2198,17 +2088,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "nærme seg",
-    "lemma": "nærme seg",
-    "english": "to approach, to get closer to",
-    "example": "Forhandlingene nærmer seg en løsning etter flere uker med intense diskusjoner.",
-    "example_english": "The negotiations are approaching a solution after several weeks of intense discussions.",
-    "definition": "Å komme gradvis nærmere noe eller noen, i tid eller rom.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "offentlig forvaltning",
     "lemma": "offentlig forvaltning",
     "english": "public administration",
@@ -2334,17 +2213,6 @@
     "english": "at the expense of",
     "example": "Mange steder prioriteres økonomisk vekst på bekostning av miljø og sosial rettferdighet.",
     "example_english": "In many places economic growth is prioritised at the expense of the environment and social justice.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "på egen hånd",
-    "lemma": "på egen hånd",
-    "english": "on one's own, independently",
-    "example": "Hun klarte å løse problemet på egen hånd uten hjelp fra noen.",
-    "example_english": "She managed to solve the problem on her own without any help.",
-    "definition": "Gjøre noe alene, uten hjelp eller støtte fra andre.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -2586,17 +2454,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "sette pris på",
-    "lemma": "sette pris på",
-    "english": "to appreciate, to value",
-    "example": "Jeg setter virkelig pris på at du tok deg tid til å hjelpe meg.",
-    "example_english": "I really appreciate that you took the time to help me.",
-    "definition": "Å føle takknemlighet eller glede over noe som andre gjør eller gir deg.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "sette seg inn i",
     "lemma": "sette seg inn i",
     "english": "to familiarize oneself with, to study thoroughly",
@@ -2755,17 +2612,6 @@
     "example": "Den unge kunstneren slo endelig gjennom med sin andre plate.",
     "example_english": "The young artist finally broke through with her second album.",
     "definition": "Å oppnå suksess og bli kjent eller anerkjent etter å ha prøvd lenge.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "slå seg ned",
-    "lemma": "slå seg ned",
-    "english": "to settle down, to settle (in a place)",
-    "example": "Etter mange år i utlandet bestemte han seg for å slå seg ned i hjembyen sin.",
-    "example_english": "After many years abroad, he decided to settle down in his hometown.",
-    "definition": "Å velge et fast sted å bo og begynne et stabilt liv der.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -3005,17 +2851,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "sørge for",
-    "lemma": "sørge for",
-    "english": "to make sure / to ensure / to take care of",
-    "example": "Myndighetene må sørge for at alle barn får tilgang til god utdanning.",
-    "example_english": "The authorities must ensure that all children have access to a good education.",
-    "definition": "Gjøre det som er nødvendig for at noe skal skje eller fungere på riktig måte.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
     "norsk": "ta av",
     "lemma": "ta av",
     "english": "to take off / to boom / to skyrocket",
@@ -3055,17 +2890,6 @@
     "example": "Debatten tok fyr da politikeren kom med en kontroversiell uttalelse.",
     "example_english": "The debate caught fire when the politician made a controversial statement.",
     "definition": "Begynne å brenne, eller plutselig bli veldig intens og engasjert.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "ta mot til seg",
-    "lemma": "ta mot til seg",
-    "english": "to pluck up courage; to gather one's courage",
-    "example": "Han måtte ta mot til seg før han kunne holde tale foran hele forsamlingen.",
-    "example_english": "He had to pluck up courage before he could give a speech in front of the entire audience.",
-    "definition": "Samle styrke og mot for å gjøre noe som føles vanskelig eller skummelt.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -3597,17 +3421,6 @@
     "example": "Pasientene har rett til å være opplyst om sin egen helsetilstand.",
     "example_english": "Patients have the right to be informed about their own health condition.",
     "definition": "Å ha mottatt nødvendig informasjon om noe viktig.",
-    "level": "B2",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "norsk": "være opptatt av",
-    "lemma": "være opptatt av",
-    "english": "to be preoccupied with / to care about",
-    "example": "Han er svært opptatt av å beskytte miljøet for fremtidige generasjoner.",
-    "example_english": "He is very concerned with protecting the environment for future generations.",
-    "definition": "Å bry seg mye om noe eller tenke mye på noe bestemt.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"

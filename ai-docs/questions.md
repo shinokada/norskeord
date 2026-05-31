@@ -6,6 +6,8 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 ---
 
+I also want to order src/lib/vocab-b2.json according to category field and merge vocab-b2-new.json to vocab-b2.json file according to category field.
+
 ## Solved
 
 ---

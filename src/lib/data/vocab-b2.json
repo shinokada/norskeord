@@ -605,17 +605,6 @@
     "part": "verb"
   },
   {
-    "norsk": "sikre",
-    "lemma": "sikre",
-    "english": "to secure; to ensure",
-    "example": "Regjeringen jobber for å sikre at alle innbyggere har tilgang til god helsehjelp.",
-    "example_english": "The government is working to ensure that all citizens have access to good healthcare.",
-    "definition": "Å sørge for at noe skjer eller at noe er trygt og beskyttet.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "verb"
-  },
-  {
     "norsk": "sjenerøsitet/en",
     "lemma": "sjenerøsitet",
     "english": "a generosity",
@@ -669,17 +658,6 @@
     "level": "B2",
     "category": "abstract-nouns",
     "part": "noun"
-  },
-  {
-    "norsk": "tilgjengelig",
-    "lemma": "tilgjengelig",
-    "english": "available, accessible",
-    "example": "Informasjonen er tilgjengelig for alle på kommunens nettside.",
-    "example_english": "The information is available to everyone on the municipality's website.",
-    "definition": "Noe man kan få tak i eller bruke. Lett å nå eller finne.",
-    "level": "B2",
-    "category": "abstract-nouns",
-    "part": "adjective"
   },
   {
     "norsk": "tomrom/met",
@@ -768,17 +746,6 @@
     "level": "B2",
     "category": "abstract-nouns",
     "part": "noun"
-  },
-  {
-    "norsk": "absolutt",
-    "lemma": "absolutt",
-    "english": "absolute, absolutely",
-    "example": "Det er absolutt nødvendig at vi handler raskt for å løse klimakrisen.",
-    "example_english": "It is absolutely necessary that we act quickly to solve the climate crisis.",
-    "definition": "Noe som er helt og fullstendig, uten unntak eller tvil.",
-    "level": "B2",
-    "category": "academic-language",
-    "part": "adverb"
   },
   {
     "norsk": "aspekt/et",
@@ -1496,17 +1463,6 @@
     "part": "adjective"
   },
   {
-    "norsk": "ambisiøs",
-    "lemma": "ambisiøs",
-    "english": "ambitious",
-    "example": "Planen er ambisiøs, men gjennomførbar.",
-    "example_english": "The plan is ambitious but feasible.",
-    "definition": "Noe eller noen med store mål og sterk vilje til å oppnå noe vanskelig.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
     "norsk": "avansert",
     "lemma": "avansert",
     "english": "advanced",
@@ -1639,17 +1595,6 @@
     "part": "adverb"
   },
   {
-    "norsk": "enorm",
-    "lemma": "enorm",
-    "english": "enormous, huge",
-    "example": "Den nye teknologien har hatt en enorm innvirkning på måten vi kommuniserer på.",
-    "example_english": "The new technology has had an enormous impact on the way we communicate.",
-    "definition": "Noe som er mye større eller sterkere enn det vanlige.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
     "norsk": "ettertraktet",
     "lemma": "ettertraktet",
     "english": "sought-after / in demand",
@@ -1689,17 +1634,6 @@
     "example": "En feil i beregningene kunne få fatale konsekvenser for hele prosjektet.",
     "example_english": "An error in the calculations could have fatal consequences for the entire project.",
     "definition": "Noe som fører til en svært alvorlig eller dødelig utgang.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
-    "norsk": "fet",
-    "lemma": "fet",
-    "english": "fat, bold, greasy",
-    "example": "Teksten var skrevet med fet skrift for å fremheve de viktigste punktene.",
-    "example_english": "The text was written in bold to highlight the most important points.",
-    "definition": "Noe som inneholder mye fett, eller noe som er tykt og fremhevet, for eksempel tekst.",
     "level": "B2",
     "category": "advanced-adjectives",
     "part": "adjective"
@@ -1815,17 +1749,6 @@
     "part": "adjective"
   },
   {
-    "norsk": "grunnleggende",
-    "lemma": "grunnleggende",
-    "english": "fundamental / basic",
-    "example": "Dette er et grunnleggende prinsipp i demokratiet.",
-    "example_english": "This is a fundamental principle of democracy.",
-    "definition": "Noe som er det viktigste og mest nødvendige, og som alt annet bygger på.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
     "norsk": "grunnløs",
     "lemma": "grunnløs",
     "english": "unfounded, groundless, baseless",
@@ -1843,17 +1766,6 @@
     "example": "Det oppsto en heftig diskusjon i parlamentet om den nye skattereformen.",
     "example_english": "A fierce discussion broke out in parliament about the new tax reform.",
     "definition": "Noe som er veldig sterkt, intenst eller voldsomt i sin form eller uttrykk.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
-    "norsk": "hektisk",
-    "lemma": "hektisk",
-    "english": "hectic, frantic, frenzied",
-    "example": "Den siste uken før innleveringsfristen var ekstremt hektisk for alle studentene.",
-    "example_english": "The last week before the deadline was extremely hectic for all the students.",
-    "definition": "En situasjon eller periode som er full av aktivitet og stress, med lite tid til hvile.",
     "level": "B2",
     "category": "advanced-adjectives",
     "part": "adjective"
@@ -1887,17 +1799,6 @@
     "example": "Det var hårreisende å høre om de dårlige forholdene på arbeidsplassen.",
     "example_english": "It was appalling to hear about the poor conditions at the workplace.",
     "definition": "Noe som er så skremmende eller uakseptabelt at det gjør deg sjokkert.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
-    "norsk": "ideell",
-    "lemma": "ideell",
-    "english": "ideal / perfect",
-    "example": "Dette er en ideell mulighet for deg som ønsker å jobbe med barn.",
-    "example_english": "This is an ideal opportunity for someone who wants to work with children.",
-    "definition": "Noe som passer perfekt eller er akkurat slik det burde være.",
     "level": "B2",
     "category": "advanced-adjectives",
     "part": "adjective"
@@ -2140,17 +2041,6 @@
     "example": "Forsøket hans på å unnskylde seg virket bare patetisk og uoppriktig.",
     "example_english": "His attempt to apologize just seemed pathetic and insincere.",
     "definition": "Noe som er trist eller svakt på en måte som gjør at folk mister respekten.",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
-    "norsk": "skeptisk",
-    "lemma": "skeptisk",
-    "english": "skeptical",
-    "example": "Hun var skeptisk til de nye forslagene og ønsket mer dokumentasjon før hun tok stilling.",
-    "example_english": "She was skeptical about the new proposals and wanted more documentation before taking a position.",
-    "definition": "Usikker på om noe er sant eller bra, og ikke lett overbevist uten gode grunner.",
     "level": "B2",
     "category": "advanced-adjectives",
     "part": "adjective"
@@ -2464,17 +2354,6 @@
     "part": "verb"
   },
   {
-    "norsk": "danne",
-    "lemma": "danne",
-    "english": "to form, to create, to constitute",
-    "example": "De tre partiene bestemte seg for å danne en koalisjonsregjering etter valget.",
-    "example_english": "The three parties decided to form a coalition government after the election.",
-    "definition": "Å lage eller bygge opp noe nytt, for eksempel en gruppe, en organisasjon eller en form.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
     "norsk": "deale",
     "lemma": "deale",
     "english": "to deal (with), to handle, to cope",
@@ -2684,28 +2563,6 @@
     "part": "verb"
   },
   {
-    "norsk": "stirre",
-    "lemma": "stirre",
-    "english": "to stare",
-    "example": "Han stirret ut av vinduet uten å tenke på noe bestemt mens toget kjørte gjennom skogen.",
-    "example_english": "He stared out of the window without thinking about anything in particular as the train drove through the forest.",
-    "definition": "Å se lenge og intenst på noe eller noen uten å flytte blikket.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
-    "norsk": "streve",
-    "lemma": "streve",
-    "english": "to struggle / to strive",
-    "example": "Mange studenter strever med å kombinere jobb og studier.",
-    "example_english": "Many students struggle to combine work and studies.",
-    "definition": "Å ha det vanskelig med noe, eller jobbe hardt for å klare noe.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
     "norsk": "supplere",
     "lemma": "supplere",
     "english": "to supplement / to complement",
@@ -2728,34 +2585,12 @@
     "part": "verb"
   },
   {
-    "norsk": "svekke",
-    "lemma": "svekke",
-    "english": "to weaken",
-    "example": "Skandalen bidro til å svekke partiets troverdighet i velgernes øyne.",
-    "example_english": "The scandal contributed to weakening the party's credibility in the eyes of voters.",
-    "definition": "Å gjøre noe eller noen mindre sterkt, effektivt eller troverdig enn før.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
     "norsk": "traske",
     "lemma": "traske",
     "english": "to trudge, to plod",
     "example": "Vi trasket gjennom den dype snøen i over en time før vi nådde hytta.",
     "example_english": "We trudged through the deep snow for over an hour before reaching the cabin.",
     "definition": "Å gå sakte og tungt, ofte fordi man er sliten eller veien er vanskelig.",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
-    "norsk": "tåle",
-    "lemma": "tåle",
-    "english": "to tolerate, to endure, to withstand",
-    "example": "Hun tålte ikke urettferdighet og sa alltid ifra når noe var galt.",
-    "example_english": "She could not tolerate injustice and always spoke up when something was wrong.",
-    "definition": "Å klare å håndtere noe vanskelig, smertefullt eller ubehagelig uten å gi opp.",
     "level": "B2",
     "category": "advanced-verbs",
     "part": "verb"
@@ -4807,17 +4642,6 @@
     "part": "verb"
   },
   {
-    "norsk": "dugnad",
-    "lemma": "dugnad",
-    "english": "communal voluntary work",
-    "example": "Dugnad er en norsk tradisjon med kollektiv innsats.",
-    "example_english": "Dugnad is a Norwegian tradition of collective effort.",
-    "definition": "Når naboer eller en gruppe mennesker møtes frivillig for å gjøre et felles arbeid sammen, uten å få betalt.",
-    "level": "B2",
-    "category": "culture",
-    "part": "noun"
-  },
-  {
     "norsk": "dugnadsånd/en",
     "lemma": "dugnadsånd",
     "english": "the spirit of voluntary communal work, community spirit",
@@ -5379,56 +5203,12 @@
     "part": "adverb"
   },
   {
-    "norsk": "dessuten",
-    "lemma": "dessuten",
-    "english": "furthermore / moreover",
-    "example": "Dessuten er kostnadene for høye.",
-    "example_english": "Furthermore, the costs are too high.",
-    "definition": "Brukes for å legge til enda et argument eller en grunn som støtter det man sier.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "adverb"
-  },
-  {
     "norsk": "det vil si",
     "lemma": "det vil si",
     "english": "that is to say / i.e.",
     "example": "Det vil si at vi starter på mandag.",
     "example_english": "That is to say, we start on Monday.",
     "definition": "Brukes når man forklarer eller presiserer hva man mener med det man nettopp sa.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "phrase"
-  },
-  {
-    "norsk": "egentlig",
-    "lemma": "egentlig",
-    "english": "actually, really, in fact",
-    "example": "Hva mener du egentlig med den kommentaren?",
-    "example_english": "What do you actually mean by that comment?",
-    "definition": "Brukes for å understreke det virkelige eller sanne i en situasjon.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "adverb"
-  },
-  {
-    "norsk": "endelig",
-    "lemma": "endelig",
-    "english": "finally, at last",
-    "example": "Etter mange års forskning har forskerne endelig funnet en mulig vaksine mot sykdommen.",
-    "example_english": "After many years of research, scientists have finally found a possible vaccine against the disease.",
-    "definition": "Noe som skjer etter lang tid eller som avslutter noe for godt.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "adverb"
-  },
-  {
-    "norsk": "for eksempel",
-    "lemma": "for eksempel",
-    "english": "for example",
-    "example": "For eksempel kan du bruke denne metoden.",
-    "example_english": "For example, you can use this method.",
-    "definition": "Brukes når man gir et konkret eksempel for å forklare eller vise noe bedre.",
     "level": "B2",
     "category": "discourse-markers",
     "part": "phrase"
@@ -5542,28 +5322,6 @@
     "level": "B2",
     "category": "discourse-markers",
     "part": "phrase"
-  },
-  {
-    "norsk": "imidlertid",
-    "lemma": "imidlertid",
-    "english": "however",
-    "example": "Imidlertid er det ikke så enkelt.",
-    "example_english": "However, it is not that simple.",
-    "definition": "Brukes for å si noe som er annerledes eller motsatt av det man akkurat har sagt.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "adverb"
-  },
-  {
-    "norsk": "knapt",
-    "lemma": "knapt",
-    "english": "barely / hardly / scarcely",
-    "example": "Hun hadde knapt sovet da alarmen ringte om morgenen.",
-    "example_english": "She had barely slept when the alarm went off in the morning.",
-    "definition": "Nesten ikke, eller akkurat nok til å klare det.",
-    "level": "B2",
-    "category": "discourse-markers",
-    "part": "adverb"
   },
   {
     "norsk": "kort sagt",
@@ -6303,17 +6061,6 @@
     "part": "verb"
   },
   {
-    "norsk": "øke",
-    "lemma": "øke",
-    "english": "to increase / to grow",
-    "example": "Prisene på boliger har økt kraftig i de store byene de siste årene.",
-    "example_english": "Housing prices have increased sharply in major cities in recent years.",
-    "definition": "Bli større, mer eller høyere enn det var før.",
-    "level": "B2",
-    "category": "economics",
-    "part": "verb"
-  },
-  {
     "norsk": "akademisk integritet",
     "lemma": "akademisk integritet",
     "english": "academic integrity",
@@ -6853,28 +6600,6 @@
     "part": "adjective"
   },
   {
-    "norsk": "berøre",
-    "lemma": "berøre",
-    "english": "to touch, to affect, to concern",
-    "example": "Historien i filmen berørte mange tilskuere og skapte sterk diskusjon etterpå.",
-    "example_english": "The story in the film touched many viewers and sparked a strong discussion afterwards.",
-    "definition": "Å påvirke noen følelsesmessig, eller å ha kontakt med noe fysisk.",
-    "level": "B2",
-    "category": "emotions",
-    "part": "verb"
-  },
-  {
-    "norsk": "beundring",
-    "lemma": "beundring",
-    "english": "admiration",
-    "example": "Jeg har stor beundring for hennes mot.",
-    "example_english": "I have great admiration for her courage.",
-    "definition": "En varm, positiv følelse man får når man synes noen eller noe er veldig imponerende eller flott.",
-    "level": "B2",
-    "category": "emotions",
-    "part": "noun"
-  },
-  {
     "norsk": "bitterhet",
     "lemma": "bitterhet",
     "english": "bitterness",
@@ -6974,17 +6699,6 @@
     "part": "noun"
   },
   {
-    "norsk": "fortvilet",
-    "lemma": "fortvilet",
-    "english": "desperate / distressed",
-    "example": "Han så fortvilet ut da han hørte at han hadde mislyktes på eksamen.",
-    "example_english": "He looked desperate when he heard that he had failed the exam.",
-    "definition": "Veldig trist og uten håp, ofte fordi noe er veldig vanskelig eller ille.",
-    "level": "B2",
-    "category": "emotions",
-    "part": "adjective"
-  },
-  {
     "norsk": "frustrasjon",
     "lemma": "frustrasjon",
     "english": "frustration",
@@ -6994,17 +6708,6 @@
     "level": "B2",
     "category": "emotions",
     "part": "noun"
-  },
-  {
-    "norsk": "frustrert",
-    "lemma": "frustrert",
-    "english": "frustrated",
-    "example": "Han følte seg frustrert over at ingen lyttet til ideene hans.",
-    "example_english": "He felt frustrated that nobody listened to his ideas.",
-    "definition": "En følelse av irritasjon og motløshet når noe ikke går som man ønsker.",
-    "level": "B2",
-    "category": "emotions",
-    "part": "adjective"
   },
   {
     "norsk": "frykte",
@@ -7299,17 +7002,6 @@
     "example": "Sjalusi kan ødelegge et godt forhold.",
     "example_english": "Jealousy can destroy a good relationship.",
     "definition": "En ubehagelig følelse når man er redd for å miste noen man er glad i til en annen person.",
-    "level": "B2",
-    "category": "emotions",
-    "part": "noun"
-  },
-  {
-    "norsk": "skam",
-    "lemma": "skam",
-    "english": "shame",
-    "example": "Hun følte dyp skam over det som hadde skjedd.",
-    "example_english": "She felt deep shame about what had happened.",
-    "definition": "En sterk, vond følelse av at man har gjort noe galt eller pinlig, og ikke vil at andre skal vite det.",
     "level": "B2",
     "category": "emotions",
     "part": "noun"
@@ -8800,17 +8492,6 @@
     "part": "adjective"
   },
   {
-    "norsk": "global",
-    "lemma": "global",
-    "english": "global, worldwide",
-    "example": "Klimaendringene er et globalt problem som krever internasjonalt samarbeid.",
-    "example_english": "Climate change is a global problem that requires international cooperation.",
-    "definition": "Noe som gjelder eller påvirker hele verden.",
-    "level": "B2",
-    "category": "global-issues",
-    "part": "adjective"
-  },
-  {
     "norsk": "global styring",
     "lemma": "global styring",
     "english": "global governance",
@@ -9152,17 +8833,6 @@
     "part": "noun"
   },
   {
-    "norsk": "industrialisering",
-    "lemma": "industrialisering",
-    "english": "industrialisation",
-    "example": "Industrialisering forandret samfunnsstrukturen.",
-    "example_english": "Industrialisation changed the structure of society.",
-    "definition": "Prosessen der et samfunn går fra å bruke håndarbeid til å bruke maskiner og fabrikker.",
-    "level": "B2",
-    "category": "history",
-    "part": "noun"
-  },
-  {
     "norsk": "kolonisering",
     "lemma": "kolonisering",
     "english": "colonisation",
@@ -9257,17 +8927,6 @@
     "example": "Slaveriet ble offisielt avskaffet i USA etter borgerkrigen på 1860-tallet.",
     "example_english": "Slavery was officially abolished in the USA after the Civil War in the 1860s.",
     "definition": "Et system der mennesker eies av andre og tvinges til å arbeide uten frihet.",
-    "level": "B2",
-    "category": "history",
-    "part": "noun"
-  },
-  {
-    "norsk": "union",
-    "lemma": "union",
-    "english": "a union",
-    "example": "Sverige og Norge var i union mellom 1814 og 1905.",
-    "example_english": "Sweden and Norway were in a union between 1814 and 1905.",
-    "definition": "En offisiell politisk forbindelse mellom to eller flere land som deler visse felles funksjoner.",
     "level": "B2",
     "category": "history",
     "part": "noun"
@@ -9568,17 +9227,6 @@
     "level": "B2",
     "category": "idioms",
     "part": "phrase"
-  },
-  {
-    "norsk": "beherske",
-    "lemma": "beherske",
-    "english": "to master, to control, to have command of",
-    "example": "Han behersker tre språk flytende og lærer nå sitt fjerde.",
-    "example_english": "He masters three languages fluently and is now learning his fourth.",
-    "definition": "Å ha god kontroll over noe, for eksempel et språk eller en ferdighet.",
-    "level": "B2",
-    "category": "language",
-    "part": "verb"
   },
   {
     "norsk": "denotasjon",
@@ -10063,17 +9711,6 @@
     "level": "B2",
     "category": "language",
     "part": "noun"
-  },
-  {
-    "norsk": "via",
-    "lemma": "via",
-    "english": "via, through, by way of",
-    "example": "Hun sendte meldingen via e-post i stedet for å ringe direkte.",
-    "example_english": "She sent the message via email instead of calling directly.",
-    "definition": "Gjennom et bestemt sted eller middel for å nå et mål.",
-    "level": "B2",
-    "category": "language",
-    "part": "preposition"
   },
   {
     "norsk": "anke",
@@ -11308,17 +10945,6 @@
     "part": "noun"
   },
   {
-    "norsk": "avsløre",
-    "lemma": "avsløre",
-    "english": "to reveal, to expose, to uncover",
-    "example": "Journalisten klarte å avsløre at politikeren hadde løyet om sine utgifter.",
-    "example_english": "The journalist managed to expose that the politician had lied about his expenses.",
-    "definition": "Å vise eller fortelle noe som tidligere var skjult eller hemmelig.",
-    "level": "B2",
-    "category": "media",
-    "part": "verb"
-  },
-  {
     "norsk": "brukergenerert innhold",
     "lemma": "brukergenerert innhold",
     "english": "user-generated content",
@@ -11605,17 +11231,6 @@
     "part": "noun"
   },
   {
-    "norsk": "framstille",
-    "lemma": "framstille",
-    "english": "to portray / to represent / to produce",
-    "example": "Avisen framstilte politikeren på en negativ måte uten å sjekke fakta.",
-    "example_english": "The newspaper portrayed the politician in a negative way without checking the facts.",
-    "definition": "Å vise eller beskrive noen eller noe på en bestemt måte, eller å lage et produkt.",
-    "level": "B2",
-    "category": "media",
-    "part": "verb"
-  },
-  {
     "norsk": "influencer",
     "lemma": "influencer",
     "english": "an influencer",
@@ -11726,17 +11341,6 @@
     "part": "noun"
   },
   {
-    "norsk": "redaktør",
-    "lemma": "redaktør",
-    "english": "an editor",
-    "example": "Redaktøren bestemte hvilke saker som ble publisert.",
-    "example_english": "The editor decided which stories were published.",
-    "definition": "En person som bestemmer hva som skal trykkes eller publiseres i en avis eller et blad.",
-    "level": "B2",
-    "category": "media",
-    "part": "noun"
-  },
-  {
     "norsk": "sensasjonsjournalistikk",
     "lemma": "sensasjonsjournalistikk",
     "english": "sensationalist journalism",
@@ -11814,17 +11418,6 @@
     "part": "verb"
   },
   {
-    "norsk": "amme",
-    "lemma": "amme",
-    "english": "to breastfeed",
-    "example": "Leger anbefaler at mødre ammer babyen sin i minst seks måneder.",
-    "example_english": "Doctors recommend that mothers breastfeed their baby for at least six months.",
-    "definition": "Når en mor gir barnet sitt melk direkte fra brystet.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "verb"
-  },
-  {
     "norsk": "beruset",
     "lemma": "beruset",
     "english": "intoxicated, drunk, euphoric",
@@ -11897,17 +11490,6 @@
     "example": "Nye legemidler godkjennes av legemiddelverket.",
     "example_english": "New drugs are approved by the medicines authority.",
     "definition": "Et produkt, ofte en tablett eller væske, som brukes for å behandle eller forebygge sykdom.",
-    "level": "B2",
-    "category": "medicine",
-    "part": "noun"
-  },
-  {
-    "norsk": "folkehelse",
-    "lemma": "folkehelse",
-    "english": "public health",
-    "example": "Folkehelsen er bedret de siste tiårene.",
-    "example_english": "Public health has improved over recent decades.",
-    "definition": "Den generelle helsetilstanden til alle menneskene i et land eller samfunn.",
     "level": "B2",
     "category": "medicine",
     "part": "noun"
@@ -12491,17 +12073,6 @@
     "example": "Regjeringen ønsker å avskaffe ordningen med tidligpensjon.",
     "example_english": "The government wants to abolish the scheme for early retirement.",
     "definition": "Å fjerne eller stoppe noe som har eksistert over lang tid, for eksempel en lov eller en ordning.",
-    "level": "B2",
-    "category": "politics",
-    "part": "verb"
-  },
-  {
-    "norsk": "bekjempe",
-    "lemma": "bekjempe",
-    "english": "to combat, to fight against",
-    "example": "Regjeringen har lansert en ny strategi for å bekjempe fattigdom i landet.",
-    "example_english": "The government has launched a new strategy to combat poverty in the country.",
-    "definition": "Å arbeide aktivt mot noe negativt for å stoppe eller redusere det.",
     "level": "B2",
     "category": "politics",
     "part": "verb"
@@ -13145,17 +12716,6 @@
     "part": "noun"
   },
   {
-    "norsk": "utøvende",
-    "lemma": "utøvende",
-    "english": "executive / performing",
-    "example": "Den utøvende makten i Norge ligger hos regjeringen.",
-    "example_english": "The executive power in Norway lies with the government.",
-    "definition": "Noe eller noen som aktivt gjennomfører beslutninger eller oppgaver i praksis.",
-    "level": "B2",
-    "category": "politics",
-    "part": "adjective"
-  },
-  {
     "norsk": "vedta – vedtok – vedtatt",
     "lemma": "vedta",
     "english": "to adopt / to pass (a decision)",
@@ -13514,28 +13074,6 @@
     "example": "Noen mener at overbeskyttende foreldre hindrer barns utvikling.",
     "example_english": "Some believe that overprotective parents hinder children's development.",
     "definition": "Beskriver en person som prøver å beskytte andre mye mer enn det som er nødvendig.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "adjective"
-  },
-  {
-    "norsk": "reflektere",
-    "lemma": "reflektere",
-    "english": "to reflect",
-    "example": "Det er viktig å reflektere over egne handlinger og konsekvensene de kan ha.",
-    "example_english": "It is important to reflect on one's own actions and the consequences they may have.",
-    "definition": "Å tenke nøye og grundig over noe for å forstå det bedre.",
-    "level": "B2",
-    "category": "psychology",
-    "part": "verb"
-  },
-  {
-    "norsk": "reservert",
-    "lemma": "reservert",
-    "english": "reserved",
-    "example": "Han er ganske reservert og snakker ikke mye med folk han ikke kjenner.",
-    "example_english": "He is quite reserved and does not talk much with people he does not know.",
-    "definition": "En person som er stille og forsiktig i sosiale situasjoner og ikke viser følelser lett.",
     "level": "B2",
     "category": "psychology",
     "part": "adjective"
@@ -15235,17 +14773,6 @@
     "part": "noun"
   },
   {
-    "norsk": "rasisme",
-    "lemma": "rasisme",
-    "english": "racism",
-    "example": "Rasisme er forbudt ved norsk lov.",
-    "example_english": "Racism is prohibited by Norwegian law.",
-    "definition": "Når noen behandles dårlig eller urettferdig fordi de har en annen hudfarge eller etnisk bakgrunn.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "noun"
-  },
-  {
     "norsk": "rivalisering",
     "lemma": "rivalisering",
     "english": "rivalry",
@@ -15395,28 +14922,6 @@
     "example": "Han vokste opp i en velstående familie og manglet aldri noe.",
     "example_english": "He grew up in a wealthy family and never lacked for anything.",
     "definition": "En person eller gruppe som har mye penger og lever i god økonomi.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "adjective"
-  },
-  {
-    "norsk": "vold",
-    "lemma": "vold",
-    "english": "violence",
-    "example": "Vold i nære relasjoner er underrapportert.",
-    "example_english": "Domestic violence is underreported.",
-    "definition": "Når noen skader en annen person fysisk eller bruker makt på en farlig og ulovlig måte.",
-    "level": "B2",
-    "category": "social-issues",
-    "part": "noun"
-  },
-  {
-    "norsk": "yrkesaktiv",
-    "lemma": "yrkesaktiv",
-    "english": "employed / economically active",
-    "example": "Det er viktig at yrkesaktive mennesker har gode rettigheter på arbeidsplassen.",
-    "example_english": "It is important that employed people have good rights in the workplace.",
-    "definition": "Som er i arbeid og bidrar til samfunnet gjennom et lønnet yrke.",
     "level": "B2",
     "category": "social-issues",
     "part": "adjective"
