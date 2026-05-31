@@ -32,6 +32,15 @@ python3 scripts/merge_vocab.py --base vocab-b2.json --new vocab-b2-new.json
 python3 scripts/merge_uttrykk.py --base uttrykk-b2.json --new uttrykk-b2-new.json
 ```
 
+## stats
+```
+# same as before — no change
+pnpm stats
+
+# new: summary + per-category breakdown for every level
+pnpm stats -- --detail
+```
+
 ## add-b2-fields.mjs
 
 ```
