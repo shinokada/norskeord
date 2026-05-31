@@ -1,0 +1,2706 @@
+[
+  {
+    "norsk": "absolutt",
+    "lemma": "absolutt"
+  },
+  {
+    "norsk": "akse/n",
+    "lemma": "akse"
+  },
+  {
+    "norsk": "aktivisme/n",
+    "lemma": "aktivisme"
+  },
+  {
+    "norsk": "algoritme/n",
+    "lemma": "algoritme"
+  },
+  {
+    "norsk": "allianse/n",
+    "lemma": "allianse"
+  },
+  {
+    "norsk": "allianse/n",
+    "lemma": "allianse"
+  },
+  {
+    "norsk": "allvitende",
+    "lemma": "allvitende"
+  },
+  {
+    "norsk": "alminnelig",
+    "lemma": "alminnelig"
+  },
+  {
+    "norsk": "ambassadør/en",
+    "lemma": "ambassadør"
+  },
+  {
+    "norsk": "ambisjon/en",
+    "lemma": "ambisjon"
+  },
+  {
+    "norsk": "amme",
+    "lemma": "amme"
+  },
+  {
+    "norsk": "andel/en",
+    "lemma": "andel"
+  },
+  {
+    "norsk": "angst/en",
+    "lemma": "angst"
+  },
+  {
+    "norsk": "angå – angikk – angått",
+    "lemma": "angå"
+  },
+  {
+    "norsk": "anke",
+    "lemma": "anke"
+  },
+  {
+    "norsk": "anklage/n",
+    "lemma": "anklage"
+  },
+  {
+    "norsk": "anledning/en",
+    "lemma": "anledning"
+  },
+  {
+    "norsk": "anmeldelse/n",
+    "lemma": "anmeldelse"
+  },
+  {
+    "norsk": "anse, anså, ansett",
+    "lemma": "anse"
+  },
+  {
+    "norsk": "antologi/en",
+    "lemma": "antologi"
+  },
+  {
+    "norsk": "arbeidskraft/en",
+    "lemma": "arbeidskraft"
+  },
+  {
+    "norsk": "arbeidsmoral/en",
+    "lemma": "arbeidsmoral"
+  },
+  {
+    "norsk": "arbeidsstyrken/n",
+    "lemma": "arbeidsstyrken"
+  },
+  {
+    "norsk": "arbeidsvilkår/et",
+    "lemma": "arbeidsvilkår"
+  },
+  {
+    "norsk": "arve",
+    "lemma": "arve"
+  },
+  {
+    "norsk": "aspekt/et",
+    "lemma": "aspekt"
+  },
+  {
+    "norsk": "autorisert",
+    "lemma": "autorisert"
+  },
+  {
+    "norsk": "autoritet/en",
+    "lemma": "autoritet"
+  },
+  {
+    "norsk": "avansert",
+    "lemma": "avansert"
+  },
+  {
+    "norsk": "avdekke",
+    "lemma": "avdekke"
+  },
+  {
+    "norsk": "avgjøre, avgjorde, avgjort",
+    "lemma": "avgjøre"
+  },
+  {
+    "norsk": "avgjørende",
+    "lemma": "avgjørende"
+  },
+  {
+    "norsk": "avhengighetsskapende",
+    "lemma": "avhengighetsskapende"
+  },
+  {
+    "norsk": "avhør/et",
+    "lemma": "avhør"
+  },
+  {
+    "norsk": "avle",
+    "lemma": "avle"
+  },
+  {
+    "norsk": "avling/en",
+    "lemma": "avling"
+  },
+  {
+    "norsk": "avskaffe",
+    "lemma": "avskaffe"
+  },
+  {
+    "norsk": "avskoging/en",
+    "lemma": "avskoging"
+  },
+  {
+    "norsk": "avskrekke",
+    "lemma": "avskrekke"
+  },
+  {
+    "norsk": "avsløre",
+    "lemma": "avsløre"
+  },
+  {
+    "norsk": "avspasere",
+    "lemma": "avspasere"
+  },
+  {
+    "norsk": "bagatell/en",
+    "lemma": "bagatell"
+  },
+  {
+    "norsk": "bedriten",
+    "lemma": "bedriten"
+  },
+  {
+    "norsk": "begivenhetsrik",
+    "lemma": "begivenhetsrik"
+  },
+  {
+    "norsk": "begrenset",
+    "lemma": "begrenset"
+  },
+  {
+    "norsk": "begrep/et",
+    "lemma": "begrep"
+  },
+  {
+    "norsk": "begrunne",
+    "lemma": "begrunne"
+  },
+  {
+    "norsk": "behagelig",
+    "lemma": "behagelig"
+  },
+  {
+    "norsk": "beherske",
+    "lemma": "beherske"
+  },
+  {
+    "norsk": "bekjempe",
+    "lemma": "bekjempe"
+  },
+  {
+    "norsk": "bekrefte",
+    "lemma": "bekrefte"
+  },
+  {
+    "norsk": "bekreftelse/n",
+    "lemma": "bekreftelse"
+  },
+  {
+    "norsk": "belastende",
+    "lemma": "belastende"
+  },
+  {
+    "norsk": "berike",
+    "lemma": "berike"
+  },
+  {
+    "norsk": "beruset",
+    "lemma": "beruset"
+  },
+  {
+    "norsk": "berøre",
+    "lemma": "berøre"
+  },
+  {
+    "norsk": "berøvelse/n",
+    "lemma": "berøvelse"
+  },
+  {
+    "norsk": "bestis/en",
+    "lemma": "bestis"
+  },
+  {
+    "norsk": "bestå, besto, bestått",
+    "lemma": "bestå"
+  },
+  {
+    "norsk": "betjent/en",
+    "lemma": "betjent"
+  },
+  {
+    "norsk": "betraktelig",
+    "lemma": "betraktelig"
+  },
+  {
+    "norsk": "bevare",
+    "lemma": "bevare"
+  },
+  {
+    "norsk": "bidrag/et",
+    "lemma": "bidrag"
+  },
+  {
+    "norsk": "bidragsyter/en",
+    "lemma": "bidragsyter"
+  },
+  {
+    "norsk": "bistand/en",
+    "lemma": "bistand"
+  },
+  {
+    "norsk": "borettslag/et",
+    "lemma": "borettslag"
+  },
+  {
+    "norsk": "borger/en",
+    "lemma": "borger"
+  },
+  {
+    "norsk": "borgerplikt/en",
+    "lemma": "borgerplikt"
+  },
+  {
+    "norsk": "bransje/n",
+    "lemma": "bransje"
+  },
+  {
+    "norsk": "bredde/n",
+    "lemma": "bredde"
+  },
+  {
+    "norsk": "briljere",
+    "lemma": "briljere"
+  },
+  {
+    "norsk": "buldre",
+    "lemma": "buldre"
+  },
+  {
+    "norsk": "byrde/n",
+    "lemma": "byrde"
+  },
+  {
+    "norsk": "dagligdags",
+    "lemma": "dagligdags"
+  },
+  {
+    "norsk": "danne",
+    "lemma": "danne"
+  },
+  {
+    "norsk": "daværende",
+    "lemma": "daværende"
+  },
+  {
+    "norsk": "deale",
+    "lemma": "deale"
+  },
+  {
+    "norsk": "demonstrant/en",
+    "lemma": "demonstrant"
+  },
+  {
+    "norsk": "detaljstyring/en",
+    "lemma": "detaljstyring"
+  },
+  {
+    "norsk": "diktator/en",
+    "lemma": "diktator"
+  },
+  {
+    "norsk": "direktiv/et",
+    "lemma": "direktiv"
+  },
+  {
+    "norsk": "disiplin/en",
+    "lemma": "disiplin"
+  },
+  {
+    "norsk": "disponere",
+    "lemma": "disponere"
+  },
+  {
+    "norsk": "dom/men",
+    "lemma": "dom"
+  },
+  {
+    "norsk": "domfellelse/n",
+    "lemma": "domfellelse"
+  },
+  {
+    "norsk": "dommedag/en",
+    "lemma": "dommedag"
+  },
+  {
+    "norsk": "doven",
+    "lemma": "doven"
+  },
+  {
+    "norsk": "dugnadsånd/en",
+    "lemma": "dugnadsånd"
+  },
+  {
+    "norsk": "dunke",
+    "lemma": "dunke"
+  },
+  {
+    "norsk": "dyrevelferd/en",
+    "lemma": "dyrevelferd"
+  },
+  {
+    "norsk": "dyster",
+    "lemma": "dyster"
+  },
+  {
+    "norsk": "dømmende",
+    "lemma": "dømmende"
+  },
+  {
+    "norsk": "egentlig",
+    "lemma": "egentlig"
+  },
+  {
+    "norsk": "ekskludering/en",
+    "lemma": "ekskludering"
+  },
+  {
+    "norsk": "eksperiment/et",
+    "lemma": "eksperiment"
+  },
+  {
+    "norsk": "elendig",
+    "lemma": "elendig"
+  },
+  {
+    "norsk": "endelig",
+    "lemma": "endelig"
+  },
+  {
+    "norsk": "endeløst",
+    "lemma": "endeløst"
+  },
+  {
+    "norsk": "enerett/en",
+    "lemma": "enerett"
+  },
+  {
+    "norsk": "engasjert",
+    "lemma": "engasjert"
+  },
+  {
+    "norsk": "enorm",
+    "lemma": "enorm"
+  },
+  {
+    "norsk": "entusiasme/n",
+    "lemma": "entusiasme"
+  },
+  {
+    "norsk": "epoke/n",
+    "lemma": "epoke"
+  },
+  {
+    "norsk": "erobre",
+    "lemma": "erobre"
+  },
+  {
+    "norsk": "erstatning/en",
+    "lemma": "erstatning"
+  },
+  {
+    "norsk": "etablere",
+    "lemma": "etablere"
+  },
+  {
+    "norsk": "etablering/en",
+    "lemma": "etablering"
+  },
+  {
+    "norsk": "etnisitet/en",
+    "lemma": "etnisitet"
+  },
+  {
+    "norsk": "etterforskning/en",
+    "lemma": "etterforskning"
+  },
+  {
+    "norsk": "etterlatte",
+    "lemma": "etterlatte"
+  },
+  {
+    "norsk": "ettertenksomhet/en",
+    "lemma": "ettertenksomhet"
+  },
+  {
+    "norsk": "ettertraktet",
+    "lemma": "ettertraktet"
+  },
+  {
+    "norsk": "eventuell",
+    "lemma": "eventuell"
+  },
+  {
+    "norsk": "faktor/en",
+    "lemma": "faktor"
+  },
+  {
+    "norsk": "fartøy/et",
+    "lemma": "fartøy"
+  },
+  {
+    "norsk": "fascinerende",
+    "lemma": "fascinerende"
+  },
+  {
+    "norsk": "fastsette, fastsatte, fastsatt",
+    "lemma": "fastsette"
+  },
+  {
+    "norsk": "fatal",
+    "lemma": "fatal"
+  },
+  {
+    "norsk": "feide/n",
+    "lemma": "feide"
+  },
+  {
+    "norsk": "fellesinteresse/n",
+    "lemma": "fellesinteresse"
+  },
+  {
+    "norsk": "ferdes",
+    "lemma": "ferdes"
+  },
+  {
+    "norsk": "ferdighet/en",
+    "lemma": "ferdighet"
+  },
+  {
+    "norsk": "fet",
+    "lemma": "fet"
+  },
+  {
+    "norsk": "fiktiv",
+    "lemma": "fiktiv"
+  },
+  {
+    "norsk": "filleriste",
+    "lemma": "filleriste"
+  },
+  {
+    "norsk": "flatt",
+    "lemma": "flatt"
+  },
+  {
+    "norsk": "flopp/en",
+    "lemma": "flopp"
+  },
+  {
+    "norsk": "florlett",
+    "lemma": "florlett"
+  },
+  {
+    "norsk": "flørt/en",
+    "lemma": "flørt"
+  },
+  {
+    "norsk": "folkeavstemning/en",
+    "lemma": "folkeavstemning"
+  },
+  {
+    "norsk": "folkeretten",
+    "lemma": "folkeretten"
+  },
+  {
+    "norsk": "folkestyre/t",
+    "lemma": "folkestyre"
+  },
+  {
+    "norsk": "forbedringspotensial/et",
+    "lemma": "forbedringspotensial"
+  },
+  {
+    "norsk": "forbruker/en",
+    "lemma": "forbruker"
+  },
+  {
+    "norsk": "forbrukersamfunn/et",
+    "lemma": "forbrukersamfunn"
+  },
+  {
+    "norsk": "forbryter/en",
+    "lemma": "forbryter"
+  },
+  {
+    "norsk": "fordelt",
+    "lemma": "fordelt"
+  },
+  {
+    "norsk": "fordom/men",
+    "lemma": "fordom"
+  },
+  {
+    "norsk": "fordypning/en",
+    "lemma": "fordypning"
+  },
+  {
+    "norsk": "forebygge",
+    "lemma": "forebygge"
+  },
+  {
+    "norsk": "forekomst/en",
+    "lemma": "forekomst"
+  },
+  {
+    "norsk": "forferdelig",
+    "lemma": "forferdelig"
+  },
+  {
+    "norsk": "forfølge – forfulgte – forfulgt",
+    "lemma": "forfølge"
+  },
+  {
+    "norsk": "forhåne",
+    "lemma": "forhåne"
+  },
+  {
+    "norsk": "forlik/et",
+    "lemma": "forlik"
+  },
+  {
+    "norsk": "formulering/en",
+    "lemma": "formulering"
+  },
+  {
+    "norsk": "formål/et",
+    "lemma": "formål"
+  },
+  {
+    "norsk": "fornybar",
+    "lemma": "fornybar"
+  },
+  {
+    "norsk": "forsettlig",
+    "lemma": "forsettlig"
+  },
+  {
+    "norsk": "forsvarer/en",
+    "lemma": "forsvarer"
+  },
+  {
+    "norsk": "forsvarsposisjon/en",
+    "lemma": "forsvarsposisjon"
+  },
+  {
+    "norsk": "fortsatt",
+    "lemma": "fortsatt"
+  },
+  {
+    "norsk": "fortvilet",
+    "lemma": "fortvilet"
+  },
+  {
+    "norsk": "forum/fora",
+    "lemma": "forum"
+  },
+  {
+    "norsk": "forutse, forutså, forutsett",
+    "lemma": "forutse"
+  },
+  {
+    "norsk": "forutsetning/en",
+    "lemma": "forutsetning"
+  },
+  {
+    "norsk": "forvente",
+    "lemma": "forvente"
+  },
+  {
+    "norsk": "fossil",
+    "lemma": "fossil"
+  },
+  {
+    "norsk": "framgangsrik",
+    "lemma": "framgangsrik"
+  },
+  {
+    "norsk": "framstille",
+    "lemma": "framstille"
+  },
+  {
+    "norsk": "framtidig",
+    "lemma": "framtidig"
+  },
+  {
+    "norsk": "fredsbevarende",
+    "lemma": "fredsbevarende"
+  },
+  {
+    "norsk": "fremtredende",
+    "lemma": "fremtredende"
+  },
+  {
+    "norsk": "frihetsberøvelse/n",
+    "lemma": "frihetsberøvelse"
+  },
+  {
+    "norsk": "frokostblanding/en",
+    "lemma": "frokostblanding"
+  },
+  {
+    "norsk": "fronte",
+    "lemma": "fronte"
+  },
+  {
+    "norsk": "frustrert",
+    "lemma": "frustrert"
+  },
+  {
+    "norsk": "frykte",
+    "lemma": "frykte"
+  },
+  {
+    "norsk": "fullføre",
+    "lemma": "fullføre"
+  },
+  {
+    "norsk": "fundere",
+    "lemma": "fundere"
+  },
+  {
+    "norsk": "følelsesladd",
+    "lemma": "følelsesladd"
+  },
+  {
+    "norsk": "følgesvenn/en",
+    "lemma": "følgesvenn"
+  },
+  {
+    "norsk": "førerløs",
+    "lemma": "førerløs"
+  },
+  {
+    "norsk": "førstegangsvelger/en",
+    "lemma": "førstegangsvelger"
+  },
+  {
+    "norsk": "fåtall/et",
+    "lemma": "fåtall"
+  },
+  {
+    "norsk": "givende",
+    "lemma": "givende"
+  },
+  {
+    "norsk": "gjenbruk/et",
+    "lemma": "gjenbruk"
+  },
+  {
+    "norsk": "gjenganger/en",
+    "lemma": "gjenganger"
+  },
+  {
+    "norsk": "gjenkjenne",
+    "lemma": "gjenkjenne"
+  },
+  {
+    "norsk": "gjennomsyre",
+    "lemma": "gjennomsyre"
+  },
+  {
+    "norsk": "gjenspeile",
+    "lemma": "gjenspeile"
+  },
+  {
+    "norsk": "global",
+    "lemma": "global"
+  },
+  {
+    "norsk": "globalisering/en",
+    "lemma": "globalisering"
+  },
+  {
+    "norsk": "gode/t",
+    "lemma": "gode"
+  },
+  {
+    "norsk": "gressgrodd",
+    "lemma": "gressgrodd"
+  },
+  {
+    "norsk": "grovt",
+    "lemma": "grovt"
+  },
+  {
+    "norsk": "grunnleggende",
+    "lemma": "grunnleggende"
+  },
+  {
+    "norsk": "grunnløs",
+    "lemma": "grunnløs"
+  },
+  {
+    "norsk": "grunnstein/en",
+    "lemma": "grunnstein"
+  },
+  {
+    "norsk": "grålys/et",
+    "lemma": "grålys"
+  },
+  {
+    "norsk": "gråtkval",
+    "lemma": "gråtkval"
+  },
+  {
+    "norsk": "«gærent»",
+    "lemma": ""
+  },
+  {
+    "norsk": "havne",
+    "lemma": "havne"
+  },
+  {
+    "norsk": "heftig",
+    "lemma": "heftig"
+  },
+  {
+    "norsk": "hektisk",
+    "lemma": "hektisk"
+  },
+  {
+    "norsk": "helsevesen/et",
+    "lemma": "helsevesen"
+  },
+  {
+    "norsk": "hems/en",
+    "lemma": "hems"
+  },
+  {
+    "norsk": "henlegge, henla, henlagt",
+    "lemma": "henlegge"
+  },
+  {
+    "norsk": "henrette",
+    "lemma": "henrette"
+  },
+  {
+    "norsk": "hensikt/en",
+    "lemma": "hensikt"
+  },
+  {
+    "norsk": "herje",
+    "lemma": "herje"
+  },
+  {
+    "norsk": "hersker/en",
+    "lemma": "hersker"
+  },
+  {
+    "norsk": "hets/en",
+    "lemma": "hets"
+  },
+  {
+    "norsk": "hikst/et",
+    "lemma": "hikst"
+  },
+  {
+    "norsk": "hindre",
+    "lemma": "hindre"
+  },
+  {
+    "norsk": "hjemmesitter/en",
+    "lemma": "hjemmesitter"
+  },
+  {
+    "norsk": "holdningsendring/en",
+    "lemma": "holdningsendring"
+  },
+  {
+    "norsk": "horisont/en",
+    "lemma": "horisont"
+  },
+  {
+    "norsk": "hovedparole/n",
+    "lemma": "hovedparole"
+  },
+  {
+    "norsk": "human",
+    "lemma": "human"
+  },
+  {
+    "norsk": "hverdagsmas/et",
+    "lemma": "hverdagsmas"
+  },
+  {
+    "norsk": "hybrid/en",
+    "lemma": "hybrid"
+  },
+  {
+    "norsk": "hyppig",
+    "lemma": "hyppig"
+  },
+  {
+    "norsk": "hån/et",
+    "lemma": "hån"
+  },
+  {
+    "norsk": "håndtere",
+    "lemma": "håndtere"
+  },
+  {
+    "norsk": "hårreisende",
+    "lemma": "hårreisende"
+  },
+  {
+    "norsk": "ideal/et",
+    "lemma": "ideal"
+  },
+  {
+    "norsk": "ideell",
+    "lemma": "ideell"
+  },
+  {
+    "norsk": "idømt",
+    "lemma": "idømt"
+  },
+  {
+    "norsk": "illustrere",
+    "lemma": "illustrere"
+  },
+  {
+    "norsk": "imidlertid",
+    "lemma": "imidlertid"
+  },
+  {
+    "norsk": "implantat/et",
+    "lemma": "implantat"
+  },
+  {
+    "norsk": "inderlig",
+    "lemma": "inderlig"
+  },
+  {
+    "norsk": "influenser/en",
+    "lemma": "influenser"
+  },
+  {
+    "norsk": "innblanding/en",
+    "lemma": "innblanding"
+  },
+  {
+    "norsk": "innebære, innebar, innebåret",
+    "lemma": "innebære"
+  },
+  {
+    "norsk": "innenriksnyhet/en",
+    "lemma": "innenriksnyhet"
+  },
+  {
+    "norsk": "innflytelse/n",
+    "lemma": "innflytelse"
+  },
+  {
+    "norsk": "innføre",
+    "lemma": "innføre"
+  },
+  {
+    "norsk": "inngrep/et",
+    "lemma": "inngrep"
+  },
+  {
+    "norsk": "inngripende",
+    "lemma": "inngripende"
+  },
+  {
+    "norsk": "innmari",
+    "lemma": "innmari"
+  },
+  {
+    "norsk": "innrømme",
+    "lemma": "innrømme"
+  },
+  {
+    "norsk": "innse, innså, innsett",
+    "lemma": "innse"
+  },
+  {
+    "norsk": "innskrenke",
+    "lemma": "innskrenke"
+  },
+  {
+    "norsk": "innskrenking/en",
+    "lemma": "innskrenking"
+  },
+  {
+    "norsk": "inspirere",
+    "lemma": "inspirere"
+  },
+  {
+    "norsk": "inspirert",
+    "lemma": "inspirert"
+  },
+  {
+    "norsk": "intensjon/en",
+    "lemma": "intensjon"
+  },
+  {
+    "norsk": "intern",
+    "lemma": "intern"
+  },
+  {
+    "norsk": "IPCC-rapport/en",
+    "lemma": "IPCC-rapport"
+  },
+  {
+    "norsk": "isolert",
+    "lemma": "isolert"
+  },
+  {
+    "norsk": "ivareta – ivaretok – ivaretatt",
+    "lemma": "ivareta"
+  },
+  {
+    "norsk": "jantelov/en",
+    "lemma": "jantelov"
+  },
+  {
+    "norsk": "joint/en",
+    "lemma": "joint"
+  },
+  {
+    "norsk": "jordsmonn/et",
+    "lemma": "jordsmonn"
+  },
+  {
+    "norsk": "juble",
+    "lemma": "juble"
+  },
+  {
+    "norsk": "jukse",
+    "lemma": "jukse"
+  },
+  {
+    "norsk": "jungeltelegraf/en",
+    "lemma": "jungeltelegraf"
+  },
+  {
+    "norsk": "juridisk",
+    "lemma": "juridisk"
+  },
+  {
+    "norsk": "justismord/et",
+    "lemma": "justismord"
+  },
+  {
+    "norsk": "kakerlakk/en",
+    "lemma": "kakerlakk"
+  },
+  {
+    "norsk": "kandidatur/et",
+    "lemma": "kandidatur"
+  },
+  {
+    "norsk": "kapasitet/en",
+    "lemma": "kapasitet"
+  },
+  {
+    "norsk": "kapitalisme/n",
+    "lemma": "kapitalisme"
+  },
+  {
+    "norsk": "kappe",
+    "lemma": "kappe"
+  },
+  {
+    "norsk": "kartlegge, kartla, kartlagt",
+    "lemma": "kartlegge"
+  },
+  {
+    "norsk": "kausjon/en",
+    "lemma": "kausjon"
+  },
+  {
+    "norsk": "kildehenvisning/en",
+    "lemma": "kildehenvisning"
+  },
+  {
+    "norsk": "kildekritikk/en",
+    "lemma": "kildekritikk"
+  },
+  {
+    "norsk": "kirurgi/en",
+    "lemma": "kirurgi"
+  },
+  {
+    "norsk": "kjendis/en",
+    "lemma": "kjendis"
+  },
+  {
+    "norsk": "kjernesak/en",
+    "lemma": "kjernesak"
+  },
+  {
+    "norsk": "kjip",
+    "lemma": "kjip"
+  },
+  {
+    "norsk": "kjærtegn/et",
+    "lemma": "kjærtegn"
+  },
+  {
+    "norsk": "kjønnsdelt",
+    "lemma": "kjønnsdelt"
+  },
+  {
+    "norsk": "klamt",
+    "lemma": "klamt"
+  },
+  {
+    "norsk": "klasseforstander/en",
+    "lemma": "klasseforstander"
+  },
+  {
+    "norsk": "klimabrøl/et",
+    "lemma": "klimabrøl"
+  },
+  {
+    "norsk": "klimaflyktning/en",
+    "lemma": "klimaflyktning"
+  },
+  {
+    "norsk": "klimafotavtrykk/et",
+    "lemma": "klimafotavtrykk"
+  },
+  {
+    "norsk": "klimakvote/n",
+    "lemma": "klimakvote"
+  },
+  {
+    "norsk": "klimaskeptiker/en",
+    "lemma": "klimaskeptiker"
+  },
+  {
+    "norsk": "klode/n",
+    "lemma": "klode"
+  },
+  {
+    "norsk": "knapphet/en",
+    "lemma": "knapphet"
+  },
+  {
+    "norsk": "knapt",
+    "lemma": "knapt"
+  },
+  {
+    "norsk": "knutepunkt/et",
+    "lemma": "knutepunkt"
+  },
+  {
+    "norsk": "knyttet",
+    "lemma": "knyttet"
+  },
+  {
+    "norsk": "kokain",
+    "lemma": "kokain"
+  },
+  {
+    "norsk": "kollapse",
+    "lemma": "kollapse"
+  },
+  {
+    "norsk": "kommentarfelt/et",
+    "lemma": "kommentarfelt"
+  },
+  {
+    "norsk": "kommersiell",
+    "lemma": "kommersiell"
+  },
+  {
+    "norsk": "konkurransedyktig",
+    "lemma": "konkurransedyktig"
+  },
+  {
+    "norsk": "konkurranseevne/n",
+    "lemma": "konkurranseevne"
+  },
+  {
+    "norsk": "konsoll/en",
+    "lemma": "konsoll"
+  },
+  {
+    "norsk": "konstant",
+    "lemma": "konstant"
+  },
+  {
+    "norsk": "konstitusjonelt",
+    "lemma": "konstitusjonelt"
+  },
+  {
+    "norsk": "kontingent/en",
+    "lemma": "kontingent"
+  },
+  {
+    "norsk": "kontinuerlig",
+    "lemma": "kontinuerlig"
+  },
+  {
+    "norsk": "kontroversiell",
+    "lemma": "kontroversiell"
+  },
+  {
+    "norsk": "korrupsjon/en",
+    "lemma": "korrupsjon"
+  },
+  {
+    "norsk": "kortsiktig",
+    "lemma": "kortsiktig"
+  },
+  {
+    "norsk": "kortvarig",
+    "lemma": "kortvarig"
+  },
+  {
+    "norsk": "kostbar",
+    "lemma": "kostbar"
+  },
+  {
+    "norsk": "kostnad/en",
+    "lemma": "kostnad"
+  },
+  {
+    "norsk": "kreativ",
+    "lemma": "kreativ"
+  },
+  {
+    "norsk": "krenke",
+    "lemma": "krenke"
+  },
+  {
+    "norsk": "kringkaste",
+    "lemma": "kringkaste"
+  },
+  {
+    "norsk": "krisemaksimere",
+    "lemma": "krisemaksimere"
+  },
+  {
+    "norsk": "kriterium, kriteriet",
+    "lemma": "kriterium"
+  },
+  {
+    "norsk": "kronisk",
+    "lemma": "kronisk"
+  },
+  {
+    "norsk": "krumming/en",
+    "lemma": "krumming"
+  },
+  {
+    "norsk": "kvinnebevegelse/n",
+    "lemma": "kvinnebevegelse"
+  },
+  {
+    "norsk": "kvote/n",
+    "lemma": "kvote"
+  },
+  {
+    "norsk": "latterliggjøre",
+    "lemma": "latterliggjøre"
+  },
+  {
+    "norsk": "legning/en",
+    "lemma": "legning"
+  },
+  {
+    "norsk": "lidelse/n",
+    "lemma": "lidelse"
+  },
+  {
+    "norsk": "likeverd",
+    "lemma": "likeverd"
+  },
+  {
+    "norsk": "likeverdig",
+    "lemma": "likeverdig"
+  },
+  {
+    "norsk": "livsmestring/en",
+    "lemma": "livsmestring"
+  },
+  {
+    "norsk": "lokalstoff/et",
+    "lemma": "lokalstoff"
+  },
+  {
+    "norsk": "lovbrudd/et",
+    "lemma": "lovbrudd"
+  },
+  {
+    "norsk": "lovgivende",
+    "lemma": "lovgivende"
+  },
+  {
+    "norsk": "lykkes",
+    "lemma": "lykkes"
+  },
+  {
+    "norsk": "løslate, løslot, løslatt",
+    "lemma": "løslate"
+  },
+  {
+    "norsk": "majoritet/en",
+    "lemma": "majoritet"
+  },
+  {
+    "norsk": "maken",
+    "lemma": "maken"
+  },
+  {
+    "norsk": "makt/en",
+    "lemma": "makt"
+  },
+  {
+    "norsk": "mangelfull",
+    "lemma": "mangelfull"
+  },
+  {
+    "norsk": "manifest/et",
+    "lemma": "manifest"
+  },
+  {
+    "norsk": "manipulere",
+    "lemma": "manipulere"
+  },
+  {
+    "norsk": "maritim",
+    "lemma": "maritim"
+  },
+  {
+    "norsk": "markedsføring/en",
+    "lemma": "markedsføring"
+  },
+  {
+    "norsk": "markedskreftene",
+    "lemma": "markedskreftene"
+  },
+  {
+    "norsk": "markere",
+    "lemma": "markere"
+  },
+  {
+    "norsk": "massiv",
+    "lemma": "massiv"
+  },
+  {
+    "norsk": "matsvinn/et",
+    "lemma": "matsvinn"
+  },
+  {
+    "norsk": "medborgerskap/et",
+    "lemma": "medborgerskap"
+  },
+  {
+    "norsk": "medielandskap/et",
+    "lemma": "medielandskap"
+  },
+  {
+    "norsk": "medskyldig",
+    "lemma": "medskyldig"
+  },
+  {
+    "norsk": "mekle",
+    "lemma": "mekle"
+  },
+  {
+    "norsk": "mektig",
+    "lemma": "mektig"
+  },
+  {
+    "norsk": "«memes»",
+    "lemma": ""
+  },
+  {
+    "norsk": "meningsfylt",
+    "lemma": "meningsfylt"
+  },
+  {
+    "norsk": "meningsmåling/en",
+    "lemma": "meningsmåling"
+  },
+  {
+    "norsk": "merkantil",
+    "lemma": "merkantil"
+  },
+  {
+    "norsk": "middelaldrende",
+    "lemma": "middelaldrende"
+  },
+  {
+    "norsk": "midler",
+    "lemma": "midler"
+  },
+  {
+    "norsk": "midlertidig",
+    "lemma": "midlertidig"
+  },
+  {
+    "norsk": "mildere",
+    "lemma": "mildere"
+  },
+  {
+    "norsk": "miljøbevissthet/en",
+    "lemma": "miljøbevissthet"
+  },
+  {
+    "norsk": "mindreverdig",
+    "lemma": "mindreverdig"
+  },
+  {
+    "norsk": "mistenke",
+    "lemma": "mistenke"
+  },
+  {
+    "norsk": "mistenksomhet/en",
+    "lemma": "mistenksomhet"
+  },
+  {
+    "norsk": "monark/en",
+    "lemma": "monark"
+  },
+  {
+    "norsk": "monarki/et",
+    "lemma": "monarki"
+  },
+  {
+    "norsk": "myndighetene",
+    "lemma": "myndighetene"
+  },
+  {
+    "norsk": "naiv",
+    "lemma": "naiv"
+  },
+  {
+    "norsk": "naturlov/en",
+    "lemma": "naturlov"
+  },
+  {
+    "norsk": "naturreservat/et",
+    "lemma": "naturreservat"
+  },
+  {
+    "norsk": "nedadgående",
+    "lemma": "nedadgående"
+  },
+  {
+    "norsk": "nedfelt",
+    "lemma": "nedfelt"
+  },
+  {
+    "norsk": "nedlatende",
+    "lemma": "nedlatende"
+  },
+  {
+    "norsk": "nedstenging/en",
+    "lemma": "nedstenging"
+  },
+  {
+    "norsk": "nedvurdering/en",
+    "lemma": "nedvurdering"
+  },
+  {
+    "norsk": "nestekjærlighet/en",
+    "lemma": "nestekjærlighet"
+  },
+  {
+    "norsk": "nifs",
+    "lemma": "nifs"
+  },
+  {
+    "norsk": "noensinne",
+    "lemma": "noensinne"
+  },
+  {
+    "norsk": "norm/en",
+    "lemma": "norm"
+  },
+  {
+    "norsk": "nyansert",
+    "lemma": "nyansert"
+  },
+  {
+    "norsk": "nylig",
+    "lemma": "nylig"
+  },
+  {
+    "norsk": "næring/en",
+    "lemma": "næring"
+  },
+  {
+    "norsk": "næringsliv/et",
+    "lemma": "næringsliv"
+  },
+  {
+    "norsk": "nærmest",
+    "lemma": "nærmest"
+  },
+  {
+    "norsk": "nød/en",
+    "lemma": "nød"
+  },
+  {
+    "norsk": "nødløsning/en",
+    "lemma": "nødløsning"
+  },
+  {
+    "norsk": "nøytral",
+    "lemma": "nøytral"
+  },
+  {
+    "norsk": "nåværende",
+    "lemma": "nåværende"
+  },
+  {
+    "norsk": "offer/et",
+    "lemma": "offer"
+  },
+  {
+    "norsk": "omdiskutert",
+    "lemma": "omdiskutert"
+  },
+  {
+    "norsk": "omfang/et",
+    "lemma": "omfang"
+  },
+  {
+    "norsk": "omfatte",
+    "lemma": "omfatte"
+  },
+  {
+    "norsk": "omfattende",
+    "lemma": "omfattende"
+  },
+  {
+    "norsk": "omgangskrets/en",
+    "lemma": "omgangskrets"
+  },
+  {
+    "norsk": "omgivelse/n",
+    "lemma": "omgivelse"
+  },
+  {
+    "norsk": "omsorg/en",
+    "lemma": "omsorg"
+  },
+  {
+    "norsk": "omstridt",
+    "lemma": "omstridt"
+  },
+  {
+    "norsk": "oppdrag/et",
+    "lemma": "oppdrag"
+  },
+  {
+    "norsk": "oppfatning/en",
+    "lemma": "oppfatning"
+  },
+  {
+    "norsk": "oppfatte",
+    "lemma": "oppfatte"
+  },
+  {
+    "norsk": "oppgradere",
+    "lemma": "oppgradere"
+  },
+  {
+    "norsk": "opplagt",
+    "lemma": "opplagt"
+  },
+  {
+    "norsk": "oppløse",
+    "lemma": "oppløse"
+  },
+  {
+    "norsk": "oppmerksom",
+    "lemma": "oppmerksom"
+  },
+  {
+    "norsk": "oppnevne",
+    "lemma": "oppnevne"
+  },
+  {
+    "norsk": "opprør/et",
+    "lemma": "opprør"
+  },
+  {
+    "norsk": "oppsøke",
+    "lemma": "oppsøke"
+  },
+  {
+    "norsk": "opptakskrav/et",
+    "lemma": "opptakskrav"
+  },
+  {
+    "norsk": "opptøyer",
+    "lemma": "opptøyer"
+  },
+  {
+    "norsk": "oppvekker/en",
+    "lemma": "oppvekker"
+  },
+  {
+    "norsk": "ordforråd/et",
+    "lemma": "ordforråd"
+  },
+  {
+    "norsk": "ordning/en",
+    "lemma": "ordning"
+  },
+  {
+    "norsk": "organ/et",
+    "lemma": "organ"
+  },
+  {
+    "norsk": "overbelastet",
+    "lemma": "overbelastet"
+  },
+  {
+    "norsk": "overbeskyttende",
+    "lemma": "overbeskyttende"
+  },
+  {
+    "norsk": "overbevise",
+    "lemma": "overbevise"
+  },
+  {
+    "norsk": "overgå, overgikk, overgått",
+    "lemma": "overgå"
+  },
+  {
+    "norsk": "overholde",
+    "lemma": "overholde"
+  },
+  {
+    "norsk": "overleve",
+    "lemma": "overleve"
+  },
+  {
+    "norsk": "overlykkelig",
+    "lemma": "overlykkelig"
+  },
+  {
+    "norsk": "overskudd/et",
+    "lemma": "overskudd"
+  },
+  {
+    "norsk": "overstige, oversteg, oversteget",
+    "lemma": "overstige"
+  },
+  {
+    "norsk": "overvåke",
+    "lemma": "overvåke"
+  },
+  {
+    "norsk": "pakt/en",
+    "lemma": "pakt"
+  },
+  {
+    "norsk": "parlament/et",
+    "lemma": "parlament"
+  },
+  {
+    "norsk": "part/en",
+    "lemma": "part"
+  },
+  {
+    "norsk": "patetisk",
+    "lemma": "patetisk"
+  },
+  {
+    "norsk": "peis/en",
+    "lemma": "peis"
+  },
+  {
+    "norsk": "pelsoppdrett/et",
+    "lemma": "pelsoppdrett"
+  },
+  {
+    "norsk": "permittering/en",
+    "lemma": "permittering"
+  },
+  {
+    "norsk": "permittert",
+    "lemma": "permittert"
+  },
+  {
+    "norsk": "personvern/et",
+    "lemma": "personvern"
+  },
+  {
+    "norsk": "petroleum",
+    "lemma": "petroleum"
+  },
+  {
+    "norsk": "plagiat/et",
+    "lemma": "plagiat"
+  },
+  {
+    "norsk": "pleietrengende",
+    "lemma": "pleietrengende"
+  },
+  {
+    "norsk": "prege",
+    "lemma": "prege"
+  },
+  {
+    "norsk": "prestasjon/en",
+    "lemma": "prestasjon"
+  },
+  {
+    "norsk": "prestekrave/n",
+    "lemma": "prestekrave"
+  },
+  {
+    "norsk": "prestere",
+    "lemma": "prestere"
+  },
+  {
+    "norsk": "primær",
+    "lemma": "primær"
+  },
+  {
+    "norsk": "prinsipp/et",
+    "lemma": "prinsipp"
+  },
+  {
+    "norsk": "prioritere",
+    "lemma": "prioritere"
+  },
+  {
+    "norsk": "privilegert",
+    "lemma": "privilegert"
+  },
+  {
+    "norsk": "privilegium, privilegiet",
+    "lemma": "privilegium"
+  },
+  {
+    "norsk": "produktiv",
+    "lemma": "produktiv"
+  },
+  {
+    "norsk": "prominent",
+    "lemma": "prominent"
+  },
+  {
+    "norsk": "provosere",
+    "lemma": "provosere"
+  },
+  {
+    "norsk": "påfunn/et",
+    "lemma": "påfunn"
+  },
+  {
+    "norsk": "påfyll/et",
+    "lemma": "påfyll"
+  },
+  {
+    "norsk": "påføre",
+    "lemma": "påføre"
+  },
+  {
+    "norsk": "pårørende",
+    "lemma": "pårørende"
+  },
+  {
+    "norsk": "påvirkningskraft/en",
+    "lemma": "påvirkningskraft"
+  },
+  {
+    "norsk": "raljere",
+    "lemma": "raljere"
+  },
+  {
+    "norsk": "rangstige/n",
+    "lemma": "rangstige"
+  },
+  {
+    "norsk": "rase",
+    "lemma": "rase"
+  },
+  {
+    "norsk": "rasjonell",
+    "lemma": "rasjonell"
+  },
+  {
+    "norsk": "rate/n",
+    "lemma": "rate"
+  },
+  {
+    "norsk": "raus",
+    "lemma": "raus"
+  },
+  {
+    "norsk": "raushet/en",
+    "lemma": "raushet"
+  },
+  {
+    "norsk": "realitet/en",
+    "lemma": "realitet"
+  },
+  {
+    "norsk": "redsel/en",
+    "lemma": "redsel"
+  },
+  {
+    "norsk": "reell",
+    "lemma": "reell"
+  },
+  {
+    "norsk": "reflektere",
+    "lemma": "reflektere"
+  },
+  {
+    "norsk": "regelmessig",
+    "lemma": "regelmessig"
+  },
+  {
+    "norsk": "regjere",
+    "lemma": "regjere"
+  },
+  {
+    "norsk": "regjeringskvartal/et",
+    "lemma": "regjeringskvartal"
+  },
+  {
+    "norsk": "regulere",
+    "lemma": "regulere"
+  },
+  {
+    "norsk": "rehabilitering/en",
+    "lemma": "rehabilitering"
+  },
+  {
+    "norsk": "rekonstruksjon/en",
+    "lemma": "rekonstruksjon"
+  },
+  {
+    "norsk": "rekruttering/en",
+    "lemma": "rekruttering"
+  },
+  {
+    "norsk": "relatert",
+    "lemma": "relatert"
+  },
+  {
+    "norsk": "relativt",
+    "lemma": "relativt"
+  },
+  {
+    "norsk": "relevant",
+    "lemma": "relevant"
+  },
+  {
+    "norsk": "representativ",
+    "lemma": "representativ"
+  },
+  {
+    "norsk": "representere",
+    "lemma": "representere"
+  },
+  {
+    "norsk": "reprodusere",
+    "lemma": "reprodusere"
+  },
+  {
+    "norsk": "reservert",
+    "lemma": "reservert"
+  },
+  {
+    "norsk": "respondent/en",
+    "lemma": "respondent"
+  },
+  {
+    "norsk": "respons/en",
+    "lemma": "respons"
+  },
+  {
+    "norsk": "ressurs/en",
+    "lemma": "ressurs"
+  },
+  {
+    "norsk": "restriksjon/en",
+    "lemma": "restriksjon"
+  },
+  {
+    "norsk": "restriktiv",
+    "lemma": "restriktiv"
+  },
+  {
+    "norsk": "Riksdagen",
+    "lemma": "Riksdagen"
+  },
+  {
+    "norsk": "ringeakt/en",
+    "lemma": "ringeakt"
+  },
+  {
+    "norsk": "risikere",
+    "lemma": "risikere"
+  },
+  {
+    "norsk": "rivalisering",
+    "lemma": "rivalisering"
+  },
+  {
+    "norsk": "rulle",
+    "lemma": "rulle"
+  },
+  {
+    "norsk": "rulleblad/et",
+    "lemma": "rulleblad"
+  },
+  {
+    "norsk": "rødme",
+    "lemma": "rødme"
+  },
+  {
+    "norsk": "råderett/en",
+    "lemma": "råderett"
+  },
+  {
+    "norsk": "saksprosa/en",
+    "lemma": "saksprosa"
+  },
+  {
+    "norsk": "samtykke/t",
+    "lemma": "samtykke"
+  },
+  {
+    "norsk": "samvittighet/en",
+    "lemma": "samvittighet"
+  },
+  {
+    "norsk": "sannsynlig",
+    "lemma": "sannsynlig"
+  },
+  {
+    "norsk": "sannsynligvis",
+    "lemma": "sannsynligvis"
+  },
+  {
+    "norsk": "sektor/en",
+    "lemma": "sektor"
+  },
+  {
+    "norsk": "selvbetjent",
+    "lemma": "selvbetjent"
+  },
+  {
+    "norsk": "selvforsynt",
+    "lemma": "selvforsynt"
+  },
+  {
+    "norsk": "selvråderett",
+    "lemma": "selvråderett"
+  },
+  {
+    "norsk": "selvstyre/t",
+    "lemma": "selvstyre"
+  },
+  {
+    "norsk": "selvtillit/en",
+    "lemma": "selvtillit"
+  },
+  {
+    "norsk": "seminar/et",
+    "lemma": "seminar"
+  },
+  {
+    "norsk": "sentralisering/en",
+    "lemma": "sentralisering"
+  },
+  {
+    "norsk": "sentralt",
+    "lemma": "sentralt"
+  },
+  {
+    "norsk": "seremoniell",
+    "lemma": "seremoniell"
+  },
+  {
+    "norsk": "sertifisere",
+    "lemma": "sertifisere"
+  },
+  {
+    "norsk": "serviceinnstilt",
+    "lemma": "serviceinnstilt"
+  },
+  {
+    "norsk": "setervei/en",
+    "lemma": "setervei"
+  },
+  {
+    "norsk": "sikkerhetsnett/et",
+    "lemma": "sikkerhetsnett"
+  },
+  {
+    "norsk": "sikre",
+    "lemma": "sikre"
+  },
+  {
+    "norsk": "sikringsskap/et",
+    "lemma": "sikringsskap"
+  },
+  {
+    "norsk": "sikte",
+    "lemma": "sikte"
+  },
+  {
+    "norsk": "sist, men ikke minst",
+    "lemma": "sist"
+  },
+  {
+    "norsk": "sivile",
+    "lemma": "sivile"
+  },
+  {
+    "norsk": "sjel/en",
+    "lemma": "sjel"
+  },
+  {
+    "norsk": "sjenerøsitet/en",
+    "lemma": "sjenerøsitet"
+  },
+  {
+    "norsk": "sjikane/n",
+    "lemma": "sjikane"
+  },
+  {
+    "norsk": "skala/en",
+    "lemma": "skala"
+  },
+  {
+    "norsk": "skam/men",
+    "lemma": "skam"
+  },
+  {
+    "norsk": "skambelagt",
+    "lemma": "skambelagt"
+  },
+  {
+    "norsk": "skattemelding/en",
+    "lemma": "skattemelding"
+  },
+  {
+    "norsk": "skeptisk",
+    "lemma": "skeptisk"
+  },
+  {
+    "norsk": "skjelve, skalv, skjelvet",
+    "lemma": "skjelve"
+  },
+  {
+    "norsk": "skjenketider",
+    "lemma": "skjenketider"
+  },
+  {
+    "norsk": "skjerme",
+    "lemma": "skjerme"
+  },
+  {
+    "norsk": "skjønnlitteratur/en",
+    "lemma": "skjønnlitteratur"
+  },
+  {
+    "norsk": "skolelys/et",
+    "lemma": "skolelys"
+  },
+  {
+    "norsk": "skravling/en",
+    "lemma": "skravling"
+  },
+  {
+    "norsk": "skrolle",
+    "lemma": "skrolle"
+  },
+  {
+    "norsk": "skryte, skrøt, skrytt",
+    "lemma": "skryte"
+  },
+  {
+    "norsk": "skuffelse/n",
+    "lemma": "skuffelse"
+  },
+  {
+    "norsk": "skåne",
+    "lemma": "skåne"
+  },
+  {
+    "norsk": "slagord/et",
+    "lemma": "slagord"
+  },
+  {
+    "norsk": "slaveri/et",
+    "lemma": "slaveri"
+  },
+  {
+    "norsk": "slepe",
+    "lemma": "slepe"
+  },
+  {
+    "norsk": "smerte/n",
+    "lemma": "smerte"
+  },
+  {
+    "norsk": "smittevern/et",
+    "lemma": "smittevern"
+  },
+  {
+    "norsk": "smugle",
+    "lemma": "smugle"
+  },
+  {
+    "norsk": "småbarnsfase/n",
+    "lemma": "småbarnsfase"
+  },
+  {
+    "norsk": "småtteri/et",
+    "lemma": "småtteri"
+  },
+  {
+    "norsk": "«småttis/en»",
+    "lemma": ""
+  },
+  {
+    "norsk": "snobberi/et",
+    "lemma": "snobberi"
+  },
+  {
+    "norsk": "snål",
+    "lemma": "snål"
+  },
+  {
+    "norsk": "soloutspill/et",
+    "lemma": "soloutspill"
+  },
+  {
+    "norsk": "sone",
+    "lemma": "sone"
+  },
+  {
+    "norsk": "spalte/n",
+    "lemma": "spalte"
+  },
+  {
+    "norsk": "spaltist/en",
+    "lemma": "spaltist"
+  },
+  {
+    "norsk": "sparsommelighet/en",
+    "lemma": "sparsommelighet"
+  },
+  {
+    "norsk": "spektakulær",
+    "lemma": "spektakulær"
+  },
+  {
+    "norsk": "spindelvev/et",
+    "lemma": "spindelvev"
+  },
+  {
+    "norsk": "splittelse/n",
+    "lemma": "splittelse"
+  },
+  {
+    "norsk": "spredning/en",
+    "lemma": "spredning"
+  },
+  {
+    "norsk": "sprengt",
+    "lemma": "sprengt"
+  },
+  {
+    "norsk": "spå",
+    "lemma": "spå"
+  },
+  {
+    "norsk": "stamme",
+    "lemma": "stamme"
+  },
+  {
+    "norsk": "statisk",
+    "lemma": "statisk"
+  },
+  {
+    "norsk": "statseid",
+    "lemma": "statseid"
+  },
+  {
+    "norsk": "stemmeberettiget",
+    "lemma": "stemmeberettiget"
+  },
+  {
+    "norsk": "stirre",
+    "lemma": "stirre"
+  },
+  {
+    "norsk": "stoff/et",
+    "lemma": "stoff"
+  },
+  {
+    "norsk": "stormakt/en",
+    "lemma": "stormakt"
+  },
+  {
+    "norsk": "stramt",
+    "lemma": "stramt"
+  },
+  {
+    "norsk": "strategisk",
+    "lemma": "strategisk"
+  },
+  {
+    "norsk": "streve",
+    "lemma": "streve"
+  },
+  {
+    "norsk": "stykke",
+    "lemma": "stykke"
+  },
+  {
+    "norsk": "styrke/n",
+    "lemma": "styrke"
+  },
+  {
+    "norsk": "stønad/en",
+    "lemma": "stønad"
+  },
+  {
+    "norsk": "støttespiller/en",
+    "lemma": "støttespiller"
+  },
+  {
+    "norsk": "ståsted/et",
+    "lemma": "ståsted"
+  },
+  {
+    "norsk": "subsidiere",
+    "lemma": "subsidiere"
+  },
+  {
+    "norsk": "supplere",
+    "lemma": "supplere"
+  },
+  {
+    "norsk": "suverenitet",
+    "lemma": "suverenitet"
+  },
+  {
+    "norsk": "svartmale",
+    "lemma": "svartmale"
+  },
+  {
+    "norsk": "sveiser/en",
+    "lemma": "sveiser"
+  },
+  {
+    "norsk": "svekke",
+    "lemma": "svekke"
+  },
+  {
+    "norsk": "svik/et",
+    "lemma": "svik"
+  },
+  {
+    "norsk": "svindel/en",
+    "lemma": "svindel"
+  },
+  {
+    "norsk": "sysselsatt",
+    "lemma": "sysselsatt"
+  },
+  {
+    "norsk": "søkemotor/en",
+    "lemma": "søkemotor"
+  },
+  {
+    "norsk": "søskenmoderason/en",
+    "lemma": "søskenmoderason"
+  },
+  {
+    "norsk": "tabu/et",
+    "lemma": "tabu"
+  },
+  {
+    "norsk": "tabubelagt",
+    "lemma": "tabubelagt"
+  },
+  {
+    "norsk": "takle",
+    "lemma": "takle"
+  },
+  {
+    "norsk": "tamt",
+    "lemma": "tamt"
+  },
+  {
+    "norsk": "tankegang/en",
+    "lemma": "tankegang"
+  },
+  {
+    "norsk": "tankevekker/en",
+    "lemma": "tankevekker"
+  },
+  {
+    "norsk": "termos/en",
+    "lemma": "termos"
+  },
+  {
+    "norsk": "territorium, territoriet",
+    "lemma": "territorium"
+  },
+  {
+    "norsk": "tilbakefall/et",
+    "lemma": "tilbakefall"
+  },
+  {
+    "norsk": "tilbe, tilba, tilbedt",
+    "lemma": "tilbe"
+  },
+  {
+    "norsk": "tilfreds",
+    "lemma": "tilfreds"
+  },
+  {
+    "norsk": "tilgjengelig",
+    "lemma": "tilgjengelig"
+  },
+  {
+    "norsk": "tilhenger/en",
+    "lemma": "tilhenger"
+  },
+  {
+    "norsk": "tillit/en",
+    "lemma": "tillit"
+  },
+  {
+    "norsk": "tilnærmet",
+    "lemma": "tilnærmet"
+  },
+  {
+    "norsk": "tilrettelagt",
+    "lemma": "tilrettelagt"
+  },
+  {
+    "norsk": "tilstand/en",
+    "lemma": "tilstand"
+  },
+  {
+    "norsk": "tilstrekkelig",
+    "lemma": "tilstrekkelig"
+  },
+  {
+    "norsk": "tilstå, tilsto, tilstått",
+    "lemma": "tilstå"
+  },
+  {
+    "norsk": "tilsvarende",
+    "lemma": "tilsvarende"
+  },
+  {
+    "norsk": "tilsvarende",
+    "lemma": "tilsvarende"
+  },
+  {
+    "norsk": "tiltak/et",
+    "lemma": "tiltak"
+  },
+  {
+    "norsk": "tiltale",
+    "lemma": "tiltale"
+  },
+  {
+    "norsk": "tolke",
+    "lemma": "tolke"
+  },
+  {
+    "norsk": "toll/en",
+    "lemma": "toll"
+  },
+  {
+    "norsk": "tomrom/met",
+    "lemma": "tomrom"
+  },
+  {
+    "norsk": "transaksjon/en",
+    "lemma": "transaksjon"
+  },
+  {
+    "norsk": "traske",
+    "lemma": "traske"
+  },
+  {
+    "norsk": "traume/t",
+    "lemma": "traume"
+  },
+  {
+    "norsk": "treffsikker",
+    "lemma": "treffsikker"
+  },
+  {
+    "norsk": "trekke, trakk, trukket seg",
+    "lemma": "trekke"
+  },
+  {
+    "norsk": "trend/en",
+    "lemma": "trend"
+  },
+  {
+    "norsk": "trussel/en",
+    "lemma": "trussel"
+  },
+  {
+    "norsk": "trøbbel",
+    "lemma": "trøbbel"
+  },
+  {
+    "norsk": "trøste",
+    "lemma": "trøste"
+  },
+  {
+    "norsk": "tunnelsyn/et",
+    "lemma": "tunnelsyn"
+  },
+  {
+    "norsk": "turbin/en",
+    "lemma": "turbin"
+  },
+  {
+    "norsk": "tvil/en",
+    "lemma": "tvil"
+  },
+  {
+    "norsk": "tvile",
+    "lemma": "tvile"
+  },
+  {
+    "norsk": "tåle",
+    "lemma": "tåle"
+  },
+  {
+    "norsk": "uaktsomt",
+    "lemma": "uaktsomt"
+  },
+  {
+    "norsk": "uavhengighet/en",
+    "lemma": "uavhengighet"
+  },
+  {
+    "norsk": "ubevæpnet",
+    "lemma": "ubevæpnet"
+  },
+  {
+    "norsk": "uerstattelig",
+    "lemma": "uerstattelig"
+  },
+  {
+    "norsk": "uetisk",
+    "lemma": "uetisk"
+  },
+  {
+    "norsk": "uforberedt",
+    "lemma": "uforberedt"
+  },
+  {
+    "norsk": "uformell",
+    "lemma": "uformell"
+  },
+  {
+    "norsk": "uhørt",
+    "lemma": "uhørt"
+  },
+  {
+    "norsk": "ukentlig",
+    "lemma": "ukentlig"
+  },
+  {
+    "norsk": "underforstått",
+    "lemma": "underforstått"
+  },
+  {
+    "norsk": "understreke",
+    "lemma": "understreke"
+  },
+  {
+    "norsk": "undertrykking/en",
+    "lemma": "undertrykking"
+  },
+  {
+    "norsk": "unik",
+    "lemma": "unik"
+  },
+  {
+    "norsk": "unisont",
+    "lemma": "unisont"
+  },
+  {
+    "norsk": "uopplevet",
+    "lemma": "uopplevet"
+  },
+  {
+    "norsk": "urovekkende",
+    "lemma": "urovekkende"
+  },
+  {
+    "norsk": "utallige",
+    "lemma": "utallige"
+  },
+  {
+    "norsk": "utarbeide",
+    "lemma": "utarbeide"
+  },
+  {
+    "norsk": "utbrent",
+    "lemma": "utbrent"
+  },
+  {
+    "norsk": "utenkelig",
+    "lemma": "utenkelig"
+  },
+  {
+    "norsk": "utforme",
+    "lemma": "utforme"
+  },
+  {
+    "norsk": "utforske",
+    "lemma": "utforske"
+  },
+  {
+    "norsk": "utgangspunkt/et",
+    "lemma": "utgangspunkt"
+  },
+  {
+    "norsk": "utgiftspost/en",
+    "lemma": "utgiftspost"
+  },
+  {
+    "norsk": "utgjøre, utgjorde, utgjort",
+    "lemma": "utgjøre"
+  },
+  {
+    "norsk": "utholdenhet/en",
+    "lemma": "utholdenhet"
+  },
+  {
+    "norsk": "utilregnelig",
+    "lemma": "utilregnelig"
+  },
+  {
+    "norsk": "utkomme/t",
+    "lemma": "utkomme"
+  },
+  {
+    "norsk": "utløse",
+    "lemma": "utløse"
+  },
+  {
+    "norsk": "utløse",
+    "lemma": "utløse"
+  },
+  {
+    "norsk": "utrydningstruet",
+    "lemma": "utrydningstruet"
+  },
+  {
+    "norsk": "utsagn/et",
+    "lemma": "utsagn"
+  },
+  {
+    "norsk": "utseende/t",
+    "lemma": "utseende"
+  },
+  {
+    "norsk": "uttalelse/n",
+    "lemma": "uttalelse"
+  },
+  {
+    "norsk": "utvikler/en",
+    "lemma": "utvikler"
+  },
+  {
+    "norsk": "utvinne, utvant, utvunnet",
+    "lemma": "utvinne"
+  },
+  {
+    "norsk": "utømmelig",
+    "lemma": "utømmelig"
+  },
+  {
+    "norsk": "utøvende",
+    "lemma": "utøvende"
+  },
+  {
+    "norsk": "uvesentlig",
+    "lemma": "uvesentlig"
+  },
+  {
+    "norsk": "vare/n",
+    "lemma": "vare"
+  },
+  {
+    "norsk": "varig",
+    "lemma": "varig"
+  },
+  {
+    "norsk": "varsel/et",
+    "lemma": "varsel"
+  },
+  {
+    "norsk": "vassdrag/et",
+    "lemma": "vassdrag"
+  },
+  {
+    "norsk": "vedkommende",
+    "lemma": "vedkommende"
+  },
+  {
+    "norsk": "vedta – vedtok – vedtatt",
+    "lemma": "vedta"
+  },
+  {
+    "norsk": "veive",
+    "lemma": "veive"
+  },
+  {
+    "norsk": "vekker/en",
+    "lemma": "vekker"
+  },
+  {
+    "norsk": "velbegrunnet",
+    "lemma": "velbegrunnet"
+  },
+  {
+    "norsk": "velfungerende",
+    "lemma": "velfungerende"
+  },
+  {
+    "norsk": "velstand/en",
+    "lemma": "velstand"
+  },
+  {
+    "norsk": "velstående",
+    "lemma": "velstående"
+  },
+  {
+    "norsk": "venteværelse/t",
+    "lemma": "venteværelse"
+  },
+  {
+    "norsk": "verdi/en",
+    "lemma": "verdi"
+  },
+  {
+    "norsk": "verdsette, verdsatte, verdsatt",
+    "lemma": "verdsette"
+  },
+  {
+    "norsk": "verft/et",
+    "lemma": "verft"
+  },
+  {
+    "norsk": "vern/et",
+    "lemma": "vern"
+  },
+  {
+    "norsk": "vesentlig",
+    "lemma": "vesentlig"
+  },
+  {
+    "norsk": "vesentlig",
+    "lemma": "vesentlig"
+  },
+  {
+    "norsk": "via",
+    "lemma": "via"
+  },
+  {
+    "norsk": "videreformidle",
+    "lemma": "videreformidle"
+  },
+  {
+    "norsk": "vilkår/et",
+    "lemma": "vilkår"
+  },
+  {
+    "norsk": "vippse",
+    "lemma": "vippse"
+  },
+  {
+    "norsk": "virkemiddel/et",
+    "lemma": "virkemiddel"
+  },
+  {
+    "norsk": "virksomhet/en",
+    "lemma": "virksomhet"
+  },
+  {
+    "norsk": "visjon/en",
+    "lemma": "visjon"
+  },
+  {
+    "norsk": "vitne/t",
+    "lemma": "vitne"
+  },
+  {
+    "norsk": "ydmykhet/en",
+    "lemma": "ydmykhet"
+  },
+  {
+    "norsk": "yrkesaktiv",
+    "lemma": "yrkesaktiv"
+  },
+  {
+    "norsk": "yrkesaktiv",
+    "lemma": "yrkesaktiv"
+  },
+  {
+    "norsk": "yte, ytte, ytt",
+    "lemma": "yte"
+  },
+  {
+    "norsk": "ytring/en",
+    "lemma": "ytring"
+  },
+  {
+    "norsk": "øke",
+    "lemma": "øke"
+  },
+  {
+    "norsk": "økosystem/et",
+    "lemma": "økosystem"
+  },
+  {
+    "norsk": "øygard/en",
+    "lemma": "øygard"
+  },
+  {
+    "norsk": "åpenbart",
+    "lemma": "åpenbart"
+  },
+  {
+    "norsk": "åpenlyst",
+    "lemma": "åpenlyst"
+  }
+]
