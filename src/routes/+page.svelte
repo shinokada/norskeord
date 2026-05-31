@@ -360,13 +360,8 @@
              dark:border-white/10 dark:bg-indigo-950/60"
     >
       <!-- Card header -->
-      <div class="mb-4 flex items-center justify-between">
-        <div>
-          <h2 class="text-lg font-bold {accent.heading}">{level.label()}</h2>
-          <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">
-            {entryCountLabel(level.id)}
-          </p>
-        </div>
+      <div class="mb-1 flex items-center justify-between">
+        <h2 class="mb-0 text-lg font-bold {accent.heading}">{level.label()}</h2>
         <span
           class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-500
                  dark:bg-gray-700 dark:text-gray-400"
@@ -374,6 +369,9 @@
           {count} decks
         </span>
       </div>
+      <p class="mb-3 text-left text-xs text-gray-400 dark:text-gray-500">
+        {entryCountLabel(level.id)}
+      </p>
 
       <!-- Category pills -->
       <div class="flex flex-wrap gap-2">
