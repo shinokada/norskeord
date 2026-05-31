@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.12.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added site vocabulary statistics (per-level counts) and UI labels.
+    - Bulk tools to generate, enrich and merge vocabulary/phrase datasets, including image-to-list extraction and AI-assisted field enrichment.
+    - New scripts to add/remove and count entries programmatically.
+  - **Bug Fixes**
+    - Resolved many cross-level duplicate entries.
+    - Normalized category formatting across datasets.
+  - **Documentation**
+    - Added workflow guide for managing and processing vocabulary data.
+  - **Chores**
+    - Added a stats generator and various maintenance utilities.
+
 ## 2.11.2
 
 ### Patch Changes
