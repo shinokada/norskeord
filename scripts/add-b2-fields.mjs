@@ -73,7 +73,7 @@ const CATEGORIES = [
   'discourse-markers',
   'work-career',
   'relationships',
-  'communication',
+  'communication'
   // 'uttrykk',
 ];
 
@@ -128,13 +128,23 @@ if (loadEnv(rootEnv)) {
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 if (!ANTHROPIC_API_KEY && !dryRun) {
-  console.error('❌  ANTHROPIC_API_KEY is not set. Export it or add it to .env in the project root.');
+  console.error(
+    '❌  ANTHROPIC_API_KEY is not set. Export it or add it to .env in the project root.'
+  );
   process.exit(1);
 }
 
 // ── Check if entry is complete ────────────────────────────────────────────────
 
-const REQUIRED_FIELDS = ['english', 'example', 'example_english', 'definition', 'level', 'category', 'part'];
+const REQUIRED_FIELDS = [
+  'english',
+  'example',
+  'example_english',
+  'definition',
+  'level',
+  'category',
+  'part'
+];
 
 function isComplete(entry) {
   return REQUIRED_FIELDS.every((f) => entry[f] && String(entry[f]).trim().length > 0);
@@ -204,14 +214,14 @@ Important:
     headers: {
       'Content-Type': 'application/json',
       'x-api-key': ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01',
+      'anthropic-version': '2023-06-01'
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: 8096,
       system: systemPrompt,
-      messages: [{ role: 'user', content: userPrompt }],
-    }),
+      messages: [{ role: 'user', content: userPrompt }]
+    })
   });
 
   if (!response.ok) {
@@ -258,9 +268,10 @@ async function processFile(filename) {
   // Paths containing / or \ are resolved relative to cwd (so you can run from
   // the project root with e.g. --files ./draft/flashcard/vocab-b2.json).
   // Plain filenames with no slash are resolved next to this script.
-  const filePath = filename.includes('/') || filename.includes('\\')
-    ? path.resolve(process.cwd(), filename)
-    : path.join(__dirname, filename);
+  const filePath =
+    filename.includes('/') || filename.includes('\\')
+      ? path.resolve(process.cwd(), filename)
+      : path.join(__dirname, filename);
 
   if (!fs.existsSync(filePath)) {
     console.warn(`⚠️  File not found: ${filePath} — skipping`);
@@ -312,14 +323,9 @@ async function processFile(filename) {
 
   for (let bi = 0; bi < batches.length; bi++) {
     const batch = batches[bi];
-    process.stdout.write(
-      `    Batch ${bi + 1}/${batches.length} (${batch.length} words)… `
-    );
+    process.stdout.write(`    Batch ${bi + 1}/${batches.length} (${batch.length} words)… `);
 
-    const results = await withRetry(
-      () => fetchFields(batch),
-      `batch ${bi + 1}`
-    );
+    const results = await withRetry(() => fetchFields(batch), `batch ${bi + 1}`);
 
     const lookup = buildLookup(results);
     let hits = 0;
@@ -336,7 +342,7 @@ async function processFile(filename) {
           definition: data.definition,
           level: 'B2',
           category: data.category,
-          part: data.part,
+          part: data.part
         });
         hits++;
         if (!results.find((r) => r.norsk === entry.norsk)) {
@@ -360,9 +366,7 @@ async function processFile(filename) {
   const updated = entries.map((entry) => enriched.get(entry.norsk) ?? entry);
 
   fs.writeFileSync(filePath, JSON.stringify(updated, null, 2) + '\n', 'utf8');
-  console.log(
-    `    ✅  Done. ${totalProcessed}/${toProcess.length} entries enriched. File saved.`
-  );
+  console.log(`    ✅  Done. ${totalProcessed}/${toProcess.length} entries enriched. File saved.`);
 
   if (fuzzyMatches > 0) {
     console.log(`    🔀  ${fuzzyMatches} entries used fuzzy key matching.`);
