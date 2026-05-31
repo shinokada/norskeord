@@ -74,7 +74,7 @@ const CATEGORIES = [
   'work-career',
   'relationships',
   'communication',
-  'uttrykk',
+  // 'uttrykk',
 ];
 
 function interBatchDelay(totalEntries) {
