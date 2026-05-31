@@ -4,6 +4,7 @@
   import { CATEGORIES_BY_LEVEL, isPlusCategory } from '$lib/types';
   import { validFlashcardPathPattern } from '$lib/utils';
   import * as m from '$lib/paraglide/messages.js';
+  import stats from '$lib/data/stats.json';
 
   // Only auto-redirect on direct/fresh page loads (from === null),
   // not when the user explicitly navigates home via an in-app link.
@@ -221,6 +222,20 @@
   function shouldCollapse(levelId: string): boolean {
     return !isPlus && lockedCategoryCount(levelId) >= COLLAPSE_THRESHOLD;
   }
+
+  // Entry counts from stats.json
+  type LevelStats = { vocab: number; uttrykk: number; total: number };
+  const byLevel = stats.byLevel as Record<string, LevelStats>;
+
+  function entryCountLabel(levelId: string): string {
+    const s = byLevel[levelId];
+    if (!s) return '';
+    if (s.uttrykk > 0) {
+      return `${s.vocab.toLocaleString()} words · ${s.uttrykk.toLocaleString()} phrases`;
+    }
+    return `${s.vocab.toLocaleString()} words`;
+  }
+
   const websiteSchemaJson = JSON.stringify(websiteSchema);
   const learningSchemaJson = JSON.stringify(learningResourceSchema);
 </script>
@@ -345,8 +360,8 @@
              dark:border-white/10 dark:bg-indigo-950/60"
     >
       <!-- Card header -->
-      <div class="mb-4 flex items-center justify-between">
-        <h2 class="text-lg font-bold {accent.heading}">{level.label()}</h2>
+      <div class="mb-1 flex items-center justify-between">
+        <h2 class="mb-0 text-lg font-bold {accent.heading}">{level.label()}</h2>
         <span
           class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-500
                  dark:bg-gray-700 dark:text-gray-400"
@@ -354,6 +369,9 @@
           {count} decks
         </span>
       </div>
+      <p class="mb-3 text-left text-xs text-gray-400 dark:text-gray-500">
+        {entryCountLabel(level.id)}
+      </p>
 
       <!-- Category pills -->
       <div class="flex flex-wrap gap-2">

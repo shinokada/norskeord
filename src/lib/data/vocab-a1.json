@@ -4728,5 +4728,16 @@
     "level": "A1",
     "category": "actions",
     "part": "verb"
+  },
+  {
+    "norsk": "for eksempel",
+    "lemma": "for eksempel",
+    "english": "for example",
+    "example": "For eksempel kan du bruke denne metoden.",
+    "example_english": "For example, you can use this method.",
+    "definition": "Brukes når man gir et konkret eksempel for å forklare eller vise noe bedre.",
+    "level": "A1",
+    "category": "classroom",
+    "part": "phrase"
   }
 ]
