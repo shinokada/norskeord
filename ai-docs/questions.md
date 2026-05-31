@@ -8,8 +8,8 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 ## Solved
 
-
 ---
+
 ## Others
 
 - The Undo button is too far from Again, Hard, Good, Easy buttons.

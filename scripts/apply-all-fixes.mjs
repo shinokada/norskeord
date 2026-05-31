@@ -20,7 +20,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const JSON_FILES = [
   path.resolve(__dirname, '../draft/flashcard/uttrykk-b2.json'),
-  path.resolve(__dirname, '../draft/flashcard/vocab-b2.json'),
+  path.resolve(__dirname, '../draft/flashcard/vocab-b2.json')
 ];
 
 function fixCategory(cat) {

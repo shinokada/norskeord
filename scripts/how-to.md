@@ -1,6 +1,7 @@
 # How to use scripts
 
 ## add-b2-fields.mjs
+
 ```
 # Set your API key (or put it in a .env file in the same folder)
 export ANTHROPIC_API_KEY=sk-ant-...

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-31T13:26:23.275Z",
+  "grandTotal": 4353,
+  "byLevel": {
+    "A1": {
+      "vocab": 474,
+      "uttrykk": 114,
+      "total": 588
+    },
+    "A2": {
+      "vocab": 389,
+      "uttrykk": 125,
+      "total": 514
+    },
+    "B1": {
+      "vocab": 664,
+      "uttrykk": 230,
+      "total": 894
+    },
+    "B2": {
+      "vocab": 1495,
+      "uttrykk": 562,
+      "total": 2057
+    },
+    "C1": {
+      "vocab": 155,
+      "uttrykk": 0,
+      "total": 155
+    },
+    "C2": {
+      "vocab": 145,
+      "uttrykk": 0,
+      "total": 145
+    }
+  }
+}
