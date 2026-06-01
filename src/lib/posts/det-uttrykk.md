@@ -4,6 +4,7 @@ description: 'Many of the most useful Norwegian expressions start with "det" —
 slug: det-uttrykk
 cefr: B1
 publishedAt: 2026-06-01
+updatedAt: 2026-06-01
 tags: [expressions, vocabulary, speaking, b1]
 decks:
   - level: a1
@@ -73,21 +74,21 @@ _That means that …_
 
 ---
 
-**6. Uansett**
-_Anyway / in any case_
-→ Use to move on or acknowledge something without dwelling on it.
+**6. Det hender (at …)**
+_It happens (that …)_
+→ Use to say something occurs occasionally, or to acknowledge something without surprise.
 
-> — Jeg er sliten, men jeg jobber uansett.
-> — Uansett, vi må gå nå.
+> — Det hender at jeg glemmer det.
+> — Det hender at tog er forsinket.
 
 ---
 
-**7. For så vidt**
-_In a way / kind of / to be fair_
-→ A distinctly Norwegian nuance word — soft agreement or mild concession.
+**7. Det spørs.**
+_It's uncertain. / Hard to say._
+→ A colloquial way to express doubt or hesitation — more natural-sounding than *jeg vet ikke*.
 
-> — For så vidt er jeg enig.
-> — Det er for så vidt riktig.
+> — Kommer han i morgen? Det spørs.
+> — Det spørs om vi rekker det.
 
 ---
 
@@ -109,29 +110,29 @@ _It is in fact the case that … / The thing is …_
 
 ---
 
-**10. Å ha is i magen**
-_To stay calm / to be patient under pressure_
-→ Literally "to have ice in the stomach" — a vivid idiom for keeping cool.
+**10. Det er verdt det.**
+_It's worth it._
+→ Use to say that an effort, cost, or difficulty is justified.
 
-> — Du må ha is i magen.
-> — Han har alltid is i magen i stressede situasjoner.
+> — Det er hardt arbeid, men det er verdt det.
+> — Er det verdt det å reise så langt?
 
 ---
 
 ## Sammenligningstabell
 
-| Uttrykk             | Engelsk                  | Bruk                         |
-| ------------------- | ------------------------ | ---------------------------- |
-| det gir mening      | that makes sense         | when something clicks        |
-| det kommer an på    | it depends               | universal hedge              |
-| det ser ut til at   | it seems that            | expressing uncertainty       |
-| det stemmer         | that's right             | confirming something         |
-| det betyr at        | that means that          | drawing a conclusion         |
-| uansett             | anyway / regardless      | moving on                    |
-| for så vidt         | in a way / to be fair    | soft agreement or concession |
-| det er ikke sikkert | it's not certain         | expressing doubt             |
-| det er jo slik at   | the thing is / in fact   | introducing a reality        |
-| ha is i magen       | keep calm / stay patient | under pressure               |
+| Uttrykk             | Engelsk                      | Bruk                         |
+| ------------------- | ---------------------------- | ---------------------------- |
+| det gir mening      | that makes sense             | when something clicks        |
+| det kommer an på    | it depends                   | universal hedge              |
+| det ser ut til at   | it seems that                | expressing uncertainty       |
+| det stemmer         | that's right                 | confirming something         |
+| det betyr at        | that means that              | drawing a conclusion         |
+| det hender (at …)   | it happens (that …)          | expressing occasional events |
+| det spørs           | it's uncertain / hard to say | expressing doubt/hesitation  |
+| det er ikke sikkert | it's not certain             | expressing doubt             |
+| det er jo slik at   | the thing is / in fact       | introducing a reality        |
+| det er verdt det    | it's worth it                | justifying effort or cost    |
 
 ---
 
@@ -149,8 +150,8 @@ Prøv å bytte ut vage engelskpåvirkede svar med disse uttrykkene:
 
 - Mange av disse uttrykkene er **faste fraser** — lær dem som helheter
 - **Det kommer an på** og **det stemmer** er særlig vanlige i muntlig norsk
-- **For så vidt** og **det er jo slik at** gjør at du høres mer norsk ut
-- **Ha is i magen** er et idiom — det betyr ikke is bokstavelig
+- **Det spørs** og **det er jo slik at** gjør at du høres mer norsk ut
+- **Det hender** og **det spørs** er særlig naturlige i muntlig norsk
 
 ---
 
