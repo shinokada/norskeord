@@ -1,6 +1,6 @@
 {
   "name": "norskeord",
-  "version": "2.12.0",
+  "version": "2.13.0",
   "description": "Norwegian(Bokmål) - English flashcard",
   "homepage": "https://norskeord.no/",
   "repository": {
@@ -25,7 +25,7 @@
     "test:unit": "vitest",
     "test": "npm run test:unit -- --run && npm run test:e2e",
     "test:e2e": "playwright test",
-    "ch": "npx changeset && pnpm stats && pnpm og",
+    "ch": "npx changeset && pnpm stats",
     "cv": "npx changeset version",
     "generate:lessons": "npx tsx --env-file=.env scripts/generate-lessons.ts",
     "og": "node scripts/generate-og.mjs",
