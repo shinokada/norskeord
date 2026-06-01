@@ -5,7 +5,13 @@
   let { data } = $props();
 
   let categoryName = $derived(removeHyphensAndCapitalize(data.category));
+  const learningResourceSchemaJson = $derived(JSON.stringify(data.learningResourceSchema));
 </script>
+
+<svelte:head>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html '<scr' + 'ipt type="application/ld+json">' + learningResourceSchemaJson + '</scr' + 'ipt>'}
+</svelte:head>
 
 {#if data.entries.length > 0}
   <VocabFlashcardPage

@@ -1,3 +1,9 @@
+export interface DeckLink {
+  level: string; // lowercase, e.g. 'a2'
+  category: string; // slug, e.g. 'descriptive-adjectives'
+  label: string; // display text, e.g. 'A2 Descriptive Adjectives'
+}
+
 export interface PostMeta {
   title: string;
   description: string;
@@ -7,6 +13,7 @@ export interface PostMeta {
   updatedAt?: string;
   tags?: string[];
   type?: 'word' | 'guide';
+  decks?: DeckLink[];
 }
 
 // Loose shape used for raw glob imports and test fixtures — metadata may be partial.

@@ -5,6 +5,10 @@ slug: snekker-vs-tomrer
 cefr: B1
 publishedAt: 2026-05-21
 tags: [nouns, vocabulary]
+decks:
+  - level: a2
+    category: occupations
+    label: A2 Occupations
 ---
 
 ## Kort forklaring
