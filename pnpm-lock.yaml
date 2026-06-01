@@ -84,6 +84,9 @@ importers:
       flowbite-svelte-icons:
         specifier: ^3.1.0
         version: 3.1.0(svelte@5.56.0(@typescript-eslint/types@8.60.0))
+      glob:
+        specifier: ^13.0.6
+        version: 13.0.6
       globals:
         specifier: ^17.6.0
         version: 17.6.0

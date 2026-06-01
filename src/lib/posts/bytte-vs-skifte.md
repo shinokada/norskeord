@@ -5,6 +5,16 @@ slug: bytte-vs-skifte
 cefr: A2
 publishedAt: 2026-05-21
 tags: [verbs, vocabulary]
+decks:
+  - level: a2
+    category: house-chores
+    label: A2 House Chores
+  - level: a2
+    category: clothing
+    label: A2 Clothing
+  - level: a2
+    category: hobbies
+    label: A2 Hobbies
 ---
 
 ## Kort forklaring

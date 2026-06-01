@@ -1,6 +1,11 @@
 <script lang="ts">
   import { page } from '$app/state';
+  import type { PageData } from './$types';
+
+  let { data }: { data: PageData } = $props();
+
   const user = $derived(page.data.user);
+  const webPageSchemaJson = $derived(JSON.stringify(data.webPageSchema));
 
   const sections = [
     {
@@ -40,7 +45,8 @@
     {
       icon: '💻',
       title: 'Online Learning',
-      description: 'Structured free courses from Norwegian universities.',
+      description:
+        'Free structured Norwegian courses from NTNU — ideal for A1 to B1 learners and Norskprøven candidates.',
       color: {
         badge: 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300',
         heading: 'text-violet-700 dark:text-violet-400',
@@ -147,7 +153,8 @@
     {
       icon: '📝',
       title: 'Grammar',
-      description: 'Reference guides to Norwegian grammar rules and structures.',
+      description:
+        'Reference guides covering Norwegian grammar rules and structures — including key Norskprøven grammar topics.',
       color: {
         badge: 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300',
         heading: 'text-orange-700 dark:text-orange-400',
@@ -188,6 +195,11 @@
   ];
 </script>
 
+<svelte:head>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html '<scr' + 'ipt type="application/ld+json">' + webPageSchemaJson + '</scr' + 'ipt>'}
+</svelte:head>
+
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
   <div class="mb-10">
@@ -199,7 +211,7 @@
     <h1 class="text-4xl leading-tight font-bold dark:text-white">Norwegian Learning Resources</h1>
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
       A curated collection of free tools, courses, and communities to help you learn Norwegian —
-      organised by skill.
+      organised by skill, from A1 beginner to B2 and Norskprøven preparation.
     </p>
   </div>
 
