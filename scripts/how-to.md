@@ -33,6 +33,7 @@ python3 scripts/merge_uttrykk.py --base uttrykk-b2.json --new uttrykk-b2-new.jso
 ```
 
 ## stats
+
 ```
 # same as before — no change
 pnpm stats

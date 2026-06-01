@@ -22,12 +22,12 @@ const OUT_FILE = resolve(DATA_DIR, 'stats.json');
 const DETAIL = process.argv.includes('--detail');
 
 const FILES = [
-  { level: 'A1', type: 'vocab',   file: 'vocab-a1.json' },
-  { level: 'A2', type: 'vocab',   file: 'vocab-a2.json' },
-  { level: 'B1', type: 'vocab',   file: 'vocab-b1.json' },
-  { level: 'B2', type: 'vocab',   file: 'vocab-b2.json' },
-  { level: 'C1', type: 'vocab',   file: 'vocab-c1.json' },
-  { level: 'C2', type: 'vocab',   file: 'vocab-c2.json' },
+  { level: 'A1', type: 'vocab', file: 'vocab-a1.json' },
+  { level: 'A2', type: 'vocab', file: 'vocab-a2.json' },
+  { level: 'B1', type: 'vocab', file: 'vocab-b1.json' },
+  { level: 'B2', type: 'vocab', file: 'vocab-b2.json' },
+  { level: 'C1', type: 'vocab', file: 'vocab-c1.json' },
+  { level: 'C2', type: 'vocab', file: 'vocab-c2.json' },
   { level: 'A1', type: 'uttrykk', file: 'uttrykk-a1.json' },
   { level: 'A2', type: 'uttrykk', file: 'uttrykk-a2.json' },
   { level: 'B1', type: 'uttrykk', file: 'uttrykk-b1.json' },
@@ -91,10 +91,10 @@ console.log(`\nWritten to: ${OUT_FILE}`);
 // ── Per-category breakdown (only with --detail) ──────────────────────────────
 if (DETAIL) {
   // Find the longest category name for alignment
-  const allCats = [...new Set(
-    Object.values(categoryByLevel).flatMap(cats => Object.keys(cats))
-  )].sort();
-  const colW = Math.max(...allCats.map(c => c.length), 'Category'.length);
+  const allCats = [
+    ...new Set(Object.values(categoryByLevel).flatMap((cats) => Object.keys(cats)))
+  ].sort();
+  const colW = Math.max(...allCats.map((c) => c.length), 'Category'.length);
 
   for (const level of LEVELS) {
     const cats = categoryByLevel[level];
