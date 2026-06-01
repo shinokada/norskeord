@@ -49,6 +49,16 @@ export const GET: RequestHandler = async () => {
       '^/quiz.*',
       '^/norskproven/practice.*',
       '^/plus.*'
-    ]
+    ],
+    processPaths: (paths) => {
+      return paths.map((p) => ({
+        ...p,
+        alternates: [
+          { lang: 'en', path: p.path },
+          { lang: 'nb', path: `/nb${p.path}` },
+          { lang: 'x-default', path: p.path }
+        ]
+      }));
+    }
   });
 };

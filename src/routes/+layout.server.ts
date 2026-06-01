@@ -1,6 +1,6 @@
 import { ANALYTICS_ID_LANGUAGE_APP } from '$env/static/private';
 import type { MetaProps } from 'runes-meta-tags';
-import { metaTitle, metaDescription, metaImg } from 'runes-meta-tags';
+import { metaTitle, metaDescription } from 'runes-meta-tags';
 
 const SITE_NAME = 'Norskeord';
 const SITE_URL = 'https://norskeord.no';
@@ -12,7 +12,7 @@ const KEYWORDS =
 export const load = async ({ url, locals }) => {
   const title = metaTitle(url.pathname, __NAME__);
   const description = metaDescription(url.pathname, DEFAULT_DESC);
-  const image = metaImg(url.pathname, __NAME__);
+  const image = `${SITE_URL}/og/default.png`;
   const canonical = `${SITE_URL}${url.pathname}`;
 
   const layoutMetaTags: MetaProps = {

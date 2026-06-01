@@ -42,10 +42,7 @@ test('index page has expected meta og', async ({ page }) => {
   const metaOgUrl = page.locator('meta[property="og:url"]');
   await expect(metaOgUrl).toHaveAttribute('content', 'https://norskeord.no/');
   const metaOgImage = page.locator('meta[property="og:image"]');
-  await expect(metaOgImage).toHaveAttribute(
-    'content',
-    'https://open-graph-vercel.vercel.app/api/norskeord'
-  );
+  await expect(metaOgImage).toHaveAttribute('content', 'https://norskeord.no/og/default.png');
 });
 
 test('index page has expected meta twitter', async ({ page }) => {
@@ -57,8 +54,5 @@ test('index page has expected meta twitter', async ({ page }) => {
     'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
   );
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
-  await expect(metaTwitterImage).toHaveAttribute(
-    'content',
-    'https://open-graph-vercel.vercel.app/api/norskeord'
-  );
+  await expect(metaTwitterImage).toHaveAttribute('content', 'https://norskeord.no/og/default.png');
 });
