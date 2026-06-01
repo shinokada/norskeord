@@ -44,8 +44,6 @@ const uttrykkPreviewLoaders: Record<string, () => Promise<{ default: VocabEntry[
     import('$lib/data/uttrykk-b2-preview.json') as unknown as Promise<{ default: VocabEntry[] }>
 };
 
-const OG_BASE_URL = 'https://open-graph-vercel.vercel.app/api/norskeord';
-
 // ---------------------------------------------------------------------------
 // Server load — runs on every request; HTML is pre-rendered for Google.
 // locals.plan is set by hooks.server.ts before this runs.
@@ -95,13 +93,41 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     : null;
 
   // Build shared meta
-  const ogImage = `${OG_BASE_URL}?title=${encodeURIComponent(categoryName)}&level=${encodeURIComponent(levelUpper)}`;
+  const ogImage = `https://norskeord.no/og/deck/${level.toLowerCase()}/${category}.png`;
   const pageTitle = `Norwegian ${levelUpper} ${categoryName} Vocabulary — Norskeord`;
   const pageDescription = `Learn Norwegian ${categoryName} words with audio flashcards at ${levelUpper} level. Free on Norskeord.`;
+
+  const learningResourceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: pageTitle,
+    description: pageDescription,
+    educationalLevel: levelUpper,
+    inLanguage: 'nb',
+    learningResourceType: 'Flashcards',
+    url: `https://norskeord.no/${level.toLowerCase()}/${category}`,
+    image: ogImage,
+    provider: {
+      '@type': 'Organization',
+      name: 'Norskeord',
+      url: 'https://norskeord.no'
+    }
+  };
+
+  const pageKeywords = [
+    `Norwegian ${levelUpper} vocabulary`,
+    `Norwegian ${categoryName} words`,
+    `learn Norwegian ${categoryName}`,
+    `${categoryName} Norwegian flashcards`,
+    `${levelUpper} Norwegian`,
+    `Norskprøven ${levelUpper}`,
+    `Norwegian ${category}` // slug form, e.g. "Norwegian family-and-relationships"
+  ].join(', ');
 
   const pageMetaTags: MetaProps = {
     title: pageTitle,
     description: pageDescription,
+    keywords: pageKeywords,
     og: {
       title: pageTitle,
       description: pageDescription,
@@ -131,7 +157,8 @@ export const load: PageServerLoad = async ({ params, locals }) => {
           category: 'uttrykk',
           prevCategory,
           nextCategory,
-          pageMetaTags
+          pageMetaTags,
+          learningResourceSchema
         };
       }
     }
@@ -144,7 +171,8 @@ export const load: PageServerLoad = async ({ params, locals }) => {
         category,
         prevCategory,
         nextCategory,
-        pageMetaTags
+        pageMetaTags,
+        learningResourceSchema
       };
     }
   }
@@ -159,7 +187,8 @@ export const load: PageServerLoad = async ({ params, locals }) => {
       category,
       prevCategory,
       nextCategory,
-      pageMetaTags
+      pageMetaTags,
+      learningResourceSchema
     };
   }
 
@@ -172,11 +201,20 @@ export const load: PageServerLoad = async ({ params, locals }) => {
       category,
       prevCategory,
       nextCategory,
-      pageMetaTags
+      pageMetaTags,
+      learningResourceSchema
     };
   }
 
   const vocab = await loader();
   const entries = vocab.default.filter((e) => e.category === category);
-  return { entries, level: levelUpper, category, prevCategory, nextCategory, pageMetaTags };
+  return {
+    entries,
+    level: levelUpper,
+    category,
+    prevCategory,
+    nextCategory,
+    pageMetaTags,
+    learningResourceSchema
+  };
 };

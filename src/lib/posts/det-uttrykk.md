@@ -5,6 +5,16 @@ slug: det-uttrykk
 cefr: B1
 publishedAt: 2026-06-01
 tags: [expressions, vocabulary, speaking, b1]
+decks:
+  - level: a1
+    category: uttrykk-preview
+    label: A1 Uttrykk (preview)
+  - level: a2
+    category: uttrykk-preview
+    label: A2 Uttrykk (preview)
+  - level: b1
+    category: uttrykk-preview
+    label: B1 Uttrykk (preview)
 ---
 
 > **TL;DR:** Some of the most natural-sounding Norwegian phrases start with **det**. Learn these ten and your spoken Norwegian will immediately feel more fluent.

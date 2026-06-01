@@ -5,6 +5,16 @@ slug: klare-vs-orke-vs-greie
 cefr: B1
 publishedAt: 2026-05-21
 tags: [verbs, vocabulary]
+decks:
+  - level: b1
+    category: work
+    label: B1 Work
+  - level: b1
+    category: education
+    label: B1 Education
+  - level: a2
+    category: hobbies
+    label: A2 Hobbies
 ---
 
 ## Kort forklaring
