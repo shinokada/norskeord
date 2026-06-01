@@ -39,10 +39,34 @@ export const load: PageLoad = async ({ params }) => {
           image: ogImage
         }
       };
+
+      const articleSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: meta.title,
+        description: meta.description,
+        datePublished: meta.publishedAt,
+        ...(meta.updatedAt ? { dateModified: meta.updatedAt } : {}),
+        inLanguage: 'nb',
+        image: ogImage,
+        url: `https://norskeord.no/blog/${params.slug}`,
+        author: {
+          '@type': 'Organization',
+          name: 'Norskeord',
+          url: 'https://norskeord.no'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Norskeord',
+          url: 'https://norskeord.no'
+        }
+      };
+
       return {
         content: mod.default as Component,
         meta,
-        pageMetaTags
+        pageMetaTags,
+        articleSchema
       };
     }
   }

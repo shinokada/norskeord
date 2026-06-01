@@ -26,10 +26,14 @@
       day: 'numeric'
     });
   }
+
+  const articleSchemaJson = $derived(JSON.stringify(data.articleSchema));
 </script>
 
 <svelte:head>
   <title>{data.meta.title} — Norskeord</title>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html '<scr' + 'ipt type="application/ld+json">' + articleSchemaJson + '</scr' + 'ipt>'}
 </svelte:head>
 
 <div class="mx-auto max-w-2xl px-4 py-12">
