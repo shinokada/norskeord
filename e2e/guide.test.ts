@@ -32,10 +32,7 @@ test('Guide page has expected meta og', async ({ page }) => {
   const metaOgUrl = page.locator('meta[property="og:url"]');
   await expect(metaOgUrl).toHaveAttribute('content', 'https://norskeord.no/guide');
   const metaOgImage = page.locator('meta[property="og:image"]');
-  await expect(metaOgImage).toHaveAttribute(
-    'content',
-    'https://open-graph-vercel.vercel.app/api/norskeord?title=Guide'
-  );
+  await expect(metaOgImage).toHaveAttribute('content', 'https://norskeord.no/og/default.png');
 });
 
 test('Guide page has expected meta twitter', async ({ page }) => {
@@ -47,8 +44,5 @@ test('Guide page has expected meta twitter', async ({ page }) => {
     'Learn how smart scheduling works, what the flashcard ratings mean, and get answers to common questions about Norskeord — the free Norwegian vocabulary app.'
   );
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
-  await expect(metaTwitterImage).toHaveAttribute(
-    'content',
-    'https://open-graph-vercel.vercel.app/api/norskeord?title=Guide'
-  );
+  await expect(metaTwitterImage).toHaveAttribute('content', 'https://norskeord.no/og/default.png');
 });

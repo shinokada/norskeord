@@ -60,4 +60,28 @@
   <div class="prose prose-gray dark:prose-invert max-w-none text-left">
     <PostContent />
   </div>
+
+  <!-- Practice decks -->
+  {#if data.meta.decks && data.meta.decks.length > 0}
+    <div
+      class="mt-10 rounded-xl border border-blue-100 bg-blue-50 px-6 py-5 dark:border-blue-900 dark:bg-blue-950/40"
+    >
+      <p
+        class="mb-3 text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400"
+      >
+        Practice this vocabulary
+      </p>
+      <div class="flex flex-wrap gap-2">
+        {#each data.meta.decks as deck (deck.level + '/' + deck.category)}
+          <a
+            href="/{deck.level}/{deck.category}"
+            class="inline-flex items-center gap-1.5 rounded-lg border border-blue-200 bg-white px-3 py-1.5 text-sm font-medium text-blue-700 transition hover:bg-blue-100 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-300 dark:hover:bg-blue-900/60"
+          >
+            <span>🃏</span>
+            {deck.label}
+          </a>
+        {/each}
+      </div>
+    </div>
+  {/if}
 </div>

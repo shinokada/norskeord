@@ -5,6 +5,13 @@ slug: god-bra-grei
 cefr: A2
 publishedAt: 2026-05-30
 tags: [adjectives, vocabulary]
+decks:
+  - level: a2
+    category: descriptive-adjectives
+    label: A2 Descriptive Adjectives
+  - level: a1
+    category: adjectives
+    label: A1 Adjectives
 ---
 
 > **TL;DR:** _God_, _bra_, and _grei_ form a scale from strong to neutral. Understanding the difference keeps you from accidentally calling something mediocre when you meant it was great.

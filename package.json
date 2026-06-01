@@ -25,9 +25,12 @@
     "test:unit": "vitest",
     "test": "npm run test:unit -- --run && npm run test:e2e",
     "test:e2e": "playwright test",
-    "ch": "npx changeset && pnpm stats",
+    "ch": "npx changeset && pnpm stats && pnpm og",
     "cv": "npx changeset version",
     "generate:lessons": "npx tsx --env-file=.env scripts/generate-lessons.ts",
+    "og": "node scripts/generate-og.mjs",
+    "og:blog": "node scripts/generate-og.mjs --blog",
+    "og:decks": "node scripts/generate-og.mjs --decks",
     "stats": "node scripts/generate-stats.mjs"
   },
   "devDependencies": {
@@ -52,6 +55,7 @@
     "flowbite": "^4.0.2",
     "flowbite-svelte": "^1.33.1",
     "flowbite-svelte-icons": "^3.1.0",
+    "glob": "^13.0.6",
     "globals": "^17.6.0",
     "jsdom": "^29.1.1",
     "mdsvex": "^0.12.7",
