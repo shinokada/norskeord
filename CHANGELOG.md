@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.13.0
+
+### Minor Changes
+
+- - **New Features**
+    - Blog posts now display "Practice this vocabulary" section with links to related flashcard decks.
+    - Added structured data markup (Schema.org) to flashcard decks and resource pages for improved search visibility.
+  - **Improvements**
+    - Switched to static Open Graph images for blog posts and decks for better performance and consistency.
+    - Enhanced sitemap with multi-locale support (English, Norwegian Bokmål, and default).
+  - **Documentation**
+    - Updated SEO checklist to mark completed items including structured data implementation and keyword optimization.
+
 ## 2.12.0
 
 ### Minor Changes
