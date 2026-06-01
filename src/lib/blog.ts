@@ -4,6 +4,7 @@ export interface PostMeta {
   slug: string;
   cefr: string | string[];
   publishedAt: string;
+  updatedAt?: string;
   tags?: string[];
   type?: 'word' | 'guide';
 }
