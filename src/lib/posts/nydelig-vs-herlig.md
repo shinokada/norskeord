@@ -5,6 +5,13 @@ slug: nydelig-vs-herlig
 cefr: A2
 publishedAt: 2026-05-21
 tags: [adjectives, vocabulary]
+decks:
+  - level: a2
+    category: descriptive-adjectives
+    label: A2 Descriptive Adjectives
+  - level: a1
+    category: adjectives
+    label: A1 Adjectives
 ---
 
 ## Kort forklaring

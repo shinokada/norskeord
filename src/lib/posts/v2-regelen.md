@@ -5,6 +5,13 @@ slug: v2-regelen
 cefr: A2
 publishedAt: 2026-06-03
 tags: [grammar]
+decks:
+  - level: a1
+    category: verbs
+    label: A1 Verbs
+  - level: a2
+    category: descriptive-adjectives
+    label: A2 Descriptive Adjectives
 ---
 
 > **TL;DR:** In Norwegian, the verb is always the second element in a main clause. If something other than the subject comes first, the subject gets pushed after the verb.
