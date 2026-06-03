@@ -2144,7 +2144,7 @@
     "lemma": "skog",
     "english": "a forest / a wood",
     "example": "Vi går tur i skogen om helgen.",
-    "example_english": "We go for a walk in the forest at the weekend.",
+    "example_english": "We go for a walk in the forest on weekends.",
     "level": "A2",
     "category": "nature",
     "part": "noun"
@@ -2314,7 +2314,7 @@
     "lemma": "gå tur",
     "english": "to go for a walk / to hike",
     "example": "Vi går tur i fjellet i helgen.",
-    "example_english": "We go for a walk in the mountains at the weekend.",
+    "example_english": "We go for a walk in the mountains on weekends.",
     "level": "A2",
     "category": "nature",
     "part": "verb"
@@ -3154,7 +3154,7 @@
     "lemma": "treffe venner",
     "english": "to meet friends",
     "example": "Jeg treffer venner i helgen.",
-    "example_english": "I meet friends at the weekend.",
+    "example_english": "I meet friends on weekends.",
     "level": "A2",
     "category": "social-life",
     "part": "phrase"
@@ -3243,8 +3243,8 @@
     "norsk": "frivillig arbeid",
     "lemma": "frivillig arbeid",
     "english": "voluntary work",
-    "example": "Hun gjør frivillig arbeid på helgene.",
-    "example_english": "She does voluntary work at weekends.",
+    "example": "Hun gjør frivillig arbeid i helgen.",
+    "example_english": "She does voluntary work on weekends.",
     "level": "A2",
     "category": "social-life",
     "part": "phrase"
