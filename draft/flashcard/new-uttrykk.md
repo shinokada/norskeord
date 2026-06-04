@@ -15,3 +15,18 @@ nett i kroppen: be neat, light build
 det går an å: It is possible to
 så vidt det går an: as much as possible / to the limit: Han løp så fort det går an. Vi hjelper så mye det går an.
 Går det an, da?!: Seriously? Is that even possible?
+etter hvert: gradually
+å ta sikte på: aim for
+topp for: great for: Trening er topp for sjel og kropp.
+bråke med
+ligge unna
+sette fra seg: put down
+Tut og kjør: get going, Off you go: Alt er klart, så det er bare tut og kjør!
+Som perler på en snor: One after another in a neat sequence: Hun svarte riktig på spørsmålene som perler på en snor. På eksamen kom de vanskelige spørsmålene som perler på en snor.
+helt enig: completely agree
+Må jo det, vet du: Have to do that, you know.: Skal du jobbe i helga? Må jo det, vet du.
+
+
+
+
+
