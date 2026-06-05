@@ -85,7 +85,7 @@ _It happens (that …)_
 
 **7. Det spørs.**
 _It's uncertain. / Hard to say._
-→ A colloquial way to express doubt or hesitation — more natural-sounding than *jeg vet ikke*.
+→ A colloquial way to express doubt or hesitation — more natural-sounding than _jeg vet ikke_.
 
 > — Kommer han i morgen? Det spørs.
 > — Det spørs om vi rekker det.
