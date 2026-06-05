@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { State } from 'ts-fsrs';
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import type { CEFRLevel, CardProgress } from '$lib/types';
@@ -97,18 +98,35 @@
     })
   );
 
-  // A1 and A2 start open; B1+ collapsed (most users haven't touched them yet)
-  let expanded = $state<Record<CEFRLevel, boolean>>({
+  const STORAGE_KEY = 'stats-category-expanded';
+
+  const defaults: Record<CEFRLevel, boolean> = {
     A1: true,
     A2: true,
     B1: false,
     B2: false,
     C1: false,
     C2: false
+  };
+
+  let expanded = $state<Record<CEFRLevel, boolean>>({ ...defaults });
+
+  onMount(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) expanded = { ...defaults, ...JSON.parse(saved) };
+    } catch {
+      /* ignore */
+    }
   });
 
   function toggle(level: CEFRLevel) {
     expanded[level] = !expanded[level];
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(expanded));
+    } catch {
+      /* ignore */
+    }
   }
 </script>
 
@@ -117,17 +135,17 @@
     {@const isOpen = expanded[lg.level]}
     {@const overallPct = lg.totalCards > 0 ? Math.round((lg.totalSeen / lg.totalCards) * 100) : 0}
 
-    <div class="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+    <div class="overflow-hidden rounded-xl border border-gray-200 dark:border-white/10">
       <!-- Level accordion header -->
       <button
-        class="flex w-full items-center justify-between bg-gray-50 px-4 py-3 text-left transition-colors hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700/60"
+        class="flex w-full items-center justify-between bg-gray-50 px-4 py-3 text-left transition-colors hover:bg-gray-100 dark:bg-indigo-900/40 dark:hover:bg-indigo-900/60"
         onclick={() => toggle(lg.level)}
         aria-expanded={isOpen}
       >
         <div class="flex items-center gap-3">
           <span class="w-8 text-sm font-bold {levelTextColors[lg.level]}">{lg.level}</span>
           <!-- Mini overall progress pill -->
-          <div class="h-2 w-28 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600">
+          <div class="h-2 w-28 overflow-hidden rounded-full bg-gray-200 dark:bg-indigo-900/60">
             <div
               class="h-full rounded-full transition-all {levelColors[lg.level]}"
               style="width: {overallPct}%"
@@ -150,7 +168,9 @@
 
       <!-- Category rows -->
       {#if isOpen}
-        <div class="divide-y divide-gray-100 bg-white dark:divide-gray-700/60 dark:bg-gray-900">
+        <div
+          class="divide-y divide-gray-100 bg-white dark:divide-gray-700/60 dark:bg-indigo-950/60"
+        >
           {#each lg.cats as cs (cs.category)}
             {@const seenPct = cs.total > 0 ? (cs.seen / cs.total) * 100 : 0}
             {@const reviewW = cs.seen > 0 ? (cs.review / cs.seen) * seenPct : 0}
@@ -172,7 +192,7 @@
               <!-- Progress bar: full width = 100% of vocab total -->
               <div class="relative min-w-0 flex-1">
                 <div
-                  class="h-4 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-gray-700"
+                  class="h-4 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40"
                   title="{cs.seen}/{cs.total} cards seen"
                 >
                   <div class="flex h-full">
@@ -224,7 +244,7 @@
 
         <!-- Legend -->
         <div
-          class="flex flex-wrap gap-4 border-t border-gray-100 bg-gray-50 px-4 py-2 text-xs text-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-500"
+          class="flex flex-wrap gap-4 border-t border-gray-100 bg-gray-50 px-4 py-2 text-xs text-gray-400 dark:border-gray-700/60 dark:bg-indigo-900/40 dark:text-gray-500"
         >
           <span class="flex items-center gap-1.5">
             <span class="inline-block h-2 w-3 rounded-sm {levelColors[lg.level]}"></span>
