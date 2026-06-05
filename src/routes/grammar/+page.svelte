@@ -14,9 +14,9 @@
   <meta name="description" content={m.grammar_subtitle()} />
 </svelte:head>
 
-<div class="mx-auto max-w-3xl px-4 py-8">
-  <div class="mb-8 text-center">
-    <h1 class="mb-2 text-3xl font-bold dark:text-white">📐 {m.grammar_title()}</h1>
+<div class="mx-auto max-w-3xl px-4 py-8 text-left">
+  <div class="mb-8">
+    <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.grammar_title()}</h1>
     <p class="text-gray-500 dark:text-gray-400">{m.grammar_subtitle()}</p>
   </div>
 
@@ -44,7 +44,25 @@
         {/each}
       </div>
     {:else}
-      <!-- Free users see locked cards as teasers linking to /plus -->
+      <!-- Free users: upsell banner then locked topic cards -->
+      <div
+        class="mb-6 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/20"
+      >
+        <p class="mb-1 text-sm font-semibold text-indigo-800 dark:text-indigo-200">
+          {data.lockedTopics.length} more topics with Plus
+        </p>
+        <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+          Upgrade to unlock advanced sentence structure topics — word order, relative clauses,
+          det-sentences, sentence adverbials, and more.
+        </p>
+        <a
+          href="/plus?ref=grammar-topics"
+          class="inline-block rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
+        >
+          {m.grammar_plus_cta()}
+        </a>
+      </div>
+
       <div class="grid gap-4 sm:grid-cols-2">
         {#each data.lockedTopics as t (t.topic)}
           {@const rule = GRAMMAR_RULES[t.topic]}
