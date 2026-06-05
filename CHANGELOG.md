@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.14.1
+
+### Patch Changes
+
+- docs: plus page update
+
 ## 2.14.0
 
 ### Minor Changes
