@@ -22,37 +22,24 @@ CREATE TABLE public.card_progress (
   CONSTRAINT card_progress_pkey PRIMARY KEY (id),
   CONSTRAINT card_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
-CREATE TABLE public.contact_messages (
-  id uuid NOT NULL DEFAULT gen_random_uuid(),
+CREATE TABLE public.subscriptions (
   user_id uuid NOT NULL,
-  subject text NOT NULL,
-  message text NOT NULL,
-  app_version text,
-  ip_address text,
-  user_agent text,
-  created_at timestamp with time zone NOT NULL DEFAULT now(),
-  CONSTRAINT contact_messages_pkey PRIMARY KEY (id),
-  CONSTRAINT contact_messages_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+  plan text NOT NULL DEFAULT 'free'::text CHECK (plan = ANY (ARRAY['free'::text, 'plus'::text])),
+  billing_interval text CHECK (billing_interval = ANY (ARRAY['monthly'::text, 'annual'::text])),
+  valid_until timestamp with time zone,
+  lemon_squeezy_customer_id text,
+  lemon_squeezy_subscription_id text,
+  lemon_squeezy_order_id text,
+  status text NOT NULL DEFAULT 'inactive'::text CHECK (status = ANY (ARRAY['active'::text, 'cancelled'::text, 'expired'::text, 'inactive'::text, 'past_due'::text])),
+  CONSTRAINT subscriptions_pkey PRIMARY KEY (user_id),
+  CONSTRAINT subscriptions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
-CREATE TABLE public.daily_lessons (
-  id uuid NOT NULL DEFAULT gen_random_uuid(),
-  level_group text NOT NULL CHECK (level_group = ANY (ARRAY['A'::text, 'B'::text])),
-  lesson_date date NOT NULL,
-  focus_topic text NOT NULL,
-  main_text text NOT NULL,
-  vocabulary jsonb NOT NULL,
-  exercises jsonb NOT NULL,
-  approved boolean NOT NULL DEFAULT false,
-  generated_at timestamp with time zone DEFAULT now(),
-  CONSTRAINT daily_lessons_pkey PRIMARY KEY (id)
-);
-CREATE TABLE public.email_subscribers (
+CREATE TABLE public.user_settings (
   user_id uuid NOT NULL,
-  level text NOT NULL CHECK (level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C1'::text, 'C2'::text])),
-  subscribed_at timestamp with time zone DEFAULT now(),
-  active boolean DEFAULT true,
-  CONSTRAINT email_subscribers_pkey PRIMARY KEY (user_id),
-  CONSTRAINT email_subscribers_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+  fsrs_weights ARRAY,
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT user_settings_pkey PRIMARY KEY (user_id),
+  CONSTRAINT user_settings_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
 CREATE TABLE public.profiles (
   id uuid NOT NULL,
@@ -87,24 +74,58 @@ CREATE TABLE public.study_days (
   CONSTRAINT study_days_pkey PRIMARY KEY (user_id, day),
   CONSTRAINT study_days_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
-CREATE TABLE public.subscriptions (
+CREATE TABLE public.email_subscribers (
   user_id uuid NOT NULL,
-  plan text NOT NULL DEFAULT 'free'::text CHECK (plan = ANY (ARRAY['free'::text, 'plus'::text])),
-  billing_interval text CHECK (billing_interval = ANY (ARRAY['monthly'::text, 'annual'::text])),
-  valid_until timestamp with time zone,
-  lemon_squeezy_customer_id text,
-  lemon_squeezy_subscription_id text,
-  lemon_squeezy_order_id text,
-  status text NOT NULL DEFAULT 'inactive'::text CHECK (status = ANY (ARRAY['active'::text, 'cancelled'::text, 'expired'::text, 'inactive'::text, 'past_due'::text])),
-  CONSTRAINT subscriptions_pkey PRIMARY KEY (user_id),
-  CONSTRAINT subscriptions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+  level text NOT NULL CHECK (level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C1'::text, 'C2'::text])),
+  subscribed_at timestamp with time zone DEFAULT now(),
+  active boolean DEFAULT true,
+  CONSTRAINT email_subscribers_pkey PRIMARY KEY (user_id),
+  CONSTRAINT email_subscribers_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
-CREATE TABLE public.user_settings (
+CREATE TABLE public.daily_lessons (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  level_group text NOT NULL CHECK (level_group = ANY (ARRAY['A'::text, 'B'::text])),
+  lesson_date date NOT NULL,
+  focus_topic text NOT NULL,
+  main_text text NOT NULL,
+  vocabulary jsonb NOT NULL,
+  exercises jsonb NOT NULL,
+  approved boolean NOT NULL DEFAULT false,
+  generated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT daily_lessons_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.contact_messages (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
   user_id uuid NOT NULL,
-  fsrs_weights ARRAY,
-  updated_at timestamp with time zone DEFAULT now(),
-  CONSTRAINT user_settings_pkey PRIMARY KEY (user_id),
-  CONSTRAINT user_settings_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+  subject text NOT NULL,
+  message text NOT NULL,
+  app_version text,
+  ip_address text,
+  user_agent text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT contact_messages_pkey PRIMARY KEY (id),
+  CONSTRAINT contact_messages_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.grammar_progress (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  question_id text NOT NULL,
+  topic text NOT NULL,
+  cefr text NOT NULL,
+  due timestamp with time zone NOT NULL DEFAULT now(),
+  stability numeric NOT NULL DEFAULT 0,
+  difficulty numeric NOT NULL DEFAULT 0,
+  elapsed_days integer NOT NULL DEFAULT 0,
+  scheduled_days integer NOT NULL DEFAULT 0,
+  learning_steps integer NOT NULL DEFAULT 0,
+  reps integer NOT NULL DEFAULT 0,
+  lapses integer NOT NULL DEFAULT 0,
+  state integer NOT NULL DEFAULT 0,
+  last_review timestamp with time zone,
+  seen_count integer NOT NULL DEFAULT 1,
+  last_seen timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT grammar_progress_pkey PRIMARY KEY (id),
+  CONSTRAINT grammar_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
 
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
