@@ -1,5 +1,17 @@
 # norske-flashcard
 
+## 2.14.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a new Grammar section under Prepare with interactive exercises (fill-in-the-blank, word ordering, sentence transformation).
+    - Grammar progress now tracked separately in stats with practiced/due/mastered counts.
+    - Plus-tier gating applied to select grammar topics.
+  - **Documentation**
+    - Added educational guides on Norwegian subordinate clauses, sentence adverbials, and related grammar topics.
+    - Enhanced learning guides emphasizing active engagement with handwritten practice and auditory reinforcement.
+
 ## 2.13.0
 
 ### Minor Changes
