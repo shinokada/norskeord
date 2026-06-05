@@ -201,3 +201,10 @@ avhør
 utvist
 et opphold
 en trillebag
+å dunke
+å skrangle
+å kapre
+å riste
+en skall
+å trampe
+en museflette

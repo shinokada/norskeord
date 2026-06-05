@@ -5,7 +5,9 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
 ---
+
 - plus page
+
 ```
 Now let me look at the message strings to understand the actual copy:Now I have a full picture of the page. Let me render a mock of it mentally and give you thorough feedback.Here's my honest assessment after reading the full page — code, messages, and structure.
 
@@ -78,6 +80,7 @@ The price (49 NOK/month) only appears in the button label and in `profile_sub_up
 
 The pasted part is from the last session. I asked how to improve /plus page.
 Can you fix the /plus page according to the suggestion and also update /grammar page according to the suggestions.
+
 ---
 
 - Grammtikk section for B2/C1
