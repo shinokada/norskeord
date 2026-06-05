@@ -343,7 +343,7 @@
     </div>
   {/if}
   {#if quizState === 'idle'}
-    <div class="text-center">
+    <div>
       <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.quiz_title()}</h1>
       <p class="mb-8 text-gray-500 dark:text-gray-400">
         {m.quiz_subtitle()}
@@ -722,7 +722,7 @@
       </p>
     </div>
   {:else if quizState === 'summary'}
-    <div class="text-center">
+    <div>
       <p class="mb-1 text-5xl">{scoreEmoji(correctCount, questions.length)}</p>
       <h2 class="mt-3 text-2xl font-bold dark:text-white">{m.quiz_session_done()}</h2>
       <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
@@ -844,7 +844,7 @@
       </div>
 
       <!-- Action buttons -->
-      <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <div class="mt-6 flex flex-wrap gap-3">
         <button
           type="button"
           onclick={startQuiz}
