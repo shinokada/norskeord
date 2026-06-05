@@ -1,0 +1,267 @@
+import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { normalizeAnswer, gradeGrammarAnswer, buildGrammarSession, shuffleTokens } from './session';
+import {
+  loadGrammarProgressMap,
+  saveGrammarProgress,
+  GRAMMAR_LS_PREFIX,
+  clearUserProgress
+} from '$lib/progress';
+import {
+  freeGrammarQuestionIds,
+  FREE_GRAMMAR_PER_TOPIC,
+  questionLevels,
+  topicLevels
+} from '$lib/types';
+import type { CardProgress, GrammarQuestion } from '$lib/types';
+import { createEmptyCard } from 'ts-fsrs';
+
+// ── localStorage mock ─────────────────────────────────────────────────────────
+
+const store: Record<string, string> = {};
+
+beforeEach(() => {
+  Object.keys(store).forEach((k) => delete store[k]);
+  vi.stubGlobal('localStorage', {
+    get length() {
+      return Object.keys(store).length;
+    },
+    key: (i: number) => Object.keys(store)[i] ?? null,
+    getItem: (k: string) => store[k] ?? null,
+    setItem: (k: string, v: string) => {
+      store[k] = v;
+    },
+    removeItem: (k: string) => {
+      delete store[k];
+    },
+    clear: () => {
+      Object.keys(store).forEach((k) => delete store[k]);
+    }
+  });
+});
+
+// ── Fixtures ──────────────────────────────────────────────────────────────────
+
+function makeQuestion(overrides: Partial<GrammarQuestion> = {}): GrammarQuestion {
+  return {
+    id: 'gq-ikke-001',
+    topic: 'ikke-placement',
+    cefr: 'A2',
+    type: 'fill',
+    sentence: 'Jeg liker _____ vinteren.',
+    answer: 'ikke',
+    ...overrides
+  };
+}
+
+function makeProgress(daysUntilDue: number): CardProgress {
+  const due = new Date();
+  due.setDate(due.getDate() + daysUntilDue);
+  return {
+    fsrs: { ...createEmptyCard(), due },
+    seenCount: 1,
+    lastSeen: new Date().toISOString(),
+    level: 'A2',
+    category: 'ikke-placement' as CardProgress['category']
+  };
+}
+
+// ── normalizeAnswer ───────────────────────────────────────────────────────────
+
+describe('normalizeAnswer', () => {
+  it('lowercases and trims', () => {
+    expect(normalizeAnswer('  Ikke ')).toBe('ikke');
+  });
+
+  it('strips trailing punctuation', () => {
+    expect(normalizeAnswer('Det er ikke sant.')).toBe('det er ikke sant');
+  });
+
+  it('collapses internal whitespace', () => {
+    expect(normalizeAnswer('Jeg   forstår  ikke')).toBe('jeg forstår ikke');
+  });
+});
+
+// ── gradeGrammarAnswer ────────────────────────────────────────────────────────
+
+describe('gradeGrammarAnswer', () => {
+  it('marks an exact match correct with "good"', () => {
+    const r = gradeGrammarAnswer('ikke', makeQuestion());
+    expect(r).toEqual({ correct: true, rating: 'good' });
+  });
+
+  it('is case- and punctuation-insensitive', () => {
+    const q = makeQuestion({ answer: 'Det er ikke sant.' });
+    expect(gradeGrammarAnswer('det er ikke sant', q).correct).toBe(true);
+  });
+
+  it('accepts a 1-character typo as correct with "hard"', () => {
+    const q = makeQuestion({ answer: 'vinteren' });
+    expect(gradeGrammarAnswer('vintren', q)).toEqual({ correct: true, rating: 'hard' });
+  });
+
+  it('rejects a far-off answer with "again"', () => {
+    expect(gradeGrammarAnswer('alltid', makeQuestion())).toEqual({
+      correct: false,
+      rating: 'again'
+    });
+  });
+
+  it('requires an exact match for short answers (no typo leniency)', () => {
+    // "ja" is one edit from "jo" but is the WRONG option — must be rejected.
+    const q = makeQuestion({ topic: 'svar-ja-jo-nei', answer: 'Jo' });
+    expect(gradeGrammarAnswer('ja', q)).toEqual({ correct: false, rating: 'again' });
+    expect(gradeGrammarAnswer('Jo', q).correct).toBe(true);
+  });
+
+  it('treats empty input as incorrect', () => {
+    expect(gradeGrammarAnswer('', makeQuestion())).toEqual({ correct: false, rating: 'again' });
+  });
+
+  it('accepts any of the alternates', () => {
+    const q = makeQuestion({
+      type: 'order',
+      answer: 'Jeg forstår ikke det.',
+      alternates: ['Jeg forstår ikke det']
+    });
+    expect(gradeGrammarAnswer('Jeg forstår ikke det', q).correct).toBe(true);
+  });
+});
+
+// ── buildGrammarSession ───────────────────────────────────────────────────────
+
+describe('buildGrammarSession', () => {
+  const pool = Array.from({ length: 20 }, (_, i) =>
+    makeQuestion({ id: `gq-${i}`, answer: `a${i}` })
+  );
+
+  it('caps the session at the requested count', () => {
+    expect(buildGrammarSession(pool, {}, 10)).toHaveLength(10);
+  });
+
+  it('returns all questions when fewer than the count exist', () => {
+    expect(buildGrammarSession(pool.slice(0, 3), {}, 10)).toHaveLength(3);
+  });
+
+  it('prioritises overdue/new cards over far-future ones', () => {
+    // Make every card far-future except one, which we expect to be selected.
+    const map: Record<string, CardProgress> = {};
+    for (const q of pool) map[q.id] = makeProgress(365);
+    map['gq-7'] = makeProgress(-5); // overdue
+    const session = buildGrammarSession(pool, map, 1);
+    expect(session[0].id).toBe('gq-7');
+  });
+});
+
+// ── shuffleTokens ─────────────────────────────────────────────────────────────
+
+describe('shuffleTokens', () => {
+  it('preserves the multiset of tokens', () => {
+    const tokens = ['ikke', 'Jeg', 'forstår', 'det'];
+    expect([...shuffleTokens(tokens)].sort()).toEqual([...tokens].sort());
+  });
+
+  it('handles a single token', () => {
+    expect(shuffleTokens(['ord'])).toEqual(['ord']);
+  });
+});
+
+// ── freeGrammarQuestionIds ────────────────────────────────────────────────────
+
+describe('freeGrammarQuestionIds', () => {
+  it('frees the first N non-plusOnly questions per topic', () => {
+    const qs: GrammarQuestion[] = Array.from({ length: 8 }, (_, i) =>
+      makeQuestion({ id: `a2-${i}`, cefr: 'A2' })
+    );
+    const free = freeGrammarQuestionIds(qs);
+    expect(free.size).toBe(FREE_GRAMMAR_PER_TOPIC);
+    expect(free.has('a2-0')).toBe(true);
+    expect(free.has(`a2-${FREE_GRAMMAR_PER_TOPIC}`)).toBe(false);
+  });
+
+  it('budgets per topic, so each topic gets its own free taste', () => {
+    // Two topics — each should get its own N free, not share.
+    const qs: GrammarQuestion[] = [
+      ...Array.from({ length: 8 }, (_, i) =>
+        makeQuestion({ id: `ikke-${i}`, topic: 'ikke-placement', cefr: 'A2' })
+      ),
+      ...Array.from({ length: 8 }, (_, i) =>
+        makeQuestion({ id: `det-${i}`, topic: 'det-er-ikke', cefr: 'A2' })
+      )
+    ];
+    const free = freeGrammarQuestionIds(qs);
+    expect(free.size).toBe(FREE_GRAMMAR_PER_TOPIC * 2);
+    expect(free.has('ikke-0')).toBe(true);
+    expect(free.has('det-0')).toBe(true);
+  });
+
+  it('never frees plusOnly questions', () => {
+    const qs = [
+      makeQuestion({ id: 'p1', cefr: 'B2', plusOnly: true }),
+      makeQuestion({ id: 'f1', cefr: 'B2' })
+    ];
+    const free = freeGrammarQuestionIds(qs);
+    expect(free.has('p1')).toBe(false);
+    expect(free.has('f1')).toBe(true);
+  });
+});
+
+// ── questionLevels / topicLevels ──────────────────────────────────────────────
+
+describe('questionLevels', () => {
+  it('returns the levels array when present', () => {
+    expect(questionLevels(makeQuestion({ cefr: 'B2', levels: ['B2', 'C1'] }))).toEqual([
+      'B2',
+      'C1'
+    ]);
+  });
+
+  it('falls back to [cefr] when levels is absent', () => {
+    expect(questionLevels(makeQuestion({ cefr: 'A2' }))).toEqual(['A2']);
+  });
+});
+
+describe('topicLevels', () => {
+  it('returns the sorted, de-duplicated CEFR span of a question list', () => {
+    const qs = [
+      makeQuestion({ id: 'a', cefr: 'A2' }),
+      makeQuestion({ id: 'b', cefr: 'B2', levels: ['B2', 'C1'] }),
+      makeQuestion({ id: 'c', cefr: 'B1' })
+    ];
+    expect(topicLevels(qs)).toEqual(['A2', 'B1', 'B2', 'C1']);
+  });
+});
+
+// ── grammar progress (guest / localStorage) ───────────────────────────────────
+
+describe('saveGrammarProgress + loadGrammarProgressMap', () => {
+  it('persists and rehydrates a grammar question keyed by id', async () => {
+    const q = makeQuestion();
+    const map = await saveGrammarProgress(q, 'good', {}, null);
+    expect(map[q.id].seenCount).toBe(1);
+    expect(localStorage.getItem(GRAMMAR_LS_PREFIX + q.id)).not.toBeNull();
+
+    const loaded = loadGrammarProgressMap();
+    expect(loaded[q.id]).toBeDefined();
+    expect(loaded[q.id].fsrs.due).toBeInstanceOf(Date);
+  });
+
+  it('increments seenCount across ratings', async () => {
+    const q = makeQuestion();
+    let map = await saveGrammarProgress(q, 'good', {}, null);
+    map = await saveGrammarProgress(q, 'again', map, null);
+    expect(map[q.id].seenCount).toBe(2);
+  });
+
+  it('does not collide with the vocab progress- namespace', async () => {
+    const q = makeQuestion();
+    await saveGrammarProgress(q, 'good', {}, null);
+    // grammar key uses the 'grammar-' prefix, not 'progress-'
+    expect(localStorage.getItem('progress-' + q.id)).toBeNull();
+  });
+
+  it('clearUserProgress removes grammar keys', async () => {
+    await saveGrammarProgress(makeQuestion(), 'good', {}, null);
+    clearUserProgress();
+    expect(loadGrammarProgressMap()).toEqual({});
+  });
+});

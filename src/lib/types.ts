@@ -170,6 +170,20 @@ export const CATEGORIES_BY_LEVEL = {
 export type Category = (typeof CATEGORIES_BY_LEVEL)[CEFRLevel][number];
 
 /**
+ * Grammar topics available to free users. Everything else requires Plus.
+ */
+export const FREE_GRAMMAR_TOPICS = new Set<GrammarTopic>([
+  'ikke-placement',
+  'v2-word-order',
+  'det-er-ikke',
+  'modal-verb-order'
+]);
+
+export function isFreeGrammarTopic(topic: GrammarTopic): boolean {
+  return FREE_GRAMMAR_TOPICS.has(topic);
+}
+
+/**
  * Categories that require a Plus subscription.
  * Free users can see these in the picker but cannot open them.
  * A1 and A2 are always fully free — not listed here.
@@ -412,4 +426,99 @@ export interface NorskprovenData {
   reading: ReadingPassage[];
   writing: WritingPrompt[];
   oral: OralPrompt[];
+}
+
+// ── Grammar ──────────────────────────────────────────────────────────────────
+
+export type GrammarTopic =
+  | 'ikke-placement' // ikke in main vs subordinate clauses
+  | 'v2-word-order' // inversion after fronted adverbials
+  | 'det-sentence' // At X er Y → Det er Y at X
+  | 'det-er-ikke' // ordering det / er / ikke
+  | 'modal-verb-order' // modal + infinitive position
+  | 'subordinate-order' // general subordinate clause word order
+  | 'relative-som' // relative clauses with «som» (B2–C1)
+  | 'setningsadverbial' // sentence adverbial placement
+  | 'adverbial-fronting' // fronting adverbials with V2 inversion
+  | 'svar-ja-jo-nei'; // short answers: ja / jo / nei (B2–C1)
+
+export interface GrammarRule {
+  id: GrammarTopic;
+  titleEn: string;
+  titleNb: string;
+  explanationEn: string; // short rule shown on wrong answer
+  explanationNb: string;
+  blogSlug?: string; // link to related blog post
+}
+
+export interface GrammarQuestion {
+  id: string; // stable key for FSRS, e.g. 'gq-ikke-001'
+  topic: GrammarTopic;
+  cefr: CEFRLevel; // PRIMARY level — drives the free-tier budget + FSRS progress bucket
+  // Optional multi-level tag for display/filtering. A grammar point often spans
+  // bands (e.g. ["B2","C1"]). Defaults to [cefr] when absent — see questionLevels().
+  levels?: CEFRLevel[];
+  type: 'fill' | 'order' | 'transform';
+  // Per-question instruction shown above the stimulus, e.g.
+  // "Embed in: «Jeg tror at …»" or "Translate into Norwegian:".
+  // Lets transform/production items state the task that the generic type
+  // label can't. Written in the learner's L1 (English) with NB fragments quoted.
+  prompt?: string;
+  // --- fill type ---
+  sentence?: string; // e.g. "Jeg vet at han _____ frisk."  (___ = the blank)
+  words?: string[]; // word bank to arrange in the blank, e.g. ["ikke", "er"]
+  // --- order type ---
+  tokens?: string[]; // word list shown as chips (reshuffled for display)
+  // --- transform type ---
+  source?: string; // sentence to rewrite, or an L1 sentence to translate
+  // --- shared ---
+  answer: string; // primary correct answer (the blank span for fill; full sentence otherwise)
+  alternates?: string[]; // other accepted forms
+  hint?: string; // optional nudge shown after a wrong attempt
+  plusOnly?: boolean; // gate advanced questions behind Plus
+}
+
+/**
+ * How many grammar questions are free per topic (total, across all CEFR levels).
+ * The first N non-plusOnly questions of each topic (in grammar.json file order)
+ * are free; everything else requires Plus. Tune this single value to
+ * widen/tighten the free tier.
+ */
+export const FREE_GRAMMAR_PER_TOPIC = 3;
+
+/**
+ * Given the full grammar question list, returns the set of question ids that are
+ * free for guest/free users: within each topic, the first
+ * FREE_GRAMMAR_PER_TOPIC non-plusOnly questions in file order.
+ * plusOnly questions are never free.
+ */
+export function freeGrammarQuestionIds(questions: GrammarQuestion[]): Set<string> {
+  const seenPerTopic: Record<string, number> = {};
+  const free = new Set<string>();
+  for (const q of questions) {
+    if (q.plusOnly) continue;
+    const seen = seenPerTopic[q.topic] ?? 0;
+    if (seen < FREE_GRAMMAR_PER_TOPIC) {
+      free.add(q.id);
+      seenPerTopic[q.topic] = seen + 1;
+    }
+  }
+  return free;
+}
+
+const CEFR_ORDER: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+
+/** The CEFR levels a question is tagged with — its `levels` array, or `[cefr]`. */
+export function questionLevels(q: GrammarQuestion): CEFRLevel[] {
+  return q.levels && q.levels.length ? q.levels : [q.cefr];
+}
+
+/**
+ * The sorted, de-duplicated set of CEFR levels covered by a list of questions
+ * (across their `levels` tags). Used to show level badges on a topic card.
+ */
+export function topicLevels(questions: GrammarQuestion[]): CEFRLevel[] {
+  const set = new Set<CEFRLevel>();
+  for (const q of questions) for (const l of questionLevels(q)) set.add(l);
+  return CEFR_ORDER.filter((l) => set.has(l));
 }
