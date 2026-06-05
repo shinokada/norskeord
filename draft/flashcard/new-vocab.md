@@ -208,3 +208,5 @@ en trillebag
 en skall
 å trampe
 en museflette
+en hestehale
+svakt
