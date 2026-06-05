@@ -100,7 +100,6 @@
     }
   ]);
 
-  // 4 core features — removed Norskprøven and Quiz cards per UX review
   const plusFeatures = $derived([
     {
       icon: '🧠',
@@ -121,6 +120,16 @@
       icon: '📊',
       title: m.plus_feature_4_title(),
       body: m.plus_feature_4_body()
+    },
+    {
+      icon: '🎯',
+      title: m.plus_feature_5_title(),
+      body: m.plus_feature_5_body()
+    },
+    {
+      icon: '📝',
+      title: m.plus_feature_norskproven_title(),
+      body: m.plus_feature_norskproven_body()
     }
   ]);
 
