@@ -6,7 +6,18 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 ---
 
-I also want to order src/lib/vocab-b2.json according to category field and merge vocab-b2-new.json to vocab-b2.json file according to category field.
+---
+
+- Grammtikk section for B2/C1
+  This is different from Quiz.
+  Quiz has one question by one question. For grammer questions, I'd like to show all the questions at once and user type or select answers.
+
+- https://edition.cnn.com/2026/06/01/health/screens-in-school-education-tech-wellness
+  Study after study [shows](https://www.sciencedirect.com/science/article/pii/S1747938X18300101?via%3Dihub) that students’ comprehension is better when they read printed material, rather than content on screens. Similarly, they comprehend more when they [write notes by hand](https://www.tandfonline.com/doi/abs/10.1080/02568543.2020.1781307) rather than typing them.
+  Technology won't help you unless you engage yourself actively. Generally techonology has negative effect on learning unless engage yourself actively.
+  I need to tell how to engage yourself really learning Norwegian using norskeord. Write on paper, listen and repeat, etc.
+
+- I also want to order src/lib/vocab-b2.json according to category field and merge vocab-b2-new.json to vocab-b2.json file according to category field.
 
 ## Solved
 

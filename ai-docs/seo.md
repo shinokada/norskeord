@@ -52,7 +52,7 @@ The layout-level `KEYWORDS` in `+layout.server.ts` is decent but generic. For in
 
 Blog slugs currently fall back to the layout's `metaImg`. Setting a per-post OG image (even a generated one like you use for vocab pages via `open-graph-vercel`) would significantly improve click-through rates when posts are shared on social media.
 
-### 7. Internal Linking from Blog Posts to Flashcard Decks 
+### 7. Internal Linking from Blog Posts to Flashcard Decks
 
 If your blog posts discuss vocabulary topics (e.g. "How to use Norwegian verbs") they should link to the corresponding `/b1/verbs` or similar deck. This passes link equity to your flashcard pages and keeps users engaged. It doesn't look like this is systematically done yet.
 
@@ -90,8 +90,8 @@ These can be fired with `runatics.event('event-name')` or however the Runatics A
 
 ### Quick Priority List
 
-| Priority | Action                                                           |
-| -------- | ---------------------------------------------------------------- |
+| Priority  | Action                                                           |
+| --------- | ---------------------------------------------------------------- |
 | 🔴 High   | Submit sitemap to Google Search Console                          |
 | 🔴 High   | Verify `ANALYTICS_ID_LANGUAGE_APP` is set in Vercel prod         |
 | 🟠 Medium | Add `Article` JSON-LD to blog post pages                         |
