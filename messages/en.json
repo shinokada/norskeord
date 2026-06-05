@@ -277,7 +277,7 @@
   "login_error_generic": "Something went wrong. Please try again.",
 
   "plus_heading": "Study smarter with Norske Flashcard Plus",
-  "plus_subheading": "Study smarter, not longer. Plus tracks how well you know each word and shows you only the cards worth reviewing today — so every session actually sticks.",
+  "plus_subheading": "Plus tracks how well you know each word and shows you only the cards worth reviewing today — so every session actually sticks.",
   "plus_features_heading": "What you get with Plus",
   "plus_feature_1_title": "Study only what you need today",
   "plus_feature_1_body": "The app tracks which words you find easy and which ones you keep forgetting. Each day it shows you only the cards worth reviewing — so you spend less time and remember more.",
@@ -326,6 +326,9 @@
   "plus_row_exam": "Norskprøven B1 preparation",
   "plus_row_exam_free": "—",
   "plus_row_exam_plus": "Included",
+  "plus_row_grammar": "Grammar topics",
+  "plus_row_grammar_free": "4 topics",
+  "plus_row_grammar_plus": "All topics",
   "plus_row_quiz": "Quiz mode",
   "plus_row_quiz_free": "3 categories per level",
   "plus_row_quiz_plus": "All categories",
