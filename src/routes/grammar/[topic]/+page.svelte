@@ -36,7 +36,7 @@
     </a>
   </div>
 
-  <h1 class="mb-6 text-xl font-bold text-gray-900 dark:text-white">📐 {title}</h1>
+  <h1 class="mb-6 text-xl font-bold text-gray-900 dark:text-white">{title}</h1>
 
   {#if locked}
     <div

@@ -6,6 +6,81 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 ---
 
+- plus page
+
+```
+Now let me look at the message strings to understand the actual copy:Now I have a full picture of the page. Let me render a mock of it mentally and give you thorough feedback.Here's my honest assessment after reading the full page — code, messages, and structure.
+
+---
+
+## Overall impression
+
+The page has solid bones but suffers from **information overload** and **unclear hierarchy**. A prospective user landing here would have to read a lot before reaching a clear "yes, I want this" moment. The conversion intent gets diluted by three overlapping sections that all try to communicate the same idea.
+
+---
+
+## What works well
+
+The **hero CTA box** is well-placed and the copy ("Cancel any time. All progress carries over automatically.") handles the two biggest objections immediately. The checkout flow itself — auto-triggering after login redirect — is smart. The bottom CTA with two escape routes ("browse free" / "try Norskprøven") is a good soft landing for people not ready to pay.
+
+---
+
+## The core problem: three sections saying the same thing
+
+You have three sections stacked on top of each other, all answering the question "what do I get with Plus?":
+
+1. **"What you get with Plus"** — 6 feature cards with icons
+2. **"What's unlocked at each level"** — 6 level cards (A1–C2)
+3. **"Free vs Plus" table** — 14-row comparison table
+
+These three sections overlap heavily and a user has to wade through all of them to get the full picture. That's exhausting, and the most motivated reader will still miss things because they'll skim.
+
+**My recommendation: cut one entirely, simplify another.**
+
+The **"What's unlocked at each level"** section is the weakest. It communicates content depth (B1 unlocks 23 categories, etc.) but that's a *detail* argument, not an emotional argument. Free users already know they're locked out of B1+ from their own experience — they don't need a grid telling them so. Consider folding the level info into the table as a single row ("B1–C2 vocabulary: 10 preview / all 97 categories") and removing the standalone section.
+
+The **feature cards** section is the strongest emotionally but the weakest technically — it repeats what the table says, but in warmer language. Keep it, but cut it from 6 cards to 4. The Norskprøven card and the Quiz card are weaker and feel like features you added later. The four worth keeping are: smart review, full B1–C2 access, cross-device sync, and per-category stats.
+
+The **table** is the reference layer — it belongs at the bottom for people who want to compare carefully. Keep it but it doesn't need to be prominent.
+
+---
+
+## Specific copy issues
+
+**Heading/subheading redundancy.** The `plus_heading` is *"Study smarter with Norske Flashcard Plus"* and the `plus_subheading` is *"Study smarter, not longer. Plus tracks…"* — "study smarter" appears twice in two consecutive sentences. Pick one.
+
+**The Grammar upsell box** is hardcoded English with no i18n key and lives awkwardly between the CTA and the feature cards. It's also very narrow in focus — it talks only about grammar topics, ignoring the bigger value story. If you keep a specific feature upsell here, it should rotate or be the most conversion-relevant feature. For most users, smart review scheduling or full B1–C2 access would be more compelling.
+
+**"What you get with Plus"** is a generic heading. Something like *"What Plus adds to your study"* or simply a descriptive structure ("Smart review · Full vocabulary · Sync · Progress insights") would be more scannable.
+
+**The `plus_how_heading`** section ("How smart review works") is buried at the bottom after the table. It's actually one of your strongest selling points and explains the core differentiator clearly. It should live higher — ideally right below the hero CTA, before the feature cards.
+
+---
+
+## Suggested page order
+
+Here's a restructured flow that reduces cognitive load and front-loads the strongest arguments:
+
+1. Hero (heading + subheading — fix the duplicate)
+2. **Top CTA box** (keep as-is)
+3. **How smart review works** (move up — this is your unique value prop)
+4. **4 feature cards** (cut to 4, remove quiz/norskprøven)
+5. **"What's unlocked"** — consider replacing this with a single sentence: *"Free includes all A1 and A2 content. Plus unlocks everything from B1 to C2 — 97 categories across 4 levels."*
+6. **Comparison table** (keep at bottom as reference)
+7. **Bottom CTA** (keep as-is)
+
+The Grammar upsell box should either move into the feature cards grid as a fifth card, or be removed from this page entirely and shown contextually on the `/grammar` route for non-Plus users.
+
+---
+
+## One small thing
+
+The price (49 NOK/month) only appears in the button label and in `profile_sub_upgrade_cta`. It's not mentioned anywhere prominent on the `/plus` page itself — not in the hero, not in the feature section. For a conversion page, the price should be stated clearly near the top. Many users will bounce without knowing if it's 49 NOK or 490 NOK.
+```
+
+The pasted part is from the last session. I asked how to improve /plus page.
+Can you fix the /plus page according to the suggestion and also update /grammar page according to the suggestions.
+
 ---
 
 - Grammtikk section for B2/C1
