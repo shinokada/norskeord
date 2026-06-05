@@ -64,6 +64,11 @@
       pro: { value: m.plus_row_quiz_plus(), yes: true }
     },
     {
+      feature: m.plus_row_grammar(),
+      free: { value: m.plus_row_grammar_free(), yes: true },
+      pro: { value: m.plus_row_grammar_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_per_category_stats(),
       free: { value: m.plus_row_per_category_stats_free(), yes: false },
       pro: { value: m.plus_row_per_category_stats_plus(), yes: true }
@@ -95,6 +100,7 @@
     }
   ]);
 
+  // 4 core features — removed Norskprøven and Quiz cards per UX review
   const plusFeatures = $derived([
     {
       icon: '🧠',
@@ -115,16 +121,6 @@
       icon: '📊',
       title: m.plus_feature_4_title(),
       body: m.plus_feature_4_body()
-    },
-    {
-      icon: '📝',
-      title: m.plus_feature_norskproven_title(),
-      body: m.plus_feature_norskproven_body()
-    },
-    {
-      icon: '❓',
-      title: m.plus_feature_5_title(),
-      body: m.plus_feature_5_body()
     }
   ]);
 
@@ -167,7 +163,7 @@
   <!-- ── Checkout CTA ───────────────────────────────────────────────────────────── -->
   <div
     id="upgrade"
-    class="mb-14 rounded-2xl border border-indigo-200 bg-indigo-50 p-8 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
+    class="mb-10 rounded-2xl border border-indigo-200 bg-indigo-50 p-8 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
   >
     {#if data.isPlus}
       <!-- Already a Plus member — direct to My Profile for subscription management -->
@@ -179,9 +175,7 @@
         {m.plus_manage_subscription()}
       </a>
     {:else}
-      <p class="mb-2 text-lg font-semibold text-indigo-800 dark:text-indigo-200">
-        {m.plus_checkout_cta()}
-      </p>
+      <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">49 NOK / month</p>
       <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
         Cancel any time. All progress carries over automatically.
       </p>
@@ -210,39 +204,14 @@
     {/if}
   </div>
 
-  <!-- ── Grammar upsell ──────────────────────────────────────────────────────── -->
-  {#if !data.isPlus}
-    <div
-      class="mb-14 rounded-2xl border border-indigo-200 bg-indigo-50 p-6 dark:border-indigo-800 dark:bg-indigo-900/20"
-    >
-      <div class="mb-4 flex items-center gap-2">
-        <span class="text-2xl">📐</span>
-        <h2 class="text-lg font-bold text-gray-900 dark:text-white">Unlock all Grammar topics</h2>
-      </div>
-      <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        4 topics are free. Plus unlocks these advanced topics:
-      </p>
-      <div class="mb-5 grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {#each [{ title: 'Subordinate clause word order', levels: 'B1–C1' }, { title: 'Relative clauses with «som»', levels: 'B2–C1' }, { title: '"Det"-sentences (cleft/extraposition)', levels: 'B1–C1' }, { title: 'Sentence adverbials (setningsadverbialer)', levels: 'A2–B1' }, { title: 'Adverbial fronting (V2 inversion)', levels: 'A2–B1' }, { title: 'Short answers: ja / jo / nei', levels: 'B2–C1' }] as topic (topic.title)}
-          <div
-            class="flex items-center gap-2 rounded-lg border border-indigo-100 bg-white px-3 py-2 dark:border-indigo-800 dark:bg-indigo-950/60"
-          >
-            <span class="text-indigo-400">🔒</span>
-            <div>
-              <p class="text-sm font-medium text-gray-800 dark:text-gray-100">{topic.title}</p>
-              <p class="text-xs text-gray-400 dark:text-gray-500">{topic.levels}</p>
-            </div>
-          </div>
-        {/each}
-      </div>
-      <a
-        href="#upgrade"
-        class="inline-block rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
-      >
-        Unlock all topics →
-      </a>
-    </div>
-  {/if}
+  <!-- ── How smart review works (moved up — key differentiator) ─────────────────── -->
+  <div
+    class="mb-14 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-indigo-950/60"
+  >
+    <h3 class="mb-2 text-base font-bold dark:text-white">{m.plus_how_heading()}</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_1()}</p>
+    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_2()}</p>
+  </div>
 
   <!-- ── Plus feature highlights ────────────────────────────────────────────────── -->
   <h2 class="mb-6 text-2xl font-bold dark:text-white">{m.plus_features_heading()}</h2>
@@ -260,34 +229,10 @@
     {/each}
   </div>
 
-  <!-- ── Free vs Plus comparison table ──────────────────────────────────────────── -->
-  <!-- ── What’s unlocked at each level ────────────────────────────────────────── -->
-  <h2 class="mb-5 text-2xl font-bold dark:text-white">{m.plus_unlocked_heading()}</h2>
-  <div class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-    {#each [{ label: m.plus_unlocked_a1_label, teaser: m.plus_unlocked_a1_teaser, free: true, color: 'green' }, { label: m.plus_unlocked_a2_label, teaser: m.plus_unlocked_a2_teaser, free: true, color: 'teal' }, { label: m.plus_unlocked_b1_label, teaser: m.plus_unlocked_b1_teaser, free: false, color: 'blue' }, { label: m.plus_unlocked_b2_label, teaser: m.plus_unlocked_b2_teaser, free: false, color: 'indigo' }, { label: m.plus_unlocked_c1_label, teaser: m.plus_unlocked_c1_teaser, free: false, color: 'purple' }, { label: m.plus_unlocked_c2_label, teaser: m.plus_unlocked_c2_teaser, free: false, color: 'pink' }] as row (row.color)}
-      <div
-        class="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-indigo-950/60"
-      >
-        <div class="mb-1.5 flex items-center justify-between gap-2">
-          <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">{row.label()}</span>
-          {#if row.free}
-            <span
-              class="shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700 dark:bg-green-900/40 dark:text-green-300"
-              >Free</span
-            >
-          {:else}
-            <span
-              class="shrink-0 rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
-              >❖ Plus</span
-            >
-          {/if}
-        </div>
-        <p class="text-xs text-gray-500 dark:text-gray-400">{row.teaser()}</p>
-      </div>
-    {/each}
-  </div>
+  <!-- ── Vocabulary access summary ─────────────────────────────────────────────── -->
   <p class="mb-14 text-sm text-gray-500 dark:text-gray-400">
-    {m.plus_unlocked_free_note()}
+    Free includes all A1 and A2 content — 46 categories. Plus unlocks everything from B1 to C2,
+    adding 97 more categories across 4 levels.
     <a
       href="/"
       class="font-medium text-indigo-600 underline hover:text-indigo-500 dark:text-indigo-400"
@@ -295,6 +240,7 @@
     >
   </p>
 
+  <!-- ── Free vs Plus comparison table ──────────────────────────────────────────── -->
   <h2 class="mb-5 text-2xl font-bold dark:text-white">{m.plus_table_heading()}</h2>
   <div class="mb-14 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
     <table class="w-full text-sm">
@@ -342,15 +288,6 @@
         {/each}
       </tbody>
     </table>
-  </div>
-
-  <!-- ── How smart review works ──────────────────────────────────────────────── -->
-  <div
-    class="mb-14 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-indigo-950/60"
-  >
-    <h3 class="mb-2 text-base font-bold dark:text-white">{m.plus_how_heading()}</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_1()}</p>
-    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_2()}</p>
   </div>
 
   <!-- ── Bottom CTA ─────────────────────────────────────────────────────────────── -->

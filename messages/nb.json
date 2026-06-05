@@ -278,7 +278,7 @@
 
   "plus_badge": "Kommer snart",
   "plus_heading": "Studer smartere med Norske Flashcard Plus",
-  "plus_subheading": "Studer smartere, ikke lenger. Plus holder styr på hvor godt du kan hvert ord og viser deg bare kortene det er verdt å øve på i dag — slik at hver økt faktisk fester seg.",
+  "plus_subheading": "Plus holder styr på hvor godt du kan hvert ord og viser deg bare kortene det er verdt å øve på i dag — slik at hver økt faktisk fester seg.",
   "plus_notify_prompt": "Legg igjen e-posten din, så varsler vi deg når Plus lanseres.",
   "plus_signup_cta": "Få tidlig tilgang + en lanseringsrabatt",
   "plus_notify_success_heading": "Du er på listen!",
@@ -338,6 +338,9 @@
   "plus_row_exam": "Norskprøven B1-forberedelse",
   "plus_row_exam_free": "—",
   "plus_row_exam_plus": "Inkludert",
+  "plus_row_grammar": "Grammatikktemaer",
+  "plus_row_grammar_free": "4 temaer",
+  "plus_row_grammar_plus": "Alle temaer",
   "plus_row_quiz": "Quizmodus",
   "plus_row_quiz_free": "3 kategorier per nivå",
   "plus_row_quiz_plus": "Alle kategorier",
