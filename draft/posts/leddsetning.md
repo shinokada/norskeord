@@ -1,4 +1,4 @@
-The key is that a **subordinate clause (leddsetning)** is not defined by a particular word like *hvis* or *som*. It's defined by its **function in the sentence**.
+The key is that a **subordinate clause (leddsetning)** is not defined by a particular word like _hvis_ or _som_. It's defined by its **function in the sentence**.
 
 ## What is a subordinate clause?
 
@@ -100,7 +100,7 @@ Answer:
 
 > at han ikke kommer
 
-The whole clause is the object of *vet*.
+The whole clause is the object of _vet_.
 
 ---
 
@@ -122,9 +122,9 @@ They give information about time, reason, condition, etc.
 
 These answer questions like:
 
-* Why?
-* When?
-* Under what condition?
+- Why?
+- When?
+- Under what condition?
 
 ---
 
@@ -138,7 +138,7 @@ Which man?
 
 > som ikke bor her
 
-The relative clause modifies *mannen*.
+The relative clause modifies _mannen_.
 
 ---
 
@@ -234,4 +234,4 @@ A useful way to think about it is:
 
 > A **main clause** can be a sentence by itself.
 >
-> A **subordinate clause** plays a role *inside* another sentence (as a reason, condition, description, object, question, etc.). That's why Norwegian usually moves **ikke** in front of the finite verb there.
+> A **subordinate clause** plays a role _inside_ another sentence (as a reason, condition, description, object, question, etc.). That's why Norwegian usually moves **ikke** in front of the finite verb there.

@@ -1,7 +1,7 @@
 import { FSRS, createEmptyCard, Rating, generatorParameters } from 'ts-fsrs';
 import type { Grade, FSRSParameters } from 'ts-fsrs';
 import type { FSRSRating, CardProgress } from '$lib/types';
-import type { VocabEntry } from '$lib/types';
+import type { VocabEntry, GrammarQuestion } from '$lib/types';
 import { supabase } from '$lib/supabase';
 
 const DEFAULT_FSRS = new FSRS(generatorParameters());
@@ -35,16 +35,23 @@ export function invalidateFsrsCache(userId: string) {
 export const LS_PREFIX = 'progress-';
 
 /**
+ * localStorage prefix for grammar FSRS state (guest/free users).
+ * Kept distinct from LS_PREFIX so the vocab loaders never pick up grammar keys.
+ * Plus users persist grammar progress to the grammar_progress table instead.
+ */
+export const GRAMMAR_LS_PREFIX = 'grammar-';
+
+/**
  * Removes all progress keys for guest/free users from localStorage.
  * Called on logout so the next person who opens the browser sees no progress.
  */
 export function clearUserProgress(): void {
-  // Guest/free users store keys as 'progress-<norsk>'.
-  // (Plus users no longer use localStorage for progress at all.)
+  // Guest/free users store vocab keys as 'progress-<norsk>' and grammar keys
+  // as 'grammar-<questionId>'. (Plus users no longer use localStorage at all.)
   const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key?.startsWith(LS_PREFIX)) keysToRemove.push(key);
+    if (key?.startsWith(LS_PREFIX) || key?.startsWith(GRAMMAR_LS_PREFIX)) keysToRemove.push(key);
   }
   keysToRemove.forEach((k) => localStorage.removeItem(k));
 }
@@ -197,12 +204,15 @@ async function saveProgressToSupabase(
 }
 
 /**
- * Deletes all card_progress and study_days rows for a user from Supabase.
- * Called when a Plus user resets their progress from the stats page.
+ * Deletes all card_progress, grammar_progress and study_days rows for a user
+ * from Supabase. Called when a Plus user resets their progress from the stats
+ * page. grammar_progress is included so a reset doesn't silently leave grammar
+ * data behind.
  */
 export async function resetProgressInSupabase(userId: string): Promise<void> {
   try {
     await supabase.from('card_progress').delete().eq('user_id', userId);
+    await supabase.from('grammar_progress').delete().eq('user_id', userId);
     await supabase.from('study_days').delete().eq('user_id', userId);
   } catch {
     // Silent failure
@@ -300,6 +310,170 @@ export async function saveProgress(
 export function countDueToday(progressMap: Record<string, CardProgress>): number {
   const now = new Date();
   return Object.values(progressMap).filter((p) => new Date(p.fsrs.due) <= now).length;
+}
+
+// ── Grammar progress ─────────────────────────────────────────────────────────
+// Grammar FSRS state mirrors the vocab flow but lives in its own store:
+//   - Guest/free users: localStorage under 'grammar-<questionId>'
+//   - Plus users: the grammar_progress Supabase table (one row per user+question)
+// Maps are keyed by GrammarQuestion.id (not the 'grammar-' prefixed key) so the
+// session components can look up progress directly by question.id.
+
+interface GrammarProgressRow {
+  question_id: string;
+  topic: string;
+  cefr: string;
+  due: string;
+  stability: number;
+  difficulty: number;
+  elapsed_days: number;
+  scheduled_days: number;
+  learning_steps: number;
+  reps: number;
+  lapses: number;
+  state: number;
+  last_review: string | null;
+  seen_count: number;
+  last_seen: string;
+}
+
+function toGrammarRow(question: GrammarQuestion, p: CardProgress): GrammarProgressRow {
+  return {
+    question_id: question.id,
+    topic: question.topic,
+    cefr: question.cefr,
+    due: p.fsrs.due instanceof Date ? p.fsrs.due.toISOString() : String(p.fsrs.due),
+    stability: p.fsrs.stability,
+    difficulty: p.fsrs.difficulty,
+    elapsed_days: p.fsrs.elapsed_days,
+    scheduled_days: p.fsrs.scheduled_days,
+    learning_steps: p.fsrs.learning_steps,
+    reps: p.fsrs.reps,
+    lapses: p.fsrs.lapses,
+    state: p.fsrs.state,
+    last_review: p.fsrs.last_review
+      ? p.fsrs.last_review instanceof Date
+        ? p.fsrs.last_review.toISOString()
+        : String(p.fsrs.last_review)
+      : null,
+    seen_count: p.seenCount,
+    last_seen: p.lastSeen
+  };
+}
+
+function fromGrammarRow(row: GrammarProgressRow): CardProgress {
+  return {
+    fsrs: {
+      due: new Date(row.due),
+      stability: row.stability,
+      difficulty: row.difficulty,
+      elapsed_days: row.elapsed_days,
+      scheduled_days: row.scheduled_days,
+      learning_steps: row.learning_steps,
+      reps: row.reps,
+      lapses: row.lapses,
+      state: row.state,
+      last_review: row.last_review ? new Date(row.last_review) : undefined
+    },
+    seenCount: row.seen_count,
+    lastSeen: row.last_seen,
+    // level/category reuse the CardProgress shape; for grammar they carry the
+    // CEFR level and topic respectively (not vocab Category values).
+    level: row.cefr as CardProgress['level'],
+    category: row.topic as unknown as CardProgress['category']
+  };
+}
+
+/**
+ * Loads grammar progress from localStorage. Guest/free users only.
+ * Returns a map keyed by GrammarQuestion.id.
+ */
+export function loadGrammarProgressMap(): Record<string, CardProgress> {
+  const map: Record<string, CardProgress> = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key?.startsWith(GRAMMAR_LS_PREFIX)) {
+      try {
+        const raw = localStorage.getItem(key);
+        if (raw) {
+          const parsed = JSON.parse(raw) as CardProgress;
+          parsed.fsrs.due = new Date(parsed.fsrs.due);
+          if (parsed.fsrs.last_review) {
+            parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+          }
+          map[key.slice(GRAMMAR_LS_PREFIX.length)] = parsed;
+        }
+      } catch {
+        // Ignore malformed entries
+      }
+    }
+  }
+  return map;
+}
+
+/**
+ * Fetches all grammar_progress rows for a Plus user, keyed by question_id.
+ * Called on mount for Plus users instead of loadGrammarProgressMap.
+ */
+export async function loadGrammarProgressFromSupabase(
+  userId: string
+): Promise<Record<string, CardProgress>> {
+  const { data, error } = await supabase.from('grammar_progress').select('*').eq('user_id', userId);
+
+  if (error || !data) return {};
+
+  const map: Record<string, CardProgress> = {};
+  for (const row of data as GrammarProgressRow[]) {
+    map[row.question_id] = fromGrammarRow(row);
+  }
+  return map;
+}
+
+/**
+ * Computes the next FSRS state for a grammar question and persists it.
+ * Plus users (userId present) write to grammar_progress; guest/free users
+ * write to localStorage. Returns the updated map keyed by question.id.
+ */
+export async function saveGrammarProgress(
+  question: GrammarQuestion,
+  rating: FSRSRating,
+  progressMap: Record<string, CardProgress>,
+  userId?: string | null
+): Promise<Record<string, CardProgress>> {
+  const now = new Date();
+  const existing = progressMap[question.id] ?? null;
+  const card = existing ? existing.fsrs : createEmptyCard(now);
+
+  const result = DEFAULT_FSRS.next(card, now, RATING_MAP[rating]);
+
+  const updated: CardProgress = {
+    fsrs: result.card,
+    seenCount: (existing?.seenCount ?? 0) + 1,
+    lastSeen: now.toISOString(),
+    lastRating: rating,
+    level: question.cefr,
+    category: question.topic as unknown as CardProgress['category']
+  };
+
+  if (userId) {
+    // Plus: grammar_progress table only — no localStorage
+    void recordStudyDay(userId);
+    try {
+      await supabase
+        .from('grammar_progress')
+        .upsert(
+          { user_id: userId, ...toGrammarRow(question, updated) },
+          { onConflict: 'user_id,question_id' }
+        );
+    } catch {
+      // Silent failure — in-memory map is still correct for this session
+    }
+    return { ...progressMap, [question.id]: updated };
+  } else {
+    // Guest / free: localStorage only
+    localStorage.setItem(GRAMMAR_LS_PREFIX + question.id, JSON.stringify(updated));
+    return { ...progressMap, [question.id]: updated };
+  }
 }
 
 // ── Streak + activity helpers ────────────────────────────────────────────────

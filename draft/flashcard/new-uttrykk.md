@@ -25,8 +25,3 @@ Tut og kjør: get going, Off you go: Alt er klart, så det er bare tut og kjør!
 Som perler på en snor: One after another in a neat sequence: Hun svarte riktig på spørsmålene som perler på en snor. På eksamen kom de vanskelige spørsmålene som perler på en snor.
 helt enig: completely agree
 Må jo det, vet du: Have to do that, you know.: Skal du jobbe i helga? Må jo det, vet du.
-
-
-
-
-

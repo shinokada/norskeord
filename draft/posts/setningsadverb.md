@@ -1,6 +1,6 @@
 **Ikke** is not the only word that moves in front of the finite verb in subordinate clauses.
 
-More generally, many **sentence adverbs** (*setningsadverb*) move there.
+More generally, many **sentence adverbs** (_setningsadverb_) move there.
 
 ## Main clause
 
@@ -138,7 +138,7 @@ and
 
 So **ofte** follows the same pattern.
 
-However, adverbs like *ofte* are a bit more flexible than *ikke*, especially in spoken Norwegian.
+However, adverbs like _ofte_ are a bit more flexible than _ikke_, especially in spoken Norwegian.
 
 ---
 
@@ -168,4 +168,4 @@ For Norwegian learners, it's often enough to remember:
 
 This is sometimes called the **leddsetningsregel**:
 
-> In subordinate clauses, sentence adverbs (*ikke, aldri, kanskje, ofte, heldigvis, dessverre,* etc.) are normally placed before the finite verb.
+> In subordinate clauses, sentence adverbs (_ikke, aldri, kanskje, ofte, heldigvis, dessverre,_ etc.) are normally placed before the finite verb.

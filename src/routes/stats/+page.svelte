@@ -4,25 +4,53 @@
   import {
     loadProgressMap,
     loadProgressMapFromSupabase,
+    loadGrammarProgressMap,
+    loadGrammarProgressFromSupabase,
     countDueToday,
     getStreakFromLocalStorage,
     loadStudyDays,
     buildActivityGrid,
-    resetProgressInSupabase
+    resetProgressInSupabase,
+    clearUserProgress
   } from '$lib/progress';
   import type { ActivityCell } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/types';
   import { State } from 'ts-fsrs';
-  import type { CardProgress, CEFRLevel } from '$lib/types';
+  import type { CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
+  import { SvelteMap } from 'svelte/reactivity';
+  import { GRAMMAR_RULES } from '$lib/grammar/rules';
+  import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages.js';
   import CategoryBarChart from '$lib/components/CategoryBarChart.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
+  // Grammar progress is a separate store (keyed by question id). The level/category
+  // fields on these CardProgress entries carry the CEFR level and the topic.
+  let grammarMap = $state<Record<string, CardProgress>>({});
   let confirmReset = $state(false);
   let resetting = $state(false);
   let mounted = $state(false);
+  let grammarExpanded = $state(true);
+
+  onMount(() => {
+    try {
+      const saved = localStorage.getItem('stats-grammar-expanded');
+      if (saved !== null) grammarExpanded = JSON.parse(saved);
+    } catch {
+      /* ignore */
+    }
+  });
+
+  function toggleGrammar() {
+    grammarExpanded = !grammarExpanded;
+    try {
+      localStorage.setItem('stats-grammar-expanded', JSON.stringify(grammarExpanded));
+    } catch {
+      /* ignore */
+    }
+  }
 
   // Activity chart state
   let activityCells = $state<ActivityCell[]>([]);
@@ -44,6 +72,45 @@
     learning: allCards.filter((c) => c.fsrs.state === State.Learning).length,
     review: allCards.filter((c) => c.fsrs.state === State.Review).length,
     relearning: allCards.filter((c) => c.fsrs.state === State.Relearning).length
+  });
+
+  // ── Grammar totals ─────────────────────────────────────────────────────────
+  const isNb = $derived(localeStore.current === 'nb');
+  const grammarCards = $derived(Object.values(grammarMap));
+  const grammarSeen = $derived(grammarCards.length);
+  const grammarDue = $derived(countDueToday(grammarMap));
+  const grammarMastered = $derived(
+    grammarCards.filter((c) => c.fsrs.state === State.Review).length
+  );
+
+  interface GrammarTopicStat {
+    topic: GrammarTopic;
+    title: string;
+    seen: number;
+    due: number;
+    mastered: number;
+  }
+
+  const grammarByTopic = $derived.by<GrammarTopicStat[]>(() => {
+    const now = new Date();
+    const groups = new SvelteMap<GrammarTopic, CardProgress[]>();
+    for (const c of grammarCards) {
+      // For grammar cards, `category` holds the GrammarTopic.
+      const topic = c.category as unknown as GrammarTopic;
+      const list = groups.get(topic) ?? [];
+      list.push(c);
+      groups.set(topic, list);
+    }
+    return [...groups.entries()].map(([topic, cards]) => {
+      const rule = GRAMMAR_RULES[topic];
+      return {
+        topic,
+        title: rule ? (isNb ? rule.titleNb : rule.titleEn) : topic,
+        seen: cards.length,
+        due: cards.filter((c) => new Date(c.fsrs.due) <= now).length,
+        mastered: cards.filter((c) => c.fsrs.state === State.Review).length
+      };
+    });
   });
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
@@ -191,14 +258,18 @@
     if (isPlus && userId) {
       // Plus: single source of truth is Supabase
       progressMap = await loadProgressMapFromSupabase(userId);
+      grammarMap = await loadGrammarProgressFromSupabase(userId);
     } else {
       // Guest / free: localStorage
       progressMap = loadProgressMap();
+      grammarMap = loadGrammarProgressMap();
     }
     mounted = true;
 
     if (isPlus && userId) {
       streak = 0; // streak comes from study_days below
+      // study_days already counts grammar reviews (saveGrammarProgress calls
+      // recordStudyDay), so no separate grammar handling is needed here.
       const studyDays = await loadStudyDays(userId);
       activityCells = buildActivityGrid(studyDays, 26);
       // Derive streak from study_days
@@ -216,9 +287,12 @@
       }
       streak = s;
     } else {
-      streak = getStreakFromLocalStorage(progressMap);
+      // Free/guest: derive streak + activity from vocab AND grammar reviews so
+      // grammar-only practice still counts. Keys don't collide (norsk vs id).
+      const combined = { ...progressMap, ...grammarMap };
+      streak = getStreakFromLocalStorage(combined);
       const localStudyDays: Record<string, number> = {};
-      for (const p of Object.values(progressMap)) {
+      for (const p of Object.values(combined)) {
         if (p.lastSeen) {
           const d = new Date(p.lastSeen);
           const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -237,19 +311,14 @@
     try {
       const userId = page.data.user?.id as string | undefined;
       if (userId && isPlus) {
-        // Plus: Supabase is the only store — wipe it
+        // Plus: Supabase is the only store — wipe vocab + grammar + study days
         await resetProgressInSupabase(userId);
       } else {
-        // Guest / free: wipe localStorage
-        const prefix = 'progress-';
-        const keysToRemove: string[] = [];
-        for (let i = 0; i < localStorage.length; i++) {
-          const key = localStorage.key(i);
-          if (key?.startsWith(prefix)) keysToRemove.push(key);
-        }
-        keysToRemove.forEach((k) => localStorage.removeItem(k));
+        // Guest / free: wipe localStorage (clears both progress- and grammar- keys)
+        clearUserProgress();
       }
       progressMap = {};
+      grammarMap = {};
       activityCells = buildActivityGrid({}, 26);
       streak = 0;
     } finally {
@@ -300,10 +369,10 @@
 
   {#if !mounted}
     <p class="text-gray-400 dark:text-gray-500">{m.stats_loading()}</p>
-  {:else if totalSeen === 0}
+  {:else if totalSeen === 0 && grammarSeen === 0}
     <!-- Empty state -->
     <div
-      class="rounded-xl border border-white/10 bg-white/5 p-10 text-center backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
+      class="rounded-xl border border-gray-200 bg-white p-10 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
     >
       <p class="text-2xl">📚</p>
       <p class="mt-3 text-lg font-medium dark:text-white">{m.stats_empty_heading()}</p>
@@ -316,130 +385,204 @@
       </a>
     </div>
   {:else}
-    <!-- ── CEFR Estimate ───────────────────────────────────────────────────────── -->
-    <div
-      class="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-5 dark:border-blue-800 dark:bg-blue-900/20"
-    >
-      <p class="text-sm font-semibold tracking-wide text-blue-600 uppercase dark:text-blue-400">
-        {m.stats_cefr_label()}
-      </p>
-      <p class="mt-1 text-base text-gray-800 dark:text-gray-200">{cefrEstimate}</p>
-    </div>
+    <!-- ── CEFR Estimate (vocab-based) ───────────────────────────────────────── -->
+    {#if totalSeen > 0}
+      <div
+        class="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-5 dark:border-blue-800 dark:bg-blue-900/20"
+      >
+        <p class="text-sm font-semibold tracking-wide text-blue-600 uppercase dark:text-blue-400">
+          {m.stats_cefr_label()}
+        </p>
+        <p class="mt-1 text-base text-gray-800 dark:text-gray-200">{cefrEstimate}</p>
+      </div>
+    {/if}
 
     <!-- ── Activity chart ────────────────────────────────────────────────────── -->
     <div
-      class="mb-6 rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
+      class="mb-6 rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
     >
       <p class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Activity</p>
       <ActivityChart cells={activityCells} {streak} loading={activityLoading} {isPlus} />
     </div>
 
-    <!-- ── Summary cards ──────────────────────────────────────────────────────── -->
-    <div class="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-      {#each [{ label: m.stats_cards_seen(), value: totalSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_due_today(), value: dueToday, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_in_review(), value: byState.review, color: 'text-green-600 dark:text-green-400' }, { label: m.stats_relearning(), value: byState.relearning, color: 'text-orange-600 dark:text-orange-400' }] as stat (stat.label)}
-        <div
-          class="rounded-xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
-        >
-          <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
-          <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{stat.label}</p>
-        </div>
-      {/each}
-    </div>
-
-    <!-- ── Per-level breakdown ────────────────────────────────────────────────── -->
-    <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_level()}</h2>
-    <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-      {#each levelStats as ls (ls.level)}
-        <div
-          class="rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-indigo-950/60"
-        >
-          <div class="mb-2 flex items-center justify-between">
-            <span class="font-semibold {levelTextColors[ls.level]}">{ls.level}</span>
-            <span class="text-sm text-gray-500 dark:text-gray-400">
-              {ls.seen}
-              {m.stats_seen()} · {ls.due}
-              {m.stats_due_today_short()}
-            </span>
+    <!-- ── Summary cards (vocab) ─────────────────────────────────────────────── -->
+    {#if totalSeen > 0}
+      <div class="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        {#each [{ label: m.stats_cards_seen(), value: totalSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_due_today(), value: dueToday, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_in_review(), value: byState.review, color: 'text-green-600 dark:text-green-400' }, { label: m.stats_relearning(), value: byState.relearning, color: 'text-orange-600 dark:text-orange-400' }] as stat (stat.label)}
+          <div
+            class="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+          >
+            <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
+            <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{stat.label}</p>
           </div>
-          <!-- Stacked progress bar -->
-          <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
-            {#if ls.seen > 0}
-              <div class="flex h-full">
-                {#if ls.learning > 0}
-                  <div
-                    class="bg-yellow-400"
-                    style="width: {(ls.learning / ls.seen) * 100}%"
-                    title="Learning: {ls.learning}"
-                  ></div>
-                {/if}
-                {#if ls.review > 0}
-                  <div
-                    class={levelColors[ls.level]}
-                    style="width: {(ls.review / ls.seen) * 100}%"
-                    title="Review: {ls.review}"
-                  ></div>
-                {/if}
-                {#if ls.relearning > 0}
-                  <div
-                    class="bg-orange-400"
-                    style="width: {(ls.relearning / ls.seen) * 100}%"
-                    title="Relearning: {ls.relearning}"
-                  ></div>
-                {/if}
+        {/each}
+      </div>
+
+      <!-- ── Per-level breakdown ────────────────────────────────────────────────── -->
+      <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_level()}</h2>
+      <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {#each levelStats as ls (ls.level)}
+          <div
+            class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+          >
+            <div class="mb-2 flex items-center justify-between">
+              <span class="font-semibold {levelTextColors[ls.level]}">{ls.level}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">
+                {ls.seen}
+                {m.stats_seen()} · {ls.due}
+                {m.stats_due_today_short()}
+              </span>
+            </div>
+            <!-- Stacked progress bar -->
+            <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
+              {#if ls.seen > 0}
+                <div class="flex h-full">
+                  {#if ls.learning > 0}
+                    <div
+                      class="bg-yellow-400"
+                      style="width: {(ls.learning / ls.seen) * 100}%"
+                      title="Learning: {ls.learning}"
+                    ></div>
+                  {/if}
+                  {#if ls.review > 0}
+                    <div
+                      class={levelColors[ls.level]}
+                      style="width: {(ls.review / ls.seen) * 100}%"
+                      title="Review: {ls.review}"
+                    ></div>
+                  {/if}
+                  {#if ls.relearning > 0}
+                    <div
+                      class="bg-orange-400"
+                      style="width: {(ls.relearning / ls.seen) * 100}%"
+                      title="Relearning: {ls.relearning}"
+                    ></div>
+                  {/if}
+                </div>
+              {/if}
+            </div>
+            {#if ls.seen === 0}
+              <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
+                {m.stats_no_cards_this_level()}
+              </p>
+            {:else}
+              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-400">
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
+                  {m.stats_learning()}
+                  {ls.learning}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full {levelColors[ls.level]}"></span>
+                  {m.stats_review()}
+                  {ls.review}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
+                  {m.stats_relearning()}
+                  {ls.relearning}
+                </span>
               </div>
             {/if}
           </div>
-          {#if ls.seen === 0}
-            <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
-              {m.stats_no_cards_this_level()}
-            </p>
-          {:else}
-            <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-400">
-              <span class="flex items-center gap-1">
-                <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
-                {m.stats_learning()}
-                {ls.learning}
-              </span>
-              <span class="flex items-center gap-1">
-                <span class="inline-block h-2 w-2 rounded-full {levelColors[ls.level]}"></span>
-                {m.stats_review()}
-                {ls.review}
-              </span>
-              <span class="flex items-center gap-1">
-                <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
-                {m.stats_relearning()}
-                {ls.relearning}
-              </span>
-            </div>
-          {/if}
-        </div>
-      {/each}
-    </div>
+        {/each}
+      </div>
+    {/if}
 
-    <!-- ── Per-category breakdown — Plus only (3-A) ───────────────────────────── -->
-    {#if isPlus}
-      <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_category()}</h2>
-      <div class="mb-8">
-        <CategoryBarChart {allCards} {levelTextColors} {levelColors} />
-      </div>
-    {:else}
-      <!-- 3-A: upsell for free users -->
-      <div
-        class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
-      >
-        <p class="font-semibold text-orange-700 dark:text-orange-300">
-          ⭐ {m.stats_plus_category_heading()}
-        </p>
-        <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-          {m.stats_plus_category_body()}
-        </p>
-        <a
-          href="/plus"
-          class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+    <!-- ── Grammar ────────────────────────────────────────────────────────────── -->
+    {#if grammarSeen > 0}
+      {@const grammarTopicCount = grammarByTopic.length}
+      <div class="mb-8 overflow-hidden rounded-xl border border-gray-200 dark:border-white/10">
+        <!-- Accordion header -->
+        <button
+          class="flex w-full items-center justify-between bg-gray-50 px-4 py-3 text-left transition-colors hover:bg-gray-100 dark:bg-indigo-900/40 dark:hover:bg-indigo-900/60"
+          onclick={() => toggleGrammar()}
+          aria-expanded={grammarExpanded}
         >
-          {m.stats_plus_upgrade()}
-        </a>
+          <span class="text-base font-semibold text-gray-800 dark:text-white"
+            >{m.stats_grammar_heading()}</span
+          >
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-gray-500 dark:text-gray-400">
+              {grammarTopicCount}
+              {grammarTopicCount === 1 ? 'topic' : 'topics'} · {grammarSeen}
+              {m.stats_seen()} · {grammarMastered}
+              {m.stats_grammar_mastered()}{#if grammarDue > 0}
+                · <span class="font-semibold text-red-500 dark:text-red-400"
+                  >{grammarDue} {m.stats_due_today_short()}</span
+                >{/if}
+            </span>
+            <svg
+              class="h-4 w-4 shrink-0 text-gray-400 transition-transform {grammarExpanded
+                ? 'rotate-180'
+                : ''}"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        {#if grammarExpanded}
+          <!-- Stat cards -->
+          <div
+            class="grid grid-cols-3 divide-x divide-gray-100 border-b border-gray-100 dark:divide-white/10 dark:border-white/10"
+          >
+            {#each [{ label: m.stats_grammar_practiced(), value: grammarSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_grammar_due(), value: grammarDue, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_grammar_mastered(), value: grammarMastered, color: 'text-green-600 dark:text-green-400' }] as stat (stat.label)}
+              <div class="bg-white p-4 text-center dark:bg-indigo-950/60">
+                <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
+                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{stat.label}</p>
+              </div>
+            {/each}
+          </div>
+
+          <!-- Topic rows -->
+          <div class="divide-y divide-gray-100 bg-white dark:divide-white/10 dark:bg-indigo-950/60">
+            {#each grammarByTopic as gt (gt.topic)}
+              <div class="flex items-center justify-between px-4 py-3">
+                <span class="text-sm font-medium text-gray-800 dark:text-gray-100">{gt.title}</span>
+                <span class="text-xs text-gray-500 dark:text-gray-400">
+                  {gt.seen}
+                  {m.stats_seen()} · {gt.mastered}
+                  {m.stats_grammar_mastered()} · {gt.due}
+                  {m.stats_due_today_short()}
+                </span>
+              </div>
+            {/each}
+          </div>
+        {/if}
       </div>
+    {/if}
+
+    <!-- ── Per-category breakdown — vocab, Plus only (3-A) ───────────────────── -->
+    {#if totalSeen > 0}
+      {#if isPlus}
+        <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_category()}</h2>
+        <div class="mb-8">
+          <CategoryBarChart {allCards} {levelTextColors} {levelColors} />
+        </div>
+      {:else}
+        <!-- 3-A: upsell for free users -->
+        <div
+          class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
+        >
+          <p class="font-semibold text-orange-700 dark:text-orange-300">
+            ⭐ {m.stats_plus_category_heading()}
+          </p>
+          <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+            {m.stats_plus_category_body()}
+          </p>
+          <a
+            href="/plus"
+            class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+          >
+            {m.stats_plus_upgrade()}
+          </a>
+        </div>
+      {/if}
     {/if}
 
     <!-- ── Reset ──────────────────────────────────────────────────────────────── -->

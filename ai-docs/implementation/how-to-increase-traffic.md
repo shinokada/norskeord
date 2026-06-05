@@ -6,15 +6,16 @@ The goal is to give Google signals that real people find your site useful.
 
 **Write more blog posts regularly.** Your Språkhjørnet blog is already set up well. One post per week or two weeks targeting specific search queries ("Norwegian word order", "difference between også and heller", "how to prepare for Norskprøven A2") will compound over time. Each post is a new entry point from search.
 
-**Post in Norwegian learner communities.** Share useful blog posts (not just the homepage) in places where your audience already hangs out 
-— r/norsk on Reddit 
+**Post in Norwegian learner communities.** Share useful blog posts (not just the homepage) in places where your audience already hangs out
+— r/norsk on Reddit
+
 - Facebook groups like "Learning Norwegian"
 - the Duolingo Norwegian forum
-- Discord servers for language learners. 
+- Discord servers for language learners.
 
 Link to a specific post that genuinely answers a question someone asked.
 
-**Answer questions on Reddit and forums.** Find threads where people ask things your blog posts already answer, and reply helpfully with a link. This drives direct traffic *and* earns backlinks.
+**Answer questions on Reddit and forums.** Find threads where people ask things your blog posts already answer, and reply helpfully with a link. This drives direct traffic _and_ earns backlinks.
 
 **Cross-post content on social.** Even a simple "word of the week" post on Instagram or Twitter/X with a link to the relevant deck builds a habit of return visitors.
 

@@ -166,6 +166,7 @@
 
   <!-- ── Checkout CTA ───────────────────────────────────────────────────────────── -->
   <div
+    id="upgrade"
     class="mb-14 rounded-2xl border border-indigo-200 bg-indigo-50 p-8 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
   >
     {#if data.isPlus}
@@ -208,6 +209,40 @@
       {/if}
     {/if}
   </div>
+
+  <!-- ── Grammar upsell ──────────────────────────────────────────────────────── -->
+  {#if !data.isPlus}
+    <div
+      class="mb-14 rounded-2xl border border-indigo-200 bg-indigo-50 p-6 dark:border-indigo-800 dark:bg-indigo-900/20"
+    >
+      <div class="mb-4 flex items-center gap-2">
+        <span class="text-2xl">📐</span>
+        <h2 class="text-lg font-bold text-gray-900 dark:text-white">Unlock all Grammar topics</h2>
+      </div>
+      <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+        4 topics are free. Plus unlocks these advanced topics:
+      </p>
+      <div class="mb-5 grid grid-cols-1 gap-2 sm:grid-cols-2">
+        {#each [{ title: 'Subordinate clause word order', levels: 'B1–C1' }, { title: 'Relative clauses with «som»', levels: 'B2–C1' }, { title: '"Det"-sentences (cleft/extraposition)', levels: 'B1–C1' }, { title: 'Sentence adverbials (setningsadverbialer)', levels: 'A2–B1' }, { title: 'Adverbial fronting (V2 inversion)', levels: 'A2–B1' }, { title: 'Short answers: ja / jo / nei', levels: 'B2–C1' }] as topic (topic.title)}
+          <div
+            class="flex items-center gap-2 rounded-lg border border-indigo-100 bg-white px-3 py-2 dark:border-indigo-800 dark:bg-indigo-950/60"
+          >
+            <span class="text-indigo-400">🔒</span>
+            <div>
+              <p class="text-sm font-medium text-gray-800 dark:text-gray-100">{topic.title}</p>
+              <p class="text-xs text-gray-400 dark:text-gray-500">{topic.levels}</p>
+            </div>
+          </div>
+        {/each}
+      </div>
+      <a
+        href="#upgrade"
+        class="inline-block rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
+      >
+        Unlock all topics →
+      </a>
+    </div>
+  {/if}
 
   <!-- ── Plus feature highlights ────────────────────────────────────────────────── -->
   <h2 class="mb-6 text-2xl font-bold dark:text-white">{m.plus_features_heading()}</h2>

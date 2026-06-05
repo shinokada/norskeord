@@ -10,6 +10,5 @@ Substantiv uten ubestemt artikkel
 
 Vi må bruker artikkel når du har et adjektive ...
 
-
 Sett in ubestemt artikkel der det er nødvendig.
 ...

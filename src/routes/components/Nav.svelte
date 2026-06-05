@@ -260,7 +260,7 @@
       </MegaMenu>
     {/each}
 
-    <!-- Prepare dropdown — Quiz + Practice Tests, both Plus-only -->
+    <!-- Prepare dropdown — Quiz, Grammar, Practice Tests -->
     <NavLi class="cursor-pointer">
       {m.nav_prepare()}<ChevronDownOutline
         class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
@@ -269,6 +269,9 @@
     <Dropdown simple class="w-44 dark:border-gray-700 dark:bg-blue-950">
       <DropdownItem class="dark:hover:bg-blue-900" href="/quiz">
         {m.nav_quiz()}
+      </DropdownItem>
+      <DropdownItem class="dark:hover:bg-blue-900" href="/grammar">
+        {m.nav_grammar()}
       </DropdownItem>
       <DropdownItem class="dark:hover:bg-blue-900" href="/norskproven/practice">
         {m.nav_practice_tests()}

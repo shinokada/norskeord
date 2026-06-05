@@ -1,7 +1,7 @@
 level: B1 B2
 
-
 # subjunksjoner (subordinating conjunctions)
+
 They introduce a **leddsetning** (subordinate clause), where **ikke** normally comes before the finite verb.
 
 ## Common subjunksjoner
@@ -45,12 +45,12 @@ Examples:
 
 ### Cause / Reason
 
-| Norwegian | English                 |
-| --------- | ----------------------- |
-| fordi     | because                 |
-| siden     | since/because           |
-| ettersom  | since/as                |
-| fordi at* | because (*less formal*) |
+| Norwegian  | English                 |
+| ---------- | ----------------------- |
+| fordi      | because                 |
+| siden      | since/because           |
+| ettersom   | since/as                |
+| fordi at\* | because (_less formal_) |
 
 Examples:
 
@@ -143,7 +143,7 @@ then expect the subordinate-clause word order:
 
 > **subjunksjon + subject + ikke + verb**
 
-Examples: 
+Examples:
 
 > fordi han **ikke er** hjemme
 

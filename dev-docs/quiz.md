@@ -6,7 +6,7 @@ The quiz system is split across two files: `+page.ts` (data loading) and `$lib/q
 
 ### 1. Data Loading — `+page.ts`
 
-When the route loads, it imports all vocabulary JSON files for levels A1–B2 (including *uttrykk*/phrases) in parallel using dynamic imports. The result is two datasets:
+When the route loads, it imports all vocabulary JSON files for levels A1–B2 (including _uttrykk_/phrases) in parallel using dynamic imports. The result is two datasets:
 
 - **`allEntries`** — the full word pool across all levels (used for generating distractors in multiple-choice questions)
 - **`entries`** — filtered by optional `?level=` and `?category=` URL params (used as the actual quiz pool)
@@ -34,15 +34,18 @@ When the user clicks **Start Quiz**, `startQuiz()` calls `buildQuizSession()`, w
 ### 3. The Three Question Types
 
 **Multiple Choice (`buildMCQuestion`)**
+
 - Shows the Norwegian word as the prompt
 - Calls `getDistractors()` to find 3 wrong answers — preferring same CEFR level, falling back to other levels if needed
 - Shuffles all 4 options and records the `correctIndex`
 
 **Fill-in-the-Blank (`buildFillQuestion`)**
+
 - Replaces the first occurrence of the Norwegian word in its example sentence with `________`
 - Falls back to a generic `"Hva er det norske ordet for 'X'?"` prompt if the exact word form doesn't appear (e.g. it's inflected)
 
 **Type the Answer (`buildTypeQuestion`)**
+
 - Shows the English word, user types the Norwegian
 - Accepts answers with up to **1 character edit distance** (Levenshtein) and rates them as `'hard'` rather than wrong
 
