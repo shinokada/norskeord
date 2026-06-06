@@ -276,7 +276,7 @@
   "login_error_bot_check": "Bot check failed. Please try again.",
   "login_error_generic": "Something went wrong. Please try again.",
 
-  "plus_heading": "Study smarter with Norske Flashcard Plus",
+  "plus_heading": "Study smarter with Norskeord Plus",
   "plus_subheading": "Plus tracks how well you know each word and shows you only the cards worth reviewing today — so every session actually sticks.",
   "plus_features_heading": "What you get with Plus",
   "plus_feature_1_title": "Study only what you need today",
@@ -666,5 +666,29 @@
   "blog_search_placeholder": "Search articles…",
   "blog_search_aria": "Search blog articles",
 
-  "blog_load_more": "Load more ({remaining} remaining)"
+  "blog_load_more": "Load more ({remaining} remaining)",
+
+  "search_aria_label": "Search vocabulary and expressions",
+  "search_placeholder": "Search for a word or expression…",
+  "search_loading": "Loading index…",
+  "search_load_error": "Failed to load search index. Please try again.",
+  "search_empty_hint": "Type at least 2 characters to search",
+  "search_no_results": "No results for «{query}»",
+  "search_no_results_hint": "Try searching in the other language, or use the base form of the word.",
+  "search_inflection": "matched: {norsk} · lemma: {lemma}",
+  "search_results_label": "Search results",
+  "search_filter_source": "Filter by type",
+  "search_filter_level": "Filter by level",
+  "search_filter_all": "All",
+  "search_filter_all_levels": "All levels",
+  "search_filter_vocab": "Vocab",
+  "search_filter_uttrykk": "Expressions",
+  "search_hint_navigate": "to navigate",
+  "search_hint_open": "to open",
+  "search_hint_close": "to close",
+  "search_plus_title": "Search is a Plus feature",
+  "search_plus_description": "Search across all 10,000+ Norwegian words and expressions with instant in-browser results.",
+  "search_plus_cta": "Upgrade to Plus →",
+  "search_plus_only": "Search is Plus only",
+  "search_close": "Close"
 }
