@@ -4,6 +4,9 @@ node_modules
 # Scripts output
 scripts/*.txt
 
+# Generated search index (artefact — rebuilt by pnpm search:index before deploy)
+static/data/search-index.json
+
 # Output
 .output
 .vercel
@@ -32,4 +35,5 @@ supabase/.temp
 
 # Paraglide
 src/lib/paraglide
+src/paraglide
 project.inlang/cache/
