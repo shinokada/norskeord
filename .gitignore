@@ -35,4 +35,5 @@ supabase/.temp
 
 # Paraglide
 src/lib/paraglide
+src/paraglide
 project.inlang/cache/
