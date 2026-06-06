@@ -94,6 +94,11 @@
       pro: { value: m.plus_row_download_progress_plus(), yes: true }
     },
     {
+      feature: m.plus_row_search(),
+      free: { value: m.plus_row_search_free(), yes: false },
+      pro: { value: m.plus_row_search_plus(), yes: true }
+    },
+    {
       feature: m.plus_row_support(),
       free: { value: m.plus_row_support_free(), yes: false },
       pro: { value: m.plus_row_support_plus(), yes: true }
