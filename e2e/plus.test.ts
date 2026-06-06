@@ -8,7 +8,7 @@ test.describe('/plus page', () => {
   // ── Meta ──────────────────────────────────────────────────────────────────
 
   test('has expected page title', async ({ page }) => {
-    await expect(page).toHaveTitle(/Norske Flashcard Plus/i);
+    await expect(page).toHaveTitle(/Norskeord Plus/i);
   });
 
   test('has expected meta description', async ({ page }) => {
@@ -19,9 +19,7 @@ test.describe('/plus page', () => {
   // ── Content ───────────────────────────────────────────────────────────────
 
   test('shows hero heading', async ({ page }) => {
-    await expect(
-      page.getByRole('heading', { name: /Norske Flashcard Plus/i, level: 1 })
-    ).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Norskeord Plus/i, level: 1 })).toBeVisible();
   });
 
   test('shows Free vs Plus comparison table', async ({ page }) => {

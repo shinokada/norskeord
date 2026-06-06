@@ -3,7 +3,7 @@ MOVE TO BLOG INSTEAD.
 
 # Email Service
 
-This document summarises the decisions made about a email service for Norske Flashcard, complementing the flashcard and audio experience on the website.
+This document summarises the decisions made about a email service for Norskeord, complementing the flashcard and audio experience on the website.
 
 ---
 

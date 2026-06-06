@@ -23,6 +23,7 @@
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
   import { clearUserProgress } from '$lib/progress';
+  import Search from '$lib/components/Search.svelte';
 
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
@@ -102,7 +103,18 @@
   onMount(() => {
     localeStore.init();
   });
+
+  // ── Search modal ───────────────────────────────────────────────────────────
+  let searchOpen = $state(false);
 </script>
+
+<Search
+  bind:open={searchOpen}
+  {isPlus}
+  onclose={() => {
+    searchOpen = false;
+  }}
+/>
 
 <Navbar
   breakpoint="lg"
@@ -118,6 +130,35 @@
   </NavBrand>
 
   <div class="flex items-center gap-2 lg:order-2">
+    <!-- Search button -->
+    <button
+      type="button"
+      aria-label={m.search_aria_label()}
+      onclick={() => {
+        searchOpen = true;
+      }}
+      class="relative inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+      data-testid="search-button"
+    >
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"
+        />
+      </svg>
+      {#if !isPlus}
+        <!-- Lock badge for free users -->
+        <span
+          aria-label={m.search_plus_only()}
+          class="absolute -right-0.5 -top-0.5 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-indigo-600 text-[8px] text-white"
+        >
+          🔒
+        </span>
+      {/if}
+    </button>
+
     <button
       type="button"
       onclick={toggleLocale}

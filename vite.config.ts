@@ -23,8 +23,8 @@ export default defineConfig(({ mode }) => {
         registerType: 'autoUpdate',
         injectRegister: 'auto',
         manifest: {
-          name: 'Norske Flashcard',
-          short_name: 'Norske',
+          name: 'Norskeord',
+          short_name: 'Norskeord',
           description: pkg.description,
           theme_color: '#1e3a5f',
           background_color: '#ffffff',
