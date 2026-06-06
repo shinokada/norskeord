@@ -277,7 +277,7 @@
   "login_error_generic": "Noe gikk galt. Vennligst prøv igjen.",
 
   "plus_badge": "Kommer snart",
-  "plus_heading": "Studer smartere med Norske Flashcard Plus",
+  "plus_heading": "Studer smartere med Norskeord Plus",
   "plus_subheading": "Plus holder styr på hvor godt du kan hvert ord og viser deg bare kortene det er verdt å øve på i dag — slik at hver økt faktisk fester seg.",
   "plus_notify_prompt": "Legg igjen e-posten din, så varsler vi deg når Plus lanseres.",
   "plus_signup_cta": "Få tidlig tilgang + en lanseringsrabatt",
@@ -682,5 +682,29 @@
   "blog_search_placeholder": "Søk i artikler…",
   "blog_search_aria": "Søk i bloggartikler",
 
-  "blog_load_more": "Last inn flere ({remaining} gjenstår)"
+  "blog_load_more": "Last inn flere ({remaining} gjenstår)",
+
+  "search_aria_label": "Søk etter ord og uttrykk",
+  "search_placeholder": "Søk etter et ord eller uttrykk…",
+  "search_loading": "Laster register…",
+  "search_load_error": "Kunne ikke laste søkeregisteret. Prøv igjen.",
+  "search_empty_hint": "Skriv minst 2 tegn for å søke",
+  "search_no_results": "Ingen resultater for «{query}»",
+  "search_no_results_hint": "Prøv å søke på det andre språket, eller bruk grunnformen av ordet.",
+  "search_inflection": "treff: {norsk} · lemma: {lemma}",
+  "search_results_label": "Søkeresultater",
+  "search_filter_source": "Filtrer etter type",
+  "search_filter_level": "Filtrer etter nivå",
+  "search_filter_all": "Alle",
+  "search_filter_all_levels": "Alle nivåer",
+  "search_filter_vocab": "Ord",
+  "search_filter_uttrykk": "Uttrykk",
+  "search_hint_navigate": "for å navigere",
+  "search_hint_open": "for å åpne",
+  "search_hint_close": "for å lukke",
+  "search_plus_title": "Søk er en Plus-funksjon",
+  "search_plus_description": "Søk i alle 10 000+ norske ord og uttrykk med raske resultater direkte i nettleseren.",
+  "search_plus_cta": "Oppgrader til Plus →",
+  "search_plus_only": "Søk krever Plus",
+  "search_close": "Lukk"
 }

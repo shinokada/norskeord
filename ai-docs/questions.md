@@ -2,6 +2,8 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
+The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
+
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
 ---
@@ -47,7 +49,7 @@ The **table** is the reference layer — it belongs at the bottom for people who
 
 ## Specific copy issues
 
-**Heading/subheading redundancy.** The `plus_heading` is *"Study smarter with Norske Flashcard Plus"* and the `plus_subheading` is *"Study smarter, not longer. Plus tracks…"* — "study smarter" appears twice in two consecutive sentences. Pick one.
+**Heading/subheading redundancy.** The `plus_heading` is *"Study smarter with Norskeord Plus"* and the `plus_subheading` is *"Study smarter, not longer. Plus tracks…"* — "study smarter" appears twice in two consecutive sentences. Pick one.
 
 **The Grammar upsell box** is hardcoded English with no i18n key and lives awkwardly between the CTA and the feature cards. It's also very narrow in focus — it talks only about grammar topics, ignoring the bigger value story. If you keep a specific feature upsell here, it should rotate or be the most conversion-relevant feature. For most users, smart review scheduling or full B1–C2 access would be more compelling.
 

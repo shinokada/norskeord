@@ -210,3 +210,10 @@ en skall
 en museflette
 en hestehale
 svakt
+et smell
+å slukke
+å verke
+å strekke
+å ule
+en skurk
+å oppdage
