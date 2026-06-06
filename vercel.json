@@ -1,9 +1,16 @@
 {
   "installCommand": "pnpm install",
+  "buildCommand": "pnpm search:index && pnpm build",
   "crons": [
     {
       "path": "/api/publish-scheduled",
       "schedule": "0 6 * * *"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/data/search-index.json",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     }
   ]
 }

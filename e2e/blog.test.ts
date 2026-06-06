@@ -221,6 +221,8 @@ test.describe('Blog level filter', () => {
   test('clicking the same level again deselects it', async ({ page }) => {
     const allCount = await page.locator('a[href^="/blog/"]').count();
     await levelBtn(page, 'A2').click();
+    // Wait for the filter to take effect (guide section disappears) before deselecting
+    await expect(page.locator('a[href="/blog/slik-bruker-du-norskeord"]')).toHaveCount(0);
     await levelBtn(page, 'A2').click();
     await expect(page.locator('a[href^="/blog/"]')).toHaveCount(allCount);
   });

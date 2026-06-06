@@ -37,7 +37,11 @@ async function answerAndAdvance(page: Page) {
   }
 
   // After answering, wait for the Next / See results button then click it.
-  const next = page.getByRole('button', { name: /next|see results|neste|se resultater/i });
+  // Scope to button.bg-indigo-600 to avoid matching the SpeakButton whose
+  // aria-label may contain "neste" when a Norwegian word/phrase has that text.
+  const next = page.locator('button.bg-indigo-600').filter({
+    hasText: /next|see results|neste|se resultater/i
+  });
   await next.waitFor({ state: 'visible', timeout: 8000 }).catch(() => {});
   if (await next.isVisible({ timeout: 1000 }).catch(() => false)) {
     await next.click();
@@ -139,8 +143,11 @@ test('keyboard shortcut A selects first MC option', async ({ page }) => {
   const optionA = page.getByRole('button', { name: /^A\b/ });
   if (await optionA.isVisible({ timeout: 3000 }).catch(() => false)) {
     await page.keyboard.press('a');
-    // After selecting via keyboard, the Next button should appear (en: Next, nb: Neste)
-    await expect(page.getByRole('button', { name: /next|neste/i })).toBeVisible();
+    // Scope to button.bg-indigo-600 to avoid matching the SpeakButton whose
+    // aria-label may contain "neste" when the current entry contains that text.
+    await expect(
+      page.locator('button.bg-indigo-600').filter({ hasText: /next|neste/i })
+    ).toBeVisible();
   }
 });
 
