@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.15.0
+
+### Minor Changes
+
+- - **New Features**
+    - Full-text search modal for Plus members with Ctrl/Cmd+K, keyboard navigation, highlighting, source/level filters, lazy loading, and a free-user upgrade prompt; search index prebuilt and served as a cached static asset.
+  - **Brand Updates**
+    - App and marketing text updated from “Norske Flashcard” to “Norskeord”.
+  - **Content**
+    - Added new vocabulary entries and refreshed one recording.
+  - **Tests**
+    - New end-to-end search tests and refinements to existing e2e flows.
+  - **Docs / Chores**
+    - Added implementation/service docs, build script, cache header, and updated ignore patterns.
+
 ## 2.14.1
 
 ### Patch Changes
