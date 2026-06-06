@@ -25,13 +25,14 @@
     "test:unit": "vitest",
     "test": "npm run test:unit -- --run && npm run test:e2e",
     "test:e2e": "playwright test",
-    "ch": "npx changeset && pnpm stats",
+    "ch": "npx tsx scripts/build-search-index.ts && npx changeset && pnpm stats",
     "cv": "npx changeset version",
     "generate:lessons": "npx tsx --env-file=.env scripts/generate-lessons.ts",
     "og": "node scripts/generate-og.mjs",
     "og:blog": "node scripts/generate-og.mjs --blog",
     "og:decks": "node scripts/generate-og.mjs --decks",
-    "stats": "node scripts/generate-stats.mjs"
+    "stats": "node scripts/generate-stats.mjs",
+    "search:index": "npx tsx scripts/build-search-index.ts"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.100.1",
