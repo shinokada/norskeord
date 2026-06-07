@@ -25,7 +25,7 @@ CREATE TABLE public.card_progress (
 CREATE TABLE public.subscriptions (
   user_id uuid NOT NULL,
   plan text NOT NULL DEFAULT 'free'::text CHECK (plan = ANY (ARRAY['free'::text, 'plus'::text])),
-  billing_interval text CHECK (billing_interval = ANY (ARRAY['monthly'::text, 'annual'::text])),
+  billing_interval text CHECK (billing_interval = ANY (ARRAY['month'::text, 'year'::text])),
   valid_until timestamp with time zone,
   lemon_squeezy_customer_id text,
   lemon_squeezy_subscription_id text,

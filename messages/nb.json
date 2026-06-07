@@ -243,6 +243,8 @@
   "profile_sub_reactivate": "Reaktiver →",
   "profile_sub_manage_billing": "Administrer fakturering →",
   "profile_sub_billing_soon": "Faktureringsadministrasjon kommer snart.",
+  "profile_sub_billed_monthly": "Faktureres månedlig",
+  "profile_sub_billed_annually": "Faktureres årlig",
   "profile_sub_notifications_heading": "Varsler",
   "profile_sub_daily_reminder": "Daglig studiepåminnelse",
   "profile_sub_daily_reminder_hint": "Nettleser-/app-varsling kl. 19:00 UTC hvis du ikke har studert den dagen.",
@@ -581,7 +583,7 @@
   "plus_feature_norskproven_body": "Lesetekster med flervalgsspm., skriveoppgaver med eksempelsvar og muntlige rollespillscenarier — på både A2- og B1-nivå.",
 
   "plus_checkout_cta": "Oppgrader til Plus — 49 NOK/måned",
-  "plus_checkout_cta_annual": "Oppgrader til Plus — 399 NOK/år",
+  "plus_checkout_cta_annual": "Oppgrader til Plus — 490 NOK/år",
   "plus_manage_subscription": "Administrer abonnement →",
   "plus_sign_in_to_upgrade": "Logg inn for å oppgradere",
   "plus_activating": "Videresender til betaling…",
