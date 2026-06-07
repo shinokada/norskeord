@@ -90,14 +90,13 @@ test.describe('/norskproven page', () => {
     await expect(page.getByRole('link', { name: /unlock with plus/i })).not.toBeVisible();
   });
 
-  // ── CTA buttons ──────────────────────────────────────────────────────────
+  // ── Browse all links ─────────────────────────────────────────────────────
 
-  test('CTA button links to /a2/health', async ({ page }) => {
+  test('A2 section has a "browse all" link to /learn/a2', async ({ page }) => {
     await page.goto('/norskproven');
-    // The teal CTA button at the bottom links to /a2/health
-    await expect(page.getByRole('link', { name: /a2/i }).last()).toHaveAttribute(
+    await expect(page.getByRole('link', { name: /browse all a2|a2 categories/i })).toHaveAttribute(
       'href',
-      '/a2/health'
+      '/learn/a2'
     );
   });
 });
