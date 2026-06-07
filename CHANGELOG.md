@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.16.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added annual Plus subscription option with monthly/annual toggle on Plus page
+    - Profile page now displays whether your subscription is billed monthly or annually
+    - Annual Plus pricing updated to NOK 490/year
+  - **Documentation**
+    - Added billing management implementation documentation
+
 ## 2.15.0
 
 ### Minor Changes
