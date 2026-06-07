@@ -112,9 +112,9 @@
   {
     "norsk": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
     "lemma": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
-    "english": "Shall I order a glass of beer for you? Just water for me, thanks.",
+    "english": "Should I order a glass of beer for you? Just water for me, thanks.",
     "example": "Skal jeg bestille noe til deg? Bare vann til meg, takk.",
-    "example_english": "Shall I order something for you? Just water for me, thanks.",
+    "example_english": "Should I order something for you? Just water for me, thanks.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -213,7 +213,7 @@
     "norsk": "å være avhengig av noe",
     "lemma": "å være avhengig av noe",
     "english": "to be dependent on something",
-    "example": "Jeg er avhengig av bussen for å komme meg til jobb.",
+    "example": "Jeg er avhengig av bussen for å komme meg på jobb.",
     "example_english": "I am dependent on the bus to get to work.",
     "level": "A2",
     "category": "uttrykk",
@@ -224,7 +224,7 @@
     "lemma": "å være forsynt",
     "english": "to be full, to have had enough (food)",
     "example": "Nei takk, jeg er forsynt.",
-    "example_english": "No thank you, I have had enough.",
+    "example_english": "No thank you, I am full.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -232,9 +232,9 @@
   {
     "norsk": "Det kan du si.",
     "lemma": "Det kan du si.",
-    "english": "You can say that again., That's true.",
+    "english": "It certainly is. That's true.",
     "example": "Det er dyrt her. Det kan du si!",
-    "example_english": "It is expensive here. You can say that again!",
+    "example_english": "It is expensive here. It certainly is!",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -272,9 +272,9 @@
   {
     "norsk": "Ha det bra så lenge.",
     "lemma": "Ha det bra så lenge.",
-    "english": "Take care for now., Goodbye for now.",
+    "english": "Take care. Goodbye for now.",
     "example": "Jeg går nå. Ha det bra så lenge!",
-    "example_english": "I am leaving now. Take care for now!",
+    "example_english": "I am leaving now. Take care!",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -302,9 +302,9 @@
   {
     "norsk": "Ha det!",
     "lemma": "Ha det!",
-    "english": "Bye!, Take care!",
+    "english": "Bye!",
     "example": "Ha det bra! Vi ses snart.",
-    "example_english": "Take care! See you soon.",
+    "example_english": "Bye, take care! See you soon.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -374,7 +374,7 @@
     "lemma": "å bli lei av",
     "english": "to get tired of, fed up with",
     "example": "Jeg er lei av å vente på bussen.",
-    "example_english": "I am tired of waiting for the bus.",
+    "example_english": "I am fed up with waiting for the bus.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -843,8 +843,8 @@
     "norsk": "smak",
     "lemma": "smak",
     "english": "taste",
-    "example": "Denne maten har god smak.",
-    "example_english": "This food has a good taste.",
+    "example": "Denne maten smaker godt.",
+    "example_english": "This food tastes good.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
