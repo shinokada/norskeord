@@ -6,6 +6,9 @@
   // Server-provided auth/plan state
   let { data } = $props<{ data: { isLoggedIn: boolean; isPlus: boolean } }>();
 
+  // Billing interval toggle
+  let billingInterval = $state<'month' | 'year'>('month');
+
   // Checkout state
   let checkoutLoading = $state(false);
   let checkoutError = $state('');
@@ -13,14 +16,18 @@
   // Auto-trigger checkout if redirected here after login with ?checkout=1
   // Also treat ?checkout=1 on the page itself (nav button) — if already logged in, go straight to checkout.
   onMount(() => {
+    // Restore interval from query param so the intent survives the login redirect
+    const intervalParam = page.url.searchParams.get('interval');
+    if (intervalParam === 'year') billingInterval = 'year';
+
     if (page.url.searchParams.get('checkout') === '1' && data.isLoggedIn && !data.isPlus) {
       handleCheckout();
     }
   });
 
-  // Build the login URL carrying checkout intent, preserving any ?ref= for analytics
+  // Build the login URL carrying checkout intent (interval included)
   const loginHref = $derived.by(() => {
-    const next = encodeURIComponent('/plus?checkout=1');
+    const next = encodeURIComponent(`/plus?checkout=1&interval=${billingInterval}`);
     return `/auth/login?next=${next}`;
   });
 
@@ -142,12 +149,16 @@
     checkoutError = '';
     checkoutLoading = true;
     try {
-      const res = await fetch('/api/lemon/checkout', { method: 'POST' });
+      const res = await fetch('/api/lemon/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ interval: billingInterval })
+      });
       const result = await res.json();
 
       if (!res.ok) {
         if (result.error === 'login_required') {
-          window.location.href = '/auth/login?next=/plus';
+          window.location.href = `/auth/login?next=${encodeURIComponent(`/plus?checkout=1&interval=${billingInterval}`)}`;
           return;
         }
         checkoutError = m.checkout_error_generic();
@@ -189,11 +200,54 @@
         {m.plus_manage_subscription()}
       </a>
     {:else}
-      <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">49 NOK / month</p>
-      <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
-        Cancel any time. All progress carries over automatically.
-      </p>
+      <!-- ── Billing interval toggle ── -->
+      <div
+        class="mb-6 inline-flex rounded-xl border border-indigo-200 bg-white p-1 dark:border-indigo-700 dark:bg-indigo-950/60"
+      >
+        <button
+          type="button"
+          onclick={() => (billingInterval = 'month')}
+          class={billingInterval === 'month'
+            ? 'rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all'
+            : 'px-5 py-2 text-sm font-medium text-gray-500 transition-all hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200'}
+        >
+          Monthly
+        </button>
+        <button
+          type="button"
+          onclick={() => (billingInterval = 'year')}
+          class={billingInterval === 'year'
+            ? 'flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all'
+            : 'flex items-center gap-2 px-5 py-2 text-sm font-medium text-gray-500 transition-all hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200'}
+        >
+          Annual
+          <span
+            class={billingInterval === 'year'
+              ? 'rounded-full bg-white/20 px-2 py-0.5 text-xs font-semibold text-white'
+              : 'rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-400'}
+          >
+            2 months free
+          </span>
+        </button>
+      </div>
 
+      <!-- ── Price display ── -->
+      {#if billingInterval === 'month'}
+        <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">49 NOK / month</p>
+        <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+          Cancel any time. All progress carries over automatically.
+        </p>
+      {:else}
+        <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">
+          490 NOK / year
+          <span class="ml-2 text-base font-normal text-gray-400 line-through">588 NOK</span>
+        </p>
+        <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+          About 41 NOK/month — save 98 NOK. Cancel any time.
+        </p>
+      {/if}
+
+      <!-- ── CTA button ── -->
       {#if data.isLoggedIn}
         <button
           type="button"
@@ -201,7 +255,11 @@
           disabled={checkoutLoading}
           class="rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700 disabled:opacity-50"
         >
-          {checkoutLoading ? m.plus_activating() : m.plus_checkout_cta()}
+          {checkoutLoading
+            ? m.plus_activating()
+            : billingInterval === 'year'
+              ? m.plus_checkout_cta_annual()
+              : m.plus_checkout_cta()}
         </button>
       {:else}
         <a

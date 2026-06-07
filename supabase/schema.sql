@@ -34,8 +34,8 @@ create policy "Users can manage their own progress"
 -- Tracks plan per user. Populated by Lemon Squeezy webhooks (Phase 3).
 create table if not exists subscriptions (
   user_id          uuid primary key references auth.users(id) on delete cascade,
-  plan             text not null default 'free' check (plan in ('free', 'pro')),
-  billing_interval text check (billing_interval in ('monthly', 'annual')),
+  plan             text not null default 'free' check (plan in ('free', 'plus')),
+  billing_interval text check (billing_interval in ('month', 'year')),
   valid_until      timestamptz
 );
 
