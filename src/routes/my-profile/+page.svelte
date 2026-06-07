@@ -28,6 +28,7 @@
       profile={data.profile}
       plan={data.plan}
       billingPortalUrl={data.billingPortalUrl}
+      billingInterval={data.billingInterval}
     />
     <ContactSupport isPlus={data.plan === 'plus'} />
     <DangerZone />
