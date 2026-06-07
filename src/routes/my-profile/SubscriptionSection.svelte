@@ -6,11 +6,13 @@
   let {
     profile,
     plan,
-    billingPortalUrl
+    billingPortalUrl,
+    billingInterval
   }: {
     profile: Profile | null;
     plan: 'free' | 'plus';
     billingPortalUrl: string | null;
+    billingInterval: string | null;
   } = $props();
 
   const isPlus = $derived(plan === 'plus');
@@ -179,13 +181,18 @@
     {/if}
   {:else}
     <!-- Active Plus (status === 'active' or null pre-Phase-2B) -->
-    <div class="space-y-2">
+    <div class="space-y-1">
       <p class="text-sm text-gray-700 dark:text-gray-300">
         {m.profile_sub_plan_label()}
         <span class="font-semibold text-indigo-600 dark:text-indigo-400">
           {m.profile_sub_plan_plus()}
         </span>
       </p>
+      {#if billingInterval === 'year'}
+        <p class="text-xs text-gray-400 dark:text-gray-500">{m.profile_sub_billed_annually()}</p>
+      {:else if billingInterval === 'month'}
+        <p class="text-xs text-gray-400 dark:text-gray-500">{m.profile_sub_billed_monthly()}</p>
+      {/if}
       {#if renewsAt}
         <p class="text-sm text-gray-500 dark:text-gray-400">{m.profile_sub_renews()} {renewsAt}</p>
       {/if}
@@ -199,9 +206,6 @@
       >
         {m.profile_sub_manage_billing()}
       </a>
-    {:else}
-      <!-- Phase 2-B: portal URL not yet wired up -->
-      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">{m.profile_sub_billing_soon()}</p>
     {/if}
   {/if}
 

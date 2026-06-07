@@ -243,6 +243,8 @@
   "profile_sub_reactivate": "Reactivate →",
   "profile_sub_manage_billing": "Manage billing →",
   "profile_sub_billing_soon": "Billing management coming soon.",
+  "profile_sub_billed_monthly": "Billed monthly",
+  "profile_sub_billed_annually": "Billed annually",
   "profile_sub_notifications_heading": "Notifications",
   "profile_sub_daily_reminder": "Daily study reminder",
   "profile_sub_daily_reminder_hint": "Browser/app notification at 19:00 UTC if you haven't studied that day.",
@@ -565,7 +567,7 @@
   "plus_feature_norskproven_body": "Reading passages with multiple-choice questions, writing prompts with model answers, and oral role-play scenarios — all at A2 and B1 level.",
 
   "plus_checkout_cta": "Upgrade to Plus — 49 NOK/month",
-  "plus_checkout_cta_annual": "Upgrade to Plus — 399 NOK/year",
+  "plus_checkout_cta_annual": "Upgrade to Plus — 490 NOK/year",
   "plus_manage_subscription": "Manage subscription →",
   "plus_sign_in_to_upgrade": "Sign in to upgrade",
   "plus_activating": "Redirecting to checkout…",
