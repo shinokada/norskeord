@@ -4,31 +4,32 @@ import { injectPlusPlan } from './helpers.js';
 test('home page has expected h1', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'Learn Norwegian vocabulary & phrases that actually sticks'
+    'Everything you need to learn Norwegian'
   );
 });
 
-test('home page shows all CEFR level headings', async ({ page }) => {
+test('home page shows all CEFR level cards linking to hub pages', async ({ page }) => {
   await page.goto('/');
-  for (const label of [
-    'A1 — Beginner',
-    'A2 — Elementary',
-    'B1 — Intermediate',
-    'B2 — Upper Intermediate',
-    'C1 — Advanced',
-    'C2 — Mastery'
-  ]) {
-    await expect(page.getByRole('heading', { name: label, level: 2 })).toBeVisible();
+  for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
+    await expect(
+      page
+        .getByRole('link', { name: new RegExp(level) })
+        .filter({ hasText: level })
+        .first()
+    ).toBeVisible();
   }
 });
 
-test('home page has category links for A1', async ({ page }) => {
+test('home page level cards link to /learn/[level]', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('link', { name: 'Greetings' })).toHaveAttribute(
-    'href',
-    '/a1/greetings'
-  );
-  await expect(page.getByRole('link', { name: 'Animals' })).toHaveAttribute('href', '/a1/animals');
+  for (const level of ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']) {
+    await expect(
+      page
+        .getByRole('link', { name: new RegExp(level, 'i') })
+        .filter({ hasText: new RegExp(level, 'i') })
+        .first()
+    ).toHaveAttribute('href', `/learn/${level}`);
+  }
 });
 
 test('A1 greetings flashcard page loads and shows title', async ({ page }) => {
