@@ -56,13 +56,15 @@ export const load: PageServerLoad = async ({ locals }) => {
   // ls_customer_id lives in the subscriptions table (written by the LS webhook),
   // not in profiles. Look it up there for Plus users.
   let billingPortalUrl: string | null = null;
+  let billingInterval: string | null = null;
   if (isPlus) {
     const { data: sub } = await locals.supabase
       .from('subscriptions')
-      .select('lemon_squeezy_subscription_id')
+      .select('lemon_squeezy_subscription_id, billing_interval')
       .eq('user_id', locals.user.id)
       .maybeSingle();
     const subscriptionId = sub?.lemon_squeezy_subscription_id ?? null;
+    billingInterval = sub?.billing_interval ?? null;
     if (subscriptionId) {
       billingPortalUrl = await fetchBillingPortalUrl(subscriptionId);
     }
@@ -71,6 +73,7 @@ export const load: PageServerLoad = async ({ locals }) => {
   return {
     profile,
     billingPortalUrl,
+    billingInterval,
     user: locals.user,
     plan: locals.plan
   };

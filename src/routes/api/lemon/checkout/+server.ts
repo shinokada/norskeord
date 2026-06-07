@@ -2,6 +2,8 @@
  * POST /api/lemon/checkout
  *
  * Creates a Lemon Squeezy checkout URL for the authenticated user.
+ * Accepts an optional JSON body: { interval: 'month' | 'year' }
+ * Defaults to 'month' if not provided or invalid.
  * Returns JSON { checkoutUrl: string } on success.
  *
  * Errors:
@@ -12,19 +14,31 @@ import { json } from '@sveltejs/kit';
 import {
   LEMONSQUEEZY_API_KEY,
   LEMONSQUEEZY_STORE_ID,
-  LEMONSQUEEZY_VARIANT_ID
+  LEMONSQUEEZY_VARIANT_ID,
+  LEMONSQUEEZY_VARIANT_ID_ANNUAL
 } from '$env/static/private';
 import type { RequestHandler } from './$types';
 
-export const POST: RequestHandler = async ({ locals, url }) => {
+export const POST: RequestHandler = async ({ request, locals, url }) => {
   // 1. Require auth
   if (!locals.user) {
     return json({ error: 'login_required' }, { status: 401 });
   }
 
+  // 2. Read optional interval from request body (default: 'month')
+  let interval: 'month' | 'year' = 'month';
+  try {
+    const body = await request.json();
+    if (body?.interval === 'year') interval = 'year';
+  } catch {
+    // no body or non-JSON — fall back to monthly
+  }
+
+  const variantId = interval === 'year' ? LEMONSQUEEZY_VARIANT_ID_ANNUAL : LEMONSQUEEZY_VARIANT_ID;
+
   const origin = url.origin;
 
-  // 2. Create checkout via LS API
+  // 3. Create checkout via LS API
   let response: Response;
   try {
     response = await fetch('https://api.lemonsqueezy.com/v1/checkouts', {
@@ -53,7 +67,7 @@ export const POST: RequestHandler = async ({ locals, url }) => {
               data: { type: 'stores', id: LEMONSQUEEZY_STORE_ID }
             },
             variant: {
-              data: { type: 'variants', id: LEMONSQUEEZY_VARIANT_ID }
+              data: { type: 'variants', id: variantId }
             }
           }
         }
