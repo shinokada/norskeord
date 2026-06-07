@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.16.1
+
+### Patch Changes
+
+- fix: vocab-a2 and uttrykk-a2
+
 ## 2.16.0
 
 ### Minor Changes
