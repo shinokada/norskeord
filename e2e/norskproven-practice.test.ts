@@ -532,26 +532,32 @@ test.describe('/plus page updates', () => {
 });
 
 // ===========================================================================
-// /norskproven — hero CTA for Plus users
+// /norskproven — practice grid is now inline on the main page
 // ===========================================================================
 
-test.describe('/norskproven hero CTA', () => {
-  test('Plus user sees practice tests link in hero', async ({ page }) => {
-    await injectPlusPlan(page);
+test.describe('/norskproven practice grid (inline)', () => {
+  test('free user sees Test 1 accessible and Tests 2 & 3 locked on /norskproven', async ({
+    page
+  }) => {
     await page.goto('/norskproven');
-
-    const practiceLink = page.getByRole('link', { name: /start →|start ->/i });
-    await expect(practiceLink).toBeVisible();
-    await expect(practiceLink).toHaveAttribute('href', '/norskproven/practice');
+    await expect(page.getByRole('link', { name: 'Test 1' }).first()).toBeVisible();
+    await expect(page.getByRole('link', { name: /Test 2 🔒/i }).first()).toBeVisible();
+    await expect(page.getByRole('link', { name: /Test 3 🔒/i }).first()).toBeVisible();
   });
 
-  test('guest sees Plus upsell link in hero', async ({ page }) => {
+  test('Plus user sees all test pills without lock icons on /norskproven', async ({ page }) => {
+    await injectPlusPlan(page);
     await page.goto('/norskproven');
+    await expect(page.getByRole('link', { name: /🔒/ })).not.toBeVisible();
+    await expect(page.getByRole('link', { name: 'Test 1' }).first()).toBeVisible();
+  });
 
-    // Should NOT have the practice link
-    await expect(page.getByRole('link', { name: /norskproven\/practice/ })).not.toBeVisible();
-
-    // Should have a /plus link
-    await expect(page.getByRole('link', { name: /plus/i }).first()).toBeVisible();
+  test('A2 reading Test 1 pill on /norskproven links to correct URL', async ({ page }) => {
+    await injectPlusPlan(page);
+    await page.goto('/norskproven');
+    await expect(page.getByRole('link', { name: 'Test 1' }).first()).toHaveAttribute(
+      'href',
+      '/norskproven/practice/1/reading/a2'
+    );
   });
 });

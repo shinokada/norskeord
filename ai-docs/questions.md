@@ -2,12 +2,19 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
-
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
+
+The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
 
 ---
 
+- For example learn/[level], like learn/b1 page has Grammar and From the blog
+
+- domain names: learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
+
+norsksol, norskbie, norskugle, norskrev, norskhav, norskelg, norskmus, norskulv, norskravn
+
+- How about Start free button rather than login?
 - plus page
 
 ```
