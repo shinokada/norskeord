@@ -22,15 +22,10 @@
       "uttrykk": 545,
       "total": 1995
     },
-    "C1": {
-      "vocab": 155,
+    "C": {
+      "vocab": 300,
       "uttrykk": 0,
-      "total": 155
-    },
-    "C2": {
-      "vocab": 145,
-      "uttrykk": 0,
-      "total": 145
+      "total": 300
     }
   }
 }

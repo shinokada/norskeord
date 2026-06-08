@@ -2,13 +2,80 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
-
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
+
+The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
 
 ---
 
+- editting json file for editor
+- For example learn/[level], like learn/b1 page has Grammar and From the blog
+
+- domain names: learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
+
+norsksol, norskbie, norskugle, norskrev, norskhav, norskelg, norskmus, norskulv, norskravn
+
+- How about Start free button rather than login?
 - plus page
+
+---
+
+Q: I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+
+You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
+
+/norskproven/practice and /norskproven page content are the same.
+
+- I think /norskproven/practice should be removed
+- norskproven/practice/1/reading/a2 should change to norskproven/1/reading/a2, etc.
+- All the links should be corrected.
+  What do you think?
+
+Ans: Good, I have a clear picture now. Let me check the practice sub-routes and the sitemap too.Now I have a comprehensive picture. Your proposal is correct and clean. Here's my full assessment:
+
+**The situation:**
+
+- `/norskproven` now contains everything `/norskproven/practice` used to have (plus the vocabulary prep sections). The `/norskproven/practice` index page is genuinely redundant.
+- The actual practice sessions live at `/norskproven/practice/[test]/[type]/[level]` — these should move up to `/norskproven/[test]/[type]/[level]`.
+- There are also legacy redirect routes at `/norskproven/practice/oral/[level]`, `/reading/[level]`, `/writing/[level]` (pre-`[test]` URLs) that should be updated to redirect to the new paths.
+
+**What needs to change:**
+
+1. **Delete** `src/routes/norskproven/practice/` entirely (index page + `+page.ts`)
+2. **Move** `src/routes/norskproven/practice/[test]/` → `src/routes/norskproven/[test]/`
+3. **Move** the old redirect routes `norskproven/practice/oral/[level]` etc. → `norskproven/oral/[level]` (updating the redirect targets)
+4. **Update all `href` and `redirect` references** across the codebase — particularly:
+   - The practice pill links in `norskproven/+page.svelte` (`/norskproven/practice/${test}/...` → `/norskproven/${test}/...`)
+   - Back-links inside the session pages (`/norskproven/practice` → `/norskproven`)
+   - The `[level]/+page.ts` guard redirects (`/norskproven/practice` → `/norskproven`)
+   - The `sitemap.xml` server route regex
+   - The `src/routes/learn/[level]/+page.svelte` link
+
+Let me also quickly check the learn/[level] page and old redirect routes before we proceed:Good. Now I have the full picture. The plan is solid. Here's a precise breakdown before executing:
+
+**Files to move (rename):**
+
+- `practice/[test]/oral/[level]/` → `[test]/oral/[level]/`
+- `practice/[test]/reading/[level]/` → `[test]/reading/[level]/`
+- `practice/[test]/writing/[level]/` → `[test]/writing/[level]/`
+
+**Legacy redirect routes** — these currently redirect `practice/oral/[level]` → `practice/1/oral/[level]`. After the migration they should redirect to `/norskproven/1/oral/[level]`. They can live at `norskproven/oral/[level]`, `norskproven/reading/[level]`, `norskproven/writing/[level]` for continued backward compatibility.
+
+**Files to edit:**
+
+- `norskproven/+page.svelte` — pill hrefs: `/norskproven/practice/${test}/...` → `/norskproven/${test}/...`
+- `norskproven/[test]/oral/[level]/+page.ts` — guard redirect → `/norskproven`
+- `norskproven/[test]/oral/[level]/+page.svelte` — back-link → `/norskproven`; summary back-link → `/norskproven`; "Try B1" link
+- Same for reading and writing equivalents
+- `sitemap.xml/+server.ts` — regex pattern
+- `learn/[level]/+page.svelte` — the practice link
+
+**Files to delete:**
+
+- `norskproven/practice/+page.svelte`
+- `norskproven/practice/+page.ts`
+
+Shall I go ahead and make all these changes? I'll do it carefully in one pass.
 
 ```
 Now let me look at the message strings to understand the actual copy:Now I have a full picture of the page. Let me render a mock of it mentally and give you thorough feedback.Here's my honest assessment after reading the full page — code, messages, and structure.

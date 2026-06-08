@@ -1,7 +1,7 @@
 import type { SVGAttributes } from 'svelte/elements';
 import type { Card } from 'ts-fsrs';
 
-export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C';
 
 export type PartOfSpeech =
   | 'noun'
@@ -135,7 +135,7 @@ export const CATEGORIES_BY_LEVEL = {
     'uttrykk',
     'uttrykk-preview'
   ],
-  C1: [
+  C: [
     'philosophy',
     'academic',
     'formal-writing',
@@ -150,9 +150,7 @@ export const CATEGORIES_BY_LEVEL = {
     'diplomacy-international',
     'finance-economics',
     'medicine-healthcare',
-    'psychology-advanced'
-  ],
-  C2: [
+    'psychology-advanced',
     'literary',
     'archaic',
     'proverbs',
@@ -249,25 +247,24 @@ export const PLUS_CATEGORIES = new Set<string>([
   'a1/uttrykk',
   'a2/uttrykk',
   'b1/uttrykk',
-  // C1 — first 5 free; rest plus-only
-  'c1/professional',
-  'c1/abstract-concepts',
-  'c1/politics-democracy',
-  'c1/linguistics',
-  'c1/media-journalism',
-  'c1/architecture-design',
-  'c1/diplomacy-international',
-  'c1/finance-economics',
-  'c1/medicine-healthcare',
-  'c1/psychology-advanced',
-  // C2 — first 4 free; rest plus-only
-  'c2/technical',
-  'c2/advanced-law-justice',
-  'c2/neuroscience-cognition',
-  'c2/climate-environment-policy',
-  'c2/sociology-anthropology',
-  'c2/advanced-business-strategy',
-  'c2/existential-abstract'
+  // C — first 5 free; rest plus-only
+  'c/professional',
+  'c/abstract-concepts',
+  'c/politics-democracy',
+  'c/linguistics',
+  'c/media-journalism',
+  'c/architecture-design',
+  'c/diplomacy-international',
+  'c/finance-economics',
+  'c/medicine-healthcare',
+  'c/psychology-advanced',
+  'c/technical',
+  'c/advanced-law-justice',
+  'c/neuroscience-cognition',
+  'c/climate-environment-policy',
+  'c/sociology-anthropology',
+  'c/advanced-business-strategy',
+  'c/existential-abstract'
 ]);
 
 export function isPlusCategory(level: string, category: string): boolean {
@@ -295,14 +292,10 @@ export const FREE_QUIZ_CATEGORIES = new Set<string>([
   'b2/politics',
   'b2/economics',
   'b2/social-issues',
-  // C1
-  'c1/philosophy',
-  'c1/academic',
-  'c1/formal-writing',
-  // C2
-  'c2/literary',
-  'c2/archaic',
-  'c2/proverbs'
+  // C
+  'c/philosophy',
+  'c/academic',
+  'c/formal-writing'
 ]);
 
 export function isFreeQuizCategory(level: string, category: string): boolean {
@@ -506,7 +499,7 @@ export function freeGrammarQuestionIds(questions: GrammarQuestion[]): Set<string
   return free;
 }
 
-const CEFR_ORDER: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+const CEFR_ORDER: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
 
 /** The CEFR levels a question is tagged with — its `levels` array, or `[cefr]`. */
 export function questionLevels(q: GrammarQuestion): CEFRLevel[] {

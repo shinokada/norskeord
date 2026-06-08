@@ -26,15 +26,14 @@ const FILES = [
   { level: 'A2', type: 'vocab', file: 'vocab-a2.json' },
   { level: 'B1', type: 'vocab', file: 'vocab-b1.json' },
   { level: 'B2', type: 'vocab', file: 'vocab-b2.json' },
-  { level: 'C1', type: 'vocab', file: 'vocab-c1.json' },
-  { level: 'C2', type: 'vocab', file: 'vocab-c2.json' },
+  { level: 'C', type: 'vocab', file: 'vocab-c.json' },
   { level: 'A1', type: 'uttrykk', file: 'uttrykk-a1.json' },
   { level: 'A2', type: 'uttrykk', file: 'uttrykk-a2.json' },
   { level: 'B1', type: 'uttrykk', file: 'uttrykk-b1.json' },
   { level: 'B2', type: 'uttrykk', file: 'uttrykk-b2.json' }
 ];
 
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
 
 // Build per-level counts + optional category breakdown
 const byLevel = {};

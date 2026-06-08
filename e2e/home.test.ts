@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
 
 test('index page has expected h1', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'Learn Norwegian vocabulary & phrases that actually sticks'
+    'Everything you need to learn Norwegian'
   );
 });
 
@@ -19,7 +19,7 @@ test('index page has expected meta description', async ({ page }) => {
   const metaDescription = page.locator('meta[name="description"]');
   await expect(metaDescription).toHaveAttribute(
     'content',
-    'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
+    'Free Norwegian flashcards from A1 to C. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
   );
 });
 
@@ -27,7 +27,7 @@ test('index page has expected meta keywords', async ({ page }) => {
   const metaKeywords = page.locator('meta[name="keywords"]');
   await expect(metaKeywords).toHaveAttribute(
     'content',
-    'Norwegian vocabulary, learn Norwegian, flashcards, Norskprøven, CEFR, A1 A2 B1 B2 C1 C2, spaced repetition, Norwegian words'
+    'Norwegian vocabulary, learn Norwegian, flashcards, Norskprøven, CEFR, A1 A2 B1 B2 C, spaced repetition, Norwegian words'
   );
 });
 
@@ -37,7 +37,7 @@ test('index page has expected meta og', async ({ page }) => {
   const metaOgDescription = page.locator('meta[property="og:description"]');
   await expect(metaOgDescription).toHaveAttribute(
     'content',
-    'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
+    'Free Norwegian flashcards from A1 to C. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
   );
   const metaOgUrl = page.locator('meta[property="og:url"]');
   await expect(metaOgUrl).toHaveAttribute('content', 'https://norskeord.no/');
@@ -51,7 +51,7 @@ test('index page has expected meta twitter', async ({ page }) => {
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
   await expect(metaTwitterDescription).toHaveAttribute(
     'content',
-    'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
+    'Free Norwegian flashcards from A1 to C. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation. No credit card required.'
   );
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
   await expect(metaTwitterImage).toHaveAttribute('content', 'https://norskeord.no/og/default.png');
