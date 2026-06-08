@@ -30,43 +30,42 @@
   const levels = [
     {
       id: 'A1',
+      href: '/learn/a1',
       label: () => m.home_level_a1(),
       color: 'green',
       description: () => m.plus_unlocked_a1_teaser()
     },
     {
       id: 'A2',
+      href: '/learn/a2',
       label: () => m.home_level_a2(),
       color: 'teal',
       description: () => m.plus_unlocked_a2_teaser()
     },
     {
       id: 'B1',
+      href: '/learn/b1',
       label: () => m.home_level_b1(),
       color: 'blue',
       description: () => m.plus_unlocked_b1_teaser()
     },
     {
       id: 'B2',
+      href: '/learn/b2',
       label: () => m.home_level_b2(),
       color: 'indigo',
       description: () => m.plus_unlocked_b2_teaser()
     },
     {
-      id: 'C1',
-      label: () => m.home_level_c1(),
+      id: 'C',
+      href: '/learn/c',
+      label: () => m.home_level_c(),
       color: 'purple',
-      description: () => m.plus_unlocked_c1_teaser()
-    },
-    {
-      id: 'C2',
-      label: () => m.home_level_c2(),
-      color: 'pink',
-      description: () => m.plus_unlocked_c2_teaser()
+      description: () => m.plus_unlocked_c_teaser()
     }
   ] as const;
 
-  type BadgeColor = 'green' | 'teal' | 'blue' | 'indigo' | 'purple' | 'pink';
+  type BadgeColor = 'green' | 'teal' | 'blue' | 'indigo' | 'purple';
 
   const cardAccents: Record<BadgeColor, { heading: string; border: string; link: string }> = {
     green: {
@@ -93,11 +92,6 @@
       heading: 'text-purple-700 dark:text-purple-400',
       border: 'border-purple-200 dark:border-purple-800/40',
       link: 'text-purple-700 hover:text-purple-600 dark:text-purple-400 dark:hover:text-purple-300'
-    },
-    pink: {
-      heading: 'text-pink-700 dark:text-pink-400',
-      border: 'border-pink-200 dark:border-pink-800/40',
-      link: 'text-pink-700 hover:text-pink-600 dark:text-pink-400 dark:hover:text-pink-300'
     }
   };
 
@@ -146,7 +140,7 @@
     name: 'Norskeord',
     url: 'https://norskeord.no',
     description:
-      'Free Norwegian flashcards from A1 to C2. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation.',
+      'Free Norwegian flashcards from A1 to C. 90+ vocabulary categories with audio, spaced repetition, and Norskprøven preparation.',
     inLanguage: ['en', 'nb'],
     potentialAction: {
       '@type': 'SearchAction',
@@ -160,10 +154,10 @@
     '@type': 'LearningResource',
     name: 'Norskeord — Norwegian Vocabulary Flashcards',
     description:
-      'Flashcard decks covering A1 to C2 Norwegian vocabulary with audio, spaced repetition scheduling, and Norskprøven exam preparation.',
+      'Flashcard decks covering A1 to C Norwegian vocabulary with audio, spaced repetition scheduling, and Norskprøven exam preparation.',
     url: 'https://norskeord.no',
     inLanguage: 'nb',
-    educationalLevel: 'A1 to C2 (CEFR)',
+    educationalLevel: 'A1 to C (CEFR)',
     learningResourceType: 'Flashcard',
     teaches: 'Norwegian vocabulary',
     isAccessibleForFree: true,
@@ -333,29 +327,29 @@
     {m.home_levels_heading()}
   </h2>
   <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-    {#each levels as level (level.id)}
-      {@const accent = cardAccents[level.color]}
+    {#each levels as lvl (lvl.id)}
+      {@const accent = cardAccents[lvl.color]}
       <a
-        href="/learn/{level.id.toLowerCase()}"
-        class="group flex flex-col rounded-2xl border {accent.border} bg-white p-5 shadow-sm transition hover:shadow-md dark:bg-indigo-950/60"
+        href={lvl.href}
+        class="group flex flex-col rounded-2xl border {accent.border} bg-white p-5 text-left shadow-sm transition hover:shadow-md dark:bg-indigo-950/60"
       >
         <div class="mb-1 flex items-center justify-between">
-          <h3 class="text-base font-bold {accent.heading}">{level.label()}</h3>
+          <h3 class="text-base font-bold {accent.heading}">{lvl.label()}</h3>
           <span
             class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-500
                    dark:bg-gray-700 dark:text-gray-400"
           >
-            {level.id}
+            {lvl.id}
           </span>
         </div>
         <p class="mb-2 text-xs text-gray-400 dark:text-gray-500">
-          {entryCountLabel(level.id)}
+          {entryCountLabel(lvl.id)}
         </p>
         <p class="mb-4 flex-1 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
-          {level.description()}
+          {lvl.description()}
         </p>
         <span class="text-xs font-medium {accent.link} group-hover:underline">
-          {m.home_level_explore({ level: level.id })}
+          {m.home_level_explore({ level: lvl.id })}
         </span>
       </a>
     {/each}

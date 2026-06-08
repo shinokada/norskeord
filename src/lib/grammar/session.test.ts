@@ -209,10 +209,7 @@ describe('freeGrammarQuestionIds', () => {
 
 describe('questionLevels', () => {
   it('returns the levels array when present', () => {
-    expect(questionLevels(makeQuestion({ cefr: 'B2', levels: ['B2', 'C1'] }))).toEqual([
-      'B2',
-      'C1'
-    ]);
+    expect(questionLevels(makeQuestion({ cefr: 'B2', levels: ['B2', 'C'] }))).toEqual(['B2', 'C']);
   });
 
   it('falls back to [cefr] when levels is absent', () => {
@@ -224,10 +221,10 @@ describe('topicLevels', () => {
   it('returns the sorted, de-duplicated CEFR span of a question list', () => {
     const qs = [
       makeQuestion({ id: 'a', cefr: 'A2' }),
-      makeQuestion({ id: 'b', cefr: 'B2', levels: ['B2', 'C1'] }),
+      makeQuestion({ id: 'b', cefr: 'B2', levels: ['B2', 'C'] }),
       makeQuestion({ id: 'c', cefr: 'B1' })
     ];
-    expect(topicLevels(qs)).toEqual(['A2', 'B1', 'B2', 'C1']);
+    expect(topicLevels(qs)).toEqual(['A2', 'B1', 'B2', 'C']);
   });
 });
 

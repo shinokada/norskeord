@@ -9,8 +9,7 @@ const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   a2: () => import('$lib/data/vocab-a2.json') as unknown as Promise<{ default: VocabEntry[] }>,
   b1: () => import('$lib/data/vocab-b1.json') as unknown as Promise<{ default: VocabEntry[] }>,
   b2: () => import('$lib/data/vocab-b2.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  c1: () => import('$lib/data/vocab-c1.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  c2: () => import('$lib/data/vocab-c2.json') as unknown as Promise<{ default: VocabEntry[] }>,
+  c: () => import('$lib/data/vocab-c.json') as unknown as Promise<{ default: VocabEntry[] }>,
   'uttrykk-a1': () =>
     import('$lib/data/uttrykk-a1.json') as unknown as Promise<{ default: VocabEntry[] }>,
   'uttrykk-a2': () =>

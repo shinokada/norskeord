@@ -113,15 +113,14 @@
     });
   });
 
-  const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
+  const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
   const levelColors: Record<CEFRLevel, string> = {
     A1: 'bg-green-500',
     A2: 'bg-teal-500',
     B1: 'bg-blue-500',
     B2: 'bg-indigo-500',
-    C1: 'bg-purple-500',
-    C2: 'bg-pink-500'
+    C: 'bg-purple-500'
   };
 
   const levelTextColors: Record<CEFRLevel, string> = {
@@ -129,8 +128,7 @@
     A2: 'text-teal-700 dark:text-teal-400',
     B1: 'text-blue-700 dark:text-blue-400',
     B2: 'text-indigo-700 dark:text-indigo-400',
-    C1: 'text-purple-700 dark:text-purple-400',
-    C2: 'text-pink-700 dark:text-pink-400'
+    C: 'text-purple-700 dark:text-purple-400'
   };
 
   interface LevelStat {
@@ -163,8 +161,7 @@
     A2: CATEGORIES_BY_LEVEL.A2.length,
     B1: CATEGORIES_BY_LEVEL.B1.length,
     B2: CATEGORIES_BY_LEVEL.B2.length,
-    C1: CATEGORIES_BY_LEVEL.C1.length,
-    C2: CATEGORIES_BY_LEVEL.C2.length
+    C: CATEGORIES_BY_LEVEL.C.length
   };
 
   function getCefrEstimate(cards: CardProgress[]): string {
@@ -173,8 +170,7 @@
       A2: new Set(),
       B1: new Set(),
       B2: new Set(),
-      C1: new Set(),
-      C2: new Set()
+      C: new Set()
     };
     for (const card of cards) {
       seenCategoriesByLevel[card.level].add(card.category);

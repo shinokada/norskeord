@@ -11,8 +11,8 @@
   let saved = $state(false);
   let errorMsg = $state('');
 
-  const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
-  const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C1', 'C2']);
+  const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
+  const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C']);
 
   const speedOptions = [
     { value: '0.5', label: '0.5×' },

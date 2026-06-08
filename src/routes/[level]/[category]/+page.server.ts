@@ -15,9 +15,7 @@ const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   a1: () => import('$lib/data/vocab-a1.json') as unknown as Promise<{ default: VocabEntry[] }>,
   a2: () => import('$lib/data/vocab-a2.json') as unknown as Promise<{ default: VocabEntry[] }>,
   b1: () => import('$lib/data/vocab-b1.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  b2: () => import('$lib/data/vocab-b2.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  c1: () => import('$lib/data/vocab-c1.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  c2: () => import('$lib/data/vocab-c2.json') as unknown as Promise<{ default: VocabEntry[] }>
+  b2: () => import('$lib/data/vocab-b2.json') as unknown as Promise<{ default: VocabEntry[] }>
 };
 
 // Full uttrykk decks — Plus users only
@@ -52,6 +50,11 @@ const uttrykkPreviewLoaders: Record<string, () => Promise<{ default: VocabEntry[
 export const load: PageServerLoad = async ({ params, locals }) => {
   const { level, category } = params;
   const isPlus = locals.plan === 'plus';
+
+  // Redirect old c1/c2 category URLs to the combined /c/ route
+  if (level === 'c1' || level === 'c2') {
+    redirect(301, `/c/${category}`);
+  }
 
   // Gate: redirect free users who try to open a Plus-only category directly
   if (!isPlus && isPlusCategory(level, category)) {
@@ -121,7 +124,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     `${categoryName} Norwegian flashcards`,
     `${levelUpper} Norwegian`,
     `Norskprøven ${levelUpper}`,
-    `Norwegian ${category}` // slug form, e.g. "Norwegian family-and-relationships"
+    `Norwegian ${category}`
   ].join(', ');
 
   const pageMetaTags: MetaProps = {
