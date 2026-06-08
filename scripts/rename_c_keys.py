@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+This script was moved from the root directory. To run it, move it back to the root and run from there, or adjust the paths in the script.
+
 Run from the norskeord project root:
   python3 rename_c_keys.py
 

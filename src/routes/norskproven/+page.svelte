@@ -98,21 +98,21 @@
     }
   ] as const;
 
-  const examFacts = [
+  const _examFacts = [
     { icon: '📋', labelKey: 'who' as const, textKey: 'who' as const },
     { icon: '🎯', labelKey: 'target' as const, textKey: 'target' as const },
     { icon: '📝', labelKey: 'tests' as const, textKey: 'tests' as const },
     { icon: '📅', labelKey: 'register' as const, textKey: 'register' as const }
   ] as const;
 
-  function getFactLabel(key: 'who' | 'target' | 'tests' | 'register'): string {
+  function _getFactLabel(key: 'who' | 'target' | 'tests' | 'register'): string {
     if (key === 'who') return m.norskproven_fact_who_label();
     if (key === 'target') return m.norskproven_fact_target_label();
     if (key === 'tests') return m.norskproven_fact_tests_label();
     return m.norskproven_fact_register_label();
   }
 
-  function getFactText(key: 'who' | 'target' | 'tests' | 'register'): string {
+  function _getFactText(key: 'who' | 'target' | 'tests' | 'register'): string {
     if (key === 'who') return m.norskproven_fact_who_text();
     if (key === 'target') return m.norskproven_fact_target_text();
     if (key === 'tests') return m.norskproven_fact_tests_text();

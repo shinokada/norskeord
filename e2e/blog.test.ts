@@ -197,7 +197,7 @@ test.describe('Blog level filter', () => {
   });
 
   test('level filter buttons are visible', async ({ page }) => {
-    for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
+    for (const level of ['A1', 'A2', 'B1', 'B2', 'C']) {
       await expect(levelBtn(page, level)).toBeVisible();
     }
   });

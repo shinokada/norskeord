@@ -35,7 +35,7 @@
   let sourceFilter = $state<'all' | 'vocab' | 'uttrykk'>('all');
   let levelFilter = $state('all');
 
-  const LEVELS = ['all', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
+  const LEVELS = ['all', 'A1', 'A2', 'B1', 'B2', 'C'] as const;
 
   // ── Index cache ───────────────────────────────────────────────────────────
   let index: SearchEntry[] | null = null;
