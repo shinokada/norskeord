@@ -57,11 +57,12 @@
   let isPlus = $derived(page.data.plan === 'plus');
   let userId = $derived(isPlus ? (page.data.user?.id ?? null) : null);
 
-  // Unique levels and categories for the picker — sourced from allEntries so
-  // the full A1-B2 list is available regardless of any pre-filtered default.
-  let availableLevels = $derived(
-    [...new Set(data.allEntries.map((e: { level: string }) => e.level))].sort()
-  );
+  // Unique levels for the picker — sourced from allEntries, ordered A1–C2.
+  const ALL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  let availableLevels = $derived.by(() => {
+    const fromData = new Set(data.allEntries.map((e: { level: string }) => e.level.toUpperCase()));
+    return ALL_LEVELS.filter((l) => fromData.has(l));
+  });
   let availableCategories = $derived.by(() => {
     const src = selectedLevel
       ? data.allEntries.filter((e: { level: string }) => e.level === selectedLevel)

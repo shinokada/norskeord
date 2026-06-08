@@ -2,38 +2,20 @@ import { expect, test } from '@playwright/test';
 import { injectPlusPlan, setNorwegianLocale } from './helpers.js';
 
 // ---------------------------------------------------------------------------
-// Free user — search icon visible with lock badge, clicking opens upgrade prompt
+// Free user — search button is NOT visible (Plus-only feature)
 // ---------------------------------------------------------------------------
 
-test('free user sees search icon with lock badge in nav', async ({ page }) => {
+test('free user does NOT see search button in nav', async ({ page }) => {
   await setNorwegianLocale(page);
   await page.goto('/');
-  const searchBtn = page.getByTestId('search-button');
-  await expect(searchBtn).toBeVisible();
-  // Lock badge (🔒 span) should be present for free users
-  await expect(searchBtn.locator('span[aria-label]')).toBeVisible();
+  await expect(page.getByTestId('search-button')).not.toBeVisible();
 });
 
-test('free user clicking search icon sees upgrade prompt', async ({ page }) => {
+test('free user Cmd/Ctrl+K does not open search modal', async ({ page }) => {
   await setNorwegianLocale(page);
   await page.goto('/');
-  await page.getByTestId('search-button').click();
-  // Modal should open with upgrade prompt
-  await expect(page.getByRole('dialog')).toBeVisible();
-  // Should have a link to /plus
-  const dialog = page.getByRole('dialog');
-  await expect(dialog.getByRole('link', { name: /plus|oppgrader/i })).toBeVisible();
-  // Should NOT show the search input
-  await expect(page.getByRole('searchbox')).not.toBeVisible();
-});
-
-test('free user can dismiss upgrade prompt', async ({ page }) => {
-  await setNorwegianLocale(page);
-  await page.goto('/');
-  await page.getByTestId('search-button').click();
-  await expect(page.getByRole('dialog')).toBeVisible();
-  // Close via Escape
-  await page.keyboard.press('Escape');
+  await page.keyboard.press('Meta+k');
+  // Modal must not appear for free users
   await expect(page.getByRole('dialog')).not.toBeVisible();
 });
 
@@ -41,13 +23,10 @@ test('free user can dismiss upgrade prompt', async ({ page }) => {
 // Plus user — modal opens and is functional
 // ---------------------------------------------------------------------------
 
-test('Plus user search icon has no lock badge', async ({ page }) => {
+test('Plus user sees search button in nav', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/');
-  const searchBtn = page.getByTestId('search-button');
-  await expect(searchBtn).toBeVisible();
-  // Lock badge should NOT be present for Plus users
-  await expect(searchBtn.locator('span[aria-label]')).not.toBeVisible();
+  await expect(page.getByTestId('search-button')).toBeVisible();
 });
 
 test('Plus user clicking search icon opens modal with search input', async ({ page }) => {

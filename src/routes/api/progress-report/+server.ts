@@ -13,7 +13,7 @@ import { State } from 'ts-fsrs';
 import { CATEGORIES_BY_LEVEL } from '$lib/types';
 import type { CardProgress, CEFRLevel } from '$lib/types';
 
-const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
 
 const CATEGORY_LABELS: Record<string, string> = {
   greetings: 'Greetings',
@@ -129,8 +129,7 @@ function computeStats(progressMap: Record<string, CardProgress>) {
     A2: new Set(),
     B1: new Set(),
     B2: new Set(),
-    C1: new Set(),
-    C2: new Set()
+    C: new Set()
   };
   for (const card of allCards) {
     seenCatsByLevel[card.level].add(card.category);
@@ -248,8 +247,7 @@ const LEVEL_COLORS: Record<CEFRLevel, string> = {
   A2: '#14b8a6',
   B1: '#3b82f6',
   B2: '#6366f1',
-  C1: '#a855f7',
-  C2: '#ec4899'
+  C: '#a855f7'
 };
 
 export const POST: RequestHandler = async ({ request, locals }) => {

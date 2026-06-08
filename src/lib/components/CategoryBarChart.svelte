@@ -11,8 +11,7 @@
   import vocabA2 from '$lib/data/vocab-a2.json';
   import vocabB1 from '$lib/data/vocab-b1.json';
   import vocabB2 from '$lib/data/vocab-b2.json';
-  import vocabC1 from '$lib/data/vocab-c1.json';
-  import vocabC2 from '$lib/data/vocab-c2.json';
+  import vocabC from '$lib/data/vocab-c.json';
   import uttrykkA1 from '$lib/data/uttrykk-a1.json';
   import uttrykkA2 from '$lib/data/uttrykk-a2.json';
   import uttrykkB1 from '$lib/data/uttrykk-b1.json';
@@ -31,8 +30,7 @@
     A2: vocabA2 as { category: string }[],
     B1: vocabB1 as { category: string }[],
     B2: vocabB2 as { category: string }[],
-    C1: vocabC1 as { category: string }[],
-    C2: vocabC2 as { category: string }[]
+    C1: vocabC as { category: string }[]
   };
 
   // Uttrykk entries live in separate files, not the main vocab JSONs.
@@ -50,7 +48,7 @@
     return (vocabByLevel[level] ?? []).filter((v) => v.category === category).length;
   }
 
-  const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
+  const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
   interface CatBarStat {
     category: string;
@@ -105,8 +103,7 @@
     A2: true,
     B1: false,
     B2: false,
-    C1: false,
-    C2: false
+    C: false
   };
 
   let expanded = $state<Record<CEFRLevel, boolean>>({ ...defaults });
