@@ -12,10 +12,10 @@ export const load: PageLoad = async ({ params, parent }) => {
   void (await parent());
 
   const level = params.level.toUpperCase();
-  if (level !== 'A2' && level !== 'B1') redirect(302, '/norskproven/practice');
+  if (level !== 'A2' && level !== 'B1') redirect(302, '/norskproven');
 
   const test = params.test;
-  if (test !== '1' && test !== '2' && test !== '3') redirect(302, '/norskproven/practice');
+  if (test !== '1' && test !== '2' && test !== '3') redirect(302, '/norskproven');
 
   const raw =
     level === 'A2'
@@ -32,5 +32,5 @@ export const load: PageLoad = async ({ params, parent }) => {
 
   const data = raw.default as unknown as NorskprovenData;
 
-  return { passages: data.reading, level: level as 'A2' | 'B1', test };
+  return { scenarios: data.oral, level: level as 'A2' | 'B1', test };
 };

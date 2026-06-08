@@ -287,7 +287,7 @@
           >
         </a>
         <a
-          href="/norskproven/practice"
+          href="/norskproven"
           class="flex flex-col rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
         >
           <div class="flex items-center gap-2">

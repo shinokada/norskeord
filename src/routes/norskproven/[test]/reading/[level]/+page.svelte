@@ -148,7 +148,7 @@
     <!-- Page heading -->
     <div class="mb-5">
       <a
-        href="/norskproven/practice"
+        href="/norskproven"
         class="mb-2 inline-flex items-center gap-1 text-sm text-blue-500 hover:text-blue-700 dark:hover:text-blue-300"
       >
         ← {m.norskproven_practice_heading()}
@@ -335,14 +335,14 @@
           Prøv igjen
         </button>
         <a
-          href="/norskproven/practice"
+          href="/norskproven"
           class="rounded-lg border border-gray-300 px-6 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 focus:outline-none dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
         >
           ← Tilbake til øving
         </a>
         {#if data.level === 'A2'}
           <a
-            href="/norskproven/practice/{data.test}/reading/b1"
+            href="/norskproven/{data.test}/reading/b1"
             class="rounded-lg border border-blue-300 px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-blue-50 focus:ring-4 focus:ring-blue-200 focus:outline-none dark:border-blue-700 dark:text-blue-400 dark:hover:bg-blue-900/20"
           >
             Prøv B1 →
