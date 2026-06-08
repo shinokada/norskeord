@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.17.0
+
+### Minor Changes
+
+- - **New Features**
+    - Per-level learning hubs A1–C (C now single “Mastery”) with vocab, grammar, quiz entry and blog previews
+    - Homepage feature showcase and refreshed hero copy
+  - **Changes**
+    - Nav simplified to direct CEFR links; “Prepare” removed and “More” trimmed
+    - Deck picker replaced by level summary cards
+    - Norskprøven practice moved inline to /norskproven (legacy /practice consolidated)
+    - Search UI gated to Plus users
+    - C1/C2 consolidated into C sitewide (ordering, stats, sitemap, i18n updated)
+
 ## 2.16.1
 
 ### Patch Changes
