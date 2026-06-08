@@ -6,7 +6,7 @@ export interface Profile {
   id: string;
   display_name: string | null;
   avatar_url: string | null;
-  target_level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+  target_level: 'A1' | 'A2' | 'B1' | 'B2' | 'C';
   ui_language: 'en' | 'nb';
   card_direction: 'no_en' | 'en_no' | 'def_no';
   include_phrases: boolean;
