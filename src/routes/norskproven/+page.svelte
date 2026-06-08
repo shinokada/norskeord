@@ -213,23 +213,6 @@
     </div>
   </div>
 
-  <!-- ── What is Norskprøven ────────────────────────────────────────────────────── -->
-  <div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-    {#each examFacts as fact (fact.labelKey)}
-      <div
-        class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-indigo-950/60"
-      >
-        <div class="mb-1 flex items-center gap-2">
-          <span class="text-xl">{fact.icon}</span>
-          <span class="text-sm font-semibold text-gray-700 dark:text-gray-200"
-            >{getFactLabel(fact.labelKey)}</span
-          >
-        </div>
-        <p class="text-sm text-gray-500 dark:text-gray-400">{getFactText(fact.textKey)}</p>
-      </div>
-    {/each}
-  </div>
-
   <!-- ── Exam Essential categories ───────────────────────────────────────────────────── -->
   {#each examSections as section (section.level)}
     <div class="mb-10">
@@ -237,9 +220,6 @@
         <h2 class="text-2xl font-bold {section.color.heading}">
           {getSectionLabel(section.labelKey)}
         </h2>
-        <span class="rounded-full {section.color.badge} px-2.5 py-0.5 text-xs font-semibold">
-          {m.norskproven_exam_essential()}
-        </span>
       </div>
       <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
         {getSectionDescription(section.descriptionKey)}
