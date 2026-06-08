@@ -139,8 +139,8 @@ describe('getDistractors', () => {
   it('falls back to other levels when same-level pool is too small', () => {
     // Create a target whose level has only 1 other entry
     const smallPool: VocabEntry[] = [
-      makeEntry({ norsk: 'sjelden', english: 'rarely', level: 'C2', category: 'archaic' }),
-      makeEntry({ norsk: 'aldri', english: 'never', level: 'C2', category: 'archaic' }),
+      makeEntry({ norsk: 'sjelden', english: 'rarely', level: 'C', category: 'archaic' }),
+      makeEntry({ norsk: 'aldri', english: 'never', level: 'C', category: 'archaic' }),
       ...POOL
     ];
     const c2Target = smallPool[0];

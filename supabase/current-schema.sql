@@ -45,7 +45,7 @@ CREATE TABLE public.profiles (
   id uuid NOT NULL,
   display_name text,
   avatar_url text,
-  target_level text DEFAULT 'B1'::text CHECK (target_level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C1'::text, 'C2'::text])),
+  target_level text DEFAULT 'B1'::text CHECK (target_level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C'::text])),
   ui_language text DEFAULT 'en'::text CHECK (ui_language = ANY (ARRAY['en'::text, 'nb'::text])),
   card_direction text DEFAULT 'no_en'::text CHECK (card_direction = ANY (ARRAY['no_en'::text, 'en_no'::text, 'def_no'::text])),
   include_phrases boolean DEFAULT true,
@@ -76,7 +76,7 @@ CREATE TABLE public.study_days (
 );
 CREATE TABLE public.email_subscribers (
   user_id uuid NOT NULL,
-  level text NOT NULL CHECK (level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C1'::text, 'C2'::text])),
+  level text NOT NULL CHECK (level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C'::text])),
   subscribed_at timestamp with time zone DEFAULT now(),
   active boolean DEFAULT true,
   CONSTRAINT email_subscribers_pkey PRIMARY KEY (user_id),

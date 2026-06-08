@@ -21,8 +21,7 @@ export const GET: RequestHandler = async () => {
     ['a2', CATEGORIES_BY_LEVEL['A2']],
     ['b1', CATEGORIES_BY_LEVEL['B1']],
     ['b2', CATEGORIES_BY_LEVEL['B2']],
-    ['c1', CATEGORIES_BY_LEVEL['C1']],
-    ['c2', CATEGORIES_BY_LEVEL['C2']]
+    ['c', CATEGORIES_BY_LEVEL['C']]
   ];
 
   for (const [level, cats] of levelEntries) {

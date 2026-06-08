@@ -1,4 +1,3 @@
-import { error, redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { CATEGORIES_BY_LEVEL, isPlusCategory, isFreeGrammarTopic, topicLevels } from '$lib/types';
 import grammarData from '$lib/data/grammar.json';
@@ -8,34 +7,16 @@ import { parsePosts, type RawPostModule, cefrLevels } from '$lib/blog';
 
 export const prerender = false;
 
-const VALID_LEVELS = new Set(['a1', 'a2', 'b1', 'b2']);
+export const load: PageServerLoad = async ({ locals }) => {
+  const level = 'c';
+  const levelUpper = 'C' as CEFRLevel;
 
-const CEFR_LABELS: Record<string, string> = {
-  a1: 'Beginner',
-  a2: 'Elementary',
-  b1: 'Intermediate',
-  b2: 'Upper Intermediate'
-};
-
-export const load: PageServerLoad = async ({ params, locals }) => {
-  const level = params.level.toLowerCase();
-
-  // Redirect old c1/c2 URLs to the combined /learn/c hub
-  if (level === 'c1' || level === 'c2') {
-    redirect(301, '/learn/c');
-  }
-
-  if (!VALID_LEVELS.has(level)) {
-    throw error(404, `Unknown level: ${params.level}`);
-  }
-
-  const levelUpper = level.toUpperCase() as CEFRLevel;
   const categories = (CATEGORIES_BY_LEVEL[levelUpper] as readonly string[]).map((cat) => ({
     slug: cat,
     locked: isPlusCategory(levelUpper, cat)
   }));
 
-  // Grammar topics that include this CEFR level
+  // Grammar topics that include C level
   const questions = grammarData as GrammarQuestion[];
   const topicMap = new Map<GrammarTopic, GrammarQuestion[]>();
   for (const q of questions) {
@@ -57,7 +38,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
   type LevelStats = { vocab: number; uttrykk: number; total: number };
   const levelStats = (stats.byLevel as Record<string, LevelStats>)[levelUpper] ?? null;
 
-  // Blog posts for this level (max 3, newest first)
+  // Blog posts for C level (max 3, newest first)
   const modules = import.meta.glob('/src/lib/posts/*.md', { eager: true }) as Record<
     string,
     RawPostModule
@@ -68,7 +49,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
   return {
     level,
     levelUpper,
-    cefrLabel: CEFR_LABELS[level],
+    cefrLabel: 'Mastery',
     categories,
     grammarTopics,
     levelStats,

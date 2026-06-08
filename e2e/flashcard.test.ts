@@ -10,7 +10,7 @@ test('home page has expected h1', async ({ page }) => {
 
 test('home page shows all CEFR level cards linking to hub pages', async ({ page }) => {
   await page.goto('/');
-  for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
+  for (const level of ['A1', 'A2', 'B1', 'B2', 'C']) {
     await expect(
       page
         .getByRole('link', { name: new RegExp(level) })
@@ -22,7 +22,7 @@ test('home page shows all CEFR level cards linking to hub pages', async ({ page 
 
 test('home page level cards link to /learn/[level]', async ({ page }) => {
   await page.goto('/');
-  for (const level of ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']) {
+  for (const level of ['a1', 'a2', 'b1', 'b2', 'c']) {
     await expect(
       page
         .getByRole('link', { name: new RegExp(level, 'i') })
@@ -68,12 +68,12 @@ test('B1 travel flashcard page loads', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Travel');
 });
 
-// Plus member: C1 philosophy page loads with cards and FSRS rating buttons
-// Uses C1/philosophy which is free-tier accessible (no server-side redirect),
+// Plus member: C philosophy page loads with cards and FSRS rating buttons
+// Uses c/philosophy which is free-tier accessible (no server-side redirect),
 // then injects plan:plus client-side so the due-mode deck rebuilds correctly.
-test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ page }) => {
+test('Plus member C philosophy flashcard page loads and shows cards', async ({ page }) => {
   await injectPlusPlan(page);
-  await page.goto('/c1/philosophy');
+  await page.goto('/c/philosophy');
 
   // heading shows correct category
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Philosophy');
@@ -91,9 +91,9 @@ test('Plus member C1 philosophy flashcard page loads and shows cards', async ({ 
   await expect(page.getByRole('button', { name: /good|bra/i })).toBeVisible();
 });
 
-// free user is redirected away from a Plus-only C1 category (linguistics is Plus-only)
-test('free user is redirected from C1 linguistics to /plus', async ({ page }) => {
-  await page.goto('/c1/linguistics');
+// free user is redirected away from a Plus-only C category (linguistics is Plus-only)
+test('free user is redirected from C linguistics to /plus', async ({ page }) => {
+  await page.goto('/c/linguistics');
   await page.waitForURL(/\/plus/, { timeout: 10000 });
   await expect(page).toHaveURL(/\/plus/);
 });
