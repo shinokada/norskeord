@@ -190,7 +190,7 @@
                       id={pillId}
                       href={locked
                         ? '/plus?ref=practice-test-lock'
-                        : `/norskproven/practice/${test}/${type.key}/${level.toLowerCase()}`}
+                        : `/norskproven/${test}/${type.key}/${level.toLowerCase()}`}
                       class="rounded-lg border px-3 py-1 text-xs font-semibold transition-colors
                         {locked
                         ? 'cursor-not-allowed border-gray-300 text-gray-400 opacity-50 dark:border-gray-600 dark:text-gray-500'
