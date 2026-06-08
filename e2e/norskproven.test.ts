@@ -83,21 +83,13 @@ test.describe('/norskproven page', () => {
     await expect(page.getByRole('link', { name: /unlock with plus/i })).not.toBeVisible();
   });
 
-  test('plus user does NOT see "Unlock with Plus" CTA for B1', async ({ page }) => {
-    await injectPlusPlan(page);
-    await page.goto('/norskproven');
-    // When plus, the upsell CTA must not be visible
-    await expect(page.getByRole('link', { name: /unlock with plus/i })).not.toBeVisible();
-  });
+  // ── Browse all links ─────────────────────────────────────────────────────
 
-  // ── CTA buttons ──────────────────────────────────────────────────────────
-
-  test('CTA button links to /a2/health', async ({ page }) => {
+  test('A2 section has a "browse all" link to /learn/a2', async ({ page }) => {
     await page.goto('/norskproven');
-    // The teal CTA button at the bottom links to /a2/health
-    await expect(page.getByRole('link', { name: /a2/i }).last()).toHaveAttribute(
+    await expect(page.getByRole('link', { name: /browse all a2|a2 categories/i })).toHaveAttribute(
       'href',
-      '/a2/health'
+      '/learn/a2'
     );
   });
 });
