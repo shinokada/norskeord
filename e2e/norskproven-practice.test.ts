@@ -72,12 +72,12 @@ async function completeReadingSession(page: Page) {
 // ===========================================================================
 
 test.describe('Gate — free user redirect', () => {
-  test('/norskproven/practice is accessible to free users and shows locked pills for tests 2 and 3', async ({
+  test('/norskproven is accessible to free users and shows locked pills for tests 2 and 3', async ({
     page
   }) => {
-    await page.goto('/norskproven/practice');
+    await page.goto('/norskproven');
     // Page loads without redirecting
-    await expect(page).toHaveURL('/norskproven/practice');
+    await expect(page).toHaveURL('/norskproven');
     // Test 1 pills are accessible (no lock emoji)
     await expect(page.getByRole('link', { name: 'Test 1' }).first()).toBeVisible();
     // Test 2 and 3 pills show lock emoji
@@ -86,7 +86,7 @@ test.describe('Gate — free user redirect', () => {
   });
 
   test('free user clicking Test 2 pill is redirected to /plus', async ({ page }) => {
-    await page.goto('/norskproven/practice');
+    await page.goto('/norskproven');
     await page
       .getByRole('link', { name: /Test 2 🔒/i })
       .first()
@@ -94,52 +94,52 @@ test.describe('Gate — free user redirect', () => {
     await expect(page).toHaveURL(/\/plus/);
   });
 
-  test('/norskproven/practice/1/reading/a2 is accessible to free users', async ({ page }) => {
-    await page.goto('/norskproven/practice/1/reading/a2');
-    await expect(page).toHaveURL('/norskproven/practice/1/reading/a2');
+  test('/norskproven/1/reading/a2 is accessible to free users', async ({ page }) => {
+    await page.goto('/norskproven/1/reading/a2');
+    await expect(page).toHaveURL('/norskproven/1/reading/a2');
     await expect(page.getByText(/tekst 1 av|text 1 of/i)).toBeVisible();
   });
 
-  test('/norskproven/practice/2/reading/a2 redirects free user to /plus', async ({ page }) => {
-    await page.goto('/norskproven/practice/2/reading/a2');
+  test('/norskproven/2/reading/a2 redirects free user to /plus', async ({ page }) => {
+    await page.goto('/norskproven/2/reading/a2');
     await expect(page).toHaveURL(/\/plus/);
   });
 
-  test('/norskproven/practice/1/writing/a2 is accessible to free users', async ({ page }) => {
-    await page.goto('/norskproven/practice/1/writing/a2');
-    await expect(page).toHaveURL('/norskproven/practice/1/writing/a2');
+  test('/norskproven/1/writing/a2 is accessible to free users', async ({ page }) => {
+    await page.goto('/norskproven/1/writing/a2');
+    await expect(page).toHaveURL('/norskproven/1/writing/a2');
     await expect(page.getByText(/situasjon/i)).toBeVisible();
   });
 
-  test('/norskproven/practice/2/writing/a2 redirects free user to /plus', async ({ page }) => {
-    await page.goto('/norskproven/practice/2/writing/a2');
+  test('/norskproven/2/writing/a2 redirects free user to /plus', async ({ page }) => {
+    await page.goto('/norskproven/2/writing/a2');
     await expect(page).toHaveURL(/\/plus/);
   });
 
-  test('/norskproven/practice/1/oral/a2 is accessible to free users', async ({ page }) => {
-    await page.goto('/norskproven/practice/1/oral/a2');
-    await expect(page).toHaveURL('/norskproven/practice/1/oral/a2');
+  test('/norskproven/1/oral/a2 is accessible to free users', async ({ page }) => {
+    await page.goto('/norskproven/1/oral/a2');
+    await expect(page).toHaveURL('/norskproven/1/oral/a2');
     await expect(page.getByText(/scenario 1 av/i)).toBeVisible();
   });
 
-  test('/norskproven/practice/2/oral/a2 redirects free user to /plus', async ({ page }) => {
-    await page.goto('/norskproven/practice/2/oral/a2');
+  test('/norskproven/2/oral/a2 redirects free user to /plus', async ({ page }) => {
+    await page.goto('/norskproven/2/oral/a2');
     await expect(page).toHaveURL(/\/plus/);
   });
 });
 
 // ===========================================================================
-// Practice landing page
+// Practice landing page (now inline on /norskproven)
 // ===========================================================================
 
 test.describe('Practice landing page', () => {
   test('Plus user sees A2 and B1 columns with all three type cards', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice');
+    await page.goto('/norskproven');
 
-    // Both level headings
-    await expect(page.getByRole('heading', { name: 'A2' })).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'B1' })).toBeVisible();
+    // Both level headings — rendered as h3 inside the practice grid
+    await expect(page.getByRole('heading', { name: 'A2' }).first()).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'B1' }).first()).toBeVisible();
 
     // All three type labels visible (pills replace card links)
     // Label text is translated: en=Reading/Writing/Oral, nb=Lesing/Skriving/Muntlig
@@ -148,24 +148,24 @@ test.describe('Practice landing page', () => {
     await expect(page.getByText(/oral|muntlig/i).first()).toBeVisible();
   });
 
-  test('A2 reading Test 1 pill links to /norskproven/practice/1/reading/a2', async ({ page }) => {
+  test('A2 reading Test 1 pill links to /norskproven/1/reading/a2', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice');
+    await page.goto('/norskproven');
 
     // First Test 1 pill in the A2 reading card
     const pill = page.getByRole('link', { name: 'Test 1' }).first();
-    await expect(pill).toHaveAttribute('href', '/norskproven/practice/1/reading/a2');
+    await expect(pill).toHaveAttribute('href', '/norskproven/1/reading/a2');
   });
 
-  test('B1 writing Test 2 pill links to /norskproven/practice/2/writing/b1', async ({ page }) => {
+  test('B1 writing Test 2 pill links to /norskproven/2/writing/b1', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice');
+    await page.goto('/norskproven');
 
     // Writing Test 2 pills — last() hits B1 column
     const pills = page.getByRole('link', { name: 'Test 2' });
     // Pills render: A2 reading, A2 writing, A2 oral, B1 reading, B1 writing, B1 oral
     // B1 writing Test 2 is the 5th pill (index 4)
-    await expect(pills.nth(4)).toHaveAttribute('href', '/norskproven/practice/2/writing/b1');
+    await expect(pills.nth(4)).toHaveAttribute('href', '/norskproven/2/writing/b1');
   });
 });
 
@@ -176,7 +176,7 @@ test.describe('Practice landing page', () => {
 test.describe('Reading practice', () => {
   test('A2 reading page shows first passage and question', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     // Progress counter
     await expect(page.getByText(/tekst 1 av/i)).toBeVisible();
@@ -191,7 +191,7 @@ test.describe('Reading practice', () => {
 
   test('correct option is highlighted green after answering', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     // Find the correct option before clicking
     const correctId = await page.evaluate(() => {
@@ -211,7 +211,7 @@ test.describe('Reading practice', () => {
 
   test('wrong option is highlighted red and correct is green', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     // Click option D (likely wrong for the first question)
     await page.getByRole('button', { name: /^D\b/ }).click();
@@ -223,7 +223,7 @@ test.describe('Reading practice', () => {
 
   test('feedback text is shown after answering', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     await page.getByRole('button', { name: /^A\b/ }).click();
 
@@ -234,7 +234,7 @@ test.describe('Reading practice', () => {
 
   test('keyboard shortcut A selects first option', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     // Wait for the question to be visible, then click the page body to ensure
     // the window has focus so svelte:window onkeydown receives the event.
@@ -250,7 +250,7 @@ test.describe('Reading practice', () => {
 
   test('progress counter advances after moving to next passage', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     await expect(page.getByText(/tekst 1 av/i)).toBeVisible();
 
@@ -273,7 +273,7 @@ test.describe('Reading practice', () => {
 
   test('summary screen shown after completing all passages', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     await completeReadingSession(page);
 
@@ -284,7 +284,7 @@ test.describe('Reading practice', () => {
 
   test('summary has Prøv igjen and back to practice links', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/a2');
+    await page.goto('/norskproven/1/reading/a2');
 
     await completeReadingSession(page);
 
@@ -294,7 +294,7 @@ test.describe('Reading practice', () => {
 
   test('B1 reading page loads and shows progress counter', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/reading/b1');
+    await page.goto('/norskproven/1/reading/b1');
 
     await expect(page.getByText(/tekst 1 av/i)).toBeVisible();
     // Scope to the page heading to avoid matching multiple B1 elements
@@ -309,7 +309,7 @@ test.describe('Reading practice', () => {
 test.describe('Writing practice', () => {
   test('A2 writing page shows situation, task and textarea', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/a2');
+    await page.goto('/norskproven/1/writing/a2');
 
     await expect(page.getByText(/situasjon/i)).toBeVisible();
     await expect(page.getByText(/oppgave 1 av/i)).toBeVisible();
@@ -318,7 +318,7 @@ test.describe('Writing practice', () => {
 
   test('live word count updates as user types', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/a2');
+    await page.goto('/norskproven/1/writing/a2');
 
     const textarea = page.getByRole('textbox');
     await textarea.fill('ett to tre fire fem');
@@ -328,7 +328,7 @@ test.describe('Writing practice', () => {
 
   test('model answer button is hidden before minimum word count', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/a2');
+    await page.goto('/norskproven/1/writing/a2');
 
     // With 0 words typed the button should be disabled
     const revealBtn = page.getByRole('button', { name: /vis eksempelsvar/i });
@@ -338,7 +338,7 @@ test.describe('Writing practice', () => {
 
   test('model answer is not visible before clicking reveal', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/a2');
+    await page.goto('/norskproven/1/writing/a2');
 
     await expect(page.getByText(/eksempelsvar/i)).not.toBeVisible();
   });
@@ -347,7 +347,7 @@ test.describe('Writing practice', () => {
     page
   }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/a2');
+    await page.goto('/norskproven/1/writing/a2');
 
     // Type enough words to reach the A2 minimum (40)
     const words = Array(40).fill('test').join(' ');
@@ -362,7 +362,7 @@ test.describe('Writing practice', () => {
 
   test('textarea is disabled after model answer is revealed', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/a2');
+    await page.goto('/norskproven/1/writing/a2');
 
     const words = Array(40).fill('test').join(' ');
     await page.getByRole('textbox').fill(words);
@@ -373,7 +373,7 @@ test.describe('Writing practice', () => {
 
   test('next prompt button advances to prompt 2', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/a2');
+    await page.goto('/norskproven/1/writing/a2');
 
     const words = Array(40).fill('test').join(' ');
     await page.getByRole('textbox').fill(words);
@@ -385,7 +385,7 @@ test.describe('Writing practice', () => {
 
   test('B1 writing page loads and shows higher word count range', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/writing/b1');
+    await page.goto('/norskproven/1/writing/b1');
 
     await expect(page.getByText(/oppgave 1 av/i)).toBeVisible();
     // B1 prompts require 80–120 words
@@ -405,7 +405,7 @@ test.describe('Writing practice', () => {
 test.describe('Oral practice', () => {
   test('A2 oral page shows scenario card and practice button in prep mode', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/a2');
+    await page.goto('/norskproven/1/oral/a2');
 
     await expect(page.getByText(/scenario 1 av/i)).toBeVisible();
     // Use a scoped locator to avoid matching the navbar 'Øv' menu item
@@ -418,7 +418,7 @@ test.describe('Oral practice', () => {
 
   test('clicking Øv enters practice mode and reveals first question', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/a2');
+    await page.goto('/norskproven/1/oral/a2');
 
     await page.getByRole('button', { name: /^øv →$|^practice →$/i }).click();
 
@@ -434,7 +434,7 @@ test.describe('Oral practice', () => {
 
   test('questions are revealed one by one', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/a2');
+    await page.goto('/norskproven/1/oral/a2');
 
     await page.getByRole('button', { name: /^øv →$|^practice →$/i }).click();
 
@@ -448,14 +448,14 @@ test.describe('Oral practice', () => {
 
   test('tips section is shown when tips are present', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/a2');
+    await page.goto('/norskproven/1/oral/a2');
 
     await expect(page.getByText(/tips/i)).toBeVisible();
   });
 
   test('timer button appears in practice mode', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/a2');
+    await page.goto('/norskproven/1/oral/a2');
 
     await page.getByRole('button', { name: /^øv →$|^practice →$/i }).click();
 
@@ -464,7 +464,7 @@ test.describe('Oral practice', () => {
 
   test('timer counts down after clicking start', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/a2');
+    await page.goto('/norskproven/1/oral/a2');
 
     await page.getByRole('button', { name: /^øv →$|^practice →$/i }).click();
     await page.getByRole('button', { name: /start tidtaker/i }).click();
@@ -475,7 +475,7 @@ test.describe('Oral practice', () => {
 
   test('next scenario advances to scenario 2', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/a2');
+    await page.goto('/norskproven/1/oral/a2');
 
     await expect(page.getByText(/scenario 1 av/i)).toBeVisible();
 
@@ -496,7 +496,7 @@ test.describe('Oral practice', () => {
 
   test('B1 oral page loads with correct level label', async ({ page }) => {
     await injectPlusPlan(page);
-    await page.goto('/norskproven/practice/1/oral/b1');
+    await page.goto('/norskproven/1/oral/b1');
 
     await expect(page.getByText(/scenario 1 av/i)).toBeVisible();
     // Scope to the page heading to avoid matching multiple B1 elements
@@ -557,7 +557,7 @@ test.describe('/norskproven practice grid (inline)', () => {
     await page.goto('/norskproven');
     await expect(page.getByRole('link', { name: 'Test 1' }).first()).toHaveAttribute(
       'href',
-      '/norskproven/practice/1/reading/a2'
+      '/norskproven/1/reading/a2'
     );
   });
 });

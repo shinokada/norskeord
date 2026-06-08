@@ -83,13 +83,6 @@ test.describe('/norskproven page', () => {
     await expect(page.getByRole('link', { name: /unlock with plus/i })).not.toBeVisible();
   });
 
-  test('plus user does NOT see "Unlock with Plus" CTA for B1', async ({ page }) => {
-    await injectPlusPlan(page);
-    await page.goto('/norskproven');
-    // When plus, the upsell CTA must not be visible
-    await expect(page.getByRole('link', { name: /unlock with plus/i })).not.toBeVisible();
-  });
-
   // ── Browse all links ─────────────────────────────────────────────────────
 
   test('A2 section has a "browse all" link to /learn/a2', async ({ page }) => {

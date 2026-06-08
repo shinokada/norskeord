@@ -47,6 +47,7 @@ export const GET: RequestHandler = async () => {
       '^/stats.*',
       '^/quiz.*',
       '^/norskproven/practice.*',
+      '^/norskproven/[^/]+/.*',
       '^/plus.*'
     ],
     processPaths: (paths) => {
