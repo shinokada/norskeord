@@ -1,6 +1,5 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
-
   "nav_plus_badge": "Plus",
   "nav_log_in": "Log in",
   "nav_log_out": "Log out",
@@ -23,9 +22,6 @@
   "nav_a2": "A2",
   "nav_b1": "B1",
   "nav_b2": "B2",
-  "nav_c1": "C1",
-  "nav_c2": "C2",
-
   "quiz_title": "Quiz",
   "quiz_subtitle": "Test yourself with multiple choice, fill-in-the-blank, and typed answers. Every answer updates your review schedule.",
   "quiz_label_level": "Level",
@@ -62,7 +58,6 @@
   "quiz_restart": "Try again",
   "quiz_back_to_flashcards": "← Back to flashcards",
   "quiz_restart_hint": "Press R to try again",
-
   "grammar_title": "Grammar",
   "grammar_subtitle": "Master Norwegian sentence structure — word order, ikke-placement, det-sentences and more. Every answer updates your review schedule.",
   "grammar_pick_topic": "Pick a topic to practise",
@@ -97,7 +92,6 @@
   "grammar_plus_locked_desc": "Upgrade to Plus to practise all grammar topics and advanced sentence transformations.",
   "grammar_plus_cta": "Get Plus →",
   "grammar_empty": "No questions available for this topic yet.",
-
   "flashcard_norsk": "Norsk",
   "flashcard_english": "English",
   "flashcard_definition": "Definition",
@@ -131,7 +125,6 @@
   "flashcard_next": "Next",
   "flashcard_change_defaults": "Change defaults in Profile →",
   "flashcard_view_stats": "View my progress →",
-
   "part_noun": "Noun",
   "part_verb": "Verb",
   "part_adjective": "Adjective",
@@ -141,7 +134,6 @@
   "part_conjunction": "Conjunction",
   "part_interjection": "Interjection",
   "part_phrase": "Phrase",
-
   "stats_title": "Your Progress",
   "stats_title_named": "{name}'s Progress",
   "stats_subtitle_guest": "Progress is saved to this device. Sign in to sync across devices.",
@@ -196,7 +188,6 @@
   "stats_cancel": "Cancel",
   "stats_reset_button": "Reset all progress",
   "stats_resetting": "Resetting…",
-
   "profile_save": "Save changes",
   "profile_saving": "Saving…",
   "profile_saved": "✓ Saved",
@@ -269,7 +260,6 @@
   "profile_danger_confirm_question": "Are you sure? This cannot be undone.",
   "profile_danger_confirm_yes": "Yes, delete my account",
   "profile_danger_deleting": "Deleting…",
-
   "login_heading": "Sign in",
   "login_subheading": "We will send a sign-in link to your email — no password needed.",
   "login_error_expired": "Sign-in link expired or already used. Please request a new one.",
@@ -283,7 +273,6 @@
   "login_no_password_note": "No password needed. Your email is only used for authentication.",
   "login_error_bot_check": "Bot check failed. Please try again.",
   "login_error_generic": "Something went wrong. Please try again.",
-
   "plus_heading": "Study smarter with Norskeord Plus",
   "plus_subheading": "Plus tracks how well you know each word and shows you only the cards worth reviewing today — so every session actually sticks.",
   "plus_features_heading": "What you get with Plus",
@@ -350,7 +339,6 @@
   "plus_cta_body": "All your progress carries over to Plus automatically when you upgrade.",
   "plus_cta_browse": "Browse free categories",
   "plus_cta_norskproven": "Norskprøven preparation →",
-
   "norskproven_badge": "Exam Preparation",
   "norskproven_heading": "Prepare for Norskprøven",
   "norskproven_subheading": "Norskprøven is the official Norwegian language exam — required for permanent residency and citizenship. Practice the vocabulary that actually appears on the test, organised by CEFR level.",
@@ -385,18 +373,15 @@
   "norskproven_cta_a2": "Start A2 Health",
   "norskproven_cta_b1": "Start B1 Work",
   "norskproven_cta_stats": "View my progress",
-
   "blog_subheading": "Short, practical articles about Norwegian vocabulary and usage.",
   "blog_section_guides": "Guides",
   "blog_section_level": "Level {level}",
-
   "home_heading": "Norske flashcard",
-  "home_subheading": "Practice Norwegian vocabulary from A1 to C2. Pick a level and a category to get started.",
-
-  "home_hero_badge": "Norwegian learning — A1 to C2",
+  "home_subheading": "Practice Norwegian vocabulary from A1 to C. Pick a level and a category to get started.",
+  "home_hero_badge": "Norwegian learning — A1 to C",
   "home_hero_heading": "Everything you need to",
   "home_hero_heading_highlight": "learn Norwegian",
-  "home_hero_body": "Vocabulary flashcards, grammar practice, quizzes, and Norskprøven preparation — all in one place, from A1 to C2.",
+  "home_hero_body": "Vocabulary flashcards, grammar practice, quizzes, and Norskprøven preparation — all in one place, from A1 to C.",
   "home_hero_cta_free": "Free forever — get started →",
   "home_hero_cta_plus": "See Plus features →",
   "home_hero_no_cc": "No credit card required",
@@ -412,9 +397,7 @@
   "home_level_a2": "A2 — Elementary",
   "home_level_b1": "B1 — Intermediate",
   "home_level_b2": "B2 — Upper Intermediate",
-  "home_level_c1": "C1 — Advanced",
-  "home_level_c2": "C2 — Mastery",
-
+  "home_level_c": "C — Mastery",
   "home_features_heading": "Everything you need to learn Norwegian",
   "home_features_vocab_title": "Vocabulary flashcards",
   "home_features_vocab_body": "90+ decks from A1 to C2 with audio on every card and smart spaced-repetition scheduling.",
@@ -427,7 +410,6 @@
   "home_features_explore": "Explore →",
   "home_levels_heading": "Choose your level",
   "home_level_explore": "Explore {level} →",
-
   "level_hub_beginner": "Beginner",
   "level_hub_elementary": "Elementary",
   "level_hub_intermediate": "Intermediate",
@@ -437,7 +419,6 @@
   "level_hub_words": "{count} words",
   "level_hub_phrases": "{count} phrases",
   "level_hub_words_and_phrases": "{vocab} words · {uttrykk} phrases",
-
   "category_a1_greetings": "Greetings",
   "category_a1_numbers": "Numbers",
   "category_a1_colors": "Colors",
@@ -460,7 +441,6 @@
   "category_a1_actions": "Actions",
   "category_a1_uttrykk": "Phrases",
   "category_a1_uttrykk-preview": "Phrases (preview)",
-
   "category_a2_shopping": "Shopping",
   "category_a2_transport": "Transport",
   "category_a2_clothing": "Clothing",
@@ -483,7 +463,6 @@
   "category_a2_money": "Money",
   "category_a2_uttrykk": "Phrases",
   "category_a2_uttrykk-preview": "Phrases (preview)",
-
   "category_b1_travel": "Travel",
   "category_b1_environment": "Environment",
   "category_b1_media": "Media",
@@ -518,7 +497,6 @@
   "category_b1_healthcare": "Healthcare",
   "category_b1_uttrykk": "Phrases",
   "category_b1_uttrykk-preview": "Phrases (preview)",
-
   "category_b2_politics": "Politics",
   "category_b2_economics": "Economics",
   "category_b2_social-issues": "Social Issues",
@@ -553,35 +531,32 @@
   "category_b2_communication": "Communication",
   "category_b2_uttrykk-preview": "Phrases (preview)",
   "category_b2_uttrykk": "Phrases",
-
-  "category_c1_philosophy": "Philosophy",
-  "category_c1_academic": "Academic",
-  "category_c1_formal-writing": "Formal Writing",
-  "category_c1_rhetoric": "Rhetoric",
-  "category_c1_complex-emotions": "Complex Emotions",
-  "category_c1_professional": "Professional",
-  "category_c1_abstract-concepts": "Abstract Concepts",
-  "category_c1_politics-democracy": "Politics & Democracy",
-  "category_c1_linguistics": "Linguistics",
-  "category_c1_media-journalism": "Media & Journalism",
-  "category_c1_architecture-design": "Architecture & Design",
-  "category_c1_diplomacy-international": "Diplomacy & International",
-  "category_c1_finance-economics": "Finance & Economics",
-  "category_c1_medicine-healthcare": "Medicine & Healthcare",
-  "category_c1_psychology-advanced": "Psychology — Advanced",
-
-  "category_c2_literary": "Literary",
-  "category_c2_archaic": "Archaic",
-  "category_c2_proverbs": "Proverbs",
-  "category_c2_highly-formal": "Highly Formal",
-  "category_c2_technical": "Technical",
-  "category_c2_advanced-law-justice": "Advanced Law & Justice",
-  "category_c2_neuroscience-cognition": "Neuroscience & Cognition",
-  "category_c2_climate-environment-policy": "Climate & Environment Policy",
-  "category_c2_sociology-anthropology": "Sociology & Anthropology",
-  "category_c2_advanced-business-strategy": "Advanced Business Strategy",
-  "category_c2_existential-abstract": "Existential & Abstract",
-
+  "category_c_philosophy": "Philosophy",
+  "category_c_academic": "Academic",
+  "category_c_formal-writing": "Formal Writing",
+  "category_c_rhetoric": "Rhetoric",
+  "category_c_complex-emotions": "Complex Emotions",
+  "category_c_professional": "Professional",
+  "category_c_abstract-concepts": "Abstract Concepts",
+  "category_c_politics-democracy": "Politics & Democracy",
+  "category_c_linguistics": "Linguistics",
+  "category_c_media-journalism": "Media & Journalism",
+  "category_c_architecture-design": "Architecture & Design",
+  "category_c_diplomacy-international": "Diplomacy & International",
+  "category_c_finance-economics": "Finance & Economics",
+  "category_c_medicine-healthcare": "Medicine & Healthcare",
+  "category_c_psychology-advanced": "Psychology — Advanced",
+  "category_c_literary": "Literary",
+  "category_c_archaic": "Archaic",
+  "category_c_proverbs": "Proverbs",
+  "category_c_highly-formal": "Highly Formal",
+  "category_c_technical": "Technical",
+  "category_c_advanced-law-justice": "Advanced Law & Justice",
+  "category_c_neuroscience-cognition": "Neuroscience & Cognition",
+  "category_c_climate-environment-policy": "Climate & Environment Policy",
+  "category_c_sociology-anthropology": "Sociology & Anthropology",
+  "category_c_advanced-business-strategy": "Advanced Business Strategy",
+  "category_c_existential-abstract": "Existential & Abstract",
   "norskproven_practice_badge": "Plus",
   "norskproven_practice_heading": "Practice tests",
   "norskproven_practice_subheading": "Authentic Norskprøven-style tasks for reading, writing, and oral preparation.",
@@ -616,7 +591,6 @@
   "norskproven_practice_back": "← Back to Norskprøven",
   "norskproven_practice_tip_label": "Tip",
   "norskproven_practice_tip_body": "Start with reading to warm up, then writing, and finish with oral practice. This gives you a good feel for the real exam.",
-
   "plus_row_norskproven_practice": "Norskprøven practice tests",
   "plus_row_norskproven_practice_free": "Test 1 (A2 & B1)",
   "plus_row_norskproven_practice_plus": "All tests (A2 & B1)",
@@ -628,7 +602,6 @@
   "plus_row_search_plus": "Included",
   "plus_feature_norskproven_title": "Exam practice, not just vocabulary",
   "plus_feature_norskproven_body": "Reading passages with multiple-choice questions, writing prompts with model answers, and oral role-play scenarios — all at A2 and B1 level.",
-
   "plus_checkout_cta": "Upgrade to Plus — 49 NOK/month",
   "plus_checkout_cta_annual": "Upgrade to Plus — 490 NOK/year",
   "plus_manage_subscription": "Manage subscription →",
@@ -639,7 +612,6 @@
   "plus_success_cta": "Start studying →",
   "checkout_error_generic": "Could not start checkout. Please try again.",
   "checkout_error_login_required": "Please sign in to upgrade.",
-
   "plus_unlocked_heading": "What's unlocked at each level",
   "plus_unlocked_a1_label": "A1 — Beginner",
   "plus_unlocked_a1_teaser": "All 22 categories fully free. Plus unlocks the full Uttrykk phrase deck.",
@@ -649,29 +621,23 @@
   "plus_unlocked_b1_teaser": "+23 categories including city life, finance, mental wellbeing, arts, media, and more.",
   "plus_unlocked_b2_label": "B2 — Upper Intermediate",
   "plus_unlocked_b2_teaser": "+29 categories including idioms, law, literature, philosophy, business, and more.",
-  "plus_unlocked_c1_label": "C1 — Advanced",
-  "plus_unlocked_c1_teaser": "+10 categories including rhetoric, linguistics, diplomacy, architecture, and more.",
-  "plus_unlocked_c2_label": "C2 — Mastery",
-  "plus_unlocked_c2_teaser": "+8 categories including archaic usage, proverbs, advanced law, neuroscience, and more.",
+  "plus_unlocked_c_label": "C — Mastery",
+  "plus_unlocked_c_teaser": "+18 categories including rhetoric, linguistics, diplomacy, archaic usage, proverbs, advanced law, neuroscience, and more.",
   "plus_unlocked_free_note": "Free tiers give you a solid foundation. Plus opens everything.",
   "plus_unlocked_cta": "Browse all categories →",
-
   "plus_category_locked": "Plus members only",
   "plus_uttrykk_preview_banner": "Previewing {count} phrases from the B2 collection.",
   "plus_uttrykk_preview_cta": "Unlock all {total} →",
   "home_uttrykk_preview_label": "Phrases (preview)",
-
   "guide_page_title": "Guide to Norskeord",
   "guide_page_subtitle": "A vocabulary app built for serious Norwegian learners.",
   "guide_intro_1": "Norskeord is a flashcard app for Norwegian learners who want to build vocabulary that actually sticks — from everyday A1 words all the way up to C2. It covers all CEFR levels, includes audio on every card, and is designed with Norskprøven candidates in mind.",
   "guide_intro_2": "In Norway, every city and town has dedicated volunteers who offer free Norwegian courses, such as Røde Kors Norsktrening. I would like to express my sincere gratitude to all the volunteers who are helping us learn Norwegian.",
-
   "guide_scheduling_heading": "How smart scheduling works",
   "guide_scheduling_1": "When you flip a card, you rate how well you remembered the word — <strong>Again</strong>, <strong>Hard</strong>, <strong>Good</strong>, or <strong>Easy</strong>. The app uses that rating to decide when to show you that card again.",
   "guide_scheduling_2": "The idea is simple: the best time to review a word is just before you would naturally forget it. Review it too soon and you waste time on something you already know. Wait too long and you have to relearn it from scratch. Smart scheduling finds the sweet spot.",
   "guide_scheduling_3": "Words you find easy come back less often — maybe in a week, then a month, then several months. Words you keep forgetting come back sooner, sometimes within the same session. Over time, the app builds a personalised schedule for each word based on your own memory.",
   "guide_scheduling_4": "This is why rating cards honestly matters. Tapping <strong>Easy</strong> on a word you are not sure about will push it out of your deck for a long time. Tapping <strong>Again</strong> on something you genuinely forgot brings it back quickly. The more accurately you rate, the more effective your study sessions become.",
-
   "guide_buttons_heading": "Which button should I tap?",
   "guide_buttons_intro": "After flipping a card, ask yourself one question: <em>how easy was it to recall that word?</em> Pick the button that honestly matches your experience.",
   "guide_btn_again_label": "Again",
@@ -683,7 +649,6 @@
   "guide_btn_easy_label": "Easy",
   "guide_btn_easy_desc": "It felt immediately obvious — no hesitation at all. The next review jumps much further into the future. Use it sparingly; overusing Easy can leave gaps in your memory.",
   "guide_buttons_outro": "Not sure which to pick? <strong>Good</strong> is almost always the right default. Use <strong>Again</strong> and <strong>Easy</strong> only when the difference is clear-cut — they have the biggest effect on your schedule.",
-
   "guide_states_heading": "What the progress labels mean",
   "guide_state_new_label": "New",
   "guide_state_new_desc": "You have not seen this word yet.",
@@ -693,7 +658,6 @@
   "guide_state_memorized_desc": "This word has moved into long-term memory. It will come back for review occasionally to keep it fresh.",
   "guide_state_forgotten_label": "Forgotten",
   "guide_state_forgotten_desc": "You rated this word <em>Again</em> after it was memorized. It is back in practice and will come back more frequently until it sticks again.",
-
   "guide_flow_heading": "How cards move between states",
   "guide_flow_intro": "The key thing to know: only tapping <strong>Again</strong> on a {memorized} card makes it {forgotten}. Tapping <strong>Again</strong> on a {learning} card just keeps it in Learning — it does not turn orange.",
   "guide_flow_new": "→ any rating → Learning",
@@ -702,7 +666,6 @@
   "guide_flow_forgotten": "→ Good / Easy → back to Memorized · Again / Hard → stays Forgotten",
   "guide_plus_tip": "<strong>Plus tip:</strong> Norskeord Plus builds a personal <em>Due today</em> deck from your ratings — a short, focused session of only the words your memory needs right now.",
   "guide_plus_tip_link": "Learn more about Plus →",
-
   "guide_faq_heading": "FAQ",
   "guide_faq_reminder_q": "What is the daily study reminder?",
   "guide_faq_reminder_a": "A browser push notification sent once a day to remind you to study. To enable it, go to Profile → Notifications → Daily study reminder. Your browser will ask for permission the first time.",
@@ -724,18 +687,14 @@
   "guide_faq_download_a": "Go to Profile → Account and click Download Progress report. This exports all your card history as a file you can save or share.",
   "guide_faq_contact_q": "I have a question — how can I get in touch?",
   "guide_faq_contact_a": "Plus members have a Contact support button at the bottom of the Profile page for direct priority support.",
-
   "blog_filter_level": "Level",
   "blog_filter_topic": "Topic",
   "blog_filter_clear": "Clear filters",
   "blog_filter_results": "{count} articles",
   "blog_filter_no_results": "No articles match the selected filters.",
-
   "blog_search_placeholder": "Search articles…",
   "blog_search_aria": "Search blog articles",
-
   "blog_load_more": "Load more ({remaining} remaining)",
-
   "search_aria_label": "Search vocabulary and expressions",
   "search_placeholder": "Search for a word or expression…",
   "search_loading": "Loading index…",
@@ -759,13 +718,11 @@
   "search_plus_cta": "Upgrade to Plus →",
   "search_plus_only": "Search is Plus only",
   "search_close": "Close",
-
   "level_hub_start_free": "Start free →",
   "level_hub_quiz_go": "Go →",
   "level_hub_norskproven_explore": "Explore →",
   "level_hub_norskproven_start": "Start →",
   "level_hub_all_articles": "All articles →",
-
   "level_hub_show_more": "Show more ({count})",
   "level_hub_show_less": "Show less"
 }
