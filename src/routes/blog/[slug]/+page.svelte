@@ -13,8 +13,7 @@
     A2: 'green',
     B1: 'blue',
     B2: 'indigo',
-    C1: 'purple',
-    C2: 'pink'
+    C: 'purple'
   };
 
   const levels = $derived(cefrLevels(data.meta.cefr));
