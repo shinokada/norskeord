@@ -339,8 +339,15 @@ test.describe('Writing practice', () => {
   test('model answer is not visible before clicking reveal', async ({ page }) => {
     await injectPlusPlan(page);
     await page.goto('/norskproven/1/writing/a2');
-
-    await expect(page.getByText(/eksempelsvar/i)).not.toBeVisible();
+    // Wait for the page to be fully hydrated before asserting absence
+    await expect(page.getByRole('textbox')).toBeVisible({ timeout: 8000 });
+    // Unregister the route interceptor before the assertion so any in-flight
+    // __data.json revalidation requests don't crash after the page settles.
+    await page.unrouteAll({ behavior: 'ignoreErrors' });
+    // The *model answer content* section only appears after clicking "Vis eksempelsvar".
+    // The button and the hint span also contain "eksempelsvar" so we must be specific:
+    // target the <p class="...">Eksempelsvar</p> label rendered only in the revealed block.
+    await expect(page.getByText('Eksempelsvar', { exact: true })).not.toBeVisible();
   });
 
   test('model answer is revealed after reaching minimum word count and clicking', async ({
@@ -357,7 +364,7 @@ test.describe('Writing practice', () => {
     await expect(revealBtn).toBeEnabled();
     await revealBtn.click();
 
-    await expect(page.getByText(/eksempelsvar/i)).toBeVisible();
+    await expect(page.getByText('Eksempelsvar', { exact: true })).toBeVisible();
   });
 
   test('textarea is disabled after model answer is revealed', async ({ page }) => {

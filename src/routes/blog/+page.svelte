@@ -6,15 +6,14 @@
 
   let { data }: { data: PageData } = $props();
 
-  const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C'];
 
   const cefrColors: Record<string, 'green' | 'blue' | 'indigo' | 'purple' | 'pink' | 'yellow'> = {
     A1: 'green',
     A2: 'green',
     B1: 'blue',
     B2: 'indigo',
-    C1: 'purple',
-    C2: 'pink'
+    C: 'purple'
   };
 
   // --- filter state ---

@@ -167,6 +167,106 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'NEGATIVT spørsmål med "jo", aldri "ja": "Liker du ikke kaffe?" → "Jo, det gjør jeg." ' +
       'Korte svar gjentar det bøyde verbet (eller "det gjør/er"): "Kommer du?" → "Ja, det gjør ' +
       'jeg." "Er du norsk?" → "Ja, det er jeg."'
+  },
+
+  // ── Phase 2: Morphology topics ────────────────────────────────────────────
+
+  'noun-articles': {
+    id: 'noun-articles',
+    titleEn: 'Noun articles (en / et / ei)',
+    titleNb: 'Substantivartikler (en / et / ei)',
+    explanationEn:
+      'Norwegian nouns have three genders: masculine (en), neuter (et), and feminine (ei). ' +
+      'The indefinite article matches the noun’s gender: en bil, et hus, ei jente. ' +
+      'After «være» or «jobbe som» with a profession, Norwegian drops the article entirely: ' +
+      '"Han er lærer." (He is a teacher.)',
+    explanationNb:
+      'Norske substantiver har tre kjønn: hankjønn (en), intetkjønn (et) og hunkjønn (ei). ' +
+      'Den ubestemte artikkelen samsvarer med substantivets kjønn: en bil, et hus, ei jente. ' +
+      'Etter «være» eller «jobbe som» med et yrke brukes ingen artikkel: ' +
+      '"Han er lærer."'
+  },
+
+  'noun-plurals': {
+    id: 'noun-plurals',
+    titleEn: 'Noun plurals',
+    titleNb: 'Substantivets flertall',
+    explanationEn:
+      'Most Norwegian nouns add -er in the plural (en bil → biler). ' +
+      'Nouns ending in -e add only -r (en klasse → klasser). ' +
+      'Many short neuter nouns have identical singular and plural forms (et år → tre år, et barn → tre barn). ' +
+      'Some are irregular: en mann → menn, et barn → barn, en fot → føtter.',
+    explanationNb:
+      'De fleste norske substantiver får -er i flertall (en bil → biler). ' +
+      'Substantiver som ender på -e får bare -r (en klasse → klasser). ' +
+      'Mange korte intetkjønnsord har samme form i entall og flertall (et år → tre år, et barn → tre barn). ' +
+      'Noen er uregelmessige: en mann → menn, et barn → barn, en fot → føtter.'
+  },
+
+  'noun-possessives': {
+    id: 'noun-possessives',
+    titleEn: 'Noun possessives (genitive -s)',
+    titleNb: 'Substantivets genitiv (-s)',
+    explanationEn:
+      'Norwegian genitive adds -s directly to the noun or name with NO apostrophe: ' +
+      'Eriks bil, Annes jobb, barnets leker. ' +
+      'An apostrophe before -s is an English habit — never use it in Norwegian: ' +
+      'Erik’s → Eriks.',
+    explanationNb:
+      'Norsk genitiv legger -s direkte til substantivet eller navnet UTEN apostrof: ' +
+      'Eriks bil, Annes jobb, barnets leker. ' +
+      'Apostrof før -s er en engelsk vane — bruk den aldri på norsk: ' +
+      'Erik’s → Eriks.'
+  },
+
+  'adj-agreement': {
+    id: 'adj-agreement',
+    titleEn: 'Adjective agreement',
+    titleNb: 'Adjektivbøyning',
+    explanationEn:
+      'Norwegian adjectives must agree with the noun they modify in gender and number. ' +
+      'Indefinite singular: en stor bil, ei stor jente, et stort hus. ' +
+      'Plural (all genders): store biler / store jenter / store hus. ' +
+      'Note: liten is irregular — liten (en), lita (ei), lite (et), små (plural).',
+    explanationNb:
+      'Norske adjektiver må samsvare med substantivet de bøyer i kjønn og tall. ' +
+      'Ubestemt entall: en stor bil, ei stor jente, et stort hus. ' +
+      'Flertall (alle kjønn): store biler / store jenter / store hus. ' +
+      'Merk: liten er uregelmessig — liten (en), lita (ei), lite (et), små (flertall).'
+  },
+
+  'adj-definite': {
+    id: 'adj-definite',
+    titleEn: 'Adjective in definite form',
+    titleNb: 'Adjektiv i bestemt form',
+    explanationEn:
+      'When a noun is in the definite form, the adjective takes a weak (-e) ending AND ' +
+      'requires the definite article den / det / de before it: ' +
+      'den gamle mannen, det nye huset, de norske studentene. ' +
+      'Never omit the article: *gamle mannen is wrong.',
+    explanationNb:
+      'Når et substantiv står i bestemt form, får adjektivet svak (-e) ending OG ' +
+      'krever den bestemte artikkelen den / det / de foran: ' +
+      'den gamle mannen, det nye huset, de norske studentene. ' +
+      'Utelat aldri artikkelen: *gamle mannen er feil.'
+  },
+
+  'adj-comparison': {
+    id: 'adj-comparison',
+    titleEn: 'Adjective comparison',
+    titleNb: 'Adjektivets gradbøyning',
+    explanationEn:
+      'Most adjectives form the comparative with -ere and superlative with -est: ' +
+      'billig → billigere → billigst. ' +
+      'Some are irregular: god → bedre → best, dårlig → verre → verst, ' +
+      'gammel → eldre → eldst, liten → mindre → minst. ' +
+      'Use «enn» after comparatives: Oslo er større enn Bergen.',
+    explanationNb:
+      'De fleste adjektiver danner komparativ med -ere og superlativ med -est: ' +
+      'billig → billigere → billigst. ' +
+      'Noen er uregelmessige: god → bedre → best, dårlig → verre → verst, ' +
+      'gammel → eldre → eldst, liten → mindre → minst. ' +
+      'Bruk «enn» etter komparativ: Oslo er større enn Bergen.'
   }
 };
 

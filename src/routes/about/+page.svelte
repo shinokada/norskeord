@@ -10,8 +10,8 @@
 
   <p class="mb-6 text-gray-700 dark:text-gray-300">
     Norskeord is a flashcard app for Norwegian learners who want to build vocabulary that actually
-    sticks — from everyday A1 words all the way up to C2. It covers all CEFR levels, includes audio
-    on every card, and is designed with Norskprøven candidates in mind.
+    sticks — from everyday A1 words all the way up to C (Mastery). It covers all CEFR levels,
+    includes audio on every card, and is designed with Norskprøven candidates in mind.
   </p>
 
   <p class="mb-10 text-gray-700 dark:text-gray-300">

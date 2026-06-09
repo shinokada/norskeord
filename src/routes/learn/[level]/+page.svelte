@@ -3,6 +3,7 @@
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import * as m from '$lib/paraglide/messages';
+  import type { Snapshot } from './$types';
 
   let { data } = $props();
 
@@ -78,6 +79,15 @@
   const BLOG_INITIAL = 2;
   let grammarExpanded = $state(false);
   let blogExpanded = $state(false);
+
+  // Persist expanded state across back/forward navigation.
+  export const snapshot: Snapshot<{ grammarExpanded: boolean; blogExpanded: boolean }> = {
+    capture: () => ({ grammarExpanded, blogExpanded }),
+    restore: (value) => {
+      grammarExpanded = value.grammarExpanded;
+      blogExpanded = value.blogExpanded;
+    }
+  };
 
   const visibleGrammarTopics = $derived(
     grammarExpanded ? data.grammarTopics : data.grammarTopics.slice(0, GRAMMAR_INITIAL)
@@ -192,7 +202,7 @@
           {@const rule = GRAMMAR_RULES[t.topic]}
           {@const locked = !isPlus && !t.free}
           <a
-            href={locked ? '/plus?ref=hub-grammar' : `/grammar/${t.topic}`}
+            href={locked ? '/plus?ref=hub-grammar' : `/grammar/${t.topic}?from=${data.level}`}
             class="group flex flex-col rounded-2xl border p-4 text-left transition
               {locked
               ? 'border-gray-200 bg-white dark:border-gray-700 dark:bg-indigo-950/40'

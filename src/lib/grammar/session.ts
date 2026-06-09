@@ -9,7 +9,7 @@ import type { CardProgress, FSRSRating, GrammarQuestion } from '$lib/types';
 export function normalizeAnswer(s: string): string {
   return s
     .toLowerCase()
-    .replace(/[.,!?;:"«»'’]/g, '')
+    .replace(/[.,!?;:"«»'']/g, '')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -56,13 +56,19 @@ function shuffle<T>(arr: T[]): T[] {
  * Builds a grammar practice session. Questions that are new or most overdue
  * (per FSRS due date) are prioritised, then the selected set is shuffled so the
  * order varies between sessions.
+ *
+ * Ties (same due timestamp, e.g. all-new cards) are broken randomly by
+ * shuffling the pool before sorting. This ensures questions from all difficulty
+ * levels appear proportionally rather than always picking the first N in
+ * array order.
  */
 export function buildGrammarSession(
   questions: GrammarQuestion[],
   progressMap: Record<string, CardProgress>,
   count = 10
 ): GrammarQuestion[] {
-  const scored = questions.map((q) => {
+  // Shuffle first so ties in due-date are broken randomly.
+  const scored = shuffle(questions).map((q) => {
     const p = progressMap[q.id];
     // New cards (no progress) score 0 → treated as maximally due.
     const due = p ? new Date(p.fsrs.due).getTime() : 0;

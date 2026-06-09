@@ -228,7 +228,7 @@
     }
 
     // Extract the highest solid CEFR level from the estimate string
-    const levelMatch = cefrEstimate.match(/\b(A1|A2|B1|B2|C1|C2)\b/);
+    const levelMatch = cefrEstimate.match(/\b(A1|A2|B1|B2|C)\b/);
     if (levelMatch) parts.push(`currently at ${levelMatch[0]}`);
 
     if (streak >= 3) parts.push(`${streak}-day streak 🔥`);

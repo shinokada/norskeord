@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
+  import { browser } from '$app/environment';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import { localeStore } from '$lib/localeStore.svelte';
   import GrammarSession from '$lib/components/grammar/GrammarSession.svelte';
@@ -20,6 +21,28 @@
     isPlus ? data.questions : data.questions.filter((q) => freeSet.has(q.id))
   );
   let locked = $derived(!isPlus && playable.length === 0);
+
+  // Back-navigation: if the user came from a level hub, show "← B1" on the
+  // left and "Grammar topics →" on the right. Otherwise fall back to just
+  // "Grammar topics →" on the left.
+  const VALID_LEVELS = new Set(['a1', 'a2', 'b1', 'b2', 'c']);
+  let fromLevel = $derived(() => {
+    const raw = page.url.searchParams.get('from')?.toLowerCase() ?? '';
+    return VALID_LEVELS.has(raw) ? raw : null;
+  });
+
+  // Use history.back() so SvelteKit restores the snapshot (expanded state)
+  // on the level hub. Fall back to a direct href if there's no history entry
+  // (e.g. page was opened in a new tab).
+  function goBack(level: string, e: MouseEvent) {
+    if (!browser) return;
+    // history.length === 1 means this is the first page in the tab — no back.
+    if (history.length > 1) {
+      e.preventDefault();
+      history.back();
+    }
+    // Otherwise let the <a> href handle it normally.
+  }
 </script>
 
 <svelte:head>
@@ -27,13 +50,29 @@
 </svelte:head>
 
 <div class="mx-auto max-w-2xl px-4 py-8 text-left">
-  <div class="mb-4">
-    <a
-      href="/grammar"
-      class="inline-flex items-center gap-1 text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
-    >
-      {m.grammar_back_to_topics()}
-    </a>
+  <div class="mb-4 flex items-center justify-between">
+    {#if fromLevel()}
+      <a
+        href="/learn/{fromLevel()}"
+        onclick={(e) => goBack(fromLevel()!, e)}
+        class="inline-flex items-center gap-1 text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+      >
+        ← {fromLevel()!.toUpperCase()}
+      </a>
+      <a
+        href="/grammar"
+        class="text-sm text-gray-400 hover:text-indigo-500 dark:text-gray-500 dark:hover:text-indigo-300"
+      >
+        {m.grammar_back_to_topics()} →
+      </a>
+    {:else}
+      <a
+        href="/grammar"
+        class="inline-flex items-center gap-1 text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+      >
+        {m.grammar_back_to_topics()} →
+      </a>
+    {/if}
   </div>
 
   <h1 class="mb-6 text-xl font-bold text-gray-900 dark:text-white">{title}</h1>
