@@ -59,20 +59,15 @@
       >
         ← {fromLevel()!.toUpperCase()}
       </a>
-      <a
-        href="/grammar"
-        class="text-sm text-gray-400 hover:text-indigo-500 dark:text-gray-500 dark:hover:text-indigo-300"
-      >
-        {m.grammar_back_to_topics()} →
-      </a>
     {:else}
-      <a
-        href="/grammar"
-        class="inline-flex items-center gap-1 text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
-      >
-        {m.grammar_back_to_topics()} →
-      </a>
+      <span></span>
     {/if}
+    <a
+      href="/grammar"
+      class="text-sm text-gray-400 hover:text-indigo-500 dark:text-gray-500 dark:hover:text-indigo-300"
+    >
+      {m.grammar_back_to_topics()} →
+    </a>
   </div>
 
   <h1 class="mb-6 text-xl font-bold text-gray-900 dark:text-white">{title}</h1>

@@ -418,8 +418,9 @@
       <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_level()}</h2>
       <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
         {#each levelStats as ls (ls.level)}
-          <div
-            class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+          <a
+            href="/learn/{ls.level.toLowerCase()}"
+            class="block rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-colors hover:bg-gray-50 dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/40"
           >
             <div class="mb-2 flex items-center justify-between">
               <span class="font-semibold {levelTextColors[ls.level]}">{ls.level}</span>
@@ -480,7 +481,7 @@
                 </span>
               </div>
             {/if}
-          </div>
+          </a>
         {/each}
       </div>
     {/if}
@@ -538,7 +539,10 @@
           <!-- Topic rows -->
           <div class="divide-y divide-gray-100 bg-white dark:divide-white/10 dark:bg-indigo-950/60">
             {#each grammarByTopic as gt (gt.topic)}
-              <div class="flex items-center justify-between px-4 py-3">
+              <a
+                href="/grammar/{gt.topic}"
+                class="flex items-center justify-between px-4 py-3 transition-colors hover:bg-gray-50 dark:hover:bg-indigo-900/30"
+              >
                 <span class="text-sm font-medium text-gray-800 dark:text-gray-100">{gt.title}</span>
                 <span class="text-xs text-gray-500 dark:text-gray-400">
                   {gt.seen}
@@ -546,7 +550,7 @@
                   {m.stats_grammar_mastered()} · {gt.due}
                   {m.stats_due_today_short()}
                 </span>
-              </div>
+              </a>
             {/each}
           </div>
         {/if}
