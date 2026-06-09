@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.19.0
+
+### Minor Changes
+
+- - **New Features**
+    - Grammar topics can be filtered by search query and CEFR level with an active-filter summary and clear button
+    - Grammar topics and level breakdowns are now clickable for direct navigation
+  - **UI Improvements**
+    - Enhanced back-navigation/layout on grammar topic pages
+    - Added empty-state messaging when filters yield no results
+    - Plus upsell banner only shows when no filters are active; filtered locked topics still display
+    - Language toggle styling/placement updated for logged-in vs. guest and small vs. large screens
+
 ## 2.18.0
 
 ### Minor Changes
