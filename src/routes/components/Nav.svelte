@@ -110,14 +110,31 @@
       </button>
     {/if}
 
-    <button
-      type="button"
-      onclick={toggleLocale}
-      aria-label="Switch language"
-      class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-    >
-      {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
-    </button>
+    <!--
+      Language button in top bar:
+      - Logged-in users: hidden on small screens (lg:hidden counterpart lives in NavUl below)
+      - Non-logged-in users: always visible (unchanged behaviour)
+    -->
+    {#if user}
+      <button
+        type="button"
+        onclick={toggleLocale}
+        aria-label="Switch language"
+        class="hidden lg:inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+      >
+        {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
+      </button>
+    {:else}
+      <button
+        type="button"
+        onclick={toggleLocale}
+        aria-label="Switch language"
+        class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+      >
+        {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
+      </button>
+    {/if}
+
     {#if !user}
       <a
         href="/plus?checkout=1"
@@ -186,6 +203,20 @@
       ul: 'p-0 dark:!bg-blue-950'
     }}
   >
+    <!-- Language button at top of hamburger menu — logged-in users on small screens only -->
+    {#if user}
+      <NavLi class="lg:hidden">
+        <button
+          type="button"
+          onclick={toggleLocale}
+          aria-label="Switch language"
+          class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        >
+          {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
+        </button>
+      </NavLi>
+    {/if}
+
     <!-- Plus and Log in — visible only on mobile (hidden on sm+) -->
     {#if !user}
       <NavLi class="sm:hidden">
