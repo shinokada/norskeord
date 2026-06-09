@@ -1,5 +1,25 @@
 # norske-flashcard
 
+## 2.18.0
+
+### Minor Changes
+
+- - **New Features**
+    - Grammar back-navigation that preserves level context
+    - New question type: minimal-pair
+    - Redesigned Plus billing interval selector with clearer visuals
+    - Expanded Norwegian A2–B1 grammar content and new morphology topics (noun/adjective areas)
+  - **Bug Fixes**
+    - Improved answer normalization for apostrophes/quotes
+    - More randomized mixed-level grammar session selection
+  - **Changes**
+    - Consolidated C1/C2 into a single C (Mastery) level across the app
+    - UI state persistence for learning page sections
+  - **Tests**
+    - Added end-to-end grammar test coverage
+  - **Chores**
+    - Updated package manager pin to pnpm@11.5.2
+
 ## 2.17.0
 
 ### Minor Changes
