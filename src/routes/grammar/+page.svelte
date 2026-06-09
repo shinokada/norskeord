@@ -3,6 +3,7 @@
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import TopicCard from '$lib/components/grammar/TopicCard.svelte';
   import { localeStore } from '$lib/localeStore.svelte';
+  import type { CEFRLevel } from '$lib/types';
   import * as m from '$lib/paraglide/messages';
 
   let { data } = $props();
@@ -17,11 +18,9 @@
   const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
   const searchTerm = $derived(searchQuery.trim().toLowerCase());
 
-  const allTopics = $derived([...data.freeTopics, ...data.lockedTopics]);
-
-  function topicMatches(t: typeof allTopics[number]): boolean {
+  function topicMatches(t: (typeof data.freeTopics)[number]): boolean {
     const rule = GRAMMAR_RULES[t.topic];
-    if (selectedLevel && !t.levels.includes(selectedLevel as any)) return false;
+    if (selectedLevel && !t.levels.includes(selectedLevel as CEFRLevel)) return false;
     if (searchTerm) {
       const title = rule ? (isNb ? rule.titleNb : rule.titleEn) : t.topic;
       const explanation = rule ? (isNb ? rule.explanationNb : rule.explanationEn) : '';
@@ -95,7 +94,9 @@
 
     <!-- CEFR level pills -->
     <div class="flex flex-wrap items-center gap-2">
-      <span class="w-12 shrink-0 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-500">
+      <span
+        class="w-12 shrink-0 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-500"
+      >
         {m.blog_filter_level()}
       </span>
       <div class="flex flex-wrap gap-1.5">
@@ -119,7 +120,8 @@
     {#if isFiltering}
       <div class="flex items-center gap-3">
         <span class="text-xs text-gray-400 dark:text-gray-500">
-          {totalVisible} {totalVisible === 1 ? 'topic' : 'topics'}
+          {totalVisible}
+          {totalVisible === 1 ? 'topic' : 'topics'}
         </span>
         <button
           onclick={clearFilters}
@@ -137,7 +139,12 @@
   {#if filteredFree.length > 0}
     <div class={[gridClass(filteredFree.length), 'mb-8'].join(' ')}>
       {#each filteredFree as t (t.topic)}
-        <TopicCard topic={t.topic} rule={GRAMMAR_RULES[t.topic]} total={t.total} levels={t.levels} />
+        <TopicCard
+          topic={t.topic}
+          rule={GRAMMAR_RULES[t.topic]}
+          total={t.total}
+          levels={t.levels}
+        />
       {/each}
     </div>
   {/if}
