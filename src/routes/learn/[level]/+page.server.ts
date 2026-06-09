@@ -37,16 +37,27 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 
   // Grammar topics that include this CEFR level
   const questions = grammarData as GrammarQuestion[];
-  const topicMap = new Map<GrammarTopic, GrammarQuestion[]>();
+
+  // Build a set of topics that appear at this level
+  const topicsAtLevel = new Set<GrammarTopic>();
   for (const q of questions) {
     const levels = q.levels && q.levels.length ? q.levels : [q.cefr];
     if (levels.includes(levelUpper)) {
-      if (!topicMap.has(q.topic)) topicMap.set(q.topic, []);
-      topicMap.get(q.topic)!.push(q);
+      topicsAtLevel.add(q.topic);
     }
   }
 
-  const grammarTopics = Array.from(topicMap.entries()).map(([topic, qs]) => ({
+  // Group ALL questions by topic (not filtered by level) so the count matches
+  // what the user will actually practice on /grammar/[topic]
+  const allTopicMap = new Map<GrammarTopic, GrammarQuestion[]>();
+  for (const q of questions) {
+    if (topicsAtLevel.has(q.topic)) {
+      if (!allTopicMap.has(q.topic)) allTopicMap.set(q.topic, []);
+      allTopicMap.get(q.topic)!.push(q);
+    }
+  }
+
+  const grammarTopics = Array.from(allTopicMap.entries()).map(([topic, qs]) => ({
     topic,
     total: qs.length,
     levels: topicLevels(qs) as CEFRLevel[],

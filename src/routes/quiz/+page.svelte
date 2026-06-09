@@ -58,7 +58,7 @@
   let userId = $derived(isPlus ? (page.data.user?.id ?? null) : null);
 
   // Unique levels for the picker — sourced from allEntries, ordered A1–C2.
-  const ALL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  const ALL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
   let availableLevels = $derived.by(() => {
     const fromData = new Set(data.allEntries.map((e: { level: string }) => e.level.toUpperCase()));
     return ALL_LEVELS.filter((l) => fromData.has(l));

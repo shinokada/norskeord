@@ -26,7 +26,7 @@ Beyond the original brainstorm, a few more approaches worth considering for late
 
 **8. Cloze story** — a short paragraph (3–5 sentences) with several blanks, all testing the same rule. More context than isolated sentences, harder to use pattern-matching without understanding.
 
-**9. Forced production from L1** — show an English sentence, user writes the Norwegian equivalent (specifically targeting the V2 rule, where English word order misleads learners). E.g. "Yesterday I went to the store." → _I går gikk jeg til butikken._
+**9. Forced production from L1** — show an English sentence, user writes the Norwegian equivalent. E.g. "Yesterday I went to the store." → _I går gikk jeg til butikken._
 
 **10. Rule labelling** — show a correct sentence, user tags which part applies the rule (click the verb, click _ikke_, etc.). Metalinguistic awareness without production pressure.
 

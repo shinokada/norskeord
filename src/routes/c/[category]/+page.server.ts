@@ -54,7 +54,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     `Norwegian ${categoryName} words`,
     `learn Norwegian ${categoryName}`,
     `${categoryName} Norwegian flashcards`,
-    `C1 C2 Norwegian`,
+    `C Norwegian`,
     `advanced Norwegian vocabulary`,
     `Norwegian ${category}`
   ].join(', ');

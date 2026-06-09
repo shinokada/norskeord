@@ -129,7 +129,7 @@ export const actions: Actions = {
     // show_example checkbox: present with value 'true' when checked, absent when unchecked
     const show_example = data.get('show_example') === 'true';
 
-    const validLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    const validLevels = ['A1', 'A2', 'B1', 'B2', 'C'];
     const validLanguages = ['en', 'nb'];
     const validDirections = ['no_en', 'en_no', 'def_no'];
     const validCardTypes = ['word', 'phrase'];

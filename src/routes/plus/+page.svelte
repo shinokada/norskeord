@@ -201,33 +201,72 @@
       </a>
     {:else}
       <!-- ── Billing interval toggle ── -->
-      <div
-        class="mb-6 inline-flex rounded-xl border border-indigo-200 bg-white p-1 dark:border-indigo-700 dark:bg-indigo-950/60"
-      >
+      <div class="mb-6 mx-auto w-full max-w-sm space-y-2">
         <button
           type="button"
           onclick={() => (billingInterval = 'month')}
-          class={billingInterval === 'month'
-            ? 'rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all'
-            : 'px-5 py-2 text-sm font-medium text-gray-500 transition-all hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200'}
+          class={[
+            'flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-all',
+            billingInterval === 'month'
+              ? 'border-indigo-500 bg-indigo-50 ring-1 ring-indigo-500 dark:bg-indigo-900/30'
+              : 'border-gray-200 bg-white hover:border-gray-300 dark:border-gray-700 dark:bg-indigo-950/40 dark:hover:border-gray-600'
+          ].join(' ')}
         >
-          Monthly
+          <span
+            class={[
+              'mt-0.5 flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full border-2',
+              billingInterval === 'month'
+                ? 'border-indigo-600 bg-indigo-600'
+                : 'border-gray-300 dark:border-gray-600'
+            ].join(' ')}
+          >
+            {#if billingInterval === 'month'}
+              <span class="block h-1.5 w-1.5 rounded-full bg-white"></span>
+            {/if}
+          </span>
+          <span class="flex-1">
+            <span class="block text-sm font-semibold text-gray-800 dark:text-gray-100">Monthly</span
+            >
+            <span class="block text-xs text-gray-500 dark:text-gray-400">Cancel any time</span>
+          </span>
+          <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">49 NOK/mo</span>
         </button>
+
         <button
           type="button"
           onclick={() => (billingInterval = 'year')}
-          class={billingInterval === 'year'
-            ? 'flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all'
-            : 'flex items-center gap-2 px-5 py-2 text-sm font-medium text-gray-500 transition-all hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200'}
+          class={[
+            'flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-all',
+            billingInterval === 'year'
+              ? 'border-indigo-500 bg-indigo-50 ring-1 ring-indigo-500 dark:bg-indigo-900/30'
+              : 'border-gray-200 bg-white hover:border-gray-300 dark:border-gray-700 dark:bg-indigo-950/40 dark:hover:border-gray-600'
+          ].join(' ')}
         >
-          Annual
           <span
-            class={billingInterval === 'year'
-              ? 'rounded-full bg-white/20 px-2 py-0.5 text-xs font-semibold text-white'
-              : 'rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-400'}
+            class={[
+              'mt-0.5 flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full border-2',
+              billingInterval === 'year'
+                ? 'border-indigo-600 bg-indigo-600'
+                : 'border-gray-300 dark:border-gray-600'
+            ].join(' ')}
           >
-            2 months free
+            {#if billingInterval === 'year'}
+              <span class="block h-1.5 w-1.5 rounded-full bg-white"></span>
+            {/if}
           </span>
+          <span class="flex-1">
+            <span class="block text-sm font-semibold text-gray-800 dark:text-gray-100">
+              Annual
+              <span
+                class="ml-1.5 inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-400"
+                >save 98 NOK</span
+              >
+            </span>
+            <span class="block text-xs text-gray-500 dark:text-gray-400"
+              >490 NOK billed once a year</span
+            >
+          </span>
+          <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">41 NOK/mo</span>
         </button>
       </div>
 
@@ -300,17 +339,6 @@
       </div>
     {/each}
   </div>
-
-  <!-- ── Vocabulary access summary ─────────────────────────────────────────────── -->
-  <p class="mb-14 text-sm text-gray-500 dark:text-gray-400">
-    Free includes all A1 and A2 content — 46 categories. Plus unlocks everything from B1 to C2,
-    adding 97 more categories across 4 levels.
-    <a
-      href="/"
-      class="font-medium text-indigo-600 underline hover:text-indigo-500 dark:text-indigo-400"
-      >{m.plus_unlocked_cta()}</a
-    >
-  </p>
 
   <!-- ── Free vs Plus comparison table ──────────────────────────────────────────── -->
   <h2 class="mb-5 text-2xl font-bold dark:text-white">{m.plus_table_heading()}</h2>
