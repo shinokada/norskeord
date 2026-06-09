@@ -64,7 +64,7 @@
   "grammar_questions_count": "{count} questions",
   "grammar_plus_topic": "Plus",
   "grammar_start": "Start practice",
-  "grammar_back_to_topics": "← Grammar topics",
+  "grammar_back_to_topics": "Grammar topics",
   "grammar_question_count": "Question {current} of {total}",
   "grammar_correct_so_far": "{count} correct so far",
   "grammar_fill_prompt": "Fill in the blank",

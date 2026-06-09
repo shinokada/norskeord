@@ -433,7 +433,14 @@ export type GrammarTopic =
   | 'relative-som' // relative clauses with «som» (B2–C1)
   | 'setningsadverbial' // sentence adverbial placement
   | 'adverbial-fronting' // fronting adverbials with V2 inversion
-  | 'svar-ja-jo-nei'; // short answers: ja / jo / nei (B2–C1)
+  | 'svar-ja-jo-nei' // short answers: ja / jo / nei (B2–C1)
+  // Phase 2 — morphology topics (Plus only)
+  | 'noun-articles' // en / et / ei · null article (professions, generics)
+  | 'noun-plurals' // irregular and rule-based plural forms
+  | 'noun-possessives' // Eriks / Annes — no apostrophe in Norwegian
+  | 'adj-agreement' // adjective agreement: ubestemt sg → pl, bestemt form
+  | 'adj-definite' // den/det/de + weak adjective form
+  | 'adj-comparison'; // comparative and superlative forms
 
 export interface GrammarRule {
   id: GrammarTopic;
@@ -451,7 +458,7 @@ export interface GrammarQuestion {
   // Optional multi-level tag for display/filtering. A grammar point often spans
   // bands (e.g. ["B2","C1"]). Defaults to [cefr] when absent — see questionLevels().
   levels?: CEFRLevel[];
-  type: 'fill' | 'order' | 'transform';
+  type: 'fill' | 'order' | 'transform' | 'minimal-pair';
   // Per-question instruction shown above the stimulus, e.g.
   // "Embed in: «Jeg tror at …»" or "Translate into Norwegian:".
   // Lets transform/production items state the task that the generic type

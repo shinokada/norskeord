@@ -262,3 +262,57 @@ describe('saveGrammarProgress + loadGrammarProgressMap', () => {
     expect(loadGrammarProgressMap()).toEqual({});
   });
 });
+
+// ── buildGrammarSession: level distribution ───────────────────────────────────
+
+describe('buildGrammarSession — mixed-level tie-breaking', () => {
+  // Mirrors the real noun-plurals topic: 10 A2 questions followed by 2 B1
+  // questions, all unseen (due = 0). Before the shuffle-first fix, slice(0,10)
+  // always returned the 10 A2 questions and the B1 ones were never seen.
+  const a2Questions = Array.from({ length: 10 }, (_, i) =>
+    makeQuestion({ id: `a2-${i}`, cefr: 'A2', topic: 'noun-plurals', answer: `a${i}` })
+  );
+  const b1Questions = Array.from({ length: 2 }, (_, i) =>
+    makeQuestion({ id: `b1-${i}`, cefr: 'B1', topic: 'noun-plurals', answer: `b${i}` })
+  );
+  const pool = [...a2Questions, ...b1Questions];
+
+  it('B1 questions can appear in a session when all questions are unseen', () => {
+    // Run many sessions; B1 questions must appear at least once.
+    let b1Seen = false;
+    for (let attempt = 0; attempt < 50 && !b1Seen; attempt++) {
+      const session = buildGrammarSession(pool, {}, 10);
+      if (session.some((q) => q.cefr === 'B1')) b1Seen = true;
+    }
+    expect(b1Seen).toBe(true);
+  });
+
+  it('sessions vary between runs (not always the same 10)', () => {
+    const ids1 = buildGrammarSession(pool, {}, 10)
+      .map((q) => q.id)
+      .sort();
+    let foundDifferent = false;
+    for (let attempt = 0; attempt < 20 && !foundDifferent; attempt++) {
+      const ids2 = buildGrammarSession(pool, {}, 10)
+        .map((q) => q.id)
+        .sort();
+      if (ids1.join() !== ids2.join()) foundDifferent = true;
+    }
+    expect(foundDifferent).toBe(true);
+  });
+
+  it('overdue questions are still prioritised over new ones', () => {
+    // Mark all B1 questions as far-future and all other A2 questions as near-future,
+    // so only a2-3 (overdue) has the earliest due date.
+    // New/unseen cards score due=0 (epoch-zero) — less than any real timestamp —
+    // so we must give the non-overdue cards explicit progress entries with future dates
+    // to ensure the overdue card has a strictly smaller timestamp than everything else.
+    const map: Record<string, CardProgress> = {};
+    for (const q of b1Questions) map[q.id] = makeProgress(365);
+    for (const q of a2Questions) map[q.id] = makeProgress(30); // future, not overdue
+    map['a2-3'] = makeProgress(-10); // overdue — earliest timestamp, must win
+    // With only 1 slot, the overdue A2 must always win.
+    const session = buildGrammarSession(pool, map, 1);
+    expect(session[0].id).toBe('a2-3');
+  });
+});

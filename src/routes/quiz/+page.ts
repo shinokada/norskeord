@@ -3,7 +3,7 @@ import type { VocabEntry } from '$lib/types';
 
 export const ssr = false;
 
-// Load all A1–C2 levels so the distractor pool covers every quiz level.
+// Load all A1–C levels so the distractor pool covers every quiz level.
 const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   a1: () => import('$lib/data/vocab-a1.json') as unknown as Promise<{ default: VocabEntry[] }>,
   a2: () => import('$lib/data/vocab-a2.json') as unknown as Promise<{ default: VocabEntry[] }>,
@@ -35,8 +35,8 @@ export const load: PageLoad = async ({ url, parent }) => {
   const levelParam = url.searchParams.get('level')?.toLowerCase() ?? null;
   const categoryParam = url.searchParams.get('category') ?? null;
 
-  // Validate level param against all known CEFR levels (A1–C2).
-  const allLevels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+  // Validate level param against all known CEFR levels (A1–C).
+  const allLevels = ['a1', 'a2', 'b1', 'b2', 'c'];
   const profileLevel = typeof targetLevel === 'string' ? targetLevel.toLowerCase() : null;
   const rawLevel = levelParam ?? profileLevel;
   const validLevel = rawLevel && allLevels.includes(rawLevel) ? rawLevel : null;
