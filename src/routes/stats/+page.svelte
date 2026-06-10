@@ -93,19 +93,20 @@
 
   const grammarByTopic = $derived.by<GrammarTopicStat[]>(() => {
     const now = new Date();
-    const groups = new SvelteMap<GrammarTopic, CardProgress[]>();
+    // Build a lookup of seen cards keyed by topic
+    const groups = new SvelteMap<string, CardProgress[]>();
     for (const c of grammarCards) {
-      // For grammar cards, `category` holds the GrammarTopic.
-      const topic = c.category as unknown as GrammarTopic;
+      const topic = c.category as string;
       const list = groups.get(topic) ?? [];
       list.push(c);
       groups.set(topic, list);
     }
-    return [...groups.entries()].map(([topic, cards]) => {
-      const rule = GRAMMAR_RULES[topic];
+    // Iterate over ALL rules so unseen topics still appear
+    return Object.values(GRAMMAR_RULES).map((rule) => {
+      const cards = groups.get(rule.id) ?? [];
       return {
-        topic,
-        title: rule ? (isNb ? rule.titleNb : rule.titleEn) : topic,
+        topic: rule.id as GrammarTopic,
+        title: isNb ? rule.titleNb : rule.titleEn,
         seen: cards.length,
         due: cards.filter((c) => new Date(c.fsrs.due) <= now).length,
         mastered: cards.filter((c) => c.fsrs.state === State.Review).length
@@ -488,7 +489,7 @@
 
     <!-- ── Grammar ────────────────────────────────────────────────────────────── -->
     {#if grammarSeen > 0}
-      {@const grammarTopicCount = grammarByTopic.length}
+      {@const grammarTopicCount = grammarByTopic.filter((t) => t.seen > 0).length}
       <div class="mb-8 overflow-hidden rounded-xl border border-gray-200 dark:border-white/10">
         <!-- Accordion header -->
         <button
@@ -501,8 +502,8 @@
           >
           <div class="flex items-center gap-3">
             <span class="text-xs text-gray-500 dark:text-gray-400">
-              {grammarTopicCount}
-              {grammarTopicCount === 1 ? 'topic' : 'topics'} · {grammarSeen}
+              {grammarTopicCount} / {grammarByTopic.length}
+              {grammarByTopic.length === 1 ? 'topic' : 'topics'} · {grammarSeen}
               {m.stats_seen()} · {grammarMastered}
               {m.stats_grammar_mastered()}{#if grammarDue > 0}
                 · <span class="font-semibold text-red-500 dark:text-red-400"
@@ -543,13 +544,25 @@
                 href="/grammar/{gt.topic}"
                 class="flex items-center justify-between px-4 py-3 transition-colors hover:bg-gray-50 dark:hover:bg-indigo-900/30"
               >
-                <span class="text-sm font-medium text-gray-800 dark:text-gray-100">{gt.title}</span>
-                <span class="text-xs text-gray-500 dark:text-gray-400">
-                  {gt.seen}
-                  {m.stats_seen()} · {gt.mastered}
-                  {m.stats_grammar_mastered()} · {gt.due}
-                  {m.stats_due_today_short()}
-                </span>
+                <span
+                  class="text-sm font-medium {gt.seen === 0
+                    ? 'text-gray-400 dark:text-gray-500'
+                    : 'text-gray-800 dark:text-gray-100'}">{gt.title}</span
+                >
+                {#if gt.seen === 0}
+                  <span class="text-xs text-gray-400 dark:text-gray-500">
+                    {m.stats_grammar_not_started()}
+                  </span>
+                {:else}
+                  <span class="text-xs text-gray-500 dark:text-gray-400">
+                    {gt.seen}
+                    {m.stats_seen()} · {gt.mastered}
+                    {m.stats_grammar_mastered()}{#if gt.due > 0}
+                      · <span class="font-semibold text-red-500 dark:text-red-400"
+                        >{gt.due} {m.stats_due_today_short()}</span
+                      >{/if}
+                  </span>
+                {/if}
               </a>
             {/each}
           </div>

@@ -8,11 +8,9 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- The /stats page for Grammar section, shouldn't show all the topic like By Category so that users know which ones hasn't tried yet.
 - editting json file for editor
-- For example learn/[level], like learn/b1 page has Grammar and From the blog
 
-- domain names: norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
+- domain names: norsknote.no, norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
 
 norsksol, norskbie, norskugle, norskrev, norskhav, norskelg, norskmus, norskulv, norskravn
 

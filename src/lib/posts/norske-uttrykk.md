@@ -19,7 +19,7 @@ decks:
 ## 1. Å ha begge beina på jorda
 
 **«Å ha begge beina på jorda»** er et vanlig norsk uttrykk.
-    Det betyr at en person er:
+Det betyr at en person er:
 
 - realistisk
 - praktisk
@@ -48,7 +48,7 @@ Lignende uttrykk:
 ## 2. Å ha lange ører
 
 **«Å ha lange ører»** er et norsk uttrykk.
-    Det betyr at noen:
+Det betyr at noen:
 
 - hører godt hva andre sier
 - følger godt med
