@@ -267,6 +267,22 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Noen er uregelmessige: god → bedre → best, dårlig → verre → verst, ' +
       'gammel → eldre → eldst, liten → mindre → minst. ' +
       'Bruk «enn» etter komparativ: Oslo er større enn Bergen.'
+  },
+
+  'sterke-verb': {
+    id: 'sterke-verb',
+    titleEn: 'Strong verbs (irregular past tense)',
+    titleNb: 'Sterke verb (uregelmessig fortid)',
+    explanationEn:
+      'Strong verbs change their stem vowel in the preteritum rather than adding -et/-te. ' +
+      'They must be learned individually. ' +
+      'Common examples: gå → gikk, komme → kom, se → så, ta → tok, få → fikk, gi → ga, være → var. ' +
+      'The past participle (used with «har») has its own form: gått, kommet, sett, tatt, fått, gitt, vært.',
+    explanationNb:
+      'Sterke verb endrer stammevokalen i preteritum i stedet for å legge til -et/-te. ' +
+      'De må læres hver for seg. ' +
+      'Vanlige eksempler: gå → gikk, komme → kom, se → så, ta → tok, få → fikk, gi → ga, være → var. ' +
+      'Perfektum partisipp (brukt med «har») har sin egen form: gått, kommet, sett, tatt, fått, gitt, vært.'
   }
 };
 
