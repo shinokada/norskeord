@@ -25,6 +25,7 @@ The admin is designed to grow into a full content management hub. Phase 1 builds
 ```
 
 All editors share:
+
 - The same auth guard (`+layout.server.ts`) — one admin email, checked server-side
 - The same GitHub API helper (`src/lib/admin/github.ts`) — just a different `FILE_PATH` per content type
 - The same draft-then-publish model — local edits, one Publish button, one commit, one redeploy
@@ -70,6 +71,7 @@ Editor clicks Publish
 ```
 
 This means:
+
 - She can add 15 questions, fix a typo on question 3, delete one she changed her mind about — all instant
 - One Publish at the end triggers one GitHub commit and one Vercel redeploy
 - If she closes the tab without publishing, her unpublished changes are lost (warn her with a browser `beforeunload` dialog if the draft is dirty)
@@ -81,10 +83,12 @@ This means:
 Both operations follow the same pattern:
 
 **Read (GET):**
+
 1. `GET /repos/{owner}/{repo}/contents/{path}?ref={branch}` — fetches the file content (base64-encoded) **and its SHA** (required for writes).
 2. Decode → parse JSON → return to the UI.
 
 **Write (PUT / Publish):**
+
 1. Read the current file to get the latest SHA (prevents conflicts).
 2. Encode the updated questions array as base64.
 3. `PUT /repos/{owner}/{repo}/contents/{path}` — sends the new content + SHA. GitHub commits the change.
@@ -94,10 +98,11 @@ The API requires a **Personal Access Token** (PAT) with `Contents: write` permis
 ### SHA conflict handling
 
 A SHA conflict (HTTP 409) happens when the file was changed on GitHub between when the editor loaded the page and when she hits Publish. This can happen if:
+
 - You deployed a code change that touched `grammar.json`
 - She had two admin tabs open and published from both
 
-The handler auto-retries once: re-fetch the latest SHA, re-apply the draft on top of the freshest file, and retry the write. She never sees the conflict. If the retry also fails, show a clear error: *"Conflict — please reload the page and re-apply your changes."*
+The handler auto-retries once: re-fetch the latest SHA, re-apply the draft on top of the freshest file, and retry the write. She never sees the conflict. If the retry also fails, show a clear error: _"Conflict — please reload the page and re-apply your changes."_
 
 To prevent double-publish, disable the Publish button for 90 seconds after a successful publish, with a visible countdown ("Next publish available in 45s").
 
@@ -220,8 +225,8 @@ const HEADERS = {
   'X-GitHub-Api-Version': '2022-11-28'
 };
 
-const owner  = process.env.GITHUB_OWNER!;
-const repo   = process.env.GITHUB_REPO!;
+const owner = process.env.GITHUB_OWNER!;
+const repo = process.env.GITHUB_REPO!;
 const branch = process.env.GITHUB_BRANCH ?? 'main';
 
 /** Fetch a JSON file from the repo. Returns { data, sha }. */
@@ -296,12 +301,15 @@ export const PUT: RequestHandler = async ({ locals, request }) => {
     if (issues.length) throw error(400, `Question ${q.id}: ${issues.join('; ')}`);
   }
 
-  const added  = questions.filter((q) => (q as any)._status === 'added').length;
+  const added = questions.filter((q) => (q as any)._status === 'added').length;
   const edited = questions.filter((q) => (q as any)._status === 'edited').length;
   const message = buildCommitMessage(added, edited);
 
   // Strip internal _status flags before writing
-  const clean = questions.map(({ ...q }) => { delete (q as any)._status; return q; });
+  const clean = questions.map(({ ...q }) => {
+    delete (q as any)._status;
+    return q;
+  });
 
   // Attempt write with auto-retry on SHA conflict
   const attempt = async (retry = false): Promise<void> => {
@@ -320,7 +328,7 @@ export const PUT: RequestHandler = async ({ locals, request }) => {
 
 function buildCommitMessage(added: number, edited: number): string {
   const parts = [];
-  if (added)  parts.push(`add ${added} question${added  > 1 ? 's' : ''}`);
+  if (added) parts.push(`add ${added} question${added > 1 ? 's' : ''}`);
   if (edited) parts.push(`edit ${edited} question${edited > 1 ? 's' : ''}`);
   return `admin: ${parts.length ? parts.join(', ') : 'update grammar questions'}`;
 }
@@ -345,22 +353,22 @@ export function generateId(topic: string, existing: GrammarQuestion[]): string {
 }
 
 const TOPIC_PREFIXES: Record<string, string> = {
-  'ikke-placement':     'ikke',
-  'det-sentence':       'det',
-  'det-er-ikke':        'dei',
-  'v2-word-order':      'v2',
-  'modal-verb-order':   'mod',
-  'subordinate-order':  'sub',
-  'relative-som':       'rel',
-  'svar-ja-jo-nei':     'svar',
-  'setningsadverbial':  'setadv',
+  'ikke-placement': 'ikke',
+  'det-sentence': 'det',
+  'det-er-ikke': 'dei',
+  'v2-word-order': 'v2',
+  'modal-verb-order': 'mod',
+  'subordinate-order': 'sub',
+  'relative-som': 'rel',
+  'svar-ja-jo-nei': 'svar',
+  setningsadverbial: 'setadv',
   'adverbial-fronting': 'advfr',
-  'noun-articles':      'noun-art',
-  'noun-plurals':       'noun-pl',
-  'noun-possessives':   'noun-pos',
-  'adj-agreement':      'adj',
-  'adj-definite':       'adj',
-  'adj-comparison':     'adj',
+  'noun-articles': 'noun-art',
+  'noun-plurals': 'noun-pl',
+  'noun-possessives': 'noun-pos',
+  'adj-agreement': 'adj',
+  'adj-definite': 'adj',
+  'adj-comparison': 'adj'
 };
 
 function topicPrefix(topic: string): string {
@@ -370,13 +378,13 @@ function topicPrefix(topic: string): string {
 /** Return a list of validation error messages. Empty = valid. */
 export function validateQuestion(q: Partial<GrammarQuestion>): string[] {
   const errors: string[] = [];
-  if (!q.topic)  errors.push('topic is required');
-  if (!q.cefr)   errors.push('cefr is required');
-  if (!q.type)   errors.push('type is required');
+  if (!q.topic) errors.push('topic is required');
+  if (!q.cefr) errors.push('cefr is required');
+  if (!q.type) errors.push('type is required');
   if (!q.answer) errors.push('answer is required');
-  if (q.type === 'fill'         && !q.sentence)        errors.push('sentence is required for fill');
-  if (q.type === 'order'        && !q.tokens?.length)  errors.push('tokens are required for order');
-  if (q.type === 'transform'    && !q.source)          errors.push('source is required for transform');
+  if (q.type === 'fill' && !q.sentence) errors.push('sentence is required for fill');
+  if (q.type === 'order' && !q.tokens?.length) errors.push('tokens are required for order');
+  if (q.type === 'transform' && !q.source) errors.push('source is required for transform');
   if (q.type === 'minimal-pair' && (!q.optionA || !q.optionB)) {
     errors.push('optionA and optionB are required for minimal-pair');
   }
@@ -450,22 +458,22 @@ Opens for both Add and Edit. Fields adapt to `type`:
 ### State
 
 ```ts
-let published   = $state<GrammarQuestion[]>([]);  // what's on GitHub right now
-let draft       = $state<DraftQuestion[]>([]);     // local working copy
-let loading     = $state(true);
-let publishing  = $state(false);
-let cooldown    = $state(0);                       // seconds until Publish re-enables
-let error       = $state<string | null>(null);
+let published = $state<GrammarQuestion[]>([]); // what's on GitHub right now
+let draft = $state<DraftQuestion[]>([]); // local working copy
+let loading = $state(true);
+let publishing = $state(false);
+let cooldown = $state(0); // seconds until Publish re-enables
+let error = $state<string | null>(null);
 
 // A DraftQuestion extends GrammarQuestion with an internal status flag
 type DraftQuestion = GrammarQuestion & { _status?: 'added' | 'edited' | 'deleted' };
 
-let isDirty     = $derived(draft.some((q) => q._status));
+let isDirty = $derived(draft.some((q) => q._status));
 let filterTopic = $state('');
-let filterCefr  = $state('');
-let filterType  = $state('');
+let filterCefr = $state('');
+let filterType = $state('');
 let searchQuery = $state('');
-let modal       = $state<{ mode: 'add' | 'edit'; question: Partial<DraftQuestion> } | null>(null);
+let modal = $state<{ mode: 'add' | 'edit'; question: Partial<DraftQuestion> } | null>(null);
 ```
 
 ### Key behaviours
@@ -473,7 +481,7 @@ let modal       = $state<{ mode: 'add' | 'edit'; question: Partial<DraftQuestion
 - **Dirty guard** — browser `beforeunload` warns if `isDirty` is true and the editor tries to close the tab.
 - **Discard** — resets `draft` back to `published`, clearing all unpublished changes (with a confirm dialog).
 - **Publish cooldown** — after a successful publish, the button is disabled for 90 seconds with a visible countdown. Prevents double-publish within the Vercel redeploy window.
-- **Deploy banner** — after publish, show: *"Published! Changes will be live in ~60 seconds."*
+- **Deploy banner** — after publish, show: _"Published! Changes will be live in ~60 seconds."_
 - **Conflict auto-retry** — handled server-side (see API route). The editor never sees a SHA conflict.
 - **Validation before publish** — the Publish button runs `validateQuestion` on every draft item before sending. If any fail, the modal opens on the first invalid question.
 
@@ -504,6 +512,7 @@ let modal       = $state<{ mode: 'add' | 'edit'; question: Partial<DraftQuestion
 ### Phase 3 — Blog editor
 
 Reuses `github.ts` unchanged. New additions:
+
 - [ ] `src/routes/admin/blog/api/+server.ts` — GET lists all posts (reads each `.md` file's frontmatter), PUT writes a single post back (frontmatter + body)
 - [ ] `src/routes/admin/blog/+page.svelte` — post list table (title, CEFR, publishedAt, status)
 - [ ] Edit modal: frontmatter fields (title, description, cefr, publishedAt, tags) + markdown body textarea with live preview
@@ -513,6 +522,7 @@ Reuses `github.ts` unchanged. New additions:
 ### Phase 4 — Vocab and uttrykk editors
 
 Reuses `github.ts` unchanged. Add `VOCAB_FILE_PATH` and `UTTRYKK_FILE_PATH` env vars.
+
 - [ ] `src/routes/admin/vocab/api/+server.ts` and `+page.svelte`
 - [ ] `src/routes/admin/uttrykk/api/+server.ts` and `+page.svelte`
 - [ ] Field shapes to be designed once grammar editor is complete and in use

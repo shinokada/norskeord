@@ -1,4 +1,24 @@
-1.  **«Å ha begge beina på jorda»** er et vanlig norsk uttrykk.
+---
+title: 'Norske uttrykk: beina på jorda, lange ører og jernhånd'
+description: 'Three common Norwegian idioms explained: å ha begge beina på jorda (down-to-earth), å ha lange ører (nosy / sharp ears), and å styre med jernhånd (to rule with an iron fist).'
+slug: norske-uttrykk
+cefr: B1
+publishedAt: 2026-06-11
+tags: [expressions, vocabulary, idioms, b1]
+decks:
+  - level: b1
+    category: uttrykk-preview
+    label: B1 Uttrykk (preview)
+  - level: a2
+    category: uttrykk-preview
+    label: A2 Uttrykk (preview)
+---
+
+> **TL;DR:** Three everyday Norwegian idioms — one about being grounded, one about sharp ears, one about firm leadership.
+
+## 1. Å ha begge beina på jorda
+
+**«Å ha begge beina på jorda»** er et vanlig norsk uttrykk.
     Det betyr at en person er:
 
 - realistisk
@@ -25,7 +45,9 @@ Lignende uttrykk:
 - _å være jordnær_
 - _å være realistisk_
 
-2.  **«Å ha lange ører»** er et norsk uttrykk.
+## 2. Å ha lange ører
+
+**«Å ha lange ører»** er et norsk uttrykk.
     Det betyr at noen:
 
 - hører godt hva andre sier
@@ -44,7 +66,9 @@ Eksempler:
 
 Uttrykket kan også bety at noen er litt nysgjerrige.
 
-3.  **«Å styre med jernhånd»** betyr å lede eller kontrollere veldig strengt og hardt.
+## 3. Å styre med jernhånd
+
+**«Å styre med jernhånd»** betyr å lede eller kontrollere veldig strengt og hardt.
 
 Uttrykket brukes om personer som:
 

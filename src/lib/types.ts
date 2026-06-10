@@ -441,7 +441,10 @@ export type GrammarTopic =
   | 'adj-agreement' // adjective agreement: ubestemt sg → pl, bestemt form
   | 'adj-definite' // den/det/de + weak adjective form
   | 'adj-comparison' // comparative and superlative forms
-  | 'sterke-verb'; // strong verb preteritum and past participle forms
+  | 'sterke-verb' // strong verb preteritum and past participle forms
+  | 'helsetninger' // main clause structure: declarative, questions, ikke, det-subject
+  | 'preposisjoner-tid' // time prepositions: i, om, for–siden, på, til
+  | 'preposisjoner-sted'; // place & relation prepositions: i/på, geography, hos/ved/til/fra, av/fra, compounds
 
 export interface GrammarRule {
   id: GrammarTopic;

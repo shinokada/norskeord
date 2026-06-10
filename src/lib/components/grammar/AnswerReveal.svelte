@@ -43,7 +43,9 @@
     {m.grammar_correct_answer()}
   </p>
   {#if question.type === 'minimal-pair'}
-    <p class="mb-1 text-xs font-semibold text-indigo-500 dark:text-indigo-400">Option {question.answer}</p>
+    <p class="mb-1 text-xs font-semibold text-indigo-500 dark:text-indigo-400">
+      Option {question.answer}
+    </p>
     <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">
       {question.answer === 'A' ? question.optionA : question.optionB}
     </p>

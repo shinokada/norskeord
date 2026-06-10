@@ -3,7 +3,7 @@ title: '"Det" as a Formal Subject — Why Norwegian Starts Sentences with "Det"'
 description: 'Norwegian often uses "det" as a placeholder subject when introducing new information. This is called a presentational sentence — and it works like "there is/are" in English.'
 slug: det-som-formelt-subjekt
 cefr: B1
-publishedAt: 2026-06-10
+publishedAt: 2026-06-25
 tags: [grammar, sentence-structure, word-order]
 ---
 
