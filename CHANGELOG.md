@@ -1,5 +1,17 @@
 # norske-flashcard
 
+## 2.20.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added minimal-pair grammar exercises for more interactive question types
+    - Expanded grammar curriculum with strong verbs, sentence structures, and preposition lessons
+  - **Documentation**
+    - Comprehensive admin panel implementation guide added
+    - Updated grammar instruction materials and lesson structure
+    - Blog post metadata and scheduling updates
+
 ## 2.19.0
 
 ### Minor Changes
