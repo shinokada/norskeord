@@ -161,6 +161,7 @@
   "stats_grammar_practiced": "Spørsmål øvd",
   "stats_grammar_due": "Klare for repetisjon",
   "stats_grammar_mastered": "Mestret",
+  "stats_grammar_not_started": "Ikke påbegynt",
   "stats_grammar_by_topic": "Etter tema",
   "stats_seen": "sett",
   "stats_due_today_short": "forfaller i dag",
