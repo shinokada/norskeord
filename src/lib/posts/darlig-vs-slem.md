@@ -3,7 +3,7 @@ title: 'Dårlig vs Slem — Two Ways to Say "Bad"'
 description: 'Dårlig is about quality, skill, or health. Slem is about behaviour — being mean, naughty, or cruel. Mixing them up changes the meaning entirely.'
 slug: darlig-vs-slem
 cefr: A2
-publishedAt: 2026-06-08
+publishedAt: 2026-06-24
 tags: [adjectives, comparison, vocabulary]
 ---
 

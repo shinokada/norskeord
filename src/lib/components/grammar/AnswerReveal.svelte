@@ -42,7 +42,19 @@
   <p class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
     {m.grammar_correct_answer()}
   </p>
-  <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">{question.answer}</p>
+  {#if question.type === 'minimal-pair'}
+    <p class="mb-1 text-xs font-semibold text-indigo-500 dark:text-indigo-400">
+      Option {question.answer}
+    </p>
+    <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">
+      {question.answer === 'A' ? question.optionA : question.optionB}
+    </p>
+    {#if question.explanation}
+      <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">{question.explanation}</p>
+    {/if}
+  {:else}
+    <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">{question.answer}</p>
+  {/if}
 
   {#if !isCorrect && userAnswer}
     <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">

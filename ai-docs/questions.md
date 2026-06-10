@@ -8,6 +8,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+- The /stats page for Grammar section, shouldn't show all the topic like By Category so that users know which ones hasn't tried yet.
 - editting json file for editor
 - For example learn/[level], like learn/b1 page has Grammar and From the blog
 

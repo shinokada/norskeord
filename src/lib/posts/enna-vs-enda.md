@@ -1,3 +1,16 @@
+---
+title: 'Ennå vs Enda — What’s the Difference?'
+description: 'Both ennå and enda can mean still or yet, but only enda means even or even more. Here’s when to use each one.'
+slug: enna-vs-enda
+cefr: B1
+publishedAt: 2026-06-11
+tags: [adverbs, vocabulary, grammar, b1]
+decks:
+  - level: b1
+    category: expressing-opinions
+    label: B1 Expressing Opinions
+---
+
 «**ennå**» og «**enda**» overlapper mye, men de brukes litt forskjellig i moderne norsk.
 
 ## 1) **ennå** = **still / yet**

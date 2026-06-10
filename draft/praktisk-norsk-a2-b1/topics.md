@@ -78,21 +78,21 @@
 
 ### Kapittel 9: Preposisjoner
 
-- Preposisjoner i tidsuttrykk 131
-- Preposisjoner i stedsuttrykk 136
-- Preposisjoner i uttrykk for tilknytning 140
-- Flere preposisjoner 141
-- Sammensatte preposisjoner 143
+- Preposisjoner i tidsuttrykk
+- Preposisjoner i stedsuttrykk
+- Preposisjoner i uttrykk for tilknytning
+- Flere preposisjoner
+- Sammensatte preposisjoner
 - Test 144
 
 ### Kapittel 10: Helsetninger
 
-- Fortellende setninger 147
-- Spørresetninger 150
-- Spørresetninger med spørreord 152
-- Helsetninger med _ikke_ 153
-- Setninger med _det_ som subjekt 157
-- Test 159
+- Fortellende setninger
+- Spørresetninger
+- Spørresetninger med spørreord
+- Helsetninger med _ikke_
+- Setninger med _det_ som subjekt
+- Test
 
 ### Kapittel 11: Leddsetninger
 
