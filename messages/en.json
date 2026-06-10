@@ -161,6 +161,7 @@
   "stats_grammar_practiced": "Questions practiced",
   "stats_grammar_due": "Due for review",
   "stats_grammar_mastered": "Mastered",
+  "stats_grammar_not_started": "Not started",
   "stats_grammar_by_topic": "By topic",
   "stats_seen": "seen",
   "stats_due_today_short": "due today",
