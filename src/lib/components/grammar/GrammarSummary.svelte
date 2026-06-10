@@ -33,6 +33,15 @@
   function stimulus(q: GrammarQuestion): string {
     if (q.type === 'fill') return q.sentence ?? q.answer;
     if (q.type === 'transform') return q.source ?? q.answer;
+    if (q.type === 'order') return (q.tokens ?? []).join(' / ');
+    if (q.type === 'minimal-pair') return `A: ${q.optionA}  |  B: ${q.optionB}`;
+    return q.answer;
+  }
+
+  function correctDisplay(q: GrammarQuestion): string {
+    if (q.type === 'minimal-pair') {
+      return `${q.answer}: ${q.answer === 'A' ? q.optionA : q.optionB}`;
+    }
     return q.answer;
   }
 </script>
@@ -64,7 +73,7 @@
         <div class="min-w-0 flex-1">
           <p class="text-gray-500 dark:text-gray-400">{stimulus(result.question)}</p>
           <p class="mt-0.5 font-medium text-gray-800 dark:text-gray-100">
-            {result.question.answer}
+            {correctDisplay(result.question)}
           </p>
           {#if !result.correct && result.userAnswer}
             <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">
