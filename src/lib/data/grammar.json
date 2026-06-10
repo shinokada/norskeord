@@ -1406,5 +1406,214 @@
     "alternates": ["Oslo er dyrere enn Bergen"],
     "hint": "dyr → dyrere (regular comparative with -ere).",
     "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-001",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Change to preteritum (simple past).",
+    "source": "Jeg går til skolen.",
+    "answer": "Jeg gikk til skolen.",
+    "alternates": ["Jeg gikk til skolen"],
+    "hint": "gå is a strong verb: gå → gikk (not gåte).",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-002",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Change to preteritum (simple past).",
+    "source": "Han kommer hjem sent.",
+    "answer": "Han kom hjem sent.",
+    "alternates": ["Han kom hjem sent"],
+    "hint": "komme is a strong verb: komme → kom.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-003",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Change to preteritum (simple past).",
+    "source": "Vi ser en film.",
+    "answer": "Vi så en film.",
+    "alternates": ["Vi så en film"],
+    "hint": "se is a strong verb: se → så.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-004",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Change to preteritum (simple past).",
+    "source": "De tar bussen.",
+    "answer": "De tok bussen.",
+    "alternates": ["De tok bussen"],
+    "hint": "ta is a strong verb: ta → tok.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-005",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Change to preteritum (simple past).",
+    "source": "Hun får en gave.",
+    "answer": "Hun fikk en gave.",
+    "alternates": ["Hun fikk en gave"],
+    "hint": "få is a strong verb: få → fikk.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-006",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Change to preteritum (simple past).",
+    "source": "Jeg gir ham boken.",
+    "answer": "Jeg ga ham boken.",
+    "alternates": ["Jeg ga ham boken"],
+    "hint": "gi is a strong verb: gi → ga.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-007",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Hun sov godt i natt.",
+    "optionB": "Hun sovet godt i natt.",
+    "answer": "A",
+    "explanation": "sove is a strong verb: sove → sov (not sovet, which is the past participle).",
+    "hint": "The preteritum of sove is sov, not sovet.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-008",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "De drakk kaffe hele dagen.",
+    "optionB": "De drikket kaffe hele dagen.",
+    "answer": "A",
+    "explanation": "drikke is a strong verb: drikke → drakk (not drikket).",
+    "hint": "The preteritum of drikke is drakk.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-009",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Fill in the preteritum form.",
+    "sentence": "Jeg _____ ham på torget i går. (treffe)",
+    "words": ["traff", "treffet", "traf"],
+    "answer": "traff",
+    "hint": "treffe is a strong verb: treffe → traff.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-010",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Fill in the preteritum form.",
+    "sentence": "Vi _____ i tre timer. (sitte)",
+    "words": ["satt", "sitter", "sitet"],
+    "answer": "satt",
+    "hint": "sitte is a strong verb: sitte → satt.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-011",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "levels": ["A2", "B1"],
+    "type": "transform",
+    "prompt": "Change to presens perfektum (use «har» + past participle).",
+    "source": "Han gikk til butikken.",
+    "answer": "Han har gått til butikken.",
+    "alternates": ["Han har gått til butikken"],
+    "hint": "gå → gikk (preteritum) → har gått (perfektum).",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-012",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "levels": ["A2", "B1"],
+    "type": "transform",
+    "prompt": "Change to presens perfektum (use «har» + past participle).",
+    "source": "De så filmen.",
+    "answer": "De har sett filmen.",
+    "alternates": ["De har sett filmen"],
+    "hint": "se → så (preteritum) → har sett (perfektum).",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-013",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Fill in the correct form of the verb in brackets.",
+    "sentence": "Jeg har aldri _____ norsk. (skrive)",
+    "words": ["skrevet", "skrev", "skrivet"],
+    "answer": "skrevet",
+    "hint": "After «har» use the past participle: skrive → har skrevet.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-014",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum form.",
+    "sentence": "De _____ aldri løsningen. (finne)",
+    "words": ["fant", "finner", "funnet"],
+    "answer": "fant",
+    "hint": "finne is a strong verb: finne → fant.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-015",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Laget har vunnet tre kamper denne sesongen.",
+    "optionB": "Laget har vant tre kamper denne sesongen.",
+    "answer": "A",
+    "explanation": "vinne → vant (preteritum), → har vunnet (perfektum). After «har» you need the past participle: vunnet.",
+    "hint": "After «har» use the past participle vunnet, not the preteritum vant.",
+    "plusOnly": true
+  },
+
+  {
+    "id": "gq-sv-016",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["har", "Hun", "aldri", "drukket", "kaffe"],
+    "answer": "Hun har aldri drukket kaffe.",
+    "alternates": ["Hun har aldri drukket kaffe"],
+    "hint": "Perfektum: har + past participle. drikke → har drukket. Sentence adverb «aldri» goes between har and the participle.",
+    "plusOnly": true
   }
 ]

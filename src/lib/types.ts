@@ -440,7 +440,8 @@ export type GrammarTopic =
   | 'noun-possessives' // Eriks / Annes — no apostrophe in Norwegian
   | 'adj-agreement' // adjective agreement: ubestemt sg → pl, bestemt form
   | 'adj-definite' // den/det/de + weak adjective form
-  | 'adj-comparison'; // comparative and superlative forms
+  | 'adj-comparison' // comparative and superlative forms
+  | 'sterke-verb'; // strong verb preteritum and past participle forms
 
 export interface GrammarRule {
   id: GrammarTopic;
@@ -471,6 +472,10 @@ export interface GrammarQuestion {
   tokens?: string[]; // word list shown as chips (reshuffled for display)
   // --- transform type ---
   source?: string; // sentence to rewrite, or an L1 sentence to translate
+  // --- minimal-pair type ---
+  optionA?: string; // first candidate sentence
+  optionB?: string; // second candidate sentence
+  explanation?: string; // shown on reveal: why the correct option is right
   // --- shared ---
   answer: string; // primary correct answer (the blank span for fill; full sentence otherwise)
   alternates?: string[]; // other accepted forms
