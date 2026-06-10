@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.21.0
+
+### Minor Changes
+
+- - **New Features**
+    - Grammar stats now display all available grammar topics, including those not yet started, with enhanced visual distinction and "Not started" status labels for improved clarity.
+  - **Documentation**
+    - Updated domain configuration and improved formatting in Norwegian idiom article introductions.
+  - **Chores**
+    - Updated English and Norwegian translations with new "Not started" status message for grammar topics.
+
 ## 2.20.0
 
 ### Minor Changes
