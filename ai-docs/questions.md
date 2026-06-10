@@ -8,9 +8,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- new blog post in src/lib/posts/do-you-know-these-expressions.md and enna-vs-enda.md. Are the file names good for url? See other posts and update these two files. Leave publishedAt field for tomorrow.
-
-- The /stat page for Grammar section, shouldn't show all the topic so that users know which ones hasn't tried yet.
+- The /stats page for Grammar section, shouldn't show all the topic like By Category so that users know which ones hasn't tried yet.
 - editting json file for editor
 - For example learn/[level], like learn/b1 page has Grammar and From the blog
 
