@@ -267,6 +267,88 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Noen er uregelmessige: god → bedre → best, dårlig → verre → verst, ' +
       'gammel → eldre → eldst, liten → mindre → minst. ' +
       'Bruk «enn» etter komparativ: Oslo er større enn Bergen.'
+  },
+
+  'sterke-verb': {
+    id: 'sterke-verb',
+    titleEn: 'Strong verbs (irregular past tense)',
+    titleNb: 'Sterke verb (uregelmessig fortid)',
+    explanationEn:
+      'Strong verbs change their stem vowel in the preteritum rather than adding -et/-te. ' +
+      'They must be learned individually. ' +
+      'Common examples: gå → gikk, komme → kom, se → så, ta → tok, få → fikk, gi → ga, være → var. ' +
+      'The past participle (used with «har») has its own form: gått, kommet, sett, tatt, fått, gitt, vært.',
+    explanationNb:
+      'Sterke verb endrer stammevokalen i preteritum i stedet for å legge til -et/-te. ' +
+      'De må læres hver for seg. ' +
+      'Vanlige eksempler: gå → gikk, komme → kom, se → så, ta → tok, få → fikk, gi → ga, være → var. ' +
+      'Perfektum partisipp (brukt med «har») har sin egen form: gått, kommet, sett, tatt, fått, gitt, vært.'
+  },
+
+  helsetninger: {
+    id: 'helsetninger',
+    titleEn: 'Main clauses (helsetninger)',
+    titleNb: 'Helsetninger',
+    explanationEn:
+      'Norwegian main clauses follow four key patterns. ' +
+      '1) Declarative: finite verb is always the SECOND element (V2). ' +
+      '2) Yes/no questions: swap subject and verb — «Du snakker norsk.» → «Snakker du norsk?» ' +
+      '3) Wh-questions: question word takes position 1, verb stays 2nd — «Hvor bor du?» ' +
+      '4) Negation: «ikke» comes AFTER the finite verb in main clauses. ' +
+      '5) Presentational «det»: when an indefinite subject follows the verb, use «det» as a dummy subject — «Det bor en mann her.»',
+    explanationNb:
+      'Norske helsetninger følger fire mønstre. ' +
+      '1) Fortellende: det bøyde verbet er alltid på ANDRE PLASS (V2). ' +
+      '2) Ja/nei-spørsmål: bytt om subjekt og verb — «Du snakker norsk.» → «Snakker du norsk?» ' +
+      '3) Spørresetninger med spørreord: spørreordet står på første plass, verbet på andre — «Hvor bor du?» ' +
+      '4) Nektelse: «ikke» kommer ETTER det bøyde verbet i helsetninger. ' +
+      '5) Det som formelt subjekt: når et ubestemt subjekt følger verbet, brukes «det» som formelt subjekt — «Det bor en mann her.»'
+  },
+
+  'preposisjoner-tid': {
+    id: 'preposisjoner-tid',
+    titleEn: 'Time prepositions (i, om, for–siden, på)',
+    titleNb: 'Tidspreposisjoner (i, om, for–siden, på)',
+    explanationEn:
+      '«I» expresses duration (how long): «Hun har bodd her i to år.» It is also used with years, months, and named periods: i 1989, i april, i ferien. ' +
+      '«For … siden» marks a past point in time (ago): «De kom for to uker siden.» Always used with preteritum. ' +
+      '«Om» points to a future moment: «De kommer om fem minutter.» ' +
+      '«Til» with a definite season means the upcoming season: «Til sommeren skal vi flytte.» ' +
+      '«På» shows how long something TOOK to complete: «Han leste boka på to timer.» ' +
+      'With «ikke», «på» marks elapsed time without an event: «Jeg har ikke sett henne på måneder.» ' +
+      'For seasons and parts of the day: «i» + indefinite noun = the specific instance (i høst, i kveld); «om» + definite noun = habitual/general (om høsten, om kvelden).',
+    explanationNb:
+      '«I» uttrykker varighet (hvor lenge): «Hun har bodd her i to år.» Brukes også med årstall, måneder og navngitte perioder: i 1989, i april, i ferien. ' +
+      '«For … siden» markerer et tidspunkt i fortida: «De kom for to uker siden.» Brukes alltid med preteritum. ' +
+      '«Om» peker på et fremtidig tidspunkt: «De kommer om fem minutter.» ' +
+      '«Til» foran bestemt årstid betyr den kommende årstiden: «Til sommeren skal vi flytte.» ' +
+      '«På» viser hvor lang tid noe tok å fullføre: «Han leste boka på to timer.» ' +
+      'Med «ikke» markerer «på» forløpt tid uten at noe har skjedd: «Jeg har ikke sett henne på måneder.» ' +
+      'For årstider og deler av dagen: «i» + ubestemt substantiv = den konkrete forekomsten (i høst, i kveld); «om» + bestemt substantiv = vanlig/generell (om høsten, om kvelden).'
+  },
+
+  'preposisjoner-sted': {
+    id: 'preposisjoner-sted',
+    titleEn: 'Place & relation prepositions',
+    titleNb: 'Stedspreposisjoner og relasjonspreposisjoner',
+    explanationEn:
+      '«I» = inside an enclosed space: i skapet, i skogen, i banken, i en butikk. ' +
+      '«På» = on a surface or open area, and for most workplaces: på bordet, på fjellet, på kontor, på skolen, på kafé. ' +
+      'Geography: «i» for countries, cities, and regions (i Japan, i Bergen, i Nord-Norge); «på» for islands (på Mallorca, på Island) and Norwegian districts (på Vestlandet). ' +
+      "«Hos» = at someone's place/premises (being there): «Jeg var hos legen.» To go TO someone, use «til»: «Jeg skal til legen.» " +
+      '«Ved» = right next to: «De bor ved sjøen.» ' +
+      'Possession: «bilen til Frida» (belonging to a person → «til»); «kongen i Norge» (geographic → «i»); «fargen på bilen» (property of a thing → «på»). ' +
+      '«Av» = made of (material): «laget av tre.» «Fra» = coming from (origin): «fra hagen.» ' +
+      'Compound prepositions: ved siden av (next to), i nærheten av (near), i stedet for (instead of), på grunn av (because of), ved hjelp av (with the help of).',
+    explanationNb:
+      '«I» = innenfor et lukket rom: i skapet, i skogen, i banken, i en butikk. ' +
+      '«På» = på overflaten eller et åpent område, og for de fleste arbeidsplasser: på bordet, på fjellet, på kontor, på skolen, på kafé. ' +
+      'Geografi: «i» for land, byer og regioner (i Japan, i Bergen, i Nord-Norge); «på» for øyer (på Mallorca, på Island) og norske landsdeler (på Vestlandet). ' +
+      '«Hos» = hos noen (man er der): «Jeg var hos legen.» For bevegelse til noen brukes «til»: «Jeg skal til legen.» ' +
+      '«Ved» = like ved siden av: «De bor ved sjøen.» ' +
+      'Tilhørighet: «bilen til Frida» (tilhører en person → «til»); «kongen i Norge» (geografisk → «i»); «fargen på bilen» (egenskap ved ting → «på»). ' +
+      '«Av» = laget av (materiale): «laget av tre.» «Fra» = kommer fra (opprinnelse): «fra hagen.» ' +
+      'Sammensatte preposisjoner: ved siden av, i nærheten av, i stedet for, på grunn av, ved hjelp av.'
   }
 };
 
