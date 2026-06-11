@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 2.22.3
+
+### Patch Changes
+
+- ## Bug Fixes
+  - Enhanced CAPTCHA token handling during login to ensure proper verification collection
+  - Improved error recovery with ability to retry CAPTCHA verification after failed attempts
+
 ## 2.22.2
 
 ### Patch Changes
