@@ -185,7 +185,7 @@
                                        (remove this once you switch to a real key)
             • rounded-md             → softens the widget corners slightly
         -->
-        <div class="mt-4 flex justify-center overflow-hidden rounded-md">
+        <div class="mt-4 flex justify-center rounded-md">
           <div
             bind:this={turnstileContainer}
             class="cf-turnstile"
