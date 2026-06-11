@@ -1,16 +1,14 @@
 <script lang="ts">
-  import { enhance } from '$app/forms';
   import { page } from '$app/state';
+  import { applyAction, deserialize } from '$app/forms';
   import { PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
   import * as m from '$lib/paraglide/messages.js';
   import type { ActionData } from './$types';
 
   let { form }: { form: ActionData } = $props();
 
-  // Pre-populate the email field if it was returned after a failed submission.
   let email = $derived((form && 'email' in form ? form.email : '') ?? '');
 
-  // Map server-side error keys to translated messages.
   function errorMessage(key: string | undefined): string {
     if (!key) return '';
     switch (key) {
@@ -39,39 +37,49 @@
   );
 
   let submitting = $state(false);
+  let emailValue = $state('');
 
-  // Reference to the Turnstile widget container element.
+  interface TurnstileWindow {
+    turnstile?: {
+      reset: (container: HTMLElement) => void;
+      execute: (container: HTMLElement) => void;
+    };
+    onTurnstileSuccess?: (token: string) => void;
+    onTurnstileExpired?: () => void;
+  }
+
+  function turnstileWindow(): TurnstileWindow {
+    return window as TurnstileWindow;
+  }
+
+  // Turnstile widget container ref.
   let turnstileContainer: HTMLDivElement | null = $state(null);
-
-  // Pending resolve from getTurnstileToken().
   let pendingResolve: ((token: string) => void) | null = null;
 
-  // Called by Turnstile when the invisible challenge produces a token.
   function onTurnstileSuccess(token: string) {
     pendingResolve?.(token);
     pendingResolve = null;
   }
 
-  // Called by Turnstile when a token expires before use.
   function onTurnstileExpired() {
     pendingResolve = null;
-    if (typeof window !== 'undefined' && (window as any).turnstile && turnstileContainer) {
-      (window as any).turnstile.reset(turnstileContainer);
+    if (typeof window !== 'undefined' && turnstileWindow().turnstile && turnstileContainer) {
+      turnstileWindow().turnstile!.reset(turnstileContainer);
     }
   }
 
   if (typeof window !== 'undefined') {
-    (window as any).onTurnstileSuccess = onTurnstileSuccess;
-    (window as any).onTurnstileExpired = onTurnstileExpired;
+    turnstileWindow().onTurnstileSuccess = onTurnstileSuccess;
+    turnstileWindow().onTurnstileExpired = onTurnstileExpired;
   }
 
-  /**
-   * Triggers the invisible Turnstile challenge and returns a Promise that
-   * resolves with the token string once Cloudflare completes the check.
-   */
   function getTurnstileToken(): Promise<string> {
+    // Skip in dev when no site key is configured — server also skips verification.
+    if (!PUBLIC_TURNSTILE_SITE_KEY) {
+      return Promise.resolve('');
+    }
     return new Promise((resolve, reject) => {
-      const ts = (window as any).turnstile;
+      const ts = turnstileWindow().turnstile;
       if (!ts || !turnstileContainer) {
         reject(new Error('Turnstile not ready'));
         return;
@@ -88,38 +96,38 @@
     });
   }
 
-  // Reference to the <form> element so we can submit it programmatically
-  // after the Turnstile token has been injected.
-  let formEl: HTMLFormElement | null = $state(null);
-
-  // Hidden input that carries the Turnstile token.
-  let turnstileToken = $state('');
-
-  // Whether the current submit cycle already has a valid token.
-  // Used to distinguish the "first click" (needs challenge) from the
-  // "programmatic re-submit after token is ready" path.
-  let tokenReady = $state(false);
-
   async function handleSubmit(event: SubmitEvent) {
-    if (tokenReady) {
-      // Token is already set — let the form submit normally via enhance.
-      return;
-    }
-
-    // First click: prevent the default submit, run the challenge, then re-submit.
     event.preventDefault();
+    if (submitting) return;
     submitting = true;
 
+    let token = '';
     try {
-      const token = await getTurnstileToken();
-      turnstileToken = token;
-      tokenReady = true;
-      // Re-submit so that enhance picks it up with the token in place.
-      formEl?.requestSubmit();
-    } catch {
+      token = await getTurnstileToken();
+    } catch (err) {
+      console.warn('Turnstile token error:', err);
+      // Continue with empty token — server will reject if truly needed.
+    }
+
+    try {
+      const formData = new FormData();
+      formData.set('email', emailValue);
+      formData.set('next', page.url.searchParams.get('next') ?? '/');
+      formData.set('cf-turnstile-response', token);
+
+      const response = await fetch('?/login', {
+        method: 'POST',
+        body: formData
+      });
+
+      const result = deserialize(await response.text());
+      // Reset submitting BEFORE applyAction — applyAction can re-render/replace
+      // the component, so any state update after it may be lost.
       submitting = false;
-      tokenReady = false;
-      turnstileToken = '';
+      applyAction(result);
+    } catch (err) {
+      console.error('Login fetch error:', err);
+      submitting = false;
     }
   }
 </script>
@@ -150,30 +158,7 @@
       </p>
     </div>
   {:else}
-    <form
-      bind:this={formEl}
-      method="POST"
-      onsubmit={handleSubmit}
-      use:enhance={() => {
-        // enhance only runs on the second (programmatic) submit, when tokenReady = true.
-        return async ({ update }) => {
-          submitting = false;
-          tokenReady = false;
-          turnstileToken = '';
-          await update();
-        };
-      }}
-    >
-      <!-- Carry the ?next= redirect through the form submission. -->
-      <input type="hidden" name="next" value={page.url.searchParams.get('next') ?? '/'} />
-
-      <!--
-        Hidden input that carries the Turnstile token to the server action.
-        The name matches what Cloudflare's widget normally injects automatically,
-        so the server-side verifyTurnstileToken() call works unchanged.
-      -->
-      <input type="hidden" name="cf-turnstile-response" value={turnstileToken} />
-
+    <form onsubmit={handleSubmit} novalidate>
       <div
         class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-indigo-950/60"
       >
@@ -189,7 +174,7 @@
           type="email"
           placeholder="your@email.com"
           autocomplete="email"
-          bind:value={email}
+          bind:value={emailValue}
           disabled={submitting}
           class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder-gray-500"
         />
@@ -200,7 +185,7 @@
         <!--
           Invisible Turnstile widget.
           data-execution="execute" prevents auto-challenge on render;
-          we call turnstile.execute() manually after the user clicks submit.
+          we call turnstile.execute() manually in handleSubmit.
         -->
         <div
           bind:this={turnstileContainer}
