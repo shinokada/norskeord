@@ -75,6 +75,17 @@ export const GET: RequestHandler = async ({ url }) => {
 
   const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
+  if (action === 'welcome') {
+    // Welcome email is one-time only; unsubscribing just confirms no further onboarding emails.
+    // The email_log row already exists, so nothing to write — just acknowledge.
+    return html(
+      'Unsubscribed',
+      'Got it',
+      'You will not receive any further onboarding emails from Norskeord. ' +
+        'You can still use the app at <a href="/">norskeord.no</a> any time.'
+    );
+  }
+
   if (action === 'reminder') {
     // Daily email reminder — clear the toggle in profiles
     const { error } = await supabase

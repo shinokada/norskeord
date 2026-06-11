@@ -9,6 +9,7 @@
   import { page } from '$app/state';
   import Nav from './components/Nav.svelte';
   import Footer from './components/Footer.svelte';
+  import InAppBrowserBanner from './components/InAppBrowserBanner.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
 
   let { children, data } = $props();
@@ -95,6 +96,8 @@
 
   <Footer />
 {/key}
+
+<InAppBrowserBanner />
 
 <div style="display:none">
   {#each locales as locale (locale)}
