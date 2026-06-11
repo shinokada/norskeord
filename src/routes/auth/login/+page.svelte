@@ -8,7 +8,6 @@
   let { form }: { form: ActionData } = $props();
 
   // Pre-populate the email field if it was returned after a failed submission.
-  // Use $derived so it stays in sync when the server action returns new form data.
   let email = $derived((form && 'email' in form ? form.email : '') ?? '');
 
   // Map server-side error keys to translated messages.
@@ -41,27 +40,90 @@
 
   let submitting = $state(false);
 
-  // Invisible Turnstile: we need to call .execute() after user clicks submit,
-  // then wait for the token before the form actually submits.
-  // We use SvelteKit's `enhance` cancel to defer submission until token is ready.
-  let resolveSubmit: (() => void) | null = null;
+  // Reference to the Turnstile widget container element.
+  let turnstileContainer: HTMLDivElement | null = $state(null);
 
-  // Called by Turnstile when the token is ready (invisible mode).
-  function onTurnstileSuccess() {
-    resolveSubmit?.();
-    resolveSubmit = null;
+  // Pending resolve from getTurnstileToken().
+  let pendingResolve: ((token: string) => void) | null = null;
+
+  // Called by Turnstile when the invisible challenge produces a token.
+  function onTurnstileSuccess(token: string) {
+    pendingResolve?.(token);
+    pendingResolve = null;
   }
 
-  // Expose callback globally for Turnstile's data-callback attribute.
+  // Called by Turnstile when a token expires before use.
+  function onTurnstileExpired() {
+    pendingResolve = null;
+    if (typeof window !== 'undefined' && (window as any).turnstile && turnstileContainer) {
+      (window as any).turnstile.reset(turnstileContainer);
+    }
+  }
+
   if (typeof window !== 'undefined') {
-    (window as unknown as Record<string, unknown>).onTurnstileSuccess = onTurnstileSuccess;
+    (window as any).onTurnstileSuccess = onTurnstileSuccess;
+    (window as any).onTurnstileExpired = onTurnstileExpired;
+  }
+
+  /**
+   * Triggers the invisible Turnstile challenge and returns a Promise that
+   * resolves with the token string once Cloudflare completes the check.
+   */
+  function getTurnstileToken(): Promise<string> {
+    return new Promise((resolve, reject) => {
+      const ts = (window as any).turnstile;
+      if (!ts || !turnstileContainer) {
+        reject(new Error('Turnstile not ready'));
+        return;
+      }
+      ts.reset(turnstileContainer);
+      pendingResolve = resolve;
+      ts.execute(turnstileContainer);
+      setTimeout(() => {
+        if (pendingResolve === resolve) {
+          pendingResolve = null;
+          reject(new Error('Turnstile timeout'));
+        }
+      }, 15_000);
+    });
+  }
+
+  // Reference to the <form> element so we can submit it programmatically
+  // after the Turnstile token has been injected.
+  let formEl: HTMLFormElement | null = $state(null);
+
+  // Hidden input that carries the Turnstile token.
+  let turnstileToken = $state('');
+
+  // Whether the current submit cycle already has a valid token.
+  // Used to distinguish the "first click" (needs challenge) from the
+  // "programmatic re-submit after token is ready" path.
+  let tokenReady = $state(false);
+
+  async function handleSubmit(event: SubmitEvent) {
+    if (tokenReady) {
+      // Token is already set — let the form submit normally via enhance.
+      return;
+    }
+
+    // First click: prevent the default submit, run the challenge, then re-submit.
+    event.preventDefault();
+    submitting = true;
+
+    try {
+      const token = await getTurnstileToken();
+      turnstileToken = token;
+      tokenReady = true;
+      // Re-submit so that enhance picks it up with the token in place.
+      formEl?.requestSubmit();
+    } catch {
+      submitting = false;
+      tokenReady = false;
+      turnstileToken = '';
+    }
   }
 </script>
 
-<!--
-  Load the Turnstile script once.
-  The widget renders itself into the div with data-sitekey below.
--->
 <svelte:head>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </svelte:head>
@@ -89,17 +151,28 @@
     </div>
   {:else}
     <form
+      bind:this={formEl}
       method="POST"
+      onsubmit={handleSubmit}
       use:enhance={() => {
-        submitting = true;
+        // enhance only runs on the second (programmatic) submit, when tokenReady = true.
         return async ({ update }) => {
           submitting = false;
+          tokenReady = false;
+          turnstileToken = '';
           await update();
         };
       }}
     >
       <!-- Carry the ?next= redirect through the form submission. -->
       <input type="hidden" name="next" value={page.url.searchParams.get('next') ?? '/'} />
+
+      <!--
+        Hidden input that carries the Turnstile token to the server action.
+        The name matches what Cloudflare's widget normally injects automatically,
+        so the server-side verifyTurnstileToken() call works unchanged.
+      -->
+      <input type="hidden" name="cf-turnstile-response" value={turnstileToken} />
 
       <div
         class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-indigo-950/60"
@@ -125,16 +198,19 @@
         {/if}
 
         <!--
-          Turnstile widget — renders invisibly (or as a compact badge).
-          The widget injects a hidden input named `cf-turnstile-response` which
-          is submitted automatically with the form.
+          Invisible Turnstile widget.
+          data-execution="execute" prevents auto-challenge on render;
+          we call turnstile.execute() manually after the user clicks submit.
         -->
         <div
+          bind:this={turnstileContainer}
           class="cf-turnstile mt-4"
           data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
           data-theme="auto"
           data-size="invisible"
+          data-execution="execute"
           data-callback="onTurnstileSuccess"
+          data-expired-callback="onTurnstileExpired"
         ></div>
 
         <button
