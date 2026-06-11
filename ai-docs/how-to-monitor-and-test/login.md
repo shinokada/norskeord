@@ -2,7 +2,19 @@
 
 **1. Turnstile invisible mode**
 
-Just visit `/auth/login`. The Cloudflare widget should be invisible — no dark badge or block rendered inside the form. Only a small Cloudflare branding badge may appear in the corner of the page. Dark mode too since you have `data-theme="auto"`. Click "Send sign-in link" and verify the button shows a spinner while verifying.
+Visit `/auth/login`. The widget is invisible — no badge or block inside the form. Only a small Cloudflare branding mark may appear in a page corner.
+
+The challenge now runs in **two phases**:
+
+1. You click "Send sign-in link" → the button shows a spinner while `turnstile.execute()` runs the invisible challenge in the background.
+2. Once Cloudflare returns a token (usually <1 s on desktop, up to a few seconds on Android), the form re-submits automatically with the token and the magic-link email is sent.
+
+Things to verify:
+
+- Spinner appears immediately on click and stays until the server responds.
+- On Android Chrome, the whole flow still completes (this was the regression fixed — previously the token was never obtained and the bot-check error always fired).
+- Dark mode: widget respects `data-theme="auto"` — check in both light and dark OS settings.
+- If the Turnstile challenge times out after 15 s (e.g. network offline), the spinner stops and nothing is submitted — the user can try again.
 
 **2. Last-path redirect — unauthenticated**
 

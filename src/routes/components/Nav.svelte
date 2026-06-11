@@ -28,6 +28,7 @@
   async function logout() {
     const userId = user?.id;
     if (userId) clearUserProgress();
+    avatarDropdownOpen = false;
     await fetch('/auth/logout', { method: 'POST' });
     window.location.href = '/';
   }
@@ -64,6 +65,18 @@
 
   // ── Search modal ───────────────────────────────────────────────────────────
   let searchOpen = $state(false);
+
+  // ── Dropdown open state ────────────────────────────────────────────────────
+  let avatarDropdownOpen = $state(false);
+  let moreDropdownOpen = $state(false);
+
+  function closeAvatarDropdown() {
+    avatarDropdownOpen = false;
+  }
+
+  function closeMoreDropdown() {
+    moreDropdownOpen = false;
+  }
 </script>
 
 <Search
@@ -159,7 +172,12 @@
     {/if}
     {#if user}
       <Avatar class="acs ml-2.5" size="xs" />
-      <Dropdown simple class="w-56 dark:border-gray-700 dark:bg-blue-950" triggeredBy=".acs">
+      <Dropdown
+        bind:isOpen={avatarDropdownOpen}
+        simple
+        class="w-56 dark:border-gray-700 dark:bg-blue-950"
+        triggeredBy=".acs"
+      >
         <DropdownHeader>
           {#if displayName}
             <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">
@@ -174,14 +192,18 @@
         </DropdownHeader>
         <DropdownDivider />
         <DropdownGroup>
-          <DropdownItem class="dark:hover:bg-blue-900" href="/my-profile"
-            >{m.nav_my_profile()}</DropdownItem
+          <DropdownItem
+            class="dark:hover:bg-blue-900"
+            href="/my-profile"
+            onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
           >
-          <DropdownItem class="dark:hover:bg-blue-900" href="/stats"
+          <DropdownItem class="dark:hover:bg-blue-900" href="/stats" onclick={closeAvatarDropdown}
             >{m.nav_my_progress()}</DropdownItem
           >
           {#if isPlus}
-            <DropdownItem class="dark:hover:bg-blue-900" href="/plus">{m.nav_plus()}</DropdownItem>
+            <DropdownItem class="dark:hover:bg-blue-900" href="/plus" onclick={closeAvatarDropdown}
+              >{m.nav_plus()}</DropdownItem
+            >
           {/if}
           <DropdownItem class="dark:hover:bg-blue-900" onclick={logout}
             >{m.nav_log_out()}</DropdownItem
@@ -258,12 +280,20 @@
         class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
       />
     </NavLi>
-    <Dropdown simple class="w-44 dark:border-gray-700 dark:bg-blue-950">
-      <DropdownItem class="dark:hover:bg-blue-900" href="/guide">{m.nav_guide()}</DropdownItem>
-      <DropdownItem class="dark:hover:bg-blue-900" href="/resources"
+    <Dropdown
+      bind:isOpen={moreDropdownOpen}
+      simple
+      class="w-44 dark:border-gray-700 dark:bg-blue-950"
+    >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/guide" onclick={closeMoreDropdown}
+        >{m.nav_guide()}</DropdownItem
+      >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/resources" onclick={closeMoreDropdown}
         >{m.nav_resources()}</DropdownItem
       >
-      <DropdownItem class="dark:hover:bg-blue-900" href="/blog">Blog</DropdownItem>
+      <DropdownItem class="dark:hover:bg-blue-900" href="/blog" onclick={closeMoreDropdown}
+        >Blog</DropdownItem
+      >
     </Dropdown>
   </NavUl>
 </Navbar>

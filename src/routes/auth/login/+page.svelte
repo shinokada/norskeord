@@ -1,17 +1,14 @@
 <script lang="ts">
-  import { enhance } from '$app/forms';
   import { page } from '$app/state';
+  import { applyAction, deserialize } from '$app/forms';
   import { PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
   import * as m from '$lib/paraglide/messages.js';
   import type { ActionData } from './$types';
 
   let { form }: { form: ActionData } = $props();
 
-  // Pre-populate the email field if it was returned after a failed submission.
-  // Use $derived so it stays in sync when the server action returns new form data.
   let email = $derived((form && 'email' in form ? form.email : '') ?? '');
 
-  // Map server-side error keys to translated messages.
   function errorMessage(key: string | undefined): string {
     if (!key) return '';
     switch (key) {
@@ -40,28 +37,101 @@
   );
 
   let submitting = $state(false);
+  let emailValue = $state('');
 
-  // Invisible Turnstile: we need to call .execute() after user clicks submit,
-  // then wait for the token before the form actually submits.
-  // We use SvelteKit's `enhance` cancel to defer submission until token is ready.
-  let resolveSubmit: (() => void) | null = null;
-
-  // Called by Turnstile when the token is ready (invisible mode).
-  function onTurnstileSuccess() {
-    resolveSubmit?.();
-    resolveSubmit = null;
+  interface TurnstileWindow {
+    turnstile?: {
+      reset: (container: HTMLElement) => void;
+      execute: (container: HTMLElement) => void;
+    };
+    onTurnstileSuccess?: (token: string) => void;
+    onTurnstileExpired?: () => void;
   }
 
-  // Expose callback globally for Turnstile's data-callback attribute.
+  function turnstileWindow(): TurnstileWindow {
+    return window as TurnstileWindow;
+  }
+
+  // Turnstile widget container ref.
+  let turnstileContainer: HTMLDivElement | null = $state(null);
+  let pendingResolve: ((token: string) => void) | null = null;
+
+  function onTurnstileSuccess(token: string) {
+    pendingResolve?.(token);
+    pendingResolve = null;
+  }
+
+  function onTurnstileExpired() {
+    pendingResolve = null;
+    if (typeof window !== 'undefined' && turnstileWindow().turnstile && turnstileContainer) {
+      turnstileWindow().turnstile!.reset(turnstileContainer);
+    }
+  }
+
   if (typeof window !== 'undefined') {
-    (window as unknown as Record<string, unknown>).onTurnstileSuccess = onTurnstileSuccess;
+    turnstileWindow().onTurnstileSuccess = onTurnstileSuccess;
+    turnstileWindow().onTurnstileExpired = onTurnstileExpired;
+  }
+
+  function getTurnstileToken(): Promise<string> {
+    // Skip in dev when no site key is configured — server also skips verification.
+    if (!PUBLIC_TURNSTILE_SITE_KEY) {
+      return Promise.resolve('');
+    }
+    return new Promise((resolve, reject) => {
+      const ts = turnstileWindow().turnstile;
+      if (!ts || !turnstileContainer) {
+        reject(new Error('Turnstile not ready'));
+        return;
+      }
+      ts.reset(turnstileContainer);
+      pendingResolve = resolve;
+      ts.execute(turnstileContainer);
+      setTimeout(() => {
+        if (pendingResolve === resolve) {
+          pendingResolve = null;
+          reject(new Error('Turnstile timeout'));
+        }
+      }, 15_000);
+    });
+  }
+
+  async function handleSubmit(event: SubmitEvent) {
+    event.preventDefault();
+    if (submitting) return;
+    submitting = true;
+
+    let token = '';
+    try {
+      token = await getTurnstileToken();
+    } catch (err) {
+      console.warn('Turnstile token error:', err);
+      // Continue with empty token — server will reject if truly needed.
+    }
+
+    try {
+      const formData = new FormData();
+      formData.set('email', emailValue);
+      formData.set('next', page.url.searchParams.get('next') ?? '/');
+      formData.set('cf-turnstile-response', token);
+
+      const response = await fetch('?/login', {
+        method: 'POST',
+        body: formData
+      });
+
+      const result = deserialize(await response.text());
+      // Reset submitting BEFORE applyAction — applyAction can re-render/replace
+      // the component, so any state update after it may be lost.
+      submitting = false;
+      applyAction(result);
+    } catch (err) {
+      console.error('Login fetch error:', err);
+      submitting = false;
+    }
   }
 </script>
 
-<!--
-  Load the Turnstile script once.
-  The widget renders itself into the div with data-sitekey below.
--->
 <svelte:head>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </svelte:head>
@@ -88,19 +158,7 @@
       </p>
     </div>
   {:else}
-    <form
-      method="POST"
-      use:enhance={() => {
-        submitting = true;
-        return async ({ update }) => {
-          submitting = false;
-          await update();
-        };
-      }}
-    >
-      <!-- Carry the ?next= redirect through the form submission. -->
-      <input type="hidden" name="next" value={page.url.searchParams.get('next') ?? '/'} />
-
+    <form onsubmit={handleSubmit} novalidate>
       <div
         class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-indigo-950/60"
       >
@@ -116,7 +174,7 @@
           type="email"
           placeholder="your@email.com"
           autocomplete="email"
-          bind:value={email}
+          bind:value={emailValue}
           disabled={submitting}
           class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder-gray-500"
         />
@@ -125,16 +183,19 @@
         {/if}
 
         <!--
-          Turnstile widget — renders invisibly (or as a compact badge).
-          The widget injects a hidden input named `cf-turnstile-response` which
-          is submitted automatically with the form.
+          Invisible Turnstile widget.
+          data-execution="execute" prevents auto-challenge on render;
+          we call turnstile.execute() manually in handleSubmit.
         -->
         <div
+          bind:this={turnstileContainer}
           class="cf-turnstile mt-4"
           data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
           data-theme="auto"
           data-size="invisible"
+          data-execution="execute"
           data-callback="onTurnstileSuccess"
+          data-expired-callback="onTurnstileExpired"
         ></div>
 
         <button
