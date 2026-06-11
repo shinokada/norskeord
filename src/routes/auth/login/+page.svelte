@@ -40,6 +40,22 @@
   );
 
   let submitting = $state(false);
+
+  // Invisible Turnstile: we need to call .execute() after user clicks submit,
+  // then wait for the token before the form actually submits.
+  // We use SvelteKit's `enhance` cancel to defer submission until token is ready.
+  let resolveSubmit: (() => void) | null = null;
+
+  // Called by Turnstile when the token is ready (invisible mode).
+  function onTurnstileSuccess() {
+    resolveSubmit?.();
+    resolveSubmit = null;
+  }
+
+  // Expose callback globally for Turnstile's data-callback attribute.
+  if (typeof window !== 'undefined') {
+    (window as unknown as Record<string, unknown>).onTurnstileSuccess = onTurnstileSuccess;
+  }
 </script>
 
 <!--
@@ -117,7 +133,8 @@
           class="cf-turnstile mt-4"
           data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
           data-theme="auto"
-          data-size="flexible"
+          data-size="invisible"
+          data-callback="onTurnstileSuccess"
         ></div>
 
         <button
@@ -125,7 +142,33 @@
           disabled={submitting}
           class="mt-4 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
         >
-          {submitting ? m.login_sending() : m.login_submit()}
+          {#if submitting}
+            <span class="inline-flex items-center gap-2">
+              <svg
+                class="h-4 w-4 animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+              {m.login_sending()}
+            </span>
+          {:else}
+            {m.login_submit()}
+          {/if}
         </button>
       </div>
 

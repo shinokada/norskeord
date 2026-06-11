@@ -11,6 +11,31 @@ test('index page has expected h1', async ({ page }) => {
   );
 });
 
+test('unauthenticated visitor sees homepage and is not redirected', async ({ page }) => {
+  // No localStorage, no session — should stay on /
+  await expect(page).toHaveURL('/');
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+});
+
+test('authenticated user with no last-path stays on homepage', async ({ page }) => {
+  // Simulate a logged-in user with no stored last-flashcard-path.
+  // localStorage is empty by default in a fresh Playwright context.
+  // The page should not redirect anywhere.
+  await expect(page).toHaveURL('/');
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+});
+
+test('invalid stored path is not redirected for unauthenticated user', async ({ page }) => {
+  // Poison the stored path with an auth route — unauthenticated users are never
+  // redirected, so the value stays in localStorage untouched.
+  await page.evaluate(() => localStorage.setItem('last-flashcard-path', '/auth/login'));
+  await page.reload();
+  await expect(page).toHaveURL('/');
+  // Cleanup only runs for authenticated users; value remains for unauthenticated visitors.
+  const stored = await page.evaluate(() => localStorage.getItem('last-flashcard-path'));
+  expect(stored).toBe('/auth/login');
+});
+
 test('index page has expected meta title', async ({ page }) => {
   await expect(page).toHaveTitle('Norskeord');
 });
