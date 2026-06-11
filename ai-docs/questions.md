@@ -8,7 +8,8 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- how to find out that auth is working properly on supabase? to check logged-in users progress or any log?
+- when I click login in mobile the dropdown doesn't close. https://flowbite-svelte.com/docs/components/dropdown#programmatic-open/close or https://flowbite-svelte.com/docs/components/dropdown#events may help.
+- 
 - Not hiding cloudflare.com/turnstile since it doesn't show visual info
 - On Android when I click a login line on Gmail, Gmail opens a site but I don't think it is a browser since it has a left arrow at the top to go back to Gmail.
 - One of my friend clicks
