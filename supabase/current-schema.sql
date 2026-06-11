@@ -127,6 +127,14 @@ CREATE TABLE public.grammar_progress (
   CONSTRAINT grammar_progress_pkey PRIMARY KEY (id),
   CONSTRAINT grammar_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
+CREATE TABLE public.email_log (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  email_type text NOT NULL,
+  sent_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT email_log_pkey PRIMARY KEY (id),
+  CONSTRAINT email_log_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
 
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
 -- Manually maintained. See ./current-functions.sql for Functions

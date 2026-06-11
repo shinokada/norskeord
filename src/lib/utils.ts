@@ -1,4 +1,6 @@
-export const validFlashcardPathPattern = /^(\/|\/about|\/[a-z]\d\/[^/]+)$/;
+// Paths worth restoring on next visit — excludes auth, api, admin, and static routes.
+export const validFlashcardPathPattern =
+  /^\/(?:learn|grammar|norskproven|quiz|blog|resources|guide|[a-z]\d(?:\/[^/]+)?|c(?:\/[^/]+)?)(?:\/.*)?$|^\/$/;
 
 export function removeHyphensAndCapitalize(str: string) {
   if (!str) return str;
