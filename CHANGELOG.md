@@ -1,5 +1,12 @@
 # norske-flashcard
 
+## 2.22.2
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Fixed Cloudflare Turnstile verification request handling to ensure consistent and reliable bot protection validation.
+
 ## 2.22.1
 
 ### Patch Changes
