@@ -39,81 +39,71 @@
   let submitting = $state(false);
   let emailValue = $state('');
 
+  // Token is stored here when Turnstile calls back after completing the challenge.
+  // In managed mode Turnstile handles rendering the widget and any interactive
+  // challenge on its own — we just read the token on submit.
+  let turnstileToken = $state('');
+
   interface TurnstileWindow {
     turnstile?: {
-      reset: (container: HTMLElement) => void;
-      execute: (container: HTMLElement) => void;
+      reset: (widgetId: string) => void;
     };
     onTurnstileSuccess?: (token: string) => void;
     onTurnstileExpired?: () => void;
+    onTurnstileError?: () => void;
   }
 
   function turnstileWindow(): TurnstileWindow {
     return window as TurnstileWindow;
   }
 
-  // Turnstile widget container ref.
+  let widgetId = $state<string | undefined>(undefined);
   let turnstileContainer: HTMLDivElement | null = $state(null);
-  let pendingResolve: ((token: string) => void) | null = null;
 
   function onTurnstileSuccess(token: string) {
-    pendingResolve?.(token);
-    pendingResolve = null;
+    turnstileToken = token;
   }
 
   function onTurnstileExpired() {
-    pendingResolve = null;
-    if (typeof window !== 'undefined' && turnstileWindow().turnstile && turnstileContainer) {
-      turnstileWindow().turnstile!.reset(turnstileContainer);
-    }
+    turnstileToken = '';
+  }
+
+  function onTurnstileError() {
+    turnstileToken = '';
   }
 
   if (typeof window !== 'undefined') {
     turnstileWindow().onTurnstileSuccess = onTurnstileSuccess;
     turnstileWindow().onTurnstileExpired = onTurnstileExpired;
+    turnstileWindow().onTurnstileError = onTurnstileError;
   }
 
-  function getTurnstileToken(): Promise<string> {
-    // Skip in dev when no site key is configured — server also skips verification.
-    if (!PUBLIC_TURNSTILE_SITE_KEY) {
-      return Promise.resolve('');
+  function resetTurnstile() {
+    const ts = turnstileWindow().turnstile;
+    if (ts && widgetId !== undefined) {
+      ts.reset(widgetId);
     }
-    return new Promise((resolve, reject) => {
-      const ts = turnstileWindow().turnstile;
-      if (!ts || !turnstileContainer) {
-        reject(new Error('Turnstile not ready'));
-        return;
-      }
-      ts.reset(turnstileContainer);
-      pendingResolve = resolve;
-      ts.execute(turnstileContainer);
-      setTimeout(() => {
-        if (pendingResolve === resolve) {
-          pendingResolve = null;
-          reject(new Error('Turnstile timeout'));
-        }
-      }, 15_000);
-    });
+    turnstileToken = '';
   }
 
   async function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
     if (submitting) return;
-    submitting = true;
 
-    let token = '';
-    try {
-      token = await getTurnstileToken();
-    } catch (err) {
-      console.warn('Turnstile token error:', err);
-      // Continue with empty token — server will reject if truly needed.
+    // If Turnstile is configured but hasn't produced a token yet, the widget
+    // may still be loading or the user hasn't completed an interactive challenge.
+    if (PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken) {
+      // Surface a clear message rather than submitting with an empty token.
+      return;
     }
+
+    submitting = true;
 
     try {
       const formData = new FormData();
       formData.set('email', emailValue);
       formData.set('next', page.url.searchParams.get('next') ?? '/');
-      formData.set('cf-turnstile-response', token);
+      formData.set('cf-turnstile-response', turnstileToken);
 
       const response = await fetch('?/login', {
         method: 'POST',
@@ -124,6 +114,11 @@
       // Reset submitting BEFORE applyAction — applyAction can re-render/replace
       // the component, so any state update after it may be lost.
       submitting = false;
+      // If the server rejected the bot check, reset the widget so the user can
+      // try again with a fresh token.
+      if (result.type === 'failure' && (result.data as { error?: string })?.error === 'login_error_bot_check') {
+        resetTurnstile();
+      }
       applyAction(result);
     } catch (err) {
       console.error('Login fetch error:', err);
@@ -183,19 +178,20 @@
         {/if}
 
         <!--
-          Invisible Turnstile widget.
-          data-execution="execute" prevents auto-challenge on render;
-          we call turnstile.execute() manually in handleSubmit.
+          Managed Turnstile widget (replaces invisible/execute mode).
+          In managed mode Cloudflare auto-completes on trusted browsers (desktop,
+          recognised mobile) and shows an interactive checkbox only when it needs
+          more signal — solving the hang on Android/iPad that invisible mode caused.
+          data-theme="auto" follows the page's light/dark preference.
         -->
         <div
           bind:this={turnstileContainer}
           class="cf-turnstile mt-4"
           data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
           data-theme="auto"
-          data-size="invisible"
-          data-execution="execute"
           data-callback="onTurnstileSuccess"
           data-expired-callback="onTurnstileExpired"
+          data-error-callback="onTurnstileError"
         ></div>
 
         <button
