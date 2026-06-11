@@ -192,8 +192,10 @@
         </DropdownHeader>
         <DropdownDivider />
         <DropdownGroup>
-          <DropdownItem class="dark:hover:bg-blue-900" href="/my-profile" onclick={closeAvatarDropdown}
-            >{m.nav_my_profile()}</DropdownItem
+          <DropdownItem
+            class="dark:hover:bg-blue-900"
+            href="/my-profile"
+            onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
           >
           <DropdownItem class="dark:hover:bg-blue-900" href="/stats" onclick={closeAvatarDropdown}
             >{m.nav_my_progress()}</DropdownItem
@@ -278,7 +280,11 @@
         class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
       />
     </NavLi>
-    <Dropdown bind:isOpen={moreDropdownOpen} simple class="w-44 dark:border-gray-700 dark:bg-blue-950">
+    <Dropdown
+      bind:isOpen={moreDropdownOpen}
+      simple
+      class="w-44 dark:border-gray-700 dark:bg-blue-950"
+    >
       <DropdownItem class="dark:hover:bg-blue-900" href="/guide" onclick={closeMoreDropdown}
         >{m.nav_guide()}</DropdownItem
       >
