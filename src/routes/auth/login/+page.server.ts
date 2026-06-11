@@ -4,7 +4,7 @@ import { verifyTurnstileToken } from '$lib/server/turnstile';
 import type { Actions } from './$types';
 
 export const actions: Actions = {
-  default: async ({ request, cookies, getClientAddress }) => {
+  login: async ({ request, cookies, getClientAddress }) => {
     const data = await request.formData();
     const email = (data.get('email') as string | null)?.trim() ?? '';
     const turnstileToken = (data.get('cf-turnstile-response') as string | null) ?? '';
