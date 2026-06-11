@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.22.1
+
+### Patch Changes
+
+- - **Documentation**
+    - New guide for verifying Supabase authentication through multiple methods
+    - Updated login monitoring guide with clearer Turnstile behavior and verification steps
+  - **Improvements**
+    - Enhanced login flow with improved Turnstile token management and timeout handling
+    - Navigation dropdowns automatically close when navigating or logging out
+
 ## 2.22.0
 
 ### Minor Changes
