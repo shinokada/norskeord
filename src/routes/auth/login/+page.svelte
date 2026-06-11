@@ -93,7 +93,6 @@
     // If Turnstile is configured but hasn't produced a token yet, the widget
     // may still be loading or the user hasn't completed an interactive challenge.
     if (PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken) {
-      // Surface a clear message rather than submitting with an empty token.
       return;
     }
 
@@ -178,21 +177,25 @@
         {/if}
 
         <!--
-          Managed Turnstile widget (replaces invisible/execute mode).
-          In managed mode Cloudflare auto-completes on trusted browsers (desktop,
-          recognised mobile) and shows an interactive checkbox only when it needs
-          more signal — solving the hang on Android/iPad that invisible mode caused.
-          data-theme="auto" follows the page's light/dark preference.
+          Turnstile widget wrapper.
+          The iframe Cloudflare injects is always exactly 300×65 px and cannot be
+          resized. What we CAN control is the outer wrapper:
+            • flex + justify-center  → centres the 300 px widget in the card
+            • overflow-hidden        → clips the red "For testing only" dev banner
+                                       (remove this once you switch to a real key)
+            • rounded-md             → softens the widget corners slightly
         -->
-        <div
-          bind:this={turnstileContainer}
-          class="cf-turnstile mt-4"
-          data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
-          data-theme="auto"
-          data-callback="onTurnstileSuccess"
-          data-expired-callback="onTurnstileExpired"
-          data-error-callback="onTurnstileError"
-        ></div>
+        <div class="mt-4 flex justify-center overflow-hidden rounded-md">
+          <div
+            bind:this={turnstileContainer}
+            class="cf-turnstile"
+            data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
+            data-theme="auto"
+            data-callback="onTurnstileSuccess"
+            data-expired-callback="onTurnstileExpired"
+            data-error-callback="onTurnstileError"
+          ></div>
+        </div>
 
         <button
           type="submit"
