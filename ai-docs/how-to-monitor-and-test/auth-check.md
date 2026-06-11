@@ -10,6 +10,7 @@ Real-time auth event logs — sign-ins, sign-ups, token refreshes, failures. Ver
 
 **3. Table Editor or SQL Editor → your data tables**
 If you're storing user progress in a table (e.g. `user_progress`, `flashcard_progress`, or similar), you can query it directly:
+
 ```sql
 select * from user_progress
 where user_id = '<paste-user-id-from-auth-users>'
@@ -18,6 +19,7 @@ order by updated_at desc;
 
 **4. SQL Editor → `auth.users`**
 You can query the auth schema directly to see all users and metadata:
+
 ```sql
 select id, email, last_sign_in_at, created_at, raw_user_meta_data
 from auth.users
@@ -30,6 +32,7 @@ Under **Logs → API**, you can filter by path (e.g. `/auth/v1/token`) to see ac
 ---
 
 **Quick checklist for "is auth working?"**
+
 - User appears in **Auth → Users** with a confirmed email ✓
 - `last_sign_in_at` updates when they log in ✓
 - Your RLS policies allow them to read/write their own rows ✓
