@@ -110,7 +110,7 @@ To prevent double-publish, disable the Publish button for 90 seconds after a suc
 
 ## Branch strategy
 
-### Option A — Commit directly to `main` (recommended for your setup)
+### Option A — Commit directly to `main` (recommended for your setup) I choose this one
 
 ```
 editor publishes

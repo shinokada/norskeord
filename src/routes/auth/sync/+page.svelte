@@ -8,7 +8,10 @@
     loadProgressMapFromSupabase,
     migrateLocalProgressToSupabase
   } from '$lib/progress';
+  import { validFlashcardPathPattern } from '$lib/utils';
 
+  // `next` from the magic-link callback — always '/' since we don't inject
+  // the last path into the login flow. We determine destination ourselves below.
   const next = page.url.searchParams.get('next') ?? '/';
 
   onMount(async () => {
@@ -17,9 +20,6 @@
     const profile = page.data.profile;
 
     // One-time migration: free → Plus upgrade
-    // If Supabase has no rows yet, copy whatever is in localStorage across.
-    // Otherwise, discard any stale localStorage progress — Supabase is the
-    // single source of truth for Plus users.
     if (isPlus && userId) {
       const supabaseMap = await loadProgressMapFromSupabase(userId);
       if (Object.keys(supabaseMap).length === 0) {
@@ -47,8 +47,26 @@
       }
     }
 
+    // ── Determine post-login destination ──────────────────────────────────
+    // First-time login (no stored last path) → onboarding start at A1.
+    // Returning user → restore their last visited page.
+    // Explicit `next` param (e.g. from a shared link) → honour it.
+    let destination = '/learn/a1'; // default: onboarding
+
+    if (next !== '/') {
+      // Explicit destination from the magic-link URL (e.g. email CTA link)
+      destination = next;
+    } else {
+      const last = localStorage.getItem('last-flashcard-path');
+      if (last && validFlashcardPathPattern.test(last)) {
+        // Returning user — go back to where they left off
+        destination = last;
+      }
+      // else: no stored path → first-time user → keep '/learn/a1'
+    }
+
     // eslint-disable-next-line svelte/no-navigation-without-resolve
-    await goto(next, { replaceState: true });
+    await goto(destination, { replaceState: true });
   });
 </script>
 

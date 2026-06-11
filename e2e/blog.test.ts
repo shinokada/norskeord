@@ -232,6 +232,8 @@ test.describe('Blog level filter', () => {
     const guideLink = page.locator('a[href="/blog/slik-bruker-du-norskeord"]');
     await expect(guideLink).toBeVisible();
     await levelBtn(page, 'A2').click();
+    // Wait for Svelte reactivity to remove the guides section from the DOM
+    await expect(page.locator('section').filter({ has: guideLink })).toHaveCount(0);
     await expect(guideLink).toHaveCount(0);
   });
 });
