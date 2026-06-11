@@ -6,8 +6,9 @@
 
   // Only auto-redirect on direct/fresh page loads (from === null),
   // not when the user explicitly navigates home via an in-app link.
+  // Only applies to authenticated users — anonymous visitors always see the homepage.
   afterNavigate(async ({ from, complete }) => {
-    if (from === null) {
+    if (from === null && page.data.user) {
       const last = localStorage.getItem('last-flashcard-path');
       if (last && validFlashcardPathPattern.test(last)) {
         try {
