@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.22.0
+
+### Minor Changes
+
+- - **New Features**
+    - In-app browser detection banner prompting to open in Chrome.
+    - Welcome-sequence email flow added with scheduled delivery and unsubscribe handling.
+    - Cloudflare Turnstile invisible mode integrated on login.
+    - Redirect logic refined to better respect auth state and valid saved paths.
+  - **Documentation**
+    - Added detailed login flow manual test guide.
+    - Expanded questions doc and clarified admin branch recommendation.
+  - **Tests**
+    - New homepage redirect tests; improved blog filter DOM reactivity test.
+
 ## 2.21.0
 
 ### Minor Changes
