@@ -39,19 +39,18 @@ export async function verifyTurnstileToken(token: string, remoteIp?: string): Pr
     return false;
   }
 
-  const body: Record<string, string> = {
-    secret,
-    response: token
-  };
+  // Cloudflare's siteverify endpoint requires application/x-www-form-urlencoded,
+  // NOT JSON. Sending JSON causes silent failures on mobile/non-desktop browsers.
+  const body = new URLSearchParams({ secret, response: token });
   if (remoteIp) {
-    body.remoteip = remoteIp;
+    body.set('remoteip', remoteIp);
   }
 
   try {
     const res = await fetch(TURNSTILE_VERIFY_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body)
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString()
     });
 
     if (!res.ok) {
