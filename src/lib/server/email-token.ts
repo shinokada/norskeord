@@ -12,7 +12,7 @@
 import { createHmac } from 'crypto';
 import { UNSUBSCRIBE_SECRET, APP_URL } from '$env/static/private';
 
-export type UnsubscribeAction = 'lesson' | 'reminder';
+export type UnsubscribeAction = 'lesson' | 'reminder' | 'welcome';
 
 export function unsubscribeUrl(
   userId: string,

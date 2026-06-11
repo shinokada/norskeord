@@ -5,6 +5,10 @@
     {
       "path": "/api/publish-scheduled",
       "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/email/welcome-sequence",
+      "schedule": "0 * * * *"
     }
   ],
   "headers": [
