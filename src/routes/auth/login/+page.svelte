@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { page } from '$app/state';
   import { applyAction, deserialize } from '$app/forms';
   import { PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
@@ -46,6 +47,7 @@
 
   interface TurnstileWindow {
     turnstile?: {
+      render: (container: HTMLElement, options: Record<string, unknown>) => string;
       reset: (widgetId: string) => void;
     };
     onTurnstileSuccess?: (token: string) => void;
@@ -86,6 +88,39 @@
     turnstileToken = '';
   }
 
+  // Explicitly render the Turnstile widget instead of relying on the script's
+  // implicit auto-render (data-sitekey scan on load). On iPad/Safari the
+  // hydration timing can mean the cf-turnstile div isn't in the DOM yet when
+  // api.js runs its initial scan, so the widget never renders and the form
+  // can never produce a token — making the submit button appear to do nothing.
+  function renderTurnstile() {
+    if (!PUBLIC_TURNSTILE_SITE_KEY || !turnstileContainer) return;
+    const ts = turnstileWindow().turnstile;
+    if (!ts || widgetId !== undefined) return;
+    widgetId = ts.render(turnstileContainer, {
+      sitekey: PUBLIC_TURNSTILE_SITE_KEY,
+      theme: 'auto',
+      callback: onTurnstileSuccess,
+      'expired-callback': onTurnstileExpired,
+      'error-callback': onTurnstileError
+    });
+  }
+
+  onMount(() => {
+    if (turnstileWindow().turnstile) {
+      renderTurnstile();
+      return;
+    }
+    // Script may still be loading; poll until turnstile is available.
+    const interval = setInterval(() => {
+      if (turnstileWindow().turnstile) {
+        renderTurnstile();
+        clearInterval(interval);
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  });
+
   async function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
     if (submitting) return;
@@ -115,7 +150,10 @@
       submitting = false;
       // If the server rejected the bot check, reset the widget so the user can
       // try again with a fresh token.
-      if (result.type === 'failure' && (result.data as { error?: string })?.error === 'login_error_bot_check') {
+      if (
+        result.type === 'failure' &&
+        (result.data as { error?: string })?.error === 'login_error_bot_check'
+      ) {
         resetTurnstile();
       }
       applyAction(result);
@@ -127,7 +165,11 @@
 </script>
 
 <svelte:head>
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+    async
+    defer
+  ></script>
 </svelte:head>
 
 <div class="mx-auto max-w-sm px-4 py-16">
@@ -186,15 +228,7 @@
             • rounded-md             → softens the widget corners slightly
         -->
         <div class="mt-4 flex justify-center rounded-md">
-          <div
-            bind:this={turnstileContainer}
-            class="cf-turnstile"
-            data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
-            data-theme="auto"
-            data-callback="onTurnstileSuccess"
-            data-expired-callback="onTurnstileExpired"
-            data-error-callback="onTurnstileError"
-          ></div>
+          <div bind:this={turnstileContainer} class="cf-turnstile"></div>
         </div>
 
         <button
