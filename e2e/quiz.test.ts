@@ -185,9 +185,16 @@ test('Try again from summary resets the session', async ({ page }) => {
   test.setTimeout(60000);
   await injectPlusPlan(page);
   await page.goto('/quiz');
+
+  // Limit the session to 3 questions to keep this test fast — we're only
+  // verifying the "Try again" reset behavior, not the full 10-question flow.
+  await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '3'));
+  await injectPlusPlan(page);
+  await page.reload();
+
   await page.getByRole('button', { name: /start quiz/i }).click();
 
-  await completeSession(page);
+  await completeSession(page, 5);
 
   await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible();
   await page.getByRole('button', { name: /try again|prøv igjen/i }).click();
