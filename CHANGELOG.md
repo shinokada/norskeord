@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.22.4
+
+### Patch Changes
+
+- - **Refactor**
+    - Improved the verification widget on the login page for more reliable loading and token capture during authentication.
+  - **Tests**
+    - Strengthened end-to-end login tests by stubbing the verification widget and adding explicit timeouts for server checks.
+    - Made quiz e2e test more deterministic by bounding quiz length and reset behavior.
+    <!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
 ## 2.22.3
 
 ### Patch Changes
