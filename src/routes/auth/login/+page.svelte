@@ -150,7 +150,10 @@
       submitting = false;
       // If the server rejected the bot check, reset the widget so the user can
       // try again with a fresh token.
-      if (result.type === 'failure' && (result.data as { error?: string })?.error === 'login_error_bot_check') {
+      if (
+        result.type === 'failure' &&
+        (result.data as { error?: string })?.error === 'login_error_bot_check'
+      ) {
         resetTurnstile();
       }
       applyAction(result);
@@ -162,7 +165,11 @@
 </script>
 
 <svelte:head>
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+    async
+    defer
+  ></script>
 </svelte:head>
 
 <div class="mx-auto max-w-sm px-4 py-16">
