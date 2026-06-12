@@ -6,6 +6,22 @@ import { expect, test } from '@playwright/test';
 
 test.describe('/auth/login page', () => {
   test.beforeEach(async ({ page }) => {
+    // Stub Cloudflare Turnstile so the widget "completes" instantly without
+    // depending on challenges.cloudflare.com being reachable in the test env.
+    // The page calls turnstile.render(container, { callback, ... }) in
+    // onMount; we immediately invoke the callback with a fake token.
+    await page.addInitScript(() => {
+      (window as unknown as { turnstile: unknown }).turnstile = {
+        render: (
+          _container: HTMLElement,
+          options: { callback?: (token: string) => void }
+        ) => {
+          options.callback?.('test-token');
+          return 'fake-widget-id';
+        },
+        reset: () => {}
+      };
+    });
     await page.goto('/auth/login');
   });
 
@@ -31,7 +47,8 @@ test.describe('/auth/login page', () => {
     // Form is now a server action — wait for the POST round-trip to complete.
     await Promise.all([
       page.waitForResponse(
-        (r) => r.url().includes('/auth/login') && r.request().method() === 'POST'
+        (r) => r.url().includes('/auth/login') && r.request().method() === 'POST',
+        { timeout: 15000 }
       ),
       page.getByRole('button', { name: /send sign-in link/i }).click()
     ]);
@@ -44,10 +61,12 @@ test.describe('/auth/login page', () => {
     // POST — we want to test the server-side validation path instead.
     await page.locator('#email').evaluate((el) => el.removeAttribute('type'));
     await page.getByRole('textbox').fill('not-an-email');
+
     // Form is now a server action — wait for the POST round-trip to complete.
     await Promise.all([
       page.waitForResponse(
-        (r) => r.url().includes('/auth/login') && r.request().method() === 'POST'
+        (r) => r.url().includes('/auth/login') && r.request().method() === 'POST',
+        { timeout: 15000 }
       ),
       page.getByRole('button', { name: /send sign-in link/i }).click()
     ]);
