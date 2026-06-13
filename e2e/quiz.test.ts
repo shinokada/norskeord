@@ -101,15 +101,22 @@ test('Plus user sees quiz start screen', async ({ page }) => {
 // ===========================================================================
 
 test('Plus user can complete a quiz session and see summary', async ({ page }) => {
-  test.setTimeout(60000);
+  test.setTimeout(30000);
   await injectPlusPlan(page);
   await page.goto('/quiz');
+
+  // Limit the session to 3 questions — we're verifying the summary screen
+  // renders correctly, not the full 10-question flow, so keep this fast.
+  await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '3'));
+  await injectPlusPlan(page);
+  await page.reload();
+
   await page.getByRole('button', { name: /start quiz/i }).click();
 
-  await completeSession(page);
+  await completeSession(page, 5);
 
   await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible();
-  await expect(page.getByText(/of \d+ correct|av \d+ riktige/i)).toBeVisible();
+  await expect(page.getByText(/of 3 correct|av 3 riktige/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /try again|prøv igjen/i })).toBeVisible();
 });
 
