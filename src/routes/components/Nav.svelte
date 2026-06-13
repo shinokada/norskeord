@@ -11,7 +11,11 @@
     SidebarGroup,
     SidebarItem,
     SidebarButton,
-    uiHelpers
+    uiHelpers,
+    Avatar,
+    DropdownHeader,
+    DropdownDivider,
+    DropdownGroup
   } from 'flowbite-svelte';
   import {
     PlusOutline,
@@ -43,10 +47,12 @@
   import Search from '$lib/components/Search.svelte';
 
   const user = $derived(page.data.user);
+  const displayName = $derived(page.data.displayName as string | null);
 
   async function logout() {
     const userId = user?.id;
     if (userId) clearUserProgress();
+    avatarDropdownOpen = false;
     await fetch('/auth/logout', { method: 'POST' });
     window.location.href = '/';
   }
@@ -85,7 +91,12 @@
   let searchOpen = $state(false);
 
   // ── Dropdown open state ────────────────────────────────────────────────────
+  let avatarDropdownOpen = $state(false);
   let moreDropdownOpen = $state(false);
+
+  function closeAvatarDropdown() {
+    avatarDropdownOpen = false;
+  }
 
   function closeMoreDropdown() {
     moreDropdownOpen = false;
@@ -136,14 +147,14 @@
       </button>
     {/if}
 
-      <button
-        type="button"
-        onclick={toggleLocale}
-        aria-label="Switch language"
-        class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-      >
-        {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
-      </button>
+    <button
+      type="button"
+      onclick={toggleLocale}
+      aria-label="Switch language"
+      class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+    >
+      {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
+    </button>
 
     {#if !user}
       <a
@@ -158,6 +169,41 @@
       >
         {m.nav_log_in()}
       </a>
+    {:else}
+      <Avatar class="acs ml-2.5 hidden md:block" size="xs" />
+      <Dropdown
+        bind:isOpen={avatarDropdownOpen}
+        simple
+        class="w-56 dark:border-gray-700 dark:bg-blue-950"
+        triggeredBy=".acs"
+      >
+        <DropdownHeader>
+          {#if displayName}
+            <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">
+              {displayName}
+            </span>
+          {/if}
+          <span
+            class="block text-xs text-gray-500 dark:text-gray-400 {displayName ? 'mt-0.5' : ''}"
+          >
+            {user.email}
+          </span>
+        </DropdownHeader>
+        <DropdownDivider />
+        <DropdownGroup>
+          <DropdownItem
+            class="dark:hover:bg-blue-900"
+            href="/my-profile"
+            onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
+          >
+          <DropdownItem class="dark:hover:bg-blue-900" href="/stats" onclick={closeAvatarDropdown}
+            >{m.nav_my_progress()}</DropdownItem
+          >
+          <DropdownItem class="dark:hover:bg-blue-900" onclick={logout}
+            >{m.nav_log_out()}</DropdownItem
+          >
+        </DropdownGroup>
+      </Dropdown>
     {/if}
     {#if user && !isPlus}
       <a
@@ -181,8 +227,6 @@
       ul: 'p-0 dark:!bg-blue-950'
     }}
   >
-    
-
     <!-- Six level links — direct links to hub pages (no mega-menu) -->
     {#each levels as level (level)}
       <NavLi href="/learn/{level.toLowerCase()}">{level}</NavLi>
@@ -285,13 +329,13 @@
         {/snippet}
       </SidebarItem>
       {#if !user}
-      <SidebarItem label="Login" href="/auth/login">
-        {#snippet icon()}
-          <UserSolid
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-          />
-        {/snippet}
-      </SidebarItem>
+        <SidebarItem label="Login" href="/auth/login">
+          {#snippet icon()}
+            <UserSolid
+              class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            />
+          {/snippet}
+        </SidebarItem>
       {/if}
       <SidebarItem label="Plus" {spanClass} href="/plus">
         {#snippet icon()}
@@ -309,12 +353,16 @@
       </SidebarItem>
       <SidebarItem label="Guide" href="/guide">
         {#snippet icon()}
-          <BookOpenOutline class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+          <BookOpenOutline
+            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+          />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Resources" href="/resources">
         {#snippet icon()}
-          <FolderArrowRightOutline class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+          <FolderArrowRightOutline
+            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+          />
         {/snippet}
       </SidebarItem>
     </SidebarGroup>

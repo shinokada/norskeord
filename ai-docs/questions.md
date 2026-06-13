@@ -7,6 +7,24 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file or write Python or mjs script so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
 
 ---
+- fix /e2e/admin.test.ts.
+- When I go through /admin/grammar and /admin/blog items, I won't know if I checked an item or not. Is it a good idea to add editedAt or checkedAt feild to Ask script to add editAt and checkedAt or similar to all the data/json file
+- Add editAt to admin/grammar and admin/blog
+- Add admin link if user email is ADMIN_EMAIL to dropdown below the following in dropdown:
+
+```
+<DropdownItem
+  class="dark:hover:bg-blue-900"
+  href="/my-profile"
+  onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
+>
+```
+
+And for small screen above the following in Sidebar:
+
+```
+<SidebarItem label="My Progress" href="/stats">
+```
 
 - change dropdown nav to sidebar component
 - when I click login in mobile the dropdown doesn't close. https://flowbite-svelte.com/docs/components/dropdown#programmatic-open/close or https://flowbite-svelte.com/docs/components/dropdown#events may help.
