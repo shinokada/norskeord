@@ -8,11 +8,9 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- fix /e2e/admin.test.ts.
-- When I go through /admin/grammar and /admin/blog items, I won't know if I checked an item or not even I didn't edit it. Is it a good idea to add editedAt or checkedAt feild to json items? What do you think? Do not modify code yet.
-  Ask script to add editAt and checkedAt or similar to all the data/json file
-- Add editAt to admin/grammar and admin/blog
-- Add admin link if user email is ADMIN_EMAIL to dropdown below the following in dropdown:
+- In /admin/grammar and /admin/blog items, the table has "Mark as reviewed" But this means open by Edit button and check, close and tick. Shouldn't this checkbox be in the edit modal? What do you think?
+  
+- UI: Add admin link if user email is ADMIN_EMAIL to dropdown below the following in dropdown:
 
 ```
 <DropdownItem
@@ -22,20 +20,8 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 >
 ```
 
-And for small screen above the following in Sidebar:
+Since edit happens in a laptop, no need for small screen/sidebar.
 
-```
-<SidebarItem label="My Progress" href="/stats">
-```
-
-- change dropdown nav to sidebar component
-- when I click login in mobile the dropdown doesn't close. https://flowbite-svelte.com/docs/components/dropdown#programmatic-open/close or https://flowbite-svelte.com/docs/components/dropdown#events may help.
--
-- Not hiding cloudflare.com/turnstile since it doesn't show visual info
-- On Android when I click a login line on Gmail, Gmail opens a site but I don't think it is a browser since it has a left arrow at the top to go back to Gmail.
-- One of my friend clicks
-- What could be causes that cloudflare.com/turnstile fails?
-- editting json file for editor
 - I think from B1 or B2 there should be only norwegian. This means using norwegian definition and no english. What do you think? Which level is good to start using only Norwegian?
 - domain names: norsknote.no, norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
 
