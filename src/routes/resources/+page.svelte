@@ -203,11 +203,6 @@
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
   <div class="mb-10">
-    <div
-      class="mb-3 inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-semibold tracking-wide text-green-700 uppercase dark:bg-green-900 dark:text-green-300"
-    >
-      100% Free
-    </div>
     <h1 class="text-4xl leading-tight font-bold dark:text-white">Norwegian Learning Resources</h1>
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
       A curated collection of free tools, courses, and communities to help you learn Norwegian —

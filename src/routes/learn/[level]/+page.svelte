@@ -326,7 +326,7 @@
     <section class="mb-12">
       <div class="mb-4 flex items-center justify-between">
         <h2 class="text-xl font-bold dark:text-white">✍️ From the blog</h2>
-        <a href="/blog" class="text-xs font-medium {colors.accent} hover:underline">
+        <a href="/blog" class="text-sm font-medium {colors.accent} hover:underline">
           {m.level_hub_all_articles()}
         </a>
       </div>
