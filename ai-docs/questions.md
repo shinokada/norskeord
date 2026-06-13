@@ -8,6 +8,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+- change dropdown nav to sidebar component
 - when I click login in mobile the dropdown doesn't close. https://flowbite-svelte.com/docs/components/dropdown#programmatic-open/close or https://flowbite-svelte.com/docs/components/dropdown#events may help.
 -
 - Not hiding cloudflare.com/turnstile since it doesn't show visual info
