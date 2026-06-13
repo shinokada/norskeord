@@ -91,7 +91,7 @@
   <Nav />
 
   <section class="border-b border-gray-300 pb-8 dark:border-gray-600">
-    <div class="mx-auto max-w-7xl px-4 text-center">{@render children()}</div>
+    <div class="mx-auto max-w-7xl text-center">{@render children()}</div>
   </section>
 
   <Footer />

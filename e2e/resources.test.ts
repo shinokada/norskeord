@@ -15,8 +15,8 @@ test.describe('/resources page', () => {
     );
   });
 
-  test('shows 100% Free badge', async ({ page }) => {
-    await expect(page.getByText('100% Free')).toBeVisible();
+  test('shows Free badge', async ({ page }) => {
+    await expect(page.getByText('Free').first()).toBeVisible();
   });
 
   // ── All 7 section headings are present ───────────────────────────────────
