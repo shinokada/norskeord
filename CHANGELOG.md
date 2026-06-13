@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.23.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added dark mode toggle in the navigation bar
+    - Introduced mobile sidebar for improved navigation on smaller screens
+  - **Bug Fixes & Improvements**
+    - Updated navigation menu structure with separate "Help" and "Free resources" options
+    - Improved responsive navigation behavior across device sizes
+
 ## 2.22.4
 
 ### Patch Changes
