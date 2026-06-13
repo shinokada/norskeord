@@ -8,6 +8,26 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+- fix /e2e/admin.test.ts.
+- When I go through /admin/grammar and /admin/blog items, I won't know if I checked an item or not even I didn't edit it. Is it a good idea to add editedAt or checkedAt feild to json items? What do you think? Do not modify code yet.
+  Ask script to add editAt and checkedAt or similar to all the data/json file
+- Add editAt to admin/grammar and admin/blog
+- Add admin link if user email is ADMIN_EMAIL to dropdown below the following in dropdown:
+
+```
+<DropdownItem
+  class="dark:hover:bg-blue-900"
+  href="/my-profile"
+  onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
+>
+```
+
+And for small screen above the following in Sidebar:
+
+```
+<SidebarItem label="My Progress" href="/stats">
+```
+
 - change dropdown nav to sidebar component
 - when I click login in mobile the dropdown doesn't close. https://flowbite-svelte.com/docs/components/dropdown#programmatic-open/close or https://flowbite-svelte.com/docs/components/dropdown#events may help.
 -
