@@ -2,13 +2,16 @@
   import { onMount } from 'svelte';
   import type { GrammarQuestion, GrammarTopic, CEFRLevel } from '$lib/types';
   import { generateId, validateQuestion, blankQuestion } from '$lib/admin/questionUtils';
+  import type { ReviewState } from '$lib/admin/reviewState';
 
   type DraftQuestion = GrammarQuestion & { _status?: 'added' | 'edited' | 'deleted' };
 
   let published = $state<GrammarQuestion[]>([]);
   let draft = $state<DraftQuestion[]>([]);
+  let reviewed = $state<ReviewState['grammar']>({});
   let loading = $state(true);
   let publishing = $state(false);
+  let savingReview = $state(false);
   let cooldown = $state(0);
   let loadError = $state<string | null>(null);
   let publishMessage = $state<string | null>(null);
@@ -17,11 +20,18 @@
   let filterCefr = $state('');
   let filterType = $state('');
   let searchQuery = $state('');
+  let showUnreviewedOnly = $state(false);
 
   let modal = $state<{ mode: 'add' | 'edit'; question: Partial<DraftQuestion> } | null>(null);
-  let tokensInput = $state(''); // raw text for tokens chip input
+  let tokensInput = $state('');
 
   const isDirty = $derived(draft.some((q) => q._status));
+  const changeCount = $derived(draft.filter((q) => q._status).length);
+
+  const reviewedCount = $derived(
+    draft.filter((q) => q._status !== 'deleted' && reviewed[q.id]).length
+  );
+  const totalReviewable = $derived(draft.filter((q) => q._status !== 'deleted').length);
 
   const TOPICS: GrammarTopic[] = [
     'ikke-placement',
@@ -50,9 +60,11 @@
 
   const filtered = $derived(
     draft.filter((q) => {
+      if (q._status === 'deleted') return false;
       if (filterTopic && q.topic !== filterTopic) return false;
       if (filterCefr && q.cefr !== filterCefr) return false;
       if (filterType && q.type !== filterType) return false;
+      if (showUnreviewedOnly && reviewed[q.id]) return false;
       if (searchQuery) {
         const haystack = `${q.id} ${q.answer} ${q.sentence ?? ''} ${q.source ?? ''}`.toLowerCase();
         if (!haystack.includes(searchQuery.toLowerCase())) return false;
@@ -61,21 +73,63 @@
     })
   );
 
+  // Also show deleted rows (at end) unless filtering to unreviewed
+  const deletedRows = $derived(
+    showUnreviewedOnly ? [] : draft.filter((q) => q._status === 'deleted')
+  );
+
   onMount(load);
 
   async function load() {
     loading = true;
     loadError = null;
     try {
-      const res = await fetch('/admin/grammar/api');
-      if (!res.ok) throw new Error(`Failed to load: ${res.status}`);
-      const data: GrammarQuestion[] = await res.json();
+      const [questionsRes, reviewRes] = await Promise.all([
+        fetch('/admin/grammar/api'),
+        fetch('/admin/review-state/api')
+      ]);
+      if (!questionsRes.ok) throw new Error(`Failed to load questions: ${questionsRes.status}`);
+      const data: GrammarQuestion[] = await questionsRes.json();
       published = data;
       draft = data.map((q) => ({ ...q }));
+
+      if (reviewRes.ok) {
+        const reviewData: ReviewState = await reviewRes.json();
+        reviewed = reviewData.grammar ?? {};
+      }
     } catch (e) {
       loadError = e instanceof Error ? e.message : String(e);
     } finally {
       loading = false;
+    }
+  }
+
+  async function toggleReviewed(q: DraftQuestion) {
+    const today = new Date().toISOString().slice(0, 10);
+    const next = { ...reviewed };
+    if (next[q.id]) {
+      delete next[q.id];
+    } else {
+      next[q.id] = { checkedAt: today };
+    }
+    reviewed = next;
+    await saveReviewState();
+  }
+
+  async function saveReviewState() {
+    savingReview = true;
+    try {
+      const res = await fetch('/admin/review-state/api');
+      const current: ReviewState = res.ok ? await res.json() : { grammar: {}, blog: {} };
+      await fetch('/admin/review-state/api', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...current, grammar: reviewed })
+      });
+    } catch {
+      // Silent fail — review state is best-effort
+    } finally {
+      savingReview = false;
     }
   }
 
@@ -95,6 +149,13 @@
   function openEdit(q: DraftQuestion) {
     modal = { mode: 'edit', question: { ...q } };
     tokensInput = '';
+    // Clear review mark when editing — the item needs a fresh look
+    if (reviewed[q.id]) {
+      const next = { ...reviewed };
+      delete next[q.id];
+      reviewed = next;
+      saveReviewState();
+    }
   }
 
   function closeModal() {
@@ -116,14 +177,12 @@
     modal.question = { ...modal.question, [field]: arr.filter((_, i) => i !== index) };
   }
 
-  /** Add a word to the words chip list from a raw string value. */
   function addWordChip(value: string) {
     if (!modal) return;
     const arr = modal.question.words ?? [];
     modal.question = { ...modal.question, words: [...arr, value] };
   }
 
-  /** Add a string to the alternates chip list from a raw string value. */
   function addAlternateChip(value: string) {
     if (!modal) return;
     const arr = modal.question.alternates ?? [];
@@ -168,7 +227,6 @@
 
   function removeQuestion(q: DraftQuestion) {
     if (q._status === 'added') {
-      // Never published — just drop it entirely
       draft = draft.filter((d) => d.id !== q.id);
       return;
     }
@@ -188,7 +246,6 @@
   async function publish() {
     if (!isDirty || publishing || cooldown > 0) return;
 
-    // Validate everything (excluding deleted) before sending
     const toSend = draft.filter((q) => q._status !== 'deleted');
     for (const q of toSend) {
       const issues = validateQuestion(q);
@@ -213,7 +270,6 @@
         throw new Error(text || `Publish failed: ${res.status}`);
       }
       publishMessage = 'Published! Changes will be live in ~60 seconds.';
-      // Reload fresh state, dropping deleted and clearing _status flags
       const clean = draft
         .filter((q) => q._status !== 'deleted')
         .map((q) => {
@@ -238,8 +294,6 @@
       if (cooldown <= 0) clearInterval(interval);
     }, 1000);
   }
-
-  const changeCount = $derived(draft.filter((q) => q._status).length);
 
   function fieldVisible(type: string | undefined, field: string): boolean {
     switch (field) {
@@ -277,6 +331,26 @@
   {:else}
     <!-- Toolbar -->
     <div class="mt-4 flex flex-wrap items-center gap-3">
+      <!-- Review progress -->
+      <span class="text-sm text-gray-500 dark:text-gray-400">
+        Reviewed
+        <span
+          class={[
+            'font-semibold',
+            reviewedCount === totalReviewable && totalReviewable > 0
+              ? 'text-green-600 dark:text-green-400'
+              : 'text-gray-700 dark:text-gray-200'
+          ].join(' ')}
+        >
+          {reviewedCount} / {totalReviewable}
+        </span>
+        {#if savingReview}
+          <span class="ml-1 text-xs text-gray-400">saving…</span>
+        {/if}
+      </span>
+
+      <div class="h-4 w-px bg-gray-200 dark:bg-gray-700"></div>
+
       {#if isDirty}
         <span class="text-sm font-medium text-amber-600 dark:text-amber-400">
           ● {changeCount} unpublished change{changeCount === 1 ? '' : 's'}
@@ -366,8 +440,13 @@
         class="rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
       />
 
+      <label class="flex items-center gap-1.5 text-sm text-gray-600 dark:text-gray-300">
+        <input type="checkbox" bind:checked={showUnreviewedOnly} class="rounded" />
+        Unreviewed only
+      </label>
+
       <span class="ml-auto self-center text-sm text-gray-500 dark:text-gray-400">
-        {filtered.length} of {draft.length}
+        {filtered.length} of {totalReviewable}
       </span>
     </div>
 
@@ -378,6 +457,7 @@
           <tr
             class="border-b border-gray-200 text-gray-500 dark:border-gray-700 dark:text-gray-400"
           >
+            <th class="py-2 pr-3 text-center" title="Reviewed">✓</th>
             <th class="py-2 pr-3">ID</th>
             <th class="py-2 pr-3">Topic</th>
             <th class="py-2 pr-3">CEFR</th>
@@ -389,21 +469,36 @@
         </thead>
         <tbody>
           {#each filtered as q (q.id)}
+            {@const isReviewed = !!reviewed[q.id]}
             <tr
-              class="border-b border-gray-100 dark:border-gray-800"
-              class:opacity-50={q._status === 'deleted'}
+              class={[
+                'border-b border-gray-100 dark:border-gray-800',
+                isReviewed ? 'bg-green-50 dark:bg-green-950/20' : ''
+              ].join(' ')}
             >
-              <td class="py-2 pr-3 font-mono text-xs" class:line-through={q._status === 'deleted'}>
+              <td class="py-2 pr-3 text-center">
+                <button
+                  onclick={() => toggleReviewed(q)}
+                  title={isReviewed
+                    ? `Reviewed ${reviewed[q.id].checkedAt} — click to unmark`
+                    : 'Mark as reviewed'}
+                  class={[
+                    'text-lg leading-none transition-opacity',
+                    isReviewed
+                      ? 'text-green-500'
+                      : 'opacity-20 hover:opacity-60 hover:text-green-400'
+                  ].join(' ')}
+                >
+                  ✓
+                </button>
+              </td>
+              <td class="py-2 pr-3 font-mono text-xs">
                 {q.id}
               </td>
-              <td class="py-2 pr-3" class:line-through={q._status === 'deleted'}>{q.topic}</td>
-              <td class="py-2 pr-3" class:line-through={q._status === 'deleted'}>{q.cefr}</td>
-              <td class="py-2 pr-3" class:line-through={q._status === 'deleted'}>{q.type}</td>
-              <td
-                class="max-w-xs truncate py-2 pr-3"
-                class:line-through={q._status === 'deleted'}
-                title={q.answer}
-              >
+              <td class="py-2 pr-3">{q.topic}</td>
+              <td class="py-2 pr-3">{q.cefr}</td>
+              <td class="py-2 pr-3">{q.type}</td>
+              <td class="max-w-xs truncate py-2 pr-3" title={q.answer}>
                 {q.answer}
               </td>
               <td class="py-2 pr-3">
@@ -417,26 +512,38 @@
                     class="rounded bg-amber-100 px-2 py-0.5 text-xs text-amber-700 dark:bg-amber-900 dark:text-amber-300"
                     >edited</span
                   >
-                {:else if q._status === 'deleted'}
-                  <span
-                    class="rounded bg-red-100 px-2 py-0.5 text-xs text-red-700 dark:bg-red-900 dark:text-red-300"
-                    >deleted</span
-                  >
                 {/if}
               </td>
               <td class="py-2 pr-3 text-right whitespace-nowrap">
-                {#if q._status === 'deleted'}
-                  <button class="text-blue-600 hover:underline" onclick={() => undelete(q)}
-                    >Undo</button
-                  >
-                {:else}
-                  <button class="mr-2 text-blue-600 hover:underline" onclick={() => openEdit(q)}
-                    >✏</button
-                  >
-                  <button class="text-red-600 hover:underline" onclick={() => removeQuestion(q)}
-                    >🗑</button
-                  >
-                {/if}
+                <button class="mr-2 text-blue-600 hover:underline" onclick={() => openEdit(q)}
+                  >✏</button
+                >
+                <button class="text-red-600 hover:underline" onclick={() => removeQuestion(q)}
+                  >🗑</button
+                >
+              </td>
+            </tr>
+          {/each}
+
+          <!-- Deleted rows at bottom -->
+          {#each deletedRows as q (q.id)}
+            <tr class="border-b border-gray-100 opacity-50 dark:border-gray-800">
+              <td class="py-2 pr-3"></td>
+              <td class="py-2 pr-3 font-mono text-xs line-through">{q.id}</td>
+              <td class="py-2 pr-3 line-through">{q.topic}</td>
+              <td class="py-2 pr-3 line-through">{q.cefr}</td>
+              <td class="py-2 pr-3 line-through">{q.type}</td>
+              <td class="max-w-xs truncate py-2 pr-3 line-through">{q.answer}</td>
+              <td class="py-2 pr-3">
+                <span
+                  class="rounded bg-red-100 px-2 py-0.5 text-xs text-red-700 dark:bg-red-900 dark:text-red-300"
+                  >deleted</span
+                >
+              </td>
+              <td class="py-2 pr-3 text-right">
+                <button class="text-blue-600 hover:underline" onclick={() => undelete(q)}
+                  >Undo</button
+                >
               </td>
             </tr>
           {/each}

@@ -8,22 +8,25 @@
     CANONICAL_TAGS,
     type CanonicalTag
   } from '$lib/admin/blogUtils';
+  import type { ReviewState } from '$lib/admin/reviewState';
 
   interface AdminPost {
-    filename: string; // slug-derived filename without .md, as currently published
+    filename: string;
     meta: PostMeta;
     body: string;
   }
 
   type DraftPost = AdminPost & {
     _status?: 'added' | 'edited' | 'deleted';
-    _originalFilename?: string; // set when editing, used to detect slug renames / deletes
+    _originalFilename?: string;
   };
 
   let published = $state<AdminPost[]>([]);
   let draft = $state<DraftPost[]>([]);
+  let reviewed = $state<ReviewState['blog']>({});
   let loading = $state(true);
   let publishing = $state(false);
+  let savingReview = $state(false);
   let cooldown = $state(0);
   let loadError = $state<string | null>(null);
   let publishMessage = $state<string | null>(null);
@@ -32,6 +35,7 @@
   let filterTag = $state('');
   let filterType = $state('');
   let searchQuery = $state('');
+  let showUnreviewedOnly = $state(false);
 
   let modal = $state<{
     mode: 'add' | 'edit';
@@ -41,15 +45,22 @@
   const isDirty = $derived(draft.some((p) => p._status));
   const changeCount = $derived(draft.filter((p) => p._status).length);
 
+  const reviewedCount = $derived(
+    draft.filter((p) => p._status !== 'deleted' && reviewed[p.filename]).length
+  );
+  const totalReviewable = $derived(draft.filter((p) => p._status !== 'deleted').length);
+
   const CEFR_OPTIONS = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES = ['word', 'guide'];
 
   const filtered = $derived(
     draft.filter((p) => {
+      if (p._status === 'deleted') return false;
       const levels = Array.isArray(p.meta.cefr) ? p.meta.cefr : [p.meta.cefr];
       if (filterCefr && !levels.includes(filterCefr)) return false;
       if (filterTag && !(p.meta.tags ?? []).includes(filterTag)) return false;
       if (filterType && (p.meta.type ?? 'word') !== filterType) return false;
+      if (showUnreviewedOnly && reviewed[p.filename]) return false;
       if (searchQuery) {
         const haystack = `${p.meta.title} ${p.meta.slug} ${p.meta.description}`.toLowerCase();
         if (!haystack.includes(searchQuery.toLowerCase())) return false;
@@ -58,21 +69,65 @@
     })
   );
 
+  const deletedRows = $derived(
+    showUnreviewedOnly ? [] : draft.filter((p) => p._status === 'deleted')
+  );
+
+  const usedTags = $derived(Array.from(new Set(draft.flatMap((p) => p.meta.tags ?? []))).sort());
+
   onMount(load);
 
   async function load() {
     loading = true;
     loadError = null;
     try {
-      const res = await fetch('/admin/blog/api');
-      if (!res.ok) throw new Error(`Failed to load: ${res.status}`);
-      const data: AdminPost[] = await res.json();
+      const [postsRes, reviewRes] = await Promise.all([
+        fetch('/admin/blog/api'),
+        fetch('/admin/review-state/api')
+      ]);
+      if (!postsRes.ok) throw new Error(`Failed to load posts: ${postsRes.status}`);
+      const data: AdminPost[] = await postsRes.json();
       published = data;
       draft = data.map((p) => ({ ...p, _originalFilename: p.filename }));
+
+      if (reviewRes.ok) {
+        const reviewData: ReviewState = await reviewRes.json();
+        reviewed = reviewData.blog ?? {};
+      }
     } catch (e) {
       loadError = e instanceof Error ? e.message : String(e);
     } finally {
       loading = false;
+    }
+  }
+
+  async function toggleReviewed(p: DraftPost) {
+    const key = p.filename;
+    const today = new Date().toISOString().slice(0, 10);
+    const next = { ...reviewed };
+    if (next[key]) {
+      delete next[key];
+    } else {
+      next[key] = { checkedAt: today };
+    }
+    reviewed = next;
+    await saveReviewState();
+  }
+
+  async function saveReviewState() {
+    savingReview = true;
+    try {
+      const res = await fetch('/admin/review-state/api');
+      const current: ReviewState = res.ok ? await res.json() : { grammar: {}, blog: {} };
+      await fetch('/admin/review-state/api', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...current, blog: reviewed })
+      });
+    } catch {
+      // Silent fail — review state is best-effort
+    } finally {
+      savingReview = false;
     }
   }
 
@@ -89,6 +144,13 @@
   }
 
   function openEdit(p: DraftPost) {
+    // Clear review mark when editing
+    if (reviewed[p.filename]) {
+      const next = { ...reviewed };
+      delete next[p.filename];
+      reviewed = next;
+      saveReviewState();
+    }
     modal = {
       mode: 'edit',
       post: {
@@ -167,7 +229,6 @@
     }
 
     if (modal.mode === 'add') {
-      // Slug must be unique among current drafts (excluding deleted)
       const exists = draft.some((p) => p._status !== 'deleted' && p.meta.slug === meta.slug);
       if (exists) {
         alert(`A post with slug "${meta.slug}" already exists.`);
@@ -182,7 +243,6 @@
       draft = [...draft, newPost];
     } else {
       const originalFilename = modal.post._originalFilename!;
-      // If slug changed, ensure it doesn't collide with another existing post
       const exists = draft.some(
         (p) =>
           p._status !== 'deleted' &&
@@ -295,9 +355,6 @@
   function cefrLabel(cefr: string | string[]): string {
     return Array.isArray(cefr) ? cefr.join(', ') : cefr;
   }
-
-  // Tags currently in use across all draft posts, for the filter dropdown
-  const usedTags = $derived(Array.from(new Set(draft.flatMap((p) => p.meta.tags ?? []))).sort());
 </script>
 
 <svelte:window onbeforeunload={beforeUnload} />
@@ -317,6 +374,26 @@
   {:else}
     <!-- Toolbar -->
     <div class="mt-4 flex flex-wrap items-center gap-3">
+      <!-- Review progress -->
+      <span class="text-sm text-gray-500 dark:text-gray-400">
+        Reviewed
+        <span
+          class={[
+            'font-semibold',
+            reviewedCount === totalReviewable && totalReviewable > 0
+              ? 'text-green-600 dark:text-green-400'
+              : 'text-gray-700 dark:text-gray-200'
+          ].join(' ')}
+        >
+          {reviewedCount} / {totalReviewable}
+        </span>
+        {#if savingReview}
+          <span class="ml-1 text-xs text-gray-400">saving…</span>
+        {/if}
+      </span>
+
+      <div class="h-4 w-px bg-gray-200 dark:bg-gray-700"></div>
+
       {#if isDirty}
         <span class="text-sm font-medium text-amber-600 dark:text-amber-400">
           ● {changeCount} unpublished change{changeCount === 1 ? '' : 's'}
@@ -406,8 +483,13 @@
         class="rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
       />
 
+      <label class="flex items-center gap-1.5 text-sm text-gray-600 dark:text-gray-300">
+        <input type="checkbox" bind:checked={showUnreviewedOnly} class="rounded" />
+        Unreviewed only
+      </label>
+
       <span class="ml-auto self-center text-sm text-gray-500 dark:text-gray-400">
-        {filtered.length} of {draft.length}
+        {filtered.length} of {totalReviewable}
       </span>
     </div>
 
@@ -418,6 +500,7 @@
           <tr
             class="border-b border-gray-200 text-gray-500 dark:border-gray-700 dark:text-gray-400"
           >
+            <th class="py-2 pr-3 text-center" title="Reviewed">✓</th>
             <th class="py-2 pr-3">Title</th>
             <th class="py-2 pr-3">Slug</th>
             <th class="py-2 pr-3">CEFR</th>
@@ -430,32 +513,37 @@
         </thead>
         <tbody>
           {#each filtered as p (p._originalFilename ?? p.filename)}
+            {@const isReviewed = !!reviewed[p.filename]}
             <tr
-              class="border-b border-gray-100 dark:border-gray-800"
-              class:opacity-50={p._status === 'deleted'}
+              class={[
+                'border-b border-gray-100 dark:border-gray-800',
+                isReviewed ? 'bg-green-50 dark:bg-green-950/20' : ''
+              ].join(' ')}
             >
-              <td
-                class="max-w-xs truncate py-2 pr-3"
-                class:line-through={p._status === 'deleted'}
-                title={p.meta.title}
-              >
+              <td class="py-2 pr-3 text-center">
+                <button
+                  onclick={() => toggleReviewed(p)}
+                  title={isReviewed
+                    ? `Reviewed ${reviewed[p.filename].checkedAt} — click to unmark`
+                    : 'Mark as reviewed'}
+                  class={[
+                    'text-lg leading-none transition-opacity',
+                    isReviewed
+                      ? 'text-green-500'
+                      : 'opacity-20 hover:opacity-60 hover:text-green-400'
+                  ].join(' ')}
+                >
+                  ✓
+                </button>
+              </td>
+              <td class="max-w-xs truncate py-2 pr-3" title={p.meta.title}>
                 {p.meta.title}
               </td>
-              <td class="py-2 pr-3 font-mono text-xs" class:line-through={p._status === 'deleted'}
-                >{p.meta.slug}</td
-              >
-              <td class="py-2 pr-3" class:line-through={p._status === 'deleted'}
-                >{cefrLabel(p.meta.cefr)}</td
-              >
-              <td class="py-2 pr-3" class:line-through={p._status === 'deleted'}
-                >{p.meta.type ?? 'word'}</td
-              >
-              <td class="py-2 pr-3 whitespace-nowrap" class:line-through={p._status === 'deleted'}
-                >{p.meta.publishedAt}</td
-              >
-              <td class="py-2 pr-3" class:line-through={p._status === 'deleted'}>
-                {(p.meta.tags ?? []).join(', ')}
-              </td>
+              <td class="py-2 pr-3 font-mono text-xs">{p.meta.slug}</td>
+              <td class="py-2 pr-3">{cefrLabel(p.meta.cefr)}</td>
+              <td class="py-2 pr-3">{p.meta.type ?? 'word'}</td>
+              <td class="py-2 pr-3 whitespace-nowrap">{p.meta.publishedAt}</td>
+              <td class="py-2 pr-3">{(p.meta.tags ?? []).join(', ')}</td>
               <td class="py-2 pr-3">
                 {#if p._status === 'added'}
                   <span
@@ -467,26 +555,41 @@
                     class="rounded bg-amber-100 px-2 py-0.5 text-xs text-amber-700 dark:bg-amber-900 dark:text-amber-300"
                     >edited</span
                   >
-                {:else if p._status === 'deleted'}
-                  <span
-                    class="rounded bg-red-100 px-2 py-0.5 text-xs text-red-700 dark:bg-red-900 dark:text-red-300"
-                    >deleted</span
-                  >
                 {/if}
               </td>
               <td class="py-2 pr-3 text-right whitespace-nowrap">
-                {#if p._status === 'deleted'}
-                  <button class="text-blue-600 hover:underline" onclick={() => undelete(p)}
-                    >Undo</button
-                  >
-                {:else}
-                  <button class="mr-2 text-blue-600 hover:underline" onclick={() => openEdit(p)}
-                    >✏</button
-                  >
-                  <button class="text-red-600 hover:underline" onclick={() => removePost(p)}
-                    >🗑</button
-                  >
-                {/if}
+                <button class="mr-2 text-blue-600 hover:underline" onclick={() => openEdit(p)}
+                  >✏</button
+                >
+                <button class="text-red-600 hover:underline" onclick={() => removePost(p)}
+                  >🗑</button
+                >
+              </td>
+            </tr>
+          {/each}
+
+          <!-- Deleted rows at bottom -->
+          {#each deletedRows as p (p._originalFilename ?? p.filename)}
+            <tr class="border-b border-gray-100 opacity-50 dark:border-gray-800">
+              <td class="py-2 pr-3"></td>
+              <td class="max-w-xs truncate py-2 pr-3 line-through" title={p.meta.title}
+                >{p.meta.title}</td
+              >
+              <td class="py-2 pr-3 font-mono text-xs line-through">{p.meta.slug}</td>
+              <td class="py-2 pr-3 line-through">{cefrLabel(p.meta.cefr)}</td>
+              <td class="py-2 pr-3 line-through">{p.meta.type ?? 'word'}</td>
+              <td class="py-2 pr-3 line-through whitespace-nowrap">{p.meta.publishedAt}</td>
+              <td class="py-2 pr-3 line-through">{(p.meta.tags ?? []).join(', ')}</td>
+              <td class="py-2 pr-3">
+                <span
+                  class="rounded bg-red-100 px-2 py-0.5 text-xs text-red-700 dark:bg-red-900 dark:text-red-300"
+                  >deleted</span
+                >
+              </td>
+              <td class="py-2 pr-3 text-right">
+                <button class="text-blue-600 hover:underline" onclick={() => undelete(p)}
+                  >Undo</button
+                >
               </td>
             </tr>
           {/each}
@@ -604,7 +707,6 @@
           </div>
         </div>
 
-        <!-- Deck links -->
         <div class="col-span-2 text-sm">
           <div class="flex items-center justify-between">
             <span class="block font-medium dark:text-gray-200">Deck links (optional)</span>

@@ -4,8 +4,6 @@ import { expect, test, type Page } from '@playwright/test';
 // Fixtures
 // ---------------------------------------------------------------------------
 
-const FAKE_ADMIN_EMAIL = 'admin@example.com';
-
 /** A minimal blog post fixture for the blog editor mock. */
 const MOCK_POSTS = [
   {
