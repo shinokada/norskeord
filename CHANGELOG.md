@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.24.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added admin panel for managing blog posts with editing, publishing, and deletion capabilities
+    - Added admin interface for managing grammar questions with full CRUD operations
+    - Added review tracking system for blog posts and grammar questions
+    - Added avatar dropdown menu with profile and progress links
+  - **Bug Fixes**
+    - Updated badge display on resources page
+  - **Style**
+    - Increased font sizes for main page headings
+    - Adjusted layout spacing and styling
+
 ## 2.23.0
 
 ### Minor Changes
