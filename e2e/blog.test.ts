@@ -89,12 +89,12 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
   });
 
   test('shows a back link to /blog', async ({ page }) => {
-    const backLink = page.locator('a[href="/blog"]');
+    const backLink = page.getByRole('link', { name: '← All posts' });
     await expect(backLink).toBeVisible();
   });
 
   test('back link navigates to blog index', async ({ page }) => {
-    await page.locator('a[href="/blog"]').click();
+    await page.getByRole('link', { name: '← All posts' }).click();
     await expect(page).toHaveURL('/blog');
   });
 
