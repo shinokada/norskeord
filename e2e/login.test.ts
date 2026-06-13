@@ -12,10 +12,7 @@ test.describe('/auth/login page', () => {
     // onMount; we immediately invoke the callback with a fake token.
     await page.addInitScript(() => {
       (window as unknown as { turnstile: unknown }).turnstile = {
-        render: (
-          _container: HTMLElement,
-          options: { callback?: (token: string) => void }
-        ) => {
+        render: (_container: HTMLElement, options: { callback?: (token: string) => void }) => {
           options.callback?.('test-token');
           return 'fake-widget-id';
         },
