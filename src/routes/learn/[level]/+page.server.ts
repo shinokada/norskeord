@@ -83,8 +83,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     categories,
     grammarTopics,
     levelStats,
-    blogPosts,
-    user: locals.user,
-    plan: locals.plan
+    blogPosts
+    // user and plan come from the root layout — do NOT re-export here
   };
 };
