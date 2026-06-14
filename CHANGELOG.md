@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 2.25.1
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Fixed authentication state caching issue where newly logged-in users might see cached anonymous data on learning pages
+    - Improved edge cache handling to ensure auth-dependent content displays correctly after login
+
 ## 2.25.0
 
 ### Minor Changes
