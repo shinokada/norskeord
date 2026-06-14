@@ -1,5 +1,12 @@
 # norske-flashcard
 
+## 2.25.3
+
+### Patch Changes
+
+- - **Chores**
+    - Migrated flashcard progress tracking system to use stable vocabulary identifiers, improving data integrity and consistency for long-term progress persistence.
+
 ## 2.25.2
 
 ### Patch Changes
