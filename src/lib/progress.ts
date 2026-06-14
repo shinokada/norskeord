@@ -46,8 +46,8 @@ export const GRAMMAR_LS_PREFIX = 'grammar-';
  * Called on logout so the next person who opens the browser sees no progress.
  */
 export function clearUserProgress(): void {
-  // Guest/free users store vocab keys as 'progress-<norsk>' and grammar keys
-  // as 'grammar-<questionId>'. (Plus users no longer use localStorage at all.)
+  // Guest/free users store vocab keys as 'progress-<vocabId|norsk>' and grammar
+  // keys as 'grammar-<questionId>'. (Plus users no longer use localStorage at all.)
   const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
@@ -62,6 +62,18 @@ const RATING_MAP: Record<FSRSRating, Grade> = {
   good: Rating.Good,
   easy: Rating.Easy
 };
+
+// ── Stable key helper ────────────────────────────────────────────────────────
+
+/**
+ * Returns the stable key for a vocab entry: entry.id when present (post-migration
+ * entries), falling back to entry.norsk for any entry that pre-dates the id
+ * migration. Both guest/free localStorage and the in-memory progressMap use
+ * this key so lookups are consistent regardless of which path wrote the data.
+ */
+export function vocabKey(entry: VocabEntry): string {
+  return entry.id ?? entry.norsk;
+}
 
 // ── Local storage (guest / free users only) ──────────────────────────────────
 
@@ -95,6 +107,12 @@ export function loadProgressMap(): Record<string, CardProgress> {
 // ── Supabase row shape ───────────────────────────────────────────────────────
 
 interface ProgressRow {
+  // vocab_id is the stable lookup key (entry.id ?? entry.norsk).
+  // Introduced in migration 016; rows written before that migration will have
+  // vocab_id = null — fromRow falls back to norsk for those.
+  vocab_id: string | null;
+  // norsk is kept until migration 017 drops the column. Written on every upsert
+  // so old code (if rolled back) can still read it.
   norsk: string;
   level: string;
   category: string;
@@ -112,9 +130,10 @@ interface ProgressRow {
   last_seen: string;
 }
 
-function toRow(norsk: string, p: CardProgress): Omit<ProgressRow, never> {
+function toRow(entry: VocabEntry, p: CardProgress): Omit<ProgressRow, never> {
   return {
-    norsk,
+    vocab_id: entry.id ?? entry.norsk, // stable key; falls back to norsk for old entries
+    norsk: entry.norsk, // kept until migration 017 drops the column
     level: p.level,
     category: p.category,
     due: p.fsrs.due instanceof Date ? p.fsrs.due.toISOString() : String(p.fsrs.due),
@@ -157,12 +176,23 @@ function fromRow(row: ProgressRow): CardProgress {
   };
 }
 
+// ── Row key: what we use to key the in-memory map from a DB row ──────────────
+
+/**
+ * Derives the in-memory map key from a Supabase row.
+ * Uses vocab_id when available (new rows), falls back to norsk (legacy rows
+ * written before migration 016, or any row where vocab_id is null).
+ */
+function rowKey(row: ProgressRow): string {
+  return row.vocab_id ?? row.norsk;
+}
+
 // ── Supabase — Plus users ────────────────────────────────────────────────────
 
 /**
  * Fetches all card_progress rows for a Plus user and returns them as a
- * CardProgress map keyed by norsk word. Called on mount for Plus users
- * instead of loadProgressMap.
+ * CardProgress map keyed by vocab_id (or norsk for legacy rows).
+ * Called on mount for Plus users instead of loadProgressMap.
  */
 export async function loadProgressMapFromSupabase(
   userId: string
@@ -173,7 +203,7 @@ export async function loadProgressMapFromSupabase(
 
   const map: Record<string, CardProgress> = {};
   for (const row of data as ProgressRow[]) {
-    map[row.norsk] = fromRow(row);
+    map[rowKey(row)] = fromRow(row);
   }
   return map;
 }
@@ -181,22 +211,19 @@ export async function loadProgressMapFromSupabase(
 /**
  * Upserts a single card_progress row for a Plus user, then returns the
  * updated progress map. Called by saveProgress for Plus users.
- *
- * Returns the optimistically-updated map immediately (the Supabase write
- * happens in the background). If the write fails silently, the in-memory
- * map is still correct for this session.
  */
 async function saveProgressToSupabase(
   userId: string,
-  norsk: string,
+  entry: VocabEntry,
   progress: CardProgress,
   progressMap: Record<string, CardProgress>
 ): Promise<Record<string, CardProgress>> {
-  const updated = { ...progressMap, [norsk]: progress };
+  const key = vocabKey(entry);
+  const updated = { ...progressMap, [key]: progress };
   try {
     await supabase
       .from('card_progress')
-      .upsert({ user_id: userId, ...toRow(norsk, progress) }, { onConflict: 'user_id,norsk' });
+      .upsert({ user_id: userId, ...toRow(entry, progress) }, { onConflict: 'user_id,vocab_id' });
   } catch {
     // Silent failure — in-memory map is still correct for this session
   }
@@ -206,8 +233,7 @@ async function saveProgressToSupabase(
 /**
  * Deletes all card_progress, grammar_progress and study_days rows for a user
  * from Supabase. Called when a Plus user resets their progress from the stats
- * page. grammar_progress is included so a reset doesn't silently leave grammar
- * data behind.
+ * page.
  */
 export async function resetProgressInSupabase(userId: string): Promise<void> {
   try {
@@ -267,6 +293,9 @@ async function maybeTriggerOptimisation(userId: string, totalReps: number) {
  *   Returns the updated map directly (wrapped in a resolved Promise for a
  *   uniform call signature).
  *
+ * The in-memory progressMap and localStorage are keyed by vocabKey(entry)
+ * (i.e. entry.id when present, else entry.norsk).
+ *
  * Callers should await this function regardless of user type.
  */
 export async function saveProgress(
@@ -275,8 +304,9 @@ export async function saveProgress(
   progressMap: Record<string, CardProgress>,
   userId?: string | null
 ): Promise<Record<string, CardProgress>> {
+  const key = vocabKey(entry);
   const now = new Date();
-  const existing = progressMap[entry.norsk] ?? null;
+  const existing = progressMap[key] ?? null;
   const card = existing ? existing.fsrs : createEmptyCard(now);
 
   const result = DEFAULT_FSRS.next(card, now, RATING_MAP[rating]);
@@ -294,7 +324,7 @@ export async function saveProgress(
     // Plus: Supabase only — no localStorage
     void recordStudyDay(userId);
 
-    const newMap = await saveProgressToSupabase(userId, entry.norsk, updated, progressMap);
+    const newMap = await saveProgressToSupabase(userId, entry, updated, progressMap);
 
     const totalReps = Object.values(newMap).reduce((sum, c) => sum + c.fsrs.reps, 0);
     void maybeTriggerOptimisation(userId, totalReps);
@@ -302,8 +332,8 @@ export async function saveProgress(
     return newMap;
   } else {
     // Guest / free: localStorage only
-    localStorage.setItem(LS_PREFIX + entry.norsk, JSON.stringify(updated));
-    return { ...progressMap, [entry.norsk]: updated };
+    localStorage.setItem(LS_PREFIX + key, JSON.stringify(updated));
+    return { ...progressMap, [key]: updated };
   }
 }
 
@@ -624,19 +654,65 @@ function formatInterval(due: Date, now: Date): string {
  * Called on login for Plus users when Supabase has zero rows (i.e. the user
  * has just upgraded from free). After a successful upsert, clears the
  * localStorage keys so the migration never runs again on this device.
+ *
+ * localStorage keys are 'progress-<vocabId|norsk>'. The key itself becomes
+ * vocab_id in the DB row; the norsk field is back-filled from the key as a
+ * best-effort fallback (sufficient for legacy keys that ARE the norsk value).
+ * When vocab entries have a proper id the key will be the id, not norsk, but
+ * norsk is only needed until migration 017 drops that column.
  */
-export async function migrateLocalProgressToSupabase(userId: string): Promise<void> {
+export async function migrateLocalProgressToSupabase(
+  userId: string,
+  allEntries: VocabEntry[] = []
+): Promise<void> {
   const localMap = loadProgressMap();
   if (Object.keys(localMap).length === 0) return;
 
-  const rows = Object.entries(localMap).map(([norsk, progress]) => ({
-    user_id: userId,
-    ...toRow(norsk, progress)
-  }));
+  // Build a lookup from vocabKey → VocabEntry so we can pass the full entry
+  // to toRow() (which needs entry.norsk separately from entry.id).
+  const entryByKey = new Map<string, VocabEntry>();
+  for (const e of allEntries) {
+    entryByKey.set(vocabKey(e), e);
+  }
+
+  const rows = Object.entries(localMap).map(([key, progress]) => {
+    const entry = entryByKey.get(key);
+    if (entry) {
+      return { user_id: userId, ...toRow(entry, progress) };
+    }
+    // Fallback for legacy keys that are the norsk value (pre-id localStorage).
+    // vocab_id and norsk both get the key value; level/category come from progress.
+    return {
+      user_id: userId,
+      vocab_id: key,
+      norsk: key,
+      level: progress.level,
+      category: progress.category,
+      due:
+        progress.fsrs.due instanceof Date
+          ? progress.fsrs.due.toISOString()
+          : String(progress.fsrs.due),
+      stability: progress.fsrs.stability,
+      difficulty: progress.fsrs.difficulty,
+      elapsed_days: progress.fsrs.elapsed_days,
+      scheduled_days: progress.fsrs.scheduled_days,
+      learning_steps: progress.fsrs.learning_steps,
+      reps: progress.fsrs.reps,
+      lapses: progress.fsrs.lapses,
+      state: progress.fsrs.state,
+      last_review: progress.fsrs.last_review
+        ? progress.fsrs.last_review instanceof Date
+          ? progress.fsrs.last_review.toISOString()
+          : String(progress.fsrs.last_review)
+        : null,
+      seen_count: progress.seenCount,
+      last_seen: progress.lastSeen
+    };
+  });
 
   const { error } = await supabase
     .from('card_progress')
-    .upsert(rows, { onConflict: 'user_id,norsk' });
+    .upsert(rows, { onConflict: 'user_id,vocab_id' });
 
   if (!error) {
     clearUserProgress(); // remove progress-* keys from localStorage
@@ -651,12 +727,13 @@ export async function migrateLocalProgressToSupabase(userId: string): Promise<vo
  * in the component's undo() handler.
  */
 export function restoreProgressToLocalStorage(
-  norsk: string,
+  entry: VocabEntry,
   previousProgress: CardProgress | null
 ): void {
+  const key = LS_PREFIX + vocabKey(entry);
   if (previousProgress === null) {
-    localStorage.removeItem(LS_PREFIX + norsk);
+    localStorage.removeItem(key);
   } else {
-    localStorage.setItem(LS_PREFIX + norsk, JSON.stringify(previousProgress));
+    localStorage.setItem(key, JSON.stringify(previousProgress));
   }
 }

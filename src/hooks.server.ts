@@ -85,14 +85,10 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     '/my-profile'
   ];
   const pathname = event.url.pathname;
-  const isCacheExcluded = CACHE_EXCLUDED.some((prefix) => pathname.startsWith(prefix))
-    || pathname === '/blog'; // blog index (not individual posts)
+  const isCacheExcluded =
+    CACHE_EXCLUDED.some((prefix) => pathname.startsWith(prefix)) || pathname === '/blog'; // blog index (not individual posts)
 
-  if (
-    !hasSession &&
-    event.request.method === 'GET' &&
-    !isCacheExcluded
-  ) {
+  if (!hasSession && event.request.method === 'GET' && !isCacheExcluded) {
     response.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
   }
 
