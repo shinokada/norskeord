@@ -1,5 +1,6 @@
 [
   {
+    "id": "u-b2-001",
     "norsk": "All ære til",
     "lemma": "All ære til",
     "english": "all credit to, full credit to",
@@ -10,6 +11,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-002",
     "norsk": "alt mellom himmel og jord",
     "lemma": "alt mellom himmel og jord",
     "english": "everything under the sun, every conceivable thing",
@@ -20,6 +22,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-003",
     "norsk": "anstrenge seg",
     "lemma": "anstrenge seg",
     "english": "to make an effort, to strive",
@@ -31,6 +34,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-004",
     "norsk": "balsam for sjelen",
     "lemma": "balsam for sjelen",
     "english": "balm for the soul, soothing comfort",
@@ -41,6 +45,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-005",
     "norsk": "begripe seg på",
     "lemma": "begripe seg på",
     "english": "to understand, to make sense of",
@@ -52,6 +57,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-006",
     "norsk": "benytte seg av",
     "lemma": "benytte seg av",
     "english": "to make use of, to take advantage of",
@@ -63,6 +69,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-007",
     "norsk": "berge livet",
     "lemma": "berge livet",
     "english": "to save one's life, to survive",
@@ -74,6 +81,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-008",
     "norsk": "betale prisen",
     "lemma": "betale prisen",
     "english": "to pay the price",
@@ -85,6 +93,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-009",
     "norsk": "bli bevisst på",
     "lemma": "bli bevisst på",
     "english": "to become aware of, to grow conscious of",
@@ -95,6 +104,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-010",
     "norsk": "bli degradert",
     "lemma": "bli degradert",
     "english": "to be demoted, to be degraded",
@@ -106,6 +116,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-011",
     "norsk": "bli hyllet for",
     "lemma": "bli hyllet for",
     "english": "to be celebrated for, to be praised for",
@@ -117,6 +128,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-012",
     "norsk": "bli omdøpt",
     "lemma": "bli omdøpt",
     "english": "to be renamed, to be rechristened",
@@ -128,6 +140,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-013",
     "norsk": "bli oppfordret til",
     "lemma": "bli oppfordret til",
     "english": "to be urged to, to be encouraged to",
@@ -139,6 +152,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-014",
     "norsk": "bli oppmuntret",
     "lemma": "bli oppmuntret",
     "english": "to be encouraged, to receive encouragement",
@@ -149,6 +163,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-015",
     "norsk": "bli oppmuntret til",
     "lemma": "bli oppmuntret til",
     "english": "to be encouraged to",
@@ -160,6 +175,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-016",
     "norsk": "bli pågrepet",
     "lemma": "bli pågrepet",
     "english": "to be arrested, to be apprehended",
@@ -171,6 +187,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-017",
     "norsk": "bli rammet av",
     "lemma": "bli rammet av",
     "english": "to be hit by, to be affected by",
@@ -182,6 +199,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-018",
     "norsk": "bli satt på benken",
     "lemma": "bli satt på benken",
     "english": "to be benched, to be sidelined",
@@ -193,6 +211,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-019",
     "norsk": "bli siktet for",
     "lemma": "bli siktet for",
     "english": "to be charged with, to be a suspect in",
@@ -203,6 +222,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-020",
     "norsk": "bli tatt på senga",
     "lemma": "bli tatt på senga",
     "english": "to be caught off guard / to be taken by surprise",
@@ -214,6 +234,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-021",
     "norsk": "bli utsatt for",
     "lemma": "bli utsatt for",
     "english": "to be exposed to / to be subjected to",
@@ -225,6 +246,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-022",
     "norsk": "bli utvist",
     "lemma": "bli utvist",
     "english": "to be expelled / to be sent off",
@@ -236,6 +258,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-023",
     "norsk": "blåne seg",
     "lemma": "blåne seg",
     "english": "to brag / to boast",
@@ -247,6 +270,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-024",
     "norsk": "bratt læringskurve",
     "lemma": "bratt læringskurve",
     "english": "a steep learning curve",
@@ -258,6 +282,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-025",
     "norsk": "bygge ut",
     "lemma": "bygge ut",
     "english": "to expand / to develop / to extend",
@@ -269,6 +294,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-026",
     "norsk": "bære galt av sted",
     "lemma": "bære galt av sted",
     "english": "to go wrong / to take a bad turn",
@@ -280,6 +306,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-027",
     "norsk": "delte meninger",
     "lemma": "delte meninger",
     "english": "divided opinions / mixed views",
@@ -291,6 +318,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-028",
     "norsk": "Den som lever, får se",
     "lemma": "Den som lever, får se",
     "english": "time will tell, we shall see, only time will tell",
@@ -301,6 +329,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-029",
     "norsk": "desidert ener",
     "lemma": "desidert ener",
     "english": "the undisputed number one / the clear leader",
@@ -312,6 +341,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-030",
     "norsk": "Det er delte meninger om",
     "lemma": "Det er delte meninger om",
     "english": "there are divided opinions on, people disagree about",
@@ -322,6 +352,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-031",
     "norsk": "Det er en balansegang",
     "lemma": "Det er en balansegang",
     "english": "it is a balancing act, it requires balance",
@@ -332,6 +363,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-032",
     "norsk": "Det er en tankevekker",
     "lemma": "Det er en tankevekker",
     "english": "it is food for thought, it makes you think",
@@ -342,6 +374,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-033",
     "norsk": "Det er god grunn til å",
     "lemma": "Det er god grunn til å",
     "english": "there is good reason to, there are solid grounds for",
@@ -352,6 +385,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-034",
     "norsk": "Det er ingen tvil om",
     "lemma": "Det er ingen tvil om",
     "english": "there is no doubt about, it is undeniable",
@@ -362,6 +396,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-035",
     "norsk": "Det er lov å drømme",
     "lemma": "Det er lov å drømme",
     "english": "one is allowed to dream, it is fine to dream",
@@ -372,6 +407,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-036",
     "norsk": "det er på høy tid",
     "lemma": "det er på høy tid",
     "english": "it is high time, it is about time",
@@ -382,6 +418,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-037",
     "norsk": "Det er utenkelig",
     "lemma": "Det er utenkelig",
     "english": "it is unthinkable, it is inconceivable",
@@ -392,6 +429,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-038",
     "norsk": "Det hadde vært noe!",
     "lemma": "Det hadde vært noe!",
     "english": "That would be something! / Wouldn't that be something!",
@@ -403,6 +441,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-039",
     "norsk": "Det hadde vært noe, det",
     "lemma": "Det hadde vært noe, det",
     "english": "that would be something, wouldn't that be something",
@@ -413,6 +452,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-040",
     "norsk": "det haster",
     "lemma": "det haster",
     "english": "it is urgent, there is no time to lose",
@@ -423,6 +463,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-041",
     "norsk": "Det innebærer at",
     "lemma": "Det innebærer at",
     "english": "this means that, this implies that",
@@ -433,6 +474,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-042",
     "norsk": "det kan hende",
     "lemma": "det kan hende",
     "english": "it may be / perhaps / possibly",
@@ -444,6 +486,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-043",
     "norsk": "Det provoserer meg at",
     "lemma": "Det provoserer meg at",
     "english": "it provokes me that, it angers me that",
@@ -454,6 +497,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-044",
     "norsk": "det skal ikke så mye til",
     "lemma": "det skal ikke så mye til",
     "english": "it does not take much, a little goes a long way",
@@ -464,6 +508,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-045",
     "norsk": "det spørs",
     "lemma": "det spørs",
     "english": "it depends / that remains to be seen",
@@ -475,6 +520,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-046",
     "norsk": "det spørs hvor dypt det stikker",
     "lemma": "det spørs hvor dypt det stikker",
     "english": "the question is how deep it cuts, how serious it really is",
@@ -485,6 +531,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-047",
     "norsk": "det stikk motsatte",
     "lemma": "det stikk motsatte",
     "english": "the exact opposite, the very opposite",
@@ -495,6 +542,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-048",
     "norsk": "Det står respekt av",
     "lemma": "Det står respekt av",
     "english": "it commands respect, it is admirable",
@@ -505,6 +553,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-049",
     "norsk": "Det viste seg at",
     "lemma": "Det viste seg at",
     "english": "it turned out that, it emerged that",
@@ -515,6 +564,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-050",
     "norsk": "digital dømmekraft/en",
     "lemma": "digital dømmekraft",
     "english": "digital judgment / digital literacy and discernment",
@@ -526,6 +576,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-051",
     "norsk": "dilte etter",
     "lemma": "dilte etter",
     "english": "to toddle along behind / to trail after",
@@ -537,6 +588,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-052",
     "norsk": "dobbel betydning/en",
     "lemma": "dobbel betydning",
     "english": "a double meaning",
@@ -548,6 +600,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-053",
     "norsk": "Du sier noe",
     "lemma": "Du sier noe",
     "english": "you're telling me, you can say that again, you've got a point",
@@ -558,6 +611,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-054",
     "norsk": "elektroniske spor",
     "lemma": "elektroniske spor",
     "english": "electronic traces / digital footprints",
@@ -569,6 +623,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-055",
     "norsk": "en dråpe i havet",
     "lemma": "en dråpe i havet",
     "english": "a drop in the ocean, a negligible amount",
@@ -579,6 +634,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-056",
     "norsk": "en gammel kjenning",
     "lemma": "en gammel kjenning",
     "english": "an old acquaintance / a familiar face",
@@ -590,6 +646,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-057",
     "norsk": "en god del",
     "lemma": "en god del",
     "english": "a good deal / quite a lot",
@@ -601,6 +658,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-058",
     "norsk": "en halvstudert røver",
     "lemma": "en halvstudert røver",
     "english": "a know-it-all with half-knowledge, a self-taught amateur",
@@ -611,6 +669,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-059",
     "norsk": "en læringskurve",
     "lemma": "en læringskurve",
     "english": "a learning curve",
@@ -621,6 +680,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-060",
     "norsk": "en mengde",
     "lemma": "en mengde",
     "english": "a large amount / a great number of",
@@ -632,6 +692,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-061",
     "norsk": "en rekke",
     "lemma": "en rekke",
     "english": "a number of / a series of",
@@ -643,6 +704,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-062",
     "norsk": "en vakker dag",
     "lemma": "en vakker dag",
     "english": "one fine day / someday",
@@ -654,6 +716,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-063",
     "norsk": "ende opp med",
     "lemma": "ende opp med",
     "english": "to end up with / to wind up doing",
@@ -665,6 +728,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-064",
     "norsk": "erkjenne straffeskyld",
     "lemma": "erkjenne straffeskyld",
     "english": "to plead guilty",
@@ -676,6 +740,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-065",
     "norsk": "EUs indre marked",
     "lemma": "EUs indre marked",
     "english": "the EU's internal market / the EU single market",
@@ -687,6 +752,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-066",
     "norsk": "fase ut",
     "lemma": "fase ut",
     "english": "to phase out",
@@ -698,6 +764,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-067",
     "norsk": "fleip eller fakta",
     "lemma": "fleip eller fakta",
     "english": "myth or fact, joke or reality",
@@ -708,6 +775,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-068",
     "norsk": "for sin tid",
     "lemma": "for sin tid",
     "english": "for its time, ahead of its time",
@@ -718,6 +786,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-069",
     "norsk": "for øvrig",
     "lemma": "for øvrig",
     "english": "furthermore / besides / otherwise",
@@ -729,6 +798,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-070",
     "norsk": "forbedre seg",
     "lemma": "forbedre seg",
     "english": "to improve oneself / to get better",
@@ -740,6 +810,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-071",
     "norsk": "formildende omstendigheter",
     "lemma": "formildende omstendigheter",
     "english": "mitigating circumstances",
@@ -751,6 +822,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-072",
     "norsk": "forsømme seg",
     "lemma": "forsømme seg",
     "english": "to neglect one's duties / to fail in one's responsibilities",
@@ -762,6 +834,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-073",
     "norsk": "forsørge seg selv",
     "lemma": "forsørge seg selv",
     "english": "to support oneself / to be self-sufficient",
@@ -773,6 +846,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-074",
     "norsk": "fortsette med",
     "lemma": "fortsette med",
     "english": "to continue with / to keep doing",
@@ -784,6 +858,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-075",
     "norsk": "fredelige midler",
     "lemma": "fredelige midler",
     "english": "peaceful means",
@@ -795,6 +870,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-076",
     "norsk": "fremfor alt",
     "lemma": "fremfor alt",
     "english": "above all, most of all",
@@ -805,6 +881,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-077",
     "norsk": "fremsette en ytring",
     "lemma": "fremsette en ytring",
     "english": "to make a statement / to put forward an utterance",
@@ -816,6 +893,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-078",
     "norsk": "frie tøyler",
     "lemma": "frie tøyler",
     "english": "free rein, complete freedom to act",
@@ -826,6 +904,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-079",
     "norsk": "frisk og rask",
     "lemma": "frisk og rask",
     "english": "fit and well, in good health",
@@ -836,6 +915,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-080",
     "norsk": "få fotfeste",
     "lemma": "få fotfeste",
     "english": "to gain a foothold",
@@ -847,6 +927,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-081",
     "norsk": "få inntrykk av",
     "lemma": "få inntrykk av",
     "english": "to get the impression of",
@@ -858,6 +939,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-082",
     "norsk": "få klarhet i",
     "lemma": "få klarhet i",
     "english": "to get clarity on",
@@ -869,6 +951,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-083",
     "norsk": "få lønna til å strekke til",
     "lemma": "få lønna til å strekke til",
     "english": "to make the salary stretch far enough",
@@ -880,6 +963,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-084",
     "norsk": "få skikk på livet",
     "lemma": "få skikk på livet",
     "english": "to get one's life in order",
@@ -891,6 +975,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-085",
     "norsk": "få til å gå rundt",
     "lemma": "få til å gå rundt",
     "english": "to make ends meet",
@@ -902,6 +987,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-086",
     "norsk": "følge med på",
     "lemma": "følge med på",
     "english": "to follow / to keep up with / to pay attention to",
@@ -913,6 +999,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-087",
     "norsk": "følge noens eksempel",
     "lemma": "følge noens eksempel",
     "english": "to follow someone's example",
@@ -924,6 +1011,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-088",
     "norsk": "følge opp",
     "lemma": "følge opp",
     "english": "to follow up",
@@ -935,6 +1023,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-089",
     "norsk": "gang etter gang",
     "lemma": "gang etter gang",
     "english": "time after time, again and again",
@@ -945,6 +1034,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-090",
     "norsk": "gi avkall på",
     "lemma": "gi avkall på",
     "english": "to give up / to renounce",
@@ -956,6 +1046,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-091",
     "norsk": "gi seg",
     "lemma": "gi seg",
     "english": "to give up / to give in",
@@ -967,6 +1058,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-092",
     "norsk": "gi seg ut for",
     "lemma": "gi seg ut for",
     "english": "to pretend to be / to pass oneself off as",
@@ -978,6 +1070,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-093",
     "norsk": "gi utslag i",
     "lemma": "gi utslag i",
     "english": "to result in / to manifest as",
@@ -989,6 +1082,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-094",
     "norsk": "gjøre narr av",
     "lemma": "gjøre narr av",
     "english": "to make fun of / to mock",
@@ -1000,6 +1094,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-095",
     "norsk": "gripe inn",
     "lemma": "gripe inn",
     "english": "to intervene / to step in",
@@ -1011,6 +1106,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-096",
     "norsk": "grovt regnet",
     "lemma": "grovt regnet",
     "english": "roughly calculated / approximately",
@@ -1022,6 +1118,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-097",
     "norsk": "gå altfor langt",
     "lemma": "gå altfor langt",
     "english": "to go way too far",
@@ -1033,6 +1130,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-098",
     "norsk": "gå av",
     "lemma": "gå av",
     "english": "to resign, to step down",
@@ -1044,6 +1142,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-099",
     "norsk": "gå av minne",
     "lemma": "gå av minne",
     "english": "to be forgotten, to fade from memory",
@@ -1055,6 +1154,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-100",
     "norsk": "gå bort fra",
     "lemma": "gå bort fra",
     "english": "to move away from, to abandon",
@@ -1066,6 +1166,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-101",
     "norsk": "gå mot strømmen",
     "lemma": "gå mot strømmen",
     "english": "to go against the grain, to swim against the current",
@@ -1077,6 +1178,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-102",
     "norsk": "gå på rundgang",
     "lemma": "gå på rundgang",
     "english": "to go around, to circulate",
@@ -1088,6 +1190,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-103",
     "norsk": "gå under",
     "lemma": "gå under",
     "english": "to go under, to sink, to collapse",
@@ -1099,6 +1202,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-104",
     "norsk": "gå ut på",
     "lemma": "gå ut på",
     "english": "to be about, to amount to",
@@ -1110,6 +1214,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-105",
     "norsk": "ha det siste ordet",
     "lemma": "ha det siste ordet",
     "english": "to have the last word",
@@ -1121,6 +1226,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-106",
     "norsk": "ha en følelse av",
     "lemma": "ha en følelse av",
     "english": "to have a feeling of, to sense",
@@ -1132,6 +1238,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-107",
     "norsk": "ha høy grad av noe",
     "lemma": "ha høy grad av noe",
     "english": "to have a high degree of something",
@@ -1143,6 +1250,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-108",
     "norsk": "ha i bakhodet",
     "lemma": "ha i bakhodet",
     "english": "to keep in mind, to bear in mind",
@@ -1154,6 +1262,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-109",
     "norsk": "ha kjennskap til",
     "lemma": "ha kjennskap til",
     "english": "to have knowledge of, to be familiar with",
@@ -1165,6 +1274,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-110",
     "norsk": "ha mye på hjertet",
     "lemma": "ha mye på hjertet",
     "english": "to have a lot on one's mind, to have a lot to say",
@@ -1176,6 +1286,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-111",
     "norsk": "ha potensial til",
     "lemma": "ha potensial til",
     "english": "to have the potential to",
@@ -1187,6 +1298,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-112",
     "norsk": "ha som levebrød",
     "lemma": "ha som levebrød",
     "english": "to make a living from",
@@ -1198,6 +1310,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-113",
     "norsk": "ha stor betydning for",
     "lemma": "ha stor betydning for",
     "english": "to be of great importance to",
@@ -1209,6 +1322,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-114",
     "norsk": "ha tiltro til",
     "lemma": "ha tiltro til",
     "english": "to have confidence in / to trust",
@@ -1220,6 +1334,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-115",
     "norsk": "hakke på",
     "lemma": "hakke på",
     "english": "to pick on / to nag at",
@@ -1231,6 +1346,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-116",
     "norsk": "halvstudert røver",
     "lemma": "halvstudert røver",
     "english": "a half-educated know-it-all / a pretentious amateur",
@@ -1242,6 +1358,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-117",
     "norsk": "havne på førsteplass",
     "lemma": "havne på førsteplass",
     "english": "to end up in first place / to finish first",
@@ -1253,6 +1370,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-118",
     "norsk": "heie fram",
     "lemma": "heie fram",
     "english": "to cheer on / to encourage forward",
@@ -1264,6 +1382,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-119",
     "norsk": "heie på noen",
     "lemma": "heie på noen",
     "english": "to cheer for someone / to root for someone",
@@ -1275,6 +1394,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-120",
     "norsk": "henge med venner",
     "lemma": "henge med venner",
     "english": "to hang out with friends",
@@ -1286,6 +1406,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-121",
     "norsk": "henvende seg til",
     "lemma": "henvende seg til",
     "english": "to address / to turn to / to contact",
@@ -1297,6 +1418,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-122",
     "norsk": "hevde seg",
     "lemma": "hevde seg",
     "english": "to hold one's own / to assert oneself / to perform well",
@@ -1308,6 +1430,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-123",
     "norsk": "hige etter",
     "lemma": "hige etter",
     "english": "to strive for / to yearn for / to aspire to",
@@ -1319,6 +1442,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-124",
     "norsk": "holde kjeft",
     "lemma": "holde kjeft",
     "english": "to shut up / to keep one's mouth shut",
@@ -1330,6 +1454,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-125",
     "norsk": "humanitært arbeid",
     "lemma": "humanitært arbeid",
     "english": "humanitarian work",
@@ -1341,6 +1466,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-126",
     "norsk": "hvile på laurbærene",
     "lemma": "hvile på laurbærene",
     "english": "to rest on one's laurels",
@@ -1352,6 +1478,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-127",
     "norsk": "høy status",
     "lemma": "høy status",
     "english": "high status",
@@ -1363,6 +1490,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-128",
     "norsk": "i andres nærvær",
     "lemma": "i andres nærvær",
     "english": "in the presence of others",
@@ -1374,6 +1502,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-129",
     "norsk": "i deres egne øyne",
     "lemma": "i deres egne øyne",
     "english": "in their own eyes, from their own perspective",
@@ -1384,6 +1513,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-130",
     "norsk": "i ens egne øyne",
     "lemma": "i ens egne øyne",
     "english": "in one's own eyes",
@@ -1395,6 +1525,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-131",
     "norsk": "i etterkant av",
     "lemma": "i etterkant av",
     "english": "in the aftermath of, following",
@@ -1405,6 +1536,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-132",
     "norsk": "i ettertid",
     "lemma": "i ettertid",
     "english": "in hindsight / in retrospect",
@@ -1416,6 +1548,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-133",
     "norsk": "i forbindelse med",
     "lemma": "i forbindelse med",
     "english": "in connection with, in relation to",
@@ -1426,6 +1559,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-134",
     "norsk": "i forhold til",
     "lemma": "i forhold til",
     "english": "in relation to / compared to",
@@ -1437,6 +1571,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-135",
     "norsk": "i fredstid",
     "lemma": "i fredstid",
     "english": "in peacetime, during times of peace",
@@ -1447,6 +1582,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-136",
     "norsk": "i grunnen",
     "lemma": "i grunnen",
     "english": "basically / actually / at heart",
@@ -1458,6 +1594,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-137",
     "norsk": "i hovedsak",
     "lemma": "i hovedsak",
     "english": "mainly, primarily, for the most part",
@@ -1468,6 +1605,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-138",
     "norsk": "i hvert fall",
     "lemma": "i hvert fall",
     "english": "at least, in any case, anyway",
@@ -1478,6 +1616,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-139",
     "norsk": "i høy hastighet",
     "lemma": "i høy hastighet",
     "english": "at high speed",
@@ -1489,6 +1628,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-140",
     "norsk": "i høyeste grad",
     "lemma": "i høyeste grad",
     "english": "in the highest degree, extremely, most certainly",
@@ -1499,6 +1639,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-141",
     "norsk": "i motsetning til",
     "lemma": "i motsetning til",
     "english": "in contrast to, unlike, as opposed to",
@@ -1509,6 +1650,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-142",
     "norsk": "i overkant",
     "lemma": "i overkant",
     "english": "a bit too much, on the excessive side",
@@ -1519,6 +1661,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-143",
     "norsk": "i prinsippet",
     "lemma": "i prinsippet",
     "english": "in principle, theoretically",
@@ -1529,6 +1672,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-144",
     "norsk": "i samme øyeblikk",
     "lemma": "i samme øyeblikk",
     "english": "at the same moment / just as",
@@ -1540,6 +1684,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-145",
     "norsk": "i stor skala",
     "lemma": "i stor skala",
     "english": "on a large scale, at great scale",
@@ -1550,6 +1695,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-146",
     "norsk": "i større grad",
     "lemma": "i større grad",
     "english": "to a greater extent, more so",
@@ -1560,6 +1706,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-147",
     "norsk": "i takt med",
     "lemma": "i takt med",
     "english": "in step with, in line with, keeping pace with",
@@ -1570,6 +1717,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-148",
     "norsk": "i trygge omgivelser",
     "lemma": "i trygge omgivelser",
     "english": "in safe surroundings, in a secure environment",
@@ -1580,6 +1728,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-149",
     "norsk": "i utgangspunktet",
     "lemma": "i utgangspunktet",
     "english": "initially, in principle, from the outset",
@@ -1590,6 +1739,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-150",
     "norsk": "i verste fall",
     "lemma": "i verste fall",
     "english": "in the worst case, at worst",
@@ -1600,6 +1750,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-151",
     "norsk": "ideelt sett",
     "lemma": "ideelt sett",
     "english": "ideally, in an ideal world",
@@ -1610,6 +1761,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-152",
     "norsk": "ikke finne seg i",
     "lemma": "ikke finne seg i",
     "english": "to not put up with / to not accept / to not tolerate",
@@ -1621,6 +1773,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-153",
     "norsk": "ikke noe videre",
     "lemma": "ikke noe videre",
     "english": "nothing special, not up to much, mediocre",
@@ -1631,6 +1784,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-154",
     "norsk": "ikke noe å hige etter",
     "lemma": "ikke noe å hige etter",
     "english": "nothing to aspire to, nothing to strive for",
@@ -1641,6 +1795,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-155",
     "norsk": "ikke nødvendigvis",
     "lemma": "ikke nødvendigvis",
     "english": "not necessarily",
@@ -1651,6 +1806,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-156",
     "norsk": "inkluderende arbeidsliv",
     "lemma": "inkluderende arbeidsliv",
     "english": "an inclusive working life",
@@ -1662,6 +1818,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-157",
     "norsk": "innrette seg",
     "lemma": "innrette seg",
     "english": "to adapt / to adjust / to arrange one's life",
@@ -1673,6 +1830,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-158",
     "norsk": "involvere seg",
     "lemma": "involvere seg",
     "english": "to get involved / to engage",
@@ -1684,6 +1842,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-159",
     "norsk": "Jeg skal vedde på at",
     "lemma": "Jeg skal vedde på at",
     "english": "I bet that, I would wager that",
@@ -1694,6 +1853,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-160",
     "norsk": "jobbe seg opp fra gulvet",
     "lemma": "jobbe seg opp fra gulvet",
     "english": "to work one's way up from nothing / to pull oneself up from the bottom",
@@ -1705,6 +1865,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-161",
     "norsk": "kjeme fram",
     "lemma": "kjeme fram",
     "english": "to fight one's way forward / to struggle through",
@@ -1716,6 +1877,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-162",
     "norsk": "kjenne terrenget",
     "lemma": "kjenne terrenget",
     "english": "to know the terrain / to know the lay of the land",
@@ -1727,6 +1889,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-163",
     "norsk": "kjøre noe på dunken",
     "lemma": "kjøre noe på dunken",
     "english": "to run something into the ground / to ruin something",
@@ -1738,6 +1901,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-164",
     "norsk": "klusse over",
     "lemma": "klusse over",
     "english": "to bungle / to mess up / to make a mess of",
@@ -1749,6 +1913,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-165",
     "norsk": "koble av",
     "lemma": "koble av",
     "english": "to unwind / to switch off / to relax",
@@ -1760,6 +1925,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-166",
     "norsk": "komfortabel nok",
     "lemma": "komfortabel nok",
     "english": "comfortable enough",
@@ -1771,6 +1937,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-167",
     "norsk": "komme i skade for",
     "lemma": "komme i skade for",
     "english": "to accidentally end up doing / to inadvertently do",
@@ -1782,6 +1949,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-168",
     "norsk": "komme noen til gode",
     "lemma": "komme noen til gode",
     "english": "to benefit someone / to be of benefit to someone",
@@ -1793,6 +1961,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-169",
     "norsk": "komme til orde",
     "lemma": "komme til orde",
     "english": "to get a word in / to get the chance to speak",
@@ -1804,6 +1973,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-170",
     "norsk": "komme til uttrykk",
     "lemma": "komme til uttrykk",
     "english": "to be expressed / to manifest itself / to come through",
@@ -1815,6 +1985,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-171",
     "norsk": "kompensere for",
     "lemma": "kompensere for",
     "english": "to compensate for / to make up for",
@@ -1826,6 +1997,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-172",
     "norsk": "kroppen sier fra",
     "lemma": "kroppen sier fra",
     "english": "the body protests, the body gives a signal",
@@ -1836,6 +2008,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-173",
     "norsk": "la seg lokke",
     "lemma": "la seg lokke",
     "english": "to let oneself be tempted / to be lured",
@@ -1847,6 +2020,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-174",
     "norsk": "lage styr",
     "lemma": "lage styr",
     "english": "to make a fuss / to cause a commotion",
@@ -1858,6 +2032,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-175",
     "norsk": "langt lavere",
     "lemma": "langt lavere",
     "english": "far lower / considerably lower",
@@ -1869,6 +2044,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-176",
     "norsk": "legge vekt på",
     "lemma": "legge vekt på",
     "english": "to emphasize / to place importance on / to stress",
@@ -1880,6 +2056,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-177",
     "norsk": "lettere sagt enn gjort",
     "lemma": "lettere sagt enn gjort",
     "english": "easier said than done",
@@ -1890,6 +2067,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-178",
     "norsk": "lide under",
     "lemma": "lide under",
     "english": "to suffer under / to suffer because of",
@@ -1901,6 +2079,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-179",
     "norsk": "litt av en",
     "lemma": "litt av en",
     "english": "quite a (person/thing), some (person/thing)",
@@ -1912,6 +2091,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-180",
     "norsk": "lure trill rundt",
     "lemma": "lure trill rundt",
     "english": "to fool completely, to trick thoroughly",
@@ -1923,6 +2103,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-181",
     "norsk": "Man skulle kanskje tro at",
     "lemma": "Man skulle kanskje tro at",
     "english": "one might think that, you would perhaps suppose that",
@@ -1933,6 +2114,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-182",
     "norsk": "mangel på",
     "lemma": "mangel på",
     "english": "lack of, shortage of",
@@ -1944,6 +2126,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-183",
     "norsk": "med andre ord",
     "lemma": "med andre ord",
     "english": "in other words, that is to say",
@@ -1954,6 +2137,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-184",
     "norsk": "med jevne mellomrom",
     "lemma": "med jevne mellomrom",
     "english": "at regular intervals, periodically",
@@ -1964,6 +2148,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-185",
     "norsk": "med tanke på",
     "lemma": "med tanke på",
     "english": "considering, with regard to, given",
@@ -1974,6 +2159,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-186",
     "norsk": "med unntak av",
     "lemma": "med unntak av",
     "english": "with the exception of, except for",
@@ -1984,6 +2170,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-187",
     "norsk": "mer eller mindre",
     "lemma": "mer eller mindre",
     "english": "more or less",
@@ -1995,6 +2182,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-188",
     "norsk": "midt på treet",
     "lemma": "midt på treet",
     "english": "mediocre, average, run-of-the-mill",
@@ -2005,6 +2193,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-189",
     "norsk": "nederst på rangstigen",
     "lemma": "nederst på rangstigen",
     "english": "at the bottom of the hierarchy, at the lowest rung",
@@ -2015,6 +2204,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-190",
     "norsk": "neimen ikke",
     "lemma": "neimen ikke",
     "english": "certainly not, absolutely not, no way",
@@ -2026,6 +2216,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-191",
     "norsk": "nok en gang",
     "lemma": "nok en gang",
     "english": "once again, yet again",
@@ -2036,6 +2227,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-192",
     "norsk": "Norway Cup",
     "lemma": "Norway Cup",
     "english": "the Norway Cup (world's largest youth football tournament)",
@@ -2047,6 +2239,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-193",
     "norsk": "nyte tilværelsen",
     "lemma": "nyte tilværelsen",
     "english": "to enjoy life, to savour existence",
@@ -2058,6 +2251,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-194",
     "norsk": "nå og da",
     "lemma": "nå og da",
     "english": "now and then, from time to time",
@@ -2068,6 +2262,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-195",
     "norsk": "nåde dere",
     "lemma": "nåde dere",
     "english": "you'd better watch out, woe betide you",
@@ -2078,6 +2273,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-196",
     "norsk": "når det kommer til stykket",
     "lemma": "når det kommer til stykket",
     "english": "when it comes down to it, when push comes to shove",
@@ -2088,6 +2284,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-197",
     "norsk": "offentlig forvaltning",
     "lemma": "offentlig forvaltning",
     "english": "public administration",
@@ -2099,6 +2296,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-198",
     "norsk": "offentlig instans/en",
     "lemma": "offentlig instans/en",
     "english": "a public authority, a government body",
@@ -2110,6 +2308,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-199",
     "norsk": "offentlig sektor/en",
     "lemma": "offentlig sektor/en",
     "english": "the public sector",
@@ -2121,6 +2320,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-200",
     "norsk": "om lag",
     "lemma": "om lag",
     "english": "approximately, about",
@@ -2132,6 +2332,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-201",
     "norsk": "omtale som",
     "lemma": "omtale som",
     "english": "to refer to as, to describe as",
@@ -2143,6 +2344,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-202",
     "norsk": "opp mot",
     "lemma": "opp mot",
     "english": "up to, as many as, against",
@@ -2154,6 +2356,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-203",
     "norsk": "orientere seg",
     "lemma": "orientere seg",
     "english": "to orientate oneself, to get one's bearings, to familiarize oneself",
@@ -2165,6 +2368,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-204",
     "norsk": "overlate til noen",
     "lemma": "overlate til noen",
     "english": "to leave something to someone, to entrust to someone",
@@ -2176,6 +2380,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-205",
     "norsk": "personlig forbruk",
     "lemma": "personlig forbruk",
     "english": "personal consumption, private spending",
@@ -2187,6 +2392,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-206",
     "norsk": "praktisk talt",
     "lemma": "praktisk talt",
     "english": "practically, virtually, almost",
@@ -2198,6 +2404,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-207",
     "norsk": "prisen å betale",
     "lemma": "prisen å betale",
     "english": "the price to pay, the cost",
@@ -2208,6 +2415,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-208",
     "norsk": "på bekostning av",
     "lemma": "på bekostning av",
     "english": "at the expense of",
@@ -2218,6 +2426,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-209",
     "norsk": "på godt og vondt",
     "lemma": "på godt og vondt",
     "english": "for better or worse, through thick and thin",
@@ -2228,6 +2437,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-210",
     "norsk": "på kort varsel",
     "lemma": "på kort varsel",
     "english": "at short notice, at short order",
@@ -2238,6 +2448,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-211",
     "norsk": "på kryss og tvers",
     "lemma": "på kryss og tvers",
     "english": "criss-cross, in all directions, all over the place",
@@ -2248,6 +2459,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-212",
     "norsk": "på lang sikt",
     "lemma": "på lang sikt",
     "english": "in the long run, long-term",
@@ -2259,6 +2471,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-213",
     "norsk": "på livstid",
     "lemma": "på livstid",
     "english": "for life, life-long",
@@ -2269,6 +2482,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-214",
     "norsk": "på repeat",
     "lemma": "på repeat",
     "english": "on repeat",
@@ -2280,6 +2494,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-215",
     "norsk": "på sitt beste",
     "lemma": "på sitt beste",
     "english": "at one's best, at its finest",
@@ -2290,6 +2505,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-216",
     "norsk": "på slep",
     "lemma": "på slep",
     "english": "in tow, trailing behind",
@@ -2301,6 +2517,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-217",
     "norsk": "på tvers av",
     "lemma": "på tvers av",
     "english": "across, contrary to",
@@ -2312,6 +2529,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-218",
     "norsk": "på tvers av landegrenser",
     "lemma": "på tvers av landegrenser",
     "english": "across national borders",
@@ -2323,6 +2541,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-219",
     "norsk": "på vegne av",
     "lemma": "på vegne av",
     "english": "on behalf of",
@@ -2333,6 +2552,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-220",
     "norsk": "påse ut",
     "lemma": "påse ut",
     "english": "to make sure, to ensure",
@@ -2344,6 +2564,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-221",
     "norsk": "rakke ned på",
     "lemma": "rakke ned på",
     "english": "to badmouth, to run down",
@@ -2355,6 +2576,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-222",
     "norsk": "regne med",
     "lemma": "regne med",
     "english": "to expect, to count on",
@@ -2366,6 +2588,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-223",
     "norsk": "reise tiltale mot",
     "lemma": "reise tiltale mot",
     "english": "to press charges against, to prosecute",
@@ -2377,6 +2600,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-224",
     "norsk": "rett og slett",
     "lemma": "rett og slett",
     "english": "simply, just, plain and simple",
@@ -2388,6 +2612,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-225",
     "norsk": "rette søkelyset mot",
     "lemma": "rette søkelyset mot",
     "english": "to direct the spotlight at, to focus attention on",
@@ -2399,6 +2624,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-226",
     "norsk": "romslig økonomi",
     "lemma": "romslig økonomi",
     "english": "comfortable economy, generous financial situation",
@@ -2410,6 +2636,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-227",
     "norsk": "ruste for",
     "lemma": "ruste for",
     "english": "to equip for, to prepare for",
@@ -2421,6 +2648,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-228",
     "norsk": "se langt etter",
     "lemma": "se langt etter",
     "english": "to whistle for, to forget about getting",
@@ -2432,6 +2660,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-229",
     "norsk": "sette i sentrum",
     "lemma": "sette i sentrum",
     "english": "to place at the centre, to prioritize",
@@ -2443,6 +2672,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-230",
     "norsk": "sette ord på",
     "lemma": "sette ord på",
     "english": "to put into words, to express verbally",
@@ -2454,6 +2684,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-231",
     "norsk": "sette seg inn i",
     "lemma": "sette seg inn i",
     "english": "to familiarize oneself with, to study thoroughly",
@@ -2465,6 +2696,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-232",
     "norsk": "sette under press",
     "lemma": "sette under press",
     "english": "to put under pressure, to pressure",
@@ -2476,6 +2708,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-233",
     "norsk": "sette ut på anbud",
     "lemma": "sette ut på anbud",
     "english": "to put out to tender, to open for competitive bidding",
@@ -2487,6 +2720,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-234",
     "norsk": "sikte til",
     "lemma": "sikte til",
     "english": "to refer to, to allude to",
@@ -2497,6 +2731,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-235",
     "norsk": "sirkle rundt",
     "lemma": "sirkle rundt",
     "english": "to circle around, to hover around",
@@ -2508,6 +2743,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-236",
     "norsk": "Sist, men ikke minst",
     "lemma": "Sist, men ikke minst",
     "english": "last but not least",
@@ -2518,6 +2754,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-237",
     "norsk": "sitte på gjerdet",
     "lemma": "sitte på gjerdet",
     "english": "to sit on the fence, to be undecided",
@@ -2529,6 +2766,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-238",
     "norsk": "skape motvekt til",
     "lemma": "skape motvekt til",
     "english": "to create a counterbalance to, to counteract",
@@ -2540,6 +2778,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-239",
     "norsk": "skifte ut",
     "lemma": "skifte ut",
     "english": "to replace, to swap out",
@@ -2551,6 +2790,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-240",
     "norsk": "skjelle ut",
     "lemma": "skjelle ut",
     "english": "to scold, to berate, to yell at",
@@ -2562,6 +2802,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-241",
     "norsk": "skjerpe seg",
     "lemma": "skjerpe seg",
     "english": "to shape up, to pull oneself together",
@@ -2573,6 +2814,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-242",
     "norsk": "skli ut",
     "lemma": "skli ut",
     "english": "to slip up, to go off track, to get out of control",
@@ -2584,6 +2826,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-243",
     "norsk": "skyte fart",
     "lemma": "skyte fart",
     "english": "to pick up speed, to gain momentum",
@@ -2595,6 +2838,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-244",
     "norsk": "slutte seg til",
     "lemma": "slutte seg til",
     "english": "to join, to adhere to, to agree with",
@@ -2606,6 +2850,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-245",
     "norsk": "slå gjennom",
     "lemma": "slå gjennom",
     "english": "to break through, to make it, to achieve success",
@@ -2617,6 +2862,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-246",
     "norsk": "smile fra øre til øre",
     "lemma": "smile fra øre til øre",
     "english": "to grin from ear to ear, to beam with joy",
@@ -2628,6 +2874,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-247",
     "norsk": "snakke ned nose",
     "lemma": "snakke ned nose",
     "english": "to talk down to someone, to speak condescendingly",
@@ -2639,6 +2886,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-248",
     "norsk": "som følge av",
     "lemma": "som følge av",
     "english": "as a result of, as a consequence of",
@@ -2649,6 +2897,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-249",
     "norsk": "som regel",
     "lemma": "som regel",
     "english": "as a rule, usually, generally",
@@ -2659,6 +2908,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-250",
     "norsk": "som skapt for",
     "lemma": "som skapt for",
     "english": "made for, perfectly suited to",
@@ -2669,6 +2919,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-251",
     "norsk": "sosial dumping",
     "lemma": "sosial dumping",
     "english": "social dumping, undercutting wages and conditions",
@@ -2679,6 +2930,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-252",
     "norsk": "spille på følelser",
     "lemma": "spille på følelser",
     "english": "to play on emotions, to appeal to emotions",
@@ -2690,6 +2942,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-253",
     "norsk": "stadig vekk",
     "lemma": "stadig vekk",
     "english": "constantly, all the time, repeatedly",
@@ -2700,6 +2953,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-254",
     "norsk": "stikke dypt",
     "lemma": "stikke dypt",
     "english": "to cut deep, to hurt deeply, to run deep",
@@ -2711,6 +2965,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-255",
     "norsk": "stikke seg ut",
     "lemma": "stikke seg ut",
     "english": "to stand out",
@@ -2722,6 +2977,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-256",
     "norsk": "stille høye krav",
     "lemma": "stille høye krav",
     "english": "to set high standards / to demand a lot",
@@ -2733,6 +2989,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-257",
     "norsk": "stille til ansvar",
     "lemma": "stille til ansvar",
     "english": "to hold accountable / to call to account",
@@ -2744,6 +3001,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-258",
     "norsk": "stille til rådighet",
     "lemma": "stille til rådighet",
     "english": "to make available / to provide",
@@ -2755,6 +3013,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-259",
     "norsk": "stole på",
     "lemma": "stole på",
     "english": "to trust / to rely on",
@@ -2766,6 +3025,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-260",
     "norsk": "stolt av",
     "lemma": "stolt av",
     "english": "proud of",
@@ -2777,6 +3037,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-261",
     "norsk": "stort sett",
     "lemma": "stort sett",
     "english": "mostly / generally / by and large",
@@ -2788,6 +3049,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-262",
     "norsk": "stue seg sammen",
     "lemma": "stue seg sammen",
     "english": "to crowd together / to cram together",
@@ -2799,6 +3061,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-263",
     "norsk": "stå ansvarlig for",
     "lemma": "stå ansvarlig for",
     "english": "to be responsible for / to be accountable for",
@@ -2810,6 +3073,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-264",
     "norsk": "stå for",
     "lemma": "stå for",
     "english": "to stand for / to represent / to believe in",
@@ -2821,6 +3085,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-265",
     "norsk": "så det monner",
     "lemma": "så det monner",
     "english": "significantly, enough to make a real difference",
@@ -2831,6 +3096,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-266",
     "norsk": "så å si",
     "lemma": "så å si",
     "english": "so to speak, as it were, practically",
@@ -2841,6 +3107,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-267",
     "norsk": "søren meg",
     "lemma": "søren meg",
     "english": "good grief, damn it, blimey",
@@ -2851,6 +3118,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-268",
     "norsk": "ta av",
     "lemma": "ta av",
     "english": "to take off / to boom / to skyrocket",
@@ -2862,6 +3130,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-269",
     "norsk": "ta beslutninger",
     "lemma": "ta beslutninger",
     "english": "to make decisions",
@@ -2873,6 +3142,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-270",
     "norsk": "ta for gitt",
     "lemma": "ta for gitt",
     "english": "to take for granted",
@@ -2884,6 +3154,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-271",
     "norsk": "ta fyr",
     "lemma": "ta fyr",
     "english": "to catch fire; to flare up",
@@ -2895,6 +3166,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-272",
     "norsk": "ta noen grep",
     "lemma": "ta noen grep",
     "english": "to take some measures; to take action",
@@ -2906,6 +3178,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-273",
     "norsk": "ta opp",
     "lemma": "ta opp",
     "english": "to bring up, to raise (a topic)",
@@ -2916,6 +3189,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-274",
     "norsk": "ta poenget",
     "lemma": "ta poenget",
     "english": "to get the point; to understand the point",
@@ -2927,6 +3201,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-275",
     "norsk": "ta på alvor",
     "lemma": "ta på alvor",
     "english": "to take seriously",
@@ -2938,6 +3213,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-276",
     "norsk": "ta sin tid",
     "lemma": "ta sin tid",
     "english": "to take one's time; to take a while",
@@ -2949,6 +3225,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-277",
     "norsk": "ta stilling til",
     "lemma": "ta stilling til",
     "english": "to take a stance on; to address",
@@ -2960,6 +3237,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-278",
     "norsk": "ta til takke med",
     "lemma": "ta til takke med",
     "english": "to make do with; to settle for",
@@ -2971,6 +3249,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-279",
     "norsk": "ta til tårene",
     "lemma": "ta til tårene",
     "english": "to burst into tears; to start crying",
@@ -2982,6 +3261,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-280",
     "norsk": "takket være",
     "lemma": "takket være",
     "english": "thanks to; owing to",
@@ -2993,6 +3273,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-281",
     "norsk": "til alle tider",
     "lemma": "til alle tider",
     "english": "at all times; throughout all ages; always",
@@ -3004,6 +3285,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-282",
     "norsk": "til enhver tid",
     "lemma": "til enhver tid",
     "english": "at all times; at any given time",
@@ -3015,6 +3297,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-283",
     "norsk": "til overs",
     "lemma": "til overs",
     "english": "left over, remaining",
@@ -3026,6 +3309,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-284",
     "norsk": "til sammenligning",
     "lemma": "til sammenligning",
     "english": "by comparison, for comparison",
@@ -3036,6 +3320,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-285",
     "norsk": "til tider",
     "lemma": "til tider",
     "english": "at times, sometimes",
@@ -3047,6 +3332,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-286",
     "norsk": "tilbringe tid med",
     "lemma": "tilbringe tid med",
     "english": "to spend time with",
@@ -3058,6 +3344,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-287",
     "norsk": "tilby seg",
     "lemma": "tilby seg",
     "english": "to volunteer, to offer to do something",
@@ -3069,6 +3356,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-288",
     "norsk": "tilby tilbød, tilbudt",
     "lemma": "tilby tilbød, tilbudt",
     "english": "to offer",
@@ -3080,6 +3368,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-289",
     "norsk": "tilgang til",
     "lemma": "tilgang til",
     "english": "access to",
@@ -3091,6 +3380,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-290",
     "norsk": "tilnærmet alle",
     "lemma": "tilnærmet alle",
     "english": "virtually everyone, almost all",
@@ -3101,6 +3391,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-291",
     "norsk": "tingenes tilstand",
     "lemma": "tingenes tilstand",
     "english": "the state of things, the current situation",
@@ -3111,6 +3402,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-292",
     "norsk": "toppe laget",
     "lemma": "toppe laget",
     "english": "to top the team, to be the best player on the team",
@@ -3122,6 +3414,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-293",
     "norsk": "Toppen av lykke",
     "lemma": "Toppen av lykke",
     "english": "the peak of happiness, absolute bliss",
@@ -3132,6 +3425,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-294",
     "norsk": "totalitær stat/en",
     "lemma": "totalitær stat/en",
     "english": "a totalitarian state",
@@ -3143,6 +3437,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-295",
     "norsk": "tre i kraft",
     "lemma": "tre i kraft",
     "english": "to come into effect, to take effect",
@@ -3154,6 +3449,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-296",
     "norsk": "treffe rett i hjertet",
     "lemma": "treffe rett i hjertet",
     "english": "to touch deeply, to hit right in the heart",
@@ -3165,6 +3461,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-297",
     "norsk": "treffe spikeren på hodet",
     "lemma": "treffe spikeren på hodet",
     "english": "to hit the nail on the head",
@@ -3176,6 +3473,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-298",
     "norsk": "trekke seg tilbake",
     "lemma": "trekke seg tilbake",
     "english": "to withdraw, to retreat, to step back",
@@ -3187,6 +3485,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-299",
     "norsk": "tross alt",
     "lemma": "tross alt",
     "english": "after all, despite everything",
@@ -3198,6 +3497,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-300",
     "norsk": "uavhengig av",
     "lemma": "uavhengig av",
     "english": "regardless of, independent of, irrespective of",
@@ -3208,6 +3508,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-301",
     "norsk": "utpeke seg",
     "lemma": "utpeke seg",
     "english": "to stand out / to distinguish oneself",
@@ -3219,6 +3520,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-302",
     "norsk": "ved hjelp av",
     "lemma": "ved hjelp av",
     "english": "with the help of, by means of",
@@ -3229,6 +3531,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-303",
     "norsk": "vedde på",
     "lemma": "vedde på",
     "english": "to bet on",
@@ -3240,6 +3543,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-304",
     "norsk": "vekke oppmerksomhet",
     "lemma": "vekke oppmerksomhet",
     "english": "to attract attention / to draw attention",
@@ -3251,6 +3555,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-305",
     "norsk": "vekke oppsikt",
     "lemma": "vekke oppsikt",
     "english": "to cause a sensation / to turn heads",
@@ -3262,6 +3567,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-306",
     "norsk": "vekt på",
     "lemma": "vekt på",
     "english": "emphasis on / weight on",
@@ -3273,6 +3579,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-307",
     "norsk": "vie seg til",
     "lemma": "vie seg til",
     "english": "to dedicate oneself to / to devote oneself to",
@@ -3284,6 +3591,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-308",
     "norsk": "vise seg",
     "lemma": "vise seg",
     "english": "to turn out / to prove to be",
@@ -3295,6 +3603,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-309",
     "norsk": "vurdering for læring",
     "lemma": "vurdering for læring",
     "english": "assessment for learning, formative assessment",
@@ -3305,6 +3614,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-310",
     "norsk": "væpnede styrker",
     "lemma": "væpnede styrker",
     "english": "armed forces",
@@ -3316,6 +3626,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-311",
     "norsk": "være bevisst på",
     "lemma": "være bevisst på",
     "english": "to be aware of / to be conscious of",
@@ -3327,6 +3638,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-312",
     "norsk": "være forbeholdt",
     "lemma": "være forbeholdt",
     "english": "to be reserved for / to be restricted to",
@@ -3338,6 +3650,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-313",
     "norsk": "være forgjeves",
     "lemma": "være forgjeves",
     "english": "to be in vain / to be futile",
@@ -3349,6 +3662,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-314",
     "norsk": "være i fare for",
     "lemma": "være i fare for",
     "english": "to be at risk of / to be in danger of",
@@ -3360,6 +3674,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-315",
     "norsk": "være innstilt på",
     "lemma": "være innstilt på",
     "english": "to be prepared for / to be set on",
@@ -3371,6 +3686,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-316",
     "norsk": "være klar over",
     "lemma": "være klar over",
     "english": "to be aware of",
@@ -3382,6 +3698,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-317",
     "norsk": "være nedfelt",
     "lemma": "være nedfelt",
     "english": "to be enshrined / to be laid down",
@@ -3393,6 +3710,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-318",
     "norsk": "være nødt til",
     "lemma": "være nødt til",
     "english": "to have to / to be forced to",
@@ -3404,6 +3722,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-319",
     "norsk": "være oppkalt etter",
     "lemma": "være oppkalt etter",
     "english": "to be named after",
@@ -3415,6 +3734,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-320",
     "norsk": "være opplyst om",
     "lemma": "være opplyst om",
     "english": "to be informed about",
@@ -3426,6 +3746,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-321",
     "norsk": "være preget av",
     "lemma": "være preget av",
     "english": "to be characterized by / to be marked by",
@@ -3437,6 +3758,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-322",
     "norsk": "være på hils med",
     "lemma": "være på hils med",
     "english": "to be on nodding terms with / to barely know",
@@ -3448,6 +3770,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-323",
     "norsk": "være rettet mot",
     "lemma": "være rettet mot",
     "english": "to be aimed at / to be directed at",
@@ -3459,6 +3782,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-324",
     "norsk": "være rustet",
     "lemma": "være rustet",
     "english": "to be equipped / to be prepared",
@@ -3470,6 +3794,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-325",
     "norsk": "være skrudd sammen",
     "lemma": "være skrudd sammen",
     "english": "to be wired / to be put together (psychologically)",
@@ -3481,6 +3806,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-326",
     "norsk": "være takknemlig for",
     "lemma": "være takknemlig for",
     "english": "to be grateful for",
@@ -3492,6 +3818,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-327",
     "norsk": "være tilfelle",
     "lemma": "være tilfelle",
     "english": "to be the case",
@@ -3503,6 +3830,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-328",
     "norsk": "være tilfreds med",
     "lemma": "være tilfreds med",
     "english": "to be satisfied with / to be content with",
@@ -3514,6 +3842,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-329",
     "norsk": "være utsatt",
     "lemma": "være utsatt",
     "english": "to be exposed (to), to be vulnerable (to)",
@@ -3525,6 +3854,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-330",
     "norsk": "ytre seg",
     "lemma": "ytre seg",
     "english": "to express oneself, to speak out",
@@ -3536,6 +3866,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-331",
     "norsk": "«ha bagasje»",
     "lemma": "«ha bagasje»",
     "english": "to have baggage (emotional past experiences)",
@@ -3547,6 +3878,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-332",
     "norsk": "«i fredstid»",
     "lemma": "«i fredstid»",
     "english": "in peacetime / in normal times",
@@ -3558,6 +3890,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-333",
     "norsk": "«Misforstå meg rett»",
     "lemma": "«Misforstå meg rett»",
     "english": "don't get me wrong",
@@ -3569,6 +3902,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-334",
     "norsk": "«tegner et dystert framtidsbilde»",
     "lemma": "«tegner et dystert framtidsbilde»",
     "english": "\"paints a bleak picture of the future\"",
@@ -3580,6 +3914,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-335",
     "norsk": "å aldri tvile",
     "lemma": "å aldri tvile",
     "english": "to never doubt, to have complete conviction",
@@ -3590,6 +3925,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-336",
     "norsk": "å avgjøre om",
     "lemma": "å avgjøre om",
     "english": "to decide whether, to determine whether",
@@ -3600,6 +3936,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-337",
     "norsk": "å basere noe på",
     "lemma": "å basere noe på",
     "english": "to base something on, to found something on",
@@ -3610,6 +3947,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-338",
     "norsk": "å begripe seg på",
     "lemma": "å begripe seg på",
     "english": "to make sense of, to understand, to get one's head around",
@@ -3620,6 +3958,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-339",
     "norsk": "å benytte seg av",
     "lemma": "å benytte seg av",
     "english": "to make use of, to take advantage of, to utilize",
@@ -3630,6 +3969,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-340",
     "norsk": "å betale prisen",
     "lemma": "å betale prisen",
     "english": "to pay the price, to face the consequences",
@@ -3640,6 +3980,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-341",
     "norsk": "å bidra til",
     "lemma": "å bidra til",
     "english": "to contribute to, to help bring about",
@@ -3650,6 +3991,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-342",
     "norsk": "å bidra til fellesskapet",
     "lemma": "å bidra til fellesskapet",
     "english": "to contribute to the community, to give back to society",
@@ -3660,6 +4002,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-343",
     "norsk": "å bidra til samfunnet",
     "lemma": "å bidra til samfunnet",
     "english": "to contribute to society",
@@ -3670,6 +4013,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-344",
     "norsk": "å bli dømt til",
     "lemma": "å bli dømt til",
     "english": "to be sentenced to, to be convicted to",
@@ -3680,6 +4024,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-345",
     "norsk": "å bli en del av noe",
     "lemma": "å bli en del av noe",
     "english": "to become part of something, to be included",
@@ -3690,6 +4035,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-346",
     "norsk": "å bli hyllet for",
     "lemma": "å bli hyllet for",
     "english": "to be acclaimed for, to be praised for",
@@ -3700,6 +4046,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-347",
     "norsk": "å bli isolert",
     "lemma": "å bli isolert",
     "english": "to become isolated, to be cut off",
@@ -3710,6 +4057,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-348",
     "norsk": "å bli lurt trill rundt",
     "lemma": "å bli lurt trill rundt",
     "english": "to be completely deceived, to be taken for a complete ride",
@@ -3720,6 +4068,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-349",
     "norsk": "å bli løslatt på prøve",
     "lemma": "å bli løslatt på prøve",
     "english": "to be released on parole",
@@ -3730,6 +4079,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-350",
     "norsk": "å bli motivert av",
     "lemma": "å bli motivert av",
     "english": "to be motivated by, to be driven by",
@@ -3740,6 +4090,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-351",
     "norsk": "å bli oppfordret til",
     "lemma": "å bli oppfordret til",
     "english": "to be encouraged to, to be urged to",
@@ -3750,6 +4101,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-352",
     "norsk": "å bli rammet av",
     "lemma": "å bli rammet av",
     "english": "to be hit by, to be struck by, to be affected by",
@@ -3760,6 +4112,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-353",
     "norsk": "å bli skuffet",
     "lemma": "å bli skuffet",
     "english": "to be disappointed",
@@ -3770,6 +4123,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-354",
     "norsk": "å bli styrt av",
     "lemma": "å bli styrt av",
     "english": "to be driven by, to be governed by, to be ruled by",
@@ -3780,6 +4134,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-355",
     "norsk": "å bli tatt på senga",
     "lemma": "å bli tatt på senga",
     "english": "to be caught off guard, to be taken by surprise",
@@ -3790,6 +4145,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-356",
     "norsk": "å bli utsatt for",
     "lemma": "å bli utsatt for",
     "english": "to be exposed to, to be subjected to, to be subjected to",
@@ -3800,6 +4156,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-357",
     "norsk": "å bli utvist",
     "lemma": "å bli utvist",
     "english": "to be expelled, to be sent off, to be deported",
@@ -3810,6 +4167,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-358",
     "norsk": "å bry seg om",
     "lemma": "å bry seg om",
     "english": "to care about, to be concerned about",
@@ -3820,6 +4178,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-359",
     "norsk": "å bære galt av sted",
     "lemma": "å bære galt av sted",
     "english": "to go badly wrong, to go off the rails",
@@ -3830,6 +4189,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-360",
     "norsk": "å dilte etter",
     "lemma": "å dilte etter",
     "english": "to trail behind, to tag along, to follow blindly",
@@ -3840,6 +4200,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-361",
     "norsk": "å ende opp med",
     "lemma": "å ende opp med",
     "english": "to end up with, to wind up",
@@ -3850,6 +4211,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-362",
     "norsk": "å fase ut",
     "lemma": "å fase ut",
     "english": "to phase out, to gradually eliminate",
@@ -3860,6 +4222,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-363",
     "norsk": "å forsørge seg selv",
     "lemma": "å forsørge seg selv",
     "english": "to support oneself, to be self-sufficient",
@@ -3870,6 +4233,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-364",
     "norsk": "å framstille noe/noen som",
     "lemma": "å framstille noe/noen som",
     "english": "to portray something/someone as, to present as",
@@ -3880,6 +4244,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-365",
     "norsk": "å få fotfeste",
     "lemma": "å få fotfeste",
     "english": "to gain a foothold, to get established",
@@ -3890,6 +4255,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-366",
     "norsk": "å få inntrykk av",
     "lemma": "å få inntrykk av",
     "english": "to get the impression of, to gather that",
@@ -3900,6 +4266,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-367",
     "norsk": "å få lønna til å strekke til",
     "lemma": "å få lønna til å strekke til",
     "english": "to make one's wage stretch, to make ends meet",
@@ -3910,6 +4277,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-368",
     "norsk": "å få mulighet til",
     "lemma": "å få mulighet til",
     "english": "to get the opportunity to, to have the chance to",
@@ -3920,6 +4288,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-369",
     "norsk": "å få opp øynene",
     "lemma": "å få opp øynene",
     "english": "to have one's eyes opened, to realize",
@@ -3930,6 +4299,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-370",
     "norsk": "å få samfunnet til å gå rundt",
     "lemma": "å få samfunnet til å gå rundt",
     "english": "to keep society running, to make society function",
@@ -3940,6 +4310,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-371",
     "norsk": "å få selvtillit",
     "lemma": "å få selvtillit",
     "english": "to gain self-confidence, to build confidence",
@@ -3950,6 +4321,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-372",
     "norsk": "å få skikk på livet",
     "lemma": "å få skikk på livet",
     "english": "to get one's life in order, to sort one's life out",
@@ -3960,6 +4332,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-373",
     "norsk": "å få til",
     "lemma": "å få til",
     "english": "to manage to, to succeed in, to pull off",
@@ -3970,6 +4343,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-374",
     "norsk": "å få tunnelsyn",
     "lemma": "å få tunnelsyn",
     "english": "to get tunnel vision, to become narrow-minded",
@@ -3980,6 +4354,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-375",
     "norsk": "å føle seg trygg med",
     "lemma": "å føle seg trygg med",
     "english": "to feel safe with, to feel comfortable with",
@@ -3990,6 +4365,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-376",
     "norsk": "å følge med i nyhetsbildet",
     "lemma": "å følge med i nyhetsbildet",
     "english": "to follow the news, to keep up with current events",
@@ -4000,6 +4376,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-377",
     "norsk": "å følge med på",
     "lemma": "å følge med på",
     "english": "to keep track of, to follow, to pay attention to",
@@ -4010,6 +4387,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-378",
     "norsk": "å følge noens eksempel",
     "lemma": "å følge noens eksempel",
     "english": "to follow someone's example, to emulate someone",
@@ -4020,6 +4398,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-379",
     "norsk": "å følge opp",
     "lemma": "å følge opp",
     "english": "to follow up, to follow through, to monitor",
@@ -4030,6 +4409,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-380",
     "norsk": "å føre med seg",
     "lemma": "å føre med seg",
     "english": "to bring about, to lead to, to entail",
@@ -4040,6 +4420,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-381",
     "norsk": "å gi avkall på",
     "lemma": "å gi avkall på",
     "english": "to give up, to forgo, to renounce",
@@ -4050,6 +4431,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-382",
     "norsk": "å gi seg ut for",
     "lemma": "å gi seg ut for",
     "english": "to pose as, to pretend to be, to pass oneself off as",
@@ -4060,6 +4442,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-383",
     "norsk": "å gi tilgang til",
     "lemma": "å gi tilgang til",
     "english": "to give access to, to provide access to",
@@ -4070,6 +4453,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-384",
     "norsk": "å gi utslag i",
     "lemma": "å gi utslag i",
     "english": "to result in, to manifest as, to show up as",
@@ -4080,6 +4464,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-385",
     "norsk": "å gjøre en forskjell",
     "lemma": "å gjøre en forskjell",
     "english": "to make a difference",
@@ -4090,6 +4475,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-386",
     "norsk": "å gjøre en innsats",
     "lemma": "å gjøre en innsats",
     "english": "to make an effort, to put in effort",
@@ -4100,6 +4486,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-387",
     "norsk": "å gjøre noe meningsfylt",
     "lemma": "å gjøre noe meningsfylt",
     "english": "to do something meaningful, to do something worthwhile",
@@ -4110,6 +4497,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-388",
     "norsk": "å gjøre seg fortjent til",
     "lemma": "å gjøre seg fortjent til",
     "english": "to earn, to deserve through effort",
@@ -4120,6 +4508,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-389",
     "norsk": "å gjøre til sitt eget",
     "lemma": "å gjøre til sitt eget",
     "english": "to make one's own, to adapt to one's own style",
@@ -4130,6 +4519,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-390",
     "norsk": "å glede seg over",
     "lemma": "å glede seg over",
     "english": "to be pleased about, to take pleasure in",
@@ -4140,6 +4530,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-391",
     "norsk": "å gripe inn",
     "lemma": "å gripe inn",
     "english": "to intervene, to step in",
@@ -4150,6 +4541,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-392",
     "norsk": "å gå altfor langt",
     "lemma": "å gå altfor langt",
     "english": "to go too far, to cross the line",
@@ -4160,6 +4552,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-393",
     "norsk": "å gå foran",
     "lemma": "å gå foran",
     "english": "to lead the way, to set an example",
@@ -4170,6 +4563,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-394",
     "norsk": "å gå mot strømmen",
     "lemma": "å gå mot strømmen",
     "english": "to go against the current, to swim against the tide",
@@ -4180,6 +4574,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-395",
     "norsk": "å gå over til",
     "lemma": "å gå over til",
     "english": "to switch to, to transition to",
@@ -4190,6 +4585,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-396",
     "norsk": "å gå på rundgang",
     "lemma": "å gå på rundgang",
     "english": "to do the rounds, to circulate, to go around",
@@ -4200,6 +4596,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-397",
     "norsk": "å gå rett i lomma på",
     "lemma": "å gå rett i lomma på",
     "english": "to go straight into the pocket of, to benefit financially",
@@ -4210,6 +4607,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-398",
     "norsk": "å gå ut på",
     "lemma": "å gå ut på",
     "english": "to consist in, to be about, to involve",
@@ -4220,6 +4618,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-399",
     "norsk": "å ha bruk for",
     "lemma": "å ha bruk for",
     "english": "to have use for, to need",
@@ -4230,6 +4629,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-400",
     "norsk": "å ha det siste ordet",
     "lemma": "å ha det siste ordet",
     "english": "to have the last word, to have the final say",
@@ -4240,6 +4640,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-401",
     "norsk": "å ha en følelse av",
     "lemma": "å ha en følelse av",
     "english": "to have a feeling of, to have a sense of",
@@ -4250,6 +4651,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-402",
     "norsk": "å ha godt av noe",
     "lemma": "å ha godt av noe",
     "english": "to benefit from something, to do one good",
@@ -4260,6 +4662,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-403",
     "norsk": "å ha høy grad av noe",
     "lemma": "å ha høy grad av noe",
     "english": "to have a high degree of something",
@@ -4270,6 +4673,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-404",
     "norsk": "å ha i bakhodet",
     "lemma": "å ha i bakhodet",
     "english": "to bear in mind, to keep in the back of one's mind",
@@ -4280,6 +4684,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-405",
     "norsk": "å ha kapasitet til",
     "lemma": "å ha kapasitet til",
     "english": "to have the capacity to, to have the resources for",
@@ -4290,6 +4695,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-406",
     "norsk": "å ha kjennskap til",
     "lemma": "å ha kjennskap til",
     "english": "to have knowledge of, to be familiar with",
@@ -4300,6 +4706,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-407",
     "norsk": "å ha krav på noe",
     "lemma": "å ha krav på noe",
     "english": "to be entitled to something, to have a right to",
@@ -4310,6 +4717,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-408",
     "norsk": "å ha mye på hjertet",
     "lemma": "å ha mye på hjertet",
     "english": "to have a lot on one's mind, to have much to say",
@@ -4320,6 +4728,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-409",
     "norsk": "å ha mye til felles",
     "lemma": "å ha mye til felles",
     "english": "to have a lot in common",
@@ -4330,6 +4739,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-410",
     "norsk": "å ha oversikt over",
     "lemma": "å ha oversikt over",
     "english": "to have an overview of, to have a grasp of",
@@ -4340,6 +4750,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-411",
     "norsk": "å ha overskudd til",
     "lemma": "å ha overskudd til",
     "english": "to have the energy to, to have the capacity for",
@@ -4350,6 +4761,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-412",
     "norsk": "å ha potensial til",
     "lemma": "å ha potensial til",
     "english": "to have the potential to, to have what it takes",
@@ -4360,6 +4772,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-413",
     "norsk": "å ha rulleblad",
     "lemma": "å ha rulleblad",
     "english": "to have a criminal record",
@@ -4370,6 +4783,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-414",
     "norsk": "å ha stor betydning for",
     "lemma": "å ha stor betydning for",
     "english": "to be of great importance to, to matter greatly for",
@@ -4380,6 +4794,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-415",
     "norsk": "å ha tilgang til",
     "lemma": "å ha tilgang til",
     "english": "to have access to",
@@ -4390,6 +4805,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-416",
     "norsk": "å ha tiltro til",
     "lemma": "å ha tiltro til",
     "english": "to have confidence in, to trust",
@@ -4400,6 +4816,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-417",
     "norsk": "å ha utbytte av",
     "lemma": "å ha utbytte av",
     "english": "to benefit from, to gain from",
@@ -4410,6 +4827,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-418",
     "norsk": "å havne på førsteplass",
     "lemma": "å havne på førsteplass",
     "english": "to end up in first place, to come first",
@@ -4420,6 +4838,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-419",
     "norsk": "å heie fram",
     "lemma": "å heie fram",
     "english": "to encourage, to cheer forward, to support actively",
@@ -4430,6 +4849,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-420",
     "norsk": "å heie på",
     "lemma": "å heie på",
     "english": "to cheer on, to root for",
@@ -4440,6 +4860,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-421",
     "norsk": "å henge med venner",
     "lemma": "å henge med venner",
     "english": "to hang out with friends",
@@ -4450,6 +4871,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-422",
     "norsk": "å henge sammen",
     "lemma": "å henge sammen",
     "english": "to hang together, to be connected, to make sense",
@@ -4460,6 +4882,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-423",
     "norsk": "å henvende seg til",
     "lemma": "å henvende seg til",
     "english": "to address, to turn to, to contact",
@@ -4470,6 +4893,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-424",
     "norsk": "å holde kjeft",
     "lemma": "å holde kjeft",
     "english": "to keep quiet, to shut up",
@@ -4480,6 +4904,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-425",
     "norsk": "å holde samfunnet i gang",
     "lemma": "å holde samfunnet i gang",
     "english": "to keep society running, to keep things functioning",
@@ -4490,6 +4915,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-426",
     "norsk": "å hvile på laurbærene",
     "lemma": "å hvile på laurbærene",
     "english": "to rest on one's laurels, to be complacent after success",
@@ -4500,6 +4926,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-427",
     "norsk": "å ikke finne seg i",
     "lemma": "å ikke finne seg i",
     "english": "not to put up with, not to tolerate",
@@ -4510,6 +4937,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-428",
     "norsk": "å innføre tiltak",
     "lemma": "å innføre tiltak",
     "english": "to introduce measures, to implement measures",
@@ -4520,6 +4948,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-429",
     "norsk": "å innrette seg",
     "lemma": "å innrette seg",
     "english": "to adapt, to adjust, to organise one's life",
@@ -4530,6 +4959,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-430",
     "norsk": "å jobbe seg opp fra gulvet",
     "lemma": "å jobbe seg opp fra gulvet",
     "english": "to work one's way up from nothing, to start from the bottom",
@@ -4540,6 +4970,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-431",
     "norsk": "å jukse seg til",
     "lemma": "å jukse seg til",
     "english": "to cheat one's way to, to obtain by cheating",
@@ -4550,6 +4981,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-432",
     "norsk": "å kaste penger ut av vinduet",
     "lemma": "å kaste penger ut av vinduet",
     "english": "to throw money out of the window, to waste money",
@@ -4560,6 +4992,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-433",
     "norsk": "å koble av",
     "lemma": "å koble av",
     "english": "to unwind, to switch off, to relax",
@@ -4570,6 +5003,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-434",
     "norsk": "å komme fram til",
     "lemma": "å komme fram til",
     "english": "to arrive at, to reach, to come to",
@@ -4580,6 +5014,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-435",
     "norsk": "å komme i skade for",
     "lemma": "å komme i skade for",
     "english": "to accidentally end up doing, to do by mistake",
@@ -4590,6 +5025,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-436",
     "norsk": "å komme noen til gode",
     "lemma": "å komme noen til gode",
     "english": "to benefit someone, to be of benefit to",
@@ -4600,6 +5036,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-437",
     "norsk": "å komme til bunns i",
     "lemma": "å komme til bunns i",
     "english": "to get to the bottom of, to fully understand",
@@ -4610,6 +5047,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-438",
     "norsk": "å komme til orde",
     "lemma": "å komme til orde",
     "english": "to get a word in, to be given a chance to speak",
@@ -4620,6 +5058,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-439",
     "norsk": "å komme til uttrykk",
     "lemma": "å komme til uttrykk",
     "english": "to be expressed, to manifest, to find expression",
@@ -4630,6 +5069,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-440",
     "norsk": "å lide under",
     "lemma": "å lide under",
     "english": "to suffer under, to be harmed by",
@@ -4640,6 +5080,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-441",
     "norsk": "å lønne seg",
     "lemma": "å lønne seg",
     "english": "to pay off, to be worth it",
@@ -4650,6 +5091,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-442",
     "norsk": "å markere avstand til",
     "lemma": "å markere avstand til",
     "english": "to distance oneself from, to dissociate from",
@@ -4660,6 +5102,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-443",
     "norsk": "å nyte tilværelsen",
     "lemma": "å nyte tilværelsen",
     "english": "to enjoy life, to savour one's existence",
@@ -4670,6 +5113,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-444",
     "norsk": "å orientere seg",
     "lemma": "å orientere seg",
     "english": "to orientate oneself, to find one's bearings",
@@ -4680,6 +5124,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-445",
     "norsk": "å overbevise om",
     "lemma": "å overbevise om",
     "english": "to convince of, to persuade of",
@@ -4690,6 +5135,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-446",
     "norsk": "å overlate noe til noen",
     "lemma": "å overlate noe til noen",
     "english": "to leave something to someone, to hand over to",
@@ -4700,6 +5146,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-447",
     "norsk": "å prestere maksimalt",
     "lemma": "å prestere maksimalt",
     "english": "to perform at one's best, to give maximum performance",
@@ -4710,6 +5157,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-448",
     "norsk": "å prøve ut",
     "lemma": "å prøve ut",
     "english": "to test out, to try out, to pilot",
@@ -4720,6 +5168,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-449",
     "norsk": "å rakke ned på",
     "lemma": "å rakke ned på",
     "english": "to put down, to run down, to badmouth",
@@ -4730,6 +5179,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-450",
     "norsk": "å regne med",
     "lemma": "å regne med",
     "english": "to count on, to expect, to take into account",
@@ -4740,6 +5190,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-451",
     "norsk": "å reise tiltale mot",
     "lemma": "å reise tiltale mot",
     "english": "to bring charges against, to prosecute",
@@ -4750,6 +5201,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-452",
     "norsk": "å relatere til",
     "lemma": "å relatere til",
     "english": "to relate to, to identify with",
@@ -4760,6 +5212,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-453",
     "norsk": "å resultere i",
     "lemma": "å resultere i",
     "english": "to result in, to lead to",
@@ -4770,6 +5223,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-454",
     "norsk": "å rette seg i ryggen",
     "lemma": "å rette seg i ryggen",
     "english": "to straighten up, to stand tall, to assert oneself",
@@ -4780,6 +5234,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-455",
     "norsk": "å rette søkelyset mot",
     "lemma": "å rette søkelyset mot",
     "english": "to shine a light on, to focus attention on",
@@ -4790,6 +5245,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-456",
     "norsk": "å ruste noen for noe",
     "lemma": "å ruste noen for noe",
     "english": "to prepare someone for something, to equip someone for",
@@ -4800,6 +5256,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-457",
     "norsk": "å satse på",
     "lemma": "å satse på",
     "english": "to invest in, to bet on, to focus on",
@@ -4810,6 +5267,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-458",
     "norsk": "å se langt etter",
     "lemma": "å se langt etter",
     "english": "to have no chance of getting, to kiss goodbye to",
@@ -4820,6 +5278,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-459",
     "norsk": "å sende et signal om",
     "lemma": "å sende et signal om",
     "english": "to send a signal about, to signal",
@@ -4830,6 +5289,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-460",
     "norsk": "å sende signaler",
     "lemma": "å sende signaler",
     "english": "to send signals, to communicate intentions",
@@ -4840,6 +5300,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-461",
     "norsk": "å sette en stopper for",
     "lemma": "å sette en stopper for",
     "english": "to put a stop to, to halt",
@@ -4850,6 +5311,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-462",
     "norsk": "å sette livet på vent",
     "lemma": "å sette livet på vent",
     "english": "to put one's life on hold",
@@ -4860,6 +5322,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-463",
     "norsk": "å sette noe i fare",
     "lemma": "å sette noe i fare",
     "english": "to put something at risk, to jeopardise",
@@ -4870,6 +5333,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-464",
     "norsk": "å sette noe ut på anbud",
     "lemma": "å sette noe ut på anbud",
     "english": "to put something out to tender",
@@ -4880,6 +5344,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-465",
     "norsk": "å sette ord på",
     "lemma": "å sette ord på",
     "english": "to put into words, to articulate",
@@ -4890,6 +5355,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-466",
     "norsk": "å sette pris på",
     "lemma": "å sette pris på",
     "english": "to appreciate, to value",
@@ -4900,6 +5366,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-467",
     "norsk": "å sette seg godt til rette",
     "lemma": "å sette seg godt til rette",
     "english": "to make oneself comfortable, to settle in",
@@ -4910,6 +5377,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-468",
     "norsk": "å sirkle rundt",
     "lemma": "å sirkle rundt",
     "english": "to circle around, to beat around the bush",
@@ -4920,6 +5388,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-469",
     "norsk": "å sitte inne",
     "lemma": "å sitte inne med",
     "english": "to serve time in prison, to be locked up",
@@ -4930,6 +5399,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-470",
     "norsk": "å sitte løst",
     "lemma": "å sitte løst",
     "english": "to sit loosely, to be uncertain, to be at risk",
@@ -4940,6 +5410,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-471",
     "norsk": "å skape en motvekt til",
     "lemma": "å skape en motvekt til",
     "english": "to create a counterweight to, to provide a counterbalance",
@@ -4950,6 +5421,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-472",
     "norsk": "å skape engasjement rundt noe",
     "lemma": "å skape engasjement rundt noe",
     "english": "to generate engagement around something, to mobilise interest",
@@ -4960,6 +5432,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-473",
     "norsk": "å skjerpe seg",
     "lemma": "å skjerpe seg",
     "english": "to pull oneself together, to sharpen up",
@@ -4970,6 +5443,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-474",
     "norsk": "å skli ut",
     "lemma": "å skli ut",
     "english": "to slip up, to go off track, to lose focus",
@@ -4980,6 +5454,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-475",
     "norsk": "å skyte fart",
     "lemma": "å skyte fart",
     "english": "to pick up speed, to accelerate, to gain momentum",
@@ -4990,6 +5465,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-476",
     "norsk": "å skåre høyt",
     "lemma": "å skåre høyt",
     "english": "to score high, to rank highly",
@@ -5000,6 +5476,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-477",
     "norsk": "å slippe unna",
     "lemma": "å slippe unna",
     "english": "to get away with, to escape, to evade",
@@ -5010,6 +5487,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-478",
     "norsk": "å smile fra øre til øre",
     "lemma": "å smile fra øre til øre",
     "english": "to beam from ear to ear, to grin broadly",
@@ -5020,6 +5498,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-479",
     "norsk": "å snakke ned noe",
     "lemma": "å snakke ned noe",
     "english": "to talk something down, to dismiss, to belittle",
@@ -5030,6 +5509,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-480",
     "norsk": "å snakke ned noe eller noen",
     "lemma": "å snakke ned noe eller noen",
     "english": "to talk down something or someone, to belittle, to disparage",
@@ -5040,6 +5520,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-481",
     "norsk": "å spille på frykt",
     "lemma": "å spille på frykt",
     "english": "to play on fear, to exploit fear",
@@ -5050,6 +5531,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-482",
     "norsk": "å spille på følelser",
     "lemma": "å spille på følelser",
     "english": "to play on emotions, to appeal to feelings",
@@ -5060,6 +5542,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-483",
     "norsk": "å starte på null",
     "lemma": "å starte på null",
     "english": "to start from scratch, to start from zero",
@@ -5070,6 +5553,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-484",
     "norsk": "å stenge ned",
     "lemma": "å stenge ned",
     "english": "to shut down, to close down",
@@ -5080,6 +5564,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-485",
     "norsk": "å stikke dypt",
     "lemma": "å stikke dypt",
     "english": "to cut deep, to sting, to hurt deeply",
@@ -5090,6 +5575,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-486",
     "norsk": "å stikke seg ut",
     "lemma": "å stikke seg ut",
     "english": "to stand out, to distinguish oneself",
@@ -5100,6 +5586,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-487",
     "norsk": "å stille høye krav",
     "lemma": "å stille høye krav",
     "english": "to set high standards, to demand a great deal",
@@ -5110,6 +5597,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-488",
     "norsk": "å stille til ansvar",
     "lemma": "å stille til ansvar",
     "english": "to hold to account, to call to account",
@@ -5120,6 +5608,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-489",
     "norsk": "å stille til disposisjon",
     "lemma": "å stille til disposisjon",
     "english": "to make available, to place at someone's disposal",
@@ -5130,6 +5619,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-490",
     "norsk": "å stille til rådighet",
     "lemma": "å stille til rådighet",
     "english": "to make available, to put at the disposal of",
@@ -5140,6 +5630,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-491",
     "norsk": "å stå for",
     "lemma": "å stå for",
     "english": "to stand for, to represent, to vouch for",
@@ -5150,6 +5641,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-492",
     "norsk": "å stå i arbeid",
     "lemma": "å stå i arbeid",
     "english": "to be in employment, to be working",
@@ -5160,6 +5652,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-493",
     "norsk": "å stå i fare for",
     "lemma": "å stå i fare for",
     "english": "to be at risk of, to be in danger of",
@@ -5170,6 +5663,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-494",
     "norsk": "å støtte opp om",
     "lemma": "å støtte opp om",
     "english": "to support, to back up, to rally behind",
@@ -5180,6 +5674,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-495",
     "norsk": "å ta for gitt",
     "lemma": "å ta for gitt",
     "english": "to take for granted",
@@ -5190,6 +5685,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-496",
     "norsk": "å ta grep",
     "lemma": "å ta grep",
     "english": "to take action, to take firm measures",
@@ -5200,6 +5696,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-497",
     "norsk": "å ta i bruk",
     "lemma": "å ta i bruk",
     "english": "to put into use, to adopt, to start using",
@@ -5210,6 +5707,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-498",
     "norsk": "å ta mot til seg",
     "lemma": "å ta mot til seg",
     "english": "to pluck up courage, to summon one's courage",
@@ -5220,6 +5718,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-499",
     "norsk": "å ta noe for gitt",
     "lemma": "å ta noe for gitt",
     "english": "to take something for granted",
@@ -5230,6 +5729,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-500",
     "norsk": "å ta noe på alvor",
     "lemma": "å ta noe på alvor",
     "english": "to take something seriously",
@@ -5240,6 +5740,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-501",
     "norsk": "å ta seg sammen",
     "lemma": "å ta seg sammen",
     "english": "to pull oneself together, to get a grip",
@@ -5250,6 +5751,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-502",
     "norsk": "å ta seg selv i å si noe",
     "lemma": "å ta seg selv i å si noe",
     "english": "to catch oneself saying something",
@@ -5260,6 +5762,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-503",
     "norsk": "å ta sin tid",
     "lemma": "å ta sin tid",
     "english": "to take one's time, to not rush",
@@ -5270,6 +5773,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-504",
     "norsk": "å ta stilling til",
     "lemma": "å ta stilling til",
     "english": "to take a stance on, to address, to decide about",
@@ -5280,6 +5784,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-505",
     "norsk": "å ta til takke med",
     "lemma": "å ta til takke med",
     "english": "to make do with, to settle for",
@@ -5290,6 +5795,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-506",
     "norsk": "å takke ja til",
     "lemma": "å takke ja til",
     "english": "to accept, to say yes to",
@@ -5300,6 +5806,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-507",
     "norsk": "å tie noe i hjel",
     "lemma": "å tie noe i hjel",
     "english": "to hush something up, to suppress by silence",
@@ -5310,6 +5817,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-508",
     "norsk": "å tilbringe tid med",
     "lemma": "å tilbringe tid med",
     "english": "to spend time with",
@@ -5320,6 +5828,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-509",
     "norsk": "å tilby seg",
     "lemma": "å tilby seg",
     "english": "to offer, to volunteer",
@@ -5330,6 +5839,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-510",
     "norsk": "å treffe rett i hjertet",
     "lemma": "å treffe rett i hjertet",
     "english": "to hit right in the heart, to touch deeply",
@@ -5340,6 +5850,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-511",
     "norsk": "å treffe spikeren på hodet",
     "lemma": "å treffe spikeren på hodet",
     "english": "to hit the nail on the head",
@@ -5350,6 +5861,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-512",
     "norsk": "å trekke fra",
     "lemma": "å trekke fra",
     "english": "to deduct, to subtract, to withdraw",
@@ -5360,6 +5872,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-513",
     "norsk": "å trekke seg unna",
     "lemma": "å trekke seg unna",
     "english": "to withdraw, to pull away, to distance oneself",
@@ -5370,6 +5883,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-514",
     "norsk": "å utgjøre en forskjell",
     "lemma": "å utgjøre en forskjell",
     "english": "to make a difference",
@@ -5380,6 +5894,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-515",
     "norsk": "å uttale seg offentlig",
     "lemma": "å uttale seg offentlig",
     "english": "to comment publicly, to make a public statement",
@@ -5390,6 +5905,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-516",
     "norsk": "å vekke oppmerksomhet",
     "lemma": "å vekke oppmerksomhet",
     "english": "to attract attention, to draw notice",
@@ -5400,6 +5916,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-517",
     "norsk": "å vekke oppsikt",
     "lemma": "å vekke oppsikt",
     "english": "to attract attention, to cause a stir",
@@ -5410,6 +5927,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-518",
     "norsk": "å vie seg til",
     "lemma": "å vie seg til",
     "english": "to dedicate oneself to, to devote oneself to",
@@ -5420,6 +5938,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-519",
     "norsk": "å være avhengig av",
     "lemma": "å være avhengig av",
     "english": "to be dependent on, to rely on",
@@ -5430,6 +5949,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-520",
     "norsk": "å være bevisst på",
     "lemma": "å være bevisst på",
     "english": "to be conscious of, to be mindful of",
@@ -5440,6 +5960,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-521",
     "norsk": "å være dårlig informert",
     "lemma": "å være dårlig informert",
     "english": "to be poorly informed, to be misinformed",
@@ -5450,6 +5971,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-522",
     "norsk": "å være en stemme for de svakeste",
     "lemma": "å være en stemme for de svakeste",
     "english": "to be a voice for the most vulnerable",
@@ -5460,6 +5982,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-523",
     "norsk": "å være en støttespiller",
     "lemma": "å være en støttespiller",
     "english": "to be a pillar of support, to be a supporter",
@@ -5470,6 +5993,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-524",
     "norsk": "å være et skolelys",
     "lemma": "å være et skolelys",
     "english": "to be academically gifted, to be a bright student",
@@ -5480,6 +6004,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-525",
     "norsk": "å være etterspurt",
     "lemma": "å være etterspurt",
     "english": "to be in demand, to be sought after",
@@ -5490,6 +6015,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-526",
     "norsk": "å være forberedt på å gjøre noe",
     "lemma": "å være forberedt på å gjøre noe",
     "english": "to be prepared to do something",
@@ -5500,6 +6026,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-527",
     "norsk": "å være forpliktet til",
     "lemma": "å være forpliktet til",
     "english": "to be committed to, to be obligated to",
@@ -5510,6 +6037,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-528",
     "norsk": "å være fortvilet over",
     "lemma": "å være fortvilet over",
     "english": "to be in despair over, to be distraught about",
@@ -5520,6 +6048,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-529",
     "norsk": "å være i ferd med",
     "lemma": "å være i ferd med",
     "english": "to be in the process of, to be about to",
@@ -5530,6 +6059,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-530",
     "norsk": "å være i stand til",
     "lemma": "å være i stand til",
     "english": "to be capable of, to be able to",
@@ -5540,6 +6070,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-531",
     "norsk": "å være innstilt på",
     "lemma": "å være innstilt på",
     "english": "to be prepared for, to be ready for, to expect",
@@ -5550,6 +6081,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-532",
     "norsk": "å være involvert i",
     "lemma": "å være involvert i",
     "english": "to be involved in",
@@ -5560,6 +6092,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-533",
     "norsk": "å være klar over",
     "lemma": "å være klar over",
     "english": "to be aware of, to be conscious of",
@@ -5570,6 +6103,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-534",
     "norsk": "å være motstander av",
     "lemma": "å være motstander av",
     "english": "to be opposed to, to be against",
@@ -5580,6 +6114,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-535",
     "norsk": "å være nødt til",
     "lemma": "å være nødt til",
     "english": "to be forced to, to have no choice but to",
@@ -5590,6 +6125,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-536",
     "norsk": "å være oppdatert",
     "lemma": "å være oppdatert",
     "english": "to be up to date, to be well-informed",
@@ -5600,6 +6136,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-537",
     "norsk": "å være oppkalt etter",
     "lemma": "å være oppkalt etter",
     "english": "to be named after",
@@ -5610,6 +6147,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-538",
     "norsk": "å være opplyst om",
     "lemma": "å være opplyst om",
     "english": "to be informed about, to be aware of",
@@ -5620,6 +6158,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-539",
     "norsk": "å være opptatt av",
     "lemma": "å være opptatt av",
     "english": "to be preoccupied with, to care about, to be focused on",
@@ -5630,6 +6169,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-540",
     "norsk": "å være preget av",
     "lemma": "å være preget av",
     "english": "to be marked by, to be characterised by",
@@ -5640,6 +6180,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-541",
     "norsk": "å være på hils med",
     "lemma": "å være på hils med",
     "english": "to be on speaking terms with, to barely know",
@@ -5650,6 +6191,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-542",
     "norsk": "å være pålagt",
     "lemma": "å være pålagt",
     "english": "to be required, to be obliged, to be mandated",
@@ -5660,6 +6202,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-543",
     "norsk": "å være rettet mot",
     "lemma": "å være rettet mot",
     "english": "to be aimed at, to be directed at",
@@ -5670,6 +6213,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-544",
     "norsk": "å være skrudd sammen",
     "lemma": "å være skrudd sammen",
     "english": "to be put together, to be wired, to handle things well",
@@ -5680,6 +6224,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-545",
     "norsk": "å være takknemlig for",
     "lemma": "å være takknemlig for",
     "english": "to be grateful for, to be thankful for",

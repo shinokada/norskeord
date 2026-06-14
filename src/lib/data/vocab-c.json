@@ -1,5 +1,6 @@
 [
   {
+    "id": "v-c-philosophy-001",
     "norsk": "en ontologi",
     "lemma": "ontologi",
     "english": "ontology (study of being/existence)",
@@ -11,6 +12,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-002",
     "norsk": "en epistemologi",
     "lemma": "epistemologi",
     "english": "epistemology (theory of knowledge)",
@@ -22,6 +24,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-003",
     "norsk": "et aksiom",
     "lemma": "aksiom",
     "english": "an axiom",
@@ -33,6 +36,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-004",
     "norsk": "dialektikk",
     "lemma": "dialektikk",
     "english": "dialectics",
@@ -44,6 +48,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-005",
     "norsk": "en fenomenologi",
     "lemma": "fenomenologi",
     "english": "phenomenology",
@@ -55,6 +60,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-006",
     "norsk": "et postulat",
     "lemma": "postulat",
     "english": "a postulate",
@@ -66,6 +72,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-007",
     "norsk": "determinisme",
     "lemma": "determinisme",
     "english": "determinism",
@@ -77,6 +84,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-008",
     "norsk": "en fri vilje",
     "lemma": "en fri vilje",
     "english": "free will",
@@ -88,6 +96,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-philosophy-009",
     "norsk": "et etisk dilemma",
     "lemma": "et etisk dilemma",
     "english": "an ethical dilemma",
@@ -99,6 +108,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-philosophy-010",
     "norsk": "utilitarisme",
     "lemma": "utilitarisme",
     "english": "utilitarianism",
@@ -110,6 +120,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-011",
     "norsk": "en dyd",
     "lemma": "dyd",
     "english": "a virtue",
@@ -121,6 +132,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-012",
     "norsk": "nihilisme",
     "lemma": "nihilisme",
     "english": "nihilism",
@@ -132,6 +144,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-013",
     "norsk": "eksistensialisme",
     "lemma": "eksistensialisme",
     "english": "existentialism",
@@ -143,6 +156,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-014",
     "norsk": "et paradoks",
     "lemma": "paradoks",
     "english": "a paradox",
@@ -154,6 +168,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-015",
     "norsk": "en deduksjon",
     "lemma": "deduksjon",
     "english": "deduction",
@@ -165,6 +180,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-016",
     "norsk": "en induksjon",
     "lemma": "induksjon",
     "english": "induction",
@@ -176,6 +192,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-017",
     "norsk": "metafysikk",
     "lemma": "metafysikk",
     "english": "metaphysics",
@@ -187,6 +204,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-018",
     "norsk": "en syllogisme",
     "lemma": "syllogisme",
     "english": "a syllogism",
@@ -198,6 +216,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-019",
     "norsk": "empirisme",
     "lemma": "empirisme",
     "english": "empiricism",
@@ -209,6 +228,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-020",
     "norsk": "rasjonalisme",
     "lemma": "rasjonalisme",
     "english": "rationalism",
@@ -220,6 +240,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-021",
     "norsk": "å reflektere over",
     "lemma": "å reflektere over",
     "english": "to reflect upon / to contemplate",
@@ -231,6 +252,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-philosophy-022",
     "norsk": "en transcendens",
     "lemma": "transcendens",
     "english": "transcendence",
@@ -242,6 +264,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-001",
     "norsk": "et forskningsdesign",
     "lemma": "forskningsdesign",
     "english": "a research design",
@@ -253,6 +276,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-002",
     "norsk": "en diskurs",
     "lemma": "diskurs",
     "english": "a discourse",
@@ -264,6 +288,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-003",
     "norsk": "en fagfellevurdering",
     "lemma": "fagfellevurdering",
     "english": "peer review",
@@ -275,6 +300,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-004",
     "norsk": "å sitere",
     "lemma": "sitere",
     "english": "to cite / to quote",
@@ -286,6 +312,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-academic-005",
     "norsk": "en tverrfaglig",
     "lemma": "en tverrfaglig",
     "english": "interdisciplinary",
@@ -297,6 +324,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-academic-006",
     "norsk": "et forskningsgap",
     "lemma": "forskningsgap",
     "english": "a research gap",
@@ -308,6 +336,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-007",
     "norsk": "å operasjonalisere",
     "lemma": "operasjonalisere",
     "english": "to operationalise",
@@ -319,6 +348,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-academic-008",
     "norsk": "validitet",
     "lemma": "validitet",
     "english": "validity",
@@ -330,6 +360,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-009",
     "norsk": "reliabilitet",
     "lemma": "reliabilitet",
     "english": "reliability",
@@ -341,6 +372,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-010",
     "norsk": "en bias",
     "lemma": "bias",
     "english": "bias",
@@ -352,6 +384,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-011",
     "norsk": "å konseptualisere",
     "lemma": "konseptualisere",
     "english": "to conceptualise",
@@ -363,6 +396,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-academic-012",
     "norsk": "et rammeverk",
     "lemma": "rammeverk",
     "english": "a framework",
@@ -374,6 +408,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-013",
     "norsk": "en triangulering",
     "lemma": "triangulering",
     "english": "triangulation (research method)",
@@ -385,6 +420,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-014",
     "norsk": "en konsensus",
     "lemma": "konsensus",
     "english": "a consensus",
@@ -396,6 +432,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-015",
     "norsk": "et paradigme",
     "lemma": "paradigme",
     "english": "a paradigm",
@@ -407,6 +444,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-academic-016",
     "norsk": "en syntese",
     "lemma": "syntese",
     "english": "a synthesis",
@@ -418,6 +456,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-formal-writing-001",
     "norsk": "med utgangspunkt i",
     "lemma": "med utgangspunkt i",
     "english": "based on / starting from",
@@ -429,6 +468,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-formal-writing-002",
     "norsk": "i lys av",
     "lemma": "i lys av",
     "english": "in light of",
@@ -440,6 +480,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-formal-writing-003",
     "norsk": "å anføre",
     "lemma": "anføre",
     "english": "to cite / to adduce (an argument)",
@@ -451,6 +492,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-formal-writing-004",
     "norsk": "å presisere",
     "lemma": "presisere",
     "english": "to specify / to clarify precisely",
@@ -462,6 +504,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-formal-writing-005",
     "norsk": "herunder",
     "lemma": "herunder",
     "english": "including / comprising",
@@ -473,6 +516,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-formal-writing-006",
     "norsk": "det fremgår av",
     "lemma": "det fremgår av",
     "english": "it appears from / it is evident from",
@@ -484,6 +528,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-formal-writing-007",
     "norsk": "ytterligere",
     "lemma": "ytterligere",
     "english": "further / additionally",
@@ -495,6 +540,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-formal-writing-008",
     "norsk": "en begrepsavklaring",
     "lemma": "begrepsavklaring",
     "english": "a definition of terms / clarification of concepts",
@@ -506,6 +552,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-formal-writing-009",
     "norsk": "i henhold til",
     "lemma": "i henhold til",
     "english": "in accordance with / pursuant to",
@@ -517,6 +564,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-formal-writing-010",
     "norsk": "å konkludere med at",
     "lemma": "å konkludere med at",
     "english": "to conclude that",
@@ -528,6 +576,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-formal-writing-011",
     "norsk": "en innvending",
     "lemma": "innvending",
     "english": "an objection",
@@ -539,6 +588,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-formal-writing-012",
     "norsk": "å nuansere",
     "lemma": "nuansere",
     "english": "to nuance / to qualify",
@@ -550,6 +600,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-formal-writing-013",
     "norsk": "å argumentere for at",
     "lemma": "å argumentere for at",
     "english": "to argue that",
@@ -561,6 +612,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-formal-writing-014",
     "norsk": "å avgrense",
     "lemma": "avgrense",
     "english": "to delimit / to narrow down",
@@ -572,6 +624,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-formal-writing-015",
     "norsk": "en implikasjon",
     "lemma": "implikasjon",
     "english": "an implication",
@@ -583,6 +636,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-formal-writing-016",
     "norsk": "å peke på",
     "lemma": "å peke på",
     "english": "to point to / to highlight",
@@ -594,6 +648,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-formal-writing-017",
     "norsk": "foreliggende",
     "lemma": "foreliggende",
     "english": "present / at hand / existing",
@@ -605,6 +660,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-formal-writing-018",
     "norsk": "å bidra til",
     "lemma": "å bidra til",
     "english": "to contribute to",
@@ -616,6 +672,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-rhetoric-001",
     "norsk": "en retorisk strategi",
     "lemma": "en retorisk strategi",
     "english": "a rhetorical strategy",
@@ -627,6 +684,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-rhetoric-002",
     "norsk": "ethos",
     "lemma": "ethos",
     "english": "ethos (appeal to credibility)",
@@ -638,6 +696,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-003",
     "norsk": "pathos",
     "lemma": "pathos",
     "english": "pathos (appeal to emotion)",
@@ -649,6 +708,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-004",
     "norsk": "logos",
     "lemma": "logos",
     "english": "logos (appeal to logic)",
@@ -660,6 +720,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-005",
     "norsk": "en anafora",
     "lemma": "anafora",
     "english": "anaphora (repetition at the start of clauses)",
@@ -671,6 +732,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-006",
     "norsk": "en antitese",
     "lemma": "antitese",
     "english": "an antithesis",
@@ -682,6 +744,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-007",
     "norsk": "en overtalelse",
     "lemma": "overtalelse",
     "english": "persuasion",
@@ -693,6 +756,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-008",
     "norsk": "en retorisk spørsmål",
     "lemma": "en retorisk spørsmål",
     "english": "a rhetorical question",
@@ -704,6 +768,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-rhetoric-009",
     "norsk": "en hyperbel",
     "lemma": "hyperbel",
     "english": "hyperbole",
@@ -715,6 +780,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-010",
     "norsk": "en litotes",
     "lemma": "litotes",
     "english": "litotes (understatement using negation)",
@@ -726,6 +792,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-011",
     "norsk": "et syllepsis",
     "lemma": "syllepsis",
     "english": "syllepsis (using one word to govern two)",
@@ -737,6 +804,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-012",
     "norsk": "en chiasme",
     "lemma": "chiasme",
     "english": "chiasmus (inverted parallelism)",
@@ -748,6 +816,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-013",
     "norsk": "kairos",
     "lemma": "kairos",
     "english": "kairos (the opportune moment)",
@@ -759,6 +828,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-014",
     "norsk": "en prosopopeia",
     "lemma": "prosopopeia",
     "english": "personification / prosopopoeia",
@@ -770,6 +840,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-015",
     "norsk": "å disponere",
     "lemma": "disponere",
     "english": "to structure / to organise (a text)",
@@ -781,6 +852,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-rhetoric-016",
     "norsk": "en topos",
     "lemma": "topos",
     "english": "a topos (commonplace / standard argument)",
@@ -792,6 +864,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-017",
     "norsk": "en inversjon",
     "lemma": "inversjon",
     "english": "inversion (of word order for effect)",
@@ -803,6 +876,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-018",
     "norsk": "å engasjere",
     "lemma": "engasjere",
     "english": "to engage (an audience)",
@@ -814,6 +888,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-rhetoric-019",
     "norsk": "en narrasjon",
     "lemma": "narrasjon",
     "english": "narration / storytelling (as rhetorical mode)",
@@ -825,6 +900,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-020",
     "norsk": "en bevisføring",
     "lemma": "bevisføring",
     "english": "argumentation / presentation of proof",
@@ -836,6 +912,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-rhetoric-021",
     "norsk": "en konklusjon",
     "lemma": "konklusjon",
     "english": "a conclusion (closing of a speech)",
@@ -847,6 +924,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-001",
     "norsk": "sjelelig uro",
     "lemma": "sjelelig uro",
     "english": "inner turmoil / spiritual unease",
@@ -858,6 +936,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-complex-emotions-002",
     "norsk": "melankolsk",
     "lemma": "melankolsk",
     "english": "melancholy / melancholic",
@@ -869,6 +948,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-complex-emotions-003",
     "norsk": "eksistensielt tomrom",
     "lemma": "eksistensielt tomrom",
     "english": "existential void / emptiness",
@@ -880,6 +960,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-complex-emotions-004",
     "norsk": "empatisk resonans",
     "lemma": "empatisk resonans",
     "english": "empathic resonance",
@@ -891,6 +972,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-complex-emotions-005",
     "norsk": "vemod",
     "lemma": "vemod",
     "english": "wistfulness / gentle sadness",
@@ -902,6 +984,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-006",
     "norsk": "ambivalent",
     "lemma": "ambivalent",
     "english": "ambivalent",
@@ -913,6 +996,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-complex-emotions-007",
     "norsk": "fremmedgjøring",
     "lemma": "fremmedgjøring",
     "english": "alienation / estrangement",
@@ -924,6 +1008,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-008",
     "norsk": "katarsis",
     "lemma": "katarsis",
     "english": "catharsis",
@@ -935,6 +1020,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-009",
     "norsk": "selverkjennelse",
     "lemma": "selverkjennelse",
     "english": "self-knowledge / self-awareness",
@@ -946,6 +1032,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-010",
     "norsk": "en forsonlighet",
     "lemma": "forsonlighet",
     "english": "reconciliation / conciliatoriness",
@@ -957,6 +1044,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-011",
     "norsk": "ærefrykt",
     "lemma": "ærefrykt",
     "english": "awe / reverence",
@@ -968,6 +1056,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-012",
     "norsk": "å lengte etter",
     "lemma": "å lengte etter",
     "english": "to yearn for / to long for",
@@ -979,6 +1068,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-complex-emotions-013",
     "norsk": "oppriktighet",
     "lemma": "oppriktighet",
     "english": "sincerity / genuineness",
@@ -990,6 +1080,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-014",
     "norsk": "å fortrenge",
     "lemma": "fortrenge",
     "english": "to repress / to suppress",
@@ -1001,6 +1092,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-complex-emotions-015",
     "norsk": "sårbarhet",
     "lemma": "sårbarhet",
     "english": "vulnerability",
@@ -1012,6 +1104,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-016",
     "norsk": "kognitive dissonansen",
     "lemma": "kognitive dissonansen",
     "english": "cognitive dissonance",
@@ -1023,6 +1116,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-017",
     "norsk": "å projisere",
     "lemma": "projisere",
     "english": "to project (emotions onto others)",
@@ -1034,6 +1128,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-complex-emotions-018",
     "norsk": "en indre monolog",
     "lemma": "en indre monolog",
     "english": "an inner monologue",
@@ -1045,6 +1140,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-complex-emotions-019",
     "norsk": "skadefryd",
     "lemma": "skadefryd",
     "english": "schadenfreude (pleasure at another's misfortune)",
@@ -1056,6 +1152,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-020",
     "norsk": "en sinnstilstand",
     "lemma": "sinnstilstand",
     "english": "a state of mind",
@@ -1067,6 +1164,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-021",
     "norsk": "forsoning",
     "lemma": "forsoning",
     "english": "reconciliation",
@@ -1078,6 +1176,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-complex-emotions-022",
     "norsk": "eksistensiell ensomhet",
     "lemma": "eksistensiell ensomhet",
     "english": "existential loneliness",
@@ -1089,6 +1188,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-complex-emotions-023",
     "norsk": "ettertanke",
     "lemma": "ettertanke",
     "english": "reflection / afterthought",
@@ -1100,6 +1200,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-001",
     "norsk": "en konfidensiell",
     "lemma": "en konfidensiell",
     "english": "confidential",
@@ -1111,6 +1212,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-professional-002",
     "norsk": "en strategiplan",
     "lemma": "strategiplan",
     "english": "a strategic plan",
@@ -1122,6 +1224,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-003",
     "norsk": "en interessent",
     "lemma": "interessent",
     "english": "a stakeholder",
@@ -1133,6 +1236,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-004",
     "norsk": "en gjennomførbarhet",
     "lemma": "gjennomførbarhet",
     "english": "feasibility",
@@ -1144,6 +1248,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-005",
     "norsk": "å optimalisere",
     "lemma": "optimalisere",
     "english": "to optimise",
@@ -1155,6 +1260,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-professional-006",
     "norsk": "en retningslinje",
     "lemma": "retningslinje",
     "english": "a guideline / a directive",
@@ -1166,6 +1272,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-007",
     "norsk": "etterlevelse",
     "lemma": "etterlevelse",
     "english": "compliance",
@@ -1177,6 +1284,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-008",
     "norsk": "en benchmark",
     "lemma": "benchmark",
     "english": "a benchmark",
@@ -1188,6 +1296,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-009",
     "norsk": "en KPI",
     "lemma": "KPI",
     "english": "a KPI (key performance indicator)",
@@ -1199,6 +1308,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-010",
     "norsk": "et omdømme",
     "lemma": "omdømme",
     "english": "a reputation",
@@ -1210,6 +1320,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-011",
     "norsk": "en årsrapport",
     "lemma": "årsrapport",
     "english": "an annual report",
@@ -1221,6 +1332,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-012",
     "norsk": "en medarbeidersamtale",
     "lemma": "medarbeidersamtale",
     "english": "a performance review / an appraisal interview",
@@ -1232,6 +1344,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-013",
     "norsk": "en disrupsjon",
     "lemma": "disrupsjon",
     "english": "disruption",
@@ -1243,6 +1356,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-014",
     "norsk": "innovasjon",
     "lemma": "innovasjon",
     "english": "innovation",
@@ -1254,6 +1368,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-professional-015",
     "norsk": "en agil tilnærming",
     "lemma": "en agil tilnærming",
     "english": "an agile approach",
@@ -1265,6 +1380,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-professional-016",
     "norsk": "å rapportere til",
     "lemma": "å rapportere til",
     "english": "to report to (a manager)",
@@ -1276,6 +1392,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-abstract-concepts-001",
     "norsk": "sannhet",
     "lemma": "sannhet",
     "english": "truth",
@@ -1287,6 +1404,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-002",
     "norsk": "mening",
     "lemma": "mening",
     "english": "meaning / purpose",
@@ -1298,6 +1416,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-003",
     "norsk": "tid",
     "lemma": "tid",
     "english": "time (as abstract concept)",
@@ -1309,6 +1428,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-004",
     "norsk": "en dualitet",
     "lemma": "dualitet",
     "english": "a duality",
@@ -1320,6 +1440,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-005",
     "norsk": "kompleksitet",
     "lemma": "kompleksitet",
     "english": "complexity",
@@ -1331,6 +1452,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-006",
     "norsk": "en grense",
     "lemma": "grense",
     "english": "a limit / a boundary (conceptual)",
@@ -1342,6 +1464,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-007",
     "norsk": "en struktur",
     "lemma": "struktur",
     "english": "structure (as abstract organising principle)",
@@ -1353,6 +1476,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-008",
     "norsk": "intersubjektivitet",
     "lemma": "intersubjektivitet",
     "english": "intersubjectivity",
@@ -1364,6 +1488,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-009",
     "norsk": "en legitimitet",
     "lemma": "legitimitet",
     "english": "legitimacy",
@@ -1375,6 +1500,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-010",
     "norsk": "et pluralisme",
     "lemma": "pluralisme",
     "english": "pluralism",
@@ -1386,6 +1512,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-011",
     "norsk": "en universalisme",
     "lemma": "universalisme",
     "english": "universalism",
@@ -1397,6 +1524,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-012",
     "norsk": "en partikularisme",
     "lemma": "partikularisme",
     "english": "particularism",
@@ -1408,6 +1536,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-013",
     "norsk": "å abstrahere",
     "lemma": "abstrahere",
     "english": "to abstract / to generalise conceptually",
@@ -1419,6 +1548,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-abstract-concepts-014",
     "norsk": "en konstruksjon",
     "lemma": "konstruksjon",
     "english": "a construction (social/conceptual)",
@@ -1430,6 +1560,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-015",
     "norsk": "hegemoni",
     "lemma": "hegemoni",
     "english": "hegemony",
@@ -1441,6 +1572,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-politics-democracy-001",
     "norsk": "et lovforslag",
     "lemma": "lovforslag",
     "english": "a bill (proposed law)",
@@ -1452,6 +1584,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-politics-democracy-002",
     "norsk": "en valgkrets",
     "lemma": "valgkrets",
     "english": "an electoral district",
@@ -1463,6 +1596,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-politics-democracy-003",
     "norsk": "et flertall",
     "lemma": "flertall",
     "english": "a majority",
@@ -1474,6 +1608,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-politics-democracy-004",
     "norsk": "å ratifisere",
     "lemma": "ratifisere",
     "english": "to ratify",
@@ -1485,6 +1620,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-linguistics-001",
     "norsk": "et morsmål",
     "lemma": "morsmål",
     "english": "a mother tongue",
@@ -1496,6 +1632,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-media-journalism-001",
     "norsk": "sensur",
     "lemma": "sensur",
     "english": "censorship",
@@ -1507,6 +1644,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-media-journalism-002",
     "norsk": "en agenda",
     "lemma": "agenda",
     "english": "an agenda (hidden or stated)",
@@ -1518,6 +1656,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-architecture-design-001",
     "norsk": "en fasade",
     "lemma": "fasade",
     "english": "a facade",
@@ -1529,6 +1668,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-architecture-design-002",
     "norsk": "å restaurere",
     "lemma": "restaurere",
     "english": "to restore",
@@ -1540,6 +1680,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-architecture-design-003",
     "norsk": "estetikk",
     "lemma": "estetikk",
     "english": "aesthetics",
@@ -1551,6 +1692,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-architecture-design-004",
     "norsk": "en plantegning",
     "lemma": "plantegning",
     "english": "a blueprint / floor plan",
@@ -1562,6 +1704,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-architecture-design-005",
     "norsk": "et romprogram",
     "lemma": "romprogram",
     "english": "a space plan",
@@ -1573,6 +1716,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-diplomacy-international-001",
     "norsk": "en ambassade",
     "lemma": "ambassade",
     "english": "an embassy",
@@ -1584,6 +1728,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-diplomacy-international-002",
     "norsk": "en traktat",
     "lemma": "traktat",
     "english": "a treaty",
@@ -1595,6 +1740,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-diplomacy-international-003",
     "norsk": "multilateralt",
     "lemma": "multilateralt",
     "english": "multilateral",
@@ -1606,6 +1752,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-diplomacy-international-004",
     "norsk": "et forbund",
     "lemma": "forbund",
     "english": "an alliance",
@@ -1617,6 +1764,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-diplomacy-international-005",
     "norsk": "konfliktløsning",
     "lemma": "konfliktløsning",
     "english": "conflict resolution",
@@ -1628,6 +1776,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-finance-economics-001",
     "norsk": "et aksjemarked",
     "lemma": "aksjemarked",
     "english": "a stock market",
@@ -1639,6 +1788,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-finance-economics-002",
     "norsk": "likviditet",
     "lemma": "likviditet",
     "english": "liquidity",
@@ -1650,6 +1800,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-finance-economics-003",
     "norsk": "en valuta",
     "lemma": "valuta",
     "english": "a currency",
@@ -1661,6 +1812,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-finance-economics-004",
     "norsk": "et derivat",
     "lemma": "derivat",
     "english": "a derivative",
@@ -1672,6 +1824,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-finance-economics-005",
     "norsk": "en konjunktur",
     "lemma": "konjunktur",
     "english": "a business cycle",
@@ -1683,6 +1836,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-psychology-advanced-001",
     "norsk": "en psykose",
     "lemma": "psykose",
     "english": "a psychosis",
@@ -1694,6 +1848,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-psychology-advanced-002",
     "norsk": "metakognisjon",
     "lemma": "metakognisjon",
     "english": "metacognition",
@@ -1705,6 +1860,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-001",
     "norsk": "å stige ned i",
     "lemma": "å stige ned i",
     "english": "to descend into (literary)",
@@ -1716,6 +1872,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-literary-002",
     "norsk": "en eleganse",
     "lemma": "eleganse",
     "english": "elegance (of style)",
@@ -1727,6 +1884,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-003",
     "norsk": "en epifani",
     "lemma": "epifani",
     "english": "an epiphany",
@@ -1738,6 +1896,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-004",
     "norsk": "en intertekstualitet",
     "lemma": "intertekstualitet",
     "english": "intertextuality",
@@ -1749,6 +1908,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-005",
     "norsk": "et leitmotiv",
     "lemma": "leitmotiv",
     "english": "a leitmotif",
@@ -1760,6 +1920,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-006",
     "norsk": "en pastisj",
     "lemma": "pastisj",
     "english": "a pastiche",
@@ -1771,6 +1932,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-007",
     "norsk": "en ekfrase",
     "lemma": "ekfrase",
     "english": "ekphrasis (literary description of art)",
@@ -1782,6 +1944,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-008",
     "norsk": "en lakonisk stil",
     "lemma": "en lakonisk stil",
     "english": "a laconic style",
@@ -1793,6 +1956,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-literary-009",
     "norsk": "et frampek",
     "lemma": "frampek",
     "english": "foreshadowing",
@@ -1804,6 +1968,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-010",
     "norsk": "en tilbakeblikk",
     "lemma": "tilbakeblikk",
     "english": "a flashback",
@@ -1815,6 +1980,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-011",
     "norsk": "en upålitelig forteller",
     "lemma": "en upålitelig forteller",
     "english": "an unreliable narrator",
@@ -1826,6 +1992,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-literary-012",
     "norsk": "en bildungsroman",
     "lemma": "bildungsroman",
     "english": "a bildungsroman (coming-of-age novel)",
@@ -1837,6 +2004,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-013",
     "norsk": "en mise en abyme",
     "lemma": "en mise en abyme",
     "english": "mise en abyme (story within a story)",
@@ -1848,6 +2016,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-literary-014",
     "norsk": "en ironi av skjebnen",
     "lemma": "en ironi av skjebnen",
     "english": "an irony of fate",
@@ -1859,6 +2028,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-literary-015",
     "norsk": "en peripeti",
     "lemma": "peripeti",
     "english": "a peripeteia (sudden reversal of fortune)",
@@ -1870,6 +2040,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-016",
     "norsk": "en hamartia",
     "lemma": "hamartia",
     "english": "hamartia (a tragic flaw)",
@@ -1881,6 +2052,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-017",
     "norsk": "en katafore",
     "lemma": "katafore",
     "english": "cataphora (forward reference)",
@@ -1892,6 +2064,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-018",
     "norsk": "en synekdoke",
     "lemma": "synekdoke",
     "english": "synecdoche (part for whole or whole for part)",
@@ -1903,6 +2076,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-019",
     "norsk": "en metonymi",
     "lemma": "metonymi",
     "english": "metonymy",
@@ -1914,6 +2088,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-literary-020",
     "norsk": "en lyrisk prosa",
     "lemma": "en lyrisk prosa",
     "english": "lyrical prose",
@@ -1925,6 +2100,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-archaic-001",
     "norsk": "sanneligen",
     "lemma": "sanneligen",
     "english": "verily / truly (archaic affirmation)",
@@ -1936,6 +2112,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-archaic-002",
     "norsk": "hvo",
     "lemma": "hvo",
     "english": "who / whoever (archaic form of 'hvem')",
@@ -1947,6 +2124,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-c-archaic-003",
     "norsk": "hvad",
     "lemma": "hvad",
     "english": "what (archaic form of 'hva')",
@@ -1958,6 +2136,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-c-archaic-004",
     "norsk": "thi",
     "lemma": "thi",
     "english": "for / because (archaic conjunction)",
@@ -1969,6 +2148,7 @@
     "part": "conjunction"
   },
   {
+    "id": "v-c-archaic-005",
     "norsk": "ei",
     "lemma": "ei",
     "english": "not / nor (archaic negation)",
@@ -1980,6 +2160,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-archaic-006",
     "norsk": "en fædrene arv",
     "lemma": "en fædrene arv",
     "english": "a paternal / ancestral heritage",
@@ -1991,6 +2172,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-archaic-007",
     "norsk": "hulderfolk",
     "lemma": "hulderfolk",
     "english": "the hidden folk / huldra people (mythological)",
@@ -2002,6 +2184,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-008",
     "norsk": "et sagn",
     "lemma": "sagn",
     "english": "a legend / a folk tale",
@@ -2013,6 +2196,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-009",
     "norsk": "en skald",
     "lemma": "skald",
     "english": "a skald (Old Norse poet)",
@@ -2024,6 +2208,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-010",
     "norsk": "en ting (historisk)",
     "lemma": "ting (historisk)",
     "english": "a thing / assembly (historical Norse council)",
@@ -2035,6 +2220,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-011",
     "norsk": "å lyde",
     "lemma": "lyde",
     "english": "to obey / to sound (archaic sense)",
@@ -2046,6 +2232,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-archaic-012",
     "norsk": "et len",
     "lemma": "len",
     "english": "a fief / a county (historical)",
@@ -2057,6 +2244,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-013",
     "norsk": "en krønike",
     "lemma": "krønike",
     "english": "a chronicle",
@@ -2068,6 +2256,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-014",
     "norsk": "å arve mantel",
     "lemma": "å arve mantel",
     "english": "to inherit the mantle / to take over a role (archaic metaphor)",
@@ -2079,6 +2268,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-archaic-015",
     "norsk": "Norrønt",
     "lemma": "Norrønt",
     "english": "Old Norse (language)",
@@ -2090,6 +2280,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-016",
     "norsk": "en edda",
     "lemma": "edda",
     "english": "an Edda (Old Norse poem collection)",
@@ -2101,6 +2292,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-017",
     "norsk": "å feste tro til",
     "lemma": "å feste tro til",
     "english": "to give credence to / to believe (archaic expression)",
@@ -2112,6 +2304,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-archaic-018",
     "norsk": "et kvede",
     "lemma": "kvede",
     "english": "a lay / a poem (archaic)",
@@ -2123,6 +2316,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-019",
     "norsk": "å ihukomme",
     "lemma": "ihukomme",
     "english": "to remember / to commemorate (archaic)",
@@ -2134,6 +2328,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-archaic-020",
     "norsk": "derfra",
     "lemma": "derfra",
     "english": "from there / thence (archaic/formal)",
@@ -2145,6 +2340,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-archaic-021",
     "norsk": "en vise",
     "lemma": "vise",
     "english": "a ballad / a verse (traditional)",
@@ -2156,6 +2352,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-022",
     "norsk": "å råde over",
     "lemma": "å råde over",
     "english": "to have dominion over / to rule over (archaic)",
@@ -2167,6 +2364,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-archaic-023",
     "norsk": "et blot",
     "lemma": "blot",
     "english": "a blót (Norse sacrificial feast)",
@@ -2178,6 +2376,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-archaic-024",
     "norsk": "en jarl",
     "lemma": "jarl",
     "english": "a jarl (Norse chieftain / earl)",
@@ -2189,6 +2388,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-proverbs-001",
     "norsk": "Den som graver en grop for andre, faller selv i den.",
     "lemma": "Den som graver en grop for andre, faller selv i den.",
     "english": "He who digs a pit for others falls into it himself.",
@@ -2200,6 +2400,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-002",
     "norsk": "Borte bra, hjemme best.",
     "lemma": "Borte bra, hjemme best.",
     "english": "There's no place like home. (lit. Away good, home best.)",
@@ -2211,6 +2412,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-003",
     "norsk": "Ingen røyk uten ild.",
     "lemma": "Ingen røyk uten ild.",
     "english": "There's no smoke without fire.",
@@ -2222,6 +2424,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-004",
     "norsk": "Den tidlig står opp, får mye gjort.",
     "lemma": "Den tidlig står opp, får mye gjort.",
     "english": "The early bird gets the worm. (lit. One who rises early gets much done.)",
@@ -2233,6 +2436,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-005",
     "norsk": "Øvelse gjør mester.",
     "lemma": "Øvelse gjør mester.",
     "english": "Practice makes perfect. (lit. Practice makes master.)",
@@ -2244,6 +2448,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-006",
     "norsk": "Mange bekker små gjør en stor å.",
     "lemma": "Mange bekker små gjør en stor å.",
     "english": "Many a little makes a mickle. / Every little helps. (lit. Many small streams make a big river.)",
@@ -2255,6 +2460,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-007",
     "norsk": "Æren er bedre enn gull.",
     "lemma": "Æren er bedre enn gull.",
     "english": "Honour is better than gold.",
@@ -2266,6 +2472,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-008",
     "norsk": "Livet er ikke noen dans på roser.",
     "lemma": "Livet er ikke noen dans på roser.",
     "english": "Life is not a bed of roses. (lit. Life is not a dance on roses.)",
@@ -2277,6 +2484,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-009",
     "norsk": "Det er ingen skam å snu.",
     "lemma": "Det er ingen skam å snu.",
     "english": "There's no shame in changing your mind / turning back.",
@@ -2288,6 +2496,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-010",
     "norsk": "Kjært barn har mange navn.",
     "lemma": "Kjært barn har mange navn.",
     "english": "A beloved child has many names. (something valued gets many labels)",
@@ -2299,6 +2508,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-011",
     "norsk": "Man skal ikke selge skinnet før bjørnen er skutt.",
     "lemma": "Man skal ikke selge skinnet før bjørnen er skutt.",
     "english": "Don't count your chickens before they hatch. (lit. Don't sell the hide before the bear is shot.)",
@@ -2310,6 +2520,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-012",
     "norsk": "Den som tier, samtykker.",
     "lemma": "Den som tier, samtykker.",
     "english": "Silence implies consent. (lit. One who is silent consents.)",
@@ -2321,6 +2532,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-013",
     "norsk": "Sannhet og tro er ikke det samme.",
     "lemma": "Sannhet og tro er ikke det samme.",
     "english": "Truth and belief are not the same thing.",
@@ -2332,6 +2544,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-014",
     "norsk": "Bedre sent enn aldri.",
     "lemma": "Bedre sent enn aldri.",
     "english": "Better late than never.",
@@ -2343,6 +2556,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-015",
     "norsk": "Ord er sølv, men taushet er gull.",
     "lemma": "Ord er sølv, men taushet er gull.",
     "english": "Speech is silver, silence is golden.",
@@ -2354,6 +2568,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-016",
     "norsk": "Ensomhet er den vises selskap.",
     "lemma": "Ensomhet er den vises selskap.",
     "english": "Solitude is the companion of the wise.",
@@ -2365,6 +2580,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-017",
     "norsk": "Den som lever skjult, lever godt.",
     "lemma": "Den som lever skjult, lever godt.",
     "english": "One who lives hidden lives well. / A quiet life is a good life.",
@@ -2376,6 +2592,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-018",
     "norsk": "Ingenting er nytt under solen.",
     "lemma": "Ingenting er nytt under solen.",
     "english": "There is nothing new under the sun.",
@@ -2387,6 +2604,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-019",
     "norsk": "Ende god, alt godt.",
     "lemma": "Ende god, alt godt.",
     "english": "All's well that ends well.",
@@ -2398,6 +2616,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-020",
     "norsk": "Av skade blir man vis.",
     "lemma": "Av skade blir man vis.",
     "english": "One becomes wise through hardship. / Learn from your mistakes.",
@@ -2409,6 +2628,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-021",
     "norsk": "Gammel vane er vond å vende.",
     "lemma": "Gammel vane er vond å vende.",
     "english": "Old habits die hard. (lit. Old habit is difficult to turn.)",
@@ -2420,6 +2640,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-022",
     "norsk": "Epler faller ikke langt fra stammen.",
     "lemma": "Epler faller ikke langt fra stammen.",
     "english": "The apple doesn't fall far from the tree.",
@@ -2431,6 +2652,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-023",
     "norsk": "Tida leger alle sår.",
     "lemma": "Tida leger alle sår.",
     "english": "Time heals all wounds.",
@@ -2442,6 +2664,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-024",
     "norsk": "Uten mat og drikke duger helten ikke.",
     "lemma": "Uten mat og drikke duger helten ikke.",
     "english": "Even a hero is nothing without food and drink.",
@@ -2453,6 +2676,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-proverbs-025",
     "norsk": "Det er ikke gull alt som glimrer.",
     "lemma": "Det er ikke gull alt som glimrer.",
     "english": "All that glitters is not gold.",
@@ -2464,6 +2688,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-highly-formal-001",
     "norsk": "idet",
     "lemma": "idet",
     "english": "as / at the moment when (formal temporal conjunction)",
@@ -2475,6 +2700,7 @@
     "part": "conjunction"
   },
   {
+    "id": "v-c-highly-formal-002",
     "norsk": "hvorigjennom",
     "lemma": "hvorigjennom",
     "english": "through which / whereby (formal relative adverb)",
@@ -2486,6 +2712,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-highly-formal-003",
     "norsk": "undertegnede",
     "lemma": "undertegnede",
     "english": "the undersigned",
@@ -2497,6 +2724,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-c-highly-formal-004",
     "norsk": "herved",
     "lemma": "herved",
     "english": "hereby",
@@ -2508,6 +2736,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-highly-formal-005",
     "norsk": "foranstående",
     "lemma": "foranstående",
     "english": "the foregoing / the preceding",
@@ -2519,6 +2748,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-highly-formal-006",
     "norsk": "å besørge",
     "lemma": "besørge",
     "english": "to arrange / to ensure (formal, administrative)",
@@ -2530,6 +2760,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-highly-formal-007",
     "norsk": "å anmode om",
     "lemma": "å anmode om",
     "english": "to formally request / to call upon",
@@ -2541,6 +2772,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-highly-formal-008",
     "norsk": "å bilegge",
     "lemma": "bilegge",
     "english": "to settle / to resolve (a dispute, formal)",
@@ -2552,6 +2784,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-highly-formal-009",
     "norsk": "i overensstemmelse med",
     "lemma": "i overensstemmelse med",
     "english": "in conformity with / in accordance with",
@@ -2563,6 +2796,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-highly-formal-010",
     "norsk": "å meddele",
     "lemma": "meddele",
     "english": "to inform / to communicate officially",
@@ -2574,6 +2808,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-highly-formal-011",
     "norsk": "en bevilgning",
     "lemma": "bevilgning",
     "english": "an appropriation / a grant (of funds)",
@@ -2585,6 +2820,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-highly-formal-012",
     "norsk": "å fremme en klage",
     "lemma": "å fremme en klage",
     "english": "to lodge a complaint / to raise an objection formally",
@@ -2596,6 +2832,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-highly-formal-013",
     "norsk": "uoppfordret",
     "lemma": "uoppfordret",
     "english": "unsolicited / without being asked",
@@ -2607,6 +2844,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-c-highly-formal-014",
     "norsk": "en fullmakt",
     "lemma": "fullmakt",
     "english": "a power of attorney / an authorisation",
@@ -2618,6 +2856,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-highly-formal-015",
     "norsk": "å gi avkall på",
     "lemma": "å gi avkall på",
     "english": "to waive / to relinquish",
@@ -2629,6 +2868,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-highly-formal-016",
     "norsk": "ikrafttredelse",
     "lemma": "ikrafttredelse",
     "english": "entry into force / effective date",
@@ -2640,6 +2880,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-highly-formal-017",
     "norsk": "en dispensasjon",
     "lemma": "dispensasjon",
     "english": "a dispensation / an exemption",
@@ -2651,6 +2892,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-highly-formal-018",
     "norsk": "stadfeste",
     "lemma": "stadfeste",
     "english": "to confirm / to uphold (a decision)",
@@ -2662,6 +2904,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-highly-formal-019",
     "norsk": "en innstilling",
     "lemma": "innstilling",
     "english": "a recommendation / a nomination (formal document)",
@@ -2673,6 +2916,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-highly-formal-020",
     "norsk": "å avsi dom",
     "lemma": "å avsi dom",
     "english": "to pronounce / to deliver a judgment",
@@ -2684,6 +2928,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-highly-formal-021",
     "norsk": "å hjemle",
     "lemma": "hjemle",
     "english": "to authorise by law / to justify legally",
@@ -2695,6 +2940,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-highly-formal-022",
     "norsk": "en betenkning",
     "lemma": "betenkning",
     "english": "a formal opinion / a memorandum",
@@ -2706,6 +2952,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-highly-formal-023",
     "norsk": "å tilkjenne",
     "lemma": "tilkjenne",
     "english": "to award / to adjudge",
@@ -2717,6 +2964,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-highly-formal-024",
     "norsk": "overensstemmende",
     "lemma": "overensstemmende",
     "english": "consistent with / conforming to",
@@ -2728,6 +2976,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-technical-001",
     "norsk": "epigenetikk",
     "lemma": "epigenetikk",
     "english": "epigenetics",
@@ -2739,6 +2988,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-002",
     "norsk": "en kvantefysikk",
     "lemma": "kvantefysikk",
     "english": "quantum physics",
@@ -2750,6 +3000,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-003",
     "norsk": "en superledning",
     "lemma": "superledning",
     "english": "superconductivity",
@@ -2761,6 +3012,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-004",
     "norsk": "en rekursjon",
     "lemma": "rekursjon",
     "english": "recursion (computing)",
@@ -2772,6 +3024,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-005",
     "norsk": "en maskinlæring",
     "lemma": "maskinlæring",
     "english": "machine learning",
@@ -2783,6 +3036,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-006",
     "norsk": "et nevralt nettverk",
     "lemma": "et nevralt nettverk",
     "english": "a neural network",
@@ -2794,6 +3048,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-technical-007",
     "norsk": "en biobank",
     "lemma": "biobank",
     "english": "a biobank",
@@ -2805,6 +3060,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-008",
     "norsk": "en nanoteknikk",
     "lemma": "nanoteknikk",
     "english": "nanotechnology",
@@ -2816,6 +3072,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-009",
     "norsk": "en halvleder",
     "lemma": "halvleder",
     "english": "a semiconductor",
@@ -2827,6 +3084,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-010",
     "norsk": "en kvantesammenfiltring",
     "lemma": "kvantesammenfiltring",
     "english": "quantum entanglement",
@@ -2838,6 +3096,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-011",
     "norsk": "en bioinformatikk",
     "lemma": "bioinformatikk",
     "english": "bioinformatics",
@@ -2849,6 +3108,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-012",
     "norsk": "et proteom",
     "lemma": "proteom",
     "english": "a proteome",
@@ -2860,6 +3120,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-013",
     "norsk": "en termodynamikk",
     "lemma": "termodynamikk",
     "english": "thermodynamics",
@@ -2871,6 +3132,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-014",
     "norsk": "en entropi",
     "lemma": "entropi",
     "english": "entropy",
@@ -2882,6 +3144,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-015",
     "norsk": "en polarisering",
     "lemma": "polarisering",
     "english": "polarisation (physics / optics)",
@@ -2893,6 +3156,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-016",
     "norsk": "en kompilator",
     "lemma": "kompilator",
     "english": "a compiler",
@@ -2904,6 +3168,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-017",
     "norsk": "en virtualisering",
     "lemma": "virtualisering",
     "english": "virtualisation",
@@ -2915,6 +3180,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-018",
     "norsk": "et API",
     "lemma": "API",
     "english": "an API (application programming interface)",
@@ -2926,6 +3192,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-019",
     "norsk": "en latens",
     "lemma": "latens",
     "english": "latency",
@@ -2937,6 +3204,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-020",
     "norsk": "en parallellprosessering",
     "lemma": "parallellprosessering",
     "english": "parallel processing",
@@ -2948,6 +3216,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-021",
     "norsk": "en abstraksjonslag",
     "lemma": "abstraksjonslag",
     "english": "an abstraction layer",
@@ -2959,6 +3228,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-technical-022",
     "norsk": "en mikrotjeneste",
     "lemma": "mikrotjeneste",
     "english": "a microservice",
@@ -2970,6 +3240,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-law-justice-001",
     "norsk": "en jurisdiksjon",
     "lemma": "jurisdiksjon",
     "english": "a jurisdiction",
@@ -2981,6 +3252,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-law-justice-002",
     "norsk": "rettspraksis",
     "lemma": "rettspraksis",
     "english": "case law / legal precedent",
@@ -2992,6 +3264,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-law-justice-003",
     "norsk": "straffrihet",
     "lemma": "straffrihet",
     "english": "impunity",
@@ -3003,6 +3276,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-law-justice-004",
     "norsk": "prejudikat",
     "lemma": "prejudikat",
     "english": "precedent (binding)",
@@ -3014,6 +3288,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-law-justice-005",
     "norsk": "habilitet",
     "lemma": "habilitet",
     "english": "impartiality / legal competence",
@@ -3025,6 +3300,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-neuroscience-cognition-001",
     "norsk": "en synapse",
     "lemma": "synapse",
     "english": "a synapse",
@@ -3036,6 +3312,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-neuroscience-cognition-002",
     "norsk": "et nevron",
     "lemma": "nevron",
     "english": "a neuron",
@@ -3047,6 +3324,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-neuroscience-cognition-003",
     "norsk": "nevroplastisitet",
     "lemma": "nevroplastisitet",
     "english": "neuroplasticity",
@@ -3058,6 +3336,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-neuroscience-cognition-004",
     "norsk": "prefrontal",
     "lemma": "prefrontal",
     "english": "prefrontal (cortex)",
@@ -3069,6 +3348,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-neuroscience-cognition-005",
     "norsk": "hippocampus",
     "lemma": "hippocampus",
     "english": "hippocampus",
@@ -3080,6 +3360,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-neuroscience-cognition-006",
     "norsk": "EEG",
     "lemma": "EEG",
     "english": "EEG (electroencephalogram)",
@@ -3091,6 +3372,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-climate-environment-policy-001",
     "norsk": "karbonnøytral",
     "lemma": "karbonnøytral",
     "english": "carbon neutral",
@@ -3102,6 +3384,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-climate-environment-policy-002",
     "norsk": "et klimabudsjett",
     "lemma": "klimabudsjett",
     "english": "a climate budget",
@@ -3113,6 +3396,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-climate-environment-policy-003",
     "norsk": "biodiversitet",
     "lemma": "biodiversitet",
     "english": "biodiversity",
@@ -3124,6 +3408,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-climate-environment-policy-004",
     "norsk": "en utslippskvote",
     "lemma": "utslippskvote",
     "english": "an emissions allowance",
@@ -3135,6 +3420,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-climate-environment-policy-005",
     "norsk": "karbonfangst",
     "lemma": "karbonfangst",
     "english": "carbon capture",
@@ -3146,6 +3432,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-climate-environment-policy-006",
     "norsk": "sirkulær økonomi",
     "lemma": "sirkulær økonomi",
     "english": "circular economy",
@@ -3157,6 +3444,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-sociology-anthropology-001",
     "norsk": "å assimilere",
     "lemma": "assimilere",
     "english": "to assimilate",
@@ -3168,6 +3456,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-sociology-anthropology-002",
     "norsk": "habitus",
     "lemma": "habitus",
     "english": "habitus (Bourdieu)",
@@ -3179,6 +3468,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-sociology-anthropology-003",
     "norsk": "etnografi",
     "lemma": "etnografi",
     "english": "ethnography",
@@ -3190,6 +3480,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-business-strategy-001",
     "norsk": "en diversifisering",
     "lemma": "diversifisering",
     "english": "diversification",
@@ -3201,6 +3492,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-business-strategy-002",
     "norsk": "en markedsandel",
     "lemma": "markedsandel",
     "english": "a market share",
@@ -3212,6 +3504,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-business-strategy-003",
     "norsk": "et oppkjøp",
     "lemma": "oppkjøp",
     "english": "an acquisition",
@@ -3223,6 +3516,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-business-strategy-004",
     "norsk": "å børsnotere",
     "lemma": "børsnotere",
     "english": "to list on the stock exchange",
@@ -3234,6 +3528,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-advanced-business-strategy-005",
     "norsk": "et konkurransefortrinn",
     "lemma": "konkurransefortrinn",
     "english": "a competitive advantage",
@@ -3245,6 +3540,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-existential-abstract-001",
     "norsk": "tomhet",
     "lemma": "tomhet",
     "english": "emptiness / void",
@@ -3256,6 +3552,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-existential-abstract-002",
     "norsk": "det sublime",
     "lemma": "det sublime",
     "english": "the sublime",
@@ -3267,6 +3564,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-existential-abstract-003",
     "norsk": "forgjengelighet",
     "lemma": "forgjengelighet",
     "english": "impermanence / transience",
@@ -3278,6 +3576,7 @@
     "part": "noun"
   },
   {
+    "id": "v-c-existential-abstract-004",
     "norsk": "å transcendere",
     "lemma": "transcendere",
     "english": "to transcend",
@@ -3289,6 +3588,7 @@
     "part": "verb"
   },
   {
+    "id": "v-c-existential-abstract-005",
     "norsk": "en identitet",
     "lemma": "identitet",
     "english": "an identity",

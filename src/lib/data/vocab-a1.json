@@ -1,5 +1,6 @@
 [
   {
+    "id": "v-a1-greetings-001",
     "norsk": "hei",
     "lemma": "hei",
     "english": "hi",
@@ -10,6 +11,7 @@
     "part": "interjection"
   },
   {
+    "id": "v-a1-greetings-002",
     "norsk": "hallo",
     "lemma": "hallo",
     "english": "hello",
@@ -20,6 +22,7 @@
     "part": "interjection"
   },
   {
+    "id": "v-a1-greetings-003",
     "norsk": "god morgen",
     "lemma": "god morgen",
     "english": "good morning",
@@ -30,6 +33,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-004",
     "norsk": "god helg",
     "lemma": "god helg",
     "english": "Have a good weekend",
@@ -40,6 +44,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-005",
     "norsk": "god kveld",
     "lemma": "god kveld",
     "english": "good evening",
@@ -50,6 +55,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-006",
     "norsk": "god natt",
     "lemma": "god natt",
     "english": "good night",
@@ -60,6 +66,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-007",
     "norsk": "ha det bra",
     "lemma": "ha det bra",
     "english": "goodbye / take care",
@@ -70,6 +77,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-008",
     "norsk": "ha det",
     "lemma": "ha det",
     "english": "bye",
@@ -80,6 +88,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-009",
     "norsk": "takk",
     "lemma": "takk",
     "english": "thank you",
@@ -90,6 +99,7 @@
     "part": "interjection"
   },
   {
+    "id": "v-a1-greetings-010",
     "norsk": "tusen takk",
     "lemma": "tusen takk",
     "english": "thank you very much",
@@ -100,6 +110,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-011",
     "norsk": "vær så snill",
     "lemma": "vær så snill",
     "english": "please",
@@ -110,6 +121,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-012",
     "norsk": "unnskyld",
     "lemma": "unnskyld",
     "english": "excuse me / sorry",
@@ -120,6 +132,7 @@
     "part": "interjection"
   },
   {
+    "id": "v-a1-greetings-013",
     "norsk": "beklager",
     "lemma": "beklage",
     "english": "I'm sorry",
@@ -130,6 +143,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-greetings-014",
     "norsk": "ja",
     "lemma": "ja",
     "english": "yes",
@@ -140,6 +154,7 @@
     "part": "interjection"
   },
   {
+    "id": "v-a1-greetings-015",
     "norsk": "nei",
     "lemma": "nei",
     "english": "no",
@@ -150,6 +165,7 @@
     "part": "interjection"
   },
   {
+    "id": "v-a1-greetings-016",
     "norsk": "Hvordan har du det?",
     "lemma": "hvordan har du det?",
     "english": "How are you?",
@@ -160,6 +176,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-017",
     "norsk": "Jeg har det bra",
     "lemma": "jeg har det bra",
     "english": "I'm fine",
@@ -170,6 +187,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-018",
     "norsk": "Hva heter du?",
     "lemma": "Hva heter du?",
     "english": "What is your name?",
@@ -180,6 +198,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-019",
     "norsk": "Jeg heter ...",
     "lemma": "Jeg heter ...",
     "english": "My name is ...",
@@ -190,6 +209,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-020",
     "norsk": "hyggelig å møte deg",
     "lemma": "hyggelig å møte deg",
     "english": "nice to meet you",
@@ -200,6 +220,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-021",
     "norsk": "velkommen",
     "lemma": "velkommen",
     "english": "welcome",
@@ -210,6 +231,7 @@
     "part": "interjection"
   },
   {
+    "id": "v-a1-greetings-022",
     "norsk": "vi ses",
     "lemma": "vi ses",
     "english": "see you later",
@@ -220,6 +242,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-023",
     "norsk": "på gjensyn",
     "lemma": "på gjensyn",
     "english": "goodbye (formal)",
@@ -230,6 +253,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-024",
     "norsk": "Hvor kommer du fra?",
     "lemma": "Hvor er du fra?",
     "english": "Where are you from?",
@@ -240,6 +264,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-025",
     "norsk": "Jeg kommer fra ...",
     "lemma": "Jeg kommer fra ...",
     "english": "I am from ...",
@@ -250,6 +275,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-026",
     "norsk": "Snakker du norsk?",
     "lemma": "Snakker du norsk?",
     "english": "Do you speak Norwegian?",
@@ -260,6 +286,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-027",
     "norsk": "Kan du gjenta det?",
     "lemma": "Kan du gjenta det?",
     "english": "Can you repeat that?",
@@ -270,6 +297,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-greetings-028",
     "norsk": "Jeg forstår ikke",
     "lemma": "Jeg forstår ikke",
     "english": "I don't understand",
@@ -280,6 +308,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-numbers-001",
     "norsk": "én / ett",
     "lemma": "én",
     "english": "one",
@@ -290,6 +319,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-002",
     "norsk": "to",
     "lemma": "to",
     "english": "two",
@@ -300,6 +330,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-003",
     "norsk": "tre",
     "lemma": "tre",
     "english": "three",
@@ -310,6 +341,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-004",
     "norsk": "fire",
     "lemma": "fire",
     "english": "four",
@@ -320,6 +352,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-005",
     "norsk": "fem",
     "lemma": "fem",
     "english": "five",
@@ -330,6 +363,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-006",
     "norsk": "seks",
     "lemma": "seks",
     "english": "six",
@@ -340,6 +374,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-007",
     "norsk": "syv",
     "lemma": "syv",
     "english": "seven",
@@ -350,6 +385,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-008",
     "norsk": "åtte",
     "lemma": "åtte",
     "english": "eight",
@@ -360,6 +396,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-009",
     "norsk": "ni",
     "lemma": "ni",
     "english": "nine",
@@ -370,6 +407,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-010",
     "norsk": "ti",
     "lemma": "ti",
     "english": "ten",
@@ -380,6 +418,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-011",
     "norsk": "elleve",
     "lemma": "elleve",
     "english": "eleven",
@@ -390,6 +429,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-012",
     "norsk": "tolv",
     "lemma": "tolv",
     "english": "twelve",
@@ -400,6 +440,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-013",
     "norsk": "tretten",
     "lemma": "tretten",
     "english": "thirteen",
@@ -410,6 +451,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-014",
     "norsk": "fjorten",
     "lemma": "fjorten",
     "english": "fourteen",
@@ -420,6 +462,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-015",
     "norsk": "femten",
     "lemma": "femten",
     "english": "fifteen",
@@ -430,6 +473,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-016",
     "norsk": "seksten",
     "lemma": "seksten",
     "english": "sixteen",
@@ -440,6 +484,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-017",
     "norsk": "sytten",
     "lemma": "sytten",
     "english": "seventeen",
@@ -450,6 +495,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-018",
     "norsk": "atten",
     "lemma": "atten",
     "english": "eighteen",
@@ -460,6 +506,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-019",
     "norsk": "nitten",
     "lemma": "nitten",
     "english": "nineteen",
@@ -470,6 +517,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-020",
     "norsk": "tjue",
     "lemma": "tjue",
     "english": "twenty",
@@ -480,6 +528,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-021",
     "norsk": "tretti",
     "lemma": "tretti",
     "english": "thirty",
@@ -490,6 +539,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-022",
     "norsk": "førti",
     "lemma": "førti",
     "english": "forty",
@@ -500,6 +550,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-023",
     "norsk": "femti",
     "lemma": "femti",
     "english": "fifty",
@@ -510,6 +561,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-024",
     "norsk": "hundre",
     "lemma": "hundre",
     "english": "one hundred",
@@ -520,6 +572,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-025",
     "norsk": "tusen",
     "lemma": "tusen",
     "english": "one thousand",
@@ -530,6 +583,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-026",
     "norsk": "null",
     "lemma": "null",
     "english": "zero",
@@ -540,6 +594,7 @@
     "part": "numeral"
   },
   {
+    "id": "v-a1-numbers-027",
     "norsk": "første",
     "lemma": "første",
     "english": "first",
@@ -550,6 +605,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-numbers-028",
     "norsk": "andre",
     "lemma": "andre",
     "english": "second",
@@ -560,6 +616,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-001",
     "norsk": "rød",
     "lemma": "rød",
     "english": "red",
@@ -570,6 +627,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-002",
     "norsk": "blå",
     "lemma": "blå",
     "english": "blue",
@@ -580,6 +638,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-003",
     "norsk": "gul",
     "lemma": "gul",
     "english": "yellow",
@@ -590,6 +649,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-004",
     "norsk": "grønn",
     "lemma": "grønn",
     "english": "green",
@@ -600,6 +660,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-005",
     "norsk": "hvit",
     "lemma": "hvit",
     "english": "white",
@@ -610,6 +671,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-006",
     "norsk": "svart",
     "lemma": "svart",
     "english": "black",
@@ -620,6 +682,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-007",
     "norsk": "grå",
     "lemma": "grå",
     "english": "grey",
@@ -630,6 +693,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-008",
     "norsk": "brun",
     "lemma": "brun",
     "english": "brown",
@@ -640,6 +704,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-009",
     "norsk": "rosa",
     "lemma": "rosa",
     "english": "pink",
@@ -650,6 +715,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-010",
     "norsk": "oransje",
     "lemma": "oransje",
     "english": "orange",
@@ -660,6 +726,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-011",
     "norsk": "lilla",
     "lemma": "lilla",
     "english": "purple",
@@ -670,6 +737,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-012",
     "norsk": "beige",
     "lemma": "beige",
     "english": "beige",
@@ -680,6 +748,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-013",
     "norsk": "turkis",
     "lemma": "turkis",
     "english": "turquoise",
@@ -690,6 +759,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-014",
     "norsk": "mørk",
     "lemma": "mørk",
     "english": "dark",
@@ -700,6 +770,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-015",
     "norsk": "lys",
     "lemma": "lys",
     "english": "light / bright",
@@ -710,6 +781,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-016",
     "norsk": "en farge",
     "lemma": "farge",
     "english": "a colour",
@@ -720,6 +792,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-colors-017",
     "norsk": "fargerik",
     "lemma": "fargerik",
     "english": "colourful",
@@ -730,6 +803,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-018",
     "norsk": "mørkeblå",
     "lemma": "mørkeblå",
     "english": "dark blue",
@@ -740,6 +814,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-019",
     "norsk": "lyseblå",
     "lemma": "lyseblå",
     "english": "light blue",
@@ -750,6 +825,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-colors-020",
     "norsk": "lysegrønn",
     "lemma": "lysegrønn",
     "english": "light green",
@@ -760,6 +836,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-family-001",
     "norsk": "en mor",
     "lemma": "mor",
     "english": "a mother",
@@ -770,6 +847,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-002",
     "norsk": "en far",
     "lemma": "far",
     "english": "a father",
@@ -780,6 +858,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-003",
     "norsk": "et barn",
     "lemma": "barn",
     "english": "a child",
@@ -790,6 +869,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-004",
     "norsk": "en sønn",
     "lemma": "sønn",
     "english": "a son",
@@ -800,6 +880,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-005",
     "norsk": "en datter",
     "lemma": "datter",
     "english": "a daughter",
@@ -810,6 +891,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-006",
     "norsk": "en bror",
     "lemma": "bror",
     "english": "a brother",
@@ -820,6 +902,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-007",
     "norsk": "en søster",
     "lemma": "søster",
     "english": "a sister",
@@ -830,6 +913,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-008",
     "norsk": "en bestemor",
     "lemma": "bestemor",
     "english": "a grandmother",
@@ -840,6 +924,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-009",
     "norsk": "en bestefar",
     "lemma": "bestefar",
     "english": "a grandfather",
@@ -850,6 +935,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-010",
     "norsk": "en onkel",
     "lemma": "onkel",
     "english": "an uncle",
@@ -860,6 +946,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-011",
     "norsk": "en tante",
     "lemma": "tante",
     "english": "an aunt",
@@ -870,6 +957,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-012",
     "norsk": "en fetter",
     "lemma": "fetter",
     "english": "a male cousin",
@@ -880,6 +968,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-013",
     "norsk": "en kusine",
     "lemma": "kusine",
     "english": "a female cousin",
@@ -890,6 +979,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-014",
     "norsk": "en mann",
     "lemma": "mann",
     "english": "a husband / a man",
@@ -900,6 +990,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-015",
     "norsk": "en kone",
     "lemma": "kone",
     "english": "a wife",
@@ -910,6 +1001,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-016",
     "norsk": "en familie",
     "lemma": "familie",
     "english": "a family",
@@ -920,6 +1012,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-017",
     "norsk": "en forelder",
     "lemma": "forelder",
     "english": "a parent",
@@ -930,6 +1023,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-018",
     "norsk": "et søsken",
     "lemma": "søsken",
     "english": "a sibling",
@@ -940,6 +1034,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-019",
     "norsk": "et barnebarn",
     "lemma": "barnebarn",
     "english": "a grandchild",
@@ -950,6 +1045,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-020",
     "norsk": "en baby",
     "lemma": "baby",
     "english": "a baby",
@@ -960,6 +1056,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-021",
     "norsk": "en svigermor",
     "lemma": "svigermor",
     "english": "a mother-in-law",
@@ -970,6 +1067,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-022",
     "norsk": "en svigerfar",
     "lemma": "svigerfar",
     "english": "a father-in-law",
@@ -980,6 +1078,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-023",
     "norsk": "en tvilling",
     "lemma": "tvilling",
     "english": "a twin",
@@ -990,6 +1089,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-024",
     "norsk": "en nevø",
     "lemma": "nevø",
     "english": "a nephew",
@@ -1000,6 +1100,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-family-025",
     "norsk": "en niese",
     "lemma": "niese",
     "english": "a niece",
@@ -1010,6 +1111,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-001",
     "norsk": "et hode",
     "lemma": "hode",
     "english": "a head",
@@ -1020,6 +1122,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-002",
     "norsk": "et øye",
     "lemma": "øye",
     "english": "an eye",
@@ -1030,6 +1133,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-003",
     "norsk": "et øre",
     "lemma": "øre",
     "english": "an ear",
@@ -1040,6 +1144,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-004",
     "norsk": "en nese",
     "lemma": "nese",
     "english": "a nose",
@@ -1050,6 +1155,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-005",
     "norsk": "en munn",
     "lemma": "munn",
     "english": "a mouth",
@@ -1060,6 +1166,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-006",
     "norsk": "en tann",
     "lemma": "tann",
     "english": "a tooth",
@@ -1070,6 +1177,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-007",
     "norsk": "en hals",
     "lemma": "hals",
     "english": "a throat / neck",
@@ -1080,6 +1188,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-008",
     "norsk": "en arm",
     "lemma": "arm",
     "english": "an arm",
@@ -1090,6 +1199,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-009",
     "norsk": "en hånd",
     "lemma": "hånd",
     "english": "a hand",
@@ -1100,6 +1210,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-010",
     "norsk": "en finger",
     "lemma": "finger",
     "english": "a finger",
@@ -1110,6 +1221,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-011",
     "norsk": "en mage",
     "lemma": "mage",
     "english": "a stomach",
@@ -1120,6 +1232,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-012",
     "norsk": "et bein",
     "lemma": "bein",
     "english": "a leg",
@@ -1130,6 +1243,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-013",
     "norsk": "en fot",
     "lemma": "fot",
     "english": "a foot",
@@ -1140,6 +1254,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-014",
     "norsk": "en kropp",
     "lemma": "kropp",
     "english": "a body",
@@ -1150,6 +1265,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-015",
     "norsk": "et hår",
     "lemma": "hår",
     "english": "hair",
@@ -1160,6 +1276,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-016",
     "norsk": "en rygg",
     "lemma": "rygg",
     "english": "a back",
@@ -1170,6 +1287,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-017",
     "norsk": "et ansikt",
     "lemma": "ansikt",
     "english": "a face",
@@ -1180,6 +1298,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-018",
     "norsk": "en tå",
     "lemma": "tå",
     "english": "a toe",
@@ -1190,6 +1309,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-019",
     "norsk": "et bryst",
     "lemma": "bryst",
     "english": "a chest",
@@ -1200,6 +1320,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-020",
     "norsk": "en legg",
     "lemma": "legg",
     "english": "a calf",
@@ -1210,6 +1331,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-body-021",
     "norsk": "en tommelfinger",
     "lemma": "tommelfinger",
     "english": "a thumb",
@@ -1220,6 +1342,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-001",
     "norsk": "et brød",
     "lemma": "brød",
     "english": "bread",
@@ -1230,6 +1353,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-002",
     "norsk": "melk",
     "lemma": "melk",
     "english": "milk",
@@ -1240,6 +1364,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-003",
     "norsk": "et egg",
     "lemma": "egg",
     "english": "an egg",
@@ -1250,6 +1375,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-004",
     "norsk": "en ost",
     "lemma": "ost",
     "english": "cheese",
@@ -1260,6 +1386,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-005",
     "norsk": "smør",
     "lemma": "smør",
     "english": "butter",
@@ -1270,6 +1397,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-006",
     "norsk": "en fisk",
     "lemma": "fisk",
     "english": "fish (food)",
@@ -1280,6 +1408,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-007",
     "norsk": "kjøtt",
     "lemma": "kjøtt",
     "english": "meat",
@@ -1290,6 +1419,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-008",
     "norsk": "en kylling",
     "lemma": "kylling",
     "english": "chicken",
@@ -1300,6 +1430,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-009",
     "norsk": "en suppe",
     "lemma": "suppe",
     "english": "soup",
@@ -1310,6 +1441,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-010",
     "norsk": "et eple",
     "lemma": "eple",
     "english": "an apple",
@@ -1320,6 +1452,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-011",
     "norsk": "en banan",
     "lemma": "banan",
     "english": "a banana",
@@ -1330,6 +1463,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-012",
     "norsk": "en appelsin",
     "lemma": "appelsin",
     "english": "an orange",
@@ -1340,6 +1474,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-013",
     "norsk": "en tomat",
     "lemma": "tomat",
     "english": "a tomato",
@@ -1350,6 +1485,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-014",
     "norsk": "en potet",
     "lemma": "potet",
     "english": "a potato",
@@ -1360,6 +1496,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-015",
     "norsk": "en løk",
     "lemma": "løk",
     "english": "an onion",
@@ -1370,6 +1507,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-016",
     "norsk": "en gulrot",
     "lemma": "gulrot",
     "english": "a carrot",
@@ -1380,6 +1518,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-017",
     "norsk": "vann",
     "lemma": "vann",
     "english": "water",
@@ -1390,6 +1529,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-018",
     "norsk": "juice",
     "lemma": "juice",
     "english": "juice",
@@ -1400,6 +1540,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-019",
     "norsk": "kaffe",
     "lemma": "kaffe",
     "english": "coffee",
@@ -1410,6 +1551,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-020",
     "norsk": "te",
     "lemma": "te",
     "english": "tea",
@@ -1420,6 +1562,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-021",
     "norsk": "sukker",
     "lemma": "sukker",
     "english": "sugar",
@@ -1430,6 +1573,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-022",
     "norsk": "salt",
     "lemma": "salt",
     "english": "salt",
@@ -1440,6 +1584,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-023",
     "norsk": "en sjokolade",
     "lemma": "sjokolade",
     "english": "chocolate",
@@ -1450,6 +1595,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-024",
     "norsk": "en is",
     "lemma": "is",
     "english": "ice cream",
@@ -1460,6 +1606,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-food-025",
     "norsk": "ris",
     "lemma": "ris",
     "english": "rice",
@@ -1470,6 +1617,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-001",
     "norsk": "en hund",
     "lemma": "hund",
     "english": "a dog",
@@ -1480,6 +1628,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-002",
     "norsk": "en katt",
     "lemma": "katt",
     "english": "a cat",
@@ -1490,6 +1639,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-003",
     "norsk": "en hest",
     "lemma": "hest",
     "english": "a horse",
@@ -1500,6 +1650,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-004",
     "norsk": "ei ku",
     "lemma": "ku",
     "english": "a cow",
@@ -1510,6 +1661,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-005",
     "norsk": "en gris",
     "lemma": "gris",
     "english": "a pig",
@@ -1520,6 +1672,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-006",
     "norsk": "en sau",
     "lemma": "sau",
     "english": "a sheep",
@@ -1530,6 +1683,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-007",
     "norsk": "en fugl",
     "lemma": "fugl",
     "english": "a bird",
@@ -1540,6 +1694,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-008",
     "norsk": "en mus",
     "lemma": "mus",
     "english": "a mouse",
@@ -1550,6 +1705,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-009",
     "norsk": "en kanin",
     "lemma": "kanin",
     "english": "a rabbit",
@@ -1560,6 +1716,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-010",
     "norsk": "et lam",
     "lemma": "lam",
     "english": "a lamb",
@@ -1570,6 +1727,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-011",
     "norsk": "en rev",
     "lemma": "rev",
     "english": "a fox",
@@ -1580,6 +1738,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-012",
     "norsk": "en bjørn",
     "lemma": "bjørn",
     "english": "a bear",
@@ -1590,6 +1749,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-013",
     "norsk": "et ekorn",
     "lemma": "ekorn",
     "english": "a squirrel",
@@ -1600,6 +1760,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-014",
     "norsk": "en ulv",
     "lemma": "ulv",
     "english": "a wolf",
@@ -1610,6 +1771,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-015",
     "norsk": "en elg",
     "lemma": "elg",
     "english": "a moose",
@@ -1620,6 +1782,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-016",
     "norsk": "en ørn",
     "lemma": "ørn",
     "english": "an eagle",
@@ -1630,6 +1793,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-017",
     "norsk": "en and",
     "lemma": "and",
     "english": "a duck",
@@ -1640,6 +1804,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-018",
     "norsk": "ei høne",
     "lemma": "høne",
     "english": "a hen",
@@ -1650,6 +1815,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-019",
     "norsk": "en løve",
     "lemma": "løve",
     "english": "a lion",
@@ -1660,6 +1826,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-020",
     "norsk": "en elefant",
     "lemma": "elefant",
     "english": "an elephant",
@@ -1670,6 +1837,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-021",
     "norsk": "en slange",
     "lemma": "slange",
     "english": "a snake",
@@ -1680,6 +1848,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-022",
     "norsk": "en edderkopp",
     "lemma": "edderkopp",
     "english": "a spider",
@@ -1690,6 +1859,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-023",
     "norsk": "en frosk",
     "lemma": "frosk",
     "english": "a frog",
@@ -1700,6 +1870,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-animals-024",
     "norsk": "en tiger",
     "lemma": "tiger",
     "english": "a tiger",
@@ -1710,6 +1881,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-001",
     "norsk": "et hus",
     "lemma": "hus",
     "english": "a house",
@@ -1720,6 +1892,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-002",
     "norsk": "en leilighet",
     "lemma": "leilighet",
     "english": "an apartment",
@@ -1730,6 +1903,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-003",
     "norsk": "et rom",
     "lemma": "rom",
     "english": "a room",
@@ -1740,6 +1914,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-004",
     "norsk": "et kjøkken",
     "lemma": "kjøkken",
     "english": "a kitchen",
@@ -1750,6 +1925,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-005",
     "norsk": "en stue",
     "lemma": "stue",
     "english": "a living room",
@@ -1760,6 +1936,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-006",
     "norsk": "et soverom",
     "lemma": "soverom",
     "english": "a bedroom",
@@ -1770,6 +1947,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-007",
     "norsk": "et baderom",
     "lemma": "baderom",
     "english": "a bathroom",
@@ -1780,6 +1958,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-008",
     "norsk": "ei dør",
     "lemma": "dør",
     "english": "a door",
@@ -1790,6 +1969,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-009",
     "norsk": "et vindu",
     "lemma": "vindu",
     "english": "a window",
@@ -1800,6 +1980,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-010",
     "norsk": "et bord",
     "lemma": "bord",
     "english": "a table",
@@ -1810,6 +1991,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-011",
     "norsk": "en stol",
     "lemma": "stol",
     "english": "a chair",
@@ -1820,6 +2002,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-012",
     "norsk": "en seng",
     "lemma": "seng",
     "english": "a bed",
@@ -1830,6 +2013,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-013",
     "norsk": "en sofa",
     "lemma": "sofa",
     "english": "a sofa",
@@ -1840,6 +2024,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-014",
     "norsk": "et gulv",
     "lemma": "gulv",
     "english": "a floor",
@@ -1850,6 +2035,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-015",
     "norsk": "et tak",
     "lemma": "tak",
     "english": "a ceiling / a roof",
@@ -1860,6 +2046,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-016",
     "norsk": "en vegg",
     "lemma": "vegg",
     "english": "a wall",
@@ -1870,6 +2057,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-017",
     "norsk": "en lampe",
     "lemma": "lampe",
     "english": "a lamp",
@@ -1880,6 +2068,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-018",
     "norsk": "et skap",
     "lemma": "skap",
     "english": "a wardrobe / a cupboard",
@@ -1890,6 +2079,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-019",
     "norsk": "et kjøleskap",
     "lemma": "kjøleskap",
     "english": "a refrigerator",
@@ -1900,6 +2090,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-020",
     "norsk": "en ovn",
     "lemma": "ovn",
     "english": "an oven / a stove",
@@ -1910,6 +2101,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-021",
     "norsk": "et teppe",
     "lemma": "teppe",
     "english": "a rug / a carpet",
@@ -1920,6 +2112,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-022",
     "norsk": "en gardin",
     "lemma": "gardin",
     "english": "a curtain",
@@ -1930,6 +2123,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-023",
     "norsk": "en nøkkel",
     "lemma": "nøkkel",
     "english": "a key",
@@ -1940,6 +2134,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-024",
     "norsk": "en hage",
     "lemma": "hage",
     "english": "a garden",
@@ -1950,6 +2145,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-home-025",
     "norsk": "en adresse",
     "lemma": "adresse",
     "english": "an address",
@@ -1960,6 +2156,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-001",
     "norsk": "mandag",
     "lemma": "mandag",
     "english": "Monday",
@@ -1970,6 +2167,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-002",
     "norsk": "tirsdag",
     "lemma": "tirsdag",
     "english": "Tuesday",
@@ -1980,6 +2178,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-003",
     "norsk": "onsdag",
     "lemma": "onsdag",
     "english": "Wednesday",
@@ -1990,6 +2189,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-004",
     "norsk": "torsdag",
     "lemma": "torsdag",
     "english": "Thursday",
@@ -2000,6 +2200,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-005",
     "norsk": "fredag",
     "lemma": "fredag",
     "english": "Friday",
@@ -2010,6 +2211,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-006",
     "norsk": "lørdag",
     "lemma": "lørdag",
     "english": "Saturday",
@@ -2020,6 +2222,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-007",
     "norsk": "søndag",
     "lemma": "søndag",
     "english": "Sunday",
@@ -2030,6 +2233,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-008",
     "norsk": "en dag",
     "lemma": "dag",
     "english": "a day",
@@ -2040,6 +2244,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-009",
     "norsk": "en uke",
     "lemma": "uke",
     "english": "a week",
@@ -2050,6 +2255,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-010",
     "norsk": "en måned",
     "lemma": "måned",
     "english": "a month",
@@ -2060,6 +2266,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-011",
     "norsk": "et år",
     "lemma": "år",
     "english": "a year",
@@ -2070,6 +2277,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-012",
     "norsk": "i dag",
     "lemma": "i dag",
     "english": "today",
@@ -2080,6 +2288,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-a1-days-months-013",
     "norsk": "i morgen",
     "lemma": "i morgen",
     "english": "tomorrow",
@@ -2090,6 +2299,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-a1-days-months-014",
     "norsk": "i går",
     "lemma": "i går",
     "english": "yesterday",
@@ -2100,6 +2310,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-a1-days-months-015",
     "norsk": "januar",
     "lemma": "januar",
     "english": "January",
@@ -2110,6 +2321,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-016",
     "norsk": "februar",
     "lemma": "februar",
     "english": "February",
@@ -2120,6 +2332,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-017",
     "norsk": "mars",
     "lemma": "mars",
     "english": "March",
@@ -2130,6 +2343,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-018",
     "norsk": "april",
     "lemma": "april",
     "english": "April",
@@ -2140,6 +2354,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-019",
     "norsk": "mai",
     "lemma": "mai",
     "english": "May",
@@ -2150,6 +2365,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-020",
     "norsk": "juni",
     "lemma": "juni",
     "english": "June",
@@ -2160,6 +2376,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-021",
     "norsk": "juli",
     "lemma": "juli",
     "english": "July",
@@ -2170,6 +2387,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-022",
     "norsk": "august",
     "lemma": "august",
     "english": "August",
@@ -2180,6 +2398,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-023",
     "norsk": "september",
     "lemma": "september",
     "english": "September",
@@ -2190,6 +2409,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-024",
     "norsk": "oktober",
     "lemma": "oktober",
     "english": "October",
@@ -2200,6 +2420,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-025",
     "norsk": "november",
     "lemma": "november",
     "english": "November",
@@ -2210,6 +2431,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-days-months-026",
     "norsk": "desember",
     "lemma": "desember",
     "english": "December",
@@ -2220,6 +2442,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-001",
     "norsk": "en skole",
     "lemma": "skole",
     "english": "a school",
@@ -2230,6 +2453,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-002",
     "norsk": "en lærer",
     "lemma": "lærer",
     "english": "a teacher",
@@ -2240,6 +2464,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-003",
     "norsk": "en elev",
     "lemma": "elev",
     "english": "a pupil / a student",
@@ -2250,6 +2475,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-004",
     "norsk": "et klasserom",
     "lemma": "klasserom",
     "english": "a classroom",
@@ -2260,6 +2486,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-005",
     "norsk": "en bok",
     "lemma": "bok",
     "english": "a book",
@@ -2270,6 +2497,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-006",
     "norsk": "en penn",
     "lemma": "penn",
     "english": "a pen",
@@ -2280,6 +2508,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-007",
     "norsk": "en blyant",
     "lemma": "blyant",
     "english": "a pencil",
@@ -2290,6 +2519,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-008",
     "norsk": "et papir",
     "lemma": "papir",
     "english": "paper",
@@ -2300,6 +2530,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-009",
     "norsk": "en ryggsekk",
     "lemma": "ryggsekk",
     "english": "a backpack",
@@ -2310,6 +2541,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-010",
     "norsk": "ei tavle",
     "lemma": "tavle",
     "english": "a blackboard / whiteboard",
@@ -2320,6 +2552,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-011",
     "norsk": "et viskelær",
     "lemma": "viskelær",
     "english": "an eraser",
@@ -2330,6 +2563,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-012",
     "norsk": "en linjal",
     "lemma": "linjal",
     "english": "a ruler",
@@ -2340,6 +2574,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-013",
     "norsk": "et hefte",
     "lemma": "hefte",
     "english": "a notebook",
@@ -2350,6 +2585,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-014",
     "norsk": "en datamaskin",
     "lemma": "datamaskin",
     "english": "a computer",
@@ -2360,6 +2596,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-015",
     "norsk": "en ordbok",
     "lemma": "ordbok",
     "english": "a dictionary",
@@ -2370,6 +2607,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-016",
     "norsk": "et bilde",
     "lemma": "bilde",
     "english": "a picture",
@@ -2380,6 +2618,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-017",
     "norsk": "en lekse",
     "lemma": "lekse",
     "english": "homework",
@@ -2390,6 +2629,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-018",
     "norsk": "en klasse",
     "lemma": "klasse",
     "english": "a class",
@@ -2400,6 +2640,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-019",
     "norsk": "en time",
     "lemma": "time",
     "english": "a lesson / an hour",
@@ -2410,6 +2651,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-020",
     "norsk": "et spørsmål",
     "lemma": "spørsmål",
     "english": "a question",
@@ -2420,6 +2662,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-classroom-021",
     "norsk": "å lese",
     "lemma": "lese",
     "english": "to read",
@@ -2430,6 +2673,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-classroom-022",
     "norsk": "å skrive",
     "lemma": "skrive",
     "english": "to write",
@@ -2440,6 +2684,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-classroom-023",
     "norsk": "å lære",
     "lemma": "lære",
     "english": "to learn",
@@ -2450,6 +2695,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-adjectives-001",
     "norsk": "stor",
     "lemma": "stor",
     "english": "big / large",
@@ -2460,6 +2706,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-002",
     "norsk": "liten",
     "lemma": "liten",
     "english": "small / little",
@@ -2470,6 +2717,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-003",
     "norsk": "ny",
     "lemma": "ny",
     "english": "new",
@@ -2480,6 +2728,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-004",
     "norsk": "gammel",
     "lemma": "gammel",
     "english": "old",
@@ -2490,6 +2739,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-005",
     "norsk": "god",
     "lemma": "god",
     "english": "good",
@@ -2500,6 +2750,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-006",
     "norsk": "dårlig",
     "lemma": "dårlig",
     "english": "bad",
@@ -2510,6 +2761,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-007",
     "norsk": "varm",
     "lemma": "varm",
     "english": "warm / hot",
@@ -2520,6 +2772,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-008",
     "norsk": "kald",
     "lemma": "kald",
     "english": "cold",
@@ -2530,6 +2783,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-009",
     "norsk": "glad",
     "lemma": "glad",
     "english": "happy",
@@ -2540,6 +2794,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-010",
     "norsk": "trett",
     "lemma": "trett",
     "english": "tired",
@@ -2550,6 +2805,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-011",
     "norsk": "sulten",
     "lemma": "sulten",
     "english": "hungry",
@@ -2560,6 +2816,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-012",
     "norsk": "tørst",
     "lemma": "tørst",
     "english": "thirsty",
@@ -2570,6 +2827,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-013",
     "norsk": "fin",
     "lemma": "fin",
     "english": "nice / pretty",
@@ -2580,6 +2838,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-014",
     "norsk": "høy",
     "lemma": "høy",
     "english": "tall / high",
@@ -2590,6 +2849,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-015",
     "norsk": "lang",
     "lemma": "lang",
     "english": "long",
@@ -2600,6 +2860,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-016",
     "norsk": "kort",
     "lemma": "kort",
     "english": "short",
@@ -2610,6 +2871,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-017",
     "norsk": "tung",
     "lemma": "tung",
     "english": "heavy",
@@ -2620,6 +2882,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-018",
     "norsk": "lett",
     "lemma": "lett",
     "english": "light / easy",
@@ -2630,6 +2893,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-019",
     "norsk": "ung",
     "lemma": "ung",
     "english": "young",
@@ -2640,6 +2904,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-020",
     "norsk": "snill",
     "lemma": "snill",
     "english": "kind / nice",
@@ -2650,6 +2915,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-021",
     "norsk": "full",
     "lemma": "full",
     "english": "full",
@@ -2660,6 +2926,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-022",
     "norsk": "tom",
     "lemma": "tom",
     "english": "empty",
@@ -2670,6 +2937,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-023",
     "norsk": "ren",
     "lemma": "ren",
     "english": "clean",
@@ -2680,6 +2948,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-adjectives-024",
     "norsk": "sterk",
     "lemma": "sterk",
     "english": "strong",
@@ -2690,6 +2959,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-verbs-001",
     "norsk": "å være",
     "lemma": "være",
     "english": "to be",
@@ -2700,6 +2970,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-002",
     "norsk": "å ha",
     "lemma": "ha",
     "english": "to have",
@@ -2710,6 +2981,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-003",
     "norsk": "å gå",
     "lemma": "gå",
     "english": "to go / to walk",
@@ -2720,6 +2992,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-004",
     "norsk": "å spise",
     "lemma": "spise",
     "english": "to eat",
@@ -2730,6 +3003,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-005",
     "norsk": "å drikke",
     "lemma": "drikke",
     "english": "to drink",
@@ -2740,6 +3014,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-006",
     "norsk": "å sove",
     "lemma": "sove",
     "english": "to sleep",
@@ -2750,6 +3025,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-007",
     "norsk": "å snakke",
     "lemma": "snakke",
     "english": "to speak / to talk",
@@ -2760,6 +3036,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-008",
     "norsk": "å se",
     "lemma": "se",
     "english": "to see / to watch",
@@ -2770,6 +3047,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-009",
     "norsk": "å høre",
     "lemma": "høre",
     "english": "to hear / to listen",
@@ -2780,6 +3058,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-010",
     "norsk": "å komme",
     "lemma": "komme",
     "english": "to come",
@@ -2790,6 +3069,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-011",
     "norsk": "å hete",
     "lemma": "hete",
     "english": "to be called / named",
@@ -2800,6 +3080,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-012",
     "norsk": "å bo",
     "lemma": "bo",
     "english": "to live / to reside",
@@ -2810,6 +3091,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-013",
     "norsk": "å jobbe",
     "lemma": "jobbe",
     "english": "to work",
@@ -2820,6 +3102,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-014",
     "norsk": "å like",
     "lemma": "like",
     "english": "to like",
@@ -2830,6 +3113,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-015",
     "norsk": "å vil",
     "lemma": "vil",
     "english": "to want",
@@ -2840,6 +3124,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-016",
     "norsk": "å kunne",
     "lemma": "kunne",
     "english": "to be able to / can",
@@ -2850,6 +3135,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-017",
     "norsk": "å kjøpe",
     "lemma": "kjøpe",
     "english": "to buy",
@@ -2860,6 +3146,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-018",
     "norsk": "å leke",
     "lemma": "leke",
     "english": "to play (children)",
@@ -2870,6 +3157,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-019",
     "norsk": "å hjelpe",
     "lemma": "hjelpe",
     "english": "to help",
@@ -2880,6 +3168,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-020",
     "norsk": "å forstå",
     "lemma": "forstå",
     "english": "to understand",
@@ -2890,6 +3179,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-021",
     "norsk": "å åpne",
     "lemma": "åpne",
     "english": "to open",
@@ -2900,6 +3190,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-022",
     "norsk": "å lukke",
     "lemma": "lukke",
     "english": "to close",
@@ -2910,6 +3201,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-023",
     "norsk": "å gi",
     "lemma": "gi",
     "english": "to give",
@@ -2920,6 +3212,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-verbs-024",
     "norsk": "å ta",
     "lemma": "ta",
     "english": "to take",
@@ -2930,6 +3223,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-pronouns-and-questions-001",
     "norsk": "jeg",
     "lemma": "jeg",
     "english": "I",
@@ -2940,6 +3234,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-002",
     "norsk": "du",
     "lemma": "du",
     "english": "you (singular)",
@@ -2950,6 +3245,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-003",
     "norsk": "han",
     "lemma": "han",
     "english": "he",
@@ -2960,6 +3256,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-004",
     "norsk": "hun",
     "lemma": "hun",
     "english": "she",
@@ -2970,6 +3267,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-005",
     "norsk": "vi",
     "lemma": "vi",
     "english": "we",
@@ -2980,6 +3278,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-006",
     "norsk": "dere",
     "lemma": "dere",
     "english": "you (plural)",
@@ -2990,6 +3289,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-007",
     "norsk": "de",
     "lemma": "de",
     "english": "they",
@@ -3000,6 +3300,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-008",
     "norsk": "det",
     "lemma": "det",
     "english": "it",
@@ -3010,6 +3311,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-009",
     "norsk": "hva",
     "lemma": "hva",
     "english": "what",
@@ -3020,6 +3322,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-010",
     "norsk": "hvor",
     "lemma": "hvor",
     "english": "where",
@@ -3030,6 +3333,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-a1-pronouns-and-questions-011",
     "norsk": "hvem",
     "lemma": "hvem",
     "english": "who",
@@ -3040,6 +3344,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-012",
     "norsk": "når",
     "lemma": "når",
     "english": "when",
@@ -3050,6 +3355,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-a1-pronouns-and-questions-013",
     "norsk": "hvorfor",
     "lemma": "hvorfor",
     "english": "why",
@@ -3060,6 +3366,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-a1-pronouns-and-questions-014",
     "norsk": "hvordan",
     "lemma": "hvordan",
     "english": "how",
@@ -3070,6 +3377,7 @@
     "part": "adverb"
   },
   {
+    "id": "v-a1-pronouns-and-questions-015",
     "norsk": "min / mi / mitt",
     "lemma": "min",
     "english": "my",
@@ -3080,6 +3388,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-016",
     "norsk": "din / di / ditt",
     "lemma": "din",
     "english": "your (singular)",
@@ -3090,6 +3399,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-017",
     "norsk": "hans",
     "lemma": "hans",
     "english": "his",
@@ -3100,6 +3410,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-018",
     "norsk": "hennes",
     "lemma": "hennes",
     "english": "her",
@@ -3110,6 +3421,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-019",
     "norsk": "vår / vårt",
     "lemma": "vår",
     "english": "our",
@@ -3120,6 +3432,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-020",
     "norsk": "meg",
     "lemma": "meg",
     "english": "me",
@@ -3130,6 +3443,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-021",
     "norsk": "deg",
     "lemma": "deg",
     "english": "you (object)",
@@ -3140,6 +3454,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-022",
     "norsk": "denne / dette",
     "lemma": "denne",
     "english": "this",
@@ -3150,6 +3465,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-023",
     "norsk": "den / det",
     "lemma": "den",
     "english": "that / the (definite pronoun)",
@@ -3160,6 +3476,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-024",
     "norsk": "noe",
     "lemma": "noe",
     "english": "something / some",
@@ -3170,6 +3487,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-025",
     "norsk": "ingen",
     "lemma": "ingen",
     "english": "nobody / no one",
@@ -3180,6 +3498,7 @@
     "part": "pronoun"
   },
   {
+    "id": "v-a1-pronouns-and-questions-026",
     "norsk": "hvor mange",
     "lemma": "hvor mange",
     "english": "how many",
@@ -3190,6 +3509,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-feelings-001",
     "norsk": "lei seg",
     "lemma": "lei seg",
     "english": "sad",
@@ -3200,6 +3520,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-002",
     "norsk": "sint",
     "lemma": "sint",
     "english": "angry",
@@ -3210,6 +3531,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-003",
     "norsk": "redd",
     "lemma": "redd",
     "english": "scared / afraid",
@@ -3220,6 +3542,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-004",
     "norsk": "overrasket",
     "lemma": "overrasket",
     "english": "surprised",
@@ -3230,6 +3553,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-005",
     "norsk": "rolig",
     "lemma": "rolig",
     "english": "calm",
@@ -3240,6 +3564,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-006",
     "norsk": "nervøs",
     "lemma": "nervøs",
     "english": "nervous",
@@ -3250,6 +3575,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-007",
     "norsk": "trist",
     "lemma": "trist",
     "english": "sad / sorrowful",
@@ -3260,6 +3586,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-008",
     "norsk": "lykkelig",
     "lemma": "lykkelig",
     "english": "joyful / blissful",
@@ -3270,6 +3597,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-009",
     "norsk": "fornøyd",
     "lemma": "fornøyd",
     "english": "satisfied / content",
@@ -3280,6 +3608,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-010",
     "norsk": "spent",
     "lemma": "spent",
     "english": "excited / tense",
@@ -3290,6 +3619,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-011",
     "norsk": "flau",
     "lemma": "flau",
     "english": "embarrassed",
@@ -3300,6 +3630,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-012",
     "norsk": "ensom",
     "lemma": "ensom",
     "english": "lonely",
@@ -3310,6 +3641,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-013",
     "norsk": "skuffet",
     "lemma": "skuffet",
     "english": "disappointed",
@@ -3320,6 +3652,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-014",
     "norsk": "stolt",
     "lemma": "stolt",
     "english": "proud",
@@ -3330,6 +3663,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-015",
     "norsk": "takknemlig",
     "lemma": "takknemlig",
     "english": "grateful",
@@ -3340,6 +3674,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-016",
     "norsk": "bekymret",
     "lemma": "bekymret",
     "english": "worried",
@@ -3350,6 +3685,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-017",
     "norsk": "ivrig",
     "lemma": "ivrig",
     "english": "eager / enthusiastic",
@@ -3360,6 +3696,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-018",
     "norsk": "frisk",
     "lemma": "frisk",
     "english": "healthy / well",
@@ -3370,6 +3707,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-feelings-019",
     "norsk": "å smile",
     "lemma": "smile",
     "english": "to smile",
@@ -3380,6 +3718,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-feelings-020",
     "norsk": "å gråte",
     "lemma": "gråte",
     "english": "to cry",
@@ -3390,6 +3729,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-feelings-021",
     "norsk": "å le",
     "lemma": "le",
     "english": "to laugh",
@@ -3400,6 +3740,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-feelings-022",
     "norsk": "å elske",
     "lemma": "elske",
     "english": "to love",
@@ -3410,6 +3751,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-weather-001",
     "norsk": "solen",
     "lemma": "sol",
     "english": "the sun",
@@ -3420,6 +3762,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-002",
     "norsk": "regn",
     "lemma": "regn",
     "english": "rain",
@@ -3430,6 +3773,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-003",
     "norsk": "snø",
     "lemma": "snø",
     "english": "snow",
@@ -3440,6 +3784,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-004",
     "norsk": "vind",
     "lemma": "vind",
     "english": "wind",
@@ -3450,6 +3795,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-005",
     "norsk": "kaldt",
     "lemma": "kaldt",
     "english": "cold (weather)",
@@ -3460,6 +3806,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-weather-006",
     "norsk": "varmt",
     "lemma": "varmt",
     "english": "warm / hot (weather)",
@@ -3470,6 +3817,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-weather-007",
     "norsk": "overskyet",
     "lemma": "overskyet",
     "english": "cloudy",
@@ -3480,6 +3828,7 @@
     "part": "adjective"
   },
   {
+    "id": "v-a1-weather-008",
     "norsk": "tordenvær",
     "lemma": "tordenvær",
     "english": "thunderstorm",
@@ -3490,6 +3839,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-009",
     "norsk": "vær",
     "lemma": "vær",
     "english": "weather",
@@ -3500,6 +3850,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-010",
     "norsk": "en grad",
     "lemma": "grad",
     "english": "a degree",
@@ -3510,6 +3861,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-011",
     "norsk": "is",
     "lemma": "is",
     "english": "ice",
@@ -3520,6 +3872,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-012",
     "norsk": "et lyn",
     "lemma": "lyn",
     "english": "lightning",
@@ -3530,6 +3883,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-013",
     "norsk": "sol",
     "lemma": "sol",
     "english": "sunshine / sun",
@@ -3540,6 +3894,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-014",
     "norsk": "vinter",
     "lemma": "vinter",
     "english": "winter",
@@ -3550,6 +3905,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-015",
     "norsk": "sommer",
     "lemma": "sommer",
     "english": "summer",
@@ -3560,6 +3916,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-016",
     "norsk": "vår",
     "lemma": "vår",
     "english": "spring",
@@ -3570,6 +3927,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-017",
     "norsk": "høst",
     "lemma": "høst",
     "english": "autumn",
@@ -3580,6 +3938,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-weather-018",
     "norsk": "å snø",
     "lemma": "snø",
     "english": "to snow",
@@ -3590,6 +3949,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-weather-019",
     "norsk": "å regne",
     "lemma": "regne",
     "english": "to rain",
@@ -3600,6 +3960,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-weather-020",
     "norsk": "å skinne",
     "lemma": "skinne",
     "english": "to shine",
@@ -3610,6 +3971,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-weather-021",
     "norsk": "sol og skyer",
     "lemma": "sol og skyer",
     "english": "partly cloudy",
@@ -3620,6 +3982,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-transportation-001",
     "norsk": "en buss",
     "lemma": "buss",
     "english": "a bus",
@@ -3630,6 +3993,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-002",
     "norsk": "et tog",
     "lemma": "tog",
     "english": "a train",
@@ -3640,6 +4004,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-003",
     "norsk": "en bil",
     "lemma": "bil",
     "english": "a car",
@@ -3650,6 +4015,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-004",
     "norsk": "en sykkel",
     "lemma": "sykkel",
     "english": "a bicycle",
@@ -3660,6 +4026,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-005",
     "norsk": "en båt",
     "lemma": "båt",
     "english": "a boat",
@@ -3670,6 +4037,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-006",
     "norsk": "et fly",
     "lemma": "fly",
     "english": "an aeroplane",
@@ -3680,6 +4048,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-007",
     "norsk": "til fots",
     "lemma": "til fots",
     "english": "on foot",
@@ -3690,6 +4059,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-transportation-008",
     "norsk": "en stasjon",
     "lemma": "stasjon",
     "english": "a station",
@@ -3700,6 +4070,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-009",
     "norsk": "en flyplass",
     "lemma": "flyplass",
     "english": "an airport",
@@ -3710,6 +4081,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-010",
     "norsk": "et busstopp",
     "lemma": "busstopp",
     "english": "a bus stop",
@@ -3720,6 +4092,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-011",
     "norsk": "en billett",
     "lemma": "billett",
     "english": "a ticket",
@@ -3730,6 +4103,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-012",
     "norsk": "en taxi",
     "lemma": "taxi",
     "english": "a taxi",
@@ -3740,6 +4114,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-013",
     "norsk": "en trikk",
     "lemma": "trikk",
     "english": "a tram",
@@ -3750,6 +4125,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-014",
     "norsk": "en t-bane",
     "lemma": "t-bane",
     "english": "a metro / underground",
@@ -3760,6 +4136,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-015",
     "norsk": "å kjøre",
     "lemma": "kjøre",
     "english": "to drive",
@@ -3770,6 +4147,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-transportation-016",
     "norsk": "å reise",
     "lemma": "reise",
     "english": "to travel",
@@ -3780,6 +4158,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-transportation-017",
     "norsk": "å fly",
     "lemma": "fly",
     "english": "to fly",
@@ -3790,6 +4169,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-transportation-018",
     "norsk": "en vei",
     "lemma": "vei",
     "english": "a road / a way",
@@ -3800,6 +4180,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-019",
     "norsk": "en tunnel",
     "lemma": "tunnel",
     "english": "a tunnel",
@@ -3810,6 +4191,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-020",
     "norsk": "et kart",
     "lemma": "kart",
     "english": "a map",
@@ -3820,6 +4202,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-021",
     "norsk": "til høyre",
     "lemma": "til høyre",
     "english": "to the right",
@@ -3830,6 +4213,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-transportation-022",
     "norsk": "til venstre",
     "lemma": "til venstre",
     "english": "to the left",
@@ -3840,6 +4224,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-transportation-023",
     "norsk": "rett frem",
     "lemma": "rett frem",
     "english": "straight ahead",
@@ -3850,6 +4235,7 @@
     "part": "phrase"
   },
   {
+    "id": "v-a1-household-items-001",
     "norsk": "et bad",
     "lemma": "bad",
     "english": "a bath",
@@ -3860,6 +4246,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-002",
     "norsk": "en pute",
     "lemma": "pute",
     "english": "a pillow",
@@ -3870,6 +4257,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-003",
     "norsk": "en kopp",
     "lemma": "kopp",
     "english": "a cup",
@@ -3880,6 +4268,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-004",
     "norsk": "en tallerken",
     "lemma": "tallerken",
     "english": "a plate",
@@ -3890,6 +4279,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-005",
     "norsk": "et glass",
     "lemma": "glass",
     "english": "a glass",
@@ -3900,6 +4290,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-006",
     "norsk": "en skje",
     "lemma": "skje",
     "english": "a spoon",
@@ -3910,6 +4301,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-007",
     "norsk": "en gaffel",
     "lemma": "gaffel",
     "english": "a fork",
@@ -3920,6 +4312,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-008",
     "norsk": "en kniv",
     "lemma": "kniv",
     "english": "a knife",
@@ -3930,6 +4323,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-009",
     "norsk": "ei bøtte",
     "lemma": "bøtte",
     "english": "a bucket",
@@ -3940,6 +4334,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-010",
     "norsk": "en kanne",
     "lemma": "kanne",
     "english": "a kettle / jug",
@@ -3950,6 +4345,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-011",
     "norsk": "en kurv",
     "lemma": "kurv",
     "english": "a basket",
@@ -3960,6 +4356,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-012",
     "norsk": "en hylle",
     "lemma": "hylle",
     "english": "a shelf",
@@ -3970,6 +4367,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-013",
     "norsk": "et gulvteppe",
     "lemma": "gulvteppe",
     "english": "a carpet",
@@ -3980,6 +4378,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-014",
     "norsk": "en vask",
     "lemma": "vask",
     "english": "a sink",
@@ -3990,6 +4389,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-015",
     "norsk": "en dusj",
     "lemma": "dusj",
     "english": "a shower",
@@ -4000,6 +4400,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-016",
     "norsk": "et speil",
     "lemma": "speil",
     "english": "a mirror",
@@ -4010,6 +4411,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-017",
     "norsk": "en klokke",
     "lemma": "klokke",
     "english": "a clock",
@@ -4020,6 +4422,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-018",
     "norsk": "en spære",
     "lemma": "spære",
     "english": "a light bulb",
@@ -4030,6 +4433,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-019",
     "norsk": "et lys",
     "lemma": "lys",
     "english": "a light / candle",
@@ -4040,6 +4444,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-020",
     "norsk": "ei søppelbøtte",
     "lemma": "søppelbøtte",
     "english": "a trash can",
@@ -4050,6 +4455,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-021",
     "norsk": "et håndkle",
     "lemma": "håndkle",
     "english": "a towel",
@@ -4060,6 +4466,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-022",
     "norsk": "en stige",
     "lemma": "stige",
     "english": "a ladder",
@@ -4070,6 +4477,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-household-items-023",
     "norsk": "en panne",
     "lemma": "panne",
     "english": "a pan",
@@ -4080,6 +4488,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-001",
     "norsk": "en butikk",
     "lemma": "butikk",
     "english": "a shop / store",
@@ -4090,6 +4499,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-002",
     "norsk": "et marked",
     "lemma": "marked",
     "english": "a market",
@@ -4100,6 +4510,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-003",
     "norsk": "en park",
     "lemma": "park",
     "english": "a park",
@@ -4110,6 +4521,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-004",
     "norsk": "et bibliotek",
     "lemma": "bibliotek",
     "english": "a library",
@@ -4120,6 +4532,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-005",
     "norsk": "en bank",
     "lemma": "bank",
     "english": "a bank",
@@ -4130,6 +4543,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-006",
     "norsk": "en restaurant",
     "lemma": "restaurant",
     "english": "a restaurant",
@@ -4140,6 +4554,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-007",
     "norsk": "en kafe",
     "lemma": "kafe",
     "english": "a café",
@@ -4150,6 +4565,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-008",
     "norsk": "en kirke",
     "lemma": "kirke",
     "english": "a church",
@@ -4160,6 +4576,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-009",
     "norsk": "en gate",
     "lemma": "gate",
     "english": "a street",
@@ -4170,6 +4587,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-010",
     "norsk": "et torg",
     "lemma": "torg",
     "english": "a town square",
@@ -4180,6 +4598,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-011",
     "norsk": "et museum",
     "lemma": "museum",
     "english": "a museum",
@@ -4190,6 +4609,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-012",
     "norsk": "et hotell",
     "lemma": "hotell",
     "english": "a hotel",
@@ -4200,6 +4620,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-013",
     "norsk": "et svømmebasseng",
     "lemma": "svømmebasseng",
     "english": "a swimming pool",
@@ -4210,6 +4631,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-014",
     "norsk": "et kjøpesenter",
     "lemma": "kjøpesenter",
     "english": "a shopping centre",
@@ -4220,6 +4642,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-015",
     "norsk": "et kontor",
     "lemma": "kontor",
     "english": "an office",
@@ -4230,6 +4653,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-016",
     "norsk": "en lekeplass",
     "lemma": "lekeplass",
     "english": "a playground",
@@ -4240,6 +4664,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-017",
     "norsk": "en treningssenter",
     "lemma": "treningssenter",
     "english": "a gym",
@@ -4250,6 +4675,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-018",
     "norsk": "en politistasjon",
     "lemma": "politistasjon",
     "english": "a police station",
@@ -4260,6 +4686,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-019",
     "norsk": "en brannstasjon",
     "lemma": "brannstasjon",
     "english": "a fire station",
@@ -4270,6 +4697,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-places-020",
     "norsk": "et postkontor",
     "lemma": "postkontor",
     "english": "a post office",
@@ -4280,6 +4708,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-001",
     "norsk": "en jakke",
     "lemma": "jakke",
     "english": "a jacket",
@@ -4290,6 +4719,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-002",
     "norsk": "en bukse",
     "lemma": "bukse",
     "english": "trousers / pants",
@@ -4300,6 +4730,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-003",
     "norsk": "en skjorte",
     "lemma": "skjorte",
     "english": "a shirt",
@@ -4310,6 +4741,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-004",
     "norsk": "en kjole",
     "lemma": "kjole",
     "english": "a dress",
@@ -4320,6 +4752,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-005",
     "norsk": "en genser",
     "lemma": "genser",
     "english": "a sweater",
@@ -4330,6 +4763,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-006",
     "norsk": "en sko",
     "lemma": "sko",
     "english": "a shoe",
@@ -4340,6 +4774,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-007",
     "norsk": "en sokk",
     "lemma": "sokk",
     "english": "a sock",
@@ -4350,6 +4785,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-008",
     "norsk": "en hatt",
     "lemma": "hatt",
     "english": "a hat",
@@ -4360,6 +4796,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-009",
     "norsk": "et skjerf",
     "lemma": "skjerf",
     "english": "a scarf",
@@ -4370,6 +4807,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-010",
     "norsk": "hansker",
     "lemma": "hansker",
     "english": "gloves",
@@ -4380,6 +4818,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-011",
     "norsk": "en frakk",
     "lemma": "frakk",
     "english": "a coat",
@@ -4390,6 +4829,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-012",
     "norsk": "en t-skjorte",
     "lemma": "t-skjorte",
     "english": "a t-shirt",
@@ -4400,6 +4840,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-013",
     "norsk": "shorts",
     "lemma": "shorts",
     "english": "shorts",
@@ -4410,6 +4851,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-014",
     "norsk": "et belte",
     "lemma": "belte",
     "english": "a belt",
@@ -4420,6 +4862,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-015",
     "norsk": "et slips",
     "lemma": "slips",
     "english": "a tie",
@@ -4430,6 +4873,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-016",
     "norsk": "en lue",
     "lemma": "lue",
     "english": "a beanie / woollen hat",
@@ -4440,6 +4884,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-017",
     "norsk": "støvler",
     "lemma": "støvler",
     "english": "boots",
@@ -4450,6 +4895,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-018",
     "norsk": "sandaler",
     "lemma": "sandaler",
     "english": "sandals",
@@ -4460,6 +4906,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-019",
     "norsk": "pyjamas",
     "lemma": "pyjamas",
     "english": "pyjamas",
@@ -4470,6 +4917,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-020",
     "norsk": "undertøy",
     "lemma": "undertøy",
     "english": "underwear",
@@ -4480,6 +4928,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-021",
     "norsk": "en dress",
     "lemma": "dress",
     "english": "a suit",
@@ -4490,6 +4939,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-022",
     "norsk": "en skjørt",
     "lemma": "skjørt",
     "english": "a skirt",
@@ -4500,6 +4950,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-023",
     "norsk": "en regnjakke",
     "lemma": "regnjakke",
     "english": "a raincoat",
@@ -4510,6 +4961,7 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-clothes-024",
     "norsk": "å kle på seg",
     "lemma": "kle på seg",
     "english": "to get dressed",
@@ -4520,6 +4972,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-clothes-025",
     "norsk": "å kle av seg",
     "lemma": "kle av seg",
     "english": "to get undressed",
@@ -4530,6 +4983,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-001",
     "norsk": "å stå opp",
     "lemma": "stå opp",
     "english": "to get up",
@@ -4540,6 +4994,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-002",
     "norsk": "å sitte",
     "lemma": "sitte",
     "english": "to sit",
@@ -4550,6 +5005,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-003",
     "norsk": "å stå",
     "lemma": "stå",
     "english": "to stand",
@@ -4560,6 +5016,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-004",
     "norsk": "å ligge",
     "lemma": "ligge",
     "english": "to lie down",
@@ -4570,6 +5027,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-005",
     "norsk": "å hoppe",
     "lemma": "hoppe",
     "english": "to jump",
@@ -4580,6 +5038,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-006",
     "norsk": "å kaste",
     "lemma": "kaste",
     "english": "to throw",
@@ -4590,6 +5049,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-007",
     "norsk": "å fange",
     "lemma": "fange",
     "english": "to catch",
@@ -4600,6 +5060,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-008",
     "norsk": "å bære",
     "lemma": "bære",
     "english": "to carry",
@@ -4610,6 +5071,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-009",
     "norsk": "å trekke",
     "lemma": "trekke",
     "english": "to pull",
@@ -4620,6 +5082,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-010",
     "norsk": "å skyve",
     "lemma": "skyve",
     "english": "to push",
@@ -4630,6 +5093,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-011",
     "norsk": "å vente",
     "lemma": "vente",
     "english": "to wait",
@@ -4640,6 +5104,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-012",
     "norsk": "å stoppe",
     "lemma": "stoppe",
     "english": "to stop",
@@ -4650,6 +5115,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-013",
     "norsk": "å begynne",
     "lemma": "begynne",
     "english": "to begin / start",
@@ -4660,6 +5126,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-014",
     "norsk": "å slutte",
     "lemma": "slutte",
     "english": "to finish / stop",
@@ -4670,6 +5137,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-015",
     "norsk": "å finne",
     "lemma": "finne",
     "english": "to find",
@@ -4680,6 +5148,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-016",
     "norsk": "å miste",
     "lemma": "miste",
     "english": "to lose",
@@ -4690,6 +5159,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-017",
     "norsk": "å betale",
     "lemma": "betale",
     "english": "to pay",
@@ -4700,6 +5170,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-018",
     "norsk": "å hente",
     "lemma": "hente",
     "english": "to fetch / pick up",
@@ -4710,6 +5181,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-019",
     "norsk": "å legge",
     "lemma": "legge",
     "english": "to put / lay",
@@ -4720,6 +5192,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-actions-020",
     "norsk": "å trykke",
     "lemma": "trykke",
     "english": "to press / push",
@@ -4730,6 +5203,7 @@
     "part": "verb"
   },
   {
+    "id": "v-a1-classroom-024",
     "norsk": "for eksempel",
     "lemma": "for eksempel",
     "english": "for example",

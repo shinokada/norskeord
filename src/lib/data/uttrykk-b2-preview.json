@@ -1,5 +1,6 @@
 [
   {
+    "id": "up-b2-001",
     "norsk": "å sette pris på",
     "lemma": "å sette pris på",
     "english": "to appreciate, to value",
@@ -10,6 +11,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-002",
     "norsk": "å ta noe for gitt",
     "lemma": "å ta noe for gitt",
     "english": "to take something for granted",
@@ -20,6 +22,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-003",
     "norsk": "med tanke på",
     "lemma": "med tanke på",
     "english": "considering, with regard to, given",
@@ -30,6 +33,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-004",
     "norsk": "med andre ord",
     "lemma": "med andre ord",
     "english": "in other words, that is to say",
@@ -40,6 +44,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-005",
     "norsk": "fremfor alt",
     "lemma": "fremfor alt",
     "english": "above all, most of all",
@@ -50,6 +55,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-006",
     "norsk": "uavhengig av",
     "lemma": "uavhengig av",
     "english": "regardless of, independent of, irrespective of",
@@ -60,6 +66,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-007",
     "norsk": "å ta på alvor",
     "lemma": "å ta noe på alvor",
     "english": "to take something seriously",
@@ -70,6 +77,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-008",
     "norsk": "i motsetning til",
     "lemma": "i motsetning til",
     "english": "in contrast to, unlike, as opposed to",
@@ -80,6 +88,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b2-009",
     "norsk": "Det er ingen tvil om",
     "lemma": "Det er ingen tvil om",
     "english": "there is no doubt about, it is undeniable",

@@ -5,7 +5,7 @@ import { validateQuestion } from '$lib/admin/questionUtils';
 import type { RequestHandler } from './$types';
 import type { GrammarQuestion } from '$lib/types';
 
-const FILE_PATH = env.GRAMMAR_FILE_PATH!;
+const FILE_PATH = env.GRAMMAR_FILE_PATH ?? 'src/lib/data/grammar.json';
 
 function assertAdmin(locals: App.Locals) {
   const userEmail = locals.user?.email;

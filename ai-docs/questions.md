@@ -8,19 +8,15 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- In /admin/grammar and /admin/blog items, the table has "Mark as reviewed" But this means open by Edit button and check, close and tick. Shouldn't this checkbox be in the edit modal? What do you think?
-  
-- UI: Add admin link if user email is ADMIN_EMAIL to dropdown below the following in dropdown:
+- For sidebar menu only, keeping links a1, a2, etc but menu title should be Nivå A1, etc and create A1, A2, B1, B2 svg icons using Svelte Awesome Icons.
 
-```
-<DropdownItem
-  class="dark:hover:bg-blue-900"
-  href="/my-profile"
-  onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
->
-```
+- The review key becomes `id` instead of `level:norsk`, which is much cleaner. It also future-proofs things if you ever move FSRS progress for vocab to Supabase per-entry (currently it uses `norsk` as the key in `card_progress` — worth knowing).
 
-Since edit happens in a laptop, no need for small screen/sidebar.
+One thing to be aware of: `card_progress` uses `norsk` as the lookup key, not an id. The vocab id would be a new field only for admin review tracking for now — it wouldn't replace `norsk` as the FSRS key without a migration.
+Is it a good idea to migrate using `id` in `card_progress` as the lookup key? Any other place using `norsk`?
+
+- Should I add id to vocab and uttrykk since most of norsk field have multiple words with norwegian characters, ø, æ, å. What do you think? If it is a good idea can you write a python or mjs script so that I can copy/paste/download and r
+- Do I need to add new e2e/unit tests?
 
 - I think from B1 or B2 there should be only norwegian. This means using norwegian definition and no english. What do you think? Which level is good to start using only Norwegian?
 - domain names: norsknote.no, norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,

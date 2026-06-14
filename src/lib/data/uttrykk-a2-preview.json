@@ -1,5 +1,6 @@
 [
   {
+    "id": "up-a2-001",
     "norsk": "å gå på ski",
     "lemma": "å gå på ski",
     "english": "to go skiing",
@@ -10,6 +11,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-002",
     "norsk": "Fryser du?: Ja, det er veldig kaldt.",
     "lemma": "Fryser du?: Ja, det er veldig kaldt.",
     "english": "Are you cold? Yes, it is very cold.",
@@ -20,6 +22,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-003",
     "norsk": "å legge merke til",
     "lemma": "å legge merke til",
     "english": "to notice",
@@ -30,6 +33,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-004",
     "norsk": "å stole på noen",
     "lemma": "å stole på noen",
     "english": "to trust someone",
@@ -40,6 +44,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-005",
     "norsk": "Takk for maten.",
     "lemma": "Takk for maten.",
     "english": "Thanks for the food.",
@@ -50,6 +55,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-006",
     "norsk": "Klart det!",
     "lemma": "Klart det!",
     "english": "Of course!, Sure!",
@@ -60,6 +66,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-007",
     "norsk": "med en gang",
     "lemma": "med en gang",
     "english": "right away, immediately",
@@ -70,6 +77,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-008",
     "norsk": "å ta det med ro",
     "lemma": "å ta det med ro",
     "english": "to take it easy, to relax",
@@ -80,6 +88,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-009",
     "norsk": "å ha sommerfugler i magen",
     "lemma": "å ha sommerfugler i magen",
     "english": "to have butterflies in one's stomach",
@@ -90,6 +99,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a2-010",
     "norsk": "å gi opp",
     "lemma": "å gi opp",
     "english": "to give up",
