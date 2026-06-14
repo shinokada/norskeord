@@ -23,6 +23,7 @@
   let showUnreviewedOnly = $state(false);
 
   let modal = $state<{ mode: 'add' | 'edit'; question: Partial<DraftQuestion> } | null>(null);
+  let modalReviewed = $state(false);
   let tokensInput = $state('');
 
   const isDirty = $derived(draft.some((q) => q._status));
@@ -104,18 +105,6 @@
     }
   }
 
-  async function toggleReviewed(q: DraftQuestion) {
-    const today = new Date().toISOString().slice(0, 10);
-    const next = { ...reviewed };
-    if (next[q.id]) {
-      delete next[q.id];
-    } else {
-      next[q.id] = { checkedAt: today };
-    }
-    reviewed = next;
-    await saveReviewState();
-  }
-
   async function saveReviewState() {
     savingReview = true;
     try {
@@ -143,19 +132,14 @@
   function openAdd() {
     const blank = blankQuestion();
     tokensInput = '';
+    modalReviewed = false;
     modal = { mode: 'add', question: blank };
   }
 
   function openEdit(q: DraftQuestion) {
-    modal = { mode: 'edit', question: { ...q } };
+    modalReviewed = !!reviewed[q.id];
     tokensInput = '';
-    // Clear review mark when editing — the item needs a fresh look
-    if (reviewed[q.id]) {
-      const next = { ...reviewed };
-      delete next[q.id];
-      reviewed = next;
-      saveReviewState();
-    }
+    modal = { mode: 'edit', question: { ...q } };
   }
 
   function closeModal() {
@@ -206,6 +190,8 @@
         return;
       }
       draft = [...draft, newQuestion];
+      // Apply reviewed state for newly added question
+      applyModalReviewed(id);
     } else {
       const id = q.id!;
       const issues = validateQuestion(q);
@@ -221,8 +207,21 @@
           _status: wasOriginallyAdded ? 'added' : 'edited'
         };
       });
+      applyModalReviewed(id);
     }
     modal = null;
+  }
+
+  function applyModalReviewed(id: string) {
+    const today = new Date().toISOString().slice(0, 10);
+    const next = { ...reviewed };
+    if (modalReviewed) {
+      next[id] = { checkedAt: today };
+    } else {
+      delete next[id];
+    }
+    reviewed = next;
+    saveReviewState();
   }
 
   function removeQuestion(q: DraftQuestion) {
@@ -477,20 +476,15 @@
               ].join(' ')}
             >
               <td class="py-2 pr-3 text-center">
-                <button
-                  onclick={() => toggleReviewed(q)}
-                  title={isReviewed
-                    ? `Reviewed ${reviewed[q.id].checkedAt} — click to unmark`
-                    : 'Mark as reviewed'}
+                <span
+                  title={isReviewed ? `Reviewed ${reviewed[q.id].checkedAt}` : 'Not reviewed'}
                   class={[
-                    'text-lg leading-none transition-opacity',
-                    isReviewed
-                      ? 'text-green-500'
-                      : 'opacity-20 hover:opacity-60 hover:text-green-400'
+                    'text-lg leading-none',
+                    isReviewed ? 'text-green-500' : 'opacity-10'
                   ].join(' ')}
                 >
                   ✓
-                </button>
+                </span>
               </td>
               <td class="py-2 pr-3 font-mono text-xs">
                 {q.id}
@@ -804,19 +798,25 @@
         </label>
       </div>
 
-      <div class="mt-6 flex justify-end gap-2">
-        <button
-          class="rounded border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800"
-          onclick={closeModal}
-        >
-          Cancel
-        </button>
-        <button
-          class="rounded bg-blue-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-blue-700"
-          onclick={saveModal}
-        >
-          Save
-        </button>
+      <div class="mt-6 flex items-center justify-between">
+        <label class="flex items-center gap-2 text-sm">
+          <input type="checkbox" bind:checked={modalReviewed} class="rounded" />
+          <span class="font-medium text-gray-700 dark:text-gray-200">Mark as reviewed</span>
+        </label>
+        <div class="flex gap-2">
+          <button
+            class="rounded border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800"
+            onclick={closeModal}
+          >
+            Cancel
+          </button>
+          <button
+            class="rounded bg-blue-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-blue-700"
+            onclick={saveModal}
+          >
+            Save
+          </button>
+        </div>
       </div>
     </div>
   </div>

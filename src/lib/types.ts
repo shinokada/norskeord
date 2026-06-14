@@ -322,6 +322,13 @@ export interface CardProgress {
 }
 
 export interface VocabEntry {
+  /**
+   * Stable id for admin review tracking, e.g. 'v-a1-greetings-001' (vocab),
+   * 'u-a1-001' (uttrykk full deck), or 'u-a1-preview-001' (uttrykk preview
+   * deck). Optional for backwards compatibility with any entry created
+   * before the id migration (scripts/add-vocab-uttrykk-ids.mjs).
+   */
+  id?: string;
   norsk: string;
   lemma?: string;
   english: string;
