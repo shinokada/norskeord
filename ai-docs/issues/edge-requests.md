@@ -79,15 +79,19 @@ const originalHandle: Handle = async ({ event, resolve }) => {
   event.locals.supabase = supabase;
 
   // Only validate session if auth cookie is present
-  const hasSession = event.cookies.get('sb-access-token') || 
-                     event.cookies.get('sb-refresh-token');
-  
+  const hasSession = event.cookies.get('sb-access-token') || event.cookies.get('sb-refresh-token');
+
   if (hasSession) {
-    const { data: { user } } = await supabase.auth.getUser();
+    const {
+      data: { user }
+    } = await supabase.auth.getUser();
     event.locals.user = user ?? null;
     if (user) {
-      const { data } = await supabase.from('subscriptions')
-        .select('plan').eq('user_id', user.id).maybeSingle();
+      const { data } = await supabase
+        .from('subscriptions')
+        .select('plan')
+        .eq('user_id', user.id)
+        .maybeSingle();
       event.locals.plan = (data?.plan as 'free' | 'plus') ?? 'free';
     } else {
       event.locals.plan = 'free';
@@ -103,8 +107,7 @@ const originalHandle: Handle = async ({ event, resolve }) => {
   });
 
   // Cache unauthenticated page responses at edge for 5 minutes
-  if (!hasSession && event.request.method === 'GET' && 
-      !event.url.pathname.startsWith('/api/')) {
+  if (!hasSession && event.request.method === 'GET' && !event.url.pathname.startsWith('/api/')) {
     response.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
   }
 
@@ -117,7 +120,7 @@ const originalHandle: Handle = async ({ event, resolve }) => {
 The cookie name depends on your Supabase project ref. Check it in DevTools — it's usually `sb-<project-ref>-auth-token`. Update the `hasSession` check accordingly, or use a more reliable check:
 
 ```ts
-const hasSession = [...event.cookies.getAll()].some(c => c.name.includes('auth-token'));
+const hasSession = [...event.cookies.getAll()].some((c) => c.name.includes('auth-token'));
 ```
 
 ### Fix 3: Add `vercel.json` headers for the vocab routes
@@ -131,7 +134,9 @@ const hasSession = [...event.cookies.getAll()].some(c => c.name.includes('auth-t
     },
     {
       "source": "/(a1|a2|b1|b2|c)/:category",
-      "headers": [{ "key": "Cache-Control", "value": "public, s-maxage=300, stale-while-revalidate=3600" }]
+      "headers": [
+        { "key": "Cache-Control", "value": "public, s-maxage=300, stale-while-revalidate=3600" }
+      ]
     }
   ]
 }
@@ -142,7 +147,6 @@ const hasSession = [...event.cookies.getAll()].some(c => c.name.includes('auth-t
 ## Summary
 
 The core problem is the same one you solved for **flowbite-svelte**: dynamic routes with no prerendering and no caching, causing every request to spin up an Edge Function. The **biggest ROI fix** is to prerender `/[level]/[category]` with `entries()` (or at minimum add edge caching for anonymous requests by skipping Supabase calls when no auth cookie is present). That should cut your 17K edge requests down to near-zero for the vocab pages.
-
 
 **Option A (prerender) is the better long-term solution**, but it's more invasive for norskeord than it was for flowbite-svelte. Here's the honest tradeoff:
 

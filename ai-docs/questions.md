@@ -7,10 +7,6 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file or write Python or mjs script so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
 
 ---
-- Edge requests problem
-  See ai-docs/issues/edge-requests.md for more details.
-
----
 
 - For sidebar menu only, keeping links a1, a2, etc but menu title should be Nivå A1, etc and create A1, A2, B1, B2 svg icons using Svelte Awesome Icons.
 
@@ -19,7 +15,6 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 One thing to be aware of: `card_progress` uses `norsk` as the lookup key, not an id. The vocab id would be a new field only for admin review tracking for now — it wouldn't replace `norsk` as the FSRS key without a migration.
 I have no plus/paid users yet. And traffic is negligible.
 Is it a good idea to migrate using `id` in `card_progress` as the lookup key? Any other place using `norsk`?
-
 
 - I think from B1 or B2 there should be only norwegian. This means using norwegian definition and no english. What do you think? Which level is good to start using only Norwegian?
 - domain names: norsknote.no, norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
