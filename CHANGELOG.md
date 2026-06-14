@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.25.4
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Improved card progress tracking consistency by ensuring the vocab ID is always required and properly enforced in the database.
+  - **Documentation**
+    - Extended migration guidance with additional post-testing steps and troubleshooting for the card progress update.
+
 ## 2.25.3
 
 ### Patch Changes
