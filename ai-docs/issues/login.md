@@ -140,3 +140,27 @@ When you log in and `goto('/learn/a1')` runs client-side, SvelteKit fetches `/le
 - `learn/c/+page.server.ts` → same; also removed unused `locals` param
 
 The root `+layout.server.ts` already correctly exports `user` and `plan` for the entire app — no child route needs to duplicate it. And critically, the root layout's `__data.json` is not edge-cached (it always runs server-side with the session), so `page.data.user` will always reflect the real auth state.
+
+Q: https://norskeord.no/blog and https://norskeord.no/learn/a1 still Log in instead of Avatar.
+
+Ans: The fix hasn't propagated yet, or there's still a cached response being served. Let me check a few things — the live site may still be serving edge-cached HTML, and I also want to verify the `+page.svelte` for `/learn/a1` to see if it reads `data.user` directly (which would still be broken even after our fix if the page svelte uses the page-level data instead of layout data).Now I can see clearly what's still wrong. There are **two remaining issues** that our previous fix didn't address:
+
+**Issue 1 — `/learn/[level]/+page.svelte` uses `data.user` directly** (line: `{#if !data.user}`). Even though `page.data.user` (from the root layout) is correct, `data.user` refers to *the page's own load data*, which no longer has `user` after our fix. So the "Start free" button logic is broken — but more importantly this tells us the page was depending on `data.user` being set.
+
+**Issue 2 — `/blog` has no `+page.server.ts`**, so it uses the root layout's load, which **does get cached** by the `Cache-Control: public, s-maxage=300` header. The blog page is fully anonymous-cacheable, meaning Vercel edge serves the cached HTML (with "Log in" button) to logged-in users too.
+
+The real remaining problem for **both routes** is the cache — even after our fix, any page that was previously cached by Vercel's edge as an anonymous page will still serve "Log in" to authenticated users until the cache expires. Let me fix both properly:Now fix the core caching issue. The `hooks.server.ts` cache header logic needs to also exclude `/blog` (and any other non-`/auth/` route that authenticated users visit). The cleanest permanent fix is to cache **only static/marketing pages** (home, `/plus`, `/resources`, etc.) and never cache pages that show auth-sensitive UI:Good. Now there's one more thing — even with the code fix deployed, Vercel's edge will still serve the **old cached responses** for up to 5 minutes (or up to 1 hour via `stale-while-revalidate`). You need to purge the cache. Let me check if there's a `vercel.json`:There's another cache problem here. The `vercel.json` `headers` block is **unconditionally** setting `Cache-Control: public, s-maxage=300` on `/(a1|a2|b1|b2|c)/:category` — the flashcard routes — **regardless of whether the user is authenticated**. This completely bypasses the hooks logic for those routes. Fix that too:Here's a full summary of everything that was wrong and what was fixed across all 5 files:
+
+---
+
+**What was actually broken (3 separate issues)**
+
+**1. `learn/+layout.server.ts` + `learn/[level]/+page.server.ts` + `learn/c/+page.server.ts`** — all re-exported `user` and `plan`, which shadowed the root layout's values with potentially cached/stale data. Fixed yesterday — but not enough on its own.
+
+**2. `learn/[level]/+page.svelte`** — the "Start free" button used `data.user` (page-level) instead of `page.data.user` (root layout). After removing `user` from the page server return, this broke. Fixed now to use `page.data.user`.
+
+**3. `vercel.json`** — was unconditionally setting `Cache-Control: public, s-maxage=300` on all `/(a1|a2|b1|b2|c)/:category` routes via the `headers` block. This **overrides** the hooks logic entirely for those routes, meaning authenticated users would always get edge-cached anonymous responses there. Removed.
+
+**4. `hooks.server.ts`** — the exclusion list was too narrow (`/api/` and `/auth/` only). Every other route — `/learn/`, `/blog`, `/grammar/`, `/quiz`, `/norskproven`, `/stats`, `/my-profile` — was being edge-cached for anonymous users, so logged-in users landing on those pages would see the stale "Log in" UI. Fixed with a proper exclusion list.
+
+**After deploying:** even with the fix deployed, Vercel's edge may still serve stale cached responses for up to an hour (`stale-while-revalidate=3600`). You can force a cache purge from the Vercel dashboard → your project → **Settings → Functions → Purge Cache**, or just wait it out.
