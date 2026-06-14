@@ -14,7 +14,8 @@
     loadProgressMapFromSupabase,
     countDueToday,
     previewIntervals,
-    restoreProgressToLocalStorage
+    restoreProgressToLocalStorage,
+    vocabKey
   } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
   import { State } from 'ts-fsrs';
@@ -246,7 +247,7 @@
     const filtered = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
 
     for (const e of filtered) {
-      const p = pm[e.norsk];
+      const p = pm[vocabKey(e)];
       if (!p) {
         newCards.push(e);
       } else if (new Date(p.fsrs.due) <= now) {
@@ -358,7 +359,7 @@
 
   let intervals = $derived.by(() => {
     if (!current || !showCardBack) return null;
-    return previewIntervals(progressMap[current.entry.norsk] ?? null, new Date());
+    return previewIntervals(progressMap[vocabKey(current.entry)] ?? null, new Date());
   });
 
   // ── 2-B: requeue "Again" cards in due mode ───────────────────────────────────
@@ -408,7 +409,7 @@
             .from('card_progress')
             .delete()
             .eq('user_id', userId)
-            .eq('norsk', entry.norsk);
+            .eq('vocab_id', vocabKey(entry));
         } catch {
           /* silent */
         }
@@ -423,7 +424,7 @@
       }
     } else {
       // Guest / free: restore via localStorage
-      restoreProgressToLocalStorage(entry.norsk, previousProgress);
+      restoreProgressToLocalStorage(entry, previousProgress);
     }
 
     progressMap = previousMap;
@@ -526,7 +527,7 @@
     if (!current) return;
 
     const entry = current.entry;
-    const previousProgress = progressMap[entry.norsk] ?? null;
+    const previousProgress = progressMap[vocabKey(entry)] ?? null;
     const previousMap = { ...progressMap };
     const previousIndex = currentIndex;
 
@@ -873,7 +874,7 @@
 
   <!-- FSRS Rating buttons (visible after flip — free for all users) -->
   {#if !completed && current && showCardBack}
-    {@const lastRating = progressMap[current.entry.norsk]?.lastRating}
+    {@const lastRating = progressMap[vocabKey(current.entry)]?.lastRating}
     {#if lastRating}
       {@const labelMap = { again: 'Again', hard: 'Hard', good: 'Good', easy: 'Easy' }}
       {@const colorMap = {
