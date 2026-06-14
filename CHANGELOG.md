@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.25.2
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Resolved login and avatar display inconsistencies across platform pages.
+    - Fixed caching issues preventing proper authentication state reflection.
+    - Corrected login requirement checks on learning level pages.
+  - **Performance**
+    - Optimized edge cache configuration for improved performance on both authenticated and anonymous user requests.
+
 ## 2.25.1
 
 ### Patch Changes
