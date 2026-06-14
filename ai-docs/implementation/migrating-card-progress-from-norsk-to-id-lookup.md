@@ -40,3 +40,37 @@ Open a flashcard category, rate a few cards, check Supabase: rows should have bo
 
 ### Step 5 — run migration 017 (after you're happy)
 Paste `supabase/migrations/017_card_progress_drop_norsk.sql` into Supabase. This drops the `norsk` column. At that point the migration is complete and you can also remove the `norsk: entry.norsk` line from `toRow()` if you want to clean up (not strictly necessary — Supabase will just ignore an unknown column in an insert).
+
+Q: I am doing Step 4 smoke test. I did some flashcard at https://norskeord.no/a2/clothing and checked card_progress in supabase and found that no record increased at all.
+
+Ans:
+Let me check what might be going wrong. The most likely culprit is the `onConflict` change — Supabase requires the conflict target to match an actual constraint name, and a partial index may not work the same way.Found it. The `onConflict: 'user_id,vocab_id'` won't work with a partial index — Supabase's PostgREST `onConflict` requires either a full unique constraint or an index that covers all rows (not a partial `WHERE` clause). The upsert is silently failing because there's no matching constraint it can use.
+
+The fix is to make the unique index non-partial, or better yet use a proper `UNIQUE` constraint. But since `vocab_id` is nullable (until migration 017), we need a different approach: make `vocab_id NOT NULL` right now in the migration. Since you have zero real users, there are no null rows to worry about.
+
+Let me fix the migration SQL and the code:Now update `current-schema.sql` and `ProgressRow` to reflect `NOT NULL`:And simplify `rowKey` since `vocab_id` is now never null:Now you need to re-run the migration in Supabase. Here's exactly what to do:
+
+**1. Drop what migration 016 already created** (the partial index), then apply the corrected version. Run this in the Supabase SQL editor:
+
+```sql
+-- Undo the broken partial index from the first attempt
+DROP INDEX IF EXISTS card_progress_user_vocab_id_key;
+ALTER TABLE public.card_progress DROP COLUMN IF EXISTS vocab_id;
+```
+
+**2. Then paste the corrected `016_card_progress_vocab_id.sql`:**
+
+```sql
+ALTER TABLE public.card_progress
+  ADD COLUMN IF NOT EXISTS vocab_id text NOT NULL DEFAULT '';
+
+ALTER TABLE public.card_progress
+  ALTER COLUMN vocab_id DROP DEFAULT;
+
+ALTER TABLE public.card_progress
+  ADD CONSTRAINT card_progress_user_vocab_id_key UNIQUE (user_id, vocab_id);
+```
+
+**3. Deploy the code** (already updated in the repo — just `git push` / redeploy).
+
+The root cause was that PostgREST's `onConflict` string can only target a real `UNIQUE` constraint or a non-partial unique index. The partial `WHERE vocab_id IS NOT NULL` index silently didn't match, so the upsert fell back to a plain insert which then likely conflicted on `(user_id, norsk)` and got dropped entirely. Making `vocab_id NOT NULL` with a proper `UNIQUE` constraint fixes it.

@@ -108,9 +108,8 @@ export function loadProgressMap(): Record<string, CardProgress> {
 
 interface ProgressRow {
   // vocab_id is the stable lookup key (entry.id ?? entry.norsk).
-  // Introduced in migration 016; rows written before that migration will have
-  // vocab_id = null — fromRow falls back to norsk for those.
-  vocab_id: string | null;
+  // NOT NULL — migration 016 added it as NOT NULL with a unique constraint.
+  vocab_id: string;
   // norsk is kept until migration 017 drops the column. Written on every upsert
   // so old code (if rolled back) can still read it.
   norsk: string;
@@ -180,11 +179,11 @@ function fromRow(row: ProgressRow): CardProgress {
 
 /**
  * Derives the in-memory map key from a Supabase row.
- * Uses vocab_id when available (new rows), falls back to norsk (legacy rows
- * written before migration 016, or any row where vocab_id is null).
+ * Always uses vocab_id (NOT NULL since migration 016).
+ * norsk fallback kept only for safety during the migration 016→017 window.
  */
 function rowKey(row: ProgressRow): string {
-  return row.vocab_id ?? row.norsk;
+  return row.vocab_id || row.norsk;
 }
 
 // ── Supabase — Plus users ────────────────────────────────────────────────────
