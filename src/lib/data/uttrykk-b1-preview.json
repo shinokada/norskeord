@@ -1,5 +1,6 @@
 [
   {
+    "id": "up-b1-001",
     "norsk": "i tillegg",
     "lemma": "i tillegg",
     "english": "in addition, besides",
@@ -10,6 +11,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-002",
     "norsk": "stikke innom",
     "lemma": "stikke innom",
     "english": "to drop by, to pop in",
@@ -20,6 +22,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-003",
     "norsk": "regne med",
     "lemma": "regne med",
     "english": "to count on, to expect, to assume",
@@ -30,6 +33,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-004",
     "norsk": "sette pris på",
     "lemma": "sette pris på",
     "english": "to appreciate, to value",
@@ -40,6 +44,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-005",
     "norsk": "ta vare på",
     "lemma": "ta vare på",
     "english": "to take care of, to look after",
@@ -50,6 +55,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-006",
     "norsk": "ikke bare bare",
     "lemma": "ikke bare bare",
     "english": "not so simple, not easy at all",
@@ -60,6 +66,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-007",
     "norsk": "gå glipp av",
     "lemma": "gå glipp av",
     "english": "to miss out on, to miss",
@@ -70,6 +77,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-008",
     "norsk": "lønne seg",
     "lemma": "lønne seg",
     "english": "to be worth it, to pay off",
@@ -80,6 +88,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-009",
     "norsk": "Det nytter ikke",
     "lemma": "Det nytter ikke",
     "english": "It's no use, It won't work",
@@ -90,6 +99,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-b1-010",
     "norsk": "rett og slett",
     "lemma": "rett og slett",
     "english": "simply, just, plain and simple",

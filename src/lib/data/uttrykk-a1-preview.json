@@ -1,5 +1,6 @@
 [
   {
+    "id": "up-a1-001",
     "norsk": "Hvor kommer du fra? Jeg kommer fra Bergen.",
     "lemma": "Hvor kommer du fra? Jeg kommer fra Bergen.",
     "english": "Where are you from? I am from Bergen.",
@@ -10,6 +11,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-002",
     "norsk": "Hvor bor du? Jeg bor i Norge.",
     "lemma": "Hvor bor du? Jeg bor i Norge.",
     "english": "Where do you live? I live in Norway.",
@@ -20,6 +22,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-003",
     "norsk": "Hva heter du? Jeg heter Peter.",
     "lemma": "Hva heter du? Jeg heter Peter.",
     "english": "What is your name? My name is Peter.",
@@ -30,6 +33,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-004",
     "norsk": "Hvordan går det? Fint. / Ganske bra, takk. / Sånn passe.",
     "lemma": "Hvordan går det? Fint. / Ganske bra, takk. / Sånn passe.",
     "english": "How are you? Fine. / Quite good, thanks. / So-so.",
@@ -40,6 +44,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-005",
     "norsk": "Unnskyld, jeg forstår ikke.",
     "lemma": "Unnskyld, jeg forstår ikke.",
     "english": "Excuse me, I do not understand.",
@@ -50,6 +55,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-006",
     "norsk": "Hyggelig å treffe deg. I like måte.",
     "lemma": "Hyggelig å treffe deg. I like måte.",
     "english": "Nice to meet you. Likewise.",
@@ -60,6 +66,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-007",
     "norsk": "Ha det bra! Ha det!",
     "lemma": "Ha det bra! Ha det!",
     "english": "Take care! Bye!",
@@ -70,6 +77,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-008",
     "norsk": "Lykke til! Takk skal du ha.",
     "lemma": "Lykke til! Takk skal du ha.",
     "english": "Good luck! Thank you very much.",
@@ -80,6 +88,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-009",
     "norsk": "har lyst på",
     "lemma": "har lyst på",
     "english": "want / feel like",
@@ -90,6 +99,7 @@
     "part": "phrase"
   },
   {
+    "id": "up-a1-010",
     "norsk": "for å",
     "lemma": "for å",
     "english": "in order to",

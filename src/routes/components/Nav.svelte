@@ -48,6 +48,7 @@
 
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
+  const isAdmin = $derived(page.data.isAdmin as boolean);
 
   async function logout() {
     const userId = user?.id;
@@ -196,6 +197,11 @@
             href="/my-profile"
             onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
           >
+          {#if isAdmin}
+            <DropdownItem class="dark:hover:bg-blue-900" href="/admin" onclick={closeAvatarDropdown}
+              >Admin</DropdownItem
+            >
+          {/if}
           <DropdownItem class="dark:hover:bg-blue-900" href="/stats" onclick={closeAvatarDropdown}
             >{m.nav_my_progress()}</DropdownItem
           >
@@ -293,35 +299,35 @@
           {/snippet}
         </SidebarItem>
       {/if}
-      <SidebarItem label="A1" href="/learn/a1">
+      <SidebarItem label="Nivå A1" href="/learn/a1">
         {#snippet icon()}
           <ArrowRightOutline
             class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="A2" href="/learn/a2">
+      <SidebarItem label="Nivå A2" href="/learn/a2">
         {#snippet icon()}
           <ArrowRightOutline
             class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="B1" href="/learn/b1">
+      <SidebarItem label="Nivå B1" href="/learn/b1">
         {#snippet icon()}
           <ArrowRightOutline
             class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="B2" href="/learn/b2">
+      <SidebarItem label="Nivå B2" href="/learn/b2">
         {#snippet icon()}
           <ArrowRightOutline
             class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="C" href="/learn/c">
+      <SidebarItem label="Nivå C" href="/learn/c">
         {#snippet icon()}
           <ArrowRightOutline
             class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"

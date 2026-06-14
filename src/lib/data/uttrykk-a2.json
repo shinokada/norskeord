@@ -1,5 +1,6 @@
 [
   {
+    "id": "u-a2-001",
     "norsk": "å gå på ski",
     "lemma": "å gå på ski",
     "english": "to go skiing",
@@ -10,6 +11,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-002",
     "norsk": "for varmt/kaldt",
     "lemma": "for varmt/kaldt",
     "english": "too warm, too cold",
@@ -20,6 +22,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-003",
     "norsk": "stress",
     "lemma": "stress",
     "english": "stress",
@@ -30,6 +33,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-004",
     "norsk": "Fryser du?: Ja, det er veldig kaldt.",
     "lemma": "Fryser du?: Ja, det er veldig kaldt.",
     "english": "Are you cold? Yes, it is very cold.",
@@ -40,6 +44,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-005",
     "norsk": "Svetter du?: Ja, det er veldig varmt.",
     "lemma": "Svetter du?: Ja, det er veldig varmt.",
     "english": "Are you sweating? Yes, it is very warm.",
@@ -50,6 +55,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-006",
     "norsk": "Er dere forelsket?: Ja, det er vi.",
     "lemma": "Er dere forelsket?: Ja, det er vi.",
     "english": "Are you in love? Yes, we are.",
@@ -60,6 +66,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-007",
     "norsk": "Bor dere sammen?: Ja, vi er samboere.",
     "lemma": "Bor dere sammen?: Ja, vi er samboere.",
     "english": "Do you live together? Yes, we are cohabiting.",
@@ -70,6 +77,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-008",
     "norsk": "Regner det veldig mye?: Ja, det øsregner.",
     "lemma": "Regner det veldig mye?: Ja, det øsregner.",
     "english": "Is it raining a lot? Yes, it is pouring.",
@@ -80,6 +88,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-009",
     "norsk": "Er det veldig kaldt?: Ja, det er iskaldt.",
     "lemma": "Er det veldig kaldt?: Ja, det er iskaldt.",
     "english": "Is it very cold? Yes, it is ice cold.",
@@ -90,6 +99,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-010",
     "norsk": "Er du veldig sulten?: Ja, jeg er skrubbsulten.",
     "lemma": "Er du veldig sulten?: Ja, jeg er skrubbsulten.",
     "english": "Are you very hungry? Yes, I am starving.",
@@ -100,6 +110,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-011",
     "norsk": "Velkommen. Takk skal du ha.",
     "lemma": "Velkommen. Takk skal du ha.",
     "english": "Welcome. Thank you very much.",
@@ -110,6 +121,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-012",
     "norsk": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
     "lemma": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
     "english": "Should I order a glass of beer for you? Just water for me, thanks.",
@@ -120,6 +132,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-013",
     "norsk": "en stund",
     "lemma": "en stund",
     "english": "a while",
@@ -130,6 +143,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-014",
     "norsk": "en feil",
     "lemma": "en feil",
     "english": "a mistake, a fault",
@@ -140,6 +154,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-015",
     "norsk": "å se ... ut",
     "lemma": "å se ... ut",
     "english": "to look, to appear",
@@ -150,6 +165,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-016",
     "norsk": "å slå seg ned",
     "lemma": "å slå seg ned",
     "english": "to settle down, to sit down",
@@ -160,6 +176,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-017",
     "norsk": "å legge merke til",
     "lemma": "å legge merke til",
     "english": "to notice",
@@ -170,6 +187,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-018",
     "norsk": "å stole på noen",
     "lemma": "å stole på noen",
     "english": "to trust someone",
@@ -180,6 +198,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-019",
     "norsk": "å gå hånd i hånd",
     "lemma": "å gå hånd i hånd",
     "english": "to walk hand in hand",
@@ -190,6 +209,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-020",
     "norsk": "å ha rett i noe",
     "lemma": "å ha rett i noe",
     "english": "to be right about something",
@@ -200,6 +220,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-021",
     "norsk": "å ha rett til noe",
     "lemma": "å ha rett til noe",
     "english": "to have the right to something",
@@ -210,6 +231,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-022",
     "norsk": "å være avhengig av noe",
     "lemma": "å være avhengig av noe",
     "english": "to be dependent on something",
@@ -220,6 +242,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-023",
     "norsk": "å være forsynt",
     "lemma": "å være forsynt",
     "english": "to be full, to have had enough (food)",
@@ -230,6 +253,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-024",
     "norsk": "Det kan du si.",
     "lemma": "Det kan du si.",
     "english": "It certainly is. That's true.",
@@ -240,6 +264,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-025",
     "norsk": "Takk for i dag.",
     "lemma": "Takk for i dag.",
     "english": "Thanks for today.",
@@ -250,6 +275,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-026",
     "norsk": "Takk for sist.",
     "lemma": "Takk for sist.",
     "english": "Thanks for last time.",
@@ -260,6 +286,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-027",
     "norsk": "Takk for maten.",
     "lemma": "Takk for maten.",
     "english": "Thanks for the food.",
@@ -270,6 +297,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-028",
     "norsk": "Ha det bra så lenge.",
     "lemma": "Ha det bra så lenge.",
     "english": "Take care. Goodbye for now.",
@@ -280,6 +308,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-029",
     "norsk": "Dette er ...",
     "lemma": "Dette er ...",
     "english": "This is ...",
@@ -290,6 +319,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-030",
     "norsk": "Vi ses!",
     "lemma": "Vi ses!",
     "english": "See you!",
@@ -300,6 +330,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-031",
     "norsk": "Ha det!",
     "lemma": "Ha det!",
     "english": "Bye!",
@@ -310,6 +341,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-032",
     "norsk": "Ha en god dag!",
     "lemma": "Ha en god dag!",
     "english": "Have a good day!",
@@ -320,6 +352,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-033",
     "norsk": "Hva slags",
     "lemma": "Hva slags",
     "english": "What kind of",
@@ -330,6 +363,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-034",
     "norsk": "Klart det!",
     "lemma": "Klart det!",
     "english": "Of course!, Sure!",
@@ -340,6 +374,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-035",
     "norsk": "å ha sommerfugler i magen",
     "lemma": "å ha sommerfugler i magen",
     "english": "to have butterflies in one's stomach",
@@ -350,6 +385,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-036",
     "norsk": "å ha rett",
     "lemma": "å ha rett",
     "english": "to be right",
@@ -360,6 +396,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-037",
     "norsk": "å bli godkjent",
     "lemma": "å bli godkjent",
     "english": "to be approved, accepted",
@@ -370,6 +407,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-038",
     "norsk": "å bli lei av",
     "lemma": "å bli lei av",
     "english": "to get tired of, fed up with",
@@ -380,6 +418,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-039",
     "norsk": "å få øye på",
     "lemma": "å få øye på",
     "english": "to spot, to catch sight of",
@@ -390,6 +429,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-040",
     "norsk": "å ha ansvar for",
     "lemma": "å ha ansvar for",
     "english": "to be responsible for",
@@ -400,6 +440,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-041",
     "norsk": "å legge vekt på",
     "lemma": "å legge vekt på",
     "english": "to emphasise, to place importance on",
@@ -410,6 +451,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-042",
     "norsk": "å være interessert i",
     "lemma": "å være interessert i",
     "english": "to be interested in",
@@ -420,6 +462,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-043",
     "norsk": "å være født",
     "lemma": "å være født",
     "english": "to be born",
@@ -430,6 +473,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-044",
     "norsk": "Et lite øyeblikk.",
     "lemma": "Et lite øyeblikk.",
     "english": "Just a moment.",
@@ -440,6 +484,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-045",
     "norsk": "Beklager, det er helt fullt.",
     "lemma": "Beklager, det er helt fullt.",
     "english": "Sorry, it is completely full.",
@@ -450,6 +495,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-046",
     "norsk": "For en service!",
     "lemma": "For en service!",
     "english": "What great service!",
@@ -460,6 +506,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-047",
     "norsk": "Nå er det din tur.",
     "lemma": "Nå er det din tur.",
     "english": "Now it is your turn.",
@@ -470,6 +517,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-048",
     "norsk": "Takk for hjelpen.",
     "lemma": "Takk for hjelpen.",
     "english": "Thanks for the help.",
@@ -480,6 +528,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-049",
     "norsk": "i nærheten",
     "lemma": "i nærheten",
     "english": "nearby, in the area",
@@ -490,6 +539,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-050",
     "norsk": "med en gang",
     "lemma": "med en gang",
     "english": "right away, immediately",
@@ -500,6 +550,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-051",
     "norsk": "vondt",
     "lemma": "vondt",
     "english": "pain, hurt, sore",
@@ -510,6 +561,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-052",
     "norsk": "å ta feil",
     "lemma": "å ta feil",
     "english": "to be wrong, to make a mistake",
@@ -520,6 +572,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-053",
     "norsk": "å være lei seg",
     "lemma": "å være lei seg",
     "english": "to be sad, upset",
@@ -530,6 +583,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-054",
     "norsk": "å ringe etter",
     "lemma": "å ringe etter",
     "english": "to call for, to phone for",
@@ -540,6 +594,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-055",
     "norsk": "å være i form",
     "lemma": "å være i form",
     "english": "to be in shape, fit",
@@ -550,6 +605,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-056",
     "norsk": "å holde seg i form",
     "lemma": "å holde seg i form",
     "english": "to keep fit, stay in shape",
@@ -560,6 +616,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-057",
     "norsk": "faktisk",
     "lemma": "faktisk",
     "english": "actually, in fact",
@@ -570,6 +627,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-058",
     "norsk": "å være enig i",
     "lemma": "å være enig i",
     "english": "to agree with",
@@ -580,6 +638,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-059",
     "norsk": "å være på vei",
     "lemma": "å være på vei",
     "english": "to be on the way",
@@ -590,6 +649,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-060",
     "norsk": "sur",
     "lemma": "sur",
     "english": "angry, sour, grumpy",
@@ -600,6 +660,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-061",
     "norsk": "å gå over",
     "lemma": "å gå over",
     "english": "to pass, to go away (e.g. pain, mood)",
@@ -610,6 +671,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-062",
     "norsk": "Ta til høyre i Kirkegata.",
     "lemma": "Ta til høyre i Kirkegata.",
     "english": "Turn right on Kirkegata.",
@@ -620,6 +682,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-063",
     "norsk": "Ta til venstre.",
     "lemma": "Ta til venstre.",
     "english": "Turn left.",
@@ -630,6 +693,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-064",
     "norsk": "Kjør rett fram.",
     "lemma": "Kjør rett fram.",
     "english": "Drive straight ahead.",
@@ -640,6 +704,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-065",
     "norsk": "Hvor ligger leiligheten?",
     "lemma": "Hvor ligger leiligheten?",
     "english": "Where is the flat located?",
@@ -650,6 +715,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-066",
     "norsk": "Den ligger på venstre side.",
     "lemma": "Den ligger på venstre side.",
     "english": "It is on the left side.",
@@ -660,6 +726,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-067",
     "norsk": "Sofaen står foran vinduet.",
     "lemma": "Sofaen står foran vinduet.",
     "english": "The sofa is in front of the window.",
@@ -670,6 +737,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-068",
     "norsk": "Den står mellom døra og skapet.",
     "lemma": "Den står mellom døra og skapet.",
     "english": "It stands between the door and the wardrobe.",
@@ -680,6 +748,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-069",
     "norsk": "å like godt",
     "lemma": "å like godt",
     "english": "to really like, to enjoy",
@@ -690,6 +759,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-070",
     "norsk": "å like bedre (enn)",
     "lemma": "å like bedre (enn)",
     "english": "to prefer, to like more (than)",
@@ -700,6 +770,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-071",
     "norsk": "å like best",
     "lemma": "å like best",
     "english": "to like most, to like best",
@@ -710,6 +781,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-072",
     "norsk": "å bestemme seg",
     "lemma": "å bestemme seg",
     "english": "to make up one's mind, to decide",
@@ -720,6 +792,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-073",
     "norsk": "å ha rett til",
     "lemma": "å ha rett til",
     "english": "to have the right to",
@@ -730,6 +803,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-074",
     "norsk": "i løpet av",
     "lemma": "i løpet av",
     "english": "within, during, over the course of",
@@ -740,6 +814,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-075",
     "norsk": "å pynte seg",
     "lemma": "å pynte seg",
     "english": "to dress up, to get dressed up",
@@ -750,6 +825,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-076",
     "norsk": "å ønske seg",
     "lemma": "å ønske seg",
     "english": "to wish for, to want (as a gift)",
@@ -760,6 +836,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-077",
     "norsk": "å holde en tale",
     "lemma": "å holde en tale",
     "english": "to give a speech",
@@ -770,6 +847,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-078",
     "norsk": "å gratulere",
     "lemma": "å gratulere",
     "english": "to congratulate",
@@ -780,6 +858,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-079",
     "norsk": "å fylle ut",
     "lemma": "å fylle ut",
     "english": "to fill in, to fill out (a form)",
@@ -790,6 +869,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-080",
     "norsk": "å ordne seg",
     "lemma": "å ordne seg",
     "english": "to work out, to sort itself out",
@@ -800,6 +880,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-081",
     "norsk": "å ta det med ro",
     "lemma": "å ta det med ro",
     "english": "to take it easy, to relax",
@@ -810,6 +891,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-082",
     "norsk": "jul og nyttår",
     "lemma": "jul og nyttår",
     "english": "Christmas and New Year",
@@ -820,6 +902,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-083",
     "norsk": "fram og tilbake",
     "lemma": "fram og tilbake",
     "english": "back and forth",
@@ -830,6 +913,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-084",
     "norsk": "i mål",
     "lemma": "i mål",
     "english": "done, finished, at the goal",
@@ -840,6 +924,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-085",
     "norsk": "smak",
     "lemma": "smak",
     "english": "taste",
@@ -850,6 +935,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-086",
     "norsk": "smaken",
     "lemma": "smaken",
     "english": "the taste",
@@ -860,6 +946,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-087",
     "norsk": "til huset",
     "lemma": "til huset",
     "english": "for the house",
@@ -870,6 +957,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-088",
     "norsk": "å starte for seg selv",
     "lemma": "å starte for seg selv",
     "english": "to start one's own business",
@@ -880,6 +968,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-089",
     "norsk": "å få sitt eget",
     "lemma": "å få sitt eget",
     "english": "to have one's own (place, business)",
@@ -890,6 +979,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-090",
     "norsk": "å klare seg selv",
     "lemma": "å klare seg selv",
     "english": "to manage on one's own, to be self-sufficient",
@@ -900,6 +990,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-091",
     "norsk": "å se lyst på livet",
     "lemma": "å se lyst på livet",
     "english": "to look on the bright side of life",
@@ -910,6 +1001,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-092",
     "norsk": "å ta lang tid",
     "lemma": "å ta lang tid",
     "english": "to take a long time",
@@ -920,6 +1012,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-093",
     "norsk": "å ha tid",
     "lemma": "å ha tid",
     "english": "to have time",
@@ -930,6 +1023,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-094",
     "norsk": "å lengte hjem",
     "lemma": "å lengte hjem",
     "english": "to long for home, to be homesick",
@@ -940,6 +1034,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-095",
     "norsk": "å gi opp",
     "lemma": "å gi opp",
     "english": "to give up",
@@ -950,6 +1045,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-096",
     "norsk": "å melde seg inn",
     "lemma": "å melde seg inn",
     "english": "to join, to sign up (for a club or organisation)",
@@ -960,6 +1056,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-097",
     "norsk": "ved siden av",
     "lemma": "ved siden av",
     "english": "next to, alongside, in addition to",
@@ -970,6 +1067,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-098",
     "norsk": "komme an på",
     "lemma": "komme an på",
     "english": "to depend on",
@@ -980,6 +1078,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-099",
     "norsk": "holde på",
     "lemma": "holde på",
     "english": "to be in the middle of, to be busy doing",
@@ -990,6 +1089,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-100",
     "norsk": "stå til",
     "lemma": "stå til",
     "english": "how things are, how it is going",
@@ -1000,6 +1100,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-101",
     "norsk": "komme på",
     "lemma": "komme på",
     "english": "to think of, to remember",
@@ -1010,6 +1111,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-102",
     "norsk": "legge til",
     "lemma": "legge til",
     "english": "to add",
@@ -1020,6 +1122,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-103",
     "norsk": "ha behov for",
     "lemma": "ha behov for",
     "english": "to need, to have a need for",
@@ -1030,6 +1133,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-104",
     "norsk": "holde øye med",
     "lemma": "holde øye med",
     "english": "to keep an eye on",
@@ -1040,6 +1144,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-105",
     "norsk": "holde med",
     "lemma": "holde med",
     "english": "to support, to side with",
@@ -1050,6 +1155,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-106",
     "norsk": "holde seg fast",
     "lemma": "holde seg fast",
     "english": "to hold on tight",
@@ -1060,6 +1166,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-107",
     "norsk": "se an",
     "lemma": "se an",
     "english": "to wait and see, to assess the situation",
@@ -1070,6 +1177,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-108",
     "norsk": "det er bare å",
     "lemma": "det er bare å",
     "english": "feel free to, just go ahead and",
@@ -1080,6 +1188,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-109",
     "norsk": "gå an",
     "lemma": "gå an",
     "english": "to be possible, to be acceptable",
@@ -1090,6 +1199,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-110",
     "norsk": "ha tenkt",
     "lemma": "ha tenkt",
     "english": "to plan to, to intend to",
@@ -1100,6 +1210,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-111",
     "norsk": "holde opp",
     "lemma": "holde opp",
     "english": "to stop, to cease",
@@ -1110,6 +1221,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-112",
     "norsk": "komme over",
     "lemma": "komme over",
     "english": "to come across, to get over",
@@ -1120,6 +1232,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-113",
     "norsk": "skulle til å",
     "lemma": "skulle til å",
     "english": "to be about to",
@@ -1130,6 +1243,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-114",
     "norsk": "legge på seg",
     "lemma": "legge på seg",
     "english": "to gain weight",
@@ -1140,6 +1254,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-115",
     "norsk": "kjenne igjen",
     "lemma": "kjenne igjen",
     "english": "to recognise",
@@ -1150,6 +1265,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-116",
     "norsk": "holde til",
     "lemma": "holde til",
     "english": "to be located, to be based",
@@ -1160,6 +1276,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-117",
     "norsk": "kunne hende",
     "lemma": "kunne hende",
     "english": "might happen, it may be that",
@@ -1170,6 +1287,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-118",
     "norsk": "finne sted",
     "lemma": "finne sted",
     "english": "to take place",
@@ -1180,6 +1298,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-119",
     "norsk": "gå tom for",
     "lemma": "gå tom for",
     "english": "to run out of",
@@ -1190,6 +1309,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-120",
     "norsk": "få med seg",
     "lemma": "få med seg",
     "english": "to catch, to follow, to understand",
@@ -1200,6 +1320,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-121",
     "norsk": "gå av",
     "lemma": "gå av",
     "english": "to step down, to get off",
@@ -1210,6 +1331,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-122",
     "norsk": "gå med på",
     "lemma": "gå med på",
     "english": "to agree to, to go along with",
@@ -1220,6 +1342,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-123",
     "norsk": "bli til",
     "lemma": "bli til",
     "english": "to come into being, to become",
@@ -1230,6 +1353,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-124",
     "norsk": "være til",
     "lemma": "være til",
     "english": "to exist, to be of use",
@@ -1240,6 +1364,7 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-125",
     "norsk": "la være",
     "lemma": "la være",
     "english": "to refrain, to leave alone, to not bother",

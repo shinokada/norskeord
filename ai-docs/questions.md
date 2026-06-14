@@ -8,34 +8,14 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- fix /e2e/admin.test.ts.
-- When I go through /admin/grammar and /admin/blog items, I won't know if I checked an item or not even I didn't edit it. Is it a good idea to add editedAt or checkedAt feild to json items? What do you think? Do not modify code yet.
-  Ask script to add editAt and checkedAt or similar to all the data/json file
-- Add editAt to admin/grammar and admin/blog
-- Add admin link if user email is ADMIN_EMAIL to dropdown below the following in dropdown:
+- For sidebar menu only, keeping links a1, a2, etc but menu title should be Nivå A1, etc and create A1, A2, B1, B2 svg icons using Svelte Awesome Icons.
 
-```
-<DropdownItem
-  class="dark:hover:bg-blue-900"
-  href="/my-profile"
-  onclick={closeAvatarDropdown}>{m.nav_my_profile()}</DropdownItem
->
-```
+- The review key becomes `id` instead of `level:norsk`, which is much cleaner. It also future-proofs things if you ever move FSRS progress for vocab to Supabase per-entry (currently it uses `norsk` as the key in `card_progress` — worth knowing).
 
-And for small screen above the following in Sidebar:
+One thing to be aware of: `card_progress` uses `norsk` as the lookup key, not an id. The vocab id would be a new field only for admin review tracking for now — it wouldn't replace `norsk` as the FSRS key without a migration.
+Is it a good idea to migrate using `id` in `card_progress` as the lookup key? Any other place using `norsk`?
 
-```
-<SidebarItem label="My Progress" href="/stats">
-```
 
-- change dropdown nav to sidebar component
-- when I click login in mobile the dropdown doesn't close. https://flowbite-svelte.com/docs/components/dropdown#programmatic-open/close or https://flowbite-svelte.com/docs/components/dropdown#events may help.
--
-- Not hiding cloudflare.com/turnstile since it doesn't show visual info
-- On Android when I click a login line on Gmail, Gmail opens a site but I don't think it is a browser since it has a left arrow at the top to go back to Gmail.
-- One of my friend clicks
-- What could be causes that cloudflare.com/turnstile fails?
-- editting json file for editor
 - I think from B1 or B2 there should be only norwegian. This means using norwegian definition and no english. What do you think? Which level is good to start using only Norwegian?
 - domain names: norsknote.no, norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
 

@@ -41,6 +41,7 @@
     mode: 'add' | 'edit';
     post: Partial<AdminPost> & { _originalFilename?: string };
   } | null>(null);
+  let modalReviewed = $state(false);
 
   const isDirty = $derived(draft.some((p) => p._status));
   const changeCount = $derived(draft.filter((p) => p._status).length);
@@ -101,19 +102,6 @@
     }
   }
 
-  async function toggleReviewed(p: DraftPost) {
-    const key = p.filename;
-    const today = new Date().toISOString().slice(0, 10);
-    const next = { ...reviewed };
-    if (next[key]) {
-      delete next[key];
-    } else {
-      next[key] = { checkedAt: today };
-    }
-    reviewed = next;
-    await saveReviewState();
-  }
-
   async function saveReviewState() {
     savingReview = true;
     try {
@@ -140,17 +128,12 @@
 
   function openAdd() {
     const blank = blankPost();
+    modalReviewed = false;
     modal = { mode: 'add', post: { filename: '', meta: blank.meta as PostMeta, body: blank.body } };
   }
 
   function openEdit(p: DraftPost) {
-    // Clear review mark when editing
-    if (reviewed[p.filename]) {
-      const next = { ...reviewed };
-      delete next[p.filename];
-      reviewed = next;
-      saveReviewState();
-    }
+    modalReviewed = !!reviewed[p.filename];
     modal = {
       mode: 'edit',
       post: {
@@ -228,6 +211,8 @@
       return;
     }
 
+    let savedFilename: string;
+
     if (modal.mode === 'add') {
       const exists = draft.some((p) => p._status !== 'deleted' && p.meta.slug === meta.slug);
       if (exists) {
@@ -241,6 +226,7 @@
         _status: 'added'
       };
       draft = [...draft, newPost];
+      savedFilename = meta.slug;
     } else {
       const originalFilename = modal.post._originalFilename!;
       const exists = draft.some(
@@ -265,8 +251,23 @@
           _originalFilename: p._originalFilename ?? p.filename
         };
       });
+      savedFilename = meta.slug;
     }
+
+    applyModalReviewed(savedFilename);
     modal = null;
+  }
+
+  function applyModalReviewed(filename: string) {
+    const today = new Date().toISOString().slice(0, 10);
+    const next = { ...reviewed };
+    if (modalReviewed) {
+      next[filename] = { checkedAt: today };
+    } else {
+      delete next[filename];
+    }
+    reviewed = next;
+    saveReviewState();
   }
 
   function removePost(p: DraftPost) {
@@ -521,20 +522,15 @@
               ].join(' ')}
             >
               <td class="py-2 pr-3 text-center">
-                <button
-                  onclick={() => toggleReviewed(p)}
-                  title={isReviewed
-                    ? `Reviewed ${reviewed[p.filename].checkedAt} — click to unmark`
-                    : 'Mark as reviewed'}
+                <span
+                  title={isReviewed ? `Reviewed ${reviewed[p.filename].checkedAt}` : 'Not reviewed'}
                   class={[
-                    'text-lg leading-none transition-opacity',
-                    isReviewed
-                      ? 'text-green-500'
-                      : 'opacity-20 hover:opacity-60 hover:text-green-400'
+                    'text-lg leading-none',
+                    isReviewed ? 'text-green-500' : 'opacity-10'
                   ].join(' ')}
                 >
                   ✓
-                </button>
+                </span>
               </td>
               <td class="max-w-xs truncate py-2 pr-3" title={p.meta.title}>
                 {p.meta.title}
@@ -752,19 +748,25 @@
         </label>
       </div>
 
-      <div class="mt-6 flex justify-end gap-2">
-        <button
-          class="rounded border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800"
-          onclick={closeModal}
-        >
-          Cancel
-        </button>
-        <button
-          class="rounded bg-blue-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-blue-700"
-          onclick={saveModal}
-        >
-          Save
-        </button>
+      <div class="mt-6 flex items-center justify-between">
+        <label class="flex items-center gap-2 text-sm">
+          <input type="checkbox" bind:checked={modalReviewed} class="rounded" />
+          <span class="font-medium text-gray-700 dark:text-gray-200">Mark as reviewed</span>
+        </label>
+        <div class="flex gap-2">
+          <button
+            class="rounded border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800"
+            onclick={closeModal}
+          >
+            Cancel
+          </button>
+          <button
+            class="rounded bg-blue-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-blue-700"
+            onclick={saveModal}
+          >
+            Save
+          </button>
+        </div>
       </div>
     </div>
   </div>
