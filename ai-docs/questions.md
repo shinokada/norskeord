@@ -15,8 +15,6 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 One thing to be aware of: `card_progress` uses `norsk` as the lookup key, not an id. The vocab id would be a new field only for admin review tracking for now — it wouldn't replace `norsk` as the FSRS key without a migration.
 Is it a good idea to migrate using `id` in `card_progress` as the lookup key? Any other place using `norsk`?
 
-- Should I add id to vocab and uttrykk since most of norsk field have multiple words with norwegian characters, ø, æ, å. What do you think? If it is a good idea can you write a python or mjs script so that I can copy/paste/download and r
-- Do I need to add new e2e/unit tests?
 
 - I think from B1 or B2 there should be only norwegian. This means using norwegian definition and no english. What do you think? Which level is good to start using only Norwegian?
 - domain names: norsknote.no, norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
