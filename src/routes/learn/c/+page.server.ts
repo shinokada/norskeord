@@ -7,7 +7,7 @@ import { parsePosts, type RawPostModule, cefrLevels } from '$lib/blog';
 
 export const prerender = false;
 
-export const load: PageServerLoad = async ({ locals }) => {
+export const load: PageServerLoad = async () => {
   const level = 'c';
   const levelUpper = 'C' as CEFRLevel;
 
@@ -53,8 +53,7 @@ export const load: PageServerLoad = async ({ locals }) => {
     categories,
     grammarTopics,
     levelStats,
-    blogPosts,
-    user: locals.user,
-    plan: locals.plan
+    blogPosts
+    // user and plan come from the root layout — do NOT re-export here
   };
 };
