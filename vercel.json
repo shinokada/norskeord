@@ -15,12 +15,6 @@
     {
       "source": "/data/search-index.json",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
-    },
-    {
-      "source": "/(a1|a2|b1|b2|c)/:category",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, s-maxage=300, stale-while-revalidate=3600" }
-      ]
     }
   ]
 }
