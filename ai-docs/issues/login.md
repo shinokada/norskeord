@@ -1,4 +1,3 @@
-
 Q: I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
@@ -64,7 +63,7 @@ if (
   event.request.method === 'GET' &&
   !event.url.pathname.startsWith('/api/') &&
   !event.url.pathname.startsWith('/auth/') &&
-  !event.url.pathname.startsWith('/learn/')   // ← add this
+  !event.url.pathname.startsWith('/learn/') // ← add this
 ) {
   response.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
 }
@@ -87,7 +86,7 @@ Let me look at the actual cache problem more carefully before proposing a fix.No
 3. This is a **SvelteKit client-side navigation** — it does **not** make a new full HTTP request to the server
 4. SvelteKit fetches the page data via `/__data.json` endpoints for `/learn/a1` — but the **HTML shell and layout are already in memory from the `/auth/sync` load**, including `page.data.user` from the root layout
 
-So the avatar *should* be there from the root layout data... unless the `/learn/a1` page's `+page.server.ts` re-runs on the client navigation and its returned `user: locals.user` is somehow null?
+So the avatar _should_ be there from the root layout data... unless the `/learn/a1` page's `+page.server.ts` re-runs on the client navigation and its returned `user: locals.user` is somehow null?
 
 Wait — let me re-read the `/learn/[level]/+page.server.ts` load return:
 
@@ -145,7 +144,7 @@ Q: https://norskeord.no/blog and https://norskeord.no/learn/a1 still Log in inst
 
 Ans: The fix hasn't propagated yet, or there's still a cached response being served. Let me check a few things — the live site may still be serving edge-cached HTML, and I also want to verify the `+page.svelte` for `/learn/a1` to see if it reads `data.user` directly (which would still be broken even after our fix if the page svelte uses the page-level data instead of layout data).Now I can see clearly what's still wrong. There are **two remaining issues** that our previous fix didn't address:
 
-**Issue 1 — `/learn/[level]/+page.svelte` uses `data.user` directly** (line: `{#if !data.user}`). Even though `page.data.user` (from the root layout) is correct, `data.user` refers to *the page's own load data*, which no longer has `user` after our fix. So the "Start free" button logic is broken — but more importantly this tells us the page was depending on `data.user` being set.
+**Issue 1 — `/learn/[level]/+page.svelte` uses `data.user` directly** (line: `{#if !data.user}`). Even though `page.data.user` (from the root layout) is correct, `data.user` refers to _the page's own load data_, which no longer has `user` after our fix. So the "Start free" button logic is broken — but more importantly this tells us the page was depending on `data.user` being set.
 
 **Issue 2 — `/blog` has no `+page.server.ts`**, so it uses the root layout's load, which **does get cached** by the `Cache-Control: public, s-maxage=300` header. The blog page is fully anonymous-cacheable, meaning Vercel edge serves the cached HTML (with "Log in" button) to logged-in users too.
 
