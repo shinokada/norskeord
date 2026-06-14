@@ -13,13 +13,13 @@ Let me simplify: make `allEntries` optional with a default of `[]`:Now write the
 
 ## What changed and what to do
 
-### Step 1 — verify first
+### Step 1 — verify first ✅ Done
 ```
 node scripts/verify-vocab-ids.mjs
 ```
 This is already written to `scripts/verify-vocab-ids.mjs`. Should print `✅ All clear`. Don't proceed if it doesn't.
 
-### Step 2 — run migration 016 in Supabase
+### Step 2 — run migration 016 in Supabase ✅ Done
 Paste `supabase/migrations/016_card_progress_vocab_id.sql` into the SQL editor. This adds the `vocab_id` column and a partial unique index. The `norsk` column is left untouched.
 
 ### Step 3 — deploy the code
