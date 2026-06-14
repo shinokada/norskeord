@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.25.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added admin pages for managing vocabulary and expressions with review tracking workflows.
+    - Extended review system to track all content types across the platform.
+    - Added Admin link to user navigation menu.
+  - **Performance**
+    - Optimized caching for category pages and personalized content delivery.
+  - **User Interface**
+    - Updated navigation level labels to use "Nivå A1," "Nivå A2," etc.
+    - Enhanced admin panel with new vocabulary and expression management sections.
+
 ## 2.24.0
 
 ### Minor Changes
