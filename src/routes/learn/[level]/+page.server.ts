@@ -17,7 +17,7 @@ const CEFR_LABELS: Record<string, string> = {
   b2: 'Upper Intermediate'
 };
 
-export const load: PageServerLoad = async ({ params, locals }) => {
+export const load: PageServerLoad = async ({ params }) => {
   const level = params.level.toLowerCase();
 
   // Redirect old c1/c2 URLs to the combined /learn/c hub
