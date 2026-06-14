@@ -149,7 +149,7 @@
     {#if data.levelStats}
       <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">{entryLabel(data.levelStats)}</p>
     {/if}
-    {#if !data.user}
+    {#if !page.data.user}
       <a
         href="/auth/login"
         class="mt-4 inline-block rounded-xl bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-500"

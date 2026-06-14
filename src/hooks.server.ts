@@ -59,13 +59,39 @@ const originalHandle: Handle = async ({ event, resolve }) => {
       name === 'content-range' || name === 'x-supabase-api-version'
   });
 
-  // Allow Vercel's edge to cache anonymous GET responses for 5 minutes.
-  // Authenticated requests must never be cached at the edge.
+  // Allow Vercel's edge to cache anonymous GET responses for 5 minutes —
+  // but ONLY for fully static/marketing pages where auth state doesn't affect
+  // the rendered HTML (e.g. home, /plus, /resources, /blog/[slug]).
+  //
+  // Excluded:
+  //   /api/*        — dynamic JSON endpoints
+  //   /auth/*       — login / callback routes
+  //   /learn/*      — hub pages show auth-sensitive UI (avatar, Plus badges)
+  //   /blog         — blog index shows auth-sensitive nav
+  //   /[level]/*    — flashcard pages are auth-gated
+  //   /grammar/*    — grammar pages are auth-gated
+  //   /quiz/*       — quiz pages are auth-gated
+  //   /norskproven  — auth-gated
+  //   /stats        — auth-required
+  //   /my-profile   — auth-required
+  const CACHE_EXCLUDED = [
+    '/api/',
+    '/auth/',
+    '/learn/',
+    '/grammar/',
+    '/quiz',
+    '/norskproven',
+    '/stats',
+    '/my-profile'
+  ];
+  const pathname = event.url.pathname;
+  const isCacheExcluded = CACHE_EXCLUDED.some((prefix) => pathname.startsWith(prefix))
+    || pathname === '/blog'; // blog index (not individual posts)
+
   if (
     !hasSession &&
     event.request.method === 'GET' &&
-    !event.url.pathname.startsWith('/api/') &&
-    !event.url.pathname.startsWith('/auth/')
+    !isCacheExcluded
   ) {
     response.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
   }
