@@ -22,5 +22,25 @@
         Create, edit, and delete blog posts
       </div>
     </a>
+
+    <a
+      href="/admin/vocab"
+      class="block rounded-lg border border-gray-200 p-4 transition hover:border-blue-400 hover:bg-blue-50 dark:border-gray-700 dark:hover:border-blue-500 dark:hover:bg-gray-800"
+    >
+      <div class="font-semibold dark:text-white">Vocabulary</div>
+      <div class="text-sm text-gray-500 dark:text-gray-400">
+        Add, edit, and delete vocab entries across A1–C levels
+      </div>
+    </a>
+
+    <a
+      href="/admin/uttrykk"
+      class="block rounded-lg border border-gray-200 p-4 transition hover:border-blue-400 hover:bg-blue-50 dark:border-gray-700 dark:hover:border-blue-500 dark:hover:bg-gray-800"
+    >
+      <div class="font-semibold dark:text-white">Uttrykk</div>
+      <div class="text-sm text-gray-500 dark:text-gray-400">
+        Add, edit, and delete phrase entries and preview decks across A1–B2 levels
+      </div>
+    </a>
   </div>
 </div>

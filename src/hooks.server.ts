@@ -3,6 +3,13 @@ import { getTextDirection } from '$lib/paraglide/runtime';
 import { paraglideMiddleware } from '$lib/paraglide/server';
 import { createSupabaseServerClient } from '$lib/server/supabase';
 import type { Handle } from '@sveltejs/kit';
+// hooks.server.ts
+import { PUBLIC_SUPABASE_URL } from '$env/static/public';
+
+// Derives "sb-<project-ref>-auth-token" from the Supabase URL.
+// The project ref is already public — it's in the URL and visible in DevTools.
+const projectRef = new URL(PUBLIC_SUPABASE_URL).hostname.split('.')[0];
+const SUPABASE_AUTH_COOKIE = `sb-${projectRef}-auth-token`;
 
 /**
  * Runs on every server request.
@@ -10,37 +17,60 @@ import type { Handle } from '@sveltejs/kit';
  *   - locals.supabase  — authenticated server client for this request
  *   - locals.user      — the authenticated User object, or null
  *   - locals.plan      — 'plus' | 'free' (read from subscriptions table)
+ *
+ * Optimisation: if no auth cookie is present the Supabase network calls are
+ * skipped entirely and we set Cache-Control on the response so Vercel's edge
+ * can serve subsequent anonymous requests from cache.
  */
 const originalHandle: Handle = async ({ event, resolve }) => {
   const supabase = createSupabaseServerClient(event.cookies);
-
   event.locals.supabase = supabase;
 
-  // getUser() validates the JWT with Supabase's servers — never trust locals.session alone.
-  const {
-    data: { user }
-  } = await supabase.auth.getUser();
+  const hasSession = !!event.cookies.get(SUPABASE_AUTH_COOKIE);
 
-  event.locals.user = user ?? null;
+  if (hasSession) {
+    // getUser() validates the JWT with Supabase's servers — never trust the
+    // cookie value alone.
+    const {
+      data: { user }
+    } = await supabase.auth.getUser();
 
-  // Phase 3-A: read plan from subscriptions table.
-  // Falls back to 'free' for unauthenticated users or missing rows.
-  if (user) {
-    const { data } = await supabase
-      .from('subscriptions')
-      .select('plan')
-      .eq('user_id', user.id)
-      .maybeSingle();
-    event.locals.plan = (data?.plan as 'free' | 'plus') ?? 'free';
+    event.locals.user = user ?? null;
+
+    if (user) {
+      const { data } = await supabase
+        .from('subscriptions')
+        .select('plan')
+        .eq('user_id', user.id)
+        .maybeSingle();
+      event.locals.plan = (data?.plan as 'free' | 'plus') ?? 'free';
+    } else {
+      event.locals.plan = 'free';
+    }
   } else {
+    // No session cookie — skip all Supabase network calls.
+    event.locals.user = null;
     event.locals.plan = 'free';
   }
 
-  return resolve(event, {
+  const response = await resolve(event, {
     // Required by @supabase/ssr: let it set the auth cookie on the response.
     filterSerializedResponseHeaders: (name) =>
       name === 'content-range' || name === 'x-supabase-api-version'
   });
+
+  // Allow Vercel's edge to cache anonymous GET responses for 5 minutes.
+  // Authenticated requests must never be cached at the edge.
+  if (
+    !hasSession &&
+    event.request.method === 'GET' &&
+    !event.url.pathname.startsWith('/api/') &&
+    !event.url.pathname.startsWith('/auth/')
+  ) {
+    response.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
+  }
+
+  return response;
 };
 
 const handleParaglide: Handle = ({ event, resolve }) =>

@@ -1,4 +1,5 @@
-import { ANALYTICS_ID_LANGUAGE_APP } from '$env/static/private';
+import { ANALYTICS_ID_LANGUAGE_APP, ADMIN_EMAIL } from '$env/static/private';
+import { dev } from '$app/environment';
 import type { MetaProps } from 'runes-meta-tags';
 import { metaTitle, metaDescription } from 'runes-meta-tags';
 
@@ -69,6 +70,7 @@ export const load = async ({ url, locals }) => {
     displayName,
     targetLevel,
     sessionLimit,
-    showExample
+    showExample,
+    isAdmin: dev && locals.user?.email === ADMIN_EMAIL
   };
 };
