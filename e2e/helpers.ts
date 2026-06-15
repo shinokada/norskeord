@@ -79,3 +79,27 @@ export async function injectPlusPlan(page: Page) {
     await route.continue();
   });
 }
+
+export async function injectLoggedInUser(page: Page) {
+  await setNorwegianLocale(page);
+  await page.route('**', async (route) => {
+    const request = route.request();
+    if (request.resourceType() === 'document') {
+      const response = await route.fetch();
+      const body = await response.text();
+      const patched = body
+        .replace(/plan:"free"/, 'plan:"plus"')
+        .replace(
+          /user:null/,
+          'user:{id:"00000000-0000-0000-0000-000000000001",email:"test@example.com",app_metadata:{},user_metadata:{},aud:"authenticated",created_at:"2024-01-01T00:00:00Z"}'
+        );
+      await route.fulfill({
+        status: response.status(),
+        headers: response.headers(),
+        body: patched
+      });
+      return;
+    }
+    await route.continue();
+  });
+}
