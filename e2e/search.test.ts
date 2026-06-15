@@ -26,12 +26,14 @@ test('free user Cmd/Ctrl+K does not open search modal', async ({ page }) => {
 test('Plus user sees search button in nav', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/');
-  await expect(page.getByTestId('search-button')).toBeVisible();
+  // Wait for onMount to fetch /api/plan and update clientIsPlus
+  await expect(page.getByTestId('search-button')).toBeVisible({ timeout: 3000 });
 });
 
 test('Plus user clicking search icon opens modal with search input', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/');
+  await page.getByTestId('search-button').waitFor();
   await page.getByTestId('search-button').click();
   await expect(page.getByRole('dialog')).toBeVisible();
   await expect(page.getByRole('searchbox')).toBeVisible();
