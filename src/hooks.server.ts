@@ -103,9 +103,7 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     '/quiz',
     '/norskproven',
     '/stats',
-    '/my-profile',
-    '/guide',
-    '/resources'
+    '/my-profile'
   ];
   const isCacheExcluded =
     CACHE_EXCLUDED.some((prefix) => pathname.startsWith(prefix)) || pathname === '/blog'; // blog index (not individual posts)
