@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { goto, invalidateAll } from '$app/navigation';
   import { page } from '$app/state';
   import { onMount } from 'svelte';
   import { setLocale } from '$lib/paraglide/runtime';
@@ -57,9 +56,7 @@
       }
     }
 
-    await invalidateAll();
-    // eslint-disable-next-line svelte/no-navigation-without-resolve
-    await goto(destination, { replaceState: true });
+    window.location.href = destination;
   });
 </script>
 
