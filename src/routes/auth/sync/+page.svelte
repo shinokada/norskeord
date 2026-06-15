@@ -10,10 +10,6 @@
   } from '$lib/progress';
   import { validFlashcardPathPattern } from '$lib/utils';
 
-  // `next` from the magic-link callback — always '/' since we don't inject
-  // the last path into the login flow. We determine destination ourselves below.
-  const next = page.url.searchParams.get('next') ?? '/';
-
   onMount(async () => {
     const userId = page.data.user?.id;
     const isPlus = (page.data.plan as 'free' | 'plus') === 'plus';
@@ -48,21 +44,17 @@
     }
 
     // ── Determine post-login destination ──────────────────────────────────
-    // First-time login (no stored last path) → onboarding start at A1.
-    // Returning user → restore their last visited page.
-    // Explicit `next` param (e.g. from a shared link) → honour it.
-    let destination = '/learn/a1'; // default: onboarding
+    // Server provided the base destination (handles `next` param).
+    // Client overrides with localStorage last path for returning users
+    // who logged in without an explicit `next` param.
+    let destination = page.data.destination as string;
 
-    if (next !== '/') {
-      // Explicit destination from the magic-link URL (e.g. email CTA link)
-      destination = next;
-    } else {
+    if (destination === '/learn/a1') {
+      // No explicit `next` was set — check if this is a returning user
       const last = localStorage.getItem('last-flashcard-path');
       if (last && validFlashcardPathPattern.test(last)) {
-        // Returning user — go back to where they left off
         destination = last;
       }
-      // else: no stored path → first-time user → keep '/learn/a1'
     }
 
     // eslint-disable-next-line svelte/no-navigation-without-resolve
