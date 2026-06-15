@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.25.7
+
+### Patch Changes
+
+- fix: src/routes/auth/sync/+page.svelte use window.location.href for full page reload
+
+  - **Tests**
+    - Refined authentication and navigation test suite to better validate user authentication workflows and navigation patterns across all routes.
+  - **Chores**
+    - Enhanced post-login synchronization and redirect handling for improved reliability.
+
 ## 2.25.6
 
 ### Patch Changes
