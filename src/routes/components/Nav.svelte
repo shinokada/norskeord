@@ -45,13 +45,20 @@
   import { localeStore } from '$lib/localeStore.svelte';
   import { clearUserProgress } from '$lib/progress';
   import Search from '$lib/components/Search.svelte';
+  import { supabase } from '$lib/supabase';
+  import type { User } from '@supabase/supabase-js';
 
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
   const isAdmin = $derived(page.data.isAdmin as boolean);
 
+  // For prerendered pages (e.g. /blog, /blog/[slug]), page.data.user is always
+  // null at build time. We hydrate auth state client-side after mount.
+  let clientUser = $state<User | null>(null);
+  const effectiveUser = $derived(user ?? clientUser);
+
   async function logout() {
-    const userId = user?.id;
+    const userId = effectiveUser?.id;
     if (userId) clearUserProgress();
     avatarDropdownOpen = false;
     await fetch('/auth/logout', { method: 'POST' });
@@ -71,7 +78,7 @@
   async function toggleLocale() {
     const next = localeStore.current === 'en' ? 'nb' : 'en';
     localeStore.set(next);
-    if (user) {
+    if (effectiveUser) {
       try {
         await fetch('/api/profile/language', {
           method: 'PATCH',
@@ -84,8 +91,14 @@
     }
   }
 
-  onMount(() => {
+  onMount(async () => {
     localeStore.init();
+    // Only fetch client-side session on prerendered pages where page.data.user
+    // is null. On SSR routes user is already populated from the server.
+    if (!user) {
+      const { data } = await supabase.auth.getUser();
+      clientUser = data.user ?? null;
+    }
   });
 
   // ── Search modal ───────────────────────────────────────────────────────────
@@ -157,7 +170,7 @@
       {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
     </button>
 
-    {#if !user}
+    {#if !effectiveUser}
       <a
         href="/plus?checkout=1"
         class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 md:inline-block"
@@ -171,7 +184,9 @@
         {m.nav_log_in()}
       </a>
     {:else}
-      <Avatar class="acs ml-2.5 hidden md:block" size="xs" data-testid="user-avatar" />
+      <div data-testid="user-avatar">
+        <Avatar class="acs ml-2.5 hidden md:block" size="xs" />
+      </div>
       <Dropdown
         bind:isOpen={avatarDropdownOpen}
         simple
@@ -187,7 +202,7 @@
           <span
             class="block text-xs text-gray-500 dark:text-gray-400 {displayName ? 'mt-0.5' : ''}"
           >
-            {user.email}
+            {effectiveUser.email}
           </span>
         </DropdownHeader>
         <DropdownDivider />
@@ -211,7 +226,7 @@
         </DropdownGroup>
       </Dropdown>
     {/if}
-    {#if user && !isPlus}
+    {#if effectiveUser && !isPlus}
       <a
         href="/plus"
         class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
@@ -276,7 +291,7 @@
     class="z-50 h-screen md:hidden right-0 left-auto pt-6 w-full dark:bg-indigo-950"
   >
     <SidebarGroup>
-      {#if user}
+      {#if effectiveUser}
         <SidebarItem label="My Progress" href="/stats">
           {#snippet icon()}
             <ChartOutline
@@ -368,7 +383,7 @@
         {/snippet}
       </SidebarItem>
     </SidebarGroup>
-    {#if user}
+    {#if effectiveUser}
       <SidebarGroup border>
         <SidebarItem label="Log out" onclick={logout} class="cursor-pointer">
           {#snippet icon()}
