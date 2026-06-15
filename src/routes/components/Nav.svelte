@@ -49,9 +49,9 @@
   let isDemoOpen = $derived(sidebarUi.isOpen);
   const spanClass = 'flex-1 ms-3 whitespace-nowrap';
   const sidebarActiveClass =
-    'flex items-center p-2 text-base font-normal text-white bg-primary-600 dark:bg-primary-700 rounded-lg dark:text-white hover:bg-primary-800 dark:hover:bg-primary-800';
+  'flex items-center p-2 text-base font-medium rounded-lg text-primary-400 bg-primary-500/15 dark:text-primary-400 dark:bg-primary-400/10 transition-colors duration-200';
   const sidebarNonActiveClass =
-    'flex items-center p-2 text-base font-normal text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700';
+  'flex items-center p-2 text-base font-normal rounded-lg text-slate-300 dark:text-slate-300 hover:text-white hover:bg-white/5 dark:hover:text-white dark:hover:bg-white/5 transition-colors duration-200';
   // For prerendered pages (e.g. /blog, /blog/[slug]), page.data.user is always
   // null at build time. We hydrate auth state client-side after mount.
   let clientUser = $state<User | null>(null);
