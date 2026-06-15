@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.25.6
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Improved authentication synchronization to properly invalidate cached data before redirecting users to their destination, ensuring they receive the latest information immediately after login.
+  - **Tests**
+    - Added comprehensive end-to-end tests for navigation across multiple pages in authenticated sessions, verifying avatar visibility and proper UI behavior.
+
 ## 2.25.5
 
 ### Patch Changes
