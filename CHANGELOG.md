@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.25.8
+
+### Patch Changes
+
+- - fix: the root cause was always that Nav.svelte relied solely on page.data.user which is null on prerendered pages. Now that it falls back to clientUser from the Supabase browser session, all prerendered pages will correctly show the avatar after onMount fires.
+  * **Bug Fixes**
+    - Improved client-side authentication synchronization for prerendered pages, ensuring the correct logged-in/logged-out UI across the navigation, account menu, visible email, Plus access indicators, and authenticated mobile/desktop sections.
+    - Updated logout behavior and locale persistence so they rely on the effective current user state.
+  * **Tests**
+    - Refreshed the navigation authentication Playwright test for the authenticated blog route (whitespace-only adjustment).
+
 ## 2.25.7
 
 ### Patch Changes
