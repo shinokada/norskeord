@@ -171,13 +171,13 @@
     </button>
 
     {#if !effectiveUser}
-      
+      <a
         href="/plus?checkout=1"
         class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 md:inline-block"
       >
         {m.nav_plus_badge()}
       </a>
-      
+      <a
         href="/auth/login"
         class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 md:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
@@ -227,7 +227,7 @@
       </Dropdown>
     {/if}
     {#if effectiveUser && !isPlus}
-      
+      <a
         href="/plus"
         class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
       >
