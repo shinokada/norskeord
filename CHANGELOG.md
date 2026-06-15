@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.25.5
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Improved error handling and logging for progress save/upsert and undo/delete operations.
+  - **Improvements**
+    - Updated login sync to use server-provided post-login destination logic.
+    - Enhanced mobile navigation placement for login/logout.
+    - Changed link preload behavior from hover to tap.
+    - Removed legacy Norwegian hreflang/locale alternates; added redirects for `/nb/*` and adjusted sitemap alternates.
+  - **Documentation**
+    - Added a full migration guide for converting card progress lookup keys from `norsk` to `vocab_id`, including smoke-test and troubleshooting steps.
+
 ## 2.25.4
 
 ### Patch Changes
