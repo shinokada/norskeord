@@ -171,7 +171,7 @@
         {m.nav_log_in()}
       </a>
     {:else}
-      <Avatar class="acs ml-2.5 hidden md:block" size="xs" />
+      <Avatar class="acs ml-2.5 hidden md:block" size="xs" data-testid="user-avatar" />
       <Dropdown
         bind:isOpen={avatarDropdownOpen}
         simple
