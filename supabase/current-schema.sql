@@ -4,8 +4,7 @@
 CREATE TABLE public.card_progress (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   user_id uuid NOT NULL,
-  vocab_id text NOT NULL,         -- stable key: entry.id ?? entry.norsk (added migration 016)
-  norsk text NOT NULL,          -- legacy key; kept until migration 017 drops it
+  norsk text NOT NULL,
   level text NOT NULL,
   category text NOT NULL,
   due timestamp with time zone NOT NULL DEFAULT now(),
