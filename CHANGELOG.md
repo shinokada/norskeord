@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.26.2
+
+### Patch Changes
+
+- - fix: The initialized flag inside authStore prevents double-fetching — calling init() on a page where user already came from the server doesn't trigger an extra Supabase request. The store just populates itself once and stays valid for all subsequent client-side navigations.
+  * **Bug Fixes**
+    - Fixed an issue where user avatars would only display on certain routes after login. Avatars now appear correctly across all pages immediately after authentication.
+  * **Documentation**
+    - Added troubleshooting guide for authentication state handling on client-side navigation.
+
 ## 2.26.1
 
 ### Patch Changes
