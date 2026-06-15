@@ -164,6 +164,140 @@ The real remaining problem for **both routes** is the cache — even after our f
 
 **After deploying:** even with the fix deployed, Vercel's edge may still serve stale cached responses for up to an hour (`stale-while-revalidate=3600`). You can force a cache purge from the Vercel dashboard → your project → **Settings → Functions → Purge Cache**, or just wait it out.
 
-Q: I completed ai-docs/issues/login.md. However after clicking the email link then going to /guide page still doesn't show Avatar that is the proof of logged in. Can you fix it?
+---
 
-Ans:
+## There are more fixes but I didn't record here.
+
+Q: I deployed. I go through all the pages without logged in. Then I logged in. I found that all /learn/a1, a2, b1,b2, c paths shows avatar. But all other paths do not show unless I refresh the browser. How can I solve this problem?
+
+Ans: The issue is that after login, `window.location.href = destination` does a full reload to `/learn/a1` (or similar), which is an SSR route so `page.data.user` is populated correctly. But when you then navigate client-side to `/blog`, `/guide`, `/resources`, `/` etc., those are prerendered pages and `onMount` runs again — but this time `user` is still `null` from `page.data` so it fetches `supabase.auth.getUser()` and `/api/plan`.
+
+The problem is timing — `onMount` fires on every page navigation for prerendered pages, and the async fetches take a moment. But more importantly, on client-side navigation from an SSR route to a prerendered route, `page.data.user` becomes `null` again because the prerendered page has no server data for `user`.
+
+The fix is to **persist `clientUser` and `clientIsPlus` in a Svelte store** so they survive client-side navigation between pages. Move them out of `Nav.svelte` into a shared store:
+
+**`src/lib/stores/auth.svelte.ts`**:
+
+```ts
+import { supabase } from '$lib/supabase';
+import type { User } from '@supabase/supabase-js';
+
+let clientUser = $state<User | null>(null);
+let clientIsPlus = $state(false);
+let initialized = $state(false);
+
+export const authStore = {
+  get user() {
+    return clientUser;
+  },
+  get isPlus() {
+    return clientIsPlus;
+  },
+  get initialized() {
+    return initialized;
+  },
+
+  async init() {
+    if (initialized) return;
+    const [{ data }, planRes] = await Promise.all([supabase.auth.getUser(), fetch('/api/plan')]);
+    clientUser = data.user ?? null;
+    const planJson = await planRes.json();
+    clientIsPlus = planJson.plan === 'plus';
+    initialized = true;
+  },
+
+  reset() {
+    clientUser = null;
+    clientIsPlus = false;
+    initialized = false;
+  }
+};
+```
+
+Then update `Nav.svelte` `onMount`:
+
+```ts
+import { authStore } from '$lib/stores/auth.svelte';
+
+onMount(async () => {
+  localeStore.init();
+  if (!user) {
+    await authStore.init();
+  }
+});
+
+const effectiveUser = $derived(user ?? authStore.user);
+const effectiveIsPlus = $derived(user ? isPlus : authStore.isPlus);
+```
+
+And in `logout()`:
+
+```ts
+async function logout() {
+  const userId = effectiveUser?.id;
+  if (userId) clearUserProgress();
+  authStore.reset();
+  avatarDropdownOpen = false;
+  await fetch('/auth/logout', { method: 'POST' });
+  window.location.href = '/';
+}
+```
+
+The `initialized` flag is the key — on first visit to a prerendered page it fetches from Supabase, and on subsequent client-side navigations to other prerendered pages `init()` returns immediately because `initialized` is already `true`. The store persists in memory for the lifetime of the browser session.
+
+Q: I'm having issue with login and cache as seen ai-docs/issues/login.md.
+I implemented the last items in the login.md. I tried localhost. I went through all the pages without logged in. Then log in and I found /learn/a1, a2, b1,b2,c and blog shows the avatar but all other pages, home, /guide, /resources do not show the avatar unless I refresh the browser. Can you find causes and fix?
+
+Ans: Good, I can see the full history. Now let me look at the current state of the relevant files to understand what was implemented and what's still causing the issue.Now I can see the issue clearly. Let me check the hooks and the routes that aren't showing the avatar:Now I can see the exact problem. Let me check the auth route to understand the redirect flow:Now I have the full picture. The root cause is clear.
+
+**The problem:** `window.location.href = destination` in `/auth/sync` does a **full browser navigation** (not a SvelteKit client-side navigation). This causes the browser to make a fresh HTTP request to `/learn/a1` (or wherever), which is an SSR route — so `page.data.user` is correctly populated there. Then when you click to `/`, `/guide`, `/resources` etc. those are **prerendered static pages** — SvelteKit handles them as client-side navigations. Since prerendered pages have no server `load` returning `user`, `page.data.user` becomes `null` on client-side navigation to them.
+
+The `authStore` was meant to fix this: `onMount` in Nav calls `authStore.init()` if `!user`. But look at the condition:
+
+```ts
+onMount(async () => {
+  localeStore.init();
+  if (!user) {          // ← `user` is from page.data.user at mount time
+    await authStore.init();
+  }
+});
+```
+
+On `/learn/a1` (SSR), `user` is set from `page.data.user`, so `authStore.init()` is **never called** — `authStore.initialized` stays `false`. When you then navigate client-side to `/` or `/guide`, `onMount` doesn't re-run (it's the same Nav component across navigations). So `authStore.user` is still `null`, and `effectiveUser = user ?? authStore.user` = `null` because `page.data.user` is now `null` for the prerendered page.
+
+The fix: `authStore.init()` should be called once regardless of whether `user` is currently set, so the store is populated and survives client-side navigation to prerendered pages. We need to call it unconditionally (but still only once, which `initialized` guards).Now I'll apply the fix. The `onMount` condition needs to change from `if (!user)` to unconditional — the `initialized` flag in `authStore` already prevents double-fetching:The fix is a one-line change in Nav.svelte's `onMount`. The condition `if (!user)` prevents `authStore.init()` from ever being called when the first page after login is an SSR route (like `/learn/a1`). It should always call `authStore.init()` — the `initialized` flag inside the store prevents double-fetching:The file exists but `str_replace` can't write to mounted filesystem paths directly. Let me copy it to the working directory, make the edit, and write it back:The bash environment can't access the mounted filesystem. I need to use the Filesystem write tool. Let me read the full file and write the corrected version:Done. Here's exactly what was wrong and the one-line fix applied:
+
+**Root cause**
+
+The `authStore` was designed as a fallback for when `page.data.user` is `null` (prerendered pages). But `onMount` only called `authStore.init()` conditionally:
+
+```ts
+if (!user) {
+  await authStore.init();
+}
+```
+
+After login, `window.location.href = destination` does a full browser reload to `/learn/a1` — an SSR route where `page.data.user` is correctly populated. So when the Nav mounts on that page, `user` is truthy and `authStore.init()` is **skipped** — the store stays uninitialized (`initialized = false`, `authStore.user = null`).
+
+When you then click to `/`, `/guide`, or `/resources` (prerendered pages), SvelteKit handles those as **client-side navigations**. `onMount` doesn't re-run (same Nav component persists). Now `page.data.user` is `null` (prerendered, no server load), and `authStore.user` is also `null` (never initialized). So `effectiveUser = user ?? authStore.user` = `null` → "Log in" shows instead of the avatar.
+
+**The fix** — `Nav.svelte` `onMount`:
+
+```ts
+// Before
+onMount(async () => {
+  localeStore.init();
+  if (!user) {         // ← skipped when first page is SSR
+    await authStore.init();
+  }
+});
+
+// After
+onMount(async () => {
+  localeStore.init();
+  // Always init — authStore.init() is a no-op if already initialized
+  await authStore.init();
+});
+```
+
+The `initialized` flag inside `authStore` prevents double-fetching — calling `init()` on a page where `user` already came from the server doesn't trigger an extra Supabase request. The store just populates itself once and stays valid for all subsequent client-side navigations.
