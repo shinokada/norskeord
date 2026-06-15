@@ -219,13 +219,19 @@ async function saveProgressToSupabase(
 ): Promise<Record<string, CardProgress>> {
   const key = vocabKey(entry);
   const updated = { ...progressMap, [key]: progress };
-  try {
-    await supabase
-      .from('card_progress')
-      .upsert({ user_id: userId, ...toRow(entry, progress) }, { onConflict: 'user_id,vocab_id' });
-  } catch {
-    // Silent failure — in-memory map is still correct for this session
+
+  // NOTE: supabase-js does NOT throw on PostgREST errors — it resolves with
+  // { data, error }. A try/catch here only catches network-level exceptions,
+  // so failures (e.g. a missing/mismatched onConflict constraint) were being
+  // silently swallowed. Check `error` explicitly and log it.
+  const { error } = await supabase
+    .from('card_progress')
+    .upsert({ user_id: userId, ...toRow(entry, progress) }, { onConflict: 'user_id,vocab_id' });
+
+  if (error) {
+    console.error('saveProgressToSupabase: upsert failed', error);
   }
+
   return updated;
 }
 
@@ -235,12 +241,13 @@ async function saveProgressToSupabase(
  * page.
  */
 export async function resetProgressInSupabase(userId: string): Promise<void> {
-  try {
-    await supabase.from('card_progress').delete().eq('user_id', userId);
-    await supabase.from('grammar_progress').delete().eq('user_id', userId);
-    await supabase.from('study_days').delete().eq('user_id', userId);
-  } catch {
-    // Silent failure
+  const results = await Promise.all([
+    supabase.from('card_progress').delete().eq('user_id', userId),
+    supabase.from('grammar_progress').delete().eq('user_id', userId),
+    supabase.from('study_days').delete().eq('user_id', userId)
+  ]);
+  for (const { error } of results) {
+    if (error) console.error('resetProgressInSupabase: delete failed', error);
   }
 }
 

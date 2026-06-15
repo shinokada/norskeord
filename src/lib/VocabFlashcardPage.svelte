@@ -404,14 +404,13 @@
       const userId = page.data.user.id;
       if (previousProgress === null) {
         // Card had never been rated — delete the row
-        try {
-          await supabase
-            .from('card_progress')
-            .delete()
-            .eq('user_id', userId)
-            .eq('vocab_id', vocabKey(entry));
-        } catch {
-          /* silent */
+        const { error } = await supabase
+          .from('card_progress')
+          .delete()
+          .eq('user_id', userId)
+          .eq('vocab_id', vocabKey(entry));
+        if (error) {
+          console.error('undo: delete failed', error);
         }
       } else {
         // Re-upsert with the previous state
