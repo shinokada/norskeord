@@ -37,20 +37,28 @@ export async function setNorwegianLocale(page: Page) {
  */
 export async function injectPlusPlan(page: Page) {
   await setNorwegianLocale(page);
-  // Strategy 1: patch the HTML document (covers SSR routes).
   await page.route('**', async (route) => {
     const request = route.request();
     const url = request.url();
+
+    // Strategy 3: patch /api/plan response — needed because Nav.svelte now
+    // fetches plan client-side on prerendered/cached pages where page.data.plan
+    // is not available. Without this, clientIsPlus stays false and the search
+    // button never appears even when the HTML is patched.
+    if (url.includes('/api/plan')) {
+      await route.fulfill({
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ plan: 'plus' })
+      });
+      return;
+    }
 
     // Strategy 2: patch __data.json (covers ssr:false routes like /quiz).
     if (url.includes('__data.json')) {
       const response = await route.fetch();
       try {
         const text = await response.text();
-        // Replace every occurrence of the plan string value in the JSON.
-        // SvelteKit deduplicates data so 'free' may appear as a bare string
-        // value anywhere in the nodes array — a text replace is more robust
-        // than trying to navigate the index-map structure.
         const patched = text.replace(/"free"/g, '"plus"');
         await route.fulfill({
           status: response.status(),
