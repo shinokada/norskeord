@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.26.0
+
+### Minor Changes
+
+- fix: plus button in Nav
+
+  - **New Features**
+    - Improved Plus plan detection for consistent visibility of Plus-exclusive features across page types, ensuring subscribers always see search functionality.
+  - **Tests**
+    - Strengthened end-to-end test coverage with explicit waits for improved reliability when testing Plus user scenarios.
+
 ## 2.25.8
 
 ### Patch Changes
