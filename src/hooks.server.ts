@@ -94,7 +94,6 @@ const originalHandle: Handle = async ({ event, resolve }) => {
   //   /norskproven  — auth-gated
   //   /stats        — auth-required
   //   /my-profile   — auth-required
-  //   /guide, /resources     — these are mostly static but show some auth-sensitive UI in the nav (avatar, Plus badges)
   const CACHE_EXCLUDED = [
     '/api/',
     '/auth/',
