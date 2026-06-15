@@ -68,7 +68,6 @@ export const GET: RequestHandler = async () => {
         ...p,
         alternates: [
           { lang: 'en', path: p.path },
-          { lang: 'nb', path: `/nb${p.path}` },
           { lang: 'x-default', path: p.path }
         ]
       }));
