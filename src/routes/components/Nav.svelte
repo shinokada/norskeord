@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { authStore } from '$lib/stores/auth.svelte';
   import {
     Navbar,
     NavLi,
@@ -39,27 +40,23 @@
   import { localeStore } from '$lib/localeStore.svelte';
   import { clearUserProgress } from '$lib/progress';
   import Search from '$lib/components/Search.svelte';
-  import { supabase } from '$lib/supabase';
-  import type { User } from '@supabase/supabase-js';
 
-  let clientIsPlus = $state(false);
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
   const isAdmin = $derived(page.data.isAdmin as boolean);
   let isDemoOpen = $derived(sidebarUi.isOpen);
   const spanClass = 'flex-1 ms-3 whitespace-nowrap';
   const sidebarActiveClass =
-  'flex items-center p-2 text-base font-medium rounded-lg text-primary-400 bg-primary-500/15 dark:text-primary-400 dark:bg-primary-400/10 transition-colors duration-200';
+    'flex items-center p-2 text-base font-medium rounded-lg text-primary-400 bg-primary-500/15 dark:text-primary-400 dark:bg-primary-400/10 transition-colors duration-200';
   const sidebarNonActiveClass =
-  'flex items-center p-2 text-base font-normal rounded-lg text-slate-300 dark:text-slate-300 hover:text-white hover:bg-white/5 dark:hover:text-white dark:hover:bg-white/5 transition-colors duration-200';
-  // For prerendered pages (e.g. /blog, /blog/[slug]), page.data.user is always
-  // null at build time. We hydrate auth state client-side after mount.
-  let clientUser = $state<User | null>(null);
-  const effectiveUser = $derived(user ?? clientUser);
+    'flex items-center p-2 text-base font-normal rounded-lg text-slate-300 dark:text-slate-300 hover:text-white hover:bg-white/5 dark:hover:text-white dark:hover:bg-white/5 transition-colors duration-200';
+
+  const effectiveUser = $derived(user ?? authStore.user);
 
   async function logout() {
     const userId = effectiveUser?.id;
     if (userId) clearUserProgress();
+    authStore.reset();
     avatarDropdownOpen = false;
     await fetch('/auth/logout', { method: 'POST' });
     window.location.href = '/';
@@ -72,7 +69,7 @@
   let isPlus = $derived(page.data.plan === 'plus');
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
-  const effectiveIsPlus = $derived(user ? isPlus : clientIsPlus);
+  const effectiveIsPlus = $derived(user ? isPlus : authStore.isPlus);
 
   // Language switcher
   async function toggleLocale() {
@@ -93,13 +90,11 @@
 
   onMount(async () => {
     localeStore.init();
-    if (!user) {
-      // Fetch both in parallel
-      const [{ data }, planRes] = await Promise.all([supabase.auth.getUser(), fetch('/api/plan')]);
-      clientUser = data.user ?? null;
-      const planJson = await planRes.json();
-      clientIsPlus = planJson.plan === 'plus';
-    }
+    // Always initialise so authStore is populated for client-side navigation
+    // to prerendered pages (home, /guide, /resources, etc.) where
+    // page.data.user is null.  authStore.init() is a no-op after the first
+    // call (guarded by the `initialized` flag), so this never double-fetches.
+    await authStore.init();
   });
 
   // ── Search modal ───────────────────────────────────────────────────────────
