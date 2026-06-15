@@ -30,12 +30,6 @@
   } from 'flowbite-svelte-icons';
   const sidebarUi = uiHelpers();
   const closeDemoSidebar = sidebarUi.close;
-  let isDemoOpen = $derived(sidebarUi.isOpen);
-  const spanClass = 'flex-1 ms-3 whitespace-nowrap';
-  const sidebarActiveClass =
-    'flex items-center p-2 text-base font-normal text-white bg-primary-600 dark:bg-primary-700 rounded-lg dark:text-white hover:bg-primary-800 dark:hover:bg-primary-800';
-  const sidebarNonActiveClass =
-    'flex items-center p-2 text-base font-normal text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700';
 
   import No from '$lib/No.svelte';
   import { page } from '$app/state';
@@ -48,10 +42,16 @@
   import { supabase } from '$lib/supabase';
   import type { User } from '@supabase/supabase-js';
 
+  let clientIsPlus = $state(false);
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
   const isAdmin = $derived(page.data.isAdmin as boolean);
-
+  let isDemoOpen = $derived(sidebarUi.isOpen);
+  const spanClass = 'flex-1 ms-3 whitespace-nowrap';
+  const sidebarActiveClass =
+    'flex items-center p-2 text-base font-normal text-white bg-primary-600 dark:bg-primary-700 rounded-lg dark:text-white hover:bg-primary-800 dark:hover:bg-primary-800';
+  const sidebarNonActiveClass =
+    'flex items-center p-2 text-base font-normal text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700';
   // For prerendered pages (e.g. /blog, /blog/[slug]), page.data.user is always
   // null at build time. We hydrate auth state client-side after mount.
   let clientUser = $state<User | null>(null);
@@ -66,13 +66,13 @@
   }
 
   let activeUrl = $derived(page.url.pathname);
-
   const activeClass = 'p-2 text-base hover:text-gray-500';
   const nonActiveClass = 'p-2 text-base hover:text-gray-500';
 
   let isPlus = $derived(page.data.plan === 'plus');
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
+  const effectiveIsPlus = $derived(user ? isPlus : clientIsPlus);
 
   // Language switcher
   async function toggleLocale() {
@@ -93,11 +93,12 @@
 
   onMount(async () => {
     localeStore.init();
-    // Only fetch client-side session on prerendered pages where page.data.user
-    // is null. On SSR routes user is already populated from the server.
     if (!user) {
-      const { data } = await supabase.auth.getUser();
+      // Fetch both in parallel
+      const [{ data }, planRes] = await Promise.all([supabase.auth.getUser(), fetch('/api/plan')]);
       clientUser = data.user ?? null;
+      const planJson = await planRes.json();
+      clientIsPlus = planJson.plan === 'plus';
     }
   });
 
@@ -119,7 +120,7 @@
 
 <Search
   bind:open={searchOpen}
-  {isPlus}
+  isPlus={effectiveIsPlus}
   onclose={() => {
     searchOpen = false;
   }}
@@ -140,7 +141,7 @@
 
   <div class="flex items-center gap-2 md:order-2">
     <!-- Search button (Plus only) -->
-    {#if isPlus}
+    {#if effectiveIsPlus}
       <button
         type="button"
         aria-label={m.search_aria_label()}
@@ -226,7 +227,7 @@
         </DropdownGroup>
       </Dropdown>
     {/if}
-    {#if effectiveUser && !isPlus}
+    {#if effectiveUser && !effectiveIsPlus}
       <a
         href="/plus"
         class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
