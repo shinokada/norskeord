@@ -1,5 +1,12 @@
 # norske-flashcard
 
+## 2.26.1
+
+### Patch Changes
+
+- - **Style**
+    - Updated mobile navigation sidebar styling with improved visual distinction between active and inactive menu items.
+
 ## 2.26.0
 
 ### Minor Changes
