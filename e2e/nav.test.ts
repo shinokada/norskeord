@@ -9,7 +9,7 @@ test.describe('nav auth state', () => {
     await expect(page.getByRole('link', { name: /log in/i })).not.toBeVisible();
   });
 
-  test('nav renders avatar on /blog when user is authenticated',  async ({ page }) => {
+  test('nav renders avatar on /blog when user is authenticated', async ({ page }) => {
     await injectLoggedInUser(page);
     await page.goto('/blog');
     await expect(page.locator('[data-testid="user-avatar"]')).toBeVisible();
