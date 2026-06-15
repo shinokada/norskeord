@@ -159,3 +159,35 @@ The core problem is the same one you solved for **flowbite-svelte**: dynamic rou
 - You'd need to export `entries()` covering all level+category combinations (not hard, but you'd need to enumerate them).
 
 **My recommendation:** stick with what you've just deployed (Option B) and see how much it improves the numbers in Vercel Observability over the next day. If the cache hit rate is good (>80%), you probably don't need Option A. Option A is only worth the complexity if you need the absolute zero-compute guarantee — e.g. if traffic scales to a point where even cache misses are expensive.
+
+Q: As seen the pasted image, Vecel's edge requests is very high. Can you find the causes and fix it? The `const CACHE_EXCLUDED` in sr/routes/hooks.server.ts is added for login reasons. When you click a email log-in link, without these, it doesn't show profile avatar. But since it exclude most of the pages, I'm not sure it's worth to have one.
+
+Ans: Now I have a clear picture. Let me make sure I'm not missing other `/nb`-related references before editing.This addressed the most likely root cause. There's also a useful follow-up fix: Google/Bing have likely already indexed a backlog of these `/nb/...` URLs from the broken sitemap/hreflang, and will keep re-crawling them for a while even after the sitemap is fixed. Adding a cheap, cacheable redirect for `/nb/*` turns those into 301s (servable from cache) instead of fresh 404s on every crawl hit.Found it — and made the fixes. Here's what's going on:
+
+**The big one: a broken `/nb/` hreflang setup, almost certainly the source of the `/![-]/catchall` traffic (8.2K reqs, 0% cached) and the sustained 4XX block / firewall spikes**
+
+Your paraglide config has `locales = ["en", "nb"]`, but `strategy = ["cookie", "globalVariable", "baseLocale"]` — i.e. locale switching is done via the `PARAGLIDE_LOCALE` cookie (the language toggle in `Nav.svelte`), not via URL prefixes. Because `"url"` isn't in the strategy, the middleware never de-localizes or routes `/nb/*` paths — and there's no `/nb/...` route anywhere in `src/routes`. So any `/nb/...` URL is a guaranteed 404.
+
+Yet three places in the codebase were generating `/nb/...` URLs:
+
+1. `+layout.svelte` rendered `<link rel="alternate" hreflang="nb" href=".../nb/...">` on **every page**.
+2. `+layout.svelte` also had a hidden `<div style="display:none">` with literal `<a href="/nb/...">` links on every page.
+3. `sitemap.xml/+server.ts` declared `{ lang: 'nb', path: '/nb${p.path}' }` as an hreflang alternate for **every URL in the sitemap** — all `[level]/[category]` combos, blog posts, grammar topics, etc.
+
+Google/Bing actively crawl and verify hreflang alternates from sitemaps, so this was telling crawlers "here's a Norwegian version of every page at `/nb/...`" — and every single one of those 404s. That's a perfect match for the catchall route's 8.2K uncached requests, the ~6-hour solid block of 4XX in your Edge Requests chart, and likely the two Firewall Action spikes (a crawler hammering a large set of perpetually-404ing URLs is exactly the pattern bot-mitigation rules react to).
+
+**Fixes applied:**
+
+- Removed the hreflang `<link>` block and the hidden locale-link `<div>` from `src/routes/+layout.svelte` (locale switching stays cookie-based, no URL variant exists, so these were pure dead weight).
+- Removed the `nb` alternate from `src/routes/sitemap.xml/+server.ts`.
+- Added a cheap early-return in `hooks.server.ts`: any `/nb/*` request now gets a 301 redirect to the de-localized path with a long `s-maxage`, _before_ the Supabase client is even created. Google has already indexed a backlog of these `/nb/...` URLs from the old sitemap and will keep hitting them for a while — now those hits get a cacheable 301 instead of invoking the function and rendering a fresh 404 each time. This should fade out as Google re-crawls and drops them.
+
+**Your `CACHE_EXCLUDED` question — direct answer: keep it, it's not your problem here.**
+
+Notice `/[level]/[category]` (your single biggest route at 17K requests) isn't even in that exclusion list — yet it's still 0% cached. That's because caching only kicks in when `!hasSession`, and the flashcard pages are your core logged-in-user feature, so the vast majority of that traffic carries the Supabase auth cookie and skips the cache branch entirely regardless of `CACHE_EXCLUDED`. So even if you deleted the array completely, your biggest route wouldn't change.
+
+`CACHE_EXCLUDED` only affects the small auxiliary routes (`/learn/[level]` at 78 reqs, `/grammar`, `/quiz`, etc.) — a rounding error against 51K total. It's a one-line `startsWith` check, costs nothing, and correctly protects routes where the anonymous SSR HTML genuinely differs based on auth/plan. I'd leave it as-is. If you ever want to shrink it further so more marketing-adjacent pages (`/guide`, `/resources`) can be edge-cached for anonymous visitors too, the durable way is to move the avatar/Plus-badge nav state to hydrate client-side from the Supabase browser session (which reads cookies/localStorage on mount) rather than baking it into SSR HTML — but that's a separate, optional refactor, not something needed to fix the current spike.
+
+**One more small win:** changed `data-sveltekit-preload-data` from `"hover"` to `"tap"` in `app.html`. With `"hover"`, every hover over the prev/next category links on the flashcard page (and any nav link) fires a speculative data fetch. `"tap"` only preloads on press/touchstart, much closer to actual intent, which should shave some real-user requests off `/[level]/[category]` too.
+
+After deploying, I'd watch the Edge Requests graph for the next day — the 4XX block and the `/![-]/catchall` route should drop dramatically once the `/nb/*` redirects are live and crawlers stop hitting fresh 404s.

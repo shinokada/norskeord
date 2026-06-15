@@ -163,3 +163,7 @@ The real remaining problem for **both routes** is the cache — even after our f
 **4. `hooks.server.ts`** — the exclusion list was too narrow (`/api/` and `/auth/` only). Every other route — `/learn/`, `/blog`, `/grammar/`, `/quiz`, `/norskproven`, `/stats`, `/my-profile` — was being edge-cached for anonymous users, so logged-in users landing on those pages would see the stale "Log in" UI. Fixed with a proper exclusion list.
 
 **After deploying:** even with the fix deployed, Vercel's edge may still serve stale cached responses for up to an hour (`stale-while-revalidate=3600`). You can force a cache purge from the Vercel dashboard → your project → **Settings → Functions → Purge Cache**, or just wait it out.
+
+Q: I completed ai-docs/issues/login.md. However after clicking the email link then going to /guide page still doesn't show Avatar that is the proof of logged in. Can you fix it?
+
+Ans:

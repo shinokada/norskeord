@@ -291,14 +291,17 @@
             />
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Log out" onclick={logout} class="cursor-pointer">
+      {:else}
+        <SidebarItem label="Login" href="/auth/login">
           {#snippet icon()}
-            <ArrowLeftToBracketOutline
+            <UserSolid
               class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
             />
           {/snippet}
         </SidebarItem>
       {/if}
+    </SidebarGroup>
+    <SidebarGroup border>
       <SidebarItem label="Nivå A1" href="/learn/a1">
         {#snippet icon()}
           <ArrowRightOutline
@@ -334,15 +337,8 @@
           />
         {/snippet}
       </SidebarItem>
-      {#if !user}
-        <SidebarItem label="Login" href="/auth/login">
-          {#snippet icon()}
-            <UserSolid
-              class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-            />
-          {/snippet}
-        </SidebarItem>
-      {/if}
+    </SidebarGroup>
+    <SidebarGroup border>
       <SidebarItem label="Plus" {spanClass} href="/plus">
         {#snippet icon()}
           <PlusOutline
@@ -372,5 +368,16 @@
         {/snippet}
       </SidebarItem>
     </SidebarGroup>
+    {#if user}
+      <SidebarGroup border>
+        <SidebarItem label="Log out" onclick={logout} class="cursor-pointer">
+          {#snippet icon()}
+            <ArrowLeftToBracketOutline
+              class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            />
+          {/snippet}
+        </SidebarItem>
+      </SidebarGroup>
+    {/if}
   </Sidebar>
 </div>
