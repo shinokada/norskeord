@@ -10,7 +10,7 @@ const DEFAULT_DESC =
 const KEYWORDS =
   'Norwegian vocabulary, learn Norwegian, flashcards, Norskprøven, CEFR, A1 A2 B1 B2 C, spaced repetition, Norwegian words';
 
-export const load = async ({ url, locals }) => {
+export const load = async ({ url, locals, request }) => {
   const title = metaTitle(url.pathname, __NAME__);
   const description = metaDescription(url.pathname, DEFAULT_DESC);
   const image = `${SITE_URL}/og/default.png`;
@@ -46,31 +46,44 @@ export const load = async ({ url, locals }) => {
   // Fetch display_name and target_level for the nav and quiz defaults.
   // Single-row select — minimal overhead on every request.
   let displayName: string | null = null;
-  let targetLevel: string | null = null;
+  let currentLevel: string | null = null;
   let sessionLimit: number | null = null;
   let showExample: boolean = false;
+  let onboardingDone: boolean = false;
+  let onboardingSnoozedAt: string | null = null;
+
   if (locals.user) {
     const { data } = await locals.supabase
       .from('profiles')
-      .select('display_name, target_level, session_limit, show_example')
+      .select(
+        'display_name, current_level, session_limit, show_example, onboarding_done, onboarding_snoozed_at'
+      )
       .eq('id', locals.user.id)
       .maybeSingle();
     displayName = data?.display_name ?? null;
-    targetLevel = data?.target_level ?? null;
+    currentLevel = data?.current_level ?? null;
     sessionLimit = data?.session_limit ?? null;
     showExample = data?.show_example ?? false;
+    onboardingDone = data?.onboarding_done ?? false;
+    onboardingSnoozedAt = data?.onboarding_snoozed_at ?? null;
   }
+
+  // Read IP-derived country from Vercel header (free, no API call; null in dev).
+  const ipCountry = request.headers.get('x-vercel-ip-country') ?? null;
 
   return {
     layoutMetaTags,
     ANALYTICS_ID_LANGUAGE_APP,
-    // Auth state — available as $page.data.user and $page.data.plan in all routes
     user: locals.user,
     plan: locals.plan,
     displayName,
-    targetLevel,
+    currentLevel,
     sessionLimit,
     showExample,
-    isAdmin: dev && locals.user?.email === ADMIN_EMAIL
+    isAdmin: dev && locals.user?.email === ADMIN_EMAIL,
+    // Onboarding
+    onboardingDone,
+    onboardingSnoozedAt,
+    ipCountry
   };
 };

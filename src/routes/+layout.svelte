@@ -9,6 +9,7 @@
   import Nav from './components/Nav.svelte';
   import Footer from './components/Footer.svelte';
   import InAppBrowserBanner from './components/InAppBrowserBanner.svelte';
+  import OnboardingSlides from '$lib/components/OnboardingSlides.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
 
   let { children, data } = $props();
@@ -21,8 +22,12 @@
 
   const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
 
+  // Onboarding display logic (derived so they react to invalidation after PATCH)
+  const showOnboardingSlides = $derived(
+    !!data.user && !data.onboardingDone && data.onboardingSnoozedAt === null
+  );
+
   // Persist last-visited page on in-app navigations only.
-  // Using afterNavigate (not $effect) so cold-start at / never overwrites the stored path.
   afterNavigate(({ from, to }) => {
     if (from !== null && to?.url.pathname && validFlashcardPathPattern.test(to.url.pathname)) {
       localStorage.setItem('last-flashcard-path', to.url.pathname);
@@ -30,8 +35,6 @@
   });
 
   // Prevent horizontal swipe-to-pan on Android PWA.
-  // CSS overflow-x:hidden is ignored by the Android WebView in standalone mode,
-  // so we block touchmove events whose horizontal component exceeds the vertical one.
   onMount(() => {
     let startX = 0;
     let startY = 0;
@@ -44,10 +47,7 @@
     function onTouchMove(e: TouchEvent) {
       const dx = Math.abs(e.touches[0].clientX - startX);
       const dy = Math.abs(e.touches[0].clientY - startY);
-
-      if (dx > dy) {
-        e.preventDefault();
-      }
+      if (dx > dy) e.preventDefault();
     }
 
     document.addEventListener('touchstart', onTouchStart, { passive: true });
@@ -64,6 +64,10 @@
 <MetaTags {...metaTags} />
 
 {#key localeStore.current}
+  {#if showOnboardingSlides}
+    <OnboardingSlides ipCountry={data.ipCountry} />
+  {/if}
+
   <Nav />
 
   <section class="border-b border-gray-300 pb-8 dark:border-gray-600">

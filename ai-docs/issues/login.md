@@ -257,7 +257,8 @@ The `authStore` was meant to fix this: `onMount` in Nav calls `authStore.init()`
 ```ts
 onMount(async () => {
   localeStore.init();
-  if (!user) {          // ← `user` is from page.data.user at mount time
+  if (!user) {
+    // ← `user` is from page.data.user at mount time
     await authStore.init();
   }
 });
@@ -287,7 +288,8 @@ When you then click to `/`, `/guide`, or `/resources` (prerendered pages), Svelt
 // Before
 onMount(async () => {
   localeStore.init();
-  if (!user) {         // ← skipped when first page is SSR
+  if (!user) {
+    // ← skipped when first page is SSR
     await authStore.init();
   }
 });

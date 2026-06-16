@@ -5,7 +5,10 @@
   import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages.js';
 
-  let { profile }: { profile: Profile | null } = $props();
+  let {
+    profile,
+    missingFields: _missingFields = []
+  }: { profile: Profile | null; missingFields: string[] } = $props();
 
   let saving = $state(false);
   let saved = $state(false);
@@ -32,7 +35,7 @@
   const LS_PITCH = 'voice-settings-pitch';
 
   // Derive defaults from the profile prop so they stay reactive if the prop changes.
-  let targetLevel = $derived(profile?.target_level ?? 'B1');
+  let currentLevel = $derived(profile?.current_level ?? 'B1');
   // uiLanguage uses writable $derived so the radio can be changed freely
   // before saving while staying in sync with the nav button toggle.
   // Written back to the store on save via applyToLocalStorage().
@@ -73,7 +76,7 @@
       { value: 'no_en', label: m.profile_prefs_card_direction_no_en() },
       { value: 'en_no', label: m.profile_prefs_card_direction_en_no() }
     ];
-    if (cardType === 'word' && B1_PLUS_LEVELS.has(targetLevel)) {
+    if (cardType === 'word' && B1_PLUS_LEVELS.has(currentLevel)) {
       return [...base, { value: 'def_no', label: m.profile_prefs_card_direction_def_no() }];
     }
     return base;
@@ -81,13 +84,13 @@
 
   // If def_no is selected but the user switches to phrase or A1/A2, fall back to no_en
   let effectiveCardDirection = $derived(
-    cardDirection === 'def_no' && (cardType !== 'word' || !B1_PLUS_LEVELS.has(targetLevel))
+    cardDirection === 'def_no' && (cardType !== 'word' || !B1_PLUS_LEVELS.has(currentLevel))
       ? 'no_en'
       : cardDirection
   );
 
   // Whether to show the definition-mode explanatory note
-  let showDefNote = $derived(cardType === 'word' && B1_PLUS_LEVELS.has(targetLevel));
+  let showDefNote = $derived(cardType === 'word' && B1_PLUS_LEVELS.has(currentLevel));
 
   function applyToLocalStorage() {
     const modeMap: Record<string, string> = { no_en: 'noreng', en_no: 'engnor', def_no: 'defnor' };
@@ -136,15 +139,15 @@
     <!-- Target level -->
     <div>
       <label
-        for="target_level"
+        for="current_level"
         class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
       >
         {m.profile_prefs_target_level()}
       </label>
       <select
-        id="target_level"
-        name="target_level"
-        bind:value={targetLevel}
+        id="current_level"
+        name="current_level"
+        bind:value={currentLevel}
         class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100"
       >
         {#each levels as level (level)}
