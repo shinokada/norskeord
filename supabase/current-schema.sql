@@ -1,4 +1,4 @@
---- WARNING: This schema is for context only and is not meant to be run.
+-- WARNING: This schema is for context only and is not meant to be run.
 -- Table order and constraints may not be valid for execution.
 
 CREATE TABLE public.card_progress (
@@ -141,5 +141,6 @@ CREATE TABLE public.email_log (
   CONSTRAINT email_log_pkey PRIMARY KEY (id),
   CONSTRAINT email_log_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
+
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
 -- Manually maintained. See ./current-functions.sql for Functions
