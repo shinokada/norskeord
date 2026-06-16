@@ -135,13 +135,14 @@ Once `onboarding_snoozed_at` is set, the slide never re-appears. Instead:
 - As more UI languages are added to Paraglide in the future, the language selector on slide 1 will automatically reflect them — no changes to the onboarding component needed.
 
 ## Issues
+
 My thoughts on the reply below:
+
 1. target_level is still confusing and should use a better naming.
-2. FYI: The code is there but no longer email subscribers will be used. 
+2. FYI: The code is there but no longer email subscribers will be used.
 3. I don't need to separate but I don't want naming mismatch for future development.
 4. I think the current slide 4 is good as it is. I just need to update the variable name and update /my-profile page Preferences title: Target level and subtitle: Used for pace forecasting on your progress page.
 5. Since this is involve supabase DB, I need sql to update db.
-
 
 Q: slide 4 of 6 has "What's your Norwegian level?". And I remember it is used for target_level. But the naming is misleading. Before implementing onboarding slides, there is a profile where you can select user's target level. That's why it used the target_level for slide as well. Now I question:
 
@@ -149,13 +150,13 @@ Q: slide 4 of 6 has "What's your Norwegian level?". And I remember it is used fo
 2. What does this target_level is used for?
 3. Should I separate target_level and current_level? If so, why?
 4. etc.etc.
-What are your thoughts about this?
+   What are your thoughts about this?
 
 Ans: Good question to pause on. Let me look at how `target_level` is actually used before giving you a concrete recommendation.Now let me check where `target_level` is actually consumed in the app logic:Now let me check one more place — how `target_level` feeds into the stats page and email subscribers:Good, now I have a complete picture. Here's my honest assessment:
 
 **1. Is the naming appropriate?**
 
-No, not for the onboarding context. `target_level` was named from the profile perspective — it means "the level you're *aiming* for" — but onboarding slide 4 asks "What's your Norwegian level?", which users naturally interpret as *where they are now*. So the data being collected and the field it's stored in are conceptually mismatched from day one.
+No, not for the onboarding context. `target_level` was named from the profile perspective — it means "the level you're _aiming_ for" — but onboarding slide 4 asks "What's your Norwegian level?", which users naturally interpret as _where they are now_. So the data being collected and the field it's stored in are conceptually mismatched from day one.
 
 **2. What is `target_level` actually used for?**
 
@@ -165,7 +166,7 @@ Looking at the code, it does three things:
 - **Email subscribers**: when you opt in to lesson emails, `toggleEmail` writes `profile.target_level` as the subscriber's `level` to `email_subscribers`. This is the most concrete usage.
 - **Onboarding completion**: slide 7 uses `targetLevel` to generate the "Start at B1 →" CTA link. This is the most user-visible use.
 
-So in practice `target_level` is used more as a *starting point / self-reported current level* than a genuine aspirational target — which is exactly the naming mismatch.
+So in practice `target_level` is used more as a _starting point / self-reported current level_ than a genuine aspirational target — which is exactly the naming mismatch.
 
 **3. Should you separate `target_level` and `current_level`?**
 
@@ -175,7 +176,7 @@ Probably yes, but the case for it depends on what you actually want to do with t
 
 **Argument against separating (yet):** The only real downstream consumer of the field today is email subscriber level, and for that purpose "level I said I'm at" and "level I want to reach" are nearly interchangeable — you'd want to send B1 lesson emails either way. Adding a second field adds DB migration cost, adds a column to the profile type, adds another onboarding slide question or profile preference, and doubles the chance of the two fields being inconsistent (user updates one, forgets the other).
 
-**My recommendation:** Rename the *concept* without adding a field yet. The pragmatic middle path is:
+**My recommendation:** Rename the _concept_ without adding a field yet. The pragmatic middle path is:
 
 - Rename the onboarding slide 4 question to **"What's your current Norwegian level?"** and update the message key accordingly. This makes the intent honest — you're collecting self-reported current level, not aspiration.
 - Keep `target_level` as the DB column name for now (a rename migration is low-value churn).
