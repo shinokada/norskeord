@@ -1,5 +1,60 @@
 # Account Info Onboarding
 
+## Note
+
+After the following implementations, I had the following conversations:
+
+```
+Let me look at the current codebase to understand what needs to change.Let me search for all usages of `target_level` across the codebase.Now let me grep for all `target_level` usages in src files and messages:The bash tool can't reach the Mac filesystem — only the Filesystem MCP tools can. Let me use those directly.Now let me check the key files for `target_level` usage:Now let me check the onboarding slides and the current schema:Now I have a complete picture. Let me also check the `my-profile/+page.server.ts` for the `updatePreferences` action handling `target_level`:Now I have everything I need. Here's the full picture of all changes required:
+
+**Summary of what changes:**
+
+1. **`messages/en.json`** — update 2 keys + 1 in `guide_faq_prefs_a`
+2. **`messages/nb.json`** — same 2 keys + 1 reference
+3. **`supabase/` migration** — rename column `target_level` → `current_level` in `profiles` table
+4. **`src/lib/server/profile.ts`** — rename field in `Profile` interface and `ProfileUpdate`
+5. **`src/routes/api/profile/onboarding/+server.ts`** — rename `target_level` in body parsing
+6. **`src/routes/my-profile/+page.server.ts`** — rename in `updatePreferences` and `toggleEmail` actions
+7. **`src/routes/my-profile/PreferencesSection.svelte`** — rename `targetLevel` variable, form field name
+8. **`src/lib/components/OnboardingSlides.svelte`** — rename `targetLevel` variable and PATCH payload key
+
+Let's go through them one by one:Now update the TypeScript types:Now update the onboarding API endpoint:Now update `my-profile/+page.server.ts` — two spots (`updatePreferences` and `toggleEmail`):Now update `PreferencesSection.svelte` — the form field name and the derived variable:Now update `OnboardingSlides.svelte` — the variable name and PATCH payload key:There's one remaining issue in `OnboardingSlides.svelte` — the class string still references `targetLevel`. Let me fix that:Now the SQL migration. Let me write it:Now update `current-schema.sql` to reflect the rename (it's the reference copy):All done. Here's a summary of every change made:
+
+**Files changed (8) + 1 created:**
+
+**Messages (copy only — labels shown to users):**
+- `messages/en.json` — "Target level" → "Current level", hint updated to include "Your self-reported Norwegian level.", `guide_faq_prefs_a` updated
+- `messages/nb.json` — "Målnivå" → "Nåværende nivå", same hint and FAQ updates in Norwegian
+
+**TypeScript / SvelteKit:**
+- `src/lib/server/profile.ts` — `target_level` → `current_level` in `Profile` interface and `ProfileUpdate`
+- `src/routes/api/profile/onboarding/+server.ts` — body key `target_level` → `current_level`
+- `src/routes/my-profile/+page.server.ts` — `target_level` → `current_level` in `updatePreferences` and `toggleEmail`
+- `src/routes/my-profile/PreferencesSection.svelte` — `targetLevel` → `currentLevel`, form field `id`/`name` updated
+- `src/lib/components/OnboardingSlides.svelte` — `targetLevel` → `currentLevel` throughout (state, canAdvance, patch payload, template bindings)
+
+**Database:**
+- `supabase/migrations/019_rename_target_level_to_current_level.sql` — **created** with `ALTER TABLE profiles RENAME COLUMN target_level TO current_level`
+- `supabase/current-schema.sql` — reference copy updated
+
+**To deploy:** run the migration in your Supabase dashboard (SQL Editor) or via `supabase db push`. The rename is a single-statement migration with no data loss risk — Postgres renames the column atomically.
+```
+
+Then:
+
+```
+Yes, fix both. Let me do it:Also worth checking — the nudge message key `onboarding_nudge_missing_level` is referenced somewhere when `missing` contains the level field name. Let me verify the nudge display logic handles the rename correctly:One more — the template still checks `missingFields.includes('target_level')`. Fix that too:Also need to check `+page.svelte` for the same template pattern:`+page.svelte` only pushes to the `missing` array — it doesn't do any `includes('target_level')` checks in the template, so it's clean. All the fixes are done now. The complete set of files touched for `target_level` → `current_level` is now fully consistent.
+```
+
+Then:
+
+```
+All three tests updated. The changes are straightforward — `target_level` → `current_level` in both the request body and the payload assertions.
+```
+
+Then:
+Also fixed slide bugs.
+
 ## Motivation
 
 Collecting user profile information will help determine which language to add next to the app, and will allow for more personalised learning experiences in the future.
