@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { invalidateAll, goto } from '$app/navigation';
+  import { invalidateAll } from '$app/navigation';
   import { untrack } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
@@ -280,11 +280,11 @@
     if (!error) await invalidateAll();
   }
 
-  // Dismiss the slide 7 completion screen — close instantly via local state,
-  // then navigate if a destination is provided.
-  async function dismissCompletion(href?: string) {
+  // Dismiss the slide 7 completion screen — close instantly via local state.
+  // Navigation (if any) is handled directly in onclick handlers to satisfy
+  // svelte/no-navigation-without-resolve.
+  function dismissCompletion() {
     open = false;
-    if (href) goto(href);
   }
 
   // --- Locale switching (slide 1) ---
@@ -303,309 +303,315 @@
 </script>
 
 {#if open}
-<!-- Full-screen overlay -->
-<div
-  class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
-  role="dialog"
-  aria-modal="true"
-  aria-label={m.onboarding_aria_label()}
->
+  <!-- Full-screen overlay -->
   <div
-    class="relative mx-4 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white px-8 py-10 shadow-2xl dark:bg-gray-900"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+    role="dialog"
+    aria-modal="true"
+    aria-label={m.onboarding_aria_label()}
   >
-    <!-- Close / snooze button -->
-    <button
-      type="button"
-      onclick={current === 7 ? dismissCompletion : snooze}
-      aria-label={current === 7 ? m.onboarding_close_aria_done() : m.onboarding_close_aria()}
-      class="absolute right-4 top-4 rounded-full p-1.5 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+    <div
+      class="relative mx-4 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white px-8 py-10 shadow-2xl dark:bg-gray-900"
     >
-      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M6 18L18 6M6 6l12 12"
-        />
-      </svg>
-    </button>
+      <!-- Close / snooze button -->
+      <button
+        type="button"
+        onclick={current === 7 ? dismissCompletion : snooze}
+        aria-label={current === 7 ? m.onboarding_close_aria_done() : m.onboarding_close_aria()}
+        class="absolute right-4 top-4 rounded-full p-1.5 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+      >
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
 
-    <!-- Progress indicator (slides 1–6 only — slide 7 is the completion screen) -->
-    {#if current <= TOTAL}
-      <div class="mb-6 mt-10 flex items-center gap-1.5">
-        {#each Array(TOTAL) as _, i (i)}
-          <div
-            class="h-1.5 flex-1 rounded-full transition-colors duration-300 {i + 1 <= current
-              ? 'bg-indigo-600'
-              : 'bg-gray-200 dark:bg-gray-700'}"
-          ></div>
-        {/each}
-      </div>
-      <p class="mb-4 text-xs text-gray-400 dark:text-gray-500">
-        {m.onboarding_step({ current, total: TOTAL })}
-      </p>
-    {/if}
-
-    <!-- ── Slide 1: UI language + display name ── -->
-    {#if current === 1}
-      <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-        {m.onboarding_s1_heading()}
-      </h2>
-      <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s1_sub()}</p>
-
-      <div class="mb-5">
-        <!-- <p> instead of <label>: labels a group of buttons, not a single control -->
-        <p class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">
-          {m.onboarding_s1_lang_label()}
-        </p>
-        <div class="flex gap-2" role="group" aria-label={m.onboarding_s1_lang_label()}>
-          {#each [{ code: 'en', flag: '🇺🇸', label: 'English' }, { code: 'nb', flag: '🇳🇴', label: 'Norsk' }] as lang (lang.code)}
-            <button
-              type="button"
-              onclick={() => switchLocale(lang.code)}
-              aria-pressed={localeStore.current === lang.code}
-              class="flex-1 rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-colors {localeStore.current ===
-              lang.code
-                ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
-                : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
-            >
-              {lang.flag}
-              {lang.label}
-            </button>
+      <!-- Progress indicator (slides 1–6 only — slide 7 is the completion screen) -->
+      {#if current <= TOTAL}
+        <div class="mb-6 mt-10 flex items-center gap-1.5">
+          {#each Array(TOTAL) as _, i (i)}
+            <div
+              class="h-1.5 flex-1 rounded-full transition-colors duration-300 {i + 1 <= current
+                ? 'bg-indigo-600'
+                : 'bg-gray-200 dark:bg-gray-700'}"
+            ></div>
           {/each}
         </div>
-      </div>
+        <p class="mb-4 text-xs text-gray-400 dark:text-gray-500">
+          {m.onboarding_step({ current, total: TOTAL })}
+        </p>
+      {/if}
 
-      <div>
-        <label
-          for="onb-name"
-          class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300"
-        >
-          {m.onboarding_s1_name_label()}
-        </label>
-        <input
-          id="onb-name"
-          type="text"
-          maxlength="40"
-          placeholder={m.onboarding_s1_name_placeholder()}
-          bind:value={displayName}
-          class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-          onkeydown={(e) => {
-            if (e.key === 'Enter') next();
-          }}
-        />
-      </div>
+      <!-- ── Slide 1: UI language + display name ── -->
+      {#if current === 1}
+        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+          {m.onboarding_s1_heading()}
+        </h2>
+        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s1_sub()}</p>
 
-      <!-- ── Slide 2: Native language ── -->
-    {:else if current === 2}
-      <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-        {m.onboarding_s2_heading()}
-      </h2>
-      <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s2_sub()}</p>
-      <label for="onb-native-lang" class="sr-only">{m.onboarding_s2_heading()}</label>
-      <select
-        id="onb-native-lang"
-        bind:value={nativeLanguage}
-        class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-      >
-        <option value="">{m.onboarding_select_placeholder()}</option>
-        {#each LANGUAGES as lang (lang.code)}
-          <option value={lang.code}>{lang.label}</option>
-        {/each}
-        <option value={OTHER_CODE}>Other / Annet</option>
-      </select>
+        <div class="mb-5">
+          <!-- <p> instead of <label>: labels a group of buttons, not a single control -->
+          <p class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">
+            {m.onboarding_s1_lang_label()}
+          </p>
+          <div class="flex gap-2" role="group" aria-label={m.onboarding_s1_lang_label()}>
+            {#each [{ code: 'en', flag: '🇺🇸', label: 'English' }, { code: 'nb', flag: '🇳🇴', label: 'Norsk' }] as lang (lang.code)}
+              <button
+                type="button"
+                onclick={() => switchLocale(lang.code)}
+                aria-pressed={localeStore.current === lang.code}
+                class="flex-1 rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-colors {localeStore.current ===
+                lang.code
+                  ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
+                  : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
+              >
+                {lang.flag}
+                {lang.label}
+              </button>
+            {/each}
+          </div>
+        </div>
 
-      {#if nativeLanguage === OTHER_CODE}
-        <div class="mt-3">
+        <div>
           <label
-            for="onb-native-lang-other"
+            for="onb-name"
             class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
-            Please specify / Spesifiser
+            {m.onboarding_s1_name_label()}
           </label>
           <input
-            id="onb-native-lang-other"
+            id="onb-name"
             type="text"
-            maxlength="60"
-            placeholder="e.g. Tibetan, Wolof…"
-            bind:value={nativeLanguageOther}
+            maxlength="40"
+            placeholder={m.onboarding_s1_name_placeholder()}
+            bind:value={displayName}
             class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
             onkeydown={(e) => {
               if (e.key === 'Enter') next();
             }}
           />
         </div>
-      {/if}
 
-      <!-- ── Slide 3: Other languages ── -->
-    {:else if current === 3}
-      <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-        {m.onboarding_s3_heading()}
-      </h2>
-      <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s3_sub()}</p>
-      <div class="flex max-h-60 flex-wrap gap-2 overflow-y-auto">
-        {#each otherLangOptions as lang (lang.code)}
-          <button
-            type="button"
-            onclick={() => toggleOtherLang(lang.code)}
-            aria-pressed={otherLanguages.includes(lang.code)}
-            class="rounded-full border px-3 py-1 text-xs font-medium transition-colors {otherLanguages.includes(
-              lang.code
-            )
-              ? 'border-indigo-600 bg-indigo-600 text-white'
-              : 'border-gray-300 text-gray-600 hover:border-indigo-400 dark:border-gray-600 dark:text-gray-400'}"
-          >
-            {lang.label}
-          </button>
-        {/each}
-      </div>
+        <!-- ── Slide 2: Native language ── -->
+      {:else if current === 2}
+        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+          {m.onboarding_s2_heading()}
+        </h2>
+        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s2_sub()}</p>
+        <label for="onb-native-lang" class="sr-only">{m.onboarding_s2_heading()}</label>
+        <select
+          id="onb-native-lang"
+          bind:value={nativeLanguage}
+          class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+        >
+          <option value="">{m.onboarding_select_placeholder()}</option>
+          {#each LANGUAGES as lang (lang.code)}
+            <option value={lang.code}>{lang.label}</option>
+          {/each}
+          <option value={OTHER_CODE}>Other / Annet</option>
+        </select>
 
-      <!-- ── Slide 4: Norwegian level ── -->
-    {:else if current === 4}
-      <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-        {m.onboarding_s4_heading()}
-      </h2>
-      <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s4_sub()}</p>
-      <div class="flex flex-col gap-2">
-        {#each LEVELS as level (level)}
+        {#if nativeLanguage === OTHER_CODE}
+          <div class="mt-3">
+            <label
+              for="onb-native-lang-other"
+              class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Please specify / Spesifiser
+            </label>
+            <input
+              id="onb-native-lang-other"
+              type="text"
+              maxlength="60"
+              placeholder="e.g. Tibetan, Wolof…"
+              bind:value={nativeLanguageOther}
+              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+              onkeydown={(e) => {
+                if (e.key === 'Enter') next();
+              }}
+            />
+          </div>
+        {/if}
+
+        <!-- ── Slide 3: Other languages ── -->
+      {:else if current === 3}
+        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+          {m.onboarding_s3_heading()}
+        </h2>
+        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s3_sub()}</p>
+        <div class="flex max-h-60 flex-wrap gap-2 overflow-y-auto">
+          {#each otherLangOptions as lang (lang.code)}
+            <button
+              type="button"
+              onclick={() => toggleOtherLang(lang.code)}
+              aria-pressed={otherLanguages.includes(lang.code)}
+              class="rounded-full border px-3 py-1 text-xs font-medium transition-colors {otherLanguages.includes(
+                lang.code
+              )
+                ? 'border-indigo-600 bg-indigo-600 text-white'
+                : 'border-gray-300 text-gray-600 hover:border-indigo-400 dark:border-gray-600 dark:text-gray-400'}"
+            >
+              {lang.label}
+            </button>
+          {/each}
+        </div>
+
+        <!-- ── Slide 4: Norwegian level ── -->
+      {:else if current === 4}
+        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+          {m.onboarding_s4_heading()}
+        </h2>
+        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s4_sub()}</p>
+        <div class="flex flex-col gap-2">
+          {#each LEVELS as level (level)}
+            <button
+              type="button"
+              onclick={() => {
+                currentLevel = level;
+              }}
+              aria-pressed={currentLevel === level}
+              class="rounded-xl border-2 px-5 py-3 text-left text-sm font-medium transition-colors {currentLevel ===
+              level
+                ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
+                : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
+            >
+              {level}
+            </button>
+          {/each}
+        </div>
+
+        <!-- ── Slide 5: Study goals ── -->
+      {:else if current === 5}
+        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+          {m.onboarding_s5_heading()}
+        </h2>
+        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s5_sub()}</p>
+        <div class="flex flex-col gap-2">
+          {#each STUDY_GOALS as goal (goal.key)}
+            {@const selected = studyGoals.includes(goal.key)}
+            {@const maxed = studyGoals.length >= 3 && !selected}
+            <button
+              type="button"
+              disabled={maxed}
+              onclick={() => toggleGoal(goal.key)}
+              aria-pressed={selected}
+              class="rounded-xl border-2 px-5 py-3 text-left text-sm font-medium transition-colors {selected
+                ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
+                : maxed
+                  ? 'cursor-not-allowed border-gray-100 text-gray-300 dark:border-gray-800 dark:text-gray-600'
+                  : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
+            >
+              {goal.label()}
+            </button>
+          {/each}
+        </div>
+
+        <!-- ── Slide 6: Country ── -->
+      {:else if current === 6}
+        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+          {m.onboarding_s6_heading()}
+        </h2>
+        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s6_sub()}</p>
+        <label for="onb-country" class="sr-only">{m.onboarding_s6_heading()}</label>
+        <select
+          id="onb-country"
+          bind:value={country}
+          class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+        >
+          <option value="">{m.onboarding_s6_skip()}</option>
+          {#each COUNTRIES as c (c.code)}
+            <option value={c.code}>{c.label}</option>
+          {/each}
+        </select>
+
+        <!-- ── Slide 7: Completion ── -->
+      {:else if current === 7}
+        <div class="flex flex-col items-center py-4 text-center">
+          <div class="mb-4 text-5xl" aria-hidden="true">🎉</div>
+          <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+            {m.onboarding_s7_heading()}
+          </h2>
+          <p class="mb-8 text-sm text-gray-500 dark:text-gray-400">
+            {m.onboarding_s7_sub()}
+          </p>
+
           <button
             type="button"
             onclick={() => {
-              currentLevel = level;
+              dismissCompletion();
+              window.location.href = levelHref(currentLevel);
             }}
-            aria-pressed={currentLevel === level}
-            class="rounded-xl border-2 px-5 py-3 text-left text-sm font-medium transition-colors {currentLevel ===
-            level
-              ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
-              : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
+            class="w-full rounded-xl bg-indigo-600 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-indigo-700"
           >
-            {level}
+            {m.onboarding_s7_start({ level: currentLevel })}
           </button>
-        {/each}
-      </div>
 
-      <!-- ── Slide 5: Study goals ── -->
-    {:else if current === 5}
-      <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-        {m.onboarding_s5_heading()}
-      </h2>
-      <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s5_sub()}</p>
-      <div class="flex flex-col gap-2">
-        {#each STUDY_GOALS as goal (goal.key)}
-          {@const selected = studyGoals.includes(goal.key)}
-          {@const maxed = studyGoals.length >= 3 && !selected}
           <button
             type="button"
-            disabled={maxed}
-            onclick={() => toggleGoal(goal.key)}
-            aria-pressed={selected}
-            class="rounded-xl border-2 px-5 py-3 text-left text-sm font-medium transition-colors {selected
-              ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
-              : maxed
-                ? 'cursor-not-allowed border-gray-100 text-gray-300 dark:border-gray-800 dark:text-gray-600'
-                : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
+            onclick={() => (showAllLevels = !showAllLevels)}
+            aria-expanded={showAllLevels}
+            class="mt-4 text-xs font-medium text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
           >
-            {goal.label()}
+            {m.onboarding_s7_browse()}
           </button>
-        {/each}
-      </div>
 
-      <!-- ── Slide 6: Country ── -->
-    {:else if current === 6}
-      <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-        {m.onboarding_s6_heading()}
-      </h2>
-      <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s6_sub()}</p>
-      <label for="onb-country" class="sr-only">{m.onboarding_s6_heading()}</label>
-      <select
-        id="onb-country"
-        bind:value={country}
-        class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-      >
-        <option value="">{m.onboarding_s6_skip()}</option>
-        {#each COUNTRIES as c (c.code)}
-          <option value={c.code}>{c.label}</option>
-        {/each}
-      </select>
+          {#if showAllLevels}
+            <div class="mt-3 flex flex-wrap justify-center gap-2">
+              {#each LEVELS as level (level)}
+                <button
+                  type="button"
+                  onclick={() => {
+                    dismissCompletion();
+                    window.location.href = levelHref(level);
+                  }}
+                  class="rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:text-gray-400"
+                >
+                  {level}
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+      {/if}
 
-      <!-- ── Slide 7: Completion ── -->
-    {:else if current === 7}
-      <div class="flex flex-col items-center py-4 text-center">
-        <div class="mb-4 text-5xl" aria-hidden="true">🎉</div>
-        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-          {m.onboarding_s7_heading()}
-        </h2>
-        <p class="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          {m.onboarding_s7_sub()}
-        </p>
+      <!-- Error message -->
+      {#if error}
+        <p class="mt-3 text-xs text-red-600 dark:text-red-400">{error}</p>
+      {/if}
 
-        <button
-          type="button"
-          onclick={() => dismissCompletion(levelHref(currentLevel))}
-          class="w-full rounded-xl bg-indigo-600 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-indigo-700"
-        >
-          {m.onboarding_s7_start({ level: currentLevel })}
-        </button>
+      <!-- Navigation buttons (slides 1–6 only — slide 7 uses its own CTAs above) -->
+      {#if current <= TOTAL}
+        <div class="mt-8 flex items-center justify-between">
+          {#if current > 1}
+            <button
+              type="button"
+              onclick={back}
+              class="text-sm font-medium text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+            >
+              ← {m.onboarding_back()}
+            </button>
+          {:else}
+            <span></span>
+          {/if}
 
-        <button
-          type="button"
-          onclick={() => (showAllLevels = !showAllLevels)}
-          aria-expanded={showAllLevels}
-          class="mt-4 text-xs font-medium text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
-        >
-          {m.onboarding_s7_browse()}
-        </button>
-
-        {#if showAllLevels}
-          <div class="mt-3 flex flex-wrap justify-center gap-2">
-            {#each LEVELS as level (level)}
-              <button
-                type="button"
-                onclick={() => dismissCompletion(levelHref(level))}
-                class="rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:text-gray-400"
-              >
-                {level}
-              </button>
-            {/each}
-          </div>
-        {/if}
-      </div>
-    {/if}
-
-    <!-- Error message -->
-    {#if error}
-      <p class="mt-3 text-xs text-red-600 dark:text-red-400">{error}</p>
-    {/if}
-
-    <!-- Navigation buttons (slides 1–6 only — slide 7 uses its own CTAs above) -->
-    {#if current <= TOTAL}
-      <div class="mt-8 flex items-center justify-between">
-        {#if current > 1}
           <button
             type="button"
-            onclick={back}
-            class="text-sm font-medium text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+            onclick={next}
+            disabled={!canAdvance() || saving}
+            class="rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            ← {m.onboarding_back()}
+            {saving
+              ? m.onboarding_saving()
+              : current === TOTAL
+                ? m.onboarding_finish()
+                : m.onboarding_next()}
           </button>
-        {:else}
-          <span></span>
-        {/if}
-
-        <button
-          type="button"
-          onclick={next}
-          disabled={!canAdvance() || saving}
-          class="rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
-        >
-          {saving
-            ? m.onboarding_saving()
-            : current === TOTAL
-              ? m.onboarding_finish()
-              : m.onboarding_next()}
-        </button>
-      </div>
-    {/if}
+        </div>
+      {/if}
+    </div>
   </div>
-</div>
 {/if}
