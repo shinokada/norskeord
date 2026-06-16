@@ -1,5 +1,6 @@
 My thoughts after reading the following:
 
+- I need to create script to run using `ANTHROPIC_API_KEY` to generate Ukrainian for src/lib/data/vocab-a1.json and later on other files. So the script should be able to accept argument for files in src/lib/data directory. The file lives in scripts directory.
 - Relating to ./when-can-app-be-monolingual.md, start from A1, src/lib/data/vocab-a1.json, uttrykk-1.json, uttrykk-a1.preview.json, and messages/xx.json
 - B2 and above don't need since it will be monolingual.
 - I think I will start from Ukrainian first, then other languages.
