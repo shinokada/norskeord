@@ -21,7 +21,7 @@ const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
 };
 
 export const load: PageLoad = async ({ url, parent }) => {
-  const { targetLevel } = await parent();
+  const { currentLevel } = await parent();
 
   // NOTE: the Plus gate is enforced in +page.svelte using page.data.plan, not
   // here. Checking plan in the load function doesn't work reliably for e2e
@@ -37,7 +37,7 @@ export const load: PageLoad = async ({ url, parent }) => {
 
   // Validate level param against all known CEFR levels (A1–C).
   const allLevels = ['a1', 'a2', 'b1', 'b2', 'c'];
-  const profileLevel = typeof targetLevel === 'string' ? targetLevel.toLowerCase() : null;
+  const profileLevel = typeof currentLevel === 'string' ? currentLevel.toLowerCase() : null;
   const rawLevel = levelParam ?? profileLevel;
   const validLevel = rawLevel && allLevels.includes(rawLevel) ? rawLevel : null;
 

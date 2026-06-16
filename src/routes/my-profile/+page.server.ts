@@ -108,7 +108,7 @@ export const actions: Actions = {
 
     const data = await request.formData();
 
-    const target_level = data.get('target_level') as ProfileUpdate['target_level'];
+    const current_level = data.get('current_level') as ProfileUpdate['current_level'];
     const ui_language = data.get('ui_language') as ProfileUpdate['ui_language'];
     const card_direction = data.get('card_direction') as ProfileUpdate['card_direction'];
     // card_type radio: 'word' | 'phrase' → stored as include_phrases boolean
@@ -138,8 +138,8 @@ export const actions: Actions = {
     const validLimits = [10, 20, 30, 50, null];
     const validQuizLimits = [5, 10, 15, 20, null];
 
-    if (target_level && !validLevels.includes(target_level)) {
-      return fail(422, { field: 'target_level', message: 'Invalid level.' });
+    if (current_level && !validLevels.includes(current_level)) {
+      return fail(422, { field: 'current_level', message: 'Invalid level.' });
     }
     if (ui_language && !validLanguages.includes(ui_language)) {
       return fail(422, { field: 'ui_language', message: 'Invalid language.' });
@@ -164,7 +164,7 @@ export const actions: Actions = {
     }
 
     const update: ProfileUpdate = {
-      ...(target_level && { target_level }),
+      ...(current_level && { current_level }),
       ...(ui_language && { ui_language }),
       ...(card_direction && { card_direction }),
       include_phrases,
@@ -261,7 +261,7 @@ export const actions: Actions = {
     // 2. Keep email_subscribers in sync.
     if (next) {
       // Subscribe: upsert a row with the user's current level.
-      const level = profile?.target_level ?? 'A1';
+      const level = profile?.current_level ?? 'A1';
       const { error: subErr } = await locals.supabase
         .from('email_subscribers')
         .upsert({ user_id: locals.user.id, level, active: true }, { onConflict: 'user_id' });
