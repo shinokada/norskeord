@@ -63,11 +63,11 @@
 <Runatics {analyticsId} />
 <MetaTags {...metaTags} />
 
-{#if showOnboardingSlides}
-  <OnboardingSlides ipCountry={data.ipCountry} />
-{/if}
-
 {#key localeStore.current}
+  {#if showOnboardingSlides}
+    <OnboardingSlides ipCountry={data.ipCountry} />
+  {/if}
+
   <Nav />
 
   <section class="border-b border-gray-300 pb-8 dark:border-gray-600">

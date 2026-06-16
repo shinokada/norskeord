@@ -1,11 +1,15 @@
 <script lang="ts">
-  import { invalidateAll } from '$app/navigation';
+  import { invalidateAll, goto } from '$app/navigation';
   import { untrack } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
 
   // --- Props ---
   let { ipCountry }: { ipCountry: string | null } = $props();
+
+  // Local open state — set to false to instantly close the modal without
+  // waiting for invalidateAll() / goto() to re-run the layout load.
+  let open = $state(true);
 
   // --- Slide definitions ---
   // Slides 1–6 collect data; slide 7 is the "let's get started" completion
@@ -276,11 +280,11 @@
     if (!error) await invalidateAll();
   }
 
-  // Dismiss the slide 7 completion screen without re-snoozing — onboarding
-  // is already marked done server-side, so just refresh layout data so the
-  // overlay closes (no PATCH needed).
-  async function dismissCompletion() {
-    await invalidateAll();
+  // Dismiss the slide 7 completion screen — close instantly via local state,
+  // then navigate if a destination is provided.
+  async function dismissCompletion(href?: string) {
+    open = false;
+    if (href) goto(href);
   }
 
   // --- Locale switching (slide 1) ---
@@ -298,6 +302,7 @@
   }
 </script>
 
+{#if open}
 <!-- Full-screen overlay -->
 <div
   class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
@@ -534,12 +539,13 @@
           {m.onboarding_s7_sub()}
         </p>
 
-        <a
-          href={levelHref(currentLevel)}
+        <button
+          type="button"
+          onclick={() => dismissCompletion(levelHref(currentLevel))}
           class="w-full rounded-xl bg-indigo-600 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-indigo-700"
         >
           {m.onboarding_s7_start({ level: currentLevel })}
-        </a>
+        </button>
 
         <button
           type="button"
@@ -553,12 +559,13 @@
         {#if showAllLevels}
           <div class="mt-3 flex flex-wrap justify-center gap-2">
             {#each LEVELS as level (level)}
-              <a
-                href={levelHref(level)}
+              <button
+                type="button"
+                onclick={() => dismissCompletion(levelHref(level))}
                 class="rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:text-gray-400"
               >
                 {level}
-              </a>
+              </button>
             {/each}
           </div>
         {/if}
@@ -601,3 +608,4 @@
     {/if}
   </div>
 </div>
+{/if}
