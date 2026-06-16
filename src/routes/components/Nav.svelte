@@ -111,6 +111,8 @@
   function closeMoreDropdown() {
     moreDropdownOpen = false;
   }
+
+  const showOnboardingNudge = $derived((page.data.showOnboardingNudge as boolean) ?? false);
 </script>
 
 <Search
@@ -180,8 +182,14 @@
         {m.nav_log_in()}
       </a>
     {:else}
-      <div data-testid="user-avatar">
+      <div data-testid="user-avatar" class="relative">
         <Avatar class="acs ml-2.5 hidden md:block" size="xs" />
+        {#if showOnboardingNudge}
+          <span
+            class="pointer-events-none absolute -top-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-red-500 dark:border-blue-950"
+            aria-label={m.onboarding_nudge_dot_aria()}
+          ></span>
+        {/if}
       </div>
       <Dropdown
         bind:isOpen={avatarDropdownOpen}
@@ -295,11 +303,19 @@
             />
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="My Profile" href="/my-profile">
+        <SidebarItem
+          label={showOnboardingNudge ? m.onboarding_nudge_profile_label() : m.nav_my_profile()}
+          href="/my-profile"
+        >
           {#snippet icon()}
-            <UserCircleOutline
-              class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-            />
+            <div class="relative">
+              <UserCircleOutline
+                class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+              />
+              {#if showOnboardingNudge}
+                <span class="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-red-500"></span>
+              {/if}
+            </div>
           {/snippet}
         </SidebarItem>
       {:else}

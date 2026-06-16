@@ -3,7 +3,8 @@
   import type { Profile } from '$lib/server/profile';
   import * as m from '$lib/paraglide/messages.js';
 
-  let { profile }: { profile: Profile | null } = $props();
+  let { profile, missingFields = [] }: { profile: Profile | null; missingFields: string[] } =
+    $props();
 
   let saving = $state(false);
   let saved = $state(false);
@@ -106,9 +107,16 @@
     <div>
       <label
         for="display_name"
-        class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+        class="mb-1 flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300"
       >
         {m.profile_account_display_name()}
+        {#if missingFields.includes('display_name')}
+          <span
+            class="rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-600 dark:bg-red-900/40 dark:text-red-400"
+          >
+            {m.onboarding_nudge_field_required()}
+          </span>
+        {/if}
       </label>
       <input
         id="display_name"
