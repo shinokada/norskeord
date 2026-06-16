@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.27.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added onboarding flow to collect account information including display name, native language, and study goals with progress tracking.
+    - Added profile completion nudges throughout the app to guide users through initial setup.
+  - **Refactor**
+    - Changed "Target Level" terminology to "Current Level" for improved accuracy across the application.
+
 ## 2.26.2
 
 ### Patch Changes
