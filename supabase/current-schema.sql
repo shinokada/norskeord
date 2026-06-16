@@ -1,10 +1,9 @@
--- WARNING: This schema is for context only and is not meant to be run.
+--- WARNING: This schema is for context only and is not meant to be run.
 -- Table order and constraints may not be valid for execution.
 
 CREATE TABLE public.card_progress (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   user_id uuid NOT NULL,
-  norsk text NOT NULL,
   level text NOT NULL,
   category text NOT NULL,
   due timestamp with time zone NOT NULL DEFAULT now(),
@@ -19,6 +18,7 @@ CREATE TABLE public.card_progress (
   seen_count integer NOT NULL DEFAULT 1,
   last_seen timestamp with time zone NOT NULL DEFAULT now(),
   learning_steps integer NOT NULL DEFAULT 0,
+  vocab_id text NOT NULL,
   CONSTRAINT card_progress_pkey PRIMARY KEY (id),
   CONSTRAINT card_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
@@ -45,7 +45,7 @@ CREATE TABLE public.profiles (
   id uuid NOT NULL,
   display_name text,
   avatar_url text,
-  target_level text DEFAULT 'B1'::text CHECK (target_level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C'::text])),
+  current_level text DEFAULT 'B1'::text CHECK (current_level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C'::text])),
   ui_language text DEFAULT 'en'::text CHECK (ui_language = ANY (ARRAY['en'::text, 'nb'::text])),
   card_direction text DEFAULT 'no_en'::text CHECK (card_direction = ANY (ARRAY['no_en'::text, 'en_no'::text, 'def_no'::text])),
   include_phrases boolean DEFAULT true,
@@ -64,6 +64,12 @@ CREATE TABLE public.profiles (
   quiz_limit integer CHECK (quiz_limit IS NULL OR (quiz_limit = ANY (ARRAY[5, 10, 15, 20]))),
   email_reminder boolean NOT NULL DEFAULT false,
   show_example boolean NOT NULL DEFAULT false,
+  native_language text,
+  other_languages ARRAY,
+  country text,
+  study_goals ARRAY,
+  onboarding_done boolean NOT NULL DEFAULT false,
+  onboarding_snoozed_at timestamp with time zone,
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
 );
@@ -135,6 +141,5 @@ CREATE TABLE public.email_log (
   CONSTRAINT email_log_pkey PRIMARY KEY (id),
   CONSTRAINT email_log_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
-
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
 -- Manually maintained. See ./current-functions.sql for Functions

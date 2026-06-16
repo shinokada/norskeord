@@ -6,7 +6,7 @@ export interface Profile {
   id: string;
   display_name: string | null;
   avatar_url: string | null;
-  target_level: 'A1' | 'A2' | 'B1' | 'B2' | 'C';
+  current_level: 'A1' | 'A2' | 'B1' | 'B2' | 'C';
   ui_language: 'en' | 'nb';
   card_direction: 'no_en' | 'en_no' | 'def_no';
   include_phrases: boolean;
@@ -18,6 +18,13 @@ export interface Profile {
   session_limit: number | null;
   quiz_limit: number | null; // null = default (10)
   show_example: boolean; // show example translation below the card by default
+  // Onboarding fields
+  native_language: string | null; // ISO 639-1, e.g. 'ja', 'en'
+  other_languages: string[] | null; // ISO 639-1 codes
+  country: string | null; // ISO 3166-1 alpha-2, e.g. 'NO', 'JP'
+  study_goals: string[] | null; // ['vocab','grammar','speaking','listening','writing']
+  onboarding_done: boolean;
+  onboarding_snoozed_at: string | null; // ISO timestamp
   // Lemon Squeezy fields — written by webhook only, never by client
   ls_customer_id: string | null;
   ls_subscription_id: string | null;
@@ -31,7 +38,7 @@ export type ProfileUpdate = Partial<
   Pick<
     Profile,
     | 'display_name'
-    | 'target_level'
+    | 'current_level'
     | 'ui_language'
     | 'card_direction'
     | 'include_phrases'
