@@ -1,5 +1,24 @@
 # norske-flashcard
 
+## 2.28.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added Spanish and Ukrainian language support for both UI and flashcard translations
+    - Improved language selector with dropdown interface for better language switching
+  - **Bug Fixes**
+    - Fixed flashcard language selection to properly display translations in chosen language
+    - Corrected English language flag representation
+  - **Documentation**
+    - Added SEO optimization guidance and checklist
+    - Documented multi-language implementation patterns and domain strategy
+  - **Chores**
+    - Updated homepage copy and marketing messaging
+    - Added translation automation scripts
+    - Refactored code structure for maintainability
+    - Enhanced test coverage for language features
+
 ## 2.27.0
 
 ### Minor Changes
