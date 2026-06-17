@@ -359,7 +359,7 @@
             {m.onboarding_s1_lang_label()}
           </p>
           <div class="flex gap-2" role="group" aria-label={m.onboarding_s1_lang_label()}>
-            {#each [{ code: 'en', flag: '🇺🇸', label: 'English' }, { code: 'nb', flag: '🇳🇴', label: 'Norsk' }] as lang (lang.code)}
+            {#each [{ code: 'en', flag: '🇬🇧', label: 'English' }, { code: 'nb', flag: '🇳🇴', label: 'Norsk' }] as lang (lang.code)}
               <button
                 type="button"
                 onclick={() => switchLocale(lang.code)}
