@@ -1,4 +1,5 @@
 # Arabic content
+
 Yes, it's absolutely possible — major sites (Google, Facebook, Wikipedia) handle this routinely. Here's what you'd need to think about for norskeord:
 
 **Yes, RTL + LTR on the same page works fine.** The key is `dir="rtl"` on the Arabic element, not on `<html>`. You never flip the whole page — just the Arabic text containers.
@@ -26,15 +27,21 @@ Same treatment — `dir="rtl" lang="ar"` on the `example_arabic` paragraph. The 
 **3. Font**
 
 Arabic needs a dedicated web font. Tailwind doesn't include one by default. Good free options:
+
 - **Noto Sans Arabic** (Google Fonts) — clean, familiar for learners
 - **Cairo** — slightly more modern feel
 
 Add to `app.html` or `+layout.svelte`:
+
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 Then in `tailwind.config.js`:
+
 ```js
 fontFamily: {
   arabic: ['"Noto Sans Arabic"', 'sans-serif'],
@@ -47,7 +54,7 @@ If you have a language picker showing available translations, add Arabic there. 
 
 **5. Blog posts (if you ever write Arabic content)**
 
-If blog posts are ever in Arabic, `+page.svelte` would need `<article dir="rtl">`. But for norskeord this is unlikely — Arabic is a *learner* language, not the UI language.
+If blog posts are ever in Arabic, `+page.svelte` would need `<article dir="rtl">`. But for norskeord this is unlikely — Arabic is a _learner_ language, not the UI language.
 
 **6. Paraglide i18n**
 
@@ -70,10 +77,9 @@ Scope `dir="rtl"` as tightly as possible — just the element containing Arabic 
 
 So the change surface is actually small: a component or two that renders translation fields, plus a font import. Since you already have a `ukrainian` field pattern, Arabic slots in the same way with just the extra `dir="rtl"` attribute.
 
-## No flagAR عربي
+## No flag AR عربي
 
-
-**On the flag:** I'd suggest avoiding the Syrian flag for Arabic. Syrian Arabic is the *dialect*, but many of your users speaking it may be refugees or people with complicated feelings about the current Syrian state and its flag. It could feel alienating or politically loaded.
+**On the flag:** I'd suggest avoiding the Syrian flag for Arabic. Syrian Arabic is the _dialect_, but many of your users speaking it may be refugees or people with complicated feelings about the current Syrian state and its flag. It could feel alienating or politically loaded.
 
 Better options:
 
@@ -107,4 +113,4 @@ AR  عربي
 
 This mirrors your current pattern (`NO` + "norsk", `EN` + "English") while making clear through the native script that it's the colloquial/Syrian variety rather than formal MSA. Most Syrian users will recognise immediately from the vocabulary choices that it's their dialect, regardless of what the button says.
 
-If you really want to distinguish it from generic Arabic, a subtle parenthetical in the dropdown — *Arabic (Syrian)* — works better than a flag for that purpose.
+If you really want to distinguish it from generic Arabic, a subtle parenthetical in the dropdown — _Arabic (Syrian)_ — works better than a flag for that purpose.

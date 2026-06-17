@@ -31,10 +31,13 @@ const VALID_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
 // won't prevent XSS on the site itself, but it keeps the DB clean.
 // ---------------------------------------------------------------------------
 function sanitizeText(val: string): string {
-  return val
-    .replace(/[\u0000-\u001F\u007F]/g, '') // control characters
-    .replace(/[<>]/g, '')                      // no HTML angle brackets
-    .trim();
+  return (
+    val
+      // eslint-disable-next-line no-control-regex
+      .replace(/[\u0000-\u001F\u007F]/g, '') // control characters
+      .replace(/[<>]/g, '') // no HTML angle brackets
+      .trim()
+  );
 }
 
 // Allowlists mirror the LANGUAGES / COUNTRIES arrays in OnboardingSlides.svelte.
@@ -42,19 +45,112 @@ function sanitizeText(val: string): string {
 // validate requests that bypass the UI entirely.
 
 const VALID_LANG_CODES = new Set([
-  'sq', 'am', 'ar', 'zh', 'da', 'nl', 'en', 'fi', 'fr', 'de', 'el',
-  'hi', 'id', 'it', 'ja', 'kk', 'ko', 'ku', 'lv', 'lt', 'ms', 'ne',
-  'nb', 'fa', 'pl', 'pt', 'ro', 'ru', 'si', 'so', 'es', 'sv', 'sw',
-  'tl', 'ta', 'th', 'ti', 'tr', 'uk', 'ur', 'vi',
+  'sq',
+  'am',
+  'ar',
+  'zh',
+  'da',
+  'nl',
+  'en',
+  'fi',
+  'fr',
+  'de',
+  'el',
+  'hi',
+  'id',
+  'it',
+  'ja',
+  'kk',
+  'ko',
+  'ku',
+  'lv',
+  'lt',
+  'ms',
+  'ne',
+  'nb',
+  'fa',
+  'pl',
+  'pt',
+  'ro',
+  'ru',
+  'si',
+  'so',
+  'es',
+  'sv',
+  'sw',
+  'tl',
+  'ta',
+  'th',
+  'ti',
+  'tr',
+  'uk',
+  'ur',
+  'vi'
 ]);
 
 const VALID_COUNTRY_CODES = new Set([
-  'AF', 'AL', 'DZ', 'AR', 'AU', 'AT', 'BD', 'BE', 'BR', 'CA', 'CL', 'CN',
-  'CO', 'HR', 'CZ', 'DK', 'EG', 'ER', 'ET', 'FI', 'FR', 'DE', 'GH', 'GR',
-  'HU', 'IN', 'ID', 'IQ', 'IR', 'IE', 'IT', 'JP', 'KE', 'KR', 'LT', 'LV',
-  'MX', 'MA', 'NL', 'NZ', 'NG', 'NO', 'PK', 'PH', 'PL', 'PT', 'RO', 'RU',
-  'SA', 'SO', 'ZA', 'ES', 'LK', 'SE', 'CH', 'SY', 'TH', 'TR', 'UA', 'GB',
-  'US', 'VN',
+  'AF',
+  'AL',
+  'DZ',
+  'AR',
+  'AU',
+  'AT',
+  'BD',
+  'BE',
+  'BR',
+  'CA',
+  'CL',
+  'CN',
+  'CO',
+  'HR',
+  'CZ',
+  'DK',
+  'EG',
+  'ER',
+  'ET',
+  'FI',
+  'FR',
+  'DE',
+  'GH',
+  'GR',
+  'HU',
+  'IN',
+  'ID',
+  'IQ',
+  'IR',
+  'IE',
+  'IT',
+  'JP',
+  'KE',
+  'KR',
+  'LT',
+  'LV',
+  'MX',
+  'MA',
+  'NL',
+  'NZ',
+  'NG',
+  'NO',
+  'PK',
+  'PH',
+  'PL',
+  'PT',
+  'RO',
+  'RU',
+  'SA',
+  'SO',
+  'ZA',
+  'ES',
+  'LK',
+  'SE',
+  'CH',
+  'SY',
+  'TH',
+  'TR',
+  'UA',
+  'GB',
+  'US',
+  'VN'
 ]);
 
 export const PATCH: RequestHandler = async ({ request, locals }) => {
@@ -103,7 +199,7 @@ export const PATCH: RequestHandler = async ({ request, locals }) => {
     if (!Array.isArray(langs)) error(422, { message: 'other_languages must be an array.' });
     // Only accept known ISO codes — no free-text in the multi-select
     update.other_languages = (langs as unknown[]).filter(
-      (l): l is string => typeof l === 'string' && VALID_LANG_CODES.has(l),
+      (l): l is string => typeof l === 'string' && VALID_LANG_CODES.has(l)
     );
   }
 

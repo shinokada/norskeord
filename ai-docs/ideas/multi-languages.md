@@ -1,14 +1,12 @@
 My thoughts after reading the following:
 
 - I need to create script to run using `ANTHROPIC_API_KEY` to generate Ukrainian for src/lib/data/vocab-a1.json and later on other files. So the script should be able to accept argument for files in src/lib/data directory. The file lives in scripts directory.
+- According to Norwegian Statistics, (see the table below) the top 10 immigrant countries are Ukraine, Syria, Sweden, Spain, Germany, Romania, Afghanistan, Italy, United Kingdom, Pakistan, France, Türkiye ,Netherlands, Portugal.
 - Relating to ./when-can-app-be-monolingual.md, start from A1, src/lib/data/vocab-a1.json, uttrykk-1.json, uttrykk-a1.preview.json, and messages/xx.json
 - B2 and above don't need since it will be monolingual.
 - I think I will start from Ukrainian first, then other languages.
 - Polish and Pakistani are in Norway for a long time and I don't think they are new Norwegian learners.
-- Arabic is interesting one.
-- I met a quite few Spanish speakers in Oslo.
 - South Asian language like Thai and Vietnamese can be candidates.
-- Another consideration is Nepali.
 
 ---
 
@@ -33,3 +31,54 @@ Other candidates worth keeping on the radar given the data: Somali (large, estab
 One practical flag on scope, since your plan already handles this well but it's easy to lose discipline on later: Arabic and Urdu would bring RTL layout into the picture, which is a meaningfully bigger UI lift than adding another Latin/Cyrillic-script language like Polish or Ukrainian. I'd treat "Latin/Cyrillic script languages" (Polish, Ukrainian, Spanish) as one phase — basically just data + the store/dropdown work your doc already specced — and treat RTL languages as a separate phase with its own design/testing pass.
 
 Given the scale of the data work (6 level files × N languages × translation + example fields, with B1+ also carrying the Norwegian `definition` field unaffected), I'd pilot with **one** language end-to-end first — Polish or Ukrainian — including native-speaker QA on a sample, before fanning out the AI-generation prompt across all languages and levels at once. That way if there's a systemic issue (e.g., AI-generated examples drifting above the target CEFR level, which is the same defining-vocabulary problem we discussed for the Norwegian definitions), you catch it on one language's worth of data instead of four.
+
+## Countries with Net Immigration > 100
+
+| Citizenship    | 2024 Net immigration | 2025 Net immigration (second column) |
+| :------------- | -------------------: | -----------------------------------: |
+| Ukraine        |                14802 |                                 6063 |
+| Syria          |                 2399 |                                 1626 |
+| Sweden         |                 1282 |                                 1297 |
+| Spain          |                  979 |                                  929 |
+| Germany        |                  707 |                                  903 |
+| Romania        |                  988 |                                  764 |
+| Afghanistan    |                  773 |                                  705 |
+| Italy          |                  641 |                                  633 |
+| United Kingdom |                  372 |                                  600 |
+| Pakistan       |                  691 |                                  553 |
+| France         |                  442 |                                  522 |
+| Türkiye        |                  403 |                                  501 |
+| Netherlands    |                  425 |                                  476 |
+| Portugal       |                  459 |                                  459 |
+| United States  |                  158 |                                  457 |
+| Latvia         |                  548 |                                  413 |
+| Greece         |                  472 |                                  405 |
+| Philippines    |                  626 |                                  384 |
+| Eritrea        |                  515 |                                  376 |
+| Sudan          |                  231 |                                  340 |
+| India          |                  666 |                                  338 |
+| Poland         |                 1604 |                                  336 |
+| Thailand       |                  210 |                                  335 |
+| Bulgaria       |                  312 |                                  238 |
+| Brazil         |                  153 |                                  218 |
+| Nepal          |                  166 |                                  197 |
+| Hungary        |                  228 |                                  160 |
+| Iran           |                  177 |                                  154 |
+| Finland        |                  184 |                                  148 |
+| Colombia       |                  112 |                                  135 |
+| Ethiopia       |                  116 |                                  132 |
+| Russia         |                  255 |                                  130 |
+| Egypt          |                   61 |                                  127 |
+| Estonia        |                  161 |                                  125 |
+| Sri Lanka      |                   93 |                                  124 |
+| Palestine      |                    0 |                                  122 |
+| Vietnam        |                  107 |                                  117 |
+| Iraq           |                   99 |                                  112 |
+| Slovakia       |                   63 |                                  107 |
+| Czech Republic |                  101 |                                  102 |
+| Congo          |                  500 |                                   93 |
+| Morocco        |                  104 |                                   89 |
+| Serbia         |                  190 |                                   82 |
+| Stateless      |                  152 |                                   62 |
+| Croatia        |                  147 |                                   -6 |
+| Lithuania      |                  140 |                                 -200 |

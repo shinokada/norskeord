@@ -1,4 +1,5 @@
 # Language switcher for multiple languages
+
 Good timing to rethink this — the toggle pattern breaks completely beyond 2 languages.
 
 A few options, roughly in order of complexity:
@@ -6,6 +7,7 @@ A few options, roughly in order of complexity:
 ---
 
 ### Option 1: Dropdown menu
+
 Click a button → dropdown shows all available languages. Most familiar pattern, scales to any number of languages.
 
 ```
@@ -22,6 +24,7 @@ Click a button → dropdown shows all available languages. Most familiar pattern
 ---
 
 ### Option 2: Inline pill row
+
 All languages visible as pills, active one highlighted. No click to open.
 
 ```
@@ -34,6 +37,7 @@ All languages visible as pills, active one highlighted. No click to open.
 ---
 
 ### Option 3: Dropdown with flag/script preview
+
 Like Option 1 but richer — shows native script alongside the code.
 
 ```
