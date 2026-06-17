@@ -165,7 +165,7 @@
         {m.profile_prefs_ui_language()}
       </p>
       <div class="flex gap-3">
-        {#each [{ value: 'en', label: '🇺🇸 English' }, { value: 'nb', label: '🇳🇴 Norsk Bokmål' }] as opt (opt.value)}
+        {#each [{ value: 'en', label: '🇬🇧 English' }, { value: 'nb', label: '🇳🇴 Norsk Bokmål' }] as opt (opt.value)}
           <label class="flex cursor-pointer items-center gap-2">
             <input
               type="radio"

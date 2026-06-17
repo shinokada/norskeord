@@ -6,8 +6,9 @@
   import { supabase } from '$lib/supabase';
   import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
   import SpeakButton from '$lib/SpeakButton.svelte';
-
-  import type { VocabEntry } from '$lib/types';
+  import type { VocabEntry, Language, FSRSRating, CardProgress } from '$lib/types';
+  import { LANGUAGES } from '$lib/config';
+  import { getTranslation, getExampleTranslation } from '$lib/vocab-helpers';
   import {
     saveProgress,
     loadProgressMap,
@@ -17,7 +18,6 @@
     restoreProgressToLocalStorage,
     vocabKey
   } from '$lib/progress';
-  import type { FSRSRating, CardProgress } from '$lib/types';
   import { State } from 'ts-fsrs';
   import * as m from '$lib/paraglide/messages.js';
 
@@ -30,6 +30,7 @@
   interface Props {
     entries: VocabEntry[];
     title?: string;
+    language?: Language;
     level?: string;
     prevCategory?: CategoryNav | null;
     nextCategory?: CategoryNav | null;
@@ -40,7 +41,8 @@
     title = 'Vocab',
     level = '',
     prevCategory = null,
-    nextCategory = null
+    nextCategory = null,
+    language = 'english'
   }: Props = $props();
 
   type Mode = 'noreng' | 'engnor' | 'defnor';
@@ -57,6 +59,15 @@
     timer: ReturnType<typeof setInterval>;
     countdown: number;
   }
+
+  // function makeItem(entry: VocabEntry, m: Mode): DeckItem {
+  //   const translation = getTranslation(entry, language);
+  //   return {
+  //     entry,
+  //     front: m === 'noreng' ? entry.norsk : translation,
+  //     back: m === 'noreng' ? translation : entry.norsk
+  //   };
+  // }
 
   const LS_MODE = 'vocab-flashcard-mode';
   const LS_CARD_TYPE = 'vocab-flashcard-card-type';
@@ -335,18 +346,21 @@
   let current = $derived(deck[currentIndex]);
 
   function deriveExample(entry: VocabEntry, mo: Mode, ct: CardType): string {
-    if (ct === 'phrase') return mo === 'noreng' ? entry.norsk : entry.english;
+    if (ct === 'phrase') return mo === 'noreng' ? entry.norsk : getTranslation(entry, language);
     return mo === 'noreng' ? entry.example : entry.example_english;
   }
 
   function deriveExampleTranslation(entry: VocabEntry, mo: Mode, ct: CardType): string {
-    if (ct === 'phrase') return mo === 'noreng' ? entry.english : entry.norsk;
-    return mo === 'noreng' ? entry.example_english : entry.example;
+    if (ct === 'phrase') return mo === 'noreng' ? getTranslation(entry, language) : entry.norsk;
+    return mo === 'noreng'
+      ? (getExampleTranslation(entry, language) ?? entry.example_english)
+      : entry.example;
   }
 
   let currentExample = $derived(
     current ? deriveExample(current.entry, effectiveMode, cardType) : ''
   );
+
   let currentExampleTranslation = $derived(
     current ? deriveExampleTranslation(current.entry, effectiveMode, cardType) : ''
   );
@@ -594,7 +608,7 @@
       {#if prevCategory}
         <a
           href={prevCategory.href}
-          class="inline-flex min-h-[44px] items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          class="inline-flex min-h-11 items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
           title={prevCategory.label}
         >
           <span class="shrink-0">←</span>
@@ -640,7 +654,7 @@
         aria-pressed={effectiveMode === 'noreng'}
         onclick={() => setMode('noreng')}
       >
-        {m.flashcard_norsk()}
+        Norsk → {LANGUAGES[language].name}
       </button>
       <button
         type="button"
@@ -653,7 +667,7 @@
         aria-pressed={effectiveMode === 'engnor'}
         onclick={() => setMode('engnor')}
       >
-        {m.flashcard_english()}
+        {LANGUAGES[language].name} → Norsk
       </button>
       {#if hasDefinitions && cardType === 'word'}
         <button

@@ -1,5 +1,6 @@
 import type { SVGAttributes } from 'svelte/elements';
 import type { Card } from 'ts-fsrs';
+import { CATEGORIES_BY_LEVEL, LANGUAGES } from '$lib/config';
 
 export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C';
 
@@ -14,301 +15,7 @@ export type PartOfSpeech =
   | 'interjection'
   | 'phrase';
 
-export const CATEGORIES_BY_LEVEL = {
-  A1: [
-    'greetings',
-    'numbers',
-    'colors',
-    'family',
-    'body',
-    'food',
-    'animals',
-    'home',
-    'days-months',
-    'classroom',
-    'adjectives',
-    'verbs',
-    'pronouns-and-questions',
-    'feelings',
-    'weather',
-    'transportation',
-    'household-items',
-    'places',
-    'clothes',
-    'actions',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  A2: [
-    'shopping',
-    'transport',
-    'clothing',
-    'hobbies',
-    'directions',
-    'occupations',
-    'sports',
-    'health',
-    'weather',
-    'time',
-    'descriptive-adjectives',
-    'cooking',
-    'nature',
-    'house-chores',
-    'communication',
-    'body',
-    'social-life',
-    'technology',
-    'environment',
-    'money',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  B1: [
-    'travel',
-    'environment',
-    'media',
-    'culture',
-    'technology',
-    'relationships',
-    'education',
-    'work',
-    'city-life',
-    'traditions',
-    'expressing-opinions',
-    'cooking',
-    'accommodation',
-    'health',
-    'finance',
-    'personal-growth',
-    'reasoning',
-    'society',
-    'communication-skills',
-    'urban-life',
-    'mental-wellbeing',
-    'fitness',
-    'arts-culture',
-    'economics',
-    'sustainability',
-    'science-nature',
-    'journalism',
-    'workplace',
-    'family',
-    'politics',
-    'language-learning',
-    'healthcare',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  B2: [
-    'politics',
-    'economics',
-    'social-issues',
-    'arts',
-    'science',
-    'emotions',
-    'idioms',
-    'history',
-    'law',
-    'literature',
-    'advanced-adjectives',
-    'philosophy',
-    'medicine',
-    'psychology',
-    'business',
-    'religion',
-    'environment',
-    'technology',
-    'media',
-    'education',
-    'language',
-    'argumentation',
-    'abstract-nouns',
-    'advanced-verbs',
-    'geography',
-    'culture',
-    'global-issues',
-    'academic-language',
-    'discourse-markers',
-    'work-career',
-    'relationships',
-    'communication',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  C: [
-    'philosophy',
-    'academic',
-    'formal-writing',
-    'rhetoric',
-    'complex-emotions',
-    'professional',
-    'abstract-concepts',
-    'politics-democracy',
-    'linguistics',
-    'media-journalism',
-    'architecture-design',
-    'diplomacy-international',
-    'finance-economics',
-    'medicine-healthcare',
-    'psychology-advanced',
-    'literary',
-    'archaic',
-    'proverbs',
-    'highly-formal',
-    'technical',
-    'advanced-law-justice',
-    'neuroscience-cognition',
-    'climate-environment-policy',
-    'sociology-anthropology',
-    'advanced-business-strategy',
-    'existential-abstract'
-  ]
-} as const;
-
 export type Category = (typeof CATEGORIES_BY_LEVEL)[CEFRLevel][number];
-
-/**
- * Grammar topics available to free users. Everything else requires Plus.
- */
-export const FREE_GRAMMAR_TOPICS = new Set<GrammarTopic>([
-  'ikke-placement',
-  'v2-word-order',
-  'det-er-ikke',
-  'modal-verb-order'
-]);
-
-export function isFreeGrammarTopic(topic: GrammarTopic): boolean {
-  return FREE_GRAMMAR_TOPICS.has(topic);
-}
-
-/**
- * Categories that require a Plus subscription.
- * Free users can see these in the picker but cannot open them.
- * A1 and A2 are always fully free — not listed here.
- *
- * C1 free (first 5): philosophy, academic, formal-writing, rhetoric, complex-emotions
- * C2 free (first 4): literary, archaic, proverbs, highly-formal
- */
-export const PLUS_CATEGORIES = new Set<string>([
-  // B1 — plus-only (22)
-  'b1/city-life',
-  'b1/traditions',
-  'b1/expressing-opinions',
-  'b1/cooking',
-  'b1/accommodation',
-  'b1/finance',
-  'b1/personal-growth',
-  'b1/reasoning',
-  'b1/communication-skills',
-  'b1/urban-life',
-  'b1/mental-wellbeing',
-  'b1/fitness',
-  'b1/arts-culture',
-  'b1/economics',
-  'b1/sustainability',
-  'b1/science-nature',
-  'b1/journalism',
-  'b1/workplace',
-  'b1/family',
-  'b1/politics',
-  'b1/language-learning',
-  'b1/healthcare',
-  // B2 — plus-only (28 vocab + full uttrykk)
-  'b2/arts',
-  'b2/emotions',
-  'b2/idioms',
-  'b2/history',
-  'b2/law',
-  'b2/literature',
-  'b2/advanced-adjectives',
-  'b2/philosophy',
-  'b2/medicine',
-  'b2/psychology',
-  'b2/business',
-  'b2/religion',
-  'b2/environment',
-  'b2/technology',
-  'b2/media',
-  'b2/education',
-  'b2/language',
-  'b2/argumentation',
-  'b2/abstract-nouns',
-  'b2/advanced-verbs',
-  'b2/geography',
-  'b2/culture',
-  'b2/global-issues',
-  'b2/academic-language',
-  'b2/discourse-markers',
-  'b2/work-career',
-  'b2/relationships',
-  'b2/communication',
-  'b2/uttrykk',
-  // uttrykk — full decks are Plus-only; preview is free
-  'a1/uttrykk',
-  'a2/uttrykk',
-  'b1/uttrykk',
-  // C — first 5 free; rest plus-only
-  'c/professional',
-  'c/abstract-concepts',
-  'c/politics-democracy',
-  'c/linguistics',
-  'c/media-journalism',
-  'c/architecture-design',
-  'c/diplomacy-international',
-  'c/finance-economics',
-  'c/medicine-healthcare',
-  'c/psychology-advanced',
-  'c/technical',
-  'c/advanced-law-justice',
-  'c/neuroscience-cognition',
-  'c/climate-environment-policy',
-  'c/sociology-anthropology',
-  'c/advanced-business-strategy',
-  'c/existential-abstract'
-]);
-
-export function isPlusCategory(level: string, category: string): boolean {
-  return PLUS_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
-}
-
-/**
- * Top 3 categories per level available to free users in the Quiz.
- * Derived from the first 3 non-uttrykk entries in CATEGORIES_BY_LEVEL.
- */
-export const FREE_QUIZ_CATEGORIES = new Set<string>([
-  // A1
-  'a1/greetings',
-  'a1/numbers',
-  'a1/colors',
-  // A2
-  'a2/shopping',
-  'a2/transport',
-  'a2/clothing',
-  // B1
-  'b1/travel',
-  'b1/environment',
-  'b1/media',
-  // B2
-  'b2/politics',
-  'b2/economics',
-  'b2/social-issues',
-  // C
-  'c/philosophy',
-  'c/academic',
-  'c/formal-writing'
-]);
-
-export function isFreeQuizCategory(level: string, category: string): boolean {
-  return FREE_QUIZ_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
-}
-
-/**
- * Practice test number 1 is always free; all higher numbers require Plus.
- * This scales automatically as new test sets are added.
- */
-export function isFreeTest(test: number): boolean {
-  return test === 1;
-}
 
 export type FSRSRating = 'again' | 'hard' | 'good' | 'easy';
 
@@ -321,20 +28,20 @@ export interface CardProgress {
   category: Category;
 }
 
+export type Language = keyof typeof LANGUAGES;
+
 export interface VocabEntry {
-  /**
-   * Stable id for admin review tracking, e.g. 'v-a1-greetings-001' (vocab),
-   * 'u-a1-001' (uttrykk full deck), or 'u-a1-preview-001' (uttrykk preview
-   * deck). Optional for backwards compatibility with any entry created
-   * before the id migration (scripts/add-vocab-uttrykk-ids.mjs).
-   */
-  id?: string;
-  norsk: string;
+  id: string;
   lemma?: string;
+  norsk: string;
   english: string;
+  spanish: string;
+  ukrainian: string;
   example: string;
   example_english: string;
-  definition?: string; // monolingual Norwegian definition of the word (B1+)
+  example_spanish?: string;
+  example_ukrainian?: string;
+  definition?: string; //monolingual Norwegian definition of the word (B1+)
   level: CEFRLevel;
   category: Category;
   part: PartOfSpeech;
@@ -491,49 +198,4 @@ export interface GrammarQuestion {
   alternates?: string[]; // other accepted forms
   hint?: string; // optional nudge shown after a wrong attempt
   plusOnly?: boolean; // gate advanced questions behind Plus
-}
-
-/**
- * How many grammar questions are free per topic (total, across all CEFR levels).
- * The first N non-plusOnly questions of each topic (in grammar.json file order)
- * are free; everything else requires Plus. Tune this single value to
- * widen/tighten the free tier.
- */
-export const FREE_GRAMMAR_PER_TOPIC = 3;
-
-/**
- * Given the full grammar question list, returns the set of question ids that are
- * free for guest/free users: within each topic, the first
- * FREE_GRAMMAR_PER_TOPIC non-plusOnly questions in file order.
- * plusOnly questions are never free.
- */
-export function freeGrammarQuestionIds(questions: GrammarQuestion[]): Set<string> {
-  const seenPerTopic: Record<string, number> = {};
-  const free = new Set<string>();
-  for (const q of questions) {
-    if (q.plusOnly) continue;
-    const seen = seenPerTopic[q.topic] ?? 0;
-    if (seen < FREE_GRAMMAR_PER_TOPIC) {
-      free.add(q.id);
-      seenPerTopic[q.topic] = seen + 1;
-    }
-  }
-  return free;
-}
-
-const CEFR_ORDER: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
-
-/** The CEFR levels a question is tagged with — its `levels` array, or `[cefr]`. */
-export function questionLevels(q: GrammarQuestion): CEFRLevel[] {
-  return q.levels && q.levels.length ? q.levels : [q.cefr];
-}
-
-/**
- * The sorted, de-duplicated set of CEFR levels covered by a list of questions
- * (across their `levels` tags). Used to show level badges on a topic card.
- */
-export function topicLevels(questions: GrammarQuestion[]): CEFRLevel[] {
-  const set = new Set<CEFRLevel>();
-  for (const q of questions) for (const l of questionLevels(q)) set.add(l);
-  return CEFR_ORDER.filter((l) => set.has(l));
 }

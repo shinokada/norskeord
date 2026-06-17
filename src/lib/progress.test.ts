@@ -29,14 +29,22 @@ beforeEach(() => {
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 
 const entry: VocabEntry = {
+  id: 'v-a1-greetings-001',
   norsk: 'hei',
   english: 'hello',
+  spanish: 'hola',
+  ukrainian: 'привіт',
   example: 'Hei, hvordan har du det?',
   example_english: 'Hello, how are you?',
+  example_spanish: 'Hola, ¿cómo estás?',
+  example_ukrainian: 'Привіт, як справи?',
   level: 'A1',
   category: 'greetings',
   part: 'interjection'
 };
+
+// vocabKey(entry) returns entry.id when present — use this as the map key.
+const KEY = entry.id;
 
 // ── loadProgressMap ───────────────────────────────────────────────────────────
 
@@ -53,11 +61,11 @@ describe('loadProgressMap', () => {
   it('loads and rehydrates a stored progress entry', async () => {
     const map = await saveProgress(entry, 'good', {});
     const loaded = loadProgressMap();
-    expect(loaded['hei']).toBeDefined();
-    expect(loaded['hei'].seenCount).toBe(1);
-    expect(loaded['hei'].fsrs.due).toBeInstanceOf(Date);
-    expect(map['hei'].level).toBe('A1');
-    expect(map['hei'].category).toBe('greetings');
+    expect(loaded[KEY]).toBeDefined();
+    expect(loaded[KEY].seenCount).toBe(1);
+    expect(loaded[KEY].fsrs.due).toBeInstanceOf(Date);
+    expect(map[KEY].level).toBe('A1');
+    expect(map[KEY].category).toBe('greetings');
   });
 
   it('skips malformed JSON entries without throwing', () => {
@@ -72,33 +80,33 @@ describe('loadProgressMap', () => {
 describe('saveProgress', () => {
   it('creates a new entry for an unseen card', async () => {
     const map = await saveProgress(entry, 'good', {});
-    expect(map['hei']).toBeDefined();
-    expect(map['hei'].seenCount).toBe(1);
-    expect(map['hei'].level).toBe('A1');
-    expect(map['hei'].category).toBe('greetings');
+    expect(map[KEY]).toBeDefined();
+    expect(map[KEY].seenCount).toBe(1);
+    expect(map[KEY].level).toBe('A1');
+    expect(map[KEY].category).toBe('greetings');
   });
 
   it('increments seenCount on subsequent ratings', async () => {
     let map = await saveProgress(entry, 'good', {});
     map = await saveProgress(entry, 'again', map);
-    expect(map['hei'].seenCount).toBe(2);
+    expect(map[KEY].seenCount).toBe(2);
   });
 
   it('persists the entry to localStorage', async () => {
     await saveProgress(entry, 'easy', {});
-    expect(localStorage.getItem('progress-hei')).not.toBeNull();
+    expect(localStorage.getItem('progress-' + KEY)).not.toBeNull();
   });
 
   it('sets a future due date for "easy" rating', async () => {
     const map = await saveProgress(entry, 'easy', {});
-    expect(new Date(map['hei'].fsrs.due).getTime()).toBeGreaterThan(Date.now());
+    expect(new Date(map[KEY].fsrs.due).getTime()).toBeGreaterThan(Date.now());
   });
 
   it('does not mutate the original progressMap', async () => {
     const original = {};
     const result = await saveProgress(entry, 'good', original);
     expect(original).toEqual({});
-    expect(result['hei']).toBeDefined();
+    expect(result[KEY]).toBeDefined();
   });
 
   it('handles all four FSRS ratings without throwing', async () => {
@@ -118,8 +126,8 @@ describe('countDueToday', () => {
   it('counts cards with due date in the past', async () => {
     const map = await saveProgress(entry, 'good', {});
     // Backdate the due date so the card is overdue
-    const overdue = { ...map['hei'], fsrs: { ...map['hei'].fsrs, due: new Date('2000-01-01') } };
-    expect(countDueToday({ hei: overdue })).toBe(1);
+    const overdue = { ...map[KEY], fsrs: { ...map[KEY].fsrs, due: new Date('2000-01-01') } };
+    expect(countDueToday({ [KEY]: overdue })).toBe(1);
   });
 
   it('does not count cards due in the future', async () => {
@@ -160,10 +168,10 @@ describe('previewIntervals', () => {
     const goodMap = await saveProgress(entry, 'good', {});
     const easyMap = await saveProgress(entry, 'easy', {});
 
-    const dueAgain = new Date(againMap[entry.norsk].fsrs.due).getTime();
-    const dueHard = new Date(hardMap[entry.norsk].fsrs.due).getTime();
-    const dueGood = new Date(goodMap[entry.norsk].fsrs.due).getTime();
-    const dueEasy = new Date(easyMap[entry.norsk].fsrs.due).getTime();
+    const dueAgain = new Date(againMap[KEY].fsrs.due).getTime();
+    const dueHard = new Date(hardMap[KEY].fsrs.due).getTime();
+    const dueGood = new Date(goodMap[KEY].fsrs.due).getTime();
+    const dueEasy = new Date(easyMap[KEY].fsrs.due).getTime();
 
     expect(dueAgain).toBeLessThanOrEqual(dueHard);
     expect(dueHard).toBeLessThanOrEqual(dueGood);
@@ -176,7 +184,7 @@ describe('previewIntervals', () => {
 
   it('accepts an existing CardProgress without throwing', async () => {
     const map = await saveProgress(entry, 'good', {});
-    expect(() => previewIntervals(map[entry.norsk], now)).not.toThrow();
+    expect(() => previewIntervals(map[KEY], now)).not.toThrow();
   });
 
   it('formats minutes correctly (< 60 min)', () => {
@@ -190,7 +198,7 @@ describe('previewIntervals', () => {
     let map = await saveProgress(entry, 'good', {});
     map = await saveProgress(entry, 'good', map);
     map = await saveProgress(entry, 'good', map);
-    const result = previewIntervals(map[entry.norsk], now);
+    const result = previewIntervals(map[KEY], now);
     // "easy" on a mature card should be days or months
     expect(result.easy).toMatch(/^\d+(d|mo)$/);
   });

@@ -1,5 +1,18 @@
 # How to use scripts
 
+## translate-messages.mjs
+
+Translates messages/en.json (the inlang base locale) into another locale
+file in the same directory, using the Anthropic API.
+
+```
+// Usage:
+  node scripts/translate-messages.mjs --language spanish
+  node scripts/translate-messages.mjs --language ukrainian --batch 25
+  node scripts/translate-messages.mjs --language spanish --dry-run
+  node scripts/translate-messages.mjs --language spanish --force
+```
+
 ## add-language-translations.mjs
 
 Populates `[language]` and `example_[language]` fields (e.g. `ukrainian` /
