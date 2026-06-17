@@ -14,10 +14,15 @@ import { createEmptyCard } from 'ts-fsrs';
 
 function makeEntry(overrides: Partial<VocabEntry> = {}): VocabEntry {
   return {
+    id: 'v-a1-verbs-013',
     norsk: 'jobbe',
     english: 'to work',
+    spanish: 'trabajar',
+    ukrainian: 'працювати',
     example: 'Jeg liker å jobbe her.',
     example_english: 'I like to work here.',
+    example_spanish: 'Me gusta trabajar aquí.',
+    example_ukrainian: 'Мені подобається працювати тут.',
     level: 'B1',
     category: 'work',
     part: 'verb',

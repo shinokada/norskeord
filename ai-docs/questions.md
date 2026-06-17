@@ -4,17 +4,14 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
+Please do not use Write_file, it takes time. Instead can you write a script to update file(s) rather than rewrite whole file(s)? I can run the script locally and in that way, the session limit won't be over-used.
+
 The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file or write Python or mjs script so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
 
 ---
 
-- I think from B1 or B2 there should be only norwegian. This means using norwegian definition and no english. What do you think? Which level is good to start using only Norwegian?
-- domain names: norsknote.no, norskklasse.no, learnnorsk.no ($16.99), norsly.no ($16.99), norgeapp.no ($16.99), norskpath.no ($16.99), NorskVeien.no ($17.99), NorwegianPath ($17.99), NorwegianHub ($17.99), NorwegianClassroom ($17.99), Norskeproven.no ($17.99), KlarForNorsk.no, PassNorskeproven, NorskBee, EverydayNorsk,
-
-norsksol, norskbie, norskugle, norskrev, norskhav, norskelg, norskmus, norskulv, norskravn
-
 - How about Start free button rather than login?
-
+- Feedback on flashcard, grammar, quiz etc? Is it practical?
 - Grammtikk section for B2/C1
   This is different from Quiz.
   Quiz has one question by one question. For grammer questions, I'd like to show all the questions at once and user type or select answers.

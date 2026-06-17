@@ -1,5 +1,7 @@
 import type { PageServerLoad } from './$types';
-import { CATEGORIES_BY_LEVEL, isPlusCategory, isFreeGrammarTopic, topicLevels } from '$lib/types';
+import { CATEGORIES_BY_LEVEL } from '$lib/config';
+import { isPlusCategory, isFreeGrammarTopic } from '$lib/access';
+import { topicLevels } from '$lib/vocab-helpers';
 import grammarData from '$lib/data/grammar.json';
 import stats from '$lib/data/stats.json';
 import type { CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';

@@ -1,7 +1,8 @@
 import type { PageLoad } from './$types';
 import grammarData from '$lib/data/grammar.json';
 import type { CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
-import { isFreeGrammarTopic, topicLevels } from '$lib/types';
+import { isFreeGrammarTopic } from '$lib/access';
+import { topicLevels } from '$lib/vocab-helpers';
 
 export const ssr = false;
 

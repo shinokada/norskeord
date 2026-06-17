@@ -1,7 +1,8 @@
 import { error, redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import type { VocabEntry } from '$lib/types';
-import { isPlusCategory, CATEGORIES_BY_LEVEL } from '$lib/types';
+import { CATEGORIES_BY_LEVEL } from '$lib/config';
+import { isPlusCategory } from '$lib/access';
 import type { MetaProps } from 'runes-meta-tags';
 import { removeHyphensAndCapitalize } from '$lib/utils';
 

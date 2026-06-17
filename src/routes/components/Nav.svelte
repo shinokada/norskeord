@@ -29,9 +29,9 @@
     UserCircleOutline,
     ArrowLeftToBracketOutline
   } from 'flowbite-svelte-icons';
-  const sidebarUi = uiHelpers();
-  const closeDemoSidebar = sidebarUi.close;
-
+  // import { LANGUAGES } from '$lib/config';
+  // import type { Language } from '$lib/types';
+  // import { languageStore } from '$lib/stores/language.svelte';
   import No from '$lib/No.svelte';
   import { page } from '$app/state';
   import ChevronDownOutline from './ChevronDownOutline.svelte';
@@ -41,6 +41,8 @@
   import { clearUserProgress } from '$lib/progress';
   import Search from '$lib/components/Search.svelte';
 
+  const sidebarUi = uiHelpers();
+  const closeDemoSidebar = sidebarUi.close;
   const user = $derived(page.data.user);
   const displayName = $derived(page.data.displayName as string | null);
   const isAdmin = $derived(page.data.isAdmin as boolean);

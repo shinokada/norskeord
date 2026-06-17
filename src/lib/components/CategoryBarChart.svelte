@@ -3,7 +3,7 @@
   import { State } from 'ts-fsrs';
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import type { CEFRLevel, CardProgress } from '$lib/types';
-  import { CATEGORIES_BY_LEVEL } from '$lib/types';
+  import { CATEGORIES_BY_LEVEL } from '$lib/config';
   import * as m from '$lib/paraglide/messages.js';
 
   // ── Vocab totals per category (build-time imports) ──────────────────────────────────

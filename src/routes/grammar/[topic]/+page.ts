@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import grammarData from '$lib/data/grammar.json';
 import type { GrammarQuestion, GrammarTopic } from '$lib/types';
-import { freeGrammarQuestionIds } from '$lib/types';
+import { freeGrammarQuestionIds } from '$lib/access';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
 
 export const ssr = false;
