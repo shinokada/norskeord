@@ -10,7 +10,7 @@
 
 import type { RequestHandler } from './$types';
 import { State } from 'ts-fsrs';
-import { CATEGORIES_BY_LEVEL } from '$lib/types';
+import { CATEGORIES_BY_LEVEL } from '$lib/config';
 import type { CardProgress, CEFRLevel } from '$lib/types';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];

@@ -1,5 +1,52 @@
 # How to use scripts
 
+## translate-messages.mjs
+
+Translates messages/en.json (the inlang base locale) into another locale
+file in the same directory, using the Anthropic API.
+
+```
+// Usage:
+  node scripts/translate-messages.mjs --language spanish
+  node scripts/translate-messages.mjs --language ukrainian --batch 25
+  node scripts/translate-messages.mjs --language spanish --dry-run
+  node scripts/translate-messages.mjs --language spanish --force
+```
+
+## add-language-translations.mjs
+
+Populates `[language]` and `example_[language]` fields (e.g. `ukrainian` /
+`example_ukrainian`) on entries in `src/lib/data/*.json` for multi-language
+support. See `ai-docs/multi-language.md` for the field spec and
+`ai-docs/ideas/multi-languages.md` for language priority/rationale.
+
+```
+# Set your API key (or put it in a .env file in the project root)
+export ANTHROPIC_API_KEY=sk-ant-...
+
+# Dry run first — pilot file is vocab-a1.json by default
+node scripts/add-language-translations.mjs --language ukrainian --dry-run
+
+# Run for real
+node scripts/add-language-translations.mjs --language ukrainian
+
+# Process a different file (or several, comma-separated)
+node scripts/add-language-translations.mjs --language ukrainian --files vocab-a2.json
+node scripts/add-language-translations.mjs --language ukrainian --files uttrykk-a1.json,uttrykk-a1-preview.json
+
+# Smaller batches if you hit rate limits
+node scripts/add-language-translations.mjs --language ukrainian --batch 10
+
+# Re-process entries that already have the field (e.g. after a prompt tweak)
+node scripts/add-language-translations.mjs --language ukrainian --force
+
+# Add a new language later (e.g. Polish) — just swap --language,
+# after adding it to LANGUAGE_CONFIG at the top of the script
+node scripts/add-language-translations.mjs --language polish --files vocab-a1.json
+```
+
+Writes a `.bak` backup of each file before overwriting it.
+
 ## Find duplicates and apply the decisions
 
 ```

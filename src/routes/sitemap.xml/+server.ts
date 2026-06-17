@@ -1,7 +1,7 @@
 // /src/routes/sitemap.xml/+server.ts
 import * as sitemap from 'super-sitemap';
 import type { RequestHandler } from '@sveltejs/kit';
-import { CATEGORIES_BY_LEVEL, PLUS_CATEGORIES, FREE_GRAMMAR_TOPICS } from '$lib/types';
+import { CATEGORIES_BY_LEVEL, PLUS_CATEGORIES, FREE_GRAMMAR_TOPICS } from '$lib/config';
 import { parsePosts, type RawPostModule } from '$lib/blog';
 
 export const GET: RequestHandler = async () => {

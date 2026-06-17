@@ -25,133 +25,6 @@ import type { RequestHandler } from './$types';
 
 const VALID_GOALS = ['vocab', 'grammar', 'speaking', 'listening', 'writing'];
 const VALID_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
-// ---------------------------------------------------------------------------
-// Sanitisation helper — strips control characters and HTML-like content from
-// free-text fields before they are stored. Svelte escapes on render so this
-// won't prevent XSS on the site itself, but it keeps the DB clean.
-// ---------------------------------------------------------------------------
-function sanitizeText(val: string): string {
-  return (
-    val
-      // eslint-disable-next-line no-control-regex
-      .replace(/[\u0000-\u001F\u007F]/g, '') // control characters
-      .replace(/[<>]/g, '') // no HTML angle brackets
-      .trim()
-  );
-}
-
-// Allowlists mirror the LANGUAGES / COUNTRIES arrays in OnboardingSlides.svelte.
-// Kept here (rather than imported) so the API stays self-contained and can
-// validate requests that bypass the UI entirely.
-
-const VALID_LANG_CODES = new Set([
-  'sq',
-  'am',
-  'ar',
-  'zh',
-  'da',
-  'nl',
-  'en',
-  'fi',
-  'fr',
-  'de',
-  'el',
-  'hi',
-  'id',
-  'it',
-  'ja',
-  'kk',
-  'ko',
-  'ku',
-  'lv',
-  'lt',
-  'ms',
-  'ne',
-  'nb',
-  'fa',
-  'pl',
-  'pt',
-  'ro',
-  'ru',
-  'si',
-  'so',
-  'es',
-  'sv',
-  'sw',
-  'tl',
-  'ta',
-  'th',
-  'ti',
-  'tr',
-  'uk',
-  'ur',
-  'vi'
-]);
-
-const VALID_COUNTRY_CODES = new Set([
-  'AF',
-  'AL',
-  'DZ',
-  'AR',
-  'AU',
-  'AT',
-  'BD',
-  'BE',
-  'BR',
-  'CA',
-  'CL',
-  'CN',
-  'CO',
-  'HR',
-  'CZ',
-  'DK',
-  'EG',
-  'ER',
-  'ET',
-  'FI',
-  'FR',
-  'DE',
-  'GH',
-  'GR',
-  'HU',
-  'IN',
-  'ID',
-  'IQ',
-  'IR',
-  'IE',
-  'IT',
-  'JP',
-  'KE',
-  'KR',
-  'LT',
-  'LV',
-  'MX',
-  'MA',
-  'NL',
-  'NZ',
-  'NG',
-  'NO',
-  'PK',
-  'PH',
-  'PL',
-  'PT',
-  'RO',
-  'RU',
-  'SA',
-  'SO',
-  'ZA',
-  'ES',
-  'LK',
-  'SE',
-  'CH',
-  'SY',
-  'TH',
-  'TR',
-  'UA',
-  'GB',
-  'US',
-  'VN'
-]);
 
 export const PATCH: RequestHandler = async ({ request, locals }) => {
   if (!locals.user) error(401, { message: 'Unauthorized' });
@@ -173,34 +46,20 @@ export const PATCH: RequestHandler = async ({ request, locals }) => {
   const update: Record<string, unknown> = {};
 
   if ('display_name' in body) {
-    const rawName = (body.display_name as string | null) ?? null;
-    const name = rawName ? sanitizeText(rawName) : null;
+    const name = (body.display_name as string | null)?.trim() ?? null;
     if (name && name.length > 40) error(422, { message: 'Display name too long.' });
-    update.display_name = name || null;
+    update.display_name = name;
   }
 
   if ('native_language' in body) {
     const lang = body.native_language as string | null;
-    if (!lang) {
-      update.native_language = null;
-    } else if (VALID_LANG_CODES.has(lang)) {
-      // Known ISO 639-1 code — accept as-is
-      update.native_language = lang;
-    } else {
-      // Free-text "Other" path — sanitize and cap length
-      const cleaned = sanitizeText(lang);
-      if (cleaned.length > 60) error(422, { message: 'Language name too long.' });
-      update.native_language = cleaned || null;
-    }
+    update.native_language = lang || null;
   }
 
   if ('other_languages' in body) {
     const langs = body.other_languages;
     if (!Array.isArray(langs)) error(422, { message: 'other_languages must be an array.' });
-    // Only accept known ISO codes — no free-text in the multi-select
-    update.other_languages = (langs as unknown[]).filter(
-      (l): l is string => typeof l === 'string' && VALID_LANG_CODES.has(l)
-    );
+    update.other_languages = langs.filter((l: unknown) => typeof l === 'string');
   }
 
   if ('current_level' in body) {
@@ -221,7 +80,6 @@ export const PATCH: RequestHandler = async ({ request, locals }) => {
 
   if ('country' in body) {
     const c = body.country as string | null;
-    if (c && !VALID_COUNTRY_CODES.has(c)) error(422, { message: 'Invalid country.' });
     update.country = c || null;
   }
 

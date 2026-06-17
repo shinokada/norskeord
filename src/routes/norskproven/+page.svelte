@@ -2,7 +2,7 @@
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import * as m from '$lib/paraglide/messages.js';
   import { page } from '$app/state';
-  import { isFreeTest } from '$lib/types';
+  import { isFreeTest } from '$lib/access';
   import { Tooltip } from 'flowbite-svelte';
 
   const plan = $derived(page.data.plan);
