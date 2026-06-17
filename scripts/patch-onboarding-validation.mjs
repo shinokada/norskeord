@@ -140,28 +140,28 @@ const patches = [
   {
     label: 'Insert sanitizeText helper + VALID_LANG_CODES + VALID_COUNTRY_CODES',
     from: AFTER_VALID_LEVELS,
-    to: AFTER_VALID_LEVELS + HELPERS,
+    to: AFTER_VALID_LEVELS + HELPERS
   },
   {
     label: 'display_name — add sanitizeText',
     from: OLD_DISPLAY_NAME,
-    to: NEW_DISPLAY_NAME,
+    to: NEW_DISPLAY_NAME
   },
   {
     label: 'native_language — allowlist ISO codes, sanitize free-text Other',
     from: OLD_NATIVE_LANG,
-    to: NEW_NATIVE_LANG,
+    to: NEW_NATIVE_LANG
   },
   {
     label: 'other_languages — filter to known ISO codes only',
     from: OLD_OTHER_LANGS,
-    to: NEW_OTHER_LANGS,
+    to: NEW_OTHER_LANGS
   },
   {
     label: 'country — validate against VALID_COUNTRY_CODES',
     from: OLD_COUNTRY,
-    to: NEW_COUNTRY,
-  },
+    to: NEW_COUNTRY
+  }
 ];
 
 let result = raw;
