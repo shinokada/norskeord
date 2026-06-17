@@ -1,7 +1,7 @@
 My thoughts after reading the following:
 
 - I need to create script to run using `ANTHROPIC_API_KEY` to generate Ukrainian for src/lib/data/vocab-a1.json and later on other files. So the script should be able to accept argument for files in src/lib/data directory. The file lives in scripts directory.
-- According to Norwegian Statistics, (see the table below) the top 10 immigrant countries are Ukraine, Syria, Sweden, Spain, Germany, Romania, Afghanistan, Italy, United Kingdom, Pakistan, France, Türkiye ,Netherlands, Portugal.
+- According to Norwegian Statistics, (see the table below) the top 10 immigrant countries are Ukraine, Syria, Sweden, Spain, Germany, Romania, Afghanistan, Italy, United Kingdom, Pakistan, France, Türkiye ,Netherlands, Portugal. So the steps to increase languages is an order of Ukrainian, Spanish, German, Roaminan, Italian, since they have steady immigrants to Norway and left-to-right writing.
 - Relating to ./when-can-app-be-monolingual.md, start from A1, src/lib/data/vocab-a1.json, uttrykk-1.json, uttrykk-a1.preview.json, and messages/xx.json
 - B2 and above don't need since it will be monolingual.
 - I think I will start from Ukrainian first, then other languages.
@@ -32,7 +32,7 @@ One practical flag on scope, since your plan already handles this well but it's 
 
 Given the scale of the data work (6 level files × N languages × translation + example fields, with B1+ also carrying the Norwegian `definition` field unaffected), I'd pilot with **one** language end-to-end first — Polish or Ukrainian — including native-speaker QA on a sample, before fanning out the AI-generation prompt across all languages and levels at once. That way if there's a systemic issue (e.g., AI-generated examples drifting above the target CEFR level, which is the same defining-vocabulary problem we discussed for the Norwegian definitions), you catch it on one language's worth of data instead of four.
 
-## Countries with Net Immigration > 100
+## Countries with Net Immigration > 100 (Source: https://www.ssb.no/en/statbank/table/05476)
 
 | Citizenship    | 2024 Net immigration | 2025 Net immigration (second column) |
 | :------------- | -------------------: | -----------------------------------: |
