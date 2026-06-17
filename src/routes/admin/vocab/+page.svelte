@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import type { VocabEntry, CEFRLevel, PartOfSpeech, Category } from '$lib/types';
-  import { CATEGORIES_BY_LEVEL } from '$lib/types';
+  import { CATEGORIES_BY_LEVEL } from '$lib/config';
   import type { ReviewState } from '$lib/admin/reviewState';
 
   type DraftEntry = VocabEntry & { _status?: 'added' | 'edited' | 'deleted'; _key: string };

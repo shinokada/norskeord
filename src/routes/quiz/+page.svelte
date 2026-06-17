@@ -13,7 +13,8 @@
   } from '$lib/quiz';
   import { loadProgressMap, loadProgressMapFromSupabase, saveProgress } from '$lib/progress';
   import type { FSRSRating, CardProgress } from '$lib/types';
-  import { isFreeQuizCategory, FREE_QUIZ_CATEGORIES } from '$lib/types';
+  import { isFreeQuizCategory } from '$lib/access';
+  import { FREE_QUIZ_CATEGORIES } from '$lib/config';
   import * as m from '$lib/paraglide/messages';
 
   let { data } = $props();
