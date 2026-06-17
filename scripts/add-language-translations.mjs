@@ -57,7 +57,16 @@ const LANGUAGE_CONFIG = {
   ukrainian: { name: 'Ukrainian', nativeName: 'українська' },
   polish: { name: 'Polish', nativeName: 'polski' },
   spanish: { name: 'Spanish', nativeName: 'español' },
-  arabic: { name: 'Arabic (Syrian)', nativeName: 'العربية السورية' }
+  arabic: { name: 'Arabic (Syrian)', nativeName: 'العربية السورية' },
+  german: { name: 'German', nativeName: 'Deutsch' },
+  romanian: { name: 'Romanian', nativeName: 'română' },
+  dari: { name: 'Dari', nativeName: 'دری' },
+  italian: { name: 'Italian', nativeName: 'italiano' },
+  urdu: { name: 'Urdu', nativeName: 'اردو' },
+  french: { name: 'French', nativeName: 'français' },
+  turkish: { name: 'Turkish', nativeName: 'Türkçe' },
+  dutch: { name: 'Dutch', nativeName: 'Nederlands' },
+  portuguese: { name: 'Portuguese', nativeName: 'português' }
 };
 
 // ── Config ───────────────────────────────────────────────────────────────────
