@@ -56,7 +56,8 @@ import { fileURLToPath } from 'url';
 const LANGUAGE_CONFIG = {
   ukrainian: { name: 'Ukrainian', nativeName: 'українська' },
   polish: { name: 'Polish', nativeName: 'polski' },
-  spanish: { name: 'Spanish', nativeName: 'español' }
+  spanish: { name: 'Spanish', nativeName: 'español' },
+  arabic: { name: 'Arabic (Syrian)', nativeName: 'العربية السورية' }
 };
 
 // ── Config ───────────────────────────────────────────────────────────────────
