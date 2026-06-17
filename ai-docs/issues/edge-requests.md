@@ -49,7 +49,7 @@ The `/[level]/[category]` pages serve the same vocab data to everyone. The only 
 
 ```ts
 // src/routes/[level]/[category]/+page.server.ts
-import { CATEGORIES_BY_LEVEL } from '$lib/types';
+import { CATEGORIES_BY_LEVEL } from '$lib/config';
 
 export const prerender = true; // add this
 

@@ -1,13 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { injectPlusPlan } from './helpers.js';
 
-test('home page has expected h1', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'Everything you need to learn Norwegian'
-  );
-});
-
 test('home page shows all CEFR level cards linking to hub pages', async ({ page }) => {
   await page.goto('/');
   for (const level of ['A1', 'A2', 'B1', 'B2', 'C']) {

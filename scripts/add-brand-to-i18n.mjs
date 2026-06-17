@@ -34,12 +34,12 @@ const PATCHES = [
   {
     file: 'messages/en.json',
     key: 'home_hero_heading',
-    value: 'Learn Norwegian with',
+    value: 'Learn Norwegian with'
   },
   {
     file: 'messages/en.json',
     key: 'home_hero_heading_highlight',
-    value: 'Norskeord',
+    value: 'Norskeord'
   },
 
   // First paragraph under H1
@@ -47,36 +47,35 @@ const PATCHES = [
     file: 'messages/en.json',
     key: 'home_hero_body',
     value:
-      'Norskeord gives you vocabulary flashcards, grammar practice, quizzes, and Norskprøven preparation — all in one place, from A1 to C.',
+      'Norskeord gives you vocabulary flashcards, grammar practice, quizzes, and Norskprøven preparation — all in one place, from A1 to C.'
   },
 
   // Badge pill above the H1
   {
     file: 'messages/en.json',
     key: 'home_hero_badge',
-    value: 'Norskeord — Norwegian learning from A1 to C',
+    value: 'Norskeord — Norwegian learning from A1 to C'
   },
 
   // Features section heading
   {
     file: 'messages/en.json',
     key: 'home_features_heading',
-    value: 'Everything Norskeord offers',
+    value: 'Everything Norskeord offers'
   },
 
   // Guide subtitle — already has "Norskeord" in the title; add to subtitle too
   {
     file: 'messages/en.json',
     key: 'guide_page_subtitle',
-    value: 'Norskeord is a vocabulary app built for serious Norwegian learners.',
+    value: 'Norskeord is a vocabulary app built for serious Norwegian learners.'
   },
 
   // Login page — currently has zero brand signal
   {
     file: 'messages/en.json',
     key: 'login_subheading',
-    value:
-      "Sign in to Norskeord — we'll send a link to your email, no password needed.",
+    value: "Sign in to Norskeord — we'll send a link to your email, no password needed."
   },
 
   // ── nb.json ─────────────────────────────────────────────────────────────────
@@ -85,12 +84,12 @@ const PATCHES = [
   {
     file: 'messages/nb.json',
     key: 'home_hero_heading',
-    value: 'Lær norsk med',
+    value: 'Lær norsk med'
   },
   {
     file: 'messages/nb.json',
     key: 'home_hero_heading_highlight',
-    value: 'Norskeord',
+    value: 'Norskeord'
   },
 
   // First paragraph under H1
@@ -98,37 +97,36 @@ const PATCHES = [
     file: 'messages/nb.json',
     key: 'home_hero_body',
     value:
-      'Norskeord gir deg vokabular-flashkort, grammatikkøvelser, quiz og Norskprøven-forberedelse — alt på ett sted, fra A1 til C.',
+      'Norskeord gir deg vokabular-flashkort, grammatikkøvelser, quiz og Norskprøven-forberedelse — alt på ett sted, fra A1 til C.'
   },
 
   // Badge pill
   {
     file: 'messages/nb.json',
     key: 'home_hero_badge',
-    value: 'Norskeord — norsk ordforråd fra A1 til C',
+    value: 'Norskeord — norsk ordforråd fra A1 til C'
   },
 
   // Features section heading
   {
     file: 'messages/nb.json',
     key: 'home_features_heading',
-    value: 'Alt Norskeord tilbyr',
+    value: 'Alt Norskeord tilbyr'
   },
 
   // Guide subtitle
   {
     file: 'messages/nb.json',
     key: 'guide_page_subtitle',
-    value: 'Norskeord er en vokabularapp for seriøse norskinnlærere.',
+    value: 'Norskeord er en vokabularapp for seriøse norskinnlærere.'
   },
 
   // Login page
   {
     file: 'messages/nb.json',
     key: 'login_subheading',
-    value:
-      'Logg inn på Norskeord — vi sender en lenke til e-posten din, ingen passord nødvendig.',
-  },
+    value: 'Logg inn på Norskeord — vi sender en lenke til e-posten din, ingen passord nødvendig.'
+  }
 ];
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

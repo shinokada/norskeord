@@ -6,12 +6,9 @@ import {
   GRAMMAR_LS_PREFIX,
   clearUserProgress
 } from '$lib/progress';
-import {
-  freeGrammarQuestionIds,
-  FREE_GRAMMAR_PER_TOPIC,
-  questionLevels,
-  topicLevels
-} from '$lib/types';
+import { FREE_GRAMMAR_PER_TOPIC } from '$lib/config';
+import { freeGrammarQuestionIds } from '$lib/access';
+import { questionLevels, topicLevels } from '$lib/vocab-helpers';
 import type { CardProgress, GrammarQuestion } from '$lib/types';
 import { createEmptyCard } from 'ts-fsrs';
 

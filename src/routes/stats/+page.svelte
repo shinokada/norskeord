@@ -14,7 +14,7 @@
     clearUserProgress
   } from '$lib/progress';
   import type { ActivityCell } from '$lib/progress';
-  import { CATEGORIES_BY_LEVEL } from '$lib/types';
+  import { CATEGORIES_BY_LEVEL } from '$lib/config';
   import { State } from 'ts-fsrs';
   import type { CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
   import { SvelteMap } from 'svelte/reactivity';

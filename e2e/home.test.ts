@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
 
 test('index page has expected h1', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'Everything you need to learn Norwegian'
+    'Learn Norwegian with Norskeord'
   );
 });
 
