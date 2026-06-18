@@ -5,18 +5,52 @@
 -- ── upsert_study_day ──────────────────────────────────────────────────────────
 -- Increments the card count for a given user/day, inserting if absent.
 -- Called from the client via supabase.rpc('upsert_study_day', { p_user_id, p_day }).
+-- SET search_path = '' prevents search_path injection (Supabase linter 0011).
+-- REVOKE on anon ensures only authenticated users can call this RPC.
 -- Deployed via: Supabase Dashboard → SQL Editor
 
-CREATE OR REPLACE FUNCTION upsert_study_day(p_user_id uuid, p_day date)
+CREATE OR REPLACE FUNCTION public.upsert_study_day(p_user_id uuid, p_day date)
 RETURNS void
 LANGUAGE sql
 SECURITY DEFINER
+SET search_path = ''
 AS $$
-  INSERT INTO study_days (user_id, day, cards)
+  INSERT INTO public.study_days (user_id, day, cards)
   VALUES (p_user_id, p_day, 1)
   ON CONFLICT (user_id, day)
-  DO UPDATE SET cards = study_days.cards + 1;
+  DO UPDATE SET cards = public.study_days.cards + 1;
 $$;
+
+REVOKE EXECUTE ON FUNCTION public.upsert_study_day(uuid, date) FROM anon;
+
+-- ── get_welcome_sequence_candidates ──────────────────────────────────────────
+-- Returns users who signed up ~24 hours ago and haven't received a welcome
+-- sequence email yet. Called by the welcome-sequence Edge Function / cron.
+-- Internal only — not callable by end users.
+-- SET search_path = '' prevents search_path injection (Supabase linter 0011).
+-- REVOKE on anon + authenticated locks it down (Supabase linter 0028/0029).
+
+CREATE OR REPLACE FUNCTION public.get_welcome_sequence_candidates()
+RETURNS TABLE (id uuid, email text, created_at timestamptz)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = ''
+AS $$
+  SELECT u.id, u.email, u.created_at
+  FROM auth.users u
+  WHERE u.created_at >= now() - interval '25 hours'
+    AND u.created_at <= now() - interval '23 hours'
+    AND u.email_confirmed_at IS NOT NULL
+    AND u.email IS NOT NULL
+    AND NOT EXISTS (
+      SELECT 1 FROM public.email_log el
+      WHERE el.user_id = u.id
+        AND el.email_type = 'welcome_sequence'
+    );
+$$;
+
+REVOKE EXECUTE ON FUNCTION public.get_welcome_sequence_candidates() FROM anon;
+REVOKE EXECUTE ON FUNCTION public.get_welcome_sequence_candidates() FROM authenticated;
 
 -- ── pg_cron: send-push-reminders ──────────────────────────────────────────────
 -- Calls the send-push-reminders Edge Function daily at 19:00 UTC (21:00 Oslo).
