@@ -214,7 +214,7 @@
         >
           <span
             class={[
-              'mt-0.5 flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full border-2',
+              'mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2',
               billingInterval === 'month'
                 ? 'border-indigo-600 bg-indigo-600'
                 : 'border-gray-300 dark:border-gray-600'
@@ -225,11 +225,11 @@
             {/if}
           </span>
           <span class="flex-1">
-            <span class="block text-sm font-semibold text-gray-800 dark:text-gray-100">Monthly</span
+            <span class="block text-base font-semibold text-gray-800 dark:text-gray-100">Monthly</span
             >
-            <span class="block text-xs text-gray-500 dark:text-gray-400">Cancel any time</span>
+            <span class="block text-sm text-gray-500 dark:text-gray-400">Cancel any time</span>
           </span>
-          <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">49 NOK/mo</span>
+          <span class="text-base font-semibold text-gray-800 dark:text-gray-100">49 NOK/mo</span>
         </button>
 
         <button
@@ -244,7 +244,7 @@
         >
           <span
             class={[
-              'mt-0.5 flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full border-2',
+              'mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2',
               billingInterval === 'year'
                 ? 'border-indigo-600 bg-indigo-600'
                 : 'border-gray-300 dark:border-gray-600'
@@ -255,18 +255,18 @@
             {/if}
           </span>
           <span class="flex-1">
-            <span class="block text-sm font-semibold text-gray-800 dark:text-gray-100">
+            <span class="block text-base font-semibold text-gray-800 dark:text-gray-100">
               Annual
               <span
                 class="ml-1.5 inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-400"
                 >save 98 NOK</span
               >
             </span>
-            <span class="block text-xs text-gray-500 dark:text-gray-400"
+            <span class="block text-sm text-gray-500 dark:text-gray-400"
               >490 NOK billed once a year</span
             >
           </span>
-          <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">41 NOK/mo</span>
+          <span class="text-base font-semibold text-gray-800 dark:text-gray-100">41 NOK/mo</span>
         </button>
       </div>
 
