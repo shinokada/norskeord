@@ -65,7 +65,7 @@
 
 {#key localeStore.current}
   {#if showOnboardingSlides}
-    <OnboardingSlides ipCountry={data.ipCountry} />
+    <OnboardingSlides />
   {/if}
 
   <Nav />

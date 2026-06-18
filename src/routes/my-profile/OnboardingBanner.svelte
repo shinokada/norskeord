@@ -5,10 +5,12 @@
 
   let { profile }: { profile: Profile | null } = $props();
 
+  // native_language and country were removed in migration 020 (decision 9 in
+  // ai-docs/implementation/new-languages.md), so only the three remaining
+  // meaningful onboarding fields are tracked here.
   const missingFields = $derived.by(() => {
     const missing: string[] = [];
     if (!profile?.display_name) missing.push('display_name');
-    if (!profile?.native_language) missing.push('native_language');
     if (!profile?.current_level) missing.push('current_level');
     if (!profile?.study_goals?.length) missing.push('study_goals');
     return missing;
@@ -60,9 +62,6 @@
       <p class="mt-2 text-xs text-amber-700 dark:text-amber-400">
         {#if missingFields.includes('display_name')}
           <span class="block">• {m.onboarding_nudge_missing_name()}</span>
-        {/if}
-        {#if missingFields.includes('native_language')}
-          <span class="block">• {m.onboarding_nudge_missing_language()}</span>
         {/if}
         {#if missingFields.includes('current_level')}
           <span class="block">• {m.onboarding_nudge_missing_level()}</span>

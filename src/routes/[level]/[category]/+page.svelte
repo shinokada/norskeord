@@ -1,6 +1,7 @@
 <script lang="ts">
   import { VocabFlashcardPage } from '$lib';
   import { removeHyphensAndCapitalize } from '$lib/utils';
+  import { languageStore } from '$lib/stores/language.svelte';
 
   let { data } = $props();
 
@@ -18,6 +19,7 @@
     entries={data.entries}
     title={categoryName}
     level={data.level}
+    language={languageStore.current}
     prevCategory={data.prevCategory}
     nextCategory={data.nextCategory}
   />
