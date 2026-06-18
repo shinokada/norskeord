@@ -1,5 +1,23 @@
 # norske-flashcard
 
+## 2.29.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added Spanish and Ukrainian as supported languages
+    - Introduced independent flashcard language preference setting
+  - **Improvements**
+    - Streamlined onboarding experience with reduced steps
+    - Changed UI language selector from toggle to dropdown menu
+    - Enhanced preferences page with new language configuration options
+  - **Tests**
+    - Updated e2e tests to reflect new UI language labels and behavior
+  * Widens ui_language CHECK to accept es and uk
+  * Adds flashcard_language column (NOT NULL DEFAULT 'english')
+  * Renames card_direction values from no_en/en_no/def_no → l1_l2/l2_l1/def_l1
+  * Drops native_language, other_languages, and country
+
 ## 2.28.0
 
 ### Minor Changes
