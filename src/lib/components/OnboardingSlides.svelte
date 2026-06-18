@@ -1,21 +1,22 @@
 <script lang="ts">
   import { invalidateAll } from '$app/navigation';
-  import { untrack } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
+  import { languageStore } from '$lib/stores/language.svelte';
+  import { LANGUAGES, languageEntryForLocale } from '$lib/config';
+  import type { FlashcardLanguage } from '$lib/types';
 
-  // --- Props ---
-  let { ipCountry }: { ipCountry: string | null } = $props();
+  // No props — ipCountry removed (decision 9 in new-languages.md).
 
   // Local open state — set to false to instantly close the modal without
   // waiting for invalidateAll() / goto() to re-run the layout load.
   let open = $state(true);
 
   // --- Slide definitions ---
-  // Slides 1–6 collect data; slide 7 is the "let's get started" completion
-  // screen and isn't counted in the step indicator (TOTAL stays 6).
-  type Slide = 1 | 2 | 3 | 4 | 5 | 6 | 7;
-  const TOTAL = 6;
+  // Slides 1–3 collect data; slide 4 is the "let's get started" completion
+  // screen and isn't counted in the step indicator (TOTAL stays 3).
+  type Slide = 1 | 2 | 3 | 4;
+  const TOTAL = 3;
 
   // --- State ---
   let current = $state<Slide>(1);
@@ -26,138 +27,24 @@
   let displayName = $state('');
 
   // Slide 2
-  let nativeLanguage = $state('');
-  let nativeLanguageOther = $state(''); // free-text when "Other" is selected
-
-  // Slide 3
-  let otherLanguages = $state<string[]>([]);
-
-  // Slide 4
   let currentLevel = $state('');
 
-  // Slide 5
+  // Slide 3
   let studyGoals = $state<string[]>([]);
 
-  // Slide 6 — untrack() so Svelte doesn't warn about capturing the initial
-  // prop value; ipCountry is server-derived and won't change during the session.
-  let country = $state(untrack(() => ipCountry ?? ''));
-
-  // Slide 7 (completion screen) — toggles the "browse all levels" fallback
+  // Slide 4 (completion screen) — toggles the "browse all levels" fallback
   let showAllLevels = $state(false);
 
-  // --- Language list (ISO 639-1, sorted A–Z by English name) ---
-  const LANGUAGES = [
-    { code: 'sq', label: 'Albanian / Shqip' },
-    { code: 'am', label: 'Amharic / አማርኛ' },
-    { code: 'ar', label: 'Arabic / عربي' },
-    { code: 'zh', label: 'Chinese / 中文' },
-    { code: 'da', label: 'Danish / Dansk' },
-    { code: 'nl', label: 'Dutch / Nederlands' },
-    { code: 'en', label: 'English' },
-    { code: 'fi', label: 'Finnish / Suomi' },
-    { code: 'fr', label: 'French / Français' },
-    { code: 'de', label: 'German / Deutsch' },
-    { code: 'el', label: 'Greek / Ελληνικά' },
-    { code: 'hi', label: 'Hindi / हिन्दी' },
-    { code: 'id', label: 'Indonesian / Bahasa Indonesia' },
-    { code: 'it', label: 'Italian / Italiano' },
-    { code: 'ja', label: 'Japanese / 日本語' },
-    { code: 'kk', label: 'Kazakh / Қазақша' },
-    { code: 'ko', label: 'Korean / 한국어' },
-    { code: 'ku', label: 'Kurdish / Kurdî' },
-    { code: 'lv', label: 'Latvian / Latviešu' },
-    { code: 'lt', label: 'Lithuanian / Lietuvių' },
-    { code: 'ms', label: 'Malay / Bahasa Melayu' },
-    { code: 'ne', label: 'Nepali / नेपाली' },
-    { code: 'nb', label: 'Norwegian / Norsk' },
-    { code: 'fa', label: 'Persian / فارسی' },
-    { code: 'pl', label: 'Polish / Polski' },
-    { code: 'pt', label: 'Portuguese / Português' },
-    { code: 'ro', label: 'Romanian / Română' },
-    { code: 'ru', label: 'Russian / Русский' },
-    { code: 'si', label: 'Sinhala / සිංහල' },
-    { code: 'so', label: 'Somali / Soomaali' },
-    { code: 'es', label: 'Spanish / Español' },
-    { code: 'sv', label: 'Swedish / Svenska' },
-    { code: 'sw', label: 'Swahili / Kiswahili' },
-    { code: 'tl', label: 'Tagalog / Filipino' },
-    { code: 'ta', label: 'Tamil / தமிழ்' },
-    { code: 'th', label: 'Thai / ภาษาไทย' },
-    { code: 'ti', label: 'Tigrinya / ትግርኛ' },
-    { code: 'tr', label: 'Turkish / Türkçe' },
-    { code: 'uk', label: 'Ukrainian / Українська' },
-    { code: 'ur', label: 'Urdu / اردو' },
-    { code: 'vi', label: 'Vietnamese / Tiếng Việt' }
-  ];
+  // flashcard_language: derived from the chosen UI locale — mirrors the
+  // LANGUAGES key whose code matches localeStore.current, except 'norwegian'
+  // (not a valid flashcard language) which falls back to 'english'.
+  function defaultFlashcardLanguage(localeCode: string): FlashcardLanguage {
+    const entry = languageEntryForLocale(localeCode);
+    const key = entry?.[0];
+    return key && key !== 'norwegian' ? (key as FlashcardLanguage) : 'english';
+  }
 
-  // The sentinel value used when the user picks "Other"
-  const OTHER_CODE = '__other__';
-
-  // Countries (ISO 3166-1 alpha-2, ~60 most relevant)
-  const COUNTRIES = [
-    { code: 'AF', label: 'Afghanistan' },
-    { code: 'AL', label: 'Albania' },
-    { code: 'DZ', label: 'Algeria' },
-    { code: 'AR', label: 'Argentina' },
-    { code: 'AU', label: 'Australia' },
-    { code: 'AT', label: 'Austria' },
-    { code: 'BD', label: 'Bangladesh' },
-    { code: 'BE', label: 'Belgium' },
-    { code: 'BR', label: 'Brazil' },
-    { code: 'CA', label: 'Canada' },
-    { code: 'CL', label: 'Chile' },
-    { code: 'CN', label: 'China' },
-    { code: 'CO', label: 'Colombia' },
-    { code: 'HR', label: 'Croatia' },
-    { code: 'CZ', label: 'Czech Republic' },
-    { code: 'DK', label: 'Denmark' },
-    { code: 'EG', label: 'Egypt' },
-    { code: 'ER', label: 'Eritrea' },
-    { code: 'ET', label: 'Ethiopia' },
-    { code: 'FI', label: 'Finland' },
-    { code: 'FR', label: 'France' },
-    { code: 'DE', label: 'Germany' },
-    { code: 'GH', label: 'Ghana' },
-    { code: 'GR', label: 'Greece' },
-    { code: 'HU', label: 'Hungary' },
-    { code: 'IN', label: 'India' },
-    { code: 'ID', label: 'Indonesia' },
-    { code: 'IQ', label: 'Iraq' },
-    { code: 'IR', label: 'Iran' },
-    { code: 'IE', label: 'Ireland' },
-    { code: 'IT', label: 'Italy' },
-    { code: 'JP', label: 'Japan' },
-    { code: 'KE', label: 'Kenya' },
-    { code: 'KR', label: 'South Korea' },
-    { code: 'LT', label: 'Lithuania' },
-    { code: 'LV', label: 'Latvia' },
-    { code: 'MX', label: 'Mexico' },
-    { code: 'MA', label: 'Morocco' },
-    { code: 'NL', label: 'Netherlands' },
-    { code: 'NZ', label: 'New Zealand' },
-    { code: 'NG', label: 'Nigeria' },
-    { code: 'NO', label: 'Norway' },
-    { code: 'PK', label: 'Pakistan' },
-    { code: 'PH', label: 'Philippines' },
-    { code: 'PL', label: 'Poland' },
-    { code: 'PT', label: 'Portugal' },
-    { code: 'RO', label: 'Romania' },
-    { code: 'RU', label: 'Russia' },
-    { code: 'SA', label: 'Saudi Arabia' },
-    { code: 'SO', label: 'Somalia' },
-    { code: 'ZA', label: 'South Africa' },
-    { code: 'ES', label: 'Spain' },
-    { code: 'LK', label: 'Sri Lanka' },
-    { code: 'SE', label: 'Sweden' },
-    { code: 'CH', label: 'Switzerland' },
-    { code: 'SY', label: 'Syria' },
-    { code: 'TH', label: 'Thailand' },
-    { code: 'TR', label: 'Turkey' },
-    { code: 'UA', label: 'Ukraine' },
-    { code: 'GB', label: 'United Kingdom' },
-    { code: 'US', label: 'United States' },
-    { code: 'VN', label: 'Vietnam' }
-  ];
+  let flashcardLanguage = $state<FlashcardLanguage>(defaultFlashcardLanguage(localeStore.current));
 
   const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
@@ -169,26 +56,6 @@
     { key: 'writing', label: () => m.onboarding_goal_writing() }
   ];
 
-  // --- Derived helpers ---
-
-  // The effective native-language value to persist: if "Other" was chosen,
-  // store the trimmed free-text string; otherwise store the ISO code.
-  const effectiveNativeLanguage = $derived(
-    nativeLanguage === OTHER_CODE ? nativeLanguageOther.trim() : nativeLanguage
-  );
-
-  // Slide 3 chip list: exclude the chosen native language (or 'other' sentinel)
-  // from the selectable "other languages" so users can't double-select it.
-  const otherLangOptions = $derived(LANGUAGES.filter((l) => l.code !== nativeLanguage));
-
-  function toggleOtherLang(code: string) {
-    if (otherLanguages.includes(code)) {
-      otherLanguages = otherLanguages.filter((c) => c !== code);
-    } else {
-      otherLanguages = [...otherLanguages, code];
-    }
-  }
-
   function toggleGoal(key: string) {
     if (studyGoals.includes(key)) {
       studyGoals = studyGoals.filter((g) => g !== key);
@@ -197,8 +64,7 @@
     }
   }
 
-  // Maps a CEFR level to its category-overview page. C has no per-letter
-  // split (no /learn/c1, /learn/c2 routes) — it's a single combined hub.
+  // Maps a CEFR level to its category-overview page.
   function levelHref(level: string): string {
     return level === 'C' ? '/learn/c' : `/learn/${level.toLowerCase()}`;
   }
@@ -206,14 +72,8 @@
   // --- Can advance? ---
   const canAdvance = $derived(() => {
     if (current === 1) return displayName.trim().length > 0;
-    if (current === 2) {
-      if (nativeLanguage === OTHER_CODE) return nativeLanguageOther.trim().length > 0;
-      return nativeLanguage.length > 0;
-    }
-    if (current === 3) return true; // optional
-    if (current === 4) return currentLevel.length > 0;
-    if (current === 5) return studyGoals.length > 0;
-    if (current === 6) return true; // optional
+    if (current === 2) return currentLevel.length > 0;
+    if (current === 3) return studyGoals.length > 0;
     return false;
   });
 
@@ -243,25 +103,27 @@
     if (!canAdvance()) return;
 
     if (current === 1) {
-      await patch({ display_name: displayName.trim() });
-    } else if (current === 2) {
-      await patch({ native_language: effectiveNativeLanguage });
-    } else if (current === 3) {
-      await patch({ other_languages: otherLanguages });
-    } else if (current === 4) {
-      await patch({ current_level: currentLevel });
-    } else if (current === 5) {
-      await patch({ study_goals: studyGoals });
-    } else if (current === 6) {
-      await patch({ country: country || null, onboarding_done: true });
+      // Persist display name and the derived flashcard language together
+      await patch({ display_name: displayName.trim(), flashcard_language: flashcardLanguage });
       if (!error) {
-        // Onboarding is saved server-side — show the "let's get started"
-        // screen instead of closing immediately. We deliberately don't
-        // invalidateAll() here: that would refresh layout data, flip
-        // onboardingDone to true, and unmount this component before slide 7
-        // ever renders. The modal closes naturally once the person
-        // navigates away from slide 7 (see levelHref links + dismissCompletion).
-        current = 7;
+        // Immediately update the local store so flashcard pages pick it up
+        languageStore.set(flashcardLanguage);
+      }
+    } else if (current === 2) {
+      const patchBody: Record<string, unknown> = { current_level: currentLevel };
+      // Nudge toward definition mode for B1+ users who also chose a Norwegian UI
+      if (localeStore.current === 'nb' && currentLevel !== 'A1' && currentLevel !== 'A2') {
+        patchBody.card_direction = 'def_l1';
+      }
+      await patch(patchBody);
+    } else if (current === 3) {
+      await patch({ study_goals: studyGoals, onboarding_done: true });
+      if (!error) {
+        // Show the "let's get started" completion screen instead of closing.
+        // Deliberately not calling invalidateAll() here — that would flip
+        // onboardingDone to true in the layout and unmount this component
+        // before slide 4 ever renders.
+        current = 4;
         return;
       }
     }
@@ -280,16 +142,16 @@
     if (!error) await invalidateAll();
   }
 
-  // Dismiss the slide 7 completion screen — close instantly via local state.
-  // Navigation (if any) is handled directly in onclick handlers to satisfy
-  // svelte/no-navigation-without-resolve.
+  // Dismiss the completion screen — close instantly via local state.
   function dismissCompletion() {
     open = false;
   }
 
   // --- Locale switching (slide 1) ---
   async function switchLocale(code: string) {
-    localeStore.set(code as 'en' | 'nb');
+    localeStore.set(code as typeof localeStore.current);
+    // Update derived flashcard language whenever UI language changes
+    flashcardLanguage = defaultFlashcardLanguage(code);
     try {
       await fetch('/api/profile/language', {
         method: 'PATCH',
@@ -316,8 +178,8 @@
       <!-- Close / snooze button -->
       <button
         type="button"
-        onclick={current === 7 ? dismissCompletion : snooze}
-        aria-label={current === 7 ? m.onboarding_close_aria_done() : m.onboarding_close_aria()}
+        onclick={current === 4 ? dismissCompletion : snooze}
+        aria-label={current === 4 ? m.onboarding_close_aria_done() : m.onboarding_close_aria()}
         class="absolute right-4 top-4 rounded-full p-1.5 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
       >
         <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -330,7 +192,7 @@
         </svg>
       </button>
 
-      <!-- Progress indicator (slides 1–6 only — slide 7 is the completion screen) -->
+      <!-- Progress indicator (slides 1–3 only — slide 4 is the completion screen) -->
       {#if current <= TOTAL}
         <div class="mb-6 mt-10 flex items-center gap-1.5">
           {#each Array(TOTAL) as _, i (i)}
@@ -354,26 +216,22 @@
         <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s1_sub()}</p>
 
         <div class="mb-5">
-          <!-- <p> instead of <label>: labels a group of buttons, not a single control -->
           <p class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">
             {m.onboarding_s1_lang_label()}
           </p>
-          <div class="flex gap-2" role="group" aria-label={m.onboarding_s1_lang_label()}>
-            {#each [{ code: 'en', flag: '🇬🇧', label: 'English' }, { code: 'nb', flag: '🇳🇴', label: 'Norsk' }] as lang (lang.code)}
-              <button
-                type="button"
-                onclick={() => switchLocale(lang.code)}
-                aria-pressed={localeStore.current === lang.code}
-                class="flex-1 rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-colors {localeStore.current ===
-                lang.code
-                  ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
-                  : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
-              >
-                {lang.flag}
-                {lang.label}
-              </button>
+          <!-- Dropdown over all 4 LANGUAGES (replaces the 2-button en/nb toggle) -->
+          <select
+            bind:value={localeStore.current}
+            onchange={(e) => {
+              const code = (e.target as HTMLSelectElement).value;
+              switchLocale(code);
+            }}
+            class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+          >
+            {#each Object.entries(LANGUAGES) as [, { name, flag, code }] (code)}
+              <option value={code}>{flag} {name}</option>
             {/each}
-          </div>
+          </select>
         </div>
 
         <div>
@@ -396,72 +254,8 @@
           />
         </div>
 
-        <!-- ── Slide 2: Native language ── -->
+        <!-- ── Slide 2: Norwegian level ── -->
       {:else if current === 2}
-        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-          {m.onboarding_s2_heading()}
-        </h2>
-        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s2_sub()}</p>
-        <label for="onb-native-lang" class="sr-only">{m.onboarding_s2_heading()}</label>
-        <select
-          id="onb-native-lang"
-          bind:value={nativeLanguage}
-          class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-        >
-          <option value="">{m.onboarding_select_placeholder()}</option>
-          {#each LANGUAGES as lang (lang.code)}
-            <option value={lang.code}>{lang.label}</option>
-          {/each}
-          <option value={OTHER_CODE}>Other / Annet</option>
-        </select>
-
-        {#if nativeLanguage === OTHER_CODE}
-          <div class="mt-3">
-            <label
-              for="onb-native-lang-other"
-              class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Please specify / Spesifiser
-            </label>
-            <input
-              id="onb-native-lang-other"
-              type="text"
-              maxlength="60"
-              placeholder="e.g. Tibetan, Wolof…"
-              bind:value={nativeLanguageOther}
-              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-              onkeydown={(e) => {
-                if (e.key === 'Enter') next();
-              }}
-            />
-          </div>
-        {/if}
-
-        <!-- ── Slide 3: Other languages ── -->
-      {:else if current === 3}
-        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-          {m.onboarding_s3_heading()}
-        </h2>
-        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s3_sub()}</p>
-        <div class="flex max-h-60 flex-wrap gap-2 overflow-y-auto">
-          {#each otherLangOptions as lang (lang.code)}
-            <button
-              type="button"
-              onclick={() => toggleOtherLang(lang.code)}
-              aria-pressed={otherLanguages.includes(lang.code)}
-              class="rounded-full border px-3 py-1 text-xs font-medium transition-colors {otherLanguages.includes(
-                lang.code
-              )
-                ? 'border-indigo-600 bg-indigo-600 text-white'
-                : 'border-gray-300 text-gray-600 hover:border-indigo-400 dark:border-gray-600 dark:text-gray-400'}"
-            >
-              {lang.label}
-            </button>
-          {/each}
-        </div>
-
-        <!-- ── Slide 4: Norwegian level ── -->
-      {:else if current === 4}
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s4_heading()}
         </h2>
@@ -484,8 +278,8 @@
           {/each}
         </div>
 
-        <!-- ── Slide 5: Study goals ── -->
-      {:else if current === 5}
+        <!-- ── Slide 3: Study goals ── -->
+      {:else if current === 3}
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s5_heading()}
         </h2>
@@ -510,26 +304,8 @@
           {/each}
         </div>
 
-        <!-- ── Slide 6: Country ── -->
-      {:else if current === 6}
-        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-          {m.onboarding_s6_heading()}
-        </h2>
-        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s6_sub()}</p>
-        <label for="onb-country" class="sr-only">{m.onboarding_s6_heading()}</label>
-        <select
-          id="onb-country"
-          bind:value={country}
-          class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-        >
-          <option value="">{m.onboarding_s6_skip()}</option>
-          {#each COUNTRIES as c (c.code)}
-            <option value={c.code}>{c.label}</option>
-          {/each}
-        </select>
-
-        <!-- ── Slide 7: Completion ── -->
-      {:else if current === 7}
+        <!-- ── Slide 4: Completion ── -->
+      {:else if current === 4}
         <div class="flex flex-col items-center py-4 text-center">
           <div class="mb-4 text-5xl" aria-hidden="true">🎉</div>
           <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
@@ -583,7 +359,7 @@
         <p class="mt-3 text-xs text-red-600 dark:text-red-400">{error}</p>
       {/if}
 
-      <!-- Navigation buttons (slides 1–6 only — slide 7 uses its own CTAs above) -->
+      <!-- Navigation buttons (slides 1–3 only — slide 4 uses its own CTAs above) -->
       {#if current <= TOTAL}
         <div class="mt-8 flex items-center justify-between">
           {#if current > 1}

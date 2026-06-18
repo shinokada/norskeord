@@ -1,28 +1,28 @@
-import { LANGUAGES } from '$lib/config';
-import { type Language } from '$lib/types';
+import { FLASHCARD_LANGUAGES } from '$lib/config';
+import { type FlashcardLanguage } from '$lib/types';
 
 const STORAGE_KEY = 'norskeord-language';
 
 function createLanguageStore() {
-  let stored: Language | null = null;
+  let stored: FlashcardLanguage | null = null;
   if (typeof localStorage !== 'undefined') {
     try {
-      stored = localStorage.getItem(STORAGE_KEY) as Language | null;
+      stored = localStorage.getItem(STORAGE_KEY) as FlashcardLanguage | null;
     } catch (e) {
       console.warn('Failed to read language preference from localStorage:', e);
     }
   }
 
-  // Guard against stale or invalid stored values
-  const initial: Language = stored && stored in LANGUAGES ? stored : 'english';
+  // Guard against stale or invalid stored values (e.g. 'norwegian')
+  const initial: FlashcardLanguage = stored && stored in FLASHCARD_LANGUAGES ? stored : 'english';
 
-  let current = $state<Language>(initial);
+  let current = $state<FlashcardLanguage>(initial);
 
   return {
     get current() {
       return current;
     },
-    set(lang: Language) {
+    set(lang: FlashcardLanguage) {
       current = lang;
       if (typeof localStorage !== 'undefined') {
         try {
