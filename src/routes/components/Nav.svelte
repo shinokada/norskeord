@@ -29,9 +29,8 @@
     UserCircleOutline,
     ArrowLeftToBracketOutline
   } from 'flowbite-svelte-icons';
-  // import { LANGUAGES } from '$lib/config';
-  // import type { Language } from '$lib/types';
-  // import { languageStore } from '$lib/stores/language.svelte';
+  import { LANGUAGES, languageEntryForLocale } from '$lib/config';
+  import type { Locale } from '$lib/localeStore.svelte';
   import No from '$lib/No.svelte';
   import { page } from '$app/state';
   import ChevronDownOutline from './ChevronDownOutline.svelte';
@@ -74,15 +73,19 @@
   const effectiveIsPlus = $derived(user ? isPlus : authStore.isPlus);
 
   // Language switcher
-  async function toggleLocale() {
-    const next = localeStore.current === 'en' ? 'nb' : 'en';
-    localeStore.set(next);
+  let langDropdownOpen = $state(false);
+  let currentLangEntry = $derived(languageEntryForLocale(localeStore.current));
+
+  async function switchLocale(code: Locale) {
+    if (code === localeStore.current) return;
+    localeStore.set(code);
+    langDropdownOpen = false;
     if (effectiveUser) {
       try {
         await fetch('/api/profile/language', {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ locale: next })
+          body: JSON.stringify({ locale: code })
         });
       } catch {
         console.warn('[Nav] Failed to persist locale to profile');
@@ -161,14 +164,29 @@
       </button>
     {/if}
 
-    <button
-      type="button"
-      onclick={toggleLocale}
-      aria-label="Switch language"
-      class="inline-block rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-    >
-      {localeStore.current === 'en' ? m.nav_switch_to_norwegian() : m.nav_switch_to_english()}
-    </button>
+    <div class="relative">
+      <button
+        type="button"
+        onclick={() => (langDropdownOpen = !langDropdownOpen)}
+        aria-label="Switch language"
+        class="inline-flex items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+      >
+        {currentLangEntry?.[1].flag}
+        {currentLangEntry?.[1].name}
+        <ChevronDownOutline class="h-4 w-4" />
+      </button>
+      <Dropdown bind:isOpen={langDropdownOpen} simple class="dark:border-gray-700 dark:bg-blue-950">
+        {#each Object.entries(LANGUAGES) as [, { name, flag, code }] (code)}
+          <DropdownItem
+            class="dark:hover:bg-blue-900 {localeStore.current === code ? 'font-semibold' : ''}"
+            onclick={() => switchLocale(code as Locale)}
+          >
+            {flag}
+            {name}
+          </DropdownItem>
+        {/each}
+      </Dropdown>
+    </div>
 
     {#if !effectiveUser}
       <a

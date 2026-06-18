@@ -3,6 +3,9 @@
   import { untrack } from 'svelte';
   import type { Profile } from '$lib/server/profile';
   import { localeStore } from '$lib/localeStore.svelte';
+  import { languageStore } from '$lib/stores/language.svelte';
+  import { LANGUAGES, FLASHCARD_LANGUAGES } from '$lib/config';
+  import type { FlashcardLanguage } from '$lib/types';
   import * as m from '$lib/paraglide/messages.js';
 
   let {
@@ -39,10 +42,14 @@
   // uiLanguage uses writable $derived so the radio can be changed freely
   // before saving while staying in sync with the nav button toggle.
   // Written back to the store on save via applyToLocalStorage().
-  let uiLanguage = $derived.by<'en' | 'nb'>(() => localeStore.current);
-  // $state so bind:group can write to it; untrack() suppresses the Svelte warning about
-  // capturing the initial prop value — that's intentional here.
-  let cardDirection = $state(untrack(() => profile?.card_direction ?? 'no_en'));
+  let uiLanguage = $derived.by(() => localeStore.current);
+  // $state so it can be changed before saving; untrack() suppresses the Svelte
+  // warning about capturing the initial prop value — that's intentional here.
+  let cardDirection = $state(untrack(() => profile?.card_direction ?? 'l1_l2'));
+  // flashcard language — seeded from profile (Plus, cross-device) or languageStore
+  let flashcardLanguage = $state<FlashcardLanguage>(
+    untrack(() => (profile?.flashcard_language ?? languageStore.current) as FlashcardLanguage)
+  );
   // include_phrases: true → 'phrase', false → 'word'
   let cardType = $derived((profile?.include_phrases ?? false) ? 'phrase' : 'word');
   let voiceSpeed = $derived(String(profile?.voice_speed ?? 1));
@@ -70,22 +77,22 @@
     { value: '20', label: '20 questions' }
   ];
 
-  // Card direction options: 'def_no' is only shown for Word type at B1+
   let cardDirectionOptions = $derived.by(() => {
+    const l2Name = LANGUAGES[flashcardLanguage].name;
     const base = [
-      { value: 'no_en', label: m.profile_prefs_card_direction_no_en() },
-      { value: 'en_no', label: m.profile_prefs_card_direction_en_no() }
+      { value: 'l1_l2', label: `Norsk → ${l2Name}` },
+      { value: 'l2_l1', label: `${l2Name} → Norsk` }
     ];
     if (cardType === 'word' && B1_PLUS_LEVELS.has(currentLevel)) {
-      return [...base, { value: 'def_no', label: m.profile_prefs_card_direction_def_no() }];
+      return [...base, { value: 'def_l1', label: m.profile_prefs_card_direction_def_no() }];
     }
     return base;
   });
 
-  // If def_no is selected but the user switches to phrase or A1/A2, fall back to no_en
+  // If def_l1 is selected but the user switches to phrase or A1/A2, fall back to l1_l2
   let effectiveCardDirection = $derived(
-    cardDirection === 'def_no' && (cardType !== 'word' || !B1_PLUS_LEVELS.has(currentLevel))
-      ? 'no_en'
+    cardDirection === 'def_l1' && (cardType !== 'word' || !B1_PLUS_LEVELS.has(currentLevel))
+      ? 'l1_l2'
       : cardDirection
   );
 
@@ -93,7 +100,7 @@
   let showDefNote = $derived(cardType === 'word' && B1_PLUS_LEVELS.has(currentLevel));
 
   function applyToLocalStorage() {
-    const modeMap: Record<string, string> = { no_en: 'noreng', en_no: 'engnor', def_no: 'defnor' };
+    const modeMap: Record<string, string> = { l1_l2: 'noreng', l2_l1: 'engnor', def_l1: 'defnor' };
     localStorage.setItem('vocab-flashcard-mode', modeMap[effectiveCardDirection] ?? 'noreng');
     localStorage.setItem('vocab-flashcard-card-type', cardType);
     localStorage.setItem(LS_SPEED, voiceSpeed);
@@ -101,8 +108,9 @@
     localStorage.setItem('vocab-flashcard-session-limit', sessionLimit);
     localStorage.setItem('vocab-quiz-limit', quizLimit);
     localStorage.setItem('vocab-flashcard-show-example', String(showExample));
-    // Write through the store so the nav button updates reactively.
+    // Write through the stores so the nav and flashcard page pick up changes reactively.
     localeStore.set(uiLanguage);
+    languageStore.set(flashcardLanguage);
   }
 </script>
 
@@ -161,25 +169,47 @@
 
     <!-- Interface language -->
     <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
+      <label
+        for="ui_language"
+        class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+      >
         {m.profile_prefs_ui_language()}
-      </p>
-      <div class="flex gap-3">
-        {#each [{ value: 'en', label: '🇬🇧 English' }, { value: 'nb', label: '🇳🇴 Norsk Bokmål' }] as opt (opt.value)}
-          <label class="flex cursor-pointer items-center gap-2">
-            <input
-              type="radio"
-              name="ui_language"
-              value={opt.value}
-              bind:group={uiLanguage}
-              class="accent-indigo-600"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300">{opt.label}</span>
-          </label>
+      </label>
+      <select
+        id="ui_language"
+        name="ui_language"
+        bind:value={uiLanguage}
+        class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100"
+      >
+        {#each Object.entries(LANGUAGES) as [, { name, flag, code }] (code)}
+          <option value={code}>{flag} {name}</option>
         {/each}
-      </div>
+      </select>
       <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
         {m.profile_prefs_ui_language_hint()}
+      </p>
+    </div>
+
+    <!-- Flashcard language -->
+    <div>
+      <label
+        for="flashcard_language"
+        class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+      >
+        Flashcard language
+      </label>
+      <select
+        id="flashcard_language"
+        name="flashcard_language"
+        bind:value={flashcardLanguage}
+        class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100"
+      >
+        {#each Object.entries(FLASHCARD_LANGUAGES) as [key, { name, flag }] (key)}
+          <option value={key}>{flag} {name}</option>
+        {/each}
+      </select>
+      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        The language your flashcards are translated into.
       </p>
     </div>
 

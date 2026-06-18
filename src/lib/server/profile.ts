@@ -7,8 +7,9 @@ export interface Profile {
   display_name: string | null;
   avatar_url: string | null;
   current_level: 'A1' | 'A2' | 'B1' | 'B2' | 'C';
-  ui_language: 'en' | 'nb';
-  card_direction: 'no_en' | 'en_no' | 'def_no';
+  ui_language: 'en' | 'nb' | 'es' | 'uk';
+  card_direction: 'l1_l2' | 'l2_l1' | 'def_l1';
+  flashcard_language: 'english' | 'spanish' | 'ukrainian';
   include_phrases: boolean;
   daily_reminder: boolean;
   email_reminder: boolean;
@@ -19,9 +20,6 @@ export interface Profile {
   quiz_limit: number | null; // null = default (10)
   show_example: boolean; // show example translation below the card by default
   // Onboarding fields
-  native_language: string | null; // ISO 639-1, e.g. 'ja', 'en'
-  other_languages: string[] | null; // ISO 639-1 codes
-  country: string | null; // ISO 3166-1 alpha-2, e.g. 'NO', 'JP'
   study_goals: string[] | null; // ['vocab','grammar','speaking','listening','writing']
   onboarding_done: boolean;
   onboarding_snoozed_at: string | null; // ISO timestamp
@@ -40,6 +38,7 @@ export type ProfileUpdate = Partial<
     | 'display_name'
     | 'current_level'
     | 'ui_language'
+    | 'flashcard_language'
     | 'card_direction'
     | 'include_phrases'
     | 'daily_reminder'
