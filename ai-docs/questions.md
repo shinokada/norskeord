@@ -9,6 +9,7 @@ Please do not use Write_file, it takes time. Instead can you write a script to u
 The Filesystem tool can read it but str_replace can't find it. You need to read it fully and rewrite it. In this case, if the file is big and the rewrite is just adding lines or simple replacement, please output it with instruction or create a downloadable file or write Python or mjs script so that I can do it. Because your Write File operation has to rewrite whole file and it takes time to complete.
 
 ---
+
 - Mobile check
 - How about Start free button rather than login?
 - Feedback on flashcard, grammar, quiz etc? Is it practical?
