@@ -70,7 +70,7 @@
 
   <Nav />
 
-  <section class="border-b border-gray-300 pb-8 dark:border-gray-600">
+  <section class="border-b border-gray-300 pb-8 px-4 dark:border-gray-600">
     <div class="mx-auto max-w-7xl text-center">{@render children()}</div>
   </section>
 

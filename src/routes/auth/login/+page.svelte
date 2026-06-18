@@ -175,10 +175,10 @@
 <div class="mx-auto max-w-sm px-4 py-16">
   <div class="mb-8 text-center">
     <h1 class="text-2xl font-bold dark:text-white">{m.login_heading()}</h1>
-    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+    <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
       {m.login_subheading()}
     </p>
-    <p class="mt-3 text-xs font-medium text-green-600 dark:text-green-400">
+    <p class="mt-3 text-sm font-medium text-green-600 dark:text-green-400">
       ✓ Free &nbsp;·&nbsp; No credit card required
     </p>
   </div>
@@ -189,7 +189,7 @@
     >
       <p class="text-2xl">📬</p>
       <p class="mt-3 font-semibold dark:text-white">{m.login_success_heading()}</p>
-      <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-base text-gray-500 dark:text-gray-400">
         {m.login_success_body({ email: submittedEmail })}
       </p>
     </div>
@@ -200,7 +200,7 @@
       >
         <label
           for="email"
-          class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          class="mb-1.5 block text-base font-medium text-gray-700 dark:text-gray-300"
         >
           {m.login_email_label()}
         </label>
@@ -212,10 +212,10 @@
           autocomplete="email"
           bind:value={emailValue}
           disabled={submitting}
-          class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder-gray-500"
+          class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-base text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder-gray-500"
         />
         {#if displayError}
-          <p class="mt-1.5 text-xs text-red-500">{displayError}</p>
+          <p class="mt-1.5 text-sm text-red-500">{displayError}</p>
         {/if}
 
         <!--
@@ -266,7 +266,7 @@
         </button>
       </div>
 
-      <p class="mt-6 text-center text-xs text-gray-400 dark:text-gray-500">
+      <p class="mt-6 text-center text-sm text-gray-400 dark:text-gray-500">
         {m.login_no_password_note()}
       </p>
     </form>

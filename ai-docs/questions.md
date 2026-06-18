@@ -10,6 +10,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+- Mobile check
 - How about Start free button rather than login?
 - Feedback on flashcard, grammar, quiz etc? Is it practical?
 - Grammtikk section for B2/C1
