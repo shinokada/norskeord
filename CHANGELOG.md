@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.31.0
+
+### Minor Changes
+
+- - **New Features**
+    - Language switcher now shows abbreviated language codes instead of full names.
+  - **Style**
+    - Improved typography across the home page, login page, Plus billing interval toggle, learn pages, and feature cards.
+    - Updated footer layout to a clearer grid structure with better text sizing.
+    - Refined sidebar icon/hover colors and added consistent horizontal padding to page content.
+  - **Documentation**
+    - Added a “Mobile check” item to the Questions checklist.
+
 ## 2.30.0
 
 ### Minor Changes
