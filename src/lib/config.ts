@@ -156,10 +156,10 @@ export const CATEGORIES_BY_LEVEL = {
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 
 export const LANGUAGES = {
-  norwegian: { name: 'Norwegian', flag: '🇳🇴', code: 'nb' },
-  english: { name: 'English', flag: '🇬🇧', code: 'en' },
-  spanish: { name: 'Spanish', flag: '🇪🇸', code: 'es' },
-  ukrainian: { name: 'Ukrainian', flag: '🇺🇦', code: 'uk' }
+  norwegian: { name: 'Norwegian', flag: '🇳🇴', code: 'nb', abbr:'NO' },
+  english: { name: 'English', flag: '🇬🇧', code: 'en', abbr:'EN' },
+  spanish: { name: 'Spanish', flag: '🇪🇸', code: 'es', abbr:'ES' },
+  ukrainian: { name: 'Ukrainian', flag: '🇺🇦', code: 'uk', abbr:'UK' }
 } as const;
 
 /**
