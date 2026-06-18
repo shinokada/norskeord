@@ -29,14 +29,15 @@ export interface CardProgress {
 }
 
 export type Language = keyof typeof LANGUAGES;
+export type FlashcardLanguage = Exclude<Language, 'norwegian'>;
 
 export interface VocabEntry {
   id: string;
   lemma?: string;
   norsk: string;
   english: string;
-  spanish: string;
-  ukrainian: string;
+  spanish?: string;
+  ukrainian?: string;
   example: string;
   example_english: string;
   example_spanish?: string;

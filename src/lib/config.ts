@@ -156,11 +156,25 @@ export const CATEGORIES_BY_LEVEL = {
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 
 export const LANGUAGES = {
-  norwegian: { name: 'Norwegian', flag: '🇳🇴' },
-  english: { name: 'English', flag: '🇬🇧' },
-  spanish: { name: 'Spanish', flag: '🇪🇸' },
-  ukrainian: { name: 'Ukrainian', flag: '🇺🇦' }
+  norwegian: { name: 'Norwegian', flag: '🇳🇴', code: 'nb' },
+  english: { name: 'English', flag: '🇬🇧', code: 'en' },
+  spanish: { name: 'Spanish', flag: '🇪🇸', code: 'es' },
+  ukrainian: { name: 'Ukrainian', flag: '🇺🇦', code: 'uk' }
 } as const;
+
+/**
+ * LANGUAGES minus `norwegian` — the set of valid *flashcard* translation
+ * languages. Norwegian is the language being learned, so it's only valid
+ * as an *interface* language.
+ */
+export const FLASHCARD_LANGUAGES = Object.fromEntries(
+  Object.entries(LANGUAGES).filter(([key]) => key !== 'norwegian')
+) as Omit<typeof LANGUAGES, 'norwegian'>;
+
+/** Reverse lookup — given a paraglide locale code, find its LANGUAGES entry. */
+export function languageEntryForLocale(code: string) {
+  return Object.entries(LANGUAGES).find(([, v]) => v.code === code);
+}
 
 /**
  * Categories that require a Plus subscription.
