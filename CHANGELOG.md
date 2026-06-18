@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.30.0
+
+### Minor Changes
+
+- - **New Features**
+    - Enhanced onboarding experience with new steps for user profile configuration and language preferences
+    - Improved step progression and completion flow
+  - **Improvements**
+    - Simplified onboarding field requirements
+    - Expanded multilingual support with localization updates across English, Spanish, Norwegian, and Ukrainian
+  - **Documentation**
+    - Updated onboarding testing guidance
+
 ## 2.29.0
 
 ### Minor Changes
