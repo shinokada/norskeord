@@ -172,7 +172,7 @@
         class="inline-flex items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {currentLangEntry?.[1].flag}
-        {currentLangEntry?.[1].name}
+        {currentLangEntry?.[1].abbr}
         <ChevronDownOutline class="h-4 w-4" />
       </button>
       <Dropdown bind:isOpen={langDropdownOpen} simple class="dark:border-gray-700 dark:bg-blue-950">
