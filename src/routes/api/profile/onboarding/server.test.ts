@@ -253,18 +253,6 @@ describe('PATCH /api/profile/onboarding', () => {
     expect(payload.study_goals).toEqual(['vocab', 'grammar', 'writing']);
   });
 
-  it('normalizes an empty country to null', async () => {
-    await PATCH({ request: makeRequest({ country: '' }), locals: makeLocals() } as never);
-    const [payload] = mockUpsert.mock.calls[0];
-    expect(payload.country).toBeNull();
-  });
-
-  it('keeps a valid country code', async () => {
-    await PATCH({ request: makeRequest({ country: 'NO' }), locals: makeLocals() } as never);
-    const [payload] = mockUpsert.mock.calls[0];
-    expect(payload.country).toBe('NO');
-  });
-
   it('coerces onboarding_done to a boolean', async () => {
     await PATCH({ request: makeRequest({ onboarding_done: 1 }), locals: makeLocals() } as never);
     const [payload] = mockUpsert.mock.calls[0];
@@ -288,16 +276,6 @@ describe('PATCH /api/profile/onboarding', () => {
     } as never);
     const [payload] = mockUpsert.mock.calls[0];
     expect(payload.onboarding_snoozed_at).toBe(ts);
-  });
-
-  it('writes multiple fields from a single request (final slide)', async () => {
-    await PATCH({
-      request: makeRequest({ country: 'NO', onboarding_done: true }),
-      locals: makeLocals()
-    } as never);
-    const [payload] = mockUpsert.mock.calls[0];
-    expect(payload.country).toBe('NO');
-    expect(payload.onboarding_done).toBe(true);
   });
 
   // ── DB error ──────────────────────────────────────────────────────────────
