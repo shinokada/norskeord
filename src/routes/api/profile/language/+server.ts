@@ -10,9 +10,10 @@
  */
 import { json } from '@sveltejs/kit';
 import { upsertProfile } from '$lib/server/profile';
+import { LANGUAGES } from '$lib/config';
 import type { RequestHandler } from './$types';
 
-const VALID_LOCALES = ['en', 'nb'] as const;
+const VALID_LOCALES = Object.values(LANGUAGES).map((l) => l.code);
 type Locale = (typeof VALID_LOCALES)[number];
 
 export const PATCH: RequestHandler = async ({ request, locals }) => {

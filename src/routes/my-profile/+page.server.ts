@@ -110,6 +110,9 @@ export const actions: Actions = {
 
     const current_level = data.get('current_level') as ProfileUpdate['current_level'];
     const ui_language = data.get('ui_language') as ProfileUpdate['ui_language'];
+    const flashcard_language = data.get(
+      'flashcard_language'
+    ) as ProfileUpdate['flashcard_language'];
     const card_direction = data.get('card_direction') as ProfileUpdate['card_direction'];
     // card_type radio: 'word' | 'phrase' → stored as include_phrases boolean
     const card_type = data.get('card_type') as string | null;
@@ -130,8 +133,9 @@ export const actions: Actions = {
     const show_example = data.get('show_example') === 'true';
 
     const validLevels = ['A1', 'A2', 'B1', 'B2', 'C'];
-    const validLanguages = ['en', 'nb'];
-    const validDirections = ['no_en', 'en_no', 'def_no'];
+    const validLanguages = ['en', 'nb', 'es', 'uk'];
+    const validFlashcardLanguages = ['english', 'spanish', 'ukrainian'];
+    const validDirections = ['l1_l2', 'l2_l1', 'def_l1'];
     const validCardTypes = ['word', 'phrase'];
     const validSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5];
     const validPitches = [0.7, 1.0, 1.3];
@@ -143,6 +147,9 @@ export const actions: Actions = {
     }
     if (ui_language && !validLanguages.includes(ui_language)) {
       return fail(422, { field: 'ui_language', message: 'Invalid language.' });
+    }
+    if (flashcard_language && !validFlashcardLanguages.includes(flashcard_language)) {
+      return fail(422, { field: 'flashcard_language', message: 'Invalid flashcard language.' });
     }
     if (card_direction && !validDirections.includes(card_direction)) {
       return fail(422, { field: 'card_direction', message: 'Invalid card direction.' });
@@ -166,6 +173,7 @@ export const actions: Actions = {
     const update: ProfileUpdate = {
       ...(current_level && { current_level }),
       ...(ui_language && { ui_language }),
+      ...(flashcard_language && { flashcard_language }),
       ...(card_direction && { card_direction }),
       include_phrases,
       ...(voice_speed !== null && { voice_speed }),
@@ -178,10 +186,6 @@ export const actions: Actions = {
     const { error } = await upsertProfile(locals.supabase, locals.user.id, update);
     if (error) {
       return fail(500, { field: 'preferences', message: 'Failed to save. Please try again.' });
-    }
-
-    if (ui_language === 'nb') {
-      redirect(302, '/nb/my-profile');
     }
 
     return { success: true, action: 'updatePreferences' };

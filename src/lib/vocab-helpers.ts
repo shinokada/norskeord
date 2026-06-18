@@ -2,19 +2,25 @@
 // Utility functions for VocabEntry and GrammarQuestion.
 // Kept separate from types.ts so types.ts stays declaration-only.
 
-import type { VocabEntry, Language, GrammarQuestion, CEFRLevel } from '$lib/types';
+import type { VocabEntry, FlashcardLanguage, GrammarQuestion, CEFRLevel } from '$lib/types';
 
 // ── Vocab ────────────────────────────────────────────────────────────────────
 
 /**
- * Type-safe helper for dynamic field access — centralises type assertions
- * so they don't need to be scattered across components.
+ * Returns the translation of a vocab entry in the given flashcard language,
+ * falling back to English when the field is missing (e.g. B2/C entries that
+ * haven't been translated yet).
  */
-export function getTranslation(entry: VocabEntry, language: Language): string {
-  return entry[language as keyof VocabEntry] as string;
+export function getTranslation(entry: VocabEntry, language: FlashcardLanguage): string {
+  if (language === 'english') return entry.english;
+  return entry[language] ?? entry.english;
 }
 
-export function getExampleTranslation(entry: VocabEntry, language: Language): string | undefined {
+export function getExampleTranslation(
+  entry: VocabEntry,
+  language: FlashcardLanguage
+): string | undefined {
+  if (language === 'english') return entry.example_english;
   return entry[`example_${language}` as keyof VocabEntry] as string | undefined;
 }
 

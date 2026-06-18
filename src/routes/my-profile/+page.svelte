@@ -15,12 +15,14 @@
     !!data.user && !data.profile?.onboarding_done && data.profile?.onboarding_snoozed_at != null
   );
 
-  // Which fields are empty — passed to sections so they can render red labels
+  // Which fields are empty — passed to sections so they can render red labels.
+  // native_language and country were removed in migration 020 (decision 9 in
+  // ai-docs/implementation/new-languages.md), so only the three remaining
+  // meaningful onboarding fields are tracked here.
   const missingFields = $derived.by(() => {
     if (!showNudge) return [] as string[];
     const missing: string[] = [];
     if (!data.profile?.display_name) missing.push('display_name');
-    if (!data.profile?.native_language) missing.push('native_language');
     if (!data.profile?.current_level) missing.push('current_level');
     if (!data.profile?.study_goals?.length) missing.push('study_goals');
     return missing;

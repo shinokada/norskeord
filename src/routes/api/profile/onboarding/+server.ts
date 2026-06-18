@@ -25,6 +25,7 @@ import type { RequestHandler } from './$types';
 
 const VALID_GOALS = ['vocab', 'grammar', 'speaking', 'listening', 'writing'];
 const VALID_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
+const VALID_FLASHCARD_LANGUAGES = new Set(['english', 'spanish', 'ukrainian']);
 // ---------------------------------------------------------------------------
 // Sanitisation helper — strips control characters and HTML-like content from
 // free-text fields before they are stored. Svelte escapes on render so this
@@ -177,6 +178,14 @@ export const PATCH: RequestHandler = async ({ request, locals }) => {
     const name = rawName ? sanitizeText(rawName) : null;
     if (name && name.length > 40) error(422, { message: 'Display name too long.' });
     update.display_name = name || null;
+  }
+
+  if ('flashcard_language' in body) {
+    const lang = body.flashcard_language as string | null;
+    if (lang && !VALID_FLASHCARD_LANGUAGES.has(lang)) {
+      error(422, { message: 'Invalid flashcard language.' });
+    }
+    update.flashcard_language = lang || 'english';
   }
 
   if ('native_language' in body) {

@@ -6,7 +6,7 @@
   import { supabase } from '$lib/supabase';
   import { Flashcard, ArrowLeft, ArrowRight } from '$lib';
   import SpeakButton from '$lib/SpeakButton.svelte';
-  import type { VocabEntry, Language, FSRSRating, CardProgress } from '$lib/types';
+  import type { VocabEntry, FlashcardLanguage, FSRSRating, CardProgress } from '$lib/types';
   import { LANGUAGES } from '$lib/config';
   import { getTranslation, getExampleTranslation } from '$lib/vocab-helpers';
   import {
@@ -30,7 +30,7 @@
   interface Props {
     entries: VocabEntry[];
     title?: string;
-    language?: Language;
+    language?: FlashcardLanguage;
     level?: string;
     prevCategory?: CategoryNav | null;
     nextCategory?: CategoryNav | null;
@@ -42,7 +42,7 @@
     level = '',
     prevCategory = null,
     nextCategory = null,
-    language = 'english'
+    language = 'english' as FlashcardLanguage
   }: Props = $props();
 
   type Mode = 'noreng' | 'engnor' | 'defnor';
@@ -59,15 +59,6 @@
     timer: ReturnType<typeof setInterval>;
     countdown: number;
   }
-
-  // function makeItem(entry: VocabEntry, m: Mode): DeckItem {
-  //   const translation = getTranslation(entry, language);
-  //   return {
-  //     entry,
-  //     front: m === 'noreng' ? entry.norsk : translation,
-  //     back: m === 'noreng' ? translation : entry.norsk
-  //   };
-  // }
 
   const LS_MODE = 'vocab-flashcard-mode';
   const LS_CARD_TYPE = 'vocab-flashcard-card-type';
@@ -218,23 +209,25 @@
 
   function makeDeckItem(entry: VocabEntry, mo: Mode, ct: CardType): DeckItem {
     if (ct === 'phrase') {
+      const translation = getExampleTranslation(entry, language) ?? entry.example_english;
       return {
         entry,
-        front: mo === 'noreng' ? entry.example : entry.example_english,
-        back: mo === 'noreng' ? entry.example_english : entry.example
+        front: mo === 'noreng' ? entry.example : translation,
+        back: mo === 'noreng' ? translation : entry.example
       };
     }
     if (mo === 'defnor') {
       return {
         entry,
-        front: entry.definition ?? entry.english, // fallback for entries without a definition
+        front: entry.definition ?? getTranslation(entry, language),
         back: entry.norsk
       };
     }
+    const translation = getTranslation(entry, language);
     return {
       entry,
-      front: mo === 'noreng' ? entry.norsk : entry.english,
-      back: mo === 'noreng' ? entry.english : entry.norsk
+      front: mo === 'noreng' ? entry.norsk : translation,
+      back: mo === 'noreng' ? translation : entry.norsk
     };
   }
 
