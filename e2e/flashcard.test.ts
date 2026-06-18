@@ -32,14 +32,18 @@ test('A1 greetings flashcard page loads and shows title', async ({ page }) => {
 
 test('A1 greetings page has mode toggle buttons', async ({ page }) => {
   await page.goto('/a1/greetings');
-  await expect(page.getByRole('button', { name: 'Norsk', exact: true })).toBeVisible();
+
+  // Mode buttons now show "Norsk → English" / "English → Norsk" (language name injected)
+  await expect(page.getByRole('button', { name: /Norsk →/i })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Word', exact: true })).toBeVisible();
 
-  await page.getByRole('button', { name: 'Norsk', exact: true }).click();
+  // Click the "Norsk →" direction button, then switch to phrase mode
+  await page.getByRole('button', { name: /Norsk →/i }).click();
   await page.getByRole('button', { name: 'Word', exact: true }).click();
   await page.reload();
 
-  await expect(page.getByRole('button', { name: 'English', exact: true })).toBeVisible();
+  // After reload, the reverse-direction button should be visible
+  await expect(page.getByRole('button', { name: /→ Norsk/i })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Phrase', exact: true })).toBeVisible();
 });
 

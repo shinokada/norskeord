@@ -14,8 +14,9 @@
  *   localeStore.set('nb');
  */
 import { getLocale, setLocale } from '$lib/paraglide/runtime';
+import { LANGUAGES } from '$lib/config';
 
-type Locale = 'en' | 'nb';
+export type Locale = (typeof LANGUAGES)[keyof typeof LANGUAGES]['code']; // 'nb' | 'en' | 'es' | 'uk'
 
 function createLocaleStore() {
   let current = $state<Locale>(getLocale() as Locale);
@@ -28,8 +29,8 @@ function createLocaleStore() {
 
   function init() {
     const saved = localStorage.getItem('locale');
-    if (saved === 'en' || saved === 'nb') {
-      set(saved, { reload: false });
+    if (saved && Object.values(LANGUAGES).some((l) => l.code === saved)) {
+      set(saved as Locale, { reload: false });
     }
   }
 

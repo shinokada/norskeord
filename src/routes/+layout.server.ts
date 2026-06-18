@@ -10,7 +10,7 @@ const DEFAULT_DESC =
 const KEYWORDS =
   'Norwegian vocabulary, learn Norwegian, flashcards, Norskprøven, CEFR, A1 A2 B1 B2 C, spaced repetition, Norwegian words';
 
-export const load = async ({ url, locals, request }) => {
+export const load = async ({ url, locals }) => {
   const title = metaTitle(url.pathname, __NAME__);
   const description = metaDescription(url.pathname, DEFAULT_DESC);
   const image = `${SITE_URL}/og/default.png`;
@@ -68,9 +68,6 @@ export const load = async ({ url, locals, request }) => {
     onboardingSnoozedAt = data?.onboarding_snoozed_at ?? null;
   }
 
-  // Read IP-derived country from Vercel header (free, no API call; null in dev).
-  const ipCountry = request.headers.get('x-vercel-ip-country') ?? null;
-
   return {
     layoutMetaTags,
     ANALYTICS_ID_LANGUAGE_APP,
@@ -83,7 +80,6 @@ export const load = async ({ url, locals, request }) => {
     isAdmin: dev && locals.user?.email === ADMIN_EMAIL,
     // Onboarding
     onboardingDone,
-    onboardingSnoozedAt,
-    ipCountry
+    onboardingSnoozedAt
   };
 };

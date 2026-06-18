@@ -6,39 +6,6 @@
 
   let { profile, missingFields }: { profile: Profile | null; missingFields: string[] } = $props();
 
-  const LANGUAGES = [
-    { code: 'ar', label: 'Arabic / عربي' },
-    { code: 'zh', label: 'Chinese / 中文' },
-    { code: 'da', label: 'Danish / Dansk' },
-    { code: 'nl', label: 'Dutch / Nederlands' },
-    { code: 'en', label: 'English' },
-    { code: 'fi', label: 'Finnish / Suomi' },
-    { code: 'fr', label: 'French / Français' },
-    { code: 'de', label: 'German / Deutsch' },
-    { code: 'el', label: 'Greek / Ελληνικά' },
-    { code: 'hi', label: 'Hindi / हिन्दी' },
-    { code: 'id', label: 'Indonesian / Bahasa Indonesia' },
-    { code: 'it', label: 'Italian / Italiano' },
-    { code: 'ja', label: 'Japanese / 日本語' },
-    { code: 'ko', label: 'Korean / 한국어' },
-    { code: 'ms', label: 'Malay / Bahasa Melayu' },
-    { code: 'nb', label: 'Norwegian / Norsk' },
-    { code: 'fa', label: 'Persian / فارسی' },
-    { code: 'pl', label: 'Polish / Polski' },
-    { code: 'pt', label: 'Portuguese / Português' },
-    { code: 'ro', label: 'Romanian / Română' },
-    { code: 'ru', label: 'Russian / Русский' },
-    { code: 'es', label: 'Spanish / Español' },
-    { code: 'sv', label: 'Swedish / Svenska' },
-    { code: 'sw', label: 'Swahili / Kiswahili' },
-    { code: 'tl', label: 'Tagalog / Filipino' },
-    { code: 'th', label: 'Thai / ภาษาไทย' },
-    { code: 'tr', label: 'Turkish / Türkçe' },
-    { code: 'uk', label: 'Ukrainian / Українська' },
-    { code: 'ur', label: 'Urdu / اردو' },
-    { code: 'vi', label: 'Vietnamese / Tiếng Việt' }
-  ];
-
   const STUDY_GOALS = [
     { key: 'vocab', label: () => m.onboarding_goal_vocab() },
     { key: 'grammar', label: () => m.onboarding_goal_grammar() },
@@ -49,7 +16,6 @@
 
   // untrack() — profile is a server-loaded prop that won't change reactively
   // within this component's lifetime; we only want its initial value as seed.
-  let nativeLanguage = $state(untrack(() => profile?.native_language ?? ''));
   let studyGoals = $state<string[]>(untrack(() => profile?.study_goals ?? []));
 
   let saving = $state(false);
@@ -72,7 +38,6 @@
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          native_language: nativeLanguage || null,
           study_goals: studyGoals
         })
       });
@@ -91,7 +56,6 @@
     }
   }
 
-  const showNativeLang = $derived(missingFields.includes('native_language'));
   const showStudyGoals = $derived(missingFields.includes('study_goals'));
 </script>
 
@@ -106,32 +70,6 @@
   </h2>
 
   <div class="space-y-5">
-    {#if showNativeLang}
-      <div>
-        <label
-          for="onb-native"
-          class="mb-1 flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300"
-        >
-          {m.onboarding_s2_heading()}
-          <span
-            class="rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-600 dark:bg-red-900/40 dark:text-red-400"
-          >
-            {m.onboarding_nudge_field_required()}
-          </span>
-        </label>
-        <select
-          id="onb-native"
-          bind:value={nativeLanguage}
-          class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none sm:max-w-xs dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100"
-        >
-          <option value="">{m.onboarding_select_placeholder()}</option>
-          {#each LANGUAGES as lang (lang.code)}
-            <option value={lang.code}>{lang.label}</option>
-          {/each}
-        </select>
-      </div>
-    {/if}
-
     {#if showStudyGoals}
       <div>
         <p

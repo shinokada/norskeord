@@ -1,5 +1,7 @@
 # New Languages — Implementation Plan
 
+Status: all app code complete ✅
+
 ## Goal
 
 Add Spanish and Ukrainian as full languages — both as an **interface language**
@@ -30,9 +32,12 @@ extension to two DB CHECK constraints.
    users like every other preference already does. Existing rows are
    migrated, not just defaulted.
 5. Onboarding: slide 1's interface-language toggle becomes a dropdown **in
-   place** (still before native language is known, so it is _not_
-   auto-suggested). A new slide is inserted right after native language for
-   **Flashcard language**, which _is_ auto-suggested from native language.
+   place**. There is no separate Flashcard-language slide — `flashcard_language`
+   defaults to whatever `LANGUAGES` key matches the chosen UI-language code
+   (via `languageEntryForLocale`), falling back to `english` when the UI
+   language is `norwegian` (not a valid flashcard language). The only place
+   to override this default is the Flashcard-language dropdown in
+   Preferences (§11).
 6. Spanish/Ukrainian data is being added to B1 (`vocab-b1.json`,
    `uttrykk-b1-preview.json`, `uttrykk-b1.json`) as well as A1/A2, so the
    Flashcard-language picker is never hidden or disabled by level. Missing
@@ -45,6 +50,16 @@ extension to two DB CHECK constraints.
    `my-profile/+page.server.ts` is a bug and is removed outright — switching
    language already updates `/my-profile` in place via `localeStore`, no
    redirect or locale-prefixed path is needed.
+9. **(Revision, June 2026)** `native_language`, `other_languages`, and
+   `country` are dropped from the onboarding slide flow entirely — none of
+   them currently drive `ui_language`, `flashcard_language`, or anything
+   else downstream, so the dedicated slides (and the native-language-driven
+   auto-suggestion from the original decision 5) were overhead without
+   payoff. Since there are no users/rows yet, the columns are dropped
+   outright in migration 020 rather than left unused — see that migration's
+   header for the deployment-ordering caveat (it must ship together with
+   §1–§13's app-code changes, not before them). See the rewritten §13 below
+   for the resulting slide flow.
 
 ---
 
@@ -581,49 +596,47 @@ return { success: true, action: 'updatePreferences' };
 
 ### Slide layout change
 
-| #   | Before                         | After                                                                                            |
-| --- | ------------------------------ | ------------------------------------------------------------------------------------------------ |
-| 1   | UI language (2 buttons) + name | UI language (**dropdown**, all 4) + name — _not_ auto-suggested, native language isn't known yet |
-| 2   | Native language                | Native language (unchanged)                                                                      |
-| 3   | Other languages                | **NEW:** Flashcard language (dropdown, excludes Norwegian) — auto-suggested from slide 2         |
-| 4   | Norwegian level                | Other languages (was 3)                                                                          |
-| 5   | Study goals                    | Norwegian level (was 4)                                                                          |
-| 6   | Country                        | Study goals (was 5)                                                                              |
-| 7   | Completion                     | Country (was 6)                                                                                  |
-| —   | —                              | Completion (was 7)                                                                               |
+Per decision 9, the native-language, other-languages, and country slides are
+removed outright — not replaced with a new Flashcard-language slide as
+originally planned. `flashcard_language` becomes a side effect of slide 1's
+UI-language choice instead, so no dedicated slide is needed for it.
 
-`TOTAL` goes from `6` to `7`; `Slide` type becomes `1 | 2 | 3 | 4 | 5 | 6 | 7 | 8`
-(completion is now slide 8). Every `current === N` branch from the old
-slide 3 onward shifts up by one, and the `next()` function's `if (current === N)`
-PATCH dispatch shifts accordingly.
+| #   | Before (6 slides)              | After (3 slides)                                                                                                |
+| --- | ------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| 1   | UI language (2 buttons) + name | UI language (**dropdown**, all 4) + name — also sets a default `flashcard_language`                             |
+| 2   | Native language                | _(removed — decision 9)_                                                                                        |
+| 3   | Other languages                | _(removed — decision 9)_                                                                                        |
+| 4   | Norwegian level                | Norwegian level (was 4) — also nudges `card_direction` to `def_l1` if UI language is Norwegian and level is B1+ |
+| 5   | Study goals                    | Study goals (was 5)                                                                                             |
+| 6   | Country                        | _(removed — decision 9)_                                                                                        |
+| 7   | Completion                     | Completion (was 7)                                                                                              |
 
-### New state + auto-suggestion logic
+`TOTAL` goes from `6` to `3`; `Slide` type becomes `1 | 2 | 3 | 4` (completion
+is slide 4). Deleted entirely: the local ~40-entry `LANGUAGES` ISO-code array
+(used only for the native-language dropdown, and a naming collision with the
+unrelated `LANGUAGES` export from `$lib/config` that this section now
+imports instead), `COUNTRIES`, `OTHER_CODE`, `nativeLanguage`,
+`nativeLanguageOther`, `otherLanguages`, `otherLangOptions`,
+`toggleOtherLang`, `country`, and the `ipCountry` prop.
+
+### New state — default flashcard language from UI language
 
 ```ts
-import { FLASHCARD_LANGUAGES, LANGUAGES } from '$lib/config';
+import { LANGUAGES, languageEntryForLocale } from '$lib/config';
 import type { FlashcardLanguage } from '$lib/types';
 import { languageStore } from '$lib/stores/language.svelte';
+import { localeStore } from '$lib/localeStore.svelte';
 
-// Slide 3 (NEW) — flashcard language
-let flashcardLanguage = $state<FlashcardLanguage>('english');
-let flashcardLanguageTouched = $state(false); // becomes true once the user manually changes it
+// flashcard_language is derived, not asked: it mirrors whichever LANGUAGES
+// key matches the chosen UI-language code, except 'norwegian' (not a valid
+// flashcard language) which falls back to 'english'.
+function defaultFlashcardLanguage(localeCode: string): FlashcardLanguage {
+  const entry = languageEntryForLocale(localeCode);
+  const key = entry?.[0];
+  return key && key !== 'norwegian' ? (key as FlashcardLanguage) : 'english';
+}
 
-// Maps onboarding's native-language ISO codes (the `LANGUAGES` array further
-// up this file, ~40 entries) to our small FLASHCARD_LANGUAGES set. Only the
-// codes we actually support are listed — everything else falls through to
-// the 'english' default.
-const NATIVE_TO_FLASHCARD: Partial<Record<string, FlashcardLanguage>> = {
-  en: 'english',
-  es: 'spanish',
-  uk: 'ukrainian'
-};
-
-// Keep the suggestion in sync with native language until the user overrides it.
-$effect(() => {
-  if (!flashcardLanguageTouched) {
-    flashcardLanguage = NATIVE_TO_FLASHCARD[nativeLanguage] ?? 'english';
-  }
-});
+let flashcardLanguage = $state<FlashcardLanguage>(defaultFlashcardLanguage(localeStore.current));
 ```
 
 ### Slide 1 — dropdown instead of two buttons
@@ -632,7 +645,11 @@ $effect(() => {
 <div class="flex gap-2" role="group" aria-label={m.onboarding_s1_lang_label()}>
   <select
     bind:value={localeStore.current}
-    onchange={(e) => switchLocale((e.target as HTMLSelectElement).value)}
+    onchange={(e) => {
+      const code = (e.target as HTMLSelectElement).value;
+      switchLocale(code);
+      flashcardLanguage = defaultFlashcardLanguage(code);
+    }}
     class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm ..."
   >
     {#each Object.entries(LANGUAGES) as [, { name, flag, code }] (code)}
@@ -646,44 +663,56 @@ $effect(() => {
 `/api/profile/language` — unchanged, just driven by a `<select>` now instead
 of two `<button>`s.)
 
-### New slide 3 — Flashcard language
-
-```svelte
-{:else if current === 3}
-  <h2 class="mb-1 text-xl font-bold ...">{m.onboarding_s3_lang_heading()}</h2>
-  <p class="mb-6 text-sm ...">{m.onboarding_s3_lang_sub()}</p>
-  <label for="onb-flashcard-lang" class="sr-only">{m.onboarding_s3_lang_heading()}</label>
-  <select
-    id="onb-flashcard-lang"
-    bind:value={flashcardLanguage}
-    onchange={() => (flashcardLanguageTouched = true)}
-    class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm ..."
-  >
-    {#each Object.entries(FLASHCARD_LANGUAGES) as [key, { name, flag }] (key)}
-      <option value={key}>{flag} {name}</option>
-    {/each}
-  </select>
-```
-
-(Renumber the old slides 3–6 to 4–7, and the completion screen from 7 to 8,
-in the same `{:else if current === N}` chain.)
-
 ### `next()` / `canAdvance()`
 
 ```ts
-// next() — insert before the old slide-3 branch (now handles the new slide 3):
+// next():
+if (current === 1) {
+  await patch({ display_name: displayName.trim(), flashcard_language: flashcardLanguage });
+  languageStore.set(flashcardLanguage); // already in effect before the user reaches a flashcard page
+} else if (current === 2) {
+  // was current === 4 (Norwegian level) — same body, plus one addition:
+  const patchBody: Record<string, unknown> = { current_level: currentLevel };
+  // Nudge toward the monolingual Norwegian-definition card mode for B1+
+  // users who also chose a Norwegian UI — see decision 9.
+  if (localeStore.current === 'nb' && currentLevel !== 'A1' && currentLevel !== 'A2') {
+    patchBody.card_direction = 'def_l1';
+  }
+  await patch(patchBody);
 } else if (current === 3) {
-  await patch({ flashcard_language: flashcardLanguage });
-  languageStore.set(flashcardLanguage); // so it's already in effect before the user reaches a flashcard page
-} else if (current === 4) {
-  // was current === 3 (other languages) — unchanged body
-  await patch({ other_languages: otherLanguages });
+  // was current === 5 (Study goals) — unchanged body
+  await patch({ study_goals: studyGoals });
+  if (!error) {
+    current = 4; // completion screen
+    return;
+  }
 }
-// ...shift all subsequent branches by one...
 
-// canAdvance() — flashcard language always has a default, so it's optional like "other languages" and "country":
-if (current === 3) return true;
+// canAdvance():
+if (current === 1) return displayName.trim().length > 0;
+if (current === 2) return currentLevel.length > 0;
+if (current === 3) return studyGoals.length > 0;
 ```
+
+The Norwegian-level and study-goals slide markup is otherwise unchanged —
+only their slide numbers and `current === N` branch numbers shift down. The
+completion screen (now slide 4) is unchanged except for its number.
+
+### Cleanup this implies elsewhere
+
+- `+layout.server.ts`'s `ipCountry` computation (the `x-vercel-ip-country`
+  header read) can be deleted — nothing consumes it once the country slide
+  is gone.
+- `messages/*.json` keys `onboarding_s2_*` (native language), `onboarding_s3_*`
+  (other languages), and `onboarding_s6_*` (country) become unused and can
+  be deleted. The reused keys (`onboarding_s4_*`/`onboarding_s5_*`/
+  `onboarding_s7_*` for level/goals/completion) don't need renaming to match
+  their new slide numbers — they're just message-key names, not
+  user-visible text; only `TOTAL` (used by `m.onboarding_step(...)`) needs
+  to be correct, which the state change above already handles.
+- `api/profile/onboarding/+server.ts`'s validation for `native_language`,
+  `other_languages`, and `country` can be left in place defensively (the
+  columns still exist) or removed — neither is load-bearing for this plan.
 
 ---
 
@@ -810,26 +839,26 @@ not needed for Spanish/Ukrainian today since both get full UI translation.
 
 ## Pending Work
 
-| Item                                                                                                                                           | File(s)                                       | Status                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------ |
-| `LANGUAGES` gains `code`; add `FLASHCARD_LANGUAGES`                                                                                            | `config.ts`                                   | ⬜ TODO                        |
-| `VocabEntry.spanish`/`ukrainian` → optional; widen `Language`/`Profile` types                                                                  | `types.ts`                                    | ⬜ TODO                        |
-| `getTranslation`/`getExampleTranslation` fallback + narrower param type                                                                        | `vocab-helpers.ts`                            | ⬜ TODO                        |
-| Migration: widen `ui_language`, add `flashcard_language`, generalize `card_direction`                                                          | `supabase/migrations/020_*.sql`               | ⬜ TODO                        |
-| `Profile`/`ProfileUpdate` types                                                                                                                | `server/profile.ts`                           | ⬜ TODO                        |
-| `Locale` derived from `LANGUAGES[*].code`                                                                                                      | `localeStore.svelte.ts`                       | ⬜ TODO                        |
-| Validity check uses `FLASHCARD_LANGUAGES`                                                                                                      | `stores/language.svelte.ts`                   | ⬜ TODO                        |
-| Toggle button → dropdown                                                                                                                       | `routes/components/Nav.svelte`                | ⬜ TODO                        |
-| Widen locale validation                                                                                                                        | `api/profile/language/+server.ts`             | ⬜ TODO                        |
-| Accept `flashcard_language`                                                                                                                    | `api/profile/onboarding/+server.ts`           | ⬜ TODO                        |
-| Interface + Flashcard-language dropdowns; dynamic card-direction labels                                                                        | `my-profile/PreferencesSection.svelte`        | ⬜ TODO                        |
-| Widen validation; **remove the `/nb/my-profile` redirect bug**                                                                                 | `my-profile/+page.server.ts`                  | ⬜ TODO                        |
-| New slide 3 (Flashcard language) + auto-suggestion; slide 1 → dropdown; renumber 4–8                                                           | `components/OnboardingSlides.svelte`          | ⬜ TODO                        |
-| Fix `makeDeckItem` to actually use `language` prop                                                                                             | `VocabFlashcardPage.svelte`                   | ⬜ TODO                        |
-| Pass `language={languageStore.current}`                                                                                                        | `[level]/[category]/+page.svelte`             | ⬜ TODO                        |
-| Add `es`, `uk` to `locales`                                                                                                                    | `project.inlang/settings.json`                | ⬜ TODO                        |
-| Add `profile_prefs_flashcard_language(_hint)`; remove unused `profile_prefs_card_direction_no_en/en_no/def_no`; add onboarding slide-3 strings | `messages/*.json`                             | ⬜ TODO                        |
-| Spanish/Ukrainian data for B1 vocab + uttrykk                                                                                                  | `data/vocab-b1.json`, `data/uttrykk-b1*.json` | 🔶 In progress (per your note) |
+| Item                                                                                                                                                       | File(s)                                       | Status  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------- |
+| `LANGUAGES` gains `code`; add `FLASHCARD_LANGUAGES`                                                                                                        | `config.ts`                                   | ✅ Done |
+| `VocabEntry.spanish`/`ukrainian` → optional; widen `Language`/`Profile` types                                                                              | `types.ts`                                    | ✅ Done |
+| `getTranslation`/`getExampleTranslation` fallback + narrower param type                                                                                    | `vocab-helpers.ts`                            | ✅ Done |
+| Migration: widen `ui_language`, add `flashcard_language`, generalize `card_direction`                                                                      | `supabase/migrations/020_*.sql`               | ✅ Done |
+| `Profile`/`ProfileUpdate` types                                                                                                                            | `server/profile.ts`                           | ✅ Done |
+| `Locale` derived from `LANGUAGES[*].code`                                                                                                                  | `localeStore.svelte.ts`                       | ✅ Done |
+| Validity check uses `FLASHCARD_LANGUAGES`                                                                                                                  | `stores/language.svelte.ts`                   | ✅ Done |
+| Toggle button → dropdown                                                                                                                                   | `routes/components/Nav.svelte`                | ✅ Done |
+| Widen locale validation                                                                                                                                    | `api/profile/language/+server.ts`             | ✅ Done |
+| Accept `flashcard_language`                                                                                                                                | `api/profile/onboarding/+server.ts`           | ✅ Done |
+| Interface + Flashcard-language dropdowns; dynamic card-direction labels                                                                                    | `my-profile/PreferencesSection.svelte`        | ✅ Done |
+| Widen validation; **remove the `/nb/my-profile` redirect bug**                                                                                             | `my-profile/+page.server.ts`                  | ✅ Done |
+| Drop native-language/other-languages/country slides; slide 1 → dropdown that also sets default `flashcard_language`; renumber to 3 slides + completion (4) | `components/OnboardingSlides.svelte`          | ✅ Done |
+| Fix `makeDeckItem` to actually use `language` prop                                                                                                         | `VocabFlashcardPage.svelte`                   | ✅ Done |
+| Pass `language={languageStore.current}`                                                                                                                    | `[level]/[category]/+page.svelte`             | ✅ Done |
+| Add `es`, `uk` to `locales`                                                                                                                                | `project.inlang/settings.json`                | ✅ Done |
+| Add `profile_prefs_flashcard_language(_hint)`; remove unused `profile_prefs_card_direction_no_en/en_no/def_no`; add onboarding slide-3 strings             | `messages/*.json`                             | ✅ Done |
+| Spanish/Ukrainian data for B1 vocab + uttrykk                                                                                                              | `data/vocab-b1.json`, `data/uttrykk-b1*.json` | ✅ Done |
 
 ---
 
