@@ -225,7 +225,8 @@
             {/if}
           </span>
           <span class="flex-1">
-            <span class="block text-base font-semibold text-gray-800 dark:text-gray-100">Monthly</span
+            <span class="block text-base font-semibold text-gray-800 dark:text-gray-100"
+              >Monthly</span
             >
             <span class="block text-sm text-gray-500 dark:text-gray-400">Cancel any time</span>
           </span>
@@ -258,7 +259,7 @@
             <span class="block text-base font-semibold text-gray-800 dark:text-gray-100">
               Annual
               <span
-                class="ml-1.5 inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-400"
+                class="ml-1.5 inline-block rounded-full bg-green-100 px-2 py-0.5 text-sm font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-400"
                 >save 98 NOK</span
               >
             </span>
@@ -320,8 +321,8 @@
     class="mb-14 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-indigo-950/60"
   >
     <h3 class="mb-2 text-base font-bold dark:text-white">{m.plus_how_heading()}</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_1()}</p>
-    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">{m.plus_how_body_2()}</p>
+    <p class="text-base text-gray-600 dark:text-gray-400">{m.plus_how_body_1()}</p>
+    <p class="mt-3 text-base text-gray-600 dark:text-gray-400">{m.plus_how_body_2()}</p>
   </div>
 
   <!-- ── Plus feature highlights ────────────────────────────────────────────────── -->
@@ -335,7 +336,7 @@
           <span class="text-2xl">{feat.icon}</span>
           <h3 class="font-semibold text-gray-800 dark:text-gray-100">{feat.title}</h3>
         </div>
-        <p class="text-sm text-gray-500 dark:text-gray-400">{feat.body}</p>
+        <p class="text-base text-gray-500 dark:text-gray-400">{feat.body}</p>
       </div>
     {/each}
   </div>
@@ -395,7 +396,7 @@
     class="rounded-2xl border border-indigo-200 bg-indigo-50 p-8 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
   >
     <p class="text-lg font-semibold dark:text-white">{m.plus_cta_heading()}</p>
-    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">{m.plus_cta_body()}</p>
+    <p class="mt-1 text-base text-gray-500 dark:text-gray-400">{m.plus_cta_body()}</p>
     <div class="mt-5 flex flex-wrap justify-center gap-3">
       <a
         href="/"
