@@ -50,7 +50,7 @@
   const sidebarActiveClass =
     'flex items-center p-2 text-base font-medium rounded-lg text-primary-400 bg-primary-500/15 dark:text-primary-400 dark:bg-primary-400/10 transition-colors duration-200';
   const sidebarNonActiveClass =
-    'flex items-center p-2 text-base font-normal rounded-lg text-slate-300 dark:text-slate-300 hover:text-white hover:bg-white/5 dark:hover:text-white dark:hover:bg-white/5 transition-colors duration-200';
+    'flex items-center p-2 text-base font-normal rounded-lg text-slate-700 dark:text-slate-300 hover:text-gray-900 hover:bg-gray-100 dark:hover:text-white dark:hover:bg-white/5 transition-colors duration-200';
 
   const effectiveUser = $derived(user ?? authStore.user);
 
@@ -172,7 +172,7 @@
         class="inline-flex items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {currentLangEntry?.[1].flag}
-        {currentLangEntry?.[1].name}
+        {currentLangEntry?.[1].abbr}
         <ChevronDownOutline class="h-4 w-4" />
       </button>
       <Dropdown bind:isOpen={langDropdownOpen} simple class="dark:border-gray-700 dark:bg-blue-950">
@@ -319,7 +319,7 @@
         <SidebarItem label="My Progress" href="/stats">
           {#snippet icon()}
             <ChartOutline
-              class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
             />
           {/snippet}
         </SidebarItem>
@@ -330,7 +330,7 @@
           {#snippet icon()}
             <div class="relative">
               <UserCircleOutline
-                class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
               />
               {#if showOnboardingNudge}
                 <span class="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-red-500"></span>
@@ -342,7 +342,7 @@
         <SidebarItem label="Login" href="/auth/login">
           {#snippet icon()}
             <UserSolid
-              class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
             />
           {/snippet}
         </SidebarItem>
@@ -352,35 +352,35 @@
       <SidebarItem label="Nivå A1" href="/learn/a1">
         {#snippet icon()}
           <ArrowRightOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Nivå A2" href="/learn/a2">
         {#snippet icon()}
           <ArrowRightOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Nivå B1" href="/learn/b1">
         {#snippet icon()}
           <ArrowRightOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Nivå B2" href="/learn/b2">
         {#snippet icon()}
           <ArrowRightOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Nivå C" href="/learn/c">
         {#snippet icon()}
           <ArrowRightOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
@@ -389,28 +389,28 @@
       <SidebarItem label="Plus" {spanClass} href="/plus">
         {#snippet icon()}
           <PlusOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Blog" {spanClass} href="/blog">
         {#snippet icon()}
           <NewspaperOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Guide" href="/guide">
         {#snippet icon()}
           <BookOpenOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
       <SidebarItem label="Resources" href="/resources">
         {#snippet icon()}
           <FolderArrowRightOutline
-            class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
@@ -420,7 +420,7 @@
         <SidebarItem label="Log out" onclick={logout} class="cursor-pointer">
           {#snippet icon()}
             <ArrowLeftToBracketOutline
-              class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
             />
           {/snippet}
         </SidebarItem>

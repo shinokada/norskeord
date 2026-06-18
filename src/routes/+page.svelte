@@ -239,7 +239,7 @@
     </div>
 
     {#if !user}
-      <p class="mt-3 text-xs text-indigo-300/50">{m.home_hero_no_cc()}</p>
+      <p class="mt-3 text-sm text-indigo-300/50">{m.home_hero_no_cc()}</p>
     {/if}
 
     <!-- Share / QR toggle -->
@@ -247,7 +247,7 @@
       <button
         type="button"
         onclick={() => (showQr = !showQr)}
-        class="inline-flex items-center gap-1.5 rounded-full border border-indigo-300/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-indigo-200 backdrop-blur-sm transition hover:bg-white/20"
+        class="inline-flex items-center gap-1.5 rounded-full border border-indigo-300/30 bg-white/10 px-4 py-1.5 text-sm font-medium text-indigo-200 backdrop-blur-sm transition hover:bg-white/20"
       >
         {showQr ? m.home_hero_hide_qr() : m.home_hero_share()}
       </button>
@@ -266,7 +266,7 @@
             class="block"
           />
         </div>
-        <p class="text-xs text-indigo-200/70">
+        <p class="text-sm text-indigo-200/70">
           {m.home_hero_qr_body({ site: 'norskeord.no' })}
         </p>
       </div>
@@ -282,7 +282,7 @@
     class="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5"
   >
     {#each featureStrip as f (f.icon)}
-      <span class="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300">
+      <span class="flex items-center gap-2 text-base font-medium text-gray-600 dark:text-gray-300">
         <span class="text-lg">{f.icon}</span>
         {#if f.href}
           <a href={f.href} class="hover:underline">{f.label()}</a>
@@ -306,14 +306,14 @@
         class="group relative flex flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
       >
         <div class="mb-3 text-3xl">{card.icon}</div>
-        <h3 class="mb-2 text-sm font-semibold text-gray-800 dark:text-gray-100">
+        <h3 class="mb-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
           {card.titleFn()}
         </h3>
-        <p class="text-xs leading-relaxed text-gray-500 dark:text-gray-400">
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
           {card.bodyFn()}
         </p>
         <span
-          class="mt-4 text-xs font-medium text-indigo-600 dark:text-indigo-400 group-hover:underline"
+          class="mt-4 text-sm font-medium text-indigo-600 dark:text-indigo-400 group-hover:underline"
         >
           {m.home_features_explore()}
         </span>
@@ -335,21 +335,21 @@
         class="group flex flex-col rounded-2xl border {accent.border} bg-white p-5 text-left shadow-sm transition hover:shadow-md dark:bg-indigo-950/60"
       >
         <div class="mb-1 flex items-center justify-between">
-          <h3 class="text-base font-bold {accent.heading}">{lvl.label()}</h3>
+          <h3 class="text-lg font-bold {accent.heading}">{lvl.label()}</h3>
           <span
-            class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-500
+            class="rounded-full bg-gray-100 px-2.5 py-0.5 text-sm font-medium text-gray-500
                    dark:bg-gray-700 dark:text-gray-400"
           >
             {lvl.id}
           </span>
         </div>
-        <p class="mb-2 text-xs text-gray-400 dark:text-gray-500">
+        <p class="mb-2 text-sm text-gray-400 dark:text-gray-500">
           {entryCountLabel(lvl.id)}
         </p>
-        <p class="mb-4 flex-1 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p class="mb-4 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-400">
           {lvl.description()}
         </p>
-        <span class="text-xs font-medium {accent.link} group-hover:underline">
+        <span class="text-sm font-medium {accent.link} group-hover:underline">
           {m.home_level_explore({ level: lvl.id })}
         </span>
       </a>

@@ -236,7 +236,7 @@
               </div>
             {/if}
             <p
-              class="line-clamp-2 text-xs {locked
+              class="line-clamp-2 text-sm {locked
                 ? 'opacity-60 '
                 : ''}text-gray-500 dark:text-gray-400"
             >
@@ -270,7 +270,7 @@
         <p class="font-semibold text-gray-800 dark:text-gray-100">
           Start a {data.levelUpper} quiz
         </p>
-        <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">
+        <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
           Multiple-choice, fill-in-the-blank, and typed answers{#if !isPlus}
             · some categories require Plus{/if}
         </p>
@@ -289,7 +289,7 @@
           class="flex flex-col rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
         >
           <p class="font-semibold text-gray-800 dark:text-gray-100">Vocabulary prep</p>
-          <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
             Exam-targeted vocabulary for the official Norwegian language test at {data.levelUpper}.
           </p>
           <span class="mt-3 text-xs font-medium {colors.accent}"
@@ -310,7 +310,7 @@
               </span>
             {/if}
           </div>
-          <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
             Reading, writing, and oral practice in exam format. Test 1 is always free.
           </p>
           <span class="mt-3 text-xs font-medium {colors.accent}"
