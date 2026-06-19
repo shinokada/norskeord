@@ -82,7 +82,7 @@
 
 <div class="mx-auto max-w-3xl px-4 py-12 text-left">
   <Heading tag="h1" class="mb-2 text-4xl font-bold dark:text-white">{m.guide_page_title()}</Heading>
-  <p class="mb-8 text-gray-500 dark:text-gray-400">
+  <p class="mb-8 text-gray-600 dark:text-gray-300">
     {m.guide_page_subtitle()}
   </p>
 
@@ -248,22 +248,22 @@
   <div class="space-y-6">
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_reminder_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{m.guide_faq_reminder_a()}</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_reminder_a()}</p>
     </div>
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_no_reminder_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{m.guide_faq_no_reminder_a()}</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_no_reminder_a()}</p>
     </div>
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_emails_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{m.guide_faq_emails_a()}</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_emails_a()}</p>
     </div>
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_sync_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
         {m.guide_faq_sync_a()}
         <a href="/plus" class="underline">{m.guide_faq_sync_cta()}</a>
       </p>
@@ -271,12 +271,12 @@
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_offline_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{m.guide_faq_offline_a()}</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_offline_a()}</p>
     </div>
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_freeplus_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
         {m.guide_faq_freeplus_a()}
         <a href="/plus" class="underline">{m.guide_faq_freeplus_cta()}</a>
       </p>
@@ -284,12 +284,12 @@
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_prefs_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{m.guide_faq_prefs_a()}</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_prefs_a()}</p>
     </div>
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_download_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
         {m.guide_faq_download_a()}
         <span
           class="ml-1 inline-block rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
@@ -300,7 +300,7 @@
 
     <div>
       <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_contact_q()}</p>
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
         {m.guide_faq_contact_a()}
         <span
           class="ml-1 inline-block rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"

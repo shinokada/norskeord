@@ -95,7 +95,7 @@
       {isLast ? m.grammar_see_results() : m.grammar_next()}
     </button>
   </div>
-  <p class="mt-2 text-right text-xs text-gray-400 dark:text-gray-600">
+  <p class="mt-2 text-right text-xs text-gray-700 dark:text-gray-300">
     {m.grammar_continue_hint()}
   </p>
 </div>

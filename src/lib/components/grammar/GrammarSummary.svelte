@@ -95,7 +95,7 @@
       {m.grammar_restart()}
     </button>
   </div>
-  <p class="mt-4 text-xs text-gray-400 dark:text-gray-600">
+  <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">
     {m.grammar_restart_hint()}
   </p>
 </div>

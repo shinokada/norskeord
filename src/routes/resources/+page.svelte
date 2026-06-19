@@ -238,10 +238,10 @@
               >
                 {resource.name}
               </p>
-              <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-400">{resource.description}</p>
+              <p class="mt-0.5 text-xs text-gray-700 dark:text-gray-300">{resource.description}</p>
             </div>
             <span
-              class="mt-0.5 ml-3 shrink-0 text-gray-300 group-hover:text-blue-400 dark:text-gray-600"
+              class="mt-0.5 ml-3 shrink-0 text-gray-700 group-hover:text-blue-400 dark:text-gray-300"
               >↗</span
             >
           </a>

@@ -1,5 +1,8 @@
 <script module lang="ts">
+  import * as m from '$lib/paraglide/messages.js';
   declare const __VERSION__: string;
+  const learnPages = [{name:'A1',link:'/learn/a1'}, {name:'A2',link:'/learn/a2'}, {name:'B1',link:'/learn/b1'}, {name:'B2',link:'/learn/b2'}, {name:'C',link:'/learn/c'}, {name:'Grammar',link:'/grammar'}, {name:'Quiz',link:'/quiz'}, {name:'Norskprøven',link:'/norskproven'}];
+  const resourcesPages = [{name:'Blog',link:'/blog'}, {name:'My stats',link:'/stats'}, {name:'Plus',link:'/plus'}, {name:'Guide',link:'/guide'}];
 </script>
 
 <footer class="border-t border-gray-200 bg-white py-8 dark:border-gray-800 dark:bg-blue-950">
@@ -7,121 +10,55 @@
     <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
       <!-- Brand -->
       <div class="col-span-2 sm:col-span-1">
-        <a href="/" class="text-base font-bold text-gray-900 dark:text-white">Norskeord</a>
-        <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
-          Norwegian vocabulary from A1 to C
+        <a href="/" class="text-base font-bold text-gray-900 dark:text-white">{m.norskeord()} </a>
+        <p class="mt-1 text-xs text-gray-800 dark:text-gray-300">
+           {m.home_hero_badge()}
         </p>
-        <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">v{__VERSION__}</p>
+        <p class="mt-3 text-xs text-gray-800 dark:text-gray-300">v{__VERSION__}</p>
       </div>
 
       <!-- Learn -->
       <div>
         <p
-          class="mb-3 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-500"
+          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
           Learn
         </p>
         <ul class="space-y-2">
+          {#each learnPages as page (page.name)}
           <li>
             <a
-              href="/learn/a1"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >A1</a
+              href={page.link}
+              class="text-sm text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white"
+              >{page.name}</a
             >
           </li>
-          <li>
-            <a
-              href="/learn/a2"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >A2</a
-            >
-          </li>
-          <li>
-            <a
-              href="/learn/b1"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >B1</a
-            >
-          </li>
-          <li>
-            <a
-              href="/learn/b2"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >B2</a
-            >
-          </li>
-          <li>
-            <a
-              href="/learn/c"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >C</a
-            >
-          </li>
-          <li>
-            <a
-              href="/grammar"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >Grammar</a
-            >
-          </li>
-          <li>
-            <a
-              href="/quiz"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >Quiz</a
-            >
-          </li>
-          <li>
-            <a
-              href="/norskproven"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >Norskprøven</a
-            >
-          </li>
+          {/each}
         </ul>
       </div>
 
       <!-- Resources -->
       <div>
         <p
-          class="mb-3 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-500"
+          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
           Resources
         </p>
         <ul class="space-y-2">
+        {#each resourcesPages as page (page.name)}
           <li>
             <a
-              href="/blog"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >Blog</a
+              href="{page.link}"
+              class="text-sm text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white"
+              >{page.name}</a
             >
           </li>
-          <li>
-            <a
-              href="/stats"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >My stats</a
-            >
-          </li>
-          <li>
-            <a
-              href="/plus"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >Plus</a
-            >
-          </li>
-          <li>
-            <a
-              href="/about"
-              class="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              >About</a
-            >
-          </li>
+          {/each}
         </ul>
       </div>
     </div>
 
-    <p class="mt-8 text-xs text-gray-400 dark:text-gray-600">
+    <p class="mt-8 text-xs text-gray-700 dark:text-gray-300">
       © {new Date().getFullYear()} Norskeord
     </p>
   </div>

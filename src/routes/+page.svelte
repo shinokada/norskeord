@@ -210,7 +210,7 @@
     <div
       class="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-indigo-200 uppercase backdrop-blur-sm"
     >
-      {m.home_hero_badge()}
+      {m.norskeord()} - {m.home_hero_badge()}
     </div>
 
     <h1 class="mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
@@ -337,13 +337,13 @@
         <div class="mb-1 flex items-center justify-between">
           <h3 class="text-lg font-bold {accent.heading}">{lvl.label()}</h3>
           <span
-            class="rounded-full bg-gray-100 px-2.5 py-0.5 text-sm font-medium text-gray-500
-                   dark:bg-gray-700 dark:text-gray-400"
+            class="rounded-full bg-gray-100 px-2.5 py-0.5 text-sm font-medium text-gray-600
+                   dark:bg-gray-700 dark:text-gray-300"
           >
             {lvl.id}
           </span>
         </div>
-        <p class="mb-2 text-sm text-gray-400 dark:text-gray-500">
+        <p class="mb-2 text-sm text-gray-700 dark:text-gray-300">
           {entryCountLabel(lvl.id)}
         </p>
         <p class="mb-4 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-400">
