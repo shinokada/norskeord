@@ -27,7 +27,8 @@
     NewspaperOutline,
     ChartOutline,
     UserCircleOutline,
-    ArrowLeftToBracketOutline
+    ArrowLeftToBracketOutline,
+    GlobeOutline
   } from 'flowbite-svelte-icons';
   import { LANGUAGES, languageEntryForLocale } from '$lib/config';
   import type { Locale } from '$lib/localeStore.svelte';
@@ -165,17 +166,27 @@
     {/if}
 
     <div class="relative">
-      <button
-        type="button"
-        onclick={() => (langDropdownOpen = !langDropdownOpen)}
-        aria-label="Switch language"
-        class="inline-flex items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-      >
-        {currentLangEntry?.[1].flag}
-        {currentLangEntry?.[1].abbr}
-        <ChevronDownOutline class="h-4 w-4" />
-      </button>
-      <Dropdown bind:isOpen={langDropdownOpen} simple class="dark:border-gray-700 dark:bg-blue-950">
+    <!-- Mobile: globe icon -->
+<button
+  type="button"
+  aria-label="Switch language"
+  class="lang-trigger inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:hidden"
+>
+  <GlobeOutline class="h-5 w-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400" />
+</button>
+
+<!-- Desktop: flag + abbr + chevron -->
+<button
+  type="button"
+  aria-label="Switch language"
+  class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+>
+  {currentLangEntry?.[1].flag}
+  {currentLangEntry?.[1].abbr}
+  <ChevronDownOutline class="h-4 w-4" />
+</button>
+
+<Dropdown triggeredBy=".lang-trigger" bind:isOpen={langDropdownOpen} simple class="dark:border-gray-700 dark:bg-blue-950">
         {#each Object.entries(LANGUAGES) as [, { name, flag, code }] (code)}
           <DropdownItem
             class="dark:hover:bg-blue-900 {localeStore.current === code ? 'font-semibold' : ''}"
