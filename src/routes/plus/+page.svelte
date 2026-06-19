@@ -382,7 +382,7 @@
                   >{row.pro.value}</span
                 >
               {:else}
-                <span class="text-gray-300 dark:text-gray-600">{row.pro.value}</span>
+                <span class="text-gray-600 dark:text-gray-300">{row.pro.value}</span>
               {/if}
             </td>
           </tr>

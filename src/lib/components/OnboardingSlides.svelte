@@ -155,7 +155,7 @@
         type="button"
         onclick={current === 5 ? dismissCompletion : snooze}
         aria-label={current === 5 ? m.onboarding_close_aria_done() : m.onboarding_close_aria()}
-        class="absolute right-4 top-4 rounded-full p-1.5 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+        class="absolute right-4 top-4 rounded-full p-1.5 text-gray-700 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
       >
         <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -178,7 +178,7 @@
             ></div>
           {/each}
         </div>
-        <p class="mb-4 text-xs text-gray-400 dark:text-gray-500">
+        <p class="mb-4 text-xs text-gray-700 dark:text-gray-300">
           {m.onboarding_step({ current, total: TOTAL })}
         </p>
       {/if}
@@ -311,7 +311,7 @@
             type="button"
             onclick={() => (showAllLevels = !showAllLevels)}
             aria-expanded={showAllLevels}
-            class="mt-4 text-xs font-medium text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
+            class="mt-4 text-xs font-medium text-gray-700 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-400"
           >
             {m.onboarding_s7_browse()}
           </button>

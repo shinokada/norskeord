@@ -498,7 +498,7 @@
             </button>
           {/each}
         </div>
-        <p class="mt-4 text-xs text-gray-400 dark:text-gray-600">{m.quiz_mc_hint()}</p>
+        <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">{m.quiz_mc_hint()}</p>
       {:else if current.type === 'fill'}
         {@const q = current as FillBlankQuestion}
         <p
@@ -719,7 +719,7 @@
           {currentIndex < questions.length - 1 ? m.quiz_next() : m.quiz_see_results()}
         </button>
       </div>
-      <p class="mt-2 text-right text-xs text-gray-400 dark:text-gray-600">
+      <p class="mt-2 text-right text-xs text-gray-700 dark:text-gray-300">
         {m.quiz_continue_hint()}
       </p>
     </div>
@@ -856,7 +856,7 @@
           {m.quiz_restart()}
         </button>
       </div>
-      <p class="mt-4 text-xs text-gray-400 dark:text-gray-600">
+      <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">
         {m.quiz_restart_hint()}
       </p>
     </div>

@@ -150,7 +150,7 @@
         🔥 {streak} day{streak === 1 ? '' : 's'}
       </span>
     {:else}
-      <span class="text-sm text-gray-400 dark:text-gray-500">No current streak</span>
+      <span class="text-sm text-gray-700 dark:text-gray-300">No current streak</span>
     {/if}
     {#if !isPlus}
       <a
@@ -165,7 +165,7 @@
   {#if loading}
     <div class="h-20 w-full animate-pulse rounded bg-gray-100 dark:bg-gray-800"></div>
   {:else if grid.length === 0}
-    <p class="text-xs text-gray-400 dark:text-gray-500">
+    <p class="text-xs text-gray-700 dark:text-gray-300">
       Study some cards to see your activity here.
     </p>
   {:else}
@@ -231,7 +231,7 @@
     </div>
 
     <!-- Legend + device-only label for free users -->
-    <div class="flex items-center gap-1.5 text-sm text-gray-400 dark:text-gray-500">
+    <div class="flex items-center gap-1.5 text-sm text-gray-700 dark:text-gray-300">
       <span>Less</span>
       {#each LEVEL_CLASSES as cls (cls)}
         <svg width="14" height="14"><rect width="14" height="14" rx="2" class={cls} /></svg>
@@ -240,7 +240,7 @@
     </div>
 
     {#if !isPlus}
-      <p class="text-xs text-gray-400 dark:text-gray-500">
+      <p class="text-xs text-gray-700 dark:text-gray-300">
         Tracked on this device only ·
         <a
           href="/plus"

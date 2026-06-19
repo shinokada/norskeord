@@ -153,7 +153,7 @@
           </span>
         </div>
         <svg
-          class="h-4 w-4 shrink-0 text-gray-400 transition-transform {isOpen ? 'rotate-180' : ''}"
+          class="h-4 w-4 shrink-0 text-gray-700 transition-transform {isOpen ? 'rotate-180' : ''}"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -220,7 +220,7 @@
 
               <!-- Seen / total count -->
               <span
-                class="w-14 shrink-0 text-right text-xs text-gray-400 tabular-nums dark:text-gray-500"
+                class="w-14 shrink-0 text-right text-xs text-gray-700 tabular-nums dark:text-gray-300"
               >
                 {cs.seen}/{cs.total}
               </span>
@@ -241,7 +241,7 @@
 
         <!-- Legend -->
         <div
-          class="flex flex-wrap gap-4 border-t border-gray-100 bg-gray-50 px-4 py-2 text-xs text-gray-400 dark:border-gray-700/60 dark:bg-indigo-900/40 dark:text-gray-500"
+          class="flex flex-wrap gap-4 border-t border-gray-100 bg-gray-50 px-4 py-2 text-xs text-gray-700 dark:border-gray-700/60 dark:bg-indigo-900/40 dark:text-gray-300"
         >
           <span class="flex items-center gap-1.5">
             <span class="inline-block h-2 w-3 rounded-sm {levelColors[lg.level]}"></span>

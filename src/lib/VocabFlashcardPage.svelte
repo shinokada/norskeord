@@ -613,7 +613,7 @@
     <!-- Centre: level badge + category title -->
     <div class="flex flex-col items-center justify-center text-center">
       <h1 class="text-xl leading-tight">
-        {#if level}<span class="mr-1 font-normal text-gray-400 dark:text-gray-500">{level} ·</span
+        {#if level}<span class="mr-1 font-normal text-gray-700 dark:text-gray-300">{level} ·</span
           >{/if}<span class="font-bold">{title}</span>
       </h1>
     </div>
@@ -707,7 +707,7 @@
   <!-- Link to profile preferences -->
   <a
     href="/my-profile"
-    class="mt-1 text-xs text-gray-400 hover:text-gray-600 hover:underline dark:text-gray-500 dark:hover:text-gray-300"
+    class="mt-1 text-xs text-gray-700 hover:text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-gray-300"
   >
     {m.flashcard_change_defaults()}
   </a>
@@ -873,7 +873,7 @@
 
   <!-- 2-B: new-card cap notice -->
   {#if deckMode === 'due' && sessionNewCardCount >= NEW_CARD_SESSION_LIMIT}
-    <p class="mt-2 text-xs text-gray-400 dark:text-gray-500">
+    <p class="mt-2 text-xs text-gray-700 dark:text-gray-300">
       {m.flashcard_new_limit()}
     </p>
   {/if}
@@ -889,7 +889,7 @@
         good: 'bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400',
         easy: 'bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400'
       }}
-      <p class="mt-3 text-xs text-gray-400 dark:text-gray-500">
+      <p class="mt-3 text-xs text-gray-700 dark:text-gray-300">
         Last: <span
           class="inline-block rounded-full px-2 py-0.5 text-xs font-medium {colorMap[lastRating]}"
           >{labelMap[lastRating]}</span
@@ -1094,7 +1094,7 @@
     <div
       class="mt-6 w-full max-w-lg border-t border-gray-200 pt-4 text-center dark:border-gray-700"
     >
-      <p class="text-xs text-gray-400 dark:text-gray-500">
+      <p class="text-xs text-gray-700 dark:text-gray-300">
         📌 Your progress is saved on this device only.
         <a
           href="/auth/login"
