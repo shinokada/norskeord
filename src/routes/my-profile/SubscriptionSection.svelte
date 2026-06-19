@@ -226,7 +226,7 @@
               onclick={handleReminderToggle}
               class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
             />
-            <span class="text-sm text-gray-600 dark:text-gray-400">
+            <span class="text-sm text-gray-600 dark:text-gray-300">
               {m.profile_sub_daily_reminder()}
               {#if reminderLoading}
                 <span class="text-xs text-gray-400">Saving…</span>
@@ -258,7 +258,7 @@
               onclick={handleEmailReminderToggle}
               class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
             />
-            <span class="text-sm text-gray-600 dark:text-gray-400">
+            <span class="text-sm text-gray-600 dark:text-gray-300">
               {m.profile_sub_email_reminder()}
               {#if emailReminderLoading}
                 <span class="text-xs text-gray-400">Saving…</span>

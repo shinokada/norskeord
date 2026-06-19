@@ -260,6 +260,6 @@
       </div>
     {/if}
   {:else}
-    <p class="text-sm text-gray-400 dark:text-gray-500">{m.blog_filter_no_results()}</p>
+    <p class="text-sm text-gray-500 dark:text-gray-300">{m.blog_filter_no_results()}</p>
   {/if}
 </div>

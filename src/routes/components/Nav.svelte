@@ -224,7 +224,7 @@
             </span>
           {/if}
           <span
-            class="block text-xs text-gray-500 dark:text-gray-400 {displayName ? 'mt-0.5' : ''}"
+            class="block text-xs text-gray-500 dark:text-gray-300 {displayName ? 'mt-0.5' : ''}"
           >
             {effectiveUser.email}
           </span>
@@ -420,7 +420,7 @@
         <SidebarItem label="Log out" onclick={logout} class="cursor-pointer">
           {#snippet icon()}
             <ArrowLeftToBracketOutline
-            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
             />
           {/snippet}
         </SidebarItem>
