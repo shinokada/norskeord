@@ -258,7 +258,7 @@
         {m.nav_plus_badge()}
       </a>
     {/if}
-    <DarkMode class="inline-block hover:text-gray-900 dark:hover:text-white" />
+    <DarkMode class="inline-block hover:text-gray-900 dark:text-gray-200 dark:hover:text-white" />
     <SidebarButton onclick={sidebarUi.toggle} />
   </div>
 
@@ -274,12 +274,12 @@
   >
     <!-- Six level links — direct links to hub pages (no mega-menu) -->
     {#each levels as level (level)}
-      <NavLi href="/learn/{level.toLowerCase()}">{level}</NavLi>
+      <NavLi href="/learn/{level.toLowerCase()}" class="md:dark:text-gray-200">{level}</NavLi>
     {/each}
-    <NavLi href="/blog">Blog</NavLi>
+    <NavLi href="/blog" class="md:dark:text-gray-200">Blog</NavLi>
 
-    <!-- More dropdown — Guide, Resources, Blog -->
-    <NavLi class="cursor-pointer">
+    <!-- Help dropdown — Guide, Resources -->
+    <NavLi class="cursor-pointer md:dark:text-gray-200">
       {m.nav_help()}<ChevronDownOutline
         class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
       />

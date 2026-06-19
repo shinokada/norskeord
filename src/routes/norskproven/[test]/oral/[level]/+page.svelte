@@ -240,7 +240,7 @@
                 >
                   {revealedCount + i + 1}
                 </span>
-                <p class="text-sm text-gray-400 dark:text-gray-600">&nbsp;</p>
+                <p class="text-sm text-gray-700 dark:text-gray-300">&nbsp;</p>
               </div>
             {/each}
           </div>
