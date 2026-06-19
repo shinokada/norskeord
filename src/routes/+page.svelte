@@ -276,7 +276,7 @@
 
 <!-- ── Feature strip ────────────────────────────────────────────────────── -->
 <div
-  class="relative mb-12 border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800"
+  class="relative mb-12 border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-indigo-950/60"
 >
   <div
     class="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5"

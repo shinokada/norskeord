@@ -153,7 +153,9 @@
           </span>
         </div>
         <svg
-          class="h-4 w-4 shrink-0 text-gray-700 transition-transform {isOpen ? 'rotate-180' : ''}"
+          class="h-4 w-4 shrink-0 text-gray-700 dark:text-gray-300 transition-transform {isOpen
+            ? 'rotate-180'
+            : ''}"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
