@@ -1,5 +1,5 @@
 1. http://localhost:5173/grammar/ikke-placement?from=a2
-Grammar page texts are not hard to read in light-mode and dark-mode.
+   Grammar page texts are not hard to read in light-mode and dark-mode.
 
 2. http://localhost:5173/quiz?level=B1 in dark-mode, text above Start quiz is hard to read.
 
