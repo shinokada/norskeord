@@ -41,11 +41,11 @@
     </div>
   {/if}
 
-  <p class="mb-3 line-clamp-2 text-sm text-gray-500 dark:text-gray-400">
+  <p class="mb-3 line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
     {rule ? (isNb ? rule.explanationNb : rule.explanationEn) : ''}
   </p>
 
-  <div class="mt-auto flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+  <div class="mt-auto flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">
     <span>{m.grammar_questions_count({ count: total })}</span>
   </div>
 </a>

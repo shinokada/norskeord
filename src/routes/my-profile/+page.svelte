@@ -36,7 +36,7 @@
   <div class="mb-8">
     <h1 class="text-3xl font-bold dark:text-white">{m.profile_title()}</h1>
     {#if data.user?.email}
-      <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">{data.user.email}</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{data.user.email}</p>
     {/if}
   </div>
 

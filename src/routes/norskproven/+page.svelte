@@ -137,7 +137,7 @@
       {m.norskproven_badge()}
     </div>
     <h1 class="text-4xl leading-tight font-bold dark:text-white">{m.norskproven_heading()}</h1>
-    <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+    <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
       {m.norskproven_subheading()}
     </p>
     <a
@@ -153,7 +153,7 @@
     <div class="mb-5">
       <h2 class="text-2xl font-bold dark:text-white">{m.norskproven_practice_heading()}</h2>
     </div>
-    <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
+    <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">
       {m.norskproven_practice_subheading()}
     </p>
 
@@ -221,7 +221,7 @@
           {getSectionLabel(section.labelKey)}
         </h2>
       </div>
-      <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+      <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">
         {getSectionDescription(section.descriptionKey)}
       </p>
 
@@ -236,7 +236,7 @@
         {/each}
       </div>
 
-      <p class="mt-4 text-sm text-gray-400 dark:text-gray-500">
+      <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
         {#if section.level === 'B1' && plan !== 'plus'}
           Want all B1 categories?
           <a

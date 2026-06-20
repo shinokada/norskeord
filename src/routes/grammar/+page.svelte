@@ -57,10 +57,10 @@
   <meta name="description" content={m.grammar_subtitle()} />
 </svelte:head>
 
-<div class="mx-auto max-w-3xl px-4 py-8 text-left">
+<div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <div class="mb-8">
     <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.grammar_title()}</h1>
-    <p class="text-gray-500 dark:text-gray-400">{m.grammar_subtitle()}</p>
+    <p class="text-gray-600 dark:text-gray-300">{m.grammar_subtitle()}</p>
   </div>
 
   <!-- Filter panel -->
@@ -77,7 +77,7 @@
                dark:border-gray-600 dark:bg-transparent dark:text-white dark:placeholder-gray-500"
       />
       <svg
-        class="pointer-events-none absolute top-1/2 left-2.5 h-4 w-4 -translate-y-1/2 text-gray-400 dark:text-gray-500"
+        class="pointer-events-none absolute top-1/2 left-2.5 h-4 w-4 -translate-y-1/2 text-gray-600 dark:text-gray-300"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -95,7 +95,7 @@
     <!-- CEFR level pills -->
     <div class="flex flex-wrap items-center gap-2">
       <span
-        class="w-12 shrink-0 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-500"
+        class="w-12 shrink-0 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-300"
       >
         {m.blog_filter_level()}
       </span>
@@ -119,13 +119,13 @@
     <!-- Active filter summary + clear -->
     {#if isFiltering}
       <div class="flex items-center gap-3">
-        <span class="text-xs text-gray-400 dark:text-gray-500">
+        <span class="text-xs text-gray-600 dark:text-gray-300">
           {totalVisible}
           {totalVisible === 1 ? 'topic' : 'topics'}
         </span>
         <button
           onclick={clearFilters}
-          class="text-xs text-gray-400 underline hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
+          class="text-xs text-gray-400 underline hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-300"
         >
           {m.blog_filter_clear()}
         </button>
@@ -133,7 +133,7 @@
     {/if}
   </div>
 
-  <p class="mb-4 text-sm font-medium text-gray-600 dark:text-gray-400">{m.grammar_pick_topic()}</p>
+  <p class="mb-4 text-sm font-medium text-gray-600 dark:text-gray-300">{m.grammar_pick_topic()}</p>
 
   <!-- Free topics -->
   {#if filteredFree.length > 0}
@@ -172,7 +172,7 @@
           <p class="mb-1 text-sm font-semibold text-indigo-800 dark:text-indigo-200">
             {data.lockedTopics.length} more topics with Plus
           </p>
-          <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+          <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
             Upgrade to unlock advanced sentence structure topics — word order, relative clauses,
             det-sentences, sentence adverbials, and more.
           </p>
@@ -214,10 +214,10 @@
                 {/each}
               </div>
             {/if}
-            <p class="mb-3 line-clamp-2 text-sm text-gray-500 dark:text-gray-400">
+            <p class="mb-3 line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
               {rule ? rule.explanationEn : ''}
             </p>
-            <div class="mt-auto text-xs text-gray-400 dark:text-gray-500">{t.total} questions</div>
+            <div class="mt-auto text-xs text-gray-600 dark:text-gray-300">{t.total} questions</div>
           </a>
         {/each}
       </div>
@@ -226,6 +226,6 @@
 
   <!-- No results -->
   {#if isFiltering && totalVisible === 0}
-    <p class="text-sm text-gray-400 dark:text-gray-500">{m.blog_filter_no_results()}</p>
+    <p class="text-sm text-gray-600 dark:text-gray-300">{m.blog_filter_no_results()}</p>
   {/if}
 </div>

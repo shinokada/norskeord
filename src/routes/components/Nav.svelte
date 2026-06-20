@@ -27,7 +27,8 @@
     NewspaperOutline,
     ChartOutline,
     UserCircleOutline,
-    ArrowLeftToBracketOutline
+    ArrowLeftToBracketOutline,
+    GlobeOutline
   } from 'flowbite-svelte-icons';
   import { LANGUAGES, languageEntryForLocale } from '$lib/config';
   import type { Locale } from '$lib/localeStore.svelte';
@@ -165,17 +166,34 @@
     {/if}
 
     <div class="relative">
+      <!-- Mobile: globe icon -->
       <button
         type="button"
-        onclick={() => (langDropdownOpen = !langDropdownOpen)}
         aria-label="Switch language"
-        class="inline-flex items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="lang-trigger inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:hidden"
+      >
+        <GlobeOutline
+          class="h-5 w-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400"
+        />
+      </button>
+
+      <!-- Desktop: flag + abbr + chevron -->
+      <button
+        type="button"
+        aria-label="Switch language"
+        class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {currentLangEntry?.[1].flag}
         {currentLangEntry?.[1].abbr}
         <ChevronDownOutline class="h-4 w-4" />
       </button>
-      <Dropdown bind:isOpen={langDropdownOpen} simple class="dark:border-gray-700 dark:bg-blue-950">
+
+      <Dropdown
+        triggeredBy=".lang-trigger"
+        bind:isOpen={langDropdownOpen}
+        simple
+        class="dark:border-gray-700 dark:bg-blue-950"
+      >
         {#each Object.entries(LANGUAGES) as [, { name, flag, code }] (code)}
           <DropdownItem
             class="dark:hover:bg-blue-900 {localeStore.current === code ? 'font-semibold' : ''}"
@@ -224,7 +242,7 @@
             </span>
           {/if}
           <span
-            class="block text-xs text-gray-500 dark:text-gray-400 {displayName ? 'mt-0.5' : ''}"
+            class="block text-xs text-gray-500 dark:text-gray-300 {displayName ? 'mt-0.5' : ''}"
           >
             {effectiveUser.email}
           </span>
@@ -258,7 +276,7 @@
         {m.nav_plus_badge()}
       </a>
     {/if}
-    <DarkMode class="inline-block hover:text-gray-900 dark:hover:text-white" />
+    <DarkMode class="inline-block hover:text-gray-900 dark:text-gray-200 dark:hover:text-white" />
     <SidebarButton onclick={sidebarUi.toggle} />
   </div>
 
@@ -274,12 +292,12 @@
   >
     <!-- Six level links — direct links to hub pages (no mega-menu) -->
     {#each levels as level (level)}
-      <NavLi href="/learn/{level.toLowerCase()}">{level}</NavLi>
+      <NavLi href="/learn/{level.toLowerCase()}" class="md:dark:text-gray-200">{level}</NavLi>
     {/each}
-    <NavLi href="/blog">Blog</NavLi>
+    <NavLi href="/blog" class="md:dark:text-gray-200">Blog</NavLi>
 
-    <!-- More dropdown — Guide, Resources, Blog -->
-    <NavLi class="cursor-pointer">
+    <!-- Help dropdown — Guide, Resources -->
+    <NavLi class="cursor-pointer md:dark:text-gray-200">
       {m.nav_help()}<ChevronDownOutline
         class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
       />
@@ -420,7 +438,7 @@
         <SidebarItem label="Log out" onclick={logout} class="cursor-pointer">
           {#snippet icon()}
             <ArrowLeftToBracketOutline
-            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
             />
           {/snippet}
         </SidebarItem>

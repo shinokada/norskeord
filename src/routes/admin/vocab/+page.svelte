@@ -286,7 +286,7 @@
   <title>Vocab Admin — Norskeord</title>
 </svelte:head>
 
-<div class="mx-auto max-w-7xl px-4 py-8 text-left">
+<div class="mx-auto max-w-7xl px-4 py-10 text-left">
   <a href="/admin" class="text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; Admin</a>
   <h1 class="mt-2 text-2xl font-bold dark:text-white">Vocabulary</h1>
 
@@ -308,14 +308,14 @@
   </div>
 
   {#if loading}
-    <p class="mt-6 text-gray-500 dark:text-gray-400">Loading {selectedLevel}…</p>
+    <p class="mt-6 text-gray-600 dark:text-gray-300">Loading {selectedLevel}…</p>
   {:else if loadError}
     <p class="mt-6 text-red-600">Error: {loadError}</p>
   {:else}
     <!-- Toolbar -->
     <div class="mt-4 flex flex-wrap items-center gap-3">
       <!-- Review progress -->
-      <span class="text-sm text-gray-500 dark:text-gray-400">
+      <span class="text-sm text-gray-600 dark:text-gray-300">
         Reviewed
         <span
           class={[
@@ -418,7 +418,7 @@
         Unreviewed only
       </label>
 
-      <span class="ml-auto self-center text-sm text-gray-500 dark:text-gray-400">
+      <span class="ml-auto self-center text-sm text-gray-600 dark:text-gray-300">
         {filtered.length} shown
       </span>
     </div>
@@ -467,8 +467,8 @@
               >
                 {e.english}
               </td>
-              <td class="py-2 pr-3 text-gray-500 dark:text-gray-400">{e.category}</td>
-              <td class="py-2 pr-3 text-gray-500 dark:text-gray-400">{e.part}</td>
+              <td class="py-2 pr-3 text-gray-600 dark:text-gray-300">{e.category}</td>
+              <td class="py-2 pr-3 text-gray-600 dark:text-gray-300">{e.part}</td>
               <td class="py-2 pr-3">
                 {#if e._status === 'added'}
                   <span

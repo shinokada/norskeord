@@ -61,5 +61,5 @@
 </script>
 
 <div class="flex min-h-screen items-center justify-center">
-  <p class="text-sm text-gray-400 dark:text-gray-500">Syncing your progress…</p>
+  <p class="text-sm text-gray-600 dark:text-gray-300">Syncing your progress…</p>
 </div>
