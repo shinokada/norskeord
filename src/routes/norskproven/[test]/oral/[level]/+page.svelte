@@ -112,7 +112,7 @@
   <title>{m.norskproven_oral_page_title({ level: data.level, test: data.test })}</title>
 </svelte:head>
 
-<div class="mx-auto max-w-2xl px-4 py-8 text-left">
+<div class="mx-auto max-w-2xl px-4 py-10 text-left">
   {#if oralState !== 'summary'}
     <!-- ── Page heading ─────────────────────────────────────────────────── -->
     <div class="mb-5">
@@ -129,7 +129,7 @@
 
     <!-- ── Progress bar ──────────────────────────────────────────────────── -->
     <div class="mb-6">
-      <div class="mb-1 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+      <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
         <span>Scenario {scenarioIndex + 1} av {scenarios.length}</span>
         <span class="font-medium text-blue-500 dark:text-blue-400"
           >{data.level} · Test {data.test}</span
@@ -164,7 +164,7 @@
             >
               Tips
             </p>
-            <p class="text-sm text-gray-600 dark:text-gray-400">
+            <p class="text-sm text-gray-600 dark:text-gray-300">
               {current.tips}
             </p>
           </div>
@@ -173,7 +173,7 @@
 
       {#if oralState === 'prep'}
         <div class="flex flex-col items-center gap-4">
-          <p class="text-sm text-gray-500 dark:text-gray-400">
+          <p class="text-sm text-gray-600 dark:text-gray-300">
             Les scenariet og tenk deg om. Eksaminatoren vil stille spørsmål ett om gangen.
           </p>
           <button
@@ -301,7 +301,7 @@
                   >
                     Kommentar
                   </p>
-                  <p class="text-xs text-gray-600 dark:text-gray-400">
+                  <p class="text-xs text-gray-600 dark:text-gray-300">
                     {current.modelNotes}
                   </p>
                 </div>
@@ -316,10 +316,10 @@
     <div class="text-center">
       <p class="text-5xl">🗣️</p>
       <h2 class="mt-3 text-2xl font-bold dark:text-white">Muntlig økt fullført!</h2>
-      <p class="mt-2 text-gray-600 dark:text-gray-400">
+      <p class="mt-2 text-gray-600 dark:text-gray-300">
         Du har øvd på alle {scenarios.length} scenarier på {data.level}-nivå.
       </p>
-      <p class="mt-1 text-sm text-gray-500 dark:text-gray-500">
+      <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
         Øv gjerne igjen — å si svarene høyt hver gang gjør en stor forskjell.
       </p>
 

@@ -88,7 +88,7 @@
   <title>Språkhjørnet — Norskeord</title>
 </svelte:head>
 
-<div class="mx-auto max-w-3xl px-4 py-12 text-left">
+<div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <h1 class="mb-2 text-4xl font-bold dark:text-white">Språkhjørnet</h1>
   <p class="mb-8 text-gray-600 dark:text-gray-300">
     {m.blog_subheading()}
@@ -112,7 +112,7 @@
                dark:text-white dark:placeholder-gray-400"
       />
       <svg
-        class="pointer-events-none absolute top-1/2 left-2.5 h-4 w-4 -translate-y-1/2 text-gray-600 dark:text-gray-400"
+        class="pointer-events-none absolute top-1/2 left-2.5 h-4 w-4 -translate-y-1/2 text-gray-600 dark:text-gray-300"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -180,12 +180,12 @@
     <!-- Active filter summary + clear -->
     {#if selectedLevel || selectedTag || searchTerm}
       <div class="flex items-center gap-3">
-        <span class="text-xs text-gray-400 dark:text-gray-500">
+        <span class="text-xs text-gray-600 dark:text-gray-300">
           {m.blog_filter_results({ count: totalVisible })}
         </span>
         <button
           onclick={clearFilters}
-          class="text-xs text-gray-400 underline hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
+          class="text-xs text-gray-400 underline hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-300"
         >
           {m.blog_filter_clear()}
         </button>
@@ -210,7 +210,7 @@
             <div class="flex items-start justify-between gap-4">
               <div class="min-w-0">
                 <p class="font-semibold text-gray-900 dark:text-white">{post.title}</p>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">{post.description}</p>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{post.description}</p>
               </div>
               <span class="mt-1 shrink-0 text-xs text-gray-600 dark:text-gray-300"
                 >{formatDate(post.publishedAt)}</span

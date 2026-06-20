@@ -13,7 +13,7 @@
   <h2 class="mb-1 text-base font-semibold text-red-600 dark:text-red-400">
     {m.profile_danger_heading()}
   </h2>
-  <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
+  <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">
     {m.profile_danger_subtitle()}
   </p>
 
@@ -22,7 +22,7 @@
       <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_danger_delete_heading()}
       </p>
-      <p class="text-xs text-gray-500 dark:text-gray-400">
+      <p class="text-xs text-gray-600 dark:text-gray-300">
         {m.profile_danger_delete_body()}
       </p>
     </div>

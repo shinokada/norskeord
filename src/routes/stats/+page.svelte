@@ -325,7 +325,7 @@
   }
 </script>
 
-<div class="mx-auto max-w-4xl px-4 py-8 text-left">
+<div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- Header -->
   <div class="mb-8 flex items-start justify-between gap-4">
     <div>
@@ -365,7 +365,7 @@
   </div>
 
   {#if !mounted}
-    <p class="text-gray-400 dark:text-gray-500">{m.stats_loading()}</p>
+    <p class="text-gray-600 dark:text-gray-300">{m.stats_loading()}</p>
   {:else if totalSeen === 0 && grammarSeen === 0}
     <!-- Empty state -->
     <div
@@ -460,7 +460,7 @@
               {/if}
             </div>
             {#if ls.seen === 0}
-              <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
+              <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
                 {m.stats_no_cards_this_level()}
               </p>
             {:else}
@@ -546,11 +546,11 @@
               >
                 <span
                   class="text-sm font-medium {gt.seen === 0
-                    ? 'text-gray-400 dark:text-gray-500'
+                    ? 'text-gray-600 dark:text-gray-300'
                     : 'text-gray-800 dark:text-gray-100'}">{gt.title}</span
                 >
                 {#if gt.seen === 0}
-                  <span class="text-xs text-gray-400 dark:text-gray-500">
+                  <span class="text-xs text-gray-600 dark:text-gray-300">
                     {m.stats_grammar_not_started()}
                   </span>
                 {:else}

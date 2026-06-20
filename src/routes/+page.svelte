@@ -309,7 +309,7 @@
         <h3 class="mb-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
           {card.titleFn()}
         </h3>
-        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-300">
           {card.bodyFn()}
         </p>
         <span
@@ -346,7 +346,7 @@
         <p class="mb-2 text-sm text-gray-700 dark:text-gray-300">
           {entryCountLabel(lvl.id)}
         </p>
-        <p class="mb-4 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-400">
+        <p class="mb-4 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-300">
           {lvl.description()}
         </p>
         <span class="text-sm font-medium {accent.link} group-hover:underline">

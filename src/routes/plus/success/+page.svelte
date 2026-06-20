@@ -9,7 +9,7 @@
     {m.plus_success_heading()}
   </h1>
 
-  <p class="mx-auto mt-4 max-w-sm text-gray-600 dark:text-gray-400">
+  <p class="mx-auto mt-4 max-w-sm text-gray-600 dark:text-gray-300">
     {m.plus_success_body()}
   </p>
 

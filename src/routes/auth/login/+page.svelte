@@ -175,7 +175,7 @@
 <div class="mx-auto max-w-sm px-4 py-16">
   <div class="mb-8 text-center">
     <h1 class="text-2xl font-bold dark:text-white">{m.login_heading()}</h1>
-    <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
+    <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
       {m.login_subheading()}
     </p>
     <p class="mt-3 text-sm font-medium text-green-600 dark:text-green-400">
@@ -189,7 +189,7 @@
     >
       <p class="text-2xl">📬</p>
       <p class="mt-3 font-semibold dark:text-white">{m.login_success_heading()}</p>
-      <p class="mt-1 text-base text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-base text-gray-600 dark:text-gray-300">
         {m.login_success_body({ email: submittedEmail })}
       </p>
     </div>
@@ -266,7 +266,7 @@
         </button>
       </div>
 
-      <p class="mt-6 text-center text-sm text-gray-400 dark:text-gray-500">
+      <p class="mt-6 text-center text-sm text-gray-600 dark:text-gray-300">
         {m.login_no_password_note()}
       </p>
     </form>

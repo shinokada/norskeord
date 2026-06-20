@@ -189,12 +189,12 @@
         </span>
       </p>
       {#if billingInterval === 'year'}
-        <p class="text-xs text-gray-400 dark:text-gray-500">{m.profile_sub_billed_annually()}</p>
+        <p class="text-xs text-gray-600 dark:text-gray-300">{m.profile_sub_billed_annually()}</p>
       {:else if billingInterval === 'month'}
-        <p class="text-xs text-gray-400 dark:text-gray-500">{m.profile_sub_billed_monthly()}</p>
+        <p class="text-xs text-gray-600 dark:text-gray-300">{m.profile_sub_billed_monthly()}</p>
       {/if}
       {#if renewsAt}
-        <p class="text-sm text-gray-500 dark:text-gray-400">{m.profile_sub_renews()} {renewsAt}</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300">{m.profile_sub_renews()} {renewsAt}</p>
       {/if}
     </div>
     {#if billingPortalUrl}
@@ -233,7 +233,7 @@
               {/if}
             </span>
           </label>
-          <p class="mt-0.5 ml-7 text-xs text-gray-400 dark:text-gray-500">
+          <p class="mt-0.5 ml-7 text-xs text-gray-600 dark:text-gray-300">
             {m.profile_sub_daily_reminder_hint()}
             <a
               href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
@@ -267,7 +267,7 @@
               {/if}
             </span>
           </label>
-          <p class="mt-0.5 ml-7 text-xs text-gray-400 dark:text-gray-500">
+          <p class="mt-0.5 ml-7 text-xs text-gray-600 dark:text-gray-300">
             {m.profile_sub_email_reminder_hint()}
             <a
               href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
@@ -287,10 +287,10 @@
 
   {#if !isPlus}
     <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
-      <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+      <p class="mb-1 text-sm font-medium text-gray-600 dark:text-gray-300">
         {m.profile_sub_notifications_heading()}
       </p>
-      <p class="text-xs text-gray-400 dark:text-gray-500">
+      <p class="text-xs text-gray-600 dark:text-gray-300">
         {m.profile_sub_notifications_plus_only()}
       </p>
     </div>

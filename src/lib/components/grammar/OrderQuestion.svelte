@@ -20,7 +20,7 @@
   });
 </script>
 
-<p class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500">
+<p class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300">
   {m.grammar_order_prompt()}
 </p>
 
@@ -28,7 +28,7 @@
   <p class="mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">{question.prompt}</p>
 {/if}
 
-<p class="mb-2 text-xs text-gray-400 dark:text-gray-500">{m.grammar_order_words()}</p>
+<p class="mb-2 text-xs text-gray-600 dark:text-gray-300">{m.grammar_order_words()}</p>
 <div class="mb-4 flex flex-wrap gap-2">
   {#each chips as token, i (i)}
     <span

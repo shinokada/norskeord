@@ -80,7 +80,7 @@
   {@html '<scr' + 'ipt type="application/ld+json">' + faqSchemaJson + '</scr' + 'ipt>'}
 </svelte:head>
 
-<div class="mx-auto max-w-3xl px-4 py-12 text-left">
+<div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <Heading tag="h1" class="mb-2 text-4xl font-bold dark:text-white">{m.guide_page_title()}</Heading>
   <p class="mb-8 text-gray-600 dark:text-gray-300">
     {m.guide_page_subtitle()}
