@@ -204,7 +204,7 @@
   <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
   <div class="mb-10">
     <h1 class="text-4xl leading-tight font-bold dark:text-white">Norwegian Learning Resources</h1>
-    <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+    <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
       A curated collection of free tools, courses, and communities to help you learn Norwegian —
       organised by skill, from A1 beginner to B2 and Norskprøven preparation.
     </p>
@@ -220,7 +220,7 @@
           >Free</span
         >
       </div>
-      <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">{section.description}</p>
+      <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">{section.description}</p>
 
       <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {#each section.resources as resource (resource.name)}
@@ -238,10 +238,10 @@
               >
                 {resource.name}
               </p>
-              <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-400">{resource.description}</p>
+              <p class="mt-0.5 text-xs text-gray-700 dark:text-gray-300">{resource.description}</p>
             </div>
             <span
-              class="mt-0.5 ml-3 shrink-0 text-gray-300 group-hover:text-blue-400 dark:text-gray-600"
+              class="mt-0.5 ml-3 shrink-0 text-gray-700 group-hover:text-blue-400 dark:text-gray-300"
               >↗</span
             >
           </a>
@@ -254,7 +254,7 @@
   <div
     class="rounded-xl border border-gray-200 bg-gray-50 p-6 text-center dark:border-gray-700 dark:bg-gray-800/40"
   >
-    <p class="text-sm text-gray-500 dark:text-gray-400">
+    <p class="text-sm text-gray-600 dark:text-gray-300">
       Know a great free resource that's missing?
       {#if user}
         Send us a message from <a

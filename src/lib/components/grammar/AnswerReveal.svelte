@@ -50,14 +50,14 @@
       {question.answer === 'A' ? question.optionA : question.optionB}
     </p>
     {#if question.explanation}
-      <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">{question.explanation}</p>
+      <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">{question.explanation}</p>
     {/if}
   {:else}
     <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">{question.answer}</p>
   {/if}
 
   {#if !isCorrect && userAnswer}
-    <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+    <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
       {m.grammar_you_wrote()}
       <span class="font-medium text-gray-700 dark:text-gray-200">{userAnswer}</span>
     </p>
@@ -95,7 +95,7 @@
       {isLast ? m.grammar_see_results() : m.grammar_next()}
     </button>
   </div>
-  <p class="mt-2 text-right text-xs text-gray-400 dark:text-gray-600">
+  <p class="mt-2 text-right text-xs text-gray-700 dark:text-gray-300">
     {m.grammar_continue_hint()}
   </p>
 </div>

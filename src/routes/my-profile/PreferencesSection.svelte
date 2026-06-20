@@ -162,7 +162,7 @@
           <option value={level}>{level}</option>
         {/each}
       </select>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_target_level_hint()}
       </p>
     </div>
@@ -185,7 +185,7 @@
           <option value={code}>{flag} {name}</option>
         {/each}
       </select>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_ui_language_hint()}
       </p>
     </div>
@@ -208,7 +208,7 @@
           <option value={key}>{flag} {name}</option>
         {/each}
       </select>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         The language your flashcards are translated into.
       </p>
     </div>
@@ -233,7 +233,7 @@
           </label>
         {/each}
       </div>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_card_direction_hint()}
       </p>
       {#if showDefNote}
@@ -262,7 +262,7 @@
           </label>
         {/each}
       </div>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_card_type_hint()}
       </p>
     </div>
@@ -286,7 +286,7 @@
           </label>
         {/each}
       </div>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_voice_speed_hint()}
       </p>
     </div>
@@ -310,7 +310,7 @@
           </label>
         {/each}
       </div>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_voice_tone_hint()}
       </p>
     </div>
@@ -333,7 +333,7 @@
           <option value={opt.value}>{opt.label}</option>
         {/each}
       </select>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_session_limit_hint()}
       </p>
     </div>
@@ -356,7 +356,7 @@
           <option value={opt.value}>{opt.label}</option>
         {/each}
       </select>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_quiz_limit_hint()}
       </p>
     </div>
@@ -378,7 +378,7 @@
           >{m.profile_prefs_show_example_label()}</span
         >
       </label>
-      <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
         {m.profile_prefs_show_example_hint()}
       </p>
     </div>

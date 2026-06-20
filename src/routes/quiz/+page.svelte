@@ -332,7 +332,7 @@
   </div>
 {/if}
 
-<div class="mx-auto max-w-2xl px-4 py-8 text-left">
+<div class="mx-auto max-w-2xl px-4 py-10 text-left">
   {#if quizState !== 'idle'}
     <div class="mb-4">
       <button
@@ -347,7 +347,7 @@
   {#if quizState === 'idle'}
     <div>
       <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.quiz_title()}</h1>
-      <p class="mb-8 text-gray-500 dark:text-gray-400">
+      <p class="mb-8 text-gray-600 dark:text-gray-300">
         {m.quiz_subtitle()}
       </p>
 
@@ -427,7 +427,7 @@
         </div>
       </div>
 
-      <p class="mb-6 text-sm text-gray-400 dark:text-gray-500">
+      <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">
         {m.quiz_pool_hint({
           count: quizEntries.length,
           session: Math.min(
@@ -458,7 +458,7 @@
 
     <!-- Progress bar -->
     <div class="mb-6">
-      <div class="mb-1 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+      <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
         <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
         <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
       </div>
@@ -477,7 +477,7 @@
       {#if current.type === 'mc'}
         {@const q = current as MultipleChoiceQuestion}
         <p
-          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500"
+          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300"
         >
           {m.quiz_mc_prompt()}
         </p>
@@ -498,11 +498,11 @@
             </button>
           {/each}
         </div>
-        <p class="mt-4 text-xs text-gray-400 dark:text-gray-600">{m.quiz_mc_hint()}</p>
+        <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">{m.quiz_mc_hint()}</p>
       {:else if current.type === 'fill'}
         {@const q = current as FillBlankQuestion}
         <p
-          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500"
+          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300"
         >
           {m.quiz_fill_prompt()}
         </p>
@@ -546,7 +546,7 @@
       {:else}
         {@const q = current as TypeAnswerQuestion}
         <p
-          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500"
+          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300"
         >
           {m.quiz_type_prompt()}
         </p>
@@ -596,7 +596,7 @@
 
     <!-- Progress bar (frozen at current position) -->
     <div class="mb-6">
-      <div class="mb-1 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+      <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
         <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
         <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
       </div>
@@ -634,7 +634,7 @@
                 ? 'bg-green-100 font-semibold text-green-800 dark:bg-green-800/30 dark:text-green-200'
                 : i === selectedOption && !isCorrect
                   ? 'bg-red-100 text-red-700 dark:bg-red-800/30 dark:text-red-300'
-                  : 'text-gray-500 dark:text-gray-400'}"
+                  : 'text-gray-600 dark:text-gray-300'}"
             >
               <span
                 class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold
@@ -666,7 +666,7 @@
           <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">{q.answer}</p>
         {/if}
         {#if typedAnswer && typedAnswer !== q.answer}
-          <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+          <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
             {m.quiz_you_wrote()}
             <span class="font-medium text-gray-700 dark:text-gray-200">{typedAnswer || '—'}</span>
           </p>
@@ -679,7 +679,7 @@
           {current.entry.norsk}
         </span>
         <SpeakButton word={current.entry.norsk} label="Pronounce" />
-        <span class="text-xs text-gray-400 dark:text-gray-500">
+        <span class="text-xs text-gray-600 dark:text-gray-300">
           {current.entry.part} · {current.entry.level}
         </span>
       </div>
@@ -689,7 +689,7 @@
         <p class="text-sm text-gray-700 italic dark:text-gray-300">
           {current.entry.example}
         </p>
-        <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
+        <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
           {current.entry.example_english}
         </p>
         <div class="mt-2">
@@ -719,7 +719,7 @@
           {currentIndex < questions.length - 1 ? m.quiz_next() : m.quiz_see_results()}
         </button>
       </div>
-      <p class="mt-2 text-right text-xs text-gray-400 dark:text-gray-600">
+      <p class="mt-2 text-right text-xs text-gray-700 dark:text-gray-300">
         {m.quiz_continue_hint()}
       </p>
     </div>
@@ -727,7 +727,7 @@
     <div>
       <p class="mb-1 text-5xl">{scoreEmoji(correctCount, questions.length)}</p>
       <h2 class="mt-3 text-2xl font-bold dark:text-white">{m.quiz_session_done()}</h2>
-      <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
+      <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
         {m.quiz_score({ correct: correctCount, total: questions.length })}
       </p>
 
@@ -746,12 +746,12 @@
             <div class="min-w-0 flex-1">
               <p class="font-medium text-gray-800 dark:text-gray-100">
                 {result.question.entry.norsk}
-                <span class="ml-1 font-normal text-gray-500 dark:text-gray-400">
+                <span class="ml-1 font-normal text-gray-600 dark:text-gray-300">
                   — {result.question.entry.english}
                 </span>
               </p>
               {#if !result.correct && result.userAnswer}
-                <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">
+                <p class="mt-0.5 text-xs text-gray-600 dark:text-gray-300">
                   {m.quiz_you_answered()}
                   {result.userAnswer}
                 </p>
@@ -772,7 +772,7 @@
 
       <!-- Next quiz picker -->
       <div class="mt-8 space-y-4 text-left">
-        <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Next quiz settings</p>
+        <p class="text-sm font-medium text-gray-600 dark:text-gray-300">Next quiz settings</p>
         <!-- Level -->
         <div>
           <label
@@ -856,7 +856,7 @@
           {m.quiz_restart()}
         </button>
       </div>
-      <p class="mt-4 text-xs text-gray-400 dark:text-gray-600">
+      <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">
         {m.quiz_restart_hint()}
       </p>
     </div>

@@ -325,14 +325,14 @@
   }
 </script>
 
-<div class="mx-auto max-w-4xl px-4 py-8 text-left">
+<div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- Header -->
   <div class="mb-8 flex items-start justify-between gap-4">
     <div>
       <h1 class="text-3xl font-bold dark:text-white">
         {displayName ? m.stats_title_named({ name: displayName }) : m.stats_title()}
       </h1>
-      <p class="mt-1 text-gray-500 dark:text-gray-400">
+      <p class="mt-1 text-gray-500 dark:text-gray-300">
         {isPlus
           ? m.stats_subtitle_plus()
           : user
@@ -365,7 +365,7 @@
   </div>
 
   {#if !mounted}
-    <p class="text-gray-400 dark:text-gray-500">{m.stats_loading()}</p>
+    <p class="text-gray-600 dark:text-gray-300">{m.stats_loading()}</p>
   {:else if totalSeen === 0 && grammarSeen === 0}
     <!-- Empty state -->
     <div
@@ -373,7 +373,7 @@
     >
       <p class="text-2xl">📚</p>
       <p class="mt-3 text-lg font-medium dark:text-white">{m.stats_empty_heading()}</p>
-      <p class="mt-1 text-gray-500 dark:text-gray-400">{m.stats_empty_body()}</p>
+      <p class="mt-1 text-gray-500 dark:text-gray-300">{m.stats_empty_body()}</p>
       <a
         href="/"
         class="mt-5 inline-block rounded-lg bg-blue-600 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-700"
@@ -410,7 +410,7 @@
             class="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
           >
             <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
-            <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{stat.label}</p>
+            <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
           </div>
         {/each}
       </div>
@@ -425,7 +425,7 @@
           >
             <div class="mb-2 flex items-center justify-between">
               <span class="font-semibold {levelTextColors[ls.level]}">{ls.level}</span>
-              <span class="text-sm text-gray-500 dark:text-gray-400">
+              <span class="text-sm text-gray-500 dark:text-gray-300">
                 {ls.seen}
                 {m.stats_seen()} · {ls.due}
                 {m.stats_due_today_short()}
@@ -460,11 +460,11 @@
               {/if}
             </div>
             {#if ls.seen === 0}
-              <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
+              <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
                 {m.stats_no_cards_this_level()}
               </p>
             {:else}
-              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-400">
+              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
                 <span class="flex items-center gap-1">
                   <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
                   {m.stats_learning()}
@@ -501,7 +501,7 @@
             >{m.stats_grammar_heading()}</span
           >
           <div class="flex items-center gap-3">
-            <span class="text-xs text-gray-500 dark:text-gray-400">
+            <span class="text-xs text-gray-500 dark:text-gray-300">
               {grammarTopicCount} / {grammarByTopic.length}
               {grammarByTopic.length === 1 ? 'topic' : 'topics'} · {grammarSeen}
               {m.stats_seen()} · {grammarMastered}
@@ -532,7 +532,7 @@
             {#each [{ label: m.stats_grammar_practiced(), value: grammarSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_grammar_due(), value: grammarDue, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_grammar_mastered(), value: grammarMastered, color: 'text-green-600 dark:text-green-400' }] as stat (stat.label)}
               <div class="bg-white p-4 text-center dark:bg-indigo-950/60">
                 <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
-                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{stat.label}</p>
+                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
               </div>
             {/each}
           </div>
@@ -546,15 +546,15 @@
               >
                 <span
                   class="text-sm font-medium {gt.seen === 0
-                    ? 'text-gray-400 dark:text-gray-500'
+                    ? 'text-gray-600 dark:text-gray-300'
                     : 'text-gray-800 dark:text-gray-100'}">{gt.title}</span
                 >
                 {#if gt.seen === 0}
-                  <span class="text-xs text-gray-400 dark:text-gray-500">
+                  <span class="text-xs text-gray-600 dark:text-gray-300">
                     {m.stats_grammar_not_started()}
                   </span>
                 {:else}
-                  <span class="text-xs text-gray-500 dark:text-gray-400">
+                  <span class="text-xs text-gray-500 dark:text-gray-300">
                     {gt.seen}
                     {m.stats_seen()} · {gt.mastered}
                     {m.stats_grammar_mastered()}{#if gt.due > 0}
@@ -603,7 +603,7 @@
       <h2 class="mb-2 text-base font-semibold text-gray-700 dark:text-gray-300">
         {m.stats_danger_zone()}
       </h2>
-      <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+      <p class="mb-4 text-sm text-gray-500 dark:text-gray-300">
         {user ? m.stats_danger_body_signed_in() : m.stats_danger_body_guest()}
       </p>
 

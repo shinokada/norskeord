@@ -32,7 +32,7 @@
       <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
         {isPlus ? 'Priority support' : 'Support'}
       </p>
-      <p class="text-xs text-gray-400 dark:text-gray-500">
+      <p class="text-xs text-gray-600 dark:text-gray-300">
         {isPlus ? 'Get help directly from the developer' : 'Send a message to the developer'}
       </p>
     </div>
@@ -88,7 +88,7 @@
       <div>
         <label
           for="support-subject"
-          class="mb-1 block text-xs font-medium text-gray-600 dark:text-gray-400"
+          class="mb-1 block text-xs font-medium text-gray-600 dark:text-gray-300"
         >
           Subject
         </label>
@@ -108,7 +108,7 @@
       <div>
         <label
           for="support-message"
-          class="mb-1 block text-xs font-medium text-gray-600 dark:text-gray-400"
+          class="mb-1 block text-xs font-medium text-gray-600 dark:text-gray-300"
         >
           Message
         </label>
@@ -127,7 +127,7 @@
         <p class="text-xs text-red-500">{errorMsg}</p>
       {/if}
 
-      <p class="text-xs text-gray-400 dark:text-gray-500">
+      <p class="text-xs text-gray-600 dark:text-gray-300">
         Your IP address and browser info are collected with this message for abuse prevention.
       </p>
 
