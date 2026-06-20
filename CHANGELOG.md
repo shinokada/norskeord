@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.32.0
+
+### Minor Changes
+
+- - **New Features**
+    - Updated homepage hero badge branding and localization (including a standalone product name label).
+    - Refreshed the footer to be fully localized and data-driven, with updated “Learn” and “Resources” link structure.
+  - **Bug Fixes**
+    - Improved readability and light/dark contrast across many screens (charts, empty states, cards, search, grammar/quiz, and various page headings), plus small spacing tweaks for better legibility.
+    - Updated the language switcher dropdown behavior for more consistent opening.
+  - **Chores**
+    - Updated the project’s package manager version.
+
 ## 2.31.0
 
 ### Minor Changes
