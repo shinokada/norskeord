@@ -29,7 +29,11 @@
     <div class="grid grid-cols-2 gap-8 sm:grid-cols-5">
       <!-- Brand: 2 of 5 cols on desktop, full width on mobile -->
       <div class="col-span-2">
-        <a href="/" class="text-base font-bold text-gray-900 visited:text-gray-900 dark:text-white dark:visited:text-white">{m.norskeord()}</a>
+        <a
+          href="/"
+          class="text-base font-bold text-gray-900 visited:text-gray-900 dark:text-white dark:visited:text-white"
+          >{m.norskeord()}</a
+        >
         <p class="mt-1 text-xs text-gray-800 dark:text-gray-300">
           {m.home_hero_badge()}
         </p>
@@ -38,7 +42,9 @@
 
       <!-- Learn: levels sub-column -->
       <div>
-        <p class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200">
+        <p
+          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
+        >
           Learn
         </p>
         <ul class="space-y-2">
@@ -47,7 +53,8 @@
               <a
                 href={page.link}
                 class="text-sm text-gray-800 visited:text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-white"
-              >{page.name}</a>
+                >{page.name}</a
+              >
             </li>
           {/each}
         </ul>
@@ -55,7 +62,10 @@
 
       <!-- Learn: features sub-column -->
       <div>
-        <p class="mb-3 text-xs font-semibold tracking-widest text-transparent uppercase select-none" aria-hidden="true">
+        <p
+          class="mb-3 text-xs font-semibold tracking-widest text-transparent uppercase select-none"
+          aria-hidden="true"
+        >
           &nbsp;
         </p>
         <ul class="space-y-2">
@@ -64,7 +74,8 @@
               <a
                 href={page.link}
                 class="text-sm text-gray-800 visited:text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-white"
-              >{page.name}</a>
+                >{page.name}</a
+              >
             </li>
           {/each}
         </ul>
@@ -72,7 +83,9 @@
 
       <!-- Resources: full width on mobile, 1 col on desktop -->
       <div class="col-span-2 sm:col-span-1">
-        <p class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200">
+        <p
+          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
+        >
           Resources
         </p>
         <ul class="space-y-2">
@@ -81,7 +94,8 @@
               <a
                 href={page.link}
                 class="text-sm text-gray-800 visited:text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-white"
-              >{page.name}</a>
+                >{page.name}</a
+              >
             </li>
           {/each}
         </ul>

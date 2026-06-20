@@ -343,7 +343,7 @@
 
   <!-- ── Free vs Plus comparison table ──────────────────────────────────────────── -->
   <h2 class="mb-5 text-2xl font-bold dark:text-white">{m.plus_table_heading()}</h2>
-  <div class="mb-14 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+  <div class="mb-14 overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
     <table class="w-full text-sm">
       <thead>
         <tr class="border-b border-gray-200 dark:border-gray-700">
