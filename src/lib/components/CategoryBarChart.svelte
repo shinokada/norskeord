@@ -148,7 +148,7 @@
               style="width: {overallPct}%"
             ></div>
           </div>
-          <span class="text-xs text-gray-500 dark:text-gray-400">
+          <span class="text-xs text-gray-600 dark:text-gray-300">
             {lg.totalSeen} / {lg.totalCards} &middot; {overallPct}%
           </span>
         </div>

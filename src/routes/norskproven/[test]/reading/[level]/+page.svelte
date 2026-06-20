@@ -143,7 +143,7 @@
 
 <svelte:window onkeydown={handleKeyDown} />
 
-<div class="mx-auto max-w-2xl px-4 py-8 text-left">
+<div class="mx-auto max-w-2xl px-4 py-10 text-left">
   {#if readingState === 'questioning' || readingState === 'revealing'}
     <!-- Page heading -->
     <div class="mb-5">
@@ -299,7 +299,7 @@
     <div class="text-center">
       <p class="mb-1 text-5xl">{scoreEmoji(totalCorrect, totalQuestions)}</p>
       <h2 class="mt-3 text-2xl font-bold dark:text-white">Økt fullført!</h2>
-      <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
+      <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
         {m.norskproven_reading_score({ correct: totalCorrect, total: totalQuestions })}
       </p>
 

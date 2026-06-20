@@ -2,9 +2,9 @@
   import { Heading } from 'flowbite-svelte';
 </script>
 
-<div class="mx-auto max-w-3xl px-4 py-12 text-left">
+<div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <Heading tag="h1" class="mb-2 text-3xl font-bold dark:text-white">About Norskeord</Heading>
-  <p class="mb-8 text-gray-500 dark:text-gray-400">
+  <p class="mb-8 text-gray-600 dark:text-gray-300">
     A vocabulary app built for serious Norwegian learners.
   </p>
 

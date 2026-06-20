@@ -49,7 +49,7 @@
   <title>{title} · {m.grammar_title()} — Norskeord</title>
 </svelte:head>
 
-<div class="mx-auto max-w-2xl px-4 py-8 text-left">
+<div class="mx-auto max-w-2xl px-4 py-10 text-left">
   <div class="mb-4 flex items-center justify-between">
     {#if fromLevel()}
       <a
@@ -64,7 +64,7 @@
     {/if}
     <a
       href="/grammar"
-      class="text-sm text-gray-400 hover:text-indigo-500 dark:text-gray-500 dark:hover:text-indigo-300"
+      class="text-sm text-gray-400 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
     >
       {m.grammar_back_to_topics()} →
     </a>

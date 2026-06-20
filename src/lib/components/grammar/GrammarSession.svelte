@@ -110,17 +110,17 @@
 <svelte:window onkeydown={handleKeyDown} />
 
 {#if sessionState === 'loading'}
-  <div class="py-16 text-center text-sm text-gray-400 dark:text-gray-500">…</div>
+  <div class="py-16 text-center text-sm text-gray-600 dark:text-gray-300">…</div>
 {:else if sessionState === 'summary'}
   {#if questions.length === 0}
-    <p class="py-16 text-center text-sm text-gray-500 dark:text-gray-400">{m.grammar_empty()}</p>
+    <p class="py-16 text-center text-sm text-gray-600 dark:text-gray-300">{m.grammar_empty()}</p>
   {:else}
     <GrammarSummary {results} total={questions.length} {correctCount} {dueSoon} onrestart={start} />
   {/if}
 {:else if current}
   <!-- Progress bar -->
   <div class="mb-6">
-    <div class="mb-1 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+    <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
       <span>{m.grammar_question_count({ current: currentIndex + 1, total: questions.length })}</span
       >
       <span>{m.grammar_correct_so_far({ count: correctCount })}</span>

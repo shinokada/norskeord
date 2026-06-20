@@ -69,7 +69,7 @@
   <title>{m.norskproven_writing_page_title({ level: data.level, test: data.test })}</title>
 </svelte:head>
 
-<div class="mx-auto max-w-2xl px-4 py-8 text-left">
+<div class="mx-auto max-w-2xl px-4 py-10 text-left">
   {#if writingState !== 'summary'}
     <!-- ── Page heading ─────────────────────────────────────────────────── -->
     <div class="mb-5">
@@ -86,7 +86,7 @@
 
     <!-- ── Progress bar ──────────────────────────────────────────────────── -->
     <div class="mb-6">
-      <div class="mb-1 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+      <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
         <span>Oppgave {promptIndex + 1} av {prompts.length}</span>
         <span class="font-medium text-blue-500 dark:text-blue-400"
           >{data.level} · Test {data.test}</span
@@ -147,7 +147,7 @@
                 : 'text-green-600 dark:text-green-400'}"
           >
             {m.norskproven_writing_word_count({ count: wordCount })}
-            <span class="font-normal text-gray-400 dark:text-gray-500">
+            <span class="font-normal text-gray-600 dark:text-gray-300">
               / {currentPrompt.wordCountMin}–{currentPrompt.wordCountMax} ord
             </span>
           </span>
@@ -198,7 +198,7 @@
               >
                 Kommentar
               </p>
-              <p class="text-xs text-gray-600 dark:text-gray-400">
+              <p class="text-xs text-gray-600 dark:text-gray-300">
                 {currentPrompt.modelNotes}
               </p>
             </div>
@@ -223,10 +223,10 @@
     <div class="text-center">
       <p class="text-5xl">🖊️</p>
       <h2 class="mt-3 text-2xl font-bold dark:text-white">Skriveøkt fullført!</h2>
-      <p class="mt-2 text-gray-600 dark:text-gray-400">
+      <p class="mt-2 text-gray-600 dark:text-gray-300">
         Du har fullført alle {prompts.length} skriveoppgaver på {data.level}-nivå.
       </p>
-      <p class="mt-1 text-sm text-gray-500 dark:text-gray-500">
+      <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
         Sammenlign svarene dine med eksempelsvarene for å se hva du kan forbedre.
       </p>
 

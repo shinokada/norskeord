@@ -188,7 +188,7 @@
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s1_heading()}
         </h2>
-        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s1_sub()}</p>
+        <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">{m.onboarding_s1_sub()}</p>
 
         <p class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">
           {m.onboarding_s1_lang_label()}
@@ -215,7 +215,7 @@
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s2_name_heading()}
         </h2>
-        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s2_name_sub()}</p>
+        <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">{m.onboarding_s2_name_sub()}</p>
 
         <label
           for="onb-name"
@@ -240,7 +240,7 @@
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s3_flashcard_heading()}
         </h2>
-        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
+        <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">
           {m.onboarding_s3_flashcard_sub()}
         </p>
 
@@ -266,7 +266,7 @@
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s4_heading()}
         </h2>
-        <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">{m.onboarding_s4_sub()}</p>
+        <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">{m.onboarding_s4_sub()}</p>
         <div class="flex flex-col gap-2">
           {#each LEVELS as level (level)}
             <button
@@ -292,7 +292,7 @@
           <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
             {m.onboarding_s7_heading()}
           </h2>
-          <p class="mb-8 text-sm text-gray-500 dark:text-gray-400">
+          <p class="mb-8 text-sm text-gray-600 dark:text-gray-300">
             {m.onboarding_s7_sub()}
           </p>
 

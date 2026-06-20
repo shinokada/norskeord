@@ -49,11 +49,11 @@
 <div class="text-center">
   <p class="mb-1 text-5xl">{scoreEmoji(correctCount, total)}</p>
   <h2 class="mt-3 text-2xl font-bold dark:text-white">{m.grammar_session_done()}</h2>
-  <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
+  <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
     {m.grammar_score({ correct: correctCount, total })}
   </p>
   {#if dueSoon > 0}
-    <p class="mt-1 text-sm text-gray-400 dark:text-gray-500">
+    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
       {m.grammar_due_soon({ count: dueSoon })}
     </p>
   {/if}
@@ -71,12 +71,12 @@
           {result.correct ? '✓' : '✗'}
         </span>
         <div class="min-w-0 flex-1">
-          <p class="text-gray-500 dark:text-gray-400">{stimulus(result.question)}</p>
+          <p class="text-gray-600 dark:text-gray-300">{stimulus(result.question)}</p>
           <p class="mt-0.5 font-medium text-gray-800 dark:text-gray-100">
             {correctDisplay(result.question)}
           </p>
           {#if !result.correct && result.userAnswer}
-            <p class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">
+            <p class="mt-0.5 text-xs text-gray-600 dark:text-gray-300">
               {m.grammar_you_wrote()}
               {result.userAnswer}
             </p>

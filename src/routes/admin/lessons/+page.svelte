@@ -47,9 +47,9 @@
   }
 </script>
 
-<div class="mx-auto max-w-4xl px-4 py-8">
+<div class="mx-auto max-w-4xl px-4 py-10">
   <h1 class="mb-2">Lesson Review</h1>
-  <p class="mb-8 text-sm text-gray-500 dark:text-gray-400">
+  <p class="mb-8 text-sm text-gray-600 dark:text-gray-300">
     {data.lessons.filter((l) => !l.approved).length} pending ·
     {data.lessons.filter((l) => l.approved).length} approved
   </p>
@@ -219,7 +219,7 @@
           <div class="mt-2 overflow-x-auto">
             <table class="w-full text-sm">
               <thead>
-                <tr class="text-left text-xs text-gray-500 dark:text-gray-400">
+                <tr class="text-left text-xs text-gray-600 dark:text-gray-300">
                   <th class="pr-4 pb-1">Norsk</th>
                   <th class="pr-4 pb-1">English</th>
                   <th class="pb-1">Example</th>

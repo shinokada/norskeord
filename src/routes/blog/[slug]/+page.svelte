@@ -35,7 +35,7 @@
   {@html '<scr' + 'ipt type="application/ld+json">' + articleSchemaJson + '</scr' + 'ipt>'}
 </svelte:head>
 
-<div class="mx-auto max-w-2xl px-4 py-12">
+<div class="mx-auto max-w-2xl px-4 py-10">
   <!-- Header -->
   <div class="mb-8">
     <a

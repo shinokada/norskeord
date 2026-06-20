@@ -136,7 +136,7 @@
       <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_account_email()}
       </p>
-      <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
+      <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
         {m.profile_account_email_hint()}
       </p>
     </div>
@@ -155,7 +155,7 @@
     <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Progress report</p>
-        <p class="text-xs text-gray-500 dark:text-gray-400">
+        <p class="text-xs text-gray-600 dark:text-gray-300">
           Your CEFR level, cards seen, and strongest &amp; weakest categories as a printable PDF.
         </p>
       </div>
