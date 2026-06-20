@@ -19,7 +19,7 @@
   }
 </script>
 
-<div class="mx-auto max-w-2xl px-4 py-8 text-left">
+<div class="mx-auto max-w-2xl px-4 py-10 text-left">
   <!-- Header -->
   <div class="mb-6">
     <span
@@ -135,7 +135,7 @@
                   {checkAnswer(i) ? '✓ Riktig!' : '✗ Feil.'}
                 </span>
               {/if}
-              <span class="text-sm text-gray-600 dark:text-gray-400">
+              <span class="text-sm text-gray-600 dark:text-gray-300">
                 Svar: <strong class="text-gray-900 dark:text-white">{ex.answer}</strong>
               </span>
             </div>

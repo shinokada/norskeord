@@ -127,7 +127,7 @@
 
 <!-- ── Section 1 — Level hero ──────────────────────────────────────────── -->
 <div
-  class="mb-10 border-b border-gray-200 bg-gray-50 px-4 py-8 dark:border-gray-700 dark:bg-gray-800/50"
+  class="mb-10 border-b border-gray-200 bg-gray-50 px-4 py-10 dark:border-gray-700 dark:bg-gray-800/50"
 >
   <div class="mx-auto max-w-3xl">
     <div class="flex flex-wrap items-center gap-3">
@@ -147,7 +147,7 @@
       </span>
     </div>
     {#if data.levelStats}
-      <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">{entryLabel(data.levelStats)}</p>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{entryLabel(data.levelStats)}</p>
     {/if}
     {#if !page.data.user}
       <a
@@ -238,11 +238,11 @@
             <p
               class="line-clamp-2 text-sm {locked
                 ? 'opacity-60 '
-                : ''}text-gray-500 dark:text-gray-400"
+                : ''}text-gray-600 dark:text-gray-300"
             >
               {rule ? rule.explanationEn : ''}
             </p>
-            <div class="mt-2 text-xs text-gray-400 dark:text-gray-500">{t.total} questions</div>
+            <div class="mt-2 text-xs text-gray-600 dark:text-gray-300">{t.total} questions</div>
           </a>
         {/each}
       </div>
@@ -270,7 +270,7 @@
         <p class="font-semibold text-gray-800 dark:text-gray-100">
           Start a {data.levelUpper} quiz
         </p>
-        <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
+        <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
           Multiple-choice, fill-in-the-blank, and typed answers{#if !isPlus}
             · some categories require Plus{/if}
         </p>
@@ -289,7 +289,7 @@
           class="flex flex-col rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
         >
           <p class="font-semibold text-gray-800 dark:text-gray-100">Vocabulary prep</p>
-          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
             Exam-targeted vocabulary for the official Norwegian language test at {data.levelUpper}.
           </p>
           <span class="mt-3 text-xs font-medium {colors.accent}"
@@ -310,7 +310,7 @@
               </span>
             {/if}
           </div>
-          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
             Reading, writing, and oral practice in exam format. Test 1 is always free.
           </p>
           <span class="mt-3 text-xs font-medium {colors.accent}"
@@ -338,7 +338,7 @@
           >
             <p class="font-semibold text-gray-900 dark:text-white">{post.title}</p>
             {#if post.description}
-              <p class="mt-1 line-clamp-2 text-sm text-gray-500 dark:text-gray-400">
+              <p class="mt-1 line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
                 {post.description}
               </p>
             {/if}

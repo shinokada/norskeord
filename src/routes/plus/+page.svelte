@@ -180,7 +180,7 @@
     <h1 class="text-4xl leading-tight font-bold dark:text-white">
       {m.plus_heading()}
     </h1>
-    <p class="mx-auto mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-400">
+    <p class="mx-auto mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-300">
       {m.plus_subheading()}
     </p>
   </div>
@@ -228,7 +228,7 @@
             <span class="block text-base font-semibold text-gray-800 dark:text-gray-100"
               >Monthly</span
             >
-            <span class="block text-sm text-gray-500 dark:text-gray-400">Cancel any time</span>
+            <span class="block text-sm text-gray-600 dark:text-gray-300">Cancel any time</span>
           </span>
           <span class="text-base font-semibold text-gray-800 dark:text-gray-100">49 NOK/mo</span>
         </button>
@@ -263,7 +263,7 @@
                 >save 98 NOK</span
               >
             </span>
-            <span class="block text-sm text-gray-500 dark:text-gray-400"
+            <span class="block text-sm text-gray-600 dark:text-gray-300"
               >490 NOK billed once a year</span
             >
           </span>
@@ -274,7 +274,7 @@
       <!-- ── Price display ── -->
       {#if billingInterval === 'month'}
         <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">49 NOK / month</p>
-        <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+        <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">
           Cancel any time. All progress carries over automatically.
         </p>
       {:else}
@@ -282,7 +282,7 @@
           490 NOK / year
           <span class="ml-2 text-base font-normal text-gray-400 line-through">588 NOK</span>
         </p>
-        <p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+        <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">
           About 41 NOK/month — save 98 NOK. Cancel any time.
         </p>
       {/if}
@@ -321,8 +321,8 @@
     class="mb-14 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-indigo-950/60"
   >
     <h3 class="mb-2 text-base font-bold dark:text-white">{m.plus_how_heading()}</h3>
-    <p class="text-base text-gray-600 dark:text-gray-400">{m.plus_how_body_1()}</p>
-    <p class="mt-3 text-base text-gray-600 dark:text-gray-400">{m.plus_how_body_2()}</p>
+    <p class="text-base text-gray-600 dark:text-gray-300">{m.plus_how_body_1()}</p>
+    <p class="mt-3 text-base text-gray-600 dark:text-gray-300">{m.plus_how_body_2()}</p>
   </div>
 
   <!-- ── Plus feature highlights ────────────────────────────────────────────────── -->
@@ -336,7 +336,7 @@
           <span class="text-2xl">{feat.icon}</span>
           <h3 class="font-semibold text-gray-800 dark:text-gray-100">{feat.title}</h3>
         </div>
-        <p class="text-base text-gray-500 dark:text-gray-400">{feat.body}</p>
+        <p class="text-base text-gray-600 dark:text-gray-300">{feat.body}</p>
       </div>
     {/each}
   </div>
@@ -347,10 +347,10 @@
     <table class="w-full text-sm">
       <thead>
         <tr class="border-b border-gray-200 dark:border-gray-700">
-          <th class="px-5 py-3 text-left font-semibold text-gray-500 dark:text-gray-400">
+          <th class="px-5 py-3 text-left font-semibold text-gray-600 dark:text-gray-300">
             {m.plus_table_feature()}
           </th>
-          <th class="px-5 py-3 text-center font-semibold text-gray-500 dark:text-gray-400">
+          <th class="px-5 py-3 text-center font-semibold text-gray-600 dark:text-gray-300">
             {m.plus_table_free()}
           </th>
           <th
@@ -396,7 +396,7 @@
     class="rounded-2xl border border-indigo-200 bg-indigo-50 p-8 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
   >
     <p class="text-lg font-semibold dark:text-white">{m.plus_cta_heading()}</p>
-    <p class="mt-1 text-base text-gray-500 dark:text-gray-400">{m.plus_cta_body()}</p>
+    <p class="mt-1 text-base text-gray-600 dark:text-gray-300">{m.plus_cta_body()}</p>
     <div class="mt-5 flex flex-wrap justify-center gap-3">
       <a
         href="/"

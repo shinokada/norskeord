@@ -595,7 +595,7 @@
 
 <div class="flex w-full flex-col items-center">
   <!-- Category header: prev ← | level label + title | → next -->
-  <div class="mt-2 mb-1 flex w-full items-center justify-between gap-2 px-2">
+  <div class="mt-10 mb-1 flex w-full items-center justify-between gap-2 px-2">
     <!-- Prev category -->
     <div class="flex min-w-0 flex-1 items-center">
       {#if prevCategory}
@@ -1031,7 +1031,7 @@
       {#if currentExampleTranslation}
         <div class="mt-2">
           {#if showExampleEnglish}
-            <p class="mb-1 text-sm text-gray-500 dark:text-gray-400">
+            <p class="mb-1 text-sm text-gray-600 dark:text-gray-300">
               {currentExampleTranslation}
             </p>
           {/if}
