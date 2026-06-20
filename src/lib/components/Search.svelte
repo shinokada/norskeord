@@ -271,7 +271,7 @@
       <!-- Results -->
       <div class="overflow-y-auto flex-1" role="listbox" aria-label={m.search_results_label()}>
         {#if loading}
-          <div class="flex items-center justify-center py-10 text-gray-500 dark:text-gray-400">
+          <div class="flex items-center justify-center py-10 text-gray-600 dark:text-gray-300">
             <svg class="mr-2 h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
               <circle
                 class="opacity-25"
@@ -288,14 +288,14 @@
         {:else if error}
           <div class="py-10 text-center text-sm text-red-500">{error}</div>
         {:else if query.trim().length >= 2 && results.length === 0}
-          <div class="py-10 text-center text-sm text-gray-500 dark:text-gray-400">
+          <div class="py-10 text-center text-sm text-gray-600 dark:text-gray-300">
             {m.search_no_results({ query: query.trim() })}
-            <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">
+            <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
               {m.search_no_results_hint()}
             </p>
           </div>
         {:else if query.trim().length < 2 && !loading}
-          <div class="py-8 text-center text-sm text-gray-400 dark:text-gray-500">
+          <div class="py-8 text-center text-sm text-gray-600 dark:text-gray-300">
             {m.search_empty_hint()}
           </div>
         {:else}
@@ -321,21 +321,21 @@
                   <!-- eslint-disable-next-line svelte/no-at-html-tags -->
                   {@html highlight(entry.norsk, query)}
                 </span>
-                <span class="shrink-0 text-xs text-gray-400 dark:text-gray-500">
+                <span class="shrink-0 text-xs text-gray-600 dark:text-gray-300">
                   {entry.level} · {entry.category.replace(/-/g, ' ')}
                 </span>
               </div>
-              <div class="mt-0.5 text-sm text-gray-600 dark:text-gray-400">
+              <div class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
                 <!-- eslint-disable-next-line svelte/no-at-html-tags -->
                 {@html highlight(entry.english, query)}
               </div>
               {#if entry.example}
-                <div class="mt-0.5 text-xs italic text-gray-400 dark:text-gray-500 line-clamp-1">
+                <div class="mt-0.5 text-xs italic text-gray-600 dark:text-gray-300 line-clamp-1">
                   {entry.example}
                 </div>
               {/if}
               {#if hasInflection(entry)}
-                <div class="mt-0.5 text-xs text-gray-400 dark:text-gray-500">
+                <div class="mt-0.5 text-xs text-gray-600 dark:text-gray-300">
                   {m.search_inflection({ norsk: entry.norsk, lemma: entry.lemma })}
                 </div>
               {/if}
@@ -347,7 +347,7 @@
       <!-- Footer hint -->
       {#if results.length > 0}
         <div
-          class="border-t border-gray-100 px-4 py-2 text-xs text-gray-400 dark:border-gray-800 dark:text-gray-500 flex gap-4"
+          class="border-t border-gray-100 px-4 py-2 text-xs text-gray-400 dark:border-gray-800 dark:text-gray-300 flex gap-4"
         >
           <span>↑↓ {m.search_hint_navigate()}</span>
           <span>↵ {m.search_hint_open()}</span>

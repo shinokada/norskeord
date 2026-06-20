@@ -16,7 +16,7 @@
   });
 </script>
 
-<p class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500">
+<p class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300">
   {m.grammar_fill_prompt()}
 </p>
 

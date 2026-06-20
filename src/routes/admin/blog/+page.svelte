@@ -364,19 +364,19 @@
   <title>Blog Admin — Norskeord</title>
 </svelte:head>
 
-<div class="mx-auto max-w-6xl px-4 py-8 text-left">
+<div class="mx-auto max-w-6xl px-4 py-10 text-left">
   <a href="/admin" class="text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; Admin</a>
   <h1 class="mt-2 text-2xl font-bold dark:text-white">Blog Posts</h1>
 
   {#if loading}
-    <p class="mt-6 text-gray-500 dark:text-gray-400">Loading…</p>
+    <p class="mt-6 text-gray-600 dark:text-gray-300">Loading…</p>
   {:else if loadError}
     <p class="mt-6 text-red-600">Error: {loadError}</p>
   {:else}
     <!-- Toolbar -->
     <div class="mt-4 flex flex-wrap items-center gap-3">
       <!-- Review progress -->
-      <span class="text-sm text-gray-500 dark:text-gray-400">
+      <span class="text-sm text-gray-600 dark:text-gray-300">
         Reviewed
         <span
           class={[
@@ -489,7 +489,7 @@
         Unreviewed only
       </label>
 
-      <span class="ml-auto self-center text-sm text-gray-500 dark:text-gray-400">
+      <span class="ml-auto self-center text-sm text-gray-600 dark:text-gray-300">
         {filtered.length} of {totalReviewable}
       </span>
     </div>
