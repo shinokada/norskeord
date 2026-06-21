@@ -10,9 +10,9 @@ Allow users to study Norwegian vocabulary using their native language instead of
 
 | Code      | Name      | Flag |
 | --------- | --------- | ---- |
-| english   | English   | 🇬🇧   |
-| spanish   | Spanish   | 🇪🇸   |
-| ukrainian | Ukrainian | 🇺🇦   |
+| english   | English   | 🇬🇧    |
+| spanish   | Spanish   | 🇪🇸    |
+| ukrainian | Ukrainian | 🇺🇦    |
 
 Add more by extending `LANGUAGES` in `src/lib/config.ts` — no other structural changes needed.
 
@@ -71,14 +71,14 @@ Each entry in all `src/lib/data/vocab-*.json` files gains new fields per languag
 
 | file               | new data | Review Ukrainian | Review Spanish |
 | ------------------ | -------- | ---------------- | -------------- |
-| uttrykk-a1-preview | ✅ Done  | x                | x              |
-| uttrykk-a1         | ✅ Done  | x                | x              |
-| uttrykk-a2-preview | ✅ Done  | x                | x              |
-| uttrykk-a2         | ✅ Done  | x                | x              |
-| vocab-a1           | ✅ Done  | ✅ Done          | x              |
-| vocab-a2           | ✅ Done  | x                | x              |
-| es.json            | ✅ Done  | -                | x              |
-| uk.json            | ✅ Done  | x                | -              |
+| uttrykk-a1-preview | ✅ Done   | x                | x              |
+| uttrykk-a1         | ✅ Done   | x                | x              |
+| uttrykk-a2-preview | ✅ Done   | x                | x              |
+| uttrykk-a2         | ✅ Done   | x                | x              |
+| vocab-a1           | ✅ Done   | ✅ Done           | ✅ Done         |
+| vocab-a2           | ✅ Done   | x                | x              |
+| es.json            | ✅ Done   | -                | x              |
+| uk.json            | ✅ Done   | x                | -              |
 
 ### 1. `src/lib/config.ts` ✅ Done
 
@@ -424,8 +424,8 @@ Use this prompt to generate the new fields for each batch of entries:
 
 ## Pending Work
 
-| Item                                                                                                      | Status         |
-| --------------------------------------------------------------------------------------------------------- | -------------- |
+| Item                                                                                                      | Status        |
+| --------------------------------------------------------------------------------------------------------- | ------------- |
 | `makeDeckItem` — use `getTranslation(entry, language)` for card fronts/backs                              | ⬜ TODO        |
 | `deriveExampleTranslation` — use `getExampleTranslation(entry, language)` with `example_english` fallback | ⬜ TODO        |
 | Nav language selector dropdown                                                                            | ⬜ TODO        |
