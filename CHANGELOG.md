@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.32.1
+
+### Patch Changes
+
+- - **Bug Fixes & Improvements**
+    - Corrected Spanish and Ukrainian translations for multiple vocabulary entries including greetings, colors, classroom items, and clothing terms.
+    - Enhanced translation examples for better accuracy and idiomatic expression.
+  - **Documentation**
+    - Updated vocabulary review documentation with expanded action items and summary of applied corrections.
+
 ## 2.32.0
 
 ### Minor Changes
