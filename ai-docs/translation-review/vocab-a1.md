@@ -1,6 +1,6 @@
-# vocab-a1 review
+# vocab-a1 Review 1 (Spanise)
 
-## Review 1
+## Definite issues
 
 ### 1. Pen example
 
@@ -245,7 +245,7 @@ The Spanish translations are very good. I found only **3–5 entries that I woul
 
 The rest are mostly stylistic improvements, regional preferences (Spain vs Latin America), or consistency issues rather than actual translation errors.
 
-## Review 2
+# vocab-a1 Review 2 (Spanish and Ukrainian)
 
 Here is a complete audit of the pasted dataset, highlighting translations or grammatical implementations that are structurally inconsistent, potentially incorrect, or worth adjusting to ensure professional localization.
 
@@ -309,3 +309,43 @@ The `lemma` field is supposed to capture the base, uninflected form of the term.
 
 * `v-a1-greetings-024`: `"norsk": "Hvor kommer du fra?"` vs. `"lemma": "Hvor er du fra?"` — The lemma changes the verb completely from *kommer* to *er*.
 * `v-a1-greetings-013`: `"norsk": "beklager"` vs. `"lemma": "beklage"` — This is correct (maps inflected form to infinitive verb), but neighboring conversational phrases like `v-a1-greetings-016` (`Hvordan har du det?`) repeat the entire phrase in lowercase rather than breaking down to base components. A unified structural rule for phrase lemmas is needed.
+
+## Action taken
+
+Good, I have the full review. Now let me sample the vocab JSON to understand its structure:Now I have a clear picture. The reviews are solid and actionable. Let me create the patch script:`scripts/` does exist. Now let me look at what's in it for style reference:Let me look at an existing patch script for style reference:This is exactly the style to follow. Now I have everything I need. Let me look up a few specific entries from the JSON to verify the `from` values before writing the patches:The filesystem MCP can read it but bash can't access the Mac path. I'll read the specific entries directly via the filesystem tool:I now have all the exact values. Let me write the patch script:Done! The script is at `scripts/patch-vocab-a1-review.mjs`. Run it from the repo root:
+
+```bash
+# Preview changes first
+node scripts/patch-vocab-a1-review.mjs --dry-run
+
+# Apply
+node scripts/patch-vocab-a1-review.mjs
+```
+
+---
+
+Here's what the two reviews said and what I included (or deliberately skipped):
+
+**Spanish — definite fixes applied (10 patches across 8 entries):**
+
+| Entry                     | Change                                                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `v-a1-classroom-006`      | `¿Puedo prestarte tu bolígrafo?` → `¿Me prestas tu bolígrafo?` — "prestarte" reverses the borrowing direction |
+| `v-a1-adjectives-006`     | `El tiempo está malo` → `Hace mal tiempo` — standard idiom for bad weather                                    |
+| `v-a1-clothes-016`        | `caliente` → `cálido` — "caliente" = physically hot, "cálido" = warm as a material property                   |
+| `v-a1-clothes-014`        | `pantalones arriba` → `pantalones en su sitio` — natural idiom for keeping trousers up                        |
+| `v-a1-transportation-018` | example uses `carretera` instead of `camino` to match the preferred term already in the `spanish` field       |
+| `v-a1-greetings-005`      | `buenas noches` → `buenas tardes` — preserves the evening/night distinction with `god natt` (006)             |
+| `v-a1-greetings-023`      | `hasta la vista` → `hasta la próxima` — removes the Terminator association                                    |
+| `v-a1-colors-010`         | `son naranja` → `son naranjas` — plural adjective agreement                                                   |
+
+**Ukrainian — definite fix applied:**
+
+| Entry                | Change                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| `v-a1-greetings-013` | `вибачаюся` → `вибачте` — reflexive form is considered incorrect in modern Ukrainian |
+
+**Deliberately skipped:**
+- `v-a1-numbers-002` Ukrainian "два кота" — Review 2 flagged it, but "два кота" is actually the correct genitive singular in Ukrainian after numerals 2–4, so no change needed.
+- "hablo un poco de noruego" and "tommel opp" — both borderline stylistic choices at A1 level.
+
