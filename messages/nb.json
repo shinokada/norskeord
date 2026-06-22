@@ -400,6 +400,9 @@
   "blog_section_level": "Nivå {level}",
   "home_heading": "Norske flashcard",
   "home_subheading": "Øv norsk ordforråd fra A1 til C. Velg et nivå og en kategori for å begynne.",
+  "footer_level": "Nivå",
+  "footer_learn": "Lær",
+  "footer_resources": "Ressurser",
   "norskeord": "Norskeord",
   "home_hero_badge": "norsk ordforråd fra A1 til C",
   "home_hero_heading": "Lær norsk med",
@@ -804,5 +807,10 @@
   "onboarding_nudge_field_required": "Mangler",
   "onboarding_nudge_mark_done": "Merk som ferdig",
   "onboarding_nudge_section_heading": "Fullfør profilen din",
-  "onboarding_nudge_section_title": "Noen ting vi fortsatt mangler"
+  "onboarding_nudge_section_title": "Noen ting vi fortsatt mangler",
+  "footer_level": "Nivå",
+  "footer_learn": "Lær",
+  "footer_resources": "Ressurser",
+  "nav_blog": "Blogg",
+  "nav_my_stats": "Min statistikk"
 }

@@ -788,5 +788,10 @@
   "onboarding_nudge_field_required": "Не заповнено",
   "onboarding_nudge_mark_done": "Позначити як виконано",
   "onboarding_nudge_section_heading": "Заповніть профіль",
-  "onboarding_nudge_section_title": "Кілька речей, яких нам ще бракує"
+  "onboarding_nudge_section_title": "Кілька речей, яких нам ще бракує",
+  "footer_level": "Рівень",
+  "footer_learn": "Вчись",
+  "footer_resources": "Ресурси",
+  "nav_blog": "Блог",
+  "nav_my_stats": "Моя статистика"
 }
