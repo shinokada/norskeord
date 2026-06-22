@@ -1,0 +1,69 @@
+# Blog post dates
+
+The admin page reads posts directly from GitHub via the API (using listDirectory and readTextFile from $lib/admin/github), not from the local filesystem. So writing files locally has no effect on what the admin page shows — it reads from the GitHub repository.
+
+## List
+
+| slug                               | Published  |
+| ---------------------------------- | ---------- |
+| -                                  | 2027-01-27 |
+| -                                  | 2027-01-20 |
+| -                                  | 2027-01-13 |
+| -                                  | 2027-01-06 |
+| -                                  | 2026-12-30 |
+| -                                  | 2026-12-23 |
+| -                                  | 2026-12-16 |
+| -                                  | 2026-12-09 |
+| substantiv-uten-ubestemt-artikkel  | 2026-12-02 |
+| tidspreposisjoner                  | 2026-11-25 |
+| fortelle-snakke-tale-si.           | 2026-11-18 |
+| pa-gjensyn                         | 2026-11-11 |
+| norsken                            | 2026-11-04 |
+| ikke-etter-objekt                  | 2026-10-28 |
+| hallo                              | 2026-10-21 |
+| fa-noe-pa                          | 2026-10-14 |
+| leddsetninger                      | 2026-10-07 |
+| holde-pa-a                         | 2026-10-02 |
+| adjektiv-eller-adverb              | 2026-09-30 |
+| trolig-vs-sannsynligvis-vs-sikkert | 2026-09-25 |
+| hvor-hen                           | 2026-09-23 |
+| subjunksjoner                      | 2026-09-18 |
+| lei-seg-vs-trist                   | 2026-09-16 |
+| hvordan-kan-det-ha-seg             | 2026-09-11 |
+| komme-bort-til                     | 2026-09-09 |
+| det-er-lov                         | 2026-09-04 |
+| vaere-fremme                       | 2026-09-02 |
+| fort-vs-raskt                      | 2026-08-28 |
+| kose-vs-nyte                       | 2026-08-26 |
+| i-grunnen                          | 2026-08-21 |
+| setningsadverb                     | 2026-08-19 |
+| skulle                             | 2026-08-14 |
+| preposisjoner                      | 2026-08-12 |
+| lenge-vs-lang                      | 2026-08-07 |
+| i-for-pa-tid                       | 2026-08-05 |
+| ordentlig                          | 2026-07-31 |
+| trott-sliten-utslitt               | 2026-07-29 |
+| time                               | 2026-07-24 |
+| sikkert                            | 2026-07-22 |
+| fa-tak-i                           | 2026-07-17 |
+| slik-laerer-du-norsk-lytting       | 2026-07-15 |
+| gi-deg.md                          | 2026-07-10 |
+| fram-vs-frem                       | 2026-07-08 |
+| finner-fram.md                     | 2026-07-03 |
+| retning-vs-sted                    | 2026-07-01 |
+| det-som-formelt-subjekt            | 2026-06-26 |
+| darlig-vs-slem                     | 2026-06-24 |
+| hvor-ble-det-av                    | 2026-06-17 |
+| god-dag-er-gammeldags              | 2026-06-16 |
+| enna-vs-enda                       | 2026-06-11 |
+| norske-uttrykk                     | 2026-06-11 |
+| v2-regelen                         | 2026-06-03 |
+| det-uttrykk                        | 2026-06-01 |
+| god-bra-grei                       | 2026-05-30 |
+| god-bra-fin                        | 2026-05-27 |
+| slik-bruker-du-norskeord           | 2026-05-22 |
+| bytte-vs-skifte                    | 2026-05-21 |
+| klare-vs-orke-vs-greie             | 2026-05-21 |
+| nydelig-vs-herlig                  | 2026-05-21 |
+| sakte-vs-langsomt                  | 2026-05-21 |
+| snekker-vs-tomrer                  | 2026-05-21 |

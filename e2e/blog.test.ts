@@ -1,5 +1,9 @@
 import { expect, test, type Page } from '@playwright/test';
 
+const description =
+  '"Sakte" is the natural choice in conversation. "Langsomt" is more common in writing and descriptions. Here is when to use each one — and how they differ grammatically.';
+const title = 'Sakte vs Langsomt — Both Mean Slowly, but Not Equally — Norskeord';
+const ogTitle = 'Sakte vs Langsomt — Both Mean Slowly, but Not Equally';
 // ── Blog index (/blog) ────────────────────────────────────────────────────────
 
 test.describe('Blog index', () => {
@@ -60,28 +64,22 @@ test.describe('Blog post — sakte-vs-langsomt', () => {
   });
 
   test('has expected meta title', async ({ page }) => {
-    await expect(page).toHaveTitle('Sakte vs Langsomt — Norskeord');
+    await expect(page).toHaveTitle(title);
   });
 
   test('has expected meta description', async ({ page }) => {
     const meta = page.locator('meta[name="description"]').last();
-    await expect(meta).toHaveAttribute(
-      'content',
-      "Sakte is the one you'll hear in conversation. Langsomt is the one you'll read."
-    );
+    await expect(meta).toHaveAttribute('content', description);
   });
 
   test('has expected og:title', async ({ page }) => {
     const og = page.locator('meta[property="og:title"]').last();
-    await expect(og).toHaveAttribute('content', 'Sakte vs Langsomt');
+    await expect(og).toHaveAttribute('content', ogTitle);
   });
 
   test('has expected og:description', async ({ page }) => {
     const og = page.locator('meta[property="og:description"]').last();
-    await expect(og).toHaveAttribute(
-      'content',
-      "Sakte is the one you'll hear in conversation. Langsomt is the one you'll read."
-    );
+    await expect(og).toHaveAttribute('content', description);
   });
 
   test('shows a CEFR badge', async ({ page }) => {
@@ -191,6 +189,9 @@ function levelBtn(page: Page, level: string) {
   return page.locator('button.rounded-full').filter({ hasText: new RegExp(`^${level}$`) });
 }
 
+// CEFR levels in ascending order — used to determine which levels are "above" a selected level.
+const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C'];
+
 test.describe('Blog level filter', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/blog');
@@ -203,19 +204,38 @@ test.describe('Blog level filter', () => {
   });
 
   test('clicking a level shows only posts with that badge', async ({ page }) => {
-    await levelBtn(page, 'A2').click();
-    // Each post card is an <a href^="/blog/">.  A card may show multiple CEFR
-    // badges (e.g. both "A2" and "B1" for a post that spans two levels), so we
-    // assert that every *card* contains at least one A2 badge rather than
-    // checking every individual badge element.
+    const selectedLevel = 'A2';
+    await levelBtn(page, selectedLevel).click();
+
+    // The filter includes posts whose cefr matches the selected level. Posts
+    // may appear in groups below the selected level (e.g. an A1 group is shown
+    // alongside A2 when the filter is "A2"). What must NOT appear is any post
+    // whose only badges are strictly above the selected level (B1, B2, C).
+    // We also verify that at least one card with the selected badge is visible.
+    const selectedIdx = cefrOrder.indexOf(selectedLevel);
+    const higherLevels = new Set(cefrOrder.slice(selectedIdx + 1));
+
     const cards = page.locator('div.grid a[href^="/blog/"]');
     const count = await cards.count();
     expect(count).toBeGreaterThan(0);
+
+    let foundSelected = false;
     for (let i = 0; i < count; i++) {
-      const cardBadges = cards.nth(i).getByTestId('cefr-badge');
-      const badgeTexts = await cardBadges.allInnerTexts();
-      expect(badgeTexts.some((t) => t.trim() === 'A2')).toBe(true);
+      const badgeTexts = await cards
+        .nth(i)
+        .getByTestId('cefr-badge')
+        .allInnerTexts()
+        .then((ts) => ts.map((t) => t.trim()));
+
+      // No card should have badges only from levels above the selection.
+      const allHigher = badgeTexts.every((t) => higherLevels.has(t));
+      expect(allHigher).toBe(false);
+
+      if (badgeTexts.includes(selectedLevel)) foundSelected = true;
     }
+
+    // At least one card must carry the selected badge.
+    expect(foundSelected).toBe(true);
   });
 
   test('clicking the same level again deselects it', async ({ page }) => {
