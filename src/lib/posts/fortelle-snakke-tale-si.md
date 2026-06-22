@@ -168,18 +168,14 @@ _Use **fortelle** when passing on a piece of news or information to someone._
 Velg riktig verb: **snakke / fortelle / tale / si**
 
 **A.**
+
 1. Kan du \_\_\_ meg hva klokken er?
 2. Jeg \_\_\_ norsk og litt spansk.
 3. Hva \_\_\_ du akkurat?
 4. Presidenten \_\_\_ til nasjonen.
 5. De \_\_\_ sammen ute i hagen.
 
-**B.**
-6. Bestefar likte å \_\_\_ om krigen.
-7. Hun \_\_\_ ikke noe da hun hørte nyheten.
-8. Det er lettere \_\_\_ enn gjort.
-9. Statsministeren holdt en \_\_\_.
-10. Kan vi \_\_\_ om dette i morgen?
+**B.** 6. Bestefar likte å \_\_\_ om krigen. 7. Hun \_\_\_ ikke noe da hun hørte nyheten. 8. Det er lettere \_\_\_ enn gjort. 9. Statsministeren holdt en \_\_\_. 10. Kan vi \_\_\_ om dette i morgen?
 
 **Svar:** 1. fortelle · 2. snakker · 3. sa · 4. talte · 5. snakket · 6. fortelle · 7. sa · 8. sagt · 9. tale · 10. snakke
 

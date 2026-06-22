@@ -7,14 +7,14 @@ import { injectPlusPlan } from './helpers.js';
 async function answerGrammarAndAdvance(page: Page) {
   // Wait for either a question or the summary
   await Promise.race([
-    page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 8000 }),
-    page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 8000 })
+    page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 5000 }),
+    page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 5000 })
   ]).catch(() => {});
 
   if (
     await page
       .getByText(/session complete|økt fullført/i)
-      .isVisible({ timeout: 300 })
+      .isVisible({ timeout: 100 })
       .catch(() => false)
   ) {
     return;
@@ -22,7 +22,7 @@ async function answerGrammarAndAdvance(page: Page) {
 
   // Fill-blank: type into the text input
   const input = page.getByRole('textbox');
-  if (await input.isVisible({ timeout: 3000 }).catch(() => false)) {
+  if (await input.isVisible({ timeout: 2000 }).catch(() => false)) {
     await input.fill('ikke');
     await input.press('Enter');
   } else {
@@ -32,7 +32,7 @@ async function answerGrammarAndAdvance(page: Page) {
       await chip.click().catch(() => {});
     }
     const submitBtn = page.getByRole('button', { name: /check|sjekk/i });
-    if (await submitBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+    if (await submitBtn.isVisible({ timeout: 500 }).catch(() => false)) {
       await submitBtn.click();
     } else {
       await page.keyboard.press('Enter');
@@ -43,20 +43,24 @@ async function answerGrammarAndAdvance(page: Page) {
   const next = page.locator('button.bg-indigo-600').filter({
     hasText: /next|see results|neste|se resultater/i
   });
-  await next.waitFor({ state: 'visible', timeout: 8000 }).catch(() => {});
-  if (await next.isVisible({ timeout: 1000 }).catch(() => false)) {
+  await next.waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
+  if (await next.isVisible({ timeout: 500 }).catch(() => false)) {
     await next.click();
-    await page.waitForTimeout(300);
+    // Wait for the UI to leave the reveal state rather than sleeping unconditionally.
+    await Promise.race([
+      page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 3000 }),
+      page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 3000 })
+    ]).catch(() => {});
   }
 }
 
 async function completeGrammarSession(page: Page, maxQuestions = 20) {
-  const safetyLimit = maxQuestions * 4;
+  const safetyLimit = maxQuestions * 2; // 2× gives ample room for retries
   let iterations = 0;
   while (
     !(await page
       .getByText(/session complete|økt fullført/i)
-      .isVisible({ timeout: 500 })
+      .isVisible({ timeout: 100 })
       .catch(() => false))
   ) {
     if (++iterations > safetyLimit) break;
@@ -96,7 +100,7 @@ test('ikke-placement topic page loads and shows first question', async ({ page }
   await page.goto('/grammar/ikke-placement');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 8000 });
   // The session question counter should appear
-  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({ timeout: 8000 });
 });
 
 test('back navigation: ?from=b1 shows ← B1 link', async ({ page }) => {
@@ -141,7 +145,7 @@ test('Plus user can answer a grammar question and progress is written to localSt
   await injectPlusPlan(page);
   await page.goto('/grammar/ikke-placement');
 
-  await page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ timeout: 10000 });
+  await page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ timeout: 8000 });
   await answerGrammarAndAdvance(page);
 
   const keys = await page.evaluate(() =>
@@ -155,7 +159,7 @@ test('Plus user can complete a grammar session and see the summary', async ({ pa
   await injectPlusPlan(page);
   await page.goto('/grammar/ikke-placement');
 
-  await page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ timeout: 10000 });
+  await page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ timeout: 8000 });
   await completeGrammarSession(page);
 
   await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible({ timeout: 15000 });

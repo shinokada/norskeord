@@ -65,10 +65,12 @@ Begge varianter er korrekte. Med **hen** høres mer idiomatisk og naturlig ut i 
 **Hen** brukes i begge typer:
 
 **Direkte spørsmål:**
+
 > Hvor skal du hen?
 > _Where are you going?_
 
 **Indirekte spørsmål (leddsetning):**
+
 > Jeg vet ikke hvor hun er hen.
 > _I don't know where she is._
 

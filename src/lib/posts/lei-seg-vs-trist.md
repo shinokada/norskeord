@@ -90,9 +90,9 @@ Noen setninger fungerer med begge — men med litt ulik nyanse:
 | --------------------- | ------------------ | ------------------------ |
 | Betydning             | upset / hurt / sad | sad / gloomy / sorrowful |
 | Trigger               | konkret hendelse   | generell stemning        |
-| Om personer           | ✅                  | ✅                        |
-| Om historier / filmer | ❌                  | ✅ — _en trist film_      |
-| Om vær / steder       | ❌                  | ✅ — _trist vær_          |
+| Om personer           | ✅                 | ✅                       |
+| Om historier / filmer | ❌                 | ✅ — _en trist film_     |
+| Om vær / steder       | ❌                 | ✅ — _trist vær_         |
 | Dagligtale            | svært vanlig       | vanlig                   |
 
 ---

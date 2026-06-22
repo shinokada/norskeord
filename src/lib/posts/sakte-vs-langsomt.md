@@ -102,8 +102,8 @@ I praksis bruker man **langsom** som adjektiv og **sakte** som adverb i dagligta
 | Betydning    | slowly                 | slowly                               |
 | Register     | hverdagslig, muntlig   | litt formell, beskrivende            |
 | Vanligst i   | samtale, dagligtale    | skrift, litteratur, formelle tekster |
-| Som adjektiv | sjeldent (gammelmodig) | ✅ en langsom prosess                 |
-| Som adverb   | ✅ han går sakte        | ✅ han gikk langsomt                  |
+| Som adjektiv | sjeldent (gammelmodig) | ✅ en langsom prosess                |
+| Som adverb   | ✅ han går sakte       | ✅ han gikk langsomt                 |
 | Komparativ   | saktere                | langsommere                          |
 | Superlativ   | saktest                | langsomst                            |
 

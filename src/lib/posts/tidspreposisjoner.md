@@ -28,7 +28,7 @@ The trickiest part is that **i** and **på** both translate to "in" in English �
 
 ## I — inside a time frame
 
-**I** brukes for tidsperioder du befinner deg **inni** — måneder, år, sesonger, og faste tidsbetegnelser som *i dag* og *i morgen*.
+**I** brukes for tidsperioder du befinner deg **inni** — måneder, år, sesonger, og faste tidsbetegnelser som _i dag_ og _i morgen_.
 
 ### Fixed expressions
 
@@ -110,9 +110,10 @@ This is the most common source of confusion:
 | **på kvelden** | in the evening (habit / general) | what you usually do, or generally |
 
 **Eksempler:**
-- **Jeg trener i kveld.** — I'm working out tonight. *(specific plan)*
-- **Jeg trener på kvelden.** — I work out in the evenings. *(habit)*
-- **Det er stille på kvelden.** — It's quiet in the evenings. *(general statement)*
+
+- **Jeg trener i kveld.** — I'm working out tonight. _(specific plan)_
+- **Jeg trener på kvelden.** — I work out in the evenings. _(habit)_
+- **Det er stille på kvelden.** — It's quiet in the evenings. _(general statement)_
 
 The same logic applies to **i morges** (this morning, past) vs **på morgenen** (in the morning, habitual).
 
@@ -120,8 +121,8 @@ The same logic applies to **i morges** (this morning, past) vs **på morgenen** 
 
 ### i morgen vs om to dager
 
-- **Jeg reiser i morgen.** — I'm travelling tomorrow. *(fixed day name)*
-- **Jeg reiser om to dager.** — I'm travelling in two days. *(counting forward)*
+- **Jeg reiser i morgen.** — I'm travelling tomorrow. _(fixed day name)_
+- **Jeg reiser om to dager.** — I'm travelling in two days. _(counting forward)_
 
 «I morgen» is a frozen time word like "today" or "yesterday." «Om to dager» is arithmetic — you are counting from now.
 
@@ -129,8 +130,8 @@ The same logic applies to **i morges** (this morning, past) vs **på morgenen** 
 
 ### i tre år vs for tre år siden
 
-- **Jeg bodde der i tre år.** — I lived there for three years. *(duration)*
-- **Jeg flyttet hit for tre år siden.** — I moved here three years ago. *(point in the past)*
+- **Jeg bodde der i tre år.** — I lived there for three years. _(duration)_
+- **Jeg flyttet hit for tre år siden.** — I moved here three years ago. _(point in the past)_
 
 **For … siden** = ago. This uses **for**, not **i** or **om**.
 
@@ -189,18 +190,14 @@ _**For … siden** must be complete — **siden** cannot be dropped._
 Velg riktig preposisjon: **i / på / om**
 
 **A.**
+
 1. Vi sees \_\_\_ to dager.
 2. Jeg trener \_\_\_ morgenen.
 3. Hun kommer \_\_\_ kveld.
 4. Jeg begynner \_\_\_ mandag.
 5. Jeg er ferdig \_\_\_ en time.
 
-**B.**
-6. Jeg liker å lese \_\_\_ kvelden.
-7. Vi dro dit \_\_\_ sommeren.
-8. Jeg besøker deg \_\_\_ morgen.
-9. De har vært gift \_\_\_ tjue år.
-10. Vi skal på ferie \_\_\_ juli.
+**B.** 6. Jeg liker å lese \_\_\_ kvelden. 7. Vi dro dit \_\_\_ sommeren. 8. Jeg besøker deg \_\_\_ morgen. 9. De har vært gift \_\_\_ tjue år. 10. Vi skal på ferie \_\_\_ juli.
 
 **Svar:** 1. om · 2. på · 3. i · 4. på · 5. om · 6. på · 7. i · 8. i · 9. i · 10. i
 

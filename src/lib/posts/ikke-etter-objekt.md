@@ -14,7 +14,7 @@ decks:
     label: A2 Grammar
 ---
 
-> **TL;DR:** In Norwegian main clauses, **ikke** follows the verb — but if there is an object, it comes *after* the object, not immediately after the verb. In subordinate clauses, **ikke** moves in front of the verb entirely.
+> **TL;DR:** In Norwegian main clauses, **ikke** follows the verb — but if there is an object, it comes _after_ the object, not immediately after the verb. In subordinate clauses, **ikke** moves in front of the verb entirely.
 
 ## Kort forklaring
 

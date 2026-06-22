@@ -14,7 +14,7 @@ decks:
     label: B1 Grammar
 ---
 
-> **TL;DR:** In Norwegian, many adjectives can function as adverbs without changing form — especially words ending in **-isk** like *fysisk*, *praktisk*, and *teknisk*. What matters is not what the word looks like, but what it describes in the sentence: a noun (adjective) or an action (adverb).
+> **TL;DR:** In Norwegian, many adjectives can function as adverbs without changing form — especially words ending in **-isk** like _fysisk_, _praktisk_, and _teknisk_. What matters is not what the word looks like, but what it describes in the sentence: a noun (adjective) or an action (adverb).
 
 ## Kort forklaring
 
@@ -39,7 +39,7 @@ _In English:_ English often adds "-ly" to make adverbs ("physical → physically
 > … og bruke kroppen **fysisk**.
 > _… and use the body physically._
 
-I den siste setningen beskriver **fysisk** ikke et substantiv — det beskriver *hvordan* kroppen brukes. Det fungerer derfor som adverb.
+I den siste setningen beskriver **fysisk** ikke et substantiv — det beskriver _hvordan_ kroppen brukes. Det fungerer derfor som adverb.
 
 En omskrivning gjør dette tydelig:
 
@@ -81,7 +81,7 @@ Det er viktig å skille mellom to nivåer:
 | Nivå          | Spørsmål                          | Svar for «fysisk»                 |
 | ------------- | --------------------------------- | --------------------------------- |
 | **Ordklasse** | Hva slags ord er dette?           | Adjektiv                          |
-| **Funksjon**  | Hva gjør det i *denne* setningen? | Adverbial (beskriver en handling) |
+| **Funksjon**  | Hva gjør det i _denne_ setningen? | Adverbial (beskriver en handling) |
 
 Mange norske grammatikere bruker begge begrepene. Å si at «fysisk» brukes **adverbielt** er presist — det betyr at adjektivet fyller en adverbial rolle uten å ha en formelt atskilt adverbform.
 
@@ -96,12 +96,12 @@ Spør deg selv:
 
 | Setning                  | Hva beskriver ordet?      | Rolle    |
 | ------------------------ | ------------------------- | -------- |
-| en **fysisk** aktivitet  | substantivet *aktivitet*  | adjektiv |
-| bruke kroppen **fysisk** | verbet *bruke*            | adverb   |
-| en **praktisk** løsning  | substantivet *løsning*    | adjektiv |
-| jobbe **praktisk**       | verbet *jobbe*            | adverb   |
-| en **logisk** forklaring | substantivet *forklaring* | adjektiv |
-| resonnere **logisk**     | verbet *resonnere*        | adverb   |
+| en **fysisk** aktivitet  | substantivet _aktivitet_  | adjektiv |
+| bruke kroppen **fysisk** | verbet _bruke_            | adverb   |
+| en **praktisk** løsning  | substantivet _løsning_    | adjektiv |
+| jobbe **praktisk**       | verbet _jobbe_            | adverb   |
+| en **logisk** forklaring | substantivet _forklaring_ | adjektiv |
+| resonnere **logisk**     | verbet _resonnere_        | adverb   |
 
 ---
 
