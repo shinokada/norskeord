@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.34.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a daily email reminder option as a new step in the onboarding workflow.
+  - **Localization**
+    - Added translations for footer sections and navigation items across English, Spanish, Norwegian, and Ukrainian.
+    - Expanded onboarding messaging in all supported languages.
+    - Footer and navigation UI now display fully localized text throughout the app.
+
 ## 2.33.1
 
 ### Patch Changes
