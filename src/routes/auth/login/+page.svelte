@@ -9,6 +9,18 @@
   let { form }: { form: ActionData } = $props();
 
   let email = $derived((form && 'email' in form ? form.email : '') ?? '');
+  let next = $derived(
+    (form && 'next' in form ? (form.next as string) : null) ??
+      page.url.searchParams.get('next') ??
+      '/'
+  );
+
+  let step = $derived(
+    (form && 'step' in form && form.step === 'verify') ||
+      (form !== null && 'success' in form && form.success === true)
+      ? 'verify'
+      : 'email'
+  );
 
   function errorMessage(key: string | undefined): string {
     if (!key) return '';
@@ -19,6 +31,8 @@
         return m.login_error_invalid();
       case 'login_error_bot_check':
         return m.login_error_bot_check();
+      case 'login_error_otp_invalid':
+        return m.login_error_otp_invalid();
       default:
         return m.login_error_generic();
     }
@@ -32,13 +46,13 @@
     urlError || (form && 'error' in form ? errorMessage(form.error as string) : '')
   );
 
-  let submitted = $derived(form !== null && 'success' in form && form.success === true);
-  let submittedEmail = $derived(
-    submitted && form && 'email' in form ? (form.email as string) : email
-  );
-
   let submitting = $state(false);
   let emailValue = $state('');
+
+  let verifying = $state(false);
+  let tokenValue = $state('');
+
+  let resendStatus = $state<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
   // Token is stored here when Turnstile calls back after completing the challenge.
   // In managed mode Turnstile handles rendering the widget and any interactive
@@ -136,7 +150,7 @@
     try {
       const formData = new FormData();
       formData.set('email', emailValue);
-      formData.set('next', page.url.searchParams.get('next') ?? '/');
+      formData.set('next', next);
       formData.set('cf-turnstile-response', turnstileToken);
 
       const response = await fetch('?/login', {
@@ -162,6 +176,57 @@
       submitting = false;
     }
   }
+
+  async function handleVerify(event: SubmitEvent) {
+    event.preventDefault();
+    if (verifying) return;
+
+    verifying = true;
+
+    try {
+      const formData = new FormData();
+      formData.set('email', email);
+      formData.set('token', tokenValue);
+      formData.set('next', next);
+
+      const response = await fetch('?/verify', {
+        method: 'POST',
+        body: formData
+      });
+
+      const result = deserialize(await response.text());
+      verifying = false;
+      applyAction(result);
+    } catch (err) {
+      console.error('Verify fetch error:', err);
+      verifying = false;
+    }
+  }
+
+  // Resend submits a new ?/login POST with the stored email, reusing the
+  // existing Turnstile token (valid until expiry). Shows a transient
+  // "New code sent" confirmation on a real success — or a "couldn't resend"
+  // state if the server rejected it (e.g. Supabase's per-email cooldown) —
+  // no page navigation, no applyAction.
+  async function handleResend() {
+    if (resendStatus !== 'idle') return;
+    resendStatus = 'sending';
+
+    try {
+      const formData = new FormData();
+      formData.set('email', email);
+      formData.set('next', next);
+      formData.set('cf-turnstile-response', turnstileToken);
+      const response = await fetch('?/login', { method: 'POST', body: formData });
+      const result = deserialize(await response.text());
+      resendStatus = result.type === 'success' ? 'sent' : 'error';
+    } catch (err) {
+      console.error('Resend fetch error:', err);
+      resendStatus = 'error';
+    } finally {
+      setTimeout(() => (resendStatus = 'idle'), 4000);
+    }
+  }
 </script>
 
 <svelte:head>
@@ -183,15 +248,92 @@
     </p>
   </div>
 
-  {#if submitted}
+  {#if step === 'verify'}
     <div
-      class="rounded-xl border border-green-200 bg-green-50 p-6 text-center dark:border-green-800 dark:bg-green-900/20"
+      class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-indigo-950/60"
     >
-      <p class="text-2xl">📬</p>
-      <p class="mt-3 font-semibold dark:text-white">{m.login_success_heading()}</p>
-      <p class="mt-1 text-base text-gray-600 dark:text-gray-300">
-        {m.login_success_body({ email: submittedEmail })}
+      <p class="text-center text-2xl">📬</p>
+      <p class="mt-3 text-center font-semibold dark:text-white">{m.login_success_heading()}</p>
+      <p class="mt-1 text-center text-base text-gray-600 dark:text-gray-300">
+        {m.login_success_body({ email })}
       </p>
+
+      <form onsubmit={handleVerify} novalidate class="mt-6">
+        <label
+          for="token"
+          class="mb-1.5 block text-base font-medium text-gray-700 dark:text-gray-300"
+        >
+          {m.login_otp_label()}
+        </label>
+        <input
+          id="token"
+          name="token"
+          type="text"
+          inputmode="numeric"
+          pattern="\d{6}"
+          maxlength="6"
+          autocomplete="one-time-code"
+          placeholder={m.login_otp_placeholder()}
+          autofocus
+          bind:value={tokenValue}
+          disabled={verifying}
+          class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-center text-lg tracking-[0.3em] text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder-gray-500"
+        />
+        {#if displayError}
+          <p class="mt-1.5 text-sm text-red-500">{displayError}</p>
+        {/if}
+
+        <button
+          type="submit"
+          disabled={verifying || !/^\d{6}$/.test(tokenValue)}
+          class="mt-4 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
+        >
+          {#if verifying}
+            <span class="inline-flex items-center gap-2">
+              <svg
+                class="h-4 w-4 animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+              {m.login_otp_verifying()}
+            </span>
+          {:else}
+            {m.login_otp_submit()}
+          {/if}
+        </button>
+      </form>
+
+      <button
+        type="button"
+        onclick={handleResend}
+        disabled={resendStatus !== 'idle'}
+        class="mt-4 w-full text-center text-sm font-medium text-indigo-600 hover:underline disabled:opacity-50 dark:text-indigo-400"
+      >
+        {#if resendStatus === 'sending'}
+          {m.login_resending()}
+        {:else if resendStatus === 'sent'}
+          {m.login_resend_sent()}
+        {:else if resendStatus === 'error'}
+          {m.login_resend_error()}
+        {:else}
+          {m.login_resend()}
+        {/if}
+      </button>
     </div>
   {:else}
     <form onsubmit={handleSubmit} novalidate>
@@ -265,10 +407,6 @@
           {/if}
         </button>
       </div>
-
-      <p class="mt-6 text-center text-sm text-gray-600 dark:text-gray-300">
-        {m.login_no_password_note()}
-      </p>
     </form>
   {/if}
 </div>
