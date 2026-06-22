@@ -788,5 +788,14 @@
   "onboarding_nudge_field_required": "Falta",
   "onboarding_nudge_mark_done": "Marcar como hecho",
   "onboarding_nudge_section_heading": "Completa tu perfil",
-  "onboarding_nudge_section_title": "Algunas cosas que aún nos faltan"
+  "onboarding_nudge_section_title": "Algunas cosas que aún nos faltan",
+  "footer_level": "Nivel",
+  "footer_learn": "Aprende",
+  "footer_resources": "Recursos",
+  "nav_blog": "Blog",
+  "nav_my_stats": "Mis estadísticas",
+  "onboarding_s4_reminder_label": "Recordatorio diario por correo",
+  "onboarding_s4_reminder_hint": "Te enviaremos un correo a las 19:00 UTC si no has estudiado ese día.",
+  "onboarding_s5_heading": "Mantén el ritmo",
+  "onboarding_s5_sub": "La constancia es la forma más rápida de aprender un idioma. ¿Quieres un recordatorio los días que no hayas estudiado?"
 }
