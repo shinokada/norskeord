@@ -28,6 +28,7 @@
     "ch": "npx tsx scripts/build-search-index.ts && npx changeset && pnpm stats",
     "cv": "npx changeset version",
     "generate:lessons": "npx tsx --env-file=.env scripts/generate-lessons.ts",
+    "cleanup:e2e-users": "npx tsx --env-file=.env scripts/cleanup-e2e-users.ts",
     "og": "node scripts/generate-og.mjs",
     "og:blog": "node scripts/generate-og.mjs --blog",
     "og:decks": "node scripts/generate-og.mjs --decks",
