@@ -39,9 +39,9 @@ The admin page reads posts directly from GitHub via the API (using listDirectory
 | -                                  | 2026-10-16 |
 | -                                  | 2026-10-14 |
 | -                                  | 2026-10-09 |
-| -                                  | 2026-10-07 |
-| -                                  | 2026-10-02 |
-| -                                  | 2026-09-30 |
+| leddsetninger                      | 2026-10-07 |
+| holde-pa-a                         | 2026-10-02 |
+| adjektiv-eller-adverb              | 2026-09-30 |
 | trolig-vs-sannsynligvis-vs-sikkert | 2026-09-25 |
 | hvor-hen                           | 2026-09-23 |
 | subjunksjoner                      | 2026-09-18 |
