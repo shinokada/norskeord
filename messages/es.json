@@ -788,5 +788,10 @@
   "onboarding_nudge_field_required": "Falta",
   "onboarding_nudge_mark_done": "Marcar como hecho",
   "onboarding_nudge_section_heading": "Completa tu perfil",
-  "onboarding_nudge_section_title": "Algunas cosas que aún nos faltan"
+  "onboarding_nudge_section_title": "Algunas cosas que aún nos faltan",
+  "footer_level": "Nivel",
+  "footer_learn": "Aprende",
+  "footer_resources": "Recursos",
+  "nav_blog": "Blog",
+  "nav_my_stats": "Mis estadísticas"
 }
