@@ -796,5 +796,9 @@
   "footer_learn": "Learn",
   "footer_resources": "Resources",
   "nav_blog": "Blog",
-  "nav_my_stats": "My stats"
+  "nav_my_stats": "My stats",
+  "onboarding_s4_reminder_label": "Daily email reminder",
+  "onboarding_s4_reminder_hint": "We'll email you at 19:00 UTC if you haven't studied that day.",
+  "onboarding_s5_heading": "Stay on track",
+  "onboarding_s5_sub": "Consistency is the fastest way to learn a language. Want a gentle nudge on days you haven't studied?"
 }
