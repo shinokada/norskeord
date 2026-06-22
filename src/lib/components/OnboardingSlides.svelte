@@ -13,8 +13,8 @@
   // --- Slide definitions ---
   // Slides 1–4 collect data; slide 5 is the completion screen and isn't
   // counted in the step indicator (TOTAL stays 4).
-  type Slide = 1 | 2 | 3 | 4 | 5;
-  const TOTAL = 4;
+  type Slide = 1 | 2 | 3 | 4 | 5 | 6;
+  const TOTAL = 5;
 
   // --- State ---
   let current = $state<Slide>(1);
@@ -36,6 +36,7 @@
 
   // Slide 4
   let currentLevel = $state('');
+  let dailyReminder = $state(true);
 
   // Completion screen
   let showAllLevels = $state(false);
@@ -48,10 +49,11 @@
 
   // --- Can advance? ---
   const canAdvance = $derived(() => {
-    if (current === 1) return true; // language picker — always valid
+    if (current === 1) return true;
     if (current === 2) return displayName.trim().length > 0;
-    if (current === 3) return true; // flashcard language — always has a selection
+    if (current === 3) return true;
     if (current === 4) return currentLevel.length > 0;
+    if (current === 5) return true; // reminder toggle — always valid
     return false;
   });
 
@@ -90,8 +92,14 @@
         languageStore.set(flashcardLanguage);
       }
     } else if (current === 4) {
+      await patch({ current_level: currentLevel });
+      if (!error && current < TOTAL) {
+        current = (current + 1) as Slide;
+        return;
+      }
+    } else if (current === 5) {
       const patchBody: Record<string, unknown> = {
-        current_level: currentLevel,
+        daily_reminder_enabled: dailyReminder,
         onboarding_done: true
       };
       // Nudge toward definition mode for B1+ users who chose a Norwegian UI
@@ -100,7 +108,7 @@
       }
       await patch(patchBody);
       if (!error) {
-        current = 5;
+        current = 6;
         return;
       }
     }
@@ -150,26 +158,28 @@
     <div
       class="relative mx-4 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white px-8 py-10 shadow-2xl dark:bg-gray-900"
     >
-      <!-- Close / snooze button -->
-      <button
-        type="button"
-        onclick={current === 5 ? dismissCompletion : snooze}
-        aria-label={current === 5 ? m.onboarding_close_aria_done() : m.onboarding_close_aria()}
-        class="absolute right-4 top-4 rounded-full p-1.5 text-gray-700 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
-      >
-        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </button>
+      <!-- Close button (completion screen only) -->
+      {#if current === 6}
+        <button
+          type="button"
+          onclick={dismissCompletion}
+          aria-label={m.onboarding_close_aria_done()}
+          class="absolute right-4 top-4 rounded-full p-1.5 text-gray-700 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+        >
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      {/if}
 
       <!-- Progress indicator (slides 1–4 only) -->
       {#if current <= TOTAL}
-        <div class="mb-6 mt-10 flex items-center gap-1.5">
+        <div class="mb-6 mt-4 flex items-center gap-1.5">
           {#each Array(TOTAL) as _, i (i)}
             <div
               class="h-1.5 flex-1 rounded-full transition-colors duration-300 {i + 1 <= current
@@ -285,8 +295,47 @@
           {/each}
         </div>
 
-        <!-- ── Slide 5: Completion ── -->
+        <!-- ── Slide 5: Daily reminder ── -->
       {:else if current === 5}
+        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
+          {m.onboarding_s5_heading()}
+        </h2>
+        <p class="mb-8 text-sm text-gray-600 dark:text-gray-300">
+          {m.onboarding_s5_sub()}
+        </p>
+
+        <button
+          type="button"
+          role="switch"
+          aria-checked={dailyReminder}
+          onclick={() => (dailyReminder = !dailyReminder)}
+          class="flex w-full items-center justify-between rounded-xl border-2 px-5 py-4 text-left transition-colors {dailyReminder
+            ? 'border-indigo-600 bg-indigo-50 dark:bg-indigo-900/40'
+            : 'border-gray-200 dark:border-gray-700'}"
+        >
+          <div>
+            <p class="text-sm font-semibold text-gray-800 dark:text-gray-100">
+              {m.onboarding_s4_reminder_label()}
+            </p>
+            <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">
+              {m.onboarding_s4_reminder_hint()}
+            </p>
+          </div>
+          <div
+            class="relative ml-4 inline-flex h-6 w-11 shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 {dailyReminder
+              ? 'bg-indigo-600'
+              : 'bg-gray-300 dark:bg-gray-600'}"
+          >
+            <span
+              class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow transition duration-200 {dailyReminder
+                ? 'translate-x-5'
+                : 'translate-x-0'}"
+            ></span>
+          </div>
+        </button>
+
+        <!-- ── Slide 6: Completion ── -->
+      {:else if current === 6}
         <div class="flex flex-col items-center py-4 text-center">
           <div class="mb-4 text-5xl" aria-hidden="true">🎉</div>
           <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">

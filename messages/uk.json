@@ -793,5 +793,9 @@
   "footer_learn": "Вчись",
   "footer_resources": "Ресурси",
   "nav_blog": "Блог",
-  "nav_my_stats": "Моя статистика"
+  "nav_my_stats": "Моя статистика",
+  "onboarding_s4_reminder_label": "Щоденне нагадування на e-mail",
+  "onboarding_s4_reminder_hint": "Ми надішлемо листа о 19:00 UTC, якщо ти не навчався цього дня.",
+  "onboarding_s5_heading": "Залишайся на курсі",
+  "onboarding_s5_sub": "Регулярність — найшвидший спосіб вивчити мову. Хочеш отримувати нагадування в дні, коли не навчався?"
 }
