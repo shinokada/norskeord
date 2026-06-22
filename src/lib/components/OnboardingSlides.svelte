@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { invalidateAll } from '$app/navigation';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
   import { languageStore } from '$lib/stores/language.svelte';
@@ -120,11 +119,6 @@
 
   function back() {
     if (current > 1) current = (current - 1) as Slide;
-  }
-
-  async function snooze() {
-    await patch({ onboarding_snoozed_at: new Date().toISOString() });
-    if (!error) await invalidateAll();
   }
 
   function dismissCompletion() {
