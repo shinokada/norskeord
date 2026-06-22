@@ -170,18 +170,14 @@ _**Lenge** is an adverb — no preposition needed._
 Velg riktig preposisjon: **i / på / med / ved / for**
 
 **A.**
+
 1. Jeg bor \_\_\_ Norge.
 2. Hun sitter \_\_\_ bordet.
 3. Vi reiser \_\_\_ tog.
 4. Jeg er \_\_\_ jobb nå.
 5. Takk \_\_\_ hjelpen.
 
-**B.**
-6. Han står \_\_\_ siden av meg.
-7. Jeg studerer \_\_\_ universitetet.
-8. Vi var \_\_\_ ferie i sommer.
-9. Hun kom hit \_\_\_ tre dager siden.
-10. Jeg skriver \_\_\_ blyant.
+**B.** 6. Han står \_\_\_ siden av meg. 7. Jeg studerer \_\_\_ universitetet. 8. Vi var \_\_\_ ferie i sommer. 9. Hun kom hit \_\_\_ tre dager siden. 10. Jeg skriver \_\_\_ blyant.
 
 **Svar:** 1. i · 2. ved · 3. med · 4. på · 5. for · 6. ved · 7. på · 8. på · 9. for · 10. med
 

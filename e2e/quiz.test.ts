@@ -6,17 +6,16 @@ import { injectPlusPlan } from './helpers.js';
 // ---------------------------------------------------------------------------
 async function answerAndAdvance(page: Page) {
   // Wait for either the questioning state OR the summary to be visible.
-  // This prevents the helper racing ahead when the UI is transitioning.
   await Promise.race([
-    page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 8000 }),
-    page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 8000 })
+    page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 5000 }),
+    page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 5000 })
   ]).catch(() => {});
 
   // If we already reached the summary, nothing left to do.
   if (
     await page
       .getByText(/session complete|økt fullført/i)
-      .isVisible({ timeout: 300 })
+      .isVisible({ timeout: 100 })
       .catch(() => false)
   ) {
     return;
@@ -25,14 +24,14 @@ async function answerAndAdvance(page: Page) {
   const optionA = page.getByRole('button', { name: /^A\b/ });
   const input = page.getByRole('textbox');
 
-  if (await optionA.isVisible({ timeout: 3000 }).catch(() => false)) {
+  if (await optionA.isVisible({ timeout: 2000 }).catch(() => false)) {
     await optionA.click();
-  } else if (await input.isVisible({ timeout: 3000 }).catch(() => false)) {
+  } else if (await input.isVisible({ timeout: 2000 }).catch(() => false)) {
     await input.fill('test');
     await input.press('Enter');
   } else {
     // Neither visible — still transitioning; yield and let the loop retry.
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(200);
     return;
   }
 
@@ -42,11 +41,15 @@ async function answerAndAdvance(page: Page) {
   const next = page.locator('button.bg-indigo-600').filter({
     hasText: /next|see results|neste|se resultater/i
   });
-  await next.waitFor({ state: 'visible', timeout: 8000 }).catch(() => {});
-  if (await next.isVisible({ timeout: 1000 }).catch(() => false)) {
+  await next.waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
+  if (await next.isVisible({ timeout: 500 }).catch(() => false)) {
     await next.click();
-    // Brief pause so the UI leaves the revealing state before the next loop iteration.
-    await page.waitForTimeout(300);
+    // Wait for the UI to leave the reveal state (next question counter or summary appears)
+    // rather than sleeping unconditionally.
+    await Promise.race([
+      page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 3000 }),
+      page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 3000 })
+    ]).catch(() => {});
   }
 }
 
@@ -54,12 +57,12 @@ async function answerAndAdvance(page: Page) {
 // Helper: run a full session until "Session complete!" or the safety guard
 // ---------------------------------------------------------------------------
 async function completeSession(page: Page, maxQuestions = 20) {
-  const safetyLimit = maxQuestions * 4; // 4× gives ample room for retries
+  const safetyLimit = maxQuestions * 2; // 2× gives ample room for retries
   let iterations = 0;
   while (
     !(await page
       .getByText(/session complete|økt fullført/i)
-      .isVisible({ timeout: 500 })
+      .isVisible({ timeout: 100 })
       .catch(() => false))
   ) {
     if (++iterations > safetyLimit) break;
@@ -189,7 +192,7 @@ test('Space advances from reveal to next question', async ({ page }) => {
 // ===========================================================================
 
 test('Try again from summary resets the session', async ({ page }) => {
-  test.setTimeout(60000);
+  test.setTimeout(30000);
   await injectPlusPlan(page);
   await page.goto('/quiz');
 
@@ -216,24 +219,25 @@ test('Try again from summary resets the session', async ({ page }) => {
 // ===========================================================================
 
 test('quiz respects vocab-quiz-limit from localStorage', async ({ page }) => {
-  test.setTimeout(60000);
+  test.setTimeout(30000);
   await injectPlusPlan(page);
   await page.goto('/quiz');
 
-  // Set quiz limit to 5 via localStorage, then re-inject Plus plan (reload clears the cookie/flag)
-  await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '5'));
+  // Set quiz limit to 3 — enough to verify the limit is respected without
+  // completing a longer session than necessary.
+  await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '3'));
   await injectPlusPlan(page);
   await page.reload();
 
   await page.getByRole('button', { name: /start quiz/i }).click();
 
-  // The question counter should show "of 5" (en) or "av 5" (nb)
-  await expect(page.getByText(/of 5|av 5/i)).toBeVisible();
+  // The question counter should show "of 3" (en) or "av 3" (nb)
+  await expect(page.getByText(/of 3|av 3/i)).toBeVisible();
 
-  await completeSession(page, 10);
-  await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible({ timeout: 15000 });
-  // Score should be out of 5 (en: 'of 5 correct', nb: 'av 5 riktige')
-  await expect(page.getByText(/of 5 correct|av 5 riktige/i)).toBeVisible({ timeout: 5000 });
+  await completeSession(page, 5);
+  await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible({ timeout: 10000 });
+  // Score should be out of 3 (en: 'of 3 correct', nb: 'av 3 riktige')
+  await expect(page.getByText(/of 3 correct|av 3 riktige/i)).toBeVisible({ timeout: 5000 });
 });
 
 test('quiz uses 10 questions by default (no localStorage key)', async ({ page }) => {

@@ -102,7 +102,7 @@ Med udelelige (uncountable) substantiver i faste uttrykk brukes ingen artikkel.
 **Mat og drikke:**
 
 - **kaffe med melk** — coffee with milk
-- **en kopp kaffe** — a cup of coffee *(here the article belongs to «kopp», not «kaffe»)*
+- **en kopp kaffe** — a cup of coffee _(here the article belongs to «kopp», not «kaffe»)_
 - **brød med smør** — bread with butter
 - **vann uten is** — water without ice
 
@@ -116,7 +116,7 @@ Med udelelige (uncountable) substantiver i faste uttrykk brukes ingen artikkel.
 
 **Merk:** When the noun becomes specific or countable, the article returns:
 
-- **en melk** — a milk *(e.g. buying a carton at a kiosk, informal)*
+- **en melk** — a milk _(e.g. buying a carton at a kiosk, informal)_
 - **en god kaffe** — a good coffee
 
 ---
@@ -132,7 +132,7 @@ Mange vanlige verb + substantiv-kombinasjoner brukes **uten artikkel**. Disse er
 - **spille fotball** — to play football
 - **spille sjakkk** — to play chess
 
-→ *But:* «Jeg spiller **en** sang» — I'm playing *a* song. (specific)
+→ _But:_ «Jeg spiller **en** sang» — I'm playing _a_ song. (specific)
 
 ### Mat og måltider
 
@@ -195,14 +195,14 @@ Når du introduserer noe spesifikt og nytt i samtalen:
 
 | Situasjon                        | Artikkel? | Eksempel                       |
 | -------------------------------- | --------- | ------------------------------ |
-| Yrke etter «er»                  | ❌ Nei     | Hun er lærer.                  |
-| Yrke + adjektiv                  | ✅ Ja      | Hun er en god lærer.           |
-| Nasjonalitet etter «er»          | ❌ Nei     | Han er nordmann.               |
-| Rolle/funksjon («er», «som»)     | ❌ Nei     | Han ble valgt som president.   |
-| Udelelige stoffer (fast uttrykk) | ❌ Nei     | kaffe med melk · brød med smør |
-| Fast verb + substantiv           | ❌ Nei     | spille gitar · gå på tur       |
-| Nytt, spesifikt substantiv       | ✅ Ja      | Det er en bil utenfor.         |
-| Emfase eller kontrast            | ✅ Ja      | Han er en sann leder.          |
+| Yrke etter «er»                  | ❌ Nei    | Hun er lærer.                  |
+| Yrke + adjektiv                  | ✅ Ja     | Hun er en god lærer.           |
+| Nasjonalitet etter «er»          | ❌ Nei    | Han er nordmann.               |
+| Rolle/funksjon («er», «som»)     | ❌ Nei    | Han ble valgt som president.   |
+| Udelelige stoffer (fast uttrykk) | ❌ Nei    | kaffe med melk · brød med smør |
+| Fast verb + substantiv           | ❌ Nei    | spille gitar · gå på tur       |
+| Nytt, spesifikt substantiv       | ✅ Ja     | Det er en bil utenfor.         |
+| Emfase eller kontrast            | ✅ Ja     | Han er en sann leder.          |
 
 ---
 
@@ -241,18 +241,14 @@ _Meal names in fixed expressions don't take an article. (Exception: «Vi skal ha
 Sett inn ubestemt artikkel der det er nødvendig — og la det stå tomt der det ikke trengs.
 
 **A.**
+
 1. Hun er \_\_\_ sykepleier.
 2. Han er \_\_\_ flink sykepleier.
 3. De spiller \_\_\_ fotball hver uke.
 4. Vi skal \_\_\_ spise middag klokken sju.
 5. Jeg møtte \_\_\_ mann i parken.
 
-**B.**
-6. Han ble valgt som \_\_\_ leder.
-7. Det er \_\_\_ god idé.
-8. Jeg drikker alltid \_\_\_ kaffe om morgenen.
-9. Hun er \_\_\_ utlending, men hun snakker godt norsk.
-10. De bygde \_\_\_ stor bro over fjorden.
+**B.** 6. Han ble valgt som \_\_\_ leder. 7. Det er \_\_\_ god idé. 8. Jeg drikker alltid \_\_\_ kaffe om morgenen. 9. Hun er \_\_\_ utlending, men hun snakker godt norsk. 10. De bygde \_\_\_ stor bro over fjorden.
 
 **Svar:** 1. — · 2. en · 3. — · 4. — · 5. en · 6. — · 7. en · 8. — · 9. — · 10. en
 

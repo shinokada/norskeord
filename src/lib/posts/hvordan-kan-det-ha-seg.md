@@ -33,7 +33,7 @@ _In English:_ The closest equivalents are "How is that possible?", "How can that
 | hvordan | how                                 |
 | kan     | can                                 |
 | det     | it                                  |
-| ha seg  | *(idiomatisk)* be the case / happen |
+| ha seg  | _(idiomatisk)_ be the case / happen |
 
 Hele uttrykket betyr omtrent: **«Hvordan kan dette være tilfellet?»**
 

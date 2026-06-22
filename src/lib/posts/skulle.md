@@ -67,18 +67,22 @@ The speaker looks forward from a past moment — the return was the next planned
 **Skulle** har fire distinkte bruksområder:
 
 **1. Plan / intensjon — was going to** ✅ (described above)
+
 > Han skulle reise hjem.
 > _He was going to travel home._
 
 **2. Forpliktelse / burde — should**
+
 > Du skulle ringe moren din.
 > _You should call your mother._
 
 **3. Hypotetisk / if … were to**
+
 > Hvis det skulle regne, blir vi hjemme.
 > _If it were to rain, we'll stay home._
 
 **4. Ordre / instruksjon — was told to / was to**
+
 > Han skulle levere rapporten innen fredag.
 > _He was to hand in the report by Friday._
 

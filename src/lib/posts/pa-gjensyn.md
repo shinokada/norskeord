@@ -3,7 +3,7 @@ title: 'På gjensyn — Saying Goodbye in Norwegian'
 description: '"På gjensyn" means "see you again" and is a polite, slightly formal farewell. Here is how it compares to "ha det," "vi sees," and other Norwegian goodbyes.'
 slug: pa-gjensyn
 cefr: A1
-publishedAt: 2026-11-11 
+publishedAt: 2026-11-11
 tags: [greetings, vocabulary, speaking, register, phrases]
 decks:
   - level: a1
@@ -60,7 +60,7 @@ De to uttrykkene brukes veldig ofte sammen som en naturlig avslutning:
 | Hilsen         | Engelsk                  | Register                         |
 | -------------- | ------------------------ | -------------------------------- |
 | **ha det**     | bye / take care          | hverdagslig, alltid trygt        |
-| **ha det bra** | take care / all the best | litt varmere enn bare *ha det*   |
+| **ha det bra** | take care / all the best | litt varmere enn bare _ha det_   |
 | **vi sees**    | see you                  | uformelt, blant kjente           |
 | **snakkes**    | talk later               | uformelt, særlig om telefon/chat |
 | **på gjensyn** | see you again / goodbye  | høflig, lett formelt             |
@@ -72,12 +72,14 @@ De to uttrykkene brukes veldig ofte sammen som en naturlig avslutning:
 ## Når er på gjensyn riktig — og når er det for formelt?
 
 **På gjensyn** passer godt i:
+
 - klasserommet («takk for i dag, på gjensyn!»)
 - profesjonelle møter
 - servicebransjen (lege, frisør, butikk)
 - når du vil høres høflig og litt mer tilstedeværende enn «ha det»
 
 Det kan høres litt stivt i:
+
 - uformelle situasjoner blant venner
 - tekstmeldinger og chat
 - når du nettopp skal se personen igjen om fem minutter

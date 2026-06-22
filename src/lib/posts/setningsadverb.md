@@ -62,10 +62,12 @@ _In English:_ Norwegian keeps a strict rule about where these words sit dependin
 **Ikke** er det vanligste setningsadverbet og følger mønsteret konsekvent.
 
 **Hovedsetning:**
+
 > Han er ikke hjemme.
 > _He is not home._
 
 **Leddsetning:**
+
 > … fordi han ikke er hjemme.
 > _… because he is not home._
 
