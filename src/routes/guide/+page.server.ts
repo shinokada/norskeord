@@ -2,9 +2,9 @@ import type { PageServerLoad } from './$types';
 import type { MetaProps } from 'runes-meta-tags';
 
 export const load: PageServerLoad = () => {
-  const title = 'How to Use Norskeord — Guide & FAQ';
+  const title = 'How to Use Norskeord — Flashcards, Quiz, Grammar & Norskprøven Guide';
   const description =
-    'Learn how smart scheduling works, what the flashcard ratings mean, and get answers to common questions about Norskeord — the free Norwegian vocabulary app.';
+    'Learn how to use every feature in Norskeord — vocabulary flashcards, quiz mode, grammar practice, and Norskprøven exam preparation. Plus: smart scheduling explained and FAQ.';
 
   const pageMetaTags: MetaProps = {
     title,
