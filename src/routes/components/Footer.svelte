@@ -11,16 +11,16 @@
   ];
 
   const learnFeatures = [
-    { name: 'Grammar', link: '/grammar' },
-    { name: 'Quiz', link: '/quiz' },
-    { name: 'Norskprøven', link: '/norskproven' }
+    { name: () => m.nav_grammar(), link: '/grammar' },
+    { name: () => m.nav_quiz(), link: '/quiz' },
+    { name: () => m.nav_norskproven(), link: '/norskproven' }
   ];
 
   const resourcesPages = [
-    { name: 'Blog', link: '/blog' },
-    { name: 'My stats', link: '/stats' },
-    { name: 'Plus', link: '/plus' },
-    { name: 'Guide', link: '/guide' }
+    { name: () => m.nav_blog(), link: '/blog' },
+    { name: () => m.nav_my_stats(), link: '/stats' },
+    { name: () => m.nav_plus(), link: '/plus' },
+    { name: () => m.nav_guide(), link: '/guide' }
   ];
 </script>
 
@@ -40,12 +40,12 @@
         <p class="mt-3 text-xs text-gray-800 dark:text-gray-300">v{__VERSION__}</p>
       </div>
 
-      <!-- Learn: levels sub-column -->
+      <!-- Level: levels sub-column -->
       <div>
         <p
           class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
-          Learn
+          {m.footer_level()}
         </p>
         <ul class="space-y-2">
           {#each learnLevels as page (page.name)}
@@ -63,10 +63,9 @@
       <!-- Learn: features sub-column -->
       <div>
         <p
-          class="mb-3 text-xs font-semibold tracking-widest text-transparent uppercase select-none"
-          aria-hidden="true"
+          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
-          &nbsp;
+          {m.footer_learn()}
         </p>
         <ul class="space-y-2">
           {#each learnFeatures as page (page.name)}
@@ -74,7 +73,7 @@
               <a
                 href={page.link}
                 class="text-sm text-gray-800 visited:text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-white"
-                >{page.name}</a
+                >{page.name()}</a
               >
             </li>
           {/each}
@@ -86,7 +85,7 @@
         <p
           class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
-          Resources
+          {m.footer_resources()}
         </p>
         <ul class="space-y-2">
           {#each resourcesPages as page (page.name)}
@@ -94,7 +93,7 @@
               <a
                 href={page.link}
                 class="text-sm text-gray-800 visited:text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-white"
-                >{page.name}</a
+                >{page.name()}</a
               >
             </li>
           {/each}
