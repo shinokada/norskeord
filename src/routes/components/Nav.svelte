@@ -294,7 +294,7 @@
     {#each levels as level (level)}
       <NavLi href="/learn/{level.toLowerCase()}" class="md:dark:text-gray-200">{level}</NavLi>
     {/each}
-    <NavLi href="/blog" class="md:dark:text-gray-200">Blog</NavLi>
+    <NavLi href="/blog" class="md:dark:text-gray-200">{m.nav_blog()}</NavLi>
 
     <!-- Help dropdown — Guide, Resources -->
     <NavLi class="cursor-pointer md:dark:text-gray-200">
@@ -334,7 +334,7 @@
   >
     <SidebarGroup>
       {#if effectiveUser}
-        <SidebarItem label="My Progress" href="/stats">
+        <SidebarItem label={m.nav_my_progress()} href="/stats">
           {#snippet icon()}
             <ChartOutline
               class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -357,7 +357,7 @@
           {/snippet}
         </SidebarItem>
       {:else}
-        <SidebarItem label="Login" href="/auth/login">
+        <SidebarItem label={m.nav_log_in()} href="/auth/login">
           {#snippet icon()}
             <UserSolid
               class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -404,28 +404,28 @@
       </SidebarItem>
     </SidebarGroup>
     <SidebarGroup border>
-      <SidebarItem label="Plus" {spanClass} href="/plus">
+      <SidebarItem label={m.nav_plus()} {spanClass} href="/plus">
         {#snippet icon()}
           <PlusOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="Blog" {spanClass} href="/blog">
+      <SidebarItem label={m.nav_blog()} {spanClass} href="/blog">
         {#snippet icon()}
           <NewspaperOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="Guide" href="/guide">
+      <SidebarItem label={m.nav_guide()} href="/guide">
         {#snippet icon()}
           <BookOpenOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="Resources" href="/resources">
+      <SidebarItem label={m.nav_free_resources()} href="/resources">
         {#snippet icon()}
           <FolderArrowRightOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -435,7 +435,7 @@
     </SidebarGroup>
     {#if effectiveUser}
       <SidebarGroup border>
-        <SidebarItem label="Log out" onclick={logout} class="cursor-pointer">
+        <SidebarItem label={m.nav_log_out()} onclick={logout} class="cursor-pointer">
           {#snippet icon()}
             <ArrowLeftToBracketOutline
               class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"

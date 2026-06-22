@@ -388,6 +388,9 @@
   "blog_section_level": "Level {level}",
   "home_heading": "Norske flashcard",
   "home_subheading": "Practice Norwegian vocabulary from A1 to C. Pick a level and a category to get started.",
+  "footer_level": "Level",
+  "footer_learn": "Learn",
+  "footer_resources": "Resources",
   "norskeord": "Norskeord",
   "home_hero_badge": "Norwegian learning from A1 to C",
   "home_hero_heading": "Learn Norwegian with",
@@ -788,5 +791,14 @@
   "onboarding_nudge_field_required": "Missing",
   "onboarding_nudge_mark_done": "Mark as done",
   "onboarding_nudge_section_heading": "Complete your profile",
-  "onboarding_nudge_section_title": "A few things we're still missing"
+  "onboarding_nudge_section_title": "A few things we're still missing",
+  "footer_level": "Level",
+  "footer_learn": "Learn",
+  "footer_resources": "Resources",
+  "nav_blog": "Blog",
+  "nav_my_stats": "My stats",
+  "onboarding_s4_reminder_label": "Daily email reminder",
+  "onboarding_s4_reminder_hint": "We'll email you at 19:00 UTC if you haven't studied that day.",
+  "onboarding_s5_heading": "Stay on track",
+  "onboarding_s5_sub": "Consistency is the fastest way to learn a language. Want a gentle nudge on days you haven't studied?"
 }
