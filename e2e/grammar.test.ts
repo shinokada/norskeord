@@ -108,10 +108,12 @@ test('back navigation: ?from=b1 shows ← B1 link', async ({ page }) => {
 test('back navigation: without ?from shows Grammar topics link', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/grammar/ikke-placement');
-  // "Grammar topics →" or Norwegian equivalent
-  await expect(page.getByRole('link', { name: /grammar topics|grammatikk/i })).toBeVisible({
-    timeout: 5000
-  });
+  // Scope to <a href="/grammar"> and match the back-link text (EN: "Grammar topics",
+  // NB: "Grammatikktemaer"). This avoids colliding with the navbar "Grammatikk" link,
+  // which also points to /grammar but uses a shorter label.
+  await expect(
+    page.locator('a[href="/grammar"]').filter({ hasText: /grammar topics|grammatikktemaer/i })
+  ).toBeVisible({ timeout: 5000 });
 });
 
 test('free user sees lock screen for a Plus-only topic (noun-plurals)', async ({ page }) => {
