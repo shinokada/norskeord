@@ -50,11 +50,11 @@ The admin page reads posts directly from GitHub via the API (using listDirectory
 | -                            | 2026-09-09 |
 | -                            | 2026-09-04 |
 | -                            | 2026-09-02 |
-| -                            | 2026-08-28 |
-| -                            | 2026-08-26 |
-| -                            | 2026-08-21 |
-| -                            | 2026-08-19 |
-| -                            | 2026-08-14 |
+| fort-vs-raskt                | 2026-08-28 |
+| kose-vs-nyte                 | 2026-08-26 |
+| i-grunnen                    | 2026-08-21 |
+| setningsadverb               | 2026-08-19 |
+| skulle                       | 2026-08-14 |
 | preposisjoner                | 2026-08-12 |
 | lenge-vs-lang                | 2026-08-07 |
 | i-for-pa-tid                 | 2026-08-05 |
