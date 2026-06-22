@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.33.1
+
+### Patch Changes
+
+- fix: change circular icons to square icons
+
 ## 2.33.0
 
 ### Minor Changes
