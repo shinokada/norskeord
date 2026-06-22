@@ -812,5 +812,9 @@
   "footer_learn": "Lær",
   "footer_resources": "Ressurser",
   "nav_blog": "Blogg",
-  "nav_my_stats": "Min statistikk"
+  "nav_my_stats": "Min statistikk",
+  "onboarding_s4_reminder_label": "Daglig e-postpåminnelse",
+  "onboarding_s4_reminder_hint": "Vi sender deg en e-post kl. 19:00 UTC hvis du ikke har øvd den dagen.",
+  "onboarding_s5_heading": "Hold motivasjonen oppe",
+  "onboarding_s5_sub": "Regelmessig øving er den raskeste veien til å lære norsk. Vil du ha en liten påminnelse på dager du ikke har øvd?"
 }
