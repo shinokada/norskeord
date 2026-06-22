@@ -14,11 +14,11 @@ The admin page reads posts directly from GitHub via the API (using listDirectory
 | -                                  | 2026-12-23 |
 | -                                  | 2026-12-16 |
 | -                                  | 2026-12-09 |
-| -                                  | 2026-12-02 |
-| -                                  | 2026-11-25 |
-| -                                  | 2026-11-18 |
-| -                                  | 2026-11-11 |
-| -                                  | 2026-11-04 |
+| substantiv-uten-ubestemt-artikkel  | 2026-12-02 |
+| tidspreposisjoner                  | 2026-11-25 |
+| fortelle-snakke-tale-si.           | 2026-11-18 |
+| pa-gjensyn                         | 2026-11-11 |
+| norsken                            | 2026-11-04 |
 | ikke-etter-objekt                  | 2026-10-28 |
 | hallo                              | 2026-10-21 |
 | fa-noe-pa                          | 2026-10-14 |
