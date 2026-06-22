@@ -63,11 +63,13 @@ Så snart du kjenner behovet for «mer», er du i en leddsetning.
 Den tydeligste markøren på norsk er plasseringen av **ikke** og andre setningsadverb:
 
 **Helsetning:**
+
 > Subjekt + Verb + **ikke**
 > Han **kommer ikke**.
 > Det **er ikke** kaldt.
 
 **Leddsetning:**
+
 > Subjekt + **ikke** + Verb
 > fordi han **ikke kommer**
 > at det **ikke er** kaldt
@@ -103,18 +105,22 @@ Spørsmål: Hva vet jeg? → **at han ikke kommer** (leddsetningen er svaret)
 Gir informasjon om årsak, betingelse, tid, eller kontrast.
 
 **Årsak:**
+
 > Jeg ble hjemme **fordi jeg ikke følte meg bra**.
 > _I stayed home because I didn't feel well._
 
 **Betingelse:**
+
 > **Hvis det ikke regner**, går vi ut.
 > _If it doesn't rain, we'll go out._
 
 **Tid:**
+
 > **Når hun ikke jobber**, trener hun.
 > _When she isn't working, she works out._
 
 **Kontrast:**
+
 > Han kom, **selv om han ikke hadde lyst**.
 > _He came, even though he didn't feel like it._
 
@@ -139,10 +145,12 @@ Relativsetningen modifiserer substantivet rett foran **som**.
 **Hvorfor** kan innlede både direkte spørsmål (helsetning) og indirekte spørsmål (leddsetning). Ordstillingen er forskjellig:
 
 **Direkte spørsmål (helsetning):**
+
 > Hvorfor kommer han **ikke**?
 > → hvorfor + verb + subjekt + ikke
 
 **Indirekte spørsmål (leddsetning):**
+
 > Jeg vet ikke **hvorfor han ikke kommer**.
 > → hvorfor + subjekt + ikke + verb
 
@@ -191,7 +199,7 @@ Når du leser norsk og støter på en klausul, spør deg:
 
 | Kjennetegn             | Helsetning              | Leddsetning                  |
 | ---------------------- | ----------------------- | ---------------------------- |
-| Kan stå alene          | ✅                       | ❌                            |
+| Kan stå alene          | ✅                      | ❌                           |
 | Plassering av **ikke** | etter verbet            | før verbet                   |
 | Typisk innleder        | —                       | at, fordi, hvis, når, som …  |
 | Eksempel               | Han **er ikke** hjemme. | fordi han **ikke er** hjemme |

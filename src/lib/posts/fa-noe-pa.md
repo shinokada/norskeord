@@ -18,7 +18,7 @@ decks:
 
 ## Kort forklaring
 
-**Få noe på** brukes når du prøver å ta på deg noe — og enten lykkes eller ikke lykkes. Det handler ikke bare om å ta på seg noe, men om å *klare* å gjøre det.
+**Få noe på** brukes når du prøver å ta på deg noe — og enten lykkes eller ikke lykkes. Det handler ikke bare om å ta på seg noe, men om å _klare_ å gjøre det.
 
 Sammenlignet med **ta på seg**, som er nøytralt og hverdagslig, antyder **få på** at det krever litt innsats:
 
@@ -103,6 +103,7 @@ I praksis er **«Jeg får den ikke på»** den mest naturlige formen i dagligtal
 | **få den ikke på**   | can't get it on             | mislykket forsøk              |
 
 **Eksempel:**
+
 > Jeg **tok på meg** jakken og gikk.
 > _I put on the jacket and left._ → no difficulty, just a normal action.
 

@@ -14,13 +14,13 @@ decks:
     label: A1 Nouns
 ---
 
-> **TL;DR:** **Norsken** is the definite form of **norsk** used as a noun. When you say "my Norwegian" or "her Norwegian," you add **-en** — just as you would for any masculine noun. The same pattern applies to all language names: *engelsken*, *fransken*, *japansken*.
+> **TL;DR:** **Norsken** is the definite form of **norsk** used as a noun. When you say "my Norwegian" or "her Norwegian," you add **-en** — just as you would for any masculine noun. The same pattern applies to all language names: _engelsken_, _fransken_, _japansken_.
 
 ## Kort forklaring
 
-**Norsk** kan brukes på flere måter — som adjektiv, som språknavn, eller om en person. Når det brukes som substantiv om selve språket og har et eieord (som *min*, *din*, *hennes*), brukes **bestemt form**: **norsken**.
+**Norsk** kan brukes på flere måter — som adjektiv, som språknavn, eller om en person. Når det brukes som substantiv om selve språket og har et eieord (som _min_, _din_, _hennes_), brukes **bestemt form**: **norsken**.
 
-_In English:_ English just says "my Norwegian" — the language name doesn't change. Norwegian adds a definite article ending (**-en**) to the language name when it functions as a noun with a possessive, giving you **norsken min** rather than just *norsk min*.
+_In English:_ English just says "my Norwegian" — the language name doesn't change. Norwegian adds a definite article ending (**-en**) to the language name when it functions as a noun with a possessive, giving you **norsken min** rather than just _norsk min_.
 
 ---
 
@@ -54,7 +54,7 @@ _In English:_ English just says "my Norwegian" — the language name doesn't cha
 
 ## Hvorfor -en?
 
-**Norsk** brukt som substantiv (= språket) er et hankjønnsord — grammatisk sett *en norsk*. Bestemt form av hankjønnsord får endelsen **-en**:
+**Norsk** brukt som substantiv (= språket) er et hankjønnsord — grammatisk sett _en norsk_. Bestemt form av hankjønnsord får endelsen **-en**:
 
 | Substantiv | Ubestemt | Bestemt |
 | ---------- | -------- | ------- |
@@ -62,7 +62,7 @@ _In English:_ English just says "my Norwegian" — the language name doesn't cha
 | en gutt    | gutt     | gutten  |
 | en norsk   | norsk    | norsken |
 
-Selv om man sjelden sier *en norsk* alene om språket, følger **norsken** det samme mønsteret.
+Selv om man sjelden sier _en norsk_ alene om språket, følger **norsken** det samme mønsteret.
 
 ---
 
@@ -85,16 +85,19 @@ Dette gjelder alle språknavn på norsk. Når du snakker om noen sin ferdighet i
 **Norsk** kan være tre forskjellige ordklasser:
 
 **1. Substantiv — språket**
+
 > Jeg lærer **norsk**. → _I am learning Norwegian._
 > **Norsken** min er ikke perfekt. → _My Norwegian isn't perfect._
 
 **2. Adjektiv — noe som er norsk**
+
 > en **norsk** bok → _a Norwegian book_
 > **norsk** kultur → _Norwegian culture_
 
 **3. Substantiv — en person (mindre vanlig)**
+
 > en **nordmann** / ei **norsk** kvinne → _a Norwegian (person)_
-> I dagligtale sier man heller *nordmann* eller *norsk person*.
+> I dagligtale sier man heller _nordmann_ eller _norsk person_.
 
 ---
 
@@ -114,10 +117,10 @@ _Eieordet kommer etter substantivet i bestemt form: **norsken min**, ikke **min 
 
 ## Husk dette
 
-- **norsk** (ubestemt) → språket generelt: *Jeg lærer norsk.*
-- **norsken** (bestemt) → noen sin norsk: *Norsken min blir bedre.*
+- **norsk** (ubestemt) → språket generelt: _Jeg lærer norsk._
+- **norsken** (bestemt) → noen sin norsk: _Norsken min blir bedre._
 - Endelsen **-en** følger vanlig hankjønnsbøying
-- Samme mønster gjelder alle språknavn: *engelsken*, *fransken*, *japansken*
+- Samme mønster gjelder alle språknavn: _engelsken_, _fransken_, _japansken_
 
 ---
 

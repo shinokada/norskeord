@@ -82,8 +82,8 @@ _It was a long day._
 - **lang → ting (substantiv)**
 - **lenge → handling (verb)**
 
-**Det var en lang dag.** → describes the *day* (noun)
-**Jeg jobbet lenge.** → describes the *working* (verb)
+**Det var en lang dag.** → describes the _day_ (noun)
+**Jeg jobbet lenge.** → describes the _working_ (verb)
 
 ---
 
