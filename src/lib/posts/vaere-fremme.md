@@ -3,7 +3,7 @@ title: 'Være fremme — We have arrived'
 description: '"Være fremme" means to have reached your destination. It describes the result of a journey, not just your location.'
 slug: vaere-fremme
 cefr: A2
-publishedAt:
+publishedAt: 2026-09-02
 tags: [verbs, vocabulary, phrasal-verbs]
 decks:
   - level: a2
@@ -70,11 +70,11 @@ Tenk på det slik:
 
 ## Sammenligningstabell
 
-| Uttrykk          | Fokus         | Typisk bruk                        |
-| ---------------- | ------------- | ---------------------------------- |
-| **være fremme**  | resultattilstand | etter en reise — du er fremme nå |
-| **komme fram**   | handlingen å ankomme | selve ankomsttidspunktet  |
-| **være i Oslo**  | bare plassering | ingen reisekontekst nødvendig    |
+| Uttrykk         | Fokus                | Typisk bruk                      |
+| --------------- | -------------------- | -------------------------------- |
+| **være fremme** | resultattilstand     | etter en reise — du er fremme nå |
+| **komme fram**  | handlingen å ankomme | selve ankomsttidspunktet         |
+| **være i Oslo** | bare plassering      | ingen reisekontekst nødvendig    |
 
 ---
 

@@ -47,9 +47,9 @@ The admin page reads posts directly from GitHub via the API (using listDirectory
 | -                            | 2026-09-18 |
 | -                            | 2026-09-16 |
 | -                            | 2026-09-11 |
-| -                            | 2026-09-09 |
-| -                            | 2026-09-04 |
-| -                            | 2026-09-02 |
+| komme-bort-til               | 2026-09-09 |
+| det-er-lov                   | 2026-09-04 |
+| vaere-fremme                 | 2026-09-02 |
 | fort-vs-raskt                | 2026-08-28 |
 | kose-vs-nyte                 | 2026-08-26 |
 | i-grunnen                    | 2026-08-21 |
