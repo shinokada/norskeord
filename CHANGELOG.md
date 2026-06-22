@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.36.0
+
+### Minor Changes
+
+- ## New Features
+  - **Norwegian Language Learning Content** — Added 40+ new structured lesson posts covering grammar, vocabulary, and phrasal verbs (e.g., adjective vs. adverb usage, “det er lov,” verb particles like “få …,” and “finne fram”), with explanations, examples, comparisons, and practice.
+  - **Learning Resources** — Published a level-based listening improvement guide, including practical study tips and subtitle guidance.
+
+  ## Content Updates
+  - **Lesson Refreshes** — Updated the “sakte vs langsomt” lesson with clearer structure, expanded examples, and improved learning sections.
+
 ## 2.35.0
 
 ### Minor Changes
