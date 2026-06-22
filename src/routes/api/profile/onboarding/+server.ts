@@ -246,6 +246,10 @@ export const PATCH: RequestHandler = async ({ request, locals }) => {
     update.onboarding_snoozed_at = snoozedAt ?? null;
   }
 
+  if ('daily_reminder_enabled' in body) {
+    update.email_reminder = Boolean(body.daily_reminder_enabled);
+  }
+
   if (Object.keys(update).length === 0) {
     return json({ ok: true }); // nothing to do
   }
