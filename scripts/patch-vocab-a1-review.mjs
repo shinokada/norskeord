@@ -149,7 +149,7 @@ const PATCHES = [
     from: 'Вибачаюся, я запізнився.',
     to: 'Вибачте, я запізнився.',
     note: 'Match updated ukrainian field.'
-  },
+  }
 
   // 10. to (number two) — "два кота" has a case error. After the numeral "два"
   //     (two), animate masculine nouns take the genitive singular: "два кота" is
