@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.35.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added "Where to start" section on the guide page with learning path recommendations based on goals.
+    - Structured guide page into anchored subsections (flashcards, quiz, grammar, Norskprøven, FAQ) for improved navigation.
+  - **Documentation**
+    - Significantly expanded README with tech stack, routes, deployment, and development setup details.
+    - Enhanced guide content across all supported languages with detailed mode explanations and updated FAQ.
+  - **Bug Fixes**
+    - Updated onboarding step 5 messaging to focus on maintaining study consistency with optional daily reminders.
+
 ## 2.34.0
 
 ### Minor Changes
