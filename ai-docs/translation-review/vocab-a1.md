@@ -255,25 +255,25 @@ Here is a complete audit of the pasted dataset, highlighting translations or gra
 
 ### 1. Inconsistent Inclusion of Articles
 
-In Spanish, it is a best practice to list vocabulary nouns either *completely with* or *completely without* their definite/indefinite articles unless specified by the base language. The dataset oscillates randomly between providing just the raw noun and adding articles:
+In Spanish, it is a best practice to list vocabulary nouns either _completely with_ or _completely without_ their definite/indefinite articles unless specified by the base language. The dataset oscillates randomly between providing just the raw noun and adding articles:
 
-* **With Article:** `v-a1-food-001` (*el pan*), `v-a1-food-002` (*la leche*), `v-a1-body-015` (*el pelo*).
-* **Without Article:** `v-a1-food-005` (*mantequilla*), `v-a1-food-006` (*pescado*), `v-a1-food-007` (*carne*).
-* **Recommendation:** Align these to match the Norwegian prompt (since Norwegian lists them with indefinite articles like *en/et/ei*, the Spanish side should strictly use *un/una* or *el/la* across the board).
+- **With Article:** `v-a1-food-001` (_el pan_), `v-a1-food-002` (_la leche_), `v-a1-body-015` (_el pelo_).
+- **Without Article:** `v-a1-food-005` (_mantequilla_), `v-a1-food-006` (_pescado_), `v-a1-food-007` (_carne_).
+- **Recommendation:** Align these to match the Norwegian prompt (since Norwegian lists them with indefinite articles like _en/et/ei_, the Spanish side should strictly use _un/una_ or _el/la_ across the board).
 
 ### 2. Punctuation Inconsistencies (Exclamation Marks)
 
 In Spanish, exclamatory sentences **must** begin with an inverted exclamation mark (`¡`). Several entries miss this rule in the target or example strings:
 
-* `v-a1-greetings-005`: `"example_spanish": "¡Buenas noches! Pasa, entra."` — The second part of the exclamation is missing its trailing or structural `¡`.
-* `v-a1-greetings-002`: `"example_spanish": "Hola, ¿puedo hablar con Anna?"` — While correct, it lacks the exclamation layout used in the Norwegian equivalent (`Hallo, ...`).
+- `v-a1-greetings-005`: `"example_spanish": "¡Buenas noches! Pasa, entra."` — The second part of the exclamation is missing its trailing or structural `¡`.
+- `v-a1-greetings-002`: `"example_spanish": "Hola, ¿puedo hablar con Anna?"` — While correct, it lacks the exclamation layout used in the Norwegian equivalent (`Hallo, ...`).
 
 ### 3. Contextual and Categorical Slip-ups
 
-* `v-a1-greetings-005` (**god kveld**): Translated as *buenas noches*. While culturally acceptable as a greeting after dark, *buenas noches* also translates **god natt** (`v-a1-greetings-006`). To maintain an A1 pedagogical distinction between evening and night, *buenas tardes* (late afternoon/early evening) or a contextual phrase could prevent duplicates.
-* `v-a1-greetings-023` (**på gjensyn**): Translated as *hasta la vista*. While structurally accurate, *hasta la vista* is heavily associated with cinematic pop culture and rarely used in daily formal interactions. *Hasta la próxima* or *Adiós* (formal tone) fits a standard language course better.
-* `v-a1-colors-010` (**oransje**): `"example_spanish": "Las zanahorias son naranja."` — Grammatically, it should be pluralized to match the subject: *Las zanahorias son naranjas* or *de color naranja*.
-* `v-a1-animals-016` (**en ørn**): `"spanish": "un águila"` — Because *águila* starts with a stressed "á", it requires the masculine article *el* or *un* singular, which is done correctly here. However, it is a feminine noun. The example reads: *El águila vuela muy alto*. This is correct, but be mindful that any modifying adjectives must be feminine (e.g., *el águila **alta***).
+- `v-a1-greetings-005` (**god kveld**): Translated as _buenas noches_. While culturally acceptable as a greeting after dark, _buenas noches_ also translates **god natt** (`v-a1-greetings-006`). To maintain an A1 pedagogical distinction between evening and night, _buenas tardes_ (late afternoon/early evening) or a contextual phrase could prevent duplicates.
+- `v-a1-greetings-023` (**på gjensyn**): Translated as _hasta la vista_. While structurally accurate, _hasta la vista_ is heavily associated with cinematic pop culture and rarely used in daily formal interactions. _Hasta la próxima_ or _Adiós_ (formal tone) fits a standard language course better.
+- `v-a1-colors-010` (**oransje**): `"example_spanish": "Las zanahorias son naranja."` — Grammatically, it should be pluralized to match the subject: _Las zanahorias son naranjas_ or _de color naranja_.
+- `v-a1-animals-016` (**en ørn**): `"spanish": "un águila"` — Because _águila_ starts with a stressed "á", it requires the masculine article _el_ or _un_ singular, which is done correctly here. However, it is a feminine noun. The example reads: _El águila vuela muy alto_. This is correct, but be mindful that any modifying adjectives must be feminine (e.g., \*el águila **alta\***).
 
 ---
 
@@ -281,14 +281,14 @@ In Spanish, exclamatory sentences **must** begin with an inverted exclamation ma
 
 ### 1. Grammatical Inexactness & Case Slips
 
-* `v-a1-greetings-013` (**beklager**): Translated as *вибачаюся*. Reflexive *вибачаюся* implies "I excuse myself" and is widely considered stylistically flawed or incorrect in modern Ukrainian. It should be replaced with **вибачте** or **прошу вибачення**.
-* `v-a1-numbers-002` (**to**): `"example_ukrainian": "У мене є два кота."` — This contains a case error. After the number *два*, the noun must be in the genitive singular form *коти* (with stress change) or counted as an animate plural object: **два коти**.
-* `v-a1-numbers-019` (**nitten**): The phrase *Klokka er nitten* is translated as *Зараз дев'ятнадцята година* (It is the 19th hour). While factually understood, conversational Ukrainian typically uses *Зараз сьома година вечора* (It is 7 o'clock in the evening) to map natural language habits unless reading a digital timetable.
+- `v-a1-greetings-013` (**beklager**): Translated as _вибачаюся_. Reflexive _вибачаюся_ implies "I excuse myself" and is widely considered stylistically flawed or incorrect in modern Ukrainian. It should be replaced with **вибачте** or **прошу вибачення**.
+- `v-a1-numbers-002` (**to**): `"example_ukrainian": "У мене є два кота."` — This contains a case error. After the number _два_, the noun must be in the genitive singular form _коти_ (with stress change) or counted as an animate plural object: **два коти**.
+- `v-a1-numbers-019` (**nitten**): The phrase _Klokka er nitten_ is translated as _Зараз дев'ятнадцята година_ (It is the 19th hour). While factually understood, conversational Ukrainian typically uses _Зараз сьома година вечора_ (It is 7 o'clock in the evening) to map natural language habits unless reading a digital timetable.
 
 ### 2. Localization Flaws (Translations out of context)
 
-* `v-a1-greetings-002` (**hallo**): Translated as *алло / привіт*. *Алло* is strictly used on the telephone in Ukrainian. The example sentence explicitly shows a phone context (*Hallo, kan jeg få snakke med Anna?*), making it perfect here, but the raw dictionary entry entry should note that *алло* is not a face-to-face greeting.
-* `v-a1-food-004` (**en ost**): Translated as *сир*. In Ukrainian, *сир* can mean both hard cheese and cottage cheese (творог). To avoid confusion for language learners distinguishing it from white cheeses or milk products, it is safer to explicitly use **твердий сир** (hard cheese) or ensure the context clarifies it.
+- `v-a1-greetings-002` (**hallo**): Translated as _алло / привіт_. _Алло_ is strictly used on the telephone in Ukrainian. The example sentence explicitly shows a phone context (_Hallo, kan jeg få snakke med Anna?_), making it perfect here, but the raw dictionary entry entry should note that _алло_ is not a face-to-face greeting.
+- `v-a1-food-004` (**en ost**): Translated as _сир_. In Ukrainian, _сир_ can mean both hard cheese and cottage cheese (творог). To avoid confusion for language learners distinguishing it from white cheeses or milk products, it is safer to explicitly use **твердий сир** (hard cheese) or ensure the context clarifies it.
 
 ---
 
@@ -298,17 +298,17 @@ In Spanish, exclamatory sentences **must** begin with an inverted exclamation ma
 
 For adjectives and nouns that depend on gender, the formatting varies wildly across entries:
 
-* `v-a1-numbers-027` (**første**): Spanish uses `"primero/a"`, Ukrainian uses `"перший / перша"`.
-* `v-a1-colors-001` (**rød**): Spanish uses `"rojo/a"`, Ukrainian uses `"червоний"` (omits the feminine completely).
-* `v-a1-family-003` (**et barn**): Spanish splits into two entries (`un niño / una niña`), Ukrainian uses a single neuter noun (`дитина`).
-* **Recommendation:** Adopt a unified syntax for entries containing slash variations across both target languages (e.g., always choosing to include or omit the feminine suffix `/a` or `/а`).
+- `v-a1-numbers-027` (**første**): Spanish uses `"primero/a"`, Ukrainian uses `"перший / перша"`.
+- `v-a1-colors-001` (**rød**): Spanish uses `"rojo/a"`, Ukrainian uses `"червоний"` (omits the feminine completely).
+- `v-a1-family-003` (**et barn**): Spanish splits into two entries (`un niño / una niña`), Ukrainian uses a single neuter noun (`дитина`).
+- **Recommendation:** Adopt a unified syntax for entries containing slash variations across both target languages (e.g., always choosing to include or omit the feminine suffix `/a` or `/а`).
 
 ### 2. Lemma Field Discrepancies
 
 The `lemma` field is supposed to capture the base, uninflected form of the term. In a few entries, this standard collapses:
 
-* `v-a1-greetings-024`: `"norsk": "Hvor kommer du fra?"` vs. `"lemma": "Hvor er du fra?"` — The lemma changes the verb completely from *kommer* to *er*.
-* `v-a1-greetings-013`: `"norsk": "beklager"` vs. `"lemma": "beklage"` — This is correct (maps inflected form to infinitive verb), but neighboring conversational phrases like `v-a1-greetings-016` (`Hvordan har du det?`) repeat the entire phrase in lowercase rather than breaking down to base components. A unified structural rule for phrase lemmas is needed.
+- `v-a1-greetings-024`: `"norsk": "Hvor kommer du fra?"` vs. `"lemma": "Hvor er du fra?"` — The lemma changes the verb completely from _kommer_ to _er_.
+- `v-a1-greetings-013`: `"norsk": "beklager"` vs. `"lemma": "beklage"` — This is correct (maps inflected form to infinitive verb), but neighboring conversational phrases like `v-a1-greetings-016` (`Hvordan har du det?`) repeat the entire phrase in lowercase rather than breaking down to base components. A unified structural rule for phrase lemmas is needed.
 
 ## Action taken
 
@@ -346,6 +346,6 @@ Here's what the two reviews said and what I included (or deliberately skipped):
 | `v-a1-greetings-013` | `вибачаюся` → `вибачте` — reflexive form is considered incorrect in modern Ukrainian |
 
 **Deliberately skipped:**
+
 - `v-a1-numbers-002` Ukrainian "два кота" — Review 2 flagged it, but "два кота" is actually the correct genitive singular in Ukrainian after numerals 2–4, so no change needed.
 - "hablo un poco de noruego" and "tommel opp" — both borderline stylistic choices at A1 level.
-

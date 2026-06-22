@@ -15,6 +15,7 @@ in-context while studying, feeding a review queue that informs future patch scri
 ## Scope
 
 **Content types covered:**
+
 - Vocab flashcards (vocab_id → e.g. `v-a1-greetings-005`)
 - Grammar questions (question_id → e.g. `grammar-word-order-001`)
 - Quiz items (same IDs as vocab/grammar)
@@ -83,6 +84,7 @@ CREATE POLICY "Users can read own flags"
 ## Data Flow
 
 ### Submitting a flag
+
 1. User taps the flag button on a card/question
 2. A small inline panel appears (not a modal) with:
    - Reason dropdown: Wrong translation / Unnatural example / Grammar error / Other
@@ -93,28 +95,31 @@ CREATE POLICY "Users can read own flags"
 5. On success, the flag button transitions to "flagged" state in the UI
 
 ### Re-encountering a flagged item
+
 - When a session loads, fetch all open flags for the current user:
   ```ts
   const { data } = await supabase
     .from('content_flags')
     .select('content_id, language, status')
-    .eq('user_id', userId)
+    .eq('user_id', userId);
   ```
 - Store as a `Set<string>` keyed by `content_id` in a session store
 - Per-card lookup is O(1), no extra DB round-trip per card
 
 ### Flag indicator states on the card
-| Flag status | What to show |
-|---|---|
-| `open` | Small flag icon (muted colour) + "You flagged this" tooltip |
-| `resolved` | Checkmark icon + "Updated — thanks for the feedback!" |
-| `dismissed` | No indicator (silently remove) |
+
+| Flag status | What to show                                                |
+| ----------- | ----------------------------------------------------------- |
+| `open`      | Small flag icon (muted colour) + "You flagged this" tooltip |
+| `resolved`  | Checkmark icon + "Updated — thanks for the feedback!"       |
+| `dismissed` | No indicator (silently remove)                              |
 
 ---
 
 ## Admin Queue (existing admin panel)
 
 Add a `/admin/flags` route showing:
+
 - Table of open flags grouped by `content_id`
 - Columns: content_id, language, reason, note, user count, first seen
 - Actions per row: **Mark resolved** / **Dismiss**
@@ -129,6 +134,7 @@ This keeps the data quality bar high.
 ## UI Components
 
 ### Flag button
+
 - Lives in the card footer, same row as the existing "show example" toggle or rating buttons
 - Icon: a small flag (e.g. `lucide-flag`) or a `⚑` symbol
 - Only rendered when `flashcard_language` is `es` or `uk` (profile setting)
@@ -138,6 +144,7 @@ This keeps the data quality bar high.
 - Flagged (resolved): green checkmark, tooltip "Updated — thanks!"
 
 ### Inline flag panel
+
 - Slides in below the card (not a modal — avoids disrupting study flow)
 - Closes automatically on submit or on tapping outside
 - Fields:
@@ -151,6 +158,7 @@ This keeps the data quality bar high.
 ## SvelteKit Implementation Sketch
 
 ### Store
+
 ```ts
 // src/lib/stores/flagStore.ts
 import { writable } from 'svelte/store';
@@ -159,11 +167,11 @@ import { writable } from 'svelte/store';
 export const userFlags = writable<Map<string, { status: string; language: string }>>(new Map());
 
 export function initFlags(flags: { content_id: string; status: string; language: string }[]) {
-  userFlags.set(new Map(flags.map(f => [f.content_id, f])));
+  userFlags.set(new Map(flags.map((f) => [f.content_id, f])));
 }
 
 export function setFlag(contentId: string, language: string) {
-  userFlags.update(m => {
+  userFlags.update((m) => {
     m.set(contentId, { status: 'open', language });
     return m;
   });
@@ -171,6 +179,7 @@ export function setFlag(contentId: string, language: string) {
 ```
 
 ### Server action
+
 ```ts
 // src/routes/flashcards/+page.server.ts (or shared actions file)
 export const actions = {
@@ -179,11 +188,11 @@ export const actions = {
     if (!session) return fail(401);
 
     const data = await request.formData();
-    const content_id   = data.get('content_id') as string;
+    const content_id = data.get('content_id') as string;
     const content_type = data.get('content_type') as string;
-    const language     = data.get('language') as string;
-    const reason       = data.get('reason') as string;
-    const note         = (data.get('note') as string | null)?.slice(0, 500) ?? null;
+    const language = data.get('language') as string;
+    const reason = data.get('reason') as string;
+    const note = (data.get('note') as string | null)?.slice(0, 500) ?? null;
 
     const { error } = await locals.supabase
       .from('content_flags')
@@ -196,6 +205,7 @@ export const actions = {
 ```
 
 ### Loading flags at session start
+
 ```ts
 // src/routes/flashcards/+page.server.ts load()
 const { data: flags } = await supabase
