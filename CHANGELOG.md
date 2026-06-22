@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 2.33.0
+
+### Minor Changes
+
+- - **New Features**
+    - Email-based login now uses 6-digit one-time passwords (OTP) sent to your email address
+    - Login interface available in Spanish and Ukrainian in addition to English and Norwegian
+
 ## 2.32.1
 
 ### Patch Changes
