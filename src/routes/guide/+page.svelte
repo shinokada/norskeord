@@ -515,10 +515,7 @@
         <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_contact_q()}</p>
         <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
           {m.guide_faq_contact_a()}
-          <span
-            class="ml-1 inline-block rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
-            >✶ Plus</span
-          >
+          <a href="/contact" class="underline">{m.nav_contact()}</a>
         </p>
       </div>
     </div>
