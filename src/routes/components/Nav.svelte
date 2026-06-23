@@ -167,15 +167,19 @@
     {/if}
 
     <div class="relative">
-      <!-- Mobile: globe icon -->
+      <!-- Mobile: flag emoji for current language, or globe fallback -->
       <button
         type="button"
         aria-label="Switch language"
         class="lang-trigger inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:hidden"
       >
-        <GlobeOutline
-          class="h-5 w-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400"
-        />
+        {#if currentLangEntry}
+          <span class="text-lg leading-none">{currentLangEntry[1].flag}</span>
+        {:else}
+          <GlobeOutline
+            class="h-5 w-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400"
+          />
+        {/if}
       </button>
 
       <!-- Desktop: flag + abbr + chevron -->
