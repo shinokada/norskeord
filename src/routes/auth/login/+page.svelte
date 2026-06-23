@@ -265,6 +265,7 @@
         >
           {m.login_otp_label()}
         </label>
+        <!-- svelte-ignore a11y_autofocus -->
         <input
           id="token"
           name="token"

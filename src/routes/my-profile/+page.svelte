@@ -3,7 +3,6 @@
   import PreferencesSection from './PreferencesSection.svelte';
   import SubscriptionSection from './SubscriptionSection.svelte';
   import DangerZone from './DangerZone.svelte';
-  import ContactSupport from './ContactSupport.svelte';
   import OnboardingBanner from './OnboardingBanner.svelte';
   import * as m from '$lib/paraglide/messages.js';
 
@@ -53,7 +52,6 @@
       billingPortalUrl={data.billingPortalUrl}
       billingInterval={data.billingInterval}
     />
-    <ContactSupport isPlus={data.plan === 'plus'} />
     <DangerZone />
   </div>
 </div>
