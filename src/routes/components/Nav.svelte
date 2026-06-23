@@ -28,7 +28,8 @@
     ChartOutline,
     UserCircleOutline,
     ArrowLeftToBracketOutline,
-    GlobeOutline
+    GlobeOutline,
+    EnvelopeOutline
   } from 'flowbite-svelte-icons';
   import { LANGUAGES, languageEntryForLocale } from '$lib/config';
   import type { Locale } from '$lib/localeStore.svelte';
@@ -313,6 +314,9 @@
       <DropdownItem class="dark:hover:bg-blue-900" href="/resources" onclick={closeMoreDropdown}
         >{m.nav_free_resources()}</DropdownItem
       >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/contact" onclick={closeMoreDropdown}
+        >{m.nav_contact()}</DropdownItem
+      >
     </Dropdown>
   </NavUl>
 </Navbar>
@@ -428,6 +432,13 @@
       <SidebarItem label={m.nav_free_resources()} href="/resources">
         {#snippet icon()}
           <FolderArrowRightOutline
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+          />
+        {/snippet}
+      </SidebarItem>
+      <SidebarItem label={m.nav_contact()} href="/contact">
+        {#snippet icon()}
+          <EnvelopeOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}

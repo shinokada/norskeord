@@ -20,7 +20,8 @@
     { name: () => m.nav_blog(), link: '/blog' },
     { name: () => m.nav_my_stats(), link: '/stats' },
     { name: () => m.nav_plus(), link: '/plus' },
-    { name: () => m.nav_guide(), link: '/guide' }
+    { name: () => m.nav_guide(), link: '/guide' },
+    { name: () => m.footer_contact(), link: '/contact' }
   ];
 </script>
 
