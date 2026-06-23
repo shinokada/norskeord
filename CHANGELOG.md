@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.38.0
+
+### Minor Changes
+
+- - **New Features**
+    - Enhanced mobile language switcher to display the current locale's flag icon when available, with fallback to globe icon for improved visual recognition.
+  - **Documentation**
+    - Added quiz open decisions document outlining key behavioral choices for quiz functionality.
+    - Reorganized questions documentation structure.
+
 ## 2.37.0
 
 ### Minor Changes
