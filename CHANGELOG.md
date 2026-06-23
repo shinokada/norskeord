@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.36.1
+
+### Patch Changes
+
+- - **Documentation**
+    - Added a grammar example to the AI docs to illustrate a corrected usage scenario.
+    - Updated AI docs with new proposals for making a “Contact” feature more discoverable (menu links and updated flow guidance).
+  - **Chores**
+    - Refreshed the grammar exercise dataset for adjective comparisons, expanding comparative and superlative practice with additional patterns, sentence-writing tasks, and updated prompts/hints.
+
 ## 2.36.0
 
 ### Minor Changes
