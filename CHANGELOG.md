@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.37.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a dedicated public Contact page accessible from the Help menu and footer (no login required).
+    - Moved the support contact form from the Profile page to the new Contact page.
+    - Logged-in users see their email pre-filled/read-only; guests can enter their email.
+    - Plus members receive priority support wording; submissions include bot protection (Turnstile + honeypot) and show success/error states.
+  - **Documentation**
+    - Updated the FAQ to direct users to the Contact page.
+  - **Internationalization**
+    - Added/updated Contact-related translations for English, Spanish, Norwegian, and Ukrainian.
+  - **Tests**
+    - Added unit coverage for contact message sending and adjusted test scripts.
+
 ## 2.36.1
 
 ### Patch Changes
