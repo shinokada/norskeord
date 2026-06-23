@@ -48,7 +48,9 @@ async function answerGrammarAndAdvance(page: Page) {
     await next.click();
     // Wait for the UI to leave the reveal state rather than sleeping unconditionally.
     await Promise.race([
-      page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ state: 'visible', timeout: 3000 }),
+      page
+        .getByText(/question \d+ of|spørsmål \d+ av/i)
+        .waitFor({ state: 'visible', timeout: 3000 }),
       page.getByText(/session complete|økt fullført/i).waitFor({ state: 'visible', timeout: 3000 })
     ]).catch(() => {});
   }
