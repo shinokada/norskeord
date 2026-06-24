@@ -1,6 +1,6 @@
 ---
-title: 'Norsken min — Why Norwegian Gets a Definite Article'
-description: '"Norsken" is the definite form of "norsk" used as a noun. When talking about your own or someone else's Norwegian, Norwegians add -en — and the same pattern applies to all languages.'
+title: 'Norsken min — Derfor får norsk bestemt artikkel'
+description: '"Norsken" er bestemt form av "norsk" brukt som substantiv. Når du snakker om ditt eget eller andres norsk, legger man til -en – og det samme mønsteret gjelder for alle språk.'
 slug: norsken
 cefr: A2
 publishedAt: 2026-11-04
@@ -13,14 +13,11 @@ decks:
     category: nouns
     label: A1 Nouns
 ---
-
-> **TL;DR:** **Norsken** is the definite form of **norsk** used as a noun. When you say "my Norwegian" or "her Norwegian," you add **-en** — just as you would for any masculine noun. The same pattern applies to all language names: _engelsken_, _fransken_, _japansken_.
+> **Kort sagt:** **Norsken** er bestemt form av **norsk** brukt som substantiv. Når du sier «norsken min» eller «norsken hennes», legger du til **-en** — akkurat som for alle andre hankjønnsord. Det samme mønsteret gjelder alle språknavn: _engelsken_, _fransken_, _japansken_.
 
 ## Kort forklaring
 
 **Norsk** kan brukes på flere måter — som adjektiv, som språknavn, eller om en person. Når det brukes som substantiv om selve språket og har et eieord (som _min_, _din_, _hennes_), brukes **bestemt form**: **norsken**.
-
-_In English:_ English just says "my Norwegian" — the language name doesn't change. Norwegian adds a definite article ending (**-en**) to the language name when it functions as a noun with a possessive, giving you **norsken min** rather than just _norsk min_.
 
 ---
 

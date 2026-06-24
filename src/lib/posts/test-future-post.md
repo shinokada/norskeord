@@ -1,6 +1,6 @@
 ---
-title: 'Future Test Post'
-description: 'This post should not be visible yet.'
+title: 'Fremtidig testinnlegg'
+description: 'Dette innlegget skal ikke være synlig ennå.'
 slug: test-future-post
 cefr: A2
 publishedAt: 2099-01-01

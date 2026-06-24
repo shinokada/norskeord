@@ -1,14 +1,13 @@
 ---
-title: 'Fortelle vs Snakke vs Tale vs Si — Verbs of Speaking'
-description: 'Norwegian has four common verbs for speaking — and choosing the wrong one sounds unnatural. Fortelle is to tell, snakke is to talk, tale is formal speech, si is to say.'
+title: 'Fortelle vs Snakke vs Tale vs Si — Verb for å snakke'
+description: 'Norsk har fire vanlige verb for å snakke – og velger du feil, høres det unaturlig ut. Fortelle betyr å fortelle noe, snakke er å prate, tale brukes om formell tale, og si betyr å si.'
 slug: fortelle-snakke-tale-si
 cefr: [A2, B1]
 type: guide
 publishedAt: 2026-11-18
 tags: [verbs, vocabulary]
 ---
-
-> **TL;DR:** **Snakke** = to talk / speak (everyday). **Fortelle** = to tell (content-focused). **Tale** = to speak (formal). **Si** = to say (exact words).
+> **Kort sagt:** **Snakke** = to talk / speak (everyday). **Fortelle** = to tell (content-focused). **Tale** = to speak (formal). **Si** = to say (exact words).
 
 ## Kort forklaring
 
@@ -16,111 +15,93 @@ På engelsk kan man bruke "say," "tell," "talk," og "speak" — og norsk har dir
 
 De fire vanligste verbene er:
 
-- **snakke** → to talk / speak — general conversation
-- **fortelle** → to tell — giving information, stories, or news
-- **tale** → to speak — formal or ceremonial speech
-- **si** → to say — quoting exact words
-
-_In English:_ The closest match is the same four-way split — talk, tell, speak, say — and Norwegian uses them in almost the same way.
+- **snakke** → å snakke / tale — vanlig samtale
+- **fortelle** → å fortelle — gi informasjon, historier eller nyheter
+- **tale** → å tale — formell eller høytidelig tale
+- **si** → å si — gjengi nøyaktige ord
 
 ---
 
-## Snakke — to talk / speak (everyday)
+## Snakke — å snakke / tale (hverdagslig)
 
 Det vanligste og mest allsidige verbet. Brukes om samtaler, språk, og kommunikasjon generelt.
 
 **1. Jeg snakker norsk.**
-_I speak Norwegian._
-→ The standard way to say you can speak a language.
+→ Den vanlige måten å si at man kan et språk på.
 
 **2. Kan jeg snakke med deg?**
-_Can I talk with you?_
-→ Asking to have a conversation.
+→ Å be om å få ha en samtale.
 
 **3. De snakker sammen på kjøkkenet.**
-_They're talking together in the kitchen._
-→ Two people having a conversation — the focus is on the act of talking.
+→ To personer som har en samtale — fokus er på selve det å snakke.
 
 **4. Hun snakker veldig fort.**
-_She speaks very quickly._
-→ Describing how someone talks.
+→ Beskriver hvordan noen snakker.
 
-**Merk:** «Snakke» focuses on the conversation itself — who is talking, not what is being said.
+**Merk:** «Snakke» fokuserer på samtalen i seg selv — hvem som snakker, ikke hva som blir sagt.
 
 ---
 
-## Fortelle — to tell (content-focused)
+## Fortelle — å fortelle (innholdsfokusert)
 
 Brukes når man deler **informasjon, historier, nyheter, eller forklaringer** med noen. Fokus er på innholdet — hva som blir sagt.
 
 ### Struktur
 
-**fortelle** + (noen) + **om** noe  
+**fortelle** + (noen) + **om** noe
 **fortelle** + noen + at …
 
 **1. Han fortalte en historie.**
-_He told a story._
-→ Sharing a narrative — the content matters.
+→ Å dele en fortelling — innholdet er det viktige.
 
 **2. Kan du fortelle meg hva som skjedde?**
-_Can you tell me what happened?_
-→ Asking for information or an explanation.
+→ Å be om informasjon eller en forklaring.
 
 **3. Hun fortalte at hun var syk.**
-_She told me she was sick._
-→ Passing on news or a fact.
+→ Å videreformidle en nyhet eller et faktum.
 
 **4. Bestefar liker å fortelle om barndommen sin.**
-_Grandpa likes to talk about his childhood._
-→ **fortelle om** = to tell about something — sharing memories or experiences.
+→ **fortelle om** = å fortelle om noe — dele minner eller opplevelser.
 
 **Test:** Du kan alltid spørre _Hva fortalte de?_ (What did they tell?) — hvis det gir mening, bruk «fortelle».
 
 ---
 
-## Tale — to speak (formal or ceremonial)
+## Tale — å tale (formelt eller høytidelig)
 
 Mer høytidelig og formelt enn «snakke». Brukes i offentlige, politiske, religiøse og litterære sammenhenger.
 
 **1. Kongen talte til folket.**
-_The King spoke to the people._
-→ A formal address — «tale» fits perfectly here.
+→ En formell henvendelse — «tale» passer perfekt her.
 
 **2. Statsministeren holdt en tale.**
-_The Prime Minister gave a speech._
-→ **En tale** (noun) = a speech. Very common.
+→ **En tale** (substantiv) = en tale. Svært vanlig.
 
 **3. Han taler flytende norsk.**
-_He speaks fluent Norwegian._
-→ More formal than «han snakker flytende norsk» — you might see this in writing.
+→ Mer formelt enn «han snakker flytende norsk» — dette ser man gjerne i skriftlig språk.
 
 **4. Tallene taler for seg selv.**
-_The numbers speak for themselves._
-→ A fixed idiomatic expression.
+→ Et fast idiomatisk uttrykk.
 
 **Merk:** I dagligtale bruker nordmenn nesten alltid «snakke». «Tale» høres gammelmodig ut i en vanlig samtale.
 
 ---
 
-## Si — to say (exact words)
+## Si — å si (nøyaktige ord)
 
 Brukes når man gjengir **nøyaktig hva noen sa** — de konkrete ordene, ikke informasjonen.
 
 **1. Han sa: «Jeg er trøtt.»**
-_He said: "I'm tired."_
-→ Direct speech — the exact words.
+→ Direkte tale — de eksakte ordene.
 
 **2. Hva sa du?**
-_What did you say?_
-→ The most common use — asking someone to repeat themselves.
+→ Den vanligste bruken — å be noen gjenta seg.
 
 **3. Hun sa ingenting.**
-_She said nothing._
-→ Said (or didn't say) specific words.
+→ Sa (eller sa ikke) bestemte ord.
 
 **4. Det er lettere sagt enn gjort.**
-_Easier said than done._
-→ A common fixed expression.
+→ Et vanlig fast uttrykk.
 
 ### Si vs Fortelle
 
@@ -137,10 +118,10 @@ Begge er korrekte, men «fortelle» antyder at du deler noe med noen — det er 
 
 | Verb         | Betekning         | Typisk bruk                              |
 | ------------ | ----------------- | ---------------------------------------- |
-| **snakke**   | to talk / speak   | samtale, språk, kommunikasjon generelt   |
-| **fortelle** | to tell           | informasjon, historier, nyheter til noen |
-| **tale**     | to speak (formal) | taler, politikk, religion, faste uttrykk |
-| **si**       | to say            | sitere nøyaktige ord, direkte tale       |
+| **snakke**   | å snakke / tale   | samtale, språk, kommunikasjon generelt   |
+| **fortelle** | å fortelle        | informasjon, historier, nyheter til noen |
+| **tale**     | å tale (formelt)  | taler, politikk, religion, faste uttrykk |
+| **si**       | å si              | sitere nøyaktige ord, direkte tale       |
 
 ---
 
@@ -149,17 +130,17 @@ Begge er korrekte, men «fortelle» antyder at du deler noe med noen — det er 
 ❌ Jeg sa ham om reisen.
 ⭕ Jeg fortalte ham om reisen.
 
-_«Si» does not take **om** + topic. Use **fortelle om** when sharing information about something._
+_«Si» brukes ikke med **om** + tema. Bruk **fortelle om** når du deler informasjon om noe._
 
 ❌ Kan du tale litt saktere?
 ⭕ Kan du snakke litt saktere?
 
-_In everyday speech, «tale» sounds stiff. Use «snakke» when talking to someone directly._
+_I hverdagslig tale høres «tale» stivt ut. Bruk «snakke» når du snakker direkte med noen._
 
 ❌ Hun snakket meg at hun skulle slutte.
 ⭕ Hun fortalte meg at hun skulle slutte.
 
-_Use **fortelle** when passing on a piece of news or information to someone._
+_Bruk **fortelle** når du videreformidler en nyhet eller informasjon til noen._
 
 ---
 

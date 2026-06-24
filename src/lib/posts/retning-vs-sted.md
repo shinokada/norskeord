@@ -1,13 +1,12 @@
 ---
-title: 'Direction vs Location — Hjem/Hjemme, Ut/Ute, Inn/Inne'
-description: 'Norwegian pairs words for movement and location: hjem vs hjemme, ut vs ute, inn vs inne, bort vs borte, frem vs fremme. The pattern is consistent once you see it.'
+title: 'Retning vs. sted — hjem/hjemme, ut/ute, inn/inne'
+description: 'Norsk skiller mellom bevegelse og sted med ordpar som hjem/hjemme, ut/ute og inn/inne. Når du først ser mønsteret, er det lett å huske.'
 slug: retning-vs-sted
 cefr: A2
 publishedAt: 2026-07-01
 tags: [adverbs, grammar, word-order]
 ---
-
-> **TL;DR:** Norwegian uses different words depending on whether you are **moving** somewhere or **already there**. The location form always adds **-e**.
+> **Kort sagt:** Norsk bruker forskjellige ord avhengig av om du **beveger deg** et sted eller **allerede er der**. Stedsformen legger alltid til **-e**.
 
 ## Kort forklaring
 
@@ -18,13 +17,11 @@ Dette gjelder en gruppe svært vanlige ord:
 - **bevegelse** → kortform: _hjem, ut, inn, bort, frem_
 - **tilstand** → -e-form: _hjemme, ute, inne, borte, fremme_
 
-_In English:_ Norwegian distinguishes between moving toward a place and being at a place. The movement form is shorter; the location form adds **-e**. This is one of the most consistent and frequently used patterns in everyday spoken Norwegian.
-
 ---
 
 ## Grunnmønsteret
 
-| Bevegelse (movement) | Tilstand (location) |
+| Bevegelse (bevegelse) | Tilstand (sted) |
 | -------------------- | ------------------- |
 | **hjem**             | **hjemme**          |
 | **ut**               | **ute**             |
@@ -39,24 +36,19 @@ _In English:_ Norwegian distinguishes between moving toward a place and being at
 ## Eksempler
 
 **1. Jeg går hjem. / Jeg er hjemme.**
-_I'm going home. / I'm at home._
-→ Hjem = heading there. Hjemme = already there.
+→ Hjem = på vei dit. Hjemme = allerede der.
 
 **2. Barna løper ut. / Barna er ute.**
-_The children run outside. / The children are outside._
-→ Ut = movement through the door. Ute = they are outside now.
+→ Ut = bevegelse gjennom døren. Ute = de er ute nå.
 
 **3. Kom inn! / Hun er inne.**
-_Come in! / She is inside._
-→ Inn = direction of movement. Inne = current location.
+→ Inn = retningen på bevegelsen. Inne = nåværende sted.
 
 **4. Han gikk bort. / Han er borte i dag.**
-_He walked away. / He is away today._
-→ Bort = moving away. Borte = absent, not here.
+→ Bort = beveger seg vekk. Borte = fraværende, ikke her.
 
 **5. Vi går frem til scenen. / Vi er fremme.**
-_We walk forward to the stage. / We have arrived._
-→ Frem = moving forward or toward a destination. Fremme = at the destination.
+→ Frem = beveger seg fremover eller mot et mål. Fremme = ved målet.
 
 ---
 
@@ -64,17 +56,17 @@ _We walk forward to the stage. / We have arrived._
 
 Dette paret er særlig nyttig på reise:
 
-> **Vi drar hjem.** → We are leaving for home. _(movement)_
-> **Vi er hjemme.** → We are at home. _(location)_
+> **Vi drar hjem.** → Vi er på vei hjem. _(bevegelse)_
+> **Vi er hjemme.** → Vi er hjemme. _(tilstand)_
 
-> **Vi kjører frem til hotellet.** → We drive to the hotel. _(movement)_
-> **Vi er fremme på hotellet.** → We have arrived at the hotel. _(location)_
+> **Vi kjører frem til hotellet.** → Vi kjører til hotellet. _(bevegelse)_
+> **Vi er fremme på hotellet.** → Vi har ankommet hotellet. _(tilstand)_
 
 ---
 
 ## Sammenligningstabell
 
-| Bevegelse | Tilstand | Engelsk (movement) | Engelsk (location)     |
+| Bevegelse | Tilstand | Engelsk (bevegelse) | Engelsk (sted)     |
 | --------- | -------- | ------------------ | ---------------------- |
 | hjem      | hjemme   | (going) home       | at home                |
 | ut        | ute      | out / outside      | outside / out there    |
@@ -89,24 +81,24 @@ Dette paret er særlig nyttig på reise:
 ❌ Jeg er hjem nå.
 ⭕ Jeg er hjemme nå.
 
-_When describing your current location, the -e form is required._
+_Når du beskriver hvor du befinner deg, må du bruke -e-formen._
 
 ❌ Vi er fremme til Oslo klokka seks.
 ⭕ Vi er fremme i Oslo klokka seks.
 
-_Fremme takes i, ikke til, when specifying the destination._
+_Fremme tar i, ikke til, når du angir destinasjonen._
 
 ❌ Barna er uten nå.
 ⭕ Barna er ute nå.
 
-_The location form is ute, not uten — uten means "without."_
+_Stedsformen er ute, ikke uten — uten betyr "without."_
 
 ---
 
 ## Husk dette
 
-- **Bevegelse** (going somewhere) → kortform: _hjem, ut, inn, bort, frem_
-- **Tilstand** (being somewhere) → -e-form: _hjemme, ute, inne, borte, fremme_
+- **Bevegelse** (på vei et sted) → kortform: _hjem, ut, inn, bort, frem_
+- **Tilstand** (å være et sted) → -e-form: _hjemme, ute, inne, borte, fremme_
 - Kan du si «jeg er \_\_\_»? → bruk **-e-formen**
 - Mønsteret er fast og konsekvent — lær parene sammen
 

@@ -1,6 +1,6 @@
 ---
 title: 'Klare vs Orke vs Greie'
-description: "Use orke when you're tired. Use klare when something is too hard. Use greie when you just got there."
+description: 'Bruk orke når du er sliten. Bruk klare når noe er for vanskelig. Bruk greie når du akkurat klarer det.'
 slug: klare-vs-orke-vs-greie
 cefr: B1
 publishedAt: 2026-05-21
@@ -16,7 +16,6 @@ decks:
     category: hobbies
     label: A2 Hobbies
 ---
-
 ## Kort forklaring
 
 **Klare**, **orke** og **greie** kan alle oversettes med "to manage" på engelsk, men de betyr litt forskjellige ting.
@@ -25,27 +24,21 @@ decks:
 - **orke** → å ha energi, krefter eller lyst til noe
 - **greie** → å få til noe / mestre noe (ligner på klare, men litt mer muntlig)
 
-_In English:_ **Klare** is about ability or success. **Orke** is about having the energy or willingness. **Greie** is close to klare, but slightly more informal and common in spoken Norwegian.
-
 ---
 
 ## Eksempler
 
 **1. Jeg klarte prøven.**
-_I passed / managed the test._
-→ Focus on achieving a result.
+→ Fokus på å oppnå et resultat.
 
 **2. Jeg orker ikke å gå ut i dag.**
-_I don't have the energy to go out today._
-→ About physical or mental energy — not inability.
+→ Handler om fysisk eller mental energi — ikke manglende evne.
 
 **3. Jeg greide å finne huset.**
-_I managed to find the house._
-→ Similar to klare, but with a slight sense of effort involved.
+→ Ligner på klare, men med en svak følelse av at noe krevde litt innsats.
 
 **4. Jeg kan gjøre det, men jeg orker ikke.**
-_I'm able to do it, but I don't feel up to it._
-→ The clearest illustration: you can **klare** something but still not **orke** it.
+→ Den tydeligste illustrasjonen: du kan **klare** noe, men likevel ikke **orke** det.
 
 ---
 
@@ -64,14 +57,14 @@ _I'm able to do it, but I don't feel up to it._
 ❌ Jeg orker ikke å løpe 10 km. (når du mener det er for vanskelig)
 ⭕ Jeg klarer ikke å løpe 10 km.
 
-_Orker ikke means you lack energy or motivation — not that something is physically impossible. Use klarer ikke for ability._
+_Orker ikke betyr at du mangler energi eller motivasjon — ikke at noe er fysisk umulig. Bruk klarer ikke når du snakker om evne._
 
 ---
 
 ## Husk dette
 
-- **klare** → vanligst og mest nøytralt — ability or success
-- **orke** → energi eller lyst — energy or willingness
+- **klare** → vanligst og mest nøytralt — evne eller suksess
+- **orke** → energi eller lyst — energi eller vilje
 - **greie** → ligner klare, men litt mer muntlig
 - Du kan **klare** noe, men likevel ikke **orke** det
 

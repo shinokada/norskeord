@@ -1,6 +1,6 @@
 ---
-title: 'Leddsetninger — How Subordinate Clauses Work'
-description: 'A subordinate clause cannot stand alone — it plays a role inside a larger sentence. Recognising one is the key to understanding Norwegian word order and the placement of "ikke."'
+title: 'Leddsetninger — slik fungerer de'
+description: 'En leddsetning kan ikke stå alene – den fyller en rolle inne i en større setning. Når du kjenner igjen leddsetninger, forstår du også norsk setningsrekkefølge og plasseringen av «ikke».'
 slug: leddsetninger
 cefr: B1
 publishedAt: 2026-10-07
@@ -13,14 +13,11 @@ decks:
     category: grammar
     label: A2 Grammar
 ---
-
-> **TL;DR:** A **leddsetning** (subordinate clause) cannot stand alone as a sentence — it plays a role inside a larger one. The clearest signal in Norwegian is word order: **ikke** and other sentence adverbs move in front of the verb in a subordinate clause.
+> **Kort sagt:** En **leddsetning** kan ikke stå alene som en setning — den spiller en rolle inne i en større en. Det tydeligste signalet på norsk er ordstillingen: **ikke** og andre setningsadverb flyttes foran verbet i en leddsetning.
 
 ## Kort forklaring
 
-En **leddsetning** er en klausul som ikke kan stå alene som en fullstendig setning. Den er avhengig av en **helsetning** (main clause) og spiller en bestemt grammatisk rolle — som objekt, årsak, betingelse, beskrivelse, eller indirekte spørsmål.
-
-_In English:_ Subordinate clauses work similarly in English — "because he didn't come," "if it rains," "that she knows." The key difference in Norwegian is that the word order inside the subordinate clause follows a strict rule that doesn't exist in English.
+En **leddsetning** er en klausul som ikke kan stå alene som en fullstendig setning. Den er avhengig av en **helsetning** og spiller en bestemt grammatisk rolle — som objekt, årsak, betingelse, beskrivelse, eller indirekte spørsmål.
 
 ---
 
