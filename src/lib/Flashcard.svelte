@@ -11,7 +11,7 @@
   let { front, back, showCardBack, pFront, pBack }: Props = $props();
 
   const frontDivCls = 'absolute inset-0 bg-custom-red text-white flex justify-center items-center';
-  const pClass = 'text-3xl sm:text-5xl p-4';
+  const pClass = 'text-3xl sm:text-5xl p-4 break-words [overflow-wrap:anywhere]';
   let frontPCls = $derived(twMerge(pClass, pFront));
   let backPCls = $derived(twMerge(pClass, pBack));
 

@@ -23,13 +23,13 @@
     FolderArrowRightOutline,
     ArrowRightOutline,
     BookOpenOutline,
-    UserSolid,
     NewspaperOutline,
     ChartOutline,
     UserCircleOutline,
     ArrowLeftToBracketOutline,
     GlobeOutline,
-    EnvelopeOutline
+    EnvelopeOutline,
+    QuestionCircleOutline
   } from 'flowbite-svelte-icons';
   import { LANGUAGES, languageEntryForLocale } from '$lib/config';
   import type { Locale } from '$lib/localeStore.svelte';
@@ -48,7 +48,6 @@
   const displayName = $derived(page.data.displayName as string | null);
   const isAdmin = $derived(page.data.isAdmin as boolean);
   let isDemoOpen = $derived(sidebarUi.isOpen);
-  const spanClass = 'flex-1 ms-3 whitespace-nowrap';
   const sidebarActiveClass =
     'flex items-center p-2 text-base font-medium rounded-lg text-primary-400 bg-primary-500/15 dark:text-primary-400 dark:bg-primary-400/10 transition-colors duration-200';
   const sidebarNonActiveClass =
@@ -143,7 +142,7 @@
     </span>
   </NavBrand>
 
-  <div class="flex items-center gap-2 md:order-2">
+  <div class="flex items-center gap-1 md:order-2">
     <!-- Search button (Plus only) -->
     {#if effectiveIsPlus}
       <button
@@ -186,7 +185,7 @@
       <button
         type="button"
         aria-label="Switch language"
-        class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm min-h-[36px] items-center font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {currentLangEntry?.[1].flag}
         {currentLangEntry?.[1].abbr}
@@ -214,13 +213,13 @@
     {#if !effectiveUser}
       <a
         href="/plus?checkout=1"
-        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 md:inline-block"
+        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-sm min-h-[36px] font-semibold text-white hover:bg-indigo-700 md:inline-block"
       >
         {m.nav_plus_badge()}
       </a>
       <a
         href="/auth/login"
-        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 md:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm min-h-[36px] font-semibold text-gray-700 hover:bg-gray-100 md:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {m.nav_log_in()}
       </a>
@@ -247,7 +246,9 @@
             </span>
           {/if}
           <span
-            class="block text-xs text-gray-500 dark:text-gray-300 {displayName ? 'mt-0.5' : ''}"
+            class="block text-xs text-gray-500 dark:text-gray-300 truncate {displayName
+              ? 'mt-0.5'
+              : ''}"
           >
             {effectiveUser.email}
           </span>
@@ -315,6 +316,9 @@
       <DropdownItem class="dark:hover:bg-blue-900" href="/guide" onclick={closeMoreDropdown}
         >{m.nav_guide()}</DropdownItem
       >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/faq" onclick={closeMoreDropdown}
+        >{m.nav_faq()}</DropdownItem
+      >
       <DropdownItem class="dark:hover:bg-blue-900" href="/resources" onclick={closeMoreDropdown}
         >{m.nav_free_resources()}</DropdownItem
       >
@@ -340,9 +344,10 @@
     position="absolute"
     class="z-50 h-screen md:hidden right-0 left-auto pt-6 w-full dark:bg-indigo-950"
   >
+    <!-- Account (top) -->
     <SidebarGroup>
       {#if effectiveUser}
-        <SidebarItem label={m.nav_my_progress()} href="/stats">
+        <SidebarItem label={m.nav_my_stats()} href="/stats">
           {#snippet icon()}
             <ChartOutline
               class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -364,64 +369,74 @@
             </div>
           {/snippet}
         </SidebarItem>
+        <SidebarItem label={m.nav_contact()} href="/contact">
+          {#snippet icon()}
+            <EnvelopeOutline
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            />
+          {/snippet}
+        </SidebarItem>
       {:else}
         <SidebarItem label={m.nav_log_in()} href="/auth/login">
           {#snippet icon()}
-            <UserSolid
+            <ArrowLeftToBracketOutline
               class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
             />
           {/snippet}
         </SidebarItem>
       {/if}
     </SidebarGroup>
+
+    <!-- Level -->
     <SidebarGroup border>
-      <SidebarItem label="Nivå A1" href="/learn/a1">
+      {#each levels as level (level)}
+        <SidebarItem label={level} href="/learn/{level.toLowerCase()}">
+          {#snippet icon()}
+            <ArrowRightOutline
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            />
+          {/snippet}
+        </SidebarItem>
+      {/each}
+    </SidebarGroup>
+
+    <!-- Learn -->
+    <SidebarGroup border>
+      <SidebarItem label={m.nav_norskproven()} href="/norskproven">
         {#snippet icon()}
-          <ArrowRightOutline
+          <NewspaperOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="Nivå A2" href="/learn/a2">
+      <SidebarItem label={m.nav_grammar()} href="/grammar">
         {#snippet icon()}
-          <ArrowRightOutline
+          <BookOpenOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="Nivå B1" href="/learn/b1">
+      <SidebarItem label={m.nav_quiz()} href="/quiz">
         {#snippet icon()}
-          <ArrowRightOutline
+          <ChartOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label="Nivå B2" href="/learn/b2">
+      <SidebarItem label={m.nav_blog()} href="/blog">
         {#snippet icon()}
-          <ArrowRightOutline
-            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-          />
-        {/snippet}
-      </SidebarItem>
-      <SidebarItem label="Nivå C" href="/learn/c">
-        {#snippet icon()}
-          <ArrowRightOutline
+          <NewspaperOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
     </SidebarGroup>
+
+    <!-- Help -->
     <SidebarGroup border>
-      <SidebarItem label={m.nav_plus()} {spanClass} href="/plus">
+      <SidebarItem label={m.nav_plus()} href="/plus">
         {#snippet icon()}
           <PlusOutline
-            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-          />
-        {/snippet}
-      </SidebarItem>
-      <SidebarItem label={m.nav_blog()} {spanClass} href="/blog">
-        {#snippet icon()}
-          <NewspaperOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
@@ -433,21 +448,23 @@
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label={m.nav_free_resources()} href="/resources">
+      <SidebarItem label={m.nav_faq()} href="/faq">
+        {#snippet icon()}
+          <QuestionCircleOutline
+            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+          />
+        {/snippet}
+      </SidebarItem>
+      <SidebarItem label={m.nav_resources()} href="/resources">
         {#snippet icon()}
           <FolderArrowRightOutline
             class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
           />
         {/snippet}
       </SidebarItem>
-      <SidebarItem label={m.nav_contact()} href="/contact">
-        {#snippet icon()}
-          <EnvelopeOutline
-            class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-          />
-        {/snippet}
-      </SidebarItem>
     </SidebarGroup>
+
+    <!-- Log out (bottom, logged-in only) -->
     {#if effectiveUser}
       <SidebarGroup border>
         <SidebarItem label={m.nav_log_out()} onclick={logout} class="cursor-pointer">

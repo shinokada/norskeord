@@ -4,6 +4,8 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
+No long paragraphs, academic-style explanations, and walls of text. Users on a learning app want quick, scannable answers, not essays.
+
 You should be able to use Edit_File. Use Edit_File when you are modifying a large file.
 Please do not use Write_file, it takes time. Instead can you write a script to update file(s) rather than rewrite whole file(s)? I can run the script locally and in that way, the session limit won't be over-used.
 
@@ -11,6 +13,24 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+- decide vocab format for substantiv, verb, adjektiv
+  One way which is the simplest is to ignore any bøying and particles since this is not a dictionary. You can see them in examples.
+  Another way is show only for substantiv en/et
+  substantiv
+  a) et hus
+  b) hus(et)
+  c) hus(-et)
+  d) hus (dictionary form)
+  verb
+  a) få/fikk/fått
+  b) få (dictionary form)
+  c) å få
+  adjektiv
+  a) dictionary form
+
+- I have a bunch of blog posts in src/lib/posts directory. My project UI uses i18n with four languages at the moment and it will increase more in future. Many of posts are written Norwegian and English. I think there are two options for me. 1. make all the blog posts i18n, but files in messages directory will become larger. 2. Write it purely in Norwegian, as simple Norwegian as possible. 3. Only TL;DR has i18n, otherwise only Norwegian. So remove whole hard-coded English.
+  What do you think?
+- supabase, Table Editor, profiles has study_goals. I think I should remove this column.
 - Mobile check
 - How about Start free button rather than login?
 - Grammtikk section for B2/C1
