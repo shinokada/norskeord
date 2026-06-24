@@ -1,6 +1,6 @@
 ---
-title: 'Lenge vs Lang — Duration or Length?'
-description: '"Lenge" describes how long an action lasts. "Lang" describes a noun. They are not interchangeable — one modifies verbs, the other modifies nouns.'
+title: 'Lenge vs lang — varighet eller lengde?'
+description: '«Lenge» beskriver hvor lenge en handling varer, mens «lang» beskriver et substantiv. De kan ikke brukes om hverandre — det ene brukes med verb, det andre med substantiv.'
 slug: lenge-vs-lang
 cefr: A2
 publishedAt: 2026-08-07
@@ -13,43 +13,36 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
-
-> **TL;DR:** **Lenge** = how long an action lasts (adverb — modifies a verb). **Lang** = how long something is (adjective — modifies a noun). They cannot be swapped.
+> **Kort sagt:** **Lenge** = hvor lenge en handling varer (adverb — modifiserer et verb). **Lang** = hvor lang noe er (adjektiv — modifiserer et substantiv). De kan ikke byttes ut med hverandre.
 
 ## Kort forklaring
 
 Norsk bruker to forskjellige ord der engelsk bruker "long":
 
-- **lenge** → adverb — modifies a verb; describes duration
-- **lang / langt / lange** → adjective — modifies a noun; describes physical length or a long period
-
-_In English:_ "I waited **long**" and "a **long** road" both use "long." Norwegian keeps these strictly separate: **lenge** for actions, **lang** for things.
+- **lenge** → adverb — modifiserer et verb; beskriver varighet
+- **lang / langt / lange** → adjektiv — modifiserer et substantiv; beskriver fysisk lengde eller en lang periode
 
 ---
 
-## Lenge — how long an action lasts
+## Lenge — hvor lenge en handling varer
 
 **Lenge** er et adverb. Det beskriver verbet — altså selve handlingen. Det bøyes ikke.
 
 **1. Jeg ventet lenge.**
-_I waited for a long time._
-→ **Lenge** modifies **ventet** — the waiting lasted a long time.
+→ **Lenge** modifiserer **ventet** — ventingen varte lenge.
 
 **2. Hun bodde der lenge.**
-_She lived there for a long time._
-→ **Lenge** modifies **bodde**.
+→ **Lenge** modifiserer **bodde**.
 
 **3. Det varer lenge.**
-_It lasts a long time._
-→ Duration of an event or process.
+→ Varighet av en hendelse eller prosess.
 
 **4. Jeg har lært norsk lenge.**
-_I have been learning Norwegian for a long time._
-→ Ongoing activity with long duration. Compare: _Jeg har lært norsk i to år_ = exact duration.
+→ Pågående aktivitet med lang varighet. Sammenlign: _Jeg har lært norsk i to år_ = eksakt varighet.
 
 ---
 
-## Lang — how long something is
+## Lang — hvor lang noe er
 
 **Lang** er et adjektiv. Det beskriver et substantiv og bøyes etter kjønn og tall.
 
@@ -60,20 +53,16 @@ _I have been learning Norwegian for a long time._
 | **lange** | plural / definite | mange **lange** dager |
 
 **1. En lang vei.**
-_A long road._
-→ Physical length — **lang** describes the noun **vei** (en-ord).
+→ Fysisk lengde — **lang** beskriver substantivet **vei** (en-ord).
 
 **2. Et langt møte.**
-_A long meeting._
-→ **langt** because **møte** is an et-ord.
+→ **langt** fordi **møte** er et et-ord.
 
 **3. Mange lange ferier.**
-_Many long holidays._
-→ Plural form.
+→ Flertallsform.
 
 **4. Det var en lang dag.**
-_It was a long day._
-→ **Lang** describes the noun — a day that felt heavy or lasted a long time.
+→ **Lang** beskriver substantivet — en dag som føltes tung eller varte lenge.
 
 ---
 
@@ -82,8 +71,8 @@ _It was a long day._
 - **lang → ting (substantiv)**
 - **lenge → handling (verb)**
 
-**Det var en lang dag.** → describes the _day_ (noun)
-**Jeg jobbet lenge.** → describes the _working_ (verb)
+**Det var en lang dag.** → beskriver _dagen_ (substantiv)
+**Jeg jobbet lenge.** → beskriver _jobbingen_ (verb)
 
 ---
 
@@ -103,12 +92,10 @@ _It was a long day._
 **Så lenge** har to betydninger avhengig av kontekst:
 
 **1. Jeg blir her så lenge du vil.**
-_I'll stay here as long as you want._
 → **Så lenge** = as long as — en betingelse.
 
 **2. Jeg har ventet så lenge.**
-_I have waited so long._
-→ **Så lenge** = for such a long time — forsterket varighet.
+→ **Så lenge** = så lenge som — forsterket varighet.
 
 ---
 
@@ -120,10 +107,8 @@ _I have waited so long._
 - _I lived there longer. / She waited the longest._
 
 **Jeg bodde der lenger enn han.**
-_I lived there longer than him._
 
 **Hun ventet lengst.**
-_She waited the longest._
 
 ---
 
@@ -132,20 +117,20 @@ _She waited the longest._
 ❌ Jeg jobbet lang.
 ⭕ Jeg jobbet **lenge**.
 
-_**Lang** cannot modify a verb — use **lenge** for duration._
+_**Lang** kan ikke modifisere et verb — bruk **lenge** for varighet._
 
 ❌ En lenge vei.
 ⭕ En **lang** vei.
 
-_**Lenge** cannot modify a noun — use **lang**._
+_**Lenge** kan ikke modifisere et substantiv — bruk **lang**._
 
 ---
 
 ## Husk dette
 
-- **lenge** → duration of an action — modifies verbs, never changes form
-- **lang / langt / lange** → length or duration of a thing — modifies nouns, agrees in gender and number
-- Quick test: can you replace the word with "for a long time"? → **lenge**. With "lengthy"? → **lang**
+- **lenge** → varighet av en handling — modifiserer verb, bøyes ikke
+- **lang / langt / lange** → lengde eller varighet ved en ting — modifiserer substantiv, bøyes etter kjønn og tall
+- Rask test: kan du erstatte ordet med "for a long time"? → **lenge**. Med "lengthy"? → **lang**
 
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Fort vs Raskt — Quickly, Fast, or Soon?'
-description: '"Fort" and "raskt" both mean quickly, but fort is more spoken and also means "soon." "Rask" is the adjective form. Knowing the difference keeps your Norwegian natural.'
+title: 'Fort vs Raskt — raskt, fort eller snart?'
+description: 'fort og raskt betyr begge raskt, men fort er mer muntlig og kan også bety snart. Å kjenne forskjellen gjør norsken din mer naturlig.'
 slug: fort-vs-raskt
 cefr: A2
 publishedAt: 2026-08-28
@@ -13,74 +13,63 @@ decks:
     category: adverbs
     label: A1 Adverbs
 ---
-
-> **TL;DR:** **Fort** and **raskt** both mean "quickly," but **fort** is more common in everyday speech and also means "soon." **Rask** is the adjective form — used to describe nouns. **Fort** is almost never used as an adjective.
+> **Kort sagt:** **Fort** og **raskt** betyr begge "quickly," men **fort** er vanligere i hverdagstale og betyr også "soon." **Rask** er adjektivformen — brukes til å beskrive substantiver. **Fort** brukes nesten aldri som adjektiv.
 
 ## Kort forklaring
 
 **Fort** og **raskt** er begge adverb som betyr "quickly / fast," men de brukes litt forskjellig:
 
-- **fort** → more common in spoken Norwegian; also means "soon"
-- **raskt** → more neutral; slightly more formal or written
-- **rask** → the adjective form — describes nouns, not verbs
-
-_In English:_ Both translate as "quickly" or "fast," but **fort** sounds more natural in everyday speech, while **raskt** fits better in formal or written contexts.
+- **fort** → vanligere i dagligtale; betyr også "snart"
+- **raskt** → mer nøytralt; litt mer formelt eller skriftlig
+- **rask** → adjektivformen — beskriver substantiver, ikke verb
 
 ---
 
-## Fort — quick, fast (everyday speech)
+## Fort — raskt, fort (hverdagstale)
 
 **Fort** er det vanligste valget i dagligtale. Det høres naturlig og uformelt ut.
 
 **1. Han løper fort.**
-_He runs fast._
-→ Describing the speed of an action — the most typical use.
+→ Beskriver hastigheten på en handling — den mest typiske bruken.
 
 **2. Kan du snakke litt fortere?**
-_Can you speak a little faster?_
-→ Comparative: **fort → fortere → fortest**.
+→ Komparativ: **fort → fortere → fortest**.
 
 **3. Det gikk fort!**
-_That went quickly!_
-→ Something happened faster than expected — very common in speech.
+→ Noe skjedde raskere enn forventet — svært vanlig i dagligtale.
 
 ---
 
-## Fort = soon
+## Fort = snart
 
 **Fort** har en ekstra betydning som **raskt** ikke har: det kan bety **snart**.
 
 **1. Vi sees fort.**
-_See you soon._
-→ Not "we'll see each other quickly" — **fort** here means "soon / before long."
+→ Ikke «vi ses raskt» — **fort** betyr her "snart / om ikke lenge."
 
 **2. Han kommer fort tilbake.**
-_He'll be back soon._
-→ Again — time, not speed. A common source of confusion for learners.
+→ Igjen — tid, ikke hastighet. En vanlig kilde til forvirring for innlærere.
 
-The meaning is usually clear from context, but worth learning as a separate use.
+Betydningen er som regel klar ut fra sammenhengen, men det er verdt å lære dette som en separat bruk.
 
 ---
 
-## Raskt — quickly (neutral / formal)
+## Raskt — hurtig (nøytralt / formelt)
 
 **Raskt** betyr det samme som **fort** i de fleste setninger, men høres litt mer nøytralt og saklig ut — og er vanligere i skriftlig norsk.
 
 **1. Hun svarte raskt på e-posten.**
-_She replied to the email quickly._
-→ Natural in writing — more formal than **fort**.
+→ Naturlig i skrift — mer formelt enn **fort**.
 
 **2. Situasjonen utviklet seg raskt.**
-_The situation developed quickly._
-→ A news or report register — **raskt** fits better here than **fort**.
+→ Et nyhets- eller rapportregister — **raskt** passer bedre her enn **fort**.
 
 **3. Vi må handle raskt.**
-_We need to act quickly._
-→ A call to action — **raskt** sounds more serious and deliberate.
+→ En oppfordring til handling — **raskt** låter mer alvorlig og bevisst.
 
 ---
 
-## Rask — the adjective
+## Rask — adjektivet
 
 **Rask** er adjektivformen og brukes om substantiver — ikke om verb. Det bøyes som vanlige adjektiv.
 
@@ -99,11 +88,11 @@ _We need to act quickly._
 
 ## Sammenligningstabell
 
-| Ord       | Type     | Betydning      | Typisk bruk                |
-| --------- | -------- | -------------- | -------------------------- |
-| **fort**  | adverb   | quickly / soon | everyday speech, informal  |
-| **raskt** | adverb   | quickly        | neutral / written / formal |
-| **rask**  | adjektiv | quick / fast   | describes nouns            |
+| Ord       | Type     | Betydning      | Typisk bruk                        |
+| --------- | -------- | -------------- | ---------------------------------- |
+| **fort**  | adverb   | quickly / soon | hverdagstale, uformelt             |
+| **raskt** | adverb   | quickly        | nøytralt / skriftlig / formelt     |
+| **rask**  | adjektiv | quick / fast   | beskriver substantiver             |
 
 ---
 
@@ -112,22 +101,22 @@ _We need to act quickly._
 ❌ en fort løsning
 ⭕ en **rask** løsning
 
-_**Fort** is an adverb — use **rask** to describe a noun._
+_**Fort** er et adverb — bruk **rask** til å beskrive et substantiv._
 
-❌ Vi sees raskt! (meaning "see you soon")
+❌ Vi sees raskt! (i betydningen «vi ses snart»)
 ⭕ Vi sees **fort**!
 
-_Only **fort** carries the meaning of "soon" — **raskt** does not._
+_Bare **fort** kan bety "snart" — **raskt** kan ikke det._
 
 ---
 
 ## Husk dette
 
-- **fort** → quickly (informal / spoken) + soon
-- **raskt** → quickly (neutral / written)
-- **rask** → adjective — quick / fast — describes nouns
-- In everyday speech, **fort** is almost always the natural choice
-- Only **fort** means "soon" — **raskt** never does
+- **fort** → raskt (uformelt / muntlig) + snart
+- **raskt** → raskt (nøytralt / skriftlig)
+- **rask** → adjektiv — rask / hurtig — beskriver substantiver
+- I hverdagstale er **fort** nesten alltid det naturlige valget
+- Bare **fort** betyr "snart" — **raskt** gjør det aldri
 
 ---
 

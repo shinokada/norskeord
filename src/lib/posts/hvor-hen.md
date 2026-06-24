@@ -1,6 +1,6 @@
 ---
-title: 'Hvor hen — Where are you going?'
-description: '"Hen" adds a directional nuance to "hvor" — common in spoken Norwegian. It is optional but sounds natural when asking where someone is headed.'
+title: 'Hvor hen — Hvor skal du?'
+description: '«Hen» gir en retningsnyanse til «hvor» og er vanlig i muntlig norsk. Det er valgfritt, men høres naturlig ut når du spør hvor noen er på vei.'
 slug: hvor-hen
 cefr: B1
 publishedAt: 2026-09-23
@@ -13,8 +13,7 @@ decks:
     category: phrases
     label: A2 Phrases
 ---
-
-> **TL;DR:** **Hen** is added after **hvor** in spoken Norwegian to add a directional or locational nuance — "where to" or "where at." It is optional and mostly informal, but very common and natural in everyday speech.
+> **Kort sagt:** **Hen** legges til etter **hvor** i muntlig norsk for å tilføye en retnings- eller plasseringsnuanse — «where to» eller «where at». Det er valgfritt og mest uformelt, men svært vanlig og naturlig i dagligtale.
 
 ## Kort forklaring
 
@@ -22,27 +21,21 @@ decks:
 
 Det er ikke grammatisk nødvendig, og setningen betyr det samme uten det. Men i muntlig norsk høres det naturlig og idiomatisk ut.
 
-_In English:_ Think of **hen** as the equivalent of "to" or "at" in casual English phrases like "Where are you going to?" or "Where are you at?" — optional, slightly emphatic, and typical of relaxed speech.
-
 ---
 
 ## Eksempler
 
 **1. Hvor skal du hen?**
-_Where are you going?_
-→ The most common use — asking where someone is headed. Very natural in spoken Norwegian.
+→ Den vanligste bruken — man spør hvor noen er på vei. Svært naturlig i muntlig norsk.
 
 **2. Hvor er du hen?**
-_Where are you? / Where are you at?_
-→ Asking about location, often by phone or text.
+→ Man spør om hvor noen befinner seg, ofte over telefon eller tekstmelding.
 
 **3. Hun vet ikke hvor jeg er hen.**
-_She doesn't know where I am._
-→ Here **hen** appears in an indirect question — equally optional, equally natural.
+→ Her opptrer **hen** i et indirekte spørsmål — like valgfritt og like naturlig.
 
 **4. Hvor skal dere hen i sommer?**
-_Where are you going this summer?_
-→ Common in casual conversation.
+→ Vanlig i uformell samtale.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Ennå vs Enda — What’s the Difference?'
-description: 'Both ennå and enda can mean still or yet, but only enda means even or even more. Here’s when to use each one.'
+title: 'Ennå vs enda — hva er forskjellen?'
+description: 'Både ennå og enda kan bety \'still\' eller \'yet\', men bare enda betyr \'even\' eller \'even more\'. Her forklarer vi når du bruker hvilken.'
 slug: enna-vs-enda
 cefr: B1
 publishedAt: 2026-06-11

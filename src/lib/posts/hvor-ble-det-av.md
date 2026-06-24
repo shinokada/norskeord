@@ -1,13 +1,12 @@
 ---
-title: 'Hvor ble det av …? — The Expression That Means "Where Did It Go?"'
-description: '"Bli av" is a fixed Norwegian expression. It does not mean "become of" literally — it asks where something disappeared to.'
+title: 'Hvor ble det av …? — Uttrykket som betyr «Hvor ble det av det?»'
+description: '"Bli av" er et fast norsk uttrykk. Det betyr ikke "bli av" bokstavelig — det spør om hvor noe ble av.'
 slug: hvor-ble-det-av
 cefr: B1
 publishedAt: 2026-06-17
 tags: [expressions, idioms, grammar]
 ---
-
-> **TL;DR:** _Bli av_ is a fixed expression meaning "what happened to / where did X go." It is not translated word for word.
+> **Kort sagt:** _Bli av_ er et fast uttrykk som betyr "hva skjedde med / hvor ble det av X." Det oversettes ikke ord for ord.
 
 ## Kort forklaring
 
@@ -18,38 +17,32 @@ Det brukes til å spørre om:
 - **hva som skjedde med noen/noe**
 - **hvor noen/noe forsvant**
 
-_In English:_ **Bli av** is equivalent to "what happened to" or "where did … go." It is a fixed phrase and cannot be translated word for word.
-
 ---
 
 ## Eksempler
 
 **1. Hva har blitt av ham?**
-_What happened to him? / Where has he gone?_
-→ Asking about a person who has disappeared or drifted away.
+→ Spør om en person som har forsvunnet eller mistet kontakten.
 
 **2. Hvor ble det av nøklene?**
-_Where did the keys go?_
-→ Asking about something that cannot be found.
+→ Spør om noe man ikke finner.
 
 **3. Hun vet ikke hvor det har blitt av meg.**
-_She doesn't know where I've gone / what has happened to me._
-→ Slightly expressive — implies the speaker has disappeared or is hard to reach.
+→ Litt ekspressivt — antyder at den som snakker har forsvunnet eller er vanskelig å nå.
 
 **4. Jeg vet ikke hva som ble av boken.**
-_I don't know what happened to the book._
-→ The book is lost or unaccounted for.
+→ Boken er borte eller ikke gjort rede for.
 
 ---
 
 ## Sammenligningstabell
 
-|                               | Tone                  | Focus                     |
-| ----------------------------- | --------------------- | ------------------------- |
-| **Hvor er nøklene?**          | neutral               | current location          |
-| **Hvor ble det av nøklene?**  | slightly expressive   | disappearance / loss      |
-| **Hva skjedde med nøklene?**  | neutral / past event  | what happened (cause)     |
-| **Hva har blitt av nøklene?** | wondering / nostalgic | fate or outcome over time |
+|                               | Tone                      | Focus                              |
+| ----------------------------- | ------------------------- | ---------------------------------- |
+| **Hvor er nøklene?**          | nøytral                   | nåværende plassering               |
+| **Hvor ble det av nøklene?**  | litt ekspressiv           | forsvinning / tap                  |
+| **Hva skjedde med nøklene?**  | nøytral / fortidsbegivenhet | hva som skjedde (årsak)          |
+| **Hva har blitt av nøklene?** | undrende / nostalgisk     | skjebne eller utfall over tid      |
 
 ---
 
@@ -57,8 +50,8 @@ _I don't know what happened to the book._
 
 **Bli av** legger til en liten emosjonell nyanse som "where is" ikke har:
 
-- **Hvor er han?** → neutral
-- **Hvor har det blitt av ham?** → slightly wondering, nostalgic, or concerned
+- **Hvor er han?** → nøytral
+- **Hvor har det blitt av ham?** → litt undrende, nostalgisk eller bekymret
 
 Det passer godt i to situasjoner:
 
@@ -72,16 +65,16 @@ Det passer godt i to situasjoner:
 ❌ Hva ble av ham?
 ⭕ Hva ble det av ham?
 
-_The pronoun **det** is required in this construction — it acts as a formal placeholder._
+_Pronomenet **det** er påkrevd i denne konstruksjonen — det fungerer som et formelt plassholdersubjekt._
 
 ---
 
 ## Husk dette
 
-- **bli av** → fixed expression meaning "where did X go" or "what happened to X"
-- Requires **det** as a formal subject: _hva ble **det** av …_
-- Adds a slightly expressive or wondering tone compared to bare _hvor er …_
-- Works for both **people** and **things**
+- **bli av** → fast uttrykk som betyr "hvor ble det av X" eller "hva skjedde med X"
+- Krever **det** som formelt subjekt: _hva ble **det** av …_
+- Gir en litt ekspressiv eller undrende tone sammenlignet med et enkelt _hvor er …_
+- Brukes om både **personer** og **ting**
 
 ---
 

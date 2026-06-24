@@ -1,7 +1,7 @@
 ---
-title: 'Trøtt vs Sliten vs Utslitt — Shades of Tired'
-description: '"Trøtt" is sleepy, "sliten" is worn out, "utslitt" is completely drained. Norwegian has several words for tired — and they are not interchangeable.'
-slug: trett-sliten-utslitt
+title: 'Trøtt vs Sliten vs Utslitt — Nyanser av å være trett'
+description: 'Trøtt betyr søvnig, sliten betyr utmattet, og utslitt betyr helt tom for krefter. Norsk har flere ord for «tired» på engelsk — og de kan ikke brukes om hverandre.'
+slug: trott-sliten-utslitt
 cefr: A2
 publishedAt: 2026-07-29
 tags: [adjectives, vocabulary]
@@ -13,112 +13,97 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
-
-> **TL;DR:** **Trøtt** = sleepy / tired. **Sliten** = worn out from effort. **Utslitt** = completely drained. **Lei** = fed up. They are not interchangeable.
+> **Kort sagt:** **Trøtt** = søvnig / trett. **Sliten** = utslitt av innsats. **Utslitt** = fullstendig tømt. **Lei** = lei av noe. De er ikke utbyttbare.
 
 ## Kort forklaring
 
 Norsk har flere ord for "tired," og de brukes i forskjellige situasjoner:
 
-- **trøtt** → sleepy / tired in general
-- **sliten** → worn out / exhausted from effort or stress
-- **utslitt** → completely drained — no energy left
-- **utmattet** → fatigued — formal or medical
-- **lei** → tired of something — fed up, not physically tired
-
-_In English:_ The closest equivalents are "sleepy," "worn out," "exhausted," and "fed up" — but Norwegian draws sharper lines between them than English often does.
+- **trøtt** → søvnig / generelt trett
+- **sliten** → utslitt / utmattet av innsats eller stress
+- **utslitt** → fullstendig tømt — ingen energi igjen
+- **utmattet** → utmattet — formelt eller medisinsk
+- **lei** → lei av noe — ikke fysisk trett
 
 ---
 
-## Trøtt — sleepy / tired
+## Trøtt — søvnig / trett
 
 Det mest vanlige og nøytrale ordet. Brukes om generell tretthet eller søvntrang.
 
 **1. Jeg er trøtt.**
-_I'm tired._
-→ The most basic way to say you're tired.
+→ Den mest grunnleggende måten å si at du er trett på.
 
 **2. Jeg er så trøtt i dag.**
-_I'm so tired today._
-→ Could mean sleepy, low energy, or both.
+→ Kan bety søvnig, lite energi, eller begge deler.
 
 **3. Barna er trøtte.**
-_The children are sleepy / tired._
-→ Often implies sleepiness — time for bed.
+→ Antyder ofte søvnighet — tid for å legge seg.
 
 ---
 
-## Sliten — worn out / exhausted
+## Sliten — utslitt / utmattet
 
 Sterkere enn **trøtt**. Brukes om utmattelse etter anstrengelse — fysisk eller mentalt.
 
 **1. Jeg er helt sliten etter jobb.**
-_I'm completely worn out after work._
-→ Drained by effort, stress, or a long day.
+→ Tømt av innsats, stress eller en lang dag.
 
 **2. Hun ser sliten ut.**
-_She looks worn out._
-→ Visible exhaustion — not just sleepy.
+→ Synlig utmattelse — ikke bare søvnig.
 
 **3. Jeg er sliten, men ikke trøtt ennå.**
-_I'm exhausted, but not sleepy yet._
-→ The key distinction: **sliten** is about effort, **trøtt** is about sleep need. You can be one without the other.
+→ Den viktige forskjellen: **sliten** handler om innsats, **trøtt** handler om søvnbehov. Man kan være det ene uten det andre.
 
 ---
 
-## Utslitt — completely exhausted
+## Utslitt — fullstendig utmattet
 
 Enda sterkere enn **sliten**. Bokstavelig talt "worn out" — ikke noe energi igjen. Brukes også om gjenstander.
 
 **1. Jeg er helt utslitt.**
-_I'm completely exhausted._
-→ Nothing left — stronger and more dramatic than **sliten**.
+→ Ingenting igjen — sterkere og mer dramatisk enn **sliten**.
 
 **2. Skoene er utslitte.**
-_The shoes are worn out._
-→ Also used for objects that have been used until they are done.
+→ Brukes også om gjenstander som er brukt til de er ferdig.
 
 ---
 
-## Utmattet — fatigued
+## Utmattet — utmattet / fatigued
 
 Mer formelt eller litterært enn **sliten**. Vanlig i medisinske, emosjonelle, eller alvorlige sammenhenger.
 
 **1. Hun var fysisk og psykisk utmattet.**
-_She was physically and mentally exhausted._
-→ Serious, sustained fatigue — more clinical than everyday.
+→ Alvorlig, vedvarende utmattelse — mer klinisk enn hverdagslig.
 
 **2. Pasienten følte seg utmattet.**
-_The patient felt fatigued._
-→ Medical register.
+→ Medisinsk register.
 
-Less common in casual speech — **sliten** or **utslitt** is more natural in everyday conversation.
+Mindre vanlig i uformell tale — **sliten** eller **utslitt** er mer naturlig i hverdagssamtaler.
 
 ---
 
-## Lei — fed up / tired of
+## Lei — lei av / fed up
 
 Ikke fysisk tretthet. **Lei** brukes om emosjonell utmattelse — å være lei av noe betyr å ha fått nok av det.
 
 **1. Jeg er lei av vinteren.**
-_I'm tired of winter. / I've had enough of winter._
-→ Emotional — not a physical feeling.
+→ Emosjonelt — ikke en fysisk følelse.
 
 **2. Hun er lei av å vente.**
-_She's tired of waiting._
-→ Closer to "fed up" or "sick of" than "exhausted."
+→ Nærmere "fed up" eller "sick of" enn "exhausted."
 
 ---
 
 ## Sammenligningstabell
 
-| Ord          | Betydning            | Styrke       | Typisk kontekst          |
-| ------------ | -------------------- | ------------ | ------------------------ |
-| **trøtt**    | sleepy / tired       | mild         | need sleep, low energy   |
-| **sliten**   | worn out / exhausted | medium       | after effort or stress   |
-| **utslitt**  | completely drained   | sterk        | no energy left           |
-| **utmattet** | fatigued             | formal/sterk | medical, serious fatigue |
-| **lei**      | fed up / tired of    | emosjonell   | sick of something        |
+| Ord          | Betydning            | Styrke       | Typisk kontekst                  |
+| ------------ | -------------------- | ------------ | -------------------------------- |
+| **trøtt**    | søvnig / trett       | mild         | trenger søvn, lite energi        |
+| **sliten**   | utslitt / utmattet   | medium       | etter innsats eller stress       |
+| **utslitt**  | fullstendig tømt     | sterk        | ingen energi igjen               |
+| **utmattet** | utmattet             | formal/sterk | medisinsk, alvorlig utmattelse   |
+| **lei**      | lei av / fed up      | emosjonell   | lei av noe                       |
 
 ---
 
@@ -127,14 +112,13 @@ _She's tired of waiting._
 **Trøtt og sliten** brukes ofte sammen i norsk:
 
 **Jeg er trøtt og sliten etter reisen.**
-_I'm tired and worn out after the trip._
-→ Very natural in everyday speech — the two words reinforce each other.
+→ Svært naturlig i hverdagslig tale — de to ordene forsterker hverandre.
 
 **Intensifiers** (veldig vanlig i tale):
 
-- **Jeg er dønn sliten.** → I'm dead tired.
-- **Jeg er kjempesliten.** → I'm super exhausted.
-- **Jeg er steintrøtt.** → I'm dead tired / stone tired.
+- **Jeg er dønn sliten.** → Jeg er dødstrett.
+- **Jeg er kjempesliten.** → Jeg er kjempetrøtt / veldig sliten.
+- **Jeg er steintrøtt.** → Jeg er steintrøtt / dødstrett.
 
 ---
 
@@ -143,22 +127,22 @@ _I'm tired and worn out after the trip._
 ❌ Jeg er lei etter jobben.
 ⭕ Jeg er sliten etter jobben.
 
-_**Lei** is not used for physical exhaustion — use **sliten** or **trøtt** instead._
+_**Lei** brukes ikke om fysisk utmattelse — bruk **sliten** eller **trøtt** i stedet._
 
 ❌ Skoene er slitne? / Skoene er trøtte?
 ⭕ Skoene er utslitte.
 
-_For worn-out objects, only **utslitt** works._
+_For utslitte gjenstander er det bare **utslitt** som fungerer._
 
 ---
 
 ## Husk dette
 
-- **trøtt** → sleepy / generally tired
-- **sliten** → worn out from effort or stress
-- **utslitt** → completely drained — also for objects
-- **utmattet** → fatigued — formal or medical
-- **lei** → fed up — emotional, not physical
+- **trøtt** → søvnig / generelt trett
+- **sliten** → utslitt av innsats eller stress
+- **utslitt** → fullstendig tømt — også om gjenstander
+- **utmattet** → utmattet — formelt eller medisinsk
+- **lei** → lei av noe — emosjonelt, ikke fysisk
 
 ---
 
