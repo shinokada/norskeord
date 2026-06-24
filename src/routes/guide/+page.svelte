@@ -1,102 +1,85 @@
-<script>
+<script lang="ts">
   import { Heading } from 'flowbite-svelte';
   import * as m from '$lib/paraglide/messages.js';
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What is the difference between Free and Plus?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Free gives you all A1 and A2 vocabulary plus a preview of B1/B2, the top 3 quiz categories per level, and 4 grammar topics. Plus unlocks all levels (B1–C2), smart Due today scheduling, cross-device sync, all quiz categories, all grammar topics, Norskprøven practice tests, full-text search, and lesson emails.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What is the daily study reminder?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'A browser push notification sent once a day to remind you to study. Enable it under Profile → Notifications → Daily study reminder.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'I enabled the reminder but nothing arrives. Why?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Check that your browser is allowed to send notifications in your OS settings. On iPhone, notifications only work if you have added Norskeord to your home screen first (Share → Add to Home Screen).'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What are Norwegian lesson emails?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Biweekly emails with a short Norwegian text, a vocabulary list, and exercises matched to your level. Available to Plus members. Enable under Profile → Notifications.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: "My progress isn't showing on my other device.",
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Progress syncs across devices for Plus members. Free accounts store progress on the current device only.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Can I use Norskeord offline?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. Install it as an app (Share → Add to Home Screen on iPhone, or the install prompt in Chrome) and flashcard decks you have opened before will work without an internet connection.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What is Norskprøven?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Norskprøven is the official Norwegian language exam, required for permanent residency and citizenship. Norskeord includes vocabulary focused on exam topics and full practice tests (reading, writing, oral) at A2 and B1 level.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How do I change my flashcard preferences?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Go to Profile → Preferences. You can set your target level, interface language, default card direction, card type, pronunciation speed, and number of cards per session.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How do I download my progress report?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Go to Profile → Account and click Download Progress report. This exports all your card history as a file you can save or share. This is a Plus feature.'
-        }
-      }
-    ]
+  type Path = {
+    id: number;
+    icon: string;
+    label: () => string;
+    desc: () => string;
+    cta: () => string;
+    href: string;
   };
-  const faqSchemaJson = JSON.stringify(faqSchema);
 
+  const paths: Path[] = [
+    {
+      id: 1,
+      icon: '🇳🇴',
+      label: m.guide_start_path_beginner_label,
+      desc: m.guide_start_path_beginner_desc,
+      cta: m.guide_start_path_beginner_cta,
+      href: '/a1'
+    },
+    {
+      id: 2,
+      icon: '📋',
+      label: m.guide_start_path_exam_label,
+      desc: m.guide_start_path_exam_desc,
+      cta: m.guide_start_path_exam_cta,
+      href: '/norskproven'
+    },
+    {
+      id: 3,
+      icon: '🧠',
+      label: m.guide_start_path_quiz_label,
+      desc: m.guide_start_path_quiz_desc,
+      cta: m.guide_start_path_quiz_cta,
+      href: '/quiz'
+    },
+    {
+      id: 4,
+      icon: '✏️',
+      label: m.guide_start_path_grammar_label,
+      desc: m.guide_start_path_grammar_desc,
+      cta: m.guide_start_path_grammar_cta,
+      href: '/grammar'
+    }
+  ];
+
+  const buttons = [
+    {
+      id: 1,
+      label: m.guide_btn_again_label,
+      desc: m.guide_btn_again_desc,
+      classes: 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300'
+    },
+    {
+      id: 2,
+      label: m.guide_btn_hard_label,
+      desc: m.guide_btn_hard_desc,
+      classes: 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
+    },
+    {
+      id: 3,
+      label: m.guide_btn_good_label,
+      desc: m.guide_btn_good_desc,
+      classes: 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
+    },
+    {
+      id: 4,
+      label: m.guide_btn_easy_label,
+      desc: m.guide_btn_easy_desc,
+      classes: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300'
+    }
+  ];
   // Anchor sections
   const sections = [
     { id: 'start', label: () => m.guide_anchor_start() },
     { id: 'flashcards', label: () => m.guide_anchor_flashcards() },
     { id: 'quiz', label: () => m.guide_anchor_quiz() },
     { id: 'grammar', label: () => m.guide_anchor_grammar() },
-    { id: 'norskproven', label: () => m.guide_anchor_norskproven() },
-    { id: 'faq', label: () => m.guide_anchor_faq() }
+    { id: 'norskproven', label: () => m.guide_anchor_norskproven() }
   ];
 </script>
-
-<svelte:head>
-  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-  {@html '<scr' + 'ipt type="application/ld+json">' + faqSchemaJson + '</scr' + 'ipt>'}
-</svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <Heading tag="h1" class="mb-2 text-4xl font-bold dark:text-white">{m.guide_page_title()}</Heading>
@@ -109,7 +92,7 @@
     {#each sections as { id, label } (id)}
       <a
         href="#{id}"
-        class="rounded-full border border-gray-200 bg-white px-3 py-1 text-sm text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-indigo-400 dark:hover:text-indigo-300"
+        class="min-h-[40px] flex items-center rounded-xl border border-gray-200 bg-white px-3 py-1 text-sm text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-indigo-400 dark:hover:text-indigo-300"
       >
         {label()}
       </a>
@@ -126,46 +109,20 @@
     <div
       class="space-y-3 rounded-xl border border-gray-200 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800/50"
     >
-      <div class="flex items-start gap-3">
-        <span class="mt-0.5 shrink-0 text-lg">🇳🇴</span>
-        <p class="text-gray-700 dark:text-gray-300">
-          <strong>{m.guide_start_path_beginner_label()}</strong>
-          {m.guide_start_path_beginner_desc()}
-          <a href="/a1" class="font-medium text-indigo-600 underline dark:text-indigo-400"
-            >{m.guide_start_path_beginner_cta()}</a
-          >
-        </p>
-      </div>
-      <div class="flex items-start gap-3">
-        <span class="mt-0.5 shrink-0 text-lg">📋</span>
-        <p class="text-gray-700 dark:text-gray-300">
-          <strong>{m.guide_start_path_exam_label()}</strong>
-          {m.guide_start_path_exam_desc()}
-          <a href="/norskproven" class="font-medium text-indigo-600 underline dark:text-indigo-400"
-            >{m.guide_start_path_exam_cta()}</a
-          >
-        </p>
-      </div>
-      <div class="flex items-start gap-3">
-        <span class="mt-0.5 shrink-0 text-lg">🧠</span>
-        <p class="text-gray-700 dark:text-gray-300">
-          <strong>{m.guide_start_path_quiz_label()}</strong>
-          {m.guide_start_path_quiz_desc()}
-          <a href="/quiz" class="font-medium text-indigo-600 underline dark:text-indigo-400"
-            >{m.guide_start_path_quiz_cta()}</a
-          >
-        </p>
-      </div>
-      <div class="flex items-start gap-3">
-        <span class="mt-0.5 shrink-0 text-lg">✏️</span>
-        <p class="text-gray-700 dark:text-gray-300">
-          <strong>{m.guide_start_path_grammar_label()}</strong>
-          {m.guide_start_path_grammar_desc()}
-          <a href="/grammar" class="font-medium text-indigo-600 underline dark:text-indigo-400"
-            >{m.guide_start_path_grammar_cta()}</a
-          >
-        </p>
-      </div>
+      {#each paths as path (path.id)}
+        <div class="flex items-start gap-3">
+          <span class="mt-0.5 shrink-0 text-lg">{path.icon}</span>
+
+          <p class="text-gray-700 dark:text-gray-300">
+            <strong>{path.label()}</strong>
+            {path.desc()}
+
+            <a href={path.href} class="font-medium text-indigo-600 underline dark:text-indigo-400">
+              {path.cta()}
+            </a>
+          </p>
+        </div>
+      {/each}
     </div>
 
     <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">{m.guide_start_note()}</p>
@@ -185,11 +142,10 @@
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     <p class="mb-4 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_1()}</p>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_scheduling_2()}</p>
-    <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_scheduling_3()}</p>
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     <p class="mb-6 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_4()}</p>
 
-    <!-- Rating buttons -->
+    <!-- Rating buttons + Card states combined -->
     <Heading tag="h3" class="mb-3 text-lg font-semibold dark:text-white"
       >{m.guide_buttons_heading()}</Heading
     >
@@ -197,34 +153,19 @@
     <p class="mb-4 text-gray-700 dark:text-gray-300">{@html m.guide_buttons_intro()}</p>
 
     <div class="mb-4 space-y-3">
-      <div class="flex items-start gap-3">
-        <span
-          class="mt-0.5 inline-block shrink-0 rounded-lg bg-red-100 px-3 py-1 text-sm font-semibold text-red-700 dark:bg-red-900/40 dark:text-red-300"
-          >{m.guide_btn_again_label()}</span
-        >
-        <p class="text-gray-700 dark:text-gray-300">{m.guide_btn_again_desc()}</p>
-      </div>
-      <div class="flex items-start gap-3">
-        <span
-          class="mt-0.5 inline-block shrink-0 rounded-lg bg-orange-100 px-3 py-1 text-sm font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
-          >{m.guide_btn_hard_label()}</span
-        >
-        <p class="text-gray-700 dark:text-gray-300">{m.guide_btn_hard_desc()}</p>
-      </div>
-      <div class="flex items-start gap-3">
-        <span
-          class="mt-0.5 inline-block shrink-0 rounded-lg bg-green-100 px-3 py-1 text-sm font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
-          >{m.guide_btn_good_label()}</span
-        >
-        <p class="text-gray-700 dark:text-gray-300">{m.guide_btn_good_desc()}</p>
-      </div>
-      <div class="flex items-start gap-3">
-        <span
-          class="mt-0.5 inline-block shrink-0 rounded-lg bg-blue-100 px-3 py-1 text-sm font-semibold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300"
-          >{m.guide_btn_easy_label()}</span
-        >
-        <p class="text-gray-700 dark:text-gray-300">{m.guide_btn_easy_desc()}</p>
-      </div>
+      {#each buttons as button (button.id)}
+        <div class="flex items-start gap-3">
+          <span
+            class={`inline-block shrink-0 rounded-lg px-3 py-1 text-sm font-semibold ${button.classes}`}
+          >
+            {button.label()}
+          </span>
+
+          <p class="text-gray-700 dark:text-gray-300">
+            {button.desc()}
+          </p>
+        </div>
+      {/each}
     </div>
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     <p class="mb-6 text-gray-700 dark:text-gray-300">{@html m.guide_buttons_outro()}</p>
@@ -233,7 +174,7 @@
     <Heading tag="h3" class="mb-3 text-lg font-semibold dark:text-white"
       >{m.guide_states_heading()}</Heading
     >
-    <div class="mb-4 space-y-3">
+    <div class="mb-6 space-y-3">
       <div class="flex items-start gap-3">
         <span
           class="mt-0.5 inline-block rounded-full bg-gray-200 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:bg-gray-700 dark:text-gray-300"
@@ -265,58 +206,21 @@
       </div>
     </div>
 
-    <!-- Rating flow -->
-    <Heading tag="h3" class="mb-3 text-lg font-semibold dark:text-white"
-      >{m.guide_flow_heading()}</Heading
-    >
-    <p class="mb-4 text-gray-700 dark:text-gray-300">
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      {@html m.guide_flow_intro({
-        memorized: `<span class="inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300">${m.guide_state_memorized_label()}</span>`,
-        forgotten: `<span class="inline-block rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300">${m.guide_state_forgotten_label()}</span>`,
-        learning: `<span class="inline-block rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-semibold text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300">${m.guide_state_learning_label()}</span>`
-      })}
-    </p>
-    <div class="mb-6 space-y-2 text-sm text-gray-700 dark:text-gray-300">
-      <div class="flex items-baseline gap-2">
-        <span
-          class="shrink-0 rounded-full bg-gray-200 px-2 py-0.5 text-xs font-semibold text-gray-600 dark:bg-gray-700 dark:text-gray-300"
-          >{m.guide_state_new_label()}</span
-        >
-        <span>{m.guide_flow_new()}</span>
-      </div>
-      <div class="flex items-baseline gap-2">
-        <span
-          class="shrink-0 rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-semibold text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300"
-          >{m.guide_state_learning_label()}</span
-        >
-        <span>{m.guide_flow_learning()}</span>
-      </div>
-      <div class="flex items-baseline gap-2">
-        <span
-          class="shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-300"
-          >{m.guide_state_memorized_label()}</span
-        >
-        <span>{m.guide_flow_memorized()}</span>
-      </div>
-      <div class="flex items-baseline gap-2">
-        <span
-          class="shrink-0 rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
-          >{m.guide_state_forgotten_label()}</span
-        >
-        <span>{m.guide_flow_forgotten()}</span>
-      </div>
-    </div>
-
     <div
       class="rounded-xl border border-blue-200 bg-blue-50 px-5 py-4 dark:border-blue-800 dark:bg-blue-900/20"
     >
-      <p class="text-sm text-blue-700 dark:text-blue-300">
+      <p class="text-base text-blue-700 dark:text-blue-300">
         <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html m.guide_plus_tip()}
         <a href="/plus" class="font-semibold underline">{m.guide_plus_tip_link()}</a>
       </p>
     </div>
+
+    <!-- Language note (folded in) -->
+    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+      {m.guide_lang_intro()}
+      {m.guide_lang_change()}
+    </p>
   </section>
 
   <!-- ── QUIZ ───────────────────────────────────────────────── -->
@@ -438,91 +342,12 @@
     </div>
   </section>
 
-  <!-- ── FLASHCARD LANGUAGE NOTE ───────────────────────────── -->
-  <section class="mb-12">
-    <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
-      >{m.guide_lang_heading()}</Heading
-    >
-    <p class="mb-3 text-gray-700 dark:text-gray-300">{m.guide_lang_intro()}</p>
-    <p class="text-gray-700 dark:text-gray-300">{m.guide_lang_change()}</p>
-  </section>
-
-  <!-- ── FAQ ───────────────────────────────────────────────── -->
-  <section id="faq" class="scroll-mt-20">
-    <Heading tag="h2" class="mb-6 text-2xl font-semibold dark:text-white"
-      >{m.guide_faq_heading()}</Heading
-    >
-
-    <div class="space-y-6">
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_freeplus_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
-          {m.guide_faq_freeplus_a_v2()}
-          <a href="/plus" class="underline">{m.guide_faq_freeplus_cta()}</a>
-        </p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_norskproven_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_norskproven_a()}</p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_reminder_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_reminder_a()}</p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_no_reminder_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_no_reminder_a()}</p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_emails_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_emails_a()}</p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_sync_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
-          {m.guide_faq_sync_a()}
-          <a href="/plus" class="underline">{m.guide_faq_sync_cta()}</a>
-        </p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_offline_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_offline_a()}</p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_prefs_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.guide_faq_prefs_a()}</p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_download_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
-          {m.guide_faq_download_a()}
-          <span
-            class="ml-1 inline-block rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
-            >✶ Plus</span
-          >
-        </p>
-      </div>
-
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">{m.guide_faq_contact_q()}</p>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
-          {m.guide_faq_contact_a()}
-          <a href="/contact" class="underline">{m.nav_contact()}</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Volunteer note -->
-  <div class="mt-12 border-t border-gray-200 pt-8 dark:border-gray-700">
-    <p class="text-sm text-gray-500 dark:text-gray-400">{m.guide_volunteer_note()}</p>
+  <div class="mt-4 border-t border-gray-200 pt-8 dark:border-gray-700">
+    <p class="mb-2 text-base text-gray-600 dark:text-gray-300">
+      {m.guide_questions_footer()}
+      <a href="/faq" class="font-medium text-indigo-600 underline dark:text-indigo-400"
+        >{m.guide_faq_link()}</a
+      >
+    </p>
   </div>
 </div>
