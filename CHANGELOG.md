@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.39.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a dedicated FAQ page with localized content, navigation links, and improved page metadata.
+    - Added new navigation/footer links for resources, account, and FAQ.
+    - Expanded guide content with clearer flashcard, quiz, and scheduling explanations.
+  - **Bug Fixes**
+    - Improved flashcard text wrapping and layout so long content displays more cleanly.
+    - Updated flashcard page spacing, sizing, and button readability for a more consistent mobile/desktop experience.
+  - **Documentation**
+    - Added new Norwegian learning materials, including grammar, vocabulary, and debate practice content.
+
 ## 2.38.0
 
 ### Minor Changes
