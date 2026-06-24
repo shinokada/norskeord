@@ -1,6 +1,6 @@
 ---
-title: 'Sakte vs Langsomt — Both Mean Slowly, but Not Equally'
-description: '"Sakte" is the natural choice in conversation. "Langsomt" is more common in writing and descriptions. Here is when to use each one — and how they differ grammatically.'
+title: 'Sakte vs Langsomt — Begge betyr sakte, men ikke likt'
+description: '"Sakte" er det naturlige valget i samtale, mens "langsomt" er vanligere i skrift og beskrivelser. Her får du vite når du skal bruke hvilket — og hvordan de skiller seg grammatisk.'
 slug: sakte-vs-langsomt
 cefr: A2
 publishedAt: 2026-05-21
@@ -13,8 +13,7 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
-
-> **TL;DR:** Both **sakte** and **langsomt** mean "slowly," but **sakte** is the everyday spoken word while **langsomt** sounds more formal or descriptive. When in doubt in conversation, use **sakte**.
+> **Kort sagt:** Både **sakte** og **langsomt** betyr "slowly," men **sakte** er det hverdagslige talespråklige ordet, mens **langsomt** høres mer formelt eller beskrivende ut. Velg **sakte** når du er i tvil i samtale.
 
 ## Kort forklaring
 
@@ -23,55 +22,44 @@ Begge ord betyr "slowly" på engelsk, men de brukes litt forskjellig:
 - **sakte** → hverdagslig, muntlig, naturlig i samtale
 - **langsomt** → litt mer formelt eller beskrivende, vanlig i skrift og litteratur
 
-_In English:_ Both translate as "slowly," but the choice affects tone. **Sakte** is the word you hear most in everyday Norwegian; **langsomt** fits better in descriptive writing or slightly more formal contexts.
-
 ---
 
-## Sakte — the everyday word
+## Sakte — det hverdagslige ordet
 
 **Sakte** er det vanligste ordet i dagligtale. Bruk det som standardvalg når du snakker.
 
 **1. Snakk sakte, vær så snill.**
-_Please speak slowly._
-→ The natural request in conversation — sakte is the obvious choice.
+→ Den naturlige måten å si det på i samtale — sakte er det åpenbare valget.
 
 **2. Han går sakte hjemover.**
-_He walks slowly home._
-→ Everyday description of someone's pace.
+→ Hverdagslig beskrivelse av noens tempo.
 
 **3. Bilen kjørte for sakte.**
-_The car was driving too slowly._
-→ Speed and movement — sakte is right at home here.
+→ Fart og bevegelse — sakte er helt i sitt rette element her.
 
 **4. Det går sakte framover.**
-_Things are moving forward slowly._
-→ A common expression about progress — sakte is standard.
+→ Et vanlig uttrykk om fremgang — sakte er standardvalget.
 
 **5. Kan du snakke litt saktere?**
-_Can you speak a little more slowly?_
-→ The comparative **saktere** is widely used in speech.
+→ Komparativformen **saktere** er mye brukt i tale.
 
 ---
 
-## Langsomt — the descriptive word
+## Langsomt — det beskrivende ordet
 
 **Langsomt** kommer fra adjektivet **langsom** og høres litt mer formelt eller litterært ut. Det egner seg godt i skriftlig norsk og beskrivende setninger.
 
 **1. Hun beveget seg langsomt mot døra.**
-_She moved slowly towards the door._
-→ A descriptive, narrative sentence — langsomt fits the style.
+→ En beskrivende, fortellende setning — langsomt passer stilen godt.
 
 **2. Tiden gikk langsomt.**
-_Time passed slowly._
-→ More poetic or reflective in tone — langsomt suits this well.
+→ Mer poetisk eller reflekterende i tonen — langsomt fungerer godt her.
 
 **3. Prosessen utvikler seg langsomt.**
-_The process is developing slowly._
-→ Formal or analytical context — langsomt is the natural choice.
+→ Formell eller analytisk sammenheng — langsomt er det naturlige valget.
 
 **4. Han snudde seg langsomt.**
-_He turned around slowly._
-→ Narrative writing — a classic use of langsomt.
+→ Fortellende prosa — en klassisk bruk av langsomt.
 
 ---
 
@@ -99,7 +87,7 @@ I praksis bruker man **langsom** som adjektiv og **sakte** som adverb i dagligta
 
 |              | **sakte**              | **langsomt**                         |
 | ------------ | ---------------------- | ------------------------------------ |
-| Betydning    | slowly                 | slowly                               |
+| Betydning    | sakte, langsomt        | sakte, langsomt                      |
 | Register     | hverdagslig, muntlig   | litt formell, beskrivende            |
 | Vanligst i   | samtale, dagligtale    | skrift, litteratur, formelle tekster |
 | Som adjektiv | sjeldent (gammelmodig) | ✅ en langsom prosess                |
@@ -114,7 +102,7 @@ I praksis bruker man **langsom** som adjektiv og **sakte** som adverb i dagligta
 I mange setninger er begge grammatisk korrekte — men tonen er forskjellig:
 
 - **Han snakker sakte.** → naturlig, hverdagslig
-- **Han snakker langsomt.** → riktig, men høres litt mer formell ut
+- **Han snakker langsomt.** → riktig, men høres litt mer formelt ut
 
 - **Gå sakte!** → naturlig kommando
 - **Gå langsomt!** → riktig, men uvanlig i tale
@@ -128,12 +116,12 @@ Som en tommelfingerregel: **sakte** i samtale, **langsomt** i skrift.
 ❌ Kan du snakke mer langsomt?
 ⭕ Kan du snakke **saktere**? / Kan du snakke litt **langsommere**?
 
-_Comparatives of adverbs don't use «mer» in Norwegian — use the inflected form instead._
+_Komparativ av adverb dannes ikke med «mer» på norsk — bruk den bøyde formen i stedet._
 
 ❌ Det er en sakte prosess.
 ⭕ Det er en **langsom** prosess.
 
-_As an adjective modifying a noun, **langsom** is the right form — not **sakte**._
+_Når et adjektiv beskriver et substantiv, er **langsom** den riktige formen — ikke **sakte**._
 
 ---
 

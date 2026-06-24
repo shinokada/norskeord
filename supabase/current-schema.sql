@@ -64,7 +64,6 @@ CREATE TABLE public.profiles (
   quiz_limit integer CHECK (quiz_limit IS NULL OR (quiz_limit = ANY (ARRAY[5, 10, 15, 20]))),
   email_reminder boolean NOT NULL DEFAULT false,
   show_example boolean NOT NULL DEFAULT false,
-  study_goals ARRAY,
   onboarding_done boolean NOT NULL DEFAULT false,
   onboarding_snoozed_at timestamp with time zone,
   flashcard_language text NOT NULL DEFAULT 'english'::text CHECK (flashcard_language = ANY (ARRAY['english'::text, 'spanish'::text, 'ukrainian'::text])),

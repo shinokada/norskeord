@@ -1,6 +1,6 @@
 ---
-title: 'På gjensyn — Saying Goodbye in Norwegian'
-description: '"På gjensyn" means "see you again" and is a polite, slightly formal farewell. Here is how it compares to "ha det," "vi sees," and other Norwegian goodbyes.'
+title: 'På gjensyn — å si farvel på norsk'
+description: '«På gjensyn» betyr at man håper å se noen igjen, og er en høflig og litt formell avskjedshilsen. Her ser du hvordan det skiller seg fra «ha det», «vi sees» og andre norske avskjeder.'
 slug: pa-gjensyn
 cefr: A1
 publishedAt: 2026-11-11
@@ -10,14 +10,11 @@ decks:
     category: greetings
     label: A1 Greetings
 ---
-
-> **TL;DR:** **På gjensyn** means "see you again" — polite, warm, and slightly formal. It is common after lessons, meetings, and appointments. For casual everyday goodbyes, **ha det** or **vi sees** is more natural.
+> **Kort sagt:** **På gjensyn** betyr «see you again» — høflig, varmt og litt formelt. Det er vanlig etter timer, møter og avtaler. For uformelle hverdagslige avskjeder er **ha det** eller **vi sees** mer naturlig.
 
 ## Kort forklaring
 
 **På gjensyn** er en avskjedshilsen som betyr omtrent «see you again» eller «farewell.» Det er høflig og litt mer formelt enn **ha det**, men langt fra gammeldags — du hører det ofte i klasserom, på arbeidsplassen, og i servicebransjen.
-
-_In English:_ The closest equivalent is "goodbye" or "see you again" — with a slightly more deliberate, warm tone than the casual "see ya."
 
 ---
 
@@ -104,8 +101,8 @@ _**God natt** brukes bare når noen faktisk skal legge seg — ikke som en vanli
 
 ## Husk dette
 
-- **på gjensyn** = see you again — høflig og lett formelt
-- Naturlig etter timer, møter, og i servicebransjen
+- **på gjensyn** = «see you again» — høflig og lett formelt
+- Naturlig etter timer, møter og i servicebransjen
 - Kombineres gjerne med **takk for i dag** som avslutning
 - For venner og hverdagslige situasjoner: **ha det** eller **vi sees**
 - **God natt** brukes bare når noen skal sove

@@ -1,6 +1,6 @@
 ---
-title: 'Lei seg vs Trist — Two Ways to Feel Sad'
-description: '"Lei seg" is a personal emotional reaction, often triggered by something specific. "Trist" describes a sadder mood or quality — and can apply to people, stories, weather, and more.'
+title: 'Lei seg vs trist — to måter å føle seg trist på'
+description: 'Lei seg er en personlig følelsesmessig reaksjon, ofte utløst av noe konkret. Trist beskriver en dypere stemning eller egenskap – og kan brukes om både personer, historier, vær og mer.'
 slug: lei-seg-vs-trist
 cefr: A2
 publishedAt: 2026-09-16
@@ -13,8 +13,7 @@ decks:
     category: everyday-words
     label: A2 Everyday Words
 ---
-
-> **TL;DR:** Both **lei seg** and **trist** translate as "sad" in English, but they are not interchangeable. **Lei seg** is a personal emotional reaction — usually triggered by something specific. **Trist** describes a mood, a quality, or a general feeling of sadness.
+> **Kort sagt:** Både **lei seg** og **trist** oversettes med "sad" på engelsk, men de er ikke utbyttbare. **Lei seg** er en personlig følelsesreaksjon — vanligvis utløst av noe spesifikt. **Trist** beskriver en stemning, en egenskap eller en generell følelse av sorg.
 
 ## Kort forklaring
 
@@ -23,8 +22,6 @@ På norsk har man to vanlige måter å si «sad» på, og de brukes litt forskje
 - **lei seg** → personlig følelsesreaksjon, ofte fordi noe konkret har skjedd
 - **trist** → en stemning, en kvalitet, eller en generell følelse av sorg
 
-_In English:_ **Lei seg** is closer to "upset" or "hurt" — it implies something happened that caused the feeling. **Trist** is closer to "sad" as a mood or descriptor — usable for people, stories, music, and even weather.
-
 ---
 
 ## Lei seg — personlig og situasjonsbasert
@@ -32,20 +29,16 @@ _In English:_ **Lei seg** is closer to "upset" or "hurt" — it implies somethin
 **Lei seg** brukes når noe konkret har skjedd, og du reagerer følelsesmessig på det. Det er nesten alltid en **grunn** involvert.
 
 **1. Jeg ble lei meg da hunden min døde.**
-_I became sad / upset when my dog died._
-→ A specific event triggered the feeling.
+→ En bestemt hendelse utløste følelsen.
 
 **2. Hun er lei seg fordi kjæresten gjør det slutt.**
-_She is upset because her boyfriend is breaking up with her._
-→ Lei seg captures the personal hurt of the situation.
+→ Lei seg fanger den personlige smerten i situasjonen.
 
 **3. Ikke vær lei deg.**
-_Don't be sad. / Don't be upset._
-→ A common consolation — used when comforting someone.
+→ En vanlig trøstesetning — brukes når man trøster noen.
 
 **4. Han så lei seg ut.**
-_He looked sad / hurt._
-→ Visible emotional distress after something happened.
+→ Synlig følelsesmessig smerte etter at noe har skjedd.
 
 ---
 
@@ -54,20 +47,16 @@ _He looked sad / hurt._
 **Trist** kan beskrive en person, en følelse, en fortelling, musikk, eller til og med vær. Det er mer **nøytralt og bredt** enn **lei seg**.
 
 **1. Jeg føler meg trist i dag.**
-_I feel sad today._
-→ A general low mood — not necessarily tied to a specific event.
+→ En generell nedtrykt stemning — ikke nødvendigvis knyttet til en bestemt hendelse.
 
 **2. Det er en trist historie.**
-_It is a sad story._
-→ Trist describes the quality of something — lei seg cannot be used here.
+→ Trist beskriver kvaliteten ved noe — lei seg kan ikke brukes her.
 
 **3. Hun så trist ut.**
-_She looked sad._
-→ A sad expression — interchangeable with lei seg in some contexts.
+→ Et trist uttrykk — kan i noen sammenhenger brukes om hverandre med lei seg.
 
 **4. Været er grått og trist.**
-_The weather is grey and gloomy._
-→ Only trist works here — lei seg cannot describe weather.
+→ Bare trist fungerer her — lei seg kan ikke beskrive vær.
 
 ---
 
@@ -86,14 +75,14 @@ Noen setninger fungerer med begge — men med litt ulik nyanse:
 
 ## Sammenligningstabell
 
-|                       | **lei seg**        | **trist**                |
-| --------------------- | ------------------ | ------------------------ |
-| Betydning             | upset / hurt / sad | sad / gloomy / sorrowful |
-| Trigger               | konkret hendelse   | generell stemning        |
-| Om personer           | ✅                 | ✅                       |
-| Om historier / filmer | ❌                 | ✅ — _en trist film_     |
-| Om vær / steder       | ❌                 | ✅ — _trist vær_         |
-| Dagligtale            | svært vanlig       | vanlig                   |
+|                       | **lei seg**                  | **trist**                         |
+| --------------------- | ---------------------------- | --------------------------------- |
+| Betydning             | opprørt / såret / trist      | trist / dyster / bedrøvet         |
+| Trigger               | konkret hendelse             | generell stemning                 |
+| Om personer           | ✅                           | ✅                                |
+| Om historier / filmer | ❌                           | ✅ — _en trist film_              |
+| Om vær / steder       | ❌                           | ✅ — _trist vær_                  |
+| Dagligtale            | svært vanlig                 | vanlig                            |
 
 ---
 
@@ -109,8 +98,8 @@ Noen setninger fungerer med begge — men med litt ulik nyanse:
 
 **Lei seg** er et fast uttrykk der **seg** er avgjørende:
 
-- **Jeg er lei meg.** → I am sad.
-- **Jeg er lei.** → I am tired of something / I am bored.
+- **Jeg er lei meg.** → Jeg er trist.
+- **Jeg er lei.** → Jeg er lei av noe / jeg kjeder meg.
 
 ---
 
@@ -132,12 +121,12 @@ Et tredje ord er nyttig å kjenne til:
 ❌ Det er en lei seg film.
 ⭕ Det er en **trist** film.
 
-_Lei seg cannot modify nouns. Trist is the adjective for describing sad things._
+_Lei seg kan ikke stå til substantiv. Trist er adjektivet som brukes om triste ting._
 
 ❌ Jeg er lei av eksamenen → jeg vil si jeg er lei meg.
 ⭕ Skil mellom: **lei av** (fed up with) og **lei seg** (sad).
 
-_These are two different expressions — don't mix them._
+_Dette er to forskjellige uttrykk — ikke bland dem._
 
 ---
 

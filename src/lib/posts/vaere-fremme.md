@@ -1,6 +1,6 @@
 ---
-title: 'Være fremme — We have arrived'
-description: '"Være fremme" means to have reached your destination. It describes the result of a journey, not just your location.'
+title: 'Være fremme — Vi har kommet frem'
+description: '"Være fremme" betyr at du har nådd reisemålet ditt. Uttrykket beskriver resultatet av en reise, ikke bare hvor du befinner deg.'
 slug: vaere-fremme
 cefr: A2
 publishedAt: 2026-09-02
@@ -13,8 +13,7 @@ decks:
     category: verbs
     label: A1 Verbs
 ---
-
-> **TL;DR:** **Være fremme** means to have arrived at your destination — it expresses the result of a journey, not just where you are.
+> **Kort sagt:** **Være fremme** betyr å ha ankommet destinasjonen sin — det uttrykker resultatet av en reise, ikke bare hvor du befinner deg.
 
 ## Kort forklaring
 
@@ -25,27 +24,21 @@ Det er nært beslektet med **komme fram**, men det er en viktig forskjell:
 - **komme fram** → selve bevegelsen / handlingen å ankomme
 - **være fremme** → tilstanden etter ankomst (du er der nå)
 
-_In English:_ **Være fremme** is closest to "have arrived" or "be there" — with the implication that you travelled to get there.
-
 ---
 
 ## Eksempler
 
 **1. Vi er fremme i Oslo.**
-_We have arrived in Oslo._
-→ You travelled, and now you are there.
+→ Du reiste, og nå er du der.
 
 **2. Nå er vi fremme!**
-_We've arrived! / We're here!_
-→ The classic thing to say when a journey ends.
+→ Den klassiske setningen å si når en reise er over.
 
 **3. Toget er fremme på stasjonen.**
-_The train has arrived at the station._
-→ Works for any mode of transport.
+→ Fungerer for alle typer transportmidler.
 
 **4. Vi er endelig fremme på hotellet.**
-_We've finally arrived at the hotel._
-→ **Endelig** adds a sense of relief after a long journey.
+→ **Endelig** gir en følelse av lettelse etter en lang reise.
 
 ---
 
@@ -54,12 +47,10 @@ _We've finally arrived at the hotel._
 Begge handler om å ankomme et sted, men de brukes litt forskjellig:
 
 **1. Vi kom fram til Oslo klokka fem.**
-_We arrived in Oslo at five o'clock._
-→ **Komme fram** focuses on the action of arriving — the moment of arrival.
+→ **Komme fram** fokuserer på selve handlingen å ankomme — ankomstøyeblikket.
 
 **2. Vi er fremme i Oslo.**
-_We have arrived in Oslo. / We're here in Oslo._
-→ **Være fremme** focuses on the result — you are now there.
+→ **Være fremme** fokuserer på resultatet — du er nå der.
 
 Tenk på det slik:
 
@@ -94,8 +85,8 @@ _Bruk **i** for byer og land. **Til** brukes med **komme**: «vi kom **til** Osl
 
 ## Husk dette
 
-- **være fremme** = have arrived / be there (after a journey)
-- Alltid med preposisjon: **i** (by/country), **på** (hotel, station), **til** (destination with komme)
+- **være fremme** = å ha ankommet / å være der (etter en reise)
+- Alltid med preposisjon: **i** (by/land), **på** (hotell, stasjon), **til** (destinasjon med komme)
 - **komme fram** → bevegelse; **være fremme** → resultat
 
 ---

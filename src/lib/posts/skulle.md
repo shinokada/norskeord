@@ -1,6 +1,6 @@
 ---
-title: 'Skulle — Was Going To / Was Supposed To'
-description: '"Skulle" does not always mean "should." In past contexts it expresses a plan, intention, or scheduled event — something that was going to happen.'
+title: 'Skulle — skulle til å / skulle (fortid)'
+description: '«Skulle» betyr ikke alltid det samme som «burde». I fortid uttrykker det en plan, en intensjon eller noe som var ment å skje.'
 slug: skulle
 cefr: B1
 publishedAt: 2026-08-14
@@ -13,14 +13,11 @@ decks:
     category: verbs
     label: A2 Verbs
 ---
-
-> **TL;DR:** **Skulle** in a past context means "was going to" or "was supposed to" — a plan or intention seen from the past. It does not always mean "should."
+> **Kort sagt:** **Skulle** i en fortidskontekst betyr "was going to" eller "was supposed to" — en plan eller intensjon sett fra fortiden. Det betyr ikke alltid "should."
 
 ## Kort forklaring
 
 **Skulle** er et modalt hjelpeverb med flere betydninger. Den viktigste — og mest forvirrende for innlærere — er bruken om **planer og intensjoner sett fra fortiden**.
-
-_In English:_ **Skulle** in this sense works like "was going to" or "was supposed to." Something was planned or expected to happen — whether or not it actually did.
 
 ---
 
@@ -29,20 +26,16 @@ _In English:_ **Skulle** in this sense works like "was going to" or "was suppose
 Denne bruken oppstår når vi ser fremover fra et tidspunkt i fortiden. Det handlet om en plan, intensjon, eller noe som var ment å skje.
 
 **1. Så skulle han reise tilbake til Norge.**
-_Then he was going to return to Norway._
-→ Seen from a past moment — this was the plan ahead.
+→ Sett fra et tidligere tidspunkt — dette var planen fremover.
 
 **2. Jeg skulle møte henne klokka fem.**
-_I was supposed to meet her at five._
-→ A plan or arrangement — whether it happened or not is not stated.
+→ En plan eller avtale — om den ble gjennomført eller ikke, sies det ingenting om.
 
 **3. Vi skulle kjøpe hus, men ombestemte oss.**
-_We were going to buy a house, but changed our minds._
-→ The plan was abandoned — **skulle** marks the original intention.
+→ Planen ble oppgitt — **skulle** markerer den opprinnelige intensjonen.
 
 **4. Toget skulle gå klokka åtte.**
-_The train was scheduled to leave at eight._
-→ A scheduled event — something expected according to a plan.
+→ En planlagt hendelse — noe som var forventet i henhold til en plan.
 
 ---
 
@@ -58,7 +51,7 @@ fortid ──── [skulle] ──── planlagt handling
 
 > Han var i utlandet. **Så skulle han reise tilbake til Norge.**
 
-The speaker looks forward from a past moment — the return was the next planned step.
+Taleren ser fremover fra et tidligere tidspunkt — hjemreisen var det neste planlagte steget.
 
 ---
 
@@ -66,7 +59,7 @@ The speaker looks forward from a past moment — the return was the next planned
 
 **Skulle** har fire distinkte bruksområder:
 
-**1. Plan / intensjon — was going to** ✅ (described above)
+**1. Plan / intensjon — was going to** ✅ (beskrevet ovenfor)
 
 > Han skulle reise hjem.
 > _He was going to travel home._
@@ -102,9 +95,9 @@ The speaker looks forward from a past moment — the return was the next planned
 ## Vanlige feil
 
 ❌ Han skulle reise hjem, betyr at han burde gjøre det.
-⭕ Context decides. **Skulle** + past context = was going to. **Skulle** + present context = should.
+⭕ Konteksten avgjør. **Skulle** + fortidskontekst = was going to. **Skulle** + nåtidskontekst = should.
 
-_The tense and context of the surrounding sentence is the clearest signal for which meaning is intended._
+_Tempus og konteksten i den omkringliggende setningen er det tydeligste signalet på hvilken betydning som er ment._
 
 ---
 

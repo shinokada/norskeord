@@ -1,6 +1,6 @@
 ---
-title: 'Adjektiv eller adverb? — Same Word, Different Role'
-description: 'Many Norwegian adjectives can also function as adverbs without changing form — especially words ending in -isk. The role in the sentence tells you which one it is.'
+title: 'Adjektiv eller adverb? — Samme ord, forskjellig rolle'
+description: 'Mange norske adjektiver kan også fungere som adverb uten å endre form — særlig ord som slutter på -isk. Det er rollen i setningen som avgjør hvilken det er.'
 slug: adjektiv-eller-adverb
 cefr: B2
 publishedAt: 2026-09-30
@@ -13,14 +13,11 @@ decks:
     category: grammar
     label: B1 Grammar
 ---
-
-> **TL;DR:** In Norwegian, many adjectives can function as adverbs without changing form — especially words ending in **-isk** like _fysisk_, _praktisk_, and _teknisk_. What matters is not what the word looks like, but what it describes in the sentence: a noun (adjective) or an action (adverb).
+> **Kort sagt:** På norsk kan mange adjektiver fungere som adverb uten å endre form — særlig ord som slutter på **-isk**, som _fysisk_, _praktisk_ og _teknisk_. Det som avgjør ordklassen, er ikke hvordan ordet ser ut, men hva det beskriver i setningen: et substantiv (adjektiv) eller en handling (adverb).
 
 ## Kort forklaring
 
 På norsk kan mange adjektiver brukes **adverbielt** — det vil si at de beskriver en handling eller et verb i stedet for et substantiv. Formen er ofte identisk. Det er **funksjonen i setningen** som avgjør ordklassen.
-
-_In English:_ English often adds "-ly" to make adverbs ("physical → physically"). Norwegian frequently uses the same form for both roles — especially for adjectives ending in **-isk**. The distinction is grammatical function, not word shape.
 
 ---
 

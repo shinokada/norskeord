@@ -1,6 +1,6 @@
 ---
-title: 'Ikke etter objekt — Where "ikke" Sits in Norwegian'
-description: 'In Norwegian main clauses, "ikke" comes after the object, not immediately after the verb. In subordinate clauses, it moves before the verb. Understanding this pattern is essential for natural word order.'
+title: 'Ikke etter objekt — hvor «ikke» plasseres på norsk'
+description: 'I norske hovedsetninger kommer «ikke» etter objektet, ikke rett etter verbet. I leddsetninger plasseres det foran verbet – et mønster som er viktig for naturlig ordstilling.'
 slug: ikke-etter-objekt
 cefr: B1
 publishedAt: 2026-10-28
@@ -13,8 +13,7 @@ decks:
     category: grammar
     label: A2 Grammar
 ---
-
-> **TL;DR:** In Norwegian main clauses, **ikke** follows the verb — but if there is an object, it comes _after_ the object, not immediately after the verb. In subordinate clauses, **ikke** moves in front of the verb entirely.
+> **Kort sagt:** I norske helsetninger kommer **ikke** etter verbet — men hvis setningen har et objekt, kommer **ikke** _etter_ objektet, ikke umiddelbart etter verbet. I leddsetninger flyttes **ikke** helt foran verbet.
 
 ## Kort forklaring
 
@@ -23,8 +22,6 @@ Norske elever lærer tidlig at **ikke** kommer etter verbet i helsetninger. Det 
 Når setningen har et **objekt**, kommer **ikke** etter objektet, ikke mellom verbet og objektet:
 
 > **Subjekt + verb + objekt + ikke**
-
-_In English:_ English places "not" right after the auxiliary verb regardless of the object: "He did not betray me." Norwegian puts it differently — the object comes first, then **ikke**: "Han sviktet meg ikke."
 
 ---
 
@@ -165,7 +162,7 @@ _I leddsetninger kommer **ikke** alltid foran det finitte verbet._
 - Helsetning: **verb + objekt + ikke** _(spesielt med pronomenobjekter)_
 - Leddsetning: **ikke + verb** _(alltid)_
 - Med lange substantivobjekter er **ikke** + objekt også naturlig i helsetninger
-- Kort pronomen (**meg**, **deg**, **ham**, **henne**, **oss**, **dem**) trekker **ikke** mot slutten
+- Korte pronomen (**meg**, **deg**, **ham**, **henne**, **oss**, **dem**) trekker **ikke** mot slutten
 
 ---
 

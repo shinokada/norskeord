@@ -1,6 +1,6 @@
 ---
-title: 'I grunnen — Actually / When I Think About It'
-description: '"I grunnen" softens a statement or introduces a realisation — something you admit or acknowledge after reflection. It is close to "actually" or "come to think of it."'
+title: 'I grunnen — egentlig / når jeg tenker meg om'
+description: '"I grunnen" brukes når du myker opp en påstand eller innrømmer noe etter å ha tenkt deg om. Det tilsvarer omtrent "egentlig" eller "når jeg tenker meg om det".'
 slug: i-grunnen
 cefr: B1
 publishedAt: 2026-08-21
@@ -13,8 +13,7 @@ decks:
     category: adverbs
     label: A2 Adverbs
 ---
-
-> **TL;DR:** **I grunnen** signals a realisation or admission — something you might not have said at first, but acknowledge after reflection. It is close to "actually," "come to think of it," or "deep down."
+> **Kort sagt:** **I grunnen** signaliserer en erkjennelse eller innrømmelse — noe man kanskje ikke ville ha sagt med det samme, men som man vedkjenner seg etter litt ettertanke. Det ligger nær "actually," "come to think of it," eller "deep down."
 
 ## Kort forklaring
 
@@ -22,31 +21,24 @@ decks:
 
 Det gir ofte en **mykere eller mer ettertenksom tone** enn **egentlig**, som det er nært synonymt med.
 
-_In English:_ **I grunnen** works like "actually," "when I think about it," or "come to think of it" — with a slight sense of reflection or mild surprise at one's own conclusion.
-
 ---
 
 ## Eksempler
 
 **1. Han er i grunnen ganske søt han også.**
-_He is actually quite cute, he is too._
-→ The speaker may not have thought so at first — **i grunnen** signals a reconsideration.
+→ Taleren tenkte kanskje ikke slik i utgangspunktet — **i grunnen** signaliserer en ny vurdering.
 
 **2. Jeg liker henne ikke så godt … men hun er i grunnen snill.**
-_I don't like her that much … but she's actually kind, when I think about it._
-→ An admission that softens or contradicts what came before.
+→ En innrømmelse som myker opp eller motsier det som kom før.
 
 **3. Det var i grunnen en god idé.**
-_It was actually a good idea._
-→ Acknowledging something positive, perhaps with mild surprise.
+→ Man vedkjenner seg noe positivt, kanskje med en mild overraskelse.
 
 **4. Jeg er i grunnen enig med deg.**
-_I actually agree with you._
-→ Slightly reluctant or reflective agreement — the speaker comes around to it.
+→ En litt nølende eller ettertenksom enighet — taleren kommer gradvis fram til den.
 
 **5. Det er i grunnen ikke så vanskelig.**
-_It's actually not that difficult, come to think of it._
-→ A reassessment — reframing something as less daunting than expected.
+→ En ny vurdering — noe som framstilles som mindre skremmende enn man først trodde.
 
 ---
 
@@ -58,11 +50,11 @@ Begge uttrykker noe lignende, men **i grunnen** er litt mer ettertenksomt og per
 
 > **Det er egentlig ikke sant.**
 > _That is actually not true._
-> → Neutral correction of a fact.
+> → Nøytral korrigering av et faktum.
 
 > **Det er i grunnen ikke sant.**
 > _That is actually not true — when I really think about it._
-> → More reflective — the speaker is working through their own conclusion.
+> → Mer reflektivt — taleren arbeider seg fram til sin egen konklusjon.
 
 I dagligtale er de ofte utbyttbare, men **i grunnen** bærer en litt tydeligere undertone av **innrømmelse** eller **ettertanke**.
 
@@ -70,12 +62,12 @@ I dagligtale er de ofte utbyttbare, men **i grunnen** bærer en litt tydeligere 
 
 ## Sammenligningstabell
 
-| Uttrykk          | Tone                        | Typisk bruk                          |
-| ---------------- | --------------------------- | ------------------------------------ |
-| **i grunnen**    | reflective / mild admission | realising or acknowledging something |
-| **egentlig**     | neutral / corrective        | clarifying, correcting, factual      |
-| **faktisk**      | emphatic / assertive        | emphasising that something is true   |
-| **innerst inne** | deep down / at heart        | strong emotional admission           |
+| Uttrykk          | Tone                              | Typisk bruk                                      |
+| ---------------- | --------------------------------- | ------------------------------------------------ |
+| **i grunnen**    | reflekterende / mild innrømmelse  | innse eller vedkjenne seg noe                    |
+| **egentlig**     | nøytral / korrigerende            | tydeliggjøre, korrigere, fastslå fakta           |
+| **faktisk**      | ettertrykkelig / bestemt          | understreke at noe er sant                       |
+| **innerst inne** | dypt inne / i bunn og grunn       | sterk følelsesmessig innrømmelse                 |
 
 ---
 
@@ -90,7 +82,7 @@ I dagligtale er de ofte utbyttbare, men **i grunnen** bærer en litt tydeligere 
 > «Jeg er ikke glad i kaffe … men det er **i grunnen** ganske godt.»
 > _I don't like coffee … but it's actually quite nice, come to think of it._
 
-Det ville høres unaturlig ut med **faktisk** her — **faktisk** er mer assertivt, **i grunnen** er mer ettertenksomt.
+Det ville høres unaturlig ut med **faktisk** her — **faktisk** er mer bestemt, **i grunnen** er mer ettertenksomt.
 
 ---
 
@@ -99,7 +91,7 @@ Det ville høres unaturlig ut med **faktisk** her — **faktisk** er mer asserti
 ❌ I grunnen jeg er enig.
 ⭕ Jeg er **i grunnen** enig.
 
-_**I grunnen** sits within the sentence — not at the very front before the subject._
+_**I grunnen** plasseres inne i setningen — ikke helt fremst før subjektet._
 
 ---
 

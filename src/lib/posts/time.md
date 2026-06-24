@@ -1,6 +1,6 @@
 ---
-title: 'Time — Lesson or Hour?'
-description: '"En time" can mean either a lesson/class or an hour. The preposition "i" is the key: "i en time" always means duration.'
+title: 'Time — Skoletime eller klokketime?'
+description: '"En time" kan bety enten en skoletime eller en time på klokken. Preposisjonen "i" er nøkkelen: "i en time" betyr alltid varighet.'
 slug: time
 cefr: A2
 publishedAt: 2026-07-24
@@ -13,68 +13,59 @@ decks:
     category: nouns
     label: A1 Nouns
 ---
-
-> **TL;DR:** **En time** means either "a lesson" or "an hour." Add **i** before it — **i en time** — and it always means duration (one hour).
+> **Kort sagt:** **En time** betyr enten «en leksjon» eller «en time (60 minutter).» Legg til **i** foran — **i en time** — og det betyr alltid varighet (én time).
 
 ## Kort forklaring
 
 **Time** er et ord med to betydninger:
 
-- **en time** = a lesson / a class
-- **en time** = an hour (60 minutes)
+- **en time** = en leksjon / en undervisningstime
+- **en time** = en time (60 minutter)
 
 Sammenhengen — og særlig preposisjonen **i** — avgjør hvilken det er.
 
-_In English:_ Norwegian uses the same word for both "lesson" and "hour." The preposition **i** is the clearest signal: **i en time** always refers to duration.
-
 ---
 
-## Eksempler — lesson / class
+## Eksempler — leksjon / undervisningstime
 
 **1. Han er lærer, og han har en time.**
-_He is a teacher, and he has a class._
-→ School context + no **i** → lesson.
+→ Skolekontekst uten **i** → leksjon.
 
 **2. Jeg har en time i norsk.**
-_I have a Norwegian lesson._
-→ The subject confirms the school meaning.
+→ Faget bekrefter at det er en leksjon.
 
 **3. Læreren har tre timer i dag.**
-_The teacher has three lessons today._
-→ Plural: **timer** — still lessons in a school context.
+→ Flertall: **timer** — fortsatt leksjoner i en skolekontekst.
 
 ---
 
-## Eksempler — hour (duration)
+## Eksempler — time (varighet)
 
 **1. Jeg ventet i en time.**
-_I waited for one hour._
-→ **i** + time → duration.
+→ **i** + time → varighet.
 
 **2. Jeg løp i en time.**
-_I ran for one hour._
-→ Same pattern — **i** marks duration.
+→ Samme mønster — **i** markerer varighet.
 
 **3. Han jobbet i tre timer.**
-_He worked for three hours._
-→ Plural with **i** → still duration.
+→ Flertall med **i** → fortsatt varighet.
 
 ---
 
 ## Sammenligningstabell
 
-| Setning                    | Betydning | Signal                    |
-| -------------------------- | --------- | ------------------------- |
-| **Jeg har en time**        | lesson    | no **i**, school context  |
-| **Jeg jobbet i en time**   | hour      | **i** before **time**     |
-| **Læreren har tre timer**  | lessons   | no **i**, teacher context |
-| **Hun ventet i tre timer** | hours     | **i** before **timer**    |
+| Setning                    | Betydning | Signal                              |
+| -------------------------- | --------- | ----------------------------------- |
+| **Jeg har en time**        | leksjon   | ingen **i**, skolekontekst          |
+| **Jeg jobbet i en time**   | time      | **i** foran **time**                |
+| **Læreren har tre timer**  | leksjoner | ingen **i**, lærerkontekst          |
+| **Hun ventet i tre timer** | timer     | **i** foran **timer**               |
 
 ---
 
 ## Nøkkelregel
 
-**i + time / timer = duration (hour/hours) — always.**
+**i + time / timer = varighet (time/timer) — alltid.**
 
 Uten **i** avgjør sammenhengen om det er en leksjon eller en time.
 
@@ -85,16 +76,16 @@ Uten **i** avgjør sammenhengen om det er en leksjon eller en time.
 ❌ Jeg har i en time norsk nå.
 ⭕ Jeg har en time i norsk nå.
 
-_**I en time** means "for one hour" — to say you have a Norwegian lesson, say **en time i norsk**._
+_**I en time** betyr «i én time» — for å si at du har norsktime, skal du si **en time i norsk**._
 
 ---
 
 ## Husk dette
 
-- **en time** = lesson OR hour — context decides
-- **i en time** = always one hour of duration
-- **i timer** = for hours
-- Plural: **en time → timer**
+- **en time** = leksjon ELLER time — sammenhengen avgjør
+- **i en time** = alltid én times varighet
+- **i timer** = i flere timer
+- Flertall: **en time → timer**
 
 ---
 

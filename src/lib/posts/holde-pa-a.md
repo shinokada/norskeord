@@ -1,6 +1,6 @@
 ---
-title: 'Holde på å — Be About to / Be in the Process of'
-description: '"Holde på å" means to be in the middle of doing something or to be on the verge of it. "Holde på med" is different — it means to be busy working on something.'
+title: 'Holde på å — holde på med å gjøre noe eller være i ferd med det'
+description: '«Holde på å» brukes når du er midt i noe eller er i ferd med å gjøre det. «Holde på med» er forskjellig — det betyr å være opptatt med noe over tid.'
 slug: holde-pa-a
 cefr: B1
 publishedAt: 2026-10-02
@@ -13,8 +13,7 @@ decks:
     category: verbs
     label: A2 Verbs
 ---
-
-> **TL;DR:** **Holde på å + verb** means to be in the process of something or on the verge of it — "almost" or "in the middle of." **Holde på med + noun** means to be busy working on something. The two structures look similar but mean different things.
+> **Kort sagt:** **Holde på å + verb** betyr å være i ferd med noe eller på kanten av det — "nesten" eller "midt i." **Holde på med + substantiv** betyr å være opptatt med eller jobbe med noe. De to konstruksjonene ligner på hverandre, men betyr ulike ting.
 
 ## Kort forklaring
 
@@ -22,8 +21,6 @@ decks:
 
 - **er i ferd med å** — du er midt i en handling som pågår akkurat nå
 - **er nær ved å** — du er på kanten av noe, noe er nær ved å skje
-
-_In English:_ The closest equivalents are "be about to," "be in the process of," or "almost." The action has not necessarily happened yet — but it is happening or very close to happening.
 
 ---
 
@@ -34,24 +31,19 @@ Grunnstrukturen er:
 > **holde på å + infinitiv**
 
 **1. Han holder på å miste kontrollen.**
-_He is about to lose control. / He is on the verge of losing control._
-→ He hasn't lost control yet — but he is very close.
+→ Han har ikke mistet kontrollen ennå — men han er svært nær.
 
 **2. Jeg holder på å sovne.**
-_I'm about to fall asleep. / I'm drifting off._
-→ Sleep is imminent — happening right now.
+→ Søvnen er nær — det skjer akkurat nå.
 
 **3. Hun holder på å le seg i hjel.**
-_She is almost dying of laughter._
-→ A common hyperbole — she is laughing uncontrollably.
+→ En vanlig overdrivelse — hun ler ukontrollert.
 
 **4. Vi holder på å gå tom for melk.**
-_We are running out of milk._
-→ The process is underway — almost gone.
+→ Prosessen er i gang — nesten borte.
 
 **5. Det holder på å bli mørkt.**
-_It's getting dark. / It's about to get dark._
-→ The change is happening gradually right now.
+→ Forandringen skjer gradvis akkurat nå.
 
 ---
 
@@ -75,25 +67,22 @@ Uten **å + verb** endrer uttrykket seg. **Holde på med** brukes når noen er o
 > **holde på med + substantiv**
 
 **1. Hva holder du på med?**
-_What are you doing? / What are you working on?_
-→ The most common everyday use — asking what someone is up to.
+→ Den vanligste hverdagslige bruken — man spør hva noen holder på med.
 
 **2. Han holder på med norsken sin.**
-_He is working on his Norwegian. / He is studying Norwegian._
-→ An ongoing activity or project.
+→ En pågående aktivitet eller et prosjekt.
 
 **3. Barna holder på med leksene.**
-_The children are doing their homework._
-→ They are busy with it right now.
+→ De er opptatt med det akkurat nå.
 
 ---
 
 ## Direkte sammenligning
 
-| Struktur                      | Betydning                       | Eksempel                       |
-| ----------------------------- | ------------------------------- | ------------------------------ |
-| **holde på å + verb**         | be about to / in the process of | Jeg holder på å sovne.         |
-| **holde på med + substantiv** | be busy with / working on       | Han holder på med norsken sin. |
+| Struktur                      | Betydning                              | Eksempel                       |
+| ----------------------------- | -------------------------------------- | ------------------------------ |
+| **holde på å + verb**         | være i ferd med / nær ved å skje      | Jeg holder på å sovne.         |
+| **holde på med + substantiv** | være opptatt med / jobbe med noe       | Han holder på med norsken sin. |
 
 ---
 

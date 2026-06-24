@@ -30,7 +30,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 - I have a bunch of blog posts in src/lib/posts directory. My project UI uses i18n with four languages at the moment and it will increase more in future. Many of posts are written Norwegian and English. I think there are two options for me. 1. make all the blog posts i18n, but files in messages directory will become larger. 2. Write it purely in Norwegian, as simple Norwegian as possible. 3. Only TL;DR has i18n, otherwise only Norwegian. So remove whole hard-coded English.
   What do you think?
-- supabase, Table Editor, profiles has study_goals. I think I should remove this column.
+
 - Mobile check
 - How about Start free button rather than login?
 - Grammtikk section for B2/C1
