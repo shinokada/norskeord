@@ -11,25 +11,30 @@
   ];
 
   const learnFeatures = [
+    { name: () => m.nav_norskproven(), link: '/norskproven' },
     { name: () => m.nav_grammar(), link: '/grammar' },
     { name: () => m.nav_quiz(), link: '/quiz' },
-    { name: () => m.nav_norskproven(), link: '/norskproven' }
+    { name: () => m.nav_blog(), link: '/blog' }
   ];
 
-  const resourcesPages = [
-    { name: () => m.nav_blog(), link: '/blog' },
+  const accountPages = [
     { name: () => m.nav_my_stats(), link: '/stats' },
+    { name: () => m.nav_my_profile(), link: '/my-profile' },
+    { name: () => m.footer_contact(), link: '/contact' }
+  ];
+
+  const helpPages = [
     { name: () => m.nav_plus(), link: '/plus' },
     { name: () => m.nav_guide(), link: '/guide' },
-    { name: () => m.footer_contact(), link: '/contact' }
+    { name: () => m.nav_faq(), link: '/faq' }
   ];
 </script>
 
 <footer class="border-t border-gray-200 bg-white py-8 dark:border-gray-700 dark:bg-blue-950">
   <div class="mx-auto max-w-4xl px-4">
     <div class="grid grid-cols-2 gap-8 sm:grid-cols-5">
-      <!-- Brand: 2 of 5 cols on desktop, full width on mobile -->
-      <div class="col-span-2">
+      <!-- Brand: 1 of 5 cols on desktop, full width on mobile -->
+      <div class="col-span-2 sm:col-span-1">
         <a
           href="/"
           class="text-base font-bold text-gray-900 visited:text-gray-900 dark:text-white dark:visited:text-white"
@@ -41,7 +46,7 @@
         <p class="mt-3 text-xs text-gray-800 dark:text-gray-300">v{__VERSION__}</p>
       </div>
 
-      <!-- Level: levels sub-column -->
+      <!-- Level -->
       <div>
         <p
           class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
@@ -61,7 +66,7 @@
         </ul>
       </div>
 
-      <!-- Learn: features sub-column -->
+      <!-- Learn -->
       <div>
         <p
           class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
@@ -81,15 +86,35 @@
         </ul>
       </div>
 
-      <!-- Resources: full width on mobile, 1 col on desktop -->
-      <div class="col-span-2 sm:col-span-1">
+      <!-- Account -->
+      <div>
         <p
           class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
-          {m.footer_resources()}
+          {m.footer_account()}
         </p>
         <ul class="space-y-2">
-          {#each resourcesPages as page (page.name)}
+          {#each accountPages as page (page.name)}
+            <li>
+              <a
+                href={page.link}
+                class="text-sm text-gray-800 visited:text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-white"
+                >{page.name()}</a
+              >
+            </li>
+          {/each}
+        </ul>
+      </div>
+
+      <!-- Help -->
+      <div>
+        <p
+          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
+        >
+          {m.nav_help()}
+        </p>
+        <ul class="space-y-2">
+          {#each helpPages as page (page.name)}
             <li>
               <a
                 href={page.link}

@@ -581,7 +581,7 @@
   // Segmented control helpers
   function segmentCls(active: boolean, color: 'green' | 'blue') {
     const base =
-      'flex-1 px-3 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-inset transition-colors';
+      'flex-1 px-3 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-inset transition-colors';
     if (color === 'green') {
       return active
         ? `${base} bg-green-700 text-white dark:bg-green-600`
@@ -594,8 +594,16 @@
 </script>
 
 <div class="flex w-full flex-col items-center">
-  <!-- Category header: prev ← | level label + title | → next -->
-  <div class="mt-10 mb-1 flex w-full items-center justify-between gap-2 px-2">
+  <!-- Category header: level label + title -->
+  <div class="mt-10 mb-0.5 flex w-full items-center justify-center px-2">
+    <h1 class="text-xl leading-tight text-center">
+      {#if level}<span class="mr-1 font-normal text-gray-700 dark:text-gray-300">{level} ·</span
+        >{/if}<span class="font-bold">{title}</span>
+    </h1>
+  </div>
+
+  <!-- Prev / Next category navigation -->
+  <div class="mb-1 flex w-full items-center justify-between gap-2 px-2">
     <!-- Prev category -->
     <div class="flex min-w-0 flex-1 items-center">
       {#if prevCategory}
@@ -608,14 +616,6 @@
           <span class="truncate">{prevCategory.label}</span>
         </a>
       {/if}
-    </div>
-
-    <!-- Centre: level badge + category title -->
-    <div class="flex flex-col items-center justify-center text-center">
-      <h1 class="text-xl leading-tight">
-        {#if level}<span class="mr-1 font-normal text-gray-700 dark:text-gray-300">{level} ·</span
-          >{/if}<span class="font-bold">{title}</span>
-      </h1>
     </div>
 
     <!-- Next category -->
@@ -763,7 +763,7 @@
   <div
     class="mt-3 flex w-full max-w-lg items-center justify-between rounded-md bg-gray-100 px-3 py-1 dark:bg-gray-800"
   >
-    <p class="text-sm text-gray-500 sm:text-base dark:text-gray-400">
+    <p class="text-base text-gray-500 dark:text-gray-400">
       {#if isTouch}
         {m.flashcard_hint_touch()}
       {:else}
@@ -772,7 +772,7 @@
       {/if}
     </p>
     <span
-      class="ml-3 shrink-0 text-sm font-medium text-gray-500 sm:text-base dark:text-gray-400"
+      class="ml-3 shrink-0 text-base font-medium text-gray-500 dark:text-gray-400"
       aria-label="Card {deck.length === 0
         ? 0
         : completed
@@ -784,10 +784,10 @@
   </div>
 
   <!-- Flashcard -->
-  <div class="flip-box mt-2 h-96 w-full bg-transparent md:w-1/2">
+  <div class="flip-box mt-2 min-h-96 w-full bg-transparent md:w-1/2">
     {#if deck.length === 0 && mode !== 'defnor'}
       <div
-        class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
+        class="flex min-h-96 flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
       >
         <p class="text-lg font-medium text-gray-700 dark:text-gray-300">
           {m.flashcard_no_items()}
@@ -795,14 +795,16 @@
       </div>
     {:else if deck.length === 0 && mode === 'defnor'}
       <div
-        class="flex h-full flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
+        class="flex min-h-96 flex-col items-center justify-center gap-4 rounded-xl bg-gray-100 dark:bg-gray-800"
       >
         <p class="text-lg font-medium text-gray-700 dark:text-gray-300">
           {m.flashcard_no_definitions_available()}
         </p>
       </div>
     {:else if completed}
-      <div class="bg-custom-blue flex h-full flex-col items-center justify-center gap-4 rounded-xl">
+      <div
+        class="bg-custom-blue flex min-h-96 flex-col items-center justify-center gap-4 rounded-xl"
+      >
         <p class="text-2xl font-semibold text-white">
           {m.flashcard_all_done({ count: String(deck.length) })}
         </p>
@@ -910,7 +912,7 @@
             class="ml-1 hidden rounded bg-red-800 px-1 text-xs opacity-70 min-[892px]:inline">1</kbd
           >
         </span>
-        {#if intervals}<span class="mt-auto text-xs opacity-75"
+        {#if intervals}<span class="mt-auto text-sm opacity-75"
             >{intervalLabel(intervals.again, 'again')}</span
           >{/if}
       </button>
@@ -929,7 +931,7 @@
             >2</kbd
           >
         </span>
-        {#if intervals}<span class="mt-auto text-xs opacity-75"
+        {#if intervals}<span class="mt-auto text-sm opacity-75"
             >{intervalLabel(intervals.hard, 'hard')}</span
           >{/if}
       </button>
@@ -948,7 +950,7 @@
             >3</kbd
           >
         </span>
-        {#if intervals}<span class="mt-auto text-xs opacity-75"
+        {#if intervals}<span class="mt-auto text-sm opacity-75"
             >{intervalLabel(intervals.good, 'good')}</span
           >{/if}
       </button>
@@ -967,7 +969,7 @@
             >4</kbd
           >
         </span>
-        {#if intervals}<span class="mt-auto text-xs opacity-75"
+        {#if intervals}<span class="mt-auto text-sm opacity-75"
             >{intervalLabel(intervals.easy, 'easy')}</span
           >{/if}
       </button>
@@ -1060,7 +1062,7 @@
       type="button"
       onclick={prev}
       aria-label={m.flashcard_previous()}
-      class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+      class="inline-flex min-h-[44px] w-full items-center bg-gray-300 p-3 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
       disabled={currentIndex <= 0 && !completed}
     >
       <ArrowLeft class="mr-4" />
@@ -1069,7 +1071,7 @@
 
     <button
       type="button"
-      class="inline-flex w-full items-center justify-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+      class="inline-flex min-h-[44px] w-full items-center justify-center bg-gray-300 p-3 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
       aria-label={m.flashcard_restart()}
       onclick={restart}
       disabled={entries.length === 0}
@@ -1081,7 +1083,7 @@
       type="button"
       onclick={next}
       aria-label={m.flashcard_next()}
-      class="inline-flex w-full items-center bg-gray-300 p-2 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+      class="inline-flex min-h-[44px] w-full items-center bg-gray-300 p-3 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
       disabled={completed || deck.length === 0}
     >
       <ArrowRight class="mr-4" />
@@ -1118,7 +1120,7 @@
   .flip-box-inner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 384px;
     text-align: center;
     transition: transform 0.4s;
     transform-style: preserve-3d;
