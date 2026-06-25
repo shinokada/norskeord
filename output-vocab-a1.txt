@@ -1,0 +1,557 @@
+
+=== normalise-norsk-field.mjs ===
+Mode: DRY RUN  |  Files: vocab-a1.json
+Noun batch size: 40
+
+
+────────────────────────────────────────────────────────────
+📄  vocab-a1.json  (474 entries)
+   Already OK: 204  |  Verbs/adj to fix: 10  |  Nouns needing gender lookup: 53
+   [DRY RUN] Would call API for 53 nouns in batches of 40
+
+   Changes planned (270):
+   v-a1-greetings-013
+     beklager  →  å beklage
+   v-a1-greetings-016
+     Hvordan har du det?  →  hvordan har du det?
+   v-a1-greetings-017
+     Jeg har det bra  →  jeg har det bra
+   v-a1-greetings-024
+     Hvor kommer du fra?  →  Hvor er du fra?
+   v-a1-numbers-001
+     én / ett  →  én
+   v-a1-colors-016
+     en farge  →  farge (en)
+   v-a1-family-001
+     en mor  →  mor (en)
+   v-a1-family-002
+     en far  →  far (en)
+   v-a1-family-003
+     et barn  →  barn (et)
+   v-a1-family-004
+     en sønn  →  sønn (en)
+   v-a1-family-005
+     en datter  →  datter (en)
+   v-a1-family-006
+     en bror  →  bror (en)
+   v-a1-family-007
+     en søster  →  søster (en)
+   v-a1-family-008
+     en bestemor  →  bestemor (en)
+   v-a1-family-009
+     en bestefar  →  bestefar (en)
+   v-a1-family-010
+     en onkel  →  onkel (en)
+   v-a1-family-011
+     en tante  →  tante (en)
+   v-a1-family-012
+     en fetter  →  fetter (en)
+   v-a1-family-013
+     en kusine  →  kusine (en)
+   v-a1-family-014
+     en mann  →  mann (en)
+   v-a1-family-015
+     en kone  →  kone (en)
+   v-a1-family-016
+     en familie  →  familie (en)
+   v-a1-family-017
+     en forelder  →  forelder (en)
+   v-a1-family-018
+     et søsken  →  søsken (et)
+   v-a1-family-019
+     et barnebarn  →  barnebarn (et)
+   v-a1-family-020
+     en baby  →  baby (en)
+   v-a1-family-021
+     en svigermor  →  svigermor (en)
+   v-a1-family-022
+     en svigerfar  →  svigerfar (en)
+   v-a1-family-023
+     en tvilling  →  tvilling (en)
+   v-a1-family-024
+     en nevø  →  nevø (en)
+   v-a1-family-025
+     en niese  →  niese (en)
+   v-a1-body-001
+     et hode  →  hode (et)
+   v-a1-body-002
+     et øye  →  øye (et)
+   v-a1-body-003
+     et øre  →  øre (et)
+   v-a1-body-004
+     en nese  →  nese (en)
+   v-a1-body-005
+     en munn  →  munn (en)
+   v-a1-body-006
+     en tann  →  tann (en)
+   v-a1-body-007
+     en hals  →  hals (en)
+   v-a1-body-008
+     en arm  →  arm (en)
+   v-a1-body-009
+     en hånd  →  hånd (en)
+   v-a1-body-010
+     en finger  →  finger (en)
+   v-a1-body-011
+     en mage  →  mage (en)
+   v-a1-body-012
+     et bein  →  bein (et)
+   v-a1-body-013
+     en fot  →  fot (en)
+   v-a1-body-014
+     en kropp  →  kropp (en)
+   v-a1-body-015
+     et hår  →  hår (et)
+   v-a1-body-016
+     en rygg  →  rygg (en)
+   v-a1-body-017
+     et ansikt  →  ansikt (et)
+   v-a1-body-018
+     en tå  →  tå (en)
+   v-a1-body-019
+     et bryst  →  bryst (et)
+   v-a1-body-020
+     en legg  →  legg (en)
+   v-a1-body-021
+     en tommelfinger  →  tommelfinger (en)
+   v-a1-food-001
+     et brød  →  brød (et)
+   v-a1-food-002
+     melk  →  melk (en/et?)
+   v-a1-food-003
+     et egg  →  egg (et)
+   v-a1-food-004
+     en ost  →  ost (en)
+   v-a1-food-005
+     smør  →  smør (en/et?)
+   v-a1-food-006
+     en fisk  →  fisk (en)
+   v-a1-food-007
+     kjøtt  →  kjøtt (en/et?)
+   v-a1-food-008
+     en kylling  →  kylling (en)
+   v-a1-food-009
+     en suppe  →  suppe (en)
+   v-a1-food-010
+     et eple  →  eple (et)
+   v-a1-food-011
+     en banan  →  banan (en)
+   v-a1-food-012
+     en appelsin  →  appelsin (en)
+   v-a1-food-013
+     en tomat  →  tomat (en)
+   v-a1-food-014
+     en potet  →  potet (en)
+   v-a1-food-015
+     en løk  →  løk (en)
+   v-a1-food-016
+     en gulrot  →  gulrot (en)
+   v-a1-food-017
+     vann  →  vann (en/et?)
+   v-a1-food-018
+     juice  →  juice (en/et?)
+   v-a1-food-019
+     kaffe  →  kaffe (en/et?)
+   v-a1-food-020
+     te  →  te (en/et?)
+   v-a1-food-021
+     sukker  →  sukker (en/et?)
+   v-a1-food-022
+     salt  →  salt (en/et?)
+   v-a1-food-023
+     en sjokolade  →  sjokolade (en)
+   v-a1-food-024
+     en is  →  is (en)
+   v-a1-food-025
+     ris  →  ris (en/et?)
+   v-a1-animals-001
+     en hund  →  hund (en)
+   v-a1-animals-002
+     en katt  →  katt (en)
+   v-a1-animals-003
+     en hest  →  hest (en)
+   v-a1-animals-004
+     ei ku  →  ku (en/et?)
+   v-a1-animals-005
+     en gris  →  gris (en)
+   v-a1-animals-006
+     en sau  →  sau (en)
+   v-a1-animals-007
+     en fugl  →  fugl (en)
+   v-a1-animals-008
+     en mus  →  mus (en)
+   v-a1-animals-009
+     en kanin  →  kanin (en)
+   v-a1-animals-010
+     et lam  →  lam (et)
+   v-a1-animals-011
+     en rev  →  rev (en)
+   v-a1-animals-012
+     en bjørn  →  bjørn (en)
+   v-a1-animals-013
+     et ekorn  →  ekorn (et)
+   v-a1-animals-014
+     en ulv  →  ulv (en)
+   v-a1-animals-015
+     en elg  →  elg (en)
+   v-a1-animals-016
+     en ørn  →  ørn (en)
+   v-a1-animals-017
+     en and  →  and (en)
+   v-a1-animals-018
+     ei høne  →  høne (en/et?)
+   v-a1-animals-019
+     en løve  →  løve (en)
+   v-a1-animals-020
+     en elefant  →  elefant (en)
+   v-a1-animals-021
+     en slange  →  slange (en)
+   v-a1-animals-022
+     en edderkopp  →  edderkopp (en)
+   v-a1-animals-023
+     en frosk  →  frosk (en)
+   v-a1-animals-024
+     en tiger  →  tiger (en)
+   v-a1-home-001
+     et hus  →  hus (et)
+   v-a1-home-002
+     en leilighet  →  leilighet (en)
+   v-a1-home-003
+     et rom  →  rom (et)
+   v-a1-home-004
+     et kjøkken  →  kjøkken (et)
+   v-a1-home-005
+     en stue  →  stue (en)
+   v-a1-home-006
+     et soverom  →  soverom (et)
+   v-a1-home-007
+     et baderom  →  baderom (et)
+   v-a1-home-008
+     ei dør  →  dør (en/et?)
+   v-a1-home-009
+     et vindu  →  vindu (et)
+   v-a1-home-010
+     et bord  →  bord (et)
+   v-a1-home-011
+     en stol  →  stol (en)
+   v-a1-home-012
+     en seng  →  seng (en)
+   v-a1-home-013
+     en sofa  →  sofa (en)
+   v-a1-home-014
+     et gulv  →  gulv (et)
+   v-a1-home-015
+     et tak  →  tak (et)
+   v-a1-home-016
+     en vegg  →  vegg (en)
+   v-a1-home-017
+     en lampe  →  lampe (en)
+   v-a1-home-018
+     et skap  →  skap (et)
+   v-a1-home-019
+     et kjøleskap  →  kjøleskap (et)
+   v-a1-home-020
+     en ovn  →  ovn (en)
+   v-a1-home-021
+     et teppe  →  teppe (et)
+   v-a1-home-022
+     en gardin  →  gardin (en)
+   v-a1-home-023
+     en nøkkel  →  nøkkel (en)
+   v-a1-home-024
+     en hage  →  hage (en)
+   v-a1-home-025
+     en adresse  →  adresse (en)
+   v-a1-days-months-001
+     mandag  →  mandag (en/et?)
+   v-a1-days-months-002
+     tirsdag  →  tirsdag (en/et?)
+   v-a1-days-months-003
+     onsdag  →  onsdag (en/et?)
+   v-a1-days-months-004
+     torsdag  →  torsdag (en/et?)
+   v-a1-days-months-005
+     fredag  →  fredag (en/et?)
+   v-a1-days-months-006
+     lørdag  →  lørdag (en/et?)
+   v-a1-days-months-007
+     søndag  →  søndag (en/et?)
+   v-a1-days-months-008
+     en dag  →  dag (en)
+   v-a1-days-months-009
+     en uke  →  uke (en)
+   v-a1-days-months-010
+     en måned  →  måned (en)
+   v-a1-days-months-011
+     et år  →  år (et)
+   v-a1-days-months-015
+     januar  →  januar (en/et?)
+   v-a1-days-months-016
+     februar  →  februar (en/et?)
+   v-a1-days-months-017
+     mars  →  mars (en/et?)
+   v-a1-days-months-018
+     april  →  april (en/et?)
+   v-a1-days-months-019
+     mai  →  mai (en/et?)
+   v-a1-days-months-020
+     juni  →  juni (en/et?)
+   v-a1-days-months-021
+     juli  →  juli (en/et?)
+   v-a1-days-months-022
+     august  →  august (en/et?)
+   v-a1-days-months-023
+     september  →  september (en/et?)
+   v-a1-days-months-024
+     oktober  →  oktober (en/et?)
+   v-a1-days-months-025
+     november  →  november (en/et?)
+   v-a1-days-months-026
+     desember  →  desember (en/et?)
+   v-a1-classroom-001
+     en skole  →  skole (en)
+   v-a1-classroom-002
+     en lærer  →  lærer (en)
+   v-a1-classroom-003
+     en elev  →  elev (en)
+   v-a1-classroom-004
+     et klasserom  →  klasserom (et)
+   v-a1-classroom-005
+     en bok  →  bok (en)
+   v-a1-classroom-006
+     en penn  →  penn (en)
+   v-a1-classroom-007
+     en blyant  →  blyant (en)
+   v-a1-classroom-008
+     et papir  →  papir (et)
+   v-a1-classroom-009
+     en ryggsekk  →  ryggsekk (en)
+   v-a1-classroom-010
+     ei tavle  →  tavle (en/et?)
+   v-a1-classroom-011
+     et viskelær  →  viskelær (et)
+   v-a1-classroom-012
+     en linjal  →  linjal (en)
+   v-a1-classroom-013
+     et hefte  →  hefte (et)
+   v-a1-classroom-014
+     en datamaskin  →  datamaskin (en)
+   v-a1-classroom-015
+     en ordbok  →  ordbok (en)
+   v-a1-classroom-016
+     et bilde  →  bilde (et)
+   v-a1-classroom-017
+     en lekse  →  lekse (en)
+   v-a1-classroom-018
+     en klasse  →  klasse (en)
+   v-a1-classroom-019
+     en time  →  time (en)
+   v-a1-classroom-020
+     et spørsmål  →  spørsmål (et)
+   v-a1-pronouns-and-questions-015
+     min / mi / mitt  →  min
+   v-a1-pronouns-and-questions-016
+     din / di / ditt  →  din
+   v-a1-pronouns-and-questions-019
+     vår / vårt  →  vår
+   v-a1-pronouns-and-questions-022
+     denne / dette  →  denne
+   v-a1-pronouns-and-questions-023
+     den / det  →  den
+   v-a1-weather-001
+     solen  →  sol (en/et?)
+   v-a1-weather-002
+     regn  →  regn (en/et?)
+   v-a1-weather-003
+     snø  →  snø (en/et?)
+   v-a1-weather-004
+     vind  →  vind (en/et?)
+   v-a1-weather-008
+     tordenvær  →  tordenvær (en/et?)
+   v-a1-weather-009
+     vær  →  vær (en/et?)
+   v-a1-weather-010
+     en grad  →  grad (en)
+   v-a1-weather-011
+     is  →  is (en/et?)
+   v-a1-weather-012
+     et lyn  →  lyn (et)
+   v-a1-weather-013
+     sol  →  sol (en/et?)
+   v-a1-weather-014
+     vinter  →  vinter (en/et?)
+   v-a1-weather-015
+     sommer  →  sommer (en/et?)
+   v-a1-weather-016
+     vår  →  vår (en/et?)
+   v-a1-weather-017
+     høst  →  høst (en/et?)
+   v-a1-transportation-001
+     en buss  →  buss (en)
+   v-a1-transportation-002
+     et tog  →  tog (et)
+   v-a1-transportation-003
+     en bil  →  bil (en)
+   v-a1-transportation-004
+     en sykkel  →  sykkel (en)
+   v-a1-transportation-005
+     en båt  →  båt (en)
+   v-a1-transportation-006
+     et fly  →  fly (et)
+   v-a1-transportation-008
+     en stasjon  →  stasjon (en)
+   v-a1-transportation-009
+     en flyplass  →  flyplass (en)
+   v-a1-transportation-010
+     et busstopp  →  busstopp (et)
+   v-a1-transportation-011
+     en billett  →  billett (en)
+   v-a1-transportation-012
+     en taxi  →  taxi (en)
+   v-a1-transportation-013
+     en trikk  →  trikk (en)
+   v-a1-transportation-014
+     en t-bane  →  t-bane (en)
+   v-a1-transportation-018
+     en vei  →  vei (en)
+   v-a1-transportation-019
+     en tunnel  →  tunnel (en)
+   v-a1-transportation-020
+     et kart  →  kart (et)
+   v-a1-household-items-001
+     et bad  →  bad (et)
+   v-a1-household-items-002
+     en pute  →  pute (en)
+   v-a1-household-items-003
+     en kopp  →  kopp (en)
+   v-a1-household-items-004
+     en tallerken  →  tallerken (en)
+   v-a1-household-items-005
+     et glass  →  glass (et)
+   v-a1-household-items-006
+     en skje  →  skje (en)
+   v-a1-household-items-007
+     en gaffel  →  gaffel (en)
+   v-a1-household-items-008
+     en kniv  →  kniv (en)
+   v-a1-household-items-009
+     ei bøtte  →  bøtte (en/et?)
+   v-a1-household-items-010
+     en kanne  →  kanne (en)
+   v-a1-household-items-011
+     en kurv  →  kurv (en)
+   v-a1-household-items-012
+     en hylle  →  hylle (en)
+   v-a1-household-items-013
+     et gulvteppe  →  gulvteppe (et)
+   v-a1-household-items-014
+     en vask  →  vask (en)
+   v-a1-household-items-015
+     en dusj  →  dusj (en)
+   v-a1-household-items-016
+     et speil  →  speil (et)
+   v-a1-household-items-017
+     en klokke  →  klokke (en)
+   v-a1-household-items-018
+     en spære  →  spære (en)
+   v-a1-household-items-019
+     et lys  →  lys (et)
+   v-a1-household-items-020
+     ei søppelbøtte  →  søppelbøtte (en/et?)
+   v-a1-household-items-021
+     et håndkle  →  håndkle (et)
+   v-a1-household-items-022
+     en stige  →  stige (en)
+   v-a1-household-items-023
+     en panne  →  panne (en)
+   v-a1-places-001
+     en butikk  →  butikk (en)
+   v-a1-places-002
+     et marked  →  marked (et)
+   v-a1-places-003
+     en park  →  park (en)
+   v-a1-places-004
+     et bibliotek  →  bibliotek (et)
+   v-a1-places-005
+     en bank  →  bank (en)
+   v-a1-places-006
+     en restaurant  →  restaurant (en)
+   v-a1-places-007
+     en kafe  →  kafe (en)
+   v-a1-places-008
+     en kirke  →  kirke (en)
+   v-a1-places-009
+     en gate  →  gate (en)
+   v-a1-places-010
+     et torg  →  torg (et)
+   v-a1-places-011
+     et museum  →  museum (et)
+   v-a1-places-012
+     et hotell  →  hotell (et)
+   v-a1-places-013
+     et svømmebasseng  →  svømmebasseng (et)
+   v-a1-places-014
+     et kjøpesenter  →  kjøpesenter (et)
+   v-a1-places-015
+     et kontor  →  kontor (et)
+   v-a1-places-016
+     en lekeplass  →  lekeplass (en)
+   v-a1-places-017
+     en treningssenter  →  treningssenter (en)
+   v-a1-places-018
+     en politistasjon  →  politistasjon (en)
+   v-a1-places-019
+     en brannstasjon  →  brannstasjon (en)
+   v-a1-places-020
+     et postkontor  →  postkontor (et)
+   v-a1-clothes-001
+     en jakke  →  jakke (en)
+   v-a1-clothes-002
+     en bukse  →  bukse (en)
+   v-a1-clothes-003
+     en skjorte  →  skjorte (en)
+   v-a1-clothes-004
+     en kjole  →  kjole (en)
+   v-a1-clothes-005
+     en genser  →  genser (en)
+   v-a1-clothes-006
+     en sko  →  sko (en)
+   v-a1-clothes-007
+     en sokk  →  sokk (en)
+   v-a1-clothes-008
+     en hatt  →  hatt (en)
+   v-a1-clothes-009
+     et skjerf  →  skjerf (et)
+   v-a1-clothes-010
+     hansker  →  hansker (en/et?)
+   v-a1-clothes-011
+     en frakk  →  frakk (en)
+   v-a1-clothes-012
+     en t-skjorte  →  t-skjorte (en)
+   v-a1-clothes-013
+     shorts  →  shorts (en/et?)
+   v-a1-clothes-014
+     et belte  →  belte (et)
+   v-a1-clothes-015
+     et slips  →  slips (et)
+   v-a1-clothes-016
+     en lue  →  lue (en)
+   v-a1-clothes-017
+     støvler  →  støvler (en/et?)
+   v-a1-clothes-018
+     sandaler  →  sandaler (en/et?)
+   v-a1-clothes-019
+     pyjamas  →  pyjamas (en/et?)
+   v-a1-clothes-020
+     undertøy  →  undertøy (en/et?)
+   v-a1-clothes-021
+     en dress  →  dress (en)
+   v-a1-clothes-022
+     en skjørt  →  skjørt (en)
+   v-a1-clothes-023
+     en regnjakke  →  regnjakke (en)
+
+   [DRY RUN] File not written.
+
+=== Done ===
+

@@ -1,6 +1,6 @@
 ---
-title: 'How to Improve Your Norwegian Listening'
-description: 'A level-by-level guide to the best Norwegian listening resources — from A1 podcasts to B2 dialect-heavy shows — with practical tips for getting more out of each session.'
+title: 'Slik blir du bedre til å lytte på norsk'
+description: 'En nivåbasert guide til de beste lytteressursene på norsk – fra A1-podcaster til B2-serier med tung dialekt – med praktiske tips for å få mer ut av hver økt.'
 slug: how-to-improve-listening
 cefr: [A1, A2, B1, B2]
 type: guide

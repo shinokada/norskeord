@@ -1,6 +1,6 @@
 ---
-title: 'Hallo — When Norwegians Actually Say It'
-description: '"Hallo" in Norwegian is not the same as "hello" in English. It is used on the phone and to get someone\'s attention — not as an everyday greeting when meeting people.'
+title: 'Hallo — når nordmenn faktisk bruker det'
+description: 'Hallo er ikke det samme som «hei» i norsk dagligtale. Det brukes når man svarer i telefonen eller vil få noens oppmerksomhet – ikke som en vanlig hilsen når man møter folk.'
 slug: hallo
 cefr: A1
 publishedAt: 2026-10-21
@@ -11,15 +11,13 @@ decks:
     label: A1 Greetings
 ---
 
-> **TL;DR:** **Hallo** in Norwegian is used when answering or making phone calls, and when someone isn't paying attention. It is not the standard greeting when meeting people — that's **hei**.
+> **Kort sagt:** **Hallo** brukes på norsk når man svarer eller ringer noen på telefon, og når noen ikke er oppmerksom. Det er ikke den vanlige hilsenen når man møter folk ansikt til ansikt — det er **hei**.
 
 ## Kort forklaring
 
 Norsk **hallo** ser ut som engelsk "hello," men de brukes ulikt.
 
 På engelsk er "hello" en generell hilsen du kan si i nesten alle situasjoner. På norsk er **hallo** mye mer begrenset — det passer til telefon og oppmerksomhet, men ikke som en vanlig hilsen ansikt til ansikt.
-
-_In English:_ Think of Norwegian **hallo** as being closer to "hello?" on the phone or "hey, are you listening?" — not to the everyday "hello" you use when meeting someone.
 
 ---
 

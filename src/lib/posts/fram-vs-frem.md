@@ -1,6 +1,6 @@
 ---
-title: 'Fram vs Frem — Is There a Difference?'
-description: 'Fram and frem mean the same thing. The difference is register: fram is more spoken and informal, frem is more standard in writing and on exams.'
+title: 'Fram vs frem — er det en forskjell?'
+description: 'Fram og frem betyr det samme. Forskjellen handler om stil: fram er mer muntlig og uformelt, mens frem er mer vanlig i skriftlig norsk og på eksamen.'
 slug: fram-frem
 cefr: A2
 publishedAt: 2026-07-08
@@ -14,42 +14,37 @@ decks:
     label: A1 Vocabulary
 ---
 
-> **TL;DR:** **Fram** and **frem** mean exactly the same thing. The difference is register — **fram** is more common in speech, **frem** is the standard written form. When in doubt, write **frem**.
+> **Kort sagt:** **Fram** og **frem** betyr nøyaktig det samme. Forskjellen handler om stil — **fram** er mer vanlig i tale, **frem** er den standard skriftlige formen. Når du er i tvil, skriv **frem**.
 
 ## Kort forklaring
 
 **Fram** og **frem** har samme betydning. Forskjellen handler om stil, ikke mening.
 
-- **fram** → more informal, very common in spoken Norwegian
-- **frem** → more standard, preferred in formal writing and on exams
+- **fram** → mer uformelt, svært vanlig i muntlig norsk
+- **frem** → mer standard, foretrukket i formell skriving og på eksamen
 
 Begge betyr:
 
-- forward / ahead
-- to the front
-- out (in expressions like _ta frem_, _komme frem_)
-
-_In English:_ Think of them as regional or stylistic variants of the same word — both are correct, but **frem** is the safer choice for writing.
+- fremover / videre
+- til fronten
+- frem (i uttrykk som _ta frem_, _komme frem_)
 
 ---
 
 ## Eksempler
 
 **1. Vi kom fram til Oslo. / Vi kom frem til Oslo.**
-_We arrived in Oslo._
-→ Both are correct. The **frem** form is more standard in writing.
+→ Begge er korrekte. Formen **frem** er mer standard i skriving.
 
 **2. Gå fram! / Gå frem!**
-_Go forward! / Move ahead!_
-→ Both used. **Gå fram** sounds natural in speech; **gå frem** in writing.
+→ Begge brukes. **Gå fram** høres naturlig ut i tale; **gå frem** i skriving.
 
 **3. Han tok fram boka. / Han tok frem boka.**
-_He took out the book._
-→ Again, identical meaning. **Frem** is the written standard.
+→ Igjen, identisk betydning. **Frem** er den skriftlige standarden.
 
 ---
 
-## Fast former — fixed forms
+## Faste former
 
 Noen sammensatte former er mye vanligere med **frem** i skriftlig norsk:
 
@@ -60,16 +55,16 @@ Noen sammensatte former er mye vanligere med **frem** i skriftlig norsk:
 | fram til        | frem til        | **frem til**        |
 | fram og tilbake | frem og tilbake | **frem og tilbake** |
 
-→ **Fremme** (arrived / at the front) er spesielt vanlig i skriving.
+→ **Fremme** (ankommet / i front) er spesielt vanlig i skriving.
 
 ---
 
 ## Sammenligningstabell
 
-| Form     | Stil               | Bruksområde                     |
-| -------- | ------------------ | ------------------------------- |
-| **fram** | informal / spoken  | everyday speech, casual writing |
-| **frem** | standard / written | formal writing, exams, Bokmål   |
+| Form     | Stil                 | Bruksområde                       |
+| -------- | -------------------- | --------------------------------- |
+| **fram** | uformelt / muntlig   | hverdagstale, uformell skriving   |
+| **frem** | standard / skriftlig | formell skriving, eksamen, bokmål |
 
 ---
 
@@ -78,7 +73,7 @@ Noen sammensatte former er mye vanligere med **frem** i skriftlig norsk:
 ❌ _Framover_ på en eksamen eller i et formelt brev.
 ⭕ _Fremover_ — den standard skriftlige formen.
 
-_Both forms are technically correct in Bokmål, but **frem-** forms are safer in formal contexts._
+_Begge formene er teknisk sett korrekte på bokmål, men **frem-**formene er tryggere i formelle sammenhenger._
 
 ---
 

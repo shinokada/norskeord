@@ -1,6 +1,6 @@
 ---
-title: 'Substantiv uten ubestemt artikkel — When to Drop «En» and «Et»'
-description: 'In Norwegian, indefinite articles are sometimes left out — with professions, nationalities, roles, and uncountable nouns. Learn when to drop «en/et» and when you must keep it.'
+title: 'Substantiv uten ubestemt artikkel — Når du dropper «en» og «et»'
+description: 'På norsk utelater man noen ganger den ubestemte artikkelen – ved yrker, nasjonaliteter, roller og ikke-tellelige substantiv. Lær når du skal droppe «en/et», og når du må ha den med.'
 slug: substantiv-uten-ubestemt-artikkel
 cefr: [B1, B2]
 type: guide
@@ -8,7 +8,7 @@ publishedAt: 2026-12-02
 tags: [grammar, nouns, articles]
 ---
 
-> **TL;DR:** Drop the indefinite article after **er** for professions, nationalities, and roles. Keep it when an adjective is added, when the noun is specific, or when emphasis matters.
+> **Kort sagt:** Dropp den ubestemte artikkelen etter **er** ved yrker, nasjonaliteter og roller. Behold den når det legges til et adjektiv, når substantivet er spesifikt, eller når du vil understreke noe.
 
 ## Kort forklaring
 
@@ -22,52 +22,42 @@ Dette er spesielt viktig for:
 4. Udelelelige størrelser (uncountable nouns) i faste uttrykk
 5. Faste verb + substantiv-kombinasjoner
 
-_In English:_ You say "She is a teacher" — with "a." Norwegian drops it: **Hun er lærer** (no «en»).
-
 ---
 
-## 1. Yrker — Professions
+## 1. Yrker — Yrkestitler
 
 Etter verbet **er** (is/are) dropper vi artikkelen foran yrkestitler.
 
 **1. Hun er lærer.**
-_She is a teacher._
-→ No «en» — this is the standard pattern.
+→ Ingen «en» — dette er standardmønsteret.
 
 **2. Han er lege.**
-_He is a doctor._
 
 **3. Jeg er student.**
-_I am a student._
 
 **4. De er ingeniører.**
-_They are engineers._
 
-**Merk:** The article returns the moment you add **an adjective** or give more specific information:
+**Merk:** Artikkelen kommer tilbake så snart du legger til et **adjektiv** eller gir mer spesifikk informasjon:
 
 - **Hun er en god lærer.** — She is a good teacher. ✅
 - **Han er en kjent lege.** — He is a well-known doctor. ✅
 - **Jeg er en travel student.** — I'm a busy student. ✅
 
-→ Adjective present = article required.
+→ Adjektiv til stede = artikkel påkrevd.
 
 ---
 
-## 2. Nasjonalitet — Nationality and origin
+## 2. Nasjonalitet — Nasjonalitet og opprinnelse
 
 Samme mønster som yrker. Etter **er** dropper vi artikkelen.
 
 **1. Han er nordmann.**
-_He is a Norwegian._
 
 **2. Hun er japaner.**
-_She is Japanese._
 
 **3. De er amerikanere.**
-_They are Americans._
 
 **4. Jeg er utlending.**
-_I am a foreigner._
 
 Her gjelder samme regel: adjektiv = artikkel tilbake.
 
@@ -75,34 +65,31 @@ Her gjelder samme regel: adjektiv = artikkel tilbake.
 
 ---
 
-## 3. Roller og funksjoner — Roles and functions
+## 3. Roller og funksjoner — Roller og funksjoner
 
 Artikkelen faller bort når substantivet beskriver en **funksjon eller rolle** en person har.
 
 **1. Han er far.**
-_He is a father._ → describing a role
+_He is a father._ → beskriver en rolle
 
 **2. Hun er mor.**
-_She is a mother._
 
 **3. Han ble valgt som president.**
-_He was elected as president._
 
 **4. Hun fungerer som leder.**
-_She acts as a leader._
 
-→ In role descriptions with **som** (as), the article is typically dropped.
+→ I rollebeskrivelser med **som** (as) dropper vi vanligvis artikkelen.
 
 ---
 
-## 4. Udelelige størrelser — Uncountable nouns in fixed expressions
+## 4. Udelelige størrelser — Udelelige substantiver i faste uttrykk
 
 Med udelelige (uncountable) substantiver i faste uttrykk brukes ingen artikkel.
 
 **Mat og drikke:**
 
 - **kaffe med melk** — coffee with milk
-- **en kopp kaffe** — a cup of coffee _(here the article belongs to «kopp», not «kaffe»)_
+- **en kopp kaffe** — a cup of coffee _(her tilhører artikkelen «kopp», ikke «kaffe»)_
 - **brød med smør** — bread with butter
 - **vann uten is** — water without ice
 
@@ -112,16 +99,16 @@ Med udelelige (uncountable) substantiver i faste uttrykk brukes ingen artikkel.
 - **lys fra vinduet** — light from the window
 - **luft og vann** — air and water
 
-→ These are general references to a substance, not a specific countable thing.
+→ Dette er generelle henvisninger til et stoff, ikke en bestemt tellbar ting.
 
-**Merk:** When the noun becomes specific or countable, the article returns:
+**Merk:** Når substantivet blir spesifikt eller tellbart, kommer artikkelen tilbake:
 
-- **en melk** — a milk _(e.g. buying a carton at a kiosk, informal)_
+- **en melk** — a milk _(f.eks. når man kjøper en kartong på kiosken, uformelt)_
 - **en god kaffe** — a good coffee
 
 ---
 
-## 5. Faste verb + substantiv — Fixed verb-noun combinations
+## 5. Faste verb + substantiv — Faste verb-substantiv-kombinasjoner
 
 Mange vanlige verb + substantiv-kombinasjoner brukes **uten artikkel**. Disse er faste uttrykk og må læres som chunks.
 
@@ -132,7 +119,7 @@ Mange vanlige verb + substantiv-kombinasjoner brukes **uten artikkel**. Disse er
 - **spille fotball** — to play football
 - **spille sjakkk** — to play chess
 
-→ _But:_ «Jeg spiller **en** sang» — I'm playing _a_ song. (specific)
+→ _But:_ «Jeg spiller **en** sang» — I'm playing _a_ song. (spesifikt)
 
 ### Mat og måltider
 

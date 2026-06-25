@@ -1,6 +1,6 @@
 ---
-title: 'Kose seg vs Nyte — Cosy Comfort or Conscious Pleasure?'
-description: '"Kose seg" is about warmth, comfort, and atmosphere. "Nyte" is about consciously appreciating something. Both translate as "enjoy" — but the feeling is different.'
+title: 'Kose seg vs Nyte — koselig velvære eller bevisst nytelse?'
+description: '«Kose seg» handler om varme, komfort og stemning. «Nyte» handler om å bevisst sette pris på noe. Begge kan virke like, men de brukes i ulike situasjoner.'
 slug: kose-vs-nyte
 cefr: A2
 publishedAt: 2026-08-26
@@ -14,69 +14,59 @@ decks:
     label: A1 Verbs
 ---
 
-> **TL;DR:** **Kose seg** = feeling cosy, comfortable, and at ease — often about atmosphere. **Nyte** = consciously appreciating something — often about quality. Both translate as "enjoy," but the feeling is different.
+> **Kort sagt:** **Kose seg** = en varm, komfortabel og avslappet følelse — ofte om stemning. **Nyte** = en bevisst og gjennomtenkt glede — ofte om kvalitet. Begge kan oversettes med «enjoy», men følelsen er forskjellig.
 
 ## Kort forklaring
 
 Begge verbene handler om å ha det godt, men de uttrykker ulik type glede:
 
-- **kose seg** → a warm, comfortable, relaxed feeling — often about atmosphere and togetherness
-- **nyte** → a more deliberate, conscious appreciation — often about quality or pleasure
-
-_In English:_ Both translate as "enjoy," but **kose seg** is closer to "have a cosy time" or "be comfortable," while **nyte** is closer to "savour" or "truly appreciate."
+- **kose seg** → en varm, komfortabel og avslappet følelse — ofte om stemning og samvær
+- **nyte** → en mer bevisst og gjennomtenkt glede — ofte om kvalitet eller nytelse
 
 ---
 
-## Kose seg — cosy comfort and atmosphere
+## Kose seg — koselig komfort og stemning
 
 **Kose seg** er et typisk norsk verb. Det handler om å trives, ha det hyggelig, og føle seg avslappet og komfortabel. Det er tett knyttet til norsk **koselighetsfølelse** — velvære i rolige, varme omgivelser.
 
 **1. Jeg koser meg hjemme med te og en bok.**
-_I'm having a cosy time at home with tea and a book._
-→ Warmth, comfort, relaxation — a classic **kose seg** setting.
+→ Varme, komfort og avslapning — en klassisk **kose seg**-situasjon.
 
 **2. Vi koste oss på festen.**
-_We had a great time at the party._
-→ Atmosphere and social comfort — not about any one thing in particular.
+→ Stemning og sosialt samvær — ikke knyttet til én bestemt ting.
 
 **3. Katten koser seg foran peisen.**
-_The cat is curled up contentedly in front of the fireplace._
-→ Physical comfort and ease.
+→ Fysisk komfort og velvære.
 
 Typiske **kose seg**-situasjoner:
 levende lys · sofa og teppe · kaffe med venner · rolig musikk · familie og hygge
 
 ---
 
-## Kose (med) — cuddle / snuggle
+## Kose (med) — kose og klappe
 
 **Kose** brukes også om fysisk nærhet og kjærlighet — uten **seg**:
 
 **Foreldrene koser med barnet.**
-_The parents are cuddling / snuggling with the child._
 
 **Hun koser med katten.**
-_She is stroking / cuddling the cat._
 
-→ This is a separate use — closer to "cuddle" or "snuggle" in English.
+→ Dette er en separat bruk — nærmere «cuddle» eller «snuggle» på engelsk.
 
 ---
 
-## Nyte — conscious appreciation
+## Nyte — bevisst glede
 
 **Nyte** uttrykker en mer bevisst og intens glede. Man **nyter** noe man virkelig setter pris på — ofte av høy kvalitet eller av spesiell verdi.
 
 **1. Jeg nyter solen.**
-_I'm savouring the sunshine._
-→ A deliberate, appreciative experience.
+→ En bevisst og takknemlig opplevelse.
 
 **2. Hun nyter ferien.**
-_She is truly enjoying the holiday._
-→ She is making the most of it — conscious appreciation.
+→ Hun tar ferien innover seg — en gjennomtenkt glede.
 
 **3. Han nøt maten.**
-_He savoured the food._
-→ The quality of the food is the focus — he truly appreciated it.
+→ Fokuset er matens kvalitet — han satte virkelig pris på den.
 
 Typiske **nyte**-situasjoner:
 god mat · vin · ferie · natur · stillhet · musikk · solnedgang
@@ -85,27 +75,25 @@ god mat · vin · ferie · natur · stillhet · musikk · solnedgang
 
 ## Sammenligning — samme situasjon, ulik følelse
 
-The difference comes through clearly when both verbs are used in the same context:
+Forskjellen kommer tydelig frem når begge verbene brukes i samme kontekst:
 
 **Jeg koser meg med kaffen.**
-_I'm having a cosy moment with my coffee._
-→ The atmosphere — warm, relaxed, comfortable.
+→ Stemningen — varm, avslappet og komfortabel.
 
 **Jeg nyter kaffen.**
-_I'm savouring the coffee._
-→ The quality — the coffee itself is really good, and I appreciate it.
+→ Kvaliteten — kaffen er virkelig god, og jeg setter pris på den.
 
-Both are natural — they just capture different things about the same cup of coffee.
+Begge er naturlige — de fanger bare ulike sider ved den samme koppen kaffe.
 
 ---
 
 ## Sammenligningstabell
 
-| Verb           | Fokus                        | Tone                 | Typisk kontekst       |
-| -------------- | ---------------------------- | -------------------- | --------------------- |
-| **kose seg**   | atmosphere / comfort / ease  | warm, informal       | sofa, friends, hygge  |
-| **nyte**       | quality / conscious pleasure | slightly more formal | food, nature, holiday |
-| **kose (med)** | physical affection           | warm, tender         | child, pet, partner   |
+| Verb           | Fokus                        | Tone             | Typisk kontekst       |
+| -------------- | ---------------------------- | ---------------- | --------------------- |
+| **kose seg**   | stemning / komfort / velvære | varm, uformell   | sofa, friends, hygge  |
+| **nyte**       | kvalitet / bevisst nytelse   | litt mer formell | food, nature, holiday |
+| **kose (med)** | fysisk nærhet                | varm, ømhet      | child, pet, partner   |
 
 ---
 
@@ -114,16 +102,16 @@ Both are natural — they just capture different things about the same cup of co
 ❌ Jeg koser meg maten.
 ⭕ Jeg nyter maten. / Jeg koser meg **med** maten.
 
-_When the focus is the quality of the food, **nyte** is more natural. **Kose seg med** takes the preposition **med**._
+_Når fokuset er matens kvalitet, er **nyte** mest naturlig. **Kose seg med** krever preposisjonen **med**._
 
 ---
 
 ## Husk dette
 
-- **kose seg** → cosy, warm, comfortable — atmosphere and wellbeing
-- **nyte** → savour, truly appreciate — quality and conscious pleasure
-- **kose (med)** → cuddle / snuggle — physical affection
-- **Kose seg** is one of the most distinctly Norwegian words in daily life
+- **kose seg** → koselig, varm, komfortabel — stemning og velvære
+- **nyte** → nyte, sette virkelig pris på — kvalitet og bevisst glede
+- **kose (med)** → kose og klappe — fysisk nærhet
+- **Kose seg** er et av de mest særpreget norske ordene i hverdagsspråket
 
 ---
 

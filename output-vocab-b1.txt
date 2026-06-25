@@ -1,0 +1,1451 @@
+
+=== normalise-norsk-field.mjs ===
+Mode: DRY RUN  |  Files: vocab-b1.json
+Noun batch size: 40
+
+
+────────────────────────────────────────────────────────────
+📄  vocab-b1.json  (1350 entries)
+   Already OK: 269  |  Verbs/adj to fix: 152  |  Nouns needing gender lookup: 425
+   [DRY RUN] Would call API for 425 nouns in batches of 40
+
+   Changes planned (717):
+   v-b1-accommodation-001
+     blokk  →  blokk (en/et?)
+   v-b1-accommodation-002
+     bolig  →  bolig (en/et?)
+   v-b1-accommodation-003
+     bygård  →  bygård (en/et?)
+   v-b1-accommodation-004
+     en balkong  →  balkong (en)
+   v-b1-accommodation-005
+     en eiendom  →  eiendom (en)
+   v-b1-accommodation-006
+     en etasje  →  etasje (en)
+   v-b1-accommodation-007
+     en heis  →  heis (en)
+   v-b1-accommodation-008
+     en husleie  →  husleie (en)
+   v-b1-accommodation-009
+     en kontrakt  →  kontrakt (en)
+   v-b1-accommodation-010
+     en leietaker  →  leietaker (en)
+   v-b1-accommodation-011
+     en megler  →  megler (en)
+   v-b1-accommodation-012
+     en oppussing  →  oppussing (en)
+   v-b1-accommodation-013
+     en utleier  →  utleier (en)
+   v-b1-accommodation-014
+     en visning  →  visning (en)
+   v-b1-accommodation-015
+     et boliglån  →  boliglån (et)
+   v-b1-accommodation-016
+     et borettslag  →  borettslag (et)
+   v-b1-accommodation-017
+     et depositum  →  depositum (et)
+   v-b1-accommodation-018
+     et fellesareal  →  fellesareal (et)
+   v-b1-accommodation-019
+     et nabolag  →  nabolag (et)
+   v-b1-accommodation-020
+     felleskostnad  →  felleskostnad (en/et?)
+   v-b1-accommodation-021
+     henge  →  å henge
+   v-b1-accommodation-022
+     leie  →  å leie
+   v-b1-accommodation-024
+     røykvarsler  →  røykvarsler (en/et?)
+   v-b1-accommodation-025
+     tak  →  tak (en/et?)
+   v-b1-accommodation-027
+     visning  →  visning (en/et?)
+   v-b1-arts-culture-002
+     band  →  band (en/et?)
+   v-b1-arts-culture-003
+     beundring  →  beundring (en/et?)
+   v-b1-arts-culture-004
+     dikter  →  dikter (en/et?)
+   v-b1-arts-culture-013
+     fortelling  →  fortelling (en/et?)
+   v-b1-arts-culture-014
+     klappe  →  å klappe
+   v-b1-arts-culture-020
+     regi  →  regi (en/et?)
+   v-b1-arts-culture-021
+     rytme  →  rytme (en/et?)
+   v-b1-arts-culture-022
+     skape  →  å skape
+   v-b1-arts-culture-023
+     skuespill  →  skuespill (en/et?)
+   v-b1-arts-culture-024
+     utstilling  →  utstilling (en/et?)
+   v-b1-arts-culture-026
+     vokalist  →  vokalist (en/et?)
+   v-b1-city-life-001
+     asfalt  →  asfalt (en/et?)
+   v-b1-city-life-002
+     bakgård  →  bakgård (en/et?)
+   v-b1-city-life-003
+     betong  →  betong (en/et?)
+   v-b1-city-life-004
+     bråk  →  bråk (en/et?)
+   v-b1-city-life-005
+     bære  →  å bære
+   v-b1-city-life-006
+     en boligpris  →  boligpris (en)
+   v-b1-city-life-007
+     en bydel  →  bydel (en)
+   v-b1-city-life-008
+     en bygning  →  bygning (en)
+   v-b1-city-life-009
+     en café  →  café (en)
+   v-b1-city-life-010
+     en infrastruktur  →  infrastruktur (en)
+   v-b1-city-life-011
+     en pendler  →  pendler (en)
+   v-b1-city-life-012
+     en rushtid  →  rushtid (en)
+   v-b1-city-life-013
+     et bysentrum  →  bysentrum (et)
+   v-b1-city-life-014
+     fortau  →  fortau (en/et?)
+   v-b1-city-life-015
+     fritidsklubb  →  fritidsklubb (en/et?)
+   v-b1-city-life-016
+     grøntareal  →  grøntareal (en/et?)
+   v-b1-city-life-017
+     handle  →  å handle
+   v-b1-city-life-018
+     husleie  →  husleie (en/et?)
+   v-b1-city-life-019
+     innflytter  →  innflytter (en/et?)
+   v-b1-city-life-021
+     klubb  →  klubb (en/et?)
+   v-b1-city-life-022
+     kollektivtransport  →  kollektivtransport (en/et?)
+   v-b1-city-life-024
+     nabolaget  →  nabolaget (en/et?)
+   v-b1-city-life-025
+     skilt  →  skilt (en/et?)
+   v-b1-city-life-026
+     store  →  stor
+   v-b1-city-life-027
+     støy  →  støy (en/et?)
+   v-b1-city-life-028
+     sykkelsti  →  sykkelsti (en/et?)
+   v-b1-city-life-030
+     trafikk  →  trafikk (en/et?)
+   v-b1-city-life-032
+     utkant  →  utkant (en/et?)
+   v-b1-communication-skills-002
+     alvor  →  alvor (en/et?)
+   v-b1-communication-skills-004
+     avbryte  →  å avbryte
+   v-b1-communication-skills-005
+     beskrive  →  å beskrive
+   v-b1-communication-skills-006
+     bringe  →  å bringe
+   v-b1-communication-skills-007
+     bud  →  bud (en/et?)
+   v-b1-communication-skills-008
+     diskusjon  →  diskusjon (en/et?)
+   v-b1-communication-skills-009
+     diskutere  →  å diskutere
+   v-b1-communication-skills-019
+     foreslå  →  å foreslå
+   v-b1-communication-skills-020
+     forhånd  →  forhånd (en/et?)
+   v-b1-communication-skills-025
+     forstyrre  →  å forstyrre
+   v-b1-communication-skills-026
+     godta  →  å godta
+   v-b1-communication-skills-028
+     hemmelighet  →  hemmelighet (en/et?)
+   v-b1-communication-skills-029
+     hviske  →  å hviske
+   v-b1-communication-skills-031
+     innlegg  →  innlegg (en/et?)
+   v-b1-communication-skills-032
+     inntrykk  →  inntrykk (en/et?)
+   v-b1-communication-skills-034
+     kalle  →  å kalle
+   v-b1-communication-skills-035
+     karakterisere  →  å karakterisere
+   v-b1-communication-skills-036
+     kikke  →  å kikke
+   v-b1-communication-skills-037
+     kommunikasjon  →  kommunikasjon (en/et?)
+   v-b1-communication-skills-038
+     kommunisere  →  å kommunisere
+   v-b1-communication-skills-040
+     latter  →  latter (en/et?)
+   v-b1-communication-skills-041
+     reagere  →  å reagere
+   v-b1-communication-skills-042
+     reaksjon  →  reaksjon (en/et?)
+   v-b1-communication-skills-043
+     råd  →  råd (en/et?)
+   v-b1-communication-skills-044
+     sjekke  →  å sjekke
+   v-b1-communication-skills-045
+     skjule  →  å skjule
+   v-b1-communication-skills-046
+     skrike  →  å skrike
+   v-b1-communication-skills-047
+     slutt  →  slutt (en/et?)
+   v-b1-communication-skills-048
+     spøk  →  spøk (en/et?)
+   v-b1-communication-skills-049
+     stirre  →  å stirre
+   v-b1-communication-skills-050
+     stund  →  stund (en/et?)
+   v-b1-communication-skills-052
+     tilby  →  å tilby
+   v-b1-communication-skills-053
+     tips  →  tips (en/et?)
+   v-b1-communication-skills-054
+     tull  →  tull (en/et?)
+   v-b1-communication-skills-055
+     tulle  →  å tulle
+   v-b1-communication-skills-058
+     utkikk  →  utkikk (en/et?)
+   v-b1-communication-skills-059
+     virke  →  å virke
+   v-b1-communication-skills-060
+     vise  →  å vise
+   v-b1-cooking-002
+     bøtte  →  bøtte (en/et?)
+   v-b1-cooking-003
+     en deig  →  deig (en)
+   v-b1-cooking-004
+     en dessert  →  dessert (en)
+   v-b1-cooking-005
+     en forrett  →  forrett (en)
+   v-b1-cooking-006
+     en meny  →  meny (en)
+   v-b1-cooking-007
+     en oppskrift  →  oppskrift (en)
+   v-b1-cooking-008
+     en porsjon  →  porsjon (en)
+   v-b1-cooking-009
+     en rett  →  rett (en)
+   v-b1-cooking-010
+     en saus  →  saus (en)
+   v-b1-cooking-011
+     et krydder  →  krydder (et)
+   v-b1-cooking-012
+     ete  →  å ete
+   v-b1-cooking-014
+     grille  →  å grille
+   v-b1-cooking-015
+     grøt  →  grøt (en/et?)
+   v-b1-cooking-016
+     kanelbolle  →  kanelbolle (en/et?)
+   v-b1-cooking-018
+     sjømat  →  sjømat (en/et?)
+   v-b1-cooking-019
+     skjære  →  å skjære
+   v-b1-cooking-020
+     smake  →  å smake
+   v-b1-cooking-022
+     veganer  →  veganer (en/et?)
+   v-b1-cooking-024
+     vegetarianer  →  vegetarianer (en/et?)
+   v-b1-cooking-026
+     yndlingsrett  →  yndlingsrett (en/et?)
+   v-b1-cooking-035
+     øse  →  å øse
+   v-b1-culture-001
+     arv  →  arv (en/et?)
+   v-b1-culture-002
+     bryggeri  →  bryggeri (en/et?)
+   v-b1-culture-003
+     bunad  →  bunad (en/et?)
+   v-b1-culture-004
+     drage  →  drage (en/et?)
+   v-b1-culture-005
+     en festival  →  festival (en)
+   v-b1-culture-006
+     en forestilling  →  forestilling (en)
+   v-b1-culture-007
+     en forfatter  →  forfatter (en)
+   v-b1-culture-008
+     en kunstner  →  kunstner (en)
+   v-b1-culture-009
+     en roman  →  roman (en)
+   v-b1-culture-010
+     en sjanger  →  sjanger (en)
+   v-b1-culture-011
+     en skulptur  →  skulptur (en)
+   v-b1-culture-012
+     en utstilling  →  utstilling (en)
+   v-b1-culture-013
+     et dikt  →  dikt (et)
+   v-b1-culture-014
+     et folkeeventyr  →  folkeeventyr (et)
+   v-b1-culture-015
+     et folkemuseum  →  folkemuseum (et)
+   v-b1-culture-016
+     et galleri  →  galleri (et)
+   v-b1-culture-017
+     et konserthus  →  konserthus (et)
+   v-b1-culture-018
+     et kunstverk  →  kunstverk (et)
+   v-b1-culture-019
+     et maleri  →  maleri (et)
+   v-b1-culture-020
+     et teater  →  teater (et)
+   v-b1-culture-021
+     eventyr  →  eventyr (en/et?)
+   v-b1-culture-025
+     handling  →  handling (en/et?)
+   v-b1-culture-026
+     kapell  →  kapell (en/et?)
+   v-b1-culture-027
+     kjennetegn  →  kjennetegn (en/et?)
+   v-b1-culture-029
+     kultur  →  kultur (en/et?)
+   v-b1-culture-031
+     reindrift  →  reindrift (en/et?)
+   v-b1-culture-034
+     sminke  →  sminke (en/et?)
+   v-b1-culture-035
+     stemning  →  stemning (en/et?)
+   v-b1-culture-036
+     symbolisere  →  å symbolisere
+   v-b1-culture-037
+     troll  →  troll (en/et?)
+   v-b1-culture-038
+     urfolk  →  urfolk (en/et?)
+   v-b1-culture-039
+     vesen  →  vesen (en/et?)
+   v-b1-economics-001
+     andel  →  andel (en/et?)
+   v-b1-economics-004
+     eksport  →  eksport (en/et?)
+   v-b1-economics-010
+     industri  →  industri (en/et?)
+   v-b1-economics-015
+     skipsfart  →  skipsfart (en/et?)
+   v-b1-economics-016
+     skipsflåte  →  skipsflåte (en/et?)
+   v-b1-economics-017
+     statsbudsjett  →  statsbudsjett (en/et?)
+   v-b1-economics-018
+     stige  →  å stige
+   v-b1-economics-020
+     vare  →  vare (en/et?)
+   v-b1-economics-022
+     velstand  →  velstand (en/et?)
+   v-b1-economics-024
+     øke  →  å øke
+   v-b1-education-001
+     aktivitet  →  aktivitet (en/et?)
+   v-b1-education-002
+     danne  →  å danne
+   v-b1-education-003
+     delta  →  å delta
+   v-b1-education-004
+     emne  →  emne (en/et?)
+   v-b1-education-005
+     en bachelor  →  bachelor (en)
+   v-b1-education-006
+     en eksamen  →  eksamen (en)
+   v-b1-education-007
+     en forelesning  →  forelesning (en)
+   v-b1-education-008
+     en høyskole  →  høyskole (en)
+   v-b1-education-009
+     en karakter  →  karakter (en)
+   v-b1-education-010
+     en master  →  master (en)
+   v-b1-education-011
+     en oppgave  →  oppgave (en)
+   v-b1-education-012
+     en stipend  →  stipend (en)
+   v-b1-education-013
+     en student  →  student (en)
+   v-b1-education-014
+     en utdanning  →  utdanning (en)
+   v-b1-education-015
+     en veileder  →  veileder (en)
+   v-b1-education-016
+     et fag  →  fag (et)
+   v-b1-education-017
+     et pensum  →  pensum (et)
+   v-b1-education-018
+     et seminar  →  seminar (et)
+   v-b1-education-019
+     et universitet  →  universitet (et)
+   v-b1-education-020
+     et vitnemål  →  vitnemål (et)
+   v-b1-education-022
+     fagskole  →  fagskole (en/et?)
+   v-b1-education-023
+     felt  →  felt (en/et?)
+   v-b1-education-027
+     høyskole  →  høyskole (en/et?)
+   v-b1-education-028
+     idrettsfag  →  idrettsfag (en/et?)
+   v-b1-education-031
+     karakter  →  karakter (en/et?)
+   v-b1-education-032
+     kompetansebevis  →  kompetansebevis (en/et?)
+   v-b1-education-033
+     kunnskap  →  kunnskap (en/et?)
+   v-b1-education-036
+     regel  →  regel (en/et?)
+   v-b1-education-037
+     skulke  →  å skulke
+   v-b1-education-038
+     stipend  →  stipend (en/et?)
+   v-b1-education-039
+     studium  →  studium (en/et?)
+   v-b1-education-041
+     utfordre  →  å utfordre
+   v-b1-education-043
+     vitnemål  →  vitnemål (en/et?)
+   v-b1-education-044
+     vurdering  →  vurdering (en/et?)
+   v-b1-environment-001
+     CO₂-avtrykk  →  CO₂-avtrykk (en/et?)
+   v-b1-environment-002
+     beskytte  →  å beskytte
+   v-b1-environment-005
+     en avskoging  →  avskoging (en)
+   v-b1-environment-006
+     en natur  →  natur (en)
+   v-b1-environment-007
+     en oversvømmelse  →  oversvømmelse (en)
+   v-b1-environment-008
+     en solenergi  →  solenergi (en)
+   v-b1-environment-009
+     en vindmølle  →  vindmølle (en)
+   v-b1-environment-010
+     et avfall  →  avfall (et)
+   v-b1-environment-011
+     et drivhus  →  drivhus (et)
+   v-b1-environment-012
+     et klimamål  →  klimamål (et)
+   v-b1-environment-013
+     et utslipp  →  utslipp (et)
+   v-b1-environment-015
+     forurense  →  å forurense
+   v-b1-environment-017
+     friluft  →  friluft (en/et?)
+   v-b1-environment-020
+     klimaendringer  →  klimaendringer (en/et?)
+   v-b1-environment-021
+     miljøet  →  miljøet (en/et?)
+   v-b1-environment-022
+     plast  →  plast (en/et?)
+   v-b1-environment-024
+     trussel  →  trussel (en/et?)
+   v-b1-environment-025
+     utslipp  →  utslipp (en/et?)
+   v-b1-environment-026
+     verne  →  å verne
+   v-b1-environment-030
+     ødelegge  →  å ødelegge
+   v-b1-environment-031
+     ødeleggelse  →  ødeleggelse (en/et?)
+   v-b1-expressing-opinions-003
+     argument  →  argument (en/et?)
+   v-b1-expressing-opinions-004
+     argumentere  →  å argumentere
+   v-b1-expressing-opinions-005
+     bagatell  →  bagatell (en/et?)
+   v-b1-expressing-opinions-008
+     berøre  →  å berøre
+   v-b1-expressing-opinions-010
+     blink  →  blink (en/et?)
+   v-b1-expressing-opinions-012
+     debatt  →  debatt (en/et?)
+   v-b1-expressing-opinions-016
+     ende  →  ende (en/et?)
+   v-b1-expressing-opinions-022
+     forakte  →  å forakte
+   v-b1-expressing-opinions-024
+     forsvare  →  å forsvare
+   v-b1-expressing-opinions-027
+     galt  →  gal
+   v-b1-expressing-opinions-028
+     gidde  →  å gidde
+   v-b1-expressing-opinions-033
+     hende  →  å hende
+   v-b1-expressing-opinions-041
+     kritisere  →  å kritisere
+   v-b1-expressing-opinions-061
+     synd  →  synd (en/et?)
+   v-b1-expressing-opinions-062
+     trenge  →  å trenge
+   v-b1-expressing-opinions-063
+     tvil  →  tvil (en/et?)
+   v-b1-expressing-opinions-073
+     velge  →  å velge
+   v-b1-expressing-opinions-076
+     ytring  →  ytring (en/et?)
+   v-b1-family-001
+     adopsjon  →  adopsjon (en/et?)
+   v-b1-family-002
+     ansvar  →  ansvar (en/et?)
+   v-b1-family-003
+     barneoppdragelse  →  barneoppdragelse (en/et?)
+   v-b1-family-011
+     fosterhjem  →  fosterhjem (en/et?)
+   v-b1-family-012
+     fødsel  →  fødsel (en/et?)
+   v-b1-family-014
+     gubbe  →  gubbe (en/et?)
+   v-b1-family-016
+     husdyr  →  husdyr (en/et?)
+   v-b1-family-017
+     husfred  →  husfred (en/et?)
+   v-b1-family-018
+     kjernefamilie  →  kjernefamilie (en/et?)
+   v-b1-family-020
+     spedbarn  →  spedbarn (en/et?)
+   v-b1-family-021
+     stemor  →  stemor (en/et?)
+   v-b1-family-023
+     tenåring  →  tenåring (en/et?)
+   v-b1-family-024
+     unge  →  unge (en/et?)
+   v-b1-family-025
+     vekke  →  å vekke
+   v-b1-finance-001
+     aksje  →  aksje (en/et?)
+   v-b1-finance-002
+     avdrag  →  avdrag (en/et?)
+   v-b1-finance-003
+     avdragstid  →  avdragstid (en/et?)
+   v-b1-finance-004
+     beløp  →  beløp (en/et?)
+   v-b1-finance-005
+     budsjett  →  budsjett (en/et?)
+   v-b1-finance-006
+     egenkapital  →  egenkapital (en/et?)
+   v-b1-finance-007
+     eie  →  å eie
+   v-b1-finance-008
+     en aksje  →  aksje (en)
+   v-b1-finance-009
+     en bankkonto  →  bankkonto (en)
+   v-b1-finance-010
+     en gjeld  →  gjeld (en)
+   v-b1-finance-011
+     en konto  →  konto (en)
+   v-b1-finance-012
+     en kontoutskrift  →  kontoutskrift (en)
+   v-b1-finance-013
+     en minibank  →  minibank (en)
+   v-b1-finance-014
+     en overføring  →  overføring (en)
+   v-b1-finance-015
+     en regning  →  regning (en)
+   v-b1-finance-016
+     en rente  →  rente (en)
+   v-b1-finance-017
+     et lån  →  lån (et)
+   v-b1-finance-018
+     fellesgjeld  →  fellesgjeld (en/et?)
+   v-b1-finance-019
+     fellesutgift  →  fellesutgift (en/et?)
+   v-b1-finance-020
+     folketrygd  →  folketrygd (en/et?)
+   v-b1-finance-021
+     forsikring  →  forsikring (en/et?)
+   v-b1-finance-022
+     gjeld  →  gjeld (en/et?)
+   v-b1-finance-023
+     inflasjon  →  inflasjon (en/et?)
+   v-b1-finance-024
+     investering  →  investering (en/et?)
+   v-b1-finance-025
+     kostnad  →  kostnad (en/et?)
+   v-b1-finance-026
+     kredittkort  →  kredittkort (en/et?)
+   v-b1-finance-027
+     regning  →  regning (en/et?)
+   v-b1-finance-028
+     rente  →  rente (en/et?)
+   v-b1-finance-029
+     skatt  →  skatt (en/et?)
+   v-b1-finance-030
+     skatteregel  →  skatteregel (en/et?)
+   v-b1-finance-031
+     spare  →  å spare
+   v-b1-finance-032
+     valuta  →  valuta (en/et?)
+   v-b1-finance-038
+     økonomi  →  økonomi (en/et?)
+   v-b1-fitness-004
+     bevegelse  →  bevegelse (en/et?)
+   v-b1-fitness-012
+     form  →  form (en/et?)
+   v-b1-fitness-014
+     idrett  →  idrett (en/et?)
+   v-b1-fitness-016
+     kappete  →  å kappete
+   v-b1-fitness-023
+     runde  →  runde (en/et?)
+   v-b1-fitness-027
+     turn  →  turn (en/et?)
+   v-b1-health-003
+     amme  →  å amme
+   v-b1-health-004
+     beskyttelse  →  beskyttelse (en/et?)
+   v-b1-health-005
+     diett  →  diett (en/et?)
+   v-b1-health-006
+     død  →  død (en/et?)
+   v-b1-health-008
+     eksem  →  eksem (en/et?)
+   v-b1-health-009
+     en behandling  →  behandling (en)
+   v-b1-health-010
+     en bivirkning  →  bivirkning (en)
+   v-b1-health-011
+     en blodprøve  →  blodprøve (en)
+   v-b1-health-012
+     en diagnose  →  diagnose (en)
+   v-b1-health-013
+     en ernæring  →  ernæring (en)
+   v-b1-health-014
+     en fastlege  →  fastlege (en)
+   v-b1-health-015
+     en livsstil  →  livsstil (en)
+   v-b1-health-016
+     en rehabilitering  →  rehabilitering (en)
+   v-b1-health-017
+     en røntgen  →  røntgen (en)
+   v-b1-health-018
+     en spesialist  →  spesialist (en)
+   v-b1-health-019
+     et symptom  →  symptom (et)
+   v-b1-health-020
+     faste  →  faste (en/et?)
+   v-b1-health-023
+     funksjonsevne  →  funksjonsevne (en/et?)
+   v-b1-health-026
+     hjerte  →  hjerte (en/et?)
+   v-b1-health-027
+     hjerteinfarkt  →  hjerteinfarkt (en/et?)
+   v-b1-health-028
+     hofte  →  hofte (en/et?)
+   v-b1-health-029
+     hudkrem  →  hudkrem (en/et?)
+   v-b1-health-030
+     kost  →  kost (en/et?)
+   v-b1-health-031
+     kosthold  →  kosthold (en/et?)
+   v-b1-health-034
+     rumpe  →  rumpe (en/et?)
+   v-b1-health-036
+     skade  →  skade (en/et?)
+   v-b1-health-040
+     snorke  →  å snorke
+   v-b1-health-041
+     sovne  →  å sovne
+   v-b1-health-042
+     spre  →  å spre
+   v-b1-health-043
+     spy  →  å spy
+   v-b1-health-044
+     stell  →  stell (en/et?)
+   v-b1-health-045
+     svekke  →  å svekke
+   v-b1-health-046
+     tabletter  →  tablett (en/et?)
+   v-b1-health-047
+     tannverk  →  tannverk (en/et?)
+   v-b1-health-048
+     tåle  →  å tåle
+   v-b1-health-050
+     unngå  →  å unngå
+   v-b1-health-052
+     vifte  →  vifte (en/et?)
+   v-b1-health-053
+     virus  →  virus (en/et?)
+   v-b1-healthcare-001
+     behandling  →  behandling (en/et?)
+   v-b1-healthcare-002
+     diagnose  →  diagnose (en/et?)
+   v-b1-healthcare-003
+     egenandel  →  egenandel (en/et?)
+   v-b1-healthcare-004
+     eldreomsorg  →  eldreomsorg (en/et?)
+   v-b1-healthcare-009
+     farmasi  →  farmasi (en/et?)
+   v-b1-healthcare-010
+     farmasøyt  →  farmasøyt (en/et?)
+   v-b1-healthcare-011
+     folkehelse  →  folkehelse (en/et?)
+   v-b1-healthcare-013
+     funksjonshemning  →  funksjonshemning (en/et?)
+   v-b1-healthcare-016
+     helsetjeneste  →  helsetjeneste (en/et?)
+   v-b1-healthcare-017
+     helsevesen  →  helsevesen (en/et?)
+   v-b1-healthcare-018
+     hjemmehjelp  →  hjemmehjelp (en/et?)
+   v-b1-healthcare-019
+     karantene  →  karantene (en/et?)
+   v-b1-healthcare-022
+     rullestol  →  rullestol (en/et?)
+   v-b1-healthcare-023
+     rusproblem  →  rusproblem (en/et?)
+   v-b1-healthcare-025
+     sykdom  →  sykdom (en/et?)
+   v-b1-healthcare-027
+     symptom  →  symptom (en/et?)
+   v-b1-healthcare-028
+     taushetsplikt  →  taushetsplikt (en/et?)
+   v-b1-healthcare-029
+     trengs  →  å trenge
+   v-b1-healthcare-031
+     undersøkelse  →  undersøkelse (en/et?)
+   v-b1-healthcare-032
+     vaksine  →  vaksine (en/et?)
+   v-b1-journalism-002
+     artikkel  →  artikkel (en/et?)
+   v-b1-journalism-003
+     avsløre  →  å avsløre
+   v-b1-journalism-010
+     framstille  →  å framstille
+   v-b1-journalism-011
+     journalist  →  journalist (en/et?)
+   v-b1-journalism-012
+     kilde  →  kilde (en/et?)
+   v-b1-journalism-014
+     kronikk  →  kronikk (en/et?)
+   v-b1-journalism-016
+     redaktør  →  redaktør (en/et?)
+   v-b1-journalism-018
+     reportasje  →  reportasje (en/et?)
+   v-b1-language-learning-003
+     assosiasjon  →  assosiasjon (en/et?)
+   v-b1-language-learning-005
+     begrep  →  begrep (en/et?)
+   v-b1-language-learning-006
+     beherske  →  å beherske
+   v-b1-language-learning-007
+     betydning  →  betydning (en/et?)
+   v-b1-language-learning-008
+     definere  →  å definere
+   v-b1-language-learning-009
+     dialekt  →  dialekt (en/et?)
+   v-b1-language-learning-020
+     flyt  →  flyt (en/et?)
+   v-b1-language-learning-021
+     gjentakelse  →  gjentakelse (en/et?)
+   v-b1-language-learning-027
+     tolk  →  tolk (en/et?)
+   v-b1-media-001
+     annonse  →  annonse (en/et?)
+   v-b1-media-002
+     annonsere  →  å annonsere
+   v-b1-media-004
+     en avis  →  avis (en)
+   v-b1-media-005
+     en blogg  →  blogg (en)
+   v-b1-media-006
+     en debatt  →  debatt (en)
+   v-b1-media-007
+     en influenser  →  influenser (en)
+   v-b1-media-008
+     en kilde  →  kilde (en)
+   v-b1-media-009
+     en kommentar  →  kommentar (en)
+   v-b1-media-010
+     en nyhet  →  nyhet (en)
+   v-b1-media-011
+     en overskrift  →  overskrift (en)
+   v-b1-media-012
+     en podcast  →  podcast (en)
+   v-b1-media-013
+     en reklame  →  reklame (en)
+   v-b1-media-014
+     en reporter  →  reporter (en)
+   v-b1-media-015
+     et intervju  →  intervju (et)
+   v-b1-media-016
+     et nettsted  →  nettsted (et)
+   v-b1-media-018
+     kanal  →  kanal (en/et?)
+   v-b1-media-019
+     medier  →  medier (en/et?)
+   v-b1-media-020
+     personvern  →  personvern (en/et?)
+   v-b1-media-021
+     pressefrihet  →  pressefrihet (en/et?)
+   v-b1-media-022
+     redigere  →  å redigere
+   v-b1-media-023
+     sendetid  →  sendetid (en/et?)
+   v-b1-media-025
+     tv-serie  →  tv-serie (en/et?)
+   v-b1-mental-wellbeing-014
+     følelse  →  følelse (en/et?)
+   v-b1-mental-wellbeing-015
+     glede  →  glede (en/et?)
+   v-b1-mental-wellbeing-017
+     gråt  →  gråt (en/et?)
+   v-b1-mental-wellbeing-018
+     humør  →  humør (en/et?)
+   v-b1-mental-wellbeing-029
+     ro  →  ro (en/et?)
+   v-b1-mental-wellbeing-030
+     samvittighet  →  samvittighet (en/et?)
+   v-b1-mental-wellbeing-033
+     selvmord  →  selvmord (en/et?)
+   v-b1-mental-wellbeing-034
+     sinne  →  sinne (en/et?)
+   v-b1-mental-wellbeing-035
+     skam  →  skam (en/et?)
+   v-b1-mental-wellbeing-036
+     skremme  →  å skremme
+   v-b1-mental-wellbeing-037
+     sorg  →  sorg (en/et?)
+   v-b1-mental-wellbeing-038
+     stolthet  →  stolthet (en/et?)
+   v-b1-mental-wellbeing-041
+     sukke  →  å sukke
+   v-b1-mental-wellbeing-046
+     trives  →  å trives
+   v-b1-mental-wellbeing-051
+     uvisshet  →  uvisshet (en/et?)
+   v-b1-personal-growth-001
+     akseptere  →  å akseptere
+   v-b1-personal-growth-004
+     behov  →  behov (en/et?)
+   v-b1-personal-growth-006
+     drøm  →  drøm (en/et?)
+   v-b1-personal-growth-019
+     evne  →  evne (en/et?)
+   v-b1-personal-growth-020
+     ferdighet  →  ferdighet (en/et?)
+   v-b1-personal-growth-021
+     forandring  →  forandring (en/et?)
+   v-b1-personal-growth-023
+     fortjene  →  å fortjene
+   v-b1-personal-growth-025
+     fristelse  →  fristelse (en/et?)
+   v-b1-personal-growth-027
+     huske  →  å huske
+   v-b1-personal-growth-028
+     initiativ  →  initiativ (en/et?)
+   v-b1-personal-growth-029
+     innsats  →  innsats (en/et?)
+   v-b1-personal-growth-031
+     kjempe  →  å kjempe
+   v-b1-personal-growth-035
+     reflektere  →  å reflektere
+   v-b1-personal-growth-036
+     rutine  →  rutine (en/et?)
+   v-b1-personal-growth-037
+     samle  →  å samle
+   v-b1-personal-growth-040
+     slite  →  å slite
+   v-b1-personal-growth-042
+     stimulere  →  å stimulere
+   v-b1-personal-growth-043
+     streve  →  å streve
+   v-b1-personal-growth-045
+     taper  →  taper (en/et?)
+   v-b1-personal-growth-046
+     trekk  →  trekk (en/et?)
+   v-b1-personal-growth-048
+     tørre  →  å tørre
+   v-b1-personal-growth-050
+     uflaks  →  uflaks (en/et?)
+   v-b1-personal-growth-052
+     utfordring  →  utfordring (en/et?)
+   v-b1-personal-growth-054
+     utseende  →  utseende (en/et?)
+   v-b1-personal-growth-055
+     vane  →  vane (en/et?)
+   v-b1-personal-growth-057
+     vilje  →  vilje (en/et?)
+   v-b1-personal-growth-058
+     vokse  →  å vokse
+   v-b1-personal-growth-059
+     våge  →  å våge
+   v-b1-politics-002
+     asylsøker  →  asylsøker (en/et?)
+   v-b1-politics-003
+     avgi  →  å avgi
+   v-b1-politics-004
+     begrense  →  å begrense
+   v-b1-politics-005
+     bekjempe  →  å bekjempe
+   v-b1-politics-006
+     bistand  →  bistand (en/et?)
+   v-b1-politics-007
+     demokrati  →  demokrati (en/et?)
+   v-b1-politics-009
+     domstol  →  domstol (en/et?)
+   v-b1-politics-026
+     erklæring  →  erklæring (en/et?)
+   v-b1-politics-031
+     forbud  →  forbud (en/et?)
+   v-b1-politics-033
+     fred  →  fred (en/et?)
+   v-b1-politics-034
+     grasrotbevegelse  →  grasrotbevegelse (en/et?)
+   v-b1-politics-035
+     grunnlov  →  grunnlov (en/et?)
+   v-b1-politics-036
+     inngå  →  å inngå
+   v-b1-politics-037
+     innvandring  →  innvandring (en/et?)
+   v-b1-politics-039
+     kampsak  →  kampsak (en/et?)
+   v-b1-politics-040
+     krig  →  krig (en/et?)
+   v-b1-politics-042
+     regime  →  regime (en/et?)
+   v-b1-politics-044
+     skandale  →  skandale (en/et?)
+   v-b1-politics-045
+     statsborger  →  statsborger (en/et?)
+   v-b1-politics-046
+     stemmerett  →  stemmerett (en/et?)
+   v-b1-politics-047
+     trosfrihet  →  trosfrihet (en/et?)
+   v-b1-politics-048
+     union  →  union (en/et?)
+   v-b1-politics-049
+     utjevne  →  å utjevne
+   v-b1-politics-050
+     vedta  →  å vedta
+   v-b1-reasoning-001
+     alternativ  →  alternativ (en/et?)
+   v-b1-reasoning-003
+     del  →  del (en/et?)
+   v-b1-reasoning-011
+     fordel  →  fordel (en/et?)
+   v-b1-reasoning-013
+     fortsette  →  å fortsette
+   v-b1-reasoning-015
+     grunn  →  grunn (en/et?)
+   v-b1-reasoning-016
+     grunnlag  →  grunnlag (en/et?)
+   v-b1-reasoning-017
+     idé  →  idé (en/et?)
+   v-b1-reasoning-019
+     innse  →  å innse
+   v-b1-reasoning-021
+     leting  →  leting (en/et?)
+   v-b1-reasoning-027
+     risiko  →  risiko (en/et?)
+   v-b1-reasoning-028
+     sammenlikne  →  å sammenlikne
+   v-b1-reasoning-030
+     skyldes  →  å skyldes
+   v-b1-reasoning-031
+     tilfelle  →  tilfelle (en/et?)
+   v-b1-reasoning-033
+     unntak  →  unntak (en/et?)
+   v-b1-reasoning-034
+     utvei  →  utvei (en/et?)
+   v-b1-reasoning-035
+     variere  →  å variere
+   v-b1-reasoning-036
+     vurdere  →  å vurdere
+   v-b1-reasoning-050
+     årsak  →  årsak (en/et?)
+   v-b1-relationships-002
+     dele  →  å dele
+   v-b1-relationships-004
+     ekteskap  →  ekteskap (en/et?)
+   v-b1-relationships-005
+     en kjæreste  →  kjæreste (en)
+   v-b1-relationships-006
+     en konflikt  →  konflikt (en)
+   v-b1-relationships-007
+     en krangel  →  krangel (en)
+   v-b1-relationships-008
+     en skilsmisse  →  skilsmisse (en)
+   v-b1-relationships-009
+     en venn  →  venn (en)
+   v-b1-relationships-010
+     ensomhet  →  ensomhet (en/et?)
+   v-b1-relationships-011
+     et forhold  →  forhold (et)
+   v-b1-relationships-013
+     forhold  →  forhold (en/et?)
+   v-b1-relationships-015
+     kjefte  →  å kjefte
+   v-b1-relationships-016
+     kjærlighet  →  kjærlighet (en/et?)
+   v-b1-relationships-017
+     klemme  →  å klemme
+   v-b1-relationships-018
+     konflikt  →  konflikt (en/et?)
+   v-b1-relationships-019
+     kontakt  →  kontakt (en/et?)
+   v-b1-relationships-020
+     krangle  →  å krangle
+   v-b1-relationships-022
+     lojalitet  →  lojalitet (en/et?)
+   v-b1-relationships-023
+     omsorg  →  omsorg (en/et?)
+   v-b1-relationships-025
+     respekt  →  respekt (en/et?)
+   v-b1-relationships-026
+     respektere  →  å respektere
+   v-b1-relationships-027
+     samboer  →  samboer (en/et?)
+   v-b1-relationships-028
+     samliv  →  samliv (en/et?)
+   v-b1-relationships-029
+     savne  →  å savne
+   v-b1-relationships-032
+     skilsmisse  →  skilsmisse (en/et?)
+   v-b1-relationships-033
+     såre  →  å såre
+   v-b1-relationships-034
+     tillit  →  tillit (en/et?)
+   v-b1-relationships-036
+     uvenn  →  uvenn (en/et?)
+   v-b1-relationships-037
+     vennskap  →  vennskap (en/et?)
+   v-b1-science-nature-003
+     brønn  →  brønn (en/et?)
+   v-b1-science-nature-004
+     effekt  →  effekt (en/et?)
+   v-b1-science-nature-005
+     eksistere  →  å eksistere
+   v-b1-science-nature-006
+     eksplodere  →  å eksplodere
+   v-b1-science-nature-022
+     forsker  →  forsker (en/et?)
+   v-b1-science-nature-023
+     forskning  →  forskning (en/et?)
+   v-b1-science-nature-026
+     hav  →  hav (en/et?)
+   v-b1-science-nature-027
+     hogge  →  å hogge
+   v-b1-science-nature-028
+     høyde  →  høyde (en/et?)
+   v-b1-science-nature-029
+     isbre  →  isbre (en/et?)
+   v-b1-science-nature-030
+     jeger  →  jeger (en/et?)
+   v-b1-science-nature-034
+     kraft  →  kraft (en/et?)
+   v-b1-science-nature-037
+     påvise  →  å påvise
+   v-b1-science-nature-038
+     renne  →  å renne
+   v-b1-science-nature-039
+     skog  →  skog (en/et?)
+   v-b1-science-nature-040
+     smelte  →  å smelte
+   v-b1-science-nature-041
+     storm  →  storm (en/et?)
+   v-b1-science-nature-042
+     teig  →  teig (en/et?)
+   v-b1-science-nature-044
+     tømmer  →  tømmer (en/et?)
+   v-b1-science-nature-047
+     uvær  →  uvær (en/et?)
+   v-b1-science-nature-053
+     øks  →  øks (en/et?)
+   v-b1-society-004
+     arena  →  arena (en/et?)
+   v-b1-society-005
+     arrestere  →  å arrestere
+   v-b1-society-006
+     autoritet  →  autoritet (en/et?)
+   v-b1-society-007
+     bakgrunn  →  bakgrunn (en/et?)
+   v-b1-society-009
+     befolkning  →  befolkning (en/et?)
+   v-b1-society-011
+     bonde  →  bonde (en/et?)
+   v-b1-society-012
+     bot  →  bot (en/et?)
+   v-b1-society-013
+     bygd  →  bygd (en/et?)
+   v-b1-society-014
+     demonstrasjon  →  demonstrasjon (en/et?)
+   v-b1-society-015
+     demonstrere  →  å demonstrere
+   v-b1-society-017
+     drepe  →  å drepe
+   v-b1-society-019
+     emigrere  →  å emigrere
+   v-b1-society-027
+     endring  →  endring (en/et?)
+   v-b1-society-030
+     evakuering  →  evakuering (en/et?)
+   v-b1-society-032
+     fanatiker  →  fanatiker (en/et?)
+   v-b1-society-034
+     fellesskap  →  fellesskap (en/et?)
+   v-b1-society-035
+     fengsel  →  fengsel (en/et?)
+   v-b1-society-036
+     flykte  →  å flykte
+   v-b1-society-037
+     flyktning  →  flyktning (en/et?)
+   v-b1-society-038
+     flyktningsleir  →  flyktningsleir (en/et?)
+   v-b1-society-039
+     folketall  →  folketall (en/et?)
+   v-b1-society-040
+     forbrytelse  →  forbrytelse (en/et?)
+   v-b1-society-042
+     forening  →  forening (en/et?)
+   v-b1-society-043
+     fritidstilbud  →  fritidstilbud (en/et?)
+   v-b1-society-044
+     generasjon  →  generasjon (en/et?)
+   v-b1-society-045
+     gjelde  →  å gjelde
+   v-b1-society-048
+     hensyn  →  hensyn (en/et?)
+   v-b1-society-049
+     hets  →  hets (en/et?)
+   v-b1-society-051
+     industrialisering  →  industrialisering (en/et?)
+   v-b1-society-052
+     innflytelse  →  innflytelse (en/et?)
+   v-b1-society-053
+     innvandrer  →  innvandrer (en/et?)
+   v-b1-society-054
+     institusjon  →  institusjon (en/et?)
+   v-b1-society-056
+     introduksjonsprogram  →  introduksjonsprogram (en/et?)
+   v-b1-society-057
+     kollektiv  →  kollektiv (en/et?)
+   v-b1-society-059
+     kontroll  →  kontroll (en/et?)
+   v-b1-society-060
+     krenkelse  →  krenkelse (en/et?)
+   v-b1-society-065
+     rasisme  →  rasisme (en/et?)
+   v-b1-society-066
+     rettighet  →  rettighet (en/et?)
+   v-b1-society-067
+     rolle  →  rolle (en/et?)
+   v-b1-society-069
+     samfunn  →  samfunn (en/et?)
+   v-b1-society-070
+     sikre  →  å sikre
+   v-b1-society-072
+     småfolk  →  småfolk (en/et?)
+   v-b1-society-074
+     straffe  →  å straffe
+   v-b1-society-075
+     tilhøre  →  å tilhøre
+   v-b1-society-076
+     tillatelse  →  tillatelse (en/et?)
+   v-b1-society-079
+     transperson  →  transperson (en/et?)
+   v-b1-society-080
+     true  →  å true
+   v-b1-society-082
+     undertrykt  →  undertrykke
+   v-b1-society-083
+     ungdom  →  ungdom (en/et?)
+   v-b1-society-084
+     urett  →  urett (en/et?)
+   v-b1-society-085
+     utrydde  →  å utrydde
+   v-b1-society-086
+     utvandre  →  å utvandre
+   v-b1-society-088
+     velferdsstat  →  velferdsstat (en/et?)
+   v-b1-society-090
+     verdi  →  verdi (en/et?)
+   v-b1-society-091
+     vold  →  vold (en/et?)
+   v-b1-sustainability-004
+     bensinbil  →  bensinbil (en/et?)
+   v-b1-sustainability-006
+     dyrke  →  å dyrke
+   v-b1-sustainability-007
+     elbil  →  elbil (en/et?)
+   v-b1-sustainability-008
+     elektrisitet  →  elektrisitet (en/et?)
+   v-b1-sustainability-013
+     forbruk  →  forbruk (en/et?)
+   v-b1-sustainability-014
+     forbruke  →  å forbruke
+   v-b1-sustainability-019
+     jordbruk  →  jordbruk (en/et?)
+   v-b1-sustainability-021
+     klimagass  →  klimagass (en/et?)
+   v-b1-sustainability-023
+     redusere  →  å redusere
+   v-b1-sustainability-025
+     ressurs  →  ressurs (en/et?)
+   v-b1-sustainability-026
+     solcellepanel  →  solcellepanel (en/et?)
+   v-b1-sustainability-028
+     sortere  →  å sortere
+   v-b1-sustainability-031
+     vindturbin  →  vindturbin (en/et?)
+   v-b1-technology-001
+     app  →  app (en/et?)
+   v-b1-technology-002
+     automatisering  →  automatisering (en/et?)
+   v-b1-technology-004
+     avatar  →  avatar (en/et?)
+   v-b1-technology-005
+     batteri  →  batteri (en/et?)
+   v-b1-technology-006
+     chatte  →  å chatte
+   v-b1-technology-007
+     cybersikkerhet  →  cybersikkerhet (en/et?)
+   v-b1-technology-008
+     en algoritme  →  algoritme (en)
+   v-b1-technology-009
+     en robot  →  robot (en)
+   v-b1-technology-010
+     en server  →  server (en)
+   v-b1-technology-011
+     erstatte  →  å erstatte
+   v-b1-technology-012
+     et nettverk  →  nettverk (et)
+   v-b1-technology-013
+     et søkemotorsøk  →  søkemotorsøk (et)
+   v-b1-technology-014
+     fungere  →  å fungere
+   v-b1-technology-015
+     installere  →  å installere
+   v-b1-technology-017
+     registrere  →  å registrere
+   v-b1-technology-018
+     robot  →  robot (en/et?)
+   v-b1-technology-019
+     smarttelefon  →  smarttelefon (en/et?)
+   v-b1-technology-020
+     teknologi  →  teknologi (en/et?)
+   v-b1-technology-025
+     utvikle  →  å utvikle
+   v-b1-technology-026
+     utvikling  →  utvikling (en/et?)
+   v-b1-technology-027
+     versjon  →  versjon (en/et?)
+   v-b1-traditions-001
+     17. mai  →  17. mai (en/et?)
+   v-b1-traditions-002
+     advent  →  advent (en/et?)
+   v-b1-traditions-003
+     allehelgensdag  →  allehelgensdag (en/et?)
+   v-b1-traditions-004
+     anledning  →  anledning (en/et?)
+   v-b1-traditions-005
+     bisettelse  →  bisettelse (en/et?)
+   v-b1-traditions-006
+     bål  →  bål (en/et?)
+   v-b1-traditions-007
+     dugnad  →  dugnad (en/et?)
+   v-b1-traditions-008
+     en bunadsskjorte  →  bunadsskjorte (en)
+   v-b1-traditions-009
+     en generasjon  →  generasjon (en)
+   v-b1-traditions-010
+     en høytid  →  høytid (en)
+   v-b1-traditions-011
+     en nissefigur  →  nissefigur (en)
+   v-b1-traditions-012
+     en tradisjon  →  tradisjon (en)
+   v-b1-traditions-013
+     et barnetog  →  barnetog (et)
+   v-b1-traditions-014
+     et rituale  →  rituale (et)
+   v-b1-traditions-015
+     feiring  →  feiring (en/et?)
+   v-b1-traditions-016
+     folkemusikk  →  folkemusikk (en/et?)
+   v-b1-traditions-017
+     friluftsliv  →  friluftsliv (en/et?)
+   v-b1-traditions-018
+     godteri  →  godteri (en/et?)
+   v-b1-traditions-019
+     jul  →  jul (en/et?)
+   v-b1-traditions-020
+     julenissen  →  julenissen (en/et?)
+   v-b1-traditions-021
+     lusekofte  →  lusekofte (en/et?)
+   v-b1-traditions-022
+     midtsommer  →  midtsommer (en/et?)
+   v-b1-traditions-024
+     pinnekjøtt  →  pinnekjøtt (en/et?)
+   v-b1-traditions-025
+     påske  →  påske (en/et?)
+   v-b1-traditions-026
+     rakfisk  →  rakfisk (en/et?)
+   v-b1-traditions-027
+     sang  →  sang (en/et?)
+   v-b1-traditions-028
+     tenne  →  å tenne
+   v-b1-traditions-029
+     tradisjon  →  tradisjon (en/et?)
+   v-b1-travel-001
+     bestille  →  å bestille
+   v-b1-travel-020
+     forlate  →  å forlate
+   v-b1-travel-021
+     fornye  →  å fornye
+   v-b1-travel-022
+     frakte  →  å frakte
+   v-b1-travel-023
+     grense  →  grense (en/et?)
+   v-b1-travel-027
+     snu  →  å snu
+   v-b1-travel-028
+     termos  →  termos (en/et?)
+   v-b1-travel-029
+     toppen  →  topp (en/et?)
+   v-b1-travel-030
+     tur  →  tur (en/et?)
+   v-b1-travel-032
+     turutstyr  →  turutstyr (en/et?)
+   v-b1-travel-035
+     vei  →  vei (en/et?)
+   v-b1-travel-037
+     vogn  →  vogn (en/et?)
+   v-b1-urban-life-001
+     bygge  →  å bygge
+   v-b1-urban-life-003
+     drabantby  →  drabantby (en/et?)
+   v-b1-work-001
+     CV  →  CV (en/et?)
+   v-b1-work-004
+     arbeidsledighet  →  arbeidsledighet (en/et?)
+   v-b1-work-005
+     arbeidsmarkedet  →  arbeidsmarkedet (en/et?)
+   v-b1-work-006
+     arbeidsmiljø  →  arbeidsmiljø (en/et?)
+   v-b1-work-007
+     assistent  →  assistent (en/et?)
+   v-b1-work-008
+     attest  →  attest (en/et?)
+   v-b1-work-009
+     bedrift  →  bedrift (en/et?)
+   v-b1-work-010
+     beholde  →  å beholde
+   v-b1-work-011
+     drive  →  å drive
+   v-b1-work-012
+     ekspertise  →  ekspertise (en/et?)
+   v-b1-work-013
+     en CV  →  CV (en)
+   v-b1-work-014
+     en arbeidsgiver  →  arbeidsgiver (en)
+   v-b1-work-015
+     en arbeidstaker  →  arbeidstaker (en)
+   v-b1-work-016
+     en fagforening  →  fagforening (en)
+   v-b1-work-017
+     en frist  →  frist (en)
+   v-b1-work-018
+     en karriere  →  karriere (en)
+   v-b1-work-019
+     en kompetanse  →  kompetanse (en)
+   v-b1-work-020
+     en overtid  →  overtid (en)
+   v-b1-work-021
+     en pause  →  pause (en)
+   v-b1-work-022
+     en permisjon  →  permisjon (en)
+   v-b1-work-023
+     et ansvar  →  ansvar (et)
+   v-b1-work-024
+     et arbeid  →  arbeid (et)
+   v-b1-work-025
+     et jobbintervju  →  jobbintervju (et)
+   v-b1-work-026
+     et prosjekt  →  prosjekt (et)
+   v-b1-work-028
+     feriepenger  →  feriepenger (en/et?)
+   v-b1-work-029
+     firma  →  firma (en/et?)
+   v-b1-work-031
+     forlengelse  →  forlengelse (en/et?)
+   v-b1-work-032
+     frilans  →  frilans (en/et?)
+   v-b1-work-033
+     gjennomføre  →  å gjennomføre
+   v-b1-work-034
+     gründer  →  gründer (en/et?)
+   v-b1-work-035
+     hjemmekontor  →  hjemmekontor (en/et?)
+   v-b1-work-036
+     jobbe  →  å jobbe
+   v-b1-work-037
+     karriere  →  karriere (en/et?)
+   v-b1-work-038
+     karriereveileder  →  karriereveileder (en/et?)
+   v-b1-work-039
+     krav  →  krav (en/et?)
+   v-b1-work-041
+     kunde  →  kunde (en/et?)
+   v-b1-work-042
+     kvalifikasjon  →  kvalifikasjon (en/et?)
+   v-b1-work-044
+     referanse  →  referanse (en/et?)
+   v-b1-work-045
+     sagbruk  →  sagbruk (en/et?)
+   v-b1-work-046
+     selskap  →  selskap (en/et?)
+   v-b1-work-047
+     skift  →  skift (en/et?)
+   v-b1-work-048
+     skjema  →  skjema (en/et?)
+   v-b1-work-050
+     søknad  →  søknad (en/et?)
+   v-b1-work-051
+     tillegg  →  tillegg (en/et?)
+   v-b1-work-052
+     utlysning  →  utlysning (en/et?)
+   v-b1-work-053
+     utvide  →  å utvide
+   v-b1-work-054
+     verksted  →  verksted (en/et?)
+   v-b1-work-055
+     vikariat  →  vikariat (en/et?)
+   v-b1-workplace-001
+     administrere  →  å administrere
+   v-b1-workplace-002
+     ansatt  →  ansatt (en/et?)
+   v-b1-workplace-003
+     ansette  →  å ansette
+   v-b1-workplace-004
+     autorisasjon  →  autorisasjon (en/et?)
+   v-b1-workplace-005
+     avdeling  →  avdeling (en/et?)
+   v-b1-workplace-006
+     avslutte  →  å avslutte
+   v-b1-workplace-012
+     fagforening  →  fagforening (en/et?)
+   v-b1-workplace-013
+     forslag  →  forslag (en/et?)
+   v-b1-workplace-014
+     godkjenning  →  godkjenning (en/et?)
+   v-b1-workplace-016
+     innkalle  →  å innkalle
+   v-b1-workplace-018
+     kveldsvakt  →  kveldsvakt (en/et?)
+   v-b1-workplace-020
+     sykefravær  →  sykefravær (en/et?)
+   v-b1-workplace-022
+     tariffavtale  →  tariffavtale (en/et?)
+   v-b1-workplace-023
+     tillitsvalgt  →  tillitsvalgt (en/et?)
+   v-b1-workplace-024
+     trakassering  →  trakassering (en/et?)
+   v-b1-workplace-025
+     verneombud  →  verneombud (en/et?)
+
+   [DRY RUN] File not written.
+
+=== Done ===
+

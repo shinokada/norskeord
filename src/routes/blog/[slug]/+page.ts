@@ -1,9 +1,22 @@
 import { error } from '@sveltejs/kit';
-import { type PostMeta, type RawPostModule, cefrLevels } from '$lib/blog';
-import type { PageLoad } from './$types';
+import { type PostMeta, type RawPostModule, cefrLevels, isPublished } from '$lib/blog';
+import type { EntryGenerator, PageLoad } from './$types';
 import type { Component } from 'svelte';
 
 export const prerender = true;
+
+export const entries: EntryGenerator = async () => {
+  const modules = import.meta.glob('/src/lib/posts/*.md', { eager: true }) as Record<
+    string,
+    RawPostModule
+  >;
+  return Object.values(modules)
+    .filter(
+      (mod) =>
+        mod.metadata?.slug && mod.metadata.publishedAt && isPublished(mod.metadata.publishedAt)
+    )
+    .map((mod) => ({ slug: mod.metadata!.slug! }));
+};
 
 export const load: PageLoad = async ({ params }) => {
   const modules = import.meta.glob('/src/lib/posts/*.md') as Record<

@@ -1,6 +1,6 @@
 ---
-title: 'Få + particle — tak i, til, på, i gang'
-description: 'The verb få changes meaning depending on its particle. Få tak i means reach/contact, få til means manage, få på means put on, få i gang means get started.'
+title: 'Få + partikel — tak i, til, på, i gang'
+description: 'Verbet få skifter betydning avhengig av hvilken partikel det kombineres med. Få tak i betyr å nå/kontakte noen, få til betyr å klare noe, få på betyr å ta på seg, og få i gang betyr å sette i gang.'
 slug: fa
 cefr: B1
 publishedAt: 2026-07-17
@@ -14,7 +14,7 @@ decks:
     label: A2 Verbs
 ---
 
-> **TL;DR:** The verb **få** changes meaning depending on which particle follows it. Learning the most common combinations will unlock a lot of natural Norwegian.
+> **Kort sagt:** Verbet **få** skifter betydning avhengig av hvilken partikel som følger etter. Å lære de vanligste kombinasjonene gir deg tilgang til mye naturlig norsk.
 
 ## Kort forklaring
 
@@ -22,95 +22,81 @@ decks:
 
 De fire vanligste kombinasjonene er:
 
-- **få tak i** → reach / get hold of
-- **få til** → manage / succeed in
-- **få på** → get on (clothes)
-- **få i gang** → get started / activate
-
-_In English:_ Each combination creates a new meaning — similar to English phrasal verbs like _get hold of_ or _get started_.
+- **få tak i** → å nå noen / å skaffe seg noe
+- **få til** → å mestre / å lykkes med
+- **få på** → å få på seg (klær)
+- **få i gang** → å sette i gang / å aktivere
 
 ---
 
-## Få tak i — reach or get hold of
+## Få tak i — nå noen eller skaffe seg noe
 
 **Få tak i** brukes om å nå en person eller skaffe seg noe.
 
 **1. Jeg må få tak i henne.**
-_I need to reach her._
-→ Used when trying to contact someone.
+→ Brukes når man prøver å komme i kontakt med noen.
 
 **2. Jeg får ikke tak i henne.**
-_I can't reach her._
-→ The negative form — the contact attempt fails.
+→ Nektingsformen — kontaktforsøket mislykkes.
 
 **3. Jeg fikk tak i billettene.**
-_I managed to get the tickets._
-→ Also used for obtaining things, not just people.
+→ Brukes også om å skaffe seg ting, ikke bare om personer.
 
 ---
 
-## Få til — manage or succeed in
+## Få til — mestre eller lykkes med
 
 **Få til** brukes når du lykkes med noe — eller ikke lykkes.
 
 **1. Jeg får det til.**
-_I manage it. / I can do it._
-→ Used to express that something is going well.
+→ Brukes for å uttrykke at noe går bra.
 
 **2. Jeg får det ikke til.**
-_I can't manage it._
-→ The most common negative form.
+→ Den vanligste nektingsformen.
 
 **3. Hun får alt til.**
-_She manages everything._
-→ A general expression of competence.
+→ Et generelt uttrykk for dyktighet.
 
 **4. Klarer du å få det til?**
-_Can you manage it?_
-→ Common in spoken Norwegian.
+→ Vanlig i dagligtale.
 
 ---
 
-## Få på — get something on
+## Få på — få noe på seg
 
 **Få på** brukes om klær eller noe du prøver å ta på.
 
 **1. Jeg får jakken på.**
-_I manage to get the jacket on._
-→ Successfully putting something on.
+→ Når man lykkes med å ta på seg noe.
 
 **2. Jeg får den ikke på.**
-_I can't get it on._
-→ The jacket won't go on — too tight, for example.
+→ Jakken går ikke på — for eksempel fordi den er for trang.
 
 ---
 
-## Få i gang — get started or activate
+## Få i gang — sette i gang eller aktivere
 
 **Få i gang** brukes om å starte noe som ikke er aktivt ennå.
 
 **1. Vi må få i gang møtet.**
-_We need to get the meeting started._
-→ Used for starting an event or process.
+→ Brukes om å starte en hendelse eller en prosess.
 
 **2. Han fikk maskinen i gang.**
-_He got the machine running._
-→ Used for restarting something that was not working.
+→ Brukes om å få i gang noe som ikke fungerte.
 
 **3. Jeg fikk ikke PC-en i gang.**
-_I couldn't get the PC started._
-→ A common, everyday situation.
+→ En vanlig, hverdagslig situasjon.
 
 ---
 
 ## Sammenligningstabell
 
-| Uttrykk       | Betydning              | Typisk bruk                  |
-| ------------- | ---------------------- | ---------------------------- |
-| **få tak i**  | reach / get hold of    | person · ting du leter etter |
-| **få til**    | manage / succeed in    | oppgave · ferdighet          |
-| **få på**     | get on (clothes)       | jakke · sko · ring           |
-| **få i gang** | get started / activate | møte · maskin · prosjekt     |
+| Uttrykk       | Betydning                | Typisk bruk                  |
+| ------------- | ------------------------ | ---------------------------- |
+| **få tak i**  | nå noen / skaffe seg noe | person · ting du leter etter |
+| **få til**    | mestre / lykkes med      | oppgave · ferdighet          |
+| **få på**     | få på seg (klær)         | jakke · sko · ring           |
+| **få i gang** | sette i gang / aktivere  | møte · maskin · prosjekt     |
 
 ---
 
@@ -119,21 +105,21 @@ _I couldn't get the PC started._
 ❌ Jeg fikk ikke til leksene.
 ⭕ Jeg fikk ikke leksene til.
 
-_The object usually comes between **få** and **til** in Norwegian._
+_Objektet kommer vanligvis mellom **få** og **til** på norsk._
 
 ❌ Jeg kan ikke få tak henne.
 ⭕ Jeg får ikke tak i henne.
 
-_The preposition **i** is part of the expression — don't drop it._
+_Preposisjonen **i** er en del av uttrykket — den kan ikke utelates._
 
 ---
 
 ## Husk dette
 
-- **tak i** → grab / reach someone or something
-- **til** → succeed in doing something
-- **på** → put on something
-- **i gang** → get something running
+- **tak i** → å nå eller gripe tak i noen eller noe
+- **til** → å lykkes med å gjøre noe
+- **på** → å ta på seg noe
+- **i gang** → å få noe til å fungere eller starte
 
 ---
 
