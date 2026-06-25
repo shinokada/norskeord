@@ -16,6 +16,7 @@ decks:
     category: hobbies
     label: A2 Hobbies
 ---
+
 ## Kort forklaring
 
 Både **bytte** og **skifte** kan bety "to change" eller "to switch" på engelsk.
@@ -45,12 +46,12 @@ Men:
 
 ## Sammenligningstabell
 
-|                       | bytte                     | skifte                     |
-| --------------------- | ------------------------- | -------------------------- |
-| Betydning             | erstatte / bytte om       | endre / gå over til        |
-| Fokus                 | én ting → en annen ting   | endring av tilstand eller type |
-| Utveksle med noen     | ✅ bytte med noen         | ❌ ikke skifte med noen    |
-| Register              | hverdagslig               | hverdagslig / litt formelt |
+|                   | bytte                   | skifte                         |
+| ----------------- | ----------------------- | ------------------------------ |
+| Betydning         | erstatte / bytte om     | endre / gå over til            |
+| Fokus             | én ting → en annen ting | endring av tilstand eller type |
+| Utveksle med noen | ✅ bytte med noen       | ❌ ikke skifte med noen        |
+| Register          | hverdagslig             | hverdagslig / litt formelt     |
 
 ---
 

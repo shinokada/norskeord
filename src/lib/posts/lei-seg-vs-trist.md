@@ -13,6 +13,7 @@ decks:
     category: everyday-words
     label: A2 Everyday Words
 ---
+
 > **Kort sagt:** Både **lei seg** og **trist** oversettes med "sad" på engelsk, men de er ikke utbyttbare. **Lei seg** er en personlig følelsesreaksjon — vanligvis utløst av noe spesifikt. **Trist** beskriver en stemning, en egenskap eller en generell følelse av sorg.
 
 ## Kort forklaring
@@ -75,14 +76,14 @@ Noen setninger fungerer med begge — men med litt ulik nyanse:
 
 ## Sammenligningstabell
 
-|                       | **lei seg**                  | **trist**                         |
-| --------------------- | ---------------------------- | --------------------------------- |
-| Betydning             | opprørt / såret / trist      | trist / dyster / bedrøvet         |
-| Trigger               | konkret hendelse             | generell stemning                 |
-| Om personer           | ✅                           | ✅                                |
-| Om historier / filmer | ❌                           | ✅ — _en trist film_              |
-| Om vær / steder       | ❌                           | ✅ — _trist vær_                  |
-| Dagligtale            | svært vanlig                 | vanlig                            |
+|                       | **lei seg**             | **trist**                 |
+| --------------------- | ----------------------- | ------------------------- |
+| Betydning             | opprørt / såret / trist | trist / dyster / bedrøvet |
+| Trigger               | konkret hendelse        | generell stemning         |
+| Om personer           | ✅                      | ✅                        |
+| Om historier / filmer | ❌                      | ✅ — _en trist film_      |
+| Om vær / steder       | ❌                      | ✅ — _trist vær_          |
+| Dagligtale            | svært vanlig            | vanlig                    |
 
 ---
 

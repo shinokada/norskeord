@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A2 Verbs
 ---
+
 > **Kort sagt:** **Holde på å + verb** betyr å være i ferd med noe eller på kanten av det — "nesten" eller "midt i." **Holde på med + substantiv** betyr å være opptatt med eller jobbe med noe. De to konstruksjonene ligner på hverandre, men betyr ulike ting.
 
 ## Kort forklaring
@@ -79,10 +80,10 @@ Uten **å + verb** endrer uttrykket seg. **Holde på med** brukes når noen er o
 
 ## Direkte sammenligning
 
-| Struktur                      | Betydning                              | Eksempel                       |
-| ----------------------------- | -------------------------------------- | ------------------------------ |
-| **holde på å + verb**         | være i ferd med / nær ved å skje      | Jeg holder på å sovne.         |
-| **holde på med + substantiv** | være opptatt med / jobbe med noe       | Han holder på med norsken sin. |
+| Struktur                      | Betydning                        | Eksempel                       |
+| ----------------------------- | -------------------------------- | ------------------------------ |
+| **holde på å + verb**         | være i ferd med / nær ved å skje | Jeg holder på å sovne.         |
+| **holde på med + substantiv** | være opptatt med / jobbe med noe | Han holder på med norsken sin. |
 
 ---
 

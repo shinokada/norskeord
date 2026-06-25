@@ -7,6 +7,7 @@ type: guide
 publishedAt: 2026-11-25
 tags: [grammar, prepositions]
 ---
+
 > **Kort sagt:** **i** = innenfor en tidsperiode (i dag, i sommer, i tre år). **på** = spesifikke eller gjentakende tidspunkter (på mandag, på kvelden). **om** = fremtidig «om X tid» (om to dager, om en time).
 
 Dette er del 2 av preposisjonsserien, med fokus spesifikt på **tid**. For generelle preposisjoner (i, på, med, ved, for), se: [Preposisjoner — I, På, Med, Ved, For](/blog/preposisjoner).
@@ -103,10 +104,10 @@ Dette er faste uttrykk — bruk alltid **i**, aldri **på**.
 
 Dette er den vanligste kilden til forvirring:
 
-| Uttrykk        | Betydning                           | Når du bruker det                         |
-| -------------- | ----------------------------------- | ----------------------------------------- |
-| **i kveld**    | i kveld (denne spesifikke kvelden)  | når du snakker om kvelden i dag           |
-| **på kvelden** | om kvelden (vane / generelt)        | hva du vanligvis gjør, eller generelt     |
+| Uttrykk        | Betydning                          | Når du bruker det                     |
+| -------------- | ---------------------------------- | ------------------------------------- |
+| **i kveld**    | i kveld (denne spesifikke kvelden) | når du snakker om kvelden i dag       |
+| **på kvelden** | om kvelden (vane / generelt)       | hva du vanligvis gjør, eller generelt |
 
 **Eksempler:**
 
@@ -138,12 +139,12 @@ Den samme logikken gjelder for **i morges** (tidligere i dag, fortid) vs **på m
 
 ## Sammenligningstabell
 
-| Preposisjon | Tidsbetydning                  | Eksempler                          |
-| ----------- | ------------------------------ | ---------------------------------- |
-| **i**       | innenfor en tidsperiode        | i dag · i april · i tre år         |
-| **på**      | vane / spesifikt tidspunkt     | på mandag · på kvelden · på ferie  |
-| **om**      | fremtidig «om X tid»           | om to dager · om en time · om litt |
-| **for**     | siden (punkt i fortiden)       | for tre år siden · for lenge siden |
+| Preposisjon | Tidsbetydning              | Eksempler                          |
+| ----------- | -------------------------- | ---------------------------------- |
+| **i**       | innenfor en tidsperiode    | i dag · i april · i tre år         |
+| **på**      | vane / spesifikt tidspunkt | på mandag · på kvelden · på ferie  |
+| **om**      | fremtidig «om X tid»       | om to dager · om en time · om litt |
+| **for**     | siden (punkt i fortiden)   | for tre år siden · for lenge siden |
 
 ---
 

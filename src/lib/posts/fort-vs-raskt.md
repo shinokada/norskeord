@@ -13,6 +13,7 @@ decks:
     category: adverbs
     label: A1 Adverbs
 ---
+
 > **Kort sagt:** **Fort** og **raskt** betyr begge "quickly," men **fort** er vanligere i hverdagstale og betyr også "soon." **Rask** er adjektivformen — brukes til å beskrive substantiver. **Fort** brukes nesten aldri som adjektiv.
 
 ## Kort forklaring
@@ -88,11 +89,11 @@ Betydningen er som regel klar ut fra sammenhengen, men det er verdt å lære det
 
 ## Sammenligningstabell
 
-| Ord       | Type     | Betydning      | Typisk bruk                        |
-| --------- | -------- | -------------- | ---------------------------------- |
-| **fort**  | adverb   | quickly / soon | hverdagstale, uformelt             |
-| **raskt** | adverb   | quickly        | nøytralt / skriftlig / formelt     |
-| **rask**  | adjektiv | quick / fast   | beskriver substantiver             |
+| Ord       | Type     | Betydning      | Typisk bruk                    |
+| --------- | -------- | -------------- | ------------------------------ |
+| **fort**  | adverb   | quickly / soon | hverdagstale, uformelt         |
+| **raskt** | adverb   | quickly        | nøytralt / skriftlig / formelt |
+| **rask**  | adjektiv | quick / fast   | beskriver substantiver         |
 
 ---
 

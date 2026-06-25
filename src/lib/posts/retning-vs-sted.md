@@ -6,6 +6,7 @@ cefr: A2
 publishedAt: 2026-07-01
 tags: [adverbs, grammar, word-order]
 ---
+
 > **Kort sagt:** Norsk bruker forskjellige ord avhengig av om du **beveger deg** et sted eller **allerede er der**. Stedsformen legger alltid til **-e**.
 
 ## Kort forklaring
@@ -22,12 +23,12 @@ Dette gjelder en gruppe svært vanlige ord:
 ## Grunnmønsteret
 
 | Bevegelse (bevegelse) | Tilstand (sted) |
-| -------------------- | ------------------- |
-| **hjem**             | **hjemme**          |
-| **ut**               | **ute**             |
-| **inn**              | **inne**            |
-| **bort**             | **borte**           |
-| **frem**             | **fremme**          |
+| --------------------- | --------------- |
+| **hjem**              | **hjemme**      |
+| **ut**                | **ute**         |
+| **inn**               | **inne**        |
+| **bort**              | **borte**       |
+| **frem**              | **fremme**      |
 
 **Huskeregel:** Hvis du kan si _«jeg er \_\_\_»_, bruker du **-e-formen**.
 
@@ -66,13 +67,13 @@ Dette paret er særlig nyttig på reise:
 
 ## Sammenligningstabell
 
-| Bevegelse | Tilstand | Engelsk (bevegelse) | Engelsk (sted)     |
-| --------- | -------- | ------------------ | ---------------------- |
-| hjem      | hjemme   | (going) home       | at home                |
-| ut        | ute      | out / outside      | outside / out there    |
-| inn       | inne     | in / inside        | inside / indoors       |
-| bort      | borte    | away               | away / absent / gone   |
-| frem      | fremme   | forward / ahead    | arrived / at the place |
+| Bevegelse | Tilstand | Engelsk (bevegelse) | Engelsk (sted)         |
+| --------- | -------- | ------------------- | ---------------------- |
+| hjem      | hjemme   | (going) home        | at home                |
+| ut        | ute      | out / outside       | outside / out there    |
+| inn       | inne     | in / inside         | inside / indoors       |
+| bort      | borte    | away                | away / absent / gone   |
+| frem      | fremme   | forward / ahead     | arrived / at the place |
 
 ---
 

@@ -13,6 +13,7 @@ decks:
     category: grammar
     label: A1 Grammar
 ---
+
 > **Kort sagt:** **I + tid** = varighet (hvor lenge). **For … siden** = ago (et tidspunkt i fortiden). **På** = spesifikke dager og perioder. Dette er tre forskjellige funksjoner — de kan ikke brukes om hverandre.
 
 ## Kort forklaring
@@ -83,11 +84,11 @@ Norsk bruker tre forskjellige preposisjoner for tid, og de gjør hver sin jobb:
 
 ## Sammenligningstabell
 
-| Preposisjon      | Funksjon                        | Eksempel                         |
-| ---------------- | ------------------------------- | -------------------------------- |
-| **i** + tid      | varighet                        | Jeg bodde der i to år.           |
-| **for … siden**  | ago / tidspunkt i fortiden      | Jeg flyttet hit for to år siden. |
-| **på** + dag/tid | bestemt dag eller periode       | Vi sees på mandag.               |
+| Preposisjon      | Funksjon                   | Eksempel                         |
+| ---------------- | -------------------------- | -------------------------------- |
+| **i** + tid      | varighet                   | Jeg bodde der i to år.           |
+| **for … siden**  | ago / tidspunkt i fortiden | Jeg flyttet hit for to år siden. |
+| **på** + dag/tid | bestemt dag eller periode  | Vi sees på mandag.               |
 
 ---
 

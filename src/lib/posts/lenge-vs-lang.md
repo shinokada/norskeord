@@ -13,6 +13,7 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
+
 > **Kort sagt:** **Lenge** = hvor lenge en handling varer (adverb — modifiserer et verb). **Lang** = hvor lang noe er (adjektiv — modifiserer et substantiv). De kan ikke byttes ut med hverandre.
 
 ## Kort forklaring

@@ -13,6 +13,7 @@ decks:
     category: grammar
     label: A2 Grammar
 ---
+
 > **Kort sagt:** En **leddsetning** kan ikke stå alene som en setning — den spiller en rolle inne i en større en. Det tydeligste signalet på norsk er ordstillingen: **ikke** og andre setningsadverb flyttes foran verbet i en leddsetning.
 
 ## Kort forklaring

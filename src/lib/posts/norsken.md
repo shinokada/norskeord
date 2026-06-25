@@ -13,6 +13,7 @@ decks:
     category: nouns
     label: A1 Nouns
 ---
+
 > **Kort sagt:** **Norsken** er bestemt form av **norsk** brukt som substantiv. Når du sier «norsken min» eller «norsken hennes», legger du til **-en** — akkurat som for alle andre hankjønnsord. Det samme mønsteret gjelder alle språknavn: _engelsken_, _fransken_, _japansken_.
 
 ## Kort forklaring

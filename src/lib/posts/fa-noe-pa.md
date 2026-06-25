@@ -13,6 +13,7 @@ decks:
     category: everyday-verbs
     label: A2 Everyday Verbs
 ---
+
 > **Kort sagt:** **Få noe på** betyr å klare å få noe på seg — vanligvis et klesplagg eller et tilbehør. Det ligger en viss anstrengelse i uttrykket. Den negative formen **får det ikke på** («can't get it on») er særlig vanlig og naturlig i dagligtale.
 
 ## Kort forklaring

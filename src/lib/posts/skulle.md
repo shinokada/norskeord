@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A2 Verbs
 ---
+
 > **Kort sagt:** **Skulle** i en fortidskontekst betyr "was going to" eller "was supposed to" — en plan eller intensjon sett fra fortiden. Det betyr ikke alltid "should."
 
 ## Kort forklaring

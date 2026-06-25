@@ -1,6 +1,6 @@
 ---
 title: 'Kose seg vs Nyte — koselig velvære eller bevisst nytelse?'
-description: '"Kose seg" handler om varme, komfort og stemning. "Nyte" handler om å bevisst sette pris på noe. Begge kan oversettes med «å nyte» på engelsk — men følelsen er forskjellig.'
+description: '«Kose seg» handler om varme, komfort og stemning. «Nyte» handler om å bevisst sette pris på noe. Begge kan virke like, men de brukes i ulike situasjoner.'
 slug: kose-vs-nyte
 cefr: A2
 publishedAt: 2026-08-26
@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A1 Verbs
 ---
+
 > **Kort sagt:** **Kose seg** = en varm, komfortabel og avslappet følelse — ofte om stemning. **Nyte** = en bevisst og gjennomtenkt glede — ofte om kvalitet. Begge kan oversettes med «enjoy», men følelsen er forskjellig.
 
 ## Kort forklaring
@@ -88,11 +89,11 @@ Begge er naturlige — de fanger bare ulike sider ved den samme koppen kaffe.
 
 ## Sammenligningstabell
 
-| Verb           | Fokus                              | Tone                    | Typisk kontekst       |
-| -------------- | ---------------------------------- | ----------------------- | --------------------- |
-| **kose seg**   | stemning / komfort / velvære       | varm, uformell          | sofa, friends, hygge  |
-| **nyte**       | kvalitet / bevisst nytelse         | litt mer formell        | food, nature, holiday |
-| **kose (med)** | fysisk nærhet                      | varm, ømhet             | child, pet, partner   |
+| Verb           | Fokus                        | Tone             | Typisk kontekst       |
+| -------------- | ---------------------------- | ---------------- | --------------------- |
+| **kose seg**   | stemning / komfort / velvære | varm, uformell   | sofa, friends, hygge  |
+| **nyte**       | kvalitet / bevisst nytelse   | litt mer formell | food, nature, holiday |
+| **kose (med)** | fysisk nærhet                | varm, ømhet      | child, pet, partner   |
 
 ---
 

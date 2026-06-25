@@ -2,6 +2,7 @@
 /**
  * update-posts.mjs
  *
+ * Run from the project root to update all blog posts in src/lib/posts.
  * Updates markdown blog posts in src/lib/posts:
  *  1. Translates title + description frontmatter to Norwegian via Claude API
  *  2. Removes "_In English:_ ..." italic callout paragraphs from the body
@@ -27,7 +28,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POSTS_DIR = path.resolve(__dirname, 'src/lib/posts');
 const DRY_RUN = process.argv.includes('--dry-run');
-const SINGLE_FILE = process.argv.find(a => a.endsWith('.md') && !a.includes('/'));
+const SINGLE_FILE = process.argv.find((a) => a.endsWith('.md') && !a.includes('/'));
 
 // Load API key from env or .env file
 function loadApiKey() {
@@ -41,7 +42,9 @@ function loadApiKey() {
         return;
       }
     }
-  } catch { /* no .env — that's fine */ }
+  } catch {
+    /* no .env — that's fine */
+  }
 }
 
 loadApiKey();
@@ -64,8 +67,10 @@ function extractField(raw, field) {
   for (const line of raw.split('\n')) {
     if (!line.startsWith(`${field}:`)) continue;
     let value = line.slice(field.length + 1).trim();
-    if ((value.startsWith("'") && value.endsWith("'")) ||
-        (value.startsWith('"') && value.endsWith('"'))) {
+    if (
+      (value.startsWith("'") && value.endsWith("'")) ||
+      (value.startsWith('"') && value.endsWith('"'))
+    ) {
       return value.slice(1, -1);
     }
     return value;
@@ -75,12 +80,14 @@ function extractField(raw, field) {
 
 function setField(raw, field, newValue) {
   const lines = raw.split('\n');
-  return lines.map(line => {
-    if (!line.startsWith(`${field}:`)) return line;
-    // Escape backslashes then single quotes for YAML single-quoted scalar
-    const safe = newValue.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-    return `${field}: '${safe}'`;
-  }).join('\n');
+  return lines
+    .map((line) => {
+      if (!line.startsWith(`${field}:`)) return line;
+      // Escape backslashes then single quotes for YAML single-quoted scalar
+      const safe = newValue.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+      return `${field}: '${safe}'`;
+    })
+    .join('\n');
 }
 
 // ── Body transformations ──────────────────────────────────────────────────────
@@ -92,7 +99,7 @@ function setField(raw, field, newValue) {
 function removeInEnglishCallouts(body) {
   const paragraphs = body.split(/\n{2,}/);
   return paragraphs
-    .filter(p => !/_In English[:\s—]/i.test(p.replace(/^>\s*/gm, '')))
+    .filter((p) => !/_In English[:\s—]/i.test(p.replace(/^>\s*/gm, '')))
     .join('\n\n');
 }
 
@@ -135,13 +142,13 @@ Description: ${description}`;
     headers: {
       'Content-Type': 'application/json',
       'x-api-key': process.env.ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01',
+      'anthropic-version': '2023-06-01'
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: 1000,
-      messages: [{ role: 'user', content: prompt }],
-    }),
+      messages: [{ role: 'user', content: prompt }]
+    })
   });
 
   if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
@@ -213,7 +220,7 @@ async function processFile(filePath) {
   newBody = normaliseBlankLines(newBody);
 
   if (calloutCount) console.log(`  removed ${calloutCount} _In English:_ callout(s)`);
-  if (hasSection)   console.log(`  removed ## In English section`);
+  if (hasSection) console.log(`  removed ## In English section`);
 
   const newContent = `---\n${newRaw}\n---\n${newBody}`;
 
@@ -239,10 +246,11 @@ async function main() {
   if (SINGLE_FILE) {
     files = [path.join(POSTS_DIR, SINGLE_FILE)];
   } else {
-    files = fs.readdirSync(POSTS_DIR)
-      .filter(f => f.endsWith('.md'))
+    files = fs
+      .readdirSync(POSTS_DIR)
+      .filter((f) => f.endsWith('.md'))
       .sort()
-      .map(f => path.join(POSTS_DIR, f));
+      .map((f) => path.join(POSTS_DIR, f));
   }
 
   console.log(`Processing ${files.length} file(s) in ${POSTS_DIR}\n`);
@@ -252,13 +260,13 @@ async function main() {
     await processFile(file);
     console.log();
     // Polite pause between API calls
-    if (!DRY_RUN) await new Promise(r => setTimeout(r, 350));
+    if (!DRY_RUN) await new Promise((r) => setTimeout(r, 350));
   }
 
   console.log('Done.');
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error('Fatal:', err);
   process.exit(1);
 });

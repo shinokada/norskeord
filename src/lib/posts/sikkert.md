@@ -13,6 +13,7 @@ decks:
     category: adverbs
     label: A2 Adverbs
 ---
+
 > **Kort sagt:** **Sikkert** betyr «certain» når det brukes i **det er sikkert at …**. I dagligtale betyr det svært ofte «probably» — altså langt fra 100 % sikkert.
 
 ## Kort forklaring
@@ -53,11 +54,11 @@ Dette er den vanligste bruken i daglig tale. Sikkert fungerer her som **sannsynl
 
 ## Sammenligningstabell
 
-| Struktur                    | Betydning          | Eksempel                       |
-| --------------------------- | ------------------ | ------------------------------ |
-| **det er sikkert at …**     | certain / definite | Det er sikkert at han vet det. |
-| **[subject] er sikkert …**  | probably / likely  | Det er sikkert dyrt.           |
-| **sikkert** alene i tale | probably / I'd say | — Vet du det? — Sikkert.       |
+| Struktur                   | Betydning          | Eksempel                       |
+| -------------------------- | ------------------ | ------------------------------ |
+| **det er sikkert at …**    | certain / definite | Det er sikkert at han vet det. |
+| **[subject] er sikkert …** | probably / likely  | Det er sikkert dyrt.           |
+| **sikkert** alene i tale   | probably / I'd say | — Vet du det? — Sikkert.       |
 
 ---
 
