@@ -11,11 +11,11 @@ Posts live in `src/lib/posts/` as Markdown files with YAML frontmatter.
 title: 'Hallo — når nordmenn faktisk bruker det'
 description: 'Hallo er ikke det samme som «hello» på engelsk. Det brukes når man svarer i telefonen eller vil få noens oppmerksomhet – ikke som en vanlig hilsen ansikt til ansikt.'
 slug: hallo
-cefr: A2                      # or an array: [A1, A2]
-publishedAt: 2026-10-21       # future dates are hidden until that date
-type: guide                   # optional — omit for standard word/expression posts
+cefr: A2 # or an array: [A1, A2]
+publishedAt: 2026-10-21 # future dates are hidden until that date
+type: guide # optional — omit for standard word/expression posts
 tags: [greetings, vocabulary]
-decks:                        # optional — links to flashcard decks at the bottom
+decks: # optional — links to flashcard decks at the bottom
   - level: a1
     category: greetings
     label: A1 Greetings

@@ -13,6 +13,7 @@ decks:
     category: grammar
     label: B1 Grammar
 ---
+
 > **Kort sagt:** På norsk kan mange adjektiver fungere som adverb uten å endre form — særlig ord som slutter på **-isk**, som _fysisk_, _praktisk_ og _teknisk_. Det som avgjør ordklassen, er ikke hvordan ordet ser ut, men hva det beskriver i setningen: et substantiv (adjektiv) eller en handling (adverb).
 
 ## Kort forklaring

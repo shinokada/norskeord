@@ -13,6 +13,7 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
+
 > **Kort sagt:** Både **sakte** og **langsomt** betyr "slowly," men **sakte** er det hverdagslige talespråklige ordet, mens **langsomt** høres mer formelt eller beskrivende ut. Velg **sakte** når du er i tvil i samtale.
 
 ## Kort forklaring

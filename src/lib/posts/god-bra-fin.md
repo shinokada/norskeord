@@ -1,6 +1,6 @@
 ---
 title: 'God vs bra vs fin — Hvilket «god» mener du?'
-description: 'Norsk har flere ord for \'good\' på engelsk – og feil valg høres rart ut. god handler om kvalitet, bra er generelt, fin betyr hyggelig eller pen, og flink betyr dyktig.'
+description: 'Norsk har flere ord som oversetter «god» — og feil valg høres rart ut. god handler om kvalitet, bra er generelt, fin betyr hyggelig eller pen, og flink betyr dyktig.'
 slug: god-bra-fin
 cefr: A2
 publishedAt: 2026-05-27
@@ -13,6 +13,7 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
+
 > **Kort sagt:** Engelsk bruker "good" om nesten alt. På norsk må du velge: _god_ (kvalitet/smak), _bra_ (generelt positivt), _fin_ (pen/hyggelig), _flink_ (dyktig).
 
 ## Kort forklaring
@@ -105,12 +106,12 @@ De fire vanligste ordene er:
 
 ## Sammenligningstabell
 
-| Norsk     | Betydning                              | Typisk bruk                |
-| --------- | -------------------------------------- | -------------------------- |
-| **god**   | god (kvalitet, smak, moral)            | mat · person · samtale     |
-| **bra**   | god (generelt, hverdagslig)            | film · idé · «det går bra» |
-| **fin**   | pen, hyggelig, behagelig               | vær · jakke · dag          |
-| **flink** | dyktig, kapabel, flittig               | i matte · til å snakke     |
+| Norsk     | Betydning                   | Typisk bruk                |
+| --------- | --------------------------- | -------------------------- |
+| **god**   | god (kvalitet, smak, moral) | mat · person · samtale     |
+| **bra**   | god (generelt, hverdagslig) | film · idé · «det går bra» |
+| **fin**   | pen, hyggelig, behagelig    | vær · jakke · dag          |
+| **flink** | dyktig, kapabel, flittig    | i matte · til å snakke     |
 
 ---
 

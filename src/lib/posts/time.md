@@ -13,6 +13,7 @@ decks:
     category: nouns
     label: A1 Nouns
 ---
+
 > **Kort sagt:** **En time** betyr enten «en leksjon» eller «en time (60 minutter).» Legg til **i** foran — **i en time** — og det betyr alltid varighet (én time).
 
 ## Kort forklaring
@@ -54,12 +55,12 @@ Sammenhengen — og særlig preposisjonen **i** — avgjør hvilken det er.
 
 ## Sammenligningstabell
 
-| Setning                    | Betydning | Signal                              |
-| -------------------------- | --------- | ----------------------------------- |
-| **Jeg har en time**        | leksjon   | ingen **i**, skolekontekst          |
-| **Jeg jobbet i en time**   | time      | **i** foran **time**                |
-| **Læreren har tre timer**  | leksjoner | ingen **i**, lærerkontekst          |
-| **Hun ventet i tre timer** | timer     | **i** foran **timer**               |
+| Setning                    | Betydning | Signal                     |
+| -------------------------- | --------- | -------------------------- |
+| **Jeg har en time**        | leksjon   | ingen **i**, skolekontekst |
+| **Jeg jobbet i en time**   | time      | **i** foran **time**       |
+| **Læreren har tre timer**  | leksjoner | ingen **i**, lærerkontekst |
+| **Hun ventet i tre timer** | timer     | **i** foran **timer**      |
 
 ---
 

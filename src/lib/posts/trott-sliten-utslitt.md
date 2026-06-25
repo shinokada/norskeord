@@ -1,6 +1,6 @@
 ---
 title: 'Trøtt vs Sliten vs Utslitt — Nyanser av å være trett'
-description: 'Trøtt betyr søvnig, sliten betyr utmattet, og utslitt betyr helt tom for krefter. Norsk har flere ord for «tired» på engelsk — og de kan ikke brukes om hverandre.'
+description: 'Trøtt betyr søvnig, sliten betyr utmattet, og utslitt betyr helt tom for krefter. Norsk har flere ord for ulike grader av tretthet — og de kan ikke brukes om hverandre.'
 slug: trott-sliten-utslitt
 cefr: A2
 publishedAt: 2026-07-29
@@ -13,6 +13,7 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
+
 > **Kort sagt:** **Trøtt** = søvnig / trett. **Sliten** = utslitt av innsats. **Utslitt** = fullstendig tømt. **Lei** = lei av noe. De er ikke utbyttbare.
 
 ## Kort forklaring
@@ -97,13 +98,13 @@ Ikke fysisk tretthet. **Lei** brukes om emosjonell utmattelse — å være lei a
 
 ## Sammenligningstabell
 
-| Ord          | Betydning            | Styrke       | Typisk kontekst                  |
-| ------------ | -------------------- | ------------ | -------------------------------- |
-| **trøtt**    | søvnig / trett       | mild         | trenger søvn, lite energi        |
-| **sliten**   | utslitt / utmattet   | medium       | etter innsats eller stress       |
-| **utslitt**  | fullstendig tømt     | sterk        | ingen energi igjen               |
-| **utmattet** | utmattet             | formal/sterk | medisinsk, alvorlig utmattelse   |
-| **lei**      | lei av / fed up      | emosjonell   | lei av noe                       |
+| Ord          | Betydning          | Styrke       | Typisk kontekst                |
+| ------------ | ------------------ | ------------ | ------------------------------ |
+| **trøtt**    | søvnig / trett     | mild         | trenger søvn, lite energi      |
+| **sliten**   | utslitt / utmattet | medium       | etter innsats eller stress     |
+| **utslitt**  | fullstendig tømt   | sterk        | ingen energi igjen             |
+| **utmattet** | utmattet           | formal/sterk | medisinsk, alvorlig utmattelse |
+| **lei**      | lei av / fed up    | emosjonell   | lei av noe                     |
 
 ---
 

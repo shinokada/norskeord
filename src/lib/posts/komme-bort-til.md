@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A2 Verbs
 ---
+
 > **Kort sagt:** **Komme bort til** betyr å gå bort til eller nærme seg noen — ikke «come away». Partikkelen **bort** skifter betydning avhengig av uttrykket det opptrer i.
 
 ## Kort forklaring
@@ -66,21 +67,21 @@ Selv om **bort** vanligvis kan bety "away," endrer det seg i mange faste uttrykk
 
 | Uttrykk            | Betydning              | Eksempel                                              |
 | ------------------ | ---------------------- | ----------------------------------------------------- |
-| **gå bort**        | go away / leave        | _Han gikk bort._ Han dro.                        |
-| **gå bort fra**    | move away from         | _Gå bort fra veien._ Beveg deg vekk fra veien.         |
+| **gå bort**        | go away / leave        | _Han gikk bort._ Han dro.                             |
+| **gå bort fra**    | move away from         | _Gå bort fra veien._ Beveg deg vekk fra veien.        |
 | **falle bort**     | disappear / be omitted | _Noen detaljer falt bort._ Noen detaljer ble utelatt. |
 | **se bort fra**    | disregard / overlook   | _Se bort fra den feilen._ Se bort fra den feilen.     |
-| **komme bort til** | walk up to / approach  | _Han kom bort til meg._ Han gikk bort til meg.           |
+| **komme bort til** | walk up to / approach  | _Han kom bort til meg._ Han gikk bort til meg.        |
 
 ---
 
 ## Sammenligningstabell
 
-| Uttrykk            | Fokus                          | Retning      |
-| ------------------ | ------------------------------ | ------------ |
-| **komme bort til** | nærme seg / gå bort til        | mot noen/noe |
-| **gå bort fra**    | bevege seg vekk fra            | vekk fra noe |
-| **nærme seg**      | nærme seg (mer formelt)        | mot noen/noe |
+| Uttrykk            | Fokus                   | Retning      |
+| ------------------ | ----------------------- | ------------ |
+| **komme bort til** | nærme seg / gå bort til | mot noen/noe |
+| **gå bort fra**    | bevege seg vekk fra     | vekk fra noe |
+| **nærme seg**      | nærme seg (mer formelt) | mot noen/noe |
 
 ---
 

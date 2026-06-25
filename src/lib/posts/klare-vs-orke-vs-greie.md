@@ -16,6 +16,7 @@ decks:
     category: hobbies
     label: A2 Hobbies
 ---
+
 ## Kort forklaring
 
 **Klare**, **orke** og **greie** kan alle oversettes med "to manage" på engelsk, men de betyr litt forskjellige ting.

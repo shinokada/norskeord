@@ -13,6 +13,7 @@ decks:
     category: grammar
     label: A2 Grammar
 ---
+
 > **Kort sagt:** I hovedsetninger kommer setningsadverb **etter** verbet. I leddsetninger kommer de **før** verbet. Dette er **leddsetningsregelen** — og den gjelder for **ikke**, **aldri**, **kanskje**, **ofte**, **heldigvis** og mange flere.
 
 ## Kort forklaring

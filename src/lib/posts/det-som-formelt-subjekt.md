@@ -1,11 +1,12 @@
 ---
 title: '"Det" som formelt subjekt — derfor begynner norske setninger med "det"'
-description: 'Norsk bruker ofte "det" som et innledende subjekt når man introduserer ny informasjon. Dette kalles en presenterende setning – og fungerer omtrent som "there is/are" på engelsk.'
+description: 'Norsk bruker ofte «det» som et innledende subjekt når man introduserer ny informasjon. Dette kalles en presenterende setning – og fungerer omtrent som «det finnes» eller «det er» i starten av en setning.'
 slug: det-som-formelt-subjekt
 cefr: B1
 publishedAt: 2026-06-25
 tags: [grammar, sentence-structure, word-order]
 ---
+
 > **Kort sagt:** Når en setning introduserer noe nytt eller ukjent, setter norsk **det** i subjektplassen og flytter det egentlige subjektet lenger bak. Dette kalles en **presenteringssetning**.
 
 ## Kort forklaring
@@ -75,10 +76,10 @@ _Når subjektet er bestemt (kjent), bruker vi normal ordstilling._
 
 Begge setningene under er korrekte — men de legger vekt på ulike ting:
 
-| Setning                          | Fokus                                     |
-| -------------------------------- | ----------------------------------------- |
+| Setning                          | Fokus                                        |
+| -------------------------------- | -------------------------------------------- |
 | **En katt kom inn vinduet.**     | Katten — vi retter fokus mot den med én gang |
-| **Det kom en katt inn vinduet.** | Hendelsen — noe skjedde                   |
+| **Det kom en katt inn vinduet.** | Hendelsen — noe skjedde                      |
 
 - **Det kom en katt …** → _something happened; what was it? a cat came in_
 - **En katt kom …** → direkte fokus på katten fra starten av

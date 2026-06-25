@@ -17,6 +17,7 @@ decks:
     category: uttrykk-preview
     label: B1 Uttrykk (preview)
 ---
+
 > **Kort sagt:** Noen av de mest naturlig klingende norske frasene starter med **det**. Lær disse ti, og talt norsk vil umiddelbart føles mer flytende.
 
 ## Kort forklaring
@@ -108,18 +109,18 @@ Mange av de mest nyttige norske uttrykkene starter med **det** — men **det** h
 
 ## Sammenligningstabell
 
-| Uttrykk             | Engelsk                      | Bruk                                    |
-| ------------------- | ---------------------------- | --------------------------------------- |
-| det gir mening      | that makes sense             | når noe faller på plass                 |
-| det kommer an på    | it depends                   | universelt forbehold                    |
-| det ser ut til at   | it seems that                | uttrykke usikkerhet                     |
-| det stemmer         | that's right                 | bekrefte noe                            |
-| det betyr at        | that means that              | trekke en konklusjon                    |
-| det hender (at …)   | it happens (that …)          | uttrykke at noe skjer av og til         |
-| det spørs           | it's uncertain / hard to say | uttrykke tvil eller nøling              |
-| det er ikke sikkert | it's not certain             | uttrykke usikkerhet                     |
-| det er jo slik at   | the thing is / in fact       | innlede et faktum eller en virkelighet  |
-| det er verdt det    | it's worth it                | rettferdiggjøre innsats eller kostnad   |
+| Uttrykk             | Engelsk                      | Bruk                                   |
+| ------------------- | ---------------------------- | -------------------------------------- |
+| det gir mening      | that makes sense             | når noe faller på plass                |
+| det kommer an på    | it depends                   | universelt forbehold                   |
+| det ser ut til at   | it seems that                | uttrykke usikkerhet                    |
+| det stemmer         | that's right                 | bekrefte noe                           |
+| det betyr at        | that means that              | trekke en konklusjon                   |
+| det hender (at …)   | it happens (that …)          | uttrykke at noe skjer av og til        |
+| det spørs           | it's uncertain / hard to say | uttrykke tvil eller nøling             |
+| det er ikke sikkert | it's not certain             | uttrykke usikkerhet                    |
+| det er jo slik at   | the thing is / in fact       | innlede et faktum eller en virkelighet |
+| det er verdt det    | it's worth it                | rettferdiggjøre innsats eller kostnad  |
 
 ---
 

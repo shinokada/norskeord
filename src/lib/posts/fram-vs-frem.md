@@ -13,6 +13,7 @@ decks:
     category: vocabulary
     label: A1 Vocabulary
 ---
+
 > **Kort sagt:** **Fram** og **frem** betyr nøyaktig det samme. Forskjellen handler om stil — **fram** er mer vanlig i tale, **frem** er den standard skriftlige formen. Når du er i tvil, skriv **frem**.
 
 ## Kort forklaring
@@ -60,10 +61,10 @@ Noen sammensatte former er mye vanligere med **frem** i skriftlig norsk:
 
 ## Sammenligningstabell
 
-| Form     | Stil                  | Bruksområde                              |
-| -------- | --------------------- | ---------------------------------------- |
-| **fram** | uformelt / muntlig    | hverdagstale, uformell skriving          |
-| **frem** | standard / skriftlig  | formell skriving, eksamen, bokmål        |
+| Form     | Stil                 | Bruksområde                       |
+| -------- | -------------------- | --------------------------------- |
+| **fram** | uformelt / muntlig   | hverdagstale, uformell skriving   |
+| **frem** | standard / skriftlig | formell skriving, eksamen, bokmål |
 
 ---
 

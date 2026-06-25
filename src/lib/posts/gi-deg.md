@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A2 Verbs
 ---
+
 > **Kort sagt:** **Gi deg** betyr «stopp det / slapp av / hold opp» — ikke «gi deg selv noe». Det er et svært vanlig uttrykk, og tonen avhenger helt av situasjonen.
 
 ## Kort forklaring
@@ -60,12 +61,12 @@ _He didn't give in._ → Han fortsatte til tross for press — kan være beundri
 
 ## Sammenligningstabell
 
-| Uttrykk       | Betydning                        | Typisk tone          |
-| ------------- | -------------------------------- | -------------------- |
-| **gi seg**    | stoppe / gi etter                | nøytral til bestemt  |
-| **gi opp**    | gi opp (for vanskelig)           | resignert            |
-| **holde opp** | slutte å gjøre noe               | direkte / bestemt    |
-| **slutte**    | stoppe / slutte                  | nøytral              |
+| Uttrykk       | Betydning              | Typisk tone         |
+| ------------- | ---------------------- | ------------------- |
+| **gi seg**    | stoppe / gi etter      | nøytral til bestemt |
+| **gi opp**    | gi opp (for vanskelig) | resignert           |
+| **holde opp** | slutte å gjøre noe     | direkte / bestemt   |
+| **slutte**    | stoppe / slutte        | nøytral             |
 
 ---
 

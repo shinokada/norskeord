@@ -13,6 +13,7 @@ decks:
     category: grammar
     label: B2 Grammar
 ---
+
 > **Kort sagt:** En **subjunksjon** innleder en leddsetning og utløser en ordstillingsendring — setningsadverb som **ikke** flytter seg foran det finitte verbet. Å lære å gjenkjenne disse ordene er avgjørende for å lese og skrive lengre norske setninger.
 
 ## Kort forklaring

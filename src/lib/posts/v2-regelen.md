@@ -13,6 +13,7 @@ decks:
     category: descriptive-adjectives
     label: A2 Descriptive Adjectives
 ---
+
 > **Kort sagt:** På norsk er verbet alltid det andre leddet i en hovedsetning. Hvis noe annet enn subjektet kommer først, flyttes subjektet til etter verbet.
 
 ## Kort forklaring

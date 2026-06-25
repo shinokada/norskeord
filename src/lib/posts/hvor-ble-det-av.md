@@ -6,6 +6,7 @@ cefr: B1
 publishedAt: 2026-06-17
 tags: [expressions, idioms, grammar]
 ---
+
 > **Kort sagt:** _Bli av_ er et fast uttrykk som betyr "hva skjedde med / hvor ble det av X." Det oversettes ikke ord for ord.
 
 ## Kort forklaring
@@ -37,12 +38,12 @@ Det brukes til å spørre om:
 
 ## Sammenligningstabell
 
-|                               | Tone                      | Focus                              |
-| ----------------------------- | ------------------------- | ---------------------------------- |
-| **Hvor er nøklene?**          | nøytral                   | nåværende plassering               |
-| **Hvor ble det av nøklene?**  | litt ekspressiv           | forsvinning / tap                  |
-| **Hva skjedde med nøklene?**  | nøytral / fortidsbegivenhet | hva som skjedde (årsak)          |
-| **Hva har blitt av nøklene?** | undrende / nostalgisk     | skjebne eller utfall over tid      |
+|                               | Tone                        | Focus                         |
+| ----------------------------- | --------------------------- | ----------------------------- |
+| **Hvor er nøklene?**          | nøytral                     | nåværende plassering          |
+| **Hvor ble det av nøklene?**  | litt ekspressiv             | forsvinning / tap             |
+| **Hva skjedde med nøklene?**  | nøytral / fortidsbegivenhet | hva som skjedde (årsak)       |
+| **Hva har blitt av nøklene?** | undrende / nostalgisk       | skjebne eller utfall over tid |
 
 ---
 

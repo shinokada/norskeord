@@ -7,6 +7,7 @@ type: guide
 publishedAt: 2026-08-12
 tags: [grammar, prepositions]
 ---
+
 Preposisjoner er noe av det vanskeligste i norsk — selv på B1-nivå og høyere. Det finnes en logikk bak dem, men noen mønstre må ganske enkelt læres som faste uttrykk. Denne guiden tar for seg de fem viktigste.
 
 ---
@@ -114,13 +115,13 @@ Disse oppgavene overlapper i kantene, og noen bruksområder må bare pugges. Nø
 
 ## Sammenligningstabell
 
-| Preposisjon | Primær jobb         | Typisk bruk                          |
-| ----------- | ------------------- | ------------------------------------ |
-| **i**       | inne i / i          | byer, land, rom, tidsperioder        |
-| **på**      | på / ved            | overflater, institusjoner, hendelser |
-| **med**     | med / ved hjelp av  | folk, transport, verktøy             |
-| **ved**     | ved / nær           | fysisk nærhet, faste uttrykk         |
-| **for**     | for                 | formål, nytte, for mye/lite          |
+| Preposisjon | Primær jobb        | Typisk bruk                          |
+| ----------- | ------------------ | ------------------------------------ |
+| **i**       | inne i / i         | byer, land, rom, tidsperioder        |
+| **på**      | på / ved           | overflater, institusjoner, hendelser |
+| **med**     | med / ved hjelp av | folk, transport, verktøy             |
+| **ved**     | ved / nær          | fysisk nærhet, faste uttrykk         |
+| **for**     | for                | formål, nytte, for mye/lite          |
 
 ---
 

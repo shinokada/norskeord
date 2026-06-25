@@ -1,6 +1,6 @@
 ---
 title: 'Det er lov — det er tillatt / det er greit'
-description: '"Det er lov" betyr at noe er tillatt eller greit. Det samme ordet "lov" betyr også "law" på engelsk – sammenhengen avgjør hvilken betydning som gjelder.'
+description: '«Det er lov» betyr at noe er tillatt eller greit. Det samme ordet «lov» betyr dessuten «regel» eller «lovgivning» — sammenhengen avgjør hvilken betydning som gjelder.'
 slug: det-er-lov
 cefr: A2
 publishedAt: 2026-09-04
@@ -13,6 +13,7 @@ decks:
     category: phrases
     label: A2 Phrases
 ---
+
 > **Kort sagt:** **Det er lov å …** means "it is allowed to …" or "it is okay to …". The word **lov** looks like "law," but in this expression it means permission — not legislation.
 
 ## Kort forklaring
@@ -79,12 +80,12 @@ Her snakker vi om juridiske regler, ikke tillatelse.
 
 ## Sammenligningstabell
 
-| Uttrykk              | Betydning               | Type ord             |
-| -------------------- | ----------------------- | -------------------- |
-| **det er lov å …**   | det er tillatt å …      | uttrykk (tillatelse) |
-| **ikke lov**         | ikke tillatt            | uttrykk (negasjon)   |
-| **en lov / loven**   | en lov / loven          | substantiv           |
-| **lover** (flertall) | lover                   | substantiv           |
+| Uttrykk              | Betydning          | Type ord             |
+| -------------------- | ------------------ | -------------------- |
+| **det er lov å …**   | det er tillatt å … | uttrykk (tillatelse) |
+| **ikke lov**         | ikke tillatt       | uttrykk (negasjon)   |
+| **en lov / loven**   | en lov / loven     | substantiv           |
+| **lover** (flertall) | lover              | substantiv           |
 
 ---
 

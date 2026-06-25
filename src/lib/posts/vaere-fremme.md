@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A1 Verbs
 ---
+
 > **Kort sagt:** **Være fremme** betyr å ha ankommet destinasjonen sin — det uttrykker resultatet av en reise, ikke bare hvor du befinner deg.
 
 ## Kort forklaring

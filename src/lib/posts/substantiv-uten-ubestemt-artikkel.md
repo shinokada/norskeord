@@ -7,6 +7,7 @@ type: guide
 publishedAt: 2026-12-02
 tags: [grammar, nouns, articles]
 ---
+
 > **Kort sagt:** Dropp den ubestemte artikkelen etter **er** ved yrker, nasjonaliteter og roller. Behold den når det legges til et adjektiv, når substantivet er spesifikt, eller når du vil understreke noe.
 
 ## Kort forklaring

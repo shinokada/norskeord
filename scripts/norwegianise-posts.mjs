@@ -66,9 +66,9 @@ const DRY_RUN = process.argv.includes('--dry-run');
 function isPredominantlyLatin(text) {
   // Strip italic markers and punctuation
   const body = text.replace(/^_|_$/g, '').trim();
-  if (/[æøåÆØÅ]/.test(body)) return false;          // has Norwegian characters → not a gloss
+  if (/[æøåÆØÅ]/.test(body)) return false; // has Norwegian characters → not a gloss
   const wordChars = body.replace(/[^a-zA-Z]/g, '');
-  const asciiLetters = body.replace(/[^a-zA-Z]/g, '').replace(/[^a-zA-Z]/g, '');
+
   if (wordChars.length === 0) return false;
   // All remaining word characters are ASCII — treat as English gloss
   return true;
@@ -147,7 +147,9 @@ for (const filePath of files) {
     totalChanged++;
     totalRemoved += removedCount;
     const label = DRY_RUN ? '[dry-run] would update' : 'updated';
-    console.log(`${label}: ${basename(filePath)} (${removedCount} gloss line${removedCount !== 1 ? 's' : ''} removed)`);
+    console.log(
+      `${label}: ${basename(filePath)} (${removedCount} gloss line${removedCount !== 1 ? 's' : ''} removed)`
+    );
   }
 }
 
@@ -155,5 +157,7 @@ if (totalChanged === 0) {
   console.log('No English gloss lines found — all posts already fully Norwegian.');
 } else {
   const action = DRY_RUN ? 'Would remove' : 'Removed';
-  console.log(`\n${action} ${totalRemoved} gloss line${totalRemoved !== 1 ? 's' : ''} across ${totalChanged} file${totalChanged !== 1 ? 's' : ''}.`);
+  console.log(
+    `\n${action} ${totalRemoved} gloss line${totalRemoved !== 1 ? 's' : ''} across ${totalChanged} file${totalChanged !== 1 ? 's' : ''}.`
+  );
 }

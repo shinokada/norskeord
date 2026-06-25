@@ -13,6 +13,7 @@ decks:
     category: grammar
     label: A2 Grammar
 ---
+
 > **Kort sagt:** I norske helsetninger kommer **ikke** etter verbet — men hvis setningen har et objekt, kommer **ikke** _etter_ objektet, ikke umiddelbart etter verbet. I leddsetninger flyttes **ikke** helt foran verbet.
 
 ## Kort forklaring

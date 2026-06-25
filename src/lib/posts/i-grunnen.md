@@ -13,6 +13,7 @@ decks:
     category: adverbs
     label: A2 Adverbs
 ---
+
 > **Kort sagt:** **I grunnen** signaliserer en erkjennelse eller innrømmelse — noe man kanskje ikke ville ha sagt med det samme, men som man vedkjenner seg etter litt ettertanke. Det ligger nær "actually," "come to think of it," eller "deep down."
 
 ## Kort forklaring
@@ -62,12 +63,12 @@ I dagligtale er de ofte utbyttbare, men **i grunnen** bærer en litt tydeligere 
 
 ## Sammenligningstabell
 
-| Uttrykk          | Tone                              | Typisk bruk                                      |
-| ---------------- | --------------------------------- | ------------------------------------------------ |
-| **i grunnen**    | reflekterende / mild innrømmelse  | innse eller vedkjenne seg noe                    |
-| **egentlig**     | nøytral / korrigerende            | tydeliggjøre, korrigere, fastslå fakta           |
-| **faktisk**      | ettertrykkelig / bestemt          | understreke at noe er sant                       |
-| **innerst inne** | dypt inne / i bunn og grunn       | sterk følelsesmessig innrømmelse                 |
+| Uttrykk          | Tone                             | Typisk bruk                            |
+| ---------------- | -------------------------------- | -------------------------------------- |
+| **i grunnen**    | reflekterende / mild innrømmelse | innse eller vedkjenne seg noe          |
+| **egentlig**     | nøytral / korrigerende           | tydeliggjøre, korrigere, fastslå fakta |
+| **faktisk**      | ettertrykkelig / bestemt         | understreke at noe er sant             |
+| **innerst inne** | dypt inne / i bunn og grunn      | sterk følelsesmessig innrømmelse       |
 
 ---
 

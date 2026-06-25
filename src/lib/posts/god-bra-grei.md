@@ -13,6 +13,7 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
+
 > **Kort sagt:** _God_, _bra_, og _grei_ danner en skala fra sterkt til nøytralt. Å forstå forskjellen gjør at du unngår å kalle noe middelmådig når du egentlig mente det var flott.
 
 ## Kort forklaring
