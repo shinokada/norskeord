@@ -9,7 +9,6 @@
   import Nav from './components/Nav.svelte';
   import Footer from './components/Footer.svelte';
   import InAppBrowserBanner from './components/InAppBrowserBanner.svelte';
-  import UpdateBanner from './components/UpdateBanner.svelte';
   import OnboardingSlides from '$lib/components/OnboardingSlides.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
 
@@ -79,4 +78,3 @@
 {/key}
 
 <InAppBrowserBanner />
-<UpdateBanner />
