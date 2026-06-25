@@ -1,6 +1,6 @@
 ---
 title: '10 det-uttrykk du trenger å kunne'
-description: 'Many of the most useful Norwegian expressions start with "det" — det gir mening, det kommer an på, det stemmer, and more. Here are ten worth memorising.'
+description: 'Mange av de mest nyttige norske uttrykkene starter med «det» — det gir mening, det kommer an på, det stemmer, og flere til. Her er ti uttrykk det er verdt å lære seg.'
 slug: det-uttrykk
 cefr: B1
 publishedAt: 2026-06-01
@@ -18,29 +18,25 @@ decks:
     label: B1 Uttrykk (preview)
 ---
 
-> **TL;DR:** Some of the most natural-sounding Norwegian phrases start with **det**. Learn these ten and your spoken Norwegian will immediately feel more fluent.
+> **Kort sagt:** Noen av de mest naturlig klingende norske frasene starter med **det**. Lær disse ti, og talt norsk vil umiddelbart føles mer flytende.
 
 ## Kort forklaring
 
 Mange av de mest nyttige norske uttrykkene starter med **det** — men **det** her betyr ikke noe konkret. Det er bare en del av et fast uttrykk.
-
-_In English:_ Several everyday Norwegian phrases use **det** as a kind of opener — similar to "it" in English expressions like "it depends" or "it seems." These are worth learning as fixed chunks.
 
 ---
 
 ## De 10 uttrykkene
 
 **1. Det gir mening.**
-_That makes sense._
-→ Use when something becomes logical or clicks into place.
+→ Bruk når noe blir logisk eller faller på plass.
 
 > — Nå forstår jeg det. Det gir mening.
 
 ---
 
 **2. Det kommer an på.**
-_It depends._
-→ One of the most useful phrases in Norwegian. Often followed by a noun or clause.
+→ En av de mest nyttige frasene på norsk. Ofte etterfulgt av et substantiv eller en leddsetning.
 
 > — Det kommer an på været.
 > — Det kommer an på hvor mye det koster.
@@ -48,8 +44,7 @@ _It depends._
 ---
 
 **3. Det ser ut til at …**
-_It seems that …_
-→ Use when you are not completely sure about something.
+→ Bruk når du ikke er helt sikker på noe.
 
 > — Det ser ut til at det blir regn i morgen.
 > — Det ser ut til at han er syk.
@@ -57,8 +52,7 @@ _It seems that …_
 ---
 
 **4. Det stemmer.**
-_That's correct. / That's right._
-→ Very common in conversation as a simple confirmation.
+→ Svært vanlig i samtale som en enkel bekreftelse.
 
 > — Du jobber her, ikke sant?
 > — Ja, det stemmer.
@@ -66,8 +60,7 @@ _That's correct. / That's right._
 ---
 
 **5. Det betyr at …**
-_That means that …_
-→ Use to explain a consequence or conclusion.
+→ Bruk for å forklare en konsekvens eller konklusjon.
 
 > — Jeg er syk, det betyr at jeg blir hjemme.
 > — Det er stengt, det betyr at vi må vente.
@@ -75,8 +68,7 @@ _That means that …_
 ---
 
 **6. Det hender (at …)**
-_It happens (that …)_
-→ Use to say something occurs occasionally, or to acknowledge something without surprise.
+→ Bruk for å si at noe skjer av og til, eller for å erkjenne noe uten overraskelse.
 
 > — Det hender at jeg glemmer det.
 > — Det hender at tog er forsinket.
@@ -84,8 +76,7 @@ _It happens (that …)_
 ---
 
 **7. Det spørs.**
-_It's uncertain. / Hard to say._
-→ A colloquial way to express doubt or hesitation — more natural-sounding than _jeg vet ikke_.
+→ En uformell måte å uttrykke tvil eller nøling på — mer naturlig enn _jeg vet ikke_.
 
 > — Kommer han i morgen? Det spørs.
 > — Det spørs om vi rekker det.
@@ -93,8 +84,7 @@ _It's uncertain. / Hard to say._
 ---
 
 **8. Det er ikke sikkert.**
-_It's not certain. / Not necessarily._
-→ Use to express uncertainty or to soften a claim.
+→ Bruk for å uttrykke usikkerhet eller myke opp en påstand.
 
 > — Det er ikke sikkert at han kommer.
 > — Kanskje, men det er ikke sikkert.
@@ -102,8 +92,7 @@ _It's not certain. / Not necessarily._
 ---
 
 **9. Det er jo slik at …**
-_It is in fact the case that … / The thing is …_
-→ Use to introduce a fact or reality, often with a slightly persuasive tone.
+→ Bruk for å innlede et faktum eller en virkelighet, ofte med en lett overtalende tone.
 
 > — Det er jo slik at vi alle gjør feil.
 > — Det er jo slik at vi må spare penger.
@@ -111,8 +100,7 @@ _It is in fact the case that … / The thing is …_
 ---
 
 **10. Det er verdt det.**
-_It's worth it._
-→ Use to say that an effort, cost, or difficulty is justified.
+→ Bruk for å si at en innsats, kostnad eller vanskelighet er berettiget.
 
 > — Det er hardt arbeid, men det er verdt det.
 > — Er det verdt det å reise så langt?
@@ -121,18 +109,18 @@ _It's worth it._
 
 ## Sammenligningstabell
 
-| Uttrykk             | Engelsk                      | Bruk                         |
-| ------------------- | ---------------------------- | ---------------------------- |
-| det gir mening      | that makes sense             | when something clicks        |
-| det kommer an på    | it depends                   | universal hedge              |
-| det ser ut til at   | it seems that                | expressing uncertainty       |
-| det stemmer         | that's right                 | confirming something         |
-| det betyr at        | that means that              | drawing a conclusion         |
-| det hender (at …)   | it happens (that …)          | expressing occasional events |
-| det spørs           | it's uncertain / hard to say | expressing doubt/hesitation  |
-| det er ikke sikkert | it's not certain             | expressing doubt             |
-| det er jo slik at   | the thing is / in fact       | introducing a reality        |
-| det er verdt det    | it's worth it                | justifying effort or cost    |
+| Uttrykk             | Engelsk                      | Bruk                                   |
+| ------------------- | ---------------------------- | -------------------------------------- |
+| det gir mening      | that makes sense             | når noe faller på plass                |
+| det kommer an på    | it depends                   | universelt forbehold                   |
+| det ser ut til at   | it seems that                | uttrykke usikkerhet                    |
+| det stemmer         | that's right                 | bekrefte noe                           |
+| det betyr at        | that means that              | trekke en konklusjon                   |
+| det hender (at …)   | it happens (that …)          | uttrykke at noe skjer av og til        |
+| det spørs           | it's uncertain / hard to say | uttrykke tvil eller nøling             |
+| det er ikke sikkert | it's not certain             | uttrykke usikkerhet                    |
+| det er jo slik at   | the thing is / in fact       | innlede et faktum eller en virkelighet |
+| det er verdt det    | it's worth it                | rettferdiggjøre innsats eller kostnad  |
 
 ---
 

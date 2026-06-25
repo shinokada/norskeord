@@ -1,6 +1,6 @@
 ---
-title: 'God vs Bra vs Fin — Which "Good" Do You Mean?'
-description: "Norwegian has several words for 'good' — and choosing the wrong one sounds off. God is about quality, bra is general, fin is nice or pretty, flink is skilled."
+title: 'God vs bra vs fin — Hvilket «god» mener du?'
+description: 'Norsk har flere ord som oversetter «god» — og feil valg høres rart ut. god handler om kvalitet, bra er generelt, fin betyr hyggelig eller pen, og flink betyr dyktig.'
 slug: god-bra-fin
 cefr: A2
 publishedAt: 2026-05-27
@@ -14,7 +14,7 @@ decks:
     label: A1 Adjectives
 ---
 
-> **TL;DR:** English uses "good" for almost everything. Norwegian makes you choose: _god_ (quality/taste), _bra_ (general positive), _fin_ (nice/pretty), _flink_ (skilled).
+> **Kort sagt:** Engelsk bruker "good" om nesten alt. På norsk må du velge: _god_ (kvalitet/smak), _bra_ (generelt positivt), _fin_ (pen/hyggelig), _flink_ (dyktig).
 
 ## Kort forklaring
 
@@ -27,108 +27,91 @@ De fire vanligste ordene er:
 - **fin** → pent, hyggelig, behagelig
 - **flink** → dyktig, god til noe
 
-_In English:_ Norwegian splits the meaning of "good" depending on what you're praising — quality, general positivity, appearance, or skill.
-
 ---
 
-## God — quality, taste, warmth
+## God — kvalitet, smak og varme
 
 **God** brukes om ting med **høy kvalitet**, god smak, eller varme/snille mennesker.
 
 **1. Kaken er god.**
-_The cake is good / tastes good._
-→ God is the natural word for taste and food quality.
+→ God er det naturlige ordet for smak og matkvalitet.
 
 **2. Hun er et godt menneske.**
-_She is a good person._
-→ Warm, kind — god describes moral character.
+→ Varm og snill — god beskriver moralsk karakter.
 
 **3. Hun er god i norsk.**
-_She is good at Norwegian._
-→ Strong ability in a subject.
+→ Sterk evne i et fag.
 
 **4. Vi hadde en god samtale.**
-_We had a good conversation._
-→ Meaningful, deep — not just pleasant.
+→ Meningsfull og dyp — ikke bare hyggelig.
 
 ---
 
-## Bra — the everyday all-rounder
+## Bra — det allsidige hverdagsordet
 
 **Bra** er det mest allsidige og vanligste ordet. Bruk det når du er i tvil.
 
 **1. Filmen var bra.**
-_The film was good._
-→ Enjoyed it — bra is the natural choice for general impressions.
+→ Man likte den — bra er det naturlige valget for generelle inntrykk.
 
 **2. Det går bra.**
-_Things are going well._
-→ Standard response to «Hvordan går det?»
+→ Standard svar på «Hvordan går det?»
 
 **3. Det er en bra idé.**
-_That's a good idea._
-→ Practical, sensible.
+→ Praktisk og fornuftig.
 
 **4. Jeg har det bra.**
-_I'm doing well._
-→ The standard «I'm fine» in Norwegian.
+→ Det vanlige «I'm fine» på norsk.
 
 ---
 
-## Fin — nice, pretty, pleasant
+## Fin — pen, hyggelig og behagelig
 
 **Fin** handler om **utseende**, **atmosfære**, eller noe **hyggelig og pent**.
 
 **1. Du har en fin jakke.**
-_You have a nice jacket._
-→ Looks good — fin is about appearance.
+→ Ser bra ut — fin handler om utseende.
 
 **2. Vi hadde en fin dag.**
-_We had a nice day._
-→ Pleasant, enjoyable atmosphere.
+→ Hyggelig og god stemning.
 
 **3. Det er fint vær i dag.**
-_The weather is nice today._
-→ The standard expression for nice weather.
+→ Det vanlige uttrykket for godt vær.
 
 **4. Det var fint gjort av deg.**
-_That was kind of you._
-→ A polite, warm expression — fin used as a compliment.
+→ Et høflig og varmt uttrykk — fin brukt som kompliment.
 
 ---
 
-## Flink — skilled, capable
+## Flink — dyktig og kapabel
 
 **Flink** handler om **ferdigheter og innsats** — ikke kvalitet i seg selv.
 
 **1. Hun er flink i matte.**
-_She is good at maths._
-→ Skilled, performs well.
+→ Dyktig og presterer godt.
 
 **2. Du er veldig flink til å snakke norsk.**
-_You're very good at speaking Norwegian._
-→ A common compliment for language learners.
+→ Et vanlig kompliment til språklærere.
 
 **3. Barna var flinke og ryddet opp.**
-_The children were good and tidied up._
-→ Well-behaved, made an effort.
+→ Veltilpasset og gjorde en innsats.
 
 **Forskjell — god vs flink:**
 
-- **god i norsk** → has strong Norwegian ability
-- **flink i norsk** → skilled and hardworking at Norwegian
-  _(Flink points more to effort and capability; god to the result.)_
+- **god i norsk** → har sterke norskferdigheter
+- **flink i norsk** → dyktig og hardt arbeidende i norsk
+  _(Flink peker mer mot innsats og evne; god mot resultatet.)_
 
 ---
 
 ## Sammenligningstabell
 
-| Norsk     | Meaning                      | Typical use                |
-| --------- | ---------------------------- | -------------------------- |
-| **god**   | good (quality, taste, moral) | mat · person · samtale     |
-| **bra**   | good (general, everyday)     | film · idé · «det går bra» |
-| **fin**   | nice, pretty, pleasant       | vær · jakke · dag          |
-| **flink** | skilled, capable, diligent   | i matte · til å snakke     |
+| Norsk     | Betydning                   | Typisk bruk                |
+| --------- | --------------------------- | -------------------------- |
+| **god**   | god (kvalitet, smak, moral) | mat · person · samtale     |
+| **bra**   | god (generelt, hverdagslig) | film · idé · «det går bra» |
+| **fin**   | pen, hyggelig, behagelig    | vær · jakke · dag          |
+| **flink** | dyktig, kapabel, flittig    | i matte · til å snakke     |
 
 ---
 
@@ -137,17 +120,17 @@ _The children were good and tidied up._
 ❌ Filmen var god.
 ⭕ Filmen var bra.
 
-_God sounds odd for general impressions like films unless you mean artistically exceptional. Bra is the natural choice._
+_God høres rart ut om generelle inntrykk som filmer, med mindre man mener kunstnerisk eksepsjonell. Bra er det naturlige valget._
 
 ❌ Det er god vær i dag.
 ⭕ Det er fint vær i dag.
 
-_«Fint vær» is a fixed expression. God is not used for weather._
+_«Fint vær» er et fast uttrykk. God brukes ikke om vær._
 
 ❌ Hun er god til å snakke norsk.
 ⭕ Hun er flink til å snakke norsk.
 
-_For praising someone's skills or effort, flink is more natural than god._
+_Når man skryter av noens ferdigheter eller innsats, er flink mer naturlig enn god._
 
 ---
 

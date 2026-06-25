@@ -1,6 +1,6 @@
 ---
-title: 'Finne fram — take out / bring out'
-description: "Finne fram doesn't mean 'find forward' — it means to take something out, bring it out, or get it ready. A fixed expression you'll hear often."
+title: 'Finne fram — ta fram / hente fram'
+description: 'Finne fram betyr ikke å finne noe fremover — det betyr å ta fram, hente fram eller gjøre noe klart. Et fast uttrykk du kommer til å høre ofte.'
 slug: finner-fram
 cefr: A2
 publishedAt: 2026-07-03
@@ -14,7 +14,7 @@ decks:
     label: A1 Verbs
 ---
 
-> **TL;DR:** **Finne fram** does not mean "find forward" — it means to take something out or bring it out, often from somewhere it was stored or put away.
+> **Kort sagt:** **Finne fram** betyr ikke «find forward» — det betyr å ta frem noe, ofte fra et sted der det var oppbevart eller lagt bort.
 
 ## Kort forklaring
 
@@ -22,27 +22,21 @@ decks:
 
 Det er nært synonymt med **ta fram** og **hente fram**.
 
-_In English:_ **Finne fram** means to take something out, bring something out, or get something ready — not to literally "find" it.
-
 ---
 
 ## Eksempler
 
 **1. Han fant fram boka.**
-_He took out / brought out the book._
-→ The book was put away somewhere; he got it out.
+→ Boka lå gjemt et sted; han tok den frem.
 
 **2. Jeg fant fram passet mitt.**
-_I got my passport out._
-→ Common when preparing to travel.
+→ Vanlig når man forbereder seg til å reise.
 
 **3. Hun finner fram celloen og spiller lenge.**
-_She takes out her cello and plays for a long time._
-→ The cello was in a case or storage; she brings it out to play.
+→ Celloen lå i en veske eller på lager; hun tar den frem for å spille.
 
 **4. Kan du finne fram jakken din?**
-_Can you get your jacket out?_
-→ Used when asking someone to retrieve something.
+→ Brukes når man ber noen hente frem noe.
 
 ---
 
@@ -50,14 +44,14 @@ _Can you get your jacket out?_
 
 Begge betyr omtrent det samme i dagligtale, men det er en liten nyanse:
 
-- **finne fram** → implies the item was stored or not immediately at hand
-- **ta fram** → more neutral — simply taking something out
+- **finne fram** → antyder at gjenstanden var oppbevart eller ikke lett tilgjengelig
+- **ta fram** → mer nøytralt — bare det å ta noe frem
 
 **Finne fram sykkelen.**
-_Taking the bike out_ — implies it was stored somewhere (a shed, a garage).
+_Taking the bike out_ — antyder at den sto lagret et sted (et uthus, en garasje).
 
 **Ta fram sykkelen.**
-_Taking the bike out_ — more neutral, no particular implication about storage.
+_Taking the bike out_ — mer nøytralt, ingen særlig antydning om oppbevaring.
 
 I de fleste tilfeller er de utbyttbare.
 
@@ -65,11 +59,11 @@ I de fleste tilfeller er de utbyttbare.
 
 ## Sammenligningstabell
 
-| Uttrykk        | Betydning            | Nyanse                              |
-| -------------- | -------------------- | ----------------------------------- |
-| **finne fram** | take out / bring out | implies item was stored or put away |
-| **ta fram**    | take out / bring out | neutral, no storage implied         |
-| **hente fram** | fetch / bring out    | slight emphasis on going to get it  |
+| Uttrykk        | Betydning            | Nyanse                                            |
+| -------------- | -------------------- | ------------------------------------------------- |
+| **finne fram** | ta frem / hente frem | antyder at gjenstanden var lagret eller lagt bort |
+| **ta fram**    | ta frem / hente frem | nøytralt, ingen antydning om oppbevaring          |
+| **hente fram** | hente / bringe frem  | lett vekt på det å gå og hente                    |
 
 ---
 
@@ -78,18 +72,18 @@ I de fleste tilfeller er de utbyttbare.
 ❌ Jeg finner fremover boka.
 ⭕ Jeg finner fram boka.
 
-_The correct particle is **fram** (or **frem** in some dialects), not **fremover**._
+_Riktig partikkel er **fram** (eller **frem** i enkelte dialekter), ikke **fremover**._
 
 ❌ Jeg fant boka fram.
 ⭕ Jeg fant fram boka.
 
-_The object usually follows **fram** directly: **finne fram** + object._
+_Objektet kommer vanligvis rett etter **fram**: **finne fram** + objekt._
 
 ---
 
 ## Husk dette
 
-- **finne fram** = take out / bring out something that was stored
+- **finne fram** = ta frem / hente frem noe som var oppbevart
 - Det er et fast uttrykk — **fram** betyr ikke bokstavelig «forward» her
 - Nært synonymt med **ta fram** og **hente fram**
 

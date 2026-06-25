@@ -1,6 +1,6 @@
 ---
-title: 'V2-regelen — Why the Verb Always Comes Second'
-description: 'In Norwegian main clauses, the verb must always be the second element — no matter what comes first. This is the V2 rule, and it explains why word order shifts when a sentence starts with time or place.'
+title: 'V2-regelen — Derfor kommer alltid verbet på andreplass'
+description: 'I norske helsetninger må verbet alltid være det andre leddet – uansett hva som kommer først. Dette er V2-regelen, og den forklarer hvorfor ordstillingen endrer seg når en setning begynner med tid eller sted.'
 slug: v2-regelen
 cefr: A2
 publishedAt: 2026-06-03
@@ -14,15 +14,13 @@ decks:
     label: A2 Descriptive Adjectives
 ---
 
-> **TL;DR:** In Norwegian, the verb is always the second element in a main clause. If something other than the subject comes first, the subject gets pushed after the verb.
+> **Kort sagt:** På norsk er verbet alltid det andre leddet i en hovedsetning. Hvis noe annet enn subjektet kommer først, flyttes subjektet til etter verbet.
 
 ## Kort forklaring
 
 Norske hovedsetninger følger **V2-regelen**: verbet er alltid på **andre plass**.
 
 Det betyr at uansett hva som starter setningen — tid, sted, eller noe annet — kommer verbet alltid på plass nummer 2.
-
-_In English:_ Norwegian word order is stricter than English in one key way: the verb must always be the second element in a main clause. When an adverbial phrase (time, place, manner) starts the sentence, the subject and verb swap places. This is called **inversion**.
 
 ---
 
@@ -101,12 +99,12 @@ Når setningen er negativ, kommer **ikke** etter verbet — men fortsatt foran s
 ❌ I går ikke Per kjøpte brød.
 ⭕ I går kjøpte ikke Per brød.
 
-_The verb must be the second element. «Ikke» never comes before the verb._
+_Verbet må stå på andre plass. «Ikke» kommer aldri før verbet._
 
 ❌ Klokka åtte Ida spiser frokost.
 ⭕ Klokka åtte spiser Ida frokost.
 
-_When time or place comes first, the subject must swap places with the verb._
+_Når tid eller sted kommer først, må subjektet bytte plass med verbet._
 
 ---
 

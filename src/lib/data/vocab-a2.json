@@ -1,7 +1,7 @@
 [
   {
     "id": "v-a2-shopping-001",
-    "norsk": "en pris",
+    "norsk": "pris (en)",
     "lemma": "pris",
     "english": "a price",
     "ukrainian": "ціна",
@@ -61,7 +61,7 @@
   },
   {
     "id": "v-a2-shopping-005",
-    "norsk": "en kasse",
+    "norsk": "kasse (en)",
     "lemma": "kasse",
     "english": "a checkout / a till",
     "ukrainian": "каса",
@@ -76,7 +76,7 @@
   },
   {
     "id": "v-a2-shopping-006",
-    "norsk": "en kvittering",
+    "norsk": "kvittering (en)",
     "lemma": "kvittering",
     "english": "a receipt",
     "ukrainian": "чек",
@@ -91,7 +91,7 @@
   },
   {
     "id": "v-a2-shopping-007",
-    "norsk": "et tilbud",
+    "norsk": "tilbud (et)",
     "lemma": "tilbud",
     "english": "a sale / a deal / an offer",
     "ukrainian": "акція / знижка / пропозиція",
@@ -106,7 +106,7 @@
   },
   {
     "id": "v-a2-shopping-008",
-    "norsk": "en pose",
+    "norsk": "pose (en)",
     "lemma": "pose",
     "english": "a bag",
     "ukrainian": "пакет",
@@ -136,7 +136,7 @@
   },
   {
     "id": "v-a2-shopping-010",
-    "norsk": "en rabatt",
+    "norsk": "rabatt (en)",
     "lemma": "rabatt",
     "english": "a discount",
     "ukrainian": "знижка",
@@ -166,7 +166,7 @@
   },
   {
     "id": "v-a2-shopping-012",
-    "norsk": "en størrelse",
+    "norsk": "størrelse (en)",
     "lemma": "størrelse",
     "english": "a size",
     "ukrainian": "розмір",
@@ -181,7 +181,7 @@
   },
   {
     "id": "v-a2-shopping-013",
-    "norsk": "et supermarked",
+    "norsk": "supermarked (et)",
     "lemma": "supermarked",
     "english": "a supermarket",
     "ukrainian": "супермаркет",
@@ -196,7 +196,7 @@
   },
   {
     "id": "v-a2-shopping-014",
-    "norsk": "penger",
+    "norsk": "penger (en)",
     "lemma": "penger",
     "english": "money",
     "ukrainian": "гроші",
@@ -211,7 +211,7 @@
   },
   {
     "id": "v-a2-shopping-015",
-    "norsk": "et kort",
+    "norsk": "kort (et)",
     "lemma": "kort",
     "english": "a (bank/credit) card",
     "ukrainian": "картка (банківська / кредитна)",
@@ -226,7 +226,7 @@
   },
   {
     "id": "v-a2-shopping-016",
-    "norsk": "en kø",
+    "norsk": "kø (en)",
     "lemma": "kø",
     "english": "a queue",
     "ukrainian": "черга",
@@ -256,7 +256,7 @@
   },
   {
     "id": "v-a2-shopping-018",
-    "norsk": "en matvare",
+    "norsk": "matvare (en)",
     "lemma": "matvare",
     "english": "a food item / groceries",
     "ukrainian": "продукт харчування / продукти",
@@ -271,7 +271,7 @@
   },
   {
     "id": "v-a2-shopping-019",
-    "norsk": "åpningstider",
+    "norsk": "åpningstider (en)",
     "lemma": "åpningstider",
     "english": "opening hours",
     "ukrainian": "години роботи",
@@ -286,7 +286,7 @@
   },
   {
     "id": "v-a2-transport-001",
-    "norsk": "en holdeplass",
+    "norsk": "holdeplass (en)",
     "lemma": "holdeplass",
     "english": "a bus stop",
     "ukrainian": "автобусна зупинка",
@@ -316,7 +316,7 @@
   },
   {
     "id": "v-a2-transport-003",
-    "norsk": "en avgang",
+    "norsk": "avgang (en)",
     "lemma": "avgang",
     "english": "a departure",
     "ukrainian": "відправлення / відліт",
@@ -331,7 +331,7 @@
   },
   {
     "id": "v-a2-transport-004",
-    "norsk": "en ankomst",
+    "norsk": "ankomst (en)",
     "lemma": "ankomst",
     "english": "an arrival",
     "ukrainian": "прибуття",
@@ -346,7 +346,7 @@
   },
   {
     "id": "v-a2-transport-005",
-    "norsk": "en ferge",
+    "norsk": "ferge (en)",
     "lemma": "ferge",
     "english": "a ferry",
     "ukrainian": "пором",
@@ -391,7 +391,7 @@
   },
   {
     "id": "v-a2-clothing-003",
-    "norsk": "en drakt",
+    "norsk": "drakt (en)",
     "lemma": "drakt",
     "english": "a suit",
     "ukrainian": "костюм",
@@ -451,7 +451,7 @@
   },
   {
     "id": "v-a2-clothing-007",
-    "norsk": "et antrekk",
+    "norsk": "antrekk (et)",
     "lemma": "antrekk",
     "english": "an outfit",
     "ukrainian": "вбрання / наряд",
@@ -466,7 +466,7 @@
   },
   {
     "id": "v-a2-clothing-008",
-    "norsk": "mote",
+    "norsk": "mote (en)",
     "lemma": "mote",
     "english": "fashion",
     "ukrainian": "мода",
@@ -496,7 +496,7 @@
   },
   {
     "id": "v-a2-hobbies-001",
-    "norsk": "en hobby",
+    "norsk": "hobby (en)",
     "lemma": "hobby",
     "english": "a hobby",
     "ukrainian": "хобі",
@@ -676,7 +676,7 @@
   },
   {
     "id": "v-a2-hobbies-013",
-    "norsk": "et instrument",
+    "norsk": "instrument (et)",
     "lemma": "instrument",
     "english": "an instrument",
     "ukrainian": "інструмент",
@@ -691,7 +691,7 @@
   },
   {
     "id": "v-a2-hobbies-014",
-    "norsk": "en konsert",
+    "norsk": "konsert (en)",
     "lemma": "konsert",
     "english": "a concert",
     "ukrainian": "концерт",
@@ -706,7 +706,7 @@
   },
   {
     "id": "v-a2-hobbies-015",
-    "norsk": "en tur",
+    "norsk": "tur (en)",
     "lemma": "tur",
     "english": "a trip / a hike / a walk",
     "ukrainian": "прогулянка / похід / поїздка",
@@ -751,7 +751,7 @@
   },
   {
     "id": "v-a2-hobbies-018",
-    "norsk": "et spill",
+    "norsk": "spill (et)",
     "lemma": "spill",
     "english": "a game / a board game",
     "ukrainian": "гра / настільна гра",
@@ -781,7 +781,7 @@
   },
   {
     "id": "v-a2-directions-002",
-    "norsk": "et lyskryss",
+    "norsk": "lyskryss (et)",
     "lemma": "lyskryss",
     "english": "traffic lights",
     "ukrainian": "світлофор",
@@ -796,7 +796,7 @@
   },
   {
     "id": "v-a2-directions-003",
-    "norsk": "et hjørne",
+    "norsk": "hjørne (et)",
     "lemma": "hjørne",
     "english": "a corner",
     "ukrainian": "кут",
@@ -886,7 +886,7 @@
   },
   {
     "id": "v-a2-directions-009",
-    "norsk": "nord",
+    "norsk": "nord (en)",
     "lemma": "nord",
     "english": "north",
     "ukrainian": "північ",
@@ -901,7 +901,7 @@
   },
   {
     "id": "v-a2-directions-010",
-    "norsk": "sør",
+    "norsk": "sør (en)",
     "lemma": "sør",
     "english": "south",
     "ukrainian": "південь",
@@ -916,7 +916,7 @@
   },
   {
     "id": "v-a2-directions-011",
-    "norsk": "øst",
+    "norsk": "øst (en)",
     "lemma": "øst",
     "english": "east",
     "ukrainian": "схід",
@@ -931,7 +931,7 @@
   },
   {
     "id": "v-a2-directions-012",
-    "norsk": "vest",
+    "norsk": "vest (en)",
     "lemma": "vest",
     "english": "west",
     "ukrainian": "захід",
@@ -961,7 +961,7 @@
   },
   {
     "id": "v-a2-directions-014",
-    "norsk": "en rundkjøring",
+    "norsk": "rundkjøring (en)",
     "lemma": "rundkjøring",
     "english": "a roundabout",
     "ukrainian": "кільцева розв'язка / круговий рух",
@@ -976,7 +976,7 @@
   },
   {
     "id": "v-a2-directions-015",
-    "norsk": "en bro",
+    "norsk": "bro (en)",
     "lemma": "bro",
     "english": "a bridge",
     "ukrainian": "міст",
@@ -1036,7 +1036,7 @@
   },
   {
     "id": "v-a2-directions-019",
-    "norsk": "en fotgjengerovergang",
+    "norsk": "fotgjengerovergang (en)",
     "lemma": "fotgjengerovergang",
     "english": "a pedestrian crossing / a zebra crossing",
     "ukrainian": "пішохідний перехід",
@@ -1051,7 +1051,7 @@
   },
   {
     "id": "v-a2-occupations-001",
-    "norsk": "en jobb",
+    "norsk": "jobb (en)",
     "lemma": "jobb",
     "english": "a job",
     "ukrainian": "робота",
@@ -1066,7 +1066,7 @@
   },
   {
     "id": "v-a2-occupations-002",
-    "norsk": "en lege",
+    "norsk": "lege (en)",
     "lemma": "lege",
     "english": "a doctor",
     "ukrainian": "лікар",
@@ -1081,7 +1081,7 @@
   },
   {
     "id": "v-a2-occupations-003",
-    "norsk": "en sykepleier",
+    "norsk": "sykepleier (en)",
     "lemma": "sykepleier",
     "english": "a nurse",
     "ukrainian": "медсестра / медбрат",
@@ -1096,7 +1096,7 @@
   },
   {
     "id": "v-a2-occupations-004",
-    "norsk": "en ingeniør",
+    "norsk": "ingeniør (en)",
     "lemma": "ingeniør",
     "english": "an engineer",
     "ukrainian": "інженер",
@@ -1111,7 +1111,7 @@
   },
   {
     "id": "v-a2-occupations-005",
-    "norsk": "en kokk",
+    "norsk": "kokk (en)",
     "lemma": "kokk",
     "english": "a chef / a cook",
     "ukrainian": "кухар / шеф-кухар",
@@ -1126,7 +1126,7 @@
   },
   {
     "id": "v-a2-occupations-006",
-    "norsk": "en sjåfør",
+    "norsk": "sjåfør (en)",
     "lemma": "sjåfør",
     "english": "a driver",
     "ukrainian": "водій",
@@ -1141,7 +1141,7 @@
   },
   {
     "id": "v-a2-occupations-007",
-    "norsk": "en advokat",
+    "norsk": "advokat (en)",
     "lemma": "advokat",
     "english": "a lawyer",
     "ukrainian": "адвокат",
@@ -1156,7 +1156,7 @@
   },
   {
     "id": "v-a2-occupations-008",
-    "norsk": "en politimann",
+    "norsk": "politimann (en)",
     "lemma": "politimann",
     "english": "a police officer",
     "ukrainian": "поліцейський",
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "v-a2-occupations-009",
-    "norsk": "en brannmann",
+    "norsk": "brannmann (en)",
     "lemma": "brannmann",
     "english": "a firefighter",
     "ukrainian": "пожежник",
@@ -1186,7 +1186,7 @@
   },
   {
     "id": "v-a2-occupations-010",
-    "norsk": "en journalist",
+    "norsk": "journalist (en)",
     "lemma": "journalist",
     "english": "a journalist",
     "ukrainian": "журналіст",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "v-a2-occupations-011",
-    "norsk": "en arkitekt",
+    "norsk": "arkitekt (en)",
     "lemma": "arkitekt",
     "english": "an architect",
     "ukrainian": "архітектор",
@@ -1216,7 +1216,7 @@
   },
   {
     "id": "v-a2-occupations-012",
-    "norsk": "en frisør",
+    "norsk": "frisør (en)",
     "lemma": "frisør",
     "english": "a hairdresser",
     "ukrainian": "перукар",
@@ -1231,7 +1231,7 @@
   },
   {
     "id": "v-a2-occupations-013",
-    "norsk": "en butikkansatt",
+    "norsk": "butikkansatt (en)",
     "lemma": "butikkansatt",
     "english": "a shop assistant",
     "ukrainian": "продавець-консультант",
@@ -1246,7 +1246,7 @@
   },
   {
     "id": "v-a2-occupations-014",
-    "norsk": "en bonde",
+    "norsk": "bonde (en)",
     "lemma": "bonde",
     "english": "a farmer",
     "ukrainian": "фермер",
@@ -1261,7 +1261,7 @@
   },
   {
     "id": "v-a2-occupations-015",
-    "norsk": "en pilot",
+    "norsk": "pilot (en)",
     "lemma": "pilot",
     "english": "a pilot",
     "ukrainian": "пілот",
@@ -1276,7 +1276,7 @@
   },
   {
     "id": "v-a2-occupations-016",
-    "norsk": "en tannlege",
+    "norsk": "tannlege (en)",
     "lemma": "tannlege",
     "english": "a dentist",
     "ukrainian": "стоматолог",
@@ -1291,7 +1291,7 @@
   },
   {
     "id": "v-a2-occupations-017",
-    "norsk": "en bedrift",
+    "norsk": "bedrift (en)",
     "lemma": "bedrift",
     "english": "a company / a business",
     "ukrainian": "компанія / підприємство",
@@ -1306,7 +1306,7 @@
   },
   {
     "id": "v-a2-occupations-018",
-    "norsk": "en lønn",
+    "norsk": "lønn (en)",
     "lemma": "lønn",
     "english": "a salary / wages",
     "ukrainian": "зарплата",
@@ -1321,7 +1321,7 @@
   },
   {
     "id": "v-a2-occupations-019",
-    "norsk": "deltid",
+    "norsk": "deltid (en)",
     "lemma": "deltid",
     "english": "part-time",
     "ukrainian": "неповний робочий день",
@@ -1336,7 +1336,7 @@
   },
   {
     "id": "v-a2-occupations-020",
-    "norsk": "heltid",
+    "norsk": "heltid (en)",
     "lemma": "heltid",
     "english": "full-time",
     "ukrainian": "повний робочий день",
@@ -1351,7 +1351,7 @@
   },
   {
     "id": "v-a2-occupations-021",
-    "norsk": "en kollega",
+    "norsk": "kollega (en)",
     "lemma": "kollega",
     "english": "a colleague",
     "ukrainian": "колега",
@@ -1366,7 +1366,7 @@
   },
   {
     "id": "v-a2-occupations-022",
-    "norsk": "en sjef",
+    "norsk": "sjef (en)",
     "lemma": "sjef",
     "english": "a boss / a manager",
     "ukrainian": "начальник / керівник",
@@ -1471,7 +1471,7 @@
   },
   {
     "id": "v-a2-sports-006",
-    "norsk": "et treningssenter",
+    "norsk": "treningssenter (et)",
     "lemma": "treningssenter",
     "english": "a gym",
     "ukrainian": "спортивний зал / фітнес-центр",
@@ -1486,7 +1486,7 @@
   },
   {
     "id": "v-a2-sports-007",
-    "norsk": "en kamp",
+    "norsk": "kamp (en)",
     "lemma": "kamp",
     "english": "a match, a game, a struggle",
     "ukrainian": "матч / гра / змагання",
@@ -1501,7 +1501,7 @@
   },
   {
     "id": "v-a2-sports-008",
-    "norsk": "et lag",
+    "norsk": "lag (et)",
     "lemma": "lag",
     "english": "a team",
     "ukrainian": "команда",
@@ -1546,7 +1546,7 @@
   },
   {
     "id": "v-a2-sports-011",
-    "norsk": "en spiller",
+    "norsk": "spiller (en)",
     "lemma": "spiller",
     "english": "a player",
     "ukrainian": "гравець",
@@ -1561,7 +1561,7 @@
   },
   {
     "id": "v-a2-sports-012",
-    "norsk": "en trener",
+    "norsk": "trener (en)",
     "lemma": "trener",
     "english": "a coach / a trainer",
     "ukrainian": "тренер",
@@ -1606,7 +1606,7 @@
   },
   {
     "id": "v-a2-sports-015",
-    "norsk": "volleyball",
+    "norsk": "volleyball (en)",
     "lemma": "volleyball",
     "english": "volleyball",
     "ukrainian": "волейбол",
@@ -1621,7 +1621,7 @@
   },
   {
     "id": "v-a2-sports-016",
-    "norsk": "tennis",
+    "norsk": "tennis (en)",
     "lemma": "tennis",
     "english": "tennis",
     "ukrainian": "теніс",
@@ -1636,7 +1636,7 @@
   },
   {
     "id": "v-a2-sports-017",
-    "norsk": "et mål",
+    "norsk": "mål (et)",
     "lemma": "mål",
     "english": "a goal",
     "ukrainian": "гол",
@@ -1651,7 +1651,7 @@
   },
   {
     "id": "v-a2-sports-018",
-    "norsk": "en dommer",
+    "norsk": "dommer (en)",
     "lemma": "dommer",
     "english": "a referee",
     "ukrainian": "суддя",
@@ -1681,7 +1681,7 @@
   },
   {
     "id": "v-a2-sports-020",
-    "norsk": "et stadion",
+    "norsk": "stadion (et)",
     "lemma": "stadion",
     "english": "a stadium",
     "ukrainian": "стадіон",
@@ -1696,7 +1696,7 @@
   },
   {
     "id": "v-a2-sports-021",
-    "norsk": "basketball",
+    "norsk": "basketball (en)",
     "lemma": "basketball",
     "english": "basketball",
     "ukrainian": "баскетбол",
@@ -1711,7 +1711,7 @@
   },
   {
     "id": "v-a2-sports-022",
-    "norsk": "sport",
+    "norsk": "sport (en)",
     "lemma": "sport",
     "english": "sport",
     "ukrainian": "спорт",
@@ -1756,7 +1756,7 @@
   },
   {
     "id": "v-a2-sports-025",
-    "norsk": "en premie",
+    "norsk": "premie (en)",
     "lemma": "premie",
     "english": "a prize / an award",
     "ukrainian": "приз / нагорода",
@@ -1786,7 +1786,7 @@
   },
   {
     "id": "v-a2-health-002",
-    "norsk": "et sykehus",
+    "norsk": "sykehus (et)",
     "lemma": "sykehus",
     "english": "a hospital",
     "ukrainian": "лікарня",
@@ -1801,7 +1801,7 @@
   },
   {
     "id": "v-a2-health-003",
-    "norsk": "et apotek",
+    "norsk": "apotek (et)",
     "lemma": "apotek",
     "english": "a pharmacy",
     "ukrainian": "аптека",
@@ -1816,7 +1816,7 @@
   },
   {
     "id": "v-a2-health-004",
-    "norsk": "en medisin",
+    "norsk": "medisin (en)",
     "lemma": "medisin",
     "english": "a medicine",
     "ukrainian": "ліки",
@@ -1846,7 +1846,7 @@
   },
   {
     "id": "v-a2-health-006",
-    "norsk": "en forkjølelse",
+    "norsk": "forkjølelse (en)",
     "lemma": "forkjølelse",
     "english": "a cold",
     "ukrainian": "застуда",
@@ -1861,7 +1861,7 @@
   },
   {
     "id": "v-a2-health-007",
-    "norsk": "en feber",
+    "norsk": "feber (en)",
     "lemma": "feber",
     "english": "a fever",
     "ukrainian": "температура / жар",
@@ -1876,7 +1876,7 @@
   },
   {
     "id": "v-a2-health-008",
-    "norsk": "en allergi",
+    "norsk": "allergi (en)",
     "lemma": "allergi",
     "english": "an allergy",
     "ukrainian": "алергія",
@@ -1891,7 +1891,7 @@
   },
   {
     "id": "v-a2-health-009",
-    "norsk": "en resept",
+    "norsk": "resept (en)",
     "lemma": "resept",
     "english": "a prescription",
     "ukrainian": "рецепт",
@@ -1981,7 +1981,7 @@
   },
   {
     "id": "v-a2-health-015",
-    "norsk": "en skade",
+    "norsk": "skade (en)",
     "lemma": "skade",
     "english": "an injury",
     "ukrainian": "травма",
@@ -2011,7 +2011,7 @@
   },
   {
     "id": "v-a2-health-017",
-    "norsk": "et plaster",
+    "norsk": "plaster (et)",
     "lemma": "plaster",
     "english": "a plaster / a bandage",
     "ukrainian": "пластир",
@@ -2026,7 +2026,7 @@
   },
   {
     "id": "v-a2-health-018",
-    "norsk": "hoste",
+    "norsk": "hoste (en)",
     "lemma": "hoste",
     "english": "a cough / to cough",
     "ukrainian": "кашель / кашляти",
@@ -2071,7 +2071,7 @@
   },
   {
     "id": "v-a2-health-021",
-    "norsk": "en vaksine",
+    "norsk": "vaksine (en)",
     "lemma": "vaksine",
     "english": "a vaccine",
     "ukrainian": "вакцина",
@@ -2086,7 +2086,7 @@
   },
   {
     "id": "v-a2-health-022",
-    "norsk": "en operasjon",
+    "norsk": "operasjon (en)",
     "lemma": "operasjon",
     "english": "an operation",
     "ukrainian": "операція",
@@ -2101,7 +2101,7 @@
   },
   {
     "id": "v-a2-health-023",
-    "norsk": "blod",
+    "norsk": "blod (et)",
     "lemma": "blod",
     "english": "blood",
     "ukrainian": "кров",
@@ -2116,7 +2116,7 @@
   },
   {
     "id": "v-a2-health-024",
-    "norsk": "en ambulanse",
+    "norsk": "ambulanse (en)",
     "lemma": "ambulanse",
     "english": "an ambulance",
     "ukrainian": "швидка допомога",
@@ -2176,7 +2176,7 @@
   },
   {
     "id": "v-a2-weather-004",
-    "norsk": "temperatur",
+    "norsk": "temperatur (en)",
     "lemma": "temperatur",
     "english": "temperature",
     "ukrainian": "температура",
@@ -2191,7 +2191,7 @@
   },
   {
     "id": "v-a2-weather-005",
-    "norsk": "en paraply",
+    "norsk": "paraply (en)",
     "lemma": "paraply",
     "english": "an umbrella",
     "ukrainian": "парасоля",
@@ -2206,7 +2206,7 @@
   },
   {
     "id": "v-a2-weather-006",
-    "norsk": "en sky",
+    "norsk": "sky (en)",
     "lemma": "sky",
     "english": "a cloud",
     "ukrainian": "хмара",
@@ -2221,7 +2221,7 @@
   },
   {
     "id": "v-a2-weather-007",
-    "norsk": "tåke",
+    "norsk": "tåke (en)",
     "lemma": "tåke",
     "english": "fog",
     "ukrainian": "туман",
@@ -2236,7 +2236,7 @@
   },
   {
     "id": "v-a2-weather-008",
-    "norsk": "en prognose",
+    "norsk": "prognose (en)",
     "lemma": "prognose",
     "english": "a (weather) forecast",
     "ukrainian": "прогноз погоди",
@@ -2266,7 +2266,7 @@
   },
   {
     "id": "v-a2-weather-010",
-    "norsk": "grader",
+    "norsk": "grader (en)",
     "lemma": "grader",
     "english": "degrees",
     "ukrainian": "градусів",
@@ -2281,7 +2281,7 @@
   },
   {
     "id": "v-a2-weather-011",
-    "norsk": "en storm",
+    "norsk": "storm (en)",
     "lemma": "storm",
     "english": "a storm",
     "ukrainian": "буря",
@@ -2311,7 +2311,7 @@
   },
   {
     "id": "v-a2-weather-013",
-    "norsk": "en årstid",
+    "norsk": "årstid (en)",
     "lemma": "årstid",
     "english": "a season",
     "ukrainian": "пора року",
@@ -2326,7 +2326,7 @@
   },
   {
     "id": "v-a2-weather-014",
-    "norsk": "et regnvær",
+    "norsk": "regnvær (et)",
     "lemma": "regnvær",
     "english": "rainy weather",
     "ukrainian": "дощова погода",
@@ -2341,7 +2341,7 @@
   },
   {
     "id": "v-a2-time-001",
-    "norsk": "klokka",
+    "norsk": "klokka (en)",
     "lemma": "klokka",
     "english": "the time / o'clock",
     "ukrainian": "година / котра година",
@@ -2356,7 +2356,7 @@
   },
   {
     "id": "v-a2-time-002",
-    "norsk": "et kvarter",
+    "norsk": "kvarter (et)",
     "lemma": "kvarter",
     "english": "a quarter (of an hour)",
     "ukrainian": "чверть години",
@@ -2701,7 +2701,7 @@
   },
   {
     "id": "v-a2-time-025",
-    "norsk": "et minutt",
+    "norsk": "minutt (et)",
     "lemma": "minutt",
     "english": "a minute",
     "ukrainian": "хвилина",
@@ -3016,7 +3016,7 @@
   },
   {
     "id": "v-a2-cooking-008",
-    "norsk": "en gryte",
+    "norsk": "gryte (en)",
     "lemma": "gryte",
     "english": "a pot / a casserole dish",
     "ukrainian": "каструля / горщик",
@@ -3031,7 +3031,7 @@
   },
   {
     "id": "v-a2-cooking-009",
-    "norsk": "en stekepanne",
+    "norsk": "stekepanne (en)",
     "lemma": "stekepanne",
     "english": "a frying pan",
     "ukrainian": "сковорідка",
@@ -3046,7 +3046,7 @@
   },
   {
     "id": "v-a2-cooking-010",
-    "norsk": "en skjærefjøl",
+    "norsk": "skjærefjøl (en)",
     "lemma": "skjærefjøl",
     "english": "a chopping board",
     "ukrainian": "обробна дошка",
@@ -3061,7 +3061,7 @@
   },
   {
     "id": "v-a2-cooking-011",
-    "norsk": "en bolle",
+    "norsk": "bolle (en)",
     "lemma": "bolle",
     "english": "a bowl",
     "ukrainian": "миска",
@@ -3076,7 +3076,7 @@
   },
   {
     "id": "v-a2-cooking-012",
-    "norsk": "et oppskrift",
+    "norsk": "oppskrift (en)",
     "lemma": "oppskrift",
     "english": "a recipe",
     "ukrainian": "рецепт",
@@ -3091,7 +3091,7 @@
   },
   {
     "id": "v-a2-cooking-013",
-    "norsk": "en ingrediens",
+    "norsk": "ingrediens (en)",
     "lemma": "ingrediens",
     "english": "an ingredient",
     "ukrainian": "інгредієнт",
@@ -3106,7 +3106,7 @@
   },
   {
     "id": "v-a2-cooking-014",
-    "norsk": "pepper",
+    "norsk": "pepper (en)",
     "lemma": "pepper",
     "english": "pepper",
     "ukrainian": "перець",
@@ -3121,7 +3121,7 @@
   },
   {
     "id": "v-a2-cooking-015",
-    "norsk": "olje",
+    "norsk": "olje (en)",
     "lemma": "olje",
     "english": "oil",
     "ukrainian": "олія",
@@ -3136,7 +3136,7 @@
   },
   {
     "id": "v-a2-cooking-016",
-    "norsk": "mel",
+    "norsk": "mel (et)",
     "lemma": "mel",
     "english": "flour",
     "ukrainian": "борошно",
@@ -3151,7 +3151,7 @@
   },
   {
     "id": "v-a2-cooking-017",
-    "norsk": "et måltid",
+    "norsk": "måltid (et)",
     "lemma": "måltid",
     "english": "a meal",
     "ukrainian": "прийом їжі",
@@ -3196,7 +3196,7 @@
   },
   {
     "id": "v-a2-cooking-020",
-    "norsk": "en kjele",
+    "norsk": "kjele (en)",
     "lemma": "kjele",
     "english": "a kettle / a saucepan",
     "ukrainian": "чайник / каструля",
@@ -3211,7 +3211,7 @@
   },
   {
     "id": "v-a2-nature-001",
-    "norsk": "en skog",
+    "norsk": "skog (en)",
     "lemma": "skog",
     "english": "a forest / a wood",
     "ukrainian": "ліс",
@@ -3226,7 +3226,7 @@
   },
   {
     "id": "v-a2-nature-002",
-    "norsk": "et fjell",
+    "norsk": "fjell (et)",
     "lemma": "fjell",
     "english": "a mountain",
     "ukrainian": "гора",
@@ -3241,7 +3241,7 @@
   },
   {
     "id": "v-a2-nature-003",
-    "norsk": "en elv",
+    "norsk": "elv (en)",
     "lemma": "elv",
     "english": "a river",
     "ukrainian": "річка",
@@ -3256,7 +3256,7 @@
   },
   {
     "id": "v-a2-nature-004",
-    "norsk": "en sjø",
+    "norsk": "sjø (en)",
     "lemma": "sjø",
     "english": "a lake",
     "ukrainian": "озеро",
@@ -3271,7 +3271,7 @@
   },
   {
     "id": "v-a2-nature-005",
-    "norsk": "et tre",
+    "norsk": "tre (et)",
     "lemma": "tre",
     "english": "a tree",
     "ukrainian": "дерево",
@@ -3286,7 +3286,7 @@
   },
   {
     "id": "v-a2-nature-006",
-    "norsk": "en blomst",
+    "norsk": "blomst (en)",
     "lemma": "blomst",
     "english": "a flower",
     "ukrainian": "квітка",
@@ -3301,7 +3301,7 @@
   },
   {
     "id": "v-a2-nature-007",
-    "norsk": "en strand",
+    "norsk": "strand (en)",
     "lemma": "strand",
     "english": "a beach",
     "ukrainian": "пляж",
@@ -3316,7 +3316,7 @@
   },
   {
     "id": "v-a2-nature-008",
-    "norsk": "en dal",
+    "norsk": "dal (en)",
     "lemma": "dal",
     "english": "a valley",
     "ukrainian": "долина",
@@ -3331,7 +3331,7 @@
   },
   {
     "id": "v-a2-nature-009",
-    "norsk": "en kyst",
+    "norsk": "kyst (en)",
     "lemma": "kyst",
     "english": "a coast",
     "ukrainian": "узбережжя",
@@ -3346,7 +3346,7 @@
   },
   {
     "id": "v-a2-nature-010",
-    "norsk": "en øy",
+    "norsk": "øy (en)",
     "lemma": "øy",
     "english": "an island",
     "ukrainian": "острів",
@@ -3361,7 +3361,7 @@
   },
   {
     "id": "v-a2-nature-011",
-    "norsk": "en fjord",
+    "norsk": "fjord (en)",
     "lemma": "fjord",
     "english": "a fjord",
     "ukrainian": "фіорд",
@@ -3376,7 +3376,7 @@
   },
   {
     "id": "v-a2-nature-012",
-    "norsk": "et felt",
+    "norsk": "felt (et)",
     "lemma": "felt",
     "english": "a field",
     "ukrainian": "поле",
@@ -3391,7 +3391,7 @@
   },
   {
     "id": "v-a2-nature-013",
-    "norsk": "en stein",
+    "norsk": "stein (en)",
     "lemma": "stein",
     "english": "a stone / a rock",
     "ukrainian": "камінь",
@@ -3406,7 +3406,7 @@
   },
   {
     "id": "v-a2-nature-014",
-    "norsk": "jord",
+    "norsk": "jord (en)",
     "lemma": "jord",
     "english": "soil / earth",
     "ukrainian": "ґрунт / земля",
@@ -3421,7 +3421,7 @@
   },
   {
     "id": "v-a2-nature-015",
-    "norsk": "et dyr",
+    "norsk": "dyr (et)",
     "lemma": "dyr",
     "english": "an animal",
     "ukrainian": "тварина",
@@ -3436,7 +3436,7 @@
   },
   {
     "id": "v-a2-nature-016",
-    "norsk": "naturen",
+    "norsk": "naturen (en)",
     "lemma": "naturen",
     "english": "nature (in general)",
     "ukrainian": "природа",
@@ -3526,7 +3526,7 @@
   },
   {
     "id": "v-a2-nature-022",
-    "norsk": "en å",
+    "norsk": "å (en)",
     "lemma": "å",
     "english": "a stream / a creek",
     "ukrainian": "струмок",
@@ -3691,7 +3691,7 @@
   },
   {
     "id": "v-a2-house-chores-011",
-    "norsk": "et søppel",
+    "norsk": "søppel (et)",
     "lemma": "søppel",
     "english": "rubbish / waste",
     "ukrainian": "сміття / відходи",
@@ -3706,7 +3706,7 @@
   },
   {
     "id": "v-a2-house-chores-012",
-    "norsk": "en støvsuger",
+    "norsk": "støvsuger (en)",
     "lemma": "støvsuger",
     "english": "a vacuum cleaner",
     "ukrainian": "пилосос",
@@ -3721,7 +3721,7 @@
   },
   {
     "id": "v-a2-house-chores-013",
-    "norsk": "en mopp",
+    "norsk": "mopp (en)",
     "lemma": "mopp",
     "english": "a mop",
     "ukrainian": "швабра",
@@ -3736,7 +3736,7 @@
   },
   {
     "id": "v-a2-house-chores-014",
-    "norsk": "et oppvaskmiddel",
+    "norsk": "oppvaskmiddel (et)",
     "lemma": "oppvaskmiddel",
     "english": "washing-up liquid / dish soap",
     "ukrainian": "засіб для миття посуду",
@@ -3751,7 +3751,7 @@
   },
   {
     "id": "v-a2-house-chores-015",
-    "norsk": "en klut",
+    "norsk": "klut (en)",
     "lemma": "klut",
     "english": "a cloth / a rag",
     "ukrainian": "ганчірка / ганчір'я",
@@ -3766,7 +3766,7 @@
   },
   {
     "id": "v-a2-house-chores-016",
-    "norsk": "en vaskemaskin",
+    "norsk": "vaskemaskin (en)",
     "lemma": "vaskemaskin",
     "english": "a washing machine",
     "ukrainian": "пральна машина",
@@ -3781,7 +3781,7 @@
   },
   {
     "id": "v-a2-house-chores-017",
-    "norsk": "en oppvaskkum",
+    "norsk": "oppvaskkum (en)",
     "lemma": "oppvaskkum",
     "english": "a kitchen sink",
     "ukrainian": "кухонна раковина",
@@ -3871,7 +3871,7 @@
   },
   {
     "id": "v-a2-house-chores-023",
-    "norsk": "en bøtte",
+    "norsk": "bøtte (en)",
     "lemma": "bøtte",
     "english": "a bucket / a bin",
     "ukrainian": "відро",
@@ -4006,7 +4006,7 @@
   },
   {
     "id": "v-a2-communication-009",
-    "norsk": "en melding",
+    "norsk": "melding (en)",
     "lemma": "melding",
     "english": "a message",
     "ukrainian": "повідомлення",
@@ -4021,7 +4021,7 @@
   },
   {
     "id": "v-a2-communication-010",
-    "norsk": "en e-post",
+    "norsk": "e-post (en)",
     "lemma": "e-post",
     "english": "an email",
     "ukrainian": "електронний лист / імейл",
@@ -4036,7 +4036,7 @@
   },
   {
     "id": "v-a2-communication-011",
-    "norsk": "et svar",
+    "norsk": "svar (et)",
     "lemma": "svar",
     "english": "a reply / an answer",
     "ukrainian": "відповідь",
@@ -4051,7 +4051,7 @@
   },
   {
     "id": "v-a2-communication-012",
-    "norsk": "en telefon",
+    "norsk": "telefon (en)",
     "lemma": "telefon",
     "english": "a telephone / a phone",
     "ukrainian": "телефон",
@@ -4066,7 +4066,7 @@
   },
   {
     "id": "v-a2-communication-013",
-    "norsk": "et nummer",
+    "norsk": "nummer (et)",
     "lemma": "nummer",
     "english": "a number",
     "ukrainian": "номер",
@@ -4081,7 +4081,7 @@
   },
   {
     "id": "v-a2-communication-014",
-    "norsk": "et møte",
+    "norsk": "møte (et)",
     "lemma": "møte",
     "english": "a meeting",
     "ukrainian": "зустріч / нарада",
@@ -4096,7 +4096,7 @@
   },
   {
     "id": "v-a2-communication-015",
-    "norsk": "en avtale",
+    "norsk": "avtale (en)",
     "lemma": "avtale",
     "english": "an appointment / an agreement",
     "ukrainian": "домовленість / запис",
@@ -4111,7 +4111,7 @@
   },
   {
     "id": "v-a2-communication-016",
-    "norsk": "sosiale medier",
+    "norsk": "sosiale medier (en)",
     "lemma": "sosiale medier",
     "english": "social media",
     "ukrainian": "соціальні мережі",
@@ -4126,7 +4126,7 @@
   },
   {
     "id": "v-a2-communication-017",
-    "norsk": "internett",
+    "norsk": "internett (et)",
     "lemma": "internett",
     "english": "the internet",
     "ukrainian": "інтернет",
@@ -4201,7 +4201,7 @@
   },
   {
     "id": "v-a2-body-001",
-    "norsk": "et hjerte",
+    "norsk": "hjerte (et)",
     "lemma": "hjerte",
     "english": "a heart",
     "ukrainian": "серце",
@@ -4216,7 +4216,7 @@
   },
   {
     "id": "v-a2-body-002",
-    "norsk": "en lunge",
+    "norsk": "lunge (en)",
     "lemma": "lunge",
     "english": "a lung",
     "ukrainian": "легеня",
@@ -4231,7 +4231,7 @@
   },
   {
     "id": "v-a2-body-003",
-    "norsk": "et kne",
+    "norsk": "kne (et)",
     "lemma": "kne",
     "english": "a knee",
     "ukrainian": "коліно",
@@ -4246,7 +4246,7 @@
   },
   {
     "id": "v-a2-body-004",
-    "norsk": "en albue",
+    "norsk": "albue (en)",
     "lemma": "albue",
     "english": "an elbow",
     "ukrainian": "лікоть",
@@ -4261,7 +4261,7 @@
   },
   {
     "id": "v-a2-body-005",
-    "norsk": "en nakke",
+    "norsk": "nakke (en)",
     "lemma": "nakke",
     "english": "a neck",
     "ukrainian": "шия",
@@ -4276,7 +4276,7 @@
   },
   {
     "id": "v-a2-body-006",
-    "norsk": "en skulder",
+    "norsk": "skulder (en)",
     "lemma": "skulder",
     "english": "a shoulder",
     "ukrainian": "плече",
@@ -4291,7 +4291,7 @@
   },
   {
     "id": "v-a2-body-007",
-    "norsk": "en håndledd",
+    "norsk": "håndledd (et)",
     "lemma": "håndledd",
     "english": "a wrist",
     "ukrainian": "зап'ясток",
@@ -4306,7 +4306,7 @@
   },
   {
     "id": "v-a2-body-008",
-    "norsk": "en ankel",
+    "norsk": "ankel (en)",
     "lemma": "ankel",
     "english": "an ankle",
     "ukrainian": "щиколотка",
@@ -4321,7 +4321,7 @@
   },
   {
     "id": "v-a2-body-009",
-    "norsk": "muskler",
+    "norsk": "muskel (en)",
     "lemma": "muskel",
     "english": "muscles",
     "ukrainian": "м'язи",
@@ -4336,7 +4336,7 @@
   },
   {
     "id": "v-a2-body-010",
-    "norsk": "et sår",
+    "norsk": "sår (et)",
     "lemma": "sår",
     "english": "a wound / sore",
     "ukrainian": "рана",
@@ -4351,7 +4351,7 @@
   },
   {
     "id": "v-a2-body-011",
-    "norsk": "en bandasje",
+    "norsk": "bandasje (en)",
     "lemma": "bandasje",
     "english": "a bandage",
     "ukrainian": "бинт / пов'язка",
@@ -4471,7 +4471,7 @@
   },
   {
     "id": "v-a2-body-019",
-    "norsk": "et legekontor",
+    "norsk": "legekontor (et)",
     "lemma": "legekontor",
     "english": "a doctor's office",
     "ukrainian": "лікарський кабінет",
@@ -4486,7 +4486,7 @@
   },
   {
     "id": "v-a2-body-020",
-    "norsk": "å ta temperaturen",
+    "norsk": "ta temperaturen",
     "lemma": "ta temperaturen",
     "english": "to take someone's temperature",
     "ukrainian": "виміряти температуру",
@@ -4516,7 +4516,7 @@
   },
   {
     "id": "v-a2-body-022",
-    "norsk": "å sove godt",
+    "norsk": "sove godt",
     "lemma": "sove godt",
     "english": "to sleep well",
     "ukrainian": "добре спати",
@@ -4546,7 +4546,7 @@
   },
   {
     "id": "v-a2-social-life-001",
-    "norsk": "en fest",
+    "norsk": "fest (en)",
     "lemma": "fest",
     "english": "a party",
     "ukrainian": "вечірка",
@@ -4561,7 +4561,7 @@
   },
   {
     "id": "v-a2-social-life-002",
-    "norsk": "en invitasjon",
+    "norsk": "invitasjon (en)",
     "lemma": "invitasjon",
     "english": "an invitation",
     "ukrainian": "запрошення",
@@ -4576,7 +4576,7 @@
   },
   {
     "id": "v-a2-social-life-003",
-    "norsk": "et bryllup",
+    "norsk": "bryllup (et)",
     "lemma": "bryllup",
     "english": "a wedding",
     "ukrainian": "весілля",
@@ -4591,7 +4591,7 @@
   },
   {
     "id": "v-a2-social-life-004",
-    "norsk": "en bursdag",
+    "norsk": "bursdag (en)",
     "lemma": "bursdag",
     "english": "a birthday",
     "ukrainian": "день народження",
@@ -4606,7 +4606,7 @@
   },
   {
     "id": "v-a2-social-life-005",
-    "norsk": "en gave",
+    "norsk": "gave (en)",
     "lemma": "gave",
     "english": "a gift / present",
     "ukrainian": "подарунок",
@@ -4621,7 +4621,7 @@
   },
   {
     "id": "v-a2-social-life-006",
-    "norsk": "en nabo",
+    "norsk": "nabo (en)",
     "lemma": "nabo",
     "english": "a neighbour",
     "ukrainian": "сусід",
@@ -4636,7 +4636,7 @@
   },
   {
     "id": "v-a2-social-life-007",
-    "norsk": "en bekjent",
+    "norsk": "bekjent (en)",
     "lemma": "bekjent",
     "english": "an acquaintance",
     "ukrainian": "знайомий",
@@ -4726,7 +4726,7 @@
   },
   {
     "id": "v-a2-social-life-013",
-    "norsk": "å treffe venner",
+    "norsk": "treffe venner",
     "lemma": "treffe venner",
     "english": "to meet friends",
     "ukrainian": "зустрічатися з друзями",
@@ -4756,7 +4756,7 @@
   },
   {
     "id": "v-a2-social-life-015",
-    "norsk": "en samtale",
+    "norsk": "samtale (en)",
     "lemma": "samtale",
     "english": "a conversation",
     "ukrainian": "розмова",
@@ -4771,7 +4771,7 @@
   },
   {
     "id": "v-a2-social-life-016",
-    "norsk": "å holde kontakten",
+    "norsk": "holde kontakten",
     "lemma": "holde kontakten",
     "english": "to keep in touch",
     "ukrainian": "підтримувати зв'язок",
@@ -4786,7 +4786,7 @@
   },
   {
     "id": "v-a2-social-life-017",
-    "norsk": "å si unnskyld",
+    "norsk": "si unnskyld",
     "lemma": "si unnskyld",
     "english": "to apologise",
     "ukrainian": "вибачатися",
@@ -4846,7 +4846,7 @@
   },
   {
     "id": "v-a2-social-life-021",
-    "norsk": "en klem",
+    "norsk": "klem (en)",
     "lemma": "klem",
     "english": "a hug",
     "ukrainian": "обійми",
@@ -4891,7 +4891,7 @@
   },
   {
     "id": "v-a2-social-life-024",
-    "norsk": "et arrangement",
+    "norsk": "arrangement (et)",
     "lemma": "arrangement",
     "english": "an event",
     "ukrainian": "захід / подія",
@@ -4906,7 +4906,7 @@
   },
   {
     "id": "v-a2-technology-001",
-    "norsk": "en mobiltelefon",
+    "norsk": "mobiltelefon (en)",
     "lemma": "mobiltelefon",
     "english": "a mobile phone",
     "ukrainian": "мобільний телефон",
@@ -4921,7 +4921,7 @@
   },
   {
     "id": "v-a2-technology-002",
-    "norsk": "et passord",
+    "norsk": "passord (et)",
     "lemma": "passord",
     "english": "a password",
     "ukrainian": "пароль",
@@ -4936,7 +4936,7 @@
   },
   {
     "id": "v-a2-technology-003",
-    "norsk": "en app",
+    "norsk": "app (en)",
     "lemma": "app",
     "english": "an app",
     "ukrainian": "додаток",
@@ -4951,7 +4951,7 @@
   },
   {
     "id": "v-a2-technology-004",
-    "norsk": "en skjerm",
+    "norsk": "skjerm (en)",
     "lemma": "skjerm",
     "english": "a screen",
     "ukrainian": "екран",
@@ -4966,7 +4966,7 @@
   },
   {
     "id": "v-a2-technology-005",
-    "norsk": "et tastatur",
+    "norsk": "tastatur (et)",
     "lemma": "tastatur",
     "english": "a keyboard",
     "ukrainian": "клавіатура",
@@ -4996,7 +4996,7 @@
   },
   {
     "id": "v-a2-technology-007",
-    "norsk": "å sende en e-post",
+    "norsk": "sende en e-post",
     "lemma": "sende en e-post",
     "english": "to send an email",
     "ukrainian": "надіслати електронний лист",
@@ -5011,7 +5011,7 @@
   },
   {
     "id": "v-a2-technology-008",
-    "norsk": "å søke på nett",
+    "norsk": "søke på nett",
     "lemma": "søke på nett",
     "english": "to search online",
     "ukrainian": "шукати в інтернеті",
@@ -5026,7 +5026,7 @@
   },
   {
     "id": "v-a2-technology-009",
-    "norsk": "wifi",
+    "norsk": "wifi (et)",
     "lemma": "wifi",
     "english": "wifi",
     "ukrainian": "вайфай",
@@ -5041,7 +5041,7 @@
   },
   {
     "id": "v-a2-technology-010",
-    "norsk": "et batteri",
+    "norsk": "batteri (et)",
     "lemma": "batteri",
     "english": "a battery",
     "ukrainian": "батарея",
@@ -5071,7 +5071,7 @@
   },
   {
     "id": "v-a2-technology-012",
-    "norsk": "å ta et bilde",
+    "norsk": "ta et bilde",
     "lemma": "ta et bilde",
     "english": "to take a photo",
     "ukrainian": "зробити фото",
@@ -5086,7 +5086,7 @@
   },
   {
     "id": "v-a2-technology-013",
-    "norsk": "en nettside",
+    "norsk": "nettside (en)",
     "lemma": "nettside",
     "english": "a website",
     "ukrainian": "вебсайт",
@@ -5131,7 +5131,7 @@
   },
   {
     "id": "v-a2-technology-016",
-    "norsk": "en høyttaler",
+    "norsk": "høyttaler (en)",
     "lemma": "høyttaler",
     "english": "a speaker",
     "ukrainian": "гучномовець / колонка",
@@ -5146,7 +5146,7 @@
   },
   {
     "id": "v-a2-technology-017",
-    "norsk": "hodetelefoner",
+    "norsk": "hodetelefon (en)",
     "lemma": "hodetelefon",
     "english": "headphones",
     "ukrainian": "навушники",
@@ -5161,7 +5161,7 @@
   },
   {
     "id": "v-a2-technology-018",
-    "norsk": "et kamera",
+    "norsk": "kamera (et)",
     "lemma": "kamera",
     "english": "a camera",
     "ukrainian": "камера / фотоапарат",
@@ -5191,7 +5191,7 @@
   },
   {
     "id": "v-a2-environment-001",
-    "norsk": "et hav",
+    "norsk": "hav (et)",
     "lemma": "hav",
     "english": "an ocean / sea",
     "ukrainian": "море / океан",
@@ -5206,7 +5206,7 @@
   },
   {
     "id": "v-a2-environment-002",
-    "norsk": "en innsjø",
+    "norsk": "innsjø (en)",
     "lemma": "innsjø",
     "english": "a lake",
     "ukrainian": "озеро",
@@ -5236,7 +5236,7 @@
   },
   {
     "id": "v-a2-environment-004",
-    "norsk": "å spare energi",
+    "norsk": "spare energi",
     "lemma": "spare energi",
     "english": "to save energy",
     "ukrainian": "економити енергію",
@@ -5251,7 +5251,7 @@
   },
   {
     "id": "v-a2-environment-005",
-    "norsk": "forurensning",
+    "norsk": "forurensning (en)",
     "lemma": "forurensning",
     "english": "pollution",
     "ukrainian": "забруднення",
@@ -5281,7 +5281,7 @@
   },
   {
     "id": "v-a2-environment-007",
-    "norsk": "et naturreservat",
+    "norsk": "naturreservat (et)",
     "lemma": "naturreservat",
     "english": "a nature reserve",
     "ukrainian": "природний заповідник",
@@ -5296,7 +5296,7 @@
   },
   {
     "id": "v-a2-environment-008",
-    "norsk": "klima",
+    "norsk": "klima (et)",
     "lemma": "klima",
     "english": "climate",
     "ukrainian": "клімат",
@@ -5311,7 +5311,7 @@
   },
   {
     "id": "v-a2-money-001",
-    "norsk": "en krone",
+    "norsk": "krone (en)",
     "lemma": "krone",
     "english": "a krone (Norwegian currency)",
     "ukrainian": "крона (норвезька валюта)",
@@ -5326,7 +5326,7 @@
   },
   {
     "id": "v-a2-money-002",
-    "norsk": "en hundrelapp",
+    "norsk": "hundrelapp (en)",
     "lemma": "hundrelapp",
     "english": "a hundred-krone note",
     "ukrainian": "банкнота в сто крон",
@@ -5341,7 +5341,7 @@
   },
   {
     "id": "v-a2-money-003",
-    "norsk": "en mynt",
+    "norsk": "mynt (en)",
     "lemma": "mynt",
     "english": "a coin",
     "ukrainian": "монета",
@@ -5371,7 +5371,7 @@
   },
   {
     "id": "v-a2-money-005",
-    "norsk": "kontanter",
+    "norsk": "kontant (en)",
     "lemma": "kontant",
     "english": "cash",
     "ukrainian": "готівка",
@@ -5386,7 +5386,7 @@
   },
   {
     "id": "v-a2-money-006",
-    "norsk": "å spare penger",
+    "norsk": "spare penger",
     "lemma": "spare penger",
     "english": "to save money",
     "ukrainian": "заощаджувати гроші",
@@ -5401,7 +5401,7 @@
   },
   {
     "id": "v-a2-money-007",
-    "norsk": "å bruke penger",
+    "norsk": "bruke penger",
     "lemma": "bruke penger",
     "english": "to spend money",
     "ukrainian": "витрачати гроші",
@@ -5416,7 +5416,7 @@
   },
   {
     "id": "v-a2-money-008",
-    "norsk": "et budsjett",
+    "norsk": "budsjett (et)",
     "lemma": "budsjett",
     "english": "a budget",
     "ukrainian": "бюджет",
@@ -5431,7 +5431,7 @@
   },
   {
     "id": "v-a2-money-009",
-    "norsk": "en inntekt",
+    "norsk": "inntekt (en)",
     "lemma": "inntekt",
     "english": "an income",
     "ukrainian": "дохід",
@@ -5446,7 +5446,7 @@
   },
   {
     "id": "v-a2-money-010",
-    "norsk": "en utgift",
+    "norsk": "utgift (en)",
     "lemma": "utgift",
     "english": "an expense",
     "ukrainian": "витрата",
@@ -5491,7 +5491,7 @@
   },
   {
     "id": "v-a2-money-013",
-    "norsk": "vekslepenger",
+    "norsk": "vekslepenger (en)",
     "lemma": "vekslepenger",
     "english": "change (money)",
     "ukrainian": "решта (здача)",
@@ -5506,7 +5506,7 @@
   },
   {
     "id": "v-a2-money-014",
-    "norsk": "to hundre",
+    "norsk": "to hundre (en)",
     "lemma": "to hundre",
     "english": "two hundred",
     "ukrainian": "двісті",
@@ -5521,7 +5521,7 @@
   },
   {
     "id": "v-a2-money-015",
-    "norsk": "fem hundre",
+    "norsk": "fem hundre (en)",
     "lemma": "fem hundre",
     "english": "five hundred",
     "ukrainian": "п'ятсот",
@@ -5536,7 +5536,7 @@
   },
   {
     "id": "v-a2-money-016",
-    "norsk": "en million",
+    "norsk": "million (en)",
     "lemma": "million",
     "english": "a million",
     "ukrainian": "мільйон",
@@ -5551,7 +5551,7 @@
   },
   {
     "id": "v-a2-money-017",
-    "norsk": "å låne penger",
+    "norsk": "låne penger",
     "lemma": "låne penger",
     "english": "to borrow money",
     "ukrainian": "позичати гроші",
@@ -5566,7 +5566,7 @@
   },
   {
     "id": "v-a2-money-018",
-    "norsk": "å betale tilbake",
+    "norsk": "betale tilbake",
     "lemma": "betale tilbake",
     "english": "to pay back",
     "ukrainian": "повертати гроші",
@@ -5597,7 +5597,7 @@
   },
   {
     "id": "v-a2-social-life-025",
-    "norsk": "en krig",
+    "norsk": "krig (en)",
     "lemma": "krig",
     "english": "a war",
     "ukrainian": "війна",
@@ -5613,7 +5613,7 @@
   },
   {
     "id": "v-a2-social-life-026",
-    "norsk": "en gud",
+    "norsk": "gud (en)",
     "lemma": "gud",
     "english": "a god",
     "ukrainian": "бог",
@@ -5677,7 +5677,7 @@
   },
   {
     "id": "v-a2-social-life-027",
-    "norsk": "frihet",
+    "norsk": "frihet (en)",
     "lemma": "frihet",
     "english": "freedom / liberty",
     "ukrainian": "свобода",
@@ -5693,7 +5693,7 @@
   },
   {
     "id": "v-a2-social-life-028",
-    "norsk": "en kjærlighet",
+    "norsk": "kjærlighet (en)",
     "lemma": "kjærlighet",
     "english": "love",
     "ukrainian": "любов",
@@ -5709,7 +5709,7 @@
   },
   {
     "id": "v-a2-social-life-029",
-    "norsk": "en vennskap",
+    "norsk": "vennskap (et)",
     "lemma": "vennskap",
     "english": "a friendship",
     "ukrainian": "дружба",
@@ -5725,7 +5725,7 @@
   },
   {
     "id": "v-a2-social-life-030",
-    "norsk": "en ekteskap",
+    "norsk": "ekteskap (et)",
     "lemma": "ekteskap",
     "english": "a marriage",
     "ukrainian": "шлюб",
@@ -5741,7 +5741,7 @@
   },
   {
     "id": "v-a2-occupations-024",
-    "norsk": "en prest",
+    "norsk": "prest (en)",
     "lemma": "prest",
     "english": "a priest / a minister",
     "ukrainian": "священник / пастор",
@@ -5757,7 +5757,7 @@
   },
   {
     "id": "v-a2-social-life-031",
-    "norsk": "en prøve",
+    "norsk": "prøve (en)",
     "lemma": "prøve",
     "english": "a test / an exam",
     "ukrainian": "контрольна робота / іспит",
@@ -5773,7 +5773,7 @@
   },
   {
     "id": "v-a2-occupations-025",
-    "norsk": "en professor",
+    "norsk": "professor (en)",
     "lemma": "professor",
     "english": "a professor",
     "ukrainian": "професор",
@@ -5789,7 +5789,7 @@
   },
   {
     "id": "v-a2-shopping-020",
-    "norsk": "en kunde",
+    "norsk": "kunde (en)",
     "lemma": "kunde",
     "english": "a customer",
     "ukrainian": "клієнт / покупець",
@@ -5805,7 +5805,7 @@
   },
   {
     "id": "v-a2-nature-023",
-    "norsk": "et kontinent",
+    "norsk": "kontinent (et)",
     "lemma": "kontinent",
     "english": "a continent",
     "ukrainian": "континент",
@@ -5821,7 +5821,7 @@
   },
   {
     "id": "v-a2-environment-009",
-    "norsk": "et klima",
+    "norsk": "klima (et)",
     "lemma": "klima",
     "english": "a climate",
     "ukrainian": "клімат",
@@ -5837,7 +5837,7 @@
   },
   {
     "id": "v-a2-nature-024",
-    "norsk": "en vulkan",
+    "norsk": "vulkan (en)",
     "lemma": "vulkan",
     "english": "a volcano",
     "ukrainian": "вулкан",

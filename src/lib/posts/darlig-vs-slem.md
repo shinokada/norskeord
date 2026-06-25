@@ -1,13 +1,13 @@
 ---
-title: 'Dårlig vs Slem — Two Ways to Say "Bad"'
-description: 'Dårlig is about quality, skill, or health. Slem is about behaviour — being mean, naughty, or cruel. Mixing them up changes the meaning entirely.'
+title: 'Dårlig vs Slem — To måter å si «bad» på'
+description: 'Dårlig handler om kvalitet, ferdigheter eller helse. Slem handler om oppførsel — å være slem, ufyselig eller grusom. Å blande dem sammen gir en helt annen betydning.'
 slug: darlig-vs-slem
 cefr: A2
 publishedAt: 2026-06-24
 tags: [adjectives, comparison, vocabulary]
 ---
 
-> **TL;DR:** **Dårlig** = bad quality, not good, unwell. **Slem** = mean, naughty, cruel. Same English word, very different Norwegian meaning.
+> **Kort sagt:** **Dårlig** = dårlig kvalitet, ikke god, uvel. **Slem** = slem, ufin, grusom. Samme engelske ord, helt forskjellig norsk betydning.
 
 ## Kort forklaring
 
@@ -16,67 +16,58 @@ Både **dårlig** og **slem** oversettes til _bad_ på engelsk — men de brukes
 - **dårlig** handler om **kvalitet, tilstand, evne eller helse**
 - **slem** handler om **oppførsel** — å være ond, ufin eller gjem mot andre
 
-_In English:_ **Dårlig** covers the "bad" of poor quality, low skill, or feeling unwell. **Slem** covers the "bad" of behaviour — being mean, cruel, or naughty. Confusing them changes the meaning significantly.
-
 ---
 
 ## Eksempler
 
 **1. Denne kaffen er dårlig.**
-_This coffee is bad._
-→ Poor quality — dårlig describes the coffee itself.
+→ Dårlig kvalitet — dårlig beskriver kaffen i seg selv.
 
 **2. Jeg er dårlig i norsk grammatikk.**
-_I'm bad at Norwegian grammar._
-→ Low ability or skill.
+→ Lavt ferdighetsnivå eller evne.
 
 **3. Hun er slem mot lillebroren sin.**
-_She is mean to her little brother._
-→ Unkind behaviour toward someone — only slem works here.
+→ Ufin oppførsel overfor noen — bare slem fungerer her.
 
 **4. Ikke vær slem!**
-_Don't be mean!_
-→ A direct appeal about behaviour, not quality.
+→ En direkte oppfordring om oppførsel, ikke kvalitet.
 
 **5. Det er dårlig vær i dag.**
-_The weather is bad today._
-→ Dårlig is the only option for weather, quality, or conditions.
+→ Dårlig er det eneste alternativet for vær, kvalitet eller forhold.
 
 ---
 
 ## Viktig forskjell — samme person, to meninger
 
 **Han er en dårlig lærer.**
-_He is a bad teacher._
-→ He lacks skill — he is ineffective or not good at teaching.
+→ Han mangler ferdigheter — han er ineffektiv eller ikke god til å undervise.
 
 **Han er en slem lærer.**
-_He is a mean teacher._
-→ He treats students unkindly or cruelly — nothing to do with his ability.
+→ Han behandler elevene ufint eller grusomt — ingenting med evnene hans å gjøre.
 
-The distinction matters: **dårlig** is about performance, **slem** is about character.
+Forskjellen er viktig: **dårlig** handler om prestasjoner, **slem** handler om karakter.
 
 ---
 
 ## Sammenligningstabell
 
-|          | dårlig                             | slem                                    |
-| -------- | ---------------------------------- | --------------------------------------- |
-| Meaning  | bad, poor, not good, unwell        | mean, naughty, cruel                    |
-| Focus    | quality, skill, health, conditions | behaviour, character, moral judgement   |
-| Used for | mat, vær, helse, evner, ideer      | barn, voksne, oppførsel, eventyrfigurer |
-| Register | everyday                           | everyday                                |
+|           | dårlig                         | slem                                    |
+| --------- | ------------------------------ | --------------------------------------- |
+| Betydning | dårlig, svak, ikke god, uvel   | slem, ufin, grusom                      |
+| Fokus     | kvalitet, evne, helse, forhold | oppførsel, karakter, moralsk vurdering  |
+| Brukes om | mat, vær, helse, evner, ideer  | barn, voksne, oppførsel, eventyrfigurer |
+| Register  | hverdagslig                    | hverdagslig                             |
 
 ---
 
 ## Ekstra: **ond** — sterkere enn slem
 
-**Ond** means _evil_ or _wicked_ — much stronger than slem.
+**Ond** betyr _evil_ eller _wicked_ — mye sterkere enn slem.
 
 - **En slem gutt** → a naughty / mean boy
 - **En ond mann** → an evil man
 
-_Slem_ is used for everyday unkindness or naughtiness. _Ond_ is reserved for serious moral evil — fairy-tale villains, criminals, deeply cruel people.
+_Slem_ brukes om hverdagslig uforskammethet eller uartighet. _Ond_ reserveres for alvorlig moralsk ondskap — eventyrskurker, kriminelle, dypt grusomme mennesker.
 
 ---
 
@@ -85,12 +76,12 @@ _Slem_ is used for everyday unkindness or naughtiness. _Ond_ is reserved for ser
 ❌ Barnet er dårlig og kaster sand.
 ⭕ Barnet er slemt og kaster sand.
 
-_Dårlig here would mean the child is sick or performing poorly — not that they are behaving badly._
+_Dårlig ville her bety at barnet er sykt eller presterer dårlig — ikke at det oppfører seg galt._
 
 ❌ Jeg er slem til å spille piano.
 ⭕ Jeg er dårlig til å spille piano.
 
-_Skill level is always dårlig, never slem._
+_Ferdighetsnivå er alltid dårlig, aldri slem._
 
 ---
 
@@ -98,7 +89,7 @@ _Skill level is always dårlig, never slem._
 
 - **dårlig** → kvalitet, tilstand, evne, helse — «not good»
 - **slem** → oppførsel, moral — «mean / naughty»
-- **ond** → ondskapsfull, ond i sjelen — «evil» (much stronger than slem)
+- **ond** → ondskapsfull, ond i sjelen — «evil» (mye sterkere enn slem)
 
 ---
 

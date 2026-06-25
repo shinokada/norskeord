@@ -1,6 +1,6 @@
 ---
-title: 'Det er lov — It is allowed / It is okay'
-description: '"Det er lov" means it is allowed or it is okay. The same word "lov" also means "law" — context tells you which.'
+title: 'Det er lov — det er tillatt / det er greit'
+description: '«Det er lov» betyr at noe er tillatt eller greit. Det samme ordet «lov» betyr dessuten «regel» eller «lovgivning» — sammenhengen avgjør hvilken betydning som gjelder.'
 slug: det-er-lov
 cefr: A2
 publishedAt: 2026-09-04
@@ -14,16 +14,14 @@ decks:
     label: A2 Phrases
 ---
 
-> **TL;DR:** **Det er lov å …** means "it is allowed to …" or "it is okay to …". The word **lov** looks like "law," but in this expression it means permission — not legislation.
+> **Kort sagt:** **Det er lov å …** means "it is allowed to …" or "it is okay to …". The word **lov** looks like "law," but in this expression it means permission — not legislation.
 
 ## Kort forklaring
 
 **Lov** har to forskjellige betydninger på norsk, og sammenhengen avgjør hvilken det er:
 
-- **det er lov** → it is allowed / it is okay (permission)
-- **en lov** → a law (legislation)
-
-_In English:_ In the expression **det er lov å …**, the word **lov** does not mean "law" — it means that something is permitted or acceptable.
+- **det er lov** → tillatt / greit (tillatelse)
+- **en lov** → en lov (lovgivning)
 
 ---
 
@@ -32,27 +30,23 @@ _In English:_ In the expression **det er lov å …**, the word **lov** does not
 Grunnstrukturen er enkel:
 
 **det er lov å + verb (infinitiv)**
-→ it is allowed to … / it is okay to …
+→ det er tillatt å … / det er greit å …
 
 **1. Det er lov å drømme.**
-_It is okay to dream._
-→ Often used in a slightly poetic or encouraging way — "dreaming is allowed."
+→ Brukes ofte på en litt poetisk eller oppmuntrende måte — «å drømme er lov».
 
 **2. Det er lov å feile.**
-_It is okay to make mistakes._
-→ A reassuring expression, common in everyday speech.
+→ Et betryggende uttrykk, vanlig i hverdagslig tale.
 
 **3. Er det lov å spørre?**
-_Is it okay / allowed to ask?_
-→ A polite way to check before asking something potentially sensitive.
+→ En høflig måte å sjekke på før man spør om noe som kan være følsomt.
 
 **4. Det er ikke lov å røyke her.**
-_Smoking is not allowed here._
-→ The negative form — **ikke lov** means not permitted.
+→ Nektingsformen — **ikke lov** betyr ikke tillatt.
 
 ---
 
-## Lov = tillatt (permission)
+## Lov = tillatt (tillatelse)
 
 I disse setningene betyr **lov** omtrent det samme som **tillatt** eller **greit**:
 
@@ -67,7 +61,7 @@ I disse setningene betyr **lov** omtrent det samme som **tillatt** eller **greit
 
 ---
 
-## Lov = en lov (legislation)
+## Lov = en lov (lovgivning)
 
 Samme ord, helt annen betydning — her er **lov** et substantiv:
 
@@ -88,10 +82,10 @@ Her snakker vi om juridiske regler, ikke tillatelse.
 
 | Uttrykk              | Betydning          | Type ord             |
 | -------------------- | ------------------ | -------------------- |
-| **det er lov å …**   | it is allowed to … | uttrykk (permission) |
-| **ikke lov**         | not allowed        | uttrykk (negation)   |
-| **en lov / loven**   | a law / the law    | substantiv           |
-| **lover** (flertall) | laws               | substantiv           |
+| **det er lov å …**   | det er tillatt å … | uttrykk (tillatelse) |
+| **ikke lov**         | ikke tillatt       | uttrykk (negasjon)   |
+| **en lov / loven**   | en lov / loven     | substantiv           |
+| **lover** (flertall) | lover              | substantiv           |
 
 ---
 
@@ -100,20 +94,20 @@ Her snakker vi om juridiske regler, ikke tillatelse.
 ❌ Det er lov å røyke ikke her.
 ⭕ Det er **ikke** lov å røyke her.
 
-_**Ikke** comes before **lov** in the expression — «ikke lov» is the fixed negation._
+_**Ikke** kommer før **lov** i uttrykket — «ikke lov» er den faste nektingsformen._
 
 ❌ Det er lovlig å spørre.
-⭕ Det er lov å spørre. _(more natural in everyday speech)_
+⭕ Det er lov å spørre. _(mer naturlig i hverdagslig tale)_
 
-_**Lovlig** (legal/lawful) is more formal. **Det er lov** is the everyday expression for "it's okay."_
+_**Lovlig** er mer formelt. **Det er lov** er det hverdagslige uttrykket for «det er greit»._
 
 ---
 
 ## Husk dette
 
-- **det er lov å + infinitiv** = it is allowed / okay to …
-- **det er ikke lov å + infinitiv** = it is not allowed to …
-- **en lov** (substantiv) = a law — helt annen betydning
+- **det er lov å + infinitiv** = det er tillatt / greit å …
+- **det er ikke lov å + infinitiv** = det er ikke tillatt å …
+- **en lov** (substantiv) = en lov — helt annen betydning
 - **lov** i uttrykk = tillatelse, ikke juss
 
 ---

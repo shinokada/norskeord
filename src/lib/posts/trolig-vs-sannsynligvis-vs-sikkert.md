@@ -1,6 +1,6 @@
 ---
-title: 'Trolig vs Sannsynligvis vs Sikkert — Three Ways to Say Probably'
-description: '"Trolig," "sannsynligvis," and "sikkert" all express probability, but with different tones. Trolig is fact-based and formal, sannsynligvis is neutral, and sikkert is confident and conversational.'
+title: 'Trolig vs Sannsynligvis vs Sikkert — Tre måter å si «sannsynligvis» på'
+description: '"Trolig", "sannsynligvis" og "sikkert" uttrykker alle sannsynlighet, men med ulik tone. Trolig er faktabasert og formelt, sannsynligvis er nøytralt, og sikkert er trygt og hverdagslig.'
 slug: trolig-vs-sannsynligvis-vs-sikkert
 cefr: B1
 publishedAt: 2026-09-25
@@ -14,7 +14,7 @@ decks:
     label: B1 Expressing Opinions
 ---
 
-> **TL;DR:** **Trolig**, **sannsynligvis**, and **sikkert** all mean "probably" — but they carry different tones. **Trolig** sounds fact-based and slightly formal. **Sannsynligvis** is the neutral standard. **Sikkert** is confident and conversational, and can also mean "certainly" depending on context.
+> **Kort sagt:** **Trolig**, **sannsynligvis** og **sikkert** betyr alle «probably» — men de har ulik tone. **Trolig** høres faktabasert og litt formelt ut. **Sannsynligvis** er den nøytrale standarden. **Sikkert** er selvsikkert og hverdagslig, og kan også bety «certainly» avhengig av kontekst.
 
 ## Kort forklaring
 
@@ -24,69 +24,56 @@ Norsk har flere ord for «probably», og valget påvirker tone og register:
 - **sannsynligvis** → nøytral og generell — det mest «vanlige» ordet
 - **sikkert** → en personlig, konfidenspregnet gjetning — hverdagslig
 
-_In English:_ All three translate as "probably" or "likely," but the nuance shifts from an objective estimate (**trolig**) to a neutral assessment (**sannsynligvis**) to a confident personal guess (**sikkert**).
-
 ---
 
-## Trolig — fact-based and slightly formal
+## Trolig — faktabasert og litt formelt
 
 **Trolig** brukes når noe virker sannsynlig ut fra fakta, omstendigheter eller bevis. Det høres mer nøkternt og litt formelt ut — typisk i nyheter og skriftlig norsk.
 
 **1. Han kommer trolig i morgen.**
-_He will probably come tomorrow._
-→ A calm, reasoned estimate — not especially personal.
+→ Et rolig, begrunnet anslag — ikke særlig personlig.
 
 **2. Det blir trolig regn i kveld.**
-_It will probably rain this evening._
-→ Common in weather forecasts and news language.
+→ Vanlig i værmeldinger og nyhetsspråk.
 
 **3. Årsaken var trolig teknisk feil.**
-_The cause was probably a technical fault._
-→ A classic news register — **trolig** sounds right here.
+→ Et klassisk nyhetsregister — **trolig** passer godt her.
 
 **4. Hun er trolig hjemme nå.**
-_She is likely at home now._
-→ Neutral and slightly detached — based on what seems probable.
+→ Nøytralt og litt distansert — basert på hva som virker sannsynlig.
 
 ---
 
-## Sannsynligvis — neutral and general
+## Sannsynligvis — nøytral og generell
 
 **Sannsynligvis** er det mest nøytrale ordet for «probably». Det er hverken spesielt formelt eller uformelt, og passer i de fleste situasjoner.
 
 **1. Det blir sannsynligvis regn i kveld.**
-_It will probably rain this evening._
-→ Plain probability — no particular emotional colouring.
+→ Ren sannsynlighet — ingen særlig følelsesmessig farging.
 
 **2. Han er sannsynligvis hjemme nå.**
-_He is probably home now._
-→ Straightforward and neutral.
+→ Rett frem og nøytralt.
 
 **3. Møtet er sannsynligvis ferdig klokka fire.**
-_The meeting will probably be done by four._
-→ A common, everyday use — neither too formal nor too casual.
+→ En vanlig, hverdagslig bruk — verken for formelt eller for uformelt.
 
 ---
 
-## Sikkert — confident and conversational
+## Sikkert — selvsikkert og hverdagslig
 
 **Sikkert** er mer personlig og hverdagslig. Det uttrykker ikke bare sannsynlighet, men en viss **sikkerhet i gjetningen** — «jeg er ganske sikker på dette.»
 
 **1. Han er sikkert hjemme nå.**
-_He's probably home / I'm pretty sure he's home._
-→ A confident guess based on personal expectation.
+→ En selvsikker gjetning basert på personlig forventning.
 
 **2. Det går sikkert bra.**
-_It'll probably be fine / I'm sure it'll be fine._
-→ Reassuring tone — sikkert adds warmth and confidence.
+→ Beroligende tone — sikkert tilfører varme og selvtillit.
 
 **3. Hun har sikkert glemt det.**
-_She's probably forgotten / I bet she's forgotten._
-→ A typical conversational comment.
+→ En typisk hverdagslig kommentar.
 
 **4. Det er sikkert dyrt.**
-_It's probably expensive._
-→ A casual, confident assumption.
+→ En uformell, selvsikker antakelse.
 
 ---
 
@@ -109,13 +96,13 @@ Pass på: **sikkert** har to betydninger avhengig av kontekst:
 Tenk deg at en venn er forsinket:
 
 - **Han kommer trolig snart.**
-  → A calm, fact-based estimate. ("It seems likely based on what I know.")
+  → Et rolig, faktabasert anslag. («Det virker sannsynlig ut fra det jeg vet.»)
 
 - **Han kommer sannsynligvis snart.**
-  → A plain probability statement. ("He'll probably come soon.")
+  → En enkel sannsynlighetspåstand. («Han kommer nok snart.»)
 
 - **Han kommer sikkert snart.**
-  → A confident, personal guess. ("I'm pretty sure he'll come soon.")
+  → En selvsikker, personlig gjetning. («Jeg er ganske sikker på at han kommer snart.»)
 
 Alle tre er riktige — men de sier litt forskjellige ting om hvor personlig og sikker taleren er.
 

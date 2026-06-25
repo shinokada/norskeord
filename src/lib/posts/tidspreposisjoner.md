@@ -1,6 +1,6 @@
 ---
-title: 'I, På, og Om — Time Prepositions (Part 2)'
-description: 'A deep dive into Norwegian time prepositions: i vs på vs om for specific time contexts. Covers habits vs specific events, duration, future "in X time", and the tricky i kveld vs på kvelden contrast.'
+title: 'I, På, og Om — Tidspreposisjoner (del 2)'
+description: 'En grundig gjennomgang av tidspreposisjonene i, på og om på norsk. Vi ser på vaner vs. enkelthendelser, varighet, fremtid med «om X tid», og forskjellen mellom i kveld og på kvelden.'
 slug: tidspreposisjoner-2
 cefr: [A2, B1]
 type: guide
@@ -8,29 +8,29 @@ publishedAt: 2026-11-25
 tags: [grammar, prepositions]
 ---
 
-> **TL;DR:** **i** = inside a time frame (i dag, i sommer, i tre år). **på** = specific or habitual time points (på mandag, på kvelden). **om** = future "in X time" (om to dager, om en time).
+> **Kort sagt:** **i** = innenfor en tidsperiode (i dag, i sommer, i tre år). **på** = spesifikke eller gjentakende tidspunkter (på mandag, på kvelden). **om** = fremtidig «om X tid» (om to dager, om en time).
 
-This is Part 2 of the prepositions series, focusing specifically on **time**. For general prepositions (i, på, med, ved, for), see: [Preposisjoner — I, På, Med, Ved, For](/blog/preposisjoner).
-
----
-
-## The core idea
-
-These three prepositions cover most Norwegian time expressions — and they do not overlap cleanly with English "in," "on," or "at."
-
-- **i** → inside a time period, or a fixed time expression
-- **på** → specific or habitual time points; also days of the week
-- **om** → future "in X time" — after a certain amount of time
-
-The trickiest part is that **i** and **på** both translate to "in" in English — but they are used very differently.
+Dette er del 2 av preposisjonsserien, med fokus spesifikt på **tid**. For generelle preposisjoner (i, på, med, ved, for), se: [Preposisjoner — I, På, Med, Ved, For](/blog/preposisjoner).
 
 ---
 
-## I — inside a time frame
+## Hovedideen
+
+Disse tre preposisjonene dekker de fleste norske tidsuttrykk — og de overlapper ikke ryddig med engelske «in», «on» eller «at».
+
+- **i** → innenfor en tidsperiode, eller et fast tidsuttrykk
+- **på** → spesifikke eller gjentakende tidspunkter; også ukedager
+- **om** → fremtidig «om X tid» — etter at en bestemt tid har gått
+
+Det vanskeligste er at **i** og **på** begge kan oversettes med «in» på engelsk — men de brukes på helt ulike måter.
+
+---
+
+## I — innenfor en tidsperiode
 
 **I** brukes for tidsperioder du befinner deg **inni** — måneder, år, sesonger, og faste tidsbetegnelser som _i dag_ og _i morgen_.
 
-### Fixed expressions
+### Faste uttrykk
 
 - **i dag** = today
 - **i morgen** = tomorrow
@@ -39,35 +39,35 @@ The trickiest part is that **i** and **på** both translate to "in" in English �
 - **i sommer** = this/last summer
 - **i vinter** = this/last winter
 
-These are frozen expressions — always use **i**, never **på**.
+Dette er faste uttrykk — bruk alltid **i**, aldri **på**.
 
-### Months, years, seasons
+### Måneder, år, sesonger
 
 - **i april** — in April
 - **i 2025** — in 2025
 - **i ferien** — during the holiday
 - **i helgen** — over the weekend
 
-### Duration
+### Varighet
 
 - **Jeg bodde der i tre år.** — I lived there for three years.
 - **Vi ventet i to timer.** — We waited for two hours.
 
-→ **I** marks how long something lasted — a stretch of time you were **inside**.
+→ **I** markerer hvor lenge noe varte — en tidsperiode du var **inni**.
 
 ---
 
-## På — specific or habitual time points
+## På — spesifikke eller gjentakende tidspunkter
 
 **På** brukes for dager i uka, deler av dagen (som vane eller type), og faste begivenheter.
 
-### Days of the week
+### Ukedager
 
 - **på mandag** — on Monday
 - **på fredag** — on Friday
 - **på søndager** — on Sundays (habitual)
 
-### Parts of the day (habitual/general)
+### Deler av dagen (vane/generelt)
 
 - **på morgenen** — in the morning (as a habit)
 - **på formiddagen** — in the late morning (as a habit)
@@ -75,7 +75,7 @@ These are frozen expressions — always use **i**, never **på**.
 - **på kvelden** — in the evening (generally / as a habit)
 - **på natten** — at night (generally)
 
-### Events and states
+### Begivenheter og tilstander
 
 - **på ferie** — on holiday
 - **på fest** — at a party
@@ -84,7 +84,7 @@ These are frozen expressions — always use **i**, never **på**.
 
 ---
 
-## Om — future "in X time"
+## Om — fremtidig «om X tid»
 
 **Om** brukes for noe som skal skje etter en bestemt tid — tellbart fremover i tid fra nå.
 
@@ -94,20 +94,20 @@ These are frozen expressions — always use **i**, never **på**.
 - **om en uke** — in a week
 - **om tre måneder** — in three months
 
-→ Think of **om** as "after X time has passed from now."
+→ Tenk på **om** som «etter at X tid har gått fra nå».
 
 ---
 
-## The key contrasts
+## De viktigste forskjellene
 
 ### i kveld vs på kvelden
 
-This is the most common source of confusion:
+Dette er den vanligste kilden til forvirring:
 
-| Uttrykk        | Meaning                          | When to use                       |
-| -------------- | -------------------------------- | --------------------------------- |
-| **i kveld**    | tonight (this specific evening)  | talking about today's evening     |
-| **på kvelden** | in the evening (habit / general) | what you usually do, or generally |
+| Uttrykk        | Betydning                          | Når du bruker det                     |
+| -------------- | ---------------------------------- | ------------------------------------- |
+| **i kveld**    | i kveld (denne spesifikke kvelden) | når du snakker om kvelden i dag       |
+| **på kvelden** | om kvelden (vane / generelt)       | hva du vanligvis gjør, eller generelt |
 
 **Eksempler:**
 
@@ -115,7 +115,7 @@ This is the most common source of confusion:
 - **Jeg trener på kvelden.** — I work out in the evenings. _(habit)_
 - **Det er stille på kvelden.** — It's quiet in the evenings. _(general statement)_
 
-The same logic applies to **i morges** (this morning, past) vs **på morgenen** (in the morning, habitual).
+Den samme logikken gjelder for **i morges** (tidligere i dag, fortid) vs **på morgenen** (om morgenen, som vane).
 
 ---
 
@@ -124,7 +124,7 @@ The same logic applies to **i morges** (this morning, past) vs **på morgenen** 
 - **Jeg reiser i morgen.** — I'm travelling tomorrow. _(fixed day name)_
 - **Jeg reiser om to dager.** — I'm travelling in two days. _(counting forward)_
 
-«I morgen» is a frozen time word like "today" or "yesterday." «Om to dager» is arithmetic — you are counting from now.
+«I morgen» er et fast tidsuttrykk, akkurat som «i dag» eller «i går». «Om to dager» er regning — du teller fremover fra nå.
 
 ---
 
@@ -133,18 +133,18 @@ The same logic applies to **i morges** (this morning, past) vs **på morgenen** 
 - **Jeg bodde der i tre år.** — I lived there for three years. _(duration)_
 - **Jeg flyttet hit for tre år siden.** — I moved here three years ago. _(point in the past)_
 
-**For … siden** = ago. This uses **for**, not **i** or **om**.
+**For … siden** = ago. Her brukes **for**, ikke **i** eller **om**.
 
 ---
 
 ## Sammenligningstabell
 
-| Preposisjon | Tidsbetydning       | Eksempler                          |
-| ----------- | ------------------- | ---------------------------------- |
-| **i**       | inside a time frame | i dag · i april · i tre år         |
-| **på**      | habitual / specific | på mandag · på kvelden · på ferie  |
-| **om**      | future "in X time"  | om to dager · om en time · om litt |
-| **for**     | ago (past point)    | for tre år siden · for lenge siden |
+| Preposisjon | Tidsbetydning              | Eksempler                          |
+| ----------- | -------------------------- | ---------------------------------- |
+| **i**       | innenfor en tidsperiode    | i dag · i april · i tre år         |
+| **på**      | vane / spesifikt tidspunkt | på mandag · på kvelden · på ferie  |
+| **om**      | fremtidig «om X tid»       | om to dager · om en time · om litt |
+| **for**     | siden (punkt i fortiden)   | for tre år siden · for lenge siden |
 
 ---
 
@@ -153,35 +153,35 @@ The same logic applies to **i morges** (this morning, past) vs **på morgenen** 
 ❌ Jeg kommer i to timer.
 ⭕ Jeg kommer **om** to timer.
 
-_**Om** is used for "in X time from now" — **i** marks duration, not future countdown._
+_**Om** brukes for «om X tid fra nå» — **i** markerer varighet, ikke nedtelling mot fremtiden._
 
 ---
 
 ❌ Jeg reiser på morgen.
 ⭕ Jeg reiser **i morgen**.
 
-_«I morgen» is a fixed expression — always **i**, never **på**._
+_«I morgen» er et fast uttrykk — alltid **i**, aldri **på**._
 
 ---
 
 ❌ Jeg trener i kvelden.
 ⭕ Jeg trener **i kveld** / **på kvelden**.
 
-_It's either **i kveld** (tonight, specific) or **på kvelden** (in the evenings, habitual) — not **i kvelden**._
+_Det heter enten **i kveld** (i kveld, spesifikt) eller **på kvelden** (om kveldene, som vane) — ikke **i kvelden**._
 
 ---
 
 ❌ Jeg bodde der om tre år.
 ⭕ Jeg bodde der **i** tre år.
 
-_**I** marks how long something lasted. **Om** only points forward from now._
+_**I** markerer hvor lenge noe varte. **Om** peker bare fremover fra nå._
 
 ---
 
 ❌ Det skjedde for to dager.
 ⭕ Det skjedde **for** to dager **siden**.
 
-_**For … siden** must be complete — **siden** cannot be dropped._
+_**For … siden** må være fullstendig — **siden** kan ikke utelates._
 
 ---
 
@@ -205,12 +205,12 @@ Velg riktig preposisjon: **i / på / om**
 
 ## Husk dette
 
-- **i morgen / i dag / i går** → fixed expressions, always **i**
-- **på mandag / på kvelden** → habitual or specific recurring time
-- **i kveld / i sommer / i ferien** → this specific time period
-- **om to dager / om en time** → counting forward from now
-- **i tre år** → duration
-- **for tre år siden** → ago
+- **i morgen / i dag / i går** → faste uttrykk, alltid **i**
+- **på mandag / på kvelden** → vane eller spesifikt gjentakende tidspunkt
+- **i kveld / i sommer / i ferien** → denne spesifikke tidsperioden
+- **om to dager / om en time** → teller fremover fra nå
+- **i tre år** → varighet
+- **for tre år siden** → siden (punkt i fortiden)
 
 ---
 

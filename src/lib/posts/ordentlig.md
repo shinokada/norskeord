@@ -1,6 +1,6 @@
 ---
-title: 'Ordentlig — Properly, Really, or Decent?'
-description: '"Ordentlig" shifts meaning depending on how it is used. As an adverb it means "really / properly." As an adjective it means "proper / decent / reliable."'
+title: 'Ordentlig — skikkelig, virkelig eller anstendig?'
+description: 'Ordentlig skifter betydning avhengig av hvordan det brukes. Som adverb betyr det «skikkelig / virkelig», og som adjektiv betyr det «ordentlig / anstendig / pålitelig».'
 slug: ordentlig
 cefr: B1
 publishedAt: 2026-07-31
@@ -14,7 +14,7 @@ decks:
     label: A2 Adverbs
 ---
 
-> **TL;DR:** **Ordentlig** as an adverb means "really / properly / thoroughly." As an adjective it means "proper / decent / reliable." Context — and whether it modifies a verb or a noun — tells you which meaning it is.
+> **Kort sagt:** **Ordentlig** som adverb betyr «really / properly / thoroughly». Som adjektiv betyr det «proper / decent / reliable». Konteksten — og om det modifiserer et verb eller et substantiv — avgjør hvilken betydning det har.
 
 ## Kort forklaring
 
@@ -23,8 +23,6 @@ decks:
 - **Adverb** → really / properly / thoroughly — forsterker et verb eller adjektiv
 - **Adjektiv** → proper / decent / reliable — beskriver en person eller ting
 
-_In English:_ As an adverb, **ordentlig** works like "properly" or "really." As an adjective, it is closer to "decent," "proper," or "reliable."
-
 ---
 
 ## Ordentlig som adverb — really / properly
@@ -32,20 +30,16 @@ _In English:_ As an adverb, **ordentlig** works like "properly" or "really." As 
 Her forsterker **ordentlig** et verb eller adjektiv. Det er nært synonymt med **skikkelig** og **virkelig**.
 
 **1. Jeg slapper ordentlig av når jeg er på hytta.**
-_I really relax / I properly unwind when I'm at the cabin._
-→ A full, complete rest — not just a little. **Ordentlig** intensifies the verb.
+→ En fullstendig, skikkelig hvile — ikke bare litt. **Ordentlig** forsterker verbet.
 
 **2. Jeg sov ordentlig godt i natt.**
-_I slept really well last night._
-→ Here it intensifies the adjective **godt**.
+→ Her forsterker det adjektivet **godt**.
 
 **3. Nå må vi spise ordentlig.**
-_Now we need to eat properly._
-→ A real meal — not a snack.
+→ Et skikkelig måltid — ikke bare et lite mellommåltid.
 
 **4. Etter ferien fikk jeg ordentlig energi tilbake.**
-_After the holiday I really got my energy back._
-→ Fully, thoroughly — not just a bit.
+→ Fullstendig, grundig — ikke bare litt.
 
 ---
 
@@ -54,16 +48,13 @@ _After the holiday I really got my energy back._
 Her beskriver **ordentlig** en person eller ting. Det handler om kvalitet, pålitelighet, eller at noe er slik det skal være.
 
 **1. Han er en ordentlig mann.**
-_He is a decent / reliable man._
-→ Serious, trustworthy — someone you can count on.
+→ Seriøs og pålitelig — en man kan stole på.
 
 **2. Gjør leksene ordentlig!**
-_Do your homework properly!_
-→ Correctly and thoroughly — not sloppily.
+→ Riktig og grundig — ikke sjusket.
 
 **3. Vi trenger et ordentlig måltid.**
-_We need a proper meal._
-→ A real, complete meal — not fast food or a snack.
+→ Et skikkelig, fullstendig måltid — ikke hurtigmat eller et lite mellommåltid.
 
 ---
 
@@ -92,7 +83,7 @@ De to ordene overlapper mye, og i dagligtale er de ofte utbyttbare:
 ❌ Jeg slapper av ordentlig godt.
 ⭕ Jeg slapper ordentlig godt av. / Jeg slapper ordentlig av.
 
-_In Norwegian, the adverb typically sits close to the verb — not at the end after another adverb._
+_På norsk plasseres adverbet vanligvis tett inntil verbet — ikke til slutt etter et annet adverb._
 
 ---
 

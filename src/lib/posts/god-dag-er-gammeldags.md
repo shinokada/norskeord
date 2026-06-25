@@ -1,13 +1,13 @@
 ---
-title: "Why Norwegians Don't Say God dag"
-description: 'God dag sounds stiff and old-fashioned in modern Norwegian. Here is what people actually say when they greet each other.'
+title: 'Derfor sier ikke nordmenn god dag'
+description: 'God dag høres stivt og gammeldags ut i moderne norsk. Her er det folk faktisk sier når de hilser på hverandre.'
 slug: god-dag-er-gammeldags
 cefr: A1
 publishedAt: 2026-06-16
 tags: [greetings, vocabulary, speaking, register]
 ---
 
-> **TL;DR:** **God dag** is technically correct but sounds formal and outdated in everyday Norwegian. Use **hei**, **hei hei**, or **halla** instead.
+> **Kort sagt:** **God dag** er teknisk sett korrekt, men høres formelt og gammeldags ut i hverdagsnorsk. Bruk **hei**, **hei hei** eller **halla** i stedet.
 
 ## Kort forklaring
 
@@ -15,44 +15,37 @@ tags: [greetings, vocabulary, speaking, register]
 
 Norske hverdagssamtaler bruker nesten alltid noe annet.
 
-_In English:_ **God dag** is the literal translation of "good day," but modern Norwegians rarely use it in casual settings. It survives in very formal or old-fashioned contexts, but using it in everyday conversation can sound awkward or overly stiff.
-
 ---
 
 ## Hva sier nordmenn i stedet?
 
 **1. Hei**
-_Hi / Hello_
-→ The standard everyday greeting. Works in almost every situation — with friends, colleagues, shopkeepers, strangers.
+→ Den vanlige hverdagshilsenen. Fungerer i nesten alle situasjoner — med venner, kolleger, butikkansatte og fremmede.
 
 **2. Hei hei**
-_Hi there / Hey_
-→ Slightly warmer and more informal than a single _hei_. Very common.
+→ Litt varmere og mer uformelt enn et enkelt _hei_. Veldig vanlig.
 
 **3. Halla**
-_Hey / What's up_
-→ Casual and friendly — used with people you know well.
+→ Uformelt og vennlig — brukes med folk du kjenner godt.
 
 **4. God morgen**
-_Good morning_
-→ Natural and still in active use — but only until around midday.
+→ Naturlig og fortsatt i aktiv bruk — men bare frem til rundt middag.
 
 **5. God kveld**
-_Good evening_
-→ Used in the evening, somewhat formal but not unusual.
+→ Brukes om kvelden, noe formelt, men ikke uvanlig.
 
 ---
 
 ## Sammenligningstabell
 
-| Hilsen         | Register          | Når                              |
-| -------------- | ----------------- | -------------------------------- |
-| **hei**        | everyday, neutral | always — the safe default        |
-| **hei hei**    | informal, warm    | casual settings, familiar people |
-| **halla**      | informal          | friends, young people            |
-| **god morgen** | neutral–formal    | mornings only                    |
-| **god kveld**  | neutral–formal    | evenings, slightly formal        |
-| **god dag**    | formal, outdated  | avoid in everyday speech         |
+| Hilsen         | Register             | Når                                    |
+| -------------- | -------------------- | -------------------------------------- |
+| **hei**        | hverdagslig, nøytral | alltid — det trygge standardvalget     |
+| **hei hei**    | uformell, varm       | uformelle situasjoner, kjente personer |
+| **halla**      | uformell             | venner, unge mennesker                 |
+| **god morgen** | nøytral–formell      | kun om morgenen                        |
+| **god kveld**  | nøytral–formell      | om kvelden, litt formelt               |
+| **god dag**    | formell, gammeldags  | unngå i hverdagssamtaler               |
 
 ---
 
@@ -60,10 +53,10 @@ _Good evening_
 
 **God dag** dukker opp i noen situasjoner:
 
-- Veldig formell skriftlig kommunikasjon
+- Svært formell skriftlig kommunikasjon
 - Eldre litteratur og film
 - Ironi eller humoristisk overdrivelse
-- Customer-service scripts (becoming rare)
+- Kundeservicemanus (blir stadig sjeldnere)
 
 Men i vanlig samtale — enten ansikt til ansikt eller på telefon — er **hei** alltid det riktige valget.
 
@@ -73,10 +66,10 @@ Men i vanlig samtale — enten ansikt til ansikt eller på telefon — er **hei*
 
 Hilsener ved avskjed er like viktige:
 
-- **Ha det** / **Ha det bra** → Goodbye / Take care _(most common)_
-- **Vi sees** / **Snakkes** → See you / Talk later _(casual)_
-- **På gjensyn** → Farewell / See you again _(polite, slightly formal)_
-- **God natt** → Good night _(only when someone is actually going to sleep)_
+- **Ha det** / **Ha det bra** → Goodbye / Take care _(mest vanlig)_
+- **Vi sees** / **Snakkes** → See you / Talk later _(uformelt)_
+- **På gjensyn** → Farewell / See you again _(høflig, litt formelt)_
+- **God natt** → Good night _(kun når noen faktisk skal sove)_
 
 ---
 
@@ -85,12 +78,12 @@ Hilsener ved avskjed er like viktige:
 ❌ God dag! Hvordan har du det?
 ⭕ Hei! Hvordan har du det?
 
-_God dag in casual conversation sounds stiff — hei is always the natural choice._
+_God dag i en uformell samtale høres stivt ut — hei er alltid det naturlige valget._
 
 ❌ God dag på telefonen.
 ⭕ Hei / Hallo på telefonen.
 
-_On the phone, Norwegians say hei or hallo — not god dag._
+_På telefon sier nordmenn hei eller hallo — ikke god dag._
 
 ---
 

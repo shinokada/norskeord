@@ -1,6 +1,6 @@
 ---
-title: 'Komme bort til — Walk up to / Go over to'
-description: '"Komme bort til" means to walk up to or approach someone. The particle "bort" does not mean "away" here — it signals movement toward a person or place.'
+title: 'Komme bort til — Gå bort til / Nærme seg noen'
+description: '«Komme bort til» betyr å gå bort til eller nærme seg noen. Partikkelen «bort» betyr ikke «vekk» her — den signaliserer bevegelse mot en person eller et sted.'
 slug: komme-bort-til
 cefr: B1
 publishedAt: 2026-09-09
@@ -14,7 +14,7 @@ decks:
     label: A2 Verbs
 ---
 
-> **TL;DR:** **Komme bort til** means to walk up to or approach someone — not to "come away." The particle **bort** shifts meaning depending on the expression it appears in.
+> **Kort sagt:** **Komme bort til** betyr å gå bort til eller nærme seg noen — ikke «come away». Partikkelen **bort** skifter betydning avhengig av uttrykket det opptrer i.
 
 ## Kort forklaring
 
@@ -24,27 +24,21 @@ Det tilsvarer engelsk **walk up to**, **go over to**, eller **approach**.
 
 Selv om **bort** vanligvis kan bety "away," endrer det seg i mange faste uttrykk. I **komme bort til** peker **bort** faktisk mot noe — ikke bort fra det.
 
-_In English:_ Think of it as "coming over to" someone rather than "coming away." The combination **bort til** signals movement that ends in closeness.
-
 ---
 
 ## Eksempler
 
 **1. Han kommer bort til henne.**
-_He walks up to her. / He goes over to her._
-→ He moves from where he is and approaches her.
+→ Han beveger seg fra der han er og nærmer seg henne.
 
 **2. Hun kom bort til meg og sa hei.**
-_She came up to me and said hi._
-→ A natural, everyday situation — someone approaches you.
+→ En naturlig, hverdagslig situasjon — noen nærmer seg deg.
 
 **3. En mann kom bort til bordet vårt.**
-_A man came over to our table._
-→ Works for places and objects, not just people.
+→ Fungerer for steder og gjenstander, ikke bare personer.
 
 **4. Læreren kom bort til ham og hjalp ham.**
-_The teacher walked over to him and helped him._
-→ Common in school or workplace contexts.
+→ Vanlig i skole- eller arbeidskontekst.
 
 ---
 
@@ -56,11 +50,11 @@ _The teacher walked over to him and helped him._
 
 - **Gå bort fra døra.**
   _Move away from the door._
-  → Movement away from something specific.
+  → Bevegelse vekk fra noe bestemt.
 
 - **Han gikk bort.**
   _He went away._
-  → He left.
+  → Han dro.
 
 **bort = over / toward (i faste uttrykk)**
 
@@ -73,21 +67,21 @@ _The teacher walked over to him and helped him._
 
 | Uttrykk            | Betydning              | Eksempel                                              |
 | ------------------ | ---------------------- | ----------------------------------------------------- |
-| **gå bort**        | go away / leave        | _Han gikk bort._ He went away.                        |
-| **gå bort fra**    | move away from         | _Gå bort fra veien._ Move away from the road.         |
-| **falle bort**     | disappear / be omitted | _Noen detaljer falt bort._ Some details were dropped. |
-| **se bort fra**    | disregard / overlook   | _Se bort fra den feilen._ Disregard that mistake.     |
-| **komme bort til** | walk up to / approach  | _Han kom bort til meg._ He walked up to me.           |
+| **gå bort**        | go away / leave        | _Han gikk bort._ Han dro.                             |
+| **gå bort fra**    | move away from         | _Gå bort fra veien._ Beveg deg vekk fra veien.        |
+| **falle bort**     | disappear / be omitted | _Noen detaljer falt bort._ Noen detaljer ble utelatt. |
+| **se bort fra**    | disregard / overlook   | _Se bort fra den feilen._ Se bort fra den feilen.     |
+| **komme bort til** | walk up to / approach  | _Han kom bort til meg._ Han gikk bort til meg.        |
 
 ---
 
 ## Sammenligningstabell
 
-| Uttrykk            | Fokus                  | Retning      |
-| ------------------ | ---------------------- | ------------ |
-| **komme bort til** | approach / walk up to  | mot noen/noe |
-| **gå bort fra**    | move away from         | vekk fra noe |
-| **nærme seg**      | approach (more formal) | mot noen/noe |
+| Uttrykk            | Fokus                   | Retning      |
+| ------------------ | ----------------------- | ------------ |
+| **komme bort til** | nærme seg / gå bort til | mot noen/noe |
+| **gå bort fra**    | bevege seg vekk fra     | vekk fra noe |
+| **nærme seg**      | nærme seg (mer formelt) | mot noen/noe |
 
 ---
 
@@ -96,18 +90,18 @@ _The teacher walked over to him and helped him._
 ❌ Han kom bort fra henne.
 ⭕ Han kom bort **til** henne.
 
-_**Bort fra** means away from. You need **bort til** to express approaching._
+_**Bort fra** betyr vekk fra. Du trenger **bort til** for å uttrykke at noen nærmer seg._
 
 ❌ Han nærmet seg bort til henne.
 ⭕ Han **kom bort til** henne. / Han **nærmet seg** henne.
 
-_Don't combine **nærme seg** and **bort til** — they express the same idea._
+_Ikke kombiner **nærme seg** og **bort til** — de uttrykker det samme._
 
 ---
 
 ## Husk dette
 
-- **komme bort til** = walk up to / approach — **ikke** «come away»
+- **komme bort til** = gå bort til / nærme seg — **ikke** «come away»
 - **bort** endrer betydning avhengig av uttrykket — kontekst er avgjørende
 - **bort til** → bevegelse mot; **bort fra** → bevegelse vekk
 

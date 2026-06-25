@@ -1,6 +1,6 @@
 ---
 title: 'Bytte vs Skifte'
-description: 'Bytte is always a swap. Skifte is any kind of change — including ones that happen on their own.'
+description: 'Bytte betyr alltid en utveksling mellom to parter. Skifte kan brukes om alle slags endringer – også de som skjer av seg selv.'
 slug: bytte-vs-skifte
 cefr: A2
 publishedAt: 2026-05-21
@@ -26,38 +26,32 @@ Men:
 - **bytte** betyr å erstatte noe med noe annet
 - **skifte** betyr å forandre eller gå over til noe annet
 
-_In English:_ **Bytte** focuses on swapping one thing for another, while **skifte** is broader and describes a change or transition — often in state, colour, mood, or ownership.
-
 ---
 
 ## Eksempler
 
 **1. Jeg må bytte dekk på bilen.**
-_I need to change the tyres on the car._
-→ Replacing one specific thing with another.
+→ Å erstatte én bestemt ting med en annen.
 
 **2. Bladene skifter farge om høsten.**
-_The leaves change colour in autumn._
-→ A natural transition or change in state — skifte is the natural choice here.
+→ En naturlig overgang eller endring i tilstand — skifte er det naturlige valget her.
 
 **3. Jeg byttet plass med ham.**
-_I swapped seats with him._
-→ Only **bytte** works here — skifte cannot be used for exchanging with someone.
+→ Bare **bytte** fungerer her — skifte kan ikke brukes om å utveksle noe med noen.
 
 **4. Jeg må bytte / skifte klær.**
-_I need to change clothes._
-→ Both are correct, but **skifte klær** is the more traditional expression.
+→ Begge er korrekte, men **skifte klær** er det mer tradisjonelle uttrykket.
 
 ---
 
 ## Sammenligningstabell
 
-|                       | bytte                     | skifte                     |
-| --------------------- | ------------------------- | -------------------------- |
-| Meaning               | replace / swap            | change / transition        |
-| Focus                 | one thing → another thing | change of state or type    |
-| Exchange with someone | ✅ bytte med noen         | ❌ ikke skifte med noen    |
-| Register              | everyday                  | everyday / slightly formal |
+|                   | bytte                   | skifte                         |
+| ----------------- | ----------------------- | ------------------------------ |
+| Betydning         | erstatte / bytte om     | endre / gå over til            |
+| Fokus             | én ting → en annen ting | endring av tilstand eller type |
+| Utveksle med noen | ✅ bytte med noen       | ❌ ikke skifte med noen        |
+| Register          | hverdagslig             | hverdagslig / litt formelt     |
 
 ---
 
@@ -66,7 +60,7 @@ _I need to change clothes._
 ❌ Jeg skiftet plass med henne.
 ⭕ Jeg byttet plass med henne.
 
-_Skifte is not used when exchanging something with another person — only bytte works in that context._
+_Skifte brukes ikke når man utveksler noe med en annen person — bare bytte fungerer i den sammenhengen._
 
 ---
 
