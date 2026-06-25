@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.40.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added broader Norwegian-language guidance across the learning content, including clearer explanations, examples, tables, and wording.
+    - Expanded blog-post handling so content and metadata can be updated consistently in Norwegian.
+  - **Bug Fixes**
+    - Fixed several vocabulary entries and normalized word forms, including gender markers and missing lemma values.
+    - Improved site build behavior so broken or unpublished blog links no longer fail prerendering in some cases.
+  - **Documentation**
+    - Added and refined rules for blog posts and vocabulary formatting to keep content more consistent.
+
 ## 2.39.0
 
 ### Minor Changes
