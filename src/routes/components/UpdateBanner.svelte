@@ -17,7 +17,16 @@
   });
 
   function reload() {
-    updateSW?.();
+    if (updateSW) {
+      updateSW().then(() => {
+        if (import.meta.env.DEV) {
+          // In dev there's no real waiting SW, so force a reload to simulate the UX
+          window.location.reload();
+        }
+      });
+    } else if (import.meta.env.DEV) {
+      window.location.reload();
+    }
   }
 
   function dismiss() {
@@ -25,14 +34,20 @@
   }
 </script>
 
+{#if import.meta.env.DEV}
+  <button
+    onclick={() => (showBanner = true)}
+    class="fixed bottom-20 right-4 z-50 bg-red-500 text-white text-xs px-2 py-1 rounded"
+  >
+    Test update banner
+  </button>
+{/if}
 {#if showBanner}
   <div
     role="alert"
     class="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-3 rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 shadow-lg dark:border-blue-800 dark:bg-blue-950"
   >
-    <span class="text-sm text-blue-900 dark:text-blue-100">
-      A new version is available.
-    </span>
+    <span class="text-sm text-blue-900 dark:text-blue-100"> A new version is available. </span>
     <button
       onclick={reload}
       class="rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-blue-700"
