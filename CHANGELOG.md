@@ -1,5 +1,17 @@
 # norske-flashcard
 
+## 2.41.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added an update banner that appears when a new app version is available, letting you refresh with one tap.
+  - **Bug Fixes**
+    - Improved flashcard navigation hints across multiple languages to better match touch-based use.
+    - Updated mobile wording to say “swipe to navigate” instead of arrow-key navigation.
+  - **Documentation**
+    - Removed an outdated note from the AI questions list.
+
 ## 2.40.0
 
 ### Minor Changes
