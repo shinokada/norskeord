@@ -115,7 +115,7 @@
   "flashcard_easy": "Easy",
   "flashcard_show_translation": "Show translation",
   "flashcard_hide_translation": "Hide translation",
-  "flashcard_hint_touch": "Tap to flip · ← → to navigate",
+  "flashcard_hint_touch": "Tap to flip · Swipe to navigate",
   "flashcard_hint_desktop_prefix": "Space/Enter/↑↓ to flip · ← → to navigate · R to restart · E to toggle translation · / to pronounce word · . to pronounce",
   "flashcard_hint_example_phrase": "example phrase",
   "flashcard_hint_word": "word",
