@@ -13,21 +13,6 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- To be consistent, I need to decide vocab format for substantiv, verb, adjektiv in src/lib/data/vocab-\*.json files.
-  One way which is the simplest is to ignore any bøying and particles since this is not a dictionary. You can see them in examples.
-  Another way is show only for substantiv en/et
-  substantiv
-  a) et hus
-  b) hus(et)
-  c) hus(-et)
-  d) hus (dictionary form)
-  verb
-  a) få/fikk/fått
-  b) få (dictionary form)
-  c) å få
-  adjektiv
-  a) dictionary form
-
 - Mobile check
 - How about Start free button rather than login?
 - Grammtikk section for B2/C1
