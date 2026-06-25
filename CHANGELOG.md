@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.41.1
+
+### Patch Changes
+
+- fix: remove UpdateBanner
+
 ## 2.41.0
 
 ### Minor Changes
