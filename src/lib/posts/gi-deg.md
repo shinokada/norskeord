@@ -1,6 +1,6 @@
 ---
-title: 'Gi deg — Stop It / Give It a Rest'
-description: '"Gi deg" means to stop or cut it out — not to give yourself something. Learn the difference between gi seg, gi opp, and how tone changes the meaning.'
+title: 'Gi deg — Slutt med det / La det være'
+description: '"Gi deg" betyr å slutte eller roe seg ned — ikke å gi deg selv noe. Lær forskjellen mellom gi seg, gi opp, og hvordan tonen forandrer betydningen.'
 slug: gi-deg
 cefr: B1
 publishedAt: 2026-07-10
@@ -14,7 +14,7 @@ decks:
     label: A2 Verbs
 ---
 
-> **TL;DR:** **Gi deg** means "stop it / cut it out / give it a rest" — not "give yourself something." It is a very common expression and its tone depends entirely on the situation.
+> **Kort sagt:** **Gi deg** betyr «stopp det / slapp av / hold opp» — ikke «gi deg selv noe». Det er et svært vanlig uttrykk, og tonen avhenger helt av situasjonen.
 
 ## Kort forklaring
 
@@ -22,27 +22,21 @@ decks:
 
 Det er ikke det samme som **gi opp**, og det oversettes ikke ord for ord.
 
-_In English:_ **Gi deg** is equivalent to "stop it," "cut it out," or "give it a rest" — depending on tone and context.
-
 ---
 
 ## Eksempler
 
 **1. Slutt å erte søsteren din. Nå må du gi deg!**
-_Stop teasing your sister. Cut it out!_
-→ Said to someone being annoying or crossing a line.
+→ Sagt til noen som er irriterende eller som går over en grense.
 
 **2. — Jeg har løpt 100 kilometer i dag. — Nå må du gi deg!**
-_— I ran 100 kilometres today. — Oh, come on! / Give me a break!_
-→ Here it means "you're exaggerating" — a mild, humorous push back.
+→ Her betyr det «du overdriver» — en mild, humoristisk tilbakemelding.
 
 **3. Han klager hele tiden. Nå må han gi seg.**
-_He's been complaining the whole time. He needs to stop._
-→ Used about a third person who has gone on too long.
+→ Brukes om en tredjeperson som har holdt på for lenge.
 
 **4. Han ga seg ikke.**
-_He didn't stop. / He didn't give in._
-→ Positive or negative depending on context — persistence or stubbornness.
+→ Positivt eller negativt avhengig av kontekst — utholdenhet eller sta oppførsel.
 
 ---
 
@@ -50,29 +44,29 @@ _He didn't stop. / He didn't give in._
 
 Disse to er nært beslektede, men ikke det samme:
 
-**Gi opp** = give up — å slutte fordi noe er for vanskelig.
+**Gi opp** = «give up» — å slutte fordi noe er for vanskelig.
 
 **Gi seg** = stop / give in — å slutte fordi man er ferdig, sliten, eller etter press.
 
 **Jeg gir opp.**
-_I give up._ → Too hard to continue.
+_I give up._ → For vanskelig å fortsette.
 
 **Nå må du gi deg.**
-_You need to stop now._ → Stop what you're doing — annoying someone, exaggerating, going on too long.
+_You need to stop now._ → Slutt med det du gjør — plager noen, overdriver, eller har holdt på for lenge.
 
 **Han ga seg ikke.**
-_He didn't give in._ → He kept going despite pressure — could be admirable or frustrating.
+_He didn't give in._ → Han fortsatte til tross for press — kan være beundringsverdig eller frustrerende.
 
 ---
 
 ## Sammenligningstabell
 
-| Uttrykk       | Betydning            | Typisk tone     |
-| ------------- | -------------------- | --------------- |
-| **gi seg**    | stop / give in       | neutral to firm |
-| **gi opp**    | give up (too hard)   | resigned        |
-| **holde opp** | stop doing something | direct / firm   |
-| **slutte**    | stop / quit          | neutral         |
+| Uttrykk       | Betydning              | Typisk tone         |
+| ------------- | ---------------------- | ------------------- |
+| **gi seg**    | stoppe / gi etter      | nøytral til bestemt |
+| **gi opp**    | gi opp (for vanskelig) | resignert           |
+| **holde opp** | slutte å gjøre noe     | direkte / bestemt   |
+| **slutte**    | stoppe / slutte        | nøytral             |
 
 ---
 
@@ -80,9 +74,9 @@ _He didn't give in._ → He kept going despite pressure — could be admirable o
 
 Betydningen av **gi deg** varierer med tonen:
 
-- **Strengt / frustrert:** _Nå må du gi deg!_ → Stop it — I mean it.
-- **Humoristisk / vantro:** _Gi deg da!_ → Oh, come on — I don't believe you.
-- **Overrasket / imponert:** _Gi deg nå!_ → No way! (mild amazement)
+- **Strengt / frustrert:** _Nå må du gi deg!_ → Stopp det — jeg mener det.
+- **Humoristisk / vantro:** _Gi deg da!_ → Å, kom igjen — jeg tror deg ikke.
+- **Overrasket / imponert:** _Gi deg nå!_ → Ikke sant! (mild forbauselse)
 
 Legg merke til at kontekst og tonefall avgjør hvilken av disse det er.
 
@@ -93,21 +87,21 @@ Legg merke til at kontekst og tonefall avgjør hvilken av disse det er.
 ❌ Han gav seg opp.
 ⭕ Han ga seg. / Han ga opp.
 
-_These are two separate expressions — **gi seg** and **gi opp** are not combined._
+_Dette er to separate uttrykk — **gi seg** og **gi opp** kombineres ikke._
 
 ❌ Nå må du gi deg selv.
 ⭕ Nå må du gi deg.
 
-_The reflexive pronoun **deg** is already built into the expression — **selv** is not added._
+_Det refleksive pronomenet **deg** er allerede en del av uttrykket — **selv** legges ikke til._
 
 ---
 
 ## Husk dette
 
-- **gi deg** → stop it / cut it out / give it a rest
-- **gi opp** → give up (too difficult)
-- **gi seg ikke** → not give in — persistence or stubbornness
-- Tone and context decide whether it sounds firm, funny, or amazed
+- **gi deg** → stopp det / hold opp / slapp av
+- **gi opp** → gi opp (for vanskelig)
+- **gi seg ikke** → ikke gi etter — utholdenhet eller sta oppførsel
+- Tone og kontekst avgjør om det høres bestemt, morsomt eller forbløffet ut
 
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Hvordan kan det ha seg? — How can that be?'
-description: '"Hvordan kan det ha seg?" is a natural Norwegian expression for surprise or curiosity — meaning "How is that possible?" or "How can that be?"'
+title: 'Hvordan kan det ha seg? — Hvordan er det mulig?'
+description: '"Hvordan kan det ha seg?" er et naturlig norsk uttrykk som brukes når man er overrasket eller nysgjerrig — omtrent som å si "Hvordan er det mulig?" eller "Hvordan kan det være?"'
 slug: hvordan-kan-det-ha-seg
 cefr: B1
 publishedAt: 2026-09-11
@@ -14,15 +14,13 @@ decks:
     label: B1 Phrases
 ---
 
-> **TL;DR:** **Hvordan kan det ha seg?** means "How is that possible?" or "How can that be?" — a natural expression of surprise or curiosity. The phrase **ha seg** is idiomatic and cannot be translated literally.
+> **Kort sagt:** **Hvordan kan det ha seg?** betyr "How is that possible?" eller "How can that be?" — et naturlig uttrykk for overraskelse eller nysgjerrighet. Uttrykket **ha seg** er idiomatisk og kan ikke oversettes bokstavelig.
 
 ## Kort forklaring
 
 **«Hvordan kan det ha seg?»** brukes når noe er uventet og du ønsker en forklaring. Det er en naturlig og veldig norsk måte å uttrykke forundring på.
 
 Bokstavelig oversettelse fungerer ikke: **ha seg** er et fast uttrykk uten direkte engelsk ekvivalent. Tenk på det som «how can it be the case?»
-
-_In English:_ The closest equivalents are "How is that possible?", "How can that be?", or "How did that happen?" — depending on context.
 
 ---
 
@@ -44,22 +42,22 @@ Hele uttrykket betyr omtrent: **«Hvordan kan dette være tilfellet?»**
 **1. Han besto ikke eksamen.**
 — **Hvordan kan det ha seg?**
 _How is that possible? / How can that be?_
-→ Surprise at an unexpected outcome.
+→ Overraskelse over et uventet utfall.
 
 **2. Det er mye billigere her.**
 — **Hvordan kan det ha seg?**
 _How can that be?_
-→ Curiosity about an unexpected difference.
+→ Nysgjerrighet over en uventet forskjell.
 
 **3. Hun var ikke på jobb i dag.**
 — **Hvordan kan det ha seg?**
 _How is that? / What happened?_
-→ Mild confusion and a request for explanation.
+→ Mild forvirring og et ønske om forklaring.
 
 **4. Han snakker flytende norsk etter bare tre måneder.**
 — **Hvordan kan det ha seg?**
 _How is that even possible?_
-→ Genuine astonishment.
+→ Ekte forbløffelse.
 
 ---
 
@@ -115,7 +113,7 @@ _**Ha seg** er ikke et perfektum — det er et infinitivsuttrykk. Ikke bland det
 
 ## Husk dette
 
-- **Hvordan kan det ha seg?** = How is that possible? / How can that be?
+- **Hvordan kan det ha seg?** = hvordan er det mulig? / hvordan kan det være?
 - **Ha seg** er idiomatisk — ikke oversett det ord for ord
 - Uttrykket viser nysgjerrighet eller forundring, aldri aggresjon
 - Vanlig i hverdagslig og lett formell norsk

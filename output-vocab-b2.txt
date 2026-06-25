@@ -1,0 +1,2137 @@
+
+=== normalise-norsk-field.mjs ===
+Mode: DRY RUN  |  Files: vocab-b2.json
+Noun batch size: 40
+
+
+────────────────────────────────────────────────────────────
+📄  vocab-b2.json  (1448 entries)
+   Already OK: 385  |  Verbs/adj to fix: 192  |  Nouns needing gender lookup: 127
+   [DRY RUN] Would call API for 127 nouns in batches of 40
+
+   Changes planned (1060):
+   v-b2-abstract-nouns-001
+     anledning/en  →  anledning (en)
+   v-b2-abstract-nouns-002
+     bagatell/en  →  bagatell (en)
+   v-b2-abstract-nouns-003
+     bidrag/et  →  bidrag (et)
+   v-b2-abstract-nouns-004
+     bredde/n  →  bredde (en)
+   v-b2-abstract-nouns-005
+     byrde/n  →  byrde (en)
+   v-b2-abstract-nouns-006
+     en anerkjennelse  →  anerkjennelse (en)
+   v-b2-abstract-nouns-007
+     en balanse  →  balanse (en)
+   v-b2-abstract-nouns-008
+     en begrensning  →  begrensning (en)
+   v-b2-abstract-nouns-009
+     en erkjennelse  →  erkjennelse (en)
+   v-b2-abstract-nouns-011
+     en forpliktelse  →  forpliktelse (en)
+   v-b2-abstract-nouns-012
+     en forutsetning  →  forutsetning (en)
+   v-b2-abstract-nouns-013
+     en innflytelse  →  innflytelse (en)
+   v-b2-abstract-nouns-014
+     en inngangsterskel  →  inngangsterskel (en)
+   v-b2-abstract-nouns-015
+     en innvirkning  →  innvirkning (en)
+   v-b2-abstract-nouns-016
+     en integritet  →  integritet (en)
+   v-b2-abstract-nouns-017
+     en kapasitet  →  kapasitet (en)
+   v-b2-abstract-nouns-018
+     en kompleksitet  →  kompleksitet (en)
+   v-b2-abstract-nouns-020
+     en kontinuitet  →  kontinuitet (en)
+   v-b2-abstract-nouns-021
+     en kreativitet  →  kreativitet (en)
+   v-b2-abstract-nouns-022
+     en lojalitet  →  lojalitet (en)
+   v-b2-abstract-nouns-023
+     en makt  →  makt (en)
+   v-b2-abstract-nouns-024
+     en mestring  →  mestring (en)
+   v-b2-abstract-nouns-025
+     en nysgjerrighet  →  nysgjerrighet (en)
+   v-b2-abstract-nouns-026
+     en nødvendighet  →  nødvendighet (en)
+   v-b2-abstract-nouns-027
+     en overgang  →  overgang (en)
+   v-b2-abstract-nouns-028
+     en prosess  →  prosess (en)
+   v-b2-abstract-nouns-029
+     en rettferd  →  rettferd (en)
+   v-b2-abstract-nouns-030
+     en samhørighet  →  samhørighet (en)
+   v-b2-abstract-nouns-031
+     en selvrealisering  →  selvrealisering (en)
+   v-b2-abstract-nouns-032
+     en sårbarhet  →  sårbarhet (en)
+   v-b2-abstract-nouns-033
+     en tillit  →  tillit (en)
+   v-b2-abstract-nouns-034
+     en usikkerhet  →  usikkerhet (en)
+   v-b2-abstract-nouns-035
+     en verdighet  →  verdighet (en)
+   v-b2-abstract-nouns-036
+     en verdisetting  →  verdisetting (en)
+   v-b2-abstract-nouns-037
+     en virkning  →  virkning (en)
+   v-b2-abstract-nouns-038
+     en årsak  →  årsak (en)
+   v-b2-abstract-nouns-039
+     forutse, forutså, forutsett  →  å forutse
+   v-b2-abstract-nouns-040
+     fåtall/et  →  fåtall (et)
+   v-b2-abstract-nouns-041
+     gjenganger/en  →  gjenganger (en)
+   v-b2-abstract-nouns-042
+     grunnstein/en  →  grunnstein (en)
+   v-b2-abstract-nouns-043
+     hensikt/en  →  hensikt (en)
+   v-b2-abstract-nouns-044
+     kapasitet/en  →  kapasitet (en)
+   v-b2-abstract-nouns-046
+     lykkes  →  å lykkes
+   v-b2-abstract-nouns-048
+     nødløsning/en  →  nødløsning (en)
+   v-b2-abstract-nouns-049
+     oppfatning/en  →  oppfatning (en)
+   v-b2-abstract-nouns-050
+     oppvekker/en  →  oppvekker (en)
+   v-b2-abstract-nouns-051
+     prestasjon/en  →  prestasjon (en)
+   v-b2-abstract-nouns-052
+     påfunn/et  →  påfunn (et)
+   v-b2-abstract-nouns-053
+     påfyll/et  →  påfyll (et)
+   v-b2-abstract-nouns-054
+     risikere  →  å risikere
+   v-b2-abstract-nouns-055
+     rulle  →  å rulle
+   v-b2-abstract-nouns-056
+     sjenerøsitet/en  →  sjenerøsitet (en)
+   v-b2-abstract-nouns-057
+     småtteri/et  →  småtteri (et)
+   v-b2-abstract-nouns-058
+     spå  →  å spå
+   v-b2-abstract-nouns-059
+     styrke/n  →  styrke (en)
+   v-b2-abstract-nouns-060
+     tankevekker/en  →  tankevekker (en)
+   v-b2-abstract-nouns-062
+     trøbbel  →  trøbbel (en/et?)
+   v-b2-abstract-nouns-063
+     tvil/en  →  tvil (en)
+   v-b2-abstract-nouns-064
+     tvile  →  å tvile
+   v-b2-abstract-nouns-065
+     utgangspunkt/et  →  utgangspunkt (et)
+   v-b2-abstract-nouns-068
+     visjon/en  →  visjon (en)
+   v-b2-academic-language-001
+     aspekt/et  →  aspekt (et)
+   v-b2-academic-language-002
+     begrep/et  →  begrep (et)
+   v-b2-academic-language-004
+     en akademisk diskurs  →  akademisk diskurs
+   v-b2-academic-language-005
+     en avslutning  →  avslutning (en)
+   v-b2-academic-language-006
+     en empiri  →  empiri (en)
+   v-b2-academic-language-007
+     en generaliserbarhet  →  generaliserbarhet (en)
+   v-b2-academic-language-008
+     en hypotesetest  →  hypotesetest (en)
+   v-b2-academic-language-009
+     en innledning  →  innledning (en)
+   v-b2-academic-language-010
+     en kausalitet  →  kausalitet (en)
+   v-b2-academic-language-011
+     en korrelasjon  →  korrelasjon (en)
+   v-b2-academic-language-012
+     en kvalitativ metode  →  kvalitativ metode
+   v-b2-academic-language-013
+     en kvantitativ metode  →  kvantitativ metode
+   v-b2-academic-language-014
+     en litteraturgjennomgang  →  litteraturgjennomgang (en)
+   v-b2-academic-language-015
+     en metodologi  →  metodologi (en)
+   v-b2-academic-language-016
+     en objektivitet  →  objektivitet (en)
+   v-b2-academic-language-017
+     en peer-reviewed  →  fagfellevurdert
+   v-b2-academic-language-018
+     en primærforskning  →  primærforskning (en)
+   v-b2-academic-language-019
+     en problemstilling  →  problemstilling (en)
+   v-b2-academic-language-020
+     en reliabilitet  →  reliabilitet (en)
+   v-b2-academic-language-021
+     en sekundærforskning  →  sekundærforskning (en)
+   v-b2-academic-language-022
+     en signifikans  →  signifikans (en)
+   v-b2-academic-language-023
+     en subjektivitet  →  subjektivitet (en)
+   v-b2-academic-language-024
+     en teoretisk rammeverk  →  teoretisk rammeverk
+   v-b2-academic-language-025
+     en validitet  →  validitet (en)
+   v-b2-academic-language-026
+     et abstrakt  →  abstrakt (et)
+   v-b2-academic-language-027
+     et forskningsspørsmål  →  forskningsspørsmål (et)
+   v-b2-academic-language-029
+     et utvalg  →  utvalg (et)
+   v-b2-academic-language-030
+     faktor/en  →  faktor (en)
+   v-b2-academic-language-031
+     forbedringspotensial/et  →  forbedringspotensial (et)
+   v-b2-academic-language-032
+     formål/et  →  formål (et)
+   v-b2-academic-language-033
+     forutsetning/en  →  forutsetning (en)
+   v-b2-academic-language-034
+     illustrere  →  å illustrere
+   v-b2-academic-language-035
+     innebære, innebar, innebåret  →  å innebære
+   v-b2-academic-language-036
+     kartlegge, kartla, kartlagt  →  å kartlegge
+   v-b2-academic-language-037
+     kildehenvisning/en  →  kildehenvisning (en)
+   v-b2-academic-language-038
+     kildekritikk/en  →  kildekritikk (en)
+   v-b2-academic-language-042
+     kriterium, kriteriet  →  kriterium (en/et?)
+   v-b2-academic-language-044
+     omfang/et  →  omfang (et)
+   v-b2-academic-language-045
+     omfatte  →  å omfatte
+   v-b2-academic-language-052
+     respondent/en  →  respondent (en)
+   v-b2-academic-language-054
+     skala/en  →  skala (en)
+   v-b2-academic-language-055
+     søskenmoderason/en  →  søskenmoderason (en)
+   v-b2-academic-language-059
+     utarbeide  →  å utarbeide
+   v-b2-academic-language-062
+     å redegjøre for  →  redegjøre for
+   v-b2-advanced-adjectives-041
+     maken  →  maken (en/et?)
+   v-b2-advanced-verbs-001
+     angå – angikk – angått  →  å angå
+   v-b2-advanced-verbs-002
+     anse, anså, ansett  →  å anse
+   v-b2-advanced-verbs-003
+     avdekke  →  å avdekke
+   v-b2-advanced-verbs-004
+     briljere  →  å briljere
+   v-b2-advanced-verbs-005
+     buldre  →  å buldre
+   v-b2-advanced-verbs-006
+     deale  →  å deale
+   v-b2-advanced-verbs-007
+     dunke  →  å dunke
+   v-b2-advanced-verbs-008
+     ferdes  →  å ferdes
+   v-b2-advanced-verbs-009
+     filleriste  →  å filleriste
+   v-b2-advanced-verbs-010
+     forvente  →  å forvente
+   v-b2-advanced-verbs-011
+     gjenkjenne  →  å gjenkjenne
+   v-b2-advanced-verbs-012
+     gjennomsyre  →  å gjennomsyre
+   v-b2-advanced-verbs-013
+     gjenspeile  →  å gjenspeile
+   v-b2-advanced-verbs-014
+     havne  →  å havne
+   v-b2-advanced-verbs-015
+     herje  →  å herje
+   v-b2-advanced-verbs-016
+     hindre  →  å hindre
+   v-b2-advanced-verbs-017
+     ivareta – ivaretok – ivaretatt  →  å ivareta
+   v-b2-advanced-verbs-018
+     oppsøke  →  å oppsøke
+   v-b2-advanced-verbs-019
+     overgå, overgikk, overgått  →  å overgå
+   v-b2-advanced-verbs-020
+     prege  →  å prege
+   v-b2-advanced-verbs-021
+     påføre  →  å påføre
+   v-b2-advanced-verbs-022
+     sikte  →  å sikte
+   v-b2-advanced-verbs-023
+     skjelve, skalv, skjelvet  →  å skjelve
+   v-b2-advanced-verbs-024
+     slepe  →  å slepe
+   v-b2-advanced-verbs-025
+     supplere  →  å supplere
+   v-b2-advanced-verbs-026
+     svartmale  →  å svartmale
+   v-b2-advanced-verbs-027
+     traske  →  å traske
+   v-b2-advanced-verbs-028
+     utforme  →  å utforme
+   v-b2-advanced-verbs-029
+     utgjøre, utgjorde, utgjort  →  å utgjøre
+   v-b2-advanced-verbs-030
+     yte, ytte, ytt  →  å yte
+   v-b2-advanced-verbs-031
+     å abstraherer  →  å abstrahere
+   v-b2-argumentation-001
+     begrunne  →  å begrunne
+   v-b2-argumentation-003
+     en ad hominem  →  ad hominem
+   v-b2-argumentation-004
+     en analogi  →  analogi (en)
+   v-b2-argumentation-005
+     en appell  →  appell (en)
+   v-b2-argumentation-008
+     en ethos  →  ethos (en)
+   v-b2-argumentation-009
+     en fallasje  →  fallasje (en)
+   v-b2-argumentation-010
+     en gjendrivelse  →  gjendrivelse (en)
+   v-b2-argumentation-011
+     en innrømmelse  →  innrømmelse (en)
+   v-b2-argumentation-012
+     en logikk  →  logikk (en)
+   v-b2-argumentation-013
+     en logos  →  logos (en)
+   v-b2-argumentation-015
+     en overbevisning  →  overbevisning (en)
+   v-b2-argumentation-016
+     en pathos  →  pathos (en)
+   v-b2-argumentation-017
+     en slutning  →  slutning (en)
+   v-b2-argumentation-018
+     en sluttpåstand  →  sluttpåstand (en)
+   v-b2-argumentation-019
+     en stråmann  →  stråmann (en)
+   v-b2-argumentation-020
+     en tese  →  tese (en)
+   v-b2-argumentation-021
+     en utopi og dystopi-argument  →  slippery slope
+   v-b2-argumentation-022
+     en åpen drøfting  →  åpen drøfting
+   v-b2-argumentation-023
+     en årsakssammenheng  →  årsakssammenheng (en)
+   v-b2-argumentation-024
+     et falskt dilemma  →  falskt dilemma
+   v-b2-argumentation-026
+     et premiss  →  premiss (et)
+   v-b2-argumentation-028
+     forsvarsposisjon/en  →  forsvarsposisjon (en)
+   v-b2-argumentation-031
+     overbevise  →  å overbevise
+   v-b2-argumentation-032
+     ståsted/et  →  ståsted (et)
+   v-b2-argumentation-033
+     understreke  →  å understreke
+   v-b2-argumentation-042
+     å ta til orde for  →  ta til orde for
+   v-b2-arts-001
+     en arkitektur  →  arkitektur (en)
+   v-b2-arts-002
+     en avantgarde  →  avantgarde (en)
+   v-b2-arts-003
+     en estetikk  →  estetikk (en)
+   v-b2-arts-004
+     en filmserie  →  filmserie (en)
+   v-b2-arts-005
+     en installasjonskunst  →  installasjonskunst (en)
+   v-b2-arts-006
+     en komposisjon  →  komposisjon (en)
+   v-b2-arts-007
+     en koreografi  →  koreografi (en)
+   v-b2-arts-008
+     en kritiker  →  kritiker (en)
+   v-b2-arts-010
+     en patronasje  →  patronasje (en)
+   v-b2-arts-011
+     en provokasjon  →  provokasjon (en)
+   v-b2-arts-012
+     en symbolikk  →  symbolikk (en)
+   v-b2-arts-013
+     en symfoni  →  symfoni (en)
+   v-b2-arts-014
+     en utstillingsåpning  →  utstillingsåpning (en)
+   v-b2-arts-015
+     et kulturbudsjett  →  kulturbudsjett (et)
+   v-b2-arts-016
+     et mesterverk  →  mesterverk (et)
+   v-b2-arts-017
+     et motiv  →  motiv (et)
+   v-b2-arts-018
+     et perspektiv  →  perspektiv (et)
+   v-b2-arts-020
+     improvisasjon  →  improvisasjon (en/et?)
+   v-b2-arts-022
+     stykke  →  stykke (en/et?)
+   v-b2-business-001
+     bransje/n  →  bransje (en)
+   v-b2-business-002
+     en aksjonær  →  aksjonær (en)
+   v-b2-business-003
+     en fusjon  →  fusjon (en)
+   v-b2-business-004
+     en konkurrent  →  konkurrent (en)
+   v-b2-business-005
+     en leder  →  leder (en)
+   v-b2-business-006
+     en leverandør  →  leverandør (en)
+   v-b2-business-007
+     en omsetning  →  omsetning (en)
+   v-b2-business-008
+     en oppstart  →  oppstart (en)
+   v-b2-business-009
+     en portefølje  →  portefølje (en)
+   v-b2-business-010
+     en strategi  →  strategi (en)
+   v-b2-business-011
+     etablere  →  å etablere
+   v-b2-business-012
+     etablering/en  →  etablering (en)
+   v-b2-business-013
+     flopp/en  →  flopp (en)
+   v-b2-business-017
+     markedsføring  →  markedsføring (en/et?)
+   v-b2-business-018
+     markedsføring/en  →  markedsføring (en)
+   v-b2-business-019
+     næringsliv/et  →  næringsliv (et)
+   v-b2-business-022
+     virksomhet/en  →  virksomhet (en)
+   v-b2-communication-002
+     bekrefte  →  å bekrefte
+   v-b2-communication-003
+     bekreftelse/n  →  bekreftelse (en)
+   v-b2-communication-005
+     en aktiv kommunikasjon  →  aktiv kommunikasjon
+   v-b2-communication-006
+     en assertiv  →  assertiv
+   v-b2-communication-007
+     en avsender  →  avsender (en)
+   v-b2-communication-008
+     en eksplisitt  →  eksplisitt
+   v-b2-communication-009
+     en emosjonell intelligens  →  emosjonell intelligens
+   v-b2-communication-010
+     en forhandling  →  forhandling (en)
+   v-b2-communication-011
+     en ironisk undertone  →  ironisk undertone
+   v-b2-communication-012
+     en kanal  →  kanal (en)
+   v-b2-communication-013
+     en klar  →  klar
+   v-b2-communication-014
+     en kode  →  kode (en)
+   v-b2-communication-015
+     en kontekst  →  kontekst (en)
+   v-b2-communication-016
+     en lytterferdigheter  →  lytteferdigheter (en)
+   v-b2-communication-017
+     en mottaker  →  mottaker (en)
+   v-b2-communication-018
+     en muntlig kommunikasjon  →  muntlig kommunikasjon
+   v-b2-communication-019
+     en retorikk  →  retorikk (en)
+   v-b2-communication-020
+     en skriftlig kommunikasjon  →  skriftlig kommunikasjon
+   v-b2-communication-021
+     en støy  →  støy (en)
+   v-b2-communication-022
+     en taleteknikk  →  taleteknikk (en)
+   v-b2-communication-023
+     en toveis kommunikasjon  →  toveis kommunikasjon
+   v-b2-communication-024
+     en tvetydighet  →  tvetydighet (en)
+   v-b2-communication-025
+     en underforstått  →  underforstått
+   v-b2-communication-026
+     et budskap  →  budskap (et)
+   v-b2-communication-027
+     et kroppsspråk  →  kroppsspråk (et)
+   v-b2-communication-028
+     et misforståelsespotensial  →  misforståelsespotensial (et)
+   v-b2-communication-029
+     forhåne  →  å forhåne
+   v-b2-communication-031
+     forum/fora  →  forum (en/et?)
+   v-b2-communication-032
+     fronte  →  å fronte
+   v-b2-communication-033
+     innrømme  →  å innrømme
+   v-b2-communication-034
+     jungeltelegraf/en  →  jungeltelegraf (en)
+   v-b2-communication-036
+     oppfatte  →  å oppfatte
+   v-b2-communication-038
+     provosere  →  å provosere
+   v-b2-communication-039
+     raljere  →  å raljere
+   v-b2-communication-040
+     respons/en  →  respons (en)
+   v-b2-communication-041
+     skravling/en  →  skravling (en)
+   v-b2-communication-042
+     skryte, skrøt, skrytt  →  å skryte
+   v-b2-communication-045
+     utsagn/et  →  utsagn (et)
+   v-b2-communication-046
+     videreformidle  →  å videreformidle
+   v-b2-communication-047
+     ytring/en  →  ytring (en)
+   v-b2-communication-048
+     å kommunisere effektivt  →  kommunisere effektivt
+   v-b2-culture-001
+     berike  →  å berike
+   v-b2-culture-002
+     dugnadsånd/en  →  dugnadsånd (en)
+   v-b2-culture-003
+     en akkulturering  →  akkulturering (en)
+   v-b2-culture-004
+     en assimilering  →  assimilering (en)
+   v-b2-culture-005
+     en bykultur  →  bykultur (en)
+   v-b2-culture-006
+     en etnisitet  →  etnisitet (en)
+   v-b2-culture-007
+     en folkehøytid  →  folkehøytid (en)
+   v-b2-culture-008
+     en folkeminne  →  folkeminne (en)
+   v-b2-culture-009
+     en hybridkultur  →  hybridkultur (en)
+   v-b2-culture-010
+     en høykultur  →  høykultur (en)
+   v-b2-culture-011
+     en ikke-vestlig  →  ikke-vestlig
+   v-b2-culture-012
+     en kulturarv  →  kulturarv (en)
+   v-b2-culture-013
+     en kulturell hegemoni  →  kulturell hegemoni
+   v-b2-culture-014
+     en kulturell kapital  →  kulturell kapital
+   v-b2-culture-015
+     en kulturformidling  →  kulturformidling (en)
+   v-b2-culture-016
+     en kulturhistorie  →  kulturhistorie (en)
+   v-b2-culture-017
+     en kulturidentitet  →  kulturidentitet (en)
+   v-b2-culture-018
+     en kulturkollisjon  →  kulturkollisjon (en)
+   v-b2-culture-019
+     en kulturpolitikk  →  kulturpolitikk (en)
+   v-b2-culture-020
+     en kulturutveksling  →  kulturutveksling (en)
+   v-b2-culture-021
+     en lavkultur  →  lavkultur (en)
+   v-b2-culture-022
+     en matkultur  →  matkultur (en)
+   v-b2-culture-023
+     en nasjonaldag  →  nasjonaldag (en)
+   v-b2-culture-024
+     en norrøn  →  norrøn
+   v-b2-culture-025
+     en populærkultur  →  populærkultur (en)
+   v-b2-culture-026
+     en subkultur  →  subkultur (en)
+   v-b2-culture-027
+     en sækulær  →  sekulær
+   v-b2-culture-028
+     en tilhørighet  →  tilhørighet (en)
+   v-b2-culture-029
+     en tradisjonsbærer  →  tradisjonsbærer (en)
+   v-b2-culture-030
+     en verdensborgder  →  verdensborger (en)
+   v-b2-culture-031
+     en vestlig  →  vestlig
+   v-b2-culture-032
+     et kulturelt mangfold  →  kulturelt mangfold
+   v-b2-culture-033
+     et kultursjokk  →  kultursjokk (et)
+   v-b2-culture-034
+     et multikulturelt samfunn  →  multikulturelt samfunn
+   v-b2-culture-035
+     frokostblanding/en  →  frokostblanding (en)
+   v-b2-culture-036
+     hems/en  →  hems (en)
+   v-b2-culture-038
+     jantelov/en  →  jantelov (en)
+   v-b2-culture-040
+     kappe  →  kappe (en/et?)
+   v-b2-culture-041
+     kulturrelativisme  →  kulturrelativisme (en/et?)
+   v-b2-culture-042
+     markere  →  å markere
+   v-b2-culture-043
+     peis/en  →  peis (en)
+   v-b2-culture-044
+     samekultur  →  samekultur (en/et?)
+   v-b2-culture-046
+     tabu/et  →  tabu (et)
+   v-b2-culture-047
+     termos/en  →  termos (en)
+   v-b2-culture-048
+     vekker/en  →  vekker (en)
+   v-b2-discourse-markers-026
+     sist, men ikke minst  →  sist
+   v-b2-economics-001
+     andel/en  →  andel (en)
+   v-b2-economics-002
+     arbeidskraft/en  →  arbeidskraft (en)
+   v-b2-economics-004
+     disponere  →  å disponere
+   v-b2-economics-005
+     en arbeidsledig  →  arbeidsledig (en)
+   v-b2-economics-006
+     en børs  →  børs (en)
+   v-b2-economics-007
+     en eksport  →  eksport (en)
+   v-b2-economics-008
+     en import  →  import (en)
+   v-b2-economics-009
+     en investering  →  investering (en)
+   v-b2-economics-010
+     en resessjon  →  resessjon (en)
+   v-b2-economics-011
+     en sentralbank  →  sentralbank (en)
+   v-b2-economics-012
+     en økonomi  →  økonomi (en)
+   v-b2-economics-013
+     et bruttonasjonalprodukt  →  bruttonasjonalprodukt (et)
+   v-b2-economics-014
+     et oljefond  →  oljefond (et)
+   v-b2-economics-015
+     forbruker/en  →  forbruker (en)
+   v-b2-economics-016
+     globalisering  →  globalisering (en/et?)
+   v-b2-economics-017
+     handelsbalanse  →  handelsbalanse (en/et?)
+   v-b2-economics-018
+     kapitalisme/n  →  kapitalisme (en)
+   v-b2-economics-019
+     knapphet/en  →  knapphet (en)
+   v-b2-economics-020
+     konkurranseevne/n  →  konkurranseevne (en)
+   v-b2-economics-021
+     kontingent/en  →  kontingent (en)
+   v-b2-economics-023
+     kostnad/en  →  kostnad (en)
+   v-b2-economics-024
+     markedskreftene  →  markedskreftene (en/et?)
+   v-b2-economics-026
+     midler  →  midler (en/et?)
+   v-b2-economics-027
+     næring/en  →  næring (en)
+   v-b2-economics-028
+     overskudd/et  →  overskudd (et)
+   v-b2-economics-029
+     overstige, oversteg, oversteget  →  å overstige
+   v-b2-economics-030
+     petroleum  →  petroleum (en/et?)
+   v-b2-economics-031
+     privatisering  →  privatisering (en/et?)
+   v-b2-economics-032
+     produktivitet  →  produktivitet (en/et?)
+   v-b2-economics-033
+     rate/n  →  rate (en)
+   v-b2-economics-034
+     ressurs/en  →  ressurs (en)
+   v-b2-economics-035
+     sektor/en  →  sektor (en)
+   v-b2-economics-037
+     skattemelding/en  →  skattemelding (en)
+   v-b2-economics-038
+     sparsommelighet/en  →  sparsommelighet (en)
+   v-b2-economics-040
+     subsidiere  →  å subsidiere
+   v-b2-economics-041
+     toll/en  →  toll (en)
+   v-b2-economics-042
+     transaksjon/en  →  transaksjon (en)
+   v-b2-economics-043
+     utgiftspost/en  →  utgiftspost (en)
+   v-b2-economics-044
+     utkomme/t  →  utkomme (en/et?)
+   v-b2-economics-045
+     vare/n  →  vare (en)
+   v-b2-economics-046
+     velstand/en  →  velstand (en)
+   v-b2-education-002
+     bestå, besto, bestått  →  å bestå
+   v-b2-education-003
+     en avhandling  →  avhandling (en)
+   v-b2-education-004
+     en bachelorgrad  →  bachelorgrad (en)
+   v-b2-education-005
+     en didaktikk  →  didaktikk (en)
+   v-b2-education-006
+     en disputas  →  disputas (en)
+   v-b2-education-007
+     en eksamensangst  →  eksamensangst (en)
+   v-b2-education-009
+     en faglærer  →  faglærer (en)
+   v-b2-education-010
+     en folkehøyskole  →  folkehøyskole (en)
+   v-b2-education-011
+     en inklusion i skolen  →  inkludering i skolen
+   v-b2-education-012
+     en innleveringsfrist  →  innleveringsfrist (en)
+   v-b2-education-013
+     en læreplattform  →  læreplattform (en)
+   v-b2-education-014
+     en læringsarena  →  læringsarena (en)
+   v-b2-education-015
+     en læringskurve  →  læringskurve (en)
+   v-b2-education-016
+     en læringsmetode  →  læringsmetode (en)
+   v-b2-education-017
+     en læringsplan  →  læringsplan (en)
+   v-b2-education-018
+     en mastergrad  →  mastergrad (en)
+   v-b2-education-019
+     en mentorordning  →  mentorordning (en)
+   v-b2-education-020
+     en pedagogikk  →  pedagogikk (en)
+   v-b2-education-021
+     en pensumbok  →  pensumbok (en)
+   v-b2-education-022
+     en semesteroppgave  →  semesteroppgave (en)
+   v-b2-education-024
+     en studieprogresjon  →  studieprogresjon (en)
+   v-b2-education-025
+     en studieteknikk  →  studieteknikk (en)
+   v-b2-education-026
+     en ungdomsskole  →  ungdomsskole (en)
+   v-b2-education-027
+     en videregående skole  →  videregående skole
+   v-b2-education-028
+     en vurdering  →  vurdering (en)
+   v-b2-education-029
+     en yrkesskole  →  yrkesskole (en)
+   v-b2-education-030
+     et kompetansemål  →  kompetansemål (et)
+   v-b2-education-031
+     et stipend  →  stipend (et)
+   v-b2-education-032
+     ferdighet/en  →  ferdighet (en)
+   v-b2-education-033
+     fordypning/en  →  fordypning (en)
+   v-b2-education-034
+     fullføre  →  å fullføre
+   v-b2-education-035
+     jukse  →  å jukse
+   v-b2-education-036
+     klasseforstander/en  →  klasseforstander (en)
+   v-b2-education-037
+     konstruktivisme  →  konstruktivisme (en/et?)
+   v-b2-education-039
+     livsmestring/en  →  livsmestring (en)
+   v-b2-education-040
+     opptakskrav/et  →  opptakskrav (et)
+   v-b2-education-041
+     plagiat/et  →  plagiat (et)
+   v-b2-education-042
+     prestere  →  å prestere
+   v-b2-education-043
+     seminar/et  →  seminar (et)
+   v-b2-education-044
+     skolelys/et  →  skolelys (et)
+   v-b2-education-046
+     å gjøre opp for seg  →  gjøre opp for seg
+   v-b2-emotions-001
+     ambivalens  →  ambivalens (en/et?)
+   v-b2-emotions-003
+     bitterhet  →  bitterhet (en/et?)
+   v-b2-emotions-004
+     en lettelse  →  lettelse (en)
+   v-b2-emotions-006
+     entusiasme  →  entusiasme (en/et?)
+   v-b2-emotions-007
+     entusiasme/n  →  entusiasme (en)
+   v-b2-emotions-008
+     etterlatte  →  etterlatte (en/et?)
+   v-b2-emotions-009
+     forakt  →  forakt (en/et?)
+   v-b2-emotions-011
+     fortvilelse  →  fortvilelse (en/et?)
+   v-b2-emotions-012
+     frustrasjon  →  frustrasjon (en/et?)
+   v-b2-emotions-013
+     frykte  →  å frykte
+   v-b2-emotions-015
+     gråtkval  →  gråtkval (en/et?)
+   v-b2-emotions-016
+     harme  →  harme (en/et?)
+   v-b2-emotions-017
+     hikst/et  →  hikst (et)
+   v-b2-emotions-018
+     hjertesorg  →  hjertesorg (en/et?)
+   v-b2-emotions-019
+     hån/et  →  hån (et)
+   v-b2-emotions-020
+     håpløshet  →  håpløshet (en/et?)
+   v-b2-emotions-022
+     inspirere  →  å inspirere
+   v-b2-emotions-023
+     juble  →  å juble
+   v-b2-emotions-025
+     likegyldighet  →  likegyldighet (en/et?)
+   v-b2-emotions-026
+     medfølelse  →  medfølelse (en/et?)
+   v-b2-emotions-027
+     mistenksomhet  →  mistenksomhet (en/et?)
+   v-b2-emotions-029
+     nostalgi  →  nostalgi (en/et?)
+   v-b2-emotions-030
+     opprørthet  →  opprørthet (en/et?)
+   v-b2-emotions-032
+     pågangsmot  →  pågangsmot (en/et?)
+   v-b2-emotions-034
+     raushet/en  →  raushet (en)
+   v-b2-emotions-035
+     redsel/en  →  redsel (en)
+   v-b2-emotions-036
+     resignasjon  →  resignasjon (en/et?)
+   v-b2-emotions-037
+     ringeakt/en  →  ringeakt (en)
+   v-b2-emotions-038
+     rødme  →  å rødme
+   v-b2-emotions-039
+     sjalusi  →  sjalusi (en/et?)
+   v-b2-emotions-040
+     skam/men  →  skam (en/et?)
+   v-b2-emotions-041
+     skuffelse/n  →  skuffelse (en)
+   v-b2-emotions-042
+     skyld  →  skyld (en/et?)
+   v-b2-emotions-043
+     svik/et  →  svik (et)
+   v-b2-emotions-045
+     trøste  →  å trøste
+   v-b2-emotions-046
+     undring  →  undring (en/et?)
+   v-b2-emotions-047
+     verdsette, verdsatte, verdsatt  →  å verdsette
+   v-b2-emotions-048
+     ydmykhet/en  →  ydmykhet (en)
+   v-b2-environment-001
+     IPCC-rapport/en  →  IPCC-rapport (en)
+   v-b2-environment-002
+     avling/en  →  avling (en)
+   v-b2-environment-003
+     avskoging/en  →  avskoging (en)
+   v-b2-environment-004
+     bevare  →  å bevare
+   v-b2-environment-006
+     dyrevelferd/en  →  dyrevelferd (en)
+   v-b2-environment-007
+     en avfallshåndtering  →  avfallshåndtering (en)
+   v-b2-environment-008
+     en biopirater  →  biopirateri (en)
+   v-b2-environment-009
+     en drivhuseffekt  →  drivhuseffekt (en)
+   v-b2-environment-010
+     en el-bil  →  el-bil (en)
+   v-b2-environment-011
+     en flom  →  flom (en)
+   v-b2-environment-012
+     en habitat  →  habitat (en)
+   v-b2-environment-013
+     en havforsuring  →  havforsuring (en)
+   v-b2-environment-014
+     en isbre  →  isbre (en)
+   v-b2-environment-015
+     en karbonfotavtrykk  →  karbonsfotavtrykk (en)
+   v-b2-environment-016
+     en karbonnøytral  →  karbonnøytral
+   v-b2-environment-017
+     en klimaavtale  →  klimaavtale (en)
+   v-b2-environment-018
+     en klimaflykting  →  klimaflykting (en)
+   v-b2-environment-019
+     en miljøvernorganisasjon  →  miljøvernorganisasjon (en)
+   v-b2-environment-020
+     en regnskov  →  regnskov (en)
+   v-b2-environment-021
+     en sirkulær økonomi  →  sirkulær økonomi
+   v-b2-environment-022
+     en tørke  →  tørke (en)
+   v-b2-environment-023
+     en utrydningstruet art  →  utrydningstruet art
+   v-b2-environment-025
+     en vannkraft  →  vannkraft (en)
+   v-b2-environment-026
+     en vindturbin  →  vindturbin (en)
+   v-b2-environment-027
+     et karbonbudsjett  →  karbonbudsjett (et)
+   v-b2-environment-029
+     gjenbruk/et  →  gjenbruk (et)
+   v-b2-environment-030
+     havstigning  →  havstigning (en/et?)
+   v-b2-environment-031
+     jordsmonn/et  →  jordsmonn (et)
+   v-b2-environment-032
+     klimabrøl/et  →  klimabrøl (et)
+   v-b2-environment-033
+     klimafotavtrykk/et  →  klimafotavtrykk (et)
+   v-b2-environment-034
+     klimakvote/n  →  klimakvote (en)
+   v-b2-environment-035
+     klimaskeptiker/en  →  klimaskeptiker (en)
+   v-b2-environment-036
+     klode/n  →  klode (en)
+   v-b2-environment-037
+     matsvinn/et  →  matsvinn (et)
+   v-b2-environment-038
+     mikroplast  →  mikroplast (en/et?)
+   v-b2-environment-039
+     miljøbevissthet/en  →  miljøbevissthet (en)
+   v-b2-environment-040
+     naturreservat/et  →  naturreservat (et)
+   v-b2-environment-041
+     omgivelse/n  →  omgivelse (en)
+   v-b2-environment-042
+     overfiske  →  overfiske (en/et?)
+   v-b2-environment-043
+     ozonlaget  →  ozonlaget (en/et?)
+   v-b2-environment-044
+     pelsoppdrett/et  →  pelsoppdrett (et)
+   v-b2-environment-045
+     prestekrave/n  →  prestekrave (en)
+   v-b2-environment-047
+     utvinne, utvant, utvunnet  →  å utvinne
+   v-b2-environment-048
+     vassdrag/et  →  vassdrag (et)
+   v-b2-environment-049
+     vern/et  →  vern (et)
+   v-b2-environment-050
+     å bevare naturen  →  bevare naturen
+   v-b2-environment-051
+     å redusere utslipp  →  redusere utslipp
+   v-b2-environment-052
+     økosystem/et  →  økosystem (et)
+   v-b2-geography-001
+     Antarktis  →  Antarktis (en/et?)
+   v-b2-geography-002
+     Arktis  →  Arktis (en/et?)
+   v-b2-geography-003
+     en befolkningstetthet  →  befolkningstetthet (en)
+   v-b2-geography-004
+     en breddegrad  →  breddegrad (en)
+   v-b2-geography-005
+     en demografi  →  demografi (en)
+   v-b2-geography-006
+     en ekvator  →  ekvator (en)
+   v-b2-geography-007
+     en fjellkjede  →  fjellkjede (en)
+   v-b2-geography-008
+     en geopolitikk  →  geopolitikk (en)
+   v-b2-geography-009
+     en glasiologi  →  glasiologi (en)
+   v-b2-geography-010
+     en halvøy  →  halvøy (en)
+   v-b2-geography-011
+     en hinterland  →  hinterland (en)
+   v-b2-geography-012
+     en høyde over havet  →  høyde over havet
+   v-b2-geography-013
+     en kartografi  →  kartografi (en)
+   v-b2-geography-014
+     en kulturgeografi  →  kulturgeografi (en)
+   v-b2-geography-015
+     en lengdegrad  →  lengdegrad (en)
+   v-b2-geography-016
+     en migrasjonsstrøm  →  migrasjonsstrøm (en)
+   v-b2-geography-017
+     en myr  →  myr (en)
+   v-b2-geography-018
+     en nasjonalpark  →  nasjonalpark (en)
+   v-b2-geography-019
+     en naturgeografi  →  naturgeografi (en)
+   v-b2-geography-020
+     en nedbør  →  nedbør (en)
+   v-b2-geography-021
+     en skjærgård  →  skjærgård (en)
+   v-b2-geography-022
+     en slette  →  slette (en)
+   v-b2-geography-023
+     en storby  →  storby (en)
+   v-b2-geography-024
+     en tidssone  →  tidssone (en)
+   v-b2-geography-025
+     en topografi  →  topografi (en)
+   v-b2-geography-026
+     en urbanisering  →  urbanisering (en)
+   v-b2-geography-027
+     en urbanrute  →  urbaniseringsgrad (en)
+   v-b2-geography-028
+     en øygruppe  →  øygruppe (en)
+   v-b2-geography-031
+     et relieff  →  relieff (et)
+   v-b2-geography-033
+     fartøy/et  →  fartøy (et)
+   v-b2-geography-034
+     horisont/en  →  horisont (en)
+   v-b2-geography-035
+     knutepunkt/et  →  knutepunkt (et)
+   v-b2-geography-037
+     setervei/en  →  setervei (en)
+   v-b2-geography-038
+     territorium, territoriet  →  territorium (en/et?)
+   v-b2-geography-039
+     øygard/en  →  øygard (en)
+   v-b2-global-issues-001
+     bistand/en  →  bistand (en)
+   v-b2-global-issues-002
+     en FN-resolusjon  →  FN-resolusjon (en)
+   v-b2-global-issues-003
+     en atomvåpenkontroll  →  atomvåpenkontroll (en)
+   v-b2-global-issues-004
+     en cyberkrig  →  cyberkrig (en)
+   v-b2-global-issues-005
+     en dekolonisering  →  dekolonisering (en)
+   v-b2-global-issues-006
+     en digitalt autoritarisme  →  digitalt autoritarisme
+   v-b2-global-issues-007
+     en fattigdomsgrense  →  fattigdomsgrense (en)
+   v-b2-global-issues-008
+     en flyktningkrise  →  flyktningkrise (en)
+   v-b2-global-issues-009
+     en fredsbevarende styrke  →  fredsbevarende styrke
+   v-b2-global-issues-010
+     en geopolitisk rivalisering  →  geopolitisk rivalisering
+   v-b2-global-issues-011
+     en globale helseproblemer  →  globale helseproblemer
+   v-b2-global-issues-012
+     en handelskonflikt  →  handelskonflikt (en)
+   v-b2-global-issues-013
+     en humanitær krise  →  humanitær krise
+   v-b2-global-issues-014
+     en internasjonal organisasjon  →  internasjonal organisasjon
+   v-b2-global-issues-015
+     en internasjonal rettssak  →  internasjonal rettssak
+   v-b2-global-issues-016
+     en internasjonal solidaritet  →  internasjonal solidaritet
+   v-b2-global-issues-018
+     en klimatilpasning  →  klimatilpasning (en)
+   v-b2-global-issues-019
+     en konfliktforebygging  →  konfliktforebygging (en)
+   v-b2-global-issues-021
+     en menneskesmugling  →  menneskesmugling (en)
+   v-b2-global-issues-022
+     en migrasjonskrise  →  migrasjonskrise (en)
+   v-b2-global-issues-023
+     en multilateralisme  →  multilateralisme (en)
+   v-b2-global-issues-024
+     en nanorørsalg  →  bistand (en)
+   v-b2-global-issues-025
+     en nødhjelpsorganisasjon  →  nødhjelpsorganisasjon (en)
+   v-b2-global-issues-026
+     en pandemiberedskap  →  pandemiberedskap (en)
+   v-b2-global-issues-027
+     en post-kolonial  →  postkolonial
+   v-b2-global-issues-028
+     en statlig finansiert terrorisme  →  statsstøttet terrorisme
+   v-b2-global-issues-029
+     en sårbar stat  →  sårbar stat
+   v-b2-global-issues-030
+     en terrorisme  →  terrorisme (en)
+   v-b2-global-issues-031
+     en unilateralisme  →  unilateralisme (en)
+   v-b2-global-issues-032
+     et folkemord  →  folkemord (et)
+   v-b2-global-issues-033
+     et klimatoppmøte  →  klimatoppmøte (et)
+   v-b2-global-issues-037
+     globalisering/en  →  globalisering (en)
+   v-b2-global-issues-039
+     imperialisme  →  imperialisme (en/et?)
+   v-b2-global-issues-040
+     klimaflyktning/en  →  klimaflyktning (en)
+   v-b2-global-issues-041
+     kollapse  →  å kollapse
+   v-b2-global-issues-042
+     matusikkerhet  →  matusikkerhet (en/et?)
+   v-b2-global-issues-044
+     sivile  →  sivile (en/et?)
+   v-b2-global-issues-045
+     trussel/en  →  trussel (en)
+   v-b2-history-001
+     allianse/n  →  allianse (en)
+   v-b2-history-002
+     en arv  →  arv (en)
+   v-b2-history-003
+     en epoke  →  epoke (en)
+   v-b2-history-004
+     en fredsavtale  →  fredsavtale (en)
+   v-b2-history-005
+     en frigjøring  →  frigjøring (en)
+   v-b2-history-006
+     en grunnlegging  →  grunnlegging (en)
+   v-b2-history-007
+     en primærkilde  →  primærkilde (en)
+   v-b2-history-008
+     en revolusjon  →  revolusjon (en)
+   v-b2-history-009
+     en sivilisasjon  →  sivilisasjon (en)
+   v-b2-history-010
+     en tidslinje  →  tidslinje (en)
+   v-b2-history-011
+     epoke/n  →  epoke (en)
+   v-b2-history-012
+     erobre  →  å erobre
+   v-b2-history-014
+     et genosid  →  genosid (et)
+   v-b2-history-015
+     et imperium  →  imperium (et)
+   v-b2-history-016
+     et monument  →  monument (et)
+   v-b2-history-017
+     feide/n  →  feide (en)
+   v-b2-history-018
+     forfølge – forfulgte – forfulgt  →  å forfølge
+   v-b2-history-019
+     hersker/en  →  hersker (en)
+   v-b2-history-020
+     historiografi  →  historiografi (en/et?)
+   v-b2-history-021
+     kolonisering  →  kolonisering (en/et?)
+   v-b2-history-022
+     migrasjon  →  migrasjon (en/et?)
+   v-b2-history-023
+     nasjonalisme  →  nasjonalisme (en/et?)
+   v-b2-history-024
+     okkupasjon  →  okkupasjon (en/et?)
+   v-b2-history-025
+     opplysningstiden  →  opplysningstiden (en/et?)
+   v-b2-history-026
+     opprør/et  →  opprør (et)
+   v-b2-history-027
+     reformasjonen  →  reformasjonen (en/et?)
+   v-b2-history-028
+     rekonstruksjon/en  →  rekonstruksjon (en)
+   v-b2-history-029
+     slaveri/et  →  slaveri (et)
+   v-b2-history-030
+     verft/et  →  verft (et)
+   v-b2-language-001
+     denotasjon  →  denotasjon (en/et?)
+   v-b2-language-002
+     en aksent  →  aksent (en)
+   v-b2-language-003
+     en diskursanalyse  →  diskursanalyse (en)
+   v-b2-language-004
+     en dysferisme  →  dysferisme (en)
+   v-b2-language-005
+     en etimologi  →  etymologi (en)
+   v-b2-language-006
+     en etterstaving  →  etterstaving (en)
+   v-b2-language-007
+     en eufemisme  →  eufemisme (en)
+   v-b2-language-008
+     en flertydig  →  flertydig
+   v-b2-language-009
+     en fonologi  →  fonologi (en)
+   v-b2-language-010
+     en fraseologi  →  fraseologi (en)
+   v-b2-language-011
+     en grammatikk  →  grammatikk (en)
+   v-b2-language-012
+     en homon  →  homonym (en)
+   v-b2-language-013
+     en innlæring av språk  →  språkinnlæring (en)
+   v-b2-language-014
+     en kodeveksling  →  kodeveksling (en)
+   v-b2-language-015
+     en korpus  →  korpus (en)
+   v-b2-language-016
+     en lingvist  →  lingvist (en)
+   v-b2-language-017
+     en morfologi  →  morfologi (en)
+   v-b2-language-019
+     en nologisme  →  neologisme (en)
+   v-b2-language-020
+     en oversetter  →  oversetter (en)
+   v-b2-language-021
+     en slang  →  slang (en)
+   v-b2-language-022
+     en sosiolingvistikk  →  sosiolingvistikk (en)
+   v-b2-language-023
+     en talemåte  →  talemåte (en)
+   v-b2-language-024
+     en tolke  →  tolke (en)
+   v-b2-language-025
+     et andrespråk  →  andrespråk (et)
+   v-b2-language-026
+     et antonym  →  antonym (et)
+   v-b2-language-027
+     et avledningsord  →  avledningsord (et)
+   v-b2-language-028
+     et idiom  →  idiom (et)
+   v-b2-language-029
+     et lånord  →  lånord (et)
+   v-b2-language-030
+     et register  →  register (et)
+   v-b2-language-031
+     et synonym  →  synonym (et)
+   v-b2-language-032
+     et tabuspråk  →  tabuspråk (et)
+   v-b2-language-033
+     formulering/en  →  formulering (en)
+   v-b2-language-034
+     konnotasjon  →  konnotasjon (en/et?)
+   v-b2-language-037
+     ordforråd/et  →  ordforråd (et)
+   v-b2-language-038
+     pragmatikk  →  pragmatikk (en/et?)
+   v-b2-language-039
+     semantikk  →  semantikk (en/et?)
+   v-b2-language-040
+     stamme  →  å stamme
+   v-b2-language-041
+     syntaks  →  syntaks (en/et?)
+   v-b2-language-042
+     tolke  →  å tolke
+   v-b2-language-043
+     tospråklighet  →  tospråklighet (en/et?)
+   v-b2-language-044
+     vedkommende  →  vedkommende (en/et?)
+   v-b2-law-001
+     anke  →  å anke
+   v-b2-law-002
+     anklage/n  →  anklage (en)
+   v-b2-law-003
+     arve  →  å arve
+   v-b2-law-005
+     avgjøre, avgjorde, avgjort  →  å avgjøre
+   v-b2-law-006
+     avhør/et  →  avhør (et)
+   v-b2-law-007
+     berøvelse/n  →  berøvelse (en)
+   v-b2-law-008
+     direktiv/et  →  direktiv (et)
+   v-b2-law-009
+     dom/men  →  dom (en/et?)
+   v-b2-law-010
+     domfellelse/n  →  domfellelse (en)
+   v-b2-law-011
+     en aktor  →  aktor (en)
+   v-b2-law-012
+     en anklagelse  →  anklagelse (en)
+   v-b2-law-013
+     en dommer  →  dommer (en)
+   v-b2-law-014
+     en domstol  →  domstol (en)
+   v-b2-law-015
+     en forsvarer  →  forsvarer (en)
+   v-b2-law-016
+     en paragraf  →  paragraf (en)
+   v-b2-law-017
+     en rettspraksis  →  rettspraksis (en)
+   v-b2-law-018
+     en rettssak  →  rettssak (en)
+   v-b2-law-019
+     en rettsstat  →  rettsstat (en)
+   v-b2-law-020
+     en straff  →  straff (en)
+   v-b2-law-021
+     en straffesak  →  straffesak (en)
+   v-b2-law-022
+     en tiltalt  →  tiltalt (en)
+   v-b2-law-023
+     enerett/en  →  enerett (en)
+   v-b2-law-024
+     erstatning  →  erstatning (en/et?)
+   v-b2-law-025
+     erstatning/en  →  erstatning (en)
+   v-b2-law-026
+     et bevis  →  bevis (et)
+   v-b2-law-027
+     et lovbrudd  →  lovbrudd (et)
+   v-b2-law-028
+     et vitne  →  vitne (et)
+   v-b2-law-029
+     etterforskning/en  →  etterforskning (en)
+   v-b2-law-030
+     fastsette, fastsatte, fastsatt  →  å fastsette
+   v-b2-law-031
+     folkeretten  →  folkeretten (en/et?)
+   v-b2-law-032
+     forbryter/en  →  forbryter (en)
+   v-b2-law-033
+     forlik/et  →  forlik (et)
+   v-b2-law-035
+     forsvarer/en  →  forsvarer (en)
+   v-b2-law-036
+     frihetsberøvelse/n  →  frihetsberøvelse (en)
+   v-b2-law-038
+     henlegge, henla, henlagt  →  å henlegge
+   v-b2-law-039
+     henrette  →  å henrette
+   v-b2-law-042
+     innskrenke  →  å innskrenke
+   v-b2-law-043
+     innskrenking/en  →  innskrenking (en)
+   v-b2-law-045
+     justismord/et  →  justismord (et)
+   v-b2-law-046
+     kausjon/en  →  kausjon (en)
+   v-b2-law-048
+     krenke  →  å krenke
+   v-b2-law-049
+     lovbrudd/et  →  lovbrudd (et)
+   v-b2-law-050
+     løslate, løslot, løslatt  →  å løslate
+   v-b2-law-052
+     mekle  →  å mekle
+   v-b2-law-054
+     mistenke  →  å mistenke
+   v-b2-law-056
+     overholde  →  å overholde
+   v-b2-law-057
+     part/en  →  part (en)
+   v-b2-law-058
+     personvern/et  →  personvern (et)
+   v-b2-law-059
+     regulere  →  å regulere
+   v-b2-law-060
+     reprodusere  →  å reprodusere
+   v-b2-law-061
+     restriksjon/en  →  restriksjon (en)
+   v-b2-law-062
+     rettssikkerhet  →  rettssikkerhet (en/et?)
+   v-b2-law-063
+     rulleblad/et  →  rulleblad (et)
+   v-b2-law-064
+     råderett/en  →  råderett (en)
+   v-b2-law-065
+     samtykke/t  →  samtykke (en/et?)
+   v-b2-law-066
+     sjikane/n  →  sjikane (en)
+   v-b2-law-067
+     skjenketider  →  skjenketider (en/et?)
+   v-b2-law-068
+     smugle  →  å smugle
+   v-b2-law-069
+     sone  →  å sone
+   v-b2-law-070
+     svindel/en  →  svindel (en)
+   v-b2-law-071
+     tilstå, tilsto, tilstått  →  å tilstå
+   v-b2-law-072
+     tiltale  →  å tiltale
+   v-b2-law-075
+     uskyld  →  uskyld (en/et?)
+   v-b2-law-077
+     vilkår/et  →  vilkår (et)
+   v-b2-law-078
+     vitne/t  →  vitne (en/et?)
+   v-b2-literature-002
+     antologi/en  →  antologi (en)
+   v-b2-literature-003
+     en allegori  →  allegori (en)
+   v-b2-literature-004
+     en antagonist  →  antagonist (en)
+   v-b2-literature-005
+     en bikarakter  →  bikarakter (en)
+   v-b2-literature-006
+     en dystopi  →  dystopi (en)
+   v-b2-literature-007
+     en forteller  →  forteller (en)
+   v-b2-literature-008
+     en handling  →  handling (en)
+   v-b2-literature-009
+     en ironi  →  ironi (en)
+   v-b2-literature-010
+     en kanon  →  kanon (en)
+   v-b2-literature-011
+     en litteraturkritikk  →  litteraturkritikk (en)
+   v-b2-literature-012
+     en lyrikk  →  lyrikk (en)
+   v-b2-literature-013
+     en metafor  →  metafor (en)
+   v-b2-literature-014
+     en prosa  →  prosa (en)
+   v-b2-literature-015
+     en protagonist  →  protagonist (en)
+   v-b2-literature-016
+     en utopi  →  utopi (en)
+   v-b2-literature-019
+     et klimaks  →  klimaks (et)
+   v-b2-literature-020
+     et narrativ  →  narrativ (et)
+   v-b2-literature-023
+     et symbol  →  symbol (et)
+   v-b2-literature-024
+     et tema  →  tema (et)
+   v-b2-literature-025
+     et tilbakeblikk  →  tilbakeblikk (et)
+   v-b2-literature-027
+     grålys/et  →  grålys (et)
+   v-b2-literature-028
+     saksprosa/en  →  saksprosa (en)
+   v-b2-literature-029
+     skjønnlitteratur/en  →  skjønnlitteratur (en)
+   v-b2-media-001
+     anmeldelse/n  →  anmeldelse (en)
+   v-b2-media-003
+     en clickbait  →  clickbait (en)
+   v-b2-media-004
+     en digitalt innhold  →  digitalt innhold
+   v-b2-media-005
+     en hashtag  →  hashtag (en)
+   v-b2-media-007
+     en kringkasting  →  kringkasting (en)
+   v-b2-media-008
+     en mediedekning  →  mediedekning (en)
+   v-b2-media-009
+     en mediekritikk  →  mediekritikk (en)
+   v-b2-media-010
+     en målgruppe  →  målgruppe (en)
+   v-b2-media-011
+     en nettavis  →  nettavis (en)
+   v-b2-media-012
+     en nettroll  →  nettroll (en)
+   v-b2-media-013
+     en nyhetssyklus  →  nyhetssyklus (en)
+   v-b2-media-014
+     en opinion  →  opinion (en)
+   v-b2-media-015
+     en paparazzo  →  paparazzo (en)
+   v-b2-media-016
+     en pikseljakt  →  pikseljakt (en)
+   v-b2-media-017
+     en pressefrihetindeks  →  pressefrihetindeks (en)
+   v-b2-media-018
+     en publiseringsplattform  →  publiseringsplattform (en)
+   v-b2-media-019
+     en redaksjonskomité  →  redaksjonskomité (en)
+   v-b2-media-020
+     en reklamebransje  →  reklamebransje (en)
+   v-b2-media-021
+     en strømmetjeneste  →  strømmetjeneste (en)
+   v-b2-media-022
+     en viralitet  →  viralitet (en)
+   v-b2-media-023
+     et debattprogram  →  debattprogram (et)
+   v-b2-media-024
+     et ekkokammer  →  ekkokammer (et)
+   v-b2-media-025
+     et medieforbruk  →  medieforbruk (et)
+   v-b2-media-026
+     et medieoppslag  →  medieoppslag (et)
+   v-b2-media-027
+     et nyhetsbyra  →  nyhetsbyrå (et)
+   v-b2-media-028
+     influencer  →  influencer (en/et?)
+   v-b2-media-029
+     influenser/en  →  influenser (en)
+   v-b2-media-030
+     innenriksnyhet/en  →  innenriksnyhet (en)
+   v-b2-media-031
+     kjendis/en  →  kjendis (en)
+   v-b2-media-032
+     kommentarfelt/et  →  kommentarfelt (et)
+   v-b2-media-033
+     kringkaste  →  å kringkaste
+   v-b2-media-034
+     krisemaksimere  →  å krisemaksimere
+   v-b2-media-035
+     lokalstoff/et  →  lokalstoff (et)
+   v-b2-media-036
+     medielandskap/et  →  medielandskap (et)
+   v-b2-media-037
+     påvirkningskraft/en  →  påvirkningskraft (en)
+   v-b2-media-038
+     sensasjonsjournalistikk  →  sensasjonsjournalistikk (en/et?)
+   v-b2-media-039
+     spalte/n  →  spalte (en)
+   v-b2-media-040
+     spaltist/en  →  spaltist (en)
+   v-b2-media-041
+     trykkefrihet  →  trykkefrihet (en/et?)
+   v-b2-media-042
+     varsel/et  →  varsel (et)
+   v-b2-medicine-002
+     blodtrykk  →  blodtrykk (en/et?)
+   v-b2-medicine-003
+     en infeksjon  →  infeksjon (en)
+   v-b2-medicine-005
+     en oversikt  →  oversikt (en)
+   v-b2-medicine-006
+     en pasient  →  pasient (en)
+   v-b2-medicine-007
+     et legemiddel  →  legemiddel (et)
+   v-b2-medicine-008
+     helsevesen/et  →  helsevesen (et)
+   v-b2-medicine-009
+     immunsystemet  →  immunsystemet (en/et?)
+   v-b2-medicine-010
+     implantat/et  →  implantat (et)
+   v-b2-medicine-011
+     inngrep/et  →  inngrep (et)
+   v-b2-medicine-012
+     kirurgi/en  →  kirurgi (en)
+   v-b2-medicine-013
+     krumming/en  →  krumming (en)
+   v-b2-medicine-014
+     lidelse/n  →  lidelse (en)
+   v-b2-medicine-017
+     rehabilitering/en  →  rehabilitering (en)
+   v-b2-medicine-018
+     skåne  →  å skåne
+   v-b2-medicine-019
+     smerte/n  →  smerte (en)
+   v-b2-medicine-020
+     smittevern/et  →  smittevern (et)
+   v-b2-medicine-021
+     spredning/en  →  spredning (en)
+   v-b2-medicine-022
+     tilbakefall/et  →  tilbakefall (et)
+   v-b2-medicine-023
+     tilstand/en  →  tilstand (en)
+   v-b2-medicine-024
+     utløse  →  å utløse
+   v-b2-medicine-025
+     venteværelse/t  →  venteværelse (en/et?)
+   v-b2-philosophy-002
+     bevissthet  →  bevissthet (en/et?)
+   v-b2-philosophy-003
+     eksistens  →  eksistens (en/et?)
+   v-b2-philosophy-004
+     en konsekvens  →  konsekvens (en)
+   v-b2-philosophy-005
+     en kontradiksjon  →  kontradiksjon (en)
+   v-b2-philosophy-006
+     en norm  →  norm (en)
+   v-b2-philosophy-007
+     en premiss  →  premiss (en)
+   v-b2-philosophy-008
+     en påstand  →  påstand (en)
+   v-b2-philosophy-009
+     en sannhet  →  sannhet (en)
+   v-b2-philosophy-010
+     en verdi  →  verdi (en)
+   v-b2-philosophy-011
+     et dilemma  →  dilemma (et)
+   v-b2-philosophy-012
+     etikk  →  etikk (en/et?)
+   v-b2-philosophy-013
+     gode/t  →  gode (en/et?)
+   v-b2-philosophy-014
+     ideal/et  →  ideal (et)
+   v-b2-philosophy-015
+     intensjon/en  →  intensjon (en)
+   v-b2-philosophy-016
+     moral  →  moral (en/et?)
+   v-b2-philosophy-018
+     prinsipp/et  →  prinsipp (et)
+   v-b2-philosophy-020
+     realitet/en  →  realitet (en)
+   v-b2-philosophy-021
+     relativisme  →  relativisme (en/et?)
+   v-b2-philosophy-022
+     rettferdighet  →  rettferdighet (en/et?)
+   v-b2-philosophy-023
+     sjel/en  →  sjel (en)
+   v-b2-philosophy-025
+     tankegang/en  →  tankegang (en)
+   v-b2-philosophy-027
+     verdi/en  →  verdi (en)
+   v-b2-politics-001
+     Riksdagen  →  Riksdagen (en/et?)
+   v-b2-politics-002
+     aktivisme/n  →  aktivisme (en)
+   v-b2-politics-003
+     ambassadør/en  →  ambassadør (en)
+   v-b2-politics-004
+     autoritet/en  →  autoritet (en)
+   v-b2-politics-005
+     avskaffe  →  å avskaffe
+   v-b2-politics-006
+     borger/en  →  borger (en)
+   v-b2-politics-007
+     borgerplikt/en  →  borgerplikt (en)
+   v-b2-politics-008
+     demonstrant/en  →  demonstrant (en)
+   v-b2-politics-009
+     diktator/en  →  diktator (en)
+   v-b2-politics-011
+     en folkeavstemning  →  folkeavstemning (en)
+   v-b2-politics-012
+     en ideologi  →  ideologi (en)
+   v-b2-politics-013
+     en statsborger  →  statsborger (en)
+   v-b2-politics-014
+     et mandat  →  mandat (et)
+   v-b2-politics-015
+     et veto  →  veto (et)
+   v-b2-politics-016
+     fellesinteresse/n  →  fellesinteresse (en)
+   v-b2-politics-017
+     folkeavstemning/en  →  folkeavstemning (en)
+   v-b2-politics-018
+     folkestyre/t  →  folkestyre (en/et?)
+   v-b2-politics-019
+     førstegangsvelger/en  →  førstegangsvelger (en)
+   v-b2-politics-020
+     hovedparole/n  →  hovedparole (en)
+   v-b2-politics-021
+     innblanding/en  →  innblanding (en)
+   v-b2-politics-022
+     innflytelse/n  →  innflytelse (en)
+   v-b2-politics-023
+     innføre  →  å innføre
+   v-b2-politics-024
+     kandidatur/et  →  kandidatur (et)
+   v-b2-politics-025
+     kjernesak/en  →  kjernesak (en)
+   v-b2-politics-026
+     korrupsjon/en  →  korrupsjon (en)
+   v-b2-politics-028
+     kvote/n  →  kvote (en)
+   v-b2-politics-030
+     majoritet/en  →  majoritet (en)
+   v-b2-politics-031
+     makt/en  →  makt (en)
+   v-b2-politics-032
+     manifest/et  →  manifest (et)
+   v-b2-politics-034
+     meningsmåling/en  →  meningsmåling (en)
+   v-b2-politics-035
+     monark/en  →  monark (en)
+   v-b2-politics-036
+     monarki/et  →  monarki (et)
+   v-b2-politics-037
+     myndighetene  →  myndighetene (en/et?)
+   v-b2-politics-038
+     oppløse  →  å oppløse
+   v-b2-politics-039
+     oppnevne  →  å oppnevne
+   v-b2-politics-040
+     organ/et  →  organ (et)
+   v-b2-politics-041
+     pakt/en  →  pakt (en)
+   v-b2-politics-042
+     parlament/et  →  parlament (et)
+   v-b2-politics-044
+     regjere  →  å regjere
+   v-b2-politics-045
+     regjeringskvartal/et  →  regjeringskvartal (et)
+   v-b2-politics-046
+     representere  →  å representere
+   v-b2-politics-048
+     selvråderett  →  selvråderett (en/et?)
+   v-b2-politics-049
+     selvstyre/t  →  selvstyre (en/et?)
+   v-b2-politics-050
+     sentralisering/en  →  sentralisering (en)
+   v-b2-politics-051
+     slagord/et  →  slagord (et)
+   v-b2-politics-052
+     soloutspill/et  →  soloutspill (et)
+   v-b2-politics-053
+     splittelse/n  →  splittelse (en)
+   v-b2-politics-056
+     stormakt/en  →  stormakt (en)
+   v-b2-politics-057
+     suverenitet  →  suverenitet (en/et?)
+   v-b2-politics-058
+     tilhenger/en  →  tilhenger (en)
+   v-b2-politics-059
+     tiltak/et  →  tiltak (et)
+   v-b2-politics-060
+     trekke, trakk, trukket seg  →  å trekke
+   v-b2-politics-061
+     uavhengighet/en  →  uavhengighet (en)
+   v-b2-politics-063
+     uttalelse/n  →  uttalelse (en)
+   v-b2-politics-064
+     vedta – vedtok – vedtatt  →  å vedta
+   v-b2-politics-066
+     virkemiddel/et  →  virkemiddel (et)
+   v-b2-psychology-001
+     ambisjon/en  →  ambisjon (en)
+   v-b2-psychology-002
+     angst/en  →  angst (en)
+   v-b2-psychology-003
+     atferd  →  atferd (en/et?)
+   v-b2-psychology-005
+     avskrekke  →  å avskrekke
+   v-b2-psychology-008
+     disiplin/en  →  disiplin (en)
+   v-b2-psychology-010
+     en lidelse  →  lidelse (en)
+   v-b2-psychology-011
+     en mekanisme  →  mekanisme (en)
+   v-b2-psychology-012
+     en personlighet  →  personlighet (en)
+   v-b2-psychology-013
+     en projeksjon  →  projeksjon (en)
+   v-b2-psychology-014
+     et mønster  →  mønster (et)
+   v-b2-psychology-015
+     et traume  →  traume (et)
+   v-b2-psychology-016
+     ettertenksomhet/en  →  ettertenksomhet (en)
+   v-b2-psychology-017
+     fundere  →  å fundere
+   v-b2-psychology-018
+     holdningsendring/en  →  holdningsendring (en)
+   v-b2-psychology-019
+     hukommelse  →  hukommelse (en/et?)
+   v-b2-psychology-020
+     håndtere  →  å håndtere
+   v-b2-psychology-021
+     identitet  →  identitet (en/et?)
+   v-b2-psychology-022
+     innse, innså, innsett  →  å innse
+   v-b2-psychology-024
+     manipulere  →  å manipulere
+   v-b2-psychology-026
+     mistenksomhet/en  →  mistenksomhet (en)
+   v-b2-psychology-027
+     motivasjon  →  motivasjon (en/et?)
+   v-b2-psychology-029
+     resiliens  →  resiliens (en/et?)
+   v-b2-psychology-030
+     samvittighet/en  →  samvittighet (en)
+   v-b2-psychology-031
+     selvbilde  →  selvbilde (en/et?)
+   v-b2-psychology-032
+     selvrefleksjon  →  selvrefleksjon (en/et?)
+   v-b2-psychology-033
+     selvtillit/en  →  selvtillit (en)
+   v-b2-psychology-035
+     takle  →  å takle
+   v-b2-psychology-036
+     tilknytning  →  tilknytning (en/et?)
+   v-b2-psychology-037
+     traume/t  →  traume (en/et?)
+   v-b2-psychology-038
+     tunnelsyn/et  →  tunnelsyn (et)
+   v-b2-psychology-040
+     utholdenhet/en  →  utholdenhet (en)
+   v-b2-relationships-001
+     bestis/en  →  bestis (en)
+   v-b2-relationships-002
+     en avhengighet  →  avhengighet (en)
+   v-b2-relationships-003
+     en avstand  →  avstand (en)
+   v-b2-relationships-005
+     en ensomhet  →  ensomhet (en)
+   v-b2-relationships-006
+     en generasjonskonflikt  →  generasjonskonflikt (en)
+   v-b2-relationships-007
+     en gjenforening  →  gjenforening (en)
+   v-b2-relationships-008
+     en gjensidighet  →  gjensidighet (en)
+   v-b2-relationships-009
+     en grense i et forhold  →  grense (en)
+   v-b2-relationships-010
+     en grensesetting  →  grensesetting (en)
+   v-b2-relationships-011
+     en intimitet  →  intimitet (en)
+   v-b2-relationships-013
+     en kjærlighetsforklaring  →  kjærlighetsforklaring (en)
+   v-b2-relationships-015
+     en kommunikasjon  →  kommunikasjon (en)
+   v-b2-relationships-016
+     en konfliktløsning  →  konfliktløsning (en)
+   v-b2-relationships-017
+     en lojalitetskonflikt  →  lojalitetskonflikt (en)
+   v-b2-relationships-018
+     en maktbalanse  →  maktbalanse (en)
+   v-b2-relationships-019
+     en manipulasjon  →  manipulasjon (en)
+   v-b2-relationships-020
+     en misforståelse  →  misforståelse (en)
+   v-b2-relationships-021
+     en nærhet  →  nærhet (en)
+   v-b2-relationships-022
+     en omsorg  →  omsorg (en)
+   v-b2-relationships-023
+     en respekt  →  respekt (en)
+   v-b2-relationships-024
+     en sjalusi i et forhold  →  sjalusi i et forhold
+   v-b2-relationships-025
+     en tilgivelse  →  tilgivelse (en)
+   v-b2-relationships-026
+     en tilknytning  →  tilknytning (en)
+   v-b2-relationships-027
+     en trygghet  →  trygghet (en)
+   v-b2-relationships-028
+     et kompromiss  →  kompromiss (et)
+   v-b2-relationships-029
+     et partnerskap  →  partnerskap (et)
+   v-b2-relationships-030
+     et samlivsbrudd  →  samlivsbrudd (et)
+   v-b2-relationships-031
+     et svik  →  svik (et)
+   v-b2-relationships-032
+     et tillitsbrudd  →  tillitsbrudd (et)
+   v-b2-relationships-033
+     flørt/en  →  flørt (en)
+   v-b2-relationships-034
+     følgesvenn/en  →  følgesvenn (en)
+   v-b2-relationships-035
+     kjærtegn/et  →  kjærtegn (et)
+   v-b2-relationships-036
+     omgangskrets/en  →  omgangskrets (en)
+   v-b2-relationships-037
+     pårørende  →  pårørende (en/et?)
+   v-b2-relationships-038
+     småbarnsfase/n  →  småbarnsfase (en)
+   v-b2-relationships-039
+     støttespiller/en  →  støttespiller (en)
+   v-b2-relationships-040
+     tillit/en  →  tillit (en)
+   v-b2-relationships-043
+     å støtte hverandre  →  støtte hverandre
+   v-b2-religion-001
+     agnostisisme  →  agnostisisme (en/et?)
+   v-b2-religion-002
+     ateisme  →  ateisme (en/et?)
+   v-b2-religion-003
+     dommedag/en  →  dommedag (en)
+   v-b2-religion-004
+     en bønn  →  bønn (en)
+   v-b2-religion-005
+     en konfesjon  →  konfesjon (en)
+   v-b2-religion-006
+     en moske  →  moske (en)
+   v-b2-religion-007
+     en pilgrimsreise  →  pilgrimsreise (en)
+   v-b2-religion-008
+     en profet  →  profet (en)
+   v-b2-religion-009
+     en seremoni  →  seremoni (en)
+   v-b2-religion-010
+     en skrift  →  skrift (en)
+   v-b2-religion-011
+     en tro  →  tro (en)
+   v-b2-religion-012
+     et kloster  →  kloster (et)
+   v-b2-religion-013
+     et offer  →  offer (et)
+   v-b2-religion-014
+     et ritual  →  ritual (et)
+   v-b2-religion-015
+     et tempel  →  tempel (et)
+   v-b2-religion-017
+     nestekjærlighet/en  →  nestekjærlighet (en)
+   v-b2-religion-019
+     sekularisering  →  sekularisering (en/et?)
+   v-b2-religion-020
+     synkretisme  →  synkretisme (en/et?)
+   v-b2-religion-021
+     tilbe, tilba, tilbedt  →  å tilbe
+   v-b2-science-001
+     akse/n  →  akse (en)
+   v-b2-science-002
+     avle  →  å avle
+   v-b2-science-003
+     bioteknologi  →  bioteknologi (en/et?)
+   v-b2-science-004
+     eksperiment/et  →  eksperiment (et)
+   v-b2-science-006
+     en evolusjon  →  evolusjon (en)
+   v-b2-science-007
+     en oppdagelse  →  oppdagelse (en)
+   v-b2-science-008
+     en sonde  →  sonde (en)
+   v-b2-science-009
+     en variabel  →  variabel (en)
+   v-b2-science-010
+     et paradigmeskifte  →  paradigmeskifte (et)
+   v-b2-science-011
+     et peer review  →  peer review (et)
+   v-b2-science-012
+     forekomst/en  →  forekomst (en)
+   v-b2-science-013
+     fossil  →  fossil (en/et?)
+   v-b2-science-014
+     genetikk  →  genetikk (en/et?)
+   v-b2-science-015
+     kakerlakk/en  →  kakerlakk (en)
+   v-b2-science-016
+     kvantemekanikk  →  kvantemekanikk (en/et?)
+   v-b2-science-017
+     nanoteknologi  →  nanoteknologi (en/et?)
+   v-b2-science-018
+     naturlov/en  →  naturlov (en)
+   v-b2-science-019
+     overleve  →  å overleve
+   v-b2-science-021
+     spindelvev/et  →  spindelvev (et)
+   v-b2-science-022
+     stoff/et  →  stoff (et)
+   v-b2-science-023
+     utforske  →  å utforske
+   v-b2-social-issues-001
+     aktivisme  →  aktivisme (en/et?)
+   v-b2-social-issues-002
+     bidragsyter/en  →  bidragsyter (en)
+   v-b2-social-issues-003
+     borettslag/et  →  borettslag (et)
+   v-b2-social-issues-004
+     ekskludering/en  →  ekskludering (en)
+   v-b2-social-issues-005
+     en fordom  →  fordom (en)
+   v-b2-social-issues-006
+     en hatytring  →  hatytring (en)
+   v-b2-social-issues-007
+     en hjemløs  →  hjemløs (en)
+   v-b2-social-issues-008
+     en inkludering  →  inkludering (en)
+   v-b2-social-issues-010
+     en minoritet  →  minoritet (en)
+   v-b2-social-issues-011
+     en velferdsstat  →  velferdsstat (en)
+   v-b2-social-issues-012
+     et asyl  →  asyl (et)
+   v-b2-social-issues-013
+     et sikkerhetsnett  →  sikkerhetsnett (et)
+   v-b2-social-issues-014
+     etnisitet/en  →  etnisitet (en)
+   v-b2-social-issues-015
+     fattigdom  →  fattigdom (en/et?)
+   v-b2-social-issues-016
+     forbrukersamfunn/et  →  forbrukersamfunn (et)
+   v-b2-social-issues-018
+     fordom/men  →  fordom (en/et?)
+   v-b2-social-issues-019
+     forebygge  →  å forebygge
+   v-b2-social-issues-020
+     hets/en  →  hets (en)
+   v-b2-social-issues-021
+     hjemmesitter/en  →  hjemmesitter (en)
+   v-b2-social-issues-022
+     hverdagsmas/et  →  hverdagsmas (et)
+   v-b2-social-issues-023
+     joint/en  →  joint (en)
+   v-b2-social-issues-025
+     kokain  →  kokain (en/et?)
+   v-b2-social-issues-026
+     kvinnebevegelse/n  →  kvinnebevegelse (en)
+   v-b2-social-issues-027
+     latterliggjøre  →  å latterliggjøre
+   v-b2-social-issues-028
+     legning/en  →  legning (en)
+   v-b2-social-issues-029
+     likeverd  →  likeverd (en/et?)
+   v-b2-social-issues-031
+     medborgerskap/et  →  medborgerskap (et)
+   v-b2-social-issues-033
+     nedstenging/en  →  nedstenging (en)
+   v-b2-social-issues-034
+     nedvurdering/en  →  nedvurdering (en)
+   v-b2-social-issues-035
+     norm/en  →  norm (en)
+   v-b2-social-issues-036
+     nød/en  →  nød (en)
+   v-b2-social-issues-037
+     offer/et  →  offer (et)
+   v-b2-social-issues-038
+     omsorg/en  →  omsorg (en)
+   v-b2-social-issues-039
+     opptøyer  →  opptøyer (en/et?)
+   v-b2-social-issues-040
+     ordning/en  →  ordning (en)
+   v-b2-social-issues-043
+     privilegium, privilegiet  →  privilegium (en/et?)
+   v-b2-social-issues-044
+     rangstige/n  →  rangstige (en)
+   v-b2-social-issues-045
+     rase  →  rase (en/et?)
+   v-b2-social-issues-046
+     rivalisering  →  rivalisering (en/et?)
+   v-b2-social-issues-047
+     rusmisbruk  →  rusmisbruk (en/et?)
+   v-b2-social-issues-048
+     sikkerhetsnett/et  →  sikkerhetsnett (et)
+   v-b2-social-issues-049
+     skjerme  →  å skjerme
+   v-b2-social-issues-050
+     snobberi/et  →  snobberi (et)
+   v-b2-social-issues-051
+     solidaritet  →  solidaritet (en/et?)
+   v-b2-social-issues-053
+     stønad/en  →  stønad (en)
+   v-b2-social-issues-055
+     trend/en  →  trend (en)
+   v-b2-social-issues-056
+     ulikhet  →  ulikhet (en/et?)
+   v-b2-social-issues-057
+     undertrykking/en  →  undertrykking (en)
+   v-b2-social-issues-058
+     utseende/t  →  utseende (en/et?)
+   v-b2-social-issues-060
+     ytringsfriheten  →  ytringsfriheten (en/et?)
+   v-b2-technology-001
+     algoritme/n  →  algoritme (en)
+   v-b2-technology-002
+     en applikasjon  →  applikasjon (en)
+   v-b2-technology-003
+     en automasjon  →  automasjon (en)
+   v-b2-technology-004
+     en brukeropplevelse  →  brukeropplevelse (en)
+   v-b2-technology-005
+     en deepfake  →  deepfake (en)
+   v-b2-technology-006
+     en digital infrastruktur  →  digital infrastruktur
+   v-b2-technology-007
+     en digital transformasjon  →  digital transformasjon
+   v-b2-technology-008
+     en digital tvilling  →  digital tvilling
+   v-b2-technology-009
+     en digitale skillet  →  digitale skillet
+   v-b2-technology-010
+     en kryptering  →  kryptering (en)
+   v-b2-technology-011
+     en kvantecomputing  →  kvantecomputing (en)
+   v-b2-technology-012
+     en maskinvare  →  maskinvare (en)
+   v-b2-technology-013
+     en nettsikkerhet  →  nettsikkerhet (en)
+   v-b2-technology-014
+     en nettsky  →  nettsky (en)
+   v-b2-technology-015
+     en plattform  →  plattform (en)
+   v-b2-technology-017
+     en programvare  →  programvare (en)
+   v-b2-technology-018
+     en prototype  →  prototype (en)
+   v-b2-technology-019
+     en skalerbarhet  →  skalerbarhet (en)
+   v-b2-technology-020
+     en sky-tjeneste  →  skytjeneste (en)
+   v-b2-technology-021
+     en stordata  →  stordata (en)
+   v-b2-technology-022
+     en tingenes internett  →  tingenes internett
+   v-b2-technology-023
+     en virtuell virkelighet  →  virtuell virkelighet
+   v-b2-technology-024
+     et blokkjede  →  blokkjede (et)
+   v-b2-technology-025
+     et databrudd  →  databrudd (et)
+   v-b2-technology-026
+     et datasenter  →  datasenter (et)
+   v-b2-technology-027
+     et grensesnitt  →  grensesnitt (et)
+   v-b2-technology-028
+     et hackerangrep  →  hackerangrep (et)
+   v-b2-technology-029
+     et skydatalagrings  →  skylagring (et)
+   v-b2-technology-030
+     feilinformasjon  →  feilinformasjon (en/et?)
+   v-b2-technology-032
+     hybrid/en  →  hybrid (en)
+   v-b2-technology-033
+     konsoll/en  →  konsoll (en)
+   v-b2-technology-034
+     maskinlæring  →  maskinlæring (en/et?)
+   v-b2-technology-035
+     oppgradere  →  å oppgradere
+   v-b2-technology-036
+     overvåke  →  å overvåke
+   v-b2-technology-037
+     sikringsskap/et  →  sikringsskap (et)
+   v-b2-technology-038
+     skrolle  →  å skrolle
+   v-b2-technology-039
+     søkemotor/en  →  søkemotor (en)
+   v-b2-technology-040
+     turbin/en  →  turbin (en)
+   v-b2-technology-042
+     utvikler/en  →  utvikler (en)
+   v-b2-technology-043
+     veive  →  å veive
+   v-b2-technology-044
+     vippse  →  å vippse
+   v-b2-work-career-001
+     arbeidsmoral/en  →  arbeidsmoral (en)
+   v-b2-work-career-002
+     arbeidsvilkår/et  →  arbeidsvilkår (et)
+   v-b2-work-career-003
+     avspasere  →  å avspasere
+   v-b2-work-career-004
+     betjent/en  →  betjent (en)
+   v-b2-work-career-005
+     detaljstyring/en  →  detaljstyring (en)
+   v-b2-work-career-006
+     en arbeidskonflikt  →  arbeidskonflikt (en)
+   v-b2-work-career-007
+     en arbeidstid  →  arbeidstid (en)
+   v-b2-work-career-008
+     en etterlønn  →  etterlønn (en)
+   v-b2-work-career-009
+     en faglig utvikling  →  faglig utvikling
+   v-b2-work-career-010
+     en headhunter  →  headhunter (en)
+   v-b2-work-career-013
+     en karrierevei  →  karrierevei (en)
+   v-b2-work-career-014
+     en karriereveiledning  →  karriereveiledning (en)
+   v-b2-work-career-015
+     en kompensasjonspakke  →  kompensasjonspakke (en)
+   v-b2-work-career-017
+     en konsulent  →  konsulent (en)
+   v-b2-work-career-018
+     en likestillings i arbeidet  →  likestilling i arbeidslivet
+   v-b2-work-career-019
+     en lockout  →  lockout (en)
+   v-b2-work-career-020
+     en lønnsforhandling  →  lønnsforhandling (en)
+   v-b2-work-career-021
+     en nettverksbygging  →  nettverksbygging (en)
+   v-b2-work-career-022
+     en oppsigelse  →  oppsigelse (en)
+   v-b2-work-career-023
+     en prøvetid  →  prøvetid (en)
+   v-b2-work-career-024
+     en rekrutteringsprosess  →  rekrutteringsprosess (en)
+   v-b2-work-career-025
+     en stillingsbeskrivelse  →  stillingsbeskrivelse (en)
+   v-b2-work-career-026
+     en stillingstittel  →  stillingstittel (en)
+   v-b2-work-career-027
+     en streik  →  streik (en)
+   v-b2-work-career-028
+     en sykmelding  →  sykmelding (en)
+   v-b2-work-career-030
+     et ansettelsesforhold  →  ansettelsesforhold (et)
+   v-b2-work-career-032
+     et arbeidslivssenter  →  arbeidslivssenter (et)
+   v-b2-work-career-033
+     et arbeidsmiljø  →  arbeidsmiljø (et)
+   v-b2-work-career-034
+     et fagbrev  →  fagbrev (et)
+   v-b2-work-career-037
+     oppdrag/et  →  oppdrag (et)
+   v-b2-work-career-038
+     permittering/en  →  permittering (en)
+   v-b2-work-career-040
+     prioritere  →  å prioritere
+   v-b2-work-career-041
+     rekruttering/en  →  rekruttering (en)
+   v-b2-work-career-042
+     sertifisere  →  å sertifisere
+   v-b2-work-career-044
+     sveiser/en  →  sveiser (en)
+   v-b2-work-career-046
+     å frilanser  →  å frilanse
+
+   [DRY RUN] File not written.
+
+=== Done ===
+

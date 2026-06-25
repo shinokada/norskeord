@@ -1,6 +1,6 @@
 ---
-title: 'Setningsadverb — Word Order in Subordinate Clauses'
-description: 'Sentence adverbs like "ikke," "aldri," and "kanskje" sit after the verb in main clauses but before the verb in subordinate clauses. This is the leddsetningsregel.'
+title: 'Setningsadverb — ordstilling i leddsetninger'
+description: 'Setningsadverb som «ikke», «aldri» og «kanskje» står etter verbet i hovedsetninger, men før verbet i leddsetninger. Dette er leddsetningsregelen.'
 slug: setningsadverb
 cefr: B1
 publishedAt: 2026-08-19
@@ -14,7 +14,7 @@ decks:
     label: A2 Grammar
 ---
 
-> **TL;DR:** In main clauses, sentence adverbs come **after** the verb. In subordinate clauses, they come **before** the verb. This is the **leddsetningsregel** — and it applies to **ikke**, **aldri**, **kanskje**, **ofte**, **heldigvis**, and many more.
+> **Kort sagt:** I hovedsetninger kommer setningsadverb **etter** verbet. I leddsetninger kommer de **før** verbet. Dette er **leddsetningsregelen** — og den gjelder for **ikke**, **aldri**, **kanskje**, **ofte**, **heldigvis** og mange flere.
 
 ## Kort forklaring
 
@@ -30,8 +30,6 @@ Et **setningsadverb** er et adverb som modifiserer hele setningen — ikke bare 
 - **faktisk** (actually)
 
 Disse ordene oppfører seg forskjellig i hovedsetninger og leddsetninger.
-
-_In English:_ Norwegian keeps a strict rule about where these words sit depending on clause type. In English the position is more flexible; in Norwegian it is not.
 
 ---
 
@@ -83,7 +81,7 @@ _In English:_ Norwegian keeps a strict rule about where these words sit dependin
 > Jeg vet at han **aldri har** vært i Norge.
 > _I know that he has never been to Norway._
 
-→ Notice: **aldri** moves in front of **har** (the finite verb) in the subordinate clause.
+→ Legg merke til: **aldri** flyttes foran **har** (det finitte verbet) i leddsetningen.
 
 **Alltid:**
 
@@ -161,8 +159,8 @@ _In English:_ Norwegian keeps a strict rule about where these words sit dependin
 
 > I leddsetninger kommer setningsadverbet **før** det finitte verbet.
 
-Main clause: **Subject + finite verb + adverb**
-Subordinate clause: **Subject + adverb + finite verb**
+Hovedsetning: **Subjekt + finitt verb + adverb**
+Leddsetning: **Subjekt + adverb + finitt verb**
 
 Dette kalles **leddsetningsregelen** og gjelder konsekvent for alle setningsadverb.
 
@@ -173,12 +171,12 @@ Dette kalles **leddsetningsregelen** og gjelder konsekvent for alle setningsadve
 ❌ fordi han er ikke hjemme
 ⭕ fordi han **ikke er** hjemme
 
-_In a subordinate clause, **ikke** must come before the finite verb._
+_I en leddsetning må **ikke** stå foran det finitte verbet._
 
 ❌ Jeg vet at han har aldri vært der.
 ⭕ Jeg vet at han **aldri har** vært der.
 
-_**Aldri** moves in front of **har** in the subordinate clause._
+_**Aldri** flyttes foran **har** i leddsetningen._
 
 ---
 

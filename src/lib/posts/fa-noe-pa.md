@@ -1,6 +1,6 @@
 ---
-title: 'Få noe på — Managing to Put Something On'
-description: '"Få noe på" means to manage to put something on — often clothes or accessories that are difficult to get on. It is different from the neutral "ta på seg."'
+title: 'Få noe på — klare å få noe på seg'
+description: '"Få noe på" betyr å klare å få noe på seg — ofte klær eller tilbehør som er vanskelig å få på. Det er forskjellig fra det nøytrale "ta på seg".'
 slug: fa-noe-pa
 cefr: A2
 publishedAt: 2026-10-14
@@ -14,7 +14,7 @@ decks:
     label: A2 Everyday Verbs
 ---
 
-> **TL;DR:** **Få noe på** means to manage to put something on — usually clothing or an accessory. It implies some effort or difficulty. The negative **får det ikke på** ("can't get it on") is especially common and natural in everyday Norwegian.
+> **Kort sagt:** **Få noe på** betyr å klare å få noe på seg — vanligvis et klesplagg eller et tilbehør. Det ligger en viss anstrengelse i uttrykket. Den negative formen **får det ikke på** («can't get it on») er særlig vanlig og naturlig i dagligtale.
 
 ## Kort forklaring
 
@@ -24,8 +24,6 @@ Sammenlignet med **ta på seg**, som er nøytralt og hverdagslig, antyder **få 
 
 - **ta på seg jakken** → put the jacket on _(neutral, no difficulty implied)_
 - **få jakken på** → manage to get the jacket on _(effort or difficulty implied)_
-
-_In English:_ **Få noe på** is closest to "manage to get something on" or "get something on." The negative form — "I can't get it on" — is the most typical context you'll hear this expression in.
 
 ---
 
@@ -45,16 +43,13 @@ Objektet (klesplagget eller tingen) plasseres mellom **få** og **på**:
 ## Eksempler — positiv form
 
 **1. Jeg får jakken på.**
-_I manage to get the jacket on._
-→ It fits — perhaps with some effort.
+→ Den passer — kanskje med litt anstrengelse.
 
 **2. Jeg fikk endelig skoene på.**
-_I finally managed to get the shoes on._
-→ **Endelig** adds a sense of relief after some struggle.
+→ **Endelig** gir en følelse av lettelse etter litt strev.
 
 **3. Hun fikk ringen på etter litt strev.**
-_She managed to get the ring on after a bit of effort._
-→ The effort is made explicit here, but **få på** already implies it.
+→ Anstrengelsen er gjort eksplisitt her, men **få på** antyder den allerede.
 
 ---
 
@@ -63,20 +58,16 @@ _She managed to get the ring on after a bit of effort._
 Den negative formen er enda vanligere — og veldig naturlig i dagligtale:
 
 **1. Jeg får den ikke på.**
-_I can't get it on._
-→ The most common use — whatever "it" is won't go on.
+→ Den vanligste bruken — uansett hva «den» er, vil det ikke gå på.
 
 **2. Jeg får ikke jakken på.**
-_I can't get the jacket on._
-→ Too small, too stiff, or otherwise resisting.
+→ For liten, for stiv, eller motvillig av en annen grunn.
 
 **3. Jeg fikk ikke skoene på.**
-_I couldn't get the shoes on._
-→ Past tense — the attempt failed.
+→ Fortid — forsøket mislyktes.
 
 **4. Ringen sitter fast — jeg får den ikke på.**
-_The ring is stuck — I can't get it on._
-→ A typical, natural situation.
+→ En typisk og naturlig situasjon.
 
 ---
 
@@ -105,10 +96,10 @@ I praksis er **«Jeg får den ikke på»** den mest naturlige formen i dagligtal
 **Eksempel:**
 
 > Jeg **tok på meg** jakken og gikk.
-> _I put on the jacket and left._ → no difficulty, just a normal action.
+> _I put on the jacket and left._ → ingen vanskelighet, bare en vanlig handling.
 
 > Jakken var for liten — jeg **fikk den ikke på**.
-> _The jacket was too small — I couldn't get it on._ → struggle implied.
+> _The jacket was too small — I couldn't get it on._ → anstrengelse antydet.
 
 ---
 
@@ -144,8 +135,8 @@ _Pronomenet kommer rett etter **får**, og **på** til slutt._
 
 ## Husk dette
 
-- **få noe på** = manage to put something on (krever innsats)
-- **ta på seg** = put something on (nøytralt, ingen vanskelighet)
+- **få noe på** = å klare å få noe på seg (krever innsats)
+- **ta på seg** = å ta på seg noe (nøytralt, ingen vanskelighet)
 - **får den ikke på** = can't get it on _(vanligste bruk i dagligtale)_
 - Objektet (eller pronomenet) plasseres mellom **får** og **på**
 
