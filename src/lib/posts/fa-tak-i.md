@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A2 Verbs
 ---
+
 > **Kort sagt:** Verbet **få** skifter betydning avhengig av hvilken partikel som følger etter. Å lære de vanligste kombinasjonene gir deg tilgang til mye naturlig norsk.
 
 ## Kort forklaring
@@ -90,12 +91,12 @@ De fire vanligste kombinasjonene er:
 
 ## Sammenligningstabell
 
-| Uttrykk       | Betydning              | Typisk bruk                  |
-| ------------- | ---------------------- | ---------------------------- |
+| Uttrykk       | Betydning                | Typisk bruk                  |
+| ------------- | ------------------------ | ---------------------------- |
 | **få tak i**  | nå noen / skaffe seg noe | person · ting du leter etter |
-| **få til**    | mestre / lykkes med    | oppgave · ferdighet          |
-| **få på**     | få på seg (klær)       | jakke · sko · ring           |
-| **få i gang** | sette i gang / aktivere | møte · maskin · prosjekt     |
+| **få til**    | mestre / lykkes med      | oppgave · ferdighet          |
+| **få på**     | få på seg (klær)         | jakke · sko · ring           |
+| **få i gang** | sette i gang / aktivere  | møte · maskin · prosjekt     |
 
 ---
 

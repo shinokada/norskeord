@@ -13,6 +13,7 @@ decks:
     category: adjectives
     label: A1 Adjectives
 ---
+
 ## Kort forklaring
 
 Både **nydelig** og **herlig** er positive adjektiver, men de legger vekt på forskjellige ting.
@@ -40,12 +41,12 @@ Både **nydelig** og **herlig** er positive adjektiver, men de legger vekt på f
 
 ## Sammenligningstabell
 
-|          | nydelig                             | herlig                                 |
-| -------- | ----------------------------------- | -------------------------------------- |
-| Betydning  | vakker, yndig, nydelig         | vidunderlig, herlig, praktfull      |
-| Fokus    | utseende / sanseinntrykk     | følelse / opplevelse                   |
+|           | nydelig                           | herlig                                         |
+| --------- | --------------------------------- | ---------------------------------------------- |
+| Betydning | vakker, yndig, nydelig            | vidunderlig, herlig, praktfull                 |
+| Fokus     | utseende / sanseinntrykk          | følelse / opplevelse                           |
 | Brukes om | utseende, natur, vær, mat, stemme | opplevelser, stemninger, personer, situasjoner |
-| Register | hverdagslig                            | hverdagslig                               |
+| Register  | hverdagslig                       | hverdagslig                                    |
 
 ---
 

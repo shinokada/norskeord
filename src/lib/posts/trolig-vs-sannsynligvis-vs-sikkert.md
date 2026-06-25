@@ -13,6 +13,7 @@ decks:
     category: expressing-opinions
     label: B1 Expressing Opinions
 ---
+
 > **Kort sagt:** **Trolig**, **sannsynligvis** og **sikkert** betyr alle «probably» — men de har ulik tone. **Trolig** høres faktabasert og litt formelt ut. **Sannsynligvis** er den nøytrale standarden. **Sikkert** er selvsikkert og hverdagslig, og kan også bety «certainly» avhengig av kontekst.
 
 ## Kort forklaring

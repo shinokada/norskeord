@@ -6,6 +6,7 @@ cefr: A2
 publishedAt: 2026-06-24
 tags: [adjectives, comparison, vocabulary]
 ---
+
 > **Kort sagt:** **Dårlig** = dårlig kvalitet, ikke god, uvel. **Slem** = slem, ufin, grusom. Samme engelske ord, helt forskjellig norsk betydning.
 
 ## Kort forklaring
@@ -50,12 +51,12 @@ Forskjellen er viktig: **dårlig** handler om prestasjoner, **slem** handler om 
 
 ## Sammenligningstabell
 
-|          | dårlig                             | slem                                    |
-| -------- | ---------------------------------- | --------------------------------------- |
-| Betydning | dårlig, svak, ikke god, uvel      | slem, ufin, grusom                      |
-| Fokus    | kvalitet, evne, helse, forhold     | oppførsel, karakter, moralsk vurdering  |
-| Brukes om | mat, vær, helse, evner, ideer     | barn, voksne, oppførsel, eventyrfigurer |
-| Register | hverdagslig                        | hverdagslig                             |
+|           | dårlig                         | slem                                    |
+| --------- | ------------------------------ | --------------------------------------- |
+| Betydning | dårlig, svak, ikke god, uvel   | slem, ufin, grusom                      |
+| Fokus     | kvalitet, evne, helse, forhold | oppførsel, karakter, moralsk vurdering  |
+| Brukes om | mat, vær, helse, evner, ideer  | barn, voksne, oppførsel, eventyrfigurer |
+| Register  | hverdagslig                    | hverdagslig                             |
 
 ---
 

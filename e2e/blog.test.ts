@@ -1,9 +1,9 @@
 import { expect, test, type Page } from '@playwright/test';
 
 const description =
-  '"Sakte" is the natural choice in conversation. "Langsomt" is more common in writing and descriptions. Here is when to use each one — and how they differ grammatically.';
-const title = 'Sakte vs Langsomt — Both Mean Slowly, but Not Equally — Norskeord';
-const ogTitle = 'Sakte vs Langsomt — Both Mean Slowly, but Not Equally';
+  '"Sakte" er det naturlige valget i samtale, mens "langsomt" er vanligere i skrift og beskrivelser. Her får du vite når du skal bruke hvilket — og hvordan de skiller seg grammatisk.';
+const title = 'Sakte vs Langsomt — Begge betyr sakte, men ikke likt — Norskeord';
+const ogTitle = 'Sakte vs Langsomt — Begge betyr sakte, men ikke likt';
 // ── Blog index (/blog) ────────────────────────────────────────────────────────
 
 test.describe('Blog index', () => {

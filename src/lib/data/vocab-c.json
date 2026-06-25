@@ -1,7 +1,7 @@
 [
   {
     "id": "v-c-philosophy-001",
-    "norsk": "en ontologi",
+    "norsk": "ontologi (en)",
     "lemma": "ontologi",
     "english": "ontology (study of being/existence)",
     "example": "Ontologi stiller spørsmål om hva som eksisterer.",
@@ -13,7 +13,7 @@
   },
   {
     "id": "v-c-philosophy-002",
-    "norsk": "en epistemologi",
+    "norsk": "epistemologi (en)",
     "lemma": "epistemologi",
     "english": "epistemology (theory of knowledge)",
     "example": "Epistemologi undersøker grensene for menneskelig erkjennelse.",
@@ -25,7 +25,7 @@
   },
   {
     "id": "v-c-philosophy-003",
-    "norsk": "et aksiom",
+    "norsk": "aksiom (et)",
     "lemma": "aksiom",
     "english": "an axiom",
     "example": "Matematikk bygger på ubeviselige aksiomer.",
@@ -37,7 +37,7 @@
   },
   {
     "id": "v-c-philosophy-004",
-    "norsk": "dialektikk",
+    "norsk": "dialektikk (en)",
     "lemma": "dialektikk",
     "english": "dialectics",
     "example": "Hegels dialektikk beskriver how ideer utvikler seg gjennom motsetninger.",
@@ -49,7 +49,7 @@
   },
   {
     "id": "v-c-philosophy-005",
-    "norsk": "en fenomenologi",
+    "norsk": "fenomenologi (en)",
     "lemma": "fenomenologi",
     "english": "phenomenology",
     "example": "Husserl grunnla fenomenologien som filosofisk metode.",
@@ -61,7 +61,7 @@
   },
   {
     "id": "v-c-philosophy-006",
-    "norsk": "et postulat",
+    "norsk": "postulat (et)",
     "lemma": "postulat",
     "english": "a postulate",
     "example": "Filosofen lanserte et dristig postulat.",
@@ -73,7 +73,7 @@
   },
   {
     "id": "v-c-philosophy-007",
-    "norsk": "determinisme",
+    "norsk": "determinisme (en)",
     "lemma": "determinisme",
     "english": "determinism",
     "example": "Determinisme hevder at alle hendelser er forutbestemte.",
@@ -109,7 +109,7 @@
   },
   {
     "id": "v-c-philosophy-010",
-    "norsk": "utilitarisme",
+    "norsk": "utilitarisme (en)",
     "lemma": "utilitarisme",
     "english": "utilitarianism",
     "example": "Utilitarisme vurderer handlinger etter deres konsekvenser.",
@@ -121,7 +121,7 @@
   },
   {
     "id": "v-c-philosophy-011",
-    "norsk": "en dyd",
+    "norsk": "dyd (en)",
     "lemma": "dyd",
     "english": "a virtue",
     "example": "Aristoteles mente at dyden lå i middelveien.",
@@ -133,7 +133,7 @@
   },
   {
     "id": "v-c-philosophy-012",
-    "norsk": "nihilisme",
+    "norsk": "nihilisme (en)",
     "lemma": "nihilisme",
     "english": "nihilism",
     "example": "Nihilisme avviser objektive verdier og mening.",
@@ -145,7 +145,7 @@
   },
   {
     "id": "v-c-philosophy-013",
-    "norsk": "eksistensialisme",
+    "norsk": "eksistensialisme (en)",
     "lemma": "eksistensialisme",
     "english": "existentialism",
     "example": "Sartre mente at eksistensen kommer før essensen.",
@@ -157,7 +157,7 @@
   },
   {
     "id": "v-c-philosophy-014",
-    "norsk": "et paradoks",
+    "norsk": "paradoks (et)",
     "lemma": "paradoks",
     "english": "a paradox",
     "example": "Zenons paradokser utfordrer vår forståelse av bevegelse.",
@@ -169,7 +169,7 @@
   },
   {
     "id": "v-c-philosophy-015",
-    "norsk": "en deduksjon",
+    "norsk": "deduksjon (en)",
     "lemma": "deduksjon",
     "english": "deduction",
     "example": "Sokratisk metode bruker deduksjon til å avdekke sannhet.",
@@ -181,7 +181,7 @@
   },
   {
     "id": "v-c-philosophy-016",
-    "norsk": "en induksjon",
+    "norsk": "induksjon (en)",
     "lemma": "induksjon",
     "english": "induction",
     "example": "Vitenskapelig induksjon trekker generelle lover fra observasjoner.",
@@ -193,7 +193,7 @@
   },
   {
     "id": "v-c-philosophy-017",
-    "norsk": "metafysikk",
+    "norsk": "metafysikk (en)",
     "lemma": "metafysikk",
     "english": "metaphysics",
     "example": "Metafysikk undersøker virkelighetens grunnleggende struktur.",
@@ -205,7 +205,7 @@
   },
   {
     "id": "v-c-philosophy-018",
-    "norsk": "en syllogisme",
+    "norsk": "syllogisme (en)",
     "lemma": "syllogisme",
     "english": "a syllogism",
     "example": "Et syllogisme trekker en konklusjon fra to premisser.",
@@ -217,7 +217,7 @@
   },
   {
     "id": "v-c-philosophy-019",
-    "norsk": "empirisme",
+    "norsk": "empirisme (en)",
     "lemma": "empirisme",
     "english": "empiricism",
     "example": "Empirisme hevder at kunnskap stammer fra sanseerfaringer.",
@@ -229,7 +229,7 @@
   },
   {
     "id": "v-c-philosophy-020",
-    "norsk": "rasjonalisme",
+    "norsk": "rasjonalisme (en)",
     "lemma": "rasjonalisme",
     "english": "rationalism",
     "example": "Descartes er en sentral rasjonalistisk tenker.",
@@ -253,7 +253,7 @@
   },
   {
     "id": "v-c-philosophy-022",
-    "norsk": "en transcendens",
+    "norsk": "transcendens (en)",
     "lemma": "transcendens",
     "english": "transcendence",
     "example": "Kants transcendensfilosofi skiller fenomen fra noumenon.",
@@ -265,7 +265,7 @@
   },
   {
     "id": "v-c-academic-001",
-    "norsk": "et forskningsdesign",
+    "norsk": "forskningsdesign (et)",
     "lemma": "forskningsdesign",
     "english": "a research design",
     "example": "Valg av forskningsdesign er avgjørende for studiens gyldighet.",
@@ -277,7 +277,7 @@
   },
   {
     "id": "v-c-academic-002",
-    "norsk": "en diskurs",
+    "norsk": "diskurs (en)",
     "lemma": "diskurs",
     "english": "a discourse",
     "example": "Den akademiske diskursen om klimaet er kompleks.",
@@ -289,7 +289,7 @@
   },
   {
     "id": "v-c-academic-003",
-    "norsk": "en fagfellevurdering",
+    "norsk": "fagfellevurdering (en)",
     "lemma": "fagfellevurdering",
     "english": "peer review",
     "example": "Artikkelen gikk gjennom streng fagfellevurdering.",
@@ -325,7 +325,7 @@
   },
   {
     "id": "v-c-academic-006",
-    "norsk": "et forskningsgap",
+    "norsk": "forskningsgap (et)",
     "lemma": "forskningsgap",
     "english": "a research gap",
     "example": "Studien fyller et tydelig forskningsgap.",
@@ -349,7 +349,7 @@
   },
   {
     "id": "v-c-academic-008",
-    "norsk": "validitet",
+    "norsk": "validitet (en)",
     "lemma": "validitet",
     "english": "validity",
     "example": "Studiens validitet avhenger av målinstrumentet.",
@@ -361,7 +361,7 @@
   },
   {
     "id": "v-c-academic-009",
-    "norsk": "reliabilitet",
+    "norsk": "reliabilitet (en)",
     "lemma": "reliabilitet",
     "english": "reliability",
     "example": "Høy reliabilitet sikrer reproduserbare resultater.",
@@ -373,7 +373,7 @@
   },
   {
     "id": "v-c-academic-010",
-    "norsk": "en bias",
+    "norsk": "bias (en)",
     "lemma": "bias",
     "english": "bias",
     "example": "Seleksjonsbias kan skade studiens konklusjoner.",
@@ -397,7 +397,7 @@
   },
   {
     "id": "v-c-academic-012",
-    "norsk": "et rammeverk",
+    "norsk": "rammeverk (et)",
     "lemma": "rammeverk",
     "english": "a framework",
     "example": "Vi bruker Bourdieus rammeverk i analysen.",
@@ -409,7 +409,7 @@
   },
   {
     "id": "v-c-academic-013",
-    "norsk": "en triangulering",
+    "norsk": "triangulering (en)",
     "lemma": "triangulering",
     "english": "triangulation (research method)",
     "example": "Datasamling ble styrket gjennom metodetriangulering.",
@@ -421,7 +421,7 @@
   },
   {
     "id": "v-c-academic-014",
-    "norsk": "en konsensus",
+    "norsk": "konsensus (en)",
     "lemma": "konsensus",
     "english": "a consensus",
     "example": "Det er vitenskapelig konsensus om menneskeskapte klimaendringer.",
@@ -433,7 +433,7 @@
   },
   {
     "id": "v-c-academic-015",
-    "norsk": "et paradigme",
+    "norsk": "paradigme (et)",
     "lemma": "paradigme",
     "english": "a paradigm",
     "example": "Kuhns paradigmebegrep forklarer vitenskapelige revolusjoner.",
@@ -445,7 +445,7 @@
   },
   {
     "id": "v-c-academic-016",
-    "norsk": "en syntese",
+    "norsk": "syntese (en)",
     "lemma": "syntese",
     "english": "a synthesis",
     "example": "Konklusjonen presenterer en syntese av funnene.",
@@ -541,7 +541,7 @@
   },
   {
     "id": "v-c-formal-writing-008",
-    "norsk": "en begrepsavklaring",
+    "norsk": "begrepsavklaring (en)",
     "lemma": "begrepsavklaring",
     "english": "a definition of terms / clarification of concepts",
     "example": "En begrepsavklaring er nødvendig innledningsvis.",
@@ -577,7 +577,7 @@
   },
   {
     "id": "v-c-formal-writing-011",
-    "norsk": "en innvending",
+    "norsk": "innvending (en)",
     "lemma": "innvending",
     "english": "an objection",
     "example": "En mulig innvending mot denne tolkningen er at …",
@@ -625,7 +625,7 @@
   },
   {
     "id": "v-c-formal-writing-015",
-    "norsk": "en implikasjon",
+    "norsk": "implikasjon (en)",
     "lemma": "implikasjon",
     "english": "an implication",
     "example": "Funnene har viktige politiske implikasjoner.",
@@ -685,7 +685,7 @@
   },
   {
     "id": "v-c-rhetoric-002",
-    "norsk": "ethos",
+    "norsk": "ethos (en)",
     "lemma": "ethos",
     "english": "ethos (appeal to credibility)",
     "example": "Taleren bygger ethos gjennom sin faglige bakgrunn.",
@@ -697,7 +697,7 @@
   },
   {
     "id": "v-c-rhetoric-003",
-    "norsk": "pathos",
+    "norsk": "pathos (en)",
     "lemma": "pathos",
     "english": "pathos (appeal to emotion)",
     "example": "Bruken av pathos beveger tilhørerne.",
@@ -709,7 +709,7 @@
   },
   {
     "id": "v-c-rhetoric-004",
-    "norsk": "logos",
+    "norsk": "logos (en)",
     "lemma": "logos",
     "english": "logos (appeal to logic)",
     "example": "Argumentet er konstruert rundt logosbaserte bevis.",
@@ -721,7 +721,7 @@
   },
   {
     "id": "v-c-rhetoric-005",
-    "norsk": "en anafora",
+    "norsk": "anafora (en)",
     "lemma": "anafora",
     "english": "anaphora (repetition at the start of clauses)",
     "example": "Talen bruker anafora for å understreke budskapet.",
@@ -733,7 +733,7 @@
   },
   {
     "id": "v-c-rhetoric-006",
-    "norsk": "en antitese",
+    "norsk": "antitese (en)",
     "lemma": "antitese",
     "english": "an antithesis",
     "example": "Antitesen skaper en slående kontrast i teksten.",
@@ -745,7 +745,7 @@
   },
   {
     "id": "v-c-rhetoric-007",
-    "norsk": "en overtalelse",
+    "norsk": "overtalelse (en)",
     "lemma": "overtalelse",
     "english": "persuasion",
     "example": "Retorikk er kunsten å overbevise og overtale.",
@@ -769,7 +769,7 @@
   },
   {
     "id": "v-c-rhetoric-009",
-    "norsk": "en hyperbel",
+    "norsk": "hyperbel (en)",
     "lemma": "hyperbel",
     "english": "hyperbole",
     "example": "Markedsføringen bygger på overdrevne hyperbeler.",
@@ -781,7 +781,7 @@
   },
   {
     "id": "v-c-rhetoric-010",
-    "norsk": "en litotes",
+    "norsk": "litotes (en)",
     "lemma": "litotes",
     "english": "litotes (understatement using negation)",
     "example": "Det er ikke så lite utfordrende — er et eksempel på litotes.",
@@ -793,7 +793,7 @@
   },
   {
     "id": "v-c-rhetoric-011",
-    "norsk": "et syllepsis",
+    "norsk": "syllepsis (et)",
     "lemma": "syllepsis",
     "english": "syllepsis (using one word to govern two)",
     "example": "Syllepsis kan skape komisk effekt i teksten.",
@@ -805,7 +805,7 @@
   },
   {
     "id": "v-c-rhetoric-012",
-    "norsk": "en chiasme",
+    "norsk": "chiasme (en)",
     "lemma": "chiasme",
     "english": "chiasmus (inverted parallelism)",
     "example": "Chiasme skaper eleganse gjennom speilvendt struktur.",
@@ -817,7 +817,7 @@
   },
   {
     "id": "v-c-rhetoric-013",
-    "norsk": "kairos",
+    "norsk": "kairos (en)",
     "lemma": "kairos",
     "english": "kairos (the opportune moment)",
     "example": "En god taler vet å utnytte kairos.",
@@ -829,7 +829,7 @@
   },
   {
     "id": "v-c-rhetoric-014",
-    "norsk": "en prosopopeia",
+    "norsk": "prosopopeia (en)",
     "lemma": "prosopopeia",
     "english": "personification / prosopopoeia",
     "example": "Diktet personifiserer havet som en sint gud.",
@@ -853,7 +853,7 @@
   },
   {
     "id": "v-c-rhetoric-016",
-    "norsk": "en topos",
+    "norsk": "topos (en)",
     "lemma": "topos",
     "english": "a topos (commonplace / standard argument)",
     "example": "Appell til natur er et vanlig retorisk topos.",
@@ -865,7 +865,7 @@
   },
   {
     "id": "v-c-rhetoric-017",
-    "norsk": "en inversjon",
+    "norsk": "inversjon (en)",
     "lemma": "inversjon",
     "english": "inversion (of word order for effect)",
     "example": "Inversjon brukes i poetisk og høytidelig prosa.",
@@ -889,7 +889,7 @@
   },
   {
     "id": "v-c-rhetoric-019",
-    "norsk": "en narrasjon",
+    "norsk": "narrasjon (en)",
     "lemma": "narrasjon",
     "english": "narration / storytelling (as rhetorical mode)",
     "example": "Narrasjon som virkemiddel skaper nærhet til tilhørerne.",
@@ -901,7 +901,7 @@
   },
   {
     "id": "v-c-rhetoric-020",
-    "norsk": "en bevisføring",
+    "norsk": "bevisføring (en)",
     "lemma": "bevisføring",
     "english": "argumentation / presentation of proof",
     "example": "Bevisføringen i talen var systematisk og overbevisende.",
@@ -913,7 +913,7 @@
   },
   {
     "id": "v-c-rhetoric-021",
-    "norsk": "en konklusjon",
+    "norsk": "konklusjon (en)",
     "lemma": "konklusjon",
     "english": "a conclusion (closing of a speech)",
     "example": "En sterk konklusjon etterlater et varig inntrykk.",
@@ -973,7 +973,7 @@
   },
   {
     "id": "v-c-complex-emotions-005",
-    "norsk": "vemod",
+    "norsk": "vemod (et)",
     "lemma": "vemod",
     "english": "wistfulness / gentle sadness",
     "example": "Musikken var preget av et vakkert vemod.",
@@ -997,7 +997,7 @@
   },
   {
     "id": "v-c-complex-emotions-007",
-    "norsk": "fremmedgjøring",
+    "norsk": "fremmedgjøring (en)",
     "lemma": "fremmedgjøring",
     "english": "alienation / estrangement",
     "example": "Storbylivet kan føre til en dyptgående fremmedgjøring.",
@@ -1009,7 +1009,7 @@
   },
   {
     "id": "v-c-complex-emotions-008",
-    "norsk": "katarsis",
+    "norsk": "katarsis (en)",
     "lemma": "katarsis",
     "english": "catharsis",
     "example": "Forestillingen ga publikum en sterk katarsis.",
@@ -1021,7 +1021,7 @@
   },
   {
     "id": "v-c-complex-emotions-009",
-    "norsk": "selverkjennelse",
+    "norsk": "selverkjennelse (en)",
     "lemma": "selverkjennelse",
     "english": "self-knowledge / self-awareness",
     "example": "Selverkjennelse er forutsetningen for personlig vekst.",
@@ -1033,7 +1033,7 @@
   },
   {
     "id": "v-c-complex-emotions-010",
-    "norsk": "en forsonlighet",
+    "norsk": "forsonlighet (en)",
     "lemma": "forsonlighet",
     "english": "reconciliation / conciliatoriness",
     "example": "En tone av forsonlighet preget samtalen.",
@@ -1045,7 +1045,7 @@
   },
   {
     "id": "v-c-complex-emotions-011",
-    "norsk": "ærefrykt",
+    "norsk": "ærefrykt (en)",
     "lemma": "ærefrykt",
     "english": "awe / reverence",
     "example": "Han betraktet fjorden med stille ærefrykt.",
@@ -1069,7 +1069,7 @@
   },
   {
     "id": "v-c-complex-emotions-013",
-    "norsk": "oppriktighet",
+    "norsk": "oppriktighet (en)",
     "lemma": "oppriktighet",
     "english": "sincerity / genuineness",
     "example": "Det var en oppriktig beklagelse uten baktanker.",
@@ -1093,7 +1093,7 @@
   },
   {
     "id": "v-c-complex-emotions-015",
-    "norsk": "sårbarhet",
+    "norsk": "sårbarhet (en)",
     "lemma": "sårbarhet",
     "english": "vulnerability",
     "example": "Det krever mot å vise sårbarhet.",
@@ -1105,8 +1105,8 @@
   },
   {
     "id": "v-c-complex-emotions-016",
-    "norsk": "kognitive dissonansen",
-    "lemma": "kognitive dissonansen",
+    "norsk": "kognitive dissonanse (en)",
+    "lemma": "kognitive dissonanse",
     "english": "cognitive dissonance",
     "example": "Kognitiv dissonans oppstår når tro og atferd er i konflikt.",
     "example_english": "Cognitive dissonance arises when beliefs and behaviour are in conflict.",
@@ -1141,7 +1141,7 @@
   },
   {
     "id": "v-c-complex-emotions-019",
-    "norsk": "skadefryd",
+    "norsk": "skadefryd (en)",
     "lemma": "skadefryd",
     "english": "schadenfreude (pleasure at another's misfortune)",
     "example": "Det er ikke pent å kjenne på skadefryd.",
@@ -1153,7 +1153,7 @@
   },
   {
     "id": "v-c-complex-emotions-020",
-    "norsk": "en sinnstilstand",
+    "norsk": "sinnstilstand (en)",
     "lemma": "sinnstilstand",
     "english": "a state of mind",
     "example": "Kunst kan skifte vår sinnstilstand dramatisk.",
@@ -1165,7 +1165,7 @@
   },
   {
     "id": "v-c-complex-emotions-021",
-    "norsk": "forsoning",
+    "norsk": "forsoning (en)",
     "lemma": "forsoning",
     "english": "reconciliation",
     "example": "Forsoning etter krig er en lang prosess.",
@@ -1189,7 +1189,7 @@
   },
   {
     "id": "v-c-complex-emotions-023",
-    "norsk": "ettertanke",
+    "norsk": "ettertanke (en)",
     "lemma": "ettertanke",
     "english": "reflection / afterthought",
     "example": "Med ettertanke innser jeg at jeg tok feil.",
@@ -1213,7 +1213,7 @@
   },
   {
     "id": "v-c-professional-002",
-    "norsk": "en strategiplan",
+    "norsk": "strategiplan (en)",
     "lemma": "strategiplan",
     "english": "a strategic plan",
     "example": "Bedriften utarbeidet en femårig strategiplan.",
@@ -1225,7 +1225,7 @@
   },
   {
     "id": "v-c-professional-003",
-    "norsk": "en interessent",
+    "norsk": "interessent (en)",
     "lemma": "interessent",
     "english": "a stakeholder",
     "example": "Alle interessenter ble konsultert i prosessen.",
@@ -1237,7 +1237,7 @@
   },
   {
     "id": "v-c-professional-004",
-    "norsk": "en gjennomførbarhet",
+    "norsk": "gjennomførbarhet (en)",
     "lemma": "gjennomførbarhet",
     "english": "feasibility",
     "example": "En gjennomførbarhetsstudie ble iverksatt.",
@@ -1261,7 +1261,7 @@
   },
   {
     "id": "v-c-professional-006",
-    "norsk": "en retningslinje",
+    "norsk": "retningslinje (en)",
     "lemma": "retningslinje",
     "english": "a guideline / a directive",
     "example": "Retningslinjene for datahåndtering er strenge.",
@@ -1273,7 +1273,7 @@
   },
   {
     "id": "v-c-professional-007",
-    "norsk": "etterlevelse",
+    "norsk": "etterlevelse (en)",
     "lemma": "etterlevelse",
     "english": "compliance",
     "example": "Etterlevelse av GDPR er et krav.",
@@ -1285,7 +1285,7 @@
   },
   {
     "id": "v-c-professional-008",
-    "norsk": "en benchmark",
+    "norsk": "benchmark (en)",
     "lemma": "benchmark",
     "english": "a benchmark",
     "example": "Bransjens benchmark for leveringstid er to dager.",
@@ -1297,7 +1297,7 @@
   },
   {
     "id": "v-c-professional-009",
-    "norsk": "en KPI",
+    "norsk": "KPI (en)",
     "lemma": "KPI",
     "english": "a KPI (key performance indicator)",
     "example": "Vi følger nøye med på KPI-ene hvert kvartal.",
@@ -1309,7 +1309,7 @@
   },
   {
     "id": "v-c-professional-010",
-    "norsk": "et omdømme",
+    "norsk": "omdømme (et)",
     "lemma": "omdømme",
     "english": "a reputation",
     "example": "Et solgt omdømme er vanskelig å gjenoppbygge.",
@@ -1321,7 +1321,7 @@
   },
   {
     "id": "v-c-professional-011",
-    "norsk": "en årsrapport",
+    "norsk": "årsrapport (en)",
     "lemma": "årsrapport",
     "english": "an annual report",
     "example": "Årsrapporten viste solid vekst.",
@@ -1333,7 +1333,7 @@
   },
   {
     "id": "v-c-professional-012",
-    "norsk": "en medarbeidersamtale",
+    "norsk": "medarbeidersamtale (en)",
     "lemma": "medarbeidersamtale",
     "english": "a performance review / an appraisal interview",
     "example": "Medarbeidersamtalen gjennomføres en gang i året.",
@@ -1345,7 +1345,7 @@
   },
   {
     "id": "v-c-professional-013",
-    "norsk": "en disrupsjon",
+    "norsk": "disrupsjon (en)",
     "lemma": "disrupsjon",
     "english": "disruption",
     "example": "Digital disrupsjon endrer tradisjonelle bransjer.",
@@ -1357,7 +1357,7 @@
   },
   {
     "id": "v-c-professional-014",
-    "norsk": "innovasjon",
+    "norsk": "innovasjon (en)",
     "lemma": "innovasjon",
     "english": "innovation",
     "example": "Innovasjon er motoren i bedriftens vekst.",
@@ -1393,7 +1393,7 @@
   },
   {
     "id": "v-c-abstract-concepts-001",
-    "norsk": "sannhet",
+    "norsk": "sannhet (en)",
     "lemma": "sannhet",
     "english": "truth",
     "example": "Hva er sannhet? Filosofer har diskutert dette i årtusener.",
@@ -1405,7 +1405,7 @@
   },
   {
     "id": "v-c-abstract-concepts-002",
-    "norsk": "mening",
+    "norsk": "mening (en)",
     "lemma": "mening",
     "english": "meaning / purpose",
     "example": "Søken etter mening er et universelt menneskelig trekk.",
@@ -1417,7 +1417,7 @@
   },
   {
     "id": "v-c-abstract-concepts-003",
-    "norsk": "tid",
+    "norsk": "tid (en)",
     "lemma": "tid",
     "english": "time (as abstract concept)",
     "example": "Tid er et mysterium som filosofer forsøker å forstå.",
@@ -1429,7 +1429,7 @@
   },
   {
     "id": "v-c-abstract-concepts-004",
-    "norsk": "en dualitet",
+    "norsk": "dualitet (en)",
     "lemma": "dualitet",
     "english": "a duality",
     "example": "Dualiteten mellom godt og ondt er et universelt tema.",
@@ -1441,7 +1441,7 @@
   },
   {
     "id": "v-c-abstract-concepts-005",
-    "norsk": "kompleksitet",
+    "norsk": "kompleksitet (en)",
     "lemma": "kompleksitet",
     "english": "complexity",
     "example": "Samfunnets kompleksitet gjør enkle løsninger umulige.",
@@ -1453,7 +1453,7 @@
   },
   {
     "id": "v-c-abstract-concepts-006",
-    "norsk": "en grense",
+    "norsk": "grense (en)",
     "lemma": "grense",
     "english": "a limit / a boundary (conceptual)",
     "example": "Grensen mellom kunst og propaganda er flytende.",
@@ -1465,7 +1465,7 @@
   },
   {
     "id": "v-c-abstract-concepts-007",
-    "norsk": "en struktur",
+    "norsk": "struktur (en)",
     "lemma": "struktur",
     "english": "structure (as abstract organising principle)",
     "example": "Sosiale strukturer påvirker individets handlingsrom.",
@@ -1477,7 +1477,7 @@
   },
   {
     "id": "v-c-abstract-concepts-008",
-    "norsk": "intersubjektivitet",
+    "norsk": "intersubjektivitet (en)",
     "lemma": "intersubjektivitet",
     "english": "intersubjectivity",
     "example": "Intersubjektivitet er grunnlaget for felles forståelse.",
@@ -1489,7 +1489,7 @@
   },
   {
     "id": "v-c-abstract-concepts-009",
-    "norsk": "en legitimitet",
+    "norsk": "legitimitet (en)",
     "lemma": "legitimitet",
     "english": "legitimacy",
     "example": "Statens legitimitet hviler på folkets tillit.",
@@ -1501,7 +1501,7 @@
   },
   {
     "id": "v-c-abstract-concepts-010",
-    "norsk": "et pluralisme",
+    "norsk": "pluralisme (en)",
     "lemma": "pluralisme",
     "english": "pluralism",
     "example": "Et demokrati er avhengig av et levende pluralisme.",
@@ -1513,7 +1513,7 @@
   },
   {
     "id": "v-c-abstract-concepts-011",
-    "norsk": "en universalisme",
+    "norsk": "universalisme (en)",
     "lemma": "universalisme",
     "english": "universalism",
     "example": "Universalisme hevder at visse verdier gjelder alle.",
@@ -1525,7 +1525,7 @@
   },
   {
     "id": "v-c-abstract-concepts-012",
-    "norsk": "en partikularisme",
+    "norsk": "partikularisme (en)",
     "lemma": "partikularisme",
     "english": "particularism",
     "example": "Partikularisme vektlegger kulturelle og lokale særtrekk.",
@@ -1549,7 +1549,7 @@
   },
   {
     "id": "v-c-abstract-concepts-014",
-    "norsk": "en konstruksjon",
+    "norsk": "konstruksjon (en)",
     "lemma": "konstruksjon",
     "english": "a construction (social/conceptual)",
     "example": "Kjønn sees av mange som en sosial konstruksjon.",
@@ -1561,7 +1561,7 @@
   },
   {
     "id": "v-c-abstract-concepts-015",
-    "norsk": "hegemoni",
+    "norsk": "hegemoni (en)",
     "lemma": "hegemoni",
     "english": "hegemony",
     "example": "Kulturelt hegemoni påvirker hva vi anser som normalt.",
@@ -1573,7 +1573,7 @@
   },
   {
     "id": "v-c-politics-democracy-001",
-    "norsk": "et lovforslag",
+    "norsk": "lovforslag (et)",
     "lemma": "lovforslag",
     "english": "a bill (proposed law)",
     "example": "Lovforslaget skal behandles i komiteen neste uke.",
@@ -1585,7 +1585,7 @@
   },
   {
     "id": "v-c-politics-democracy-002",
-    "norsk": "en valgkrets",
+    "norsk": "valgkrets (en)",
     "lemma": "valgkrets",
     "english": "an electoral district",
     "example": "Hun stilte til valg i en liten valgkrets i nord.",
@@ -1597,7 +1597,7 @@
   },
   {
     "id": "v-c-politics-democracy-003",
-    "norsk": "et flertall",
+    "norsk": "flertall (et)",
     "lemma": "flertall",
     "english": "a majority",
     "example": "Regjeringen trenger et flertall for å få budsjettet vedtatt.",
@@ -1621,7 +1621,7 @@
   },
   {
     "id": "v-c-linguistics-001",
-    "norsk": "et morsmål",
+    "norsk": "morsmål (et)",
     "lemma": "morsmål",
     "english": "a mother tongue",
     "example": "Norsk er hennes morsmål, men hun kan fem språk.",
@@ -1633,7 +1633,7 @@
   },
   {
     "id": "v-c-media-journalism-001",
-    "norsk": "sensur",
+    "norsk": "sensur (en)",
     "lemma": "sensur",
     "english": "censorship",
     "example": "Filmen møtte sensur på grunn av voldelige scener.",
@@ -1645,7 +1645,7 @@
   },
   {
     "id": "v-c-media-journalism-002",
-    "norsk": "en agenda",
+    "norsk": "agenda (en)",
     "lemma": "agenda",
     "english": "an agenda (hidden or stated)",
     "example": "Programlederens agenda ble tydelig under debatten.",
@@ -1657,7 +1657,7 @@
   },
   {
     "id": "v-c-architecture-design-001",
-    "norsk": "en fasade",
+    "norsk": "fasade (en)",
     "lemma": "fasade",
     "english": "a facade",
     "example": "Byggets fasade er dekket av glass.",
@@ -1681,7 +1681,7 @@
   },
   {
     "id": "v-c-architecture-design-003",
-    "norsk": "estetikk",
+    "norsk": "estetikk (en)",
     "lemma": "estetikk",
     "english": "aesthetics",
     "example": "Estetikk handler om hvordan vi opplever skjønnhet.",
@@ -1693,7 +1693,7 @@
   },
   {
     "id": "v-c-architecture-design-004",
-    "norsk": "en plantegning",
+    "norsk": "plantegning (en)",
     "lemma": "plantegning",
     "english": "a blueprint / floor plan",
     "example": "Arkitekten presenterte en detaljert plantegning.",
@@ -1705,7 +1705,7 @@
   },
   {
     "id": "v-c-architecture-design-005",
-    "norsk": "et romprogram",
+    "norsk": "romprogram (et)",
     "lemma": "romprogram",
     "english": "a space plan",
     "example": "Romprogrammet definerer hvordan arealet skal brukes.",
@@ -1717,7 +1717,7 @@
   },
   {
     "id": "v-c-diplomacy-international-001",
-    "norsk": "en ambassade",
+    "norsk": "ambassade (en)",
     "lemma": "ambassade",
     "english": "an embassy",
     "example": "Ambassaden hjelper borgere i utlandet.",
@@ -1729,7 +1729,7 @@
   },
   {
     "id": "v-c-diplomacy-international-002",
-    "norsk": "en traktat",
+    "norsk": "traktat (en)",
     "lemma": "traktat",
     "english": "a treaty",
     "example": "Landene signerte en traktat om våpenkontroll.",
@@ -1753,7 +1753,7 @@
   },
   {
     "id": "v-c-diplomacy-international-004",
-    "norsk": "et forbund",
+    "norsk": "forbund (et)",
     "lemma": "forbund",
     "english": "an alliance",
     "example": "Forbundet styrker regionalt samarbeid.",
@@ -1765,7 +1765,7 @@
   },
   {
     "id": "v-c-diplomacy-international-005",
-    "norsk": "konfliktløsning",
+    "norsk": "konfliktløsning (en)",
     "lemma": "konfliktløsning",
     "english": "conflict resolution",
     "example": "Diplomater er trent i konfliktløsning.",
@@ -1777,7 +1777,7 @@
   },
   {
     "id": "v-c-finance-economics-001",
-    "norsk": "et aksjemarked",
+    "norsk": "aksjemarked (et)",
     "lemma": "aksjemarked",
     "english": "a stock market",
     "example": "Aksjemarkedet falt etter nyhetene.",
@@ -1789,7 +1789,7 @@
   },
   {
     "id": "v-c-finance-economics-002",
-    "norsk": "likviditet",
+    "norsk": "likviditet (en)",
     "lemma": "likviditet",
     "english": "liquidity",
     "example": "Banken må sikre tilstrekkelig likviditet.",
@@ -1801,7 +1801,7 @@
   },
   {
     "id": "v-c-finance-economics-003",
-    "norsk": "en valuta",
+    "norsk": "valuta (en)",
     "lemma": "valuta",
     "english": "a currency",
     "example": "Valutaen styrket seg mot euro.",
@@ -1813,7 +1813,7 @@
   },
   {
     "id": "v-c-finance-economics-004",
-    "norsk": "et derivat",
+    "norsk": "derivat (et)",
     "lemma": "derivat",
     "english": "a derivative",
     "example": "Derivater brukes til å hedge risiko.",
@@ -1825,7 +1825,7 @@
   },
   {
     "id": "v-c-finance-economics-005",
-    "norsk": "en konjunktur",
+    "norsk": "konjunktur (en)",
     "lemma": "konjunktur",
     "english": "a business cycle",
     "example": "Økonomien er i en svak konjunktur nå.",
@@ -1837,7 +1837,7 @@
   },
   {
     "id": "v-c-psychology-advanced-001",
-    "norsk": "en psykose",
+    "norsk": "psykose (en)",
     "lemma": "psykose",
     "english": "a psychosis",
     "example": "Psykose krever rask behandling.",
@@ -1849,7 +1849,7 @@
   },
   {
     "id": "v-c-psychology-advanced-002",
-    "norsk": "metakognisjon",
+    "norsk": "metakognisjon (en)",
     "lemma": "metakognisjon",
     "english": "metacognition",
     "example": "Metakognisjon handler om å tenke over egen tenkning.",
@@ -1873,7 +1873,7 @@
   },
   {
     "id": "v-c-literary-002",
-    "norsk": "en eleganse",
+    "norsk": "eleganse (en)",
     "lemma": "eleganse",
     "english": "elegance (of style)",
     "example": "Prosaen er preget av en sjelden eleganse.",
@@ -1885,7 +1885,7 @@
   },
   {
     "id": "v-c-literary-003",
-    "norsk": "en epifani",
+    "norsk": "epifani (en)",
     "lemma": "epifani",
     "english": "an epiphany",
     "example": "I romanens klimaks opplever protagonisten en dyptgående epifani.",
@@ -1897,7 +1897,7 @@
   },
   {
     "id": "v-c-literary-004",
-    "norsk": "en intertekstualitet",
+    "norsk": "intertekstualitet (en)",
     "lemma": "intertekstualitet",
     "english": "intertextuality",
     "example": "Romanen er rik på intertekstualitet med norrøne sagaer.",
@@ -1909,7 +1909,7 @@
   },
   {
     "id": "v-c-literary-005",
-    "norsk": "et leitmotiv",
+    "norsk": "leitmotiv (et)",
     "lemma": "leitmotiv",
     "english": "a leitmotif",
     "example": "Havet er et gjennomgående leitmotiv i hans forfatterskap.",
@@ -1921,7 +1921,7 @@
   },
   {
     "id": "v-c-literary-006",
-    "norsk": "en pastisj",
+    "norsk": "pastisj (en)",
     "lemma": "pastisj",
     "english": "a pastiche",
     "example": "Novellen er en bevisst pastisj av romantikkens stil.",
@@ -1933,7 +1933,7 @@
   },
   {
     "id": "v-c-literary-007",
-    "norsk": "en ekfrase",
+    "norsk": "ekfrase (en)",
     "lemma": "ekfrase",
     "english": "ekphrasis (literary description of art)",
     "example": "Diktet er en klassisk ekfrase over Munchs 'Skriket'.",
@@ -1957,7 +1957,7 @@
   },
   {
     "id": "v-c-literary-009",
-    "norsk": "et frampek",
+    "norsk": "frampek (et)",
     "lemma": "frampek",
     "english": "foreshadowing",
     "example": "Det tidlige frampeket varsler en tragisk slutt.",
@@ -1969,7 +1969,7 @@
   },
   {
     "id": "v-c-literary-010",
-    "norsk": "en tilbakeblikk",
+    "norsk": "tilbakeblikk (et)",
     "lemma": "tilbakeblikk",
     "english": "a flashback",
     "example": "Romanen struktureres gjennom tilbakeblikk.",
@@ -1993,7 +1993,7 @@
   },
   {
     "id": "v-c-literary-012",
-    "norsk": "en bildungsroman",
+    "norsk": "bildungsroman (en)",
     "lemma": "bildungsroman",
     "english": "a bildungsroman (coming-of-age novel)",
     "example": "Hamsuns 'Sult' er en norsk bildungsroman.",
@@ -2029,7 +2029,7 @@
   },
   {
     "id": "v-c-literary-015",
-    "norsk": "en peripeti",
+    "norsk": "peripeti (en)",
     "lemma": "peripeti",
     "english": "a peripeteia (sudden reversal of fortune)",
     "example": "Peripetien inntreffer i tredje akt og snur alt på hodet.",
@@ -2041,7 +2041,7 @@
   },
   {
     "id": "v-c-literary-016",
-    "norsk": "en hamartia",
+    "norsk": "hamartia (en)",
     "lemma": "hamartia",
     "english": "hamartia (a tragic flaw)",
     "example": "Heltens hamartia er hans ubegrenste stolthet.",
@@ -2053,7 +2053,7 @@
   },
   {
     "id": "v-c-literary-017",
-    "norsk": "en katafore",
+    "norsk": "katafore (en)",
     "lemma": "katafore",
     "english": "cataphora (forward reference)",
     "example": "Katafore i åpningslinjen skaper spenning i teksten.",
@@ -2065,7 +2065,7 @@
   },
   {
     "id": "v-c-literary-018",
-    "norsk": "en synekdoke",
+    "norsk": "synekdoke (en)",
     "lemma": "synekdoke",
     "english": "synecdoche (part for whole or whole for part)",
     "example": "'Seil i horisonten' er en synekdoke for et skip.",
@@ -2077,7 +2077,7 @@
   },
   {
     "id": "v-c-literary-019",
-    "norsk": "en metonymi",
+    "norsk": "metonymi (en)",
     "lemma": "metonymi",
     "english": "metonymy",
     "example": "'Kronen' som metonymi for kongehuset er vanlig i litteraturen.",
@@ -2173,7 +2173,7 @@
   },
   {
     "id": "v-c-archaic-007",
-    "norsk": "hulderfolk",
+    "norsk": "hulderfolk (et)",
     "lemma": "hulderfolk",
     "english": "the hidden folk / huldra people (mythological)",
     "example": "Bestemor fortalte sagn om hulder og hulderfolk.",
@@ -2185,7 +2185,7 @@
   },
   {
     "id": "v-c-archaic-008",
-    "norsk": "et sagn",
+    "norsk": "sagn (et)",
     "lemma": "sagn",
     "english": "a legend / a folk tale",
     "example": "Sagnet om Peer Gynt lever videre i norsk kultur.",
@@ -2197,7 +2197,7 @@
   },
   {
     "id": "v-c-archaic-009",
-    "norsk": "en skald",
+    "norsk": "skald (en)",
     "lemma": "skald",
     "english": "a skald (Old Norse poet)",
     "example": "Skalden var hoffets fremste forteller.",
@@ -2209,9 +2209,9 @@
   },
   {
     "id": "v-c-archaic-010",
-    "norsk": "en ting (historisk)",
-    "lemma": "ting (historisk)",
-    "english": "a thing / assembly (historical Norse council)",
+    "norsk": "ting (et)",
+    "lemma": "ting",
+    "english": "assembly; historical Norse council",
     "example": "Tinget var stedet der folk avgjorde tvister.",
     "example_english": "The thing was the place where people settled disputes.",
     "definition": "Et gammelt folkemøte der frie menn samlet seg for å løse konflikter og ta beslutninger.",
@@ -2233,7 +2233,7 @@
   },
   {
     "id": "v-c-archaic-012",
-    "norsk": "et len",
+    "norsk": "len (et)",
     "lemma": "len",
     "english": "a fief / a county (historical)",
     "example": "Lensmennene styrte sine respektive len.",
@@ -2245,7 +2245,7 @@
   },
   {
     "id": "v-c-archaic-013",
-    "norsk": "en krønike",
+    "norsk": "krønike (en)",
     "lemma": "krønike",
     "english": "a chronicle",
     "example": "Middelalderens krøniker gir oss et innblikk i fortiden.",
@@ -2269,7 +2269,7 @@
   },
   {
     "id": "v-c-archaic-015",
-    "norsk": "Norrønt",
+    "norsk": "Norrønt (et)",
     "lemma": "Norrønt",
     "english": "Old Norse (language)",
     "example": "Mange stedsnavn stammer fra det norrøne språket.",
@@ -2281,7 +2281,7 @@
   },
   {
     "id": "v-c-archaic-016",
-    "norsk": "en edda",
+    "norsk": "edda (en)",
     "lemma": "edda",
     "english": "an Edda (Old Norse poem collection)",
     "example": "Eddaen er en uvurderlig kilde til norrøn mytologi.",
@@ -2305,7 +2305,7 @@
   },
   {
     "id": "v-c-archaic-018",
-    "norsk": "et kvede",
+    "norsk": "kvede (et)",
     "lemma": "kvede",
     "english": "a lay / a poem (archaic)",
     "example": "Kvedet om Sigurd er det mest kjente av alle.",
@@ -2341,7 +2341,7 @@
   },
   {
     "id": "v-c-archaic-021",
-    "norsk": "en vise",
+    "norsk": "vise (en)",
     "lemma": "vise",
     "english": "a ballad / a verse (traditional)",
     "example": "Den gamle visen forteller om kjærlighetssorg.",
@@ -2365,7 +2365,7 @@
   },
   {
     "id": "v-c-archaic-023",
-    "norsk": "et blot",
+    "norsk": "blot (et)",
     "lemma": "blot",
     "english": "a blót (Norse sacrificial feast)",
     "example": "Midvinterblottet var det viktigste religiøse ritualet.",
@@ -2377,7 +2377,7 @@
   },
   {
     "id": "v-c-archaic-024",
-    "norsk": "en jarl",
+    "norsk": "jarl (en)",
     "lemma": "jarl",
     "english": "a jarl (Norse chieftain / earl)",
     "example": "Jarlen kontrollerte kyststripen med jernhånd.",
@@ -2809,7 +2809,7 @@
   },
   {
     "id": "v-c-highly-formal-011",
-    "norsk": "en bevilgning",
+    "norsk": "bevilgning (en)",
     "lemma": "bevilgning",
     "english": "an appropriation / a grant (of funds)",
     "example": "Stortinget vedtok en bevilgning til museet.",
@@ -2845,7 +2845,7 @@
   },
   {
     "id": "v-c-highly-formal-014",
-    "norsk": "en fullmakt",
+    "norsk": "fullmakt (en)",
     "lemma": "fullmakt",
     "english": "a power of attorney / an authorisation",
     "example": "En skriftlig fullmakt er påkrevd for å handle på vegne av andre.",
@@ -2869,7 +2869,7 @@
   },
   {
     "id": "v-c-highly-formal-016",
-    "norsk": "ikrafttredelse",
+    "norsk": "ikrafttredelse (en)",
     "lemma": "ikrafttredelse",
     "english": "entry into force / effective date",
     "example": "Ikrafttredelsen er satt til første januar neste år.",
@@ -2881,7 +2881,7 @@
   },
   {
     "id": "v-c-highly-formal-017",
-    "norsk": "en dispensasjon",
+    "norsk": "dispensasjon (en)",
     "lemma": "dispensasjon",
     "english": "a dispensation / an exemption",
     "example": "Det ble innvilget dispensasjon fra byggeforbudet.",
@@ -2893,7 +2893,7 @@
   },
   {
     "id": "v-c-highly-formal-018",
-    "norsk": "stadfeste",
+    "norsk": "å stadfeste",
     "lemma": "stadfeste",
     "english": "to confirm / to uphold (a decision)",
     "example": "Høyesterett stadfestet lagmannsrettens dom.",
@@ -2905,7 +2905,7 @@
   },
   {
     "id": "v-c-highly-formal-019",
-    "norsk": "en innstilling",
+    "norsk": "innstilling (en)",
     "lemma": "innstilling",
     "english": "a recommendation / a nomination (formal document)",
     "example": "Komiteens innstilling ble lagt frem for Stortinget.",
@@ -2941,7 +2941,7 @@
   },
   {
     "id": "v-c-highly-formal-022",
-    "norsk": "en betenkning",
+    "norsk": "betenkning (en)",
     "lemma": "betenkning",
     "english": "a formal opinion / a memorandum",
     "example": "Juristene avga en betenkning om avtalens gyldighet.",
@@ -2977,7 +2977,7 @@
   },
   {
     "id": "v-c-technical-001",
-    "norsk": "epigenetikk",
+    "norsk": "epigenetikk (en)",
     "lemma": "epigenetikk",
     "english": "epigenetics",
     "example": "Epigenetikk studerer arvelighet uten endring i DNA-sekvensen.",
@@ -2989,7 +2989,7 @@
   },
   {
     "id": "v-c-technical-002",
-    "norsk": "en kvantefysikk",
+    "norsk": "kvantefysikk (en)",
     "lemma": "kvantefysikk",
     "english": "quantum physics",
     "example": "Kvantefysikk utfordrer klassisk mekanistisk tenkning.",
@@ -3001,7 +3001,7 @@
   },
   {
     "id": "v-c-technical-003",
-    "norsk": "en superledning",
+    "norsk": "superledning (en)",
     "lemma": "superledning",
     "english": "superconductivity",
     "example": "Superledning gjør materialer resistansefrie ved lave temperaturer.",
@@ -3013,7 +3013,7 @@
   },
   {
     "id": "v-c-technical-004",
-    "norsk": "en rekursjon",
+    "norsk": "rekursjon (en)",
     "lemma": "rekursjon",
     "english": "recursion (computing)",
     "example": "Rekursjon brukes der en funksjon kaller seg selv.",
@@ -3025,7 +3025,7 @@
   },
   {
     "id": "v-c-technical-005",
-    "norsk": "en maskinlæring",
+    "norsk": "maskinlæring (en)",
     "lemma": "maskinlæring",
     "english": "machine learning",
     "example": "Maskinlæring lar systemet forbedre seg gjennom erfaring.",
@@ -3049,7 +3049,7 @@
   },
   {
     "id": "v-c-technical-007",
-    "norsk": "en biobank",
+    "norsk": "biobank (en)",
     "lemma": "biobank",
     "english": "a biobank",
     "example": "Biobankens prøver brukes i medisinsk forskning.",
@@ -3061,7 +3061,7 @@
   },
   {
     "id": "v-c-technical-008",
-    "norsk": "en nanoteknikk",
+    "norsk": "nanoteknikk (en)",
     "lemma": "nanoteknikk",
     "english": "nanotechnology",
     "example": "Nanoteknikk opererer på atomnivå.",
@@ -3073,7 +3073,7 @@
   },
   {
     "id": "v-c-technical-009",
-    "norsk": "en halvleder",
+    "norsk": "halvleder (en)",
     "lemma": "halvleder",
     "english": "a semiconductor",
     "example": "Halvledere er grunnlaget for moderne elektronikk.",
@@ -3085,7 +3085,7 @@
   },
   {
     "id": "v-c-technical-010",
-    "norsk": "en kvantesammenfiltring",
+    "norsk": "kvantesammenfiltring (en)",
     "lemma": "kvantesammenfiltring",
     "english": "quantum entanglement",
     "example": "Kvantesammenfiltring muliggjør øyeblikkelig korrelasjon mellom partikler.",
@@ -3097,7 +3097,7 @@
   },
   {
     "id": "v-c-technical-011",
-    "norsk": "en bioinformatikk",
+    "norsk": "bioinformatikk (en)",
     "lemma": "bioinformatikk",
     "english": "bioinformatics",
     "example": "Bioinformatikk kombinerer biologi og datavitenskap.",
@@ -3109,7 +3109,7 @@
   },
   {
     "id": "v-c-technical-012",
-    "norsk": "et proteom",
+    "norsk": "proteom (et)",
     "lemma": "proteom",
     "english": "a proteome",
     "example": "Proteomforskning kartlegger alle proteiner i en organisme.",
@@ -3121,7 +3121,7 @@
   },
   {
     "id": "v-c-technical-013",
-    "norsk": "en termodynamikk",
+    "norsk": "termodynamikk (en)",
     "lemma": "termodynamikk",
     "english": "thermodynamics",
     "example": "Den andre termodynamiske loven beskriver entropi.",
@@ -3133,7 +3133,7 @@
   },
   {
     "id": "v-c-technical-014",
-    "norsk": "en entropi",
+    "norsk": "entropi (en)",
     "lemma": "entropi",
     "english": "entropy",
     "example": "Entropi øker alltid i et lukket system.",
@@ -3145,7 +3145,7 @@
   },
   {
     "id": "v-c-technical-015",
-    "norsk": "en polarisering",
+    "norsk": "polarisering (en)",
     "lemma": "polarisering",
     "english": "polarisation (physics / optics)",
     "example": "Polarisering av lys er grunnlaget for LCD-skjermer.",
@@ -3157,7 +3157,7 @@
   },
   {
     "id": "v-c-technical-016",
-    "norsk": "en kompilator",
+    "norsk": "kompilator (en)",
     "lemma": "kompilator",
     "english": "a compiler",
     "example": "Kompilatoren oversetter kildekode til maskinkode.",
@@ -3169,7 +3169,7 @@
   },
   {
     "id": "v-c-technical-017",
-    "norsk": "en virtualisering",
+    "norsk": "virtualisering (en)",
     "lemma": "virtualisering",
     "english": "virtualisation",
     "example": "Virtualisering lar ett fysisk system kjøre flere virtuelle maskiner.",
@@ -3181,7 +3181,7 @@
   },
   {
     "id": "v-c-technical-018",
-    "norsk": "et API",
+    "norsk": "API (et)",
     "lemma": "API",
     "english": "an API (application programming interface)",
     "example": "API-et muliggjør kommunikasjon mellom ulike programvarer.",
@@ -3193,7 +3193,7 @@
   },
   {
     "id": "v-c-technical-019",
-    "norsk": "en latens",
+    "norsk": "latens (en)",
     "lemma": "latens",
     "english": "latency",
     "example": "Lav latens er avgjørende for sanntidsapplikasjoner.",
@@ -3205,7 +3205,7 @@
   },
   {
     "id": "v-c-technical-020",
-    "norsk": "en parallellprosessering",
+    "norsk": "parallellprosessering (en)",
     "lemma": "parallellprosessering",
     "english": "parallel processing",
     "example": "Parallellprosessering øker datamaskinens kapasitet betraktelig.",
@@ -3217,7 +3217,7 @@
   },
   {
     "id": "v-c-technical-021",
-    "norsk": "en abstraksjonslag",
+    "norsk": "abstraksjonslag (en)",
     "lemma": "abstraksjonslag",
     "english": "an abstraction layer",
     "example": "Abstraksjonslag skjuler kompleksiteten fra sluttbrukeren.",
@@ -3229,7 +3229,7 @@
   },
   {
     "id": "v-c-technical-022",
-    "norsk": "en mikrotjeneste",
+    "norsk": "mikrotjeneste (en)",
     "lemma": "mikrotjeneste",
     "english": "a microservice",
     "example": "Arkitekturen er delt inn i uavhengige mikrotjenester.",
@@ -3241,7 +3241,7 @@
   },
   {
     "id": "v-c-advanced-law-justice-001",
-    "norsk": "en jurisdiksjon",
+    "norsk": "jurisdiksjon (en)",
     "lemma": "jurisdiksjon",
     "english": "a jurisdiction",
     "example": "Saken faller utenfor norsk jurisdiksjon.",
@@ -3253,7 +3253,7 @@
   },
   {
     "id": "v-c-advanced-law-justice-002",
-    "norsk": "rettspraksis",
+    "norsk": "rettspraksis (en)",
     "lemma": "rettspraksis",
     "english": "case law / legal precedent",
     "example": "Rettpraksis tilsier et mildere straffenivå.",
@@ -3265,7 +3265,7 @@
   },
   {
     "id": "v-c-advanced-law-justice-003",
-    "norsk": "straffrihet",
+    "norsk": "straffrihet (en)",
     "lemma": "straffrihet",
     "english": "impunity",
     "example": "Straffrihet undergraver rettsstaten.",
@@ -3277,7 +3277,7 @@
   },
   {
     "id": "v-c-advanced-law-justice-004",
-    "norsk": "prejudikat",
+    "norsk": "prejudikat (et)",
     "lemma": "prejudikat",
     "english": "precedent (binding)",
     "example": "Høyesteretts prejudikat veileder lavere domstoler.",
@@ -3289,7 +3289,7 @@
   },
   {
     "id": "v-c-advanced-law-justice-005",
-    "norsk": "habilitet",
+    "norsk": "habilitet (en)",
     "lemma": "habilitet",
     "english": "impartiality / legal competence",
     "example": "Dommerens habilitet ble vurdert før saken startet.",
@@ -3301,7 +3301,7 @@
   },
   {
     "id": "v-c-neuroscience-cognition-001",
-    "norsk": "en synapse",
+    "norsk": "synapse (en)",
     "lemma": "synapse",
     "english": "a synapse",
     "example": "Læring styrker forbindelser mellom synapser.",
@@ -3313,7 +3313,7 @@
   },
   {
     "id": "v-c-neuroscience-cognition-002",
-    "norsk": "et nevron",
+    "norsk": "nevron (et)",
     "lemma": "nevron",
     "english": "a neuron",
     "example": "Hjernen inneholder milliarder av nevroner.",
@@ -3325,7 +3325,7 @@
   },
   {
     "id": "v-c-neuroscience-cognition-003",
-    "norsk": "nevroplastisitet",
+    "norsk": "nevroplastisitet (en)",
     "lemma": "nevroplastisitet",
     "english": "neuroplasticity",
     "example": "Nevroplastisitet gjør at hjernen kan omorganisere seg.",
@@ -3349,7 +3349,7 @@
   },
   {
     "id": "v-c-neuroscience-cognition-005",
-    "norsk": "hippocampus",
+    "norsk": "hippocampus (en)",
     "lemma": "hippocampus",
     "english": "hippocampus",
     "example": "Hippocampus spiller en nøkkelrolle i hukommelse.",
@@ -3361,7 +3361,7 @@
   },
   {
     "id": "v-c-neuroscience-cognition-006",
-    "norsk": "EEG",
+    "norsk": "EEG (et)",
     "lemma": "EEG",
     "english": "EEG (electroencephalogram)",
     "example": "EEG måler elektrisk aktivitet i hjernen.",
@@ -3385,7 +3385,7 @@
   },
   {
     "id": "v-c-climate-environment-policy-002",
-    "norsk": "et klimabudsjett",
+    "norsk": "klimabudsjett (et)",
     "lemma": "klimabudsjett",
     "english": "a climate budget",
     "example": "Klimabudsjettet viser utslippsbanen fram mot 2030.",
@@ -3397,7 +3397,7 @@
   },
   {
     "id": "v-c-climate-environment-policy-003",
-    "norsk": "biodiversitet",
+    "norsk": "biodiversitet (en)",
     "lemma": "biodiversitet",
     "english": "biodiversity",
     "example": "Biodiversitet er avgjørende for robuste økosystemer.",
@@ -3409,7 +3409,7 @@
   },
   {
     "id": "v-c-climate-environment-policy-004",
-    "norsk": "en utslippskvote",
+    "norsk": "utslippskvote (en)",
     "lemma": "utslippskvote",
     "english": "an emissions allowance",
     "example": "Bedriften kjøpte ekstra utslippskvoter.",
@@ -3421,7 +3421,7 @@
   },
   {
     "id": "v-c-climate-environment-policy-005",
-    "norsk": "karbonfangst",
+    "norsk": "karbonfangst (en)",
     "lemma": "karbonfangst",
     "english": "carbon capture",
     "example": "Karbonfangst kan redusere industriens utslipp betydelig.",
@@ -3457,7 +3457,7 @@
   },
   {
     "id": "v-c-sociology-anthropology-002",
-    "norsk": "habitus",
+    "norsk": "habitus (en)",
     "lemma": "habitus",
     "english": "habitus (Bourdieu)",
     "example": "Habitus former våre preferanser og handlinger.",
@@ -3469,7 +3469,7 @@
   },
   {
     "id": "v-c-sociology-anthropology-003",
-    "norsk": "etnografi",
+    "norsk": "etnografi (en)",
     "lemma": "etnografi",
     "english": "ethnography",
     "example": "Etnografi innebærer feltarbeid og observasjon.",
@@ -3481,7 +3481,7 @@
   },
   {
     "id": "v-c-advanced-business-strategy-001",
-    "norsk": "en diversifisering",
+    "norsk": "diversifisering (en)",
     "lemma": "diversifisering",
     "english": "diversification",
     "example": "Diversifisering reduserer risikoen i porteføljen.",
@@ -3493,7 +3493,7 @@
   },
   {
     "id": "v-c-advanced-business-strategy-002",
-    "norsk": "en markedsandel",
+    "norsk": "markedsandel (en)",
     "lemma": "markedsandel",
     "english": "a market share",
     "example": "Selskapet økte markedsandelen i fjor.",
@@ -3505,7 +3505,7 @@
   },
   {
     "id": "v-c-advanced-business-strategy-003",
-    "norsk": "et oppkjøp",
+    "norsk": "oppkjøp (et)",
     "lemma": "oppkjøp",
     "english": "an acquisition",
     "example": "Oppkjøpet styrker selskapets posisjon i markedet.",
@@ -3529,7 +3529,7 @@
   },
   {
     "id": "v-c-advanced-business-strategy-005",
-    "norsk": "et konkurransefortrinn",
+    "norsk": "konkurransefortrinn (et)",
     "lemma": "konkurransefortrinn",
     "english": "a competitive advantage",
     "example": "Innovasjon gir et langsiktig konkurransefortrinn.",
@@ -3541,7 +3541,7 @@
   },
   {
     "id": "v-c-existential-abstract-001",
-    "norsk": "tomhet",
+    "norsk": "tomhet (en)",
     "lemma": "tomhet",
     "english": "emptiness / void",
     "example": "Han beskrev en følelse av eksistensiell tomhet.",
@@ -3553,7 +3553,7 @@
   },
   {
     "id": "v-c-existential-abstract-002",
-    "norsk": "det sublime",
+    "norsk": "det sublime (et)",
     "lemma": "det sublime",
     "english": "the sublime",
     "example": "Fjellene ga henne en opplevelse av det sublime.",
@@ -3565,7 +3565,7 @@
   },
   {
     "id": "v-c-existential-abstract-003",
-    "norsk": "forgjengelighet",
+    "norsk": "forgjengelighet (en)",
     "lemma": "forgjengelighet",
     "english": "impermanence / transience",
     "example": "Kunstverket tematiserer livets forgjengelighet.",
@@ -3589,7 +3589,7 @@
   },
   {
     "id": "v-c-existential-abstract-005",
-    "norsk": "en identitet",
+    "norsk": "identitet (en)",
     "lemma": "identitet",
     "english": "an identity",
     "example": "Identitet kan være både valgt og pålagt.",

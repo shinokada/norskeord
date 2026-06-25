@@ -10,6 +10,7 @@ decks:
     category: occupations
     label: A2 Occupations
 ---
+
 ## Kort forklaring
 
 Både **snekker** og **tømrer** jobber med tre, men de gjør forskjellige typer arbeid.
@@ -34,12 +35,12 @@ Både **snekker** og **tømrer** jobber med tre, men de gjør forskjellige typer
 
 ## Sammenligningstabell
 
-|           | tømrer                                    | snekker                                         |
-| --------- | ----------------------------------------- | ----------------------------------------------- |
-| Betydning | tømrer / konstruksjonsarbeider            | snekker / finsnekker                            |
-| Hovedarbeid | vegger, tak, reisverk, hus              | møbler, kjøkken, trapper, dører                 |
-| Arbeidsplass | byggeplass                             | verksted eller innendørs                        |
-| Register  | teknisk / hverdagslig                     | hverdagslig (brukes også generelt)              |
+|              | tømrer                         | snekker                            |
+| ------------ | ------------------------------ | ---------------------------------- |
+| Betydning    | tømrer / konstruksjonsarbeider | snekker / finsnekker               |
+| Hovedarbeid  | vegger, tak, reisverk, hus     | møbler, kjøkken, trapper, dører    |
+| Arbeidsplass | byggeplass                     | verksted eller innendørs           |
+| Register     | teknisk / hverdagslig          | hverdagslig (brukes også generelt) |
 
 ---
 

@@ -13,6 +13,7 @@ decks:
     category: adverbs
     label: A2 Adverbs
 ---
+
 > **Kort sagt:** **Ordentlig** som adverb betyr «really / properly / thoroughly». Som adjektiv betyr det «proper / decent / reliable». Konteksten — og om det modifiserer et verb eller et substantiv — avgjør hvilken betydning det har.
 
 ## Kort forklaring

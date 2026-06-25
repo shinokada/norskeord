@@ -13,6 +13,7 @@ decks:
     category: phrases
     label: A2 Phrases
 ---
+
 > **Kort sagt:** **Hen** legges til etter **hvor** i muntlig norsk for å tilføye en retnings- eller plasseringsnuanse — «where to» eller «where at». Det er valgfritt og mest uformelt, men svært vanlig og naturlig i dagligtale.
 
 ## Kort forklaring

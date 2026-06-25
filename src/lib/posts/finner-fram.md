@@ -13,6 +13,7 @@ decks:
     category: verbs
     label: A1 Verbs
 ---
+
 > **Kort sagt:** **Finne fram** betyr ikke «find forward» — det betyr å ta frem noe, ofte fra et sted der det var oppbevart eller lagt bort.
 
 ## Kort forklaring
@@ -58,11 +59,11 @@ I de fleste tilfeller er de utbyttbare.
 
 ## Sammenligningstabell
 
-| Uttrykk        | Betydning            | Nyanse                                        |
-| -------------- | -------------------- | --------------------------------------------- |
+| Uttrykk        | Betydning            | Nyanse                                            |
+| -------------- | -------------------- | ------------------------------------------------- |
 | **finne fram** | ta frem / hente frem | antyder at gjenstanden var lagret eller lagt bort |
-| **ta fram**    | ta frem / hente frem | nøytralt, ingen antydning om oppbevaring      |
-| **hente fram** | hente / bringe frem  | lett vekt på det å gå og hente                |
+| **ta fram**    | ta frem / hente frem | nøytralt, ingen antydning om oppbevaring          |
+| **hente fram** | hente / bringe frem  | lett vekt på det å gå og hente                    |
 
 ---
 

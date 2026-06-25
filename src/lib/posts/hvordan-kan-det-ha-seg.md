@@ -13,6 +13,7 @@ decks:
     category: phrases
     label: B1 Phrases
 ---
+
 > **Kort sagt:** **Hvordan kan det ha seg?** betyr "How is that possible?" eller "How can that be?" — et naturlig uttrykk for overraskelse eller nysgjerrighet. Uttrykket **ha seg** er idiomatisk og kan ikke oversettes bokstavelig.
 
 ## Kort forklaring
@@ -76,13 +77,13 @@ Det er mer **formelt og reflektert** enn et enkelt «Hva?» eller «Virkelig?»,
 
 ## Alternativer
 
-| Uttrykk                     | Tone / Bruk                                        |
-| --------------------------- | -------------------------------------------------- |
-| **Hvordan kan det ha seg?** | naturlig, noe formell nysgjerrighet                |
-| **Hvordan er det mulig?**   | litt mer direkte — "How is that possible?"         |
-| **Hvorfor skjedde det?**    | spør etter årsaken — "Why did that happen?"        |
-| **Hva skjedde?**            | mer direkte — "What happened?"                     |
-| **Er det mulig?**           | utbropsform — "Is that even possible?"             |
+| Uttrykk                     | Tone / Bruk                                 |
+| --------------------------- | ------------------------------------------- |
+| **Hvordan kan det ha seg?** | naturlig, noe formell nysgjerrighet         |
+| **Hvordan er det mulig?**   | litt mer direkte — "How is that possible?"  |
+| **Hvorfor skjedde det?**    | spør etter årsaken — "Why did that happen?" |
+| **Hva skjedde?**            | mer direkte — "What happened?"              |
+| **Er det mulig?**           | utbropsform — "Is that even possible?"      |
 
 ---
 

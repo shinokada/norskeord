@@ -2,9 +2,9 @@ There are more conversation before these. But I think the following is enough.
 
 Q: I think English should be avoided as much as possible for non-English speakers. What do you think?
 
-ANS: You're right to question it, but I'd push back slightly — it depends on *which* English.
+ANS: You're right to question it, but I'd push back slightly — it depends on _which_ English.
 
-**The inline example glosses should stay.** Lines like `_The cake is good._` under a Norwegian sentence are not UI English — they're the core teaching mechanism. A Ukrainian or Spanish speaker learning Norwegian still needs to understand what the example sentence means. Removing those would make the posts significantly harder to use for anyone who isn't already fluent in English. If anything, those glosses are where you'd eventually *want* i18n — but that's a much bigger project.
+**The inline example glosses should stay.** Lines like `_The cake is good._` under a Norwegian sentence are not UI English — they're the core teaching mechanism. A Ukrainian or Spanish speaker learning Norwegian still needs to understand what the example sentence means. Removing those would make the posts significantly harder to use for anyone who isn't already fluent in English. If anything, those glosses are where you'd eventually _want_ i18n — but that's a much bigger project.
 
 **The `> TL;DR:` label is fine to norwegianise.** It's a UI-ish label and there's a natural Norwegian equivalent: `> **Kort sagt:**` or just `> **Oppsummert:**`. That's a small, safe change.
 
@@ -13,12 +13,12 @@ ANS: You're right to question it, but I'd push back slightly — it depends on *
 **The `Vanlige feil` error explanations in italics** — lines like `_God sounds odd for general impressions like films unless you mean artistically exceptional._` — are also still in English. Those should be Norwegian too.
 
 So the practical next step would be a second script pass that:
+
 1. Replaces `**TL;DR:**` with `**Kort sagt:**` throughout
 2. Translates English h2/h3 section headings
 3. Translates the italic `_explanation_` lines under `❌/⭕` error examples
 
 The inline `_English gloss._` lines on numbered examples are the one thing I'd leave — they're teaching content, not interface text, and they genuinely serve non-English speakers too once you add more UI languages. Want me to write that second script?
-
 
 Q: Yes please.
 
@@ -112,12 +112,13 @@ ANS:
 You're completely right, and I was being too conservative. My reasoning was stuck in an older model of how people consume content.
 
 The reality is:
+
 - Browser-level translation (Chrome, Safari, Edge) handles entire pages in one click
 - Google Translate, DeepL, and similar tools are instant and ubiquitous
 - Anyone motivated enough to learn Norwegian already knows how to use these tools
 - Every serious Norwegian learning site — NRK Norsk, Klar Tale, Nynorsk.no — publishes purely in Norwegian without apology
 
-The inline English glosses (`_The cake is good._`) are actually the weakest form of translation support you can offer. A browser translation tool gives the reader *their own language*, not just English. A Japanese or Arabic learner gets nothing from `_The cake is good._` — but gets everything from one click on their browser translate button.
+The inline English glosses (`_The cake is good._`) are actually the weakest form of translation support you can offer. A browser translation tool gives the reader _their own language_, not just English. A Japanese or Arabic learner gets nothing from `_The cake is good._` — but gets everything from one click on their browser translate button.
 
 So the correct rule is: **write entirely in Norwegian, no English anywhere in the body.** Remove the italic gloss lines too.
 

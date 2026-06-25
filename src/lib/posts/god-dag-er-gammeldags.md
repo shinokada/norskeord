@@ -6,6 +6,7 @@ cefr: A1
 publishedAt: 2026-06-16
 tags: [greetings, vocabulary, speaking, register]
 ---
+
 > **Kort sagt:** **God dag** er teknisk sett korrekt, men høres formelt og gammeldags ut i hverdagsnorsk. Bruk **hei**, **hei hei** eller **halla** i stedet.
 
 ## Kort forklaring
@@ -37,14 +38,14 @@ Norske hverdagssamtaler bruker nesten alltid noe annet.
 
 ## Sammenligningstabell
 
-| Hilsen         | Register               | Når                                         |
-| -------------- | ---------------------- | ------------------------------------------- |
-| **hei**        | hverdagslig, nøytral   | alltid — det trygge standardvalget          |
-| **hei hei**    | uformell, varm         | uformelle situasjoner, kjente personer      |
-| **halla**      | uformell               | venner, unge mennesker                      |
-| **god morgen** | nøytral–formell        | kun om morgenen                             |
-| **god kveld**  | nøytral–formell        | om kvelden, litt formelt                    |
-| **god dag**    | formell, gammeldags    | unngå i hverdagssamtaler                    |
+| Hilsen         | Register             | Når                                    |
+| -------------- | -------------------- | -------------------------------------- |
+| **hei**        | hverdagslig, nøytral | alltid — det trygge standardvalget     |
+| **hei hei**    | uformell, varm       | uformelle situasjoner, kjente personer |
+| **halla**      | uformell             | venner, unge mennesker                 |
+| **god morgen** | nøytral–formell      | kun om morgenen                        |
+| **god kveld**  | nøytral–formell      | om kvelden, litt formelt               |
+| **god dag**    | formell, gammeldags  | unngå i hverdagssamtaler               |
 
 ---
 

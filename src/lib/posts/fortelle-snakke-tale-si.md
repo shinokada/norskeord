@@ -7,6 +7,7 @@ type: guide
 publishedAt: 2026-11-18
 tags: [verbs, vocabulary]
 ---
+
 > **Kort sagt:** **Snakke** = to talk / speak (everyday). **Fortelle** = to tell (content-focused). **Tale** = to speak (formal). **Si** = to say (exact words).
 
 ## Kort forklaring
@@ -116,12 +117,12 @@ Begge er korrekte, men «fortelle» antyder at du deler noe med noen — det er 
 
 ## Sammenligningstabell
 
-| Verb         | Betekning         | Typisk bruk                              |
-| ------------ | ----------------- | ---------------------------------------- |
-| **snakke**   | å snakke / tale   | samtale, språk, kommunikasjon generelt   |
-| **fortelle** | å fortelle        | informasjon, historier, nyheter til noen |
-| **tale**     | å tale (formelt)  | taler, politikk, religion, faste uttrykk |
-| **si**       | å si              | sitere nøyaktige ord, direkte tale       |
+| Verb         | Betekning        | Typisk bruk                              |
+| ------------ | ---------------- | ---------------------------------------- |
+| **snakke**   | å snakke / tale  | samtale, språk, kommunikasjon generelt   |
+| **fortelle** | å fortelle       | informasjon, historier, nyheter til noen |
+| **tale**     | å tale (formelt) | taler, politikk, religion, faste uttrykk |
+| **si**       | å si             | sitere nøyaktige ord, direkte tale       |
 
 ---
 

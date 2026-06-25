@@ -10,6 +10,7 @@ decks:
     category: greetings
     label: A1 Greetings
 ---
+
 > **Kort sagt:** **På gjensyn** betyr «see you again» — høflig, varmt og litt formelt. Det er vanlig etter timer, møter og avtaler. For uformelle hverdagslige avskjeder er **ha det** eller **vi sees** mer naturlig.
 
 ## Kort forklaring

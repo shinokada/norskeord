@@ -13,6 +13,7 @@ decks:
     category: uttrykk-preview
     label: A2 Uttrykk (preview)
 ---
+
 > **Kort sagt:** Tre hverdagslige norske uttrykk — ett om å være jordnær, ett om skarpe ører og ett om fast lederskap.
 
 ## 1. Å ha begge beina på jorda
