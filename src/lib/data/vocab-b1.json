@@ -10624,22 +10624,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-mental-wellbeing-039",
-    "norsk": "stress (et)",
-    "english": "stress",
-    "ukrainian": "стрес",
-    "spanish": "el estrés",
-    "example": "For mye stress er skadelig.",
-    "example_english": "Too much stress is harmful.",
-    "example_ukrainian": "Занадто багато стресу шкідливо.",
-    "example_spanish": "Demasiado estrés es dañino.",
-    "definition": "En tilstand av press og spenning som oppstår når man har for mange krav.",
-    "level": "B1",
-    "category": "mental-wellbeing",
-    "part": "noun",
-    "lemma": "stress"
-  },
-  {
     "id": "v-b1-mental-wellbeing-040",
     "norsk": "stresset",
     "lemma": "stresset",
@@ -13870,22 +13854,6 @@
     "level": "B1",
     "category": "relationships",
     "part": "noun"
-  },
-  {
-    "id": "v-b1-relationships-029",
-    "norsk": "å savne",
-    "lemma": "savne",
-    "english": "to miss (someone or something)",
-    "ukrainian": "сумувати (за кимось або чимось)",
-    "spanish": "echar de menos / extrañar",
-    "example": "Jeg savner familien min når jeg er borte fra hjemmet i lang tid.",
-    "example_english": "I miss my family when I am away from home for a long time.",
-    "example_ukrainian": "Я сумую за своєю сім'єю, коли довго перебуваю далеко від дому.",
-    "example_spanish": "Extraño a mi familia cuando estoy lejos de casa por mucho tiempo.",
-    "definition": "Å ha en sterk følelse av at du ønsker at noen eller noe du er glad i var her hos deg.",
-    "level": "B1",
-    "category": "relationships",
-    "part": "verb"
   },
   {
     "id": "v-b1-relationships-030",

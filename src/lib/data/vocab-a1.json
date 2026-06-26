@@ -192,7 +192,8 @@
     "example_spanish": "Lo siento, llego tarde.",
     "level": "A1",
     "category": "greetings",
-    "part": "verb"
+    "part": "verb",
+    "definition": "si at man er lei seg"
   },
   {
     "id": "v-a1-greetings-014",
@@ -6237,7 +6238,8 @@
     "example_spanish": "Hay mucha gente en la plaza.",
     "level": "A1",
     "category": "places",
-    "part": "noun"
+    "part": "noun",
+    "definition": "markedsplass"
   },
   {
     "id": "v-a1-places-011",
@@ -7108,22 +7110,8 @@
     "example_spanish": "Echo de menos a mi familia.",
     "level": "A1",
     "category": "feelings",
-    "part": "verb"
-  },
-  {
-    "id": "u-a1-039",
-    "norsk": "Unnskyld",
-    "lemma": "Unnskyld",
-    "english": "Excuse me",
-    "ukrainian": "Вибачте / Пробачте",
-    "spanish": "Perdona / Disculpa",
-    "example": "Unnskyld, jeg forstår ikke. Kan du hjelpe meg?",
-    "example_english": "Excuse me, I do not understand. Can you help me?",
-    "example_ukrainian": "Вибачте, я не розумію. Ви можете мені допомогти?",
-    "example_spanish": "Perdona, no entiendo. ¿Puedes ayudarme?",
-    "level": "A1",
-    "category": "greetings",
-    "part": "interjection"
+    "part": "verb",
+    "definition": "Å ha en sterk følelse av at du ønsker at noen eller noe du er glad i var her hos deg."
   },
   {
     "id": "u-a1-054",

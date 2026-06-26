@@ -552,7 +552,8 @@
     "example_spanish": "Ella pinta un cuadro.",
     "level": "A2",
     "category": "hobbies",
-    "part": "verb"
+    "part": "verb",
+    "definition": "knuse korn for å lage mel"
   },
   {
     "id": "v-a2-hobbies-005",
@@ -762,7 +763,8 @@
     "example_spanish": "Dobla a la izquierda en la iglesia.",
     "level": "A2",
     "category": "directions",
-    "part": "verb"
+    "part": "verb",
+    "definition": "forandre seg"
   },
   {
     "id": "v-a2-directions-002",
@@ -1497,7 +1499,8 @@
     "example_spanish": "¿A qué equipo le vas?",
     "level": "A2",
     "category": "sports",
-    "part": "noun"
+    "part": "noun",
+    "definition": "gruppe, team"
   },
   {
     "id": "v-a2-sports-009",
@@ -1527,7 +1530,8 @@
     "example_spanish": "Perdimos por dos goles.",
     "level": "A2",
     "category": "sports",
-    "part": "verb"
+    "part": "verb",
+    "definition": "bli slått, ikke vinne"
   },
   {
     "id": "v-a2-sports-011",
@@ -1677,7 +1681,8 @@
     "example_spanish": "Hay mucha gente en el estadio.",
     "level": "A2",
     "category": "sports",
-    "part": "noun"
+    "part": "noun",
+    "definition": "bygning med idrettsbaner"
   },
   {
     "id": "v-a2-sports-021",
@@ -1977,7 +1982,8 @@
     "example_spanish": "Se lesionó durante el partido.",
     "level": "A2",
     "category": "health",
-    "part": "noun"
+    "part": "noun",
+    "definition": "ødeleggelse, tap"
   },
   {
     "id": "v-a2-health-016",
@@ -3132,7 +3138,8 @@
     "example_spanish": "Comemos tres comidas al día.",
     "level": "A2",
     "category": "cooking",
-    "part": "noun"
+    "part": "noun",
+    "definition": "tid for spising"
   },
   {
     "id": "v-a2-cooking-018",
@@ -3312,7 +3319,8 @@
     "example_spanish": "Noruega tiene una costa muy larga.",
     "level": "A2",
     "category": "nature",
-    "part": "noun"
+    "part": "noun",
+    "definition": "smalt landområde langs havet"
   },
   {
     "id": "v-a2-nature-010",
@@ -4047,7 +4055,8 @@
     "example_spanish": "Tengo una cita con el médico.",
     "level": "A2",
     "category": "communication",
-    "part": "noun"
+    "part": "noun",
+    "definition": "konvensjon, enighet"
   },
   {
     "id": "v-a2-communication-016",
@@ -4827,7 +4836,8 @@
     "example_spanish": "Todos pueden participar en la actividad.",
     "level": "A2",
     "category": "social-life",
-    "part": "verb"
+    "part": "verb",
+    "definition": "være med på"
   },
   {
     "id": "v-a2-social-life-024",
@@ -5788,7 +5798,8 @@
     "example_spanish": "Hay mucho estrés en el trabajo.",
     "level": "A2",
     "category": "health",
-    "part": "noun"
+    "part": "noun",
+    "definition": "En tilstand av press og spenning som oppstår når man har for mange krav."
   },
   {
     "id": "u-a2-060",

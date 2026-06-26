@@ -1,0 +1,1 @@
+I have a handful of entries in vocab-a1.json and vocab-a2.json with u-a* prefixed IDs. These are clearly data migration artifacts — they belong there content-wise but have wrong ID prefixes. They're not causing any harm right now, but worth a cleanup script at some point to rename them to proper v-a* IDs.
