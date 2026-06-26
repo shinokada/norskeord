@@ -1,0 +1,1569 @@
+vocab-a1.json: no fixes needed
+vocab-a2.json: no fixes needed
+vocab-b1.json: no fixes needed
+
+vocab-b2.json: 520 fix(es)
+  [gender-swap] v-b2-abstract-nouns-070
+    norsk : "forankring" → "forankring (en)" 
+    lemma : "forankring (en)" → "forankring"
+  [gender-swap] v-b2-abstract-nouns-071
+    norsk : "minne" → "minne (et)" 
+    lemma : "minne (et)" → "minne"
+  [gender-swap] v-b2-abstract-nouns-072
+    norsk : "forhold" → "forhold (et)" 
+    lemma : "forhold (et)" → "forhold"
+  [gender-swap] v-b2-abstract-nouns-073
+    norsk : "grunnlag" → "grunnlag (et)" 
+    lemma : "grunnlag (et)" → "grunnlag"
+  [gender-swap] v-b2-abstract-nouns-074
+    norsk : "prosess" → "prosess (en)" 
+    lemma : "prosess (en)" → "prosess"
+  [gender-swap] v-b2-abstract-nouns-075
+    norsk : "betydning" → "betydning (en)" 
+    lemma : "betydning (en)" → "betydning"
+  [gender-swap] v-b2-abstract-nouns-076
+    norsk : "ansvar" → "ansvar (et)" 
+    lemma : "ansvar (et)" → "ansvar"
+  [gender-swap] v-b2-abstract-nouns-077
+    norsk : "ende" → "ende (en)" 
+    lemma : "ende (en)" → "ende"
+  [gender-swap] v-b2-abstract-nouns-078
+    norsk : "begrep" → "begrep (et)" 
+    lemma : "begrep (et)" → "begrep"
+  [gender-swap] v-b2-abstract-nouns-079
+    norsk : "versjon" → "versjon (en)" 
+    lemma : "versjon (en)" → "versjon"
+  [gender-swap] v-b2-abstract-nouns-080
+    norsk : "utvikling" → "utvikling (en)" 
+    lemma : "utvikling (en)" → "utvikling"
+  [gender-swap] v-b2-abstract-nouns-081
+    norsk : "faktor" → "faktor (en)" 
+    lemma : "faktor (en)" → "faktor"
+  [gender-swap] v-b2-abstract-nouns-082
+    norsk : "kapasitet" → "kapasitet (en)" 
+    lemma : "kapasitet (en)" → "kapasitet"
+  [gender-swap] v-b2-abstract-nouns-083
+    norsk : "hendelse" → "hendelse (en)" 
+    lemma : "hendelse (en)" → "hendelse"
+  [gender-swap] v-b2-abstract-nouns-084
+    norsk : "luke" → "luke (en)" 
+    lemma : "luke (en)" → "luke"
+  [gender-swap] v-b2-abstract-nouns-085
+    norsk : "vedlikehold" → "vedlikehold (et)" 
+    lemma : "vedlikehold (et)" → "vedlikehold"
+  [gender-swap] v-b2-abstract-nouns-086
+    norsk : "oversikt" → "oversikt (en)" 
+    lemma : "oversikt (en)" → "oversikt"
+  [gender-swap] v-b2-abstract-nouns-087
+    norsk : "bevegelse" → "bevegelse (en)" 
+    lemma : "bevegelse (en)" → "bevegelse"
+  [gender-swap] v-b2-abstract-nouns-088
+    norsk : "varselsklokke" → "varselsklokke (en)" 
+    lemma : "varselsklokke (en)" → "varselsklokke"
+  [gender-swap] v-b2-abstract-nouns-089
+    norsk : "vis" → "vis (en)" 
+    lemma : "vis (en)" → "vis"
+  [gender-swap] v-b2-abstract-nouns-090
+    norsk : "hell" → "hell (et)" 
+    lemma : "hell (et)" → "hell"
+  [gender-swap] v-b2-abstract-nouns-091
+    norsk : "formål" → "formål (et)" 
+    lemma : "formål (et)" → "formål"
+  [gender-swap] v-b2-abstract-nouns-092
+    norsk : "dritt" → "dritt (en)" 
+    lemma : "dritt (en)" → "dritt"
+  [gender-swap] v-b2-abstract-nouns-093
+    norsk : "kraft" → "kraft (en)" 
+    lemma : "kraft (en)" → "kraft"
+  [gender-swap] v-b2-abstract-nouns-095
+    norsk : "grunn" → "grunn (en)" 
+    lemma : "grunn (en)" → "grunn"
+  [gender-swap] v-b2-abstract-nouns-096
+    norsk : "steg" → "steg (et)" 
+    lemma : "steg (et)" → "steg"
+  [gender-swap] v-b2-academic-language-064
+    norsk : "sosialantropologi" → "sosialantropologi (en)" 
+    lemma : "sosialantropologi (en)" → "sosialantropologi"
+  [gender-swap] v-b2-academic-language-066
+    norsk : "kriterium" → "kriterium (et)" 
+    lemma : "kriterium (et)" → "kriterium"
+  [gender-swap] v-b2-academic-language-070
+    norsk : "løp" → "løp (et)" 
+    lemma : "løp (et)" → "løp"
+  [verb-swap] v-b2-academic-language-071
+    norsk : "oppfylle" → "å oppfylle" 
+    lemma : "å oppfylle" → "oppfylle"
+  [verb-swap] v-b2-academic-language-072
+    norsk : "indikere" → "å indikere" 
+    lemma : "å indikere" → "indikere"
+  [gender-swap] v-b2-academic-language-074
+    norsk : "posisjon" → "posisjon (en)" 
+    lemma : "posisjon (en)" → "posisjon"
+  [verb-swap] v-b2-academic-language-075
+    norsk : "beskrive" → "å beskrive" 
+    lemma : "å beskrive" → "beskrive"
+  [verb-swap] v-b2-academic-language-076
+    norsk : "gjennomgå" → "å gjennomgå" 
+    lemma : "å gjennomgå" → "gjennomgå"
+  [verb-swap] v-b2-academic-language-077
+    norsk : "skyldes" → "å skyldes" 
+    lemma : "å skyldes" → "skyldes"
+  [verb-swap] v-b2-academic-language-078
+    norsk : "oppstå" → "å oppstå" 
+    lemma : "å oppstå" → "oppstå"
+  [verb-swap] v-b2-academic-language-080
+    norsk : "presentere" → "å presentere" 
+    lemma : "å presentere" → "presentere"
+  [gender-swap] v-b2-academic-language-081
+    norsk : "analyse" → "analyse (en)" 
+    lemma : "analyse (en)" → "analyse"
+  [gender-swap] v-b2-academic-language-082
+    norsk : "antakelse" → "antakelse (en)" 
+    lemma : "antakelse (en)" → "antakelse"
+  [verb-swap] v-b2-academic-language-083
+    norsk : "betrakte" → "å betrakte" 
+    lemma : "å betrakte" → "betrakte"
+  [verb-swap] v-b2-advanced-verbs-066
+    norsk : "gidde" → "å gidde" 
+    lemma : "å gidde" → "gidde"
+  [verb-swap] v-b2-advanced-verbs-067
+    norsk : "bedømme" → "å bedømme" 
+    lemma : "å bedømme" → "bedømme"
+  [verb-swap] v-b2-advanced-verbs-068
+    norsk : "droppe" → "å droppe" 
+    lemma : "å droppe" → "droppe"
+  [verb-swap] v-b2-advanced-verbs-069
+    norsk : "forlate" → "å forlate" 
+    lemma : "å forlate" → "forlate"
+  [verb-swap] v-b2-advanced-verbs-070
+    norsk : "innrømme" → "å innrømme" 
+    lemma : "å innrømme" → "innrømme"
+  [verb-swap] v-b2-advanced-verbs-071
+    norsk : "utvikle" → "å utvikle" 
+    lemma : "å utvikle" → "utvikle"
+  [verb-swap] v-b2-advanced-verbs-072
+    norsk : "utnytte" → "å utnytte" 
+    lemma : "å utnytte" → "utnytte"
+  [verb-swap] v-b2-advanced-verbs-073
+    norsk : "sage" → "å sage" 
+    lemma : "å sage" → "sage"
+  [verb-swap] v-b2-advanced-verbs-074
+    norsk : "innlede" → "å innlede" 
+    lemma : "å innlede" → "innlede"
+  [verb-swap] v-b2-advanced-verbs-075
+    norsk : "oppbevare" → "å oppbevare" 
+    lemma : "å oppbevare" → "oppbevare"
+  [verb-swap] v-b2-advanced-verbs-076
+    norsk : "hindre" → "å hindre" 
+    lemma : "å hindre" → "hindre"
+  [verb-swap] v-b2-advanced-verbs-077
+    norsk : "rømme" → "å rømme" 
+    lemma : "å rømme" → "rømme"
+  [verb-swap] v-b2-advanced-verbs-078
+    norsk : "pipe" → "å pipe" 
+    lemma : "å pipe" → "pipe"
+  [verb-swap] v-b2-advanced-verbs-079
+    norsk : "skille" → "å skille" 
+    lemma : "å skille" → "skille"
+  [verb-swap] v-b2-advanced-verbs-080
+    norsk : "foregå" → "å foregå" 
+    lemma : "å foregå" → "foregå"
+  [verb-swap] v-b2-advanced-verbs-081
+    norsk : "plassere" → "å plassere" 
+    lemma : "å plassere" → "plassere"
+  [verb-swap] v-b2-advanced-verbs-082
+    norsk : "oppnå" → "å oppnå" 
+    lemma : "å oppnå" → "oppnå"
+  [verb-swap] v-b2-advanced-verbs-083
+    norsk : "foretrekke" → "å foretrekke" 
+    lemma : "å foretrekke" → "foretrekke"
+  [verb-swap] v-b2-advanced-verbs-085
+    norsk : "oppsøke" → "å oppsøke" 
+    lemma : "å oppsøke" → "oppsøke"
+  [verb-swap] v-b2-advanced-verbs-086
+    norsk : "begrense" → "å begrense" 
+    lemma : "å begrense" → "begrense"
+  [verb-swap] v-b2-advanced-verbs-087
+    norsk : "bevege seg" → "å bevege seg" 
+    lemma : "å bevege seg" → "bevege seg"
+  [verb-swap] v-b2-advanced-verbs-088
+    norsk : "skape" → "å skape" 
+    lemma : "å skape" → "skape"
+  [verb-swap] v-b2-advanced-verbs-089
+    norsk : "utrydde" → "å utrydde" 
+    lemma : "å utrydde" → "utrydde"
+  [verb-swap] v-b2-advanced-verbs-090
+    norsk : "redusere" → "å redusere" 
+    lemma : "å redusere" → "redusere"
+  [verb-swap] v-b2-advanced-verbs-091
+    norsk : "endre" → "å endre" 
+    lemma : "å endre" → "endre"
+  [verb-swap] v-b2-advanced-verbs-092
+    norsk : "skjelve" → "å skjelve" 
+    lemma : "å skjelve" → "skjelve"
+  [verb-swap] v-b2-advanced-verbs-093
+    norsk : "vrake" → "å vrake" 
+    lemma : "å vrake" → "vrake"
+  [verb-swap] v-b2-advanced-verbs-094
+    norsk : "gjette" → "å gjette" 
+    lemma : "å gjette" → "gjette"
+  [verb-swap] v-b2-advanced-verbs-095
+    norsk : "fronte" → "å fronte" 
+    lemma : "å fronte" → "fronte"
+  [verb-swap] v-b2-advanced-verbs-096
+    norsk : "motarbeide" → "å motarbeide" 
+    lemma : "å motarbeide" → "motarbeide"
+  [verb-swap] v-b2-advanced-verbs-097
+    norsk : "utebli" → "å utebli" 
+    lemma : "å utebli" → "utebli"
+  [verb-swap] v-b2-advanced-verbs-098
+    norsk : "stenge" → "å stenge" 
+    lemma : "å stenge" → "stenge"
+  [verb-swap] v-b2-advanced-verbs-099
+    norsk : "overse" → "å overse" 
+    lemma : "å overse" → "overse"
+  [verb-swap] v-b2-advanced-verbs-100
+    norsk : "misbruke" → "å misbruke" 
+    lemma : "å misbruke" → "misbruke"
+  [verb-swap] v-b2-advanced-verbs-101
+    norsk : "konfrontere" → "å konfrontere" 
+    lemma : "å konfrontere" → "konfrontere"
+  [verb-swap] v-b2-advanced-verbs-102
+    norsk : "tåle" → "å tåle" 
+    lemma : "å tåle" → "tåle"
+  [verb-swap] v-b2-advanced-verbs-103
+    norsk : "egne seg" → "å egne seg" 
+    lemma : "å egne seg" → "egne seg"
+  [verb-swap] v-b2-advanced-verbs-104
+    norsk : "undervurdere" → "å undervurdere" 
+    lemma : "å undervurdere" → "undervurdere"
+  [verb-swap] v-b2-advanced-verbs-105
+    norsk : "overlate" → "å overlate" 
+    lemma : "å overlate" → "overlate"
+  [verb-swap] v-b2-advanced-verbs-106
+    norsk : "tape" → "å tape" 
+    lemma : "å tape" → "tape"
+  [verb-swap] v-b2-advanced-verbs-107
+    norsk : "foreta" → "å foreta" 
+    lemma : "å foreta" → "foreta"
+  [verb-swap] v-b2-advanced-verbs-108
+    norsk : "spekulere" → "å spekulere" 
+    lemma : "å spekulere" → "spekulere"
+  [verb-swap] v-b2-advanced-verbs-109
+    norsk : "hamre" → "å hamre" 
+    lemma : "å hamre" → "hamre"
+  [verb-swap] v-b2-advanced-verbs-110
+    norsk : "hugge" → "å hugge" 
+    lemma : "å hugge" → "hugge"
+  [verb-swap] v-b2-advanced-verbs-111
+    norsk : "hevne" → "å hevne" 
+    lemma : "å hevne" → "hevne"
+  [gender-swap] v-b2-advanced-verbs-112
+    norsk : "pådriver" → "pådriver (en)" 
+    lemma : "pådriver (en)" → "pådriver"
+  [verb-swap] v-b2-advanced-verbs-113
+    norsk : "fortjene" → "å fortjene" 
+    lemma : "å fortjene" → "fortjene"
+  [gender-swap] v-b2-argumentation-044
+    norsk : "poeng" → "poeng (et)" 
+    lemma : "poeng (et)" → "poeng"
+  [gender-swap] v-b2-argumentation-045
+    norsk : "syn" → "syn (et)" 
+    lemma : "syn (et)" → "syn"
+  [verb-swap] v-b2-argumentation-046
+    norsk : "utdype" → "å utdype" 
+    lemma : "å utdype" → "utdype"
+  [verb-swap] v-b2-argumentation-047
+    norsk : "hevde" → "å hevde" 
+    lemma : "å hevde" → "hevde"
+  [verb-swap] v-b2-argumentation-048
+    norsk : "påstå" → "å påstå" 
+    lemma : "å påstå" → "påstå"
+  [gender-swap] v-b2-argumentation-049
+    norsk : "standpunkt" → "standpunkt (et)" 
+    lemma : "standpunkt (et)" → "standpunkt"
+  [verb-swap] v-b2-argumentation-050
+    norsk : "godta" → "å godta" 
+    lemma : "å godta" → "godta"
+  [verb-swap] v-b2-argumentation-051
+    norsk : "understreke" → "å understreke" 
+    lemma : "å understreke" → "understreke"
+  [verb-swap] v-b2-argumentation-052
+    norsk : "påpeke" → "å påpeke" 
+    lemma : "å påpeke" → "påpeke"
+  [gender-swap] v-b2-argumentation-053
+    norsk : "påstand" → "påstand (en)" 
+    lemma : "påstand (en)" → "påstand"
+  [gender-swap] v-b2-argumentation-055
+    norsk : "motstemme" → "motstemme (en)" 
+    lemma : "motstemme (en)" → "motstemme"
+  [gender-swap] v-b2-argumentation-056
+    norsk : "ordskifte" → "ordskifte (et)" 
+    lemma : "ordskifte (et)" → "ordskifte"
+  [verb-swap] v-b2-argumentation-057
+    norsk : "slå fast" → "å slå fast" 
+    lemma : "å slå fast" → "slå fast"
+  [verb-swap] v-b2-arts-026
+    norsk : "oppfatte" → "å oppfatte" 
+    lemma : "å oppfatte" → "oppfatte"
+  [gender-swap] v-b2-arts-027
+    norsk : "låtskriver" → "låtskriver (en)" 
+    lemma : "låtskriver (en)" → "låtskriver"
+  [gender-swap] v-b2-arts-028
+    norsk : "kreativitet" → "kreativitet (en)" 
+    lemma : "kreativitet (en)" → "kreativitet"
+  [gender-swap] v-b2-arts-029
+    norsk : "høydepunkt" → "høydepunkt (et)" 
+    lemma : "høydepunkt (et)" → "høydepunkt"
+  [gender-swap] v-b2-arts-030
+    norsk : "symbol" → "symbol (et)" 
+    lemma : "symbol (et)" → "symbol"
+  [verb-swap] v-b2-arts-031
+    norsk : "posere" → "å posere" 
+    lemma : "å posere" → "posere"
+  [gender-swap] v-b2-arts-032
+    norsk : "mester" → "mester (en)" 
+    lemma : "mester (en)" → "mester"
+  [gender-swap] v-b2-arts-033
+    norsk : "kunst" → "kunst (en)" 
+    lemma : "kunst (en)" → "kunst"
+  [gender-swap] v-b2-arts-034
+    norsk : "trykk" → "trykk (et)" 
+    lemma : "trykk (et)" → "trykk"
+  [gender-swap] v-b2-arts-035
+    norsk : "motiv" → "motiv (et)" 
+    lemma : "motiv (et)" → "motiv"
+  [gender-swap] v-b2-arts-036
+    norsk : "kunstverk" → "kunstverk (et)" 
+    lemma : "kunstverk (et)" → "kunstverk"
+  [gender-swap] v-b2-arts-037
+    norsk : "anerkjennelse" → "anerkjennelse (en)" 
+    lemma : "anerkjennelse (en)" → "anerkjennelse"
+  [gender-swap] v-b2-business-028
+    norsk : "prosedyre" → "prosedyre (en)" 
+    lemma : "prosedyre (en)" → "prosedyre"
+  [verb-swap] v-b2-business-029
+    norsk : "overta" → "å overta" 
+    lemma : "å overta" → "overta"
+  [gender-swap] v-b2-business-030
+    norsk : "hensikt" → "hensikt (en)" 
+    lemma : "hensikt (en)" → "hensikt"
+  [verb-swap] v-b2-business-031
+    norsk : "forhandle" → "å forhandle" 
+    lemma : "å forhandle" → "forhandle"
+  [verb-swap] v-b2-business-032
+    norsk : "etablere" → "å etablere" 
+    lemma : "å etablere" → "etablere"
+  [verb-swap] v-b2-business-033
+    norsk : "tvinge" → "å tvinge" 
+    lemma : "å tvinge" → "tvinge"
+  [verb-swap] v-b2-business-034
+    norsk : "sertifisere" → "å sertifisere" 
+    lemma : "å sertifisere" → "sertifisere"
+  [gender-swap] v-b2-business-035
+    norsk : "motto" → "motto (et)" 
+    lemma : "motto (et)" → "motto"
+  [gender-swap] v-b2-business-036
+    norsk : "drift" → "drift (en)" 
+    lemma : "drift (en)" → "drift"
+  [gender-swap] v-b2-business-037
+    norsk : "slagord" → "slagord (et)" 
+    lemma : "slagord (et)" → "slagord"
+  [verb-swap] v-b2-business-038
+    norsk : "opprette" → "å opprette" 
+    lemma : "å opprette" → "opprette"
+  [gender-swap] v-b2-business-039
+    norsk : "oppdrett" → "oppdrett (et)" 
+    lemma : "oppdrett (et)" → "oppdrett"
+  [verb-swap] v-b2-business-040
+    norsk : "disponere" → "å disponere" 
+    lemma : "å disponere" → "disponere"
+  [verb-swap] v-b2-business-041
+    norsk : "tilby" → "å tilby" 
+    lemma : "å tilby" → "tilby"
+  [gender-swap] v-b2-business-042
+    norsk : "markedsføring" → "markedsføring (en)" 
+    lemma : "markedsføring (en)" → "markedsføring"
+  [gender-swap] v-b2-business-043
+    norsk : "frakt" → "frakt (en)" 
+    lemma : "frakt (en)" → "frakt"
+  [verb-swap] v-b2-business-044
+    norsk : "belaste" → "å belaste" 
+    lemma : "å belaste" → "belaste"
+  [verb-swap] v-b2-business-045
+    norsk : "utvide" → "å utvide" 
+    lemma : "å utvide" → "utvide"
+  [verb-swap] v-b2-business-046
+    norsk : "frakte" → "å frakte" 
+    lemma : "å frakte" → "frakte"
+  [verb-swap] v-b2-business-047
+    norsk : "godkjenne" → "å godkjenne" 
+    lemma : "å godkjenne" → "godkjenne"
+  [gender-swap] v-b2-communication-052
+    norsk : "blikk" → "blikk (et)" 
+    lemma : "blikk (et)" → "blikk"
+  [verb-swap] v-b2-communication-053
+    norsk : "misforstå" → "å misforstå" 
+    lemma : "å misforstå" → "misforstå"
+  [gender-swap] v-b2-communication-054
+    norsk : "gest" → "gest (en)" 
+    lemma : "gest (en)" → "gest"
+  [verb-swap] v-b2-communication-055
+    norsk : "nikke" → "å nikke" 
+    lemma : "å nikke" → "nikke"
+  [gender-swap] v-b2-communication-056
+    norsk : "oppfordring" → "oppfordring (en)" 
+    lemma : "oppfordring (en)" → "oppfordring"
+  [gender-swap] v-b2-communication-057
+    norsk : "tilrop" → "tilrop (et)" 
+    lemma : "tilrop (et)" → "tilrop"
+  [verb-swap] v-b2-communication-058
+    norsk : "klage" → "å klage" 
+    lemma : "å klage" → "klage"
+  [verb-swap] v-b2-communication-059
+    norsk : "omtale" → "å omtale" 
+    lemma : "å omtale" → "omtale"
+  [verb-swap] v-b2-communication-060
+    norsk : "orientere" → "å orientere" 
+    lemma : "å orientere" → "orientere"
+  [verb-swap] v-b2-communication-061
+    norsk : "rose" → "å rose" 
+    lemma : "å rose" → "rose"
+  [verb-swap] v-b2-communication-062
+    norsk : "antyde" → "å antyde" 
+    lemma : "å antyde" → "antyde"
+  [gender-swap] v-b2-communication-063
+    norsk : "forslag" → "forslag (et)" 
+    lemma : "forslag (et)" → "forslag"
+  [verb-swap] v-b2-communication-064
+    norsk : "oppfordre" → "å oppfordre" 
+    lemma : "å oppfordre" → "oppfordre"
+  [gender-swap] v-b2-communication-065
+    norsk : "varsel" → "varsel (et)" 
+    lemma : "varsel (et)" → "varsel"
+  [verb-swap] v-b2-communication-066
+    norsk : "oppgi" → "å oppgi" 
+    lemma : "å oppgi" → "oppgi"
+  [gender-swap] v-b2-communication-067
+    norsk : "henvendelse" → "henvendelse (en)" 
+    lemma : "henvendelse (en)" → "henvendelse"
+  [verb-swap] v-b2-communication-068
+    norsk : "mistenkeliggjøre" → "å mistenkeliggjøre" 
+    lemma : "å mistenkeliggjøre" → "mistenkeliggjøre"
+  [gender-swap] v-b2-communication-069
+    norsk : "løgn" → "løgn (en)" 
+    lemma : "løgn (en)" → "løgn"
+  [gender-swap] v-b2-communication-070
+    norsk : "bekreftelse" → "bekreftelse (en)" 
+    lemma : "bekreftelse (en)" → "bekreftelse"
+  [gender-swap] v-b2-communication-071
+    norsk : "synspunkt" → "synspunkt (et)" 
+    lemma : "synspunkt (et)" → "synspunkt"
+  [verb-swap] v-b2-communication-072
+    norsk : "beklage" → "å beklage" 
+    lemma : "å beklage" → "beklage"
+  [gender-swap] v-b2-culture-049
+    norsk : "mellomleggspapir" → "mellomleggspapir (et)" 
+    lemma : "mellomleggspapir (et)" → "mellomleggspapir"
+  [gender-swap] v-b2-culture-050
+    norsk : "bunad" → "bunad (en)" 
+    lemma : "bunad (en)" → "bunad"
+  [verb-swap] v-b2-culture-051
+    norsk : "bevare" → "å bevare" 
+    lemma : "å bevare" → "bevare"
+  [verb-swap] v-b2-culture-052
+    norsk : "assosiere" → "å assosiere" 
+    lemma : "å assosiere" → "assosiere"
+  [gender-swap] v-b2-culture-053
+    norsk : "platting" → "platting (en)" 
+    lemma : "platting (en)" → "platting"
+  [gender-swap] v-b2-culture-054
+    norsk : "dugnad" → "dugnad (en)" 
+    lemma : "dugnad (en)" → "dugnad"
+  [verb-swap] v-b2-culture-055
+    norsk : "skjenke" → "å skjenke" 
+    lemma : "å skjenke" → "skjenke"
+  [gender-swap] v-b2-culture-056
+    norsk : "torg" → "torg (et)" 
+    lemma : "torg (et)" → "torg"
+  [verb-swap] v-b2-culture-057
+    norsk : "oppleve" → "å oppleve" 
+    lemma : "å oppleve" → "oppleve"
+  [gender-swap] v-b2-culture-058
+    norsk : "bane" → "bane (en)" 
+    lemma : "bane (en)" → "bane"
+  [gender-swap] v-b2-culture-059
+    norsk : "stadion" → "stadion (et)" 
+    lemma : "stadion (et)" → "stadion"
+  [gender-swap] v-b2-culture-061
+    norsk : "skikkelse" → "skikkelse (en)" 
+    lemma : "skikkelse (en)" → "skikkelse"
+  [gender-swap] v-b2-culture-062
+    norsk : "trend" → "trend (en)" 
+    lemma : "trend (en)" → "trend"
+  [verb-swap] v-b2-culture-063
+    norsk : "yre" → "å yre" 
+    lemma : "å yre" → "yre"
+  [gender-swap] v-b2-culture-065
+    norsk : "atmosfære" → "atmosfære (en)" 
+    lemma : "atmosfære (en)" → "atmosfære"
+  [verb-swap] v-b2-economics-048
+    norsk : "spå" → "å spå" 
+    lemma : "å spå" → "spå"
+  [gender-swap] v-b2-economics-049
+    norsk : "røverkjøp" → "røverkjøp (et)" 
+    lemma : "røverkjøp (et)" → "røverkjøp"
+  [verb-swap] v-b2-economics-050
+    norsk : "svekke" → "å svekke" 
+    lemma : "å svekke" → "svekke"
+  [verb-swap] v-b2-economics-051
+    norsk : "bidra" → "å bidra" 
+    lemma : "å bidra" → "bidra"
+  [gender-swap] v-b2-economics-052
+    norsk : "tiltak" → "tiltak (et)" 
+    lemma : "tiltak (et)" → "tiltak"
+  [gender-swap] v-b2-economics-053
+    norsk : "avgift" → "avgift (en)" 
+    lemma : "avgift (en)" → "avgift"
+  [gender-swap] v-b2-economics-054
+    norsk : "handel" → "handel (en)" 
+    lemma : "handel (en)" → "handel"
+  [gender-swap] v-b2-economics-055
+    norsk : "fangst" → "fangst (en)" 
+    lemma : "fangst (en)" → "fangst"
+  [gender-swap] v-b2-economics-056
+    norsk : "tømmer" → "tømmer (et)" 
+    lemma : "tømmer (et)" → "tømmer"
+  [verb-swap] v-b2-economics-057
+    norsk : "utvinne" → "å utvinne" 
+    lemma : "å utvinne" → "utvinne"
+  [gender-swap] v-b2-economics-058
+    norsk : "vekst" → "vekst (en)" 
+    lemma : "vekst (en)" → "vekst"
+  [gender-swap] v-b2-economics-059
+    norsk : "handelsvare" → "handelsvare (en)" 
+    lemma : "handelsvare (en)" → "handelsvare"
+  [verb-swap] v-b2-economics-060
+    norsk : "overføre" → "å overføre" 
+    lemma : "å overføre" → "overføre"
+  [verb-swap] v-b2-economics-061
+    norsk : "prioritere" → "å prioritere" 
+    lemma : "å prioritere" → "prioritere"
+  [gender-swap] v-b2-economics-062
+    norsk : "stabilitet" → "stabilitet (en)" 
+    lemma : "stabilitet (en)" → "stabilitet"
+  [verb-swap] v-b2-economics-063
+    norsk : "dekke" → "å dekke" 
+    lemma : "å dekke" → "dekke"
+  [gender-swap] v-b2-economics-064
+    norsk : "konsument" → "konsument (en)" 
+    lemma : "konsument (en)" → "konsument"
+  [gender-swap] v-b2-economics-065
+    norsk : "avdrag" → "avdrag (et)" 
+    lemma : "avdrag (et)" → "avdrag"
+  [gender-swap] v-b2-economics-066
+    norsk : "tap" → "tap (et)" 
+    lemma : "tap (et)" → "tap"
+  [gender-swap] v-b2-economics-067
+    norsk : "beløp" → "beløp (et)" 
+    lemma : "beløp (et)" → "beløp"
+  [verb-swap] v-b2-economics-068
+    norsk : "unngå" → "å unngå" 
+    lemma : "å unngå" → "unngå"
+  [verb-swap] v-b2-economics-069
+    norsk : "planlegge" → "å planlegge" 
+    lemma : "å planlegge" → "planlegge"
+  [verb-swap] v-b2-economics-071
+    norsk : "snu" → "å snu" 
+    lemma : "å snu" → "snu"
+  [verb-swap] v-b2-economics-072
+    norsk : "øke" → "å øke" 
+    lemma : "å øke" → "øke"
+  [gender-swap] v-b2-economics-075
+    norsk : "indre marked" → "indre marked (et)" 
+    lemma : "indre marked (et)" → "indre marked"
+  [gender-swap] v-b2-economics-076
+    norsk : "utvalg" → "utvalg (et)" 
+    lemma : "utvalg (et)" → "utvalg"
+  [gender-swap] v-b2-economics-077
+    norsk : "forbruk" → "forbruk (et)" 
+    lemma : "forbruk (et)" → "forbruk"
+  [gender-swap] v-b2-education-048
+    norsk : "opplæringsspråk" → "opplæringsspråk (et)" 
+    lemma : "opplæringsspråk (et)" → "opplæringsspråk"
+  [gender-swap] v-b2-education-049
+    norsk : "ferdighet" → "ferdighet (en)" 
+    lemma : "ferdighet (en)" → "ferdighet"
+  [gender-swap] v-b2-education-050
+    norsk : "krav" → "krav (et)" 
+    lemma : "krav (et)" → "krav"
+  [gender-swap] v-b2-education-051
+    norsk : "opptak" → "opptak (et)" 
+    lemma : "opptak (et)" → "opptak"
+  [verb-swap] v-b2-education-052
+    norsk : "oppmuntre" → "å oppmuntre" 
+    lemma : "å oppmuntre" → "oppmuntre"
+  [verb-swap] v-b2-education-053
+    norsk : "rette" → "å rette" 
+    lemma : "å rette" → "rette"
+  [verb-swap] v-b2-education-054
+    norsk : "trives" → "å trives" 
+    lemma : "å trives" → "trives"
+  [gender-swap] v-b2-education-055
+    norsk : "råd" → "råd (et)" 
+    lemma : "råd (et)" → "råd"
+  [verb-swap] v-b2-education-056
+    norsk : "repetere" → "å repetere" 
+    lemma : "å repetere" → "repetere"
+  [verb-swap] v-b2-education-057
+    norsk : "pugge" → "å pugge" 
+    lemma : "å pugge" → "pugge"
+  [gender-swap] v-b2-education-058
+    norsk : "bakgrunn" → "bakgrunn (en)" 
+    lemma : "bakgrunn (en)" → "bakgrunn"
+  [gender-swap] v-b2-education-059
+    norsk : "kos" → "kos (en)" 
+    lemma : "kos (en)" → "kos"
+  [gender-swap] v-b2-education-060
+    norsk : "tilbakemelding" → "tilbakemelding (en)" 
+    lemma : "tilbakemelding (en)" → "tilbakemelding"
+  [gender-swap] v-b2-education-061
+    norsk : "stipend" → "stipend (et)" 
+    lemma : "stipend (et)" → "stipend"
+  [gender-swap] v-b2-education-062
+    norsk : "frafall" → "frafall (et)" 
+    lemma : "frafall (et)" → "frafall"
+  [verb-swap] v-b2-education-063
+    norsk : "fullføre" → "å fullføre" 
+    lemma : "å fullføre" → "fullføre"
+  [gender-swap] v-b2-education-064
+    norsk : "auditorium" → "auditorium (et)" 
+    lemma : "auditorium (et)" → "auditorium"
+  [gender-swap] v-b2-education-065
+    norsk : "tilrettelegging" → "tilrettelegging (en)" 
+    lemma : "tilrettelegging (en)" → "tilrettelegging"
+  [gender-swap] v-b2-education-066
+    norsk : "ark" → "ark (et)" 
+    lemma : "ark (et)" → "ark"
+  [gender-swap] v-b2-education-068
+    norsk : "kvalitet" → "kvalitet (en)" 
+    lemma : "kvalitet (en)" → "kvalitet"
+  [verb-swap] v-b2-education-069
+    norsk : "mangle" → "å mangle" 
+    lemma : "å mangle" → "mangle"
+  [verb-swap] v-b2-education-070
+    norsk : "arrangere" → "å arrangere" 
+    lemma : "å arrangere" → "arrangere"
+  [gender-swap] v-b2-emotions-051
+    norsk : "styrke" → "styrke (en)" 
+    lemma : "styrke (en)" → "styrke"
+  [gender-swap] v-b2-emotions-052
+    norsk : "sinne" → "sinne (et)" 
+    lemma : "sinne (et)" → "sinne"
+  [verb-swap] v-b2-emotions-053
+    norsk : "misunne" → "å misunne" 
+    lemma : "å misunne" → "misunne"
+  [verb-swap] v-b2-emotions-054
+    norsk : "orke" → "å orke" 
+    lemma : "å orke" → "orke"
+  [verb-swap] v-b2-emotions-055
+    norsk : "frykte" → "å frykte" 
+    lemma : "å frykte" → "frykte"
+  [gender-swap] v-b2-emotions-059
+    norsk : "medgang" → "medgang (en)" 
+    lemma : "medgang (en)" → "medgang"
+  [gender-swap] v-b2-emotions-060
+    norsk : "motgang" → "motgang (en)" 
+    lemma : "motgang (en)" → "motgang"
+  [verb-swap] v-b2-emotions-062
+    norsk : "bekymre" → "å bekymre" 
+    lemma : "å bekymre" → "bekymre"
+  [verb-swap] v-b2-emotions-063
+    norsk : "grøsse" → "å grøsse" 
+    lemma : "å grøsse" → "grøsse"
+  [verb-swap] v-b2-emotions-067
+    norsk : "overraske" → "å overraske" 
+    lemma : "å overraske" → "overraske"
+  [gender-swap] v-b2-emotions-069
+    norsk : "uvilje" → "uvilje (en)" 
+    lemma : "uvilje (en)" → "uvilje"
+  [gender-swap] v-b2-emotions-072
+    norsk : "lengsel" → "lengsel (en)" 
+    lemma : "lengsel (en)" → "lengsel"
+  [gender-swap] v-b2-emotions-074
+    norsk : "hevn" → "hevn (en)" 
+    lemma : "hevn (en)" → "hevn"
+  [gender-swap] v-b2-emotions-075
+    norsk : "frykt" → "frykt (en)" 
+    lemma : "frykt (en)" → "frykt"
+  [verb-swap] v-b2-environment-053
+    norsk : "forsvinne" → "å forsvinne" 
+    lemma : "å forsvinne" → "forsvinne"
+  [verb-swap] v-b2-environment-054
+    norsk : "kreve" → "å kreve" 
+    lemma : "å kreve" → "kreve"
+  [verb-swap] v-b2-environment-055
+    norsk : "drive" → "å drive" 
+    lemma : "å drive" → "drive"
+  [gender-swap] v-b2-environment-056
+    norsk : "konsekvens" → "konsekvens (en)" 
+    lemma : "konsekvens (en)" → "konsekvens"
+  [verb-swap] v-b2-environment-057
+    norsk : "tilpasse" → "å tilpasse" 
+    lemma : "å tilpasse" → "tilpasse"
+  [gender-swap] v-b2-environment-058
+    norsk : "skifte" → "skifte (et)" 
+    lemma : "skifte (et)" → "skifte"
+  [gender-swap] v-b2-environment-059
+    norsk : "hageflekk" → "hageflekk (en)" 
+    lemma : "hageflekk (en)" → "hageflekk"
+  [verb-swap] v-b2-environment-060
+    norsk : "oppta" → "å oppta" 
+    lemma : "å oppta" → "oppta"
+  [gender-swap] v-b2-environment-061
+    norsk : "støy" → "støy (en)" 
+    lemma : "støy (en)" → "støy"
+  [gender-swap] v-b2-environment-062
+    norsk : "hval" → "hval (en)" 
+    lemma : "hval (en)" → "hval"
+  [verb-swap] v-b2-environment-063
+    norsk : "dyrke" → "å dyrke" 
+    lemma : "å dyrke" → "dyrke"
+  [gender-swap] v-b2-environment-064
+    norsk : "mark" → "mark (en)" 
+    lemma : "mark (en)" → "mark"
+  [gender-swap] v-b2-environment-065
+    norsk : "ressurs" → "ressurs (en)" 
+    lemma : "ressurs (en)" → "ressurs"
+  [gender-swap] v-b2-environment-066
+    norsk : "nedbør" → "nedbør (en)" 
+    lemma : "nedbør (en)" → "nedbør"
+  [gender-swap] v-b2-environment-067
+    norsk : "skade" → "skade (en)" 
+    lemma : "skade (en)" → "skade"
+  [gender-swap] v-b2-environment-068
+    norsk : "villfisk" → "villfisk (en)" 
+    lemma : "villfisk (en)" → "villfisk"
+  [gender-swap] v-b2-environment-069
+    norsk : "avfall" → "avfall (et)" 
+    lemma : "avfall (et)" → "avfall"
+  [gender-swap] v-b2-environment-070
+    norsk : "art" → "art (en)" 
+    lemma : "art (en)" → "art"
+  [gender-swap] v-b2-environment-071
+    norsk : "fôr" → "fôr (et)" 
+    lemma : "fôr (et)" → "fôr"
+  [gender-swap] v-b2-environment-072
+    norsk : "skadevirkning" → "skadevirkning (en)" 
+    lemma : "skadevirkning (en)" → "skadevirkning"
+  [gender-swap] v-b2-environment-073
+    norsk : "tendens" → "tendens (en)" 
+    lemma : "tendens (en)" → "tendens"
+  [verb-swap] v-b2-environment-074
+    norsk : "forbruke" → "å forbruke" 
+    lemma : "å forbruke" → "forbruke"
+  [verb-swap] v-b2-environment-077
+    norsk : "havne" → "å havne" 
+    lemma : "å havne" → "havne"
+  [verb-swap] v-b2-environment-078
+    norsk : "sortere" → "å sortere" 
+    lemma : "å sortere" → "sortere"
+  [verb-swap] v-b2-environment-079
+    norsk : "reparere" → "å reparere" 
+    lemma : "å reparere" → "reparere"
+  [gender-swap] v-b2-environment-080
+    norsk : "gjenbruk" → "gjenbruk (en)" 
+    lemma : "gjenbruk (en)" → "gjenbruk"
+  [verb-swap] v-b2-environment-081
+    norsk : "minske" → "å minske" 
+    lemma : "å minske" → "minske"
+  [gender-swap] v-b2-environment-082
+    norsk : "utbygging" → "utbygging (en)" 
+    lemma : "utbygging (en)" → "utbygging"
+  [gender-swap] v-b2-environment-084
+    norsk : "sløseri" → "sløseri (et)" 
+    lemma : "sløseri (et)" → "sløseri"
+  [gender-swap] v-b2-environment-085
+    norsk : "hvitveis" → "hvitveis (en)" 
+    lemma : "hvitveis (en)" → "hvitveis"
+  [gender-swap] v-b2-environment-086
+    norsk : "mangfold" → "mangfold (et)" 
+    lemma : "mangfold (et)" → "mangfold"
+  [gender-swap] v-b2-environment-087
+    norsk : "trestamme" → "trestamme (en)" 
+    lemma : "trestamme (en)" → "trestamme"
+  [gender-swap] v-b2-environment-088
+    norsk : "humle" → "humle (en)" 
+    lemma : "humle (en)" → "humle"
+  [gender-swap] v-b2-environment-089
+    norsk : "bie" → "bie (en)" 
+    lemma : "bie (en)" → "bie"
+  [gender-swap] v-b2-environment-090
+    norsk : "sommerfugl" → "sommerfugl (en)" 
+    lemma : "sommerfugl (en)" → "sommerfugl"
+  [verb-swap] v-b2-environment-091
+    norsk : "minke" → "å minke" 
+    lemma : "å minke" → "minke"
+  [gender-swap] v-b2-environment-092
+    norsk : "husdyr" → "husdyr (et)" 
+    lemma : "husdyr (et)" → "husdyr"
+  [verb-swap] v-b2-environment-093
+    norsk : "drenere" → "å drenere" 
+    lemma : "å drenere" → "drenere"
+  [verb-swap] v-b2-environment-094
+    norsk : "så" → "å så" 
+    lemma : "å så" → "så"
+  [gender-swap] v-b2-environment-095
+    norsk : "sverm" → "sverm (en)" 
+    lemma : "sverm (en)" → "sverm"
+  [gender-swap] v-b2-environment-096
+    norsk : "advarsel" → "advarsel (en)" 
+    lemma : "advarsel (en)" → "advarsel"
+  [gender-swap] v-b2-geography-040
+    norsk : "område" → "område (et)" 
+    lemma : "område (et)" → "område"
+  [gender-swap] v-b2-geography-041
+    norsk : "kyst" → "kyst (en)" 
+    lemma : "kyst (en)" → "kyst"
+  [gender-swap] v-b2-geography-042
+    norsk : "krabbe" → "krabbe (en)" 
+    lemma : "krabbe (en)" → "krabbe"
+  [gender-swap] v-b2-geography-043
+    norsk : "areal" → "areal (et)" 
+    lemma : "areal (et)" → "areal"
+  [gender-swap] v-b2-geography-044
+    norsk : "distrikt" → "distrikt (et)" 
+    lemma : "distrikt (et)" → "distrikt"
+  [gender-swap] v-b2-geography-045
+    norsk : "havbunn" → "havbunn (en)" 
+    lemma : "havbunn (en)" → "havbunn"
+  [gender-swap] v-b2-geography-046
+    norsk : "ferdsel" → "ferdsel (en)" 
+    lemma : "ferdsel (en)" → "ferdsel"
+  [gender-swap] v-b2-geography-047
+    norsk : "sone" → "sone (en)" 
+    lemma : "sone (en)" → "sone"
+  [gender-swap] v-b2-geography-048
+    norsk : "gangvei" → "gangvei (en)" 
+    lemma : "gangvei (en)" → "gangvei"
+  [gender-swap] v-b2-geography-050
+    norsk : "kratt" → "kratt (et)" 
+    lemma : "kratt (et)" → "kratt"
+  [gender-swap] v-b2-geography-051
+    norsk : "beite" → "beite (et)" 
+    lemma : "beite (et)" → "beite"
+  [gender-swap] v-b2-geography-052
+    norsk : "åker" → "åker (en)" 
+    lemma : "åker (en)" → "åker"
+  [gender-swap] v-b2-geography-053
+    norsk : "avstand" → "avstand (en)" 
+    lemma : "avstand (en)" → "avstand"
+  [gender-swap] v-b2-geography-055
+    norsk : "landsby" → "landsby (en)" 
+    lemma : "landsby (en)" → "landsby"
+  [verb-swap] v-b2-global-issues-045
+    norsk : "støtte" → "å støtte" 
+    lemma : "å støtte" → "støtte"
+  [gender-swap] v-b2-global-issues-046
+    norsk : "utfordring" → "utfordring (en)" 
+    lemma : "utfordring (en)" → "utfordring"
+  [gender-swap] v-b2-global-issues-047
+    norsk : "trussel" → "trussel (en)" 
+    lemma : "trussel (en)" → "trussel"
+  [gender-swap] v-b2-global-issues-048
+    norsk : "sultkatastrofe" → "sultkatastrofe (en)" 
+    lemma : "sultkatastrofe (en)" → "sultkatastrofe"
+  [gender-swap] v-b2-global-issues-049
+    norsk : "fordømmelse" → "fordømmelse (en)" 
+    lemma : "fordømmelse (en)" → "fordømmelse"
+  [gender-swap] v-b2-history-033
+    norsk : "beretning" → "beretning (en)" 
+    lemma : "beretning (en)" → "beretning"
+  [gender-swap] v-b2-history-034
+    norsk : "spor" → "spor (et)" 
+    lemma : "spor (et)" → "spor"
+  [gender-swap] v-b2-history-035
+    norsk : "befrielse" → "befrielse (en)" 
+    lemma : "befrielse (en)" → "befrielse"
+  [gender-swap] v-b2-history-036
+    norsk : "sjøfart" → "sjøfart (en)" 
+    lemma : "sjøfart (en)" → "sjøfart"
+  [verb-swap] v-b2-history-037
+    norsk : "male" → "å male" 
+    lemma : "å male" → "male"
+  [gender-swap] v-b2-history-038
+    norsk : "funn" → "funn (et)" 
+    lemma : "funn (et)" → "funn"
+  [gender-swap] v-b2-history-039
+    norsk : "bosetting" → "bosetting (en)" 
+    lemma : "bosetting (en)" → "bosetting"
+  [verb-swap] v-b2-history-040
+    norsk : "plyndre" → "å plyndre" 
+    lemma : "å plyndre" → "plyndre"
+  [gender-swap] v-b2-history-041
+    norsk : "angrep" → "angrep (et)" 
+    lemma : "angrep (et)" → "angrep"
+  [gender-swap] v-b2-history-042
+    norsk : "kongedømme" → "kongedømme (et)" 
+    lemma : "kongedømme (et)" → "kongedømme"
+  [gender-swap] v-b2-history-043
+    norsk : "begivenhet" → "begivenhet (en)" 
+    lemma : "begivenhet (en)" → "begivenhet"
+  [gender-swap] v-b2-history-044
+    norsk : "høvding" → "høvding (en)" 
+    lemma : "høvding (en)" → "høvding"
+  [gender-swap] v-b2-history-045
+    norsk : "oppløsning" → "oppløsning (en)" 
+    lemma : "oppløsning (en)" → "oppløsning"
+  [gender-swap] v-b2-history-046
+    norsk : "opprinnelse" → "opprinnelse (en)" 
+    lemma : "opprinnelse (en)" → "opprinnelse"
+  [verb-swap] v-b2-history-047
+    norsk : "okkupere" → "å okkupere" 
+    lemma : "å okkupere" → "okkupere"
+  [gender-swap] v-b2-history-048
+    norsk : "motstand" → "motstand (en)" 
+    lemma : "motstand (en)" → "motstand"
+  [verb-swap] v-b2-history-050
+    norsk : "henrette" → "å henrette" 
+    lemma : "å henrette" → "henrette"
+  [gender-swap] v-b2-history-051
+    norsk : "front" → "front (en)" 
+    lemma : "front (en)" → "front"
+  [verb-swap] v-b2-history-052
+    norsk : "sprenge" → "å sprenge" 
+    lemma : "å sprenge" → "sprenge"
+  [verb-swap] v-b2-history-053
+    norsk : "invadere" → "å invadere" 
+    lemma : "å invadere" → "invadere"
+  [gender-swap] v-b2-history-054
+    norsk : "tiår" → "tiår (et)" 
+    lemma : "tiår (et)" → "tiår"
+  [gender-swap] v-b2-language-045
+    norsk : "standardspråk" → "standardspråk (et)" 
+    lemma : "standardspråk (et)" → "standardspråk"
+  [gender-swap] v-b2-language-046
+    norsk : "talemål" → "talemål (et)" 
+    lemma : "talemål (et)" → "talemål"
+  [verb-swap] v-b2-language-047
+    norsk : "beherske" → "å beherske" 
+    lemma : "å beherske" → "beherske"
+  [gender-swap] v-b2-language-048
+    norsk : "tryne" → "tryne (et)" 
+    lemma : "tryne (et)" → "tryne"
+  [gender-swap] v-b2-language-049
+    norsk : "fellestrekk" → "fellestrekk (et)" 
+    lemma : "fellestrekk (et)" → "fellestrekk"
+  [verb-swap] v-b2-law-081
+    norsk : "fastsette" → "å fastsette" 
+    lemma : "å fastsette" → "fastsette"
+  [verb-swap] v-b2-law-082
+    norsk : "forfølge" → "å forfølge" 
+    lemma : "å forfølge" → "forfølge"
+  [verb-swap] v-b2-law-084
+    norsk : "gjelde" → "å gjelde" 
+    lemma : "å gjelde" → "gjelde"
+  [verb-swap] v-b2-law-085
+    norsk : "avgjøre" → "å avgjøre" 
+    lemma : "å avgjøre" → "avgjøre"
+  [verb-swap] v-b2-law-087
+    norsk : "forsvare" → "å forsvare" 
+    lemma : "å forsvare" → "forsvare"
+  [gender-swap] v-b2-law-088
+    norsk : "inngrep" → "inngrep (et)" 
+    lemma : "inngrep (et)" → "inngrep"
+  [gender-swap] v-b2-law-089
+    norsk : "rettighet" → "rettighet (en)" 
+    lemma : "rettighet (en)" → "rettighet"
+  [gender-swap] v-b2-law-090
+    norsk : "avtale" → "avtale (en)" 
+    lemma : "avtale (en)" → "avtale"
+  [verb-swap] v-b2-law-091
+    norsk : "tillate" → "å tillate" 
+    lemma : "å tillate" → "tillate"
+  [gender-swap] v-b2-law-092
+    norsk : "domstol" → "domstol (en)" 
+    lemma : "domstol (en)" → "domstol"
+  [gender-swap] v-b2-law-093
+    norsk : "forpliktelse" → "forpliktelse (en)" 
+    lemma : "forpliktelse (en)" → "forpliktelse"
+  [gender-swap] v-b2-law-094
+    norsk : "forbud" → "forbud (et)" 
+    lemma : "forbud (et)" → "forbud"
+  [gender-swap] v-b2-law-095
+    norsk : "påbud" → "påbud (et)" 
+    lemma : "påbud (et)" → "påbud"
+  [gender-swap] v-b2-law-096
+    norsk : "promille" → "promille (en)" 
+    lemma : "promille (en)" → "promille"
+  [gender-swap] v-b2-law-098
+    norsk : "varsling" → "varsling (en)" 
+    lemma : "varsling (en)" → "varsling"
+  [gender-swap] v-b2-law-099
+    norsk : "lureri" → "lureri (et)" 
+    lemma : "lureri (et)" → "lureri"
+  [verb-swap] v-b2-law-100
+    norsk : "forfalske" → "å forfalske" 
+    lemma : "å forfalske" → "forfalske"
+  [gender-swap] v-b2-law-101
+    norsk : "signaleffekt" → "signaleffekt (en)" 
+    lemma : "signaleffekt (en)" → "signaleffekt"
+  [gender-swap] v-b2-law-102
+    norsk : "hærverk" → "hærverk (et)" 
+    lemma : "hærverk (et)" → "hærverk"
+  [gender-swap] v-b2-law-103
+    norsk : "vern" → "vern (et)" 
+    lemma : "vern (et)" → "vern"
+  [verb-swap] v-b2-law-104
+    norsk : "forby" → "å forby" 
+    lemma : "å forby" → "forby"
+  [verb-swap] v-b2-law-105
+    norsk : "fengsle" → "å fengsle" 
+    lemma : "å fengsle" → "fengsle"
+  [gender-swap] v-b2-law-106
+    norsk : "opphevelse" → "opphevelse (en)" 
+    lemma : "opphevelse (en)" → "opphevelse"
+  [gender-swap] v-b2-law-108
+    norsk : "utpressing" → "utpressing (en)" 
+    lemma : "utpressing (en)" → "utpressing"
+  [verb-swap] v-b2-law-109
+    norsk : "felle (en dom)" → "å felle (en dom)" 
+    lemma : "å felle (en dom)" → "felle (en dom)"
+  [gender-swap] v-b2-law-110
+    norsk : "lovbrudd" → "lovbrudd (et)" 
+    lemma : "lovbrudd (et)" → "lovbrudd"
+  [gender-swap] v-b2-law-111
+    norsk : "offer" → "offer (et)" 
+    lemma : "offer (et)" → "offer"
+  [gender-swap] v-b2-law-113
+    norsk : "maktmisbruk" → "maktmisbruk (et)" 
+    lemma : "maktmisbruk (et)" → "maktmisbruk"
+  [gender-swap] v-b2-law-114
+    norsk : "bevis" → "bevis (et)" 
+    lemma : "bevis (et)" → "bevis"
+  [gender-swap] v-b2-law-115
+    norsk : "adgang" → "adgang (en)" 
+    lemma : "adgang (en)" → "adgang"
+  [verb-swap] v-b2-law-116
+    norsk : "overholde" → "å overholde" 
+    lemma : "å overholde" → "overholde"
+  [gender-swap] v-b2-literature-030
+    norsk : "sitat" → "sitat (et)" 
+    lemma : "sitat (et)" → "sitat"
+  [verb-swap] v-b2-literature-031
+    norsk : "prise" → "å prise" 
+    lemma : "å prise" → "prise"
+  [gender-swap] v-b2-media-045
+    norsk : "undertekst" → "undertekst (en)" 
+    lemma : "undertekst (en)" → "undertekst"
+  [verb-swap] v-b2-media-047
+    norsk : "påvirke" → "å påvirke" 
+    lemma : "å påvirke" → "påvirke"
+  [gender-swap] v-b2-media-048
+    norsk : "hets" → "hets (en)" 
+    lemma : "hets (en)" → "hets"
+  [gender-swap] v-b2-media-049
+    norsk : "kilde" → "kilde (en)" 
+    lemma : "kilde (en)" → "kilde"
+  [verb-swap] v-b2-media-050
+    norsk : "retusjere" → "å retusjere" 
+    lemma : "å retusjere" → "retusjere"
+  [gender-swap] v-b2-media-051
+    norsk : "influenser" → "influenser (en)" 
+    lemma : "influenser (en)" → "influenser"
+  [verb-swap] v-b2-media-052
+    norsk : "spre" → "å spre" 
+    lemma : "å spre" → "spre"
+  [gender-swap] v-b2-media-053
+    norsk : "kanal" → "kanal (en)" 
+    lemma : "kanal (en)" → "kanal"
+  [verb-swap] v-b2-media-054
+    norsk : "overdrive" → "å overdrive" 
+    lemma : "å overdrive" → "overdrive"
+  [gender-swap] v-b2-media-055
+    norsk : "oppmerksomhet" → "oppmerksomhet (en)" 
+    lemma : "oppmerksomhet (en)" → "oppmerksomhet"
+  [verb-swap] v-b2-media-056
+    norsk : "avsløre" → "å avsløre" 
+    lemma : "å avsløre" → "avsløre"
+  [verb-swap] v-b2-media-057
+    norsk : "sensurere" → "å sensurere" 
+    lemma : "å sensurere" → "sensurere"
+  [verb-swap] v-b2-media-058
+    norsk : "offentliggjøre" → "å offentliggjøre" 
+    lemma : "å offentliggjøre" → "offentliggjøre"
+  [gender-swap] v-b2-medicine-027
+    norsk : "autorisasjon" → "autorisasjon (en)" 
+    lemma : "autorisasjon (en)" → "autorisasjon"
+  [verb-swap] v-b2-medicine-028
+    norsk : "trenge" → "å trenge" 
+    lemma : "å trenge" → "trenge"
+  [verb-swap] v-b2-medicine-029
+    norsk : "inhalere" → "å inhalere" 
+    lemma : "å inhalere" → "inhalere"
+  [verb-swap] v-b2-medicine-030
+    norsk : "amme" → "å amme" 
+    lemma : "å amme" → "amme"
+  [verb-swap] v-b2-medicine-031
+    norsk : "beskytte" → "å beskytte" 
+    lemma : "å beskytte" → "beskytte"
+  [verb-swap] v-b2-medicine-032
+    norsk : "smitte" → "å smitte" 
+    lemma : "å smitte" → "smitte"
+  [gender-swap] v-b2-medicine-033
+    norsk : "livsstil" → "livsstil (en)" 
+    lemma : "livsstil (en)" → "livsstil"
+  [gender-swap] v-b2-medicine-034
+    norsk : "måltid" → "måltid (et)" 
+    lemma : "måltid (et)" → "måltid"
+  [gender-swap] v-b2-medicine-035
+    norsk : "mosjon" → "mosjon (en)" 
+    lemma : "mosjon (en)" → "mosjon"
+  [gender-swap] v-b2-medicine-036
+    norsk : "tilskudd" → "tilskudd (et)" 
+    lemma : "tilskudd (et)" → "tilskudd"
+  [gender-swap] v-b2-medicine-037
+    norsk : "kosthold" → "kosthold (et)" 
+    lemma : "kosthold (et)" → "kosthold"
+  [gender-swap] v-b2-medicine-038
+    norsk : "konsultasjon" → "konsultasjon (en)" 
+    lemma : "konsultasjon (en)" → "konsultasjon"
+  [verb-swap] v-b2-medicine-039
+    norsk : "henvise" → "å henvise" 
+    lemma : "å henvise" → "henvise"
+  [gender-swap] v-b2-medicine-040
+    norsk : "behandling" → "behandling (en)" 
+    lemma : "behandling (en)" → "behandling"
+  [gender-swap] v-b2-medicine-041
+    norsk : "oppfølging" → "oppfølging (en)" 
+    lemma : "oppfølging (en)" → "oppfølging"
+  [gender-swap] v-b2-medicine-042
+    norsk : "ernæring" → "ernæring (en)" 
+    lemma : "ernæring (en)" → "ernæring"
+  [verb-swap] v-b2-medicine-043
+    norsk : "behandle" → "å behandle" 
+    lemma : "å behandle" → "behandle"
+  [gender-swap] v-b2-medicine-044
+    norsk : "plage" → "plage (en)" 
+    lemma : "plage (en)" → "plage"
+  [gender-swap] v-b2-medicine-046
+    norsk : "injeksjon" → "injeksjon (en)" 
+    lemma : "injeksjon (en)" → "injeksjon"
+  [gender-swap] v-b2-medicine-047
+    norsk : "tommel" → "tommel (en)" 
+    lemma : "tommel (en)" → "tommel"
+  [gender-swap] v-b2-medicine-048
+    norsk : "tuberkulose" → "tuberkulose (en)" 
+    lemma : "tuberkulose (en)" → "tuberkulose"
+  [verb-swap] v-b2-medicine-049
+    norsk : "sprøyte" → "å sprøyte" 
+    lemma : "å sprøyte" → "sprøyte"
+  [verb-swap] v-b2-medicine-051
+    norsk : "avlive" → "å avlive" 
+    lemma : "å avlive" → "avlive"
+  [gender-swap] v-b2-medicine-053
+    norsk : "kløe" → "kløe (en)" 
+    lemma : "kløe (en)" → "kløe"
+  [gender-swap] v-b2-medicine-054
+    norsk : "virkning" → "virkning (en)" 
+    lemma : "virkning (en)" → "virkning"
+  [gender-swap] v-b2-philosophy-030
+    norsk : "verdi" → "verdi (en)" 
+    lemma : "verdi (en)" → "verdi"
+  [gender-swap] v-b2-philosophy-031
+    norsk : "tilværelse" → "tilværelse (en)" 
+    lemma : "tilværelse (en)" → "tilværelse"
+  [verb-swap] v-b2-philosophy-033
+    norsk : "finnes" → "å finnes" 
+    lemma : "å finnes" → "finnes"
+  [gender-swap] v-b2-philosophy-034
+    norsk : "ideal" → "ideal (et)" 
+    lemma : "ideal (et)" → "ideal"
+  [verb-swap] v-b2-politics-069
+    norsk : "delta" → "å delta" 
+    lemma : "å delta" → "delta"
+  [verb-swap] v-b2-politics-070
+    norsk : "undertegne" → "å undertegne" 
+    lemma : "å undertegne" → "undertegne"
+  [gender-swap] v-b2-politics-071
+    norsk : "forfølgelse" → "forfølgelse (en)" 
+    lemma : "forfølgelse (en)" → "forfølgelse"
+  [verb-swap] v-b2-politics-072
+    norsk : "kjempe" → "å kjempe" 
+    lemma : "å kjempe" → "kjempe"
+  [gender-swap] v-b2-politics-073
+    norsk : "kvote" → "kvote (en)" 
+    lemma : "kvote (en)" → "kvote"
+  [verb-swap] v-b2-politics-074
+    norsk : "fremme" → "å fremme" 
+    lemma : "å fremme" → "fremme"
+  [gender-swap] v-b2-politics-075
+    norsk : "forhandling" → "forhandling (en)" 
+    lemma : "forhandling (en)" → "forhandling"
+  [verb-swap] v-b2-politics-076
+    norsk : "vedta" → "å vedta" 
+    lemma : "å vedta" → "vedta"
+  [verb-swap] v-b2-politics-078
+    norsk : "stemme" → "å stemme" 
+    lemma : "å stemme" → "stemme"
+  [gender-swap] v-b2-politics-079
+    norsk : "valg" → "valg (et)" 
+    lemma : "valg (et)" → "valg"
+  [verb-swap] v-b2-politics-080
+    norsk : "styre" → "å styre" 
+    lemma : "å styre" → "styre"
+  [gender-swap] v-b2-politics-081
+    norsk : "makt" → "makt (en)" 
+    lemma : "makt (en)" → "makt"
+  [gender-swap] v-b2-politics-082
+    norsk : "parti" → "parti (et)" 
+    lemma : "parti (et)" → "parti"
+  [gender-swap] v-b2-politics-083
+    norsk : "fløy" → "fløy (en)" 
+    lemma : "fløy (en)" → "fløy"
+  [verb-swap] v-b2-politics-084
+    norsk : "danne" → "å danne" 
+    lemma : "å danne" → "danne"
+  [verb-swap] v-b2-politics-085
+    norsk : "innfri" → "å innfri" 
+    lemma : "å innfri" → "innfri"
+  [verb-swap] v-b2-politics-086
+    norsk : "erklære" → "å erklære" 
+    lemma : "å erklære" → "erklære"
+  [gender-swap] v-b2-politics-087
+    norsk : "opprør" → "opprør (et)" 
+    lemma : "opprør (et)" → "opprør"
+  [gender-swap] v-b2-politics-088
+    norsk : "oppslutning" → "oppslutning (en)" 
+    lemma : "oppslutning (en)" → "oppslutning"
+  [gender-swap] v-b2-politics-089
+    norsk : "erklæring" → "erklæring (en)" 
+    lemma : "erklæring (en)" → "erklæring"
+  [gender-swap] v-b2-politics-090
+    norsk : "mistillit" → "mistillit (en)" 
+    lemma : "mistillit (en)" → "mistillit"
+  [gender-swap] v-b2-politics-091
+    norsk : "verv" → "verv (et)" 
+    lemma : "verv (et)" → "verv"
+  [gender-swap] v-b2-politics-092
+    norsk : "ytring" → "ytring (en)" 
+    lemma : "ytring (en)" → "ytring"
+  [gender-swap] v-b2-politics-093
+    norsk : "spanning" → "spanning (en)" 
+    lemma : "spanning (en)" → "spanning"
+  [gender-swap] v-b2-politics-094
+    norsk : "reaksjon" → "reaksjon (en)" 
+    lemma : "reaksjon (en)" → "reaksjon"
+  [gender-swap] v-b2-politics-095
+    norsk : "virkemiddel" → "virkemiddel (et)" 
+    lemma : "virkemiddel (et)" → "virkemiddel"
+  [verb-swap] v-b2-politics-096
+    norsk : "oppløse" → "å oppløse" 
+    lemma : "å oppløse" → "oppløse"
+  [gender-swap] v-b2-politics-098
+    norsk : "opposisjon" → "opposisjon (en)" 
+    lemma : "opposisjon (en)" → "opposisjon"
+  [verb-swap] v-b2-politics-099
+    norsk : "avskaffe" → "å avskaffe" 
+    lemma : "å avskaffe" → "avskaffe"
+  [gender-swap] v-b2-politics-100
+    norsk : "sanksjon" → "sanksjon (en)" 
+    lemma : "sanksjon (en)" → "sanksjon"
+  [gender-swap] v-b2-politics-101
+    norsk : "aktør" → "aktør (en)" 
+    lemma : "aktør (en)" → "aktør"
+  [gender-swap] v-b2-politics-102
+    norsk : "makthaver" → "makthaver (en)" 
+    lemma : "makthaver (en)" → "makthaver"
+  [verb-swap] v-b2-politics-103
+    norsk : "anektere" → "å anektere" 
+    lemma : "å anektere" → "anektere"
+  [verb-swap] v-b2-politics-104
+    norsk : "kue" → "å kue" 
+    lemma : "å kue" → "kue"
+  [gender-swap] v-b2-politics-105
+    norsk : "fiende" → "fiende (en)" 
+    lemma : "fiende (en)" → "fiende"
+  [gender-swap] v-b2-politics-106
+    norsk : "vedtak" → "vedtak (et)" 
+    lemma : "vedtak (et)" → "vedtak"
+  [gender-swap] v-b2-politics-107
+    norsk : "dannelse" → "dannelse (en)" 
+    lemma : "dannelse (en)" → "dannelse"
+  [gender-swap] v-b2-politics-109
+    norsk : "enstemmighet" → "enstemmighet (en)" 
+    lemma : "enstemmighet (en)" → "enstemmighet"
+  [gender-swap] v-b2-psychology-043
+    norsk : "væremåte" → "væremåte (en)" 
+    lemma : "væremåte (en)" → "væremåte"
+  [verb-swap] v-b2-psychology-044
+    norsk : "surre" → "å surre" 
+    lemma : "å surre" → "surre"
+  [gender-swap] v-b2-psychology-045
+    norsk : "holdning" → "holdning (en)" 
+    lemma : "holdning (en)" → "holdning"
+  [gender-swap] v-b2-psychology-046
+    norsk : "tilhørighet" → "tilhørighet (en)" 
+    lemma : "tilhørighet (en)" → "tilhørighet"
+  [verb-swap] v-b2-psychology-047
+    norsk : "kverne" → "å kverne" 
+    lemma : "å kverne" → "kverne"
+  [gender-swap] v-b2-psychology-048
+    norsk : "evne" → "evne (en)" 
+    lemma : "evne (en)" → "evne"
+  [verb-swap] v-b2-psychology-050
+    norsk : "forstyrre" → "å forstyrre" 
+    lemma : "å forstyrre" → "forstyrre"
+  [gender-swap] v-b2-psychology-051
+    norsk : "inntrykk" → "inntrykk (et)" 
+    lemma : "inntrykk (et)" → "inntrykk"
+  [verb-swap] v-b2-psychology-052
+    norsk : "takle" → "å takle" 
+    lemma : "å takle" → "takle"
+  [gender-swap] v-b2-psychology-053
+    norsk : "selvtillit" → "selvtillit (en)" 
+    lemma : "selvtillit (en)" → "selvtillit"
+  [gender-swap] v-b2-psychology-054
+    norsk : "sjel" → "sjel (en)" 
+    lemma : "sjel (en)" → "sjel"
+  [gender-swap] v-b2-psychology-055
+    norsk : "sunn fornuft" → "sunn fornuft (en)" 
+    lemma : "sunn fornuft (en)" → "sunn fornuft"
+  [verb-swap] v-b2-psychology-056
+    norsk : "mestre" → "å mestre" 
+    lemma : "å mestre" → "mestre"
+  [gender-swap] v-b2-psychology-057
+    norsk : "angst" → "angst (en)" 
+    lemma : "angst (en)" → "angst"
+  [gender-swap] v-b2-psychology-058
+    norsk : "depresjon" → "depresjon (en)" 
+    lemma : "depresjon (en)" → "depresjon"
+  [gender-swap] v-b2-psychology-059
+    norsk : "skepsis" → "skepsis (en)" 
+    lemma : "skepsis (en)" → "skepsis"
+  [verb-swap] v-b2-psychology-060
+    norsk : "manipulere" → "å manipulere" 
+    lemma : "å manipulere" → "manipulere"
+  [gender-swap] v-b2-psychology-061
+    norsk : "belastning" → "belastning (en)" 
+    lemma : "belastning (en)" → "belastning"
+  [gender-swap] v-b2-psychology-062
+    norsk : "impuls" → "impuls (en)" 
+    lemma : "impuls (en)" → "impuls"
+  [gender-swap] v-b2-relationships-045
+    norsk : "kompis" → "kompis (en)" 
+    lemma : "kompis (en)" → "kompis"
+  [verb-swap] v-b2-relationships-046
+    norsk : "ofre" → "å ofre" 
+    lemma : "å ofre" → "ofre"
+  [verb-swap] v-b2-relationships-047
+    norsk : "tulle" → "å tulle" 
+    lemma : "å tulle" → "tulle"
+  [gender-swap] v-b2-relationships-049
+    norsk : "vielse" → "vielse (en)" 
+    lemma : "vielse (en)" → "vielse"
+  [gender-swap] v-b2-relationships-050
+    norsk : "gjeng" → "gjeng (en)" 
+    lemma : "gjeng (en)" → "gjeng"
+  [gender-swap] v-b2-relationships-052
+    norsk : "dust" → "dust (en)" 
+    lemma : "dust (en)" → "dust"
+  [gender-swap] v-b2-relationships-053
+    norsk : "tillit" → "tillit (en)" 
+    lemma : "tillit (en)" → "tillit"
+  [gender-swap] v-b2-relationships-054
+    norsk : "tenåring" → "tenåring (en)" 
+    lemma : "tenåring (en)" → "tenåring"
+  [gender-swap] v-b2-relationships-055
+    norsk : "omgang" → "omgang (en)" 
+    lemma : "omgang (en)" → "omgang"
+  [gender-swap] v-b2-relationships-056
+    norsk : "bakvaskelse" → "bakvaskelse (en)" 
+    lemma : "bakvaskelse (en)" → "bakvaskelse"
+  [gender-swap] v-b2-relationships-057
+    norsk : "framferd" → "framferd (en)" 
+    lemma : "framferd (en)" → "framferd"
+  [verb-swap] v-b2-relationships-058
+    norsk : "svikte" → "å svikte" 
+    lemma : "å svikte" → "svikte"
+  [gender-swap] v-b2-science-028
+    norsk : "feltarbeid" → "feltarbeid (et)" 
+    lemma : "feltarbeid (et)" → "feltarbeid"
+  [verb-swap] v-b2-science-029
+    norsk : "trekke ut" → "å trekke ut" 
+    lemma : "å trekke ut" → "trekke ut"
+  [gender-swap] v-b2-science-030
+    norsk : "bidrag" → "bidrag (et)" 
+    lemma : "bidrag (et)" → "bidrag"
+  [gender-swap] v-b2-science-031
+    norsk : "nysgjerrighet" → "nysgjerrighet (en)" 
+    lemma : "nysgjerrighet (en)" → "nysgjerrighet"
+  [verb-swap] v-b2-science-032
+    norsk : "oppdage" → "å oppdage" 
+    lemma : "å oppdage" → "oppdage"
+  [gender-swap] v-b2-science-034
+    norsk : "innsikt" → "innsikt (en)" 
+    lemma : "innsikt (en)" → "innsikt"
+  [verb-swap] v-b2-science-035
+    norsk : "utforske" → "å utforske" 
+    lemma : "å utforske" → "utforske"
+  [gender-swap] v-b2-science-036
+    norsk : "metode" → "metode (en)" 
+    lemma : "metode (en)" → "metode"
+  [verb-swap] v-b2-science-037
+    norsk : "konstruere" → "å konstruere" 
+    lemma : "å konstruere" → "konstruere"
+  [gender-swap] v-b2-science-038
+    norsk : "insekt" → "insekt (et)" 
+    lemma : "insekt (et)" → "insekt"
+  [gender-swap] v-b2-science-039
+    norsk : "mengde" → "mengde (en)" 
+    lemma : "mengde (en)" → "mengde"
+  [gender-swap] v-b2-science-040
+    norsk : "framskritt" → "framskritt (et)" 
+    lemma : "framskritt (et)" → "framskritt"
+  [gender-swap] v-b2-social-issues-061
+    norsk : "samfunn" → "samfunn (et)" 
+    lemma : "samfunn (et)" → "samfunn"
+  [gender-swap] v-b2-social-issues-062
+    norsk : "befolkning" → "befolkning (en)" 
+    lemma : "befolkning (en)" → "befolkning"
+  [verb-swap] v-b2-social-issues-063
+    norsk : "anerkjenne" → "å anerkjenne" 
+    lemma : "å anerkjenne" → "anerkjenne"
+  [gender-swap] v-b2-social-issues-065
+    norsk : "funksjonshemning" → "funksjonshemning (en)" 
+    lemma : "funksjonshemning (en)" → "funksjonshemning"
+  [gender-swap] v-b2-social-issues-066
+    norsk : "nabolag" → "nabolag (et)" 
+    lemma : "nabolag (et)" → "nabolag"
+  [verb-swap] v-b2-social-issues-067
+    norsk : "tilrettelegge" → "å tilrettelegge" 
+    lemma : "å tilrettelegge" → "tilrettelegge"
+  [gender-swap] v-b2-social-issues-068
+    norsk : "tilgang" → "tilgang (en)" 
+    lemma : "tilgang (en)" → "tilgang"
+  [gender-swap] v-b2-social-issues-069
+    norsk : "brutalitet" → "brutalitet (en)" 
+    lemma : "brutalitet (en)" → "brutalitet"
+  [gender-swap] v-b2-social-issues-070
+    norsk : "aksjon" → "aksjon (en)" 
+    lemma : "aksjon (en)" → "aksjon"
+  [gender-swap] v-b2-social-issues-071
+    norsk : "medlem" → "medlem (et)" 
+    lemma : "medlem (et)" → "medlem"
+  [gender-swap] v-b2-social-issues-072
+    norsk : "gode" → "gode (et)" 
+    lemma : "gode (et)" → "gode"
+  [gender-swap] v-b2-social-issues-074
+    norsk : "husstand" → "husstand (en)" 
+    lemma : "husstand (en)" → "husstand"
+  [gender-swap] v-b2-social-issues-075
+    norsk : "tabu" → "tabu (et)" 
+    lemma : "tabu (et)" → "tabu"
+  [gender-swap] v-b2-social-issues-076
+    norsk : "katastrofe" → "katastrofe (en)" 
+    lemma : "katastrofe (en)" → "katastrofe"
+  [gender-swap] v-b2-social-issues-077
+    norsk : "urett" → "urett (en)" 
+    lemma : "urett (en)" → "urett"
+  [gender-swap] v-b2-social-issues-078
+    norsk : "radikalisering" → "radikalisering (en)" 
+    lemma : "radikalisering (en)" → "radikalisering"
+  [gender-swap] v-b2-social-issues-079
+    norsk : "bilist" → "bilist (en)" 
+    lemma : "bilist (en)" → "bilist"
+  [gender-swap] v-b2-social-issues-081
+    norsk : "hindring" → "hindring (en)" 
+    lemma : "hindring (en)" → "hindring"
+  [gender-swap] v-b2-social-issues-083
+    norsk : "homofil legning" → "homofil legning (en)" 
+    lemma : "homofil legning (en)" → "homofil legning"
+  [gender-swap] v-b2-social-issues-086
+    norsk : "diskriminering" → "diskriminering (en)" 
+    lemma : "diskriminering (en)" → "diskriminering"
+  [gender-swap] v-b2-social-issues-087
+    norsk : "arena" → "arena (en)" 
+    lemma : "arena (en)" → "arena"
+  [gender-swap] v-b2-social-issues-088
+    norsk : "solidaritet" → "solidaritet (en)" 
+    lemma : "solidaritet (en)" → "solidaritet"
+  [verb-swap] v-b2-technology-046
+    norsk : "erstatte" → "å erstatte" 
+    lemma : "å erstatte" → "erstatte"
+  [verb-swap] v-b2-technology-049
+    norsk : "funke" → "å funke" 
+    lemma : "å funke" → "funke"
+  [gender-swap] v-b2-technology-050
+    norsk : "rør" → "rør (et)" 
+    lemma : "rør (et)" → "rør"
+  [gender-swap] v-b2-technology-051
+    norsk : "anlegg" → "anlegg (et)" 
+    lemma : "anlegg (et)" → "anlegg"
+  [gender-swap] v-b2-technology-052
+    norsk : "turbin" → "turbin (en)" 
+    lemma : "turbin (en)" → "turbin"
+  [gender-swap] v-b2-technology-053
+    norsk : "meny" → "meny (en)" 
+    lemma : "meny (en)" → "meny"
+  [verb-swap] v-b2-technology-054
+    norsk : "oppdatere" → "å oppdatere" 
+    lemma : "å oppdatere" → "oppdatere"
+  [gender-swap] v-b2-technology-055
+    norsk : "vedlegg" → "vedlegg (et)" 
+    lemma : "vedlegg (et)" → "vedlegg"
+  [verb-swap] v-b2-technology-056
+    norsk : "lagre" → "å lagre" 
+    lemma : "å lagre" → "lagre"
+  [verb-swap] v-b2-technology-057
+    norsk : "installere" → "å installere" 
+    lemma : "å installere" → "installere"
+  [gender-swap] v-b2-work-career-047
+    norsk : "lag" → "lag (et)" 
+    lemma : "lag (et)" → "lag"
+  [verb-swap] v-b2-work-career-048
+    norsk : "utgjøre" → "å utgjøre" 
+    lemma : "å utgjøre" → "utgjøre"
+  [verb-swap] v-b2-work-career-049
+    norsk : "verdsette" → "å verdsette" 
+    lemma : "å verdsette" → "verdsette"
+  [verb-swap] v-b2-work-career-050
+    norsk : "håndtere" → "å håndtere" 
+    lemma : "å håndtere" → "håndtere"
+  [verb-swap] v-b2-work-career-051
+    norsk : "framstå" → "å framstå" 
+    lemma : "å framstå" → "framstå"
+  [gender-swap] v-b2-work-career-052
+    norsk : "trivsel" → "trivsel (en)" 
+    lemma : "trivsel (en)" → "trivsel"
+  [gender-swap] v-b2-work-career-053
+    norsk : "innsats" → "innsats (en)" 
+    lemma : "innsats (en)" → "innsats"
+  [gender-swap] v-b2-work-career-058
+    norsk : "kompetanse" → "kompetanse (en)" 
+    lemma : "kompetanse (en)" → "kompetanse"
+  [verb-swap] v-b2-work-career-059
+    norsk : "utføre" → "å utføre" 
+    lemma : "å utføre" → "utføre"
+  [gender-swap] v-b2-work-career-060
+    norsk : "gølv" → "gølv (et)" 
+    lemma : "gølv (et)" → "gølv"
+  [gender-swap] v-b2-work-career-061
+    norsk : "yrkesdeltakelse" → "yrkesdeltakelse (en)" 
+    lemma : "yrkesdeltakelse (en)" → "yrkesdeltakelse"
+  [gender-swap] v-b2-work-career-062
+    norsk : "slit" → "slit (et)" 
+    lemma : "slit (et)" → "slit"
+  [verb-swap] v-b2-work-career-063
+    norsk : "lykkes" → "å lykkes" 
+    lemma : "å lykkes" → "lykkes"
+  [verb-swap] v-b2-work-career-064
+    norsk : "innebære" → "å innebære" 
+    lemma : "å innebære" → "innebære"
+  [gender-swap] v-b2-advanced-nouns-001
+    norsk : "utseende" → "utseende (et)" 
+    lemma : "utseende (et)" → "utseende"
+vocab-c.json: no fixes needed
+
+[DRY RUN] Total fixed: 520 entries across 5 file(s)
+No files written.
