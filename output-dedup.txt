@@ -1,0 +1,198 @@
+  ✓ uttrykk-a1.json: no duplicates found
+  ✓ uttrykk-a2.json: no duplicates found
+  ✓ uttrykk-b1.json: no duplicates found
+  [uttrykk-b2-new.json] KEEP "satse på" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "en del" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "ta tid" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "bli utsatt for" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "utsette noen for noe" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "rett og slett" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "ta hensyn til" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "stille opp" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "sette seg inn i" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "ta vare på" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [uttrykk-b2-new.json] KEEP "gå an" in [uttrykk] (303 entries), REMOVE from [uttrykk] (303 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  → uttrykk-b2-new.json: removed 11 duplicate(s) (303 → 292 entries)
+  ✓ uttrykk-b2.json: no duplicates found
+  [vocab-a1.json] KEEP "is (en)" in [weather] (21 entries), REMOVE from [food] (25 entries)
+  [vocab-a1.json] KEEP "sol (en)" in [weather] (21 entries), REMOVE from [weather] (21 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  → vocab-a1.json: removed 2 duplicate(s) (474 → 472 entries)
+  [vocab-a2.json] KEEP "klima (et)" in [environment] (9 entries), REMOVE from [environment] (9 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  → vocab-a2.json: removed 1 duplicate(s) (389 → 388 entries)
+  [vocab-b1.json] KEEP "husleie (en)" in [accommodation] (32 entries), REMOVE from [city-life] (33 entries)
+  [vocab-b1.json] KEEP "oppussing (en)" in [urban-life] (13 entries), REMOVE from [accommodation] (32 entries)
+  [vocab-b1.json] KEEP "visning (en)" in [accommodation] (32 entries), REMOVE from [accommodation] (32 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "fellesareal (et)" in [urban-life] (13 entries), REMOVE from [accommodation] (32 entries)
+  [vocab-b1.json] KEEP "å leie" in [accommodation] (32 entries), REMOVE from [accommodation] (32 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "skuespill (et)" in [arts-culture] (27 entries), REMOVE from [arts-culture] (27 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "utstilling (en)" in [arts-culture] (27 entries), REMOVE from [culture] (40 entries)
+  [vocab-b1.json] KEEP "bysentrum (et)" in [urban-life] (13 entries), REMOVE from [city-life] (33 entries)
+  [vocab-b1.json] KEEP "utkant (en)" in [urban-life] (13 entries), REMOVE from [city-life] (33 entries)
+  [vocab-b1.json] KEEP "å avbryte" in [communication-skills] (74 entries), REMOVE from [communication-skills] (74 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "å diskutere" in [reasoning] (50 entries), REMOVE from [communication-skills] (74 entries)
+  [vocab-b1.json] KEEP "å kommunisere" in [relationships] (48 entries), REMOVE from [communication-skills] (74 entries)
+  [vocab-b1.json] KEEP "reaksjon (en)" in [science-nature] (53 entries), REMOVE from [communication-skills] (74 entries)
+  [vocab-b1.json] KEEP "å grille" in [cooking] (35 entries), REMOVE from [cooking] (35 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "å bestille" in [cooking] (35 entries), REMOVE from [travel] (39 entries)
+  [vocab-b1.json] KEEP "arbeidsgiver (en)" in [economics] (24 entries), REMOVE from [work] (61 entries)
+  [vocab-b1.json] KEEP "arbeidstaker (en)" in [economics] (24 entries), REMOVE from [work] (61 entries)
+  [vocab-b1.json] KEEP "skatt (en)" in [economics] (24 entries), REMOVE from [finance] (36 entries)
+  [vocab-b1.json] KEEP "høyskole (en)" in [education] (48 entries), REMOVE from [education] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "karakter (en)" in [education] (48 entries), REMOVE from [education] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "stipend (et)" in [education] (48 entries), REMOVE from [education] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "vitnemål (et)" in [education] (48 entries), REMOVE from [education] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "avskoging (en)" in [environment] (31 entries), REMOVE from [sustainability] (32 entries)
+  [vocab-b1.json] KEEP "solenergi (en)" in [environment] (31 entries), REMOVE from [sustainability] (32 entries)
+  [vocab-b1.json] KEEP "avfall (et)" in [environment] (31 entries), REMOVE from [sustainability] (32 entries)
+  [vocab-b1.json] KEEP "utslipp (et)" in [environment] (31 entries), REMOVE from [environment] (31 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "å forurense" in [environment] (31 entries), REMOVE from [environment] (31 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "å redusere" in [environment] (31 entries), REMOVE from [sustainability] (32 entries)
+  [vocab-b1.json] KEEP "argument (et)" in [reasoning] (50 entries), REMOVE from [expressing-opinions] (77 entries)
+  [vocab-b1.json] KEEP "å argumentere" in [reasoning] (50 entries), REMOVE from [expressing-opinions] (77 entries)
+  [vocab-b1.json] KEEP "debatt (en)" in [media] (29 entries), REMOVE from [expressing-opinions] (77 entries)
+  [vocab-b1.json] KEEP "å kritisere" in [media] (29 entries), REMOVE from [expressing-opinions] (77 entries)
+  [vocab-b1.json] KEEP "ansvar (et)" in [family] (27 entries), REMOVE from [work] (61 entries)
+  [vocab-b1.json] KEEP "samboer (en)" in [family] (27 entries), REMOVE from [relationships] (48 entries)
+  [vocab-b1.json] KEEP "ekteskap (et)" in [family] (27 entries), REMOVE from [relationships] (48 entries)
+  [vocab-b1.json] KEEP "generasjon (en)" in [family] (27 entries), REMOVE from [traditions] (32 entries)
+  [vocab-b1.json] KEEP "generasjon (en)" in [family] (27 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "gjeld (en)" in [finance] (36 entries), REMOVE from [finance] (36 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "regning (en)" in [finance] (36 entries), REMOVE from [finance] (36 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "rente (en)" in [finance] (36 entries), REMOVE from [finance] (36 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "forsikring (en)" in [finance] (36 entries), REMOVE from [travel] (39 entries)
+  [vocab-b1.json] KEEP "behandling (en)" in [healthcare] (31 entries), REMOVE from [health] (57 entries)
+  [vocab-b1.json] KEEP "diagnose (en)" in [healthcare] (31 entries), REMOVE from [health] (57 entries)
+  [vocab-b1.json] KEEP "ernæring (en)" in [healthcare] (31 entries), REMOVE from [health] (57 entries)
+  [vocab-b1.json] KEEP "rehabilitering (en)" in [healthcare] (31 entries), REMOVE from [health] (57 entries)
+  [vocab-b1.json] KEEP "symptom (et)" in [healthcare] (31 entries), REMOVE from [health] (57 entries)
+  [vocab-b1.json] KEEP "gravid" in [health] (57 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "kosthold (et)" in [healthcare] (31 entries), REMOVE from [health] (57 entries)
+  [vocab-b1.json] KEEP "egenandel (en)" in [healthcare] (31 entries), REMOVE from [healthcare] (31 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "helsevesen (et)" in [healthcare] (31 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "artikkel (en)" in [journalism] (20 entries), REMOVE from [journalism] (20 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "redaktør (en)" in [journalism] (20 entries), REMOVE from [journalism] (20 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "reportasje (en)" in [journalism] (20 entries), REMOVE from [journalism] (20 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "kilde (en)" in [journalism] (20 entries), REMOVE from [media] (29 entries)
+  [vocab-b1.json] KEEP "reklame (en)" in [journalism] (20 entries), REMOVE from [media] (29 entries)
+  [vocab-b1.json] KEEP "dialekt (en)" in [language-learning] (39 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "sammenheng (en)" in [language-learning] (39 entries), REMOVE from [reasoning] (50 entries)
+  [vocab-b1.json] KEEP "å huske" in [language-learning] (39 entries), REMOVE from [personal-growth] (68 entries)
+  [vocab-b1.json] KEEP "å dele" in [media] (29 entries), REMOVE from [relationships] (48 entries)
+  [vocab-b1.json] KEEP "grense (en)" in [travel] (39 entries), REMOVE from [mental-wellbeing] (60 entries)
+  [vocab-b1.json] KEEP "drøm (en)" in [personal-growth] (68 entries), REMOVE from [personal-growth] (68 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "ressurs (en)" in [sustainability] (32 entries), REMOVE from [personal-growth] (68 entries)
+  [vocab-b1.json] KEEP "rolle (en)" in [personal-growth] (68 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "utfordring (en)" in [personal-growth] (68 entries), REMOVE from [personal-growth] (68 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "demokrati (et)" in [politics] (51 entries), REMOVE from [politics] (51 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "flyktning (en)" in [politics] (51 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "grunnlov (en)" in [politics] (51 entries), REMOVE from [politics] (51 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "rettighet (en)" in [politics] (51 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "samfunn (et)" in [politics] (51 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "valg (et)" in [politics] (51 entries), REMOVE from [society] (93 entries)
+  [vocab-b1.json] KEEP "fordel (en)" in [reasoning] (50 entries), REMOVE from [reasoning] (50 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "konflikt (en)" in [relationships] (48 entries), REMOVE from [relationships] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "skilsmisse (en)" in [relationships] (48 entries), REMOVE from [relationships] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "forhold (et)" in [relationships] (48 entries), REMOVE from [relationships] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "å savne" in [relationships] (48 entries), REMOVE from [relationships] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "forsker (en)" in [science-nature] (53 entries), REMOVE from [science-nature] (53 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "innvandrer (en)" in [society] (93 entries), REMOVE from [society] (93 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "velferdsstat (en)" in [society] (93 entries), REMOVE from [society] (93 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "elbil (en)" in [sustainability] (32 entries), REMOVE from [sustainability] (32 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "robot (en)" in [technology] (32 entries), REMOVE from [technology] (32 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "tradisjon (en)" in [traditions] (32 entries), REMOVE from [traditions] (32 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "CV (en)" in [work] (61 entries), REMOVE from [work] (61 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "fagforening (en)" in [workplace] (25 entries), REMOVE from [work] (61 entries)
+  [vocab-b1.json] KEEP "karriere (en)" in [work] (61 entries), REMOVE from [work] (61 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b1.json] KEEP "kompetanse (en)" in [workplace] (25 entries), REMOVE from [work] (61 entries)
+  [vocab-b1.json] KEEP "søknad (en)" in [workplace] (25 entries), REMOVE from [work] (61 entries)
+  [vocab-b1.json] KEEP "å ansette" in [workplace] (25 entries), REMOVE from [work] (61 entries)
+  → vocab-b1.json: removed 87 duplicate(s) (1347 → 1260 entries)
+  [vocab-b2-new.json] KEEP "område" in [geography] (17 entries), REMOVE from [economics] (38 entries)
+  [vocab-b2-new.json] KEEP "overta" in [business] (23 entries), REMOVE from [business] (23 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "opprette" in [business] (23 entries), REMOVE from [politics] (48 entries)
+  [vocab-b2-new.json] KEEP "formål" in [abstract-nouns] (29 entries), REMOVE from [social-issues] (30 entries)
+  [vocab-b2-new.json] KEEP "uansett" in [discourse-markers] (19 entries), REMOVE from [law] (41 entries)
+  [vocab-b2-new.json] KEEP "kreve" in [environment] (47 entries), REMOVE from [advanced-verbs] (54 entries)
+  [vocab-b2-new.json] KEEP "støtte" in [global-issues] (6 entries), REMOVE from [economics] (38 entries)
+  [vocab-b2-new.json] KEEP "utfordring" in [global-issues] (6 entries), REMOVE from [global-issues] (6 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "påvirke" in [media] (15 entries), REMOVE from [psychology] (24 entries)
+  [vocab-b2-new.json] KEEP "etablere" in [business] (23 entries), REMOVE from [business] (23 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "overalt" in [technology] (15 entries), REMOVE from [academic-language] (23 entries)
+  [vocab-b2-new.json] KEEP "tilfeldig" in [advanced-adjectives] (74 entries), REMOVE from [advanced-adjectives] (74 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "viss" in [advanced-adjectives] (74 entries), REMOVE from [advanced-adjectives] (74 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "holdning" in [psychology] (24 entries), REMOVE from [psychology] (24 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "verdi" in [philosophy] (6 entries), REMOVE from [abstract-nouns] (29 entries)
+  [vocab-b2-new.json] KEEP "svekke" in [economics] (38 entries), REMOVE from [advanced-verbs] (54 entries)
+  [vocab-b2-new.json] KEEP "oppleve" in [culture] (17 entries), REMOVE from [psychology] (24 entries)
+  [vocab-b2-new.json] KEEP "utgjøre" in [work-career] (19 entries), REMOVE from [advanced-verbs] (54 entries)
+  [vocab-b2-new.json] KEEP "håndtere" in [work-career] (19 entries), REMOVE from [advanced-verbs] (54 entries)
+  [vocab-b2-new.json] KEEP "bevare" in [culture] (17 entries), REMOVE from [environment] (47 entries)
+  [vocab-b2-new.json] KEEP "reell" in [politics] (48 entries), REMOVE from [advanced-adjectives] (74 entries)
+  [vocab-b2-new.json] KEEP "nysgjerrig" in [emotions] (36 entries), REMOVE from [advanced-adjectives] (74 entries)
+  [vocab-b2-new.json] KEEP "skifte" in [environment] (47 entries), REMOVE from [advanced-verbs] (54 entries)
+  [vocab-b2-new.json] KEEP "avgjøre" in [law] (41 entries), REMOVE from [law] (41 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "rettferdig" in [law] (41 entries), REMOVE from [law] (41 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "mengde" in [science] (14 entries), REMOVE from [technology] (15 entries)
+  [vocab-b2-new.json] KEEP "drift" in [business] (23 entries), REMOVE from [business] (23 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "endeløs" in [science] (14 entries), REMOVE from [advanced-adjectives] (74 entries)
+  [vocab-b2-new.json] KEEP "plage" in [medicine] (30 entries), REMOVE from [emotions] (36 entries)
+  [vocab-b2-new.json] KEEP "forsvare" in [law] (41 entries), REMOVE from [politics] (48 entries)
+  [vocab-b2-new.json] KEEP "funke" in [technology] (15 entries), REMOVE from [technology] (15 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "siden" in [argumentation] (15 entries), REMOVE from [discourse-markers] (19 entries)
+  [vocab-b2-new.json] KEEP "kraft" in [abstract-nouns] (29 entries), REMOVE from [economics] (38 entries)
+  [vocab-b2-new.json] KEEP "stabil" in [economics] (38 entries), REMOVE from [advanced-adjectives] (74 entries)
+  [vocab-b2-new.json] KEEP "motstand" in [history] (24 entries), REMOVE from [politics] (48 entries)
+  [vocab-b2-new.json] KEEP "vekst" in [economics] (38 entries), REMOVE from [economics] (38 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "fersk" in [culture] (17 entries), REMOVE from [advanced-adjectives] (74 entries)
+  [vocab-b2-new.json] KEEP "stemme" in [politics] (48 entries), REMOVE from [politics] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "takle" in [psychology] (24 entries), REMOVE from [psychology] (24 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "behandle" in [medicine] (30 entries), REMOVE from [law] (41 entries)
+  [vocab-b2-new.json] KEEP "oppfordre" in [communication] (23 entries), REMOVE from [communication] (23 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2-new.json] KEEP "lykkes" in [work-career] (19 entries), REMOVE from [advanced-verbs] (54 entries)
+  [vocab-b2-new.json] KEEP "knapt" in [discourse-markers] (19 entries), REMOVE from [discourse-markers] (19 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  → vocab-b2-new.json: removed 43 duplicate(s) (749 → 706 entries)
+  [vocab-b2.json] KEEP "formål (et)" in [academic-language] (64 entries), REMOVE from [abstract-nouns] (68 entries)
+  [vocab-b2.json] KEEP "forutsetning (en)" in [academic-language] (64 entries), REMOVE from [abstract-nouns] (68 entries)
+  [vocab-b2.json] KEEP "innflytelse (en)" in [abstract-nouns] (68 entries), REMOVE from [politics] (68 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "kapasitet (en)" in [abstract-nouns] (68 entries), REMOVE from [abstract-nouns] (68 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "konsekvens (en)" in [philosophy] (29 entries), REMOVE from [abstract-nouns] (68 entries)
+  [vocab-b2.json] KEEP "makt (en)" in [abstract-nouns] (68 entries), REMOVE from [politics] (68 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "tillit (en)" in [relationships] (44 entries), REMOVE from [abstract-nouns] (68 entries)
+  [vocab-b2.json] KEEP "kildehenvisning (en)" in [academic-language] (64 entries), REMOVE from [academic-language] (64 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "å illustrere" in [academic-language] (64 entries), REMOVE from [advanced-verbs] (65 entries)
+  [vocab-b2.json] KEEP "å avdekke" in [advanced-verbs] (65 entries), REMOVE from [advanced-verbs] (65 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "å prioritere" in [work-career] (46 entries), REMOVE from [advanced-verbs] (65 entries)
+  [vocab-b2.json] KEEP "å begrunne" in [argumentation] (43 entries), REMOVE from [argumentation] (43 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "bevis (et)" in [argumentation] (43 entries), REMOVE from [law] (80 entries)
+  [vocab-b2.json] KEEP "markedsføring (en)" in [business] (27 entries), REMOVE from [business] (27 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "underforstått" in [communication] (51 entries), REMOVE from [communication] (51 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "etnisitet (en)" in [culture] (48 entries), REMOVE from [social-issues] (61 entries)
+  [vocab-b2.json] KEEP "jantelov (en)" in [culture] (48 entries), REMOVE from [culture] (48 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "globalisering (en)" in [global-issues] (45 entries), REMOVE from [economics] (47 entries)
+  [vocab-b2.json] KEEP "entusiasme (en)" in [emotions] (49 entries), REMOVE from [emotions] (49 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "mistenksomhet (en)" in [psychology] (42 entries), REMOVE from [emotions] (49 entries)
+  [vocab-b2.json] KEEP "svik (et)" in [relationships] (44 entries), REMOVE from [emotions] (49 entries)
+  [vocab-b2.json] KEEP "bistand (en)" in [global-issues] (45 entries), REMOVE from [global-issues] (45 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "epoke (en)" in [history] (31 entries), REMOVE from [history] (31 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "å anke" in [law] (80 entries), REMOVE from [law] (80 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "forsvarer (en)" in [law] (80 entries), REMOVE from [law] (80 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "erstatning (en)" in [law] (80 entries), REMOVE from [law] (80 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "lovbrudd (et)" in [law] (80 entries), REMOVE from [law] (80 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "vitne (et)" in [law] (80 entries), REMOVE from [law] (80 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "å regulere" in [politics] (68 entries), REMOVE from [law] (80 entries)
+  [vocab-b2.json] KEEP "lidelse (en)" in [medicine] (26 entries), REMOVE from [psychology] (42 entries)
+  [vocab-b2.json] KEEP "norm (en)" in [philosophy] (29 entries), REMOVE from [social-issues] (61 entries)
+  [vocab-b2.json] KEEP "verdi (en)" in [philosophy] (29 entries), REMOVE from [philosophy] (29 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "aktivisme (en)" in [social-issues] (61 entries), REMOVE from [politics] (68 entries)
+  [vocab-b2.json] KEEP "folkeavstemning (en)" in [politics] (68 entries), REMOVE from [politics] (68 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "traume (et)" in [psychology] (42 entries), REMOVE from [psychology] (42 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "tilknytning (en)" in [psychology] (42 entries), REMOVE from [relationships] (44 entries)
+  [vocab-b2.json] KEEP "omsorg (en)" in [relationships] (44 entries), REMOVE from [social-issues] (61 entries)
+  [vocab-b2.json] KEEP "offer (et)" in [religion] (23 entries), REMOVE from [social-issues] (61 entries)
+  [vocab-b2.json] KEEP "fordom (en)" in [social-issues] (61 entries), REMOVE from [social-issues] (61 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  [vocab-b2.json] KEEP "sikkerhetsnett (et)" in [social-issues] (61 entries), REMOVE from [social-issues] (61 entries)  ⚠ EQUAL COUNTS – kept first occurrence
+  → vocab-b2.json: removed 40 duplicate(s) (1419 → 1379 entries)
+  ✓ vocab-c.json: no duplicates found
+
+[DRY RUN] Would remove 184 duplicate entries across 11 files.
+Run without --dry-run to apply changes (backups saved as *.bak2).

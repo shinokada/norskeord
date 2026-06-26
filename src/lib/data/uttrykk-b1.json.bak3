@@ -634,6 +634,21 @@
     "part": "phrase"
   },
   {
+    "id": "u-b1-043",
+    "norsk": "falske nyheter",
+    "lemma": "falske nyheter",
+    "english": "fake news, misinformation",
+    "ukrainian": "фейкові новини, дезінформація",
+    "spanish": "noticias falsas, desinformación",
+    "example": "Det er viktig å kunne skille mellom falske nyheter og fakta.",
+    "example_english": "It is important to be able to distinguish fake news from facts.",
+    "example_ukrainian": "Важливо вміти відрізняти фейкові новини від фактів.",
+    "example_spanish": "Es importante saber distinguir entre noticias falsas y hechos reales.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b1-044",
     "norsk": "fast jobb",
     "lemma": "fast jobb",
@@ -1965,6 +1980,21 @@
     "example_english": "Can you take the bus instead of driving?",
     "example_ukrainian": "Чи можеш ти поїхати автобусом замість того, щоб їхати машиною?",
     "example_spanish": "¿Puedes tomar el autobús en lugar de ir en coche?",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-b1-132",
+    "norsk": "i tillegg",
+    "lemma": "i tillegg",
+    "english": "in addition, besides",
+    "ukrainian": "крім того, також",
+    "spanish": "además, también",
+    "example": "Jeg snakker norsk, og i tillegg kan jeg litt spansk.",
+    "example_english": "I speak Norwegian, and in addition I know a bit of Spanish.",
+    "example_ukrainian": "Я розмовляю норвезькою, і крім того, трохи знаю іспанську.",
+    "example_spanish": "Hablo noruego y además sé un poco de español.",
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase"

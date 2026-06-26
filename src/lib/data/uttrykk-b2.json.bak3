@@ -1011,6 +1011,18 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-088",
+    "norsk": "følge opp",
+    "lemma": "følge opp",
+    "english": "to follow up",
+    "example": "Legen lovte å følge opp pasienten etter operasjonen for å sjekke at alt gikk bra.",
+    "example_english": "The doctor promised to follow up with the patient after the operation to check that everything was going well.",
+    "definition": "Å sjekke videre eller ta nye steg etter at noe er startet eller sagt.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b2-089",
     "norsk": "gang etter gang",
     "lemma": "gang etter gang",
@@ -1029,6 +1041,18 @@
     "example": "Hun måtte gi avkall på karrieren sin for å ta vare på familien.",
     "example_english": "She had to give up her career to take care of her family.",
     "definition": "Velge å ikke ha eller gjøre noe som man ellers ville ønske.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-b2-091",
+    "norsk": "gi seg",
+    "lemma": "gi seg",
+    "english": "to give up / to give in",
+    "example": "Hun nektet å gi seg selv om oppgaven var svært vanskelig.",
+    "example_english": "She refused to give up even though the task was very difficult.",
+    "definition": "Slutte å prøve eller akseptere at man ikke kan vinne eller fortsette.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1101,6 +1125,18 @@
     "example": "Kritikerne mente at myndighetenes tiltak gikk altfor langt.",
     "example_english": "Critics felt that the authorities' measures went way too far.",
     "definition": "Gjøre eller si noe som er mye mer enn det som er akseptabelt eller nødvendig.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-b2-098",
+    "norsk": "gå av",
+    "lemma": "gå av",
+    "english": "to resign, to step down",
+    "example": "Statsministeren valgte å gå av etter at hun tapte valget.",
+    "example_english": "The prime minister chose to resign after she lost the election.",
+    "definition": "Å slutte i en viktig stilling eller jobb, ofte på grunn av press eller egne valg.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1603,6 +1639,17 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-141",
+    "norsk": "i motsetning til",
+    "lemma": "i motsetning til",
+    "english": "in contrast to, unlike, as opposed to",
+    "example": "I motsetning til søsteren sin foretrekker hun å jobbe alene fremfor i team.",
+    "example_english": "In contrast to her sister, she prefers to work alone rather than in a team.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b2-142",
     "norsk": "i overkant",
     "lemma": "i overkant",
@@ -2079,6 +2126,17 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-183",
+    "norsk": "med andre ord",
+    "lemma": "med andre ord",
+    "english": "in other words, that is to say",
+    "example": "Budsjettet ble ikke godkjent – med andre ord må vi finne rimeligere løsninger.",
+    "example_english": "The budget was not approved – in other words we need to find cheaper solutions.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b2-184",
     "norsk": "med jevne mellomrom",
     "lemma": "med jevne mellomrom",
@@ -2518,6 +2576,18 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-222",
+    "norsk": "regne med",
+    "lemma": "regne med",
+    "english": "to expect, to count on",
+    "example": "Du kan regne med at prosjektet tar minst tre måneder å fullføre.",
+    "example_english": "You can expect the project to take at least three months to complete.",
+    "definition": "Tro eller forvente at noe vil skje, eller stole på at noen vil gjøre noe.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b2-223",
     "norsk": "reise tiltale mot",
     "lemma": "reise tiltale mot",
@@ -2525,6 +2595,18 @@
     "example": "Politiet bestemte seg for å reise tiltale mot mannen etter grundig etterforskning.",
     "example_english": "The police decided to press charges against the man after a thorough investigation.",
     "definition": "Formelt bestemme seg for å ta en person til retten fordi de er mistenkt for noe ulovlig.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-b2-224",
+    "norsk": "rett og slett",
+    "lemma": "rett og slett",
+    "english": "simply, just, plain and simple",
+    "example": "Det var rett og slett ikke godt nok arbeid til å bestå eksamen.",
+    "example_english": "It was simply not good enough work to pass the exam.",
+    "definition": "Brukes for å understreke at noe er akkurat slik det ser ut, uten noe mer.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -2931,6 +3013,18 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-259",
+    "norsk": "stole på",
+    "lemma": "stole på",
+    "english": "to trust / to rely on",
+    "example": "Det er viktig å kunne stole på kollegene sine når man jobber i team.",
+    "example_english": "It is important to be able to trust your colleagues when working in a team.",
+    "definition": "Ha tro på at noen er ærlig og pålitelig, eller at noe vil fungere som forventet.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b2-260",
     "norsk": "stolt av",
     "lemma": "stolt av",
@@ -2997,6 +3091,17 @@
     "english": "significantly, enough to make a real difference",
     "example": "For å endre situasjonen må investeringene økes, og det monner.",
     "example_english": "To change the situation the investments must increase significantly and to a meaningful degree.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-b2-266",
+    "norsk": "så å si",
+    "lemma": "så å si",
+    "english": "so to speak, as it were, practically",
+    "example": "Sosiale medier har så å si blitt en integrert del av det daglige livet til de unge.",
+    "example_english": "Social media have, so to speak, become an integral part of young people's daily lives.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"
@@ -4062,6 +4167,17 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-358",
+    "norsk": "å bry seg om",
+    "lemma": "å bry seg om",
+    "english": "to care about, to be concerned about",
+    "example": "Ledere som genuint bryr seg om de ansatte, skaper sterkere og mer lojale team.",
+    "example_english": "Leaders who genuinely care about their employees create stronger and more loyal teams.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b2-359",
     "norsk": "å bære galt av sted",
     "lemma": "å bære galt av sted",
@@ -4733,6 +4849,17 @@
     "part": "phrase"
   },
   {
+    "id": "u-b2-420",
+    "norsk": "å heie på",
+    "lemma": "å heie på",
+    "english": "to cheer on, to root for",
+    "example": "Hele nabolaget stod langs veien og heiet på maratonløperne da de passerte.",
+    "example_english": "The whole neighbourhood stood along the road cheering on the marathon runners as they passed.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-b2-421",
     "norsk": "å henge med venner",
     "lemma": "å henge med venner",
@@ -4981,6 +5108,17 @@
     "english": "to enjoy life, to savour one's existence",
     "example": "I pensjonstilværelsen har han endelig funnet tid til å nyte tilværelsen uten stress.",
     "example_english": "In retirement he has finally found time to enjoy life without stress.",
+    "level": "B2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-b2-444",
+    "norsk": "å orientere seg",
+    "lemma": "å orientere seg",
+    "english": "to orientate oneself, to find one's bearings",
+    "example": "Det tok tid å orientere seg i det nye landet, men gradvis ble livet enklere.",
+    "example_english": "It took time to find one's bearings in the new country, but gradually life became easier.",
     "level": "B2",
     "category": "uttrykk",
     "part": "phrase"

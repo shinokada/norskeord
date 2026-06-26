@@ -735,6 +735,21 @@
     "part": "phrase"
   },
   {
+    "id": "v-a2-hobbies-017",
+    "norsk": "å gå på tur",
+    "lemma": "å gå på tur",
+    "english": "to go hiking",
+    "ukrainian": "ходити в похід",
+    "spanish": "ir de excursión / ir a caminar",
+    "example": "Vi går på tur i fjellet.",
+    "example_english": "We go hiking in the mountains.",
+    "example_ukrainian": "Ми ходимо в похід у гори.",
+    "example_spanish": "Vamos de excursión a la montaña.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "phrase"
+  },
+  {
     "id": "v-a2-hobbies-018",
     "norsk": "spill (et)",
     "lemma": "spill",
@@ -2370,6 +2385,21 @@
     "part": "adjective"
   },
   {
+    "id": "v-a2-time-004",
+    "norsk": "om morgenen",
+    "lemma": "om morgenen",
+    "english": "in the morning",
+    "ukrainian": "вранці",
+    "spanish": "por la mañana",
+    "example": "Jeg drikker kaffe om morgenen.",
+    "example_english": "I drink coffee in the morning.",
+    "example_ukrainian": "Я п'ю каву вранці.",
+    "example_spanish": "Bebo café por la mañana.",
+    "level": "A2",
+    "category": "time",
+    "part": "phrase"
+  },
+  {
     "id": "v-a2-time-005",
     "norsk": "om ettermiddagen",
     "lemma": "om ettermiddagen",
@@ -3840,6 +3870,21 @@
     "part": "phrase"
   },
   {
+    "id": "v-a2-house-chores-023",
+    "norsk": "bøtte (en)",
+    "lemma": "bøtte",
+    "english": "a bucket / a bin",
+    "ukrainian": "відро",
+    "spanish": "un cubo",
+    "example": "Fyll bøtten med vann.",
+    "example_english": "Fill the bucket with water.",
+    "example_ukrainian": "Наповни відро водою.",
+    "example_spanish": "Llena el cubo con agua.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "noun"
+  },
+  {
     "id": "v-a2-communication-001",
     "norsk": "å ringe",
     "lemma": "ringe",
@@ -3925,6 +3970,21 @@
     "example_english": "Tell me what happened.",
     "example_ukrainian": "Розкажи мені, що сталося.",
     "example_spanish": "Cuéntame qué pasó.",
+    "level": "A2",
+    "category": "communication",
+    "part": "verb"
+  },
+  {
+    "id": "v-a2-communication-007",
+    "norsk": "å gjenta",
+    "lemma": "gjenta",
+    "english": "to repeat",
+    "ukrainian": "повторювати",
+    "spanish": "repetir",
+    "example": "Kan du gjenta det du sa?",
+    "example_english": "Can you repeat what you said?",
+    "example_ukrainian": "Ти можеш повторити те, що сказав?",
+    "example_spanish": "¿Puedes repetir lo que dijiste?",
     "level": "A2",
     "category": "communication",
     "part": "verb"
@@ -5773,51 +5833,6 @@
     "definition": "Et fjell som kan kaste ut lava og aske.",
     "level": "A2",
     "category": "nature",
-    "part": "noun"
-  },
-  {
-    "id": "u-a2-003",
-    "norsk": "stress (et)",
-    "lemma": "stress",
-    "english": "stress",
-    "ukrainian": "стрес",
-    "spanish": "estrés",
-    "example": "Det er mye stress på jobben.",
-    "example_english": "There is a lot of stress at work.",
-    "example_ukrainian": "На роботі багато стресу.",
-    "example_spanish": "Hay mucho estrés en el trabajo.",
-    "level": "A2",
-    "category": "health",
-    "part": "noun"
-  },
-  {
-    "id": "u-a2-060",
-    "norsk": "sur",
-    "lemma": "sur",
-    "english": "angry, sour, grumpy",
-    "ukrainian": "сердитий, похмурий, незадоволений",
-    "spanish": "enfadado, de mal humor",
-    "example": "Han er sur fordi han er trøtt.",
-    "example_english": "He is grumpy because he is tired.",
-    "example_ukrainian": "Він сердитий, тому що втомився.",
-    "example_spanish": "Él está de mal humor porque está cansado.",
-    "level": "A2",
-    "category": "feelings",
-    "part": "adjective"
-  },
-  {
-    "id": "u-a2-085",
-    "norsk": "smak (en)",
-    "lemma": "smak",
-    "english": "taste",
-    "ukrainian": "смак",
-    "spanish": "sabor",
-    "example": "Denne maten smaker godt.",
-    "example_english": "This food tastes good.",
-    "example_ukrainian": "Ця їжа смачна.",
-    "example_spanish": "Esta comida sabe bien.",
-    "level": "A2",
-    "category": "food",
     "part": "noun"
   }
 ]

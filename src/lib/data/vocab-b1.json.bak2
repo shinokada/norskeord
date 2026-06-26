@@ -176,6 +176,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-accommodation-012",
+    "norsk": "oppussing (en)",
+    "lemma": "oppussing",
+    "english": "a renovation / a refurbishment",
+    "ukrainian": "ремонт",
+    "spanish": "una renovación / una reforma",
+    "example": "Kjøkkenet trenger oppussing.",
+    "example_english": "The kitchen needs renovation.",
+    "example_ukrainian": "Кухня потребує ремонту.",
+    "example_spanish": "La cocina necesita una reforma.",
+    "definition": "Arbeid som gjøres for å forbedre eller reparere en bolig.",
+    "level": "B1",
+    "category": "accommodation",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-accommodation-013",
     "norsk": "utleier (en)",
     "lemma": "utleier",
@@ -251,6 +267,22 @@
     "example_ukrainian": "Депозит дорівнює двом місяцям орендної плати.",
     "example_spanish": "La fianza equivale a dos meses de alquiler.",
     "definition": "En sum penger leietaker betaler på forhånd som sikkerhet.",
+    "level": "B1",
+    "category": "accommodation",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-accommodation-018",
+    "norsk": "fellesareal (et)",
+    "lemma": "fellesareal",
+    "english": "a communal area",
+    "ukrainian": "місця загального користування",
+    "spanish": "una zona común",
+    "example": "Fellesarealet deles av alle beboerne.",
+    "example_english": "The communal area is shared by all residents.",
+    "example_ukrainian": "Місця загального користування поділяють усі мешканці.",
+    "example_spanish": "La zona común es compartida por todos los residentes.",
+    "definition": "Et område i en bygning som brukes av alle beboerne.",
     "level": "B1",
     "category": "accommodation",
     "part": "noun"
@@ -352,6 +384,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-accommodation-025",
+    "norsk": "tak (et)",
+    "lemma": "tak",
+    "english": "roof / ceiling / grip",
+    "ukrainian": "дах / стеля",
+    "spanish": "techo",
+    "example": "Det er et hull i taket, så det kommer vann inn når det regner.",
+    "example_english": "There is a hole in the roof, so water comes in when it rains.",
+    "example_ukrainian": "У даху є діра, тому вода затікає всередину, коли йде дощ.",
+    "example_spanish": "Hay un agujero en el techo, así que entra agua cuando llueve.",
+    "definition": "Den øverste delen av en bygning eller et rom som beskytter mot vær og vind utenfra.",
+    "level": "B1",
+    "category": "accommodation",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-accommodation-026",
     "norsk": "umøblert",
     "lemma": "umøblert",
@@ -366,6 +414,22 @@
     "level": "B1",
     "category": "accommodation",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-accommodation-027",
+    "norsk": "visning (en)",
+    "lemma": "visning",
+    "english": "viewing / showing",
+    "ukrainian": "перегляд / показ",
+    "spanish": "visita / showing",
+    "example": "Vi skal på visning av leiligheten i morgen.",
+    "example_english": "We are going to the viewing of the apartment tomorrow.",
+    "example_ukrainian": "Завтра ми йдемо на перегляд квартири.",
+    "example_spanish": "Mañana vamos a ver el apartamento.",
+    "definition": "En anledning der man kan se på noe, for eksempel en bolig eller en film.",
+    "level": "B1",
+    "category": "accommodation",
+    "part": "noun"
   },
   {
     "id": "v-b1-accommodation-028",
@@ -414,6 +478,22 @@
     "level": "B1",
     "category": "accommodation",
     "part": "phrase"
+  },
+  {
+    "id": "v-b1-accommodation-031",
+    "norsk": "å leie",
+    "lemma": "leie",
+    "english": "to rent / to lease",
+    "ukrainian": "орендувати",
+    "spanish": "alquilar",
+    "example": "Vi leier en leilighet i sentrum.",
+    "example_english": "We rent a flat in the city centre.",
+    "example_ukrainian": "Ми орендуємо квартиру в центрі.",
+    "example_spanish": "Alquilamos un apartamento en el centro.",
+    "definition": "Å betale en sum for å bruke noe som tilhører noen andre, for eksempel en bolig.",
+    "level": "B1",
+    "category": "accommodation",
+    "part": "verb"
   },
   {
     "id": "v-b1-accommodation-032",
@@ -784,6 +864,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-arts-culture-023",
+    "norsk": "skuespill (et)",
+    "lemma": "skuespill",
+    "english": "play (theatre), drama",
+    "ukrainian": "п'єса / вистава",
+    "spanish": "obra de teatro",
+    "example": "Vi så et spennende skuespill på teatret i helgen.",
+    "example_english": "We watched an exciting play at the theatre over the weekend.",
+    "example_ukrainian": "У вихідні ми подивилися цікаву виставу в театрі.",
+    "example_spanish": "Vimos una obra de teatro emocionante en el teatro el fin de semana.",
+    "definition": "En fortelling som blir fremført av skuespillere på en scene foran et publikum.",
+    "level": "B1",
+    "category": "arts-culture",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-arts-culture-024",
     "norsk": "utstilling (en)",
     "lemma": "utstilling",
@@ -912,6 +1008,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-city-life-005",
+    "norsk": "å bære",
+    "lemma": "bære",
+    "english": "to carry / to bear",
+    "ukrainian": "нести / носити",
+    "spanish": "cargar / llevar",
+    "example": "Kan du hjelpe meg å bære disse tunge eskene opp til leiligheten?",
+    "example_english": "Can you help me carry these heavy boxes up to the apartment?",
+    "example_ukrainian": "Чи можеш ти допомогти мені віднести ці важкі коробки до квартири?",
+    "example_spanish": "¿Puedes ayudarme a subir estas cajas pesadas al apartamento?",
+    "definition": "Å holde noe og flytte det fra ett sted til et annet, eller å ha noe på kroppen.",
+    "level": "B1",
+    "category": "city-life",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-city-life-006",
     "norsk": "boligpris (en)",
     "lemma": "boligpris",
@@ -1024,6 +1136,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-city-life-013",
+    "norsk": "bysentrum (et)",
+    "lemma": "bysentrum",
+    "english": "a city centre",
+    "ukrainian": "центр міста",
+    "spanish": "centro de la ciudad",
+    "example": "Vi bor i bysentrum.",
+    "example_english": "We live in the city centre.",
+    "example_ukrainian": "Ми живемо в центрі міста.",
+    "example_spanish": "Vivimos en el centro de la ciudad.",
+    "definition": "Den sentrale og travleste delen av en by med butikker, kontorer og kultur.",
+    "level": "B1",
+    "category": "city-life",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-city-life-014",
     "norsk": "fortau (et)",
     "lemma": "fortau",
@@ -1067,6 +1195,38 @@
     "example_ukrainian": "У містах потрібно більше зелених зон.",
     "example_spanish": "Las ciudades necesitan más zonas verdes.",
     "definition": "Område med gress, trær og planter i en by, beregnet for uteliv.",
+    "level": "B1",
+    "category": "city-life",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-city-life-017",
+    "norsk": "å handle",
+    "lemma": "handle",
+    "english": "to shop / to act",
+    "ukrainian": "робити покупки / діяти",
+    "spanish": "hacer compras / actuar",
+    "example": "Vi dro til butikken for å handle mat til middag.",
+    "example_english": "We went to the store to shop for dinner.",
+    "example_ukrainian": "Ми поїхали до магазину, щоб купити їжу на вечерю.",
+    "example_spanish": "Fuimos a la tienda a comprar comida para la cena.",
+    "definition": "Å gå til en butikk for å kjøpe ting, eller å gjøre noe aktivt i en bestemt situasjon.",
+    "level": "B1",
+    "category": "city-life",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-city-life-018",
+    "norsk": "husleie (en)",
+    "lemma": "husleie",
+    "english": "rent",
+    "ukrainian": "орендна плата",
+    "spanish": "alquiler",
+    "example": "Husleien er dyr i Oslo.",
+    "example_english": "Rent is expensive in Oslo.",
+    "example_ukrainian": "Орендна плата в Осло дуже висока.",
+    "example_spanish": "El alquiler es caro en Oslo.",
+    "definition": "Det månedlige beløpet man betaler for å bo i en bolig man leier.",
     "level": "B1",
     "category": "city-life",
     "part": "noun"
@@ -1184,6 +1344,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-city-life-026",
+    "norsk": "stor",
+    "lemma": "stor",
+    "english": "big, large, great",
+    "ukrainian": "великий",
+    "spanish": "grande",
+    "example": "De bor i en stor leilighet midt i byen.",
+    "example_english": "They live in a large apartment in the middle of the city.",
+    "example_ukrainian": "Вони живуть у великій квартирі в центрі міста.",
+    "example_spanish": "Viven en un apartamento grande en el centro de la ciudad.",
+    "definition": "Noe som har mye plass, er viktig eller har stor betydning sammenlignet med andre ting.",
+    "level": "B1",
+    "category": "city-life",
+    "part": "adjective"
+  },
+  {
     "id": "v-b1-city-life-027",
     "norsk": "støy (en)",
     "lemma": "støy",
@@ -1262,6 +1438,22 @@
     "level": "B1",
     "category": "city-life",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-city-life-032",
+    "norsk": "utkant (en)",
+    "lemma": "utkant",
+    "english": "outskirts, periphery",
+    "ukrainian": "околиця, передмістя",
+    "spanish": "las afueras, la periferia",
+    "example": "Han bor i utkanten av byen, langt fra sentrum.",
+    "example_english": "He lives on the outskirts of the city, far from the centre.",
+    "example_ukrainian": "Він живе на околиці міста, далеко від центру.",
+    "example_spanish": "Él vive en las afueras de la ciudad, lejos del centro.",
+    "definition": "Et område som ligger langt fra midten av en by eller et sted.",
+    "level": "B1",
+    "category": "city-life",
+    "part": "noun"
   },
   {
     "id": "v-b1-city-life-033",
@@ -1406,6 +1598,22 @@
     "level": "B1",
     "category": "communication-skills",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-communication-skills-009",
+    "norsk": "å diskutere",
+    "lemma": "diskutere",
+    "english": "to discuss / to debate",
+    "ukrainian": "обговорювати / дискутувати",
+    "spanish": "discutir / debatir",
+    "example": "Vi diskuterte fordelene og ulempene med å bo i byen.",
+    "example_english": "We discussed the advantages and disadvantages of living in the city.",
+    "example_ukrainian": "Ми обговорили переваги та недоліки життя в місті.",
+    "example_spanish": "Discutimos las ventajas y desventajas de vivir en la ciudad.",
+    "definition": "Å snakke med andre om et tema der man deler ulike meninger og prøver å forstå forskjellige synspunkter.",
+    "level": "B1",
+    "category": "communication-skills",
+    "part": "verb"
   },
   {
     "id": "v-b1-communication-skills-010",
@@ -1776,6 +1984,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-communication-skills-033",
+    "norsk": "jammen",
+    "lemma": "jammen",
+    "english": "well, indeed / I'll be darned",
+    "ukrainian": "ну і ну / от так так",
+    "spanish": "vaya / caramba",
+    "example": "Jammen, det var lenge siden jeg så deg!",
+    "example_english": "Well, it's been a long time since I saw you!",
+    "example_ukrainian": "Ну і ну, скільки ж часу минуло відтоді, як я тебе бачив!",
+    "example_spanish": "¡Vaya, cuánto tiempo sin verte!",
+    "definition": "Et uttrykk man bruker når man er overrasket eller vil understreke noe man sier.",
+    "level": "B1",
+    "category": "communication-skills",
+    "part": "interjection"
+  },
+  {
     "id": "v-b1-communication-skills-034",
     "norsk": "å kalle",
     "lemma": "kalle",
@@ -1840,6 +2064,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-communication-skills-038",
+    "norsk": "å kommunisere",
+    "lemma": "kommunisere",
+    "english": "to communicate",
+    "ukrainian": "спілкуватися, комунікувати",
+    "spanish": "comunicarse",
+    "example": "Det er viktig å kommunisere tydelig med kollegene dine.",
+    "example_english": "It is important to communicate clearly with your colleagues.",
+    "example_ukrainian": "Важливо чітко спілкуватися з колегами.",
+    "example_spanish": "Es importante comunicarse claramente con tus compañeros de trabajo.",
+    "definition": "Å dele informasjon eller tanker med andre ved hjelp av ord, skrift eller tegn.",
+    "level": "B1",
+    "category": "communication-skills",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-communication-skills-039",
     "norsk": "kroppsspråk (et)",
     "english": "body language",
@@ -1886,6 +2126,22 @@
     "level": "B1",
     "category": "communication-skills",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-communication-skills-042",
+    "norsk": "reaksjon (en)",
+    "lemma": "reaksjon",
+    "english": "reaction, response",
+    "ukrainian": "реакція, відповідь",
+    "spanish": "la reacción, la respuesta",
+    "example": "Publikums reaksjon på forestillingen var veldig positiv.",
+    "example_english": "The audience's reaction to the performance was very positive.",
+    "example_ukrainian": "Реакція публіки на виставу була дуже позитивною.",
+    "example_spanish": "La reacción del público ante el espectáculo fue muy positiva.",
+    "definition": "Det man gjør eller føler som svar på noe som har skjedd eller blitt sagt.",
+    "level": "B1",
+    "category": "communication-skills",
+    "part": "noun"
   },
   {
     "id": "v-b1-communication-skills-043",
@@ -2176,6 +2432,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-communication-skills-061",
+    "norsk": "å avbryte",
+    "english": "to interrupt",
+    "ukrainian": "перебивати",
+    "spanish": "interrumpir",
+    "example": "Det er uhøflig å avbryte noen.",
+    "example_english": "It is rude to interrupt someone.",
+    "example_ukrainian": "Перебивати когось — це неввічливо.",
+    "example_spanish": "Es de mala educación interrumpir a alguien.",
+    "definition": "Å begynne å snakke midt i det noen andre sier, uten å vente på tur.",
+    "level": "B1",
+    "category": "communication-skills",
+    "part": "verb",
+    "lemma": "avbryte"
+  },
+  {
     "id": "v-b1-communication-skills-062",
     "norsk": "å avkrefte",
     "english": "to deny / refute",
@@ -2400,6 +2672,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-cooking-002",
+    "norsk": "bøtte (en)",
+    "lemma": "bøtte",
+    "english": "bucket / pail",
+    "ukrainian": "відро",
+    "spanish": "cubo / balde",
+    "example": "Han hentet en bøtte med vann for å vaske bilen.",
+    "example_english": "He fetched a bucket of water to wash the car.",
+    "example_ukrainian": "Він приніс відро з водою, щоб помити машину.",
+    "example_spanish": "Trajo un cubo de agua para lavar el coche.",
+    "definition": "En rund beholder med håndtak som brukes til å bære eller oppbevare væske eller andre ting.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-cooking-003",
     "norsk": "deig (en)",
     "lemma": "deig",
@@ -2459,6 +2747,22 @@
     "example_ukrainian": "Можна подивитися меню?",
     "example_spanish": "¿Puedo ver la carta?",
     "definition": "Listen over mat og drikke som er tilgjengelig på en restaurant.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-cooking-007",
+    "norsk": "oppskrift (en)",
+    "lemma": "oppskrift",
+    "english": "a recipe",
+    "ukrainian": "рецепт",
+    "spanish": "una receta",
+    "example": "Har du en god oppskrift på lapskaus?",
+    "example_english": "Do you have a good recipe for lapskaus?",
+    "example_ukrainian": "У тебе є гарний рецепт лапскаусу?",
+    "example_spanish": "¿Tienes una buena receta de estofado?",
+    "definition": "En beskrivelse av ingredienser og fremgangsmåte for å lage en matrett.",
     "level": "B1",
     "category": "cooking",
     "part": "noun"
@@ -2640,6 +2944,38 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-cooking-019",
+    "norsk": "å skjære",
+    "lemma": "skjære",
+    "english": "to cut",
+    "ukrainian": "різати / нарізати",
+    "spanish": "cortar",
+    "example": "Kan du skjære brødet i tynne skiver, takk?",
+    "example_english": "Can you cut the bread into thin slices, please?",
+    "example_ukrainian": "Чи можеш нарізати хліб тонкими скибочками, будь ласка?",
+    "example_spanish": "¿Puedes cortar el pan en rebanadas finas, por favor?",
+    "definition": "Å dele noe i biter ved å bruke en kniv eller et annet skarpt redskap.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-cooking-020",
+    "norsk": "å smake",
+    "lemma": "smake",
+    "english": "to taste",
+    "ukrainian": "куштувати / пробувати на смак",
+    "spanish": "probar / saborear",
+    "example": "Kan du smake på suppen og si om den trenger mer salt?",
+    "example_english": "Can you taste the soup and tell me if it needs more salt?",
+    "example_ukrainian": "Чи можеш скуштувати суп і сказати, чи потрібно більше солі?",
+    "example_spanish": "¿Puedes probar la sopa y decir si necesita más sal?",
+    "definition": "Å prøve mat eller drikke med munnen for å kjenne hvordan det smaker.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-cooking-021",
     "norsk": "smakfull",
     "lemma": "smakfull",
@@ -2779,6 +3115,22 @@
     "example_ukrainian": "Корисно готувати овочі на парі.",
     "example_spanish": "Es sano cocinar las verduras al vapor.",
     "definition": "Å tilberede mat ved hjelp av varm damp, uten å koke den i vann.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-cooking-030",
+    "norsk": "å grille",
+    "lemma": "grille",
+    "english": "to grill / to barbecue",
+    "ukrainian": "смажити на грилі / на барбекю",
+    "spanish": "hacer a la parrilla / hacer a la barbacoa",
+    "example": "Vi griller laks i helgen.",
+    "example_english": "We are grilling salmon at the weekend.",
+    "example_ukrainian": "На вихідних ми смажимо лосося на грилі.",
+    "example_spanish": "Hacemos salmón a la parrilla el fin de semana.",
+    "definition": "Å tilberede mat over direkte varme, for eksempel på en kullgrill.",
     "level": "B1",
     "category": "cooking",
     "part": "verb"
@@ -3035,6 +3387,22 @@
     "example_ukrainian": "Парк Вігеланна повний скульптур.",
     "example_spanish": "El parque Vigeland está lleno de esculturas.",
     "definition": "Et tredimensjonalt kunstverk laget av materialer som stein eller metall.",
+    "level": "B1",
+    "category": "culture",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-culture-012",
+    "norsk": "utstilling (en)",
+    "lemma": "utstilling",
+    "english": "an exhibition",
+    "ukrainian": "виставка",
+    "spanish": "una exposición",
+    "example": "Det er en ny utstilling på galleriet.",
+    "example_english": "There is a new exhibition at the gallery.",
+    "example_ukrainian": "У галереї є нова виставка.",
+    "example_spanish": "Hay una nueva exposición en la galería.",
+    "definition": "En offentlig visning av kunstverker eller historiske gjenstander.",
     "level": "B1",
     "category": "culture",
     "part": "noun"
@@ -3648,6 +4016,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-economics-011",
+    "norsk": "inntekt (en)",
+    "english": "income",
+    "ukrainian": "дохід",
+    "spanish": "ingreso / renta",
+    "example": "Inntekten dekker ikke alle utgiftene.",
+    "example_english": "The income does not cover all expenses.",
+    "example_ukrainian": "Доходу не вистачає на всі витрати.",
+    "example_spanish": "El ingreso no cubre todos los gastos.",
+    "definition": "Pengene man tjener gjennom arbeid eller andre kilder.",
+    "level": "B1",
+    "category": "economics",
+    "part": "noun",
+    "lemma": "inntekt"
+  },
+  {
     "id": "v-b1-economics-012",
     "norsk": "nettoinntekt (en)",
     "english": "net income",
@@ -3760,6 +4144,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-economics-019",
+    "norsk": "utgift (en)",
+    "english": "expense / expenditure",
+    "ukrainian": "витрата",
+    "spanish": "gasto / egreso",
+    "example": "Matutgiftene er høye denne måneden.",
+    "example_english": "Food expenses are high this month.",
+    "example_ukrainian": "Витрати на їжу цього місяця дуже великі.",
+    "example_spanish": "Los gastos en comida son altos este mes.",
+    "definition": "Penger man bruker på varer, tjenester eller faste kostnader.",
+    "level": "B1",
+    "category": "economics",
+    "part": "noun",
+    "lemma": "utgift"
+  },
+  {
     "id": "v-b1-economics-020",
     "norsk": "vare (en)",
     "lemma": "vare",
@@ -3867,6 +4267,22 @@
     "example_ukrainian": "П'ятеро учнів вирішили створити власну навчальну групу.",
     "example_spanish": "Los cinco estudiantes decidieron formar su propio grupo de estudio.",
     "definition": "Å lage eller opprette noe nytt, for eksempel en gruppe, en organisasjon eller en form.",
+    "level": "B1",
+    "category": "education",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-education-003",
+    "norsk": "å delta",
+    "lemma": "delta",
+    "english": "to participate / to take part",
+    "ukrainian": "брати участь",
+    "spanish": "participar / tomar parte",
+    "example": "Alle studentene ble oppfordret til å delta aktivt i diskusjonen.",
+    "example_english": "All the students were encouraged to participate actively in the discussion.",
+    "example_ukrainian": "Усіх студентів заохочували активно брати участь у дискусії.",
+    "example_spanish": "Todos los estudiantes fueron animados a participar activamente en la discusión.",
+    "definition": "Å være med i en aktivitet, et arrangement eller en gruppe sammen med andre.",
     "level": "B1",
     "category": "education",
     "part": "verb"
@@ -4176,6 +4592,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-education-023",
+    "norsk": "felt (et)",
+    "lemma": "felt",
+    "english": "field, area",
+    "ukrainian": "галузь, сфера",
+    "spanish": "un campo / un área",
+    "example": "Hun jobber innenfor det medisinske feltet.",
+    "example_english": "She works in the medical field.",
+    "example_ukrainian": "Вона працює в медичній сфері.",
+    "example_spanish": "Ella trabaja en el campo de la medicina.",
+    "definition": "Et område eller en del av noe, enten fysisk som et jorde, eller faglig som et emne man jobber med.",
+    "level": "B1",
+    "category": "education",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-education-024",
     "norsk": "forberedt",
     "lemma": "forberedt",
@@ -4224,6 +4656,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-education-027",
+    "norsk": "høyskole (en)",
+    "lemma": "høyskole",
+    "english": "university college / higher education college",
+    "ukrainian": "університетський коледж / вищий навчальний заклад",
+    "spanish": "una escuela universitaria / un instituto de educación superior",
+    "example": "Han studerer sykepleie ved en høyskole i Bergen.",
+    "example_english": "He is studying nursing at a university college in Bergen.",
+    "example_ukrainian": "Він вивчає сестринську справу у вищому навчальному закладі в Бергені.",
+    "example_spanish": "Él estudia enfermería en una escuela universitaria en Bergen.",
+    "definition": "En skole for høyere utdanning der man kan ta en grad eller faglig utdanning etter videregående skole.",
+    "level": "B1",
+    "category": "education",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-education-028",
     "norsk": "idrettsfag (et)",
     "lemma": "idrettsfag",
@@ -4270,6 +4718,22 @@
     "level": "B1",
     "category": "education",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-education-031",
+    "norsk": "karakter (en)",
+    "lemma": "karakter",
+    "english": "grade / character",
+    "ukrainian": "оцінка",
+    "spanish": "una nota / una calificación",
+    "example": "Hun fikk en veldig god karakter på eksamen i matematikk.",
+    "example_english": "She got a very good grade on her mathematics exam.",
+    "example_ukrainian": "Вона отримала дуже гарну оцінку на іспиті з математики.",
+    "example_spanish": "Ella sacó una nota muy buena en el examen de matemáticas.",
+    "definition": "En verdi eller bokstav som viser hvor godt noen har gjort det på en prøve, eller en person i en bok eller film.",
+    "level": "B1",
+    "category": "education",
+    "part": "noun"
   },
   {
     "id": "v-b1-education-032",
@@ -4368,6 +4832,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-education-038",
+    "norsk": "stipend (et)",
+    "lemma": "stipend",
+    "english": "scholarship, grant",
+    "ukrainian": "стипендія, грант",
+    "spanish": "beca",
+    "example": "Hun fikk et stipend fra universitetet for å studere i utlandet.",
+    "example_english": "She received a scholarship from the university to study abroad.",
+    "example_ukrainian": "Вона отримала стипендію від університету для навчання за кордоном.",
+    "example_spanish": "Recibió una beca de la universidad para estudiar en el extranjero.",
+    "definition": "Penger som en student eller forsker får for å hjelpe dem med å studere eller arbeide med et prosjekt.",
+    "level": "B1",
+    "category": "education",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-education-039",
     "norsk": "studium (et)",
     "lemma": "studium",
@@ -4432,6 +4912,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-education-043",
+    "norsk": "vitnemål (et)",
+    "lemma": "vitnemål",
+    "english": "diploma / certificate / transcript",
+    "ukrainian": "диплом, атестат, свідоцтво",
+    "spanish": "diploma, título, certificado",
+    "example": "Hun fikk vitnemålet sitt etter at hun fullførte videregående skole.",
+    "example_english": "She received her diploma after she completed upper secondary school.",
+    "example_ukrainian": "Вона отримала атестат після закінчення старшої школи.",
+    "example_spanish": "Recibió su diploma después de terminar la escuela secundaria.",
+    "definition": "Et offisielt dokument som viser at man har fullført en utdanning og hvilke karakterer man har fått.",
+    "level": "B1",
+    "category": "education",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-education-044",
     "norsk": "vurdering (en)",
     "lemma": "vurdering",
@@ -4475,6 +4971,22 @@
     "example_ukrainian": "Він досліджує зміни клімату.",
     "example_spanish": "Investiga sobre el cambio climático.",
     "definition": "Å undersøke et tema systematisk for å finne ny kunnskap.",
+    "level": "B1",
+    "category": "education",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-education-047",
+    "norsk": "å stryke",
+    "lemma": "stryke",
+    "english": "to fail (an exam)",
+    "ukrainian": "провалити (іспит)",
+    "spanish": "suspender, reprobar (un examen)",
+    "example": "Han strøk på matematikkeksamen.",
+    "example_english": "He failed the maths exam.",
+    "example_ukrainian": "Він провалив іспит з математики.",
+    "example_spanish": "Reprobó el examen de matemáticas.",
+    "definition": "Å ikke klare en eksamen og dermed ikke få godkjent resultatet.",
     "level": "B1",
     "category": "education",
     "part": "verb"
@@ -4880,6 +5392,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-environment-025",
+    "norsk": "utslipp (et)",
+    "lemma": "utslipp",
+    "english": "emissions, discharge",
+    "ukrainian": "викиди",
+    "spanish": "emisiones, vertidos",
+    "example": "Norge jobber med å redusere CO2-utslipp fra industrien.",
+    "example_english": "Norway is working to reduce CO2 emissions from industry.",
+    "example_ukrainian": "Норвегія працює над скороченням викидів CO₂ від промисловості.",
+    "example_spanish": "Noruega trabaja para reducir las emisiones de CO₂ de la industria.",
+    "definition": "Stoffer som slippes ut i luften eller vannet, ofte fra fabrikker eller biler.",
+    "level": "B1",
+    "category": "environment",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-environment-026",
     "norsk": "å verne",
     "lemma": "verne",
@@ -4907,6 +5435,22 @@
     "example_ukrainian": "Ми повинні зберігати природні заповідники.",
     "example_spanish": "Debemos conservar las reservas naturales.",
     "definition": "Å ta vare på noe slik at det ikke forsvinner eller blir ødelagt.",
+    "level": "B1",
+    "category": "environment",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-environment-028",
+    "norsk": "å forurense",
+    "lemma": "forurense",
+    "english": "to pollute",
+    "ukrainian": "забруднювати",
+    "spanish": "contaminar",
+    "example": "Fabrikken forurenser elven.",
+    "example_english": "The factory pollutes the river.",
+    "example_ukrainian": "Завод забруднює річку.",
+    "example_spanish": "La fábrica contamina el río.",
+    "definition": "Å gjøre luft, vann eller jord skittent og farlig ved å slippe ut skadelige stoffer.",
     "level": "B1",
     "category": "environment",
     "part": "verb"
@@ -4990,6 +5534,38 @@
     "level": "B1",
     "category": "expressing-opinions",
     "part": "adverb"
+  },
+  {
+    "id": "v-b1-expressing-opinions-003",
+    "norsk": "argument (et)",
+    "lemma": "argument",
+    "english": "argument",
+    "ukrainian": "аргумент",
+    "spanish": "argumento",
+    "example": "Hun hadde et sterkt argument for hvorfor vi burde endre planen.",
+    "example_english": "She had a strong argument for why we should change the plan.",
+    "example_ukrainian": "У неї був вагомий аргумент на користь того, чому ми повинні змінити план.",
+    "example_spanish": "Ella tenía un argumento sólido sobre por qué debíamos cambiar el plan.",
+    "definition": "En grunn eller forklaring som man bruker for å overbevise andre om noe.",
+    "level": "B1",
+    "category": "expressing-opinions",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-expressing-opinions-004",
+    "norsk": "å argumentere",
+    "lemma": "argumentere",
+    "english": "to argue",
+    "ukrainian": "аргументувати / доводити",
+    "spanish": "argumentar",
+    "example": "Han argumenterte for at skolen burde ha lengre pauser.",
+    "example_english": "He argued that the school should have longer breaks.",
+    "example_ukrainian": "Він доводив, що в школі повинні бути довші перерви.",
+    "example_spanish": "Él argumentó que la escuela debería tener descansos más largos.",
+    "definition": "Å gi grunner for eller imot noe for å overbevise andre om at man har rett.",
+    "level": "B1",
+    "category": "expressing-opinions",
+    "part": "verb"
   },
   {
     "id": "v-b1-expressing-opinions-005",
@@ -5102,6 +5678,22 @@
     "level": "B1",
     "category": "expressing-opinions",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-expressing-opinions-012",
+    "norsk": "debatt (en)",
+    "lemma": "debatt",
+    "english": "debate / discussion",
+    "ukrainian": "дебати / дискусія",
+    "spanish": "debate / discusión",
+    "example": "Det var en interessant debatt på TV om klimaendringer i går kveld.",
+    "example_english": "There was an interesting debate on TV about climate change last night.",
+    "example_ukrainian": "Вчора ввечері по телевізору були цікаві дебати про зміну клімату.",
+    "example_spanish": "Anoche hubo un debate muy interesante en la televisión sobre el cambio climático.",
+    "definition": "En organisert diskusjon der to eller flere personer snakker om et tema og presenterer forskjellige meninger.",
+    "level": "B1",
+    "category": "expressing-opinions",
+    "part": "noun"
   },
   {
     "id": "v-b1-expressing-opinions-013",
@@ -5552,6 +6144,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-expressing-opinions-041",
+    "norsk": "å kritisere",
+    "lemma": "kritisere",
+    "english": "to criticise",
+    "ukrainian": "критикувати",
+    "spanish": "criticar",
+    "example": "Mange begynte å kritisere regjeringens nye plan.",
+    "example_english": "Many people began to criticise the government's new plan.",
+    "example_ukrainian": "Багато людей почали критикувати новий план уряду.",
+    "example_spanish": "Mucha gente empezó a criticar el nuevo plan del gobierno.",
+    "definition": "Å si at noe eller noen ikke er bra nok, eller at man er uenig i noe som er gjort. Det kan gjøres på en konstruktiv eller negativ måte.",
+    "level": "B1",
+    "category": "expressing-opinions",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-expressing-opinions-042",
     "norsk": "kritisk",
     "lemma": "kritisk",
@@ -5728,6 +6336,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-expressing-opinions-053",
+    "norsk": "sikkert",
+    "lemma": "sikkert",
+    "english": "surely, certainly, probably",
+    "ukrainian": "напевно / мабуть",
+    "spanish": "seguramente / probablemente",
+    "example": "Det er sikkert ikke lett å flytte til et nytt land.",
+    "example_english": "It is surely not easy to move to a new country.",
+    "example_ukrainian": "Напевно, переїхати до нової країни непросто.",
+    "example_spanish": "Seguramente no es fácil mudarse a un nuevo país.",
+    "definition": "Et ord som viser at du tror noe er sant eller vil skje, men kanskje ikke med hundre prosent sikkerhet.",
+    "level": "B1",
+    "category": "expressing-opinions",
+    "part": "adverb"
+  },
+  {
     "id": "v-b1-expressing-opinions-054",
     "norsk": "skeptisk",
     "lemma": "skeptisk",
@@ -5819,6 +6443,22 @@
     "example_ukrainian": "Усі вважають, що маленьке цуценя дуже миле.",
     "example_spanish": "Todos piensan que el pequeño cachorro es súper lindo.",
     "definition": "Noe eller noen som er veldig søtt og sjarmerende på en morsom måte.",
+    "level": "B1",
+    "category": "expressing-opinions",
+    "part": "adjective"
+  },
+  {
+    "id": "v-b1-expressing-opinions-060",
+    "norsk": "sur",
+    "lemma": "sur",
+    "english": "sour / grumpy",
+    "ukrainian": "кислий / сердитий, незадоволений",
+    "spanish": "amargado / de mal humor",
+    "example": "Han var sur hele dagen fordi han ikke fikk sove nok.",
+    "example_english": "He was grumpy all day because he didn't get enough sleep.",
+    "example_ukrainian": "Він був сердитий цілий день, бо не міг добре виспатися.",
+    "example_spanish": "Estuvo de mal humor todo el día porque no pudo dormir lo suficiente.",
+    "definition": "Enten en smak som er skarp og syrlig, eller en person som er i dårlig humør.",
     "level": "B1",
     "category": "expressing-opinions",
     "part": "adjective"
@@ -6240,6 +6880,22 @@
     "lemma": "enslig forsørger"
   },
   {
+    "id": "v-b1-family-010",
+    "norsk": "ekteskap (et)",
+    "english": "a marriage",
+    "ukrainian": "шлюб",
+    "spanish": "un matrimonio",
+    "example": "De feiret ti år med ekteskap.",
+    "example_english": "They celebrated ten years of marriage.",
+    "example_ukrainian": "Вони відсвяткували десять років шлюбу.",
+    "example_spanish": "Celebraron diez años de matrimonio.",
+    "definition": "Et juridisk og sosialt anerkjent samliv mellom to personer.",
+    "level": "B1",
+    "category": "family",
+    "part": "noun",
+    "lemma": "ekteskap"
+  },
+  {
     "id": "v-b1-family-011",
     "norsk": "fosterhjem (et)",
     "lemma": "fosterhjem",
@@ -6576,6 +7232,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-finance-005",
+    "norsk": "budsjett (et)",
+    "lemma": "budsjett",
+    "english": "budget",
+    "ukrainian": "бюджет",
+    "spanish": "presupuesto",
+    "example": "Vi må holde oss innenfor budsjettet denne måneden.",
+    "example_english": "We need to stay within the budget this month.",
+    "example_ukrainian": "Цього місяця ми маємо триматися в межах бюджету.",
+    "example_spanish": "Tenemos que mantenernos dentro del presupuesto este mes.",
+    "definition": "En plan over hvor mye penger man har og hvordan man skal bruke dem i en bestemt periode.",
+    "level": "B1",
+    "category": "finance",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-finance-006",
     "norsk": "egenkapital (en)",
     "lemma": "egenkapital",
@@ -6816,6 +7488,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-finance-022",
+    "norsk": "gjeld (en)",
+    "lemma": "gjeld",
+    "english": "debt",
+    "ukrainian": "борг",
+    "spanish": "deuda",
+    "example": "Han jobbet hardt for å betale tilbake gjelden sin til banken.",
+    "example_english": "He worked hard to pay back his debt to the bank.",
+    "example_ukrainian": "Він наполегливо працював, щоб повернути борг банку.",
+    "example_spanish": "Trabajó duro para devolver su deuda al banco.",
+    "definition": "Gjeld er penger du skylder til noen andre, for eksempel en bank eller en person.",
+    "level": "B1",
+    "category": "finance",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-finance-023",
     "norsk": "inflasjon (en)",
     "lemma": "inflasjon",
@@ -6875,6 +7563,54 @@
     "example_ukrainian": "Я оплатив відпустку кредитною карткою, бо на рахунку не вистачало грошей.",
     "example_spanish": "Pagué las vacaciones con tarjeta de crédito porque no tenía suficiente dinero en la cuenta.",
     "definition": "Et lite plastikkort fra banken som du kan bruke til å betale for ting nå og betale pengene tilbake senere.",
+    "level": "B1",
+    "category": "finance",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-finance-027",
+    "norsk": "regning (en)",
+    "lemma": "regning",
+    "english": "bill / invoice",
+    "ukrainian": "рахунок / квитанція",
+    "spanish": "factura",
+    "example": "Jeg fikk en høy regning fra strømleverandøren denne måneden.",
+    "example_english": "I received a high electricity bill this month.",
+    "example_ukrainian": "Цього місяця я отримав великий рахунок від постачальника електроенергії.",
+    "example_spanish": "Recibí una factura muy alta de la compañía eléctrica este mes.",
+    "definition": "Et dokument som viser hvor mye penger du skylder for en vare eller tjeneste.",
+    "level": "B1",
+    "category": "finance",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-finance-028",
+    "norsk": "rente (en)",
+    "lemma": "rente",
+    "english": "interest rate",
+    "ukrainian": "відсоткова ставка",
+    "spanish": "tasa de interés",
+    "example": "Banken økte renten, så lånet mitt ble dyrere.",
+    "example_english": "The bank raised the interest rate, so my loan became more expensive.",
+    "example_ukrainian": "Банк підвищив відсоткову ставку, тому мій кредит став дорожчим.",
+    "example_spanish": "El banco subió la tasa de interés, así que mi préstamo se volvió más caro.",
+    "definition": "En prosentandel du betaler til banken for å låne penger, eller som du får når du sparer penger i banken.",
+    "level": "B1",
+    "category": "finance",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-finance-029",
+    "norsk": "skatt (en)",
+    "lemma": "skatt",
+    "english": "tax / treasure",
+    "ukrainian": "податок",
+    "spanish": "impuesto",
+    "example": "I Norge betaler de fleste skatt av lønnen sin hver måned.",
+    "example_english": "In Norway, most people pay tax on their salary every month.",
+    "example_ukrainian": "У Норвегії більшість людей платять податок із зарплати щомісяця.",
+    "example_spanish": "En Noruega, la mayoría de las personas pagan impuestos sobre su salario cada mes.",
+    "definition": "Penger som innbyggerne i et land må betale til staten, og som brukes til å finansiere offentlige tjenester.",
     "level": "B1",
     "category": "finance",
     "part": "noun"
@@ -7102,6 +7838,22 @@
     "category": "fitness",
     "part": "noun",
     "lemma": "konkurranse"
+  },
+  {
+    "id": "v-b1-fitness-007",
+    "norsk": "sport (en)",
+    "english": "a sport",
+    "ukrainian": "вид спорту",
+    "spanish": "un deporte",
+    "example": "Han driver med mange ulike sporter.",
+    "example_english": "He practises many different sports.",
+    "example_ukrainian": "Він займається багатьма різними видами спорту.",
+    "example_spanish": "Él practica muchos deportes diferentes.",
+    "definition": "En fysisk aktivitet med regler som utøves for moro, helse eller konkurranse.",
+    "level": "B1",
+    "category": "fitness",
+    "part": "noun",
+    "lemma": "sport"
   },
   {
     "id": "v-b1-fitness-008",
@@ -7600,6 +8352,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-health-009",
+    "norsk": "behandling (en)",
+    "lemma": "behandling",
+    "english": "a treatment",
+    "ukrainian": "лікування",
+    "spanish": "un tratamiento",
+    "example": "Behandlingen varer i seks uker.",
+    "example_english": "The treatment lasts six weeks.",
+    "example_ukrainian": "Лікування триває шість тижнів.",
+    "example_spanish": "El tratamiento dura seis semanas.",
+    "definition": "Medisinsk eller terapeutisk tiltak for å hjelpe en pasient å bli frisk.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-health-010",
     "norsk": "bivirkning (en)",
     "lemma": "bivirkning",
@@ -7627,6 +8395,38 @@
     "example_ukrainian": "Лікар взяв аналіз крові.",
     "example_spanish": "El médico le hizo un análisis de sangre.",
     "definition": "En test der man analyserer en blodprøve for å sjekke helsen.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-health-012",
+    "norsk": "diagnose (en)",
+    "lemma": "diagnose",
+    "english": "a diagnosis",
+    "ukrainian": "діагноз",
+    "spanish": "un diagnóstico",
+    "example": "Legen stilte en diagnose.",
+    "example_english": "The doctor made a diagnosis.",
+    "example_ukrainian": "Лікар поставив діагноз.",
+    "example_spanish": "El médico hizo un diagnóstico.",
+    "definition": "Legens vurdering av hvilken sykdom en pasient har.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-health-013",
+    "norsk": "ernæring (en)",
+    "lemma": "ernæring",
+    "english": "nutrition",
+    "ukrainian": "харчування",
+    "spanish": "la nutrición",
+    "example": "God ernæring er grunnlaget for helse.",
+    "example_english": "Good nutrition is the foundation of health.",
+    "example_ukrainian": "Правильне харчування — основа здоров'я.",
+    "example_spanish": "Una buena nutrición es la base de la salud.",
+    "definition": "Lære om hva vi spiser og drikker, og hva kroppen trenger for å fungere godt.",
     "level": "B1",
     "category": "health",
     "part": "noun"
@@ -7664,6 +8464,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-health-016",
+    "norsk": "rehabilitering (en)",
+    "lemma": "rehabilitering",
+    "english": "rehabilitation / rehab",
+    "ukrainian": "реабілітація",
+    "spanish": "la rehabilitación",
+    "example": "Han er i rehabilitering etter operasjonen.",
+    "example_english": "He is in rehabilitation after the operation.",
+    "example_ukrainian": "Він проходить реабілітацію після операції.",
+    "example_spanish": "Está en rehabilitación después de la operación.",
+    "definition": "Trening og behandling etter sykdom eller skade for å komme tilbake til normalt liv.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-health-017",
     "norsk": "røntgen (et)",
     "lemma": "røntgen",
@@ -7691,6 +8507,22 @@
     "example_ukrainian": "Її направили до спеціаліста.",
     "example_spanish": "La derivaron a un especialista.",
     "definition": "En lege med spesialisert kunnskap innenfor ett medisinsk fagområde.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-health-019",
+    "norsk": "symptom (et)",
+    "lemma": "symptom",
+    "english": "a symptom",
+    "ukrainian": "симптом",
+    "spanish": "un síntoma",
+    "example": "Hva er symptomene på influensa?",
+    "example_english": "What are the symptoms of the flu?",
+    "example_ukrainian": "Які симптоми грипу?",
+    "example_spanish": "¿Cuáles son los síntomas de la gripe?",
+    "definition": "Et tegn på sykdom som pasienten merker eller legen observerer.",
     "level": "B1",
     "category": "health",
     "part": "noun"
@@ -7792,6 +8624,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-health-026",
+    "norsk": "hjerte (et)",
+    "lemma": "hjerte",
+    "english": "heart",
+    "ukrainian": "серце",
+    "spanish": "el corazón",
+    "example": "Legen lyttet på hjertet hennes for å sjekke at alt var normalt.",
+    "example_english": "The doctor listened to her heart to check that everything was normal.",
+    "example_ukrainian": "Лікар послухав її серце, щоб перевірити, що все в нормі.",
+    "example_spanish": "El médico le escuchó el corazón para comprobar que todo estaba normal.",
+    "definition": "Det viktige organet i kroppen som pumper blod rundt, eller brukt som symbol på kjærlighet og følelser.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-health-027",
     "norsk": "hjerteinfarkt (et)",
     "lemma": "hjerteinfarkt",
@@ -7851,6 +8699,22 @@
     "example_ukrainian": "Лікар порадив здоровий і збалансований раціон.",
     "example_spanish": "El médico recomendó una dieta sana y equilibrada.",
     "definition": "Maten og drikken som en person spiser og drikker til vanlig.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-health-031",
+    "norsk": "kosthold (et)",
+    "lemma": "kosthold",
+    "english": "diet, eating habits",
+    "ukrainian": "харчові звички / дієта",
+    "spanish": "la dieta, los hábitos alimenticios",
+    "example": "Et godt kosthold kan hjelpe deg med å holde deg frisk.",
+    "example_english": "A good diet can help you stay healthy.",
+    "example_ukrainian": "Правильні харчові звички можуть допомогти тобі залишатися здоровим.",
+    "example_spanish": "Una buena dieta puede ayudarte a mantenerte sano.",
+    "definition": "Vanene og valgene en person har når det gjelder hva og hvor mye de spiser og drikker.",
     "level": "B1",
     "category": "health",
     "part": "noun"
@@ -7918,6 +8782,22 @@
     "level": "B1",
     "category": "health",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-health-036",
+    "norsk": "skade (en)",
+    "lemma": "skade",
+    "english": "damage / injury / to harm",
+    "ukrainian": "травма / пошкодження / шкода",
+    "spanish": "daño / lesión",
+    "example": "Han fikk en alvorlig skade i kneet under fotballkampen.",
+    "example_english": "He got a serious injury in his knee during the football match.",
+    "example_ukrainian": "Він отримав серйозну травму коліна під час футбольного матчу.",
+    "example_spanish": "Sufrió una lesión grave en la rodilla durante el partido de fútbol.",
+    "definition": "Noe negativt som skjer med en person, et dyr eller en ting og gjør at den ikke fungerer eller ser ut som normalt.",
+    "level": "B1",
+    "category": "health",
+    "part": "noun"
   },
   {
     "id": "v-b1-health-037",
@@ -8320,6 +9200,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-healthcare-005",
+    "norsk": "egenandel (en)",
+    "english": "a co-payment / patient contribution",
+    "ukrainian": "співплатіж / доплата пацієнта",
+    "spanish": "un copago / una aportación del paciente",
+    "example": "Egenandelen for lege er fastsatt.",
+    "example_english": "The co-payment for the doctor is fixed.",
+    "example_ukrainian": "Розмір доплати за прийом лікаря встановлений заздалегідь.",
+    "example_spanish": "El copago para el médico está establecido.",
+    "definition": "Den delen av legebesøk eller behandling som pasienten betaler selv.",
+    "level": "B1",
+    "category": "healthcare",
+    "part": "noun",
+    "lemma": "egenandel"
+  },
+  {
     "id": "v-b1-healthcare-006",
     "norsk": "epidemi (en)",
     "english": "an epidemic",
@@ -8720,6 +9616,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-healthcare-031",
+    "norsk": "vaksine (en)",
+    "lemma": "vaksine",
+    "english": "vaccine",
+    "ukrainian": "вакцина",
+    "spanish": "vacuna",
+    "example": "Legen anbefalte at alle barn skulle få vaksine mot meslinger.",
+    "example_english": "The doctor recommended that all children should get a vaccine against measles.",
+    "example_ukrainian": "Лікар рекомендував, щоб усі діти отримали вакцину проти кору.",
+    "example_spanish": "El médico recomendó que todos los niños recibieran la vacuna contra el sarampión.",
+    "definition": "Et medisinsk stoff som blir satt inn i kroppen for å beskytte mot sykdommer.",
+    "level": "B1",
+    "category": "healthcare",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-journalism-001",
     "norsk": "abonnement (et)",
     "english": "a subscription",
@@ -8800,6 +9712,22 @@
     "lemma": "digital plattform"
   },
   {
+    "id": "v-b1-journalism-006",
+    "norsk": "artikkel (en)",
+    "english": "an article",
+    "ukrainian": "стаття",
+    "spanish": "un artículo",
+    "example": "Artikkelen er interessant og velskrevet.",
+    "example_english": "The article is interesting and well written.",
+    "example_ukrainian": "Стаття цікава і добре написана.",
+    "example_spanish": "El artículo es interesante y está bien escrito.",
+    "definition": "En skriftlig tekst i en avis eller på nett om et bestemt tema.",
+    "level": "B1",
+    "category": "journalism",
+    "part": "noun",
+    "lemma": "artikkel"
+  },
+  {
     "id": "v-b1-journalism-007",
     "norsk": "redaktør (en)",
     "english": "an editor",
@@ -8862,6 +9790,22 @@
     "level": "B1",
     "category": "journalism",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-journalism-011",
+    "norsk": "journalist (en)",
+    "lemma": "journalist",
+    "english": "journalist",
+    "ukrainian": "журналіст",
+    "spanish": "periodista",
+    "example": "Journalisten skrev en lang artikkel om klimaendringer.",
+    "example_english": "The journalist wrote a long article about climate change.",
+    "example_ukrainian": "Журналіст написав довгу статтю про зміну клімату.",
+    "example_spanish": "El periodista escribió un largo artículo sobre el cambio climático.",
+    "definition": "En person som samler informasjon og skriver nyheter eller artikler for aviser, TV eller internett.",
+    "level": "B1",
+    "category": "journalism",
+    "part": "noun"
   },
   {
     "id": "v-b1-journalism-012",
@@ -8928,6 +9872,22 @@
     "lemma": "nyheter"
   },
   {
+    "id": "v-b1-journalism-016",
+    "norsk": "redaktør (en)",
+    "lemma": "redaktør",
+    "english": "editor",
+    "ukrainian": "редактор",
+    "spanish": "editor",
+    "example": "Redaktøren bestemte hvilke artikler som skulle stå på forsiden av avisen.",
+    "example_english": "The editor decided which articles would appear on the front page of the newspaper.",
+    "example_ukrainian": "Редактор вирішував, які статті мають бути на першій сторінці газети.",
+    "example_spanish": "El editor decidió qué artículos irían en la portada del periódico.",
+    "definition": "En person som har ansvar for innholdet i en avis, et tidsskrift eller en bok.",
+    "level": "B1",
+    "category": "journalism",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-journalism-017",
     "norsk": "reklame (en)",
     "english": "advertising / commercial",
@@ -8942,6 +9902,22 @@
     "category": "journalism",
     "part": "noun",
     "lemma": "reklame"
+  },
+  {
+    "id": "v-b1-journalism-018",
+    "norsk": "reportasje (en)",
+    "lemma": "reportasje",
+    "english": "report / feature story",
+    "ukrainian": "репортаж",
+    "spanish": "reportaje",
+    "example": "Journalisten laget en lang reportasje om livet i en liten norsk bygd.",
+    "example_english": "The journalist made a long report about life in a small Norwegian village.",
+    "example_ukrainian": "Журналіст зробив довгий репортаж про життя в маленькому норвезькому селі.",
+    "example_spanish": "El periodista hizo un largo reportaje sobre la vida en un pequeño pueblo noruego.",
+    "definition": "En lengre nyhetssak eller artikkel der en journalist undersøker og forteller om et tema i detalj.",
+    "level": "B1",
+    "category": "journalism",
+    "part": "noun"
   },
   {
     "id": "v-b1-journalism-019",
@@ -9712,6 +10688,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-media-008",
+    "norsk": "kilde (en)",
+    "lemma": "kilde",
+    "english": "a source",
+    "ukrainian": "джерело",
+    "spanish": "una fuente",
+    "example": "Sjekk kilden før du deler.",
+    "example_english": "Check the source before sharing.",
+    "example_ukrainian": "Перевіряйте джерело, перш ніж ділитися.",
+    "example_spanish": "Verifica la fuente antes de compartir.",
+    "definition": "En person eller et dokument man henter informasjon fra.",
+    "level": "B1",
+    "category": "media",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-media-009",
     "norsk": "kommentar (en)",
     "lemma": "kommentar",
@@ -9771,6 +10763,22 @@
     "example_ukrainian": "Я слухаю норвезький подкаст.",
     "example_spanish": "Escucho un podcast noruego.",
     "definition": "Et lydprogram som kan lastes ned og lyttes til når man vil.",
+    "level": "B1",
+    "category": "media",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-media-013",
+    "norsk": "reklame (en)",
+    "lemma": "reklame",
+    "english": "an advertisement",
+    "ukrainian": "реклама",
+    "spanish": "un anuncio",
+    "example": "Det er mye reklame på TV.",
+    "example_english": "There is a lot of advertising on TV.",
+    "example_ukrainian": "На телебаченні дуже багато реклами.",
+    "example_spanish": "Hay muchos anuncios en la televisión.",
+    "definition": "Et budskap fra en bedrift som prøver å overtale deg til å kjøpe et produkt eller en tjeneste.",
     "level": "B1",
     "category": "media",
     "part": "noun"
@@ -10270,6 +11278,22 @@
     "level": "B1",
     "category": "mental-wellbeing",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-mental-wellbeing-016",
+    "norsk": "grense (en)",
+    "english": "boundaries",
+    "ukrainian": "межі, кордони",
+    "spanish": "límites",
+    "example": "Det er viktig å sette grenser.",
+    "example_english": "It is important to set boundaries.",
+    "example_ukrainian": "Важливо встановлювати особисті межі.",
+    "example_spanish": "Es importante poner límites.",
+    "definition": "Personlige grenser for hva man er komfortabel med at andre gjør mot en.",
+    "level": "B1",
+    "category": "mental-wellbeing",
+    "part": "noun",
+    "lemma": "grense"
   },
   {
     "id": "v-b1-mental-wellbeing-017",
@@ -11104,6 +12128,22 @@
     "lemma": "ambisjon"
   },
   {
+    "id": "v-b1-personal-growth-009",
+    "norsk": "drøm (en)",
+    "english": "a dream",
+    "ukrainian": "мрія",
+    "spanish": "un sueño",
+    "example": "Drømmen min er å bli lege.",
+    "example_english": "My dream is to become a doctor.",
+    "example_ukrainian": "Моя мрія — стати лікарем.",
+    "example_spanish": "Mi sueño es ser médico.",
+    "definition": "Et sterkt ønske om noe man gjerne vil oppnå i fremtiden.",
+    "level": "B1",
+    "category": "personal-growth",
+    "part": "noun",
+    "lemma": "drøm"
+  },
+  {
     "id": "v-b1-personal-growth-010",
     "norsk": "lidenskap (en)",
     "english": "a passion",
@@ -11166,6 +12206,22 @@
     "category": "personal-growth",
     "part": "noun",
     "lemma": "plan"
+  },
+  {
+    "id": "v-b1-personal-growth-014",
+    "norsk": "ressurs (en)",
+    "english": "a resource",
+    "ukrainian": "ресурс",
+    "spanish": "un recurso",
+    "example": "Tid er en verdifull ressurs.",
+    "example_english": "Time is a valuable resource.",
+    "example_ukrainian": "Час — це цінний ресурс.",
+    "example_spanish": "El tiempo es un recurso valioso.",
+    "definition": "Noe man kan bruke til å nå et mål — tid, penger, kunnskap eller materialer.",
+    "level": "B1",
+    "category": "personal-growth",
+    "part": "noun",
+    "lemma": "ressurs"
   },
   {
     "id": "v-b1-personal-growth-015",
@@ -11358,6 +12414,22 @@
     "level": "B1",
     "category": "personal-growth",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-personal-growth-027",
+    "norsk": "å huske",
+    "lemma": "huske",
+    "english": "to remember / to swing (on a swing)",
+    "ukrainian": "пам'ятати",
+    "spanish": "recordar",
+    "example": "Jeg prøver å huske hvor jeg la nøklene mine.",
+    "example_english": "I am trying to remember where I put my keys.",
+    "example_ukrainian": "Я намагаюся пригадати, де залишив свої ключі.",
+    "example_spanish": "Intento recordar dónde puse mis llaves.",
+    "definition": "Å ta frem noe fra minnet, eller å holde noe i tankene sine.",
+    "level": "B1",
+    "category": "personal-growth",
+    "part": "verb"
   },
   {
     "id": "v-b1-personal-growth-028",
@@ -11744,6 +12816,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-personal-growth-052",
+    "norsk": "utfordring (en)",
+    "lemma": "utfordring",
+    "english": "challenge",
+    "ukrainian": "виклик, труднощі",
+    "spanish": "desafío, reto",
+    "example": "Det å finne ny jobb etter mange år var en stor utfordring for ham.",
+    "example_english": "Finding a new job after many years was a big challenge for him.",
+    "example_ukrainian": "Знайти нову роботу після багатьох років було для нього великим викликом.",
+    "example_spanish": "Encontrar un nuevo trabajo después de muchos años fue un gran reto para él.",
+    "definition": "En vanskelig oppgave eller situasjon som man må jobbe hardt for å løse eller komme seg gjennom.",
+    "level": "B1",
+    "category": "personal-growth",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-personal-growth-053",
     "norsk": "utholdenhet (en)",
     "english": "perseverance",
@@ -11822,6 +12910,22 @@
     "level": "B1",
     "category": "personal-growth",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-personal-growth-058",
+    "norsk": "å vokse",
+    "lemma": "vokse",
+    "english": "to grow",
+    "ukrainian": "рости",
+    "spanish": "crecer",
+    "example": "Barna vokser så fort at vi må kjøpe nye klær hele tiden.",
+    "example_english": "The children grow so fast that we have to buy new clothes all the time.",
+    "example_ukrainian": "Діти ростуть так швидко, що доводиться весь час купувати новий одяг.",
+    "example_spanish": "Los niños crecen tan rápido que tenemos que comprar ropa nueva todo el tiempo.",
+    "definition": "Å bli større, høyere eller mer utviklet over tid.",
+    "level": "B1",
+    "category": "personal-growth",
+    "part": "verb"
   },
   {
     "id": "v-b1-personal-growth-059",
@@ -12400,6 +13504,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-politics-027",
+    "norsk": "demokrati (et)",
+    "english": "a democracy",
+    "ukrainian": "демократія",
+    "spanish": "una democracia",
+    "example": "Demokrati er et grunnleggende prinsipp.",
+    "example_english": "Democracy is a fundamental principle.",
+    "example_ukrainian": "Демократія є основоположним принципом.",
+    "example_spanish": "La democracia es un principio fundamental.",
+    "definition": "Et styresett der innbyggerne velger sine representanter og har innflytelse på politikken.",
+    "level": "B1",
+    "category": "politics",
+    "part": "noun",
+    "lemma": "demokrati"
+  },
+  {
     "id": "v-b1-politics-028",
     "norsk": "parti (et)",
     "english": "a political party",
@@ -12512,6 +13632,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-politics-035",
+    "norsk": "grunnlov (en)",
+    "lemma": "grunnlov",
+    "english": "constitution",
+    "ukrainian": "конституція",
+    "spanish": "constitución",
+    "example": "Den norske grunnloven ble skrevet i 1814 på Eidsvoll.",
+    "example_english": "The Norwegian constitution was written in 1814 at Eidsvoll.",
+    "example_ukrainian": "Норвезька конституція була написана в 1814 році в Ейдсволлі.",
+    "example_spanish": "La constitución noruega fue escrita en 1814 en Eidsvoll.",
+    "definition": "Den viktigste loven i et land, som bestemmer hvordan landet skal styres og hvilke rettigheter innbyggerne har.",
+    "level": "B1",
+    "category": "politics",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-politics-036",
     "norsk": "å inngå",
     "lemma": "inngå",
@@ -12571,6 +13707,22 @@
     "example_ukrainian": "Рівноправність є найважливішою справою для багатьох організацій.",
     "example_spanish": "La igualdad es la causa más importante para muchas organizaciones.",
     "definition": "En sak eller et mål som en person eller gruppe jobber hardt for å oppnå eller forandre.",
+    "level": "B1",
+    "category": "politics",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-politics-040",
+    "norsk": "krig (en)",
+    "lemma": "krig",
+    "english": "war",
+    "ukrainian": "війна",
+    "spanish": "guerra",
+    "example": "Mange familier flyktet fra landet på grunn av krigen.",
+    "example_english": "Many families fled the country because of the war.",
+    "example_ukrainian": "Багато сімей втекли з країни через війну.",
+    "example_spanish": "Muchas familias huyeron del país a causa de la guerra.",
+    "definition": "En situasjon der to eller flere land eller grupper kjemper mot hverandre med våpen over lang tid. Det fører ofte til store skader og mange døde.",
     "level": "B1",
     "category": "politics",
     "part": "noun"
@@ -12848,6 +14000,22 @@
     "lemma": "mening"
   },
   {
+    "id": "v-b1-reasoning-007",
+    "norsk": "sammenheng (en)",
+    "english": "a connection / context",
+    "ukrainian": "зв'язок / контекст",
+    "spanish": "una conexión / un contexto",
+    "example": "Det er en klar sammenheng her.",
+    "example_english": "There is a clear connection here.",
+    "example_ukrainian": "Тут є чіткий зв'язок.",
+    "example_spanish": "Hay una clara conexión aquí.",
+    "definition": "En forbindelse mellom to ting, eller den situasjonen noe befinner seg i.",
+    "level": "B1",
+    "category": "reasoning",
+    "part": "noun",
+    "lemma": "sammenheng"
+  },
+  {
     "id": "v-b1-reasoning-008",
     "norsk": "ulempe (en)",
     "english": "a disadvantage",
@@ -12894,6 +14062,22 @@
     "category": "reasoning",
     "part": "noun",
     "lemma": "standpunkt"
+  },
+  {
+    "id": "v-b1-reasoning-011",
+    "norsk": "fordel (en)",
+    "lemma": "fordel",
+    "english": "advantage / benefit",
+    "ukrainian": "перевага",
+    "spanish": "ventaja / beneficio",
+    "example": "En stor fordel med å bo i byen er at alt er nær.",
+    "example_english": "A big advantage of living in the city is that everything is close.",
+    "example_ukrainian": "Велика перевага життя в місті — те, що все поруч.",
+    "example_spanish": "Una gran ventaja de vivir en la ciudad es que todo está cerca.",
+    "definition": "Noe positivt som gjør en situasjon eller et valg bedre enn et annet.",
+    "level": "B1",
+    "category": "reasoning",
+    "part": "noun"
   },
   {
     "id": "v-b1-reasoning-012",
@@ -13536,6 +14720,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-relationships-002",
+    "norsk": "å dele",
+    "lemma": "dele",
+    "english": "to share / to divide",
+    "ukrainian": "ділитися /ділити",
+    "spanish": "compartir / dividir",
+    "example": "Vi delte pizzaen likt mellom alle fire personene.",
+    "example_english": "We shared the pizza equally between all four people.",
+    "example_ukrainian": "Ми рівно поділили піцу між усіма чотирма людьми.",
+    "example_spanish": "Dividimos la pizza en partes iguales entre las cuatro personas.",
+    "definition": "Å gi noe av det man har til andre, eller å lage like store stykker av noe.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-relationships-003",
     "norsk": "egoistisk",
     "lemma": "egoistisk",
@@ -13550,6 +14750,22 @@
     "level": "B1",
     "category": "relationships",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-relationships-004",
+    "norsk": "ekteskap (et)",
+    "lemma": "ekteskap",
+    "english": "marriage",
+    "ukrainian": "шлюб",
+    "spanish": "el matrimonio",
+    "example": "De feiret tjue år med ekteskap med en stor fest for familie og venner.",
+    "example_english": "They celebrated twenty years of marriage with a big party for family and friends.",
+    "example_ukrainian": "Вони відсвяткували двадцять років шлюбу великою вечіркою для сім'ї та друзів.",
+    "example_spanish": "Celebraron veinte años de matrimonio con una gran fiesta para familia y amigos.",
+    "definition": "Et offisielt og lovlig forhold mellom to personer som har valgt å leve sammen som et par.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "noun"
   },
   {
     "id": "v-b1-relationships-005",
@@ -13680,6 +14896,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-relationships-013",
+    "norsk": "forhold (et)",
+    "lemma": "forhold",
+    "english": "relationship / condition / circumstance",
+    "ukrainian": "стосунки / обставини / умови",
+    "spanish": "relación / situación / circunstancia",
+    "example": "De har hatt et godt forhold til hverandre i mange år.",
+    "example_english": "They have had a good relationship with each other for many years.",
+    "example_ukrainian": "У них були гарні стосунки одне з одним протягом багатьох років.",
+    "example_spanish": "Han tenido una buena relación entre ellos durante muchos años.",
+    "definition": "Måten to personer eller ting er knyttet til hverandre på, eller en situasjon eller tilstand som påvirker noe.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-relationships-014",
     "norsk": "grei",
     "lemma": "grei",
@@ -13712,6 +14944,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-relationships-016",
+    "norsk": "kjærlighet (en)",
+    "lemma": "kjærlighet",
+    "english": "love",
+    "ukrainian": "кохання",
+    "spanish": "el amor",
+    "example": "Kjærligheten mellom dem vokste sterkere for hvert år som gikk.",
+    "example_english": "The love between them grew stronger with every passing year.",
+    "example_ukrainian": "Кохання між ними ставало міцнішим з кожним роком.",
+    "example_spanish": "El amor entre ellos creció más fuerte con cada año que pasaba.",
+    "definition": "En sterk og varm følelse man har for en person man bryr seg veldig mye om.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-relationships-017",
     "norsk": "å klemme",
     "lemma": "klemme",
@@ -13726,6 +14974,22 @@
     "level": "B1",
     "category": "relationships",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-relationships-018",
+    "norsk": "konflikt (en)",
+    "lemma": "konflikt",
+    "english": "conflict",
+    "ukrainian": "конфлікт",
+    "spanish": "un conflicto",
+    "example": "Det oppsto en konflikt mellom de to naboene om støy.",
+    "example_english": "A conflict arose between the two neighbours about noise.",
+    "example_ukrainian": "Між двома сусідами виник конфлікт через шум.",
+    "example_spanish": "Surgió un conflicto entre los dos vecinos por el ruido.",
+    "definition": "En situasjon der to eller flere personer eller grupper er uenige og kanskje krangler eller sloss.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "noun"
   },
   {
     "id": "v-b1-relationships-019",
@@ -13856,6 +15120,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-relationships-027",
+    "norsk": "samboer (en)",
+    "lemma": "samboer",
+    "english": "cohabiting partner, live-in partner",
+    "ukrainian": "партнер по спільному проживанню",
+    "spanish": "pareja de convivencia",
+    "example": "Hun og samboeren hennes har bodd sammen i tre år og trives veldig godt.",
+    "example_english": "She and her live-in partner have lived together for three years and get along very well.",
+    "example_ukrainian": "Вона та її партнер живуть разом уже три роки і почуваються дуже добре.",
+    "example_spanish": "Ella y su pareja llevan tres años viviendo juntos y están muy a gusto.",
+    "definition": "En person som bor sammen med kjæresten sin i samme bolig, uten å være gift.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-relationships-028",
     "norsk": "samliv (et)",
     "lemma": "samliv",
@@ -13918,6 +15198,22 @@
     "level": "B1",
     "category": "relationships",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-relationships-032",
+    "norsk": "skilsmisse (en)",
+    "lemma": "skilsmisse",
+    "english": "divorce",
+    "ukrainian": "розлучення",
+    "spanish": "divorcio",
+    "example": "Etter skilsmissen valgte hun å flytte til en ny by.",
+    "example_english": "After the divorce, she chose to move to a new city.",
+    "example_ukrainian": "Після розлучення вона вирішила переїхати до нового міста.",
+    "example_spanish": "Después del divorcio, ella decidió mudarse a una ciudad nueva.",
+    "definition": "En offisiell og juridisk avslutning av et ekteskap mellom to personer.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "noun"
   },
   {
     "id": "v-b1-relationships-033",
@@ -13984,6 +15280,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-relationships-037",
+    "norsk": "vennskap (et)",
+    "lemma": "vennskap",
+    "english": "friendship",
+    "ukrainian": "дружба",
+    "spanish": "amistad",
+    "example": "Deres vennskap har vart i mange år.",
+    "example_english": "Their friendship has lasted for many years.",
+    "example_ukrainian": "Їхня дружба триває вже багато років.",
+    "example_spanish": "Su amistad ha durado muchos años.",
+    "definition": "Et nært og tillitsfullt bånd mellom to eller flere venner.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-relationships-038",
     "norsk": "å bry seg om",
     "lemma": "å bry seg om",
@@ -14011,6 +15323,22 @@
     "example_ukrainian": "Вони помирилися після сварки.",
     "example_spanish": "Se reconciliaron después de la pelea.",
     "definition": "Å bli venner igjen etter en konflikt.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "phrase"
+  },
+  {
+    "id": "v-b1-relationships-040",
+    "norsk": "å gifte seg",
+    "lemma": "å gifte seg",
+    "english": "to get married",
+    "ukrainian": "одружитися",
+    "spanish": "casarse",
+    "example": "De gifter seg neste sommer.",
+    "example_english": "They are getting married next summer.",
+    "example_ukrainian": "Вони одружуються наступного літа.",
+    "example_spanish": "Se casan el próximo verano.",
+    "definition": "Å inngå ekteskap med en partner.",
     "level": "B1",
     "category": "relationships",
     "part": "phrase"
@@ -14078,6 +15406,22 @@
     "level": "B1",
     "category": "relationships",
     "part": "phrase"
+  },
+  {
+    "id": "v-b1-relationships-045",
+    "norsk": "å savne",
+    "lemma": "savne",
+    "english": "to miss (someone)",
+    "ukrainian": "сумувати (за кимось)",
+    "spanish": "extrañar / echar de menos",
+    "example": "Jeg savner deg veldig.",
+    "example_english": "I miss you very much.",
+    "example_ukrainian": "Я дуже сумую за тобою.",
+    "example_spanish": "Te extraño mucho.",
+    "definition": "Å kjenne savn etter noen man er glad i når de er borte.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "verb"
   },
   {
     "id": "v-b1-relationships-046",
@@ -14464,6 +15808,22 @@
     "lemma": "evolusjon"
   },
   {
+    "id": "v-b1-science-nature-022",
+    "norsk": "forsker (en)",
+    "lemma": "forsker",
+    "english": "researcher, scientist",
+    "ukrainian": "дослідник / вчений",
+    "spanish": "investigador / científico",
+    "example": "Forskeren presenterte nye funn om klimaendringer på konferansen.",
+    "example_english": "The researcher presented new findings about climate change at the conference.",
+    "example_ukrainian": "Дослідник представив нові результати про зміни клімату на конференції.",
+    "example_spanish": "El investigador presentó nuevos hallazgos sobre el cambio climático en la conferencia.",
+    "definition": "En person som jobber med å finne ny kunnskap ved å studere og undersøke et tema grundig.",
+    "level": "B1",
+    "category": "science-nature",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-science-nature-023",
     "norsk": "forskning (en)",
     "lemma": "forskning",
@@ -14510,6 +15870,22 @@
     "category": "science-nature",
     "part": "noun",
     "lemma": "fysikk"
+  },
+  {
+    "id": "v-b1-science-nature-026",
+    "norsk": "hav (et)",
+    "lemma": "hav",
+    "english": "ocean, sea",
+    "ukrainian": "океан, море",
+    "spanish": "océano / mar",
+    "example": "Norge har en lang kystlinje mot havet i vest.",
+    "example_english": "Norway has a long coastline facing the ocean to the west.",
+    "example_ukrainian": "Норвегія має довгу берегову лінію вздовж моря на заході.",
+    "example_spanish": "Noruega tiene una larga costa frente al mar en el oeste.",
+    "definition": "Et veldig stort område med saltvann som dekker store deler av jordkloden.",
+    "level": "B1",
+    "category": "science-nature",
+    "part": "noun"
   },
   {
     "id": "v-b1-science-nature-027",
@@ -14704,6 +16080,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-science-nature-039",
+    "norsk": "skog (en)",
+    "lemma": "skog",
+    "english": "forest, woods",
+    "ukrainian": "ліс",
+    "spanish": "bosque",
+    "example": "Vi gikk en lang tur i skogen og så mange dyr.",
+    "example_english": "We went for a long walk in the forest and saw many animals.",
+    "example_ukrainian": "Ми довго гуляли в лісі і побачили багато тварин.",
+    "example_spanish": "Dimos un largo paseo por el bosque y vimos muchos animales.",
+    "definition": "Et stort område med mange trær som vokser tett sammen i naturen.",
+    "level": "B1",
+    "category": "science-nature",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-science-nature-040",
     "norsk": "å smelte",
     "lemma": "smelte",
@@ -14718,6 +16110,22 @@
     "level": "B1",
     "category": "science-nature",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-science-nature-041",
+    "norsk": "storm (en)",
+    "lemma": "storm",
+    "english": "storm",
+    "ukrainian": "буря, шторм",
+    "spanish": "tormenta",
+    "example": "Det kom en kraftig storm i natt og mange trær falt ned.",
+    "example_english": "A powerful storm came last night and many trees fell down.",
+    "example_ukrainian": "Вночі прийшла сильна буря, і багато дерев упало.",
+    "example_spanish": "Esta noche llegó una fuerte tormenta y cayeron muchos árboles.",
+    "definition": "Veldig dårlig vær med sterk vind og ofte mye regn eller snø.",
+    "level": "B1",
+    "category": "science-nature",
+    "part": "noun"
   },
   {
     "id": "v-b1-science-nature-042",
@@ -14814,6 +16222,22 @@
     "level": "B1",
     "category": "science-nature",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-science-nature-048",
+    "norsk": "vann (et)",
+    "english": "water (H₂O)",
+    "ukrainian": "вода (H₂O)",
+    "spanish": "agua (H₂O)",
+    "example": "Vann er satt sammen av hydrogen og oksygen.",
+    "example_english": "Water is composed of hydrogen and oxygen.",
+    "example_ukrainian": "Вода складається з водню та кисню.",
+    "example_spanish": "El agua está formada por hidrógeno y oxígeno.",
+    "definition": "En klar, luktfri væske som er nødvendig for alt liv på jorden.",
+    "level": "B1",
+    "category": "science-nature",
+    "part": "noun",
+    "lemma": "vann"
   },
   {
     "id": "v-b1-science-nature-049",
@@ -15056,6 +16480,22 @@
     "lemma": "bokmål"
   },
   {
+    "id": "v-b1-society-011",
+    "norsk": "bonde (en)",
+    "lemma": "bonde",
+    "english": "farmer",
+    "ukrainian": "фермер",
+    "spanish": "agricultor / granjero",
+    "example": "Bonden stod tidlig opp for å gi dyrene mat.",
+    "example_english": "The farmer got up early to feed the animals.",
+    "example_ukrainian": "Фермер вставав рано, щоб нагодувати тварин.",
+    "example_spanish": "El granjero se levantó temprano para dar de comer a los animales.",
+    "definition": "En person som arbeider på en gård og dyrker jord eller steller dyr.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-society-012",
     "norsk": "bot (en)",
     "lemma": "bot",
@@ -15182,6 +16622,38 @@
     "level": "B1",
     "category": "society",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-society-020",
+    "norsk": "dialekt (en)",
+    "english": "a dialect",
+    "ukrainian": "діалект",
+    "spanish": "un dialecto",
+    "example": "Norge har mange ulike dialekter.",
+    "example_english": "Norway has many different dialects.",
+    "example_ukrainian": "У Норвегії є багато різних діалектів.",
+    "example_spanish": "Noruega tiene muchos dialectos diferentes.",
+    "definition": "En regional variant av et språk med særegen uttale og ordforråd.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun",
+    "lemma": "dialekt"
+  },
+  {
+    "id": "v-b1-society-021",
+    "norsk": "gravid",
+    "english": "pregnant",
+    "ukrainian": "вагітна",
+    "spanish": "embarazada",
+    "example": "Hun er gravid og venter barn.",
+    "example_english": "She is pregnant and expecting a baby.",
+    "example_ukrainian": "Вона вагітна й чекає на дитину.",
+    "example_spanish": "Ella está embarazada y espera un bebé.",
+    "definition": "En person som venter barn og har et foster i magen.",
+    "level": "B1",
+    "category": "society",
+    "part": "adjective",
+    "lemma": "gravid"
   },
   {
     "id": "v-b1-society-022",
@@ -15424,6 +16896,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-society-037",
+    "norsk": "flyktning (en)",
+    "lemma": "flyktning",
+    "english": "refugee",
+    "ukrainian": "біженець",
+    "spanish": "el refugiado",
+    "example": "Mange flyktninger kom til Norge for å søke beskyttelse.",
+    "example_english": "Many refugees came to Norway to seek protection.",
+    "example_ukrainian": "Багато біженців приїхали до Норвегії, щоб шукати захисту.",
+    "example_spanish": "Muchos refugiados llegaron a Noruega para pedir protección.",
+    "definition": "En person som har forlatt landet sitt fordi det er farlig, for eksempel på grunn av krig eller forfølgelse.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-society-038",
     "norsk": "flyktningsleir (en)",
     "lemma": "flyktningsleir",
@@ -15520,6 +17008,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-society-044",
+    "norsk": "generasjon (en)",
+    "lemma": "generasjon",
+    "english": "generation",
+    "ukrainian": "покоління",
+    "spanish": "la generación",
+    "example": "Min generasjon vokste opp med internett og sosiale medier.",
+    "example_english": "My generation grew up with the internet and social media.",
+    "example_ukrainian": "Моє покоління виросло з інтернетом і соціальними мережами.",
+    "example_spanish": "Mi generación creció con internet y las redes sociales.",
+    "definition": "En generasjon er en gruppe mennesker som er født og vokst opp i omtrent samme tidsperiode.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-society-045",
     "norsk": "å gjelde",
     "lemma": "gjelde",
@@ -15550,6 +17054,22 @@
     "level": "B1",
     "category": "society",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-society-047",
+    "norsk": "helsevesen (et)",
+    "english": "the healthcare system",
+    "ukrainian": "система охорони здоров'я",
+    "spanish": "el sistema de salud",
+    "example": "Helsevesenet i Norge er offentlig.",
+    "example_english": "The healthcare system in Norway is public.",
+    "example_ukrainian": "Система охорони здоров'я в Норвегії є державною.",
+    "example_spanish": "El sistema de salud en Noruega es público.",
+    "definition": "Det samlede systemet av sykehus, leger og helsetjenester i landet.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun",
+    "lemma": "helsevesen"
   },
   {
     "id": "v-b1-society-048",
@@ -15627,6 +17147,22 @@
     "example_ukrainian": "Батьки мають великий вплив на вибір дітей.",
     "example_spanish": "Los padres tienen una gran influencia en las decisiones de sus hijos.",
     "definition": "Makten eller evnen til å påvirke hva andre mennesker tenker, føler eller gjør. Noen med mye innflytelse kan endre andres meninger eller handlinger.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-society-053",
+    "norsk": "innvandrer (en)",
+    "lemma": "innvandrer",
+    "english": "immigrant",
+    "ukrainian": "іммігрант",
+    "spanish": "inmigrante",
+    "example": "Hun er innvandrer fra Somalia og har bodd i Norge i ti år.",
+    "example_english": "She is an immigrant from Somalia and has lived in Norway for ten years.",
+    "example_ukrainian": "Вона — іммігрантка з Сомалі і живе в Норвегії вже десять років.",
+    "example_spanish": "Ella es inmigrante de Somalia y ha vivido en Noruega durante diez años.",
+    "definition": "En person som har flyttet fra et annet land for å bo og leve i et nytt land.",
     "level": "B1",
     "category": "society",
     "part": "noun"
@@ -15824,6 +17360,38 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-society-066",
+    "norsk": "rettighet (en)",
+    "lemma": "rettighet",
+    "english": "right (legal or moral entitlement)",
+    "ukrainian": "право (юридичне або моральне)",
+    "spanish": "derecho",
+    "example": "Alle mennesker har rett til grunnleggende rettigheter, uansett hvor de kommer fra.",
+    "example_english": "All people are entitled to basic rights, regardless of where they come from.",
+    "example_ukrainian": "Усі люди мають право на основні права, незалежно від того, звідки вони.",
+    "example_spanish": "Todas las personas tienen derecho a los derechos básicos, sin importar de dónde vengan.",
+    "definition": "Noe en person har lov til å gjøre eller få, ofte beskyttet av loven.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-society-067",
+    "norsk": "rolle (en)",
+    "lemma": "rolle",
+    "english": "role",
+    "ukrainian": "роль",
+    "spanish": "papel, rol",
+    "example": "Læreren spiller en viktig rolle i elevenes utvikling.",
+    "example_english": "The teacher plays an important role in the students' development.",
+    "example_ukrainian": "Учитель відіграє важливу роль у розвитку учнів.",
+    "example_spanish": "El profesor juega un papel importante en el desarrollo de los alumnos.",
+    "definition": "Den funksjonen eller oppgaven en person har i en situasjon, et yrke eller en gruppe.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-society-068",
     "norsk": "russetid (en)",
     "english": "the russ period (school graduation celebration)",
@@ -15838,6 +17406,22 @@
     "category": "society",
     "part": "noun",
     "lemma": "russetid"
+  },
+  {
+    "id": "v-b1-society-069",
+    "norsk": "samfunn (et)",
+    "lemma": "samfunn",
+    "english": "society, community",
+    "ukrainian": "суспільство, громада",
+    "spanish": "sociedad, comunidad",
+    "example": "Vi må alle ta ansvar for å gjøre samfunnet bedre.",
+    "example_english": "We must all take responsibility for making society better.",
+    "example_ukrainian": "Ми всі маємо брати відповідальність за те, щоб зробити суспільство кращим.",
+    "example_spanish": "Todos debemos asumir la responsabilidad de mejorar la sociedad.",
+    "definition": "En stor gruppe mennesker som bor sammen og deler regler, kultur og verdier.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun"
   },
   {
     "id": "v-b1-society-070",
@@ -16112,6 +17696,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-society-087",
+    "norsk": "valg (et)",
+    "english": "election",
+    "ukrainian": "вибори",
+    "spanish": "elección",
+    "example": "Det er valg i Norge hvert fjerde år.",
+    "example_english": "There is an election in Norway every four years.",
+    "example_ukrainian": "У Норвегії вибори проводяться кожні чотири роки.",
+    "example_spanish": "Hay elecciones en Noruega cada cuatro años.",
+    "definition": "En demokratisk prosess der befolkningen velger sine representanter.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun",
+    "lemma": "valg"
+  },
+  {
     "id": "v-b1-society-088",
     "norsk": "velferdsstat (en)",
     "lemma": "velferdsstat",
@@ -16126,6 +17726,22 @@
     "level": "B1",
     "category": "society",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-society-089",
+    "norsk": "velferdsstat (en)",
+    "english": "the welfare state",
+    "ukrainian": "держава добробуту (визначена форма)",
+    "spanish": "el estado de bienestar",
+    "example": "Norge har en sterk velferdsstat.",
+    "example_english": "Norway has a strong welfare state.",
+    "example_ukrainian": "Норвегія має сильну державу добробуту.",
+    "example_spanish": "Noruega tiene un estado de bienestar fuerte.",
+    "definition": "Et samfunnssystem der staten sørger for helse, trygd og andre grunnleggende tjenester.",
+    "level": "B1",
+    "category": "society",
+    "part": "noun",
+    "lemma": "velferdsstat"
   },
   {
     "id": "v-b1-society-090",
@@ -16208,6 +17824,38 @@
     "lemma": "CO₂-utslipp"
   },
   {
+    "id": "v-b1-sustainability-002",
+    "norsk": "avfall (et)",
+    "english": "waste",
+    "ukrainian": "відходи",
+    "spanish": "residuos, basura",
+    "example": "Vi produserer for mye avfall.",
+    "example_english": "We produce too much waste.",
+    "example_ukrainian": "Ми виробляємо занадто багато відходів.",
+    "example_spanish": "Producimos demasiados residuos.",
+    "definition": "Ting man kaster fordi de ikke lenger er nyttige.",
+    "level": "B1",
+    "category": "sustainability",
+    "part": "noun",
+    "lemma": "avfall"
+  },
+  {
+    "id": "v-b1-sustainability-003",
+    "norsk": "avskoging (en)",
+    "english": "deforestation",
+    "ukrainian": "вирубка лісів",
+    "spanish": "deforestación",
+    "example": "Avskoging ødelegger habitater.",
+    "example_english": "Deforestation destroys habitats.",
+    "example_ukrainian": "Вирубка лісів руйнує середовища існування тварин.",
+    "example_spanish": "La deforestación destruye hábitats.",
+    "definition": "Det å hugge ned skog i stor skala, noe som skader klimaet og biologisk mangfold.",
+    "level": "B1",
+    "category": "sustainability",
+    "part": "noun",
+    "lemma": "avskoging"
+  },
+  {
     "id": "v-b1-sustainability-004",
     "norsk": "bensinbil (en)",
     "lemma": "bensinbil",
@@ -16286,6 +17934,22 @@
     "level": "B1",
     "category": "sustainability",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-sustainability-009",
+    "norsk": "elbil (en)",
+    "english": "an electric car",
+    "ukrainian": "електромобіль",
+    "spanish": "un coche eléctrico",
+    "example": "Norge har mange elbiler på veiene.",
+    "example_english": "Norway has many electric cars on the roads.",
+    "example_ukrainian": "У Норвегії на дорогах багато електромобілів.",
+    "example_spanish": "Noruega tiene muchos coches eléctricos en las carreteras.",
+    "definition": "En bil som drives av elektrisk motor og ikke slipper ut CO₂ direkte.",
+    "level": "B1",
+    "category": "sustainability",
+    "part": "noun",
+    "lemma": "elbil"
   },
   {
     "id": "v-b1-sustainability-010",
@@ -16496,6 +18160,22 @@
     "lemma": "miljøvern"
   },
   {
+    "id": "v-b1-sustainability-023",
+    "norsk": "å redusere",
+    "lemma": "redusere",
+    "english": "to reduce, to decrease",
+    "ukrainian": "зменшувати / скорочувати",
+    "spanish": "reducir",
+    "example": "Vi prøver å redusere mengden plast vi bruker i hverdagen.",
+    "example_english": "We are trying to reduce the amount of plastic we use in everyday life.",
+    "example_ukrainian": "Ми намагаємося зменшити кількість пластику, яку використовуємо щодня.",
+    "example_spanish": "Intentamos reducir la cantidad de plástico que usamos en el día a día.",
+    "definition": "Å gjøre noe mindre i størrelse, antall eller mengde.",
+    "level": "B1",
+    "category": "sustainability",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-sustainability-024",
     "norsk": "ren energi",
     "english": "clean energy",
@@ -16542,6 +18222,22 @@
     "level": "B1",
     "category": "sustainability",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-sustainability-027",
+    "norsk": "solenergi (en)",
+    "english": "solar energy",
+    "ukrainian": "сонячна енергія",
+    "spanish": "la energía solar",
+    "example": "Solenergi brukes stadig mer.",
+    "example_english": "Solar energy is used more and more.",
+    "example_ukrainian": "Сонячна енергія використовується дедалі більше.",
+    "example_spanish": "La energía solar se usa cada vez más.",
+    "definition": "Energi produsert fra sollys ved hjelp av solpaneler.",
+    "level": "B1",
+    "category": "sustainability",
+    "part": "noun",
+    "lemma": "solenergi"
   },
   {
     "id": "v-b1-sustainability-028",
@@ -16624,6 +18320,22 @@
     "lemma": "kildesortere"
   },
   {
+    "id": "v-b1-technology-001",
+    "norsk": "app (en)",
+    "lemma": "app",
+    "english": "app / application",
+    "ukrainian": "застосунок / додаток",
+    "spanish": "una aplicación / una app",
+    "example": "Jeg bruker en app på telefonen for å lære nye norske ord hver dag.",
+    "example_english": "I use an app on my phone to learn new Norwegian words every day.",
+    "example_ukrainian": "Я використовую застосунок на телефоні, щоб щодня вивчати нові норвезькі слова.",
+    "example_spanish": "Uso una app en el teléfono para aprender nuevas palabras en noruego cada día.",
+    "definition": "Et lite program på en telefon eller et nettbrett som hjelper deg med å gjøre bestemte ting.",
+    "level": "B1",
+    "category": "technology",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-technology-002",
     "norsk": "automatisering (en)",
     "lemma": "automatisering",
@@ -16667,6 +18379,22 @@
     "example_ukrainian": "Він вибрав смішний аватар для свого профілю в грі.",
     "example_spanish": "Eligió un avatar divertido para su perfil en el juego.",
     "definition": "Et bilde eller en figur som representerer en person på internett eller i et digitalt spill.",
+    "level": "B1",
+    "category": "technology",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-technology-005",
+    "norsk": "batteri (et)",
+    "lemma": "batteri",
+    "english": "battery",
+    "ukrainian": "батарея",
+    "spanish": "batería",
+    "example": "Telefonen har lite batteri.",
+    "example_english": "The phone has a low battery.",
+    "example_ukrainian": "У телефона мало заряду батареї.",
+    "example_spanish": "El teléfono tiene poca batería.",
+    "definition": "En enhet som lagrer strøm og gir energi til telefoner, biler og andre apparater.",
     "level": "B1",
     "category": "technology",
     "part": "noun"
@@ -16862,6 +18590,22 @@
     "level": "B1",
     "category": "technology",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-technology-018",
+    "norsk": "robot (en)",
+    "lemma": "robot",
+    "english": "robot",
+    "ukrainian": "робот",
+    "spanish": "robot",
+    "example": "Fabrikken bruker en robot til å sette sammen bildelene automatisk.",
+    "example_english": "The factory uses a robot to assemble the car parts automatically.",
+    "example_ukrainian": "Фабрика використовує робота для автоматичного складання деталей автомобіля.",
+    "example_spanish": "La fábrica usa un robot para ensamblar las piezas del coche automáticamente.",
+    "definition": "En maskin som kan utføre oppgaver automatisk, ofte laget for å gjøre arbeid som mennesker vanligvis gjør.",
+    "level": "B1",
+    "category": "technology",
+    "part": "noun"
   },
   {
     "id": "v-b1-technology-019",
@@ -17216,6 +18960,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-traditions-009",
+    "norsk": "generasjon (en)",
+    "lemma": "generasjon",
+    "english": "a generation",
+    "ukrainian": "покоління",
+    "spanish": "una generación",
+    "example": "Hver generasjon viderefører kulturen.",
+    "example_english": "Each generation carries the culture forward.",
+    "example_ukrainian": "Кожне покоління передає культуру далі.",
+    "example_spanish": "Cada generación transmite la cultura.",
+    "definition": "Alle menneskene som er født omtrent på samme tid og vokser opp i samme periode.",
+    "level": "B1",
+    "category": "traditions",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-traditions-010",
     "norsk": "høytid (en)",
     "lemma": "høytid",
@@ -17520,6 +19280,22 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-traditions-029",
+    "norsk": "tradisjon (en)",
+    "lemma": "tradisjon",
+    "english": "tradition",
+    "ukrainian": "традиція",
+    "spanish": "tradición",
+    "example": "Det er en gammel tradisjon i familien vår å spise ribbe på julaften.",
+    "example_english": "It is an old tradition in our family to eat pork ribs on Christmas Eve.",
+    "example_ukrainian": "У нашій родині є стара традиція їсти свинячі ребра на Святвечір.",
+    "example_spanish": "Es una vieja tradición en nuestra familia comer ribbe en Nochebuena.",
+    "definition": "En skikk eller vane som folk har fulgt i lang tid og som ofte går fra foreldre til barn.",
+    "level": "B1",
+    "category": "traditions",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-traditions-030",
     "norsk": "å overlevere",
     "lemma": "overlevere",
@@ -17568,6 +19344,22 @@
     "part": "phrase"
   },
   {
+    "id": "v-b1-travel-001",
+    "norsk": "å bestille",
+    "lemma": "bestille",
+    "english": "to order / to book",
+    "ukrainian": "замовляти / бронювати",
+    "spanish": "pedir / reservar",
+    "example": "Jeg vil gjerne bestille et bord til to personer.",
+    "example_english": "I would like to book a table for two people.",
+    "example_ukrainian": "Я хотів би замовити столик на двох осіб.",
+    "example_spanish": "Me gustaría reservar una mesa para dos personas.",
+    "definition": "Å si at du vil ha noe, for eksempel mat på en restaurant eller en billett til en reise.",
+    "level": "B1",
+    "category": "travel",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-travel-002",
     "norsk": "borte",
     "lemma": "borte",
@@ -17600,6 +19392,22 @@
     "lemma": "bagasje"
   },
   {
+    "id": "v-b1-travel-004",
+    "norsk": "forsikring (en)",
+    "english": "insurance (travel)",
+    "ukrainian": "страхування (туристичне)",
+    "spanish": "un seguro de viaje",
+    "example": "Kjøp reiseforsikring før du drar.",
+    "example_english": "Buy travel insurance before you go.",
+    "example_ukrainian": "Купіть туристичну страховку перед від'їздом.",
+    "example_spanish": "Compra un seguro de viaje antes de salir.",
+    "definition": "En avtale som dekker kostnader ved uforutsette hendelser på reisen.",
+    "level": "B1",
+    "category": "travel",
+    "part": "noun",
+    "lemma": "forsikring"
+  },
+  {
     "id": "v-b1-travel-005",
     "norsk": "forsinkelse (en)",
     "english": "a delay",
@@ -17614,6 +19422,22 @@
     "category": "travel",
     "part": "noun",
     "lemma": "forsinkelse"
+  },
+  {
+    "id": "v-b1-travel-006",
+    "norsk": "gate (en)",
+    "english": "a gate (airport)",
+    "ukrainian": "гейт (в аеропорту)",
+    "spanish": "una puerta de embarque",
+    "example": "Gaten er i terminal to.",
+    "example_english": "The gate is in terminal two.",
+    "example_ukrainian": "Гейт знаходиться в другому терміналі.",
+    "example_spanish": "La puerta de embarque está en la terminal dos.",
+    "definition": "Utgangsporten på flyplassen der man går om bord i flyet.",
+    "level": "B1",
+    "category": "travel",
+    "part": "noun",
+    "lemma": "gate"
   },
   {
     "id": "v-b1-travel-007",
@@ -17936,6 +19760,22 @@
     "lemma": "innsjekk"
   },
   {
+    "id": "v-b1-travel-027",
+    "norsk": "å snu",
+    "lemma": "snu",
+    "english": "to turn / to turn around",
+    "ukrainian": "повертати / розвертатися",
+    "spanish": "girar / dar la vuelta",
+    "example": "Du må snu bilen her, vi kjørte feil vei.",
+    "example_english": "You need to turn the car around here, we went the wrong way.",
+    "example_ukrainian": "Тут потрібно розвернути машину — ми поїхали не тим шляхом.",
+    "example_spanish": "Tienes que dar la vuelta aquí, nos hemos equivocado de camino.",
+    "definition": "Å endre retningen til noe eller noen slik at det vender en annen vei.",
+    "level": "B1",
+    "category": "travel",
+    "part": "verb"
+  },
+  {
     "id": "v-b1-travel-028",
     "norsk": "termos (en)",
     "lemma": "termos",
@@ -17963,6 +19803,22 @@
     "example_ukrainian": "Ми досягли вершини гори після трьох годин ходьби.",
     "example_spanish": "Llegamos a la cima de la montaña después de tres horas de caminata.",
     "definition": "Den høyeste delen av noe, for eksempel et fjell eller en bygning.",
+    "level": "B1",
+    "category": "travel",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-travel-030",
+    "norsk": "tur (en)",
+    "lemma": "tur",
+    "english": "trip, walk, tour",
+    "ukrainian": "прогулянка / поїздка / похід",
+    "spanish": "una excursión / un paseo",
+    "example": "Vi tok en lang tur i skogen i helgen.",
+    "example_english": "We went on a long walk in the forest over the weekend.",
+    "example_ukrainian": "У вихідні ми довго гуляли в лісі.",
+    "example_spanish": "Dimos un largo paseo por el bosque el fin de semana.",
+    "definition": "En reise eller en gåtur man gjør, enten for fritid eller for et bestemt formål.",
     "level": "B1",
     "category": "travel",
     "part": "noun"
@@ -18030,6 +19886,22 @@
     "category": "travel",
     "part": "noun",
     "lemma": "utsjekk"
+  },
+  {
+    "id": "v-b1-travel-035",
+    "norsk": "vei (en)",
+    "lemma": "vei",
+    "english": "road / way / path",
+    "ukrainian": "дорога / шлях",
+    "spanish": "la carretera / el camino",
+    "example": "Vi tok en lang vei gjennom skogen for å komme til hytten.",
+    "example_english": "We took a long path through the forest to reach the cabin.",
+    "example_ukrainian": "Ми їхали довгою дорогою через ліс, щоб дістатися до хатини.",
+    "example_spanish": "Tomamos un largo camino por el bosque para llegar a la cabaña.",
+    "definition": "En stripe eller rute som folk bruker for å gå eller kjøre fra ett sted til et annet.",
+    "level": "B1",
+    "category": "travel",
+    "part": "noun"
   },
   {
     "id": "v-b1-travel-036",
@@ -18320,6 +20192,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-work-002",
+    "norsk": "annenhver",
+    "lemma": "annenhver",
+    "english": "every other / every second",
+    "ukrainian": "кожен другий / через один",
+    "spanish": "cada dos",
+    "example": "Vi har møte annenhver uke, så neste møte er om to uker.",
+    "example_english": "We have a meeting every other week, so the next meeting is in two weeks.",
+    "example_ukrainian": "У нас зустріч кожного другого тижня, тому наступна зустріч буде через два тижні.",
+    "example_spanish": "Tenemos reunión cada dos semanas, así que la próxima reunión es en dos semanas.",
+    "definition": "Noe som skjer én gang av to ganger, altså med et mellomrom på én gang mellom hver gang.",
+    "level": "B1",
+    "category": "work",
+    "part": "adjective"
+  },
+  {
     "id": "v-b1-work-003",
     "norsk": "arbeidsledig",
     "lemma": "arbeidsledig",
@@ -18416,6 +20304,22 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-work-009",
+    "norsk": "bedrift (en)",
+    "lemma": "bedrift",
+    "english": "company / business / enterprise",
+    "ukrainian": "підприємство / компанія",
+    "spanish": "la empresa",
+    "example": "Han startet sin egen bedrift etter å ha jobbet i ti år for et stort firma.",
+    "example_english": "He started his own company after working for a large firm for ten years.",
+    "example_ukrainian": "Він відкрив власне підприємство після десяти років роботи у великій фірмі.",
+    "example_spanish": "Fundó su propia empresa después de trabajar diez años en una gran firma.",
+    "definition": "En organisasjon eller et selskap som driver med handel eller produksjon for å tjene penger.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-work-010",
     "norsk": "å beholde",
     "lemma": "beholde",
@@ -18464,6 +20368,70 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-work-013",
+    "norsk": "CV (en)",
+    "lemma": "CV",
+    "english": "a CV / résumé",
+    "ukrainian": "резюме",
+    "spanish": "un currículum",
+    "example": "Oppdater CV-en før du søker.",
+    "example_english": "Update your CV before applying.",
+    "example_ukrainian": "Оновіть резюме перед тим, як подавати заявку.",
+    "example_spanish": "Actualiza el currículum antes de postularte.",
+    "definition": "Et dokument med en persons utdanning og arbeidserfaring.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-work-014",
+    "norsk": "arbeidsgiver (en)",
+    "lemma": "arbeidsgiver",
+    "english": "an employer",
+    "ukrainian": "роботодавець",
+    "spanish": "un empleador",
+    "example": "Arbeidsgiveren tilbyr gode fordeler.",
+    "example_english": "The employer offers good benefits.",
+    "example_ukrainian": "Роботодавець пропонує хороші пільги.",
+    "example_spanish": "El empleador ofrece buenos beneficios.",
+    "definition": "En person eller bedrift som ansetter og betaler folk for å jobbe.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-work-015",
+    "norsk": "arbeidstaker (en)",
+    "lemma": "arbeidstaker",
+    "english": "an employee",
+    "ukrainian": "працівник",
+    "spanish": "un empleado / una empleada",
+    "example": "Arbeidstakerne streiker for høyere lønn.",
+    "example_english": "The employees are striking for higher pay.",
+    "example_ukrainian": "Працівники страйкують за підвищення зарплати.",
+    "example_spanish": "Los empleados hacen huelga por un salario más alto.",
+    "definition": "En person som jobber for en arbeidsgiver og mottar lønn.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-work-016",
+    "norsk": "fagforening (en)",
+    "lemma": "fagforening",
+    "english": "a trade union",
+    "ukrainian": "профспілка",
+    "spanish": "un sindicato",
+    "example": "Han er med i fagforeningen.",
+    "example_english": "He is a member of the trade union.",
+    "example_ukrainian": "Він є членом профспілки.",
+    "example_spanish": "Él es miembro del sindicato.",
+    "definition": "En organisasjon som representerer arbeidstakere i forhandlinger om lønn.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-work-017",
     "norsk": "frist (en)",
     "lemma": "frist",
@@ -18491,6 +20459,22 @@
     "example_ukrainian": "Вона зробила вражаючу кар'єру.",
     "example_spanish": "Ella ha tenido una carrera impresionante.",
     "definition": "Den langsiktige utviklingen av ens arbeidsliv og faglige vei.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-work-019",
+    "norsk": "kompetanse (en)",
+    "lemma": "kompetanse",
+    "english": "competence / skills",
+    "ukrainian": "компетентність / навички",
+    "spanish": "competencia, habilidades",
+    "example": "Hun har høy kompetanse innen IT.",
+    "example_english": "She has high competence in IT.",
+    "example_ukrainian": "Вона має високу компетентність у сфері ІТ.",
+    "example_spanish": "Ella tiene una alta competencia en informática.",
+    "definition": "Kunnskap og ferdigheter som gjør en person i stand til å gjøre en bestemt jobb.",
     "level": "B1",
     "category": "work",
     "part": "noun"
@@ -18539,6 +20523,22 @@
     "example_ukrainian": "Вона перебуває у відпустці по догляду за дитиною.",
     "example_spanish": "Ella está con licencia de maternidad.",
     "definition": "En periode med godkjent fravær fra jobben, for eksempel foreldrepermisjon.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-work-023",
+    "norsk": "ansvar (et)",
+    "lemma": "ansvar",
+    "english": "a responsibility",
+    "ukrainian": "відповідальність",
+    "spanish": "una responsabilidad",
+    "example": "Han har mye ansvar i stillingen.",
+    "example_english": "He has a lot of responsibility in the position.",
+    "example_ukrainian": "Він має велику відповідальність на цій посаді.",
+    "example_spanish": "Él tiene mucha responsabilidad en el puesto.",
+    "definition": "En oppgave eller plikt man er forventet å ta hånd om.",
     "level": "B1",
     "category": "work",
     "part": "noun"
@@ -18736,6 +20736,38 @@
     "part": "noun"
   },
   {
+    "id": "v-b1-work-036",
+    "norsk": "å jobbe",
+    "lemma": "jobbe",
+    "english": "to work",
+    "ukrainian": "працювати",
+    "spanish": "trabajar",
+    "example": "Hun jobber som lærer på en barneskole i Oslo.",
+    "example_english": "She works as a teacher at a primary school in Oslo.",
+    "example_ukrainian": "Вона працює вчителькою у початковій школі в Осло.",
+    "example_spanish": "Ella trabaja como maestra en una escuela primaria en Oslo.",
+    "definition": "Å gjøre et arbeid, ofte for å tjene penger eller fullføre en oppgave.",
+    "level": "B1",
+    "category": "work",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-work-037",
+    "norsk": "karriere (en)",
+    "lemma": "karriere",
+    "english": "career",
+    "ukrainian": "кар'єра",
+    "spanish": "carrera",
+    "example": "Hun har bygget seg en god karriere innen medisin.",
+    "example_english": "She has built a good career in medicine.",
+    "example_ukrainian": "Вона побудувала гарну кар'єру в медицині.",
+    "example_spanish": "Ella ha construido una buena carrera en la medicina.",
+    "definition": "En persons yrkesliv og utvikling i jobben over tid.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-work-038",
     "norsk": "karriereveileder (en)",
     "lemma": "karriereveileder",
@@ -18782,6 +20814,22 @@
     "level": "B1",
     "category": "work",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-work-041",
+    "norsk": "kunde (en)",
+    "lemma": "kunde",
+    "english": "customer, client",
+    "ukrainian": "клієнт, покупець",
+    "spanish": "cliente",
+    "example": "Kunden spurte om de hadde en mindre størrelse av jakken.",
+    "example_english": "The customer asked if they had a smaller size of the jacket.",
+    "example_ukrainian": "Покупець запитав, чи є куртка меншого розміру.",
+    "example_spanish": "El cliente preguntó si tenían la chaqueta en una talla más pequeña.",
+    "definition": "En person som kjøper varer eller tjenester fra en butikk eller et firma.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
   },
   {
     "id": "v-b1-work-042",
@@ -18912,6 +20960,22 @@
     "part": "adjective"
   },
   {
+    "id": "v-b1-work-050",
+    "norsk": "søknad (en)",
+    "lemma": "søknad",
+    "english": "application",
+    "ukrainian": "заява, заявка",
+    "spanish": "solicitud",
+    "example": "Hun sendte inn en søknad om den ledige stillingen i går.",
+    "example_english": "She submitted an application for the vacant position yesterday.",
+    "example_ukrainian": "Вчора вона подала заявку на вакантну посаду.",
+    "example_spanish": "Ella envió una solicitud para el puesto vacante ayer.",
+    "definition": "Et skriftlig dokument der man ber om noe, for eksempel en jobb eller en plass på et studie.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-work-051",
     "norsk": "tillegg (et)",
     "lemma": "tillegg",
@@ -19006,6 +21070,22 @@
     "level": "B1",
     "category": "work",
     "part": "adjective"
+  },
+  {
+    "id": "v-b1-work-057",
+    "norsk": "å ansette",
+    "lemma": "ansette",
+    "english": "to hire / to employ",
+    "ukrainian": "наймати, приймати на роботу",
+    "spanish": "contratar, emplear",
+    "example": "Bedriften ansetter nye folk.",
+    "example_english": "The company is hiring new people.",
+    "example_ukrainian": "Компанія наймає нових працівників.",
+    "example_spanish": "La empresa contrata gente nueva.",
+    "definition": "Å tilby noen en jobb og begynne arbeidsforholdet.",
+    "level": "B1",
+    "category": "work",
+    "part": "verb"
   },
   {
     "id": "v-b1-work-058",

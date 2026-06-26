@@ -1,5 +1,20 @@
 [
   {
+    "id": "u-a2-001",
+    "norsk": "å gå på ski",
+    "lemma": "å gå på ski",
+    "english": "to go skiing",
+    "ukrainian": "кататися на лижах",
+    "spanish": "ir a esquiar",
+    "example": "Hun liker å gå på ski om vinteren.",
+    "example_english": "She likes to go skiing in the winter.",
+    "example_ukrainian": "Вона любить кататися на лижах узимку.",
+    "example_spanish": "A ella le gusta ir a esquiar en invierno.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-a2-002",
     "norsk": "for varmt/kaldt",
     "lemma": "for varmt/kaldt",
@@ -10,6 +25,21 @@
     "example_english": "It is too cold outside today.",
     "example_ukrainian": "Сьогодні надворі занадто холодно.",
     "example_spanish": "Hace demasiado frío afuera hoy.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a2-003",
+    "norsk": "stress",
+    "lemma": "stress",
+    "english": "stress",
+    "ukrainian": "стрес",
+    "spanish": "estrés",
+    "example": "Det er mye stress på jobben.",
+    "example_english": "There is a lot of stress at work.",
+    "example_ukrainian": "На роботі багато стресу.",
+    "example_spanish": "Hay mucho estrés en el trabajo.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -720,6 +750,21 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-051",
+    "norsk": "vondt",
+    "lemma": "vondt",
+    "english": "pain, hurt, sore",
+    "ukrainian": "біль, боліти",
+    "spanish": "dolor, doler",
+    "example": "Gjør det vondt? Ja, jeg har vondt i hodet.",
+    "example_english": "Does it hurt? Yes, I have a headache.",
+    "example_ukrainian": "Болить? Так, у мене болить голова.",
+    "example_spanish": "¿Te duele? Sí, me duele la cabeza.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-a2-052",
     "norsk": "å ta feil",
     "lemma": "å ta feil",
@@ -795,6 +840,21 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-057",
+    "norsk": "faktisk",
+    "lemma": "faktisk",
+    "english": "actually, in fact",
+    "ukrainian": "насправді, фактично",
+    "spanish": "de hecho, en realidad",
+    "example": "Jeg er faktisk veldig trøtt i dag.",
+    "example_english": "I am actually very tired today.",
+    "example_ukrainian": "Я насправді дуже втомлений сьогодні.",
+    "example_spanish": "De hecho, hoy estoy muy cansado.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-a2-058",
     "norsk": "å være enig i",
     "lemma": "å være enig i",
@@ -820,6 +880,21 @@
     "example_english": "We are on the way to the shop.",
     "example_ukrainian": "Ми йдемо до магазину.",
     "example_spanish": "Estamos de camino a la tienda.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a2-060",
+    "norsk": "sur",
+    "lemma": "sur",
+    "english": "angry, sour, grumpy",
+    "ukrainian": "сердитий, похмурий, незадоволений",
+    "spanish": "enfadado, de mal humor",
+    "example": "Han er sur fordi han er trøtt.",
+    "example_english": "He is grumpy because he is tired.",
+    "example_ukrainian": "Він сердитий, тому що втомився.",
+    "example_spanish": "Él está de mal humor porque está cansado.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1020,6 +1095,21 @@
     "part": "phrase"
   },
   {
+    "id": "u-a2-074",
+    "norsk": "i løpet av",
+    "lemma": "i løpet av",
+    "english": "within, during, over the course of",
+    "ukrainian": "протягом, за (певний час)",
+    "spanish": "en, durante, a lo largo de",
+    "example": "Jeg vil lære norsk i løpet av ett år.",
+    "example_english": "I want to learn Norwegian within one year.",
+    "example_ukrainian": "Я хочу вивчити норвезьку за один рік.",
+    "example_spanish": "Quiero aprender noruego en un año.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
     "id": "u-a2-075",
     "norsk": "å pynte seg",
     "lemma": "å pynte seg",
@@ -1060,6 +1150,21 @@
     "example_english": "He is giving a speech at the party.",
     "example_ukrainian": "Він виголошує промову на святі.",
     "example_spanish": "Él da un discurso en la fiesta.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a2-078",
+    "norsk": "å gratulere",
+    "lemma": "å gratulere",
+    "english": "to congratulate",
+    "ukrainian": "вітати",
+    "spanish": "felicitar",
+    "example": "Gratulerer med dagen!",
+    "example_english": "Happy birthday! / Congratulations!",
+    "example_ukrainian": "Вітаю з днем народження!",
+    "example_spanish": "¡Feliz cumpleaños!",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1150,6 +1255,36 @@
     "example_english": "Are you done with the task?",
     "example_ukrainian": "Ти вже закінчив завдання?",
     "example_spanish": "¿Ya terminaste la tarea?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a2-085",
+    "norsk": "smak",
+    "lemma": "smak",
+    "english": "taste",
+    "ukrainian": "смак",
+    "spanish": "sabor",
+    "example": "Denne maten smaker godt.",
+    "example_english": "This food tastes good.",
+    "example_ukrainian": "Ця їжа смачна.",
+    "example_spanish": "Esta comida sabe bien.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a2-086",
+    "norsk": "smaken",
+    "lemma": "smaken",
+    "english": "the taste",
+    "ukrainian": "смак (визначений артиклем)",
+    "spanish": "el sabor",
+    "example": "Han kjenner den søte smaken av jordbær.",
+    "example_english": "He tastes the sweet taste of strawberries.",
+    "example_ukrainian": "Він відчуває солодкий смак полуниці.",
+    "example_spanish": "Él siente el dulce sabor de las fresas.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"
@@ -1300,6 +1435,21 @@
     "example_english": "She joined a football club.",
     "example_ukrainian": "Вона записалася до футбольного клубу.",
     "example_spanish": "Ella se apuntó a un club de fútbol.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a2-097",
+    "norsk": "ved siden av",
+    "lemma": "ved siden av",
+    "english": "next to, alongside, in addition to",
+    "ukrainian": "поряд з, на додаток до",
+    "spanish": "al lado de, además de",
+    "example": "Han studerer ved siden av jobben.",
+    "example_english": "He studies alongside his job.",
+    "example_ukrainian": "Він навчається на додаток до роботи.",
+    "example_spanish": "Él estudia además de trabajar.",
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase"

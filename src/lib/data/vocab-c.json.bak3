@@ -204,6 +204,18 @@
     "part": "noun"
   },
   {
+    "id": "v-c-philosophy-018",
+    "norsk": "syllogisme (en)",
+    "lemma": "syllogisme",
+    "english": "a syllogism",
+    "example": "Et syllogisme trekker en konklusjon fra to premisser.",
+    "example_english": "A syllogism draws a conclusion from two premises.",
+    "definition": "En logisk struktur der man starter med to påstander og trekker en nødvendig konklusjon fra dem.",
+    "level": "C",
+    "category": "philosophy",
+    "part": "noun"
+  },
+  {
     "id": "v-c-philosophy-019",
     "norsk": "empirisme (en)",
     "lemma": "empirisme",
@@ -334,6 +346,30 @@
     "level": "C",
     "category": "academic",
     "part": "verb"
+  },
+  {
+    "id": "v-c-academic-008",
+    "norsk": "validitet (en)",
+    "lemma": "validitet",
+    "english": "validity",
+    "example": "Studiens validitet avhenger av målinstrumentet.",
+    "example_english": "The study's validity depends on the measurement instrument.",
+    "definition": "I hvilken grad en studie faktisk måler det den er ment å måle.",
+    "level": "C",
+    "category": "academic",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-academic-009",
+    "norsk": "reliabilitet (en)",
+    "lemma": "reliabilitet",
+    "english": "reliability",
+    "example": "Høy reliabilitet sikrer reproduserbare resultater.",
+    "example_english": "High reliability ensures reproducible results.",
+    "definition": "I hvilken grad en studie gir de samme resultatene hvis den gjentas under like forhold.",
+    "level": "C",
+    "category": "academic",
+    "part": "noun"
   },
   {
     "id": "v-c-academic-010",
@@ -624,6 +660,18 @@
     "part": "adjective"
   },
   {
+    "id": "v-c-formal-writing-018",
+    "norsk": "å bidra til",
+    "lemma": "å bidra til",
+    "english": "to contribute to",
+    "example": "Studien bidrar til å fylle et kunnskapshull.",
+    "example_english": "The study contributes to filling a knowledge gap.",
+    "definition": "Å hjelpe til med at noe skjer eller blir bedre, som én av flere deler av et større hele.",
+    "level": "C",
+    "category": "formal-writing",
+    "part": "phrase"
+  },
+  {
     "id": "v-c-rhetoric-001",
     "norsk": "en retorisk strategi",
     "lemma": "en retorisk strategi",
@@ -634,6 +682,42 @@
     "level": "C",
     "category": "rhetoric",
     "part": "phrase"
+  },
+  {
+    "id": "v-c-rhetoric-002",
+    "norsk": "ethos (en)",
+    "lemma": "ethos",
+    "english": "ethos (appeal to credibility)",
+    "example": "Taleren bygger ethos gjennom sin faglige bakgrunn.",
+    "example_english": "The speaker builds ethos through their professional background.",
+    "definition": "Når en taler eller forfatter viser at de er pålitelige og kunnskapsrike, slik at publikum stoler på dem.",
+    "level": "C",
+    "category": "rhetoric",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-rhetoric-003",
+    "norsk": "pathos (en)",
+    "lemma": "pathos",
+    "english": "pathos (appeal to emotion)",
+    "example": "Bruken av pathos beveger tilhørerne.",
+    "example_english": "The use of pathos moves the audience.",
+    "definition": "Når en taler eller forfatter bruker følelser for å påvirke publikum, for eksempel ved å vekke medfølelse.",
+    "level": "C",
+    "category": "rhetoric",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-rhetoric-004",
+    "norsk": "logos (en)",
+    "lemma": "logos",
+    "english": "logos (appeal to logic)",
+    "example": "Argumentet er konstruert rundt logosbaserte bevis.",
+    "example_english": "The argument is built around logos-based evidence.",
+    "definition": "Når en taler eller forfatter bruker logiske argumenter, fakta og bevis for å overbevise publikum.",
+    "level": "C",
+    "category": "rhetoric",
+    "part": "noun"
   },
   {
     "id": "v-c-rhetoric-005",
@@ -754,6 +838,18 @@
     "level": "C",
     "category": "rhetoric",
     "part": "noun"
+  },
+  {
+    "id": "v-c-rhetoric-015",
+    "norsk": "å disponere",
+    "lemma": "disponere",
+    "english": "to structure / to organise (a text)",
+    "example": "En god tale er tydelig disponert.",
+    "example_english": "A good speech is clearly structured.",
+    "definition": "Å planlegge og ordne delene i en tekst eller tale på en tydelig og logisk måte.",
+    "level": "C",
+    "category": "rhetoric",
+    "part": "verb"
   },
   {
     "id": "v-c-rhetoric-016",
@@ -994,6 +1090,18 @@
     "level": "C",
     "category": "complex-emotions",
     "part": "verb"
+  },
+  {
+    "id": "v-c-complex-emotions-015",
+    "norsk": "sårbarhet (en)",
+    "lemma": "sårbarhet",
+    "english": "vulnerability",
+    "example": "Det krever mot å vise sårbarhet.",
+    "example_english": "It takes courage to show vulnerability.",
+    "definition": "Tilstanden av å kunne bli såret følelsesmessig, eller å vise at man ikke er perfekt.",
+    "level": "C",
+    "category": "complex-emotions",
+    "part": "noun"
   },
   {
     "id": "v-c-complex-emotions-016",
@@ -1284,6 +1392,30 @@
     "part": "phrase"
   },
   {
+    "id": "v-c-abstract-concepts-001",
+    "norsk": "sannhet (en)",
+    "lemma": "sannhet",
+    "english": "truth",
+    "example": "Hva er sannhet? Filosofer har diskutert dette i årtusener.",
+    "example_english": "What is truth? Philosophers have debated this for millennia.",
+    "definition": "Det som faktisk stemmer med virkeligheten, og som ikke er løgn eller feil.",
+    "level": "C",
+    "category": "abstract-concepts",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-abstract-concepts-002",
+    "norsk": "mening (en)",
+    "lemma": "mening",
+    "english": "meaning / purpose",
+    "example": "Søken etter mening er et universelt menneskelig trekk.",
+    "example_english": "The search for meaning is a universal human trait.",
+    "definition": "Det som gir livet eller en handling et formål og en grunn til å eksistere.",
+    "level": "C",
+    "category": "abstract-concepts",
+    "part": "noun"
+  },
+  {
     "id": "v-c-abstract-concepts-003",
     "norsk": "tid (en)",
     "lemma": "tid",
@@ -1303,6 +1435,30 @@
     "example": "Dualiteten mellom godt og ondt er et universelt tema.",
     "example_english": "The duality between good and evil is a universal theme.",
     "definition": "Når noe består av to motsatte eller svært forskjellige sider på samme tid.",
+    "level": "C",
+    "category": "abstract-concepts",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-abstract-concepts-005",
+    "norsk": "kompleksitet (en)",
+    "lemma": "kompleksitet",
+    "english": "complexity",
+    "example": "Samfunnets kompleksitet gjør enkle løsninger umulige.",
+    "example_english": "Society's complexity makes simple solutions impossible.",
+    "definition": "Når noe er sammensatt av mange deler og forhold som gjør det vanskelig å forstå.",
+    "level": "C",
+    "category": "abstract-concepts",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-abstract-concepts-006",
+    "norsk": "grense (en)",
+    "lemma": "grense",
+    "english": "a limit / a boundary (conceptual)",
+    "example": "Grensen mellom kunst og propaganda er flytende.",
+    "example_english": "The boundary between art and propaganda is fluid.",
+    "definition": "En linje eller et punkt som skiller to ting fra hverandre, for eksempel mellom det som er tillatt og det som ikke er det.",
     "level": "C",
     "category": "abstract-concepts",
     "part": "noun"
@@ -1380,6 +1536,18 @@
     "part": "noun"
   },
   {
+    "id": "v-c-abstract-concepts-013",
+    "norsk": "å abstrahere",
+    "lemma": "abstrahere",
+    "english": "to abstract / to generalise conceptually",
+    "example": "Vi abstrahere fra konkrete tilfeller til generelle prinsipper.",
+    "example_english": "We abstract from concrete cases to general principles.",
+    "definition": "Å trekke seg bort fra de konkrete detaljene og tenke på det generelle og overordnede bildet.",
+    "level": "C",
+    "category": "abstract-concepts",
+    "part": "verb"
+  },
+  {
     "id": "v-c-abstract-concepts-014",
     "norsk": "konstruksjon (en)",
     "lemma": "konstruksjon",
@@ -1452,6 +1620,18 @@
     "part": "verb"
   },
   {
+    "id": "v-c-linguistics-001",
+    "norsk": "morsmål (et)",
+    "lemma": "morsmål",
+    "english": "a mother tongue",
+    "example": "Norsk er hennes morsmål, men hun kan fem språk.",
+    "example_english": "Norwegian is her mother tongue, but she speaks five languages.",
+    "definition": "Det første språket man lærer som barn, vanligvis hjemme med familien.",
+    "level": "C",
+    "category": "linguistics",
+    "part": "noun"
+  },
+  {
     "id": "v-c-media-journalism-001",
     "norsk": "sensur (en)",
     "lemma": "sensur",
@@ -1498,6 +1678,18 @@
     "level": "C",
     "category": "architecture-design",
     "part": "verb"
+  },
+  {
+    "id": "v-c-architecture-design-003",
+    "norsk": "estetikk (en)",
+    "lemma": "estetikk",
+    "english": "aesthetics",
+    "example": "Estetikk handler om hvordan vi opplever skjønnhet.",
+    "example_english": "Aesthetics is about how we experience beauty.",
+    "definition": "Læren om skjønnhet og hvordan vi opplever kunst, design og natur med sansene våre.",
+    "level": "C",
+    "category": "architecture-design",
+    "part": "noun"
   },
   {
     "id": "v-c-architecture-design-004",
@@ -1572,6 +1764,18 @@
     "part": "noun"
   },
   {
+    "id": "v-c-diplomacy-international-005",
+    "norsk": "konfliktløsning (en)",
+    "lemma": "konfliktløsning",
+    "english": "conflict resolution",
+    "example": "Diplomater er trent i konfliktløsning.",
+    "example_english": "Diplomats are trained in conflict resolution.",
+    "definition": "Prosessen med å finne en fredelig og rettferdig løsning når personer eller grupper er uenige.",
+    "level": "C",
+    "category": "diplomacy-international",
+    "part": "noun"
+  },
+  {
     "id": "v-c-finance-economics-001",
     "norsk": "aksjemarked (et)",
     "lemma": "aksjemarked",
@@ -1591,6 +1795,18 @@
     "example": "Banken må sikre tilstrekkelig likviditet.",
     "example_english": "The bank must ensure sufficient liquidity.",
     "definition": "Hvor lett en person eller bedrift kan få tilgang til penger for å betale regninger og utgifter.",
+    "level": "C",
+    "category": "finance-economics",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-finance-economics-003",
+    "norsk": "valuta (en)",
+    "lemma": "valuta",
+    "english": "a currency",
+    "example": "Valutaen styrket seg mot euro.",
+    "example_english": "The currency strengthened against the euro.",
+    "definition": "Den typen penger som brukes i et bestemt land, for eksempel kroner eller euro.",
     "level": "C",
     "category": "finance-economics",
     "part": "noun"
@@ -1747,6 +1963,18 @@
     "example": "Det tidlige frampeket varsler en tragisk slutt.",
     "example_english": "The early foreshadowing heralds a tragic ending.",
     "definition": "Et hint eller tegn tidlig i en tekst som antyder hva som skal skje senere.",
+    "level": "C",
+    "category": "literary",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-literary-010",
+    "norsk": "tilbakeblikk (et)",
+    "lemma": "tilbakeblikk",
+    "english": "a flashback",
+    "example": "Romanen struktureres gjennom tilbakeblikk.",
+    "example_english": "The novel is structured through flashbacks.",
+    "definition": "En scene i en fortelling som viser noe som skjedde tidligere i tid.",
     "level": "C",
     "category": "literary",
     "part": "noun"
@@ -1918,6 +2146,18 @@
     "level": "C",
     "category": "archaic",
     "part": "conjunction"
+  },
+  {
+    "id": "v-c-archaic-005",
+    "norsk": "ei",
+    "lemma": "ei",
+    "english": "not / nor (archaic negation)",
+    "example": "Ei skal jeg vike, ei skal jeg falle.",
+    "example_english": "I shall not yield, I shall not fall.",
+    "definition": "Et gammelt ord for 'ikke', brukt i eldre poesi og litteratur for å nekte noe.",
+    "level": "C",
+    "category": "archaic",
+    "part": "adverb"
   },
   {
     "id": "v-c-archaic-006",
@@ -2616,6 +2856,18 @@
     "part": "noun"
   },
   {
+    "id": "v-c-highly-formal-015",
+    "norsk": "å gi avkall på",
+    "lemma": "å gi avkall på",
+    "english": "to waive / to relinquish",
+    "example": "Parten valgte å gi avkall på retten til å anke.",
+    "example_english": "The party chose to waive the right to appeal.",
+    "definition": "Å velge å ikke bruke en rettighet eller et gode man har krav på.",
+    "level": "C",
+    "category": "highly-formal",
+    "part": "phrase"
+  },
+  {
     "id": "v-c-highly-formal-016",
     "norsk": "ikrafttredelse (en)",
     "lemma": "ikrafttredelse",
@@ -2767,6 +3019,18 @@
     "example": "Rekursjon brukes der en funksjon kaller seg selv.",
     "example_english": "Recursion is used where a function calls itself.",
     "definition": "En teknikk i programmering der en funksjon løser et problem ved å kalle på seg selv gjentatte ganger.",
+    "level": "C",
+    "category": "technical",
+    "part": "noun"
+  },
+  {
+    "id": "v-c-technical-005",
+    "norsk": "maskinlæring (en)",
+    "lemma": "maskinlæring",
+    "english": "machine learning",
+    "example": "Maskinlæring lar systemet forbedre seg gjennom erfaring.",
+    "example_english": "Machine learning lets the system improve through experience.",
+    "definition": "En type kunstig intelligens der et dataprogram lærer av data og blir bedre over tid uten å bli direkte programmert.",
     "level": "C",
     "category": "technical",
     "part": "noun"
@@ -2988,6 +3252,18 @@
     "part": "noun"
   },
   {
+    "id": "v-c-advanced-law-justice-002",
+    "norsk": "rettspraksis (en)",
+    "lemma": "rettspraksis",
+    "english": "case law / legal precedent",
+    "example": "Rettpraksis tilsier et mildere straffenivå.",
+    "example_english": "Case law suggests a more lenient level of punishment.",
+    "definition": "Samlingen av tidligere domstolsavgjørelser som viser hvordan loven vanligvis brukes i praksis.",
+    "level": "C",
+    "category": "advanced-law-justice",
+    "part": "noun"
+  },
+  {
     "id": "v-c-advanced-law-justice-003",
     "norsk": "straffrihet (en)",
     "lemma": "straffrihet",
@@ -3096,6 +3372,18 @@
     "part": "noun"
   },
   {
+    "id": "v-c-climate-environment-policy-001",
+    "norsk": "karbonnøytral",
+    "lemma": "karbonnøytral",
+    "english": "carbon neutral",
+    "example": "Byen har som mål å bli karbonnøytral innen 2035.",
+    "example_english": "The city aims to be carbon neutral by 2035.",
+    "definition": "Når man slipper ut like mye CO₂ som man fjerner, slik at den totale effekten på klimaet er null.",
+    "level": "C",
+    "category": "climate-environment-policy",
+    "part": "adjective"
+  },
+  {
     "id": "v-c-climate-environment-policy-002",
     "norsk": "klimabudsjett (et)",
     "lemma": "klimabudsjett",
@@ -3142,6 +3430,18 @@
     "level": "C",
     "category": "climate-environment-policy",
     "part": "noun"
+  },
+  {
+    "id": "v-c-climate-environment-policy-006",
+    "norsk": "sirkulær økonomi",
+    "lemma": "sirkulær økonomi",
+    "english": "circular economy",
+    "example": "Sirkulær økonomi fremmer gjenbruk av ressurser.",
+    "example_english": "The circular economy promotes reuse of resources.",
+    "definition": "Et system der produkter og materialer brukes om igjen så lenge som mulig, i stedet for å kastes.",
+    "level": "C",
+    "category": "climate-environment-policy",
+    "part": "phrase"
   },
   {
     "id": "v-c-sociology-anthropology-001",
@@ -3286,5 +3586,17 @@
     "level": "C",
     "category": "existential-abstract",
     "part": "verb"
+  },
+  {
+    "id": "v-c-existential-abstract-005",
+    "norsk": "identitet (en)",
+    "lemma": "identitet",
+    "english": "an identity",
+    "example": "Identitet kan være både valgt og pålagt.",
+    "example_english": "Identity can be both chosen and imposed.",
+    "definition": "Det som gjør en person til den de er — hvem de er, hvor de kommer fra, og hva de tror på.",
+    "level": "C",
+    "category": "existential-abstract",
+    "part": "noun"
   }
 ]
