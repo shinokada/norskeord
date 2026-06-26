@@ -52,6 +52,7 @@ Vocabulary flashcards, quiz, grammar practice, and Norskprøven exam prep coveri
 ## Data files
 
 Vocabulary and content live in `src/lib/data/` as static JSON — read at build time, never queried from the database.
+Files are deviced by Common European Framework of Reference for Languages (CEFR).
 
 ```
 vocab-a1.json          uttrykk-a1.json

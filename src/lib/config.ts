@@ -96,7 +96,6 @@ export const CATEGORIES_BY_LEVEL = {
     'arts',
     'science',
     'emotions',
-    'idioms',
     'history',
     'law',
     'literature',
@@ -207,7 +206,6 @@ export const PLUS_CATEGORIES = new Set<string>([
   // B2 — plus-only (28 vocab + full uttrykk)
   'b2/arts',
   'b2/emotions',
-  'b2/idioms',
   'b2/history',
   'b2/law',
   'b2/literature',
