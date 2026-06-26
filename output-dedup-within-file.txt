@@ -1,0 +1,235 @@
+
+vocab-a1.json: removing 1 duplicate(s)
+  "Unnskyld" [same-category]
+    KEEP   v-a1-greetings-012  [greetings] (32 entries in cat)
+    REMOVE u-a1-039  [greetings] (32 entries in cat)
+vocab-a2.json: no duplicates found
+vocab-b1.json: no duplicates found
+
+vocab-b2.json: removing 74 duplicate(s)
+  "å avgjøre" [same-category]
+    KEEP   v-b2-law-005  [law] (106 entries in cat)
+    REMOVE v-b2-law-085  [law] (106 entries in cat)
+  "å avskaffe" [same-category]
+    KEEP   v-b2-politics-005  [politics] (101 entries in cat)
+    REMOVE v-b2-politics-099  [politics] (101 entries in cat)
+  "å disponere"
+    KEEP   v-b2-economics-004  [economics] (66 entries in cat)
+    REMOVE v-b2-business-040  [business] (46 entries in cat)
+  "å etablere" [same-category]
+    KEEP   v-b2-business-011  [business] (46 entries in cat)
+    REMOVE v-b2-business-032  [business] (46 entries in cat)
+  "å fastsette" [same-category]
+    KEEP   v-b2-law-030  [law] (106 entries in cat)
+    REMOVE v-b2-law-081  [law] (106 entries in cat)
+  "å forfølge"
+    KEEP   v-b2-law-082  [law] (106 entries in cat)
+    REMOVE v-b2-history-018  [history] (52 entries in cat)
+  "å forhandle" [same-category]
+    KEEP   v-b2-business-024  [business] (46 entries in cat)
+    REMOVE v-b2-business-031  [business] (46 entries in cat)
+  "å fronte"
+    KEEP   v-b2-advanced-verbs-095  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-communication-032  [communication] (65 entries in cat)
+  "å frykte" [same-category]
+    KEEP   v-b2-emotions-013  [emotions] (70 entries in cat)
+    REMOVE v-b2-emotions-055  [emotions] (70 entries in cat)
+  "å fullføre" [same-category]
+    KEEP   v-b2-education-034  [education] (63 entries in cat)
+    REMOVE v-b2-education-063  [education] (63 entries in cat)
+  "å håndtere"
+    KEEP   v-b2-work-career-050  [work-career] (61 entries in cat)
+    REMOVE v-b2-psychology-020  [psychology] (53 entries in cat)
+  "å havne"
+    KEEP   v-b2-advanced-verbs-014  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-environment-077  [environment] (88 entries in cat)
+  "å henrette"
+    KEEP   v-b2-law-039  [law] (106 entries in cat)
+    REMOVE v-b2-history-050  [history] (52 entries in cat)
+  "å hevde" [same-category]
+    KEEP   v-b2-argumentation-037  [argumentation] (54 entries in cat)
+    REMOVE v-b2-argumentation-047  [argumentation] (54 entries in cat)
+  "å hindre" [same-category]
+    KEEP   v-b2-advanced-verbs-016  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-advanced-verbs-076  [advanced-verbs] (108 entries in cat)
+  "å innebære"
+    KEEP   v-b2-academic-language-035  [academic-language] (80 entries in cat)
+    REMOVE v-b2-work-career-064  [work-career] (61 entries in cat)
+  "å konfrontere" [same-category]
+    KEEP   v-b2-advanced-verbs-052  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-advanced-verbs-101  [advanced-verbs] (108 entries in cat)
+  "å manipulere" [same-category]
+    KEEP   v-b2-psychology-024  [psychology] (53 entries in cat)
+    REMOVE v-b2-psychology-060  [psychology] (53 entries in cat)
+  "å oppfatte"
+    KEEP   v-b2-communication-036  [communication] (65 entries in cat)
+    REMOVE v-b2-arts-026  [arts] (36 entries in cat)
+  "å oppløse" [same-category]
+    KEEP   v-b2-politics-038  [politics] (101 entries in cat)
+    REMOVE v-b2-politics-096  [politics] (101 entries in cat)
+  "å oppsøke" [same-category]
+    KEEP   v-b2-advanced-verbs-018  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-advanced-verbs-085  [advanced-verbs] (108 entries in cat)
+  "å overholde" [same-category]
+    KEEP   v-b2-law-056  [law] (106 entries in cat)
+    REMOVE v-b2-law-116  [law] (106 entries in cat)
+  "å prioritere"
+    KEEP   v-b2-economics-061  [economics] (66 entries in cat)
+    REMOVE v-b2-work-career-040  [work-career] (61 entries in cat)
+  "å pugge" [same-category]
+    KEEP   v-b2-education-047  [education] (63 entries in cat)
+    REMOVE v-b2-education-057  [education] (63 entries in cat)
+  "å sertifisere"
+    KEEP   v-b2-work-career-042  [work-career] (61 entries in cat)
+    REMOVE v-b2-business-034  [business] (46 entries in cat)
+  "å skjelve" [same-category]
+    KEEP   v-b2-advanced-verbs-023  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-advanced-verbs-092  [advanced-verbs] (108 entries in cat)
+  "å spå"
+    KEEP   v-b2-abstract-nouns-058  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-economics-048  [economics] (66 entries in cat)
+  "å tilrettelegge"
+    KEEP   v-b2-advanced-verbs-063  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-social-issues-067  [social-issues] (77 entries in cat)
+  "å understreke" [same-category]
+    KEEP   v-b2-argumentation-033  [argumentation] (54 entries in cat)
+    REMOVE v-b2-argumentation-051  [argumentation] (54 entries in cat)
+  "å utforske" [same-category]
+    KEEP   v-b2-science-023  [science] (37 entries in cat)
+    REMOVE v-b2-science-035  [science] (37 entries in cat)
+  "å utgjøre"
+    KEEP   v-b2-advanced-verbs-029  [advanced-verbs] (108 entries in cat)
+    REMOVE v-b2-work-career-048  [work-career] (61 entries in cat)
+  "å utvinne"
+    KEEP   v-b2-environment-047  [environment] (88 entries in cat)
+    REMOVE v-b2-economics-057  [economics] (66 entries in cat)
+  "å verdsette"
+    KEEP   v-b2-emotions-047  [emotions] (70 entries in cat)
+    REMOVE v-b2-work-career-049  [work-career] (61 entries in cat)
+  "anerkjennelse (en)"
+    KEEP   v-b2-abstract-nouns-006  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-arts-037  [arts] (36 entries in cat)
+  "avstand (en)"
+    KEEP   v-b2-geography-053  [geography] (56 entries in cat)
+    REMOVE v-b2-relationships-003  [relationships] (50 entries in cat)
+  "bekreftelse (en)" [same-category]
+    KEEP   v-b2-communication-003  [communication] (65 entries in cat)
+    REMOVE v-b2-communication-070  [communication] (65 entries in cat)
+  "bidrag (et)"
+    KEEP   v-b2-abstract-nouns-003  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-science-030  [science] (37 entries in cat)
+  "faktor (en)"
+    KEEP   v-b2-abstract-nouns-081  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-academic-language-030  [academic-language] (80 entries in cat)
+  "forhandling (en)"
+    KEEP   v-b2-politics-075  [politics] (101 entries in cat)
+    REMOVE v-b2-communication-010  [communication] (65 entries in cat)
+  "formål (et)"
+    KEEP   v-b2-abstract-nouns-091  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-academic-language-032  [academic-language] (80 entries in cat)
+  "forpliktelse (en)"
+    KEEP   v-b2-law-093  [law] (106 entries in cat)
+    REMOVE v-b2-abstract-nouns-011  [abstract-nouns] (83 entries in cat)
+  "gode (et)"
+    KEEP   v-b2-social-issues-072  [social-issues] (77 entries in cat)
+    REMOVE v-b2-philosophy-013  [philosophy] (31 entries in cat)
+  "hensikt (en)"
+    KEEP   v-b2-abstract-nouns-043  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-business-030  [business] (46 entries in cat)
+  "ideal (et)" [same-category]
+    KEEP   v-b2-philosophy-014  [philosophy] (31 entries in cat)
+    REMOVE v-b2-philosophy-034  [philosophy] (31 entries in cat)
+  "inngrep (et)"
+    KEEP   v-b2-law-088  [law] (106 entries in cat)
+    REMOVE v-b2-medicine-011  [medicine] (51 entries in cat)
+  "kapasitet (en)" [same-category]
+    KEEP   v-b2-abstract-nouns-017  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-abstract-nouns-082  [abstract-nouns] (83 entries in cat)
+  "konsekvens (en)"
+    KEEP   v-b2-environment-056  [environment] (88 entries in cat)
+    REMOVE v-b2-philosophy-004  [philosophy] (31 entries in cat)
+  "kriterium (et)" [same-category]
+    KEEP   v-b2-academic-language-042  [academic-language] (80 entries in cat)
+    REMOVE v-b2-academic-language-066  [academic-language] (80 entries in cat)
+  "kvote (en)" [same-category]
+    KEEP   v-b2-politics-028  [politics] (101 entries in cat)
+    REMOVE v-b2-politics-073  [politics] (101 entries in cat)
+  "lovbrudd (et)" [same-category]
+    KEEP   v-b2-law-027  [law] (106 entries in cat)
+    REMOVE v-b2-law-110  [law] (106 entries in cat)
+  "makt (en)"
+    KEEP   v-b2-politics-081  [politics] (101 entries in cat)
+    REMOVE v-b2-abstract-nouns-023  [abstract-nouns] (83 entries in cat)
+  "markedsføring (en)" [same-category]
+    KEEP   v-b2-business-017  [business] (46 entries in cat)
+    REMOVE v-b2-business-042  [business] (46 entries in cat)
+  "motiv (et)" [same-category]
+    KEEP   v-b2-arts-017  [arts] (36 entries in cat)
+    REMOVE v-b2-arts-035  [arts] (36 entries in cat)
+  "nedbør (en)"
+    KEEP   v-b2-environment-066  [environment] (88 entries in cat)
+    REMOVE v-b2-geography-020  [geography] (56 entries in cat)
+  "nysgjerrighet (en)"
+    KEEP   v-b2-abstract-nouns-025  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-science-031  [science] (37 entries in cat)
+  "offer (et)"
+    KEEP   v-b2-law-111  [law] (106 entries in cat)
+    REMOVE v-b2-religion-013  [religion] (23 entries in cat)
+  "opprør (et)"
+    KEEP   v-b2-politics-087  [politics] (101 entries in cat)
+    REMOVE v-b2-history-026  [history] (52 entries in cat)
+  "oversikt (en)"
+    KEEP   v-b2-abstract-nouns-086  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-medicine-005  [medicine] (51 entries in cat)
+  "påstand (en)"
+    KEEP   v-b2-argumentation-053  [argumentation] (54 entries in cat)
+    REMOVE v-b2-philosophy-008  [philosophy] (31 entries in cat)
+  "prosess (en)" [same-category]
+    KEEP   v-b2-abstract-nouns-028  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-abstract-nouns-074  [abstract-nouns] (83 entries in cat)
+  "sjel (en)"
+    KEEP   v-b2-psychology-054  [psychology] (53 entries in cat)
+    REMOVE v-b2-philosophy-023  [philosophy] (31 entries in cat)
+  "slagord (et)"
+    KEEP   v-b2-politics-051  [politics] (101 entries in cat)
+    REMOVE v-b2-business-037  [business] (46 entries in cat)
+  "solidaritet (en)" [same-category]
+    KEEP   v-b2-social-issues-051  [social-issues] (77 entries in cat)
+    REMOVE v-b2-social-issues-088  [social-issues] (77 entries in cat)
+  "styrke (en)"
+    KEEP   v-b2-abstract-nouns-059  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-emotions-051  [emotions] (70 entries in cat)
+  "symbol (et)"
+    KEEP   v-b2-arts-030  [arts] (36 entries in cat)
+    REMOVE v-b2-literature-023  [literature] (30 entries in cat)
+  "tabu (et)"
+    KEEP   v-b2-social-issues-075  [social-issues] (77 entries in cat)
+    REMOVE v-b2-culture-046  [culture] (62 entries in cat)
+  "tiltak (et)"
+    KEEP   v-b2-politics-059  [politics] (101 entries in cat)
+    REMOVE v-b2-economics-052  [economics] (66 entries in cat)
+  "trend (en)"
+    KEEP   v-b2-social-issues-055  [social-issues] (77 entries in cat)
+    REMOVE v-b2-culture-062  [culture] (62 entries in cat)
+  "turbin (en)" [same-category]
+    KEEP   v-b2-technology-040  [technology] (56 entries in cat)
+    REMOVE v-b2-technology-052  [technology] (56 entries in cat)
+  "utvalg (et)"
+    KEEP   v-b2-academic-language-029  [academic-language] (80 entries in cat)
+    REMOVE v-b2-economics-076  [economics] (66 entries in cat)
+  "varsel (et)"
+    KEEP   v-b2-communication-065  [communication] (65 entries in cat)
+    REMOVE v-b2-media-042  [media] (55 entries in cat)
+  "vern (et)"
+    KEEP   v-b2-law-103  [law] (106 entries in cat)
+    REMOVE v-b2-environment-049  [environment] (88 entries in cat)
+  "virkemiddel (et)" [same-category]
+    KEEP   v-b2-politics-066  [politics] (101 entries in cat)
+    REMOVE v-b2-politics-095  [politics] (101 entries in cat)
+  "virkning (en)"
+    KEEP   v-b2-abstract-nouns-037  [abstract-nouns] (83 entries in cat)
+    REMOVE v-b2-medicine-054  [medicine] (51 entries in cat)
+vocab-c.json: no duplicates found
+
+[DRY RUN] Total removed: 75 entries
+No files written.
