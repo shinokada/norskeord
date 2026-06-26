@@ -67,7 +67,6 @@ const CATEGORY_LABELS: Record<string, string> = {
   arts: 'Arts',
   science: 'Science',
   emotions: 'Emotions',
-  idioms: 'Idioms',
   history: 'History',
   law: 'Law',
   literature: 'Literature',

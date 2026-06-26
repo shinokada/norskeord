@@ -48,7 +48,6 @@ const CATEGORIES = [
   'arts',
   'science',
   'emotions',
-  'idioms',
   'history',
   'law',
   'literature',

@@ -18,13 +18,16 @@ base = os.path.join(project_root, "src", "lib", "data")
 
 files = {
     'A1': os.path.join(base, 'vocab-a1.json'),
+    'A1-uttrykk': os.path.join(base, 'uttrykk-a1.json'),
     'A2': os.path.join(base, 'vocab-a2.json'),
+    'A2-uttrykk': os.path.join(base, 'uttrykk-a2.json'),
     'B1': os.path.join(base, 'vocab-b1.json'),
-    'B1-new-vocab': os.path.join(base, 'vocab-b1-new.json'),
-    'B1-new-uttrykk': os.path.join(base, 'uttrykk-b1-new.json'),
+    'B1-uttrykk': os.path.join(base, 'uttrykk-b1.json'),
     'B2': os.path.join(base, 'vocab-b2.json'),
-    'C1': os.path.join(base, 'vocab-c1.json'),
-    'C2': os.path.join(base, 'vocab-c2.json'),
+    'B2-uttrykk': os.path.join(base, 'uttrykk-b2.json'),
+    'B2-new': os.path.join(base, 'vocab-b2-new.json'),
+    'B2-new-uttrykk': os.path.join(base, 'uttrykk-b2-new.json'),
+    'C': os.path.join(base, 'vocab-c.json'),
 }
 
 data_by_file = {}
