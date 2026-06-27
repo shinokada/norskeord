@@ -18,29 +18,32 @@
  *   node scripts/dedup-within-file.mjs --file vocab-b2.json
  */
 
-import { readFileSync, writeFileSync, readdirSync } from "fs";
-import { resolve, dirname, basename } from "path";
-import { fileURLToPath } from "url";
+import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import { resolve, dirname, basename } from 'path';
+import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR  = resolve(__dirname, "../src/lib/data");
+const DATA_DIR = resolve(__dirname, '../src/lib/data');
 
-const args     = process.argv.slice(2);
-const DRY_RUN  = args.includes("--dry-run");
-const getArg   = (flag) => { const i = args.indexOf(flag); return i !== -1 && args[i+1] ? args[i+1] : null; };
+const args = process.argv.slice(2);
+const DRY_RUN = args.includes('--dry-run');
+const getArg = (flag) => {
+  const i = args.indexOf(flag);
+  return i !== -1 && args[i + 1] ? args[i + 1] : null;
+};
 
-const singleFile = getArg("--file");
+const singleFile = getArg('--file');
 const files = singleFile
   ? [resolve(DATA_DIR, singleFile)]
   : readdirSync(DATA_DIR)
-      .filter(f => f.match(/^vocab-[a-z0-9]+\.json$/))
-      .map(f => resolve(DATA_DIR, f));
+      .filter((f) => f.match(/^vocab-[a-z0-9]+\.json$/))
+      .map((f) => resolve(DATA_DIR, f));
 
 let grandTotal = 0;
 
 for (const filePath of files) {
   const fileName = basename(filePath);
-  const entries  = JSON.parse(readFileSync(filePath, "utf-8"));
+  const entries = JSON.parse(readFileSync(filePath, 'utf-8'));
 
   // Count entries per category
   const catCount = {};
@@ -51,23 +54,23 @@ for (const filePath of files) {
   // Find duplicates: norsk (case-insensitive) → array of indices
   const norskIndex = {}; // norsk_lower → [index, ...]
   for (let i = 0; i < entries.length; i++) {
-    const key = entries[i].norsk?.trim().toLowerCase();
-    if (!key) continue;
-    (norskIndex[key] ??= []).push(i);
+    const norskKey = entries[i].norsk?.trim().toLowerCase();
+    if (!norskKey) continue;
+    (norskIndex[norskKey] ??= []).push(i);
   }
 
   // Decide which indices to remove
   const toRemove = new Set();
   const decisions = [];
 
-  for (const [key, indices] of Object.entries(norskIndex)) {
+  for (const indices of Object.values(norskIndex)) {
     if (indices.length < 2) continue;
 
     // Sort indices by: (1) category size desc, (2) position asc (keep first/original)
-    const scored = indices.map(i => ({
+    const scored = indices.map((i) => ({
       i,
       entry: entries[i],
-      catSize: catCount[entries[i].category] ?? 0,
+      catSize: catCount[entries[i].category] ?? 0
     }));
     scored.sort((a, b) => b.catSize - a.catSize || a.i - b.i);
 
@@ -84,7 +87,7 @@ for (const filePath of files) {
         keepCatSize: keep.catSize,
         removeId: r.entry.id,
         removeCat: r.entry.category,
-        removeCatSize: r.catSize,
+        removeCatSize: r.catSize
       });
     }
   }
@@ -98,7 +101,7 @@ for (const filePath of files) {
   console.log(`\n${fileName}: removing ${toRemove.size} duplicate(s)`);
 
   for (const d of decisions.sort((a, b) => a.norsk.localeCompare(b.norsk))) {
-    const samecat = d.keepCat === d.removeCat ? " [same-category]" : "";
+    const samecat = d.keepCat === d.removeCat ? ' [same-category]' : '';
     console.log(`  "${d.norsk}"${samecat}`);
     console.log(`    KEEP   ${d.keepId}  [${d.keepCat}] (${d.keepCatSize} entries in cat)`);
     console.log(`    REMOVE ${d.removeId}  [${d.removeCat}] (${d.removeCatSize} entries in cat)`);
@@ -106,10 +109,10 @@ for (const filePath of files) {
 
   if (!DRY_RUN) {
     const cleaned = entries.filter((_, i) => !toRemove.has(i));
-    writeFileSync(filePath, JSON.stringify(cleaned, null, 2) + "\n", "utf-8");
+    writeFileSync(filePath, JSON.stringify(cleaned, null, 2) + '\n', 'utf-8');
     console.log(`  → written (${entries.length} → ${cleaned.length} entries)`);
   }
 }
 
-console.log(`\n${DRY_RUN ? "[DRY RUN] " : ""}Total removed: ${grandTotal} entries`);
-if (DRY_RUN) console.log("No files written.");
+console.log(`\n${DRY_RUN ? '[DRY RUN] ' : ''}Total removed: ${grandTotal} entries`);
+if (DRY_RUN) console.log('No files written.');

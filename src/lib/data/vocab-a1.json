@@ -31,96 +31,6 @@
   },
   {
     "id": "v-a1-greetings-003",
-    "norsk": "god morgen",
-    "lemma": "god morgen",
-    "english": "good morning",
-    "ukrainian": "доброго ранку",
-    "spanish": "buenos días",
-    "example": "God morgen! Vil du ha kaffe?",
-    "example_english": "Good morning! Do you want coffee?",
-    "example_ukrainian": "Доброго ранку! Хочеш кави?",
-    "example_spanish": "¡Buenos días! ¿Quieres café?",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-004",
-    "norsk": "god helg",
-    "lemma": "god helg",
-    "english": "Have a good weekend",
-    "ukrainian": "гарних вихідних",
-    "spanish": "buen fin de semana",
-    "example": "God helg, ses på mandag!",
-    "example_english": "Have a good weekend, see you on Monday!",
-    "example_ukrainian": "Гарних вихідних, побачимося в понеділок!",
-    "example_spanish": "¡Buen fin de semana, nos vemos el lunes!",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-005",
-    "norsk": "god kveld",
-    "lemma": "god kveld",
-    "english": "good evening",
-    "ukrainian": "добрий вечір",
-    "spanish": "buenas tardes",
-    "example": "God kveld! Kom inn.",
-    "example_english": "Good evening! Come in.",
-    "example_ukrainian": "Добрий вечір! Заходьте.",
-    "example_spanish": "¡Buenas tardes! Pasa, entra.",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-006",
-    "norsk": "god natt",
-    "lemma": "god natt",
-    "english": "good night",
-    "ukrainian": "на добраніч",
-    "spanish": "buenas noches",
-    "example": "God natt! Sov godt.",
-    "example_english": "Good night! Sleep well.",
-    "example_ukrainian": "На добраніч! Солодких снів.",
-    "example_spanish": "¡Buenas noches! Que duermas bien.",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-007",
-    "norsk": "ha det bra",
-    "lemma": "ha det bra",
-    "english": "goodbye / take care",
-    "ukrainian": "бувай / бережи себе",
-    "spanish": "adiós / cuídate",
-    "example": "Ha det bra! Vi ses i morgen.",
-    "example_english": "Take care! See you tomorrow.",
-    "example_ukrainian": "Бувай! Побачимося завтра.",
-    "example_spanish": "¡Cuídate! Nos vemos mañana.",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-008",
-    "norsk": "ha det",
-    "lemma": "ha det",
-    "english": "bye",
-    "ukrainian": "бувай / па",
-    "spanish": "adiós / chao",
-    "example": "Ha det! Vi snakkes.",
-    "example_english": "Bye! Talk to you later.",
-    "example_ukrainian": "Па! Поговоримо пізніше.",
-    "example_spanish": "¡Adiós! Hablamos pronto.",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-009",
     "norsk": "takk",
     "lemma": "takk",
     "english": "thank you",
@@ -135,7 +45,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-010",
+    "id": "v-a1-greetings-004",
     "norsk": "tusen takk",
     "lemma": "tusen takk",
     "english": "thank you very much",
@@ -150,22 +60,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a1-greetings-011",
-    "norsk": "vær så snill",
-    "lemma": "vær så snill",
-    "english": "please",
-    "ukrainian": "будь ласка",
-    "spanish": "por favor",
-    "example": "Vær så snill, kan du hjelpe meg?",
-    "example_english": "Please, can you help me?",
-    "example_ukrainian": "Будь ласка, чи можеш ти мені допомогти?",
-    "example_spanish": "Por favor, ¿me puedes ayudar?",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-012",
+    "id": "v-a1-greetings-005",
     "norsk": "unnskyld",
     "lemma": "unnskyld",
     "english": "excuse me / sorry",
@@ -180,7 +75,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-013",
+    "id": "v-a1-greetings-006",
     "norsk": "å beklage",
     "lemma": "beklage",
     "english": "I'm sorry",
@@ -196,7 +91,7 @@
     "definition": "si at man er lei seg"
   },
   {
-    "id": "v-a1-greetings-014",
+    "id": "v-a1-greetings-007",
     "norsk": "ja",
     "lemma": "ja",
     "english": "yes",
@@ -211,7 +106,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-015",
+    "id": "v-a1-greetings-008",
     "norsk": "nei",
     "lemma": "nei",
     "english": "no",
@@ -226,52 +121,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-016",
-    "norsk": "hvordan har du det?",
-    "lemma": "hvordan har du det?",
-    "english": "How are you?",
-    "ukrainian": "Як справи? / Як ти поживаєш?",
-    "spanish": "¿Cómo estás?",
-    "example": "Hei! Hvordan har du det?",
-    "example_english": "Hi! How are you doing?",
-    "example_ukrainian": "Привіт! Як справи?",
-    "example_spanish": "¡Hola! ¿Cómo estás?",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-017",
-    "norsk": "jeg har det bra",
-    "lemma": "jeg har det bra",
-    "english": "I'm fine",
-    "ukrainian": "У мене все добре / Я почуваюся добре",
-    "spanish": "Estoy bien",
-    "example": "Takk, jeg har det bra.",
-    "example_english": "I'm fine, thank you.",
-    "example_ukrainian": "Дякую, у мене все добре.",
-    "example_spanish": "Gracias, estoy bien.",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-018",
-    "norsk": "Hva heter du?",
-    "lemma": "Hva heter du?",
-    "english": "What is your name?",
-    "ukrainian": "Як тебе звати?",
-    "spanish": "¿Cómo te llamas?",
-    "example": "Hva heter du? Jeg heter Lars.",
-    "example_english": "What is your name? My name is Lars.",
-    "example_ukrainian": "Як тебе звати? Мене звати Ларс.",
-    "example_spanish": "¿Cómo te llamas? Yo me llamo Lars.",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-019",
+    "id": "v-a1-greetings-009",
     "norsk": "Jeg heter ...",
     "lemma": "Jeg heter ...",
     "english": "My name is ...",
@@ -286,22 +136,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a1-greetings-020",
-    "norsk": "hyggelig å møte deg",
-    "lemma": "hyggelig å møte deg",
-    "english": "nice to meet you",
-    "ukrainian": "приємно познайомитися",
-    "spanish": "mucho gusto",
-    "example": "Hyggelig å møte deg, Lars!",
-    "example_english": "Nice to meet you, Lars!",
-    "example_ukrainian": "Приємно познайомитися, Ларсе!",
-    "example_spanish": "¡Mucho gusto, Lars!",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-021",
+    "id": "v-a1-greetings-010",
     "norsk": "velkommen",
     "lemma": "velkommen",
     "english": "welcome",
@@ -316,7 +151,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-022",
+    "id": "v-a1-greetings-011",
     "norsk": "vi ses",
     "lemma": "vi ses",
     "english": "see you later",
@@ -331,82 +166,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a1-greetings-023",
-    "norsk": "på gjensyn",
-    "lemma": "på gjensyn",
-    "english": "goodbye (formal)",
-    "ukrainian": "до побачення (офіційно)",
-    "spanish": "hasta la próxima",
-    "example": "Takk for i dag. På gjensyn!",
-    "example_english": "Thank you for today. Goodbye!",
-    "example_ukrainian": "Дякую за сьогодні. До побачення!",
-    "example_spanish": "Gracias por hoy. ¡Hasta la próxima!",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-024",
-    "norsk": "Hvor er du fra?",
-    "lemma": "Hvor er du fra?",
-    "english": "Where are you from?",
-    "ukrainian": "Звідки ти?",
-    "spanish": "¿De dónde eres?",
-    "example": "Hei! Hvor kommer du fra?",
-    "example_english": "Hi! Where are you from?",
-    "example_ukrainian": "Привіт! Звідки ти?",
-    "example_spanish": "¡Hola! ¿De dónde eres?",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-025",
-    "norsk": "Jeg kommer fra ...",
-    "lemma": "Jeg kommer fra ...",
-    "english": "I am from ...",
-    "ukrainian": "Я з ...",
-    "spanish": "Soy de ...",
-    "example": "Jeg er fra Japan. Og du?",
-    "example_english": "I am from Japan. And you?",
-    "example_ukrainian": "Я з Японії. А ти?",
-    "example_spanish": "Soy de Japón. ¿Y tú?",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-026",
-    "norsk": "Snakker du norsk?",
-    "lemma": "Snakker du norsk?",
-    "english": "Do you speak Norwegian?",
-    "ukrainian": "Ти розмовляєш норвезькою?",
-    "spanish": "¿Hablas noruego?",
-    "example": "Snakker du norsk? Litt.",
-    "example_english": "Do you speak Norwegian? A little.",
-    "example_ukrainian": "Ти розмовляєш норвезькою? Трохи.",
-    "example_spanish": "¿Hablas noruego? Un poco.",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-027",
-    "norsk": "Kan du gjenta det?",
-    "lemma": "Kan du gjenta det?",
-    "english": "Can you repeat that?",
-    "ukrainian": "Можеш повторити?",
-    "spanish": "¿Puedes repetir eso?",
-    "example": "Kan du gjenta det, vær så snill?",
-    "example_english": "Can you repeat that, please?",
-    "example_ukrainian": "Можеш повторити, будь ласка?",
-    "example_spanish": "¿Puedes repetir eso, por favor?",
-    "level": "A1",
-    "category": "greetings",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-greetings-028",
+    "id": "v-a1-greetings-012",
     "norsk": "Jeg forstår ikke",
     "lemma": "Jeg forstår ikke",
     "english": "I don't understand",
@@ -2176,7 +1936,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-food-025",
+    "id": "v-a1-food-024",
     "norsk": "ris (en)",
     "lemma": "ris",
     "english": "rice",
@@ -5281,7 +5041,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-weather-014",
+    "id": "v-a1-weather-013",
     "norsk": "vinter (en)",
     "lemma": "vinter",
     "english": "winter",
@@ -5296,7 +5056,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-weather-015",
+    "id": "v-a1-weather-014",
     "norsk": "sommer (en)",
     "lemma": "sommer",
     "english": "summer",
@@ -5311,7 +5071,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-weather-016",
+    "id": "v-a1-weather-015",
     "norsk": "vår (en)",
     "lemma": "vår",
     "english": "spring",
@@ -5326,7 +5086,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-weather-017",
+    "id": "v-a1-weather-016",
     "norsk": "høst (en)",
     "lemma": "høst",
     "english": "autumn",
@@ -5341,7 +5101,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-weather-018",
+    "id": "v-a1-weather-017",
     "norsk": "å snø",
     "lemma": "snø",
     "english": "to snow",
@@ -5356,7 +5116,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-weather-019",
+    "id": "v-a1-weather-018",
     "norsk": "å regne",
     "lemma": "regne",
     "english": "to rain",
@@ -5371,7 +5131,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-weather-020",
+    "id": "v-a1-weather-019",
     "norsk": "å skinne",
     "lemma": "skinne",
     "english": "to shine",
@@ -5386,7 +5146,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-weather-021",
+    "id": "v-a1-weather-020",
     "norsk": "sol og skyer",
     "lemma": "sol og skyer",
     "english": "partly cloudy",
@@ -5492,21 +5252,6 @@
   },
   {
     "id": "v-a1-transportation-007",
-    "norsk": "til fots",
-    "lemma": "til fots",
-    "english": "on foot",
-    "ukrainian": "пішки",
-    "spanish": "a pie",
-    "example": "Jeg går til fots til butikken.",
-    "example_english": "I go to the shop on foot.",
-    "example_ukrainian": "Я йду до магазину пішки.",
-    "example_spanish": "Voy a pie a la tienda.",
-    "level": "A1",
-    "category": "transportation",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-transportation-008",
     "norsk": "stasjon (en)",
     "lemma": "stasjon",
     "english": "a station",
@@ -5521,7 +5266,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-009",
+    "id": "v-a1-transportation-008",
     "norsk": "flyplass (en)",
     "lemma": "flyplass",
     "english": "an airport",
@@ -5536,7 +5281,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-010",
+    "id": "v-a1-transportation-009",
     "norsk": "busstopp (et)",
     "lemma": "busstopp",
     "english": "a bus stop",
@@ -5551,7 +5296,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-011",
+    "id": "v-a1-transportation-010",
     "norsk": "billett (en)",
     "lemma": "billett",
     "english": "a ticket",
@@ -5566,7 +5311,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-012",
+    "id": "v-a1-transportation-011",
     "norsk": "taxi (en)",
     "lemma": "taxi",
     "english": "a taxi",
@@ -5581,7 +5326,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-013",
+    "id": "v-a1-transportation-012",
     "norsk": "trikk (en)",
     "lemma": "trikk",
     "english": "a tram",
@@ -5596,7 +5341,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-014",
+    "id": "v-a1-transportation-013",
     "norsk": "t-bane (en)",
     "lemma": "t-bane",
     "english": "a metro / underground",
@@ -5611,7 +5356,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-015",
+    "id": "v-a1-transportation-014",
     "norsk": "å kjøre",
     "lemma": "kjøre",
     "english": "to drive",
@@ -5626,7 +5371,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-transportation-016",
+    "id": "v-a1-transportation-015",
     "norsk": "å reise",
     "lemma": "reise",
     "english": "to travel",
@@ -5641,7 +5386,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-transportation-017",
+    "id": "v-a1-transportation-016",
     "norsk": "å fly",
     "lemma": "fly",
     "english": "to fly",
@@ -5656,7 +5401,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-transportation-018",
+    "id": "v-a1-transportation-017",
     "norsk": "vei (en)",
     "lemma": "vei",
     "english": "a road / a way",
@@ -5671,7 +5416,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-019",
+    "id": "v-a1-transportation-018",
     "norsk": "tunnel (en)",
     "lemma": "tunnel",
     "english": "a tunnel",
@@ -5686,7 +5431,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-020",
+    "id": "v-a1-transportation-019",
     "norsk": "kart (et)",
     "lemma": "kart",
     "english": "a map",
@@ -5701,37 +5446,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a1-transportation-021",
-    "norsk": "til høyre",
-    "lemma": "til høyre",
-    "english": "to the right",
-    "ukrainian": "праворуч",
-    "spanish": "a la derecha",
-    "example": "Ta til høyre ved lyskrysset.",
-    "example_english": "Turn right at the traffic lights.",
-    "example_ukrainian": "Поверніть праворуч на світлофорі.",
-    "example_spanish": "Gira a la derecha en el semáforo.",
-    "level": "A1",
-    "category": "transportation",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-transportation-022",
-    "norsk": "til venstre",
-    "lemma": "til venstre",
-    "english": "to the left",
-    "ukrainian": "ліворуч",
-    "spanish": "a la izquierda",
-    "example": "Ta til venstre etter butikken.",
-    "example_english": "Turn left after the shop.",
-    "example_ukrainian": "Поверніть ліворуч після магазину.",
-    "example_spanish": "Gira a la izquierda después de la tienda.",
-    "level": "A1",
-    "category": "transportation",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a1-transportation-023",
+    "id": "v-a1-transportation-020",
     "norsk": "rett frem",
     "lemma": "rett frem",
     "english": "straight ahead",
@@ -7067,23 +6782,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-classroom-024",
-    "norsk": "for eksempel",
-    "lemma": "for eksempel",
-    "english": "for example",
-    "ukrainian": "наприклад",
-    "spanish": "por ejemplo",
-    "example": "For eksempel kan du bruke denne metoden.",
-    "example_english": "For example, you can use this method.",
-    "example_ukrainian": "Наприклад, ти можеш використати цей метод.",
-    "example_spanish": "Por ejemplo, puedes usar este método.",
-    "definition": "Brukes når man gir et konkret eksempel for å forklare eller vise noe bedre.",
-    "level": "A1",
-    "category": "classroom",
-    "part": "phrase"
-  },
-  {
-    "id": "u-a1-035",
+    "id": "v-a1-adjectives-025",
     "norsk": "annenhver",
     "lemma": "annenhver",
     "english": "every other",
@@ -7098,7 +6797,7 @@
     "part": "adjective"
   },
   {
-    "id": "u-a1-036",
+    "id": "v-a1-feelings-023",
     "norsk": "å savne",
     "lemma": "savne",
     "english": "misses",
@@ -7114,7 +6813,7 @@
     "definition": "Å ha en sterk følelse av at du ønsker at noen eller noe du er glad i var her hos deg."
   },
   {
-    "id": "u-a1-054",
+    "id": "v-a1-greetings-013",
     "norsk": "Beklager",
     "lemma": "Beklager",
     "english": "I'm sorry",
@@ -7129,7 +6828,7 @@
     "part": "interjection"
   },
   {
-    "id": "u-a1-055",
+    "id": "v-a1-greetings-014",
     "norsk": "å ses",
     "lemma": "ses",
     "english": "see you",
@@ -7144,7 +6843,7 @@
     "part": "verb"
   },
   {
-    "id": "u-a1-075",
+    "id": "v-a1-adjectives-026",
     "norsk": "sikkert",
     "lemma": "sikkert",
     "english": "surely / certainly",
@@ -7159,7 +6858,7 @@
     "part": "adverb"
   },
   {
-    "id": "u-a1-076",
+    "id": "v-a1-adjectives-027",
     "norsk": "sikker",
     "lemma": "sikker",
     "english": "sure / certain",
@@ -7174,7 +6873,7 @@
     "part": "adjective"
   },
   {
-    "id": "u-a1-093",
+    "id": "v-a1-greetings-015",
     "norsk": "jammen",
     "lemma": "jammen",
     "english": "well / indeed",
@@ -7189,7 +6888,7 @@
     "part": "interjection"
   },
   {
-    "id": "u-a1-094",
+    "id": "v-a1-adjectives-028",
     "norsk": "hele",
     "lemma": "hel",
     "english": "all / the whole",
@@ -7204,7 +6903,7 @@
     "part": "adjective"
   },
   {
-    "id": "u-a1-104",
+    "id": "v-a1-adjectives-029",
     "norsk": "massevis",
     "lemma": "massevis",
     "english": "lots of",
@@ -7219,7 +6918,7 @@
     "part": "adverb"
   },
   {
-    "id": "u-a1-109",
+    "id": "v-a1-classroom-024",
     "norsk": "fordi",
     "lemma": "fordi",
     "english": "because",

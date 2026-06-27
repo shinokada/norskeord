@@ -480,21 +480,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-clothing-009",
-    "norsk": "å vaske klær",
-    "lemma": "å vaske klær",
-    "english": "to do laundry / to wash clothes",
-    "ukrainian": "прати одяг",
-    "spanish": "lavar la ropa",
-    "example": "Jeg vasker klær hver mandag.",
-    "example_english": "I do laundry every Monday.",
-    "example_ukrainian": "Я перу одяг кожного понеділка.",
-    "example_spanish": "Lavo la ropa todos los lunes.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "phrase"
-  },
-  {
     "id": "v-a2-hobbies-001",
     "norsk": "hobby (en)",
     "lemma": "hobby",
@@ -602,36 +587,6 @@
   },
   {
     "id": "v-a2-hobbies-008",
-    "norsk": "å se på film",
-    "lemma": "å se på film",
-    "english": "to watch films",
-    "ukrainian": "дивитися фільми",
-    "spanish": "ver películas",
-    "example": "Vi ser på film hver fredag.",
-    "example_english": "We watch films every Friday.",
-    "example_ukrainian": "Ми дивимося фільми кожної п'ятниці.",
-    "example_spanish": "Vemos películas todos los viernes.",
-    "level": "A2",
-    "category": "hobbies",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-hobbies-009",
-    "norsk": "å spille dataspill",
-    "lemma": "å spille dataspill",
-    "english": "to play video games",
-    "ukrainian": "грати у відеоігри",
-    "spanish": "jugar videojuegos",
-    "example": "Han spiller dataspill med venner.",
-    "example_english": "He plays video games with friends.",
-    "example_ukrainian": "Він грає у відеоігри з друзями.",
-    "example_spanish": "Él juega videojuegos con amigos.",
-    "level": "A2",
-    "category": "hobbies",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-hobbies-010",
     "norsk": "å strikke",
     "lemma": "strikke",
     "english": "to knit",
@@ -646,7 +601,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-hobbies-011",
+    "id": "v-a2-hobbies-009",
     "norsk": "å sy",
     "lemma": "sy",
     "english": "to sew",
@@ -661,7 +616,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-hobbies-012",
+    "id": "v-a2-hobbies-010",
     "norsk": "å fiske",
     "lemma": "fiske",
     "english": "to fish",
@@ -676,7 +631,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-hobbies-013",
+    "id": "v-a2-hobbies-011",
     "norsk": "instrument (et)",
     "lemma": "instrument",
     "english": "an instrument",
@@ -691,7 +646,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-hobbies-014",
+    "id": "v-a2-hobbies-012",
     "norsk": "konsert (en)",
     "lemma": "konsert",
     "english": "a concert",
@@ -706,7 +661,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-hobbies-015",
+    "id": "v-a2-hobbies-013",
     "norsk": "tur (en)",
     "lemma": "tur",
     "english": "a trip / a hike / a walk",
@@ -721,22 +676,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-hobbies-016",
-    "norsk": "å samle på",
-    "lemma": "å samle på",
-    "english": "to collect",
-    "ukrainian": "колекціонувати",
-    "spanish": "coleccionar",
-    "example": "Han samler på frimerker.",
-    "example_english": "He collects stamps.",
-    "example_ukrainian": "Він колекціонує марки.",
-    "example_spanish": "Él colecciona sellos.",
-    "level": "A2",
-    "category": "hobbies",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-hobbies-018",
+    "id": "v-a2-hobbies-014",
     "norsk": "spill (et)",
     "lemma": "spill",
     "english": "a game / a board game",
@@ -933,21 +873,6 @@
   },
   {
     "id": "v-a2-directions-013",
-    "norsk": "å gå forbi",
-    "lemma": "å gå forbi",
-    "english": "to pass / to go past",
-    "ukrainian": "проходити повз / минати",
-    "spanish": "pasar por delante de / pasar junto a",
-    "example": "Gå forbi kirken og snu til høyre.",
-    "example_english": "Go past the church and turn right.",
-    "example_ukrainian": "Пройдіть повз церкву і поверніть праворуч.",
-    "example_spanish": "Pasa por delante de la iglesia y dobla a la derecha.",
-    "level": "A2",
-    "category": "directions",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-directions-014",
     "norsk": "rundkjøring (en)",
     "lemma": "rundkjøring",
     "english": "a roundabout",
@@ -962,7 +887,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-015",
+    "id": "v-a2-directions-014",
     "norsk": "bro (en)",
     "lemma": "bro",
     "english": "a bridge",
@@ -977,37 +902,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-016",
-    "norsk": "Hvor er ...?",
-    "lemma": "Hvor er ...?",
-    "english": "Where is ...?",
-    "ukrainian": "Де знаходиться ...?",
-    "spanish": "¿Dónde está...?",
-    "example": "Unnskyld, hvor er nærmeste apotek?",
-    "example_english": "Excuse me, where is the nearest pharmacy?",
-    "example_ukrainian": "Вибачте, де знаходиться найближча аптека?",
-    "example_spanish": "Perdona, ¿dónde está la farmacia más cercana?",
-    "level": "A2",
-    "category": "directions",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-directions-017",
-    "norsk": "Hvordan kommer jeg til ...?",
-    "lemma": "Hvordan kommer jeg til ...?",
-    "english": "How do I get to ...?",
-    "ukrainian": "Як мені дістатися до ...?",
-    "spanish": "¿Cómo llego a...?",
-    "example": "Hvordan kommer jeg til togstasjonen?",
-    "example_english": "How do I get to the train station?",
-    "example_ukrainian": "Як мені дістатися до залізничної станції?",
-    "example_spanish": "¿Cómo llego a la estación de tren?",
-    "level": "A2",
-    "category": "directions",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-directions-018",
+    "id": "v-a2-directions-015",
     "norsk": "å krysse",
     "lemma": "krysse",
     "english": "to cross",
@@ -1022,7 +917,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-019",
+    "id": "v-a2-directions-016",
     "norsk": "fotgjengerovergang (en)",
     "lemma": "fotgjengerovergang",
     "english": "a pedestrian crossing / a zebra crossing",
@@ -1367,37 +1262,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-023",
-    "norsk": "å søke jobb",
-    "lemma": "å søke jobb",
-    "english": "to apply for a job",
-    "ukrainian": "подавати заявку на роботу",
-    "spanish": "solicitar un trabajo",
-    "example": "Han søker jobb som lærer.",
-    "example_english": "He is applying for a job as a teacher.",
-    "example_ukrainian": "Він шукає роботу вчителем.",
-    "example_spanish": "Él solicita un trabajo de profesor.",
-    "level": "A2",
-    "category": "occupations",
-    "part": "phrase"
-  },
-  {
     "id": "v-a2-sports-001",
-    "norsk": "å spille fotball",
-    "lemma": "å spille fotball",
-    "english": "to play football",
-    "ukrainian": "грати у футбол",
-    "spanish": "jugar al fútbol",
-    "example": "Jeg spiller fotball med venner.",
-    "example_english": "I play football with friends.",
-    "example_ukrainian": "Я граю у футбол з друзями.",
-    "example_spanish": "Juego al fútbol con amigos.",
-    "level": "A2",
-    "category": "sports",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-sports-002",
     "norsk": "å svømme",
     "lemma": "svømme",
     "english": "to swim",
@@ -1412,7 +1277,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-003",
+    "id": "v-a2-sports-002",
     "norsk": "å løpe",
     "lemma": "løpe",
     "english": "to run",
@@ -1427,7 +1292,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-004",
+    "id": "v-a2-sports-003",
     "norsk": "å sykle",
     "lemma": "sykle",
     "english": "to cycle",
@@ -1442,7 +1307,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-005",
+    "id": "v-a2-sports-004",
     "norsk": "å trene",
     "lemma": "trene",
     "english": "to exercise / to train",
@@ -1457,7 +1322,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-006",
+    "id": "v-a2-sports-005",
     "norsk": "treningssenter (et)",
     "lemma": "treningssenter",
     "english": "a gym",
@@ -1472,7 +1337,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-007",
+    "id": "v-a2-sports-006",
     "norsk": "kamp (en)",
     "lemma": "kamp",
     "english": "a match, a game, a struggle",
@@ -1487,7 +1352,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-008",
+    "id": "v-a2-sports-007",
     "norsk": "lag (et)",
     "lemma": "lag",
     "english": "a team",
@@ -1503,7 +1368,7 @@
     "definition": "gruppe, team"
   },
   {
-    "id": "v-a2-sports-009",
+    "id": "v-a2-sports-008",
     "norsk": "å vinne",
     "lemma": "vinne",
     "english": "to win",
@@ -1518,7 +1383,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-010",
+    "id": "v-a2-sports-009",
     "norsk": "å tape",
     "lemma": "tape",
     "english": "to lose",
@@ -1534,7 +1399,7 @@
     "definition": "bli slått, ikke vinne"
   },
   {
-    "id": "v-a2-sports-011",
+    "id": "v-a2-sports-010",
     "norsk": "spiller (en)",
     "lemma": "spiller",
     "english": "a player",
@@ -1549,7 +1414,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-012",
+    "id": "v-a2-sports-011",
     "norsk": "trener (en)",
     "lemma": "trener",
     "english": "a coach / a trainer",
@@ -1564,22 +1429,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-013",
-    "norsk": "å gå på ski",
-    "lemma": "å gå på ski",
-    "english": "to go skiing",
-    "ukrainian": "кататися на лижах",
-    "spanish": "esquiar",
-    "example": "Nordmenn liker å gå på ski.",
-    "example_english": "Norwegians like to go skiing.",
-    "example_ukrainian": "Норвежці люблять кататися на лижах.",
-    "example_spanish": "A los noruegos les gusta esquiar.",
-    "level": "A2",
-    "category": "sports",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-sports-014",
+    "id": "v-a2-sports-012",
     "norsk": "å skate",
     "lemma": "skate",
     "english": "to skate",
@@ -1594,7 +1444,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-015",
+    "id": "v-a2-sports-013",
     "norsk": "volleyball (en)",
     "lemma": "volleyball",
     "english": "volleyball",
@@ -1609,7 +1459,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-016",
+    "id": "v-a2-sports-014",
     "norsk": "tennis (en)",
     "lemma": "tennis",
     "english": "tennis",
@@ -1624,7 +1474,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-017",
+    "id": "v-a2-sports-015",
     "norsk": "mål (et)",
     "lemma": "mål",
     "english": "a goal",
@@ -1639,7 +1489,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-018",
+    "id": "v-a2-sports-016",
     "norsk": "dommer (en)",
     "lemma": "dommer",
     "english": "a referee",
@@ -1654,22 +1504,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-019",
-    "norsk": "å heie på",
-    "lemma": "å heie på",
-    "english": "to cheer for / to support",
-    "ukrainian": "вболівати за",
-    "spanish": "animar a / apoyar a",
-    "example": "Vi heier på det norske laget.",
-    "example_english": "We cheer for the Norwegian team.",
-    "example_ukrainian": "Ми вболіваємо за норвезьку команду.",
-    "example_spanish": "Animamos al equipo noruego.",
-    "level": "A2",
-    "category": "sports",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-sports-020",
+    "id": "v-a2-sports-017",
     "norsk": "stadion (et)",
     "lemma": "stadion",
     "english": "a stadium",
@@ -1685,7 +1520,7 @@
     "definition": "bygning med idrettsbaner"
   },
   {
-    "id": "v-a2-sports-021",
+    "id": "v-a2-sports-018",
     "norsk": "basketball (en)",
     "lemma": "basketball",
     "english": "basketball",
@@ -1700,7 +1535,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-022",
+    "id": "v-a2-sports-019",
     "norsk": "sport (en)",
     "lemma": "sport",
     "english": "sport",
@@ -1715,7 +1550,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-sports-023",
+    "id": "v-a2-sports-020",
     "norsk": "aktiv",
     "lemma": "aktiv",
     "english": "active",
@@ -1730,7 +1565,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-sports-024",
+    "id": "v-a2-sports-021",
     "norsk": "å konkurrere",
     "lemma": "konkurrere",
     "english": "to compete",
@@ -1745,7 +1580,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-025",
+    "id": "v-a2-sports-022",
     "norsk": "premie (en)",
     "lemma": "premie",
     "english": "a prize / an award",
@@ -2376,52 +2211,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-005",
-    "norsk": "om ettermiddagen",
-    "lemma": "om ettermiddagen",
-    "english": "in the afternoon",
-    "ukrainian": "вдень / після обіду",
-    "spanish": "por la tarde",
-    "example": "Vi møtes om ettermiddagen.",
-    "example_english": "We meet in the afternoon.",
-    "example_ukrainian": "Ми зустрінемося після обіду.",
-    "example_spanish": "Nos vemos por la tarde.",
-    "level": "A2",
-    "category": "time",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-time-006",
-    "norsk": "om kvelden",
-    "lemma": "om kvelden",
-    "english": "in the evening",
-    "ukrainian": "увечері",
-    "spanish": "por la noche",
-    "example": "Vi spiser middag om kvelden.",
-    "example_english": "We eat dinner in the evening.",
-    "example_ukrainian": "Ми вечеряємо увечері.",
-    "example_spanish": "Cenamos por la noche.",
-    "level": "A2",
-    "category": "time",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-time-007",
-    "norsk": "om natten",
-    "lemma": "om natten",
-    "english": "at night",
-    "ukrainian": "вночі",
-    "spanish": "de noche",
-    "example": "Jeg sover dårlig om natten.",
-    "example_english": "I sleep badly at night.",
-    "example_ukrainian": "Я погано сплю вночі.",
-    "example_spanish": "Duermo mal de noche.",
-    "level": "A2",
-    "category": "time",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-time-008",
+    "id": "v-a2-time-004",
     "norsk": "neste uke",
     "lemma": "neste uke",
     "english": "next week",
@@ -2436,7 +2226,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-009",
+    "id": "v-a2-time-005",
     "norsk": "forrige uke",
     "lemma": "forrige uke",
     "english": "last week",
@@ -2451,22 +2241,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-010",
-    "norsk": "i år",
-    "lemma": "i år",
-    "english": "this year",
-    "ukrainian": "цього року",
-    "spanish": "este año",
-    "example": "I år skal vi besøke besteforeldrene.",
-    "example_english": "This year we will visit the grandparents.",
-    "example_ukrainian": "Цього року ми відвідаємо бабусю й дідуся.",
-    "example_spanish": "Este año vamos a visitar a los abuelos.",
-    "level": "A2",
-    "category": "time",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-time-011",
+    "id": "v-a2-time-006",
     "norsk": "neste år",
     "lemma": "neste år",
     "english": "next year",
@@ -2481,7 +2256,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-012",
+    "id": "v-a2-time-007",
     "norsk": "alltid",
     "lemma": "alltid",
     "english": "always",
@@ -2496,7 +2271,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-013",
+    "id": "v-a2-time-008",
     "norsk": "ofte",
     "lemma": "ofte",
     "english": "often",
@@ -2511,7 +2286,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-014",
+    "id": "v-a2-time-009",
     "norsk": "sjelden",
     "lemma": "sjelden",
     "english": "rarely / seldom",
@@ -2526,7 +2301,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-015",
+    "id": "v-a2-time-010",
     "norsk": "aldri",
     "lemma": "aldri",
     "english": "never",
@@ -2541,7 +2316,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-016",
+    "id": "v-a2-time-011",
     "norsk": "noen ganger",
     "lemma": "noen ganger",
     "english": "sometimes",
@@ -2556,7 +2331,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-017",
+    "id": "v-a2-time-012",
     "norsk": "vanligvis",
     "lemma": "vanligvis",
     "english": "usually",
@@ -2571,7 +2346,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-018",
+    "id": "v-a2-time-013",
     "norsk": "snart",
     "lemma": "snart",
     "english": "soon",
@@ -2586,7 +2361,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-019",
+    "id": "v-a2-time-014",
     "norsk": "allerede",
     "lemma": "allerede",
     "english": "already",
@@ -2601,7 +2376,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-020",
+    "id": "v-a2-time-015",
     "norsk": "ennå",
     "lemma": "ennå",
     "english": "yet / still",
@@ -2616,22 +2391,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-021",
-    "norsk": "for lenge siden",
-    "lemma": "for lenge siden",
-    "english": "a long time ago",
-    "ukrainian": "давно",
-    "spanish": "hace mucho tiempo",
-    "example": "Det skjedde for lenge siden.",
-    "example_english": "That happened a long time ago.",
-    "example_ukrainian": "Це сталося давно.",
-    "example_spanish": "Eso pasó hace mucho tiempo.",
-    "level": "A2",
-    "category": "time",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-time-022",
+    "id": "v-a2-time-016",
     "norsk": "nylig",
     "lemma": "nylig",
     "english": "recently",
@@ -2646,7 +2406,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-023",
+    "id": "v-a2-time-017",
     "norsk": "siden",
     "lemma": "siden",
     "english": "since / ago",
@@ -2661,22 +2421,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-024",
-    "norsk": "i løpet av",
-    "lemma": "i løpet av",
-    "english": "during / within",
-    "ukrainian": "протягом",
-    "spanish": "durante / en el transcurso de",
-    "example": "I løpet av uka skal vi besøke venner.",
-    "example_english": "During the week we will visit friends.",
-    "example_ukrainian": "Протягом тижня ми відвідаємо друзів.",
-    "example_spanish": "Durante la semana vamos a visitar amigos.",
-    "level": "A2",
-    "category": "time",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-time-025",
+    "id": "v-a2-time-018",
     "norsk": "minutt (et)",
     "lemma": "minutt",
     "english": "a minute",
@@ -2881,6 +2626,21 @@
     "example_english": "Our neighbours are very friendly.",
     "example_ukrainian": "Наші сусіди дуже дружні.",
     "example_spanish": "Nuestros vecinos son muy amables.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "id": "v-a2-descriptive-adjectives-014",
+    "norsk": "sur",
+    "lemma": "sur",
+    "english": "angry, sour, grumpy",
+    "ukrainian": "сердитий, похмурий, незадоволений",
+    "spanish": "enfadado, de mal humor",
+    "example": "Han er sur fordi han er trøtt.",
+    "example_english": "He is grumpy because he is tired.",
+    "example_ukrainian": "Він сердитий, тому що втомився.",
+    "example_spanish": "Él está de mal humor porque está cansado.",
     "level": "A2",
     "category": "descriptive-adjectives",
     "part": "adjective"
@@ -3182,6 +2942,21 @@
     "example_english": "Boil the water in the kettle.",
     "example_ukrainian": "Закип'яти воду в каструлі.",
     "example_spanish": "Hierve el agua en el cazo.",
+    "level": "A2",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "id": "v-a2-cooking-021",
+    "norsk": "smak (en)",
+    "lemma": "smak",
+    "english": "taste",
+    "ukrainian": "смак",
+    "spanish": "sabor",
+    "example": "Denne maten smaker godt.",
+    "example_english": "This food tastes good.",
+    "example_ukrainian": "Ця їжа смачна.",
+    "example_spanish": "Esta comida sabe bien.",
     "level": "A2",
     "category": "cooking",
     "part": "noun"
@@ -3833,21 +3608,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-house-chores-022",
-    "norsk": "å lufte hunden",
-    "lemma": "å lufte hunden",
-    "english": "to walk the dog",
-    "ukrainian": "виводити собаку на прогулянку",
-    "spanish": "sacar al perro a pasear",
-    "example": "Jeg lufter hunden to ganger om dagen.",
-    "example_english": "I walk the dog twice a day.",
-    "example_ukrainian": "Я виводжу собаку двічі на день.",
-    "example_spanish": "Saco al perro a pasear dos veces al día.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "phrase"
-  },
-  {
     "id": "v-a2-communication-001",
     "norsk": "å ringe",
     "lemma": "ringe",
@@ -3938,7 +3698,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-008",
+    "id": "v-a2-communication-007",
     "norsk": "å møtes",
     "lemma": "møtes",
     "english": "to meet up",
@@ -3953,7 +3713,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-009",
+    "id": "v-a2-communication-008",
     "norsk": "melding (en)",
     "lemma": "melding",
     "english": "a message",
@@ -3968,7 +3728,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-010",
+    "id": "v-a2-communication-009",
     "norsk": "e-post (en)",
     "lemma": "e-post",
     "english": "an email",
@@ -3983,7 +3743,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-011",
+    "id": "v-a2-communication-010",
     "norsk": "svar (et)",
     "lemma": "svar",
     "english": "a reply / an answer",
@@ -3998,7 +3758,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-012",
+    "id": "v-a2-communication-011",
     "norsk": "telefon (en)",
     "lemma": "telefon",
     "english": "a telephone / a phone",
@@ -4013,7 +3773,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-013",
+    "id": "v-a2-communication-012",
     "norsk": "nummer (et)",
     "lemma": "nummer",
     "english": "a number",
@@ -4028,7 +3788,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-014",
+    "id": "v-a2-communication-013",
     "norsk": "møte (et)",
     "lemma": "møte",
     "english": "a meeting",
@@ -4043,7 +3803,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-015",
+    "id": "v-a2-communication-014",
     "norsk": "avtale (en)",
     "lemma": "avtale",
     "english": "an appointment / an agreement",
@@ -4059,7 +3819,7 @@
     "definition": "konvensjon, enighet"
   },
   {
-    "id": "v-a2-communication-016",
+    "id": "v-a2-communication-015",
     "norsk": "sosiale medier (en)",
     "lemma": "sosiale medier",
     "english": "social media",
@@ -4074,7 +3834,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-017",
+    "id": "v-a2-communication-016",
     "norsk": "internett (et)",
     "lemma": "internett",
     "english": "the internet",
@@ -4089,7 +3849,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-018",
+    "id": "v-a2-communication-017",
     "norsk": "tydelig",
     "lemma": "tydelig",
     "english": "clear / distinct",
@@ -4104,22 +3864,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-019",
-    "norsk": "Kan du hjelpe meg?",
-    "lemma": "Kan du hjelpe meg?",
-    "english": "Can you help me?",
-    "ukrainian": "Чи можеш ти мені допомогти?",
-    "spanish": "¿Puedes ayudarme?",
-    "example": "Unnskyld, kan du hjelpe meg?",
-    "example_english": "Excuse me, can you help me?",
-    "example_ukrainian": "Вибачте, ви можете мені допомогти?",
-    "example_spanish": "Perdona, ¿puedes ayudarme?",
-    "level": "A2",
-    "category": "communication",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-communication-020",
+    "id": "v-a2-communication-018",
     "norsk": "Jeg forstår ikke.",
     "lemma": "Jeg forstår ikke.",
     "english": "I don't understand.",
@@ -4129,21 +3874,6 @@
     "example_english": "Sorry, I don't understand.",
     "example_ukrainian": "Вибачте, я не розумію.",
     "example_spanish": "Lo siento, no entiendo.",
-    "level": "A2",
-    "category": "communication",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-communication-021",
-    "norsk": "Kan du snakke saktere?",
-    "lemma": "Kan du snakke saktere?",
-    "english": "Can you speak more slowly?",
-    "ukrainian": "Чи можеш ти говорити повільніше?",
-    "spanish": "¿Puedes hablar más despacio?",
-    "example": "Kan du snakke litt saktere, takk?",
-    "example_english": "Can you speak a little more slowly, please?",
-    "example_ukrainian": "Чи можеш ти говорити трохи повільніше, будь ласка?",
-    "example_spanish": "¿Puedes hablar un poco más despacio, por favor?",
     "level": "A2",
     "category": "communication",
     "part": "phrase"
@@ -4765,36 +4495,6 @@
   },
   {
     "id": "v-a2-social-life-019",
-    "norsk": "lykke til",
-    "lemma": "lykke til",
-    "english": "good luck",
-    "ukrainian": "бажаю успіху",
-    "spanish": "buena suerte",
-    "example": "Lykke til på eksamen!",
-    "example_english": "Good luck on the exam!",
-    "example_ukrainian": "Бажаю успіху на іспиті!",
-    "example_spanish": "¡Buena suerte en el examen!",
-    "level": "A2",
-    "category": "social-life",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-social-life-020",
-    "norsk": "god tur",
-    "lemma": "god tur",
-    "english": "have a good trip",
-    "ukrainian": "щасливої дороги",
-    "spanish": "buen viaje",
-    "example": "God tur!",
-    "example_english": "Have a good trip!",
-    "example_ukrainian": "Щасливої дороги!",
-    "example_spanish": "¡Buen viaje!",
-    "level": "A2",
-    "category": "social-life",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-social-life-021",
     "norsk": "klem (en)",
     "lemma": "klem",
     "english": "a hug",
@@ -4809,7 +4509,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-022",
+    "id": "v-a2-social-life-020",
     "norsk": "frivillig arbeid",
     "lemma": "frivillig arbeid",
     "english": "voluntary work",
@@ -4824,7 +4524,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-social-life-023",
+    "id": "v-a2-social-life-021",
     "norsk": "å delta",
     "lemma": "delta",
     "english": "to participate",
@@ -4840,7 +4540,7 @@
     "definition": "være med på"
   },
   {
-    "id": "v-a2-social-life-024",
+    "id": "v-a2-social-life-022",
     "norsk": "arrangement (et)",
     "lemma": "arrangement",
     "english": "an event",
@@ -4961,21 +4661,6 @@
   },
   {
     "id": "v-a2-technology-008",
-    "norsk": "søke på nett",
-    "lemma": "søke på nett",
-    "english": "to search online",
-    "ukrainian": "шукати в інтернеті",
-    "spanish": "buscar en internet",
-    "example": "Jeg søker på nett etter informasjon.",
-    "example_english": "I search online for information.",
-    "example_ukrainian": "Я шукаю в інтернеті інформацію.",
-    "example_spanish": "Busco información en internet.",
-    "level": "A2",
-    "category": "technology",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-technology-009",
     "norsk": "wifi (et)",
     "lemma": "wifi",
     "english": "wifi",
@@ -4990,7 +4675,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-010",
+    "id": "v-a2-technology-009",
     "norsk": "batteri (et)",
     "lemma": "batteri",
     "english": "a battery",
@@ -5005,7 +4690,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-011",
+    "id": "v-a2-technology-010",
     "norsk": "å lade",
     "lemma": "lade",
     "english": "to charge",
@@ -5020,7 +4705,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-technology-012",
+    "id": "v-a2-technology-011",
     "norsk": "ta et bilde",
     "lemma": "ta et bilde",
     "english": "to take a photo",
@@ -5035,7 +4720,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-technology-013",
+    "id": "v-a2-technology-012",
     "norsk": "nettside (en)",
     "lemma": "nettside",
     "english": "a website",
@@ -5050,7 +4735,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-014",
+    "id": "v-a2-technology-013",
     "norsk": "å slå på",
     "lemma": "slå på",
     "english": "to turn on",
@@ -5065,7 +4750,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-technology-015",
+    "id": "v-a2-technology-014",
     "norsk": "å slå av",
     "lemma": "slå av",
     "english": "to turn off",
@@ -5080,7 +4765,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-technology-016",
+    "id": "v-a2-technology-015",
     "norsk": "høyttaler (en)",
     "lemma": "høyttaler",
     "english": "a speaker",
@@ -5095,7 +4780,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-017",
+    "id": "v-a2-technology-016",
     "norsk": "hodetelefon (en)",
     "lemma": "hodetelefon",
     "english": "headphones",
@@ -5110,7 +4795,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-018",
+    "id": "v-a2-technology-017",
     "norsk": "kamera (et)",
     "lemma": "kamera",
     "english": "a camera",
@@ -5125,7 +4810,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-019",
+    "id": "v-a2-technology-018",
     "norsk": "å skrive ut",
     "lemma": "skrive ut",
     "english": "to print",
@@ -5426,21 +5111,6 @@
   },
   {
     "id": "v-a2-money-012",
-    "norsk": "på salg",
-    "lemma": "på salg",
-    "english": "on sale",
-    "ukrainian": "на розпродажі",
-    "spanish": "en oferta",
-    "example": "Disse skoene er på salg.",
-    "example_english": "These shoes are on sale.",
-    "example_ukrainian": "Це взуття на розпродажі.",
-    "example_spanish": "Estos zapatos están en oferta.",
-    "level": "A2",
-    "category": "money",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-money-013",
     "norsk": "vekslepenger (en)",
     "lemma": "vekslepenger",
     "english": "change (money)",
@@ -5455,7 +5125,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-014",
+    "id": "v-a2-money-013",
     "norsk": "to hundre (en)",
     "lemma": "to hundre",
     "english": "two hundred",
@@ -5470,7 +5140,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-015",
+    "id": "v-a2-money-014",
     "norsk": "fem hundre (en)",
     "lemma": "fem hundre",
     "english": "five hundred",
@@ -5485,7 +5155,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-016",
+    "id": "v-a2-money-015",
     "norsk": "million (en)",
     "lemma": "million",
     "english": "a million",
@@ -5500,7 +5170,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-017",
+    "id": "v-a2-money-016",
     "norsk": "låne penger",
     "lemma": "låne penger",
     "english": "to borrow money",
@@ -5515,7 +5185,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-money-018",
+    "id": "v-a2-money-017",
     "norsk": "betale tilbake",
     "lemma": "betale tilbake",
     "english": "to pay back",
@@ -5530,7 +5200,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-communication-022",
+    "id": "v-a2-communication-019",
     "norsk": "faktisk",
     "lemma": "faktisk",
     "english": "actually / in fact",
@@ -5546,7 +5216,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-social-life-025",
+    "id": "v-a2-social-life-023",
     "norsk": "krig (en)",
     "lemma": "krig",
     "english": "a war",
@@ -5562,7 +5232,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-026",
+    "id": "v-a2-social-life-024",
     "norsk": "gud (en)",
     "lemma": "gud",
     "english": "a god",
@@ -5578,39 +5248,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-023",
-    "norsk": "i tillegg",
-    "lemma": "i tillegg",
-    "english": "in addition / also",
-    "ukrainian": "крім того / також",
-    "spanish": "además / también",
-    "example": "Han snakker norsk og i tillegg engelsk.",
-    "example_english": "He speaks Norwegian and in addition English.",
-    "example_ukrainian": "Він розмовляє норвезькою, а крім того — англійською.",
-    "example_spanish": "Él habla noruego y además inglés.",
-    "definition": "Brukes for å legge til noe ekstra.",
-    "level": "A2",
-    "category": "communication",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-communication-024",
-    "norsk": "med andre ord",
-    "lemma": "med andre ord",
-    "english": "in other words",
-    "ukrainian": "іншими словами",
-    "spanish": "en otras palabras",
-    "example": "Med andre ord, du er ikke enig.",
-    "example_english": "In other words, you disagree.",
-    "example_ukrainian": "Іншими словами, ти не згоден.",
-    "example_spanish": "En otras palabras, no estás de acuerdo.",
-    "definition": "Brukes for å forklare noe på en annen måte.",
-    "level": "A2",
-    "category": "communication",
-    "part": "phrase"
-  },
-  {
-    "id": "v-a2-communication-025",
+    "id": "v-a2-communication-020",
     "norsk": "ettersom",
     "lemma": "ettersom",
     "english": "since / because / as",
@@ -5626,7 +5264,7 @@
     "part": "conjunction"
   },
   {
-    "id": "v-a2-social-life-027",
+    "id": "v-a2-social-life-025",
     "norsk": "frihet (en)",
     "lemma": "frihet",
     "english": "freedom / liberty",
@@ -5642,7 +5280,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-028",
+    "id": "v-a2-social-life-026",
     "norsk": "kjærlighet (en)",
     "lemma": "kjærlighet",
     "english": "love",
@@ -5658,7 +5296,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-029",
+    "id": "v-a2-social-life-027",
     "norsk": "vennskap (et)",
     "lemma": "vennskap",
     "english": "a friendship",
@@ -5674,7 +5312,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-030",
+    "id": "v-a2-social-life-028",
     "norsk": "ekteskap (et)",
     "lemma": "ekteskap",
     "english": "a marriage",
@@ -5690,7 +5328,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-024",
+    "id": "v-a2-occupations-023",
     "norsk": "prest (en)",
     "lemma": "prest",
     "english": "a priest / a minister",
@@ -5706,7 +5344,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-031",
+    "id": "v-a2-social-life-029",
     "norsk": "prøve (en)",
     "lemma": "prøve",
     "english": "a test / an exam",
@@ -5722,7 +5360,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-025",
+    "id": "v-a2-occupations-024",
     "norsk": "professor (en)",
     "lemma": "professor",
     "english": "a professor",
@@ -5786,7 +5424,7 @@
     "part": "noun"
   },
   {
-    "id": "u-a2-003",
+    "id": "v-a2-health-025",
     "norsk": "stress (et)",
     "lemma": "stress",
     "english": "stress",
@@ -5800,35 +5438,5 @@
     "category": "health",
     "part": "noun",
     "definition": "En tilstand av press og spenning som oppstår når man har for mange krav."
-  },
-  {
-    "id": "u-a2-060",
-    "norsk": "sur",
-    "lemma": "sur",
-    "english": "angry, sour, grumpy",
-    "ukrainian": "сердитий, похмурий, незадоволений",
-    "spanish": "enfadado, de mal humor",
-    "example": "Han er sur fordi han er trøtt.",
-    "example_english": "He is grumpy because he is tired.",
-    "example_ukrainian": "Він сердитий, тому що втомився.",
-    "example_spanish": "Él está de mal humor porque está cansado.",
-    "level": "A2",
-    "category": "feelings",
-    "part": "adjective"
-  },
-  {
-    "id": "u-a2-085",
-    "norsk": "smak (en)",
-    "lemma": "smak",
-    "english": "taste",
-    "ukrainian": "смак",
-    "spanish": "sabor",
-    "example": "Denne maten smaker godt.",
-    "example_english": "This food tastes good.",
-    "example_ukrainian": "Ця їжа смачна.",
-    "example_spanish": "Esta comida sabe bien.",
-    "level": "A2",
-    "category": "food",
-    "part": "noun"
   }
 ]

@@ -18,57 +18,57 @@
  *   node scripts/dedup-cross-file.mjs --no-patch    (skip field merging)
  */
 
-import { readFileSync, writeFileSync, readdirSync } from "fs";
-import { resolve, dirname, basename } from "path";
-import { fileURLToPath } from "url";
+import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR  = resolve(__dirname, "../src/lib/data");
+const DATA_DIR = resolve(__dirname, '../src/lib/data');
 
-const args     = process.argv.slice(2);
-const DRY_RUN  = args.includes("--dry-run");
-const NO_PATCH = args.includes("--no-patch");
+const args = process.argv.slice(2);
+const DRY_RUN = args.includes('--dry-run');
+const NO_PATCH = args.includes('--no-patch');
 
 // Level order: lower index = lower level = wins
-const LEVEL_ORDER = ["A1", "A2", "B1", "B2", "C"];
+const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C'];
 
-const levelOf = (entry) => entry.level?.toUpperCase() ?? "B2";
+const levelOf = (entry) => entry.level?.toUpperCase() ?? 'B2';
 const levelRank = (entry) => LEVEL_ORDER.indexOf(levelOf(entry));
 
 // Load all vocab files
 const vocabFiles = readdirSync(DATA_DIR)
-  .filter(f => f.match(/^vocab-[a-z0-9]+\.json$/))
+  .filter((f) => f.match(/^vocab-[a-z0-9]+\.json$/))
   .sort(); // A1 → A2 → B1 → B2 → C
 
 const fileData = {}; // filename → entries[]
 for (const f of vocabFiles) {
-  fileData[f] = JSON.parse(readFileSync(resolve(DATA_DIR, f), "utf-8"));
+  fileData[f] = JSON.parse(readFileSync(resolve(DATA_DIR, f), 'utf-8'));
 }
 
 // Build a global index: norsk_lower → [{file, index, entry}]
 const globalIndex = {}; // norsk_lower → [{file, idx, entry}]
 for (const [file, entries] of Object.entries(fileData)) {
   for (let i = 0; i < entries.length; i++) {
-    const key = entries[i].norsk?.trim().toLowerCase();
-    if (!key) continue;
-    (globalIndex[key] ??= []).push({ file, idx: i, entry: entries[i] });
+    const norskKey = entries[i].norsk?.trim().toLowerCase();
+    if (!norskKey) continue;
+    (globalIndex[norskKey] ??= []).push({ file, idx: i, entry: entries[i] });
   }
 }
 
 // Find cross-file duplicates (same norsk, different files)
 const toRemove = {}; // file → Set<index>
-const patches  = {}; // file → { index → {fields to add} }
+const patches = {}; // file → { index → {fields to add} }
 const decisions = [];
 
-for (const [key, hits] of Object.entries(globalIndex)) {
+for (const hits of Object.values(globalIndex)) {
   // Only interested in hits across multiple files
-  const files = [...new Set(hits.map(h => h.file))];
+  const files = [...new Set(hits.map((h) => h.file))];
   if (files.length < 2) continue;
 
   // Sort by level rank: lowest level first = winner
   const sorted = [...hits].sort((a, b) => levelRank(a.entry) - levelRank(b.entry) || 0);
   const winner = sorted[0];
-  const losers = sorted.slice(1).filter(h => h.file !== winner.file);
+  const losers = sorted.slice(1).filter((h) => h.file !== winner.file);
 
   // Deduplicate losers (same file may appear multiple times if 3+ files had it)
   const seen = new Set();
@@ -81,8 +81,12 @@ for (const [key, hits] of Object.entries(globalIndex)) {
     const missingFields = {};
     if (!NO_PATCH) {
       for (const [field, val] of Object.entries(loser.entry)) {
-        if (field === "id" || field === "level" || field === "category") continue;
-        if (winner.entry[field] === undefined || winner.entry[field] === null || winner.entry[field] === "") {
+        if (field === 'id' || field === 'level' || field === 'category') continue;
+        if (
+          winner.entry[field] === undefined ||
+          winner.entry[field] === null ||
+          winner.entry[field] === ''
+        ) {
           missingFields[field] = val;
         }
       }
@@ -95,7 +99,7 @@ for (const [key, hits] of Object.entries(globalIndex)) {
     if (Object.keys(missingFields).length > 0) {
       (patches[winner.file] ??= {})[winner.idx] = {
         ...(patches[winner.file]?.[winner.idx] ?? {}),
-        ...missingFields,
+        ...missingFields
       };
     }
 
@@ -109,7 +113,7 @@ for (const [key, hits] of Object.entries(globalIndex)) {
       removeId: loser.entry.id,
       removeLevel: levelOf(loser.entry),
       removeCat: loser.entry.category,
-      patchedFields: Object.keys(missingFields),
+      patchedFields: Object.keys(missingFields)
     });
   }
 }
@@ -126,15 +130,19 @@ console.log();
 // Group decisions by file pair for readability
 decisions.sort((a, b) => a.norsk.localeCompare(b.norsk));
 
-let currentPair = "";
+let currentPair = '';
 for (const d of decisions) {
   const pair = `${d.keepFile} ← ${d.removeFile}`;
   if (pair !== currentPair) {
-    console.log(`\n  [Keep ${d.keepLevel} / Remove ${d.removeLevel}]  ${d.keepFile} ← ${d.removeFile}`);
+    console.log(
+      `\n  [Keep ${d.keepLevel} / Remove ${d.removeLevel}]  ${d.keepFile} ← ${d.removeFile}`
+    );
     currentPair = pair;
   }
-  const patch = d.patchedFields.length ? `  +patch[${d.patchedFields.join(",")}]` : "";
-  console.log(`    "${d.norsk}"  keep:${d.keepId}[${d.keepCat}]  remove:${d.removeId}[${d.removeCat}]${patch}`);
+  const patch = d.patchedFields.length ? `  +patch[${d.patchedFields.join(',')}]` : '';
+  console.log(
+    `    "${d.norsk}"  keep:${d.keepId}[${d.keepCat}]  remove:${d.removeId}[${d.removeCat}]${patch}`
+  );
 }
 
 if (DRY_RUN) {
@@ -147,7 +155,7 @@ let filesWritten = 0;
 
 for (const [file, entries] of Object.entries(fileData)) {
   const removeSet = toRemove[file] ?? new Set();
-  const patchMap  = patches[file]  ?? {};
+  const patchMap = patches[file] ?? {};
   if (removeSet.size === 0 && Object.keys(patchMap).length === 0) continue;
 
   // Apply patches first
@@ -158,9 +166,11 @@ for (const [file, entries] of Object.entries(fileData)) {
   // Filter out removed entries
   const cleaned = entries.filter((_, i) => !removeSet.has(i));
 
-  writeFileSync(resolve(DATA_DIR, file), JSON.stringify(cleaned, null, 2) + "\n", "utf-8");
-  console.log(`\nWrote ${file}: ${entries.length} → ${cleaned.length} entries` +
-    (Object.keys(patchMap).length ? ` (${Object.keys(patchMap).length} patched)` : ""));
+  writeFileSync(resolve(DATA_DIR, file), JSON.stringify(cleaned, null, 2) + '\n', 'utf-8');
+  console.log(
+    `\nWrote ${file}: ${entries.length} → ${cleaned.length} entries` +
+      (Object.keys(patchMap).length ? ` (${Object.keys(patchMap).length} patched)` : '')
+  );
   filesWritten++;
 }
 

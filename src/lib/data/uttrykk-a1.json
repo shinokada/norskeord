@@ -510,7 +510,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-037",
+    "id": "u-a1-035",
     "norsk": "litt etter/før klokka tolv",
     "lemma": "litt etter/før klokka tolv",
     "english": "a little after/before twelve o'clock",
@@ -525,7 +525,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-038",
+    "id": "u-a1-036",
     "norsk": "gjør lekser",
     "lemma": "gjør lekser",
     "english": "does homework",
@@ -540,7 +540,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-040",
+    "id": "u-a1-037",
     "norsk": "å gjenta",
     "lemma": "å gjenta",
     "english": "to repeat",
@@ -555,7 +555,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-041",
+    "id": "u-a1-038",
     "norsk": "å snakke langsomt",
     "lemma": "å snakke langsomt",
     "english": "to speak slowly",
@@ -570,7 +570,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-042",
+    "id": "u-a1-039",
     "norsk": "en gang tilØ Kan du si det en gang til?",
     "lemma": "en gang tilØ Kan du si det en gang til?",
     "english": "one more time: Can you say that one more time?",
@@ -585,7 +585,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-044",
+    "id": "u-a1-040",
     "norsk": "å vite",
     "lemma": "å vite",
     "english": "to know",
@@ -600,7 +600,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-045",
+    "id": "u-a1-041",
     "norsk": "å komme til å",
     "lemma": "å komme til å",
     "english": "going to (future)",
@@ -615,7 +615,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-046",
+    "id": "u-a1-042",
     "norsk": "å gå på tur",
     "lemma": "å gå på tur",
     "english": "to go for a walk / hike",
@@ -630,7 +630,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-047",
+    "id": "u-a1-043",
     "norsk": "en tur",
     "lemma": "en tur",
     "english": "a trip",
@@ -645,7 +645,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-048",
+    "id": "u-a1-044",
     "norsk": "å bli med",
     "lemma": "å bli med",
     "english": "to come along",
@@ -660,7 +660,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-049",
+    "id": "u-a1-045",
     "norsk": "å pleie",
     "lemma": "å pleie",
     "english": "to usually do",
@@ -675,7 +675,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-050",
+    "id": "u-a1-046",
     "norsk": "å være glad i",
     "lemma": "å være glad i",
     "english": "to be fond of",
@@ -690,7 +690,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-051",
+    "id": "u-a1-047",
     "norsk": "å få besøk",
     "lemma": "å få besøk",
     "english": "to have visitors",
@@ -705,7 +705,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-052",
+    "id": "u-a1-048",
     "norsk": "å ha lyst til å",
     "lemma": "å ha lyst til å",
     "english": "to feel like doing",
@@ -720,7 +720,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-053",
+    "id": "u-a1-049",
     "norsk": "å ha tid til å",
     "lemma": "å ha tid til å",
     "english": "to have time to",
@@ -735,7 +735,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-056",
+    "id": "u-a1-050",
     "norsk": "både – og",
     "lemma": "både – og",
     "english": "both – and",
@@ -750,7 +750,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-057",
+    "id": "u-a1-051",
     "norsk": "blant annet",
     "lemma": "blant annet",
     "english": "among other things",
@@ -765,7 +765,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-058",
+    "id": "u-a1-052",
     "norsk": "Jeg er så trøtt. Jeg vil sove.",
     "lemma": "Jeg er så trøtt. Jeg vil sove.",
     "english": "I am so tired. I want to sleep.",
@@ -780,7 +780,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-059",
+    "id": "u-a1-053",
     "norsk": "Jeg er sulten. Jeg vil ha mat.",
     "lemma": "Jeg er sulten. Jeg vil ha mat.",
     "english": "I am hungry. I want food.",
@@ -795,7 +795,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-060",
+    "id": "u-a1-054",
     "norsk": "Jeg er tørst. Jeg vil ha melk.",
     "lemma": "Jeg er tørst. Jeg vil ha melk.",
     "english": "I am thirsty. I want milk.",
@@ -810,7 +810,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-061",
+    "id": "u-a1-055",
     "norsk": "De har dårlig tid. De har det travelt.",
     "lemma": "De har dårlig tid. De har det travelt.",
     "english": "They are short on time. They are in a hurry.",
@@ -825,7 +825,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-062",
+    "id": "u-a1-056",
     "norsk": "God morgen!",
     "lemma": "God morgen!",
     "english": "Good morning!",
@@ -840,7 +840,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-063",
+    "id": "u-a1-057",
     "norsk": "Vil du ha mer mat? Neitakk, jeg er mett.",
     "lemma": "Vil du ha mer mat? Neitakk, jeg er mett.",
     "english": "Do you want more food? No thank you, I am full.",
@@ -855,7 +855,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-064",
+    "id": "u-a1-058",
     "norsk": "Jeg har lyst på kaffe. Den er snart ferdig.",
     "lemma": "Jeg har lyst på kaffe. Den er snart ferdig.",
     "english": "I would like some coffee. It will be ready soon.",
@@ -870,7 +870,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-065",
+    "id": "u-a1-059",
     "norsk": "å ha tid til",
     "lemma": "å ha tid til",
     "english": "to have time to",
@@ -885,7 +885,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-066",
+    "id": "u-a1-060",
     "norsk": "å kle på",
     "lemma": "å kle på",
     "english": "to dress",
@@ -900,7 +900,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-067",
+    "id": "u-a1-061",
     "norsk": "Trenger dere hjelp? Nei takk, vi vil bare kikke litt.",
     "lemma": "Trenger dere hjelp? Nei takk, vi vil bare kikke litt.",
     "english": "Do you need help? No thank you, we just want to look around.",
@@ -915,7 +915,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-068",
+    "id": "u-a1-062",
     "norsk": "Hvor finner jeg sitron? Gå rett fram, og så til høyre.",
     "lemma": "Hvor finner jeg sitron? Gå rett fram, og så til høyre.",
     "english": "Where can I find lemons? Go straight ahead and then turn right.",
@@ -930,7 +930,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-069",
+    "id": "u-a1-063",
     "norsk": "Hvor finner jeg olivenolje?Ved siden av ketchup og sennep.",
     "lemma": "Hvor finner jeg olivenolje?Ved siden av ketchup og sennep.",
     "english": "Where can I find olive oil? Next to the ketchup and mustard.",
@@ -945,7 +945,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-070",
+    "id": "u-a1-064",
     "norsk": "Hva koster det? 99,90.",
     "lemma": "Hva koster det? 99,90.",
     "english": "How much does it cost? 99.90.",
@@ -960,7 +960,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-071",
+    "id": "u-a1-065",
     "norsk": "Tusen takk for hjelpen. Bare hyggelig.",
     "lemma": "Tusen takk for hjelpen. Bare hyggelig.",
     "english": "Thanks a lot for the help. You're welcome.",
@@ -975,7 +975,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-072",
+    "id": "u-a1-066",
     "norsk": "Vil du ha pose?,Ja takk. Nei takk.",
     "lemma": "Vil du ha pose?,Ja takk. Nei takk.",
     "english": "Would you like a bag? Yes please. No thank you.",
@@ -990,7 +990,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-073",
+    "id": "u-a1-067",
     "norsk": "Velkommen tilbake. Takk for det.",
     "lemma": "Velkommen tilbake. Takk for det.",
     "english": "Welcome back. Thank you.",
@@ -1005,7 +1005,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-074",
+    "id": "u-a1-068",
     "norsk": "Ha en fin dag. I like måte.",
     "lemma": "Ha en fin dag. I like måte.",
     "english": "Have a nice day. Likewise.",
@@ -1020,7 +1020,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-078",
+    "id": "u-a1-069",
     "norsk": "Hvorfor ikke?",
     "lemma": "Hvorfor ikke?",
     "english": "Why not?",
@@ -1035,7 +1035,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-079",
+    "id": "u-a1-070",
     "norsk": "Synes du det?",
     "lemma": "Synes du det?",
     "english": "Do you think so?",
@@ -1050,7 +1050,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-080",
+    "id": "u-a1-071",
     "norsk": "Hvordan blir været i morgen? Det blir regn. Det blir sol.",
     "lemma": "Hvordan blir været i morgen? Det blir regn. Det blir sol.",
     "english": "What will the weather be like tomorrow? It will rain. It will be sunny.",
@@ -1065,7 +1065,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-081",
+    "id": "u-a1-072",
     "norsk": "Hvordan lukter det? Det lukter godt.",
     "lemma": "Hvordan lukter det? Det lukter godt.",
     "english": "What does it smell like? It smells good.",
@@ -1080,7 +1080,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-082",
+    "id": "u-a1-073",
     "norsk": "Hvordan ser katten ut? Den er brun og veldig søt.",
     "lemma": "Hvordan ser katten ut? Den er brun og veldig søt.",
     "english": "What does the cat look like? It is brown and very cute.",
@@ -1095,7 +1095,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-083",
+    "id": "u-a1-074",
     "norsk": "Hvor stopper bussen? På den andre siden av gata.",
     "lemma": "Hvor stopper bussen? På den andre siden av gata.",
     "english": "Where does the bus stop? On the other side of the street.",
@@ -1110,7 +1110,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-084",
+    "id": "u-a1-075",
     "norsk": "Hvor ofte går den? Hvert kvarter.",
     "lemma": "Hvor ofte går den? Hvert kvarter.",
     "english": "How often does it go? Every quarter of an hour.",
@@ -1125,7 +1125,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-085",
+    "id": "u-a1-076",
     "norsk": "Hvor langt er det til sentrum? Tre kilometer.",
     "lemma": "Hvor langt er det til sentrum? Tre kilometer.",
     "english": "How far is it to the city centre? Three kilometres.",
@@ -1140,7 +1140,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-086",
+    "id": "u-a1-077",
     "norsk": "Hvor lang tid tar det? Det tar sju minutter med buss.",
     "lemma": "Hvor lang tid tar det? Det tar sju minutter med buss.",
     "english": "How long does it take? It takes seven minutes by bus.",
@@ -1155,7 +1155,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-087",
+    "id": "u-a1-078",
     "norsk": "Hva skal de feire? De skal feire 17. mai.",
     "lemma": "Hva skal de feire? De skal feire 17. mai.",
     "english": "What are they going to celebrate? They are going to celebrate the 17th of May.",
@@ -1170,7 +1170,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-088",
+    "id": "u-a1-079",
     "norsk": "Har hun dårlig råd? Ja, hun har lite penger.",
     "lemma": "Har hun dårlig råd? Ja, hun har lite penger.",
     "english": "Is she short of money? Yes, she has little money.",
@@ -1185,7 +1185,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-089",
+    "id": "u-a1-080",
     "norsk": "Hvor stor er boligen? Den er på 68 kvm.",
     "lemma": "Hvor stor er boligen? Den er på 68 kvm.",
     "english": "How big is the home? It is 68 square metres.",
@@ -1200,7 +1200,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-090",
+    "id": "u-a1-081",
     "norsk": "Trives du her? Ja, jeg liker meg godt her.",
     "lemma": "Trives du her? Ja, jeg liker meg godt her.",
     "english": "Do you like it here? Yes, I like it very much here.",
@@ -1215,7 +1215,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-091",
+    "id": "u-a1-082",
     "norsk": "Er det min skyld? Nei, det er det ikke.",
     "lemma": "Er det min skyld? Nei, det er det ikke.",
     "english": "Is it my fault? No, it is not.",
@@ -1230,7 +1230,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-092",
+    "id": "u-a1-083",
     "norsk": "Du må kjøre med én gang! Ja, nå kjører jeg.",
     "lemma": "Du må kjøre med én gang! Ja, nå kjører jeg.",
     "english": "You must drive right away! Yes, I am driving now.",
@@ -1245,7 +1245,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-095",
+    "id": "u-a1-084",
     "norsk": "den første",
     "lemma": "den første",
     "english": "the first",
@@ -1260,7 +1260,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-096",
+    "id": "u-a1-085",
     "norsk": "for – siden",
     "lemma": "for – siden",
     "english": "ago",
@@ -1275,7 +1275,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-097",
+    "id": "u-a1-086",
     "norsk": "å sette seg",
     "lemma": "å sette seg",
     "english": "to sit down",
@@ -1290,7 +1290,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-098",
+    "id": "u-a1-087",
     "norsk": "å bli forelsket",
     "lemma": "å bli forelsket",
     "english": "to fall in love",
@@ -1305,7 +1305,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-099",
+    "id": "u-a1-088",
     "norsk": "å bli gravid",
     "lemma": "å bli gravid",
     "english": "to become pregnant",
@@ -1320,7 +1320,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-100",
+    "id": "u-a1-089",
     "norsk": "å gifte seg",
     "lemma": "å gifte seg",
     "english": "to get married",
@@ -1335,7 +1335,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-101",
+    "id": "u-a1-090",
     "norsk": "å leve av noe",
     "lemma": "å leve av noe",
     "english": "to make a living from something",
@@ -1350,7 +1350,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-102",
+    "id": "u-a1-091",
     "norsk": "å bli kjent med",
     "lemma": "å bli kjent med",
     "english": "to get to know",
@@ -1365,7 +1365,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-103",
+    "id": "u-a1-092",
     "norsk": "en venn av meg",
     "lemma": "en venn av meg",
     "english": "a friend of mine",
@@ -1380,7 +1380,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-105",
+    "id": "u-a1-093",
     "norsk": "Er det sant!",
     "lemma": "Er det sant!",
     "english": "Is that true! / Really!",
@@ -1395,7 +1395,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-106",
+    "id": "u-a1-094",
     "norsk": "Så spennende!",
     "lemma": "Så spennende!",
     "english": "How exciting!",
@@ -1410,7 +1410,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-107",
+    "id": "u-a1-095",
     "norsk": "Stakkars deg!",
     "lemma": "Stakkars deg!",
     "english": "Poor you!",
@@ -1425,7 +1425,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-108",
+    "id": "u-a1-096",
     "norsk": "for å",
     "lemma": "for å",
     "english": "in order to",
@@ -1440,7 +1440,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-110",
+    "id": "u-a1-097",
     "norsk": "si ifra",
     "lemma": "si ifra",
     "english": "to let someone know, to speak up",
@@ -1455,7 +1455,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-111",
+    "id": "u-a1-098",
     "norsk": "hoppe over",
     "lemma": "hoppe over",
     "english": "to skip",
@@ -1470,7 +1470,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-112",
+    "id": "u-a1-099",
     "norsk": "ta imot",
     "lemma": "ta imot",
     "english": "to receive, to catch",
@@ -1485,7 +1485,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-113",
+    "id": "u-a1-100",
     "norsk": "reise seg",
     "lemma": "reise seg",
     "english": "to get up, to stand up",
@@ -1500,7 +1500,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-a1-114",
+    "id": "u-a1-101",
     "norsk": "runde av",
     "lemma": "runde av",
     "english": "to finish, to round off",
@@ -1510,6 +1510,307 @@
     "example_english": "Let us finish up for today.",
     "example_ukrainian": "Давайте завершимо на сьогодні.",
     "example_spanish": "Vamos a terminar por hoy.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-102",
+    "norsk": "god morgen",
+    "lemma": "god morgen",
+    "english": "good morning",
+    "ukrainian": "доброго ранку",
+    "spanish": "buenos días",
+    "example": "God morgen! Vil du ha kaffe?",
+    "example_english": "Good morning! Do you want coffee?",
+    "example_ukrainian": "Доброго ранку! Хочеш кави?",
+    "example_spanish": "¡Buenos días! ¿Quieres café?",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-103",
+    "norsk": "god helg",
+    "lemma": "god helg",
+    "english": "Have a good weekend",
+    "ukrainian": "гарних вихідних",
+    "spanish": "buen fin de semana",
+    "example": "God helg, ses på mandag!",
+    "example_english": "Have a good weekend, see you on Monday!",
+    "example_ukrainian": "Гарних вихідних, побачимося в понеділок!",
+    "example_spanish": "¡Buen fin de semana, nos vemos el lunes!",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-104",
+    "norsk": "god kveld",
+    "lemma": "god kveld",
+    "english": "good evening",
+    "ukrainian": "добрий вечір",
+    "spanish": "buenas tardes",
+    "example": "God kveld! Kom inn.",
+    "example_english": "Good evening! Come in.",
+    "example_ukrainian": "Добрий вечір! Заходьте.",
+    "example_spanish": "¡Buenas tardes! Pasa, entra.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-105",
+    "norsk": "god natt",
+    "lemma": "god natt",
+    "english": "good night",
+    "ukrainian": "на добраніч",
+    "spanish": "buenas noches",
+    "example": "God natt! Sov godt.",
+    "example_english": "Good night! Sleep well.",
+    "example_ukrainian": "На добраніч! Солодких снів.",
+    "example_spanish": "¡Buenas noches! Que duermas bien.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-106",
+    "norsk": "ha det bra",
+    "lemma": "ha det bra",
+    "english": "goodbye / take care",
+    "ukrainian": "бувай / бережи себе",
+    "spanish": "adiós / cuídate",
+    "example": "Ha det bra! Vi ses i morgen.",
+    "example_english": "Take care! See you tomorrow.",
+    "example_ukrainian": "Бувай! Побачимося завтра.",
+    "example_spanish": "¡Cuídate! Nos vemos mañana.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-107",
+    "norsk": "ha det",
+    "lemma": "ha det",
+    "english": "bye",
+    "ukrainian": "бувай / па",
+    "spanish": "adiós / chao",
+    "example": "Ha det! Vi snakkes.",
+    "example_english": "Bye! Talk to you later.",
+    "example_ukrainian": "Па! Поговоримо пізніше.",
+    "example_spanish": "¡Adiós! Hablamos pronto.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-108",
+    "norsk": "vær så snill",
+    "lemma": "vær så snill",
+    "english": "please",
+    "ukrainian": "будь ласка",
+    "spanish": "por favor",
+    "example": "Vær så snill, kan du hjelpe meg?",
+    "example_english": "Please, can you help me?",
+    "example_ukrainian": "Будь ласка, чи можеш ти мені допомогти?",
+    "example_spanish": "Por favor, ¿me puedes ayudar?",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-109",
+    "norsk": "hvordan har du det?",
+    "lemma": "hvordan har du det?",
+    "english": "How are you?",
+    "ukrainian": "Як справи? / Як ти поживаєш?",
+    "spanish": "¿Cómo estás?",
+    "example": "Hei! Hvordan har du det?",
+    "example_english": "Hi! How are you doing?",
+    "example_ukrainian": "Привіт! Як справи?",
+    "example_spanish": "¡Hola! ¿Cómo estás?",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-110",
+    "norsk": "jeg har det bra",
+    "lemma": "jeg har det bra",
+    "english": "I'm fine",
+    "ukrainian": "У мене все добре / Я почуваюся добре",
+    "spanish": "Estoy bien",
+    "example": "Takk, jeg har det bra.",
+    "example_english": "I'm fine, thank you.",
+    "example_ukrainian": "Дякую, у мене все добре.",
+    "example_spanish": "Gracias, estoy bien.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-111",
+    "norsk": "Hva heter du?",
+    "lemma": "Hva heter du?",
+    "english": "What is your name?",
+    "ukrainian": "Як тебе звати?",
+    "spanish": "¿Cómo te llamas?",
+    "example": "Hva heter du? Jeg heter Lars.",
+    "example_english": "What is your name? My name is Lars.",
+    "example_ukrainian": "Як тебе звати? Мене звати Ларс.",
+    "example_spanish": "¿Cómo te llamas? Yo me llamo Lars.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-112",
+    "norsk": "hyggelig å møte deg",
+    "lemma": "hyggelig å møte deg",
+    "english": "nice to meet you",
+    "ukrainian": "приємно познайомитися",
+    "spanish": "mucho gusto",
+    "example": "Hyggelig å møte deg, Lars!",
+    "example_english": "Nice to meet you, Lars!",
+    "example_ukrainian": "Приємно познайомитися, Ларсе!",
+    "example_spanish": "¡Mucho gusto, Lars!",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-113",
+    "norsk": "på gjensyn",
+    "lemma": "på gjensyn",
+    "english": "goodbye (formal)",
+    "ukrainian": "до побачення (офіційно)",
+    "spanish": "hasta la próxima",
+    "example": "Takk for i dag. På gjensyn!",
+    "example_english": "Thank you for today. Goodbye!",
+    "example_ukrainian": "Дякую за сьогодні. До побачення!",
+    "example_spanish": "Gracias por hoy. ¡Hasta la próxima!",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-114",
+    "norsk": "Hvor er du fra?",
+    "lemma": "Hvor er du fra?",
+    "english": "Where are you from?",
+    "ukrainian": "Звідки ти?",
+    "spanish": "¿De dónde eres?",
+    "example": "Hei! Hvor kommer du fra?",
+    "example_english": "Hi! Where are you from?",
+    "example_ukrainian": "Привіт! Звідки ти?",
+    "example_spanish": "¡Hola! ¿De dónde eres?",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-115",
+    "norsk": "Jeg kommer fra ...",
+    "lemma": "Jeg kommer fra ...",
+    "english": "I am from ...",
+    "ukrainian": "Я з ...",
+    "spanish": "Soy de ...",
+    "example": "Jeg er fra Japan. Og du?",
+    "example_english": "I am from Japan. And you?",
+    "example_ukrainian": "Я з Японії. А ти?",
+    "example_spanish": "Soy de Japón. ¿Y tú?",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-116",
+    "norsk": "Snakker du norsk?",
+    "lemma": "Snakker du norsk?",
+    "english": "Do you speak Norwegian?",
+    "ukrainian": "Ти розмовляєш норвезькою?",
+    "spanish": "¿Hablas noruego?",
+    "example": "Snakker du norsk? Litt.",
+    "example_english": "Do you speak Norwegian? A little.",
+    "example_ukrainian": "Ти розмовляєш норвезькою? Трохи.",
+    "example_spanish": "¿Hablas noruego? Un poco.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-117",
+    "norsk": "Kan du gjenta det?",
+    "lemma": "Kan du gjenta det?",
+    "english": "Can you repeat that?",
+    "ukrainian": "Можеш повторити?",
+    "spanish": "¿Puedes repetir eso?",
+    "example": "Kan du gjenta det, vær så snill?",
+    "example_english": "Can you repeat that, please?",
+    "example_ukrainian": "Можеш повторити, будь ласка?",
+    "example_spanish": "¿Puedes repetir eso, por favor?",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-118",
+    "norsk": "til fots",
+    "lemma": "til fots",
+    "english": "on foot",
+    "ukrainian": "пішки",
+    "spanish": "a pie",
+    "example": "Jeg går til fots til butikken.",
+    "example_english": "I go to the shop on foot.",
+    "example_ukrainian": "Я йду до магазину пішки.",
+    "example_spanish": "Voy a pie a la tienda.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-119",
+    "norsk": "til høyre",
+    "lemma": "til høyre",
+    "english": "to the right",
+    "ukrainian": "праворуч",
+    "spanish": "a la derecha",
+    "example": "Ta til høyre ved lyskrysset.",
+    "example_english": "Turn right at the traffic lights.",
+    "example_ukrainian": "Поверніть праворуч на світлофорі.",
+    "example_spanish": "Gira a la derecha en el semáforo.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-120",
+    "norsk": "til venstre",
+    "lemma": "til venstre",
+    "english": "to the left",
+    "ukrainian": "ліворуч",
+    "spanish": "a la izquierda",
+    "example": "Ta til venstre etter butikken.",
+    "example_english": "Turn left after the shop.",
+    "example_ukrainian": "Поверніть ліворуч після магазину.",
+    "example_spanish": "Gira a la izquierda después de la tienda.",
+    "level": "A1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-a1-121",
+    "norsk": "for eksempel",
+    "lemma": "for eksempel",
+    "english": "for example",
+    "ukrainian": "наприклад",
+    "spanish": "por ejemplo",
+    "example": "For eksempel kan du bruke denne metoden.",
+    "example_english": "For example, you can use this method.",
+    "example_ukrainian": "Наприклад, ти можеш використати цей метод.",
+    "example_spanish": "Por ejemplo, puedes usar este método.",
+    "definition": "Brukes når man gir et konkret eksempel for å forklare eller vise noe bedre.",
     "level": "A1",
     "category": "uttrykk",
     "part": "phrase"
