@@ -1025,7 +1025,9 @@
 
   <!-- Example / Word section -->
   {#if !completed && current}
-    <div class="mt-3 w-full max-w-lg rounded-lg border border-gray-200 bg-white pt-4 pb-3 dark:border-white/10 dark:bg-indigo-950/60">
+    <div
+      class="mt-3 w-full max-w-lg rounded-lg border border-gray-200 bg-white pt-4 pb-3 dark:border-white/10 dark:bg-indigo-950/60"
+    >
       <p class="px-5 text-base text-gray-700 italic dark:text-gray-300">
         {currentExample}
       </p>
