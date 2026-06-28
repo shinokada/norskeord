@@ -4,7 +4,7 @@
  *
  * Normalises the `norsk` field in vocab-*.json files to the agreed format:
  *
- *   noun       → "<lemma> (en)" or "<lemma> (et)"   e.g. "hus (et)", "bil (en)"
+ *   noun       → "<lemma> (en)", "<lemma> (et)", or "<lemma> (en/ei)"  e.g. "hus (et)", "bil (en)", "ferje (en/ei)"
  *   verb       → "å <lemma>"                         e.g. "å få", "å henge"
  *   adjective  → <lemma> as-is                       e.g. "glad"
  *   other      → <lemma> as-is (no change)
@@ -88,18 +88,31 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-/** True if norsk already matches the expected format for the given part. */
+/**
+ * True if norsk already matches the expected format for the given part.
+ * Mirrors the rules in data-rules/vocab-and-uttrykk.md:
+ *   noun        → "<word> (en)", "<word> (et)", or "<word> (en/ei)"
+ *                 (en/ei) is valid Bokmål for feminine nouns that accept both
+ *                 the common and feminine article, e.g. "ferje (en/ei)".
+ *   verb        → "å <lemma>"
+ *   all others  → identical to lemma (adjective, adverb, conjunction,
+ *                 preposition, pronoun, numeral, interjection, phrase)
+ */
 function isNormalised(norsk, lemma, part) {
   if (part === 'verb') return norsk === `å ${lemma}`;
-  if (part === 'noun') return /^.+\s+\((en|et)\)$/.test(norsk);
-  // adjective / phrase / interjection / other → norsk should equal lemma
+  if (part === 'noun') return /^.+\s+\((en|et|en\/ei|ei)\)$/.test(norsk);
+  // Every other part: norsk should equal lemma exactly
   return norsk === lemma;
 }
 
-/** Build the normalised norsk value for non-noun parts (no API needed). */
+/**
+ * Build the normalised norsk value for non-noun parts (no API needed).
+ *   verb        → "å <lemma>"
+ *   all others  → lemma as-is (adjective, adverb, conjunction, preposition,
+ *                 pronoun, numeral, interjection, phrase)
+ */
 function normaliseWithoutApi(lemma, part) {
   if (part === 'verb') return `å ${lemma}`;
-  // adjective and everything else: use lemma as-is
   return lemma;
 }
 
@@ -112,9 +125,13 @@ async function fetchNounGenders(nouns) {
   const numbered = nouns.map((n, i) => `${i + 1}. ${n.lemma}`).join('\n');
 
   const prompt = `You are a Norwegian language expert.
-For each Norwegian noun listed below, give its grammatical gender as either "en" (common/masculine/feminine) or "et" (neuter).
+For each Norwegian noun listed below, give its grammatical gender using one of these values:
+- "en"    — common gender only (hankjønn or felleskjønn, e.g. "bil", "hund")
+- "et"    — neuter only (intetkjønn, e.g. "hus", "barn")
+- "en/ei" — dual gender: accepted as both common AND feminine in Bokmål (e.g. "ferje", "skam", "jente")
+
 Respond ONLY with a JSON object mapping the 1-based number to the article, for example:
-{"1":"en","2":"et","3":"en"}
+{"1":"en","2":"et","3":"en/ei"}
 Do not include any other text, explanation, or markdown.
 
 Nouns:
@@ -154,7 +171,7 @@ ${numbered}`;
   const result = new Map();
   nouns.forEach((n, i) => {
     const article = parsed[String(i + 1)];
-    result.set(n.id, article === 'en' || article === 'et' ? article : null);
+    result.set(n.id, article === 'en' || article === 'et' || article === 'en/ei' ? article : null);
   });
   return result;
 }
@@ -191,11 +208,14 @@ async function processFile(filename) {
     }
 
     if (part === 'noun') {
-      // If norsk already has an article prefix ("en X" / "et X"), extract the
-      // gender directly — no API call needed.
+      // ── Legacy format detection ──────────────────────────────────────────
+      // Older data sometimes used "en hus" prefix or "hus/et" slash notation
+      // before the canonical "hus (et)" format was established. These should
+      // no longer appear in the data, but the detection is kept here as a
+      // safety net to avoid sending them to the API unnecessarily.
       const prefixMatch = norsk.match(/^(en|et)\s+(.+)$/);
-      // B2 slash notation: "lemma/en", "lemma/et", or "lemma/n" (n = common)
       const slashMatch = norsk.match(/^.+\/(en|et|n)$/);
+      // ────────────────────────────────────────────────────────────────────
       if (prefixMatch) {
         const article = prefixMatch[1];
         changes.set(id, `${lemma} (${article})`);

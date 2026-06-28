@@ -127,8 +127,8 @@ export const actions: Actions = {
     const show_example = data.get('show_example') === 'true';
 
     const validLevels = ['A1', 'A2', 'B1', 'B2', 'C'];
-    const validLanguages = ['en', 'nb', 'es', 'uk'];
-    const validFlashcardLanguages = ['english', 'spanish', 'ukrainian'];
+    const validLanguages = ['en', 'nb', 'es', 'uk', 'de'];
+    const validFlashcardLanguages = ['english', 'spanish', 'ukrainian', 'german'];
     const validDirections = ['l1_l2', 'l2_l1', 'def_l1'];
     const validCardTypes = ['word', 'phrase'];
     const validSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5];

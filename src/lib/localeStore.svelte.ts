@@ -24,7 +24,7 @@ function createLocaleStore() {
   function set(next: Locale, options?: { reload?: boolean }) {
     current = next;
     localStorage.setItem('locale', next);
-    setLocale(next, { reload: options?.reload ?? false });
+    setLocale(next as Parameters<typeof setLocale>[0], { reload: options?.reload ?? false });
   }
 
   function init() {
