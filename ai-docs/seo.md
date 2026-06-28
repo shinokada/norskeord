@@ -1,10 +1,6 @@
-Now I have a thorough picture of the project. Let me check the analytics setup and blog structure quickly.Good — I now have a comprehensive view of the project. Here's a thorough breakdown of what to do next for both discoverability and analytics.
+# Discoverability for Norwegian Language Learners
 
----
-
-## Discoverability for Norwegian Language Learners
-
-### 1. Submit to Google Search Console (if not done yet) ✅ Done
+## 1. Submit to Google Search Console (if not done yet) ✅ Done
 
 Your sitemap at `https://norskeord.no/sitemap.xml` is correctly wired up via `super-sitemap` and referenced in `robots.txt`. The next step is to:
 
@@ -12,7 +8,7 @@ Your sitemap at `https://norskeord.no/sitemap.xml` is correctly wired up via `su
 - Submit the sitemap URL manually
 - Check for crawl errors, especially for the `[level]/[category]` routes
 
-### 2. Add Structured Data to Blog Posts ✅ Done
+## 2. Add Structured Data to Blog Posts ✅ Done
 
 Your homepage has `WebSite` and `LearningResource` schemas — great. But your blog posts at `/blog/[slug]` don't appear to have per-page structured data. Each post should include an `Article` schema with `author`, `datePublished`, `dateModified`, and `inLanguage: "nb"`. This helps Google surface individual blog posts in search results with rich snippets.
 
@@ -32,11 +28,11 @@ const articleSchema = {
 };
 ```
 
-### 3. Add Structured Data to Flashcard Pages ✅ Done
+## 3. Add Structured Data to Flashcard Pages ✅ Done
 
 Each `[level]/[category]` page is a goldmine for SEO but currently has no JSON-LD beyond the meta tags. Add a `Course` or `LearningResource` schema per page. The `pageMetaTags` object is already being built in `+page.server.ts` — add the schema JSON alongside it and render it in the page's `<svelte:head>`.
 
-### 4. Improve hreflang Coverage ✅ Done
+## 4. Improve hreflang Coverage ✅ Done
 
 You already emit `hreflang` links in `+layout.svelte` using `paraglide`. Confirm that:
 
@@ -44,33 +40,33 @@ You already emit `hreflang` links in `+layout.svelte` using `paraglide`. Confirm
 - The `x-default` points to the English URL (already done)
 - The sitemap also includes `<xhtml:link>` alternate tags for multilingual URLs — `super-sitemap` supports this via its `additionalPaths` or `alternateRefs` option
 
-### 5. Expand Keyword Targeting in Page Meta ✅ Done
+## 5. Expand Keyword Targeting in Page Meta ✅ Done
 
 The layout-level `KEYWORDS` in `+layout.server.ts` is decent but generic. For individual flashcard pages, the `pageDescription` pattern is good (`Learn Norwegian ${categoryName} words with audio flashcards at ${levelUpper} level`), but you could also add per-page `keywords` that include the category slug and level. Norwegian learners search very specifically — e.g. "Norwegian A2 shopping vocabulary" or "norskprøven B2 words".
 
-### 6. Add an OpenGraph Image for Each Blog Post ✅ Done
+## 6. Add an OpenGraph Image for Each Blog Post ✅ Done
 
 Blog slugs currently fall back to the layout's `metaImg`. Setting a per-post OG image (even a generated one like you use for vocab pages via `open-graph-vercel`) would significantly improve click-through rates when posts are shared on social media.
 
-### 7. Internal Linking from Blog Posts to Flashcard Decks
+## 7. Internal Linking from Blog Posts to Flashcard Decks
 
 If your blog posts discuss vocabulary topics (e.g. "How to use Norwegian verbs") they should link to the corresponding `/b1/verbs` or similar deck. This passes link equity to your flashcard pages and keeps users engaged. It doesn't look like this is systematically done yet.
 
-### 8. Consider a `/resources` Page Optimised for "learn Norwegian" Queries
+## 8. Consider a `/resources` Page Optimised for "learn Norwegian" Queries ✅ Done
 
 You have a `/resources` route — make sure it's in the sitemap (it currently doesn't appear to be excluded, which is good) and that it has strong keyword-rich content targeting "free Norwegian learning resources", "Norskprøven preparation", etc.
 
 ---
 
-## Analytics
+# Analytics
 
-### What You Have
+## What You Have
 
 You're using **Runatics** (`<Runatics {analyticsId} />`), a privacy-friendly analytics tool. The `ANALYTICS_ID_LANGUAGE_APP` is loaded from a private env var and passed through the layout server load — that's a clean, correct setup.
 
-### What to Check and Add
+## What to Check and Add
 
-**Verify the analytics ID is set in production.** In Vercel, confirm `ANALYTICS_ID_LANGUAGE_APP` is set as an environment variable for the Production environment. If it's missing, `<Runatics>` will silently not fire.
+**Verify the analytics ID is set in production.** In Vercel, confirm `ANALYTICS_ID_LANGUAGE_APP` is set as an environment variable for the Production environment. If it's missing, `<Runatics>` will silently not fire. ✅ Done
 
 **Track key conversion events.** Runatics supports custom events. You should instrument:
 
@@ -88,7 +84,7 @@ These can be fired with `runatics.event('event-name')` or however the Runatics A
 
 ---
 
-### Quick Priority List
+## Quick Priority List
 
 | Priority  | Action                                                           |
 | --------- | ---------------------------------------------------------------- |

@@ -1,0 +1,13 @@
+
+=== normalise-norsk-field.mjs ===
+Mode: DRY RUN  |  Files: vocab-a2.json
+Noun batch size: 40
+
+
+────────────────────────────────────────────────────────────
+📄  vocab-a2.json  (342 entries)
+   Already OK: 342  |  Verbs/adj to fix: 0  |  Nouns needing gender lookup: 0
+   ✅  Nothing to change.
+
+=== Done ===
+

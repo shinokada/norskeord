@@ -10,6 +10,11 @@
  *   node scripts/translate-messages.mjs --language ukrainian --batch 25
  *   node scripts/translate-messages.mjs --language spanish --dry-run
  *   node scripts/translate-messages.mjs --language spanish --force
+ *   node scripts/translate-messages.mjs --language german
+ *   node scripts/translate-messages.mjs --language french    # → fr.json
+ *   node scripts/translate-messages.mjs --language polish    # → pl.json
+ *   node scripts/translate-messages.mjs --language turkish   # → tr.json
+ *   node scripts/translate-messages.mjs --language dutch     # → nl.json
  *
  * Options:
  *   --language  Target language key (required). Must be a key in
@@ -155,6 +160,7 @@ Rules:
 - Keep emoji, arrows (→, ←), and standalone symbols as-is unless the target language conventionally uses a different mark for that purpose.
 - Do NOT translate brand/product names or proper nouns: "Norskeord", "Norskprøven", "Plus", "Norsktrening", "Folkeuniversitetet".
 - Match the register of the English source: casual, friendly app copy — not formal or stiff.
+- CRITICAL: Do NOT use typographic or curly quote characters anywhere in your output (no „ " " « »). These characters break JSON parsing because they look like string delimiters. If you need to quote a word or phrase within a translation, use plain ASCII single quotes (') instead — for example: write 'Heute fällig' not „Heute fällig".
 - Respond ONLY with a single JSON object mapping each input key to its translated string. No markdown formatting, no preamble, no extra commentary, and no missing or extra keys.`;
 
   const userPrompt = `Translate these ${batchPairs.length} UI strings into ${languageMeta.name}:\n\n{\n${itemsBlock}\n}`;

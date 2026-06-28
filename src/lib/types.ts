@@ -10,6 +10,7 @@ export type PartOfSpeech =
   | 'adjective'
   | 'adverb'
   | 'pronoun'
+  | 'numeral'
   | 'preposition'
   | 'conjunction'
   | 'interjection'
@@ -38,10 +39,12 @@ export interface VocabEntry {
   english: string;
   spanish?: string;
   ukrainian?: string;
+  german?: string;
   example: string;
   example_english: string;
   example_spanish?: string;
   example_ukrainian?: string;
+  example_german?: string;
   definition?: string; //monolingual Norwegian definition of the word (B1+)
   level: CEFRLevel;
   category: Category;
