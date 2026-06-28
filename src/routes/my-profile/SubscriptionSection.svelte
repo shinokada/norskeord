@@ -59,12 +59,10 @@
 
   // ── Push reminder toggle ─────────────────────────────────────────────────────
   let dailyReminder = $derived.by(() => profile?.daily_reminder ?? false);
-  let reminderLoading = $state(false);
   let reminderError = $state('');
 
   async function handleReminderToggle() {
     reminderError = '';
-    reminderLoading = true;
     const turningOn = !dailyReminder;
     try {
       if (turningOn) {
@@ -81,21 +79,15 @@
     } catch (err) {
       console.error('[push] toggle failed:', err);
       reminderError = 'Something went wrong. Please try again.';
-    } finally {
-      reminderLoading = false;
     }
   }
 
   // ── Email reminder toggle ────────────────────────────────────────────────────
   let emailReminder = $derived.by(() => profile?.email_reminder ?? false);
-  let emailReminderLoading = $state(false);
   let emailReminderError = $state('');
-  let emailReminderSaved = $state(false);
 
   async function handleEmailReminderToggle() {
     emailReminderError = '';
-    emailReminderLoading = true;
-    emailReminderSaved = false;
     const turningOn = !emailReminder;
     try {
       const res = await fetch('/api/profile/email-reminder', {
@@ -108,13 +100,9 @@
         return;
       }
       emailReminder = turningOn;
-      emailReminderSaved = true;
-      setTimeout(() => (emailReminderSaved = false), 2500);
     } catch (err) {
       console.error('[email-reminder] toggle failed:', err);
       emailReminderError = 'Something went wrong. Please try again.';
-    } finally {
-      emailReminderLoading = false;
     }
   }
 </script>

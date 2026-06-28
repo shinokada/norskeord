@@ -33,7 +33,7 @@
     { id: 'A2', href: '/learn/a2', label: () => m.home_level_a2(), color: 'teal' },
     { id: 'B1', href: '/learn/b1', label: () => m.home_level_b1(), color: 'blue' },
     { id: 'B2', href: '/learn/b2', label: () => m.home_level_b2(), color: 'indigo' },
-    { id: 'C',  href: '/learn/c',  label: () => m.home_level_c(),  color: 'purple' }
+    { id: 'C', href: '/learn/c', label: () => m.home_level_c(), color: 'purple' }
   ] as const;
 
   type BadgeColor = 'green' | 'teal' | 'blue' | 'indigo' | 'purple';
@@ -74,9 +74,9 @@
 
   // Feature showcase cards
   const featureCards = [
-    { icon: '📖', titleFn: () => m.home_features_vocab_title(),     href: '/learn/a1' },
-    { icon: '🧩', titleFn: () => m.home_features_grammar_title(),   href: '/grammar'  },
-    { icon: '🎯', titleFn: () => m.home_features_quiz_title(),      href: '/quiz'     },
+    { icon: '📖', titleFn: () => m.home_features_vocab_title(), href: '/learn/a1' },
+    { icon: '🧩', titleFn: () => m.home_features_grammar_title(), href: '/grammar' },
+    { icon: '🎯', titleFn: () => m.home_features_quiz_title(), href: '/quiz' },
     { icon: '📝', titleFn: () => m.home_features_norskproven_title(), href: '/norskproven' }
   ];
 
@@ -156,7 +156,6 @@
   ></div>
 
   <div class="relative mx-auto max-w-2xl">
-
     <h1 class="mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
       {m.home_hero_heading()} <span class="text-indigo-300">{m.home_hero_heading_highlight()}</span>
     </h1>
