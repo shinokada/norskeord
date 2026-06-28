@@ -1,0 +1,166 @@
+
+──────────────────────────────────────────────────
+  VOCAB
+──────────────────────────────────────────────────
+
+  A1  (457 total)
+    actions                          20
+    adjectives                       29
+    animals                          24
+    body                             21
+    classroom                        24
+    clothes                          25
+    colors                           20
+    days-months                      26
+    family                           25
+    feelings                         23
+    food                             24
+    greetings                        11
+    home                             25
+    household-items                  23
+    numbers                          28
+    places                           20
+    pronouns-and-questions           26
+    transportation                   19
+    verbs                            24
+    weather                          20
+
+  A2  (342 total)
+    body                             18
+    clothing                          8
+    communication                    19
+    cooking                          21
+    descriptive-adjectives           14
+    directions                       16
+    environment                       7
+    health                           25
+    hobbies                          14
+    house-chores                     21
+    money                            13
+    nature                           24
+    occupations                      24
+    shopping                         20
+    social-life                      26
+    sports                           22
+    technology                       16
+    time                             18
+    transport                         5
+    weather                          11
+
+  B1  (1169 total)
+    accommodation                    23
+    arts-culture                     26
+    city-life                        26
+    communication-skills             65
+    cooking                          30
+    culture                          39
+    economics                        21
+    education                        41
+    environment                      29
+    expressing-opinions              69
+    family                           25
+    finance                          29
+    fitness                          29
+    health                           48
+    healthcare                       29
+    journalism                       16
+    language-learning                35
+    media                            27
+    mental-wellbeing                 52
+    personal-growth                  59
+    politics                         48
+    reasoning                        42
+    relationships                    33
+    science-nature                   48
+    society                          81
+    sustainability                   27
+    technology                       28
+    traditions                       29
+    travel                           32
+    urban-life                       12
+    work                             46
+    workplace                        25
+
+  B2  (1674 total)
+    abstract-nouns                   67
+    academic-language                73
+    advanced-adjectives             122
+    advanced-verbs                   93
+    argumentation                    48
+    arts                             31
+    business                         36
+    communication                    57
+    culture                          54
+    discourse-markers                22
+    economics                        53
+    education                        52
+    emotions                         67
+    environment                      75
+    geography                        54
+    global-issues                    44
+    history                          46
+    language                         46
+    law                              95
+    literature                       29
+    media                            48
+    medicine                         39
+    philosophy                       25
+    politics                         84
+    psychology                       43
+    relationships                    45
+    religion                         22
+    science                          33
+    social-issues                    67
+    technology                       51
+    work-career                      53
+
+  C  (230 total)
+    abstract-concepts                10
+    academic                         14
+    advanced-business-strategy        5
+    advanced-law-justice              4
+    archaic                          20
+    architecture-design               4
+    climate-environment-policy        4
+    complex-emotions                 21
+    diplomacy-international           4
+    existential-abstract              4
+    finance-economics                 4
+    formal-writing                   10
+    highly-formal                    19
+    literary                         17
+    media-journalism                  2
+    neuroscience-cognition            6
+    philosophy                       20
+    politics-democracy                4
+    professional                     15
+    psychology-advanced               2
+    rhetoric                         17
+    sociology-anthropology            3
+    technical                        21
+
+  ──────────────────────────────────────────────
+  Grand total: 3872
+
+──────────────────────────────────────────────────
+  UTTRYKK
+──────────────────────────────────────────────────
+
+  A1  (126 total)
+    uttrykk                         126
+
+  A2  (159 total)
+    uttrykk                         159
+
+  B1  (321 total)
+    uttrykk                         321
+
+  B2  (799 total)
+    uttrykk                         799
+
+  C  (44 total)
+    uttrykk                          44
+
+  ──────────────────────────────────────────────
+  Grand total: 1449
+
