@@ -15,7 +15,12 @@
  *   6. norsk field  — must be present and non-empty
  *   7. lemma field  — must be present and non-empty
  *   8. Required fields (norsk, english, example, example_english, level, category, part)
- *   9. Preview cross-check — entries in preview should also exist in full file (by norsk)
+ *   9. Language consistency — for each translation language present (ukrainian, spanish,
+ *      german, romanian, …), the matching example_{lang} field must also be present and
+ *      non-empty, and vice-versa.
+ *  10. Translation coverage — warns if an entry is missing a language that other entries
+ *      in the same file have (so newly added languages get flagged automatically).
+ *  11. Preview cross-check — entries in preview should also exist in full file (by norsk)
  *
  * Usage:
  *   node scripts/check-uttrykk.mjs            # check all uttrykk files
@@ -48,6 +53,11 @@ const REQUIRED_FIELDS = [
   'part'
 ];
 const VALID_CATEGORIES = new Set(['uttrykk', 'uttrykk-preview']);
+
+// All translation languages the app supports. Entries may not have all of these
+// (e.g. a file that hasn't been translated yet), but if a language field is
+// present then its example_{lang} counterpart must also be present, and vice-versa.
+const KNOWN_LANGUAGES = ['ukrainian', 'spanish', 'german', 'romanian', 'french', 'polish', 'arabic', 'turkish', 'dutch', 'italian'];
 
 // ── Validators ────────────────────────────────────────────────────────────────
 
@@ -151,6 +161,19 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds) {
       warns.push(`lemma field is missing or empty`);
     }
 
+    // Language consistency: for each translation language present on this entry,
+    // its example_{lang} must also be present and non-empty, and vice-versa.
+    for (const lang of KNOWN_LANGUAGES) {
+      const hasTranslation = entry[lang] != null && entry[lang] !== '';
+      const hasExample = entry[`example_${lang}`] != null && entry[`example_${lang}`] !== '';
+      if (hasTranslation && !hasExample) {
+        errs.push(`has "${lang}" translation but missing "example_${lang}"`);
+      }
+      if (!hasTranslation && hasExample) {
+        warns.push(`has "example_${lang}" but missing "${lang}" translation`);
+      }
+    }
+
     if (errs.length > 0) {
       fileErrors += errs.length;
       for (const e of errs) console.log(`  ❌  ${loc}: ${e}`);
@@ -158,6 +181,27 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds) {
     if (warns.length > 0) {
       fileWarnings += warns.length;
       for (const w of warns) console.log(`  ⚠️   ${loc}: ${w}`);
+    }
+  }
+
+  // Translation coverage: find which languages appear in ANY entry in this file,
+  // then warn for entries that are missing a language the file otherwise has.
+  const langsInFile = new Set();
+  for (const e of entries) {
+    for (const lang of KNOWN_LANGUAGES) {
+      if (e[lang] != null && e[lang] !== '') langsInFile.add(lang);
+    }
+  }
+  if (langsInFile.size > 0) {
+    for (let i = 0; i < entries.length; i++) {
+      const entry = entries[i];
+      const loc = `[${i}] id=${entry.id ?? '(missing)'}`;
+      for (const lang of langsInFile) {
+        if (!entry[lang] || entry[lang] === '') {
+          fileWarnings++;
+          console.log(`  ⚠️   ${loc}: missing "${lang}" translation (other entries in this file have it)`);
+        }
+      }
     }
   }
 

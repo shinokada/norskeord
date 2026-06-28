@@ -20,6 +20,11 @@
  *        noun   → bare word,       e.g. "hus" (NOT "hus (et)")
  *        other  → bare word,       e.g. "glad"
  *   8. Required fields present (norsk, english, example, example_english, level, category, part)
+ *   9. Language consistency — for each translation language present (ukrainian, spanish,
+ *      german, romanian, …), the matching example_{lang} field must also be present and
+ *      non-empty, and vice-versa.
+ *  10. Translation coverage — warns if an entry is missing a language that other entries
+ *      in the same file have.
  *
  * NOTE: "numeral" appears in vocab-a1.json (numbers category) but is not in
  * types.ts PartOfSpeech. It is treated as a warning, not an error, so you can
@@ -218,6 +223,9 @@ const REQUIRED_FIELDS = [
   'part'
 ];
 
+// All translation languages the app supports.
+const KNOWN_LANGUAGES = ['ukrainian', 'spanish', 'german', 'romanian', 'french', 'polish', 'arabic', 'turkish', 'dutch', 'italian'];
+
 const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c'];
 
 // ── Filters from CLI ──────────────────────────────────────────────────────────
@@ -395,6 +403,18 @@ for (const level of LEVELS) {
       warns.push(...checkLemma(entry));
     }
 
+    // Language consistency: translation field and its example_{lang} must both be present
+    for (const lang of KNOWN_LANGUAGES) {
+      const hasTranslation = entry[lang] != null && entry[lang] !== '';
+      const hasExample = entry[`example_${lang}`] != null && entry[`example_${lang}`] !== '';
+      if (hasTranslation && !hasExample) {
+        errs.push(`has "${lang}" translation but missing "example_${lang}"`);
+      }
+      if (!hasTranslation && hasExample) {
+        warns.push(`has "example_${lang}" but missing "${lang}" translation`);
+      }
+    }
+
     if (errs.length > 0) {
       fileErrors += errs.length;
       for (const e of errs) console.log(`  ❌  ${loc}: ${e}`);
@@ -402,6 +422,26 @@ for (const level of LEVELS) {
     if (warns.length > 0) {
       fileWarnings += warns.length;
       for (const w of warns) console.log(`  ⚠️   ${loc}: ${w}`);
+    }
+  }
+
+  // Translation coverage: warn for entries missing a language the file otherwise has
+  const langsInFile = new Set();
+  for (const e of entries) {
+    for (const lang of KNOWN_LANGUAGES) {
+      if (e[lang] != null && e[lang] !== '') langsInFile.add(lang);
+    }
+  }
+  if (langsInFile.size > 0) {
+    for (let i = 0; i < entries.length; i++) {
+      const entry = entries[i];
+      const loc = `[${i}] id=${entry.id ?? '(missing)'}`;
+      for (const lang of langsInFile) {
+        if (!entry[lang] || entry[lang] === '') {
+          fileWarnings++;
+          console.log(`  ⚠️   ${loc}: missing "${lang}" translation (other entries in this file have it)`);
+        }
+      }
     }
   }
 
