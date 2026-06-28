@@ -117,3 +117,10 @@ For nouns the script CANNOT know the gender without a dictionary, so it uses the
 ```bash
   node scripts/normalise-norsk-field.mjs --dry-run --files vocab-a2.json > scripts/outputs/normalise-vocab-b2.txt
 ```
+
+## Count data entries
+Prints a table of entry counts per category for each vocab level. Also covers uttrykk files (excludes -preview variants).
+
+```bash
+  node scripts/count-entries.mjs > scripts/outputs/count-entries.txt
+```
