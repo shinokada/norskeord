@@ -45,10 +45,12 @@ const VOCAB_FILES = [
   { file: 'vocab-a2.json', level: 'a2' },
   { file: 'vocab-b1.json', level: 'b1' },
   { file: 'vocab-b2.json', level: 'b2' },
-  { file: 'vocab-c.json',  level: 'c'  },
+  { file: 'vocab-c.json', level: 'c' }
 ];
 
-console.log(DRY_RUN ? '\n=== DRY RUN — no files will be written ===\n' : '\n=== Renumbering IDs ===\n');
+console.log(
+  DRY_RUN ? '\n=== DRY RUN — no files will be written ===\n' : '\n=== Renumbering IDs ===\n'
+);
 
 let totalVocabChanged = 0;
 
@@ -87,7 +89,7 @@ const UTTRYKK_FILES = [
   { file: 'uttrykk-a2.json', level: 'a2' },
   { file: 'uttrykk-b1.json', level: 'b1' },
   { file: 'uttrykk-b2.json', level: 'b2' },
-  { file: 'uttrykk-c.json',  level: 'c'  },
+  { file: 'uttrykk-c.json', level: 'c' }
 ];
 
 let totalUttrykChanged = 0;
