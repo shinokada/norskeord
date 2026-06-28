@@ -109,7 +109,12 @@ if (filesIdx !== -1) {
   const collected = [];
   for (let i = filesIdx + 1; i < args.length; i++) {
     if (args[i].startsWith('--')) break;
-    collected.push(...args[i].split(',').map((f) => f.trim()).filter(Boolean));
+    collected.push(
+      ...args[i]
+        .split(',')
+        .map((f) => f.trim())
+        .filter(Boolean)
+    );
   }
   if (collected.length) filesToProcess = collected;
 }
@@ -238,8 +243,7 @@ Example output format:
   // Sanitise typographic/curly quotes that some languages (e.g. German) use
   // for quoted speech inside string values. Replacing them with ASCII single
   // quotes preserves the meaning while keeping the JSON well-formed.
-  const sanitized = clean
-    .replace(/[„“”«»‘’]/g, "'");
+  const sanitized = clean.replace(/[„“”«»‘’]/g, "'");
 
   try {
     return JSON.parse(sanitized);

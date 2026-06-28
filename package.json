@@ -33,7 +33,8 @@
     "og:blog": "node scripts/generate-og.mjs --blog",
     "og:decks": "node scripts/generate-og.mjs --decks",
     "stats": "node scripts/generate-stats.mjs",
-    "search:index": "npx tsx scripts/build-search-index.ts"
+    "search:index": "npx tsx scripts/build-search-index.ts",
+    "check:languages": "node scripts/check-language-sync.mjs"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.104.1",

@@ -39,17 +39,17 @@ const CLASSIFICATION_FILE = path.join(PROJECT_ROOT, 'scripts/output/phrase-class
 // type_a entries to skip (keep in vocab — reclassified after dry-run review)
 const SKIP_IDS = new Set([
   'v-a1-pronouns-and-questions-026', // hvor mange — question determiner, better as vocab
-  'v-a2-time-004',                   // neste uke — transparent time adverbial
-  'v-a2-time-005',                   // forrige uke — transparent time adverbial
-  'v-a2-time-006',                   // neste år — transparent time adverbial
-  'v-a2-time-011',                   // noen ganger — frequency adverb
-  'v-a2-house-chores-020',           // hver dag — frequency adverb
-  'v-a2-directions-007',             // langt unna — adverbial phrase
+  'v-a2-time-004', // neste uke — transparent time adverbial
+  'v-a2-time-005', // forrige uke — transparent time adverbial
+  'v-a2-time-006', // neste år — transparent time adverbial
+  'v-a2-time-011', // noen ganger — frequency adverb
+  'v-a2-house-chores-020', // hver dag — frequency adverb
+  'v-a2-directions-007' // langt unna — adverbial phrase
 ]);
 
 // vocab IDs to delete entirely (duplicates or otherwise unwanted)
 const DELETE_IDS = new Set([
-  'v-a2-communication-018',          // "Jeg forstår ikke." — duplicate of v-a1-greetings-012
+  'v-a2-communication-018' // "Jeg forstår ikke." — duplicate of v-a1-greetings-012
 ]);
 
 // ── CLI ──────────────────────────────────────────────────────────────────────
@@ -66,26 +66,29 @@ const LEVEL_MAP = {
   a2: { vocabFile: 'vocab-a2.json', uttrykFile: 'uttrykk-a2.json', levelField: 'A2' },
   b1: { vocabFile: 'vocab-b1.json', uttrykFile: 'uttrykk-b1.json', levelField: 'B1' },
   b2: { vocabFile: 'vocab-b2.json', uttrykFile: 'uttrykk-b2.json', levelField: 'B2' },
-  c:  { vocabFile: 'vocab-c.json',  uttrykFile: 'uttrykk-c.json',  levelField: 'C'  },
+  c: { vocabFile: 'vocab-c.json', uttrykFile: 'uttrykk-c.json', levelField: 'C' }
 };
 
 // Translation + example fields per level (based on existing uttrykk file structure)
 const UTTRYKK_FIELDS = {
-  a1: { translations: ['ukrainian', 'spanish', 'german'], exampleLangs: ['ukrainian', 'spanish', 'german'] },
-  a2: { translations: ['ukrainian', 'spanish', 'german'], exampleLangs: ['ukrainian', 'spanish', 'german'] },
-  b1: { translations: ['ukrainian', 'spanish', 'german'], exampleLangs: ['ukrainian', 'spanish', 'german'] },
-  b2: { translations: ['german'],                         exampleLangs: ['german'] },
-  c:  { translations: ['german'],                         exampleLangs: ['german'] },
+  a1: {
+    translations: ['ukrainian', 'spanish', 'german'],
+    exampleLangs: ['ukrainian', 'spanish', 'german']
+  },
+  a2: {
+    translations: ['ukrainian', 'spanish', 'german'],
+    exampleLangs: ['ukrainian', 'spanish', 'german']
+  },
+  b1: {
+    translations: ['ukrainian', 'spanish', 'german'],
+    exampleLangs: ['ukrainian', 'spanish', 'german']
+  },
+  b2: { translations: ['german'], exampleLangs: ['german'] },
+  c: { translations: ['german'], exampleLangs: ['german'] }
 };
 
 function formatId(level, num) {
   return `u-${level}-${String(num).padStart(3, '0')}`;
-}
-
-function nextId(uttrykEntries, level) {
-  if (uttrykEntries.length === 0) return formatId(level, 1);
-  const nums = uttrykEntries.map((e) => parseInt(e.id.split('-').pop(), 10));
-  return formatId(level, Math.max(...nums) + 1);
 }
 
 function buildUttrykEntry(vocabEntry, level, newId) {
@@ -96,7 +99,7 @@ function buildUttrykEntry(vocabEntry, level, newId) {
     id: newId,
     norsk: vocabEntry.norsk,
     lemma: vocabEntry.lemma,
-    english: vocabEntry.english,
+    english: vocabEntry.english
   };
 
   // Copy translation fields that exist on the vocab entry; blank if missing
@@ -138,9 +141,10 @@ function main() {
   const classified = JSON.parse(fs.readFileSync(CLASSIFICATION_FILE, 'utf8'));
 
   // Filter to type_a only (or --ids override), excluding manual skips
-  const toMigrate = (FILTER_IDS
-    ? classified.filter((e) => FILTER_IDS.has(e.id))
-    : classified.filter((e) => e.classification === 'type_a')
+  const toMigrate = (
+    FILTER_IDS
+      ? classified.filter((e) => FILTER_IDS.has(e.id))
+      : classified.filter((e) => e.classification === 'type_a')
   ).filter((e) => !SKIP_IDS.has(e.id) && !DELETE_IDS.has(e.id));
 
   // Collect delete targets by level
@@ -199,9 +203,10 @@ function main() {
     const newUttrykEntries = [];
 
     // Build new uttrykk entries, assigning sequential IDs
-    let currentMax = uttrykData.length > 0
-      ? Math.max(...uttrykData.map((e) => parseInt(e.id.split('-').pop(), 10)))
-      : 0;
+    let currentMax =
+      uttrykData.length > 0
+        ? Math.max(...uttrykData.map((e) => parseInt(e.id.split('-').pop(), 10)))
+        : 0;
 
     for (const entry of entries) {
       currentMax += 1;
@@ -230,7 +235,9 @@ function main() {
       const newUttrykData = [...uttrykData, ...newUttrykEntries];
       fs.writeFileSync(uttrykPath, JSON.stringify(newUttrykData, null, 2) + '\n', 'utf8');
 
-      console.log(`    ✓ Removed ${entries.length} from ${vocabFile}, appended ${newUttrykEntries.length} to ${uttrykFile}`);
+      console.log(
+        `    ✓ Removed ${entries.length} from ${vocabFile}, appended ${newUttrykEntries.length} to ${uttrykFile}`
+      );
     }
 
     console.log('');

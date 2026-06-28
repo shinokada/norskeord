@@ -46,7 +46,7 @@ CREATE TABLE public.profiles (
   display_name text,
   avatar_url text,
   current_level text DEFAULT 'B1'::text CHECK (current_level = ANY (ARRAY['A1'::text, 'A2'::text, 'B1'::text, 'B2'::text, 'C'::text])),
-  ui_language text DEFAULT 'en'::text CHECK (ui_language = ANY (ARRAY['en'::text, 'nb'::text, 'es'::text, 'uk'::text])),
+  ui_language text DEFAULT 'en'::text CHECK (ui_language = ANY (ARRAY['en'::text, 'nb'::text, 'es'::text, 'uk'::text, 'de'::text])),
   card_direction text DEFAULT 'l1_l2'::text CHECK (card_direction = ANY (ARRAY['l1_l2'::text, 'l2_l1'::text, 'def_l1'::text])),
   include_phrases boolean DEFAULT true,
   daily_reminder boolean DEFAULT false,
@@ -66,7 +66,7 @@ CREATE TABLE public.profiles (
   show_example boolean NOT NULL DEFAULT false,
   onboarding_done boolean NOT NULL DEFAULT false,
   onboarding_snoozed_at timestamp with time zone,
-  flashcard_language text NOT NULL DEFAULT 'english'::text CHECK (flashcard_language = ANY (ARRAY['english'::text, 'spanish'::text, 'ukrainian'::text])),
+  flashcard_language text NOT NULL DEFAULT 'english'::text CHECK (flashcard_language = ANY (ARRAY['english'::text, 'spanish'::text, 'ukrainian'::text, 'german'::text])),
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
 );

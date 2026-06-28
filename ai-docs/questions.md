@@ -13,6 +13,12 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+I updated data-rules/vocab-and-uttrykk.md
+I am wondering if I should update scripts/normalise-norsk-field.mjs.
+Can you check it?
+
+---
+
 - Mobile check
 - How about Start free button rather than login?
 - Grammtikk section for B2/C1

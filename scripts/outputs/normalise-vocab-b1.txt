@@ -1,0 +1,13 @@
+
+=== normalise-norsk-field.mjs ===
+Mode: DRY RUN  |  Files: vocab-b1.json
+Noun batch size: 40
+
+
+────────────────────────────────────────────────────────────
+📄  vocab-b1.json  (1169 entries)
+   Already OK: 1169  |  Verbs/adj to fix: 0  |  Nouns needing gender lookup: 0
+   ✅  Nothing to change.
+
+=== Done ===
+
