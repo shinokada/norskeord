@@ -579,13 +579,12 @@
     "lemma": "det fremgår av",
     "english": "it appears from / it is evident from",
     "german": "es geht hervor aus / es ergibt sich aus",
-    "example": "Det fremgår av rapporten at ulykken kunne vært unngått.",
-    "example_english": "It is evident from the report that the accident could have been avoided.",
-    "example_german": "Aus dem Bericht geht hervor, dass der Unfall hätte vermieden werden können.",
+    "example": "",
+    "example_english": "",
+    "example_german": "",
     "level": "C",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'Det fremgår av' brukes for å si at noe tydelig kommer frem eller kan leses ut av en kilde, for eksempel et dokument eller en tekst."
+    "part": "phrase"
   },
   {
     "id": "u-c-043",
@@ -593,13 +592,12 @@
     "lemma": "en ironi av skjebnen",
     "english": "an irony of fate",
     "german": "eine Ironie des Schicksals",
-    "example": "Det var en ironi av skjebnen at han vant prisen akkurat den dagen.",
-    "example_english": "It was an irony of fate that he won the prize on exactly that day.",
-    "example_german": "Es war eine Ironie des Schicksals, dass er genau an diesem Tag den Preis gewann.",
+    "example": "",
+    "example_english": "",
+    "example_german": "",
     "level": "C",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'En ironi av skjebnen' beskriver en situasjon der noe merkelig eller paradoksalt skjer, som om skjebnen bevisst leker med mennesker."
+    "part": "phrase"
   },
   {
     "id": "u-c-044",
@@ -607,12 +605,11 @@
     "lemma": "Øvelse gjør mester.",
     "english": "Practice makes perfect. (lit. Practice makes master.)",
     "german": "Übung macht den Meister.",
-    "example": "Ikke gi opp gitaren ennå -- øvelse gjør mester.",
-    "example_english": "Don't give up the guitar yet -- practice makes perfect.",
-    "example_german": "Gib die Gitarre noch nicht auf -- Übung macht den Meister.",
+    "example": "",
+    "example_english": "",
+    "example_german": "",
     "level": "C",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'Øvelse gjør mester' er et ordtak som betyr at man blir god på noe ved å øve mye og regelmessig."
+    "part": "phrase"
   }
 ]

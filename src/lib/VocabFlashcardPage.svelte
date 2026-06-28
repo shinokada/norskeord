@@ -647,7 +647,7 @@
         aria-pressed={effectiveMode === 'noreng'}
         onclick={() => setMode('noreng')}
       >
-        Norsk → {LANGUAGES[language].name}
+        NO → {LANGUAGES[language].abbr}
       </button>
       <button
         type="button"
@@ -660,7 +660,7 @@
         aria-pressed={effectiveMode === 'engnor'}
         onclick={() => setMode('engnor')}
       >
-        {LANGUAGES[language].name} → Norsk
+        {LANGUAGES[language].abbr} → NO
       </button>
       {#if hasDefinitions && cardType === 'word'}
         <button

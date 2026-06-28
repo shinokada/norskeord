@@ -2217,6 +2217,57 @@
   },
   {
     "id": "v-a2-weather-001",
+    "norsk": "det regner",
+    "lemma": "det regner",
+    "english": "it is raining",
+    "ukrainian": "іде дощ",
+    "spanish": "está lloviendo",
+    "german": "es regnet",
+    "example": "Det regner, ta med paraply.",
+    "example_english": "It is raining, bring an umbrella.",
+    "example_ukrainian": "Іде дощ, візьми парасолю.",
+    "example_spanish": "Está lloviendo, lleva un paraguas.",
+    "example_german": "Es regnet, nimm einen Regenschirm mit.",
+    "level": "A2",
+    "category": "weather",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-weather-002",
+    "norsk": "det snør",
+    "lemma": "det snør",
+    "english": "it is snowing",
+    "ukrainian": "іде сніг",
+    "spanish": "está nevando",
+    "german": "es schneit",
+    "example": "Det snør mye i januar.",
+    "example_english": "It snows a lot in January.",
+    "example_ukrainian": "У січні іде багато снігу.",
+    "example_spanish": "Nieva mucho en enero.",
+    "example_german": "Es schneit viel im Januar.",
+    "level": "A2",
+    "category": "weather",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-weather-003",
+    "norsk": "det er sol",
+    "lemma": "det er sol",
+    "english": "it is sunny",
+    "ukrainian": "сонячно",
+    "spanish": "hace sol",
+    "german": "es ist sonnig",
+    "example": "Det er sol og varmt i dag!",
+    "example_english": "It is sunny and warm today!",
+    "example_ukrainian": "Сьогодні сонячно і тепло!",
+    "example_spanish": "¡Hoy hace sol y calor!",
+    "example_german": "Es ist sonnig und warm heute!",
+    "level": "A2",
+    "category": "weather",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-weather-004",
     "norsk": "temperatur (en)",
     "lemma": "temperatur",
     "english": "temperature",
@@ -2233,7 +2284,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-002",
+    "id": "v-a2-weather-005",
     "norsk": "paraply (en)",
     "lemma": "paraply",
     "english": "an umbrella",
@@ -2250,7 +2301,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-003",
+    "id": "v-a2-weather-006",
     "norsk": "sky (en)",
     "lemma": "sky",
     "english": "a cloud",
@@ -2267,7 +2318,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-004",
+    "id": "v-a2-weather-007",
     "norsk": "tåke (en)",
     "lemma": "tåke",
     "english": "fog",
@@ -2284,7 +2335,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-005",
+    "id": "v-a2-weather-008",
     "norsk": "prognose (en)",
     "lemma": "prognose",
     "english": "a (weather) forecast",
@@ -2301,7 +2352,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-006",
+    "id": "v-a2-weather-009",
     "norsk": "fuktig",
     "lemma": "fuktig",
     "english": "humid / damp",
@@ -2318,7 +2369,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-weather-007",
+    "id": "v-a2-weather-010",
     "norsk": "grader (en)",
     "lemma": "grader",
     "english": "degrees",
@@ -2335,7 +2386,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-008",
+    "id": "v-a2-weather-011",
     "norsk": "storm (en)",
     "lemma": "storm",
     "english": "a storm",
@@ -2352,7 +2403,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-009",
+    "id": "v-a2-weather-012",
     "norsk": "klart",
     "lemma": "klart",
     "english": "clear (weather)",
@@ -2369,7 +2420,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-weather-010",
+    "id": "v-a2-weather-013",
     "norsk": "årstid (en)",
     "lemma": "årstid",
     "english": "a season",
@@ -2386,7 +2437,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-011",
+    "id": "v-a2-weather-014",
     "norsk": "regnvær (et)",
     "lemma": "regnvær",
     "english": "rainy weather",
@@ -4327,6 +4378,23 @@
     "part": "adjective"
   },
   {
+    "id": "v-a2-communication-018",
+    "norsk": "Jeg forstår ikke.",
+    "lemma": "Jeg forstår ikke.",
+    "english": "I don't understand.",
+    "ukrainian": "Я не розумію.",
+    "spanish": "No entiendo.",
+    "german": "Ich verstehe nicht.",
+    "example": "Beklager, jeg forstår ikke.",
+    "example_english": "Sorry, I don't understand.",
+    "example_ukrainian": "Вибачте, я не розумію.",
+    "example_spanish": "Lo siento, no entiendo.",
+    "example_german": "Entschuldigung, ich verstehe nicht.",
+    "level": "A2",
+    "category": "communication",
+    "part": "phrase"
+  },
+  {
     "id": "v-a2-body-001",
     "norsk": "hjerte (et)",
     "lemma": "hjerte",
@@ -4583,6 +4651,40 @@
   },
   {
     "id": "v-a2-body-016",
+    "norsk": "vondt i hodet",
+    "lemma": "vondt i hodet",
+    "english": "headache",
+    "ukrainian": "головний біль",
+    "spanish": "dolor de cabeza",
+    "german": "Kopfschmerzen",
+    "example": "Jeg har vondt i hodet.",
+    "example_english": "I have a headache.",
+    "example_ukrainian": "У мене болить голова.",
+    "example_spanish": "Tengo dolor de cabeza.",
+    "example_german": "Ich habe Kopfschmerzen.",
+    "level": "A2",
+    "category": "body",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-body-017",
+    "norsk": "vondt i magen",
+    "lemma": "vondt i magen",
+    "english": "stomachache",
+    "ukrainian": "біль у животі",
+    "spanish": "dolor de estómago",
+    "german": "Bauchschmerzen",
+    "example": "Barnet har vondt i magen.",
+    "example_english": "The child has a stomachache.",
+    "example_ukrainian": "У дитини болить живіт.",
+    "example_spanish": "El niño tiene dolor de estómago.",
+    "example_german": "Das Kind hat Bauchschmerzen.",
+    "level": "A2",
+    "category": "body",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-body-018",
     "norsk": "høy feber",
     "lemma": "høy feber",
     "english": "high fever",
@@ -4599,7 +4701,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-body-017",
+    "id": "v-a2-body-019",
     "norsk": "legekontor (et)",
     "lemma": "legekontor",
     "english": "a doctor's office",
@@ -4616,7 +4718,58 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-body-018",
+    "id": "v-a2-body-020",
+    "norsk": "ta temperaturen",
+    "lemma": "ta temperaturen",
+    "english": "to take someone's temperature",
+    "ukrainian": "виміряти температуру",
+    "spanish": "tomar la temperatura",
+    "german": "die Temperatur messen",
+    "example": "Sykepleieren tar temperaturen.",
+    "example_english": "The nurse takes the temperature.",
+    "example_ukrainian": "Медсестра вимірює температуру.",
+    "example_spanish": "La enfermera le toma la temperatura.",
+    "example_german": "Die Krankenschwester misst die Temperatur.",
+    "level": "A2",
+    "category": "body",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-body-021",
+    "norsk": "allergisk mot",
+    "lemma": "allergisk mot",
+    "english": "allergic to",
+    "ukrainian": "алергічний на",
+    "spanish": "alérgico/a a",
+    "german": "allergisch gegen",
+    "example": "Jeg er allergisk mot nøtter.",
+    "example_english": "I am allergic to nuts.",
+    "example_ukrainian": "Я алергічний на горіхи.",
+    "example_spanish": "Soy alérgico a las nueces.",
+    "example_german": "Ich bin allergisch gegen Nüsse.",
+    "level": "A2",
+    "category": "body",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-body-022",
+    "norsk": "sove godt",
+    "lemma": "sove godt",
+    "english": "to sleep well",
+    "ukrainian": "добре спати",
+    "spanish": "dormir bien",
+    "german": "gut schlafen",
+    "example": "Jeg sover godt når jeg er sliten.",
+    "example_english": "I sleep well when I am tired.",
+    "example_ukrainian": "Я добре сплю, коли втомлений.",
+    "example_spanish": "Duermo bien cuando estoy cansado.",
+    "example_german": "Ich schlafe gut, wenn ich müde bin.",
+    "level": "A2",
+    "category": "body",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-body-023",
     "norsk": "sunn mat",
     "lemma": "sunn mat",
     "english": "healthy food",
@@ -4838,6 +4991,23 @@
   },
   {
     "id": "v-a2-social-life-013",
+    "norsk": "treffe venner",
+    "lemma": "treffe venner",
+    "english": "to meet friends",
+    "ukrainian": "зустрічатися з друзями",
+    "spanish": "quedar con amigos",
+    "german": "Freunde treffen",
+    "example": "Jeg treffer venner i helgen.",
+    "example_english": "I meet friends on weekends.",
+    "example_ukrainian": "Я зустрічаюся з друзями на вихідних.",
+    "example_spanish": "Quedo con amigos este fin de semana.",
+    "example_german": "Ich treffe am Wochenende Freunde.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-social-life-014",
     "norsk": "hyggelig selskap",
     "lemma": "hyggelig selskap",
     "english": "good company",
@@ -4854,7 +5024,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-social-life-014",
+    "id": "v-a2-social-life-015",
     "norsk": "samtale (en)",
     "lemma": "samtale",
     "english": "a conversation",
@@ -4871,7 +5041,41 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-015",
+    "id": "v-a2-social-life-016",
+    "norsk": "holde kontakten",
+    "lemma": "holde kontakten",
+    "english": "to keep in touch",
+    "ukrainian": "підтримувати зв'язок",
+    "spanish": "mantenerse en contacto",
+    "german": "in Kontakt bleiben",
+    "example": "Vi prøver å holde kontakten.",
+    "example_english": "We try to keep in touch.",
+    "example_ukrainian": "Ми намагаємося підтримувати зв'язок.",
+    "example_spanish": "Intentamos mantenernos en contacto.",
+    "example_german": "Wir versuchen, in Kontakt zu bleiben.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-social-life-017",
+    "norsk": "si unnskyld",
+    "lemma": "si unnskyld",
+    "english": "to apologise",
+    "ukrainian": "вибачатися",
+    "spanish": "disculparse",
+    "german": "sich entschuldigen",
+    "example": "Han sa unnskyld for forsinkelsen.",
+    "example_english": "He apologised for the delay.",
+    "example_ukrainian": "Він вибачився за запізнення.",
+    "example_spanish": "Se disculpó por el retraso.",
+    "example_german": "Er entschuldigte sich für die Verspätung.",
+    "level": "A2",
+    "category": "social-life",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-social-life-018",
     "norsk": "å gratulere",
     "lemma": "gratulere",
     "english": "to congratulate",
@@ -4888,7 +5092,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-social-life-016",
+    "id": "v-a2-social-life-019",
     "norsk": "klem (en)",
     "lemma": "klem",
     "english": "a hug",
@@ -4905,7 +5109,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-017",
+    "id": "v-a2-social-life-020",
     "norsk": "frivillig arbeid",
     "lemma": "frivillig arbeid",
     "english": "voluntary work",
@@ -4922,7 +5126,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-social-life-018",
+    "id": "v-a2-social-life-021",
     "norsk": "å delta",
     "lemma": "delta",
     "english": "to participate",
@@ -4940,7 +5144,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-social-life-019",
+    "id": "v-a2-social-life-022",
     "norsk": "arrangement (et)",
     "lemma": "arrangement",
     "english": "an event",
@@ -5060,6 +5264,23 @@
   },
   {
     "id": "v-a2-technology-007",
+    "norsk": "sende en e-post",
+    "lemma": "sende en e-post",
+    "english": "to send an email",
+    "ukrainian": "надіслати електронний лист",
+    "spanish": "enviar un correo electrónico",
+    "german": "eine E-Mail senden",
+    "example": "Jeg sender en e-post til sjefen.",
+    "example_english": "I will send an email to the boss.",
+    "example_ukrainian": "Я надсилаю електронний лист керівнику.",
+    "example_spanish": "Envío un correo electrónico al jefe.",
+    "example_german": "Ich sende eine E-Mail an den Chef.",
+    "level": "A2",
+    "category": "technology",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-technology-008",
     "norsk": "wifi (et)",
     "lemma": "wifi",
     "english": "wifi",
@@ -5076,7 +5297,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-008",
+    "id": "v-a2-technology-009",
     "norsk": "batteri (et)",
     "lemma": "batteri",
     "english": "a battery",
@@ -5093,7 +5314,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-009",
+    "id": "v-a2-technology-010",
     "norsk": "å lade",
     "lemma": "lade",
     "english": "to charge",
@@ -5110,7 +5331,24 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-technology-010",
+    "id": "v-a2-technology-011",
+    "norsk": "ta et bilde",
+    "lemma": "ta et bilde",
+    "english": "to take a photo",
+    "ukrainian": "зробити фото",
+    "spanish": "tomar una foto",
+    "german": "ein Foto machen",
+    "example": "Jeg tar et bilde av utsikten.",
+    "example_english": "I take a photo of the view.",
+    "example_ukrainian": "Я роблю фото краєвиду.",
+    "example_spanish": "Tomo una foto de la vista.",
+    "example_german": "Ich mache ein Foto von der Aussicht.",
+    "level": "A2",
+    "category": "technology",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-technology-012",
     "norsk": "nettside (en)",
     "lemma": "nettside",
     "english": "a website",
@@ -5127,7 +5365,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-011",
+    "id": "v-a2-technology-013",
     "norsk": "å slå på",
     "lemma": "slå på",
     "english": "to turn on",
@@ -5144,7 +5382,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-technology-012",
+    "id": "v-a2-technology-014",
     "norsk": "å slå av",
     "lemma": "slå av",
     "english": "to turn off",
@@ -5161,7 +5399,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-technology-013",
+    "id": "v-a2-technology-015",
     "norsk": "høyttaler (en)",
     "lemma": "høyttaler",
     "english": "a speaker",
@@ -5178,7 +5416,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-014",
+    "id": "v-a2-technology-016",
     "norsk": "hodetelefon (en)",
     "lemma": "hodetelefon",
     "english": "headphones",
@@ -5195,7 +5433,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-015",
+    "id": "v-a2-technology-017",
     "norsk": "kamera (et)",
     "lemma": "kamera",
     "english": "a camera",
@@ -5212,7 +5450,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-technology-016",
+    "id": "v-a2-technology-018",
     "norsk": "å skrive ut",
     "lemma": "skrive ut",
     "english": "to print",
@@ -5281,6 +5519,23 @@
   },
   {
     "id": "v-a2-environment-004",
+    "norsk": "spare energi",
+    "lemma": "spare energi",
+    "english": "to save energy",
+    "ukrainian": "економити енергію",
+    "spanish": "ahorrar energía",
+    "german": "Energie sparen",
+    "example": "Slå av lyset for å spare energi.",
+    "example_english": "Turn off the light to save energy.",
+    "example_ukrainian": "Вимкни світло, щоб економити енергію.",
+    "example_spanish": "Apaga la luz para ahorrar energía.",
+    "example_german": "Mach das Licht aus, um Energie zu sparen.",
+    "level": "A2",
+    "category": "environment",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-environment-005",
     "norsk": "forurensning (en)",
     "lemma": "forurensning",
     "english": "pollution",
@@ -5297,7 +5552,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-environment-005",
+    "id": "v-a2-environment-006",
     "norsk": "rent vann",
     "lemma": "rent vann",
     "english": "clean water",
@@ -5314,7 +5569,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-environment-006",
+    "id": "v-a2-environment-007",
     "norsk": "naturreservat (et)",
     "lemma": "naturreservat",
     "english": "a nature reserve",
@@ -5331,7 +5586,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-environment-007",
+    "id": "v-a2-environment-008",
     "norsk": "klima (et)",
     "lemma": "klima",
     "english": "climate",
@@ -5434,6 +5689,40 @@
   },
   {
     "id": "v-a2-money-006",
+    "norsk": "spare penger",
+    "lemma": "spare penger",
+    "english": "to save money",
+    "ukrainian": "заощаджувати гроші",
+    "spanish": "ahorrar dinero",
+    "german": "Geld sparen",
+    "example": "Jeg prøver å spare penger.",
+    "example_english": "I am trying to save money.",
+    "example_ukrainian": "Я намагаюся заощаджувати гроші.",
+    "example_spanish": "Intento ahorrar dinero.",
+    "example_german": "Ich versuche, Geld zu sparen.",
+    "level": "A2",
+    "category": "money",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-money-007",
+    "norsk": "bruke penger",
+    "lemma": "bruke penger",
+    "english": "to spend money",
+    "ukrainian": "витрачати гроші",
+    "spanish": "gastar dinero",
+    "german": "Geld ausgeben",
+    "example": "Han bruker mye penger på mat.",
+    "example_english": "He spends a lot of money on food.",
+    "example_ukrainian": "Він витрачає багато грошей на їжу.",
+    "example_spanish": "Él gasta mucho dinero en comida.",
+    "example_german": "Er gibt viel Geld für Essen aus.",
+    "level": "A2",
+    "category": "money",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-money-008",
     "norsk": "budsjett (et)",
     "lemma": "budsjett",
     "english": "a budget",
@@ -5450,7 +5739,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-007",
+    "id": "v-a2-money-009",
     "norsk": "inntekt (en)",
     "lemma": "inntekt",
     "english": "an income",
@@ -5467,7 +5756,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-008",
+    "id": "v-a2-money-010",
     "norsk": "utgift (en)",
     "lemma": "utgift",
     "english": "an expense",
@@ -5484,7 +5773,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-009",
+    "id": "v-a2-money-011",
     "norsk": "halv pris",
     "lemma": "halv pris",
     "english": "half price",
@@ -5501,7 +5790,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-money-010",
+    "id": "v-a2-money-012",
     "norsk": "vekslepenger (en)",
     "lemma": "vekslepenger",
     "english": "change (money)",
@@ -5518,7 +5807,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-011",
+    "id": "v-a2-money-013",
     "norsk": "to hundre (en)",
     "lemma": "to hundre",
     "english": "two hundred",
@@ -5535,7 +5824,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-012",
+    "id": "v-a2-money-014",
     "norsk": "fem hundre (en)",
     "lemma": "fem hundre",
     "english": "five hundred",
@@ -5552,7 +5841,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-013",
+    "id": "v-a2-money-015",
     "norsk": "million (en)",
     "lemma": "million",
     "english": "a million",
@@ -5569,7 +5858,41 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-018",
+    "id": "v-a2-money-016",
+    "norsk": "låne penger",
+    "lemma": "låne penger",
+    "english": "to borrow money",
+    "ukrainian": "позичати гроші",
+    "spanish": "pedir dinero prestado",
+    "german": "Geld leihen / borgen",
+    "example": "Kan jeg låne hundre kroner?",
+    "example_english": "Can I borrow a hundred kroner?",
+    "example_ukrainian": "Можна позичити мені сто крон?",
+    "example_spanish": "¿Me puedes prestar cien coronas?",
+    "example_german": "Kann ich hundert Kronen leihen?",
+    "level": "A2",
+    "category": "money",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-money-017",
+    "norsk": "betale tilbake",
+    "lemma": "betale tilbake",
+    "english": "to pay back",
+    "ukrainian": "повертати гроші",
+    "spanish": "devolver el dinero",
+    "german": "zurückzahlen",
+    "example": "Jeg betaler tilbake i morgen.",
+    "example_english": "I will pay back tomorrow.",
+    "example_ukrainian": "Я поверну гроші завтра.",
+    "example_spanish": "Te devuelvo el dinero mañana.",
+    "example_german": "Ich zahle es morgen zurück.",
+    "level": "A2",
+    "category": "money",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a2-communication-019",
     "norsk": "faktisk",
     "lemma": "faktisk",
     "english": "actually / in fact",
@@ -5587,7 +5910,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-social-life-020",
+    "id": "v-a2-social-life-023",
     "norsk": "krig (en)",
     "lemma": "krig",
     "english": "a war",
@@ -5605,7 +5928,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-021",
+    "id": "v-a2-social-life-024",
     "norsk": "gud (en)",
     "lemma": "gud",
     "english": "a god",
@@ -5623,7 +5946,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-019",
+    "id": "v-a2-communication-020",
     "norsk": "ettersom",
     "lemma": "ettersom",
     "english": "since / because / as",
@@ -5641,7 +5964,7 @@
     "part": "conjunction"
   },
   {
-    "id": "v-a2-social-life-022",
+    "id": "v-a2-social-life-025",
     "norsk": "frihet (en)",
     "lemma": "frihet",
     "english": "freedom / liberty",
@@ -5659,7 +5982,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-023",
+    "id": "v-a2-social-life-026",
     "norsk": "kjærlighet (en)",
     "lemma": "kjærlighet",
     "english": "love",
@@ -5677,7 +6000,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-024",
+    "id": "v-a2-social-life-027",
     "norsk": "vennskap (et)",
     "lemma": "vennskap",
     "english": "a friendship",
@@ -5695,7 +6018,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-025",
+    "id": "v-a2-social-life-028",
     "norsk": "ekteskap (et)",
     "lemma": "ekteskap",
     "english": "a marriage",
@@ -5731,7 +6054,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-026",
+    "id": "v-a2-social-life-029",
     "norsk": "prøve (en)",
     "lemma": "prøve",
     "english": "a test / an exam",

@@ -519,6 +519,20 @@
   },
   {
     "id": "v-c-formal-writing-004",
+    "norsk": "det fremgår av",
+    "lemma": "det fremgår av",
+    "english": "it appears from / it is evident from",
+    "german": "es geht hervor aus / es ergibt sich aus",
+    "example": "Det fremgår av rapporten at kostnadene øker.",
+    "example_english": "It is evident from the report that costs are rising.",
+    "example_german": "Aus dem Bericht geht hervor, dass die Kosten steigen.",
+    "definition": "Det er tydelig eller klart å se fra en kilde eller et dokument at noe er tilfelle.",
+    "level": "C",
+    "category": "formal-writing",
+    "part": "phrase"
+  },
+  {
+    "id": "v-c-formal-writing-005",
     "norsk": "ytterligere",
     "lemma": "ytterligere",
     "english": "further / additionally",
@@ -532,7 +546,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-c-formal-writing-005",
+    "id": "v-c-formal-writing-006",
     "norsk": "begrepsavklaring (en)",
     "lemma": "begrepsavklaring",
     "english": "a definition of terms / clarification of concepts",
@@ -546,7 +560,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-formal-writing-006",
+    "id": "v-c-formal-writing-007",
     "norsk": "innvending (en)",
     "lemma": "innvending",
     "english": "an objection",
@@ -560,7 +574,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-formal-writing-007",
+    "id": "v-c-formal-writing-008",
     "norsk": "å nuansere",
     "lemma": "nuansere",
     "english": "to nuance / to qualify",
@@ -574,7 +588,7 @@
     "part": "verb"
   },
   {
-    "id": "v-c-formal-writing-008",
+    "id": "v-c-formal-writing-009",
     "norsk": "å avgrense",
     "lemma": "avgrense",
     "english": "to delimit / to narrow down",
@@ -588,7 +602,7 @@
     "part": "verb"
   },
   {
-    "id": "v-c-formal-writing-009",
+    "id": "v-c-formal-writing-010",
     "norsk": "implikasjon (en)",
     "lemma": "implikasjon",
     "english": "an implication",
@@ -602,7 +616,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-formal-writing-010",
+    "id": "v-c-formal-writing-011",
     "norsk": "foreliggende",
     "lemma": "foreliggende",
     "english": "present / at hand / existing",
@@ -1933,6 +1947,20 @@
   },
   {
     "id": "v-c-literary-012",
+    "norsk": "en ironi av skjebnen",
+    "lemma": "en ironi av skjebnen",
+    "english": "an irony of fate",
+    "german": "eine Ironie des Schicksals",
+    "example": "At han dør akkurat der han ble født, er en ironi av skjebnen.",
+    "example_english": "That he dies exactly where he was born is an irony of fate.",
+    "example_german": "Dass er genau dort stirbt, wo er geboren wurde, ist eine Ironie des Schicksals.",
+    "definition": "Når livet ordner seg på en måte som er morsom eller trist fordi det er det motsatte av hva man ventet.",
+    "level": "C",
+    "category": "literary",
+    "part": "phrase"
+  },
+  {
+    "id": "v-c-literary-013",
     "norsk": "peripeti (en)",
     "lemma": "peripeti",
     "english": "a peripeteia (sudden reversal of fortune)",
@@ -1946,7 +1974,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-literary-013",
+    "id": "v-c-literary-014",
     "norsk": "hamartia (en)",
     "lemma": "hamartia",
     "english": "hamartia (a tragic flaw)",
@@ -1960,7 +1988,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-literary-014",
+    "id": "v-c-literary-015",
     "norsk": "katafore (en)",
     "lemma": "katafore",
     "english": "cataphora (forward reference)",
@@ -1974,7 +2002,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-literary-015",
+    "id": "v-c-literary-016",
     "norsk": "synekdoke (en)",
     "lemma": "synekdoke",
     "english": "synecdoche (part for whole or whole for part)",
@@ -1988,7 +2016,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-literary-016",
+    "id": "v-c-literary-017",
     "norsk": "metonymi (en)",
     "lemma": "metonymi",
     "english": "metonymy",
@@ -2002,7 +2030,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-literary-017",
+    "id": "v-c-literary-018",
     "norsk": "en lyrisk prosa",
     "lemma": "en lyrisk prosa",
     "english": "lyrical prose",
@@ -2294,6 +2322,20 @@
     "level": "C",
     "category": "archaic",
     "part": "noun"
+  },
+  {
+    "id": "v-c-proverbs-001",
+    "norsk": "Øvelse gjør mester.",
+    "lemma": "Øvelse gjør mester.",
+    "english": "Practice makes perfect. (lit. Practice makes master.)",
+    "german": "Übung macht den Meister.",
+    "example": "Du spiller feil tone om og om igjen, men øvelse gjør mester.",
+    "example_english": "You play the wrong note again and again, but practice makes perfect.",
+    "example_german": "Du spielst immer wieder die falsche Note, aber Übung macht den Meister.",
+    "definition": "Jo mer du trener på noe, jo bedre blir du til det.",
+    "level": "C",
+    "category": "proverbs",
+    "part": "phrase"
   },
   {
     "id": "v-c-highly-formal-001",

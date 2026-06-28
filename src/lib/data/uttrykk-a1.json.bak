@@ -2065,15 +2065,14 @@
     "ukrainian": "дуже дякую",
     "spanish": "muchas gracias",
     "german": "vielen Dank",
-    "example": "Tusen takk for hjelpen, det setter jeg stor pris på!",
-    "example_english": "Thank you very much for the help, I really appreciate it!",
-    "example_ukrainian": "Дуже дякую за допомогу, я дуже це ціную!",
-    "example_spanish": "Muchas gracias por la ayuda, ¡te lo agradezco mucho!",
-    "example_german": "Vielen Dank für die Hilfe, das weiß ich sehr zu schätzen!",
+    "example": "",
+    "example_english": "",
+    "example_ukrainian": "",
+    "example_spanish": "",
+    "example_german": "",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'Tusen takk' betyr en stor og hjertelig takk. Det brukes når man vil uttrykke sterk takknemlighet."
+    "part": "phrase"
   },
   {
     "id": "u-a1-123",
@@ -2083,15 +2082,14 @@
     "ukrainian": "Мене звати ...",
     "spanish": "Me llamo ...",
     "german": "Ich heiße ...",
-    "example": "Hei, jeg heter Anna og jeg er fra Norge.",
-    "example_english": "Hi, my name is Anna and I am from Norway.",
-    "example_ukrainian": "Привіт, мене звати Анна, і я з Норвегії.",
-    "example_spanish": "Hola, me llamo Anna y soy de Noruega.",
-    "example_german": "Hallo, ich heiße Anna und ich komme aus Norwegen.",
+    "example": "",
+    "example_english": "",
+    "example_ukrainian": "",
+    "example_spanish": "",
+    "example_german": "",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'Jeg heter ...' brukes til å presentere seg selv og si hva man heter. Det tilsvarer 'mitt navn er' på norsk."
+    "part": "phrase"
   },
   {
     "id": "u-a1-124",
@@ -2101,15 +2099,14 @@
     "ukrainian": "до зустрічі",
     "spanish": "hasta luego",
     "german": "bis später / wir sehen uns",
-    "example": "Ha det bra, vi ses i morgen!",
-    "example_english": "Take care, see you tomorrow!",
-    "example_ukrainian": "Бувай, до зустрічі завтра!",
-    "example_spanish": "¡Cuídate, hasta luego mañana!",
-    "example_german": "Mach es gut, wir sehen uns morgen!",
+    "example": "",
+    "example_english": "",
+    "example_ukrainian": "",
+    "example_spanish": "",
+    "example_german": "",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'Vi ses' er en uformell avskjedshilsen som betyr at man forventer å møtes igjen. Det brukes på samme måte som 'ha det' eller 'på gjensyn'."
+    "part": "phrase"
   },
   {
     "id": "u-a1-125",
@@ -2119,15 +2116,14 @@
     "ukrainian": "Я не розумію",
     "spanish": "No entiendo",
     "german": "Ich verstehe nicht",
-    "example": "Kan du snakke saktere? Jeg forstår ikke hva du sier.",
-    "example_english": "Can you speak more slowly? I don't understand what you are saying.",
-    "example_ukrainian": "Можеш говорити повільніше? Я не розумію, що ти кажеш.",
-    "example_spanish": "¿Puedes hablar más despacio? No entiendo lo que dices.",
-    "example_german": "Kannst du langsamer sprechen? Ich verstehe nicht, was du sagst.",
+    "example": "",
+    "example_english": "",
+    "example_ukrainian": "",
+    "example_spanish": "",
+    "example_german": "",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'Jeg forstår ikke' brukes når man ikke klarer å forstå hva noen sier eller mener. Det er en viktig setning når man lærer et nytt språk."
+    "part": "phrase"
   },
   {
     "id": "u-a1-126",
@@ -2137,14 +2133,13 @@
     "ukrainian": "прямо",
     "spanish": "todo recto / derecho",
     "german": "geradeaus",
-    "example": "Gå rett frem og ta så til venstre ved kirken.",
-    "example_english": "Go straight ahead and then turn left at the church.",
-    "example_ukrainian": "Іди прямо, а потім поверни ліворуч біля церкви.",
-    "example_spanish": "Ve todo recto y luego gira a la izquierda en la iglesia.",
-    "example_german": "Geh geradeaus und biege dann links bei der Kirche ab.",
+    "example": "",
+    "example_english": "",
+    "example_ukrainian": "",
+    "example_spanish": "",
+    "example_german": "",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase",
-    "definition": "'Rett frem' betyr i en rett linje fremover uten å svinge. Det brukes ofte når man gir noen veibeskrivelse."
+    "part": "phrase"
   }
 ]

@@ -158,7 +158,8 @@ export const LANGUAGES = {
   norwegian: { name: 'Norwegian', flag: '🇳🇴', code: 'nb', abbr: 'NO' },
   english: { name: 'English', flag: '🇬🇧', code: 'en', abbr: 'EN' },
   spanish: { name: 'Spanish', flag: '🇪🇸', code: 'es', abbr: 'ES' },
-  ukrainian: { name: 'Ukrainian', flag: '🇺🇦', code: 'uk', abbr: 'UK' }
+  ukrainian: { name: 'Ukrainian', flag: '🇺🇦', code: 'uk', abbr: 'UK' },
+  german:    { name: 'German',    flag: '🇩🇪', code: 'de', abbr: 'DE' } 
 } as const;
 
 /**

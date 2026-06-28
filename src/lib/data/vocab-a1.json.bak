@@ -52,6 +52,23 @@
   },
   {
     "id": "v-a1-greetings-004",
+    "norsk": "tusen takk",
+    "lemma": "tusen takk",
+    "english": "thank you very much",
+    "ukrainian": "дуже дякую",
+    "spanish": "muchas gracias",
+    "german": "vielen Dank",
+    "example": "Tusen takk for hjelpen!",
+    "example_english": "Thank you very much for the help!",
+    "example_ukrainian": "Дуже дякую за допомогу!",
+    "example_spanish": "¡Muchas gracias por la ayuda!",
+    "example_german": "Vielen Dank für die Hilfe!",
+    "level": "A1",
+    "category": "greetings",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a1-greetings-005",
     "norsk": "unnskyld",
     "lemma": "unnskyld",
     "english": "excuse me / sorry",
@@ -68,7 +85,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-005",
+    "id": "v-a1-greetings-006",
     "norsk": "å beklage",
     "lemma": "beklage",
     "english": "I'm sorry",
@@ -86,7 +103,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-greetings-006",
+    "id": "v-a1-greetings-007",
     "norsk": "ja",
     "lemma": "ja",
     "english": "yes",
@@ -103,7 +120,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-007",
+    "id": "v-a1-greetings-008",
     "norsk": "nei",
     "lemma": "nei",
     "english": "no",
@@ -120,7 +137,24 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-008",
+    "id": "v-a1-greetings-009",
+    "norsk": "Jeg heter ...",
+    "lemma": "Jeg heter ...",
+    "english": "My name is ...",
+    "ukrainian": "Мене звати ...",
+    "spanish": "Me llamo ...",
+    "german": "Ich heiße ...",
+    "example": "Jeg heter Maria. Hva heter du?",
+    "example_english": "My name is Maria. What is your name?",
+    "example_ukrainian": "Мене звати Марія. Як тебе звати?",
+    "example_spanish": "Me llamo María. ¿Y tú, cómo te llamas?",
+    "example_german": "Ich heiße Maria. Wie heißt du?",
+    "level": "A1",
+    "category": "greetings",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a1-greetings-010",
     "norsk": "velkommen",
     "lemma": "velkommen",
     "english": "welcome",
@@ -135,6 +169,40 @@
     "level": "A1",
     "category": "greetings",
     "part": "interjection"
+  },
+  {
+    "id": "v-a1-greetings-011",
+    "norsk": "vi ses",
+    "lemma": "vi ses",
+    "english": "see you later",
+    "ukrainian": "до зустрічі",
+    "spanish": "hasta luego",
+    "german": "bis später / wir sehen uns",
+    "example": "Ha det! Vi ses i morgen.",
+    "example_english": "Bye! See you tomorrow.",
+    "example_ukrainian": "Бувай! До зустрічі завтра.",
+    "example_spanish": "¡Adiós! Hasta mañana.",
+    "example_german": "Tschüss! Wir sehen uns morgen.",
+    "level": "A1",
+    "category": "greetings",
+    "part": "phrase"
+  },
+  {
+    "id": "v-a1-greetings-012",
+    "norsk": "Jeg forstår ikke",
+    "lemma": "Jeg forstår ikke",
+    "english": "I don't understand",
+    "ukrainian": "Я не розумію",
+    "spanish": "No entiendo",
+    "german": "Ich verstehe nicht",
+    "example": "Jeg forstår ikke. Kan du snakke saktere?",
+    "example_english": "I don't understand. Can you speak more slowly?",
+    "example_ukrainian": "Я не розумію. Можеш говорити повільніше?",
+    "example_spanish": "No entiendo. ¿Puedes hablar más despacio?",
+    "example_german": "Ich verstehe nicht. Kannst du langsamer sprechen?",
+    "level": "A1",
+    "category": "greetings",
+    "part": "phrase"
   },
   {
     "id": "v-a1-numbers-001",
@@ -6104,6 +6172,23 @@
     "part": "noun"
   },
   {
+    "id": "v-a1-transportation-020",
+    "norsk": "rett frem",
+    "lemma": "rett frem",
+    "english": "straight ahead",
+    "ukrainian": "прямо",
+    "spanish": "todo recto / derecho",
+    "german": "geradeaus",
+    "example": "Gå rett frem til rundkjøringen.",
+    "example_english": "Go straight ahead to the roundabout.",
+    "example_ukrainian": "Ідіть прямо до кільцевого перехрестя.",
+    "example_spanish": "Sigue todo recto hasta la rotonda.",
+    "example_german": "Geh geradeaus bis zum Kreisverkehr.",
+    "level": "A1",
+    "category": "transportation",
+    "part": "phrase"
+  },
+  {
     "id": "v-a1-household-items-001",
     "norsk": "bad (et)",
     "lemma": "bad",
@@ -7636,7 +7721,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a1-greetings-009",
+    "id": "v-a1-greetings-013",
     "norsk": "Beklager",
     "lemma": "Beklager",
     "english": "I'm sorry",
@@ -7653,7 +7738,7 @@
     "part": "interjection"
   },
   {
-    "id": "v-a1-greetings-010",
+    "id": "v-a1-greetings-014",
     "norsk": "å ses",
     "lemma": "ses",
     "english": "see you",
@@ -7704,7 +7789,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a1-greetings-011",
+    "id": "v-a1-greetings-015",
     "norsk": "jammen",
     "lemma": "jammen",
     "english": "well / indeed",

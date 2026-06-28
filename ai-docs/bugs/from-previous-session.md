@@ -1,14 +1,3 @@
-1. Need a script to check data json file if it follows the rules:
-   The following applied to `norsk` field. For `lemma` field all should be dictionary form.
-
-1. Nouns: Show the dictionary form with gender in parentheses, e.g. hus (et). This tells learners whether the noun is en, et, or ei, which is the most important information after the word itself.
-1. Verbs: Show the infinitive with å, e.g. å få. This is the standard dictionary form and clearly identifies it as a verb.
-1. Adjectives: Show the dictionary form, e.g. glad. Inflected forms are better covered in grammar lessons.
-
-Examples: hus (et), å få, glad.
-
----
-
 ME: I have a question about src/lib/data/vocab-xx.json and uttrykk-xx.json files. The following is for my vocab entry rules:
 
 ```

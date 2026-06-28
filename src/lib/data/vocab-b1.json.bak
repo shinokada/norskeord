@@ -4087,6 +4087,24 @@
   },
   {
     "id": "v-b1-economics-019",
+    "norsk": "veksle penger",
+    "lemma": "veksle penger",
+    "english": "to exchange money",
+    "ukrainian": "обміняти гроші",
+    "spanish": "cambiar dinero",
+    "german": "Geld wechseln",
+    "example": "Jeg veksler euro til norske kroner.",
+    "example_english": "I exchange euros to Norwegian kroner.",
+    "example_ukrainian": "Я обмінюю євро на норвезькі крони.",
+    "example_spanish": "Cambio euros a coronas noruegas.",
+    "example_german": "Ich wechsle Euro in norwegische Kronen.",
+    "definition": "Å bytte penger fra én valuta til en annen.",
+    "level": "B1",
+    "category": "economics",
+    "part": "phrase"
+  },
+  {
+    "id": "v-b1-economics-020",
     "norsk": "velstand (en)",
     "lemma": "velstand",
     "english": "prosperity / wealth",
@@ -4104,7 +4122,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-economics-020",
+    "id": "v-b1-economics-021",
     "norsk": "å betale ned",
     "lemma": "betale ned",
     "english": "to pay off",
@@ -4122,7 +4140,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-economics-021",
+    "id": "v-b1-economics-022",
     "norsk": "å øke",
     "lemma": "øke",
     "english": "to increase / to grow",
@@ -5509,6 +5527,24 @@
   },
   {
     "id": "v-b1-expressing-opinions-007",
+    "norsk": "blaffen",
+    "lemma": "blaffen",
+    "english": "couldn't care less / don't give a damn",
+    "ukrainian": "мені байдуже / мені однаково",
+    "spanish": "me importa un comino / me tiene sin cuidado",
+    "german": "das ist mir egal / das ist mir völlig egal",
+    "example": "Det er meg blaffen hva andre synes om stilen min.",
+    "example_english": "I couldn't care less what others think about my style.",
+    "example_ukrainian": "Мені байдуже, що інші думають про мій стиль.",
+    "example_spanish": "Me importa un comino lo que otros piensen de mi estilo.",
+    "example_german": "Es ist mir egal, was andere von meinem Stil halten.",
+    "definition": "Et uttrykk man bruker for å si at man ikke bryr seg om noe i det hele tatt.",
+    "level": "B1",
+    "category": "expressing-opinions",
+    "part": "phrase"
+  },
+  {
+    "id": "v-b1-expressing-opinions-008",
     "norsk": "blink (et)",
     "lemma": "blink",
     "english": "bullseye / perfect hit / wink",
@@ -5526,7 +5562,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-expressing-opinions-008",
+    "id": "v-b1-expressing-opinions-009",
     "norsk": "bortkastet",
     "lemma": "bortkastet",
     "english": "wasted",
@@ -5544,7 +5580,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-009",
+    "id": "v-b1-expressing-opinions-010",
     "norsk": "dessuten",
     "lemma": "dessuten",
     "english": "furthermore / besides / in addition",
@@ -5562,7 +5598,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-010",
+    "id": "v-b1-expressing-opinions-011",
     "norsk": "dypt",
     "lemma": "dypt",
     "english": "deeply / deep",
@@ -5580,7 +5616,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-011",
+    "id": "v-b1-expressing-opinions-012",
     "norsk": "egentlig",
     "lemma": "egentlig",
     "english": "actually / really",
@@ -5598,7 +5634,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-012",
+    "id": "v-b1-expressing-opinions-013",
     "norsk": "ende (en)",
     "lemma": "ende",
     "english": "end, tip, bottom",
@@ -5616,7 +5652,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-expressing-opinions-013",
+    "id": "v-b1-expressing-opinions-014",
     "norsk": "endelig",
     "lemma": "endelig",
     "english": "finally, at last",
@@ -5634,7 +5670,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-014",
+    "id": "v-b1-expressing-opinions-015",
     "norsk": "enig",
     "lemma": "enig",
     "english": "in agreement / agreed",
@@ -5652,7 +5688,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-015",
+    "id": "v-b1-expressing-opinions-016",
     "norsk": "enkel",
     "lemma": "enkel",
     "english": "simple, easy",
@@ -5670,7 +5706,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-016",
+    "id": "v-b1-expressing-opinions-017",
     "norsk": "enorm",
     "lemma": "enorm",
     "english": "enormous, huge",
@@ -5688,7 +5724,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-017",
+    "id": "v-b1-expressing-opinions-018",
     "norsk": "å forakte",
     "lemma": "forakte",
     "english": "to despise / to scorn",
@@ -5706,7 +5742,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-expressing-opinions-018",
+    "id": "v-b1-expressing-opinions-019",
     "norsk": "foreløpig",
     "lemma": "foreløpig",
     "english": "for now / temporarily / preliminary",
@@ -5724,7 +5760,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-019",
+    "id": "v-b1-expressing-opinions-020",
     "norsk": "å forsvare",
     "lemma": "forsvare",
     "english": "to defend",
@@ -5742,7 +5778,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-expressing-opinions-020",
+    "id": "v-b1-expressing-opinions-021",
     "norsk": "fryktelig",
     "lemma": "fryktelig",
     "english": "terrible / awful",
@@ -5760,7 +5796,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-021",
+    "id": "v-b1-expressing-opinions-022",
     "norsk": "fæl",
     "lemma": "fæl",
     "english": "horrible / nasty / awful",
@@ -5778,7 +5814,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-022",
+    "id": "v-b1-expressing-opinions-023",
     "norsk": "gal",
     "lemma": "gal",
     "english": "wrong, incorrectly",
@@ -5796,7 +5832,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-023",
+    "id": "v-b1-expressing-opinions-024",
     "norsk": "å gidde",
     "lemma": "gidde",
     "english": "to bother, to be bothered to",
@@ -5814,7 +5850,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-expressing-opinions-024",
+    "id": "v-b1-expressing-opinions-025",
     "norsk": "gjennomtenkt",
     "lemma": "gjennomtenkt",
     "english": "considered / well thought-out",
@@ -5832,7 +5868,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-025",
+    "id": "v-b1-expressing-opinions-026",
     "norsk": "greit",
     "lemma": "greit",
     "english": "okay, fine, alright",
@@ -5850,7 +5886,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-026",
+    "id": "v-b1-expressing-opinions-027",
     "norsk": "gøy",
     "lemma": "gøy",
     "english": "fun, enjoyable",
@@ -5868,7 +5904,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-027",
+    "id": "v-b1-expressing-opinions-028",
     "norsk": "helseløs",
     "lemma": "helseløs",
     "english": "hopeless / utterly bad",
@@ -5886,7 +5922,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-028",
+    "id": "v-b1-expressing-opinions-029",
     "norsk": "å hende",
     "lemma": "hende",
     "english": "to happen / to occur",
@@ -5904,7 +5940,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-expressing-opinions-029",
+    "id": "v-b1-expressing-opinions-030",
     "norsk": "ideell",
     "lemma": "ideell",
     "english": "ideal / perfect",
@@ -5922,7 +5958,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-030",
+    "id": "v-b1-expressing-opinions-031",
     "norsk": "ille",
     "lemma": "ille",
     "english": "bad, badly, seriously",
@@ -5940,7 +5976,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-031",
+    "id": "v-b1-expressing-opinions-032",
     "norsk": "imponert",
     "lemma": "imponert",
     "english": "impressed",
@@ -5958,7 +5994,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-032",
+    "id": "v-b1-expressing-opinions-033",
     "norsk": "irrelevant",
     "lemma": "irrelevant",
     "english": "irrelevant",
@@ -5976,7 +6012,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-033",
+    "id": "v-b1-expressing-opinions-034",
     "norsk": "knapt",
     "lemma": "knapt",
     "english": "barely, hardly, scarcely",
@@ -5994,7 +6030,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-034",
+    "id": "v-b1-expressing-opinions-035",
     "norsk": "komplisert",
     "lemma": "komplisert",
     "english": "complicated",
@@ -6012,7 +6048,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-035",
+    "id": "v-b1-expressing-opinions-036",
     "norsk": "konkret",
     "lemma": "konkret",
     "english": "concrete, specific",
@@ -6030,7 +6066,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-036",
+    "id": "v-b1-expressing-opinions-037",
     "norsk": "kritisk",
     "lemma": "kritisk",
     "english": "critical",
@@ -6048,7 +6084,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-037",
+    "id": "v-b1-expressing-opinions-038",
     "norsk": "mulig",
     "lemma": "mulig",
     "english": "possible",
@@ -6066,7 +6102,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-038",
+    "id": "v-b1-expressing-opinions-039",
     "norsk": "nødvendig",
     "lemma": "nødvendig",
     "english": "necessary",
@@ -6084,7 +6120,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-039",
+    "id": "v-b1-expressing-opinions-040",
     "norsk": "omstridt",
     "lemma": "omstridt",
     "english": "controversial",
@@ -6102,7 +6138,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-040",
+    "id": "v-b1-expressing-opinions-041",
     "norsk": "oppmuntrende",
     "lemma": "oppmuntrende",
     "english": "encouraging",
@@ -6120,7 +6156,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-041",
+    "id": "v-b1-expressing-opinions-042",
     "norsk": "overraskende",
     "lemma": "overraskende",
     "english": "surprising",
@@ -6138,7 +6174,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-042",
+    "id": "v-b1-expressing-opinions-043",
     "norsk": "rar",
     "lemma": "rar",
     "english": "strange, odd, weird",
@@ -6156,7 +6192,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-043",
+    "id": "v-b1-expressing-opinions-044",
     "norsk": "rasende",
     "lemma": "rasende",
     "english": "furious, raging, enraged",
@@ -6174,7 +6210,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-044",
+    "id": "v-b1-expressing-opinions-045",
     "norsk": "relevant",
     "lemma": "relevant",
     "english": "relevant",
@@ -6192,7 +6228,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-045",
+    "id": "v-b1-expressing-opinions-046",
     "norsk": "rimelig",
     "lemma": "rimelig",
     "english": "reasonable / fair",
@@ -6210,7 +6246,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-046",
+    "id": "v-b1-expressing-opinions-047",
     "norsk": "sannsynlig",
     "lemma": "sannsynlig",
     "english": "likely / probable",
@@ -6228,7 +6264,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-047",
+    "id": "v-b1-expressing-opinions-048",
     "norsk": "skeptisk",
     "lemma": "skeptisk",
     "english": "skeptical",
@@ -6246,7 +6282,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-048",
+    "id": "v-b1-expressing-opinions-049",
     "norsk": "skikkelig",
     "lemma": "skikkelig",
     "english": "proper, decent, really",
@@ -6264,7 +6300,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-049",
+    "id": "v-b1-expressing-opinions-050",
     "norsk": "spennende",
     "lemma": "spennende",
     "english": "exciting, thrilling",
@@ -6282,7 +6318,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-050",
+    "id": "v-b1-expressing-opinions-051",
     "norsk": "spesiell",
     "lemma": "spesiell",
     "english": "special, particular, unique",
@@ -6300,7 +6336,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-051",
+    "id": "v-b1-expressing-opinions-052",
     "norsk": "stadig",
     "lemma": "stadig",
     "english": "constantly, still, increasingly",
@@ -6318,7 +6354,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-052",
+    "id": "v-b1-expressing-opinions-053",
     "norsk": "supersøt",
     "lemma": "supersøt",
     "english": "super cute / adorable",
@@ -6336,7 +6372,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-053",
+    "id": "v-b1-expressing-opinions-054",
     "norsk": "synd (en)",
     "lemma": "synd",
     "english": "a pity / shame / sin",
@@ -6354,7 +6390,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-expressing-opinions-054",
+    "id": "v-b1-expressing-opinions-055",
     "norsk": "å trenge",
     "lemma": "trenge",
     "english": "to need",
@@ -6372,7 +6408,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-expressing-opinions-055",
+    "id": "v-b1-expressing-opinions-056",
     "norsk": "tvil (en)",
     "lemma": "tvil",
     "english": "doubt",
@@ -6390,7 +6426,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-expressing-opinions-056",
+    "id": "v-b1-expressing-opinions-057",
     "norsk": "tydeligvis",
     "lemma": "tydeligvis",
     "english": "obviously, clearly, apparently",
@@ -6408,7 +6444,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-057",
+    "id": "v-b1-expressing-opinions-058",
     "norsk": "typisk",
     "lemma": "typisk",
     "english": "typical",
@@ -6426,7 +6462,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-058",
+    "id": "v-b1-expressing-opinions-059",
     "norsk": "uansett",
     "lemma": "uansett",
     "english": "regardless, anyway, no matter what",
@@ -6444,7 +6480,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-expressing-opinions-059",
+    "id": "v-b1-expressing-opinions-060",
     "norsk": "uenig",
     "lemma": "uenig",
     "english": "in disagreement / disagreeing",
@@ -6462,7 +6498,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-060",
+    "id": "v-b1-expressing-opinions-061",
     "norsk": "ulik",
     "lemma": "ulik",
     "english": "different, unlike",
@@ -6480,7 +6516,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-061",
+    "id": "v-b1-expressing-opinions-062",
     "norsk": "umulig",
     "lemma": "umulig",
     "english": "impossible",
@@ -6498,7 +6534,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-062",
+    "id": "v-b1-expressing-opinions-063",
     "norsk": "urettferdig",
     "lemma": "urettferdig",
     "english": "unfair, unjust",
@@ -6516,7 +6552,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-063",
+    "id": "v-b1-expressing-opinions-064",
     "norsk": "urimelig",
     "lemma": "urimelig",
     "english": "unreasonable",
@@ -6534,7 +6570,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-064",
+    "id": "v-b1-expressing-opinions-065",
     "norsk": "usannsynlig",
     "lemma": "usannsynlig",
     "english": "unlikely / improbable",
@@ -6552,7 +6588,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-065",
+    "id": "v-b1-expressing-opinions-066",
     "norsk": "å velge",
     "lemma": "velge",
     "english": "to choose / to elect",
@@ -6570,7 +6606,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-expressing-opinions-066",
+    "id": "v-b1-expressing-opinions-067",
     "norsk": "viktig",
     "lemma": "viktig",
     "english": "important",
@@ -6588,7 +6624,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-067",
+    "id": "v-b1-expressing-opinions-068",
     "norsk": "viss",
     "lemma": "viss",
     "english": "certain / sure",
@@ -6606,7 +6642,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-expressing-opinions-068",
+    "id": "v-b1-expressing-opinions-069",
     "norsk": "ytring (en)",
     "lemma": "ytring",
     "english": "expression / statement / utterance",
@@ -6624,7 +6660,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-expressing-opinions-069",
+    "id": "v-b1-expressing-opinions-070",
     "norsk": "åpenbar",
     "lemma": "åpenbar",
     "english": "obvious / evident",

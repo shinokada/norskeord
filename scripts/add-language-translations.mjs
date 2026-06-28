@@ -103,8 +103,16 @@ const hasFlag = (flag) => args.includes(flag);
 const dryRun = hasFlag('--dry-run');
 const force = hasFlag('--force');
 const batchSize = parseInt(getArg('--batch') ?? DEFAULT_BATCH, 10);
-const filesArg = getArg('--files');
-const filesToProcess = filesArg ? filesArg.split(',').map((f) => f.trim()) : DEFAULT_FILES;
+const filesIdx = args.indexOf('--files');
+let filesToProcess = DEFAULT_FILES;
+if (filesIdx !== -1) {
+  const collected = [];
+  for (let i = filesIdx + 1; i < args.length; i++) {
+    if (args[i].startsWith('--')) break;
+    collected.push(...args[i].split(',').map((f) => f.trim()).filter(Boolean));
+  }
+  if (collected.length) filesToProcess = collected;
+}
 
 const language = getArg('--language') ?? 'ukrainian';
 if (!(language in LANGUAGE_CONFIG)) {
@@ -190,7 +198,7 @@ For each numbered Norwegian word/phrase below, provide:
 1. "translation" — the ${languageMeta.name} translation of the "norsk" value. Use the "english" value and "part" to disambiguate meaning where the Norwegian word is ambiguous. Keep it as a single natural translation a learner would actually use, not a literal gloss.
 2. "example_translation" — a natural ${languageMeta.name} sentence that conveys the same meaning as "example", using vocabulary no harder than the item's own CEFR "level" (given per item below) so the sentence itself stays easy to read at that level. Set this to null if no natural, useful translation of the example exists for this item.
 
-Respond ONLY with a JSON object where each key is the item number as a string ("1", "2", ...) and the value is an object with "translation" and "example_translation". No markdown formatting, no preamble, no extra commentary.
+Respond ONLY with a JSON object where each key is the item number as a string ("1", "2", ...) and the value is an object with "translation" and "example_translation". No markdown formatting, no preamble, no extra commentary. IMPORTANT: within JSON string values, avoid typographic quote characters (such as German „” or guillemets «»). Use regular single quotes instead when quoting speech in example sentences.
 
 Example output format:
 {
@@ -227,8 +235,14 @@ Example output format:
     .replace(/\n?```$/m, '')
     .trim();
 
+  // Sanitise typographic/curly quotes that some languages (e.g. German) use
+  // for quoted speech inside string values. Replacing them with ASCII single
+  // quotes preserves the meaning while keeping the JSON well-formed.
+  const sanitized = clean
+    .replace(/[„“”«»‘’]/g, "'");
+
   try {
-    return JSON.parse(clean);
+    return JSON.parse(sanitized);
   } catch {
     throw new Error(`Failed to parse JSON response:\n${text}`);
   }
