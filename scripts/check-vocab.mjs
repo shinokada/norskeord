@@ -224,7 +224,18 @@ const REQUIRED_FIELDS = [
 ];
 
 // All translation languages the app supports.
-const KNOWN_LANGUAGES = ['ukrainian', 'spanish', 'german', 'romanian', 'french', 'polish', 'arabic', 'turkish', 'dutch', 'italian'];
+const KNOWN_LANGUAGES = [
+  'ukrainian',
+  'spanish',
+  'german',
+  'romanian',
+  'french',
+  'polish',
+  'arabic',
+  'turkish',
+  'dutch',
+  'italian'
+];
 
 const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c'];
 
@@ -439,7 +450,9 @@ for (const level of LEVELS) {
       for (const lang of langsInFile) {
         if (!entry[lang] || entry[lang] === '') {
           fileWarnings++;
-          console.log(`  ⚠️   ${loc}: missing "${lang}" translation (other entries in this file have it)`);
+          console.log(
+            `  ⚠️   ${loc}: missing "${lang}" translation (other entries in this file have it)`
+          );
         }
       }
     }

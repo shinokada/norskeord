@@ -57,7 +57,18 @@ const VALID_CATEGORIES = new Set(['uttrykk', 'uttrykk-preview']);
 // All translation languages the app supports. Entries may not have all of these
 // (e.g. a file that hasn't been translated yet), but if a language field is
 // present then its example_{lang} counterpart must also be present, and vice-versa.
-const KNOWN_LANGUAGES = ['ukrainian', 'spanish', 'german', 'romanian', 'french', 'polish', 'arabic', 'turkish', 'dutch', 'italian'];
+const KNOWN_LANGUAGES = [
+  'ukrainian',
+  'spanish',
+  'german',
+  'romanian',
+  'french',
+  'polish',
+  'arabic',
+  'turkish',
+  'dutch',
+  'italian'
+];
 
 // ── Validators ────────────────────────────────────────────────────────────────
 
@@ -199,7 +210,9 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds) {
       for (const lang of langsInFile) {
         if (!entry[lang] || entry[lang] === '') {
           fileWarnings++;
-          console.log(`  ⚠️   ${loc}: missing "${lang}" translation (other entries in this file have it)`);
+          console.log(
+            `  ⚠️   ${loc}: missing "${lang}" translation (other entries in this file have it)`
+          );
         }
       }
     }

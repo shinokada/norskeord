@@ -31,7 +31,7 @@ const VOCAB_FILES = [
   'vocab-a2.json',
   'vocab-b1.json',
   'vocab-b2.json',
-  'vocab-c.json',
+  'vocab-c.json'
 ];
 
 const BATCH_SIZE = parseInt(
@@ -45,7 +45,10 @@ if (fs.existsSync(envPath)) {
   for (const line of envContent.split('\n')) {
     const [k, ...rest] = line.split('=');
     if (k && rest.length) {
-      process.env[k.trim()] = rest.join('=').trim().replace(/^["']|["']$/g, '');
+      process.env[k.trim()] = rest
+        .join('=')
+        .trim()
+        .replace(/^["']|["']$/g, '');
     }
   }
 }
@@ -108,7 +111,7 @@ async function classifyBatch(entries) {
       norsk: e.norsk,
       english: e.english,
       category: e.category,
-      level: e._level,
+      level: e._level
     })),
     null,
     2
@@ -119,14 +122,14 @@ async function classifyBatch(entries) {
     headers: {
       'Content-Type': 'application/json',
       'anthropic-version': '2023-06-01',
-      'x-api-key': API_KEY,
+      'x-api-key': API_KEY
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: 4096,
       system: SYSTEM_PROMPT,
-      messages: [{ role: 'user', content: userContent }],
-    }),
+      messages: [{ role: 'user', content: userContent }]
+    })
   });
 
   if (!response.ok) {
@@ -254,7 +257,7 @@ async function main() {
   const enriched = allEntries.map((e) => ({
     ...e,
     classification: byId[e.id]?.classification ?? null,
-    reason: byId[e.id]?.reason ?? null,
+    reason: byId[e.id]?.reason ?? null
   }));
 
   // Output
@@ -268,7 +271,8 @@ async function main() {
 
   // Console summary
   const counts = { type_a: 0, type_b: 0, borderline: 0, null: 0 };
-  for (const c of allClassifications) counts[c.classification] = (counts[c.classification] ?? 0) + 1;
+  for (const c of allClassifications)
+    counts[c.classification] = (counts[c.classification] ?? 0) + 1;
 
   console.log(`
 ✅ Done!
