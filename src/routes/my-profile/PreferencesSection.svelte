@@ -136,8 +136,16 @@
   $effect(() => {
     // Establish reactive dependencies on all fields.
     const _ = [
-      currentLevel, uiLanguage, flashcardLanguage, cardDirection,
-      cardType, voiceSpeed, voicePitch, sessionLimit, quizLimit, showExample
+      currentLevel,
+      uiLanguage,
+      flashcardLanguage,
+      cardDirection,
+      cardType,
+      voiceSpeed,
+      voicePitch,
+      sessionLimit,
+      quizLimit,
+      showExample
     ];
     if (!mounted) {
       mounted = true;

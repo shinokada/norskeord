@@ -17,11 +17,11 @@ changing any backend behaviour. Three focused improvements, in priority order:
 
 Replace these controls in `PreferencesSection.svelte` with toggle switches:
 
-| Setting | Current control | New control |
-|---|---|---|
-| Card direction (2-option only) | Radio group | Toggle (Norsk→L2 / L2→Norsk) |
-| Card type (Word / Phrase) | Radio group | Toggle |
-| Show example translation | Checkbox | Toggle |
+| Setting                        | Current control | New control                  |
+| ------------------------------ | --------------- | ---------------------------- |
+| Card direction (2-option only) | Radio group     | Toggle (Norsk→L2 / L2→Norsk) |
+| Card type (Word / Phrase)      | Radio group     | Toggle                       |
+| Show example translation       | Checkbox        | Toggle                       |
 
 > **Note:** Card direction has a third option (`def_l1`) for B1+ word mode.
 > When that third option is available, keep it as a compact segmented control
@@ -33,7 +33,12 @@ Create `src/lib/components/ui/Toggle.svelte`:
 
 ```svelte
 <script lang="ts">
-  let { checked = $bindable(), label, name, value = 'true' }: {
+  let {
+    checked = $bindable(),
+    label,
+    name,
+    value = 'true'
+  }: {
     checked: boolean;
     label: string;
     name: string;
@@ -68,6 +73,7 @@ This gives a tap-friendly target size (min 44px height) and avoids the tiny
 radio dot that's hard to hit on mobile.
 
 ### Files changed
+
 - `src/lib/components/ui/Toggle.svelte` — new component
 - `src/lib/components/ui/SegmentedControl.svelte` — new component
 - `src/routes/my-profile/PreferencesSection.svelte` — swap controls
@@ -106,11 +112,11 @@ section can trigger it.
 
 ### Save trigger per control type
 
-| Control | Trigger |
-|---|---|
-| Select (`<select>`) | `onchange` |
-| Toggle | `onchange` |
-| Segmented control | on segment click |
+| Control                   | Trigger                     |
+| ------------------------- | --------------------------- |
+| Select (`<select>`)       | `onchange`                  |
+| Toggle                    | `onchange`                  |
+| Segmented control         | on segment click            |
 | Text input (display name) | `oninput` + 600 ms debounce |
 
 Each change calls the existing `?/updatePreferences` (or `?/updateAccount`)
@@ -122,6 +128,7 @@ If the save fails, show the toast in red with the error message. No change to
 current error state logic.
 
 ### Files changed
+
 - `src/lib/components/ui/Toast.svelte` — new component
 - `src/lib/stores/toast.svelte.ts` — new tiny store
 - `src/routes/my-profile/PreferencesSection.svelte` — remove Save button, add auto-save
@@ -149,9 +156,7 @@ with:
 ```svelte
 <details class="group">
   <summary class="cursor-pointer list-none">
-    <span class="text-sm font-medium text-red-500 hover:text-red-400">
-      ▸ Danger Zone
-    </span>
+    <span class="text-sm font-medium text-red-500 hover:text-red-400"> ▸ Danger Zone </span>
   </summary>
   <div class="mt-3">
     <DangerZone />
@@ -164,6 +169,7 @@ Use CSS `group-open` (Tailwind) to rotate the arrow when open.
 No changes needed inside `DangerZone.svelte` itself.
 
 ### Files changed
+
 - `src/routes/my-profile/+page.svelte` — wrap DangerZone in `<details>`
 
 ---

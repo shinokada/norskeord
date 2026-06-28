@@ -1023,7 +1023,9 @@
         onclick={undo}
         disabled={!undoSnapshot}
         tabindex={undoSnapshot ? 0 : -1}
-        class="inline-flex min-w-28 items-center justify-center rounded-lg px-3 py-3 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-40 {undoSnapshot ? 'bg-amber-500 hover:bg-amber-600' : 'bg-indigo-700'}"
+        class="inline-flex min-w-28 items-center justify-center rounded-lg px-3 py-3 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-40 {undoSnapshot
+          ? 'bg-amber-500 hover:bg-amber-600'
+          : 'bg-indigo-700'}"
       >
         ↩ {undoSnapshot ? m.flashcard_undo_countdown({ seconds: String(undoCountdown) }) : 'Undo'}
       </button>

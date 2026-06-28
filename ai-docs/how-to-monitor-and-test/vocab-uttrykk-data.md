@@ -119,6 +119,7 @@ For nouns the script CANNOT know the gender without a dictionary, so it uses the
 ```
 
 ## Count data entries
+
 Prints a table of entry counts per category for each vocab level. Also covers uttrykk files (excludes -preview variants).
 
 ```bash

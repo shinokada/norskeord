@@ -36,8 +36,8 @@ const LOCALES = ['en', 'nb', 'es', 'uk', 'de'];
 for (const locale of LOCALES) {
   const path = resolve(messagesDir, `${locale}.json`);
   const data = JSON.parse(readFileSync(path, 'utf8'));
-  const removed = KEYS_TO_REMOVE.filter(k => k in data);
-  removed.forEach(k => delete data[k]);
+  const removed = KEYS_TO_REMOVE.filter((k) => k in data);
+  removed.forEach((k) => delete data[k]);
   writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
   console.log(`${locale}.json — removed: ${removed.join(', ') || 'nothing to remove'}`);
 }

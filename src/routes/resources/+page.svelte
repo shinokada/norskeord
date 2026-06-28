@@ -19,9 +19,15 @@
       },
       resources: [
         { name: 'Røde Kors Norsktrening', href: 'https://www.rodekors.no/tilbudene/norsktrening/' },
-        { name: 'Røde Kors Online', href: 'https://oslo.norsktrening.rodekors.no/pamelding/digital/norsktrening' },
+        {
+          name: 'Røde Kors Online',
+          href: 'https://oslo.norsktrening.rodekors.no/pamelding/digital/norsktrening'
+        },
         { name: 'Caritas Norge', href: 'https://caritas.no/kurs/norsktrening-2/' },
-        { name: 'KIA Norge', href: 'https://www.kianorge.no/aktivitet/sprakkafe-i-oslo-tullinsgate' }
+        {
+          name: 'KIA Norge',
+          href: 'https://www.kianorge.no/aktivitet/sprakkafe-i-oslo-tullinsgate'
+        }
       ]
     },
     {
@@ -50,7 +56,10 @@
       resources: [
         { name: 'Lesnorsk', href: 'https://lesnorsk.no/' },
         { name: 'Klar Tale', href: 'https://www.klartale.no/' },
-        { name: 'Deichman — Lettlest', href: 'https://deichman.no/sok/form:%20%22Lettlest%2C%20enkelt%20innhold%22?language=languages_Norsk+%28bokm%C3%A5l%29&audience=work.audiences_Voksne' },
+        {
+          name: 'Deichman — Lettlest',
+          href: 'https://deichman.no/sok/form:%20%22Lettlest%2C%20enkelt%20innhold%22?language=languages_Norsk+%28bokm%C3%A5l%29&audience=work.audiences_Voksne'
+        },
         { name: 'Barnebøker for Norge', href: 'https://barneboker.no/' }
       ]
     },
@@ -153,8 +162,7 @@
             >
               {resource.name}
             </p>
-            <span
-              class="ml-3 shrink-0 text-gray-700 group-hover:text-blue-400 dark:text-gray-300"
+            <span class="ml-3 shrink-0 text-gray-700 group-hover:text-blue-400 dark:text-gray-300"
               >↗</span
             >
           </a>

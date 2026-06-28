@@ -21,7 +21,7 @@ const VOCAB_FILES = [
   { level: 'A2', file: 'vocab-a2.json' },
   { level: 'B1', file: 'vocab-b1.json' },
   { level: 'B2', file: 'vocab-b2.json' },
-  { level: 'C',  file: 'vocab-c.json'  },
+  { level: 'C', file: 'vocab-c.json' }
 ];
 
 const UTTRYKK_FILES = [
@@ -29,7 +29,7 @@ const UTTRYKK_FILES = [
   { level: 'A2', file: 'uttrykk-a2.json' },
   { level: 'B1', file: 'uttrykk-b1.json' },
   { level: 'B2', file: 'uttrykk-b2.json' },
-  { level: 'C',  file: 'uttrykk-c.json'  },
+  { level: 'C', file: 'uttrykk-c.json' }
 ];
 
 function loadJson(file) {
