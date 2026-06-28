@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.42.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added German language support across the app.
+    - Updated flashcards with clearer Show/Hide controls and improved pronunciation button layouts.
+    - Refreshed several help and learning pages with better organization and updated guidance.
+  - **Bug Fixes**
+    - Improved mobile flashcard spacing, navigation, and overflow behavior.
+    - Cleaned up duplicate and inconsistent content in vocabulary data for a more reliable learning experience.
+  - **Documentation**
+    - Updated setup and reference notes for vocabulary, expressions, and language rules.
+
 ## 2.41.1
 
 ### Patch Changes
