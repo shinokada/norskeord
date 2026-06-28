@@ -1,17 +1,16 @@
 <script lang="ts">
-  import { enhance } from '$app/forms';
   import type { Profile } from '$lib/server/profile';
   import * as m from '$lib/paraglide/messages.js';
+  import { toast } from '$lib/stores/toast.svelte';
 
-  let { profile, missingFields = [] }: { profile: Profile | null; missingFields: string[] } =
+  let { profile, missingFields = [], email = '' }: { profile: Profile | null; missingFields: string[]; email?: string } =
     $props();
 
-  let saving = $state(false);
-  let saved = $state(false);
-  let errorMsg = $state('');
+  let displayName = $state(profile?.display_name ?? '');
+  let debounceTimer: ReturnType<typeof setTimeout> | null = null;
 
   const initials = $derived(() => {
-    const name = profile?.display_name ?? '';
+    const name = displayName;
     if (name.trim()) {
       return name
         .trim()
@@ -23,8 +22,23 @@
     return '?';
   });
 
-  function _handleExport() {
-    window.location.href = '/api/export';
+  async function saveAccount(name: string) {
+    const body = new FormData();
+    body.append('display_name', name);
+    try {
+      const res = await fetch('?/updateAccount', { method: 'POST', body });
+      if (!res.ok) throw new Error();
+      toast.show(m.profile_saved());
+    } catch {
+      toast.show(m.profile_error_generic(), 'error');
+    }
+  }
+
+  function onDisplayNameInput(e: Event) {
+    const value = (e.currentTarget as HTMLInputElement).value;
+    displayName = value;
+    if (debounceTimer) clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => saveAccount(value), 800);
   }
 
   let reportLoading = $state(false);
@@ -32,7 +46,6 @@
   async function handleProgressReport() {
     reportLoading = true;
     try {
-      // Read progressMap from localStorage
       const progressMap: Record<string, unknown> = {};
       for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
@@ -54,7 +67,6 @@
 
       if (!res.ok) throw new Error('Failed');
 
-      // Open the HTML report in a new tab — window.print() fires automatically
       const html = await res.text();
       const blob = new Blob([html], { type: 'text/html' });
       const url = URL.createObjectURL(blob);
@@ -69,13 +81,13 @@
 </script>
 
 <section
-  class="rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-white/10 dark:bg-indigo-950/60"
+  class="rounded-xl border border-gray-200 bg-gray-50 px-6 pb-6 pt-4 dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_account_heading()}
   </h2>
 
-  <!-- Avatar placeholder -->
+  <!-- Avatar -->
   <div class="mb-6">
     <div
       class="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-lg font-bold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
@@ -84,26 +96,8 @@
     </div>
   </div>
 
-  <form
-    method="POST"
-    action="?/updateAccount"
-    use:enhance={() => {
-      saving = true;
-      saved = false;
-      errorMsg = '';
-      return async ({ result, update }) => {
-        saving = false;
-        if (result.type === 'success') {
-          saved = true;
-          setTimeout(() => (saved = false), 2500);
-        } else if (result.type === 'failure') {
-          errorMsg = (result.data?.message as string) ?? m.profile_error_generic();
-        }
-        await update();
-      };
-    }}
-    class="space-y-4"
-  >
+  <div class="space-y-4">
+    <!-- Display name -->
     <div>
       <label
         for="display_name"
@@ -123,32 +117,23 @@
         name="display_name"
         type="text"
         maxlength="40"
-        value={profile?.display_name ?? ''}
+        value={displayName}
+        oninput={onDisplayNameInput}
         placeholder={m.profile_account_display_name_placeholder()}
         class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none sm:max-w-xs dark:border-white/20 dark:bg-indigo-900/30 dark:text-gray-100 dark:placeholder-gray-500"
       />
-      {#if errorMsg}
-        <p class="mt-1 text-xs text-red-500">{errorMsg}</p>
-      {/if}
     </div>
 
+    <!-- Email -->
     <div>
       <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_account_email()}
       </p>
-      <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
-        {m.profile_account_email_hint()}
-      </p>
+      {#if email}
+        <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-400">{email}</p>
+      {/if}
     </div>
-
-    <button
-      type="submit"
-      disabled={saving}
-      class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
-    >
-      {saving ? m.profile_saving() : saved ? m.profile_saved() : m.profile_save()}
-    </button>
-  </form>
+  </div>
 
   <!-- Progress report -->
   <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
