@@ -715,7 +715,7 @@
   <!-- 3-A: Plus upsell banner for free users (shown below controls) -->
   {#if !isPlus && dueCount > 0}
     <div
-      class="mt-3 w-full max-w-lg rounded-xl border border-orange-200 bg-orange-50 px-5 py-4 dark:border-orange-800 dark:bg-orange-900/20"
+      class="mt-3 w-full max-w-lg rounded-xl border border-orange-200 bg-orange-50 py-4 dark:border-orange-800 dark:bg-orange-900/20"
     >
       <p class="font-semibold text-orange-700 dark:text-orange-300">
         {m.flashcard_plus_due_heading()}
@@ -976,12 +976,13 @@
     </div>
   {/if}
 
-  <!-- Part of speech badge & Pronounce -->
+  <!-- Part of speech badge, Pronounce (word), and Undo -->
   {#if !completed && current}
-    <div class="mt-3 flex items-center gap-3">
+    <!-- Pronounce + badge + Undo row -->
+    <div class="mt-3 flex w-full max-w-lg items-center gap-2">
       {#if cardType !== 'phrase'}
         <span
-          class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+          class="shrink-0 rounded-lg bg-indigo-100 px-3 py-3 text-sm font-medium text-indigo-800 dark:bg-indigo-800/50 dark:text-indigo-200"
         >
           {current.entry.part === 'noun'
             ? m.part_noun()
@@ -1002,16 +1003,20 @@
                           : m.part_phrase()}
         </span>
       {/if}
-      <SpeakButton
-        bind:this={speakButtonRef}
-        word={cardType === 'word' ? current.entry.norsk : current.entry.example}
-      />
+      <div class="flex-1">
+        <SpeakButton
+          bind:this={speakButtonRef}
+          word={cardType === 'word' ? current.entry.norsk : current.entry.example}
+          variant="icon-lg"
+          label="Pronounce"
+        />
+      </div>
       <button
         type="button"
         onclick={undo}
         disabled={!undoSnapshot}
         tabindex={undoSnapshot ? 0 : -1}
-        class="inline-flex min-w-28 items-center justify-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-yellow-900 dark:text-yellow-200 dark:hover:bg-yellow-800"
+        class="inline-flex min-w-28 items-center justify-center rounded-lg bg-yellow-100 px-3 py-3 text-sm font-medium text-yellow-800 hover:bg-yellow-200 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-yellow-900 dark:text-yellow-200 dark:hover:bg-yellow-800"
       >
         ↩ {undoSnapshot ? m.flashcard_undo_countdown({ seconds: String(undoCountdown) }) : 'Undo'}
       </button>
@@ -1020,36 +1025,42 @@
 
   <!-- Example / Word section -->
   {#if !completed && current}
-    <div class="mt-3 w-full max-w-lg rounded-lg bg-gray-50 px-5 py-4 text-center dark:bg-gray-800">
-      <div class="mb-2 flex justify-center">
-        <span
-          class="rounded-full bg-gray-200 px-3 py-0.5 text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300"
-          >{cardType === 'word' ? m.flashcard_phrase() : m.flashcard_word()}</span
-        >
-      </div>
-      <p class="text-base text-gray-700 italic dark:text-gray-300">
+    <div class="mt-3 w-full max-w-lg rounded-lg border border-gray-200 bg-white pt-4 pb-3 dark:border-white/10 dark:bg-indigo-950/60">
+      <p class="px-5 text-base text-gray-700 italic dark:text-gray-300">
         {currentExample}
       </p>
       {#if currentExampleTranslation}
         <div class="mt-2">
           {#if showExampleEnglish}
-            <p class="mb-1 text-sm text-gray-600 dark:text-gray-300">
+            <p class="mb-2 px-5 text-sm text-gray-600 dark:text-gray-300">
               {currentExampleTranslation}
             </p>
           {/if}
-          <div class="mt-2 flex items-center justify-center gap-3">
+          <div class="flex items-center gap-2 mx-3 mb-3">
+            <span
+              class="shrink-0 rounded-lg bg-indigo-100 px-3 py-2 text-sm font-medium text-indigo-800 dark:bg-indigo-800/50 dark:text-indigo-200"
+            >
+              {cardType === 'word' ? m.flashcard_phrase() : m.flashcard_word()}
+            </span>
+            <div class="flex-1">
+              <SpeakButton
+                bind:this={speakExampleRef}
+                word={currentExampleNorsk}
+                variant="icon-row"
+                label="Pronounce phrase"
+              />
+            </div>
             <button
               type="button"
-              class="text-sm text-blue-600 hover:underline dark:text-blue-400"
+              class="shrink-0 rounded-lg bg-indigo-100 px-3 py-2 text-sm font-medium text-indigo-800 hover:bg-indigo-200 dark:bg-indigo-800/50 dark:text-indigo-200 dark:hover:bg-indigo-700/50"
               onclick={() => {
                 showExampleEnglish = !showExampleEnglish;
                 showExampleDefault = showExampleEnglish;
                 localStorage.setItem(LS_SHOW_EXAMPLE, String(showExampleEnglish));
               }}
             >
-              {showExampleEnglish ? m.flashcard_hide_translation() : m.flashcard_show_translation()}
+              {showExampleEnglish ? m.flashcard_hide() : m.flashcard_show()}
             </button>
-            <SpeakButton bind:this={speakExampleRef} word={currentExampleNorsk} />
           </div>
         </div>
       {/if}
@@ -1062,7 +1073,7 @@
       type="button"
       onclick={prev}
       aria-label={m.flashcard_previous()}
-      class="inline-flex min-h-[44px] w-full items-center bg-gray-300 p-3 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+      class="inline-flex min-h-[44px] w-full items-center bg-indigo-900 p-3 text-indigo-100 hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
       disabled={currentIndex <= 0 && !completed}
     >
       <ArrowLeft class="mr-4" />
@@ -1071,7 +1082,7 @@
 
     <button
       type="button"
-      class="inline-flex min-h-[44px] w-full items-center justify-center bg-gray-300 p-3 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+      class="inline-flex min-h-[44px] w-full items-center justify-center bg-indigo-900 p-3 text-indigo-100 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 hover:bg-indigo-800 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
       aria-label={m.flashcard_restart()}
       onclick={restart}
       disabled={entries.length === 0}
@@ -1083,7 +1094,7 @@
       type="button"
       onclick={next}
       aria-label={m.flashcard_next()}
-      class="inline-flex min-h-[44px] w-full items-center bg-gray-300 p-3 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-gray-700"
+      class="inline-flex min-h-[44px] w-full items-center bg-indigo-900 p-3 text-indigo-100 hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
       disabled={completed || deck.length === 0}
     >
       <ArrowRight class="mr-4" />
