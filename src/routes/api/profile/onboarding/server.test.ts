@@ -128,6 +128,28 @@ describe('PATCH /api/profile/onboarding', () => {
     });
   });
 
+  it('throws 422 for an invalid flashcard_language', async () => {
+    await expect(
+      PATCH({
+        request: makeRequest({ flashcard_language: 'klingon' }),
+        locals: makeLocals()
+      } as never)
+    ).rejects.toMatchObject({
+      status: 422,
+      body: { message: expect.stringMatching(/invalid flashcard language/i) }
+    });
+  });
+
+  it('accepts flashcard_language german', async () => {
+    const res = await PATCH({
+      request: makeRequest({ flashcard_language: 'german' }),
+      locals: makeLocals()
+    } as never);
+    expect(res.status).toBe(200);
+    const [payload] = mockUpsert.mock.calls[0];
+    expect(payload.flashcard_language).toBe('german');
+  });
+
   it('throws 422 when study_goals is not an array', async () => {
     await expect(
       PATCH({ request: makeRequest({ study_goals: 'vocab' }), locals: makeLocals() } as never)

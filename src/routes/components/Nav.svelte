@@ -85,7 +85,9 @@
     langDropdownOpen = false;
     // Keep the flashcard translation language in sync with the chosen locale.
     // Look up the language key (e.g. 'spanish') whose code matches (e.g. 'es').
-    const matchedLang = Object.entries(LANGUAGES).find(([, v]) => v.code === code)?.[0] as FlashcardLanguage | undefined;
+    const matchedLang = Object.entries(LANGUAGES).find(([, v]) => v.code === code)?.[0] as
+      | FlashcardLanguage
+      | undefined;
     if (matchedLang && matchedLang in FLASHCARD_LANGUAGES) {
       languageStore.set(matchedLang);
     }

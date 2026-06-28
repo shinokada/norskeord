@@ -53,7 +53,7 @@ const LANG_NAMES = {
   arabic: 'Arabic',
   turkish: 'Turkish',
   dutch: 'Dutch',
-  italian: 'Italian',
+  italian: 'Italian'
 };
 
 // ── CLI args ──────────────────────────────────────────────────────────────────
@@ -75,13 +75,20 @@ let filesToProcess = [];
 if (filesIdx !== -1) {
   for (let i = filesIdx + 1; i < args.length; i++) {
     if (args[i].startsWith('--')) break;
-    filesToProcess.push(...args[i].split(',').map((f) => f.trim()).filter(Boolean));
+    filesToProcess.push(
+      ...args[i]
+        .split(',')
+        .map((f) => f.trim())
+        .filter(Boolean)
+    );
   }
 }
 
 if (filesToProcess.length === 0) {
   console.error('❌  --files is required. Example:');
-  console.error('    node scripts/fill-uttrykk-examples.mjs --files uttrykk-a1.json uttrykk-a2.json');
+  console.error(
+    '    node scripts/fill-uttrykk-examples.mjs --files uttrykk-a1.json uttrykk-a2.json'
+  );
   process.exit(1);
 }
 
@@ -92,7 +99,10 @@ if (fs.existsSync(envPath)) {
   for (const line of fs.readFileSync(envPath, 'utf8').split('\n')) {
     const [k, ...rest] = line.split('=');
     if (k && rest.length)
-      process.env[k.trim()] = rest.join('=').trim().replace(/^["']|["']$/g, '');
+      process.env[k.trim()] = rest
+        .join('=')
+        .trim()
+        .replace(/^["']|["']$/g, '');
   }
 }
 
@@ -106,8 +116,12 @@ if (!ANTHROPIC_API_KEY && !dryRun) {
 
 function needsFilling(entry) {
   if (force) return true;
-  return !entry.example || !entry.example.trim()
-      || !entry.example_english || !entry.example_english.trim();
+  return (
+    !entry.example ||
+    !entry.example.trim() ||
+    !entry.example_english ||
+    !entry.example_english.trim()
+  );
 }
 
 function detectLanguages(entry) {
@@ -121,17 +135,19 @@ function buildPrompt(batch) {
   const allLangs = [...new Set(batch.flatMap(detectLanguages))];
   const langList = allLangs.map((l) => `${l} (${LANG_NAMES[l]})`).join(', ');
 
-  const entries = batch.map((e) => {
-    const langs = detectLanguages(e);
-    const translations = langs.map((l) => `  "${l}": ${JSON.stringify(e[l])}`).join(',\n');
-    const needsDef = !e.definition || !e.definition.trim();
-    return `{
+  const entries = batch
+    .map((e) => {
+      const langs = detectLanguages(e);
+      const translations = langs.map((l) => `  "${l}": ${JSON.stringify(e[l])}`).join(',\n');
+      const needsDef = !e.definition || !e.definition.trim();
+      return `{
   "id": ${JSON.stringify(e.id)},
   "norsk": ${JSON.stringify(e.norsk)},
   "english": ${JSON.stringify(e.english)},
 ${translations}${needsDef ? ',\n  "_need_definition": true' : ''}
 }`;
-  }).join(',\n');
+    })
+    .join(',\n');
 
   return `You are a Norwegian language expert generating example sentences and definitions for a Norwegian language-learning app.
 
@@ -162,13 +178,13 @@ async function fetchExamples(batch) {
     headers: {
       'Content-Type': 'application/json',
       'x-api-key': ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01',
+      'anthropic-version': '2023-06-01'
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: 4096,
-      messages: [{ role: 'user', content: buildPrompt(batch) }],
-    }),
+      messages: [{ role: 'user', content: buildPrompt(batch) }]
+    })
   });
 
   if (!response.ok) {
@@ -201,7 +217,9 @@ async function withRetry(fn, label) {
     } catch (err) {
       if (attempt === MAX_RETRIES) throw err;
       const delay = RETRY_DELAY_MS * attempt;
-      console.warn(`  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retrying in ${delay}ms…`);
+      console.warn(
+        `  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retrying in ${delay}ms…`
+      );
       await new Promise((r) => setTimeout(r, delay));
     }
   }
@@ -228,7 +246,9 @@ async function processFile(filename) {
   }
 
   if (dryRun) {
-    console.log(`    🔍  DRY RUN — would fill ${toFill.length} entries in ${Math.ceil(toFill.length / batchSize)} batch(es).`);
+    console.log(
+      `    🔍  DRY RUN — would fill ${toFill.length} entries in ${Math.ceil(toFill.length / batchSize)} batch(es).`
+    );
     for (const e of toFill) {
       console.log(`       • ${e.id}: ${e.norsk} (${e.english})`);
     }
@@ -301,7 +321,9 @@ async function processFile(filename) {
   // Report any still-missing
   const stillMissing = data.filter(needsFilling);
   if (stillMissing.length > 0) {
-    console.warn(`    ⚠️  ${stillMissing.length} entries still missing examples — re-run to retry:`);
+    console.warn(
+      `    ⚠️  ${stillMissing.length} entries still missing examples — re-run to retry:`
+    );
     for (const e of stillMissing) console.warn(`       • ${e.id}: ${e.norsk}`);
   } else {
     console.log(`    🎯  All entries in ${filename} now have examples.`);

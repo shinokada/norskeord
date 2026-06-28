@@ -52,7 +52,10 @@ const OUTPUT_DIR = path.resolve(__dirname, 'outputs');
 // ── CLI args ──────────────────────────────────────────────────────────────────
 
 const args = process.argv.slice(2);
-const getArg = (flag) => { const i = args.indexOf(flag); return i !== -1 ? args[i + 1] : null; };
+const getArg = (flag) => {
+  const i = args.indexOf(flag);
+  return i !== -1 ? args[i + 1] : null;
+};
 const hasFlag = (flag) => args.includes(flag);
 
 const dryRun = hasFlag('--dry-run');
@@ -60,13 +63,13 @@ const onlyWithTranslations = hasFlag('--only-with-translations');
 const batchSize = parseInt(getArg('--batch') ?? '20', 10);
 const filesArg = getArg('--files');
 const langsArg = getArg('--languages');
-const langFilter = langsArg ? new Set(langsArg.split(',').map(s => s.trim())) : null;
+const langFilter = langsArg ? new Set(langsArg.split(',').map((s) => s.trim())) : null;
 
 if (!filesArg) {
   console.error('❌  --files is required. Example: --files vocab-b2.json');
   process.exit(1);
 }
-const filesToProcess = filesArg.split(',').map(s => s.trim());
+const filesToProcess = filesArg.split(',').map((s) => s.trim());
 
 // ── Load API key ──────────────────────────────────────────────────────────────
 
@@ -75,7 +78,10 @@ if (fs.existsSync(envPath)) {
   for (const line of fs.readFileSync(envPath, 'utf8').split('\n')) {
     const [k, ...rest] = line.split('=');
     if (k && rest.length)
-      process.env[k.trim()] = rest.join('=').trim().replace(/^["']|["']$/g, '');
+      process.env[k.trim()] = rest
+        .join('=')
+        .trim()
+        .replace(/^["']|["']$/g, '');
   }
 }
 
@@ -134,13 +140,13 @@ function buildUserPrompt(batch, langs) {
       `${i + 1}. norsk: "${e.norsk}"`,
       `   level: ${e.level}`,
       `   part: ${e.part}`,
-      `   example (norsk): "${e.example}"`,
+      `   example (norsk): "${e.example}"`
     ];
     for (const lang of langs) {
-      const transField = lang;                  // english, spanish, german, …
-      const exField    = `example_${lang}`;     // example_english, example_german, …
+      const transField = lang; // english, spanish, german, …
+      const exField = `example_${lang}`; // example_english, example_german, …
       if (e[transField] != null) parts.push(`   ${transField}: "${e[transField]}"`);
-      if (e[exField]    != null) parts.push(`   ${exField}: "${e[exField]}"`);
+      if (e[exField] != null) parts.push(`   ${exField}: "${e[exField]}"`);
     }
     return parts.join('\n');
   });
@@ -155,21 +161,24 @@ async function fetchAudit(batch, langs) {
     headers: {
       'Content-Type': 'application/json',
       'x-api-key': ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01',
+      'anthropic-version': '2023-06-01'
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: 4096,
       system: buildSystemPrompt(langs),
-      messages: [{ role: 'user', content: buildUserPrompt(batch, langs) }],
-    }),
+      messages: [{ role: 'user', content: buildUserPrompt(batch, langs) }]
+    })
   });
 
   if (!response.ok) throw new Error(`API error ${response.status}: ${await response.text()}`);
 
   const data = await response.json();
-  const text = data.content.map(b => b.text ?? '').join('');
-  const clean = text.replace(/^```(?:json)?\n?/m, '').replace(/\n?```$/m, '').trim();
+  const text = data.content.map((b) => b.text ?? '').join('');
+  const clean = text
+    .replace(/^```(?:json)?\n?/m, '')
+    .replace(/\n?```$/m, '')
+    .trim();
   try {
     return JSON.parse(clean);
   } catch {
@@ -181,12 +190,15 @@ async function fetchAudit(batch, langs) {
 
 async function withRetry(fn, label, maxRetries = 4) {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
-    try { return await fn(); }
-    catch (err) {
+    try {
+      return await fn();
+    } catch (err) {
       if (attempt === maxRetries) throw err;
       const delay = 2000 * attempt;
-      console.warn(`  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retry in ${delay}ms…`);
-      await new Promise(r => setTimeout(r, delay));
+      console.warn(
+        `  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retry in ${delay}ms…`
+      );
+      await new Promise((r) => setTimeout(r, delay));
     }
   }
 }
@@ -199,11 +211,18 @@ async function withRetry(fn, label, maxRetries = 4) {
 // add-language-translations.mjs are picked up automatically.
 function detectLanguages(entries) {
   // Collect every field that appears in at least one entry
-  const allFields = new Set(entries.flatMap(e => Object.keys(e)));
+  const allFields = new Set(entries.flatMap((e) => Object.keys(e)));
   // A language field looks like a plain word (no underscore) that is NOT one
   // of the structural fields. example_* fields tell us the language too.
   const structural = new Set([
-    'id', 'norsk', 'lemma', 'example', 'definition', 'level', 'category', 'part'
+    'id',
+    'norsk',
+    'lemma',
+    'example',
+    'definition',
+    'level',
+    'category',
+    'part'
   ]);
   const langs = new Set();
   for (const field of allFields) {
@@ -215,8 +234,8 @@ function detectLanguages(entries) {
     }
   }
   // Always put english first for readability
-  const sorted = ['english', ...([...langs].filter(l => l !== 'english').sort())];
-  return sorted.filter(l => langs.has(l));
+  const sorted = ['english', ...[...langs].filter((l) => l !== 'english').sort()];
+  return sorted.filter((l) => langs.has(l));
 }
 
 // ── Process one file ──────────────────────────────────────────────────────────
@@ -232,21 +251,39 @@ async function processFile(filename) {
 
   // Filter entries: if --only-with-translations, skip entries that only have english
   const toAudit = onlyWithTranslations
-    ? entries.filter(e => Object.keys(e).some(k => k !== 'english' && !k.startsWith('example_') && !['id','norsk','lemma','example','definition','level','category','part'].includes(k) && e[k] != null))
+    ? entries.filter((e) =>
+        Object.keys(e).some(
+          (k) =>
+            k !== 'english' &&
+            !k.startsWith('example_') &&
+            ![
+              'id',
+              'norsk',
+              'lemma',
+              'example',
+              'definition',
+              'level',
+              'category',
+              'part'
+            ].includes(k) &&
+            e[k] != null
+        )
+      )
     : entries;
 
   // Detect languages present
   const detectedLangs = detectLanguages(toAudit);
-  const langs = langFilter
-    ? detectedLangs.filter(l => langFilter.has(l))
-    : detectedLangs;
+  const langs = langFilter ? detectedLangs.filter((l) => langFilter.has(l)) : detectedLangs;
 
   console.log(`\n${'─'.repeat(60)}`);
   console.log(`📄  ${filename}  (${entries.length} total, ${toAudit.length} to audit)`);
   console.log(`    Languages: ${langs.join(', ')}`);
   console.log(`${'─'.repeat(60)}`);
 
-  if (toAudit.length === 0) { console.log('    Nothing to audit.'); return null; }
+  if (toAudit.length === 0) {
+    console.log('    Nothing to audit.');
+    return null;
+  }
 
   if (dryRun) {
     const batches = Math.ceil(toAudit.length / batchSize);
@@ -265,10 +302,7 @@ async function processFile(filename) {
     const batch = batches[bi];
     process.stdout.write(`    Batch ${bi + 1}/${batches.length} (${batch.length} items)… `);
 
-    const result = await withRetry(
-      () => fetchAudit(batch, langs),
-      `${filename} batch ${bi + 1}`
-    );
+    const result = await withRetry(() => fetchAudit(batch, langs), `${filename} batch ${bi + 1}`);
 
     let batchIssues = 0;
     for (let i = 0; i < batch.length; i++) {
@@ -286,21 +320,23 @@ async function processFile(filename) {
     console.log(marker);
 
     // Print issues immediately so you can monitor live
-    const batchStart = bi * batchSize;
+
     const batchEntryIssues = allIssues.slice(allIssues.length - batchIssues);
     for (const iss of batchEntryIssues) {
       const sev = iss.severity === 'error' ? '❌' : iss.severity === 'warning' ? '⚠️ ' : 'ℹ️ ';
       console.log(`      ${sev} [${iss.id}] ${iss.norsk} — ${iss.field}: ${iss.comment}`);
     }
 
-    if (bi < batches.length - 1) await new Promise(r => setTimeout(r, 1500));
+    if (bi < batches.length - 1) await new Promise((r) => setTimeout(r, 1500));
   }
 
   // Summarise
-  const errors   = allIssues.filter(i => i.severity === 'error').length;
-  const warnings = allIssues.filter(i => i.severity === 'warning').length;
-  const infos    = allIssues.filter(i => i.severity === 'info').length;
-  console.log(`\n    📊  ${errors} error(s), ${warnings} warning(s), ${infos} info(s) across ${toAudit.length} entries`);
+  const errors = allIssues.filter((i) => i.severity === 'error').length;
+  const warnings = allIssues.filter((i) => i.severity === 'warning').length;
+  const infos = allIssues.filter((i) => i.severity === 'info').length;
+  console.log(
+    `\n    📊  ${errors} error(s), ${warnings} warning(s), ${infos} info(s) across ${toAudit.length} entries`
+  );
 
   return { filename, audited: toAudit.length, errors, warnings, infos, issues: allIssues };
 }
@@ -314,7 +350,7 @@ function writeReports(results) {
     if (!r) continue;
     const base = r.filename.replace('.json', '');
     const jsonPath = path.join(OUTPUT_DIR, `audit-${base}-${ts}.json`);
-    const txtPath  = path.join(OUTPUT_DIR, `audit-${base}-${ts}.txt`);
+    const txtPath = path.join(OUTPUT_DIR, `audit-${base}-${ts}.txt`);
 
     fs.writeFileSync(jsonPath, JSON.stringify(r, null, 2) + '\n', 'utf8');
 
@@ -325,7 +361,7 @@ function writeReports(results) {
       `Audited:      ${r.audited} entries`,
       `Results:      ${r.errors} error(s), ${r.warnings} warning(s), ${r.infos} info(s)`,
       '',
-      '─'.repeat(70),
+      '─'.repeat(70)
     ];
 
     if (r.issues.length === 0) {
@@ -333,9 +369,14 @@ function writeReports(results) {
     } else {
       // Group by severity
       for (const severity of ['error', 'warning', 'info']) {
-        const group = r.issues.filter(i => i.severity === severity);
+        const group = r.issues.filter((i) => i.severity === severity);
         if (group.length === 0) continue;
-        const label = severity === 'error' ? '❌  ERRORS' : severity === 'warning' ? '⚠️   WARNINGS' : 'ℹ️   INFO';
+        const label =
+          severity === 'error'
+            ? '❌  ERRORS'
+            : severity === 'warning'
+              ? '⚠️   WARNINGS'
+              : 'ℹ️   INFO';
         lines.push(`\n${label} (${group.length})`);
         lines.push('─'.repeat(40));
         for (const iss of group) {
@@ -374,11 +415,16 @@ async function main() {
   // Overall summary
   const total = results.filter(Boolean);
   if (total.length > 0) {
-    const totErr  = total.reduce((s, r) => s + r.errors, 0);
+    const totErr = total.reduce((s, r) => s + r.errors, 0);
     const totWarn = total.reduce((s, r) => s + r.warnings, 0);
     console.log(`\n${'═'.repeat(60)}`);
-    console.log(`🏁  Done. ${totErr} error(s), ${totWarn} warning(s) across ${total.length} file(s)`);
+    console.log(
+      `🏁  Done. ${totErr} error(s), ${totWarn} warning(s) across ${total.length} file(s)`
+    );
   }
 }
 
-main().catch(err => { console.error('\n❌  Fatal:', err.message); process.exit(1); });
+main().catch((err) => {
+  console.error('\n❌  Fatal:', err.message);
+  process.exit(1);
+});
