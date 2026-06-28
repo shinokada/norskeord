@@ -104,14 +104,15 @@ Renumbers all entries in vocab-_.json and uttrykk-_.json so that IDs are sequent
 ```
 
 ## Normalise vocab
-Normalises the `norsk` field in vocab-*.json files to the agreed format:
 
-noun       → "<lemma> (en)" or "<lemma> (et)"   e.g. "hus (et)", "bil (en)"
-verb       → "å <lemma>"                         e.g. "å få", "å henge"
-adjective  → <lemma> as-is                       e.g. "glad"
-other      → <lemma> as-is (no change)
+Normalises the `norsk` field in vocab-\*.json files to the agreed format:
 
-For nouns the script CANNOT know the gender without a dictionary, so it uses the Claude API to look up the correct article (en/et) for each noun that needs one.  Verbs and adjectives require no API call.
+noun → "<lemma> (en)" or "<lemma> (et)" e.g. "hus (et)", "bil (en)"
+verb → "å <lemma>" e.g. "å få", "å henge"
+adjective → <lemma> as-is e.g. "glad"
+other → <lemma> as-is (no change)
+
+For nouns the script CANNOT know the gender without a dictionary, so it uses the Claude API to look up the correct article (en/et) for each noun that needs one. Verbs and adjectives require no API call.
 
 ```bash
   node scripts/normalise-norsk-field.mjs --dry-run --files vocab-a2.json > scripts/outputs/normalise-vocab-b2.txt
