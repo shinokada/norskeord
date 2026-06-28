@@ -31,7 +31,9 @@
     EnvelopeOutline,
     QuestionCircleOutline
   } from 'flowbite-svelte-icons';
-  import { LANGUAGES, languageEntryForLocale } from '$lib/config';
+  import { LANGUAGES, FLASHCARD_LANGUAGES, languageEntryForLocale } from '$lib/config';
+  import { languageStore } from '$lib/stores/language.svelte';
+  import type { FlashcardLanguage } from '$lib/types';
   import type { Locale } from '$lib/localeStore.svelte';
   import No from '$lib/No.svelte';
   import { page } from '$app/state';
@@ -81,6 +83,14 @@
     if (code === localeStore.current) return;
     localeStore.set(code);
     langDropdownOpen = false;
+    // Keep the flashcard translation language in sync with the chosen locale.
+    // Look up the language key (e.g. 'spanish') whose code matches (e.g. 'es').
+    const matchedLang = Object.entries(LANGUAGES).find(([, v]) => v.code === code)?.[0] as
+      | FlashcardLanguage
+      | undefined;
+    if (matchedLang && matchedLang in FLASHCARD_LANGUAGES) {
+      languageStore.set(matchedLang);
+    }
     if (effectiveUser) {
       try {
         await fetch('/api/profile/language', {

@@ -25,7 +25,7 @@ import type { RequestHandler } from './$types';
 
 const VALID_GOALS = ['vocab', 'grammar', 'speaking', 'listening', 'writing'];
 const VALID_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
-const VALID_FLASHCARD_LANGUAGES = new Set(['english', 'spanish', 'ukrainian']);
+const VALID_FLASHCARD_LANGUAGES = new Set(['english', 'spanish', 'ukrainian', 'german']);
 // ---------------------------------------------------------------------------
 // Sanitisation helper — strips control characters and HTML-like content from
 // free-text fields before they are stored. Svelte escapes on render so this

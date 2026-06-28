@@ -7,9 +7,9 @@ export interface Profile {
   display_name: string | null;
   avatar_url: string | null;
   current_level: 'A1' | 'A2' | 'B1' | 'B2' | 'C';
-  ui_language: 'en' | 'nb' | 'es' | 'uk';
+  ui_language: 'en' | 'nb' | 'es' | 'uk' | 'de';
   card_direction: 'l1_l2' | 'l2_l1' | 'def_l1';
-  flashcard_language: 'english' | 'spanish' | 'ukrainian';
+  flashcard_language: 'english' | 'spanish' | 'ukrainian' | 'german';
   include_phrases: boolean;
   daily_reminder: boolean;
   email_reminder: boolean;

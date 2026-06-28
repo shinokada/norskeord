@@ -96,7 +96,6 @@ export const CATEGORIES_BY_LEVEL = {
     'arts',
     'science',
     'emotions',
-    'idioms',
     'history',
     'law',
     'literature',
@@ -159,7 +158,8 @@ export const LANGUAGES = {
   norwegian: { name: 'Norwegian', flag: '🇳🇴', code: 'nb', abbr: 'NO' },
   english: { name: 'English', flag: '🇬🇧', code: 'en', abbr: 'EN' },
   spanish: { name: 'Spanish', flag: '🇪🇸', code: 'es', abbr: 'ES' },
-  ukrainian: { name: 'Ukrainian', flag: '🇺🇦', code: 'uk', abbr: 'UK' }
+  ukrainian: { name: 'Ukrainian', flag: '🇺🇦', code: 'uk', abbr: 'UK' },
+  german: { name: 'German', flag: '🇩🇪', code: 'de', abbr: 'DE' }
 } as const;
 
 /**
@@ -207,7 +207,6 @@ export const PLUS_CATEGORIES = new Set<string>([
   // B2 — plus-only (28 vocab + full uttrykk)
   'b2/arts',
   'b2/emotions',
-  'b2/idioms',
   'b2/history',
   'b2/law',
   'b2/literature',
