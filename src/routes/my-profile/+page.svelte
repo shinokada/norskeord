@@ -51,7 +51,9 @@
     />
     <details class="group">
       <summary class="cursor-pointer list-none py-1">
-        <span class="inline-flex items-center gap-1.5 text-sm font-medium text-red-500 transition-colors hover:text-red-400">
+        <span
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-red-500 transition-colors hover:text-red-400"
+        >
           <span class="inline-block transition-transform group-open:rotate-90">▸</span>
           Danger Zone
         </span>

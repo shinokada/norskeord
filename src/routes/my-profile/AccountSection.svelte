@@ -3,8 +3,11 @@
   import * as m from '$lib/paraglide/messages.js';
   import { toast } from '$lib/stores/toast.svelte';
 
-  let { profile, missingFields = [], email = '' }: { profile: Profile | null; missingFields: string[]; email?: string } =
-    $props();
+  let {
+    profile,
+    missingFields = [],
+    email = ''
+  }: { profile: Profile | null; missingFields: string[]; email?: string } = $props();
 
   let displayName = $state(profile?.display_name ?? '');
   let debounceTimer: ReturnType<typeof setTimeout> | null = null;
