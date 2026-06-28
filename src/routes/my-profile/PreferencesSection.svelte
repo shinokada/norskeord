@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { enhance } from '$app/forms';
   import { untrack } from 'svelte';
   import type { Profile } from '$lib/server/profile';
   import { localeStore } from '$lib/localeStore.svelte';
@@ -7,15 +6,17 @@
   import { LANGUAGES, FLASHCARD_LANGUAGES } from '$lib/config';
   import type { FlashcardLanguage } from '$lib/types';
   import * as m from '$lib/paraglide/messages.js';
+  import Toggle from '$lib/components/ui/Toggle.svelte';
+  import SegmentedControl from '$lib/components/ui/SegmentedControl.svelte';
+  import { toast } from '$lib/stores/toast.svelte';
 
   let {
     profile,
     missingFields: _missingFields = []
   }: { profile: Profile | null; missingFields: string[] } = $props();
 
-  let saving = $state(false);
-  let saved = $state(false);
-  let errorMsg = $state('');
+  // Track whether this is the first render so $effect doesn't auto-save on mount.
+  let mounted = false;
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
   const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C']);
@@ -37,30 +38,25 @@
   const LS_SPEED = 'voice-settings-speed';
   const LS_PITCH = 'voice-settings-pitch';
 
-  // Derive defaults from the profile prop so they stay reactive if the prop changes.
-  let currentLevel = $derived(profile?.current_level ?? 'B1');
-  // uiLanguage uses writable $derived so the radio can be changed freely
-  // before saving while staying in sync with the nav button toggle.
-  // Written back to the store on save via applyToLocalStorage().
-  let uiLanguage = $derived.by(() => localeStore.current);
-  // $state so it can be changed before saving; untrack() suppresses the Svelte
-  // warning about capturing the initial prop value — that's intentional here.
-  let cardDirection = $state(untrack(() => profile?.card_direction ?? 'l1_l2'));
-  // flashcard language — seeded from profile (Plus, cross-device) or languageStore
+  // All fields as $state so they can be bound and trigger saves.
+  // untrack() seeds from the profile prop without creating a reactive dependency
+  // (intentional — we own these values after mount).
+  let currentLevel = $state(untrack(() => profile?.current_level ?? 'B1'));
+  let uiLanguage = $state(untrack(() => localeStore.current));
   let flashcardLanguage = $state<FlashcardLanguage>(
     untrack(() => (profile?.flashcard_language ?? languageStore.current) as FlashcardLanguage)
   );
-  // include_phrases: true → 'phrase', false → 'word'
-  let cardType = $derived((profile?.include_phrases ?? false) ? 'phrase' : 'word');
-  let voiceSpeed = $derived(String(profile?.voice_speed ?? 1));
-  let voicePitch = $derived(String(profile?.voice_pitch ?? 1));
-  // session_limit: null in DB → default to '20'; number → its string value
-  let sessionLimit = $derived(
-    profile?.session_limit != null ? String(profile.session_limit) : '20'
+  let cardDirection = $state(untrack(() => profile?.card_direction ?? 'l1_l2'));
+  let cardType = $state(untrack(() => ((profile?.include_phrases ?? false) ? 'phrase' : 'word')));
+  let voiceSpeed = $state(untrack(() => String(profile?.voice_speed ?? 1)));
+  let voicePitch = $state(untrack(() => String(profile?.voice_pitch ?? 1)));
+  let sessionLimit = $state(
+    untrack(() => (profile?.session_limit != null ? String(profile.session_limit) : '20'))
   );
-  // quiz_limit: null in DB → default to 'default' sentinel; number → its string value
-  let quizLimit = $derived(profile?.quiz_limit != null ? String(profile.quiz_limit) : 'default');
-  let showExample = $derived(profile?.show_example ?? false);
+  let quizLimit = $state(
+    untrack(() => (profile?.quiz_limit != null ? String(profile.quiz_limit) : 'default'))
+  );
+  let showExample = $state(untrack(() => profile?.show_example ?? false));
 
   const sessionLimitOptions = [
     { value: '10', label: '10 cards' },
@@ -89,14 +85,14 @@
     return base;
   });
 
-  // If def_l1 is selected but the user switches to phrase or A1/A2, fall back to l1_l2
+  // If def_l1 is selected but the user switches to phrase or A1/A2, fall back to l1_l2.
   let effectiveCardDirection = $derived(
     cardDirection === 'def_l1' && (cardType !== 'word' || !B1_PLUS_LEVELS.has(currentLevel))
       ? 'l1_l2'
       : cardDirection
   );
 
-  // Whether to show the definition-mode explanatory note
+  // Whether to show the definition-mode explanatory note.
   let showDefNote = $derived(cardType === 'word' && B1_PLUS_LEVELS.has(currentLevel));
 
   function applyToLocalStorage() {
@@ -108,42 +104,57 @@
     localStorage.setItem('vocab-flashcard-session-limit', sessionLimit);
     localStorage.setItem('vocab-quiz-limit', quizLimit);
     localStorage.setItem('vocab-flashcard-show-example', String(showExample));
-    // Write through the stores so the nav and flashcard page pick up changes reactively.
     localeStore.set(uiLanguage);
     languageStore.set(flashcardLanguage);
   }
+
+  async function savePreferences() {
+    applyToLocalStorage();
+
+    const body = new FormData();
+    body.append('current_level', currentLevel);
+    body.append('ui_language', uiLanguage);
+    body.append('flashcard_language', flashcardLanguage);
+    body.append('card_direction', effectiveCardDirection);
+    body.append('card_type', cardType);
+    body.append('voice_speed', voiceSpeed);
+    body.append('voice_pitch', voicePitch);
+    body.append('session_limit', sessionLimit);
+    body.append('quiz_limit', quizLimit);
+    if (showExample) body.append('show_example', 'true');
+
+    try {
+      const res = await fetch('?/updatePreferences', { method: 'POST', body });
+      if (!res.ok) throw new Error();
+      toast.show(m.profile_saved());
+    } catch {
+      toast.show(m.profile_error_generic(), 'error');
+    }
+  }
+
+  // Auto-save whenever any preference value changes — but not on the initial render.
+  $effect(() => {
+    // Establish reactive dependencies on all fields.
+    const _ = [
+      currentLevel, uiLanguage, flashcardLanguage, cardDirection,
+      cardType, voiceSpeed, voicePitch, sessionLimit, quizLimit, showExample
+    ];
+    if (!mounted) {
+      mounted = true;
+      return;
+    }
+    savePreferences();
+  });
 </script>
 
 <section
-  class="rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-white/10 dark:bg-indigo-950/60"
+  class="rounded-xl border border-gray-200 bg-gray-50 px-6 pb-6 pt-4 dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_prefs_heading()}
   </h2>
 
-  <form
-    method="POST"
-    action="?/updatePreferences"
-    use:enhance={() => {
-      saving = true;
-      saved = false;
-      errorMsg = '';
-      applyToLocalStorage();
-      return async ({ result, update }) => {
-        saving = false;
-        if (result.type === 'success') {
-          saved = true;
-          setTimeout(() => (saved = false), 2500);
-        } else if (result.type === 'failure') {
-          errorMsg = (result.data?.message as string) ?? m.profile_error_generic();
-        }
-        // Don't invalidateAll — it causes the component to re-init from
-        // the profile prop mid-flight, dropping the local $state values.
-        await update({ reset: false });
-      };
-    }}
-    class="space-y-6"
-  >
+  <div class="space-y-6">
     <!-- Target level -->
     <div>
       <label
@@ -215,27 +226,13 @@
 
     <!-- Card direction -->
     <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
-        {m.profile_prefs_card_direction()}
-      </p>
-      <div class="flex flex-wrap gap-3">
-        {#each cardDirectionOptions as opt (opt.value)}
-          <label class="flex cursor-pointer items-center gap-2">
-            <input
-              type="radio"
-              name="card_direction"
-              value={opt.value}
-              checked={effectiveCardDirection === opt.value}
-              bind:group={cardDirection}
-              class="accent-indigo-600"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300">{opt.label}</span>
-          </label>
-        {/each}
-      </div>
-      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-        {m.profile_prefs_card_direction_hint()}
-      </p>
+      <SegmentedControl
+        name="card_direction"
+        label={m.profile_prefs_card_direction()}
+        options={cardDirectionOptions}
+        bind:selected={cardDirection}
+        hint={m.profile_prefs_card_direction_hint()}
+      />
       {#if showDefNote}
         <p class="mt-1 text-xs text-indigo-600 dark:text-indigo-400">
           {m.profile_prefs_card_direction_def_note()}
@@ -244,76 +241,34 @@
     </div>
 
     <!-- Card type -->
-    <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
-        {m.profile_prefs_card_type()}
-      </p>
-      <div class="flex gap-3">
-        {#each [{ value: 'word', label: m.profile_prefs_card_type_word() }, { value: 'phrase', label: m.profile_prefs_card_type_phrase() }] as opt (opt.value)}
-          <label class="flex cursor-pointer items-center gap-2">
-            <input
-              type="radio"
-              name="card_type"
-              value={opt.value}
-              bind:group={cardType}
-              class="accent-indigo-600"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300">{opt.label}</span>
-          </label>
-        {/each}
-      </div>
-      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-        {m.profile_prefs_card_type_hint()}
-      </p>
-    </div>
+    <SegmentedControl
+      name="card_type"
+      label={m.profile_prefs_card_type()}
+      options={[
+        { value: 'word', label: m.profile_prefs_card_type_word() },
+        { value: 'phrase', label: m.profile_prefs_card_type_phrase() }
+      ]}
+      bind:selected={cardType}
+      hint={m.profile_prefs_card_type_hint()}
+    />
 
     <!-- Pronunciation speed -->
-    <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
-        {m.profile_prefs_voice_speed()}
-      </p>
-      <div class="flex flex-wrap gap-2">
-        {#each speedOptions as opt (opt.value)}
-          <label class="flex cursor-pointer items-center gap-1.5">
-            <input
-              type="radio"
-              name="voice_speed"
-              value={opt.value}
-              bind:group={voiceSpeed}
-              class="accent-indigo-600"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300">{opt.label}</span>
-          </label>
-        {/each}
-      </div>
-      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-        {m.profile_prefs_voice_speed_hint()}
-      </p>
-    </div>
+    <SegmentedControl
+      name="voice_speed"
+      label={m.profile_prefs_voice_speed()}
+      options={speedOptions}
+      bind:selected={voiceSpeed}
+      hint={m.profile_prefs_voice_speed_hint()}
+    />
 
     <!-- Pronunciation tone -->
-    <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
-        {m.profile_prefs_voice_tone()}
-      </p>
-      <div class="flex gap-4">
-        {#each toneOptions as opt (opt.value)}
-          <label class="flex cursor-pointer items-center gap-1.5">
-            <input
-              type="radio"
-              name="voice_pitch"
-              value={opt.value}
-              bind:group={voicePitch}
-              class="accent-indigo-600"
-            />
-            <span class="text-sm text-gray-700 dark:text-gray-300">{opt.label}</span>
-          </label>
-        {/each}
-      </div>
-      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-        {m.profile_prefs_voice_tone_hint()}
-      </p>
-    </div>
+    <SegmentedControl
+      name="voice_pitch"
+      label={m.profile_prefs_voice_tone()}
+      options={toneOptions}
+      bind:selected={voicePitch}
+      hint={m.profile_prefs_voice_tone_hint()}
+    />
 
     <!-- Session card limit -->
     <div>
@@ -362,37 +317,11 @@
     </div>
 
     <!-- Show example translation by default -->
-    <div>
-      <p class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
-        {m.profile_prefs_show_example()}
-      </p>
-      <label class="flex cursor-pointer items-center gap-2">
-        <input
-          type="checkbox"
-          name="show_example"
-          value="true"
-          bind:checked={showExample}
-          class="accent-indigo-600"
-        />
-        <span class="text-sm text-gray-700 dark:text-gray-300"
-          >{m.profile_prefs_show_example_label()}</span
-        >
-      </label>
-      <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-        {m.profile_prefs_show_example_hint()}
-      </p>
-    </div>
-
-    {#if errorMsg}
-      <p class="text-xs text-red-500">{errorMsg}</p>
-    {/if}
-
-    <button
-      type="submit"
-      disabled={saving}
-      class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
-    >
-      {saving ? m.profile_saving() : saved ? m.profile_saved() : m.profile_save()}
-    </button>
-  </form>
+    <Toggle
+      name="show_example"
+      label={m.profile_prefs_show_example_label()}
+      bind:checked={showExample}
+      hint={m.profile_prefs_show_example_hint()}
+    />
+  </div>
 </section>

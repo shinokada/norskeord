@@ -10,6 +10,7 @@
   import Footer from './components/Footer.svelte';
   import InAppBrowserBanner from './components/InAppBrowserBanner.svelte';
   import OnboardingSlides from '$lib/components/OnboardingSlides.svelte';
+  import Toast from '$lib/components/ui/Toast.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
   import { languageStore } from '$lib/stores/language.svelte';
   import { FLASHCARD_LANGUAGES } from '$lib/config';
@@ -87,3 +88,4 @@
 {/key}
 
 <InAppBrowserBanner />
+<Toast />

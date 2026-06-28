@@ -29,41 +29,11 @@
   let user = $derived(page.data.user);
 
   const levels = [
-    {
-      id: 'A1',
-      href: '/learn/a1',
-      label: () => m.home_level_a1(),
-      color: 'green',
-      description: () => m.plus_unlocked_a1_teaser()
-    },
-    {
-      id: 'A2',
-      href: '/learn/a2',
-      label: () => m.home_level_a2(),
-      color: 'teal',
-      description: () => m.plus_unlocked_a2_teaser()
-    },
-    {
-      id: 'B1',
-      href: '/learn/b1',
-      label: () => m.home_level_b1(),
-      color: 'blue',
-      description: () => m.plus_unlocked_b1_teaser()
-    },
-    {
-      id: 'B2',
-      href: '/learn/b2',
-      label: () => m.home_level_b2(),
-      color: 'indigo',
-      description: () => m.plus_unlocked_b2_teaser()
-    },
-    {
-      id: 'C',
-      href: '/learn/c',
-      label: () => m.home_level_c(),
-      color: 'purple',
-      description: () => m.plus_unlocked_c_teaser()
-    }
+    { id: 'A1', href: '/learn/a1', label: () => m.home_level_a1(), color: 'green' },
+    { id: 'A2', href: '/learn/a2', label: () => m.home_level_a2(), color: 'teal' },
+    { id: 'B1', href: '/learn/b1', label: () => m.home_level_b1(), color: 'blue' },
+    { id: 'B2', href: '/learn/b2', label: () => m.home_level_b2(), color: 'indigo' },
+    { id: 'C',  href: '/learn/c',  label: () => m.home_level_c(),  color: 'purple' }
   ] as const;
 
   type BadgeColor = 'green' | 'teal' | 'blue' | 'indigo' | 'purple';
@@ -99,36 +69,15 @@
   const featureStrip = [
     { icon: '🧠', label: () => m.home_features_smart(), href: '/guide' },
     { icon: '🔊', label: () => m.home_features_audio(), href: null },
-    { icon: '📚', label: () => m.home_features_vocab(), href: null },
     { icon: '🎯', label: () => m.home_features_norskproven(), href: '/norskproven' }
   ];
 
   // Feature showcase cards
   const featureCards = [
-    {
-      icon: '📖',
-      titleFn: () => m.home_features_vocab_title(),
-      bodyFn: () => m.home_features_vocab_body(),
-      href: '/learn/a1'
-    },
-    {
-      icon: '🧩',
-      titleFn: () => m.home_features_grammar_title(),
-      bodyFn: () => m.home_features_grammar_body(),
-      href: '/grammar'
-    },
-    {
-      icon: '🎯',
-      titleFn: () => m.home_features_quiz_title(),
-      bodyFn: () => m.home_features_quiz_body(),
-      href: '/quiz'
-    },
-    {
-      icon: '📝',
-      titleFn: () => m.home_features_norskproven_title(),
-      bodyFn: () => m.home_features_norskproven_body(),
-      href: '/norskproven'
-    }
+    { icon: '📖', titleFn: () => m.home_features_vocab_title(),     href: '/learn/a1' },
+    { icon: '🧩', titleFn: () => m.home_features_grammar_title(),   href: '/grammar'  },
+    { icon: '🎯', titleFn: () => m.home_features_quiz_title(),      href: '/quiz'     },
+    { icon: '📝', titleFn: () => m.home_features_norskproven_title(), href: '/norskproven' }
   ];
 
   // QR code share widget
@@ -196,7 +145,7 @@
 
 <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
 <div
-  class="relative mt-4 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-10 text-center sm:mt-8 sm:py-20"
+  class="relative mt-4 overflow-hidden bg-linear-to-br from-indigo-950 via-blue-900 to-indigo-800 px-4 py-8 text-center sm:mt-8 sm:py-14"
 >
   <!-- Decorative blur blobs -->
   <div
@@ -207,18 +156,13 @@
   ></div>
 
   <div class="relative mx-auto max-w-2xl">
-    <div
-      class="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-indigo-200 uppercase backdrop-blur-sm"
-    >
-      {m.norskeord()} - {m.home_hero_badge()}
-    </div>
 
     <h1 class="mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
       {m.home_hero_heading()} <span class="text-indigo-300">{m.home_hero_heading_highlight()}</span>
     </h1>
 
     <p class="mb-6 text-lg leading-relaxed text-indigo-100/80">
-      {m.home_hero_body()}
+      Norwegian vocabulary from beginner to advanced, with audio and smart review.
     </p>
 
     <div class="flex flex-wrap justify-center gap-3">
@@ -306,12 +250,9 @@
         class="group relative flex flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
       >
         <div class="mb-3 text-3xl">{card.icon}</div>
-        <h3 class="mb-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+        <h3 class="mb-3 text-lg font-semibold text-gray-800 dark:text-gray-100">
           {card.titleFn()}
         </h3>
-        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-300">
-          {card.bodyFn()}
-        </p>
         <span
           class="mt-4 text-sm font-medium text-indigo-600 dark:text-indigo-400 group-hover:underline"
         >
@@ -343,11 +284,8 @@
             {lvl.id}
           </span>
         </div>
-        <p class="mb-2 text-sm text-gray-700 dark:text-gray-300">
+        <p class="mb-4 text-sm text-gray-700 dark:text-gray-300">
           {entryCountLabel(lvl.id)}
-        </p>
-        <p class="mb-4 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-300">
-          {lvl.description()}
         </p>
         <span class="text-sm font-medium {accent.link} group-hover:underline">
           {m.home_level_explore({ level: lvl.id })}

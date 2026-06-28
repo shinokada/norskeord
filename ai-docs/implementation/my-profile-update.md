@@ -170,12 +170,12 @@ No changes needed inside `DangerZone.svelte` itself.
 
 ## Implementation Order
 
-1. **Toggle + SegmentedControl components** (no behaviour change, purely visual)
-2. **Swap controls in PreferencesSection** (validate everything still submits correctly)
-3. **Toast store + component**
-4. **Auto-save in PreferencesSection** (biggest change — test all fields)
-5. **Auto-save in AccountSection** (display name only)
-6. **Collapse Danger Zone** (one-liner in page, lowest risk)
+1. ✅ **Toggle + SegmentedControl components** (no behaviour change, purely visual)
+2. ✅ **Swap controls in PreferencesSection** (validate everything still submits correctly)
+3. ✅ **Toast store + component**
+4. ✅ **Auto-save in PreferencesSection** (biggest change — test all fields)
+5. ✅ **Auto-save in AccountSection** (display name only)
+6. ✅ **Collapse Danger Zone** (one-liner in page, lowest risk)
 
 ---
 
