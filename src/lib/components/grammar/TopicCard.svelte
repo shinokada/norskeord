@@ -24,7 +24,7 @@
   class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm transition-colors hover:border-indigo-400 hover:shadow-md dark:border-gray-700 dark:bg-indigo-950/60 dark:hover:border-indigo-500"
 >
   <div class="mb-2 flex items-start justify-between gap-2">
-    <h2 class="text-lg font-bold text-gray-900 group-hover:text-indigo-600 dark:text-white">
+    <h2 class="text-lg font-sans group-hover:text-indigo-600">
       {title}
     </h2>
   </div>

@@ -111,7 +111,7 @@
 <div class="mx-auto max-w-3xl px-4 pb-16">
   <!-- ── Section 2 — Vocabulary ──────────────────────────────────────────── -->
   <section class="mb-12">
-    <h2 class="mb-4 text-xl font-bold dark:text-white">📖 Vocabulary</h2>
+    <h2 class="mb-4 font-bold dark:text-white">📖 Vocabulary</h2>
     <div class="flex flex-wrap gap-2">
       {#each visibleCategories as cat (cat.slug)}
         {@const locked = !isPlus && cat.locked}
@@ -144,7 +144,7 @@
   <!-- ── Section 3 — Grammar ─────────────────────────────────────────────── -->
   {#if data.grammarTopics.length > 0}
     <section class="mb-12">
-      <h2 class="mb-4 text-xl font-bold dark:text-white">🧩 Grammar</h2>
+      <h2 class="mb-4 font-bold dark:text-white">🧩 Grammar</h2>
       <div class="grid gap-4 sm:grid-cols-2">
         {#each visibleGrammarTopics as t (t.topic)}
           {@const rule = GRAMMAR_RULES[t.topic]}
@@ -209,7 +209,7 @@
 
   <!-- ── Section 4 — Quiz ────────────────────────────────────────────────── -->
   <section class="mb-12">
-    <h2 class="mb-4 text-xl font-bold dark:text-white">🎯 Quiz</h2>
+    <h2 class="mb-4 font-bold dark:text-white">🎯 Quiz</h2>
     <a
       href="/quiz?level=C"
       class="flex items-center justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
@@ -228,7 +228,7 @@
   {#if data.blogPosts.length > 0}
     <section class="mb-12">
       <div class="mb-4 flex items-center justify-between">
-        <h2 class="text-xl font-bold dark:text-white">✍️ From the blog</h2>
+        <h2 class="font-bold dark:text-white">✍️ From the blog</h2>
         <a href="/blog" class="text-xs font-medium {colors.accent} hover:underline">
           {m.level_hub_all_articles()}
         </a>
