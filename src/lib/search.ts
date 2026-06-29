@@ -23,11 +23,21 @@ export interface SearchEntry {
 }
 
 let cached: SearchEntry[] | null = null;
+let inflight: Promise<SearchEntry[]> | null = null;
 
 export async function loadSearchIndex(): Promise<SearchEntry[]> {
   if (cached) return cached;
-  const res = await fetch('/data/search-index.json');
-  if (!res.ok) throw new Error(`Failed to load search index: ${res.status}`);
-  cached = (await res.json()) as SearchEntry[];
-  return cached;
+  if (inflight) return inflight;
+  inflight = fetch('/data/search-index.json')
+    .then(async (res) => {
+      if (!res.ok) throw new Error(`Failed to load search index: ${res.status}`);
+      cached = (await res.json()) as SearchEntry[];
+      inflight = null;
+      return cached;
+    })
+    .catch((err) => {
+      inflight = null; // allow retry on explicit user action, but don't double-fetch passively
+      throw err;
+    });
+  return inflight;
 }

@@ -41,7 +41,7 @@
           >{m.norskeord()}</a
         >
         <p class="mt-1 text-xs text-gray-800 dark:text-gray-300">
-          {m.home_hero_badge()}
+          Norwegian vocabulary from beginner to advanced.
         </p>
         <p class="mt-3 text-xs text-gray-800 dark:text-gray-300">v{__VERSION__}</p>
       </div>

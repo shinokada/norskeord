@@ -127,12 +127,17 @@
 
 <!-- ── Section 1 — Level hero ──────────────────────────────────────────── -->
 <div
-  class="mb-10 border-b border-gray-200 bg-gray-50 px-4 py-10 dark:border-gray-700 dark:bg-gray-800/50"
+  class="mb-10 border-b border-gray-200 bg-gray-50 px-4 py-10 text-center dark:border-gray-700 dark:bg-gray-800/50"
 >
   <div class="mx-auto max-w-3xl">
-    <div class="flex flex-wrap items-center gap-3">
-      <span class="text-3xl font-extrabold {colors.heading}">{data.levelUpper}</span>
-      <span class="rounded-full px-3 py-1 text-sm font-semibold {colors.badge}">
+    <div class="flex flex-wrap items-baseline justify-center gap-3">
+      <h1
+        class="font-bold text-4xl leading-none mb-0 {colors.heading}"
+        style="letter-spacing:0.04em"
+      >
+        {data.levelUpper}
+      </h1>
+      <span class="font-norse rounded-full px-3 py-1 text-xl font-semibold {colors.badge}">
         {data.level === 'a1'
           ? m.level_hub_beginner()
           : data.level === 'a2'
@@ -170,7 +175,7 @@
         {#if !(isPlus && cat.slug === 'uttrykk-preview') && !locked}
           <a
             href="/{data.level}/{cat.slug}"
-            class="inline-flex items-center gap-1 rounded-full border px-3 py-1 text-sm font-medium transition
+            class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
               border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
           >
             {categoryLabel(data.level, cat.slug)}
@@ -275,7 +280,6 @@
             · some categories require Plus{/if}
         </p>
       </div>
-      <span class="ml-4 shrink-0 text-sm font-medium {colors.accent}">{m.level_hub_quiz_go()}</span>
     </a>
   </section>
 
@@ -292,9 +296,6 @@
           <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
             Exam-targeted vocabulary for the official Norwegian language test at {data.levelUpper}.
           </p>
-          <span class="mt-3 text-xs font-medium {colors.accent}"
-            >{m.level_hub_norskproven_explore()}</span
-          >
         </a>
         <a
           href="/norskproven"
@@ -313,9 +314,6 @@
           <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
             Reading, writing, and oral practice in exam format. Test 1 is always free.
           </p>
-          <span class="mt-3 text-xs font-medium {colors.accent}"
-            >{m.level_hub_norskproven_start()}</span
-          >
         </a>
       </div>
     </section>

@@ -51,12 +51,13 @@ export const load = async ({ url, locals }) => {
   let showExample: boolean = false;
   let onboardingDone: boolean = false;
   let onboardingSnoozedAt: string | null = null;
+  let flashcardLanguage: string | null = null;
 
   if (locals.user) {
     const { data } = await locals.supabase
       .from('profiles')
       .select(
-        'display_name, current_level, session_limit, show_example, onboarding_done, onboarding_snoozed_at'
+        'display_name, current_level, session_limit, show_example, onboarding_done, onboarding_snoozed_at, flashcard_language'
       )
       .eq('id', locals.user.id)
       .maybeSingle();
@@ -66,6 +67,7 @@ export const load = async ({ url, locals }) => {
     showExample = data?.show_example ?? false;
     onboardingDone = data?.onboarding_done ?? false;
     onboardingSnoozedAt = data?.onboarding_snoozed_at ?? null;
+    flashcardLanguage = data?.flashcard_language ?? null;
   }
 
   return {
@@ -80,6 +82,7 @@ export const load = async ({ url, locals }) => {
     isAdmin: dev && locals.user?.email === ADMIN_EMAIL,
     // Onboarding
     onboardingDone,
-    onboardingSnoozedAt
+    onboardingSnoozedAt,
+    flashcardLanguage
   };
 };
