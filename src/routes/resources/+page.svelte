@@ -132,7 +132,7 @@
   <div class="mb-10">
     <h1 class="text-4xl leading-tight font-bold dark:text-white">Norwegian Learning Resources</h1>
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-      Free tools, courses, and communities — organised by level.
+      Free tools, courses, and communities.
     </p>
   </div>
 
