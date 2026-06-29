@@ -71,9 +71,9 @@ test('typing a query shows results', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/');
   await page.getByTestId('search-button').click();
-  await page.getByRole('searchbox').fill('hei');
-  // Wait for debounce + results to render
-  await page.waitForTimeout(300);
+  await page.getByRole('searchbox').pressSequentially('hei');
+  // Wait for debounce (150 ms) + results to render
+  await page.waitForTimeout(500);
   await expect(page.getByRole('option').first()).toBeVisible();
 });
 
@@ -118,7 +118,8 @@ test('second modal open does NOT re-fetch the search index', async ({ page }) =>
   // First open — fetches index
   await page.getByTestId('search-button').click();
   await expect(page.getByRole('searchbox')).toBeVisible();
-  await page.waitForTimeout(500);
+  // Wait long enough for the fetch to complete and cached to be set
+  await page.waitForTimeout(1000);
   await page.keyboard.press('Escape');
 
   // Second open — should NOT fetch again

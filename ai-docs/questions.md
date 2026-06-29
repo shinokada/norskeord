@@ -13,7 +13,6 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- Profile page can use cards visually attractive or cute
 - For mobile, bottom navigation can be used?
 - Mobile check
 - How about Start free button rather than login?
