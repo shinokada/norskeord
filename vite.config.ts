@@ -15,6 +15,10 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
+    server: {
+      // Allow any tunnel/proxy host during local dev (ngrok, etc.)
+      allowedHosts: true
+    },
     plugins: [
       sveltekit(),
       tailwindcss(),

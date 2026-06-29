@@ -1,45 +1,27 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { page } from '$app/state';
   import { applyAction, deserialize } from '$app/forms';
   import { PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
   import * as m from '$lib/paraglide/messages.js';
-  import type { ActionData } from './$types';
+  import type { ActionData, PageData } from './$types';
 
-  let { form }: { form: ActionData } = $props();
+  let { form, data }: { form: ActionData; data: PageData } = $props();
 
   // --- PWA background-resume persistence ---
   // On Android PWA, switching to Gmail to copy the OTP code causes the app to
-  // be backgrounded. On return Android may reload the page, resetting `form`
-  // to null and losing the verify step. We persist email + step in
-  // sessionStorage so the verify screen survives that round-trip.
-  const SESSION_KEY = 'login_pending';
-
-  function savePending(emailToSave: string) {
-    try {
-      sessionStorage.setItem(SESSION_KEY, emailToSave);
-    } catch {
-      // sessionStorage unavailable (private mode etc.) — degrade silently.
-    }
-  }
+  // be backgrounded and the page reloaded, resetting `form` to null. The server
+  // sets a cookie with the pending email so SSR renders the verify step
+  // immediately on reload — no client-side JS needed for the initial render.
 
   function clearPending() {
     try {
-      sessionStorage.removeItem(SESSION_KEY);
+      localStorage.removeItem('login_pending'); // legacy cleanup
     } catch { /* ignore */ }
   }
 
-  function getPending(): string {
-    try {
-      return sessionStorage.getItem(SESSION_KEY) ?? '';
-    } catch {
-      return '';
-    }
-  }
-
-  // Seed from sessionStorage on first render so that if the page reloaded
-  // after backgrounding we still show the verify screen.
-  const pendingEmail = getPending();
+  // pendingEmail comes from the server load (cookie-backed) so SSR already
+  // knows the correct step — no flicker on page reload.
+  let pendingEmail = $derived(data.pendingEmail ?? '');
 
   let email = $derived((form && 'email' in form ? form.email : null) ?? pendingEmail ?? '');
   let next = $derived(
@@ -82,15 +64,10 @@
 
   let submitting = $state(false);
   let emailValue = $state('');
-
-  let verifying = $state(false);
   let tokenValue = $state('');
-
   let resendStatus = $state<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
-  // Token is stored here when Turnstile calls back after completing the challenge.
-  // In managed mode Turnstile handles rendering the widget and any interactive
-  // challenge on its own — we just read the token on submit.
+  // Turnstile token — set by the widget callback, read on email form submit.
   let turnstileToken = $state('');
 
   interface TurnstileWindow {
@@ -113,11 +90,9 @@
   function onTurnstileSuccess(token: string) {
     turnstileToken = token;
   }
-
   function onTurnstileExpired() {
     turnstileToken = '';
   }
-
   function onTurnstileError() {
     turnstileToken = '';
   }
@@ -130,17 +105,10 @@
 
   function resetTurnstile() {
     const ts = turnstileWindow().turnstile;
-    if (ts && widgetId !== undefined) {
-      ts.reset(widgetId);
-    }
+    if (ts && widgetId !== undefined) ts.reset(widgetId);
     turnstileToken = '';
   }
 
-  // Explicitly render the Turnstile widget instead of relying on the script's
-  // implicit auto-render (data-sitekey scan on load). On iPad/Safari the
-  // hydration timing can mean the cf-turnstile div isn't in the DOM yet when
-  // api.js runs its initial scan, so the widget never renders and the form
-  // can never produce a token — making the submit button appear to do nothing.
   function renderTurnstile() {
     if (!PUBLIC_TURNSTILE_SITE_KEY || !turnstileContainer) return;
     const ts = turnstileWindow().turnstile;
@@ -154,12 +122,16 @@
     });
   }
 
-  onMount(() => {
+  // Render Turnstile as soon as the container div enters the DOM (after
+  // mounted=true reveals the email form). $effect re-runs whenever
+  // turnstileContainer changes from null to a real element.
+  $effect(() => {
+    if (!turnstileContainer) return;
     if (turnstileWindow().turnstile) {
       renderTurnstile();
       return;
     }
-    // Script may still be loading; poll until turnstile is available.
+    // Turnstile script may still be loading — poll until ready.
     const interval = setInterval(() => {
       if (turnstileWindow().turnstile) {
         renderTurnstile();
@@ -172,41 +144,24 @@
   async function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
     if (submitting) return;
-
-    // If Turnstile is configured but hasn't produced a token yet, the widget
-    // may still be loading or the user hasn't completed an interactive challenge.
-    if (PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken) {
-      return;
-    }
+    if (PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken) return;
 
     submitting = true;
-
     try {
       const formData = new FormData();
       formData.set('email', emailValue);
       formData.set('next', next);
       formData.set('cf-turnstile-response', turnstileToken);
 
-      const response = await fetch('?/login', {
-        method: 'POST',
-        body: formData
-      });
-
+      const response = await fetch('?/login', { method: 'POST', body: formData });
       const result = deserialize(await response.text());
-      // Reset submitting BEFORE applyAction — applyAction can re-render/replace
-      // the component, so any state update after it may be lost.
       submitting = false;
-      // If the server rejected the bot check, reset the widget so the user can
-      // try again with a fresh token.
+
       if (
         result.type === 'failure' &&
         (result.data as { error?: string })?.error === 'login_error_bot_check'
       ) {
         resetTurnstile();
-      }
-      // Persist email so verify step survives PWA backgrounding.
-      if (result.type === 'success') {
-        savePending(emailValue);
       }
       applyAction(result);
     } catch (err) {
@@ -215,49 +170,14 @@
     }
   }
 
-  async function handleVerify(event: SubmitEvent) {
-    event.preventDefault();
-    if (verifying) return;
-
-    verifying = true;
-
-    try {
-      const formData = new FormData();
-      formData.set('email', email);
-      formData.set('token', tokenValue);
-      formData.set('next', next);
-
-      const response = await fetch('?/verify', {
-        method: 'POST',
-        body: formData
-      });
-
-      const result = deserialize(await response.text());
-      verifying = false;
-      // Clear persisted email on successful verification.
-      if (result.type === 'redirect') {
-        clearPending();
-      }
-      applyAction(result);
-    } catch (err) {
-      console.error('Verify fetch error:', err);
-      verifying = false;
-    }
-  }
-
-  // Resend submits a new ?/login POST with the stored email, reusing the
-  // existing Turnstile token (valid until expiry). Shows a transient
-  // "New code sent" confirmation on a real success — or a "couldn't resend"
-  // state if the server rejected it (e.g. Supabase's per-email cooldown) —
-  // no page navigation, no applyAction.
   async function handleResend() {
     if (resendStatus !== 'idle') return;
     resendStatus = 'sending';
-
     try {
       const formData = new FormData();
       formData.set('email', email);
       formData.set('next', next);
+      formData.set('resend', '1');
       formData.set('cf-turnstile-response', turnstileToken);
       const response = await fetch('?/login', { method: 'POST', body: formData });
       const result = deserialize(await response.text());
@@ -300,7 +220,9 @@
         {m.login_success_body({ email })}
       </p>
 
-      <form onsubmit={handleVerify} novalidate class="mt-6">
+      <form method="POST" action="?/verify" novalidate class="mt-6">
+        <input type="hidden" name="email" value={email} />
+        <input type="hidden" name="next" value={next} />
         <label
           for="token"
           class="mb-1.5 block text-base font-medium text-gray-700 dark:text-gray-300"
@@ -313,13 +235,11 @@
           name="token"
           type="text"
           inputmode="numeric"
-          pattern="\d{6}"
           maxlength="6"
           autocomplete="one-time-code"
           placeholder={m.login_otp_placeholder()}
           autofocus
           bind:value={tokenValue}
-          disabled={verifying}
           class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-center text-lg tracking-[0.3em] text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder-gray-500"
         />
         {#if displayError}
@@ -328,36 +248,10 @@
 
         <button
           type="submit"
-          disabled={verifying || !/^\d{6}$/.test(tokenValue)}
+          disabled={!/^\d{6}$/.test(tokenValue)}
           class="mt-4 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
         >
-          {#if verifying}
-            <span class="inline-flex items-center gap-2">
-              <svg
-                class="h-4 w-4 animate-spin"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <circle
-                  class="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  stroke-width="4"
-                ></circle>
-                <path
-                  class="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                ></path>
-              </svg>
-              {m.login_otp_verifying()}
-            </span>
-          {:else}
-            {m.login_otp_submit()}
-          {/if}
+          {m.login_otp_submit()}
         </button>
       </form>
 
@@ -376,6 +270,18 @@
         {:else}
           {m.login_resend()}
         {/if}
+      </button>
+
+      <button
+        type="button"
+        onclick={async () => {
+          clearPending();
+          await fetch('?/clearPending', { method: 'POST' });
+          location.reload();
+        }}
+        class="mt-2 w-full text-center text-sm text-gray-500 hover:underline dark:text-gray-400"
+      >
+        {m.login_back()}
       </button>
     </div>
   {:else}
