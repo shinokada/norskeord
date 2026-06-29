@@ -229,7 +229,7 @@
         {#each section.categories as cat (cat.slug)}
           <a
             href="/{section.level.toLowerCase()}/{cat.slug}"
-            class="inline-flex items-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+            class="inline-flex items-center rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
           >
             {removeHyphensAndCapitalize(cat.slug)}
           </a>
@@ -257,25 +257,4 @@
       </p>
     </div>
   {/each}
-
-  <!-- ── Study tips ─────────────────────────────────────────────────────────────────────────── -->
-  <div
-    class="mb-10 rounded-xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-800 dark:bg-amber-900/20"
-  >
-    <h2 class="mb-3 text-lg font-bold text-amber-800 dark:text-amber-300">
-      {m.norskproven_tips_heading()}
-    </h2>
-    <ul class="space-y-2 text-sm text-amber-900 dark:text-amber-200">
-      <li><strong>{m.norskproven_tip_1_strong()}</strong>{m.norskproven_tip_1_text()}</li>
-      <li><strong>{m.norskproven_tip_2_strong()}</strong>{m.norskproven_tip_2_text()}</li>
-      <li><strong>{m.norskproven_tip_3_strong()}</strong>{m.norskproven_tip_3_text()}</li>
-      <li>
-        <strong>{m.norskproven_tip_4_strong()}</strong>
-        — the
-        <a href="/stats" class="underline hover:text-amber-700 dark:hover:text-amber-100"
-          >{m.norskproven_tip_4_link_text()}</a
-        >{m.norskproven_tip_4_text().replace(/^— the My Progress page/, '')}
-      </li>
-    </ul>
-  </div>
 </div>
