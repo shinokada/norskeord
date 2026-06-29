@@ -30,7 +30,8 @@ const FILES = [
   { level: 'A1', type: 'uttrykk', file: 'uttrykk-a1.json' },
   { level: 'A2', type: 'uttrykk', file: 'uttrykk-a2.json' },
   { level: 'B1', type: 'uttrykk', file: 'uttrykk-b1.json' },
-  { level: 'B2', type: 'uttrykk', file: 'uttrykk-b2.json' }
+  { level: 'B2', type: 'uttrykk', file: 'uttrykk-b2.json' },
+  { level: 'C', type: 'uttrykk', file: 'uttrykk-c.json' }
 ];
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];

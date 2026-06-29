@@ -37,7 +37,7 @@
       <div class="col-span-2 sm:col-span-1">
         <a
           href="/"
-          class="text-base font-bold text-gray-900 visited:text-gray-900 dark:text-white dark:visited:text-white"
+          class="font-norse text-xl font-normal text-gray-900 visited:text-gray-900 dark:text-white dark:visited:text-white"
           >{m.norskeord()}</a
         >
         <p class="mt-1 text-xs text-gray-800 dark:text-gray-300">
@@ -49,7 +49,7 @@
       <!-- Level -->
       <div>
         <p
-          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
+          class="font-norse mb-3 text-base font-normal tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
           {m.footer_level()}
         </p>
@@ -69,7 +69,7 @@
       <!-- Learn -->
       <div>
         <p
-          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
+          class="font-norse mb-3 text-base font-normal tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
           {m.footer_learn()}
         </p>
@@ -89,7 +89,7 @@
       <!-- Account -->
       <div>
         <p
-          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
+          class="font-norse mb-3 text-base font-normal tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
           {m.footer_account()}
         </p>
@@ -109,7 +109,7 @@
       <!-- Help -->
       <div>
         <p
-          class="mb-3 text-xs font-semibold tracking-widest text-gray-800 uppercase dark:text-gray-200"
+          class="font-norse mb-3 text-base font-nomal tracking-widest text-gray-800 uppercase dark:text-gray-200"
         >
           {m.nav_help()}
         </p>
