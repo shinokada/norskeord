@@ -89,7 +89,7 @@
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
-  <h1 class="mb-2 text-4xl font-bold dark:text-white">Språkhjørnet</h1>
+  <h1 class="mb-2">Språkhjørnet</h1>
   <p class="mb-8 text-gray-600 dark:text-gray-300">
     {m.blog_subheading()}
   </p>

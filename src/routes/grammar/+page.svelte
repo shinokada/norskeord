@@ -59,7 +59,7 @@
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <div class="mb-8">
-    <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.grammar_title()}</h1>
+    <h1 class="mb-2">{m.grammar_title()}</h1>
     <p class="text-gray-600 dark:text-gray-300">{m.grammar_subtitle()}</p>
   </div>
 
@@ -169,7 +169,7 @@
         <div
           class="mb-6 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/20"
         >
-          <p class="mb-1 text-sm font-semibold text-indigo-800 dark:text-indigo-200">
+          <p class="mb-1 text-base font-semibold text-indigo-800 dark:text-indigo-200">
             {data.lockedTopics.length} more topics with Plus
           </p>
           <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
@@ -193,13 +193,11 @@
             class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm transition-colors hover:border-indigo-400 hover:shadow-md dark:border-gray-700 dark:bg-indigo-950/60 dark:hover:border-indigo-500"
           >
             <div class="mb-2 flex items-start justify-between gap-2">
-              <h2
-                class="text-lg font-bold text-gray-900 group-hover:text-indigo-600 dark:text-white"
-              >
+              <h2 class="group-hover:text-indigo-600 font-sans text-lg">
                 {rule ? rule.titleEn : t.topic}
               </h2>
               <span
-                class="shrink-0 rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
+                class="shrink-0 rounded-full bg-indigo-100 px-3 py-1.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
               >
                 🔒 Plus
               </span>

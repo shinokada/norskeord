@@ -177,7 +177,7 @@
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- ── Hero ──────────────────────────────────────────────────────────────────── -->
   <div class="mb-12 text-center">
-    <h1 class="text-4xl leading-tight font-bold dark:text-white">
+    <h1 class="leading-tight">
       {m.plus_heading()}
     </h1>
     <p class="mx-auto mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-300">
@@ -320,13 +320,13 @@
   <div
     class="mb-14 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-indigo-950/60"
   >
-    <h3 class="mb-2 text-base font-bold dark:text-white">{m.plus_how_heading()}</h3>
+    <h3>{m.plus_how_heading()}</h3>
     <p class="text-base text-gray-600 dark:text-gray-300">{m.plus_how_body_1()}</p>
     <p class="mt-3 text-base text-gray-600 dark:text-gray-300">{m.plus_how_body_2()}</p>
   </div>
 
   <!-- ── Plus feature highlights ────────────────────────────────────────────────── -->
-  <h2 class="mb-6 text-2xl font-bold dark:text-white">{m.plus_features_heading()}</h2>
+  <h2 class="mb-6">{m.plus_features_heading()}</h2>
   <div class="mb-14 grid grid-cols-1 gap-5 sm:grid-cols-2">
     {#each plusFeatures as feat (feat.title)}
       <div
@@ -334,7 +334,7 @@
       >
         <div class="mb-2 flex items-center gap-2">
           <span class="text-2xl">{feat.icon}</span>
-          <h3 class="font-semibold text-gray-800 dark:text-gray-100">{feat.title}</h3>
+          <h3>{feat.title}</h3>
         </div>
         <p class="text-base text-gray-600 dark:text-gray-300">{feat.body}</p>
       </div>
@@ -342,7 +342,7 @@
   </div>
 
   <!-- ── Free vs Plus comparison table ──────────────────────────────────────────── -->
-  <h2 class="mb-5 text-2xl font-bold dark:text-white">{m.plus_table_heading()}</h2>
+  <h2 class="mb-6">{m.plus_table_heading()}</h2>
   <div class="mb-14 overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
     <table class="w-full text-sm">
       <thead>
