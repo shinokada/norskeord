@@ -147,7 +147,9 @@
 >
   <NavBrand href="/">
     <No size="40" class="inline" />
-    <span class="ml-2 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+    <span
+      class="font-norse ml-2 self-center text-3xl tracking-wide whitespace-nowrap dark:text-white"
+    >
       Norskeord
     </span>
   </NavBrand>
@@ -195,7 +197,7 @@
       <button
         type="button"
         aria-label="Switch language"
-        class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm min-h-[36px] items-center font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm min-h-9 font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {currentLangEntry?.[1].flag}
         {currentLangEntry?.[1].abbr}
@@ -223,13 +225,13 @@
     {#if !effectiveUser}
       <a
         href="/plus?checkout=1"
-        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-sm min-h-[36px] font-semibold text-white hover:bg-indigo-700 md:inline-block"
+        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-sm min-h-9 font-semibold text-white hover:bg-indigo-700 md:inline-block"
       >
         {m.nav_plus_badge()}
       </a>
       <a
         href="/auth/login"
-        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm min-h-[36px] font-semibold text-gray-700 hover:bg-gray-100 md:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm min-h-9 font-semibold text-gray-700 hover:bg-gray-100 md:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {m.nav_log_in()}
       </a>

@@ -329,7 +329,7 @@
   <!-- Header -->
   <div class="mb-8 flex items-start justify-between gap-4">
     <div>
-      <h1 class="text-3xl font-bold dark:text-white">
+      <h1>
         {displayName ? m.stats_title_named({ name: displayName }) : m.stats_title()}
       </h1>
       <p class="mt-1 text-gray-500 dark:text-gray-300">
@@ -416,7 +416,7 @@
       </div>
 
       <!-- ── Per-level breakdown ────────────────────────────────────────────────── -->
-      <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_level()}</h2>
+      <h2 class="mb-4">{m.stats_by_level()}</h2>
       <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
         {#each levelStats as ls (ls.level)}
           <a
@@ -573,7 +573,7 @@
     <!-- ── Per-category breakdown — vocab, Plus only (3-A) ───────────────────── -->
     {#if totalSeen > 0}
       {#if isPlus}
-        <h2 class="mb-4 text-xl font-semibold dark:text-white">{m.stats_by_category()}</h2>
+        <h2 class="mb-4">{m.stats_by_category()}</h2>
         <div class="mb-8">
           <CategoryBarChart {allCards} {levelTextColors} {levelColors} />
         </div>
@@ -600,7 +600,7 @@
 
     <!-- ── Reset ──────────────────────────────────────────────────────────────── -->
     <div class="mt-8 border-t border-white/10 pt-8">
-      <h2 class="mb-2 text-base font-semibold text-gray-700 dark:text-gray-300">
+      <h2 class="mb-2 text-red-600 dark:text-red-400">
         {m.stats_danger_zone()}
       </h2>
       <p class="mb-4 text-sm text-gray-500 dark:text-gray-300">
