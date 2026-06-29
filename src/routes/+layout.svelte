@@ -10,7 +10,11 @@
   import Footer from './components/Footer.svelte';
   import InAppBrowserBanner from './components/InAppBrowserBanner.svelte';
   import OnboardingSlides from '$lib/components/OnboardingSlides.svelte';
+  import Toast from '$lib/components/ui/Toast.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
+  import { languageStore } from '$lib/stores/language.svelte';
+  import { FLASHCARD_LANGUAGES } from '$lib/config';
+  import type { FlashcardLanguage } from '$lib/types';
 
   let { children, data } = $props();
 
@@ -36,6 +40,12 @@
 
   // Prevent horizontal swipe-to-pan on Android PWA.
   onMount(() => {
+    // Sync profile's flashcard_language into the store (overrides localStorage default).
+    // This ensures the flashcard page uses the correct language for authenticated users.
+    if (data.flashcardLanguage && data.flashcardLanguage in FLASHCARD_LANGUAGES) {
+      languageStore.set(data.flashcardLanguage as FlashcardLanguage);
+    }
+
     let startX = 0;
     let startY = 0;
 
@@ -78,3 +88,4 @@
 {/key}
 
 <InAppBrowserBanner />
+<Toast />

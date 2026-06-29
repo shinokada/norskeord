@@ -134,7 +134,7 @@
   <button
     type="button"
     onclick={speak}
-    class="flex w-full items-center justify-center rounded-lg bg-blue-100 py-3 text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
+    class="flex w-full items-center justify-center rounded-lg bg-indigo-600 py-3 text-white hover:bg-indigo-700 dark:bg-indigo-600 dark:hover:bg-indigo-700"
     title="{label} in Norwegian"
     aria-label="{label}: {word}"
   >
@@ -145,7 +145,7 @@
   <button
     type="button"
     onclick={speak}
-    class="inline-flex items-center justify-center rounded-lg bg-blue-100 p-2 text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
+    class="inline-flex items-center justify-center rounded-lg bg-indigo-600 p-2 text-white hover:bg-indigo-700 dark:bg-indigo-600 dark:hover:bg-indigo-700"
     title="{label} in Norwegian"
     aria-label="{label}: {word}"
   >
@@ -156,7 +156,7 @@
   <button
     type="button"
     onclick={speak}
-    class="inline-flex items-center justify-center rounded-lg bg-blue-100 px-5 py-2 text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
+    class="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-5 py-2 text-white hover:bg-indigo-700 dark:bg-indigo-600 dark:hover:bg-indigo-700"
     title="{label} in Norwegian"
     aria-label="{label}: {word}"
   >
@@ -167,7 +167,7 @@
   <button
     type="button"
     onclick={speak}
-    class="flex w-full items-center justify-center rounded-lg bg-blue-100 py-2 text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
+    class="flex w-full items-center justify-center rounded-lg bg-indigo-600 py-2 text-white hover:bg-indigo-700 dark:bg-indigo-600 dark:hover:bg-indigo-700"
     title="{label} in Norwegian"
     aria-label="{label}: {word}"
   >

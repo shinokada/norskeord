@@ -34,9 +34,6 @@
 <div class="mx-auto max-w-2xl px-4 py-10 text-left">
   <div class="mb-8">
     <h1 class="text-3xl font-bold dark:text-white">{m.profile_title()}</h1>
-    {#if data.user?.email}
-      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">{data.user.email}</p>
-    {/if}
   </div>
 
   {#if showNudge}
@@ -44,7 +41,7 @@
   {/if}
 
   <div class="space-y-6">
-    <AccountSection profile={data.profile} {missingFields} />
+    <AccountSection profile={data.profile} {missingFields} email={data.user?.email ?? ''} />
     <PreferencesSection profile={data.profile} {missingFields} />
     <SubscriptionSection
       profile={data.profile}
@@ -52,6 +49,18 @@
       billingPortalUrl={data.billingPortalUrl}
       billingInterval={data.billingInterval}
     />
-    <DangerZone />
+    <details class="group">
+      <summary class="cursor-pointer list-none py-1">
+        <span
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-red-500 transition-colors hover:text-red-400"
+        >
+          <span class="inline-block transition-transform group-open:rotate-90">▸</span>
+          Danger Zone
+        </span>
+      </summary>
+      <div class="mt-3">
+        <DangerZone />
+      </div>
+    </details>
   </div>
 </div>

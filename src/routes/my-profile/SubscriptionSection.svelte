@@ -2,6 +2,7 @@
   import type { Profile } from '$lib/server/profile';
   import * as m from '$lib/paraglide/messages.js';
   import { subscribeToPush, unsubscribeFromPush } from '$lib/push';
+  import Toggle from '$lib/components/ui/Toggle.svelte';
 
   let {
     profile,
@@ -58,12 +59,10 @@
 
   // ── Push reminder toggle ─────────────────────────────────────────────────────
   let dailyReminder = $derived.by(() => profile?.daily_reminder ?? false);
-  let reminderLoading = $state(false);
   let reminderError = $state('');
 
   async function handleReminderToggle() {
     reminderError = '';
-    reminderLoading = true;
     const turningOn = !dailyReminder;
     try {
       if (turningOn) {
@@ -80,21 +79,15 @@
     } catch (err) {
       console.error('[push] toggle failed:', err);
       reminderError = 'Something went wrong. Please try again.';
-    } finally {
-      reminderLoading = false;
     }
   }
 
   // ── Email reminder toggle ────────────────────────────────────────────────────
   let emailReminder = $derived.by(() => profile?.email_reminder ?? false);
-  let emailReminderLoading = $state(false);
   let emailReminderError = $state('');
-  let emailReminderSaved = $state(false);
 
   async function handleEmailReminderToggle() {
     emailReminderError = '';
-    emailReminderLoading = true;
-    emailReminderSaved = false;
     const turningOn = !emailReminder;
     try {
       const res = await fetch('/api/profile/email-reminder', {
@@ -107,19 +100,15 @@
         return;
       }
       emailReminder = turningOn;
-      emailReminderSaved = true;
-      setTimeout(() => (emailReminderSaved = false), 2500);
     } catch (err) {
       console.error('[email-reminder] toggle failed:', err);
       emailReminderError = 'Something went wrong. Please try again.';
-    } finally {
-      emailReminderLoading = false;
     }
   }
 </script>
 
 <section
-  class="rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-white/10 dark:bg-indigo-950/60"
+  class="rounded-xl border border-gray-200 bg-gray-50 px-6 pb-6 pt-4 dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_sub_heading()}
@@ -218,23 +207,14 @@
       <div class="space-y-4">
         <!-- Push reminder -->
         <div>
-          <label class="flex cursor-pointer items-center gap-3">
-            <input
-              type="checkbox"
-              checked={dailyReminder}
-              disabled={reminderLoading}
-              onclick={handleReminderToggle}
-              class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
-            />
-            <span class="text-sm text-gray-600 dark:text-gray-300">
-              {m.profile_sub_daily_reminder()}
-              {#if reminderLoading}
-                <span class="text-xs text-gray-400">Saving…</span>
-              {/if}
-            </span>
-          </label>
-          <p class="mt-0.5 ml-7 text-xs text-gray-600 dark:text-gray-300">
-            {m.profile_sub_daily_reminder_hint()}
+          <Toggle
+            name="daily_reminder"
+            label={m.profile_sub_daily_reminder()}
+            checked={dailyReminder}
+            hint={m.profile_sub_daily_reminder_hint()}
+            onchange={handleReminderToggle}
+          />
+          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
             <a
               href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
               target="_blank"
@@ -244,31 +224,20 @@
             >
           </p>
           {#if reminderError}
-            <p class="mt-1 ml-7 text-xs text-red-500">{reminderError}</p>
+            <p class="mt-1 text-xs text-red-500">{reminderError}</p>
           {/if}
         </div>
 
         <!-- Email reminder -->
         <div>
-          <label class="flex cursor-pointer items-center gap-3">
-            <input
-              type="checkbox"
-              checked={emailReminder}
-              disabled={emailReminderLoading}
-              onclick={handleEmailReminderToggle}
-              class="h-4 w-4 rounded accent-indigo-600 disabled:opacity-50"
-            />
-            <span class="text-sm text-gray-600 dark:text-gray-300">
-              {m.profile_sub_email_reminder()}
-              {#if emailReminderLoading}
-                <span class="text-xs text-gray-400">Saving…</span>
-              {:else if emailReminderSaved}
-                <span class="text-xs text-indigo-500">✓ Saved</span>
-              {/if}
-            </span>
-          </label>
-          <p class="mt-0.5 ml-7 text-xs text-gray-600 dark:text-gray-300">
-            {m.profile_sub_email_reminder_hint()}
+          <Toggle
+            name="email_reminder"
+            label={m.profile_sub_email_reminder()}
+            checked={emailReminder}
+            hint={m.profile_sub_email_reminder_hint()}
+            onchange={handleEmailReminderToggle}
+          />
+          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
             <a
               href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
               target="_blank"
@@ -278,7 +247,7 @@
             >
           </p>
           {#if emailReminderError}
-            <p class="mt-1 ml-7 text-xs text-red-500">{emailReminderError}</p>
+            <p class="mt-1 text-xs text-red-500">{emailReminderError}</p>
           {/if}
         </div>
       </div>

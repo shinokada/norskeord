@@ -122,9 +122,16 @@
   // Whether any entry in the current category has a definition — gates the defnor cycle
   let hasDefinitions = $derived(entries.some((e) => !!e.definition));
 
-  // Effective mode: if the category has no definitions and mode is defnor, treat as noreng.
-  // This avoids mutating `mode` in the $effect and breaking deck rebuilds.
-  let effectiveMode = $derived<Mode>(mode === 'defnor' && !hasDefinitions ? 'noreng' : mode);
+  // Definition mode is only available for B1 and above.
+  const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C']);
+  let isDefnorLevel = $derived(B1_PLUS_LEVELS.has(level.toUpperCase()));
+
+  // Effective mode: fall back to noreng if:
+  //  - the category has no definitions, or
+  //  - the level is below B1 (A1/A2)
+  let effectiveMode = $derived<Mode>(
+    mode === 'defnor' && (!hasDefinitions || !isDefnorLevel) ? 'noreng' : mode
+  );
 
   // Step 5: Detect uttrykk-preview category for banner
   let isUttrykkPreview = $derived(entries.length > 0 && entries[0].category === 'uttrykk-preview');
@@ -662,7 +669,7 @@
       >
         {LANGUAGES[language].abbr} → NO
       </button>
-      {#if hasDefinitions && cardType === 'word'}
+      {#if hasDefinitions && cardType === 'word' && isDefnorLevel}
         <button
           type="button"
           class={segmentCls(effectiveMode === 'defnor', 'green')}
@@ -982,7 +989,7 @@
     <div class="mt-3 flex w-full max-w-lg items-center gap-2">
       {#if cardType !== 'phrase'}
         <span
-          class="shrink-0 rounded-lg bg-indigo-100 px-3 py-3 text-sm font-medium text-indigo-800 dark:bg-indigo-800/50 dark:text-indigo-200"
+          class="shrink-0 rounded-lg bg-indigo-700 px-3 py-3 text-sm font-medium text-white dark:bg-indigo-800/50 dark:text-indigo-200"
         >
           {current.entry.part === 'noun'
             ? m.part_noun()
@@ -1016,7 +1023,9 @@
         onclick={undo}
         disabled={!undoSnapshot}
         tabindex={undoSnapshot ? 0 : -1}
-        class="inline-flex min-w-28 items-center justify-center rounded-lg bg-yellow-100 px-3 py-3 text-sm font-medium text-yellow-800 hover:bg-yellow-200 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-yellow-900 dark:text-yellow-200 dark:hover:bg-yellow-800"
+        class="inline-flex min-w-28 items-center justify-center rounded-lg px-3 py-3 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-40 {undoSnapshot
+          ? 'bg-amber-500 hover:bg-amber-600'
+          : 'bg-indigo-700'}"
       >
         ↩ {undoSnapshot ? m.flashcard_undo_countdown({ seconds: String(undoCountdown) }) : 'Undo'}
       </button>
@@ -1040,7 +1049,7 @@
           {/if}
           <div class="flex items-center gap-2 mx-3 mb-3">
             <span
-              class="shrink-0 rounded-lg bg-indigo-100 px-3 py-2 text-sm font-medium text-indigo-800 dark:bg-indigo-800/50 dark:text-indigo-200"
+              class="shrink-0 rounded-lg bg-indigo-700 px-3 py-2 text-sm font-medium text-white dark:bg-indigo-800/50 dark:text-indigo-200"
             >
               {cardType === 'word' ? m.flashcard_phrase() : m.flashcard_word()}
             </span>
@@ -1054,7 +1063,7 @@
             </div>
             <button
               type="button"
-              class="shrink-0 rounded-lg bg-indigo-100 px-3 py-2 text-sm font-medium text-indigo-800 hover:bg-indigo-200 dark:bg-indigo-800/50 dark:text-indigo-200 dark:hover:bg-indigo-700/50"
+              class="shrink-0 rounded-lg bg-indigo-700 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-600 dark:bg-indigo-800/50 dark:text-indigo-200 dark:hover:bg-indigo-700/50"
               onclick={() => {
                 showExampleEnglish = !showExampleEnglish;
                 showExampleDefault = showExampleEnglish;
@@ -1075,7 +1084,7 @@
       type="button"
       onclick={prev}
       aria-label={m.flashcard_previous()}
-      class="inline-flex min-h-[44px] w-full items-center bg-indigo-900 p-3 text-indigo-100 hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
+      class="inline-flex min-h-[44px] w-full items-center bg-indigo-700 p-3 text-white hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
       disabled={currentIndex <= 0 && !completed}
     >
       <ArrowLeft class="mr-4" />
@@ -1084,7 +1093,7 @@
 
     <button
       type="button"
-      class="inline-flex min-h-[44px] w-full items-center justify-center bg-indigo-900 p-3 text-indigo-100 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 hover:bg-indigo-800 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
+      class="inline-flex min-h-[44px] w-full items-center justify-center bg-indigo-700 p-3 text-white hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
       aria-label={m.flashcard_restart()}
       onclick={restart}
       disabled={entries.length === 0}
@@ -1096,7 +1105,7 @@
       type="button"
       onclick={next}
       aria-label={m.flashcard_next()}
-      class="inline-flex min-h-[44px] w-full items-center bg-indigo-900 p-3 text-indigo-100 hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
+      class="inline-flex min-h-[44px] w-full items-center bg-indigo-700 p-3 text-white hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50 sm:p-4 dark:bg-indigo-900/80 dark:hover:bg-indigo-800/80"
       disabled={completed || deck.length === 0}
     >
       <ArrowRight class="mr-4" />
