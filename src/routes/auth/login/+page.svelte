@@ -8,7 +8,40 @@
 
   let { form }: { form: ActionData } = $props();
 
-  let email = $derived((form && 'email' in form ? form.email : '') ?? '');
+  // --- PWA background-resume persistence ---
+  // On Android PWA, switching to Gmail to copy the OTP code causes the app to
+  // be backgrounded. On return Android may reload the page, resetting `form`
+  // to null and losing the verify step. We persist email + step in
+  // sessionStorage so the verify screen survives that round-trip.
+  const SESSION_KEY = 'login_pending';
+
+  function savePending(emailToSave: string) {
+    try {
+      sessionStorage.setItem(SESSION_KEY, emailToSave);
+    } catch {
+      // sessionStorage unavailable (private mode etc.) — degrade silently.
+    }
+  }
+
+  function clearPending() {
+    try {
+      sessionStorage.removeItem(SESSION_KEY);
+    } catch { /* ignore */ }
+  }
+
+  function getPending(): string {
+    try {
+      return sessionStorage.getItem(SESSION_KEY) ?? '';
+    } catch {
+      return '';
+    }
+  }
+
+  // Seed from sessionStorage on first render so that if the page reloaded
+  // after backgrounding we still show the verify screen.
+  const pendingEmail = getPending();
+
+  let email = $derived((form && 'email' in form ? form.email : null) ?? pendingEmail ?? '');
   let next = $derived(
     (form && 'next' in form ? (form.next as string) : null) ??
       page.url.searchParams.get('next') ??
@@ -17,7 +50,8 @@
 
   let step = $derived(
     (form && 'step' in form && form.step === 'verify') ||
-      (form !== null && 'success' in form && form.success === true)
+      (form !== null && 'success' in form && form.success === true) ||
+      pendingEmail !== ''
       ? 'verify'
       : 'email'
   );
@@ -170,6 +204,10 @@
       ) {
         resetTurnstile();
       }
+      // Persist email so verify step survives PWA backgrounding.
+      if (result.type === 'success') {
+        savePending(emailValue);
+      }
       applyAction(result);
     } catch (err) {
       console.error('Login fetch error:', err);
@@ -196,6 +234,10 @@
 
       const result = deserialize(await response.text());
       verifying = false;
+      // Clear persisted email on successful verification.
+      if (result.type === 'redirect') {
+        clearPending();
+      }
       applyAction(result);
     } catch (err) {
       console.error('Verify fetch error:', err);
