@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.43.0
+
+### Minor Changes
+
+- - **New Features**
+    - Synced flashcard language from saved profile.
+    - Added global toast plus reusable Toggle and Segmented Control.
+    - Modernized profile/preferences with auto-save, debounced updates, and collapsible Danger Zone.
+    - Added a tool to count vocab/uttrykk entries by category.
+  - **Bug Fixes**
+    - Limited definition mode to supported levels and improved search index loading to avoid duplicate fetches.
+  - **Localization / UI**
+    - Streamlined home/Plus/resources/learn copy, updated footer text, refreshed translations, and refreshed button/flashcard styling.
+  - **Docs & Tests**
+    - Added entry-count documentation; updated Playwright setup and search e2e tests.
+
 ## 2.42.0
 
 ### Minor Changes
