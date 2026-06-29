@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.44.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a clearer login recovery flow with a “back to login” action on the verification screen.
+    - Improved login handling so pending sign-in state can survive reloads and backgrounding.
+    - Added local development guidance for testing login flows through ngrok.
+  - **Bug Fixes**
+    - Fixed OTP verification issues after reloads and Android/PWA backgrounding.
+    - Improved resend and verification behavior, including better handling of anti-bot checks and cleaner state resets.
+    - Updated translations to support the new login navigation text.
+
 ## 2.43.1
 
 ### Patch Changes
