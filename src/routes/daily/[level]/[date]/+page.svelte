@@ -27,14 +27,12 @@
     >
       {levelLabel} · {lesson.lesson_date}
     </span>
-    <h1 class="mt-1 text-2xl font-bold dark:text-white">{lesson.focus_topic}</h1>
+    <h1 class="mt-1 dark:text-white">{lesson.focus_topic}</h1>
   </div>
 
   <!-- Main text -->
   <section class="mb-8">
-    <h2 class="mb-3 text-sm font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
-      Tekst
-    </h2>
+    <h2 class="mb-3 tracking-wide text-gray-500 uppercase dark:text-gray-400">Tekst</h2>
     <div
       class="rounded-xl border border-blue-100 bg-blue-50 px-5 py-4 dark:border-blue-900 dark:bg-blue-950/40"
     >
@@ -53,9 +51,7 @@
 
   <!-- Vocabulary -->
   <section class="mb-8">
-    <h2 class="mb-3 text-sm font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
-      Ordliste
-    </h2>
+    <h2 class="mb-3 tracking-wide text-gray-500 uppercase dark:text-gray-400">Ordliste</h2>
     <div
       class="divide-y divide-gray-100 rounded-xl border border-gray-200 dark:divide-gray-700 dark:border-gray-700"
     >
@@ -76,9 +72,7 @@
 
   <!-- Exercises -->
   <section>
-    <h2 class="mb-3 text-sm font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
-      Øvelser
-    </h2>
+    <h2 class="mb-3 tracking-wide text-gray-500 uppercase dark:text-gray-400">Øvelser</h2>
     <div class="flex flex-col gap-4">
       {#each lesson.exercises as ex, i (i)}
         <div

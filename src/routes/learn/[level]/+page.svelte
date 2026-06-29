@@ -131,10 +131,7 @@
 >
   <div class="mx-auto max-w-3xl">
     <div class="flex flex-wrap items-baseline justify-center gap-3">
-      <h1
-        class="font-bold text-4xl leading-none mb-0 {colors.heading}"
-        style="letter-spacing:0.04em"
-      >
+      <h1 class="leading-none mb-0 {colors.heading}" style="letter-spacing:0.04em">
         {data.levelUpper}
       </h1>
       <span class="font-norse rounded-full px-3 py-1 text-xl font-semibold {colors.badge}">
@@ -168,7 +165,7 @@
 <div class="mx-auto max-w-3xl px-4 pb-16">
   <!-- ── Section 2 — Vocabulary ──────────────────────────────────────────── -->
   <section class="mb-12">
-    <h2 class="mb-4 text-xl font-bold dark:text-white">📖 Vocabulary</h2>
+    <h2 class="mb-4">📖 Vocabulary</h2>
     <div class="flex flex-wrap gap-2">
       {#each visibleCategories as cat (cat.slug)}
         {@const locked = !isPlus && cat.locked}
@@ -201,7 +198,7 @@
   <!-- ── Section 3 — Grammar ─────────────────────────────────────────────── -->
   {#if data.grammarTopics.length > 0}
     <section class="mb-12">
-      <h2 class="mb-4 text-xl font-bold dark:text-white">🧩 Grammar</h2>
+      <h2 class="mb-4">🧩 Grammar</h2>
       <div class="grid gap-4 sm:grid-cols-2">
         {#each visibleGrammarTopics as t (t.topic)}
           {@const rule = GRAMMAR_RULES[t.topic]}
@@ -266,7 +263,7 @@
 
   <!-- ── Section 4 — Quiz ────────────────────────────────────────────────── -->
   <section class="mb-12">
-    <h2 class="mb-4 text-xl font-bold dark:text-white">🎯 Quiz</h2>
+    <h2 class="mb-4">🎯 Quiz</h2>
     <a
       href="/quiz?level={data.levelUpper}"
       class="flex items-center justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
@@ -286,7 +283,7 @@
   <!-- ── Section 5 — Norskprøven (A2 and B1 only) ───────────────────────── -->
   {#if showNorskproven}
     <section class="mb-12">
-      <h2 class="mb-4 text-xl font-bold dark:text-white">📝 Norskprøven</h2>
+      <h2 class="mb-4">📝 Norskprøven</h2>
       <div class="grid gap-4 sm:grid-cols-2">
         <a
           href="/norskproven"
@@ -323,7 +320,7 @@
   {#if data.blogPosts.length > 0}
     <section class="mb-12">
       <div class="mb-4 flex items-center justify-between">
-        <h2 class="text-xl font-bold dark:text-white">✍️ From the blog</h2>
+        <h2 class="mb-4">✍️ From the blog</h2>
         <a href="/blog" class="text-sm font-medium {colors.accent} hover:underline">
           {m.level_hub_all_articles()}
         </a>

@@ -147,9 +147,11 @@
 >
   <NavBrand href="/">
     <No size="40" class="inline" />
-    <span class="font-norse ml-2 self-center text-2xl font-normal tracking-wide whitespace-nowrap dark:text-white">
-  Norskeord
-</span>
+    <span
+      class="font-norse ml-2 self-center text-3xl tracking-wide whitespace-nowrap dark:text-white"
+    >
+      Norskeord
+    </span>
   </NavBrand>
 
   <div class="flex items-center gap-1 md:order-2">

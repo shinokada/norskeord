@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Heading } from 'flowbite-svelte';
   import * as m from '$lib/paraglide/messages.js';
   type Path = {
     id: number;
@@ -79,10 +78,12 @@
     { id: 'grammar', label: () => m.guide_anchor_grammar() },
     { id: 'norskproven', label: () => m.guide_anchor_norskproven() }
   ];
+  const h2class = 'mb-4';
+  const h3class = 'mb-3';
 </script>
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
-  <Heading tag="h1" class="mb-2 text-4xl font-bold dark:text-white">{m.guide_page_title()}</Heading>
+  <h1 class="mb-2 dark:text-white">{m.guide_page_title()}</h1>
   <p class="mb-6 text-gray-600 dark:text-gray-300">
     {m.guide_page_subtitle()}
   </p>
@@ -92,7 +93,7 @@
     {#each sections as { id, label } (id)}
       <a
         href="#{id}"
-        class="min-h-[40px] flex items-center rounded-xl border border-gray-200 bg-white px-3 py-1 text-sm text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-indigo-400 dark:hover:text-indigo-300"
+        class="min-h-10 flex items-center rounded-xl border border-gray-200 bg-white px-3 py-1 text-sm text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-indigo-400 dark:hover:text-indigo-300"
       >
         {label()}
       </a>
@@ -101,9 +102,7 @@
 
   <!-- ── WHERE TO START ─────────────────────────────────────── -->
   <section id="start" class="mb-12 scroll-mt-20">
-    <Heading tag="h2" class="mb-4 text-2xl font-semibold dark:text-white"
-      >{m.guide_start_heading()}</Heading
-    >
+    <h2 class={h2class}>{m.guide_start_heading()}</h2>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_start_intro()}</p>
 
     <div
@@ -130,15 +129,11 @@
 
   <!-- ── FLASHCARDS ─────────────────────────────────────────── -->
   <section id="flashcards" class="mb-12 scroll-mt-20">
-    <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
-      >{m.guide_flashcards_heading()}</Heading
-    >
+    <h2 class={h2class}>{m.guide_flashcards_heading()}</h2>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_flashcards_intro()}</p>
 
     <!-- Smart scheduling -->
-    <Heading tag="h3" class="mb-3 text-lg font-semibold dark:text-white"
-      >{m.guide_scheduling_heading()}</Heading
-    >
+    <h3 class={h3class}>{m.guide_scheduling_heading()}</h3>
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     <p class="mb-4 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_1()}</p>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_scheduling_2()}</p>
@@ -146,9 +141,7 @@
     <p class="mb-6 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_4()}</p>
 
     <!-- Rating buttons + Card states combined -->
-    <Heading tag="h3" class="mb-3 text-lg font-semibold dark:text-white"
-      >{m.guide_buttons_heading()}</Heading
-    >
+    <h3 class={h3class}>{m.guide_buttons_heading()}</h3>
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     <p class="mb-4 text-gray-700 dark:text-gray-300">{@html m.guide_buttons_intro()}</p>
 
@@ -171,9 +164,7 @@
     <p class="mb-6 text-gray-700 dark:text-gray-300">{@html m.guide_buttons_outro()}</p>
 
     <!-- Card states -->
-    <Heading tag="h3" class="mb-3 text-lg font-semibold dark:text-white"
-      >{m.guide_states_heading()}</Heading
-    >
+    <h3 class={h3class}>{m.guide_states_heading()}</h3>
     <div class="mb-6 space-y-3">
       <div class="flex items-start gap-3">
         <span
@@ -225,9 +216,7 @@
 
   <!-- ── QUIZ ───────────────────────────────────────────────── -->
   <section id="quiz" class="mb-12 scroll-mt-20">
-    <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
-      >{m.guide_quiz_heading()}</Heading
-    >
+    <h2 class={h2class}>{m.guide_quiz_heading()}</h2>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_quiz_intro()}</p>
 
     <div class="mb-4 space-y-3">
@@ -271,9 +260,7 @@
 
   <!-- ── GRAMMAR ────────────────────────────────────────────── -->
   <section id="grammar" class="mb-12 scroll-mt-20">
-    <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
-      >{m.guide_grammar_heading()}</Heading
-    >
+    <h2 class={h2class}>{m.guide_grammar_heading()}</h2>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_grammar_intro()}</p>
 
     <div class="mb-4 space-y-2">
@@ -308,9 +295,7 @@
 
   <!-- ── NORSKPRØVEN ────────────────────────────────────────── -->
   <section id="norskproven" class="mb-12 scroll-mt-20">
-    <Heading tag="h2" class="mb-3 text-2xl font-semibold dark:text-white"
-      >{m.guide_norskproven_heading()}</Heading
-    >
+    <h2 class={h2class}>{m.guide_norskproven_heading()}</h2>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_norskproven_what()}</p>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_norskproven_how()}</p>
 

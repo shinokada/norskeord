@@ -603,9 +603,8 @@
 <div class="flex w-full flex-col items-center">
   <!-- Category header: level label + title -->
   <div class="mt-10 mb-0.5 flex w-full items-center justify-center px-2">
-    <h1 class="text-3xl mb-0 leading-tight text-center">
-      {#if level}<span class="mr-1 font-normal text-gray-700 dark:text-gray-300">{level} ·</span
-        >{/if}<span class="font-bold">{title}</span>
+    <h1 class="mb-0 leading-tight text-center">
+      {#if level}<span class="mr-1">{level} ·</span>{/if}{title}
     </h1>
   </div>
 

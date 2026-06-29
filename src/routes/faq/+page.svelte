@@ -1,5 +1,4 @@
 <script>
-  import { Heading } from 'flowbite-svelte';
   import * as m from '$lib/paraglide/messages.js';
   const faqs = [
     {
@@ -69,8 +68,7 @@
 </script>
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
-  <Heading tag="h1" class="mb-2 text-4xl font-bold dark:text-white">{m.guide_faq_heading()}</Heading
-  >
+  <h1 class="mb-2">{m.guide_faq_heading()}</h1>
   <p class="mb-10 text-gray-600 dark:text-gray-300">
     {m.faq_page_subtitle()}
   </p>

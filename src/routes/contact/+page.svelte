@@ -197,7 +197,7 @@
   {:else}
     <!-- ── Form ──────────────────────────────────────────────────────────── -->
     <div class="mb-8">
-      <h1 class="text-3xl font-bold dark:text-white">{m.contact_heading()}</h1>
+      <h1>{m.contact_heading()}</h1>
       <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
         {data.isPlus ? m.contact_subheading_plus() : m.contact_subheading()}
       </p>

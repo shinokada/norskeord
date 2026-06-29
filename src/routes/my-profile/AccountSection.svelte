@@ -9,17 +9,21 @@
     email = ''
   }: { profile: Profile | null; missingFields: string[]; email?: string } = $props();
 
-  let displayName = $state(profile?.display_name ?? '');
+  let displayNameOverride = $state<string | null>(null);
+  let displayName = $derived(displayNameOverride ?? profile?.display_name ?? '');
+  function setDisplayName(value: string) {
+    displayNameOverride = value;
+  }
   let debounceTimer: ReturnType<typeof setTimeout> | null = null;
 
-  const initials = $derived(() => {
+  const initials = $derived.by(() => {
     const name = displayName;
     if (name.trim()) {
       return name
         .trim()
         .split(/\s+/)
         .slice(0, 2)
-        .map((w) => w[0].toUpperCase())
+        .map((w: string) => w[0].toUpperCase())
         .join('');
     }
     return '?';
@@ -39,7 +43,7 @@
 
   function onDisplayNameInput(e: Event) {
     const value = (e.currentTarget as HTMLInputElement).value;
-    displayName = value;
+    setDisplayName(value);
     if (debounceTimer) clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => saveAccount(value), 800);
   }
@@ -86,7 +90,7 @@
 <section
   class="rounded-xl border border-gray-200 bg-gray-50 px-6 pb-6 pt-4 dark:border-white/10 dark:bg-indigo-950/60"
 >
-  <h2 class="mb-5 text-base font-semibold text-gray-800 dark:text-gray-100">
+  <h2 class="mb-5 font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_account_heading()}
   </h2>
 
@@ -95,7 +99,7 @@
     <div
       class="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-lg font-bold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
     >
-      {initials()}
+      {initials}
     </div>
   </div>
 
