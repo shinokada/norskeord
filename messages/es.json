@@ -286,6 +286,7 @@
   "login_resending": "Enviando…",
   "login_resend_sent": "Nuevo código enviado.",
   "login_resend_error": "No se pudo reenviar. Inténtalo de nuevo.",
+  "login_back": "← Ir al inicio de sesión",
   "plus_heading": "Estudia de forma más inteligente con Norskeord Plus",
   "plus_subheading": "Plus registra qué tan bien conoces cada palabra y te muestra solo las tarjetas que vale la pena repasar hoy — para que cada sesión realmente se fije.",
   "plus_features_heading": "Qué obtienes con Plus",
