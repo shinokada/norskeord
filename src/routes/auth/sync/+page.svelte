@@ -10,6 +10,10 @@
   import { validFlashcardPathPattern } from '$lib/utils';
 
   onMount(async () => {
+    // Clear any pending login state from the login page
+    localStorage.removeItem('login_pending');
+    localStorage.removeItem('login_pending_token');
+
     const userId = page.data.user?.id;
     const isPlus = (page.data.plan as 'free' | 'plus') === 'plus';
     const profile = page.data.profile;

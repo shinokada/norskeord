@@ -286,6 +286,7 @@
   "login_resending": "Sender…",
   "login_resend_sent": "Ny kode er sendt.",
   "login_resend_error": "Kunne ikke sende på nytt. Prøv igjen.",
+  "login_back": "← Gå til innlogging",
   "plus_badge": "Kommer snart",
   "plus_heading": "Studer smartere med Norskeord Plus",
   "plus_subheading": "Plus holder styr på hvor godt du kan hvert ord og viser deg bare kortene det er verdt å øve på i dag — slik at hver økt faktisk fester seg.",
