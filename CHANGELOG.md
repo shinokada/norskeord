@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.43.1
+
+### Patch Changes
+
+- - **Style & UI Polish**
+    - Updated typography across major pages (headings in flashcards, learn, resources, quiz, plus, stats), plus navigation/footer, for a cleaner, more consistent look. Adjusted spacing on category pills and badges.
+  - **Content & Localization**
+    - Removed Norskprøven “study tips” section text across supported languages, so the flow goes directly to the main exam preparation call-to-action.
+    - Shortened the Resources subtitle to “Free tools, courses, and communities.”
+  - **Data / Stats**
+    - Refreshed displayed statistics to include additional Level C items.
+  - **Progress**
+    - Improved consistency of saved/synced vocabulary progress.
+
 ## 2.43.0
 
 ### Minor Changes
