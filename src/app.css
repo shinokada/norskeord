@@ -47,12 +47,12 @@
   }
 
   h1 {
-    @apply font-norse mb-6 text-3xl font-bold dark:text-white;
+    @apply font-norse mb-6 text-3xl font-bold sm:text-4xl dark:text-white;
   }
   h2 {
-    @apply my-4 text-2xl dark:text-white;
+    @apply font-norse my-4 text-2xl font-semibold sm:text-3xl dark:text-white;
   }
   h3 {
-    @apply my-2 text-xl dark:text-white;
+    @apply my-2 text-xl sm:text-2xl dark:text-white;
   }
 }

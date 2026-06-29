@@ -110,9 +110,6 @@ interface ProgressRow {
   // vocab_id is the stable lookup key (entry.id ?? entry.norsk).
   // NOT NULL — migration 016 added it as NOT NULL with a unique constraint.
   vocab_id: string;
-  // norsk is kept until migration 017 drops the column. Written on every upsert
-  // so old code (if rolled back) can still read it.
-  norsk: string;
   level: string;
   category: string;
   due: string;
@@ -132,7 +129,6 @@ interface ProgressRow {
 function toRow(entry: VocabEntry, p: CardProgress): Omit<ProgressRow, never> {
   return {
     vocab_id: entry.id ?? entry.norsk, // stable key; falls back to norsk for old entries
-    norsk: entry.norsk, // kept until migration 017 drops the column
     level: p.level,
     category: p.category,
     due: p.fsrs.due instanceof Date ? p.fsrs.due.toISOString() : String(p.fsrs.due),
@@ -179,11 +175,10 @@ function fromRow(row: ProgressRow): CardProgress {
 
 /**
  * Derives the in-memory map key from a Supabase row.
- * Always uses vocab_id (NOT NULL since migration 016).
- * norsk fallback kept only for safety during the migration 016→017 window.
+ * Always uses vocab_id (NOT NULL since migration 016, norsk dropped in 017).
  */
 function rowKey(row: ProgressRow): string {
-  return row.vocab_id || row.norsk;
+  return row.vocab_id;
 }
 
 // ── Supabase — Plus users ────────────────────────────────────────────────────
@@ -687,11 +682,10 @@ export async function migrateLocalProgressToSupabase(
       return { user_id: userId, ...toRow(entry, progress) };
     }
     // Fallback for legacy keys that are the norsk value (pre-id localStorage).
-    // vocab_id and norsk both get the key value; level/category come from progress.
+    // vocab_id gets the key value; level/category come from progress.
     return {
       user_id: userId,
       vocab_id: key,
-      norsk: key,
       level: progress.level,
       category: progress.category,
       due:

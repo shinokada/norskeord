@@ -10,7 +10,7 @@
 <section
   class="rounded-xl border border-red-200 bg-red-50 px-6 pb-6 pt-4 dark:border-red-800/40 dark:bg-red-950/20"
 >
-  <h2 class="mb-1 text-base font-semibold text-red-600 dark:text-red-400">
+  <h2 class="mb-1 font-semibold text-red-600 dark:text-red-400">
     {m.profile_danger_heading()}
   </h2>
   <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">

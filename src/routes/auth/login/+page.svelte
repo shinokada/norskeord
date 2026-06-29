@@ -239,7 +239,7 @@
 
 <div class="mx-auto max-w-sm px-4 py-16">
   <div class="mb-8 text-center">
-    <h1 class="text-2xl font-bold dark:text-white">{m.login_heading()}</h1>
+    <h1>{m.login_heading()}</h1>
     <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
       {m.login_subheading()}
     </p>
