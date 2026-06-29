@@ -1,4 +1,18 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Norse';
+  src: url('/fonts/Norse.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url('/fonts/Norsebold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
 @plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -6,6 +20,8 @@
 @source '../node_modules/flowbite-svelte/dist';
 
 @theme {
+  --font-norse: 'Norse', sans-serif;
+
   --z-index-100: 100;
 
   --color-primary-50: #f7fee7;
@@ -31,7 +47,7 @@
   }
 
   h1 {
-    @apply mb-6 text-3xl dark:text-white;
+    @apply font-norse mb-6 text-3xl font-bold dark:text-white;
   }
   h2 {
     @apply my-4 text-2xl dark:text-white;

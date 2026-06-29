@@ -29,11 +29,41 @@
   let user = $derived(page.data.user);
 
   const levels = [
-    { id: 'A1', href: '/learn/a1', label: () => m.home_level_a1(), color: 'green' },
-    { id: 'A2', href: '/learn/a2', label: () => m.home_level_a2(), color: 'teal' },
-    { id: 'B1', href: '/learn/b1', label: () => m.home_level_b1(), color: 'blue' },
-    { id: 'B2', href: '/learn/b2', label: () => m.home_level_b2(), color: 'indigo' },
-    { id: 'C', href: '/learn/c', label: () => m.home_level_c(), color: 'purple' }
+    {
+      id: 'A1',
+      href: '/learn/a1',
+      label: () => m.home_level_a1(),
+      shortLabel: () => m.level_hub_beginner(),
+      color: 'green'
+    },
+    {
+      id: 'A2',
+      href: '/learn/a2',
+      label: () => m.home_level_a2(),
+      shortLabel: () => m.level_hub_elementary(),
+      color: 'teal'
+    },
+    {
+      id: 'B1',
+      href: '/learn/b1',
+      label: () => m.home_level_b1(),
+      shortLabel: () => m.level_hub_intermediate(),
+      color: 'blue'
+    },
+    {
+      id: 'B2',
+      href: '/learn/b2',
+      label: () => m.home_level_b2(),
+      shortLabel: () => m.level_hub_upper_intermediate(),
+      color: 'indigo'
+    },
+    {
+      id: 'C',
+      href: '/learn/c',
+      label: () => m.home_level_c(),
+      shortLabel: () => m.level_hub_mastery(),
+      color: 'purple'
+    }
   ] as const;
 
   type BadgeColor = 'green' | 'teal' | 'blue' | 'indigo' | 'purple';
@@ -252,11 +282,6 @@
         <h3 class="mb-3 text-lg font-semibold text-gray-800 dark:text-gray-100">
           {card.titleFn()}
         </h3>
-        <span
-          class="mt-4 text-sm font-medium text-indigo-600 dark:text-indigo-400 group-hover:underline"
-        >
-          {m.home_features_explore()}
-        </span>
       </a>
     {/each}
   </div>
@@ -274,21 +299,16 @@
         href={lvl.href}
         class="group flex flex-col rounded-2xl border {accent.border} bg-white p-5 text-left shadow-sm transition hover:shadow-md dark:bg-indigo-950/60"
       >
-        <div class="mb-1 flex items-center justify-between">
-          <h3 class="text-lg font-bold {accent.heading}">{lvl.label()}</h3>
+        <div class="mb-2 flex items-baseline gap-3">
           <span
-            class="rounded-full bg-gray-100 px-2.5 py-0.5 text-sm font-medium text-gray-600
-                   dark:bg-gray-700 dark:text-gray-300"
+            class="font-norse font-bold text-3xl leading-none {accent.heading}"
+            style="letter-spacing:0.04em">{lvl.id}</span
           >
-            {lvl.id}
-          </span>
+          <h3 class="font-norse text-xl font-semibold {accent.heading}">{lvl.shortLabel()}</h3>
         </div>
         <p class="mb-4 text-sm text-gray-700 dark:text-gray-300">
           {entryCountLabel(lvl.id)}
         </p>
-        <span class="text-sm font-medium {accent.link} group-hover:underline">
-          {m.home_level_explore({ level: lvl.id })}
-        </span>
       </a>
     {/each}
   </div>
