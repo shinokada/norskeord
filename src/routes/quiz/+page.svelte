@@ -346,7 +346,7 @@
   {/if}
   {#if quizState === 'idle'}
     <div>
-      <h1 class="mb-2 text-3xl font-bold dark:text-white">{m.quiz_title()}</h1>
+      <h1 class="mb-2">{m.quiz_title()}</h1>
       <p class="mb-8 text-gray-600 dark:text-gray-300">
         {m.quiz_subtitle()}
       </p>
@@ -726,7 +726,7 @@
   {:else if quizState === 'summary'}
     <div>
       <p class="mb-1 text-5xl">{scoreEmoji(correctCount, questions.length)}</p>
-      <h2 class="mt-3 text-2xl font-bold dark:text-white">{m.quiz_session_done()}</h2>
+      <h2 class="mt-3">{m.quiz_session_done()}</h2>
       <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
         {m.quiz_score({ correct: correctCount, total: questions.length })}
       </p>

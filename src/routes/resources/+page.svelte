@@ -130,7 +130,7 @@
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
   <div class="mb-10">
-    <h1 class="text-4xl leading-tight font-bold dark:text-white">Norwegian Learning Resources</h1>
+    <h1 class="leading-tight dark:text-white">Norwegian Learning Resources</h1>
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
       Free tools, courses, and communities.
     </p>
@@ -141,7 +141,7 @@
     <div class="mb-10">
       <div class="mb-4 flex items-center gap-3">
         <span class="text-2xl">{section.icon}</span>
-        <h2 class="text-2xl font-bold {section.color.heading}">{section.title}</h2>
+        <h2 class={section.color.heading}>{section.title}</h2>
       </div>
 
       <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">

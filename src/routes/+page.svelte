@@ -269,7 +269,7 @@
 
 <!-- ── Feature showcase ─────────────────────────────────────────────────── -->
 <div class="mb-14">
-  <h2 class="mb-6 text-center text-2xl font-bold dark:text-white">
+  <h2 class="mb-6 text-center font-bold dark:text-white">
     {m.home_features_heading()}
   </h2>
   <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -289,7 +289,7 @@
 
 <!-- ── Level summary cards ──────────────────────────────────────────────── -->
 <div class="mb-12">
-  <h2 class="mb-6 text-center text-2xl font-bold dark:text-white">
+  <h2 class="mb-6 text-center font-bold dark:text-white">
     {m.home_levels_heading()}
   </h2>
   <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -366,7 +366,7 @@
 
 <div class="mx-auto max-w-6xl px-4 py-10 text-left">
   <a href="/admin" class="text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; Admin</a>
-  <h1 class="mt-2 text-2xl font-bold dark:text-white">Blog Posts</h1>
+  <h1 class="mt-2">Blog Posts</h1>
 
   {#if loading}
     <p class="mt-6 text-gray-600 dark:text-gray-300">Loading…</p>
@@ -601,7 +601,7 @@
     <div
       class="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-lg bg-white p-6 dark:bg-gray-900"
     >
-      <h2 class="text-lg font-bold dark:text-white">
+      <h2>
         {modal.mode === 'add' ? 'New post' : `Edit ${modal.post._originalFilename}`}
       </h2>
 
