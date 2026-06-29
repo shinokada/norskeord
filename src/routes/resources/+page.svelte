@@ -142,9 +142,6 @@
       <div class="mb-4 flex items-center gap-3">
         <span class="text-2xl">{section.icon}</span>
         <h2 class="text-2xl font-bold {section.color.heading}">{section.title}</h2>
-        <span class="rounded-full {section.color.badge} px-2.5 py-0.5 text-xs font-semibold"
-          >Free</span
-        >
       </div>
 
       <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
