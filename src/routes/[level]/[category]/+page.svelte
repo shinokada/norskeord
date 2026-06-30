@@ -23,6 +23,7 @@
     language={languageStore.current}
     prevCategory={data.prevCategory}
     nextCategory={data.nextCategory}
+    nextLocked={data.nextLocked}
   />
 {:else}
   <div class="py-16 text-center">
