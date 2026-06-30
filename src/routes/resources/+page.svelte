@@ -23,7 +23,7 @@
           name: 'Røde Kors Online',
           href: 'https://oslo.norsktrening.rodekors.no/pamelding/digital/norsktrening'
         },
-        { name: 'Caritas Norge', href: 'https://caritas.no/kurs/norsktrening-2/' },
+        { name: 'Caritas Norge', href: 'https://caritas.no/kurs/norsk-sprakkafe-2/' },
         {
           name: 'KIA Norge',
           href: 'https://www.kianorge.no/aktivitet/sprakkafe-i-oslo-tullinsgate'
