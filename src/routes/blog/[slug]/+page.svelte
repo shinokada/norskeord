@@ -2,6 +2,7 @@
   import { Badge } from 'flowbite-svelte';
   import type { PageData } from './$types';
   import type { Component } from 'svelte';
+  import * as m from '$lib/paraglide/messages.js';
   import { cefrLevels } from '$lib/blog';
 
   let { data }: { data: PageData } = $props();
@@ -42,7 +43,7 @@
       href="/blog"
       class="mb-6 inline-block text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
     >
-      ← All posts
+      ← {m.blog_post_back_to_all()}
     </a>
     <h1 class="mb-3 text-3xl font-bold dark:text-white">{data.meta.title}</h1>
     <div class="flex items-center gap-3">
@@ -68,7 +69,7 @@
       <p
         class="mb-3 text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400"
       >
-        Practice this vocabulary
+        {m.blog_post_practice_vocab()}
       </p>
       <div class="flex flex-wrap gap-2">
         {#each data.meta.decks as deck (deck.level + '/' + deck.category)}

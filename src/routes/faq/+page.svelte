@@ -53,7 +53,7 @@
       id: 9,
       question: m.guide_faq_download_q(),
       answer: m.guide_faq_download_a(),
-      badge: '✶ Plus'
+      badge: m.faq_badge_plus()
     },
     {
       id: 10,

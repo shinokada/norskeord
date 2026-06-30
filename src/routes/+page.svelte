@@ -156,9 +156,12 @@
     const s = byLevel[levelId];
     if (!s) return '';
     if (s.uttrykk > 0) {
-      return `${s.vocab.toLocaleString()} words · ${s.uttrykk.toLocaleString()} phrases`;
+      return m.level_hub_words_and_phrases({
+        vocab: s.vocab.toLocaleString(),
+        uttrykk: s.uttrykk.toLocaleString()
+      });
     }
-    return `${s.vocab.toLocaleString()} words`;
+    return m.level_hub_words({ count: s.vocab.toLocaleString() });
   }
 
   const websiteSchemaJson = JSON.stringify(websiteSchema);
@@ -191,7 +194,7 @@
     </h1>
 
     <p class="mb-6 text-lg leading-relaxed text-indigo-100/80">
-      Norwegian vocabulary from beginner to advanced, with audio and smart review.
+      {m.home_hero_subheading_text()}
     </p>
 
     <div class="flex flex-wrap justify-center gap-3">

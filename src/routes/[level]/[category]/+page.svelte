@@ -2,6 +2,7 @@
   import { VocabFlashcardPage } from '$lib';
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import { languageStore } from '$lib/stores/language.svelte';
+  import * as m from '$lib/paraglide/messages.js';
 
   let { data } = $props();
 
@@ -27,7 +28,7 @@
   <div class="py-16 text-center">
     <h1 class="text-gray-700 dark:text-gray-300">{categoryName}</h1>
     <p class="mt-4 text-gray-600 dark:text-gray-300">
-      No vocabulary available yet. Check back soon!
+      {m.vocab_page_no_entries()}
     </p>
   </div>
 {/if}

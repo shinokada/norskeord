@@ -154,14 +154,15 @@
   const MAX_CHARS = 2000;
   let charsLeft = $derived(MAX_CHARS - messageValue.length);
 
-  // Subject options
+  // Subject options — value is the stable English key sent to the server
+  // (must match VALID_SUBJECTS in +page.server.ts), label is the translated text.
   const subjectOptions = [
-    'Bug report',
-    'Translation / content error',
-    'Feature request',
-    'Billing question',
-    'Account issue',
-    'Other'
+    { value: 'Bug report', label: m.contact_subject_bug() },
+    { value: 'Translation / content error', label: m.contact_subject_translation() },
+    { value: 'Feature request', label: m.contact_subject_feature() },
+    { value: 'Billing question', label: m.contact_subject_billing() },
+    { value: 'Account issue', label: m.contact_subject_account() },
+    { value: 'Other', label: m.contact_subject_other() }
   ];
 </script>
 
@@ -191,7 +192,7 @@
         href="/my-profile"
         class="mt-6 inline-block text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400"
       >
-        ← Back to Profile
+        {m.contact_back_to_profile()}
       </a>
     </div>
   {:else}
@@ -261,9 +262,9 @@
             disabled={submitting}
             class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-base text-gray-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100"
           >
-            <option value="" disabled>Select a topic…</option>
-            {#each subjectOptions as opt (opt)}
-              <option value={opt}>{opt}</option>
+            <option value="" disabled>{m.contact_subject_select()}</option>
+            {#each subjectOptions as opt (opt.value)}
+              <option value={opt.value}>{opt.label}</option>
             {/each}
           </select>
           {#if errorKey === 'contact_error_subject'}
@@ -277,7 +278,9 @@
             <label for="message" class="text-sm font-medium text-gray-700 dark:text-gray-300">
               {m.contact_message_label()}
             </label>
-            <span class="text-xs text-gray-400 dark:text-gray-500">{charsLeft} left</span>
+            <span class="text-xs text-gray-400 dark:text-gray-500"
+              >{m.contact_chars_left({ count: charsLeft })}</span
+            >
           </div>
           <textarea
             id="message"

@@ -1,6 +1,8 @@
 # How to use ngrok
+
 When you test login system on Android use the following steps:
 https://dashboard.ngrok.com/get-started/setup/mac-os
+
 ## vite.config.ts
 
 ```ts
@@ -15,13 +17,16 @@ https://dashboard.ngrok.com/get-started/setup/mac-os
 ```
 
 ## start local and ngrok
+
 ```bash
 # terminal 1
-npx vite dev --host 
+npx vite dev --host
 # or
 pnpm dev --host
 ```
+
 This will show:
+
 ```bash
   ➜  Local:   http://localhost:5173/
   ➜  Network: http://192.168.1.83:5173/
@@ -32,28 +37,30 @@ This will show:
 # terminal 2
 ngrok http http://localhost:5173
 ```
+
 This will show:
+
 ```bash
 ngrok                                                     (Ctrl+C to quit)
-                                                                          
+
 🚪 One gateway for every AI model. Available in early access *now*: https:
-                                                                          
-Session Status                online                                      
-Account                       okada.shin@gmail.com (Plan: Free)           
-Version                       3.39.8                                      
-Region                        Europe (eu)                                 
-Latency                       33ms                                        
+
+Session Status                online
+Account                       okada.shin@gmail.com (Plan: Free)
+Version                       3.39.8
+Region                        Europe (eu)
+Latency                       33ms
 Web Interface                 http://127.0.0.1:4040
 Forwarding                    https://wildland-idealism-resort.ngrok-free.dev -> http://localhost:5173
-                                                                          
-Connections                   ttl     opn     rt1     rt5     p50     p90 
+
+Connections                   ttl     opn     rt1     rt5     p50     p90
                               78      1       0.01    0.09    0.07    0.61
-                                                                          
-HTTP Requests                                                             
--------------                                                             
-                          
+
+HTTP Requests
+-------------
+
 ```
 
 Then go to https://wildland-idealism-resort.ngrok-free.dev/ on a browser.
 
-Add https://wildland-idealism-resort.ngrok-free.dev/ to Supabase → Authentication → URL Configuration → Redirect URLs, 
+Add https://wildland-idealism-resort.ngrok-free.dev/ to Supabase → Authentication → URL Configuration → Redirect URLs,

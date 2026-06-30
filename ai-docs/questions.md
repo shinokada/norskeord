@@ -15,6 +15,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+- script to check if messages/nb.json uk.json es.json de.json has all the equivalant translation.
 - For mobile, bottom navigation can be used?
 - Mobile check
 - How about Start free button rather than login?
