@@ -1,8 +1,8 @@
-Source: messages/en.json  (969 keys)
+Source: messages/en.json  (982 keys)
 Scanned 162 files under src/
 
-✅  Used statically:  709
-🔀  Used dynamically: 137  (matched 5 discovered prefix pattern(s): category_c_, category_, example_, word, ord)
+✅  Used statically:  722
+🔀  Used dynamically: 137  (matched 2 discovered prefix pattern(s): category_c_, category_)
 ❓  Possibly unused:  123
 
 ── Dynamic prefixes discovered ──────────────────────────────
@@ -10,14 +10,6 @@ Scanned 162 files under src/
       found in src/routes/learn/c/+page.svelte: `category_c_${slug.replace(/-/g, '_')}`
   "category_*"  →  111 key(s) matched
       found in src/routes/learn/[level]/+page.svelte: `category_${level}_${slug.replace(/-/g, '_')}`
-  "example_*"  →  0 key(s) matched
-      found in src/lib/vocab-helpers.ts: `example_${language}`
-  "word*"  →  0 key(s) matched
-      found in src/lib/quiz.test.ts: `word${i}`
-      found in src/lib/quiz.test.ts: `word${i}`
-  "ord*"  →  0 key(s) matched
-      found in src/lib/searchUtils.test.ts: `ord${i}`
-      found in src/lib/searchUtils.test.ts: `ord${i}`
 
 ── Possibly unused keys ─────────────────────────────────────
    (no static m.KEY reference, no matching dynamic prefix —
@@ -147,6 +139,6 @@ Scanned 162 files under src/
    guide_lang_heading
    faq_page_title
 
-📝  Full report saved: scripts/outputs/unused-keys-2026-06-30T10-16-43.json
+📝  Full report saved: scripts/outputs/unused-keys-2026-06-30T12-16-22.json
 
 123 possibly-unused key(s) found — review before removing.
