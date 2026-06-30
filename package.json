@@ -34,7 +34,9 @@
     "og:decks": "node scripts/generate-og.mjs --decks",
     "stats": "node scripts/generate-stats.mjs",
     "search:index": "npx tsx scripts/build-search-index.ts",
-    "check:languages": "node scripts/check-language-sync.mjs"
+    "check:languages": "node scripts/check-language-sync.mjs",
+    "check:unused-keys": "node scripts/check-unused-keys.mjs",
+    "check:category-keys": "npx tsx scripts/check-category-keys.ts"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.104.1",
