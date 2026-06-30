@@ -16,7 +16,9 @@
   function clearPending() {
     try {
       localStorage.removeItem('login_pending'); // legacy cleanup
-    } catch { /* ignore */ }
+    } catch {
+      /* ignore */
+    }
   }
 
   // pendingEmail comes from the server load (cookie-backed) so SSR already
@@ -206,7 +208,7 @@
       {m.login_subheading()}
     </p>
     <p class="mt-3 text-sm font-medium text-green-600 dark:text-green-400">
-      ✓ Free &nbsp;·&nbsp; No credit card required
+      {m.login_free_no_cc()}
     </p>
   </div>
 
@@ -299,7 +301,7 @@
           id="email"
           name="email"
           type="email"
-          placeholder="your@email.com"
+          placeholder={m.login_email_placeholder()}
           autocomplete="email"
           bind:value={emailValue}
           disabled={submitting}

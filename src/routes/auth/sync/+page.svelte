@@ -2,6 +2,7 @@
   import { page } from '$app/state';
   import { onMount } from 'svelte';
   import { setLocale } from '$lib/paraglide/runtime';
+  import * as m from '$lib/paraglide/messages.js';
   import {
     clearUserProgress,
     loadProgressMapFromSupabase,
@@ -65,5 +66,5 @@
 </script>
 
 <div class="flex min-h-screen items-center justify-center">
-  <p class="text-sm text-gray-600 dark:text-gray-300">Syncing your progress…</p>
+  <p class="text-sm text-gray-600 dark:text-gray-300">{m.auth_sync_syncing()}</p>
 </div>

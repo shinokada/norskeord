@@ -27,6 +27,11 @@
     href: string;
   }
 
+  interface LockedNav {
+    count: number;
+    href: string;
+  }
+
   interface Props {
     entries: VocabEntry[];
     title?: string;
@@ -34,6 +39,7 @@
     level?: string;
     prevCategory?: CategoryNav | null;
     nextCategory?: CategoryNav | null;
+    nextLocked?: LockedNav | null;
   }
 
   let {
@@ -42,6 +48,7 @@
     level = '',
     prevCategory = null,
     nextCategory = null,
+    nextLocked = null,
     language = 'english' as FlashcardLanguage
   }: Props = $props();
 
@@ -629,11 +636,18 @@
       {#if nextCategory}
         <a
           href={nextCategory.href}
-          class="inline-flex min-h-[44px] items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          class="inline-flex min-h-11 items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
           title={nextCategory.label}
         >
           <span class="truncate">{nextCategory.label}</span>
           <span class="shrink-0">→</span>
+        </a>
+      {:else if nextLocked}
+        <a
+          href={nextLocked.href}
+          class="inline-flex min-h-11 items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+        >
+          {m.quiz_plus_only_count({ count: nextLocked.count })}
         </a>
       {/if}
     </div>

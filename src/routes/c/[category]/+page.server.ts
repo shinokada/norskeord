@@ -26,8 +26,19 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     redirect(302, '/plus?ref=category-lock');
   }
 
-  // Prev / Next category navigation
-  const visibleCats = isPlus ? allCats : allCats.filter((c) => !isPlusCategory(level, c));
+  // Load vocab once so we can both filter the current category's entries and
+  // skip over categories that have no data yet when building prev/next nav.
+  const vocab = await vocabLoader();
+  const entries = vocab.default.filter((e) => e.category === category);
+
+  const categoriesWithData = new Set(vocab.default.map((e) => e.category));
+
+  // Prev / Next category navigation — only walk categories that actually have
+  // vocab entries (content gaps like an empty 'proverbs' deck are skipped).
+  const allCatsWithData = allCats.filter((c) => categoriesWithData.has(c));
+  const visibleCats = isPlus
+    ? allCatsWithData
+    : allCatsWithData.filter((c) => !isPlusCategory(level, c));
 
   const idx = visibleCats.indexOf(category as (typeof visibleCats)[number]);
   const prevSlug = idx > 0 ? visibleCats[idx - 1] : null;
@@ -40,9 +51,20 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     ? { slug: nextSlug, label: removeHyphensAndCapitalize(nextSlug), href: `/c/${nextSlug}` }
     : null;
 
-  // Load vocab filtered by category
-  const vocab = await vocabLoader();
-  const entries = vocab.default.filter((e) => e.category === category);
+  // When a free user reaches the end of the free list, surface a Plus badge
+  // for the remaining locked categories instead of just hiding the arrow.
+  // Uses the full configured category list (allCats) — not allCatsWithData —
+  // so the count matches /learn/c and stays correct even for categories that
+  // don't have vocab data yet.
+  const nextLocked =
+    !isPlus && !nextCategory
+      ? (() => {
+          const lockedCount = allCats.filter((c) => isPlusCategory(level, c)).length;
+          return lockedCount > 0
+            ? { count: lockedCount, href: '/plus?ref=flashcard-nav-end' }
+            : null;
+        })()
+      : null;
 
   // Meta
   const categoryName = removeHyphensAndCapitalize(category);
@@ -103,6 +125,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     category,
     prevCategory,
     nextCategory,
+    nextLocked,
     pageMetaTags,
     learningResourceSchema
   };
