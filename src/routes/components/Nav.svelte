@@ -181,7 +181,7 @@
       <!-- Mobile: flag emoji for current language, or globe fallback -->
       <button
         type="button"
-        aria-label="Switch language"
+        aria-label={m.nav_switch_language_aria()}
         class="lang-trigger inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:hidden"
       >
         {#if currentLangEntry}
@@ -196,7 +196,7 @@
       <!-- Desktop: flag + abbr + chevron -->
       <button
         type="button"
-        aria-label="Switch language"
+        aria-label={m.nav_switch_language_aria()}
         class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm min-h-9 font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {currentLangEntry?.[1].flag}

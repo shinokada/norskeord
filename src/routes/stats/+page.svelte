@@ -223,16 +223,16 @@
     const parts: string[] = [];
 
     if (byState.review > 0) {
-      parts.push(`${byState.review} Norwegian words memorized`);
+      parts.push(m.stats_share_memorized({ count: byState.review }));
     } else if (totalSeen > 0) {
-      parts.push(`${totalSeen} Norwegian words explored`);
+      parts.push(m.stats_share_explored({ count: totalSeen }));
     }
 
     // Extract the highest solid CEFR level from the estimate string
     const levelMatch = cefrEstimate.match(/\b(A1|A2|B1|B2|C)\b/);
-    if (levelMatch) parts.push(`currently at ${levelMatch[0]}`);
+    if (levelMatch) parts.push(m.stats_share_currently_at({ level: levelMatch[0] }));
 
-    if (streak >= 3) parts.push(`${streak}-day streak 🔥`);
+    if (streak >= 3) parts.push(m.stats_share_streak({ count: streak }));
 
     return parts.join(' · ') + ' 🇳🇴 norskeord.no';
   }
@@ -245,7 +245,7 @@
       setTimeout(() => (copied = false), 2500);
     } catch {
       // Fallback: prompt with pre-filled text
-      prompt('Copy and share:', text);
+      prompt(m.stats_share_copy_prompt(), text);
     }
   }
 
@@ -359,7 +359,7 @@
           ? 'border-green-400 bg-green-50 text-green-700 dark:border-green-600 dark:bg-green-900/20 dark:text-green-400'
           : 'text-gray-600 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'}"
       >
-        {copied ? '✓ Copied!' : '📋 Share progress'}
+        {copied ? m.stats_share_copied() : m.stats_share_button()}
       </button>
     {/if}
   </div>
@@ -398,7 +398,9 @@
     <div
       class="mb-6 rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
     >
-      <p class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Activity</p>
+      <p class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+        {m.stats_activity_heading()}
+      </p>
       <ActivityChart cells={activityCells} {streak} loading={activityLoading} {isPlus} />
     </div>
 
@@ -439,21 +441,21 @@
                     <div
                       class="bg-yellow-400"
                       style="width: {(ls.learning / ls.seen) * 100}%"
-                      title="Learning: {ls.learning}"
+                      title={m.stats_tooltip_learning({ count: ls.learning })}
                     ></div>
                   {/if}
                   {#if ls.review > 0}
                     <div
                       class={levelColors[ls.level]}
                       style="width: {(ls.review / ls.seen) * 100}%"
-                      title="Review: {ls.review}"
+                      title={m.stats_tooltip_review({ count: ls.review })}
                     ></div>
                   {/if}
                   {#if ls.relearning > 0}
                     <div
                       class="bg-orange-400"
                       style="width: {(ls.relearning / ls.seen) * 100}%"
-                      title="Relearning: {ls.relearning}"
+                      title={m.stats_tooltip_relearning({ count: ls.relearning })}
                     ></div>
                   {/if}
                 </div>
@@ -503,7 +505,7 @@
           <div class="flex items-center gap-3">
             <span class="text-xs text-gray-500 dark:text-gray-300">
               {grammarTopicCount} / {grammarByTopic.length}
-              {grammarByTopic.length === 1 ? 'topic' : 'topics'} · {grammarSeen}
+              {grammarByTopic.length === 1 ? m.stats_topic_singular() : m.stats_topic_plural()} · {grammarSeen}
               {m.stats_seen()} · {grammarMastered}
               {m.stats_grammar_mastered()}{#if grammarDue > 0}
                 · <span class="font-semibold text-red-500 dark:text-red-400"

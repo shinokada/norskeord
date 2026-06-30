@@ -42,7 +42,7 @@
           >{m.norskeord()}</a
         >
         <p class="mt-1 text-xs text-gray-800 dark:text-gray-300">
-          Norwegian vocabulary from beginner to advanced.
+          {m.footer_tagline()}
         </p>
         <p class="mt-3 text-xs text-gray-800 dark:text-gray-300">v{__VERSION__}</p>
       </div>
