@@ -1,22 +1,17 @@
-Source of truth: messages/en.json  (969 keys)
+Source of truth: messages/en.json  (859 keys)
 Checking locales: de, es, nb, uk
 
 ⚠️  NOTE  messages/de.json
-         Same as English / empty (63) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_switch_to_norwegian, nav_switch_to_english, nav_quiz, nav_a1, nav_a2, nav_b1, nav_b2, quiz_title, quiz_label_level, quiz_label_category_optional, quiz_type_mc, …
+         Same as English / empty (51) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_quiz, quiz_title, quiz_label_level, quiz_label_category_optional, quiz_type_mc, grammar_plus_topic, flashcard_definition, flashcard_phrase, part_verb, part_adverb, part_phrase, …
 
-❌  FAIL  messages/es.json
-         Missing (2): guide_questions_footer, guide_faq_link
-         Same as English / empty (50) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_switch_to_norwegian, nav_switch_to_english, nav_quiz, nav_a1, nav_a2, nav_b1, nav_b2, quiz_title, grammar_plus_topic, flashcard_norsk, flashcard_english, profile_sub_plan_plus, …
+⚠️  NOTE  messages/es.json
+         Same as English / empty (38) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_quiz, quiz_title, grammar_plus_topic, profile_sub_plan_plus, profile_sub_plan_label, login_otp_placeholder, plus_table_heading, plus_table_free, plus_table_plus, plus_row_due_free, plus_row_per_category_stats_free, plus_row_sync_free, …
 
-❌  FAIL  messages/nb.json
-         Missing (2): guide_questions_footer, guide_faq_link
-         Extra (16, not in en.json): plus_badge, plus_notify_prompt, plus_signup_cta, plus_notify_success_heading, plus_notify_success_body, plus_error_empty, plus_error_invalid, plus_error_generic, plus_error_network, plus_notify_button, plus_saving, plus_no_spam, home_early_access_prefix, home_early_access_body, home_early_access_suffix, …
-         Same as English / empty (53) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_switch_to_norwegian, nav_switch_to_english, nav_quiz, nav_a1, nav_a2, nav_b1, nav_b2, quiz_title, quiz_start, grammar_plus_topic, flashcard_norsk, …
+⚠️  NOTE  messages/nb.json
+         Same as English / empty (40) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_quiz, quiz_title, quiz_start, grammar_plus_topic, part_verb, part_adverb, profile_sub_plan_plus, profile_sub_plan_label, login_otp_placeholder, plus_table_plus, plus_row_due_free, …
 
-❌  FAIL  messages/uk.json
-         Missing (2): guide_questions_footer, guide_faq_link
-         Same as English / empty (49) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_switch_to_norwegian, nav_switch_to_english, nav_a1, nav_a2, nav_b1, nav_b2, quiz_type_mc, quiz_type_fill, quiz_type_type, grammar_plus_topic, flashcard_norsk, flashcard_english, …
+⚠️  NOTE  messages/uk.json
+         Same as English / empty (37) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, quiz_type_mc, quiz_type_fill, quiz_type_type, grammar_plus_topic, profile_account_email, profile_sub_plan_plus, login_otp_placeholder, plus_table_heading, plus_table_free, plus_table_plus, plus_row_due_free, plus_row_per_category_stats_free, …
 
 
-3 locale file(s) out of sync ❌
-Run with --fix to auto-insert English placeholders for missing keys.
+All locale files match en.json key set ✅

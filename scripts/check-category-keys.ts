@@ -79,15 +79,17 @@ const missing = expected.filter((e) => !messageKeys.has(e.key));
 
 const expectedKeySet = new Set(expected.map((e) => e.key));
 const CATEGORY_KEY_RE = /^category_([a-z0-9]+)_/;
-const orphaned = [...messageKeys].filter(
-  (k) => CATEGORY_KEY_RE.test(k) && !expectedKeySet.has(k)
-);
+const orphaned = [...messageKeys].filter((k) => CATEGORY_KEY_RE.test(k) && !expectedKeySet.has(k));
 
 // ── 4. Report ─────────────────────────────────────────────────────────────
 
 const totalExpected = expected.length;
-console.log(`Categories in config.ts: ${totalExpected} (across ${Object.keys(CATEGORIES_BY_LEVEL).length} levels)`);
-console.log(`category_* keys in en.json: ${[...messageKeys].filter((k) => CATEGORY_KEY_RE.test(k)).length}\n`);
+console.log(
+  `Categories in config.ts: ${totalExpected} (across ${Object.keys(CATEGORIES_BY_LEVEL).length} levels)`
+);
+console.log(
+  `category_* keys in en.json: ${[...messageKeys].filter((k) => CATEGORY_KEY_RE.test(k)).length}\n`
+);
 
 if (missing.length > 0) {
   console.log(`❌  MISSING (${missing.length}) — in config.ts but no matching key in en.json:`);
@@ -96,11 +98,15 @@ if (missing.length > 0) {
   }
   console.log();
 } else {
-  console.log('✅  No missing category keys — every config.ts category has a matching en.json key.\n');
+  console.log(
+    '✅  No missing category keys — every config.ts category has a matching en.json key.\n'
+  );
 }
 
 if (orphaned.length > 0) {
-  console.log(`⚠️  ORPHANED (${orphaned.length}) — in en.json but no config.ts category produces this key:`);
+  console.log(
+    `⚠️  ORPHANED (${orphaned.length}) — in en.json but no config.ts category produces this key:`
+  );
   for (const key of orphaned) {
     console.log(`   ${key}`);
   }
@@ -115,6 +121,8 @@ if (missing.length === 0) {
   console.log('Category completeness check passed ✅');
   process.exit(0);
 } else {
-  console.log(`${missing.length} missing categor${missing.length === 1 ? 'y' : 'ies'} key(s) — add these to messages/en.json (and other locales) before shipping.`);
+  console.log(
+    `${missing.length} missing categor${missing.length === 1 ? 'y' : 'ies'} key(s) — add these to messages/en.json (and other locales) before shipping.`
+  );
   process.exit(1);
 }
