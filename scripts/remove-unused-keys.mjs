@@ -62,9 +62,7 @@ function findLatestReport() {
   return resolve(OUTPUT_DIR, reports[reports.length - 1]);
 }
 
-const reportPath = explicitReportPath
-  ? resolve(ROOT, explicitReportPath)
-  : findLatestReport();
+const reportPath = explicitReportPath ? resolve(ROOT, explicitReportPath) : findLatestReport();
 
 if (!reportPath || !existsSync(reportPath)) {
   console.error('❌  No unused-keys report found.');
@@ -171,4 +169,6 @@ for (const { file, filePath, data, presentUnused } of plan) {
 }
 
 console.log(`\nDone. Removed ${totalRemovals} key occurrence(s) total.`);
-console.log('Tip: run `node scripts/check-message-keys.mjs` next to confirm all locales still match in structure.');
+console.log(
+  'Tip: run `node scripts/check-message-keys.mjs` next to confirm all locales still match in structure.'
+);
