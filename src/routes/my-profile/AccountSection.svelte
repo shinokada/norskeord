@@ -80,7 +80,7 @@
       window.open(url, '_blank');
       setTimeout(() => URL.revokeObjectURL(url), 60_000);
     } catch {
-      alert('Could not generate report. Please try again.');
+      alert(m.profile_report_error_alert());
     } finally {
       reportLoading = false;
     }
@@ -146,9 +146,11 @@
   <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
     <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
       <div>
-        <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Progress report</p>
+        <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
+          {m.profile_report_heading()}
+        </p>
         <p class="text-xs text-gray-600 dark:text-gray-300">
-          Your CEFR level, cards seen, and strongest &amp; weakest categories as a printable PDF.
+          {m.profile_report_description()}
         </p>
       </div>
       <button
@@ -157,7 +159,7 @@
         disabled={reportLoading}
         class="mt-2 shrink-0 rounded-lg border border-indigo-300 px-4 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50 disabled:opacity-50 sm:mt-0 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-indigo-900/20"
       >
-        {reportLoading ? 'Generating…' : '↓ Download report'}
+        {reportLoading ? m.profile_report_generating() : m.profile_report_download()}
       </button>
     </div>
   </div>

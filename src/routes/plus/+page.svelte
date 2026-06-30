@@ -192,7 +192,7 @@
   >
     {#if data.isPlus}
       <!-- Already a Plus member — direct to My Profile for subscription management -->
-      <p class="text-lg font-semibold dark:text-white">✓ You are a Plus member</p>
+      <p class="text-lg font-semibold dark:text-white">{m.plus_member_status()}</p>
       <a
         href="/my-profile"
         class="mt-4 inline-block rounded-lg border border-indigo-300 px-5 py-2 text-sm font-semibold text-indigo-700 hover:bg-indigo-100 dark:border-indigo-700 dark:text-indigo-300 dark:hover:bg-indigo-900/30"
@@ -226,11 +226,15 @@
           </span>
           <span class="flex-1">
             <span class="block text-base font-semibold text-gray-800 dark:text-gray-100"
-              >Monthly</span
+              >{m.plus_interval_monthly_label()}</span
             >
-            <span class="block text-sm text-gray-600 dark:text-gray-300">Cancel any time</span>
+            <span class="block text-sm text-gray-600 dark:text-gray-300"
+              >{m.plus_interval_monthly_sub()}</span
+            >
           </span>
-          <span class="text-base font-semibold text-gray-800 dark:text-gray-100">49 NOK/mo</span>
+          <span class="text-base font-semibold text-gray-800 dark:text-gray-100"
+            >{m.plus_interval_monthly_price()}</span
+          >
         </button>
 
         <button
@@ -257,33 +261,37 @@
           </span>
           <span class="flex-1">
             <span class="block text-base font-semibold text-gray-800 dark:text-gray-100">
-              Annual
+              {m.plus_interval_annual_label()}
               <span
                 class="ml-1.5 inline-block rounded-full bg-green-100 px-2 py-0.5 text-sm font-semibold text-green-700 dark:bg-green-900/40 dark:text-green-400"
-                >save 98 NOK</span
+                >{m.plus_interval_annual_save()}</span
               >
             </span>
             <span class="block text-sm text-gray-600 dark:text-gray-300"
-              >490 NOK billed once a year</span
+              >{m.plus_interval_annual_sub()}</span
             >
           </span>
-          <span class="text-base font-semibold text-gray-800 dark:text-gray-100">41 NOK/mo</span>
+          <span class="text-base font-semibold text-gray-800 dark:text-gray-100"
+            >{m.plus_interval_annual_price()}</span
+          >
         </button>
       </div>
 
       <!-- ── Price display ── -->
       {#if billingInterval === 'month'}
-        <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">49 NOK / month</p>
+        <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">
+          {m.plus_price_monthly_display()}
+        </p>
         <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">
-          Cancel any time. All progress carries over automatically.
+          {m.plus_price_monthly_note()}
         </p>
       {:else}
         <p class="mb-1 text-2xl font-bold text-indigo-800 dark:text-indigo-200">
-          490 NOK / year
+          {m.plus_price_annual_display()}
           <span class="ml-2 text-base font-normal text-gray-400 line-through">588 NOK</span>
         </p>
         <p class="mb-5 text-sm text-gray-600 dark:text-gray-300">
-          About 41 NOK/month — save 98 NOK. Cancel any time.
+          {m.plus_price_annual_note()}
         </p>
       {/if}
 

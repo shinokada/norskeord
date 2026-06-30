@@ -69,8 +69,8 @@
     <div class="relative">
       <input
         bind:value={searchQuery}
-        placeholder="Search topics…"
-        aria-label="Search grammar topics"
+        placeholder={m.grammar_search_placeholder()}
+        aria-label={m.grammar_search_aria()}
         type="search"
         class="focus:border-primary-500 focus:ring-primary-500 w-full rounded-lg border border-gray-200 bg-transparent
                px-3 py-2 pl-9 text-sm text-gray-900 placeholder-gray-400 focus:ring-1 focus:outline-none
@@ -120,8 +120,9 @@
     {#if isFiltering}
       <div class="flex items-center gap-3">
         <span class="text-xs text-gray-600 dark:text-gray-300">
-          {totalVisible}
-          {totalVisible === 1 ? 'topic' : 'topics'}
+          {totalVisible === 1
+            ? m.grammar_topic_count_singular({ count: totalVisible })
+            : m.grammar_topic_count({ count: totalVisible })}
         </span>
         <button
           onclick={clearFilters}
@@ -170,11 +171,10 @@
           class="mb-6 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/20"
         >
           <p class="mb-1 text-base font-semibold text-indigo-800 dark:text-indigo-200">
-            {data.lockedTopics.length} more topics with Plus
+            {m.grammar_more_topics_plus({ count: data.lockedTopics.length })}
           </p>
           <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
-            Upgrade to unlock advanced sentence structure topics — word order, relative clauses,
-            det-sentences, sentence adverbials, and more.
+            {m.grammar_plus_upsell_text()}
           </p>
           <a
             href="/plus?ref=grammar-topics"
@@ -199,7 +199,7 @@
               <span
                 class="shrink-0 rounded-full bg-indigo-100 px-3 py-1.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
               >
-                🔒 Plus
+                🔒 {m.grammar_plus_topic()}
               </span>
             </div>
             {#if t.levels.length}
@@ -215,7 +215,9 @@
             <p class="mb-3 line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
               {rule ? rule.explanationEn : ''}
             </p>
-            <div class="mt-auto text-xs text-gray-600 dark:text-gray-300">{t.total} questions</div>
+            <div class="mt-auto text-xs text-gray-600 dark:text-gray-300">
+              {m.grammar_questions_count({ count: t.total })}
+            </div>
           </a>
         {/each}
       </div>

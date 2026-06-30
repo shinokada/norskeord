@@ -1,0 +1,22 @@
+Source of truth: messages/en.json  (969 keys)
+Checking locales: de, es, nb, uk
+
+⚠️  NOTE  messages/de.json
+         Same as English / empty (63) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_switch_to_norwegian, nav_switch_to_english, nav_quiz, nav_a1, nav_a2, nav_b1, nav_b2, quiz_title, quiz_label_level, quiz_label_category_optional, quiz_type_mc, …
+
+❌  FAIL  messages/es.json
+         Missing (2): guide_questions_footer, guide_faq_link
+         Same as English / empty (50) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_switch_to_norwegian, nav_switch_to_english, nav_quiz, nav_a1, nav_a2, nav_b1, nav_b2, quiz_title, grammar_plus_topic, flashcard_norsk, flashcard_english, profile_sub_plan_plus, …
+
+❌  FAIL  messages/nb.json
+         Missing (2): guide_questions_footer, guide_faq_link
+         Extra (16, not in en.json): plus_badge, plus_notify_prompt, plus_signup_cta, plus_notify_success_heading, plus_notify_success_body, plus_error_empty, plus_error_invalid, plus_error_generic, plus_error_network, plus_notify_button, plus_saving, plus_no_spam, home_early_access_prefix, home_early_access_body, home_early_access_suffix, …
+         Same as English / empty (53) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_switch_to_norwegian, nav_switch_to_english, nav_quiz, nav_a1, nav_a2, nav_b1, nav_b2, quiz_title, quiz_start, grammar_plus_topic, flashcard_norsk, …
+
+❌  FAIL  messages/uk.json
+         Missing (2): guide_questions_footer, guide_faq_link
+         Same as English / empty (49) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_switch_to_norwegian, nav_switch_to_english, nav_a1, nav_a2, nav_b1, nav_b2, quiz_type_mc, quiz_type_fill, quiz_type_type, grammar_plus_topic, flashcard_norsk, flashcard_english, …
+
+
+3 locale file(s) out of sync ❌
+Run with --fix to auto-insert English placeholders for missing keys.

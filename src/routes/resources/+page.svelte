@@ -1,16 +1,15 @@
 <script lang="ts">
-  import { page } from '$app/state';
+  import * as m from '$lib/paraglide/messages.js';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
 
-  const user = $derived(page.data.user);
   const webPageSchemaJson = $derived(JSON.stringify(data.webPageSchema));
 
-  const sections = [
+  const sections = $derived([
     {
       icon: '🗣️',
-      title: 'Norsktrening',
+      title: m.resources_section_norsktrening(),
       color: {
         badge: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300',
         heading: 'text-rose-700 dark:text-rose-400',
@@ -32,7 +31,7 @@
     },
     {
       icon: '💻',
-      title: 'Online Learning',
+      title: m.resources_section_online_learning(),
       color: {
         badge: 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300',
         heading: 'text-violet-700 dark:text-violet-400',
@@ -46,7 +45,7 @@
     },
     {
       icon: '📖',
-      title: 'Reading',
+      title: m.resources_section_reading(),
       color: {
         badge: 'bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300',
         heading: 'text-teal-700 dark:text-teal-400',
@@ -65,7 +64,7 @@
     },
     {
       icon: '🃏',
-      title: 'Vocabulary & Flashcards',
+      title: m.resources_section_vocab_flashcards(),
       color: {
         badge: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',
         heading: 'text-amber-700 dark:text-amber-400',
@@ -79,7 +78,7 @@
     },
     {
       icon: '🎧',
-      title: 'Listening',
+      title: m.resources_section_listening(),
       color: {
         badge: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',
         heading: 'text-blue-700 dark:text-blue-400',
@@ -94,7 +93,7 @@
     },
     {
       icon: '📝',
-      title: 'Grammar',
+      title: m.resources_section_grammar(),
       color: {
         badge: 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300',
         heading: 'text-orange-700 dark:text-orange-400',
@@ -107,7 +106,7 @@
     },
     {
       icon: '📚',
-      title: 'Dictionaries',
+      title: m.resources_section_dictionaries(),
       color: {
         badge: 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300',
         heading: 'text-green-700 dark:text-green-400',
@@ -119,7 +118,7 @@
         { name: 'NAOB', href: 'https://naob.no/' }
       ]
     }
-  ];
+  ]);
 </script>
 
 <svelte:head>
@@ -130,9 +129,9 @@
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
   <div class="mb-10">
-    <h1 class="leading-tight dark:text-white">Norwegian Learning Resources</h1>
+    <h1 class="leading-tight dark:text-white">{m.resources_hero_heading()}</h1>
     <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-      Free tools, courses, and communities.
+      {m.resources_hero_subheading()}
     </p>
   </div>
 
@@ -173,18 +172,13 @@
     class="rounded-xl border border-gray-200 bg-gray-50 p-6 text-center dark:border-gray-700 dark:bg-gray-800/40"
   >
     <p class="text-sm text-gray-600 dark:text-gray-300">
-      Know a great free resource that's missing?
-      {#if user}
-        Send us a message from <a
-          href="/my-profile"
-          class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300">My Profile</a
-        > and we'll add it.
-      {:else}
-        <a
-          href="/auth/login"
-          class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300">Sign in</a
-        > to send us a suggestion.
-      {/if}
+      {m.resources_footer_text_prefix()}
+      <a
+        href="/contact"
+        class="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300"
+        >{m.resources_footer_contact_link()}</a
+      >
+      {m.resources_footer_text_suffix()}
     </p>
   </div>
 </div>
