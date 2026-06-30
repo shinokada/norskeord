@@ -1,0 +1,17 @@
+Source of truth: messages/en.json  (859 keys)
+Checking locales: de, es, nb, uk
+
+⚠️  NOTE  messages/de.json
+         Same as English / empty (51) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_quiz, quiz_title, quiz_label_level, quiz_label_category_optional, quiz_type_mc, grammar_plus_topic, flashcard_definition, flashcard_phrase, part_verb, part_adverb, part_phrase, …
+
+⚠️  NOTE  messages/es.json
+         Same as English / empty (38) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_quiz, quiz_title, grammar_plus_topic, profile_sub_plan_plus, profile_sub_plan_label, login_otp_placeholder, plus_table_heading, plus_table_free, plus_table_plus, plus_row_due_free, plus_row_per_category_stats_free, plus_row_sync_free, …
+
+⚠️  NOTE  messages/nb.json
+         Same as English / empty (40) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, nav_guide, nav_quiz, quiz_title, quiz_start, grammar_plus_topic, part_verb, part_adverb, profile_sub_plan_plus, profile_sub_plan_label, login_otp_placeholder, plus_table_plus, plus_row_due_free, …
+
+⚠️  NOTE  messages/uk.json
+         Same as English / empty (37) — review, but often expected for brand names/codes: nav_plus_badge, nav_norskproven, nav_plus, quiz_type_mc, quiz_type_fill, quiz_type_type, grammar_plus_topic, profile_account_email, profile_sub_plan_plus, login_otp_placeholder, plus_table_heading, plus_table_free, plus_table_plus, plus_row_due_free, plus_row_per_category_stats_free, …
+
+
+All locale files match en.json key set ✅

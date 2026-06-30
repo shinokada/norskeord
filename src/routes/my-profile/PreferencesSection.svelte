@@ -22,17 +22,17 @@
   const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C']);
 
   const speedOptions = [
-    { value: '0.5', label: '0.5×' },
-    { value: '0.75', label: '0.75×' },
-    { value: '1', label: '1×' },
-    { value: '1.25', label: '1.25×' },
-    { value: '1.5', label: '1.5×' }
+    { value: '0.5', label: m.profile_prefs_speed_0_5() },
+    { value: '0.75', label: m.profile_prefs_speed_0_75() },
+    { value: '1', label: m.profile_prefs_speed_1() },
+    { value: '1.25', label: m.profile_prefs_speed_1_25() },
+    { value: '1.5', label: m.profile_prefs_speed_1_5() }
   ];
 
   const toneOptions = [
-    { value: '0.7', label: 'Low' },
-    { value: '1', label: 'Default' },
-    { value: '1.3', label: 'High' }
+    { value: '0.7', label: m.profile_prefs_tone_low() },
+    { value: '1', label: m.profile_prefs_tone_default() },
+    { value: '1.3', label: m.profile_prefs_tone_high() }
   ];
 
   const LS_SPEED = 'voice-settings-speed';
@@ -59,18 +59,18 @@
   let showExample = $state(untrack(() => profile?.show_example ?? false));
 
   const sessionLimitOptions = [
-    { value: '10', label: '10 cards' },
-    { value: '20', label: '20 cards (default)' },
-    { value: '30', label: '30 cards' },
-    { value: '50', label: '50 cards' },
-    { value: 'all', label: 'All cards' }
+    { value: '10', label: m.profile_prefs_session_10() },
+    { value: '20', label: m.profile_prefs_session_20() },
+    { value: '30', label: m.profile_prefs_session_30() },
+    { value: '50', label: m.profile_prefs_session_50() },
+    { value: 'all', label: m.profile_prefs_session_all() }
   ];
 
   const quizLimitOptions = [
-    { value: '5', label: '5 questions' },
-    { value: 'default', label: '10 questions (default)' },
-    { value: '15', label: '15 questions' },
-    { value: '20', label: '20 questions' }
+    { value: '5', label: m.profile_prefs_quiz_5() },
+    { value: 'default', label: m.profile_prefs_quiz_10_default() },
+    { value: '15', label: m.profile_prefs_quiz_15() },
+    { value: '20', label: m.profile_prefs_quiz_20() }
   ];
 
   let cardDirectionOptions = $derived.by(() => {
@@ -215,7 +215,7 @@
         for="flashcard_language"
         class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
       >
-        Flashcard language
+        {m.profile_prefs_flashcard_language()}
       </label>
       <select
         id="flashcard_language"
@@ -228,7 +228,7 @@
         {/each}
       </select>
       <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-        The language your flashcards are translated into.
+        {m.profile_prefs_flashcard_language_hint()}
       </p>
     </div>
 

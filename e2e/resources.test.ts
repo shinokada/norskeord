@@ -63,10 +63,11 @@ test.describe('/resources page', () => {
 
   // ── Footer note ──────────────────────────────────────────────────────────
 
-  test('guest user sees "Sign in" link in footer note', async ({ page }) => {
-    await expect(page.getByText(/know a great free resource/i)).toBeVisible();
-    const signInLink = page.getByRole('link', { name: /sign in/i });
-    await expect(signInLink).toBeVisible();
-    await expect(signInLink).toHaveAttribute('href', '/auth/login');
+  test('footer note shows contact link', async ({ page }) => {
+    const footerNote = page.getByText(/know a great free resource/i).locator('..');
+    await expect(footerNote).toBeVisible();
+    const contactLink = footerNote.getByRole('link', { name: /contact/i });
+    await expect(contactLink).toBeVisible();
+    await expect(contactLink).toHaveAttribute('href', '/contact');
   });
 });

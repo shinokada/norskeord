@@ -67,14 +67,14 @@
         heading: 'text-teal-700 dark:text-teal-400'
       },
       categories: [
-        { slug: 'shopping', note: 'prices, everyday transactions' },
-        { slug: 'transport', note: 'public transport, tickets, travel' },
-        { slug: 'health', note: 'doctor visits, symptoms, medicine' },
-        { slug: 'occupations', note: 'jobs, workplace, daily routine' },
-        { slug: 'directions', note: 'asking for and giving directions' },
-        { slug: 'time', note: 'appointments, schedules, clock' },
-        { slug: 'communication', note: 'phone, email, formal requests' },
-        { slug: 'hobbies', note: 'leisure, weekend activities' }
+        { slug: 'shopping', noteKey: 'a2_shopping' as const },
+        { slug: 'transport', noteKey: 'a2_transport' as const },
+        { slug: 'health', noteKey: 'a2_health' as const },
+        { slug: 'occupations', noteKey: 'a2_occupations' as const },
+        { slug: 'directions', noteKey: 'a2_directions' as const },
+        { slug: 'time', noteKey: 'a2_time' as const },
+        { slug: 'communication', noteKey: 'a2_communication' as const },
+        { slug: 'hobbies', noteKey: 'a2_hobbies' as const }
       ]
     },
     {
@@ -86,14 +86,14 @@
         heading: 'text-blue-700 dark:text-blue-400'
       },
       categories: [
-        { slug: 'work', note: 'applying for jobs, workplace rights' },
-        { slug: 'education', note: 'schools, courses, grades' },
-        { slug: 'health', note: 'healthcare system, insurance' },
-        { slug: 'relationships', note: 'family, social situations, feelings' },
-        { slug: 'travel', note: 'planning trips, booking, describing places' },
-        { slug: 'society', note: 'civic life, social structures' },
-        { slug: 'culture', note: 'traditions, customs, Norwegian society' },
-        { slug: 'environment', note: 'nature, climate, sustainability' }
+        { slug: 'work', noteKey: 'b1_work' as const },
+        { slug: 'education', noteKey: 'b1_education' as const },
+        { slug: 'health', noteKey: 'b1_health' as const },
+        { slug: 'relationships', noteKey: 'b1_relationships' as const },
+        { slug: 'travel', noteKey: 'b1_travel' as const },
+        { slug: 'society', noteKey: 'b1_society' as const },
+        { slug: 'culture', noteKey: 'b1_culture' as const },
+        { slug: 'environment', noteKey: 'b1_environment' as const }
       ]
     }
   ] as const;
@@ -121,6 +121,46 @@
 
   function getSectionLabel(key: 'a2' | 'b1'): string {
     return key === 'a2' ? m.norskproven_a2_label() : m.norskproven_b1_label();
+  }
+
+  function getCategoryNote(
+    key:
+      | 'a2_shopping'
+      | 'a2_transport'
+      | 'a2_health'
+      | 'a2_occupations'
+      | 'a2_directions'
+      | 'a2_time'
+      | 'a2_communication'
+      | 'a2_hobbies'
+      | 'b1_work'
+      | 'b1_education'
+      | 'b1_health'
+      | 'b1_relationships'
+      | 'b1_travel'
+      | 'b1_society'
+      | 'b1_culture'
+      | 'b1_environment'
+  ): string {
+    const noteMap = {
+      a2_shopping: m.norskproven_note_a2_shopping,
+      a2_transport: m.norskproven_note_a2_transport,
+      a2_health: m.norskproven_note_a2_health,
+      a2_occupations: m.norskproven_note_a2_occupations,
+      a2_directions: m.norskproven_note_a2_directions,
+      a2_time: m.norskproven_note_a2_time,
+      a2_communication: m.norskproven_note_a2_communication,
+      a2_hobbies: m.norskproven_note_a2_hobbies,
+      b1_work: m.norskproven_note_b1_work,
+      b1_education: m.norskproven_note_b1_education,
+      b1_health: m.norskproven_note_b1_health,
+      b1_relationships: m.norskproven_note_b1_relationships,
+      b1_travel: m.norskproven_note_b1_travel,
+      b1_society: m.norskproven_note_b1_society,
+      b1_culture: m.norskproven_note_b1_culture,
+      b1_environment: m.norskproven_note_b1_environment
+    };
+    return noteMap[key]();
   }
 
   function getSectionDescription(key: 'a2' | 'b1'): string {
@@ -196,11 +236,11 @@
                         ? 'cursor-not-allowed border-gray-300 text-gray-400 opacity-50 dark:border-gray-600 dark:text-gray-500'
                         : color.pill}"
                     >
-                      Test {test}{locked ? ' 🔒' : ''}
+                      {m.norskproven_test_label({ n: test })}{locked ? ' 🔒' : ''}
                     </a>
                     {#if locked}
                       <Tooltip triggeredBy="#{pillId}" placement="top" class="text-xs"
-                        >Upgrade to Plus to unlock</Tooltip
+                        >{m.norskproven_test_locked_tooltip()}</Tooltip
                       >
                     {/if}
                   {/each}
@@ -230,6 +270,7 @@
           <a
             href="/{section.level.toLowerCase()}/{cat.slug}"
             class="inline-flex items-center rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+            title={getCategoryNote(cat.noteKey)}
           >
             {removeHyphensAndCapitalize(cat.slug)}
           </a>
@@ -238,12 +279,12 @@
 
       <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
         {#if section.level === 'B1' && plan !== 'plus'}
-          Want all B1 categories?
+          {m.norskproven_unlock_more_prompt({ level: section.level })}
           <a
             href="/plus?ref=norskproven-{section.level.toLowerCase()}"
             class="font-semibold text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300"
           >
-            Unlock with Plus →
+            {m.norskproven_unlock_cta()}
           </a>
         {:else}
           {m.norskproven_more_topics({ level: section.level })}
