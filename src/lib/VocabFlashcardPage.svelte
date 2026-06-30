@@ -647,7 +647,7 @@
           href={nextLocked.href}
           class="inline-flex min-h-11 items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
         >
-          +{nextLocked.count} with Plus →
+          {m.quiz_plus_only_count({ count: nextLocked.count })}
         </a>
       {/if}
     </div>
