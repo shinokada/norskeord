@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.45.0
+
+### Minor Changes
+
+- - **New Features**
+    - Expanded i18n-driven UI copy across the app (login, profile, resources/FAQ, contact, stats, grammar/quiz, Plus, and Norskprøven).
+    - Improved navigation for locked Plus content, including localized “next” prompts in vocab/quiz flows.
+  - **Bug Fixes**
+    - Error page and empty states now use localized fallback text.
+    - Resources/footer flow now uses a consistent contact link; updated translated badges and labels.
+  - **Tests / Chores**
+    - Added i18n key validation tooling and reports; updated end-to-end coverage for footer note links.
+  - **Documentation**
+    - Updated i18n maintenance guidance and related setup notes.
+
 ## 2.44.0
 
 ### Minor Changes
