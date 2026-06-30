@@ -53,10 +53,13 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 
   // When a free user reaches the end of the free list, surface a Plus badge
   // for the remaining locked categories instead of just hiding the arrow.
+  // Uses the full configured category list (allCats) — not allCatsWithData —
+  // so the count matches /learn/c and stays correct even for categories that
+  // don't have vocab data yet.
   const nextLocked =
     !isPlus && !nextCategory
       ? (() => {
-          const lockedCount = allCatsWithData.filter((c) => isPlusCategory(level, c)).length;
+          const lockedCount = allCats.filter((c) => isPlusCategory(level, c)).length;
           return lockedCount > 0
             ? { count: lockedCount, href: '/plus?ref=flashcard-nav-end' }
             : null;
