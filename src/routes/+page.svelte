@@ -300,9 +300,9 @@
       {@const accent = cardAccents[lvl.color]}
       <a
         href={lvl.href}
-        class="group flex flex-col rounded-2xl border {accent.border} bg-white p-5 text-left shadow-sm transition hover:shadow-md dark:bg-indigo-950/60"
+        class="group flex flex-col rounded-2xl border {accent.border} bg-white p-5 text-center shadow-sm transition hover:shadow-md dark:bg-indigo-950/60"
       >
-        <div class="mb-2 flex items-baseline gap-3">
+        <div class="mb-2 flex items-baseline justify-center gap-3">
           <span
             class="font-norse font-bold text-3xl leading-none {accent.heading}"
             style="letter-spacing:0.04em">{lvl.id}</span

@@ -96,6 +96,18 @@ export const load: PageServerLoad = async ({ params, locals }) => {
       }
     : null;
 
+  // When a free user reaches the end of the free list (uttrykk-preview), show
+  // a Plus badge for the level's locked categories instead of hiding the arrow.
+  const nextLocked =
+    !isPlus && !nextCategory
+      ? (() => {
+          const lockedCount = allCats.filter((c) => isPlusCategory(level, c)).length;
+          return lockedCount > 0
+            ? { count: lockedCount, href: '/plus?ref=flashcard-nav-end' }
+            : null;
+        })()
+      : null;
+
   // Build shared meta
   const ogImage = `https://norskeord.no/og/deck/${level.toLowerCase()}/${category}.png`;
   const pageTitle = `Norwegian ${levelUpper} ${categoryName} Vocabulary — Norskeord`;
@@ -175,6 +187,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
         category,
         prevCategory,
         nextCategory,
+        nextLocked,
         pageMetaTags,
         learningResourceSchema
       };
@@ -205,6 +218,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
       category,
       prevCategory,
       nextCategory,
+      nextLocked,
       pageMetaTags,
       learningResourceSchema
     };
@@ -218,6 +232,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     category,
     prevCategory,
     nextCategory,
+    nextLocked,
     pageMetaTags,
     learningResourceSchema
   };
