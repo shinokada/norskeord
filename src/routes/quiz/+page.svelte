@@ -280,7 +280,7 @@
   }
 
   function formatCategory(cat: string): string {
-    if (cat === 'uttrykk') return 'Uttrykk (Phrases)';
+    if (cat === 'uttrykk') return m.quiz_category_uttrykk();
     return cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   }
 
@@ -327,7 +327,7 @@
           clip-rule="evenodd"
         />
       </svg>
-      Marked as easy
+      {m.quiz_marked_easy_toast()}
     </div>
   </div>
 {/if}
@@ -419,7 +419,7 @@
                   href="/plus?ref=quiz-category-upsell"
                   class="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-500 transition-colors hover:border-indigo-400 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:border-indigo-600"
                 >
-                  +{plusOnlyCount} with Plus →
+                  {m.quiz_plus_only_count({ count: plusOnlyCount })}
                 </a>
               {/if}
             </div>
@@ -678,7 +678,7 @@
         <span class="text-lg font-bold text-gray-800 dark:text-white">
           {current.entry.norsk}
         </span>
-        <SpeakButton word={current.entry.norsk} label="Pronounce" />
+        <SpeakButton word={current.entry.norsk} label={m.speak_pronounce_word()} />
         <span class="text-xs text-gray-600 dark:text-gray-300">
           {current.entry.part} · {current.entry.level}
         </span>
@@ -693,7 +693,7 @@
           {current.entry.example_english}
         </p>
         <div class="mt-2">
-          <SpeakButton word={current.entry.example} label="Pronounce sentence" />
+          <SpeakButton word={current.entry.example} label={m.speak_pronounce_sentence()} />
         </div>
       </div>
 
@@ -772,7 +772,9 @@
 
       <!-- Next quiz picker -->
       <div class="mt-8 space-y-4 text-left">
-        <p class="text-sm font-medium text-gray-600 dark:text-gray-300">Next quiz settings</p>
+        <p class="text-sm font-medium text-gray-600 dark:text-gray-300">
+          {m.quiz_next_settings_heading()}
+        </p>
         <!-- Level -->
         <div>
           <label
@@ -837,7 +839,7 @@
                   href="/plus?ref=quiz-category-upsell"
                   class="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-500 transition-colors hover:border-indigo-400 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:border-indigo-600"
                 >
-                  +{plusOnlyCount} with Plus →
+                  {m.quiz_plus_only_count({ count: plusOnlyCount })}
                 </a>
               {/if}
             </div>

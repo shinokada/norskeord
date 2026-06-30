@@ -68,7 +68,7 @@
       if (turningOn) {
         const sub = await subscribeToPush();
         if (!sub) {
-          reminderError = 'Could not enable notifications. Please check your browser settings.';
+          reminderError = m.profile_sub_push_error();
           return;
         }
         dailyReminder = true;
@@ -78,7 +78,7 @@
       }
     } catch (err) {
       console.error('[push] toggle failed:', err);
-      reminderError = 'Something went wrong. Please try again.';
+      reminderError = m.profile_sub_generic_error();
     }
   }
 
@@ -96,13 +96,13 @@
         body: JSON.stringify({ enabled: turningOn })
       });
       if (!res.ok) {
-        emailReminderError = 'Something went wrong. Please try again.';
+        emailReminderError = m.profile_sub_generic_error();
         return;
       }
       emailReminder = turningOn;
     } catch (err) {
       console.error('[email-reminder] toggle failed:', err);
-      emailReminderError = 'Something went wrong. Please try again.';
+      emailReminderError = m.profile_sub_generic_error();
     }
   }
 </script>
@@ -220,7 +220,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="underline hover:text-gray-600 dark:hover:text-gray-300"
-              >What's that in my time?</a
+              >{m.profile_sub_timezone_link()}</a
             >
           </p>
           {#if reminderError}
@@ -243,7 +243,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="underline hover:text-gray-600 dark:hover:text-gray-300"
-              >What's that in my time?</a
+              >{m.profile_sub_timezone_link()}</a
             >
           </p>
           {#if emailReminderError}

@@ -1,0 +1,559 @@
+{
+  "generated": "2026-06-30T12:51:54.902Z",
+  "totalKeys": 859,
+  "usedCount": 722,
+  "dynamicCount": 137,
+  "unusedCount": 0,
+  "dynamicPrefixesFound": ["category_c_", "category_"],
+  "dynamic": [
+    {
+      "key": "category_a1_greetings",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_numbers",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_colors",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_family",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_body",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_food",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_animals",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_home",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_days-months",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_classroom",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_adjectives",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_verbs",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_pronouns-and-questions",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_feelings",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_weather",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_transportation",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_household-items",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_places",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_clothes",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_actions",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_uttrykk",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a1_uttrykk-preview",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_shopping",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_transport",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_clothing",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_hobbies",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_directions",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_occupations",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_sports",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_health",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_weather",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_time",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_descriptive-adjectives",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_cooking",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_nature",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_house-chores",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_communication",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_body",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_social-life",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_technology",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_environment",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_money",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_uttrykk",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_a2_uttrykk-preview",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_travel",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_environment",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_media",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_culture",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_technology",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_relationships",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_education",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_work",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_city-life",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_traditions",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_expressing-opinions",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_cooking",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_accommodation",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_health",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_finance",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_personal-growth",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_reasoning",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_society",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_communication-skills",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_urban-life",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_mental-wellbeing",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_fitness",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_arts-culture",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_economics",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_sustainability",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_science-nature",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_journalism",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_workplace",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_family",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_politics",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_language-learning",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_healthcare",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_uttrykk",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b1_uttrykk-preview",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_politics",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_economics",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_social-issues",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_arts",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_science",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_emotions",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_history",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_law",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_literature",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_advanced-adjectives",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_philosophy",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_medicine",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_psychology",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_business",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_religion",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_environment",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_technology",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_media",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_education",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_language",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_argumentation",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_abstract-nouns",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_advanced-verbs",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_geography",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_culture",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_global-issues",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_academic-language",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_discourse-markers",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_work-career",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_relationships",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_communication",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_uttrykk-preview",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_b2_uttrykk",
+      "prefix": "category_"
+    },
+    {
+      "key": "category_c_philosophy",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_academic",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_formal-writing",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_rhetoric",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_complex-emotions",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_professional",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_abstract-concepts",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_politics-democracy",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_linguistics",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_media-journalism",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_architecture-design",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_diplomacy-international",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_finance-economics",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_medicine-healthcare",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_psychology-advanced",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_literary",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_archaic",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_proverbs",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_highly-formal",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_technical",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_advanced-law-justice",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_neuroscience-cognition",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_climate-environment-policy",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_sociology-anthropology",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_advanced-business-strategy",
+      "prefix": "category_c_"
+    },
+    {
+      "key": "category_c_existential-abstract",
+      "prefix": "category_c_"
+    }
+  ],
+  "unused": []
+}

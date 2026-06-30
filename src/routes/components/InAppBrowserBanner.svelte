@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import * as m from '$lib/paraglide/messages.js';
 
   let show = $state(false);
   let openUrl = $state('');
@@ -29,20 +30,21 @@
     role="alert"
   >
     <p class="text-amber-900 dark:text-amber-100">
-      🌐 For the best experience, open in <strong>Chrome</strong>.
+      <!-- eslint-disable-next-line svelte/no-at-html-tags -- static, developer-authored Paraglide message, no user input -->
+      {@html m.inapp_browser_message()}
     </p>
     <div class="flex shrink-0 items-center gap-2">
       <a
         href={openUrl}
         class="rounded-lg bg-amber-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-amber-700"
       >
-        Open in Chrome
+        {m.inapp_browser_open_chrome()}
       </a>
       <button
         type="button"
         onclick={dismiss}
         class="text-amber-700 hover:text-amber-900 dark:text-amber-300"
-        aria-label="Dismiss"
+        aria-label={m.inapp_browser_dismiss()}
       >
         ✕
       </button>

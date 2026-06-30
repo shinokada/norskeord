@@ -15,6 +15,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
+- http://localhost:5173/norskproven has A2 and B1. I think I need to add B2 as well.
 - For mobile, bottom navigation can be used?
 - Mobile check
 - How about Start free button rather than login?

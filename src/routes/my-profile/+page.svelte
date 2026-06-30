@@ -53,7 +53,7 @@
           class="inline-flex items-center gap-1.5 text-base font-medium text-red-500 transition-colors hover:text-red-400"
         >
           <span class="inline-block transition-transform group-open:rotate-90">▸</span>
-          Danger Zone
+          {m.profile_danger_zone_summary()}
         </span>
       </summary>
       <div class="mt-3">
