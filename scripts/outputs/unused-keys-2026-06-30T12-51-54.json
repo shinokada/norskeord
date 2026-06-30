@@ -4,10 +4,7 @@
   "usedCount": 722,
   "dynamicCount": 137,
   "unusedCount": 0,
-  "dynamicPrefixesFound": [
-    "category_c_",
-    "category_"
-  ],
+  "dynamicPrefixesFound": ["category_c_", "category_"],
   "dynamic": [
     {
       "key": "category_a1_greetings",
