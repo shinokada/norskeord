@@ -188,7 +188,7 @@
             href="/plus?ref=hub-vocab-badge"
             class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-600 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-300"
           >
-            +{lockedCount} with Plus →
+            {m.quiz_plus_only_count({ count: lockedCount })}
           </a>
         {/if}
       {/if}
