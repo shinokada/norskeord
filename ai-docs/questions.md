@@ -15,7 +15,9 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 
 ---
 
-- script to check if messages/nb.json uk.json es.json de.json has all the equivalant translation.
+- For not-plus and not-logged in users, http://localhost:5173/c/archaic shows `Proverbs ->` but when I click it, `No vocabulary available yet. Check back soon!` is shown since it is only for Plus users. so the `Proverbs ->` should be linked to /plus page with `+{n} with Plus ->` . 
+- B1 and B2 pages, http://localhost:5173/b1/uttrykk-preview, http://localhost:5173/b2/uttrykk-preview page has no right arrow. Shouldn't it be the same as above link to the plus page with  `+{n} with Plus ->`. What do you think?
+
 - For mobile, bottom navigation can be used?
 - Mobile check
 - How about Start free button rather than login?
