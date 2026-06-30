@@ -28,19 +28,27 @@ test.describe('/plus page', () => {
     await expect(page.getByRole('columnheader', { name: /Plus/i })).toBeVisible();
   });
 
-  test('shows all four Plus feature cards', async ({ page }) => {
+  test('shows all Plus feature cards', async ({ page }) => {
     for (const title of [
-      'Study only what you need today',
       'Full B1 to C2 access',
       'Cross-device sync',
-      'Per-category progress breakdown'
+      'Per-category progress breakdown',
+      'Quiz yourself, not just flip',
+      'Exam practice, not just vocabulary'
     ]) {
       await expect(page.getByRole('heading', { name: title, level: 3 })).toBeVisible();
     }
   });
 
-  test('shows smart review section', async ({ page }) => {
+  test('shows smart review section with all three steps', async ({ page }) => {
     await expect(page.getByRole('heading', { name: 'How smart review works' })).toBeVisible();
+    for (const title of [
+      'Rate each card',
+      'Timing adjusts automatically',
+      'Your Due today deck'
+    ]) {
+      await expect(page.getByRole('heading', { name: title, level: 3 })).toBeVisible();
+    }
   });
 
   test('bottom CTA links to home and norskproven', async ({ page }) => {
