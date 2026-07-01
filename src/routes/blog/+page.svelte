@@ -139,7 +139,7 @@
           <button
             onclick={() => toggleLevel(level)}
             class={[
-              'rounded-full border px-4 py-1.5 text-sm font-semibold transition',
+              'rounded-full border px-4 py-2 text-sm font-semibold transition',
               selectedLevel === level
                 ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
                 : 'border-gray-300 bg-transparent text-gray-600 hover:border-gray-500 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400'
@@ -164,7 +164,7 @@
             <button
               onclick={() => toggleTag(tag)}
               class={[
-                'rounded-full border px-4 py-1.5 text-sm transition',
+                'rounded-full border px-4 py-2 text-sm transition',
                 selectedTag === tag
                   ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
                   : 'border-gray-200 bg-transparent text-gray-600 hover:border-gray-400 dark:border-gray-700 dark:text-gray-300 dark:hover:border-gray-500'

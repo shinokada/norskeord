@@ -176,7 +176,7 @@
               <div class="mb-2 flex flex-wrap gap-1">
                 {#each t.levels as lv (lv)}
                   <span
-                    class="rounded bg-indigo-50 px-1.5 py-0.5 text-[10px] font-semibold tracking-wide text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300"
+                    class="rounded bg-indigo-50 px-2 py-1 text-sm font-semibold tracking-wide text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300"
                   >
                     {lv}
                   </span>

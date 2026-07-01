@@ -95,7 +95,7 @@
     <!-- CEFR level pills -->
     <div class="flex flex-wrap items-center gap-2">
       <span
-        class="w-12 shrink-0 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-300"
+        class="w-12 shrink-0 text-sm font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-300"
       >
         {m.blog_filter_level()}
       </span>
@@ -104,7 +104,7 @@
           <button
             onclick={() => toggleLevel(level)}
             class={[
-              'rounded-full border px-3 py-0.5 text-xs font-semibold transition',
+              'rounded-full border px-4 py-1 text-xs font-semibold transition',
               selectedLevel === level
                 ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
                 : 'border-gray-300 bg-transparent text-gray-600 hover:border-gray-500 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400'
@@ -134,7 +134,7 @@
     {/if}
   </div>
 
-  <p class="mb-4 text-sm font-medium text-gray-600 dark:text-gray-300">{m.grammar_pick_topic()}</p>
+  <p class="mb-4 text-base font-medium text-gray-600 dark:text-gray-300">{m.grammar_pick_topic()}</p>
 
   <!-- Free topics -->
   {#if filteredFree.length > 0}
@@ -197,7 +197,7 @@
                 {rule ? rule.titleEn : t.topic}
               </h2>
               <span
-                class="shrink-0 rounded-full bg-indigo-100 px-3 py-1.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
+                class="shrink-0 rounded-full bg-indigo-100 px-3 py-1.5 text-sm font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
               >
                 🔒 {m.grammar_plus_topic()}
               </span>
@@ -206,7 +206,7 @@
               <div class="mb-2 flex flex-wrap gap-1">
                 {#each t.levels as level (level)}
                   <span
-                    class="rounded bg-indigo-50 px-1.5 py-0.5 text-[10px] font-semibold tracking-wide text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300"
+                    class="rounded bg-indigo-50 px-2 py-1 text-sm font-semibold tracking-wide text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300"
                     >{level}</span
                   >
                 {/each}
