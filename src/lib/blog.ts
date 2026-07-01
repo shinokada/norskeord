@@ -19,6 +19,18 @@ export interface PostMeta {
 // Loose shape used for raw glob imports and test fixtures — metadata may be partial.
 export type RawPostModule = { metadata?: Partial<PostMeta>; default?: unknown };
 
+/** Shared CEFR level → flowbite Badge color mapping, used anywhere a level pill is shown. */
+export const cefrColors: Record<
+  string,
+  'green' | 'blue' | 'indigo' | 'purple' | 'pink' | 'yellow'
+> = {
+  A1: 'green',
+  A2: 'green',
+  B1: 'blue',
+  B2: 'indigo',
+  C: 'purple'
+};
+
 /** Normalise cefr to an array regardless of whether it was stored as a string or array. */
 export function cefrLevels(cefr: string | string[]): string[] {
   return Array.isArray(cefr) ? cefr : [cefr];

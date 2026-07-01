@@ -39,7 +39,8 @@ test.describe('Blog index', () => {
   });
 
   test('word post cards show a CEFR badge', async ({ page }) => {
-    // Guides are listed first and have no CEFR badge — find the first word post card instead.
+    // Guides show a "Guide" badge (data-testid="guide-badge") instead of a CEFR
+    // badge, so this testid unambiguously targets word posts.
     const badge = page.getByTestId('cefr-badge').first();
     await expect(badge).toBeVisible();
   });
@@ -247,13 +248,19 @@ test.describe('Blog level filter', () => {
     await expect(page.locator('a[href^="/blog/"]')).toHaveCount(allCount);
   });
 
-  test('guides section is hidden when a level filter is active', async ({ page }) => {
-    // The guide post uses the slug defined in slik-bruker-du-norskeord.md
+  test('guides are hidden when a level filter is active', async ({ page }) => {
+    // Reveal the guide explicitly via the Guide topic pill first — it may not
+    // land on the default first page once mixed in chronologically with word posts.
+    const guideButton = page.getByRole('button', { name: 'Guide', exact: true });
+    await guideButton.click();
+
     const guideLink = page.locator('a[href="/blog/slik-bruker-du-norskeord"]');
     await expect(guideLink).toBeVisible();
+
     await levelBtn(page, 'A2').click();
-    // Wait for Svelte reactivity to remove the guides section from the DOM
-    await expect(page.locator('section').filter({ has: guideLink })).toHaveCount(0);
+    // Guides are excluded once a level filter is active, even though their own
+    // cefr range would otherwise match every level, and even with the Guide
+    // topic pill still selected.
     await expect(guideLink).toHaveCount(0);
   });
 });
@@ -286,6 +293,29 @@ test.describe('Blog tag filter', () => {
     const tagButton = page.getByRole('button', { name: 'adjectives', exact: true });
     await tagButton.click();
     await tagButton.click();
+    await expect(page.locator('a[href^="/blog/"]')).toHaveCount(allCount);
+  });
+
+  test('Guide pill shows only guide cards', async ({ page }) => {
+    const guideButton = page.getByRole('button', { name: 'Guide', exact: true });
+    await expect(guideButton).toBeVisible();
+    await guideButton.click();
+
+    const cards = page.locator('a[href^="/blog/"]');
+    await expect(cards.first()).toBeVisible();
+    const count = await cards.count();
+
+    for (let i = 0; i < count; i++) {
+      await expect(cards.nth(i).getByTestId('guide-badge')).toBeVisible();
+      await expect(cards.nth(i).getByTestId('cefr-badge')).toHaveCount(0);
+    }
+  });
+
+  test('Guide pill deselects like other tags', async ({ page }) => {
+    const allCount = await page.locator('a[href^="/blog/"]').count();
+    const guideButton = page.getByRole('button', { name: 'Guide', exact: true });
+    await guideButton.click();
+    await guideButton.click();
     await expect(page.locator('a[href^="/blog/"]')).toHaveCount(allCount);
   });
 });
@@ -340,7 +370,7 @@ test.describe('Blog load more', () => {
   });
 
   test('shows at most 8 post cards on initial load', async ({ page }) => {
-    // Count only non-guide cards (guides use a separate section above the grid)
+    // Guides are now mixed into the same grid as word posts in the default view.
     const gridCards = page.locator('div.grid a[href^="/blog/"]');
     const count = await gridCards.count();
     expect(count).toBeLessThanOrEqual(8);
