@@ -81,14 +81,14 @@ async function completeGrammarSession(page: Page, maxQuestions = 20) {
 test('grammar index page loads and shows at least one topic card', async ({ page }) => {
   await page.goto('/grammar');
   await expect(page).toHaveURL('/grammar');
-  // At least one topic heading card is rendered
-  await expect(page.getByRole('heading', { level: 2 }).first()).toBeVisible({ timeout: 8000 });
+  // At least one topic title card is rendered
+  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
 });
 
 test('free user sees Plus upsell on grammar index when locked topics exist', async ({ page }) => {
   await page.goto('/grammar');
   // Wait for CSR hydration: the free topics grid must be rendered first
-  await expect(page.getByRole('heading', { level: 2 }).first()).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
   // The upsell banner is a <p> tag with text like "7 more topics with Plus"
   await expect(page.getByText(/\d+ more topics with Plus/i)).toBeVisible({ timeout: 5000 });
 });

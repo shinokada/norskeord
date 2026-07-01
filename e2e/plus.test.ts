@@ -42,11 +42,7 @@ test.describe('/plus page', () => {
 
   test('shows smart review section with all three steps', async ({ page }) => {
     await expect(page.getByRole('heading', { name: 'How smart review works' })).toBeVisible();
-    for (const title of [
-      'Rate each card',
-      'Timing adjusts automatically',
-      'Your Due today deck'
-    ]) {
+    for (const title of ['Rate each card', 'Timing adjusts automatically', 'Your Due today deck']) {
       await expect(page.getByRole('heading', { name: title, level: 3 })).toBeVisible();
     }
   });
