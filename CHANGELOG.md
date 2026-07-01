@@ -1,5 +1,24 @@
 # norske-flashcard
 
+## 2.46.0
+
+### Minor Changes
+
+- - **New Features**
+    - FAQ page now uses an accordion layout with clear expand/collapse indicators.
+  - **UI Improvements**
+    - Plus page “How smart review works” is now step-based, and Plus feature highlights were updated.
+    - Blog browsing now blends Guides into the main results where applicable.
+    - Grammar and learning surfaces now show consistent, color-coded CEFR badges/chips and refined progress header typography.
+  - **Localization / Content**
+    - Updated Plus marketing text structure across supported languages.
+  - **Tests**
+    - Updated e2e coverage for the revised Plus, Blog, and Grammar UIs.
+  - **Documentation**
+    - Clarified the i18n maintenance command flow as numbered steps.
+  - **Chores**
+    - Removed outdated prior-session notes content from internal AI docs.
+
 ## 2.45.0
 
 ### Minor Changes
