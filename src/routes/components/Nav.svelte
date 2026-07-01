@@ -118,14 +118,19 @@
 
   // ── Dropdown open state ────────────────────────────────────────────────────
   let avatarDropdownOpen = $state(false);
-  let moreDropdownOpen = $state(false);
+  let helpDropdownOpen = $state(false);
+  let learnDropdownOpen = $state(false);
 
   function closeAvatarDropdown() {
     avatarDropdownOpen = false;
   }
 
-  function closeMoreDropdown() {
-    moreDropdownOpen = false;
+  function closeHelpDropdown() {
+    helpDropdownOpen = false;
+  }
+
+  function closeLearnDropdown() {
+    learnDropdownOpen = false;
   }
 
   const showOnboardingNudge = $derived((page.data.showOnboardingNudge as boolean) ?? false);
@@ -308,12 +313,33 @@
       ul: 'p-0 dark:!bg-blue-950'
     }}
   >
-    <!-- Six level links — direct links to hub pages (no mega-menu) -->
     {#each levels as level (level)}
       <NavLi href="/learn/{level.toLowerCase()}" class="md:dark:text-gray-200">{level}</NavLi>
     {/each}
-    <NavLi href="/blog" class="md:dark:text-gray-200">{m.nav_blog()}</NavLi>
-
+    <!-- Learn dropdown — Norskprøven, Grammar, Quiz, Blog -->
+    <NavLi class="cursor-pointer md:dark:text-gray-200">
+      {m.nav_learn()}<ChevronDownOutline
+        class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white"
+      />
+    </NavLi>
+    <Dropdown
+      bind:isOpen={learnDropdownOpen}
+      simple
+      class="w-44 dark:border-gray-700 dark:bg-blue-950"
+    >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/norskproven" onclick={closeLearnDropdown}
+        >{m.nav_norskproven()}</DropdownItem
+      >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/grammar" onclick={closeLearnDropdown}
+        >{m.nav_grammar()}</DropdownItem
+      >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/quiz" onclick={closeLearnDropdown}
+        >{m.nav_quiz()}</DropdownItem
+      >
+      <DropdownItem class="dark:hover:bg-blue-900" href="/blog" onclick={closeLearnDropdown}
+        >{m.nav_blog()}</DropdownItem
+      >
+    </Dropdown>
     <!-- Help dropdown — Guide, Resources -->
     <NavLi class="cursor-pointer md:dark:text-gray-200">
       {m.nav_help()}<ChevronDownOutline
@@ -321,20 +347,20 @@
       />
     </NavLi>
     <Dropdown
-      bind:isOpen={moreDropdownOpen}
+      bind:isOpen={helpDropdownOpen}
       simple
       class="w-44 dark:border-gray-700 dark:bg-blue-950"
     >
-      <DropdownItem class="dark:hover:bg-blue-900" href="/guide" onclick={closeMoreDropdown}
+      <DropdownItem class="dark:hover:bg-blue-900" href="/guide" onclick={closeHelpDropdown}
         >{m.nav_guide()}</DropdownItem
       >
-      <DropdownItem class="dark:hover:bg-blue-900" href="/faq" onclick={closeMoreDropdown}
+      <DropdownItem class="dark:hover:bg-blue-900" href="/faq" onclick={closeHelpDropdown}
         >{m.nav_faq()}</DropdownItem
       >
-      <DropdownItem class="dark:hover:bg-blue-900" href="/resources" onclick={closeMoreDropdown}
+      <DropdownItem class="dark:hover:bg-blue-900" href="/resources" onclick={closeHelpDropdown}
         >{m.nav_free_resources()}</DropdownItem
       >
-      <DropdownItem class="dark:hover:bg-blue-900" href="/contact" onclick={closeMoreDropdown}
+      <DropdownItem class="dark:hover:bg-blue-900" href="/contact" onclick={closeHelpDropdown}
         >{m.nav_contact()}</DropdownItem
       >
     </Dropdown>
