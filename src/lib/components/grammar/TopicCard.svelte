@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { Badge } from 'flowbite-svelte';
   import type { CEFRLevel, GrammarRule, GrammarTopic } from '$lib/types';
   import { localeStore } from '$lib/localeStore.svelte';
+  import { cefrColors } from '$lib/blog';
   import * as m from '$lib/paraglide/messages';
 
   let {
@@ -21,31 +23,24 @@
 
 <a
   href={`/grammar/${topic}`}
-  class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm transition-colors hover:border-indigo-400 hover:shadow-md dark:border-gray-700 dark:bg-indigo-950/60 dark:hover:border-indigo-500"
+  class="hover:border-primary-400 dark:hover:border-primary-500 flex flex-col rounded-xl border border-gray-200 px-5 py-4 transition hover:shadow-sm dark:border-gray-700"
 >
-  <div class="mb-2 flex items-start justify-between gap-2">
-    <h2 class="text-lg font-sans group-hover:text-indigo-600">
-      {title}
-    </h2>
-  </div>
-
-  {#if levels.length}
-    <div class="mb-2 flex flex-wrap gap-1">
+  <div class="mb-3 flex items-start justify-between gap-2">
+    <div class="flex items-center gap-1">
       {#each levels as level (level)}
-        <span
-          class="rounded bg-indigo-50 px-1.5 py-0.5 text-[10px] font-semibold tracking-wide text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300"
-        >
-          {level}
-        </span>
+        <Badge color={cefrColors[level] ?? 'blue'} data-testid="cefr-badge">{level}</Badge>
       {/each}
     </div>
-  {/if}
+    <span class="shrink-0 text-xs text-gray-600 dark:text-gray-300">
+      {m.grammar_questions_count({ count: total })}
+    </span>
+  </div>
 
-  <p class="mb-3 line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
-    {rule ? (isNb ? rule.explanationNb : rule.explanationEn) : ''}
+  <p class="font-semibold text-gray-900 dark:text-white" data-testid="topic-title">
+    {title}
   </p>
 
-  <div class="mt-auto flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">
-    <span>{m.grammar_questions_count({ count: total })}</span>
-  </div>
+  <p class="mt-1 line-clamp-2 text-sm text-gray-500 sm:line-clamp-2 dark:text-gray-400">
+    {rule ? (isNb ? rule.explanationNb : rule.explanationEn) : ''}
+  </p>
 </a>

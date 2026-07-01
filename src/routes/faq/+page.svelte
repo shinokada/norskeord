@@ -1,5 +1,7 @@
 <script>
   import * as m from '$lib/paraglide/messages.js';
+  import { ChevronDownOutline } from 'flowbite-svelte-icons';
+
   const faqs = [
     {
       id: 1,
@@ -73,14 +75,19 @@
     {m.faq_page_subtitle()}
   </p>
 
-  <div class="space-y-6">
-    {#each faqs as faq (faq.id)}
-      <div>
-        <p class="font-semibold text-gray-800 dark:text-gray-100">
-          {faq.question}
-        </p>
+  <div class="divide-y divide-gray-200 dark:divide-gray-700">
+    {#each faqs as faq, i (faq.id)}
+      <details class="group py-4" open={i === 0}>
+        <summary
+          class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gray-800 marker:content-none dark:text-gray-100"
+        >
+          <span>{faq.question}</span>
+          <ChevronDownOutline
+            class="h-5 w-5 shrink-0 text-gray-500 transition-transform duration-200 group-open:rotate-180 dark:text-gray-400"
+          />
+        </summary>
 
-        <p class="mt-1 text-base text-gray-600 dark:text-gray-300">
+        <p class="mt-3 text-base text-gray-600 dark:text-gray-300">
           {faq.answer}
 
           {#if faq.cta}
@@ -97,7 +104,7 @@
             </span>
           {/if}
         </p>
-      </div>
+      </details>
     {/each}
   </div>
 </div>

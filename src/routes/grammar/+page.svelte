@@ -1,8 +1,10 @@
 <script lang="ts">
   import { page } from '$app/state';
+  import { Badge } from 'flowbite-svelte';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import TopicCard from '$lib/components/grammar/TopicCard.svelte';
   import { localeStore } from '$lib/localeStore.svelte';
+  import { cefrColors } from '$lib/blog';
   import type { CEFRLevel } from '$lib/types';
   import * as m from '$lib/paraglide/messages';
 
@@ -72,9 +74,10 @@
         placeholder={m.grammar_search_placeholder()}
         aria-label={m.grammar_search_aria()}
         type="search"
-        class="focus:border-primary-500 focus:ring-primary-500 w-full rounded-lg border border-gray-200 bg-transparent
-               px-3 py-2 pl-9 text-sm text-gray-900 placeholder-gray-400 focus:ring-1 focus:outline-none
-               dark:border-gray-600 dark:bg-transparent dark:text-white dark:placeholder-gray-500"
+        class="focus:border-primary-500 focus:ring-primary-500 w-full rounded-lg border border-gray-200 bg-transparent px-3 py-2
+               pl-9 text-sm text-gray-900 placeholder-gray-600
+               focus:ring-1 focus:outline-none dark:border-gray-400 dark:bg-transparent
+               dark:text-white dark:placeholder-gray-400"
       />
       <svg
         class="pointer-events-none absolute top-1/2 left-2.5 h-4 w-4 -translate-y-1/2 text-gray-600 dark:text-gray-300"
@@ -95,7 +98,7 @@
     <!-- CEFR level pills -->
     <div class="flex flex-wrap items-center gap-2">
       <span
-        class="w-12 shrink-0 text-xs font-semibold tracking-widest text-gray-400 uppercase dark:text-gray-300"
+        class="w-12 shrink-0 text-xs font-semibold tracking-widest text-gray-600 uppercase dark:text-gray-300"
       >
         {m.blog_filter_level()}
       </span>
@@ -104,7 +107,7 @@
           <button
             onclick={() => toggleLevel(level)}
             class={[
-              'rounded-full border px-3 py-0.5 text-xs font-semibold transition',
+              'rounded-full border px-4 py-2 text-sm font-semibold transition',
               selectedLevel === level
                 ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
                 : 'border-gray-300 bg-transparent text-gray-600 hover:border-gray-500 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400'
@@ -134,7 +137,9 @@
     {/if}
   </div>
 
-  <p class="mb-4 text-sm font-medium text-gray-600 dark:text-gray-300">{m.grammar_pick_topic()}</p>
+  <p class="mb-4 text-base font-medium text-gray-600 dark:text-gray-300">
+    {m.grammar_pick_topic()}
+  </p>
 
   <!-- Free topics -->
   {#if filteredFree.length > 0}
@@ -190,34 +195,29 @@
           {@const rule = GRAMMAR_RULES[t.topic]}
           <a
             href="/plus?ref=grammar-topics"
-            class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm transition-colors hover:border-indigo-400 hover:shadow-md dark:border-gray-700 dark:bg-indigo-950/60 dark:hover:border-indigo-500"
+            class="hover:border-primary-400 dark:hover:border-primary-500 flex flex-col rounded-xl border border-gray-200 px-5 py-4 transition hover:shadow-sm dark:border-gray-700"
           >
-            <div class="mb-2 flex items-start justify-between gap-2">
-              <h2 class="group-hover:text-indigo-600 font-sans text-lg">
-                {rule ? rule.titleEn : t.topic}
-              </h2>
+            <div class="mb-3 flex items-start justify-between gap-2">
+              <div class="flex items-center gap-1">
+                {#each t.levels as level (level)}
+                  <Badge color={cefrColors[level] ?? 'blue'} data-testid="cefr-badge">{level}</Badge
+                  >
+                {/each}
+              </div>
               <span
                 class="shrink-0 rounded-full bg-indigo-100 px-3 py-1.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
               >
                 🔒 {m.grammar_plus_topic()}
               </span>
             </div>
-            {#if t.levels.length}
-              <div class="mb-2 flex flex-wrap gap-1">
-                {#each t.levels as level (level)}
-                  <span
-                    class="rounded bg-indigo-50 px-1.5 py-0.5 text-[10px] font-semibold tracking-wide text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300"
-                    >{level}</span
-                  >
-                {/each}
-              </div>
-            {/if}
-            <p class="mb-3 line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
+
+            <p class="font-semibold text-gray-900 dark:text-white" data-testid="topic-title">
+              {rule ? rule.titleEn : t.topic}
+            </p>
+
+            <p class="mt-1 line-clamp-2 text-sm text-gray-500 sm:line-clamp-2 dark:text-gray-400">
               {rule ? rule.explanationEn : ''}
             </p>
-            <div class="mt-auto text-xs text-gray-600 dark:text-gray-300">
-              {m.grammar_questions_count({ count: t.total })}
-            </div>
           </a>
         {/each}
       </div>
