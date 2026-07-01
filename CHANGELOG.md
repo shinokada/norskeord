@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.47.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a new **Learn** navigation menu with related learning resources.
+    - Moved the **Blog** link into the new Learn menu for a cleaner top-level navigation.
+    - Added the new **Learn** label in English, German, Spanish, Norwegian, and Ukrainian.
+
 ## 2.46.0
 
 ### Minor Changes
