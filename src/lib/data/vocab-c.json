@@ -337,8 +337,8 @@
   },
   {
     "id": "v-c-academic-005",
-    "norsk": "en tverrfaglig",
-    "lemma": "en tverrfaglig",
+    "norsk": "tverrfaglig",
+    "lemma": "tverrfaglig",
     "english": "interdisciplinary",
     "german": "interdisziplinär",
     "example": "Prosjektet krevde en tverrfaglig tilnærming.",
@@ -1149,8 +1149,8 @@
   },
   {
     "id": "v-c-professional-001",
-    "norsk": "en konfidensiell",
-    "lemma": "en konfidensiell",
+    "norsk": "konfidensiell",
+    "lemma": "konfidensiell",
     "english": "confidential",
     "german": "vertraulich",
     "example": "Alle opplysninger behandles konfidensielt.",

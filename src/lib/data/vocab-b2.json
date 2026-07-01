@@ -19549,9 +19549,9 @@
   },
   {
     "id": "v-b2-law-047",
-    "norsk": "mildere",
-    "lemma": "mildere",
-    "english": "milder / more lenient",
+    "norsk": "mild",
+    "lemma": "mild",
+    "english": "mild / lenient",
     "ukrainian": "м'якший / поблажливіший",
     "spanish": "más leve / más benévolo",
     "german": "milder / weniger streng",
@@ -26515,8 +26515,8 @@
   },
   {
     "id": "v-b2-science-004",
-    "norsk": "en banebrytende",
-    "lemma": "en banebrytende",
+    "norsk": "banebrytende",
+    "lemma": "banebrytende",
     "english": "groundbreaking / pioneering",
     "ukrainian": "новаторський / проривний",
     "spanish": "innovador / pionero",
