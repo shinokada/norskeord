@@ -458,7 +458,7 @@
 
     <!-- Progress bar -->
     <div class="mb-6">
-      <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
+      <div class="mb-1 flex items-center justify-between text-sm text-gray-600 dark:text-gray-300">
         <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
         <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
       </div>
@@ -596,7 +596,7 @@
 
     <!-- Progress bar (frozen at current position) -->
     <div class="mb-6">
-      <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
+      <div class="mb-1 flex items-center justify-between text-sm text-gray-600 dark:text-gray-300">
         <span>{m.quiz_question_count({ current: currentIndex + 1, total: questions.length })}</span>
         <span>{m.quiz_correct_so_far({ count: correctCount })}</span>
       </div>

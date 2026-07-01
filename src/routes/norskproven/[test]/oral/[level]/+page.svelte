@@ -129,7 +129,7 @@
 
     <!-- ── Progress bar ──────────────────────────────────────────────────── -->
     <div class="mb-6">
-      <div class="mb-1 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
+      <div class="mb-1 flex items-center justify-between text-sm text-gray-600 dark:text-gray-300">
         <span>Scenario {scenarioIndex + 1} av {scenarios.length}</span>
         <span class="font-medium text-blue-500 dark:text-blue-400"
           >{data.level} · Test {data.test}</span
