@@ -150,7 +150,16 @@ export const CATEGORIES_BY_LEVEL = {
     'climate-environment-policy',
     'sociology-anthropology',
     'advanced-business-strategy',
-    'existential-abstract'
+    'existential-abstract',
+    'nature-landscape',
+    'sensory-sound',
+    'physical-appearance',
+    'everyday-objects',
+    'character-temperament',
+    'embodied-emotion',
+    'manner-of-motion',
+    'interpersonal-conflict',
+    'intensifiers-degree'
   ]
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 

@@ -1,0 +1,469 @@
+🧩  enrich-vocab.mjs — Method 2, Step 2
+    Level:      c
+    Mode:       DRY RUN
+    Batch size: 10
+
+📄  Words (vocab-c)
+    Extracted entries: 297  (/Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/c/extracted-vocab-c.json)
+    Already enriched (skipped): 0
+    To enrich: 297
+    🔍  DRY RUN — would enrich 297 entries:
+       • nellikspiker
+       • sitre
+       • kribling
+       • forestående
+       • slede
+       • himmelhvelving
+       • vrimmel
+       • funkle
+       • knakende
+       • bugnende
+       • kime
+       • verkende
+       • snikende
+       • merkverdig
+       • villmann
+       • jommen
+       • piple
+       • spir
+       • raknet
+       • luske
+       • rampe
+       • stri
+       • fyldig
+       • uforlignelig
+       • overdel
+       • sart
+       • uvøren
+       • innsatt
+       • gissel
+       • kuvøse
+       • forstander
+       • vag
+       • forbløffende
+       • utvisket
+       • blekne
+       • oppbevare
+       • fabulere
+       • omkomme
+       • mukke
+       • munnvik
+       • haltende
+       • utbryte
+       • smette
+       • lisse
+       • parkdress
+       • spjærende
+       • flengende
+       • rift
+       • fôr
+       • oppfatte
+       • rykk
+       • viser
+       • svidd
+       • hardhendt
+       • fyke
+       • trassalder
+       • innmat
+       • bryter
+       • fregne
+       • oppstoppernese
+       • silkebløt
+       • føflekk
+       • søkk
+       • duppe
+       • kai
+       • fjære
+       • tofte
+       • lyslugget
+       • skrent
+       • mold
+       • sjøstøvel
+       • gnissende
+       • dunk
+       • overstrødd
+       • måkelort
+       • tjære
+       • sund
+       • blikkstille
+       • hes
+       • egenartet
+       • skrål
+       • taktfast
+       • vannskorpe
+       • værbitt
+       • lær
+       • blest
+       • uforlignelig
+       • umåtelig
+       • dun
+       • knaus
+       • knatt
+       • bukt
+       • tram
+       • fortumlet
+       • snau
+       • overrumplet
+       • framstå
+       • overstrømmende
+       • særprege
+       • vedgå
+       • nytrukket
+       • uovertruffen
+       • uvurderlig
+       • drøy
+       • avdekke
+       • urovekkende
+       • skue
+       • overveldende
+       • utilslørt
+       • omslutte
+       • tiltakende
+       • ed
+       • forbannelse
+       • bebreide
+       • måke
+       • tett
+       • takrenne
+       • list
+       • belastning
+       • fortvilt
+       • syting
+       • innsats
+       • skjelling
+       • smelling
+       • kav
+       • parere
+       • ferdes
+       • utpost
+       • pliktoppfyllende
+       • forlange
+       • selvmedlidenhet
+       • avsides
+       • henrykt
+       • helle
+       • forgude
+       • beskyldning
+       • bebreidelse
+       • islagt
+       • knakende
+       • opphisselse
+       • omslutte
+       • kave
+       • utmattet
+       • lene
+       • frottere
+       • kuling
+       • slynges
+       • gjalle
+       • skumsprøyt
+       • grådig
+       • vanvidd
+       • dalføre
+       • rimkledd
+       • klynge
+       • åshøyde
+       • speidende
+       • morsk
+       • gestikulere
+       • heftig
+       • snirklete
+       • behørig
+       • sambygding
+       • sågar
+       • aner
+       • mektig
+       • dronningaktig
+       • lubben
+       • megetsigende
+       • forferdet
+       • samstemt
+       • forfjamset
+       • sukkersøt
+       • underlag
+       • spak
+       • li
+       • udugelig
+       • hespetre
+       • tomskalle
+       • nek
+       • hønsehjerne
+       • ufordragelig
+       • spetakkel
+       • forheng
+       • hardtrampet
+       • siv
+       • leire
+       • spinkel
+       • ubarmhjertig
+       • stråmatte
+       • skjør
+       • fæl
+       • knoke
+       • ordflom
+       • dunk
+       • dump
+       • klynking
+       • jammer
+       • gresstust
+       • subbe
+       • døddrukken
+       • kakle
+       • valse
+       • virre
+       • knusktørr
+       • solsvidd
+       • varmedis
+       • ubetydelig
+       • nummen
+       • lamslått
+       • mild
+       • bølgeskvulp
+       • pote
+       • drønne
+       • skogholt
+       • sildrende
+       • oppføre
+       • velholdt
+       • framtoning
+       • eføy
+       • vimse
+       • hyppig
+       • formidle
+       • knappenål
+       • unnselig
+       • hengiven
+       • kinkig
+       • befriende
+       • formaning
+       • sky
+       • rigid
+       • helle
+       • farse
+       • irettesette
+       • dam
+       • begredelig
+       • herje
+       • stødig
+       • røvergutt
+       • dødsskvadron
+       • skrott
+       • slant
+       • glupsk
+       • larmende
+       • sideskill
+       • miserabel
+       • overrekke
+       • ile
+       • tilsyn
+       • varsom
+       • verdig
+       • plystre
+       • vinduspost
+       • ruvende
+       • storslått
+       • slaps
+       • bjørkeris
+       • melisglasur
+       • unnlate
+       • ørefik
+       • smekk
+       • skjenne
+       • karm
+       • traust
+       • veve
+       • raus
+       • romslig
+       • krympe
+       • utrette
+       • risse
+       • stø
+       • martre
+       • fortielse
+       • viten
+       • nett
+       • pryde
+       • sirlig
+       • betinge
+       • fortrinn
+       • medlidende
+       • stilltiende
+       • prøvende
+       • klirring
+       • oppspilthet
+       • fortapt
+       • villede
+       • latent
+       • opprykk
+       • fortryllende
+       • vert
+       • skjenke
+       • kjegle
+       • virvar
+       • spinne
+       • revers
+       • gretten
+       • dvale
+       • bedårende
+
+📄  Expressions (uttrykk-c)
+    Extracted entries: 152  (/Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/c/extracted-uttrykk-c.json)
+    Already enriched (skipped): 0
+    To enrich: 152
+    🔍  DRY RUN — would enrich 152 entries:
+       • stå for døra
+       • forventningen rir ham
+       • om kapp
+       • ta seg i (å gjøre) noe
+       • røske opp
+       • tyte fram
+       • i stier
+       • riktig vanskelig
+       • lede inn til
+       • kaste et stjålent blikk
+       • prikk lik
+       • lure noen trill rundt
+       • det er få mennesker forunt
+       • skinnet bedrar
+       • rett som det er
+       • i samme åndedrag
+       • utfylle hverandre
+       • frastøte hverandre
+       • dø i barsel
+       • bli tatt hånd om
+       • havne i noens besittelse
+       • ta ordet i sin makt
+       • klingende sørlandsk
+       • mane fram
+       • vandre over til det hinsidige
+       • være høyt og lavt
+       • gå stille i dørene
+       • skrike og bære seg for noe
+       • gå i filler
+       • ta på vei for noe
+       • sette seg på huk
+       • før man får sukk for seg
+       • ikke rikke seg av flekken
+       • flunkende ny
+       • strene av gårde
+       • for lengst
+       • hive etter pusten
+       • fotfestet glipper
+       • surre fast
+       • være duket for
+       • stø kurs
+       • alderen biter ikke på henne
+       • kloss ved
+       • skyte i været
+       • bukte seg
+       • vokte seg vel for
+       • med lua på snei
+       • brase inn
+       • uten nærmere overveielse
+       • kverne rundt i hodet
+       • skvette til
+       • bli tatt på fersken
+       • skamrødmen melder seg
+       • gi til kjenne
+       • komme som sendt fra oven
+       • riste av seg befippelsen
+       • fiskelykken står dem bi
+       • sige på
+       • sanse seg
+       • stille opp med
+       • hagle med skjellsord
+       • stramme en skrue
+       • ta seg av
+       • det går ham på nervene
+       • få gjennomgå
+       • få endene til å møtes
+       • jobbe livet av seg
+       • langt inne i granskauen
+       • gå i seg selv
+       • åle seg
+       • sige nedover
+       • gi etter
+       • isen holder
+       • bukte seg
+       • isen svikter
+       • sno seg
+       • isen bærer
+       • kare seg fram
+       • lesse på
+       • virvle seg inn i en spiral
+       • klamre seg til
+       • legge sitt liv på vektskålen
+       • gjøren og laden
+       • gå seg selv etter i sømmene
+       • Gjertruds mann fulgte på
+       • vandre heden
+       • ha blått blod i årene
+       • smatte med tungen
+       • knipe sammen
+       • ordene hagler
+       • knytte nevene
+       • holde pusten
+       • i mils omkrets
+       • ta affære
+       • forskanse seg
+       • gjøre seg gjeldende
+       • med strev og møye
+       • bane seg fram
+       • fra sans og samling
+       • skratte i vilden sky
+       • ta overhånd
+       • hensunket i seg selv
+       • krible etter
+       • låne øre til
+       • tygge på ordene
+       • forstå noe til bunns
+       • late til å
+       • når det kommer til stykket
+       • kraftsalver brer om seg
+       • være sugen på
+       • besinne seg
+       • le kneggende
+       • kyle noe i veggen
+       • bli ertet
+       • være tom for kjekke ord
+       • forplante seg
+       • skvette til
+       • grafse til seg
+       • leve i fred og fordragelighet
+       • fra høyere hold
+       • bli var
+       • forsvinne i løse luften
+       • stikke noe til noen
+       • ta seg i å lure på noe
+       • klok av skade
+       • vokte seg vel
+       • rakt ut
+       • i samme slengen
+       • nervene løper løpsk
+       • ikke før
+       • være ute av seg
+       • kvekke til
+       • feste seg ved noe
+       • i villrede
+       • dra kjensel på
+       • sitte som spikret
+       • man kan høre en knappenål falle
+       • hviske og tiske
+       • holde styr på
+       • segne om
+       • la skole være skole
+       • betro seg til
+       • gjøre opprør
+       • gjøre seg flid med noe
+       • med rubb og rake
+       • det går i ett
+       • synes synd på noen
+       • lirke inn
+       • selv den skarpeste
+       • ta fyr
+       • propellen er i gang
+       • tylle i seg
+
+✅  Done.
+    Next: run find_dupes.py and find_uttrykk_dupes.py on the output,
+    then check-vocab.mjs / check-uttrykk.mjs (Step 3 in work-flow.md).
