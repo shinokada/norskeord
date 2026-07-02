@@ -337,20 +337,6 @@
   },
   {
     "id": "v-c-academic-005",
-    "norsk": "tverrfaglig",
-    "lemma": "tverrfaglig",
-    "english": "interdisciplinary",
-    "german": "interdisziplinär",
-    "example": "Prosjektet krevde en tverrfaglig tilnærming.",
-    "example_english": "The project required an interdisciplinary approach.",
-    "example_german": "Das Projekt erforderte einen interdisziplinaren Ansatz.",
-    "definition": "Noe som involverer eller kombinerer kunnskap og metoder fra flere ulike fagområder.",
-    "level": "C",
-    "category": "academic",
-    "part": "adjective"
-  },
-  {
-    "id": "v-c-academic-006",
     "norsk": "forskningsgap (et)",
     "lemma": "forskningsgap",
     "english": "a research gap",
@@ -364,7 +350,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-academic-007",
+    "id": "v-c-academic-006",
     "norsk": "å operasjonalisere",
     "lemma": "operasjonalisere",
     "english": "to operationalise",
@@ -378,7 +364,7 @@
     "part": "verb"
   },
   {
-    "id": "v-c-academic-008",
+    "id": "v-c-academic-007",
     "norsk": "bias (en)",
     "lemma": "bias",
     "english": "bias",
@@ -392,7 +378,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-academic-009",
+    "id": "v-c-academic-008",
     "norsk": "å konseptualisere",
     "lemma": "konseptualisere",
     "english": "to conceptualise",
@@ -406,7 +392,7 @@
     "part": "verb"
   },
   {
-    "id": "v-c-academic-010",
+    "id": "v-c-academic-009",
     "norsk": "rammeverk (et)",
     "lemma": "rammeverk",
     "english": "a framework",
@@ -420,7 +406,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-academic-011",
+    "id": "v-c-academic-010",
     "norsk": "triangulering (en)",
     "lemma": "triangulering",
     "english": "triangulation (research method)",
@@ -434,7 +420,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-academic-012",
+    "id": "v-c-academic-011",
     "norsk": "konsensus (en)",
     "lemma": "konsensus",
     "english": "a consensus",
@@ -448,7 +434,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-academic-013",
+    "id": "v-c-academic-012",
     "norsk": "paradigme (et)",
     "lemma": "paradigme",
     "english": "a paradigm",
@@ -462,7 +448,7 @@
     "part": "noun"
   },
   {
-    "id": "v-c-academic-014",
+    "id": "v-c-academic-013",
     "norsk": "syntese (en)",
     "lemma": "syntese",
     "english": "a synthesis",
