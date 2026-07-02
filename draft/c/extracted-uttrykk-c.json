@@ -1,0 +1,1370 @@
+[
+	{
+		"id": "",
+		"norsk": "å stå for døra",
+		"lemma": "stå for døra",
+		"definition": "Brukes om noe som er nært forestående og snart vil skje.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "forventningen rir ham",
+		"lemma": "forventningen rir ham",
+		"definition": "Brukes når noen kjenner forventningene så sterkt at det oppleves fysisk og litt overveldende.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "om kapp",
+		"lemma": "om kapp",
+		"definition": "Når man gjør noe om kapp, konkurrerer man og prøver å bli best eller komme først.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta seg i (å gjøre) noe",
+		"lemma": "ta seg i (å gjøre) noe",
+		"definition": "Brukes når man oppdager at man gjør noe som er litt overraskende for en selv.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å røske opp",
+		"lemma": "røske opp",
+		"definition": "Betyr å dra eller trekke hardt opp, eller å åpne noe på en litt brutal måte.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å tyte fram",
+		"lemma": "tyte fram",
+		"definition": "Betyr å stikke ut, piple eller sive.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "i stier",
+		"lemma": "i stier",
+		"definition": "Brukes om noe som beveger seg på rekker eller i små veier.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "riktig vanskelig",
+		"lemma": "riktig vanskelig",
+		"definition": "Brukes som en forsterker foran et adjektiv og betyr veldig.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å lede inn til",
+		"lemma": "lede inn til",
+		"definition": "Betyr å føre inn til noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å kaste et stjålent blikk",
+		"lemma": "kaste et stjålent blikk",
+		"definition": "Betyr å se på noen i det skjulte eller i hemmelighet.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "prikk lik",
+		"lemma": "prikk lik",
+		"definition": "Betyr helt lik eller identisk.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å lure noen trill rundt",
+		"lemma": "lure noen trill rundt",
+		"definition": "Betyr å lure noen grundig, eller å narre noen slik at de blir forvirret.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "det er få mennesker forunt",
+		"lemma": "det er få mennesker forunt",
+		"definition": "Brukes om noe som svært få mennesker får oppleve eller ta del i.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "skinnet bedrar",
+		"lemma": "skinnet bedrar",
+		"definition": "Brukes for å si at et fint eller vennlig ytre ikke nødvendigvis stemmer med virkeligheten.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "rett som det er",
+		"lemma": "rett som det er",
+		"definition": "Betyr ofte.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "i samme åndedrag",
+		"lemma": "i samme åndedrag",
+		"definition": "Betyr i samme øyeblikk eller samtidig.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å utfylle hverandre",
+		"lemma": "utfylle hverandre",
+		"definition": "Betyr å harmonere godt sammen, eller å passe bra sammen med ulike egenskaper.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å frastøte hverandre",
+		"lemma": "frastøte hverandre",
+		"definition": "Betyr å vekke motvilje hos hverandre, eller å kjenne gjensidig at man ikke ønsker å være sammen.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å dø i barsel",
+		"lemma": "dø i barsel",
+		"definition": "Betyr å dø mens man føder et barn, eller i etterkant av en fødsel.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å bli tatt hånd om",
+		"lemma": "bli tatt hånd om",
+		"definition": "Betyr å bli passet på av noen.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å havne i noens besittelse",
+		"lemma": "havne i noens besittelse",
+		"definition": "Brukes når noe havner i en annens eie, og man dermed blir eier av det.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta ordet i sin makt",
+		"lemma": "ta ordet i sin makt",
+		"definition": "Betyr å bli flink til å uttrykke seg.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "klingende sørlandsk",
+		"lemma": "klingende sørlandsk",
+		"definition": "Betyr med klar og tydelig sørlandsdialekt.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å mane fram",
+		"lemma": "mane fram",
+		"definition": "Betyr å påkalle eller kalle fram noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å vandre over til det hinsidige",
+		"lemma": "vandre over til det hinsidige",
+		"definition": "Betyr å dø, med en religiøs hentydning.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å være høyt og lavt",
+		"lemma": "være høyt og lavt",
+		"definition": "Betyr å være (for) aktiv, eller å være overalt.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gå stille i dørene",
+		"lemma": "gå stille i dørene",
+		"definition": "Betyr å være stille for å unngå å lage bråk eller forstyrre.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å skrike og bære seg for noe",
+		"lemma": "skrike og bære seg for noe",
+		"definition": "Betyr å klage og protestere høylytt over noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gå i filler",
+		"lemma": "gå i filler",
+		"definition": "Betyr å gå i stykker eller bli ødelagt.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta på vei for noe",
+		"lemma": "ta på vei for noe",
+		"definition": "Betyr å bli sint, eller å fare opp for noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sette seg på huk",
+		"lemma": "sette seg på huk",
+		"definition": "Betyr å sette seg med bøyde knær og baken ned mot hælene.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "før man får sukk for seg",
+		"lemma": "før man får sukk for seg",
+		"definition": "Brukes når man vil si at noe går veldig raskt, før man rekker å sukke eller si noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "ikke rikke seg av flekken",
+		"lemma": "ikke rikke seg av flekken",
+		"definition": "Betyr å ikke bevege seg i det hele tatt.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "flunkende ny",
+		"lemma": "flunkende ny",
+		"definition": "Betyr splitter ny eller helt ny.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å strene av gårde",
+		"lemma": "strene av gårde",
+		"definition": "Betyr å gå fort, eller å farte av sted.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "for lengst",
+		"lemma": "for lengst",
+		"definition": "Betyr for lenge siden.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å hive etter pusten",
+		"lemma": "hive etter pusten",
+		"definition": "Betyr å være andpusten, eller å ha problemer med pusten.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "fotfestet glipper",
+		"lemma": "fotfestet glipper",
+		"definition": "Når fotfestet glipper, sklir man.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å surre fast",
+		"lemma": "surre fast",
+		"definition": "Å binde fast.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å være duket for",
+		"lemma": "være duket for",
+		"definition": "Å være lagt til rette for noe, eller å ha blitt klargjort for det.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "stø kurs (en)",
+		"lemma": "stø kurs",
+		"definition": "En fast og sikker retning som ikke vakler.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "alderen biter ikke på henne",
+		"lemma": "alderen biter ikke på henne",
+		"definition": "Hun ser ikke eldre ut selv om årene går.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "kloss ved",
+		"lemma": "kloss ved",
+		"definition": "Like inntil eller nær noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å skyte i været",
+		"lemma": "skyte i været",
+		"definition": "Å vokse fort og bli høy på kort tid.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å bukte seg",
+		"lemma": "bukte seg",
+		"definition": "Å slynge seg eller gå i svinger.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å vokte seg vel for",
+		"lemma": "vokte seg vel for",
+		"definition": "Å passe seg for noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "med lua på snei",
+		"lemma": "med lua på snei",
+		"definition": "Med lua på skrå, ikke rett på hodet.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å brase inn",
+		"lemma": "brase inn",
+		"definition": "Å gå rett inn i full fart.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "uten nærmere overveielse (en)",
+		"lemma": "uten nærmere overveielse",
+		"definition": "Uten å tenke nærmere over saken.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å kverne rundt i hodet",
+		"lemma": "kverne rundt i hodet",
+		"definition": "Når man tenker de samme tankene om igjen og igjen, kverner det rundt i hodet.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å skvette til",
+		"lemma": "skvette til",
+		"definition": "Å rykke til eller bevege seg plutselig fordi man blir redd eller overrasket.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å bli tatt på fersken",
+		"lemma": "bli tatt på fersken",
+		"definition": "Å bli oppdaget mens man gjør noe man vil skjule for andre.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "skamrødmen melder seg",
+		"lemma": "skamrødmen melder seg",
+		"definition": "Når man blir veldig flau, kan skamrødmen melde seg, og man blir rød i ansiktet.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gi til kjenne",
+		"lemma": "gi til kjenne",
+		"definition": "Å vise noe åpent fram.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å komme som sendt fra oven",
+		"lemma": "komme som sendt fra oven",
+		"definition": "Å komme som en himmelens eller Guds gave.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å riste av seg befippelsen",
+		"lemma": "riste av seg befippelsen",
+		"definition": "Å bli kvitt eller få bort følelsen av å være overrasket og overveldet.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "fiskelykken står dem bi",
+		"lemma": "fiskelykken står dem bi",
+		"definition": "Fiskelykken er med dem, og de får fisk.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sige på",
+		"lemma": "sige på",
+		"definition": "Å komme litt etter litt, ofte i stor mengde.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sanse seg",
+		"lemma": "sanse seg",
+		"definition": "Å komme til seg selv igjen og bli klar i hodet.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å stille opp med",
+		"lemma": "stille opp med",
+		"definition": "Å komme med noe, eller å bidra med noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å hagle med skjellsord (et)",
+		"lemma": "hagle med skjellsord",
+		"definition": "Når det hagler med skjellsord, kommer det mange kritiske og sinte ord om noen.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å stramme en skrue",
+		"lemma": "stramme en skrue",
+		"definition": "Å få en skrue til å sitte bedre eller være mer fast.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta seg av",
+		"lemma": "ta seg av",
+		"definition": "Å passe på noen eller noe.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "det går ham på nervene",
+		"lemma": "det går ham på nervene",
+		"definition": "Det gjør ham irritabel.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å få gjennomgå",
+		"lemma": "få gjennomgå",
+		"definition": "Å bli kritisert eller bli utsatt for fysisk vold.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å få endene til å møtes",
+		"lemma": "få endene til å møtes",
+		"definition": "Å klare seg økonomisk.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å jobbe livet av seg",
+		"lemma": "jobbe livet av seg",
+		"definition": "Å jobbe altfor mye.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "langt inne i granskauen",
+		"lemma": "langt inne i granskauen",
+		"definition": "Avsides, langt borte fra steder der det bor folk.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gå i seg selv",
+		"lemma": "gå i seg selv",
+		"definition": "Å reflektere over egne handlinger.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å åle seg",
+		"lemma": "åle seg",
+		"definition": "Å bukte seg framover, eller å kravle.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sige nedover",
+		"lemma": "sige nedover",
+		"definition": "Å gli nedover, eller å synke.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gi etter",
+		"lemma": "gi etter",
+		"definition": "Å synke ned eller ikke holde; isen ødelegges når den gir etter.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "isen holder",
+		"lemma": "isen holder",
+		"definition": "Isen ødelegges ikke; den tåler vekten.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å bukte seg",
+		"lemma": "bukte seg",
+		"definition": "Å åle seg.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "isen svikter",
+		"lemma": "isen svikter",
+		"definition": "Isen gir etter; isen ødelegges og tåler ikke vekten.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sno seg",
+		"lemma": "sno seg",
+		"definition": "Å bukte seg, eller å åle seg.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "isen bærer",
+		"lemma": "isen bærer",
+		"definition": "Isen holder; den tåler vekten.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å kare seg fram",
+		"lemma": "kare seg fram",
+		"definition": "Å bevege seg langsomt og med vanskeligheter framover.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å lesse på",
+		"lemma": "lesse på",
+		"definition": "Å legge på mye, eller å legge på et lass.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å virvle seg inn i en spiral",
+		"lemma": "virvle seg inn i en spiral",
+		"definition": "Å komme inn i en negativ retning som det er vanskelig å komme seg ut av.",
+		"level": "C",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+  {
+    "id": "",
+    "norsk": "å klamre seg til",
+    "lemma": "klamre seg til",
+    "definition": "Å holde seg fast i noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å legge sitt liv på vektskålen",
+    "lemma": "legge sitt liv på vektskålen",
+    "definition": "Å evaluere sitt eget liv og sin egen rolle.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "gjøren og laden",
+    "lemma": "gjøren og laden",
+    "definition": "Alt en gjør og alt en lar være å gjøre, altså ens oppførsel.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gå seg selv etter i sømmene",
+    "lemma": "gå seg selv etter i sømmene",
+    "definition": "Å undersøke seg selv og se på seg selv med et kritisk blikk.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "Gjertruds mann fulgte på",
+    "lemma": "Gjertruds mann fulgte på",
+    "definition": "Gjertruds mann døde kort tid etterpå.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å vandre heden",
+    "lemma": "vandre heden",
+    "definition": "Å dø.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ha blått blod i årene",
+    "lemma": "ha blått blod i årene",
+    "definition": "Å være av kongelig eller adelig slekt.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å smatte med tungen",
+    "lemma": "smatte med tungen",
+    "definition": "Å lage en smellende lyd med tungen, brukt som uttrykk for skepsis eller en fordømmende holdning.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å knipe sammen",
+    "lemma": "knipe sammen",
+    "definition": "Å presse sammen.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "ordene hagler",
+    "lemma": "ordene hagler",
+    "definition": "Når sinte ord kommer fort og ubehagelig.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å knytte nevene",
+    "lemma": "knytte nevene",
+    "definition": "Å lukke og stramme hendene.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å holde pusten",
+    "lemma": "holde pusten",
+    "definition": "Å la være å puste.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i mils omkrets",
+    "lemma": "i mils omkrets",
+    "definition": "Et stort område.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ta affære",
+    "lemma": "ta affære",
+    "definition": "Å gjøre noe aktivt; å gripe inn.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å forskanse seg",
+    "lemma": "forskanse seg",
+    "definition": "Å gå i dekning; å beskytte seg.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gjøre seg gjeldende",
+    "lemma": "gjøre seg gjeldende",
+    "definition": "Å bli lagt merke til; å hevde seg.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "med strev og møye",
+    "lemma": "med strev og møye",
+    "definition": "Med vanskeligheter og utfordringer.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bane seg fram",
+    "lemma": "bane seg fram",
+    "definition": "Å lage seg en vei fram; å finne seg en vei selv om det finnes hindringer.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "fra sans og samling",
+    "lemma": "fra sans og samling",
+    "definition": "Nesten uten bevissthet.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å skratte i vilden sky",
+    "lemma": "skratte i vilden sky",
+    "definition": "Å le eller skråle høyt, kanskje litt skjærende og ubehagelig.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ta overhånd",
+    "lemma": "ta overhånd",
+    "definition": "Å bli rådende; å få overmakt.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "hensunket i seg selv",
+    "lemma": "hensunket i seg selv",
+    "definition": "Å være fordypet i egne tanker.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å krible etter",
+    "lemma": "krible etter",
+    "definition": "Å vente på noe og glede seg til noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å låne øre til",
+    "lemma": "låne øre til",
+    "definition": "Å høre velvillig på noen.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å tygge på ordene",
+    "lemma": "tygge på ordene",
+    "definition": "Å tenke nøye gjennom det som sies.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å forstå noe til bunns",
+    "lemma": "forstå noe til bunns",
+    "definition": "Å forstå noe på et dypt plan, ikke bare overfladisk.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å late til å",
+    "lemma": "late til å",
+    "definition": "Å se ut til å.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "når det kommer til stykket",
+    "lemma": "når det kommer til stykket",
+    "definition": "Når alt kommer til alt; når det virkelig gjelder.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "kraftsalver brer om seg",
+    "lemma": "kraftsalver brer om seg",
+    "definition": "Sinte ord eller banneord faller.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å være sugen på",
+    "lemma": "være sugen på",
+    "definition": "Å ha lyst på noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å besinne seg",
+    "lemma": "besinne seg",
+    "definition": "Å tenke seg om; å kontrollere seg.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å le kneggende",
+    "lemma": "le kneggende",
+    "definition": "Å le med en spesiell latter, som en hest.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å kyle noe i veggen",
+    "lemma": "kyle noe i veggen",
+    "definition": "Å kaste noe hardt i veggen.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bli ertet",
+    "lemma": "bli ertet",
+    "definition": "Å bli plaget eller terget.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å være tom for kjekke ord",
+    "lemma": "være tom for kjekke ord",
+    "definition": "Når man ikke klarer å være tøff eller frekk lenger, er man tom for kjekke ord.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å forplante seg",
+    "lemma": "forplante seg",
+    "definition": "Å spre seg.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å skvette til",
+    "lemma": "skvette til",
+    "definition": "Å rykke til med kroppen fordi man blir litt skremt.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å grafse til seg",
+    "lemma": "grafse til seg",
+    "definition": "Å ta grådig for seg; å ta for mye til seg selv uten å dele med andre.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å leve i fred og fordragelighet",
+    "lemma": "leve i fred og fordragelighet",
+    "definition": "Å leve uten å være i konflikt med andre.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "fra høyere hold",
+    "lemma": "fra høyere hold",
+    "definition": "Fra noen med makt høyere oppe i samfunnshierarkiet.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bli var",
+    "lemma": "bli var",
+    "definition": "Å bli oppmerksom på noe; å bli klar over noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å forsvinne i løse luften",
+    "lemma": "forsvinne i løse luften",
+    "definition": "Å forsvinne sporløst eller plutselig.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å stikke noe til noen",
+    "lemma": "stikke noe til noen",
+    "definition": "Å gi noen noe, raskt og kanskje litt skjult.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ta seg i å lure på noe",
+    "lemma": "ta seg i å lure på noe",
+    "definition": "Å merke at man lurer på noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "klok av skade",
+    "lemma": "klok av skade",
+    "definition": "Når man er klok av skade, har man hatt dårlige erfaringer tidligere og lært av disse.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å vokte seg vel",
+    "lemma": "vokte seg vel",
+    "definition": "Å passe seg godt for noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "rakt ut",
+    "lemma": "rakt ut",
+    "definition": "Direkte.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i samme slengen",
+    "lemma": "i samme slengen",
+    "definition": "Samtidig.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "nervene løper løpsk",
+    "lemma": "nervene løper løpsk",
+    "definition": "Nervene kommer ut av kontroll.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "ikke før",
+    "lemma": "ikke før",
+    "definition": "Akkurat i det øyeblikket.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å være ute av seg",
+    "lemma": "være ute av seg",
+    "definition": "Å være frustrert og lei seg.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å kvekke til",
+    "lemma": "kvekke til",
+    "definition": "Å støkke; å bevege kroppen plutselig fordi man blir redd.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å feste seg ved noe",
+    "lemma": "feste seg ved noe",
+    "definition": "Å legge merke til noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i villrede",
+    "lemma": "i villrede",
+    "definition": "Usikker.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å dra kjensel på",
+    "lemma": "dra kjensel på",
+    "definition": "Å kjenne igjen.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å sitte som spikret",
+    "lemma": "sitte som spikret",
+    "definition": "Å sitte helt fast.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "man kan høre en knappenål falle",
+    "lemma": "man kan høre en knappenål falle",
+    "definition": "Uttrykk som brukes for å uttrykke at det er svært stille.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å hviske og tiske",
+    "lemma": "hviske og tiske",
+    "definition": "Å snakke lavt og ivrig sammen.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å holde styr på",
+    "lemma": "holde styr på",
+    "definition": "Å holde kontroll på; å ha oversikt over.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å segne om",
+    "lemma": "segne om",
+    "definition": "Å sige sammen; å falle rett ned.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å la skole være skole",
+    "lemma": "la skole være skole",
+    "definition": "Å ikke legge vekt på skolen; å glemme skolen litt.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å betro seg til",
+    "lemma": "betro seg til",
+    "definition": "Å åpne seg for noen og fortelle om sine innerste tanker.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gjøre opprør",
+    "lemma": "gjøre opprør",
+    "definition": "Å markere motstand mot myndigheter eller andre makthavere, som kan være voldelig.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gjøre seg flid med noe",
+    "lemma": "gjøre seg flid med noe",
+    "definition": "Å jobbe hardt med noe.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "med rubb og rake",
+    "lemma": "med rubb og rake",
+    "definition": "Alt; hver eneste smule.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "det går i ett",
+    "lemma": "det går i ett",
+    "definition": "Alt skjer uten pause.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å synes synd på noen",
+    "lemma": "synes synd på noen",
+    "definition": "Å føle medlidenhet med noen.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å lirke inn",
+    "lemma": "lirke inn",
+    "definition": "Å prøve å få det slik en vil, litt etter litt.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "selv den skarpeste",
+    "lemma": "selv den skarpeste",
+    "definition": "Til og med den mest intelligente.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ta fyr",
+    "lemma": "ta fyr",
+    "definition": "å miste kontrollen, eller å begynne å brenne.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "propellen er i gang",
+    "lemma": "propellen er i gang",
+    "definition": "prosessen har startet.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å tylle i seg",
+    "lemma": "tylle i seg",
+    "definition": "Å drikke grådig.",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  }
+]

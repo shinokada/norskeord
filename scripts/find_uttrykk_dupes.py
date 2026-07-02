@@ -22,6 +22,7 @@ files = {
     'B1': os.path.join(base, 'uttrykk-b1.json'),
     'B2': os.path.join(base, 'uttrykk-b2.json'),
     'C': os.path.join(base, 'uttrykk-c.json'),
+    'C-draft': os.path.join(project_root, 'draft', 'c', 'uttrykk-c-new.json'),
 }
 
 data_by_file = {}
