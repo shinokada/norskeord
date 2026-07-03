@@ -35,6 +35,13 @@
  *   node scripts/check-vocab.mjs a1        # check only vocab-a1.json
  *   node scripts/check-vocab.mjs a1 a2     # check multiple levels
  *   node scripts/check-vocab.mjs --strict  # exit 1 if any errors found
+ *   node scripts/check-vocab.mjs --draft    # check draft/{level}/vocab-{level}-new.json instead
+ *   node scripts/check-vocab.mjs c --draft  # check only draft/c/vocab-c-new.json
+ *
+ * --draft mode (Step 3B in work-flow.md, run BEFORE Step 4 assigns real IDs):
+ *   - Reads draft/{level}/vocab-{level}-new.json instead of src/lib/data/vocab-{level}.json
+ *   - Entries with id === "" are expected (IDs aren't assigned until Step 4) and are not
+ *     flagged as errors; a non-empty id is still validated against the normal ID format.
  */
 
 import { readFileSync } from 'fs';
@@ -43,6 +50,7 @@ import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../src/lib/data');
+const DRAFT_DIR = join(__dirname, '../draft');
 
 // ── Config (mirrors config.ts) ────────────────────────────────────────────────
 
@@ -192,7 +200,16 @@ const CATEGORIES_BY_LEVEL = {
     'climate-environment-policy',
     'sociology-anthropology',
     'advanced-business-strategy',
-    'existential-abstract'
+    'existential-abstract',
+    'nature-landscape',
+    'sensory-sound',
+    'physical-appearance',
+    'everyday-objects',
+    'character-temperament',
+    'embodied-emotion',
+    'manner-of-motion',
+    'interpersonal-conflict',
+    'intensifiers-degree'
   ]
 };
 
@@ -243,6 +260,7 @@ const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c'];
 
 const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const STRICT = process.argv.includes('--strict');
+const DRAFT = process.argv.includes('--draft');
 const targetLevels = args.length > 0 ? args.map((a) => a.toLowerCase()) : LEVELS;
 
 // ── Validators ────────────────────────────────────────────────────────────────
@@ -341,11 +359,16 @@ const globalIds = new Map(); // id → filename
 for (const level of LEVELS) {
   if (!targetLevels.includes(level)) continue;
 
-  const filename = `vocab-${level}.json`;
+  const filename = DRAFT ? `vocab-${level}-new.json` : `vocab-${level}.json`;
+  const filepath = DRAFT ? join(DRAFT_DIR, level, filename) : join(DATA_DIR, filename);
   let entries;
   try {
-    entries = JSON.parse(readFileSync(join(DATA_DIR, filename), 'utf8'));
+    entries = JSON.parse(readFileSync(filepath, 'utf8'));
   } catch (err) {
+    if (DRAFT && err.code === 'ENOENT') {
+      console.log(`\n⏭️   ${filename} not found — skipping`);
+      continue;
+    }
     console.error(`❌  Could not read ${filename}: ${err.message}`);
     totalErrors++;
     continue;
@@ -354,6 +377,7 @@ for (const level of LEVELS) {
   const validCats = new Set(CATEGORIES_BY_LEVEL[level]);
   let fileErrors = 0;
   let fileWarnings = 0;
+  let unassignedIdCount = 0;
 
   console.log(`\n${'─'.repeat(60)}`);
   console.log(`📄  ${filename}  (${entries.length} entries)`);
@@ -379,6 +403,10 @@ for (const level of LEVELS) {
       } else {
         globalIds.set(entry.id, filename);
       }
+    } else if (DRAFT) {
+      // Draft entries are expected to have id: "" until Step 4 assigns real IDs —
+      // counted below and reported once per file instead of once per entry.
+      unassignedIdCount++;
     } else {
       errs.push('missing id field');
     }
@@ -456,6 +484,12 @@ for (const level of LEVELS) {
         }
       }
     }
+  }
+
+  if (unassignedIdCount > 0) {
+    console.log(
+      `\n  ℹ️   ${unassignedIdCount} entry(ies) have id: "" (expected pre-Step 4, not counted as errors)`
+    );
   }
 
   const status = fileErrors === 0 ? '✅' : '❌';
