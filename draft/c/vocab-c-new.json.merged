@@ -1,6 +1,6 @@
 [
   {
-    "id": "",
+    "id": "v-c-everyday-objects-001",
     "norsk": "nellikspiker (en)",
     "lemma": "nellikspiker",
     "english": "clove (the spice, shaped like a small nail)",
@@ -18,7 +18,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-001",
     "norsk": "å sitre",
     "lemma": "sitre",
     "english": "to tremble, to quiver",
@@ -36,7 +36,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-002",
     "norsk": "kribling (en/ei)",
     "lemma": "kribling",
     "english": "tingling, prickling sensation",
@@ -54,7 +54,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-011",
     "norsk": "forestående",
     "lemma": "forestående",
     "english": "imminent, upcoming, impending",
@@ -72,7 +72,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-001",
     "norsk": "slede (en)",
     "lemma": "slede",
     "english": "sled, sledge",
@@ -90,7 +90,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-002",
     "norsk": "himmelhvelving (en/ei)",
     "lemma": "himmelhvelving",
     "english": "vault of the sky, celestial dome, firmament",
@@ -108,7 +108,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-003",
     "norsk": "vrimmel (en)",
     "lemma": "vrimmel",
     "english": "swarm, throng, multitude",
@@ -126,7 +126,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-001",
     "norsk": "å funkle",
     "lemma": "funkle",
     "english": "to sparkle, to glitter, to twinkle",
@@ -144,7 +144,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-002",
     "norsk": "knakende",
     "lemma": "knakende",
     "english": "cracking, creaking",
@@ -162,7 +162,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-004",
     "norsk": "bugnende",
     "lemma": "bugnende",
     "english": "overflowing, brimming, abundantly full",
@@ -180,7 +180,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-003",
     "norsk": "å kime",
     "lemma": "kime",
     "english": "to ring loudly and continuously",
@@ -198,7 +198,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-medicine-healthcare-001",
     "norsk": "verkende",
     "lemma": "verkende",
     "english": "aching; sore from wear or inflammation",
@@ -216,7 +216,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-003",
     "norsk": "snikende",
     "lemma": "snikende",
     "english": "creeping; developing gradually and almost imperceptibly",
@@ -234,7 +234,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-001",
     "norsk": "merkverdig",
     "lemma": "merkverdig",
     "english": "remarkable; strange; peculiar",
@@ -252,7 +252,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-001",
     "norsk": "villmann (en)",
     "lemma": "villmann",
     "english": "brute; a brutal and reckless person with no self-control",
@@ -270,7 +270,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-001",
     "norsk": "jommen",
     "lemma": "jommen",
     "english": "why, indeed; used to emphasize something one is saying",
@@ -288,7 +288,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-005",
     "norsk": "å piple",
     "lemma": "piple",
     "english": "to seep; to trickle out little by little",
@@ -306,7 +306,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-architecture-design-005",
     "norsk": "spir (et)",
     "lemma": "spir",
     "english": "spire; the pointed top of a tower",
@@ -324,7 +324,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-002",
     "norsk": "raknet",
     "lemma": "raknet",
     "english": "unraveled; fallen apart (of fabric or a plan)",
@@ -342,7 +342,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-001",
     "norsk": "å luske",
     "lemma": "luske",
     "english": "to sneak; to move quietly and carefully so as not to be noticed",
@@ -360,7 +360,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-003",
     "norsk": "rampe (en/ei)",
     "lemma": "rampe",
     "english": "ramp",
@@ -378,7 +378,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-001",
     "norsk": "stri",
     "lemma": "stri",
     "english": "wiry; bristly (of hair: stiff and sticking out)",
@@ -396,7 +396,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-002",
     "norsk": "fyldig",
     "lemma": "fyldig",
     "english": "full; full-lipped (of a mouth: round and large)",
@@ -414,7 +414,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-002",
     "norsk": "uforlignelig",
     "lemma": "uforlignelig",
     "english": "incomparable; matchless; without equal",
@@ -432,7 +432,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-004",
     "norsk": "overdel (en)",
     "lemma": "overdel",
     "english": "top; upper garment (e.g. a sweater or T-shirt)",
@@ -450,7 +450,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-002",
     "norsk": "sart",
     "lemma": "sart",
     "english": "sensitive; delicate; highly perceptive",
@@ -468,7 +468,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-003",
     "norsk": "uvøren",
     "lemma": "uvøren",
     "english": "careless; reckless",
@@ -486,7 +486,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-technical-022",
     "norsk": "innsatt",
     "lemma": "innsatt",
     "english": "inserted; placed; set in",
@@ -504,7 +504,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-005",
     "norsk": "gissel (et)",
     "lemma": "gissel",
     "english": "hostage",
@@ -522,7 +522,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-medicine-healthcare-002",
     "norsk": "kuvøse (en/ei)",
     "lemma": "kuvøse",
     "english": "incubator (for premature or sick newborns)",
@@ -540,7 +540,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-professional-016",
     "norsk": "forstander (en)",
     "lemma": "forstander",
     "english": "superintendent; headmaster",
@@ -558,7 +558,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-linguistics-001",
     "norsk": "vag",
     "lemma": "vag",
     "english": "vague; faint",
@@ -576,7 +576,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-003",
     "norsk": "forbløffende",
     "lemma": "forbløffende",
     "english": "astonishing; incredible",
@@ -594,7 +594,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-004",
     "norsk": "utvisket",
     "lemma": "utvisket",
     "english": "erased; faded (of memories that have almost disappeared)",
@@ -612,7 +612,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-022",
     "norsk": "å blekne",
     "lemma": "blekne",
     "english": "to fade; to lose color",
@@ -630,7 +630,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-literary-018",
     "norsk": "å fabulere",
     "lemma": "fabulere",
     "english": "to fantasize; to make up stories",
@@ -648,7 +648,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-012",
     "norsk": "å omkomme",
     "lemma": "omkomme",
     "english": "to perish; to die (formal)",
@@ -666,7 +666,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-002",
     "norsk": "å mukke",
     "lemma": "mukke",
     "english": "to grumble; to protest; to object",
@@ -684,7 +684,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-003",
     "norsk": "munnvik (en/ei)",
     "lemma": "munnvik",
     "english": "corner of the mouth",
@@ -702,7 +702,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-002",
     "norsk": "haltende",
     "lemma": "haltende",
     "english": "limping",
@@ -720,7 +720,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-literary-019",
     "norsk": "å utbryte",
     "lemma": "utbryte",
     "english": "to exclaim",
@@ -738,7 +738,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-005",
     "norsk": "å smette",
     "lemma": "smette",
     "english": "to slip (something quickly into something)",
@@ -756,7 +756,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-006",
     "norsk": "lisse (en/ei)",
     "lemma": "lisse",
     "english": "lace (as in shoelace)",
@@ -774,7 +774,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-007",
     "norsk": "parkdress (en)",
     "lemma": "parkdress",
     "english": "snowsuit (a one-piece outdoor garment for children)",
@@ -792,7 +792,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-004",
     "norsk": "spjærende",
     "lemma": "spjærende",
     "english": "tearing (describing the sound or action of fabric ripping)",
@@ -810,7 +810,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-018",
     "norsk": "flengende",
     "lemma": "flengende",
     "english": "scathing",
@@ -828,7 +828,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-004",
     "norsk": "rift (en/ei)",
     "lemma": "rift",
     "english": "a tear or rip (in fabric or material)",
@@ -846,7 +846,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-003",
     "norsk": "rykk (et)",
     "lemma": "rykk",
     "english": "jerk; tug; sudden movement",
@@ -864,7 +864,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-008",
     "norsk": "viser (en)",
     "lemma": "viser",
     "english": "hand; pointer (on a clock or gauge)",
@@ -882,7 +882,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-005",
     "norsk": "svidd",
     "lemma": "svidd",
     "english": "singed; scorched; burnt",
@@ -900,7 +900,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-004",
     "norsk": "hardhendt",
     "lemma": "hardhendt",
     "english": "heavy-handed; rough; reckless",
@@ -918,7 +918,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-004",
     "norsk": "å fyke",
     "lemma": "fyke",
     "english": "to rush; to dart; to race",
@@ -936,7 +936,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-005",
     "norsk": "trassalder (en)",
     "lemma": "trassalder",
     "english": "the terrible twos; toddler defiance stage",
@@ -954,7 +954,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-009",
     "norsk": "innmat (en)",
     "lemma": "innmat",
     "english": "filling; stuffing; inner material (of a cushion, sofa, etc.)",
@@ -972,7 +972,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-010",
     "norsk": "bryter (en)",
     "lemma": "bryter",
     "english": "switch; light switch",
@@ -990,7 +990,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-005",
     "norsk": "fregne (en/ei)",
     "lemma": "fregne",
     "english": "freckle",
@@ -1008,7 +1008,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-006",
     "norsk": "oppstoppernese (en/ei)",
     "lemma": "oppstoppernese",
     "english": "turned-up nose; snub nose",
@@ -1026,7 +1026,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-007",
     "norsk": "silkebløt",
     "lemma": "silkebløt",
     "english": "silky soft, as soft as silk",
@@ -1044,7 +1044,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-medicine-healthcare-003",
     "norsk": "føflekk (en)",
     "lemma": "føflekk",
     "english": "mole (a brown spot on the skin)",
@@ -1062,7 +1062,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-003",
     "norsk": "søkk (et)",
     "lemma": "søkk",
     "english": "a sinking feeling, a jolt of dread in the body",
@@ -1080,7 +1080,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-005",
     "norsk": "å duppe",
     "lemma": "duppe",
     "english": "to bob, to move gently up and down",
@@ -1098,7 +1098,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-006",
     "norsk": "kai (en/ei)",
     "lemma": "kai",
     "english": "quay, wharf, dock",
@@ -1116,7 +1116,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-007",
     "norsk": "fjære (en/ei)",
     "lemma": "fjære",
     "english": "foreshore, tidal flat (the part of a beach exposed at low tide)",
@@ -1134,7 +1134,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-011",
     "norsk": "tofte (en/ei)",
     "lemma": "tofte",
     "english": "thwart (a cross-seat in a rowing boat)",
@@ -1152,7 +1152,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-008",
     "norsk": "lyslugget",
     "lemma": "lyslugget",
     "english": "fair-haired with hair falling over the forehead, blond-fringed",
@@ -1170,7 +1170,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-008",
     "norsk": "skrent (en)",
     "lemma": "skrent",
     "english": "steep slope, cliff face, escarpment",
@@ -1188,7 +1188,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-009",
     "norsk": "mold (en/ei)",
     "lemma": "mold",
     "english": "soil, earth, topsoil",
@@ -1206,7 +1206,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-012",
     "norsk": "sjøstøvel (en)",
     "lemma": "sjøstøvel",
     "english": "sea boot; long rubber boot",
@@ -1224,7 +1224,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-006",
     "norsk": "gnissende",
     "lemma": "gnissende",
     "english": "grating; scraping; grinding",
@@ -1242,7 +1242,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-007",
     "norsk": "dunk (et)",
     "lemma": "dunk",
     "english": "thud; knock; sound of something heavy falling",
@@ -1260,7 +1260,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-010",
     "norsk": "overstrødd",
     "lemma": "overstrødd",
     "english": "strewn all over; covered; scattered across",
@@ -1278,7 +1278,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-011",
     "norsk": "måkelort (en)",
     "lemma": "måkelort",
     "english": "seagull droppings",
@@ -1296,7 +1296,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-013",
     "norsk": "tjære (en/ei)",
     "lemma": "tjære",
     "english": "tar",
@@ -1314,7 +1314,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-012",
     "norsk": "sund (et)",
     "lemma": "sund",
     "english": "sound; strait; narrow channel of water",
@@ -1332,7 +1332,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-013",
     "norsk": "blikkstille",
     "lemma": "blikkstille",
     "english": "perfectly still; dead calm; glassy calm",
@@ -1350,7 +1350,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-009",
     "norsk": "hes",
     "lemma": "hes",
     "english": "hoarse; husky; raspy",
@@ -1368,7 +1368,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-005",
     "norsk": "egenartet",
     "lemma": "egenartet",
     "english": "distinctive; peculiar; unique in character",
@@ -1386,7 +1386,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-008",
     "norsk": "skrål (et)",
     "lemma": "skrål",
     "english": "screech; loud cries",
@@ -1404,7 +1404,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-006",
     "norsk": "taktfast",
     "lemma": "taktfast",
     "english": "rhythmic; moving in a steady beat or rhythm",
@@ -1422,7 +1422,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-014",
     "norsk": "vannskorpe (en/ei)",
     "lemma": "vannskorpe",
     "english": "water surface; the top surface of water",
@@ -1440,7 +1440,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-010",
     "norsk": "værbitt",
     "lemma": "værbitt",
     "english": "weathered; marked by wind and harsh weather",
@@ -1458,7 +1458,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-014",
     "norsk": "lær (et)",
     "lemma": "lær",
     "english": "leather; hide from a thick-skinned animal",
@@ -1476,7 +1476,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-015",
     "norsk": "blest (en)",
     "lemma": "blest",
     "english": "breeze; gust of wind",
@@ -1494,7 +1494,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-004",
     "norsk": "umåtelig",
     "lemma": "umåtelig",
     "english": "immensely; enormously; to a tremendous degree",
@@ -1512,7 +1512,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-011",
     "norsk": "dun (et)",
     "lemma": "dun",
     "english": "down; thin, soft hair or feathers",
@@ -1530,7 +1530,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-016",
     "norsk": "knaus (en)",
     "lemma": "knaus",
     "english": "rocky knoll; rounded rocky outcrop on a small hill or mountain",
@@ -1548,7 +1548,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-017",
     "norsk": "knatt (en)",
     "lemma": "knatt",
     "english": "rocky knoll; small rocky hillock",
@@ -1566,7 +1566,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-018",
     "norsk": "bukt (en/ei)",
     "lemma": "bukt",
     "english": "bay; inlet",
@@ -1584,7 +1584,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-015",
     "norsk": "tram (en)",
     "lemma": "tram",
     "english": "front doorstep; stoop",
@@ -1602,7 +1602,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-004",
     "norsk": "fortumlet",
     "lemma": "fortumlet",
     "english": "dazed; bewildered; confused",
@@ -1620,7 +1620,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-005",
     "norsk": "snau",
     "lemma": "snau",
     "english": "bare; scant; barely enough",
@@ -1638,7 +1638,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-003",
     "norsk": "overrumplet",
     "lemma": "overrumplet",
     "english": "caught off guard; taken by surprise",
@@ -1656,7 +1656,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-006",
     "norsk": "overstrømmende",
     "lemma": "overstrømmende",
     "english": "effusive; gushing; overwhelmingly enthusiastic",
@@ -1674,7 +1674,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-011",
     "norsk": "å særprege",
     "lemma": "særprege",
     "english": "to characterize; to be distinctive of; to mark as unique",
@@ -1692,7 +1692,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-013",
     "norsk": "å vedgå",
     "lemma": "vedgå",
     "english": "to admit; to acknowledge; to confess",
@@ -1710,7 +1710,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-016",
     "norsk": "nytrukket",
     "lemma": "nytrukket",
     "english": "freshly brewed",
@@ -1728,7 +1728,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-006",
     "norsk": "uovertruffen",
     "lemma": "uovertruffen",
     "english": "unrivalled",
@@ -1746,7 +1746,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-012",
     "norsk": "uvurderlig",
     "lemma": "uvurderlig",
     "english": "invaluable",
@@ -1764,7 +1764,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-007",
     "norsk": "drøy",
     "lemma": "drøy",
     "english": "a good (more than), just over",
@@ -1782,7 +1782,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-019",
     "norsk": "skue (et)",
     "lemma": "skue",
     "english": "vista, panoramic view",
@@ -1800,7 +1800,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-005",
     "norsk": "overveldende",
     "lemma": "overveldende",
     "english": "overwhelming",
@@ -1818,7 +1818,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-020",
     "norsk": "utilslørt",
     "lemma": "utilslørt",
     "english": "unveiled, exposed, bare",
@@ -1836,7 +1836,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-021",
     "norsk": "å omslutte",
     "lemma": "omslutte",
     "english": "to enclose; to surround on all sides",
@@ -1854,7 +1854,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-008",
     "norsk": "tiltakende",
     "lemma": "tiltakende",
     "english": "growing; increasing",
@@ -1872,7 +1872,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-linguistics-002",
     "norsk": "ed (en)",
     "lemma": "ed",
     "english": "swear word; profanity",
@@ -1890,7 +1890,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-literary-020",
     "norsk": "forbannelse (en)",
     "lemma": "forbannelse",
     "english": "curse; heavy fate; misfortune",
@@ -1908,7 +1908,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-004",
     "norsk": "å bebreide",
     "lemma": "bebreide",
     "english": "to blame; to reproach; to criticize",
@@ -1926,7 +1926,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-007",
     "norsk": "å måke",
     "lemma": "måke",
     "english": "to shovel; to clear snow",
@@ -1944,7 +1944,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-architecture-design-006",
     "norsk": "takrenne (en/ei)",
     "lemma": "takrenne",
     "english": "gutter; roof gutter",
@@ -1962,7 +1962,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-017",
     "norsk": "list (en/ei)",
     "lemma": "list",
     "english": "molding; trim strip; a long narrow piece of wood used between floor and wall or wall and ceiling",
@@ -1980,7 +1980,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-006",
     "norsk": "belastning (en/ei)",
     "lemma": "belastning",
     "english": "burden; strain; load",
@@ -1998,7 +1998,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-006",
     "norsk": "fortvilt",
     "lemma": "fortvilt",
     "english": "desperate; hopeless",
@@ -2016,7 +2016,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-005",
     "norsk": "syting (en/ei)",
     "lemma": "syting",
     "english": "whining, complaining",
@@ -2034,7 +2034,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-006",
     "norsk": "skjelling (en/ei)",
     "lemma": "skjelling",
     "english": "scolding, telling off",
@@ -2052,7 +2052,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-007",
     "norsk": "smelling (en/ei)",
     "lemma": "smelling",
     "english": "scolding, dressing-down",
@@ -2070,7 +2070,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-007",
     "norsk": "kav (et)",
     "lemma": "kav",
     "english": "toil, fuss, hustle",
@@ -2088,7 +2088,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-019",
     "norsk": "å parere",
     "lemma": "parere",
     "english": "to parry, to deflect, to counter",
@@ -2106,7 +2106,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-022",
     "norsk": "utpost (en)",
     "lemma": "utpost",
     "english": "outpost, remote location",
@@ -2124,7 +2124,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-007",
     "norsk": "pliktoppfyllende",
     "lemma": "pliktoppfyllende",
     "english": "dutiful, conscientious, responsible",
@@ -2142,7 +2142,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-highly-formal-020",
     "norsk": "å forlange",
     "lemma": "forlange",
     "english": "to demand, to insist on",
@@ -2160,7 +2160,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-023",
     "norsk": "selvmedlidenhet (en/ei)",
     "lemma": "selvmedlidenhet",
     "english": "self-pity",
@@ -2178,7 +2178,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-023",
     "norsk": "avsides",
     "lemma": "avsides",
     "english": "remote, out-of-the-way",
@@ -2196,7 +2196,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-008",
     "norsk": "henrykt",
     "lemma": "henrykt",
     "english": "delighted, enraptured",
@@ -2214,7 +2214,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-018",
     "norsk": "å helle",
     "lemma": "helle",
     "english": "to pour (out), to empty",
@@ -2232,7 +2232,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-008",
     "norsk": "å forgude",
     "lemma": "forgude",
     "english": "to idolize, to worship, to adore",
@@ -2250,7 +2250,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-006",
     "norsk": "beskyldning (en/ei)",
     "lemma": "beskyldning",
     "english": "accusation, allegation",
@@ -2268,7 +2268,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-009",
     "norsk": "bebreidelse (en)",
     "lemma": "bebreidelse",
     "english": "reproach, rebuke, blame",
@@ -2286,7 +2286,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-024",
     "norsk": "islagt",
     "lemma": "islagt",
     "english": "ice-covered, frozen over",
@@ -2304,7 +2304,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-009",
     "norsk": "opphisselse (en)",
     "lemma": "opphisselse",
     "english": "agitation, anger, excitement",
@@ -2322,7 +2322,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-010",
     "norsk": "å kave",
     "lemma": "kave",
     "english": "to struggle; to strive",
@@ -2340,7 +2340,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-011",
     "norsk": "utmattet",
     "lemma": "utmattet",
     "english": "exhausted; utterly worn out",
@@ -2358,7 +2358,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-008",
     "norsk": "å lene",
     "lemma": "lene",
     "english": "to lean; to rest against something for support",
@@ -2376,7 +2376,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-019",
     "norsk": "å frottere",
     "lemma": "frottere",
     "english": "to rub; to towel dry by rubbing",
@@ -2394,7 +2394,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-025",
     "norsk": "kuling (en)",
     "lemma": "kuling",
     "english": "gale; strong wind",
@@ -2412,7 +2412,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-009",
     "norsk": "å slynges",
     "lemma": "slynges",
     "english": "to be flung; to be hurled",
@@ -2430,7 +2430,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-009",
     "norsk": "å gjalle",
     "lemma": "gjalle",
     "english": "to resound; to ring out; to echo loudly",
@@ -2448,7 +2448,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-026",
     "norsk": "skumsprøyt (en)",
     "lemma": "skumsprøyt",
     "english": "sea spray; white foam spraying from waves",
@@ -2466,7 +2466,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-008",
     "norsk": "grådig",
     "lemma": "grådig",
     "english": "greedy; avaricious; wanting a great deal",
@@ -2484,7 +2484,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-024",
     "norsk": "vanvidd (et)",
     "lemma": "vanvidd",
     "english": "madness; folly",
@@ -2502,7 +2502,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-027",
     "norsk": "dalføre (et)",
     "lemma": "dalføre",
     "english": "valley system; a long valley or series of connected valleys",
@@ -2520,7 +2520,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-028",
     "norsk": "rimkledd",
     "lemma": "rimkledd",
     "english": "frost-covered; coated in hoarfrost",
@@ -2538,7 +2538,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-020",
     "norsk": "klynge (en/ei)",
     "lemma": "klynge",
     "english": "cluster; group; bunch",
@@ -2556,7 +2556,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-029",
     "norsk": "åshøyde (en)",
     "lemma": "åshøyde",
     "english": "hilltop; the crest of a ridge",
@@ -2574,7 +2574,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-012",
     "norsk": "speidende",
     "lemma": "speidende",
     "english": "searching; scanning; watchful",
@@ -2592,7 +2592,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-009",
     "norsk": "morsk",
     "lemma": "morsk",
     "english": "stern; gruff; surly",
@@ -2610,7 +2610,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-010",
     "norsk": "å gestikulere",
     "lemma": "gestikulere",
     "english": "to gesticulate; to use hand and arm gestures to express feelings",
@@ -2628,7 +2628,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-030",
     "norsk": "snirklete",
     "lemma": "snirklete",
     "english": "winding; twisting; meandering",
@@ -2646,7 +2646,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-highly-formal-021",
     "norsk": "behørig",
     "lemma": "behørig",
     "english": "proper; appropriate; as required",
@@ -2664,7 +2664,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sociology-anthropology-004",
     "norsk": "sambygding (en)",
     "lemma": "sambygding",
     "english": "fellow villager; person from the same village",
@@ -2682,7 +2682,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-009",
     "norsk": "sågar",
     "lemma": "sågar",
     "english": "even; indeed even",
@@ -2700,8 +2700,8 @@
     "part": "adverb"
   },
   {
-    "id": "",
-    "norsk": "aner (en, pl.)",
+    "id": "v-c-archaic-021",
+    "norsk": "aner (en)",
     "lemma": "aner",
     "english": "ancestors; forebears",
     "ukrainian": "предки; пращури",
@@ -2718,7 +2718,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-013",
     "norsk": "dronningaktig",
     "lemma": "dronningaktig",
     "english": "queenly; queen-like",
@@ -2736,7 +2736,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-014",
     "norsk": "lubben",
     "lemma": "lubben",
     "english": "chubby; plump; pudgy",
@@ -2754,7 +2754,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-020",
     "norsk": "megetsigende",
     "lemma": "megetsigende",
     "english": "eloquently expressive; meaningfully; significantly",
@@ -2772,7 +2772,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-012",
     "norsk": "forferdet",
     "lemma": "forferdet",
     "english": "horrified; appalled; terrified",
@@ -2790,7 +2790,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-politics-democracy-005",
     "norsk": "samstemt",
     "lemma": "samstemt",
     "english": "unanimous; harmonious; in agreement",
@@ -2808,7 +2808,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-013",
     "norsk": "forfjamset",
     "lemma": "forfjamset",
     "english": "confused; bewildered; flustered",
@@ -2826,7 +2826,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-010",
     "norsk": "sukkersøt",
     "lemma": "sukkersøt",
     "english": "sickeningly sweet; falsely friendly; saccharine",
@@ -2844,7 +2844,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-031",
     "norsk": "underlag (et)",
     "lemma": "underlag",
     "english": "ground; surface; terrain; base",
@@ -2862,7 +2862,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-011",
     "norsk": "spak",
     "lemma": "spak",
     "english": "meek; subdued; feeble; gentle",
@@ -2880,7 +2880,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-032",
     "norsk": "li (en/ei)",
     "lemma": "li",
     "english": "hillside; slope",
@@ -2898,7 +2898,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-010",
     "norsk": "udugelig",
     "lemma": "udugelig",
     "english": "incompetent; useless; good-for-nothing",
@@ -2916,7 +2916,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-022",
     "norsk": "hespetre (et)",
     "lemma": "hespetre",
     "english": "hag; shrew; ugly and difficult woman (offensive, derogatory term)",
@@ -2934,7 +2934,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-011",
     "norsk": "tomskalle (en)",
     "lemma": "tomskalle",
     "english": "blockhead; dimwit; empty-headed fool",
@@ -2952,7 +2952,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-023",
     "norsk": "nek (et)",
     "lemma": "nek",
     "english": "idiot; dimwit (slang)",
@@ -2970,7 +2970,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-012",
     "norsk": "hønsehjerne (en)",
     "lemma": "hønsehjerne",
     "english": "birdbrain; scatterbrain; idiot (slang, literally chicken-brain)",
@@ -2988,7 +2988,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-013",
     "norsk": "ufordragelig",
     "lemma": "ufordragelig",
     "english": "unbearable; utterly intolerable",
@@ -3006,7 +3006,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-010",
     "norsk": "spetakkel (et)",
     "lemma": "spetakkel",
     "english": "racket; uproar; loud noise",
@@ -3024,7 +3024,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-021",
     "norsk": "forheng (et)",
     "lemma": "forheng",
     "english": "curtain; drape hung in front of something to conceal or divide",
@@ -3042,7 +3042,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-033",
     "norsk": "hardtrampet",
     "lemma": "hardtrampet",
     "english": "hard-packed; compacted from much foot traffic",
@@ -3060,7 +3060,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-034",
     "norsk": "siv (et)",
     "lemma": "siv",
     "english": "reed; rush; a grass-like plant growing in water or marshes",
@@ -3078,7 +3078,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-035",
     "norsk": "leire (en/ei)",
     "lemma": "leire",
     "english": "clay; a type of soil that hardens when dried or fired",
@@ -3096,7 +3096,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-015",
     "norsk": "spinkel",
     "lemma": "spinkel",
     "english": "slight; slender; very thin and delicate",
@@ -3114,7 +3114,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-014",
     "norsk": "ubarmhjertig",
     "lemma": "ubarmhjertig",
     "english": "merciless; ruthless; without compassion",
@@ -3132,7 +3132,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-022",
     "norsk": "stråmatte (en/ei)",
     "lemma": "stråmatte",
     "english": "straw mat; a mat or mattress-like surface made of straw",
@@ -3150,7 +3150,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-016",
     "norsk": "skjør",
     "lemma": "skjør",
     "english": "fragile; brittle; easily broken or damaged",
@@ -3168,7 +3168,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-017",
     "norsk": "knoke (en)",
     "lemma": "knoke",
     "english": "knuckle; bony protrusion of the hand",
@@ -3186,7 +3186,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-021",
     "norsk": "ordflom (en)",
     "lemma": "ordflom",
     "english": "flood of words; torrent of speech",
@@ -3204,7 +3204,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-011",
     "norsk": "dump",
     "lemma": "dump",
     "english": "dull; muffled (of a sound made by something heavy falling)",
@@ -3222,7 +3222,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-014",
     "norsk": "klynking (en/ei)",
     "lemma": "klynking",
     "english": "whimpering; soft whining",
@@ -3240,7 +3240,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-015",
     "norsk": "jammer (en)",
     "lemma": "jammer",
     "english": "wailing; moan of pain or grief",
@@ -3258,7 +3258,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-036",
     "norsk": "gresstust (en)",
     "lemma": "gresstust",
     "english": "tuft of grass; small clump of grass",
@@ -3276,7 +3276,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-011",
     "norsk": "å subbe",
     "lemma": "subbe",
     "english": "to shuffle; to walk heavily without lifting the feet",
@@ -3294,7 +3294,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-010",
     "norsk": "døddrukken",
     "lemma": "døddrukken",
     "english": "dead drunk; blind drunk",
@@ -3312,7 +3312,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-037",
     "norsk": "å kakle",
     "lemma": "kakle",
     "english": "to cluck (as a hen does)",
@@ -3330,7 +3330,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-012",
     "norsk": "å valse",
     "lemma": "valse",
     "english": "to waltz around; to wander or roam about",
@@ -3348,7 +3348,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-013",
     "norsk": "å virre",
     "lemma": "virre",
     "english": "to wander aimlessly; to move about without direction",
@@ -3366,7 +3366,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-038",
     "norsk": "knusktørr",
     "lemma": "knusktørr",
     "english": "bone dry; completely dry",
@@ -3384,7 +3384,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-018",
     "norsk": "solsvidd",
     "lemma": "solsvidd",
     "english": "sunburned; scorched by the sun",
@@ -3402,7 +3402,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-039",
     "norsk": "varmedis (en)",
     "lemma": "varmedis",
     "english": "heat haze; shimmering haze caused by intense sunlight",
@@ -3420,7 +3420,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-016",
     "norsk": "nummen",
     "lemma": "nummen",
     "english": "numb; without feeling",
@@ -3438,7 +3438,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-017",
     "norsk": "lamslått",
     "lemma": "lamslått",
     "english": "stunned; paralyzed with shock",
@@ -3456,7 +3456,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-012",
     "norsk": "bølgeskvulp (et)",
     "lemma": "bølgeskvulp",
     "english": "the sound of small waves lapping",
@@ -3474,7 +3474,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-023",
     "norsk": "pote (en)",
     "lemma": "pote",
     "english": "paw",
@@ -3492,7 +3492,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-013",
     "norsk": "å drønne",
     "lemma": "drønne",
     "english": "to thunder; to boom; to make a loud roaring noise",
@@ -3510,7 +3510,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-040",
     "norsk": "skogholt (et)",
     "lemma": "skogholt",
     "english": "copse; small patch of woodland; grove",
@@ -3528,7 +3528,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-014",
     "norsk": "sildrende",
     "lemma": "sildrende",
     "english": "trickling; babbling; murmuring",
@@ -3546,7 +3546,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-architecture-design-007",
     "norsk": "å oppføre",
     "lemma": "oppføre",
     "english": "to erect; to construct; to build",
@@ -3564,7 +3564,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-019",
     "norsk": "velholdt",
     "lemma": "velholdt",
     "english": "well-maintained; in good condition; well-kept",
@@ -3582,7 +3582,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-020",
     "norsk": "framtoning (en/ei)",
     "lemma": "framtoning",
     "english": "appearance; bearing; the way something or someone presents itself",
@@ -3600,7 +3600,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-041",
     "norsk": "eføy (en)",
     "lemma": "eføy",
     "english": "ivy",
@@ -3618,7 +3618,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-014",
     "norsk": "å vimse",
     "lemma": "vimse",
     "english": "to flit about; to bustle around aimlessly; to scurry here and there",
@@ -3636,7 +3636,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-024",
     "norsk": "knappenål (en/ei)",
     "lemma": "knappenål",
     "english": "pin; a thin needle with a small round head",
@@ -3654,7 +3654,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-015",
     "norsk": "unnselig",
     "lemma": "unnselig",
     "english": "unassuming; shy; easily overlooked",
@@ -3672,7 +3672,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-016",
     "norsk": "hengiven",
     "lemma": "hengiven",
     "english": "devoted; caring; attentive to others",
@@ -3690,7 +3690,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-013",
     "norsk": "kinkig",
     "lemma": "kinkig",
     "english": "tricky; awkward; difficult to handle",
@@ -3708,7 +3708,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-025",
     "norsk": "befriende",
     "lemma": "befriende",
     "english": "liberating; uplifting; making a situation easier or more pleasant",
@@ -3726,7 +3726,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-012",
     "norsk": "formaning (en/ei)",
     "lemma": "formaning",
     "english": "admonition; reprimand accompanied by firm guidance on how to do better",
@@ -3744,7 +3744,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-017",
     "norsk": "å sky",
     "lemma": "sky",
     "english": "to shun; to avoid; to keep away from",
@@ -3762,7 +3762,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-007",
     "norsk": "rigid",
     "lemma": "rigid",
     "english": "rigid; strict; inflexible",
@@ -3780,7 +3780,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-025",
     "norsk": "farse (en)",
     "lemma": "farse",
     "english": "forcemeat, stuffing (ground meat mixed with egg, milk, flour and spices)",
@@ -3798,7 +3798,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-013",
     "norsk": "å irettesette",
     "lemma": "irettesette",
     "english": "to reprimand, to rebuke",
@@ -3816,7 +3816,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-042",
     "norsk": "dam (en)",
     "lemma": "dam",
     "english": "pond, puddle (small body of water or liquid)",
@@ -3834,7 +3834,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-026",
     "norsk": "begredelig",
     "lemma": "begredelig",
     "english": "deplorable, pitiful, lamentable",
@@ -3852,7 +3852,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-018",
     "norsk": "stødig",
     "lemma": "stødig",
     "english": "steady, stable, firm",
@@ -3870,7 +3870,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-019",
     "norsk": "røvergutt (en)",
     "lemma": "røvergutt",
     "english": "little rascal, little scamp (a mischievous but innocent boy)",
@@ -3888,7 +3888,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-politics-democracy-006",
     "norsk": "dødsskvadron (en)",
     "lemma": "dødsskvadron",
     "english": "death squad",
@@ -3906,7 +3906,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-026",
     "norsk": "skrott (en)",
     "lemma": "skrott",
     "english": "core (of a piece of fruit that has been mostly eaten)",
@@ -3924,7 +3924,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-027",
     "norsk": "slant (en)",
     "lemma": "slant",
     "english": "a drop (a small amount of drink left in a glass); a pittance (very little money)",
@@ -3942,7 +3942,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-020",
     "norsk": "glupsk",
     "lemma": "glupsk",
     "english": "greedy; voracious; eating a great deal",
@@ -3960,7 +3960,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-015",
     "norsk": "larmende",
     "lemma": "larmende",
     "english": "noisy; loud; clamorous",
@@ -3978,7 +3978,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-021",
     "norsk": "sideskill (en)",
     "lemma": "sideskill",
     "english": "side parting (a straight line dividing the hair to one side)",
@@ -3996,7 +3996,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-018",
     "norsk": "miserabel",
     "lemma": "miserabel",
     "english": "miserable; wretched; dreadful",
@@ -4014,7 +4014,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-highly-formal-022",
     "norsk": "å overrekke",
     "lemma": "overrekke",
     "english": "to present; to hand over; to confer (formally)",
@@ -4032,7 +4032,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-015",
     "norsk": "å ile",
     "lemma": "ile",
     "english": "to hurry; to rush; to hasten",
@@ -4050,7 +4050,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-professional-017",
     "norsk": "tilsyn (et)",
     "lemma": "tilsyn",
     "english": "supervision; oversight; inspection",
@@ -4068,7 +4068,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-021",
     "norsk": "varsom",
     "lemma": "varsom",
     "english": "careful; cautious; gentle",
@@ -4086,7 +4086,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-014",
     "norsk": "verdig",
     "lemma": "verdig",
     "english": "worthy; deserving; dignified",
@@ -4104,7 +4104,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-016",
     "norsk": "å plystre",
     "lemma": "plystre",
     "english": "to whistle",
@@ -4122,7 +4122,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-028",
     "norsk": "vinduspost (en)",
     "lemma": "vinduspost",
     "english": "windowsill",
@@ -4140,7 +4140,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-043",
     "norsk": "ruvende",
     "lemma": "ruvende",
     "english": "towering; imposingly large",
@@ -4158,7 +4158,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-044",
     "norsk": "storslått",
     "lemma": "storslått",
     "english": "magnificent; grand; impressive",
@@ -4176,7 +4176,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-045",
     "norsk": "slaps (et)",
     "lemma": "slaps",
     "english": "slush; wet snow",
@@ -4194,7 +4194,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-024",
     "norsk": "bjørkeris (et)",
     "lemma": "bjørkeris",
     "english": "birch twigs; bundle of birch switches",
@@ -4212,7 +4212,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-029",
     "norsk": "melisglasur (en)",
     "lemma": "melisglasur",
     "english": "icing; powdered sugar glaze",
@@ -4230,7 +4230,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-014",
     "norsk": "å unnlate",
     "lemma": "unnlate",
     "english": "to refrain from; to omit; to fail to",
@@ -4248,7 +4248,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-014",
     "norsk": "ørefik (en)",
     "lemma": "ørefik",
     "english": "a slap on the ear; a cuff around the ear",
@@ -4266,7 +4266,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-015",
     "norsk": "smekk (en)",
     "lemma": "smekk",
     "english": "a smack; a light slap",
@@ -4284,7 +4284,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-016",
     "norsk": "å skjenne",
     "lemma": "skjenne",
     "english": "to scold; to tell off; to criticize",
@@ -4302,7 +4302,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-030",
     "norsk": "karm (en)",
     "lemma": "karm",
     "english": "frame; window frame; door frame",
@@ -4320,7 +4320,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-022",
     "norsk": "traust",
     "lemma": "traust",
     "english": "solid; steady; dependable",
@@ -4338,7 +4338,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-031",
     "norsk": "å veve",
     "lemma": "veve",
     "english": "to weave; to interlace threads or fabric",
@@ -4356,7 +4356,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-023",
     "norsk": "romslig",
     "lemma": "romslig",
     "english": "broad-minded; tolerant; accepting of others",
@@ -4374,7 +4374,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-016",
     "norsk": "å krympe",
     "lemma": "krympe",
     "english": "to shrink; to become smaller",
@@ -4392,7 +4392,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-015",
     "norsk": "å utrette",
     "lemma": "utrette",
     "english": "to accomplish; to achieve; to get done",
@@ -4410,7 +4410,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-technical-023",
     "norsk": "å risse",
     "lemma": "risse",
     "english": "to scratch; to engrave; to draw with something sharp",
@@ -4428,7 +4428,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-024",
     "norsk": "stø",
     "lemma": "stø",
     "english": "steady; firm; stable",
@@ -4446,7 +4446,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-027",
     "norsk": "å martre",
     "lemma": "martre",
     "english": "to torment; to torture",
@@ -4464,7 +4464,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-007",
     "norsk": "fortielse (en)",
     "lemma": "fortielse",
     "english": "concealment; deliberate silence; suppression of information",
@@ -4482,7 +4482,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-philosophy-021",
     "norsk": "viten (en)",
     "lemma": "viten",
     "english": "knowledge; the fact of knowing something",
@@ -4500,7 +4500,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-022",
     "norsk": "nett",
     "lemma": "nett",
     "english": "cute; pretty; neat; well-groomed",
@@ -4518,7 +4518,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-literary-021",
     "norsk": "å pryde",
     "lemma": "pryde",
     "english": "to adorn; to embellish; to grace",
@@ -4536,7 +4536,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-025",
     "norsk": "sirlig",
     "lemma": "sirlig",
     "english": "neat; elegant; meticulous; finely crafted",
@@ -4554,7 +4554,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-016",
     "norsk": "å betinge",
     "lemma": "betinge",
     "english": "to require; to presuppose; to be contingent on",
@@ -4572,7 +4572,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-professional-018",
     "norsk": "fortrinn (et)",
     "lemma": "fortrinn",
     "english": "advantage; merit; strong point",
@@ -4590,7 +4590,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-026",
     "norsk": "medlidende",
     "lemma": "medlidende",
     "english": "compassionate; empathetic; sympathetic",
@@ -4608,7 +4608,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-015",
     "norsk": "stilltiende",
     "lemma": "stilltiende",
     "english": "tacit; silent; implicit; unspoken",
@@ -4626,7 +4626,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-027",
     "norsk": "prøvende",
     "lemma": "prøvende",
     "english": "tentative; cautious",
@@ -4644,7 +4644,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-017",
     "norsk": "klirring (en/ei)",
     "lemma": "klirring",
     "english": "clinking; tinkling sound (as of glasses striking each other)",
@@ -4662,7 +4662,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-019",
     "norsk": "oppspilthet (en/ei)",
     "lemma": "oppspilthet",
     "english": "heightened excitement; nervous tension",
@@ -4680,7 +4680,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-028",
     "norsk": "fortapt",
     "lemma": "fortapt",
     "english": "lost; dejected; at a loss",
@@ -4698,7 +4698,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-022",
     "norsk": "å villede",
     "lemma": "villede",
     "english": "to mislead; to lead astray",
@@ -4716,7 +4716,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-008",
     "norsk": "latent",
     "lemma": "latent",
     "english": "latent; hidden beneath the surface",
@@ -4734,7 +4734,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-professional-019",
     "norsk": "opprykk (et)",
     "lemma": "opprykk",
     "english": "promotion; advancement to a higher position",
@@ -4752,7 +4752,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-literary-022",
     "norsk": "fortryllende",
     "lemma": "fortryllende",
     "english": "enchanting; captivating; charming",
@@ -4770,7 +4770,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-032",
     "norsk": "vert (en)",
     "lemma": "vert",
     "english": "host; person who receives and entertains guests",
@@ -4788,7 +4788,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-033",
     "norsk": "kjegle (en/ei)",
     "lemma": "kjegle",
     "english": "bowling pin",
@@ -4806,7 +4806,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-017",
     "norsk": "virvar (et)",
     "lemma": "virvar",
     "english": "tangle; chaos; jumble",
@@ -4824,7 +4824,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-017",
     "norsk": "å spinne",
     "lemma": "spinne",
     "english": "to spin; to rotate; to whirl",
@@ -4842,7 +4842,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-technical-024",
     "norsk": "revers (en)",
     "lemma": "revers",
     "english": "reverse; reverse gear",
@@ -4860,7 +4860,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-028",
     "norsk": "gretten",
     "lemma": "gretten",
     "english": "grumpy; sulky; grouchy",
@@ -4878,7 +4878,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-046",
     "norsk": "dvale (en)",
     "lemma": "dvale",
     "english": "hibernation; deep sleep; dormancy",
@@ -4896,7 +4896,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-023",
     "norsk": "bedårende",
     "lemma": "bedårende",
     "english": "enchanting; adorable; charming; captivating",

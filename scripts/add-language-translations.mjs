@@ -8,6 +8,9 @@
  *
  * Usage:
  *   node scripts/add-language-translations.mjs --language ukrainian [--files vocab-a1.json] [--batch 25] [--dry-run] [--force]
+ * You can specify multiple files with a comma-separated list:
+ *   node scripts/add-language-translations.mjs --language spanish --files vocab-c.json,uttrykk-c.json
+ * Run it once per language you want to add. It will skip entries that already have a translation unless you use --force.
  *
  * Options:
  *   --language  Target language key (defaults to "ukrainian").

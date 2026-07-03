@@ -254,6 +254,11 @@ test.describe('Blog level filter', () => {
     const guideButton = page.getByRole('button', { name: 'Guide', exact: true });
     await guideButton.click();
 
+    // Wait for the active-filter summary to confirm the Guide pill's state
+    // change has actually applied before looking for the card — asserting on
+    // the href directly can race the reactive filter update.
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
+
     const guideLink = page.locator('a[href="/blog/slik-bruker-du-norskeord"]');
     await expect(guideLink).toBeVisible();
 

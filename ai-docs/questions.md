@@ -30,6 +30,7 @@ The Filesystem tool can read it but str_replace can't find it. You need to read 
 ## Vocab AI conversion
 
 Format:
+
 ```
 {
     "id": "",
@@ -50,12 +51,13 @@ Format:
     "part": ""
   },
 ```
+
 1. Fill up norsk, definition feilds from pasted image(s).
 2. When a norsk word has (m), change it to (en), since it is a hankjønn.
 3. When a norsk word has (n), change it to (et), since it is a intetkjønn.
 4. When a norsk word has (m/f), change it to (en/ei).
 5. When a norsk word has (f), change it to (ei).
 6. Separate one word and expression which are multiple words.
-7. If a norsk word has the following (adj.), (v1), (ureg.), (adv.), (v1, v2), fill up `part` field with `adjective`, `verb`, `verb`, `adverb`, `verb` and remove (adj.), (v1), (ureg.), (adv.), (v1, v2) from a word. And if it is a verb, add `å ` in front of verb in `norsk` field. e.g. `å komme`. 
+7. If a norsk word has the following (adj.), (v1), (ureg.), (adv.), (v1, v2), fill up `part` field with `adjective`, `verb`, `verb`, `adverb`, `verb` and remove (adj.), (v1), (ureg.), (adv.), (v1, v2) from a word. And if it is a verb, add `å ` in front of verb in `norsk` field. e.g. `å komme`.
 8. Fill up lemma with a dictionary form of `norsk` field with out `(en)`, `(et)`, `(en/ei)` or `å`, etc. Only one word if it is not a expression (more than one word).
 9. If norsk is an expression, the `norsk` and `lemma` fields are the same without any `(xx)`.

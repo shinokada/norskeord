@@ -6,15 +6,15 @@
  * files, and flags candidates for the "inflected form stored as lemma"
  * mistake found in v-a2-weather-009 ("klart" instead of "klar") and
  * v-a2-time-003 ("halvt" instead of "halv").
- * 
- * NOTE: use adjective-audit-ignore.json to suppress false positives. 
+ *
+ * NOTE: use adjective-audit-ignore.json to suppress false positives.
  * It has two keys:
- * 
- * words → only gates ENDS-T and ENDS-E. It's checked nowhere else in 
+ *
+ * words → only gates ENDS-T and ENDS-E. It's checked nowhere else in
  * the script.
- * ids → suppresses all flags for that specific entry (ENDS-T, ENDS-E, 
+ * ids → suppresses all flags for that specific entry (ENDS-T, ENDS-E,
  * MISMATCH, HAS-ARTICLE, EXAMPLE-DIFFERS — everything).
- * 
+ *
  * This is a manual-review aid, not an auto-fixer — Norwegian adjective
  * morphology has enough legitimate exceptions (e.g. "hvit", "stille",
  * "lett") that a purely mechanical rule would produce false positives.
@@ -64,15 +64,41 @@ const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c'];
 // form happens to end in "t" or "e". Extend this list as you find more
 // legitimate cases so the audit stays low-noise.
 const LEGIT_T_ENDINGS = new Set([
-  'hvit', 'lett', 'flott', 'søt', 'kort', 'fast', 'glatt', 'rett', 'trett',
-  'sett', 'spent', 'vant', 'tett', 'brett', 'lat', 'flat', 'grønt', 'svart'
+  'hvit',
+  'lett',
+  'flott',
+  'søt',
+  'kort',
+  'fast',
+  'glatt',
+  'rett',
+  'trett',
+  'sett',
+  'spent',
+  'vant',
+  'tett',
+  'brett',
+  'lat',
+  'flat',
+  'grønt',
+  'svart'
 ]);
 const LEGIT_E_ENDINGS = new Set([
-  'stille', 'gratis', 'lite',
+  'stille',
+  'gratis',
+  'lite',
   // Ordinals and a few indeclinable quantifiers/loanwords — never inflect
-  'første', 'andre', 'tredje', 'mange', 'forrige',
+  'første',
+  'andre',
+  'tredje',
+  'mange',
+  'forrige',
   // Loanword colors that don't take gender/number endings
-  'oransje', 'beige', 'lilla', 'rosa', 'turkis'
+  'oransje',
+  'beige',
+  'lilla',
+  'rosa',
+  'turkis'
 ]);
 // Present participles (verb stem + "-ende", e.g. "spennende", "ledende")
 // are a large, productive, always-indeclinable class in Norwegian — their
@@ -146,11 +172,7 @@ for (const level of LEVELS) {
     if (norsk !== lemma) {
       flags.push('MISMATCH');
     }
-    if (
-      lemma.endsWith('t') &&
-      !LEGIT_T_ENDINGS.has(lemma) &&
-      !IGNORE_WORDS.has(lemma)
-    ) {
+    if (lemma.endsWith('t') && !LEGIT_T_ENDINGS.has(lemma) && !IGNORE_WORDS.has(lemma)) {
       flags.push('ENDS-T');
     }
     if (

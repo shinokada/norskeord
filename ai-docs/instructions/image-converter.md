@@ -21,6 +21,7 @@ Do **not** generate `english`, `ukrainian`, `spanish`, `german`, `example`, `exa
 ## Output format
 
 Words:
+
 ```json
 [
   {
@@ -35,6 +36,7 @@ Words:
 ```
 
 Expressions:
+
 ```json
 [
   {
@@ -55,8 +57,8 @@ Expressions:
 
 Copy `norsk` as written (before transformation). For `definition`:
 
-* **Words:** copy the image's definition text as-is.
-* **Expressions:** rewrite the image's explanation into one clean Bokmål sentence. Drop `=` usage notes and inline examples from the image (those inform your understanding but don't belong verbatim in `definition`).
+- **Words:** copy the image's definition text as-is.
+- **Expressions:** rewrite the image's explanation into one clean Bokmål sentence. Drop `=` usage notes and inline examples from the image (those inform your understanding but don't belong verbatim in `definition`).
 
 ### 2. Convert noun gender
 
@@ -95,20 +97,20 @@ If unsure, default to **word** unless the phrase clearly functions as a set idio
 
 **Verbs — prepending `å`:**
 
-* Single-word verb headword: prepend `å ` to the infinitive.
-  * `komme (v1)` → `norsk`: `å komme`, `part`: `verb`
-* Verb-led expression (verb is only part of a longer fixed phrase): prepend `å ` only to the verb stem at the start of the phrase.
-  * `stå (ureg.) for døra` → `norsk`: `å stå for døra`
-* Subject-led expression (a non-verb word starts the phrase): do not prepend `å`.
-  * `forventningen rir (ureg.) ham` → `norsk`: `forventningen rir ham`
+- Single-word verb headword: prepend `å ` to the infinitive.
+  - `komme (v1)` → `norsk`: `å komme`, `part`: `verb`
+- Verb-led expression (verb is only part of a longer fixed phrase): prepend `å ` only to the verb stem at the start of the phrase.
+  - `stå (ureg.) for døra` → `norsk`: `å stå for døra`
+- Subject-led expression (a non-verb word starts the phrase): do not prepend `å`.
+  - `forventningen rir (ureg.) ham` → `norsk`: `forventningen rir ham`
 
 ### 5. Create the lemma
 
-* Remove noun gender markers: `(en)`, `(et)`, `(ei)`, `(en/ei)`.
-* Remove `å` from verbs.
-* Remove all grammatical abbreviations, including `(ureg.)`.
-* Single word → `lemma` is exactly one word.
-* Expression (multiple words) → `lemma` is identical to `norsk` (without abbreviations, without the `å` prefix if present).
+- Remove noun gender markers: `(en)`, `(et)`, `(ei)`, `(en/ei)`.
+- Remove `å` from verbs.
+- Remove all grammatical abbreviations, including `(ureg.)`.
+- Single word → `lemma` is exactly one word.
+- Expression (multiple words) → `lemma` is identical to `norsk` (without abbreviations, without the `å` prefix if present).
 
 | norsk                   | lemma                   |
 | ----------------------- | ----------------------- |
@@ -123,15 +125,17 @@ Always set `"level": "C"` unless told otherwise for a specific batch of images.
 
 ### 7. Output requirements
 
-* Always set `"id": ""`.
-* Return two separate valid JSON arrays: one for words, one for expressions.
-* Do not include `english`, `ukrainian`, `spanish`, `german`, `example`, `example_english`, `example_ukrainian`, `example_spanish`, `example_german`, or (for words) `category` — those are added in Step 2.
-* Preserve Norwegian spelling exactly except for the transformations above.
-* Do not invent information from the image. If text is unreadable, leave the field empty instead of guessing.
-* No markdown, explanations, comments, or additional text — output only the two JSON arrays.
+- Always set `"id": ""`.
+- Return two separate valid JSON arrays: one for words, one for expressions.
+- Do not include `english`, `ukrainian`, `spanish`, `german`, `example`, `example_english`, `example_ukrainian`, `example_spanish`, `example_german`, or (for words) `category` — those are added in Step 2.
+- Preserve Norwegian spelling exactly except for the transformations above.
+- Do not invent information from the image. If text is unreadable, leave the field empty instead of guessing.
+- No markdown, explanations, comments, or additional text — output only the two JSON arrays.
 
 ### 8. Expression category and part fields
+
 For expression json items, the `category` field must be `uttrykk` and `part` feild must be `phrase`.
+
 ```json
 {
   ...
@@ -141,6 +145,7 @@ For expression json items, the `category` field must be `uttrykk` and `part` fei
 ```
 
 ### 9. Flag me
+
 If you have any thing noticed, please flag me to notice after conversion.
 
 ---
@@ -219,9 +224,9 @@ Expressions always use `"uttrykk"` — already set in Step 1, do not change it.
 
 When choosing categories for words:
 
-* Match the category to the meaning of the word.
-* You will be given the current category distribution of the existing dataset (see workflow doc) — use it to favor under-represented categories over already-common ones, rather than defaulting to the same few categories repeatedly.
-* Do not invent new category names.
+- Match the category to the meaning of the word.
+- You will be given the current category distribution of the existing dataset (see workflow doc) — use it to favor under-represented categories over already-common ones, rather than defaulting to the same few categories repeatedly.
+- Do not invent new category names.
 
 ### 10. Generate an example sentence (Norwegian)
 
@@ -233,8 +238,8 @@ Translate the example sentence naturally (not word-for-word) into `example_engli
 
 ### 12. Output requirements
 
-* Return two separate valid JSON arrays: one for words, one for expressions, matching the input structure plus the new fields.
-* Every word object must contain every field in the Final field order list above.
-* Every expression object must contain every field in the Final field order list above, except `category` is always `"uttrykk"` (already present from Step 1).
-* Do not modify `id`, `norsk`, `lemma`, `definition`, `level`, or `part`.
-* No markdown, explanations, comments, or additional text — output only the two JSON arrays.
+- Return two separate valid JSON arrays: one for words, one for expressions, matching the input structure plus the new fields.
+- Every word object must contain every field in the Final field order list above.
+- Every expression object must contain every field in the Final field order list above, except `category` is always `"uttrykk"` (already present from Step 1).
+- Do not modify `id`, `norsk`, `lemma`, `definition`, `level`, or `part`.
+- No markdown, explanations, comments, or additional text — output only the two JSON arrays.
