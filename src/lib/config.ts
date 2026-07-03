@@ -246,24 +246,11 @@ export const PLUS_CATEGORIES = new Set<string>([
   'a1/uttrykk',
   'a2/uttrykk',
   'b1/uttrykk',
-  // C — first 5 free; rest plus-only
-  'c/professional',
-  'c/abstract-concepts',
-  'c/politics-democracy',
-  'c/linguistics',
-  'c/media-journalism',
-  'c/architecture-design',
-  'c/diplomacy-international',
-  'c/finance-economics',
-  'c/medicine-healthcare',
-  'c/psychology-advanced',
-  'c/technical',
-  'c/advanced-law-justice',
-  'c/neuroscience-cognition',
-  'c/climate-environment-policy',
-  'c/sociology-anthropology',
-  'c/advanced-business-strategy',
-  'c/existential-abstract'
+  // C — first 5 free; rest plus-only.
+  // Generated from CATEGORIES_BY_LEVEL.C (instead of hand-listed) so newly
+  // added C categories are automatically gated instead of silently leaking
+  // through as free — see the manner-of-motion gating bug.
+  ...CATEGORIES_BY_LEVEL.C.slice(5).map((cat) => `c/${cat}`)
 ]);
 
 /**

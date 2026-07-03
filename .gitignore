@@ -19,6 +19,9 @@ static/data/search-index.json
 .DS_Store
 Thumbs.db
 
+# Backup of routes removed during refactors (see .removed-routes)
+.removed-routes
+
 # Env
 .env
 .env.*
