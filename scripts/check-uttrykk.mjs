@@ -27,6 +27,14 @@
  *   node scripts/check-uttrykk.mjs a1         # check only uttrykk-a1 files
  *   node scripts/check-uttrykk.mjs --strict   # exit 1 if any errors found
  *   node scripts/check-uttrykk.mjs --no-cross # skip preview cross-check
+ *   node scripts/check-uttrykk.mjs --draft    # check draft/{level}/uttrykk-{level}-new.json instead
+ *   node scripts/check-uttrykk.mjs c --draft  # check only draft/c/uttrykk-c-new.json
+ *
+ * --draft mode (Step 3B in work-flow.md, run BEFORE Step 4 assigns real IDs):
+ *   - Reads draft/{level}/uttrykk-{level}-new.json instead of src/lib/data/uttrykk-{level}.json
+ *   - There is no draft preview file, so the preview file check and cross-check are skipped
+ *   - Entries with id === "" are expected (IDs aren't assigned until Step 4) and are not
+ *     flagged as errors; a non-empty id is still validated against the normal ID format.
  */
 
 import { readFileSync, existsSync } from 'fs';
@@ -35,9 +43,11 @@ import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../src/lib/data');
+const DRAFT_DIR = join(__dirname, '../draft');
 
 const STRICT = process.argv.includes('--strict');
 const NO_CROSS = process.argv.includes('--no-cross');
+const DRAFT = process.argv.includes('--draft');
 const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 
 const ALL_LEVELS = ['a1', 'a2', 'b1', 'b2', 'c'];
@@ -100,8 +110,8 @@ function checkIdFormat(id, level, isPreview) {
 
 // ── File checker ──────────────────────────────────────────────────────────────
 
-function checkFile(filename, level, expectedCategory, isPreview, globalIds) {
-  const filepath = join(DATA_DIR, filename);
+function checkFile(filename, level, expectedCategory, isPreview, globalIds, filepathOverride) {
+  const filepath = filepathOverride ?? join(DATA_DIR, filename);
   if (!existsSync(filepath)) {
     console.log(`  ⏭️   ${filename} not found — skipping`);
     return { errors: 0, warnings: 0, entries: [] };
@@ -117,6 +127,7 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds) {
 
   let fileErrors = 0;
   let fileWarnings = 0;
+  let unassignedIdCount = 0;
 
   console.log(`\n${'─'.repeat(60)}`);
   console.log(`📄  ${filename}  (${entries.length} entries)`);
@@ -144,6 +155,10 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds) {
       } else {
         globalIds.set(entry.id, filename);
       }
+    } else if (DRAFT) {
+      // Draft entries are expected to have id: "" until Step 4 assigns real IDs —
+      // counted below and reported once per file instead of once per entry.
+      unassignedIdCount++;
     } else {
       errs.push('missing id field');
     }
@@ -218,6 +233,12 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds) {
     }
   }
 
+  if (unassignedIdCount > 0) {
+    console.log(
+      `\n  ℹ️   ${unassignedIdCount} entry(ies) have id: "" (expected pre-Step 4, not counted as errors)`
+    );
+  }
+
   const status = fileErrors === 0 ? '✅' : '❌';
   console.log(`\n${status}  ${filename}: ${fileErrors} error(s), ${fileWarnings} warning(s)`);
 
@@ -258,6 +279,24 @@ for (const level of ALL_LEVELS) {
   console.log(`\n${'═'.repeat(60)}`);
   console.log(`🔍  Level: ${level.toUpperCase()}`);
   console.log(`${'═'.repeat(60)}`);
+
+  if (DRAFT) {
+    // Draft mode: only draft/{level}/uttrykk-{level}-new.json exists — no preview file,
+    // no preview cross-check (Step 3B, before Step 4 assigns real IDs).
+    const draftFilename = `uttrykk-${level}-new.json`;
+    const draftPath = join(DRAFT_DIR, level, draftFilename);
+    const { errors: e1, warnings: w1 } = checkFile(
+      draftFilename,
+      level,
+      'uttrykk',
+      false,
+      globalIds,
+      draftPath
+    );
+    totalErrors += e1;
+    totalWarnings += w1;
+    continue;
+  }
 
   const {
     errors: e1,
