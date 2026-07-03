@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.49.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added support for the new “C” mastery level across the learning experience.
+    - Introduced a consolidated C-level vocabulary view and updated page styling for the new level.
+  - **Bug Fixes**
+    - Improved how C-level content is grouped and displayed, including locked/free content behavior.
+    - Updated page descriptions and keywords so C-level pages present more relevant search and sharing metadata.
+  - **Chores**
+    - Updated site indexing so the new C-level routes are included in the sitemap.
+
 ## 2.48.0
 
 ### Minor Changes
