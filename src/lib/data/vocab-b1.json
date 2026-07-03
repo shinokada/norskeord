@@ -10819,8 +10819,8 @@
   },
   {
     "id": "v-b1-media-022",
-    "norsk": "troverdige",
-    "lemma": "troverdige",
+    "norsk": "troverdig",
+    "lemma": "troverdig",
     "english": "credible / reliable",
     "ukrainian": "достовірні",
     "spanish": "creíbles / fiables",
@@ -17281,8 +17281,8 @@
   },
   {
     "id": "v-b1-society-072",
-    "norsk": "undertrykke",
-    "lemma": "undertrykke",
+    "norsk": "undertrykt",
+    "lemma": "undertrykt",
     "english": "oppressed, suppressed",
     "ukrainian": "пригноблений",
     "spanish": "oprimido, reprimido",
@@ -18289,8 +18289,8 @@
   },
   {
     "id": "v-b1-technology-020",
-    "norsk": "trådløst",
-    "lemma": "trådløst",
+    "norsk": "trådløs",
+    "lemma": "trådløs",
     "english": "wireless",
     "ukrainian": "бездротовий",
     "spanish": "inalámbrico",

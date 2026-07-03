@@ -2353,8 +2353,8 @@
   },
   {
     "id": "v-a2-weather-009",
-    "norsk": "klart",
-    "lemma": "klart",
+    "norsk": "klar",
+    "lemma": "klar",
     "english": "clear (weather)",
     "ukrainian": "ясний (про погоду)",
     "spanish": "despejado",
@@ -2438,8 +2438,8 @@
   },
   {
     "id": "v-a2-time-003",
-    "norsk": "halvt",
-    "lemma": "halvt",
+    "norsk": "halv",
+    "lemma": "halv",
     "english": "half past",
     "ukrainian": "пів (на)",
     "spanish": "y media",

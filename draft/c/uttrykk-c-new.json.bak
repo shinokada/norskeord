@@ -1,798 +1,6 @@
 [
   {
-    "id": "u-c-001",
-    "norsk": "å reflektere over",
-    "lemma": "reflektere over",
-    "english": "to reflect upon / to contemplate",
-    "ukrainian": "розмірковувати над",
-    "spanish": "reflexionar sobre / contemplar",
-    "german": "über etwas nachdenken / reflektieren",
-    "example": "Filosofer reflekterer over meningen med livet.",
-    "example_english": "Philosophers reflect upon the meaning of life.",
-    "example_ukrainian": "Філософи розмірковують над сенсом життя.",
-    "example_spanish": "Los filósofos reflexionan sobre el sentido de la vida.",
-    "example_german": "Philosophen reflektieren über den Sinn des Lebens.",
-    "definition": "Å tenke dypt og nøye på noe for å forstå det bedre.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-002",
-    "norsk": "å konkludere med at",
-    "lemma": "konkludere med at",
-    "english": "to conclude that",
-    "ukrainian": "дійти висновку, що",
-    "spanish": "concluir que",
-    "german": "zu dem Schluss kommen, dass",
-    "example": "Vi konkluderer med at tiltaket har hatt effekt.",
-    "example_english": "We conclude that the measure has had an effect.",
-    "example_ukrainian": "Ми дійшли висновку, що захід мав ефект.",
-    "example_spanish": "Concluimos que la medida ha tenido efecto.",
-    "example_german": "Wir kommen zu dem Schluss, dass die Maßnahme eine Wirkung gehabt hat.",
-    "definition": "Å komme fram til en endelig mening eller et svar etter å ha undersøkt eller diskutert noe.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-003",
-    "norsk": "å argumentere for at",
-    "lemma": "argumentere for at",
-    "english": "to argue that",
-    "ukrainian": "стверджувати, що",
-    "spanish": "argumentar que",
-    "german": "dafür argumentieren, dass",
-    "example": "Forfatteren argumenterer for at politikken bør endres.",
-    "example_english": "The author argues that the policy should be changed.",
-    "example_ukrainian": "Автор стверджує, що політику слід змінити.",
-    "example_spanish": "El autor argumenta que la política debería cambiar.",
-    "example_german": "Der Autor argumentiert dafür, dass die Politik geändert werden sollte.",
-    "definition": "Å gi grunner og bevis for å overbevise andre om at noe er riktig eller sant.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-004",
-    "norsk": "å peke på",
-    "lemma": "peke på",
-    "english": "to point to / to highlight",
-    "ukrainian": "вказувати на",
-    "spanish": "señalar / destacar",
-    "german": "hinweisen auf / hervorheben",
-    "example": "Rapporten peker på tre sentrale utfordringer.",
-    "example_english": "The report points to three central challenges.",
-    "example_ukrainian": "Звіт вказує на три ключові проблеми.",
-    "example_spanish": "El informe señala tres desafíos fundamentales.",
-    "example_german": "Der Bericht weist auf drei zentrale Herausforderungen hin.",
-    "definition": "Å trekke oppmerksomhet mot noe viktig, slik at andre legger merke til det.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-005",
-    "norsk": "å lengte etter",
-    "lemma": "lengte etter",
-    "english": "to yearn for / to long for",
-    "ukrainian": "тужити за / прагнути до",
-    "spanish": "anhelar / añorar",
-    "german": "sich sehnen nach",
-    "example": "Hun lengtet etter det landet hun hadde forlatt.",
-    "example_english": "She yearned for the country she had left behind.",
-    "example_ukrainian": "Вона тужила за країною, яку залишила.",
-    "example_spanish": "Ella añoraba el país que había dejado atrás.",
-    "example_german": "Sie sehnte sich nach dem Land, das sie verlassen hatte.",
-    "definition": "Å ha en sterk og varm ønske om noe eller noen som ikke er der.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-006",
-    "norsk": "å rapportere til",
-    "lemma": "rapportere til",
-    "english": "to report to (a manager)",
-    "ukrainian": "звітувати перед",
-    "spanish": "reportar a / rendir cuentas a",
-    "german": "berichten an / unterstellt sein",
-    "example": "Hun rapporterer direkte til styret.",
-    "example_english": "She reports directly to the board.",
-    "example_ukrainian": "Вона звітує безпосередньо перед радою директорів.",
-    "example_spanish": "Ella reporta directamente a la junta directiva.",
-    "example_german": "Sie berichtet direkt an den Vorstand.",
-    "definition": "Å ha en leder man er ansvarlig overfor og gir informasjon om sitt arbeid til.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-007",
-    "norsk": "å stige ned i",
-    "lemma": "stige ned i",
-    "english": "to descend into (literary)",
-    "ukrainian": "спуститися в",
-    "spanish": "descender a (literario)",
-    "german": "hinabsteigen in (literarisch)",
-    "example": "Helten stiger ned i underverdenen for å hente sin elskede.",
-    "example_english": "The hero descends into the underworld to retrieve his beloved.",
-    "example_ukrainian": "Герой спускається в підземний світ, щоб повернути свою кохану.",
-    "example_spanish": "El héroe desciende al inframundo para rescatar a su amada.",
-    "example_german": "Der Held steigt in die Unterwelt hinab, um seine Geliebte zu holen.",
-    "definition": "Å gå eller bevege seg ned i noe, ofte brukt om en reise til et farlig eller mørkt sted i litteraturen.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-008",
-    "norsk": "å arve mantel",
-    "lemma": "arve mantel",
-    "english": "to inherit the mantle / to take over a role (archaic metaphor)",
-    "ukrainian": "успадкувати мантію",
-    "spanish": "heredar el manto / asumir un rol",
-    "german": "den Mantel erben / eine Rolle übernehmen",
-    "example": "Han arvet mantelen etter sin lærde far.",
-    "example_english": "He inherited the mantle from his learned father.",
-    "example_ukrainian": "Він успадкував мантію свого вченого батька.",
-    "example_spanish": "Él heredó el manto de su erudito padre.",
-    "example_german": "Er übernahm den Mantel seines gelehrten Vaters.",
-    "definition": "Å overta en persons rolle, ansvar eller posisjon etter at de har sluttet eller dødd.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-009",
-    "norsk": "å feste tro til",
-    "lemma": "feste tro til",
-    "english": "to give credence to / to believe (archaic expression)",
-    "ukrainian": "довіряти / вірити (застаріле)",
-    "spanish": "dar crédito a / creer (expresión arcaica)",
-    "german": "Glauben schenken / Glaubwürdigkeit beimessen (veraltet)",
-    "example": "Ingen ville lenger feste tro til profetens ord.",
-    "example_english": "No one would any longer give credence to the prophet's words.",
-    "example_ukrainian": "Ніхто вже не хотів вірити словам пророка.",
-    "example_spanish": "Nadie quería ya dar crédito a las palabras del profeta.",
-    "example_german": "Niemand wollte den Worten des Propheten noch Glauben schenken.",
-    "definition": "Å tro på noe eller stole på at noe er sant.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-010",
-    "norsk": "å råde over",
-    "lemma": "råde over",
-    "english": "to have dominion over / to rule over (archaic)",
-    "ukrainian": "панувати над / володарювати над (застаріле)",
-    "spanish": "tener dominio sobre / gobernar (arcaico)",
-    "german": "herrschen über / verfügen über (veraltet)",
-    "example": "Kongen rådde over et vidt rike.",
-    "example_english": "The king had dominion over a vast realm.",
-    "example_ukrainian": "Король панував над великим царством.",
-    "example_spanish": "El rey gobernaba sobre un vasto reino.",
-    "example_german": "Der König herrschte über ein weites Reich.",
-    "definition": "Å ha makt eller kontroll over noe eller noen.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-011",
-    "norsk": "å anmode om",
-    "lemma": "anmode om",
-    "english": "to formally request / to call upon",
-    "ukrainian": "офіційно звернутися з проханням",
-    "spanish": "solicitar formalmente",
-    "german": "formell ersuchen um / beantragen",
-    "example": "Departementet anmoder om en skriftlig redegjørelse.",
-    "example_english": "The ministry formally requests a written account.",
-    "example_ukrainian": "Міністерство офіційно звернулося з проханням надати письмове пояснення.",
-    "example_spanish": "El ministerio solicita formalmente una explicación por escrito.",
-    "example_german": "Das Ministerium ersucht um eine schriftliche Stellungnahme.",
-    "definition": "Å be om noe på en formell og høflig måte, ofte skriftlig og i offentlig sammenheng.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-012",
-    "norsk": "å fremme en klage",
-    "lemma": "fremme en klage",
-    "english": "to lodge a complaint / to raise an objection formally",
-    "ukrainian": "подати скаргу",
-    "spanish": "presentar una queja formal",
-    "german": "eine Beschwerde einreichen / erheben",
-    "example": "Borgerne fremmet en klage overfor tilsynsorganet.",
-    "example_english": "The citizens lodged a complaint with the supervisory body.",
-    "example_ukrainian": "Громадяни подали скаргу до наглядового органу.",
-    "example_spanish": "Los ciudadanos presentaron una queja formal ante el organismo de supervisión.",
-    "example_german": "Die Bürger reichten eine Beschwerde bei der Aufsichtsbehörde ein.",
-    "definition": "Å levere en offisiell protest eller et formelt ønske om at noe skal vurderes på nytt.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-013",
-    "norsk": "å avsi dom",
-    "lemma": "avsi dom",
-    "english": "to pronounce / to deliver a judgment",
-    "ukrainian": "винести вирок",
-    "spanish": "dictar sentencia",
-    "german": "ein Urteil verkünden / sprechen",
-    "example": "Dommeren avsier dom om to uker.",
-    "example_english": "The judge will deliver judgment in two weeks.",
-    "example_ukrainian": "Суддя винесе вирок через два тижні.",
-    "example_spanish": "El juez dictará sentencia en dos semanas.",
-    "example_german": "Der Richter verkündet das Urteil in zwei Wochen.",
-    "definition": "Å offentlig kunngjøre den endelige avgjørelsen i en rettssak.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-014",
-    "norsk": "med utgangspunkt i",
-    "lemma": "med utgangspunkt i",
-    "english": "based on / starting from",
-    "ukrainian": "виходячи з / на основі",
-    "spanish": "con base en / a partir de",
-    "german": "ausgehend von / auf der Grundlage von",
-    "example": "Med utgangspunkt i disse dataene kan vi konkludere.",
-    "example_english": "Based on these data we can conclude.",
-    "example_ukrainian": "Виходячи з цих даних, ми можемо дійти висновку.",
-    "example_spanish": "Con base en estos datos, podemos sacar conclusiones.",
-    "example_german": "Ausgehend von diesen Daten können wir Schlüsse ziehen.",
-    "definition": "Ved å bruke noe som grunnlag eller startpunkt for videre tenkning eller konklusjon.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-015",
-    "norsk": "i lys av",
-    "lemma": "i lys av",
-    "english": "in light of",
-    "ukrainian": "з огляду на / у світлі",
-    "spanish": "a la luz de",
-    "german": "im Lichte von / angesichts",
-    "example": "I lys av nye funn må teorien revideres.",
-    "example_english": "In light of new findings, the theory must be revised.",
-    "example_ukrainian": "З огляду на нові відкриття теорію необхідно переглянути.",
-    "example_spanish": "A la luz de los nuevos hallazgos, la teoría debe revisarse.",
-    "example_german": "Im Lichte neuer Erkenntnisse muss die Theorie überarbeitet werden.",
-    "definition": "Når man tar hensyn til ny eller relevant informasjon som påvirker hvordan man forstår noe.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-016",
-    "norsk": "i henhold til",
-    "lemma": "i henhold til",
-    "english": "in accordance with / pursuant to",
-    "ukrainian": "відповідно до / згідно з",
-    "spanish": "de acuerdo con / conforme a",
-    "german": "gemäß / entsprechend",
-    "example": "I henhold til loven har alle rett til forsvar.",
-    "example_english": "In accordance with the law, everyone has the right to a defence.",
-    "example_ukrainian": "Відповідно до закону кожен має право на захист.",
-    "example_spanish": "De acuerdo con la ley, todos tienen derecho a defensa.",
-    "example_german": "Gemäß dem Gesetz hat jeder das Recht auf Verteidigung.",
-    "definition": "Brukes for å si at noe følger regler, lover eller avtaler som allerede er bestemt.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-017",
-    "norsk": "Den som graver en grop for andre, faller selv i den.",
-    "lemma": "Den som graver en grop for andre, faller selv i den.",
-    "english": "He who digs a pit for others falls into it himself.",
-    "ukrainian": "Хто іншому яму копає, той сам у неї потрапляє.",
-    "spanish": "El que cava un hoyo para otro, cae en él.",
-    "german": "Wer anderen eine Grube gräbt, fällt selbst hinein.",
-    "example": "Han prøvde å avsløre kollegaen, men endte med å bli avslørt selv — den som graver en grop for andre, faller selv i den.",
-    "example_english": "He tried to expose his colleague but ended up being exposed himself — he who digs a pit for others falls into it himself.",
-    "example_ukrainian": "Він намагався викрити колегу, але сам опинився викритим — хто іншому яму копає, той сам у неї потрапляє.",
-    "example_spanish": "Intentó exponer a su colega, pero terminó siendo expuesto él mismo: el que cava un hoyo para otro, cae en él.",
-    "example_german": "Er versuchte, den Kollegen bloßzustellen, wurde aber selbst entlarvt — wer anderen eine Grube gräbt, fällt selbst hinein.",
-    "definition": "Hvis du prøver å skade eller lure noen, risikerer du å skade deg selv i stedet.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-018",
-    "norsk": "Borte bra, hjemme best.",
-    "lemma": "Borte bra, hjemme best.",
-    "english": "There's no place like home. (lit. Away good, home best.)",
-    "ukrainian": "У гостях добре, а вдома краще.",
-    "spanish": "No hay lugar como el hogar.",
-    "german": "Ost und West, daheim am best. / Trautes Heim, Glück allein.",
-    "example": "Etter tre måneder i utlandet følte hun at borte bra, hjemme best.",
-    "example_english": "After three months abroad she felt there's no place like home.",
-    "example_ukrainian": "Після трьох місяців за кордоном вона відчула: у гостях добре, а вдома краще.",
-    "example_spanish": "Después de tres meses en el extranjero, ella sintió que no hay lugar como el hogar.",
-    "example_german": "Nach drei Monaten im Ausland spürte sie: Ost und West, daheim am best.",
-    "definition": "Selv om det er fint å reise og oppleve nye steder, er hjemmet alltid det beste stedet å være.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-019",
-    "norsk": "Ingen røyk uten ild.",
-    "lemma": "Ingen røyk uten ild.",
-    "english": "There's no smoke without fire.",
-    "ukrainian": "Немає диму без вогню.",
-    "spanish": "No hay humo sin fuego.",
-    "german": "Kein Rauch ohne Feuer.",
-    "example": "Ryktene fortsetter å spre seg — ingen røyk uten ild.",
-    "example_english": "The rumours keep spreading — there's no smoke without fire.",
-    "example_ukrainian": "Чутки продовжують поширюватися — немає диму без вогню.",
-    "example_spanish": "Los rumores siguen circulando: no hay humo sin fuego.",
-    "example_german": "Die Gerüchte verbreiten sich weiter — kein Rauch ohne Feuer.",
-    "definition": "Hvis det finnes rykter eller tegn på noe, er det som regel noe sant i det.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-020",
-    "norsk": "Den tidlig står opp, får mye gjort.",
-    "lemma": "Den tidlig står opp, får mye gjort.",
-    "english": "The early bird gets the worm. (lit. One who rises early gets much done.)",
-    "ukrainian": "Хто рано встає, тому Бог дає.",
-    "spanish": "Al que madruga, Dios le ayuda.",
-    "german": "Morgenstund hat Gold im Mund.",
-    "example": "Han starter alltid arbeidsdagen kl. 06 — den tidlig står opp, får mye gjort.",
-    "example_english": "He always starts the working day at 06:00 — the early bird gets the worm.",
-    "example_ukrainian": "Він завжди починає робочий день о 6-й ранку — хто рано встає, тому Бог дає.",
-    "example_spanish": "Siempre empieza su jornada a las seis: al que madruga, Dios le ayuda.",
-    "example_german": "Er beginnt seinen Arbeitstag immer um 6 Uhr — Morgenstund hat Gold im Mund.",
-    "definition": "Hvis du begynner på arbeidet tidlig, rekker du å gjøre mer i løpet av dagen.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-021",
-    "norsk": "Mange bekker små gjør en stor å.",
-    "lemma": "Mange bekker små gjør en stor å.",
-    "english": "Many a little makes a mickle. / Every little helps. (lit. Many small streams make a big river.)",
-    "ukrainian": "З миру по нитці — голому сорочка.",
-    "spanish": "Muchos pocos hacen un mucho.",
-    "german": "Viele kleine Bäche ergeben einen großen Fluss. / Kleinvieh macht auch Mist.",
-    "example": "Spar litt hver dag — mange bekker små gjør en stor å.",
-    "example_english": "Save a little every day — every little helps.",
-    "example_ukrainian": "Відкладай потроху щодня — з миру по нитці, голому сорочка.",
-    "example_spanish": "Ahorra un poco cada día: muchos pocos hacen un mucho.",
-    "example_german": "Spar jeden Tag ein wenig — viele kleine Bäche ergeben einen großen Fluss.",
-    "definition": "Mange små bidrag eller mengder kan til sammen bli noe stort og viktig.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-022",
-    "norsk": "Æren er bedre enn gull.",
-    "lemma": "Æren er bedre enn gull.",
-    "english": "Honour is better than gold.",
-    "ukrainian": "Честь дорожча за золото.",
-    "spanish": "La honra vale más que el oro.",
-    "german": "Ehre ist besser als Gold.",
-    "example": "Han valgte integritet fremfor lønn — æren er bedre enn gull.",
-    "example_english": "He chose integrity over salary — honour is better than gold.",
-    "example_ukrainian": "Він обрав чесність, а не зарплату — честь дорожча за золото.",
-    "example_spanish": "Eligió la integridad por encima del salario: la honra vale más que el oro.",
-    "example_german": "Er wählte Integrität statt Gehalt — Ehre ist besser als Gold.",
-    "definition": "Det å ha et godt rykte og handle riktig er viktigere enn å være rik.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-023",
-    "norsk": "Livet er ikke noen dans på roser.",
-    "lemma": "Livet er ikke noen dans på roser.",
-    "english": "Life is not a bed of roses. (lit. Life is not a dance on roses.)",
-    "ukrainian": "Життя прожити — не поле перейти.",
-    "spanish": "La vida no es un lecho de rosas.",
-    "german": "Das Leben ist kein Wunschkonzert. / Das Leben ist nicht einfach.",
-    "example": "Ingen lovet henne det ville bli lett — livet er ikke noen dans på roser.",
-    "example_english": "No one promised her it would be easy — life is not a bed of roses.",
-    "example_ukrainian": "Ніхто не обіцяв їй, що буде легко — життя прожити не поле перейти.",
-    "example_spanish": "Nadie le prometió que sería fácil: la vida no es un lecho de rosas.",
-    "example_german": "Niemand hatte ihr versprochen, dass es leicht sein würde — das Leben ist kein Wunschkonzert.",
-    "definition": "Livet er ofte vanskelig og fullt av utfordringer, ikke alltid lett og behagelig.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-024",
-    "norsk": "Det er ingen skam å snu.",
-    "lemma": "Det er ingen skam å snu.",
-    "english": "There's no shame in changing your mind / turning back.",
-    "ukrainian": "Відступити — не соромно.",
-    "spanish": "No hay vergüenza en echarse atrás.",
-    "german": "Es ist keine Schande umzukehren.",
-    "example": "Halvveis opp fjellet snudde de — det er ingen skam å snu.",
-    "example_english": "Halfway up the mountain they turned back — there's no shame in turning back.",
-    "example_ukrainian": "На півдорозі вгору вони повернулися — відступити не соромно.",
-    "example_spanish": "A mitad de la subida se dieron la vuelta: no hay vergüenza en echarse atrás.",
-    "example_german": "Auf halbem Weg den Berg hinauf kehrten sie um — es ist keine Schande umzukehren.",
-    "definition": "Det er helt greit å endre mening eller gå tilbake hvis du ser at noe ikke fungerer.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-025",
-    "norsk": "Kjært barn har mange navn.",
-    "lemma": "Kjært barn har mange navn.",
-    "english": "A beloved child has many names. (something valued gets many labels)",
-    "ukrainian": "Улюблена дитина має багато імен.",
-    "spanish": "Lo que se quiere mucho tiene muchos nombres.",
-    "german": "Ein geliebtes Kind hat viele Namen. (Etwas Wertvolles wird auf viele Arten bezeichnet.)",
-    "example": "Kafeen kalles både «stamstedet» og «hjørnet» — kjært barn har mange navn.",
-    "example_english": "The café is called both 'the local' and 'the corner' — a beloved child has many names.",
-    "example_ukrainian": "Кафе називають і 'улюбленим місцем', і 'куточком' — улюблена дитина має багато імен.",
-    "example_spanish": "Al café lo llaman 'el sitio de siempre' y también 'la esquina': lo que se quiere mucho tiene muchos nombres.",
-    "example_german": "Das Cafe wird sowohl 'Stammlokal' als auch 'die Ecke' genannt — ein geliebtes Kind hat viele Namen.",
-    "definition": "Noe eller noen som folk setter stor pris på, får ofte mange forskjellige navn eller betegnelser.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-026",
-    "norsk": "Man skal ikke selge skinnet før bjørnen er skutt.",
-    "lemma": "Man skal ikke selge skinnet før bjørnen er skutt.",
-    "english": "Don't count your chickens before they hatch. (lit. Don't sell the hide before the bear is shot.)",
-    "ukrainian": "Не продавай шкуру невбитого ведмедя.",
-    "spanish": "No vendas la piel del oso antes de cazarlo.",
-    "german": "Man soll das Fell des Bären nicht verkaufen, bevor man ihn erlegt hat.",
-    "example": "Ikke feir seieren ennå — man skal ikke selge skinnet før bjørnen er skutt.",
-    "example_english": "Don't celebrate the victory yet — don't count your chickens before they hatch.",
-    "example_ukrainian": "Не святкуй перемогу ще — не продавай шкуру невбитого ведмедя.",
-    "example_spanish": "No celebres la victoria todavía — no vendas la piel del oso antes de cazarlo.",
-    "example_german": "Feier den Sieg noch nicht — man soll das Fell des Bären nicht verkaufen, bevor man ihn erlegt hat.",
-    "definition": "Ikke anta at noe er sikkert før det faktisk har skjedd.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-027",
-    "norsk": "Den som tier, samtykker.",
-    "lemma": "Den som tier, samtykker.",
-    "english": "Silence implies consent. (lit. One who is silent consents.)",
-    "ukrainian": "Мовчання — знак згоди.",
-    "spanish": "El que calla, otorga.",
-    "german": "Wer schweigt, stimmt zu.",
-    "example": "Ingen protesterte, og lederen konkluderte: den som tier, samtykker.",
-    "example_english": "No one protested, and the leader concluded: silence implies consent.",
-    "example_ukrainian": "Ніхто не заперечував, і керівник зробив висновок: мовчання — знак згоди.",
-    "example_spanish": "Nadie protestó, y el líder concluyó: el que calla, otorga.",
-    "example_german": "Niemand protestierte, und der Leiter schloss daraus: wer schweigt, stimmt zu.",
-    "definition": "Hvis du ikke sier imot, regnes det som at du er enig.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-028",
-    "norsk": "Sannhet og tro er ikke det samme.",
-    "lemma": "Sannhet og tro er ikke det samme.",
-    "english": "Truth and belief are not the same thing.",
-    "ukrainian": "Правда і віра — не одне й те саме.",
-    "spanish": "La verdad y la creencia no son lo mismo.",
-    "german": "Wahrheit und Glaube sind nicht dasselbe.",
-    "example": "Han trodde han hadde rett, men sannhet og tro er ikke det samme.",
-    "example_english": "He believed he was right, but truth and belief are not the same thing.",
-    "example_ukrainian": "Він думав, що має рацію, але правда і віра — не одне й те саме.",
-    "example_spanish": "Él creía tener razón, pero la verdad y la creencia no son lo mismo.",
-    "example_german": "Er glaubte, recht zu haben, aber Wahrheit und Glaube sind nicht dasselbe.",
-    "definition": "Det at noen tror noe er sant, betyr ikke at det faktisk er sant.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-029",
-    "norsk": "Bedre sent enn aldri.",
-    "lemma": "Bedre sent enn aldri.",
-    "english": "Better late than never.",
-    "ukrainian": "Краще пізно, ніж ніколи.",
-    "spanish": "Mejor tarde que nunca.",
-    "german": "Besser spät als nie.",
-    "example": "Han dukket opp to timer forsinket — men bedre sent enn aldri.",
-    "example_english": "He turned up two hours late — but better late than never.",
-    "example_ukrainian": "Він з'явився із запізненням на дві години — але краще пізно, ніж ніколи.",
-    "example_spanish": "Llegó con dos horas de retraso — pero mejor tarde que nunca.",
-    "example_german": "Er tauchte zwei Stunden zu spät auf — aber besser spät als nie.",
-    "definition": "Det er bedre å gjøre noe for sent enn å ikke gjøre det i det hele tatt.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-030",
-    "norsk": "Ord er sølv, men taushet er gull.",
-    "lemma": "Ord er sølv, men taushet er gull.",
-    "english": "Speech is silver, silence is golden.",
-    "ukrainian": "Слово — срібло, мовчання — золото.",
-    "spanish": "La palabra es plata, pero el silencio es oro.",
-    "german": "Reden ist Silber, Schweigen ist Gold.",
-    "example": "Han sa ingenting og vant respekt — ord er sølv, men taushet er gull.",
-    "example_english": "He said nothing and earned respect — speech is silver, silence is golden.",
-    "example_ukrainian": "Він нічого не сказав і здобув повагу — слово — срібло, мовчання — золото.",
-    "example_spanish": "No dijo nada y se ganó el respeto — la palabra es plata, pero el silencio es oro.",
-    "example_german": "Er sagte nichts und gewann Respekt — Reden ist Silber, Schweigen ist Gold.",
-    "definition": "Det er ofte klokere å holde seg stille enn å snakke mye.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-031",
-    "norsk": "Ensomhet er den vises selskap.",
-    "lemma": "Ensomhet er den vises selskap.",
-    "english": "Solitude is the companion of the wise.",
-    "ukrainian": "Самотність — супутник мудрих.",
-    "spanish": "La soledad es la compañía del sabio.",
-    "german": "Einsamkeit ist die Gesellschaft des Weisen.",
-    "example": "Han trivdes alene med bøkene sine — ensomhet er den vises selskap.",
-    "example_english": "He was content alone with his books — solitude is the companion of the wise.",
-    "example_ukrainian": "Він почувався добре наодинці з книжками — самотність — супутник мудрих.",
-    "example_spanish": "Él disfrutaba solo con sus libros — la soledad es la compañía del sabio.",
-    "example_german": "Er war gern allein mit seinen Büchern — Einsamkeit ist die Gesellschaft des Weisen.",
-    "definition": "Kloke mennesker kan ha det godt alene og trenger ikke alltid andre rundt seg.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-032",
-    "norsk": "Den som lever skjult, lever godt.",
-    "lemma": "Den som lever skjult, lever godt.",
-    "english": "One who lives hidden lives well. / A quiet life is a good life.",
-    "ukrainian": "Хто живе тихо, живе добре.",
-    "spanish": "Quien vive tranquilo, vive bien.",
-    "german": "Wer im Verborgenen lebt, lebt gut.",
-    "example": "De fant lykken i en liten bygd — den som lever skjult, lever godt.",
-    "example_english": "They found happiness in a small village — a quiet life is a good life.",
-    "example_ukrainian": "Вони знайшли щастя в маленькому селі — хто живе тихо, живе добре.",
-    "example_spanish": "Encontraron la felicidad en un pequeño pueblo — quien vive tranquilo, vive bien.",
-    "example_german": "Sie fanden ihr Glück in einem kleinen Dorf — wer im Verborgenen lebt, lebt gut.",
-    "definition": "Et stille liv uten mye oppmerksomhet fra andre kan være det beste livet.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-033",
-    "norsk": "Ingenting er nytt under solen.",
-    "lemma": "Ingenting er nytt under solen.",
-    "english": "There is nothing new under the sun.",
-    "ukrainian": "Немає нічого нового під сонцем.",
-    "spanish": "No hay nada nuevo bajo el sol.",
-    "german": "Es gibt nichts Neues unter der Sonne.",
-    "example": "Folk klager over ungdommen som alltid — ingenting er nytt under solen.",
-    "example_english": "People complain about youth as always — there is nothing new under the sun.",
-    "example_ukrainian": "Люди завжди скаржилися на молодь — немає нічого нового під сонцем.",
-    "example_spanish": "La gente siempre se queja de los jóvenes — no hay nada nuevo bajo el sol.",
-    "example_german": "Die Leute klagen über die Jugend wie immer — es gibt nichts Neues unter der Sonne.",
-    "definition": "Alt som skjer i dag, har skjedd før — verden gjentar seg.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-034",
-    "norsk": "Ende god, alt godt.",
-    "lemma": "Ende god, alt godt.",
-    "english": "All's well that ends well.",
-    "ukrainian": "Все добре, що добре закінчується.",
-    "spanish": "Bien está lo que bien acaba.",
-    "german": "Ende gut, alles gut.",
-    "example": "Det var dramatisk underveis, men ende god, alt godt.",
-    "example_english": "It was dramatic along the way, but all's well that ends well.",
-    "example_ukrainian": "По дорозі було драматично, але все добре, що добре закінчується.",
-    "example_spanish": "Fue dramático en el camino, pero bien está lo que bien acaba.",
-    "example_german": "Es war aufregend zwischendurch, aber Ende gut, alles gut.",
-    "definition": "Hvis resultatet til slutt er bra, spiller det ingen rolle at veien dit var vanskelig.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-035",
-    "norsk": "Av skade blir man vis.",
-    "lemma": "Av skade blir man vis.",
-    "english": "One becomes wise through hardship. / Learn from your mistakes.",
-    "ukrainian": "На помилках вчаться.",
-    "spanish": "De los errores se aprende.",
-    "german": "Durch Schaden wird man klug.",
-    "example": "Han gjentok ikke feilen — av skade blir man vis.",
-    "example_english": "He did not repeat the mistake — one becomes wise through hardship.",
-    "example_ukrainian": "Він більше не повторив цієї помилки — на помилках вчаться.",
-    "example_spanish": "No repitió el error — de los errores se aprende.",
-    "example_german": "Er wiederholte den Fehler nicht — durch Schaden wird man klug.",
-    "definition": "Man lærer best av egne feil og dårlige erfaringer.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-036",
-    "norsk": "Gammel vane er vond å vende.",
-    "lemma": "Gammel vane er vond å vende.",
-    "english": "Old habits die hard. (lit. Old habit is difficult to turn.)",
-    "ukrainian": "Стара звичка — міцна пута.",
-    "spanish": "Genio y figura hasta la sepultura.",
-    "german": "Alte Gewohnheiten legt man schwer ab.",
-    "example": "Han prøvde å slutte å røyke, men gammel vane er vond å vende.",
-    "example_english": "He tried to quit smoking but old habits die hard.",
-    "example_ukrainian": "Він намагався кинути курити, але стара звичка — міцна пута.",
-    "example_spanish": "Intentó dejar de fumar, pero genio y figura hasta la sepultura.",
-    "example_german": "Er versuchte, mit dem Rauchen aufzuhören, aber alte Gewohnheiten legt man schwer ab.",
-    "definition": "Det er veldig vanskelig å forandre noe man har gjort på samme måte i lang tid.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-037",
-    "norsk": "Epler faller ikke langt fra stammen.",
-    "lemma": "Epler faller ikke langt fra stammen.",
-    "english": "The apple doesn't fall far from the tree.",
-    "ukrainian": "Яблуко від яблуні недалеко падає.",
-    "spanish": "De tal palo, tal astilla.",
-    "german": "Der Apfel fällt nicht weit vom Stamm.",
-    "example": "Datteren er like sta som faren — epler faller ikke langt fra stammen.",
-    "example_english": "The daughter is just as stubborn as the father — the apple doesn't fall far from the tree.",
-    "example_ukrainian": "Дочка така ж вперта, як і батько — яблуко від яблуні недалеко падає.",
-    "example_spanish": "La hija es igual de terca que el padre — de tal palo, tal astilla.",
-    "example_german": "Die Tochter ist genauso stur wie der Vater — der Apfel fällt nicht weit vom Stamm.",
-    "definition": "Barn ligner ofte foreldrene sine i måten de er eller oppfører seg på.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-038",
-    "norsk": "Tida leger alle sår.",
-    "lemma": "Tida leger alle sår.",
-    "english": "Time heals all wounds.",
-    "ukrainian": "Час лікує всі рани.",
-    "spanish": "El tiempo cura todas las heridas.",
-    "german": "Die Zeit heilt alle Wunden.",
-    "example": "Det gjør vondt nå, men tida leger alle sår.",
-    "example_english": "It hurts now, but time heals all wounds.",
-    "example_ukrainian": "Зараз боляче, але час лікує всі рани.",
-    "example_spanish": "Duele ahora, pero el tiempo cura todas las heridas.",
-    "example_german": "Es tut jetzt weh, aber die Zeit heilt alle Wunden.",
-    "definition": "Smerte og sorg blir mindre vanskelig å bære etter hvert som tiden går.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-039",
-    "norsk": "Uten mat og drikke duger helten ikke.",
-    "lemma": "Uten mat og drikke duger helten ikke.",
-    "english": "Even a hero is nothing without food and drink.",
-    "ukrainian": "Без їжі та пиття і герой нічого не вартий.",
-    "spanish": "El mejor soldado flaquea sin comer ni beber.",
-    "german": "Ohne Essen und Trinken ist auch der Held nichts.",
-    "example": "Pausen var godt fortjent — uten mat og drikke duger helten ikke.",
-    "example_english": "The break was well deserved — even a hero is nothing without food and drink.",
-    "example_ukrainian": "Перерва була добре заслуженою — без їжі та пиття і герой нічого не вартий.",
-    "example_spanish": "El descanso era bien merecido — el mejor soldado flaquea sin comer ni beber.",
-    "example_german": "Die Pause war wohlverdient — ohne Essen und Trinken ist auch der Held nichts.",
-    "definition": "Selv de sterkeste og mest handlekraftige menneskene trenger mat og hvile.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-040",
-    "norsk": "Det er ikke gull alt som glimrer.",
-    "lemma": "Det er ikke gull alt som glimrer.",
-    "english": "All that glitters is not gold.",
-    "ukrainian": "Не все те золото, що блищить.",
-    "spanish": "No es oro todo lo que reluce.",
-    "german": "Es ist nicht alles Gold, was glänzt.",
-    "example": "Tilbudet så fristende ut, men det er ikke gull alt som glimrer.",
-    "example_english": "The offer looked tempting, but all that glitters is not gold.",
-    "example_ukrainian": "Пропозиція виглядала привабливо, але не все те золото, що блищить.",
-    "example_spanish": "La oferta parecía tentadora, pero no es oro todo lo que reluce.",
-    "example_german": "Das Angebot sah verlockend aus, aber es ist nicht alles Gold, was glänzt.",
-    "definition": "Noe som ser bra eller verdifullt ut på utsiden, er ikke alltid bra i virkeligheten.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-041",
-    "norsk": "i overensstemmelse med",
-    "lemma": "i overensstemmelse med",
-    "english": "in conformity with / in accordance with",
-    "ukrainian": "відповідно до / у відповідності з",
-    "spanish": "de conformidad con / de acuerdo con",
-    "german": "in Übereinstimmung mit",
-    "example": "Vedtaket er fattet i overensstemmelse med gjeldende regelverk.",
-    "example_english": "The decision was made in conformity with applicable regulations.",
-    "example_ukrainian": "Рішення прийнято відповідно до чинних правил.",
-    "example_spanish": "La decisión fue tomada de conformidad con la normativa vigente.",
-    "example_german": "Der Beschluss wurde in Übereinstimmung mit den geltenden Vorschriften gefasst.",
-    "definition": "På en måte som stemmer med eller følger regler, lover eller avtaler.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-042",
-    "norsk": "det fremgår av",
-    "lemma": "det fremgår av",
-    "english": "it appears from / it is evident from",
-    "ukrainian": "з ... випливає / зі ... видно",
-    "spanish": "se desprende de / se deduce de",
-    "german": "es geht hervor aus / es ergibt sich aus",
-    "example": "Det fremgår av rapporten at ulykken kunne vært unngått.",
-    "example_english": "It is evident from the report that the accident could have been avoided.",
-    "example_ukrainian": "Зі звіту випливає, що аварії можна було уникнути.",
-    "example_spanish": "Del informe se desprende que el accidente podría haberse evitado.",
-    "example_german": "Aus dem Bericht geht hervor, dass der Unfall hätte vermieden werden können.",
-    "definition": "'Det fremgår av' brukes for å si at noe tydelig kommer frem eller kan leses ut av en kilde, for eksempel et dokument eller en tekst.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-043",
-    "norsk": "en ironi av skjebnen",
-    "lemma": "en ironi av skjebnen",
-    "english": "an irony of fate",
-    "ukrainian": "іронія долі",
-    "spanish": "una ironía del destino",
-    "german": "eine Ironie des Schicksals",
-    "example": "Det var en ironi av skjebnen at han vant prisen akkurat den dagen.",
-    "example_english": "It was an irony of fate that he won the prize on exactly that day.",
-    "example_ukrainian": "Іронія долі — він отримав нагороду саме того дня.",
-    "example_spanish": "Fue una ironía del destino que ganara el premio precisamente ese día.",
-    "example_german": "Es war eine Ironie des Schicksals, dass er genau an diesem Tag den Preis gewann.",
-    "definition": "'En ironi av skjebnen' beskriver en situasjon der noe merkelig eller paradoksalt skjer, som om skjebnen bevisst leker med mennesker.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-044",
-    "norsk": "Øvelse gjør mester.",
-    "lemma": "Øvelse gjør mester.",
-    "english": "Practice makes perfect. (lit. Practice makes master.)",
-    "ukrainian": "Практика веде до досконалості.",
-    "spanish": "La práctica hace al maestro.",
-    "german": "Übung macht den Meister.",
-    "example": "Ikke gi opp gitaren ennå -- øvelse gjør mester.",
-    "example_english": "Don't give up the guitar yet -- practice makes perfect.",
-    "example_ukrainian": "Не кидай гітару ще — практика веде до досконалості.",
-    "example_spanish": "No abandones la guitarra todavía — la práctica hace al maestro.",
-    "example_german": "Gib die Gitarre noch nicht auf -- Übung macht den Meister.",
-    "definition": "'Øvelse gjør mester' er et ordtak som betyr at man blir god på noe ved å øve mye og regelmessig.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-045",
+    "id": "",
     "norsk": "å stå for døra",
     "lemma": "stå for døra",
     "english": "to be just around the corner; to be imminent",
@@ -810,7 +18,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-046",
+    "id": "",
     "norsk": "forventningen rir ham",
     "lemma": "forventningen rir ham",
     "english": "he is gripped by anticipation; the excitement is riding him",
@@ -828,7 +36,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-047",
+    "id": "",
     "norsk": "om kapp",
     "lemma": "om kapp",
     "english": "in competition with each other; racing to be first",
@@ -846,7 +54,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-048",
+    "id": "",
     "norsk": "å ta seg i (å gjøre) noe",
     "lemma": "ta seg i (å gjøre) noe",
     "english": "to catch oneself doing something",
@@ -864,7 +72,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-049",
+    "id": "",
     "norsk": "å røske opp",
     "lemma": "røske opp",
     "english": "to yank up; to wrench open; to pull out roughly",
@@ -882,7 +90,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-050",
+    "id": "",
     "norsk": "å tyte fram",
     "lemma": "tyte fram",
     "english": "to ooze out; to seep through; to protrude",
@@ -900,7 +108,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-051",
+    "id": "",
     "norsk": "i stier",
     "lemma": "i stier",
     "english": "in trails; in narrow lines or streams",
@@ -918,7 +126,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-052",
+    "id": "",
     "norsk": "riktig vanskelig",
     "lemma": "riktig vanskelig",
     "english": "really difficult; quite hard",
@@ -936,7 +144,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-053",
+    "id": "",
     "norsk": "å lede inn til",
     "lemma": "lede inn til",
     "english": "to lead into; to guide towards",
@@ -954,7 +162,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-054",
+    "id": "",
     "norsk": "å kaste et stjålent blikk",
     "lemma": "kaste et stjålent blikk",
     "english": "to steal a glance; to look at someone secretly",
@@ -972,7 +180,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-055",
+    "id": "",
     "norsk": "prikk lik",
     "lemma": "prikk lik",
     "english": "exactly alike, identical",
@@ -990,7 +198,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-056",
+    "id": "",
     "norsk": "å lure noen trill rundt",
     "lemma": "lure noen trill rundt",
     "english": "to completely fool someone, to trick someone thoroughly",
@@ -1008,7 +216,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-057",
+    "id": "",
     "norsk": "det er få mennesker forunt",
     "lemma": "det er få mennesker forunt",
     "english": "it is given to few people, very few people get to experience this",
@@ -1026,7 +234,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-058",
+    "id": "",
     "norsk": "skinnet bedrar",
     "lemma": "skinnet bedrar",
     "english": "appearances can be deceiving, do not judge by appearances",
@@ -1044,7 +252,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-059",
+    "id": "",
     "norsk": "i samme åndedrag",
     "lemma": "i samme åndedrag",
     "english": "in the same breath, at the same time, simultaneously",
@@ -1062,7 +270,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-060",
+    "id": "",
     "norsk": "å utfylle hverandre",
     "lemma": "utfylle hverandre",
     "english": "to complement each other, to go well together",
@@ -1080,7 +288,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-061",
+    "id": "",
     "norsk": "å frastøte hverandre",
     "lemma": "frastøte hverandre",
     "english": "to repel each other, to feel mutual aversion",
@@ -1098,7 +306,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-062",
+    "id": "",
     "norsk": "å dø i barsel",
     "lemma": "dø i barsel",
     "english": "to die in childbirth, to die during or after giving birth",
@@ -1116,7 +324,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-063",
+    "id": "",
     "norsk": "å bli tatt hånd om",
     "lemma": "bli tatt hånd om",
     "english": "to be taken care of, to be looked after",
@@ -1134,7 +342,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-064",
+    "id": "",
     "norsk": "å havne i noens besittelse",
     "lemma": "havne i noens besittelse",
     "english": "to end up in someone's possession",
@@ -1152,7 +360,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-065",
+    "id": "",
     "norsk": "å ta ordet i sin makt",
     "lemma": "ta ordet i sin makt",
     "english": "to master the art of expression; to become skilled with words",
@@ -1170,7 +378,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-066",
+    "id": "",
     "norsk": "klingende sørlandsk",
     "lemma": "klingende sørlandsk",
     "english": "with a clear and distinct Southern Norwegian dialect",
@@ -1188,7 +396,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-067",
+    "id": "",
     "norsk": "å mane fram",
     "lemma": "mane fram",
     "english": "to conjure up; to evoke; to summon forth",
@@ -1206,7 +414,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-068",
+    "id": "",
     "norsk": "å vandre over til det hinsidige",
     "lemma": "vandre over til det hinsidige",
     "english": "to pass away; to depart to the other side (with a religious connotation)",
@@ -1224,7 +432,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-069",
+    "id": "",
     "norsk": "å være høyt og lavt",
     "lemma": "være høyt og lavt",
     "english": "to be everywhere; to be (overly) active; to be all over the place",
@@ -1242,7 +450,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-070",
+    "id": "",
     "norsk": "å gå stille i dørene",
     "lemma": "gå stille i dørene",
     "english": "to keep a low profile; to tread quietly so as not to cause trouble or disturbance",
@@ -1260,7 +468,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-071",
+    "id": "",
     "norsk": "å skrike og bære seg for noe",
     "lemma": "skrike og bære seg for noe",
     "english": "to cry and complain loudly about something; to make a big fuss over something",
@@ -1278,7 +486,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-072",
+    "id": "",
     "norsk": "å gå i filler",
     "lemma": "gå i filler",
     "english": "to fall apart; to break into pieces; to be destroyed",
@@ -1296,7 +504,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-073",
+    "id": "",
     "norsk": "å ta på vei for noe",
     "lemma": "ta på vei for noe",
     "english": "to get angry about something; to flare up over something",
@@ -1314,7 +522,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-074",
+    "id": "",
     "norsk": "å sette seg på huk",
     "lemma": "sette seg på huk",
     "english": "to squat down",
@@ -1332,7 +540,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-075",
+    "id": "",
     "norsk": "før man får sukk for seg",
     "lemma": "før man får sukk for seg",
     "english": "before you know it",
@@ -1350,7 +558,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-076",
+    "id": "",
     "norsk": "ikke rikke seg av flekken",
     "lemma": "ikke rikke seg av flekken",
     "english": "not to move an inch",
@@ -1368,7 +576,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-077",
+    "id": "",
     "norsk": "flunkende ny",
     "lemma": "flunkende ny",
     "english": "brand new",
@@ -1386,7 +594,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-078",
+    "id": "",
     "norsk": "å strene av gårde",
     "lemma": "strene av gårde",
     "english": "to stride off quickly",
@@ -1404,7 +612,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-079",
+    "id": "",
     "norsk": "for lengst",
     "lemma": "for lengst",
     "english": "long since",
@@ -1422,7 +630,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-080",
+    "id": "",
     "norsk": "å hive etter pusten",
     "lemma": "hive etter pusten",
     "english": "to gasp for breath",
@@ -1440,7 +648,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-081",
+    "id": "",
     "norsk": "fotfestet glipper",
     "lemma": "fotfestet glipper",
     "english": "to lose one's footing",
@@ -1458,7 +666,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-082",
+    "id": "",
     "norsk": "å surre fast",
     "lemma": "surre fast",
     "english": "to lash down",
@@ -1476,7 +684,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-083",
+    "id": "",
     "norsk": "å være duket for",
     "lemma": "være duket for",
     "english": "to be set up for",
@@ -1494,7 +702,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-084",
+    "id": "",
     "norsk": "stø kurs (en)",
     "lemma": "stø kurs",
     "english": "a steady course",
@@ -1512,7 +720,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-085",
+    "id": "",
     "norsk": "alderen biter ikke på henne",
     "lemma": "alderen biter ikke på henne",
     "english": "age does not catch up with her",
@@ -1530,7 +738,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-086",
+    "id": "",
     "norsk": "kloss ved",
     "lemma": "kloss ved",
     "english": "right next to",
@@ -1548,7 +756,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-087",
+    "id": "",
     "norsk": "å skyte i været",
     "lemma": "skyte i været",
     "english": "to shoot up",
@@ -1566,7 +774,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-088",
+    "id": "",
     "norsk": "å bukte seg",
     "lemma": "bukte seg",
     "english": "to wind, to meander, to wriggle",
@@ -1584,7 +792,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-089",
+    "id": "",
     "norsk": "å vokte seg vel for",
     "lemma": "vokte seg vel for",
     "english": "to be very careful about",
@@ -1602,7 +810,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-090",
+    "id": "",
     "norsk": "med lua på snei",
     "lemma": "med lua på snei",
     "english": "with one's cap tilted to the side",
@@ -1620,7 +828,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-091",
+    "id": "",
     "norsk": "å brase inn",
     "lemma": "brase inn",
     "english": "to barge in",
@@ -1638,7 +846,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-092",
+    "id": "",
     "norsk": "uten nærmere overveielse (en)",
     "lemma": "uten nærmere overveielse",
     "english": "without further consideration",
@@ -1656,7 +864,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-093",
+    "id": "",
     "norsk": "å kverne rundt i hodet",
     "lemma": "kverne rundt i hodet",
     "english": "to go round and round in one's head",
@@ -1674,7 +882,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-094",
+    "id": "",
     "norsk": "å skvette til",
     "lemma": "skvette til",
     "english": "to flinch; to startle; to jump with fright",
@@ -1692,7 +900,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-095",
+    "id": "",
     "norsk": "å bli tatt på fersken",
     "lemma": "bli tatt på fersken",
     "english": "to be caught in the act, to be caught red-handed",
@@ -1710,7 +918,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-096",
+    "id": "",
     "norsk": "skamrødmen melder seg",
     "lemma": "skamrødmen melder seg",
     "english": "a blush of embarrassment creeps in, one's face turns red with shame",
@@ -1728,7 +936,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-097",
+    "id": "",
     "norsk": "å gi til kjenne",
     "lemma": "gi til kjenne",
     "english": "to make known, to reveal or express openly",
@@ -1746,7 +954,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-098",
+    "id": "",
     "norsk": "å komme som sendt fra oven",
     "lemma": "komme som sendt fra oven",
     "english": "to come as a godsend, to arrive like a gift from heaven",
@@ -1764,7 +972,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-099",
+    "id": "",
     "norsk": "å riste av seg befippelsen",
     "lemma": "riste av seg befippelsen",
     "english": "to shake off the bewilderment, to recover from shock or being flustered",
@@ -1782,7 +990,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-100",
+    "id": "",
     "norsk": "fiskelykken står dem bi",
     "lemma": "fiskelykken står dem bi",
     "english": "luck is on their side when fishing, they are having a good catch",
@@ -1800,7 +1008,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-101",
+    "id": "",
     "norsk": "å sige på",
     "lemma": "sige på",
     "english": "to come on gradually, to advance slowly but steadily in large numbers",
@@ -1818,7 +1026,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-102",
+    "id": "",
     "norsk": "å sanse seg",
     "lemma": "sanse seg",
     "english": "to come to one's senses, to collect oneself and think clearly again",
@@ -1836,7 +1044,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-103",
+    "id": "",
     "norsk": "å stille opp med",
     "lemma": "stille opp med",
     "english": "to come up with something, to contribute or provide something",
@@ -1854,7 +1062,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-104",
+    "id": "",
     "norsk": "å hagle med skjellsord (et)",
     "lemma": "hagle med skjellsord",
     "english": "to rain down insults, to hurl a barrage of abuse",
@@ -1872,7 +1080,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-105",
+    "id": "",
     "norsk": "å stramme en skrue",
     "lemma": "stramme en skrue",
     "english": "to tighten a screw",
@@ -1890,7 +1098,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-106",
+    "id": "",
     "norsk": "å ta seg av",
     "lemma": "ta seg av",
     "english": "to take care of, to look after",
@@ -1908,7 +1116,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-107",
+    "id": "",
     "norsk": "det går ham på nervene",
     "lemma": "det går ham på nervene",
     "english": "it gets on his nerves, it irritates him",
@@ -1926,7 +1134,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-108",
+    "id": "",
     "norsk": "å få gjennomgå",
     "lemma": "få gjennomgå",
     "english": "to get a hard time, to be criticised harshly or to take a beating",
@@ -1944,7 +1152,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-109",
+    "id": "",
     "norsk": "å få endene til å møtes",
     "lemma": "få endene til å møtes",
     "english": "to make ends meet",
@@ -1962,7 +1170,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-110",
+    "id": "",
     "norsk": "å jobbe livet av seg",
     "lemma": "jobbe livet av seg",
     "english": "to work oneself to death, to work extremely hard",
@@ -1980,7 +1188,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-111",
+    "id": "",
     "norsk": "langt inne i granskauen",
     "lemma": "langt inne i granskauen",
     "english": "in the middle of nowhere, deep in the backwoods",
@@ -1998,7 +1206,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-112",
+    "id": "",
     "norsk": "å gå i seg selv",
     "lemma": "gå i seg selv",
     "english": "to reflect on one's own actions, to look inward",
@@ -2016,7 +1224,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-113",
+    "id": "",
     "norsk": "å åle seg",
     "lemma": "åle seg",
     "english": "to wriggle, to crawl, to squirm forward",
@@ -2034,7 +1242,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-114",
+    "id": "",
     "norsk": "å sige nedover",
     "lemma": "sige nedover",
     "english": "to slide downward, or to sink",
@@ -2052,7 +1260,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-115",
+    "id": "",
     "norsk": "å gi etter",
     "lemma": "gi etter",
     "english": "to give way, to collapse under weight",
@@ -2070,7 +1278,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-116",
+    "id": "",
     "norsk": "isen holder",
     "lemma": "isen holder",
     "english": "the ice holds, the ice bears the weight",
@@ -2088,7 +1296,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-117",
+    "id": "",
     "norsk": "isen svikter",
     "lemma": "isen svikter",
     "english": "the ice gives way, the ice fails to hold the weight",
@@ -2106,7 +1314,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-118",
+    "id": "",
     "norsk": "å sno seg",
     "lemma": "sno seg",
     "english": "to wind, to snake, to wriggle",
@@ -2124,7 +1332,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-119",
+    "id": "",
     "norsk": "isen bærer",
     "lemma": "isen bærer",
     "english": "the ice holds, the ice supports the weight",
@@ -2142,7 +1350,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-120",
+    "id": "",
     "norsk": "å kare seg fram",
     "lemma": "kare seg fram",
     "english": "to struggle forward, to make one's way with difficulty",
@@ -2160,7 +1368,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-121",
+    "id": "",
     "norsk": "å lesse på",
     "lemma": "lesse på",
     "english": "to pile on, to load up heavily",
@@ -2178,7 +1386,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-122",
+    "id": "",
     "norsk": "å virvle seg inn i en spiral",
     "lemma": "virvle seg inn i en spiral",
     "english": "to spiral into a negative cycle that is hard to escape",
@@ -2196,7 +1404,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-123",
+    "id": "",
     "norsk": "å klamre seg til",
     "lemma": "klamre seg til",
     "english": "to cling to something",
@@ -2214,7 +1422,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-124",
+    "id": "",
     "norsk": "å legge sitt liv på vektskålen",
     "lemma": "legge sitt liv på vektskålen",
     "english": "to weigh up one's own life and role",
@@ -2232,7 +1440,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-125",
+    "id": "",
     "norsk": "gjøren og laden",
     "lemma": "gjøren og laden",
     "english": "all of one's actions and omissions, one's conduct",
@@ -2250,7 +1458,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-126",
+    "id": "",
     "norsk": "å gå seg selv etter i sømmene",
     "lemma": "gå seg selv etter i sømmene",
     "english": "to examine oneself critically, to look at oneself with a critical eye",
@@ -2268,7 +1476,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-127",
+    "id": "",
     "norsk": "Gjertruds mann fulgte på",
     "lemma": "Gjertruds mann fulgte på",
     "english": "Gertrude's husband followed soon after (i.e. also died shortly after)",
@@ -2286,7 +1494,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-128",
+    "id": "",
     "norsk": "å vandre heden",
     "lemma": "vandre heden",
     "english": "to pass away, to die",
@@ -2304,7 +1512,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-129",
+    "id": "",
     "norsk": "å ha blått blod i årene",
     "lemma": "ha blått blod i årene",
     "english": "to have blue blood, to be of royal or noble descent",
@@ -2322,7 +1530,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-130",
+    "id": "",
     "norsk": "å smatte med tungen",
     "lemma": "smatte med tungen",
     "english": "to click one's tongue as a sign of skepticism or disapproval",
@@ -2340,7 +1548,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-131",
+    "id": "",
     "norsk": "å knipe sammen",
     "lemma": "knipe sammen",
     "english": "to press together, to squeeze shut",
@@ -2358,7 +1566,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-132",
+    "id": "",
     "norsk": "ordene hagler",
     "lemma": "ordene hagler",
     "english": "the words come hailing down, angry words fly fast and furiously",
@@ -2376,7 +1584,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-133",
+    "id": "",
     "norsk": "å knytte nevene",
     "lemma": "knytte nevene",
     "english": "to clench one's fists",
@@ -2394,7 +1602,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-134",
+    "id": "",
     "norsk": "å holde pusten",
     "lemma": "holde pusten",
     "english": "to hold one's breath",
@@ -2412,7 +1620,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-135",
+    "id": "",
     "norsk": "i mils omkrets",
     "lemma": "i mils omkrets",
     "english": "for miles around",
@@ -2430,7 +1638,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-136",
+    "id": "",
     "norsk": "å ta affære",
     "lemma": "ta affære",
     "english": "to take action; to step in",
@@ -2448,7 +1656,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-137",
+    "id": "",
     "norsk": "å forskanse seg",
     "lemma": "forskanse seg",
     "english": "to entrench oneself; to barricade oneself",
@@ -2466,7 +1674,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-138",
+    "id": "",
     "norsk": "å gjøre seg gjeldende",
     "lemma": "gjøre seg gjeldende",
     "english": "to make oneself felt; to assert oneself",
@@ -2484,7 +1692,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-139",
+    "id": "",
     "norsk": "med strev og møye",
     "lemma": "med strev og møye",
     "english": "with great difficulty; through toil and trouble",
@@ -2502,7 +1710,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-140",
+    "id": "",
     "norsk": "å bane seg fram",
     "lemma": "bane seg fram",
     "english": "to forge one's way forward; to push through",
@@ -2520,7 +1728,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-141",
+    "id": "",
     "norsk": "fra sans og samling",
     "lemma": "fra sans og samling",
     "english": "beside oneself; nearly out of one's senses",
@@ -2538,7 +1746,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-142",
+    "id": "",
     "norsk": "å skratte i vilden sky",
     "lemma": "skratte i vilden sky",
     "english": "to laugh loudly and shrilly; to cackle uproariously",
@@ -2556,7 +1764,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-143",
+    "id": "",
     "norsk": "å ta overhånd",
     "lemma": "ta overhånd",
     "english": "to take over; to get the upper hand; to become dominant",
@@ -2574,7 +1782,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-144",
+    "id": "",
     "norsk": "hensunket i seg selv",
     "lemma": "hensunket i seg selv",
     "english": "absorbed in one's own thoughts; lost in oneself",
@@ -2592,7 +1800,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-145",
+    "id": "",
     "norsk": "å krible etter",
     "lemma": "krible etter",
     "english": "to be itching to do something; to eagerly look forward to something",
@@ -2610,7 +1818,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-146",
+    "id": "",
     "norsk": "å låne øre til",
     "lemma": "låne øre til",
     "english": "to lend an ear to; to listen willingly to someone",
@@ -2628,7 +1836,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-147",
+    "id": "",
     "norsk": "å tygge på ordene",
     "lemma": "tygge på ordene",
     "english": "to chew on the words; to think carefully about what is being said",
@@ -2646,7 +1854,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-148",
+    "id": "",
     "norsk": "å forstå noe til bunns",
     "lemma": "forstå noe til bunns",
     "english": "to understand something thoroughly; to grasp something deeply",
@@ -2664,7 +1872,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-149",
+    "id": "",
     "norsk": "å late til å",
     "lemma": "late til å",
     "english": "to seem to; to appear to",
@@ -2682,7 +1890,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-150",
+    "id": "",
     "norsk": "kraftsalver brer om seg",
     "lemma": "kraftsalver brer om seg",
     "english": "strong language is spreading; angry words and curses are flying",
@@ -2700,7 +1908,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-151",
+    "id": "",
     "norsk": "å være sugen på",
     "lemma": "være sugen på",
     "english": "to be in the mood for; to feel like something; to crave something",
@@ -2718,7 +1926,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-152",
+    "id": "",
     "norsk": "å besinne seg",
     "lemma": "besinne seg",
     "english": "to collect oneself; to think twice; to get a grip",
@@ -2736,7 +1944,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-153",
+    "id": "",
     "norsk": "å le kneggende",
     "lemma": "le kneggende",
     "english": "to laugh with a high-pitched, snorting laugh; to whinny with laughter",
@@ -2754,7 +1962,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-154",
+    "id": "",
     "norsk": "å kyle noe i veggen",
     "lemma": "kyle noe i veggen",
     "english": "to hurl something against the wall",
@@ -2772,7 +1980,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-155",
+    "id": "",
     "norsk": "å bli ertet",
     "lemma": "bli ertet",
     "english": "to be teased; to be taunted",
@@ -2790,7 +1998,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-156",
+    "id": "",
     "norsk": "å være tom for kjekke ord",
     "lemma": "være tom for kjekke ord",
     "english": "to have run out of clever remarks; to be at a loss for a comeback",
@@ -2808,7 +2016,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-157",
+    "id": "",
     "norsk": "å forplante seg",
     "lemma": "forplante seg",
     "english": "to spread; to propagate",
@@ -2826,7 +2034,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-158",
+    "id": "",
     "norsk": "å grafse til seg",
     "lemma": "grafse til seg",
     "english": "to grab greedily for oneself; to help oneself to too much without sharing",
@@ -2844,7 +2052,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-159",
+    "id": "",
     "norsk": "å leve i fred og fordragelighet",
     "lemma": "leve i fred og fordragelighet",
     "english": "to live in peace and harmony; to get along without conflict",
@@ -2862,7 +2070,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-160",
+    "id": "",
     "norsk": "fra høyere hold",
     "lemma": "fra høyere hold",
     "english": "from higher up; from those in authority; from above",
@@ -2880,7 +2088,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-161",
+    "id": "",
     "norsk": "å bli var",
     "lemma": "bli var",
     "english": "to become aware of something; to notice something",
@@ -2898,7 +2106,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-162",
+    "id": "",
     "norsk": "å forsvinne i løse luften",
     "lemma": "forsvinne i løse luften",
     "english": "to vanish into thin air",
@@ -2916,7 +2124,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-163",
+    "id": "",
     "norsk": "å stikke noe til noen",
     "lemma": "stikke noe til noen",
     "english": "to slip something to someone; to hand someone something quickly and discreetly",
@@ -2934,7 +2142,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-164",
+    "id": "",
     "norsk": "å ta seg i å lure på noe",
     "lemma": "ta seg i å lure på noe",
     "english": "to catch oneself wondering about something",
@@ -2952,7 +2160,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-165",
+    "id": "",
     "norsk": "klok av skade",
     "lemma": "klok av skade",
     "english": "wiser from experience; having learned from past mistakes",
@@ -2970,7 +2178,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-166",
+    "id": "",
     "norsk": "å vokte seg vel",
     "lemma": "vokte seg vel",
     "english": "to be very careful; to watch out; to guard oneself well against something",
@@ -2988,7 +2196,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-167",
+    "id": "",
     "norsk": "rakt ut",
     "lemma": "rakt ut",
     "english": "straight out; directly; bluntly",
@@ -3006,7 +2214,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-168",
+    "id": "",
     "norsk": "i samme slengen",
     "lemma": "i samme slengen",
     "english": "while at it; at the same time; in the same go",
@@ -3024,7 +2232,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-169",
+    "id": "",
     "norsk": "nervene løper løpsk",
     "lemma": "nervene løper løpsk",
     "english": "nerves run wild; to lose control of one's nerves",
@@ -3042,7 +2250,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-170",
+    "id": "",
     "norsk": "ikke før",
     "lemma": "ikke før",
     "english": "no sooner; just at the moment when; barely",
@@ -3060,7 +2268,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-171",
+    "id": "",
     "norsk": "å være ute av seg",
     "lemma": "være ute av seg",
     "english": "to be beside oneself; to be frustrated and distressed",
@@ -3078,7 +2286,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-172",
+    "id": "",
     "norsk": "å kvekke til",
     "lemma": "kvekke til",
     "english": "to flinch; to give a sudden jolt of the body out of fright",
@@ -3096,7 +2304,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-173",
+    "id": "",
     "norsk": "å feste seg ved noe",
     "lemma": "feste seg ved noe",
     "english": "to take notice of something; to fix one's attention on something",
@@ -3114,7 +2322,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-174",
+    "id": "",
     "norsk": "i villrede",
     "lemma": "i villrede",
     "english": "uncertain; at a loss; not knowing what to do",
@@ -3132,7 +2340,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-175",
+    "id": "",
     "norsk": "å dra kjensel på",
     "lemma": "dra kjensel på",
     "english": "to recognise; to identify someone or something",
@@ -3150,7 +2358,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-176",
+    "id": "",
     "norsk": "å sitte som spikret",
     "lemma": "sitte som spikret",
     "english": "to sit frozen to the spot; to be completely rooted to one's seat",
@@ -3168,7 +2376,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-177",
+    "id": "",
     "norsk": "man kan høre en knappenål falle",
     "lemma": "man kan høre en knappenål falle",
     "english": "you could hear a pin drop; used to express that it is extremely quiet",
@@ -3186,7 +2394,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-178",
+    "id": "",
     "norsk": "å hviske og tiske",
     "lemma": "hviske og tiske",
     "english": "to whisper and chatter eagerly together; to talk in hushed, animated tones",
@@ -3204,7 +2412,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-179",
+    "id": "",
     "norsk": "å holde styr på",
     "lemma": "holde styr på",
     "english": "to keep track of; to maintain control over; to keep on top of",
@@ -3222,7 +2430,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-180",
+    "id": "",
     "norsk": "å segne om",
     "lemma": "segne om",
     "english": "to collapse; to fall straight down; to keel over",
@@ -3240,7 +2448,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-181",
+    "id": "",
     "norsk": "å la skole være skole",
     "lemma": "la skole være skole",
     "english": "to let school be school; to not worry about school for a while",
@@ -3258,7 +2466,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-182",
+    "id": "",
     "norsk": "å betro seg til",
     "lemma": "betro seg til",
     "english": "to confide in someone; to open up and share one's innermost thoughts",
@@ -3276,7 +2484,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-183",
+    "id": "",
     "norsk": "å gjøre opprør",
     "lemma": "gjøre opprør",
     "english": "to rebel; to rise up against authorities or those in power",
@@ -3294,7 +2502,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-184",
+    "id": "",
     "norsk": "å gjøre seg flid med noe",
     "lemma": "gjøre seg flid med noe",
     "english": "to take great care with something; to work hard on something",
@@ -3312,7 +2520,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-185",
+    "id": "",
     "norsk": "med rubb og rake",
     "lemma": "med rubb og rake",
     "english": "everything and everyone; lock, stock, and barrel; every last bit",
@@ -3330,7 +2538,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-186",
+    "id": "",
     "norsk": "det går i ett",
     "lemma": "det går i ett",
     "english": "it goes on without a break; everything happens non-stop",
@@ -3348,7 +2556,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-187",
+    "id": "",
     "norsk": "å synes synd på noen",
     "lemma": "synes synd på noen",
     "english": "to feel sorry for someone; to pity someone",
@@ -3366,7 +2574,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-188",
+    "id": "",
     "norsk": "å lirke inn",
     "lemma": "lirke inn",
     "english": "to maneuver something in gradually; to work one's way in little by little",
@@ -3384,7 +2592,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-189",
+    "id": "",
     "norsk": "selv den skarpeste",
     "lemma": "selv den skarpeste",
     "english": "even the sharpest mind; even the most intelligent person",
@@ -3402,7 +2610,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-190",
+    "id": "",
     "norsk": "å ta fyr",
     "lemma": "ta fyr",
     "english": "to catch fire; to lose one's temper; to flare up",
@@ -3420,7 +2628,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-191",
+    "id": "",
     "norsk": "propellen er i gang",
     "lemma": "propellen er i gang",
     "english": "the ball is rolling",
@@ -3438,7 +2646,7 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-192",
+    "id": "",
     "norsk": "å tylle i seg",
     "lemma": "tylle i seg",
     "english": "to guzzle down",

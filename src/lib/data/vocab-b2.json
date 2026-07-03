@@ -3799,8 +3799,8 @@
   },
   {
     "id": "v-b2-advanced-adjectives-072",
-    "norsk": "utallige",
-    "lemma": "utallige",
+    "norsk": "utallig",
+    "lemma": "utallig",
     "english": "countless, innumerable",
     "ukrainian": "незліченний, безліч",
     "spanish": "incontables",
@@ -3907,24 +3907,6 @@
   },
   {
     "id": "v-b2-advanced-adjectives-078",
-    "norsk": "rar",
-    "lemma": "rar",
-    "english": "strange / weird",
-    "ukrainian": "дивно",
-    "spanish": "raro / extraño",
-    "german": "seltsam / komisch",
-    "example": "Det var et rart vær i dag med både snø og sol samtidig.",
-    "example_english": "It was strange weather today with both snow and sun at the same time.",
-    "example_ukrainian": "Сьогодні була дивна погода з одночасним снігом і сонцем.",
-    "example_spanish": "Hizo un clima extraño hoy con nieve y sol al mismo tiempo.",
-    "example_german": "Das Wetter war heute seltsam - es gab gleichzeitig Schnee und Sonne.",
-    "definition": "merkelig",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
-    "id": "v-b2-advanced-adjectives-079",
     "norsk": "tilfeldig",
     "lemma": "tilfeldig",
     "english": "accidental / random",
@@ -3942,7 +3924,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-080",
+    "id": "v-b2-advanced-adjectives-079",
     "norsk": "fortreffelig",
     "lemma": "fortreffelig",
     "english": "excellent / superb",
@@ -3960,7 +3942,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-081",
+    "id": "v-b2-advanced-adjectives-080",
     "norsk": "ubeskrivelig",
     "lemma": "ubeskrivelig",
     "english": "indescribable",
@@ -3978,7 +3960,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-082",
+    "id": "v-b2-advanced-adjectives-081",
     "norsk": "teit",
     "lemma": "teit",
     "english": "silly / stupid",
@@ -3996,7 +3978,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-083",
+    "id": "v-b2-advanced-adjectives-082",
     "norsk": "sjenerøs",
     "lemma": "sjenerøs",
     "english": "generous",
@@ -4014,7 +3996,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-084",
+    "id": "v-b2-advanced-adjectives-083",
     "norsk": "dyrkbar",
     "lemma": "dyrkbar",
     "english": "arable, cultivable",
@@ -4032,25 +4014,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-085",
-    "norsk": "mild",
-    "lemma": "mild",
-    "english": "mild, gentle",
-    "ukrainian": "м'який, помірний (про клімат)",
-    "spanish": "templado, suave",
-    "german": "mild, sanft",
-    "example": "Vinteren på vestlandet er vanligvis veldig mild.",
-    "example_english": "The winter on the west coast is usually very mild.",
-    "example_ukrainian": "Зима на західному узбережжі зазвичай дуже м'яка.",
-    "example_spanish": "El invierno en la costa oeste suele ser muy templado.",
-    "example_german": "Der Winter im Westen Norwegens ist normalerweise sehr mild.",
-    "definition": "mellom kald og varm",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
-    "id": "v-b2-advanced-adjectives-086",
+    "id": "v-b2-advanced-adjectives-084",
     "norsk": "spredt",
     "lemma": "spredt",
     "english": "scattered, dispersed",
@@ -4068,7 +4032,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-087",
+    "id": "v-b2-advanced-adjectives-085",
     "norsk": "bred",
     "lemma": "bred",
     "english": "wide, broad",
@@ -4086,7 +4050,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-088",
+    "id": "v-b2-advanced-adjectives-086",
     "norsk": "motsatt",
     "lemma": "motsatt",
     "english": "opposite, contrary",
@@ -4104,7 +4068,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-089",
+    "id": "v-b2-advanced-adjectives-087",
     "norsk": "frossen",
     "lemma": "frossen",
     "english": "frozen",
@@ -4122,7 +4086,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-090",
+    "id": "v-b2-advanced-adjectives-088",
     "norsk": "effektiv",
     "lemma": "effektiv",
     "english": "effective, efficient",
@@ -4140,7 +4104,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-091",
+    "id": "v-b2-advanced-adjectives-089",
     "norsk": "nyttig",
     "lemma": "nyttig",
     "english": "useful, helpful",
@@ -4158,7 +4122,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-092",
+    "id": "v-b2-advanced-adjectives-090",
     "norsk": "betydelig",
     "lemma": "betydelig",
     "english": "significant, considerable, substantial",
@@ -4176,7 +4140,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-093",
+    "id": "v-b2-advanced-adjectives-091",
     "norsk": "samlende",
     "lemma": "samlende",
     "english": "unifying",
@@ -4194,7 +4158,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-094",
+    "id": "v-b2-advanced-adjectives-092",
     "norsk": "aktuell",
     "lemma": "aktuell",
     "english": "current, relevant, topical",
@@ -4212,7 +4176,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-095",
+    "id": "v-b2-advanced-adjectives-093",
     "norsk": "attraktiv",
     "lemma": "attraktiv",
     "english": "attractive",
@@ -4230,7 +4194,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-096",
+    "id": "v-b2-advanced-adjectives-094",
     "norsk": "styrket",
     "lemma": "styrket",
     "english": "strengthened",
@@ -4248,7 +4212,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-097",
+    "id": "v-b2-advanced-adjectives-095",
     "norsk": "nådig",
     "lemma": "nådig",
     "english": "merciful, gracious",
@@ -4266,9 +4230,9 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-098",
-    "norsk": "enkelte",
-    "lemma": "enkelte",
+    "id": "v-b2-advanced-adjectives-096",
+    "norsk": "enkelt",
+    "lemma": "enkelt",
     "english": "some, individual",
     "ukrainian": "деякі, окремі",
     "spanish": "algunos, ciertos",
@@ -4284,7 +4248,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-099",
+    "id": "v-b2-advanced-adjectives-097",
     "norsk": "uendelig",
     "lemma": "uendelig",
     "english": "infinite, endless",
@@ -4302,7 +4266,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-100",
+    "id": "v-b2-advanced-adjectives-098",
     "norsk": "krållete",
     "lemma": "krållete",
     "english": "wrinkled, curly",
@@ -4320,7 +4284,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-101",
+    "id": "v-b2-advanced-adjectives-099",
     "norsk": "rask",
     "lemma": "rask",
     "english": "fast, quick",
@@ -4338,7 +4302,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-102",
+    "id": "v-b2-advanced-adjectives-100",
     "norsk": "sensitiv",
     "lemma": "sensitiv",
     "english": "sensitive",
@@ -4356,7 +4320,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-103",
+    "id": "v-b2-advanced-adjectives-101",
     "norsk": "feilaktig",
     "lemma": "feilaktig",
     "english": "incorrect, erroneous",
@@ -4374,7 +4338,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-104",
+    "id": "v-b2-advanced-adjectives-102",
     "norsk": "bekymringsfullt",
     "lemma": "bekymringsfullt",
     "english": "worrying, alarming",
@@ -4392,7 +4356,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-advanced-adjectives-105",
+    "id": "v-b2-advanced-adjectives-103",
     "norsk": "konstruktiv",
     "lemma": "konstruktiv",
     "english": "constructive",
@@ -4410,7 +4374,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-106",
+    "id": "v-b2-advanced-adjectives-104",
     "norsk": "ansvarlig",
     "lemma": "ansvarlig",
     "english": "responsible",
@@ -4428,7 +4392,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-107",
+    "id": "v-b2-advanced-adjectives-105",
     "norsk": "minimal",
     "lemma": "minimal",
     "english": "minimal",
@@ -4446,7 +4410,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-108",
+    "id": "v-b2-advanced-adjectives-106",
     "norsk": "verdifull",
     "lemma": "verdifull",
     "english": "valuable",
@@ -4464,7 +4428,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-109",
+    "id": "v-b2-advanced-adjectives-107",
     "norsk": "ubetydelig",
     "lemma": "ubetydelig",
     "english": "insignificant, negligible",
@@ -4482,7 +4446,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-110",
+    "id": "v-b2-advanced-adjectives-108",
     "norsk": "voldsomt",
     "lemma": "voldsomt",
     "english": "violently, tremendously",
@@ -4500,7 +4464,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-advanced-adjectives-111",
+    "id": "v-b2-advanced-adjectives-109",
     "norsk": "ekstremt",
     "lemma": "ekstremt",
     "english": "extremely",
@@ -4518,25 +4482,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-advanced-adjectives-112",
-    "norsk": "utallig",
-    "lemma": "utallig",
-    "english": "countless",
-    "ukrainian": "незліченний",
-    "spanish": "innumerable",
-    "german": "unzahlig",
-    "example": "Hun har brukt utallige timer på å skrive masteroppgaven.",
-    "example_english": "She has spent countless hours writing her master's thesis.",
-    "example_ukrainian": "Вона витратила незліченну кількість годин на написання магістерської роботи.",
-    "example_spanish": "Ella ha pasado innumerables horas escribiendo su tesis de maestría.",
-    "example_german": "Sie hat unzahlige Stunden damit verbracht, ihre Masterarbeit zu schreiben.",
-    "definition": "veldig mange, for mange til å telles",
-    "level": "B2",
-    "category": "advanced-adjectives",
-    "part": "adjective"
-  },
-  {
-    "id": "v-b2-advanced-adjectives-113",
+    "id": "v-b2-advanced-adjectives-110",
     "norsk": "drastisk",
     "lemma": "drastisk",
     "english": "drastic",
@@ -4554,7 +4500,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-114",
+    "id": "v-b2-advanced-adjectives-111",
     "norsk": "fullstendig",
     "lemma": "fullstendig",
     "english": "complete, total",
@@ -4572,7 +4518,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-115",
+    "id": "v-b2-advanced-adjectives-112",
     "norsk": "akseptabelt",
     "lemma": "akseptabelt",
     "english": "acceptable",
@@ -4590,7 +4536,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-116",
+    "id": "v-b2-advanced-adjectives-113",
     "norsk": "seriøs",
     "lemma": "seriøs",
     "english": "serious, responsible",
@@ -4608,7 +4554,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-117",
+    "id": "v-b2-advanced-adjectives-114",
     "norsk": "kritikkverdig",
     "lemma": "kritikkverdig",
     "english": "blameworthy, censurable, open to criticism",
@@ -4626,7 +4572,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-118",
+    "id": "v-b2-advanced-adjectives-115",
     "norsk": "medfødt",
     "lemma": "medfødt",
     "english": "innate, congenital, inborn",
@@ -4644,7 +4590,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-119",
+    "id": "v-b2-advanced-adjectives-116",
     "norsk": "voldsom",
     "lemma": "voldsom",
     "english": "violent, powerful, fierce",
@@ -4662,7 +4608,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-120",
+    "id": "v-b2-advanced-adjectives-117",
     "norsk": "formidabel",
     "lemma": "formidabel",
     "english": "formidable, tremendous",
@@ -4680,7 +4626,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-121",
+    "id": "v-b2-advanced-adjectives-118",
     "norsk": "nærgående",
     "lemma": "nærgående",
     "english": "intrusive, pushy",
@@ -4698,7 +4644,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-advanced-adjectives-122",
+    "id": "v-b2-advanced-adjectives-119",
     "norsk": "uberørt",
     "lemma": "uberørt",
     "english": "untouched, pristine",
@@ -6013,24 +5959,6 @@
   },
   {
     "id": "v-b2-advanced-verbs-073",
-    "norsk": "å gidde",
-    "lemma": "gidde",
-    "english": "to bother, to take the trouble to",
-    "ukrainian": "мати бажання, спромогтися (щось зробити)",
-    "spanish": "molestarse en, tener ganas de",
-    "german": "sich die Mühe machen, Lust haben",
-    "example": "Jeg gadd ikke å lage middag i går, så jeg bestilte pizza.",
-    "example_english": "I didn't bother to cook dinner yesterday, so I ordered pizza.",
-    "example_ukrainian": "Вчора мені не хотілося готувати вечерю, тому я замовив піцу.",
-    "example_spanish": "No me molesté en hacer la cena ayer, así que pedí pizza.",
-    "example_german": "Ich hatte gestern keine Lust zu kochen, also habe ich Pizza bestellt.",
-    "definition": "orke, ha lyst til",
-    "level": "B2",
-    "category": "advanced-verbs",
-    "part": "verb"
-  },
-  {
-    "id": "v-b2-advanced-verbs-074",
     "norsk": "å bevege seg",
     "lemma": "bevege seg",
     "english": "to move",
@@ -6048,7 +5976,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-075",
+    "id": "v-b2-advanced-verbs-074",
     "norsk": "å endre",
     "lemma": "endre",
     "english": "to change, alter",
@@ -6066,7 +5994,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-076",
+    "id": "v-b2-advanced-verbs-075",
     "norsk": "å vrake",
     "lemma": "vrake",
     "english": "to discard, reject",
@@ -6084,7 +6012,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-077",
+    "id": "v-b2-advanced-verbs-076",
     "norsk": "å gjette",
     "lemma": "gjette",
     "english": "to guess",
@@ -6102,7 +6030,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-078",
+    "id": "v-b2-advanced-verbs-077",
     "norsk": "å fronte",
     "lemma": "fronte",
     "english": "to front, champion, spearhead",
@@ -6120,7 +6048,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-079",
+    "id": "v-b2-advanced-verbs-078",
     "norsk": "å motarbeide",
     "lemma": "motarbeide",
     "english": "to counteract, oppose, work against",
@@ -6138,7 +6066,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-080",
+    "id": "v-b2-advanced-verbs-079",
     "norsk": "å utebli",
     "lemma": "utebli",
     "english": "to fail to appear, be absent",
@@ -6156,7 +6084,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-081",
+    "id": "v-b2-advanced-verbs-080",
     "norsk": "å stenge",
     "lemma": "stenge",
     "english": "to close, shut down",
@@ -6174,7 +6102,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-082",
+    "id": "v-b2-advanced-verbs-081",
     "norsk": "å overse",
     "lemma": "overse",
     "english": "to overlook, ignore",
@@ -6192,7 +6120,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-083",
+    "id": "v-b2-advanced-verbs-082",
     "norsk": "å misbruke",
     "lemma": "misbruke",
     "english": "to misuse, abuse",
@@ -6210,7 +6138,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-084",
+    "id": "v-b2-advanced-verbs-083",
     "norsk": "å egne seg",
     "lemma": "egne seg",
     "english": "be suitable, fit",
@@ -6228,7 +6156,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-085",
+    "id": "v-b2-advanced-verbs-084",
     "norsk": "å undervurdere",
     "lemma": "undervurdere",
     "english": "underestimate",
@@ -6246,7 +6174,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-086",
+    "id": "v-b2-advanced-verbs-085",
     "norsk": "å overlate",
     "lemma": "overlate",
     "english": "leave, hand over",
@@ -6264,7 +6192,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-087",
+    "id": "v-b2-advanced-verbs-086",
     "norsk": "å foreta",
     "lemma": "foreta",
     "english": "undertake, make, carry out",
@@ -6282,7 +6210,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-088",
+    "id": "v-b2-advanced-verbs-087",
     "norsk": "å spekulere",
     "lemma": "spekulere",
     "english": "speculate",
@@ -6300,7 +6228,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-089",
+    "id": "v-b2-advanced-verbs-088",
     "norsk": "å hamre",
     "lemma": "hamre",
     "english": "hammer, pound",
@@ -6318,7 +6246,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-090",
+    "id": "v-b2-advanced-verbs-089",
     "norsk": "å hugge",
     "lemma": "hugge",
     "english": "chop, hew",
@@ -6336,7 +6264,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-091",
+    "id": "v-b2-advanced-verbs-090",
     "norsk": "å hevne",
     "lemma": "hevne",
     "english": "avenge, take revenge",
@@ -6354,7 +6282,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-092",
+    "id": "v-b2-advanced-verbs-091",
     "norsk": "pådriver (en)",
     "lemma": "pådriver",
     "english": "driving force, instigator",
@@ -6372,7 +6300,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-advanced-verbs-093",
+    "id": "v-b2-advanced-verbs-092",
     "norsk": "å ramme",
     "lemma": "ramme",
     "english": "to affect, hit, impact (negatively)",
@@ -13609,24 +13537,6 @@
   },
   {
     "id": "v-b2-emotions-049",
-    "norsk": "reservert",
-    "lemma": "reservert",
-    "english": "reserved, cautious",
-    "ukrainian": "стриманий, обережний",
-    "spanish": "reservado, cauteloso",
-    "german": "zurückhaltend",
-    "example": "Hun er ofte litt reservert overfor fremmede mennesker.",
-    "example_english": "She is often a bit reserved towards strangers.",
-    "example_ukrainian": "Вона часто трохи стримана з незнайомцями.",
-    "example_spanish": "A menudo es un poco reservada con los desconocidos.",
-    "example_german": "Sie ist fremden Menschen gegenüber oft etwas zurückhaltend.",
-    "definition": "forsiktig, tilbakeholden",
-    "level": "B2",
-    "category": "emotions",
-    "part": "adjective"
-  },
-  {
-    "id": "v-b2-emotions-050",
     "norsk": "klein",
     "lemma": "klein",
     "english": "awkward, uncomfortable",
@@ -13644,7 +13554,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-051",
+    "id": "v-b2-emotions-050",
     "norsk": "medgang (en)",
     "lemma": "medgang",
     "english": "prosperity, good times",
@@ -13662,7 +13572,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-emotions-052",
+    "id": "v-b2-emotions-051",
     "norsk": "motgang (en)",
     "lemma": "motgang",
     "english": "adversity, hardship",
@@ -13680,7 +13590,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-emotions-053",
+    "id": "v-b2-emotions-052",
     "norsk": "oppfarende",
     "lemma": "oppfarende",
     "english": "short-tempered, hot-headed",
@@ -13698,7 +13608,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-054",
+    "id": "v-b2-emotions-053",
     "norsk": "å bekymre",
     "lemma": "bekymre",
     "english": "to worry, cause anxiety",
@@ -13716,7 +13626,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-emotions-055",
+    "id": "v-b2-emotions-054",
     "norsk": "å grøsse",
     "lemma": "grøsse",
     "english": "to shudder, shiver",
@@ -13734,7 +13644,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-emotions-056",
+    "id": "v-b2-emotions-055",
     "norsk": "forbanna",
     "lemma": "forbanna",
     "english": "furious, pissed off",
@@ -13752,7 +13662,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-057",
+    "id": "v-b2-emotions-056",
     "norsk": "målløs",
     "lemma": "målløs",
     "english": "speechless",
@@ -13770,7 +13680,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-058",
+    "id": "v-b2-emotions-057",
     "norsk": "fristende",
     "lemma": "fristende",
     "english": "tempting",
@@ -13788,7 +13698,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-059",
+    "id": "v-b2-emotions-058",
     "norsk": "å overraske",
     "lemma": "overraske",
     "english": "to surprise",
@@ -13806,7 +13716,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-emotions-060",
+    "id": "v-b2-emotions-059",
     "norsk": "skummel",
     "lemma": "skummel",
     "english": "scary, creepy",
@@ -13824,7 +13734,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-061",
+    "id": "v-b2-emotions-060",
     "norsk": "uvilje (en)",
     "lemma": "uvilje",
     "english": "reluctance, resentment, ill will",
@@ -13842,25 +13752,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-emotions-062",
-    "norsk": "skam (en)",
-    "lemma": "skam",
-    "english": "shame",
-    "ukrainian": "сором",
-    "spanish": "vergüenza, lástima",
-    "german": "Scham (die)",
-    "example": "Hun følte en dyp skam etter å ha løyet for foreldrene.",
-    "example_english": "She felt a deep shame after lying to her parents.",
-    "example_ukrainian": "Вона відчула глибокий сором після того, як збрехала батькам.",
-    "example_spanish": "Ella sintió una profunda vergüenza después de mentirles a sus padres.",
-    "example_german": "Sie fühlte eine tiefe Scham, nachdem sie ihre Eltern belogen hatte.",
-    "definition": "det å føle at man har gjort noe galt",
-    "level": "B2",
-    "category": "emotions",
-    "part": "noun"
-  },
-  {
-    "id": "v-b2-emotions-063",
+    "id": "v-b2-emotions-061",
     "norsk": "aggressiv",
     "lemma": "aggressiv",
     "english": "aggressive",
@@ -13878,7 +13770,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-064",
+    "id": "v-b2-emotions-062",
     "norsk": "lengsel (en)",
     "lemma": "lengsel",
     "english": "longing, yearning",
@@ -13896,7 +13788,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-emotions-065",
+    "id": "v-b2-emotions-063",
     "norsk": "skamfull",
     "lemma": "skamfull",
     "english": "shameful, ashamed",
@@ -13914,7 +13806,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-emotions-066",
+    "id": "v-b2-emotions-064",
     "norsk": "hevn (en)",
     "lemma": "hevn",
     "english": "revenge, vengeance",
@@ -13932,7 +13824,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-emotions-067",
+    "id": "v-b2-emotions-065",
     "norsk": "frykt (en)",
     "lemma": "frykt",
     "english": "fear",
@@ -19549,9 +19441,9 @@
   },
   {
     "id": "v-b2-law-047",
-    "norsk": "mildere",
-    "lemma": "mildere",
-    "english": "milder / more lenient",
+    "norsk": "mild",
+    "lemma": "mild",
+    "english": "mild / lenient",
     "ukrainian": "м'якший / поблажливіший",
     "spanish": "más leve / más benévolo",
     "german": "milder / weniger streng",
@@ -26515,8 +26407,8 @@
   },
   {
     "id": "v-b2-science-004",
-    "norsk": "en banebrytende",
-    "lemma": "en banebrytende",
+    "norsk": "banebrytende",
+    "lemma": "banebrytende",
     "english": "groundbreaking / pioneering",
     "ukrainian": "новаторський / проривний",
     "spanish": "innovador / pionero",
