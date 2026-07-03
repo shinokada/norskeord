@@ -292,6 +292,30 @@ async function callClaude(prompt) {
   }
 }
 
+// Generated-field completeness check — a batch item can come back with
+// lemma/english/example present (enough to look like a "hit") while silently
+// missing one of the translation or example_* fields for a given language.
+// Treating that as a success would merge empty strings straight into
+// production data (see check-vocab.mjs "missing translation" warnings), so
+// every one of these fields must be a non-empty string before we accept it.
+const REQUIRED_GENERATED_FIELDS = [
+  'english',
+  'ukrainian',
+  'spanish',
+  'german',
+  'example',
+  'example_english',
+  'example_ukrainian',
+  'example_spanish',
+  'example_german'
+];
+
+function missingGeneratedFields(item) {
+  return REQUIRED_GENERATED_FIELDS.filter(
+    (field) => item[field] == null || (typeof item[field] === 'string' && item[field].trim() === '')
+  );
+}
+
 async function withRetry(fn, label) {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
@@ -332,14 +356,7 @@ function mergeEntry(extracted, generated, isExpression) {
 
 // ── Process one set (words or expressions) ───────────────────────────────
 
-async function processSet({
-  label,
-  extractedPath,
-  outPath,
-  isExpression,
-  buildPrompt,
-  catCounts
-}) {
+async function processSet({ label, extractedPath, outPath, isExpression, buildPrompt, catCounts }) {
   console.log(`\n📄  ${label}`);
 
   const extracted = readJsonArray(extractedPath);
@@ -383,12 +400,19 @@ async function processSet({
 
     let hits = 0;
     for (const item of generated) {
-      if (item.lemma && item.english && item.example) {
-        results.set(item.lemma, item);
-        hits++;
-      } else {
-        console.warn(`\n    ⚠️  Incomplete result for lemma="${item.lemma}"`);
+      if (!item.lemma) {
+        console.warn(`\n    ⚠️  Result missing "lemma" — cannot match to an entry, skipping`);
+        continue;
       }
+      const missingFields = missingGeneratedFields(item);
+      if (missingFields.length > 0) {
+        console.warn(
+          `\n    ⚠️  Incomplete result for lemma="${item.lemma}" — missing: ${missingFields.join(', ')}`
+        );
+        continue;
+      }
+      results.set(item.lemma, item);
+      hits++;
     }
     console.log(`✓ (${hits}/${batch.length} enriched)`);
 
