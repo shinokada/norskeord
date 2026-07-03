@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.48.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a new vocabulary review workflow for converting image-based content into draft JSON, enriching it, assigning IDs, and merging it into production.
+    - Added an adjective audit report and filtering tools to help review flagged entries more easily.
+  - **Bug Fixes**
+    - Corrected several vocabulary entries and lemmas for more accurate forms.
+    - Removed incorrect indefinite articles from some entries.
+  - **Documentation**
+    - Added guidance for the new workflow and updated conversion instructions.
+
 ## 2.47.0
 
 ### Minor Changes
