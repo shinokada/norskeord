@@ -14,14 +14,15 @@ export const GET: RequestHandler = async () => {
 
   // Build all public [level]/[category] param pairs (free categories only)
   // super-sitemap expects an array of tuples: [[level, category], ...]
+  // C now shares the same [level]/[category] route as A1–B2.
   const levelCategoryPairs: [string, string][] = [];
 
-  // C level is handled separately via the dedicated /c/[category] route
   const levelEntries: [string, readonly string[]][] = [
     ['a1', CATEGORIES_BY_LEVEL['A1']],
     ['a2', CATEGORIES_BY_LEVEL['A2']],
     ['b1', CATEGORIES_BY_LEVEL['B1']],
-    ['b2', CATEGORIES_BY_LEVEL['B2']]
+    ['b2', CATEGORIES_BY_LEVEL['B2']],
+    ['c', CATEGORIES_BY_LEVEL['C']]
   ];
 
   for (const [level, cats] of levelEntries) {
@@ -32,22 +33,16 @@ export const GET: RequestHandler = async () => {
     }
   }
 
-  // Build free C categories for the dedicated /c/[category] route
-  const cCategories: [string][] = CATEGORIES_BY_LEVEL['C']
-    .filter((cat) => !PLUS_CATEGORIES.has(`c/${cat}`))
-    .map((cat) => [cat]);
-
   // Free grammar topics for /grammar/[topic]
   const grammarTopics: [string][] = [...FREE_GRAMMAR_TOPICS].map((topic) => [topic]);
 
-  // CEFR levels for /learn/[level] — only a1–b2; /learn/c is a separate static route
-  const learnLevels: [string][] = ['a1', 'a2', 'b1', 'b2'].map((l) => [l]);
+  // CEFR levels for /learn/[level] — /learn/c now shares this dynamic route too
+  const learnLevels: [string][] = ['a1', 'a2', 'b1', 'b2', 'c'].map((l) => [l]);
 
   return await sitemap.response({
     origin: 'https://norskeord.no',
     paramValues: {
       '/[level]/[category]': levelCategoryPairs,
-      '/c/[category]': cCategories,
       '/blog/[slug]': blogSlugs,
       '/grammar/[topic]': grammarTopics,
       '/learn/[level]': learnLevels

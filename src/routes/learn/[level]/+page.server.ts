@@ -10,13 +10,14 @@ import { parsePosts, type RawPostModule, cefrLevels } from '$lib/blog';
 
 export const prerender = false;
 
-const VALID_LEVELS = new Set(['a1', 'a2', 'b1', 'b2']);
+const VALID_LEVELS = new Set(['a1', 'a2', 'b1', 'b2', 'c']);
 
 const CEFR_LABELS: Record<string, string> = {
   a1: 'Beginner',
   a2: 'Elementary',
   b1: 'Intermediate',
-  b2: 'Upper Intermediate'
+  b2: 'Upper Intermediate',
+  c: 'Mastery'
 };
 
 export const load: PageServerLoad = async ({ params }) => {

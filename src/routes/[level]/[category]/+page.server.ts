@@ -16,7 +16,9 @@ const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   a1: () => import('$lib/data/vocab-a1.json') as unknown as Promise<{ default: VocabEntry[] }>,
   a2: () => import('$lib/data/vocab-a2.json') as unknown as Promise<{ default: VocabEntry[] }>,
   b1: () => import('$lib/data/vocab-b1.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  b2: () => import('$lib/data/vocab-b2.json') as unknown as Promise<{ default: VocabEntry[] }>
+  b2: () => import('$lib/data/vocab-b2.json') as unknown as Promise<{ default: VocabEntry[] }>,
+  // C1/C2 were merged into a single combined deck — see vocab-c.json
+  c: () => import('$lib/data/vocab-c.json') as unknown as Promise<{ default: VocabEntry[] }>
 };
 
 // Full uttrykk decks — Plus users only
@@ -111,7 +113,11 @@ export const load: PageServerLoad = async ({ params, locals }) => {
   // Build shared meta
   const ogImage = `https://norskeord.no/og/deck/${level.toLowerCase()}/${category}.png`;
   const pageTitle = `Norwegian ${levelUpper} ${categoryName} Vocabulary — Norskeord`;
-  const pageDescription = `Learn Norwegian ${categoryName} words with audio flashcards at ${levelUpper} level. Free on Norskeord.`;
+  // C is the combined C1/C2 "Mastery" level — keep its distinct SEO copy
+  const pageDescription =
+    levelUpper === 'C'
+      ? `Learn Norwegian ${categoryName} words at C (Mastery) level. Free on Norskeord.`
+      : `Learn Norwegian ${categoryName} words with audio flashcards at ${levelUpper} level. Free on Norskeord.`;
 
   const learningResourceSchema = {
     '@context': 'https://schema.org',
@@ -130,15 +136,29 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     }
   };
 
-  const pageKeywords = [
-    `Norwegian ${levelUpper} vocabulary`,
-    `Norwegian ${categoryName} words`,
-    `learn Norwegian ${categoryName}`,
-    `${categoryName} Norwegian flashcards`,
-    `${levelUpper} Norwegian`,
-    `Norskprøven ${levelUpper}`,
-    `Norwegian ${category}`
-  ].join(', ');
+  // C isn't part of the Norskprøven exam, so it gets its own keyword set
+  // instead of the "Norskprøven {level}" term used for A1–B2.
+  const pageKeywords = (
+    levelUpper === 'C'
+      ? [
+          `Norwegian C vocabulary`,
+          `Norwegian ${categoryName} words`,
+          `learn Norwegian ${categoryName}`,
+          `${categoryName} Norwegian flashcards`,
+          `C Norwegian`,
+          `advanced Norwegian vocabulary`,
+          `Norwegian ${category}`
+        ]
+      : [
+          `Norwegian ${levelUpper} vocabulary`,
+          `Norwegian ${categoryName} words`,
+          `learn Norwegian ${categoryName}`,
+          `${categoryName} Norwegian flashcards`,
+          `${levelUpper} Norwegian`,
+          `Norskprøven ${levelUpper}`,
+          `Norwegian ${category}`
+        ]
+  ).join(', ');
 
   const pageMetaTags: MetaProps = {
     title: pageTitle,

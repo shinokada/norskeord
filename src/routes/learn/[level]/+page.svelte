@@ -39,6 +39,11 @@
       heading: 'text-pink-700 dark:text-pink-400',
       badge: 'bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-300',
       accent: 'text-pink-700 dark:text-pink-400'
+    },
+    c: {
+      heading: 'text-purple-700 dark:text-purple-400',
+      badge: 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300',
+      accent: 'text-purple-700 dark:text-purple-400'
     }
   };
 
