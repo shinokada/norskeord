@@ -1,0 +1,13 @@
+Entry counts: {'A1': 457, 'A1-uttrykk': 126, 'A2': 342, 'A2-uttrykk': 159, 'B1': 1169, 'B1-uttrykk': 321, 'B2': 1668, 'B2-uttrykk': 799, 'C': 502, 'C-uttrykk': 192, 'A2-draft': 611}
+Total entries: 6346
+
+=== CROSS-FILE DUPLICATES (1) ===
+(Same 'norsk' value appears in different level files)
+
+  'klar'                                         →  A2 [weather]  |  B2 [communication]
+
+=== WITHIN-FILE DUPLICATES (0) ===
+(Same 'norsk' value appears twice in the same file)
+
+
+Results written to: /Users/shinichiokada/Svelte/svelte-languages/norskeord/scripts/vocab_duplicate_report.txt
