@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "",
+    "norsk": "kommode (en)",
+    "lemma": "kommode",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å kommunisere",
+    "lemma": "kommunisere",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "kompetanse (en)",
+    "lemma": "kompetanse",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kone (en/ei)",
+    "lemma": "kone",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å konsentrere seg",
+    "lemma": "konsentrere seg",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "konsert (en)",
+    "lemma": "konsert",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kontakt (en)",
+    "lemma": "kontakt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å kontakte",
+    "lemma": "kontakte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "kontor (et)",
+    "lemma": "kontor",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kopp (en)",
+    "lemma": "kopp",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kort",
+    "lemma": "kort",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å kose seg",
+    "lemma": "kose seg",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "koselig",
+    "lemma": "koselig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å koste",
+    "lemma": "koste",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "kosthold (et)",
+    "lemma": "kosthold",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å krangle",
+    "lemma": "krangle",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "krav (et)",
+    "lemma": "krav",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å kreve",
+    "lemma": "kreve",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "krig (en)",
+    "lemma": "krig",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "krone (en/ei)",
+    "lemma": "krone",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kropp (en)",
+    "lemma": "kropp",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kuldegrad (en)",
+    "lemma": "kuldegrad",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kultur (en)",
+    "lemma": "kultur",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kunde (en)",
+    "lemma": "kunde",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kurs (et)",
+    "lemma": "kurs",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kusine (en/ei)",
+    "lemma": "kusine",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å kutte ut",
+    "lemma": "kutte ut",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "kvalifisert",
+    "lemma": "kvalifisert",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kvalm",
+    "lemma": "kvalm",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kvarter (et)",
+    "lemma": "kvarter",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kveld (en)",
+    "lemma": "kveld",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kvinne (en/ei)",
+    "lemma": "kvinne",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kvittering (en/ei)",
+    "lemma": "kvittering",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kylling (en)",
+    "lemma": "kylling",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kø (en)",
+    "lemma": "kø",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kåpe (en/ei)",
+    "lemma": "kåpe",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å lage",
+    "lemma": "lage",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lager (et)",
+    "lemma": "lager",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "laks (en)",
+    "lemma": "laks",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lampe (en/ei)",
+    "lemma": "lampe",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "land (et)",
+    "lemma": "land",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "landskap (et)",
+    "lemma": "landskap",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lang",
+    "lemma": "lang",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "langsom",
+    "lemma": "langsom",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "langt",
+    "lemma": "langt",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "lastebil (en)",
+    "lemma": "lastebil",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å le",
+    "lemma": "le",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "ledelse (en)",
+    "lemma": "ledelse",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "leder (en)",
+    "lemma": "leder",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ledig",
+    "lemma": "ledig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "lege (en)",
+    "lemma": "lege",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "legevakt (en/ei)",
+    "lemma": "legevakt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "legg (en)",
+    "lemma": "legg",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å legge",
+    "lemma": "legge",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lei",
+    "lemma": "lei",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å leie",
+    "lemma": "leie",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "leilighet (en/ei)",
+    "lemma": "leilighet",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å leke",
+    "lemma": "leke",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lekker",
+    "lemma": "lekker",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "lekse (en/ei)",
+    "lemma": "lekse",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lenge",
+    "lemma": "lenge",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "å lengte",
+    "lemma": "lengte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å lese",
+    "lemma": "lese",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lett",
+    "lemma": "lett",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å leve",
+    "lemma": "leve",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å levere",
+    "lemma": "levere",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "leverpostei (en)",
+    "lemma": "leverpostei",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lik",
+    "lemma": "lik",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å like",
+    "lemma": "like",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "likevel",
+    "lemma": "likevel",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "lilla",
+    "lemma": "lilla",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "liten",
+    "lemma": "liten",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "litt",
+    "lemma": "litt",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "liv (et)",
+    "lemma": "liv",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lokalmiljø (et)",
+    "lemma": "lokalmiljø",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å love",
+    "lemma": "love",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lue (en/ei)",
+    "lemma": "lue",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lukt (en/ei)",
+    "lemma": "lukt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å lukte",
+    "lemma": "lukte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lunsj (en)",
+    "lemma": "lunsj",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å lure på",
+    "lemma": "lure på",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lykkelig",
+    "lemma": "lykkelig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "lyn (et)",
+    "lemma": "lyn",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å lyne",
+    "lemma": "lyne",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lys",
+    "lemma": "lys",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "lys (et)",
+    "lemma": "lys",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lyskryss (et)",
+    "lemma": "lyskryss",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lyst (en)",
+    "lemma": "lyst",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lære (en/ei)",
+    "lemma": "lære",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å lære",
+    "lemma": "lære",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å lære opp",
+    "lemma": "lære opp",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lærer (en)",
+    "lemma": "lærer",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å løfte",
+    "lemma": "løfte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lønn (en/ei)",
+    "lemma": "lønn",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lån (et)",
+    "lemma": "lån",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lår (et)",
+    "lemma": "lår",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mage (en)",
+    "lemma": "mage",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mai",
+    "lemma": "mai",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å male",
+    "lemma": "male",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "mamma (en)",
+    "lemma": "mamma",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "man",
+    "lemma": "man",
+    "level": "A2",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "mange",
+    "lemma": "mange",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å mangle",
+    "lemma": "mangle",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "mann (en)",
+    "lemma": "mann",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mars",
+    "lemma": "mars",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å mase",
+    "lemma": "mase",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "maskin (en)",
+    "lemma": "maskin",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "massevis",
+    "lemma": "massevis",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "mat (en)",
+    "lemma": "mat",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "matpakke (en/ei)",
+    "lemma": "matpakke",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "med",
+    "lemma": "med",
+    "level": "A2",
+    "part": "preposition"
+  },
+  {
+    "id": "",
+    "norsk": "medisin (en)",
+    "lemma": "medisin",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "medlem (et)",
+    "lemma": "medlem",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "meg",
+    "lemma": "meg",
+    "level": "A2",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "mekaniker (en)",
+    "lemma": "mekaniker",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å mekke",
+    "lemma": "mekke",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "melding (en/ei)",
+    "lemma": "melding",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "melk (en/ei)",
+    "lemma": "melk",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mellom",
+    "lemma": "mellom",
+    "level": "A2",
+    "part": "preposition"
+  },
+  {
+    "id": "",
+    "norsk": "men",
+    "lemma": "men",
+    "level": "A2",
+    "part": "conjunction"
+  },
+  {
+    "id": "",
+    "norsk": "å mene",
+    "lemma": "mene",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "menneske (et)",
+    "lemma": "menneske",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mens",
+    "lemma": "mens",
+    "level": "A2",
+    "part": "conjunction"
+  },
+  {
+    "id": "",
+    "norsk": "mentalt",
+    "lemma": "mentalt",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "meny (en)",
+    "lemma": "meny",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mett",
+    "lemma": "mett",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "middag (en)",
+    "lemma": "middag",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "midnatt (en)",
+    "lemma": "midnatt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "midnattssol (en/ei)",
+    "lemma": "midnattssol",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mil (en/ei)",
+    "lemma": "mil",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "min",
+    "lemma": "min",
+    "level": "A2",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "mineralvann (et)",
+    "lemma": "mineralvann",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "minne (et)",
+    "lemma": "minne",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "minutt (et)",
+    "lemma": "minutt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å miste",
+    "lemma": "miste",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "moderne",
+    "lemma": "moderne",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "morgen (en)",
+    "lemma": "morgen",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "morsom",
+    "lemma": "morsom",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "mote (en)",
+    "lemma": "mote",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "motor (en)",
+    "lemma": "motor",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mulig",
+    "lemma": "mulig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "mulighet (en)",
+    "lemma": "mulighet",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "munn (en)",
+    "lemma": "munn",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "muntlig",
+    "lemma": "muntlig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "museum (et)",
+    "lemma": "museum",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "muskel (en)",
+    "lemma": "muskel",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mye",
+    "lemma": "mye",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "møbel (et)",
+    "lemma": "møbel",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mørk",
+    "lemma": "mørk",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å møte",
+    "lemma": "møte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "møte (et)",
+    "lemma": "møte",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å måtte",
+    "lemma": "måtte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "måltid (et)",
+    "lemma": "måltid",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "måned (en)",
+    "lemma": "måned",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nabo (en)",
+    "lemma": "nabo",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "natt (en/ei)",
+    "lemma": "natt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "natur (en)",
+    "lemma": "natur",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ned",
+    "lemma": "ned",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "nesten",
+    "lemma": "nesten",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "nett (et)",
+    "lemma": "nett",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å nikke",
+    "lemma": "nikke",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "nivå (et)",
+    "lemma": "nivå",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "noe",
+    "lemma": "noe",
+    "level": "A2",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "nordlys (et)",
+    "lemma": "nordlys",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nordmann (en)",
+    "lemma": "nordmann",
+    "level": "A2",
+    "part": "noun"
+  }
+]

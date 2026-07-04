@@ -9,40 +9,8 @@
 	},
 	{
 		"id": "",
-		"norsk": "blant annet",
-		"lemma": "blant annet",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "å lære av",
 		"lemma": "lære av",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å bli med",
-		"lemma": "bli med",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å bli lei av",
-		"lemma": "bli lei av",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å få besøk",
-		"lemma": "få besøk",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -59,14 +27,6 @@
 		"id": "",
 		"norsk": "avhengig av",
 		"lemma": "avhengig av",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "både – og",
-		"lemma": "både – og",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -105,14 +65,6 @@
 	},
 	{
 		"id": "",
-		"norsk": "for eksempel",
-		"lemma": "for eksempel",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "å jobbe ekstra",
 		"lemma": "jobbe ekstra",
 		"level": "A2",
@@ -137,24 +89,8 @@
 	},
 	{
 		"id": "",
-		"norsk": "å ta feil",
-		"lemma": "ta feil",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "å gå feil",
 		"lemma": "gå feil",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å holde seg i form",
-		"lemma": "holde seg i form",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -177,24 +113,8 @@
 	},
 	{
 		"id": "",
-		"norsk": "å få besøk",
-		"lemma": "få besøk",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "å få tak i",
 		"lemma": "få tak i",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å få øye på",
-		"lemma": "få øye på",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -249,22 +169,6 @@
 	},
 	{
 		"id": "",
-		"norsk": "for eksempel",
-		"lemma": "for eksempel",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "for å",
-		"lemma": "for å",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "for stor",
 		"lemma": "for stor",
 		"level": "A2",
@@ -289,32 +193,8 @@
 	},
 	{
 		"id": "",
-		"norsk": "å gå forbi",
-		"lemma": "gå forbi",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "å gå rett fram",
 		"lemma": "gå rett fram",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å komme fram til",
-		"lemma": "komme fram til",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "fram og tilbake",
-		"lemma": "fram og tilbake",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -345,14 +225,6 @@
 	},
 	{
 		"id": "",
-		"norsk": "å gifte seg",
-		"lemma": "gifte seg",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "Jeg vil gjerne ...",
 		"lemma": "jeg vil gjerne",
 		"level": "A2",
@@ -363,14 +235,6 @@
 		"id": "",
 		"norsk": "å gjøre lekser",
 		"lemma": "gjøre lekser",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å være glad i",
-		"lemma": "være glad i",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -435,14 +299,6 @@
 		"id": "",
 		"norsk": "å gå på norskkurs",
 		"lemma": "gå på norskkurs",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å gå på tur",
-		"lemma": "gå på tur",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -521,14 +377,6 @@
 	},
 	{
 		"id": "",
-		"norsk": "i dag",
-		"lemma": "i dag",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "i to år",
 		"lemma": "i to år",
 		"level": "A2",
@@ -545,14 +393,6 @@
 	},
 	{
 		"id": "",
-		"norsk": "ha fri",
-		"lemma": "ha fri",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
 		"norsk": "å snakke høyt",
 		"lemma": "snakke høyt",
 		"level": "A2",
@@ -571,22 +411,6 @@
 		"id": "",
 		"norsk": "ha fri",
 		"lemma": "ha fri",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å snakke høyt",
-		"lemma": "snakke høyt",
-		"level": "A2",
-		"category": "uttrykk",
-		"part": "phrase"
-	},
-	{
-		"id": "",
-		"norsk": "å ta til høyre",
-		"lemma": "ta til høyre",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"
@@ -643,6 +467,638 @@
 		"id": "",
 		"norsk": "komme fra",
 		"lemma": "komme fra",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gå på kurs",
+		"lemma": "gå på kurs",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "kvart på",
+		"lemma": "kvart på",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "kvart over",
+		"lemma": "kvart over",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "på landet",
+		"lemma": "på landet",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "hvor langt",
+		"lemma": "hvor langt",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "langt borte",
+		"lemma": "langt borte",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å legge seg",
+		"lemma": "legge seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å bli lei seg",
+		"lemma": "bli lei seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "hvor lenge",
+		"lemma": "hvor lenge",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å leve av",
+		"lemma": "leve av",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å like seg",
+		"lemma": "like seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ha lyst på",
+		"lemma": "ha lyst på",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å snakke med",
+		"lemma": "snakke med",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta med",
+		"lemma": "ta med",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "midt på vinteren",
+		"lemma": "midt på vinteren",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å miste balansen",
+		"lemma": "miste balansen",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "i morgen",
+		"lemma": "i morgen",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "neste uke",
+		"lemma": "neste uke",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "på nettet",
+		"lemma": "på nettet",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å lete etter",
+		"lemma": "lete etter",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å fortelle om",
+		"lemma": "fortelle om",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å spørre om",
+		"lemma": "spørre om",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "om tre dager",
+		"lemma": "om tre dager",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "sånn passe",
+		"lemma": "sånn passe",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "god plass",
+		"lemma": "god plass",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å pusse tennene",
+		"lemma": "pusse tennene",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "på norsk",
+		"lemma": "på norsk",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "på norskkurs",
+		"lemma": "på norskkurs",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "så rart",
+		"lemma": "så rart",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å se rart ut",
+		"lemma": "se rart ut",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å skrive rett fram",
+		"lemma": "skrive rett fram",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sitte i ro",
+		"lemma": "sitte i ro",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å få ros",
+		"lemma": "få ros",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ha råd til",
+		"lemma": "ha råd til",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å være på salg",
+		"lemma": "være på salg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "sammen med",
+		"lemma": "sammen med",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å snakke sammen",
+		"lemma": "snakke sammen",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "alle sammen",
+		"lemma": "alle sammen",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "til sammen",
+		"lemma": "til sammen",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sørge for",
+		"lemma": "sørge for",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sminke seg",
+		"lemma": "sminke seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å spesialisere seg",
+		"lemma": "spesialisere seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å slå seg",
+		"lemma": "slå seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å slå av",
+		"lemma": "slå av",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å skanne inn varer",
+		"lemma": "skanne inn varer",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å skade seg",
+		"lemma": "skade seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sjekke ut",
+		"lemma": "sjekke ut",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å sjekke inn",
+		"lemma": "sjekke inn",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "selv om",
+		"lemma": "selv om",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å slappe av",
+		"lemma": "slappe av",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "slik at",
+		"lemma": "slik at",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "deg selv",
+		"lemma": "deg selv",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "god service",
+		"lemma": "god service",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "ved siden av",
+		"lemma": "ved siden av",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "for ... siden",
+		"lemma": "for siden",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "til slutt",
+		"lemma": "til slutt",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ha dårlig smak",
+		"lemma": "ha dårlig smak",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "stakkars deg",
+		"lemma": "stakkars deg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "etter en stund",
+		"lemma": "etter en stund",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "to stykker",
+		"lemma": "to stykker",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å stå opp",
+		"lemma": "stå opp",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "ikke så mye",
+		"lemma": "ikke så mye",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "så hyggelig",
+		"lemma": "så hyggelig",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "ha det bra så lenge",
+		"lemma": "ha det bra så lenge",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta en kopp kaffe",
+		"lemma": "ta en kopp kaffe",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta buss",
+		"lemma": "ta buss",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta en dusj",
+		"lemma": "ta en dusj",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ta med seg",
+		"lemma": "ta med seg",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "takk for det",
+		"lemma": "takk for det",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å ha dårlig tid",
+		"lemma": "ha dårlig tid",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å komme tidsnok",
+		"lemma": "komme tidsnok",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "en ting til",
+		"lemma": "en ting til",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å jobbe turnus",
+		"lemma": "jobbe turnus",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gå ut",
+		"lemma": "gå ut",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "på venstre side",
+		"lemma": "på venstre side",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "vent litt",
+		"lemma": "vent litt",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "å gjøre vondt",
+		"lemma": "gjøre vondt",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "vær så god",
+		"lemma": "vær så god",
+		"level": "A2",
+		"category": "uttrykk",
+		"part": "phrase"
+	},
+	{
+		"id": "",
+		"norsk": "personlig økonomi",
+		"lemma": "personlig økonomi",
 		"level": "A2",
 		"category": "uttrykk",
 		"part": "phrase"

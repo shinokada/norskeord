@@ -1,0 +1,1172 @@
+[
+  
+  {
+    "id": "",
+    "norsk": "selv",
+    "lemma": "selv",
+    "level": "A2",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "selvfølgelig",
+    "lemma": "selvfølgelig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "selvstendig",
+    "lemma": "selvstendig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "semester (et)",
+    "lemma": "semester",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sen",
+    "lemma": "sen",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å sende",
+    "lemma": "sende",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "senere",
+    "lemma": "senere",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "seng (en/ei)",
+    "lemma": "seng",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sengetøy (et)",
+    "lemma": "sengetøy",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sennep (en)",
+    "lemma": "sennep",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sentrum",
+    "lemma": "sentrum",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "september",
+    "lemma": "september",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å servere",
+    "lemma": "servere",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "service (en)",
+    "lemma": "service",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "serviett (en)",
+    "lemma": "serviett",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "servitør (en)",
+    "lemma": "servitør",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å ses",
+    "lemma": "ses",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "setning (en/ei)",
+    "lemma": "setning",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å sette",
+    "lemma": "sette",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å si",
+    "lemma": "si",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "side (en/ei)",
+    "lemma": "side",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sikker",
+    "lemma": "sikker",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sikkerhet (en)",
+    "lemma": "sikkerhet",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sikkert",
+    "lemma": "sikkert",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "sin",
+    "lemma": "sin",
+    "level": "A2",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "singel",
+    "lemma": "singel",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sitron (en)",
+    "lemma": "sitron",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å sitte",
+    "lemma": "sitte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sjarmerende",
+    "lemma": "sjarmerende",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sjef (en)",
+    "lemma": "sjef",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sjø (en)",
+    "lemma": "sjø",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sjåfør (en)",
+    "lemma": "sjåfør",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skade (en)",
+    "lemma": "skade",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skulle",
+    "lemma": "skulle",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "skap (et)",
+    "lemma": "skap",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skaut (et)",
+    "lemma": "skaut",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ski (en)",
+    "lemma": "ski",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skilt",
+    "lemma": "skilt",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skilt (et)",
+    "lemma": "skilt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skinne",
+    "lemma": "skinne",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "skip (et)",
+    "lemma": "skip",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skive (en/ei)",
+    "lemma": "skive",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skje",
+    "lemma": "skje",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "skjema (et)",
+    "lemma": "skjema",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skjerf (et)",
+    "lemma": "skjerf",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skjorte (en/ei)",
+    "lemma": "skjorte",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skjære",
+    "lemma": "skjære",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å skjønne",
+    "lemma": "skjønne",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "skjørt (et)",
+    "lemma": "skjørt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sko (en)",
+    "lemma": "sko",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skole (en)",
+    "lemma": "skole",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skoletime (en)",
+    "lemma": "skoletime",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skremme",
+    "lemma": "skremme",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "skriftlig",
+    "lemma": "skriftlig",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å skrive",
+    "lemma": "skrive",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "skuffet",
+    "lemma": "skuffet",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skulder (en/ei)",
+    "lemma": "skulder",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skyld (en)",
+    "lemma": "skyld",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skype",
+    "lemma": "skype",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "slips (et)",
+    "lemma": "slips",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å slite",
+    "lemma": "slite",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sliten",
+    "lemma": "sliten",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "slitsom",
+    "lemma": "slitsom",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "slutt (en)",
+    "lemma": "slutt",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å slutte",
+    "lemma": "slutte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "smak (en)",
+    "lemma": "smak",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å smake",
+    "lemma": "smake",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "smarttelefon (en)",
+    "lemma": "smarttelefon",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å smelte",
+    "lemma": "smelte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "smerte (en)",
+    "lemma": "smerte",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "smertestillende",
+    "lemma": "smertestillende",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å smile",
+    "lemma": "smile",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "smykke (et)",
+    "lemma": "smykke",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "smør (et)",
+    "lemma": "smør",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å snakke",
+    "lemma": "snakke",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "snart",
+    "lemma": "snart",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "snekker (en)",
+    "lemma": "snekker",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "snill",
+    "lemma": "snill",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å snu",
+    "lemma": "snu",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "snø (en)",
+    "lemma": "snø",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å snø",
+    "lemma": "snø",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sofa (en)",
+    "lemma": "sofa",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sol (en/ei)",
+    "lemma": "sol",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "solbriller",
+    "lemma": "solbriller",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "solskinn (et)",
+    "lemma": "solskinn",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "som",
+    "lemma": "som",
+    "level": "A2",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "sommer (en)",
+    "lemma": "sommer",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sosial",
+    "lemma": "sosial",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å sove",
+    "lemma": "sove",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sovemedisin (en)",
+    "lemma": "sovemedisin",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "soverom (et)",
+    "lemma": "soverom",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "spansk",
+    "lemma": "spansk",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å spare",
+    "lemma": "spare",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sparke",
+    "lemma": "sparke",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "spennende",
+    "lemma": "spennende",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "spesiell",
+    "lemma": "spesiell",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å spille",
+    "lemma": "spille",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å spise",
+    "lemma": "spise",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å spleise",
+    "lemma": "spleise",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sportsbutikk (en)",
+    "lemma": "sportsbutikk",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "språk (et)",
+    "lemma": "språk",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "språkpraksis (en)",
+    "lemma": "språkpraksis",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "språkpraktikant (en)",
+    "lemma": "språkpraktikant",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å spørre",
+    "lemma": "spørre",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "spørsmål (et)",
+    "lemma": "spørsmål",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å starte",
+    "lemma": "starte",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stave",
+    "lemma": "stave",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "stearinlys (et)",
+    "lemma": "stearinlys",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sted (et)",
+    "lemma": "sted",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stefar (en)",
+    "lemma": "stefar",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å steke",
+    "lemma": "steke",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "stekepanne (en/ei)",
+    "lemma": "stekepanne",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å stelle",
+    "lemma": "stelle",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stenge",
+    "lemma": "stenge",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sterk",
+    "lemma": "sterk",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stille",
+    "lemma": "stille",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stillhet (en)",
+    "lemma": "stillhet",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stilling (en/ei)",
+    "lemma": "stilling",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stol (en)",
+    "lemma": "stol",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å stoppe",
+    "lemma": "stoppe",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "stor",
+    "lemma": "stor",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "strand (en/ei)",
+    "lemma": "strand",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "streng",
+    "lemma": "streng",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stress (et)",
+    "lemma": "stress",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stresset",
+    "lemma": "stresset",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "strømpebukse (en/ei)",
+    "lemma": "strømpebukse",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "student (en)",
+    "lemma": "student",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å studere",
+    "lemma": "studere",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "studium (et)",
+    "lemma": "studium",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stue (en/ei)",
+    "lemma": "stue",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stund (en)",
+    "lemma": "stund",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stykke (et)",
+    "lemma": "stykke",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "styrer (en)",
+    "lemma": "styrer",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "styrketrening (en/ei)",
+    "lemma": "styrketrening",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "størrelse (en)",
+    "lemma": "størrelse",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "støvler",
+    "lemma": "støvler",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "støvletter",
+    "lemma": "støvletter",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å støvsuge",
+    "lemma": "støvsuge",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "støvsuger (en)",
+    "lemma": "støvsuger",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å stå",
+    "lemma": "stå",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sulten",
+    "lemma": "sulten",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "super",
+    "lemma": "super",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "suppe (en/ei)",
+    "lemma": "suppe",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sur",
+    "lemma": "sur",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "svar (et)",
+    "lemma": "svar",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å svare",
+    "lemma": "svare",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "svart",
+    "lemma": "svart",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å svette",
+    "lemma": "svette",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "svigerforeldre",
+    "lemma": "svigerforeldre",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "syk",
+    "lemma": "syk",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sykehjem (et)",
+    "lemma": "sykehjem",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sykehus (et)",
+    "lemma": "sykehus",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sykepleier (en)",
+    "lemma": "sykepleier",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sykkel (en)",
+    "lemma": "sykkel",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å sykle",
+    "lemma": "sykle",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "sykmelding (en/ei)",
+    "lemma": "sykmelding",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sykmeldt",
+    "lemma": "sykmeldt",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "syltetøy (et)",
+    "lemma": "syltetøy",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å synes",
+    "lemma": "synes",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å synge",
+    "lemma": "synge",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "særlig",
+    "lemma": "særlig",
+    "level": "A2",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "å søke",
+    "lemma": "søke",
+    "level": "A2",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "søknad (en)",
+    "lemma": "søknad",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sønn (en)",
+    "lemma": "sønn",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "søster (en/ei)",
+    "lemma": "søster",
+    "level": "A2",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "søt",
+    "lemma": "søt",
+    "level": "A2",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "så",
+    "lemma": "så",
+    "level": "A2",
+    "part": "adverb"
+  }
+]

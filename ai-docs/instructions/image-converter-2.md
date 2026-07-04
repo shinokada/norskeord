@@ -33,6 +33,7 @@ Never include `definition` — leave it out of every object in both steps.
 
 Words (Format B1):
 Since this vocab list is intended for A2, the `level` field is `A2`.
+
 ```json
 [
   {
