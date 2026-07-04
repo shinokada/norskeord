@@ -1,6 +1,10 @@
 {
   "installCommand": "pnpm install",
   "buildCommand": "pnpm search:index && pnpm build",
+  "redirects": [
+    { "source": "/nb", "destination": "/", "permanent": true },
+    { "source": "/nb/:path*", "destination": "/:path*", "permanent": true }
+  ],
   "crons": [
     {
       "path": "/api/publish-scheduled",
