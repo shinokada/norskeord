@@ -1,0 +1,777 @@
+{
+  "filename": "uttrykk-a2.json",
+  "audited": 132,
+  "errors": 40,
+  "warnings": 55,
+  "infos": 1,
+  "issues": [
+    {
+      "id": "u-a2-161",
+      "norsk": "å lære av",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "More natural: 'aus etwas lernen' rather than 'lernen aus'"
+    },
+    {
+      "id": "u-a2-162",
+      "norsk": "i dag",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'schön' not 'schon'"
+    },
+    {
+      "id": "u-a2-163",
+      "norsk": "avhengig av",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'abhängig' not 'abhangig'"
+    },
+    {
+      "id": "u-a2-163",
+      "norsk": "avhengig av",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'hängt' not 'hangt'"
+    },
+    {
+      "id": "u-a2-165",
+      "norsk": "dårlig humor",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "u-a2-166",
+      "norsk": "dårlig tid",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "Typo in Norwegian: 'so' should be 'så'"
+    },
+    {
+      "id": "u-a2-166",
+      "norsk": "dårlig tid",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'mañanas' not 'mananas'"
+    },
+    {
+      "id": "u-a2-167",
+      "norsk": "dårlige veier",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'Führen' not 'führen': 'Wir fuhren' (past tense), not 'führen'"
+    },
+    {
+      "id": "u-a2-169",
+      "norsk": "ekstra flott",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'schön' not 'schon'"
+    },
+    {
+      "id": "u-a2-169",
+      "norsk": "ekstra flott",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'schön' not 'schon'"
+    },
+    {
+      "id": "u-a2-170",
+      "norsk": "en fast jobb",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "Typo: 'fatt' should be 'fått'"
+    },
+    {
+      "id": "u-a2-171",
+      "norsk": "å gå feil",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Qué' not 'Que'"
+    },
+    {
+      "id": "u-a2-173",
+      "norsk": "å føre regnskap",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'å føre regnskap' is complex vocabulary, more appropriate for B1+"
+    },
+    {
+      "id": "u-a2-175",
+      "norsk": "Er det noe galt?",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'¿Pasa algo?' is more natural than '¿Hay algo malo?'"
+    },
+    {
+      "id": "u-a2-176",
+      "norsk": "noen ganger",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'schön' not 'schon'"
+    },
+    {
+      "id": "u-a2-177",
+      "norsk": "en gang til",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent marks: 'más', 'entendí'"
+    },
+    {
+      "id": "u-a2-181",
+      "norsk": "for stor",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'mí' required after preposition 'para'."
+    },
+    {
+      "id": "u-a2-182",
+      "norsk": "Det er rart for meg",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing tilde: should be 'extraño', not 'extrano'."
+    },
+    {
+      "id": "u-a2-182",
+      "norsk": "Det er rart for meg",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing tilde: should be 'extraño cenar tan temprano'."
+    },
+    {
+      "id": "u-a2-183",
+      "norsk": "For en dag!",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing opening exclamation mark: '¡Qué día!' is correct."
+    },
+    {
+      "id": "u-a2-183",
+      "norsk": "For en dag!",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing '¡' and accent: '¡Qué día! Todo salió mal...'."
+    },
+    {
+      "id": "u-a2-183",
+      "norsk": "For en dag!",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'Ось це день!' sounds unnatural; 'Ну й день!' is more idiomatic."
+    },
+    {
+      "id": "u-a2-186",
+      "norsk": "hotellet er fullt",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: should be 'está completo'."
+    },
+    {
+      "id": "u-a2-186",
+      "norsk": "hotellet er fullt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está completo'."
+    },
+    {
+      "id": "u-a2-187",
+      "norsk": "De er gift",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: should be 'están casados'."
+    },
+    {
+      "id": "u-a2-187",
+      "norsk": "De er gift",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Están casados y tienen tres hijos juntos'."
+    },
+    {
+      "id": "u-a2-188",
+      "norsk": "Jeg vil gjerne ...",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: should be 'me gustaría'."
+    },
+    {
+      "id": "u-a2-188",
+      "norsk": "Jeg vil gjerne ...",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Me gustaría reservar una mesa...'."
+    },
+    {
+      "id": "u-a2-189",
+      "norsk": "å gjøre lekser",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "Missing 'før': should be 'for de får' → 'før de får'."
+    },
+    {
+      "id": "u-a2-189",
+      "norsk": "å gjøre lekser",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'dürfen' not 'durfen'."
+    },
+    {
+      "id": "u-a2-191",
+      "norsk": "god mat",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "info",
+      "comment": "'смачна їжа' means 'tasty food'; 'гарна їжа/добра їжа' is closer to 'good food'."
+    },
+    {
+      "id": "u-a2-195",
+      "norsk": "God morgen.",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Wrong punctuation: '¿Buenos días!' mixes question and exclamation marks incorrectly; should be '¡Buenos días!'."
+    },
+    {
+      "id": "u-a2-196",
+      "norsk": "Gratulerer med dagen",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "Typo: 'haper' should be 'håper'."
+    },
+    {
+      "id": "u-a2-198",
+      "norsk": "Det går fint.",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Está bien' not 'Esta bien'."
+    },
+    {
+      "id": "u-a2-198",
+      "norsk": "Det går fint.",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents and opening '¿': '¿Podemos vernos...? Sí, está bien'."
+    },
+    {
+      "id": "u-a2-201",
+      "norsk": "å være hjemme",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'Él' and missing accent 'está' required."
+    },
+    {
+      "id": "u-a2-202",
+      "norsk": "i dårlig humør",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accents: 'Ella está', 'durmió' required."
+    },
+    {
+      "id": "u-a2-203",
+      "norsk": "i godt humør",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accents: 'Él', 'está' required."
+    },
+    {
+      "id": "u-a2-204",
+      "norsk": "Ha det.",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Tschüss'."
+    },
+    {
+      "id": "u-a2-204",
+      "norsk": "Ha det.",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Tschüss'."
+    },
+    {
+      "id": "u-a2-204",
+      "norsk": "Ha det.",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: should be 'Adiós'."
+    },
+    {
+      "id": "u-a2-204",
+      "norsk": "Ha det.",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: should be 'Adiós'."
+    },
+    {
+      "id": "u-a2-206",
+      "norsk": "i kurven",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'de la mesa' implies the basket belongs to the table; 'sobre la mesa' is more accurate."
+    },
+    {
+      "id": "u-a2-207",
+      "norsk": "i to år",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'seit zwei Jahren' implies ongoing; Norwegian context is ambiguous; 'zwei Jahre lang' better."
+    },
+    {
+      "id": "u-a2-207",
+      "norsk": "i to år",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'haben gewohnt' (past) contradicts 'seit'; inconsistency with Ukrainian present tense."
+    },
+    {
+      "id": "u-a2-208",
+      "norsk": "i like måte",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "warning",
+      "comment": "Missing accent in example: 'måte' not 'mate'."
+    },
+    {
+      "id": "u-a2-209",
+      "norsk": "å snakke høyt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing opening question mark: '¿Puedes hablar...?' required."
+    },
+    {
+      "id": "u-a2-209",
+      "norsk": "å snakke høyt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'más' required."
+    },
+    {
+      "id": "u-a2-212",
+      "norsk": "å klare seg",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'sí mismo' required."
+    },
+    {
+      "id": "u-a2-215",
+      "norsk": "å knekke brød",
+      "level": "A2",
+      "field": "english",
+      "severity": "error",
+      "comment": "'å knekke brød' is not standard Norwegian; 'knekkebrød' is one word meaning crispbread."
+    },
+    {
+      "id": "u-a2-215",
+      "norsk": "å knekke brød",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "Missing umlaut: should be 'Knäckebrot' twice."
+    },
+    {
+      "id": "u-a2-215",
+      "norsk": "å knekke brød",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'Knäckebrot' and 'Käse' required."
+    },
+    {
+      "id": "u-a2-215",
+      "norsk": "å knekke brød",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "error",
+      "comment": "'хрустке хлібці' is grammatically incorrect; should be 'хрусткі хлібці' or 'хрустке хлібце'."
+    },
+    {
+      "id": "u-a2-215",
+      "norsk": "å knekke brød",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "error",
+      "comment": "Same gender/number error: 'хрустке хлібці' is incorrect."
+    },
+    {
+      "id": "u-a2-217",
+      "norsk": "Klart det",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Malformed punctuation: '¡¿Puedes...' should be '¿Puedes...?' only."
+    },
+    {
+      "id": "u-a2-218",
+      "norsk": "komme fra",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'iDe' should be '¿De' — incorrect opening punctuation."
+    },
+    {
+      "id": "u-a2-220",
+      "norsk": "kvart på",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "error",
+      "comment": "'о без чверті три' is ungrammatical; should be 'о без чверті третя' or 'за чверть третя'"
+    },
+    {
+      "id": "u-a2-221",
+      "norsk": "kvart over",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'fahrt' should be 'fährt'"
+    },
+    {
+      "id": "u-a2-221",
+      "norsk": "kvart over",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'чверть на' is the Ukrainian clock convention but may confuse learners; acceptable"
+    },
+    {
+      "id": "u-a2-221",
+      "norsk": "kvart over",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Ukrainian example says 'nine' (дев'яту) but Norwegian example says 'eight'; inconsistency"
+    },
+    {
+      "id": "u-a2-222",
+      "norsk": "på landet",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'crécio' is misspelled; correct form is 'creció'"
+    },
+    {
+      "id": "u-a2-222",
+      "norsk": "på landet",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'extrana' missing tilde; should be 'extraña'"
+    },
+    {
+      "id": "u-a2-223",
+      "norsk": "hvor langt",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent marks: 'qué tan lejos, cuánto falta'"
+    },
+    {
+      "id": "u-a2-223",
+      "norsk": "hvor langt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accents: 'Qué tan lejos está el centro desde aquí'"
+    },
+    {
+      "id": "u-a2-226",
+      "norsk": "å bli lei seg",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'aufregern' is a typo; should be 'aufregen' (infinitive) or omitted"
+    },
+    {
+      "id": "u-a2-226",
+      "norsk": "å bli lei seg",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'sich aufregern' is a typo/error; correct is 'sich aufregen'"
+    },
+    {
+      "id": "u-a2-226",
+      "norsk": "å bli lei seg",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accents: 'Él se puso triste cuando escuchó las malas noticias'"
+    },
+    {
+      "id": "u-a2-227",
+      "norsk": "hvor lenge",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accents: 'Cuánto tiempo llevas viviendo en Noruega'"
+    },
+    {
+      "id": "u-a2-228",
+      "norsk": "å leve av",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'Él se gana la vida vendiendo muebles artesanales'"
+    },
+    {
+      "id": "u-a2-229",
+      "norsk": "å like seg",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'wohlfuhlen' missing umlaut; should be 'wohlfühlen'; 'geniessen' should be 'genießen'"
+    },
+    {
+      "id": "u-a2-232",
+      "norsk": "å ta med",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Missing apostrophe: 'Пам'ятай брати парасольку'"
+    },
+    {
+      "id": "u-a2-233",
+      "norsk": "midt på vinteren",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'frío' should have accent mark"
+    },
+    {
+      "id": "u-a2-234",
+      "norsk": "å miste balansen",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accents: 'Perdió el equilibrio y se cayó en el hielo'"
+    },
+    {
+      "id": "u-a2-237",
+      "norsk": "på nettet",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'en línea'"
+    },
+    {
+      "id": "u-a2-242",
+      "norsk": "sånn passe",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'mittelmäßig' not 'mittelmassig'"
+    },
+    {
+      "id": "u-a2-242",
+      "norsk": "sånn passe",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accents/punctuation: 'más o menos', '¿Cómo fue...?'"
+    },
+    {
+      "id": "u-a2-242",
+      "norsk": "sånn passe",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing opening question mark and accents throughout"
+    },
+    {
+      "id": "u-a2-247",
+      "norsk": "så rart",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'qué raro', 'extraño'"
+    },
+    {
+      "id": "u-a2-247",
+      "norsk": "så rart",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing opening question mark and accent: '¡Qué raro...!'"
+    },
+    {
+      "id": "u-a2-248",
+      "norsk": "å se rart ut",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'extraño', 'raro' is fine but 'extraño' needs tilde"
+    },
+    {
+      "id": "u-a2-250",
+      "norsk": "å sitte i ro",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'könnte' (could) should be 'konnte' (past tense: could not)"
+    },
+    {
+      "id": "u-a2-253",
+      "norsk": "alle sammen",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing opening exclamation mark: '¡Bienvenidos, todos!'"
+    },
+    {
+      "id": "u-a2-254",
+      "norsk": "til sammen",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'разом узяті' is unnatural; 'загалом' alone is sufficient and idiomatic"
+    },
+    {
+      "id": "u-a2-254",
+      "norsk": "til sammen",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Éramos'"
+    },
+    {
+      "id": "u-a2-256",
+      "norsk": "å spesialisere seg",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'å spesialisere seg' and 'pediatrics' are likely B2-level, not A2"
+    },
+    {
+      "id": "u-a2-265",
+      "norsk": "slik at",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'Hablo' should be 'Habló' (preterite, not present tense)"
+    },
+    {
+      "id": "u-a2-272",
+      "norsk": "stakkars deg",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "error",
+      "comment": "'pobrecito/a tu' is ungrammatical; should be 'pobrecito/a tú'"
+    },
+    {
+      "id": "u-a2-272",
+      "norsk": "stakkars deg",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Opening '¡' missing before '¿Tienes'; punctuation inconsistent"
+    },
+    {
+      "id": "u-a2-284",
+      "norsk": "å ha dårlig tid",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'spater' missing umlaut; should be 'später'"
+    },
+    {
+      "id": "u-a2-286",
+      "norsk": "en ting til",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'mas' missing accent; should be 'más'"
+    },
+    {
+      "id": "u-a2-286",
+      "norsk": "en ting til",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'mas' missing accent; should be 'más'"
+    },
+    {
+      "id": "u-a2-287",
+      "norsk": "å jobbe turnus",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'å jobbe turnus' is workplace-specific vocabulary, more suited to B1"
+    },
+    {
+      "id": "u-a2-289",
+      "norsk": "på venstre side",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'esta' missing accent; should be 'está'"
+    },
+    {
+      "id": "u-a2-290",
+      "norsk": "vent litt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'todavia' missing accent; should be 'todavía'"
+    },
+    {
+      "id": "u-a2-292",
+      "norsk": "vær så god",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing opening question mark; should be '¿Me puede dar el menú?'"
+    },
+    {
+      "id": "u-a2-293",
+      "norsk": "personlig økonomi",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'personlig økonomi' and managing finances may be better suited to B1"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Entry counts: {'A1': 126, 'A2': 159, 'B1': 321, 'B2': 799, 'C': 192, 'A2-draft-uttrykk': 138}
+Total entries: 1735
+
+=== CROSS-FILE DUPLICATES (0) ===
+(Same 'norsk' value appears in different level files)
+
+
+=== WITHIN-FILE DUPLICATES (0) ===
+(Same 'norsk' value appears twice in the same file)
+
+
+Results written to: /Users/shinichiokada/Svelte/svelte-languages/norskeord/scripts/uttrykk_duplicate_report.txt

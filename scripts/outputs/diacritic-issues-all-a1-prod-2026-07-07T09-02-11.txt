@@ -1,0 +1,137 @@
+Diacritic issue scan (all languages): a1
+Generated: 2026-07-07T09:02:11.942Z
+Dir: prod
+Languages: norwegian, german, spanish
+Mode: REPORT ONLY
+
+=== vocab-a1.json ===
+Auto-detected (fixable): 2
+Needs manual review (ambiguous): 15
+
+[v-a1-body-015] norsk: "hår (et)"
+  example: "Hun har langt hår."
+  - [norwegian] own word is "hår" (from "hår (et)") but example uses degraded form "har"
+  - [norwegian] own word is "hår" (from "hår") but example uses degraded form "har"
+
+[v-a1-classroom-018] norsk: "klasse (en)"
+  example: "Jeg går i klasse 1A."
+  - [norwegian] "example" contains "a" (likely degraded "å")
+
+--- Manual review needed ---
+[v-a1-numbers-015] norsk: "femten"
+  example_spanish: "Faltan quince minutos para que llegue el autobús."
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[v-a1-numbers-018] norsk: "atten"
+  example_spanish: "Se puede conducir un coche cuando se tienen dieciocho años."
+  - [spanish] "example_spanish" contains "cuando" — cuando ("when", relative) OR "cuándo" ("when", question) — review manually
+
+[v-a1-family-002] norsk: "far (en)"
+  example: "Min far er lærer."
+  - [norwegian] "norsk" contains "far" — far ("father", noun) OR "får" ("gets/receives", verb, OR "sheep", noun) — review manually
+  - [norwegian] "lemma" contains "far" — far ("father", noun) OR "får" ("gets/receives", verb, OR "sheep", noun) — review manually
+  - [norwegian] "example" contains "far" — far ("father", noun) OR "får" ("gets/receives", verb, OR "sheep", noun) — review manually
+
+[v-a1-family-004] norsk: "sønn (en)"
+  example_spanish: "Él tiene un hijo que se llama Ole."
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[v-a1-family-012] norsk: "fetter (en)"
+  example_spanish: "Mi primo es mayor que yo."
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[v-a1-food-001] norsk: "brød (et)"
+  example_spanish: "Como pan en el desayuno."
+  - [spanish] "example_spanish" contains "como" — como ("as/like"/"I eat") OR "cómo" ("how", question) — review manually
+
+[v-a1-food-010] norsk: "eple (et)"
+  example_spanish: "Como una manzana al día."
+  - [spanish] "example_spanish" contains "como" — como ("as/like"/"I eat") OR "cómo" ("how", question) — review manually
+
+[v-a1-adjectives-018] norsk: "lett"
+  example_spanish: "Esta tarea es fácil."
+  - [spanish] "example_spanish" contains "esta" — esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually
+
+[v-a1-verbs-020] norsk: "å forstå"
+  example_spanish: "No entiendo esta palabra."
+  - [spanish] "example_spanish" contains "esta" — esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually
+
+[v-a1-pronouns-and-questions-022] norsk: "denne"
+  example_spanish: "¿Qué es esto?"
+  - [spanish] "spanish" contains "esta" — esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually
+
+[v-a1-weather-008] norsk: "tordenvær (et)"
+  example_spanish: "Esta noche hay tormenta eléctrica."
+  - [spanish] "example_spanish" contains "esta" — esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually
+
+[v-a1-household-items-006] norsk: "skje (en)"
+  example_spanish: "Como la sopa con cuchara."
+  - [spanish] "example_spanish" contains "como" — como ("as/like"/"I eat") OR "cómo" ("how", question) — review manually
+
+[v-a1-clothes-013] norsk: "shorts (en)"
+  example_spanish: "Los pantalones cortos son buenos cuando hace calor."
+  - [spanish] "example_spanish" contains "cuando" — cuando ("when", relative) OR "cuándo" ("when", question) — review manually
+
+[v-a1-adjectives-026] norsk: "sikkert"
+  example_spanish: "Seguro que está en casa ahora."
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[v-a1-greetings-011] norsk: "jammen"
+  example_spanish: "¡Desde luego que eres hábil!"
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+=== uttrykk-a1.json ===
+Auto-detected (fixable): 1
+Needs manual review (ambiguous): 10
+
+[u-a1-007] norsk: "Hovdan staver du det? P-E-T-E-R."
+  example: "Hvordan staver du det? A-N-N-A."
+  - [norwegian] "example" contains "a" (likely degraded "å")
+  - [norwegian] "example" contains "a" (likely degraded "å")
+
+--- Manual review needed ---
+[u-a1-024] norsk: "mye å gjøre"
+  example_spanish: "Hoy tengo mucho que hacer."
+  - [spanish] "spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[u-a1-041] norsk: "å komme til å"
+  example_german: "Morgen wird das Wetter schon sein."
+  - [german] "example_german" contains "schon" — schon ("already") OR "schön" ("beautiful") — review manually
+
+[u-a1-048] norsk: "å ha lyst til å"
+  example_spanish: "Tengo ganas de comer pizza esta noche."
+  - [spanish] "example_spanish" contains "esta" — esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually
+
+[u-a1-050] norsk: "både – og"
+  example_spanish: "Él come tanto pescado como carne."
+  - [spanish] "spanish" contains "como" — como ("as/like"/"I eat") OR "cómo" ("how", question) — review manually
+  - [spanish] "spanish" contains "como" — como ("as/like"/"I eat") OR "cómo" ("how", question) — review manually
+  - [spanish] "example_spanish" contains "como" — como ("as/like"/"I eat") OR "cómo" ("how", question) — review manually
+
+[u-a1-068] norsk: "Ha en fin dag. I like måte."
+  example_spanish: "¡Que tenga un buen día! Igualmente."
+  - [spanish] "spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[u-a1-083] norsk: "Du må kjøre med én gang! Ja, nå kjører jeg."
+  example_spanish: "¡Tienes que irte ahora mismo! Sí, ahora me voy."
+  - [spanish] "spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[u-a1-088] norsk: "å bli gravid"
+  example_german: "Sie wurde schwanger und bekam ein Kind."
+  - [german] "example_german" contains "wurde" — wurde ("was", pass./aux.) OR "würde" ("would") — review manually
+
+[u-a1-098] norsk: "hoppe over"
+  example_spanish: "¿Podemos saltarnos esta tarea?"
+  - [spanish] "example_spanish" contains "esta" — esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually
+
+[u-a1-105] norsk: "god natt"
+  example_spanish: "¡Buenas noches! Que duermas bien."
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+
+[u-a1-125] norsk: "Jeg forstår ikke"
+  example_spanish: "¿Puedes hablar más despacio? No entiendo lo que dices."
+  - [spanish] "example_spanish" contains "que" — que (relative "that/which") OR "qué" ("what", question) — review manually
+

@@ -1,0 +1,447 @@
+Audit report: uttrykk-a2.json
+Generated:    2026-07-05T08:46:10.831Z
+Audited:      133 entries
+Results:      37 error(s), 69 warning(s), 2 info(s)
+
+──────────────────────────────────────────────────────────────────────
+
+❌  ERRORS (37)
+────────────────────────────────────────
+  [u-a2-162] i dag (A2)
+    field:   example_german
+    comment: Missing umlaut: 'schön' not 'schon'
+
+  [u-a2-163] avhengig av (A2)
+    field:   german
+    comment: Missing umlaut: 'abhängig' not 'abhangig'
+
+  [u-a2-163] avhengig av (A2)
+    field:   example_german
+    comment: Missing umlaut: 'hängt' not 'hangt'
+
+  [u-a2-164] å dekke bordet (A2)
+    field:   example_german
+    comment: Missing umlaut: 'während' not 'wahrend'
+
+  [u-a2-166] dårlig tid (A2)
+    field:   example_norsk
+    comment: Typo: 'so' should be 'så'
+
+  [u-a2-166] dårlig tid (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Frühstück' not 'Fruhstuck'
+
+  [u-a2-169] ekstra flott (A2)
+    field:   example_german
+    comment: Missing umlaut: 'schön' not 'schon'
+
+  [u-a2-169] ekstra flott (A2)
+    field:   german
+    comment: Missing umlaut: 'schön' not 'schon'
+
+  [u-a2-170] en fast jobb (A2)
+    field:   example_norsk
+    comment: Typo: 'fatt' should be 'fått'
+
+  [u-a2-172] å føle seg (A2)
+    field:   example_german
+    comment: Missing umlaut: 'fühle'/'fühlen' not 'fuhle'/'fuhlen'
+
+  [u-a2-172] å føle seg (A2)
+    field:   german
+    comment: Missing umlaut: 'fühlen' not 'fuhlen'
+
+  [u-a2-173] å føre regnskap (A2)
+    field:   example_german
+    comment: Missing umlaut: 'führen'/'führen' not 'fuhren'
+
+  [u-a2-173] å føre regnskap (A2)
+    field:   german
+    comment: Missing umlaut: 'führen' not 'fuhren'
+
+  [u-a2-176] noen ganger (A2)
+    field:   example_german
+    comment: Missing umlaut: 'schön' not 'schon'
+
+  [u-a2-177] en gang til (A2)
+    field:   example_german
+    comment: Missing umlaut: 'erklären' not 'erklaren'
+
+  [u-a2-195] God morgen. (A2)
+    field:   example_spanish
+    comment: '¿Buenos días!' mixes question and exclamation marks incorrectly; should be '¡Buenos días!'
+
+  [u-a2-201] å være hjemme (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Él' (not 'El') required for third person pronoun.
+
+  [u-a2-202] i dårlig humør (A2)
+    field:   example_spanish
+    comment: Missing accents: 'está', 'dormió' required.
+
+  [u-a2-203] i godt humør (A2)
+    field:   example_spanish
+    comment: Missing accents: 'Él', 'está' required.
+
+  [u-a2-207] i to år (A2)
+    field:   example_norsk
+    comment: Missing accent on 'år': should be 'i to år'.
+
+  [u-a2-208] i like måte (A2)
+    field:   example_norsk
+    comment: Missing accent: 'måte' not 'mate'.
+
+  [u-a2-209] å snakke høyt (A2)
+    field:   example_norsk
+    comment: Missing accents: 'høyere' and 'hører' not 'hoyere'/'horer'.
+
+  [u-a2-209] å snakke høyt (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Puedes hablar…?' and accent on 'más'.
+
+  [u-a2-212] å klare seg (A2)
+    field:   example_norsk
+    comment: Missing accent: 'år' not 'ar'.
+
+  [u-a2-214] å klippe hår (A2)
+    field:   example_norsk
+    comment: Missing accent: 'håret' not 'haret'.
+
+  [u-a2-215] å knekke brød (A2)
+    field:   english
+    comment: 'å knekke brød' is not a standard phrase; 'knekkebrød' is one word meaning crispbread.
+
+  [u-a2-215] å knekke brød (A2)
+    field:   example_norsk
+    comment: Example shows 'knekkebrød' (noun), not the phrase 'å knekke brød'.
+
+  [u-a2-215] å knekke brød (A2)
+    field:   ukrainian
+    comment: 'хрустке хлібці' is grammatically incorrect; should be 'хрусткі хлібці' or 'хрустке хлібце'.
+
+  [u-a2-215] å knekke brød (A2)
+    field:   example_ukrainian
+    comment: Same grammatical error: 'хрустке хлібці' should be 'хрусткі хлібці'.
+
+  [u-a2-218] komme fra (A2)
+    field:   example_spanish
+    comment: Inverted exclamation mark used instead of question mark: should be '¿De dónde eres?'.
+
+  [u-a2-220] kvart på (A2)
+    field:   example_ukrainian
+    comment: 'о без чверті три' is ungrammatical; should be 'о без чверті третя' or 'за чверть третя'
+
+  [u-a2-221] kvart over (A2)
+    field:   example_german
+    comment: 'fahrt' missing umlaut; should be 'fährt'
+
+  [u-a2-222] på landet (A2)
+    field:   example_spanish
+    comment: 'crécio' is misspelled; should be 'creció'; 'extrana' missing tilde: 'extraña'
+
+  [u-a2-226] å bli lei seg (A2)
+    field:   example_german
+    comment: 'sich aufregern' is misspelled; should be 'sich aufregen'
+
+  [u-a2-226] å bli lei seg (A2)
+    field:   example_german
+    comment: 'horte' missing umlaut; should be 'hörte'
+
+  [u-a2-250] å sitte i ro (A2)
+    field:   example_german
+    comment: 'könnte' (could) should be 'konnte' (past tense: could not)
+
+  [u-a2-265] slik at (A2)
+    field:   example_spanish
+    comment: 'Hablo' is present tense; should be 'Habló' (preterite) to match context.
+
+
+⚠️   WARNINGS (69)
+────────────────────────────────────────
+  [u-a2-161] å lære av (A2)
+    field:   german
+    comment: More natural: 'aus etwas lernen' not 'lernen aus'
+
+  [u-a2-163] avhengig av (A2)
+    field:   example_spanish
+    comment: Missing accent: 'cuánto' not 'cuanto'
+
+  [u-a2-165] dårlig humor (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está' not 'esta'
+
+  [u-a2-166] dårlig tid (A2)
+    field:   example_spanish
+    comment: Missing accent: 'mañanas' not 'mananas'
+
+  [u-a2-170] en fast jobb (A2)
+    field:   example_spanish
+    comment: Missing accent: 'después' not 'despues'
+
+  [u-a2-173] å føre regnskap (A2)
+    field:   level
+    comment: 'å føre regnskap' is accounting terminology, more appropriate for B1+
+
+  [u-a2-175] Er det noe galt? (A2)
+    field:   spanish
+    comment: '¿Pasa algo?' or '¿Hay algo malo?' — former is more natural in Spanish
+
+  [u-a2-177] en gang til (A2)
+    field:   example_spanish
+    comment: Missing accent: 'más' not 'mas'; 'entendí' not 'entendi'
+
+  [u-a2-177] en gang til (A2)
+    field:   spanish
+    comment: Missing accent: 'más' not 'mas'
+
+  [u-a2-179] i fjor (A2)
+    field:   example_spanish
+    comment: Missing accent: 'fantásticas' not 'fantasticas'
+
+  [u-a2-183] For en dag! (A2)
+    field:   spanish
+    comment: Missing opening inverted exclamation mark: '¡Qué día!'
+
+  [u-a2-183] For en dag! (A2)
+    field:   example_spanish
+    comment: Missing '¡' before 'Que' and accent: '¡Qué día!'
+
+  [u-a2-183] For en dag! (A2)
+    field:   ukrainian
+    comment: 'Ось це день!' is unnatural; prefer 'Ну й день!' or 'От це день!'
+
+  [u-a2-189] å gjøre lekser (A2)
+    field:   example_norsk
+    comment: Missing 'før' before 'de får': should be 'før de får spille spill'
+
+  [u-a2-191] god mat (A2)
+    field:   ukrainian
+    comment: 'смачна їжа' means 'tasty food', not a direct match for 'god mat' (good food)
+
+  [u-a2-204] Ha det. (A2)
+    field:   german
+    comment: Missing umlaut: should be 'Tschüss'.
+
+  [u-a2-204] Ha det. (A2)
+    field:   example_german
+    comment: Missing umlaut: should be 'Tschüss'.
+
+  [u-a2-204] Ha det. (A2)
+    field:   spanish
+    comment: Missing accent: should be 'Adiós'.
+
+  [u-a2-204] Ha det. (A2)
+    field:   example_spanish
+    comment: Missing accent: should be '¡Adiós, nos vemos mañana!'.
+
+  [u-a2-206] i kurven (A2)
+    field:   example_spanish
+    comment: 'en la cesta de la mesa' implies possession; 'sobre la mesa' or 'que está en la mesa' is more natural.
+
+  [u-a2-207] i to år (A2)
+    field:   example_german
+    comment: 'haben … gewohnt' (perfective) vs Norwegian present perfect; 'seit zwei Jahren' more consistent.
+
+  [u-a2-207] i to år (A2)
+    field:   example_german
+    comment: German uses 'seit' for ongoing states; example implies completed action, inconsistency with Ukrainian.
+
+  [u-a2-208] i like måte (A2)
+    field:   example_german
+    comment: Missing umlaut: should be 'Schönes Wochenende!'.
+
+  [u-a2-215] å knekke brød (A2)
+    field:   german
+    comment: Missing umlaut: 'Knäckebrot' not 'Knackebrot'.
+
+  [u-a2-215] å knekke brød (A2)
+    field:   example_german
+    comment: Missing umlauts: 'Knäckebrot', 'Käse', 'Frühstück'.
+
+  [u-a2-221] kvart over (A2)
+    field:   ukrainian
+    comment: 'чверть на' is one valid form but incomplete; 'чверть по' is also common
+
+  [u-a2-221] kvart over (A2)
+    field:   example_ukrainian
+    comment: Ukrainian example uses different hour (дев'яту) than Norwegian source (åtte=восьму)
+
+  [u-a2-223] hvor langt (A2)
+    field:   spanish
+    comment: 'que tan lejos' missing opening question mark and accent: '¿qué tan lejos?'
+
+  [u-a2-223] hvor langt (A2)
+    field:   example_spanish
+    comment: 'Que tan lejos esta' missing accents: 'Qué tan lejos está'
+
+  [u-a2-226] å bli lei seg (A2)
+    field:   example_spanish
+    comment: 'El' and 'escucho' missing accents: 'Él', 'escuchó'
+
+  [u-a2-227] hvor lenge (A2)
+    field:   example_spanish
+    comment: 'Cuanto tiempo' missing accent: 'Cuánto tiempo'
+
+  [u-a2-227] hvor lenge (A2)
+    field:   example_german
+    comment: 'wohnst du schon' implies present; Norwegian uses present perfect — minor mismatch
+
+  [u-a2-228] å leve av (A2)
+    field:   example_german
+    comment: 'Mobel' missing umlaut; should be 'Möbel'
+
+  [u-a2-228] å leve av (A2)
+    field:   example_spanish
+    comment: 'El se gana' missing accent on 'Él'
+
+  [u-a2-229] å like seg (A2)
+    field:   example_german
+    comment: 'wohlfuhlen' and 'fuhle' missing umlaut; should be 'wohlfühlen', 'fühle'
+
+  [u-a2-230] å ha lyst på (A2)
+    field:   example_spanish
+    comment: 'cafe' missing accent; should be 'café'
+
+  [u-a2-232] å ta med (A2)
+    field:   example_ukrainian
+    comment: 'Памятай' missing apostrophe; should be 'Пам'ятай'
+
+  [u-a2-233] midt på vinteren (A2)
+    field:   example_spanish
+    comment: 'frio' missing accent; should be 'frío'
+
+  [u-a2-234] å miste balansen (A2)
+    field:   example_spanish
+    comment: 'Perdio' and 'cayo' missing accents: 'Perdió', 'cayó'
+
+  [u-a2-236] neste uke (A2)
+    field:   german
+    comment: 'nachste' missing umlaut; should be 'nächste'
+
+  [u-a2-236] neste uke (A2)
+    field:   example_german
+    comment: 'Nachste' missing umlaut; should be 'Nächste'
+
+  [u-a2-242] sånn passe (A2)
+    field:   german
+    comment: Missing umlaut: 'mittelmäßig' not 'mittelmassig'
+
+  [u-a2-242] sånn passe (A2)
+    field:   spanish
+    comment: Missing accents/punctuation: 'más o menos', '¿Cómo fue...?'
+
+  [u-a2-242] sånn passe (A2)
+    field:   example_spanish
+    comment: Missing opening question mark and accents throughout
+
+  [u-a2-244] å pusse tennene (A2)
+    field:   german
+    comment: Missing umlaut: 'Zähne' not 'Zahne'
+
+  [u-a2-244] å pusse tennene (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Zähne' not 'Zahne'
+
+  [u-a2-247] så rart (A2)
+    field:   german
+    comment: Missing umlaut: 'merkwürdig' not 'merkwurdig'
+
+  [u-a2-247] så rart (A2)
+    field:   example_german
+    comment: Missing umlaut: 'merkwürdig' not 'merkwurdig'
+
+  [u-a2-247] så rart (A2)
+    field:   spanish
+    comment: Missing accents/punctuation: '¡Qué raro!', 'extraño'
+
+  [u-a2-248] å se rart ut (A2)
+    field:   spanish
+    comment: Missing accent: 'extraño' not 'extrano'
+
+  [u-a2-249] å skrive rett fram (A2)
+    field:   english
+    comment: 'å skrive rett fram' means 'to write straight ahead/directly', not straightforwardly
+
+  [u-a2-253] alle sammen (A2)
+    field:   example_spanish
+    comment: Missing opening exclamation mark: '¡Bienvenidos, todos!'
+
+  [u-a2-254] til sammen (A2)
+    field:   ukrainian
+    comment: 'разом узяті' is unnatural; simply 'загалом' suffices
+
+  [u-a2-256] å spesialisere seg (A2)
+    field:   level
+    comment: 'å spesialisere seg' and 'pediatrics' context seem above A2 level
+
+  [u-a2-271] å ha dårlig smak (A2)
+    field:   example_norsk
+    comment: A2 level; 'villeste møbler' and complex em-dash construction may be above A2.
+
+  [u-a2-272] stakkars deg (A2)
+    field:   spanish
+    comment: 'pobrecito/a tu' is unnatural; should be 'pobrecito/a de ti' or just 'pobrecito/a'.
+
+  [u-a2-281] å ta en dusj (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Él siempre se ducha por la mañana.'
+
+  [u-a2-283] takk for det (A2)
+    field:   german
+    comment: Missing umlaut: should be 'dafür', not 'dafur'.
+
+  [u-a2-283] takk for det (A2)
+    field:   example_german
+    comment: Missing umlaut: should be 'dafür', not 'dafur'.
+
+  [u-a2-284] å ha dårlig tid (A2)
+    field:   example_spanish
+    comment: Missing accent: 'después', not 'despues'.
+
+  [u-a2-286] en ting til (A2)
+    field:   spanish
+    comment: Missing accent: 'una cosa más', not 'una cosa mas'.
+
+  [u-a2-286] en ting til (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Una cosa más', not 'Una cosa mas'.
+
+  [u-a2-289] på venstre side (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está', not 'esta'.
+
+  [u-a2-290] vent litt (A2)
+    field:   example_spanish
+    comment: Missing accent: 'todavía', not 'todavia'.
+
+  [u-a2-290] vent litt (A2)
+    field:   example_ukrainian
+    comment: Gender unspecified; 'закінчив' assumes male speaker.
+
+  [u-a2-292] vær så god (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Me puede dar el menú?'
+
+  [u-a2-293] personlig økonomi (A2)
+    field:   german
+    comment: Should use umlaut: 'persönliche Finanzen', not 'persoenliche'.
+
+  [u-a2-293] personlig økonomi (A2)
+    field:   example_german
+    comment: Should use umlaut: 'persönlichen Finanzen', not 'persoenlichen'.
+
+  [u-a2-293] personlig økonomi (A2)
+    field:   level
+    comment: 'Personlig økonomi' is a complex topic; B1 may be more appropriate than A2.
+
+
+ℹ️   INFO (2)
+────────────────────────────────────────
+  [u-a2-237] på nettet (A2)
+    field:   example_spanish
+    comment: 'comprar' (buy) used instead of 'pedir/reservar' (order); slight meaning shift
+
+  [u-a2-249] å skrive rett fram (A2)
+    field:   example_english
+    comment: Concept may be slightly advanced for A2 level
+
