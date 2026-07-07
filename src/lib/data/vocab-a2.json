@@ -222,8 +222,8 @@
   },
   {
     "id": "v-a2-shopping-014",
-    "norsk": "penger (en)",
-    "lemma": "penger",
+    "norsk": "penger (pl.)",
+    "lemma": "penge",
     "english": "money",
     "ukrainian": "гроші",
     "spanish": "dinero",
@@ -5502,7 +5502,7 @@
   },
   {
     "id": "v-a2-money-010",
-    "norsk": "vekslepenger (en)",
+    "norsk": "vekslepenger (pl.)",
     "lemma": "vekslepenger",
     "english": "change (money)",
     "ukrainian": "решта (здача)",

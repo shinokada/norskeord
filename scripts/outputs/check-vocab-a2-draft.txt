@@ -1,0 +1,39 @@
+
+────────────────────────────────────────────────────────────
+📄  vocab-a2-new.json  (611 entries)
+────────────────────────────────────────────────────────────
+  ❌  [11] id=v-a2-time-019: noun norsk "april" should end with gender, e.g. "hus (et)"
+  ❌  [19] id=v-a2-time-020: noun norsk "august" should end with gender, e.g. "hus (et)"
+  ❌  [77] id=v-a2-time-024: noun norsk "desember" should end with gender, e.g. "hus (et)"
+  ❌  [116] id=v-a2-time-029: noun norsk "februar" should end with gender, e.g. "hus (et)"
+  ❌  [146] id=v-a2-time-033: noun norsk "fjor" should end with gender, e.g. "hus (et)"
+  ❌  [150] id=v-a2-social-life-042: noun norsk "folk" should end with gender, e.g. "hus (et)"
+  ❌  [153] id=v-a2-environment-010: noun norsk "forbud" should end with gender, e.g. "hus (et)"
+  ❌  [179] id=v-a2-shopping-029: noun norsk "grønnsaker" should end with gender, e.g. "hus (et)"
+  ❌  [181] id=v-a2-transport-013: noun norsk "går" should end with gender, e.g. "hus (et)"
+  ❌  [189] id=v-a2-descriptive-adjectives-033: unknown part "prefix"
+  ❌  [203] id=v-a2-communication-045: verb norsk "kan" should start with "å ", e.g. "å få"
+  ❌  [229] id=v-a2-clothing-011: noun norsk "herreklær" should end with gender, e.g. "hus (et)"
+  ❌  [233] id=v-a2-time-037: unknown part "determiner"
+  ❌  [236] id=v-a2-communication-049: unknown part "determiner"
+  ❌  [245] id=v-a2-time-038: noun norsk "januar" should end with gender, e.g. "hus (et)"
+  ❌  [250] id=v-a2-time-039: noun norsk "juli" should end with gender, e.g. "hus (et)"
+  ❌  [251] id=v-a2-time-040: noun norsk "juni" should end with gender, e.g. "hus (et)"
+  ❌  [259] id=v-a2-clothing-012: noun norsk "klær" should end with gender, e.g. "hus (et)"
+  ❌  [314] id=v-a2-time-045: noun norsk "mai" should end with gender, e.g. "hus (et)"
+  ❌  [317] id=v-a2-time-046: noun norsk "mars" should end with gender, e.g. "hus (et)"
+  ❌  [354] id=v-a2-time-050: noun norsk "november" should end with gender, e.g. "hus (et)"
+  ❌  [362] id=v-a2-time-052: noun norsk "oktober" should end with gender, e.g. "hus (et)"
+  ❌  [392] id=v-a2-money-021: noun norsk "penger" should end with gender, e.g. "hus (et)"
+  ❌  [439] id=v-a2-cooking-050: noun norsk "rødbeter" should end with gender, e.g. "hus (et)"
+  ❌  [458] id=v-a2-directions-047: noun norsk "sentrum" should end with gender, e.g. "hus (et)"
+  ❌  [459] id=v-a2-time-056: noun norsk "september" should end with gender, e.g. "hus (et)"
+  ❌  [489] id=v-a2-clothing-022: noun norsk "solbriller" should end with gender, e.g. "hus (et)"
+  ❌  [515] id=v-a2-clothing-024: noun norsk "støvler" should end with gender, e.g. "hus (et)"
+  ❌  [516] id=v-a2-clothing-025: noun norsk "støvletter" should end with gender, e.g. "hus (et)"
+  ❌  [519] id=v-a2-social-life-091: noun norsk "svigerforeldre" should end with gender, e.g. "hus (et)"
+
+❌  vocab-a2-new.json: 30 error(s), 0 warning(s)
+
+════════════════════════════════════════════════════════════
+📊  Total: 30 error(s), 0 warning(s) across 1 file(s)

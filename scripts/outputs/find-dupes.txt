@@ -1,0 +1,53 @@
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a1/vocab-a1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a1/uttrykk-a1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b1/vocab-b1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b1/uttrykk-b1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/vocab-b2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/uttrykk-b2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/c/vocab-c-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/c/uttrykk-c-new.json
+Entry counts: {'A1': 457, 'A1-uttrykk': 126, 'A2': 342, 'A2-uttrykk': 159, 'B1': 1169, 'B1-uttrykk': 321, 'B2': 1668, 'B2-uttrykk': 799, 'C': 502, 'C-uttrykk': 192, 'A2-draft': 609, 'A2-uttrykk-draft': 133}
+Total entries: 6477
+
+=== CROSS-FILE DUPLICATES (33) ===
+(Same 'norsk' value appears in different level files)
+
+  'april (en)'                                   →  A1 [days-months]  |  A2-draft [time]
+  'august (en)'                                  →  A1 [days-months]  |  A2-draft [time]
+  'desember (en)'                                →  A1 [days-months]  |  A2-draft [time]
+  'februar (en)'                                 →  A1 [days-months]  |  A2-draft [time]
+  'forbud (et)'                                  →  B1 [politics]  |  A2-draft [environment]
+  'i dag'                                        →  A1 [days-months]  |  A2-uttrykk-draft [uttrykk]
+  'i går'                                        →  A1 [days-months]  |  A2-uttrykk-draft [uttrykk]
+  'i morgen'                                     →  A1 [days-months]  |  A2-uttrykk-draft [uttrykk]
+  'januar (en)'                                  →  A1 [days-months]  |  A2-draft [time]
+  'jo'                                           →  B2 [discourse-markers]  |  A2-uttrykk-draft [uttrykk]
+  'juli (en)'                                    →  A1 [days-months]  |  A2-draft [time]
+  'juni (en)'                                    →  A1 [days-months]  |  A2-draft [time]
+  'klar'                                         →  A2 [weather]  |  B2 [communication]
+  'mai (en)'                                     →  A1 [days-months]  |  A2-draft [time]
+  'mars (en)'                                    →  A1 [days-months]  |  A2-draft [time]
+  'neste uke'                                    →  A2 [time]  |  A2-uttrykk-draft [uttrykk]
+  'noen ganger'                                  →  A2 [time]  |  A2-uttrykk-draft [uttrykk]
+  'november (en)'                                →  A1 [days-months]  |  A2-draft [time]
+  'oktober (en)'                                 →  A1 [days-months]  |  A2-draft [time]
+  'selv om'                                      →  B2 [discourse-markers]  |  A2-uttrykk-draft [uttrykk]
+  'september (en)'                               →  A1 [days-months]  |  A2-draft [time]
+  'støvler (pl.)'                                →  A1 [clothes]  |  A2-draft [clothing]
+  'ved siden av'                                 →  A2 [directions]  |  A2-uttrykk-draft [uttrykk]
+  'å føle seg'                                   →  A2 [health]  |  A2-uttrykk-draft [uttrykk]
+  'å gå'                                         →  A1 [verbs]  |  A2-draft [transport]
+  'å kle på seg'                                 →  A1 [clothes]  |  A2-uttrykk-draft [uttrykk]
+  'å kunne'                                      →  A1 [verbs]  |  A2-draft [communication]
+  'å legge seg'                                  →  A2 [health]  |  A2-uttrykk-draft [uttrykk]
+  'å skade seg'                                  →  A2 [body]  |  A2-uttrykk-draft [uttrykk]
+  'å slappe av'                                  →  B1 [mental-wellbeing]  |  A2-uttrykk-draft [uttrykk]
+  'å slå av'                                     →  A2 [technology]  |  A2-uttrykk-draft [uttrykk]
+  'å snakke med'                                 →  A2 [communication]  |  A2-uttrykk-draft [uttrykk]
+  'å spesialisere seg'                           →  B2 [advanced-verbs]  |  A2-uttrykk-draft [uttrykk]
+
+=== WITHIN-FILE DUPLICATES (0) ===
+(Same 'norsk' value appears twice in the same file)
+
+
+Results written to: /Users/shinichiokada/Svelte/svelte-languages/norskeord/scripts/vocab_duplicate_report.txt

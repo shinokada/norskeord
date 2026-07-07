@@ -200,31 +200,6 @@ Translate `norsk` into `english`, `ukrainian`, `spanish`, `german`, using the mo
 
 Choose **exactly one** category from the list matching the entry's `level`, using the names exactly as written. These mirror `CATEGORIES_BY_LEVEL` in `src/lib/config.ts` — check that file if it's been updated since this document was written.
 
-**A1:**
-
-```text
-greetings
-numbers
-colors
-family
-body
-food
-animals
-home
-days-months
-classroom
-adjectives
-verbs
-pronouns-and-questions
-feelings
-weather
-transportation
-household-items
-places
-clothes
-actions
-```
-
 **A2:**
 
 ```text
@@ -260,7 +235,7 @@ When choosing categories for words:
 
 ### 11. Generate an example sentence — Format B1 words (no example yet)
 
-One natural **Norwegian** sentence per item that clearly demonstrates the meaning, sounds natural to native speakers, uses correct grammar for an A1/A2 learner (keep it simple — short, common structures, no subordinate clauses for A1), is concise, and uses the word in an appropriate grammatical form. Store in `example`.
+One natural **Norwegian** sentence per item that clearly demonstrates the meaning, sounds natural to native speakers, uses correct grammar for an A2 learner (keep it simple — short, common structures, no subordinate clauses for A1), is concise, and uses the word in an appropriate grammatical form. Store in `example`.
 
 ### 11a. Format B2 expressions — translate, don't regenerate
 

@@ -5521,14 +5521,15 @@
     "ukrainian": "обміняти гроші",
     "spanish": "cambiar dinero",
     "german": "Geld wechseln",
-    "example": "",
-    "example_english": "",
-    "example_ukrainian": "",
-    "example_spanish": "",
-    "example_german": "",
+    "example": "Jeg må veksle penger før vi reiser til utlandet.",
+    "example_english": "I need to exchange money before we travel abroad.",
+    "example_ukrainian": "Мені потрібно обміняти гроші перед поїздкою за кордон.",
+    "example_spanish": "Necesito cambiar dinero antes de viajar al extranjero.",
+    "example_german": "Ich muss Geld wechseln, bevor wir ins Ausland reisen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "definition": "Å veksle penger betyr å bytte en valuta mot en annen, for eksempel norske kroner mot euro. Det gjøres ofte på en bank eller et vekslingskontor."
   },
   {
     "id": "u-b1-321",
@@ -5538,13 +5539,14 @@
     "ukrainian": "мені байдуже / мені однаково",
     "spanish": "me importa un comino / me tiene sin cuidado",
     "german": "das ist mir egal / das ist mir völlig egal",
-    "example": "",
-    "example_english": "",
-    "example_ukrainian": "",
-    "example_spanish": "",
-    "example_german": "",
+    "example": "Hva andre synes om håret mitt, er meg blaffen.",
+    "example_english": "What others think about my hair, I couldn't care less about.",
+    "example_ukrainian": "Мені байдуже, що інші думають про моє волосся.",
+    "example_spanish": "Lo que otros piensen de mi pelo me importa un comino.",
+    "example_german": "Was andere über meine Haare denken, ist mir völlig egal.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "definition": "'Det er meg blaffen' er et uformelt uttrykk som betyr at man ikke bryr seg i det hele tatt om noe. Det brukes når noe er fullstendig likegyldig for en."
   }
 ]

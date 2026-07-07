@@ -1,0 +1,1675 @@
+Audit report: vocab-a2.json
+Generated:    2026-07-04T16:50:50.963Z
+Audited:      611 entries
+Results:      102 error(s), 287 warning(s), 26 info(s)
+
+──────────────────────────────────────────────────────────────────────
+
+❌  ERRORS (102)
+────────────────────────────────────────
+  [v-a2-occupations-027] ansatt (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está' not 'esta'; also missing accent on 'Ella está'.
+
+  [v-a2-time-019] april (A2)
+    field:   example (norsk)
+    comment: 'Paasken' is misspelled; correct Norwegian is 'Påsken'.
+
+  [v-a2-time-019] april (A2)
+    field:   example_german
+    comment: 'fallt' is misspelled; correct German is 'fällt'.
+
+  [v-a2-communication-021] arabisk (A2)
+    field:   spanish
+    comment: 'arabigo' is incorrect; correct Spanish is 'árabe'.
+
+  [v-a2-communication-021] arabisk (A2)
+    field:   example_spanish
+    comment: Missing accents: 'Él habla árabe con fluidez'.
+
+  [v-a2-occupations-030] arbeidsoppgave (en/ei) (A2)
+    field:   example (norsk)
+    comment: 'gå' is misspelled; should be 'ga' (past tense) or 'gav'.
+
+  [v-a2-occupations-031] arbeidsplass (en) (A2)
+    field:   example_german
+    comment: 'funf' missing umlaut; correct spelling is 'fünf'.
+
+  [v-a2-occupations-031] arbeidsplass (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está' not 'esta'.
+
+  [v-a2-communication-022] at (A2)
+    field:   example_german
+    comment: 'wurde' should be 'würde' (Konjunktiv II for reported speech).
+
+  [v-a2-communication-022] at (A2)
+    field:   example_spanish
+    comment: Missing accents: 'Él dijo que vendría mañana'.
+
+  [v-a2-time-020] august (A2)
+    field:   example_spanish
+    comment: Missing accent: 'después' not 'despues'.
+
+  [v-a2-social-life-031] besøk (et) (A2)
+    field:   example_norsk
+    comment: 'onkelen var' should be 'onkelen vår' (our uncle)
+
+  [v-a2-communication-033] ellers (A2)
+    field:   example_spanish
+    comment: 'perderaes' is a typo; should be 'perderás'
+
+  [v-a2-communication-037] forklaring (en/ei) (A2)
+    field:   example_norsk
+    comment: Typo: 'gå' should be 'ga' (gave); verb form is wrong
+
+  [v-a2-cooking-026] forsynt (A2)
+    field:   example_norsk
+    comment: Typo: 'kjempeliksom' should be 'kjempeliksom'→'kjempegod' or 'kjempegodt'
+
+  [v-a2-descriptive-adjectives-028] ganske (A2)
+    field:   spanish
+    comment: 'quite' is English, not Spanish; should be removed
+
+  [v-a2-communication-039] generell (A2)
+    field:   example (norsk)
+    comment: 'Han gå' is incorrect; should be 'Han ga' (past tense of 'gi')
+
+  [v-a2-health-037] å føde (A2)
+    field:   german
+    comment: 'gebaren' is incorrect; correct spelling is 'gebären'
+
+  [v-a2-social-life-048] gutt (en) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'niño pequeño'
+
+  [v-a2-transport-013] går (A2)
+    field:   part
+    comment: 'går' is a verb, not a noun
+
+  [v-a2-transport-013] går (A2)
+    field:   ukrainian
+    comment: 'іду/ходжу' are first person; should be third person 'іде/ходить'
+
+  [v-a2-transport-013] går (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Él va al trabajo cada día'
+
+  [v-a2-body-024] å holde (A2)
+    field:   example_norsk
+    comment: Typo: 'handen' should be 'hånden'
+
+  [v-a2-descriptive-adjectives-033] hoved- (A2)
+    field:   example_spanish
+    comment: 'main' is English, not Spanish; should be removed from Spanish field
+
+  [v-a2-descriptive-adjectives-033] hoved- (A2)
+    field:   spanish
+    comment: 'main' is English mixed into the Spanish translation field
+
+  [v-a2-house-chores-029] hull (et) (A2)
+    field:   example_german
+    comment: 'Es ist ein Loch' is unnatural; should be 'Es gibt ein Loch' or 'In meiner Hose ist ein Loch'
+
+  [v-a2-occupations-041] husøkonom (en) (A2)
+    field:   example_norsk
+    comment: Typo: 'gå oss' should be 'ga oss' (past tense of 'gi')
+
+  [v-a2-communication-043] informasjon (en) (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Puedes darme más información...?'
+
+  [v-a2-communication-044] innkalling (en) (A2)
+    field:   example_ukrainian
+    comment: 'на наступному тижні' is incorrect; should be 'наступного тижня'
+
+  [v-a2-house-chores-032] hall (en) (A2)
+    field:   example_german
+    comment: 'Hang' is English; should be 'Häng' or more naturally 'Hänge deine Jacke auf'
+
+  [v-a2-weather-016] hete (A2)
+    field:   part
+    comment: 'hete' is a noun/verb; 'hett' (used in example) is the adjective form.
+
+  [v-a2-social-life-062] kamerat (en) (A2)
+    field:   example_spanish
+    comment: Subject pronoun missing; 'Jugó' has no subject, making it ambiguous; should be 'Él jugó'
+
+  [v-a2-social-life-064] å kose seg (A2)
+    field:   example (norsk)
+    comment: 'kosta oss rundt balet' is incorrect; should be 'koste oss rundt bålet'
+
+  [v-a2-occupations-045] kvalifisert (A2)
+    field:   example (norsk)
+    comment: 'ingenioren' should be 'ingeniør'; wrong word form used
+
+  [v-a2-social-life-066] kvinne (en/ei) (A2)
+    field:   example (norsk)
+    comment: 'ro kjolet' should be 'røde kjolen'; incorrect adjective form
+
+  [v-a2-cooking-034] laks (en) (A2)
+    field:   example_spanish
+    comment: 'Friei' is not a Spanish word; should be 'Freí' (yo freí)
+
+  [v-a2-time-042] ledig (A2)
+    field:   example_spanish
+    comment: Missing opening inverted question mark: '¿Estás libre...?'
+
+  [v-a2-social-life-068] å lengte (A2)
+    field:   spanish
+    comment: 'anorarse' is not a Spanish word; should be 'añorar'
+
+  [v-a2-communication-055] å love (A2)
+    field:   example_spanish
+    comment: Missing accent: 'prometió' not 'prometio'
+
+  [v-a2-clothing-014] lue (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'frío' not 'frio'
+
+  [v-a2-body-026] lukt (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'había', 'extraño', 'habitación'
+
+  [v-a2-communication-056] å lure på (A2)
+    field:   example_spanish
+    comment: Missing accent: 'mañana' not 'manana'
+
+  [v-a2-weather-018] å lyne (A2)
+    field:   english
+    comment: 'to lightning' is not standard English; use 'to lighten' or 'there is lightning'
+
+  [v-a2-weather-018] å lyne (A2)
+    field:   example_english
+    comment: 'lightninged' is not a valid English word; rephrase naturally
+
+  [v-a2-weather-018] å lyne (A2)
+    field:   example_spanish
+    comment: Missing accents: 'Relampagueó', 'tronó'
+
+  [v-a2-social-life-072] lyst (en) (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Te apetece…?'
+
+  [v-a2-clothing-015] lære (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está' not 'esta'
+
+  [v-a2-money-019] lønn (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlauts/accents: 'höheres', 'befördert'
+
+  [v-a2-directions-037] mil (en/ei) (A2)
+    field:   example_english
+    comment: Says 'twenty kilometres' but Norwegian says 'to mil' (two miles = 20 km); units mismatch.
+
+  [v-a2-communication-064] muntlig (A2)
+    field:   german
+    comment: Duplicate 'mundlich, mundlich'; should be 'mündlich'. Also missing umlaut.
+
+  [v-a2-communication-064] muntlig (A2)
+    field:   example_german
+    comment: Missing umlauts: 'mündliche Prüfung' required.
+
+  [v-a2-communication-068] om (A2)
+    field:   example_norsk
+    comment: 'vare' should be 'våre' (our plans)
+
+  [v-a2-health-042] å operere (A2)
+    field:   example_norsk
+    comment: 'matte' should be 'måtte'
+
+  [v-a2-cooking-044] oppskrift (en/ei) (A2)
+    field:   example_norsk
+    comment: 'noyaktig' should be 'nøyaktig'
+
+  [v-a2-occupations-051] overtid (en/ei) (A2)
+    field:   example_spanish
+    comment: 'El trabajo' should be 'Él trabajó' (wrong subject pronoun and verb form)
+
+  [v-a2-occupations-053] parkeringsvakt (en/ei) (A2)
+    field:   german
+    comment: 'Parkuberwachers' is malformed; should be 'Parküberwacher; Politesse'
+
+  [v-a2-social-life-079] passe (A2)
+    field:   part
+    comment: 'passe' listed as adjective but entry is a verb form
+
+  [v-a2-communication-071] prat (en) (A2)
+    field:   example_ukrainian
+    comment: 'мили' is wrong; should be 'мали' (we had)
+
+  [v-a2-shopping-037] prøverom (et) (A2)
+    field:   example_norsk
+    comment: 'proverommmet' has triple 'm'; typo in source Norwegian example
+
+  [v-a2-house-chores-040] renhold (et) (A2)
+    field:   example_norsk
+    comment: 'God renhold' should be 'Godt renhold' (neuter noun requires neuter adjective)
+
+  [v-a2-descriptive-adjectives-063] rett (A2)
+    field:   example_spanish
+    comment: Malformed word: 'Mantен' should be 'Mantén'
+
+  [v-a2-cooking-049] matrett (en) (A2)
+    field:   example_norsk
+    comment: 'Farikal' should be 'Fårikål'
+
+  [v-a2-cooking-049] matrett (en) (A2)
+    field:   example_english
+    comment: 'Farikal' should be 'Fårikål'
+
+  [v-a2-cooking-049] matrett (en) (A2)
+    field:   example_german
+    comment: 'Farikal' should be 'Fårikål'
+
+  [v-a2-cooking-049] matrett (en) (A2)
+    field:   example_spanish
+    comment: 'farikal' should be 'fårikål'
+
+  [v-a2-cooking-049] matrett (en) (A2)
+    field:   example_ukrainian
+    comment: Mixed script: 'Фаріkal' should be fully Cyrillic 'Фаріколь'
+
+  [v-a2-descriptive-adjectives-064] riktig (A2)
+    field:   example_norsk
+    comment: Typos: 'Du gå' should be 'Du ga', 'sporsmaletl' should be 'spørsmålet'
+
+  [v-a2-social-life-084] ros (en) (A2)
+    field:   example_norsk
+    comment: Typos: 'Lrereren gå' should be 'Læreren ga'
+
+  [v-a2-occupations-062] rørlegger (en) (A2)
+    field:   example_ukrainian
+    comment: 'була витік' is ungrammatical; should be 'був витік'
+
+  [v-a2-descriptive-adjectives-065] sann (A2)
+    field:   example_norsk
+    comment: Typo: 'sannt' should be 'sant'
+
+  [v-a2-communication-076] selvfølgelig (A2)
+    field:   part
+    comment: 'selvfølgelig' is an adverb, not an adjective
+
+  [v-a2-occupations-064] servitør (en) (A2)
+    field:   example_norsk
+    comment: Garbled sentence: 'tok opp bestillingen var med' is ungrammatical.
+
+  [v-a2-sports-031] å sparke (A2)
+    field:   example_german
+    comment: 'schoss' means 'shot', not 'kicked'; inconsistent with 'treten/kicken'
+
+  [v-a2-social-life-091] svigerforeldre (A2)
+    field:   example_ukrainian
+    comment: Uses only 'свекра і свекруху' (husband's parents), ignoring wife's parents meaning.
+
+  [v-a2-health-046] sykehjem (et) (A2)
+    field:   example (norsk)
+    comment: 'narheten' should be 'nærheten'
+
+  [v-a2-health-047] sykmelding (en/ei) (A2)
+    field:   example (norsk)
+    comment: 'gå' should be 'ga' (gav/ga ham)
+
+  [v-a2-descriptive-adjectives-073] søt (A2)
+    field:   example_spanish
+    comment: Missing opening inverted exclamation mark: '¡El perrito es tan mono!'
+
+  [v-a2-descriptive-adjectives-074] sånn (A2)
+    field:   example (norsk)
+    comment: 'for' should be 'før' (before)
+
+  [v-a2-communication-092] å tenke (A2)
+    field:   example (norsk)
+    comment: 'for' should be 'før' (before)
+
+  [v-a2-nature-038] traktor (en) (A2)
+    field:   example (norsk)
+    comment: 'plose' is a typo; correct Norwegian spelling is 'pløye'
+
+  [v-a2-sports-033] trening (en/ei) (A2)
+    field:   example_spanish
+    comment: 'mieroles' is a misspelling; correct spelling is 'miércoles'
+
+  [v-a2-health-049] usunn (A2)
+    field:   example_norsk
+    comment: 'Det er usunn' should be 'Det er usunt' (neuter predicate form).
+
+  [v-a2-transport-022] varebil (en) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'entregó', 'mañana'.
+
+  [v-a2-health-050] vekt (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'médico', 'preguntó', 'había'.
+
+  [v-a2-descriptive-adjectives-081] veldig (A2)
+    field:   example_german
+    comment: Missing umlaut: should be 'draußen', not 'draussen'.
+
+  [v-a2-descriptive-adjectives-081] veldig (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'frío', 'afuera' is fine but 'fuera' more natural in Spain.
+
+  [v-a2-directions-056] venstre (A2)
+    field:   example_spanish
+    comment: Missing accent: 'semáforo'.
+
+  [v-a2-environment-013] verden (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: should be 'möchte', not 'mochte'.
+
+  [v-a2-environment-013] verden (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'gustaría'.
+
+  [v-a2-occupations-078] vikar (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está'.
+
+  [v-a2-communication-098] å ville (A2)
+    field:   example_german
+    comment: Should be 'hätte gerne', not 'hatte gerne' (missing umlaut).
+
+  [v-a2-communication-098] å ville (A2)
+    field:   example_spanish
+    comment: Missing accents: 'gustaría', 'café'.
+
+  [v-a2-descriptive-adjectives-082] virkelig (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Es esto realmente cierto?'
+
+  [v-a2-body-031] voksen (A2)
+    field:   example_german
+    comment: Missing umlaut: 'müssen', not 'mussen'.
+
+  [v-a2-occupations-079] yrke (et) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'profesión'; also missing opening question mark '¿'.
+
+  [v-a2-occupations-080] yrkesfag (et) (A2)
+    field:   example (norsk)
+    comment: Typo: 'videregaende' should be 'videregående'
+
+  [v-a2-occupations-080] yrkesfag (et) (A2)
+    field:   example_german
+    comment: Typo: 'wahlte' should be 'wählte'; 'weiterfuhrenden' should be 'weiterführenden'
+
+  [v-a2-occupations-080] yrkesfag (et) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'eligio' should be 'eligió'; 'formacion' should be 'formación'
+
+  [v-a2-social-life-099] ølboks (en) (A2)
+    field:   example_german
+    comment: Typo: 'Mullemer' should be 'Mülleimer'
+
+  [v-a2-communication-099] å ønske (A2)
+    field:   example (norsk)
+    comment: Missing special characters: 'onsker', 'ar' should be 'ønsker', 'år'
+
+  [v-a2-communication-099] å ønske (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Ano' should be 'Año'; 'prospero' should be 'próspero'
+
+  [v-a2-sports-035] øvelse (en) (A2)
+    field:   example (norsk)
+    comment: Typo: 'Laereren' should be 'Læreren'
+
+
+⚠️   WARNINGS (287)
+────────────────────────────────────────
+  [v-a2-occupations-025] administrasjon (en) (A2)
+    field:   level
+    comment: 'administrasjon' is more naturally B1 level vocabulary for learners.
+
+  [v-a2-hobbies-015] å aktivisere (A2)
+    field:   level
+    comment: 'å aktivisere' is more B1/B2; complex concept for A2 learners.
+
+  [v-a2-occupations-026] ambulansearbeider (en) (A2)
+    field:   level
+    comment: 'ambulansearbeider' is complex occupational term; more B1 appropriate.
+
+  [v-a2-occupations-031] arbeidsplass (en) (A2)
+    field:   ukrainian
+    comment: 'знаходиться' is redundant filler; more natural to omit it here.
+
+  [v-a2-directions-017] av (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está' not 'esta'
+
+  [v-a2-occupations-033] avdeling (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'sección' not 'seccion'; 'pediatría' not 'pediatria'
+
+  [v-a2-money-014] avgift (en/ei) (A2)
+    field:   german
+    comment: Missing umlaut: 'Gebühr' not 'Gebuhr'
+
+  [v-a2-money-014] avgift (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Gebühr' not 'Gebuhr'
+
+  [v-a2-money-014] avgift (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'aquí' not 'aqui'
+
+  [v-a2-communication-023] avis (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'Él', 'periódico', 'mañana'
+
+  [v-a2-cooking-022] bacon (et) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Frühstück' not 'Fruhstuck'
+
+  [v-a2-sports-023] å bade (A2)
+    field:   example_spanish
+    comment: Missing accent: 'niños' not 'ninos'; 'bañan' not 'banan'
+
+  [v-a2-sports-024] ball (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'niño' not 'nino'; 'chutó' not 'chuto'
+
+  [v-a2-transport-006] barnevogn (en/ei) (A2)
+    field:   example_german
+    comment: 'am Gehweg entlang' is slightly unnatural; 'auf dem Gehweg' is more idiomatic
+
+  [v-a2-cooking-023] bestikk (et) (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Puedes poner…?'
+
+  [v-a2-communication-025] å bety (A2)
+    field:   example_spanish
+    comment: Missing opening question mark '¿' required in Spanish.
+
+  [v-a2-nature-026] bjerketre (et) (A2)
+    field:   german
+    comment: 'Birkenbaum' is uncommon; native speakers say 'Birke'.
+
+  [v-a2-nature-026] bjerketre (et) (A2)
+    field:   example_german
+    comment: 'Birkenbaeme' should be 'Birken'; 'Birkenbaum' plural rarely used.
+
+  [v-a2-body-019] blek (A2)
+    field:   example_spanish
+    comment: 'Se veía' is more natural than 'Se veía' for past appearance; accent missing on 'pálido'.
+
+  [v-a2-descriptive-adjectives-019] å bli (A2)
+    field:   example_spanish
+    comment: 'ser médica' used instead of 'volverse/quedarse'; doesn't reflect the dual translation given.
+
+  [v-a2-weather-012] å blåse (A2)
+    field:   example_ukrainian
+    comment: Ukrainian says 'windy' (вітряно), not 'blowing hard'; inconsistent with Norwegian.
+
+  [v-a2-occupations-034] butikkmedarbeider (en) (A2)
+    field:   german
+    comment: Masculine form only; feminine 'Verkäuferin' used in example but not listed.
+
+  [v-a2-health-030] å burde (A2)
+    field:   ukrainian
+    comment: 'мати б' is unnatural; prefer 'слід / варто / повинен' for 'ought to'.
+
+  [v-a2-descriptive-adjectives-021] deilig (A2)
+    field:   german
+    comment: 'koestlich' should use umlaut: 'köstlich'; 'wunderbar' also missing proper encoding.
+
+  [v-a2-social-life-036] deltaker (en) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'después', 'competición' required for correctness.
+
+  [v-a2-occupations-035] deltid (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'además'; café also missing accent.
+
+  [v-a2-communication-026] dem (A2)
+    field:   example_spanish
+    comment: Missing accent: 'envié' (preterite first person requires accent).
+
+  [v-a2-directions-021] der (A2)
+    field:   example_german
+    comment: Missing umlauts: 'hält', 'drüben' required for correctness.
+
+  [v-a2-directions-021] der (A2)
+    field:   example_spanish
+    comment: Missing accents: 'allí', 'autobús' required for correctness.
+
+  [v-a2-time-023] deretter (A2)
+    field:   example_spanish
+    comment: Missing accents: 'después', 'cenamos' fine but 'después' needed.
+
+  [v-a2-communication-027] derfor (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Está lloviendo' requires accent on 'Está'.
+
+  [v-a2-technology-018] å designe (A2)
+    field:   spanish
+    comment: Missing tilde: correct spelling is 'diseñar', not 'disenar'.
+
+  [v-a2-technology-018] å designe (A2)
+    field:   example_spanish
+    comment: Missing tilde: 'diseñar' written incorrectly as 'disenar'.
+
+  [v-a2-technology-018] å designe (A2)
+    field:   level
+    comment: 'å designe' (loanword, design context) may be B1 rather than A2.
+
+  [v-a2-communication-029] dette (A2)
+    field:   example_spanish
+    comment: 'Este' is masculine; 'esto' (the translation) is neuter/neutral; inconsistency.
+
+  [v-a2-shopping-023] disk (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'detrás' required for correct Spanish orthography.
+
+  [v-a2-communication-030] disse (A2)
+    field:   example_ukrainian
+    comment: 'Це взуття' uses neuter singular; Norwegian example uses plural 'skoene'.
+
+  [v-a2-directions-022] dit (A2)
+    field:   example_spanish
+    comment: Missing accents and opening punctuation: 'Cómo', 'allí', '¿'.
+
+  [v-a2-health-031] å dø (A2)
+    field:   example_spanish
+    comment: 'murió' requires accent; 'murio' is a spelling error.
+
+  [v-a2-shopping-024] ekstra (A2)
+    field:   ukrainian
+    comment: 'зайвий' is an adjective, inconsistent with adverb context; remove or rephrase.
+
+  [v-a2-descriptive-adjectives-024] ekte (A2)
+    field:   ukrainian
+    comment: 'справжня' is redundant feminine form; list should not mix forms unnecessarily.
+
+  [v-a2-health-032] eldre (A2)
+    field:   german
+    comment: 'älteren' is inflected form; base adjective 'älter' suffices for the headword.
+
+  [v-a2-technology-019] elektronisk (A2)
+    field:   example_ukrainian
+    comment: «над паперовими» is unnatural; prefer «перед паперовими»
+
+  [v-a2-nature-029] elv (en/ei) (A2)
+    field:   example_ukrainian
+    comment: «цілий день» means 'all day', not 'all afternoon'; should be «цілий вечір» or «цілий після обід»
+
+  [v-a2-communication-035] å er (A2)
+    field:   english
+    comment: 'å er' is not a valid Norwegian infinitive; headword should be 'å være'
+
+  [v-a2-communication-035] å er (A2)
+    field:   german
+    comment: Entry headword issue affects German label; 'ist/sind' are forms of 'sein'
+
+  [v-a2-shopping-025] ferskvaredisk (en) (A2)
+    field:   english
+    comment: 'ferskvaredisk' specifically means deli/fresh-food counter, not general 'fresh produce counter'
+
+  [v-a2-shopping-025] ferskvaredisk (en) (A2)
+    field:   example_english
+    comment: Same issue: 'fresh produce counter' better fits a greengrocer section, not fish/deli
+
+  [v-a2-clothing-010] festkledd (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Gäste' not 'Gaste'
+
+  [v-a2-house-chores-026] å fikse (A2)
+    field:   example_spanish
+    comment: Missing opening question mark '¿' before 'Puedes'
+
+  [v-a2-communication-037] forklaring (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Erklärung' not 'Erklarung'
+
+  [v-a2-time-030] formiddag (en) (A2)
+    field:   example_norsk
+    comment: Typo: 'mote' should be 'møte'
+
+  [v-a2-time-030] formiddag (en) (A2)
+    field:   ukrainian
+    comment: 'Ранній полудень' is unnatural; 'перша половина дня' alone suffices
+
+  [v-a2-time-030] formiddag (en) (A2)
+    field:   example_ukrainian
+    comment: Phrasing 'першої половини дня' is overly wordy; 'вранці' more natural
+
+  [v-a2-directions-023] å følge (A2)
+    field:   ukrainian
+    comment: 'Слідувати' is a calque; more natural: 'іти за', 'дотримуватися'
+
+  [v-a2-shopping-026] å få (A2)
+    field:   spanish
+    comment: 'Obtener' is formal/written; more natural in context: 'conseguir' or 'pedir'
+
+  [v-a2-shopping-026] å få (A2)
+    field:   example_spanish
+    comment: '¿Puedo obtener una bolsa?' unnatural; prefer '¿Me puede dar una bolsa?'
+
+  [v-a2-time-033] fjor (A2)
+    field:   german
+    comment: 'fjor' is only used in 'i fjor'; labelling it as noun is misleading
+
+  [v-a2-descriptive-adjectives-029] flott (A2)
+    field:   ukrainian
+    comment: 'чудово' is an adverb; adjective form 'чудовий' suffices here
+
+  [v-a2-environment-010] forbud (A2)
+    field:   example_ukrainian
+    comment: Back-translation differs: 'заборонено палити' omits 'у ресторані'
+
+  [v-a2-shopping-028] fruktavdeling (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'plátanos', 'sección', 'frutas'
+
+  [v-a2-weather-013] å fryse (A2)
+    field:   spanish
+    comment: Missing accent: 'frío'; also 'congelarse' implies freezing solid, not feeling cold
+
+  [v-a2-weather-013] å fryse (A2)
+    field:   example_spanish
+    comment: Missing accent: 'frío'
+
+  [v-a2-health-036] fysioterapeut (en) (A2)
+    field:   spanish
+    comment: Missing accent: 'médico', 'recomendó'
+
+  [v-a2-health-036] fysioterapeut (en) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'médico', 'recomendó', 'después'
+
+  [v-a2-health-036] fysioterapeut (en) (A2)
+    field:   level
+    comment: 'fysioterapeut' is likely B1 vocabulary, not A2
+
+  [v-a2-health-037] å føde (A2)
+    field:   example_spanish
+    comment: Missing accent: 'niño'
+
+  [v-a2-social-life-043] gift (A2)
+    field:   example_spanish
+    comment: Missing accents: 'más', 'años', 'casados'
+
+  [v-a2-social-life-044] å gifte (A2)
+    field:   example_german
+    comment: Missing accent: 'nächsten'
+
+  [v-a2-directions-028] gjennom (A2)
+    field:   spanish
+    comment: Missing accent: 'través'
+
+  [v-a2-directions-028] gjennom (A2)
+    field:   example_spanish
+    comment: Missing accent: 'través', 'túnel'
+
+  [v-a2-body-023] å gjespe (A2)
+    field:   german
+    comment: Missing umlaut: 'gähnen', 'während', 'müde'
+
+  [v-a2-body-023] å gjespe (A2)
+    field:   example_german
+    comment: Missing umlauts: 'gähnen', 'während', 'müde'
+
+  [v-a2-body-023] å gjespe (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Empezó', 'estaba'
+
+  [v-a2-social-life-045] gjest (en) (A2)
+    field:   spanish
+    comment: Missing accent: 'huésped'
+
+  [v-a2-social-life-045] gjest (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Gäste'
+
+  [v-a2-house-chores-027] å gjøre (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Puedes lavar los platos esta noche?'
+
+  [v-a2-nature-031] grantre (et) (A2)
+    field:   english
+    comment: 'gran' specifically means spruce; listing 'fir tree' may cause confusion
+
+  [v-a2-nature-031] grantre (et) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'große'
+
+  [v-a2-descriptive-adjectives-032] å greie (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Crees que puedes...?'
+
+  [v-a2-shopping-029] grønnsaker (A2)
+    field:   german
+    comment: Missing umlaut: 'Gemüse'
+
+  [v-a2-shopping-029] grønnsaker (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Gemüse'
+
+  [v-a2-social-life-048] gutt (en) (A2)
+    field:   spanish
+    comment: 'chico' is informal/regional; 'niño' is the standard word for boy
+
+  [v-a2-transport-013] går (A2)
+    field:   english
+    comment: Typo: should be 'å gå', not 'a ga'
+
+  [v-a2-directions-029] hit (A2)
+    field:   example_spanish
+    comment: 'aquí' should have accent mark; 'Vengan acá' more natural for directional 'hit'
+
+  [v-a2-occupations-040] hjelpemann (en) (A2)
+    field:   english
+    comment: 'hjelpemann' is uncommon/dated; translation is accurate but word itself is rare
+
+  [v-a2-occupations-040] hjelpemann (en) (A2)
+    field:   example_ukrainian
+    comment: 'розклав усі полиці' means 'laid out shelves', not 'tidied shelves'
+
+  [v-a2-descriptive-adjectives-033] hoved- (A2)
+    field:   example_norsk
+    comment: 'Hoved inngangen' should be written as one word: 'Hovedinngangen'
+
+  [v-a2-occupations-041] husøkonom (en) (A2)
+    field:   german
+    comment: 'Haushaltswirt' is uncommon; 'Haushaltsökonom' or 'Ernährungsberater' more natural
+
+  [v-a2-occupations-041] husøkonom (en) (A2)
+    field:   level
+    comment: 'husøkonom' is a specialised term; more appropriate at B1 level
+
+  [v-a2-communication-044] innkalling (en) (A2)
+    field:   level
+    comment: 'innkalling' is relatively formal/specific; B1 may be more appropriate
+
+  [v-a2-hobbies-021] interesse (en) (A2)
+    field:   example_ukrainian
+    comment: Paraphrases as 'is interested in' rather than translating 'has a great interest'
+
+  [v-a2-shopping-031] kilopris (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'für' not 'fur'
+
+  [v-a2-shopping-031] kilopris (en) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'Cuál' and 'salmón'
+
+  [v-a2-hobbies-022] kino (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'película' not 'pelicula'
+
+  [v-a2-social-life-052] kirke (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'mañana' not 'manana'
+
+  [v-a2-descriptive-adjectives-035] kjempefin (A2)
+    field:   german
+    comment: Missing umlaut: 'schön' not 'schon'
+
+  [v-a2-descriptive-adjectives-035] kjempefin (A2)
+    field:   example_german
+    comment: Missing umlaut: 'schönes' not 'schones'
+
+  [v-a2-descriptive-adjectives-036] kjempeflink (A2)
+    field:   german
+    comment: Missing umlaut: 'tüchtig' not 'tuchtig'
+
+  [v-a2-descriptive-adjectives-036] kjempeflink (A2)
+    field:   example_german
+    comment: Missing umlaut: 'tüchtig' not 'tuchtig'
+
+  [v-a2-descriptive-adjectives-036] kjempeflink (A2)
+    field:   spanish
+    comment: Missing accent: 'hábil' not 'habil'
+
+  [v-a2-descriptive-adjectives-036] kjempeflink (A2)
+    field:   example_spanish
+    comment: Missing accent: 'hábil' not 'habil'
+
+  [v-a2-social-life-053] å kjenne (A2)
+    field:   german
+    comment: Missing umlaut: 'fühlen' not 'fuhlen'
+
+  [v-a2-social-life-054] å bli kjent med noen (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Conocí' not 'Conoci'
+
+  [v-a2-house-chores-032] hall (en) (A2)
+    field:   spanish
+    comment: Missing accent: 'vestíbulo' not 'vestibulo'
+
+  [v-a2-house-chores-032] hall (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'vestíbulo' not 'vestibulo'
+
+  [v-a2-money-016] halvpart (en) (A2)
+    field:   german
+    comment: Missing umlaut: 'Hälfte' not 'Halfte'
+
+  [v-a2-money-016] halvpart (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Hälfte' not 'Halfte'
+
+  [v-a2-money-016] halvpart (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'pagó' not 'pago'
+
+  [v-a2-descriptive-adjectives-038] heldig (A2)
+    field:   german
+    comment: Missing umlaut: should be 'glücklich', not 'glucklich/gluecklich'
+
+  [v-a2-descriptive-adjectives-038] heldig (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Glück' not 'Gluck'
+
+  [v-a2-communication-048] heldigvis (A2)
+    field:   german
+    comment: Missing umlaut: 'zum Glück' not 'zum Gluck'
+
+  [v-a2-occupations-043] heltid (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Büro' not 'Buro'
+
+  [v-a2-descriptive-adjectives-039] herlig (A2)
+    field:   example_spanish
+    comment: Missing opening inverted exclamation mark: '¡Hoy hace un tiempo maravilloso!'
+
+  [v-a2-descriptive-adjectives-040] hyggelig (A2)
+    field:   example_german
+    comment: 'schön' used instead of 'nett/gemütlich'; minor inconsistency with listed translations.
+
+  [v-a2-hobbies-024] hytte (en) (A2)
+    field:   ukrainian
+    comment: 'дача' implies a garden plot; 'котедж' or 'будиночок' is closer to Norwegian 'hytte'.
+
+  [v-a2-hobbies-025] hyttetur (en) (A2)
+    field:   ukrainian
+    comment: 'Дача' implies Russian-style dacha, not a mountain cabin; 'котедж' or 'хатинка' better
+
+  [v-a2-social-life-058] høytid (en/ei) (A2)
+    field:   german
+    comment: 'Feiertag' means public holiday; 'høytid' is broader, 'Fest' or 'Festzeit' more accurate
+
+  [v-a2-communication-051] å håpe (A2)
+    field:   example_spanish
+    comment: 'El tiempo' can mean 'time'; 'el clima' or 'el tiempo meteorológico' is clearer
+
+  [v-a2-social-life-059] jente (en) (A2)
+    field:   ukrainian
+    comment: 'Дівчина' means teenage girl/young woman; 'дівчинка' suits a little girl better
+
+  [v-a2-sports-027] å jogge (A2)
+    field:   ukrainian
+    comment: 'Бігати підтюпцем' is overly literal; 'бігати підтюпцем' is valid but rarely used; 'джогінг' or 'бігати' common
+
+  [v-a2-social-life-060] julaften (en) (A2)
+    field:   ukrainian
+    comment: Parenthetical '(Різдво)' is unnecessary and confusing; 'Святий вечір' suffices
+
+  [v-a2-cooking-031] jus (en) (A2)
+    field:   spanish
+    comment: 'Jugo' is Latin American; Spain uses 'zumo'; consider regional note or use 'zumo/jugo'
+
+  [v-a2-cooking-031] jus (en) (A2)
+    field:   example_spanish
+    comment: Same issue: 'jugo' is not standard in Spain; 'zumo' preferred in Spain
+
+  [v-a2-social-life-063] kone (en/ei) (A2)
+    field:   example_ukrainian
+    comment: Ukrainian uses wedding day, not anniversary; Norwegian says 'bryllupsdagen'
+
+  [v-a2-social-life-064] å kose seg (A2)
+    field:   example_english
+    comment: 'bonfire' is a stretch; 'bål' is campfire/bonfire, acceptable but check context
+
+  [v-a2-social-life-064] å kose seg (A2)
+    field:   german
+    comment: 'Spas' should be 'Spaß'; missing umlaut/eszett notation
+
+  [v-a2-time-041] kveld (en) (A2)
+    field:   example_german
+    comment: 'fruhabends' is non-standard; better phrasing: 'früh am Abend'
+
+  [v-a2-shopping-034] lager (et) (A2)
+    field:   example_spanish
+    comment: 'en stock' is an anglicism; prefer 'disponible' or 'en existencias'
+
+  [v-a2-directions-036] langt (A2)
+    field:   example_spanish
+    comment: Unnatural; prefer 'Está lejos de Oslo a Bergen en coche'
+
+  [v-a2-occupations-046] ledelse (en) (A2)
+    field:   level
+    comment: 'ledelse' and business decision context feels more B1 than A2
+
+  [v-a2-health-040] legevakt (en/ei) (A2)
+    field:   german
+    comment: 'Notaufnahme' is hospital A&E; 'legevakt' is out-of-hours GP clinic, not A&E
+
+  [v-a2-cooking-035] lekker (A2)
+    field:   example_english
+    comment: 'Very delicious' is redundant; prefer 'That soup is absolutely delicious'
+
+  [v-a2-cooking-036] leverpostei (en) (A2)
+    field:   example_ukrainian
+    comment: 'на обід' typically means lunch, but 'lunsj' context is correct; minor register note
+
+  [v-a2-social-life-070] liv (et) (A2)
+    field:   example_ukrainian
+    comment: 'щасливе' means 'happy', but Norwegian says 'godt' (good); minor semantic shift
+
+  [v-a2-sports-029] å løfte (A2)
+    field:   example_german
+    comment: 'trainiert darin' is unnatural; prefer 'trainiert, schwere Gewichte zu heben'
+
+  [v-a2-social-life-073] mamma (en) (A2)
+    field:   example_german
+    comment: 'Abendessen' is dinner/supper; 'Mittagessen' better matches Norwegian 'middag'
+
+  [v-a2-cooking-039] matpakke (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'für' not 'fur'.
+
+  [v-a2-cooking-039] matpakke (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'niños', 'mañana'.
+
+  [v-a2-hobbies-026] å mekke (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Motorrädern' not 'Motorradern'.
+
+  [v-a2-communication-060] melding (en/ei) (A2)
+    field:   example_ukrainian
+    comment: 'на телефон' should be 'на телефоні' (locative, not accusative).
+
+  [v-a2-shopping-035] melk (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Puedes comprar…?'
+
+  [v-a2-communication-061] men (A2)
+    field:   example_german
+    comment: Missing umlaut: 'würde' not 'wurde'.
+
+  [v-a2-communication-062] å mene (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Qué opinas…?'
+
+  [v-a2-communication-062] å mene (A2)
+    field:   example_german
+    comment: Missing umlaut: 'über' not 'uber'.
+
+  [v-a2-communication-063] mens (A2)
+    field:   german
+    comment: 'wahrend, wahrend' is duplicate; should be 'während, wohingegen'.
+
+  [v-a2-communication-063] mens (A2)
+    field:   example_german
+    comment: Missing umlaut: 'während' not 'wahrend'.
+
+  [v-a2-health-041] mentalt (A2)
+    field:   level
+    comment: 'mentalt' is abstract vocabulary; B1 level is more appropriate.
+
+  [v-a2-cooking-041] middag (en) (A2)
+    field:   example_german
+    comment: 'zu Abend' is redundant given 'jeden Abend'; minor awkward repetition.
+
+  [v-a2-descriptive-adjectives-048] mye (A2)
+    field:   part
+    comment: 'mye' is an adverb/determiner/pronoun, not typically classified as adjective.
+
+  [v-a2-descriptive-adjectives-049] nesten (A2)
+    field:   ukrainian
+    comment: 'ледь не' means 'nearly/almost (failed)'; implies near-miss, not simple 'almost'.
+
+  [v-a2-nature-034] nordlys (et) (A2)
+    field:   example_english
+    comment: 'northern lights display' is slightly unnatural; 'northern lights' alone suffices.
+
+  [v-a2-time-050] november (A2)
+    field:   example_spanish
+    comment: Spanish example adds extra detail not in Norwegian original, reducing consistency.
+
+  [v-a2-hobbies-027] å nyte (A2)
+    field:   example_spanish
+    comment: 'Disfrutamos el café' is acceptable but 'disfrutamos del café' is more natural in Spanish.
+
+  [v-a2-descriptive-adjectives-053] nøyaktig (A2)
+    field:   level
+    comment: 'nøyaktig' and the example sentence feel more B1 than A2 level.
+
+  [v-a2-communication-067] også (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'café', 'también', 'té'
+
+  [v-a2-time-052] oktober (A2)
+    field:   example_spanish
+    comment: Missing accent mark: 'cumpleaños'
+
+  [v-a2-cooking-042] oliven (en) (A2)
+    field:   example_german
+    comment: Missing umlauts: 'für', 'zusätzlichen'
+
+  [v-a2-cooking-043] olivenolje (en) (A2)
+    field:   example_german
+    comment: Missing umlauts: 'Olivenöl', 'mittlerer'
+
+  [v-a2-cooking-043] olivenolje (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Sofríe'; also 'sofríe' should be 'sofría' or 'sofríe' is acceptable imperative
+
+  [v-a2-communication-068] om (A2)
+    field:   example_german
+    comment: Missing umlauts: 'über', 'Pläne', 'für'
+
+  [v-a2-directions-039] omkring (A2)
+    field:   example_german
+    comment: Missing umlaut: 'ungefähr'
+
+  [v-a2-time-053] omtrent (A2)
+    field:   example_german
+    comment: Missing umlaut: 'ungefähr'
+
+  [v-a2-health-042] å operere (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Ärzte'
+
+  [v-a2-health-042] å operere (A2)
+    field:   example_spanish
+    comment: Missing accent: 'médicos'
+
+  [v-a2-health-042] å operere (A2)
+    field:   level
+    comment: 'å operere' (surgery context) may be more B1 than A2
+
+  [v-a2-communication-069] opplysning (en/ei) (A2)
+    field:   ukrainian
+    comment: 'відомість' is rarely used for 'information'; prefer 'відомості' or drop it
+
+  [v-a2-communication-069] opplysning (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'über'
+
+  [v-a2-occupations-050] opplæring (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'gründliche'
+
+  [v-a2-directions-041] oppover (A2)
+    field:   example_english
+    comment: 'upwards along the hill' is slightly unnatural; prefer 'up the hill'
+
+  [v-a2-house-chores-036] oppvaskmaskin (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Geschirrspüler', 'auszuräumen'
+
+  [v-a2-directions-042] over (A2)
+    field:   example_german
+    comment: Missing umlaut: 'über', 'Häuser'
+
+  [v-a2-directions-042] over (A2)
+    field:   example_spanish
+    comment: Missing accent: 'pájaro', 'voló'
+
+  [v-a2-transport-017] å overnatte (A2)
+    field:   example_german
+    comment: Missing umlaut: 'übernachten'
+
+  [v-a2-occupations-051] overtid (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Überstunden'
+
+  [v-a2-occupations-052] papirarbeid (et) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'médico', 'día'
+
+  [v-a2-social-life-077] pappa (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Frühstück', 'für'
+
+  [v-a2-social-life-077] pappa (en) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'papá', 'mañana'; 'El' needs accent
+
+  [v-a2-social-life-078] par (et) (A2)
+    field:   example_norsk
+    comment: Missing Norwegian special chars: 'vært', 'år'
+
+  [v-a2-social-life-078] par (et) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'fünf'
+
+  [v-a2-social-life-078] par (et) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'años'
+
+  [v-a2-transport-018] å parkere (A2)
+    field:   example_spanish
+    comment: Missing accents: 'difícil', 'sábados'
+
+  [v-a2-transport-019] parkering (en/ei) (A2)
+    field:   example_ukrainian
+    comment: Missing question mark or needs 'Чи є' for natural phrasing
+
+  [v-a2-money-020] parkeringsbot (en/ei) (A2)
+    field:   german
+    comment: 'Parkstrafe' is uncommon; 'Knöllchen' or 'Strafzettel' more natural
+
+  [v-a2-occupations-053] parkeringsvakt (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Parküberwacher'
+
+  [v-a2-technology-022] pc (en) (A2)
+    field:   spanish
+    comment: 'computadora' is Latin American; 'ordenador' preferred in Spain
+
+  [v-a2-communication-070] å peke (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'señaló', 'mostró'
+
+  [v-a2-descriptive-adjectives-055] perfekt (A2)
+    field:   example_norsk
+    comment: Missing Norwegian special char: 'Været'
+
+  [v-a2-social-life-081] person (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Él es una persona'
+
+  [v-a2-directions-043] plass (en) (A2)
+    field:   example_spanish
+    comment: Missing opening question mark: '¿Hay un asiento libre...?'
+
+  [v-a2-directions-044] plassering (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'ubicación', 'posición'
+
+  [v-a2-nature-035] å plukke (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'niños', 'arándanos'
+
+  [v-a2-social-life-082] presang (en) (A2)
+    field:   example_english
+    comment: Unnatural; native speaker would say 'for his birthday'
+
+  [v-a2-communication-073] problem (et) (A2)
+    field:   example_ukrainian
+    comment: 'ми могли' should be 'могли' or 'змогли продовжити'; minor but awkward
+
+  [v-a2-health-043] psykisk (A2)
+    field:   level
+    comment: 'psykisk' and 'psykisk helse' concept may be B1 rather than A2
+
+  [v-a2-directions-045] på (A2)
+    field:   example_spanish
+    comment: Missing accent: 'está' not 'esta'
+
+  [v-a2-cooking-048] pålegg (et) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'möchtest' not 'mochtest'
+
+  [v-a2-social-life-083] påske (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'montaña' not 'montana'
+
+  [v-a2-communication-074] regjering (en/ei) (A2)
+    field:   level
+    comment: 'Regjering' (government/politics) is more appropriate at B1 than A2
+
+  [v-a2-occupations-057] reklamebyrå (et) (A2)
+    field:   level
+    comment: 'Reklamebyrå' is likely B1+ vocabulary, not typical A2
+
+  [v-a2-communication-075] å rope (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Él llamó' not 'El llamo'
+
+  [v-a2-occupations-063] rådgiver (en) (A2)
+    field:   example_german
+    comment: 'grossen' missing umlaut: should be 'großen'; 'Beraterin' is feminine, fine but note gender switch from 'Berater'
+
+  [v-a2-cooking-051] saft (en/ei) (A2)
+    field:   english
+    comment: 'saft' in Norwegian is typically cordial/squash, not natural juice; 'juice' can mislead
+
+  [v-a2-shopping-038] salg (et) (A2)
+    field:   example_german
+    comment: 'grossen' missing umlaut: should be 'großen'
+
+  [v-a2-social-life-085] samlingsstund (en/ei) (A2)
+    field:   english
+    comment: 'gathering time' is awkward; 'circle time' or 'morning assembly' is more natural
+
+  [v-a2-social-life-085] samlingsstund (en/ei) (A2)
+    field:   german
+    comment: 'Versammlungszeit' is unnatural; 'Morgenkreis' or 'Kreisstunde' is standard in kindergarten context
+
+  [v-a2-social-life-085] samlingsstund (en/ei) (A2)
+    field:   example_german
+    comment: 'Versammlungszeit' unnatural for kindergarten; 'Morgenkreis' preferred
+
+  [v-a2-clothing-017] sandal (en) (A2)
+    field:   ukrainian
+    comment: 'сандаль' is non-standard singular; preferred form is 'сандаль' or 'сандалія'
+
+  [v-a2-descriptive-adjectives-065] sann (A2)
+    field:   spanish
+    comment: 'verdadero' is less natural here; 'verdad' or 'cierto' better matches the example
+
+  [v-a2-descriptive-adjectives-065] sann (A2)
+    field:   example_spanish
+    comment: Missing opening question mark '¿' before 'Es verdad'
+
+  [v-a2-descriptive-adjectives-065] sann (A2)
+    field:   example_ukrainian
+    comment: 'правдивий' in translation but example uses 'правда'; minor inconsistency
+
+  [v-a2-descriptive-adjectives-065] sann (A2)
+    field:   ukrainian
+    comment: 'правдивий' means 'truthful'; 'правда/справжній/вірний' better for 'true'
+
+  [v-a2-descriptive-adjectives-067] selv (A2)
+    field:   part
+    comment: 'selv' functions primarily as an adverb/reflexive intensifier, not a pronoun
+
+  [v-a2-communication-079] å skulle (A2)
+    field:   example_spanish
+    comment: Redundant phrasing; 'Se suponia que debia' is pleonastic; use one or the other.
+
+  [v-a2-body-028] skulder (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'después' not 'despues'
+
+  [v-a2-descriptive-adjectives-069] sliten (A2)
+    field:   german
+    comment: Missing umlaut: should be 'müde' not 'muede'
+
+  [v-a2-descriptive-adjectives-069] sliten (A2)
+    field:   example_german
+    comment: Missing umlaut: should be 'müde' not 'muede'
+
+  [v-a2-descriptive-adjectives-069] sliten (A2)
+    field:   example_spanish
+    comment: Missing accents: 'después', 'día'
+
+  [v-a2-clothing-021] smykke (et) (A2)
+    field:   english
+    comment: 'Piece of jewellery' is accurate but 'jewellery item' is more natural
+
+  [v-a2-clothing-021] smykke (et) (A2)
+    field:   example_german
+    comment: Missing umlaut/special chars: 'schönes Schmuckstück'
+
+  [v-a2-clothing-021] smykke (et) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'Recibió', 'cumpleaños'
+
+  [v-a2-weather-020] solskinn (et) (A2)
+    field:   spanish
+    comment: 'Luz del sol' is literal; more natural translation is 'sol' or 'brillo del sol'
+
+  [v-a2-communication-083] som (A2)
+    field:   example_spanish
+    comment: 'al lado nuestro' is less natural; prefer 'a nuestro lado'
+
+  [v-a2-health-045] sovemedisin (en) (A2)
+    field:   example_norsk
+    comment: Missing special char: 'løsning' not 'losning'
+
+  [v-a2-health-045] sovemedisin (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Lösung' not 'Losung'
+
+  [v-a2-health-045] sovemedisin (en) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'médico', 'recomendó', 'solución'
+
+  [v-a2-health-045] sovemedisin (en) (A2)
+    field:   spanish
+    comment: Missing accent: 'somnífero' not 'somnifero'
+
+  [v-a2-communication-084] spansk (A2)
+    field:   example_spanish
+    comment: Missing accents: 'español', 'aprendió', 'España'
+
+  [v-a2-communication-084] spansk (A2)
+    field:   spanish
+    comment: Missing accent: 'español' not 'espanol'
+
+  [v-a2-sports-031] å sparke (A2)
+    field:   example_norsk
+    comment: Missing special chars: 'sparket ballen rett i målet'
+
+  [v-a2-sports-031] å sparke (A2)
+    field:   example_spanish
+    comment: Missing accents: 'pateó', 'balón', 'portería'
+
+  [v-a2-money-023] å spleise (A2)
+    field:   example_spanish
+    comment: 'compartir los gastos' implies splitting evenly; 'poner dinero' better matches 'chip in'
+
+  [v-a2-money-023] å spleise (A2)
+    field:   example_norsk
+    comment: Missing special char: 'bursdagsgaven' correct but 'kollegaen' fine
+
+  [v-a2-shopping-041] sportsbutikk (en) (A2)
+    field:   example_norsk
+    comment: Typos: 'kjøpte', 'løpeskoene', 'kjøpesenteret'
+
+  [v-a2-shopping-041] sportsbutikk (en) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'Compré'
+
+  [v-a2-communication-086] språkpraksis (en) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'Viajó', 'francés'; also meaning slightly reduced from original
+
+  [v-a2-occupations-066] språkpraktikant (en) (A2)
+    field:   english
+    comment: 'Language trainee' is more natural than 'language intern' in most contexts.
+
+  [v-a2-time-058] å starte (A2)
+    field:   example_spanish
+    comment: Missing accent: 'mañana' not 'manana'.
+
+  [v-a2-communication-087] å stave (A2)
+    field:   ukrainian
+    comment: 'Вимовляти по літерах' is less natural; 'диктувати по літерах' is preferred.
+
+  [v-a2-social-life-089] stearinlys (et) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'für' not 'fur'; 'Gemüse' not 'Gemuse'.
+
+  [v-a2-social-life-090] stefar (en) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'enseñó', 'pequeño'; also narrator is female in Norwegian but 'pequeño' implies male.
+
+  [v-a2-social-life-090] stefar (en) (A2)
+    field:   example_ukrainian
+    comment: Narrator gender is unspecified in Norwegian; Ukrainian implies male narrator.
+
+  [v-a2-cooking-057] stekepanne (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlauts: 'Öl', 'Gemüse', 'hinzufügst'.
+
+  [v-a2-house-chores-044] å stelle (A2)
+    field:   example_german
+    comment: Missing umlaut: 'hält' not 'halt'.
+
+  [v-a2-nature-036] stillhet (en) (A2)
+    field:   example_german
+    comment: 'frueh' is non-standard; should be 'früh'.
+
+  [v-a2-occupations-067] stilling (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accent: 'solicitó' not 'solicito'.
+
+  [v-a2-clothing-023] strømpebukse (en/ei) (A2)
+    field:   spanish
+    comment: 'Pantimedias' or 'pantis' more common for tights; 'medias' often means stockings.
+
+  [v-a2-occupations-068] styrer (en) (A2)
+    field:   english
+    comment: 'Principal' or 'head' is more natural than 'manager' for a kindergarten leader.
+
+  [v-a2-clothing-024] støvler (A2)
+    field:   example_german
+    comment: Missing umlaut: 'draußen' not 'draussen'.
+
+  [v-a2-social-life-091] svigerforeldre (A2)
+    field:   ukrainian
+    comment: 'Батьки чоловіка/дружини' or 'свекри/тесть і теща' simpler; combined form is unwieldy.
+
+  [v-a2-occupations-070] å søke (A2)
+    field:   german
+    comment: 'bewerben' should be reflexive 'sich bewerben' for accuracy
+
+  [v-a2-communication-090] tanke (en) (A2)
+    field:   example_ukrainian
+    comment: 'думав про цю думку' is redundant/unnatural; better 'не думав про це'
+
+  [v-a2-body-029] tann (en/ei) (A2)
+    field:   example (norsk)
+    comment: Dentist ('tannlege') more natural than 'legen' for teeth context
+
+  [v-a2-occupations-071] taushetsplikt (en/ei) (A2)
+    field:   level
+    comment: 'taushetsplikt' is complex legal term; B1/B2 more appropriate than A2
+
+  [v-a2-time-060] tidlig (A2)
+    field:   german
+    comment: 'fruher' (earlier) listed alongside 'fruh'; unnecessary and potentially confusing
+
+  [v-a2-directions-051] tilbake (A2)
+    field:   ukrainian
+    comment: 'назад повернутися' is redundant and unnatural; 'назад' alone suffices
+
+  [v-a2-weather-021] å tordne (A2)
+    field:   example_ukrainian
+    comment: 'починається грім' is unnatural; better: 'починає гриміти'
+
+  [v-a2-time-062] travelt (A2)
+    field:   german
+    comment: 'viel zu tun habend' is unnatural; prefer 'beschäftigt' or 'viel zu tun'
+
+  [v-a2-occupations-072] turnus (en) (A2)
+    field:   level
+    comment: 'turnus' is a work-specific term more appropriate for B1 level learners
+
+  [v-a2-communication-095] tysk (A2)
+    field:   example_german
+    comment: 'Deutsch' should be lowercase 'deutsch' when used as adjective, but here as language noun it is correct; no issue
+
+  [v-a2-descriptive-adjectives-076] tøff (A2)
+    field:   english
+    comment: 'tough-looking' is not a standard meaning of 'tøff'; remove or replace with 'cool'
+
+  [v-a2-occupations-073] tømrer (en) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'für' not 'fur'; formatting issue.
+
+  [v-a2-clothing-026] tøy (et) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Wäsche' not 'Wasche'; also 'Wäsche waschen' is correct.
+
+  [v-a2-weather-022] tåke (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Küste' not 'Kuste'.
+
+  [v-a2-body-030] tåre (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlauts: 'Träne', 'über', 'hörte' required.
+
+  [v-a2-health-048] uhell (et) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Küche' not 'Kuche'.
+
+  [v-a2-time-064] uke (en/ei) (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Nächste' not 'Nachste'.
+
+  [v-a2-directions-052] under (A2)
+    field:   example_ukrainian
+    comment: 'цілий день' means 'all day', not 'all afternoon'; inconsistency.
+
+  [v-a2-occupations-074] å undervise (A2)
+    field:   example_german
+    comment: Missing umlaut: 'für' not 'fur'; 'ausländische' not 'auslandische'.
+
+  [v-a2-directions-053] ut (A2)
+    field:   ukrainian
+    comment: 'назовні, геть' is unusual; 'назовні, геть' — 'геть' means 'away', not 'out'.
+
+  [v-a2-occupations-075] utdannet (A2)
+    field:   english
+    comment: 'educated' is less precise here; 'qualified/trained' better matches 'utdannet lege'.
+
+  [v-a2-communication-096] uten (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Frühstück' not 'Fruhstuck'.
+
+  [v-a2-directions-054] utenfor (A2)
+    field:   example_german
+    comment: Missing umlaut: 'Gebäude' not 'Gebaude'.
+
+  [v-a2-social-life-096] utenlandsk (A2)
+    field:   example_german
+    comment: Missing umlauts: 'ausländisches', 'Länder' not 'auslandisches', 'Lander'.
+
+  [v-a2-nature-040] utsikt (en) (A2)
+    field:   example_german
+    comment: 'Aussicht über den Fjord' should be 'auf den Fjord'; wrong preposition.
+
+  [v-a2-occupations-077] vaktmester (en) (A2)
+    field:   ukrainian
+    comment: 'Двірник' means street sweeper/janitor; 'комендант' or 'завгосп' is more accurate.
+
+  [v-a2-weather-024] varme (en) (A2)
+    field:   german
+    comment: 'Wärme' means warmth/mild heat; 'Hitze' better matches unusually high summer heat.
+
+  [v-a2-weather-025] varmegrad (en) (A2)
+    field:   english
+    comment: 'Degree of heat' is unnatural; 'degree above zero' or just 'degree' is standard.
+
+  [v-a2-weather-025] varmegrad (en) (A2)
+    field:   example_english
+    comment: 'Twenty degrees of heat' is unnatural English phrasing.
+
+  [v-a2-weather-025] varmegrad (en) (A2)
+    field:   spanish
+    comment: 'Grado de calor' is unnatural; Spaniards say 'grado' or 'grado Celsius'.
+
+  [v-a2-weather-025] varmegrad (en) (A2)
+    field:   example_spanish
+    comment: 'Veinte grados de calor' is unusual; native speakers say 'veinte grados'.
+
+  [v-a2-directions-056] venstre (A2)
+    field:   spanish
+    comment: 'Izquierdo' is adjective; in directional context 'izquierda' (noun) is more natural.
+
+  [v-a2-occupations-080] yrkesfag (et) (A2)
+    field:   english
+    comment: 'Vocational studies/programme' is more natural than 'vocational subject'
+
+  [v-a2-occupations-080] yrkesfag (et) (A2)
+    field:   ukrainian
+    comment: 'професійний предмет' is literal; 'профтех' or 'профільний предмет' more natural
+
+  [v-a2-money-025] økonomisk (A2)
+    field:   english
+    comment: 'Economic' and 'financial' both valid; context here suggests 'financial' is more natural
+
+  [v-a2-social-life-099] ølboks (en) (A2)
+    field:   ukrainian
+    comment: 'бляшанка пива' less natural than 'пивна бляшанка'
+
+  [v-a2-directions-057] øverst (A2)
+    field:   example_ukrainian
+    comment: 'на верхній полиці' means 'on the top shelf', not strictly 'at the top of the shelf'
+
+
+ℹ️   INFO (26)
+────────────────────────────────────────
+  [v-a2-time-022] da (A2)
+    field:   english
+    comment: 'da' as adverb means 'then'; as conjunction means 'when' — dual gloss is acceptable but could be clearer.
+
+  [v-a2-occupations-035] deltid (en/ei) (A2)
+    field:   english
+    comment: 'part-time' is conventionally hyphenated as an adjective/adverb.
+
+  [v-a2-descriptive-adjectives-023] egenskap (en) (A2)
+    field:   level
+    comment: 'egenskap' with abstract meaning may be more B1 than A2 level.
+
+  [v-a2-transport-012] førerkort (et) (A2)
+    field:   example_german
+    comment: 'machte ihren Führerschein' is colloquial; 'erwarb' more formal but both natural
+
+  [v-a2-time-033] fjor (A2)
+    field:   english
+    comment: 'fjor' alone is archaic; entry could clarify it is only used in 'i fjor'
+
+  [v-a2-shopping-030] kilo (et) (A2)
+    field:   english
+    comment: Norwegian 'kilo' is colloquial; 'kilo' is equally valid English translation
+
+  [v-a2-shopping-030] kilo (et) (A2)
+    field:   example_english
+    comment: 'two kilos' more natural than 'two kilograms' matching colloquial Norwegian
+
+  [v-a2-occupations-042] helsearbeider (en) (A2)
+    field:   example_german
+    comment: German uses feminine form 'Gesundheitsarbeiterin' matching 'hun/she'; consistent but worth noting.
+
+  [v-a2-body-025] hånd (en/ei) (A2)
+    field:   example_ukrainian
+    comment: Ukrainian 'рука' covers arm+hand; acceptable but note ambiguity
+
+  [v-a2-social-life-059] jente (en) (A2)
+    field:   example_ukrainian
+    comment: Correctly uses 'дівчинка'; inconsistent with the translation field 'дівчина'
+
+  [v-a2-time-039] juli (A2)
+    field:   example_english
+    comment: Norwegian 'syden' means 'the south/Med'; 'southern Europe' is a reasonable but slightly expanded gloss
+
+  [v-a2-time-039] juli (A2)
+    field:   example_spanish
+    comment: Norwegian original says 'syden', not specifically 'sur de Europa'; minor addition
+
+  [v-a2-social-life-080] å passe (A2)
+    field:   example_norsk
+    comment: Identical example to entry 9; both entries duplicate each other entirely
+
+  [v-a2-social-life-082] presang (en) (A2)
+    field:   example_spanish
+    comment: Missing accent marks: 'compré', 'cumpleaños'
+
+  [v-a2-social-life-082] presang (en) (A2)
+    field:   german
+    comment: Missing umlaut: should be 'Geschenk' — already correct; no issue
+
+  [v-a2-social-life-082] presang (en) (A2)
+    field:   example_german
+    comment: Missing umlaut on 'Geburtstag' — already correct; check source encoding
+
+  [v-a2-descriptive-adjectives-061] presis (A2)
+    field:   example_german
+    comment: Missing umlaut: 'punktlich' should be 'pünktlich'; 'zu spat' → 'zu spät'
+
+  [v-a2-descriptive-adjectives-061] presis (A2)
+    field:   example_spanish
+    comment: Missing accent: 'El' should be 'Él'
+
+  [v-a2-cooking-046] presskanne (en/ei) (A2)
+    field:   example_spanish
+    comment: Missing accents: 'café', 'émbolo', 'mañana'
+
+  [v-a2-weather-020] solskinn (et) (A2)
+    field:   example_spanish
+    comment: 'hermoso sol' loses the 'sunshine' nuance; 'hermoso solshine/luz solar' better
+
+  [v-a2-communication-084] spansk (A2)
+    field:   example_norsk
+    comment: Missing special char: 'Spania' correct but 'lærte seg' is fine
+
+  [v-a2-occupations-068] styrer (en) (A2)
+    field:   example_german
+    comment: German uses feminine 'Leiterin'; Norwegian example uses masculine form 'styreren'.
+
+  [v-a2-occupations-068] styrer (en) (A2)
+    field:   example_spanish
+    comment: Spanish uses feminine 'directora'; Norwegian example is gender-neutral.
+
+  [v-a2-descriptive-adjectives-072] særlig (A2)
+    field:   example_spanish
+    comment: 'queso marrón' is literal; 'brunost' or 'queso pardo' more natural
+
+  [v-a2-communication-095] tysk (A2)
+    field:   example_german
+    comment: Example uses 'Deutsch' as language noun, slightly inconsistent with adjective entry focus
+
+  [v-a2-weather-024] varme (en) (A2)
+    field:   example_german
+    comment: 'Hitze' used in example but 'Wärme' given as translation; inconsistent.
+
