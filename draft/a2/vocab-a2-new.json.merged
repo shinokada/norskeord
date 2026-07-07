@@ -884,23 +884,6 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-directions-019",
-    "norsk": "bro (en/ei)",
-    "lemma": "bro",
-    "english": "bridge",
-    "ukrainian": "міст",
-    "spanish": "puente",
-    "german": "Brucke",
-    "example": "Gå over broen og ta til venstre.",
-    "example_english": "Cross the bridge and turn left.",
-    "example_ukrainian": "Перейди через міст і поверни ліворуч.",
-    "example_spanish": "Cruza el puente y gira a la izquierda.",
-    "example_german": "Geh über die Brucke und biege links ab.",
-    "level": "A2",
-    "category": "directions",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-technology-017",
     "norsk": "å bruke",
     "lemma": "bruke",
@@ -1037,7 +1020,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-020",
+    "id": "v-a2-directions-019",
     "norsk": "by (en)",
     "lemma": "by",
     "english": "city",
@@ -1190,23 +1173,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-035",
-    "norsk": "deltid (en/ei)",
-    "lemma": "deltid",
-    "english": "part-time",
-    "ukrainian": "неповний робочий день",
-    "spanish": "tiempo parcial",
-    "german": "Teilzeit",
-    "example": "Hun jobber deltid på kafeen ved siden av studiene.",
-    "example_english": "She works part-time at the cafe alongside her studies.",
-    "example_ukrainian": "Вона працює неповний робочий день у кафе поряд із навчанням.",
-    "example_spanish": "Ella trabaja a tiempo parcial en el café además de sus estudios.",
-    "example_german": "Sie arbeitet Teilzeit im Cafe neben ihrem Studium.",
-    "level": "A2",
-    "category": "occupations",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-communication-026",
     "norsk": "dem",
     "lemma": "dem",
@@ -1224,7 +1190,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-directions-021",
+    "id": "v-a2-directions-020",
     "norsk": "der",
     "lemma": "der",
     "english": "there",
@@ -1360,7 +1326,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-directions-022",
+    "id": "v-a2-directions-021",
     "norsk": "dit",
     "lemma": "dit",
     "english": "there, to that place",
@@ -1530,7 +1496,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-036",
+    "id": "v-a2-occupations-035",
     "norsk": "ekspert (en)",
     "lemma": "ekspert",
     "english": "expert",
@@ -1632,7 +1598,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-037",
+    "id": "v-a2-occupations-036",
     "norsk": "elektriker (en)",
     "lemma": "elektriker",
     "english": "electrician",
@@ -1698,23 +1664,6 @@
     "level": "A2",
     "category": "communication",
     "part": "adverb"
-  },
-  {
-    "id": "v-a2-nature-029",
-    "norsk": "elv (en/ei)",
-    "lemma": "elv",
-    "english": "river",
-    "ukrainian": "річка",
-    "spanish": "río",
-    "german": "Fluss",
-    "example": "Vi fisket i elven hele ettermiddagen.",
-    "example_english": "We fished in the river all afternoon.",
-    "example_ukrainian": "Ми рибалили в річці цілий вечір.",
-    "example_spanish": "Pescamos en el río toda la tarde.",
-    "example_german": "Wir angelten den ganzen Nachmittag im Fluss.",
-    "level": "A2",
-    "category": "nature",
-    "part": "noun"
   },
   {
     "id": "v-a2-house-chores-025",
@@ -1938,23 +1887,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-010",
-    "norsk": "ferge (en/ei)",
-    "lemma": "ferge",
-    "english": "ferry",
-    "ukrainian": "пором",
-    "spanish": "ferry",
-    "german": "Fähre",
-    "example": "Vi tok fergen over fjorden for å komme til øya.",
-    "example_english": "We took the ferry across the fjord to get to the island.",
-    "example_ukrainian": "Ми сіли на пором через фіорд, щоб дістатися острова.",
-    "example_spanish": "Tomamos el ferry cruzando el fiordo para llegar a la isla.",
-    "example_german": "Wir nahmen die Fähre über den Fjord, um zur Insel zu gelangen.",
-    "level": "A2",
-    "category": "transport",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-shopping-025",
     "norsk": "ferskvaredisk (en)",
     "lemma": "ferskvaredisk",
@@ -2125,7 +2057,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-011",
+    "id": "v-a2-transport-010",
     "norsk": "fort",
     "lemma": "fort",
     "english": "quickly, fast",
@@ -2142,7 +2074,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-nature-030",
+    "id": "v-a2-nature-029",
     "norsk": "foss (en)",
     "lemma": "foss",
     "english": "waterfall",
@@ -2193,7 +2125,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-023",
+    "id": "v-a2-directions-022",
     "norsk": "å følge",
     "lemma": "følge",
     "english": "to follow",
@@ -2227,7 +2159,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-024",
+    "id": "v-a2-directions-023",
     "norsk": "å føre",
     "lemma": "føre",
     "english": "to lead",
@@ -2244,7 +2176,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-012",
+    "id": "v-a2-transport-011",
     "norsk": "førerkort (et)",
     "lemma": "førerkort",
     "english": "driving licence",
@@ -2363,7 +2295,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-025",
+    "id": "v-a2-directions-024",
     "norsk": "gate (en/ei)",
     "lemma": "gate",
     "english": "street",
@@ -2397,7 +2329,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-occupations-038",
+    "id": "v-a2-occupations-037",
     "norsk": "fisker (en)",
     "lemma": "fisker",
     "english": "fisherman, fisher",
@@ -2499,7 +2431,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-026",
+    "id": "v-a2-directions-025",
     "norsk": "foran",
     "lemma": "foran",
     "english": "in front of",
@@ -2533,7 +2465,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-027",
+    "id": "v-a2-directions-026",
     "norsk": "fra",
     "lemma": "fra",
     "english": "from",
@@ -2737,7 +2669,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-028",
+    "id": "v-a2-directions-027",
     "norsk": "gjennom",
     "lemma": "gjennom",
     "english": "through",
@@ -2856,7 +2788,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-039",
+    "id": "v-a2-occupations-038",
     "norsk": "godkjent",
     "lemma": "godkjent",
     "english": "approved, accepted",
@@ -2890,7 +2822,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-031",
+    "id": "v-a2-nature-030",
     "norsk": "grantre (et)",
     "lemma": "grantre",
     "english": "spruce tree",
@@ -2992,7 +2924,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-029",
+    "id": "v-a2-directions-028",
     "norsk": "hit",
     "lemma": "hit",
     "english": "here (direction towards speaker)",
@@ -3026,7 +2958,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-040",
+    "id": "v-a2-occupations-039",
     "norsk": "hjelpemann (en)",
     "lemma": "hjelpemann",
     "english": "helper / assistant",
@@ -3043,7 +2975,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-030",
+    "id": "v-a2-directions-029",
     "norsk": "hjem",
     "lemma": "hjem",
     "english": "home (direction, going home)",
@@ -3162,7 +3094,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-041",
+    "id": "v-a2-occupations-040",
     "norsk": "husøkonom (en)",
     "lemma": "husøkonom",
     "english": "home economist",
@@ -3179,7 +3111,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-031",
+    "id": "v-a2-directions-030",
     "norsk": "i",
     "lemma": "i",
     "english": "in",
@@ -3230,7 +3162,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-032",
+    "id": "v-a2-directions-031",
     "norsk": "inne",
     "lemma": "inne",
     "english": "inside, indoors",
@@ -3247,7 +3179,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-directions-033",
+    "id": "v-a2-directions-032",
     "norsk": "innenfor",
     "lemma": "innenfor",
     "english": "within, inside",
@@ -3417,7 +3349,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-034",
+    "id": "v-a2-directions-033",
     "norsk": "kilometer (en)",
     "lemma": "kilometer",
     "english": "kilometer",
@@ -3672,7 +3604,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-042",
+    "id": "v-a2-occupations-041",
     "norsk": "helsearbeider (en)",
     "lemma": "helsearbeider",
     "english": "healthcare worker",
@@ -3706,24 +3638,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-043",
-    "norsk": "heltid (en/ei)",
-    "lemma": "heltid",
-    "english": "full time",
-    "ukrainian": "повна зайнятість, повний робочий день",
-    "spanish": "tiempo completo, jornada completa",
-    "german": "Vollzeit",
-    "example": "Han jobber heltid på kontoret.",
-    "example_english": "He works full time at the office.",
-    "example_ukrainian": "Він працює повний робочий день в офісі.",
-    "example_spanish": "Él trabaja a tiempo completo en la oficina.",
-    "example_german": "Er arbeitet Vollzeit im Büro.",
-    "level": "A2",
-    "category": "occupations",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-035",
+    "id": "v-a2-directions-034",
     "norsk": "her",
     "lemma": "her",
     "english": "here",
@@ -4063,7 +3978,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-044",
+    "id": "v-a2-occupations-042",
     "norsk": "jordmor (en)",
     "lemma": "jordmor",
     "english": "midwife",
@@ -4352,23 +4267,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-money-018",
-    "norsk": "krone (en/ei)",
-    "lemma": "krone",
-    "english": "krone (Norwegian currency unit)",
-    "ukrainian": "крона (норвезька грошова одиниця)",
-    "spanish": "corona (unidad monetaria noruega)",
-    "german": "Krone (norwegische Wahrungseinheit)",
-    "example": "En kopp kaffe koster tjue kroner på den kafeen.",
-    "example_english": "A cup of coffee costs twenty kroner at that cafe.",
-    "example_ukrainian": "Чашка кави коштує двадцять крон у тому кафе.",
-    "example_spanish": "Una taza de café cuesta veinte coronas en ese café.",
-    "example_german": "Eine Tasse Kaffee kostet zwanzig Kronen in diesem Cafe.",
-    "level": "A2",
-    "category": "money",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-weather-017",
     "norsk": "kuldegrad (en)",
     "lemma": "kuldegrad",
@@ -4420,7 +4318,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-045",
+    "id": "v-a2-occupations-043",
     "norsk": "kvalifisert",
     "lemma": "kvalifisert",
     "english": "qualified",
@@ -4471,23 +4369,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-shopping-033",
-    "norsk": "kvittering (en/ei)",
-    "lemma": "kvittering",
-    "english": "receipt",
-    "ukrainian": "квитанція, чек",
-    "spanish": "recibo, ticket",
-    "german": "Quittung, Kassenbon",
-    "example": "Kan jeg få kvitteringen slik at jeg kan returnere varen?",
-    "example_english": "Can I have the receipt so that I can return the item?",
-    "example_ukrainian": "Чи можу я отримати квитанцію, щоб повернути товар?",
-    "example_spanish": "¿Puedo tener el recibo para poder devolver el artículo?",
-    "example_german": "Kann ich die Quittung haben, damit ich den Artikel zurückgeben kann?",
-    "level": "A2",
-    "category": "shopping",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-clothing-013",
     "norsk": "kåpe (en/ei)",
     "lemma": "kåpe",
@@ -4522,7 +4403,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-shopping-034",
+    "id": "v-a2-shopping-033",
     "norsk": "lager (et)",
     "lemma": "lager",
     "english": "warehouse, storage, stock",
@@ -4590,7 +4471,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-032",
+    "id": "v-a2-nature-031",
     "norsk": "landskap (et)",
     "lemma": "landskap",
     "english": "landscape",
@@ -4624,7 +4505,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-directions-036",
+    "id": "v-a2-directions-035",
     "norsk": "langt",
     "lemma": "langt",
     "english": "far",
@@ -4641,7 +4522,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-013",
+    "id": "v-a2-transport-012",
     "norsk": "lastebil (en)",
     "lemma": "lastebil",
     "english": "truck",
@@ -4658,7 +4539,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-046",
+    "id": "v-a2-occupations-044",
     "norsk": "ledelse (en)",
     "lemma": "ledelse",
     "english": "management",
@@ -4828,7 +4709,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-047",
+    "id": "v-a2-occupations-045",
     "norsk": "å levere",
     "lemma": "levere",
     "english": "to deliver, to hand in",
@@ -5066,7 +4947,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-048",
+    "id": "v-a2-occupations-046",
     "norsk": "å lære opp",
     "lemma": "lære opp",
     "english": "to train, to teach",
@@ -5098,23 +4979,6 @@
     "level": "A2",
     "category": "sports",
     "part": "verb"
-  },
-  {
-    "id": "v-a2-money-019",
-    "norsk": "lønn (en/ei)",
-    "lemma": "lønn",
-    "english": "salary, wage",
-    "ukrainian": "зарплата",
-    "spanish": "salario, sueldo",
-    "german": "Gehalt, Lohn",
-    "example": "Hun fikk høyere lønn etter at hun ble forfremmet.",
-    "example_english": "She got a higher salary after she was promoted.",
-    "example_ukrainian": "Вона отримала вищу зарплату після підвищення.",
-    "example_spanish": "Ella recibió un salario más alto después de ser ascendida.",
-    "example_german": "Sie bekam ein höheres Gehalt, nachdem sie befördert wurde.",
-    "level": "A2",
-    "category": "money",
-    "part": "noun"
   },
   {
     "id": "v-a2-body-027",
@@ -5253,7 +5117,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-occupations-049",
+    "id": "v-a2-occupations-047",
     "norsk": "mekaniker (en)",
     "lemma": "mekaniker",
     "english": "mechanic",
@@ -5287,24 +5151,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-059",
-    "norsk": "melding (en/ei)",
-    "lemma": "melding",
-    "english": "message",
-    "ukrainian": "повідомлення",
-    "spanish": "mensaje",
-    "german": "Nachricht",
-    "example": "Jeg fikk en melding fra sjefen på telefonen.",
-    "example_english": "I received a message from my boss on my phone.",
-    "example_ukrainian": "Я отримав повідомлення від боса на телефоні.",
-    "example_spanish": "Recibi un mensaje de mi jefe en el teléfono.",
-    "example_german": "Ich habe eine Nachricht von meinem Chef auf dem Telefon bekommen.",
-    "level": "A2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-shopping-035",
+    "id": "v-a2-shopping-034",
     "norsk": "melk (en/ei)",
     "lemma": "melk",
     "english": "milk",
@@ -5321,7 +5168,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-060",
+    "id": "v-a2-communication-059",
     "norsk": "men",
     "lemma": "men",
     "english": "but",
@@ -5338,7 +5185,7 @@
     "part": "conjunction"
   },
   {
-    "id": "v-a2-communication-061",
+    "id": "v-a2-communication-060",
     "norsk": "å mene",
     "lemma": "mene",
     "english": "to think / to mean / to believe",
@@ -5372,7 +5219,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-062",
+    "id": "v-a2-communication-061",
     "norsk": "mens",
     "lemma": "mens",
     "english": "while, whereas",
@@ -5457,7 +5304,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-033",
+    "id": "v-a2-nature-032",
     "norsk": "midnattssol (en/ei)",
     "lemma": "midnattssol",
     "english": "midnight sun",
@@ -5474,7 +5321,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-037",
+    "id": "v-a2-directions-036",
     "norsk": "mil (en/ei)",
     "lemma": "mil",
     "english": "Norwegian mile (10 km)",
@@ -5491,7 +5338,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-shopping-036",
+    "id": "v-a2-shopping-035",
     "norsk": "mineralvann (et)",
     "lemma": "mineralvann",
     "english": "mineral water",
@@ -5542,7 +5389,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-014",
+    "id": "v-a2-transport-013",
     "norsk": "motor (en)",
     "lemma": "motor",
     "english": "engine, motor",
@@ -5559,7 +5406,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-063",
+    "id": "v-a2-communication-062",
     "norsk": "muntlig",
     "lemma": "muntlig",
     "english": "oral, verbal, spoken",
@@ -5627,7 +5474,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-064",
+    "id": "v-a2-communication-063",
     "norsk": "å måtte",
     "lemma": "måtte",
     "english": "to have to, must",
@@ -5661,7 +5508,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-038",
+    "id": "v-a2-directions-037",
     "norsk": "ned",
     "lemma": "ned",
     "english": "down, downward",
@@ -5712,7 +5559,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-034",
+    "id": "v-a2-nature-033",
     "norsk": "nordlys (et)",
     "lemma": "nordlys",
     "english": "northern lights / aurora borealis",
@@ -5763,7 +5610,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-065",
+    "id": "v-a2-communication-064",
     "norsk": "norskkurs (et)",
     "lemma": "norskkurs",
     "english": "Norwegian language course",
@@ -5848,7 +5695,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-015",
+    "id": "v-a2-transport-014",
     "norsk": "offentlig",
     "lemma": "offentlig",
     "english": "public / official",
@@ -5882,7 +5729,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-066",
+    "id": "v-a2-communication-065",
     "norsk": "også",
     "lemma": "også",
     "english": "also",
@@ -5933,7 +5780,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-067",
+    "id": "v-a2-communication-066",
     "norsk": "om",
     "lemma": "om",
     "english": "about / in (time) / if",
@@ -5950,7 +5797,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-039",
+    "id": "v-a2-directions-038",
     "norsk": "omkring",
     "lemma": "omkring",
     "english": "around / approximately",
@@ -6001,7 +5848,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-040",
+    "id": "v-a2-directions-039",
     "norsk": "oppe",
     "lemma": "oppe",
     "english": "up / upstairs / awake",
@@ -6035,7 +5882,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-068",
+    "id": "v-a2-communication-067",
     "norsk": "opplysning (en/ei)",
     "lemma": "opplysning",
     "english": "information",
@@ -6052,7 +5899,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-050",
+    "id": "v-a2-occupations-048",
     "norsk": "opplæring (en/ei)",
     "lemma": "opplæring",
     "english": "training, instruction",
@@ -6069,7 +5916,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-041",
+    "id": "v-a2-directions-040",
     "norsk": "oppover",
     "lemma": "oppover",
     "english": "upward, upwards",
@@ -6084,23 +5931,6 @@
     "level": "A2",
     "category": "directions",
     "part": "adverb"
-  },
-  {
-    "id": "v-a2-cooking-044",
-    "norsk": "oppskrift (en/ei)",
-    "lemma": "oppskrift",
-    "english": "recipe",
-    "ukrainian": "рецепт",
-    "spanish": "receta",
-    "german": "Rezept",
-    "example": "Jeg fulgte oppskriften nøyaktig for å lage suppen.",
-    "example_english": "I followed the recipe exactly to make the soup.",
-    "example_ukrainian": "Я ретельно дотримувався рецепту, щоб приготувати суп.",
-    "example_spanish": "Seguí la receta con cuidado para hacer la sopa.",
-    "example_german": "Ich folgte dem Rezept genau, um die Suppe zuzubereiten.",
-    "level": "A2",
-    "category": "cooking",
-    "part": "noun"
   },
   {
     "id": "v-a2-house-chores-036",
@@ -6137,7 +5967,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-042",
+    "id": "v-a2-directions-041",
     "norsk": "over",
     "lemma": "over",
     "english": "over, above, across",
@@ -6154,7 +5984,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-transport-016",
+    "id": "v-a2-transport-015",
     "norsk": "å overnatte",
     "lemma": "overnatte",
     "english": "to stay overnight, to spend the night",
@@ -6171,7 +6001,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-051",
+    "id": "v-a2-occupations-049",
     "norsk": "overtid (en/ei)",
     "lemma": "overtid",
     "english": "overtime",
@@ -6188,7 +6018,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-clothing-016",
+    "id": "v-a2-clothing-015",
     "norsk": "pannebånd (et)",
     "lemma": "pannebånd",
     "english": "headband",
@@ -6205,7 +6035,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-052",
+    "id": "v-a2-occupations-050",
     "norsk": "papirarbeid (et)",
     "lemma": "papirarbeid",
     "english": "paperwork",
@@ -6256,7 +6086,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-017",
+    "id": "v-a2-transport-016",
     "norsk": "å parkere",
     "lemma": "parkere",
     "english": "to park",
@@ -6273,7 +6103,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-018",
+    "id": "v-a2-transport-017",
     "norsk": "parkering (en/ei)",
     "lemma": "parkering",
     "english": "parking",
@@ -6290,7 +6120,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-020",
+    "id": "v-a2-money-018",
     "norsk": "parkeringsbot (en/ei)",
     "lemma": "parkeringsbot",
     "english": "parking fine",
@@ -6307,7 +6137,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-053",
+    "id": "v-a2-occupations-051",
     "norsk": "parkeringsvakt (en/ei)",
     "lemma": "parkeringsvakt",
     "english": "parking warden",
@@ -6375,7 +6205,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-069",
+    "id": "v-a2-communication-068",
     "norsk": "å peke",
     "lemma": "peke",
     "english": "to point",
@@ -6392,7 +6222,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-054",
+    "id": "v-a2-occupations-052",
     "norsk": "pensjonist (en)",
     "lemma": "pensjonist",
     "english": "retiree, pensioner",
@@ -6443,7 +6273,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-045",
+    "id": "v-a2-cooking-044",
     "norsk": "pizza (en)",
     "lemma": "pizza",
     "english": "pizza",
@@ -6460,7 +6290,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-043",
+    "id": "v-a2-directions-042",
     "norsk": "plass (en)",
     "lemma": "plass",
     "english": "place, space, seat",
@@ -6477,7 +6307,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-044",
+    "id": "v-a2-directions-043",
     "norsk": "plassering (en/ei)",
     "lemma": "plassering",
     "english": "placement, position, location",
@@ -6494,7 +6324,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-035",
+    "id": "v-a2-nature-034",
     "norsk": "å plukke",
     "lemma": "plukke",
     "english": "to pick, to pluck, to gather",
@@ -6511,7 +6341,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-055",
+    "id": "v-a2-occupations-053",
     "norsk": "politi (et)",
     "lemma": "politi",
     "english": "police",
@@ -6613,7 +6443,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-occupations-056",
+    "id": "v-a2-occupations-054",
     "norsk": "praksis (en)",
     "lemma": "praksis",
     "english": "practice",
@@ -6647,7 +6477,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-070",
+    "id": "v-a2-communication-069",
     "norsk": "prat (en)",
     "lemma": "prat",
     "english": "chat, conversation",
@@ -6664,7 +6494,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-071",
+    "id": "v-a2-communication-070",
     "norsk": "å prate",
     "lemma": "prate",
     "english": "to chat, to talk",
@@ -6715,7 +6545,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-cooking-046",
+    "id": "v-a2-cooking-045",
     "norsk": "presskanne (en/ei)",
     "lemma": "presskanne",
     "english": "French press, cafetiere",
@@ -6749,7 +6579,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-072",
+    "id": "v-a2-communication-071",
     "norsk": "problem (et)",
     "lemma": "problem",
     "english": "problem",
@@ -6783,7 +6613,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-021",
+    "id": "v-a2-money-019",
     "norsk": "prosent (en)",
     "lemma": "prosent",
     "english": "percent",
@@ -6800,7 +6630,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-shopping-037",
+    "id": "v-a2-shopping-036",
     "norsk": "prøverom (et)",
     "lemma": "prøverom",
     "english": "fitting room, changing room",
@@ -6851,7 +6681,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-cooking-047",
+    "id": "v-a2-cooking-046",
     "norsk": "pølse (en/ei)",
     "lemma": "pølse",
     "english": "sausage",
@@ -6868,7 +6698,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-045",
+    "id": "v-a2-directions-044",
     "norsk": "på",
     "lemma": "på",
     "english": "on, at, in",
@@ -6885,7 +6715,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-cooking-048",
+    "id": "v-a2-cooking-047",
     "norsk": "pålegg (et)",
     "lemma": "pålegg",
     "english": "sandwich topping, cold cuts",
@@ -6936,7 +6766,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-073",
+    "id": "v-a2-communication-072",
     "norsk": "regjering (en/ei)",
     "lemma": "regjering",
     "english": "government",
@@ -6970,7 +6800,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-057",
+    "id": "v-a2-occupations-055",
     "norsk": "reklamebyrå (et)",
     "lemma": "reklamebyrå",
     "english": "advertising agency",
@@ -6987,7 +6817,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-058",
+    "id": "v-a2-occupations-056",
     "norsk": "rektor (en)",
     "lemma": "rektor",
     "english": "principal, headmaster, rector",
@@ -7021,7 +6851,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-059",
+    "id": "v-a2-occupations-057",
     "norsk": "renholder (en)",
     "lemma": "renholder",
     "english": "cleaner",
@@ -7038,7 +6868,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-060",
+    "id": "v-a2-occupations-058",
     "norsk": "resepsjon (en)",
     "lemma": "resepsjon",
     "english": "reception",
@@ -7055,7 +6885,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-061",
+    "id": "v-a2-occupations-059",
     "norsk": "resepsjonist (en)",
     "lemma": "resepsjonist",
     "english": "receptionist",
@@ -7072,7 +6902,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-046",
+    "id": "v-a2-directions-045",
     "norsk": "rett fram",
     "lemma": "rett fram",
     "english": "straight ahead",
@@ -7106,7 +6936,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-cooking-049",
+    "id": "v-a2-cooking-048",
     "norsk": "matrett (en)",
     "lemma": "matrett",
     "english": "dish / meal",
@@ -7140,7 +6970,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-074",
+    "id": "v-a2-communication-073",
     "norsk": "å rope",
     "lemma": "rope",
     "english": "to shout / to call out",
@@ -7174,7 +7004,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-050",
+    "id": "v-a2-cooking-049",
     "norsk": "rødbeter (pl.)",
     "lemma": "rødbete",
     "english": "beetroot / beets",
@@ -7191,7 +7021,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-062",
+    "id": "v-a2-occupations-060",
     "norsk": "rørlegger (en)",
     "lemma": "rørlegger",
     "english": "plumber",
@@ -7208,7 +7038,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-063",
+    "id": "v-a2-occupations-061",
     "norsk": "rådgiver (en)",
     "lemma": "rådgiver",
     "english": "advisor",
@@ -7225,7 +7055,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-051",
+    "id": "v-a2-cooking-050",
     "norsk": "saft (en/ei)",
     "lemma": "saft",
     "english": "cordial, squash",
@@ -7242,7 +7072,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-052",
+    "id": "v-a2-cooking-051",
     "norsk": "salat (en)",
     "lemma": "salat",
     "english": "salad",
@@ -7259,7 +7089,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-shopping-038",
+    "id": "v-a2-shopping-037",
     "norsk": "salg (et)",
     "lemma": "salg",
     "english": "sale",
@@ -7310,7 +7140,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-clothing-017",
+    "id": "v-a2-clothing-016",
     "norsk": "sandal (en)",
     "lemma": "sandal",
     "english": "sandal",
@@ -7361,7 +7191,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-shopping-039",
+    "id": "v-a2-shopping-038",
     "norsk": "sekk (en)",
     "lemma": "sekk",
     "english": "bag, sack",
@@ -7395,7 +7225,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-communication-075",
+    "id": "v-a2-communication-074",
     "norsk": "selvfølgelig",
     "lemma": "selvfølgelig",
     "english": "of course, naturally, obviously",
@@ -7480,7 +7310,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-053",
+    "id": "v-a2-cooking-052",
     "norsk": "sennep (en)",
     "lemma": "sennep",
     "english": "mustard",
@@ -7497,7 +7327,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-047",
+    "id": "v-a2-directions-046",
     "norsk": "sentrum (et)",
     "lemma": "sentrum",
     "english": "city centre, downtown",
@@ -7514,7 +7344,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-shopping-040",
+    "id": "v-a2-shopping-039",
     "norsk": "service (en)",
     "lemma": "service",
     "english": "service",
@@ -7531,7 +7361,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-054",
+    "id": "v-a2-cooking-053",
     "norsk": "serviett (en)",
     "lemma": "serviett",
     "english": "napkin",
@@ -7548,7 +7378,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-064",
+    "id": "v-a2-occupations-062",
     "norsk": "servitør (en)",
     "lemma": "servitør",
     "english": "waiter",
@@ -7565,7 +7395,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-076",
+    "id": "v-a2-communication-075",
     "norsk": "setning (en/ei)",
     "lemma": "setning",
     "english": "sentence",
@@ -7599,7 +7429,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-077",
+    "id": "v-a2-communication-076",
     "norsk": "å si",
     "lemma": "si",
     "english": "to say",
@@ -7616,7 +7446,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-048",
+    "id": "v-a2-directions-047",
     "norsk": "side (en/ei)",
     "lemma": "side",
     "english": "side, page",
@@ -7667,7 +7497,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-cooking-055",
+    "id": "v-a2-cooking-054",
     "norsk": "sitron (en)",
     "lemma": "sitron",
     "english": "lemon",
@@ -7701,7 +7531,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-078",
+    "id": "v-a2-communication-077",
     "norsk": "å skulle",
     "lemma": "skulle",
     "english": "to be going to / to be supposed to",
@@ -7718,7 +7548,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-clothing-018",
+    "id": "v-a2-clothing-017",
     "norsk": "skaut (et)",
     "lemma": "skaut",
     "english": "headscarf",
@@ -7769,7 +7599,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-019",
+    "id": "v-a2-transport-018",
     "norsk": "skip (et)",
     "lemma": "skip",
     "english": "ship",
@@ -7786,7 +7616,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-056",
+    "id": "v-a2-cooking-055",
     "norsk": "skive (en/ei)",
     "lemma": "skive",
     "english": "slice",
@@ -7803,7 +7633,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-079",
+    "id": "v-a2-communication-078",
     "norsk": "å skje",
     "lemma": "skje",
     "english": "to happen",
@@ -7820,7 +7650,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-clothing-019",
+    "id": "v-a2-clothing-018",
     "norsk": "skjorte (en/ei)",
     "lemma": "skjorte",
     "english": "shirt",
@@ -7837,7 +7667,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-080",
+    "id": "v-a2-communication-079",
     "norsk": "å skjønne",
     "lemma": "skjønne",
     "english": "to understand",
@@ -7854,7 +7684,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-clothing-020",
+    "id": "v-a2-clothing-019",
     "norsk": "skjørt (et)",
     "lemma": "skjørt",
     "english": "skirt",
@@ -7888,7 +7718,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-081",
+    "id": "v-a2-communication-080",
     "norsk": "skriftlig",
     "lemma": "skriftlig",
     "english": "written",
@@ -7903,23 +7733,6 @@
     "level": "A2",
     "category": "communication",
     "part": "adjective"
-  },
-  {
-    "id": "v-a2-body-028",
-    "norsk": "skulder (en/ei)",
-    "lemma": "skulder",
-    "english": "shoulder",
-    "ukrainian": "плече",
-    "spanish": "hombro",
-    "german": "Schulter",
-    "example": "Han har vondt i venstre skulder etter treningen.",
-    "example_english": "He has pain in his left shoulder after the workout.",
-    "example_ukrainian": "У нього болить ліве плече після тренування.",
-    "example_spanish": "Le duele el hombro izquierdo después del entrenamiento.",
-    "example_german": "Er hat nach dem Training Schmerzen in der linken Schulter.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
   },
   {
     "id": "v-a2-technology-024",
@@ -7956,7 +7769,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-clothing-021",
+    "id": "v-a2-clothing-020",
     "norsk": "smykke (et)",
     "lemma": "smykke",
     "english": "jewel",
@@ -7973,7 +7786,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-065",
+    "id": "v-a2-occupations-063",
     "norsk": "snekker (en)",
     "lemma": "snekker",
     "english": "carpenter",
@@ -8007,7 +7820,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-clothing-022",
+    "id": "v-a2-clothing-021",
     "norsk": "solbriller (pl.)",
     "lemma": "solbrille",
     "english": "sunglasses",
@@ -8041,7 +7854,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-082",
+    "id": "v-a2-communication-081",
     "norsk": "som",
     "lemma": "som",
     "english": "who, which, that",
@@ -8092,7 +7905,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-083",
+    "id": "v-a2-communication-082",
     "norsk": "spansk",
     "lemma": "spansk",
     "english": "Spanish",
@@ -8126,7 +7939,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-money-022",
+    "id": "v-a2-money-020",
     "norsk": "å spleise",
     "lemma": "spleise",
     "english": "to split the cost, to chip in",
@@ -8143,7 +7956,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-shopping-041",
+    "id": "v-a2-shopping-040",
     "norsk": "sportsbutikk (en)",
     "lemma": "sportsbutikk",
     "english": "sports shop",
@@ -8160,7 +7973,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-084",
+    "id": "v-a2-communication-083",
     "norsk": "språk (et)",
     "lemma": "språk",
     "english": "language",
@@ -8177,7 +7990,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-085",
+    "id": "v-a2-communication-084",
     "norsk": "språkpraksis (en)",
     "lemma": "språkpraksis",
     "english": "language practice",
@@ -8194,7 +8007,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-066",
+    "id": "v-a2-occupations-064",
     "norsk": "språkpraktikant (en)",
     "lemma": "språkpraktikant",
     "english": "language intern",
@@ -8228,7 +8041,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-086",
+    "id": "v-a2-communication-085",
     "norsk": "å stave",
     "lemma": "stave",
     "english": "to spell",
@@ -8262,7 +8075,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-049",
+    "id": "v-a2-directions-048",
     "norsk": "sted (et)",
     "lemma": "sted",
     "english": "place",
@@ -8296,23 +8109,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-cooking-057",
-    "norsk": "stekepanne (en/ei)",
-    "lemma": "stekepanne",
-    "english": "frying pan",
-    "ukrainian": "сковорода",
-    "spanish": "sarten",
-    "german": "Bratpfanne",
-    "example": "Varm opp litt olje i stekepannen før du legger i grønnsakene.",
-    "example_english": "Heat up a little oil in the frying pan before you add the vegetables.",
-    "example_ukrainian": "Розігрій трохи олії на сковороді, перш ніж додавати овочі.",
-    "example_spanish": "Calienta un poco de aceite en la sarten antes de anadir las verduras.",
-    "example_german": "Erhitze etwas Ol in der Bratpfanne, bevor du das Gemüse hinzufugst.",
-    "level": "A2",
-    "category": "cooking",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-house-chores-044",
     "norsk": "å stelle",
     "lemma": "stelle",
@@ -8330,7 +8126,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-nature-036",
+    "id": "v-a2-nature-035",
     "norsk": "stillhet (en)",
     "lemma": "stillhet",
     "english": "silence",
@@ -8347,7 +8143,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-067",
+    "id": "v-a2-occupations-065",
     "norsk": "stilling (en/ei)",
     "lemma": "stilling",
     "english": "position",
@@ -8364,24 +8160,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-037",
-    "norsk": "strand (en/ei)",
-    "lemma": "strand",
-    "english": "beach",
-    "ukrainian": "пляж",
-    "spanish": "playa",
-    "german": "Strand",
-    "example": "Vi tilbrakte hele dagen på stranden.",
-    "example_english": "We spent the whole day at the beach.",
-    "example_ukrainian": "Ми провели цілий день на пляжі.",
-    "example_spanish": "Pasamos todo el día en la playa.",
-    "example_german": "Wir verbrachten den ganzen Tag am Strand.",
-    "level": "A2",
-    "category": "nature",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-clothing-023",
+    "id": "v-a2-clothing-022",
     "norsk": "strømpebukse (en/ei)",
     "lemma": "strømpebukse",
     "english": "tights",
@@ -8415,7 +8194,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-068",
+    "id": "v-a2-occupations-066",
     "norsk": "styrer (en)",
     "lemma": "styrer",
     "english": "head",
@@ -8449,7 +8228,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-clothing-024",
+    "id": "v-a2-clothing-023",
     "norsk": "støvletter (pl.)",
     "lemma": "støvlett",
     "english": "ankle boots",
@@ -8483,7 +8262,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-cooking-058",
+    "id": "v-a2-cooking-056",
     "norsk": "suppe (en/ei)",
     "lemma": "suppe",
     "english": "soup",
@@ -8551,7 +8330,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-069",
+    "id": "v-a2-occupations-067",
     "norsk": "sykmeldt",
     "lemma": "sykmeldt",
     "english": "on sick leave",
@@ -8568,7 +8347,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-cooking-059",
+    "id": "v-a2-cooking-057",
     "norsk": "syltetøy (et)",
     "lemma": "syltetøy",
     "english": "jam",
@@ -8585,7 +8364,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-087",
+    "id": "v-a2-communication-086",
     "norsk": "å synes",
     "lemma": "synes",
     "english": "to think, to find, to have an opinion",
@@ -8619,7 +8398,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-occupations-070",
+    "id": "v-a2-occupations-068",
     "norsk": "å søke",
     "lemma": "søke",
     "english": "to apply, to search",
@@ -8670,7 +8449,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-088",
+    "id": "v-a2-communication-087",
     "norsk": "så",
     "lemma": "så",
     "english": "so, then",
@@ -8704,7 +8483,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-089",
+    "id": "v-a2-communication-088",
     "norsk": "tanke (en)",
     "lemma": "tanke",
     "english": "thought, idea",
@@ -8721,7 +8500,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-body-029",
+    "id": "v-a2-body-028",
     "norsk": "tann (en/ei)",
     "lemma": "tann",
     "english": "tooth",
@@ -8755,7 +8534,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-071",
+    "id": "v-a2-occupations-069",
     "norsk": "taushetsplikt (en/ei)",
     "lemma": "taushetsplikt",
     "english": "duty of confidentiality, professional secrecy",
@@ -8772,7 +8551,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-090",
+    "id": "v-a2-communication-089",
     "norsk": "tavle (en/ei)",
     "lemma": "tavle",
     "english": "blackboard, whiteboard, board",
@@ -8789,7 +8568,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-091",
+    "id": "v-a2-communication-090",
     "norsk": "å tenke",
     "lemma": "tenke",
     "english": "to think",
@@ -8874,7 +8653,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-directions-050",
+    "id": "v-a2-directions-049",
     "norsk": "til",
     "lemma": "til",
     "english": "to, for, until",
@@ -8891,7 +8670,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-051",
+    "id": "v-a2-directions-050",
     "norsk": "tilbake",
     "lemma": "tilbake",
     "english": "back, return",
@@ -8908,7 +8687,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-communication-092",
+    "id": "v-a2-communication-091",
     "norsk": "ting (en)",
     "lemma": "ting",
     "english": "thing, object",
@@ -8925,7 +8704,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-money-023",
+    "id": "v-a2-money-021",
     "norsk": "å tjene",
     "lemma": "tjene",
     "english": "to earn, to make money",
@@ -8976,7 +8755,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-020",
+    "id": "v-a2-transport-019",
     "norsk": "trafikkregel (en)",
     "lemma": "trafikkregel",
     "english": "traffic rule",
@@ -8993,7 +8772,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-038",
+    "id": "v-a2-nature-036",
     "norsk": "traktor (en)",
     "lemma": "traktor",
     "english": "tractor",
@@ -9095,7 +8874,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-093",
+    "id": "v-a2-communication-092",
     "norsk": "å tro",
     "lemma": "tro",
     "english": "to believe, to think",
@@ -9112,7 +8891,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-occupations-072",
+    "id": "v-a2-occupations-070",
     "norsk": "turnus (en)",
     "lemma": "turnus",
     "english": "shift rotation, roster",
@@ -9129,7 +8908,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-nature-039",
+    "id": "v-a2-nature-037",
     "norsk": "turområde (et)",
     "lemma": "turområde",
     "english": "hiking area, recreational area",
@@ -9163,7 +8942,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-094",
+    "id": "v-a2-communication-093",
     "norsk": "tysk",
     "lemma": "tysk",
     "english": "German",
@@ -9197,7 +8976,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-occupations-073",
+    "id": "v-a2-occupations-071",
     "norsk": "tømrer (en)",
     "lemma": "tømrer",
     "english": "carpenter",
@@ -9214,7 +8993,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-clothing-025",
+    "id": "v-a2-clothing-024",
     "norsk": "tøy (et)",
     "lemma": "tøy",
     "english": "clothes",
@@ -9231,24 +9010,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-022",
-    "norsk": "tåke (en/ei)",
-    "lemma": "tåke",
-    "english": "fog",
-    "ukrainian": "туман",
-    "spanish": "niebla",
-    "german": "Nebel",
-    "example": "Det var tett tåke langs kysten i morges.",
-    "example_english": "There was thick fog along the coast this morning.",
-    "example_ukrainian": "Сьогодні вранці вздовж узбережжя був густий туман.",
-    "example_spanish": "Esta mañana había niebla densa a lo largo de la costa.",
-    "example_german": "Heute Morgen lag dichter Nebel entlang der Küste.",
-    "level": "A2",
-    "category": "weather",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-body-030",
+    "id": "v-a2-body-029",
     "norsk": "tåre (en/ei)",
     "lemma": "tåre",
     "english": "tear",
@@ -9299,7 +9061,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-052",
+    "id": "v-a2-directions-051",
     "norsk": "under",
     "lemma": "under",
     "english": "under",
@@ -9316,7 +9078,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-occupations-074",
+    "id": "v-a2-occupations-072",
     "norsk": "å undervise",
     "lemma": "undervise",
     "english": "to teach",
@@ -9384,7 +9146,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-directions-053",
+    "id": "v-a2-directions-052",
     "norsk": "ut",
     "lemma": "ut",
     "english": "out",
@@ -9401,7 +9163,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-occupations-075",
+    "id": "v-a2-occupations-073",
     "norsk": "utdannet",
     "lemma": "utdannet",
     "english": "qualified, trained",
@@ -9418,7 +9180,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-occupations-076",
+    "id": "v-a2-occupations-074",
     "norsk": "utdanning (en/ei)",
     "lemma": "utdanning",
     "english": "education",
@@ -9435,7 +9197,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-023",
+    "id": "v-a2-weather-022",
     "norsk": "ute",
     "lemma": "ute",
     "english": "outside, outdoors",
@@ -9452,7 +9214,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-clothing-026",
+    "id": "v-a2-clothing-025",
     "norsk": "utedress (en)",
     "lemma": "utedress",
     "english": "outdoor suit, snowsuit",
@@ -9469,7 +9231,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-095",
+    "id": "v-a2-communication-094",
     "norsk": "uten",
     "lemma": "uten",
     "english": "without",
@@ -9486,7 +9248,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-054",
+    "id": "v-a2-directions-053",
     "norsk": "utenfor",
     "lemma": "utenfor",
     "english": "outside, outside of",
@@ -9520,7 +9282,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-nature-040",
+    "id": "v-a2-nature-038",
     "norsk": "utsikt (en)",
     "lemma": "utsikt",
     "english": "view, prospect",
@@ -9554,7 +9316,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-096",
+    "id": "v-a2-communication-095",
     "norsk": "uttrykk (et)",
     "lemma": "uttrykk",
     "english": "expression",
@@ -9571,7 +9333,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-077",
+    "id": "v-a2-occupations-075",
     "norsk": "vaktmester (en)",
     "lemma": "vaktmester",
     "english": "caretaker",
@@ -9622,7 +9384,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-021",
+    "id": "v-a2-transport-020",
     "norsk": "varebil (en)",
     "lemma": "varebil",
     "english": "van",
@@ -9639,7 +9401,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-024",
+    "id": "v-a2-weather-023",
     "norsk": "varme (en)",
     "lemma": "varme",
     "english": "heat",
@@ -9656,7 +9418,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-025",
+    "id": "v-a2-weather-024",
     "norsk": "varmegrad (en)",
     "lemma": "varmegrad",
     "english": "degree Celsius",
@@ -9673,7 +9435,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-055",
+    "id": "v-a2-directions-054",
     "norsk": "ved",
     "lemma": "ved",
     "english": "by",
@@ -9741,7 +9503,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-056",
+    "id": "v-a2-directions-055",
     "norsk": "venstre",
     "lemma": "venstre",
     "english": "left",
@@ -9775,7 +9537,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-078",
+    "id": "v-a2-occupations-076",
     "norsk": "vikar (en)",
     "lemma": "vikar",
     "english": "substitute / temp worker",
@@ -9792,7 +9554,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-097",
+    "id": "v-a2-communication-096",
     "norsk": "å ville",
     "lemma": "ville",
     "english": "to want / to be willing to",
@@ -9843,7 +9605,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-body-031",
+    "id": "v-a2-body-030",
     "norsk": "voksen",
     "lemma": "voksen",
     "english": "adult / grown-up",
@@ -9860,7 +9622,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-occupations-079",
+    "id": "v-a2-occupations-077",
     "norsk": "yrke (et)",
     "lemma": "yrke",
     "english": "occupation / profession",
@@ -9877,7 +9639,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-occupations-080",
+    "id": "v-a2-occupations-078",
     "norsk": "yrkesfag (et)",
     "lemma": "yrkesfag",
     "english": "vocational subject",
@@ -9911,7 +9673,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-money-024",
+    "id": "v-a2-money-022",
     "norsk": "økonomisk",
     "lemma": "økonomisk",
     "english": "economic",
@@ -9945,7 +9707,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-098",
+    "id": "v-a2-communication-097",
     "norsk": "å ønske",
     "lemma": "ønske",
     "english": "to wish",
@@ -9979,7 +9741,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-057",
+    "id": "v-a2-directions-056",
     "norsk": "øverst",
     "lemma": "øverst",
     "english": "at the top",
@@ -9994,23 +9756,6 @@
     "level": "A2",
     "category": "directions",
     "part": "adjective"
-  },
-  {
-    "id": "v-a2-nature-041",
-    "norsk": "øy (en/ei)",
-    "lemma": "øy",
-    "english": "island",
-    "ukrainian": "острів",
-    "spanish": "isla",
-    "german": "Insel",
-    "example": "Vi tok ferja til den lille øya utenfor kysten.",
-    "example_english": "We took the ferry to the small island off the coast.",
-    "example_ukrainian": "Ми взяли пором до маленького острова біля узбережжя.",
-    "example_spanish": "Tomamos el ferry hasta la pequeña isla frente a la costa.",
-    "example_german": "Wir nahmen die Fahre zu der kleinen Insel vor der Kuste.",
-    "level": "A2",
-    "category": "nature",
-    "part": "noun"
   },
   {
     "id": "v-a2-time-055",
@@ -10045,22 +9790,5 @@
     "level": "A2",
     "category": "descriptive-adjectives",
     "part": "adjective"
-  },
-  {
-    "id": "v-a2-weather-026",
-    "norsk": "årstid (en/ei)",
-    "lemma": "årstid",
-    "english": "season (of the year)",
-    "ukrainian": "пора року",
-    "spanish": "estacion del año",
-    "german": "Jahreszeit",
-    "example": "Hva er din favoritt-årstid?",
-    "example_english": "What is your favorite season?",
-    "example_ukrainian": "Яка твоя улюблена пора року?",
-    "example_spanish": "¿Cuál es tu estación favorita?",
-    "example_german": "Was ist deine Lieblingsjahreszeit?",
-    "level": "A2",
-    "category": "weather",
-    "part": "noun"
   }
 ]
