@@ -1,0 +1,22 @@
+
+════════════════════════════════════════════════════════════
+🔍  Level: A2
+════════════════════════════════════════════════════════════
+
+📄  vocab-a2-new.json (576 entries) → vocab-a2.json (342 entries)
+  ⚠️   2 draft entry(ies) share a lemma with an existing production entry (possible duplicate — not blocking, double-check these):
+      "lemma": "få",  "draft_id": "v-a2-shopping-026" (vocab-a2-new.json),  "prod_id": "v-a2-descriptive-adjectives-010" (vocab-a2.json)
+
+      "lemma": "møte",  "draft_id": "v-a2-social-life-074" (vocab-a2-new.json),  "prod_id": "v-a2-communication-013" (vocab-a2.json)
+
+  ✅  576 entries ready to merge (production total: 342 → 918)
+  💾  Backed up vocab-a2.json → vocab-a2.json.bak and wrote 918 total entries
+  📦  Moved vocab-a2-new.json → vocab-a2-new.json.merged
+
+📄  uttrykk-a2-new.json (129 entries) → uttrykk-a2.json (159 entries)
+  ✅  129 entries ready to merge (production total: 159 → 288)
+  💾  Backed up uttrykk-a2.json → uttrykk-a2.json.bak and wrote 288 total entries
+  📦  Moved uttrykk-a2-new.json → uttrykk-a2-new.json.merged
+
+════════════════════════════════════════════════════════════
+✅  Done — 705 entries merged into production. Now spot-check a few entries in the running app (Step 5.3).
