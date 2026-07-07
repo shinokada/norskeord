@@ -12,12 +12,13 @@
  *   4. category     — must be in CATEGORIES_BY_LEVEL for that level
  *   5. part         — must be a known PartOfSpeech value
  *   6. norsk field  — formatting rules per part of speech:
- *        noun   → "word (en|et|ei)"
+ *        noun   → "word (en|et|ei)" for singular, "word (pl.)" / "word (b.pl.)" for a plural-form card,
+ *                  or "word (ubøy.)" if the noun is indeclinable (no gender/plural/bestemt form)
  *        verb   → starts with "å "
- *        other  → no "å " prefix, no gender parenthetical
- *   7. lemma field  — must be plain dictionary form (no å prefix, no gender):
+ *        other  → no "å " prefix, no gender/plural/ubøy. parenthetical
+ *   7. lemma field  — must be plain dictionary form (no å prefix, no gender, no plural marker, no ubøy. marker):
  *        verb   → bare infinitive, e.g. "få"  (NOT "å få")
- *        noun   → bare word,       e.g. "hus" (NOT "hus (et)")
+ *        noun   → bare singular word, e.g. "bok" (NOT "hus (et)" and NOT "bøker" even for a plural card)
  *        other  → bare word,       e.g. "glad"
  *   8. Required fields present (norsk, english, example, example_english, level, category, part)
  *   9. Language consistency — for each translation language present (ukrainian, spanish,
@@ -285,6 +286,10 @@ function checkIdFormat(id, level, category) {
 
 /** Gender parenthetical: (en), (et), (ei), or combinations */
 const GENDER_PATTERN = /\s*\((en|et|ei|en\/ei|en\/men)\)$/i;
+/** Plural parenthetical: (pl.) = ubestemt flertall, (b.pl.) = bestemt flertall */
+const PLURAL_PATTERN = /\s*\((b\.)?pl\.\)$/i;
+/** Indeclinable parenthetical: (ubøy.) = ubøyelig — noun takes no gender/plural/bestemt inflection at all */
+const UBOYELIG_PATTERN = /\s*\(ubøy\.\)$/i;
 /** Verb prefix */
 const VERB_PREFIX = /^å\s/;
 
@@ -292,8 +297,10 @@ function checkNorsk(norsk, part) {
   const errors = [];
   switch (part) {
     case 'noun':
-      if (!GENDER_PATTERN.test(norsk)) {
-        errors.push(`noun norsk "${norsk}" should end with gender, e.g. "hus (et)"`);
+      if (!GENDER_PATTERN.test(norsk) && !PLURAL_PATTERN.test(norsk) && !UBOYELIG_PATTERN.test(norsk)) {
+        errors.push(
+          `noun norsk "${norsk}" should end with gender, e.g. "hus (et)", a plural marker, e.g. "bøker (pl.)" / "bøkene (b.pl.)", or (ubøy.) if the noun is indeclinable`
+        );
       }
       break;
     case 'verb':
@@ -302,12 +309,18 @@ function checkNorsk(norsk, part) {
       }
       break;
     default:
-      // adjective, adverb, phrase, numeral, etc. — no prefix or gender expected
+      // adjective, adverb, phrase, numeral, etc. — no prefix, gender, plural, or indeclinable marker expected
       if (VERB_PREFIX.test(norsk)) {
         errors.push(`${part} norsk "${norsk}" should not start with "å " (only verbs use this)`);
       }
       if (GENDER_PATTERN.test(norsk) && part !== 'phrase') {
         errors.push(`${part} norsk "${norsk}" has gender parenthetical — is the part wrong?`);
+      }
+      if (PLURAL_PATTERN.test(norsk)) {
+        errors.push(`${part} norsk "${norsk}" has a plural marker — only nouns use (pl.)/(b.pl.)`);
+      }
+      if (UBOYELIG_PATTERN.test(norsk)) {
+        errors.push(`${part} norsk "${norsk}" has (ubøy.) — only nouns use this marker`);
       }
       break;
   }
@@ -338,10 +351,25 @@ function checkLemma(entry) {
       `noun lemma "${entry.lemma}" should be bare word without gender, e.g. "${entry.lemma.replace(GENDER_PATTERN, '').trim()}"`
     );
   }
-  // Lemma should not be identical to norsk (which includes å/gender) — likely copy-paste error
+  // Noun lemma must NOT have a plural marker — plural cards' lemma is still the bare singular
+  if (entry.part === 'noun' && PLURAL_PATTERN.test(entry.lemma)) {
+    warnings.push(
+      `noun lemma "${entry.lemma}" should be the bare singular dictionary form, not a plural, e.g. "${entry.lemma.replace(PLURAL_PATTERN, '').trim()}"`
+    );
+  }
+  // Noun lemma must NOT have the indeclinable marker — lemma is always the bare word
+  if (entry.part === 'noun' && UBOYELIG_PATTERN.test(entry.lemma)) {
+    warnings.push(
+      `noun lemma "${entry.lemma}" should be the bare word without (ubøy.), e.g. "${entry.lemma.replace(UBOYELIG_PATTERN, '').trim()}"`
+    );
+  }
+  // Lemma should not be identical to norsk (which includes å/gender/plural/ubøy.) — likely copy-paste error
   if (
     entry.lemma === entry.norsk &&
-    (VERB_PREFIX.test(entry.norsk) || GENDER_PATTERN.test(entry.norsk))
+    (VERB_PREFIX.test(entry.norsk) ||
+      GENDER_PATTERN.test(entry.norsk) ||
+      PLURAL_PATTERN.test(entry.norsk) ||
+      UBOYELIG_PATTERN.test(entry.norsk))
   ) {
     warnings.push(
       `lemma "${entry.lemma}" is identical to norsk — lemma should be the bare dictionary form`

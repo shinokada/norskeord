@@ -1,0 +1,3745 @@
+{
+  "filename": "vocab-a2.json",
+  "audited": 593,
+  "errors": 89,
+  "warnings": 352,
+  "infos": 26,
+  "issues": [
+    {
+      "id": "v-a2-occupations-025",
+      "norsk": "administrasjon (en)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'administrasjon' is more naturally B1 vocabulary for learners"
+    },
+    {
+      "id": "v-a2-hobbies-015",
+      "norsk": "å aktivisere",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'å aktivisere' is B1/B2 level; too advanced for A2"
+    },
+    {
+      "id": "v-a2-occupations-026",
+      "norsk": "ambulansearbeider (en)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'ambulansearbeider' is likely B1; complex compound noun for A2"
+    },
+    {
+      "id": "v-a2-occupations-027",
+      "norsk": "ansatt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' and 'Ella está empleada'"
+    },
+    {
+      "id": "v-a2-occupations-027",
+      "norsk": "ansatt",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "Missing umlaut: 'großen' not 'grossen' in standard German"
+    },
+    {
+      "id": "v-a2-communication-021",
+      "norsk": "arabisk",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "error",
+      "comment": "'árabe' is correct; 'arabigo' is archaic/incorrect modern usage"
+    },
+    {
+      "id": "v-a2-communication-021",
+      "norsk": "arabisk",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accents: 'Él habla árabe con fluidez'"
+    },
+    {
+      "id": "v-a2-occupations-030",
+      "norsk": "arbeidsoppgave (en/ei)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "Typo: 'gå' should be 'ga' (gave)"
+    },
+    {
+      "id": "v-a2-occupations-031",
+      "norsk": "arbeidsplass (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "Missing umlaut: 'fünf' not 'funf'"
+    },
+    {
+      "id": "v-a2-occupations-031",
+      "norsk": "arbeidsplass (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "v-a2-communication-022",
+      "norsk": "at",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'wurde' should be 'würde' (Konjunktiv II for reported speech)"
+    },
+    {
+      "id": "v-a2-communication-022",
+      "norsk": "at",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'Él dijo que vendría mañana'"
+    },
+    {
+      "id": "v-a2-directions-017",
+      "norsk": "av",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "v-a2-occupations-033",
+      "norsk": "avdeling (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'sección', 'pediatría'; 'departamento de pediatría' correct"
+    },
+    {
+      "id": "v-a2-money-014",
+      "norsk": "avgift (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Gebühr' not 'Gebuhr'"
+    },
+    {
+      "id": "v-a2-money-014",
+      "norsk": "avgift (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Gebühr' not 'Gebuhr'"
+    },
+    {
+      "id": "v-a2-communication-023",
+      "norsk": "avis (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'periódico' not 'periodico'"
+    },
+    {
+      "id": "v-a2-communication-023",
+      "norsk": "avis (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'El' should be 'Él' (pronoun requires accent)"
+    },
+    {
+      "id": "v-a2-communication-023",
+      "norsk": "avis (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'periódico' not 'periodico'"
+    },
+    {
+      "id": "v-a2-cooking-022",
+      "norsk": "bacon (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Frühstück' not 'Fruhstuck'"
+    },
+    {
+      "id": "v-a2-sports-023",
+      "norsk": "å bade",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing tilde: 'bañan' not 'banan'"
+    },
+    {
+      "id": "v-a2-directions-018",
+      "norsk": "bak",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'detrás de' not 'detras de'"
+    },
+    {
+      "id": "v-a2-directions-018",
+      "norsk": "bak",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'está detrás' not 'esta detras'"
+    },
+    {
+      "id": "v-a2-directions-018",
+      "norsk": "bak",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "info",
+      "comment": "'is parked' adds detail not in Norwegian original ('star')"
+    },
+    {
+      "id": "v-a2-sports-024",
+      "norsk": "ball (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'chutó' not 'chuto'; 'portería' not 'porteria'"
+    },
+    {
+      "id": "v-a2-transport-006",
+      "norsk": "barnevogn (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'bebé' not 'bebe'"
+    },
+    {
+      "id": "v-a2-transport-006",
+      "norsk": "barnevogn (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'empujó' not 'empujo'"
+    },
+    {
+      "id": "v-a2-time-021",
+      "norsk": "begynnelse (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'básicas' not 'basicas'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-017",
+      "norsk": "bestandig",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'ständig' not 'standig'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-017",
+      "norsk": "bestandig",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Él' not 'El'; 'reunión' not 'reunion'"
+    },
+    {
+      "id": "v-a2-communication-024",
+      "norsk": "å bestemme",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'übernachten' not 'ubernachten'"
+    },
+    {
+      "id": "v-a2-communication-024",
+      "norsk": "å bestemme",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'qué', 'íbamos' not 'que', 'ibamos'"
+    },
+    {
+      "id": "v-a2-social-life-032",
+      "norsk": "å besøke",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Großeltern' not 'Grosseltern'"
+    },
+    {
+      "id": "v-a2-communication-025",
+      "norsk": "å bety",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Qué' not 'Que' in question"
+    },
+    {
+      "id": "v-a2-nature-026",
+      "norsk": "bjerketre (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing tilde: 'cabaña' not 'cabana'"
+    },
+    {
+      "id": "v-a2-body-019",
+      "norsk": "blek",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'pálido' not 'palido'"
+    },
+    {
+      "id": "v-a2-body-019",
+      "norsk": "blek",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'después' not 'despues'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-019",
+      "norsk": "å bli",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'ser médica' vs 'volverse/quedarse'; translation lists 'volverse/quedarse' but example uses 'ser'"
+    },
+    {
+      "id": "v-a2-health-029",
+      "norsk": "å blø",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'empezó', 'después', 'él cayera'"
+    },
+    {
+      "id": "v-a2-weather-012",
+      "norsk": "å blåse",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Back-translation is 'it is windy', not 'it is blowing hard'; mismatches Norwegian/English"
+    },
+    {
+      "id": "v-a2-money-015",
+      "norsk": "bot (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'estacionó' not 'estaciono'"
+    },
+    {
+      "id": "v-a2-cooking-024",
+      "norsk": "brunost (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'marrón' not 'marron'"
+    },
+    {
+      "id": "v-a2-cooking-024",
+      "norsk": "brunost (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'marrón' not 'marron'"
+    },
+    {
+      "id": "v-a2-clothing-009",
+      "norsk": "bukse (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'pantalón' not 'pantalon'"
+    },
+    {
+      "id": "v-a2-occupations-034",
+      "norsk": "butikkmedarbeider (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Masculine form used; example uses feminine 'Verkäuferin' — inconsistent gender"
+    },
+    {
+      "id": "v-a2-health-030",
+      "norsk": "å burde",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'мати б' is unnatural; better: 'повинен / слід'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-021",
+      "norsk": "deilig",
+      "level": "A2",
+      "field": "german",
+      "severity": "info",
+      "comment": "'koestlich' should be 'köstlich'; missing umlaut characters"
+    },
+    {
+      "id": "v-a2-social-life-036",
+      "norsk": "deltaker (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'competicion' missing accent: should be 'competición'; 'despues' missing accent"
+    },
+    {
+      "id": "v-a2-occupations-035",
+      "norsk": "deltid (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'ademas' missing accent: should be 'además'"
+    },
+    {
+      "id": "v-a2-communication-026",
+      "norsk": "dem",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'envie' missing accent: should be 'envié'"
+    },
+    {
+      "id": "v-a2-directions-021",
+      "norsk": "der",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "'haelt', 'drueben' missing umlauts: 'hält', 'drüben'"
+    },
+    {
+      "id": "v-a2-directions-021",
+      "norsk": "der",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'autobus' missing accent: should be 'autobús'; 'ahi' should be 'ahí'"
+    },
+    {
+      "id": "v-a2-time-023",
+      "norsk": "deretter",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'despues' and 'Cenamos' missing accent on 'después'"
+    },
+    {
+      "id": "v-a2-time-023",
+      "norsk": "deretter",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'поїли вечерю' unnatural; better: 'повечеряли' or 'з'їли вечерю'"
+    },
+    {
+      "id": "v-a2-communication-027",
+      "norsk": "derfor",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'Esta lloviendo' missing accent: should be 'Está lloviendo'"
+    },
+    {
+      "id": "v-a2-technology-018",
+      "norsk": "å designe",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "info",
+      "comment": "'disenar' missing tilde: should be 'diseñar'"
+    },
+    {
+      "id": "v-a2-technology-018",
+      "norsk": "å designe",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'disenar' missing tilde: should be 'diseñar'"
+    },
+    {
+      "id": "v-a2-communication-029",
+      "norsk": "dette",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'Das ist' used instead of 'Dies ist'; inconsistent with translation 'dies'"
+    },
+    {
+      "id": "v-a2-communication-029",
+      "norsk": "dette",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Este es' (masculine) but 'esto' is neuter; use 'Esto es mi mejor amigo'"
+    },
+    {
+      "id": "v-a2-communication-030",
+      "norsk": "disse",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'Це взуття' means 'this footwear' (singular); should be 'Ці туфлі/черевики' to match 'these shoes'"
+    },
+    {
+      "id": "v-a2-communication-030",
+      "norsk": "disse",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'comodos' missing accent: should be 'cómodos'"
+    },
+    {
+      "id": "v-a2-directions-022",
+      "norsk": "dit",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Typo: 'alla' should be 'allá' (missing accent)"
+    },
+    {
+      "id": "v-a2-directions-022",
+      "norsk": "dit",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Como' should be '¿Cómo'"
+    },
+    {
+      "id": "v-a2-hobbies-018",
+      "norsk": "å drive med",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'beschaftigen' should be 'beschäftigen'"
+    },
+    {
+      "id": "v-a2-house-chores-023",
+      "norsk": "duk (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'weisse' should be 'weiße' or 'weisse' (Swiss)"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-022",
+      "norsk": "dum",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'toricht' should be 'töricht'"
+    },
+    {
+      "id": "v-a2-health-031",
+      "norsk": "å dø",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'murio' should be 'murió'"
+    },
+    {
+      "id": "v-a2-shopping-024",
+      "norsk": "ekstra",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'зайвий' is an adjective form; inconsistent with adverb entry; remove or rephrase"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-024",
+      "norsk": "ekte",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'справжня' is feminine form; redundant alongside 'справжній'; remove"
+    },
+    {
+      "id": "v-a2-health-032",
+      "norsk": "eldre",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'älteren' is inflected; base adjective form should be 'älter'"
+    },
+    {
+      "id": "v-a2-technology-019",
+      "norsk": "elektronisk",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'надаю перевагу X над Y' is unnatural; correct is 'перед Y'"
+    },
+    {
+      "id": "v-a2-communication-033",
+      "norsk": "ellers",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Typo: 'perderaes' should be 'perderás'"
+    },
+    {
+      "id": "v-a2-nature-029",
+      "norsk": "elv (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: should be 'río'"
+    },
+    {
+      "id": "v-a2-nature-029",
+      "norsk": "elv (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'río' and 'tarde' is fine, but 'rio' needs accent"
+    },
+    {
+      "id": "v-a2-nature-029",
+      "norsk": "elv (en/ei)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Says 'цілий день' (all day), Norwegian says 'hele ettermiddagen' (all afternoon)"
+    },
+    {
+      "id": "v-a2-house-chores-025",
+      "norsk": "enebolig (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'träumt' not 'traumt'"
+    },
+    {
+      "id": "v-a2-communication-034",
+      "norsk": "engelsk",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: should be 'inglés'"
+    },
+    {
+      "id": "v-a2-communication-034",
+      "norsk": "engelsk",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'inglés', 'después'"
+    },
+    {
+      "id": "v-a2-social-life-039",
+      "norsk": "enke (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'convirtió', 'murió'"
+    },
+    {
+      "id": "v-a2-communication-035",
+      "norsk": "å er",
+      "level": "A2",
+      "field": "norwegian",
+      "severity": "error",
+      "comment": "'å er' is incorrect; infinitive form is 'å være'"
+    },
+    {
+      "id": "v-a2-communication-035",
+      "norsk": "å er",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Ärztin' not 'Arztin'"
+    },
+    {
+      "id": "v-a2-communication-035",
+      "norsk": "å er",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'hábil'"
+    },
+    {
+      "id": "v-a2-time-025",
+      "norsk": "etter",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'después'"
+    },
+    {
+      "id": "v-a2-shopping-025",
+      "norsk": "ferskvaredisk (en)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'Deli counter' or 'fresh food counter' is more natural than 'fresh produce counter'"
+    },
+    {
+      "id": "v-a2-shopping-025",
+      "norsk": "ferskvaredisk (en)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "'Fresh produce counter' is unnatural; prefer 'deli counter' or 'fresh food counter'"
+    },
+    {
+      "id": "v-a2-clothing-010",
+      "norsk": "festkledd",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Gäste' not 'Gaste'"
+    },
+    {
+      "id": "v-a2-social-life-040",
+      "norsk": "forelsket",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Él está'"
+    },
+    {
+      "id": "v-a2-communication-037",
+      "norsk": "forklaring (en/ei)",
+      "level": "A2",
+      "field": "example_norwegian",
+      "severity": "error",
+      "comment": "'gå' should be 'ga' (past tense of 'gi'); typo in source"
+    },
+    {
+      "id": "v-a2-health-034",
+      "norsk": "å føle",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'fühlen', not 'fuhlen'"
+    },
+    {
+      "id": "v-a2-health-034",
+      "norsk": "å føle",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'fühle', not 'fuhle'"
+    },
+    {
+      "id": "v-a2-directions-024",
+      "norsk": "å føre",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'führen', not 'fuhren'"
+    },
+    {
+      "id": "v-a2-directions-024",
+      "norsk": "å føre",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'führt', not 'fuhrt'"
+    },
+    {
+      "id": "v-a2-transport-012",
+      "norsk": "førerkort (et)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Führerschein', not 'Fuhrerschein'"
+    },
+    {
+      "id": "v-a2-transport-012",
+      "norsk": "førerkort (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Führerschein', not 'Fuhrerschein'"
+    },
+    {
+      "id": "v-a2-shopping-026",
+      "norsk": "å få",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'Obtener' is formal/unnatural here; 'conseguir' or '¿Me puede dar?' is more natural"
+    },
+    {
+      "id": "v-a2-shopping-026",
+      "norsk": "å få",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'¿Puedo obtener?' is unnatural; prefer '¿Me puede dar una bolsa?'"
+    },
+    {
+      "id": "v-a2-shopping-026",
+      "norsk": "å få",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Tüte', not 'Tute'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-028",
+      "norsk": "ganske",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "error",
+      "comment": "'quite' is English, not Spanish; should be removed from Spanish field"
+    },
+    {
+      "id": "v-a2-communication-039",
+      "norsk": "generell",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "'Han gå' should be 'Han ga' (past tense of 'å gi')"
+    },
+    {
+      "id": "v-a2-occupations-038",
+      "norsk": "fisker (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'salió' not 'salio'"
+    },
+    {
+      "id": "v-a2-time-031",
+      "norsk": "fjor (ubøy.)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'España' not 'Espana'"
+    },
+    {
+      "id": "v-a2-social-life-041",
+      "norsk": "å flytte",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'nächsten' not 'nachsten'"
+    },
+    {
+      "id": "v-a2-social-life-042",
+      "norsk": "folk (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Había' not 'Habia'"
+    },
+    {
+      "id": "v-a2-directions-026",
+      "norsk": "foran",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'hält' not 'halt'"
+    },
+    {
+      "id": "v-a2-directions-026",
+      "norsk": "foran",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'autobús' not 'autobus'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-030",
+      "norsk": "å forandre",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'verändern' not 'verandern'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-030",
+      "norsk": "å forandre",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'verändern' not 'verandern'"
+    },
+    {
+      "id": "v-a2-time-032",
+      "norsk": "framtid (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Él' not 'El' (subject pronoun)"
+    },
+    {
+      "id": "v-a2-cooking-027",
+      "norsk": "frokost (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Frühstück' not 'Fruhstuck'"
+    },
+    {
+      "id": "v-a2-cooking-027",
+      "norsk": "frokost (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'frühstücken' not 'fruhstucken'"
+    },
+    {
+      "id": "v-a2-weather-013",
+      "norsk": "å fryse",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'frío' not 'frio'"
+    },
+    {
+      "id": "v-a2-health-036",
+      "norsk": "fysioterapeut (en)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'Fysioterapeut' is a complex term; B1 may be more appropriate than A2"
+    },
+    {
+      "id": "v-a2-health-036",
+      "norsk": "fysioterapeut (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'recomendó', 'después', 'lesión'"
+    },
+    {
+      "id": "v-a2-health-037",
+      "norsk": "å føde",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'gebären' is more standard spelling than 'gebaren'"
+    },
+    {
+      "id": "v-a2-social-life-044",
+      "norsk": "å gifte",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'nächsten' not 'nachsten'"
+    },
+    {
+      "id": "v-a2-social-life-044",
+      "norsk": "å gifte",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'nächsten Sommer' not 'nachsten Sommer'"
+    },
+    {
+      "id": "v-a2-directions-028",
+      "norsk": "gjennom",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent marks: 'través' and 'túnel'"
+    },
+    {
+      "id": "v-a2-body-023",
+      "norsk": "å gjespe",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'gähnen' not 'gahnen'"
+    },
+    {
+      "id": "v-a2-body-023",
+      "norsk": "å gjespe",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'gähnen' not 'gahnen'"
+    },
+    {
+      "id": "v-a2-body-023",
+      "norsk": "å gjespe",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Empezó' not 'Empezo'"
+    },
+    {
+      "id": "v-a2-social-life-045",
+      "norsk": "gjest (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Gäste' not 'Gaste'"
+    },
+    {
+      "id": "v-a2-social-life-045",
+      "norsk": "gjest (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'Gäste' not 'Gaste'"
+    },
+    {
+      "id": "v-a2-social-life-045",
+      "norsk": "gjest (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'huésped' not 'huesped'"
+    },
+    {
+      "id": "v-a2-weather-014",
+      "norsk": "glatt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'está', 'después'"
+    },
+    {
+      "id": "v-a2-nature-031",
+      "norsk": "grantre (et)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'gran' is specifically spruce (Picea); fir tree is less accurate here"
+    },
+    {
+      "id": "v-a2-nature-031",
+      "norsk": "grantre (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'está'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-032",
+      "norsk": "å greie",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'arreglárselas' not 'arreglarselas'"
+    },
+    {
+      "id": "v-a2-cooking-029",
+      "norsk": "grill (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'draußen' not 'draussen'"
+    },
+    {
+      "id": "v-a2-shopping-029",
+      "norsk": "grønnsaker (pl.)",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'Gemüse' not 'Gemuse'"
+    },
+    {
+      "id": "v-a2-shopping-029",
+      "norsk": "grønnsaker (pl.)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'Gemüse' not 'Gemuse'"
+    },
+    {
+      "id": "v-a2-shopping-029",
+      "norsk": "grønnsaker (pl.)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'sábados' not 'sabados'"
+    },
+    {
+      "id": "v-a2-directions-029",
+      "norsk": "hit",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Schüler' not 'Schulern'"
+    },
+    {
+      "id": "v-a2-directions-029",
+      "norsk": "hit",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'Schüler' not 'Schulern'"
+    },
+    {
+      "id": "v-a2-occupations-040",
+      "norsk": "hjelpemann (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'räumte' not 'raumte'"
+    },
+    {
+      "id": "v-a2-occupations-040",
+      "norsk": "hjelpemann (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'räumte' not 'raumte'"
+    },
+    {
+      "id": "v-a2-occupations-040",
+      "norsk": "hjelpemann (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'almacén', 'ordenó'"
+    },
+    {
+      "id": "v-a2-directions-030",
+      "norsk": "hjem",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'después' not 'despues'"
+    },
+    {
+      "id": "v-a2-house-chores-028",
+      "norsk": "hjemme",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "v-a2-body-024",
+      "norsk": "å holde",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Él' not 'El' for pronoun"
+    },
+    {
+      "id": "v-a2-social-life-049",
+      "norsk": "hos",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "'vare' should be 'våre' (our)"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-033",
+      "norsk": "hoved-",
+      "level": "A2",
+      "field": "part",
+      "severity": "error",
+      "comment": "'hoved-' is a prefix, not an adjective"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-033",
+      "norsk": "hoved-",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "'Hoved inngangen' should be one word: 'Hovedinngangen'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-033",
+      "norsk": "hoved-",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'main' is English, not Spanish; remove it"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-033",
+      "norsk": "hoved-",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "v-a2-house-chores-029",
+      "norsk": "hull (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'Es ist' should be 'Es gibt' for existence in German"
+    },
+    {
+      "id": "v-a2-house-chores-030",
+      "norsk": "husarbeid (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'gleichmaßig' should be 'gleichmäßig'"
+    },
+    {
+      "id": "v-a2-occupations-041",
+      "norsk": "husøkonom (en)",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "'gå' should be 'ga' (past tense of 'gi')"
+    },
+    {
+      "id": "v-a2-occupations-041",
+      "norsk": "husøkonom (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Haushaltswirt' is uncommon; 'Hauswirtschafter' is more natural"
+    },
+    {
+      "id": "v-a2-communication-043",
+      "norsk": "informasjon (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'información' not 'informacion'"
+    },
+    {
+      "id": "v-a2-communication-043",
+      "norsk": "informasjon (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'más información' not 'mas informacion'"
+    },
+    {
+      "id": "v-a2-directions-032",
+      "norsk": "inne",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "v-a2-directions-033",
+      "norsk": "innenfor",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "v-a2-communication-044",
+      "norsk": "innkalling (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'на наступному тижні' should be 'на наступний тиждень'"
+    },
+    {
+      "id": "v-a2-hobbies-021",
+      "norsk": "interesse (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Back-translation differs: 'цікавиться' ≠ 'має великий інтерес'; inconsistent with entry"
+    },
+    {
+      "id": "v-a2-shopping-031",
+      "norsk": "kilopris (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent marks: 'Cuál' and 'salmón' required."
+    },
+    {
+      "id": "v-a2-hobbies-022",
+      "norsk": "kino (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'película' required."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-035",
+      "norsk": "kjempefin",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'wirklich schon' is missing umlaut; must be 'wirklich schön'."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-035",
+      "norsk": "kjempefin",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'schones' missing umlaut; must be 'schönes'."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-036",
+      "norsk": "kjempeflink",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'tuchtig' missing umlaut; must be 'tüchtig'."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-036",
+      "norsk": "kjempeflink",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'tuchtig' missing umlaut; must be 'tüchtig'."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-036",
+      "norsk": "kjempeflink",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'hábil' required."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-036",
+      "norsk": "kjempeflink",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'hábil' required."
+    },
+    {
+      "id": "v-a2-social-life-052",
+      "norsk": "å kjenne",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'fuhlen' missing umlaut; must be 'fühlen'."
+    },
+    {
+      "id": "v-a2-social-life-053",
+      "norsk": "å bli kjent med noen",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Conocí' required."
+    },
+    {
+      "id": "v-a2-house-chores-032",
+      "norsk": "hall (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'Hang' is incorrect; should be 'Häng' (imperative of 'hängen')."
+    },
+    {
+      "id": "v-a2-house-chores-032",
+      "norsk": "hall (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'vestíbulo' required."
+    },
+    {
+      "id": "v-a2-house-chores-032",
+      "norsk": "hall (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'vestíbulo' required."
+    },
+    {
+      "id": "v-a2-money-016",
+      "norsk": "halvpart (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'Halfte' missing umlaut; must be 'Hälfte'."
+    },
+    {
+      "id": "v-a2-money-016",
+      "norsk": "halvpart (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'Halfte' missing umlaut; must be 'Hälfte'."
+    },
+    {
+      "id": "v-a2-money-016",
+      "norsk": "halvpart (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'pagó' required."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-038",
+      "norsk": "heldig",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'glucklich' inconsistent; should use 'glücklich' consistently with umlaut."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-038",
+      "norsk": "heldig",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Diverges from source; 'Du hast wirklich Glück' shifts meaning slightly."
+    },
+    {
+      "id": "v-a2-communication-047",
+      "norsk": "heldigvis",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'autobús' and 'llegó' required."
+    },
+    {
+      "id": "v-a2-time-034",
+      "norsk": "helg (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'montaña' required."
+    },
+    {
+      "id": "v-a2-occupations-043",
+      "norsk": "heltid (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'Buro' missing umlaut; must be 'Büro'."
+    },
+    {
+      "id": "v-a2-occupations-043",
+      "norsk": "heltid (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Él' required as subject pronoun."
+    },
+    {
+      "id": "v-a2-directions-035",
+      "norsk": "her",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'siéntate' required."
+    },
+    {
+      "id": "v-a2-clothing-011",
+      "norsk": "herreklær (pl.)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent on 'está': should be 'está en oferta'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-040",
+      "norsk": "hyggelig",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'schön' used instead of 'nett/gemütlich'; inconsistent with listed translations"
+    },
+    {
+      "id": "v-a2-hobbies-025",
+      "norsk": "hyttetur (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Should use proper umlaut: 'Hüttenausflug'"
+    },
+    {
+      "id": "v-a2-hobbies-025",
+      "norsk": "hyttetur (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Should use proper umlauts: 'Hüttenausflug', 'nächstes'"
+    },
+    {
+      "id": "v-a2-hobbies-025",
+      "norsk": "hyttetur (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent marks: 'excursión a la cabaña'"
+    },
+    {
+      "id": "v-a2-hobbies-025",
+      "norsk": "hyttetur (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'excursión', 'cabaña', 'montaña'"
+    },
+    {
+      "id": "v-a2-social-life-057",
+      "norsk": "høytid (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Feiertag' means public holiday; 'Fest/Feiertag' or 'Festzeit' better for høytid"
+    },
+    {
+      "id": "v-a2-body-025",
+      "norsk": "hånd (en/ei)",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "Misspellings: 'handen' should be 'hånden', 'sporsmaalet' should be 'spørsmålet'"
+    },
+    {
+      "id": "v-a2-sports-026",
+      "norsk": "håndball (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "Missing umlaut: 'Mädchen' not 'Maedchen' (encoding issue)"
+    },
+    {
+      "id": "v-a2-communication-050",
+      "norsk": "å håpe",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "Misspellings: 'haper' should be 'håper', 'vaeret' should be 'været'"
+    },
+    {
+      "id": "v-a2-communication-050",
+      "norsk": "å håpe",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "Missing umlaut: 'schön' not 'schoen' (encoding issue)"
+    },
+    {
+      "id": "v-a2-social-life-058",
+      "norsk": "jente (en)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'дівчина' usually means young woman/girlfriend; 'дівчинка' better for little girl"
+    },
+    {
+      "id": "v-a2-social-life-058",
+      "norsk": "jente (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "info",
+      "comment": "'дівчинка' used correctly in example, inconsistent with headword 'дівчина'"
+    },
+    {
+      "id": "v-a2-sports-027",
+      "norsk": "å jogge",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent on 'Él': should be 'Él corre'"
+    },
+    {
+      "id": "v-a2-occupations-044",
+      "norsk": "jordmor (en)",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "Misspelling: 'fodselen' should be 'fødselen'"
+    },
+    {
+      "id": "v-a2-occupations-044",
+      "norsk": "jordmor (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'ayudó' and 'ayudo' are different words"
+    },
+    {
+      "id": "v-a2-cooking-032",
+      "norsk": "kake (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'hornó' should be 'horneó'; also 'cumpleaños' missing tilde"
+    },
+    {
+      "id": "v-a2-social-life-061",
+      "norsk": "kamerat (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Jugó' missing accent mark; 'fútbol' missing accent mark"
+    },
+    {
+      "id": "v-a2-social-life-062",
+      "norsk": "kone (en/ei)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'в день їхнього весілля' means wedding day, not anniversary; slight mismatch with English"
+    },
+    {
+      "id": "v-a2-social-life-063",
+      "norsk": "å kose seg",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Spas' should be 'Spaß'; missing ß character"
+    },
+    {
+      "id": "v-a2-occupations-045",
+      "norsk": "kvalifisert",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'"
+    },
+    {
+      "id": "v-a2-occupations-045",
+      "norsk": "kvalifisert",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'kvalifisert' is more naturally B1/B2 than A2"
+    },
+    {
+      "id": "v-a2-time-036",
+      "norsk": "kveld (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'fruhabends' is non-standard; use 'früh am Abend' or 'frühabends'"
+    },
+    {
+      "id": "v-a2-time-036",
+      "norsk": "kveld (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'frühabends' not 'fruhabends'"
+    },
+    {
+      "id": "v-a2-shopping-033",
+      "norsk": "kvittering (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'zurückgeben' not 'zuruckgeben'"
+    },
+    {
+      "id": "v-a2-clothing-013",
+      "norsk": "kåpe (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'colgó' not 'colgo'"
+    },
+    {
+      "id": "v-a2-shopping-034",
+      "norsk": "lager (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'está' not 'esta'; 'en stock' is a loanword, 'disponible' more natural"
+    },
+    {
+      "id": "v-a2-cooking-034",
+      "norsk": "laks (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'Friei' is not a Spanish word; should be 'Freí' (past tense of 'freír')"
+    },
+    {
+      "id": "v-a2-cooking-034",
+      "norsk": "laks (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'salmón', 'limón'"
+    },
+    {
+      "id": "v-a2-directions-036",
+      "norsk": "langt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Es lejos de' is unnatural; prefer 'Está lejos de Oslo a Bergen en coche'"
+    },
+    {
+      "id": "v-a2-transport-013",
+      "norsk": "lastebil (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'größer' is comparative form; should be 'großer' (large)"
+    },
+    {
+      "id": "v-a2-occupations-046",
+      "norsk": "ledelse (en)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'ledelse' is more naturally B1 level, not A2"
+    },
+    {
+      "id": "v-a2-health-040",
+      "norsk": "legevakt (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Notaufnahme' is hospital A&E; 'legevakt' is out-of-hours GP clinic, not full emergency room"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-044",
+      "norsk": "lei",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "warning",
+      "comment": "Missing accent on 'vintervaret'; should be 'vintervêret' or 'vintervær'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-044",
+      "norsk": "lei",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'überdrüssig' missing proper umlaut; written as 'uberdrussig'"
+    },
+    {
+      "id": "v-a2-cooking-035",
+      "norsk": "lekker",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "'Very delicious' is redundant; prefer 'That soup is delicious!'"
+    },
+    {
+      "id": "v-a2-communication-053",
+      "norsk": "lekse (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'lección' not 'leccion'"
+    },
+    {
+      "id": "v-a2-communication-053",
+      "norsk": "lekse (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'Olvidé', 'tarea'"
+    },
+    {
+      "id": "v-a2-time-038",
+      "norsk": "lenge",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent on 'autobús'"
+    },
+    {
+      "id": "v-a2-social-life-067",
+      "norsk": "å lengte",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "error",
+      "comment": "'anorarse' is not a word; should be 'añorarse' or 'echar de menos'"
+    },
+    {
+      "id": "v-a2-social-life-067",
+      "norsk": "å lengte",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'está', 'anhela a' slightly unnatural; prefer 'echa de menos'"
+    },
+    {
+      "id": "v-a2-social-life-068",
+      "norsk": "å leve",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'época'"
+    },
+    {
+      "id": "v-a2-cooking-036",
+      "norsk": "leverpostei (en)",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "error",
+      "comment": "'broed' is a typo; should be 'brød'"
+    },
+    {
+      "id": "v-a2-social-life-069",
+      "norsk": "liv (et)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'щасливе' (happy) added; Norwegian source says 'godt', not specifically 'щасливе'"
+    },
+    {
+      "id": "v-a2-communication-054",
+      "norsk": "å love",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Él prometió'"
+    },
+    {
+      "id": "v-a2-weather-018",
+      "norsk": "å lyne",
+      "level": "A2",
+      "field": "english",
+      "severity": "error",
+      "comment": "'to lightning' is not standard English; use 'to thunder and lightning' or 'there is lightning'"
+    },
+    {
+      "id": "v-a2-weather-018",
+      "norsk": "å lyne",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "error",
+      "comment": "'lightninged' is not a valid English verb form; rephrase entirely"
+    },
+    {
+      "id": "v-a2-weather-018",
+      "norsk": "å lyne",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'Relampagueó', 'tronó'"
+    },
+    {
+      "id": "v-a2-clothing-015",
+      "norsk": "lære (en/ei)",
+      "level": "A2",
+      "field": "norsk",
+      "severity": "error",
+      "comment": "'lære' is wrong headword; Norwegian for leather is 'lær (et)', not 'lære'"
+    },
+    {
+      "id": "v-a2-money-019",
+      "norsk": "lønn (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'höheres' and 'befördert' needed."
+    },
+    {
+      "id": "v-a2-social-life-072",
+      "norsk": "mamma (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'Abendessen' is dinner/supper; 'middag' maps better to 'Mittagessen'."
+    },
+    {
+      "id": "v-a2-communication-056",
+      "norsk": "man",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'bor' should be 'bør' — different word entirely."
+    },
+    {
+      "id": "v-a2-communication-057",
+      "norsk": "å mase",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'insistió a' is unnatural; prefer 'insistió ante sus padres' or 'presionó'."
+    },
+    {
+      "id": "v-a2-cooking-039",
+      "norsk": "matpakke (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'almuerzo preparado' translation lost; example says just 'el almuerzo', not packed lunch."
+    },
+    {
+      "id": "v-a2-communication-059",
+      "norsk": "melding (en/ei)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'на телефон' should be 'на телефоні' (locative, not accusative)."
+    },
+    {
+      "id": "v-a2-communication-060",
+      "norsk": "men",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'würde' not 'wurde' (past tense vs. conditional)."
+    },
+    {
+      "id": "v-a2-communication-061",
+      "norsk": "å mene",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'Was meinst du über' is unnatural; prefer 'Was denkst du über' or 'Was hältst du von'."
+    },
+    {
+      "id": "v-a2-communication-062",
+      "norsk": "mens",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'während, während' is a duplicate; second sense should be 'wohingegen'."
+    },
+    {
+      "id": "v-a2-health-041",
+      "norsk": "mentalt",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'Mentalt' is abstract vocabulary; B1 is more appropriate than A2."
+    },
+    {
+      "id": "v-a2-cooking-041",
+      "norsk": "middag (en)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'lunch' listed first but Norwegian 'middag' primarily means dinner/main evening meal"
+    },
+    {
+      "id": "v-a2-cooking-041",
+      "norsk": "middag (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Order misleading; 'middag' at 6pm is 'Abendessen', not primarily 'Mittagessen'"
+    },
+    {
+      "id": "v-a2-time-040",
+      "norsk": "midnatt (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'duró' required, not 'duro'"
+    },
+    {
+      "id": "v-a2-nature-033",
+      "norsk": "midnattssol (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'espectáculo' and 'fantástico' required"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-047",
+      "norsk": "moderne",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "warning",
+      "comment": "Missing Norwegian special character: 'kjøkken', not 'kjokken'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-047",
+      "norsk": "moderne",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Küche', not 'Kuche'"
+    },
+    {
+      "id": "v-a2-communication-063",
+      "norsk": "muntlig",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'mündlich, mündlich' is a duplicate; should be 'mündlich, verbal'"
+    },
+    {
+      "id": "v-a2-communication-063",
+      "norsk": "muntlig",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlauts: 'mündliche Prüfung', not 'mundliche Prufung'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-048",
+      "norsk": "mye",
+      "level": "A2",
+      "field": "part",
+      "severity": "warning",
+      "comment": "'mye' is an adverb/determiner, not typically classified as adjective"
+    },
+    {
+      "id": "v-a2-house-chores-035",
+      "norsk": "møbel (et)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "warning",
+      "comment": "Missing Norwegian special character: 'kjøpte', not 'kjopte'"
+    },
+    {
+      "id": "v-a2-house-chores-035",
+      "norsk": "møbel (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Möbel', not 'Mobel'"
+    },
+    {
+      "id": "v-a2-house-chores-035",
+      "norsk": "møbel (et)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Möbel', not 'Mobel'"
+    },
+    {
+      "id": "v-a2-time-042",
+      "norsk": "natt (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'Dormí', not 'Dormi'"
+    },
+    {
+      "id": "v-a2-technology-021",
+      "norsk": "nett (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'Encontré', not 'Encontre'"
+    },
+    {
+      "id": "v-a2-nature-034",
+      "norsk": "nordlys (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'increíble' and 'montaña' require diacritics"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-050",
+      "norsk": "normal",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "warning",
+      "comment": "Missing Norwegian special character: 'nervøs', not 'nervos'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-050",
+      "norsk": "normal",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlauts: 'völlig normal', 'Prüfung', 'nervös'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-051",
+      "norsk": "norsk",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Missing accent: 'Él come', not 'El come'"
+    },
+    {
+      "id": "v-a2-communication-065",
+      "norsk": "norskkurs (et)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "Typo: 'lare' should be 'lære'"
+    },
+    {
+      "id": "v-a2-communication-065",
+      "norsk": "norskkurs (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'apunto' should be 'apuntó'; 'mas' should be 'más'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-052",
+      "norsk": "nydelig",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'wunderschon' should be 'wunderschön'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-052",
+      "norsk": "nydelig",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'wunderschon' should be 'wunderschön'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-053",
+      "norsk": "nøyaktig",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'prazise' should be 'präzise'"
+    },
+    {
+      "id": "v-a2-transport-015",
+      "norsk": "offentlig",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlauts: 'offentlich' should be 'öffentlich'; 'gunstiger' should be 'günstiger'"
+    },
+    {
+      "id": "v-a2-transport-015",
+      "norsk": "offentlig",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'offentliche' should be 'öffentliche'"
+    },
+    {
+      "id": "v-a2-communication-066",
+      "norsk": "også",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'te' should be 'té'"
+    },
+    {
+      "id": "v-a2-cooking-042",
+      "norsk": "oliven (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'zusatzlichen' should be 'zusätzlichen'"
+    },
+    {
+      "id": "v-a2-cooking-043",
+      "norsk": "olivenolje (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Olivenol' should be 'Olivenöl'"
+    },
+    {
+      "id": "v-a2-cooking-043",
+      "norsk": "olivenolje (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Olivenol' should be 'Olivenöl'"
+    },
+    {
+      "id": "v-a2-cooking-043",
+      "norsk": "olivenolje (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Sofrie' should be 'Sofríe' or more naturally 'Sofría/Sofría'"
+    },
+    {
+      "id": "v-a2-directions-039",
+      "norsk": "omkring",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'ungefahr' should be 'ungefähr'"
+    },
+    {
+      "id": "v-a2-directions-039",
+      "norsk": "omkring",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'ungefahr' should be 'ungefähr'"
+    },
+    {
+      "id": "v-a2-time-044",
+      "norsk": "omtrent",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'ungefahr' should be 'ungefähr'"
+    },
+    {
+      "id": "v-a2-time-044",
+      "norsk": "omtrent",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'ungefahr' should be 'ungefähr'"
+    },
+    {
+      "id": "v-a2-health-042",
+      "norsk": "å operere",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'å operere' and surgical context feel more B1 than A2"
+    },
+    {
+      "id": "v-a2-social-life-075",
+      "norsk": "opplevelse (en)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "Comma instead of slash inconsistent with other entries' formatting"
+    },
+    {
+      "id": "v-a2-communication-068",
+      "norsk": "opplysning (en/ei)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'відомість' is overly formal/archaic; 'відомості' (pl.) is more natural here"
+    },
+    {
+      "id": "v-a2-occupations-050",
+      "norsk": "opplæring (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'grundliche' should be 'gründliche'"
+    },
+    {
+      "id": "v-a2-occupations-050",
+      "norsk": "opplæring (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'grundliche' should be 'gründliche'"
+    },
+    {
+      "id": "v-a2-directions-041",
+      "norsk": "oppover",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'aufwarts' should be 'aufwärts'; 'Hugel' should be 'Hügel'"
+    },
+    {
+      "id": "v-a2-directions-041",
+      "norsk": "oppover",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Hugel' should be 'Hügel'"
+    },
+    {
+      "id": "v-a2-house-chores-036",
+      "norsk": "oppvaskmaskin (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Geschirrspüler'"
+    },
+    {
+      "id": "v-a2-house-chores-036",
+      "norsk": "oppvaskmaskin (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlauts: 'Geschirrspüler' and 'auszuräumen'"
+    },
+    {
+      "id": "v-a2-directions-042",
+      "norsk": "over",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Häuser'"
+    },
+    {
+      "id": "v-a2-transport-016",
+      "norsk": "å overnatte",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'übernachten'"
+    },
+    {
+      "id": "v-a2-transport-016",
+      "norsk": "å overnatte",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'übernachten'"
+    },
+    {
+      "id": "v-a2-occupations-051",
+      "norsk": "overtid (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Überstunden'"
+    },
+    {
+      "id": "v-a2-occupations-051",
+      "norsk": "overtid (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Überstunden'"
+    },
+    {
+      "id": "v-a2-occupations-051",
+      "norsk": "overtid (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'El trabajo' should be 'Él trabajó' (wrong verb form/subject)"
+    },
+    {
+      "id": "v-a2-social-life-076",
+      "norsk": "pappa (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'El papa' ambiguous; 'papá' (with accent) needed to mean 'dad'"
+    },
+    {
+      "id": "v-a2-transport-018",
+      "norsk": "parkering (en/ei)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Missing question mark punctuation at sentence start convention; acceptable but informal word order"
+    },
+    {
+      "id": "v-a2-money-020",
+      "norsk": "parkeringsbot (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Parkstrafe' is less common; 'Parkgeldbuße' or 'Knöllchen' more natural"
+    },
+    {
+      "id": "v-a2-occupations-053",
+      "norsk": "parkeringsvakt (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'Parkuberwachers' has typo/missing umlaut; should be 'Parküberwacher'"
+    },
+    {
+      "id": "v-a2-occupations-053",
+      "norsk": "parkeringsvakt (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Parküberwacher'"
+    },
+    {
+      "id": "v-a2-social-life-078",
+      "norsk": "passe",
+      "level": "A2",
+      "field": "part",
+      "severity": "error",
+      "comment": "'passe' listed as adjective but example and translations show it as a verb"
+    },
+    {
+      "id": "v-a2-social-life-079",
+      "norsk": "å passe",
+      "level": "A2",
+      "field": "example_norsk",
+      "severity": "info",
+      "comment": "Example only illustrates 'look after'; 'suit/fit' meanings not demonstrated"
+    },
+    {
+      "id": "v-a2-technology-022",
+      "norsk": "pc (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'Computadora' is Latin American; Spain uses 'ordenador'; consider adding both"
+    },
+    {
+      "id": "v-a2-occupations-054",
+      "norsk": "pensjonist (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: should be 'Pensionär'"
+    },
+    {
+      "id": "v-a2-directions-043",
+      "norsk": "plass (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'autobús' not 'autobus'"
+    },
+    {
+      "id": "v-a2-directions-044",
+      "norsk": "plassering (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'ubicación', 'posición', 'colocación'"
+    },
+    {
+      "id": "v-a2-directions-044",
+      "norsk": "plassering (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'ubicación' not 'ubicacion'"
+    },
+    {
+      "id": "v-a2-directions-044",
+      "norsk": "plassering (en/ei)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'plassering' is more naturally B1; complex concept for A2"
+    },
+    {
+      "id": "v-a2-nature-035",
+      "norsk": "å plukke",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'pflücken' not 'pflucken'"
+    },
+    {
+      "id": "v-a2-nature-035",
+      "norsk": "å plukke",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'pflückten' not 'pfluckten'"
+    },
+    {
+      "id": "v-a2-nature-035",
+      "norsk": "å plukke",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'arándanos' not 'arandanos'"
+    },
+    {
+      "id": "v-a2-occupations-055",
+      "norsk": "politi (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'robo' means robbery/theft; 'allanamiento' better matches 'innbrudd'"
+    },
+    {
+      "id": "v-a2-occupations-055",
+      "norsk": "politi (et)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'пограбування' means robbery; 'зламування' better matches 'innbrudd'"
+    },
+    {
+      "id": "v-a2-occupations-056",
+      "norsk": "praksis (en)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'placement' is better primary translation; 'practice' is also valid"
+    },
+    {
+      "id": "v-a2-communication-070",
+      "norsk": "prat (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "error",
+      "comment": "Typo: 'мили' should be 'мали' (we had)"
+    },
+    {
+      "id": "v-a2-social-life-081",
+      "norsk": "presang (en)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "Unnatural phrasing; prefer 'I bought my friend a gift for his birthday'"
+    },
+    {
+      "id": "v-a2-social-life-081",
+      "norsk": "presang (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'compré', 'cumpleaños'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-061",
+      "norsk": "presis",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'pünktlich' not 'punktlich'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-061",
+      "norsk": "presis",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'pünktlich' not 'punktlich'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-061",
+      "norsk": "presis",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Él' not 'El' (subject pronoun)"
+    },
+    {
+      "id": "v-a2-cooking-046",
+      "norsk": "presskanne (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'émbolo' not 'embolo'"
+    },
+    {
+      "id": "v-a2-cooking-046",
+      "norsk": "presskanne (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'émbolo' not 'embolo'"
+    },
+    {
+      "id": "v-a2-communication-072",
+      "norsk": "problem (et)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'перш ніж ми могли' unnatural; prefer 'перш ніж продовжити'"
+    },
+    {
+      "id": "v-a2-technology-023",
+      "norsk": "program (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'descargué' not 'descargue'"
+    },
+    {
+      "id": "v-a2-money-021",
+      "norsk": "prosent (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Geschäft' not 'Geschaft'"
+    },
+    {
+      "id": "v-a2-health-043",
+      "norsk": "psykisk",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'körperliche' not 'korperliche'"
+    },
+    {
+      "id": "v-a2-health-043",
+      "norsk": "psykisk",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'psicológico' not 'psicologico'"
+    },
+    {
+      "id": "v-a2-house-chores-038",
+      "norsk": "å pusse",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Zähne' not 'Zahne'"
+    },
+    {
+      "id": "v-a2-cooking-048",
+      "norsk": "pålegg (et)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'Pålegg' includes spreads/cheese/jam; 'embutido/fiambre' too narrow."
+    },
+    {
+      "id": "v-a2-cooking-048",
+      "norsk": "pålegg (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: '¿Qué tipo' not 'Que tipo'"
+    },
+    {
+      "id": "v-a2-social-life-082",
+      "norsk": "påske (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'montaña' not 'montana'"
+    },
+    {
+      "id": "v-a2-communication-073",
+      "norsk": "regjering (en/ei)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'Regjering/government' is typically B1 vocabulary, not A2."
+    },
+    {
+      "id": "v-a2-occupations-057",
+      "norsk": "reklamebyrå (et)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'Reklamebyrå' is arguably B1; complex compound unlikely at A2."
+    },
+    {
+      "id": "v-a2-house-chores-040",
+      "norsk": "renhold (et)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'Sanitation' is not a natural translation; 'cleanliness' fits better."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-063",
+      "norsk": "rett",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "Garbled text: 'Mantен' is a character encoding error; should be 'Mantén'"
+    },
+    {
+      "id": "v-a2-cooking-049",
+      "norsk": "matrett (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "error",
+      "comment": "Mixed scripts in word 'Фаріkal'; should be fully in Cyrillic: 'Фарікол'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-064",
+      "norsk": "riktig",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'Du gå' is incorrect; should be 'Du gav' or 'Du fikk'"
+    },
+    {
+      "id": "v-a2-communication-074",
+      "norsk": "å rope",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'El llamo' missing accent; must be 'Él llamó'"
+    },
+    {
+      "id": "v-a2-social-life-083",
+      "norsk": "ros (en)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'gå' is incorrect; should be 'ga' (past tense of 'gi')"
+    },
+    {
+      "id": "v-a2-social-life-083",
+      "norsk": "ros (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'Schuler' missing umlaut; should be 'Schüler'"
+    },
+    {
+      "id": "v-a2-social-life-083",
+      "norsk": "ros (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'elogio' missing accent; should be 'elogió'"
+    },
+    {
+      "id": "v-a2-occupations-062",
+      "norsk": "rørlegger (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "error",
+      "comment": "'була витік' is ungrammatical; should be 'був витік'"
+    },
+    {
+      "id": "v-a2-occupations-063",
+      "norsk": "rådgiver (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'grossen' missing umlaut; should be 'großen' or 'grossen' in Swiss German"
+    },
+    {
+      "id": "v-a2-cooking-051",
+      "norsk": "saft (en/ei)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "Norwegian 'saft' is typically cordial/squash, not pure juice ('juice')"
+    },
+    {
+      "id": "v-a2-cooking-051",
+      "norsk": "saft (en/ei)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "'juice' may be inaccurate; 'saft' is usually diluted squash/cordial"
+    },
+    {
+      "id": "v-a2-shopping-038",
+      "norsk": "salg (et)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Verkauf' is generic; 'Ausverkauf/Sale' better matches the promotional sense"
+    },
+    {
+      "id": "v-a2-social-life-084",
+      "norsk": "samlingsstund (en/ei)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'gathering time' is uncommon; 'circle time' or 'morning assembly' is more natural"
+    },
+    {
+      "id": "v-a2-social-life-084",
+      "norsk": "samlingsstund (en/ei)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "'gathering time' sounds unnatural; prefer 'circle time'"
+    },
+    {
+      "id": "v-a2-social-life-084",
+      "norsk": "samlingsstund (en/ei)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Versammlungszeit' unnatural; 'Morgenkreis' or 'Stuhlkreis' is standard"
+    },
+    {
+      "id": "v-a2-social-life-084",
+      "norsk": "samlingsstund (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'Versammlungszeit' unnatural in kindergarten context; use 'Morgenkreis'"
+    },
+    {
+      "id": "v-a2-social-life-084",
+      "norsk": "samlingsstund (en/ei)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'час зібрання' is literal; 'ранкове коло' is more natural in kindergarten context"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-065",
+      "norsk": "sann",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'правдивий' means 'truthful/honest'; 'правда/істинний' better matches 'true'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-065",
+      "norsk": "sann",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'Чи правда' is good but inconsistent with adjective form 'правдивий' given"
+    },
+    {
+      "id": "v-a2-shopping-039",
+      "norsk": "sekk (en)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'backpack' is a stretch; 'sekk' primarily means bag/sack, 'ryggsekk' is backpack"
+    },
+    {
+      "id": "v-a2-house-chores-042",
+      "norsk": "sengetøy (et)",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "Misspelled: 'Bettwassche' should be 'Bettwäsche'"
+    },
+    {
+      "id": "v-a2-house-chores-042",
+      "norsk": "sengetøy (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Misspelled: 'Bettwassche' should be 'Bettwäsche'"
+    },
+    {
+      "id": "v-a2-directions-047",
+      "norsk": "sentrum (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Geschaft' should be 'Geschäft'"
+    },
+    {
+      "id": "v-a2-directions-047",
+      "norsk": "sentrum (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'esta' should be 'está'"
+    },
+    {
+      "id": "v-a2-occupations-064",
+      "norsk": "servitør (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Lacheln' should be 'Lächeln'"
+    },
+    {
+      "id": "v-a2-occupations-064",
+      "norsk": "servitør (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'tomo' should be 'tomó'"
+    },
+    {
+      "id": "v-a2-communication-076",
+      "norsk": "setning (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'oracion' should be 'oración'"
+    },
+    {
+      "id": "v-a2-communication-076",
+      "norsk": "setning (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'oracion' → 'oración', 'escribio' → 'escribió'"
+    },
+    {
+      "id": "v-a2-house-chores-043",
+      "norsk": "å sette",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'stellen' is more accurate than 'setzen' for placing objects on surfaces"
+    },
+    {
+      "id": "v-a2-house-chores-043",
+      "norsk": "å sette",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Glaser' should be 'Gläser'"
+    },
+    {
+      "id": "v-a2-communication-077",
+      "norsk": "å si",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'Que' should be '¿Qué'"
+    },
+    {
+      "id": "v-a2-directions-048",
+      "norsk": "side (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Offne' should be 'Öffne'"
+    },
+    {
+      "id": "v-a2-directions-048",
+      "norsk": "side (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'pagina' should be 'página'"
+    },
+    {
+      "id": "v-a2-cooking-055",
+      "norsk": "sitron (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'limon' → 'limón', 'mas' → 'más'"
+    },
+    {
+      "id": "v-a2-communication-078",
+      "norsk": "å skulle",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Redundant phrasing: 'Se suponia que debia' is awkward; use one construction"
+    },
+    {
+      "id": "v-a2-communication-078",
+      "norsk": "å skulle",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'suponia' → 'suponía', 'debia' → 'debía', 'el' → 'él'"
+    },
+    {
+      "id": "v-a2-clothing-018",
+      "norsk": "skaut (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'panuelo' should be 'pañuelo'"
+    },
+    {
+      "id": "v-a2-clothing-018",
+      "norsk": "skaut (et)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing tilde: 'panuelo' should be 'pañuelo'"
+    },
+    {
+      "id": "v-a2-sports-030",
+      "norsk": "ski (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'esquis' should be 'esquís', 'bajo' → 'bajó'"
+    },
+    {
+      "id": "v-a2-social-life-087",
+      "norsk": "skilt",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "'got divorced' fits better as 'were divorced' given adjective context"
+    },
+    {
+      "id": "v-a2-social-life-087",
+      "norsk": "skilt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'tenia' should be 'tenía'"
+    },
+    {
+      "id": "v-a2-transport-019",
+      "norsk": "skip (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'llego' should be 'llegó'"
+    },
+    {
+      "id": "v-a2-communication-079",
+      "norsk": "å skje",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'pasó' not 'paso'; also needs '¿' opening mark"
+    },
+    {
+      "id": "v-a2-clothing-019",
+      "norsk": "skjorte (en/ei)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Vorstellungsgespräch' not 'Vorstellungsgesprach'"
+    },
+    {
+      "id": "v-a2-clothing-019",
+      "norsk": "skjorte (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Llevo' implies present tense; 'llevó' (preterite) matches the Norwegian context"
+    },
+    {
+      "id": "v-a2-communication-080",
+      "norsk": "å skjønne",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'qué' not 'que' in indirect question"
+    },
+    {
+      "id": "v-a2-time-047",
+      "norsk": "skoletime (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'Clase escolar' is redundant/unnatural; 'clase' alone is more natural"
+    },
+    {
+      "id": "v-a2-time-047",
+      "norsk": "skoletime (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Clase escolar' unnatural; prefer 'La primera clase empieza a las ocho'"
+    },
+    {
+      "id": "v-a2-body-028",
+      "norsk": "skulder (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'después' not 'despues'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-069",
+      "norsk": "sliten",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'después' not 'despues'"
+    },
+    {
+      "id": "v-a2-clothing-021",
+      "norsk": "smykke (et)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'Jewellery piece' is unnatural; 'piece of jewellery' or 'jewel' preferred"
+    },
+    {
+      "id": "v-a2-clothing-021",
+      "norsk": "smykke (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlauts: 'schönes Schmuckstück' not 'schones Schmuckstuck'"
+    },
+    {
+      "id": "v-a2-clothing-021",
+      "norsk": "smykke (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'Recibió', 'joya', 'cumpleaños'"
+    },
+    {
+      "id": "v-a2-weather-020",
+      "norsk": "solskinn (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "'Sol' omits 'luz del'; inconsistent with Spanish headword 'luz del sol'"
+    },
+    {
+      "id": "v-a2-communication-082",
+      "norsk": "som",
+      "level": "A2",
+      "field": "part",
+      "severity": "warning",
+      "comment": "'som' functions as a relative pronoun/conjunction, not a standalone pronoun class"
+    },
+    {
+      "id": "v-a2-health-045",
+      "norsk": "sovemedisin (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'somnífero' not 'somnifero'"
+    },
+    {
+      "id": "v-a2-health-045",
+      "norsk": "sovemedisin (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'recomendó', 'somníferos', 'solución'"
+    },
+    {
+      "id": "v-a2-health-045",
+      "norsk": "sovemedisin (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "Missing umlaut: 'Lösung' not 'Losung'"
+    },
+    {
+      "id": "v-a2-communication-083",
+      "norsk": "spansk",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'Aprendió', 'España'"
+    },
+    {
+      "id": "v-a2-sports-031",
+      "norsk": "å sparke",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'schoss ins Tor' means shot/scored, not specifically 'kicked'; inconsistent with 'treten/kicken'"
+    },
+    {
+      "id": "v-a2-sports-031",
+      "norsk": "å sparke",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'pateó' not 'pateo'"
+    },
+    {
+      "id": "v-a2-money-022",
+      "norsk": "å spleise",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Compartir gastos' means split costs generally; 'poner dinero entre todos' better matches 'chip in'"
+    },
+    {
+      "id": "v-a2-shopping-041",
+      "norsk": "sportsbutikk (en)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "Typos: 'kjopte'→'kjøpte', 'lopeskoa'→'løpeskoa', 'kjopesenterert'→'kjøpesenteret'"
+    },
+    {
+      "id": "v-a2-communication-085",
+      "norsk": "språkpraksis (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Back-translation differs: 'practicar mejor' omits 'language practice' concept slightly"
+    },
+    {
+      "id": "v-a2-occupations-066",
+      "norsk": "språkpraktikant (en)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'мовний стажист' is masculine; sentence uses feminine subject (вона)"
+    },
+    {
+      "id": "v-a2-occupations-066",
+      "norsk": "språkpraktikant (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Should use feminine form 'мовною стажисткою' to match feminine subject"
+    },
+    {
+      "id": "v-a2-time-048",
+      "norsk": "å starte",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "'beginnt' used instead of 'startet'; minor but inconsistent with headword 'starten'"
+    },
+    {
+      "id": "v-a2-communication-086",
+      "norsk": "å stave",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'вимовляти по літерах' is unnatural; standard term is 'диктувати по літерах' or 'вимовляти/називати літери'"
+    },
+    {
+      "id": "v-a2-communication-086",
+      "norsk": "å stave",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'продиктувати' shifts meaning; 'назвати по літерах' is more natural for spelling"
+    },
+    {
+      "id": "v-a2-cooking-057",
+      "norsk": "stekepanne (en/ei)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "Typos: 'for'→'før', 'gronnsakene'→'grønnsakene'"
+    },
+    {
+      "id": "v-a2-clothing-023",
+      "norsk": "strømpebukse (en/ei)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'medias' typically means stockings/socks; 'pantis' or 'medias pantalón' is more accurate for tights"
+    },
+    {
+      "id": "v-a2-occupations-068",
+      "norsk": "styrer (en)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'manager' is generic; 'head' or 'director' is more natural for kindergarten leader"
+    },
+    {
+      "id": "v-a2-occupations-068",
+      "norsk": "styrer (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "Uses feminine 'Leiterin' while Norwegian example uses neutral 'Styreren'; minor inconsistency"
+    },
+    {
+      "id": "v-a2-occupations-068",
+      "norsk": "styrer (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "info",
+      "comment": "Uses feminine 'La directora' while Norwegian example is gender-neutral; minor inconsistency"
+    },
+    {
+      "id": "v-a2-clothing-024",
+      "norsk": "støvletter (pl.)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'черевики' is generic for boots/shoes; 'ботильйони' is the precise term for ankle boots"
+    },
+    {
+      "id": "v-a2-clothing-024",
+      "norsk": "støvletter (pl.)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'черевики' loses the specific ankle-boot meaning; consider 'ботильйони'"
+    },
+    {
+      "id": "v-a2-social-life-090",
+      "norsk": "svigerforeldre (pl.)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "Listing both pairs is awkward; 'батьки чоловіка/дружини' or 'свекри/тесті' more natural"
+    },
+    {
+      "id": "v-a2-social-life-090",
+      "norsk": "svigerforeldre (pl.)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "Mixes register; 'свекра і свекруху' implies only husband's parents, not neutral"
+    },
+    {
+      "id": "v-a2-health-047",
+      "norsk": "sykmelding (en/ei)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'Legen gå ham' is a typo; should be 'ga ham' (gave him)"
+    },
+    {
+      "id": "v-a2-occupations-069",
+      "norsk": "sykmeldt",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'vaert' is missing the Norwegian special character; should be 'vært'"
+    },
+    {
+      "id": "v-a2-occupations-069",
+      "norsk": "sykmeldt",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'operacion' missing accent; should be 'operación'"
+    },
+    {
+      "id": "v-a2-cooking-059",
+      "norsk": "syltetøy (et)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'smorer' missing special character; should be 'smører'"
+    },
+    {
+      "id": "v-a2-communication-087",
+      "norsk": "å synes",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'arlig' missing special character; should be 'ærlig'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-072",
+      "norsk": "særlig",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'sarlig' missing special character; should be 'særlig'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-072",
+      "norsk": "særlig",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'queso marron' missing accent; should be 'marrón'"
+    },
+    {
+      "id": "v-a2-communication-088",
+      "norsk": "så",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'quede' missing accent; should be 'quedé'"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-074",
+      "norsk": "sånn",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'habia' missing accent; should be 'había'"
+    },
+    {
+      "id": "v-a2-communication-089",
+      "norsk": "tanke (en)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'for' should be 'før' (before); wrong word used"
+    },
+    {
+      "id": "v-a2-communication-089",
+      "norsk": "tanke (en)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "Paraphrases loosely; 'I had not thought of that thought before' more literal"
+    },
+    {
+      "id": "v-a2-communication-089",
+      "norsk": "tanke (en)",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'не думав про цю думку' is redundant/unnatural; better 'не спадала мені на думку'"
+    },
+    {
+      "id": "v-a2-body-029",
+      "norsk": "tann (en/ei)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "In dental context, 'dentist' more natural than 'doctor'; example says 'doctor'"
+    },
+    {
+      "id": "v-a2-body-029",
+      "norsk": "tann (en/ei)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "info",
+      "comment": "'Doctor' used; in Norwegian dental context 'tannlege' would be expected, not 'lege'"
+    },
+    {
+      "id": "v-a2-occupations-071",
+      "norsk": "taushetsplikt (en/ei)",
+      "level": "A2",
+      "field": "level",
+      "severity": "warning",
+      "comment": "'taushetsplikt' is a complex legal/professional term; B1-B2 more appropriate than A2"
+    },
+    {
+      "id": "v-a2-communication-090",
+      "norsk": "tavle (en/ei)",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'Lareren' missing special character; should be 'Læreren'"
+    },
+    {
+      "id": "v-a2-time-050",
+      "norsk": "tidlig",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "'fruher' should be 'früher'; also comparative, not base adjective"
+    },
+    {
+      "id": "v-a2-directions-051",
+      "norsk": "tilbake",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'назад повернутися' is redundant/unnatural; just 'назад' suffices"
+    },
+    {
+      "id": "v-a2-directions-051",
+      "norsk": "tilbake",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'regreso' missing accent: 'regresó'"
+    },
+    {
+      "id": "v-a2-money-023",
+      "norsk": "å tjene",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'El' missing accent; should be 'Él'"
+    },
+    {
+      "id": "v-a2-weather-021",
+      "norsk": "å tordne",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'Draussen' missing umlaut; should be 'Draußen'"
+    },
+    {
+      "id": "v-a2-weather-021",
+      "norsk": "å tordne",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'Esta' missing accent; should be 'Está'"
+    },
+    {
+      "id": "v-a2-weather-021",
+      "norsk": "å tordne",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'починається грім' is unnatural; better: 'починає гриміти'"
+    },
+    {
+      "id": "v-a2-transport-020",
+      "norsk": "trafikkregel (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'trafico' missing accent; should be 'tráfico' (both instances)"
+    },
+    {
+      "id": "v-a2-time-052",
+      "norsk": "travelt",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'viel zu tun habend' is unnatural as a dictionary headword form"
+    },
+    {
+      "id": "v-a2-time-053",
+      "norsk": "tredje",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'El llego' missing accents; should be 'Él llegó'"
+    },
+    {
+      "id": "v-a2-sports-033",
+      "norsk": "trening (en/ei)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'mieroles' is a misspelling; should be 'miércoles'"
+    },
+    {
+      "id": "v-a2-house-chores-047",
+      "norsk": "å trille",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "error",
+      "comment": "'El saco' missing accents; should be 'Él sacó'"
+    },
+    {
+      "id": "v-a2-occupations-072",
+      "norsk": "turnus (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Krankenschwester' is gender-specific; 'Pflegefachkraft' more neutral/modern"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-075",
+      "norsk": "type (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'Que' and 'mas' missing accents; should be '¿Qué … más?'"
+    },
+    {
+      "id": "v-a2-clothing-025",
+      "norsk": "tøy (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "info",
+      "comment": "'Wäsche' is more natural than 'Kleidung' for laundry context."
+    },
+    {
+      "id": "v-a2-directions-052",
+      "norsk": "under",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "warning",
+      "comment": "'цілий день' means 'all day'; should be 'цілий вечір/afternoon'."
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-077",
+      "norsk": "urolig",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'könnte' is wrong mood; should be 'konnte' (simple past)."
+    },
+    {
+      "id": "v-a2-directions-053",
+      "norsk": "ut",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'Назовні' is uncommon; 'назовні/надвір/геть' — 'надвір' is more natural."
+    },
+    {
+      "id": "v-a2-occupations-075",
+      "norsk": "utdannet",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'Trained' fits context but 'qualified' or 'educated' is closer to Norwegian 'utdannet'."
+    },
+    {
+      "id": "v-a2-directions-054",
+      "norsk": "utenfor",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'Поза' is rarely used; 'зовні/перед' or 'поза' — 'перед/зовні' more natural here."
+    },
+    {
+      "id": "v-a2-directions-054",
+      "norsk": "utenfor",
+      "level": "A2",
+      "field": "example_ukrainian",
+      "severity": "info",
+      "comment": "'Перед будівлею' implies 'in front of'; 'біля будівлі' is more neutral for 'outside'."
+    },
+    {
+      "id": "v-a2-social-life-095",
+      "norsk": "utenlandsk",
+      "level": "A2",
+      "field": "german",
+      "severity": "error",
+      "comment": "Missing umlaut; correct spelling is 'ausländisch'"
+    },
+    {
+      "id": "v-a2-social-life-095",
+      "norsk": "utenlandsk",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'auslandisches' and 'Lander' missing umlauts; should be 'ausländisches', 'Länder'"
+    },
+    {
+      "id": "v-a2-nature-040",
+      "norsk": "utsikt (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'über' is unnatural here; 'auf den Fjord' is more idiomatic"
+    },
+    {
+      "id": "v-a2-occupations-077",
+      "norsk": "vaktmester (en)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'двірник' means street sweeper/janitor; 'комендант' or 'завгосп' is more accurate"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-079",
+      "norsk": "vanlig",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "German example uses 'üblich' not 'gewöhnlich', inconsistent with translation field"
+    },
+    {
+      "id": "v-a2-weather-024",
+      "norsk": "varme (en)",
+      "level": "A2",
+      "field": "german",
+      "severity": "warning",
+      "comment": "'Hitze' (intense heat) used in example but 'Wärme' (warmth) given as translation; inconsistent"
+    },
+    {
+      "id": "v-a2-weather-024",
+      "norsk": "varme (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "warning",
+      "comment": "'Hitze' in example contradicts 'Wärme' in translation field"
+    },
+    {
+      "id": "v-a2-weather-025",
+      "norsk": "varmegrad (en)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'degree of heat' is not natural; 'degree above zero' or 'degree Celsius' is idiomatic"
+    },
+    {
+      "id": "v-a2-weather-025",
+      "norsk": "varmegrad (en)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "'twenty degrees of heat' is unnatural English"
+    },
+    {
+      "id": "v-a2-weather-025",
+      "norsk": "varmegrad (en)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'grado de calor' is unnatural; 'grado sobre cero' is more idiomatic in context"
+    },
+    {
+      "id": "v-a2-weather-025",
+      "norsk": "varmegrad (en)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "'veinte grados de calor' is unnatural Spanish"
+    },
+    {
+      "id": "v-a2-social-life-096",
+      "norsk": "venninne (en/ei)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'female friend' is technically correct but unnatural; 'friend' suffices in context"
+    },
+    {
+      "id": "v-a2-social-life-096",
+      "norsk": "venninne (en/ei)",
+      "level": "A2",
+      "field": "example_english",
+      "severity": "warning",
+      "comment": "'My female friend' is awkward; native speakers say 'My friend'"
+    },
+    {
+      "id": "v-a2-directions-056",
+      "norsk": "venstre",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'izquierdo' is adjective form; in directional context 'izquierda' is standard"
+    },
+    {
+      "id": "v-a2-communication-097",
+      "norsk": "å ville",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "Missing umlaut: 'hätte' not 'hatte'; changes meaning entirely"
+    },
+    {
+      "id": "v-a2-descriptive-adjectives-082",
+      "norsk": "virkelig",
+      "level": "A2",
+      "field": "english",
+      "severity": "info",
+      "comment": "'virkelig' as adverb means 'really'; listing 'real' (adjective) may confuse learners"
+    },
+    {
+      "id": "v-a2-body-031",
+      "norsk": "voksen",
+      "level": "A2",
+      "field": "example (norsk)",
+      "severity": "error",
+      "comment": "'vare med' should be 'være med' (typo: vare→være)"
+    },
+    {
+      "id": "v-a2-occupations-079",
+      "norsk": "yrke (et)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'profesión / oficio'"
+    },
+    {
+      "id": "v-a2-occupations-079",
+      "norsk": "yrke (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: '¿Cuál es tu profesión?'"
+    },
+    {
+      "id": "v-a2-occupations-080",
+      "norsk": "yrkesfag (et)",
+      "level": "A2",
+      "field": "english",
+      "severity": "warning",
+      "comment": "'vocational subject' is narrow; 'vocational studies/programme' fits better"
+    },
+    {
+      "id": "v-a2-occupations-080",
+      "norsk": "yrkesfag (et)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'wahlte' missing umlaut: should be 'wählte'; 'weiterführenden' missing umlaut"
+    },
+    {
+      "id": "v-a2-occupations-080",
+      "norsk": "yrkesfag (et)",
+      "level": "A2",
+      "field": "spanish",
+      "severity": "warning",
+      "comment": "'asignatura vocacional' is unnatural; 'formación profesional' is standard"
+    },
+    {
+      "id": "v-a2-occupations-080",
+      "norsk": "yrkesfag (et)",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accents: 'Él eligió formación profesional'"
+    },
+    {
+      "id": "v-a2-money-024",
+      "norsk": "økonomisk",
+      "level": "A2",
+      "field": "example_spanish",
+      "severity": "warning",
+      "comment": "Missing accent: 'situación económica'"
+    },
+    {
+      "id": "v-a2-social-life-098",
+      "norsk": "ølboks (en)",
+      "level": "A2",
+      "field": "ukrainian",
+      "severity": "warning",
+      "comment": "'бляшанка пива' is acceptable but 'бляшанка пива' / 'пивна бляшанка' both used; acceptable"
+    },
+    {
+      "id": "v-a2-social-life-098",
+      "norsk": "ølboks (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'Mullemer' should be 'Mülleimer' (missing umlaut and letter)"
+    },
+    {
+      "id": "v-a2-sports-035",
+      "norsk": "øvelse (en)",
+      "level": "A2",
+      "field": "example_german",
+      "severity": "error",
+      "comment": "'Starkung' and 'Ruckens' missing umlauts: 'Stärkung', 'Rückens'"
+    },
+    {
+      "id": "v-a2-directions-057",
+      "norsk": "øverst",
+      "level": "A2",
+      "field": "part",
+      "severity": "warning",
+      "comment": "'øverst' is an adverb/superlative adverb, not an adjective"
+    }
+  ]
+}
