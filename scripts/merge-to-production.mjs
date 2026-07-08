@@ -7,6 +7,11 @@
  *
  * Expected to run after, in order:
  *   1. scripts/find_dupes.py / find_uttrykk_dupes.py     (Step 3A)
+ *
+ *   Also find diacritic issues
+ *   node scripts/find-diacritic-issues-all.mjs b1 --dir prod
+ *   node scripts/find-diacritic-issues-all.mjs b1 --dir prod --fix
+ *
  *   2. scripts/check-vocab.mjs --draft / check-uttrykk.mjs --draft  (Step 3B)
  *   3. scripts/assign-ids.mjs                            (Step 4)
  *
@@ -154,11 +159,17 @@ function mergeOne(level, kind) {
     console.log(
       `  ⚠️   ${lemmaCollisions.length} draft entry(ies) share a lemma with an existing production entry (possible duplicate — not blocking, double-check these):`
     );
-    for (const e of lemmaCollisions.slice(0, 10)) {
-      console.log(`      lemma="${e.lemma}"  id=${e.id}`);
+    const prodByLemma = new Map();
+    for (const e of prodEntries) {
+      const key = (e.lemma ?? '').toLowerCase();
+      if (key) prodByLemma.set(key, e); // last wins if dupes already in prod
     }
-    if (lemmaCollisions.length > 10)
-      console.log(`      ...and ${lemmaCollisions.length - 10} more`);
+    for (const e of lemmaCollisions) {
+      const match = prodByLemma.get(e.lemma.toLowerCase());
+      console.log(
+        `      "lemma": "${e.lemma}",  "draft_id": "${e.id}" (${draftFilename}),  "prod_id": "${match?.id ?? '?'}" (${prodFilename})\n`
+      );
+    }
   }
 
   console.log(

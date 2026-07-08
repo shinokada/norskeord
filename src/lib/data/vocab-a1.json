@@ -6990,8 +6990,8 @@
   },
   {
     "id": "v-a1-clothes-010",
-    "norsk": "hansker (en)",
-    "lemma": "hansker",
+    "norsk": "hansker (pl.)",
+    "lemma": "hanske",
     "english": "gloves",
     "ukrainian": "рукавички",
     "spanish": "guantes",
@@ -7109,8 +7109,8 @@
   },
   {
     "id": "v-a1-clothes-017",
-    "norsk": "støvler (en)",
-    "lemma": "støvler",
+    "norsk": "støvler (pl.)",
+    "lemma": "støvel",
     "english": "boots",
     "ukrainian": "чоботи",
     "spanish": "botas",
@@ -7126,8 +7126,8 @@
   },
   {
     "id": "v-a1-clothes-018",
-    "norsk": "sandaler (en)",
-    "lemma": "sandaler",
+    "norsk": "sandaler (pl.)",
+    "lemma": "sandal",
     "english": "sandals",
     "ukrainian": "сандалі",
     "spanish": "sandalias",

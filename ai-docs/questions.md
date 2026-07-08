@@ -2,8 +2,6 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-I have ai-docs/instructions/image-converter.md. Please read this document first and in this session I'm doing only STEP 1. Please process the attached images.
-
 svelte mcp server is running.
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.

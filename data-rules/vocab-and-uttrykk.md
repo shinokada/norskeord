@@ -6,18 +6,20 @@
 
 The display form shown to learners.
 
-| `part`         | Format                                  | Example              |
-| -------------- | --------------------------------------- | -------------------- |
-| `noun`         | dictionary form + gender in parentheses | `hus (et)`           |
-| `verb`         | infinitive with `å`                     | `å få`               |
-| `adjective`    | base (masculine singular) form          | `glad`               |
-| `adverb`       | uninflected form                        | `i dag`              |
-| `conjunction`  | uninflected form                        | `fordi`              |
-| `preposition`  | uninflected form                        | `ved siden av`       |
-| `pronoun`      | base form                               | `jeg`                |
-| `numeral`      | base form                               | `én`                 |
-| `interjection` | base form                               | `hei`                |
-| `phrase`       | the fixed multi-word form               | `biologisk mangfold` |
+| `part`                | Format                                            | Example                         |
+| --------------------- | ------------------------------------------------- | ------------------------------- |
+| `noun`                | dictionary form + gender in parentheses           | `hus (et)`                      |
+| `noun` (plural card)  | plural form + `(pl.)` or `(b.pl.)` in parentheses | `bøker (pl.)`, `bøkene (b.pl.)` |
+| `noun` (indeclinable) | dictionary form + `(ubøy.)` in parentheses        | `fjor (ubøy.)`                  |
+| `verb`                | infinitive with `å`                               | `å få`                          |
+| `adjective`           | base (masculine singular) form                    | `glad`                          |
+| `adverb`              | uninflected form                                  | `i dag`                         |
+| `conjunction`         | uninflected form                                  | `fordi`                         |
+| `preposition`         | uninflected form                                  | `ved siden av`                  |
+| `pronoun`             | base form                                         | `jeg`                           |
+| `numeral`             | base form                                         | `én`                            |
+| `interjection`        | base form                                         | `hei`                           |
+| `phrase`              | the fixed multi-word form                         | `biologisk mangfold`            |
 
 ### `lemma` field
 
@@ -30,6 +32,32 @@ Always the plain dictionary form — no gender markers, no `å` prefix, no infle
 | `adjective`                                                                       | base form (same as `norsk`) | `glad`               |
 | `adverb` / `conjunction` / `preposition` / `pronoun` / `numeral` / `interjection` | same as `norsk`             | `fordi`              |
 | `phrase`                                                                          | same as `norsk`             | `biologisk mangfold` |
+
+### Plural-form noun cards
+
+Irregular or otherwise learning-worthy plurals (`bok` → `bøker`, `barn` → `barn`, `mann` → `menn`) can get their own `noun` vocab card in addition to the singular dictionary-form card. This is optional — only add a plural card when the plural is irregular enough to be worth drilling separately.
+
+- `norsk` — the plural form + a plural marker in parentheses, in place of the gender marker:
+  - `(pl.)` — ubestemt flertall, e.g. `bøker (pl.)`
+  - `(b.pl.)` — bestemt flertall, e.g. `bøkene (b.pl.)`
+- `lemma` — always the bare **singular** dictionary form, same as the base noun's lemma (e.g. `bok`, not `bøker`). This keeps FSRS lookup/dedup anchored to the base word even though the card teaches the plural.
+- `id` / `category` / `level` — assigned normally like any other noun entry.
+
+Why not `(u.pl.)`: ubestemt flertall is the unmarked/default plural, so bare `(pl.)` matches standard Norwegian dictionary shorthand (Bokmålsordboka etc. use `pl.` and `best. pl.`). Only bestemt flertall needs an explicit flag.
+
+### Indeclinable noun cards
+
+A small number of Norwegian nouns are genuinely `ubøyelig` (indeclinable) — no gender article, no plural, no bestemt form. `fjor` is the classic example (only ever appears as `i fjor`, `i forfjor`); dictionaries like NAOB and Bokmålsordboka label these explicitly rather than assigning them a gender.
+
+For these, use `(ubøy.)` in place of the gender marker:
+
+```
+"norsk": "fjor (ubøy.)",
+"lemma": "fjor",
+"part": "noun"
+```
+
+Don't reach for this marker just because a noun happens to only show up in one fixed phrase in your example sentence — check a dictionary (NAOB/Bokmålsordboka) first and only use `(ubøy.)` when it's actually listed as `ubøyelig`. If the word is more of a fixed multi-word chunk than a single indeclinable noun, it may belong in `uttrykk` instead (see below).
 
 ### `part` values
 
