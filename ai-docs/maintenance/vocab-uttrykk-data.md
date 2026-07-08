@@ -1,3 +1,18 @@
+## find Norwegian, Spanish, and German diacritic
+
+```bash
+  node scripts/find-diacritic-issues-all.mjs a2
+  node scripts/find-diacritic-issues-all.mjs a2 --type vocab
+  node scripts/find-diacritic-issues-all.mjs a2 --type uttrykk
+  node scripts/find-diacritic-issues-all.mjs a2 --lang norwegian
+  node scripts/find-diacritic-issues-all.mjs a2 --lang german
+  node scripts/find-diacritic-issues-all.mjs a2 --lang spanish
+  node scripts/find-diacritic-issues-all.mjs a2 --dir prod
+  node scripts/find-diacritic-issues-all.mjs a2 --dir prod --fix
+  node scripts/find-diacritic-issues-all.mjs a2 --fix
+  node scripts/find-diacritic-issues-all.mjs a2 --remove
+```
+
 ## check vocab format
 
 Validates all vocab-{level}.json files in src/lib/data against the
