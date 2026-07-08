@@ -91,7 +91,9 @@ const REMOVE = rawArgs.includes('--remove');
 const FIX = rawArgs.includes('--fix');
 const typeIdx = rawArgs.indexOf('--type');
 const TYPE = typeIdx !== -1 ? rawArgs[typeIdx + 1] : 'both';
-const level = rawArgs.find((a) => !a.startsWith('--') && rawArgs[rawArgs.indexOf(a) - 1] !== '--type');
+const level = rawArgs.find(
+  (a) => !a.startsWith('--') && rawArgs[rawArgs.indexOf(a) - 1] !== '--type'
+);
 
 if (!['vocab', 'uttrykk', 'both'].includes(TYPE)) {
   console.error(`❌  Unknown --type "${TYPE}" — must be "vocab", "uttrykk", or "both"`);
@@ -201,9 +203,13 @@ function processFile(filename, draftPath) {
   console.log(`\n  → ${flagged.length} / ${entries.length} entries auto-detected (fixable)`);
 
   if (ambiguousFlagged.length > 0) {
-    console.log(`\n  🟡  ${ambiguousFlagged.length} entries need MANUAL review (ambiguous, not auto-fixed):`);
+    console.log(
+      `\n  🟡  ${ambiguousFlagged.length} entries need MANUAL review (ambiguous, not auto-fixed):`
+    );
     for (const { entry, ambiguous } of ambiguousFlagged) {
-      console.log(`     [${entry.id || entry.lemma}] "${entry.norsk}" — example: "${entry.example}"`);
+      console.log(
+        `     [${entry.id || entry.lemma}] "${entry.norsk}" — example: "${entry.example}"`
+      );
       for (const a of ambiguous) console.log(`       - ${a.detail}`);
     }
   }
@@ -244,9 +250,9 @@ function processFile(filename, draftPath) {
       `  🗑️   Removed ${flagged.length} flagged entries — ${remaining.length} remain in ${filename}`
     );
     console.log(
-      `  ↻  Re-run enrich-vocab.mjs for this level to regenerate the removed entries`
-      + ` (they're still present in the extracted-*.json input and enrich-vocab.mjs`
-      + ` only skips lemmas that already exist in the output file).`
+      `  ↻  Re-run enrich-vocab.mjs for this level to regenerate the removed entries` +
+        ` (they're still present in the extracted-*.json input and enrich-vocab.mjs` +
+        ` only skips lemmas that already exist in the output file).`
     );
   } else if (REMOVE) {
     console.log(`  (nothing to remove)`);

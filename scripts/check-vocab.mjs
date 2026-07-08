@@ -297,7 +297,11 @@ function checkNorsk(norsk, part) {
   const errors = [];
   switch (part) {
     case 'noun':
-      if (!GENDER_PATTERN.test(norsk) && !PLURAL_PATTERN.test(norsk) && !UBOYELIG_PATTERN.test(norsk)) {
+      if (
+        !GENDER_PATTERN.test(norsk) &&
+        !PLURAL_PATTERN.test(norsk) &&
+        !UBOYELIG_PATTERN.test(norsk)
+      ) {
         errors.push(
           `noun norsk "${norsk}" should end with gender, e.g. "hus (et)", a plural marker, e.g. "bøker (pl.)" / "bøkene (b.pl.)", or (ubøy.) if the noun is indeclinable`
         );

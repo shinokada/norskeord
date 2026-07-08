@@ -7,11 +7,11 @@
  *
  * Expected to run after, in order:
  *   1. scripts/find_dupes.py / find_uttrykk_dupes.py     (Step 3A)
- * 
+ *
  *   Also find diacritic issues
  *   node scripts/find-diacritic-issues-all.mjs b1 --dir prod
  *   node scripts/find-diacritic-issues-all.mjs b1 --dir prod --fix
- * 
+ *
  *   2. scripts/check-vocab.mjs --draft / check-uttrykk.mjs --draft  (Step 3B)
  *   3. scripts/assign-ids.mjs                            (Step 4)
  *

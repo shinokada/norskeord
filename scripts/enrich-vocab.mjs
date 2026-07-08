@@ -79,48 +79,151 @@ const INTER_BATCH_DELAY_MS = 1200;
 // category "uttrykk" directly, never chosen from this list).
 const CATEGORIES_BY_LEVEL = {
   a1: [
-    'greetings', 'numbers', 'colors', 'family', 'body', 'food', 'animals',
-    'home', 'days-months', 'classroom', 'adjectives', 'verbs',
-    'pronouns-and-questions', 'feelings', 'weather', 'transportation',
-    'household-items', 'places', 'clothes', 'actions'
+    'greetings',
+    'numbers',
+    'colors',
+    'family',
+    'body',
+    'food',
+    'animals',
+    'home',
+    'days-months',
+    'classroom',
+    'adjectives',
+    'verbs',
+    'pronouns-and-questions',
+    'feelings',
+    'weather',
+    'transportation',
+    'household-items',
+    'places',
+    'clothes',
+    'actions'
   ],
   a2: [
-    'shopping', 'transport', 'clothing', 'hobbies', 'directions',
-    'occupations', 'sports', 'health', 'weather', 'time',
-    'descriptive-adjectives', 'cooking', 'nature', 'house-chores',
-    'communication', 'body', 'social-life', 'technology', 'environment',
+    'shopping',
+    'transport',
+    'clothing',
+    'hobbies',
+    'directions',
+    'occupations',
+    'sports',
+    'health',
+    'weather',
+    'time',
+    'descriptive-adjectives',
+    'cooking',
+    'nature',
+    'house-chores',
+    'communication',
+    'body',
+    'social-life',
+    'technology',
+    'environment',
     'money'
   ],
   b1: [
-    'travel', 'environment', 'media', 'culture', 'technology',
-    'relationships', 'education', 'work', 'city-life', 'traditions',
-    'expressing-opinions', 'cooking', 'accommodation', 'health', 'finance',
-    'personal-growth', 'reasoning', 'society', 'communication-skills',
-    'urban-life', 'mental-wellbeing', 'fitness', 'arts-culture', 'economics',
-    'sustainability', 'science-nature', 'journalism', 'workplace', 'family',
-    'politics', 'language-learning', 'healthcare'
+    'travel',
+    'environment',
+    'media',
+    'culture',
+    'technology',
+    'relationships',
+    'education',
+    'work',
+    'city-life',
+    'traditions',
+    'expressing-opinions',
+    'cooking',
+    'accommodation',
+    'health',
+    'finance',
+    'personal-growth',
+    'reasoning',
+    'society',
+    'communication-skills',
+    'urban-life',
+    'mental-wellbeing',
+    'fitness',
+    'arts-culture',
+    'economics',
+    'sustainability',
+    'science-nature',
+    'journalism',
+    'workplace',
+    'family',
+    'politics',
+    'language-learning',
+    'healthcare'
   ],
   b2: [
-    'politics', 'economics', 'social-issues', 'arts', 'science', 'emotions',
-    'history', 'law', 'literature', 'advanced-adjectives', 'philosophy',
-    'medicine', 'psychology', 'business', 'religion', 'environment',
-    'technology', 'media', 'education', 'language', 'argumentation',
-    'abstract-nouns', 'advanced-verbs', 'geography', 'culture',
-    'global-issues', 'academic-language', 'discourse-markers', 'work-career',
-    'relationships', 'communication'
+    'politics',
+    'economics',
+    'social-issues',
+    'arts',
+    'science',
+    'emotions',
+    'history',
+    'law',
+    'literature',
+    'advanced-adjectives',
+    'philosophy',
+    'medicine',
+    'psychology',
+    'business',
+    'religion',
+    'environment',
+    'technology',
+    'media',
+    'education',
+    'language',
+    'argumentation',
+    'abstract-nouns',
+    'advanced-verbs',
+    'geography',
+    'culture',
+    'global-issues',
+    'academic-language',
+    'discourse-markers',
+    'work-career',
+    'relationships',
+    'communication'
   ],
   c: [
-    'philosophy', 'academic', 'formal-writing', 'rhetoric',
-    'complex-emotions', 'professional', 'abstract-concepts',
-    'politics-democracy', 'linguistics', 'media-journalism',
-    'architecture-design', 'diplomacy-international', 'finance-economics',
-    'medicine-healthcare', 'psychology-advanced', 'literary', 'archaic',
-    'proverbs', 'highly-formal', 'technical', 'advanced-law-justice',
-    'neuroscience-cognition', 'climate-environment-policy',
-    'sociology-anthropology', 'advanced-business-strategy',
-    'existential-abstract', 'nature-landscape', 'sensory-sound',
-    'physical-appearance', 'everyday-objects', 'character-temperament',
-    'embodied-emotion', 'manner-of-motion', 'interpersonal-conflict',
+    'philosophy',
+    'academic',
+    'formal-writing',
+    'rhetoric',
+    'complex-emotions',
+    'professional',
+    'abstract-concepts',
+    'politics-democracy',
+    'linguistics',
+    'media-journalism',
+    'architecture-design',
+    'diplomacy-international',
+    'finance-economics',
+    'medicine-healthcare',
+    'psychology-advanced',
+    'literary',
+    'archaic',
+    'proverbs',
+    'highly-formal',
+    'technical',
+    'advanced-law-justice',
+    'neuroscience-cognition',
+    'climate-environment-policy',
+    'sociology-anthropology',
+    'advanced-business-strategy',
+    'existential-abstract',
+    'nature-landscape',
+    'sensory-sound',
+    'physical-appearance',
+    'everyday-objects',
+    'character-temperament',
+    'embodied-emotion',
+    'manner-of-motion',
+    'interpersonal-conflict',
     'intensifiers-degree'
   ]
 };
@@ -146,7 +249,9 @@ if (!level) {
 }
 
 if (!CATEGORIES_BY_LEVEL[level]) {
-  console.error(`❌  Unknown --level "${level}". Valid levels: ${Object.keys(CATEGORIES_BY_LEVEL).join(', ')}`);
+  console.error(
+    `❌  Unknown --level "${level}". Valid levels: ${Object.keys(CATEGORIES_BY_LEVEL).join(', ')}`
+  );
   process.exit(1);
 }
 
@@ -567,10 +672,11 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
       }
 
       const extractedEntry = batchByLemma.get(item.lemma);
-      const { item: correctedItem, fixedNotes, ambiguousNotes } = correctGeneratedItem(
-        extractedEntry ?? {},
-        item
-      );
+      const {
+        item: correctedItem,
+        fixedNotes,
+        ambiguousNotes
+      } = correctGeneratedItem(extractedEntry ?? {}, item);
       if (fixedNotes.length > 0) {
         autoFixed++;
         console.warn(`\n    🔧  Auto-corrected lemma="${item.lemma}":`);
@@ -584,7 +690,9 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
       results.set(item.lemma, correctedItem);
       hits++;
     }
-    console.log(`✓ (${hits}/${batch.length} enriched${autoFixed > 0 ? `, ${autoFixed} auto-corrected` : ''})`);
+    console.log(
+      `✓ (${hits}/${batch.length} enriched${autoFixed > 0 ? `, ${autoFixed} auto-corrected` : ''})`
+    );
 
     // Update running category counts so later batches in the same run
     // still favor under-represented categories.

@@ -113,7 +113,9 @@ if (!['vocab', 'uttrykk', 'both'].includes(TYPE)) {
   process.exit(1);
 }
 if (!['norwegian', 'german', 'spanish', 'all'].includes(LANG)) {
-  console.error(`❌  Unknown --lang "${LANG}" — must be "norwegian", "german", "spanish", or "all"`);
+  console.error(
+    `❌  Unknown --lang "${LANG}" — must be "norwegian", "german", "spanish", or "all"`
+  );
   process.exit(1);
 }
 if (!['draft', 'prod'].includes(DIR)) {
@@ -240,7 +242,10 @@ function findIssuesForLang(entry, langKey) {
   // 3. Punctuation check (Spanish only)
   if (cfg.punctuation) {
     issues.push(
-      ...findSpanishPunctuationIssues(exampleValue, cfg.exampleField).map((i) => ({ ...i, lang: langKey }))
+      ...findSpanishPunctuationIssues(exampleValue, cfg.exampleField).map((i) => ({
+        ...i,
+        lang: langKey
+      }))
     );
   }
 
@@ -261,7 +266,11 @@ function findIssuesForLang(entry, langKey) {
     }
     if (bigramFlaggedFields.size > 0) {
       commonAmbiguous = commonAmbiguous.filter(
-        (a) => !(bigramFlaggedFields.has(a.field) && DE_BIGRAM_RESOLVED_WORDS.has((a.detail.match(/contains "([a-zA-Z]+)"/) || [])[1]))
+        (a) =>
+          !(
+            bigramFlaggedFields.has(a.field) &&
+            DE_BIGRAM_RESOLVED_WORDS.has((a.detail.match(/contains "([a-zA-Z]+)"/) || [])[1])
+          )
       );
     }
   }
@@ -320,7 +329,10 @@ function buildFilePath(kind, level) {
     return { filename: `${kind}-${level}.json`, filePath: join(PROD_DIR, `${kind}-${level}.json`) };
   }
   const draftDir = join(DRAFT_DIR, level);
-  return { filename: `${kind}-${level}-new.json`, filePath: join(draftDir, `${kind}-${level}-new.json`) };
+  return {
+    filename: `${kind}-${level}-new.json`,
+    filePath: join(draftDir, `${kind}-${level}-new.json`)
+  };
 }
 
 // ── Process one file ──────────────────────────────────────────────────────
@@ -358,7 +370,9 @@ function processFile(kind, level) {
   console.log(`\n  → ${flagged.length} / ${entries.length} entries auto-detected (fixable)`);
 
   if (ambiguousFlagged.length > 0) {
-    console.log(`\n  🟡  ${ambiguousFlagged.length} entries need MANUAL review (ambiguous, not auto-fixed):`);
+    console.log(
+      `\n  🟡  ${ambiguousFlagged.length} entries need MANUAL review (ambiguous, not auto-fixed):`
+    );
     for (const { entry, ambiguous } of ambiguousFlagged) {
       console.log(`     [${entry.id || entry.lemma}] norsk: "${entry.norsk}"`);
       for (const line of relevantExampleLines(entry, ambiguous, '       ')) console.log(line);
@@ -407,9 +421,9 @@ function processFile(kind, level) {
       `  🗑️   Removed ${flagged.length} flagged entries — ${remaining.length} remain in ${filename}`
     );
     console.log(
-      `  ↻  Re-run enrich-vocab.mjs (Norwegian content) and/or`
-      + ` add-language-translations.mjs (German/Spanish) for this level to`
-      + ` regenerate the removed entries.`
+      `  ↻  Re-run enrich-vocab.mjs (Norwegian content) and/or` +
+        ` add-language-translations.mjs (German/Spanish) for this level to` +
+        ` regenerate the removed entries.`
     );
   } else if (REMOVE) {
     console.log(`  (nothing to remove)`);

@@ -6,20 +6,20 @@
 
 The display form shown to learners.
 
-| `part`         | Format                                  | Example              |
-| -------------- | --------------------------------------- | -------------------- |
-| `noun`         | dictionary form + gender in parentheses | `hus (et)`           |
-| `noun` (plural card) | plural form + `(pl.)` or `(b.pl.)` in parentheses | `bøker (pl.)`, `bøkene (b.pl.)` |
-| `noun` (indeclinable) | dictionary form + `(ubøy.)` in parentheses | `fjor (ubøy.)` |
-| `verb`         | infinitive with `å`                     | `å få`               |
-| `adjective`    | base (masculine singular) form          | `glad`               |
-| `adverb`       | uninflected form                        | `i dag`              |
-| `conjunction`  | uninflected form                        | `fordi`              |
-| `preposition`  | uninflected form                        | `ved siden av`       |
-| `pronoun`      | base form                               | `jeg`                |
-| `numeral`      | base form                               | `én`                 |
-| `interjection` | base form                               | `hei`                |
-| `phrase`       | the fixed multi-word form               | `biologisk mangfold` |
+| `part`                | Format                                            | Example                         |
+| --------------------- | ------------------------------------------------- | ------------------------------- |
+| `noun`                | dictionary form + gender in parentheses           | `hus (et)`                      |
+| `noun` (plural card)  | plural form + `(pl.)` or `(b.pl.)` in parentheses | `bøker (pl.)`, `bøkene (b.pl.)` |
+| `noun` (indeclinable) | dictionary form + `(ubøy.)` in parentheses        | `fjor (ubøy.)`                  |
+| `verb`                | infinitive with `å`                               | `å få`                          |
+| `adjective`           | base (masculine singular) form                    | `glad`                          |
+| `adverb`              | uninflected form                                  | `i dag`                         |
+| `conjunction`         | uninflected form                                  | `fordi`                         |
+| `preposition`         | uninflected form                                  | `ved siden av`                  |
+| `pronoun`             | base form                                         | `jeg`                           |
+| `numeral`             | base form                                         | `én`                            |
+| `interjection`        | base form                                         | `hei`                           |
+| `phrase`              | the fixed multi-word form                         | `biologisk mangfold`            |
 
 ### `lemma` field
 
