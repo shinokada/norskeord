@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
  * assign-ids.mjs
+ * USE renumber-vocab-ids.mjs to renumber existing ids in a draft file, this script only assigns new ids to entries that don't have one yet.
  *
  * Step 4 of ai-docs/instructions/work-flow.md — assigns real `id` values to
  * validated draft entries, after Step 3B (check-vocab.mjs / check-uttrykk.mjs)
