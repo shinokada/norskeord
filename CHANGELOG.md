@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.50.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added support for clearer handling of glossary and phrase content, including broader language coverage and improved formatting rules.
+    - Added automatic redirect support so Norwegian-language paths now route to the main site version.
+  - **Bug Fixes**
+    - Improved validation and correction of accented characters and punctuation in generated content.
+    - Reduced duplicate entries and tightened ID handling for draft data.
+  - **Chores**
+    - Updated build and maintenance workflows, plus refreshed several internal guidance and report files.
+
 ## 2.49.0
 
 ### Minor Changes
