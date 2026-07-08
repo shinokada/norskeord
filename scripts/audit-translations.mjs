@@ -27,14 +27,21 @@
  *   node scripts/audit-translations.mjs --files vocab-b2.json --batch 20
  *   node scripts/audit-translations.mjs --files vocab-b2.json --only-with-translations
  *   node scripts/audit-translations.mjs --files vocab-b2.json --dry-run
+ *   node scripts/audit-translations.mjs --files vocab-a2.json,uttrykk-a2.json --draft
  *
  * Options:
- *   --files                    Comma-separated filenames in src/lib/data/
+ *   --files                    Comma-separated filenames, e.g. vocab-b2.json (see --draft)
  *   --batch                    Entries per API call (default: 20)
  *   --only-with-translations   Skip entries that only have english (default: false)
  *   --dry-run                  Show plan without calling the API
  *   --languages                Comma-separated subset to check, e.g. "english,spanish"
  *                              Default: all present (english always checked)
+ *   --draft                    Read draft/{level}/{kind}-{level}-new.json instead of
+ *                              src/lib/data/{kind}-{level}.json. Give --files the normal
+ *                              production-style names (vocab-a2.json, uttrykk-a2.json) and
+ *                              this flag remaps them to the draft path. Auditing pre-merge
+ *                              means you don't pay to re-audit the same entries again after
+ *                              they're merged into the full production file.
  * Languages are auto-detected from whatever fields are present in the data, so no --language flag needed — it'll pick up german, ukrainian, spanish, etc. automatically.
  * --only-with-translations skips entries that only have english (i.e. no Spanish/Ukrainian/German etc.), which is what you want after running add-language-translations.mjs.
  * --languages german lets you narrow the audit to just one language if you want to check german translations specifically after this run.
@@ -47,6 +54,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.resolve(__dirname, '../src/lib/data');
+const DRAFT_DIR = path.resolve(__dirname, '../draft');
 const OUTPUT_DIR = path.resolve(__dirname, 'outputs');
 
 // ── CLI args ──────────────────────────────────────────────────────────────────
@@ -59,6 +67,7 @@ const getArg = (flag) => {
 const hasFlag = (flag) => args.includes(flag);
 
 const dryRun = hasFlag('--dry-run');
+const draft = hasFlag('--draft');
 const onlyWithTranslations = hasFlag('--only-with-translations');
 const batchSize = parseInt(getArg('--batch') ?? '20', 10);
 const filesArg = getArg('--files');
@@ -92,6 +101,25 @@ if (!ANTHROPIC_API_KEY && !dryRun) {
 }
 
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+
+// ── Draft path resolution ─────────────────────────────────────────────────────
+
+// Maps a normal production filename (vocab-a2.json, uttrykk-a2.json) to its
+// draft equivalent (draft/a2/vocab-a2-new.json, draft/a2/uttrykk-a2-new.json).
+const DRAFT_FILENAME_PATTERN = /^(vocab|uttrykk)-([a-z0-9]+)\.json$/;
+
+function resolveFilePath(filename) {
+  if (!draft) return path.join(DATA_DIR, filename);
+  const m = filename.match(DRAFT_FILENAME_PATTERN);
+  if (!m) {
+    console.error(
+      `❌  --draft expects filenames like "vocab-a2.json" or "uttrykk-a2.json", got "${filename}"`
+    );
+    process.exit(1);
+  }
+  const [, kind, level] = m;
+  return path.join(DRAFT_DIR, level, `${kind}-${level}-new.json`);
+}
 
 // ── Issue severity ────────────────────────────────────────────────────────────
 // Each issue returned by Claude has a severity:
@@ -241,7 +269,7 @@ function detectLanguages(entries) {
 // ── Process one file ──────────────────────────────────────────────────────────
 
 async function processFile(filename) {
-  const filePath = path.join(DATA_DIR, filename);
+  const filePath = resolveFilePath(filename);
   if (!fs.existsSync(filePath)) {
     console.warn(`⚠️  Not found: ${filePath} — skipping`);
     return null;
@@ -276,7 +304,10 @@ async function processFile(filename) {
   const langs = langFilter ? detectedLangs.filter((l) => langFilter.has(l)) : detectedLangs;
 
   console.log(`\n${'─'.repeat(60)}`);
-  console.log(`📄  ${filename}  (${entries.length} total, ${toAudit.length} to audit)`);
+  console.log(
+    `📄  ${filename}${draft ? '  [draft]' : ''}  (${entries.length} total, ${toAudit.length} to audit)`
+  );
+  if (draft) console.log(`    Source: ${filePath}`);
   console.log(`    Languages: ${langs.join(', ')}`);
   console.log(`${'─'.repeat(60)}`);
 
@@ -348,7 +379,7 @@ function writeReports(results) {
 
   for (const r of results) {
     if (!r) continue;
-    const base = r.filename.replace('.json', '');
+    const base = r.filename.replace('.json', '') + (draft ? '-draft' : '');
     const jsonPath = path.join(OUTPUT_DIR, `audit-${base}-${ts}.json`);
     const txtPath = path.join(OUTPUT_DIR, `audit-${base}-${ts}.txt`);
 
@@ -399,7 +430,7 @@ function writeReports(results) {
 
 async function main() {
   console.log('🔍  audit-translations.mjs');
-  console.log(`    Mode:       ${dryRun ? 'DRY RUN' : 'LIVE'}`);
+  console.log(`    Mode:       ${dryRun ? 'DRY RUN' : 'LIVE'}${draft ? ' + DRAFT' : ''}`);
   console.log(`    Batch size: ${batchSize}`);
   console.log(`    Files:      ${filesToProcess.join(', ')}`);
   if (langFilter) console.log(`    Languages:  ${[...langFilter].join(', ')} (filtered)`);

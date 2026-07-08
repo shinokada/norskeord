@@ -27,8 +27,16 @@ files = {
     'B2-uttrykk': os.path.join(base, 'uttrykk-b2.json'),
     'C': os.path.join(base, 'vocab-c.json'),
     'C-uttrykk': os.path.join(base, 'uttrykk-c.json'),
-    # 'C-draft': os.path.join(project_root, 'draft', 'c', 'vocab-c-new.json'),
-    # 'C-draft-uttrykk': os.path.join(project_root, 'draft', 'c', 'uttrykk-c-new.json'),
+    'A1-draft': os.path.join(project_root, 'draft', 'a1', 'vocab-a1-new.json'),
+    'A1-uttrykk-draft': os.path.join(project_root, 'draft', 'a1', 'uttrykk-a1-new.json'),
+    'A2-draft': os.path.join(project_root, 'draft', 'a2', 'vocab-a2-new.json'),
+    'A2-uttrykk-draft': os.path.join(project_root, 'draft', 'a2', 'uttrykk-a2-new.json'),
+    'B1-draft': os.path.join(project_root, 'draft', 'b1', 'vocab-b1-new.json'),
+    'B1-uttrykk-draft': os.path.join(project_root, 'draft', 'b1', 'uttrykk-b1-new.json'),
+    'B2-draft': os.path.join(project_root, 'draft', 'b2', 'vocab-b2-new.json'),
+    'B2-uttrykk-draft': os.path.join(project_root, 'draft', 'b2', 'uttrykk-b2-new.json'),
+    'C-draft': os.path.join(project_root, 'draft', 'c', 'vocab-c-new.json'),
+    'C-draft-uttrykk': os.path.join(project_root, 'draft', 'c', 'uttrykk-c-new.json'),
 }
 
 data_by_file = {}

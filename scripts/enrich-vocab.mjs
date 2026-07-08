@@ -5,8 +5,9 @@
  * Method 2, Step 2 (see ai-docs/instructions/image-converter.md and
  * ai-docs/instructions/work-flow.md).
  *
- * Reads Step 1 extraction output (id, norsk, lemma, definition, level, part,
- * and category="uttrykk" for expressions) and uses the Claude API to add:
+ * Reads Step 1 extraction output (id, norsk, lemma, level, part, and
+ * category="uttrykk" for expressions — plus definition on WORDS ONLY, and
+ * only for b1/b2/c, per json-structure.md) and uses the Claude API to add:
  *   - english, ukrainian, spanish, german
  *   - example (Norwegian), example_english, example_ukrainian,
  *     example_spanish, example_german
@@ -44,6 +45,23 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import {
+  NO_COMMON_WORD_MAP,
+  NO_AMBIGUOUS_WORDS,
+  degradeNO,
+  bareWordNO,
+  DE_COMMON_WORD_MAP,
+  DE_AMBIGUOUS_WORDS,
+  degradeDE,
+  ES_COMMON_WORD_MAP,
+  ES_AMBIGUOUS_WORDS,
+  degradeES,
+  bareWordIntl,
+  checkLanguage,
+  applyFixes,
+  findSpanishPunctuationIssues,
+  fixSpanishPunctuation
+} from './lib/diacritics.mjs';
 
 // ── Config ──────────────────────────────────────────────────────────────
 
@@ -56,43 +74,159 @@ const MAX_RETRIES = 5;
 const RETRY_DELAY_MS = 2000;
 const INTER_BATCH_DELAY_MS = 1200;
 
-const CATEGORIES = [
-  'philosophy',
-  'academic',
-  'formal-writing',
-  'rhetoric',
-  'complex-emotions',
-  'professional',
-  'abstract-concepts',
-  'politics-democracy',
-  'linguistics',
-  'media-journalism',
-  'architecture-design',
-  'diplomacy-international',
-  'finance-economics',
-  'medicine-healthcare',
-  'psychology-advanced',
-  'literary',
-  'archaic',
-  'proverbs',
-  'highly-formal',
-  'technical',
-  'advanced-law-justice',
-  'neuroscience-cognition',
-  'climate-environment-policy',
-  'sociology-anthropology',
-  'advanced-business-strategy',
-  'existential-abstract',
-  'nature-landscape',
-  'sensory-sound',
-  'physical-appearance',
-  'everyday-objects',
-  'character-temperament',
-  'embodied-emotion',
-  'manner-of-motion',
-  'interpersonal-conflict',
-  'intensifiers-degree'
-];
+// Mirrors CATEGORIES_BY_LEVEL in src/lib/config.ts (word categories only —
+// "uttrykk" / "uttrykk-preview" are excluded since expressions always get
+// category "uttrykk" directly, never chosen from this list).
+const CATEGORIES_BY_LEVEL = {
+  a1: [
+    'greetings',
+    'numbers',
+    'colors',
+    'family',
+    'body',
+    'food',
+    'animals',
+    'home',
+    'days-months',
+    'classroom',
+    'adjectives',
+    'verbs',
+    'pronouns-and-questions',
+    'feelings',
+    'weather',
+    'transportation',
+    'household-items',
+    'places',
+    'clothes',
+    'actions'
+  ],
+  a2: [
+    'shopping',
+    'transport',
+    'clothing',
+    'hobbies',
+    'directions',
+    'occupations',
+    'sports',
+    'health',
+    'weather',
+    'time',
+    'descriptive-adjectives',
+    'cooking',
+    'nature',
+    'house-chores',
+    'communication',
+    'body',
+    'social-life',
+    'technology',
+    'environment',
+    'money'
+  ],
+  b1: [
+    'travel',
+    'environment',
+    'media',
+    'culture',
+    'technology',
+    'relationships',
+    'education',
+    'work',
+    'city-life',
+    'traditions',
+    'expressing-opinions',
+    'cooking',
+    'accommodation',
+    'health',
+    'finance',
+    'personal-growth',
+    'reasoning',
+    'society',
+    'communication-skills',
+    'urban-life',
+    'mental-wellbeing',
+    'fitness',
+    'arts-culture',
+    'economics',
+    'sustainability',
+    'science-nature',
+    'journalism',
+    'workplace',
+    'family',
+    'politics',
+    'language-learning',
+    'healthcare'
+  ],
+  b2: [
+    'politics',
+    'economics',
+    'social-issues',
+    'arts',
+    'science',
+    'emotions',
+    'history',
+    'law',
+    'literature',
+    'advanced-adjectives',
+    'philosophy',
+    'medicine',
+    'psychology',
+    'business',
+    'religion',
+    'environment',
+    'technology',
+    'media',
+    'education',
+    'language',
+    'argumentation',
+    'abstract-nouns',
+    'advanced-verbs',
+    'geography',
+    'culture',
+    'global-issues',
+    'academic-language',
+    'discourse-markers',
+    'work-career',
+    'relationships',
+    'communication'
+  ],
+  c: [
+    'philosophy',
+    'academic',
+    'formal-writing',
+    'rhetoric',
+    'complex-emotions',
+    'professional',
+    'abstract-concepts',
+    'politics-democracy',
+    'linguistics',
+    'media-journalism',
+    'architecture-design',
+    'diplomacy-international',
+    'finance-economics',
+    'medicine-healthcare',
+    'psychology-advanced',
+    'literary',
+    'archaic',
+    'proverbs',
+    'highly-formal',
+    'technical',
+    'advanced-law-justice',
+    'neuroscience-cognition',
+    'climate-environment-policy',
+    'sociology-anthropology',
+    'advanced-business-strategy',
+    'existential-abstract',
+    'nature-landscape',
+    'sensory-sound',
+    'physical-appearance',
+    'everyday-objects',
+    'character-temperament',
+    'embodied-emotion',
+    'manner-of-motion',
+    'interpersonal-conflict',
+    'intensifiers-degree'
+  ]
+};
 
 // ── CLI args ────────────────────────────────────────────────────────────
 
@@ -113,6 +247,27 @@ if (!level) {
   console.error('    node scripts/enrich-vocab.mjs --level c');
   process.exit(1);
 }
+
+if (!CATEGORIES_BY_LEVEL[level]) {
+  console.error(
+    `❌  Unknown --level "${level}". Valid levels: ${Object.keys(CATEGORIES_BY_LEVEL).join(', ')}`
+  );
+  process.exit(1);
+}
+
+// Word categories for this level (expressions always use "uttrykk" directly).
+const CATEGORIES = CATEGORIES_BY_LEVEL[level];
+
+// `definition` (a monolingual Bokmål gloss) only exists in the production
+// vocab-{level}.json data, and only for B1+ — see json-structure.md. It
+// comes from Method 1's dictionary-style source images (image-converter.md),
+// used for B1/B2/C. It is NEVER present on expressions/uttrykk at any level
+// (uttrykk-{level}.json never carries this field), and Method 2's textbook-
+// glossary images (image-converter-2.md, used for A1/A2) never produce it
+// for words either. So it must only be requested/written for WORDS at
+// b1/b2/c — never for expressions, never for a1/a2.
+const LEVELS_WITH_DEFINITION = new Set(['b1', 'b2', 'c']);
+const usesDefinition = LEVELS_WITH_DEFINITION.has(level);
 
 // ── Load API key from .env if present ──────────────────────────────────
 
@@ -180,7 +335,7 @@ function buildWordsPrompt(batch, catCounts) {
     batch.map((e) => ({
       lemma: e.lemma,
       norsk: e.norsk,
-      definition: e.definition,
+      ...(usesDefinition ? { definition: e.definition } : {}),
       part: e.part,
       level: e.level
     })),
@@ -188,10 +343,14 @@ function buildWordsPrompt(batch, catCounts) {
     2
   );
 
-  return `You are a Norwegian language expert enriching vocabulary entries for a language-learning app (Method 2, Step 2 — see ai-docs/instructions/image-converter.md).
+  const englishRule = usesDefinition
+    ? '1. "english" — English translation, matching the supplied Norwegian "definition" and "norsk" form.'
+    : '1. "english" — English translation of the "norsk" form (no "definition" is supplied at this level — translate from "norsk" alone).';
+
+  return `You are a Norwegian language expert enriching vocabulary entries for a language-learning app (Method 2, Step 2 — see ai-docs/instructions/image-converter.md and image-converter-2.md).
 
 For each entry below, generate:
-1. "english" — English translation, matching the supplied Norwegian "definition" and "norsk" form.
+${englishRule}
 2. "ukrainian" — Ukrainian translation.
 3. "spanish" — Spanish translation.
 4. "german" — German translation.
@@ -209,6 +368,10 @@ Rules:
 - Translate naturally, not word-for-word.
 - The example sentence should be concise, grammatically correct, and clearly demonstrate the meaning.
 - Do NOT use typographic quotes (" " „ « ») in your output — use plain ASCII quotes if needed.
+- CRITICAL — special characters: never drop or substitute required diacritics/accents. Norwegian needs æ/ø/å (e.g. "nærheten", "bålet", "Fårikål", "nøyaktig", "videregående", "ønsker", "år", "Påsken"), German needs ä/ö/ü/ß (e.g. "für", "möchte", "Erklärung", "während", "Übung"), and Spanish needs á/é/í/ó/ú/ñ (e.g. "años", "mañana", "también"). Double-check every word in every language before responding.
+- CRITICAL — known recurring error: do not confuse "gå" (infinitive/present, "to go/walk") with "ga" (past tense of "å gi", "to give"). If your Norwegian example needs the past tense of "gi" (e.g. "the teacher gave...", "the doctor gave..."), the correct word is "ga", never "gå". Proofread every Norwegian example for this specific mix-up.
+- Norwegian adjective/participle agreement: match the noun's gender exactly — neuter (et-words, and impersonal "det er ...") takes the -t form (e.g. "Det er usunt", "Godt renhold", "Det er varmt"), while common gender (en-words) takes the bare form (e.g. "Maten er god", not "godt"). Check agreement on every adjective you use.
+- Spanish questions and exclamations must open AND close with the matching mark — "¿...?" and "¡...!" — never just the closing mark alone.
 - Match each result to its entry using the "lemma" field as the key.
 - Respond ONLY with a valid JSON array (no markdown, no code fences, no commentary). Each element must have: "lemma", "english", "ukrainian", "spanish", "german", "category", "example", "example_english", "example_ukrainian", "example_spanish", "example_german".
 
@@ -221,7 +384,6 @@ function buildExpressionsPrompt(batch) {
     batch.map((e) => ({
       lemma: e.lemma,
       norsk: e.norsk,
-      definition: e.definition,
       part: e.part,
       level: e.level
     })),
@@ -229,10 +391,10 @@ function buildExpressionsPrompt(batch) {
     2
   );
 
-  return `You are a Norwegian language expert enriching expression entries for a language-learning app (Method 2, Step 2 — see ai-docs/instructions/image-converter.md).
+  return `You are a Norwegian language expert enriching expression entries for a language-learning app (Method 2, Step 2 — see ai-docs/instructions/image-converter.md and image-converter-2.md).
 
 For each entry below, generate:
-1. "english" — English translation, matching the supplied Norwegian "definition" and "norsk" form.
+1. "english" — English translation of the "norsk" form. Expressions never carry a "definition" field — translate from "norsk" alone.
 2. "ukrainian" — Ukrainian translation.
 3. "spanish" — Spanish translation.
 4. "german" — German translation.
@@ -248,6 +410,10 @@ Rules:
 - Translate naturally, not word-for-word.
 - The example sentence should be concise, grammatically correct, and clearly demonstrate the meaning.
 - Do NOT use typographic quotes (" " „ « ») in your output — use plain ASCII quotes if needed.
+- CRITICAL — special characters: never drop or substitute required diacritics/accents. Norwegian needs æ/ø/å (e.g. "nærheten", "bålet", "Fårikål", "nøyaktig", "videregående", "ønsker", "år", "Påsken"), German needs ä/ö/ü/ß (e.g. "für", "möchte", "Erklärung", "während", "Übung"), and Spanish needs á/é/í/ó/ú/ñ (e.g. "años", "mañana", "también"). Double-check every word in every language before responding.
+- CRITICAL — known recurring error: do not confuse "gå" (infinitive/present, "to go/walk") with "ga" (past tense of "å gi", "to give"). If your Norwegian example needs the past tense of "gi" (e.g. "the teacher gave...", "the doctor gave..."), the correct word is "ga", never "gå". Proofread every Norwegian example for this specific mix-up.
+- Norwegian adjective/participle agreement: match the noun's gender exactly — neuter (et-words, and impersonal "det er ...") takes the -t form (e.g. "Det er usunt", "Godt renhold", "Det er varmt"), while common gender (en-words) takes the bare form (e.g. "Maten er god", not "godt"). Check agreement on every adjective you use.
+- Spanish questions and exclamations must open AND close with the matching mark — "¿...?" and "¡...!" — never just the closing mark alone.
 - Match each result to its entry using the "lemma" field as the key.
 - Respond ONLY with a valid JSON array (no markdown, no code fences, no commentary). Each element must have: "lemma", "english", "ukrainian", "spanish", "german", "example", "example_english", "example_ukrainian", "example_spanish", "example_german".
 
@@ -316,6 +482,93 @@ function missingGeneratedFields(item) {
   );
 }
 
+// Deterministic post-generation correction — catches the mechanical class
+// of bugs found auditing a2 output (missing NO/DE/ES diacritics, mangled
+// Spanish ¿/¡) and fixes them in place before the entry is ever written to
+// the draft file, using the exact same word lists/logic as
+// find-diacritic-issues.mjs and find-diacritic-issues-de-es.mjs. This is a
+// safety net UNDER the prompt rules above, not a replacement for them —
+// non-mechanical issues (verb-form mix-ups, grammatical agreement,
+// one-off typos) aren't dictionary-detectable and rely on the model
+// getting it right the first time.
+function correctGeneratedItem(extracted, item) {
+  const fixedNotes = [];
+  const ambiguousNotes = [];
+
+  // Norwegian: check the entry's own norsk/lemma against the generated
+  // example, plus the closed-class common-word list.
+  const noHeadword = extracted.norsk || extracted.lemma;
+  const no = checkLanguage({
+    headword: noHeadword,
+    fields: [{ name: 'example', value: item.example }],
+    specialChars: /[æøåÆØÅ]/,
+    degrade: degradeNO,
+    bareWord: bareWordNO,
+    wordMap: NO_COMMON_WORD_MAP,
+    ambiguousWords: NO_AMBIGUOUS_WORDS,
+    exampleField: 'example',
+    exampleValue: item.example
+  });
+  if (no.issues.length > 0) {
+    item.example = applyFixes(item.example, no.headwordFixes, NO_COMMON_WORD_MAP);
+    fixedNotes.push(...no.issues.map((i) => i.detail));
+  }
+  ambiguousNotes.push(...no.ambiguous.map((a) => a.detail));
+
+  // German: check item.german against item.example_german, plus common words.
+  const de = checkLanguage({
+    headword: item.german,
+    fields: [
+      { name: 'german', value: item.german },
+      { name: 'example_german', value: item.example_german }
+    ],
+    specialChars: /[üöäßÜÖÄ]/,
+    degrade: degradeDE,
+    bareWord: bareWordIntl,
+    wordMap: DE_COMMON_WORD_MAP,
+    ambiguousWords: DE_AMBIGUOUS_WORDS,
+    exampleField: 'example_german',
+    exampleValue: item.example_german
+  });
+  if (de.issues.length > 0) {
+    item.german = applyFixes(item.german, de.headwordFixes, DE_COMMON_WORD_MAP);
+    item.example_german = applyFixes(item.example_german, de.headwordFixes, DE_COMMON_WORD_MAP);
+    fixedNotes.push(...de.issues.map((i) => i.detail));
+  }
+  ambiguousNotes.push(...de.ambiguous.map((a) => a.detail));
+
+  // Spanish: check item.spanish against item.example_spanish, common words,
+  // and the mangled-¿/¡ punctuation pattern.
+  const es = checkLanguage({
+    headword: item.spanish,
+    fields: [
+      { name: 'spanish', value: item.spanish },
+      { name: 'example_spanish', value: item.example_spanish }
+    ],
+    specialChars: /[áéíóúñÁÉÍÓÚÑ¿¡]/,
+    degrade: degradeES,
+    bareWord: bareWordIntl,
+    wordMap: ES_COMMON_WORD_MAP,
+    ambiguousWords: ES_AMBIGUOUS_WORDS,
+    exampleField: 'example_spanish',
+    exampleValue: item.example_spanish
+  });
+  if (es.issues.length > 0) {
+    item.spanish = applyFixes(item.spanish, es.headwordFixes, ES_COMMON_WORD_MAP);
+    item.example_spanish = applyFixes(item.example_spanish, es.headwordFixes, ES_COMMON_WORD_MAP);
+    fixedNotes.push(...es.issues.map((i) => i.detail));
+  }
+  ambiguousNotes.push(...es.ambiguous.map((a) => a.detail));
+
+  const punctIssues = findSpanishPunctuationIssues(item.example_spanish);
+  if (punctIssues.length > 0) {
+    item.example_spanish = fixSpanishPunctuation(item.example_spanish);
+    fixedNotes.push(...punctIssues.map((i) => i.detail));
+  }
+
+  return { item, fixedNotes, ambiguousNotes };
+}
+
 async function withRetry(fn, label) {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
@@ -347,7 +600,11 @@ function mergeEntry(extracted, generated, isExpression) {
     example_ukrainian: generated.example_ukrainian ?? '',
     example_spanish: generated.example_spanish ?? '',
     example_german: generated.example_german ?? '',
-    definition: extracted.definition,
+    // `definition` only exists for WORDS at B1/B2/C (see json-structure.md
+    // and the usesDefinition note above) — omitted entirely for expressions
+    // at any level, and for A1/A2 words, even if the extracted entry
+    // happened to carry a stray value.
+    ...(usesDefinition && !isExpression ? { definition: extracted.definition } : {}),
     level: extracted.level,
     category: isExpression ? 'uttrykk' : (generated.category ?? ''),
     part: extracted.part
@@ -398,7 +655,9 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
     const prompt = isExpression ? buildPrompt(batch) : buildPrompt(batch, catCounts);
     const generated = await withRetry(() => callClaude(prompt), `batch ${i + 1}`);
 
+    const batchByLemma = new Map(batch.map((e) => [e.lemma, e]));
     let hits = 0;
+    let autoFixed = 0;
     for (const item of generated) {
       if (!item.lemma) {
         console.warn(`\n    ⚠️  Result missing "lemma" — cannot match to an entry, skipping`);
@@ -411,10 +670,29 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
         );
         continue;
       }
-      results.set(item.lemma, item);
+
+      const extractedEntry = batchByLemma.get(item.lemma);
+      const {
+        item: correctedItem,
+        fixedNotes,
+        ambiguousNotes
+      } = correctGeneratedItem(extractedEntry ?? {}, item);
+      if (fixedNotes.length > 0) {
+        autoFixed++;
+        console.warn(`\n    🔧  Auto-corrected lemma="${item.lemma}":`);
+        for (const note of fixedNotes) console.warn(`       - ${note}`);
+      }
+      if (ambiguousNotes.length > 0) {
+        console.warn(`\n    🟡  lemma="${item.lemma}" needs manual review (not auto-fixed):`);
+        for (const note of ambiguousNotes) console.warn(`       - ${note}`);
+      }
+
+      results.set(item.lemma, correctedItem);
       hits++;
     }
-    console.log(`✓ (${hits}/${batch.length} enriched)`);
+    console.log(
+      `✓ (${hits}/${batch.length} enriched${autoFixed > 0 ? `, ${autoFixed} auto-corrected` : ''})`
+    );
 
     // Update running category counts so later batches in the same run
     // still favor under-represented categories.
