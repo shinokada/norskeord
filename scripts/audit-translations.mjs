@@ -304,7 +304,9 @@ async function processFile(filename) {
   const langs = langFilter ? detectedLangs.filter((l) => langFilter.has(l)) : detectedLangs;
 
   console.log(`\n${'─'.repeat(60)}`);
-  console.log(`📄  ${filename}${draft ? '  [draft]' : ''}  (${entries.length} total, ${toAudit.length} to audit)`);
+  console.log(
+    `📄  ${filename}${draft ? '  [draft]' : ''}  (${entries.length} total, ${toAudit.length} to audit)`
+  );
   if (draft) console.log(`    Source: ${filePath}`);
   console.log(`    Languages: ${langs.join(', ')}`);
   console.log(`${'─'.repeat(60)}`);

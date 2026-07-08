@@ -29,7 +29,7 @@ import path from 'node:path';
 const projectRoot = process.cwd();
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
-const level = args.find(a => !a.startsWith('--'));
+const level = args.find((a) => !a.startsWith('--'));
 
 if (!level) {
   console.error('❌ Usage: node scripts/renumber-vocab-ids.mjs <level> [--dry-run]');
@@ -68,14 +68,17 @@ data.forEach((entry, idx) => {
     return;
   }
   if (idCategory !== entry.category) {
-    skipped.push({ idx, reason: `id category "${idCategory}" != entry.category "${entry.category}"`, entry });
+    skipped.push({
+      idx,
+      reason: `id category "${idCategory}" != entry.category "${entry.category}"`,
+      entry
+    });
     return;
   }
   if (!byCategory.has(idCategory)) byCategory.set(idCategory, []);
   byCategory.get(idCategory).push({ idx, num: parseInt(nnn, 10), entry });
 });
 
-let totalRenumbered = 0;
 const changes = []; // { oldId, newId }
 
 for (const [category, items] of [...byCategory.entries()].sort()) {
@@ -93,7 +96,6 @@ for (const [category, items] of [...byCategory.entries()].sort()) {
     const newId = `v-${level}-${category}-${pad3(newNum)}`;
     item.entry.id = newId;
     changes.push({ oldId, newId, norsk: item.entry.norsk });
-    totalRenumbered++;
   });
 }
 
