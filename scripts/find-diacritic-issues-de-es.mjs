@@ -101,8 +101,9 @@ function argAfter(flag) {
 
 const KIND = argAfter('--kind') || 'both';
 const LANG = argAfter('--lang') || 'both';
-const flagValues = new Set([KIND, LANG, '--kind', '--lang', '--fix', '--remove']);
-const level = rawArgs.find((a, i) => !a.startsWith('--') && rawArgs[i - 1] !== '--kind' && rawArgs[i - 1] !== '--lang');
+const level = rawArgs.find(
+  (a, i) => !a.startsWith('--') && rawArgs[i - 1] !== '--kind' && rawArgs[i - 1] !== '--lang'
+);
 
 if (!['vocab', 'uttrykk', 'both'].includes(KIND)) {
   console.error(`❌  Unknown --kind "${KIND}" — must be "vocab", "uttrykk", or "both"`);
@@ -280,7 +281,9 @@ function processFile(filename, draftPath) {
   console.log(`\n  → ${flagged.length} / ${entries.length} entries auto-detected (fixable)`);
 
   if (ambiguousFlagged.length > 0) {
-    console.log(`\n  🟡  ${ambiguousFlagged.length} entries need MANUAL review (ambiguous, not auto-fixed):`);
+    console.log(
+      `\n  🟡  ${ambiguousFlagged.length} entries need MANUAL review (ambiguous, not auto-fixed):`
+    );
     for (const { entry, ambiguous } of ambiguousFlagged) {
       console.log(`     [${entry.id || entry.lemma}] "${entry.norsk}"`);
       if (entry.example_german) console.log(`       example_german: "${entry.example_german}"`);
@@ -328,8 +331,8 @@ function processFile(filename, draftPath) {
       `  🗑️   Removed ${flagged.length} flagged entries — ${remaining.length} remain in ${filename}`
     );
     console.log(
-      `  ↻  Re-run add-language-translations.mjs for this level to regenerate the removed`
-      + ` entries' translations.`
+      `  ↻  Re-run add-language-translations.mjs for this level to regenerate the removed` +
+        ` entries' translations.`
     );
   } else if (REMOVE) {
     console.log(`  (nothing to remove)`);

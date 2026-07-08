@@ -199,7 +199,10 @@ function normalizeFieldName(rawField, validFields) {
   if (validFields.has(trimmed)) return trimmed;
 
   const lower = trimmed.toLowerCase().replace(/[()]/g, '').trim();
-  if (/^example[\s_-]*(norsk|norwegian)$/.test(lower) || /^(norsk|norwegian)[\s_-]*example$/.test(lower)) {
+  if (
+    /^example[\s_-]*(norsk|norwegian)$/.test(lower) ||
+    /^(norsk|norwegian)[\s_-]*example$/.test(lower)
+  ) {
     return validFields.has('example') ? 'example' : null;
   }
   return null;
@@ -256,7 +259,9 @@ async function withRetry(fn, label) {
     } catch (err) {
       if (attempt === MAX_RETRIES) throw err;
       const delayMs = RETRY_DELAY_MS * attempt;
-      console.warn(`  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retry in ${delayMs}ms…`);
+      console.warn(
+        `  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retry in ${delayMs}ms…`
+      );
       await new Promise((r) => setTimeout(r, delayMs));
     }
   }
@@ -288,7 +293,12 @@ Example output:
 
 function buildUserPrompt(items) {
   const blocks = items.map(({ entry, issues }) => {
-    const lines = [`id: "${entry.id}"`, `norsk: "${entry.norsk}"`, `level: ${entry.level}`, `part: ${entry.part}`];
+    const lines = [
+      `id: "${entry.id}"`,
+      `norsk: "${entry.norsk}"`,
+      `level: ${entry.level}`,
+      `part: ${entry.part}`
+    ];
     // Give full context (every language field present) so corrections stay
     // consistent with sibling fields even though only some are flagged.
     for (const [key, value] of Object.entries(entry)) {
@@ -371,7 +381,11 @@ function runDiacriticSafetyNet(entry, touchedFields) {
     });
     if (es.issues.length > 0) {
       entry.spanish = applyFixes(entry.spanish, es.headwordFixes, ES_COMMON_WORD_MAP);
-      entry.example_spanish = applyFixes(entry.example_spanish, es.headwordFixes, ES_COMMON_WORD_MAP);
+      entry.example_spanish = applyFixes(
+        entry.example_spanish,
+        es.headwordFixes,
+        ES_COMMON_WORD_MAP
+      );
       notes.push(...es.issues.map((i) => `[safety-net] ${i.detail}`));
     }
     const punctIssues = findSpanishPunctuationIssues(entry.example_spanish);
@@ -464,7 +478,12 @@ async function processDataFile(dataFilePath, filename, issuesForFile, changeLog)
   const originalRaw = fs.readFileSync(dataFilePath, 'utf8');
   const entries = JSON.parse(originalRaw);
 
-  const { entryById, byId, counts } = groupIssuesForFile(entries, issuesForFile, filename, changeLog);
+  const { entryById, byId, counts } = groupIssuesForFile(
+    entries,
+    issuesForFile,
+    filename,
+    changeLog
+  );
 
   console.log(`    Entries with actionable fixes: ${byId.size}`);
   console.log(
@@ -478,7 +497,9 @@ async function processDataFile(dataFilePath, filename, issuesForFile, changeLog)
   if (dryRun) {
     console.log(`    🔍  DRY RUN — would send ${items.length} entries to Claude:`);
     for (const { entry, issues } of items) {
-      console.log(`       • [${entry.id}] "${entry.norsk}" — ${issues.map((i) => i.field).join(', ')}`);
+      console.log(
+        `       • [${entry.id}] "${entry.norsk}" — ${issues.map((i) => i.field).join(', ')}`
+      );
     }
     return;
   }
@@ -615,7 +636,15 @@ function writeReport(changeLog) {
     '─'.repeat(70)
   ];
 
-  for (const status of ['applied', 'unresolved-by-model', 'no-response', 'no-change', 'skipped-unmapped-field', 'skipped-field-excluded', 'skipped-no-entry']) {
+  for (const status of [
+    'applied',
+    'unresolved-by-model',
+    'no-response',
+    'no-change',
+    'skipped-unmapped-field',
+    'skipped-field-excluded',
+    'skipped-no-entry'
+  ]) {
     const group = changeLog.filter((c) => c.status === status);
     if (group.length === 0) continue;
     lines.push(`\n${status.toUpperCase()} (${group.length})`);
@@ -664,7 +693,9 @@ async function main() {
       issuesByFile.set(dataFilePath, { filename: report.filename, issues: [] });
     }
     issuesByFile.get(dataFilePath).issues.push(...report.issues);
-    console.log(`\n  Loaded ${report.issues.length} issue(s) from ${reportPath.replace(PROJECT_ROOT, '.')}`);
+    console.log(
+      `\n  Loaded ${report.issues.length} issue(s) from ${reportPath.replace(PROJECT_ROOT, '.')}`
+    );
   }
 
   const changeLog = [];
@@ -675,7 +706,9 @@ async function main() {
 
   writeReport(changeLog);
 
-  const applied = changeLog.filter((c) => c.status === 'applied' && c.field !== '(safety-net)').length;
+  const applied = changeLog.filter(
+    (c) => c.status === 'applied' && c.field !== '(safety-net)'
+  ).length;
   const safetyNet = changeLog.filter((c) => c.field === '(safety-net)').length;
   const unresolved = changeLog.filter((c) => c.status === 'unresolved-by-model').length;
   console.log(`\n${'═'.repeat(60)}`);

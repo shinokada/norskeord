@@ -357,9 +357,12 @@ export const DE_AMBIGUOUS_WORDS = {
   schon: 'schon ("already") OR "schön" ("beautiful") — review manually',
   wurde: 'wurde ("was", pass./aux.) OR "würde" ("would") — review manually',
   ware: 'ware (rare noun "goods") OR "wäre" ("would be") — review manually',
-  konnte: 'konnte ("could", simple past of "können") OR "könnte" ("could/would be able to", conditional) — review manually',
-  mochte: 'mochte ("liked/wanted", simple past of "mögen") OR "möchte" ("would like") — review manually',
-  fuhren: 'fuhren ("drove", simple past of "fahren") OR "führen" ("to lead/manage") — review manually'
+  konnte:
+    'konnte ("could", simple past of "können") OR "könnte" ("could/would be able to", conditional) — review manually',
+  mochte:
+    'mochte ("liked/wanted", simple past of "mögen") OR "möchte" ("would like") — review manually',
+  fuhren:
+    'fuhren ("drove", simple past of "fahren") OR "führen" ("to lead/manage") — review manually'
 };
 
 /** German: ü/ö/ä → single-char (NFD strip) and → digraph (ue/oe/ae); ß → ss. */
@@ -652,7 +655,11 @@ export function checkLanguage({
           detail: `"${name}" contains "${tok}" (likely degraded "${wordMap[tok].label}")`
         });
       } else if (Object.prototype.hasOwnProperty.call(ambiguousWords, tok)) {
-        ambiguous.push({ kind: 'ambiguous', field: name, detail: `"${name}" contains "${tok}" — ${ambiguousWords[tok]}` });
+        ambiguous.push({
+          kind: 'ambiguous',
+          field: name,
+          detail: `"${name}" contains "${tok}" — ${ambiguousWords[tok]}`
+        });
       }
     }
   }

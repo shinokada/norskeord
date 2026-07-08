@@ -25,9 +25,10 @@ const projectRoot = process.cwd();
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const reportArgIdx = args.indexOf('--report');
-const reportPath = reportArgIdx !== -1 && args[reportArgIdx + 1]
-  ? path.resolve(projectRoot, args[reportArgIdx + 1])
-  : path.join(projectRoot, 'scripts', 'outputs', 'find-dupes.txt');
+const reportPath =
+  reportArgIdx !== -1 && args[reportArgIdx + 1]
+    ? path.resolve(projectRoot, args[reportArgIdx + 1])
+    : path.join(projectRoot, 'scripts', 'outputs', 'find-dupes.txt');
 
 const vocabPath = path.join(projectRoot, 'draft', 'a2', 'vocab-a2-new.json');
 
@@ -66,10 +67,10 @@ for (const rawLine of crossSection.split('\n')) {
   const rest = m[2];
 
   // Split the level|category pairs on the pipe separator
-  const parts = rest.split('|').map(p => p.trim());
+  const parts = rest.split('|').map((p) => p.trim());
   // A level token looks like: "A2-draft [time]" — extract the level name
   // before the first space or '['.
-  const levels = parts.map(p => (p.match(/^([^\s\[]+)/) || [])[1] || '');
+  const levels = parts.map((p) => (p.match(/^([^\s[]+)/) || [])[1] || '');
 
   const isA2DraftDupe = levels.includes('A2-draft');
   if (isA2DraftDupe) {
@@ -108,9 +109,11 @@ console.log(`Vocab file entries: ${data.length}`);
 console.log(`Entries removed: ${removedEntries.length}`);
 console.log(`Entries remaining: ${keptEntries.length}`);
 
-const notFound = [...toRemove].filter(k => !seenRemovalKeys.has(k));
+const notFound = [...toRemove].filter((k) => !seenRemovalKeys.has(k));
 if (notFound.length > 0) {
-  console.log(`\n⚠️  ${notFound.length} value(s) from the report were NOT found in ${path.relative(projectRoot, vocabPath)}:`);
+  console.log(
+    `\n⚠️  ${notFound.length} value(s) from the report were NOT found in ${path.relative(projectRoot, vocabPath)}:`
+  );
   for (const k of notFound) console.log('  ' + k);
 }
 

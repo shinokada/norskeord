@@ -73,7 +73,9 @@ Use scripts/assign-ids.mjs
 2. Assign the next sequential ID to each new entry in the draft file.
 
 ## Step 5 — Merge into production
+
 USE scripts/merge-to-production.mjs
+
 1. Back up the current production file first (matches your existing `.bak` convention): copy `src/lib/data/vocab-{level}.json` → `vocab-{level}.json.bak` (and same for `uttrykk-{level}.json`).
 2. Append or merge the validated, ID-assigned draft entries into the production file.
 3. Spot-check a few entries in the running app before considering the batch done.
