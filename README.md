@@ -15,7 +15,7 @@ Vocabulary flashcards, quiz, grammar practice, and Norskprøven exam prep coveri
 | Styling           | Tailwind CSS v4 + Flowbite Svelte           |
 | Database / Auth   | Supabase (Postgres + RLS + Edge Functions)  |
 | Deployment        | Vercel (adapter-vercel)                     |
-| i18n              | Paraglide JS — EN, NB, ES, UK               |
+| i18n              | Paraglide JS — EN, NB, ES, UK, DE           |
 | Spaced repetition | ts-fsrs                                     |
 | Payments          | Lemon Squeezy                               |
 | Email             | Resend                                      |
@@ -52,7 +52,7 @@ Vocabulary flashcards, quiz, grammar practice, and Norskprøven exam prep coveri
 ## Data files
 
 Vocabulary and content live in `src/lib/data/` as static JSON — read at build time, never queried from the database.
-Files are deviced by Common European Framework of Reference for Languages (CEFR).
+Files are divided by Common European Framework of Reference for Languages (CEFR) level.
 
 ```
 vocab-a1.json          uttrykk-a1.json
@@ -76,11 +76,17 @@ norskproven-*.json
   "example_english": "We travel abroad every year.",
   "spanish": "viajar",
   "ukrainian": "подорожувати",
+  "german": "reisen",
+  "example_spanish": "Viajamos al extranjero cada año.",
+  "example_ukrainian": "Ми подорожуємо за кордон щороку.",
+  "example_german": "Wir reisen jedes Jahr ins Ausland.",
   "level": "B1",
   "category": "travel",
   "part": "verb"
 }
 ```
+
+`spanish`, `ukrainian`, and `german` (plus their `example_*` counterparts) are optional and populated by `scripts/add-language-translations.mjs` — see [Adding a new language](#adding-a-new-language) below.
 
 > **Critical:** `norsk` is the FSRS progress key in localStorage and Supabase. Never rename or change it for existing entries — it would break all user progress.
 
@@ -111,7 +117,7 @@ iPad PWA note: magic links were replaced with OTP specifically to fix a cookie-j
 
 ## i18n
 
-Paraglide JS. Message files in `messages/` (en.json, nb.json, es.json, uk.json). Compiled output goes to `src/lib/paraglide/` — do not edit those files directly.
+Paraglide JS. Message files in `messages/` (en.json, nb.json, es.json, uk.json, de.json). Compiled output goes to `src/lib/paraglide/` — do not edit those files directly.
 
 To add or update keys, edit the JSON files and run:
 
@@ -127,6 +133,24 @@ To translate all keys in `en.json` to another locale using the Anthropic API:
 node scripts/translate-messages.mjs --language spanish
 node scripts/translate-messages.mjs --language ukrainian --batch 25
 ```
+
+To check i18n key parity/health across locales, see [Maintenance → i18n checks](#maintenance).
+
+---
+
+## Adding a new language
+
+Full walkthrough: `ai-docs/how-to-add-new-languages/how-to.md`. Two steps are required for a fully supported new UI locale (e.g. adding French, `fr`):
+
+1. **Create `messages/fr.json`** — either write it by hand or generate it from the English source of truth:
+
+   ```bash
+   node scripts/translate-messages.mjs --language french
+   ```
+
+2. **Update the Supabase OTP email template** (manual, one-time, in the Supabase dashboard under Authentication → Email Templates → OTP). The template uses Go conditionals on `{{ .UserMetaData.locale }}` — passed in from `+page.server.ts` via the `data: { locale }` option on `signInWithOtp` — to render the subject/body in the right language with an English fallback. Add a new `{{ else if eq .UserMetaData.locale "fr" }}` branch for the new locale.
+
+Vocabulary/expression data (`spanish`, `ukrainian`, `german`, …) is a separate concern from UI locale — see `scripts/add-language-translations.mjs` in [Scripts](#scripts) and `ai-docs/multi-language.md` for adding a new data-translation language to `src/lib/data/*.json`.
 
 ---
 
@@ -188,6 +212,27 @@ Utility scripts live in `scripts/`. See `scripts/how-to.md` for full usage. Key 
 
 ---
 
+## Maintenance
+
+Runbooks and troubleshooting notes live in `ai-docs/maintenance/`. Highlights:
+
+| Doc                              | Covers                                                                     |
+| --------------------------------- | --------------------------------------------------------------------------- |
+| `vocab-uttrykk-data.md`           | Diacritic checks, vocab/uttrykk format validation, dupes, translation/audit and normalisation scripts, ID renumbering, entry counts |
+| `i18n.md`                         | Suggested flow for unused-key detection, removal, and locale key-parity checks |
+| `c2.md`                           | Notes on where a stale C1/C2 reference is intentional and safe post-migration to the merged "C" level |
+| `login.md`                        | Manual test plan for Turnstile, last-path redirect, first-time vs returning login, in-app browser banner, welcome email |
+| `onboarding.md`                   | How to reset a test user to re-trigger the onboarding slides overlay        |
+| `full-migration-cross-device.md`  | Manual cross-device test plan for the free→Plus localStorage→Supabase progress migration |
+| `cleanup-e2e-users.md`            | Removing mock users created by Playwright login/OTP tests                  |
+| `auth-check.md`                   | Where to verify auth state in the Supabase dashboard (Users, Logs, SQL Editor) |
+| `supabase-login.md`               | Link/bookmark for the Supabase auth logs dashboard                         |
+| `daily-notification.md`           | curl command to manually trigger the `send-push-reminders` Edge Function   |
+| `lemonsqueezy.md`                 | curl commands to look up the Lemon Squeezy store ID and variant ID          |
+| `ngrok.md`                        | Testing the login flow on a real Android device via ngrok tunnel           |
+
+---
+
 ## Vercel crons
 
 Defined in `vercel.json`:
@@ -230,4 +275,6 @@ The search index must be built before SvelteKit so it lands in `static/data/` be
 | `ai-docs/ideas/`                   | Backlog ideas                                                  |
 | `ai-docs/bugs/`                    | Known bug notes                                                |
 | `ai-docs/how-to-monitor-and-test/` | Monitoring and test runbooks                                   |
+| `ai-docs/maintenance/`             | Operational runbooks — see [Maintenance](#maintenance)         |
+| `ai-docs/how-to-add-new-languages/`| Adding a new UI/data locale — see [Adding a new language](#adding-a-new-language) |
 | `scripts/how-to.md`                | Script usage reference                                         |
