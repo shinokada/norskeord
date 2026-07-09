@@ -75,6 +75,8 @@ Scans all vocab-XX.json files in the norskeord project and reports duplicate 'no
 Find duplicate 'norsk' entries across uttrykk-XX.json files. Excludes uttrykk-XX-preview.json files (they are subsets of the main files).
 
 ```bash
+  python scripts/find_dupes.py --details
+  # or
   python scripts/find_dupes.py
 ```
 

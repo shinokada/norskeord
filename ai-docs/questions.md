@@ -1,12 +1,69 @@
 # Questions
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
----
-The level C categories are defined in src/lib/config.ts as `const CATEGORIES_BY_LEVEL`. 
 
-1. If example is there just translate it to example_english, example_spanish, example_german, example_ukrainian.
-2. If `example` is there, find a related category from level C category
-3. Does the following level C categories cover to create a new example?
+---
+I have data-rules/recommendation.md for data-rules/vocab-and-uttrykk.md. What do you think about the recommendation.md.
+
+If I change vocab-and-uttrykk.md, I need to change the followings:
+- ai-docs/instructions/image-converter-c.md, image-conveter-b1.md
+- all of src/lib/data/uttrykk-xx.json to review
+- all of src/lib/data/vocab-xx.json to review
+- I wonder if it is possible to catch the changes using script?
+
+---
+I have draft/c/vocab-new-c.json and uttrykk-c-new.json. I asked you to cross-reference with scripts/outputs/find-dupes-details.txt and you answered the following.
+
+Can you go ahead and make all these edits now 
+
+```
+The details file already exists — let's read it and the relevant draft files.I ran through all 29 duplicate groups in `find-dupes-details.txt` that involve `C-draft`/`C-draft-uttrykk`, using the same test we applied to `ellers` and `rå`: **does the draft entry add a genuine additional sense, or is it just the same meaning restated?**
+
+Only if it's a genuinely different sense do we merge translation fields into the existing entry (leaving examples untouched, per the `rå` precedent) — otherwise the draft entry is just a straight duplicate and gets deleted with no edits to the kept entry.
+
+## Group A — Just delete from the draft file (same sense, no merge needed) — 23 entries
+
+| Word                | Keep (unchanged)                  | Delete from draft    |
+| ------------------- | --------------------------------- | -------------------- |
+| behørig             | C `v-c-highly-formal-021`         | `vocab-c-new.json`   |
+| derimot             | B2 `v-b2-discourse-markers-001`   | `vocab-c-new.json`   |
+| heftig              | B2 `v-b2-advanced-adjectives-029` | `vocab-c-new.json`   |
+| kav (et)            | C `v-c-embodied-emotion-007`      | `vocab-c-new.json`   |
+| konstant            | B2 `v-b2-academic-language-035`   | `vocab-c-new.json`   |
+| kuvøse (en/ei)      | C `v-c-medicine-healthcare-002`   | `vocab-c-new.json`   |
+| rigid               | C `v-c-psychology-advanced-007`   | `vocab-c-new.json`   |
+| sart                | C `v-c-character-temperament-002` | `vocab-c-new.json`   |
+| slede (en)          | C `v-c-nature-landscape-001`      | `vocab-c-new.json`   |
+| tjære (en/ei)       | C `v-c-everyday-objects-013`      | `vocab-c-new.json`   |
+| tram (en)           | C `v-c-everyday-objects-015`      | `vocab-c-new.json`   |
+| utsagn (et)         | B2 `v-b2-communication-037`       | `vocab-c-new.json`   |
+| å erklære           | B2 `v-b2-politics-069`            | `vocab-c-new.json`   |
+| å framstå           | B2 `v-b2-work-career-044`         | `vocab-c-new.json`   |
+| å gjenspeile        | B2 `v-b2-advanced-verbs-013`      | `vocab-c-new.json`   |
+| å henrette          | B2 `v-b2-law-034`                 | `vocab-c-new.json`   |
+| å omfatte           | B2 `v-b2-academic-language-040`   | `vocab-c-new.json`   |
+| å omkomme           | C `v-c-formal-writing-012`        | `vocab-c-new.json`   |
+| å skjenke           | B2 `v-b2-culture-047`             | `vocab-c-new.json`   |
+| skinnet bedrar      | C-uttrykk `u-c-058`               | `uttrykk-c-new.json` |
+| til enhver tid      | B2-uttrykk `u-b2-273`             | `uttrykk-c-new.json` |
+| å forskanse seg     | C-uttrykk `u-c-137`               | `uttrykk-c-new.json` |
+| å gå i seg selv     | C-uttrykk `u-c-112`               | `uttrykk-c-new.json` |
+| å hive etter pusten | C-uttrykk `u-c-080`               | `uttrykk-c-new.json` |
+
+## Group B — Genuine second sense: merge fields, keep the existing example, then delete from draft — 6 entries
+
+- **bot** (A2, money) → add penance/atonement sense. `english`: "fine / penalty; penance; atonement"
+- **ellers** (A2, communication) → already scoped in your prior session: add "apart from that; in other respects"
+- **fortapt** (C, complex-emotions) → add biblical/damned sense: "lost; dejected; at a loss; hopeless; damned (biblical sense)"
+- **rå** (A2, cooking) → add slang sense: "raw; cool; awesome (slang)"
+- **veldig** (A2, descriptive-adjectives) → add the adjective sense: "very; very great; mighty; powerful" — note this one mixes an adverb sense (A2) with an adjective sense (C-draft's `part: adjective`), so worth a quick look before merging
+- **å avle** (B2, science) → add figurative sense: "to breed, to cultivate, to produce; to give rise to"
+
+For each of these six, I'd merge `english`/`ukrainian`/`spanish`/`german` only, exactly like we did for `ellers`, and leave `example`/`example_*` alone.
+
+Want me to go ahead and make all these edits now (23 straight deletions + 6 merges), or would you like to eyeball any of the calls above first — particularly `veldig`, `konstant`, `å omkomme`, and `slede`, which were the closest judgment calls?
+```
+
 ---
 
 I used scripts/enrich-vocab.mjs last time. The outputs have many diacritic issues. I also have scripts/add-language-translations.mjs.
