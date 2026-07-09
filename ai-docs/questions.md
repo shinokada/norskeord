@@ -1,6 +1,31 @@
 # Questions
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+---
+The level C categories are defined in src/lib/config.ts as `const CATEGORIES_BY_LEVEL`. 
+
+1. If example is there just translate it to example_english, example_spanish, example_german, example_ukrainian.
+2. If `example` is there, find a related category from level C category
+3. Does the following level C categories cover to create a new example?
+---
+
+I used scripts/enrich-vocab.mjs last time. The outputs have many diacritic issues. I also have scripts/add-language-translations.mjs.
+My goal is to transform draft/c/vocab-uttrykk/extracted-uttrykk-c.json and extracted-vocab-c.json into the format of src/lib/data/uttrykk-c.json and vocab-c.json so that I can merge it later.
+
+I create STEP 2 in ai-docs/instructions/image-converter-c.md before.
+
+I'm wondering which script should I use to achieve my goal with as less mistakes as possible. Should I create a new script? What do you think?
+
+---
+The draft/c/grammatikk.md explaing grammar for Nivå C. substantiv.md and ubestemt-artikkel.md have questions for substantiv and ubestemt artikkel grammar points. You can find answers in answers.md.
+I'd like to create Nivå C grammar questions. You can find src/lib/grammar directory for more details. 
+I don't need a lot of questions but a good number of questions to cover as many as possible.
+1. The questions are from a textbook. Can I use some of them?
+2. How many questions are appropiate?
+Do you have any more suggestions?
+Do not create questions yet. Let's discuss first.
+
+I will be adding more in draft/c directory and you can find it in draft/c/innhold.md.
 
 svelte mcp server is running.
 

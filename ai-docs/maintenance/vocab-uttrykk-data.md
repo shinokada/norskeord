@@ -76,7 +76,6 @@ Find duplicate 'norsk' entries across uttrykk-XX.json files. Excludes uttrykk-XX
 
 ```bash
   python scripts/find_dupes.py
-  python scripts/find_uttrykk_dupes.py
 ```
 
 ## translate to other languages

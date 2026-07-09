@@ -11,10 +11,12 @@ This document defines **two separate AI tasks** used one after another on the sa
 Read the attached image(s) and produce two JSON arrays — one for words, one for expressions — containing **only** these fields:
 
 ```
-id, norsk, lemma, definition, level, part, category
+id, norsk, lemma, definition, level, part, category, example (only if present in image)
 ```
 
-Do **not** generate `english`, `ukrainian`, `spanish`, `german`, `example`, `example_english`, `example_ukrainian`, `example_spanish`, `example_german` in this step. Leave them out of the object entirely (Step 2 adds them).
+Do **not** generate `english`, `ukrainian`, `spanish`, `german`, `example_english`, `example_ukrainian`, `example_spanish`, `example_german` in this step. Leave them out of the object entirely (Step 2 adds them).
+
+`example` is normally also left out in Step 1 (Step 2 generates it). **Exception:** if the image itself contains a labeled `Eks.: ...` sentence for an entry, capture it verbatim as `example` in the Step 1 output instead of discarding it — see Rule 1. Never invent an `example` value in Step 1; only carry one over when the image actually provides it.
 
 `category` is filled in Step 1 **only** for expressions, where it is always the fixed value `"uttrykk"`. For words, omit `category` — it requires judgment about meaning and dataset balance, which belongs in Step 2.
 
@@ -58,7 +60,9 @@ Expressions:
 Copy `norsk` as written (before transformation). For `definition`:
 
 - **Words:** copy the image's definition text as-is.
-- **Expressions:** rewrite the image's explanation into one clean Bokmål sentence. Drop `=` usage notes and inline examples from the image (those inform your understanding but don't belong verbatim in `definition`).
+- **Expressions:** rewrite the image's explanation into one clean Bokmål sentence.
+- **Both:** always drop a leading `her: ` prefix from `definition` if present — it's an image-formatting artifact, not part of the definition.
+- **Both:** if the image text includes a trailing `Eks.: ...` example sentence after the definition, remove it entirely from `definition` and instead capture it verbatim (minus the `Eks.: ` label) as the `example` field on that entry, exactly as printed — do not translate, edit, or generate a new sentence for it. If an image lists two `Eks.:` sentences separated by `/`, use only the first as `example`. If no `Eks.:` sentence is present, omit `example` entirely from the object (Step 2 will generate one).
 
 ### 2. Convert noun gender
 
@@ -68,6 +72,26 @@ Copy `norsk` as written (before transformation). For `definition`:
 | `(n)`   | `(et)`    |
 | `(f)`   | `(ei)`    |
 | `(m/f)` | `(en/ei)` |
+| `(m/n)` | `(en/et)` |
+
+### 2c. Plural-only nouns
+
+Some nouns exist only in plural form with no singular counterpart (e.g. `opptøyer`). For these:
+
+- Do **not** force a singular gender marker (`(en)`/`(et)`/`(ei)`) onto the headword — the word has no singular form to carry one.
+- If the image marks the entry with a plural/gender combo like `(pl., m)` or `(pl., n)`, strip the marker entirely and set `norsk`/`lemma` to the bare plural form as printed (e.g. `norsk`: `opptøyer`).
+- Image gender markers on plural-only nouns are sometimes wrong or based on old grammar (as with `opptøyer`, marked `(m)` in the book but neuter per ordbokene.no). Don't try to resolve the "correct" gender in Step 1 — just drop the marker. Flag the entry per Rule 9 so it can be checked in ordbokene.no if needed.
+- `part` is still `"noun"`.
+
+### 2b. Strip non-gender markers from `norsk`
+
+After using a part-of-speech marker (`(adj.)`, `(adv.)`, `(v1)`, `(v2)`, `(v3)`, `(ureg.)`, `(reg)`, etc.) per Rule 4 to determine `part`, remove that marker from the `norsk` field — it must not appear in the final output. Only noun gender markers are kept in `norsk`, and only in their converted form (Rule 2).
+
+| Image               | `norsk` (final)                      | `part`      |
+| ------------------- | ------------------------------------ | ----------- |
+| `yndig (adj.)`      | `yndig`                              | `adjective` |
+| `omtåket (adj.)`    | `omtåket`                            | `adjective` |
+| `svirre (v1) rundt` | see Rule 3 (multi-word → expression) | `phrase`    |
 
 ### 3. Decide: word or expression?
 
@@ -75,7 +99,9 @@ An entry is an **expression** if the **headword itself** (`norsk`) is a multi-wo
 
 An entry is a **word** if `norsk` is a single inflectable word, even if its definition or example happens to mention or use an idiom — for example `nellikspiker (m)`, `sitre (v1)`, `kribling (m/f)`.
 
-If unsure, default to **word** unless the phrase clearly functions as a set idiom independent of its literal parts.
+**Multi-word headwords are always expressions — even if they carry a gender marker.** A gender marker like `(m)` on a multi-word headword (e.g. `oppsatt kveld (m)`) does not make it a noun-phrase word. Treat it as an expression: strip the marker entirely, set `norsk`/`lemma` to `oppsatt kveld`, `category: "uttrykk"`, `part: "phrase"`.
+
+If unsure, default to **word** only when `norsk` is a single word. Any multi-word headword is an expression, regardless of markers.
 
 ### 4. Determine the part of speech
 
@@ -91,6 +117,7 @@ If unsure, default to **word** unless the phrase clearly functions as a set idio
 | `(v2)`                             | `verb`      |                                                                                     |
 | `(v3)`                             | `verb`      |                                                                                     |
 | `(v1, v2)`, `(v1, v3)`, `(v2, v3)` | `verb`      |                                                                                     |
+| `(v4)`                             | `verb`      |                                                                                     |
 | `(ureg.)`, `(reg)`                 | `verb`      | Marks an irregular verb, not a distinct part of speech — always resolves to `verb`. |
 
 **No marker present:** infer the part of speech from context and choose the closest matching value above.
@@ -127,7 +154,7 @@ Always set `"level": "C"` unless told otherwise for a specific batch of images.
 
 - Always set `"id": ""`.
 - Return two separate valid JSON arrays: one for words, one for expressions.
-- Do not include `english`, `ukrainian`, `spanish`, `german`, `example`, `example_english`, `example_ukrainian`, `example_spanish`, `example_german`, or (for words) `category` — those are added in Step 2.
+- Do not include `english`, `ukrainian`, `spanish`, `german`, `example_english`, `example_ukrainian`, `example_spanish`, `example_german`, or (for words) `category` — those are added in Step 2. Include `example` only when the image provides a labeled `Eks.:` sentence (Rule 1); otherwise omit it.
 - Preserve Norwegian spelling exactly except for the transformations above.
 - Do not invent information from the image. If text is unreadable, leave the field empty instead of guessing.
 - No markdown, explanations, comments, or additional text — output only the two JSON arrays.
@@ -217,7 +244,9 @@ character-temperament,
 embodied-emotion,
 manner-of-motion,
 interpersonal-conflict,
-intensifiers-degree
+intensifiers-degree,
+gastronomy,
+cultural-heritage
 ```
 
 Expressions always use `"uttrykk"` — already set in Step 1, do not change it.
@@ -225,12 +254,15 @@ Expressions always use `"uttrykk"` — already set in Step 1, do not change it.
 When choosing categories for words:
 
 - Match the category to the meaning of the word.
+- If the object already has a pre-existing `example` (carried over from Step 1's `Eks.:` text), consider it together with `definition` — both as equal signals — when choosing the category. Don't rely on `definition` alone and ignore an existing `example`; the example's context can sometimes point to a more precise category than the definition does on its own.
 - You will be given the current category distribution of the existing dataset (see workflow doc) — use it to favor under-represented categories over already-common ones, rather than defaulting to the same few categories repeatedly.
 - Do not invent new category names.
 
 ### 10. Generate an example sentence (Norwegian)
 
-One natural **Norwegian** sentence per item that clearly demonstrates the meaning, sounds natural to native speakers, uses correct grammar, is concise, fits the chosen category, and uses the word in an appropriate grammatical form. Store in `example`. Do not write this field in English or any other language — translations belong in `example_english`, `example_ukrainian`, `example_spanish`, `example_german` (Rule 11).
+**10a. If `example` already exists** (carried over from Step 1's `Eks.:` text): keep it exactly as written — do not regenerate, edit, or rephrase it. The only thing left to do with it is translate it into `example_english`, `example_spanish`, `example_german`, `example_ukrainian` per Rule 11. It has already done its other job — informing category choice alongside `definition` (Rule 9) — before this step.
+
+**10b. Otherwise, generate a new one:** produce one natural **Norwegian** sentence per item that clearly demonstrates the meaning, sounds natural to native speakers, uses correct grammar, is concise, fits the chosen category, and uses the word in an appropriate grammatical form. Store in `example`. Do not write this field in English or any other language — translations belong in `example_english`, `example_ukrainian`, `example_spanish`, `example_german` (Rule 11).
 
 ### 11. Translate the example sentence
 
@@ -241,5 +273,5 @@ Translate the example sentence naturally (not word-for-word) into `example_engli
 - Return two separate valid JSON arrays: one for words, one for expressions, matching the input structure plus the new fields.
 - Every word object must contain every field in the Final field order list above.
 - Every expression object must contain every field in the Final field order list above, except `category` is always `"uttrykk"` (already present from Step 1).
-- Do not modify `id`, `norsk`, `lemma`, `definition`, `level`, or `part`.
+- Do not modify `id`, `norsk`, `lemma`, `definition`, `level`, `part`, or a pre-existing `example` carried over from Step 1 (Rule 10).
 - No markdown, explanations, comments, or additional text — output only the two JSON arrays.

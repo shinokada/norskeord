@@ -47,10 +47,10 @@ Suggested script: `scripts/enrich-vocab.mjs --level {level}`, following the same
 This step doesn't need chat or image upload at all — it's pure JSON-in, JSON-out, which is why it's a good candidate for a script instead of manual conversation.
 
 ## Step 3A - Find duplicates
+The following will find duplicates for vocab and uttrykk.
 
 ```bash
   python scripts/find_dupes.py
-  python scripts/find_uttrykk_dupes.py
 ```
 
 ## Step 3B — Validate (scripted)
@@ -95,8 +95,20 @@ USE scripts/merge-to-production.mjs
 
 ## Note on duplicates when appending
 
-Appending across multiple images increases the chance the same `lemma` shows up twice (e.g. if a word appears on two different pages, or you accidentally process the same image twice). Neither Step 1 nor Step 2 checks for this. Before Step 3 validation, run `find_dupes.py` and `find_uttrykk_dupes.py` against the accumulated draft file, since duplicates weren't a concern when each image produced its own standalone file.
+Appending across multiple images increases the chance the same `lemma` shows up twice (e.g. if a word appears on two different pages, or you accidentally process the same image twice). Neither Step 1 nor Step 2 checks for this. Before Step 3 validation, run `find_dupes.py` against the accumulated draft file, since duplicates weren't a concern when each image produced its own standalone file.
 
 ## Note on missing Spanish/Ukrainian in production
 
 `vocab-c.json` and `uttrykk-c.json` currently only have `english`/`german` filled in — `spanish`/`ukrainian` are being backfilled separately. Method 2 still generates all four languages for every new entry (per `image-converter.md`), so new entries won't be behind once the backfill catches up to older ones.
+
+## Command workflow
+
+```bash
+node scripts/enrich-vocab.mjs --level c --dry-run   # optional: confirm counts dropped to 216/224
+node scripts/enrich-vocab.mjs --level c
+node scripts/find-diacritic-issues-all.mjs c
+python scripts/find_dupes.py
+node scripts/check-vocab.mjs / check-uttrykk.mjs
+node scripts/assign-ids.mjs c
+node scripts/merge-to-production.mjs
+```
