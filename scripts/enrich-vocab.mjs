@@ -37,7 +37,7 @@
  *   --force     Re-enrich entries even if their lemma already exists in the output file.
  *   --batch     Number of entries per API call (default: 10).
  *
- * After this step, run find_dupes.py / find_uttrykk_dupes.py on the output
+ * After this step, run find_dupes.py on the output
  * before Step 3 validation (check-vocab.mjs / check-uttrykk.mjs), per
  * work-flow.md.
  */
@@ -224,7 +224,9 @@ const CATEGORIES_BY_LEVEL = {
     'embodied-emotion',
     'manner-of-motion',
     'interpersonal-conflict',
-    'intensifiers-degree'
+    'intensifiers-degree',
+    'gastronomy',
+    'cultural-heritage'
   ]
 };
 
@@ -336,6 +338,7 @@ function buildWordsPrompt(batch, catCounts) {
       lemma: e.lemma,
       norsk: e.norsk,
       ...(usesDefinition ? { definition: e.definition } : {}),
+      ...(e.example ? { example: e.example } : {}),
       part: e.part,
       level: e.level
     })),
@@ -358,14 +361,16 @@ ${englishRule}
 ${CATEGORIES.map((c) => `   - ${c}`).join('\n')}
    Current category distribution across the existing dataset (favor under-represented categories rather than repeating the same few):
 ${distributionText}
-6. "example" — ONE natural Norwegian sentence using the word/expression in an appropriate grammatical form. This must be written in Norwegian (Bokmål), NOT translated — it is a new sentence you write, not a translation of anything.
-7. "example_english" — English translation of the example sentence.
+   If the entry below already includes an "example" field, weigh it together with "definition" — as equal signals — when choosing the category; don't rely on "definition" alone.
+6. "example" — if the entry below already includes an "example" field, copy it back EXACTLY as given, character-for-character, with no edits, rephrasing, or regeneration. Otherwise, write ONE natural Norwegian sentence using the word/expression in an appropriate grammatical form. This must be written in Norwegian (Bokmål), NOT translated — it is a new sentence you write, not a translation of anything.
+7. "example_english" — English translation of the example sentence (the pre-existing one if given, otherwise the one you wrote).
 8. "example_ukrainian" — Ukrainian translation of the example sentence.
 9. "example_spanish" — Spanish translation of the example sentence.
 10. "example_german" — German translation of the example sentence.
 
 Rules:
 - Translate naturally, not word-for-word.
+- If an entry already has an "example" field, that field is authoritative and must be returned unchanged in your output's "example" — only the example_* translations are new work for that entry.
 - The example sentence should be concise, grammatically correct, and clearly demonstrate the meaning.
 - Do NOT use typographic quotes (" " „ « ») in your output — use plain ASCII quotes if needed.
 - CRITICAL — special characters: never drop or substitute required diacritics/accents. Norwegian needs æ/ø/å (e.g. "nærheten", "bålet", "Fårikål", "nøyaktig", "videregående", "ønsker", "år", "Påsken"), German needs ä/ö/ü/ß (e.g. "für", "möchte", "Erklärung", "während", "Übung"), and Spanish needs á/é/í/ó/ú/ñ (e.g. "años", "mañana", "también"). Double-check every word in every language before responding.
@@ -384,6 +389,7 @@ function buildExpressionsPrompt(batch) {
     batch.map((e) => ({
       lemma: e.lemma,
       norsk: e.norsk,
+      ...(e.example ? { example: e.example } : {}),
       part: e.part,
       level: e.level
     })),
@@ -398,8 +404,8 @@ For each entry below, generate:
 2. "ukrainian" — Ukrainian translation.
 3. "spanish" — Spanish translation.
 4. "german" — German translation.
-5. "example" — ONE natural Norwegian sentence using the expression in context. This must be written in Norwegian (Bokmål), NOT translated — it is a new sentence you write, not a translation of anything.
-6. "example_english" — English translation of the example sentence.
+5. "example" — if the entry below already includes an "example" field, copy it back EXACTLY as given, character-for-character, with no edits, rephrasing, or regeneration. Otherwise, write ONE natural Norwegian sentence using the expression in context. This must be written in Norwegian (Bokmål), NOT translated — it is a new sentence you write, not a translation of anything.
+6. "example_english" — English translation of the example sentence (the pre-existing one if given, otherwise the one you wrote).
 7. "example_ukrainian" — Ukrainian translation of the example sentence.
 8. "example_spanish" — Spanish translation of the example sentence.
 9. "example_german" — German translation of the example sentence.
@@ -408,6 +414,7 @@ Do not generate a "category" — expressions always use "uttrykk", already set.
 
 Rules:
 - Translate naturally, not word-for-word.
+- If an entry already has an "example" field, that field is authoritative and must be returned unchanged in your output's "example" — only the example_* translations are new work for that entry.
 - The example sentence should be concise, grammatically correct, and clearly demonstrate the meaning.
 - Do NOT use typographic quotes (" " „ « ») in your output — use plain ASCII quotes if needed.
 - CRITICAL — special characters: never drop or substitute required diacritics/accents. Norwegian needs æ/ø/å (e.g. "nærheten", "bålet", "Fårikål", "nøyaktig", "videregående", "ønsker", "år", "Påsken"), German needs ä/ö/ü/ß (e.g. "für", "möchte", "Erklärung", "während", "Übung"), and Spanish needs á/é/í/ó/ú/ñ (e.g. "años", "mañana", "también"). Double-check every word in every language before responding.
@@ -595,7 +602,10 @@ function mergeEntry(extracted, generated, isExpression) {
     ukrainian: generated.ukrainian ?? '',
     spanish: generated.spanish ?? '',
     german: generated.german ?? '',
-    example: generated.example ?? '',
+    // If Step 1 already carried a real example (from the image's Eks.:
+    // text), it is authoritative and must never be overwritten by a
+    // model-generated one, regardless of what the prompt returns.
+    example: extracted.example ?? generated.example ?? '',
     example_english: generated.example_english ?? '',
     example_ukrainian: generated.example_ukrainian ?? '',
     example_spanish: generated.example_spanish ?? '',
@@ -762,7 +772,7 @@ async function main() {
   });
 
   console.log('\n✅  Done.');
-  console.log('    Next: run find_dupes.py and find_uttrykk_dupes.py on the output,');
+  console.log('    Next: run find_dupes.py on the output,');
   console.log('    then check-vocab.mjs / check-uttrykk.mjs (Step 3 in work-flow.md).');
 }
 
