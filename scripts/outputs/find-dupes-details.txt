@@ -1,0 +1,344 @@
+Entry counts: {'A1': 457, 'A1-uttrykk': 126, 'A2': 916, 'A2-uttrykk': 288, 'B1': 1169, 'B1-uttrykk': 321, 'B2': 1667, 'B2-uttrykk': 799, 'C': 502, 'C-uttrykk': 192, 'C-draft': 189, 'C-draft-uttrykk': 212}
+Total entries: 6838
+
+=== CROSS-FILE DUPLICATES (13) — full side-by-side entries ===
+
+================================================================================
+[1] DUPLICATE: 'jo'  (2 entries)
+================================================================================
+  --- 1: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-216
+      lemma           : jo
+      english         : yes (contradicting a negative statement) / of course / well
+      ukrainian       : та ні, навпаки / та звичайно / але ж
+      spanish         : si (contradiciendo una negacion) / claro que si
+      german          : doch
+      example         : Du liker vel ikke kaffe? Jo, jeg liker kaffe veldig godt!
+      example_english : You don't like coffee, do you? Oh yes I do, I like coffee very much!
+      category        : uttrykk
+      part            : phrase
+  --- 2: B2 ------------------------------------------------------------------
+      id              : v-b2-discourse-markers-017
+      lemma           : jo
+      english         : after all, of course, yes
+      ukrainian       : адже, звичайно, так
+      spanish         : ya, de hecho, por supuesto
+      german          : doch / ja / bekanntlich
+      example         : Du vet jo at vi må gjøre dette i dag.
+      example_english : You know, after all, that we have to do this today.
+      category        : discourse-markers
+      part            : adverb
+
+================================================================================
+[2] DUPLICATE: 'klar'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-weather-009
+      lemma           : klar
+      english         : clear (weather)
+      ukrainian       : ясний (про погоду)
+      spanish         : despejado
+      german          : klar
+      example         : Det er klart vær og stjernehimmel.
+      example_english : There is clear weather and a starry sky.
+      category        : weather
+      part            : adjective
+  --- 2: B2 ------------------------------------------------------------------
+      id              : v-b2-communication-010
+      lemma           : klar
+      english         : clear / distinct
+      ukrainian       : чіткий / зрозумілий
+      spanish         : claro
+      german          : klar
+      example         : Et klart budskap unngår misforståelser.
+      example_english : A clear message avoids misunderstandings.
+      category        : communication
+      part            : adjective
+
+================================================================================
+[3] DUPLICATE: 'språk (et)'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-communication-083
+      lemma           : språk
+      english         : language
+      ukrainian       : мова
+      spanish         : idioma, lengua
+      german          : Sprache
+      example         : Norsk er et interessant språk å lære.
+      example_english : Norwegian is an interesting language to learn.
+      category        : communication
+      part            : noun
+  --- 2: B1 ------------------------------------------------------------------
+      id              : v-b1-language-learning-018
+      lemma           : språk
+      english         : a language
+      ukrainian       : мова
+      spanish         : un idioma / una lengua
+      german          : Sprache (die)
+      example         : Hun snakker tre språk flytende.
+      example_english : She speaks three languages fluently.
+      category        : language-learning
+      part            : noun
+
+================================================================================
+[4] DUPLICATE: 'ved siden av'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-directions-004
+      lemma           : ved siden av
+      english         : next to / beside
+      ukrainian       : поруч / біля
+      spanish         : al lado de / junto a
+      german          : neben
+      example         : Parken er ved siden av skolen.
+      example_english : The park is next to the school.
+      category        : directions
+      part            : preposition
+  --- 2: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-268
+      lemma           : ved siden av
+      english         : next to / beside
+      ukrainian       : поруч з / біля
+      spanish         : al lado de
+      german          : neben
+      example         : Hun satte seg ved siden av meg på bussen.
+      example_english : She sat down next to me on the bus.
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[5] DUPLICATE: 'å føle seg'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-health-014
+      lemma           : føle seg
+      english         : to feel
+      ukrainian       : почуватися
+      spanish         : sentirse
+      german          : sich fühlen
+      example         : Hvordan føler du deg i dag?
+      example_english : How do you feel today?
+      category        : health
+      part            : verb
+  --- 2: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-172
+      lemma           : føle seg
+      english         : to feel
+      ukrainian       : почуватися
+      spanish         : sentirse
+      german          : sich fühlen
+      example         : Jeg føler meg ikke bra i dag, så jeg blir hjemme.
+      example_english : I don't feel well today, so I'm staying home.
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[6] DUPLICATE: 'å kle på seg'  (2 entries)
+================================================================================
+  --- 1: A1 ------------------------------------------------------------------
+      id              : v-a1-clothes-024
+      lemma           : kle på seg
+      english         : to get dressed
+      ukrainian       : одягатися
+      spanish         : vestirse
+      german          : sich anziehen
+      example         : Jeg kler på meg etter dusjen.
+      example_english : I get dressed after the shower.
+      category        : clothes
+      part            : verb
+  --- 2: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-213
+      lemma           : kle på seg
+      english         : to get dressed / to put on one's clothes
+      ukrainian       : одягатися / вдягатися
+      spanish         : vestirse / ponerse la ropa
+      german          : sich anziehen
+      example         : Det er kaldt ute, så husk å kle godt på deg.
+      example_english : It is cold outside, so remember to dress warmly.
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[7] DUPLICATE: 'å legge seg'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-health-010
+      lemma           : legge seg
+      english         : to lie down / to go to bed
+      ukrainian       : лягти / лягти спати
+      spanish         : acostarse / irse a la cama
+      german          : sich hinlegen / ins Bett gehen
+      example         : Legg deg og hvil.
+      example_english : Lie down and rest.
+      category        : health
+      part            : verb
+  --- 2: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-225
+      lemma           : legge seg
+      english         : to go to bed, to lie down
+      ukrainian       : лягати спати
+      spanish         : acostarse, irse a dormir
+      german          : sich hinlegen, schlafen gehen
+      example         : Barna må legge seg klokka ni.
+      example_english : The children have to go to bed at nine o'clock.
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[8] DUPLICATE: 'å skade seg'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-body-015
+      lemma           : skade seg
+      english         : to hurt oneself
+      ukrainian       : травмуватися / пошкодити себе
+      spanish         : hacerse daño
+      german          : sich verletzen
+      example         : Han skadet seg under kampen.
+      example_english : He hurt himself during the game.
+      category        : body
+      part            : verb
+  --- 2: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-260
+      lemma           : skade seg
+      english         : to injure oneself
+      ukrainian       : травмуватися
+      spanish         : hacerse dano
+      german          : sich verletzen
+      example         : Han skadet seg under fotballtreningen i går.
+      example_english : He injured himself during football practice yesterday.
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[9] DUPLICATE: 'å slappe av'  (2 entries)
+================================================================================
+  --- 1: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-264
+      lemma           : slappe av
+      english         : to relax
+      ukrainian       : відпочивати / розслаблятися
+      spanish         : relajarse
+      german          : sich entspannen
+      example         : I helgen liker jeg å slappe av med en god bok.
+      example_english : On weekends I like to relax with a good book.
+      category        : uttrykk
+      part            : phrase
+  --- 2: B1 ------------------------------------------------------------------
+      id              : v-b1-mental-wellbeing-051
+      lemma           : slappe av
+      english         : to relax
+      ukrainian       : відпочивати
+      spanish         : relajarse
+      german          : sich entspannen
+      example         : Det er viktig å slappe av etter jobb.
+      example_english : It is important to relax after work.
+      category        : mental-wellbeing
+      part            : verb
+
+================================================================================
+[10] DUPLICATE: 'å slå av'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-technology-012
+      lemma           : slå av
+      english         : to turn off
+      ukrainian       : вимикати
+      spanish         : apagar
+      german          : ausschalten / ausmachen
+      example         : Slå av datamaskinen når du er ferdig.
+      example_english : Turn off the computer when you are done.
+      category        : technology
+      part            : verb
+  --- 2: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-258
+      lemma           : slå av
+      english         : to turn off
+      ukrainian       : вимкнути
+      spanish         : apagar
+      german          : ausschalten
+      example         : Husk å slå av lyset når du forlater rommet.
+      example_english : Remember to turn off the light when you leave the room.
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[11] DUPLICATE: 'å snakke med'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-communication-004
+      lemma           : snakke med
+      english         : to talk to / to speak with
+      ukrainian       : розмовляти з / говорити з
+      spanish         : hablar con
+      german          : mit jemandem sprechen / reden
+      example         : Jeg vil snakke med deg om det.
+      example_english : I want to talk to you about that.
+      category        : communication
+      part            : verb
+  --- 2: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-231
+      lemma           : snakke med
+      english         : to talk to, to speak with
+      ukrainian       : розмовляти з, говорити з
+      spanish         : hablar con
+      german          : sprechen mit, reden mit
+      example         : Kan jeg snakke med legen i dag?
+      example_english : Can I speak with the doctor today?
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[12] DUPLICATE: 'å spesialisere seg'  (2 entries)
+================================================================================
+  --- 1: A2-uttrykk ----------------------------------------------------------
+      id              : u-a2-256
+      lemma           : spesialisere seg
+      english         : to specialize
+      ukrainian       : спеціалізуватися
+      spanish         : especializarse
+      german          : sich spezialisieren
+      example         : Hun valgte å spesialisere seg innen barnemedisin.
+      example_english : She chose to specialize in pediatrics.
+      category        : uttrykk
+      part            : phrase
+  --- 2: B2 ------------------------------------------------------------------
+      id              : v-b2-advanced-verbs-055
+      lemma           : spesialisere seg
+      english         : to specialise
+      ukrainian       : спеціалізуватися
+      spanish         : especializarse
+      german          : sich spezialisieren
+      example         : Hun valgte å spesialisere seg i strafferett.
+      example_english : She chose to specialise in criminal law.
+      category        : advanced-verbs
+      part            : verb
+
+================================================================================
+[13] DUPLICATE: 'å være'  (2 entries)
+================================================================================
+  --- 1: A1 ------------------------------------------------------------------
+      id              : v-a1-verbs-001
+      lemma           : være
+      english         : to be
+      ukrainian       : бути
+      spanish         : ser / estar
+      german          : sein
+      example         : Jeg er norsk.
+      example_english : I am Norwegian.
+      category        : verbs
+      part            : verb
+  --- 2: A2 ------------------------------------------------------------------
+      id              : v-a2-communication-035
+      lemma           : er
+      english         : is / are (to be)
+      ukrainian       : є (бути)
+      spanish         : es / son (ser/estar)
+      german          : ist / sind (sein)
+      example         : Hun er en flink lege som hjelper mange pasienter.
+      example_english : She is a skilled doctor who helps many patients.
+      category        : communication
+      part            : verb
+
+=== WITHIN-FILE DUPLICATES (0) — full side-by-side entries ===

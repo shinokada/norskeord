@@ -6,10 +6,21 @@ duplicate 'norsk' entries — both within a single file and across files.
 
 Usage:
     python scripts/find_dupes.py
+    python scripts/find_dupes.py --details   # also write full side-by-side entry pairs
 """
+import argparse
 import json
 import os
 from collections import defaultdict
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    '--details',
+    action='store_true',
+    help="Also write scripts/outputs/find-dupes-details.txt with full "
+         "side-by-side entry pairs for every duplicate group, for quick review."
+)
+args = parser.parse_args()
 
 # Works whether run from project root or scripts/
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -56,13 +67,16 @@ total = sum(counts.values())
 print(f"Total entries: {total}\n")
 
 # norsk_lower -> list of (original_norsk, level, category)
+# full_norsk_map: norsk_lower -> list of (level, entry_dict), used by --details
 norsk_map = defaultdict(list)
+full_norsk_map = defaultdict(list)
 for level, entries in data_by_file.items():
     for entry in entries:
         norsk = entry.get('norsk', '').strip()
         cat = entry.get('category', '?')
         key = norsk.lower()
         norsk_map[key].append((norsk, level, cat))
+        full_norsk_map[key].append((level, entry))
 
 within = {}
 cross = {}
@@ -103,3 +117,58 @@ with open(out_path, 'w', encoding='utf-8') as f:
     f.write(f"Total entries: {total}\n\n")
     f.write(result_text)
 print(f"\nResults written to: {out_path}")
+
+
+# ---------------------------------------------------------------------------
+# --details: write full side-by-side entry pairs for every duplicate group,
+# so each match can be reviewed and a keep/delete/merge decision made quickly.
+# ---------------------------------------------------------------------------
+if args.details:
+    FIELDS = [
+        'id', 'lemma', 'english', 'ukrainian', 'spanish', 'german',
+        'example', 'example_english', 'category', 'part',
+    ]
+
+    def format_group(key, group_entries, index):
+        norsk_display = group_entries[0][1].get('norsk', key)
+        lines = []
+        lines.append("=" * 80)
+        lines.append(f"[{index}] DUPLICATE: {norsk_display!r}  ({len(group_entries)} entries)")
+        lines.append("=" * 80)
+        for n, (level, entry) in enumerate(group_entries, start=1):
+            header = f"  --- {n}: {level} ".ljust(78, '-')
+            lines.append(header)
+            for field in FIELDS:
+                val = entry.get(field)
+                if val in (None, ''):
+                    continue
+                lines.append(f"      {field:16s}: {val}")
+        lines.append("")
+        return "\n".join(lines)
+
+    details_output = []
+    details_output.append(f"Entry counts: {counts}")
+    details_output.append(f"Total entries: {total}")
+    details_output.append("")
+    details_output.append(f"=== CROSS-FILE DUPLICATES ({len(cross)}) — full side-by-side entries ===")
+    details_output.append("")
+    idx = 1
+    for k in sorted(cross.keys()):
+        details_output.append(format_group(k, full_norsk_map[k], idx))
+        idx += 1
+
+    details_output.append(f"=== WITHIN-FILE DUPLICATES ({len(within)}) — full side-by-side entries ===")
+    details_output.append("")
+    idx = 1
+    for k in sorted(within.keys()):
+        details_output.append(format_group(k, full_norsk_map[k], idx))
+        idx += 1
+
+    details_text = "\n".join(details_output)
+
+    outputs_dir = os.path.join(script_dir, "outputs")
+    os.makedirs(outputs_dir, exist_ok=True)
+    details_path = os.path.join(outputs_dir, "find-dupes-details.txt")
+    with open(details_path, 'w', encoding='utf-8') as f:
+        f.write(details_text)
+    print(f"Details written to: {details_path}")
