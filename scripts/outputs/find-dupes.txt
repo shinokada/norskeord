@@ -1,0 +1,66 @@
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a1/vocab-a1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a1/uttrykk-a1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a2/vocab-a2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a2/uttrykk-a2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b1/vocab-b1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b1/uttrykk-b1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/vocab-b2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/uttrykk-b2-new.json
+Entry counts: {'A1': 457, 'A1-uttrykk': 126, 'A2': 918, 'A2-uttrykk': 288, 'B1': 1169, 'B1-uttrykk': 321, 'B2': 1668, 'B2-uttrykk': 799, 'C': 502, 'C-uttrykk': 192, 'C-draft': 214, 'C-draft-uttrykk': 217}
+Total entries: 6871
+
+=== CROSS-FILE DUPLICATES (46) ===
+(Same 'norsk' value appears in different level files)
+
+  'behørig'                                      →  C [highly-formal]  |  C-draft [highly-formal]
+  'bot (en/ei)'                                  →  A2 [money]  |  C-draft [philosophy]
+  'derimot'                                      →  B2 [discourse-markers]  |  C-draft [formal-writing]
+  'ellers'                                       →  A2 [communication]  |  C-draft [formal-writing]
+  'fortapt'                                      →  C [complex-emotions]  |  C-draft [literary]
+  'heftig'                                       →  B2 [advanced-adjectives]  |  C-draft [intensifiers-degree]
+  'jo'                                           →  A2-uttrykk [uttrykk]  |  B2 [discourse-markers]
+  'kav (et)'                                     →  C [embodied-emotion]  |  C-draft [everyday-objects]
+  'klar'                                         →  A2 [weather]  |  B2 [communication]
+  'konstant'                                     →  B2 [academic-language]  |  C-draft [abstract-concepts]
+  'kuvøse (en/ei)'                               →  C [medicine-healthcare]  |  C-draft [medicine-healthcare]
+  'neste uke'                                    →  A2 [time]  |  A2-uttrykk [uttrykk]
+  'noen ganger'                                  →  A2 [time]  |  A2-uttrykk [uttrykk]
+  'rigid'                                        →  C [psychology-advanced]  |  C-draft [character-temperament]
+  'rå'                                           →  A2 [cooking]  |  C-draft [character-temperament]
+  'sart'                                         →  C [character-temperament]  |  C-draft [character-temperament]
+  'selv om'                                      →  A2-uttrykk [uttrykk]  |  B2 [discourse-markers]
+  'skinnet bedrar'                               →  C-uttrykk [uttrykk]  |  C-draft-uttrykk [uttrykk]
+  'slede (en)'                                   →  C [nature-landscape]  |  C-draft [cultural-heritage]
+  'språk (et)'                                   →  A2 [communication]  |  B1 [language-learning]
+  'til enhver tid'                               →  B2-uttrykk [uttrykk]  |  C-draft-uttrykk [uttrykk]
+  'tjære (en/ei)'                                →  C [everyday-objects]  |  C-draft [cultural-heritage]
+  'tram (en)'                                    →  C [everyday-objects]  |  C-draft [everyday-objects]
+  'utsagn (et)'                                  →  B2 [communication]  |  C-draft [rhetoric]
+  'ved siden av'                                 →  A2 [directions]  |  A2-uttrykk [uttrykk]
+  'veldig'                                       →  A2 [descriptive-adjectives]  |  C-draft [intensifiers-degree]
+  'å avle'                                       →  B2 [science]  |  C-draft [abstract-concepts]
+  'å erklære'                                    →  B2 [politics]  |  C-draft [highly-formal]
+  'å forskanse seg'                              →  C-uttrykk [uttrykk]  |  C-draft-uttrykk [uttrykk]
+  'å framstå'                                    →  B2 [work-career]  |  C-draft [rhetoric]
+  'å føle seg'                                   →  A2 [health]  |  A2-uttrykk [uttrykk]
+  'å gjenspeile'                                 →  B2 [advanced-verbs]  |  C-draft [abstract-concepts]
+  'å gå i seg selv'                              →  C-uttrykk [uttrykk]  |  C-draft-uttrykk [uttrykk]
+  'å henrette'                                   →  B2 [law]  |  C-draft [advanced-law-justice]
+  'å hive etter pusten'                          →  C-uttrykk [uttrykk]  |  C-draft-uttrykk [uttrykk]
+  'å kle på seg'                                 →  A1 [clothes]  |  A2-uttrykk [uttrykk]
+  'å legge seg'                                  →  A2 [health]  |  A2-uttrykk [uttrykk]
+  'å omfatte'                                    →  B2 [academic-language]  |  C-draft [abstract-concepts]
+  'å omkomme'                                    →  C [formal-writing]  |  C-draft [formal-writing]
+  'å skade seg'                                  →  A2 [body]  |  A2-uttrykk [uttrykk]
+  'å skjenke'                                    →  B2 [culture]  |  C-draft [gastronomy]
+  'å slappe av'                                  →  A2-uttrykk [uttrykk]  |  B1 [mental-wellbeing]
+  'å slå av'                                     →  A2 [technology]  |  A2-uttrykk [uttrykk]
+  'å snakke med'                                 →  A2 [communication]  |  A2-uttrykk [uttrykk]
+  'å spesialisere seg'                           →  A2-uttrykk [uttrykk]  |  B2 [advanced-verbs]
+  'å være'                                       →  A1 [verbs]  |  A2 [communication]
+
+=== WITHIN-FILE DUPLICATES (0) ===
+(Same 'norsk' value appears twice in the same file)
+
+
+Results written to: /Users/shinichiokada/Svelte/svelte-languages/norskeord/scripts/vocab_duplicate_report.txt

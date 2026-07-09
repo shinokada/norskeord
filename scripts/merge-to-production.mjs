@@ -6,7 +6,7 @@
  * draft entries into the production data files.
  *
  * Expected to run after, in order:
- *   1. scripts/find_dupes.py / find_uttrykk_dupes.py     (Step 3A)
+ *   1. scripts/find_dupes.py    (Step 3A)
  *
  *   Also find diacritic issues
  *   node scripts/find-diacritic-issues-all.mjs b1 --dir prod
@@ -29,7 +29,7 @@
  *   - No draft id already present in production (guards against assign-ids.mjs
  *     having run against a stale production snapshot, or merging twice).
  *   - Lemma collisions with production are reported as a warning only (not
- *     blocking) — find_dupes.py / find_uttrykk_dupes.py is the authoritative
+ *     blocking) — find_dupes.py is the authoritative
  *     duplicate check (Step 3A); this is just a last-chance sanity net.
  *
  * Step 5.3 (spot-check a few entries in the running app) is manual — this

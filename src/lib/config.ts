@@ -159,7 +159,9 @@ export const CATEGORIES_BY_LEVEL = {
     'embodied-emotion',
     'manner-of-motion',
     'interpersonal-conflict',
-    'intensifiers-degree'
+    'intensifiers-degree',
+    'gastronomy',
+    'cultural-heritage'
   ]
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 

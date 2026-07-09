@@ -37,6 +37,8 @@ files = {
     'B2-uttrykk-draft': os.path.join(project_root, 'draft', 'b2', 'uttrykk-b2-new.json'),
     'C-draft': os.path.join(project_root, 'draft', 'c', 'vocab-c-new.json'),
     'C-draft-uttrykk': os.path.join(project_root, 'draft', 'c', 'uttrykk-c-new.json'),
+    # 'C-extracted-vocab': os.path.join(project_root, 'draft', 'c', 'extracted-vocab-c.json'),
+    # 'C-extracted-uttrykk': os.path.join(project_root, 'draft', 'c', 'extracted-uttrykk-c.json'),
 }
 
 data_by_file = {}
