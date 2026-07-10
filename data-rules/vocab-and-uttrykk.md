@@ -23,7 +23,7 @@ The display form shown to learners.
 
 ### `lemma` field
 
-Always the plain dictionary form — no gender markers, no `å` prefix, no inflection. Used for FSRS lookup and deduplication.
+Always the canonical form (lemma) of the lexical item — no gender markers, no `å` prefix, no inflection. This applies whether the lexical item is one word or several (e.g. a multi-word verb or preposition still has a lemma). Used for FSRS lookup and deduplication.
 
 | `part`                                                                            | Format                      | Example              |
 | --------------------------------------------------------------------------------- | --------------------------- | -------------------- |
@@ -63,7 +63,22 @@ Don't reach for this marker just because a noun happens to only show up in one f
 
 `noun` · `verb` · `adjective` · `adverb` · `conjunction` · `preposition` · `pronoun` · `numeral` · `interjection` · `phrase`
 
-Use `phrase` for multi-word entries that are compositional concepts (e.g. `kunstig intelligens`, `kvalitativ metode`). Fixed expressions, idioms, discourse markers, and greetings belong in `uttrykk-xx.json` instead.
+Most multi-word entries keep the `part` of their grammatical head, not `phrase`:
+
+- Multi-word verbs (reflexive, particle) remain `verb` — e.g. `kle på seg`, `slå av`.
+- Multi-word prepositions remain `preposition` — e.g. `ved siden av`, `i stedet for`.
+- Multi-word noun phrases that name a concept remain `noun` — e.g. `kunstig intelligens`, `biologisk mangfold`.
+
+Use `phrase` only when the entry has **no single grammatical head** — greetings, idioms, discourse markers, and other fixed expressions. In practice, most `phrase`-part entries belong in `uttrykk-xx.json` rather than `vocab-xx.json`; see the decision rule below.
+
+| lemma              | part                 |
+| ------------------ | -------------------- |
+| kle på seg         | verb                 |
+| slå av             | verb                 |
+| ved siden av       | preposition          |
+| biologisk mangfold | noun                 |
+| i går              | phrase _(→ uttrykk)_ |
+| ha det bra         | phrase _(→ uttrykk)_ |
 
 ### ID format
 
@@ -71,24 +86,83 @@ Use `phrase` for multi-word entries that are compositional concepts (e.g. `kunst
 
 Example: `v-a1-classroom-001`
 
-## Uttrykk vs Vocab
+## Vocab vs Uttrykk
 
-**Type A — Fixed expressions / idioms / discourse markers** → belong in `uttrykk`
-These are phrases learners encounter as chunks and need to learn as a unit because the meaning isn't fully compositional. Examples:
+The vocab/uttrykk split is based on **lexical unit-hood**, not on whether the meaning is compositional. Compositionality is a bad test — `i går` ("in yesterday") is fully compositional but still belongs in uttrykk, while `kle på seg` is arguably just as compositional but is an ordinary conjugatable verb. So instead of asking "is the meaning compositional?", ask whether the entry **functions as a dictionary lemma**.
 
-- `ha det bra`, `god morgen`, `til fots` (A1 greetings/transport)
-- `etter min mening`, `på den andre siden` (B1 opinions/reasoning)
-- `alt i alt`, `det vil si`, `forutsatt at` (B2 discourse markers)
-- `med utgangspunkt i`, `i lys av` (C formal writing)
-- All the proverbs
+### Vocab (`vocab-xx.json`)
 
-**Type B — Compound concepts / collocations** → fine to keep in `vocab`
-These are multi-word but they're really just a noun phrase naming a concept. The meaning is transparent and compositional. They function like lexical items, not formulaic chunks. Examples:
+Use **vocab** for lexical items (lemmas). A lexical item may consist of one or more words if it functions as a single dictionary unit — learners inflect/conjugate it and use it productively in sentences like any other word.
 
-- `biologisk mangfold`, `fornybar energi`, `global oppvarming` (B1 environment)
-- `kunstig intelligens`, `vitenskapelig metode` (B1)
-- `akademisk diskurs`, `kvalitativ metode`, `teoretisk rammeverk` (B2 academic)
-- `digital infrastruktur`, `sirkulær økonomi` (B2)
-- `et nevralt nettverk` (C)
+This includes:
 
-For Type B the `lemma` is unproblematic — it's the same as `norsk`, and that's fine. There's no inflection ambiguity the way there is with a verb or noun. The `part` field could arguably be changed from `"phrase"` to `"noun"` for most of them (since `biologisk mangfold` is effectively a noun), but that's a separate cleanup.
+- nouns (including lexical noun phrases that name a concept)
+- verbs, including reflexive verbs and particle verbs
+- adjectives
+- adverbs
+- prepositions (including multi-word prepositions)
+- conjunctions
+- pronouns
+- numerals
+- interjections
+
+Examples:
+
+```
+hus
+være
+kle på seg
+føle seg
+slå av
+snakke med
+ved siden av
+kunstig intelligens
+biologisk mangfold
+```
+
+### Uttrykk (`uttrykk-xx.json`)
+
+Use **uttrykk** for fixed expressions that learners memorize as complete chunks rather than as ordinary lexical items — the entry doesn't have a single grammatical head, and learners don't productively inflect or recombine its parts.
+
+This includes:
+
+- greetings
+- conversational formulas
+- idioms
+- proverbs
+- discourse markers
+- sentence fragments
+- fixed time expressions
+- fixed prepositional/adverbial expressions that read as a formula rather than ordinary grammar
+
+Examples:
+
+```
+ha det bra
+god morgen
+vær så snill
+i går
+i morgen
+for en stund siden
+på den andre siden
+etter min mening
+ta vare på
+ha lyst til
+slå seg til ro
+alt i alt
+det vil si
+forutsatt at
+med utgangspunkt i
+i lys av
+```
+
+...and all proverbs.
+
+### Decision rule
+
+When deciding between vocab and uttrykk, ask, in order:
+
+1. **Does this function as a lexical item** (a noun, verb, adjective, preposition, etc.) that learners inflect/conjugate and recombine normally? → **vocab**.
+2. **Is this primarily a fixed chunk** used in communication, with no single grammatical head? → **uttrykk**.
+
+This is easier to apply consistently than asking whether the meaning is compositional, and it resolves the recurring edge cases (reflexive/particle verbs, multi-word prepositions) in favor of `vocab`, while keeping genuine formulas, idioms, and time expressions in `uttrykk`.

@@ -44,12 +44,22 @@ const SKIP_IDS = new Set([
   'v-a2-time-006', // neste år — transparent time adverbial
   'v-a2-time-011', // noen ganger — frequency adverb
   'v-a2-house-chores-020', // hver dag — frequency adverb
-  'v-a2-directions-007' // langt unna — adverbial phrase
+  'v-a2-directions-007', // langt unna — adverbial phrase
+  'v-a2-nature-021', // frisk luft — single head (luft), cf. mental helse/ren energi
+  'v-a2-body-016', // høy feber — single head (feber), cf. klassisk musikk
+  'v-a2-body-018', // sunn mat — single head (mat), cf. norsk mat (flagged borderline, not moved)
+  'v-a2-social-life-013', // hyggelig selskap — single head (selskap), cf. mental styrke
+  'v-a2-environment-005', // rent vann — single head (vann), cf. fornybar energi
+  'v-a2-money-009', // halv pris — single head (pris)
+  'v-b2-geography-012' // høyde over havet — single head (høyde) despite PP modifier
 ]);
 
 // vocab IDs to delete entirely (duplicates or otherwise unwanted)
 const DELETE_IDS = new Set([
-  'v-a2-communication-018' // "Jeg forstår ikke." — duplicate of v-a1-greetings-012
+  'v-a2-communication-018', // "Jeg forstår ikke." — duplicate of v-a1-greetings-012
+  'v-b1-personal-growth-015', // et forbedret resultat — article baked into phrase, not a lemma or a fixed formula
+  'v-b2-arts-009', // en mottager av pris — same issue; report itself suggests "prisvinner" instead
+  'v-b2-relationships-017' // sjalusi i et forhold — same issue, reads as leftover example fragment
 ]);
 
 // ── CLI ──────────────────────────────────────────────────────────────────────
