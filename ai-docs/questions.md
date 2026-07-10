@@ -5,9 +5,10 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 I have data-rules/vocab-and-uttrykk.md for your information.
 
 ---
+
 I have draft/c/vocab-new-c.json and uttrykk-c-new.json. I asked you to cross-reference with scripts/outputs/find-dupes-details.txt and you answered the following.
 
-Can you go ahead and make all these edits now 
+Can you go ahead and make all these edits now
 
 ```
 The details file already exists — let's read it and the relevant draft files.I ran through all 29 duplicate groups in `find-dupes-details.txt` that involve `C-draft`/`C-draft-uttrykk`, using the same test we applied to `ellers` and `rå`: **does the draft entry add a genuine additional sense, or is it just the same meaning restated?**
@@ -67,13 +68,15 @@ I create STEP 2 in ai-docs/instructions/image-converter-c.md before.
 I'm wondering which script should I use to achieve my goal with as less mistakes as possible. Should I create a new script? What do you think?
 
 ---
+
 The draft/c/grammatikk.md explaing grammar for Nivå C. substantiv.md and ubestemt-artikkel.md have questions for substantiv and ubestemt artikkel grammar points. You can find answers in answers.md.
-I'd like to create Nivå C grammar questions. You can find src/lib/grammar directory for more details. 
+I'd like to create Nivå C grammar questions. You can find src/lib/grammar directory for more details.
 I don't need a lot of questions but a good number of questions to cover as many as possible.
+
 1. The questions are from a textbook. Can I use some of them?
 2. How many questions are appropiate?
-Do you have any more suggestions?
-Do not create questions yet. Let's discuss first.
+   Do you have any more suggestions?
+   Do not create questions yet. Let's discuss first.
 
 I will be adding more in draft/c directory and you can find it in draft/c/innhold.md.
 
