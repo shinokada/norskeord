@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.51.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added extensive Level C vocabulary, expressions, translations, and example sentences.
+    - Added Norwegian grammar guides, exercises, and answer keys covering articles, nouns, adjectives, verbs, word order, and more.
+    - Added new C-level categories, including gastronomy and cultural heritage.
+  - **Content Improvements**
+    - Expanded and refined vocabulary and expression entries across proficiency levels.
+    - Improved grammatical labels, lemmas, translations, and example handling.
+  - **Documentation**
+    - Updated guidance for vocabulary classification, image extraction, duplicate checking, and content workflows.
+
 ## 2.50.0
 
 ### Minor Changes
