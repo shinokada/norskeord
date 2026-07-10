@@ -216,20 +216,20 @@ Utility scripts live in `scripts/`. See `scripts/how-to.md` for full usage. Key 
 
 Runbooks and troubleshooting notes live in `ai-docs/maintenance/`. Highlights:
 
-| Doc                              | Covers                                                                     |
-| --------------------------------- | --------------------------------------------------------------------------- |
-| `vocab-uttrykk-data.md`           | Diacritic checks, vocab/uttrykk format validation, dupes, translation/audit and normalisation scripts, ID renumbering, entry counts |
-| `i18n.md`                         | Suggested flow for unused-key detection, removal, and locale key-parity checks |
-| `c2.md`                           | Notes on where a stale C1/C2 reference is intentional and safe post-migration to the merged "C" level |
-| `login.md`                        | Manual test plan for Turnstile, last-path redirect, first-time vs returning login, in-app browser banner, welcome email |
-| `onboarding.md`                   | How to reset a test user to re-trigger the onboarding slides overlay        |
-| `full-migration-cross-device.md`  | Manual cross-device test plan for the free→Plus localStorage→Supabase progress migration |
-| `cleanup-e2e-users.md`            | Removing mock users created by Playwright login/OTP tests                  |
-| `auth-check.md`                   | Where to verify auth state in the Supabase dashboard (Users, Logs, SQL Editor) |
-| `supabase-login.md`               | Link/bookmark for the Supabase auth logs dashboard                         |
-| `daily-notification.md`           | curl command to manually trigger the `send-push-reminders` Edge Function   |
-| `lemonsqueezy.md`                 | curl commands to look up the Lemon Squeezy store ID and variant ID          |
-| `ngrok.md`                        | Testing the login flow on a real Android device via ngrok tunnel           |
+| Doc                              | Covers                                                                                                                              |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `vocab-uttrykk-data.md`          | Diacritic checks, vocab/uttrykk format validation, dupes, translation/audit and normalisation scripts, ID renumbering, entry counts |
+| `i18n.md`                        | Suggested flow for unused-key detection, removal, and locale key-parity checks                                                      |
+| `c2.md`                          | Notes on where a stale C1/C2 reference is intentional and safe post-migration to the merged "C" level                               |
+| `login.md`                       | Manual test plan for Turnstile, last-path redirect, first-time vs returning login, in-app browser banner, welcome email             |
+| `onboarding.md`                  | How to reset a test user to re-trigger the onboarding slides overlay                                                                |
+| `full-migration-cross-device.md` | Manual cross-device test plan for the free→Plus localStorage→Supabase progress migration                                            |
+| `cleanup-e2e-users.md`           | Removing mock users created by Playwright login/OTP tests                                                                           |
+| `auth-check.md`                  | Where to verify auth state in the Supabase dashboard (Users, Logs, SQL Editor)                                                      |
+| `supabase-login.md`              | Link/bookmark for the Supabase auth logs dashboard                                                                                  |
+| `daily-notification.md`          | curl command to manually trigger the `send-push-reminders` Edge Function                                                            |
+| `lemonsqueezy.md`                | curl commands to look up the Lemon Squeezy store ID and variant ID                                                                  |
+| `ngrok.md`                       | Testing the login flow on a real Android device via ngrok tunnel                                                                    |
 
 ---
 
@@ -267,14 +267,14 @@ The search index must be built before SvelteKit so it lands in `static/data/` be
 
 ## Key docs
 
-| File                               | What it covers                                                 |
-| ---------------------------------- | -------------------------------------------------------------- |
-| `CLAUDE.md`                        | AI assistant instructions, blog tag taxonomy, Svelte MCP usage |
-| `ai-docs/json-structure.md`        | Vocab JSON schema and lemma/token rationale                    |
-| `ai-docs/implementation/`          | Feature implementation plans                                   |
-| `ai-docs/ideas/`                   | Backlog ideas                                                  |
-| `ai-docs/bugs/`                    | Known bug notes                                                |
-| `ai-docs/how-to-monitor-and-test/` | Monitoring and test runbooks                                   |
-| `ai-docs/maintenance/`             | Operational runbooks — see [Maintenance](#maintenance)         |
-| `ai-docs/how-to-add-new-languages/`| Adding a new UI/data locale — see [Adding a new language](#adding-a-new-language) |
-| `scripts/how-to.md`                | Script usage reference                                         |
+| File                                | What it covers                                                                    |
+| ----------------------------------- | --------------------------------------------------------------------------------- |
+| `CLAUDE.md`                         | AI assistant instructions, blog tag taxonomy, Svelte MCP usage                    |
+| `ai-docs/json-structure.md`         | Vocab JSON schema and lemma/token rationale                                       |
+| `ai-docs/implementation/`           | Feature implementation plans                                                      |
+| `ai-docs/ideas/`                    | Backlog ideas                                                                     |
+| `ai-docs/bugs/`                     | Known bug notes                                                                   |
+| `ai-docs/how-to-monitor-and-test/`  | Monitoring and test runbooks                                                      |
+| `ai-docs/maintenance/`              | Operational runbooks — see [Maintenance](#maintenance)                            |
+| `ai-docs/how-to-add-new-languages/` | Adding a new UI/data locale — see [Adding a new language](#adding-a-new-language) |
+| `scripts/how-to.md`                 | Script usage reference                                                            |

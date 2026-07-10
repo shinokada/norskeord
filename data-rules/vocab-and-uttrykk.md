@@ -71,14 +71,14 @@ Most multi-word entries keep the `part` of their grammatical head, not `phrase`:
 
 Use `phrase` only when the entry has **no single grammatical head** — greetings, idioms, discourse markers, and other fixed expressions. In practice, most `phrase`-part entries belong in `uttrykk-xx.json` rather than `vocab-xx.json`; see the decision rule below.
 
-| lemma | part |
-| --- | --- |
-| kle på seg | verb |
-| slå av | verb |
-| ved siden av | preposition |
-| biologisk mangfold | noun |
-| i går | phrase *(→ uttrykk)* |
-| ha det bra | phrase *(→ uttrykk)* |
+| lemma              | part                 |
+| ------------------ | -------------------- |
+| kle på seg         | verb                 |
+| slå av             | verb                 |
+| ved siden av       | preposition          |
+| biologisk mangfold | noun                 |
+| i går              | phrase _(→ uttrykk)_ |
+| ha det bra         | phrase _(→ uttrykk)_ |
 
 ### ID format
 
