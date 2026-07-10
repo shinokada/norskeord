@@ -1,0 +1,48 @@
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a1/vocab-a1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a1/uttrykk-a1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a2/vocab-a2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/a2/uttrykk-a2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b1/vocab-b1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b1/uttrykk-b1-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/vocab-b2-new.json
+⚠️  Skipping missing file: /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/uttrykk-b2-new.json
+Entry counts: {'A1': 463, 'A1-uttrykk': 119, 'A2': 945, 'A2-uttrykk': 245, 'B1': 1243, 'B1-uttrykk': 228, 'B2': 1757, 'B2-uttrykk': 694, 'C': 516, 'C-uttrykk': 177, 'C-draft': 189, 'C-draft-uttrykk': 212}
+Total entries: 6788
+
+=== CROSS-FILE DUPLICATES (28) ===
+(Same 'norsk' value appears in different level files)
+
+  'klar'              →  A2 [weather]  |  B2 [communication]
+  'språk (et)'        →  A2 [communication]  |  B1 [language-learning]
+  'å dilte etter'     →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å ende opp med'    →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å fase ut'         →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å følge med på'    →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å føre med seg'    →  B1 [reasoning]  |  B2 [advanced-verbs]
+  'å gi seg ut for'   →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å gripe inn'       →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å gå ut på'        →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å heie fram'       →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å henge med venner'→  B2 [relationships]  |  B2-uttrykk [uttrykk]
+  'å hige etter'      →  B2 [advanced-verbs]  |  C-draft-uttrykk [uttrykk]
+  'å ikke finne seg i'→  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å klare seg'       →  A2 [social-life]  |  B1 [personal-growth]
+  'å koble av'        →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å lide under'      →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å lønne seg'       →  B1 [finance]  |  B2 [advanced-verbs]
+  'å orientere seg'   →  B1 [travel]  |  B2 [advanced-verbs]
+  'å pynte seg'       →  A2 [clothing]  |  B1 [traditions]
+  'å rakke ned på'    →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å sette seg'       →  A1 [actions]  |  B1 [personal-growth]
+  'å sirkle rundt'    →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å skli ut'         →  B2 [advanced-verbs]  |  B2-uttrykk [uttrykk]
+  'å slutte seg til'  →  B2 [advanced-verbs]  |  C-draft-uttrykk [uttrykk]
+  'å slå seg ned'     →  A2 [social-life]  |  B1 [city-life]
+  'å ta seg av'       →  B1 [relationships]  |  C [everyday-objects]
+  'å være'            →  A1 [verbs]  |  A2 [communication]
+
+=== WITHIN-FILE DUPLICATES (0) ===
+(Same 'norsk' value appears twice in the same file)
+
+Results written to: /Users/shinichiokada/Svelte/svelte-languages/norskeord/scripts/vocab_duplicate_report.txt
+Details written to: /Users/shinichiokada/Svelte/svelte-languages/norskeord/scripts/outputs/find-dupes-details.txt

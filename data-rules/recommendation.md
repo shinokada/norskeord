@@ -94,32 +94,32 @@ I think a nice rule would be:
 
 #### Vocabulary (`v-`)
 
-* nouns
-* verbs (including reflexive verbs and particle verbs)
-* adjectives
-* adverbs
-* pronouns
-* determiners
-* conjunctions
-* interjections
+- nouns
+- verbs (including reflexive verbs and particle verbs)
+- adjectives
+- adverbs
+- pronouns
+- determiners
+- conjunctions
+- interjections
 
 Basically, anything that functions as a **dictionary lemma**, even if it has multiple words.
 
 #### Expressions (`u-`)
 
-* time expressions (`i går`, `i morgen`, `for en stund siden`)
-* prepositional expressions (`ved siden av`, `i stedet for`, `på grunn av`)
-* discourse expressions (`forresten`, `med andre ord`, `i tillegg`)
-* idioms (`ta vare på`, `ha lyst til`, `slå seg til ro`)
-* common fixed chunks (`vær så snill`, `takk skal du ha`, `god bedring`)
+- time expressions (`i går`, `i morgen`, `for en stund siden`)
+- prepositional expressions (`ved siden av`, `i stedet for`, `på grunn av`)
+- discourse expressions (`forresten`, `med andre ord`, `i tillegg`)
+- idioms (`ta vare på`, `ha lyst til`, `slå seg til ro`)
+- common fixed chunks (`vær så snill`, `takk skal du ha`, `god bedring`)
 
 ---
 
 Looking at the duplicate list in your file , my recommendations would be:
 
-* **Remove the `u-` entries** for `skade seg`, `føle seg`, `kle på seg`, `legge seg`, `slappe av`, `slå av`, `snakke med`, and `spesialisere seg`.
-* **Keep the `u-` entry** for `ved siden av` and remove the `v-` version.
-* **Move expressions like `i går`, `i morgen`, `i fjor`, `i dag`, `etter hvert`, `med en gang`, `på grunn av`** into `u-` only.
+- **Remove the `u-` entries** for `skade seg`, `føle seg`, `kle på seg`, `legge seg`, `slappe av`, `slå av`, `snakke med`, and `spesialisere seg`.
+- **Keep the `u-` entry** for `ved siden av` and remove the `v-` version.
+- **Move expressions like `i går`, `i morgen`, `i fjor`, `i dag`, `etter hvert`, `med en gang`, `på grunn av`** into `u-` only.
 
 I think this gives you a much cleaner separation: **`v-` is for lexical items (even multi-word verbs), while `u-` is for fixed expressions and chunks.** This also aligns well with how Norwegian dictionaries and teaching materials generally organize vocabulary.
 
@@ -153,17 +153,17 @@ A lexical item may consist of one or more words if it functions as a single dict
 
 This includes:
 
-* nouns
-* verbs (including reflexive verbs)
-* particle verbs
-* adjectives
-* adverbs
-* prepositions
-* conjunctions
-* pronouns
-* numerals
-* interjections
-* lexical noun phrases that name a concept
+- nouns
+- verbs (including reflexive verbs)
+- particle verbs
+- adjectives
+- adverbs
+- prepositions
+- conjunctions
+- pronouns
+- numerals
+- interjections
+- lexical noun phrases that name a concept
 
 Examples:
 
@@ -187,14 +187,14 @@ Use **uttrykk** for fixed expressions that learners memorize as complete chunks 
 
 These include:
 
-* greetings
-* conversational formulas
-* idioms
-* proverbs
-* discourse markers
-* sentence fragments
-* fixed time expressions
-* fixed prepositional expressions
+- greetings
+- conversational formulas
+- idioms
+- proverbs
+- discourse markers
+- sentence fragments
+- fixed time expressions
+- fixed prepositional expressions
 
 Examples:
 
@@ -334,7 +334,6 @@ I'd add a short checklist because this is the question you'll repeatedly face wh
 >
 > 1. Does this function as a lexical item (a noun, verb, adjective, preposition, etc.)?
 >    → Put it in **vocab**.
->
 > 2. Or is it primarily a fixed chunk used in communication?
 >    → Put it in **uttrykk**.
 
@@ -348,15 +347,15 @@ The only point where I differ from the current document is **`ved siden av`**.
 
 Earlier I suggested moving it to `uttrykk`, but after thinking more about your schema, I now think it fits better in **vocab** because:
 
-* it has a clear grammatical category (`preposition`),
-* it behaves like other multi-word prepositions (`i stedet for`, `på grunn av`, `fram til`),
-* learners use it as part of normal grammar rather than as an idiomatic saying.
+- it has a clear grammatical category (`preposition`),
+- it behaves like other multi-word prepositions (`i stedet for`, `på grunn av`, `fram til`),
+- learners use it as part of normal grammar rather than as an idiomatic saying.
 
 That leads to a simpler principle:
 
-* **Multi-word verbs** → `vocab`
-* **Multi-word prepositions** → `vocab`
-* **Multi-word noun concepts** → `vocab`
-* **Greetings, idioms, discourse markers, conversational formulas, and sentence chunks** → `uttrykk`
+- **Multi-word verbs** → `vocab`
+- **Multi-word prepositions** → `vocab`
+- **Multi-word noun concepts** → `vocab`
+- **Greetings, idioms, discourse markers, conversational formulas, and sentence chunks** → `uttrykk`
 
 I think that rule is both linguistically sound and much easier to apply consistently across the thousands of entries in Norskeord.

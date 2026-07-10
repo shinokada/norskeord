@@ -1,6 +1,6 @@
 [
   {
-    "id": "",
+    "id": "v-c-everyday-objects-034",
     "norsk": "kvist (en)",
     "lemma": "kvist",
     "english": "dormer (a small attic room with a window); also: a small thin branch of a tree, or a knot mark left by a branch in wood",
@@ -18,7 +18,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-011",
     "norsk": "knøttliten",
     "lemma": "knøttliten",
     "english": "tiny; teeny-tiny",
@@ -36,7 +36,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-012",
     "norsk": "ørliten",
     "lemma": "ørliten",
     "english": "minuscule; extremely tiny",
@@ -54,7 +54,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-016",
     "norsk": "utkast (et)",
     "lemma": "utkast",
     "english": "draft; preliminary version (used mainly of texts)",
@@ -72,7 +72,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-architecture-design-008",
     "norsk": "skisse (en/ei)",
     "lemma": "skisse",
     "english": "sketch; preliminary drawing or rough outline (used mainly of drawings)",
@@ -90,7 +90,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-024",
     "norsk": "yndig",
     "lemma": "yndig",
     "english": "lovely; charming; delightful (used mostly of girls, women, or babies)",
@@ -108,7 +108,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-032",
     "norsk": "sær",
     "lemma": "sær",
     "english": "odd; peculiar; eccentric (in a mildly negative way)",
@@ -126,7 +126,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-002",
     "norsk": "utsøkt",
     "lemma": "utsøkt",
     "english": "exquisite; of very high quality",
@@ -144,7 +144,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-021",
     "norsk": "omtåket",
     "lemma": "omtåket",
     "english": "confused; dazed; in a mental fog",
@@ -162,7 +162,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-029",
     "norsk": "å avsky",
     "lemma": "avsky",
     "english": "to detest; to loathe",
@@ -180,7 +180,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-001",
     "norsk": "ferd (en/ei)",
     "lemma": "ferd",
     "english": "a (long) journey; expedition",
@@ -198,7 +198,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-019",
     "norsk": "framfor",
     "lemma": "framfor",
     "english": "rather than; instead of; in preference to",
@@ -216,7 +216,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-003",
     "norsk": "anrettet",
     "lemma": "anrettet",
     "english": "arranged; presented (often used of food plated neatly)",
@@ -234,7 +234,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-025",
     "norsk": "nusselig",
     "lemma": "nusselig",
     "english": "cute; sweet; adorable",
@@ -252,7 +252,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-033",
     "norsk": "krapyl (et)",
     "lemma": "krapyl",
     "english": "rascal; mischievous child; (also more negatively) riffraff; scoundrel",
@@ -270,7 +270,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-019",
     "norsk": "å lystre",
     "lemma": "lystre",
     "english": "to obey; to comply with",
@@ -288,7 +288,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-020",
     "norsk": "å adlyde",
     "lemma": "adlyde",
     "english": "to obey; to follow orders",
@@ -306,7 +306,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-013",
     "norsk": "simpelthen",
     "lemma": "simpelthen",
     "english": "simply; just; plainly",
@@ -324,7 +324,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-034",
     "norsk": "iherdig",
     "lemma": "iherdig",
     "english": "persistent; energetic; diligent",
@@ -342,7 +342,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-030",
     "norsk": "uforskyldt",
     "lemma": "uforskyldt",
     "english": "undeserved; through no fault of one's own",
@@ -360,7 +360,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-026",
     "norsk": "innbydende",
     "lemma": "innbydende",
     "english": "inviting; tempting; appealing",
@@ -378,7 +378,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-022",
     "norsk": "oppslukt",
     "lemma": "oppslukt",
     "english": "absorbed; engrossed; completely caught up in something",
@@ -396,7 +396,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-035",
     "norsk": "loppekasse (en/ei)",
     "lemma": "loppekasse",
     "english": "bed (humorous slang, literally 'flea box')",
@@ -414,7 +414,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-023",
     "norsk": "å skrape",
     "lemma": "skrape",
     "english": "to scrape; to scratch; to graze",
@@ -432,7 +432,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-047",
     "norsk": "å beite",
     "lemma": "beite",
     "english": "to graze; to feed on grass outdoors",
@@ -450,7 +450,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-004",
     "norsk": "saftig",
     "lemma": "saftig",
     "english": "juicy; succulent",
@@ -468,7 +468,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-035",
     "norsk": "å motstå",
     "lemma": "motstå",
     "english": "to resist; to withstand; to say no to",
@@ -486,7 +486,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-048",
     "norsk": "farefull",
     "lemma": "farefull",
     "english": "dangerous; hazardous; full of peril",
@@ -504,7 +504,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-002",
     "norsk": "mare (en/ei)",
     "lemma": "mare",
     "english": "nightmare figure; oppressive burden; in folklore, a female spirit (supernatural being) that sat on the chest of a sleeping person, giving rise to the word 'mareritt' (nightmare, literally 'the mare rides')",
@@ -522,7 +522,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-049",
     "norsk": "øde",
     "lemma": "øde",
     "english": "desolate; deserted; uninhabited and unused",
@@ -540,7 +540,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-036",
     "norsk": "å lakke",
     "lemma": "lakke",
     "english": "to lacquer; to apply lacquer to something (lacquer has a different, thinner consistency than paint)",
@@ -558,7 +558,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-003",
     "norsk": "ås (en)",
     "lemma": "ås",
     "english": "Aesir god (one of the Norse gods); not to be confused with 'ås' meaning a ridge or hillside in nature",
@@ -576,7 +576,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-025",
     "norsk": "å daue",
     "lemma": "daue",
     "english": "to die (colloquial and slightly crude)",
@@ -594,7 +594,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-026",
     "norsk": "å krepere",
     "lemma": "krepere",
     "english": "to croak; to die (rude and disrespectful)",
@@ -612,7 +612,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-017",
     "norsk": "å forulykke",
     "lemma": "forulykke",
     "english": "to die in an accident; to perish in a disaster (formal)",
@@ -630,7 +630,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-021",
     "norsk": "håndsrekning (en/ei)",
     "lemma": "håndsrekning",
     "english": "a helping hand; assistance",
@@ -648,7 +648,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-014",
     "norsk": "hersens",
     "lemma": "hersens",
     "english": "damned; blasted; irritating; idiotic (used as an intensifying expletive adjective)",
@@ -666,7 +666,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-023",
     "norsk": "vidløftig",
     "lemma": "vidløftig",
     "english": "elaborate; complicated; long-winded; involved",
@@ -684,7 +684,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-018",
     "norsk": "foranledning (en/ei)",
     "lemma": "foranledning",
     "english": "motive; reason; occasion",
@@ -702,7 +702,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-050",
     "norsk": "fossil",
     "lemma": "fossil",
     "english": "fossil; found by digging in the ground; remains of ancient animals and plants",
@@ -720,7 +720,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-technical-025",
     "norsk": "å grunnstøte",
     "lemma": "grunnstøte",
     "english": "to run aground; to hit the seabed or a reef (of a ship)",
@@ -738,7 +738,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-022",
     "norsk": "flause (en)",
     "lemma": "flause",
     "english": "blunder; gaffe; foolish mistake",
@@ -756,7 +756,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-005",
     "norsk": "raffinert",
     "lemma": "raffinert",
     "english": "refined; exquisite; delicate",
@@ -774,7 +774,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-036",
     "norsk": "veik",
     "lemma": "veik",
     "english": "weak; feeble",
@@ -792,7 +792,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-023",
     "norsk": "motbydelig",
     "lemma": "motbydelig",
     "english": "disgusting; revolting; repulsive",
@@ -810,7 +810,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-024",
     "norsk": "oppkavet",
     "lemma": "oppkavet",
     "english": "flustered; agitated; exasperated",
@@ -828,7 +828,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-037",
     "norsk": "spartansk",
     "lemma": "spartansk",
     "english": "spartan; austere; frugal",
@@ -846,7 +846,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-023",
     "norsk": "batalje (en)",
     "lemma": "batalje",
     "english": "brawl; violent confrontation; fight",
@@ -864,7 +864,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-038",
     "norsk": "dreven",
     "lemma": "dreven",
     "english": "skilled; experienced; seasoned",
@@ -882,7 +882,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-015",
     "norsk": "kjapp",
     "lemma": "kjapp",
     "english": "quick; fast; speedy",
@@ -900,7 +900,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-016",
     "norsk": "pur",
     "lemma": "pur",
     "english": "pure; sheer; mere",
@@ -918,7 +918,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-architecture-design-009",
     "norsk": "sjattering (en/ei)",
     "lemma": "sjattering",
     "english": "shade; hue; nuance of colour",
@@ -936,7 +936,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-025",
     "norsk": "ellevill",
     "lemma": "ellevill",
     "english": "absolutely wild; frenzied; frantic",
@@ -954,7 +954,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sociology-anthropology-005",
     "norsk": "å frekventere",
     "lemma": "frekventere",
     "english": "to frequent; to visit regularly",
@@ -972,7 +972,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-019",
     "norsk": "å volde",
     "lemma": "volde",
     "english": "to cause; to bring about",
@@ -990,7 +990,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-026",
     "norsk": "forskremt",
     "lemma": "forskremt",
     "english": "frightened; scared; timid",
@@ -1008,7 +1008,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-039",
     "norsk": "livat",
     "lemma": "livat",
     "english": "lively; cheerful; spirited",
@@ -1026,7 +1026,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-037",
     "norsk": "skrot (et)",
     "lemma": "skrot",
     "english": "scrap; junk; rubbish",
@@ -1044,7 +1044,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-024",
     "norsk": "å hylle",
     "lemma": "hylle",
     "english": "to honor; to pay tribute to; to celebrate",
@@ -1062,7 +1062,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-051",
     "norsk": "fjelltind (en)",
     "lemma": "fjelltind",
     "english": "mountain peak; summit",
@@ -1080,7 +1080,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-038",
     "norsk": "hendig",
     "lemma": "hendig",
     "english": "handy; practical; convenient",
@@ -1098,7 +1098,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-040",
     "norsk": "vitebegjærlig",
     "lemma": "vitebegjærlig",
     "english": "curious; eager to learn and know a great deal",
@@ -1116,7 +1116,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-041",
     "norsk": "unnvikende",
     "lemma": "unnvikende",
     "english": "evasive; reserved; avoiding direct engagement",
@@ -1134,7 +1134,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-020",
     "norsk": "prekær",
     "lemma": "prekær",
     "english": "precarious; extremely difficult or serious",
@@ -1152,7 +1152,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-042",
     "norsk": "skvetten",
     "lemma": "skvetten",
     "english": "easily startled; jumpy; skittish",
@@ -1170,7 +1170,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-052",
     "norsk": "utsprungen",
     "lemma": "utsprungen",
     "english": "in full bloom; no longer in bud",
@@ -1188,7 +1188,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-004",
     "norsk": "utskåren",
     "lemma": "utskåren",
     "english": "carved; decorated with carvings",
@@ -1206,7 +1206,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-017",
     "norsk": "strøken",
     "lemma": "strøken",
     "english": "flawless; perfect; without any faults or shortcomings",
@@ -1224,7 +1224,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-043",
     "norsk": "løssluppen",
     "lemma": "løssluppen",
     "english": "uninhibited; wild; spontaneous and free",
@@ -1242,7 +1242,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-044",
     "norsk": "slu",
     "lemma": "slu",
     "english": "cunning; sly; crafty in a negative sense, intending to deceive",
@@ -1260,7 +1260,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-018",
     "norsk": "uhorvelig",
     "lemma": "uhorvelig",
     "english": "enormous; tremendous",
@@ -1278,7 +1278,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-027",
     "norsk": "utbrudd (et)",
     "lemma": "utbrudd",
     "english": "outburst; exclamation",
@@ -1296,7 +1296,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-053",
     "norsk": "å sanke",
     "lemma": "sanke",
     "english": "to gather; to pick (fruit, berries, and mushrooms)",
@@ -1314,7 +1314,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-045",
     "norsk": "snodig",
     "lemma": "snodig",
     "english": "odd; peculiar; strange",
@@ -1332,7 +1332,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-politics-democracy-007",
     "norsk": "opptøyer",
     "lemma": "opptøyer",
     "english": "riots; unrest; disturbances",
@@ -1350,7 +1350,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-024",
     "norsk": "snusk (et)",
     "lemma": "snusk",
     "english": "dishonesty; shady dealings; underhandedness",
@@ -1368,7 +1368,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-professional-020",
     "norsk": "besetningsmedlem (et)",
     "lemma": "besetningsmedlem",
     "english": "crew member",
@@ -1386,7 +1386,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-005",
     "norsk": "trapesartist (en)",
     "lemma": "trapesartist",
     "english": "trapeze artist",
@@ -1404,7 +1404,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-006",
     "norsk": "fjøl (en/ei)",
     "lemma": "fjøl",
     "english": "cutting board",
@@ -1422,7 +1422,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-046",
     "norsk": "begavet",
     "lemma": "begavet",
     "english": "gifted, talented",
@@ -1440,7 +1440,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-008",
     "norsk": "forsett (et)",
     "lemma": "forsett",
     "english": "intent, intention; deliberate plan",
@@ -1458,7 +1458,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-politics-democracy-008",
     "norsk": "opprører (en)",
     "lemma": "opprører",
     "english": "rebel, insurgent",
@@ -1476,7 +1476,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-007",
     "norsk": "ertestuing (en/ei)",
     "lemma": "ertestuing",
     "english": "mushy peas, mashed peas",
@@ -1494,7 +1494,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-019",
     "norsk": "vitterlig",
     "lemma": "vitterlig",
     "english": "truly, indeed, in fact",
@@ -1512,7 +1512,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-021",
     "norsk": "å sprike",
     "lemma": "sprike",
     "english": "to point in different directions, to diverge, to spread apart",
@@ -1530,7 +1530,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-039",
     "norsk": "å skåre",
     "lemma": "skåre",
     "english": "to score (a goal or points)",
@@ -1548,7 +1548,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-022",
     "norsk": "mangelvare (en)",
     "lemma": "mangelvare",
     "english": "scarce commodity, something in short supply",
@@ -1566,7 +1566,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-047",
     "norsk": "hardnakket",
     "lemma": "hardnakket",
     "english": "stubborn; persistent; refusing to give up or change one's mind",
@@ -1584,7 +1584,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-028",
     "norsk": "innbitt",
     "lemma": "innbitt",
     "english": "seething with suppressed rage; grimly determined",
@@ -1602,7 +1602,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sociology-anthropology-006",
     "norsk": "utbyttet",
     "lemma": "utbyttet",
     "english": "exploited; grossly taken advantage of",
@@ -1620,7 +1620,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-029",
     "norsk": "frenetisk",
     "lemma": "frenetisk",
     "english": "frantic; frenzied; wildly intense",
@@ -1638,7 +1638,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-024",
     "norsk": "å fekte",
     "lemma": "fekte",
     "english": "to wave; to flail; to gesture wildly with",
@@ -1656,7 +1656,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-023",
     "norsk": "henimot",
     "lemma": "henimot",
     "english": "toward; approaching; as it gets close to (of time)",
@@ -1674,7 +1674,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-025",
     "norsk": "å formane",
     "lemma": "formane",
     "english": "to admonish; to urge earnestly; to exhort",
@@ -1692,7 +1692,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-025",
     "norsk": "å bønnfalle",
     "lemma": "bønnfalle",
     "english": "to implore; to beseech; to beg urgently",
@@ -1710,7 +1710,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-054",
     "norsk": "dyvåt",
     "lemma": "dyvåt",
     "english": "soaking wet; drenched; completely soaked through",
@@ -1728,7 +1728,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-048",
     "norsk": "uggen",
     "lemma": "uggen",
     "english": "unpleasant; disagreeable",
@@ -1746,7 +1746,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-026",
     "norsk": "stevnemøte (et)",
     "lemma": "stevnemøte",
     "english": "date; romantic meeting (e.g. to find out if one wants to become a couple)",
@@ -1764,7 +1764,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-024",
     "norsk": "malplassert",
     "lemma": "malplassert",
     "english": "misplaced; out of place",
@@ -1782,7 +1782,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-025",
     "norsk": "innfløkt",
     "lemma": "innfløkt",
     "english": "complicated; intricate; convoluted",
@@ -1800,7 +1800,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-055",
     "norsk": "steppe (en)",
     "lemma": "steppe",
     "english": "steppe; flat, open treeless landscape",
@@ -1818,7 +1818,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-006",
     "norsk": "gudfryktig",
     "lemma": "gudfryktig",
     "english": "God-fearing; pious; devout",
@@ -1836,7 +1836,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-existential-abstract-005",
     "norsk": "fåfengt",
     "lemma": "fåfengt",
     "english": "in vain; futile; to no avail",
@@ -1854,7 +1854,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-026",
     "norsk": "å berømme",
     "lemma": "berømme",
     "english": "to praise; to commend; to extol",
@@ -1872,7 +1872,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-technical-026",
     "norsk": "gjenge (en)",
     "lemma": "gjenge",
     "english": "thread (of a screw); groove",
@@ -1890,7 +1890,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-056",
     "norsk": "å sludde",
     "lemma": "sludde",
     "english": "to sleet",
@@ -1908,7 +1908,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-030",
     "norsk": "illsint",
     "lemma": "illsint",
     "english": "furious; enraged",
@@ -1926,7 +1926,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-technical-027",
     "norsk": "flybåren",
     "lemma": "flybåren",
     "english": "airborne; transported by aircraft",
@@ -1944,7 +1944,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-027",
     "norsk": "selvskreven",
     "lemma": "selvskreven",
     "english": "self-evident; obvious candidate",
@@ -1962,7 +1962,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-040",
     "norsk": "avbrekk (et)",
     "lemma": "avbrekk",
     "english": "a break; an interruption",
@@ -1980,7 +1980,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-018",
     "norsk": "å tute",
     "lemma": "tute",
     "english": "to howl; to wail",
@@ -1998,7 +1998,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-008",
     "norsk": "å sløye",
     "lemma": "sløye",
     "english": "to gut (a fish); to clean and eviscerate a fish",
@@ -2016,7 +2016,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-027",
     "norsk": "å fordrive",
     "lemma": "fordrive",
     "english": "to drive away; to chase away; to banish",
@@ -2034,7 +2034,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-028",
     "norsk": "syssel (en)",
     "lemma": "syssel",
     "english": "occupation; activity; work",
@@ -2052,7 +2052,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-049",
     "norsk": "jevnbyrdig",
     "lemma": "jevnbyrdig",
     "english": "equal, evenly matched, on a par",
@@ -2070,7 +2070,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-031",
     "norsk": "forfrossen",
     "lemma": "forfrossen",
     "english": "chilled to the bone, numb with cold, frostbitten",
@@ -2088,7 +2088,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-literary-023",
     "norsk": "dødsleie (et)",
     "lemma": "dødsleie",
     "english": "deathbed",
@@ -2106,7 +2106,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-050",
     "norsk": "smålig",
     "lemma": "smålig",
     "english": "petty, mean, stingy",
@@ -2124,7 +2124,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-031",
     "norsk": "grådighet (en/ei)",
     "lemma": "grådighet",
     "english": "greed, greediness",
@@ -2142,7 +2142,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-032",
     "norsk": "utsovet",
     "lemma": "utsovet",
     "english": "well-rested, having slept enough",
@@ -2160,7 +2160,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-026",
     "norsk": "ugunstig",
     "lemma": "ugunstig",
     "english": "unfavorable, adverse, harmful",
@@ -2178,7 +2178,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-033",
     "norsk": "overtrøtt",
     "lemma": "overtrøtt",
     "english": "overtired, exhausted to the point of being giddy or irritable",
@@ -2196,7 +2196,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-027",
     "norsk": "mellomstor",
     "lemma": "mellomstor",
     "english": "medium-sized",
@@ -2214,7 +2214,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-051",
     "norsk": "ukuelig",
     "lemma": "ukuelig",
     "english": "indomitable; unstoppable",
@@ -2232,7 +2232,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-philosophy-022",
     "norsk": "verdslig",
     "lemma": "verdslig",
     "english": "worldly; secular; temporal",
@@ -2250,7 +2250,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-009",
     "norsk": "stuing (en/ei)",
     "lemma": "stuing",
     "english": "stew; creamed vegetables",
@@ -2268,7 +2268,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-020",
     "norsk": "å avstedkomme",
     "lemma": "avstedkomme",
     "english": "to bring about; to cause; to give rise to",
@@ -2286,7 +2286,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-007",
     "norsk": "from",
     "lemma": "from",
     "english": "pious; devout; meek; gentle",
@@ -2304,7 +2304,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-008",
     "norsk": "nattverdsvin (en)",
     "lemma": "nattverdsvin",
     "english": "communion wine; Eucharistic wine",
@@ -2322,7 +2322,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-041",
     "norsk": "flik (en)",
     "lemma": "flik",
     "english": "corner; flap; small piece (of fabric, paper, etc.)",
@@ -2340,7 +2340,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-027",
     "norsk": "å opprøre",
     "lemma": "opprøre",
     "english": "to outrage; to provoke; to stir up anger",
@@ -2358,7 +2358,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-057",
     "norsk": "lummer",
     "lemma": "lummer",
     "english": "sultry; muggy; close and humid",
@@ -2376,7 +2376,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-academic-014",
     "norsk": "kateter (et)",
     "lemma": "kateter",
     "english": "lectern; teacher's desk or podium",
@@ -2394,7 +2394,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-009",
     "norsk": "hedensk",
     "lemma": "hedensk",
     "english": "pagan; heathen; pre-Christian",
@@ -2412,7 +2412,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-058",
     "norsk": "vintersolverv (et)",
     "lemma": "vintersolverv",
     "english": "winter solstice",
@@ -2430,7 +2430,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-literary-024",
     "norsk": "kvad (et)",
     "lemma": "kvad",
     "english": "Norse poem; Old Norse lay",
@@ -2448,7 +2448,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-highly-formal-023",
     "norsk": "å påby",
     "lemma": "påby",
     "english": "to order; to command; to decree",
@@ -2466,7 +2466,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-059",
     "norsk": "halm (en)",
     "lemma": "halm",
     "english": "straw; stalks of grain or grass",
@@ -2484,7 +2484,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-010",
     "norsk": "julenek (et)",
     "lemma": "julenek",
     "english": "Christmas sheaf; a bundle of grain stalks put out for birds at Christmas",
@@ -2502,7 +2502,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-060",
     "norsk": "avling (en/ei)",
     "lemma": "avling",
     "english": "harvest; crop; yield",
@@ -2520,7 +2520,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-011",
     "norsk": "åsatro (en/ei)",
     "lemma": "åsatro",
     "english": "Asatru; Norse paganism; belief in the Norse gods",
@@ -2538,7 +2538,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-052",
     "norsk": "beryktet",
     "lemma": "beryktet",
     "english": "notorious",
@@ -2556,7 +2556,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-012",
     "norsk": "faste (en/ei)",
     "lemma": "faste",
     "english": "fasting",
@@ -2574,7 +2574,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-061",
     "norsk": "frodig",
     "lemma": "frodig",
     "english": "lush; flourishing; vibrant",
@@ -2592,7 +2592,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-053",
     "norsk": "måtehold (et)",
     "lemma": "måtehold",
     "english": "moderation; temperance",
@@ -2610,7 +2610,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-062",
     "norsk": "å bugne",
     "lemma": "bugne",
     "english": "to be abundant; to overflow; to be laden",
@@ -2628,7 +2628,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-010",
     "norsk": "fråtsing (en/ei)",
     "lemma": "fråtsing",
     "english": "gluttony; overindulgence in food",
@@ -2646,7 +2646,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-027",
     "norsk": "storstilt",
     "lemma": "storstilt",
     "english": "large-scale; grand",
@@ -2664,7 +2664,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-029",
     "norsk": "stattholder (en)",
     "lemma": "stattholder",
     "english": "governor; viceroy (a royal official ruling a country or province on behalf of a monarch, archaic)",
@@ -2682,7 +2682,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-013",
     "norsk": "å kanonisere",
     "lemma": "kanonisere",
     "english": "to canonize; to officially declare someone a saint",
@@ -2700,7 +2700,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-014",
     "norsk": "skytshelgen (en)",
     "lemma": "skytshelgen",
     "english": "patron saint; a saint regarded as the special protector of a person, place, or group",
@@ -2718,7 +2718,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-011",
     "norsk": "lussekatt (en)",
     "lemma": "lussekatt",
     "english": "saffron bun; a yeast pastry with saffron and raisins made for Saint Lucy's Day",
@@ -2736,7 +2736,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-054",
     "norsk": "lyssky",
     "lemma": "lyssky",
     "english": "shunning the light; avoiding daylight; (figuratively) shady, secretive",
@@ -2754,7 +2754,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-012",
     "norsk": "skåldet",
     "lemma": "skåldet",
     "english": "blanched; (of almonds) scalded and peeled",
@@ -2772,7 +2772,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-013",
     "norsk": "sirupssnipp (en)",
     "lemma": "sirupssnipp",
     "english": "syrup snip; a Norwegian Christmas cookie baked with syrup",
@@ -2790,7 +2790,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-014",
     "norsk": "juleknekk (en)",
     "lemma": "juleknekk",
     "english": "Christmas toffee; hard caramels traditionally made at Christmas",
@@ -2808,7 +2808,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-015",
     "norsk": "krumkake (en/ei)",
     "lemma": "krumkake",
     "english": "krumkake; a thin, crisp Norwegian wafer cookie baked on a special iron and rolled into a cone",
@@ -2826,7 +2826,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-016",
     "norsk": "serinakake (en/ei)",
     "lemma": "serinakake",
     "english": "serina cookie (a round Norwegian butter cookie brushed with egg and topped with chopped almonds and pearl sugar)",
@@ -2844,7 +2844,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-media-journalism-003",
     "norsk": "filmsnutt (en)",
     "lemma": "filmsnutt",
     "english": "film clip; a short video or brief excerpt from a film",
@@ -2862,7 +2862,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-015",
     "norsk": "gløgg (en)",
     "lemma": "gløgg",
     "english": "mulled wine; a warm, sweet spiced drink (often with red wine) traditionally served at Christmas",
@@ -2880,7 +2880,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-030",
     "norsk": "gild",
     "lemma": "gild",
     "english": "fine and special; splendid",
@@ -2898,7 +2898,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-042",
     "norsk": "dekketøy (et)",
     "lemma": "dekketøy",
     "english": "table linen and tableware; items used to set a table",
@@ -2916,7 +2916,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-031",
     "norsk": "arm",
     "lemma": "arm",
     "english": "wretched; poor; unfortunate",
@@ -2934,7 +2934,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-055",
     "norsk": "særegen",
     "lemma": "særegen",
     "english": "distinctive; peculiar; unique",
@@ -2952,7 +2952,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-056",
     "norsk": "gåtefull",
     "lemma": "gåtefull",
     "english": "enigmatic; mysterious; puzzling",
@@ -2970,7 +2970,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-057",
     "norsk": "sparsommelig",
     "lemma": "sparsommelig",
     "english": "thrifty; frugal; economical",
@@ -2988,7 +2988,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-016",
     "norsk": "kanefart (en)",
     "lemma": "kanefart",
     "english": "sleigh ride; travelling by horse-drawn sleigh",
@@ -3006,7 +3006,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-063",
     "norsk": "hyttegrend (en/ei)",
     "lemma": "hyttegrend",
     "english": "cabin cluster; area where cabins are grouped closely together",
@@ -3024,7 +3024,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-058",
     "norsk": "overdådig",
     "lemma": "overdådig",
     "english": "lavish; extravagant; excessively grand",
@@ -3042,7 +3042,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-017",
     "norsk": "julehefte (et)",
     "lemma": "julehefte",
     "english": "Christmas magazine; Christmas booklet",
@@ -3060,7 +3060,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-028",
     "norsk": "utspring (et)",
     "lemma": "utspring",
     "english": "origin; source; starting point",
@@ -3078,7 +3078,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-032",
     "norsk": "almisse (en/ei)",
     "lemma": "almisse",
     "english": "alms; charitable donation to the poor",
@@ -3096,7 +3096,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-043",
     "norsk": "utkledd",
     "lemma": "utkledd",
     "english": "in disguise; dressed up (as someone or something else)",
@@ -3114,7 +3114,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-028",
     "norsk": "raggete",
     "lemma": "raggete",
     "english": "shaggy; with long, coarse, and unkempt hair",
@@ -3132,7 +3132,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-018",
     "norsk": "skinnfell (en)",
     "lemma": "skinnfell",
     "english": "hide; pelt used as a blanket or covering (with the animal's hair still on)",
@@ -3150,7 +3150,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-019",
     "norsk": "opptog (et)",
     "lemma": "opptog",
     "english": "procession, parade",
@@ -3168,7 +3168,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-020",
     "norsk": "vette (en/et)",
     "lemma": "vette",
     "english": "supernatural creature in folk belief (such as trolls, sprites, and hidden folk)",
@@ -3186,7 +3186,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-064",
     "norsk": "einer (en)",
     "lemma": "einer",
     "english": "juniper (a small tree in the cypress family, with sharp needles and juniper berries widely used in cooking)",
@@ -3204,7 +3204,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-044",
     "norsk": "å putte",
     "lemma": "putte",
     "english": "to put, tuck, slip (something somewhere)",
@@ -3222,7 +3222,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-065",
     "norsk": "å råtne",
     "lemma": "råtne",
     "english": "to rot, decay",
@@ -3240,7 +3240,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-045",
     "norsk": "uro (en/ei)",
     "lemma": "uro",
     "english": "mobile (a hanging decorative object that moves in the air and sometimes makes sounds)",
@@ -3258,7 +3258,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-033",
     "norsk": "etterlevning (en/ei)",
     "lemma": "etterlevning",
     "english": "remnant, relic, vestige (something left behind as a trace of what once existed)",
@@ -3276,7 +3276,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-034",
     "norsk": "trestamp (en)",
     "lemma": "trestamp",
     "english": "tub (a large barrel or vessel used for bathing in earlier times)",
@@ -3294,7 +3294,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-046",
     "norsk": "lenke (en/ei)",
     "lemma": "lenke",
     "english": "chain, necklace (a strand of linked rings or beads)",
@@ -3312,7 +3312,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-047",
     "norsk": "glitter (et)",
     "lemma": "glitter",
     "english": "glitter, sparkle (something that glitters and shines)",
@@ -3330,7 +3330,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-066",
     "norsk": "kristtorn (en)",
     "lemma": "kristtorn",
     "english": "holly (an evergreen tree with stiff, thick leaves with spines along the edge)",
@@ -3348,7 +3348,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-035",
     "norsk": "embetsfamilie (en)",
     "lemma": "embetsfamilie",
     "english": "family of high social rank; a family holding a prominent position in society (the term is somewhat old-fashioned today as the system has changed)",
@@ -3366,7 +3366,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-021",
     "norsk": "læstadianer (en)",
     "lemma": "læstadianer",
     "english": "Laestadian; a member of the Laestadian religious movement (which emphasizes pietistic and biblically faithful living)",
@@ -3384,7 +3384,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-009",
     "norsk": "gudsbespottelse (en)",
     "lemma": "gudsbespottelse",
     "english": "blasphemy; a disrespectful act or statement against God",
@@ -3400,5 +3400,113 @@
     "level": "C",
     "category": "advanced-law-justice",
     "part": "noun"
+  },
+  {
+    "id": "v-c-gastronomy-017",
+    "norsk": "å stappe i seg",
+    "lemma": "stappe i seg",
+    "english": "to stuff oneself, to cram food into oneself, to wolf down food",
+    "ukrainian": "набивати собі живіт, їсти жадібно, поглинати їжу",
+    "spanish": "atiborrarse, tragarse algo a toda prisa, engullir",
+    "german": "in sich hineinstopfen, sich vollstopfen, hinunterschlingen",
+    "example": "Han stappet i seg en hel pizza på bare noen minutter.",
+    "example_english": "He stuffed a whole pizza into himself in just a few minutes.",
+    "example_ukrainian": "Він поглинув цілу піцу всього за кілька хвилин.",
+    "example_spanish": "Se atiborro con una pizza entera en solo unos minutos.",
+    "example_german": "Er stopfte sich eine ganze Pizza in wenigen Minuten in sich hinein.",
+    "definition": "spise grådig og raskt; proppe mye mat i seg på kort tid",
+    "level": "C",
+    "category": "gastronomy",
+    "part": "verb"
+  },
+  {
+    "id": "v-c-professional-021",
+    "norsk": "å livnære seg",
+    "lemma": "livnære seg",
+    "english": "to make a living; to earn one's livelihood",
+    "ukrainian": "заробляти на життя; існувати за рахунок чогось",
+    "spanish": "ganarse la vida; sustentarse",
+    "german": "seinen Lebensunterhalt verdienen; sich ernähren",
+    "example": "Han livnærte seg som fisker i mange år.",
+    "example_english": "He made a living as a fisherman for many years.",
+    "example_ukrainian": "Він заробляв на життя рибалкою протягом багатьох років.",
+    "example_spanish": "Se ganó la vida como pescador durante muchos años.",
+    "example_german": "Er verdiente sich seinen Lebensunterhalt viele Jahre lang als Fischer.",
+    "definition": "tjene til livets opphold; forsørge seg selv økonomisk",
+    "level": "C",
+    "category": "professional",
+    "part": "verb"
+  },
+  {
+    "id": "v-c-abstract-concepts-029",
+    "norsk": "å utspille seg",
+    "lemma": "utspille seg",
+    "english": "to unfold; to take place; to play out",
+    "ukrainian": "розгортатися; відбуватися",
+    "spanish": "desarrollarse; transcurrir; tener lugar",
+    "german": "sich abspielen; sich entfalten",
+    "example": "Dramaet utspilte seg foran øynene på hundrevis av tilskuere.",
+    "example_english": "The drama unfolded before the eyes of hundreds of spectators.",
+    "example_ukrainian": "Драма розгорталася на очах у сотень глядачів.",
+    "example_spanish": "El drama se desarrolló ante los ojos de cientos de espectadores.",
+    "example_german": "Das Drama spielte sich vor den Augen von Hunderten von Zuschauern ab.",
+    "definition": "skje, foregå eller finne sted, om en hendelse eller handling",
+    "level": "C",
+    "category": "abstract-concepts",
+    "part": "verb"
+  },
+  {
+    "id": "v-c-complex-emotions-032",
+    "norsk": "å fryde seg over",
+    "lemma": "fryde seg over",
+    "english": "to delight in; to rejoice over",
+    "ukrainian": "радіти чомусь; тішитися чимось",
+    "spanish": "deleitarse con; regocijarse por",
+    "german": "sich erfreuen an; sich freuen über",
+    "example": "Barna frydet seg over de fargerike julepyntene i vinduet.",
+    "example_english": "The children delighted in the colourful Christmas decorations in the window.",
+    "example_ukrainian": "Діти раділи барвистим різдвяним прикрасам у вікні.",
+    "example_spanish": "Los niños se deleitaron con los coloridos adornos navideños en la ventana.",
+    "example_german": "Die Kinder freuten sich über den bunten Weihnachtsschmuck im Fenster.",
+    "definition": "glede seg stort over noe; kjenne fryd over noe",
+    "level": "C",
+    "category": "complex-emotions",
+    "part": "verb"
+  },
+  {
+    "id": "v-c-physical-appearance-029",
+    "norsk": "å piffe seg opp",
+    "lemma": "piffe seg opp",
+    "english": "to spruce oneself up / to smarten up one's appearance",
+    "ukrainian": "приодягнутися / привести себе в порядок / підтягнути зовнішній вигляд",
+    "spanish": "arreglarse / ponerse más elegante / mejorar el aspecto",
+    "german": "sich herausputzen / sich aufhübschen / sich schick machen",
+    "example": "Før intervjuet bestemte hun seg for å piffe seg opp med nye klær og en ny frisyre.",
+    "example_english": "Before the interview, she decided to spruce herself up with new clothes and a new hairstyle.",
+    "example_ukrainian": "Перед співбесідою вона вирішила привести себе в порядок - купила новий одяг і зробила нову зачіску.",
+    "example_spanish": "Antes de la entrevista, decidió arreglarse con ropa nueva y un nuevo peinado.",
+    "example_german": "Vor dem Vorstellungsgespräch beschloss sie, sich mit neuen Kleidern und einer neuen Frisur herauszuputzen.",
+    "definition": "gjøre seg penere eller mer stilig; pynte seg opp",
+    "level": "C",
+    "category": "physical-appearance",
+    "part": "verb"
+  },
+  {
+    "id": "v-c-interpersonal-conflict-028",
+    "norsk": "å verge seg",
+    "lemma": "verge seg",
+    "english": "to defend oneself, to protect oneself",
+    "ukrainian": "захищатися, обороняти себе",
+    "spanish": "defenderse, protegerse",
+    "german": "sich wehren, sich verteidigen",
+    "example": "Han visste ikke hvordan han skulle verge seg mot de falske anklagene.",
+    "example_english": "He did not know how to defend himself against the false accusations.",
+    "example_ukrainian": "Він не знав, як захиститися від хибних звинувачень.",
+    "example_spanish": "No sabía cómo defenderse de las falsas acusaciones.",
+    "example_german": "Er wusste nicht, wie er sich gegen die falschen Anschuldigungen wehren sollte.",
+    "definition": "forsvare seg eller beskytte seg mot noe",
+    "level": "C",
+    "category": "interpersonal-conflict",
+    "part": "verb"
   }
 ]

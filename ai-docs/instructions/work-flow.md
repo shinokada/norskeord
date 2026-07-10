@@ -47,6 +47,7 @@ Suggested script: `scripts/enrich-vocab.mjs --level {level}`, following the same
 This step doesn't need chat or image upload at all — it's pure JSON-in, JSON-out, which is why it's a good candidate for a script instead of manual conversation.
 
 ## Step 3A - Find duplicates
+
 The following will find duplicates for vocab and uttrykk.
 
 ```bash

@@ -2,14 +2,7 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
----
-I have data-rules/recommendation.md for data-rules/vocab-and-uttrykk.md. What do you think about the recommendation.md.
-
-If I change vocab-and-uttrykk.md, I need to change the followings:
-- ai-docs/instructions/image-converter-c.md, image-conveter-b1.md
-- all of src/lib/data/uttrykk-xx.json to review
-- all of src/lib/data/vocab-xx.json to review
-- I wonder if it is possible to catch the changes using script?
+I have data-rules/vocab-and-uttrykk.md for your information.
 
 ---
 I have draft/c/vocab-new-c.json and uttrykk-c-new.json. I asked you to cross-reference with scripts/outputs/find-dupes-details.txt and you answered the following.

@@ -1,6 +1,6 @@
 [
   {
-    "id": "",
+    "id": "u-c-192",
     "norsk": "oppsatt kveld",
     "lemma": "oppsatt kveld",
     "english": "a scheduled evening performance or event",
@@ -17,7 +17,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-193",
     "norsk": "å gå inn for noe",
     "lemma": "gå inn for noe",
     "english": "to commit to something, to go all in for something, to strive for something",
@@ -34,7 +34,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-194",
     "norsk": "å få høre hvor skapet skal stå",
     "lemma": "få høre hvor skapet skal stå",
     "english": "to be told off, to be put in one's place, to get a piece of someone's mind",
@@ -51,7 +51,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-195",
     "norsk": "å få passet sitt påskrevet",
     "lemma": "få passet sitt påskrevet",
     "english": "to get one's comeuppance, to be given a stern warning, to be told what's what",
@@ -68,7 +68,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-196",
     "norsk": "opp og i mente",
     "lemma": "opp og i mente",
     "english": "at length, in great detail, extensively, on and on",
@@ -85,7 +85,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-197",
     "norsk": "å svirre rundt",
     "lemma": "svirre rundt",
     "english": "to buzz around, to flit about, to swirl around",
@@ -102,7 +102,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-198",
     "norsk": "å skrive seg noe bak øret",
     "lemma": "skrive seg noe bak øret",
     "english": "to make a mental note of something, to take note and remember something well",
@@ -119,7 +119,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-199",
     "norsk": "å legge seg noe på sinne",
     "lemma": "legge seg noe på sinne",
     "english": "to take something to heart, to bear something in mind, to keep something in mind",
@@ -136,24 +136,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å stappe i seg",
-    "lemma": "stappe i seg",
-    "english": "to stuff oneself, to cram food into oneself, to wolf down food",
-    "ukrainian": "набивати собі живіт, їсти жадібно, поглинати їжу",
-    "spanish": "atiborrarse, tragarse algo a toda prisa, engullir",
-    "german": "in sich hineinstopfen, sich vollstopfen, hinunterschlingen",
-    "example": "Han stappet i seg en hel pizza på bare noen minutter.",
-    "example_english": "He stuffed a whole pizza into himself in just a few minutes.",
-    "example_ukrainian": "Він поглинув цілу піцу всього за кілька хвилин.",
-    "example_spanish": "Se atiborro con una pizza entera en solo unos minutos.",
-    "example_german": "Er stopfte sich eine ganze Pizza in wenigen Minuten in sich hinein.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-200",
     "norsk": "å ha fornemmelse av",
     "lemma": "ha fornemmelse av",
     "english": "to have a sense of, to have a feeling of, to sense something",
@@ -170,7 +153,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-201",
     "norsk": "aldri så liten",
     "lemma": "aldri så liten",
     "english": "no matter how small; however small",
@@ -187,24 +170,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å livnære seg",
-    "lemma": "livnære seg",
-    "english": "to make a living; to earn one's livelihood",
-    "ukrainian": "заробляти на життя; існувати за рахунок чогось",
-    "spanish": "ganarse la vida; sustentarse",
-    "german": "seinen Lebensunterhalt verdienen; sich ernähren",
-    "example": "Han livnærte seg som fisker i mange år.",
-    "example_english": "He made a living as a fisherman for many years.",
-    "example_ukrainian": "Він заробляв на життя рибалкою протягом багатьох років.",
-    "example_spanish": "Se ganó la vida como pescador durante muchos años.",
-    "example_german": "Er verdiente sich seinen Lebensunterhalt viele Jahre lang als Fischer.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-202",
     "norsk": "å lyde et navn",
     "lemma": "lyde et navn",
     "english": "to go by a name; to bear a name",
@@ -221,7 +187,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-203",
     "norsk": "å se opp til",
     "lemma": "se opp til",
     "english": "to look up to; to admire",
@@ -238,7 +204,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-204",
     "norsk": "å få kalde føtter",
     "lemma": "få kalde føtter",
     "english": "to get cold feet; to lose one's nerve",
@@ -255,7 +221,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-205",
     "norsk": "å være i ferd med å dø ut",
     "lemma": "være i ferd med å dø ut",
     "english": "to be on the verge of extinction; to be dying out",
@@ -272,7 +238,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-206",
     "norsk": "å skvette vann på gåsa",
     "lemma": "skvette vann på gåsa",
     "english": "to be like water off a duck's back; to have no effect on someone",
@@ -289,7 +255,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-207",
     "norsk": "å skjelve som et ospeløv",
     "lemma": "skjelve som et ospeløv",
     "english": "to tremble like a leaf; to shake like an aspen leaf",
@@ -306,7 +272,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-208",
     "norsk": "i nattens mulm og mørke",
     "lemma": "i nattens mulm og mørke",
     "english": "in the dead of night; under cover of darkness",
@@ -323,7 +289,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-209",
     "norsk": "å rykke opp med rota",
     "lemma": "rykke opp med rota",
     "english": "to uproot completely, to pull up by the roots",
@@ -340,7 +306,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-210",
     "norsk": "å snu hver stein",
     "lemma": "snu hver stein",
     "english": "to leave no stone unturned",
@@ -357,7 +323,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-211",
     "norsk": "å flagge på halv stang",
     "lemma": "flagge på halv stang",
     "english": "to fly the flag at half-mast",
@@ -374,7 +340,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-212",
     "norsk": "å holde en knapp på",
     "lemma": "holde en knapp på",
     "english": "to have no idea about, to not have a clue about",
@@ -391,7 +357,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-213",
     "norsk": "å oppgi ånden",
     "lemma": "oppgi ånden",
     "english": "to give up the ghost, to breathe one's last",
@@ -408,7 +374,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-214",
     "norsk": "å gå dukken",
     "lemma": "gå dukken",
     "english": "to go under, to fail, to go bust",
@@ -425,7 +391,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-215",
     "norsk": "å stryke med",
     "lemma": "stryke med",
     "english": "to perish, to die, to be wiped out",
@@ -442,7 +408,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-216",
     "norsk": "å gå til de evige jaktmarker",
     "lemma": "gå til de evige jaktmarker",
     "english": "to go to the happy hunting grounds, to pass away",
@@ -459,7 +425,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-217",
     "norsk": "å gå bort",
     "lemma": "gå bort",
     "english": "to pass away, to die",
@@ -476,7 +442,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-218",
     "norsk": "å sovne inn",
     "lemma": "sovne inn",
     "english": "to pass away peacefully (in one's sleep)",
@@ -493,7 +459,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-219",
     "norsk": "å ende sine dager",
     "lemma": "ende sine dager",
     "english": "to end one's days; to die",
@@ -510,7 +476,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-220",
     "norsk": "å trekke sitt siste sukk",
     "lemma": "trekke sitt siste sukk",
     "english": "to breathe one's last; to draw one's last breath",
@@ -527,7 +493,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-221",
     "norsk": "å ta hånd om",
     "lemma": "ta hånd om",
     "english": "to take care of; to look after",
@@ -544,7 +510,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-222",
     "norsk": "å dø for egen hånd",
     "lemma": "dø for egen hånd",
     "english": "to die by one's own hand; to take one's own life",
@@ -561,24 +527,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å utspille seg",
-    "lemma": "utspille seg",
-    "english": "to unfold; to take place; to play out",
-    "ukrainian": "розгортатися; відбуватися",
-    "spanish": "desarrollarse; transcurrir; tener lugar",
-    "german": "sich abspielen; sich entfalten",
-    "example": "Dramaet utspilte seg foran øynene på hundrevis av tilskuere.",
-    "example_english": "The drama unfolded before the eyes of hundreds of spectators.",
-    "example_ukrainian": "Драма розгорталася на очах у сотень глядачів.",
-    "example_spanish": "El drama se desarrolló ante los ojos de cientos de espectadores.",
-    "example_german": "Das Drama spielte sich vor den Augen von Hunderten von Zuschauern ab.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-223",
     "norsk": "å slå hånden av",
     "lemma": "slå hånden av",
     "english": "to wash one's hands of; to turn one's back on; to abandon",
@@ -595,7 +544,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-224",
     "norsk": "varig men",
     "lemma": "varig men",
     "english": "lasting harm; permanent damage",
@@ -612,7 +561,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-225",
     "norsk": "å toe sine hender",
     "lemma": "toe sine hender",
     "english": "to wash one's hands of something; to disclaim responsibility",
@@ -629,7 +578,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-226",
     "norsk": "å ha frie tøyler",
     "lemma": "ha frie tøyler",
     "english": "to have free rein; to have full freedom to act",
@@ -646,7 +595,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-227",
     "norsk": "å bære noen på gullstol",
     "lemma": "bære noen på gullstol",
     "english": "to treat someone like royalty, to put someone on a pedestal",
@@ -663,7 +612,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-228",
     "norsk": "å være bekjent av",
     "lemma": "være bekjent av",
     "english": "to be willing to be associated with, to be proud of, to own up to",
@@ -680,7 +629,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-229",
     "norsk": "å gi blanke blaffen",
     "lemma": "gi blanke blaffen",
     "english": "to not give a damn, to couldn't care less",
@@ -697,7 +646,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-230",
     "norsk": "like gjerne",
     "lemma": "like gjerne",
     "english": "just as well, equally happy to, would just as soon",
@@ -714,7 +663,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-231",
     "norsk": "slike takter",
     "lemma": "slike takter",
     "english": "that kind of attitude, those kinds of tactics, that sort of behavior",
@@ -731,7 +680,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-232",
     "norsk": "å utvinne olje",
     "lemma": "utvinne olje",
     "english": "to extract oil, to produce oil",
@@ -748,7 +697,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-233",
     "norsk": "å være gjenstand for",
     "lemma": "være gjenstand for",
     "english": "to be the subject of, to be the object of, to be subjected to",
@@ -765,7 +714,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-234",
     "norsk": "alle monner drar",
     "lemma": "alle monner drar",
     "english": "every little bit helps, every contribution counts",
@@ -782,7 +731,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-235",
     "norsk": "mange bekker små gjør en stor å",
     "lemma": "mange bekker små gjør en stor å",
     "english": "many a little makes a mickle, every little bit adds up",
@@ -799,7 +748,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-236",
     "norsk": "å lire av seg noe",
     "lemma": "lire av seg noe",
     "english": "to rattle something off, to recite something mechanically, to reel something off",
@@ -816,7 +765,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-237",
     "norsk": "å lirke ut sannheten",
     "lemma": "lirke ut sannheten",
     "english": "to coax the truth out of someone",
@@ -833,7 +782,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-238",
     "norsk": "fryd og gammen",
     "lemma": "fryd og gammen",
     "english": "joy and merriment",
@@ -850,7 +799,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-239",
     "norsk": "å gå hen og bli pønker",
     "lemma": "gå hen og bli pønker",
     "english": "to go and become a punk / to end up turning into a punk",
@@ -867,7 +816,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-240",
     "norsk": "å bedrive sin gjerning i det stille bak kulissene",
     "lemma": "bedrive sin gjerning i det stille bak kulissene",
     "english": "to carry out one's work quietly behind the scenes",
@@ -884,7 +833,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-241",
     "norsk": "blank løgn",
     "lemma": "blank løgn",
     "english": "a blatant lie / a bare-faced lie",
@@ -901,7 +850,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-242",
     "norsk": "å gripe i løgn",
     "lemma": "gripe i løgn",
     "english": "to catch someone in a lie",
@@ -918,7 +867,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-243",
     "norsk": "fra ende til annen",
     "lemma": "fra ende til annen",
     "english": "from one end to the other / throughout / the whole way through",
@@ -935,7 +884,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-244",
     "norsk": "hvit løgn",
     "lemma": "hvit løgn",
     "english": "a white lie",
@@ -952,7 +901,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-245",
     "norsk": "å holde hodet over vann",
     "lemma": "holde hodet over vann",
     "english": "to keep one's head above water",
@@ -969,7 +918,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-246",
     "norsk": "land i sikte",
     "lemma": "land i sikte",
     "english": "land in sight / light at the end of the tunnel",
@@ -986,7 +935,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-247",
     "norsk": "å gå på land",
     "lemma": "gå på land",
     "english": "to go ashore, to disembark",
@@ -1003,7 +952,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-248",
     "norsk": "å ro seg i land",
     "lemma": "ro seg i land",
     "english": "to manage to get through, to pull oneself through (a difficult situation)",
@@ -1020,7 +969,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-249",
     "norsk": "som fot i hose",
     "lemma": "som fot i hose",
     "english": "like a hand in a glove, a perfect fit",
@@ -1037,7 +986,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-250",
     "norsk": "å hale i land en kontrakt",
     "lemma": "hale i land en kontrakt",
     "english": "to land a contract, to successfully close a deal",
@@ -1054,7 +1003,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-251",
     "norsk": "å stå til liv",
     "lemma": "stå til liv",
     "english": "to be available, to be at one's disposal",
@@ -1071,7 +1020,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-252",
     "norsk": "å ønske noen til livs",
     "lemma": "ønske noen til livs",
     "english": "to wish someone ill, to wish someone dead or harm",
@@ -1088,7 +1037,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-253",
     "norsk": "å sette noe til livs",
     "lemma": "sette noe til livs",
     "english": "to eat something, to put something away (food)",
@@ -1105,7 +1054,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-254",
     "norsk": "å ta noen i skole",
     "lemma": "ta noen i skole",
     "english": "to teach someone a lesson, to reprimand or discipline someone",
@@ -1122,7 +1071,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-255",
     "norsk": "med tid og stunder",
     "lemma": "med tid og stunder",
     "english": "in time, eventually, over time",
@@ -1139,7 +1088,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-256",
     "norsk": "all den tid",
     "lemma": "all den tid",
     "english": "as long as, given that, since",
@@ -1156,7 +1105,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-257",
     "norsk": "å sitte på gjerdet",
     "lemma": "sitte på gjerdet",
     "english": "to sit on the fence",
@@ -1173,7 +1122,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-258",
     "norsk": "å være noe på sin hals",
     "lemma": "være noe på sin hals",
     "english": "to have something on one's hands, to be burdened with something",
@@ -1190,7 +1139,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-259",
     "norsk": "å få øynene opp for",
     "lemma": "få øynene opp for",
     "english": "to open one's eyes to something, to become aware of",
@@ -1207,7 +1156,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-260",
     "norsk": "grov feil",
     "lemma": "grov feil",
     "english": "a gross mistake, a serious error",
@@ -1224,7 +1173,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-261",
     "norsk": "å gå i bresjen for noe",
     "lemma": "gå i bresjen for noe",
     "english": "to spearhead something, to champion a cause",
@@ -1241,7 +1190,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-262",
     "norsk": "daglig tralt",
     "lemma": "daglig tralt",
     "english": "daily routine, the daily grind",
@@ -1258,7 +1207,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-263",
     "norsk": "hver især",
     "lemma": "hver især",
     "english": "each one, each individually, every single one",
@@ -1275,7 +1224,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-264",
     "norsk": "midt på svarte vinteren",
     "lemma": "midt på svarte vinteren",
     "english": "in the dead of winter, in the middle of the darkest winter",
@@ -1292,7 +1241,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-265",
     "norsk": "å komme over noe",
     "lemma": "komme over noe",
     "english": "to get over something, to recover from something",
@@ -1309,7 +1258,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-266",
     "norsk": "å slå til på noe",
     "lemma": "slå til på noe",
     "english": "to go for something, to seize an opportunity",
@@ -1326,7 +1275,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-267",
     "norsk": "å bli ved sin lest",
     "lemma": "bli ved sin lest",
     "english": "to stick to what one knows; to mind one's own business and stay in one's lane",
@@ -1343,7 +1292,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-268",
     "norsk": "å gå opp i liminga",
     "lemma": "gå opp i liminga",
     "english": "to fall apart; to come apart at the seams; to go to pieces",
@@ -1360,7 +1309,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-269",
     "norsk": "å sige ned",
     "lemma": "sige ned",
     "english": "to sink down slowly; to slump; to droop; to gradually subside",
@@ -1377,7 +1326,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-270",
     "norsk": "å låne øre til noen",
     "lemma": "låne øre til noen",
     "english": "to lend an ear to someone; to listen to someone",
@@ -1394,7 +1343,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-271",
     "norsk": "å komme ut for en ulykke",
     "lemma": "komme ut for en ulykke",
     "english": "to be involved in an accident; to meet with an accident",
@@ -1411,7 +1360,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-272",
     "norsk": "å kose seg glugg i hjel",
     "lemma": "kose seg glugg i hjel",
     "english": "to have an absolutely wonderful time; to enjoy oneself to death; to have a blast",
@@ -1428,7 +1377,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-273",
     "norsk": "hvorfor i huleste",
     "lemma": "hvorfor i huleste",
     "english": "why on earth; why in the world",
@@ -1445,7 +1394,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-274",
     "norsk": "å rutte med",
     "lemma": "rutte med",
     "english": "to squander; to be wasteful with; to throw around carelessly",
@@ -1462,7 +1411,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-275",
     "norsk": "slunken lommebok",
     "lemma": "slunken lommebok",
     "english": "a thin wallet; a flat wallet; being short of money",
@@ -1479,7 +1428,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-276",
     "norsk": "å hamle opp med",
     "lemma": "hamle opp med",
     "english": "to cope with; to match; to deal with; to be a match for someone",
@@ -1496,7 +1445,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-277",
     "norsk": "å by imot",
     "lemma": "by imot",
     "english": "to resist, to put up resistance",
@@ -1513,7 +1462,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-278",
     "norsk": "å dra til noen",
     "lemma": "dra til noen",
     "english": "to hit someone, to strike someone",
@@ -1530,7 +1479,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-279",
     "norsk": "å befinne seg i havsnød",
     "lemma": "befinne seg i havsnød",
     "english": "to be in distress at sea",
@@ -1547,7 +1496,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-280",
     "norsk": "å ete noen ut av huset",
     "lemma": "ete noen ut av huset",
     "english": "to eat someone out of house and home",
@@ -1564,7 +1513,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-281",
     "norsk": "å drive noen til vanvidd",
     "lemma": "drive noen til vanvidd",
     "english": "to drive someone crazy, to drive someone mad",
@@ -1581,7 +1530,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-282",
     "norsk": "å skjenne på noen",
     "lemma": "skjenne på noen",
     "english": "to scold someone, to tell someone off",
@@ -1598,7 +1547,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-283",
     "norsk": "å ligge på tvers",
     "lemma": "ligge på tvers",
     "english": "to be obstructive, to be contrary, to create obstacles",
@@ -1615,7 +1564,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-284",
     "norsk": "forholdet ryker",
     "lemma": "forholdet ryker",
     "english": "the relationship breaks down, the relationship falls apart",
@@ -1632,7 +1581,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-285",
     "norsk": "ikke fortrekke en mine",
     "lemma": "ikke fortrekke en mine",
     "english": "not to bat an eyelid, to not show any reaction",
@@ -1649,7 +1598,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-286",
     "norsk": "på havsens bunn",
     "lemma": "på havsens bunn",
     "english": "at the bottom of the ocean",
@@ -1666,7 +1615,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-287",
     "norsk": "å dette så lang man er",
     "lemma": "dette så lang man er",
     "english": "to fall flat on one's face; to fall full length",
@@ -1683,7 +1632,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-288",
     "norsk": "å svømme om kapp",
     "lemma": "svømme om kapp",
     "english": "to race each other swimming; to compete in swimming",
@@ -1700,7 +1649,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-289",
     "norsk": "å stusse over",
     "lemma": "stusse over",
     "english": "to be puzzled by; to find strange; to wonder about",
@@ -1717,7 +1666,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-290",
     "norsk": "å være på nippet til",
     "lemma": "være på nippet til",
     "english": "to be on the verge of; to be about to; to narrowly avoid",
@@ -1734,7 +1683,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-291",
     "norsk": "å være til å ta og føle på",
     "lemma": "være til å ta og føle på",
     "english": "to be tangible; to be palpable; to be something you can really feel",
@@ -1751,7 +1700,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-292",
     "norsk": "å sette noe på spissen",
     "lemma": "sette noe på spissen",
     "english": "to put something bluntly; to sharpen an issue; to push something to the extreme",
@@ -1768,7 +1717,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-293",
     "norsk": "å finne på mye sprell",
     "lemma": "finne på mye sprell",
     "english": "to get up to all sorts of mischief; to be full of pranks",
@@ -1785,7 +1734,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-294",
     "norsk": "å spre seg som ild i tørt gress",
     "lemma": "spre seg som ild i tørt gress",
     "english": "to spread like wildfire",
@@ -1802,7 +1751,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-295",
     "norsk": "på fem minutter",
     "lemma": "på fem minutter",
     "english": "in five minutes; in no time at all",
@@ -1819,7 +1768,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-296",
     "norsk": "å bli satt fast av eksaminator",
     "lemma": "bli satt fast av eksaminator",
     "english": "to be stumped by the examiner",
@@ -1836,7 +1785,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-297",
     "norsk": "å sette huset på ende",
     "lemma": "sette huset på ende",
     "english": "to turn the house upside down; to cause a great commotion at home",
@@ -1853,7 +1802,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-298",
     "norsk": "å sette seg verk og betennelse",
     "lemma": "sette seg verk og betennelse",
     "english": "to get sore and inflamed; to develop aches and inflammation",
@@ -1870,7 +1819,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-299",
     "norsk": "å sette himmel og jord i bevegelse",
     "lemma": "sette himmel og jord i bevegelse",
     "english": "to move heaven and earth; to do everything possible",
@@ -1887,7 +1836,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-300",
     "norsk": "å sette noen i sving",
     "lemma": "sette noen i sving",
     "english": "to get someone going; to set someone to work",
@@ -1904,7 +1853,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-301",
     "norsk": "å sette hunden på noen",
     "lemma": "sette hunden på noen",
     "english": "to set the dog on someone; to sic someone on another person",
@@ -1921,7 +1870,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-302",
     "norsk": "å sette noe inn med fett",
     "lemma": "sette noe inn med fett",
     "english": "to grease something; to apply grease to something",
@@ -1938,7 +1887,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-303",
     "norsk": "å ha sine svin på skogen",
     "lemma": "ha sine svin på skogen",
     "english": "to have skeletons in the closet; to have one's own secrets or misdeeds to hide",
@@ -1955,7 +1904,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-304",
     "norsk": "å gå i vasken",
     "lemma": "gå i vasken",
     "english": "to go down the drain; to fall through; to come to nothing",
@@ -1972,7 +1921,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-305",
     "norsk": "å storme en by",
     "lemma": "storme en by",
     "english": "to storm a city",
@@ -1989,7 +1938,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-306",
     "norsk": "å knipe av et blad",
     "lemma": "knipe av et blad",
     "english": "to pinch off a leaf",
@@ -2006,7 +1955,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-307",
     "norsk": "å sige sammen",
     "lemma": "sige sammen",
     "english": "to slump down; to collapse (from exhaustion or despair)",
@@ -2023,7 +1972,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-308",
     "norsk": "å komme seg på fote igjen",
     "lemma": "komme seg på fote igjen",
     "english": "to get back on one's feet",
@@ -2040,24 +1989,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å fryde seg over",
-    "lemma": "fryde seg over",
-    "english": "to delight in; to rejoice over",
-    "ukrainian": "радіти чомусь; тішитися чимось",
-    "spanish": "deleitarse con; regocijarse por",
-    "german": "sich erfreuen an; sich freuen über",
-    "example": "Barna frydet seg over de fargerike julepyntene i vinduet.",
-    "example_english": "The children delighted in the colourful Christmas decorations in the window.",
-    "example_ukrainian": "Діти раділи барвистим різдвяним прикрасам у вікні.",
-    "example_spanish": "Los niños se deleitaron con los coloridos adornos navideños en la ventana.",
-    "example_german": "Die Kinder freuten sich über den bunten Weihnachtsschmuck im Fenster.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-309",
     "norsk": "å bli ribbet",
     "lemma": "bli ribbet",
     "english": "to be stripped bare; to be robbed of everything",
@@ -2074,7 +2006,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-310",
     "norsk": "å være prisgitt",
     "lemma": "være prisgitt",
     "english": "to be at the mercy of; to be entirely dependent on",
@@ -2091,24 +2023,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å slutte seg til",
-    "lemma": "slutte seg til",
-    "english": "to join; to adhere to; to associate oneself with",
-    "ukrainian": "приєднатися до; долучитися до",
-    "spanish": "unirse a; adherirse a",
-    "german": "sich anschließen; beitreten",
-    "example": "Hun bestemte seg for å slutte seg til den lokale frivilligorganisasjonen.",
-    "example_english": "She decided to join the local volunteer organisation.",
-    "example_ukrainian": "Вона вирішила приєднатися до місцевої волонтерської організації.",
-    "example_spanish": "Decidió unirse a la organización de voluntarios local.",
-    "example_german": "Sie beschloss, sich der örtlichen Freiwilligenorganisation anzuschließen.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-311",
     "norsk": "å gå løs på",
     "lemma": "gå løs på",
     "english": "to go at something, to tackle something energetically",
@@ -2125,7 +2040,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-312",
     "norsk": "sanden gir etter",
     "lemma": "sanden gir etter",
     "english": "the sand gives way",
@@ -2142,7 +2057,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-313",
     "norsk": "å vanke ute",
     "lemma": "vanke ute",
     "english": "to roam outside, to hang around outdoors",
@@ -2159,7 +2074,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-314",
     "norsk": "å ta noen for seg",
     "lemma": "ta noen for seg",
     "english": "to take someone aside, to have a word with someone",
@@ -2176,24 +2091,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å hige etter",
-    "lemma": "hige etter",
-    "english": "to yearn for, to strive eagerly after",
-    "ukrainian": "прагнути до чогось, жадати чогось",
-    "spanish": "anhelar algo, aspirar con ardor a algo",
-    "german": "nach etwas streben, sich nach etwas sehnen",
-    "example": "Hun higet etter anerkjennelse og respekt fra kollegaene sine.",
-    "example_english": "She yearned for recognition and respect from her colleagues.",
-    "example_ukrainian": "Вона прагнула визнання і поваги від своїх колег.",
-    "example_spanish": "Ella anhelaba el reconocimiento y el respeto de sus colegas.",
-    "example_german": "Sie strebte nach Anerkennung und Respekt von ihren Kollegen.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-315",
     "norsk": "å leve i sus og dus",
     "lemma": "leve i sus og dus",
     "english": "to live it up, to live a life of luxury and excess",
@@ -2210,7 +2108,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-316",
     "norsk": "å kjenne lusa på gangen",
     "lemma": "kjenne lusa på gangen",
     "english": "to smell a rat, to sense that something is wrong",
@@ -2227,7 +2125,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-317",
     "norsk": "i rikt monn",
     "lemma": "i rikt monn",
     "english": "in abundance, in large measure",
@@ -2244,7 +2142,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-318",
     "norsk": "å skjelle ut etter noter",
     "lemma": "skjelle ut etter noter",
     "english": "to give someone a thorough telling-off, to bawl someone out completely",
@@ -2261,7 +2159,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-319",
     "norsk": "det går så det suser",
     "lemma": "det går så det suser",
     "english": "things are going really well, it is going swimmingly",
@@ -2278,7 +2176,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-320",
     "norsk": "å gråte over spilt melk",
     "lemma": "gråte over spilt melk",
     "english": "to cry over spilled milk, to dwell on past misfortunes that cannot be changed",
@@ -2295,7 +2193,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-321",
     "norsk": "å springe ut",
     "lemma": "springe ut",
     "english": "to come out, to bloom, to blossom (of flowers or buds); also to come out as LGBTQ+",
@@ -2312,7 +2210,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-322",
     "norsk": "å jenke kravene",
     "lemma": "jenke kravene",
     "english": "to lower the requirements, to ease the demands, to adjust expectations downward",
@@ -2329,7 +2227,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-323",
     "norsk": "uforrettet sak",
     "lemma": "uforrettet sak",
     "english": "without having achieved anything, having accomplished nothing, empty-handed",
@@ -2346,7 +2244,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-324",
     "norsk": "å sverte hverandre",
     "lemma": "sverte hverandre",
     "english": "to badmouth each other, to smear one another, to defame each other",
@@ -2363,7 +2261,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-325",
     "norsk": "spikkes opp i fliser",
     "lemma": "spikkes opp i fliser",
     "english": "to be picked apart, to be torn to shreds, to be dissected mercilessly (in criticism)",
@@ -2380,7 +2278,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-326",
     "norsk": "antallet barnefødsler stuper",
     "lemma": "antallet barnefødsler stuper",
     "english": "the birth rate is plummeting, the number of births is dropping sharply",
@@ -2397,7 +2295,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-327",
     "norsk": "å rope et varsko",
     "lemma": "rope et varsko",
     "english": "to sound a warning, to raise the alarm",
@@ -2414,7 +2312,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-328",
     "norsk": "å dysse ned noe",
     "lemma": "dysse ned noe",
     "english": "to hush something up, to cover something up",
@@ -2431,7 +2329,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-329",
     "norsk": "å lete med lys og lykte",
     "lemma": "lete med lys og lykte",
     "english": "to search high and low, to look everywhere",
@@ -2448,7 +2346,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-330",
     "norsk": "å stryke noen med hårene",
     "lemma": "stryke noen med hårene",
     "english": "to rub someone the wrong way, to go against someone's grain",
@@ -2465,7 +2363,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-331",
     "norsk": "å gjøre noen til lags",
     "lemma": "gjøre noen til lags",
     "english": "to please someone, to satisfy someone",
@@ -2482,7 +2380,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-332",
     "norsk": "å få kreditorene på nakken",
     "lemma": "få kreditorene på nakken",
     "english": "to have the creditors breathing down one's neck",
@@ -2499,7 +2397,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-333",
     "norsk": "å ta beina på nakken",
     "lemma": "ta beina på nakken",
     "english": "to take to one's heels, to run away quickly",
@@ -2516,7 +2414,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-334",
     "norsk": "å ta seg selv i nakken",
     "lemma": "ta seg selv i nakken",
     "english": "to pull oneself together, to get a grip on oneself",
@@ -2533,7 +2431,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-335",
     "norsk": "å henge etter med noe",
     "lemma": "henge etter med noe",
     "english": "to be behind with something, to lag behind on something",
@@ -2550,7 +2448,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-336",
     "norsk": "å ha øyne i nakken",
     "lemma": "ha øyne i nakken",
     "english": "to have eyes in the back of one's head",
@@ -2567,7 +2465,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-337",
     "norsk": "å gå på med krum hals",
     "lemma": "gå på med krum hals",
     "english": "to go at something with gusto, to tackle something with great enthusiasm and determination",
@@ -2584,7 +2482,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-338",
     "norsk": "å synge av full hals",
     "lemma": "synge av full hals",
     "english": "to sing at the top of one's lungs",
@@ -2601,7 +2499,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-339",
     "norsk": "å frastøtes av hverandre",
     "lemma": "frastøtes av hverandre",
     "english": "to repel each other",
@@ -2618,7 +2516,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-340",
     "norsk": "å havne i en persons besittelse",
     "lemma": "havne i en persons besittelse",
     "english": "to end up in someone's possession",
@@ -2635,7 +2533,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-341",
     "norsk": "det hinsidige",
     "lemma": "det hinsidige",
     "english": "the afterlife; the beyond",
@@ -2652,7 +2550,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-342",
     "norsk": "å være skikket til",
     "lemma": "være skikket til",
     "english": "to be suited for; to be fit for",
@@ -2669,7 +2567,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-343",
     "norsk": "å hinte om",
     "lemma": "hinte om",
     "english": "to hint at; to allude to",
@@ -2686,7 +2584,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-344",
     "norsk": "å fare opp for",
     "lemma": "fare opp for",
     "english": "to stand up for; to defend",
@@ -2703,7 +2601,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-345",
     "norsk": "å klapse til noen",
     "lemma": "klapse til noen",
     "english": "to slap someone",
@@ -2720,7 +2618,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-346",
     "norsk": "på flyende flekken",
     "lemma": "på flyende flekken",
     "english": "on the spot; right away; immediately",
@@ -2737,7 +2635,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-347",
     "norsk": "å avfinne seg med noe",
     "lemma": "avfinne seg med noe",
     "english": "to come to terms with something, to accept something (reluctantly)",
@@ -2754,7 +2652,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-348",
     "norsk": "å få sving på sakene",
     "lemma": "få sving på sakene",
     "english": "to get things going, to get the show on the road, to get organised and moving",
@@ -2771,7 +2669,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-349",
     "norsk": "å ta en time på øret",
     "lemma": "ta en time på øret",
     "english": "to take a nap, to catch some sleep",
@@ -2788,7 +2686,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-350",
     "norsk": "å stemme på øret",
     "lemma": "stemme på øret",
     "english": "to sound about right, to seem roughly correct",
@@ -2805,7 +2703,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-351",
     "norsk": "å sitte med lange ører",
     "lemma": "sitte med lange ører",
     "english": "to eavesdrop, to listen in on others' conversations",
@@ -2822,7 +2720,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-352",
     "norsk": "å komme seg helskinnet gjennom / ut av noe",
     "lemma": "komme seg helskinnet gjennom / ut av noe",
     "english": "to come through something unscathed, to get out of something in one piece",
@@ -2839,7 +2737,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-353",
     "norsk": "å komme til bunns i noe",
     "lemma": "komme til bunns i noe",
     "english": "to get to the bottom of something, to find out the truth about something",
@@ -2856,7 +2754,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-354",
     "norsk": "å sette sinnene i kok",
     "lemma": "sette sinnene i kok",
     "english": "to stir up strong emotions, to set tempers flaring, to get people's blood boiling",
@@ -2873,7 +2771,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-355",
     "norsk": "å vegre seg for noe",
     "lemma": "vegre seg for noe",
     "english": "to be reluctant to do something; to resist or refuse to do something",
@@ -2890,7 +2788,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-356",
     "norsk": "viden kjent",
     "lemma": "viden kjent",
     "english": "widely known; well known far and wide",
@@ -2907,7 +2805,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-357",
     "norsk": "å skyte inn et par ord",
     "lemma": "skyte inn et par ord",
     "english": "to interject a few words; to put in a word or two",
@@ -2924,7 +2822,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-358",
     "norsk": "trange kår",
     "lemma": "trange kår",
     "english": "straitened circumstances; difficult financial conditions; hardship",
@@ -2941,7 +2839,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-359",
     "norsk": "å ta til følge",
     "lemma": "ta til følge",
     "english": "to comply with; to act on; to heed (advice or a request)",
@@ -2958,7 +2856,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-360",
     "norsk": "å være stor i kjeften",
     "lemma": "være stor i kjeften",
     "english": "to be all talk; to be loud-mouthed; to boast or brag without backing it up",
@@ -2975,7 +2873,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-361",
     "norsk": "i store trekk",
     "lemma": "i store trekk",
     "english": "in broad terms; broadly speaking; in outline",
@@ -2992,7 +2890,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-362",
     "norsk": "å ta noe med fatning",
     "lemma": "ta noe med fatning",
     "english": "to take something with composure; to handle something calmly",
@@ -3009,7 +2907,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-363",
     "norsk": "å ferdes til fots",
     "lemma": "ferdes til fots",
     "english": "to travel on foot; to get around by walking",
@@ -3026,7 +2924,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-364",
     "norsk": "å gå i lære",
     "lemma": "gå i lære",
     "english": "to serve an apprenticeship; to learn a trade under a master",
@@ -3043,7 +2941,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-365",
     "norsk": "å gå i gulvet med et knas",
     "lemma": "gå i gulvet med et knas",
     "english": "to crash to the ground with a crunch; to collapse completely",
@@ -3060,7 +2958,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-366",
     "norsk": "å gå i stå",
     "lemma": "gå i stå",
     "english": "to come to a standstill; to grind to a halt",
@@ -3077,7 +2975,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-367",
     "norsk": "mot alle odds",
     "lemma": "mot alle odds",
     "english": "against all odds",
@@ -3094,7 +2992,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-368",
     "norsk": "å slakke på barnas leggetider",
     "lemma": "slakke på barnas leggetider",
     "english": "to be lenient about the children's bedtimes; to relax the children's bedtime rules",
@@ -3111,7 +3009,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-369",
     "norsk": "å ha overskudd",
     "lemma": "ha overskudd",
     "english": "to have energy to spare; to have surplus energy",
@@ -3128,7 +3026,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-370",
     "norsk": "å få rede på",
     "lemma": "få rede på",
     "english": "to find out; to get to the bottom of",
@@ -3145,7 +3043,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-371",
     "norsk": "å ha en skrue løs",
     "lemma": "ha en skrue løs",
     "english": "to have a screw loose; to be a bit crazy",
@@ -3162,7 +3060,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-372",
     "norsk": "å satse liv og lemmer",
     "lemma": "satse liv og lemmer",
     "english": "to risk life and limb; to put everything on the line",
@@ -3179,7 +3077,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-373",
     "norsk": "å støtte noen i tykt og tynt",
     "lemma": "støtte noen i tykt og tynt",
     "english": "to support someone through thick and thin",
@@ -3196,7 +3094,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-374",
     "norsk": "å hinte frampå",
     "lemma": "hinte frampå",
     "english": "to drop hints; to hint at something",
@@ -3213,7 +3111,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-375",
     "norsk": "å få med noen å bestille",
     "lemma": "få med noen å bestille",
     "english": "to get someone to place an order / to bring someone along to order",
@@ -3230,7 +3128,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-376",
     "norsk": "å være forunt",
     "lemma": "være forunt",
     "english": "to be granted / to be destined for someone (often used in the negative: not to be one's lot)",
@@ -3247,7 +3145,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-377",
     "norsk": "å runde førti",
     "lemma": "runde førti",
     "english": "to turn forty / to hit forty (years of age)",
@@ -3264,7 +3162,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-378",
     "norsk": "å kalle en spade for en spade",
     "lemma": "kalle en spade for en spade",
     "english": "to call a spade a spade / to speak plainly",
@@ -3281,7 +3179,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-379",
     "norsk": "å se gjennom fingrene med noe",
     "lemma": "se gjennom fingrene med noe",
     "english": "to turn a blind eye to something / to overlook something",
@@ -3298,7 +3196,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-380",
     "norsk": "ikke henge på greip",
     "lemma": "ikke henge på greip",
     "english": "to not make sense / to not add up / to be incoherent",
@@ -3315,24 +3213,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å piffe seg opp",
-    "lemma": "piffe seg opp",
-    "english": "to spruce oneself up / to smarten up one's appearance",
-    "ukrainian": "приодягнутися / привести себе в порядок / підтягнути зовнішній вигляд",
-    "spanish": "arreglarse / ponerse más elegante / mejorar el aspecto",
-    "german": "sich herausputzen / sich aufhübschen / sich schick machen",
-    "example": "Før intervjuet bestemte hun seg for å piffe seg opp med nye klær og en ny frisyre.",
-    "example_english": "Before the interview, she decided to spruce herself up with new clothes and a new hairstyle.",
-    "example_ukrainian": "Перед співбесідою вона вирішила привести себе в порядок - купила новий одяг і зробила нову зачіску.",
-    "example_spanish": "Antes de la entrevista, decidió arreglarse con ropa nueva y un nuevo peinado.",
-    "example_german": "Vor dem Vorstellungsgespräch beschloss sie, sich mit neuen Kleidern und einer neuen Frisur herauszuputzen.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-381",
     "norsk": "å bule ut",
     "lemma": "bule ut",
     "english": "to bulge out / to stick out / to protrude",
@@ -3349,7 +3230,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-382",
     "norsk": "å herme etter noen",
     "lemma": "herme etter noen",
     "english": "to mimic someone / to imitate someone / to ape someone",
@@ -3366,7 +3247,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-383",
     "norsk": "å ape etter noen",
     "lemma": "ape etter noen",
     "english": "to copy someone, to mimic someone",
@@ -3383,7 +3264,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-384",
     "norsk": "å gry av dag",
     "lemma": "gry av dag",
     "english": "to dawn, for day to break",
@@ -3400,7 +3281,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-385",
     "norsk": "å måtte til",
     "lemma": "måtte til",
     "english": "to be necessary, to have to be done",
@@ -3417,7 +3298,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-386",
     "norsk": "å bøte med livet",
     "lemma": "bøte med livet",
     "english": "to pay with one's life",
@@ -3434,24 +3315,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
-    "norsk": "å verge seg",
-    "lemma": "verge seg",
-    "english": "to defend oneself, to protect oneself",
-    "ukrainian": "захищатися, обороняти себе",
-    "spanish": "defenderse, protegerse",
-    "german": "sich wehren, sich verteidigen",
-    "example": "Han visste ikke hvordan han skulle verge seg mot de falske anklagene.",
-    "example_english": "He did not know how to defend himself against the false accusations.",
-    "example_ukrainian": "Він не знав, як захиститися від хибних звинувачень.",
-    "example_spanish": "No sabía cómo defenderse de las falsas acusaciones.",
-    "example_german": "Er wusste nicht, wie er sich gegen die falschen Anschuldigungen wehren sollte.",
-    "level": "C",
-    "category": "uttrykk",
-    "part": "phrase"
-  },
-  {
-    "id": "",
+    "id": "u-c-387",
     "norsk": "å vanke premie på noen",
     "lemma": "vanke premie på noen",
     "english": "to have a bounty on someone, to have a reward offered for someone",
@@ -3468,7 +3332,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-388",
     "norsk": "«Grevinnen og hovmesteren»",
     "lemma": "Grevinnen og hovmesteren",
     "english": "an unlikely or secret romantic couple, used to describe two people in an unexpected relationship",
@@ -3485,7 +3349,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-389",
     "norsk": "å befeste sin rolle",
     "lemma": "befeste sin rolle",
     "english": "to consolidate one's role, to establish one's position",
@@ -3502,7 +3366,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-390",
     "norsk": "på deling",
     "lemma": "på deling",
     "english": "shared, to be shared, split between parties",
@@ -3519,7 +3383,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-391",
     "norsk": "å knipe inn på noe",
     "lemma": "knipe inn på noe",
     "english": "to cut back on something, to economize on something",
@@ -3536,7 +3400,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-392",
     "norsk": "julebordet ryker",
     "lemma": "julebordet ryker",
     "english": "the Christmas party is off / the Christmas dinner is cancelled",
@@ -3553,7 +3417,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-393",
     "norsk": "å ha alt på stell",
     "lemma": "ha alt på stell",
     "english": "to have everything in order / to have everything sorted",
@@ -3570,7 +3434,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-394",
     "norsk": "etter sigende",
     "lemma": "etter sigende",
     "english": "allegedly / reportedly / according to what people say",
@@ -3587,7 +3451,7 @@
     "part": "phrase"
   },
   {
-    "id": "",
+    "id": "u-c-395",
     "norsk": "brede lag av folket",
     "lemma": "brede lag av folket",
     "english": "broad sections of the population / the general public / ordinary people across society",

@@ -37,6 +37,21 @@ Words:
 ]
 ```
 
+Words can also be multi-word lexical items (Rule 3) — e.g. a phrasal verb:
+
+```json
+[
+  {
+    "id": "",
+    "norsk": "å stå for døra",
+    "lemma": "stå for døra",
+    "definition": "Å være nært forestående i tid.",
+    "level": "C",
+    "part": "verb"
+  }
+]
+```
+
 Expressions:
 
 ```json
@@ -87,21 +102,29 @@ Some nouns exist only in plural form with no singular counterpart (e.g. `opptøy
 
 After using a part-of-speech marker (`(adj.)`, `(adv.)`, `(v1)`, `(v2)`, `(v3)`, `(ureg.)`, `(reg)`, etc.) per Rule 4 to determine `part`, remove that marker from the `norsk` field — it must not appear in the final output. Only noun gender markers are kept in `norsk`, and only in their converted form (Rule 2).
 
-| Image               | `norsk` (final)                      | `part`      |
-| ------------------- | ------------------------------------ | ----------- |
-| `yndig (adj.)`      | `yndig`                              | `adjective` |
-| `omtåket (adj.)`    | `omtåket`                            | `adjective` |
-| `svirre (v1) rundt` | see Rule 3 (multi-word → expression) | `phrase`    |
+| Image               | `norsk` (final)                                        | `part`      |
+| ------------------- | ------------------------------------------------------ | ----------- |
+| `yndig (adj.)`      | `yndig`                                                | `adjective` |
+| `omtåket (adj.)`    | `omtåket`                                              | `adjective` |
+| `svirre (v1) rundt` | see Rule 3 — verb-headed multi-word → `å svirre rundt` | `verb`      |
 
-### 3. Decide: word or expression?
+### 3. Decide: vocab word or uttrykk expression?
 
-An entry is an **expression** if the **headword itself** (`norsk`) is a multi-word fixed phrase or idiom rather than a single inflectable dictionary word — for example `stå (ureg.) for døra`, `forventningen rir (ureg.) ham`, `ta vare på`.
+Follow the same test as `data-rules/vocab-and-uttrykk.md`: the question isn't "how many words?" but **does `norsk` function as a lexical item with a single grammatical head that a learner inflects/conjugates productively?**
 
-An entry is a **word** if `norsk` is a single inflectable word, even if its definition or example happens to mention or use an idiom — for example `nellikspiker (m)`, `sitre (v1)`, `kribling (m/f)`.
+An entry is a **word** (`vocab`, `category` omitted) if it has a single grammatical head — even across multiple words:
 
-**Multi-word headwords are always expressions — even if they carry a gender marker.** A gender marker like `(m)` on a multi-word headword (e.g. `oppsatt kveld (m)`) does not make it a noun-phrase word. Treat it as an expression: strip the marker entirely, set `norsk`/`lemma` to `oppsatt kveld`, `category: "uttrykk"`, `part: "phrase"`.
+- Single inflectable word: `nellikspiker (m)`, `sitre (v1)`, `kribling (m/f)` → word.
+- Verb-headed multi-word item that is lexicalized as a single verb sense (a particle/phrasal verb, or a verb + fixed complement that a dictionary would list as a sub-sense of that verb rather than a separate idiom): `stå (ureg.) for døra`, `svirre (v1) rundt` → word, `part: "verb"`, `å` prepended per Rule 4.
+- Multi-word noun phrase naming a concept, or multi-word preposition, if one ever appears in a level-C image: `part` stays `"noun"` / `"preposition"` — still a word, not `"phrase"`.
 
-If unsure, default to **word** only when `norsk` is a single word. Any multi-word headword is an expression, regardless of markers.
+An entry is an **expression** (`category: "uttrykk"`, `part: "phrase"`) if it has **no single grammatical head**, or its meaning is idiomatic/figurative enough that native speakers memorize it as a fixed chunk rather than treating it as an ordinary conjugated verb + complement:
+
+- Subject-led or headless fixed phrases: `forventningen rir (ureg.) ham`.
+- Idiomatic collocations, even when verb-led, whose meaning isn't a transparent extension of the verb: `ta vare på`, `ha lyst til`, `slå seg til ro`.
+- Gender-marked multi-word headwords with no productive grammatical head, e.g. `oppsatt kveld (m)` → strip the marker entirely, set `norsk`/`lemma` to `oppsatt kveld`, `category: "uttrykk"`, `part: "phrase"`.
+
+**When it's genuinely ambiguous** whether a verb-headed multi-word entry is a lexicalized phrasal verb (word) or an idiom (expression) — check whether a Norwegian dictionary (NAOB/Bokmålsordboka) lists it as a sub-sense of the verb versus flagging it as `fast uttrykk`. If you can't tell from the image alone, default to **expression** and flag it (Rule 9) for review rather than guessing.
 
 ### 4. Determine the part of speech
 
@@ -124,11 +147,14 @@ If unsure, default to **word** only when `norsk` is a single word. Any multi-wor
 
 **Verbs — prepending `å`:**
 
+This applies whenever `norsk` starts with a verb, regardless of whether Rule 3 classifies the entry as a word or an expression:
+
 - Single-word verb headword: prepend `å ` to the infinitive.
   - `komme (v1)` → `norsk`: `å komme`, `part`: `verb`
-- Verb-led expression (verb is only part of a longer fixed phrase): prepend `å ` only to the verb stem at the start of the phrase.
-  - `stå (ureg.) for døra` → `norsk`: `å stå for døra`
-- Subject-led expression (a non-verb word starts the phrase): do not prepend `å`.
+- Verb-led multi-word entry (verb is only part of a longer phrase, whether it lands in vocab as a phrasal verb or in uttrykk as an idiom per Rule 3): prepend `å ` only to the verb stem at the start of the phrase.
+  - `stå (ureg.) for døra` → `norsk`: `å stå for døra` (word, per Rule 3)
+  - `ta vare på` → `norsk`: `å ta vare på` (expression, per Rule 3)
+- Subject-led or headless entry (a non-verb word starts the phrase): do not prepend `å`.
   - `forventningen rir (ureg.) ham` → `norsk`: `forventningen rir ham`
 
 ### 5. Create the lemma
@@ -161,7 +187,7 @@ Always set `"level": "C"` unless told otherwise for a specific batch of images.
 
 ### 8. Expression category and part fields
 
-For expression json items, the `category` field must be `uttrykk` and `part` feild must be `phrase`.
+For entries classified as expressions per Rule 3 (no single grammatical head, or idiomatic), the `category` field must be `uttrykk` and `part` field must be `phrase`. Entries classified as words per Rule 3 — including multi-word phrasal verbs — never get `category` in Step 1 and use the grammatical head's `part` (e.g. `"verb"`), not `"phrase"`.
 
 ```json
 {
