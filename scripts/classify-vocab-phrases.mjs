@@ -88,19 +88,22 @@ function collectPhraseEntries() {
 // 2. Claude API call — classify a batch
 // ---------------------------------------------------------------------------
 
-const SYSTEM_PROMPT = `You are a Norwegian language pedagogy expert helping classify vocabulary entries.
+const SYSTEM_PROMPT = `You are a Norwegian language pedagogy expert helping classify vocabulary entries, per the rule in data-rules/vocab-and-uttrykk.md.
 
-Each entry has: id, norsk (the phrase), english (translation), category, and level.
+Each entry has: id, norsk (the phrase), english (translation), category, and level. All of these entries currently have part: "phrase" in a vocab file.
+
+The question is NOT "is the meaning compositional?" — it's "does this function as a lexical item with a single grammatical head that a learner inflects/conjugates productively, even across multiple words?"
 
 Classify each entry as exactly one of:
-- "type_a": Fixed expressions, idioms, discourse markers, greeting formulas, constructions, collocations where the meaning is partly non-compositional or the phrase is learned as a formulaic chunk. Examples: "tusen takk", "det regner", "holde kontakten", "kort sagt", "si unnskyld", "ta et bilde". These belong in an expressions/uttrykk file.
-- "type_b": Compound noun concepts or named terms where the meaning is fully compositional and the phrase names a concept. Typically adjective+noun or noun+noun combinations that function as a single lexical item. Examples: "biologisk mangfold", "fornybar energi", "kunstig intelligens", "kritisk tenkning". These belong in a vocabulary file.
-- "borderline": Cases where reasonable people could disagree, or where more context about the app's pedagogy is needed.
+- "type_a": Fixed expressions, idioms, discourse markers, greeting formulas, or fixed chunks with no single grammatical head — the meaning may or may not be compositional, but the entry is memorized as a formulaic chunk rather than treated as an ordinary lexical item. Examples: "tusen takk", "det regner", "holde kontakten", "kort sagt", "si unnskyld", "ta et bilde", "ta vare på", "ha lyst til". These belong in an expressions/uttrykk file, keeping part: "phrase".
+- "type_b": A lexical item with a single grammatical head, even if it's more than one word — a compound noun naming a concept, a multi-word preposition, or a verb-headed phrase (particle verb, reflexive verb) that a dictionary would list as a distinct lexicalized sense rather than an idiom. Examples: "biologisk mangfold" (noun), "fornybar energi" (noun), "kunstig intelligens" (noun), "ved siden av" (preposition), "kle på seg" (verb), "slå av" (verb). These stay in vocab — set suggested_part to what it should actually be (often "noun", occasionally "verb" or "preposition") since almost none of these should really stay tagged "phrase".
+- "borderline": Cases where reasonable people could disagree, or where you'd want to check a Norwegian dictionary (NAOB/Bokmålsordboka) before deciding.
 
 Respond ONLY with a valid JSON array (no markdown, no explanation) with one object per entry:
 {
   "id": "<entry id>",
   "classification": "type_a" | "type_b" | "borderline",
+  "suggested_part": "<the part value it should have, e.g. "phrase", "noun", "verb", "preposition">",
   "reason": "<one concise sentence explaining why>"
 }`;
 
@@ -163,13 +166,13 @@ function generateMarkdown(allEntries, classifications) {
 
   const row = (e) => {
     const c = byId[e.id];
-    return `| ${e.id} | ${e.norsk} | ${e.english} | ${e._level} | ${e.category} | ${c?.reason ?? '—'} |`;
+    return `| ${e.id} | ${e.norsk} | ${e.english} | ${e._level} | ${e.category} | ${c?.suggested_part ?? '—'} | ${c?.reason ?? '—'} |`;
   };
 
   const table = (entries) =>
     entries.length === 0
       ? '_None_\n'
-      : `| ID | Norsk | English | Level | Category | Reason |\n|---|---|---|---|---|---|\n${entries.map(row).join('\n')}\n`;
+      : `| ID | Norsk | English | Level | Category | Suggested part | Reason |\n|---|---|---|---|---|---|---|\n${entries.map(row).join('\n')}\n`;
 
   return `# Vocab Phrase Classification Report
 
@@ -179,8 +182,8 @@ Generated: ${new Date().toISOString()}
 
 | Type | Count | Action |
 |------|-------|--------|
-| Type A (Fixed expressions) | ${typeA.length} | → Move to uttrykk-xx.json |
-| Type B (Compound concepts) | ${typeB.length} | → Keep in vocab-xx.json |
+| Type A (fixed expression / idiom, no single grammatical head) | ${typeA.length} | → Move to uttrykk-xx.json |
+| Type B (lexical item with a grammatical head, even if multi-word) | ${typeB.length} | → Keep in vocab-xx.json, retag \`part\` per \`suggested_part\` |
 | Borderline | ${borderline.length} | → Needs manual review |
 | Failed to classify | ${failed.length} | → Check logs |
 | **Total** | **${allEntries.length}** | |
@@ -193,7 +196,7 @@ ${table(typeA)}
 
 ---
 
-## Type B — Compound Concepts (keep in vocab)
+## Type B — Lexical Items (keep in vocab, retag part)
 
 ${table(typeB)}
 
@@ -206,7 +209,7 @@ ${table(borderline)}
 ${failed.length > 0 ? `---\n\n## Failed to Classify\n\n${failed.map((e) => `- ${e.id}: ${e.norsk}`).join('\n')}\n` : ''}
 ---
 
-_Next step: review Type A entries above, then run \`migrate-type-a-to-uttrykk.mjs\` with the JSON output._
+_Next step: review Type A entries above, then run \`migrate-type-a-to-uttrykk.mjs\` with the JSON output. For Type B entries whose suggested_part isn't "phrase", retag them in place (see \`retag-vocab-parts.mjs\`)._
 `;
 }
 
@@ -257,6 +260,7 @@ async function main() {
   const enriched = allEntries.map((e) => ({
     ...e,
     classification: byId[e.id]?.classification ?? null,
+    suggested_part: byId[e.id]?.suggested_part ?? null,
     reason: byId[e.id]?.reason ?? null
   }));
 
