@@ -9,7 +9,7 @@ Removes duplicate entries from the A2 draft files:
 A draft entry is removed if:
   1. Its 'norsk' value (case-insensitive, trimmed) already exists in one
      of the official level files. This mirrors the exact scope used by
-     scripts/find_dupes.py and scripts/find_uttrykk_dupes.py:
+     scripts/find_dupes.py:
        - extracted-vocab-a2.json is checked against ALL official vocab
          AND uttrykk files (A1, A2, B1, B2, C).
        - extracted-uttrykk-a2.json is checked against ALL official
@@ -190,7 +190,7 @@ def main():
         results.append(r2)
 
     write_report(results)
-    print("\nDone. Re-run scripts/find_dupes.py and scripts/find_uttrykk_dupes.py to verify.")
+    print("\nDone. Re-run scripts/find_dupes.py to verify.")
 
 
 if __name__ == "__main__":

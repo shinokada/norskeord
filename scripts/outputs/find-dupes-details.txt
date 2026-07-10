@@ -1,0 +1,108 @@
+Entry counts: {'A1': 463, 'A1-uttrykk': 119, 'A2': 944, 'A2-uttrykk': 245, 'B1': 1238, 'B1-uttrykk': 221, 'B2': 1752, 'B2-uttrykk': 679, 'C': 515, 'C-uttrykk': 177, 'C-draft': 189, 'C-draft-uttrykk': 212}
+Total entries: 6754
+
+=== CROSS-FILE DUPLICATES (4) — full side-by-side entries ===
+
+================================================================================
+[1] DUPLICATE: 'klar'  (2 entries)
+================================================================================
+  --- 1: A2 ------------------------------------------------------------------
+      id              : v-a2-weather-009
+      lemma           : klar
+      english         : clear (weather)
+      ukrainian       : ясний (про погоду)
+      spanish         : despejado
+      german          : klar
+      example         : Det er klart vær og stjernehimmel.
+      example_english : There is clear weather and a starry sky.
+      category        : weather
+      part            : adjective
+  --- 2: B2 ------------------------------------------------------------------
+      id              : v-b2-communication-010
+      lemma           : klar
+      english         : clear / distinct
+      ukrainian       : чіткий / зрозумілий
+      spanish         : claro
+      german          : klar
+      example         : Et klart budskap unngår misforståelser.
+      example_english : A clear message avoids misunderstandings.
+      category        : communication
+      part            : adjective
+
+================================================================================
+[2] DUPLICATE: 'å føre med seg'  (2 entries)
+================================================================================
+  --- 1: B1 ------------------------------------------------------------------
+      id              : v-b1-reasoning-044
+      lemma           : føre med seg
+      english         : to lead to, to result in, to bring about
+      ukrainian       : призводити до, спричиняти
+      spanish         : llevar a, resultar en, traer consigo
+      german          : mit sich bringen, zu etwas führen, verursachen
+      example         : Dårlig kosthold kan føre med seg alvorlige helseproblemer.
+      example_english : A poor diet can lead to serious health problems.
+      category        : reasoning
+      part            : verb
+  --- 2: B2 ------------------------------------------------------------------
+      id              : v-b2-advanced-verbs-140
+      lemma           : føre med seg
+      english         : to bring about, to lead to, to entail
+      ukrainian       : призводити до, тягнути за собою, спричиняти
+      spanish         : traer consigo, ocasionar, conllevar
+      german          : mit sich bringen, führen zu, zur Folge haben
+      example         : Digitalisering fører med seg mange fordeler, men også nye utfordringer for arbeidslivet.
+      example_english : Digitalisation brings about many advantages, but also new challenges for working life.
+      category        : advanced-verbs
+      part            : verb
+
+================================================================================
+[3] DUPLICATE: 'å hige etter'  (2 entries)
+================================================================================
+  --- 1: B2 ------------------------------------------------------------------
+      id              : v-b2-advanced-verbs-112
+      lemma           : hige etter
+      english         : to strive for / to yearn for / to aspire to
+      ukrainian       : прагнути до, жадати
+      spanish         : aspirar a, anhelar
+      german          : streben nach, sich sehnen nach
+      example         : Han higer etter suksess og jobber hardt for å nå målene sine.
+      example_english : He strives for success and works hard to reach his goals.
+      category        : advanced-verbs
+      part            : verb
+  --- 2: C-draft-uttrykk -----------------------------------------------------
+      lemma           : hige etter
+      english         : to yearn for, to strive eagerly after
+      ukrainian       : прагнути до чогось, жадати чогось
+      spanish         : anhelar algo, aspirar con ardor a algo
+      german          : nach etwas streben, sich nach etwas sehnen
+      example         : Hun higet etter anerkjennelse og respekt fra kollegaene sine.
+      example_english : She yearned for recognition and respect from her colleagues.
+      category        : uttrykk
+      part            : phrase
+
+================================================================================
+[4] DUPLICATE: 'å slutte seg til'  (2 entries)
+================================================================================
+  --- 1: B2 ------------------------------------------------------------------
+      id              : v-b2-advanced-verbs-129
+      lemma           : slutte seg til
+      english         : to join, to adhere to, to agree with
+      ukrainian       : приєднатися до, погодитися з
+      spanish         : unirse a, adherirse a, sumarse a
+      german          : sich anschließen, beitreten, zustimmen
+      example         : Norge valgte å slutte seg til den internasjonale avtalen om klimautslipp.
+      example_english : Norway chose to join the international agreement on climate emissions.
+      category        : advanced-verbs
+      part            : verb
+  --- 2: C-draft-uttrykk -----------------------------------------------------
+      lemma           : slutte seg til
+      english         : to join; to adhere to; to associate oneself with
+      ukrainian       : приєднатися до; долучитися до
+      spanish         : unirse a; adherirse a
+      german          : sich anschließen; beitreten
+      example         : Hun bestemte seg for å slutte seg til den lokale frivilligorganisasjonen.
+      example_english : She decided to join the local volunteer organisation.
+      category        : uttrykk
+      part            : phrase
+
+=== WITHIN-FILE DUPLICATES (0) — full side-by-side entries ===
