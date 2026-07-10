@@ -67,12 +67,11 @@
   },
   {
     "id": "up-b2-007",
-    "norsk": "anstrenge seg",
-    "lemma": "anstrenge seg",
-    "english": "to make an effort, to strive",
-    "example": "Hun anstrengte seg virkelig for å lære seg norsk på kort tid.",
-    "example_english": "She really made an effort to learn Norwegian in a short time.",
-    "definition": "Å jobbe hardt og bruke mye energi for å få til noe.",
+    "norsk": "berge livet",
+    "lemma": "berge livet",
+    "english": "to save one's life, to survive",
+    "example": "Legene klarte å berge livet hans etter den alvorlige ulykken.",
+    "example_english": "The doctors managed to save his life after the serious accident.",
     "level": "B2",
     "category": "uttrykk-preview",
     "part": "phrase"

@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-07-08T04:59:06.696Z",
-  "grandTotal": 6440,
+  "generatedAt": "2026-07-10T21:24:58.942Z",
+  "grandTotal": 6751,
   "byLevel": {
     "A1": {
-      "vocab": 457,
-      "uttrykk": 126,
-      "total": 583
+      "vocab": 463,
+      "uttrykk": 119,
+      "total": 582
     },
     "A2": {
-      "vocab": 918,
-      "uttrykk": 288,
-      "total": 1206
+      "vocab": 944,
+      "uttrykk": 245,
+      "total": 1189
     },
     "B1": {
-      "vocab": 1169,
-      "uttrykk": 321,
-      "total": 1490
+      "vocab": 1238,
+      "uttrykk": 221,
+      "total": 1459
     },
     "B2": {
-      "vocab": 1668,
-      "uttrykk": 799,
-      "total": 2467
+      "vocab": 1751,
+      "uttrykk": 679,
+      "total": 2430
     },
     "C": {
-      "vocab": 502,
-      "uttrykk": 192,
-      "total": 694
+      "vocab": 710,
+      "uttrykk": 381,
+      "total": 1091
     }
   }
 }

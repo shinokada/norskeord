@@ -1,0 +1,1719 @@
+[
+  {
+    "id": "",
+    "norsk": "kvist (en)",
+    "lemma": "kvist",
+    "definition": "lite rom med vindu på loftet av et hus; kan også bety liten, tynn gren av et tre – eller merket etter en gren/kvist i trematerialet.",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "knøttliten",
+    "lemma": "knøttliten",
+    "definition": "svært liten",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ørliten",
+    "lemma": "ørliten",
+    "definition": "svært liten",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "rå",
+    "lemma": "rå",
+    "definition": "kul, stilig; kan også bety ukokt/ustekt (om mat)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "utkast (et)",
+    "lemma": "utkast",
+    "definition": "ikke helt ferdig tegning eller tekst (brukes mest om tekster)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skisse (en/ei)",
+    "lemma": "skisse",
+    "definition": "foreløpig tegning eller tekst (brukes mest om tegninger)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "yndig",
+    "lemma": "yndig",
+    "definition": "søt; fin; pen; nydelig (brukes mest om jenter, kvinner eller babyer)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sær",
+    "lemma": "sær",
+    "definition": "spesiell (på en litt negativ måte); som skiller seg ut (ofte litt negativt)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "utsøkt",
+    "lemma": "utsøkt",
+    "example": "Dette er en utsøkt vin.",		
+    "definition": "svært fin; av høy kvalitet.",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "omtåket",
+    "lemma": "omtåket",
+    "definition": "forvirret",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å avsky",
+    "lemma": "avsky",
+    "definition": "føle motvilje; forakte",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "derimot",
+    "lemma": "derimot",
+		"example": "Mannen var sur og grinete, mens kona, derimot, var ellevill av begeistring.",
+    "definition": "i motsetning til; på den annen side.",
+    "level": "C",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "ferd (en/ei)",
+    "lemma": "ferd",
+    "definition": "(lang) reise; ekspedisjon",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "framfor",
+    "lemma": "framfor",
+    "definition": "heller enn; i stedet for",
+    "level": "C",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "anrettet",
+    "lemma": "anrettet",
+    "definition": "ordnet (ofte brukt om mat som er lagt pent på en tallerken)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "nusselig",
+    "lemma": "nusselig",
+    "definition": "søt, nydelig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "krapyl (et)",
+    "lemma": "krapyl",
+    "definition": "rampunge; aktivt barn (men kan også ha en mye mer negativ betydning, som pøbel, pakk, elendig menneske)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å lystre",
+    "lemma": "lystre",
+    "definition": "adlyde; være lydig mot",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å adlyde",
+    "lemma": "adlyde",
+    "definition": "lystre; være lydig mot",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "simpelthen",
+    "lemma": "simpelthen",
+		"example": "Hunden ville simpelthen ikke bevege seg.",
+    "definition": "rent ut sagt; ganske enkelt.",
+    "level": "C",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "iherdig",
+    "lemma": "iherdig",
+    "definition": "utholdende; energisk",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "uforskyldt",
+    "lemma": "uforskyldt",
+    "definition": "som en ikke er skyld i selv",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "innbydende",
+    "lemma": "innbydende",
+    "definition": "fristende; forlokkende",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "oppslukt",
+    "lemma": "oppslukt",
+    "definition": "svært opptatt av noe (så opptatt av noe at man har «latt seg sluke»; sluke = svelge fort)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "loppekasse (en/ei)",
+    "lemma": "loppekasse",
+    "definition": "seng (humoristisk brukt)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skrape",
+    "lemma": "skrape",
+    "definition": "skrubbe; rispe; lage sår",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å beite",
+    "lemma": "beite",
+    "definition": "dyrene beiter når de spiser gress ute på marken",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "saftig",
+    "lemma": "saftig",
+    "definition": "med mye saft (eller juice) i seg",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å motstå",
+    "lemma": "motstå",
+    "definition": "stå imot; klare å si nei til",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "farefull",
+    "lemma": "farefull",
+    "definition": "farlig; full av fare",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "mare (en/ei)",
+    "lemma": "mare",
+    "definition": "noe trykkende; noe vondt og vanskelig. I folketroen var en mare en kvinnelig vette (overjordisk vesen) som satte seg på brystet til en som sov. Derav kommer ordet «mareritt» (en mare «rir» på brystet)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "øde",
+    "lemma": "øde",
+    "definition": "folketom; som ligger ubrukt og ubebodd",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å lakke",
+    "lemma": "lakke",
+    "definition": "legge lakk på noe (lakk har en annerledes/tynnere konsistens enn maling)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "ås (en)",
+    "lemma": "ås",
+    "definition": "norrøn gud (en ås – åsen – æser – æsene); ordet må ikke forveksles med en ås i betydningen «høydedrag ute i naturen; dalside» (som bøyes slik: en ås – åsen – åser – åsene)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å daue",
+    "lemma": "daue",
+    "definition": "folkelig og litt frekt",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å krepere",
+    "lemma": "krepere",
+    "definition": "uhøflig og frekt",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å forulykke",
+    "lemma": "forulykke",
+    "definition": "dø i en ulykke (formelt)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "håndsrekning (en/ei)",
+    "lemma": "håndsrekning",
+    "definition": "hjelp",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hersens",
+    "lemma": "hersens",
+    "definition": "irriterende; idiotiske; fordømte",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "vidløftig",
+    "lemma": "vidløftig",
+    "definition": "innviklet; komplisert; omstendelig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "foranledning (en/ei)",
+    "lemma": "foranledning",
+    "definition": "motiv; grunn",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fossil",
+    "lemma": "fossil",
+    "definition": "det som finnes ved å grave i jorda; rester etter tidligere tiders dyr og planter",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "behørig",
+    "lemma": "behørig",
+    "definition": "som kreves / som passer naturlig inn i en situasjon",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å grunnstøte",
+    "lemma": "grunnstøte",
+    "definition": "gå på grunn (om skip) (= kollidere med havbunnen eller et skjær)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "flause (en)",
+    "lemma": "flause",
+    "definition": "tåpelig handling; bommert; fadese",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "raffinert",
+    "lemma": "raffinert",
+    "definition": "delikat; utsøkt",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "veik",
+    "lemma": "veik",
+    "definition": "svak",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "heftig",
+    "lemma": "heftig",
+    "definition": "intens",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "motbydelig",
+    "lemma": "motbydelig",
+    "definition": "ekkel",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kav (et)",
+    "lemma": "kav",
+    "definition": "mas; stress",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppkavet",
+    "lemma": "oppkavet",
+    "definition": "opprørt; oppgitt",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "spartansk",
+    "lemma": "spartansk",
+    "definition": "enkel; nøysom; som klarer seg med lite",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "batalje (en)",
+    "lemma": "batalje",
+    "definition": "slagsmål; voldelig oppgjør",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "dreven",
+    "lemma": "dreven",
+    "definition": "dyktig; erfaren",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "konstant",
+    "lemma": "konstant",
+    "definition": "som ikke forandrer seg; noe som vedvarer (for eksempel om smerte)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kjapp",
+    "lemma": "kjapp",
+    "definition": "rask",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "pur",
+    "lemma": "pur",
+    "definition": "ren",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sjattering (en/ei)",
+    "lemma": "sjattering",
+    "definition": "fargetone; nyanse",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ellevill",
+    "lemma": "ellevill",
+    "definition": "helt vill",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å frekventere",
+    "lemma": "frekventere",
+    "definition": "besøke ofte og regelmessig",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "fortapt",
+    "lemma": "fortapt",
+    "definition": "som det ikke er håp for; motløs; fordømt (bibelsk betydning)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å volde",
+    "lemma": "volde",
+    "definition": "være årsak til",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "forskremt",
+    "lemma": "forskremt",
+    "definition": "engstelig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å gjenspeile",
+    "lemma": "gjenspeile",
+    "definition": "reflektere",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å omkomme",
+    "lemma": "omkomme",
+    "definition": "dø ved ulykke eller annen ytre omstendighet (ikke ved sykdom eller villet død)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "livat",
+    "lemma": "livat",
+    "definition": "livlig; lystig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skrot (et)",
+    "lemma": "skrot",
+    "definition": "avfall; ubrukelige ting",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å hylle",
+    "lemma": "hylle",
+    "definition": "gi uttrykk for anerkjennelse og beundring",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "fjelltind (en)",
+    "lemma": "fjelltind",
+    "definition": "spiss fjelltopp",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hendig",
+    "lemma": "hendig",
+    "definition": "praktisk; lettvint",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "tram (en)",
+    "lemma": "tram",
+    "definition": "trapp med bare ett bredt trinn utenfor utgangsdøra",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vitebegjærlig",
+    "lemma": "vitebegjærlig",
+    "definition": "som ønsker å vite mye",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "unnvikende",
+    "lemma": "unnvikende",
+    "definition": "som forsøker å slippe unna; tilbakeholden",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "prekær",
+    "lemma": "prekær",
+    "definition": "ekstremt vanskelig/alvorlig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skvetten",
+    "lemma": "skvetten",
+    "definition": "som lett blir skremt",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "utsprungen",
+    "lemma": "utsprungen",
+    "definition": "om blomster som ikke lenger er en knopp (men en blomst)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "utskåren",
+    "lemma": "utskåren",
+    "definition": "som er dekorert med utskjæringer",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "strøken",
+    "lemma": "strøken",
+    "definition": "uten feil; uten mangler; perfekt",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "løssluppen",
+    "lemma": "løssluppen",
+    "definition": "vill; spontan",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "slu",
+    "lemma": "slu",
+    "definition": "listig; lur (på en negativ måte fordi man vil lure folk)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sart",
+    "lemma": "sart",
+    "definition": "fintfølende; sensitiv",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "uhorvelig",
+    "lemma": "uhorvelig",
+    "definition": "stor",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "utbrudd (et)",
+    "lemma": "utbrudd",
+    "definition": "plutselig følelsesuttrykk; noe man plutselig sier/utbryter",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å sanke",
+    "lemma": "sanke",
+    "definition": "plukke; høste (om frukt, bær og sopp)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "snodig",
+    "lemma": "snodig",
+    "definition": "rar; merkelig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "opptøyer",
+    "lemma": "opptøyer",
+    "definition": "uroligheter",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ellers",
+    "lemma": "ellers",
+    "definition": "for øvrig",
+    "level": "C",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "snusk (et)",
+    "lemma": "snusk",
+    "definition": "uærlighet; uhederlighet",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å framstå",
+    "lemma": "framstå",
+    "definition": "stå fram; vise seg",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "besetningsmedlem (et)",
+    "lemma": "besetningsmedlem",
+    "definition": "medlem av en besetning / et mannskap (f.eks. på et fartøy)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "trapesartist (en)",
+    "lemma": "trapesartist",
+    "definition": "person som turner i et apparat med en metallstang festet i to tau",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fjøl (en/ei)",
+    "lemma": "fjøl",
+    "definition": "skjærebrett",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "begavet",
+    "lemma": "begavet",
+    "definition": "talentfull",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "forsett (et)",
+    "lemma": "forsett",
+    "definition": "intensjon; plan",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opprører (en)",
+    "lemma": "opprører",
+    "definition": "person som deltar i opprør",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ertestuing (en/ei)",
+    "lemma": "ertestuing",
+    "definition": "moste erter",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vitterlig",
+    "lemma": "vitterlig",
+    "definition": "virkelig",
+    "level": "C",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "å sprike",
+    "lemma": "sprike",
+    "definition": "gå i hver sin retning",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å skåre",
+    "lemma": "skåre",
+    "definition": "vinne poeng; få ballen i mål (i ballspill)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "mangelvare (en)",
+    "lemma": "mangelvare",
+    "definition": "ting man mangler (det kan være produkter eller abstrakte ting som holdninger, følelser, etc.)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hardnakket",
+    "lemma": "hardnakket",
+    "definition": "gjenstridig; som ikke vil gi seg eller endre mening",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "innbitt",
+    "lemma": "innbitt",
+    "definition": "med undertrykt raseri inni seg",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "utbyttet",
+    "lemma": "utbyttet",
+    "definition": "grovt utnyttet",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "veldig",
+    "lemma": "veldig",
+    "definition": "svært stor; mektig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "frenetisk",
+    "lemma": "frenetisk",
+    "definition": "rasende; vill; hissig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å fekte",
+    "lemma": "fekte",
+    "definition": "vifte med",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "henimot",
+    "lemma": "henimot",
+    "definition": "når det nærmer seg (om tid)",
+    "level": "C",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "å formane",
+    "lemma": "formane",
+    "definition": "oppfordre til noe på intenst vis",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bønnfalle",
+    "lemma": "bønnfalle",
+    "definition": "be inntrengende om noe",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "dyvåt",
+    "lemma": "dyvåt",
+    "definition": "svært våt; gjennomvåt; kliss blaut",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "uggen",
+    "lemma": "uggen",
+    "definition": "ubehagelig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stevnemøte (et)",
+    "lemma": "stevnemøte",
+    "definition": "romantisk møte (f.eks. for å finne ut om man vil bli kjærester)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "malplassert",
+    "lemma": "malplassert",
+    "definition": "uheldig plassert",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "innfløkt",
+    "lemma": "innfløkt",
+    "definition": "komplisert; innviklet",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "steppe (en)",
+    "lemma": "steppe",
+    "definition": "slette; flatt, åpent landskap uten trær",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gudfryktig",
+    "lemma": "gudfryktig",
+    "definition": "from; som frykter Gud",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "utsagn (et)",
+    "lemma": "utsagn",
+    "definition": "uttalelse; påstand; noe som sies",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fåfengt",
+    "lemma": "fåfengt",
+    "definition": "forgjeves; til ingen nytte",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å berømme",
+    "lemma": "berømme",
+    "definition": "rose; lovprise",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "gjenge (en)",
+    "lemma": "gjenge",
+    "definition": "sporene i f.eks. en skrue",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å sludde",
+    "lemma": "sludde",
+    "definition": "falle sludd (sludd = en blanding av regn og snø)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "illsint",
+    "lemma": "illsint",
+    "definition": "kjempesint; rasende",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "flybåren",
+    "lemma": "flybåren",
+    "definition": "fraktet med fly",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "selvskreven",
+    "lemma": "selvskreven",
+    "definition": "selvfølgelig; naturlig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "avbrekk (et)",
+    "lemma": "avbrekk",
+    "definition": "pause",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å tute",
+    "lemma": "tute",
+    "definition": "ule",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sløye",
+    "lemma": "sløye",
+    "definition": "skjære opp en fisk og ta ut innvollene (slik at den kan spises)",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å fordrive",
+    "lemma": "fordrive",
+    "definition": "drive bort; jage bort",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "syssel (en)",
+    "lemma": "syssel",
+    "definition": "virksomhet; arbeid",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kuvøse (en/ei)",
+    "lemma": "kuvøse",
+    "definition": "spesialseng for barn som er født for tidlig, og for syke spedbarn",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "jevnbyrdig",
+    "lemma": "jevnbyrdig",
+    "definition": "som er like god",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "forfrossen",
+    "lemma": "forfrossen",
+    "definition": "skadet av kulde; hutrende av kulde",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "dødsleie (et)",
+    "lemma": "dødsleie",
+		"example": "Man ligger på sitt dødsleie",
+    "definition": "når man ligger for døden i ei seng (et leie)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "smålig",
+    "lemma": "smålig",
+    "definition": "gjerrig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "grådighet (en/ei)",
+    "lemma": "grådighet",
+    "definition": "når man stadig vil ha mer, er man styrt av grådighet",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utsovet",
+    "lemma": "utsovet",
+    "definition": "uthvilt",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ugunstig",
+    "lemma": "ugunstig",
+    "definition": "skadelig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "rigid",
+    "lemma": "rigid",
+    "definition": "stiv; streng",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å avle",
+    "lemma": "avle",
+    "definition": "forårsake",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "overtrøtt",
+    "lemma": "overtrøtt",
+    "definition": "for trøtt (så trøtt at man enten blir fjasete/tøysete eller sur)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "mellomstor",
+    "lemma": "mellomstor",
+    "definition": "størrelse medium; middelstor",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ukuelig",
+    "lemma": "ukuelig",
+    "definition": "som ikke lar seg stanse",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "verdslig",
+    "lemma": "verdslig",
+    "definition": "som gjelder det jordiske (ikke det himmelske eller det åndelige)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stuing (en/ei)",
+    "lemma": "stuing",
+    "definition": "kokte, moste grønnsaker blandet sammen med væske",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å avstedkomme",
+    "lemma": "avstedkomme",
+    "definition": "føre til",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "from",
+    "lemma": "from",
+    "definition": "som frykter Gud; ydmyk, mild; snill",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "nattverdsvin (en)",
+    "lemma": "nattverdsvin",
+    "definition": "vin man drikker til nattverd (kristent ritual)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "flik (en)",
+    "lemma": "flik",
+    "definition": "lite hjørne av noe (f.eks. av et ark, en duk, en skjorte, etc.)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å opprøre",
+    "lemma": "opprøre",
+    "definition": "provosere; vekke sinne",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "lummer",
+    "lemma": "lummer",
+    "definition": "trykkende varm og fuktig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å henrette",
+    "lemma": "henrette",
+    "definition": "drepe; avlive",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "kateter (et)",
+    "lemma": "kateter",
+    "definition": "spesielt bord/pult for læreren som underviser",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hedensk",
+    "lemma": "hedensk",
+    "definition": "om tiden før kristendommen",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "vintersolverv (et)",
+    "lemma": "vintersolverv",
+    "definition": "21. eller 22. desember (når sola står lavest)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kvad (et)",
+    "lemma": "kvad",
+    "definition": "norrønt dikt",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å påby",
+    "lemma": "påby",
+    "definition": "befale; gi ordre",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "halm (en)",
+    "lemma": "halm",
+    "definition": "strå av f.eks. korn eller gress",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "julenek (et)",
+    "lemma": "julenek",
+    "definition": "kuttede strå av korn som settes ut til fuglene ved juletider og om vinteren",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avling (en/ei)",
+    "lemma": "avling",
+    "definition": "det som er høstet av årets vekster; grøde; resultatet av frukt- og grønnsaksproduksjon",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "åsatro (en/ei)",
+    "lemma": "åsatro",
+    "definition": "tro på de norrøne gudene",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tjære (en/ei)",
+    "lemma": "tjære",
+    "definition": "brunsvart væske som har vært brukt i Norden i mange hundre år for å bevare trebygninger, båter osv",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "beryktet",
+    "lemma": "beryktet",
+    "definition": "som har dårlig rykte",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å omfatte",
+    "lemma": "omfatte",
+    "definition": "inneholde; inkludere",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "bot (en/ei)",
+    "lemma": "bot",
+    "definition": "noe man gjør for å rette på noe og gjenopprette balanse i det åndelige livet",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "faste (en/ei)",
+    "lemma": "faste",
+    "definition": "ikke innta mat (eller drikke) i bestemte perioder",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "frodig",
+    "lemma": "frodig",
+    "definition": "blomstrende; sunn",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "måtehold (et)",
+    "lemma": "måtehold",
+    "definition": "det å vise moderasjon; det å begrense seg og ikke overdrive",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å bugne",
+    "lemma": "bugne",
+    "definition": "finnes i overflod",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "fråtsing (en/ei)",
+    "lemma": "fråtsing",
+    "example": "Man driver med fråtsing",
+    "definition": "når man spiser altfor mye (og i tillegg må kaste mat)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "storstilt",
+    "lemma": "storstilt",
+    "definition": "som foregår i stor stil; som er av store dimensjoner",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stattholder (en)",
+    "lemma": "stattholder",
+    "definition": "embetsmann som styrer et land eller en provins på vegne av en fyrste (gammeldags)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å erklære",
+    "lemma": "erklære",
+    "definition": "si ifra om noe på en høytidelig måte; si noe offentlig",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kanonisere",
+    "lemma": "kanonisere",
+    "definition": "erklære som helgen",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "skytshelgen (en)",
+    "lemma": "skytshelgen",
+    "definition": "helgen som er noens særlige beskytter",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lussekatt (en)",
+    "lemma": "lussekatt",
+    "definition": "gjærbakst med safran og rosiner som lages til luciadagen",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lyssky",
+    "lemma": "lyssky",
+    "definition": "som skyr lyset; som flykter fra lyset",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skåldet",
+    "lemma": "skåldet",
+    "definition": "mandler som har blitt varmet til kokepunktet og er uten skall",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sirupssnipp (en)",
+    "lemma": "sirupssnipp",
+    "definition": "julekake bakt med sirup",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "juleknekk (en)",
+    "lemma": "juleknekk",
+    "definition": "harde karameller man lager til jul",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "krumkake (en/ei)",
+    "lemma": "krumkake",
+    "definition": "kake stekt på et krumkakejern og etterpå rullet sammen til et kremmerhus",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "serinakake (en/ei)",
+    "lemma": "serinakake",
+    "definition": "rund småkake penslet med egg og overstrødd med hakkede mandler og perlesukker",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "filmsnutt (en)",
+    "lemma": "filmsnutt",
+    "definition": "filmklipp; kort film eller liten del av en film",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gløgg (en)",
+    "lemma": "gløgg",
+    "definition": "varm, søt drikk med krydder (og eventuelt rødvin) som drikkes til jul",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gild",
+    "lemma": "gild",
+    "definition": "fin og spesiell",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "dekketøy (et)",
+    "lemma": "dekketøy",
+    "definition": "det en dekker bordet med",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "arm",
+    "lemma": "arm",
+    "definition": "ulykkelig; fattig",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "særegen",
+    "lemma": "særegen",
+    "definition": "spesiell",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "gåtefull",
+    "lemma": "gåtefull",
+    "definition": "dunkel; mystisk",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sparsommelig",
+    "lemma": "sparsommelig",
+    "definition": "preget av det å spare (og ikke bruke penger)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kanefart (en)",
+    "lemma": "kanefart",
+    "definition": "å kjøre med hest og slede",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hyttegrend (en/ei)",
+    "lemma": "hyttegrend",
+    "definition": "område der hyttene ligger tett",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "slede (en)",
+    "lemma": "slede",
+    "definition": "vogn med meier; stor kjelke",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "overdådig",
+    "lemma": "overdådig",
+    "definition": "svært flott (på en overdrevet måte)",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "julehefte (et)",
+    "lemma": "julehefte",
+    "definition": "julemagasin; juleblad",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utspring (et)",
+    "lemma": "utspring",
+    "definition": "opprinnelse",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "almisse (en/ei)",
+    "lemma": "almisse",
+    "definition": "gave til de fattige",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utkledd",
+    "lemma": "utkledd",
+    "definition": "som har kledd seg slik at man ligner på en annen person / et dyr / en figur, etc.; forkledd",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "raggete",
+    "lemma": "raggete",
+    "definition": "som har langt, stritt og bustete (ugredd) hår",
+    "level": "C",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skinnfell (en)",
+    "lemma": "skinnfell",
+    "definition": "skinnstykke (med hårene fra dyret fortsatt på); teppe av skinn",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skjenke",
+    "lemma": "skjenke",
+    "definition": "helle opp drikke i kopp eller glass",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "opptog (et)",
+    "lemma": "opptog",
+    "definition": "prosesjon",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vette (en/et)",
+    "lemma": "vette",
+    "definition": "overnaturlig vesen i folketroen (i likhet med troll, tusser og huldre)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "einer (en)",
+    "lemma": "einer",
+    "definition": "lite tre i sypressfamilien, med sylspisse nåler og med einebær (mye brukt i mat)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å putte",
+    "lemma": "putte",
+    "definition": "stikke; legge; smette",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å råtne",
+    "lemma": "råtne",
+    "definition": "bli dårlig",
+    "level": "C",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "uro (en/ei)",
+    "lemma": "uro",
+    "definition": "dekorasjonsgjenstand som beveger seg i luften (og lager lyd)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "etterlevning (en/ei)",
+    "lemma": "etterlevning",
+    "definition": "noe som er tilbake som en rest etter noe som en gang var",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "trestamp (en)",
+    "lemma": "trestamp",
+    "definition": "stor tønne eller kar som man badet i før",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lenke (en/ei)",
+    "lemma": "lenke",
+    "definition": "bånd av ringer eller perler",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "glitter (et)",
+    "lemma": "glitter",
+    "definition": "noe som glitrer og skinner",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kristtorn (en)",
+    "lemma": "kristtorn",
+    "definition": "vintergrønt løvtre med stive, tykke blader med torner langs kanten",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "embetsfamilie (en)",
+    "lemma": "embetsfamilie",
+    "definition": "familie av høy rang; familie som har en høy posisjon i samfunnet (i dag er «embetsfamilie» litt foreldet ettersom systemet er forandret, og man bruker heller embetsmann/embetskvinne)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "læstadianer (en)",
+    "lemma": "læstadianer",
+    "definition": "person som tilhører den religiøse sekten læstadianismen (som vektlegger å leve pietistisk og leve på en bibeltro måte)",
+    "level": "C",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gudsbespottelse (en)",
+    "lemma": "gudsbespottelse",
+    "definition": "respektløs handling; blasfemi",
+    "level": "C",
+    "part": "noun"
+  }
+]

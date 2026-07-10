@@ -112,7 +112,7 @@ For any verb, prepend `å ` to the infinitive for `norsk`, exactly as in `image-
 
 **Closed-class words with irregular declension** (`all, alt, alle`; `annen, annet, andre`; `annenhver, annethvert`) look like the adjective triple-form pattern but are pronouns/determiners. These are well-known, small closed classes — classify by meaning rather than by the comma-form pattern. If genuinely unsure, default to `adjective`.
 
-### 3. Format B1 — collocations under a headword are candidate expressions
+### 3. Format B1 — collocations under a headword: word, expression, or skip?
 
 Some glossary lines have a semicolon followed by one or more short phrases, sometimes on their own indented line, each with its own page reference — e.g.:
 
@@ -129,14 +129,17 @@ annen, annet, andre;
   en annen kultur 8(2)
 ```
 
-The headword itself (`bli`, `annen`) is always extracted as its own word entry per Rule 2. For each attached sub-phrase, decide:
+The headword itself (`bli`, `annen`) is always extracted as its own word entry per Rule 2. For each attached sub-phrase, decide between three outcomes — use the same test as `data-rules/vocab-and-uttrykk.md`:
 
-- **Extract as an expression** if it's a fixed idiomatic phrase whose meaning isn't just the sum of its parts — e.g. `bli lei av` ("to get tired of"), `bli med` ("to join / come along"). Apply the verb-led `å`-prefix logic from `image-converter.md` Rule 4 when the phrase is verb-led (`bli lei av` → `å bli lei av`; `bli med` → `å bli med`).
-- **Skip it** if it's merely an example noun phrase illustrating ordinary usage of the headword rather than a fixed expression — e.g. `andre språk` ("other languages"), `en annen kultur` ("a different culture"). These don't need their own entry; the headword's own Step 2 example sentence is enough to cover ordinary usage. When unsure, skip rather than extract — a missed idiom is easy to add later, a junk expression entry is not.
+- **Extract as a word** (vocab, `part: "verb"`) if it's a two-word particle/phrasal verb that a dictionary would treat as a distinct lexicalized sense of the headword verb — e.g. `bli med` ("to join / come along"). Apply the verb-led `å`-prefix logic from `image-converter.md` Rule 4 (`bli med` → `å bli med`).
+- **Extract as an expression** (`category: "uttrykk"`, `part: "phrase"`) if it's a longer or more figurative idiom whose meaning isn't a transparent extension of the verb — e.g. `bli lei av` ("to get tired of"). Same `å`-prefix logic applies (`bli lei av` → `å bli lei av`).
+- **Skip it** if it's merely an example noun phrase illustrating ordinary usage of the headword rather than a fixed collocation — e.g. `andre språk` ("other languages"), `en annen kultur` ("a different culture"). These don't need their own entry; the headword's own Step 2 example sentence is enough to cover ordinary usage.
+
+When it's unclear whether a two/three-word collocation is a lexicalized phrasal verb (word) or an idiom (expression), default to **expression** — that matches how these images are used pedagogically, and a slightly-too-broad `uttrykk` entry is easy to fix later. When unsure whether to extract at all, skip — a missed idiom is easy to add later, a junk entry is not. Flag anything ambiguous per Rule 8.
 
 ### 4. Format B2 — the two-column uttrykk list
 
-Left column = the phrase, right column = a ready-written Norwegian example sentence. For each row:
+These rows come from a textbook page that is itself titled/organized as an "uttrykk" list, so every row is extracted as an expression regardless of grammatical structure — the textbook's own pedagogical framing (memorize this as a chunk) is the signal here, not the word-count/grammatical-head test from Rule 3. Left column = the phrase, right column = a ready-written Norwegian example sentence. For each row:
 
 - `norsk`: the left-column phrase as printed. If it already starts with `å ` (verb phrase), keep it as-is. If it's a bare noun/adverbial phrase (`jul og nyttår`, `fram og tilbake`, `i mål`, `smak`, `til huset`), keep it bare too — do not add `å`.
 - `example`: copy the right-column sentence verbatim into the Step 1 output (see the expression output example above). This is a deviation from Method 1, where `example` is always generated in Step 2 — here it's already given, so capture it now instead of discarding it.
