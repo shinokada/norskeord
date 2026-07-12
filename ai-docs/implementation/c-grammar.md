@@ -6,10 +6,10 @@ Full reassessment after reading all of `draft/c/grammar/` (grammatikk.md,
 `1-11-substantiv-ubestemt-artikkel.md`, `12-24-adjektiv.md`, `25-39-verb.md`, `40-51.md`,
 `52-63.md`, `64-71.md`, `72-82.md`, `83-92.md`, `93-103.md`, `answers.md`, `innhold.md`). The
 earlier 5-topic, ~50-question plan covered only `grammatikk.md` and undersold what the textbook
-actually contains. This version covers **items 1–63** as 21 new topics, **items 83–103** as one
-additional idiom-recognition topic (22 total), and **items 64–82** as a source of extra vocab/
-sentence material folded into the 22 topics rather than built as standalone cloze passages
-(reasons below).
+actually contains. This version covers **items 1–63** as 21 new topics, **items 83–103** as
+three idiom-recognition topics split into parts (24 total), and **items 64–82** as a source of
+extra vocab/sentence material folded into the 24 topics rather than built as standalone cloze
+passages (reasons below).
 
 **Copyright approach (unchanged):** every question is newly written, using the textbook only as a
 guide to which rule and difficulty to target — never copying or closely paraphrasing its
@@ -21,8 +21,8 @@ invented, self-contained sentences instead.
 `vocab-c.json` or `uttrykk-c.json`, checked by a verification script before merging.
 
 **Question types:** `'fill' | 'order' | 'transform' | 'minimal-pair'` are already implemented in
-`src/lib/types.ts` and cover 21 of the 22 topics. `uttrykk-gjenkjenning-c` needs one addition: a
-true 3-option `type: 'multiple-choice'` (see Phase 1.5).
+`src/lib/types.ts` and cover 21 of the 24 topics. The three `uttrykk-gjenkjenning-c-*` topics
+need one addition: a true 3-option `type: 'multiple-choice'` (see Phase 1.5).
 
 ---
 
@@ -30,17 +30,23 @@ true 3-option `type: 'multiple-choice'` (see Phase 1.5).
 
 ### In scope: items 1–63 → 21 new topics (~180–220 questions)
 
-### In scope: items 83–103 → 1 new topic, `uttrykk-gjenkjenning-c` (idiom recognition)
+### In scope: items 83–103 → 3 new topics, `uttrykk-gjenkjenning-c-1/2/3` (idiom recognition)
 
 Revised after reading the actual content (not just `answers.md`'s letter key). This isn't MC
 retesting of existing grammar — it's a dedicated idiom-recognition drill: each item bolds one
 fixed expression in a sentence ("Hun har fått kalde føtter," "Skinnet bedrar," "Han sliter for å
 få endene til å møtes") and asks which of three paraphrases means the same thing. Roughly 400
-idioms across the 21 sub-lists, organized loosely by theme/keyword (body parts, animals, common
-verbs like bite/dra/falle). This is probably the single richest source of `uttrykk-c.json`-level
-material in the whole textbook, so it's worth the one schema addition it needs: a true 3-option
-`type: 'multiple-choice'` (`minimal-pair` only supports 2 options). We won't build all ~400 —
-select the subset that matches real `uttrykk-c.json` headwords (see Phase 1.5 and Phase 2g).
+idioms across the 21 sub-lists (items 83–103), organized loosely by theme/keyword (body parts,
+animals, common verbs like bite/dra/falle). This is probably the single richest source of
+`uttrykk-c.json`-level material in the whole textbook, so it's worth the one schema addition it
+needs: a true 3-option `type: 'multiple-choice'` (`minimal-pair` only supports 2 options).
+
+Given the volume, split into three topics by item range rather than one: `uttrykk-gjenkjenning-c-1`
+(items 83–89), `uttrykk-gjenkjenning-c-2` (items 90–96), `uttrykk-gjenkjenning-c-3` (items 97–103)
+— 7 sub-lists each. Aim for every idiom in each range that has a real `uttrykk-c.json` match
+(likely well over the ~30–40 originally proposed, given how much overlap this textbook probably
+already has with `uttrykk-c.json`) — actual per-part counts depend on the matching script in
+Phase 2 (idiom recognition).
 
 ### Mined, not built as-is: items 64–82 (cloze passages)
 
@@ -53,14 +59,14 @@ inventing single sentences, and the cloze-passage format (many blanks across one
 doesn't fit the current per-question `GrammarQuestion` schema — so we won't build these as
 passages. But the vocabulary and grammar points embedded in them (Christmas-tradition vocab,
 sleep-science vocab, verb-tense patterns) shouldn't just be dropped: while drafting content for
-the 22 topics above, pull individual grammar+vocab pairings from these passages and rewrite them
+the 24 topics above, pull individual grammar+vocab pairings from these passages and rewrite them
 as fresh, self-contained single sentences under whichever topic fits (see Phase 2, "mining
 note"). The passage *format* itself — as its own reading-comprehension feature — stays a separate
 future project, scoped and built later if wanted.
 
 ---
 
-## New topics (22)
+## New topics (24)
 
 Grouped by theme, with their source items from `innhold.md` and priority.
 
@@ -119,10 +125,13 @@ Grouped by theme, with their source items from `innhold.md` and priority.
 
 | Topic | Source | Notes |
 |---|---|---|
-| `uttrykk-gjenkjenning-c` | items 83–103 | ~400 idioms available; select the subset matching real `uttrykk-c.json` headwords; needs the `multiple-choice` type (Phase 1.5) |
+| `uttrykk-gjenkjenning-c-1` | items 83–89 | ~130 idioms; select all with a real `uttrykk-c.json` match; needs `multiple-choice` type (Phase 1.5) |
+| `uttrykk-gjenkjenning-c-2` | items 90–96 | same approach, next 7 sub-lists |
+| `uttrykk-gjenkjenning-c-3` | items 97–103 | same approach, final 7 sub-lists |
 
-**Total: 22 topics.** At ~8–12 questions each for the first 21, plus a larger batch (~30–40) for
-`uttrykk-gjenkjenning-c` given how much source material exists: **~210–260 questions.**
+**Total: 24 topics.** At ~8–12 questions each for the first 21, plus a larger batch per idiom
+part (exact size depends on the `uttrykk-c.json` matching script, likely ~40–60 each): roughly
+**~300–360 questions overall.**
 
 ---
 
@@ -253,11 +262,17 @@ Grouped by theme, with their source items from `innhold.md` and priority.
   explanationEn:
     'Choosing between the bare infinitive (after modals, "pleier," "begynner") and the ' +
     'conjugated presens form is an A1/A2 rule, but applying it correctly across a long sentence ' +
-    'with three or four verb slots at once is a genuine accuracy challenge at C level.',
+    'with three or four verb slots at once is a genuine accuracy challenge at C level. ' +
+    'Questions use the actual C-level verbs from `draft/c/grammar/25-39-verb.md` items 25–27 ' +
+    '(cross-checked against `vocab-c.json`), not generic A1 verbs, so the vocabulary load ' +
+    'matches the rest of the C-level content.',
   explanationNb:
     'Å velge mellom bar infinitiv (etter modale hjelpeverb, «pleier», «begynner») og bøyd ' +
     'presensform er en A1/A2-regel, men å bruke den riktig gjennom en lang setning med tre eller ' +
-    'fire verbplasser samtidig er en reell presisjonsutfordring på nivå C.'
+    'fire verbplasser samtidig er en reell presisjonsutfordring på nivå C. Spørsmålene bruker de ' +
+    'faktiske nivå C-verbene fra `draft/c/grammar/25-39-verb.md` punkt 25–27 (kryssjekket mot ' +
+    '`vocab-c.json`), ikke generiske A1-verb, slik at ordforrådet passer med resten av ' +
+    'nivå-C-innholdet.'
 },
 
 'sterke-verb-c': {
@@ -456,22 +471,46 @@ Grouped by theme, with their source items from `innhold.md` and priority.
     '«sette pris på», «komme til bunns i», «sette i sving», «stå til ansvar for».'
 },
 
-'uttrykk-gjenkjenning-c': {
-  id: 'uttrykk-gjenkjenning-c',
-  titleEn: 'Idiom recognition',
-  titleNb: 'Gjenkjenning av faste uttrykk',
+'uttrykk-gjenkjenning-c-1': {
+  id: 'uttrykk-gjenkjenning-c-1',
+  titleEn: 'Idiom recognition — part 1',
+  titleNb: 'Gjenkjenning av faste uttrykk — del 1',
   explanationEn:
     'Recognizing what a fixed idiom actually means and matching it to the correct paraphrase: ' +
     '"Hun har fått kalde føtter" = she\'s getting cold feet (about a decision), not literally ' +
     'cold feet. "Skinnet bedrar" = appearances are deceiving. Norwegian idioms often don\'t ' +
     'translate literally, and several sound similar to unrelated ones ("gå på skinner" vs. ' +
-    '"skinnet bedrar"), so the goal is precise recognition, not guessing from individual words.',
+    '"skinnet bedrar"), so the goal is precise recognition, not guessing from individual words. ' +
+    'Part 1 covers the first third of the idiom set.',
   explanationNb:
     'Å kjenne igjen hva et fast uttrykk faktisk betyr og matche det med riktig omskriving: «Hun ' +
     'har fått kalde føtter» betyr at hun nøler med en beslutning, ikke bokstavelig kalde føtter. ' +
     '«Skinnet bedrar» betyr at det ytre lurer deg. Norske uttrykk kan ikke alltid oversettes ' +
     'direkte, og flere høres like ut som urelaterte uttrykk («gå på skinner» vs. «skinnet ' +
-    'bedrar»), så målet er presis gjenkjenning, ikke gjetning ut fra enkeltord.'
+    'bedrar»), så målet er presis gjenkjenning, ikke gjetning ut fra enkeltord. Del 1 dekker ' +
+    'den første tredjedelen av uttrykkssettet.'
+},
+
+'uttrykk-gjenkjenning-c-2': {
+  id: 'uttrykk-gjenkjenning-c-2',
+  titleEn: 'Idiom recognition — part 2',
+  titleNb: 'Gjenkjenning av faste uttrykk — del 2',
+  explanationEn:
+    'Same skill as part 1 — matching a bolded fixed idiom to its correct paraphrase — covering ' +
+    'the middle third of the idiom set.',
+  explanationNb:
+    'Samme ferdighet som del 1 — å matche et uthevet fast uttrykk med riktig omskriving — og ' +
+    'dekker den midterste tredjedelen av uttrykkssettet.'
+},
+
+'uttrykk-gjenkjenning-c-3': {
+  id: 'uttrykk-gjenkjenning-c-3',
+  titleEn: 'Idiom recognition — part 3',
+  titleNb: 'Gjenkjenning av faste uttrykk — del 3',
+  explanationEn:
+    'Same skill as parts 1–2, covering the final third of the idiom set.',
+  explanationNb:
+    'Samme ferdighet som del 1–2, og dekker den siste tredjedelen av uttrykkssettet.'
 }
 ```
 
@@ -479,14 +518,17 @@ Grouped by theme, with their source items from `innhold.md` and priority.
 
 ## Content plan (`src/lib/data/grammar.json`)
 
-~8–12 questions per topic for the first 21 topics, plus ~30–40 for `uttrykk-gjenkjenning-c`:
-**~210–260 total.** IDs: `gq-{short-topic}-00X`. Every question needs a real
-`vocab-c.json`/`uttrykk-c.json` headword, verified by the script below.
+~8–12 questions per topic for the first 21 topics, plus a larger batch per idiom part (exact
+size set by the `uttrykk-c.json` matching script, likely ~40–60 each): roughly **~300–360
+total.** IDs: `gq-{short-topic}-00X`. Every question needs a real `vocab-c.json`/`uttrykk-c.json`
+headword, verified by the script below.
 
 Suggested type mix per topic: 4–6 `fill`, 2–3 `transform`, 1–2 `order` or `minimal-pair`,
 adjusted per topic (e.g. `leddsetning-som-fundament` and `koordinerende-konjunksjoner` lean
 heavily on `order`; `adj-farger-uboyelige` and `adj-partisipp-som-adjektiv` lean on `minimal-pair`
-and `fill`). `uttrykk-gjenkjenning-c` is entirely `multiple-choice`.
+and `fill`; `verbform-i-kontekst` sentences use real verbs pulled from
+`draft/c/grammar/25-39-verb.md` items 25–27). All three `uttrykk-gjenkjenning-c-*` topics are
+entirely `multiple-choice`.
 
 **Mining note (items 64–82):** while drafting each of the 21 non-idiom topics, check whether any
 of the sleep-science, Northug, or Christmas-tradition passages in items 64–82 contain a good
@@ -501,7 +543,7 @@ items 64–82 as pure deferred content. This is opportunistic, not a required pa
 `scripts/check-c-grammar-vocab.mjs`, following the existing `check-vocab.mjs`/`check-uttrykk.mjs`
 pattern:
 
-1. Load `grammar.json`, filter to the 21 new C topics.
+1. Load `grammar.json`, filter to the 24 new C topics.
 2. Load all `lemma` values from `vocab-c.json` and `uttrykk-c.json`.
 3. For each question, concatenate its text fields and check for at least one C-level lemma
    (loosely matched — strip common endings).
@@ -511,7 +553,7 @@ pattern:
 
 ## Plus gating
 
-All 21 topics should be Plus-only, matching the existing Phase-2 morphology topics. Before
+All 24 topics should be Plus-only, matching the existing Phase-2 morphology topics. Before
 implementation, locate the current gating mechanism — `types.ts` no longer exports
 `FREE_GRAMMAR_TOPICS`/`freeGrammarQuestionIds` (checked directly), so this has likely moved into
 `access.ts` or a route loader and needs to be found rather than re-implemented from the older
@@ -522,36 +564,52 @@ implementation, locate the current gating mechanism — `types.ts` no longer exp
 ## Implementation phases
 
 ### Phase 1 — Rules + types
-1. Add all 22 topics to `GrammarTopic` in `src/lib/types.ts`.
-2. Add all 22 `GrammarRule` entries to `src/lib/grammar/rules.ts` (drafted above).
+1. Add all 24 topics to `GrammarTopic` in `src/lib/types.ts`.
+2. Add all 24 `GrammarRule` entries to `src/lib/grammar/rules.ts` (drafted above).
 
-### Phase 1.5 — Multiple-choice schema (blocks `uttrykk-gjenkjenning-c` only)
+### Phase 1.5 — Multiple-choice schema (blocks the three `uttrykk-gjenkjenning-c-*` topics only)
 Add `type: 'multiple-choice'` with an `options: string[]` field (3 options) to `GrammarQuestion`,
 update `session.ts` grading logic and the question-rendering UI. Small, contained change —
 everything else in this plan uses the existing types and doesn't depend on this phase.
 
-### Phase 2 — Content, grouped by theme (can be done incrementally)
-2a. Nouns & articles — `ubestemt-artikkel-c`, `substantiv-uttrykk-c`, `sammensatte-substantiv`
-2b. Adjectives — `adj-mer-mest`, `adj-farger-uboyelige`, `adj-partisipp-som-adjektiv`,
-    `predikativ-agreement`
-2c. Verb tense/mood — `verbform-i-kontekst`, `sterke-verb-c`, `perfektum-pluskvamperfektum`,
-    `futurum-referert`, `kondisjonalis-counterfactual`, `verbet-a-fa`
-2d. Word order & conjunctions — `leddsetning-som-fundament`, `ordet-sa`,
-    `koordinerende-konjunksjoner`
-2e. Word formation & paraphrase — `ordfamilie-avledning`, `omskriving-passiv`,
-    `jo-desto-komparativ`
-2f. Prepositions — `preposisjoner-kroppsdel-uttrykk`, `preposisjoner-generelt-c`
-2g. Idiom recognition — `uttrykk-gjenkjenning-c` (depends on Phase 1.5). Go through items
-    83–103, cross-reference each idiom against `uttrykk-c.json`, and select ~30–40 with a real
-    match; write fresh example sentences (the textbook's bolded sentence + 3 paraphrase options
-    can inspire the question, but write new wording rather than copying it directly).
+### Phase 2 — Content, built in alphabetical order by topic
+The thematic groupings above are for organizing the rule text and cross-referencing source
+items; the actual build order is simply alphabetical by topic name, so there's no implicit
+priority to debate:
+
+1. `adj-farger-uboyelige`
+2. `adj-mer-mest`
+3. `adj-partisipp-som-adjektiv`
+4. `futurum-referert`
+5. `jo-desto-komparativ`
+6. `kondisjonalis-counterfactual`
+7. `koordinerende-konjunksjoner`
+8. `leddsetning-som-fundament`
+9. `omskriving-passiv`
+10. `ordet-sa`
+11. `ordfamilie-avledning`
+12. `perfektum-pluskvamperfektum`
+13. `predikativ-agreement`
+14. `preposisjoner-generelt-c`
+15. `preposisjoner-kroppsdel-uttrykk`
+16. `sammensatte-substantiv`
+17. `sterke-verb-c`
+18. `substantiv-uttrykk-c`
+19. `ubestemt-artikkel-c`
+20. `uttrykk-gjenkjenning-c-1` (depends on Phase 1.5) — cross-reference items 83–89 against
+    `uttrykk-c.json`, select every real match, write fresh example sentences (the textbook's
+    bolded sentence + 3 paraphrase options can inspire the question, never copy directly)
+21. `uttrykk-gjenkjenning-c-2` (depends on Phase 1.5) — same approach, items 90–96
+22. `uttrykk-gjenkjenning-c-3` (depends on Phase 1.5) — same approach, items 97–103
+23. `verbet-a-fa`
+24. `verbform-i-kontekst` — source verbs from `draft/c/grammar/25-39-verb.md` items 25–27
 
 ### Phase 3 — Vocab verification
-Build and run `scripts/check-c-grammar-vocab.mjs` after each content batch (2a–2g), not just at
-the end, so problems surface early rather than in one large review pass.
+Build and run `scripts/check-c-grammar-vocab.mjs` after each topic in Phase 2, not just at the
+end, so problems surface early rather than in one large review pass.
 
 ### Phase 4 — Gating + wiring
-Locate current Plus-gating mechanism, add all 22 topics as Plus-only. Confirm `/grammar` and
+Locate current Plus-gating mechanism, add all 24 topics as Plus-only. Confirm `/grammar` and
 `/grammar/[topic]` pick up new topics with no route changes (should hold, per Phase 2 precedent).
 
 ### Deferred — items 64–82 as a passage/cloze feature
@@ -570,19 +628,26 @@ under Content plan above.
 
 ---
 
-## Open questions
+## Decisions (resolved)
 
-- Should `preposisjoner-kroppsdel-uttrykk` and `preposisjoner-generelt-c` be merged into one
-  larger topic instead, given both are "advanced prepositions"? Leaning toward keeping them
-  split since the body-part idiom family is thematically distinct and large enough to stand
-  alone, but worth revisiting once real questions are drafted.
-- `verbform-i-kontekst` is the one topic here that isn't distinctly "C-level" by rule — confirm
-  it's worth including at all, versus just skipping items 25–27 entirely.
-- Confirm priority order across Phase 2a–2g — the table above lists sensible groupings, but
-  doesn't yet say which to build first.
-- `uttrykk-gjenkjenning-c` has ~400 idioms available but we're only selecting ~30–40 for this
-  round (the ones matching real `uttrykk-c.json` headwords). Confirm that's the right cutoff, or
-  whether it's worth expanding `uttrykk-c.json` itself with some of the idioms found here that
-  aren't in it yet, before writing the questions.
-- Is 3 options enough for `multiple-choice`, matching the textbook, or should the schema support
-  a variable option count for future reuse elsewhere?
+- `preposisjoner-kroppsdel-uttrykk` and `preposisjoner-generelt-c` stay separate — merging would
+  make one topic too large.
+- `verbform-i-kontekst` stays in scope, sourced from real C-level verbs in
+  `draft/c/grammar/25-39-verb.md` items 25–27 (not generic/invented verbs).
+- Build order is alphabetical by topic name (see Phase 2) — no separate priority ranking needed.
+- `uttrykk-gjenkjenning-c` is split into 3 parts (items 83–89, 90–96, 97–103) and should aim for
+  every idiom in each part with a real `uttrykk-c.json` match, not a fixed ~30–40 cap — likely
+  ~40–60 per part once the matching script runs.
+- `multiple-choice` uses a fixed 3-option format, matching the textbook.
+
+## Open questions (resolved)
+
+- Once the `uttrykk-c.json` matching script runs for the three idiom parts, if a substantial
+  number of textbook idioms *aren't* in `uttrykk-c.json` yet, is it worth adding some of them to
+  `uttrykk-c.json` itself before writing questions, so vocab and grammar content stay in sync?
+
+  **Resolved:** yes. The overlap check confirmed only ~20 of 381 `uttrykk-c.json` entries match
+  something in items 83–103, so `uttrykk-c.json` should be expanded first. The full plan —
+  triage of the 264 raw candidates in `c-uttrykk-missing-candidates.json`, dedup, drafting,
+  enrichment, and merge — is in `ai-docs/implementation/c-uttrykk-addition.md`. Phase 2 steps
+  20–22 (`uttrykk-gjenkjenning-c-1/2/3`) in this document depend on that expansion landing first.

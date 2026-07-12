@@ -1,0 +1,1586 @@
+[
+ {
+  "item": 83,
+  "sub": 1,
+  "sentence": "Julen står omsider for døra.",
+  "correct_paraphrase": "Etter lang tids venting er det jul."
+ },
+ {
+  "item": 83,
+  "sub": 2,
+  "sentence": "Han kjenner en kilende følelse i magen.",
+  "correct_paraphrase": null
+ },
+ {
+  "item": 83,
+  "sub": 3,
+  "sentence": "Vi må holde hjulene i gang.",
+  "correct_paraphrase": "Vi må holde bedriftens virksomhet oppe."
+ },
+ {
+  "item": 83,
+  "sub": 4,
+  "sentence": "Han føler nesten at han har vært passasjer på nissens slede.",
+  "correct_paraphrase": "Han føler nesten at han har vært passasjer på nissens doning."
+ },
+ {
+  "item": 83,
+  "sub": 5,
+  "sentence": "Forvandlingen er total.",
+  "correct_paraphrase": "Forvandlingen er fullstendig."
+ },
+ {
+  "item": 83,
+  "sub": 6,
+  "sentence": "Lysene funkler.",
+  "correct_paraphrase": "Lysene blinker."
+ },
+ {
+  "item": 83,
+  "sub": 7,
+  "sentence": "Det knaker fra peisen.",
+  "correct_paraphrase": "Det knitrer fra peisen."
+ },
+ {
+  "item": 83,
+  "sub": 8,
+  "sentence": "Julestrømpen bugner.",
+  "correct_paraphrase": "Julestrømpen er stappfull."
+ },
+ {
+  "item": 83,
+  "sub": 9,
+  "sentence": "Moren er ikke det minste trist.",
+  "correct_paraphrase": "Moren er absolutt ikke trist."
+ },
+ {
+  "item": 83,
+  "sub": 10,
+  "sentence": "Hun fryder seg over julen.",
+  "correct_paraphrase": "Hun gleder seg over julen."
+ },
+ {
+  "item": 83,
+  "sub": 11,
+  "sentence": "Verkende skuldre er som blåst bort.",
+  "correct_paraphrase": "Verkende skuldre har blitt glemt."
+ },
+ {
+  "item": 83,
+  "sub": 12,
+  "sentence": "Han strekker seg så lang han er.",
+  "correct_paraphrase": "Han strekker seg i sin fulle lengde."
+ },
+ {
+  "item": 83,
+  "sub": 13,
+  "sentence": "Han kjenner en snikende følelse.",
+  "correct_paraphrase": "Han kjenner en ulmende følelse."
+ },
+ {
+  "item": 83,
+  "sub": 14,
+  "sentence": "Kommer ikke julemorgen med toner og klang?",
+  "correct_paraphrase": "Kommer ikke julemorgen med kiming og klinging?"
+ },
+ {
+  "item": 83,
+  "sub": 15,
+  "sentence": "Det ligger en slags tomhet i veggene.",
+  "correct_paraphrase": "Det hviler en uggen stemning i huset."
+ },
+ {
+  "item": 83,
+  "sub": 16,
+  "sentence": "Langemann er bestandig føyelig.",
+  "correct_paraphrase": "Langemann gjør alltid det Karsten vil."
+ },
+ {
+  "item": 83,
+  "sub": 17,
+  "sentence": "Overraskelser er noe han dypest sett ikke liker.",
+  "correct_paraphrase": "Overraskelser er noe han innerst inne ikke liker."
+ },
+ {
+  "item": 83,
+  "sub": 18,
+  "sentence": "Han røsker ikke opp døra.",
+  "correct_paraphrase": "Han river ikke opp døra."
+ },
+ {
+  "item": 83,
+  "sub": 19,
+  "sentence": "Karsten står med døra på gløtt.",
+  "correct_paraphrase": "Karsten står med døra litt åpen."
+ },
+ {
+  "item": 83,
+  "sub": 21,
+  "sentence": "Karsten lusker inn på rommet sitt.",
+  "correct_paraphrase": "Karsten lister seg inn på rommet sitt."
+ },
+ {
+  "item": 83,
+  "sub": 22,
+  "sentence": "Strømpebuksen har raknet.",
+  "correct_paraphrase": "Strømpebuksen har gått opp i maskene."
+ },
+ {
+  "item": 84,
+  "sub": 1,
+  "sentence": "Hun har kommet seg i det siste.",
+  "correct_paraphrase": "Hun har blitt bedre i det siste."
+ },
+ {
+  "item": 84,
+  "sub": 3,
+  "sentence": "Hunden kom settende mot oss.",
+  "correct_paraphrase": "Hunden bykset mot oss."
+ },
+ {
+  "item": 84,
+  "sub": 4,
+  "sentence": "Vedkommer dette deg?",
+  "correct_paraphrase": "Har dette noe med deg å gjøre?"
+ },
+ {
+  "item": 84,
+  "sub": 5,
+  "sentence": "Smertene kommer i tak.",
+  "correct_paraphrase": "Smertene kommer i bølger."
+ },
+ {
+  "item": 84,
+  "sub": 6,
+  "sentence": "Snart vil alt komme for en dag.",
+  "correct_paraphrase": "Snart vil alt bli avslørt."
+ },
+ {
+  "item": 84,
+  "sub": 7,
+  "sentence": "Du kan ikke bare komme her og komme her!",
+  "correct_paraphrase": "Du må ikke tro at du bare kan komme og ta over."
+ },
+ {
+  "item": 84,
+  "sub": 8,
+  "sentence": "De kommer ikke godt ut av det med hverandre lenger.",
+  "correct_paraphrase": "De er ikke venner lenger."
+ },
+ {
+  "item": 84,
+  "sub": 9,
+  "sentence": "Hun kom seg ikke til å si det hun egentlig tenkte.",
+  "correct_paraphrase": "Hun fikk seg ikke til å si det hun egentlig tenkte."
+ },
+ {
+  "item": 84,
+  "sub": 10,
+  "sentence": "Han kom til å søle på kjolen hennes.",
+  "correct_paraphrase": "Han slumpet til å søle på kjolen hennes."
+ },
+ {
+  "item": 84,
+  "sub": 11,
+  "sentence": "Jeg kommer ikke til.",
+  "correct_paraphrase": "Jeg slipper ikke til."
+ },
+ {
+  "item": 84,
+  "sub": 12,
+  "sentence": "Han kom borti henne flere ganger.",
+  "correct_paraphrase": "Han støtte borti henne flere ganger."
+ },
+ {
+  "item": 84,
+  "sub": 13,
+  "sentence": "En sovepose kommer godt med.",
+  "correct_paraphrase": "En sovepose er nyttig å ha."
+ },
+ {
+  "item": 84,
+  "sub": 14,
+  "sentence": "Hvor mye kom det på til slutt?",
+  "correct_paraphrase": "Hvor mye kostet det til slutt?"
+ },
+ {
+  "item": 84,
+  "sub": 15,
+  "sentence": "Nå kom jeg ut av det!",
+  "correct_paraphrase": "Nå mistet jeg tråden!"
+ },
+ {
+  "item": 84,
+  "sub": 16,
+  "sentence": "Kommer du på det?",
+  "correct_paraphrase": "Husker du det?"
+ },
+ {
+  "item": 84,
+  "sub": 17,
+  "sentence": "Jeg må komme på flere setninger.",
+  "correct_paraphrase": "Jeg må huske flere setninger."
+ },
+ {
+  "item": 84,
+  "sub": 18,
+  "sentence": "De gikk løs på hverandre.",
+  "correct_paraphrase": "De gjøv løs på hverandre."
+ },
+ {
+  "item": 84,
+  "sub": 19,
+  "sentence": "Har du gått fra vettet?",
+  "correct_paraphrase": "Har du gått fra konseptene?"
+ },
+ {
+  "item": 84,
+  "sub": 20,
+  "sentence": "Det gikk kaldt nedover ryggen på meg.",
+  "correct_paraphrase": "Jeg gyste."
+ },
+ {
+  "item": 85,
+  "sub": 1,
+  "sentence": "Nå går alt på skinner.",
+  "correct_paraphrase": "Nå går alt slik det skal."
+ },
+ {
+  "item": 85,
+  "sub": 2,
+  "sentence": "Alt gikk som smurt.",
+  "correct_paraphrase": "Alt gikk etter planen."
+ },
+ {
+  "item": 85,
+  "sub": 3,
+  "sentence": "Hjulene går ikke rundt lenger.",
+  "correct_paraphrase": "Ingenting fungerer lenger."
+ },
+ {
+  "item": 85,
+  "sub": 4,
+  "sentence": "Konserten gikk av stabelen i fjor sommer.",
+  "correct_paraphrase": "Konserten fant sted i fjor sommer."
+ },
+ {
+  "item": 85,
+  "sub": 5,
+  "sentence": "Dette går så det suser.",
+  "correct_paraphrase": "Dette går fint."
+ },
+ {
+  "item": 85,
+  "sub": 6,
+  "sentence": "Dette går den veien høna sparker.",
+  "correct_paraphrase": "Dette går rakt ut i elendigheten."
+ },
+ {
+  "item": 85,
+  "sub": 7,
+  "sentence": "Skal vi gå til verket?",
+  "correct_paraphrase": "Skal vi begynne?"
+ },
+ {
+  "item": 85,
+  "sub": 8,
+  "sentence": "Programmet gikk rett hjem hos mine naboer.",
+  "correct_paraphrase": "Programmet vant bifall hos mine naboer."
+ },
+ {
+  "item": 85,
+  "sub": 9,
+  "sentence": "Det går en rød tråd gjennom hele boka.",
+  "correct_paraphrase": "Det finnes en sammenheng i boka."
+ },
+ {
+  "item": 85,
+  "sub": 13,
+  "sentence": "Hun dyrker sitt idol.",
+  "correct_paraphrase": "Hun føler nesegrus beundring for sitt idol."
+ },
+ {
+  "item": 85,
+  "sub": 14,
+  "sentence": "Han er døsig.",
+  "correct_paraphrase": "Han halvsover."
+ },
+ {
+  "item": 85,
+  "sub": 15,
+  "sentence": "Han gjorde knefall for henne.",
+  "correct_paraphrase": "Han fridde til henne."
+ },
+ {
+  "item": 85,
+  "sub": 16,
+  "sentence": "Hun føler nesegrus beundring for ham.",
+  "correct_paraphrase": "Hun føler en sterk beundring for ham."
+ },
+ {
+  "item": 85,
+  "sub": 18,
+  "sentence": "Jeg er målløs.",
+  "correct_paraphrase": "Jeg finner ikke ord."
+ },
+ {
+  "item": 85,
+  "sub": 19,
+  "sentence": "Han er ilagt bøter.",
+  "correct_paraphrase": "Han har blitt gitt bøter."
+ },
+ {
+  "item": 85,
+  "sub": 20,
+  "sentence": "Førerkortet ble inndratt.",
+  "correct_paraphrase": "Førerkortet ble konfiskert."
+ },
+ {
+  "item": 86,
+  "sub": 1,
+  "sentence": "Johannes skal ha vært den første som gjenkjente Jesus som Messias.",
+  "correct_paraphrase": "Johannes var etter alt å dømme den første som gjenkjente Jesus som Messias."
+ },
+ {
+  "item": 86,
+  "sub": 5,
+  "sentence": "To tradisjoner overlappet altså hverandre.",
+  "correct_paraphrase": "To tradisjoner gled altså inn i hverandre på det samme tidspunktet."
+ },
+ {
+  "item": 86,
+  "sub": 8,
+  "sentence": "Man får ikke tenne bål på svaberg.",
+  "correct_paraphrase": "Man får ikke tenne bål på nakne, glatte bergflater langs kysten."
+ },
+ {
+  "item": 86,
+  "sub": 9,
+  "sentence": "Sankthansfeiringen har sterk gjenklang i Sverige og Finland.",
+  "correct_paraphrase": "Sankthansfeiringen har appell hos folk i Sverige og Finland."
+ },
+ {
+  "item": 86,
+  "sub": 13,
+  "sentence": "Drømmen skulle gi en pekepinn om hvem man skulle gifte seg med.",
+  "correct_paraphrase": "Drømmen skulle antyde hvem man skulle gifte seg med."
+ },
+ {
+  "item": 86,
+  "sub": 16,
+  "sentence": "Mange valfartet til ulike kirker og hellige steder.",
+  "correct_paraphrase": "Mange reiste langt av gårde til ulike kirker og hellige steder."
+ },
+ {
+  "item": 87,
+  "sub": 1,
+  "sentence": "Han har dårlig ånde.",
+  "correct_paraphrase": "Det kommer vond lukt ut av munnen hans."
+ },
+ {
+  "item": 87,
+  "sub": 9,
+  "sentence": "De måtte ta grep.",
+  "correct_paraphrase": "De måtte gjøre noe."
+ },
+ {
+  "item": 87,
+  "sub": 11,
+  "sentence": "Hun føler seg nedfor.",
+  "correct_paraphrase": "Hun føler seg tung til sinns."
+ },
+ {
+  "item": 87,
+  "sub": 16,
+  "sentence": "Du er en frossenpinn!",
+  "correct_paraphrase": "Du fryser altfor lett."
+ },
+ {
+  "item": 88,
+  "sub": 4,
+  "sentence": "Nå må vi bare se tiden an.",
+  "correct_paraphrase": "Nå må vi bruke tiden og se hva som skjer."
+ },
+ {
+  "item": 88,
+  "sub": 6,
+  "sentence": "Du må jo se deg for!",
+  "correct_paraphrase": "Du må se deg omkring før du går."
+ },
+ {
+  "item": 88,
+  "sub": 7,
+  "sentence": "De gjorde store øyne da rektoren plutselig stod i stua.",
+  "correct_paraphrase": "De ble overrasket da rektoren plutselig stod i stua."
+ },
+ {
+  "item": 88,
+  "sub": 8,
+  "sentence": "Statsministeren gjorde en dårlig figur på møtet.",
+  "correct_paraphrase": "Statsministeren ga et negativt inntrykk på møtet."
+ },
+ {
+  "item": 88,
+  "sub": 17,
+  "sentence": "Hvor har du gjort av veska di?",
+  "correct_paraphrase": "Hvor har du satt veska di?"
+ },
+ {
+  "item": 88,
+  "sub": 19,
+  "sentence": "Det er om å gjøre at du tar den eksamenen.",
+  "correct_paraphrase": "Det er viktig at du tar den eksamenen."
+ },
+ {
+  "item": 89,
+  "sub": 4,
+  "sentence": "La gå!",
+  "correct_paraphrase": "Jeg tillater det."
+ },
+ {
+  "item": 89,
+  "sub": 5,
+  "sentence": "Ikke la deg vippe av pinnen.",
+  "correct_paraphrase": "Ikke la deg sette ut av spill."
+ },
+ {
+  "item": 89,
+  "sub": 6,
+  "sentence": "Ikke ta henne for gitt.",
+  "correct_paraphrase": "Ikke ta henne som en selvfølge."
+ },
+ {
+  "item": 89,
+  "sub": 9,
+  "sentence": "Jeg holder av deg.",
+  "correct_paraphrase": "Jeg er glad i deg."
+ },
+ {
+  "item": 89,
+  "sub": 13,
+  "sentence": "Konserten tok helt av.",
+  "correct_paraphrase": "Konserten ble en suksess."
+ },
+ {
+  "item": 89,
+  "sub": 16,
+  "sentence": "Hun har nedkommet.",
+  "correct_paraphrase": "Hun har født et barn."
+ },
+ {
+  "item": 90,
+  "sub": 6,
+  "sentence": "Han drar på årene.",
+  "correct_paraphrase": "Han blir gammel."
+ },
+ {
+  "item": 90,
+  "sub": 12,
+  "sentence": "Jentene ble tatt hånd om av et hjem for foreldreløse barn.",
+  "correct_paraphrase": "Et hjem for foreldreløse barn tok vare på jentene."
+ },
+ {
+  "item": 90,
+  "sub": 14,
+  "sentence": "De satte etter hvert nesa mot Norge.",
+  "correct_paraphrase": "De dro etter hvert til Norge."
+ },
+ {
+  "item": 91,
+  "sub": 2,
+  "sentence": "Han aner ikke hvor mye hun tar seg av.",
+  "correct_paraphrase": "Han aner ikke hvor mye hun tar hånd om."
+ },
+ {
+  "item": 91,
+  "sub": 4,
+  "sentence": "Dette går ham på nervene.",
+  "correct_paraphrase": "Dette plager ham sterkt."
+ },
+ {
+  "item": 91,
+  "sub": 6,
+  "sentence": "Han er full av selvmedlidenhet.",
+  "correct_paraphrase": "Han synes synd på seg selv."
+ },
+ {
+  "item": 91,
+  "sub": 16,
+  "sentence": "Hun har fått kalde føtter.",
+  "correct_paraphrase": "Hun angrer."
+ },
+ {
+  "item": 91,
+  "sub": 17,
+  "sentence": "Nå har jeg blitt varm i trøya.",
+  "correct_paraphrase": "Nå begynner jeg å bli vant til dette."
+ },
+ {
+  "item": 91,
+  "sub": 18,
+  "sentence": "Arrestasjonen kom som julekvelden på kjerringa.",
+  "correct_paraphrase": "Arrestasjonen kom som lyn fra klar himmel."
+ },
+ {
+  "item": 91,
+  "sub": 19,
+  "sentence": "Du bør ikke selge skinnet før bjørnen er skutt.",
+  "correct_paraphrase": "Du bør ikke love mer enn du kan holde."
+ },
+ {
+  "item": 92,
+  "sub": 18,
+  "sentence": "Jeg synes du kaster perler for svin.",
+  "correct_paraphrase": "De vet ikke å verdsette alt du gir til dem."
+ },
+ {
+  "item": 93,
+  "sub": 6,
+  "sentence": "Han dro til sjøs da han var seksten år.",
+  "correct_paraphrase": "Han tok hyre på en båt da han var seksten år."
+ },
+ {
+  "item": 93,
+  "sub": 7,
+  "sentence": "Det de gjør, er en dråpe i havet.",
+  "correct_paraphrase": "Det de gjør, betyr ikke noe særlig i den store sammenhengen."
+ },
+ {
+  "item": 93,
+  "sub": 9,
+  "sentence": "Du har ikke en sjanse i havet.",
+  "correct_paraphrase": "Du har ikke nubbesjanse."
+ },
+ {
+  "item": 93,
+  "sub": 11,
+  "sentence": "Hun bevegde seg i et folkehav.",
+  "correct_paraphrase": "Hun forflyttet seg i en stor folkemengde."
+ },
+ {
+  "item": 93,
+  "sub": 12,
+  "sentence": "Det har rent mye vann i havet siden sist vi møttes.",
+  "correct_paraphrase": "Det har gått lang tid siden sist vi møttes."
+ },
+ {
+  "item": 93,
+  "sub": 13,
+  "sentence": "De to er som hund og katt.",
+  "correct_paraphrase": "De to ryker i tottene på hverandre stadig vekk."
+ },
+ {
+  "item": 93,
+  "sub": 14,
+  "sentence": "Du skal ikke skue hunden på hårene.",
+  "correct_paraphrase": "Du skal ikke dømme andre bare ved å se på dem."
+ },
+ {
+  "item": 93,
+  "sub": 15,
+  "sentence": "Noen har en tendens til å gå over bekken etter vann.",
+  "correct_paraphrase": "Noen har en tendens til å løse et problem på en unødig tungvint måte."
+ },
+ {
+  "item": 93,
+  "sub": 16,
+  "sentence": "Nå har jeg kjøpt katta i sekken!",
+  "correct_paraphrase": "Nå har jeg blitt tatt ved nesa!"
+ },
+ {
+  "item": 93,
+  "sub": 17,
+  "sentence": "Ministeren har sluppet katta ut av sekken.",
+  "correct_paraphrase": "Ministeren har for alvor lettet på sløret."
+ },
+ {
+  "item": 93,
+  "sub": 18,
+  "sentence": "Jeg gir en god dag i om hun kommer.",
+  "correct_paraphrase": "Det er meg likegyldig om hun kommer."
+ },
+ {
+  "item": 93,
+  "sub": 19,
+  "sentence": "Han likte å ta ting på sparket.",
+  "correct_paraphrase": "Han likte å gjøre ting uten betenkningstid."
+ },
+ {
+  "item": 94,
+  "sub": 1,
+  "sentence": "Her gjelder det å smi mens jernet er varmt.",
+  "correct_paraphrase": "Her gjelder det å være rådsnar."
+ },
+ {
+  "item": 94,
+  "sub": 2,
+  "sentence": "Det var tydelig at kommunen forsøkte å stikke noe under stol.",
+  "correct_paraphrase": "Det var tydelig at kommunen forsøkte å fortie noe."
+ },
+ {
+  "item": 94,
+  "sub": 3,
+  "sentence": "Alt gikk i vasken.",
+  "correct_paraphrase": "Alt ble spolert."
+ },
+ {
+  "item": 94,
+  "sub": 5,
+  "sentence": "De følte hverandre på tennene.",
+  "correct_paraphrase": "De målte hverandre."
+ },
+ {
+  "item": 94,
+  "sub": 6,
+  "sentence": "I går var det mange som viste tenner.",
+  "correct_paraphrase": "I går var det mange som viste sinne og tok igjen."
+ },
+ {
+  "item": 94,
+  "sub": 7,
+  "sentence": "Han gjør sine hoser grønne.",
+  "correct_paraphrase": "Han innsmigrer seg."
+ },
+ {
+  "item": 94,
+  "sub": 8,
+  "sentence": "Her leves det på stor fot.",
+  "correct_paraphrase": "Her er det overflod og luksus."
+ },
+ {
+  "item": 94,
+  "sub": 9,
+  "sentence": "De utførte ugjerningen med kaldt blod.",
+  "correct_paraphrase": "De utførte ugjerningen uten omsyn til noe eller noen."
+ },
+ {
+  "item": 94,
+  "sub": 10,
+  "sentence": "De to har lenge stått på god fot med hverandre.",
+  "correct_paraphrase": "De to har lenge hatt et greit forhold til hverandre."
+ },
+ {
+  "item": 94,
+  "sub": 11,
+  "sentence": "Hun elsker å trekke i trådene.",
+  "correct_paraphrase": "Hun elsker å være litt manipulerende."
+ },
+ {
+  "item": 94,
+  "sub": 12,
+  "sentence": "Hun er som kjerringa mot strømmen.",
+  "correct_paraphrase": "Hun er egensindig."
+ },
+ {
+  "item": 94,
+  "sub": 13,
+  "sentence": "Nå henger jobben hans i en tynn tråd.",
+  "correct_paraphrase": "Nå står han i fare for å bli arbeidsledig."
+ },
+ {
+  "item": 94,
+  "sub": 15,
+  "sentence": "Kan vi ta opp tråden igjen nå?",
+  "correct_paraphrase": "Kan vi gå videre med samtalen vår nå?"
+ },
+ {
+  "item": 94,
+  "sub": 16,
+  "sentence": "Hun er lett på tråden.",
+  "correct_paraphrase": "Hun er ofte sammen med menn."
+ },
+ {
+  "item": 95,
+  "sub": 1,
+  "sentence": "Jeg vil ikke danse etter noens pipe.",
+  "correct_paraphrase": "Jeg vil ikke adlyde andres ordre."
+ },
+ {
+  "item": 95,
+  "sub": 2,
+  "sentence": "Han satte sitt lys under en skjeppe.",
+  "correct_paraphrase": "Han var falsk beskjeden."
+ },
+ {
+  "item": 95,
+  "sub": 3,
+  "sentence": "Hun er en hund etter blåbær.",
+  "correct_paraphrase": "Hun elsker blåbær."
+ },
+ {
+  "item": 95,
+  "sub": 4,
+  "sentence": "Det stod i annonsen at krake søkte make.",
+  "correct_paraphrase": "Det stod i annonsen at en person ønsket å finne seg en likesinnet."
+ },
+ {
+  "item": 95,
+  "sub": 5,
+  "sentence": "Som man reder, ligger man.",
+  "correct_paraphrase": "Man høster det man sår."
+ },
+ {
+  "item": 95,
+  "sub": 6,
+  "sentence": "Han hadde gått i hundene.",
+  "correct_paraphrase": "Han hadde forkommet."
+ },
+ {
+  "item": 95,
+  "sub": 7,
+  "sentence": "Hun eier ikke nåla i meggen.",
+  "correct_paraphrase": "Hun er blakk – og vel så det."
+ },
+ {
+  "item": 95,
+  "sub": 8,
+  "sentence": "Det å finne øreproppen var som å lete etter nåla i høystakken.",
+  "correct_paraphrase": "Det å finne øreproppen føltes umulig."
+ },
+ {
+  "item": 95,
+  "sub": 10,
+  "sentence": "Det gir jeg katten i!",
+  "correct_paraphrase": "Det liker jeg ikke!"
+ },
+ {
+  "item": 95,
+  "sub": 11,
+  "sentence": "De legger seg i selen.",
+  "correct_paraphrase": "De strever for å klare det."
+ },
+ {
+  "item": 95,
+  "sub": 12,
+  "sentence": "Hun følte seg mellom barken og veden.",
+  "correct_paraphrase": "Hun følte seg presset fra ulike hold."
+ },
+ {
+  "item": 95,
+  "sub": 13,
+  "sentence": "Komikeren tok kongen på kornet.",
+  "correct_paraphrase": "Komikeren traff spikeren på hodet når det gjaldt kongen."
+ },
+ {
+  "item": 95,
+  "sub": 14,
+  "sentence": "De kastet blår i øynene på henne.",
+  "correct_paraphrase": "De lurte henne trill rundt."
+ },
+ {
+  "item": 95,
+  "sub": 15,
+  "sentence": "Han tok det på strak arm.",
+  "correct_paraphrase": "Han gjorde det uten å nøle."
+ },
+ {
+  "item": 95,
+  "sub": 16,
+  "sentence": "Jeg klarer ikke å svare på stående fot.",
+  "correct_paraphrase": "Jeg klarer ikke å svare her og nå."
+ },
+ {
+  "item": 95,
+  "sub": 17,
+  "sentence": "å la humla suse",
+  "correct_paraphrase": "å nyte livet"
+ },
+ {
+  "item": 95,
+  "sub": 18,
+  "sentence": "å ha kort lunte",
+  "correct_paraphrase": "å være snarsint"
+ },
+ {
+  "item": 95,
+  "sub": 19,
+  "sentence": "å rive i en drink",
+  "correct_paraphrase": "å spandere en drink"
+ },
+ {
+  "item": 95,
+  "sub": 20,
+  "sentence": "å mele sin egen kake",
+  "correct_paraphrase": "å sørge for at man selv får fordeler"
+ },
+ {
+  "item": 96,
+  "sub": 1,
+  "sentence": "alt kommer for en dag",
+  "correct_paraphrase": "sannheten kommer fram"
+ },
+ {
+  "item": 96,
+  "sub": 3,
+  "sentence": "å gi noen på båten",
+  "correct_paraphrase": "å la noen fare"
+ },
+ {
+  "item": 96,
+  "sub": 4,
+  "sentence": "å male fanden på meggen",
+  "correct_paraphrase": "å framstille noe som verre enn det er"
+ },
+ {
+  "item": 96,
+  "sub": 7,
+  "sentence": "å lukte lunta",
+  "correct_paraphrase": "å ane at noe er galt"
+ },
+ {
+  "item": 96,
+  "sub": 8,
+  "sentence": "å ta noe med ei klype salt",
+  "correct_paraphrase": "å ikke tro helt på alt som sies eller skrives"
+ },
+ {
+  "item": 96,
+  "sub": 9,
+  "sentence": "å sitte med skjegget i postkassa",
+  "correct_paraphrase": "å bli lurt"
+ },
+ {
+  "item": 96,
+  "sub": 10,
+  "sentence": "å være fyr og flamme",
+  "correct_paraphrase": "å være ivrig"
+ },
+ {
+  "item": 96,
+  "sub": 11,
+  "sentence": "å stå på pinne for noen",
+  "correct_paraphrase": "å jobbe hardt for noen"
+ },
+ {
+  "item": 96,
+  "sub": 12,
+  "sentence": "å sluke kameler",
+  "correct_paraphrase": "å godta noe en egentlig ikke vil godta – for å oppnå noe annet"
+ },
+ {
+  "item": 96,
+  "sub": 13,
+  "sentence": "å gå rundt grøten",
+  "correct_paraphrase": "å ikke klare å komme til poenget"
+ },
+ {
+  "item": 96,
+  "sub": 14,
+  "sentence": "å gråte krokodilletårer",
+  "correct_paraphrase": "å hykle for å få trøst fra andre"
+ },
+ {
+  "item": 96,
+  "sub": 15,
+  "sentence": "å sette kronen på verket",
+  "correct_paraphrase": "å sette prikken over i-en"
+ },
+ {
+  "item": 96,
+  "sub": 16,
+  "sentence": "å lese noen teksten",
+  "correct_paraphrase": "å kjefte på noen"
+ },
+ {
+  "item": 96,
+  "sub": 17,
+  "sentence": "å tråkke i salaten",
+  "correct_paraphrase": "å tabbe seg ut"
+ },
+ {
+  "item": 96,
+  "sub": 18,
+  "sentence": "å pakke snippesken",
+  "correct_paraphrase": "å dra sin kos"
+ },
+ {
+  "item": 96,
+  "sub": 19,
+  "sentence": "å hoppe etter Wirkola",
+  "correct_paraphrase": "å følge etter en usedvanlig begavet forgjenger"
+ },
+ {
+  "item": 96,
+  "sub": 20,
+  "sentence": "å være på en snei",
+  "correct_paraphrase": "å være litt beruset"
+ },
+ {
+  "item": 97,
+  "sub": 1,
+  "sentence": "Nå må vi snakke under fire øyne.",
+  "correct_paraphrase": "Nå må vi ha en samtale alene."
+ },
+ {
+  "item": 97,
+  "sub": 2,
+  "sentence": "Han har fått læreren sin opp i halsen.",
+  "correct_paraphrase": "Han er lut lei av læreren sin."
+ },
+ {
+  "item": 97,
+  "sub": 3,
+  "sentence": "De dro hals over hode til Sverige.",
+  "correct_paraphrase": "De dro hodekulls til Sverige."
+ },
+ {
+  "item": 97,
+  "sub": 4,
+  "sentence": "Kvinnen er forsker på sin hals.",
+  "correct_paraphrase": "Kvinnen er lidenskapelig opptatt av sin forskning."
+ },
+ {
+  "item": 97,
+  "sub": 5,
+  "sentence": "Kors på halsen!",
+  "correct_paraphrase": "Jeg lover!"
+ },
+ {
+  "item": 97,
+  "sub": 6,
+  "sentence": "Guttene satte latteren i halsen da de hørte det knirke i døra.",
+  "correct_paraphrase": "Guttene lo ikke mer da de hørte det knirke i døra."
+ },
+ {
+  "item": 97,
+  "sub": 7,
+  "sentence": "Damen fikk hjertet i halsen da hun hørte noen tasse i gangen.",
+  "correct_paraphrase": "Damen fikk hjertebank da hun hørte noen tasse i gangen."
+ },
+ {
+  "item": 97,
+  "sub": 8,
+  "sentence": "Elevene hadde lærer Olsen opp i halsen.",
+  "correct_paraphrase": "Elevene hadde fått nok av lærer Olsen."
+ },
+ {
+  "item": 97,
+  "sub": 9,
+  "sentence": "Tyvene tok beina på nakken.",
+  "correct_paraphrase": "Tyvene beinfløy av gårde."
+ },
+ {
+  "item": 97,
+  "sub": 10,
+  "sentence": "Nå må du ta deg selv i nakken!",
+  "correct_paraphrase": "Nå må du ta deg sammen."
+ },
+ {
+  "item": 97,
+  "sub": 11,
+  "sentence": "Nå får han politiet på nakken.",
+  "correct_paraphrase": "Nå blir han forfulgt av politiet."
+ },
+ {
+  "item": 97,
+  "sub": 12,
+  "sentence": "Hun skaper ofte storm i et vannglass.",
+  "correct_paraphrase": "Hun gjør ofte mye ut av ingenting."
+ },
+ {
+  "item": 97,
+  "sub": 13,
+  "sentence": "Nå ser de rødt.",
+  "correct_paraphrase": "Nå er de rasende."
+ },
+ {
+  "item": 97,
+  "sub": 14,
+  "sentence": "Brent barn skyr ilden.",
+  "correct_paraphrase": "En som har skadet seg tidligere, har fått seg en lærepenge."
+ },
+ {
+  "item": 97,
+  "sub": 15,
+  "sentence": "Egget vil lære høna å verpe",
+  "correct_paraphrase": "Den uerfarne vil belære den som kan noe."
+ },
+ {
+  "item": 97,
+  "sub": 16,
+  "sentence": "Det er en saga blott.",
+  "correct_paraphrase": "Det er en glemt historie."
+ },
+ {
+  "item": 97,
+  "sub": 18,
+  "sentence": "Eplet faller ikke langt fra stammen.",
+  "correct_paraphrase": "Som far, så sønn."
+ },
+ {
+  "item": 97,
+  "sub": 19,
+  "sentence": "Det får stå sin prøve.",
+  "correct_paraphrase": "Det går slik det vil."
+ },
+ {
+  "item": 98,
+  "sub": 1,
+  "sentence": "Her er det ugler i mosen.",
+  "correct_paraphrase": "Her er det noe som skurrer."
+ },
+ {
+  "item": 98,
+  "sub": 2,
+  "sentence": "Nå blir det sus i serken.",
+  "correct_paraphrase": "Nå blir det liv."
+ },
+ {
+  "item": 98,
+  "sub": 3,
+  "sentence": "Denne medisinen kan gjøre susen.",
+  "correct_paraphrase": "Denne medisinen kan være det som skal til."
+ },
+ {
+  "item": 98,
+  "sub": 4,
+  "sentence": "Han biter på kroken rett som det er.",
+  "correct_paraphrase": "Han blir ofte lurt trill rundt."
+ },
+ {
+  "item": 98,
+  "sub": 5,
+  "sentence": "Han er familiens sorte får.",
+  "correct_paraphrase": "Han er det familiemedlemmet som bringer skam over familien."
+ },
+ {
+  "item": 98,
+  "sub": 6,
+  "sentence": "Hastverk er lastverk.",
+  "correct_paraphrase": "Det som gjøres i full fart, utføres ofte ikke på den beste måten."
+ },
+ {
+  "item": 98,
+  "sub": 7,
+  "sentence": "Nå vil de begrave stridsøksa.",
+  "correct_paraphrase": "Nå vil de slutte fred."
+ },
+ {
+  "item": 98,
+  "sub": 8,
+  "sentence": "Hun faller mellom to stoler.",
+  "correct_paraphrase": "Hun passer ikke inn noen steder."
+ },
+ {
+  "item": 98,
+  "sub": 9,
+  "sentence": "Saken er biff.",
+  "correct_paraphrase": "Situasjonen er i orden."
+ },
+ {
+  "item": 98,
+  "sub": 10,
+  "sentence": "Du får feie for egen dør.",
+  "correct_paraphrase": "Du får ta hånd om dine egne problemer først."
+ },
+ {
+  "item": 98,
+  "sub": 11,
+  "sentence": "Han har blitt ført bak lyset.",
+  "correct_paraphrase": "Han har blitt narret."
+ },
+ {
+  "item": 98,
+  "sub": 12,
+  "sentence": "Jeg fikk bakoversveis i går.",
+  "correct_paraphrase": "Jeg ble forbauset i går."
+ },
+ {
+  "item": 98,
+  "sub": 13,
+  "sentence": "Hvorfor feier du dette under teppet?",
+  "correct_paraphrase": "Hvorfor skjuler du ting?"
+ },
+ {
+  "item": 98,
+  "sub": 14,
+  "sentence": "Hun fikk så hatten passet.",
+  "correct_paraphrase": "Hun fikk kjeft."
+ },
+ {
+  "item": 98,
+  "sub": 15,
+  "sentence": "Hun er ikke tapt bak ei vogn.",
+  "correct_paraphrase": "Hun er rådsnar når det oppstår utfordringer."
+ },
+ {
+  "item": 98,
+  "sub": 16,
+  "sentence": "Bakeren har ikke rent mel i posen.",
+  "correct_paraphrase": "Bakeren har noe å skjule."
+ },
+ {
+  "item": 98,
+  "sub": 17,
+  "sentence": "Det skinner gjennom at hun er bitter.",
+  "correct_paraphrase": "Man kan ane at hun er bitter."
+ },
+ {
+  "item": 98,
+  "sub": 18,
+  "sentence": "Så langt hadde alt gått på skinner.",
+  "correct_paraphrase": "Så langt hadde alt gått utmerket."
+ },
+ {
+  "item": 98,
+  "sub": 19,
+  "sentence": "Fjorårets vinner måtte bite i gresset i årets konkurranse.",
+  "correct_paraphrase": "Fjorårets vinner måtte se seg slått i årets konkurranse."
+ },
+ {
+  "item": 99,
+  "sub": 1,
+  "sentence": "Hun bet seg merke i at noe var annerledes.",
+  "correct_paraphrase": "Hun la merke til at noe var annerledes."
+ },
+ {
+  "item": 99,
+  "sub": 2,
+  "sentence": "Hun bet ordene i seg.",
+  "correct_paraphrase": "Hun holdt tilbake ordene."
+ },
+ {
+  "item": 99,
+  "sub": 3,
+  "sentence": "De var blitt drevet fra skanse til skanse.",
+  "correct_paraphrase": "De måtte stadig gi seg."
+ },
+ {
+  "item": 99,
+  "sub": 4,
+  "sentence": "Hun bøyde seg i støvet for sjefens avgjørelse.",
+  "correct_paraphrase": "Ydmykt aksepterte hun sjefens avgjørelse."
+ },
+ {
+  "item": 99,
+  "sub": 5,
+  "sentence": "Min bror er ikke født i går.",
+  "correct_paraphrase": "Min bror er slettes ikke dum."
+ },
+ {
+  "item": 99,
+  "sub": 6,
+  "sentence": "Enhver får feie for sin egen dør.",
+  "correct_paraphrase": "Enhver får hanskes med sine egne utfordringer først."
+ },
+ {
+  "item": 99,
+  "sub": 7,
+  "sentence": "Jeg gir meg ende over.",
+  "correct_paraphrase": "Jeg gir opp."
+ },
+ {
+  "item": 99,
+  "sub": 8,
+  "sentence": "Han ga henne inn i går kveld.",
+  "correct_paraphrase": "Han dengte løs på henne i går kveld."
+ },
+ {
+  "item": 99,
+  "sub": 9,
+  "sentence": "Fansen gikk berserk.",
+  "correct_paraphrase": "Fansen ble helt ustyrlige."
+ },
+ {
+  "item": 99,
+  "sub": 10,
+  "sentence": "Han målte henne med øynene.",
+  "correct_paraphrase": "Han så kritisk på henne."
+ },
+ {
+  "item": 99,
+  "sub": 13,
+  "sentence": "Han brant inne med en del ting.",
+  "correct_paraphrase": "Han fikk ikke sagt alt han ville si."
+ },
+ {
+  "item": 99,
+  "sub": 14,
+  "sentence": "Nå gjelder det å veie ordene sine.",
+  "correct_paraphrase": "Nå gjelder det å holde tunga rett i munnen."
+ },
+ {
+  "item": 99,
+  "sub": 16,
+  "sentence": "Hvem har han slått seg i lag med nå?",
+  "correct_paraphrase": "Hvem har han blitt sammen med nå?"
+ },
+ {
+  "item": 99,
+  "sub": 17,
+  "sentence": "Ofte føler jeg at jeg ikke er med på laget.",
+  "correct_paraphrase": "Ofte føler jeg meg litt utenfor."
+ },
+ {
+  "item": 99,
+  "sub": 18,
+  "sentence": "Han er en ulv i fåreklær.",
+  "correct_paraphrase": "Han er en ondsinnet person som later som om han er god."
+ },
+ {
+  "item": 99,
+  "sub": 19,
+  "sentence": "Han kom i grevens tid.",
+  "correct_paraphrase": "Han kom i rette øyeblikk."
+ },
+ {
+  "item": 99,
+  "sub": 20,
+  "sentence": "Hun bestod prøven med glans.",
+  "correct_paraphrase": "Hun bestod prøven på ypperlig vis."
+ },
+ {
+  "item": 100,
+  "sub": 3,
+  "sentence": "De ga ham det glatte lag.",
+  "correct_paraphrase": "De hudflettet ham."
+ },
+ {
+  "item": 100,
+  "sub": 4,
+  "sentence": "Jeg prøver å gjøre datteren min til lags.",
+  "correct_paraphrase": "Jeg prøver å gjøre datteren min fornøyd."
+ },
+ {
+  "item": 100,
+  "sub": 5,
+  "sentence": "Hun har gått på limpinnen.",
+  "correct_paraphrase": "Hun har latt seg lure."
+ },
+ {
+  "item": 100,
+  "sub": 6,
+  "sentence": "De gikk fem på.",
+  "correct_paraphrase": "De gikk rett i fella."
+ },
+ {
+  "item": 100,
+  "sub": 7,
+  "sentence": "Står ditt ord ved lag?",
+  "correct_paraphrase": "Står du fast på det du sa?"
+ },
+ {
+  "item": 100,
+  "sub": 8,
+  "sentence": "Jeg føler at du ikke spiller på lag med meg.",
+  "correct_paraphrase": "Jeg føler at du vil motarbeide meg."
+ },
+ {
+  "item": 100,
+  "sub": 9,
+  "sentence": "De har bestemt seg for å bryte lag.",
+  "correct_paraphrase": "De har bestemt seg for å gjøre det slutt med hverandre."
+ },
+ {
+  "item": 100,
+  "sub": 10,
+  "sentence": "Har de to kommet i lag?",
+  "correct_paraphrase": "Har de to blitt sammen?"
+ },
+ {
+  "item": 100,
+  "sub": 11,
+  "sentence": "Det er viktig å holde de gamle trekirkene ved lag.",
+  "correct_paraphrase": "Det er viktig å bevare de gamle trekirkene."
+ },
+ {
+  "item": 100,
+  "sub": 12,
+  "sentence": "å bite i det sure eplet",
+  "correct_paraphrase": "å finne seg i noe ubehagelig"
+ },
+ {
+  "item": 100,
+  "sub": 13,
+  "sentence": "å skjære alle over én kam",
+  "correct_paraphrase": "å bedømme alle unyansert og sjablongmessig"
+ },
+ {
+  "item": 100,
+  "sub": 14,
+  "sentence": "å slå seg på brystet",
+  "correct_paraphrase": "å vise stolthet"
+ },
+ {
+  "item": 100,
+  "sub": 15,
+  "sentence": "Nå vil jeg sette foten ned.",
+  "correct_paraphrase": "Nå vil jeg sette en stopper for dette."
+ },
+ {
+  "item": 100,
+  "sub": 16,
+  "sentence": "Du kan ikke sitte der med hendene i fanget.",
+  "correct_paraphrase": "Du kan ikke forholde deg uvirksom i denne saken."
+ },
+ {
+  "item": 100,
+  "sub": 17,
+  "sentence": "Ikke stikk nesa di i dette.",
+  "correct_paraphrase": "Ikke bland deg inn i dette."
+ },
+ {
+  "item": 100,
+  "sub": 18,
+  "sentence": "Han hadde sommerfugler i magen like før ringene skulle settes på.",
+  "correct_paraphrase": "Han kjente at det kriblet av spenning like før ringene skulle settes på."
+ },
+ {
+  "item": 100,
+  "sub": 19,
+  "sentence": "Jeg løfter ikke en finger mer for deg.",
+  "correct_paraphrase": "Jeg vil overhodet ikke gjøre noe mer for deg."
+ },
+ {
+  "item": 101,
+  "sub": 1,
+  "sentence": "Jeg lar meg ikke be to ganger.",
+  "correct_paraphrase": "Det er lett å spørre meg om å gjøre noe."
+ },
+ {
+  "item": 101,
+  "sub": 3,
+  "sentence": "Han tar et ubønnhørlig farvel med henne.",
+  "correct_paraphrase": "Han tar et uavvendelig farvel med henne."
+ },
+ {
+  "item": 101,
+  "sub": 4,
+  "sentence": "De går i forbønn for henne.",
+  "correct_paraphrase": "De ber til Gud for henne."
+ },
+ {
+  "item": 101,
+  "sub": 5,
+  "sentence": "Hun spurte bønnlig om å få være med på turen.",
+  "correct_paraphrase": "Hun bad inntrengende om få være med på turen."
+ },
+ {
+  "item": 101,
+  "sub": 8,
+  "sentence": "Hun føler seg bundet på hender og føtter.",
+  "correct_paraphrase": "Hun føler at hun ikke har noen mulighet til å styre ting selv."
+ },
+ {
+  "item": 101,
+  "sub": 9,
+  "sentence": "Hun føler seg så bundet.",
+  "correct_paraphrase": "Hun føler seg maktesløs."
+ },
+ {
+  "item": 101,
+  "sub": 11,
+  "sentence": "Hvis avtalen er bindende, så kan vi si at ...",
+  "correct_paraphrase": "bordet fanger"
+ },
+ {
+  "item": 101,
+  "sub": 13,
+  "sentence": "Han er en grinebiter.",
+  "correct_paraphrase": "Han er gretten."
+ },
+ {
+  "item": 101,
+  "sub": 14,
+  "sentence": "Dette landskapet er værbitt.",
+  "correct_paraphrase": "I dette landskapet kan man se spor av all slags vær."
+ },
+ {
+  "item": 101,
+  "sub": 16,
+  "sentence": "Tror du han vil bite på kroken?",
+  "correct_paraphrase": "Tror du vi klarer å lure ham?"
+ },
+ {
+  "item": 102,
+  "sub": 2,
+  "sentence": "Hun bet fra seg.",
+  "correct_paraphrase": "Hun tok igjen."
+ },
+ {
+  "item": 102,
+  "sub": 3,
+  "sentence": "De måtte bite i det sure eplet.",
+  "correct_paraphrase": "De måtte gjøre det de helst ikke ville."
+ },
+ {
+  "item": 102,
+  "sub": 8,
+  "sentence": "I går ble jeg tatt på senga.",
+  "correct_paraphrase": "I går ble jeg overrumplet."
+ },
+ {
+  "item": 102,
+  "sub": 9,
+  "sentence": "Er det sant at han har blitt sparket?",
+  "correct_paraphrase": "Er det sant at han har fått fyken?"
+ },
+ {
+  "item": 102,
+  "sub": 10,
+  "sentence": "Hvor har den lille luringen blitt av nå, da?",
+  "correct_paraphrase": "Hvor har den lille luringen tatt veien nå, da?"
+ },
+ {
+  "item": 102,
+  "sub": 11,
+  "sentence": "Han har blitt helt rabiat.",
+  "correct_paraphrase": "Han har gått helt fra konseptene."
+ },
+ {
+  "item": 102,
+  "sub": 14,
+  "sentence": "Hun føler at hun må dra lasset hele tiden.",
+  "correct_paraphrase": "Hun føler at det er hun som må bære de tyngste byrdene hele tiden."
+ },
+ {
+  "item": 102,
+  "sub": 15,
+  "sentence": "Han begynner å dra på årene nå.",
+  "correct_paraphrase": "Han begynner å eldes."
+ },
+ {
+  "item": 102,
+  "sub": 16,
+  "sentence": "Hun dro kjensel på ham.",
+  "correct_paraphrase": "Hun kjente ham igjen."
+ },
+ {
+  "item": 102,
+  "sub": 19,
+  "sentence": "Møtet dro ut.",
+  "correct_paraphrase": "Møtet varte lenge."
+ },
+ {
+  "item": 102,
+  "sub": 20,
+  "sentence": "Ekskjæresten kan dra dit pepperen gror.",
+  "correct_paraphrase": null
+ },
+ {
+  "item": 103,
+  "sub": 1,
+  "sentence": "Hun dro på det da hun ble bedt om å avgi forklaring.",
+  "correct_paraphrase": "Hun holdt litt igjen da hun ble bedt om å avgi forklaring."
+ },
+ {
+  "item": 103,
+  "sub": 2,
+  "sentence": "Utsagnet ble dratt i tvil.",
+  "correct_paraphrase": "Man følte skepsis mot det som ble sagt."
+ },
+ {
+  "item": 103,
+  "sub": 3,
+  "sentence": "Hun dro på det ene beinet.",
+  "correct_paraphrase": "Hun haltet på ett bein."
+ },
+ {
+  "item": 103,
+  "sub": 4,
+  "sentence": "Har du dratt lærdom av dine feil?",
+  "correct_paraphrase": "Er du klok av skade nå?"
+ },
+ {
+  "item": 103,
+  "sub": 5,
+  "sentence": "Nå har sønnen min drevet dank i et halvt år.",
+  "correct_paraphrase": "Nå har sønnen min tatt det kuli i et halvt år."
+ },
+ {
+  "item": 103,
+  "sub": 6,
+  "sentence": "Hun følte at de drev gjøn med henne.",
+  "correct_paraphrase": "Hun følte at de fleipet med henne."
+ },
+ {
+  "item": 103,
+  "sub": 7,
+  "sentence": "Datteren hans har drevet det langt.",
+  "correct_paraphrase": "Datteren hans har nådd langt."
+ },
+ {
+  "item": 103,
+  "sub": 9,
+  "sentence": "Ungdommen drev omkring i området.",
+  "correct_paraphrase": "Ungdommen hang og slang omkring i området."
+ },
+ {
+  "item": 103,
+  "sub": 10,
+  "sentence": "Det ser ut til at uværet driver over nå.",
+  "correct_paraphrase": "Det ser ut til at uværet fjerner seg fra oss nå."
+ },
+ {
+  "item": 103,
+  "sub": 11,
+  "sentence": "Kvinner og barn ble drevet på flukt.",
+  "correct_paraphrase": "Kvinner og barn ble jaget av gårde."
+ },
+ {
+  "item": 103,
+  "sub": 12,
+  "sentence": "Hvorfor må du drive meg til vanvidd?",
+  "correct_paraphrase": "Hvorfor må du få meg til å klikke?"
+ },
+ {
+  "item": 103,
+  "sub": 15,
+  "sentence": "Hvorfor må den mannen alltid drive det for langt?",
+  "correct_paraphrase": "Hvorfor må den mannen alltid krysse grenser?"
+ },
+ {
+  "item": 103,
+  "sub": 16,
+  "sentence": "Alt står og faller med din stemme.",
+  "correct_paraphrase": "Din stemme vil avgjøre alt."
+ },
+ {
+  "item": 103,
+  "sub": 17,
+  "sentence": "Tiden hos svigermoren falt ham lang.",
+  "correct_paraphrase": "Han følte at det varte og rakk hos svigermoren."
+ },
+ {
+  "item": 103,
+  "sub": 18,
+  "sentence": "Det falt meg virkelig ikke inn at du var redd.",
+  "correct_paraphrase": "Jeg kom virkelig ikke på at du var redd."
+ },
+ {
+  "item": 103,
+  "sub": 19,
+  "sentence": "Hun sa at han hadde falt i synd.",
+  "correct_paraphrase": "Hun sa han hadde syndet."
+ },
+ {
+  "item": 103,
+  "sub": 20,
+  "sentence": "De falt for fristelsen i den store butikken.",
+  "correct_paraphrase": "De klarte ikke å stå imot fristelsen i den store butikken."
+ },
+ {
+  "item": 103,
+  "sub": 21,
+  "sentence": "Er det sant at hun har falt fra?",
+  "correct_paraphrase": "Er det sant at hun er en frafallen?"
+ },
+ {
+  "item": 103,
+  "sub": 22,
+  "sentence": "De gode forslagene falt til jorden.",
+  "correct_paraphrase": "De gode forslagene ble avvist."
+ },
+ {
+  "item": 103,
+  "sub": 23,
+  "sentence": "Ordene hans falt i god jord.",
+  "correct_paraphrase": "Ordene hans ble tatt godt imot."
+ },
+ {
+  "item": 103,
+  "sub": 24,
+  "sentence": "Talen hennes falt på steingrunn.",
+  "correct_paraphrase": "Talen hennes fikk ikke gehør."
+ }
+]

@@ -4,8 +4,7 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 I have data-rules/vocab-and-uttrykk.md for your information.
 
-
-
+==========
 ==================
 
 
