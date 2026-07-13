@@ -61,7 +61,7 @@ passages. But the vocabulary and grammar points embedded in them (Christmas-trad
 sleep-science vocab, verb-tense patterns) shouldn't just be dropped: while drafting content for
 the 24 topics above, pull individual grammar+vocab pairings from these passages and rewrite them
 as fresh, self-contained single sentences under whichever topic fits (see Phase 2, "mining
-note"). The passage *format* itself — as its own reading-comprehension feature — stays a separate
+note"). The passage _format_ itself — as its own reading-comprehension feature — stays a separate
 future project, scoped and built later if wanted.
 
 ---
@@ -72,62 +72,62 @@ Grouped by theme, with their source items from `innhold.md` and priority.
 
 ### Nouns & articles
 
-| Topic | Source | Notes |
-|---|---|---|
-| `ubestemt-artikkel-c` | items 7–8 | yrke/adjektiv, uncountables, reisemåte, uttrykk, optional article |
-| `substantiv-uttrykk-c` | items 1–8 | noun forms *inside fixed idioms* (ta hånd om, stå til liv, gå som fot i hose) — direct uttrykk-c.json fit |
-| `sammensatte-substantiv` | items 9–11 | building compound nouns from a description |
+| Topic                    | Source     | Notes                                                                                                     |
+| ------------------------ | ---------- | --------------------------------------------------------------------------------------------------------- |
+| `ubestemt-artikkel-c`    | items 7–8  | yrke/adjektiv, uncountables, reisemåte, uttrykk, optional article                                         |
+| `substantiv-uttrykk-c`   | items 1–8  | noun forms _inside fixed idioms_ (ta hånd om, stå til liv, gå som fot i hose) — direct uttrykk-c.json fit |
+| `sammensatte-substantiv` | items 9–11 | building compound nouns from a description                                                                |
 
 ### Adjectives
 
-| Topic | Source | Notes |
-|---|---|---|
-| `adj-mer-mest` | items 13–19, 22–24 | adjective classes that never take -ere/-est |
-| `adj-farger-uboyelige` | item 13 | oransje/lilla/rosa/beige — never inflect |
-| `adj-partisipp-som-adjektiv` | items 16–17 | irregular predikativ forms of participle-adjectives (skvetten, sunget, stjålet) |
-| `predikativ-agreement` | items 12, 20–21 | predikativ non-agreement + exceptions |
+| Topic                        | Source             | Notes                                                                           |
+| ---------------------------- | ------------------ | ------------------------------------------------------------------------------- |
+| `adj-mer-mest`               | items 13–19, 22–24 | adjective classes that never take -ere/-est                                     |
+| `adj-farger-uboyelige`       | item 13            | oransje/lilla/rosa/beige — never inflect                                        |
+| `adj-partisipp-som-adjektiv` | items 16–17        | irregular predikativ forms of participle-adjectives (skvetten, sunget, stjålet) |
+| `predikativ-agreement`       | items 12, 20–21    | predikativ non-agreement + exceptions                                           |
 
 ### Verb tense & mood
 
-| Topic | Source | Notes | Priority |
-|---|---|---|---|
-| `verbform-i-kontekst` | items 25–27 | infinitiv/presens across multi-verb sentences | low |
-| `sterke-verb-c` | items 28–29 | rare strong verbs (bry seg, briste, by, gale, sige, fyke, kvekke) | high |
-| `perfektum-pluskvamperfektum` | items 30–34 | tense choice + word order with sentence adverbials | high |
-| `futurum-referert` | items 35–37 | 2. futurum — evidential/reported "skal ha X" | high |
-| `kondisjonalis-counterfactual` | items 38–41 | 1./2. kondisjonalis + om-setninger (own sentences, not the Annemor story) | high |
-| `verbet-a-fa` | grammatikk.md | meanings of «å få» + hjelpeverb uses | high |
+| Topic                          | Source        | Notes                                                                     | Priority |
+| ------------------------------ | ------------- | ------------------------------------------------------------------------- | -------- |
+| `verbform-i-kontekst`          | items 25–27   | infinitiv/presens across multi-verb sentences                             | low      |
+| `sterke-verb-c`                | items 28–29   | rare strong verbs (bry seg, briste, by, gale, sige, fyke, kvekke)         | high     |
+| `perfektum-pluskvamperfektum`  | items 30–34   | tense choice + word order with sentence adverbials                        | high     |
+| `futurum-referert`             | items 35–37   | 2. futurum — evidential/reported "skal ha X"                              | high     |
+| `kondisjonalis-counterfactual` | items 38–41   | 1./2. kondisjonalis + om-setninger (own sentences, not the Annemor story) | high     |
+| `verbet-a-fa`                  | grammatikk.md | meanings of «å få» + hjelpeverb uses                                      | high     |
 
 ### Word order & conjunctions
 
-| Topic | Source | Notes |
-|---|---|---|
-| `leddsetning-som-fundament` | items 42–46 | subordinate clause filling the front field, adverbial placement inside |
-| `ordet-sa` | grammatikk.md + item 47 | så as konjunksjon / tidsadverb / subjunksjon |
-| `koordinerende-konjunksjoner` | item 72 | og/eller/men/for/så choice + comma rule |
+| Topic                         | Source                  | Notes                                                                  |
+| ----------------------------- | ----------------------- | ---------------------------------------------------------------------- |
+| `leddsetning-som-fundament`   | items 42–46             | subordinate clause filling the front field, adverbial placement inside |
+| `ordet-sa`                    | grammatikk.md + item 47 | så as konjunksjon / tidsadverb / subjunksjon                           |
+| `koordinerende-konjunksjoner` | item 72                 | og/eller/men/for/så choice + comma rule                                |
 
 ### Word formation & paraphrase
 
-| Topic | Source | Notes |
-|---|---|---|
-| `ordfamilie-avledning` | items 48–51 | deriving noun/verb/adjective/adverb within a word family |
-| `omskriving-passiv` | items 52–55 | active↔passive, casual→formal nominalized paraphrase |
-| `jo-desto-komparativ` | item 54 (pattern) | jo + comparative … desto/jo + comparative correlative |
+| Topic                  | Source            | Notes                                                    |
+| ---------------------- | ----------------- | -------------------------------------------------------- |
+| `ordfamilie-avledning` | items 48–51       | deriving noun/verb/adjective/adverb within a word family |
+| `omskriving-passiv`    | items 52–55       | active↔passive, casual→formal nominalized paraphrase     |
+| `jo-desto-komparativ`  | item 54 (pattern) | jo + comparative … desto/jo + comparative correlative    |
 
 ### Prepositions
 
-| Topic | Source | Notes |
-|---|---|---|
+| Topic                             | Source                     | Notes                                                |
+| --------------------------------- | -------------------------- | ---------------------------------------------------- |
 | `preposisjoner-kroppsdel-uttrykk` | items 56, 59, 61 (partial) | body-part idiom prepositions (hår, nakke, hals, øre) |
-| `preposisjoner-generelt-c` | items 57–58, 60, 62–63 | general idiomatic preposition collocations |
+| `preposisjoner-generelt-c`        | items 57–58, 60, 62–63     | general idiomatic preposition collocations           |
 
 ### Idiom recognition
 
-| Topic | Source | Notes |
-|---|---|---|
-| `uttrykk-gjenkjenning-c-1` | items 83–89 | ~130 idioms; select all with a real `uttrykk-c.json` match; needs `multiple-choice` type (Phase 1.5) |
-| `uttrykk-gjenkjenning-c-2` | items 90–96 | same approach, next 7 sub-lists |
-| `uttrykk-gjenkjenning-c-3` | items 97–103 | same approach, final 7 sub-lists |
+| Topic                      | Source       | Notes                                                                                                |
+| -------------------------- | ------------ | ---------------------------------------------------------------------------------------------------- |
+| `uttrykk-gjenkjenning-c-1` | items 83–89  | ~130 idioms; select all with a real `uttrykk-c.json` match; needs `multiple-choice` type (Phase 1.5) |
+| `uttrykk-gjenkjenning-c-2` | items 90–96  | same approach, next 7 sub-lists                                                                      |
+| `uttrykk-gjenkjenning-c-3` | items 97–103 | same approach, final 7 sub-lists                                                                     |
 
 **Total: 24 topics.** At ~8–12 questions each for the first 21, plus a larger batch per idiom
 part (exact size depends on the `uttrykk-c.json` matching script, likely ~40–60 each): roughly
@@ -564,15 +564,30 @@ implementation, locate the current gating mechanism — `types.ts` no longer exp
 ## Implementation phases
 
 ### Phase 1 — Rules + types
+
 1. Add all 24 topics to `GrammarTopic` in `src/lib/types.ts`.
 2. Add all 24 `GrammarRule` entries to `src/lib/grammar/rules.ts` (drafted above).
 
-### Phase 1.5 — Multiple-choice schema (blocks the three `uttrykk-gjenkjenning-c-*` topics only)
-Add `type: 'multiple-choice'` with an `options: string[]` field (3 options) to `GrammarQuestion`,
-update `session.ts` grading logic and the question-rendering UI. Small, contained change —
-everything else in this plan uses the existing types and doesn't depend on this phase.
+### Phase 1.5 — Multiple-choice schema (blocks the three `uttrykk-gjenkjenning-c-*` topics only) — done
+
+Added `type: 'multiple-choice'` with an `options: string[]` field (exactly 3 options) to
+`GrammarQuestion` (`src/lib/types.ts`). `gradeGrammarAnswer` needed no logic changes — it already
+grades generically against `answer`/`alternates`, so `answer` must equal one of the `options`
+strings verbatim (enforced in `validateQuestion`). Added `MultipleChoiceQuestion.svelte`, wired
+it into `GrammarSession.svelte`, and extended `GrammarSummary.svelte`'s `stimulus()` for the new
+type (`AnswerReveal.svelte` needed no change — its non-minimal-pair branch already renders
+`question.answer`). Extended the admin editor (`questionUtils.ts` validation + `+page.svelte`
+form) so multiple-choice questions can be authored through the same tool. Added the
+`grammar_multiple_choice_prompt` message key across all 5 locales. Test coverage added in
+`session.test.ts` and `questionUtils.test.ts`.
+
+**Note:** the admin `+page.svelte` `TOPICS` constant still doesn't list any of the 24 new Nivå C
+topics (a pre-existing gap from Phase 1, not specific to multiple-choice) — it'll need updating
+before any Phase 2 content, including the idiom-recognition topics, can be authored through the
+admin UI.
 
 ### Phase 2 — Content, built in alphabetical order by topic
+
 The thematic groupings above are for organizing the rule text and cross-referencing source
 items; the actual build order is simply alphabetical by topic name, so there's no implicit
 priority to debate:
@@ -605,17 +620,20 @@ priority to debate:
 24. `verbform-i-kontekst` — source verbs from `draft/c/grammar/25-39-verb.md` items 25–27
 
 ### Phase 3 — Vocab verification
+
 Build and run `scripts/check-c-grammar-vocab.mjs` after each topic in Phase 2, not just at the
 end, so problems surface early rather than in one large review pass.
 
 ### Phase 4 — Gating + wiring
+
 Locate current Plus-gating mechanism, add all 24 topics as Plus-only. Confirm `/grammar` and
 `/grammar/[topic]` pick up new topics with no route changes (should hold, per Phase 2 precedent).
 
 ### Deferred — items 64–82 as a passage/cloze feature
-The *format* (long multi-blank cloze passages) stays a separate future feature: build wholly
+
+The _format_ (long multi-blank cloze passages) stays a separate future feature: build wholly
 original short texts (not adapted from the narrative excerpts in the textbook), needing its own
-schema and UI work. The *content* (vocab/grammar pairings) isn't deferred — see the mining note
+schema and UI work. The _content_ (vocab/grammar pairings) isn't deferred — see the mining note
 under Content plan above.
 
 ---
@@ -643,7 +661,7 @@ under Content plan above.
 ## Open questions (resolved)
 
 - Once the `uttrykk-c.json` matching script runs for the three idiom parts, if a substantial
-  number of textbook idioms *aren't* in `uttrykk-c.json` yet, is it worth adding some of them to
+  number of textbook idioms _aren't_ in `uttrykk-c.json` yet, is it worth adding some of them to
   `uttrykk-c.json` itself before writing questions, so vocab and grammar content stay in sync?
 
   **Resolved:** yes. The overlap check confirmed only ~20 of 381 `uttrykk-c.json` entries match

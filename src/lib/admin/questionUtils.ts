@@ -52,6 +52,13 @@ export function validateQuestion(q: Partial<GrammarQuestion>): string[] {
   if (q.type === 'minimal-pair' && (!q.optionA || !q.optionB)) {
     errors.push('optionA and optionB are required for minimal-pair');
   }
+  if (q.type === 'multiple-choice') {
+    if (!q.options || q.options.length !== 3) {
+      errors.push('options must have exactly 3 entries for multiple-choice');
+    } else if (!q.options.includes(q.answer ?? '')) {
+      errors.push('answer must exactly match one of the options for multiple-choice');
+    }
+  }
   return errors;
 }
 

@@ -14,6 +14,7 @@
   import OrderQuestion from './OrderQuestion.svelte';
   import TransformQuestion from './TransformQuestion.svelte';
   import MinimalPairQuestion from './MinimalPairQuestion.svelte';
+  import MultipleChoiceQuestion from './MultipleChoiceQuestion.svelte';
   import AnswerReveal from './AnswerReveal.svelte';
   import GrammarSummary from './GrammarSummary.svelte';
 
@@ -150,6 +151,8 @@
         <OrderQuestion question={current} onsubmit={submit} />
       {:else if current.type === 'minimal-pair'}
         <MinimalPairQuestion question={current} onsubmit={submit} />
+      {:else if current.type === 'multiple-choice'}
+        <MultipleChoiceQuestion question={current} onsubmit={submit} />
       {:else}
         <TransformQuestion question={current} onsubmit={submit} />
       {/if}

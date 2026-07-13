@@ -60,6 +60,7 @@
   "grammar_order_prompt": "Type the sentence in the correct order",
   "grammar_order_words": "Words to use",
   "grammar_transform_prompt": "Rewrite the sentence",
+  "grammar_multiple_choice_prompt": "Which paraphrase means the same thing?",
   "grammar_input_placeholder": "Type your answer…",
   "grammar_check": "Check",
   "grammar_skip": "Skip",

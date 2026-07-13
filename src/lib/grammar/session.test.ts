@@ -122,6 +122,25 @@ describe('gradeGrammarAnswer', () => {
     });
     expect(gradeGrammarAnswer('Jeg forstår ikke det', q).correct).toBe(true);
   });
+
+  it('grades multiple-choice by matching the tapped option text against answer', () => {
+    const q = makeQuestion({
+      type: 'multiple-choice',
+      topic: 'uttrykk-gjenkjenning-c-1',
+      prompt: 'Hun har fått kalde føtter før brøllopet.',
+      options: [
+        'Hun nøler med å gifte seg.',
+        'Hun frøs på bryllupsdagen.',
+        'Hun gledet seg stort.'
+      ],
+      answer: 'Hun nøler med å gifte seg.'
+    });
+    expect(gradeGrammarAnswer('Hun nøler med å gifte seg.', q)).toEqual({
+      correct: true,
+      rating: 'good'
+    });
+    expect(gradeGrammarAnswer('Hun frøs på bryllupsdagen.', q).correct).toBe(false);
+  });
 });
 
 // ── buildGrammarSession ───────────────────────────────────────────────────────

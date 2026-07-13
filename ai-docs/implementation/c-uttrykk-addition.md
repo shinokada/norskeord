@@ -28,18 +28,18 @@ flagged in `c-uttrykk-missing-candidates-readme.json`: **not every candidate is 
 idiom.** The 264 entries are a mix of:
 
 1. **Genuine fixed idioms with no single grammatical head** — the clear `uttrykk` case per
-   `data-rules/vocab-and-uttrykk.md`: *ulv i fåreklær*, *grevens tid*, *som hund og katt*, *katta i
-   sekken*, *gå på skinner*, *smi mens jernet er varmt*, *bite i det sure eplet*, *sette kronen på
-   verket*, *danse etter noens pipe*, *falle i god jord*, etc.
-2. **Proverbs** — also squarely `uttrykk` per the data rules ("...and all proverbs"): *eplet
-   faller ikke langt fra stammen*, *som man reder, ligger man*, *brent barn skyr ilden*, *egget vil
-   lære høna å verpe*.
+   `data-rules/vocab-and-uttrykk.md`: _ulv i fåreklær_, _grevens tid_, _som hund og katt_, _katta i
+   sekken_, _gå på skinner_, _smi mens jernet er varmt_, _bite i det sure eplet_, _sette kronen på
+   verket_, _danse etter noens pipe_, _falle i god jord_, etc.
+2. **Proverbs** — also squarely `uttrykk` per the data rules ("...and all proverbs"): _eplet
+   faller ikke langt fra stammen_, _som man reder, ligger man_, _brent barn skyr ilden_, _egget vil
+   lære høna å verpe_.
 3. **Ordinary single-word or lightly-idiomatic synonym tests** — the textbook is testing vocabulary
-   comprehension, not always fixed chunks: *"Lysene funkler" → "Lysene blinker"*, *"Han er døsig" →
-   "Han halvsover"*. These don't pass the lexical-unit-head test as multi-word `uttrykk` — most are
+   comprehension, not always fixed chunks: _"Lysene funkler" → "Lysene blinker"_, _"Han er døsig" →
+   "Han halvsover"_. These don't pass the lexical-unit-head test as multi-word `uttrykk` — most are
    either already-covered single-word `vocab` items or not worth a card at all.
 4. **Particle/reflexive verb idioms that are arguably productive `vocab`, not `uttrykk`** — e.g.
-   *å dra på årene* (to age), *å dra kjensel på* (to recognize), *å komme seg* (to recover) have a
+   _å dra på årene_ (to age), _å dra kjensel på_ (to recognize), _å komme seg_ (to recover) have a
    clear verb head and inflect normally, so per the decision rule in `data-rules/vocab-and-uttrykk.md`
    these lean `vocab` (multi-word verb, part: `verb`), not `uttrykk`.
 
@@ -55,7 +55,7 @@ Go through all 264 candidates and assign each one a bucket:
   normally; belongs in `vocab-c.json` with `part: verb` (or whatever head part applies), not
   `uttrykk-c.json`.
 - **`skip`** — a plain synonym-substitution test with no fixed-chunk or dictionary-headword value
-  of its own (e.g. *funkle → blinke*, *døsig → halvsove*); not worth a card in either file. Also
+  of its own (e.g. _funkle → blinke_, _døsig → halvsove_); not worth a card in either file. Also
   skip anything whose Norwegian meaning can't be pinned down confidently from `sentence` +
   `correct_paraphrase` alone (the two `null`-paraphrase entries, and any borderline case) —
   cross-check `draft/c/grammar/answers.md` directly rather than guessing.
@@ -67,7 +67,7 @@ case by case, not a heuristic.
 
 Output: `ai-docs/implementation/c-uttrykk-triage.json`, same shape as the candidates file plus a
 `bucket: "uttrykk" | "vocab" | "skip"` field and a `canonical_lemma` field (the dictionary/citation
-form to use as `lemma`, e.g. sentence *"Han har fått kalde føtter"* → canonical lemma `få kalde
+form to use as `lemma`, e.g. sentence _"Han har fått kalde føtter"_ → canonical lemma `få kalde
 føtter`).
 
 Expect roughly (rough estimate, confirm during the actual pass): ~120–150 → `uttrykk`,
@@ -77,7 +77,7 @@ Expect roughly (rough estimate, confirm during the actual pass): ~120–150 → 
 
 Before drafting full entries, re-check each `canonical_lemma` in the `uttrykk` bucket against
 **all** `uttrykk-{a1,a2,b1,b2,c}.json` files, not just `uttrykk-c.json` — some of these idioms
-(*som hund og katt*, *ta hånd om*) are common enough that they might already exist at a lower
+(_som hund og katt_, _ta hånd om_) are common enough that they might already exist at a lower
 level. Reuse the matching approach from `scripts/dedup-cross-file.mjs` rather than writing new
 matching logic. Anything already present at another level gets dropped from this batch (or, if it
 genuinely belongs at C and only exists elsewhere by mistake, flagged for a separate level-fix
@@ -111,7 +111,7 @@ Two adjustments needed versus a straight `enrich-vocab.mjs --level c` run:
    `extracted-uttrykk-c.json`.
 2. Feed the textbook's own `sentence` (from the original candidate) to the model as inspiration
    only, never copied verbatim, for the `example` field — the existing `enrich-vocab.mjs` prompt
-   already writes a fresh Norwegian example when none is supplied, so simplest path is to *not*
+   already writes a fresh Norwegian example when none is supplied, so simplest path is to _not_
    pass through the textbook sentence as a pre-filled `example` and let the model write an
    original one, consistent with the copyright approach already used in `c-grammar.md` ("every
    question is newly written... never copying or closely paraphrasing").
@@ -127,11 +127,11 @@ so no change needed there.
 2. `scripts/find-diacritic-issues.mjs` / `find-diacritic-issues-de-es.mjs` — this pipeline has
    already surfaced NO/DE/ES diacritic bugs in prior sessions, so don't skip this even though
    `enrich-vocab.mjs`'s `correctGeneratedItem` auto-fixer catches the mechanical cases. **Result:
-   1 false-positive flag** (`u-c-419`, German `nahe` from *nahegehen* — correct separable-verb
+   1 false-positive flag** (`u-c-419`, German `nahe` from _nahegehen_ — correct separable-verb
    particle, not degraded `Nähe`; left as-is). Everything else was expected noise (Spanish
    que/como/cuando, German schon/wurde/konnte).
 3. `scripts/dedup-within-file.mjs` on the batch itself (idiom sub-lists sometimes restate the same
-   expression under a different item, e.g. *gå på skinner* appears at both item 85/sub 1 and item
+   expression under a different item, e.g. _gå på skinner_ appears at both item 85/sub 1 and item
    98/sub 18). **Result: 0 duplicate `norsk`/`lemma` values.**
 4. Manual spot-check of `example` sentences against `definition`-equivalent meaning, since
    idiom-level entries are easier to get subtly wrong than single words. **Result: full 178-entry
@@ -149,6 +149,7 @@ alone. This required the same full-file cross-check as point 4 above, since roug
 meanings caught above.
 
 Working files as of Phase 5 completion (in `draft/c/vocab-uttrykk/`):
+
 - `uttrykk-c-idiom-batch-enriched.json` — canonical, 178 entries, `definition` field added, 5
   corrected meanings. This is the file that fed Phase 6.
 - `uttrykk-c-idiom-batch-enriched-old.json` — superseded pre-`definition`, pre-correction version,
@@ -176,8 +177,8 @@ safety net:
 
 ## The `vocab` bucket (Phase 1 spillover)
 
-Candidates triaged as `vocab` in Phase 1 (particle/reflexive verbs like *dra på årene*, *dra
-kjensel på*, *komme seg*) follow the same Phases 3–6 shape but target `vocab-c.json` instead, with
+Candidates triaged as `vocab` in Phase 1 (particle/reflexive verbs like _dra på årene_, _dra
+kjensel på_, _komme seg_) follow the same Phases 3–6 shape but target `vocab-c.json` instead, with
 `part: "verb"` and a real `category` from the C-level `CATEGORIES_BY_LEVEL` list (most likely
 `character-temperament`, `embodied-emotion`, or `manner-of-motion` given the content) rather than
 `category: "uttrykk"`. This is a smaller, secondary batch — worth doing in the same pass since the
