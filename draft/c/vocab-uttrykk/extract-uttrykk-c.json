@@ -1,0 +1,1775 @@
+[
+ {
+  "id": "",
+  "norsk": "å stå for døra",
+  "lemma": "stå for døra",
+  "definition": "Etter lang tids venting er det jul.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å holde hjulene i gang",
+  "lemma": "holde hjulene i gang",
+  "definition": "Vi må holde bedriftens virksomhet oppe.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke det minste",
+  "lemma": "ikke det minste",
+  "definition": "Moren er absolutt ikke trist.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være som blåst bort",
+  "lemma": "være som blåst bort",
+  "definition": "Verkende skuldre har blitt glemt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å strekke seg så lang man er",
+  "lemma": "strekke seg så lang man er",
+  "definition": "Han strekker seg i sin fulle lengde.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "dypest sett",
+  "lemma": "dypest sett",
+  "definition": "Overraskelser er noe han innerst inne ikke liker.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "på gløtt",
+  "lemma": "på gløtt",
+  "definition": "Karsten står med døra litt åpen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme i tak",
+  "lemma": "komme i tak",
+  "definition": "Smertene kommer i bølger.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme for en dag",
+  "lemma": "komme for en dag",
+  "definition": "Snart vil alt bli avslørt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme her og komme her",
+  "lemma": "komme her og komme her",
+  "definition": "Du må ikke tro at du bare kan komme og ta over.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme godt ut av det med noen",
+  "lemma": "komme godt ut av det med noen",
+  "definition": "De er ikke venner lenger.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme seg til å",
+  "lemma": "komme seg til å",
+  "definition": "Hun fikk seg ikke til å si det hun egentlig tenkte.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme til",
+  "lemma": "komme til",
+  "definition": "Jeg slipper ikke til.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme godt med",
+  "lemma": "komme godt med",
+  "definition": "En sovepose er nyttig å ha.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme ut av det",
+  "lemma": "komme ut av det",
+  "definition": "Nå mistet jeg tråden!",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå fra vettet",
+  "lemma": "gå fra vettet",
+  "definition": "Har du gått fra konseptene?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det går kaldt nedover ryggen på en",
+  "lemma": "det går kaldt nedover ryggen på en",
+  "definition": "Jeg gyste.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå på skinner",
+  "lemma": "gå på skinner",
+  "definition": "Nå går alt slik det skal.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå som smurt",
+  "lemma": "gå som smurt",
+  "definition": "Alt gikk etter planen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "hjulene går rundt",
+  "lemma": "hjulene går rundt",
+  "definition": "Ingenting fungerer lenger.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå av stabelen",
+  "lemma": "gå av stabelen",
+  "definition": "Konserten fant sted i fjor sommer.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå så det suser",
+  "lemma": "gå så det suser",
+  "definition": "Dette går fint.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå den veien høna sparker",
+  "lemma": "gå den veien høna sparker",
+  "definition": "Dette går rakt ut i elendigheten.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå til verket",
+  "lemma": "gå til verket",
+  "definition": "Skal vi begynne?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå rett hjem hos noen",
+  "lemma": "gå rett hjem hos noen",
+  "definition": "Programmet vant bifall hos mine naboer.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "en rød tråd",
+  "lemma": "en rød tråd",
+  "definition": "Det finnes en sammenheng i boka.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gjøre knefall for noen",
+  "lemma": "gjøre knefall for noen",
+  "definition": "Han fridde til henne.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "nesegrus beundring",
+  "lemma": "nesegrus beundring",
+  "definition": "Hun føler en sterk beundring for ham.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gi en pekepinn om noe",
+  "lemma": "gi en pekepinn om noe",
+  "definition": "Drømmen skulle antyde hvem man skulle gifte seg med.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta grep",
+  "lemma": "ta grep",
+  "definition": "De måtte gjøre noe.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å se tiden an",
+  "lemma": "se tiden an",
+  "definition": "Nå må vi bruke tiden og se hva som skjer.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gjøre store øyne",
+  "lemma": "gjøre store øyne",
+  "definition": "De ble overrasket da rektoren plutselig stod i stua.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gjøre en dårlig figur",
+  "lemma": "gjøre en dårlig figur",
+  "definition": "Statsministeren ga et negativt inntrykk på møtet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det er om å gjøre",
+  "lemma": "det er om å gjøre",
+  "definition": "Det er viktig at du tar den eksamenen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å la gå",
+  "lemma": "la gå",
+  "definition": "Jeg tillater det.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å vippe noen av pinnen",
+  "lemma": "vippe noen av pinnen",
+  "definition": "Ikke la deg sette ut av spill.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta noen for gitt",
+  "lemma": "ta noen for gitt",
+  "definition": "Ikke ta henne som en selvfølge.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta hånd om",
+  "lemma": "ta hånd om",
+  "definition": "Et hjem for foreldreløse barn tok vare på jentene.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sette nesa mot et sted",
+  "lemma": "sette nesa mot et sted",
+  "definition": "De dro etter hvert til Norge.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå noen på nervene",
+  "lemma": "gå noen på nervene",
+  "definition": "Dette plager ham sterkt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å få kalde føtter",
+  "lemma": "få kalde føtter",
+  "definition": "Hun angrer.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bli varm i trøya",
+  "lemma": "bli varm i trøya",
+  "definition": "Nå begynner jeg å bli vant til dette.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme som julekvelden på kjerringa",
+  "lemma": "komme som julekvelden på kjerringa",
+  "definition": "Arrestasjonen kom som lyn fra klar himmel.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å selge skinnet før bjørnen er skutt",
+  "lemma": "selge skinnet før bjørnen er skutt",
+  "definition": "Du bør ikke love mer enn du kan holde.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å kaste perler for svin",
+  "lemma": "kaste perler for svin",
+  "definition": "De vet ikke å verdsette alt du gir til dem.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å dra til sjøs",
+  "lemma": "dra til sjøs",
+  "definition": "Han tok hyre på en båt da han var seksten år.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "en dråpe i havet",
+  "lemma": "en dråpe i havet",
+  "definition": "Det de gjør, betyr ikke noe særlig i den store sammenhengen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke ha en sjanse i havet",
+  "lemma": "ikke ha en sjanse i havet",
+  "definition": "Du har ikke nubbesjanse.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det har rent mye vann i havet",
+  "lemma": "det har rent mye vann i havet",
+  "definition": "Det har gått lang tid siden sist vi møttes.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "som hund og katt",
+  "lemma": "som hund og katt",
+  "definition": "De to ryker i tottene på hverandre stadig vekk.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å skue hunden på hårene",
+  "lemma": "skue hunden på hårene",
+  "definition": "Du skal ikke dømme andre bare ved å se på dem.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå over bekken etter vann",
+  "lemma": "gå over bekken etter vann",
+  "definition": "Noen har en tendens til å løse et problem på en unødig tungvint måte.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å kjøpe katta i sekken",
+  "lemma": "kjøpe katta i sekken",
+  "definition": "Nå har jeg blitt tatt ved nesa!",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å slippe katta ut av sekken",
+  "lemma": "slippe katta ut av sekken",
+  "definition": "Ministeren har for alvor lettet på sløret.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gi en god dag i noe",
+  "lemma": "gi en god dag i noe",
+  "definition": "Det er meg likegyldig om hun kommer.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta noe på sparket",
+  "lemma": "ta noe på sparket",
+  "definition": "Han likte å gjøre ting uten betenkningstid.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å smi mens jernet er varmt",
+  "lemma": "smi mens jernet er varmt",
+  "definition": "Her gjelder det å være rådsnar.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å stikke noe under stol",
+  "lemma": "stikke noe under stol",
+  "definition": "Det var tydelig at kommunen forsøkte å fortie noe.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå i vasken",
+  "lemma": "gå i vasken",
+  "definition": "Alt ble spolert.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å føle noen på tennene",
+  "lemma": "føle noen på tennene",
+  "definition": "De målte hverandre.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å vise tenner",
+  "lemma": "vise tenner",
+  "definition": "I går var det mange som viste sinne og tok igjen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gjøre sine hoser grønne",
+  "lemma": "gjøre sine hoser grønne",
+  "definition": "Han innsmigrer seg.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å leve på stor fot",
+  "lemma": "leve på stor fot",
+  "definition": "Her er det overflod og luksus.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "med kaldt blod",
+  "lemma": "med kaldt blod",
+  "definition": "De utførte ugjerningen uten omsyn til noe eller noen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å stå på god fot med noen",
+  "lemma": "stå på god fot med noen",
+  "definition": "De to har lenge hatt et greit forhold til hverandre.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å trekke i trådene",
+  "lemma": "trekke i trådene",
+  "definition": "Hun elsker å være litt manipulerende.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "som kjerringa mot strømmen",
+  "lemma": "som kjerringa mot strømmen",
+  "definition": "Hun er egensindig.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å henge i en tynn tråd",
+  "lemma": "henge i en tynn tråd",
+  "definition": "Nå står han i fare for å bli arbeidsledig.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta opp tråden",
+  "lemma": "ta opp tråden",
+  "definition": "Kan vi gå videre med samtalen vår nå?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være lett på tråden",
+  "lemma": "være lett på tråden",
+  "definition": "Hun er ofte sammen med menn.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å danse etter noens pipe",
+  "lemma": "danse etter noens pipe",
+  "definition": "Jeg vil ikke adlyde andres ordre.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sette sitt lys under en skjeppe",
+  "lemma": "sette sitt lys under en skjeppe",
+  "definition": "Han var falsk beskjeden.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være en hund etter noe",
+  "lemma": "være en hund etter noe",
+  "definition": "Hun elsker blåbær.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "krake søker make",
+  "lemma": "krake søker make",
+  "definition": "Det stod i annonsen at en person ønsket å finne seg en likesinnet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "som man reder, ligger man",
+  "lemma": "som man reder, ligger man",
+  "definition": "Man høster det man sår.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå i hundene",
+  "lemma": "gå i hundene",
+  "definition": "Han hadde forkommet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke eie nåla i veggen",
+  "lemma": "ikke eie nåla i veggen",
+  "definition": "Hun er blakk – og vel så det.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å lete etter nåla i høystakken",
+  "lemma": "lete etter nåla i høystakken",
+  "definition": "Det å finne øreproppen føltes umulig.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gi katten i noe",
+  "lemma": "gi katten i noe",
+  "definition": "Det liker jeg ikke!",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å legge seg i selen",
+  "lemma": "legge seg i selen",
+  "definition": "De strever for å klare det.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være mellom barken og veden",
+  "lemma": "være mellom barken og veden",
+  "definition": "Hun følte seg presset fra ulike hold.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta noen på kornet",
+  "lemma": "ta noen på kornet",
+  "definition": "Komikeren traff spikeren på hodet når det gjaldt kongen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å kaste blår i øynene på noen",
+  "lemma": "kaste blår i øynene på noen",
+  "definition": "De lurte henne trill rundt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta noe på strak arm",
+  "lemma": "ta noe på strak arm",
+  "definition": "Han gjorde det uten å nøle.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "på stående fot",
+  "lemma": "på stående fot",
+  "definition": "Jeg klarer ikke å svare her og nå.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å la humla suse",
+  "lemma": "la humla suse",
+  "definition": "Å nyte livet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ha kort lunte",
+  "lemma": "ha kort lunte",
+  "definition": "Å være snarsint.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "rive i en drink",
+  "lemma": "rive i en drink",
+  "definition": "Å spandere en drink.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "mele sin egen kake",
+  "lemma": "mele sin egen kake",
+  "definition": "Å sørge for at man selv får fordeler.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gi noen på båten",
+  "lemma": "gi noen på båten",
+  "definition": "Å la noen fare.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å male fanden på veggen",
+  "lemma": "male fanden på veggen",
+  "definition": "Å framstille noe som verre enn det er.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å lukte lunta",
+  "lemma": "lukte lunta",
+  "definition": "Å ane at noe er galt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta noe med en klype salt",
+  "lemma": "ta noe med en klype salt",
+  "definition": "Å ikke tro helt på alt som sies eller skrives.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sitte med skjegget i postkassa",
+  "lemma": "sitte med skjegget i postkassa",
+  "definition": "Å bli lurt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være fyr og flamme",
+  "lemma": "være fyr og flamme",
+  "definition": "Å være ivrig.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å stå på pinne for noen",
+  "lemma": "stå på pinne for noen",
+  "definition": "Å jobbe hardt for noen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sluke kameler",
+  "lemma": "sluke kameler",
+  "definition": "Å godta noe en egentlig ikke vil godta – for å oppnå noe annet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå rundt grøten",
+  "lemma": "gå rundt grøten",
+  "definition": "Å ikke klare å komme til poenget.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gråte krokodilletårer",
+  "lemma": "gråte krokodilletårer",
+  "definition": "Å hykle for å få trøst fra andre.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sette kronen på verket",
+  "lemma": "sette kronen på verket",
+  "definition": "Å sette prikken over i-en.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å lese noen teksten",
+  "lemma": "lese noen teksten",
+  "definition": "Å kjefte på noen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å tråkke i salaten",
+  "lemma": "tråkke i salaten",
+  "definition": "Å tabbe seg ut.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å pakke snippesken",
+  "lemma": "pakke snippesken",
+  "definition": "Å dra sin kos.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å hoppe etter Wirkola",
+  "lemma": "hoppe etter Wirkola",
+  "definition": "Å følge etter en usedvanlig begavet forgjenger.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være på en snei",
+  "lemma": "være på en snei",
+  "definition": "Å være litt beruset.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "under fire øyne",
+  "lemma": "under fire øyne",
+  "definition": "Nå må vi ha en samtale alene.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å få noen opp i halsen",
+  "lemma": "få noen opp i halsen",
+  "definition": "Han er lut lei av læreren sin.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "hals over hode",
+  "lemma": "hals over hode",
+  "definition": "De dro hodekulls til Sverige.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være noe på sin hals",
+  "lemma": "være noe på sin hals",
+  "definition": "Kvinnen er lidenskapelig opptatt av sin forskning.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "kors på halsen",
+  "lemma": "kors på halsen",
+  "definition": "Jeg lover!",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sette latteren i halsen",
+  "lemma": "sette latteren i halsen",
+  "definition": "Guttene lo ikke mer da de hørte det knirke i døra.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å få hjertet i halsen",
+  "lemma": "få hjertet i halsen",
+  "definition": "Damen fikk hjertebank da hun hørte noen tasse i gangen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta beina på nakken",
+  "lemma": "ta beina på nakken",
+  "definition": "Tyvene beinfløy av gårde.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ta seg i nakken",
+  "lemma": "ta seg i nakken",
+  "definition": "Nå må du ta deg sammen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å få noen på nakken",
+  "lemma": "få noen på nakken",
+  "definition": "Nå blir han forfulgt av politiet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "storm i et vannglass",
+  "lemma": "storm i et vannglass",
+  "definition": "Hun gjør ofte mye ut av ingenting.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å se rødt",
+  "lemma": "se rødt",
+  "definition": "Nå er de rasende.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "brent barn skyr ilden",
+  "lemma": "brent barn skyr ilden",
+  "definition": "En som har skadet seg tidligere, har fått seg en lærepenge.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "egget vil lære høna å verpe",
+  "lemma": "egget vil lære høna å verpe",
+  "definition": "Den uerfarne vil belære den som kan noe.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være en saga blott",
+  "lemma": "være en saga blott",
+  "definition": "Det er en glemt historie.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "eplet faller ikke langt fra stammen",
+  "lemma": "eplet faller ikke langt fra stammen",
+  "definition": "Som far, så sønn.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det får stå sin prøve",
+  "lemma": "det får stå sin prøve",
+  "definition": "Det går slik det vil.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det er ugler i mosen",
+  "lemma": "det er ugler i mosen",
+  "definition": "Her er det noe som skurrer.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det blir sus i serken",
+  "lemma": "det blir sus i serken",
+  "definition": "Nå blir det liv.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gjøre susen",
+  "lemma": "gjøre susen",
+  "definition": "Denne medisinen kan være det som skal til.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bite på kroken",
+  "lemma": "bite på kroken",
+  "definition": "Han blir ofte lurt trill rundt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det sorte får",
+  "lemma": "det sorte får",
+  "definition": "Han er det familiemedlemmet som bringer skam over familien.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "hastverk er lastverk",
+  "lemma": "hastverk er lastverk",
+  "definition": "Det som gjøres i full fart, utføres ofte ikke på den beste måten.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å begrave stridsøksa",
+  "lemma": "begrave stridsøksa",
+  "definition": "Nå vil de slutte fred.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å falle mellom to stoler",
+  "lemma": "falle mellom to stoler",
+  "definition": "Hun passer ikke inn noen steder.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "saken er biff",
+  "lemma": "saken er biff",
+  "definition": "Situasjonen er i orden.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å feie for egen dør",
+  "lemma": "feie for egen dør",
+  "definition": "Du får ta hånd om dine egne problemer først.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å føre noen bak lyset",
+  "lemma": "føre noen bak lyset",
+  "definition": "Han har blitt narret.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å få bakoversveis",
+  "lemma": "få bakoversveis",
+  "definition": "Jeg ble forbauset i går.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å feie noe under teppet",
+  "lemma": "feie noe under teppet",
+  "definition": "Hvorfor skjuler du ting?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å få hatten passet",
+  "lemma": "få hatten passet",
+  "definition": "Hun fikk kjeft.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke være tapt bak ei vogn",
+  "lemma": "ikke være tapt bak ei vogn",
+  "definition": "Hun er rådsnar når det oppstår utfordringer.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke ha rent mel i posen",
+  "lemma": "ikke ha rent mel i posen",
+  "definition": "Bakeren har noe å skjule.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "det skinner gjennom",
+  "lemma": "det skinner gjennom",
+  "definition": "Man kan ane at hun er bitter.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bite i gresset",
+  "lemma": "bite i gresset",
+  "definition": "Fjorårets vinner måtte se seg slått i årets konkurranse.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bite seg merke i noe",
+  "lemma": "bite seg merke i noe",
+  "definition": "Hun la merke til at noe var annerledes.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bite ordene i seg",
+  "lemma": "bite ordene i seg",
+  "definition": "Hun holdt tilbake ordene.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å drives fra skanse til skanse",
+  "lemma": "drives fra skanse til skanse",
+  "definition": "De måtte stadig gi seg.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bøye seg i støvet",
+  "lemma": "bøye seg i støvet",
+  "definition": "Ydmykt aksepterte hun sjefens avgjørelse.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke være født i går",
+  "lemma": "ikke være født i går",
+  "definition": "Min bror er slettes ikke dum.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gi seg ende over",
+  "lemma": "gi seg ende over",
+  "definition": "Jeg gir opp.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gi noen inn",
+  "lemma": "gi noen inn",
+  "definition": "Han dengte løs på henne i går kveld.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå berserk",
+  "lemma": "gå berserk",
+  "definition": "Fansen ble helt ustyrlige.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å måle noen med øynene",
+  "lemma": "måle noen med øynene",
+  "definition": "Han så kritisk på henne.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å brenne inne med noe",
+  "lemma": "brenne inne med noe",
+  "definition": "Han fikk ikke sagt alt han ville si.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å veie sine ord",
+  "lemma": "veie sine ord",
+  "definition": "Nå gjelder det å holde tunga rett i munnen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å slå seg i lag med noen",
+  "lemma": "slå seg i lag med noen",
+  "definition": "Hvem har han blitt sammen med nå?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være med på laget",
+  "lemma": "være med på laget",
+  "definition": "Ofte føler jeg meg litt utenfor.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "en ulv i fåreklær",
+  "lemma": "en ulv i fåreklær",
+  "definition": "Han er en ondsinnet person som later som om han er god.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "i grevens tid",
+  "lemma": "i grevens tid",
+  "definition": "Han kom i rette øyeblikk.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "med glans",
+  "lemma": "med glans",
+  "definition": "Hun bestod prøven på ypperlig vis.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gi noen det glatte lag",
+  "lemma": "gi noen det glatte lag",
+  "definition": "De hudflettet ham.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gjøre noen til lags",
+  "lemma": "gjøre noen til lags",
+  "definition": "Jeg prøver å gjøre datteren min fornøyd.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå på limpinnen",
+  "lemma": "gå på limpinnen",
+  "definition": "Hun har latt seg lure.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå fem på",
+  "lemma": "gå fem på",
+  "definition": "De gikk rett i fella.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å stå ved lag",
+  "lemma": "stå ved lag",
+  "definition": "Står du fast på det du sa?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å spille på lag med noen",
+  "lemma": "spille på lag med noen",
+  "definition": "Jeg føler at du vil motarbeide meg.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bryte lag",
+  "lemma": "bryte lag",
+  "definition": "De har bestemt seg for å gjøre det slutt med hverandre.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å komme i lag",
+  "lemma": "komme i lag",
+  "definition": "Har de to blitt sammen?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å holde noe ved lag",
+  "lemma": "holde noe ved lag",
+  "definition": "Det er viktig å bevare de gamle trekirkene.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bite i det sure eplet",
+  "lemma": "bite i det sure eplet",
+  "definition": "Å finne seg i noe ubehagelig.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å skjære alle over én kam",
+  "lemma": "skjære alle over én kam",
+  "definition": "Å bedømme alle unyansert og sjablongmessig.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å slå seg på brystet",
+  "lemma": "slå seg på brystet",
+  "definition": "Å vise stolthet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sette foten ned",
+  "lemma": "sette foten ned",
+  "definition": "Nå vil jeg sette en stopper for dette.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å sitte med hendene i fanget",
+  "lemma": "sitte med hendene i fanget",
+  "definition": "Du kan ikke forholde deg uvirksom i denne saken.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å stikke nesa si i noe",
+  "lemma": "stikke nesa si i noe",
+  "definition": "Ikke bland deg inn i dette.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ha sommerfugler i magen",
+  "lemma": "ha sommerfugler i magen",
+  "definition": "Han kjente at det kriblet av spenning like før ringene skulle settes på.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke løfte en finger",
+  "lemma": "ikke løfte en finger",
+  "definition": "Jeg vil overhodet ikke gjøre noe mer for deg.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "ikke la seg be to ganger",
+  "lemma": "ikke la seg be to ganger",
+  "definition": "Det er lett å spørre meg om å gjøre noe.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å gå i forbønn for noen",
+  "lemma": "gå i forbønn for noen",
+  "definition": "De ber til Gud for henne.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å være bundet på hender og føtter",
+  "lemma": "være bundet på hender og føtter",
+  "definition": "Hun føler at hun ikke har noen mulighet til å styre ting selv.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "bordet fanger",
+  "lemma": "bordet fanger",
+  "definition": "En avtale eller et løfte er bindende straks det er inngått.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bite fra seg",
+  "lemma": "bite fra seg",
+  "definition": "Hun tok igjen.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å bli tatt på senga",
+  "lemma": "bli tatt på senga",
+  "definition": "I går ble jeg overrumplet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å få fyken",
+  "lemma": "få fyken",
+  "definition": "Å bli sagt opp eller sparket fra jobben sin.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å dra lasset",
+  "lemma": "dra lasset",
+  "definition": "Hun føler at det er hun som må bære de tyngste byrdene hele tiden.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å dra på det",
+  "lemma": "dra på det",
+  "definition": "Hun holdt litt igjen da hun ble bedt om å avgi forklaring.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å dra noe i tvil",
+  "lemma": "dra noe i tvil",
+  "definition": "Man følte skepsis mot det som ble sagt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å dra på det ene beinet",
+  "lemma": "dra på det ene beinet",
+  "definition": "Hun haltet på ett bein.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å dra lærdom av noe",
+  "lemma": "dra lærdom av noe",
+  "definition": "Er du klok av skade nå?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å drive dank",
+  "lemma": "drive dank",
+  "definition": "Nå har sønnen min tatt det kuli i et halvt år.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å drive gjøn med noen",
+  "lemma": "drive gjøn med noen",
+  "definition": "Hun følte at de fleipet med henne.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å drive det langt",
+  "lemma": "drive det langt",
+  "definition": "Datteren hans har nådd langt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å drive noen på flukt",
+  "lemma": "drive noen på flukt",
+  "definition": "Kvinner og barn ble jaget av gårde.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å drive noen til vanvidd",
+  "lemma": "drive noen til vanvidd",
+  "definition": "Hvorfor må du få meg til å klikke?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å drive det for langt",
+  "lemma": "drive det for langt",
+  "definition": "Hvorfor må den mannen alltid krysse grenser?",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å stå og falle med noe",
+  "lemma": "stå og falle med noe",
+  "definition": "Din stemme vil avgjøre alt.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å falle noen lang",
+  "lemma": "falle noen lang",
+  "definition": "Han følte at det varte og rakk hos svigermoren.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å falle i synd",
+  "lemma": "falle i synd",
+  "definition": "Hun sa han hadde syndet.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å falle til jorden",
+  "lemma": "falle til jorden",
+  "definition": "De gode forslagene ble avvist.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å falle i god jord",
+  "lemma": "falle i god jord",
+  "definition": "Ordene hans ble tatt godt imot.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å falle på steingrunn",
+  "lemma": "falle på steingrunn",
+  "definition": "Talen hennes fikk ikke gehør.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ }
+]

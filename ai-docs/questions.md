@@ -5,6 +5,58 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 I have data-rules/vocab-and-uttrykk.md for your information.
 
 ==========
+The following is from a previous session. Due to session limit, you didn't write the result. The git status shows ai-docs/implementation/c-uttrykk-triage.json is updated.
+
+Can you answer to my questions?
+
+
+ME: I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+
+I have data-rules/vocab-and-uttrykk.md for your information.
+I'd like to start Phase 1 in ai-docs/implementation/c-uttrykk-addition.md. Can you help?
+
+CLAUDE: Good, that file exists. Let me read it along with the answers.md reference file and check existing uttrykk-c.json for id conventions.Let me check the answers.md file to resolve the two null-paraphrase entries and check the existing uttrykk-c.json id range.Now I'll do the full manual triage pass across all 264 candidates and write the output file.Let me verify it's valid JSON and get bucket counts.Phase 1 triage is done. Written to `ai-docs/implementation/c-uttrykk-triage.json` — valid JSON, all 264 candidates accounted for.
+
+**Results:**
+- `uttrykk` → **206**
+- `vocab` → **28**
+- `skip` → **30**
+
+A few things worth flagging before you move to Phase 2:
+
+**My uttrykk count ran well above the doc's ~120–150 estimate.** Looking back at the source, items 93–103 are almost entirely genuine fixed idioms (this section of the textbook is literally an idiom drill, unlike 83–92 which mixes in a lot of plain synonym tests) — that's most of the extra volume. Worth a quick sanity skim on your end before Phase 2, since it's a bigger batch than planned.
+
+**Known duplicates I flagged inline (`note` field) for Phase 2/within-file dedup:**
+- `komme for en dag` (84.6 / 96.1)
+- `gå på skinner` (85.1 / 98.18)
+- `feie for egen dør` (98.10 / 99.6)
+- `bite i det sure eplet` (100.12 / 102.3)
+- `bite på kroken` (98.4 / 101.16)
+- `dra på årene` (90.6 / 102.15) — both landed in the `vocab` bucket
+- near-duplicates: `få/ha noen opp i halsen` (97.2 / 97.8)
+
+**Likely already in `uttrykk-c.json` at some level** (flagged per the doc's own background note) — check these first in Phase 2: `ta hånd om` (90.12), `som hund og katt` (93.13).
+
+**Two null-paraphrase entries:** 83/sub2 (`kilende følelse i magen`) → `skip`, couldn't confirm it's a fixed chunk. 102/sub20 (`dra dit pepperen gror`) → `uttrykk` despite the null paraphrase — it's an unambiguous, well-known idiom ("go to hell"/"get lost"), so I didn't need the answer key to confirm it. (Note: `answers.md` turned out to only contain multiple-choice letter keys for items 83–103, not paraphrase text, so it couldn't actually resolve either null case directly.)
+
+**Borderline calls worth a second look** (each has a `note` in the file explaining the reasoning): `komme settende` (84.3), `ha gjenklang` (86.9), and the `komme til å` (84.10) one I moved to `skip` since it's a productive grammar construction rather than a memorized chunk.
+
+Ready for Phase 2 (cross-file dedup against `uttrykk-{a1,a2,b1,b2,c}.json`) whenever you want to continue — just let me know.
+
+ME: What do you suggest about "My uttrykk count ran well above the doc's ~120–150 estimate."? My thought is that after deleting duplicates and due to other reasons, the number around 120 is ok for me.
+
+Can you remove the known duplicates?
+I also have scripts/find_dupes.py to find duplicates. Is there any way I can use a script to find out more duplicates? What do you think?
+
+Please delete "Two null-paraphrase entries:" entries.
+
+Please delete "Borderline calls worth a second look" entries.
+
+CLAUDE: Now let me write this back to the actual project file on your computer.
+
+==========
+I'm working on ai-docs/implementation/c-uttrykk-addition.md. When I did Phase 1, it took long time so I'm thinking to divide Phases to smaller tasks so that session limit cuts the work you are doing. What do you think?
+
 ==================
 
 
