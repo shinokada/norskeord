@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-10T21:27:59.288Z",
-  "grandTotal": 6751,
+  "generatedAt": "2026-07-13T18:32:31.947Z",
+  "grandTotal": 6929,
   "byLevel": {
     "A1": {
       "vocab": 463,
@@ -24,8 +24,8 @@
     },
     "C": {
       "vocab": 710,
-      "uttrykk": 381,
-      "total": 1091
+      "uttrykk": 559,
+      "total": 1269
     }
   }
 }

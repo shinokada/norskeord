@@ -1,9 +1,8 @@
 [
   {
+    "id": "u-c-396",
     "norsk": "å holde hjulene i gang",
     "lemma": "holde hjulene i gang",
-    "definition": "Vi må holde bedriftens virksomhet oppe.",
-    "id": "u-c-396",
     "english": "to keep the wheels turning",
     "ukrainian": "підтримувати справу на ходу",
     "spanish": "mantener la maquinaria en marcha",
@@ -18,10 +17,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-397",
     "norsk": "ikke det minste",
     "lemma": "ikke det minste",
-    "definition": "Moren er absolutt ikke trist.",
-    "id": "u-c-397",
     "english": "not in the least",
     "ukrainian": "анітрохи",
     "spanish": "ni lo más mínimo",
@@ -36,10 +34,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-398",
     "norsk": "å være som blåst bort",
     "lemma": "være som blåst bort",
-    "definition": "Verkende skuldre har blitt glemt.",
-    "id": "u-c-398",
     "english": "to be as if vanished into thin air",
     "ukrainian": "зникнути, наче вітром здуло",
     "spanish": "desaparecer como si el viento se lo hubiera llevado",
@@ -54,10 +51,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-399",
     "norsk": "å strekke seg så lang man er",
     "lemma": "strekke seg så lang man er",
-    "definition": "Han strekker seg i sin fulle lengde.",
-    "id": "u-c-399",
     "english": "to fall flat out / stretch out full length",
     "ukrainian": "розтягнутися на весь зріст (впасти)",
     "spanish": "caer cuan largo es uno",
@@ -72,10 +68,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-400",
     "norsk": "dypest sett",
     "lemma": "dypest sett",
-    "definition": "I bunn og grunn, om man ser bort fra overflaten.",
-    "id": "u-c-400",
     "english": "deep down / fundamentally",
     "ukrainian": "глибоко в душі",
     "spanish": "en el fondo",
@@ -90,10 +85,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-401",
     "norsk": "på gløtt",
     "lemma": "på gløtt",
-    "definition": "Karsten står med døra litt åpen.",
-    "id": "u-c-401",
     "english": "ajar (slightly open)",
     "ukrainian": "прочинені (напіввідчинені)",
     "spanish": "entreabierta",
@@ -108,28 +102,26 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-402",
     "norsk": "å komme i tak",
     "lemma": "komme i tak",
-    "definition": "Å opptre i bølger eller med jevne mellomrom (f.eks. om smerter).",
-    "id": "u-c-402",
-    "english": "to come in waves / occur in recurring spells (e.g. of pain)",
-    "ukrainian": "накочуватися хвилями (напр. про біль)",
-    "spanish": "venir en oleadas / presentarse a rachas (p. ej. un dolor)",
-    "german": "in Schüben auftreten / wellenartig kommen (z. B. Schmerzen)",
-    "example": "Smertene i ryggen hans kommer i tak, verre noen dager enn andre.",
-    "example_english": "The pain in his back comes in waves, worse on some days than others.",
-    "example_ukrainian": "Біль у нього в спині накочується хвилями, гірше в одні дні, ніж в інші.",
-    "example_spanish": "El dolor de espalda le viene en oleadas, peor unos días que otros.",
-    "example_german": "Die Rückenschmerzen kommen in Schüben, an manchen Tagen schlimmer als an anderen.",
+    "english": "to get a handle on something / get going",
+    "ukrainian": "зрушити справу з місця",
+    "spanish": "coger el ritmo con algo",
+    "german": "mit etwas in Gang kommen",
+    "example": "Det tok tid før vi kom i tak med det nye prosjektet.",
+    "example_english": "It took time before we got a handle on the new project.",
+    "example_ukrainian": "Знадобився час, перш ніж ми зрушили новий проєкт з місця.",
+    "example_spanish": "Nos costó tiempo coger el ritmo con el nuevo proyecto.",
+    "example_german": "Es dauerte, bis wir mit dem neuen Projekt in Gang kamen.",
     "level": "C",
     "category": "uttrykk",
     "part": "phrase"
   },
   {
+    "id": "u-c-403",
     "norsk": "å komme for en dag",
     "lemma": "komme for en dag",
-    "definition": "Snart vil alt bli avslørt.",
-    "id": "u-c-403",
     "english": "to come to light",
     "ukrainian": "вийти на світло (стати відомим)",
     "spanish": "salir a la luz",
@@ -144,10 +136,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-404",
     "norsk": "å komme her og komme her",
     "lemma": "komme her og komme her",
-    "definition": "Å tro at man bare kan komme og ta over uten videre.",
-    "id": "u-c-404",
     "english": "to have the nerve to just show up and act like that",
     "ukrainian": "мати нахабство отак прийти і поводитися",
     "spanish": "tener el descaro de venir aquí y comportarse así",
@@ -162,10 +153,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-405",
     "norsk": "å komme godt ut av det med noen",
     "lemma": "komme godt ut av det med noen",
-    "definition": "Å ha et godt forhold til noen; å være venner.",
-    "id": "u-c-405",
     "english": "to get along well with someone",
     "ukrainian": "добре ладнати з кимось",
     "spanish": "llevarse bien con alguien",
@@ -180,10 +170,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-406",
     "norsk": "å komme seg til å",
     "lemma": "komme seg til å",
-    "definition": "Å få seg til å gjøre eller si noe, særlig noe vanskelig.",
-    "id": "u-c-406",
     "english": "to get around to (doing something) / bring oneself to",
     "ukrainian": "нарешті зібратися щось зробити",
     "spanish": "llegar a decidirse a hacer algo",
@@ -198,10 +187,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-407",
     "norsk": "å komme til",
     "lemma": "komme til",
-    "definition": "Å slippe til; å få mulighet til å delta eller bli hørt.",
-    "id": "u-c-407",
     "english": "to be added / to come into play",
     "ukrainian": "додатися, приєднатися",
     "spanish": "añadirse / entrar en juego",
@@ -216,10 +204,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-408",
     "norsk": "å komme godt med",
     "lemma": "komme godt med",
-    "definition": "En sovepose er nyttig å ha.",
-    "id": "u-c-408",
     "english": "to come in handy",
     "ukrainian": "стати в пригоді",
     "spanish": "venir bien / ser útil",
@@ -234,10 +221,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-409",
     "norsk": "å komme ut av det",
     "lemma": "komme ut av det",
-    "definition": "Nå mistet jeg tråden!",
-    "id": "u-c-409",
     "english": "to manage / get by",
     "ukrainian": "якось давати собі раду",
     "spanish": "arreglárselas",
@@ -252,10 +238,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-410",
     "norsk": "å gå fra vettet",
     "lemma": "gå fra vettet",
-    "definition": "Har du gått fra konseptene?",
-    "id": "u-c-410",
     "english": "to go out of one's mind",
     "ukrainian": "збожеволіти",
     "spanish": "perder el juicio",
@@ -270,10 +255,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-411",
     "norsk": "det går kaldt nedover ryggen på en",
     "lemma": "det går kaldt nedover ryggen på en",
-    "definition": "Jeg gyste.",
-    "id": "u-c-411",
     "english": "a chill runs down one's spine",
     "ukrainian": "мороз йде поза шкірою",
     "spanish": "un escalofrío recorre la espalda",
@@ -288,10 +272,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-412",
     "norsk": "å gå på skinner",
     "lemma": "gå på skinner",
-    "definition": "Nå går alt slik det skal.",
-    "id": "u-c-412",
     "english": "to go smoothly / run like clockwork",
     "ukrainian": "йти як по маслу",
     "spanish": "ir sobre ruedas",
@@ -306,10 +289,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-413",
     "norsk": "å gå som smurt",
     "lemma": "gå som smurt",
-    "definition": "Alt gikk etter planen.",
-    "id": "u-c-413",
     "english": "to go smoothly / like clockwork",
     "ukrainian": "йти як по маслу",
     "spanish": "ir como la seda",
@@ -324,10 +306,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-414",
     "norsk": "hjulene går rundt",
     "lemma": "hjulene går rundt",
-    "definition": "Virksomheten går sin gang; alt fungerer som det skal.",
-    "id": "u-c-414",
     "english": "the wheels keep turning (business keeps running)",
     "ukrainian": "справи йдуть своїм ходом",
     "spanish": "la maquinaria sigue funcionando",
@@ -342,10 +323,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-415",
     "norsk": "å gå av stabelen",
     "lemma": "gå av stabelen",
-    "definition": "Konserten fant sted i fjor sommer.",
-    "id": "u-c-415",
     "english": "to take place / to be launched (of an event)",
     "ukrainian": "відбутися (про подію)",
     "spanish": "llevarse a cabo / celebrarse",
@@ -360,10 +340,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-416",
     "norsk": "å gå så det suser",
     "lemma": "gå så det suser",
-    "definition": "Dette går fint.",
-    "id": "u-c-416",
     "english": "to go at full speed / to fly along",
     "ukrainian": "мчати на всіх парах",
     "spanish": "ir a toda velocidad",
@@ -378,10 +357,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-417",
     "norsk": "å gå den veien høna sparker",
     "lemma": "gå den veien høna sparker",
-    "definition": "Dette går rakt ut i elendigheten.",
-    "id": "u-c-417",
     "english": "to go downhill / to go from bad to worse",
     "ukrainian": "котитися по похилій",
     "spanish": "ir cuesta abajo",
@@ -396,10 +374,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-418",
     "norsk": "å gå til verket",
     "lemma": "gå til verket",
-    "definition": "Skal vi begynne?",
-    "id": "u-c-418",
     "english": "to get down to work / set about the task",
     "ukrainian": "братися до справи",
     "spanish": "ponerse manos a la obra",
@@ -414,10 +391,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-419",
     "norsk": "å gå rett hjem hos noen",
     "lemma": "gå rett hjem hos noen",
-    "definition": "Programmet vant bifall hos mine naboer.",
-    "id": "u-c-419",
     "english": "to hit close to home for someone / to strike a chord",
     "ukrainian": "зачепити за живе",
     "spanish": "tocar la fibra sensible de alguien",
@@ -432,10 +408,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-420",
     "norsk": "en rød tråd",
     "lemma": "en rød tråd",
-    "definition": "Det finnes en sammenheng i boka.",
-    "id": "u-c-420",
     "english": "a common thread / a recurring theme",
     "ukrainian": "червона нитка (наскрізна тема)",
     "spanish": "un hilo conductor",
@@ -450,10 +425,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-421",
     "norsk": "å gjøre knefall for noen",
     "lemma": "gjøre knefall for noen",
-    "definition": "Han fridde til henne.",
-    "id": "u-c-421",
     "english": "to kowtow to someone / grovel before someone",
     "ukrainian": "плазувати перед кимось",
     "spanish": "postrarse ante alguien",
@@ -468,10 +442,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-422",
     "norsk": "nesegrus beundring",
     "lemma": "nesegrus beundring",
-    "definition": "Hun føler en sterk beundring for ham.",
-    "id": "u-c-422",
     "english": "prostrate / awestruck admiration",
     "ukrainian": "благоговійне захоплення",
     "spanish": "admiración rendida",
@@ -486,10 +459,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-423",
     "norsk": "å gi en pekepinn om noe",
     "lemma": "gi en pekepinn om noe",
-    "definition": "Drømmen skulle antyde hvem man skulle gifte seg med.",
-    "id": "u-c-423",
     "english": "to give a hint / an indication about something",
     "ukrainian": "дати натяк на щось",
     "spanish": "dar una pista sobre algo",
@@ -504,10 +476,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-424",
     "norsk": "å se tiden an",
     "lemma": "se tiden an",
-    "definition": "Nå må vi bruke tiden og se hva som skjer.",
-    "id": "u-c-424",
     "english": "to wait and see / bide one's time",
     "ukrainian": "почекати й подивитися",
     "spanish": "esperar a ver cómo se desarrollan las cosas",
@@ -522,10 +493,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-425",
     "norsk": "å gjøre store øyne",
     "lemma": "gjøre store øyne",
-    "definition": "De ble overrasket da rektoren plutselig stod i stua.",
-    "id": "u-c-425",
     "english": "to be wide-eyed with surprise",
     "ukrainian": "витріщити очі (від подиву)",
     "spanish": "poner ojos como platos",
@@ -540,10 +510,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-426",
     "norsk": "å gjøre en dårlig figur",
     "lemma": "gjøre en dårlig figur",
-    "definition": "Statsministeren ga et negativt inntrykk på møtet.",
-    "id": "u-c-426",
     "english": "to cut a poor figure / make a bad impression",
     "ukrainian": "справити погане враження",
     "spanish": "hacer un mal papel",
@@ -558,10 +527,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-427",
     "norsk": "det er om å gjøre",
     "lemma": "det er om å gjøre",
-    "definition": "Det er viktig at du tar den eksamenen.",
-    "id": "u-c-427",
     "english": "the important thing is to / it's crucial to",
     "ukrainian": "головне — це",
     "spanish": "lo importante es",
@@ -576,10 +544,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-428",
     "norsk": "å la gå",
     "lemma": "la gå",
-    "definition": "Jeg tillater det.",
-    "id": "u-c-428",
     "english": "to let (something) slide / let it be",
     "ukrainian": "залишити як є, не звертати уваги",
     "spanish": "dejarlo pasar",
@@ -594,10 +561,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-429",
     "norsk": "å vippe noen av pinnen",
     "lemma": "vippe noen av pinnen",
-    "definition": "Å kaste noen ut av balanse; å få noen ut av fatning.",
-    "id": "u-c-429",
     "english": "to knock someone off balance / throw someone off",
     "ukrainian": "вибити когось із колії",
     "spanish": "hacer perder el equilibrio a alguien",
@@ -612,10 +578,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-430",
     "norsk": "å ta noen for gitt",
     "lemma": "ta noen for gitt",
-    "definition": "Å behandle noen som en selvfølge, uten å verdsette dem.",
-    "id": "u-c-430",
     "english": "to take someone for granted",
     "ukrainian": "сприймати когось як належне",
     "spanish": "dar a alguien por sentado",
@@ -630,10 +595,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-431",
     "norsk": "å sette nesa mot et sted",
     "lemma": "sette nesa mot et sted",
-    "definition": "De dro etter hvert til Norge.",
-    "id": "u-c-431",
     "english": "to head straight for a place / set one's sights on a destination",
     "ukrainian": "взяти курс на якесь місце",
     "spanish": "poner rumbo a un lugar",
@@ -648,10 +612,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-432",
     "norsk": "å gå noen på nervene",
     "lemma": "gå noen på nervene",
-    "definition": "Dette plager ham sterkt.",
-    "id": "u-c-432",
     "english": "to get on someone's nerves",
     "ukrainian": "діяти комусь на нерви",
     "spanish": "poner los nervios de punta a alguien",
@@ -666,10 +629,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-433",
     "norsk": "å bli varm i trøya",
     "lemma": "bli varm i trøya",
-    "definition": "Nå begynner jeg å bli vant til dette.",
-    "id": "u-c-433",
     "english": "to warm up to a new role / grow comfortable and confident",
     "ukrainian": "освоїтися (у новій ролі)",
     "spanish": "coger confianza en el puesto",
@@ -684,10 +646,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-434",
     "norsk": "å komme som julekvelden på kjerringa",
     "lemma": "komme som julekvelden på kjerringa",
-    "definition": "Arrestasjonen kom som lyn fra klar himmel.",
-    "id": "u-c-434",
     "english": "to come as a complete surprise (out of the blue)",
     "ukrainian": "звалитися як сніг на голову",
     "spanish": "caer como llovido del cielo",
@@ -702,10 +663,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-435",
     "norsk": "å kaste perler for svin",
     "lemma": "kaste perler for svin",
-    "definition": "De vet ikke å verdsette alt du gir til dem.",
-    "id": "u-c-435",
     "english": "to cast pearls before swine",
     "ukrainian": "метати бісер перед свинями",
     "spanish": "echar perlas a los cerdos",
@@ -720,10 +680,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-436",
     "norsk": "å dra til sjøs",
     "lemma": "dra til sjøs",
-    "definition": "Han tok hyre på en båt da han var seksten år.",
-    "id": "u-c-436",
     "english": "to go to sea (become a sailor)",
     "ukrainian": "піти в моряки",
     "spanish": "hacerse a la mar",
@@ -738,10 +697,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-437",
     "norsk": "ikke ha en sjanse i havet",
     "lemma": "ikke ha en sjanse i havet",
-    "definition": "Du har ikke nubbesjanse.",
-    "id": "u-c-437",
     "english": "to not have a chance in hell",
     "ukrainian": "не мати жодного шансу",
     "spanish": "no tener ni la más mínima oportunidad",
@@ -756,10 +714,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-438",
     "norsk": "det har rent mye vann i havet",
     "lemma": "det har rent mye vann i havet",
-    "definition": "Det har gått lang tid siden sist vi møttes.",
-    "id": "u-c-438",
     "english": "a lot of water has flowed under the bridge (much time has passed)",
     "ukrainian": "багато води спливло",
     "spanish": "ha llovido mucho desde entonces",
@@ -774,10 +731,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-439",
     "norsk": "som hund og katt",
     "lemma": "som hund og katt",
-    "definition": "De to ryker i tottene på hverandre stadig vekk.",
-    "id": "u-c-439",
     "english": "like cat and dog (fighting constantly)",
     "ukrainian": "як кіт із собакою",
     "spanish": "como el perro y el gato",
@@ -792,10 +748,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-440",
     "norsk": "å skue hunden på hårene",
     "lemma": "skue hunden på hårene",
-    "definition": "Å dømme noen eller noe bare etter ytre inntrykk.",
-    "id": "u-c-440",
     "english": "to judge a dog by its coat (judge by appearances)",
     "ukrainian": "судити з зовнішнього вигляду",
     "spanish": "juzgar el libro por la portada",
@@ -810,10 +765,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-441",
     "norsk": "å gå over bekken etter vann",
     "lemma": "gå over bekken etter vann",
-    "definition": "Noen har en tendens til å løse et problem på en unødig tungvint måte.",
-    "id": "u-c-441",
     "english": "to go out of one's way for something readily at hand (make things unnecessarily complicated)",
     "ukrainian": "шукати далеко те, що поруч",
     "spanish": "complicarse la vida innecesariamente",
@@ -828,10 +782,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-442",
     "norsk": "å kjøpe katta i sekken",
     "lemma": "kjøpe katta i sekken",
-    "definition": "Nå har jeg blitt tatt ved nesa!",
-    "id": "u-c-442",
     "english": "to buy a pig in a poke",
     "ukrainian": "купити кота в мішку",
     "spanish": "comprar a ciegas",
@@ -846,10 +799,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-443",
     "norsk": "å slippe katta ut av sekken",
     "lemma": "slippe katta ut av sekken",
-    "definition": "Ministeren har for alvor lettet på sløret.",
-    "id": "u-c-443",
     "english": "to let the cat out of the bag",
     "ukrainian": "випустити кота з мішка (видати таємницю)",
     "spanish": "descubrir el pastel",
@@ -864,10 +816,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-444",
     "norsk": "å gi en god dag i noe",
     "lemma": "gi en god dag i noe",
-    "definition": "Det er meg likegyldig om hun kommer.",
-    "id": "u-c-444",
     "english": "to not care about something / couldn't care less",
     "ukrainian": "начхати на щось",
     "spanish": "importarle a alguien un bledo algo",
@@ -882,10 +833,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-445",
     "norsk": "å ta noe på sparket",
     "lemma": "ta noe på sparket",
-    "definition": "Han likte å gjøre ting uten betenkningstid.",
-    "id": "u-c-445",
     "english": "to do something off the cuff / improvise",
     "ukrainian": "робити щось експромтом",
     "spanish": "hacer algo sobre la marcha",
@@ -900,10 +850,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-446",
     "norsk": "å smi mens jernet er varmt",
     "lemma": "smi mens jernet er varmt",
-    "definition": "Her gjelder det å være rådsnar.",
-    "id": "u-c-446",
     "english": "to strike while the iron is hot",
     "ukrainian": "кувати залізо, поки гаряче",
     "spanish": "hierro caliente, batir de repente",
@@ -918,10 +867,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-447",
     "norsk": "å stikke noe under stol",
     "lemma": "stikke noe under stol",
-    "definition": "Det var tydelig at kommunen forsøkte å fortie noe.",
-    "id": "u-c-447",
     "english": "to hide something / sweep something under the rug",
     "ukrainian": "приховати щось, замовчати",
     "spanish": "esconder algo debajo de la alfombra",
@@ -936,10 +884,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-448",
     "norsk": "å føle noen på tennene",
     "lemma": "føle noen på tennene",
-    "definition": "De målte hverandre.",
-    "id": "u-c-448",
     "english": "to test someone's mettle / sound someone out",
     "ukrainian": "перевірити когось на міцність",
     "spanish": "tantear a alguien",
@@ -954,10 +901,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-449",
     "norsk": "å vise tenner",
     "lemma": "vise tenner",
-    "definition": "I går var det mange som viste sinne og tok igjen.",
-    "id": "u-c-449",
     "english": "to show one's teeth (act threateningly)",
     "ukrainian": "показати зуби (виявити агресію)",
     "spanish": "enseñar los dientes",
@@ -972,10 +918,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-450",
     "norsk": "å gjøre sine hoser grønne",
     "lemma": "gjøre sine hoser grønne",
-    "definition": "Han innsmigrer seg.",
-    "id": "u-c-450",
     "english": "to try to win someone's favor / court someone",
     "ukrainian": "загравати перед кимось, догоджати",
     "spanish": "hacer la corte a alguien",
@@ -990,10 +935,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-451",
     "norsk": "å leve på stor fot",
     "lemma": "leve på stor fot",
-    "definition": "Her er det overflod og luksus.",
-    "id": "u-c-451",
     "english": "to live in high style / high on the hog",
     "ukrainian": "жити на широку ногу",
     "spanish": "vivir a lo grande",
@@ -1008,10 +952,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-452",
     "norsk": "med kaldt blod",
     "lemma": "med kaldt blod",
-    "definition": "De utførte ugjerningen uten omsyn til noe eller noen.",
-    "id": "u-c-452",
     "english": "in cold blood",
     "ukrainian": "холоднокровно, без жалю",
     "spanish": "a sangre fría",
@@ -1026,10 +969,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-453",
     "norsk": "å stå på god fot med noen",
     "lemma": "stå på god fot med noen",
-    "definition": "De to har lenge hatt et greit forhold til hverandre.",
-    "id": "u-c-453",
     "english": "to be on good terms with someone",
     "ukrainian": "бути в добрих стосунках з кимось",
     "spanish": "estar en buenos términos con alguien",
@@ -1044,10 +986,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-454",
     "norsk": "å trekke i trådene",
     "lemma": "trekke i trådene",
-    "definition": "Hun elsker å være litt manipulerende.",
-    "id": "u-c-454",
     "english": "to pull the strings",
     "ukrainian": "смикати за ниточки, керувати з-за куліс",
     "spanish": "mover los hilos",
@@ -1062,10 +1003,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-455",
     "norsk": "som kjerringa mot strømmen",
     "lemma": "som kjerringa mot strømmen",
-    "definition": "Hun er egensindig.",
-    "id": "u-c-455",
     "english": "like the old woman against the current (stubbornly contrarian)",
     "ukrainian": "як та бабка проти течії (вперто наперекір)",
     "spanish": "como quien nada contra corriente",
@@ -1080,10 +1020,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-456",
     "norsk": "å henge i en tynn tråd",
     "lemma": "henge i en tynn tråd",
-    "definition": "Nå står han i fare for å bli arbeidsledig.",
-    "id": "u-c-456",
     "english": "to hang by a thread",
     "ukrainian": "триматися на волосині",
     "spanish": "pender de un hilo",
@@ -1098,10 +1037,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-457",
     "norsk": "å ta opp tråden",
     "lemma": "ta opp tråden",
-    "definition": "Kan vi gå videre med samtalen vår nå?",
-    "id": "u-c-457",
     "english": "to pick up the thread (resume a topic)",
     "ukrainian": "продовжити з того місця, де зупинилися",
     "spanish": "retomar el hilo",
@@ -1116,28 +1054,26 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-458",
     "norsk": "å være lett på tråden",
     "lemma": "være lett på tråden",
-    "definition": "Å være løsslupen og lettsindig med menn (foreldet uttrykk om en kvinne).",
-    "id": "u-c-458",
-    "english": "to be easy/loose with men (dated, of a woman's flirtatious or promiscuous behavior)",
-    "ukrainian": "бути легковажною, надто вільною з чоловіками (застаріле, про жінку)",
-    "spanish": "ser fácil / ligera de cascos (expresión anticuada sobre una mujer)",
-    "german": "leichtfertig mit Männern sein (veraltet, über eine Frau)",
-    "example": "Folk i bygda sa at hun var lett på tråden, men det var bare sladder.",
-    "example_english": "People in the village said she was loose with men, but it was just gossip.",
-    "example_ukrainian": "У селі казали, що вона надто вільна з чоловіками, але це були лише плітки.",
-    "example_spanish": "En el pueblo decían que era ligera de cascos, pero solo eran chismes.",
-    "example_german": "Im Dorf hieß es, sie sei leichtfertig mit Männern, aber das war nur Klatsch.",
+    "english": "to be quick to anger / touchy",
+    "ukrainian": "бути надто вразливим, легко ображатися",
+    "spanish": "picarse con facilidad",
+    "german": "schnell eingeschnappt sein",
+    "example": "Han er lett på tråden, så vær forsiktig med hva du sier.",
+    "example_english": "He's quick to anger, so be careful what you say.",
+    "example_ukrainian": "Він легко ображається, тож будь обережний у словах.",
+    "example_spanish": "Se pica con facilidad, así que ten cuidado con lo que dices.",
+    "example_german": "Er ist schnell eingeschnappt, also sei vorsichtig, was du sagst.",
     "level": "C",
     "category": "uttrykk",
     "part": "phrase"
   },
   {
+    "id": "u-c-459",
     "norsk": "å danse etter noens pipe",
     "lemma": "danse etter noens pipe",
-    "definition": "Å adlyde noens ordre ukritisk.",
-    "id": "u-c-459",
     "english": "to dance to someone's tune",
     "ukrainian": "танцювати під чиюсь дудку",
     "spanish": "bailar al son que le tocan",
@@ -1152,10 +1088,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-460",
     "norsk": "å sette sitt lys under en skjeppe",
     "lemma": "sette sitt lys under en skjeppe",
-    "definition": "Han var falsk beskjeden.",
-    "id": "u-c-460",
     "english": "to hide one's light under a bushel",
     "ukrainian": "приховувати свій талант",
     "spanish": "esconder su luz bajo un celemín",
@@ -1170,10 +1105,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-461",
     "norsk": "å være en hund etter noe",
     "lemma": "være en hund etter noe",
-    "definition": "Hun elsker blåbær.",
-    "id": "u-c-461",
     "english": "to be mad keen on something / crazy about something",
     "ukrainian": "бути шаленим фанатом чогось",
     "spanish": "estar loco por algo",
@@ -1188,10 +1122,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-462",
     "norsk": "krake søker make",
     "lemma": "krake søker make",
-    "definition": "Det stod i annonsen at en person ønsket å finne seg en likesinnet.",
-    "id": "u-c-462",
     "english": "birds of a feather flock together",
     "ukrainian": "рибак рибака бачить здалека",
     "spanish": "Dios los cría y ellos se juntan",
@@ -1206,10 +1139,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-463",
     "norsk": "som man reder, ligger man",
     "lemma": "som man reder, ligger man",
-    "definition": "Man høster det man sår.",
-    "id": "u-c-463",
     "english": "you made your bed, now lie in it",
     "ukrainian": "як постелиш, так і виспишся",
     "spanish": "como te acuestas, te levantas",
@@ -1224,10 +1156,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-464",
     "norsk": "å gå i hundene",
     "lemma": "gå i hundene",
-    "definition": "Han hadde forkommet.",
-    "id": "u-c-464",
     "english": "to go to the dogs",
     "ukrainian": "піти псу під хвіст (занепасти)",
     "spanish": "irse al garete",
@@ -1242,10 +1173,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-465",
     "norsk": "ikke eie nåla i veggen",
     "lemma": "ikke eie nåla i veggen",
-    "definition": "Hun er blakk – og vel så det.",
-    "id": "u-c-465",
     "english": "to not have a penny to one's name (dirt poor)",
     "ukrainian": "не мати ні копійки за душею",
     "spanish": "no tener ni un céntimo",
@@ -1260,10 +1190,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-466",
     "norsk": "å lete etter nåla i høystakken",
     "lemma": "lete etter nåla i høystakken",
-    "definition": "Det å finne øreproppen føltes umulig.",
-    "id": "u-c-466",
     "english": "to look for a needle in a haystack",
     "ukrainian": "шукати голку в стозі сіна",
     "spanish": "buscar una aguja en un pajar",
@@ -1278,10 +1207,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-467",
     "norsk": "å gi katten i noe",
     "lemma": "gi katten i noe",
-    "definition": "Det liker jeg ikke!",
-    "id": "u-c-467",
     "english": "to not give a damn about something",
     "ukrainian": "начхати на щось",
     "spanish": "importarle a alguien un pito algo",
@@ -1296,10 +1224,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-468",
     "norsk": "å legge seg i selen",
     "lemma": "legge seg i selen",
-    "definition": "De strever for å klare det.",
-    "id": "u-c-468",
     "english": "to put one's shoulder to the wheel / work hard",
     "ukrainian": "докласти всіх зусиль, наполегливо працювати",
     "spanish": "poner el hombro / esforzarse al máximo",
@@ -1314,10 +1241,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-469",
     "norsk": "å være mellom barken og veden",
     "lemma": "være mellom barken og veden",
-    "definition": "Hun følte seg presset fra ulike hold.",
-    "id": "u-c-469",
     "english": "to be between a rock and a hard place",
     "ukrainian": "бути між двох вогнів",
     "spanish": "estar entre la espada y la pared",
@@ -1332,10 +1258,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-470",
     "norsk": "å ta noen på kornet",
     "lemma": "ta noen på kornet",
-    "definition": "Komikeren traff spikeren på hodet når det gjaldt kongen.",
-    "id": "u-c-470",
     "english": "to hit the nail on the head about someone / pin someone down precisely",
     "ukrainian": "влучно розкусити когось",
     "spanish": "dar en el clavo con alguien",
@@ -1350,10 +1275,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-471",
     "norsk": "å kaste blår i øynene på noen",
     "lemma": "kaste blår i øynene på noen",
-    "definition": "De lurte henne trill rundt.",
-    "id": "u-c-471",
     "english": "to pull the wool over someone's eyes",
     "ukrainian": "пускати комусь пилюку в очі",
     "spanish": "engañar a alguien descaradamente",
@@ -1368,10 +1292,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-472",
     "norsk": "å ta noe på strak arm",
     "lemma": "ta noe på strak arm",
-    "definition": "Han gjorde det uten å nøle.",
-    "id": "u-c-472",
     "english": "to handle something effortlessly / take something in stride",
     "ukrainian": "легко з чимось впоратися",
     "spanish": "tomarse algo con calma y facilidad",
@@ -1386,10 +1309,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-473",
     "norsk": "på stående fot",
     "lemma": "på stående fot",
-    "definition": "Her og nå, uten forberedelse.",
-    "id": "u-c-473",
     "english": "on the spot / immediately",
     "ukrainian": "негайно, тут же",
     "spanish": "en el acto",
@@ -1404,10 +1326,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-474",
     "norsk": "å la humla suse",
     "lemma": "la humla suse",
-    "definition": "å nyte livet",
-    "id": "u-c-474",
     "english": "to let things slide / not bother",
     "ukrainian": "махнути рукою на щось, не перейматися",
     "spanish": "dejar que las cosas sigan su curso",
@@ -1422,10 +1343,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-475",
     "norsk": "ha kort lunte",
     "lemma": "ha kort lunte",
-    "definition": "å være snarsint",
-    "id": "u-c-475",
     "english": "to have a short fuse",
     "ukrainian": "мати коротку розпалку (бути запальним)",
     "spanish": "tener poca paciencia / mecha corta",
@@ -1440,10 +1360,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-476",
     "norsk": "å rive i en drink",
     "lemma": "rive i en drink",
-    "definition": "å spandere en drink",
-    "id": "u-c-476",
     "english": "to knock back a drink",
     "ukrainian": "залпом випити щось",
     "spanish": "empinar el codo / tomarse un trago de un tirón",
@@ -1458,10 +1377,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-477",
     "norsk": "å mele sin egen kake",
     "lemma": "mele sin egen kake",
-    "definition": "å sørge for at man selv får fordeler",
-    "id": "u-c-477",
     "english": "to feather one's own nest",
     "ukrainian": "гріти руки на чомусь",
     "spanish": "arrimar el ascua a su sardina",
@@ -1476,10 +1394,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-478",
     "norsk": "å gi noen på båten",
     "lemma": "gi noen på båten",
-    "definition": "å la noen fare",
-    "id": "u-c-478",
     "english": "to dump someone / ditch someone",
     "ukrainian": "кинути когось (розірвати стосунки)",
     "spanish": "dejar plantado a alguien",
@@ -1494,10 +1411,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-479",
     "norsk": "å lukte lunta",
     "lemma": "lukte lunta",
-    "definition": "å ane at noe er galt",
-    "id": "u-c-479",
     "english": "to smell a rat / sense trouble brewing",
     "ukrainian": "відчувати недобре, здогадуватися про підступ",
     "spanish": "olerse la tostada",
@@ -1512,10 +1428,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-480",
     "norsk": "å sitte med skjegget i postkassa",
     "lemma": "sitte med skjegget i postkassa",
-    "definition": "å bli lurt",
-    "id": "u-c-480",
     "english": "to be caught in an embarrassing situation",
     "ukrainian": "потрапити в незручне становище",
     "spanish": "quedar en una situación embarazosa",
@@ -1530,10 +1445,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-481",
     "norsk": "å være fyr og flamme",
     "lemma": "være fyr og flamme",
-    "definition": "å være ivrig",
-    "id": "u-c-481",
     "english": "to be all fired up (very enthusiastic)",
     "ukrainian": "горіти ентузіазмом",
     "spanish": "estar entusiasmadísimo",
@@ -1548,10 +1462,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-482",
     "norsk": "å stå på pinne for noen",
     "lemma": "stå på pinne for noen",
-    "definition": "å jobbe hardt for noen",
-    "id": "u-c-482",
     "english": "to be at someone's beck and call",
     "ukrainian": "бути на побігеньках у когось",
     "spanish": "estar a la entera disposición de alguien",
@@ -1566,10 +1479,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-483",
     "norsk": "å sluke kameler",
     "lemma": "sluke kameler",
-    "definition": "å godta noe en egentlig ikke vil godta – for å oppnå noe annet",
-    "id": "u-c-483",
     "english": "to swallow a lot (put up with unpleasant things)",
     "ukrainian": "проковтнути гірку пігулку, змиритися з багато чим",
     "spanish": "tragarse muchos sapos",
@@ -1584,10 +1496,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-484",
     "norsk": "å gråte krokodilletårer",
     "lemma": "gråte krokodilletårer",
-    "definition": "å hykle for å få trøst fra andre",
-    "id": "u-c-484",
     "english": "to cry crocodile tears",
     "ukrainian": "лити крокодилячі сльози",
     "spanish": "llorar lágrimas de cocodrilo",
@@ -1602,10 +1513,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-485",
     "norsk": "å sette kronen på verket",
     "lemma": "sette kronen på verket",
-    "definition": "å sette prikken over i-en",
-    "id": "u-c-485",
     "english": "to put the finishing touch on something / crown the achievement",
     "ukrainian": "увінчати справу, поставити останню крапку",
     "spanish": "poner la guinda al pastel",
@@ -1620,10 +1530,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-486",
     "norsk": "å lese noen teksten",
     "lemma": "lese noen teksten",
-    "definition": "å kjefte på noen",
-    "id": "u-c-486",
     "english": "to read someone the riot act",
     "ukrainian": "прочитати комусь нотацію",
     "spanish": "cantarle a alguien las cuarenta",
@@ -1638,10 +1547,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-487",
     "norsk": "å tråkke i salaten",
     "lemma": "tråkke i salaten",
-    "definition": "å tabbe seg ut",
-    "id": "u-c-487",
     "english": "to put one's foot in it / make a blunder",
     "ukrainian": "вскочити в халепу, зробити ляп",
     "spanish": "meter la pata",
@@ -1656,10 +1564,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-488",
     "norsk": "å pakke snippesken",
     "lemma": "pakke snippesken",
-    "definition": "å dra sin kos",
-    "id": "u-c-488",
     "english": "to pack up and leave for good",
     "ukrainian": "зібрати речі і піти назавжди",
     "spanish": "hacer las maletas y marcharse para siempre",
@@ -1674,10 +1581,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-489",
     "norsk": "å hoppe etter Wirkola",
     "lemma": "hoppe etter Wirkola",
-    "definition": "å følge etter en usedvanlig begavet forgjenger",
-    "id": "u-c-489",
     "english": "to have a hard act to follow",
     "ukrainian": "мати важке завдання перевершити попередника",
     "spanish": "tener un listón muy alto que superar",
@@ -1692,10 +1598,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-490",
     "norsk": "å være på en snei",
     "lemma": "være på en snei",
-    "definition": "å være litt beruset",
-    "id": "u-c-490",
     "english": "to be a bit off / not quite right",
     "ukrainian": "бути трохи не в порядку, дещо не так",
     "spanish": "no ir del todo bien / estar un poco torcido",
@@ -1710,10 +1615,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-491",
     "norsk": "under fire øyne",
     "lemma": "under fire øyne",
-    "definition": "Nå må vi ha en samtale alene.",
-    "id": "u-c-491",
     "english": "in private / one-on-one",
     "ukrainian": "віч-на-віч, приватно",
     "spanish": "en privado / a solas",
@@ -1728,10 +1632,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-492",
     "norsk": "å få noen opp i halsen",
     "lemma": "få noen opp i halsen",
-    "definition": "Han er lut lei av læreren sin.",
-    "id": "u-c-492",
     "english": "to get fed up with someone",
     "ukrainian": "остогиднути, набриднути комусь",
     "spanish": "estar hasta la coronilla de alguien",
@@ -1746,10 +1649,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-493",
     "norsk": "hals over hode",
     "lemma": "hals over hode",
-    "definition": "De dro hodekulls til Sverige.",
-    "id": "u-c-493",
     "english": "headlong / in a great rush",
     "ukrainian": "стрімголов, дуже поспішно",
     "spanish": "de cabeza / atropelladamente",
@@ -1764,10 +1666,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-494",
     "norsk": "kors på halsen",
     "lemma": "kors på halsen",
-    "definition": "Jeg lover!",
-    "id": "u-c-494",
     "english": "cross my heart (I promise)",
     "ukrainian": "чесне слово, присягаюся",
     "spanish": "te lo juro / palabra de honor",
@@ -1782,10 +1683,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-495",
     "norsk": "å sette latteren i halsen",
     "lemma": "sette latteren i halsen",
-    "definition": "Guttene lo ikke mer da de hørte det knirke i døra.",
-    "id": "u-c-495",
     "english": "to make someone's laughter die in their throat",
     "ukrainian": "змусити чийсь сміх застрягнути в горлі",
     "spanish": "cortarle la risa a alguien de golpe",
@@ -1800,10 +1700,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-496",
     "norsk": "å få hjertet i halsen",
     "lemma": "få hjertet i halsen",
-    "definition": "Damen fikk hjertebank da hun hørte noen tasse i gangen.",
-    "id": "u-c-496",
     "english": "to have one's heart leap into one's throat",
     "ukrainian": "серце завмерло від страху",
     "spanish": "se le subió el corazón a la garganta",
@@ -1818,10 +1717,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-497",
     "norsk": "å ta seg i nakken",
     "lemma": "ta seg i nakken",
-    "definition": "Nå må du ta deg sammen.",
-    "id": "u-c-497",
     "english": "to pull oneself together / get a grip",
     "ukrainian": "взяти себе в руки",
     "spanish": "ponerse las pilas / espabilarse",
@@ -1836,10 +1734,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-498",
     "norsk": "å få noen på nakken",
     "lemma": "få noen på nakken",
-    "definition": "Nå blir han forfulgt av politiet.",
-    "id": "u-c-498",
     "english": "to get someone on your back / have someone come down on you",
     "ukrainian": "накликати на себе чийсь гнів",
     "spanish": "echarse a alguien encima",
@@ -1854,10 +1751,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-499",
     "norsk": "storm i et vannglass",
     "lemma": "storm i et vannglass",
-    "definition": "Hun gjør ofte mye ut av ingenting.",
-    "id": "u-c-499",
     "english": "a storm in a teacup",
     "ukrainian": "буря в склянці води",
     "spanish": "una tormenta en un vaso de agua",
@@ -1872,10 +1768,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-500",
     "norsk": "å se rødt",
     "lemma": "se rødt",
-    "definition": "Nå er de rasende.",
-    "id": "u-c-500",
     "english": "to see red",
     "ukrainian": "бачити все в червоному кольорі (розлютитися)",
     "spanish": "ver todo rojo",
@@ -1890,10 +1785,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-501",
     "norsk": "brent barn skyr ilden",
     "lemma": "brent barn skyr ilden",
-    "definition": "En som har skadet seg tidligere, har fått seg en lærepenge.",
-    "id": "u-c-501",
     "english": "once bitten, twice shy",
     "ukrainian": "обпечений на молоці й на воду дме",
     "spanish": "gato escaldado del agua fría huye",
@@ -1908,10 +1802,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-502",
     "norsk": "egget vil lære høna å verpe",
     "lemma": "egget vil lære høna å verpe",
-    "definition": "Den uerfarne vil belære den som kan noe.",
-    "id": "u-c-502",
     "english": "teaching your grandmother to suck eggs",
     "ukrainian": "яйця курку не вчать",
     "spanish": "el huevo quiere enseñar a la gallina a poner",
@@ -1926,10 +1819,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-503",
     "norsk": "å være en saga blott",
     "lemma": "være en saga blott",
-    "definition": "Det er en glemt historie.",
-    "id": "u-c-503",
     "english": "to be a thing of the past",
     "ukrainian": "стати справою минулого",
     "spanish": "ser cosa del pasado",
@@ -1944,10 +1836,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-504",
     "norsk": "det får stå sin prøve",
     "lemma": "det får stå sin prøve",
-    "definition": "Det går slik det vil.",
-    "id": "u-c-504",
     "english": "that remains to be seen / time will tell",
     "ukrainian": "це покаже час",
     "spanish": "eso está por verse",
@@ -1962,10 +1853,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-505",
     "norsk": "det er ugler i mosen",
     "lemma": "det er ugler i mosen",
-    "definition": "Her er det noe som skurrer.",
-    "id": "u-c-505",
     "english": "something's fishy / there's something suspicious going on",
     "ukrainian": "тут щось нечисто",
     "spanish": "aquí hay gato encerrado",
@@ -1980,10 +1870,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-506",
     "norsk": "det blir sus i serken",
     "lemma": "det blir sus i serken",
-    "definition": "Nå blir det liv.",
-    "id": "u-c-506",
     "english": "things are about to get lively / exciting",
     "ukrainian": "буде весело, все закрутиться",
     "spanish": "esto se va a animar",
@@ -1998,10 +1887,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-507",
     "norsk": "å gjøre susen",
     "lemma": "gjøre susen",
-    "definition": "Denne medisinen kan være det som skal til.",
-    "id": "u-c-507",
     "english": "to do the trick",
     "ukrainian": "зробити свою справу, спрацювати",
     "spanish": "hacer el truco / funcionar de maravilla",
@@ -2016,10 +1904,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-508",
     "norsk": "å bite på kroken",
     "lemma": "bite på kroken",
-    "definition": "Han blir ofte lurt trill rundt.",
-    "id": "u-c-508",
     "english": "to take the bait / fall for it",
     "ukrainian": "клюнути на гачок",
     "spanish": "morder el anzuelo",
@@ -2034,10 +1921,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-509",
     "norsk": "det sorte får",
     "lemma": "det sorte får",
-    "definition": "Han er det familiemedlemmet som bringer skam over familien.",
-    "id": "u-c-509",
     "english": "the black sheep",
     "ukrainian": "паршива вівця",
     "spanish": "la oveja negra",
@@ -2052,10 +1938,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-510",
     "norsk": "hastverk er lastverk",
     "lemma": "hastverk er lastverk",
-    "definition": "Det som gjøres i full fart, utføres ofte ikke på den beste måten.",
-    "id": "u-c-510",
     "english": "haste makes waste",
     "ukrainian": "поспіх людям на сміх",
     "spanish": "vísteme despacio que tengo prisa",
@@ -2070,10 +1955,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-511",
     "norsk": "å begrave stridsøksa",
     "lemma": "begrave stridsøksa",
-    "definition": "Nå vil de slutte fred.",
-    "id": "u-c-511",
     "english": "to bury the hatchet",
     "ukrainian": "закопати сокиру війни",
     "spanish": "enterrar el hacha de guerra",
@@ -2088,10 +1972,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-512",
     "norsk": "å falle mellom to stoler",
     "lemma": "falle mellom to stoler",
-    "definition": "Hun passer ikke inn noen steder.",
-    "id": "u-c-512",
     "english": "to fall between two stools",
     "ukrainian": "опинитися ні там, ні тут",
     "spanish": "quedarse entre dos aguas",
@@ -2106,10 +1989,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-513",
     "norsk": "saken er biff",
     "lemma": "saken er biff",
-    "definition": "Situasjonen er i orden.",
-    "id": "u-c-513",
     "english": "it's a done deal / all sorted",
     "ukrainian": "справа зроблена, все гаразд",
     "spanish": "asunto resuelto",
@@ -2124,10 +2006,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-514",
     "norsk": "å feie for egen dør",
     "lemma": "feie for egen dør",
-    "definition": "Du får ta hånd om dine egne problemer først.",
-    "id": "u-c-514",
     "english": "to sweep in front of one's own door (mind your own faults first)",
     "ukrainian": "мести перед власними дверима",
     "spanish": "barrer delante de su propia puerta",
@@ -2142,10 +2023,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-515",
     "norsk": "å føre noen bak lyset",
     "lemma": "føre noen bak lyset",
-    "definition": "Han har blitt narret.",
-    "id": "u-c-515",
     "english": "to deceive / mislead someone",
     "ukrainian": "водити когось за ніс",
     "spanish": "engañar a alguien",
@@ -2160,10 +2040,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-516",
     "norsk": "å få bakoversveis",
     "lemma": "få bakoversveis",
-    "definition": "Jeg ble forbauset i går.",
-    "id": "u-c-516",
     "english": "to be taken aback / stunned",
     "ukrainian": "бути приголомшеним, шокованим",
     "spanish": "quedarse pasmado",
@@ -2178,10 +2057,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-517",
     "norsk": "å feie noe under teppet",
     "lemma": "feie noe under teppet",
-    "definition": "Hvorfor skjuler du ting?",
-    "id": "u-c-517",
     "english": "to sweep something under the rug",
     "ukrainian": "замести під килим",
     "spanish": "barrer algo debajo de la alfombra",
@@ -2196,10 +2074,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-518",
     "norsk": "å få hatten passet",
     "lemma": "få hatten passet",
-    "definition": "Hun fikk kjeft.",
-    "id": "u-c-518",
     "english": "to get put in one's place / get told off",
     "ukrainian": "отримати прочухана",
     "spanish": "recibir una reprimenda",
@@ -2214,10 +2091,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-519",
     "norsk": "ikke være tapt bak ei vogn",
     "lemma": "ikke være tapt bak ei vogn",
-    "definition": "Hun er rådsnar når det oppstår utfordringer.",
-    "id": "u-c-519",
     "english": "to not be born yesterday / be resourceful",
     "ukrainian": "не пальцем роблений, не промах",
     "spanish": "no chuparse el dedo",
@@ -2232,10 +2108,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-520",
     "norsk": "det skinner gjennom",
     "lemma": "det skinner gjennom",
-    "definition": "Man kan ane at hun er bitter.",
-    "id": "u-c-520",
     "english": "it shows through (something is evident)",
     "ukrainian": "це проглядається, помітно",
     "spanish": "se nota / se transparenta",
@@ -2250,10 +2125,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-521",
     "norsk": "å bite i gresset",
     "lemma": "bite i gresset",
-    "definition": "Fjorårets vinner måtte se seg slått i årets konkurranse.",
-    "id": "u-c-521",
     "english": "to bite the dust",
     "ukrainian": "скласти голову, загинути",
     "spanish": "morder el polvo",
@@ -2268,10 +2142,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-522",
     "norsk": "å bite seg merke i noe",
     "lemma": "bite seg merke i noe",
-    "definition": "Hun la merke til at noe var annerledes.",
-    "id": "u-c-522",
     "english": "to take note of something",
     "ukrainian": "взяти щось на замітку",
     "spanish": "tomar nota de algo",
@@ -2286,10 +2159,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-523",
     "norsk": "å bite ordene i seg",
     "lemma": "bite ordene i seg",
-    "definition": "Hun holdt tilbake ordene.",
-    "id": "u-c-523",
     "english": "to bite back one's words / eat one's words",
     "ukrainian": "проковтнути свої слова",
     "spanish": "tragarse sus palabras",
@@ -2304,10 +2176,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-524",
     "norsk": "å drives fra skanse til skanse",
     "lemma": "drives fra skanse til skanse",
-    "definition": "De måtte stadig gi seg.",
-    "id": "u-c-524",
     "english": "to be driven from pillar to post",
     "ukrainian": "бути в постійних поневіряннях, гнаним з місця на місце",
     "spanish": "ser llevado de un lado a otro",
@@ -2322,10 +2193,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-525",
     "norsk": "å bøye seg i støvet",
     "lemma": "bøye seg i støvet",
-    "definition": "Ydmykt aksepterte hun sjefens avgjørelse.",
-    "id": "u-c-525",
     "english": "to bow down in the dust (grovel, submit humbly)",
     "ukrainian": "схилитися в порох, принизливо підкоритися",
     "spanish": "postrarse en el polvo",
@@ -2340,10 +2210,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-526",
     "norsk": "ikke være født i går",
     "lemma": "ikke være født i går",
-    "definition": "Min bror er slettes ikke dum.",
-    "id": "u-c-526",
     "english": "not to be born yesterday",
     "ukrainian": "не вчора народитися",
     "spanish": "no haber nacido ayer",
@@ -2358,28 +2227,26 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-527",
     "norsk": "å gi seg ende over",
     "lemma": "gi seg ende over",
-    "definition": "Å gi fullstendig opp.",
-    "id": "u-c-527",
-    "english": "to give up completely / throw in the towel",
-    "ukrainian": "остаточно здатися, кинути все",
-    "spanish": "rendirse por completo / tirar la toalla",
-    "german": "völlig aufgeben / das Handtuch werfen",
-    "example": "Etter tre mislykkede forsøk ga han seg ende over.",
-    "example_english": "After three failed attempts, he gave up completely.",
-    "example_ukrainian": "Після трьох невдалих спроб він остаточно здався.",
-    "example_spanish": "Tras tres intentos fallidos, se rindió por completo.",
-    "example_german": "Nach drei gescheiterten Versuchen gab er völlig auf.",
+    "english": "to go all out / go to great lengths",
+    "ukrainian": "докладати всіх зусиль без кінця",
+    "spanish": "esforzarse al máximo sin parar",
+    "german": "sich restlos verausgaben",
+    "example": "Han ga seg ende over for å hjelpe naboen med flyttingen.",
+    "example_english": "He went all out to help his neighbor with the move.",
+    "example_ukrainian": "Він докладав усіх зусиль, щоб допомогти сусіду з переїздом.",
+    "example_spanish": "Se esforzó al máximo para ayudar a su vecino con la mudanza.",
+    "example_german": "Er verausgabte sich restlos, um seinem Nachbarn beim Umzug zu helfen.",
     "level": "C",
     "category": "uttrykk",
     "part": "phrase"
   },
   {
+    "id": "u-c-528",
     "norsk": "å gi noen inn",
     "lemma": "gi noen inn",
-    "definition": "Han dengte løs på henne i går kveld.",
-    "id": "u-c-528",
     "english": "to let someone have it / give someone a beating",
     "ukrainian": "дати комусь прочухана, добряче всипати",
     "spanish": "darle una buena reprimenda a alguien",
@@ -2394,10 +2261,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-529",
     "norsk": "å gå berserk",
     "lemma": "gå berserk",
-    "definition": "Fansen ble helt ustyrlige.",
-    "id": "u-c-529",
     "english": "to go berserk",
     "ukrainian": "оскаженіти, впасти в лють",
     "spanish": "ponerse hecho una fiera",
@@ -2412,10 +2278,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-530",
     "norsk": "å måle noen med øynene",
     "lemma": "måle noen med øynene",
-    "definition": "Han så kritisk på henne.",
-    "id": "u-c-530",
     "english": "to size someone up (with a look)",
     "ukrainian": "змірити когось поглядом",
     "spanish": "medir a alguien con la mirada",
@@ -2430,10 +2295,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-531",
     "norsk": "å brenne inne med noe",
     "lemma": "brenne inne med noe",
-    "definition": "Han fikk ikke sagt alt han ville si.",
-    "id": "u-c-531",
     "english": "to be left with something unsaid / stuck with something",
     "ukrainian": "залишитися з чимось невисловленим",
     "spanish": "quedarse con algo dentro",
@@ -2448,10 +2312,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-532",
     "norsk": "å veie sine ord",
     "lemma": "veie sine ord",
-    "definition": "Nå gjelder det å holde tunga rett i munnen.",
-    "id": "u-c-532",
     "english": "to weigh one's words",
     "ukrainian": "зважувати свої слова",
     "spanish": "medir sus palabras",
@@ -2466,10 +2329,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-533",
     "norsk": "å slå seg i lag med noen",
     "lemma": "slå seg i lag med noen",
-    "definition": "Hvem har han blitt sammen med nå?",
-    "id": "u-c-533",
     "english": "to team up with someone",
     "ukrainian": "об'єднатися з кимось",
     "spanish": "unirse a alguien",
@@ -2484,10 +2346,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-534",
     "norsk": "å være med på laget",
     "lemma": "være med på laget",
-    "definition": "Å høre til; å være en del av fellesskapet.",
-    "id": "u-c-534",
     "english": "to be part of the team / be on board",
     "ukrainian": "бути в команді, бути залученим",
     "spanish": "estar en el equipo / estar a bordo",
@@ -2502,10 +2363,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-535",
     "norsk": "en ulv i fåreklær",
     "lemma": "en ulv i fåreklær",
-    "definition": "Han er en ondsinnet person som later som om han er god.",
-    "id": "u-c-535",
     "english": "a wolf in sheep's clothing",
     "ukrainian": "вовк в овечій шкурі",
     "spanish": "un lobo con piel de oveja",
@@ -2520,10 +2380,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-536",
     "norsk": "i grevens tid",
     "lemma": "i grevens tid",
-    "definition": "Han kom i rette øyeblikk.",
-    "id": "u-c-536",
     "english": "in the nick of time",
     "ukrainian": "в останню мить, якраз вчасно",
     "spanish": "justo a tiempo",
@@ -2538,10 +2397,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-537",
     "norsk": "med glans",
     "lemma": "med glans",
-    "definition": "Hun bestod prøven på ypperlig vis.",
-    "id": "u-c-537",
     "english": "with flying colors",
     "ukrainian": "з блиском, блискуче",
     "spanish": "con nota / brillantemente",
@@ -2556,10 +2414,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-538",
     "norsk": "å gi noen det glatte lag",
     "lemma": "gi noen det glatte lag",
-    "definition": "De hudflettet ham.",
-    "id": "u-c-538",
     "english": "to lay into someone / give someone a piece of one's mind",
     "ukrainian": "добряче вичитати комусь",
     "spanish": "echarle una buena bronca a alguien",
@@ -2574,10 +2431,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-539",
     "norsk": "å gå på limpinnen",
     "lemma": "gå på limpinnen",
-    "definition": "Hun har latt seg lure.",
-    "id": "u-c-539",
     "english": "to fall for a trick / take the bait",
     "ukrainian": "попастися на гачок",
     "spanish": "caer en la trampa",
@@ -2592,28 +2448,26 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-540",
     "norsk": "å gå fem på",
     "lemma": "gå fem på",
-    "definition": "Å gå rett i en felle; å bli lurt.",
-    "id": "u-c-540",
-    "english": "to fall for a trick / walk right into a trap",
-    "ukrainian": "потрапити на гачок, повірити обману",
-    "spanish": "caer en la trampa / tragarse el anzuelo",
-    "german": "auf den Trick hereinfallen / in die Falle tappen",
-    "example": "De gikk fem på og trodde alt sammen var sant.",
-    "example_english": "They fell for it completely and believed the whole thing was true.",
-    "example_ukrainian": "Вони повністю купилися і повірили, що все це правда.",
-    "example_spanish": "Cayeron en la trampa y se creyeron todo.",
-    "example_german": "Sie fielen voll auf den Trick herein und glaubten alles.",
+    "english": "to go at something hammer and tongs / attack vigorously",
+    "ukrainian": "накинутися на щось з усією силою",
+    "spanish": "lanzarse con todo",
+    "german": "mit voller Wucht auf etwas losgehen",
+    "example": "Laget gikk fem på fra første minutt av kampen.",
+    "example_english": "The team went at it hammer and tongs from the first minute of the match.",
+    "example_ukrainian": "Команда накинулася з усією силою з першої хвилини матчу.",
+    "example_spanish": "El equipo se lanzó con todo desde el primer minuto del partido.",
+    "example_german": "Die Mannschaft ging vom ersten Minute an mit voller Wucht ins Spiel.",
     "level": "C",
     "category": "uttrykk",
     "part": "phrase"
   },
   {
+    "id": "u-c-541",
     "norsk": "å stå ved lag",
     "lemma": "stå ved lag",
-    "definition": "Står du fast på det du sa?",
-    "id": "u-c-541",
     "english": "to remain valid / still hold true",
     "ukrainian": "залишатися чинним, зберігати силу",
     "spanish": "seguir en pie / mantenerse vigente",
@@ -2628,10 +2482,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-542",
     "norsk": "å spille på lag med noen",
     "lemma": "spille på lag med noen",
-    "definition": "Å samarbeide med noen i stedet for å motarbeide dem.",
-    "id": "u-c-542",
     "english": "to play along with someone / be on the same team",
     "ukrainian": "діяти заодно з кимось",
     "spanish": "jugar en el mismo equipo que alguien",
@@ -2646,10 +2499,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-543",
     "norsk": "å bryte lag",
     "lemma": "bryte lag",
-    "definition": "De har bestemt seg for å gjøre det slutt med hverandre.",
-    "id": "u-c-543",
     "english": "to part ways",
     "ukrainian": "розійтися шляхами",
     "spanish": "separar caminos",
@@ -2664,28 +2516,26 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-544",
     "norsk": "å komme i lag",
     "lemma": "komme i lag",
-    "definition": "Å bli kjæreste med noen; å innlede et forhold.",
-    "id": "u-c-544",
-    "english": "to become a couple / start going out with someone",
-    "ukrainian": "стати парою, почати зустрічатися",
-    "spanish": "convertirse en pareja / empezar a salir juntos",
-    "german": "ein Paar werden / miteinander gehen",
-    "example": "Har de to endelig kommet i lag?",
-    "example_english": "Have the two of them finally become a couple?",
-    "example_ukrainian": "Ці двоє нарешті стали парою?",
-    "example_spanish": "¿Por fin se han hecho pareja esos dos?",
-    "example_german": "Sind die beiden endlich ein Paar geworden?",
+    "english": "to get going / get started",
+    "ukrainian": "розпочатися, зрушити з місця",
+    "spanish": "ponerse en marcha",
+    "german": "in Gang kommen",
+    "example": "Prosjektet kom endelig i lag etter mange forsinkelser.",
+    "example_english": "The project finally got going after many delays.",
+    "example_ukrainian": "Проєкт нарешті зрушив з місця після багатьох затримок.",
+    "example_spanish": "El proyecto finalmente se puso en marcha tras muchos retrasos.",
+    "example_german": "Das Projekt kam nach vielen Verzögerungen endlich in Gang.",
     "level": "C",
     "category": "uttrykk",
     "part": "phrase"
   },
   {
+    "id": "u-c-545",
     "norsk": "å holde noe ved lag",
     "lemma": "holde noe ved lag",
-    "definition": "Det er viktig å bevare de gamle trekirkene.",
-    "id": "u-c-545",
     "english": "to keep something alive / maintained",
     "ukrainian": "підтримувати щось у належному стані",
     "spanish": "mantener algo vivo",
@@ -2700,10 +2550,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-546",
     "norsk": "å skjære alle over én kam",
     "lemma": "skjære alle over én kam",
-    "definition": "å bedømme alle unyansert og sjablongmessig",
-    "id": "u-c-546",
     "english": "to tar everyone with the same brush",
     "ukrainian": "стригти всіх під один гребінець",
     "spanish": "meter a todos en el mismo saco",
@@ -2718,10 +2567,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-547",
     "norsk": "å slå seg på brystet",
     "lemma": "slå seg på brystet",
-    "definition": "å vise stolthet",
-    "id": "u-c-547",
     "english": "to beat one's chest (boast)",
     "ukrainian": "бити себе в груди (хвалитися)",
     "spanish": "golpearse el pecho (jactarse)",
@@ -2736,10 +2584,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-548",
     "norsk": "å sitte med hendene i fanget",
     "lemma": "sitte med hendene i fanget",
-    "definition": "Å forholde seg passiv og ikke gjøre noe.",
-    "id": "u-c-548",
     "english": "to sit idle / twiddle one's thumbs",
     "ukrainian": "сидіти склавши руки",
     "spanish": "quedarse de brazos cruzados",
@@ -2754,10 +2601,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-549",
     "norsk": "å stikke nesa si i noe",
     "lemma": "stikke nesa si i noe",
-    "definition": "Å blande seg inn i noe som ikke angår en.",
-    "id": "u-c-549",
     "english": "to stick one's nose into something",
     "ukrainian": "пхати носа не в свою справу",
     "spanish": "meter las narices en algo",
@@ -2772,10 +2618,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-550",
     "norsk": "ikke løfte en finger",
     "lemma": "ikke løfte en finger",
-    "definition": "Jeg vil overhodet ikke gjøre noe mer for deg.",
-    "id": "u-c-550",
     "english": "to not lift a finger",
     "ukrainian": "пальцем не поворухнути",
     "spanish": "no mover un dedo",
@@ -2790,10 +2635,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-551",
     "norsk": "ikke la seg be to ganger",
     "lemma": "ikke la seg be to ganger",
-    "definition": "Det er lett å spørre meg om å gjøre noe.",
-    "id": "u-c-551",
     "english": "to not need to be asked twice",
     "ukrainian": "не змушувати себе довго просити",
     "spanish": "no hacerse de rogar",
@@ -2808,10 +2652,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-552",
     "norsk": "å gå i forbønn for noen",
     "lemma": "gå i forbønn for noen",
-    "definition": "De ber til Gud for henne.",
-    "id": "u-c-552",
     "english": "to intercede on someone's behalf",
     "ukrainian": "заступитися за когось, клопотати за когось",
     "spanish": "interceder por alguien",
@@ -2826,10 +2669,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-553",
     "norsk": "å være bundet på hender og føtter",
     "lemma": "være bundet på hender og føtter",
-    "definition": "Hun føler at hun ikke har noen mulighet til å styre ting selv.",
-    "id": "u-c-553",
     "english": "to be bound hand and foot",
     "ukrainian": "бути зв'язаним по руках і ногах",
     "spanish": "estar atado de pies y manos",
@@ -2844,10 +2686,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-554",
     "norsk": "bordet fanger",
     "lemma": "bordet fanger",
-    "definition": "bordet fanger",
-    "id": "u-c-554",
     "english": "no turning back / the die is cast (once committed)",
     "ukrainian": "жереб кинуто, назад дороги немає",
     "spanish": "la suerte está echada",
@@ -2862,10 +2703,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-555",
     "norsk": "å bite fra seg",
     "lemma": "bite fra seg",
-    "definition": "Hun tok igjen.",
-    "id": "u-c-555",
     "english": "to fight back / bite back",
     "ukrainian": "давати відсіч, огризатися",
     "spanish": "defenderse con uñas y dientes",
@@ -2880,10 +2720,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-556",
     "norsk": "å få fyken",
     "lemma": "få fyken",
-    "definition": "Er det sant at han har fått fyken?",
-    "id": "u-c-556",
     "english": "to get the boot / get fired",
     "ukrainian": "отримати відставку (бути звільненим)",
     "spanish": "ser despedido / recibir la patada",
@@ -2898,10 +2737,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-557",
     "norsk": "å dra lasset",
     "lemma": "dra lasset",
-    "definition": "Hun føler at det er hun som må bære de tyngste byrdene hele tiden.",
-    "id": "u-c-557",
     "english": "to carry the load / bear the brunt of the work",
     "ukrainian": "тягнути весь віз (нести основний тягар роботи)",
     "spanish": "cargar con el peso del trabajo",
@@ -2916,10 +2754,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-558",
     "norsk": "å dra på det",
     "lemma": "dra på det",
-    "definition": "Hun holdt litt igjen da hun ble bedt om å avgi forklaring.",
-    "id": "u-c-558",
     "english": "to drag one's feet / be reluctant",
     "ukrainian": "тягнути час, вагатися",
     "spanish": "hacerse de rogar / andarse con reticencias",
@@ -2934,10 +2771,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-559",
     "norsk": "å dra noe i tvil",
     "lemma": "dra noe i tvil",
-    "definition": "Man følte skepsis mot det som ble sagt.",
-    "id": "u-c-559",
     "english": "to call something into question / cast doubt on something",
     "ukrainian": "ставити щось під сумнів",
     "spanish": "poner algo en duda",
@@ -2952,10 +2788,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-560",
     "norsk": "å dra på det ene beinet",
     "lemma": "dra på det ene beinet",
-    "definition": "Hun haltet på ett bein.",
-    "id": "u-c-560",
     "english": "to walk with a limp",
     "ukrainian": "накульгувати",
     "spanish": "cojear",
@@ -2970,10 +2805,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-561",
     "norsk": "å dra lærdom av noe",
     "lemma": "dra lærdom av noe",
-    "definition": "Er du klok av skade nå?",
-    "id": "u-c-561",
     "english": "to learn a lesson from something",
     "ukrainian": "винести урок з чогось",
     "spanish": "sacar una lección de algo",
@@ -2988,10 +2822,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-562",
     "norsk": "å drive dank",
     "lemma": "drive dank",
-    "definition": "Nå har sønnen min tatt det kuli i et halvt år.",
-    "id": "u-c-562",
     "english": "to loaf around / laze about",
     "ukrainian": "байдикувати",
     "spanish": "holgazanear",
@@ -3006,10 +2839,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-563",
     "norsk": "å drive gjøn med noen",
     "lemma": "drive gjøn med noen",
-    "definition": "Hun følte at de fleipet med henne.",
-    "id": "u-c-563",
     "english": "to make fun of someone / poke fun at someone",
     "ukrainian": "кепкувати з когось",
     "spanish": "burlarse de alguien",
@@ -3024,10 +2856,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-564",
     "norsk": "å drive det langt",
     "lemma": "drive det langt",
-    "definition": "Datteren hans har nådd langt.",
-    "id": "u-c-564",
     "english": "to go far / make a great success of oneself",
     "ukrainian": "далеко піти, досягти багато чого",
     "spanish": "llegar lejos",
@@ -3042,10 +2873,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-565",
     "norsk": "å drive noen på flukt",
     "lemma": "drive noen på flukt",
-    "definition": "Kvinner og barn ble jaget av gårde.",
-    "id": "u-c-565",
     "english": "to put someone to flight / chase someone away",
     "ukrainian": "обернути когось у втечу",
     "spanish": "poner a alguien en fuga",
@@ -3060,10 +2890,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-566",
     "norsk": "å drive det for langt",
     "lemma": "drive det for langt",
-    "definition": "Hvorfor må den mannen alltid krysse grenser?",
-    "id": "u-c-566",
     "english": "to take it too far / go too far",
     "ukrainian": "зайти надто далеко",
     "spanish": "pasarse de la raya",
@@ -3078,10 +2907,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-567",
     "norsk": "å stå og falle med noe",
     "lemma": "stå og falle med noe",
-    "definition": "Din stemme vil avgjøre alt.",
-    "id": "u-c-567",
     "english": "to stand or fall on something (success depends entirely on it)",
     "ukrainian": "цілковито залежати від чогось",
     "spanish": "depender por completo de algo",
@@ -3096,10 +2924,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-568",
     "norsk": "å falle noen lang",
     "lemma": "falle noen lang",
-    "definition": "Han følte at det varte og rakk hos svigermoren.",
-    "id": "u-c-568",
     "english": "to knock someone flat / floor someone",
     "ukrainian": "збити когось з ніг",
     "spanish": "derribar a alguien",
@@ -3114,10 +2941,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-569",
     "norsk": "å falle i synd",
     "lemma": "falle i synd",
-    "definition": "Hun sa han hadde syndet.",
-    "id": "u-c-569",
     "english": "to fall into sin",
     "ukrainian": "впасти у гріх",
     "spanish": "caer en pecado",
@@ -3132,10 +2958,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-570",
     "norsk": "å falle til jorden",
     "lemma": "falle til jorden",
-    "definition": "De gode forslagene ble avvist.",
-    "id": "u-c-570",
     "english": "to fall through / come to nothing",
     "ukrainian": "провалитися, зійти нанівець",
     "spanish": "venirse abajo / quedar en nada",
@@ -3150,10 +2975,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-571",
     "norsk": "å falle i god jord",
     "lemma": "falle i god jord",
-    "definition": "Ordene hans ble tatt godt imot.",
-    "id": "u-c-571",
     "english": "to fall on fertile ground / be well received",
     "ukrainian": "впасти на добрий ґрунт (бути добре сприйнятим)",
     "spanish": "caer en terreno fértil / ser bien recibido",
@@ -3168,10 +2992,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-572",
     "norsk": "å falle på steingrunn",
     "lemma": "falle på steingrunn",
-    "definition": "Talen hennes fikk ikke gehør.",
-    "id": "u-c-572",
     "english": "to fall on stony ground / fail to take root",
     "ukrainian": "впасти на кам'янистий ґрунт (не знайти відгуку)",
     "spanish": "caer en terreno pedregoso / no calar",
@@ -3186,10 +3009,9 @@
     "part": "phrase"
   },
   {
+    "id": "u-c-573",
     "norsk": "å ha gjenklang",
     "lemma": "ha gjenklang",
-    "definition": "Sankthansfeiringen har appell hos folk i Sverige og Finland.",
-    "id": "u-c-573",
     "english": "to have resonance / strike a chord",
     "ukrainian": "мати відгук, резонувати",
     "spanish": "tener resonancia / calar hondo",

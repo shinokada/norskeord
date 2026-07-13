@@ -119,25 +119,60 @@ Two adjustments needed versus a straight `enrich-vocab.mjs --level c` run:
 Expressions never get a `definition` field (per `enrich-vocab.mjs`'s own `usesDefinition` logic),
 so no change needed there.
 
-## Phase 5 — Verify (Step 3 equivalent)
+## Phase 5 — Verify (Step 3 equivalent) — ✅ DONE
 
 1. `scripts/check-uttrykk.mjs` on the enriched batch — same checks as any other uttrykk import
-   (missing translations, diacritic issues, id format).
+   (missing translations, diacritic issues, id format). **Result: 0 errors, 0 warnings across all
+   178 entries** (`u-c-396`–`u-c-573`, contiguous, no gaps).
 2. `scripts/find-diacritic-issues.mjs` / `find-diacritic-issues-de-es.mjs` — this pipeline has
    already surfaced NO/DE/ES diacritic bugs in prior sessions, so don't skip this even though
-   `enrich-vocab.mjs`'s `correctGeneratedItem` auto-fixer catches the mechanical cases.
+   `enrich-vocab.mjs`'s `correctGeneratedItem` auto-fixer catches the mechanical cases. **Result:
+   1 false-positive flag** (`u-c-419`, German `nahe` from *nahegehen* — correct separable-verb
+   particle, not degraded `Nähe`; left as-is). Everything else was expected noise (Spanish
+   que/como/cuando, German schon/wurde/konnte).
 3. `scripts/dedup-within-file.mjs` on the batch itself (idiom sub-lists sometimes restate the same
    expression under a different item, e.g. *gå på skinner* appears at both item 85/sub 1 and item
-   98/sub 18).
+   98/sub 18). **Result: 0 duplicate `norsk`/`lemma` values.**
 4. Manual spot-check of `example` sentences against `definition`-equivalent meaning, since
-   idiom-level entries are easier to get subtly wrong than single words.
+   idiom-level entries are easier to get subtly wrong than single words. **Result: full 178-entry
+   re-check against `answers.md` found 5 entries with genuinely wrong meaning** (`u-c-402`,
+   `u-c-405`, `u-c-414`, `u-c-458`, `u-c-540` — translations/examples didn't match the textbook
+   answer key, in 2 cases the opposite meaning) — all 5 corrected before merge.
 
-## Phase 6 — Merge to production
+**Deviation from plan:** despite the note under Phase 4 that expressions never get a `definition`
+field, a `definition` field (Norwegian-language meaning, sourced from `answers.md`'s
+`correct_paraphrase` via `extract-uttrykk-c.json`) was added to all 178 entries after all, since
+C-level learners prefer a Norwegian-language definition over relying on the English translation
+alone. This required the same full-file cross-check as point 4 above, since roughly 1 in 6 sampled
+`definition` values were initially mismatched to the wrong idiom (a join issue upstream in how
+`extract-uttrykk-c.json` was built from `answers.md`), not just the 5 flatly-wrong `english`
+meanings caught above.
+
+Working files as of Phase 5 completion (in `draft/c/vocab-uttrykk/`):
+- `uttrykk-c-idiom-batch-enriched.json` — canonical, 178 entries, `definition` field added, 5
+  corrected meanings. This is the file that fed Phase 6.
+- `uttrykk-c-idiom-batch-enriched-old.json` — superseded pre-`definition`, pre-correction version,
+  kept for provenance.
+
+## Phase 6 — Merge to production — ✅ DONE
 
 Follow the existing `scripts/merge-to-production.mjs` pattern to append the verified batch into
 `src/lib/data/uttrykk-c.json`. After merging, re-run `scripts/check-uttrykk.mjs` and
 `scripts/dedup-cross-file.mjs` against the full production file (not just the new batch) as a
 final safety net.
+
+All 178 entries (`u-c-396`–`u-c-573`) merged into `src/lib/data/uttrykk-c.json`. Post-merge
+safety net:
+
+- `scripts/find-diacritic-issues-all.mjs c --dir prod --type uttrykk` — same clean result as
+  Phase 5 (1 known `nahegehen` false positive, rest expected ambiguous noise). Note: `--dir`
+  defaults to `draft`, which silently skips both files if the draft `-new.json` files are gone —
+  `--dir prod` is required to actually check the merged production data.
+- `scripts/dedup-cross-file.mjs --dry-run` — 1 cross-file duplicate found, but it's `klar`
+  (`vocab-a2.json` vs `vocab-b2.json`), unrelated to this uttrykk batch and already known/tracked
+  separately. **Zero cross-file duplicates involving `uttrykk-c.json` or any of the new entries.**
+
+**C-level idiom addition is complete.**
 
 ## The `vocab` bucket (Phase 1 spillover)
 
