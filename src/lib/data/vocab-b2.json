@@ -8514,24 +8514,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-010",
-    "norsk": "klar",
-    "lemma": "klar",
-    "english": "clear / distinct",
-    "ukrainian": "чіткий / зрозумілий",
-    "spanish": "claro",
-    "german": "klar",
-    "example": "Et klart budskap unngår misforståelser.",
-    "example_english": "A clear message avoids misunderstandings.",
-    "example_ukrainian": "Чітке повідомлення допомагає уникнути непорозумінь.",
-    "example_spanish": "Un mensaje claro evita malentendidos.",
-    "example_german": "Eine klare Botschaft vermeidet Missverstaendnisse.",
-    "definition": "Lett å forstå, uten noe som er usikkert eller forvirrende.",
-    "level": "B2",
-    "category": "communication",
-    "part": "adjective"
-  },
-  {
     "id": "v-b2-communication-011",
     "norsk": "kode (en)",
     "lemma": "kode",

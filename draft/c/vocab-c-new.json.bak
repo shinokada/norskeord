@@ -1,0 +1,162 @@
+[
+  {
+    "id": "",
+    "norsk": "å fryde seg",
+    "lemma": "fryde seg",
+    "level": "C",
+    "category": "complex-emotions",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å røske opp",
+    "lemma": "røske opp",
+    "level": "C",
+    "category": "manner-of-motion",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å luske inn",
+    "lemma": "luske inn",
+    "level": "C",
+    "category": "manner-of-motion",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å komme borti",
+    "lemma": "komme borti",
+    "level": "C",
+    "category": "manner-of-motion",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gå løs på",
+    "lemma": "gå løs på",
+    "level": "C",
+    "category": "interpersonal-conflict",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "frossenpinn (en)",
+    "lemma": "frossenpinn",
+    "level": "C",
+    "category": "character-temperament",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å se seg for",
+    "lemma": "se seg for",
+    "level": "C",
+    "category": "manner-of-motion",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gjøre av",
+    "lemma": "gjøre av",
+    "level": "C",
+    "category": "everyday-objects",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å holde av",
+    "lemma": "holde av",
+    "level": "C",
+    "category": "complex-emotions",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å nedkomme",
+    "lemma": "nedkomme",
+    "level": "C",
+    "category": "medicine-healthcare",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dra på årene",
+    "lemma": "dra på årene",
+    "level": "C",
+    "category": "physical-appearance",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "grinebiter (en)",
+    "lemma": "grinebiter",
+    "level": "C",
+    "category": "character-temperament",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å bli av",
+    "lemma": "bli av",
+    "level": "C",
+    "category": "abstract-concepts",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dra kjensel på",
+    "lemma": "dra kjensel på",
+    "level": "C",
+    "category": "psychology-advanced",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dra ut",
+    "lemma": "dra ut",
+    "level": "C",
+    "category": "professional",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å drive omkring",
+    "lemma": "drive omkring",
+    "level": "C",
+    "category": "manner-of-motion",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å drive over",
+    "lemma": "drive over",
+    "level": "C",
+    "category": "climate-environment-policy",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å falle inn",
+    "lemma": "falle inn",
+    "level": "C",
+    "category": "psychology-advanced",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å falle for",
+    "lemma": "falle for",
+    "level": "C",
+    "category": "complex-emotions",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å falle fra",
+    "lemma": "falle fra",
+    "level": "C",
+    "category": "highly-formal",
+    "part": "verb"
+  }
+]
