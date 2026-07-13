@@ -162,7 +162,32 @@ export type GrammarTopic =
   | 'sterke-verb' // strong verb preteritum and past participle forms
   | 'helsetninger' // main clause structure: declarative, questions, ikke, det-subject
   | 'preposisjoner-tid' // time prepositions: i, om, for–siden, på, til
-  | 'preposisjoner-sted'; // place & relation prepositions: i/på, geography, hos/ved/til/fra, av/fra, compounds
+  | 'preposisjoner-sted' // place & relation prepositions: i/på, geography, hos/ved/til/fra, av/fra, compounds
+  // Nivå C topics (Plus only) — see ai-docs/implementation/c-grammar.md
+  | 'ubestemt-artikkel-c' // indefinite article — professions+adjective, uncountables, transport, uttrykk, optional article
+  | 'substantiv-uttrykk-c' // noun forms inside fixed idioms (ta hånd om, stå til liv, gå som fot i hose)
+  | 'sammensatte-substantiv' // building compound nouns from a descriptive phrase
+  | 'adj-mer-mest' // adjective classes that never take -ere/-est
+  | 'adj-farger-uboyelige' // invariable color adjectives: oransje, lilla, rosa, beige
+  | 'adj-partisipp-som-adjektiv' // irregular predikativ forms of participle-adjectives
+  | 'predikativ-agreement' // predikativ non-agreement (intetkjønn with ubestemt subject) + exceptions
+  | 'verbform-i-kontekst' // infinitiv/presens choice across multi-verb sentences
+  | 'sterke-verb-c' // rare strong verbs beyond the common A2/B1 list
+  | 'perfektum-pluskvamperfektum' // tense choice + word order with sentence adverbials
+  | 'futurum-referert' // 2. futurum — evidential/reported «skal ha X»
+  | 'kondisjonalis-counterfactual' // 1./2. kondisjonalis + om-setninger
+  | 'verbet-a-fa' // meanings of «å få» + hjelpeverb uses
+  | 'leddsetning-som-fundament' // subordinate clause filling the front field
+  | 'ordet-sa' // så as konjunksjon / tidsadverb / subjunksjon
+  | 'koordinerende-konjunksjoner' // og/eller/men/for/så choice + comma rule
+  | 'ordfamilie-avledning' // deriving noun/verb/adjective/adverb within a word family
+  | 'omskriving-passiv' // active↔passive, casual→formal nominalized paraphrase
+  | 'jo-desto-komparativ' // jo + comparative … desto/jo + comparative correlative
+  | 'preposisjoner-kroppsdel-uttrykk' // body-part idiom prepositions (hår, nakke, hals, øre)
+  | 'preposisjoner-generelt-c' // general idiomatic preposition collocations
+  | 'uttrykk-gjenkjenning-c-1' // idiom recognition, part 1 (items 83–89)
+  | 'uttrykk-gjenkjenning-c-2' // idiom recognition, part 2 (items 90–96)
+  | 'uttrykk-gjenkjenning-c-3'; // idiom recognition, part 3 (items 97–103)
 
 export interface GrammarRule {
   id: GrammarTopic;
@@ -180,7 +205,7 @@ export interface GrammarQuestion {
   // Optional multi-level tag for display/filtering. A grammar point often spans
   // bands (e.g. ["B2","C1"]). Defaults to [cefr] when absent — see questionLevels().
   levels?: CEFRLevel[];
-  type: 'fill' | 'order' | 'transform' | 'minimal-pair';
+  type: 'fill' | 'order' | 'transform' | 'minimal-pair' | 'multiple-choice';
   // Per-question instruction shown above the stimulus, e.g.
   // "Embed in: «Jeg tror at …»" or "Translate into Norwegian:".
   // Lets transform/production items state the task that the generic type
@@ -197,6 +222,11 @@ export interface GrammarQuestion {
   optionA?: string; // first candidate sentence
   optionB?: string; // second candidate sentence
   explanation?: string; // shown on reveal: why the correct option is right
+  // --- multiple-choice type ---
+  // Exactly 3 options (per ai-docs/implementation/c-grammar.md Phase 1.5). `answer`
+  // must equal one of these strings verbatim (grading matches on normalized text,
+  // same as every other type) — there is no separate letter/index field.
+  options?: string[];
   // --- shared ---
   answer: string; // primary correct answer (the blank span for fill; full sentence otherwise)
   alternates?: string[]; // other accepted forms
