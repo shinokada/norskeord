@@ -1,15 +1,6 @@
 [
  {
   "id": "",
-  "norsk": "å stå for døra",
-  "lemma": "stå for døra",
-  "definition": "Etter lang tids venting er det jul.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å holde hjulene i gang",
   "lemma": "holde hjulene i gang",
   "definition": "Vi må holde bedriftens virksomhet oppe.",
@@ -262,15 +253,6 @@
  },
  {
   "id": "",
-  "norsk": "å ta grep",
-  "lemma": "ta grep",
-  "definition": "De måtte gjøre noe.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å se tiden an",
   "lemma": "se tiden an",
   "definition": "Nå må vi bruke tiden og se hva som skjer.",
@@ -334,15 +316,6 @@
  },
  {
   "id": "",
-  "norsk": "å ta hånd om",
-  "lemma": "ta hånd om",
-  "definition": "Et hjem for foreldreløse barn tok vare på jentene.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å sette nesa mot et sted",
   "lemma": "sette nesa mot et sted",
   "definition": "De dro etter hvert til Norge.",
@@ -355,15 +328,6 @@
   "norsk": "å gå noen på nervene",
   "lemma": "gå noen på nervene",
   "definition": "Dette plager ham sterkt.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "å få kalde føtter",
-  "lemma": "få kalde føtter",
-  "definition": "Hun angrer.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -388,15 +352,6 @@
  },
  {
   "id": "",
-  "norsk": "å selge skinnet før bjørnen er skutt",
-  "lemma": "selge skinnet før bjørnen er skutt",
-  "definition": "Du bør ikke love mer enn du kan holde.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å kaste perler for svin",
   "lemma": "kaste perler for svin",
   "definition": "De vet ikke å verdsette alt du gir til dem.",
@@ -409,15 +364,6 @@
   "norsk": "å dra til sjøs",
   "lemma": "dra til sjøs",
   "definition": "Han tok hyre på en båt da han var seksten år.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "en dråpe i havet",
-  "lemma": "en dråpe i havet",
-  "definition": "Det de gjør, betyr ikke noe særlig i den store sammenhengen.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -517,15 +463,6 @@
   "norsk": "å stikke noe under stol",
   "lemma": "stikke noe under stol",
   "definition": "Det var tydelig at kommunen forsøkte å fortie noe.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "å gå i vasken",
-  "lemma": "gå i vasken",
-  "definition": "Alt ble spolert.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -811,27 +748,9 @@
  },
  {
   "id": "",
-  "norsk": "å male fanden på veggen",
-  "lemma": "male fanden på veggen",
-  "definition": "Å framstille noe som verre enn det er.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å lukte lunta",
   "lemma": "lukte lunta",
   "definition": "Å ane at noe er galt.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "å ta noe med en klype salt",
-  "lemma": "ta noe med en klype salt",
-  "definition": "Å ikke tro helt på alt som sies eller skrives.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -868,15 +787,6 @@
   "norsk": "å sluke kameler",
   "lemma": "sluke kameler",
   "definition": "Å godta noe en egentlig ikke vil godta – for å oppnå noe annet.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "å gå rundt grøten",
-  "lemma": "gå rundt grøten",
-  "definition": "Å ikke klare å komme til poenget.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -973,15 +883,6 @@
  },
  {
   "id": "",
-  "norsk": "å være noe på sin hals",
-  "lemma": "være noe på sin hals",
-  "definition": "Kvinnen er lidenskapelig opptatt av sin forskning.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "kors på halsen",
   "lemma": "kors på halsen",
   "definition": "Jeg lover!",
@@ -1003,15 +904,6 @@
   "norsk": "å få hjertet i halsen",
   "lemma": "få hjertet i halsen",
   "definition": "Damen fikk hjertebank da hun hørte noen tasse i gangen.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "å ta beina på nakken",
-  "lemma": "ta beina på nakken",
-  "definition": "Tyvene beinfløy av gårde.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -1075,15 +967,6 @@
   "norsk": "å være en saga blott",
   "lemma": "være en saga blott",
   "definition": "Det er en glemt historie.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "eplet faller ikke langt fra stammen",
-  "lemma": "eplet faller ikke langt fra stammen",
-  "definition": "Som far, så sønn.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -1228,15 +1111,6 @@
   "norsk": "ikke være tapt bak ei vogn",
   "lemma": "ikke være tapt bak ei vogn",
   "definition": "Hun er rådsnar når det oppstår utfordringer.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "ikke ha rent mel i posen",
-  "lemma": "ikke ha rent mel i posen",
-  "definition": "Bakeren har noe å skjule.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -1414,15 +1288,6 @@
  },
  {
   "id": "",
-  "norsk": "å gjøre noen til lags",
-  "lemma": "gjøre noen til lags",
-  "definition": "Jeg prøver å gjøre datteren min fornøyd.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å gå på limpinnen",
   "lemma": "gå på limpinnen",
   "definition": "Hun har latt seg lure.",
@@ -1486,15 +1351,6 @@
  },
  {
   "id": "",
-  "norsk": "å bite i det sure eplet",
-  "lemma": "bite i det sure eplet",
-  "definition": "Å finne seg i noe ubehagelig.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å skjære alle over én kam",
   "lemma": "skjære alle over én kam",
   "definition": "Å bedømme alle unyansert og sjablongmessig.",
@@ -1513,15 +1369,6 @@
  },
  {
   "id": "",
-  "norsk": "å sette foten ned",
-  "lemma": "sette foten ned",
-  "definition": "Nå vil jeg sette en stopper for dette.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å sitte med hendene i fanget",
   "lemma": "sitte med hendene i fanget",
   "definition": "Du kan ikke forholde deg uvirksom i denne saken.",
@@ -1534,15 +1381,6 @@
   "norsk": "å stikke nesa si i noe",
   "lemma": "stikke nesa si i noe",
   "definition": "Ikke bland deg inn i dette.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "ha sommerfugler i magen",
-  "lemma": "ha sommerfugler i magen",
-  "definition": "Han kjente at det kriblet av spenning like før ringene skulle settes på.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -1597,15 +1435,6 @@
   "norsk": "å bite fra seg",
   "lemma": "bite fra seg",
   "definition": "Hun tok igjen.",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
-  "norsk": "å bli tatt på senga",
-  "lemma": "bli tatt på senga",
-  "definition": "I går ble jeg overrumplet.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
@@ -1702,15 +1531,6 @@
  },
  {
   "id": "",
-  "norsk": "å drive noen til vanvidd",
-  "lemma": "drive noen til vanvidd",
-  "definition": "Hvorfor må du få meg til å klikke?",
-  "level": "C",
-  "category": "uttrykk",
-  "part": "phrase"
- },
- {
-  "id": "",
   "norsk": "å drive det for langt",
   "lemma": "drive det for langt",
   "definition": "Hvorfor må den mannen alltid krysse grenser?",
@@ -1768,6 +1588,15 @@
   "norsk": "å falle på steingrunn",
   "lemma": "falle på steingrunn",
   "definition": "Talen hennes fikk ikke gehør.",
+  "level": "C",
+  "category": "uttrykk",
+  "part": "phrase"
+ },
+ {
+  "id": "",
+  "norsk": "å ha gjenklang",
+  "lemma": "ha gjenklang",
+  "definition": "Sankthansfeiringen har appell hos folk i Sverige og Finland.",
   "level": "C",
   "category": "uttrykk",
   "part": "phrase"
