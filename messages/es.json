@@ -60,6 +60,7 @@
   "grammar_order_prompt": "Escribe la oración en el orden correcto",
   "grammar_order_words": "Palabras a usar",
   "grammar_transform_prompt": "Reescribe la oración",
+  "grammar_multiple_choice_prompt": "¿Qué paráfrasis significa lo mismo?",
   "grammar_input_placeholder": "Escribe tu respuesta…",
   "grammar_check": "Comprobar",
   "grammar_skip": "Saltar",

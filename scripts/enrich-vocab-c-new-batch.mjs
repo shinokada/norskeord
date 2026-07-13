@@ -98,7 +98,10 @@ if (fs.existsSync(envPath)) {
   for (const line of fs.readFileSync(envPath, 'utf8').split('\n')) {
     const [k, ...rest] = line.split('=');
     if (k && rest.length)
-      process.env[k.trim()] = rest.join('=').trim().replace(/^["']|["']$/g, '');
+      process.env[k.trim()] = rest
+        .join('=')
+        .trim()
+        .replace(/^["']|["']$/g, '');
   }
 }
 const API_KEY = process.env.ANTHROPIC_API_KEY;
@@ -136,7 +139,9 @@ const todo = inputEntries.filter((e) => !alreadyDoneLemmas.has(e.lemma));
 
 console.log('🧩  enrich-vocab-c-new-batch.mjs');
 console.log(`    Input:            ${INPUT_PATH}  (${inputEntries.length} entries)`);
-console.log(`    Already enriched: ${alreadyDoneLemmas.size}  (${existingBatchFiles.length} batch file(s) found)`);
+console.log(
+  `    Already enriched: ${alreadyDoneLemmas.size}  (${existingBatchFiles.length} batch file(s) found)`
+);
 console.log(`    Remaining:        ${todo.length}`);
 console.log(`    Mode:             ${dryRun ? 'DRY RUN' : 'LIVE'}`);
 
@@ -342,7 +347,9 @@ async function withRetry(fn, label) {
     } catch (err) {
       if (attempt === MAX_RETRIES) throw err;
       const delay = 2000 * attempt;
-      console.warn(`  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retrying in ${delay}ms…`);
+      console.warn(
+        `  ⚠️  ${label} attempt ${attempt} failed: ${err.message}. Retrying in ${delay}ms…`
+      );
       await new Promise((r) => setTimeout(r, delay));
     }
   }
@@ -368,7 +375,9 @@ async function main() {
       if (!item.lemma) continue;
       const missing = missingFields(item);
       if (missing.length > 0) {
-        console.warn(`\n  ⚠️  Incomplete result for lemma="${item.lemma}" — missing: ${missing.join(', ')}`);
+        console.warn(
+          `\n  ⚠️  Incomplete result for lemma="${item.lemma}" — missing: ${missing.join(', ')}`
+        );
         continue;
       }
       const extracted = byLemma.get(item.lemma);
@@ -378,7 +387,9 @@ async function main() {
         console.warn(`\n  🔧  Auto-corrected lemma="${item.lemma}": ${fixedNotes.join('; ')}`);
       }
       if (ambiguousNotes.length > 0) {
-        console.warn(`\n  🟡  lemma="${item.lemma}" needs manual review: ${ambiguousNotes.join('; ')}`);
+        console.warn(
+          `\n  🟡  lemma="${item.lemma}" needs manual review: ${ambiguousNotes.join('; ')}`
+        );
       }
       merged.push(mergeEntry(extracted, corrected));
     }
