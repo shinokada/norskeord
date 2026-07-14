@@ -4,24 +4,36 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 ==========
 
-This ai-docs/implementation/c-grammar.md should focus on draft/c/uttrykk-c-new.json.merged and vocab-c-new.json.merged. These are already merged to src/lib/data/uttrykk-c.json and vocab-c.json. These files are created for c-grammar.md using ai-docs/implementation/c-uttrykk-addition.md.
-
-We are working on "Phase 2 — Content, built in alphabetical order by topic".
-
-A previous session was terminated due to session limit but you  modified src/lib/data/grammar.json.
-
-The following is from a previous session. Can you complete what you were doing?
 
 
-ME: ... We are working on "Phase 2 — Content, built in alphabetical order by topic". 
-We have finished up to futurum-referert. Can you implement:  `jo-desto-komparativ` + `kondisjonalis-counterfactual`?
+The ai-docs/implementation/c-grammar.md should focus on draft/c/uttrykk-c-new.json.merged and vocab-c-new.json.merged. These are already merged to src/lib/data/uttrykk-c.json and vocab-c.json. These files are created for c-grammar.md using ai-docs/implementation/c-uttrykk-addition.md.
 
-CLAUDE: Let me look at the key planning doc (grammar-phase-2.md) and c-grammar.md.Good, rules already exist for both topics. Now let's check grammar.json to see the existing content pattern, especially futurum-referert questions (already done) to match style/format exactly.Now let's check item 54 for the jo-desto pattern.Now let's search for candidate lemmas relevant to these two topics.Good, both topics already registered in types.ts. Let's view the full GrammarQuestion interface to confirm exact field names/order.The check-c-grammar-vocab.mjs script already exists. Let's inspect it to run it after adding content.Node is available. Let's set up a local copy of the script and grammar.json to test after I draft the questions.Script works. Now let me draft the JSON for both topics and test them before merging.Now let's merge this into the local test copy of grammar.json and run the verification script.No duplicate IDs. Now run the verification script on both topics.All 18 questions pass. Now let's run the full JSON validity + duplicate ID check across the whole file, plus check if there's a broader test suite (session.test.ts / questionUtils validation) I should run.
+I will run `node scripts/check-c-grammar-vocab.mjs` so you don't need to run it. 
+
+We are working on "Phase 2 — Content, built in alphabetical order by topic" in ai-docs/implementation/c-grammar.md.
+
+When I run `node scripts/check-c-grammar-vocab.mjs` I have the following errors. Can you fix it?
 
 
 
+⚠️   predikativ-agreement  (10 question(s), 2 unmatched)
+    ❌  gq-predikativ-003: no vocab-c.json/uttrykk-c.json headword found
+        "Choose the correct form to complete the fixed expression «duket for». Disse møtene var alltid _____ for krangel, uansett hvem som deltok. du…"
+    ❌  gq-predikativ-005: no vocab-c.json/uttrykk-c.json headword found
+        "Choose the correct form and preposition for the fixed expression «skikket til». Alle kandidatene var visstnok _____ stillingen, ifølge komit…"
 
+⚠️   preposisjoner-generelt-c  (10 question(s), 1 unmatched)
+    ❌  gq-prep-c-007: no vocab-c.json/uttrykk-c.json headword found
+        "Hun fór opp for søsteren sin under krangelen. Hun fór opp for søsteren sin under krangelen Hun fór opp for søsteren sin under krangelen"
 
+---
+
+While you are working on "16. sammensatte-substantiv (building compound nouns from a descriptive phrase" in a previous session, it was terminated due to session limit.
+Please implement it.
+
+Can you write drafted questions to a scratch file (e.g. draft/c/grammar-16-sammensatte-substantiv.json) as soon as they exist, rather than holding them only in conversation — so nothing is lost if the session ends before merging.
+
+CLAUDE: Good — the rule already exists (Phase 1 done). Now let me check `types.ts` for the topic registration and look for any admin `TOPICS` gap, then check the `check-c-grammar-vocab.mjs` script and plus-gating file for how new topics get wired.Now let's check `substantiv-uttrykk-c` for another format reference and confirm `types.ts` has the topic listed, then draft the questions.Good, already registered in Phase 1. Now let's check if there's a vocab verification script to run after adding content.The vocab check script already exists. Let's look at it to know how to run it and what it checks.Now let's draft the 10 questions and validate them with the vocab-check logic locally before merging.Now let's run the vocab-check logic against these drafted questions to verify each has a real vocab-c/uttrykk-c match.
 
 
 

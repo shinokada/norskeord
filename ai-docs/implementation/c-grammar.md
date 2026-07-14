@@ -592,21 +592,21 @@ The thematic groupings above are for organizing the rule text and cross-referenc
 items; the actual build order is simply alphabetical by topic name, so there's no implicit
 priority to debate:
 
-1. `adj-farger-uboyelige`
-2. `adj-mer-mest`
-3. `adj-partisipp-som-adjektiv`
-4. `futurum-referert`
-5. `jo-desto-komparativ`
-6. `kondisjonalis-counterfactual`
-7. `koordinerende-konjunksjoner`
-8. `leddsetning-som-fundament`
-9. `omskriving-passiv`
-10. `ordet-sa`
-11. `ordfamilie-avledning`
-12. `perfektum-pluskvamperfektum`
+1. `adj-farger-uboyelige` ✅ Done
+2. `adj-mer-mest` ✅ Done
+3. `adj-partisipp-som-adjektiv` ✅ Done
+4. `futurum-referert` ✅ Done
+5. `jo-desto-komparativ` ✅ Done
+6. `kondisjonalis-counterfactual` ✅ Done
+7. `koordinerende-konjunksjoner` ✅ Done
+8. `leddsetning-som-fundament` ✅ Done
+9. `omskriving-passiv` ✅ Done
+10. `ordet-sa` ✅ Done
+11. `ordfamilie-avledning` ✅ Done
+12. `perfektum-pluskvamperfektum`  ✅ Done
 13. `predikativ-agreement`
 14. `preposisjoner-generelt-c`
-15. `preposisjoner-kroppsdel-uttrykk`
+15. `preposisjoner-kroppsdel-uttrykk` ✅ Done
 16. `sammensatte-substantiv`
 17. `sterke-verb-c`
 18. `substantiv-uttrykk-c`
