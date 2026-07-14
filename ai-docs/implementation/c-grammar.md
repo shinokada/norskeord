@@ -603,12 +603,12 @@ priority to debate:
 9. `omskriving-passiv` ✅ Done
 10. `ordet-sa` ✅ Done
 11. `ordfamilie-avledning` ✅ Done
-12. `perfektum-pluskvamperfektum`  ✅ Done
+12. `perfektum-pluskvamperfektum` ✅ Done
 13. `predikativ-agreement` ✅ Done
 14. `preposisjoner-generelt-c` ✅ Done
 15. `preposisjoner-kroppsdel-uttrykk` ✅ Done
 16. `sammensatte-substantiv` ✅ Done
-17. `sterke-verb-c`
+17. `sterke-verb-c` ✅ Done
 18. `substantiv-uttrykk-c`
 19. `ubestemt-artikkel-c`
 20. `uttrykk-gjenkjenning-c-1` (depends on Phase 1.5) — cross-reference items 83–89 against

@@ -238,7 +238,9 @@ for (const [topic, qs] of byTopic) {
 
   for (const q of unmatched) {
     console.log(`    ❌  ${q.id}: no vocab-c.json/uttrykk-c.json headword found`);
-    console.log(`        "${questionText(q).slice(0, 140)}${questionText(q).length > 140 ? '…' : ''}"`);
+    console.log(
+      `        "${questionText(q).slice(0, 140)}${questionText(q).length > 140 ? '…' : ''}"`
+    );
   }
 
   totalUnmatched += unmatched.length;

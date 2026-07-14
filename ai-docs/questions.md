@@ -4,11 +4,9 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 ==========
 
-
-
 The ai-docs/implementation/c-grammar.md should focus on draft/c/uttrykk-c-new.json.merged and vocab-c-new.json.merged. These are already merged to src/lib/data/uttrykk-c.json and vocab-c.json. These files are created for c-grammar.md using ai-docs/implementation/c-uttrykk-addition.md.
 
-I will run `node scripts/check-c-grammar-vocab.mjs` so you don't need to run it. 
+I will run `node scripts/check-c-grammar-vocab.mjs` so you don't need to run it.
 
 We are working on "Phase 2 — Content, built in alphabetical order by topic" in ai-docs/implementation/c-grammar.md.
 
@@ -18,9 +16,6 @@ Please implement it.
 Can you write drafted questions to a scratch file (e.g. draft/c/grammar-16-sammensatte-substantiv.json) as soon as they exist, rather than holding them only in conversation — so nothing is lost if the session ends before merging.
 
 CLAUDE: Good — the rule already exists (Phase 1 done). Now let me check `types.ts` for the topic registration and look for any admin `TOPICS` gap, then check the `check-c-grammar-vocab.mjs` script and plus-gating file for how new topics get wired.Now let's check `substantiv-uttrykk-c` for another format reference and confirm `types.ts` has the topic listed, then draft the questions.Good, already registered in Phase 1. Now let's check if there's a vocab verification script to run after adding content.The vocab check script already exists. Let's look at it to know how to run it and what it checks.Now let's draft the 10 questions and validate them with the vocab-check logic locally before merging.Now let's run the vocab-check logic against these drafted questions to verify each has a real vocab-c/uttrykk-c match.
-
-
-
 
 ==========
 

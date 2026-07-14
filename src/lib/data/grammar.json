@@ -2655,7 +2655,18 @@
     "topic": "adj-partisipp-som-adjektiv",
     "cefr": "C",
     "type": "order",
-    "tokens": ["Presentasjonen", "hans", "var", "strøken", "og", "etterlot", "ikke", "tvil", "hos", "noen"],
+    "tokens": [
+      "Presentasjonen",
+      "hans",
+      "var",
+      "strøken",
+      "og",
+      "etterlot",
+      "ikke",
+      "tvil",
+      "hos",
+      "noen"
+    ],
     "answer": "Presentasjonen hans var strøken og etterlot ikke tvil hos noen.",
     "alternates": ["Presentasjonen hans var strøken og etterlot ikke tvil hos noen"],
     "hint": "«Strøken» agrees with a common-gender noun like «presentasjonen» without any ending change.",
@@ -2741,7 +2752,9 @@
     "prompt": "Rewrite as a 2. futurum statement (reported, unverified claim).",
     "source": "Den tidligere ansatte kom med alvorlige beskyldninger mot ledelsen.",
     "answer": "Den tidligere ansatte skal ha kommet med alvorlige beskyldninger mot ledelsen.",
-    "alternates": ["Den tidligere ansatte skal ha kommet med alvorlige beskyldninger mot ledelsen, ifølge kilder."],
+    "alternates": [
+      "Den tidligere ansatte skal ha kommet med alvorlige beskyldninger mot ledelsen, ifølge kilder."
+    ],
     "hint": "skal ha + perfektum partisipp of «komme» (kommet) marks this as an unverified, secondhand claim.",
     "plusOnly": true
   },
@@ -2978,7 +2991,9 @@
       "stormen"
     ],
     "answer": "Om skipet ikke hadde sunket, ville alle ha kommet seg helskinnet gjennom stormen.",
-    "alternates": ["Om skipet ikke hadde sunket ville alle ha kommet seg helskinnet gjennom stormen"],
+    "alternates": [
+      "Om skipet ikke hadde sunket ville alle ha kommet seg helskinnet gjennom stormen"
+    ],
     "hint": "Om + pluskvamperfektum (hadde sunket) states the unreal condition; ville + ha + perfektum partisipp (ha kommet) gives the counterfactual result.",
     "plusOnly": true
   },
@@ -3145,7 +3160,9 @@
     "prompt": "Rewrite as one sentence: front the reason clause with «fordi», keeping the sentence adverbials in their correct positions.",
     "source": "Familien ønsker egentlig forsoning etter krangelen. Alle føler faktisk lettelse.",
     "answer": "Fordi familien egentlig ønsker forsoning etter krangelen, føler alle faktisk lettelse.",
-    "alternates": ["Fordi familien egentlig ønsker forsoning etter krangelen føler alle faktisk lettelse"],
+    "alternates": [
+      "Fordi familien egentlig ønsker forsoning etter krangelen føler alle faktisk lettelse"
+    ],
     "hint": "Leddsetning as fundament: fordi + subject + adverbial (egentlig) + verb (ønsker). Main clause still inverts: verb (føler) + subject (alle) + adverbial (faktisk) + rest.",
     "plusOnly": true
   },
@@ -3154,7 +3171,17 @@
     "topic": "leddsetning-som-fundament",
     "cefr": "C",
     "type": "order",
-    "tokens": ["Fordi", "ingen", "forsvarer", "forslaget", "hardnakket", "mister", "det", "faktisk", "oppslutning"],
+    "tokens": [
+      "Fordi",
+      "ingen",
+      "forsvarer",
+      "forslaget",
+      "hardnakket",
+      "mister",
+      "det",
+      "faktisk",
+      "oppslutning"
+    ],
     "answer": "Fordi ingen forsvarer forslaget hardnakket, mister det faktisk oppslutning.",
     "alternates": ["Fordi ingen forsvarer forslaget hardnakket mister det faktisk oppslutning"],
     "hint": "The fordi-clause fills the front field; the main clause verb (mister) still comes second, followed by its subject (det) and then the sentence adverbial (faktisk).",
@@ -3189,7 +3216,18 @@
     "topic": "leddsetning-som-fundament",
     "cefr": "C",
     "type": "order",
-    "tokens": ["Det", "handler", "om", "hvorfor", "de", "faktisk", "fremmer", "et", "nytt", "hegemoni"],
+    "tokens": [
+      "Det",
+      "handler",
+      "om",
+      "hvorfor",
+      "de",
+      "faktisk",
+      "fremmer",
+      "et",
+      "nytt",
+      "hegemoni"
+    ],
     "answer": "Det handler om hvorfor de faktisk fremmer et nytt hegemoni.",
     "alternates": ["Det handler om hvorfor de faktisk fremmer et nytt hegemoni"],
     "hint": "Inside the embedded hvorfor-clause, the sentence adverbial «faktisk» goes right before the finite verb «fremmer» — subordinate word order applies even without fronting the whole clause.",
@@ -3227,7 +3265,9 @@
     "prompt": "Rewrite as one sentence: front the reason clause with «ettersom», keeping the sentence adverbials in their correct positions.",
     "source": "Partene har jo ulike innvendinger mot avtalen. Forhandlingene fortsetter faktisk uten en klar konklusjon.",
     "answer": "Ettersom partene jo har ulike innvendinger mot avtalen, fortsetter forhandlingene faktisk uten en klar konklusjon.",
-    "alternates": ["Ettersom partene jo har ulike innvendinger mot avtalen fortsetter forhandlingene faktisk uten en klar konklusjon"],
+    "alternates": [
+      "Ettersom partene jo har ulike innvendinger mot avtalen fortsetter forhandlingene faktisk uten en klar konklusjon"
+    ],
     "hint": "Subordinate clause: adverbial (jo) before the verb (har). Main clause inverts: verb (fortsetter) — subject (forhandlingene) — adverbial (faktisk) — rest.",
     "plusOnly": true
   },
@@ -3420,9 +3460,23 @@
     "topic": "ordet-sa",
     "cefr": "C",
     "type": "order",
-    "tokens": ["Hun", "begynte", "å", "avsky", "urettferdighet", "så", "hun", "engasjerte", "seg", "i", "menneskerettigheter"],
+    "tokens": [
+      "Hun",
+      "begynte",
+      "å",
+      "avsky",
+      "urettferdighet",
+      "så",
+      "hun",
+      "engasjerte",
+      "seg",
+      "i",
+      "menneskerettigheter"
+    ],
     "answer": "Hun begynte å avsky urettferdighet, så hun engasjerte seg i menneskerettigheter.",
-    "alternates": ["Hun begynte å avsky urettferdighet så hun engasjerte seg i menneskerettigheter"],
+    "alternates": [
+      "Hun begynte å avsky urettferdighet så hun engasjerte seg i menneskerettigheter"
+    ],
     "hint": "Two full main clauses joined by the konjunksjon «så» (result) — normal SV order in both clauses, comma before «så».",
     "plusOnly": true
   },
@@ -3431,7 +3485,17 @@
     "topic": "ordet-sa",
     "cefr": "C",
     "type": "order",
-    "tokens": ["Kontrakten", "betinget", "et", "forskudd", "så", "leverandøren", "kunne", "starte", "arbeidet"],
+    "tokens": [
+      "Kontrakten",
+      "betinget",
+      "et",
+      "forskudd",
+      "så",
+      "leverandøren",
+      "kunne",
+      "starte",
+      "arbeidet"
+    ],
     "answer": "Kontrakten betinget et forskudd, så leverandøren kunne starte arbeidet.",
     "alternates": ["Kontrakten betinget et forskudd så leverandøren kunne starte arbeidet"],
     "hint": "«Så» here is a subjunksjon (≈ «slik at») introducing a purpose clause — normal subordinate order: leverandøren (subject) kunne (verb), no inversion.",
@@ -4019,7 +4083,19 @@
     "topic": "preposisjoner-kroppsdel-uttrykk",
     "cefr": "C",
     "type": "order",
-    "tokens": ["Han", "måtte", "ta", "seg", "i", "nakken", "og", "begynne", "å", "studere", "igjen"],
+    "tokens": [
+      "Han",
+      "måtte",
+      "ta",
+      "seg",
+      "i",
+      "nakken",
+      "og",
+      "begynne",
+      "å",
+      "studere",
+      "igjen"
+    ],
     "answer": "Han måtte ta seg i nakken og begynne å studere igjen.",
     "alternates": ["Han måtte ta seg i nakken og begynne å studere igjen"],
     "hint": "«Ta seg i nakken» (to pull oneself together) always takes «i».",
@@ -4176,6 +4252,150 @@
     "answer": "Aksjemarkedet falt kraftig etter de dårlige nyhetene.",
     "alternates": ["Aksjemarkedet falt kraftig etter de dårlige nyhetene"],
     "hint": "Aksje + marked: no linking -s- is needed since «aksje» already ends in a vowel.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-001",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum of «gale» (of a rooster crowing).",
+    "sentence": "Hanen _____ høyt hver morgen på den øde gården.",
+    "words": ["gol", "galer", "galet"],
+    "answer": "gol",
+    "alternates": ["galte"],
+    "hint": "Gale is a rare strong verb: gale → gol (also galte) → har galt. «Øde» describes the deserted farm.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-002",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Change to perfektum (present perfect) using «har».",
+    "source": "Hanen galer allerede før soloppgang på den øde gården.",
+    "answer": "Hanen har galt allerede før soloppgang på den øde gården.",
+    "alternates": ["Hanen har galt allerede før soloppgang på den øde gården"],
+    "hint": "The perfektum partisipp of «gale» is the irregular «galt», not «galet».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-003",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "minimal-pair",
+    "optionA": "Han brydde seg ikke om innbruddet før tyvene brøt seg inn i det øde huset.",
+    "optionB": "Han brøt seg ikke om innbruddet før tyvene brydde seg inn i det øde huset.",
+    "explanation": "«Bry seg» (to care) is a weak verb: brydde. «Bryte seg inn» (to break in) is the strong verb «bryte»: brøt. The two look similar but conjugate completely differently.",
+    "answer": "A",
+    "hint": "«Bry seg» and «bryte seg inn» are easy to confuse — only one of them is a strong verb.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-004",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum of «bry seg».",
+    "sentence": "Hun _____ ikke om at situasjonen var farefull.",
+    "words": ["brydde seg", "brøt seg", "bryddet seg"],
+    "answer": "brydde seg",
+    "hint": "«Bry seg» is a weak verb, not a strong one, even though it looks related to «bryte»: bryr seg → brydde seg → har brydd seg. «Farefull» means dangerous.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-005",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum of «briste».",
+    "sentence": "Hjertet hans _____ av sorg da han innså hvor prekær situasjonen egentlig var.",
+    "words": ["brast", "briste", "brister"],
+    "answer": "brast",
+    "hint": "Briste → brast → har bristet. «Prekær» means precarious.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-006",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Change to perfektum (present perfect) using «har».",
+    "source": "Tålmodigheten hennes brister til slutt, selv om hun er en traust person.",
+    "answer": "Tålmodigheten hennes har bristet til slutt, selv om hun er en traust person.",
+    "alternates": ["Tålmodigheten hennes har bristet til slutt, selv om hun er en traust person"],
+    "hint": "The perfektum partisipp of «briste» is the weak-looking «bristet», even though the preteritum «brast» is strong. «Traust» means steady/dependable.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-007",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum of «by imot» (to resist).",
+    "sentence": "Det _____ ham imot å godta et så udugelig forslag.",
+    "words": ["bød", "by", "byr"],
+    "answer": "bød",
+    "hint": "By → bød → har budt. «Udugelig» means incompetent/useless.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-008",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Change to perfektum (present perfect) using «har».",
+    "source": "Det byr ham imot å be om et så malplassert stykke hjelp.",
+    "answer": "Det har budt ham imot å be om et så malplassert stykke hjelp.",
+    "alternates": ["Det har budt ham imot å be om et så malplassert stykke hjelp"],
+    "hint": "The perfektum partisipp of «by» is «budt», not «byd» or «byet». «Malplassert» means out of place.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-009",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum of «sige sammen» (to slump down, collapse).",
+    "sentence": "Han var så utmattet at han bare _____ sammen i stolen.",
+    "words": ["seg", "sa", "siget"],
+    "answer": "seg",
+    "hint": "Sige → seg → har seget. Don't confuse the preteritum «seg» with the reflexive pronoun «seg».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-010",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "order",
+    "tokens": ["Tåken", "seg", "sakte", "nedover", "den", "øde", "fjellsiden"],
+    "answer": "Tåken seg sakte nedover den øde fjellsiden.",
+    "alternates": ["Tåken seg sakte nedover den øde fjellsiden"],
+    "hint": "Sige nedover → seg nedover: the fog slowly sinks down the deserted mountainside.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-011",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum of «fyke».",
+    "sentence": "Snøen _____ over den øde marka i den kraftige vinden.",
+    "words": ["føk", "fyket", "fyk"],
+    "answer": "føk",
+    "hint": "Fyke → føk (also føyk) → har føket. «Fyke» itself means to rush or whirl about.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-c-012",
+    "topic": "sterke-verb-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Choose the correct preteritum of «kvekke til» (to flinch).",
+    "sentence": "Hun _____ til da smellingen kom helt uventet.",
+    "words": ["kvakk", "kvekket", "kvekker"],
+    "answer": "kvakk",
+    "hint": "Kvekke → kvakk → har kvekket. «Smelling» means a scolding.",
     "plusOnly": true
   }
 ]
