@@ -4,6 +4,47 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 ==========
 
+This ai-docs/implementation/c-grammar.md should focus on draft/c/uttrykk-c-new.json.merged and vocab-c-new.json.merged. These are already merged to src/lib/data/uttrykk-c.json and vocab-c.json. These files are created for c-grammar.md using ai-docs/implementation/c-uttrykk-addition.md.
+
+The following is from a previous session which didn't finish what I asked. Can you answer what I asked?
+
+ME: pnpm check passed without any problem. It seems Phase 2 has many topic names. What do you suggest about implementing these? How about 2 topics for each step? What do you think?
+
+CLAUDE: Two per step sounds reasonable, but I'd tweak it based on a few things in the plan:
+
+**Batch size:** 2 topics × ~8–12 questions each is a good review size — small enough that you can actually read every question before I move on, big enough that we're not doing 24 round-trips.
+
+**But the idiom topics need separate treatment.** `uttrykk-gjenkjenning-c-1/2/3` are much bigger (~40–60 questions each) and — per the "Open questions (resolved)" section — they're blocked on a prerequisite: only ~20 of 381 `uttrykk-c.json` entries currently overlap with items 83–103, so `uttrykk-c.json` needs expanding first per `ai-docs/implementation/c-uttrykk-addition.md`. I haven't looked at that doc yet — has that expansion already happened, or is it still pending? If it's pending, I'd suggest doing the 21 "normal" topics first and circling back to the idiom trio once that's sorted, rather than blocking on it now.
+
+**Proposed sequence** (alphabetical, per the plan's resolved build order), 2 at a time:
+
+| Step  | Topics                                                                        |
+| ----- | ----------------------------------------------------------------------------- |
+| 1     | adj-farger-uboyelige, adj-mer-mest                                            |
+| 2     | adj-partisipp-som-adjektiv, futurum-referert                                  |
+| 3     | jo-desto-komparativ, kondisjonalis-counterfactual                             |
+| 4     | koordinerende-konjunksjoner, leddsetning-som-fundament                        |
+| 5     | omskriving-passiv, ordet-sa                                                   |
+| 6     | ordfamilie-avledning, perfektum-pluskvamperfektum                             |
+| 7     | predikativ-agreement, preposisjoner-generelt-c                                |
+| 8     | preposisjoner-kroppsdel-uttrykk, sammensatte-substantiv                       |
+| 9     | sterke-verb-c, substantiv-uttrykk-c                                           |
+| 10    | ubestemt-artikkel-c, verbet-a-fa                                              |
+| 11    | verbform-i-kontekst (solo — 21 is odd)                                        |
+| —     | *(uttrykk-c.json expansion, if not already done)*                             |
+| 12–14 | uttrykk-gjenkjenning-c-1, -2, -3 (one per step — each is its own large batch) |
+
+That's 14 steps instead of 12, but keeps the idiom batches from blowing past a reviewable size.
+
+Some of these pairs are thematically unrelated (e.g. `adj-partisipp-som-adjektiv` + `futurum-referert`) since the plan deliberately kept build order alphabetical rather than thematic "so there's no implicit priority to debate." I can keep it strictly alphabetical like this, or re-pair by theme (all three adjective topics together, both preposition topics together, etc.) if you'd rather — thematic grouping might make each review session more coherent since you're fact-checking similar grammar points back to back. Your call.
+
+**One practical constraint:** I can't run `scripts/check-c-grammar-vocab.mjs` or `pnpm check` on your machine myself — I only have file read/write, not command execution there. So for each batch I'll manually cross-check every question against `vocab-c.json`/`uttrykk-c.json` while drafting (same logic the script would run), but you'll still want to build and run that script yourself at some point per Phase 3, and re-run `pnpm check` after each batch to catch anything I miss.
+
+Want me to start with step 1 (`adj-farger-uboyelige` + `adj-mer-mest`), or reorder to thematic pairing first?
+
+ME: Go ahead step 1.
+
+CLAUDE: Good, rules already exist for both topics. Now let's look at the grammar.json data file structure and existing C-topic content (if any), plus the source draft material and vocab-c.json/uttrykk-c.json for headword matching.
 ==========
 
 I have data-rules/vocab-and-uttrykk.md for your information.
