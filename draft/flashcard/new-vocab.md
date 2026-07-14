@@ -217,3 +217,6 @@ et smell
 å ule
 en skurk
 å oppdage
+prompøs
+
+å være skrevet ut av sykehuset: discharged from the hospital
