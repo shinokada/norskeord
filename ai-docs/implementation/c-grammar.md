@@ -604,10 +604,10 @@ priority to debate:
 10. `ordet-sa` ✅ Done
 11. `ordfamilie-avledning` ✅ Done
 12. `perfektum-pluskvamperfektum`  ✅ Done
-13. `predikativ-agreement`
-14. `preposisjoner-generelt-c`
+13. `predikativ-agreement` ✅ Done
+14. `preposisjoner-generelt-c` ✅ Done
 15. `preposisjoner-kroppsdel-uttrykk` ✅ Done
-16. `sammensatte-substantiv`
+16. `sammensatte-substantiv` ✅ Done
 17. `sterke-verb-c`
 18. `substantiv-uttrykk-c`
 19. `ubestemt-artikkel-c`

@@ -12,23 +12,7 @@ I will run `node scripts/check-c-grammar-vocab.mjs` so you don't need to run it.
 
 We are working on "Phase 2 — Content, built in alphabetical order by topic" in ai-docs/implementation/c-grammar.md.
 
-When I run `node scripts/check-c-grammar-vocab.mjs` I have the following errors. Can you fix it?
-
-
-
-⚠️   predikativ-agreement  (10 question(s), 2 unmatched)
-    ❌  gq-predikativ-003: no vocab-c.json/uttrykk-c.json headword found
-        "Choose the correct form to complete the fixed expression «duket for». Disse møtene var alltid _____ for krangel, uansett hvem som deltok. du…"
-    ❌  gq-predikativ-005: no vocab-c.json/uttrykk-c.json headword found
-        "Choose the correct form and preposition for the fixed expression «skikket til». Alle kandidatene var visstnok _____ stillingen, ifølge komit…"
-
-⚠️   preposisjoner-generelt-c  (10 question(s), 1 unmatched)
-    ❌  gq-prep-c-007: no vocab-c.json/uttrykk-c.json headword found
-        "Hun fór opp for søsteren sin under krangelen. Hun fór opp for søsteren sin under krangelen Hun fór opp for søsteren sin under krangelen"
-
----
-
-While you are working on "16. sammensatte-substantiv (building compound nouns from a descriptive phrase" in a previous session, it was terminated due to session limit.
+While you are working on "16. sammensatte-substantiv" in a previous session, it was terminated due to session limit.
 Please implement it.
 
 Can you write drafted questions to a scratch file (e.g. draft/c/grammar-16-sammensatte-substantiv.json) as soon as they exist, rather than holding them only in conversation — so nothing is lost if the session ends before merging.
