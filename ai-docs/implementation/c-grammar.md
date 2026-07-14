@@ -609,8 +609,8 @@ priority to debate:
 15. `preposisjoner-kroppsdel-uttrykk` ✅ Done
 16. `sammensatte-substantiv` ✅ Done
 17. `sterke-verb-c` ✅ Done
-18. `substantiv-uttrykk-c`
-19. `ubestemt-artikkel-c`
+18. `substantiv-uttrykk-c` ✅ Done
+19. `ubestemt-artikkel-c` ✅ Done
 20. `uttrykk-gjenkjenning-c-1` (depends on Phase 1.5) — cross-reference items 83–89 against
     `uttrykk-c.json`, select every real match, write fresh example sentences (the textbook's
     bolded sentence + 3 paraphrase options can inspire the question, never copy directly)
