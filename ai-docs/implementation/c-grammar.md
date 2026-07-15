@@ -613,7 +613,7 @@ priority to debate:
 19. `ubestemt-artikkel-c` ✅ Done
 20. `uttrykk-gjenkjenning-c-1` ✅ Done (37 questions; items 87 and 89 yielded no real
     `uttrykk-c.json` matches in this range, so their idioms were skipped)
-21. `uttrykk-gjenkjenning-c-2` (depends on Phase 1.5) — same approach, items 90–96
+21. `uttrykk-gjenkjenning-c-2` ✅ Done (depends on Phase 1.5) — same approach, items 90–96
 22. `uttrykk-gjenkjenning-c-3` (depends on Phase 1.5) — same approach, items 97–103
 23. `verbet-a-fa`
 24. `verbform-i-kontekst` — source verbs from `draft/c/grammar/25-39-verb.md` items 25–27

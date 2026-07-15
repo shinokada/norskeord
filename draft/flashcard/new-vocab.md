@@ -219,9 +219,9 @@ en skurk
 å oppdage
 prompøs
 
-å være skrevet ut av sykehuset: discharged from the hospital
-uten sidestykke: unparalleled, Uten sidestykke i norsk idrettshistorie
+idrettshistorie
 landskamp (en): international match
 spiss (en): striker
 å ydmyke
 ydmykende
+avsløring

@@ -26,3 +26,5 @@ Som perler på en snor: One after another in a neat sequence: Hun svarte riktig 
 helt enig: completely agree
 Må jo det, vet du: Have to do that, you know.: Skal du jobbe i helga? Må jo det, vet du.
 for tiden: currently
+å være skrevet ut av sykehuset: discharged from the hospital
+uten sidestykke: unparalleled, Uten sidestykke i norsk 

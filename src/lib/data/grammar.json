@@ -5948,7 +5948,7 @@
     "topic": "uttrykk-gjenkjenning-c-2",
     "cefr": "C",
     "type": "multiple-choice",
-    "prompt": "Etter noen glass vin virket han litt «på en snei».",
+    "prompt": "Etter noen glass vin var han litt «på en snei».",
     "options": ["lett beruset", "helt edru og fokusert", "sint og aggressiv"],
     "answer": "lett beruset",
     "hint": "«Være på en snei» means to be a bit off / slightly tipsy.",
