@@ -611,9 +611,8 @@ priority to debate:
 17. `sterke-verb-c` ✅ Done
 18. `substantiv-uttrykk-c` ✅ Done
 19. `ubestemt-artikkel-c` ✅ Done
-20. `uttrykk-gjenkjenning-c-1` (depends on Phase 1.5) — cross-reference items 83–89 against
-    `uttrykk-c.json`, select every real match, write fresh example sentences (the textbook's
-    bolded sentence + 3 paraphrase options can inspire the question, never copy directly)
+20. `uttrykk-gjenkjenning-c-1` ✅ Done (37 questions; items 87 and 89 yielded no real
+    `uttrykk-c.json` matches in this range, so their idioms were skipped)
 21. `uttrykk-gjenkjenning-c-2` (depends on Phase 1.5) — same approach, items 90–96
 22. `uttrykk-gjenkjenning-c-3` (depends on Phase 1.5) — same approach, items 97–103
 23. `verbet-a-fa`
