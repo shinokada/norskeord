@@ -5953,5 +5953,1340 @@
     "answer": "lett beruset",
     "hint": "«Være på en snei» means to be a bit off / slightly tipsy.",
     "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-001",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Sjefen ba om å få snakke med meg «under fire øyne» etter møtet.",
+    "options": [
+      "alene, uten andre til stede",
+      "foran hele avdelingen",
+      "gjennom en skriftlig e-post"
+    ],
+    "answer": "alene, uten andre til stede",
+    "hint": "«Under fire øyne» means in private / one-on-one.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-002",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter stadige forsinkelser hadde teamet «fått leverandøren opp i halsen».",
+    "options": [
+      "blitt lut lei av leverandøren",
+      "begynt å stole mer på leverandøren",
+      "sluttet å samarbeide med leverandøren for godt"
+    ],
+    "answer": "blitt lut lei av leverandøren",
+    "hint": "«Få noen opp i halsen» means to get fed up with someone.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-003",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da brannalarmen gikk, forlot de bygningen «hals over hode».",
+    "options": [
+      "i vill hast, uten å tenke seg om",
+      "rolig og behersket",
+      "etter en grundig evakueringsplan"
+    ],
+    "answer": "i vill hast, uten å tenke seg om",
+    "hint": "«Hals over hode» means headlong / in a great rush.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-004",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "«Kors på halsen, jeg skal ikke si det videre,» hvisket hun.",
+    "options": [
+      "Jeg lover helt sikkert",
+      "Jeg tviler sterkt på det",
+      "Jeg orker ikke å love noe"
+    ],
+    "answer": "Jeg lover helt sikkert",
+    "hint": "«Kors på halsen» means cross my heart (I promise).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-005",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Nyheten om ulykken «satte latteren i halsen» på alle gjestene.",
+    "options": [
+      "fikk latteren til å stoppe brått",
+      "fikk alle til å le enda høyere",
+      "gjorde ingen inntrykk på stemningen"
+    ],
+    "answer": "fikk latteren til å stoppe brått",
+    "hint": "«Sette latteren i halsen» means to make someone's laughter die in their throat.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-006",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hun «fikk hjertet i halsen» da bilen bak plutselig bråbremset.",
+    "options": [
+      "ble akutt livredd et øyeblikk",
+      "kjente seg helt rolig",
+      "ble irritert over trafikken"
+    ],
+    "answer": "ble akutt livredd et øyeblikk",
+    "hint": "«Få hjertet i halsen» means to have one's heart leap into one's throat.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-007",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter strykkarakteren bestemte han seg for å «ta seg i nakken» og lese mer.",
+    "options": [
+      "ta seg sammen og skjerpe innsatsen",
+      "gi opp studiene helt",
+      "klage til læreren om urettferdighet"
+    ],
+    "answer": "ta seg sammen og skjerpe innsatsen",
+    "hint": "«Ta seg i nakken» means to pull oneself together / get a grip.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-008",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Bedriften «fikk skattemyndighetene på nakken» etter at regnskapet ble gransket.",
+    "options": [
+      "ble forfulgt og presset av myndighetene",
+      "fikk et godt samarbeid med myndighetene",
+      "ble fritatt for videre kontroll"
+    ],
+    "answer": "ble forfulgt og presset av myndighetene",
+    "hint": "«Få noen på nakken» means to get someone on your back / have someone come down on you.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-009",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Krangelen om møtetidspunktet viste seg å være «storm i et vannglass».",
+    "options": [
+      "mye oppstyr om en bagatell",
+      "et alvorlig og varig konfliktnivå",
+      "starten på et langvarig samarbeidsbrudd"
+    ],
+    "answer": "mye oppstyr om en bagatell",
+    "hint": "«Storm i et vannglass» means a storm in a teacup.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-010",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Han «så rødt» da han oppdaget at noen hadde ripet opp bilen hans.",
+    "options": [
+      "ble øyeblikkelig rasende",
+      "ble helt likegyldig",
+      "begynte å le av situasjonen"
+    ],
+    "answer": "ble øyeblikkelig rasende",
+    "hint": "«Se rødt» means to see red.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-011",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter det svindelforsøket sjekker han alltid alt to ganger nå – «brent barn skyr ilden».",
+    "options": [
+      "den som har brent seg, blir forsiktig senere",
+      "den som våger mest, vinner mest",
+      "det nytter aldri å lære av feil"
+    ],
+    "answer": "den som har brent seg, blir forsiktig senere",
+    "hint": "«Brent barn skyr ilden» means once bitten, twice shy.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-012",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Den nyansatte praktikanten begynte å gi kirurgen råd om operasjonen – ren «egget vil lære høna å verpe».",
+    "options": [
+      "den uerfarne prøver å belære den erfarne",
+      "den erfarne lærer alltid av den uerfarne",
+      "begge parter har like mye kunnskap"
+    ],
+    "answer": "den uerfarne prøver å belære den erfarne",
+    "hint": "«Egget vil lære høna å verpe» means teaching your grandmother to suck eggs.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-013",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "De gamle telefonkioskene er nå «en saga blott» i bybildet.",
+    "options": [
+      "noe som tilhører fortiden og knapt finnes mer",
+      "fortsatt svært vanlig å se",
+      "under rask gjenoppbygging"
+    ],
+    "answer": "noe som tilhører fortiden og knapt finnes mer",
+    "hint": "«Være en saga blott» means to be a thing of the past.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-014",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Om den nye strategien faktisk fungerer, «får det stå sin prøve».",
+    "options": [
+      "det gjenstår å se hvordan det går",
+      "det er allerede helt sikkert mislykket",
+      "det er garantert en suksess"
+    ],
+    "answer": "det gjenstår å se hvordan det går",
+    "hint": "«Det får stå sin prøve» means that remains to be seen / time will tell.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-015",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da regnskapstallene ikke stemte overens, skjønte revisoren at «det var ugler i mosen».",
+    "options": [
+      "noe mistenkelig foregikk",
+      "alt var helt i orden",
+      "det bare var en enkel skrivefeil"
+    ],
+    "answer": "noe mistenkelig foregikk",
+    "hint": "«Det er ugler i mosen» means something's fishy / there's something suspicious going on.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-016",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Når finalekampen begynner i kveld, «blir det sus i serken».",
+    "options": [
+      "kommer det til å bli fart og spenning",
+      "kommer alt til å gå stille for seg",
+      "kommer publikum til å kjede seg"
+    ],
+    "answer": "kommer det til å bli fart og spenning",
+    "hint": "«Det blir sus i serken» means things are about to get lively / exciting.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-017",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "En kort powerlur midt på dagen kan «gjøre susen» når energien er lav.",
+    "options": [
+      "er akkurat det som trengs for å friske en opp",
+      "gjør ingen forskjell i det hele tatt",
+      "forverrer tretthetsfølelsen"
+    ],
+    "answer": "er akkurat det som trengs for å friske en opp",
+    "hint": "«Gjøre susen» means to do the trick.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-018",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Han «bet på kroken» med en gang og betalte for det falske lodd-tilbudet.",
+    "options": [
+      "lot seg lure uten å ane det",
+      "gjennomskuet svindelen med en gang",
+      "nektet å svare på telefonen"
+    ],
+    "answer": "lot seg lure uten å ane det",
+    "hint": "«Bite på kroken» means to take the bait / fall for it.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-019",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Onkelen som stjal fra familiebedriften, ble regnet som «det sorte fåret» i slekten.",
+    "options": [
+      "den i familien som bringer skam over de andre",
+      "den mest vellykkede i familien",
+      "den som holder familien sammen"
+    ],
+    "answer": "den i familien som bringer skam over de andre",
+    "hint": "«Det sorte får» means the black sheep.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-020",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Rapporten var full av feil fordi han skrev den i all hast – «hastverk er lastverk».",
+    "options": [
+      "det som gjøres i full fart, blir sjelden bra",
+      "jo raskere man jobber, desto bedre blir resultatet",
+      "det lønner seg alltid å vente lenge"
+    ],
+    "answer": "det som gjøres i full fart, blir sjelden bra",
+    "hint": "«Hastverk er lastverk» means haste makes waste.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-021",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter mange års rettssak bestemte naboene seg endelig for å «begrave stridsøksa».",
+    "options": [
+      "slutte fred og legge konflikten bak seg",
+      "starte en ny og enda hardere konflikt",
+      "flytte fra hverandre for godt"
+    ],
+    "answer": "slutte fred og legge konflikten bak seg",
+    "hint": "«Begrave stridsøksa» means to bury the hatchet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-022",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Den nye reformen «falt mellom to stoler» og hjalp verken elevene eller lærerne.",
+    "options": [
+      "klarte ikke å dekke noen av behovene skikkelig",
+      "løste alle problemene på en gang",
+      "ble tatt svært godt imot av begge parter"
+    ],
+    "answer": "klarte ikke å dekke noen av behovene skikkelig",
+    "hint": "«Falle mellom to stoler» means to fall between two stools.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-023",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Så snart underskriften var på plass, var «saken biff».",
+    "options": [
+      "var alt i boks og avgjort",
+      "gjensto det fortsatt mye arbeid",
+      "måtte de begynne forhandlingene på nytt"
+    ],
+    "answer": "var alt i boks og avgjort",
+    "hint": "«Saken er biff» means it's a done deal / all sorted.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-024",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Før du kritiserer kollegaene dine, bør du kanskje «feie for egen dør».",
+    "options": [
+      "ordne opp i dine egne feil først",
+      "fortsette å peke på andres feil",
+      "slutte å bry deg om egne feil"
+    ],
+    "answer": "ordne opp i dine egne feil først",
+    "hint": "«Feie for egen dør» means to sweep in front of one's own door (mind your own faults first).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-025",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Investorene følte seg «ført bak lyset» da de oppdaget de falske tallene.",
+    "options": [
+      "lurt og villedet med hensikt",
+      "grundig informert om alt",
+      "tatt godt vare på hele veien"
+    ],
+    "answer": "lurt og villedet med hensikt",
+    "hint": "«Føre noen bak lyset» means to deceive / mislead someone.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-026",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Vi «fikk bakoversveis» da vi så hvor mye leiligheten faktisk kostet.",
+    "options": [
+      "ble helt paff av overraskelse",
+      "syntes prisen virket helt rimelig",
+      "hadde ventet en enda høyere pris"
+    ],
+    "answer": "ble helt paff av overraskelse",
+    "hint": "«Få bakoversveis» means to be taken aback / stunned.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-027",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Ledelsen forsøkte å «feie skandalen under teppet» før den nådde pressen.",
+    "options": [
+      "skjule saken i stedet for å ta tak i den",
+      "gjøre saken kjent for alle ansatte",
+      "gi en offentlig unnskyldning umiddelbart"
+    ],
+    "answer": "skjule saken i stedet for å ta tak i den",
+    "hint": "«Feie noe under teppet» means to sweep something under the rug.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-028",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Gutten «fikk hatten passet» av bestefaren sin etter den frekke kommentaren.",
+    "options": [
+      "fikk skarp kjeft for oppførselen sin",
+      "fikk ros for å være ærlig",
+      "fikk lov til å gjøre det samme igjen"
+    ],
+    "answer": "fikk skarp kjeft for oppførselen sin",
+    "hint": "«Få hatten passet» means to get put in one's place / get told off.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-029",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Selv i en krise finner hun alltid en løsning – hun er «ikke tapt bak ei vogn».",
+    "options": [
+      "svært rådsnar og ressurssterk",
+      "helt hjelpeløs i vanskelige situasjoner",
+      "avhengig av andres hjelp hele tiden"
+    ],
+    "answer": "svært rådsnar og ressurssterk",
+    "hint": "«Ikke være tapt bak ei vogn» means to be resourceful / not born yesterday.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-030",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Selv om han smiler høflig, «skinner det gjennom» at han egentlig er skuffet.",
+    "options": [
+      "merkes det tydelig hva han egentlig føler",
+      "klarer han å skjule følelsene sine helt",
+      "later han bare som om han bryr seg"
+    ],
+    "answer": "merkes det tydelig hva han egentlig føler",
+    "hint": "«Det skinner gjennom» means it shows through (something is evident).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-031",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Fjorårets mester måtte «bite i gresset» i årets første runde.",
+    "options": [
+      "tape og bli slått ut",
+      "vinne igjen med stor margin",
+      "trekke seg frivillig fra konkurransen"
+    ],
+    "answer": "tape og bli slått ut",
+    "hint": "«Bite i gresset» means to bite the dust.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-032",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Læreren «bet seg merke i» at eleven plutselig virket sliten hver morgen.",
+    "options": [
+      "la merke til en detalj hun ikke hadde sett før",
+      "overså detaljen fullstendig",
+      "glemte det med en gang"
+    ],
+    "answer": "la merke til en detalj hun ikke hadde sett før",
+    "hint": "«Bite seg merke i noe» means to take note of something.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-033",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da han innså at hun hadde rett, måtte han «bite ordene i seg».",
+    "options": [
+      "holde tilbake det han hadde tenkt å si",
+      "gjenta påstanden enda høyere",
+      "skrive ned det han mente på papir"
+    ],
+    "answer": "holde tilbake det han hadde tenkt å si",
+    "hint": "«Bite ordene i seg» means to bite back one's words / eat one's words.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-034",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Under krigen ble familien «drevet fra skanse til skanse» uten et sted å slå seg til ro.",
+    "options": [
+      "stadig tvunget til å flykte videre",
+      "gitt fast bosted av myndighetene",
+      "hilst velkommen overalt de kom"
+    ],
+    "answer": "stadig tvunget til å flykte videre",
+    "hint": "«Drives fra skanse til skanse» means to be driven from pillar to post.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-035",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Til slutt måtte han «bøye seg i støvet» og godta sjefens beslutning.",
+    "options": [
+      "gi etter ydmykt uten videre motstand",
+      "kjempe enda hardere for sitt syn",
+      "forlate jobben i protest"
+    ],
+    "answer": "gi etter ydmykt uten videre motstand",
+    "hint": "«Bøye seg i støvet» means to bow down in the dust (grovel, submit humbly).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-036",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Selgeren prøvde seg med et billig triks, men kunden «var ikke født i går».",
+    "options": [
+      "var slett ikke dum eller lettlurt",
+      "trodde blindt på alt som ble sagt",
+      "manglet erfaring med denne typen salg"
+    ],
+    "answer": "var slett ikke dum eller lettlurt",
+    "hint": "«Ikke være født i går» means not to be born yesterday.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-037",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter det tredje mislykkede forsøket «ga han seg ende over».",
+    "options": [
+      "ga han fullstendig opp",
+      "prøvde han en fjerde gang med en gang",
+      "ble han bare enda mer motivert"
+    ],
+    "answer": "ga han fullstendig opp",
+    "hint": "«Gi seg ende over» means to give up completely / throw in the towel.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-038",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Treneren «ga spillerne inn» skikkelig i pausen etter den dårlige første omgangen.",
+    "options": [
+      "kjeftet kraftig på dem",
+      "roste dem varmt for innsatsen",
+      "ba dem ta det med ro"
+    ],
+    "answer": "kjeftet kraftig på dem",
+    "hint": "«Gi noen inn» means to let someone have it / give someone a piece of one's mind.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-039",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Publikum «gikk berserk» da hjemmelaget scoret i det siste minuttet.",
+    "options": [
+      "ble fullstendig ville av begeistring",
+      "forlot stadion i stillhet",
+      "reagerte helt likegyldig"
+    ],
+    "answer": "ble fullstendig ville av begeistring",
+    "hint": "«Gå berserk» means to go berserk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-040",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Den nye sjefen pleide å «måle» de ansatte «med øynene» før hun sa et eneste ord.",
+    "options": [
+      "vurderte dem nøye med et kritisk blikk",
+      "hilste varmt på hver enkelt",
+      "ignorerte dem fullstendig"
+    ],
+    "answer": "vurderte dem nøye med et kritisk blikk",
+    "hint": "«Måle noen med øynene» means to size someone up (with a look).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-041",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hun turte ikke si den ærlige tilbakemeldingen høyt, og endte opp med å «brenne inne med» den.",
+    "options": [
+      "fikk aldri sagt det hun egentlig mente",
+      "sa akkurat det hun mente uten å nøle",
+      "skrev det hele ned i en e-post i stedet"
+    ],
+    "answer": "fikk aldri sagt det hun egentlig mente",
+    "hint": "«Brenne inne med noe» means to be left with something unsaid / stuck with something.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-042",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "I en så følsom sak må politikeren «veie sine ord» nøye.",
+    "options": [
+      "tenke nøye gjennom hva hun sier",
+      "si akkurat det som faller henne inn",
+      "unngå å uttale seg i det hele tatt"
+    ],
+    "answer": "tenke nøye gjennom hva hun sier",
+    "hint": "«Veie sine ord» means to weigh one's words.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-043",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "De to små bedriftene «slo seg i lag» for å konkurrere med de store aktørene.",
+    "options": [
+      "gikk sammen og samarbeidet",
+      "konkurrerte enda hardere mot hverandre",
+      "gikk konkurs hver for seg"
+    ],
+    "answer": "gikk sammen og samarbeidet",
+    "hint": "«Slå seg i lag med noen» means to team up with someone.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-044",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "For at omorganiseringen skulle lykkes, måtte alle ansatte «være med på laget».",
+    "options": [
+      "støtte opp om og delta i fellesskapet",
+      "holde seg helt utenfor prosessen",
+      "motarbeide ledelsens beslutninger"
+    ],
+    "answer": "støtte opp om og delta i fellesskapet",
+    "hint": "«Være med på laget» means to be part of the team / be on board.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-045",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Han virket vennlig, men viste seg å være «en ulv i fåreklær».",
+    "options": [
+      "en ondsinnet person som skjuler seg bak en snill fasade",
+      "en person som alltid er ærlig og åpen",
+      "en som ofrer seg for andre uten baktanker"
+    ],
+    "answer": "en ondsinnet person som skjuler seg bak en snill fasade",
+    "hint": "«En ulv i fåreklær» means a wolf in sheep's clothing.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-046",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Ambulansen kom «i grevens tid», akkurat idet han mistet bevisstheten.",
+    "options": [
+      "i akkurat rett øyeblikk, like før det var for sent",
+      "altfor sent til å utgjøre noen forskjell",
+      "lenge før det egentlig var nødvendig"
+    ],
+    "answer": "i akkurat rett øyeblikk, like før det var for sent",
+    "hint": "«I grevens tid» means in the nick of time.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-047",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hun bestod den vanskelige eksamenen «med glans».",
+    "options": [
+      "på en glimrende og imponerende måte",
+      "så vidt, med nød og neppe",
+      "først etter et par forsøk til"
+    ],
+    "answer": "på en glimrende og imponerende måte",
+    "hint": "«Med glans» means with flying colors.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-048",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Kritikerne «ga den nye filmen det glatte lag» i avisene dagen etter premieren.",
+    "options": [
+      "felte en knusende dom over filmen",
+      "roste filmen i høye toner",
+      "unnlot å nevne filmen i det hele tatt"
+    ],
+    "answer": "felte en knusende dom over filmen",
+    "hint": "«Gi noen det glatte lag» means to lay into someone / give someone a piece of one's mind.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-049",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Han «gikk på limpinnen» og betalte forskudd for et hus som aldri fantes.",
+    "options": [
+      "lot seg lure av et svindelforsøk",
+      "gjennomskuet svindelforsøket med en gang",
+      "tjente gode penger på avtalen"
+    ],
+    "answer": "lot seg lure av et svindelforsøk",
+    "hint": "«Gå på limpinnen» means to fall for a trick / take the bait.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-050",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Publikum «gikk fem på» og trodde hele stuntet var ekte.",
+    "options": [
+      "ble fullstendig lurt trill rundt",
+      "gjennomskuet trikset med en gang",
+      "brydde seg ikke om hva som skjedde"
+    ],
+    "answer": "ble fullstendig lurt trill rundt",
+    "hint": "«Gå fem på» means to fall for a trick / walk right into a trap.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-051",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Løftet fra i fjor «står fortsatt ved lag», ifølge direktøren.",
+    "options": [
+      "gjelder fremdeles og er ikke endret",
+      "er blitt trukket tilbake for lengst",
+      "gjaldt bare for en kort periode"
+    ],
+    "answer": "gjelder fremdeles og er ikke endret",
+    "hint": "«Stå ved lag» means to remain valid / still hold true.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-052",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Han følte endelig at de to avdelingene begynte å «spille på lag med» hverandre.",
+    "options": [
+      "samarbeide i stedet for å motarbeide hverandre",
+      "konkurrere hardt mot hverandre",
+      "unngå all kontakt med hverandre"
+    ],
+    "answer": "samarbeide i stedet for å motarbeide hverandre",
+    "hint": "«Spille på lag med noen» means to play along with someone / be on the same team.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-053",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter tjue år som forretningspartnere valgte de til slutt å «bryte lag».",
+    "options": [
+      "avslutte samarbeidet og gå hver til sitt",
+      "utvide samarbeidet ytterligere",
+      "slå selskapene sine sammen"
+    ],
+    "answer": "avslutte samarbeidet og gå hver til sitt",
+    "hint": "«Bryte lag» means to part ways.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-054",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Har de to endelig «kommet i lag» etter alle disse månedene med flørting?",
+    "options": [
+      "blitt kjærester",
+      "sluttet å snakke med hverandre",
+      "begynt å jobbe sammen"
+    ],
+    "answer": "blitt kjærester",
+    "hint": "«Komme i lag» means to become a couple / start going out with someone.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-055",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Frivillige jobber hardt for å «holde de gamle håndverkstradisjonene ved lag».",
+    "options": [
+      "sørge for at de ikke går tapt",
+      "la dem forsvinne uten videre",
+      "erstatte dem med moderne metoder"
+    ],
+    "answer": "sørge for at de ikke går tapt",
+    "hint": "«Holde noe ved lag» means to keep something alive / maintained.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-056",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Det er urettferdig å «skjære alle innvandrere over én kam».",
+    "options": [
+      "bedømme alle likt uten å se individuelle forskjeller",
+      "gi hver enkelt en rettferdig og individuell vurdering",
+      "behandle alle med samme respekt"
+    ],
+    "answer": "bedømme alle likt uten å se individuelle forskjeller",
+    "hint": "«Skjære alle over én kam» means to tar everyone with the same brush.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-057",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter seieren «slo han seg på brystet» foran hele laget.",
+    "options": [
+      "viste tydelig stolthet over prestasjonen",
+      "unnskyldte seg for å ha vunnet",
+      "trakk seg raskt tilbake i stillhet"
+    ],
+    "answer": "viste tydelig stolthet over prestasjonen",
+    "hint": "«Slå seg på brystet» means to beat one's chest (boast).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-058",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Mens resten av teamet jobbet på spreng, «satt han bare med hendene i fanget».",
+    "options": [
+      "forholdt seg helt passiv og gjorde ingenting",
+      "jobbet hardere enn alle de andre",
+      "hjalp aktivt til med alt"
+    ],
+    "answer": "forholdt seg helt passiv og gjorde ingenting",
+    "hint": "«Sitte med hendene i fanget» means to sit idle / twiddle one's thumbs.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-059",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Naboen «stikker alltid nesa si i» ting som ikke angår henne.",
+    "options": [
+      "blander seg inn i andres saker",
+      "holder seg helt unna andres saker",
+      "hjelper til når noen spør pent"
+    ],
+    "answer": "blander seg inn i andres saker",
+    "hint": "«Stikke nesa si i noe» means to stick one's nose into something.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-060",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Til tross for alt bråket «løftet han ikke en eneste finger» for å hjelpe til med flyttingen.",
+    "options": [
+      "gjorde overhodet ingenting for å bidra",
+      "jobbet iherdig fra morgen til kveld",
+      "hjalp til akkurat passe mye"
+    ],
+    "answer": "gjorde overhodet ingenting for å bidra",
+    "hint": "«Ikke løfte en finger» means to not lift a finger.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-061",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da hun tilbød gratis kake, «lot han seg ikke be to ganger».",
+    "options": [
+      "tok imot tilbudet med en gang",
+      "takket nølende nei",
+      "spurte om han kunne vente til senere"
+    ],
+    "answer": "tok imot tilbudet med en gang",
+    "hint": "«Ikke la seg be to ganger» means to not need to be asked twice.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-062",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Læreren «gikk i forbønn for» eleven da rektor vurderte å bortvise ham.",
+    "options": [
+      "talte elevens sak overfor rektor",
+      "krevde strengere straff for eleven",
+      "nektet å blande seg inn i saken"
+    ],
+    "answer": "talte elevens sak overfor rektor",
+    "hint": "«Gå i forbønn for noen» means to intercede on someone's behalf.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-063",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "På grunn av den strenge kontrakten følte hun seg «bundet på hender og føtter».",
+    "options": [
+      "fratatt all mulighet til å bestemme selv",
+      "helt fri til å gjøre som hun ville",
+      "ansvarlig for å ta alle avgjørelser alene"
+    ],
+    "answer": "fratatt all mulighet til å bestemme selv",
+    "hint": "«Være bundet på hender og føtter» means to be bound hand and foot.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-064",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da kontrakten omsider var signert, var det ingen vei tilbake – «bordet fanger».",
+    "options": [
+      "avtalen er endelig og kan ikke omgjøres",
+      "avtalen kan endres når som helst",
+      "ingen av partene er bundet av avtalen"
+    ],
+    "answer": "avtalen er endelig og kan ikke omgjøres",
+    "hint": "«Bordet fanger» means there's no turning back / the die is cast.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-065",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da kritikken haglet mot henne, «bet hun fra seg» i et intervju.",
+    "options": [
+      "svarte kraftig tilbake mot kritikken",
+      "tok imot kritikken uten et ord",
+      "trakk seg helt tilbake fra offentligheten"
+    ],
+    "answer": "svarte kraftig tilbake mot kritikken",
+    "hint": "«Bite fra seg» means to fight back / bite back.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-066",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter det tredje varselet «fikk han fyken» fra jobben.",
+    "options": [
+      "ble han sparket",
+      "ble han forfremmet",
+      "fikk han lønnsøkning"
+    ],
+    "answer": "ble han sparket",
+    "hint": "«Få fyken» means to get the boot / get fired.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-067",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "I dette prosjektet var det alltid hun som «dro lasset» når det virkelig gjaldt.",
+    "options": [
+      "bar den tyngste byrden av arbeidet",
+      "gjorde minst av alle i gruppen",
+      "sto helt utenfor arbeidet"
+    ],
+    "answer": "bar den tyngste byrden av arbeidet",
+    "hint": "«Dra lasset» means to carry the load / bear the brunt of the work.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-068",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da politiet spurte henne om detaljene, «dro hun på det» før hun svarte.",
+    "options": [
+      "nølte og holdt litt igjen",
+      "svarte umiddelbart og ærlig",
+      "nektet å si noe som helst"
+    ],
+    "answer": "nølte og holdt litt igjen",
+    "hint": "«Dra på det» means to drag one's feet / be reluctant.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-069",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Ingen turte å «dra ekspertens konklusjon i tvil» på det åpne møtet.",
+    "options": [
+      "stille spørsmål ved om konklusjonen stemte",
+      "gjenta konklusjonen ordrett",
+      "gi konklusjonen full støtte uten videre"
+    ],
+    "answer": "stille spørsmål ved om konklusjonen stemte",
+    "hint": "«Dra noe i tvil» means to call something into question / cast doubt on something.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-070",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter ankelskaden «dro han på det ene beinet» i flere uker.",
+    "options": [
+      "gikk med en tydelig halting",
+      "gikk helt normalt igjen",
+      "kunne ikke gå i det hele tatt"
+    ],
+    "answer": "gikk med en tydelig halting",
+    "hint": "«Dra på det ene beinet» means to walk with a limp.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-071",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Selskapet «dro lærdom av» fjorårets nedgang og endret hele strategien.",
+    "options": [
+      "lærte noe verdifullt av en tidligere feil",
+      "gjentok nøyaktig de samme feilene igjen",
+      "ignorerte det som hadde skjedd tidligere"
+    ],
+    "answer": "lærte noe verdifullt av en tidligere feil",
+    "hint": "«Dra lærdom av noe» means to learn a lesson from something.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-072",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "I stedet for å søke jobb «drev han bare dank» hele sommeren.",
+    "options": [
+      "lot dagene gå uten å foreta seg noe",
+      "jobbet iherdig fra tidlig morgen",
+      "reiste jorden rundt på jobbjakt"
+    ],
+    "answer": "lot dagene gå uten å foreta seg noe",
+    "hint": "«Drive dank» means to loaf around / laze about.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-073",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Kollegaene «drev gjøn med» den nyansatte hele den første uka.",
+    "options": [
+      "tullet og fleipet vennlig med ham",
+      "unngikk ham fullstendig",
+      "klaget alvorlig på arbeidet hans"
+    ],
+    "answer": "tullet og fleipet vennlig med ham",
+    "hint": "«Drive gjøn med noen» means to make fun of someone / poke fun at someone.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-074",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Med et slikt talent kommer hun garantert til å «drive det langt» i bransjen.",
+    "options": [
+      "nå svært langt og lykkes stort",
+      "aldri komme videre enn nybegynnernivå",
+      "gi opp karrieren etter kort tid"
+    ],
+    "answer": "nå svært langt og lykkes stort",
+    "hint": "«Drive det langt» means to go far / make a great success of oneself.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-075",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Politiet «drev demonstrantene på flukt» med tåregass.",
+    "options": [
+      "fikk dem til å flykte i all hast",
+      "inviterte dem til forhandlinger",
+      "lot dem stå helt i fred"
+    ],
+    "answer": "fikk dem til å flykte i all hast",
+    "hint": "«Drive noen på flukt» means to put someone to flight / chase someone away.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-076",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Vitsene hans var morsomme i starten, men til slutt «drev han det for langt».",
+    "options": [
+      "gikk han over grensen for hva som var greit",
+      "holdt han seg akkurat innenfor grensen",
+      "sluttet han altfor tidlig med vitsene"
+    ],
+    "answer": "gikk han over grensen for hva som var greit",
+    "hint": "«Drive det for langt» means to take it too far / go too far.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-077",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hele arrangementet kommer til å «stå og falle med» om været holder seg fint.",
+    "options": [
+      "avhenger fullstendig av denne ene faktoren",
+      "er upåvirket av hva som helst",
+      "har allerede flere reserveløsninger klare"
+    ],
+    "answer": "avhenger fullstendig av denne ene faktoren",
+    "hint": "«Stå og falle med noe» means to stand or fall on something (success depends entirely on it).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-078",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Ventetiden på flyplassen «falt ham lang» etter at flyet ble kraftig forsinket.",
+    "options": [
+      "kjentes svært langtrukken og treg",
+      "gikk overraskende raskt",
+      "merket han knapt noe av"
+    ],
+    "answer": "kjentes svært langtrukken og treg",
+    "hint": "«Noe faller noen langt» means time feels like it drags / hangs heavy on someone.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-079",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "I prekenen advarte presten menigheten mot å «falle i synd».",
+    "options": [
+      "handle mot religiøse og moralske normer",
+      "gjøre gode gjerninger for andre",
+      "følge kirkens regler strengt"
+    ],
+    "answer": "handle mot religiøse og moralske normer",
+    "hint": "«Falle i synd» means to fall into sin.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-080",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Planene om en ny lekepark «falt til jorden» på grunn av pengemangel.",
+    "options": [
+      "ble skrinlagt og førte ikke fram",
+      "ble gjennomført akkurat som planlagt",
+      "ble utsatt til neste år"
+    ],
+    "answer": "ble skrinlagt og førte ikke fram",
+    "hint": "«Falle til jorden» means to fall through / come to nothing.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-081",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Forslaget hans om kortere møter «falt i god jord» hos hele ledelsen.",
+    "options": [
+      "ble tatt svært godt imot",
+      "ble avvist umiddelbart",
+      "skapte sterk motstand"
+    ],
+    "answer": "ble tatt svært godt imot",
+    "hint": "«Falle i god jord» means to fall on fertile ground / be well received.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-082",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Advarslene fra brannvesenet «falt på steingrunn» – ingen tok dem alvorlig.",
+    "options": [
+      "ble fullstendig ignorert",
+      "ble fulgt til punkt og prikke",
+      "skapte umiddelbar handling"
+    ],
+    "answer": "ble fullstendig ignorert",
+    "hint": "«Falle på steingrunn» means to fall on stony ground / fail to take root.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-083",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Talen hennes om klimaendringer «hadde stor gjenklang» hos de unge tilhørerne.",
+    "options": [
+      "traff dem dypt og engasjerte dem",
+      "gjorde overhodet ikke inntrykk",
+      "ble raskt glemt av alle"
+    ],
+    "answer": "traff dem dypt og engasjerte dem",
+    "hint": "«Ha gjenklang» means to have resonance / strike a chord.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-084",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Med tre ekstra prosjekter «på sin hals» fikk hun knapt sove om natten.",
+    "options": [
+      "å være tynget med en stor byrde av ansvar",
+      "å ha fullstendig fri fra alt ansvar",
+      "å ha akkurat passe mye å gjøre"
+    ],
+    "answer": "å være tynget med en stor byrde av ansvar",
+    "hint": "«Være noe på sin hals» means to have something on one's hands / be burdened with something.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-085",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Ingen protesterte mot forslaget, og møtelederen konkluderte med at «den som tier, samtykker».",
+    "options": [
+      "den som ikke sier imot, regnes som enig",
+      "den som er stille, har ingen mening",
+      "den som tier, er alltid uenig"
+    ],
+    "answer": "den som ikke sier imot, regnes som enig",
+    "hint": "«Den som tier, samtykker» means silence implies consent.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-086",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Bestemor fyller snart nitti, men «alderen biter ikke på henne».",
+    "options": [
+      "hun virker ikke eldre selv om årene går",
+      "hun blir tydelig svakere for hvert år",
+      "hun har sluttet å telle bursdagene sine"
+    ],
+    "answer": "hun virker ikke eldre selv om årene går",
+    "hint": "«Alderen biter ikke på henne» means age does not catch up with her.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-087",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Gutten «ble tatt på fersken» akkurat idet han stjal kjeks fra skapet.",
+    "options": [
+      "ble oppdaget midt i den forbudte handlingen",
+      "klarte å snike seg unna uoppdaget",
+      "innrømmet tyveriet frivillig etterpå"
+    ],
+    "answer": "ble oppdaget midt i den forbudte handlingen",
+    "hint": "«Bli tatt på fersken» means to be caught in the act / caught red-handed.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-088",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Han ble så rasende at han nesten «dro til» kollegaen sin i møtet.",
+    "options": [
+      "slo eller traff noen",
+      "roste noen varmt",
+      "ga noen en klem"
+    ],
+    "answer": "slo eller traff noen",
+    "hint": "«Dra til noen» means to hit / strike someone.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-c3-089",
+    "topic": "uttrykk-gjenkjenning-c-3",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Den konstante boringen fra byggeplassen «drev naboen til vanvidd».",
+    "options": [
+      "gjorde noen nesten gal av irritasjon",
+      "roet naboen fullstendig ned",
+      "gikk helt upåaktet hen for naboen"
+    ],
+    "answer": "gjorde noen nesten gal av irritasjon",
+    "hint": "«Drive noen til vanvidd» means to drive someone crazy / mad.",
+    "plusOnly": true
   }
 ]
