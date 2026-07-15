@@ -172,7 +172,10 @@ const IRREGULAR_VERB_FORMS = {
   dro: 'dra',
   dratt: 'dra',
   så: 'se',
-  sett: 'se'
+  sett: 'se',
+  lot: 'la',
+  bet: 'bite',
+  drev: 'drive'
 };
 
 function irregularCandidate(word) {
@@ -231,7 +234,11 @@ for (const entry of [...vocabC, ...uttrykkC]) {
     .map((w) => w.replace(/[.,!?;:'"()«»]/g, ''))
     .filter((w) => w && !STOPWORDS.has(w) && w.length > 1);
   if (parts.length <= 1) {
-    singleWordLemmas.add(lemma);
+    // A lemma can end up with only one non-stopword part (e.g. "dra til noen"
+    // → "til"/"noen" are both stopwords, leaving just "dra"). Register that
+    // single content word itself, not the original multi-word lemma string —
+    // the latter could never match a single extracted token anyway.
+    singleWordLemmas.add(parts[0] ?? lemma);
   } else {
     phraseLemmas.push({ lemma, parts });
   }
@@ -247,7 +254,9 @@ function questionText(q) {
 }
 
 function extractWords(text) {
-  return (text.toLowerCase().match(/[a-zæøå]+/g) || []).filter((w) => w.length > 1);
+  // Includes é (e.g. "én") alongside æøå so accented Norwegian words are
+  // still tokenized and matchable against lemma parts.
+  return (text.toLowerCase().match(/[a-zæøåé]+/g) || []).filter((w) => w.length > 1);
 }
 
 /** Returns the matching lemma (or null) for a question. */
