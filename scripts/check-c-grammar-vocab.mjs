@@ -120,9 +120,70 @@ const STOPWORDS = new Set([
   'noen'
 ]);
 
+// Common Norwegian strong/irregular verbs: the suffix-stripping stemmer below
+// can't reduce preterite/perfect forms like "hadde", "gikk", "tok" back to
+// their infinitive ("ha", "gå", "ta"), which caused real, correct uttrykk
+// matches to be missed whenever a grammar question narrated the idiom in
+// past tense (e.g. "hadde ikke en sjanse i havet" for lemma "ikke ha en
+// sjanse i havet"). Maps inflected form -> infinitive.
+const IRREGULAR_VERB_FORMS = {
+  hadde: 'ha',
+  hatt: 'ha',
+  gikk: 'gå',
+  gått: 'gå',
+  tok: 'ta',
+  tatt: 'ta',
+  satte: 'sette',
+  satt: 'sette',
+  var: 'være',
+  vært: 'være',
+  er: 'være',
+  ga: 'gi',
+  gav: 'gi',
+  gitt: 'gi',
+  la: 'legge',
+  lagt: 'legge',
+  fikk: 'få',
+  fått: 'få',
+  ble: 'bli',
+  blitt: 'bli',
+  sa: 'si',
+  sagt: 'si',
+  visste: 'vite',
+  visst: 'vite',
+  kom: 'komme',
+  kommet: 'komme',
+  sto: 'stå',
+  stod: 'stå',
+  stått: 'stå',
+  slo: 'slå',
+  slått: 'slå',
+  gjorde: 'gjøre',
+  gjort: 'gjøre',
+  fant: 'finne',
+  funnet: 'finne',
+  holdt: 'holde',
+  het: 'hete',
+  løp: 'løpe',
+  løpt: 'løpe',
+  falt: 'falle',
+  bar: 'bære',
+  båret: 'bære',
+  dro: 'dra',
+  dratt: 'dra',
+  så: 'se',
+  sett: 'se'
+};
+
+function irregularCandidate(word) {
+  return IRREGULAR_VERB_FORMS[word] ?? null;
+}
+
 /** All suffix-stripped candidates of a word, up to two strips deep (handles double endings). */
 function stemCandidates(word) {
   const level1 = new Set([word]);
+  const irregular = irregularCandidate(word);
+  if (irregular) level1.add(irregular);
   for (const suf of SUFFIXES) {
     if (word.endsWith(suf) && word.length - suf.length >= 3) {
       level1.add(word.slice(0, -suf.length));
@@ -162,7 +223,13 @@ const phraseLemmas = [];
 for (const entry of [...vocabC, ...uttrykkC]) {
   const lemma = (entry.lemma ?? '').toLowerCase().trim();
   if (!lemma) continue;
-  const parts = lemma.split(/\s+/).filter((w) => !STOPWORDS.has(w) && w.length > 1);
+  // Strip punctuation (e.g. the comma in proverbs like "som man reder, ligger
+  // man") so it doesn't get stuck to a word and prevent that word from ever
+  // matching plain question text.
+  const parts = lemma
+    .split(/\s+/)
+    .map((w) => w.replace(/[.,!?;:'"()«»]/g, ''))
+    .filter((w) => w && !STOPWORDS.has(w) && w.length > 1);
   if (parts.length <= 1) {
     singleWordLemmas.add(lemma);
   } else {
