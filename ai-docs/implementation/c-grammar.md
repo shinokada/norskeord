@@ -614,9 +614,13 @@ priority to debate:
 20. `uttrykk-gjenkjenning-c-1` ✅ Done (37 questions; items 87 and 89 yielded no real
     `uttrykk-c.json` matches in this range, so their idioms were skipped)
 21. `uttrykk-gjenkjenning-c-2` ✅ Done (depends on Phase 1.5) — same approach, items 90–96
-22. `uttrykk-gjenkjenning-c-3` (depends on Phase 1.5) — same approach, items 97–103
-23. `verbet-a-fa`
-24. `verbform-i-kontekst` — source verbs from `draft/c/grammar/25-39-verb.md` items 25–27
+22. `uttrykk-gjenkjenning-c-3` ✅ Done (depends on Phase 1.5) — same approach, items 97–103
+23. `verbet-a-fa` ✅ Done (16 questions)
+24. `verbform-i-kontekst` ✅ Done (11 questions; fresh sentences testing infinitiv/presens across
+    2–4-verb chains — modal/`pleier å`/`begynner å`/`prøve å`/`greier å`/`orker å`/`tør å` chains
+    — anchored to real `vocab-c.json` words like `engasjere`, `fortrenge`, `utrette`, `bilegge`,
+    `adlyde`, `vedgå`, `motstå`, `avsky`, `besinne seg`, `klamre seg til`; inspired by the pattern
+    in `draft/c/grammar/25-39-verb.md` items 25–27 rather than adapted from its sentences)
 
 ### Phase 3 — Vocab verification
 
