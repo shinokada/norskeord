@@ -2,12 +2,14 @@
   import { page } from '$app/state';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import { removeHyphensAndCapitalize } from '$lib/utils';
+  import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages';
   import type { Snapshot } from './$types';
 
   let { data } = $props();
 
   let isPlus = $derived(page.data.plan === 'plus');
+  let isNb = $derived(localeStore.current === 'nb');
 
   const levelColors: Record<string, { heading: string; badge: string; accent: string }> = {
     a1: {
@@ -221,7 +223,13 @@
                   ? 'opacity-60 '
                   : ''}text-gray-800 dark:text-gray-100"
               >
-                {rule ? rule.titleEn : t.topic}
+                {rule
+                  ? t.levels.includes('C')
+                    ? rule.titleNb
+                    : isNb
+                      ? rule.titleNb
+                      : rule.titleEn
+                  : t.topic}
               </h3>
               {#if locked}
                 <span
@@ -247,7 +255,13 @@
                 ? 'opacity-60 '
                 : ''}text-gray-600 dark:text-gray-300"
             >
-              {rule ? rule.explanationEn : ''}
+              {rule
+                ? t.levels.includes('C')
+                  ? rule.explanationNb
+                  : isNb
+                    ? rule.explanationNb
+                    : rule.explanationEn
+                : ''}
             </p>
             <div class="mt-2 text-xs text-gray-600 dark:text-gray-300">{t.total} questions</div>
           </a>
