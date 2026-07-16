@@ -1,0 +1,14 @@
+Diacritic issue scan (all languages): c
+Generated: 2026-07-13T18:34:40.866Z
+Dir: draft
+Languages: norwegian, german, spanish
+Mode: REPORT ONLY
+
+=== vocab-c-new.json ===
+Auto-detected (fixable): 0
+Needs manual review (ambiguous): 0
+
+=== uttrykk-c-new.json ===
+Auto-detected (fixable): 0
+Needs manual review (ambiguous): 0
+

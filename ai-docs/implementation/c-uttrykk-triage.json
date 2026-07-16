@@ -1,0 +1,2031 @@
+[
+  {
+    "item": 83,
+    "sub": 1,
+    "sentence": "Julen står omsider for døra.",
+    "correct_paraphrase": "Etter lang tids venting er det jul.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "stå for døra"
+  },
+  {
+    "item": 83,
+    "sub": 3,
+    "sentence": "Vi må holde hjulene i gang.",
+    "correct_paraphrase": "Vi må holde bedriftens virksomhet oppe.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "holde hjulene i gang"
+  },
+  {
+    "item": 83,
+    "sub": 4,
+    "sentence": "Han føler nesten at han har vært passasjer på nissens slede.",
+    "correct_paraphrase": "Han føler nesten at han har vært passasjer på nissens doning.",
+    "bucket": "skip",
+    "canonical_lemma": null,
+    "note": "one-off literary/textbook phrase, not a fixed dictionary idiom"
+  },
+  {
+    "item": 83,
+    "sub": 5,
+    "sentence": "Forvandlingen er total.",
+    "correct_paraphrase": "Forvandlingen er fullstendig.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 83,
+    "sub": 6,
+    "sentence": "Lysene funkler.",
+    "correct_paraphrase": "Lysene blinker.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 83,
+    "sub": 7,
+    "sentence": "Det knaker fra peisen.",
+    "correct_paraphrase": "Det knitrer fra peisen.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 83,
+    "sub": 8,
+    "sentence": "Julestrømpen bugner.",
+    "correct_paraphrase": "Julestrømpen er stappfull.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 83,
+    "sub": 9,
+    "sentence": "Moren er ikke det minste trist.",
+    "correct_paraphrase": "Moren er absolutt ikke trist.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke det minste"
+  },
+  {
+    "item": 83,
+    "sub": 10,
+    "sentence": "Hun fryder seg over julen.",
+    "correct_paraphrase": "Hun gleder seg over julen.",
+    "bucket": "vocab",
+    "canonical_lemma": "fryde seg"
+  },
+  {
+    "item": 83,
+    "sub": 11,
+    "sentence": "Verkende skuldre er som blåst bort.",
+    "correct_paraphrase": "Verkende skuldre har blitt glemt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være som blåst bort"
+  },
+  {
+    "item": 83,
+    "sub": 12,
+    "sentence": "Han strekker seg så lang han er.",
+    "correct_paraphrase": "Han strekker seg i sin fulle lengde.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "strekke seg så lang man er"
+  },
+  {
+    "item": 83,
+    "sub": 13,
+    "sentence": "Han kjenner en snikende følelse.",
+    "correct_paraphrase": "Han kjenner en ulmende følelse.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 83,
+    "sub": 14,
+    "sentence": "Kommer ikke julemorgen med toner og klang?",
+    "correct_paraphrase": "Kommer ikke julemorgen med kiming og klinging?",
+    "bucket": "skip",
+    "canonical_lemma": null,
+    "note": "poetic pairing, not a dictionary idiom"
+  },
+  {
+    "item": 83,
+    "sub": 15,
+    "sentence": "Det ligger en slags tomhet i veggene.",
+    "correct_paraphrase": "Det hviler en uggen stemning i huset.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 83,
+    "sub": 16,
+    "sentence": "Langemann er bestandig føyelig.",
+    "correct_paraphrase": "Langemann gjør alltid det Karsten vil.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 83,
+    "sub": 17,
+    "sentence": "Overraskelser er noe han dypest sett ikke liker.",
+    "correct_paraphrase": "Overraskelser er noe han innerst inne ikke liker.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "dypest sett"
+  },
+  {
+    "item": 83,
+    "sub": 18,
+    "sentence": "Han røsker ikke opp døra.",
+    "correct_paraphrase": "Han river ikke opp døra.",
+    "bucket": "vocab",
+    "canonical_lemma": "røske opp"
+  },
+  {
+    "item": 83,
+    "sub": 19,
+    "sentence": "Karsten står med døra på gløtt.",
+    "correct_paraphrase": "Karsten står med døra litt åpen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "på gløtt"
+  },
+  {
+    "item": 83,
+    "sub": 21,
+    "sentence": "Karsten lusker inn på rommet sitt.",
+    "correct_paraphrase": "Karsten lister seg inn på rommet sitt.",
+    "bucket": "vocab",
+    "canonical_lemma": "luske inn"
+  },
+  {
+    "item": 83,
+    "sub": 22,
+    "sentence": "Strømpebuksen har raknet.",
+    "correct_paraphrase": "Strømpebuksen har gått opp i maskene.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 84,
+    "sub": 1,
+    "sentence": "Hun har kommet seg i det siste.",
+    "correct_paraphrase": "Hun har blitt bedre i det siste.",
+    "bucket": "vocab",
+    "canonical_lemma": "komme seg"
+  },
+  {
+    "item": 84,
+    "sub": 4,
+    "sentence": "Vedkommer dette deg?",
+    "correct_paraphrase": "Har dette noe med deg å gjøre?",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 84,
+    "sub": 5,
+    "sentence": "Smertene kommer i tak.",
+    "correct_paraphrase": "Smertene kommer i bølger.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme i tak"
+  },
+  {
+    "item": 84,
+    "sub": 6,
+    "sentence": "Snart vil alt komme for en dag.",
+    "correct_paraphrase": "Snart vil alt bli avslørt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme for en dag"
+  },
+  {
+    "item": 84,
+    "sub": 7,
+    "sentence": "Du kan ikke bare komme her og komme her!",
+    "correct_paraphrase": "Du må ikke tro at du bare kan komme og ta over.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme her og komme her"
+  },
+  {
+    "item": 84,
+    "sub": 8,
+    "sentence": "De kommer ikke godt ut av det med hverandre lenger.",
+    "correct_paraphrase": "De er ikke venner lenger.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme godt ut av det med noen"
+  },
+  {
+    "item": 84,
+    "sub": 9,
+    "sentence": "Hun kom seg ikke til å si det hun egentlig tenkte.",
+    "correct_paraphrase": "Hun fikk seg ikke til å si det hun egentlig tenkte.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme seg til å"
+  },
+  {
+    "item": 84,
+    "sub": 11,
+    "sentence": "Jeg kommer ikke til.",
+    "correct_paraphrase": "Jeg slipper ikke til.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme til"
+  },
+  {
+    "item": 84,
+    "sub": 12,
+    "sentence": "Han kom borti henne flere ganger.",
+    "correct_paraphrase": "Han støtte borti henne flere ganger.",
+    "bucket": "vocab",
+    "canonical_lemma": "komme borti"
+  },
+  {
+    "item": 84,
+    "sub": 13,
+    "sentence": "En sovepose kommer godt med.",
+    "correct_paraphrase": "En sovepose er nyttig å ha.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme godt med"
+  },
+  {
+    "item": 84,
+    "sub": 14,
+    "sentence": "Hvor mye kom det på til slutt?",
+    "correct_paraphrase": "Hvor mye kostet det til slutt?",
+    "bucket": "vocab",
+    "canonical_lemma": "komme på",
+    "note": "sense: to cost — distinct from the 'recall' sense at sub 16, disambiguate lemmas or examples in Phase 3/4"
+  },
+  {
+    "item": 84,
+    "sub": 15,
+    "sentence": "Nå kom jeg ut av det!",
+    "correct_paraphrase": "Nå mistet jeg tråden!",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme ut av det"
+  },
+  {
+    "item": 84,
+    "sub": 16,
+    "sentence": "Kommer du på det?",
+    "correct_paraphrase": "Husker du det?",
+    "bucket": "vocab",
+    "canonical_lemma": "komme på",
+    "note": "sense: to recall — distinct from the 'cost' sense at sub 14"
+  },
+  {
+    "item": 84,
+    "sub": 18,
+    "sentence": "De gikk løs på hverandre.",
+    "correct_paraphrase": "De gjøv løs på hverandre.",
+    "bucket": "vocab",
+    "canonical_lemma": "gå løs på"
+  },
+  {
+    "item": 84,
+    "sub": 19,
+    "sentence": "Har du gått fra vettet?",
+    "correct_paraphrase": "Har du gått fra konseptene?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå fra vettet"
+  },
+  {
+    "item": 84,
+    "sub": 20,
+    "sentence": "Det gikk kaldt nedover ryggen på meg.",
+    "correct_paraphrase": "Jeg gyste.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det går kaldt nedover ryggen på en"
+  },
+  {
+    "item": 85,
+    "sub": 1,
+    "sentence": "Nå går alt på skinner.",
+    "correct_paraphrase": "Nå går alt slik det skal.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå på skinner"
+  },
+  {
+    "item": 85,
+    "sub": 2,
+    "sentence": "Alt gikk som smurt.",
+    "correct_paraphrase": "Alt gikk etter planen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå som smurt"
+  },
+  {
+    "item": 85,
+    "sub": 3,
+    "sentence": "Hjulene går ikke rundt lenger.",
+    "correct_paraphrase": "Ingenting fungerer lenger.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "hjulene går rundt"
+  },
+  {
+    "item": 85,
+    "sub": 4,
+    "sentence": "Konserten gikk av stabelen i fjor sommer.",
+    "correct_paraphrase": "Konserten fant sted i fjor sommer.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå av stabelen"
+  },
+  {
+    "item": 85,
+    "sub": 5,
+    "sentence": "Dette går så det suser.",
+    "correct_paraphrase": "Dette går fint.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå så det suser"
+  },
+  {
+    "item": 85,
+    "sub": 6,
+    "sentence": "Dette går den veien høna sparker.",
+    "correct_paraphrase": "Dette går rakt ut i elendigheten.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå den veien høna sparker"
+  },
+  {
+    "item": 85,
+    "sub": 7,
+    "sentence": "Skal vi gå til verket?",
+    "correct_paraphrase": "Skal vi begynne?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå til verket"
+  },
+  {
+    "item": 85,
+    "sub": 8,
+    "sentence": "Programmet gikk rett hjem hos mine naboer.",
+    "correct_paraphrase": "Programmet vant bifall hos mine naboer.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå rett hjem hos noen"
+  },
+  {
+    "item": 85,
+    "sub": 9,
+    "sentence": "Det går en rød tråd gjennom hele boka.",
+    "correct_paraphrase": "Det finnes en sammenheng i boka.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "en rød tråd"
+  },
+  {
+    "item": 85,
+    "sub": 13,
+    "sentence": "Hun dyrker sitt idol.",
+    "correct_paraphrase": "Hun føler nesegrus beundring for sitt idol.",
+    "bucket": "skip",
+    "canonical_lemma": null,
+    "note": "figurative single-word sense of 'dyrke', not a multi-word idiom"
+  },
+  {
+    "item": 85,
+    "sub": 14,
+    "sentence": "Han er døsig.",
+    "correct_paraphrase": "Han halvsover.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 85,
+    "sub": 15,
+    "sentence": "Han gjorde knefall for henne.",
+    "correct_paraphrase": "Han fridde til henne.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gjøre knefall for noen"
+  },
+  {
+    "item": 85,
+    "sub": 16,
+    "sentence": "Hun føler nesegrus beundring for ham.",
+    "correct_paraphrase": "Hun føler en sterk beundring for ham.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "nesegrus beundring"
+  },
+  {
+    "item": 85,
+    "sub": 18,
+    "sentence": "Jeg er målløs.",
+    "correct_paraphrase": "Jeg finner ikke ord.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 85,
+    "sub": 19,
+    "sentence": "Han er ilagt bøter.",
+    "correct_paraphrase": "Han har blitt gitt bøter.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 85,
+    "sub": 20,
+    "sentence": "Førerkortet ble inndratt.",
+    "correct_paraphrase": "Førerkortet ble konfiskert.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 86,
+    "sub": 1,
+    "sentence": "Johannes skal ha vært den første som gjenkjente Jesus som Messias.",
+    "correct_paraphrase": "Johannes var etter alt å dømme den første som gjenkjente Jesus som Messias.",
+    "bucket": "skip",
+    "canonical_lemma": null,
+    "note": "grammar construction (2. futurum modal 'skal ha'), not lexical idiom"
+  },
+  {
+    "item": 86,
+    "sub": 5,
+    "sentence": "To tradisjoner overlappet altså hverandre.",
+    "correct_paraphrase": "To tradisjoner gled altså inn i hverandre på det samme tidspunktet.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 86,
+    "sub": 8,
+    "sentence": "Man får ikke tenne bål på svaberg.",
+    "correct_paraphrase": "Man får ikke tenne bål på nakne, glatte bergflater langs kysten.",
+    "bucket": "skip",
+    "canonical_lemma": null,
+    "note": "'svaberg' single-word noun test"
+  },
+  {
+    "item": 86,
+    "sub": 9,
+    "sentence": "Sankthansfeiringen har sterk gjenklang i Sverige og Finland.",
+    "correct_paraphrase": "Sankthansfeiringen har appell hos folk i Sverige og Finland.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ha gjenklang",
+    "note": "borderline; 'gjenklang' is itself a noun lexeme, consider vocab instead"
+  },
+  {
+    "item": 86,
+    "sub": 13,
+    "sentence": "Drømmen skulle gi en pekepinn om hvem man skulle gifte seg med.",
+    "correct_paraphrase": "Drømmen skulle antyde hvem man skulle gifte seg med.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gi en pekepinn om noe"
+  },
+  {
+    "item": 86,
+    "sub": 16,
+    "sentence": "Mange valfartet til ulike kirker og hellige steder.",
+    "correct_paraphrase": "Mange reiste langt av gårde til ulike kirker og hellige steder.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 87,
+    "sub": 1,
+    "sentence": "Han har dårlig ånde.",
+    "correct_paraphrase": "Det kommer vond lukt ut av munnen hans.",
+    "bucket": "skip",
+    "canonical_lemma": null,
+    "note": "compositional collocation testing the single-word noun 'ånde'"
+  },
+  {
+    "item": 87,
+    "sub": 9,
+    "sentence": "De måtte ta grep.",
+    "correct_paraphrase": "De måtte gjøre noe.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta grep"
+  },
+  {
+    "item": 87,
+    "sub": 11,
+    "sentence": "Hun føler seg nedfor.",
+    "correct_paraphrase": "Hun føler seg tung til sinns.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 87,
+    "sub": 16,
+    "sentence": "Du er en frossenpinn!",
+    "correct_paraphrase": "Du fryser altfor lett.",
+    "bucket": "vocab",
+    "canonical_lemma": "frossenpinn"
+  },
+  {
+    "item": 88,
+    "sub": 4,
+    "sentence": "Nå må vi bare se tiden an.",
+    "correct_paraphrase": "Nå må vi bruke tiden og se hva som skjer.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "se tiden an"
+  },
+  {
+    "item": 88,
+    "sub": 6,
+    "sentence": "Du må jo se deg for!",
+    "correct_paraphrase": "Du må se deg omkring før du går.",
+    "bucket": "vocab",
+    "canonical_lemma": "se seg for"
+  },
+  {
+    "item": 88,
+    "sub": 7,
+    "sentence": "De gjorde store øyne da rektoren plutselig stod i stua.",
+    "correct_paraphrase": "De ble overrasket da rektoren plutselig stod i stua.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gjøre store øyne"
+  },
+  {
+    "item": 88,
+    "sub": 8,
+    "sentence": "Statsministeren gjorde en dårlig figur på møtet.",
+    "correct_paraphrase": "Statsministeren ga et negativt inntrykk på møtet.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gjøre en dårlig figur"
+  },
+  {
+    "item": 88,
+    "sub": 17,
+    "sentence": "Hvor har du gjort av veska di?",
+    "correct_paraphrase": "Hvor har du satt veska di?",
+    "bucket": "vocab",
+    "canonical_lemma": "gjøre av"
+  },
+  {
+    "item": 88,
+    "sub": 19,
+    "sentence": "Det er om å gjøre at du tar den eksamenen.",
+    "correct_paraphrase": "Det er viktig at du tar den eksamenen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det er om å gjøre"
+  },
+  {
+    "item": 89,
+    "sub": 4,
+    "sentence": "La gå!",
+    "correct_paraphrase": "Jeg tillater det.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "la gå"
+  },
+  {
+    "item": 89,
+    "sub": 5,
+    "sentence": "Ikke la deg vippe av pinnen.",
+    "correct_paraphrase": "Ikke la deg sette ut av spill.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "vippe noen av pinnen"
+  },
+  {
+    "item": 89,
+    "sub": 6,
+    "sentence": "Ikke ta henne for gitt.",
+    "correct_paraphrase": "Ikke ta henne som en selvfølge.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta noen for gitt"
+  },
+  {
+    "item": 89,
+    "sub": 9,
+    "sentence": "Jeg holder av deg.",
+    "correct_paraphrase": "Jeg er glad i deg.",
+    "bucket": "vocab",
+    "canonical_lemma": "holde av"
+  },
+  {
+    "item": 89,
+    "sub": 13,
+    "sentence": "Konserten tok helt av.",
+    "correct_paraphrase": "Konserten ble en suksess.",
+    "bucket": "vocab",
+    "canonical_lemma": "ta av"
+  },
+  {
+    "item": 89,
+    "sub": 16,
+    "sentence": "Hun har nedkommet.",
+    "correct_paraphrase": "Hun har født et barn.",
+    "bucket": "vocab",
+    "canonical_lemma": "nedkomme"
+  },
+  {
+    "item": 90,
+    "sub": 6,
+    "sentence": "Han drar på årene.",
+    "correct_paraphrase": "Han blir gammel.",
+    "bucket": "vocab",
+    "canonical_lemma": "dra på årene"
+  },
+  {
+    "item": 90,
+    "sub": 12,
+    "sentence": "Jentene ble tatt hånd om av et hjem for foreldreløse barn.",
+    "correct_paraphrase": "Et hjem for foreldreløse barn tok vare på jentene.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta hånd om",
+    "note": "very likely already in uttrykk-c.json per background notes — check first in Phase 2"
+  },
+  {
+    "item": 90,
+    "sub": 14,
+    "sentence": "De satte etter hvert nesa mot Norge.",
+    "correct_paraphrase": "De dro etter hvert til Norge.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sette nesa mot et sted"
+  },
+  {
+    "item": 91,
+    "sub": 2,
+    "sentence": "Han aner ikke hvor mye hun tar seg av.",
+    "correct_paraphrase": "Han aner ikke hvor mye hun tar hånd om.",
+    "bucket": "vocab",
+    "canonical_lemma": "ta seg av"
+  },
+  {
+    "item": 91,
+    "sub": 4,
+    "sentence": "Dette går ham på nervene.",
+    "correct_paraphrase": "Dette plager ham sterkt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå noen på nervene"
+  },
+  {
+    "item": 91,
+    "sub": 6,
+    "sentence": "Han er full av selvmedlidenhet.",
+    "correct_paraphrase": "Han synes synd på seg selv.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 91,
+    "sub": 16,
+    "sentence": "Hun har fått kalde føtter.",
+    "correct_paraphrase": "Hun angrer.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "få kalde føtter"
+  },
+  {
+    "item": 91,
+    "sub": 17,
+    "sentence": "Nå har jeg blitt varm i trøya.",
+    "correct_paraphrase": "Nå begynner jeg å bli vant til dette.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bli varm i trøya"
+  },
+  {
+    "item": 91,
+    "sub": 18,
+    "sentence": "Arrestasjonen kom som julekvelden på kjerringa.",
+    "correct_paraphrase": "Arrestasjonen kom som lyn fra klar himmel.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme som julekvelden på kjerringa"
+  },
+  {
+    "item": 91,
+    "sub": 19,
+    "sentence": "Du bør ikke selge skinnet før bjørnen er skutt.",
+    "correct_paraphrase": "Du bør ikke love mer enn du kan holde.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "selge skinnet før bjørnen er skutt"
+  },
+  {
+    "item": 92,
+    "sub": 18,
+    "sentence": "Jeg synes du kaster perler for svin.",
+    "correct_paraphrase": "De vet ikke å verdsette alt du gir til dem.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "kaste perler for svin"
+  },
+  {
+    "item": 93,
+    "sub": 6,
+    "sentence": "Han dro til sjøs da han var seksten år.",
+    "correct_paraphrase": "Han tok hyre på en båt da han var seksten år.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "dra til sjøs"
+  },
+  {
+    "item": 93,
+    "sub": 7,
+    "sentence": "Det de gjør, er en dråpe i havet.",
+    "correct_paraphrase": "Det de gjør, betyr ikke noe særlig i den store sammenhengen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "en dråpe i havet"
+  },
+  {
+    "item": 93,
+    "sub": 9,
+    "sentence": "Du har ikke en sjanse i havet.",
+    "correct_paraphrase": "Du har ikke nubbesjanse.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke ha en sjanse i havet"
+  },
+  {
+    "item": 93,
+    "sub": 11,
+    "sentence": "Hun bevegde seg i et folkehav.",
+    "correct_paraphrase": "Hun forflyttet seg i en stor folkemengde.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 93,
+    "sub": 12,
+    "sentence": "Det har rent mye vann i havet siden sist vi møttes.",
+    "correct_paraphrase": "Det har gått lang tid siden sist vi møttes.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det har rent mye vann i havet"
+  },
+  {
+    "item": 93,
+    "sub": 13,
+    "sentence": "De to er som hund og katt.",
+    "correct_paraphrase": "De to ryker i tottene på hverandre stadig vekk.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "som hund og katt",
+    "note": "common idiom — check other levels in Phase 2 dedup"
+  },
+  {
+    "item": 93,
+    "sub": 14,
+    "sentence": "Du skal ikke skue hunden på hårene.",
+    "correct_paraphrase": "Du skal ikke dømme andre bare ved å se på dem.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "skue hunden på hårene"
+  },
+  {
+    "item": 93,
+    "sub": 15,
+    "sentence": "Noen har en tendens til å gå over bekken etter vann.",
+    "correct_paraphrase": "Noen har en tendens til å løse et problem på en unødig tungvint måte.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå over bekken etter vann"
+  },
+  {
+    "item": 93,
+    "sub": 16,
+    "sentence": "Nå har jeg kjøpt katta i sekken!",
+    "correct_paraphrase": "Nå har jeg blitt tatt ved nesa!",
+    "bucket": "uttrykk",
+    "canonical_lemma": "kjøpe katta i sekken"
+  },
+  {
+    "item": 93,
+    "sub": 17,
+    "sentence": "Ministeren har sluppet katta ut av sekken.",
+    "correct_paraphrase": "Ministeren har for alvor lettet på sløret.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "slippe katta ut av sekken"
+  },
+  {
+    "item": 93,
+    "sub": 18,
+    "sentence": "Jeg gir en god dag i om hun kommer.",
+    "correct_paraphrase": "Det er meg likegyldig om hun kommer.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gi en god dag i noe"
+  },
+  {
+    "item": 93,
+    "sub": 19,
+    "sentence": "Han likte å ta ting på sparket.",
+    "correct_paraphrase": "Han likte å gjøre ting uten betenkningstid.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta noe på sparket"
+  },
+  {
+    "item": 94,
+    "sub": 1,
+    "sentence": "Her gjelder det å smi mens jernet er varmt.",
+    "correct_paraphrase": "Her gjelder det å være rådsnar.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "smi mens jernet er varmt"
+  },
+  {
+    "item": 94,
+    "sub": 2,
+    "sentence": "Det var tydelig at kommunen forsøkte å stikke noe under stol.",
+    "correct_paraphrase": "Det var tydelig at kommunen forsøkte å fortie noe.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "stikke noe under stol"
+  },
+  {
+    "item": 94,
+    "sub": 3,
+    "sentence": "Alt gikk i vasken.",
+    "correct_paraphrase": "Alt ble spolert.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå i vasken"
+  },
+  {
+    "item": 94,
+    "sub": 5,
+    "sentence": "De følte hverandre på tennene.",
+    "correct_paraphrase": "De målte hverandre.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "føle noen på tennene"
+  },
+  {
+    "item": 94,
+    "sub": 6,
+    "sentence": "I går var det mange som viste tenner.",
+    "correct_paraphrase": "I går var det mange som viste sinne og tok igjen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "vise tenner"
+  },
+  {
+    "item": 94,
+    "sub": 7,
+    "sentence": "Han gjør sine hoser grønne.",
+    "correct_paraphrase": "Han innsmigrer seg.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gjøre sine hoser grønne"
+  },
+  {
+    "item": 94,
+    "sub": 8,
+    "sentence": "Her leves det på stor fot.",
+    "correct_paraphrase": "Her er det overflod og luksus.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "leve på stor fot"
+  },
+  {
+    "item": 94,
+    "sub": 9,
+    "sentence": "De utførte ugjerningen med kaldt blod.",
+    "correct_paraphrase": "De utførte ugjerningen uten omsyn til noe eller noen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "med kaldt blod"
+  },
+  {
+    "item": 94,
+    "sub": 10,
+    "sentence": "De to har lenge stått på god fot med hverandre.",
+    "correct_paraphrase": "De to har lenge hatt et greit forhold til hverandre.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "stå på god fot med noen"
+  },
+  {
+    "item": 94,
+    "sub": 11,
+    "sentence": "Hun elsker å trekke i trådene.",
+    "correct_paraphrase": "Hun elsker å være litt manipulerende.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "trekke i trådene"
+  },
+  {
+    "item": 94,
+    "sub": 12,
+    "sentence": "Hun er som kjerringa mot strømmen.",
+    "correct_paraphrase": "Hun er egensindig.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "som kjerringa mot strømmen"
+  },
+  {
+    "item": 94,
+    "sub": 13,
+    "sentence": "Nå henger jobben hans i en tynn tråd.",
+    "correct_paraphrase": "Nå står han i fare for å bli arbeidsledig.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "henge i en tynn tråd"
+  },
+  {
+    "item": 94,
+    "sub": 15,
+    "sentence": "Kan vi ta opp tråden igjen nå?",
+    "correct_paraphrase": "Kan vi gå videre med samtalen vår nå?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta opp tråden"
+  },
+  {
+    "item": 94,
+    "sub": 16,
+    "sentence": "Hun er lett på tråden.",
+    "correct_paraphrase": "Hun er ofte sammen med menn.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være lett på tråden"
+  },
+  {
+    "item": 95,
+    "sub": 1,
+    "sentence": "Jeg vil ikke danse etter noens pipe.",
+    "correct_paraphrase": "Jeg vil ikke adlyde andres ordre.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "danse etter noens pipe"
+  },
+  {
+    "item": 95,
+    "sub": 2,
+    "sentence": "Han satte sitt lys under en skjeppe.",
+    "correct_paraphrase": "Han var falsk beskjeden.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sette sitt lys under en skjeppe"
+  },
+  {
+    "item": 95,
+    "sub": 3,
+    "sentence": "Hun er en hund etter blåbær.",
+    "correct_paraphrase": "Hun elsker blåbær.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være en hund etter noe"
+  },
+  {
+    "item": 95,
+    "sub": 4,
+    "sentence": "Det stod i annonsen at krake søkte make.",
+    "correct_paraphrase": "Det stod i annonsen at en person ønsket å finne seg en likesinnet.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "krake søker make"
+  },
+  {
+    "item": 95,
+    "sub": 5,
+    "sentence": "Som man reder, ligger man.",
+    "correct_paraphrase": "Man høster det man sår.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "som man reder, ligger man"
+  },
+  {
+    "item": 95,
+    "sub": 6,
+    "sentence": "Han hadde gått i hundene.",
+    "correct_paraphrase": "Han hadde forkommet.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå i hundene"
+  },
+  {
+    "item": 95,
+    "sub": 7,
+    "sentence": "Hun eier ikke nåla i meggen.",
+    "correct_paraphrase": "Hun er blakk – og vel så det.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke eie nåla i veggen"
+  },
+  {
+    "item": 95,
+    "sub": 8,
+    "sentence": "Det å finne øreproppen var som å lete etter nåla i høystakken.",
+    "correct_paraphrase": "Det å finne øreproppen føltes umulig.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "lete etter nåla i høystakken"
+  },
+  {
+    "item": 95,
+    "sub": 10,
+    "sentence": "Det gir jeg katten i!",
+    "correct_paraphrase": "Det liker jeg ikke!",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gi katten i noe"
+  },
+  {
+    "item": 95,
+    "sub": 11,
+    "sentence": "De legger seg i selen.",
+    "correct_paraphrase": "De strever for å klare det.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "legge seg i selen"
+  },
+  {
+    "item": 95,
+    "sub": 12,
+    "sentence": "Hun følte seg mellom barken og veden.",
+    "correct_paraphrase": "Hun følte seg presset fra ulike hold.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være mellom barken og veden"
+  },
+  {
+    "item": 95,
+    "sub": 13,
+    "sentence": "Komikeren tok kongen på kornet.",
+    "correct_paraphrase": "Komikeren traff spikeren på hodet når det gjaldt kongen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta noen på kornet"
+  },
+  {
+    "item": 95,
+    "sub": 14,
+    "sentence": "De kastet blår i øynene på henne.",
+    "correct_paraphrase": "De lurte henne trill rundt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "kaste blår i øynene på noen"
+  },
+  {
+    "item": 95,
+    "sub": 15,
+    "sentence": "Han tok det på strak arm.",
+    "correct_paraphrase": "Han gjorde det uten å nøle.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta noe på strak arm"
+  },
+  {
+    "item": 95,
+    "sub": 16,
+    "sentence": "Jeg klarer ikke å svare på stående fot.",
+    "correct_paraphrase": "Jeg klarer ikke å svare her og nå.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "på stående fot"
+  },
+  {
+    "item": 95,
+    "sub": 17,
+    "sentence": "å la humla suse",
+    "correct_paraphrase": "å nyte livet",
+    "bucket": "uttrykk",
+    "canonical_lemma": "la humla suse"
+  },
+  {
+    "item": 95,
+    "sub": 18,
+    "sentence": "å ha kort lunte",
+    "correct_paraphrase": "å være snarsint",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ha kort lunte"
+  },
+  {
+    "item": 95,
+    "sub": 19,
+    "sentence": "å rive i en drink",
+    "correct_paraphrase": "å spandere en drink",
+    "bucket": "uttrykk",
+    "canonical_lemma": "rive i en drink"
+  },
+  {
+    "item": 95,
+    "sub": 20,
+    "sentence": "å mele sin egen kake",
+    "correct_paraphrase": "å sørge for at man selv får fordeler",
+    "bucket": "uttrykk",
+    "canonical_lemma": "mele sin egen kake"
+  },
+  {
+    "item": 96,
+    "sub": 3,
+    "sentence": "å gi noen på båten",
+    "correct_paraphrase": "å la noen fare",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gi noen på båten"
+  },
+  {
+    "item": 96,
+    "sub": 4,
+    "sentence": "å male fanden på meggen",
+    "correct_paraphrase": "å framstille noe som verre enn det er",
+    "bucket": "uttrykk",
+    "canonical_lemma": "male fanden på veggen"
+  },
+  {
+    "item": 96,
+    "sub": 7,
+    "sentence": "å lukte lunta",
+    "correct_paraphrase": "å ane at noe er galt",
+    "bucket": "uttrykk",
+    "canonical_lemma": "lukte lunta"
+  },
+  {
+    "item": 96,
+    "sub": 8,
+    "sentence": "å ta noe med ei klype salt",
+    "correct_paraphrase": "å ikke tro helt på alt som sies eller skrives",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta noe med en klype salt"
+  },
+  {
+    "item": 96,
+    "sub": 9,
+    "sentence": "å sitte med skjegget i postkassa",
+    "correct_paraphrase": "å bli lurt",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sitte med skjegget i postkassa"
+  },
+  {
+    "item": 96,
+    "sub": 10,
+    "sentence": "å være fyr og flamme",
+    "correct_paraphrase": "å være ivrig",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være fyr og flamme"
+  },
+  {
+    "item": 96,
+    "sub": 11,
+    "sentence": "å stå på pinne for noen",
+    "correct_paraphrase": "å jobbe hardt for noen",
+    "bucket": "uttrykk",
+    "canonical_lemma": "stå på pinne for noen"
+  },
+  {
+    "item": 96,
+    "sub": 12,
+    "sentence": "å sluke kameler",
+    "correct_paraphrase": "å godta noe en egentlig ikke vil godta – for å oppnå noe annet",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sluke kameler"
+  },
+  {
+    "item": 96,
+    "sub": 13,
+    "sentence": "å gå rundt grøten",
+    "correct_paraphrase": "å ikke klare å komme til poenget",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå rundt grøten"
+  },
+  {
+    "item": 96,
+    "sub": 14,
+    "sentence": "å gråte krokodilletårer",
+    "correct_paraphrase": "å hykle for å få trøst fra andre",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gråte krokodilletårer"
+  },
+  {
+    "item": 96,
+    "sub": 15,
+    "sentence": "å sette kronen på verket",
+    "correct_paraphrase": "å sette prikken over i-en",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sette kronen på verket"
+  },
+  {
+    "item": 96,
+    "sub": 16,
+    "sentence": "å lese noen teksten",
+    "correct_paraphrase": "å kjefte på noen",
+    "bucket": "uttrykk",
+    "canonical_lemma": "lese noen teksten"
+  },
+  {
+    "item": 96,
+    "sub": 17,
+    "sentence": "å tråkke i salaten",
+    "correct_paraphrase": "å tabbe seg ut",
+    "bucket": "uttrykk",
+    "canonical_lemma": "tråkke i salaten"
+  },
+  {
+    "item": 96,
+    "sub": 18,
+    "sentence": "å pakke snippesken",
+    "correct_paraphrase": "å dra sin kos",
+    "bucket": "uttrykk",
+    "canonical_lemma": "pakke snippesken"
+  },
+  {
+    "item": 96,
+    "sub": 19,
+    "sentence": "å hoppe etter Wirkola",
+    "correct_paraphrase": "å følge etter en usedvanlig begavet forgjenger",
+    "bucket": "uttrykk",
+    "canonical_lemma": "hoppe etter Wirkola",
+    "note": "contains a real named person (ski jumper Bjørn Wirkola), but functions as a fixed, lexicalized idiom in dictionaries — not a quote or persuasive use of the person"
+  },
+  {
+    "item": 96,
+    "sub": 20,
+    "sentence": "å være på en snei",
+    "correct_paraphrase": "å være litt beruset",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være på en snei"
+  },
+  {
+    "item": 97,
+    "sub": 1,
+    "sentence": "Nå må vi snakke under fire øyne.",
+    "correct_paraphrase": "Nå må vi ha en samtale alene.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "under fire øyne"
+  },
+  {
+    "item": 97,
+    "sub": 2,
+    "sentence": "Han har fått læreren sin opp i halsen.",
+    "correct_paraphrase": "Han er lut lei av læreren sin.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "få noen opp i halsen"
+  },
+  {
+    "item": 97,
+    "sub": 3,
+    "sentence": "De dro hals over hode til Sverige.",
+    "correct_paraphrase": "De dro hodekulls til Sverige.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "hals over hode"
+  },
+  {
+    "item": 97,
+    "sub": 4,
+    "sentence": "Kvinnen er forsker på sin hals.",
+    "correct_paraphrase": "Kvinnen er lidenskapelig opptatt av sin forskning.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være noe på sin hals"
+  },
+  {
+    "item": 97,
+    "sub": 5,
+    "sentence": "Kors på halsen!",
+    "correct_paraphrase": "Jeg lover!",
+    "bucket": "uttrykk",
+    "canonical_lemma": "kors på halsen"
+  },
+  {
+    "item": 97,
+    "sub": 6,
+    "sentence": "Guttene satte latteren i halsen da de hørte det knirke i døra.",
+    "correct_paraphrase": "Guttene lo ikke mer da de hørte det knirke i døra.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sette latteren i halsen"
+  },
+  {
+    "item": 97,
+    "sub": 7,
+    "sentence": "Damen fikk hjertet i halsen da hun hørte noen tasse i gangen.",
+    "correct_paraphrase": "Damen fikk hjertebank da hun hørte noen tasse i gangen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "få hjertet i halsen"
+  },
+  {
+    "item": 97,
+    "sub": 9,
+    "sentence": "Tyvene tok beina på nakken.",
+    "correct_paraphrase": "Tyvene beinfløy av gårde.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta beina på nakken"
+  },
+  {
+    "item": 97,
+    "sub": 10,
+    "sentence": "Nå må du ta deg selv i nakken!",
+    "correct_paraphrase": "Nå må du ta deg sammen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ta seg i nakken"
+  },
+  {
+    "item": 97,
+    "sub": 11,
+    "sentence": "Nå får han politiet på nakken.",
+    "correct_paraphrase": "Nå blir han forfulgt av politiet.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "få noen på nakken"
+  },
+  {
+    "item": 97,
+    "sub": 12,
+    "sentence": "Hun skaper ofte storm i et vannglass.",
+    "correct_paraphrase": "Hun gjør ofte mye ut av ingenting.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "storm i et vannglass"
+  },
+  {
+    "item": 97,
+    "sub": 13,
+    "sentence": "Nå ser de rødt.",
+    "correct_paraphrase": "Nå er de rasende.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "se rødt"
+  },
+  {
+    "item": 97,
+    "sub": 14,
+    "sentence": "Brent barn skyr ilden.",
+    "correct_paraphrase": "En som har skadet seg tidligere, har fått seg en lærepenge.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "brent barn skyr ilden"
+  },
+  {
+    "item": 97,
+    "sub": 15,
+    "sentence": "Egget vil lære høna å verpe",
+    "correct_paraphrase": "Den uerfarne vil belære den som kan noe.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "egget vil lære høna å verpe"
+  },
+  {
+    "item": 97,
+    "sub": 16,
+    "sentence": "Det er en saga blott.",
+    "correct_paraphrase": "Det er en glemt historie.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være en saga blott"
+  },
+  {
+    "item": 97,
+    "sub": 18,
+    "sentence": "Eplet faller ikke langt fra stammen.",
+    "correct_paraphrase": "Som far, så sønn.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "eplet faller ikke langt fra stammen"
+  },
+  {
+    "item": 97,
+    "sub": 19,
+    "sentence": "Det får stå sin prøve.",
+    "correct_paraphrase": "Det går slik det vil.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det får stå sin prøve"
+  },
+  {
+    "item": 98,
+    "sub": 1,
+    "sentence": "Her er det ugler i mosen.",
+    "correct_paraphrase": "Her er det noe som skurrer.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det er ugler i mosen"
+  },
+  {
+    "item": 98,
+    "sub": 2,
+    "sentence": "Nå blir det sus i serken.",
+    "correct_paraphrase": "Nå blir det liv.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det blir sus i serken"
+  },
+  {
+    "item": 98,
+    "sub": 3,
+    "sentence": "Denne medisinen kan gjøre susen.",
+    "correct_paraphrase": "Denne medisinen kan være det som skal til.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gjøre susen"
+  },
+  {
+    "item": 98,
+    "sub": 4,
+    "sentence": "Han biter på kroken rett som det er.",
+    "correct_paraphrase": "Han blir ofte lurt trill rundt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bite på kroken"
+  },
+  {
+    "item": 98,
+    "sub": 5,
+    "sentence": "Han er familiens sorte får.",
+    "correct_paraphrase": "Han er det familiemedlemmet som bringer skam over familien.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det sorte får (i familien)"
+  },
+  {
+    "item": 98,
+    "sub": 6,
+    "sentence": "Hastverk er lastverk.",
+    "correct_paraphrase": "Det som gjøres i full fart, utføres ofte ikke på den beste måten.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "hastverk er lastverk"
+  },
+  {
+    "item": 98,
+    "sub": 7,
+    "sentence": "Nå vil de begrave stridsøksa.",
+    "correct_paraphrase": "Nå vil de slutte fred.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "begrave stridsøksa"
+  },
+  {
+    "item": 98,
+    "sub": 8,
+    "sentence": "Hun faller mellom to stoler.",
+    "correct_paraphrase": "Hun passer ikke inn noen steder.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "falle mellom to stoler"
+  },
+  {
+    "item": 98,
+    "sub": 9,
+    "sentence": "Saken er biff.",
+    "correct_paraphrase": "Situasjonen er i orden.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "saken er biff"
+  },
+  {
+    "item": 98,
+    "sub": 10,
+    "sentence": "Du får feie for egen dør.",
+    "correct_paraphrase": "Du får ta hånd om dine egne problemer først.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "feie for egen dør"
+  },
+  {
+    "item": 98,
+    "sub": 11,
+    "sentence": "Han har blitt ført bak lyset.",
+    "correct_paraphrase": "Han har blitt narret.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "føre noen bak lyset"
+  },
+  {
+    "item": 98,
+    "sub": 12,
+    "sentence": "Jeg fikk bakoversveis i går.",
+    "correct_paraphrase": "Jeg ble forbauset i går.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "få bakoversveis"
+  },
+  {
+    "item": 98,
+    "sub": 13,
+    "sentence": "Hvorfor feier du dette under teppet?",
+    "correct_paraphrase": "Hvorfor skjuler du ting?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "feie noe under teppet"
+  },
+  {
+    "item": 98,
+    "sub": 14,
+    "sentence": "Hun fikk så hatten passet.",
+    "correct_paraphrase": "Hun fikk kjeft.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "få hatten passet"
+  },
+  {
+    "item": 98,
+    "sub": 15,
+    "sentence": "Hun er ikke tapt bak ei vogn.",
+    "correct_paraphrase": "Hun er rådsnar når det oppstår utfordringer.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke være tapt bak ei vogn"
+  },
+  {
+    "item": 98,
+    "sub": 16,
+    "sentence": "Bakeren har ikke rent mel i posen.",
+    "correct_paraphrase": "Bakeren har noe å skjule.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke ha rent mel i posen"
+  },
+  {
+    "item": 98,
+    "sub": 17,
+    "sentence": "Det skinner gjennom at hun er bitter.",
+    "correct_paraphrase": "Man kan ane at hun er bitter.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "det skinner gjennom"
+  },
+  {
+    "item": 98,
+    "sub": 19,
+    "sentence": "Fjorårets vinner måtte bite i gresset i årets konkurranse.",
+    "correct_paraphrase": "Fjorårets vinner måtte se seg slått i årets konkurranse.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bite i gresset"
+  },
+  {
+    "item": 99,
+    "sub": 1,
+    "sentence": "Hun bet seg merke i at noe var annerledes.",
+    "correct_paraphrase": "Hun la merke til at noe var annerledes.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bite seg merke i noe"
+  },
+  {
+    "item": 99,
+    "sub": 2,
+    "sentence": "Hun bet ordene i seg.",
+    "correct_paraphrase": "Hun holdt tilbake ordene.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bite ordene i seg"
+  },
+  {
+    "item": 99,
+    "sub": 3,
+    "sentence": "De var blitt drevet fra skanse til skanse.",
+    "correct_paraphrase": "De måtte stadig gi seg.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "drives fra skanse til skanse"
+  },
+  {
+    "item": 99,
+    "sub": 4,
+    "sentence": "Hun bøyde seg i støvet for sjefens avgjørelse.",
+    "correct_paraphrase": "Ydmykt aksepterte hun sjefens avgjørelse.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bøye seg i støvet"
+  },
+  {
+    "item": 99,
+    "sub": 5,
+    "sentence": "Min bror er ikke født i går.",
+    "correct_paraphrase": "Min bror er slettes ikke dum.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke være født i går"
+  },
+  {
+    "item": 99,
+    "sub": 7,
+    "sentence": "Jeg gir meg ende over.",
+    "correct_paraphrase": "Jeg gir opp.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gi seg ende over"
+  },
+  {
+    "item": 99,
+    "sub": 8,
+    "sentence": "Han ga henne inn i går kveld.",
+    "correct_paraphrase": "Han dengte løs på henne i går kveld.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gi noen inn"
+  },
+  {
+    "item": 99,
+    "sub": 9,
+    "sentence": "Fansen gikk berserk.",
+    "correct_paraphrase": "Fansen ble helt ustyrlige.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå berserk"
+  },
+  {
+    "item": 99,
+    "sub": 10,
+    "sentence": "Han målte henne med øynene.",
+    "correct_paraphrase": "Han så kritisk på henne.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "måle noen med øynene"
+  },
+  {
+    "item": 99,
+    "sub": 13,
+    "sentence": "Han brant inne med en del ting.",
+    "correct_paraphrase": "Han fikk ikke sagt alt han ville si.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "brenne inne med noe"
+  },
+  {
+    "item": 99,
+    "sub": 14,
+    "sentence": "Nå gjelder det å veie ordene sine.",
+    "correct_paraphrase": "Nå gjelder det å holde tunga rett i munnen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "veie sine ord"
+  },
+  {
+    "item": 99,
+    "sub": 16,
+    "sentence": "Hvem har han slått seg i lag med nå?",
+    "correct_paraphrase": "Hvem har han blitt sammen med nå?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "slå seg i lag med noen"
+  },
+  {
+    "item": 99,
+    "sub": 17,
+    "sentence": "Ofte føler jeg at jeg ikke er med på laget.",
+    "correct_paraphrase": "Ofte føler jeg meg litt utenfor.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være med på laget"
+  },
+  {
+    "item": 99,
+    "sub": 18,
+    "sentence": "Han er en ulv i fåreklær.",
+    "correct_paraphrase": "Han er en ondsinnet person som later som om han er god.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "en ulv i fåreklær"
+  },
+  {
+    "item": 99,
+    "sub": 19,
+    "sentence": "Han kom i grevens tid.",
+    "correct_paraphrase": "Han kom i rette øyeblikk.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "i grevens tid"
+  },
+  {
+    "item": 99,
+    "sub": 20,
+    "sentence": "Hun bestod prøven med glans.",
+    "correct_paraphrase": "Hun bestod prøven på ypperlig vis.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "med glans"
+  },
+  {
+    "item": 100,
+    "sub": 3,
+    "sentence": "De ga ham det glatte lag.",
+    "correct_paraphrase": "De hudflettet ham.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gi noen det glatte lag"
+  },
+  {
+    "item": 100,
+    "sub": 4,
+    "sentence": "Jeg prøver å gjøre datteren min til lags.",
+    "correct_paraphrase": "Jeg prøver å gjøre datteren min fornøyd.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gjøre noen til lags"
+  },
+  {
+    "item": 100,
+    "sub": 5,
+    "sentence": "Hun har gått på limpinnen.",
+    "correct_paraphrase": "Hun har latt seg lure.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå på limpinnen"
+  },
+  {
+    "item": 100,
+    "sub": 6,
+    "sentence": "De gikk fem på.",
+    "correct_paraphrase": "De gikk rett i fella.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå fem på"
+  },
+  {
+    "item": 100,
+    "sub": 7,
+    "sentence": "Står ditt ord ved lag?",
+    "correct_paraphrase": "Står du fast på det du sa?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "stå ved lag"
+  },
+  {
+    "item": 100,
+    "sub": 8,
+    "sentence": "Jeg føler at du ikke spiller på lag med meg.",
+    "correct_paraphrase": "Jeg føler at du vil motarbeide meg.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "spille på lag med noen"
+  },
+  {
+    "item": 100,
+    "sub": 9,
+    "sentence": "De har bestemt seg for å bryte lag.",
+    "correct_paraphrase": "De har bestemt seg for å gjøre det slutt med hverandre.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bryte lag"
+  },
+  {
+    "item": 100,
+    "sub": 10,
+    "sentence": "Har de to kommet i lag?",
+    "correct_paraphrase": "Har de to blitt sammen?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "komme i lag"
+  },
+  {
+    "item": 100,
+    "sub": 11,
+    "sentence": "Det er viktig å holde de gamle trekirkene ved lag.",
+    "correct_paraphrase": "Det er viktig å bevare de gamle trekirkene.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "holde noe ved lag"
+  },
+  {
+    "item": 100,
+    "sub": 12,
+    "sentence": "å bite i det sure eplet",
+    "correct_paraphrase": "å finne seg i noe ubehagelig",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bite i det sure eplet"
+  },
+  {
+    "item": 100,
+    "sub": 13,
+    "sentence": "å skjære alle over én kam",
+    "correct_paraphrase": "å bedømme alle unyansert og sjablongmessig",
+    "bucket": "uttrykk",
+    "canonical_lemma": "skjære alle over én kam"
+  },
+  {
+    "item": 100,
+    "sub": 14,
+    "sentence": "å slå seg på brystet",
+    "correct_paraphrase": "å vise stolthet",
+    "bucket": "uttrykk",
+    "canonical_lemma": "slå seg på brystet"
+  },
+  {
+    "item": 100,
+    "sub": 15,
+    "sentence": "Nå vil jeg sette foten ned.",
+    "correct_paraphrase": "Nå vil jeg sette en stopper for dette.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sette foten ned"
+  },
+  {
+    "item": 100,
+    "sub": 16,
+    "sentence": "Du kan ikke sitte der med hendene i fanget.",
+    "correct_paraphrase": "Du kan ikke forholde deg uvirksom i denne saken.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "sitte med hendene i fanget"
+  },
+  {
+    "item": 100,
+    "sub": 17,
+    "sentence": "Ikke stikk nesa di i dette.",
+    "correct_paraphrase": "Ikke bland deg inn i dette.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "stikke nesa si i noe"
+  },
+  {
+    "item": 100,
+    "sub": 18,
+    "sentence": "Han hadde sommerfugler i magen like før ringene skulle settes på.",
+    "correct_paraphrase": "Han kjente at det kriblet av spenning like før ringene skulle settes på.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ha sommerfugler i magen"
+  },
+  {
+    "item": 100,
+    "sub": 19,
+    "sentence": "Jeg løfter ikke en finger mer for deg.",
+    "correct_paraphrase": "Jeg vil overhodet ikke gjøre noe mer for deg.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke løfte en finger"
+  },
+  {
+    "item": 101,
+    "sub": 1,
+    "sentence": "Jeg lar meg ikke be to ganger.",
+    "correct_paraphrase": "Det er lett å spørre meg om å gjøre noe.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "ikke la seg be to ganger"
+  },
+  {
+    "item": 101,
+    "sub": 3,
+    "sentence": "Han tar et ubønnhørlig farvel med henne.",
+    "correct_paraphrase": "Han tar et uavvendelig farvel med henne.",
+    "bucket": "skip",
+    "canonical_lemma": null,
+    "note": "single-word formal adjective 'ubønnhørlig' test"
+  },
+  {
+    "item": 101,
+    "sub": 4,
+    "sentence": "De går i forbønn for henne.",
+    "correct_paraphrase": "De ber til Gud for henne.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "gå i forbønn for noen"
+  },
+  {
+    "item": 101,
+    "sub": 5,
+    "sentence": "Hun spurte bønnlig om å få være med på turen.",
+    "correct_paraphrase": "Hun bad inntrengende om få være med på turen.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 101,
+    "sub": 8,
+    "sentence": "Hun føler seg bundet på hender og føtter.",
+    "correct_paraphrase": "Hun føler at hun ikke har noen mulighet til å styre ting selv.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "være bundet på hender og føtter"
+  },
+  {
+    "item": 101,
+    "sub": 9,
+    "sentence": "Hun føler seg så bundet.",
+    "correct_paraphrase": "Hun føler seg maktesløs.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 101,
+    "sub": 11,
+    "sentence": "Hvis avtalen er bindende, så kan vi si at ...",
+    "correct_paraphrase": "bordet fanger",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bordet fanger"
+  },
+  {
+    "item": 101,
+    "sub": 13,
+    "sentence": "Han er en grinebiter.",
+    "correct_paraphrase": "Han er gretten.",
+    "bucket": "vocab",
+    "canonical_lemma": "grinebiter"
+  },
+  {
+    "item": 101,
+    "sub": 14,
+    "sentence": "Dette landskapet er værbitt.",
+    "correct_paraphrase": "I dette landskapet kan man se spor av all slags vær.",
+    "bucket": "vocab",
+    "canonical_lemma": "værbitt"
+  },
+  {
+    "item": 102,
+    "sub": 2,
+    "sentence": "Hun bet fra seg.",
+    "correct_paraphrase": "Hun tok igjen.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bite fra seg"
+  },
+  {
+    "item": 102,
+    "sub": 8,
+    "sentence": "I går ble jeg tatt på senga.",
+    "correct_paraphrase": "I går ble jeg overrumplet.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "bli tatt på senga"
+  },
+  {
+    "item": 102,
+    "sub": 9,
+    "sentence": "Er det sant at han har blitt sparket?",
+    "correct_paraphrase": "Er det sant at han har fått fyken?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "få fyken"
+  },
+  {
+    "item": 102,
+    "sub": 10,
+    "sentence": "Hvor har den lille luringen blitt av nå, da?",
+    "correct_paraphrase": "Hvor har den lille luringen tatt veien nå, da?",
+    "bucket": "vocab",
+    "canonical_lemma": "bli av"
+  },
+  {
+    "item": 102,
+    "sub": 11,
+    "sentence": "Han har blitt helt rabiat.",
+    "correct_paraphrase": "Han har gått helt fra konseptene.",
+    "bucket": "skip",
+    "canonical_lemma": null
+  },
+  {
+    "item": 102,
+    "sub": 14,
+    "sentence": "Hun føler at hun må dra lasset hele tiden.",
+    "correct_paraphrase": "Hun føler at det er hun som må bære de tyngste byrdene hele tiden.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "dra lasset"
+  },
+  {
+    "item": 102,
+    "sub": 16,
+    "sentence": "Hun dro kjensel på ham.",
+    "correct_paraphrase": "Hun kjente ham igjen.",
+    "bucket": "vocab",
+    "canonical_lemma": "dra kjensel på"
+  },
+  {
+    "item": 102,
+    "sub": 19,
+    "sentence": "Møtet dro ut.",
+    "correct_paraphrase": "Møtet varte lenge.",
+    "bucket": "vocab",
+    "canonical_lemma": "dra ut"
+  },
+  {
+    "item": 103,
+    "sub": 1,
+    "sentence": "Hun dro på det da hun ble bedt om å avgi forklaring.",
+    "correct_paraphrase": "Hun holdt litt igjen da hun ble bedt om å avgi forklaring.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "dra på det"
+  },
+  {
+    "item": 103,
+    "sub": 2,
+    "sentence": "Utsagnet ble dratt i tvil.",
+    "correct_paraphrase": "Man følte skepsis mot det som ble sagt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "dra noe i tvil"
+  },
+  {
+    "item": 103,
+    "sub": 3,
+    "sentence": "Hun dro på det ene beinet.",
+    "correct_paraphrase": "Hun haltet på ett bein.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "dra på det ene beinet"
+  },
+  {
+    "item": 103,
+    "sub": 4,
+    "sentence": "Har du dratt lærdom av dine feil?",
+    "correct_paraphrase": "Er du klok av skade nå?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "dra lærdom av noe"
+  },
+  {
+    "item": 103,
+    "sub": 5,
+    "sentence": "Nå har sønnen min drevet dank i et halvt år.",
+    "correct_paraphrase": "Nå har sønnen min tatt det kuli i et halvt år.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "drive dank"
+  },
+  {
+    "item": 103,
+    "sub": 6,
+    "sentence": "Hun følte at de drev gjøn med henne.",
+    "correct_paraphrase": "Hun følte at de fleipet med henne.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "drive gjøn med noen"
+  },
+  {
+    "item": 103,
+    "sub": 7,
+    "sentence": "Datteren hans har drevet det langt.",
+    "correct_paraphrase": "Datteren hans har nådd langt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "drive det langt"
+  },
+  {
+    "item": 103,
+    "sub": 9,
+    "sentence": "Ungdommen drev omkring i området.",
+    "correct_paraphrase": "Ungdommen hang og slang omkring i området.",
+    "bucket": "vocab",
+    "canonical_lemma": "drive omkring"
+  },
+  {
+    "item": 103,
+    "sub": 10,
+    "sentence": "Det ser ut til at uværet driver over nå.",
+    "correct_paraphrase": "Det ser ut til at uværet fjerner seg fra oss nå.",
+    "bucket": "vocab",
+    "canonical_lemma": "drive over"
+  },
+  {
+    "item": 103,
+    "sub": 11,
+    "sentence": "Kvinner og barn ble drevet på flukt.",
+    "correct_paraphrase": "Kvinner og barn ble jaget av gårde.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "drive noen på flukt"
+  },
+  {
+    "item": 103,
+    "sub": 12,
+    "sentence": "Hvorfor må du drive meg til vanvidd?",
+    "correct_paraphrase": "Hvorfor må du få meg til å klikke?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "drive noen til vanvidd"
+  },
+  {
+    "item": 103,
+    "sub": 15,
+    "sentence": "Hvorfor må den mannen alltid drive det for langt?",
+    "correct_paraphrase": "Hvorfor må den mannen alltid krysse grenser?",
+    "bucket": "uttrykk",
+    "canonical_lemma": "drive det for langt"
+  },
+  {
+    "item": 103,
+    "sub": 16,
+    "sentence": "Alt står og faller med din stemme.",
+    "correct_paraphrase": "Din stemme vil avgjøre alt.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "stå og falle med noe"
+  },
+  {
+    "item": 103,
+    "sub": 17,
+    "sentence": "Tiden hos svigermoren falt ham lang.",
+    "correct_paraphrase": "Han følte at det varte og rakk hos svigermoren.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "falle noen lang"
+  },
+  {
+    "item": 103,
+    "sub": 18,
+    "sentence": "Det falt meg virkelig ikke inn at du var redd.",
+    "correct_paraphrase": "Jeg kom virkelig ikke på at du var redd.",
+    "bucket": "vocab",
+    "canonical_lemma": "falle inn"
+  },
+  {
+    "item": 103,
+    "sub": 19,
+    "sentence": "Hun sa at han hadde falt i synd.",
+    "correct_paraphrase": "Hun sa han hadde syndet.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "falle i synd"
+  },
+  {
+    "item": 103,
+    "sub": 20,
+    "sentence": "De falt for fristelsen i den store butikken.",
+    "correct_paraphrase": "De klarte ikke å stå imot fristelsen i den store butikken.",
+    "bucket": "vocab",
+    "canonical_lemma": "falle for"
+  },
+  {
+    "item": 103,
+    "sub": 21,
+    "sentence": "Er det sant at hun har falt fra?",
+    "correct_paraphrase": "Er det sant at hun er en frafallen?",
+    "bucket": "vocab",
+    "canonical_lemma": "falle fra"
+  },
+  {
+    "item": 103,
+    "sub": 22,
+    "sentence": "De gode forslagene falt til jorden.",
+    "correct_paraphrase": "De gode forslagene ble avvist.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "falle til jorden"
+  },
+  {
+    "item": 103,
+    "sub": 23,
+    "sentence": "Ordene hans falt i god jord.",
+    "correct_paraphrase": "Ordene hans ble tatt godt imot.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "falle i god jord"
+  },
+  {
+    "item": 103,
+    "sub": 24,
+    "sentence": "Talen hennes falt på steingrunn.",
+    "correct_paraphrase": "Talen hennes fikk ikke gehør.",
+    "bucket": "uttrykk",
+    "canonical_lemma": "falle på steingrunn"
+  }
+]

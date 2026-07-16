@@ -1,0 +1,1426 @@
+[
+  {
+    "id": "u-c-396",
+    "norsk": "å holde hjulene i gang",
+    "lemma": "holde hjulene i gang",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-397",
+    "norsk": "ikke det minste",
+    "lemma": "ikke det minste",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-398",
+    "norsk": "å være som blåst bort",
+    "lemma": "være som blåst bort",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-399",
+    "norsk": "å strekke seg så lang man er",
+    "lemma": "strekke seg så lang man er",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-400",
+    "norsk": "dypest sett",
+    "lemma": "dypest sett",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-401",
+    "norsk": "på gløtt",
+    "lemma": "på gløtt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-402",
+    "norsk": "å komme i tak",
+    "lemma": "komme i tak",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-403",
+    "norsk": "å komme for en dag",
+    "lemma": "komme for en dag",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-404",
+    "norsk": "å komme her og komme her",
+    "lemma": "komme her og komme her",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-405",
+    "norsk": "å komme godt ut av det med noen",
+    "lemma": "komme godt ut av det med noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-406",
+    "norsk": "å komme seg til å",
+    "lemma": "komme seg til å",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-407",
+    "norsk": "å komme til",
+    "lemma": "komme til",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-408",
+    "norsk": "å komme godt med",
+    "lemma": "komme godt med",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-409",
+    "norsk": "å komme ut av det",
+    "lemma": "komme ut av det",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-410",
+    "norsk": "å gå fra vettet",
+    "lemma": "gå fra vettet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-411",
+    "norsk": "det går kaldt nedover ryggen på en",
+    "lemma": "det går kaldt nedover ryggen på en",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-412",
+    "norsk": "å gå på skinner",
+    "lemma": "gå på skinner",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-413",
+    "norsk": "å gå som smurt",
+    "lemma": "gå som smurt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-414",
+    "norsk": "hjulene går rundt",
+    "lemma": "hjulene går rundt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-415",
+    "norsk": "å gå av stabelen",
+    "lemma": "gå av stabelen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-416",
+    "norsk": "å gå så det suser",
+    "lemma": "gå så det suser",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-417",
+    "norsk": "å gå den veien høna sparker",
+    "lemma": "gå den veien høna sparker",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-418",
+    "norsk": "å gå til verket",
+    "lemma": "gå til verket",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-419",
+    "norsk": "å gå rett hjem hos noen",
+    "lemma": "gå rett hjem hos noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-420",
+    "norsk": "en rød tråd",
+    "lemma": "en rød tråd",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-421",
+    "norsk": "å gjøre knefall for noen",
+    "lemma": "gjøre knefall for noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-422",
+    "norsk": "nesegrus beundring",
+    "lemma": "nesegrus beundring",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-423",
+    "norsk": "å gi en pekepinn om noe",
+    "lemma": "gi en pekepinn om noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-424",
+    "norsk": "å se tiden an",
+    "lemma": "se tiden an",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-425",
+    "norsk": "å gjøre store øyne",
+    "lemma": "gjøre store øyne",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-426",
+    "norsk": "å gjøre en dårlig figur",
+    "lemma": "gjøre en dårlig figur",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-427",
+    "norsk": "det er om å gjøre",
+    "lemma": "det er om å gjøre",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-428",
+    "norsk": "å la gå",
+    "lemma": "la gå",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-429",
+    "norsk": "å vippe noen av pinnen",
+    "lemma": "vippe noen av pinnen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-430",
+    "norsk": "å ta noen for gitt",
+    "lemma": "ta noen for gitt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-431",
+    "norsk": "å sette nesa mot et sted",
+    "lemma": "sette nesa mot et sted",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-432",
+    "norsk": "å gå noen på nervene",
+    "lemma": "gå noen på nervene",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-433",
+    "norsk": "å bli varm i trøya",
+    "lemma": "bli varm i trøya",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-434",
+    "norsk": "å komme som julekvelden på kjerringa",
+    "lemma": "komme som julekvelden på kjerringa",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-435",
+    "norsk": "å kaste perler for svin",
+    "lemma": "kaste perler for svin",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-436",
+    "norsk": "å dra til sjøs",
+    "lemma": "dra til sjøs",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-437",
+    "norsk": "ikke ha en sjanse i havet",
+    "lemma": "ikke ha en sjanse i havet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-438",
+    "norsk": "det har rent mye vann i havet",
+    "lemma": "det har rent mye vann i havet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-439",
+    "norsk": "som hund og katt",
+    "lemma": "som hund og katt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-440",
+    "norsk": "å skue hunden på hårene",
+    "lemma": "skue hunden på hårene",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-441",
+    "norsk": "å gå over bekken etter vann",
+    "lemma": "gå over bekken etter vann",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-442",
+    "norsk": "å kjøpe katta i sekken",
+    "lemma": "kjøpe katta i sekken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-443",
+    "norsk": "å slippe katta ut av sekken",
+    "lemma": "slippe katta ut av sekken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-444",
+    "norsk": "å gi en god dag i noe",
+    "lemma": "gi en god dag i noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-445",
+    "norsk": "å ta noe på sparket",
+    "lemma": "ta noe på sparket",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-446",
+    "norsk": "å smi mens jernet er varmt",
+    "lemma": "smi mens jernet er varmt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-447",
+    "norsk": "å stikke noe under stol",
+    "lemma": "stikke noe under stol",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-448",
+    "norsk": "å føle noen på tennene",
+    "lemma": "føle noen på tennene",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-449",
+    "norsk": "å vise tenner",
+    "lemma": "vise tenner",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-450",
+    "norsk": "å gjøre sine hoser grønne",
+    "lemma": "gjøre sine hoser grønne",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-451",
+    "norsk": "å leve på stor fot",
+    "lemma": "leve på stor fot",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-452",
+    "norsk": "med kaldt blod",
+    "lemma": "med kaldt blod",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-453",
+    "norsk": "å stå på god fot med noen",
+    "lemma": "stå på god fot med noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-454",
+    "norsk": "å trekke i trådene",
+    "lemma": "trekke i trådene",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-455",
+    "norsk": "som kjerringa mot strømmen",
+    "lemma": "som kjerringa mot strømmen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-456",
+    "norsk": "å henge i en tynn tråd",
+    "lemma": "henge i en tynn tråd",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-457",
+    "norsk": "å ta opp tråden",
+    "lemma": "ta opp tråden",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-458",
+    "norsk": "å være lett på tråden",
+    "lemma": "være lett på tråden",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-459",
+    "norsk": "å danse etter noens pipe",
+    "lemma": "danse etter noens pipe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-460",
+    "norsk": "å sette sitt lys under en skjeppe",
+    "lemma": "sette sitt lys under en skjeppe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-461",
+    "norsk": "å være en hund etter noe",
+    "lemma": "være en hund etter noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-462",
+    "norsk": "krake søker make",
+    "lemma": "krake søker make",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-463",
+    "norsk": "som man reder, ligger man",
+    "lemma": "som man reder, ligger man",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-464",
+    "norsk": "å gå i hundene",
+    "lemma": "gå i hundene",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-465",
+    "norsk": "ikke eie nåla i veggen",
+    "lemma": "ikke eie nåla i veggen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-466",
+    "norsk": "å lete etter nåla i høystakken",
+    "lemma": "lete etter nåla i høystakken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-467",
+    "norsk": "å gi katten i noe",
+    "lemma": "gi katten i noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-468",
+    "norsk": "å legge seg i selen",
+    "lemma": "legge seg i selen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-469",
+    "norsk": "å være mellom barken og veden",
+    "lemma": "være mellom barken og veden",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-470",
+    "norsk": "å ta noen på kornet",
+    "lemma": "ta noen på kornet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-471",
+    "norsk": "å kaste blår i øynene på noen",
+    "lemma": "kaste blår i øynene på noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-472",
+    "norsk": "å ta noe på strak arm",
+    "lemma": "ta noe på strak arm",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-473",
+    "norsk": "på stående fot",
+    "lemma": "på stående fot",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-474",
+    "norsk": "å la humla suse",
+    "lemma": "la humla suse",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-475",
+    "norsk": "ha kort lunte",
+    "lemma": "ha kort lunte",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-476",
+    "norsk": "rive i en drink",
+    "lemma": "rive i en drink",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-477",
+    "norsk": "mele sin egen kake",
+    "lemma": "mele sin egen kake",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-478",
+    "norsk": "å gi noen på båten",
+    "lemma": "gi noen på båten",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-479",
+    "norsk": "å lukte lunta",
+    "lemma": "lukte lunta",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-480",
+    "norsk": "å sitte med skjegget i postkassa",
+    "lemma": "sitte med skjegget i postkassa",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-481",
+    "norsk": "å være fyr og flamme",
+    "lemma": "være fyr og flamme",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-482",
+    "norsk": "å stå på pinne for noen",
+    "lemma": "stå på pinne for noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-483",
+    "norsk": "å sluke kameler",
+    "lemma": "sluke kameler",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-484",
+    "norsk": "å gråte krokodilletårer",
+    "lemma": "gråte krokodilletårer",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-485",
+    "norsk": "å sette kronen på verket",
+    "lemma": "sette kronen på verket",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-486",
+    "norsk": "å lese noen teksten",
+    "lemma": "lese noen teksten",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-487",
+    "norsk": "å tråkke i salaten",
+    "lemma": "tråkke i salaten",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-488",
+    "norsk": "å pakke snippesken",
+    "lemma": "pakke snippesken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-489",
+    "norsk": "å hoppe etter Wirkola",
+    "lemma": "hoppe etter Wirkola",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-490",
+    "norsk": "å være på en snei",
+    "lemma": "være på en snei",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-491",
+    "norsk": "under fire øyne",
+    "lemma": "under fire øyne",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-492",
+    "norsk": "å få noen opp i halsen",
+    "lemma": "få noen opp i halsen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-493",
+    "norsk": "hals over hode",
+    "lemma": "hals over hode",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-494",
+    "norsk": "kors på halsen",
+    "lemma": "kors på halsen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-495",
+    "norsk": "å sette latteren i halsen",
+    "lemma": "sette latteren i halsen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-496",
+    "norsk": "å få hjertet i halsen",
+    "lemma": "få hjertet i halsen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-497",
+    "norsk": "å ta seg i nakken",
+    "lemma": "ta seg i nakken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-498",
+    "norsk": "å få noen på nakken",
+    "lemma": "få noen på nakken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-499",
+    "norsk": "storm i et vannglass",
+    "lemma": "storm i et vannglass",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-500",
+    "norsk": "å se rødt",
+    "lemma": "se rødt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-501",
+    "norsk": "brent barn skyr ilden",
+    "lemma": "brent barn skyr ilden",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-502",
+    "norsk": "egget vil lære høna å verpe",
+    "lemma": "egget vil lære høna å verpe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-503",
+    "norsk": "å være en saga blott",
+    "lemma": "være en saga blott",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-504",
+    "norsk": "det får stå sin prøve",
+    "lemma": "det får stå sin prøve",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-505",
+    "norsk": "det er ugler i mosen",
+    "lemma": "det er ugler i mosen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-506",
+    "norsk": "det blir sus i serken",
+    "lemma": "det blir sus i serken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-507",
+    "norsk": "å gjøre susen",
+    "lemma": "gjøre susen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-508",
+    "norsk": "å bite på kroken",
+    "lemma": "bite på kroken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-509",
+    "norsk": "det sorte får",
+    "lemma": "det sorte får",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-510",
+    "norsk": "hastverk er lastverk",
+    "lemma": "hastverk er lastverk",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-511",
+    "norsk": "å begrave stridsøksa",
+    "lemma": "begrave stridsøksa",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-512",
+    "norsk": "å falle mellom to stoler",
+    "lemma": "falle mellom to stoler",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-513",
+    "norsk": "saken er biff",
+    "lemma": "saken er biff",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-514",
+    "norsk": "å feie for egen dør",
+    "lemma": "feie for egen dør",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-515",
+    "norsk": "å føre noen bak lyset",
+    "lemma": "føre noen bak lyset",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-516",
+    "norsk": "å få bakoversveis",
+    "lemma": "få bakoversveis",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-517",
+    "norsk": "å feie noe under teppet",
+    "lemma": "feie noe under teppet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-518",
+    "norsk": "å få hatten passet",
+    "lemma": "få hatten passet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-519",
+    "norsk": "ikke være tapt bak ei vogn",
+    "lemma": "ikke være tapt bak ei vogn",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-520",
+    "norsk": "det skinner gjennom",
+    "lemma": "det skinner gjennom",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-521",
+    "norsk": "å bite i gresset",
+    "lemma": "bite i gresset",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-522",
+    "norsk": "å bite seg merke i noe",
+    "lemma": "bite seg merke i noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-523",
+    "norsk": "å bite ordene i seg",
+    "lemma": "bite ordene i seg",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-524",
+    "norsk": "å drives fra skanse til skanse",
+    "lemma": "drives fra skanse til skanse",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-525",
+    "norsk": "å bøye seg i støvet",
+    "lemma": "bøye seg i støvet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-526",
+    "norsk": "ikke være født i går",
+    "lemma": "ikke være født i går",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-527",
+    "norsk": "å gi seg ende over",
+    "lemma": "gi seg ende over",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-528",
+    "norsk": "å gi noen inn",
+    "lemma": "gi noen inn",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-529",
+    "norsk": "å gå berserk",
+    "lemma": "gå berserk",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-530",
+    "norsk": "å måle noen med øynene",
+    "lemma": "måle noen med øynene",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-531",
+    "norsk": "å brenne inne med noe",
+    "lemma": "brenne inne med noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-532",
+    "norsk": "å veie sine ord",
+    "lemma": "veie sine ord",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-533",
+    "norsk": "å slå seg i lag med noen",
+    "lemma": "slå seg i lag med noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-534",
+    "norsk": "å være med på laget",
+    "lemma": "være med på laget",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-535",
+    "norsk": "en ulv i fåreklær",
+    "lemma": "en ulv i fåreklær",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-536",
+    "norsk": "i grevens tid",
+    "lemma": "i grevens tid",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-537",
+    "norsk": "med glans",
+    "lemma": "med glans",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-538",
+    "norsk": "å gi noen det glatte lag",
+    "lemma": "gi noen det glatte lag",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-539",
+    "norsk": "å gå på limpinnen",
+    "lemma": "gå på limpinnen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-540",
+    "norsk": "å gå fem på",
+    "lemma": "gå fem på",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-541",
+    "norsk": "å stå ved lag",
+    "lemma": "stå ved lag",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-542",
+    "norsk": "å spille på lag med noen",
+    "lemma": "spille på lag med noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-543",
+    "norsk": "å bryte lag",
+    "lemma": "bryte lag",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-544",
+    "norsk": "å komme i lag",
+    "lemma": "komme i lag",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-545",
+    "norsk": "å holde noe ved lag",
+    "lemma": "holde noe ved lag",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-546",
+    "norsk": "å skjære alle over én kam",
+    "lemma": "skjære alle over én kam",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-547",
+    "norsk": "å slå seg på brystet",
+    "lemma": "slå seg på brystet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-548",
+    "norsk": "å sitte med hendene i fanget",
+    "lemma": "sitte med hendene i fanget",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-549",
+    "norsk": "å stikke nesa si i noe",
+    "lemma": "stikke nesa si i noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-550",
+    "norsk": "ikke løfte en finger",
+    "lemma": "ikke løfte en finger",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-551",
+    "norsk": "ikke la seg be to ganger",
+    "lemma": "ikke la seg be to ganger",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-552",
+    "norsk": "å gå i forbønn for noen",
+    "lemma": "gå i forbønn for noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-553",
+    "norsk": "å være bundet på hender og føtter",
+    "lemma": "være bundet på hender og føtter",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-554",
+    "norsk": "bordet fanger",
+    "lemma": "bordet fanger",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-555",
+    "norsk": "å bite fra seg",
+    "lemma": "bite fra seg",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-556",
+    "norsk": "å få fyken",
+    "lemma": "få fyken",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-557",
+    "norsk": "å dra lasset",
+    "lemma": "dra lasset",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-558",
+    "norsk": "å dra på det",
+    "lemma": "dra på det",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-559",
+    "norsk": "å dra noe i tvil",
+    "lemma": "dra noe i tvil",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-560",
+    "norsk": "å dra på det ene beinet",
+    "lemma": "dra på det ene beinet",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-561",
+    "norsk": "å dra lærdom av noe",
+    "lemma": "dra lærdom av noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-562",
+    "norsk": "å drive dank",
+    "lemma": "drive dank",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-563",
+    "norsk": "å drive gjøn med noen",
+    "lemma": "drive gjøn med noen",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-564",
+    "norsk": "å drive det langt",
+    "lemma": "drive det langt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-565",
+    "norsk": "å drive noen på flukt",
+    "lemma": "drive noen på flukt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-566",
+    "norsk": "å drive det for langt",
+    "lemma": "drive det for langt",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-567",
+    "norsk": "å stå og falle med noe",
+    "lemma": "stå og falle med noe",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-568",
+    "norsk": "å falle noen lang",
+    "lemma": "falle noen lang",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-569",
+    "norsk": "å falle i synd",
+    "lemma": "falle i synd",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-570",
+    "norsk": "å falle til jorden",
+    "lemma": "falle til jorden",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-571",
+    "norsk": "å falle i god jord",
+    "lemma": "falle i god jord",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-572",
+    "norsk": "å falle på steingrunn",
+    "lemma": "falle på steingrunn",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "u-c-573",
+    "norsk": "å ha gjenklang",
+    "lemma": "ha gjenklang",
+    "level": "C",
+    "category": "uttrykk",
+    "part": "phrase"
+  }
+]

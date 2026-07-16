@@ -217,3 +217,11 @@ et smell
 å ule
 en skurk
 å oppdage
+prompøs
+
+idrettshistorie
+landskamp (en): international match
+spiss (en): striker
+å ydmyke
+ydmykende
+avsløring

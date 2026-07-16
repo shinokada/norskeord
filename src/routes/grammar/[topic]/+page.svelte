@@ -13,7 +13,12 @@
 
   let rule = $derived(GRAMMAR_RULES[data.topic]);
   let isNb = $derived(localeStore.current === 'nb');
-  let title = $derived(rule ? (isNb ? rule.titleNb : rule.titleEn) : data.topic);
+  // Nivå C is hardcoded to Norwegian, not locale-dependent (see
+  // ai-docs/implementation/c-grammar-norsk-instruksjoner.md).
+  let forceNb = $derived(data.questions.some((q) => q.cefr === 'C'));
+  let title = $derived(
+    rule ? (forceNb ? rule.titleNb : isNb ? rule.titleNb : rule.titleEn) : data.topic
+  );
 
   // Free users only get the free subset; Plus users get everything.
   let freeSet = $derived(new Set(data.freeQuestionIds));

@@ -2366,7 +2366,8 @@
     "example_german": "Es ist klares Wetter und ein Sternenhimmel.",
     "level": "A2",
     "category": "weather",
-    "part": "adjective"
+    "part": "adjective",
+    "definition": "Lett å forstå, uten noe som er usikkert eller forvirrende."
   },
   {
     "id": "v-a2-weather-010",

@@ -60,6 +60,7 @@
   "grammar_order_prompt": "Schreibe den Satz in der richtigen Reihenfolge",
   "grammar_order_words": "Zu verwendende Wörter",
   "grammar_transform_prompt": "Schreibe den Satz um",
+  "grammar_multiple_choice_prompt": "Welche Umschreibung bedeutet dasselbe?",
   "grammar_input_placeholder": "Gib deine Antwort ein…",
   "grammar_check": "Prüfen",
   "grammar_skip": "Überspringen",
