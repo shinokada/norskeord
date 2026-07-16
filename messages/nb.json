@@ -60,6 +60,7 @@
   "grammar_order_prompt": "Skriv setningen i riktig rekkefølge",
   "grammar_order_words": "Ord du skal bruke",
   "grammar_transform_prompt": "Skriv om setningen",
+  "grammar_multiple_choice_prompt": "Hvilken omskriving betyr det samme?",
   "grammar_input_placeholder": "Skriv svaret ditt…",
   "grammar_check": "Sjekk",
   "grammar_skip": "Hopp over",

@@ -24,6 +24,11 @@ const TYPO_MIN_LEN = 4;
  * - exact (normalised) match against answer/alternates → correct, 'good'
  * - within 1 edit of a candidate that is at least TYPO_MIN_LEN chars → correct, 'hard'
  * - otherwise → incorrect, 'again'
+ *
+ * multiple-choice questions need no special handling here: the UI passes the
+ * full text of the tapped option (see MultipleChoiceQuestion.svelte), which is
+ * matched against `answer` the same way as every other type — `answer` must be
+ * one of the option strings verbatim.
  */
 export function gradeGrammarAnswer(
   input: string,

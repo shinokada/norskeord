@@ -60,6 +60,7 @@
   "grammar_order_prompt": "Введіть речення в правильному порядку",
   "grammar_order_words": "Слова для використання",
   "grammar_transform_prompt": "Перепишіть речення",
+  "grammar_multiple_choice_prompt": "Який перефраз означає те саме?",
   "grammar_input_placeholder": "Введіть відповідь…",
   "grammar_check": "Перевірити",
   "grammar_skip": "Пропустити",

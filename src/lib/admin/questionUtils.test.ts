@@ -223,6 +223,61 @@ describe('validateQuestion — minimal-pair type', () => {
   });
 });
 
+describe('validateQuestion — multiple-choice type', () => {
+  it('passes with exactly 3 options where answer matches one of them', () => {
+    const errors = validateQuestion(
+      makeQuestion({
+        type: 'multiple-choice',
+        options: ['Hun nøler.', 'Hun frøs.', 'Hun gledet seg.'],
+        answer: 'Hun nøler.'
+      })
+    );
+    expect(errors).toEqual([]);
+  });
+
+  it('flags fewer than 3 options', () => {
+    const q = makeQuestion({
+      type: 'multiple-choice',
+      options: ['Hun nøler.', 'Hun frøs.'],
+      answer: 'Hun nøler.'
+    });
+    expect(validateQuestion(q)).toContain(
+      'options must have exactly 3 entries for multiple-choice'
+    );
+  });
+
+  it('flags more than 3 options', () => {
+    const q = makeQuestion({
+      type: 'multiple-choice',
+      options: ['a', 'b', 'c', 'd'],
+      answer: 'a'
+    });
+    expect(validateQuestion(q)).toContain(
+      'options must have exactly 3 entries for multiple-choice'
+    );
+  });
+
+  it('flags missing options', () => {
+    const q = makeQuestion({ type: 'multiple-choice' });
+    const partial = { ...q } as Partial<GrammarQuestion>;
+    delete partial.options;
+    expect(validateQuestion(partial)).toContain(
+      'options must have exactly 3 entries for multiple-choice'
+    );
+  });
+
+  it('flags an answer that does not exactly match one of the options', () => {
+    const q = makeQuestion({
+      type: 'multiple-choice',
+      options: ['Hun nøler.', 'Hun frøs.', 'Hun gledet seg.'],
+      answer: 'Hun nøler'
+    });
+    expect(validateQuestion(q)).toContain(
+      'answer must exactly match one of the options for multiple-choice'
+    );
+  });
+});
+
 describe("validateQuestion — cross-type: fill-specific errors don't appear for other types", () => {
   it('no sentence error for an order question', () => {
     const errors = validateQuestion(makeQuestion({ type: 'order', tokens: ['a', 'b'] }));
