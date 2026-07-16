@@ -73,11 +73,14 @@
   }
 
   const visibleCategories = $derived(
-    isPlus
-      ? data.categories.filter(
-          (c: { slug: string; locked: boolean }) => c.slug !== 'uttrykk-preview'
-        )
-      : data.categories
+    data.categories.filter(
+      (c: { slug: string; locked: boolean }) =>
+        c.slug !== 'uttrykk' && c.slug !== 'uttrykk-preview'
+    )
+  );
+
+  const uttrykkCategory = $derived(
+    data.categories.find((c: { slug: string; locked: boolean }) => c.slug === 'uttrykk')
   );
 
   const showNorskproven = $derived(data.level === 'a2' || data.level === 'b1');
@@ -176,7 +179,7 @@
     <div class="flex flex-wrap gap-2">
       {#each visibleCategories as cat (cat.slug)}
         {@const locked = !isPlus && cat.locked}
-        {#if !(isPlus && cat.slug === 'uttrykk-preview') && !locked}
+        {#if !locked}
           <a
             href="/{data.level}/{cat.slug}"
             class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
@@ -188,7 +191,8 @@
       {/each}
       {#if !isPlus}
         {@const lockedCount = data.categories.filter(
-          (c: { slug: string; locked: boolean }) => c.locked && c.slug !== 'uttrykk-preview'
+          (c: { slug: string; locked: boolean }) =>
+            c.locked && c.slug !== 'uttrykk' && c.slug !== 'uttrykk-preview'
         ).length}
         {#if lockedCount >= 3}
           <a
@@ -201,6 +205,35 @@
       {/if}
     </div>
   </section>
+
+  <!-- ── Section 2b — Uttrykk (fixed expressions) ──────────────────────────── -->
+  {#if uttrykkCategory}
+    {@const locked = !isPlus && uttrykkCategory.locked}
+    <section class="mb-12">
+      <h2 class="mb-4">💬 Uttrykk</h2>
+      <a
+        href={locked ? `/${data.level}/uttrykk-preview` : `/${data.level}/uttrykk`}
+        class="flex items-center justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
+      >
+        <div class="text-left">
+          <p class="font-semibold text-gray-800 dark:text-gray-100">
+            {data.levelStats?.uttrykk ?? 0} fixed expressions
+          </p>
+          <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
+            Idioms and set phrases used in everyday Norwegian{#if locked}
+              · Preview free, full deck is Plus{/if}
+          </p>
+        </div>
+        {#if locked}
+          <span
+            class="shrink-0 rounded-full bg-indigo-100 px-2 py-0.5 text-[10px] font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
+          >
+            🔒 Plus
+          </span>
+        {/if}
+      </a>
+    </section>
+  {/if}
 
   <!-- ── Section 3 — Grammar ─────────────────────────────────────────────── -->
   {#if data.grammarTopics.length > 0}
