@@ -35,6 +35,7 @@
     if (q.type === 'transform') return q.source ?? q.answer;
     if (q.type === 'order') return (q.tokens ?? []).join(' / ');
     if (q.type === 'minimal-pair') return `A: ${q.optionA}  |  B: ${q.optionB}`;
+    if (q.type === 'multiple-choice') return q.prompt ?? (q.options ?? []).join(' / ');
     return q.answer;
   }
 

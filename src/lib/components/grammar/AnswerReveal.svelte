@@ -20,8 +20,15 @@
   } = $props();
 
   let isNb = $derived(localeStore.current === 'nb');
-  let ruleTitle = $derived(rule ? (isNb ? rule.titleNb : rule.titleEn) : '');
-  let ruleText = $derived(rule ? (isNb ? rule.explanationNb : rule.explanationEn) : '');
+  // Nivå C is hardcoded to Norwegian, not locale-dependent (see
+  // ai-docs/implementation/c-grammar-norsk-instruksjoner.md).
+  let forceNb = $derived(question.cefr === 'C');
+  let ruleTitle = $derived(
+    rule ? (forceNb ? rule.titleNb : isNb ? rule.titleNb : rule.titleEn) : ''
+  );
+  let ruleText = $derived(
+    rule ? (forceNb ? rule.explanationNb : isNb ? rule.explanationNb : rule.explanationEn) : ''
+  );
 </script>
 
 <div

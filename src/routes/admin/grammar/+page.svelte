@@ -57,7 +57,13 @@
     'preposisjoner-sted'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
-  const TYPES: GrammarQuestion['type'][] = ['fill', 'order', 'transform', 'minimal-pair'];
+  const TYPES: GrammarQuestion['type'][] = [
+    'fill',
+    'order',
+    'transform',
+    'minimal-pair',
+    'multiple-choice'
+  ];
 
   const filtered = $derived(
     draft.filter((q) => {
@@ -146,7 +152,7 @@
     modal = null;
   }
 
-  function addChip(field: 'tokens' | 'words' | 'alternates') {
+  function addChip(field: 'tokens' | 'words' | 'alternates' | 'options') {
     if (!modal) return;
     const value = tokensInput.trim();
     if (!value) return;
@@ -155,7 +161,7 @@
     tokensInput = '';
   }
 
-  function removeChip(field: 'tokens' | 'words' | 'alternates', index: number) {
+  function removeChip(field: 'tokens' | 'words' | 'alternates' | 'options', index: number) {
     if (!modal) return;
     const arr = (modal.question[field] as string[] | undefined) ?? [];
     modal.question = { ...modal.question, [field]: arr.filter((_, i) => i !== index) };
@@ -307,6 +313,8 @@
       case 'optionB':
       case 'explanation':
         return type === 'minimal-pair';
+      case 'options':
+        return type === 'multiple-choice';
       default:
         return true;
     }
@@ -714,6 +722,44 @@
               class="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
             ></textarea>
           </label>
+        {/if}
+
+        {#if fieldVisible(modal.question.type, 'options')}
+          <div class="col-span-2 text-sm">
+            <span class="block font-medium dark:text-gray-200"
+              >Options (exactly 3 — answer must match one exactly)</span
+            >
+            <div class="mt-1 flex flex-wrap gap-1">
+              {#each modal.question.options ?? [] as option, i (i)}
+                <span
+                  class="flex items-center gap-1 rounded bg-gray-200 px-2 py-0.5 text-xs dark:bg-gray-700 dark:text-white"
+                >
+                  {option}
+                  <button
+                    type="button"
+                    class="text-red-600"
+                    onclick={() => removeChip('options', i)}>×</button
+                  >
+                </span>
+              {/each}
+            </div>
+            <input
+              type="text"
+              placeholder="Type an option and press Enter"
+              onkeydown={(e) => {
+                if (e.key === 'Enter' || e.key === ',') {
+                  e.preventDefault();
+                  const value = e.currentTarget.value.trim();
+                  if (value) {
+                    const arr = modal?.question.options ?? [];
+                    if (modal) modal.question = { ...modal.question, options: [...arr, value] };
+                    e.currentTarget.value = '';
+                  }
+                }
+              }}
+              class="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+            />
+          </div>
         {/if}
 
         <label class="col-span-2 text-sm">
