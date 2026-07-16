@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.52.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added advanced Nivå C grammar content covering 24 topics and 425 questions.
+    - Added multiple-choice grammar exercises with three answer options.
+    - Expanded Nivå C vocabulary and expressions with multilingual translations, definitions, and examples.
+  - **Improvements**
+    - Nivå C grammar titles, explanations, and instructional text now always appear in Norwegian.
+    - Added localized prompts for multiple-choice exercises in supported languages.
+  - **Validation**
+    - Added checks to help verify Norwegian grammar content and vocabulary coverage.
+
 ## 2.51.0
 
 ### Minor Changes
