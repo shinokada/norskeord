@@ -660,6 +660,10 @@ under Content plan above.
   every idiom in each part with a real `uttrykk-c.json` match, not a fixed ~30–40 cap — likely
   ~40–60 per part once the matching script runs.
 - `multiple-choice` uses a fixed 3-option format, matching the textbook.
+- **2026-07-15/16:** after all 24 topics shipped here, a follow-up pass converted every
+  question's `prompt`/`hint`/`explanation` from English to Norwegian (C assumes near-native
+  comprehension). `GrammarRule.titleEn`/`explanationEn` above are unaffected — see
+  `ai-docs/implementation/c-grammar-norsk-instruksjoner.md` for that decision and progress.
 
 ## Open questions (resolved)
 
