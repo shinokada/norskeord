@@ -3,9 +3,10 @@ import type { PageServerLoad } from './$types';
 import { CATEGORIES_BY_LEVEL } from '$lib/config';
 import { isPlusCategory, isFreeGrammarTopic } from '$lib/access';
 import { topicLevels } from '$lib/vocab-helpers';
+import { uttrykkCCategoryCounts } from '$lib/uttrykk-c-stats';
 import grammarData from '$lib/data/grammar.json';
 import stats from '$lib/data/stats.json';
-import type { CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
+import type { CEFRLevel, GrammarQuestion, GrammarTopic, VocabEntry } from '$lib/types';
 import { parsePosts, type RawPostModule, cefrLevels } from '$lib/blog';
 
 export const prerender = false;
@@ -18,6 +19,17 @@ const CEFR_LABELS: Record<string, string> = {
   b1: 'Intermediate',
   b2: 'Upper Intermediate',
   c: 'Mastery'
+};
+
+// Phase 3b (ai-docs/implementation/uttrykk-category.md): per-theme breakdown
+// for the Uttrykk hub card. A1–B2 only — C has no `theme` field (its
+// uttrykk-c.json entries carry a real category slug instead and are merged
+// into the Vocabulary section's own category pages, per Phase 4).
+const uttrykkThemeLoaders: Partial<Record<CEFRLevel, () => Promise<{ default: VocabEntry[] }>>> = {
+  A1: () => import('$lib/data/uttrykk-a1.json') as unknown as Promise<{ default: VocabEntry[] }>,
+  A2: () => import('$lib/data/uttrykk-a2.json') as unknown as Promise<{ default: VocabEntry[] }>,
+  B1: () => import('$lib/data/uttrykk-b1.json') as unknown as Promise<{ default: VocabEntry[] }>,
+  B2: () => import('$lib/data/uttrykk-b2.json') as unknown as Promise<{ default: VocabEntry[] }>
 };
 
 export const load: PageServerLoad = async ({ params }) => {
@@ -79,6 +91,28 @@ export const load: PageServerLoad = async ({ params }) => {
   const allPosts = parsePosts(modules);
   const blogPosts = allPosts.filter((p) => cefrLevels(p.cefr).includes(levelUpper)).slice(0, 3);
 
+  // Phase 3b: group this level's uttrykk deck by theme for the hub card.
+  // Phase 8 (ai-docs/implementation/uttrykk-category.md): for C, there's no
+  // `theme` field to group by, so its real category slugs (from
+  // uttrykk-c.json, via uttrykk-c-stats.ts — the same source stats/+page.svelte
+  // uses) serve as the theme-equivalent instead.
+  const uttrykkThemeLoader = uttrykkThemeLoaders[levelUpper];
+  let uttrykkThemes: { theme: string; count: number }[] = [];
+  if (uttrykkThemeLoader) {
+    const uttrykkData = await uttrykkThemeLoader();
+    const counts = new Map<string, number>();
+    for (const e of uttrykkData.default) {
+      if (e.theme) counts.set(e.theme, (counts.get(e.theme) ?? 0) + 1);
+    }
+    uttrykkThemes = [...counts.entries()]
+      .map(([theme, count]) => ({ theme, count }))
+      .sort((a, b) => b.count - a.count);
+  } else if (levelUpper === 'C') {
+    uttrykkThemes = [...uttrykkCCategoryCounts().entries()]
+      .map(([theme, count]) => ({ theme, count }))
+      .sort((a, b) => b.count - a.count);
+  }
+
   return {
     level,
     levelUpper,
@@ -86,7 +120,8 @@ export const load: PageServerLoad = async ({ params }) => {
     categories,
     grammarTopics,
     levelStats,
-    blogPosts
+    blogPosts,
+    uttrykkThemes
     // user and plan come from the root layout — do NOT re-export here
   };
 };
