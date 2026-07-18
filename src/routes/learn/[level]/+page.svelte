@@ -74,8 +74,7 @@
 
   const visibleCategories = $derived(
     data.categories.filter(
-      (c: { slug: string; locked: boolean }) =>
-        c.slug !== 'uttrykk' && c.slug !== 'uttrykk-preview'
+      (c: { slug: string; locked: boolean }) => c.slug !== 'uttrykk' && c.slug !== 'uttrykk-preview'
     )
   );
 
