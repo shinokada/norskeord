@@ -2,66 +2,42 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-You created ai-docs/implementation/uttrykk-category.md. You terminated before updating Phase 1 in uttrykk-category.md to spell out this hybrid taxonomy instead of the vaguer "reuse where it fits". Read the following which is from a previous session and update uttrykk-category.md. 
+We are working on ai-docs/implementation/uttrykk-category.md. The following is from a previous session. You created ai-docs/implementation/uttrykk-theme-triage-b2.json, and I'm wondering if it is ready for node scripts/merge-uttrykk-theme.mjs b2 command.
 
-ME: In Phase 1, you want to introduce `theme` and `chapter` field. Why can't we recycle  "category" and     "part"? The "part" field may not suit with uttrykk. What do you think?
 
-CLAUDE: Good question — worth being precise about, since it's the kind of thing that looks like a nice simplification but actually collides with two different jobs those fields are already doing.
+ME: I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.  We are working on ai-docs/implementation/uttrykk-category.md. The following is from a previous session. I'd like to continue to b2 using the same method, you create uttrykk-theme-triage-b2.json so that I can run `node scripts/merge-uttrykk-theme.mjs b2`.
 
-**Why `category` can't be recycled**
 
-`category` isn't just a label — it's the field the whole routing/gating system keys off:
+```markdown
 
-- `isPlusCategory(level, category)` gates access per exact category string.
-- The `[level]/[category]/+page.server.ts` route reads `category` from the URL and uses it to pick a loader.
-- `PLUS_CATEGORIES` is a flat set of `"level/category"` strings.
-- `CATEGORIES_BY_LEVEL` is the source of truth for which category slugs exist and get rendered as picker badges/routes at all.
+ME: Output:
 
-Every uttrykk entry has `category: "uttrykk"` today because that's what makes it resolve to the single `/b2/uttrykk` route and the single Plus gate. If we repurposed `category` to hold the theme instead (e.g. `"idioms"`, `"greetings"`), one of two things breaks:
-
-1. The loader for `/b2/uttrykk` stops finding these entries at all, since it's presumably filtering on `category === 'uttrykk'`. You'd have to rewrite the loader to know about every theme value, which reintroduces exactly the "one route per theme" sprawl the Non-goals section already rejected (A1 going from ~20 badges toward 35-40).
-2. Or, if you *did* let each theme become its own routable category, you're back to needing `PLUS_CATEGORIES` entries and picker badges per theme — the thing this whole doc exists to avoid.
-
-So `theme` has to be a second, additive field precisely because `category` is load-bearing infrastructure, not just descriptive metadata. This is already the reasoning behind the "category stays `"uttrykk"` for every entry" line in Phase 2 — worth being explicit that this is *why* a new field is required, not just a style choice.
-
-**Why `part` can't be recycled**
-
-`part: PartOfSpeech` is a closed grammatical tag — `noun | verb | adjective | ... | phrase` — and it's already carrying meaning for uttrykk: Phase 4 uses `part: "phrase"` to mark C-level uttrykk entries folded into `vocab-c.json`. If `part` also had to carry a topic (`"greetings"`, `"idioms"`, `"proverbs"`...), you'd be conflating two unrelated axes — grammatical category and topical theme — into one field. Concretely that breaks:
-
-- Any existing UI/filter built around "part of speech" (if the vocab picker ever filters/displays by `part`, it would start showing topic names mixed in with `noun`/`verb`).
-- The `"phrase"` value itself, which is the one signal that currently says "this is an uttrykk-shaped entry" — you'd lose that if `part` gets overloaded to mean theme instead.
-
-Also practically: `part` is typed as a fixed union in `types.ts`, so "recycling" it would mean either abusing an existing literal (bad) or extending `PartOfSpeech` with a pile of topic strings that have nothing to do with parts of speech (worse — it corrupts the type for every non-uttrykk entry too).
-
-**Bottom line:** `theme` needs to exist as its own field because `category` is a routing/gating primitive and `part` is a grammatical tag with an existing, different job (and an existing literal, `"phrase"`, already in use for uttrykk). Reusing either would either break routing or corrupt a type that's shared across the whole vocab dataset — a new additive field is the only way to add this dimension without touching either.
-
-Want me to add this "why not reuse `category`/`part`" rationale into Phase 1 of the doc, right after the taxonomy section?
-
-ME: Since vocab and uttrykk have own files, can we have own logic? What do you think?
-
-CLAUDE: That's a sharp question, and checking the actual loader code changes my answer a bit — worth being honest about that.
-
-**First, the correction:** I looked at `[level]/[category]/+page.server.ts`, and it turns out the uttrykk route does **not** filter by `entry.category` at all. It loads the whole file wholesale:
-
-```js
-const uttrykkLoader = uttrykkLoaders[key]; // key = "b1/uttrykk"
-const data = await uttrykkLoader();        // imports uttrykk-b1.json directly
+```
+➜  norskeord git:(feat/uttrykk) ✗ node scripts/merge-a2-theme.mjs
+✅ Wrote 278 entries with theme → /Users/shinichiokada/Svelte/svelte-languages/norskeord/src/lib/data/uttrykk-a2.json
 ```
 
-Only the *vocab* fallback path filters by category (`vocab.default.filter(e => e.category === category)`), because vocab entries for a whole level all live in one shared file (`vocab-b1.json`) and need a field to split them apart. Uttrykk entries never need that split — the file boundary already does it. So my earlier framing ("category drives routing, that's why it can't be repurposed") was wrong for uttrykk specifically. Good catch — the file separation really does remove that reason.
+Can you continue b1?
 
-**But two other reasons survive, and they're not about routing:**
+CLAUDE: Let me verify the A2 file before moving on.Good — valid JSON, closes cleanly, 278 entries (up from the broken 158). A2 is done. Now let's start B1.This is a big batch (221 entries) — let me classify them systematically against B1's real theme list, then write the triage file.All 221 classified. Let me verify full ID coverage against the actual file and check theme validity before writing.Full coverage, all themes valid. Now writing the triage artifact and the small script to merge B1's themes.Now let me write this triage artifact to the project on the user's filesystem, and write the generic merge script for B1.Now let me generalize the merge script to handle any level, so you can run it for B1 (and later B2):Please run:
 
-**1. The `Category` type is generated from `CATEGORIES_BY_LEVEL`, and it's shared across files.** `VocabEntry.category: Category` and `CardProgress.category: Category` both use the same literal union, regardless of which JSON file the entry lives in. The functional fallback themes from Phase 1 — `idioms`, `time-expressions`, `opinion-formulas` — aren't in `CATEGORIES_BY_LEVEL.A1/A2/B1` at all. Writing them into `category` would either fail to typecheck, or force adding them to `CATEGORIES_BY_LEVEL` — which re-creates the badge/route sprawl the Non-goals section already rejects. This isn't really about *routing* logic, it's about the type being a single cross-file contract.
+```
+node scripts/merge-uttrykk-theme.mjs b1
+```
 
-**2. The real blocker is `CardProgress`, not routing.** `saveProgress()` copies `entry.category` straight into `CardProgress.category`, and that's what `CategoryBarChart.svelte` groups by to build the stats rows. Here's the concrete failure case: Phase 1's whole pitch is reusing topical names *when they genuinely fit* — e.g. an A1 uttrykk entry tagged `theme: "greetings"`, matching the real A1 vocab category `greetings`. If `category` held `"greetings"` directly instead of `"uttrykk"`, then a review of that uttrykk phrase and a review of a `vocab-a1.json` greetings word become **indistinguishable** in `CardProgress` — both produce a row with `category: "greetings"`. `CategoryBarChart`'s `/a1/greetings` bar would silently absorb both, inflating vocab progress with uttrykk reviews (or Phase 5's planned uttrykk-theme bar would double-count vocab reviews). That's not a style issue, it's a data-integrity bug, and it only shows up in exactly the cases where topical reuse — the part of the design we both liked — is working as intended.
+This one is generalized (takes the level as an argument) so it'll also work for B2 later — I've kept `merge-a2-theme.mjs` as-is since it already did its job pulling from the `.bak`. Paste the output and I'll verify the result and update the doc status.
 
-So: file separation kills the *routing* justification, but the *stats-disambiguation* justification for keeping `category: "uttrykk"` and adding `theme` separately still holds, and arguably it's the stronger of the two anyway.
+ME: Here you are.
 
-Want me to fold this correction into the doc — swap the routing-based rationale for the `CardProgress`-disambiguation rationale, since it's the more accurate reason?
-==========
+```
+➜  norskeord git:(feat/uttrykk) ✗ node scripts/merge-uttrykk-theme.mjs b1
+✅ Wrote 221 entries with theme → /Users/shinichiokada/Svelte/svelte-languages/norskeord/src/lib/data/uttrykk-b1.json
+```
 
-I have data-rules/vocab-and-uttrykk.md for your information.
+
+```
+
+CLAUDE: So B2's valid theme list = B2 topical categories (minus uttrykk/uttrykk-preview) + functional themes + general. Let me check the B1 triage artifact format and the B2 data file.679 entries. Let me get the full id + norsk list to classify systematically.Full coverage, all themes valid. Now let me write the triage artifact to the project.All 679 entries covered, all themes valid. Now writing the triage artifact to the project.
 
 ==========
 

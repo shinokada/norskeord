@@ -1,0 +1,561 @@
+[
+  {
+    "id": "u-a1-001",
+    "norsk": "Hvor kommer du fra? Jeg kommer fra Bergen.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-002",
+    "norsk": "Hvor bor du? Jeg bor i Norge.",
+    "proposed_theme": "greetings",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-003",
+    "norsk": "Hvem kommer fra Hellas? Sasha kommer fra Hellas.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-004",
+    "norsk": "Hvilke språk snakker du? Jeg snakker gresk og norsk.",
+    "proposed_theme": "greetings",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-005",
+    "norsk": "Hva heter det på norsk? Det heter arabisk.",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-006",
+    "norsk": "Hva heter du? Jeg heter Peter.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-007",
+    "norsk": "Hovdan staver du det? P-E-T-E-R.",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-008",
+    "norsk": "Kommer du fram Brazil? Nei, jeg kommer ikke fra Tyskland.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-009",
+    "norsk": "Snakker du engelsk? Ja, jeg snakker engelsk.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-010",
+    "norsk": "Hyggelig å treffe deg. I like måte.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-011",
+    "norsk": "Unnskyld, jeg forstår ikke.",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-012",
+    "norsk": "Hva betyr det?",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-013",
+    "norsk": "Hvordan går det? Fint. / Ganske bra, takk. / Sånn passe.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-014",
+    "norsk": "Hva gjør du? Jeg går på norskkurs.",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-015",
+    "norsk": "Lykke til! Takk skal du ha.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-016",
+    "norsk": "Hyggelig å snakke med deg. I like måte.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-017",
+    "norsk": "Ha det bra! Ha det!",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-018",
+    "norsk": "Godt jobba! Takk for det.",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-019",
+    "norsk": "Vær så god! Takk skal du ha. / Tusen takk.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-020",
+    "norsk": "Litt kake? Ja takk. / Nei takk.",
+    "proposed_theme": "food",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-021",
+    "norsk": "Likder du jobben? Ja det gjør jeg.",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-023",
+    "norsk": "har lyst på",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  { "id": "u-a1-024", "norsk": "mye å gjøre", "proposed_theme": "idioms", "confidence": "medium" },
+  {
+    "id": "u-a1-025",
+    "norsk": "har fri",
+    "proposed_theme": "time-expressions",
+    "confidence": "medium"
+  },
+  { "id": "u-a1-026", "norsk": "er gift", "proposed_theme": "family", "confidence": "high" },
+  {
+    "id": "u-a1-027",
+    "norsk": "om morgenen",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-028",
+    "norsk": "om natta",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-029",
+    "norsk": "på fredager",
+    "proposed_theme": "days-months",
+    "confidence": "high"
+  },
+  { "id": "u-a1-031", "norsk": "tar en dusj", "proposed_theme": "actions", "confidence": "high" },
+  {
+    "id": "u-a1-032",
+    "norsk": "pusser tennene",
+    "proposed_theme": "actions",
+    "confidence": "high"
+  },
+  { "id": "u-a1-033", "norsk": "rer senger", "proposed_theme": "actions", "confidence": "high" },
+  { "id": "u-a1-034", "norsk": "er skilt", "proposed_theme": "family", "confidence": "high" },
+  {
+    "id": "u-a1-035",
+    "norsk": "litt etter/før klokka tolv",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  { "id": "u-a1-036", "norsk": "gjør lekser", "proposed_theme": "classroom", "confidence": "high" },
+  { "id": "u-a1-037", "norsk": "å gjenta", "proposed_theme": "classroom", "confidence": "high" },
+  {
+    "id": "u-a1-038",
+    "norsk": "å snakke langsomt",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-039",
+    "norsk": "en gang tilØ Kan du si det en gang til?",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  { "id": "u-a1-040", "norsk": "å vite", "proposed_theme": "verbs", "confidence": "high" },
+  {
+    "id": "u-a1-041",
+    "norsk": "å komme til å",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  { "id": "u-a1-042", "norsk": "å gå på tur", "proposed_theme": "actions", "confidence": "high" },
+  { "id": "u-a1-043", "norsk": "en tur", "proposed_theme": "actions", "confidence": "medium" },
+  { "id": "u-a1-044", "norsk": "å bli med", "proposed_theme": "actions", "confidence": "high" },
+  { "id": "u-a1-045", "norsk": "å pleie", "proposed_theme": "verbs", "confidence": "medium" },
+  {
+    "id": "u-a1-046",
+    "norsk": "å være glad i",
+    "proposed_theme": "feelings",
+    "confidence": "high"
+  },
+  { "id": "u-a1-047", "norsk": "å få besøk", "proposed_theme": "family", "confidence": "medium" },
+  {
+    "id": "u-a1-048",
+    "norsk": "å ha lyst til å",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-049",
+    "norsk": "å ha tid til å",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-050",
+    "norsk": "både – og",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-051",
+    "norsk": "blant annet",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-052",
+    "norsk": "Jeg er så trøtt. Jeg vil sove.",
+    "proposed_theme": "feelings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-053",
+    "norsk": "Jeg er sulten. Jeg vil ha mat.",
+    "proposed_theme": "feelings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-054",
+    "norsk": "Jeg er tørst. Jeg vil ha melk.",
+    "proposed_theme": "feelings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-055",
+    "norsk": "De har dårlig tid. De har det travelt.",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  { "id": "u-a1-056", "norsk": "God morgen!", "proposed_theme": "greetings", "confidence": "high" },
+  {
+    "id": "u-a1-057",
+    "norsk": "Vil du ha mer mat? Neitakk, jeg er mett.",
+    "proposed_theme": "food",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-058",
+    "norsk": "Jeg har lyst på kaffe. Den er snart ferdig.",
+    "proposed_theme": "food",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-059",
+    "norsk": "å ha tid til",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  { "id": "u-a1-060", "norsk": "å kle på", "proposed_theme": "clothes", "confidence": "high" },
+  {
+    "id": "u-a1-061",
+    "norsk": "Trenger dere hjelp? Nei takk, vi vil bare kikke litt.",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-062",
+    "norsk": "Hvor finner jeg sitron? Gå rett fram, og så til høyre.",
+    "proposed_theme": "food",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-063",
+    "norsk": "Hvor finner jeg olivenolje?Ved siden av ketchup og sennep.",
+    "proposed_theme": "food",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-064",
+    "norsk": "Hva koster det? 99,90.",
+    "proposed_theme": "numbers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-065",
+    "norsk": "Tusen takk for hjelpen. Bare hyggelig.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-066",
+    "norsk": "Vil du ha pose?,Ja takk. Nei takk.",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-067",
+    "norsk": "Velkommen tilbake. Takk for det.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-068",
+    "norsk": "Ha en fin dag. I like måte.",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-069",
+    "norsk": "Hvorfor ikke?",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-070",
+    "norsk": "Synes du det?",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-071",
+    "norsk": "Hvordan blir været i morgen? Det blir regn. Det blir sol.",
+    "proposed_theme": "weather",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-072",
+    "norsk": "Hvordan lukter det? Det lukter godt.",
+    "proposed_theme": "adjectives",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-073",
+    "norsk": "Hvordan ser katten ut? Den er brun og veldig søt.",
+    "proposed_theme": "animals",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-074",
+    "norsk": "Hvor stopper bussen? På den andre siden av gata.",
+    "proposed_theme": "transportation",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-075",
+    "norsk": "Hvor ofte går den? Hvert kvarter.",
+    "proposed_theme": "transportation",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-076",
+    "norsk": "Hvor langt er det til sentrum? Tre kilometer.",
+    "proposed_theme": "places",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-077",
+    "norsk": "Hvor lang tid tar det? Det tar sju minutter med buss.",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-078",
+    "norsk": "Hva skal de feire? De skal feire 17. mai.",
+    "proposed_theme": "days-months",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-079",
+    "norsk": "Har hun dårlig råd? Ja, hun har lite penger.",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-080",
+    "norsk": "Hvor stor er boligen? Den er på 68 kvm.",
+    "proposed_theme": "home",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-081",
+    "norsk": "Trives du her? Ja, jeg liker meg godt her.",
+    "proposed_theme": "feelings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-082",
+    "norsk": "Er det min skyld? Nei, det er det ikke.",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-083",
+    "norsk": "Du må kjøre med én gang! Ja, nå kjører jeg.",
+    "proposed_theme": "actions",
+    "confidence": "high"
+  },
+  { "id": "u-a1-084", "norsk": "den første", "proposed_theme": "numbers", "confidence": "high" },
+  {
+    "id": "u-a1-085",
+    "norsk": "for – siden",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-087",
+    "norsk": "å bli forelsket",
+    "proposed_theme": "feelings",
+    "confidence": "high"
+  },
+  { "id": "u-a1-088", "norsk": "å bli gravid", "proposed_theme": "family", "confidence": "high" },
+  {
+    "id": "u-a1-090",
+    "norsk": "å leve av noe",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-091",
+    "norsk": "å bli kjent med",
+    "proposed_theme": "greetings",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-092",
+    "norsk": "en venn av meg",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a1-093",
+    "norsk": "Er det sant!",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-094",
+    "norsk": "Så spennende!",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-095",
+    "norsk": "Stakkars deg!",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-096",
+    "norsk": "for å",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  { "id": "u-a1-097", "norsk": "si ifra", "proposed_theme": "idioms", "confidence": "medium" },
+  { "id": "u-a1-102", "norsk": "god morgen", "proposed_theme": "greetings", "confidence": "high" },
+  { "id": "u-a1-103", "norsk": "god helg", "proposed_theme": "greetings", "confidence": "high" },
+  { "id": "u-a1-104", "norsk": "god kveld", "proposed_theme": "greetings", "confidence": "high" },
+  { "id": "u-a1-105", "norsk": "god natt", "proposed_theme": "greetings", "confidence": "high" },
+  { "id": "u-a1-106", "norsk": "ha det bra", "proposed_theme": "greetings", "confidence": "high" },
+  { "id": "u-a1-107", "norsk": "ha det", "proposed_theme": "greetings", "confidence": "high" },
+  {
+    "id": "u-a1-108",
+    "norsk": "vær så snill",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-109",
+    "norsk": "hvordan har du det?",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-110",
+    "norsk": "jeg har det bra",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-111",
+    "norsk": "Hva heter du?",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-112",
+    "norsk": "hyggelig å møte deg",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  { "id": "u-a1-113", "norsk": "på gjensyn", "proposed_theme": "greetings", "confidence": "high" },
+  {
+    "id": "u-a1-114",
+    "norsk": "Hvor er du fra?",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-115",
+    "norsk": "Jeg kommer fra ...",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-116",
+    "norsk": "Snakker du norsk?",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-117",
+    "norsk": "Kan du gjenta det?",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a1-118",
+    "norsk": "til fots",
+    "proposed_theme": "transportation",
+    "confidence": "high"
+  },
+  { "id": "u-a1-119", "norsk": "til høyre", "proposed_theme": "places", "confidence": "high" },
+  { "id": "u-a1-120", "norsk": "til venstre", "proposed_theme": "places", "confidence": "high" },
+  {
+    "id": "u-a1-121",
+    "norsk": "for eksempel",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  { "id": "u-a1-122", "norsk": "tusen takk", "proposed_theme": "greetings", "confidence": "high" },
+  {
+    "id": "u-a1-123",
+    "norsk": "Jeg heter ...",
+    "proposed_theme": "greetings",
+    "confidence": "high"
+  },
+  { "id": "u-a1-124", "norsk": "vi ses", "proposed_theme": "greetings", "confidence": "high" },
+  {
+    "id": "u-a1-125",
+    "norsk": "Jeg forstår ikke",
+    "proposed_theme": "classroom",
+    "confidence": "high"
+  },
+  { "id": "u-a1-126", "norsk": "rett frem", "proposed_theme": "places", "confidence": "high" },
+  { "id": "u-a1-127", "norsk": "sol og skyer", "proposed_theme": "weather", "confidence": "high" }
+]

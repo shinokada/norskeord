@@ -14,7 +14,8 @@
     "example_german": "Woher kommst du? Ich komme aus Polen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-002",
@@ -31,7 +32,8 @@
     "example_german": "Wo wohnst du? Ich wohne in Oslo.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-003",
@@ -48,7 +50,8 @@
     "example_german": "Wer kommt aus Spanien? Maria kommt aus Spanien.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-004",
@@ -65,7 +68,8 @@
     "example_german": "Welche Sprachen sprichst du? Ich spreche Englisch und Norwegisch.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-005",
@@ -82,7 +86,8 @@
     "example_german": "Wie heißt das auf Norwegisch? Es heißt Tisch.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-006",
@@ -99,7 +104,8 @@
     "example_german": "Wie heißt du? Ich heiße Anna.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-007",
@@ -116,7 +122,8 @@
     "example_german": "Wie buchstabierst du das? A-N-N-A.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-008",
@@ -133,7 +140,8 @@
     "example_german": "Kommst du aus Brasilien? Nein, ich komme nicht aus Brasilien.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-009",
@@ -150,7 +158,8 @@
     "example_german": "Sprichst du Norwegisch? Ja, ich spreche ein bisschen Norwegisch.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-010",
@@ -167,7 +176,8 @@
     "example_german": "Schön, dich kennenzulernen, Peter! Ganz meinerseits.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-011",
@@ -184,7 +194,8 @@
     "example_german": "Entschuldigung, ich verstehe nicht. Kannst du das wiederholen?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-012",
@@ -201,7 +212,8 @@
     "example_german": "Was bedeutet 'hyggelig'?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-013",
@@ -218,7 +230,8 @@
     "example_german": "Wie geht es dir? Ganz gut, danke.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-014",
@@ -235,7 +248,8 @@
     "example_german": "Was machst du gerade? Ich mache einen Norwegischkurs.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-015",
@@ -252,7 +266,8 @@
     "example_german": "Viel Erfolg bei der Prüfung! Vielen Dank.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-016",
@@ -269,7 +284,8 @@
     "example_german": "Schön, mit dir zu reden! Ganz meinerseits.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-017",
@@ -286,7 +302,8 @@
     "example_german": "Mach's gut! Tschüss!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-018",
@@ -303,7 +320,8 @@
     "example_german": "Gut gemacht heute! Danke schön.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-019",
@@ -320,7 +338,8 @@
     "example_german": "Bitte sehr, hier ist dein Kaffee! Vielen Dank.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-020",
@@ -337,7 +356,8 @@
     "example_german": "Ein bisschen Kuchen? Ja bitte, gern!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "food"
   },
   {
     "id": "u-a1-021",
@@ -354,7 +374,8 @@
     "example_german": "Magst du deinen Job? Ja, das tue ich.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-023",
@@ -371,7 +392,8 @@
     "example_german": "Hast du Lust auf ein Glas Wasser?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-024",
@@ -388,7 +410,8 @@
     "example_german": "Ich habe heute viel zu tun.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a1-025",
@@ -405,7 +428,8 @@
     "example_german": "Ich habe am Sonntag frei.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-026",
@@ -422,7 +446,8 @@
     "example_german": "Bist du verheiratet? Ja, ich bin verheiratet.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-a1-027",
@@ -439,7 +464,8 @@
     "example_german": "Am Morgen trinke ich Kaffee.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-028",
@@ -456,7 +482,8 @@
     "example_german": "Nachts schlafe ich gut.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-029",
@@ -473,7 +500,8 @@
     "example_german": "Freitags essen wir zusammen zu Abend.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "days-months"
   },
   {
     "id": "u-a1-031",
@@ -490,7 +518,8 @@
     "example_german": "Am Morgen dusche ich.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "actions"
   },
   {
     "id": "u-a1-032",
@@ -507,7 +536,8 @@
     "example_german": "Ich putze morgens und abends die Zähne.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "actions"
   },
   {
     "id": "u-a1-033",
@@ -524,7 +554,8 @@
     "example_german": "Ich mache morgens das Bett.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "actions"
   },
   {
     "id": "u-a1-034",
@@ -541,7 +572,8 @@
     "example_german": "Sie ist geschieden und wohnt allein.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-a1-035",
@@ -558,7 +590,8 @@
     "example_german": "Ich gehe kurz vor elf Uhr ins Bett.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-036",
@@ -575,7 +608,8 @@
     "example_german": "Er macht nach der Schule Hausaufgaben.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-037",
@@ -592,7 +626,8 @@
     "example_german": "Entschuldigung, kannst du das wiederholen?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-038",
@@ -609,7 +644,8 @@
     "example_german": "Entschuldigung, kannst du etwas langsamer sprechen?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-039",
@@ -626,7 +662,8 @@
     "example_german": "Kannst du das bitte noch einmal sagen?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-040",
@@ -643,7 +680,8 @@
     "example_german": "Ich weiß nicht, wie das auf Norwegisch heißt.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "verbs"
   },
   {
     "id": "u-a1-041",
@@ -660,7 +698,8 @@
     "example_german": "Morgen wird das Wetter schön sein.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a1-042",
@@ -677,7 +716,8 @@
     "example_german": "Wir gehen sonntags gewöhnlich wandern.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "actions"
   },
   {
     "id": "u-a1-043",
@@ -694,7 +734,8 @@
     "example_german": "Ich mache kurz einen Ausflug zum Laden.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "actions"
   },
   {
     "id": "u-a1-044",
@@ -711,7 +752,8 @@
     "example_german": "Kommst du mit ins Kino?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "actions"
   },
   {
     "id": "u-a1-045",
@@ -728,7 +770,8 @@
     "example_german": "Ich frühstücke gewöhnlich um acht Uhr.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "verbs"
   },
   {
     "id": "u-a1-046",
@@ -745,7 +788,8 @@
     "example_german": "Ich mag meine Familie sehr.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "feelings"
   },
   {
     "id": "u-a1-047",
@@ -762,7 +806,8 @@
     "example_german": "Am Wochenende bekommen wir Besuch von der Familie.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-a1-048",
@@ -779,7 +824,8 @@
     "example_german": "Ich habe heute Abend Lust auf Pizza.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-049",
@@ -796,7 +842,8 @@
     "example_german": "Ich habe jetzt keine Zeit, dir zu helfen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-050",
@@ -813,7 +860,8 @@
     "example_german": "Er isst sowohl Fisch als auch Fleisch.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a1-051",
@@ -830,7 +878,8 @@
     "example_german": "Wir essen zum Frühstück unter anderem Brot und Käse.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a1-052",
@@ -847,7 +896,8 @@
     "example_german": "Ich bin heute so müde. Ich will schlafen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "feelings"
   },
   {
     "id": "u-a1-053",
@@ -864,7 +914,8 @@
     "example_german": "Ich bin hungrig. Kann ich etwas zu essen haben?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "feelings"
   },
   {
     "id": "u-a1-054",
@@ -881,7 +932,8 @@
     "example_german": "Ich bin durstig. Kann ich ein Glas Wasser haben?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "feelings"
   },
   {
     "id": "u-a1-055",
@@ -898,7 +950,8 @@
     "example_german": "Wir haben wenig Zeit. Wir haben es eilig.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-056",
@@ -915,7 +968,8 @@
     "example_german": "Guten Morgen! Wie geht es dir?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-057",
@@ -932,7 +986,8 @@
     "example_german": "Möchtest du mehr Suppe? Nein danke, ich bin satt.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "food"
   },
   {
     "id": "u-a1-058",
@@ -949,7 +1004,8 @@
     "example_german": "Ich hätte gerne einen Tee. Er ist gleich fertig.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "food"
   },
   {
     "id": "u-a1-059",
@@ -966,7 +1022,8 @@
     "example_german": "Ich habe Zeit, dir zu helfen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-060",
@@ -983,7 +1040,8 @@
     "example_german": "Die Mutter zieht das Kind an.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "clothes"
   },
   {
     "id": "u-a1-061",
@@ -1000,7 +1058,8 @@
     "example_german": "Brauchst du Hilfe? Nein danke, ich schaue mich nur um.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a1-062",
@@ -1017,7 +1076,8 @@
     "example_german": "Wo finde ich Milch? Gehen Sie geradeaus und dann links.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "food"
   },
   {
     "id": "u-a1-063",
@@ -1034,7 +1094,8 @@
     "example_german": "Wo finde ich Salz? Es ist neben dem Pfeffer.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "food"
   },
   {
     "id": "u-a1-064",
@@ -1051,7 +1112,8 @@
     "example_german": "Was kostet das? Es kostet fünfzig Kronen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "numbers"
   },
   {
     "id": "u-a1-065",
@@ -1068,7 +1130,8 @@
     "example_german": "Vielen Dank für die Hilfe! Gern geschehen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-066",
@@ -1085,7 +1148,8 @@
     "example_german": "Möchten Sie eine Tüte? Ja bitte, gerne.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a1-067",
@@ -1102,7 +1166,8 @@
     "example_german": "Willkommen zurück! Danke schön.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-068",
@@ -1119,7 +1184,8 @@
     "example_german": "Schönen Tag noch! Danke, gleichfalls.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-069",
@@ -1136,7 +1202,8 @@
     "example_german": "Kommst du mit? Ja, warum nicht?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a1-070",
@@ -1153,7 +1220,8 @@
     "example_german": "Das ist ein guter Film. Meinst du das?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-071",
@@ -1170,7 +1238,8 @@
     "example_german": "Wie wird das Wetter morgen? Es wird sonnig.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   },
   {
     "id": "u-a1-072",
@@ -1187,7 +1256,8 @@
     "example_german": "Wie riecht das Essen? Es riecht gut.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "adjectives"
   },
   {
     "id": "u-a1-073",
@@ -1204,7 +1274,8 @@
     "example_german": "Wie sieht der Hund aus? Er ist groß und weiß.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "animals"
   },
   {
     "id": "u-a1-074",
@@ -1221,7 +1292,8 @@
     "example_german": "Wo hält der Bus? Er hält bei der Schule.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "transportation"
   },
   {
     "id": "u-a1-075",
@@ -1238,7 +1310,8 @@
     "example_german": "Wie oft fährt der Bus? Alle Viertelstunde.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "transportation"
   },
   {
     "id": "u-a1-076",
@@ -1255,7 +1328,8 @@
     "example_german": "Wie weit ist es bis zur Schule? Es sind zwei Kilometer.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "places"
   },
   {
     "id": "u-a1-077",
@@ -1272,7 +1346,8 @@
     "example_german": "Wie lange dauert es? Es dauert fünf Minuten zu Fuß.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-078",
@@ -1289,7 +1364,8 @@
     "example_german": "Was werdet ihr feiern? Wir werden einen Geburtstag feiern.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "days-months"
   },
   {
     "id": "u-a1-079",
@@ -1306,7 +1382,8 @@
     "example_german": "Hast du wenig Geld? Ja, ich habe wenig Geld.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a1-080",
@@ -1323,7 +1400,8 @@
     "example_german": "Wie groß ist die Wohnung? Sie ist fünfzig Quadratmeter groß.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "home"
   },
   {
     "id": "u-a1-081",
@@ -1340,7 +1418,8 @@
     "example_german": "Gefällt es dir in Norwegen? Ja, ich bin sehr gerne hier.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "feelings"
   },
   {
     "id": "u-a1-082",
@@ -1357,7 +1436,8 @@
     "example_german": "Ist es meine Schuld? Nein, das ist es nicht.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a1-083",
@@ -1374,7 +1454,8 @@
     "example_german": "Du musst sofort gehen! Ja, ich gehe jetzt.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "actions"
   },
   {
     "id": "u-a1-084",
@@ -1391,7 +1472,8 @@
     "example_german": "Der erste Tag in der Schule war gut.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "numbers"
   },
   {
     "id": "u-a1-085",
@@ -1408,7 +1490,8 @@
     "example_german": "Ich bin vor einem Jahr nach Norwegen gekommen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a1-087",
@@ -1425,7 +1508,8 @@
     "example_german": "Sie verliebte sich in ihn.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "feelings"
   },
   {
     "id": "u-a1-088",
@@ -1442,7 +1526,8 @@
     "example_german": "Sie wurde schwanger und bekam ein Kind.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-a1-090",
@@ -1459,7 +1544,8 @@
     "example_german": "Er lebt davon, Essen zu kochen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a1-091",
@@ -1476,7 +1562,8 @@
     "example_german": "Ich habe auf dem Kurs viele neue Menschen kennengelernt.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-092",
@@ -1493,7 +1580,8 @@
     "example_german": "Ich habe bei einem Freund von mir zu Abend gegessen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a1-093",
@@ -1510,7 +1598,8 @@
     "example_german": "Du hast einen neuen Job bekommen? Ist das wahr!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-094",
@@ -1527,7 +1616,8 @@
     "example_german": "Du fährst nach Paris? Wie aufregend!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-095",
@@ -1544,7 +1634,8 @@
     "example_german": "Du bist krank? Du Arme!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a1-096",
@@ -1561,7 +1652,8 @@
     "example_german": "Ich gehe in den Laden, um Essen zu kaufen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a1-097",
@@ -1578,7 +1670,8 @@
     "example_german": "Sag Bescheid, wenn du Hilfe brauchst.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a1-102",
@@ -1595,7 +1688,8 @@
     "example_german": "Guten Morgen! Möchtest du Kaffee?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-103",
@@ -1612,7 +1706,8 @@
     "example_german": "Schönes Wochenende, bis Montag!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-104",
@@ -1629,7 +1724,8 @@
     "example_german": "Guten Abend! Komm rein.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-105",
@@ -1646,7 +1742,8 @@
     "example_german": "Gute Nacht! Schlaf gut.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-106",
@@ -1663,7 +1760,8 @@
     "example_german": "Mach's gut! Wir sehen uns morgen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-107",
@@ -1680,7 +1778,8 @@
     "example_german": "Tschüss! Wir hören uns.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-108",
@@ -1697,7 +1796,8 @@
     "example_german": "Bitte, kannst du mir helfen?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-109",
@@ -1714,7 +1814,8 @@
     "example_german": "Hallo! Wie geht es dir?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-110",
@@ -1731,7 +1832,8 @@
     "example_german": "Danke, mir geht es gut.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-111",
@@ -1748,7 +1850,8 @@
     "example_german": "Wie heißt du? Ich heiße Lars.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-112",
@@ -1765,7 +1868,8 @@
     "example_german": "Schön, dich kennenzulernen, Lars!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-113",
@@ -1782,7 +1886,8 @@
     "example_german": "Danke für heute. Auf Wiedersehen!",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-114",
@@ -1799,7 +1904,8 @@
     "example_german": "Hallo! Woher kommst du?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-115",
@@ -1816,7 +1922,8 @@
     "example_german": "Ich komme aus Japan. Und du?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-116",
@@ -1833,7 +1940,8 @@
     "example_german": "Sprichst du Norwegisch? Ein bisschen.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "greetings"
   },
   {
     "id": "u-a1-117",
@@ -1850,7 +1958,8 @@
     "example_german": "Kannst du das bitte wiederholen?",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "classroom"
   },
   {
     "id": "u-a1-118",
@@ -1867,7 +1976,8 @@
     "example_german": "Ich gehe zu Fuß zum Laden.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "transportation"
   },
   {
     "id": "u-a1-119",
@@ -1884,7 +1994,8 @@
     "example_german": "Biege an der Ampel nach rechts ab.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "places"
   },
   {
     "id": "u-a1-120",
@@ -1901,7 +2012,8 @@
     "example_german": "Biege nach dem Laden nach links ab.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "places"
   },
   {
     "id": "u-a1-121",
@@ -1919,7 +2031,8 @@
     "definition": "Brukes når man gir et konkret eksempel for å forklare eller vise noe bedre.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a1-122",
@@ -1937,6 +2050,7 @@
     "level": "A1",
     "category": "uttrykk",
     "part": "phrase",
+    "theme": "greetings",
     "definition": "'Tusen takk' betyr en stor og hjertelig takk. Det brukes når man vil uttrykke sterk takknemlighet."
   },
   {
@@ -1955,6 +2069,7 @@
     "level": "A1",
     "category": "uttrykk",
     "part": "phrase",
+    "theme": "greetings",
     "definition": "'Jeg heter ...' brukes til å presentere seg selv og si hva man heter. Det tilsvarer 'mitt navn er' på norsk."
   },
   {
@@ -1973,6 +2088,7 @@
     "level": "A1",
     "category": "uttrykk",
     "part": "phrase",
+    "theme": "greetings",
     "definition": "'Vi ses' er en uformell avskjedshilsen som betyr at man forventer å møtes igjen. Det brukes på samme måte som 'ha det' eller 'på gjensyn'."
   },
   {
@@ -1991,6 +2107,7 @@
     "level": "A1",
     "category": "uttrykk",
     "part": "phrase",
+    "theme": "classroom",
     "definition": "'Jeg forstår ikke' brukes når man ikke klarer å forstå hva noen sier eller mener. Det er en viktig setning når man lærer et nytt språk."
   },
   {
@@ -2009,6 +2126,7 @@
     "level": "A1",
     "category": "uttrykk",
     "part": "phrase",
+    "theme": "places",
     "definition": "'Rett frem' betyr i en rett linje fremover uten å svinge. Det brukes ofte når man gir noen veibeskrivelse."
   },
   {
@@ -2026,6 +2144,7 @@
     "example_german": "Morgen wird es teils bewölkt sein, mit Temperaturen um die fünfzehn Grad.",
     "level": "A1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   }
 ]

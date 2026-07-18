@@ -7,13 +7,13 @@ route (`isPlusCategory` in `access.ts`, `[level]/[category]/+page.server.ts`).
 Unlike every other category — which is a themed deck of a few dozen words — the
 entry counts here are:
 
-| Level | `uttrykk-xx.json` entries | Wired into a route? |
-| ----- | -------------------------- | -------------------- |
-| A1    | 119                         | yes (`a1/uttrykk`)   |
-| A2    | 245                         | yes (`a2/uttrykk`)   |
-| B1    | ~large (uncounted here)    | yes (`b1/uttrykk`)   |
-| B2    | 679                         | yes (`b2/uttrykk`)   |
-| C     | 559                         | **no** — not in `CATEGORIES_BY_LEVEL.C`, no loader in `uttrykkLoaders` |
+| Level | `uttrykk-xx.json` entries | Wired into a route?                                                    |
+| ----- | ------------------------- | ---------------------------------------------------------------------- |
+| A1    | 119                       | yes (`a1/uttrykk`)                                                     |
+| A2    | 245                       | yes (`a2/uttrykk`)                                                     |
+| B1    | ~large (uncounted here)   | yes (`b1/uttrykk`)                                                     |
+| B2    | 679                       | yes (`b2/uttrykk`)                                                     |
+| C     | 559                       | **no** — not in `CATEGORIES_BY_LEVEL.C`, no loader in `uttrykkLoaders` |
 
 `VocabFlashcardPage.svelte` builds every session the same way regardless of
 deck size: `getSessionLimit()` defaults to 20 cards, `buildDeck()` shuffles the
@@ -76,7 +76,7 @@ fail to typecheck or force adding them to `CATEGORIES_BY_LEVEL` — recreating
 the badge/route sprawl Non-goals already rejects. (Note: `uttrykk` routes
 actually load their file wholesale via `uttrykkLoaders[key]`, unlike vocab's
 shared-file-filtered-by-`category` pattern — so the file boundary alone means
-there's no *routing* reason `category` couldn't be repurposed for uttrykk
+there's no _routing_ reason `category` couldn't be repurposed for uttrykk
 specifically. That's not the real blocker.)
 
 The real blocker is `CardProgress`: `saveProgress()` copies `entry.category`
@@ -117,17 +117,17 @@ only cleanly covers part of the uttrykk content, not all of it:
 
 - **Where reuse works well:** a real chunk of uttrykk entries are genuinely
   topical and slot naturally into an existing category name for that level —
-  a greeting formula like *god morgen* fits `greetings`, a food-related idiom
+  a greeting formula like _god morgen_ fits `greetings`, a food-related idiom
   fits `food`, a weather expression fits `weather`. Notably, **B2 already has
   a `discourse-markers` category in `CATEGORIES_BY_LEVEL`** — one of the
   "new" functional buckets below turns out to already be precedented in the
   existing taxonomy.
-- **Where reuse breaks down:** the actual core of what uttrykk is *for* —
+- **Where reuse breaks down:** the actual core of what uttrykk is _for_ —
   fixed formulas, connectives, and idioms with no topical subject matter,
-  e.g. *alt i alt*, *det vil si*, *forutsatt at*, *med utgangspunkt i*, *etter
-  min mening*, *ta vare på* (see the examples in
+  e.g. _alt i alt_, _det vil si_, _forutsatt at_, _med utgangspunkt i_, _etter
+  min mening_, _ta vare på_ (see the examples in
   `data-rules/vocab-and-uttrykk.md`). These aren't "about" food or travel or
-  weather; forcing e.g. *det vil si* ("that is to say") into a topical bucket
+  weather; forcing e.g. _det vil si_ ("that is to say") into a topical bucket
   like `communication` would be a stretch that hurts browsing accuracy rather
   than helping it.
 - There's also a level-consistency problem: `CATEGORIES_BY_LEVEL` genuinely
@@ -166,7 +166,42 @@ or the five functional themes above, use the catch-all `general` theme from
 Phase 2 rather than forcing a bad fit — precision here matters more than
 100% categorization.
 
+### Implemented
+
+The taxonomy above is codified in `src/lib/config.ts`:
+
+- `UTTRYKK_FUNCTIONAL_THEMES` — the five fixed fallback themes.
+- `UTTRYKK_CATCHALL_THEME` — `"general"`.
+- `UTTRYKK_THEME_LEVELS` — `['A1', 'A2', 'B1', 'B2']` (C excluded, per Phase 4).
+- `UTTRYKK_THEMES_BY_LEVEL` — per level, the precedence-1 topical slugs
+  (derived from `CATEGORIES_BY_LEVEL[level]`, minus `uttrykk`/`uttrykk-preview`)
+  unioned with the functional themes and the catch-all, deduped (handles B2
+  where `discourse-markers` is both topical and functional).
+
+This is the reference list Phase 2's classifier pass should validate
+`proposed_theme` against — nothing in it touches `category` or `part`, per
+the rationale above. No `VocabEntry`/`types.ts` changes yet; that's Phase 2.
+
 ## Phase 2 — Tag pass
+
+**Status:**
+
+- **A1 (119 entries) — done.** `uttrykk-a1.json` has a reviewed `theme` on
+  every entry (triage artifact:
+  `ai-docs/implementation/uttrykk-theme-triage-a1.json`).
+- **A2 (245 entries) — triage done, merge in progress.** Reviewed triage
+  artifact is at `ai-docs/implementation/uttrykk-theme-triage-a2.json`
+  (all entries resolved, zero low-confidence left unreviewed). The first
+  merge attempt into `uttrykk-a2.json` was interrupted mid-write and left
+  the file truncated/invalid; it's being rebuilt from
+  `uttrykk-a2.json.bak` + the triage artifact via
+  `scripts/merge-a2-theme.mjs` rather than patched in place.
+- **B1, B2 — not started.**
+- `VocabEntry.theme?: string` has been added to `types.ts` (step 4).
+- `check-uttrykk.mjs` now errors on any full-file `uttrykk` entry missing
+  `theme` (step 3b's validation requirement) — expect it to report errors
+  for B1/B2 (and A2 until the rebuild above lands) until those levels are
+  tagged.
 
 Add a `theme` field (and `chapter` where known) to every entry in
 `uttrykk-a1.json`, `uttrykk-a2.json`, `uttrykk-b1.json`, `uttrykk-b2.json`.
@@ -212,6 +247,51 @@ In `[level]/[category]/+page.server.ts` / `+page.svelte` /
 preview list; grouping only matters once someone is looking at the full deck.
 
 ## Phase 4 — Fold in the unused C-level uttrykk entries
+
+**Status (in progress, resuming across sessions — see below):**
+
+- Triage artifact: `ai-docs/implementation/uttrykk-c-category-triage.json`.
+  Format per row: `{ id, norsk, definition, proposed_category, confidence }`,
+  matched against `uttrykk-c.json` by `id`. `proposed_category` values are
+  validated against the 37 `CATEGORIES_BY_LEVEL.C` slugs.
+- **Triage complete: 559 / 559 entries** (`u-c-001` through `u-c-573`,
+  accounting for gaps already absent from `uttrykk-c.json` — e.g.
+  `u-c-088`, `u-c-102`, `u-c-106`, `u-c-113`, `u-c-115`, `u-c-118`,
+  `u-c-120`, `u-c-123`, `u-c-137`, `u-c-140`, `u-c-152`, `u-c-157`,
+  `u-c-158`, `u-c-182`, likely removed earlier as duplicates per
+  `scripts/uttrykk_duplicate_report.txt`). Verified: zero duplicate ids,
+  zero invalid category slugs, JSON parses cleanly. Classification of the
+  final 69 entries (`u-c-505`–`u-c-573`) confirmed the triage file's ending
+  is the true tail of `uttrykk-c.json` — `u-c-573` is the last entry in the
+  source file.
+- **Next step: write the merge script.** Triage is done; nothing left to
+  classify. The remaining work in Phase 4 is entirely the merge step below.
+- **No merge script exists yet for C.** `scripts/merge-uttrykk-theme.mjs`
+  only handles `a1|a2|b1|b2` and writes a `theme` field into
+  `uttrykk-{level}.json` — it does not apply to C, which instead needs its
+  `proposed_category` folded into `vocab-c.json` as `category` (per step 2
+  below, with `part: "phrase"`). A new script (e.g.
+  `scripts/merge-uttrykk-c-category.mjs`) still needs to be written once
+  triage is complete: read the triage file, cross-reference each
+  `uttrykk-c.json` entry's full record (all language fields, `example`,
+  etc.) by `id`, set `category` to the reviewed value and `part` to
+  `"phrase"`, and append the results into `vocab-c.json` (append-only,
+  matching step 2/3 below — don't touch existing `vocab-c.json` entries).
+  This script does not exist yet — do not assume it does.
+- **To resume:** triage is complete — no more classification needed. The
+  next session should start directly on the merge script described below
+  (`scripts/merge-uttrykk-c-category.mjs`): read the triage file, cross-
+  reference each `uttrykk-c.json` entry's full record by `id`, set
+  `category` to the reviewed value and `part` to `"phrase"`, and append the
+  results into `vocab-c.json` (append-only — don't touch existing
+  `vocab-c.json` entries). After running it, update `stats.json` C counts
+  (step 4 below) and spot-check a handful of the `medium`-confidence rows
+  before considering Phase 4 fully shipped.
+- **Working process used during triage (kept here for reference):**
+  classified and wrote in batches of ~20 entries, validating each batch
+  (valid category slugs, no duplicate ids, JSON parses cleanly) before
+  writing it to disk immediately — this kept the loss window small across
+  the several sessions triage took to finish.
 
 Unlike A1–B2, C's 37 categories are already thematic and C has no separate
 `uttrykk` gating concept (`PLUS_CATEGORIES` for C is generated from

@@ -15,7 +15,8 @@
     "definition": "Brukes for å forklare noe på en annen måte.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-002",
@@ -32,7 +33,8 @@
     "example_german": "Es ist heute zu kalt draußen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   },
   {
     "id": "u-a2-003",
@@ -49,7 +51,8 @@
     "example_german": "Frierst du? Ja, es ist heute sehr kalt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   },
   {
     "id": "u-a2-004",
@@ -66,7 +69,8 @@
     "example_german": "Schwitzt du? Ja, es ist hier sehr warm.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   },
   {
     "id": "u-a2-005",
@@ -83,7 +87,8 @@
     "example_german": "Seid ihr verliebt? Ja, das sind wir.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-006",
@@ -100,7 +105,8 @@
     "example_german": "Wohnt ihr zusammen? Ja, wir leben zusammen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-007",
@@ -117,7 +123,8 @@
     "example_german": "Regnet es viel? Ja, es schüttet draußen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   },
   {
     "id": "u-a2-008",
@@ -134,7 +141,8 @@
     "example_german": "Ist es sehr kalt? Ja, es ist heute eiskalt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   },
   {
     "id": "u-a2-009",
@@ -151,7 +159,8 @@
     "example_german": "Hast du Hunger? Ja, ich bin am Verhungern!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "body"
   },
   {
     "id": "u-a2-010",
@@ -168,7 +177,8 @@
     "example_german": "Willkommen! Vielen Dank.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-011",
@@ -185,7 +195,8 @@
     "example_german": "Soll ich dir etwas bestellen? Nur Wasser fur mich, danke.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-012",
@@ -202,7 +213,8 @@
     "example_german": "Ich habe hier eine Weile gewartet.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-013",
@@ -219,7 +231,8 @@
     "example_german": "Ich habe einen Fehler im Test gemacht.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-014",
@@ -236,7 +249,26 @@
     "example_german": "Das sieht sehr gut aus!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "descriptive-adjectives"
+  },
+  {
+    "id": "u-a2-015",
+    "norsk": "å slå seg ned",
+    "lemma": "å slå seg ned",
+    "english": "to settle down, to sit down",
+    "ukrainian": "влаштуватися, сісти",
+    "spanish": "instalarse, sentarse",
+    "german": "sich niederlassen, sich setzen",
+    "example": "Kan jeg slå meg ned her?",
+    "example_english": "Can I sit down here?",
+    "example_ukrainian": "Можна я сяду тут?",
+    "example_spanish": "¿Puedo sentarme aquí?",
+    "example_german": "Kann ich mich hier setzen?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-016",
@@ -253,7 +285,8 @@
     "example_german": "Ich habe bemerkt, dass sie traurig war.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-017",
@@ -270,7 +303,8 @@
     "example_german": "Ich vertraue dir.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-018",
@@ -287,7 +321,8 @@
     "example_german": "Sie gehen Hand in Hand im Park.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-019",
@@ -304,7 +339,8 @@
     "example_german": "Da hast du recht.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-020",
@@ -321,7 +357,8 @@
     "example_german": "Alle haben ein Recht auf Bildung.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-021",
@@ -338,7 +375,8 @@
     "example_german": "Ich bin auf den Bus angewiesen, um zur Arbeit zu kommen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-022",
@@ -355,7 +393,8 @@
     "example_german": "Nein danke, ich bin satt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "cooking"
   },
   {
     "id": "u-a2-023",
@@ -372,7 +411,8 @@
     "example_german": "Es ist teuer hier. Das kann man wohl sagen!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-024",
@@ -389,7 +429,8 @@
     "example_german": "Wir sind fertig. Danke für heute!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-025",
@@ -406,7 +447,8 @@
     "example_german": "Schön, dich wieder zu sehen. Danke für neulich!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-026",
@@ -423,7 +465,8 @@
     "example_german": "Es hat gut geschmeckt. Danke für das Essen!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "cooking"
   },
   {
     "id": "u-a2-027",
@@ -440,7 +483,8 @@
     "example_german": "Ich gehe jetzt. Mach es gut!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-028",
@@ -457,7 +501,8 @@
     "example_german": "Das ist meine Freundin Kari.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-029",
@@ -474,7 +519,8 @@
     "example_german": "Bis morgen!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-030",
@@ -491,7 +537,8 @@
     "example_german": "Mach es gut! Bis bald.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-031",
@@ -508,7 +555,8 @@
     "example_german": "Schönen Tag bei der Arbeit!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-032",
@@ -525,7 +573,8 @@
     "example_german": "Was für ein Essen magst du?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-033",
@@ -542,7 +591,8 @@
     "example_german": "Kannst du mir helfen? Klar!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-034",
@@ -559,7 +609,8 @@
     "example_german": "Ich bin nervös und habe Schmetterlinge im Bauch.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-035",
@@ -576,7 +627,8 @@
     "example_german": "Du hast recht, es ist heute kalt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-036",
@@ -593,7 +645,8 @@
     "example_german": "Ihr Antrag wurde genehmigt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-037",
@@ -610,7 +663,8 @@
     "example_german": "Ich habe es satt, auf den Bus zu warten.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-038",
@@ -627,7 +681,8 @@
     "example_german": "Ich habe einen Freund im Laden entdeckt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-039",
@@ -644,7 +699,8 @@
     "example_german": "Sie ist verantwortlich für die Kinder in der Schule.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-040",
@@ -661,7 +717,8 @@
     "example_german": "Wir legen Wert auf gute Zusammenarbeit.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-041",
@@ -678,7 +735,8 @@
     "example_german": "Bist du an Sport interessiert?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "hobbies"
   },
   {
     "id": "u-a2-042",
@@ -695,7 +753,8 @@
     "example_german": "Ich bin in Norwegen geboren.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-043",
@@ -712,7 +771,8 @@
     "example_german": "Einen kleinen Moment, ich hole es gleich.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-044",
@@ -729,7 +789,8 @@
     "example_german": "Entschuldigung, heute ist alles voll.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-045",
@@ -746,7 +807,8 @@
     "example_german": "Das Essen kam schnell. Was für ein Service!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-046",
@@ -763,7 +825,8 @@
     "example_german": "Ich bin fertig. Jetzt bist du dran.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-047",
@@ -780,7 +843,8 @@
     "example_german": "Du bist nett. Danke für die Hilfe!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-048",
@@ -797,7 +861,8 @@
     "example_german": "Es gibt einen Laden in der Nähe.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-049",
@@ -814,7 +879,8 @@
     "example_german": "Ich komme sofort.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-050",
@@ -831,7 +897,8 @@
     "example_german": "Entschuldigung, ich habe mich geirrt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-051",
@@ -848,7 +915,8 @@
     "example_german": "Sie ist traurig, weil sie krank ist.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-052",
@@ -865,7 +933,8 @@
     "example_german": "Er ruft den Krankenwagen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-a2-053",
@@ -882,7 +951,8 @@
     "example_german": "Sie ist in sehr guter Form.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "sports"
   },
   {
     "id": "u-a2-054",
@@ -899,7 +969,8 @@
     "example_german": "Er trainiert, um in Form zu bleiben.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "sports"
   },
   {
     "id": "u-a2-055",
@@ -916,7 +987,8 @@
     "example_german": "Da stimme ich zu.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-056",
@@ -933,7 +1005,8 @@
     "example_german": "Wir sind auf dem Weg zum Geschäft.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-057",
@@ -950,7 +1023,8 @@
     "example_german": "Es geht bald vorbei.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-a2-058",
@@ -967,7 +1041,8 @@
     "example_german": "Biegen Sie bei der Schule rechts ab.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-059",
@@ -984,7 +1059,8 @@
     "example_german": "Biegen Sie beim Geschäft links ab.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-060",
@@ -1001,7 +1077,8 @@
     "example_german": "Fahren Sie geradeaus bis zum Kreisverkehr.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-061",
@@ -1018,7 +1095,8 @@
     "example_german": "Wo liegt die Wohnung? Sie liegt im Zentrum.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-062",
@@ -1035,7 +1113,8 @@
     "example_german": "Das Geschäft liegt auf der linken Seite der Straße.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-063",
@@ -1052,7 +1131,8 @@
     "example_german": "Der Tisch steht vor dem Fenster.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-064",
@@ -1069,7 +1149,8 @@
     "example_german": "Der Stuhl steht zwischen dem Tisch und der Wand.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-065",
@@ -1086,7 +1167,8 @@
     "example_german": "Ich gehe wirklich gerne wandern.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-066",
@@ -1103,7 +1185,8 @@
     "example_german": "Ich mag Kaffee lieber als Tee.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-067",
@@ -1120,7 +1203,26 @@
     "example_german": "Ich esse am liebsten zu Hause.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
+  },
+  {
+    "id": "u-a2-068",
+    "norsk": "å bestemme seg",
+    "lemma": "å bestemme seg",
+    "english": "to make up one's mind, to decide",
+    "ukrainian": "вирішувати, приймати рішення",
+    "spanish": "decidirse, tomar una decisión",
+    "german": "sich entscheiden, einen Entschluss fassen",
+    "example": "Har du bestemt deg?",
+    "example_english": "Have you made up your mind?",
+    "example_ukrainian": "Ти вже вирішив?",
+    "example_spanish": "¿Ya te has decidido?",
+    "example_german": "Hast du dich entschieden?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-069",
@@ -1137,7 +1239,44 @@
     "example_german": "Alle haben das Recht auf kostenlose Bildung.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-070",
+    "norsk": "å pynte seg",
+    "lemma": "å pynte seg",
+    "english": "to dress up, to get dressed up",
+    "ukrainian": "прибиратися, одягатися на свято",
+    "spanish": "arreglarse, ponerse elegante",
+    "german": "sich schick machen, sich herausputzen",
+    "example": "Hun pynter seg til festen.",
+    "example_english": "She is dressing up for the party.",
+    "example_ukrainian": "Вона прибирається до свята.",
+    "example_spanish": "Ella se arregla para la fiesta.",
+    "example_german": "Sie macht sich schick für die Party.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "clothing"
+  },
+  {
+    "id": "u-a2-071",
+    "norsk": "å ønske seg",
+    "lemma": "å ønske seg",
+    "english": "to wish for, to want (as a gift)",
+    "ukrainian": "бажати (як подарунок)",
+    "spanish": "desear, querer (como regalo)",
+    "german": "sich wünschen (als Geschenk)",
+    "example": "Hva ønsker du deg til bursdagen?",
+    "example_english": "What do you wish for for your birthday?",
+    "example_ukrainian": "Що ти хочеш отримати на день народження?",
+    "example_spanish": "¿Qué quieres de regalo para tu cumpleaños?",
+    "example_german": "Was wünschst du dir zum Geburtstag?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-072",
@@ -1154,7 +1293,44 @@
     "example_german": "Er hält eine Rede auf der Party.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
+  },
+  {
+    "id": "u-a2-073",
+    "norsk": "å fylle ut",
+    "lemma": "å fylle ut",
+    "english": "to fill in, to fill out (a form)",
+    "ukrainian": "заповнювати (форму)",
+    "spanish": "rellenar, completar (un formulario)",
+    "german": "ausfüllen (ein Formular)",
+    "example": "Kan du fylle ut dette skjemaet?",
+    "example_english": "Can you fill out this form?",
+    "example_ukrainian": "Ти можеш заповнити цю форму?",
+    "example_spanish": "¿Puedes rellenar este formulario?",
+    "example_german": "Kannst du dieses Formular ausfüllen?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-074",
+    "norsk": "å ordne seg",
+    "lemma": "å ordne seg",
+    "english": "to work out, to sort itself out",
+    "ukrainian": "налагодитися, вирішитися само собою",
+    "spanish": "arreglarse, solucionarse",
+    "german": "sich regeln, sich lösen",
+    "example": "Ikke vær bekymret, det ordner seg.",
+    "example_english": "Don't worry, it will work out.",
+    "example_ukrainian": "Не хвилюйся, все налагодиться.",
+    "example_spanish": "No te preocupes, se va a arreglar.",
+    "example_german": "Mach dir keine Sorgen, das regelt sich.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-075",
@@ -1171,7 +1347,8 @@
     "example_german": "Du bist krank. Ruh dich aus!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-076",
@@ -1188,7 +1365,8 @@
     "example_german": "Frohe Weihnachten und ein gutes neues Jahr!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-077",
@@ -1205,7 +1383,8 @@
     "example_german": "Er geht im Zimmer hin und her.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-078",
@@ -1222,7 +1401,8 @@
     "example_german": "Bist du mit der Aufgabe fertig?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "sports"
   },
   {
     "id": "u-a2-079",
@@ -1239,7 +1419,8 @@
     "example_german": "Wir haben neue Möbel für das Haus gekauft.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "house-chores"
   },
   {
     "id": "u-a2-080",
@@ -1256,7 +1437,8 @@
     "example_german": "Sie möchte sich gerne selbstständig machen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-081",
@@ -1273,7 +1455,8 @@
     "example_german": "Er möchte gerne ein eigenes Büro haben.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-082",
@@ -1290,7 +1473,8 @@
     "example_german": "Die Kinder kommen jetzt alleine zurecht.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-083",
@@ -1307,7 +1491,8 @@
     "example_german": "Sie versucht, das Leben von der positiven Seite zu sehen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-084",
@@ -1324,7 +1509,8 @@
     "example_german": "Es dauert lange, Norwegisch zu lernen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-085",
@@ -1341,7 +1527,8 @@
     "example_german": "Ich habe jetzt keine Zeit, dir zu helfen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-086",
@@ -1358,7 +1545,44 @@
     "example_german": "Er hat Heimweh nach seiner Familie.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-087",
+    "norsk": "å gi opp",
+    "lemma": "å gi opp",
+    "english": "to give up",
+    "ukrainian": "здаватися",
+    "spanish": "rendirse, darse por vencido",
+    "german": "aufgeben",
+    "example": "Ikke gi opp! Du klarer det.",
+    "example_english": "Do not give up! You can do it.",
+    "example_ukrainian": "Не здавайся! Ти впораєшся.",
+    "example_spanish": "¡No te rindas! Tú puedes.",
+    "example_german": "Gib nicht auf! Du schaffst das.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-088",
+    "norsk": "å melde seg inn",
+    "lemma": "å melde seg inn",
+    "english": "to join, to sign up (for a club or organisation)",
+    "ukrainian": "вступати, записуватися (до клубу або організації)",
+    "spanish": "apuntarse, hacerse socio (de un club u organización)",
+    "german": "beitreten, sich anmelden",
+    "example": "Hun meldte seg inn i en fotballklubb.",
+    "example_english": "She joined a football club.",
+    "example_ukrainian": "Вона записалася до футбольного клубу.",
+    "example_spanish": "Ella se apuntó a un club de fútbol.",
+    "example_german": "Sie ist einem Fußballverein beigetreten.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "hobbies"
   },
   {
     "id": "u-a2-089",
@@ -1375,7 +1599,26 @@
     "example_german": "Es hängt vom Wetter ab.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
+  },
+  {
+    "id": "u-a2-090",
+    "norsk": "holde på",
+    "lemma": "holde på",
+    "english": "to be in the middle of, to be busy doing",
+    "ukrainian": "бути зайнятим чимось, бути в процесі",
+    "spanish": "estar en medio de, estar haciendo",
+    "german": "gerade dabei sein",
+    "example": "Jeg holder på å lage middag.",
+    "example_english": "I am in the middle of making dinner.",
+    "example_ukrainian": "Я зараз готую обід.",
+    "example_spanish": "Estoy haciendo la cena.",
+    "example_german": "Ich bin gerade dabei, das Abendessen zu kochen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-091",
@@ -1392,7 +1635,44 @@
     "example_german": "Wie geht es Ihnen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
+  },
+  {
+    "id": "u-a2-092",
+    "norsk": "komme på",
+    "lemma": "komme på",
+    "english": "to think of, to remember",
+    "ukrainian": "згадати, пригадати",
+    "spanish": "acordarse de, recordar",
+    "german": "sich erinnern an, einfallen",
+    "example": "Jeg kommer ikke på navnet hans.",
+    "example_english": "I cannot think of his name.",
+    "example_ukrainian": "Я не можу пригадати його ім'я.",
+    "example_spanish": "No me acuerdo de su nombre.",
+    "example_german": "Ich komme nicht auf seinen Namen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-093",
+    "norsk": "legge til",
+    "lemma": "legge til",
+    "english": "to add",
+    "ukrainian": "додати",
+    "spanish": "añadir, agregar",
+    "german": "hinzufügen",
+    "example": "Kan du legge til litt mer salt?",
+    "example_english": "Can you add a little more salt?",
+    "example_ukrainian": "Можеш додати трохи більше солі?",
+    "example_spanish": "¿Puedes agregar un poco más de sal?",
+    "example_german": "Kannst du noch etwas Salz hinzufügen?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-094",
@@ -1409,7 +1689,8 @@
     "example_german": "Ich brauche mehr Schlaf.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-095",
@@ -1426,7 +1707,26 @@
     "example_german": "Kannst du ein Auge auf die Kinder haben?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-096",
+    "norsk": "holde med",
+    "lemma": "holde med",
+    "english": "to support, to side with",
+    "ukrainian": "підтримувати, бути на боці",
+    "spanish": "apoyar, estar del lado de",
+    "german": "jemanden unterstützen, zu jemandem halten",
+    "example": "Hvem holder du med?",
+    "example_english": "Who do you support?",
+    "example_ukrainian": "Кого ти підтримуєш?",
+    "example_spanish": "¿A quién apoyas?",
+    "example_german": "Wen unterstützt du?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-097",
@@ -1443,7 +1743,8 @@
     "example_german": "Halt dich fest, wenn der Bus losfährt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "transport"
   },
   {
     "id": "u-a2-098",
@@ -1460,7 +1761,8 @@
     "example_german": "Wir warten mal ab, wie es läuft.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-099",
@@ -1477,7 +1779,8 @@
     "example_german": "Frag ruhig, wenn du etwas wissen möchtest.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-100",
@@ -1494,7 +1797,8 @@
     "example_german": "Ist es möglich, die Plätze zu tauschen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-101",
@@ -1511,7 +1815,44 @@
     "example_german": "Ich habe vor, mit dem Training anzufangen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-102",
+    "norsk": "holde opp",
+    "lemma": "holde opp",
+    "english": "to stop, to cease",
+    "ukrainian": "припинитися, зупинитися",
+    "spanish": "parar, cesar",
+    "german": "aufhören, nachlassen",
+    "example": "Regnet holdt opp etter en stund.",
+    "example_english": "The rain stopped after a while.",
+    "example_ukrainian": "Дощ припинився через деякий час.",
+    "example_spanish": "La lluvia paró después de un rato.",
+    "example_german": "Der Regen hörte nach einer Weile auf.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-103",
+    "norsk": "komme over",
+    "lemma": "komme over",
+    "english": "to come across, to get over",
+    "ukrainian": "натрапити на, пережити",
+    "spanish": "encontrar, superar",
+    "german": "stoßen auf, hinwegkommen über",
+    "example": "Jeg kom over en interessant bok i butikken.",
+    "example_english": "I came across an interesting book in the shop.",
+    "example_ukrainian": "Я натрапив на цікаву книгу в магазині.",
+    "example_spanish": "Encontré un libro interesante en la tienda.",
+    "example_german": "Ich bin in dem Laden auf ein interessantes Buch gestoßen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-104",
@@ -1528,7 +1869,62 @@
     "example_german": "Ich wollte dich gerade anrufen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
+  },
+  {
+    "id": "u-a2-105",
+    "norsk": "legge på seg",
+    "lemma": "legge på seg",
+    "english": "to gain weight",
+    "ukrainian": "набрати вагу, погладшати",
+    "spanish": "engordar, ganar peso",
+    "german": "zunehmen",
+    "example": "Han har lagt på seg litt i vinter.",
+    "example_english": "He has gained a bit of weight this winter.",
+    "example_ukrainian": "Він трохи погладшав цієї зими.",
+    "example_spanish": "Ha engordado un poco este invierno.",
+    "example_german": "Er hat diesen Winter etwas zugenommen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "body"
+  },
+  {
+    "id": "u-a2-106",
+    "norsk": "kjenne igjen",
+    "lemma": "kjenne igjen",
+    "english": "to recognise",
+    "ukrainian": "впізнати",
+    "spanish": "reconocer",
+    "german": "wiedererkennen",
+    "example": "Jeg kjente igjen stemmen hennes med en gang.",
+    "example_english": "I recognised her voice immediately.",
+    "example_ukrainian": "Я одразу впізнав її голос.",
+    "example_spanish": "Reconocí su voz enseguida.",
+    "example_german": "Ich habe ihre Stimme sofort wiedererkannt.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-107",
+    "norsk": "holde til",
+    "lemma": "holde til",
+    "english": "to be located, to be based",
+    "ukrainian": "знаходитися, розташовуватися",
+    "spanish": "estar ubicado, tener su sede",
+    "german": "sich befinden, seinen Sitz haben",
+    "example": "Kontoret holder til i sentrum.",
+    "example_english": "The office is located in the city centre.",
+    "example_ukrainian": "Офіс знаходиться в центрі.",
+    "example_spanish": "La oficina está ubicada en el centro.",
+    "example_german": "Das Büro befindet sich im Stadtzentrum.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-108",
@@ -1545,7 +1941,8 @@
     "example_german": "Es könnte sein, dass wir etwas später kommen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-109",
@@ -1562,7 +1959,8 @@
     "example_german": "Das Konzert findet am Freitag statt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-110",
@@ -1579,7 +1977,98 @@
     "example_german": "Wir haben keine Milch mehr.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
+  },
+  {
+    "id": "u-a2-111",
+    "norsk": "få med seg",
+    "lemma": "få med seg",
+    "english": "to catch, to follow, to understand",
+    "ukrainian": "зрозуміти, вловити",
+    "spanish": "entender, captar, escuchar",
+    "german": "mitbekommen, verstehen",
+    "example": "Fikk du med deg hva hun sa?",
+    "example_english": "Did you catch what she said?",
+    "example_ukrainian": "Ти зрозумів, що вона сказала?",
+    "example_spanish": "¿Entendiste lo que ella dijo?",
+    "example_german": "Hast du mitbekommen, was sie gesagt hat?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-112",
+    "norsk": "gå av",
+    "lemma": "gå av",
+    "english": "to step down, to get off",
+    "ukrainian": "виходити, зійти (з транспорту)",
+    "spanish": "bajarse, apearse",
+    "german": "aussteigen, zurücktreten",
+    "example": "Hvor skal du gå av?",
+    "example_english": "Where are you getting off?",
+    "example_ukrainian": "Де ти виходиш?",
+    "example_spanish": "¿Dónde te bajas?",
+    "example_german": "Wo steigst du aus?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "transport"
+  },
+  {
+    "id": "u-a2-113",
+    "norsk": "gå med på",
+    "lemma": "gå med på",
+    "english": "to agree to, to go along with",
+    "ukrainian": "погодитися, пристати на",
+    "spanish": "aceptar, estar de acuerdo con",
+    "german": "zustimmen, einwilligen",
+    "example": "Hun gikk med på forslaget.",
+    "example_english": "She agreed to the proposal.",
+    "example_ukrainian": "Вона погодилася на пропозицію.",
+    "example_spanish": "Ella aceptó la propuesta.",
+    "example_german": "Sie hat dem Vorschlag zugestimmt.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "opinion-formulas"
+  },
+  {
+    "id": "u-a2-114",
+    "norsk": "bli til",
+    "lemma": "bli til",
+    "english": "to come into being, to become",
+    "ukrainian": "виникнути, утворитися",
+    "spanish": "surgir, llegar a existir",
+    "german": "entstehen, werden",
+    "example": "Hvordan ble denne tradisjonen til?",
+    "example_english": "How did this tradition come into being?",
+    "example_ukrainian": "Як виникла ця традиція?",
+    "example_spanish": "¿Cómo surgió esta tradición?",
+    "example_german": "Wie ist diese Tradition entstanden?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-115",
+    "norsk": "være til",
+    "lemma": "være til",
+    "english": "to exist, to be of use",
+    "ukrainian": "існувати, бути корисним",
+    "spanish": "existir, ser de utilidad",
+    "german": "existieren, nützlich sein",
+    "example": "Er det til hjelp?",
+    "example_english": "Is it of any use?",
+    "example_ukrainian": "Це допомагає?",
+    "example_spanish": "¿Es de ayuda?",
+    "example_german": "Ist das eine Hilfe?",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-116",
@@ -1596,7 +2085,8 @@
     "example_german": "Lass das anfassen!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-117",
@@ -1613,7 +2103,8 @@
     "example_german": "Ich wasche jeden Montag Wäsche.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "house-chores"
   },
   {
     "id": "u-a2-118",
@@ -1630,7 +2121,8 @@
     "example_german": "Wir schauen jeden Freitag Filme.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "hobbies"
   },
   {
     "id": "u-a2-119",
@@ -1647,7 +2139,8 @@
     "example_german": "Er spielt mit Freunden Videospiele.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "hobbies"
   },
   {
     "id": "u-a2-120",
@@ -1664,7 +2157,8 @@
     "example_german": "Er sammelt Briefmarken.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "hobbies"
   },
   {
     "id": "u-a2-121",
@@ -1681,7 +2175,8 @@
     "example_german": "Geh an der Kirche vorbei und biege rechts ab.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-122",
@@ -1698,7 +2193,8 @@
     "example_german": "Er bewirbt sich als Lehrer.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-123",
@@ -1715,7 +2211,8 @@
     "example_german": "Ich spiele mit Freunden Fußball.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "sports"
   },
   {
     "id": "u-a2-124",
@@ -1732,7 +2229,8 @@
     "example_german": "Norweger fahren gerne Ski.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "sports"
   },
   {
     "id": "u-a2-125",
@@ -1749,7 +2247,8 @@
     "example_german": "Wir feuern die norwegische Mannschaft an.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "sports"
   },
   {
     "id": "u-a2-126",
@@ -1766,7 +2265,8 @@
     "example_german": "Ich führe den Hund zweimal am Tag aus.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "house-chores"
   },
   {
     "id": "u-a2-127",
@@ -1783,7 +2283,8 @@
     "example_german": "Entschuldigung, wo ist die nächste Apotheke?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-128",
@@ -1800,7 +2301,8 @@
     "example_german": "Wie komme ich zum Bahnhof?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-129",
@@ -1817,7 +2319,8 @@
     "example_german": "Wir treffen uns am Nachmittag.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-130",
@@ -1834,7 +2337,8 @@
     "example_german": "Wir essen am Abend zu Abend.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-131",
@@ -1851,7 +2355,8 @@
     "example_german": "Ich schlafe schlecht in der Nacht.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-132",
@@ -1868,7 +2373,8 @@
     "example_german": "Dieses Jahr besuchen wir die Großeltern.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-133",
@@ -1885,7 +2391,8 @@
     "example_german": "Das ist vor langer Zeit passiert.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-134",
@@ -1902,7 +2409,8 @@
     "example_german": "Diese Woche besuchen wir Freunde.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-135",
@@ -1919,7 +2427,8 @@
     "example_german": "Entschuldigung, kannst du mir helfen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-136",
@@ -1936,7 +2445,8 @@
     "example_german": "Kannst du bitte etwas langsamer sprechen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-137",
@@ -1953,7 +2463,8 @@
     "example_german": "Viel Glück bei der Prüfung!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-138",
@@ -1970,7 +2481,26 @@
     "example_german": "Gute Reise!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
+  },
+  {
+    "id": "u-a2-139",
+    "norsk": "søke på nett",
+    "lemma": "søke på nett",
+    "english": "to search online",
+    "ukrainian": "шукати в інтернеті",
+    "spanish": "buscar en internet",
+    "german": "online suchen",
+    "example": "Jeg søker på nett etter informasjon.",
+    "example_english": "I search online for information.",
+    "example_ukrainian": "Я шукаю в інтернеті інформацію.",
+    "example_spanish": "Busco información en internet.",
+    "example_german": "Ich suche online nach Informationen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "technology"
   },
   {
     "id": "u-a2-140",
@@ -1987,7 +2517,8 @@
     "example_german": "Diese Schuhe sind im Angebot.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-141",
@@ -2005,7 +2536,8 @@
     "definition": "Brukes for å legge til noe ekstra.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-142",
@@ -2023,7 +2555,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Det regner' er et upersonlig uttrykk som beskriver at regn faller. Det brukes om aktuelt vær akkurat nå."
+    "definition": "'Det regner' er et upersonlig uttrykk som beskriver at regn faller. Det brukes om aktuelt vær akkurat nå.",
+    "theme": "weather"
   },
   {
     "id": "u-a2-143",
@@ -2041,7 +2574,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Det snør' er et upersonlig uttrykk som betyr at snø faller ned fra himmelen. Det beskriver snøvær akkurat nå."
+    "definition": "'Det snør' er et upersonlig uttrykk som betyr at snø faller ned fra himmelen. Det beskriver snøvær akkurat nå.",
+    "theme": "weather"
   },
   {
     "id": "u-a2-144",
@@ -2059,7 +2593,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Det er sol' betyr at solen skinner og det er klart vær. Uttrykket brukes for å beskrive solrikt vær."
+    "definition": "'Det er sol' betyr at solen skinner og det er klart vær. Uttrykket brukes for å beskrive solrikt vær.",
+    "theme": "weather"
   },
   {
     "id": "u-a2-145",
@@ -2077,7 +2612,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Vondt i hodet' brukes for å si at man har smerter i hodet. Det tilsvarer det norske substantivet 'hodepine'."
+    "definition": "'Vondt i hodet' brukes for å si at man har smerter i hodet. Det tilsvarer det norske substantivet 'hodepine'.",
+    "theme": "health"
   },
   {
     "id": "u-a2-146",
@@ -2095,7 +2631,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Vondt i magen' betyr at man har smerter eller ubehag i magen. Det tilsvarer substantivet 'magesmerter' eller 'magepine'."
+    "definition": "'Vondt i magen' betyr at man har smerter eller ubehag i magen. Det tilsvarer substantivet 'magesmerter' eller 'magepine'.",
+    "theme": "health"
   },
   {
     "id": "u-a2-147",
@@ -2113,7 +2650,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Ta temperaturen' betyr å måle kroppens temperatur, vanligvis med et termometer. Det brukes ofte når man er syk."
+    "definition": "'Ta temperaturen' betyr å måle kroppens temperatur, vanligvis med et termometer. Det brukes ofte når man er syk.",
+    "theme": "health"
   },
   {
     "id": "u-a2-148",
@@ -2131,7 +2669,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Allergisk mot' betyr at kroppen reagerer negativt på et bestemt stoff, dyr eller mat. Det brukes alltid med preposisjonen 'mot'."
+    "definition": "'Allergisk mot' betyr at kroppen reagerer negativt på et bestemt stoff, dyr eller mat. Det brukes alltid med preposisjonen 'mot'.",
+    "theme": "health"
   },
   {
     "id": "u-a2-149",
@@ -2149,7 +2688,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Sove godt' betyr å ha en god og rolig søvn uten forstyrrelser. Det er det motsatte av å sove dårlig eller urolig."
+    "definition": "'Sove godt' betyr å ha en god og rolig søvn uten forstyrrelser. Det er det motsatte av å sove dårlig eller urolig.",
+    "theme": "health"
   },
   {
     "id": "u-a2-150",
@@ -2167,7 +2707,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Treffe venner' betyr å møtes med venner på et avtalt sted. Det brukes om sosiale treff i fritiden."
+    "definition": "'Treffe venner' betyr å møtes med venner på et avtalt sted. Det brukes om sosiale treff i fritiden.",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-151",
@@ -2185,7 +2726,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Holde kontakten' betyr å opprettholde regelmessig kommunikasjon med noen over tid. Det kan skje via telefon, meldinger eller personlige møter."
+    "definition": "'Holde kontakten' betyr å opprettholde regelmessig kommunikasjon med noen over tid. Det kan skje via telefon, meldinger eller personlige møter.",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-152",
@@ -2203,7 +2745,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å si unnskyld betyr å uttrykke at man er lei seg for noe man har gjort. Det brukes når man innrømmer en feil eller vil vise høflighet."
+    "definition": "Å si unnskyld betyr å uttrykke at man er lei seg for noe man har gjort. Det brukes når man innrømmer en feil eller vil vise høflighet.",
+    "theme": "communication"
   },
   {
     "id": "u-a2-153",
@@ -2221,7 +2764,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å sende en e-post betyr å sende en digital melding via internett til en annen person. Det er en vanlig måte å kommunisere på jobb og skole."
+    "definition": "Å sende en e-post betyr å sende en digital melding via internett til en annen person. Det er en vanlig måte å kommunisere på jobb og skole.",
+    "theme": "technology"
   },
   {
     "id": "u-a2-154",
@@ -2239,7 +2783,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å ta et bilde betyr å fotografere noe eller noen med et kamera eller en mobiltelefon. Uttrykket brukes om både digitale og analoge bilder."
+    "definition": "Å ta et bilde betyr å fotografere noe eller noen med et kamera eller en mobiltelefon. Uttrykket brukes om både digitale og analoge bilder.",
+    "theme": "technology"
   },
   {
     "id": "u-a2-155",
@@ -2257,7 +2802,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å spare energi betyr å bruke mindre strøm eller varme enn vanlig. Det er viktig for miljøet og kan også redusere strømregningen."
+    "definition": "Å spare energi betyr å bruke mindre strøm eller varme enn vanlig. Det er viktig for miljøet og kan også redusere strømregningen.",
+    "theme": "environment"
   },
   {
     "id": "u-a2-156",
@@ -2275,7 +2821,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å spare penger betyr å legge til side penger i stedet for å bruke dem. Man gjør det gjerne for å nå et bestemt mål eller for å ha penger i reserve."
+    "definition": "Å spare penger betyr å legge til side penger i stedet for å bruke dem. Man gjør det gjerne for å nå et bestemt mål eller for å ha penger i reserve.",
+    "theme": "money"
   },
   {
     "id": "u-a2-157",
@@ -2293,7 +2840,8 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å bruke penger betyr å kjøpe noe eller betale for en tjeneste. Uttrykket sier noe om hvordan man disponerer pengene sine."
+    "definition": "Å bruke penger betyr å kjøpe noe eller betale for en tjeneste. Uttrykket sier noe om hvordan man disponerer pengene sine.",
+    "theme": "money"
   },
   {
     "id": "u-a2-158",
@@ -2311,7 +2859,27 @@
     "level": "A2",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å låne penger betyr å få penger av noen midlertidig, med forventning om at man betaler dem tilbake senere. Man kan også låne penger fra en bank."
+    "definition": "Å låne penger betyr å få penger av noen midlertidig, med forventning om at man betaler dem tilbake senere. Man kan også låne penger fra en bank.",
+    "theme": "money"
+  },
+  {
+    "id": "u-a2-159",
+    "norsk": "betale tilbake",
+    "lemma": "betale tilbake",
+    "english": "to pay back",
+    "ukrainian": "повертати гроші",
+    "spanish": "devolver el dinero",
+    "german": "zurückzahlen",
+    "example": "Jeg skal betale tilbake pengene jeg skyldte deg i morgen.",
+    "example_english": "I will pay back the money I owed you tomorrow.",
+    "example_ukrainian": "Я поверну тобі гроші, які заборгував, завтра.",
+    "example_spanish": "Mañana voy a devolverte el dinero que te debía.",
+    "example_german": "Ich werde dir das Geld, das ich dir schuldete, morgen zurückzahlen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "definition": "Å betale tilbake betyr å gi tilbake penger man har lånt fra noen. Det er viktig å betale tilbake det man skylder for å opprettholde tillit.",
+    "theme": "money"
   },
   {
     "id": "u-a2-160",
@@ -2328,7 +2896,8 @@
     "example_german": "Ich kann gerade jetzt nicht mit dir reden.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-161",
@@ -2345,7 +2914,8 @@
     "example_german": "Es ist wichtig, aus seinen Fehlern zu lernen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-163",
@@ -2362,7 +2932,8 @@
     "example_german": "Das Ergebnis hängt davon ab, wie viel du trainierst.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-164",
@@ -2379,7 +2950,8 @@
     "example_german": "Kannst du den Tisch decken, während ich das Abendessen koche?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "house-chores"
   },
   {
     "id": "u-a2-165",
@@ -2396,7 +2968,8 @@
     "example_german": "Er ist heute in schlechter Laune und will mit niemandem reden.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-166",
@@ -2413,7 +2986,8 @@
     "example_german": "Ich habe morgens wenig Zeit, also esse ich kein Frühstück.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-167",
@@ -2430,7 +3004,8 @@
     "example_german": "Wir fuhren langsam wegen der schlechten Straßen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "transport"
   },
   {
     "id": "u-a2-168",
@@ -2447,7 +3022,8 @@
     "example_german": "Sie muss dieses Wochenende extra arbeiten, um das Projekt fertigzustellen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-169",
@@ -2464,7 +3040,8 @@
     "example_german": "Dein Kleid ist heute besonders schön.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "descriptive-adjectives"
   },
   {
     "id": "u-a2-170",
@@ -2481,7 +3058,8 @@
     "example_german": "Sie hat endlich eine feste Stelle bekommen, nach vielen befristeten Stellen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-171",
@@ -2498,7 +3076,8 @@
     "example_german": "Was kann schiefgehen, wenn wir nicht richtig planen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-173",
@@ -2515,7 +3094,8 @@
     "example_german": "Es ist wichtig, Buchhaltung über alle Ausgaben im Unternehmen zu führen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "money"
   },
   {
     "id": "u-a2-174",
@@ -2532,7 +3112,8 @@
     "example_german": "Ich versuche, den Arzt zu erreichen, aber er antwortet nicht.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-175",
@@ -2549,7 +3130,8 @@
     "example_german": "Stimmt etwas nicht? Du siehst heute sehr traurig aus.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-176",
@@ -2566,7 +3148,8 @@
     "example_german": "Manchmal ist es schön, einfach still zu sitzen und sich zu entspannen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-177",
@@ -2583,7 +3166,8 @@
     "example_german": "Kannst du es noch einmal erklären? Ich habe es nicht ganz verstanden.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-178",
@@ -2600,7 +3184,8 @@
     "example_german": "Du musst sofort nach Hause kommen, es ist dringend.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-179",
@@ -2617,7 +3202,8 @@
     "example_german": "Letztes Jahr reisten wir nach Italien und hatten einen fantastischen Urlaub.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-180",
@@ -2634,7 +3220,8 @@
     "example_german": "Wir sind vor zwei Jahren hierher gezogen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-181",
@@ -2651,7 +3238,8 @@
     "example_german": "Diese Jacke ist zu groß für mich.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "descriptive-adjectives"
   },
   {
     "id": "u-a2-182",
@@ -2668,7 +3256,8 @@
     "example_german": "Es ist seltsam für mich, so früh zu Abend zu essen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-183",
@@ -2685,7 +3274,8 @@
     "example_german": "Was für ein Tag! Alles lief von morgens bis abends schief.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-184",
@@ -2702,7 +3292,8 @@
     "example_german": "Geh geradeaus, bis du auf der linken Seite einen großen Park siehst.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-185",
@@ -2719,7 +3310,8 @@
     "example_german": "Ich habe morgen frei, also kann ich dir beim Umzug helfen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-186",
@@ -2736,7 +3328,8 @@
     "example_german": "Wir können dieses Wochenende nicht dort übernachten, weil das Hotel ausgebucht ist.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-187",
@@ -2753,7 +3346,8 @@
     "example_german": "Sie sind verheiratet und haben drei gemeinsame Kinder.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-188",
@@ -2770,7 +3364,8 @@
     "example_german": "Ich möchte gerne einen Tisch für zwei Personen reservieren.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-189",
@@ -2787,7 +3382,8 @@
     "example_german": "Die Kinder müssen ihre Hausaufgaben machen, bevor sie Spiele spielen dürfen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-190",
@@ -2804,7 +3400,8 @@
     "example_german": "Sie sehen nach dem Spiel glücklich aus.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "descriptive-adjectives"
   },
   {
     "id": "u-a2-191",
@@ -2821,7 +3418,8 @@
     "example_german": "Oma kocht immer gutes Essen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "cooking"
   },
   {
     "id": "u-a2-192",
@@ -2838,7 +3436,8 @@
     "example_german": "Es ist eine gute Idee, heute einen Regenschirm mitzunehmen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-193",
@@ -2855,7 +3454,8 @@
     "example_german": "Gut gemacht, du hast die Prüfung bestanden!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-194",
@@ -2872,7 +3472,8 @@
     "example_german": "- Kann ich die Speisekarte haben? - Bitte sehr, sagte der Kellner.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-195",
@@ -2889,7 +3490,8 @@
     "example_german": "Guten Morgen! Möchtest du Kaffee?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-196",
@@ -2906,7 +3508,8 @@
     "example_german": "Herzlichen Glückwunsch zum Geburtstag, ich hoffe, du hast einen wunderschönen Tag!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-197",
@@ -2923,7 +3526,8 @@
     "example_german": "Sie begann einen Norwegischkurs zu besuchen, als sie nach Oslo zog.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-198",
@@ -2940,7 +3544,8 @@
     "example_german": "Können wir uns um drei Uhr treffen? Ja, das passt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-200",
@@ -2957,7 +3562,8 @@
     "example_german": "Ich bin müde und möchte jetzt nach Hause gehen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-201",
@@ -2974,7 +3580,8 @@
     "example_german": "Er ist heute den ganzen Tag zu Hause.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-202",
@@ -2991,7 +3598,8 @@
     "example_german": "Sie ist in schlechter Stimmung, weil sie nicht gut geschlafen hat.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-203",
@@ -3008,7 +3616,8 @@
     "example_german": "Er ist morgens immer in guter Stimmung.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-204",
@@ -3025,7 +3634,8 @@
     "example_german": "Tschüss, wir sehen uns morgen!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-205",
@@ -3042,7 +3652,8 @@
     "example_german": "Ich kann mich heute nicht treffen, weil ich viel zu tun habe.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-207",
@@ -3059,7 +3670,8 @@
     "example_german": "Wir haben zwei Jahre lang in Oslo gewohnt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-208",
@@ -3076,7 +3688,8 @@
     "example_german": "Schönes Wochenende! - Gleichfalls!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-209",
@@ -3093,7 +3706,8 @@
     "example_german": "Kannst du etwas lauter sprechen? Ich hoere dich nicht.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-210",
@@ -3110,7 +3724,8 @@
     "example_german": "Biegen Sie an der Ampel rechts ab, dann ist das Geschäft direkt vor Ihnen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-211",
@@ -3127,7 +3742,26 @@
     "example_german": "Ich habe morgen frei, also kann ich dir beim Umzug helfen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
+  },
+  {
+    "id": "u-a2-212",
+    "norsk": "å klare seg",
+    "lemma": "klare seg",
+    "english": "to manage / to get by on one's own",
+    "ukrainian": "впоратися / обходитися самостійно",
+    "spanish": "arreglárselas / valerse por sí mismo",
+    "german": "zurechtkommen / sich selbst behelfen",
+    "example": "Hun er bare fem år, men hun klarer seg fint alene på skolen.",
+    "example_english": "She is only five years old, but she manages fine on her own at school.",
+    "example_ukrainian": "Їй лише п'ять років, але вона чудово справляється самостійно в школі.",
+    "example_spanish": "Solo tiene cinco años, pero se las arregla bien sola en la escuela.",
+    "example_german": "Sie ist erst funf Jahre alt, kommt aber in der Schule gut alleine zurecht.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-214",
@@ -3144,7 +3778,8 @@
     "example_german": "Am Samstag lasse ich mir beim Friseur die Haare schneiden.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "body"
   },
   {
     "id": "u-a2-215",
@@ -3161,7 +3796,8 @@
     "example_german": "Zum Frühstück esse ich gerne Knäckebrot mit Käse und Schinken.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "cooking"
   },
   {
     "id": "u-a2-216",
@@ -3178,7 +3814,8 @@
     "example_german": "Du magst doch keinen Kaffee, oder? Doch, ich mag Kaffee sehr gerne!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-217",
@@ -3195,7 +3832,26 @@
     "example_german": "Kannst du mir bei den Hausaufgaben helfen? Natürlich!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
+  },
+  {
+    "id": "u-a2-218",
+    "norsk": "komme fra",
+    "lemma": "komme fra",
+    "english": "to come from / to be from",
+    "ukrainian": "походити з / бути родом з",
+    "spanish": "ser de / venir de",
+    "german": "kommen aus / stammen aus",
+    "example": "Hvor kommer du fra? Jeg kommer fra Polen.",
+    "example_english": "Where are you from? I am from Poland.",
+    "example_ukrainian": "Звідки ти? Я з Польщі.",
+    "example_spanish": "¿De dónde eres? Soy de Polonia.",
+    "example_german": "Woher kommst du? Ich komme aus Polen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-219",
@@ -3212,7 +3868,8 @@
     "example_german": "Sie besucht dreimal pro Woche einen Norwegischkurs, um die Sprache schneller zu lernen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-220",
@@ -3229,7 +3886,8 @@
     "example_german": "Wir treffen uns um Viertel vor drei.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-221",
@@ -3246,7 +3904,8 @@
     "example_german": "Der Zug fährt um Viertel nach acht ab.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-222",
@@ -3263,7 +3922,8 @@
     "example_german": "Sie ist auf dem Land aufgewachsen und vermisst die Natur.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "nature"
   },
   {
     "id": "u-a2-223",
@@ -3280,7 +3940,8 @@
     "example_german": "Wie weit ist es von hier bis ins Stadtzentrum?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-224",
@@ -3297,7 +3958,26 @@
     "example_german": "Meine Großmutter wohnt weit entfernt, daher sehen wir sie selten.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
+  },
+  {
+    "id": "u-a2-226",
+    "norsk": "å bli lei seg",
+    "lemma": "bli lei seg",
+    "english": "to become sad, to get upset",
+    "ukrainian": "засмутитися, стати сумним",
+    "spanish": "ponerse triste, entristecerse",
+    "german": "traurig werden, sich aufregen",
+    "example": "Han ble lei seg da han hørte de darlige nyhetene.",
+    "example_english": "He became sad when he heard the bad news.",
+    "example_ukrainian": "Він засмутився, коли почув погані новини.",
+    "example_spanish": "Él se puso triste cuando escuchó las malas noticias.",
+    "example_german": "Er wurde traurig, als er die schlechten Nachrichten hörte.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-227",
@@ -3314,7 +3994,44 @@
     "example_german": "Wie lange wohnst du schon in Norwegen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
+  },
+  {
+    "id": "u-a2-228",
+    "norsk": "å leve av",
+    "lemma": "leve av",
+    "english": "to live on, to make a living from",
+    "ukrainian": "жити з чогось, заробляти на життя чимось",
+    "spanish": "vivir de, ganarse la vida con",
+    "german": "von etwas leben, seinen Lebensunterhalt mit etwas verdienen",
+    "example": "Han lever av å selge handlagde møbler.",
+    "example_english": "He makes a living from selling handmade furniture.",
+    "example_ukrainian": "Він живе з продажу меблів ручної роботи.",
+    "example_spanish": "Él se gana la vida vendiendo muebles artesanales.",
+    "example_german": "Er lebt davon, handgefertigte Möbel zu verkaufen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "occupations"
+  },
+  {
+    "id": "u-a2-229",
+    "norsk": "å like seg",
+    "lemma": "like seg",
+    "english": "to enjoy oneself, to feel comfortable",
+    "ukrainian": "почуватися добре, подобатися (десь або комусь)",
+    "spanish": "sentirse bien, disfrutar, encontrarse a gusto",
+    "german": "sich wohlfühlen, es genießen",
+    "example": "Jeg liker meg veldig godt i den nye jobben.",
+    "example_english": "I really enjoy myself in the new job.",
+    "example_ukrainian": "Мені дуже добре на новій роботі.",
+    "example_spanish": "Me siento muy bien en el nuevo trabajo.",
+    "example_german": "Ich fühle mich in der neuen Stelle sehr wohl.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-230",
@@ -3331,7 +4048,8 @@
     "example_german": "Ich habe Lust auf eine Tasse Kaffee.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-232",
@@ -3348,7 +4066,8 @@
     "example_german": "Denk daran, einen Regenschirm mitzunehmen, wenn es regnet.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-233",
@@ -3365,7 +4084,8 @@
     "example_german": "Mitten im Winter ist es in Nordnorwegen sehr kalt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "weather"
   },
   {
     "id": "u-a2-234",
@@ -3382,7 +4102,8 @@
     "example_german": "Er verlor das Gleichgewicht und fiel auf dem Eis hin.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "body"
   },
   {
     "id": "u-a2-236",
@@ -3399,7 +4120,8 @@
     "example_german": "Nächste Woche fange ich einen Norwegischkurs an.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time"
   },
   {
     "id": "u-a2-237",
@@ -3416,7 +4138,26 @@
     "example_german": "Du kannst Tickets im Internet bestellen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "technology"
+  },
+  {
+    "id": "u-a2-238",
+    "norsk": "å lete etter",
+    "lemma": "lete etter",
+    "english": "to look for, to search for",
+    "ukrainian": "шукати, розшукувати",
+    "spanish": "buscar",
+    "german": "suchen nach",
+    "example": "Jeg leter etter nyklene mine.",
+    "example_english": "I am looking for my keys.",
+    "example_ukrainian": "Я шукаю свої ключі.",
+    "example_spanish": "Estoy buscando mis llaves.",
+    "example_german": "Ich suche nach meinen Schluesseln.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-239",
@@ -3433,7 +4174,8 @@
     "example_german": "Kannst du uns von deiner Reise nach Norwegen erzahlen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-240",
@@ -3450,7 +4192,8 @@
     "example_german": "Ich möchte nach dem Preis der Fahrkarte fragen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-241",
@@ -3467,7 +4210,8 @@
     "example_german": "Wir fahren in drei Tagen nach Bergen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-242",
@@ -3484,7 +4228,8 @@
     "example_german": "Wie war der Film? - Ach, so lala.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-243",
@@ -3501,7 +4246,8 @@
     "example_german": "In der neuen Wohnung ist viel Platz.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-244",
@@ -3518,7 +4264,8 @@
     "example_german": "Vergiss nicht, die Zähne zu putzen, bevor du ins Bett gehst.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "body"
   },
   {
     "id": "u-a2-245",
@@ -3535,7 +4282,8 @@
     "example_german": "Kannst du das auf Norwegisch sagen?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-246",
@@ -3552,7 +4300,8 @@
     "example_german": "Ich habe viele neue Freunde im Norwegischkurs kennengelernt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-247",
@@ -3569,7 +4318,8 @@
     "example_german": "Wie merkwürdig, dass er die Nachricht nicht beantwortet hat.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-248",
@@ -3586,7 +4336,8 @@
     "example_german": "Seine neue Frisur sieht etwas seltsam aus.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "descriptive-adjectives"
   },
   {
     "id": "u-a2-249",
@@ -3603,7 +4354,8 @@
     "example_german": "Es ist am besten, direkt zu schreiben, wenn du eine formelle E-Mail sendest.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-250",
@@ -3620,7 +4372,8 @@
     "example_german": "Das Kind konnte beim Abendessen nicht still sitzen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-251",
@@ -3637,7 +4390,8 @@
     "example_german": "Ich habe heute zusammen mit meinen Kollegen zu Mittag gegessen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-252",
@@ -3654,7 +4408,8 @@
     "example_german": "Wir müssen miteinander über dieses Problem reden.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication"
   },
   {
     "id": "u-a2-253",
@@ -3671,7 +4426,8 @@
     "example_german": "Willkommen, alle zusammen! Die Party beginnt jetzt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-254",
@@ -3688,7 +4444,44 @@
     "example_german": "Wir waren insgesamt zwanzig Personen beim Abendessen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-255",
+    "norsk": "å sminke seg",
+    "lemma": "sminke seg",
+    "english": "to put on makeup",
+    "ukrainian": "накладати макіяж",
+    "spanish": "maquillarse",
+    "german": "sich schminken",
+    "example": "Hun bruker alltid tjue minutter på å sminke seg om morgenen.",
+    "example_english": "She always spends twenty minutes putting on makeup in the morning.",
+    "example_ukrainian": "Вона завжди витрачає двадцять хвилин на макіяж вранці.",
+    "example_spanish": "Ella siempre pasa veinte minutos maquillandose por la mañana.",
+    "example_german": "Sie braucht morgens immer zwanzig Minuten, um sich zu schminken.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "clothing"
+  },
+  {
+    "id": "u-a2-257",
+    "norsk": "å slå seg",
+    "lemma": "slå seg",
+    "english": "to hurt oneself (by hitting)",
+    "ukrainian": "вдаритися",
+    "spanish": "golpearse",
+    "german": "sich stossen",
+    "example": "Han slo seg på kneet da han falt.",
+    "example_english": "He hurt his knee when he fell.",
+    "example_ukrainian": "Він вдарився коліном, коли впав.",
+    "example_spanish": "Se golpeó la rodilla cuando se cayó.",
+    "example_german": "Er stieß sich das Knie, als er fiel.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-a2-259",
@@ -3705,7 +4498,8 @@
     "example_german": "Die Kassiererin scannt die Waren schnell und effizient ein.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-261",
@@ -3722,7 +4516,8 @@
     "example_german": "Wir müssen bis zwölf Uhr aus dem Hotel auschecken.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-262",
@@ -3739,7 +4534,8 @@
     "example_german": "Wir checkten früh am Morgen im Hotel ein.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-263",
@@ -3756,7 +4552,8 @@
     "example_german": "Sie ging zur Arbeit, obwohl sie müde war.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-265",
@@ -3773,7 +4570,8 @@
     "example_german": "Er sprach langsam, sodass alle ihn verstehen konnten.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-266",
@@ -3790,7 +4588,8 @@
     "example_german": "Du musst an dich selbst glauben, um erfolgreich zu sein.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-267",
@@ -3807,7 +4606,8 @@
     "example_german": "Das Restaurant ist für seinen guten Service und sein gutes Essen bekannt.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-270",
@@ -3824,7 +4624,8 @@
     "example_german": "Schliesslich fanden wir eine gute Lösung für das Problem.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-271",
@@ -3841,7 +4642,8 @@
     "example_german": "Er kaufte die seltsamsten Möbel -- seine Freunde meinen, er habe schlechten Geschmack.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-272",
@@ -3858,7 +4660,8 @@
     "example_german": "Du musst das ganze Wochenende arbeiten? Du Armer!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-273",
@@ -3875,7 +4678,8 @@
     "example_german": "Er war anfangs nervös, aber nach einer Weile entspannte er sich.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-274",
@@ -3892,7 +4696,8 @@
     "example_german": "Kann ich zwei Stuck von diesem Schokoladenkuchen haben?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "shopping"
   },
   {
     "id": "u-a2-276",
@@ -3909,7 +4714,8 @@
     "example_german": "Ich esse nicht mehr so viel Zucker.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-277",
@@ -3926,7 +4732,8 @@
     "example_german": "Wie schön, dass du kommen konntest!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-a2-278",
@@ -3943,7 +4750,8 @@
     "example_german": "Ich muss gehen, aber mach es gut fürs Erste!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-279",
@@ -3960,7 +4768,8 @@
     "example_german": "Möchtest du nach der Arbeit eine Tasse Kaffee mit mir trinken?",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-280",
@@ -3977,7 +4786,8 @@
     "example_german": "Ich nehme jeden Tag den Bus zur Arbeit.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "transport"
   },
   {
     "id": "u-a2-281",
@@ -3994,7 +4804,26 @@
     "example_german": "Er duscht immer morgens.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-a2-282",
+    "norsk": "å ta med seg",
+    "lemma": "ta med seg",
+    "english": "to bring / to take along",
+    "ukrainian": "взяти iз собою",
+    "spanish": "llevar consigo / traer",
+    "german": "mitnehmen",
+    "example": "Husk å ta med deg en paraply i dag.",
+    "example_english": "Remember to bring an umbrella today.",
+    "example_ukrainian": "Не забудь взяти парасольку сьогоднi.",
+    "example_spanish": "Recuerda llevar un paraguas hoy.",
+    "example_german": "Denk daran, heute einen Regenschirm mitzunehmen.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-a2-283",
@@ -4011,7 +4840,8 @@
     "example_german": "Du hast mir gestern sehr geholfen - danke dafür!",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-284",
@@ -4028,7 +4858,8 @@
     "example_german": "Ich habe heute wenig Zeit, also reden wir später.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-285",
@@ -4045,7 +4876,8 @@
     "example_german": "Wir müssen uns beeilen, um rechtzeitig den Zug zu erreichen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-a2-286",
@@ -4062,7 +4894,8 @@
     "example_german": "Noch eine Sache - vergiss nicht, deinen Pass mitzubringen.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-a2-287",
@@ -4079,7 +4912,8 @@
     "example_german": "Sie arbeitet im Schichtdienst im Krankenhaus und hat oft Nachtschichten.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "occupations"
   },
   {
     "id": "u-a2-288",
@@ -4096,7 +4930,8 @@
     "example_german": "Wir gehen heute Abend zum Abendessen aus.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "social-life"
   },
   {
     "id": "u-a2-289",
@@ -4113,7 +4948,8 @@
     "example_german": "Der Laden befindet sich auf der linken Seite der Straße.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "directions"
   },
   {
     "id": "u-a2-290",
@@ -4130,7 +4966,8 @@
     "example_german": "Warte mal kurz, ich bin noch nicht fertig.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-291",
@@ -4147,7 +4984,8 @@
     "example_german": "Mein Knie tut weh, wenn ich Treppen steige.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "body"
   },
   {
     "id": "u-a2-292",
@@ -4164,7 +5002,8 @@
     "example_german": "- Kann ich die Speisekarte haben? - Bitte sehr, sagte der Kellner.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-a2-293",
@@ -4181,6 +5020,7 @@
     "example_german": "Es ist wichtig zu lernen, wie man seine persönlichen Finanzen verwaltet.",
     "level": "A2",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "money"
   }
 ]

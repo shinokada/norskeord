@@ -1,0 +1,4076 @@
+[
+  {
+    "id": "u-b2-001",
+    "norsk": "All ære til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-002",
+    "norsk": "alt mellom himmel og jord",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-004",
+    "norsk": "balsam for sjelen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-007",
+    "norsk": "berge livet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-008",
+    "norsk": "betale prisen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-009",
+    "norsk": "bli bevisst på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-010",
+    "norsk": "bli degradert",
+    "proposed_theme": "work-career",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-011",
+    "norsk": "bli hyllet for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-012",
+    "norsk": "bli omdøpt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-013",
+    "norsk": "bli oppfordret til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-014",
+    "norsk": "bli oppmuntret",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-015",
+    "norsk": "bli oppmuntret til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-016",
+    "norsk": "bli pågrepet",
+    "proposed_theme": "law",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-017",
+    "norsk": "bli rammet av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-018",
+    "norsk": "bli satt på benken",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-019",
+    "norsk": "bli siktet for",
+    "proposed_theme": "law",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-020",
+    "norsk": "bli tatt på senga",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-021",
+    "norsk": "bli utsatt for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-022",
+    "norsk": "bli utvist",
+    "proposed_theme": "education",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-023",
+    "norsk": "blåne seg",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-024",
+    "norsk": "bratt læringskurve",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-026",
+    "norsk": "bære galt av sted",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-027",
+    "norsk": "delte meninger",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-028",
+    "norsk": "Den som lever, får se",
+    "proposed_theme": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-029",
+    "norsk": "desidert ener",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-030",
+    "norsk": "Det er delte meninger om",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-031",
+    "norsk": "Det er en balansegang",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-032",
+    "norsk": "Det er en tankevekker",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-033",
+    "norsk": "Det er god grunn til å",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-034",
+    "norsk": "Det er ingen tvil om",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-035",
+    "norsk": "Det er lov å drømme",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-036",
+    "norsk": "det er på høy tid",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-037",
+    "norsk": "Det er utenkelig",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-038",
+    "norsk": "Det hadde vært noe!",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-039",
+    "norsk": "Det hadde vært noe, det",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-040",
+    "norsk": "det haster",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-041",
+    "norsk": "Det innebærer at",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-042",
+    "norsk": "det kan hende",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-043",
+    "norsk": "Det provoserer meg at",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-044",
+    "norsk": "det skal ikke så mye til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-045",
+    "norsk": "det spørs",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-046",
+    "norsk": "det spørs hvor dypt det stikker",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-047",
+    "norsk": "det stikk motsatte",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-048",
+    "norsk": "Det står respekt av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-049",
+    "norsk": "Det viste seg at",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-050",
+    "norsk": "digital dømmekraft/en",
+    "proposed_theme": "technology",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-052",
+    "norsk": "dobbel betydning/en",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-053",
+    "norsk": "Du sier noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-054",
+    "norsk": "elektroniske spor",
+    "proposed_theme": "technology",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-055",
+    "norsk": "en dråpe i havet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-056",
+    "norsk": "en gammel kjenning",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-057",
+    "norsk": "en god del",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-058",
+    "norsk": "en halvstudert røver",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-059",
+    "norsk": "en læringskurve",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-060",
+    "norsk": "en mengde",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-061",
+    "norsk": "en rekke",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-062",
+    "norsk": "en vakker dag",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-064",
+    "norsk": "erkjenne straffeskyld",
+    "proposed_theme": "law",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-065",
+    "norsk": "EUs indre marked",
+    "proposed_theme": "economics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-067",
+    "norsk": "fleip eller fakta",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-068",
+    "norsk": "for sin tid",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-069",
+    "norsk": "for øvrig",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-071",
+    "norsk": "formildende omstendigheter",
+    "proposed_theme": "law",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-073",
+    "norsk": "forsørge seg selv",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-075",
+    "norsk": "fredelige midler",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-076",
+    "norsk": "fremfor alt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-077",
+    "norsk": "fremsette en ytring",
+    "proposed_theme": "argumentation",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-078",
+    "norsk": "frie tøyler",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-079",
+    "norsk": "frisk og rask",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-080",
+    "norsk": "få fotfeste",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-081",
+    "norsk": "få inntrykk av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-082",
+    "norsk": "få klarhet i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-083",
+    "norsk": "få lønna til å strekke til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-084",
+    "norsk": "få skikk på livet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-085",
+    "norsk": "få til å gå rundt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-087",
+    "norsk": "følge noens eksempel",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-088",
+    "norsk": "gang etter gang",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-089",
+    "norsk": "gi avkall på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-091",
+    "norsk": "gi utslag i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-092",
+    "norsk": "gjøre narr av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-094",
+    "norsk": "grovt regnet",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-095",
+    "norsk": "gå altfor langt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-096",
+    "norsk": "gå av minne",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-098",
+    "norsk": "gå mot strømmen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-099",
+    "norsk": "gå på rundgang",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-102",
+    "norsk": "ha det siste ordet",
+    "proposed_theme": "argumentation",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-103",
+    "norsk": "ha en følelse av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-104",
+    "norsk": "ha høy grad av noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-105",
+    "norsk": "ha i bakhodet",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-106",
+    "norsk": "ha kjennskap til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-107",
+    "norsk": "ha mye på hjertet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-108",
+    "norsk": "ha potensial til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-109",
+    "norsk": "ha som levebrød",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-110",
+    "norsk": "ha stor betydning for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-111",
+    "norsk": "ha tiltro til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-113",
+    "norsk": "halvstudert røver",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-114",
+    "norsk": "havne på førsteplass",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-121",
+    "norsk": "holde kjeft",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-122",
+    "norsk": "humanitært arbeid",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-123",
+    "norsk": "hvile på laurbærene",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-124",
+    "norsk": "høy status",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-125",
+    "norsk": "i andres nærvær",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-126",
+    "norsk": "i deres egne øyne",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-127",
+    "norsk": "i ens egne øyne",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-128",
+    "norsk": "i etterkant av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-129",
+    "norsk": "i ettertid",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-130",
+    "norsk": "i forbindelse med",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-131",
+    "norsk": "i forhold til",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-132",
+    "norsk": "i fredstid",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-133",
+    "norsk": "i grunnen",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-134",
+    "norsk": "i hovedsak",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-135",
+    "norsk": "i hvert fall",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-136",
+    "norsk": "i høy hastighet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-137",
+    "norsk": "i høyeste grad",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-138",
+    "norsk": "i overkant",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-139",
+    "norsk": "i prinsippet",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-140",
+    "norsk": "i samme øyeblikk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-141",
+    "norsk": "i stor skala",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-142",
+    "norsk": "i større grad",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-143",
+    "norsk": "i takt med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-144",
+    "norsk": "i trygge omgivelser",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-145",
+    "norsk": "i utgangspunktet",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-146",
+    "norsk": "i verste fall",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-147",
+    "norsk": "ideelt sett",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-149",
+    "norsk": "ikke noe videre",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-150",
+    "norsk": "ikke noe å hige etter",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-151",
+    "norsk": "ikke nødvendigvis",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-152",
+    "norsk": "inkluderende arbeidsliv",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-155",
+    "norsk": "Jeg skal vedde på at",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-156",
+    "norsk": "jobbe seg opp fra gulvet",
+    "proposed_theme": "work-career",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-158",
+    "norsk": "kjenne terrenget",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-159",
+    "norsk": "kjøre noe på dunken",
+    "proposed_theme": "politics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-160",
+    "norsk": "klusse over",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-162",
+    "norsk": "komfortabel nok",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-163",
+    "norsk": "komme i skade for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-164",
+    "norsk": "komme noen til gode",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-165",
+    "norsk": "komme til orde",
+    "proposed_theme": "argumentation",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-166",
+    "norsk": "komme til uttrykk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-167",
+    "norsk": "kompensere for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-168",
+    "norsk": "kroppen sier fra",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-169",
+    "norsk": "la seg lokke",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-170",
+    "norsk": "lage styr",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-171",
+    "norsk": "langt lavere",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-172",
+    "norsk": "legge vekt på",
+    "proposed_theme": "argumentation",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-173",
+    "norsk": "lettere sagt enn gjort",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-175",
+    "norsk": "litt av en",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-176",
+    "norsk": "lure trill rundt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-177",
+    "norsk": "Man skulle kanskje tro at",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-178",
+    "norsk": "mangel på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-179",
+    "norsk": "med jevne mellomrom",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-180",
+    "norsk": "med tanke på",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-181",
+    "norsk": "med unntak av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-182",
+    "norsk": "mer eller mindre",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-183",
+    "norsk": "midt på treet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-184",
+    "norsk": "nederst på rangstigen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-185",
+    "norsk": "neimen ikke",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-186",
+    "norsk": "nok en gang",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-187",
+    "norsk": "Norway Cup",
+    "proposed_theme": "global-issues",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-188",
+    "norsk": "nyte tilværelsen",
+    "proposed_theme": "emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-189",
+    "norsk": "nå og da",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-190",
+    "norsk": "nåde dere",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-191",
+    "norsk": "når det kommer til stykket",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-192",
+    "norsk": "offentlig forvaltning",
+    "proposed_theme": "business",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-193",
+    "norsk": "offentlig instans/en",
+    "proposed_theme": "politics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-194",
+    "norsk": "offentlig sektor/en",
+    "proposed_theme": "economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-195",
+    "norsk": "om lag",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-196",
+    "norsk": "omtale som",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-197",
+    "norsk": "opp mot",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-200",
+    "norsk": "personlig forbruk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-201",
+    "norsk": "praktisk talt",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-202",
+    "norsk": "prisen å betale",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-203",
+    "norsk": "på bekostning av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-204",
+    "norsk": "på godt og vondt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-205",
+    "norsk": "på kort varsel",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-206",
+    "norsk": "på kryss og tvers",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-207",
+    "norsk": "på lang sikt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-208",
+    "norsk": "på livstid",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-209",
+    "norsk": "på repeat",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-210",
+    "norsk": "på sitt beste",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-211",
+    "norsk": "på slep",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-212",
+    "norsk": "på tvers av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-213",
+    "norsk": "på tvers av landegrenser",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-214",
+    "norsk": "på vegne av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-215",
+    "norsk": "påse ut",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-217",
+    "norsk": "reise tiltale mot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-218",
+    "norsk": "rette søkelyset mot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-219",
+    "norsk": "romslig økonomi",
+    "proposed_theme": "economics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-220",
+    "norsk": "ruste for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-221",
+    "norsk": "se langt etter",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-222",
+    "norsk": "sette i sentrum",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-223",
+    "norsk": "sette ord på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-225",
+    "norsk": "sette under press",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-226",
+    "norsk": "sette ut på anbud",
+    "proposed_theme": "business",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-229",
+    "norsk": "Sist, men ikke minst",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-230",
+    "norsk": "sitte på gjerdet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-231",
+    "norsk": "skape motvekt til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-236",
+    "norsk": "skyte fart",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-239",
+    "norsk": "smile fra øre til øre",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-240",
+    "norsk": "snakke ned nesen på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-241",
+    "norsk": "som følge av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-242",
+    "norsk": "som regel",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-243",
+    "norsk": "som skapt for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-244",
+    "norsk": "sosial dumping",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-245",
+    "norsk": "spille på følelser",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-246",
+    "norsk": "stadig vekk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-247",
+    "norsk": "stikke dypt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-249",
+    "norsk": "stille høye krav",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-250",
+    "norsk": "stille til ansvar",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-251",
+    "norsk": "stille til rådighet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-252",
+    "norsk": "stolt av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-253",
+    "norsk": "stort sett",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-254",
+    "norsk": "stue seg sammen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-255",
+    "norsk": "stå ansvarlig for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-256",
+    "norsk": "stå for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-257",
+    "norsk": "så det monner",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-258",
+    "norsk": "søren meg",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-260",
+    "norsk": "ta beslutninger",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-261",
+    "norsk": "ta for gitt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-262",
+    "norsk": "ta fyr",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-263",
+    "norsk": "ta noen grep",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-265",
+    "norsk": "ta poenget",
+    "proposed_theme": "argumentation",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-266",
+    "norsk": "ta på alvor",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-267",
+    "norsk": "ta sin tid",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-268",
+    "norsk": "ta stilling til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-269",
+    "norsk": "ta til takke med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-270",
+    "norsk": "ta til tårene",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-271",
+    "norsk": "takket være",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-272",
+    "norsk": "til alle tider",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-273",
+    "norsk": "til enhver tid",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-274",
+    "norsk": "til overs",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-275",
+    "norsk": "til sammenligning",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-276",
+    "norsk": "til tider",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-277",
+    "norsk": "tilbringe tid med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-279",
+    "norsk": "tilby tilbød, tilbudt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-280",
+    "norsk": "tilgang til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-281",
+    "norsk": "tilnærmet alle",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-282",
+    "norsk": "tingenes tilstand",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-283",
+    "norsk": "toppe laget",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-284",
+    "norsk": "Toppen av lykke",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-285",
+    "norsk": "totalitær stat/en",
+    "proposed_theme": "business",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-286",
+    "norsk": "tre i kraft",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-287",
+    "norsk": "treffe rett i hjertet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-288",
+    "norsk": "treffe spikeren på hodet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-290",
+    "norsk": "tross alt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-291",
+    "norsk": "uavhengig av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-293",
+    "norsk": "ved hjelp av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-295",
+    "norsk": "vekke oppmerksomhet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-296",
+    "norsk": "vekke oppsikt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-297",
+    "norsk": "vekt på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-300",
+    "norsk": "vurdering for læring",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-301",
+    "norsk": "væpnede styrker",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-302",
+    "norsk": "være bevisst på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-303",
+    "norsk": "være forbeholdt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-304",
+    "norsk": "være forgjeves",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-305",
+    "norsk": "være i fare for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-306",
+    "norsk": "være innstilt på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-307",
+    "norsk": "være klar over",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-308",
+    "norsk": "være nedfelt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-309",
+    "norsk": "være nødt til",
+    "proposed_theme": "politics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-310",
+    "norsk": "være oppkalt etter",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-311",
+    "norsk": "være opplyst om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-312",
+    "norsk": "være preget av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-313",
+    "norsk": "være på hils med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-314",
+    "norsk": "være rettet mot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-315",
+    "norsk": "være rustet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-316",
+    "norsk": "være skrudd sammen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-317",
+    "norsk": "være takknemlig for",
+    "proposed_theme": "emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-318",
+    "norsk": "være tilfelle",
+    "proposed_theme": "politics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-319",
+    "norsk": "være tilfreds med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-320",
+    "norsk": "være utsatt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-322",
+    "norsk": "«ha bagasje»",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-323",
+    "norsk": "«i fredstid»",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-324",
+    "norsk": "«Misforstå meg rett»",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-325",
+    "norsk": "«tegner et dystert framtidsbilde»",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-326",
+    "norsk": "å aldri tvile",
+    "proposed_theme": "law",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-327",
+    "norsk": "å avgjøre om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-328",
+    "norsk": "å basere noe på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-331",
+    "norsk": "å betale prisen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-333",
+    "norsk": "å bidra til fellesskapet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-334",
+    "norsk": "å bidra til samfunnet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-335",
+    "norsk": "å bli dømt til",
+    "proposed_theme": "law",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-336",
+    "norsk": "å bli en del av noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-337",
+    "norsk": "å bli hyllet for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-338",
+    "norsk": "å bli isolert",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-339",
+    "norsk": "å bli lurt trill rundt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-340",
+    "norsk": "å bli løslatt på prøve",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-341",
+    "norsk": "å bli motivert av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-342",
+    "norsk": "å bli oppfordret til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-343",
+    "norsk": "å bli rammet av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-344",
+    "norsk": "å bli skuffet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-345",
+    "norsk": "å bli styrt av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-346",
+    "norsk": "å bli tatt på senga",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-347",
+    "norsk": "å bli utsatt for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-348",
+    "norsk": "å bli utvist",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-349",
+    "norsk": "å bære galt av sted",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-354",
+    "norsk": "å framstille noe/noen som",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-355",
+    "norsk": "å få fotfeste",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-356",
+    "norsk": "å få inntrykk av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-357",
+    "norsk": "å få lønna til å strekke til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-358",
+    "norsk": "å få mulighet til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-359",
+    "norsk": "å få opp øynene",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-360",
+    "norsk": "å få samfunnet til å gå rundt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-361",
+    "norsk": "å få selvtillit",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-362",
+    "norsk": "å få skikk på livet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-364",
+    "norsk": "å få tunnelsyn",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-365",
+    "norsk": "å føle seg trygg med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-366",
+    "norsk": "å følge med i nyhetsbildet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-368",
+    "norsk": "å følge noens eksempel",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-371",
+    "norsk": "å gi avkall på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-373",
+    "norsk": "å gi tilgang til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-374",
+    "norsk": "å gi utslag i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-375",
+    "norsk": "å gjøre en forskjell",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-376",
+    "norsk": "å gjøre en innsats",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-377",
+    "norsk": "å gjøre noe meningsfylt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-378",
+    "norsk": "å gjøre seg fortjent til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-379",
+    "norsk": "å gjøre til sitt eget",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-382",
+    "norsk": "å gå altfor langt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-383",
+    "norsk": "å gå foran",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-384",
+    "norsk": "å gå mot strømmen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-385",
+    "norsk": "å gå over til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-386",
+    "norsk": "å gå på rundgang",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-387",
+    "norsk": "å gå rett i lomma på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-389",
+    "norsk": "å ha bruk for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-390",
+    "norsk": "å ha det siste ordet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-391",
+    "norsk": "å ha en følelse av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-392",
+    "norsk": "å ha godt av noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-393",
+    "norsk": "å ha høy grad av noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-394",
+    "norsk": "å ha i bakhodet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-395",
+    "norsk": "å ha kapasitet til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-396",
+    "norsk": "å ha kjennskap til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-397",
+    "norsk": "å ha krav på noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-398",
+    "norsk": "å ha mye på hjertet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-399",
+    "norsk": "å ha mye til felles",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-400",
+    "norsk": "å ha oversikt over",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-401",
+    "norsk": "å ha overskudd til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-402",
+    "norsk": "å ha potensial til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-403",
+    "norsk": "å ha rulleblad",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-404",
+    "norsk": "å ha stor betydning for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-405",
+    "norsk": "å ha tilgang til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-406",
+    "norsk": "å ha tiltro til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-407",
+    "norsk": "å ha utbytte av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-408",
+    "norsk": "å havne på førsteplass",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-411",
+    "norsk": "å henge sammen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-413",
+    "norsk": "å holde kjeft",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-414",
+    "norsk": "å holde samfunnet i gang",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-415",
+    "norsk": "å hvile på laurbærene",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-417",
+    "norsk": "å innføre tiltak",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-419",
+    "norsk": "å jobbe seg opp fra gulvet",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-421",
+    "norsk": "å kaste penger ut av vinduet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-423",
+    "norsk": "å komme fram til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-424",
+    "norsk": "å komme i skade for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-425",
+    "norsk": "å komme noen til gode",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-426",
+    "norsk": "å komme til bunns i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-427",
+    "norsk": "å komme til orde",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-428",
+    "norsk": "å komme til uttrykk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-431",
+    "norsk": "å markere avstand til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-432",
+    "norsk": "å nyte tilværelsen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-433",
+    "norsk": "å overbevise om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-434",
+    "norsk": "å overlate noe til noen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-435",
+    "norsk": "å prestere maksimalt",
+    "proposed_theme": "religion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-436",
+    "norsk": "å prøve ut",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-439",
+    "norsk": "å reise tiltale mot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-440",
+    "norsk": "å relatere til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-441",
+    "norsk": "å resultere i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-442",
+    "norsk": "å rette seg i ryggen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-443",
+    "norsk": "å rette søkelyset mot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-444",
+    "norsk": "å ruste noen for noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-446",
+    "norsk": "å se langt etter",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-447",
+    "norsk": "å sende et signal om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-448",
+    "norsk": "å sende signaler",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-449",
+    "norsk": "å sette en stopper for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-450",
+    "norsk": "å sette livet på vent",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-451",
+    "norsk": "å sette noe i fare",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-452",
+    "norsk": "å sette noe ut på anbud",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-453",
+    "norsk": "å sette ord på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-454",
+    "norsk": "å sette pris på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-455",
+    "norsk": "å sette seg godt til rette",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-457",
+    "norsk": "å sitte inne",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-458",
+    "norsk": "å sitte løst",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-459",
+    "norsk": "å skape en motvekt til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-460",
+    "norsk": "å skape engasjement rundt noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-463",
+    "norsk": "å skyte fart",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-464",
+    "norsk": "å skåre høyt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-465",
+    "norsk": "å slippe unna",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-466",
+    "norsk": "å smile fra øre til øre",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-467",
+    "norsk": "å snakke ned noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-468",
+    "norsk": "å snakke ned noe eller noen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-469",
+    "norsk": "å spille på frykt",
+    "proposed_theme": "emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-470",
+    "norsk": "å spille på følelser",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-471",
+    "norsk": "å starte på null",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-472",
+    "norsk": "å stenge ned",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-473",
+    "norsk": "å stikke dypt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-475",
+    "norsk": "å stille høye krav",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-476",
+    "norsk": "å stille til ansvar",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-477",
+    "norsk": "å stille til disposisjon",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-478",
+    "norsk": "å stille til rådighet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-479",
+    "norsk": "å stå for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-480",
+    "norsk": "å stå i arbeid",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-481",
+    "norsk": "å stå i fare for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-482",
+    "norsk": "å støtte opp om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-483",
+    "norsk": "å ta for gitt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-484",
+    "norsk": "å ta grep",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-485",
+    "norsk": "å ta i bruk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-486",
+    "norsk": "å ta mot til seg",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-487",
+    "norsk": "å ta noe for gitt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-488",
+    "norsk": "å ta noe på alvor",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-489",
+    "norsk": "å ta seg sammen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-490",
+    "norsk": "å ta seg selv i å si noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-491",
+    "norsk": "å ta sin tid",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-492",
+    "norsk": "å ta stilling til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-493",
+    "norsk": "å ta til takke med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-494",
+    "norsk": "å takke ja til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-495",
+    "norsk": "å tie noe i hjel",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-496",
+    "norsk": "å tilbringe tid med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-498",
+    "norsk": "å treffe rett i hjertet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-499",
+    "norsk": "å treffe spikeren på hodet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-500",
+    "norsk": "å trekke fra",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-502",
+    "norsk": "å utgjøre en forskjell",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-503",
+    "norsk": "å uttale seg offentlig",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-504",
+    "norsk": "å vekke oppmerksomhet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-505",
+    "norsk": "å vekke oppsikt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-507",
+    "norsk": "å være avhengig av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-508",
+    "norsk": "å være bevisst på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-509",
+    "norsk": "å være dårlig informert",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-510",
+    "norsk": "å være en stemme for de svakeste",
+    "proposed_theme": "politics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-511",
+    "norsk": "å være en støttespiller",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-512",
+    "norsk": "å være et skolelys",
+    "proposed_theme": "education",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-513",
+    "norsk": "å være etterspurt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-514",
+    "norsk": "å være forberedt på å gjøre noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-515",
+    "norsk": "å være forpliktet til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-516",
+    "norsk": "å være fortvilet over",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-517",
+    "norsk": "å være i ferd med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-518",
+    "norsk": "å være i stand til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-519",
+    "norsk": "å være innstilt på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-520",
+    "norsk": "å være involvert i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-521",
+    "norsk": "å være klar over",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-522",
+    "norsk": "å være motstander av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-523",
+    "norsk": "å være nødt til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-524",
+    "norsk": "å være oppdatert",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-525",
+    "norsk": "å være oppkalt etter",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-526",
+    "norsk": "å være opplyst om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-527",
+    "norsk": "å være opptatt av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-528",
+    "norsk": "å være preget av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-529",
+    "norsk": "å være på hils med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-530",
+    "norsk": "å være pålagt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-531",
+    "norsk": "å være rettet mot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-532",
+    "norsk": "å være skrudd sammen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-533",
+    "norsk": "å være takknemlig for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-534",
+    "norsk": "det er ikke alltid gull det som glimrer",
+    "proposed_theme": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-535",
+    "norsk": "å bite i det sure eplet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-536",
+    "norsk": "å brenne alle broer",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-537",
+    "norsk": "å gå rundt grøten",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-538",
+    "norsk": "å gå som katten rundt den varme grøten",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-539",
+    "norsk": "å ha bein i nesa",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-540",
+    "norsk": "å ha hendene fulle",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-541",
+    "norsk": "å ha is i magen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-542",
+    "norsk": "å ha noe på hjertet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-543",
+    "norsk": "å holde masken",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-544",
+    "norsk": "å kjøre seg fast",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-545",
+    "norsk": "å komme til kort",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-546",
+    "norsk": "å legge kortene på bordet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-547",
+    "norsk": "å male fanden på veggen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-548",
+    "norsk": "å se seg selv i speilet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-549",
+    "norsk": "å sette foten ned",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-550",
+    "norsk": "å slå to fluer i en smekk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-551",
+    "norsk": "å snakke rett fra leveren",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-552",
+    "norsk": "å snu kappen etter vinden",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-553",
+    "norsk": "å sove på det",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-554",
+    "norsk": "å stikke fingeren i jorda",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-555",
+    "norsk": "å stå på egne ben",
+    "proposed_theme": "economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-556",
+    "norsk": "å ta saken i egne hender",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-557",
+    "norsk": "å ta seg vann over hodet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-558",
+    "norsk": "å ta tyren ved hornene",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-559",
+    "norsk": "være i faresonen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-560",
+    "norsk": "å være innen rekkevidde",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-562",
+    "norsk": "ha rett i noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-563",
+    "norsk": "være fastsatt av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-564",
+    "norsk": "være i stand til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-566",
+    "norsk": "få tilbud om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-567",
+    "norsk": "en del",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-569",
+    "norsk": "føle seg utenfor",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-570",
+    "norsk": "ta del i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-572",
+    "norsk": "være i ferd med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-573",
+    "norsk": "bli kvitt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-574",
+    "norsk": "såre noen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-575",
+    "norsk": "bli klar over",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-576",
+    "norsk": "bestå eksamen",
+    "proposed_theme": "education",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-577",
+    "norsk": "ta tid",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-579",
+    "norsk": "gå rett på sak",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-580",
+    "norsk": "være likestilt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-581",
+    "norsk": "være avhengig av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-582",
+    "norsk": "være dannet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-583",
+    "norsk": "være på flukt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-584",
+    "norsk": "være på flyttefot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-585",
+    "norsk": "utvide horisonten",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-586",
+    "norsk": "ta til takke",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-587",
+    "norsk": "være tvunget",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-588",
+    "norsk": "være oppvokst",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-589",
+    "norsk": "utsette noen for noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-590",
+    "norsk": "stå i fare for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-591",
+    "norsk": "være i tvil om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-592",
+    "norsk": "være stolt over",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-595",
+    "norsk": "om igjen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-597",
+    "norsk": "har rett til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-598",
+    "norsk": "få det til",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-599",
+    "norsk": "på reisefot",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-600",
+    "norsk": "finne seg til rette",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-601",
+    "norsk": "inngå en kontrakt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-602",
+    "norsk": "tilbringe tida",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-603",
+    "norsk": "enn som så",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-604",
+    "norsk": "bestå i",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-605",
+    "norsk": "jobbe på seg sykdom",
+    "proposed_theme": "medicine",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-606",
+    "norsk": "klump i magen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-608",
+    "norsk": "stille kritiske spørsmål",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-609",
+    "norsk": "ifølge loven",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-610",
+    "norsk": "slå av en prat",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-611",
+    "norsk": "være hjemmeværende",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-613",
+    "norsk": "et stykke (utenfor)",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-614",
+    "norsk": "i meste laget",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-615",
+    "norsk": "det gjelder",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-617",
+    "norsk": "gi seg god tid",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-618",
+    "norsk": "til stede",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-619",
+    "norsk": "Så vidt jeg kunne se",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-620",
+    "norsk": "finne et levebrød",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-621",
+    "norsk": "Jeg kan ikke tenke meg å ...",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-622",
+    "norsk": "bli lei av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-623",
+    "norsk": "liv og røre",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-624",
+    "norsk": "finne seg godt til rette",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-625",
+    "norsk": "omgitt av hav",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-626",
+    "norsk": "ha god plass",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-627",
+    "norsk": "inngå avtaler",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-628",
+    "norsk": "har med havet å gjøre",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-629",
+    "norsk": "dels – dels",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-633",
+    "norsk": "ha noe man skulle ha sagt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-634",
+    "norsk": "rett som det er",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-635",
+    "norsk": "benytte anledningen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-636",
+    "norsk": "stå for noe",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-637",
+    "norsk": "hvert fjerde år",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-638",
+    "norsk": "stille til valg",
+    "proposed_theme": "politics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-639",
+    "norsk": "føre politikk",
+    "proposed_theme": "politics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-640",
+    "norsk": "for tida",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-641",
+    "norsk": "relativt høy grad",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-643",
+    "norsk": "være misfornøyd med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-645",
+    "norsk": "en viss standard",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-646",
+    "norsk": "godt stoff",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-648",
+    "norsk": "ta ordet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-649",
+    "norsk": "falle for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-650",
+    "norsk": "gjøre inntrykk på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-651",
+    "norsk": "sårbar livsfase",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-652",
+    "norsk": "hele tida",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-653",
+    "norsk": "Det er din tur",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-654",
+    "norsk": "legge seg opp penger",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-655",
+    "norsk": "klare seg selv",
+    "proposed_theme": "economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-656",
+    "norsk": "få endene til å møtes",
+    "proposed_theme": "economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-657",
+    "norsk": "ta skjeen i en annen hånd",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-658",
+    "norsk": "å ha lite/mye å rutte med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-660",
+    "norsk": "sett i forhold til",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-661",
+    "norsk": "på linje med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-663",
+    "norsk": "gå utover",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-664",
+    "norsk": "gå ned i vekt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-665",
+    "norsk": "Nei, vet du hva!",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-666",
+    "norsk": "for min del",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-667",
+    "norsk": "ha det godt med seg selv",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-668",
+    "norsk": "løfte vekter",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-670",
+    "norsk": "holde (holdt)",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-672",
+    "norsk": "legge forholdene til rette",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-674",
+    "norsk": "en dans på roser",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-675",
+    "norsk": "være ensom",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-677",
+    "norsk": "være mislykket",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-678",
+    "norsk": "skikkelig elendig",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-679",
+    "norsk": "fravær av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-680",
+    "norsk": "slippe å få",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-682",
+    "norsk": "velge og vrake",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-683",
+    "norsk": "være innom",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-684",
+    "norsk": "når som helst",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-685",
+    "norsk": "lett tilgjengelig",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-686",
+    "norsk": "i gamle dager",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-687",
+    "norsk": "en vennlig sjel",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-688",
+    "norsk": "Men den gang ei!",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-689",
+    "norsk": "ha god tid",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-690",
+    "norsk": "henge seg opp i ting",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-691",
+    "norsk": "frelse noen",
+    "proposed_theme": "religion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-693",
+    "norsk": "holde orden",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-695",
+    "norsk": "litt etter litt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-696",
+    "norsk": "fikk henne til å fortelle",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-697",
+    "norsk": "bli lurt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-698",
+    "norsk": "la seg lure",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-699",
+    "norsk": "i det hele tatt",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-700",
+    "norsk": "i orden",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-701",
+    "norsk": "Hva er i veien?",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-702",
+    "norsk": "gå i vasken",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-704",
+    "norsk": "hell i uhell",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-705",
+    "norsk": "ha rent mel i posen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-706",
+    "norsk": "være på vakt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-707",
+    "norsk": "ta noe med en klype salt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-708",
+    "norsk": "ta noe for god fisk",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-710",
+    "norsk": "slå ring rundt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-711",
+    "norsk": "stemme overens med",
+    "proposed_theme": "politics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-712",
+    "norsk": "det er synd at",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-715",
+    "norsk": "kommer til orde",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-716",
+    "norsk": "spre gørr",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-717",
+    "norsk": "synes å være",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-718",
+    "norsk": "anstendige mennesker",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-719",
+    "norsk": "pante flasker",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-720",
+    "norsk": "være ute",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-721",
+    "norsk": "ha god samvittighet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-722",
+    "norsk": "ikke noe som helst",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-723",
+    "norsk": "være ærlig",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-724",
+    "norsk": "ta feil",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-725",
+    "norsk": "uvurderlig verdi",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-726",
+    "norsk": "yrende liv",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-727",
+    "norsk": "som vi har igjen",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-728",
+    "norsk": "vekke begeistring",
+    "proposed_theme": "emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-729",
+    "norsk": "komme til skade",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-730",
+    "norsk": "ikke la vente på seg",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-731",
+    "norsk": "få leve",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-732",
+    "norsk": "til tross for våre advarsler",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-733",
+    "norsk": "legge til rette",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-734",
+    "norsk": "Det er flaut",
+    "proposed_theme": "emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-735",
+    "norsk": "til tross for at",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-736",
+    "norsk": "bøte med livet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-737",
+    "norsk": "ta for seg",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-738",
+    "norsk": "legge om",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-739",
+    "norsk": "være godt i gang",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-740",
+    "norsk": "til og med",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-741",
+    "norsk": "Det kan være",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-742",
+    "norsk": "langt fra",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-743",
+    "norsk": "dra det for langt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-745",
+    "norsk": "komplett ignorert",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-746",
+    "norsk": "mangelfull dekning",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-747",
+    "norsk": "langt på vei",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-748",
+    "norsk": "være truet",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-750",
+    "norsk": "nyte godt av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-751",
+    "norsk": "veie mot hverandre",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-753",
+    "norsk": "legge hindringer i veien",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-754",
+    "norsk": "lovløse tilstander",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-755",
+    "norsk": "være med på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-756",
+    "norsk": "ta opp til behandling",
+    "proposed_theme": "medicine",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-757",
+    "norsk": "før jeg vet ordet av det",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-758",
+    "norsk": "Det holder",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-759",
+    "norsk": "snu opp ned",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-760",
+    "norsk": "legge på is",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-762",
+    "norsk": "steil og naken tross",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-763",
+    "norsk": "flyte fritt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-764",
+    "norsk": "fatte vedtak",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-765",
+    "norsk": "stå bak",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-766",
+    "norsk": "til gjengjeld",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-767",
+    "norsk": "det er opp til x",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-769",
+    "norsk": "til en viss grad",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-770",
+    "norsk": "halvannet år",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-771",
+    "norsk": "et bredt spekter",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-772",
+    "norsk": "å tolke fortiden",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-773",
+    "norsk": "å forske på",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-774",
+    "norsk": "det øvrige samfunnet",
+    "proposed_theme": "social-issues",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-775",
+    "norsk": "ta til orde for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-776",
+    "norsk": "alt i alt",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-777",
+    "norsk": "det vil si",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-778",
+    "norsk": "forutsatt at",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-779",
+    "norsk": "i det store og det hele",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-780",
+    "norsk": "i motsetning til",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-781",
+    "norsk": "i praksis",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-782",
+    "norsk": "med hensyn til",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-783",
+    "norsk": "på grunn av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-784",
+    "norsk": "sett i lys av",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-785",
+    "norsk": "som et resultat av",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-786",
+    "norsk": "til syvende og sist",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-787",
+    "norsk": "til tross for",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-788",
+    "norsk": "gjøre opp for seg",
+    "proposed_theme": "work-career",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-789",
+    "norsk": "redegjøre for",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-790",
+    "norsk": "kommunisere effektivt",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b2-791",
+    "norsk": "hva angår",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-792",
+    "norsk": "ikke desto mindre",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-793",
+    "norsk": "kort sagt",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-794",
+    "norsk": "slik sett",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-795",
+    "norsk": "så å si",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-796",
+    "norsk": "tatt i betraktning",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-797",
+    "norsk": "bevare naturen",
+    "proposed_theme": "environment",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b2-798",
+    "norsk": "redusere utslipp",
+    "proposed_theme": "environment",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b2-799",
+    "norsk": "støtte hverandre",
+    "proposed_theme": "idioms",
+    "confidence": "low"
+  }
+]

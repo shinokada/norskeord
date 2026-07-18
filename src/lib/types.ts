@@ -49,6 +49,7 @@ export interface VocabEntry {
   level: CEFRLevel;
   category: Category;
   part: PartOfSpeech;
+  theme?: string; // uttrykk-only sub-grouping (see ai-docs/implementation/uttrykk-category.md)
 }
 
 type TitleType = {
