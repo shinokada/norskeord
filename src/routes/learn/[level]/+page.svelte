@@ -3,6 +3,7 @@
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import { localeStore } from '$lib/localeStore.svelte';
+  import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages';
   import type { Snapshot } from './$types';
 
@@ -82,19 +83,39 @@
     data.categories.find((c: { slug: string; locked: boolean }) => c.slug === 'uttrykk')
   );
 
+  // Phase 3b: split into major themes (own pill) + a single Others bucket
+  // for anything under UTTRYKK_OTHERS_THRESHOLD, so a long tail of tiny
+  // themes (several A1 themes sit at count 1–2) doesn't balloon the pill row.
+  const uttrykkThemeGroups = $derived(partitionUttrykkThemes(data.uttrykkThemes));
+
   const showNorskproven = $derived(data.level === 'a2' || data.level === 'b1');
 
   const GRAMMAR_INITIAL = 4;
   const BLOG_INITIAL = 2;
+  // Phase 8 (ai-docs/implementation/uttrykk-category.md): same collapse
+  // pattern as Grammar/blog, applied to Vocabulary's category pills and
+  // Uttrykk's theme/category pills — both sections can run to 15-40 pills
+  // at B1/B2/C.
+  const VOCAB_INITIAL = 12;
+  const UTTRYKK_INITIAL = 8;
   let grammarExpanded = $state(false);
   let blogExpanded = $state(false);
+  let vocabExpanded = $state(false);
+  let uttrykkExpanded = $state(false);
 
   // Persist expanded state across back/forward navigation.
-  export const snapshot: Snapshot<{ grammarExpanded: boolean; blogExpanded: boolean }> = {
-    capture: () => ({ grammarExpanded, blogExpanded }),
+  export const snapshot: Snapshot<{
+    grammarExpanded: boolean;
+    blogExpanded: boolean;
+    vocabExpanded: boolean;
+    uttrykkExpanded: boolean;
+  }> = {
+    capture: () => ({ grammarExpanded, blogExpanded, vocabExpanded, uttrykkExpanded }),
     restore: (value) => {
       grammarExpanded = value.grammarExpanded;
       blogExpanded = value.blogExpanded;
+      vocabExpanded = value.vocabExpanded;
+      uttrykkExpanded = value.uttrykkExpanded;
     }
   };
 
@@ -102,6 +123,32 @@
     grammarExpanded ? data.grammarTopics : data.grammarTopics.slice(0, GRAMMAR_INITIAL)
   );
   const hiddenGrammarCount = $derived(data.grammarTopics.length - GRAMMAR_INITIAL);
+
+  // Vocabulary section show-more. Sliced from the raw (unfiltered-by-lock)
+  // list, matching how hiddenGrammarCount is computed above — a few of the
+  // first VOCAB_INITIAL may render nothing if locked for a free user, same
+  // pre-existing tradeoff as Grammar's count.
+  const visibleVocabCategories = $derived(
+    vocabExpanded ? visibleCategories : visibleCategories.slice(0, VOCAB_INITIAL)
+  );
+  const hiddenVocabCount = $derived(Math.max(visibleCategories.length - VOCAB_INITIAL, 0));
+
+  // Uttrykk section show-more, A1–B2 branch (major theme pills; the Others
+  // pill and any locked-preview card are unaffected by this slice).
+  const visibleUttrykkMajorThemes = $derived(
+    uttrykkExpanded ? uttrykkThemeGroups.major : uttrykkThemeGroups.major.slice(0, UTTRYKK_INITIAL)
+  );
+  const hiddenUttrykkMajorCount = $derived(
+    Math.max(uttrykkThemeGroups.major.length - UTTRYKK_INITIAL, 0)
+  );
+
+  // Uttrykk section show-more, C branch (category-count pills — see Phase 8
+  // below). Reuses uttrykkExpanded since only one of the two branches ever
+  // renders on a given level's page.
+  const visibleUttrykkCThemes = $derived(
+    uttrykkExpanded ? data.uttrykkThemes : data.uttrykkThemes.slice(0, UTTRYKK_INITIAL)
+  );
+  const hiddenUttrykkCCount = $derived(Math.max(data.uttrykkThemes.length - UTTRYKK_INITIAL, 0));
 
   const visibleBlogPosts = $derived(
     blogExpanded ? data.blogPosts : data.blogPosts.slice(0, BLOG_INITIAL)
@@ -176,7 +223,7 @@
   <section class="mb-12">
     <h2 class="mb-4">📖 Vocabulary</h2>
     <div class="flex flex-wrap gap-2">
-      {#each visibleCategories as cat (cat.slug)}
+      {#each visibleVocabCategories as cat (cat.slug)}
         {@const locked = !isPlus && cat.locked}
         {#if !locked}
           <a
@@ -203,34 +250,135 @@
         {/if}
       {/if}
     </div>
+    {#if hiddenVocabCount > 0 || vocabExpanded}
+      <button
+        onclick={() => (vocabExpanded = !vocabExpanded)}
+        class="mt-4 text-sm font-medium {colors.accent} hover:underline"
+      >
+        {vocabExpanded
+          ? m.level_hub_show_less()
+          : m.level_hub_show_more({ count: hiddenVocabCount })}
+      </button>
+    {/if}
   </section>
 
   <!-- ── Section 2b — Uttrykk (fixed expressions) ──────────────────────────── -->
-  {#if uttrykkCategory}
-    {@const locked = !isPlus && uttrykkCategory.locked}
+  <!-- Phase 8 (ai-docs/implementation/uttrykk-category.md): C has no
+       category === 'uttrykk' entry in CATEGORIES_BY_LEVEL (Phase 4 merges
+       uttrykk-c.json into the regular c/{category} vocab pages instead), so
+       uttrykkCategory is always undefined for C. The second branch below
+       covers C specifically: pills with per-category counts of the
+       phrase-sourced entries, each linking to the same /c/{category} page
+       its Vocabulary pill already links to — the "two entry points, one
+       page" option chosen over a single unclickable summary card or
+       skipping the section entirely. -->
+  {#if uttrykkCategory || (data.levelUpper === 'C' && data.uttrykkThemes.length > 0)}
+    {@const locked = uttrykkCategory ? !isPlus && uttrykkCategory.locked : false}
     <section class="mb-12">
       <h2 class="mb-4">💬 Uttrykk</h2>
-      <a
-        href={locked ? `/${data.level}/uttrykk-preview` : `/${data.level}/uttrykk`}
-        class="flex items-center justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
-      >
-        <div class="text-left">
-          <p class="font-semibold text-gray-800 dark:text-gray-100">
-            {data.levelStats?.uttrykk ?? 0} fixed expressions
-          </p>
-          <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
-            Idioms and set phrases used in everyday Norwegian{#if locked}
-              · Preview free, full deck is Plus{/if}
-          </p>
-        </div>
-        {#if locked}
+      {#if locked}
+        <a
+          href="/{data.level}/uttrykk-preview"
+          class="flex items-center justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
+        >
+          <div class="text-left">
+            <p class="font-semibold text-gray-800 dark:text-gray-100">
+              {data.levelStats?.uttrykk ?? 0} fixed expressions
+            </p>
+            <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
+              Idioms and set phrases used in everyday Norwegian · Preview free, full deck is Plus
+            </p>
+          </div>
           <span
             class="shrink-0 rounded-full bg-indigo-100 px-2 py-0.5 text-[10px] font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
           >
             🔒 Plus
           </span>
+        </a>
+      {:else if uttrykkCategory}
+        <!-- Phase 3b: the count itself is the "study everything" entry point
+             (important for Plus users' daily due-card reviews, which pull
+             from the whole deck, not one theme) — so there's no separate
+             "All" pill below; the pills are purely a "browse by theme"
+             shortcut, with anything under UTTRYKK_OTHERS_THRESHOLD folded
+             into a single Others pill. -->
+        <a
+          href="/{data.level}/uttrykk"
+          class="block rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
+        >
+          <p class="font-semibold text-gray-800 dark:text-gray-100">
+            {data.levelStats?.uttrykk ?? 0} fixed expressions
+          </p>
+          <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
+            Idioms and set phrases used in everyday Norwegian
+          </p>
+        </a>
+        {#if uttrykkThemeGroups.major.length > 0}
+          <div class="mt-3 flex flex-wrap gap-2">
+            {#each visibleUttrykkMajorThemes as t (t.theme)}
+              <a
+                href="/{data.level}/uttrykk?theme={t.theme}"
+                class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
+                  border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+              >
+                {categoryLabel(data.level, t.theme)} ({t.count})
+              </a>
+            {/each}
+            {#if uttrykkThemeGroups.minor.length > 0}
+              <a
+                href="/{data.level}/uttrykk?theme={UTTRYKK_OTHERS_THEME}"
+                class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
+                  border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+              >
+                Others ({uttrykkThemeGroups.othersCount})
+              </a>
+            {/if}
+          </div>
+          {#if hiddenUttrykkMajorCount > 0 || uttrykkExpanded}
+            <button
+              onclick={() => (uttrykkExpanded = !uttrykkExpanded)}
+              class="mt-4 text-sm font-medium {colors.accent} hover:underline"
+            >
+              {uttrykkExpanded
+                ? m.level_hub_show_less()
+                : m.level_hub_show_more({ count: hiddenUttrykkMajorCount })}
+            </button>
+          {/if}
         {/if}
-      </a>
+      {:else}
+        <!-- C branch: no separate deck, no lock state of its own — each
+             pill's lock state comes from the matching Vocabulary category. -->
+        <p class="mb-3 text-sm text-gray-600 dark:text-gray-300">
+          {data.levelStats?.uttrykk ?? 0} fixed expressions, folded into the Vocabulary categories above
+        </p>
+        <div class="flex flex-wrap gap-2">
+          {#each visibleUttrykkCThemes as t (t.theme)}
+            {@const cat = data.categories.find(
+              (c: { slug: string; locked: boolean }) => c.slug === t.theme
+            )}
+            {@const catLocked = cat ? !isPlus && cat.locked : false}
+            {#if !catLocked}
+              <a
+                href="/{data.level}/{t.theme}"
+                class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
+                  border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+              >
+                {categoryLabel(data.level, t.theme)} ({t.count})
+              </a>
+            {/if}
+          {/each}
+        </div>
+        {#if hiddenUttrykkCCount > 0 || uttrykkExpanded}
+          <button
+            onclick={() => (uttrykkExpanded = !uttrykkExpanded)}
+            class="mt-4 text-sm font-medium {colors.accent} hover:underline"
+          >
+            {uttrykkExpanded
+              ? m.level_hub_show_less()
+              : m.level_hub_show_more({ count: hiddenUttrykkCCount })}
+          </button>
+        {/if}
+      {/if}
     </section>
   {/if}
 

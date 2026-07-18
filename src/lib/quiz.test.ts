@@ -142,17 +142,20 @@ describe('getDistractors', () => {
   });
 
   it('falls back to other levels when same-level pool is too small', () => {
-    // Create a target whose level has only 1 other entry
+    // Create a target whose level has only 1 other entry. Deliberately not a
+    // monolingual level (B2/C) — those gate distractors on `definition`,
+    // which is a separate concern from the same-level-pool fallback this
+    // test is checking.
     const smallPool: VocabEntry[] = [
-      makeEntry({ norsk: 'sjelden', english: 'rarely', level: 'C', category: 'archaic' }),
-      makeEntry({ norsk: 'aldri', english: 'never', level: 'C', category: 'archaic' }),
+      makeEntry({ norsk: 'sjelden', english: 'rarely', level: 'A2', category: 'archaic' }),
+      makeEntry({ norsk: 'aldri', english: 'never', level: 'A2', category: 'archaic' }),
       ...POOL
     ];
-    const c2Target = smallPool[0];
-    // Only 1 other C2 entry — needs to pad from B1/A1 pool
-    const result = getDistractors(c2Target, smallPool, 3);
+    const a2Target = smallPool[0];
+    // Only 1 other A2 entry — needs to pad from B1/A1 pool
+    const result = getDistractors(a2Target, smallPool, 3);
     expect(result).toHaveLength(3);
-    expect(result).not.toContain(c2Target);
+    expect(result).not.toContain(a2Target);
   });
 
   it('returns fewer than n when pool is exhausted', () => {

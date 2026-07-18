@@ -4,54 +4,58 @@
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import type { CEFRLevel, CardProgress } from '$lib/types';
   import { CATEGORIES_BY_LEVEL } from '$lib/config';
+  import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
   import * as m from '$lib/paraglide/messages.js';
 
   // ── Vocab totals per category (build-time imports) ──────────────────────────────────
+  // Uttrykk is intentionally absent here — per the stats-page restructuring
+  // (ai-docs/implementation/uttrykk-category.md), it now has its own
+  // dedicated Uttrykk section on /stats with a theme-level breakdown
+  // (UttrykkThemeChart.svelte). This chart is vocab-only, matching
+  // CATEGORIES_BY_LEVEL minus the uttrykk/uttrykk-preview slugs — and, for C,
+  // minus any studied entry that's actually sourced from uttrykk-c.json (see
+  // the allCards filter below and uttrykk-c-stats.ts).
   import vocabA1 from '$lib/data/vocab-a1.json';
   import vocabA2 from '$lib/data/vocab-a2.json';
   import vocabB1 from '$lib/data/vocab-b1.json';
   import vocabB2 from '$lib/data/vocab-b2.json';
   import vocabC from '$lib/data/vocab-c.json';
-  import uttrykkA1 from '$lib/data/uttrykk-a1.json';
-  import uttrykkA2 from '$lib/data/uttrykk-a2.json';
-  import uttrykkB1 from '$lib/data/uttrykk-b1.json';
-  import uttrykkB2 from '$lib/data/uttrykk-b2.json';
 
   interface Props {
-    allCards: CardProgress[];
+    progressMap: Record<string, CardProgress>;
     levelTextColors: Record<CEFRLevel, string>;
     levelColors: Record<CEFRLevel, string>;
   }
 
-  let { allCards, levelTextColors, levelColors }: Props = $props();
+  let { progressMap, levelTextColors, levelColors }: Props = $props();
+
+  // C-level cards whose progress key matches an uttrykk-c.json entry belong
+  // to the Uttrykk section instead (see uttrykk-c-stats.ts) — excluded here
+  // so a studied C idiom doesn't count toward both sections at once.
+  const allCards = $derived(
+    Object.entries(progressMap)
+      .filter(([key, c]) => !(c.level === 'C' && UTTRYKK_C_KEYS.has(key)))
+      .map(([, c]) => c)
+  );
 
   const vocabByLevel: Record<string, { category: string }[]> = {
     A1: vocabA1 as { category: string }[],
     A2: vocabA2 as { category: string }[],
     B1: vocabB1 as { category: string }[],
     B2: vocabB2 as { category: string }[],
-    C1: vocabC as { category: string }[]
-  };
-
-  // Uttrykk entries live in separate files, not the main vocab JSONs.
-  const uttrykkByLevel: Record<string, { category: string }[]> = {
-    A1: uttrykkA1 as { category: string }[],
-    A2: uttrykkA2 as { category: string }[],
-    B1: uttrykkB1 as { category: string }[],
-    B2: uttrykkB2 as { category: string }[]
+    C: vocabC as { category: string }[]
   };
 
   function totalForCategory(level: string, category: string): number {
-    if (category === 'uttrykk') {
-      return (uttrykkByLevel[level] ?? []).length;
-    }
     return (vocabByLevel[level] ?? []).filter((v) => v.category === category).length;
   }
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
   interface CatBarStat {
-    category: string;
+    key: string; // category slug — unique within a level
+    label: string; // display name, formatted the same way row labels always are
+    href: string; // row link target
     total: number;
     seen: number;
     review: number;
@@ -67,24 +71,47 @@
     totalCards: number;
   }
 
+  function buildStat(
+    key: string,
+    label: string,
+    href: string,
+    total: number,
+    cards: CardProgress[],
+    now: Date
+  ): CatBarStat {
+    return {
+      key,
+      label,
+      href,
+      total,
+      seen: cards.length,
+      review: cards.filter((c) => c.fsrs.state === State.Review).length,
+      learning: cards.filter((c) => c.fsrs.state === State.Learning).length,
+      relearning: cards.filter((c) => c.fsrs.state === State.Relearning).length,
+      due: cards.filter((c) => new Date(c.fsrs.due) <= now).length
+    };
+  }
+
   const levelGroups = $derived<LevelGroup[]>(
     levels.map((level) => {
       const now = new Date();
-      // Plus users use 'uttrykk' (full deck); 'uttrykk-preview' is a free-user alias
-      // that redirects to 'uttrykk' for Plus — hide it to avoid a duplicate empty row.
+      const lvl = level.toLowerCase();
+
+      // 'uttrykk'/'uttrykk-preview' are excluded — they belong to the
+      // separate Uttrykk section's theme breakdown instead (see the
+      // header comment above). C never had either slug to begin with.
       const cats: CatBarStat[] = CATEGORIES_BY_LEVEL[level]
-        .filter((c) => c !== 'uttrykk-preview')
-        .map((category) => {
+        .filter((c) => c !== 'uttrykk' && c !== 'uttrykk-preview')
+        .map((category): CatBarStat => {
           const catCards = allCards.filter((c) => c.level === level && c.category === category);
-          return {
+          return buildStat(
             category,
-            total: totalForCategory(level, category),
-            seen: catCards.length,
-            review: catCards.filter((c) => c.fsrs.state === State.Review).length,
-            learning: catCards.filter((c) => c.fsrs.state === State.Learning).length,
-            relearning: catCards.filter((c) => c.fsrs.state === State.Relearning).length,
-            due: catCards.filter((c) => new Date(c.fsrs.due) <= now).length
-          };
+            category,
+            `/${lvl}/${category}`,
+            totalForCategory(level, category),
+            catCards,
+            now
+          );
         });
 
       return {
@@ -170,22 +197,22 @@
         <div
           class="divide-y divide-gray-100 bg-white dark:divide-gray-700/60 dark:bg-indigo-950/60"
         >
-          {#each lg.cats as cs (cs.category)}
+          {#each lg.cats as cs (cs.key)}
             {@const seenPct = cs.total > 0 ? (cs.seen / cs.total) * 100 : 0}
             {@const reviewW = cs.seen > 0 ? (cs.review / cs.seen) * seenPct : 0}
             {@const learningW = cs.seen > 0 ? (cs.learning / cs.seen) * seenPct : 0}
             {@const relearningW = cs.seen > 0 ? (cs.relearning / cs.seen) * seenPct : 0}
 
             <a
-              href="/{lg.level.toLowerCase()}/{cs.category}"
+              href={cs.href}
               class="group flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50"
             >
               <!-- Category name -->
               <span
                 class="w-36 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
-                title={removeHyphensAndCapitalize(cs.category)}
+                title={removeHyphensAndCapitalize(cs.label)}
               >
-                {removeHyphensAndCapitalize(cs.category)}
+                {removeHyphensAndCapitalize(cs.label)}
               </span>
 
               <!-- Progress bar: full width = 100% of vocab total -->

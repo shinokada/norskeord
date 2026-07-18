@@ -42,6 +42,13 @@ test('Plus user clicking search icon opens modal with search input', async ({ pa
 test('Plus user can open modal with Cmd/Ctrl+K shortcut', async ({ page }) => {
   await injectPlusPlan(page);
   await page.goto('/');
+  // Wait for onMount's async /api/plan fetch to resolve (authStore.init()),
+  // which is what flips effectiveIsPlus — and therefore Search's `isPlus`
+  // prop — to true. Without this, Meta+k can fire while isPlus is still
+  // false and the shortcut handler's `else if (isPlus) open = true` branch
+  // never runs. Mirrors the wait already used before the click-based test
+  // above.
+  await page.getByTestId('search-button').waitFor();
   // Use Meta+K (Cmd on Mac) — Playwright treats Meta as Cmd
   await page.keyboard.press('Meta+k');
   await expect(page.getByRole('dialog')).toBeVisible();

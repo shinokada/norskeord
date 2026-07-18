@@ -17,7 +17,9 @@ const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   'uttrykk-b1': () =>
     import('$lib/data/uttrykk-b1.json') as unknown as Promise<{ default: VocabEntry[] }>,
   'uttrykk-b2': () =>
-    import('$lib/data/uttrykk-b2.json') as unknown as Promise<{ default: VocabEntry[] }>
+    import('$lib/data/uttrykk-b2.json') as unknown as Promise<{ default: VocabEntry[] }>,
+  'uttrykk-c': () =>
+    import('$lib/data/uttrykk-c.json') as unknown as Promise<{ default: VocabEntry[] }>
 };
 
 export const load: PageLoad = async ({ url, parent }) => {

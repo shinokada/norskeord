@@ -15,6 +15,7 @@
   } from '$lib/progress';
   import type { ActivityCell } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/config';
+  import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
   import { State } from 'ts-fsrs';
   import type { CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
   import { SvelteMap } from 'svelte/reactivity';
@@ -22,6 +23,7 @@
   import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages.js';
   import CategoryBarChart from '$lib/components/CategoryBarChart.svelte';
+  import UttrykkThemeChart from '$lib/components/UttrykkThemeChart.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
@@ -66,7 +68,6 @@
   // ── Derived totals ────────────────────────────────────────────────────────────
   const allCards = $derived(Object.values(progressMap));
   const totalSeen = $derived(allCards.length);
-  const dueToday = $derived(countDueToday(progressMap));
 
   const byState = $derived({
     learning: allCards.filter((c) => c.fsrs.state === State.Learning).length,
@@ -141,20 +142,78 @@
     due: number;
   }
 
-  const levelStats = $derived<LevelStat[]>(
-    levels.map((level) => {
-      const cards = allCards.filter((c) => c.level === level);
-      const now = new Date();
+  /**
+   * Shared by the Vocabulary and Uttrykk sections' per-level breakdowns —
+   * each section filters allCards down to its own content type first (see
+   * vocabCards/uttrykkCards below), then calls this against the full
+   * A1..C levels list. Both sections now cover all five levels: for C,
+   * uttrykkCards is built via a key-based match against uttrykk-c.json
+   * (uttrykk-c-stats.ts) rather than category === 'uttrykk', since C's
+   * uttrykk entries carry their real category, not the 'uttrykk' sentinel
+   * — see Phase 4/6 of ai-docs/implementation/uttrykk-category.md.
+   */
+  function buildLevelStats(cards: CardProgress[], levelsList: readonly CEFRLevel[]): LevelStat[] {
+    const now = new Date();
+    return levelsList.map((level) => {
+      const lvlCards = cards.filter((c) => c.level === level);
       return {
         level,
-        seen: cards.length,
-        learning: cards.filter((c) => c.fsrs.state === State.Learning).length,
-        review: cards.filter((c) => c.fsrs.state === State.Review).length,
-        relearning: cards.filter((c) => c.fsrs.state === State.Relearning).length,
-        due: cards.filter((c) => new Date(c.fsrs.due) <= now).length
+        seen: lvlCards.length,
+        learning: lvlCards.filter((c) => c.fsrs.state === State.Learning).length,
+        review: lvlCards.filter((c) => c.fsrs.state === State.Review).length,
+        relearning: lvlCards.filter((c) => c.fsrs.state === State.Relearning).length,
+        due: lvlCards.filter((c) => new Date(c.fsrs.due) <= now).length
       };
-    })
+    });
+  }
+
+  // ── Vocabulary vs. Uttrykk split ──────────────────────────────────────────
+  // A card's CardProgress.category is 'uttrykk' for A1–B2 uttrykk entries.
+  // C-level uttrykk entries never carry that sentinel — they merge into
+  // vocab-c.json's categories at read time (Phase 4), so a studied C idiom's
+  // card looks identical to a studied C vocab word's card except for its
+  // progressMap key, which uttrykk-c-stats.ts can match back to
+  // uttrykk-c.json. UTTRYKK_C_KEYS.has(key) is what makes that split exact
+  // for C, not just an approximation.
+  const vocabCards = $derived(
+    Object.entries(progressMap)
+      .filter(
+        ([key, c]) => c.category !== 'uttrykk' && !(c.level === 'C' && UTTRYKK_C_KEYS.has(key))
+      )
+      .map(([, c]) => c)
   );
+  const uttrykkCards = $derived(
+    Object.entries(progressMap)
+      .filter(
+        ([key, c]) => c.category === 'uttrykk' || (c.level === 'C' && UTTRYKK_C_KEYS.has(key))
+      )
+      .map(([, c]) => c)
+  );
+
+  function computeByState(cards: CardProgress[]) {
+    return {
+      learning: cards.filter((c) => c.fsrs.state === State.Learning).length,
+      review: cards.filter((c) => c.fsrs.state === State.Review).length,
+      relearning: cards.filter((c) => c.fsrs.state === State.Relearning).length
+    };
+  }
+
+  function computeDueToday(cards: CardProgress[]): number {
+    const now = new Date();
+    return cards.filter((c) => new Date(c.fsrs.due) <= now).length;
+  }
+
+  const vocabSeen = $derived(vocabCards.length);
+  const vocabDue = $derived(computeDueToday(vocabCards));
+  const vocabByState = $derived(computeByState(vocabCards));
+  const vocabLevelStats = $derived<LevelStat[]>(buildLevelStats(vocabCards, levels));
+
+  const uttrykkSeen = $derived(uttrykkCards.length);
+  const uttrykkDue = $derived(computeDueToday(uttrykkCards));
+  const uttrykkByState = $derived(computeByState(uttrykkCards));
+  // All five levels now — C is included via the key-based split above, using
+  // its own real category slugs as "themes" (see UttrykkThemeChart.svelte).
+  const uttrykkLevelStats = $derived<LevelStat[]>(buildLevelStats(uttrykkCards, levels));
 
   // ── CEFR estimate ─────────────────────────────────────────────────────────────
   const categoryCountByLevel: Record<CEFRLevel, number> = {
@@ -404,10 +463,11 @@
       <ActivityChart cells={activityCells} {streak} loading={activityLoading} {isPlus} />
     </div>
 
-    <!-- ── Summary cards (vocab) ─────────────────────────────────────────────── -->
-    {#if totalSeen > 0}
-      <div class="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-        {#each [{ label: m.stats_cards_seen(), value: totalSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_due_today(), value: dueToday, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_in_review(), value: byState.review, color: 'text-green-600 dark:text-green-400' }, { label: m.stats_relearning(), value: byState.relearning, color: 'text-orange-600 dark:text-orange-400' }] as stat (stat.label)}
+    <!-- ── Vocabulary section ─────────────────────────────────────────────────── -->
+    {#if vocabSeen > 0}
+      <h2 class="mb-4">📖 {m.stats_vocabulary_heading()}</h2>
+      <div class="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        {#each [{ label: m.stats_cards_seen(), value: vocabSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_due_today(), value: vocabDue, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_in_review(), value: vocabByState.review, color: 'text-green-600 dark:text-green-400' }, { label: m.stats_relearning(), value: vocabByState.relearning, color: 'text-orange-600 dark:text-orange-400' }] as stat (stat.label)}
           <div
             class="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
           >
@@ -417,10 +477,12 @@
         {/each}
       </div>
 
-      <!-- ── Per-level breakdown ────────────────────────────────────────────────── -->
-      <h2 class="mb-4">{m.stats_by_level()}</h2>
-      <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {#each levelStats as ls (ls.level)}
+      <!-- Per-level breakdown — vocab only -->
+      <h3 class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+        {m.stats_by_level()}
+      </h3>
+      <div class="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {#each vocabLevelStats as ls (ls.level)}
           <a
             href="/learn/{ls.level.toLowerCase()}"
             class="block rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-colors hover:bg-gray-50 dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/40"
@@ -487,6 +549,153 @@
           </a>
         {/each}
       </div>
+
+      <!-- Per-category breakdown — vocab, Plus only -->
+      {#if isPlus}
+        <h3 class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {m.stats_by_category()}
+        </h3>
+        <div class="mb-8">
+          <CategoryBarChart {progressMap} {levelTextColors} {levelColors} />
+        </div>
+      {:else}
+        <div
+          class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
+        >
+          <p class="font-semibold text-orange-700 dark:text-orange-300">
+            ⭐ {m.stats_plus_category_heading()}
+          </p>
+          <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+            {m.stats_plus_category_body()}
+          </p>
+          <a
+            href="/plus"
+            class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+          >
+            {m.stats_plus_upgrade()}
+          </a>
+        </div>
+      {/if}
+    {/if}
+
+    <!-- ── Uttrykk section ────────────────────────────────────────────────────── -->
+    {#if uttrykkSeen > 0}
+      <h2 class="mb-4">💬 {m.stats_uttrykk_heading()}</h2>
+      <div class="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        {#each [{ label: m.stats_cards_seen(), value: uttrykkSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_due_today(), value: uttrykkDue, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_in_review(), value: uttrykkByState.review, color: 'text-green-600 dark:text-green-400' }, { label: m.stats_relearning(), value: uttrykkByState.relearning, color: 'text-orange-600 dark:text-orange-400' }] as stat (stat.label)}
+          <div
+            class="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+          >
+            <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
+            <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
+          </div>
+        {/each}
+      </div>
+
+      <!-- Per-level breakdown — uttrykk only. C-level rows use the same
+           key-based split as vocabCards/uttrykkCards above (Vocabulary
+           section shows the rest of C's progress). C has no dedicated
+           `/c/uttrykk` route (Phase 4 merges into c/{category} pages
+           instead), so its card links to the level hub rather than a
+           single browsing page. -->
+      <h3 class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+        {m.stats_by_level()}
+      </h3>
+      <div class="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {#each uttrykkLevelStats as ls (ls.level)}
+          <a
+            href={ls.level === 'C' ? '/learn/c' : `/${ls.level.toLowerCase()}/uttrykk`}
+            class="block rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-colors hover:bg-gray-50 dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/40"
+          >
+            <div class="mb-2 flex items-center justify-between">
+              <span class="font-semibold {levelTextColors[ls.level]}">{ls.level}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-300">
+                {ls.seen}
+                {m.stats_seen()} · {ls.due}
+                {m.stats_due_today_short()}
+              </span>
+            </div>
+            <!-- Stacked progress bar -->
+            <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
+              {#if ls.seen > 0}
+                <div class="flex h-full">
+                  {#if ls.learning > 0}
+                    <div
+                      class="bg-yellow-400"
+                      style="width: {(ls.learning / ls.seen) * 100}%"
+                      title={m.stats_tooltip_learning({ count: ls.learning })}
+                    ></div>
+                  {/if}
+                  {#if ls.review > 0}
+                    <div
+                      class={levelColors[ls.level]}
+                      style="width: {(ls.review / ls.seen) * 100}%"
+                      title={m.stats_tooltip_review({ count: ls.review })}
+                    ></div>
+                  {/if}
+                  {#if ls.relearning > 0}
+                    <div
+                      class="bg-orange-400"
+                      style="width: {(ls.relearning / ls.seen) * 100}%"
+                      title={m.stats_tooltip_relearning({ count: ls.relearning })}
+                    ></div>
+                  {/if}
+                </div>
+              {/if}
+            </div>
+            {#if ls.seen === 0}
+              <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
+                {m.stats_no_cards_this_level()}
+              </p>
+            {:else}
+              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
+                  {m.stats_learning()}
+                  {ls.learning}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full {levelColors[ls.level]}"></span>
+                  {m.stats_review()}
+                  {ls.review}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
+                  {m.stats_relearning()}
+                  {ls.relearning}
+                </span>
+              </div>
+            {/if}
+          </a>
+        {/each}
+      </div>
+
+      <!-- Per-theme breakdown — uttrykk, Plus only -->
+      {#if isPlus}
+        <h3 class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {m.stats_by_theme()}
+        </h3>
+        <div class="mb-8">
+          <UttrykkThemeChart {progressMap} {levelTextColors} {levelColors} />
+        </div>
+      {:else}
+        <div
+          class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
+        >
+          <p class="font-semibold text-orange-700 dark:text-orange-300">
+            ⭐ {m.stats_plus_theme_heading()}
+          </p>
+          <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+            {m.stats_plus_theme_body()}
+          </p>
+          <a
+            href="/plus"
+            class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+          >
+            {m.stats_plus_upgrade()}
+          </a>
+        </div>
+      {/if}
     {/if}
 
     <!-- ── Grammar ────────────────────────────────────────────────────────────── -->
@@ -570,34 +779,6 @@
           </div>
         {/if}
       </div>
-    {/if}
-
-    <!-- ── Per-category breakdown — vocab, Plus only (3-A) ───────────────────── -->
-    {#if totalSeen > 0}
-      {#if isPlus}
-        <h2 class="mb-4">{m.stats_by_category()}</h2>
-        <div class="mb-8">
-          <CategoryBarChart {allCards} {levelTextColors} {levelColors} />
-        </div>
-      {:else}
-        <!-- 3-A: upsell for free users -->
-        <div
-          class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
-        >
-          <p class="font-semibold text-orange-700 dark:text-orange-300">
-            ⭐ {m.stats_plus_category_heading()}
-          </p>
-          <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-            {m.stats_plus_category_body()}
-          </p>
-          <a
-            href="/plus"
-            class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
-          >
-            {m.stats_plus_upgrade()}
-          </a>
-        </div>
-      {/if}
     {/if}
 
     <!-- ── Reset ──────────────────────────────────────────────────────────────── -->
