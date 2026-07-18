@@ -6,6 +6,7 @@ import { isPlusCategory } from '$lib/access';
 import type { CEFRLevel } from '$lib/types';
 import type { MetaProps } from 'runes-meta-tags';
 import { removeHyphensAndCapitalize } from '$lib/utils';
+import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
 
 // ---------------------------------------------------------------------------
 // Vocab loaders — imported server-side so the JSON is never bundled into the
@@ -33,6 +34,15 @@ const uttrykkLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> =
     import('$lib/data/uttrykk-b2.json') as unknown as Promise<{ default: VocabEntry[] }>
 };
 
+// C-level uttrykk — fixed expressions/idioms, each tagged with a real C
+// category slug (see ai-docs/implementation/uttrykk-category.md Phase 4).
+// Unlike A1–B2, C has no separate "uttrykk" route/gate — these are merged
+// in at read time alongside the matching vocab-c category below, rather
+// than being folded into vocab-c.json itself (that would misclassify
+// idioms as vocab lemmas — see data-rules/vocab-and-uttrykk.md).
+const uttrykkCLoader = () =>
+  import('$lib/data/uttrykk-c.json') as unknown as Promise<{ default: VocabEntry[] }>;
+
 // Preview decks — free users (10 entries each)
 const uttrykkPreviewLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   'a1/uttrykk-preview': () =>
@@ -50,7 +60,7 @@ const uttrykkPreviewLoaders: Record<string, () => Promise<{ default: VocabEntry[
 // locals.plan is set by hooks.server.ts before this runs.
 // ---------------------------------------------------------------------------
 
-export const load: PageServerLoad = async ({ params, locals }) => {
+export const load: PageServerLoad = async ({ params, locals, url }) => {
   const { level, category } = params;
   const isPlus = locals.plan === 'plus';
 
@@ -180,17 +190,57 @@ export const load: PageServerLoad = async ({ params, locals }) => {
     }
   };
 
-  // uttrykk-preview: Plus users are silently redirected to the full deck
+  // Phase 3 (ai-docs/implementation/uttrykk-category.md): group the full
+  // uttrykk deck by `theme` and support an optional ?theme= pre-filter.
+  // A1–B2 only — C's uttrykk entries have no `theme` field (they carry a
+  // real category slug instead and are merged in via uttrykkCLoader below),
+  // so this just yields an empty `themes` array for C, which the client
+  // treats as "no breakdown to show".
+  function groupByTheme(all: VocabEntry[]) {
+    const counts = new Map<string, number>();
+    for (const e of all) {
+      if (e.theme) counts.set(e.theme, (counts.get(e.theme) ?? 0) + 1);
+    }
+    const themes = [...counts.entries()]
+      .map(([theme, count]) => ({ theme, count }))
+      .sort((a, b) => b.count - a.count);
+
+    const requested = url.searchParams.get('theme');
+
+    // Hub links to "Others" for any theme under UTTRYKK_OTHERS_THRESHOLD
+    // (see partitionUttrykkThemes) rather than a real theme slug — match
+    // entries against the same minor-theme set the hub used to build that
+    // chip, so the two stay in sync.
+    if (requested === UTTRYKK_OTHERS_THEME) {
+      const { minor } = partitionUttrykkThemes(themes);
+      if (minor.length > 0) {
+        const minorNames = new Set(minor.map((t) => t.theme));
+        const entries = all.filter((e) => e.theme && minorNames.has(e.theme));
+        return { entries, themes, selectedTheme: UTTRYKK_OTHERS_THEME };
+      }
+      // No minor themes for this level — fall through to "no filter" below.
+    }
+
+    const selectedTheme = requested && counts.has(requested) ? requested : null;
+    const entries = selectedTheme ? all.filter((e) => e.theme === selectedTheme) : all;
+    return { entries, themes, selectedTheme };
+  }
+
+  // uttrykk-preview: Plus users are silently redirected to the full deck.
+  // The preview stays a flat 10-item teaser — no theme breakdown here.
   if (category === 'uttrykk-preview') {
     if (isPlus) {
       const fullKey = `${level.toLowerCase()}/uttrykk`;
       const fullLoader = uttrykkLoaders[fullKey];
       if (fullLoader) {
         const data = await fullLoader();
+        const { entries, themes, selectedTheme } = groupByTheme(data.default);
         return {
-          entries: data.default,
+          entries,
           level: levelUpper,
           category: 'uttrykk',
+          themes,
+          selectedTheme,
           prevCategory,
           nextCategory,
           pageMetaTags,
@@ -205,6 +255,8 @@ export const load: PageServerLoad = async ({ params, locals }) => {
         entries: data.default,
         level: levelUpper,
         category,
+        themes: [] as { theme: string; count: number }[],
+        selectedTheme: null as string | null,
         prevCategory,
         nextCategory,
         nextLocked,
@@ -218,10 +270,13 @@ export const load: PageServerLoad = async ({ params, locals }) => {
   const uttrykkLoader = uttrykkLoaders[key];
   if (uttrykkLoader) {
     const data = await uttrykkLoader();
+    const { entries, themes, selectedTheme } = groupByTheme(data.default);
     return {
-      entries: data.default,
+      entries,
       level: levelUpper,
       category,
+      themes,
+      selectedTheme,
       prevCategory,
       nextCategory,
       pageMetaTags,
@@ -236,6 +291,8 @@ export const load: PageServerLoad = async ({ params, locals }) => {
       entries: [] as VocabEntry[],
       level: levelUpper,
       category,
+      themes: [] as { theme: string; count: number }[],
+      selectedTheme: null as string | null,
       prevCategory,
       nextCategory,
       nextLocked,
@@ -245,11 +302,23 @@ export const load: PageServerLoad = async ({ params, locals }) => {
   }
 
   const vocab = await loader();
-  const entries = vocab.default.filter((e) => e.category === category);
+  let entries = vocab.default.filter((e) => e.category === category);
+
+  // C has no separate uttrykk route (see uttrykkCLoader above) — merge in
+  // any uttrykk-c.json entries tagged with this category so they appear
+  // alongside regular vocab entries for the same topic.
+  if (level.toLowerCase() === 'c') {
+    const uttrykkC = await uttrykkCLoader();
+    const uttrykkEntries = uttrykkC.default.filter((e) => e.category === category);
+    entries = [...entries, ...uttrykkEntries];
+  }
+
   return {
     entries,
     level: levelUpper,
     category,
+    themes: [] as { theme: string; count: number }[],
+    selectedTheme: null as string | null,
     prevCategory,
     nextCategory,
     nextLocked,

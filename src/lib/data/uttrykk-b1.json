@@ -14,7 +14,8 @@
     "example_german": "Mal im Ernst — wir können nicht so weitermachen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-002",
@@ -31,7 +32,8 @@
     "example_german": "Wir treffen uns jede zweite Woche, um Norwegisch zu uben.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-003",
@@ -48,7 +50,8 @@
     "example_german": "Ab und zu brauchen wir alle eine Pause.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-004",
@@ -65,7 +68,8 @@
     "example_german": "Du kannst Kaffee oder Tee wahlen — oder beides.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-005",
@@ -82,7 +86,8 @@
     "example_german": "Ich muss beim Zahnarzt einen Termin buchen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "healthcare"
   },
   {
     "id": "u-b1-007",
@@ -99,7 +104,8 @@
     "example_german": "Er bekam für den Diebstahl ein Jahr auf Bewährung.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-009",
@@ -116,7 +122,8 @@
     "example_german": "Meine Schlussel sind gestern verschwunden.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-010",
@@ -133,7 +140,8 @@
     "example_german": "Er wurde in der Schule gemobbt und fand das sehr schwer.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-011",
@@ -150,7 +158,8 @@
     "example_german": "Sie war enttauscht, als sie die Stelle nicht bekam.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-012",
@@ -167,7 +176,8 @@
     "example_german": "Nach zwei Jahren gingen sie auseinander.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-013",
@@ -184,7 +194,8 @@
     "example_german": "Wer mogelt, riskiert, bestraft zu werden.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-014",
@@ -201,7 +212,8 @@
     "example_german": "Sie überwarf sich mit ihm wegen eines kleinen Missverständnisses.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-015",
@@ -218,7 +230,8 @@
     "example_german": "Es braucht Zeit, sich an das kalte Klima zu gewohnen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-017",
@@ -235,7 +248,8 @@
     "example_german": "Wer das Gesetz bricht, riskiert eine Strafe.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-021",
@@ -253,7 +267,8 @@
     "definition": "En måte å utvikle samfunnet på som tar hensyn til miljøet, slik at ressurser også finnes for folk i fremtiden.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "sustainability"
   },
   {
     "id": "u-b1-022",
@@ -270,7 +285,8 @@
     "example_german": "Mir wurde klar, dass ich den Pass zu Hause vergessen hatte.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-023",
@@ -287,7 +303,8 @@
     "example_german": "Es macht viel aus, dass du punktlich erscheinst.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-024",
@@ -304,7 +321,8 @@
     "example_german": "Es hat keinen Sinn zu klagen — wir müssen eine Lösung finden.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-029",
@@ -321,7 +339,8 @@
     "example_german": "Nach der harten Diskussion herrschte auf dem Meeting eine schlechte Stimmung.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-030",
@@ -339,7 +358,8 @@
     "definition": "Å gjøre noe alene, uten hjelp fra andre mennesker.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-031",
@@ -356,7 +376,8 @@
     "example_german": "Er ist ein echter sozialer Magnet — alle wollen in seiner Nähe sein.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-032",
@@ -374,7 +395,8 @@
     "definition": "Når to eller flere personer har den samme meningen eller den samme planen om noe.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-033",
@@ -391,7 +413,8 @@
     "example_german": "Viele sind auf öffentliche Verkehrsmittel angewiesen, um zur Arbeit zu kommen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-034",
@@ -408,7 +431,8 @@
     "example_german": "Du siehst traurig aus — stimmt etwas nicht?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-035",
@@ -425,7 +449,8 @@
     "example_german": "Ich muss den Bericht heute abgeben.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-036",
@@ -442,7 +467,8 @@
     "example_german": "Eine ausgewogene Ernährung ist wichtig für die Gesundheit.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-b1-037",
@@ -459,7 +485,8 @@
     "example_german": "Ein verwöhntes Kind, das immer seinen Willen bekommt, kann soziale Schwierigkeiten haben.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-b1-038",
@@ -476,7 +503,8 @@
     "example_german": "Friluftsliv gilt in Norwegen als ein nationales Merkmal.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "culture"
   },
   {
     "id": "u-b1-039",
@@ -493,7 +521,8 @@
     "example_german": "Wir wohnen jetzt seit ein paar Jahren hier.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-040",
@@ -510,7 +539,8 @@
     "example_german": "Mit der Zeit begann sie, die neue Arbeit zu mögen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-041",
@@ -527,7 +557,8 @@
     "example_german": "Es fiel mir ein, dass ich vergessen hatte, ihn anzurufen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-042",
@@ -544,7 +575,8 @@
     "example_german": "Nach vielen Jahren als Vertretung bekam sie endlich eine feste Stelle.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "work"
   },
   {
     "id": "u-b1-045",
@@ -561,7 +593,8 @@
     "example_german": "Sie haben sich sofort gut verstanden, als sie sich trafen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-047",
@@ -578,7 +611,8 @@
     "example_german": "So ein Unsinn! Das ist ein völlig sinnloser Plan.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-053",
@@ -596,7 +630,8 @@
     "definition": "Energi som kommer fra gamle naturmaterialer under jorden, som kull, olje og gass, og som slipper ut CO₂ når det brennes.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "environment"
   },
   {
     "id": "u-b1-054",
@@ -613,7 +648,8 @@
     "example_german": "Viele Jahre lang lebten sie von der Hand in den Mund.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "finance"
   },
   {
     "id": "u-b1-056",
@@ -630,7 +666,8 @@
     "example_german": "Die EU-Regeln sichern den freien Warenverkehr über die Landesgrenzen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "economics"
   },
   {
     "id": "u-b1-057",
@@ -647,7 +684,8 @@
     "example_german": "Ohne die richtige Ausrüstung kann man im Winter in den Bergen erfrieren.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-059",
@@ -664,7 +702,8 @@
     "example_german": "Es ist schwer, mit einem niedrigen Lohn über die Runden zu kommen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "finance"
   },
   {
     "id": "u-b1-060",
@@ -681,7 +720,8 @@
     "example_german": "Kannst du ihn dazu bringen, sein Zimmer aufzuräumen?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-062",
@@ -698,7 +738,8 @@
     "example_german": "Er ist es gewohnt, seinen Willen zu bekommen, und mag es nicht, abgewiesen zu werden.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-065",
@@ -715,7 +756,8 @@
     "example_german": "Früher gingen die Menschen zu Fuß über das Gebirge.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-067",
@@ -732,7 +774,8 @@
     "example_german": "Vor allem müssen wir die Sicherheit aller gewährleisten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-068",
@@ -750,7 +793,8 @@
     "definition": "Ordet 'gang' betyr et tidspunkt eller en anledning. 'I gang' betyr at noe har startet eller er i prosess.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-069",
@@ -767,7 +811,8 @@
     "example_german": "Es war ihm egal, was andere dachten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-073",
@@ -784,7 +829,8 @@
     "example_german": "Der Arzt gab mir gute Ratschläge zur Ernährung.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-077",
@@ -801,7 +847,8 @@
     "example_german": "Es ist wichtig, Termine rechtzeitig zu machen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-078",
@@ -818,7 +865,8 @@
     "example_german": "Alle müssen ihren Teil tun, um den Klimawandel zu bekämpfen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-079",
@@ -836,7 +884,8 @@
     "definition": "Å ikke få oppleve eller delta i noe som man ønsket eller hadde planlagt.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-080",
@@ -853,7 +902,8 @@
     "example_german": "Waehrend der Produktion ging etwas mit der Maschine schief.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-081",
@@ -870,7 +920,8 @@
     "example_german": "Ich verpasste das Konzert, weil ich krank war.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-082",
@@ -887,7 +938,8 @@
     "example_german": "Ihr Traum ging endlich in Erfuellung.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-085",
@@ -904,7 +956,8 @@
     "example_german": "Er wurde wütend und ging ohne ein Wort.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-088",
@@ -921,7 +974,8 @@
     "example_german": "Eltern sind verantwortlich für die Sicherheit ihrer Kinder.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-b1-089",
@@ -938,7 +992,8 @@
     "example_german": "Es ist sehr wichtig, dass wir puenktlich erscheinen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-091",
@@ -955,7 +1010,8 @@
     "example_german": "Er hatte ein schlechtes Gewissen, weil er die Verabredung vergessen hatte.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-092",
@@ -972,7 +1028,8 @@
     "example_german": "Regelmaessige Bewegung ist der Schluessel zu einer guten Gesundheit.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-b1-093",
@@ -989,7 +1046,8 @@
     "example_german": "Es wuerde dir gut tun, ein wenig auszuruhen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-094",
@@ -1006,7 +1064,8 @@
     "example_german": "Er ist immer gut gelaunt, auch an schwierigen Tagen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-095",
@@ -1023,7 +1082,8 @@
     "example_german": "Ich habe den Eindruck, dass er mit dem Ergebnis nicht zufrieden ist.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-096",
@@ -1040,7 +1100,8 @@
     "example_german": "Hast du noch Kontakt zu alten Klassenkameraden?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-097",
@@ -1057,7 +1118,8 @@
     "example_german": "Du hast recht - es war mein Fehler.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-098",
@@ -1074,7 +1136,8 @@
     "example_german": "Alle Mitarbeiter haben Anspruch auf fuenf Wochen Urlaub.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-099",
@@ -1091,7 +1154,8 @@
     "example_german": "Wir können es uns dieses Jahr nicht leisten, in den Urlaub zu fahren.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "finance"
   },
   {
     "id": "u-b1-100",
@@ -1108,7 +1172,8 @@
     "example_german": "Wir hatten den ganzen Urlaub Pech mit dem Wetter.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-101",
@@ -1125,7 +1190,8 @@
     "example_german": "Der Film handelt von einer Familie, die im Krieg alles verliert.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-103",
@@ -1143,7 +1209,8 @@
     "definition": "Tilstanden til kroppen når alt fungerer bra og man ikke er syk.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-b1-106",
@@ -1160,7 +1227,8 @@
     "example_german": "Die Qualitaet seiner Arbeit genuegt nicht den Anforderungen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-107",
@@ -1178,7 +1246,8 @@
     "definition": "Å trene og leve sunt slik at kroppen forblir sterk og frisk.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "fitness"
   },
   {
     "id": "u-b1-108",
@@ -1195,7 +1264,8 @@
     "example_german": "Es ist wichtig, bei den Nachrichten auf dem Laufenden zu bleiben.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "media"
   },
   {
     "id": "u-b1-110",
@@ -1212,7 +1282,8 @@
     "example_german": "Er hielt eine Rede auf der Hochzeit seines Freundes.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-112",
@@ -1229,7 +1300,8 @@
     "example_german": "Es ist wichtig, die Norwegischkenntnisse aufrechtzuerhalten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "language-learning"
   },
   {
     "id": "u-b1-113",
@@ -1247,7 +1319,8 @@
     "definition": "Å si at noe ikke var tilstrekkelig eller ikke fungerte som man håpet.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-114",
@@ -1264,7 +1337,8 @@
     "example_german": "Jeder Einzelne von uns trägt eine Verantwortung für die Umwelt.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-115",
@@ -1281,7 +1355,8 @@
     "example_german": "Diese Diskussion gehoert in eine Vorstandssitzung, nicht hierher.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-117",
@@ -1299,7 +1374,8 @@
     "definition": "Å gi et bestemt inntrykk gjennom lyd, eller å virke på en bestemt måte når noen hører eller leser om det.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-118",
@@ -1316,7 +1392,8 @@
     "example_german": "Sie entschied sich für ein Hochschulstudium in der Medizin.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "education"
   },
   {
     "id": "u-b1-119",
@@ -1333,7 +1410,8 @@
     "example_german": "Es war teuer, aber jedenfalls war die Qualitaet gut.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-120",
@@ -1350,7 +1428,8 @@
     "example_german": "Hast du in letzter Zeit schlecht geschlafen?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-121",
@@ -1367,7 +1446,8 @@
     "example_german": "Kannst du mich eine Weile in Ruhe arbeiten lassen?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-122",
@@ -1384,7 +1464,8 @@
     "example_german": "Sie planten die Party im Geheimen, damit sie es nicht herausfinden sollte.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-123",
@@ -1401,7 +1482,8 @@
     "example_german": "Ähnlich wie viele andere bin ich am liebsten in der Natur.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-124",
@@ -1418,7 +1500,8 @@
     "example_german": "Gibt es gute Restaurants in der Naehe?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "city-life"
   },
   {
     "id": "u-b1-125",
@@ -1435,7 +1518,8 @@
     "example_german": "Das Konzert wurde von der Gemeinde organisiert.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "arts-culture"
   },
   {
     "id": "u-b1-126",
@@ -1452,7 +1536,8 @@
     "example_german": "Ich muss in Ruhe und Frieden arbeiten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-127",
@@ -1469,7 +1554,8 @@
     "example_german": "Kannst du den Bus nehmen, anstatt mit dem Auto zu fahren?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-128",
@@ -1486,7 +1572,8 @@
     "example_german": "Neben Norwegisch lernt sie auch Englisch.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-129",
@@ -1504,7 +1591,8 @@
     "definition": "Et uttrykk som betyr at noe er galt eller at noe blokkerer veien for noe annet.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-130",
@@ -1521,7 +1609,8 @@
     "example_german": "Es ist gar nicht so einfach, in ein neues Land zu ziehen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-134",
@@ -1538,7 +1627,8 @@
     "example_german": "Verschwende keine Zeit damit, dir Sorgen zu machen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-136",
@@ -1556,7 +1646,8 @@
     "definition": "Å lære mer om en person eller et sted slik at det ikke lenger er nytt eller fremmed for deg.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-139",
@@ -1573,7 +1664,8 @@
     "example_german": "Sie fing an zu joggen, um wieder in Form zu kommen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "fitness"
   },
   {
     "id": "u-b1-140",
@@ -1590,7 +1682,8 @@
     "example_german": "Es war schwer, mit der Aufgabe anzufangen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-141",
@@ -1607,7 +1700,8 @@
     "example_german": "Die zwei Kollegen kommen sehr gut miteinander aus.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-142",
@@ -1624,7 +1718,8 @@
     "example_german": "Die Polizei arbeitet daran, dem Fall auf den Grund zu gehen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "reasoning"
   },
   {
     "id": "u-b1-145",
@@ -1641,7 +1736,8 @@
     "example_german": "Er tut so, als ob nichts falsch wäre.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-147",
@@ -1658,7 +1754,8 @@
     "example_german": "Hast du bemerkt, dass er nicht Hallo gesagt hat?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-153",
@@ -1675,7 +1772,8 @@
     "example_german": "Wir sind auf einem guten Weg, das Ziel zu erreichen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-159",
@@ -1692,7 +1790,8 @@
     "example_german": "Das Geschenk war genau richtig - sie hat sich sehr gefreut.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-160",
@@ -1710,7 +1809,8 @@
     "definition": "Uttrykket brukes når det er din mulighet til å gjøre noe etter at andre har gjort det samme.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-161",
@@ -1727,7 +1827,8 @@
     "example_german": "Dieser Geruch erinnert mich an mein Elternhaus.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-162",
@@ -1744,7 +1845,8 @@
     "example_german": "Jetzt, wo er Rentner ist, genießt er das Leben in vollen Zügen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-163",
@@ -1761,7 +1863,8 @@
     "example_german": "Was Finanzen betrifft, ist sie sehr vorsichtig.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-165",
@@ -1778,7 +1881,8 @@
     "example_german": "Ich kann Überstunden machen, falls es nötig ist.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-169",
@@ -1795,7 +1899,8 @@
     "example_german": "Es ist wichtig, die Freundschaft zu pflegen, auch wenn man beschäftigt ist.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-171",
@@ -1812,7 +1917,8 @@
     "example_german": "Sie hat das Problem auf eigene Faust gelöst.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-172",
@@ -1829,7 +1935,8 @@
     "example_german": "Melde dich für den Kurs im Voraus an, damit du dir einen Platz sicherst.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "time-expressions"
   },
   {
     "id": "u-b1-173",
@@ -1847,7 +1954,8 @@
     "definition": "Å ha en ubehagelig følelse fordi man tror noe eller noen kan gjøre vondt eller er farlig.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-175",
@@ -1864,7 +1972,8 @@
     "example_german": "Viele entscheiden sich für öffentliche Verkehrsmittel, um Geld und die Umwelt zu schonen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "travel"
   },
   {
     "id": "u-b1-176",
@@ -1881,7 +1990,8 @@
     "example_german": "Das ist schlicht und einfach nicht gut genug.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-177",
@@ -1899,7 +2009,8 @@
     "definition": "Når noen har lov til å gjøre noe eller få noe fordi loven eller reglene sier det.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-180",
@@ -1917,7 +2028,8 @@
     "definition": "Når noen ikke har mye penger og må være forsiktig med hva de bruker penger på.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "finance"
   },
   {
     "id": "u-b1-182",
@@ -1935,7 +2047,8 @@
     "definition": "Kjøtt fra dyr som storfe, svin eller lam, som har en rød farge før det blir laget mat av.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-b1-185",
@@ -1952,7 +2065,8 @@
     "example_german": "Es ist wichtig, den Kindern gegenüber Grenzen zu setzen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-b1-186",
@@ -1969,7 +2083,8 @@
     "example_german": "Ich schätze es sehr, dass du mir hilfst.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-193",
@@ -1986,7 +2101,8 @@
     "example_german": "Was braucht es, um erfolgreich zu sein?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-194",
@@ -2003,7 +2119,8 @@
     "example_german": "Wer ist schuld daran, dass die Vereinbarung gescheitert ist?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-195",
@@ -2021,7 +2138,8 @@
     "definition": "Et uttrykk som viser at man gjør noe på grunn av en person eller en ting som er viktig for en.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-197",
@@ -2039,7 +2157,8 @@
     "definition": "Et uttrykk man bruker for å si at noe er akkurat slik det ser ut, uten noe mer komplisert forklaring.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-200",
@@ -2057,7 +2176,8 @@
     "definition": "Å ikke være nødt til å gjøre noe, eller å unngå noe man ikke ønsker å gjøre.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-201",
@@ -2074,7 +2194,8 @@
     "example_german": "Der neue Trend kam bei jungen Leuten an.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "culture"
   },
   {
     "id": "u-b1-204",
@@ -2091,7 +2212,8 @@
     "example_german": "Der Arzt verschrieb nach der Operation Schmerztabletten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "healthcare"
   },
   {
     "id": "u-b1-205",
@@ -2109,7 +2231,8 @@
     "definition": "En person som tiltrekker seg mange andre mennesker og er lett å like og å være sammen med.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-206",
@@ -2126,7 +2249,8 @@
     "example_german": "Gute soziale Kompetenzen sind am Arbeitsplatz wichtig.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-208",
@@ -2143,7 +2267,8 @@
     "example_german": "Die Kinder assen um die Wette, um zu sehen, wer zuerst fertig wird.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-210",
@@ -2160,7 +2285,8 @@
     "example_german": "Nach vielen Jahren als Angestellter entschied er sich, sich selbststandig zu machen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "work"
   },
   {
     "id": "u-b1-211",
@@ -2177,7 +2303,8 @@
     "example_german": "Nach der Scheidung entschied sie sich, in einer neuen Stadt neu anzufangen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-212",
@@ -2195,7 +2322,8 @@
     "definition": "Et område eller en lokasjon; uttrykket 'av sted' betyr at man begynner å reise eller gå et sted.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-213",
@@ -2213,7 +2341,8 @@
     "definition": "Når noe er riktig eller sant, kan vi si at det stemmer. Vi bruker det for å bekrefte informasjon.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-214",
@@ -2230,7 +2359,8 @@
     "example_german": "Kannst du nach der Arbeit bei mir vorbeischauen?",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-216",
@@ -2247,7 +2377,8 @@
     "example_german": "Er stotterte und stockte, als er von der Presse befragt wurde.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-218",
@@ -2265,7 +2396,8 @@
     "definition": "Et stykke er en del av noe større, eller det kan brukes for å telle enkeltobjekter. Vi bruker det ofte når vi snakker om mat eller gjenstander.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-219",
@@ -2282,7 +2414,8 @@
     "example_german": "Er tritt als klare Führungsperson auf.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-220",
@@ -2299,7 +2432,8 @@
     "example_german": "Für beide Seiten steht viel auf dem Spiel.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-221",
@@ -2317,7 +2451,8 @@
     "definition": "En søknad er et skriftlig dokument man sender til en arbeidsgiver eller institusjon for å få en jobb eller plass. En åpen søknad sender man uten at det er en bestemt stilling ledig.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "work"
   },
   {
     "id": "u-b1-222",
@@ -2334,7 +2469,8 @@
     "example_german": "Sorge dafür, dass alle die Information bekommen haben.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-223",
@@ -2351,7 +2487,8 @@
     "example_german": "Du solltest die Warnungen des Arztes ernst nehmen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-224",
@@ -2368,7 +2505,8 @@
     "example_german": "Alle werden ermutigt, an der Diskussion teilzunehmen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-225",
@@ -2385,7 +2523,8 @@
     "example_german": "Der Arzt sagte, sie musse es ein paar Wochen ruhig angehen lassen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-226",
@@ -2402,7 +2541,8 @@
     "example_german": "Wir machten uns früh am Morgen an die lange Wanderung.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-227",
@@ -2419,7 +2559,8 @@
     "example_german": "Wir müssen auf alle in der Gruppe Rücksicht nehmen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-228",
@@ -2436,7 +2577,8 @@
     "example_german": "Sie ergreift gerne die Initiative und bringt Dinge in Gang.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "workplace"
   },
   {
     "id": "u-b1-229",
@@ -2453,7 +2595,8 @@
     "example_german": "Sie übernahm schnell und effektiv die Kontrolle über die Situation.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-230",
@@ -2470,7 +2613,8 @@
     "example_german": "Er nahm seinen Mut zusammen und fragte sie, ob sie mit ihm ausgehen möchte.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-232",
@@ -2487,7 +2631,8 @@
     "example_german": "Wir müssen dieses Problem jetzt angehen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-233",
@@ -2504,7 +2649,8 @@
     "example_german": "Es ist wichtig, auf seine Gesundheit zu achten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-b1-234",
@@ -2521,7 +2667,8 @@
     "example_german": "Wir machten am Strand ein Lagerfeuer und grillten Würstchen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-235",
@@ -2538,7 +2685,8 @@
     "example_german": "Sie entschied sich zu schweigen, anstatt etwas zu sagen, das sie bereuen würde.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-236",
@@ -2555,7 +2703,8 @@
     "example_german": "Er hat viele Jahre als Fischer auf See gearbeitet.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "work"
   },
   {
     "id": "u-b1-240",
@@ -2573,7 +2722,8 @@
     "definition": "Trykte medier er aviser, blader og bøker som er skrevet ut på papir og ikke finnes bare på internett.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "media"
   },
   {
     "id": "u-b1-241",
@@ -2590,7 +2740,8 @@
     "example_german": "Immer weniger Menschen lesen heute Printmedien.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "media"
   },
   {
     "id": "u-b1-242",
@@ -2608,7 +2759,8 @@
     "definition": "Ubetinget fengsel er en straff der en person faktisk må sitte i fengsel, uten mulighet til å slippe fri tidlig på grunn av god oppførsel.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-247",
@@ -2626,7 +2778,8 @@
     "definition": "Å ikke være til stede på et sted der man vanligvis er, for eksempel fordi man reiser eller er opptatt.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-248",
@@ -2643,7 +2796,8 @@
     "example_german": "Sie waren sich einig, dass das Treffen auf Freitag verschoben werden sollte.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-249",
@@ -2660,7 +2814,8 @@
     "example_german": "In diesem Job ist es wichtig, flexibel zu sein.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "workplace"
   },
   {
     "id": "u-b1-250",
@@ -2677,7 +2832,8 @@
     "example_german": "Es ist klug, gut auf das Vorstellungsgespräch vorbereitet zu sein.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-251",
@@ -2694,7 +2850,8 @@
     "example_german": "Ich habe es satt, auf den Bus zu warten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-252",
@@ -2711,7 +2868,8 @@
     "example_german": "Es ist leichter zu lernen, wenn man motiviert ist.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-253",
@@ -2728,7 +2886,8 @@
     "example_german": "Sie interessiert sich sehr für den Umweltschutz.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-254",
@@ -2745,7 +2904,8 @@
     "example_german": "Viele junge Menschen sind politisch aktiv und engagieren sich in der Lokalpolitik.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "politics"
   },
   {
     "id": "u-b1-255",
@@ -2762,7 +2922,8 @@
     "example_german": "Sie ist dafür bekannt, prinzipientreu zu sein und sich nicht unter Druck setzen zu lassen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-256",
@@ -2779,7 +2940,8 @@
     "example_german": "Wir sind auf der Suche nach einem neuen Mitarbeiter.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-257",
@@ -2796,7 +2958,8 @@
     "example_german": "Sie hat Angst davor, vor großen Gruppen zu sprechen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-258",
@@ -2813,7 +2976,8 @@
     "example_german": "Meine Eltern sind seit zehn Jahren geschieden.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-b1-259",
@@ -2830,7 +2994,8 @@
     "example_german": "Er ist sehr stur und ändert selten seine Meinung.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-260",
@@ -2847,7 +3012,8 @@
     "example_german": "Sie ist vor der Prüfung sehr gestresst.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-261",
@@ -2864,7 +3030,8 @@
     "example_german": "Ich bin sehr dankbar für die ganze Hilfe, die du mir gegeben hast.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-262",
@@ -2881,7 +3048,8 @@
     "example_german": "Sie waren sich nicht einig darüber, wie das Projekt durchgeführt werden sollte.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-263",
@@ -2898,7 +3066,8 @@
     "example_german": "Niemand sollte wegen seiner Herkunft diskriminiert werden.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-264",
@@ -2915,7 +3084,8 @@
     "example_german": "Wir alle werden von den Menschen beeinflusst, mit denen wir uns umgeben.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-265",
@@ -2932,7 +3102,8 @@
     "example_german": "Viele Minderheitsgruppen wurden im Laufe der Geschichte unterdrückt.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-266",
@@ -2949,7 +3120,8 @@
     "example_german": "Es ist wichtig, dass sich alle Schüler in der Klasse einbezogen fühlen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "education"
   },
   {
     "id": "u-b1-267",
@@ -2966,7 +3138,8 @@
     "example_german": "Viele junge Menschen kämpfen heute mit Angst.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-268",
@@ -2983,7 +3156,8 @@
     "example_german": "Er ist dafür bekannt, gute Werte zu haben und immer ehrlich zu handeln.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-269",
@@ -3000,7 +3174,8 @@
     "example_german": "Nach der Scheidung hat die Mutter das Sorgerecht für die Kinder.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "family"
   },
   {
     "id": "u-b1-271",
@@ -3017,7 +3192,8 @@
     "example_german": "Es ist nicht immer einfach, das Leben alleine zu meistern.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-272",
@@ -3034,7 +3210,8 @@
     "example_german": "Es war ihr Traum, nach Japan zu reisen, und schließlich konnte sie sich diesen Wunsch erfüllen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-273",
@@ -3051,7 +3228,8 @@
     "example_german": "Er musste nach der Reise zehn Tage in Quarantäne bleiben.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "healthcare"
   },
   {
     "id": "u-b1-274",
@@ -3068,7 +3246,8 @@
     "example_german": "Es dauerte lange, bis der Arzt eine Diagnose stellen konnte.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "healthcare"
   },
   {
     "id": "u-b1-275",
@@ -3085,7 +3264,8 @@
     "example_german": "Es ist niemals akzeptabel, anderen gegenüber gewalttätig zu sein.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "society"
   },
   {
     "id": "u-b1-276",
@@ -3103,7 +3283,8 @@
     "definition": "Å begynne å bo i en ny bolig.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "accommodation"
   },
   {
     "id": "u-b1-277",
@@ -3121,7 +3302,8 @@
     "definition": "Å avslutte boforholdet og flytte til et annet sted.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "accommodation"
   },
   {
     "id": "u-b1-278",
@@ -3139,7 +3321,8 @@
     "definition": "Å betale for å overta eierskapet til en leilighet eller et hus.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "accommodation"
   },
   {
     "id": "u-b1-279",
@@ -3157,7 +3340,8 @@
     "definition": "Å varsle utleier om at man ønsker å avslutte leieforholdet.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "accommodation"
   },
   {
     "id": "u-b1-280",
@@ -3175,7 +3359,8 @@
     "definition": "Å ha hjemstedet sitt i et tett befolket urbant område.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "city-life"
   },
   {
     "id": "u-b1-281",
@@ -3193,7 +3378,8 @@
     "definition": "Å spørre noen om de kan hjelpe deg med noe.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-282",
@@ -3211,7 +3397,8 @@
     "definition": "Å si til noen hva du synes om arbeidet eller handlingen deres.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-283",
@@ -3229,7 +3416,8 @@
     "definition": "Å konsentrere seg fullt om hva noen sier og vise at man følger med.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-284",
@@ -3247,7 +3435,8 @@
     "definition": "Å fortelle noen om noe man mener eller er misfornøyd med.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-285",
@@ -3265,7 +3454,8 @@
     "definition": "Å akseptere at noe er over og slutte å holde fast på det.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-286",
@@ -3283,7 +3473,8 @@
     "definition": "Å ha like mye inntekter som utgifter, uten overskudd eller underskudd.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "economics"
   },
   {
     "id": "u-b1-287",
@@ -3301,7 +3492,8 @@
     "definition": "Å ta ut kontanter fra en bankkonto eller minibank.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "finance"
   },
   {
     "id": "u-b1-288",
@@ -3319,7 +3511,8 @@
     "definition": "Å komme seg etter sykdom og bli sunn igjen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-b1-289",
@@ -3337,7 +3530,8 @@
     "definition": "Å bruke norsk til å utveksle informasjon og ideer med andre.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "language-learning"
   },
   {
     "id": "u-b1-290",
@@ -3355,7 +3549,8 @@
     "definition": "Å si ordene i en tekst med stemmen slik at andre kan høre.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "language-learning"
   },
   {
     "id": "u-b1-291",
@@ -3373,7 +3568,8 @@
     "definition": "Å notere noe på papir eller skjerm for å huske det.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "language-learning"
   },
   {
     "id": "u-b1-292",
@@ -3391,7 +3587,8 @@
     "definition": "Å gjennomføre en test for å vise sine ferdigheter.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "language-learning"
   },
   {
     "id": "u-b1-293",
@@ -3409,7 +3606,8 @@
     "definition": "Å jobbe gjennom vanskelige følelser slik at man kan håndtere dem bedre.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-295",
@@ -3427,7 +3625,8 @@
     "definition": "Å snakke åpent med en person man stoler på om det man tenker og føler.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   },
   {
     "id": "u-b1-296",
@@ -3445,7 +3644,8 @@
     "definition": "Å få tilstrekkelig søvn slik at kroppen og hjernen kan hvile.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "health"
   },
   {
     "id": "u-b1-297",
@@ -3463,7 +3663,8 @@
     "definition": "Å hjelpe og oppmuntre en person som har det vanskelig.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "relationships"
   },
   {
     "id": "u-b1-298",
@@ -3481,7 +3682,8 @@
     "definition": "Å be noen andre om støtte eller behandling når man sliter.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "mental-wellbeing"
   },
   {
     "id": "u-b1-299",
@@ -3499,7 +3701,8 @@
     "definition": "Å oppnå det man har satt seg føre.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-300",
@@ -3517,7 +3720,8 @@
     "definition": "Å forsøke på nytt etter at man har mislyktes.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-301",
@@ -3535,7 +3739,8 @@
     "definition": "Å faktisk oppnå eller leve ut det man har drømt om.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "personal-growth"
   },
   {
     "id": "u-b1-302",
@@ -3553,7 +3758,8 @@
     "definition": "Å gjøre noe der utfallet er usikkert, og der det kan gå galt.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-303",
@@ -3571,7 +3777,8 @@
     "definition": "Å forklare noe grundig og vise at man forstår det.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-304",
@@ -3589,7 +3796,8 @@
     "definition": "Å tenke på noe og la det påvirke beslutningen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-305",
@@ -3607,7 +3815,8 @@
     "definition": "Å ha samme synspunkt som en annen person.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-306",
@@ -3625,7 +3834,8 @@
     "definition": "Å ha et annet synspunkt enn en annen person.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-309",
@@ -3643,7 +3853,8 @@
     "definition": "Å komme til et sted eller en avtale slik man har lovet.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-311",
@@ -3661,7 +3872,8 @@
     "definition": "Å sende en fil fra sin egen enhet til internett eller en sky-tjeneste.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "technology"
   },
   {
     "id": "u-b1-312",
@@ -3679,7 +3891,8 @@
     "definition": "Å hilse andre med en vennlig julehilsen.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "traditions"
   },
   {
     "id": "u-b1-314",
@@ -3697,7 +3910,8 @@
     "definition": "Å lete aktivt etter en leilighet eller et hus å bo i.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "accommodation"
   },
   {
     "id": "u-b1-315",
@@ -3715,7 +3929,8 @@
     "definition": "Å motta beskjed fra arbeidsgiveren om at arbeidsforholdet avsluttes.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "work"
   },
   {
     "id": "u-b1-317",
@@ -3733,7 +3948,8 @@
     "definition": "Et uttrykk man bruker for å markere at det man sier er ens eget syn.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "opinion-formulas"
   },
   {
     "id": "u-b1-318",
@@ -3751,7 +3967,8 @@
     "definition": "Et uttrykk for å introdusere et motstridende synspunkt.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-319",
@@ -3769,7 +3986,8 @@
     "definition": "Et uttrykk for å introdusere ett synspunkt i en diskusjon.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "discourse-markers"
   },
   {
     "id": "u-b1-320",
@@ -3787,7 +4005,8 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "Å veksle penger betyr å bytte en valuta mot en annen, for eksempel norske kroner mot euro. Det gjøres ofte på en bank eller et vekslingskontor."
+    "definition": "Å veksle penger betyr å bytte en valuta mot en annen, for eksempel norske kroner mot euro. Det gjøres ofte på en bank eller et vekslingskontor.",
+    "theme": "finance"
   },
   {
     "id": "u-b1-321",
@@ -3805,7 +4024,8 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "definition": "'Det er meg blaffen' er et uformelt uttrykk som betyr at man ikke bryr seg i det hele tatt om noe. Det brukes når noe er fullstendig likegyldig for en."
+    "definition": "'Det er meg blaffen' er et uformelt uttrykk som betyr at man ikke bryr seg i det hele tatt om noe. Det brukes når noe er fullstendig likegyldig for en.",
+    "theme": "idioms"
   },
   {
     "id": "u-b1-322",
@@ -3822,6 +4042,7 @@
     "example_german": "Nach dem Vortrag war Zeit für Fragen und Antworten.",
     "level": "B1",
     "category": "uttrykk",
-    "part": "phrase"
+    "part": "phrase",
+    "theme": "communication-skills"
   }
 ]

@@ -48,6 +48,7 @@ const FILES: { file: string; source: 'vocab' | 'uttrykk' }[] = [
   { file: 'uttrykk-a2.json', source: 'uttrykk' },
   { file: 'uttrykk-b1.json', source: 'uttrykk' },
   { file: 'uttrykk-b2.json', source: 'uttrykk' },
+  { file: 'uttrykk-c.json', source: 'uttrykk' },
   { file: 'norske_metaforiske_uttrykk_B1_B2.json', source: 'uttrykk' }
 ];
 

@@ -1,0 +1,1201 @@
+[
+  {
+    "id": "u-a2-001",
+    "norsk": "med andre ord",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-002",
+    "norsk": "for varmt/kaldt",
+    "proposed_theme": "weather",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-003",
+    "norsk": "Fryser du?: Ja, det er veldig kaldt.",
+    "proposed_theme": "weather",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-004",
+    "norsk": "Svetter du?: Ja, det er veldig varmt.",
+    "proposed_theme": "weather",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-005",
+    "norsk": "Er dere forelsket?: Ja, det er vi.",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-006",
+    "norsk": "Bor dere sammen?: Ja, vi er samboere.",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-007",
+    "norsk": "Regner det veldig mye?: Ja, det øsregner.",
+    "proposed_theme": "weather",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-008",
+    "norsk": "Er det veldig kaldt?: Ja, det er iskaldt.",
+    "proposed_theme": "weather",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-009",
+    "norsk": "Er du veldig sulten?: Ja, jeg er skrubbsulten.",
+    "proposed_theme": "body",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-010",
+    "norsk": "Velkommen. Takk skal du ha.",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-011",
+    "norsk": "Skal jeg bestille et glass øl til deg?. Bare vann til meg, takk.",
+    "proposed_theme": "shopping",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-012",
+    "norsk": "en stund",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  { "id": "u-a2-013", "norsk": "en feil", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-014",
+    "norsk": "å se ... ut",
+    "proposed_theme": "descriptive-adjectives",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-016",
+    "norsk": "å legge merke til",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-017",
+    "norsk": "å stole på noen",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-018",
+    "norsk": "å gå hånd i hånd",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-019",
+    "norsk": "å ha rett i noe",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-020",
+    "norsk": "å ha rett til noe",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-021",
+    "norsk": "å være avhengig av noe",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-022",
+    "norsk": "å være forsynt",
+    "proposed_theme": "cooking",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-023",
+    "norsk": "Det kan du si.",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-024",
+    "norsk": "Takk for i dag.",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-025", "norsk": "Takk for sist.", "proposed_theme": "idioms", "confidence": "high" },
+  {
+    "id": "u-a2-026",
+    "norsk": "Takk for maten.",
+    "proposed_theme": "cooking",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-027",
+    "norsk": "Ha det bra så lenge.",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-028",
+    "norsk": "Dette er ...",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-029", "norsk": "Vi ses!", "proposed_theme": "idioms", "confidence": "medium" },
+  { "id": "u-a2-030", "norsk": "Ha det!", "proposed_theme": "idioms", "confidence": "high" },
+  {
+    "id": "u-a2-031",
+    "norsk": "Ha en god dag!",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-032",
+    "norsk": "Hva slags",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-033",
+    "norsk": "Klart det!",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-034",
+    "norsk": "å ha sommerfugler i magen",
+    "proposed_theme": "idioms",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-035",
+    "norsk": "å ha rett",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-036",
+    "norsk": "å bli godkjent",
+    "proposed_theme": "occupations",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-037",
+    "norsk": "å bli lei av",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-038", "norsk": "å få øye på", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-039",
+    "norsk": "å ha ansvar for",
+    "proposed_theme": "occupations",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-040",
+    "norsk": "å legge vekt på",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-041",
+    "norsk": "å være interessert i",
+    "proposed_theme": "hobbies",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-042", "norsk": "å være født", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-043",
+    "norsk": "Et lite øyeblikk.",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-044",
+    "norsk": "Beklager, det er helt fullt.",
+    "proposed_theme": "shopping",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-045",
+    "norsk": "For en service!",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-046",
+    "norsk": "Nå er det din tur.",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-047",
+    "norsk": "Takk for hjelpen.",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-048", "norsk": "i nærheten", "proposed_theme": "directions", "confidence": "high" },
+  {
+    "id": "u-a2-049",
+    "norsk": "med en gang",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-050",
+    "norsk": "å ta feil",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-051",
+    "norsk": "å være lei seg",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-052",
+    "norsk": "å ringe etter",
+    "proposed_theme": "health",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-053", "norsk": "å være i form", "proposed_theme": "sports", "confidence": "high" },
+  {
+    "id": "u-a2-054",
+    "norsk": "å holde seg i form",
+    "proposed_theme": "sports",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-055",
+    "norsk": "å være enig i",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-056",
+    "norsk": "å være på vei",
+    "proposed_theme": "directions",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-057", "norsk": "å gå over", "proposed_theme": "health", "confidence": "medium" },
+  {
+    "id": "u-a2-058",
+    "norsk": "Ta til høyre i Kirkegata.",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-059",
+    "norsk": "Ta til venstre.",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-060",
+    "norsk": "Kjør rett fram.",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-061",
+    "norsk": "Hvor ligger leiligheten?",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-062",
+    "norsk": "Den ligger på venstre side.",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-063",
+    "norsk": "Sofaen står foran vinduet.",
+    "proposed_theme": "directions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-064",
+    "norsk": "Den står mellom døra og skapet.",
+    "proposed_theme": "directions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-065",
+    "norsk": "å like godt",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-066",
+    "norsk": "å like bedre (enn)",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-067",
+    "norsk": "å like best",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-069",
+    "norsk": "å ha rett til",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-072",
+    "norsk": "å holde en tale",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-075",
+    "norsk": "å ta det med ro",
+    "proposed_theme": "idioms",
+    "confidence": "high"
+  },
+  { "id": "u-a2-076", "norsk": "jul og nyttår", "proposed_theme": "time", "confidence": "medium" },
+  {
+    "id": "u-a2-077",
+    "norsk": "fram og tilbake",
+    "proposed_theme": "directions",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-078", "norsk": "i mål", "proposed_theme": "sports", "confidence": "medium" },
+  {
+    "id": "u-a2-079",
+    "norsk": "til huset",
+    "proposed_theme": "house-chores",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-080",
+    "norsk": "å starte for seg selv",
+    "proposed_theme": "occupations",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-081",
+    "norsk": "å få sitt eget",
+    "proposed_theme": "occupations",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-082",
+    "norsk": "å klare seg selv",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-083",
+    "norsk": "å se lyst på livet",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-084",
+    "norsk": "å ta lang tid",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-085",
+    "norsk": "å ha tid",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-086",
+    "norsk": "å lengte hjem",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-089",
+    "norsk": "komme an på",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-091", "norsk": "stå til", "proposed_theme": "idioms", "confidence": "high" },
+  {
+    "id": "u-a2-094",
+    "norsk": "ha behov for",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-095",
+    "norsk": "holde øye med",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-097",
+    "norsk": "holde seg fast",
+    "proposed_theme": "transport",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-098", "norsk": "se an", "proposed_theme": "idioms", "confidence": "medium" },
+  {
+    "id": "u-a2-099",
+    "norsk": "det er bare å",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-100",
+    "norsk": "gå an",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-101", "norsk": "ha tenkt", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-104",
+    "norsk": "skulle til å",
+    "proposed_theme": "time-expressions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-108",
+    "norsk": "kunne hende",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-109",
+    "norsk": "finne sted",
+    "proposed_theme": "time-expressions",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-110", "norsk": "gå tom for", "proposed_theme": "shopping", "confidence": "medium" },
+  { "id": "u-a2-116", "norsk": "la være", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-117",
+    "norsk": "å vaske klær",
+    "proposed_theme": "house-chores",
+    "confidence": "high"
+  },
+  { "id": "u-a2-118", "norsk": "å se på film", "proposed_theme": "hobbies", "confidence": "high" },
+  {
+    "id": "u-a2-119",
+    "norsk": "å spille dataspill",
+    "proposed_theme": "hobbies",
+    "confidence": "high"
+  },
+  { "id": "u-a2-120", "norsk": "å samle på", "proposed_theme": "hobbies", "confidence": "high" },
+  { "id": "u-a2-121", "norsk": "å gå forbi", "proposed_theme": "directions", "confidence": "high" },
+  {
+    "id": "u-a2-122",
+    "norsk": "å søke jobb",
+    "proposed_theme": "occupations",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-123",
+    "norsk": "å spille fotball",
+    "proposed_theme": "sports",
+    "confidence": "high"
+  },
+  { "id": "u-a2-124", "norsk": "å gå på ski", "proposed_theme": "sports", "confidence": "high" },
+  { "id": "u-a2-125", "norsk": "å heie på", "proposed_theme": "sports", "confidence": "high" },
+  {
+    "id": "u-a2-126",
+    "norsk": "å lufte hunden",
+    "proposed_theme": "house-chores",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-127",
+    "norsk": "Hvor er ...?",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-128",
+    "norsk": "Hvordan kommer jeg til ...?",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  { "id": "u-a2-129", "norsk": "om ettermiddagen", "proposed_theme": "time", "confidence": "high" },
+  { "id": "u-a2-130", "norsk": "om kvelden", "proposed_theme": "time", "confidence": "high" },
+  { "id": "u-a2-131", "norsk": "om natten", "proposed_theme": "time", "confidence": "high" },
+  { "id": "u-a2-132", "norsk": "i år", "proposed_theme": "time", "confidence": "high" },
+  {
+    "id": "u-a2-133",
+    "norsk": "for lenge siden",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-134",
+    "norsk": "i løpet av",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-135",
+    "norsk": "Kan du hjelpe meg?",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-136",
+    "norsk": "Kan du snakke saktere?",
+    "proposed_theme": "communication",
+    "confidence": "high"
+  },
+  { "id": "u-a2-137", "norsk": "lykke til", "proposed_theme": "idioms", "confidence": "high" },
+  { "id": "u-a2-138", "norsk": "god tur", "proposed_theme": "idioms", "confidence": "high" },
+  { "id": "u-a2-140", "norsk": "på salg", "proposed_theme": "shopping", "confidence": "high" },
+  {
+    "id": "u-a2-141",
+    "norsk": "i tillegg",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  { "id": "u-a2-142", "norsk": "det regner", "proposed_theme": "weather", "confidence": "high" },
+  { "id": "u-a2-143", "norsk": "det snør", "proposed_theme": "weather", "confidence": "high" },
+  { "id": "u-a2-144", "norsk": "det er sol", "proposed_theme": "weather", "confidence": "high" },
+  { "id": "u-a2-145", "norsk": "vondt i hodet", "proposed_theme": "health", "confidence": "high" },
+  { "id": "u-a2-146", "norsk": "vondt i magen", "proposed_theme": "health", "confidence": "high" },
+  {
+    "id": "u-a2-147",
+    "norsk": "ta temperaturen",
+    "proposed_theme": "health",
+    "confidence": "high"
+  },
+  { "id": "u-a2-148", "norsk": "allergisk mot", "proposed_theme": "health", "confidence": "high" },
+  { "id": "u-a2-149", "norsk": "sove godt", "proposed_theme": "health", "confidence": "medium" },
+  {
+    "id": "u-a2-150",
+    "norsk": "treffe venner",
+    "proposed_theme": "social-life",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-151",
+    "norsk": "holde kontakten",
+    "proposed_theme": "social-life",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-152",
+    "norsk": "si unnskyld",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-153",
+    "norsk": "sende en e-post",
+    "proposed_theme": "technology",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-154",
+    "norsk": "ta et bilde",
+    "proposed_theme": "technology",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-155",
+    "norsk": "spare energi",
+    "proposed_theme": "environment",
+    "confidence": "high"
+  },
+  { "id": "u-a2-156", "norsk": "spare penger", "proposed_theme": "money", "confidence": "high" },
+  { "id": "u-a2-157", "norsk": "bruke penger", "proposed_theme": "money", "confidence": "high" },
+  { "id": "u-a2-158", "norsk": "låne penger", "proposed_theme": "money", "confidence": "high" },
+  {
+    "id": "u-a2-160",
+    "norsk": "akkurat nå",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  { "id": "u-a2-161", "norsk": "å lære av", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-163", "norsk": "avhengig av", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-164",
+    "norsk": "å dekke bordet",
+    "proposed_theme": "house-chores",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-165",
+    "norsk": "dårlig humor",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-166",
+    "norsk": "dårlig tid",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-167",
+    "norsk": "dårlige veier",
+    "proposed_theme": "transport",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-168",
+    "norsk": "å jobbe ekstra",
+    "proposed_theme": "occupations",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-169",
+    "norsk": "ekstra flott",
+    "proposed_theme": "descriptive-adjectives",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-170",
+    "norsk": "en fast jobb",
+    "proposed_theme": "occupations",
+    "confidence": "high"
+  },
+  { "id": "u-a2-171", "norsk": "å gå feil", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-173", "norsk": "å føre regnskap", "proposed_theme": "money", "confidence": "high" },
+  {
+    "id": "u-a2-174",
+    "norsk": "å få tak i",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-175",
+    "norsk": "Er det noe galt?",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-176",
+    "norsk": "noen ganger",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-177",
+    "norsk": "en gang til",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-178",
+    "norsk": "med én gang",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  { "id": "u-a2-179", "norsk": "i fjor", "proposed_theme": "time", "confidence": "high" },
+  {
+    "id": "u-a2-180",
+    "norsk": "for ... siden",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-181",
+    "norsk": "for stor",
+    "proposed_theme": "descriptive-adjectives",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-182",
+    "norsk": "Det er rart for meg",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-183", "norsk": "For en dag!", "proposed_theme": "idioms", "confidence": "medium" },
+  {
+    "id": "u-a2-184",
+    "norsk": "å gå rett fram",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-185",
+    "norsk": "å ha fri",
+    "proposed_theme": "occupations",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-186",
+    "norsk": "hotellet er fullt",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-187",
+    "norsk": "De er gift",
+    "proposed_theme": "social-life",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-188",
+    "norsk": "Jeg vil gjerne ...",
+    "proposed_theme": "shopping",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-189",
+    "norsk": "å gjøre lekser",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-190",
+    "norsk": "De ser glade ut",
+    "proposed_theme": "descriptive-adjectives",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-191", "norsk": "god mat", "proposed_theme": "cooking", "confidence": "high" },
+  {
+    "id": "u-a2-192",
+    "norsk": "en god idé",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-193",
+    "norsk": "Godt jobba.",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  { "id": "u-a2-194", "norsk": "Vær så god.", "proposed_theme": "idioms", "confidence": "high" },
+  { "id": "u-a2-195", "norsk": "God morgen.", "proposed_theme": "idioms", "confidence": "high" },
+  {
+    "id": "u-a2-196",
+    "norsk": "Gratulerer med dagen",
+    "proposed_theme": "idioms",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-197",
+    "norsk": "å gå på norskkurs",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-198",
+    "norsk": "Det går fint.",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-200", "norsk": "å gå hjem", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-201",
+    "norsk": "å være hjemme",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-202",
+    "norsk": "i dårlig humør",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-203",
+    "norsk": "i godt humør",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-204", "norsk": "Ha det.", "proposed_theme": "idioms", "confidence": "high" },
+  {
+    "id": "u-a2-205",
+    "norsk": "å ha mye å gjøre",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-207",
+    "norsk": "i to år",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  { "id": "u-a2-208", "norsk": "i like måte", "proposed_theme": "idioms", "confidence": "high" },
+  {
+    "id": "u-a2-209",
+    "norsk": "å snakke høyt",
+    "proposed_theme": "communication",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-210",
+    "norsk": "å ta til høyre",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  { "id": "u-a2-211", "norsk": "ha fri", "proposed_theme": "occupations", "confidence": "medium" },
+  { "id": "u-a2-214", "norsk": "å klippe hår", "proposed_theme": "body", "confidence": "medium" },
+  {
+    "id": "u-a2-215",
+    "norsk": "å knekke brød",
+    "proposed_theme": "cooking",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-216", "norsk": "jo", "proposed_theme": "discourse-markers", "confidence": "high" },
+  {
+    "id": "u-a2-217",
+    "norsk": "Klart det",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-219",
+    "norsk": "å gå på kurs",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-220", "norsk": "kvart på", "proposed_theme": "time", "confidence": "high" },
+  { "id": "u-a2-221", "norsk": "kvart over", "proposed_theme": "time", "confidence": "high" },
+  { "id": "u-a2-222", "norsk": "på landet", "proposed_theme": "nature", "confidence": "high" },
+  { "id": "u-a2-223", "norsk": "hvor langt", "proposed_theme": "directions", "confidence": "high" },
+  {
+    "id": "u-a2-224",
+    "norsk": "langt borte",
+    "proposed_theme": "directions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-227",
+    "norsk": "hvor lenge",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-230",
+    "norsk": "å ha lyst på",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  { "id": "u-a2-232", "norsk": "å ta med", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-233",
+    "norsk": "midt på vinteren",
+    "proposed_theme": "weather",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-234",
+    "norsk": "å miste balansen",
+    "proposed_theme": "body",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-236", "norsk": "neste uke", "proposed_theme": "time", "confidence": "high" },
+  { "id": "u-a2-237", "norsk": "på nettet", "proposed_theme": "technology", "confidence": "high" },
+  {
+    "id": "u-a2-239",
+    "norsk": "å fortelle om",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-240",
+    "norsk": "å spørre om",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-241",
+    "norsk": "om tre dager",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-242",
+    "norsk": "sånn passe",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  { "id": "u-a2-243", "norsk": "god plass", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-244", "norsk": "å pusse tennene", "proposed_theme": "body", "confidence": "high" },
+  {
+    "id": "u-a2-245",
+    "norsk": "på norsk",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-246",
+    "norsk": "på norskkurs",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-247",
+    "norsk": "så rart",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-248",
+    "norsk": "å se rart ut",
+    "proposed_theme": "descriptive-adjectives",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-249",
+    "norsk": "å skrive rett fram",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-250",
+    "norsk": "å sitte i ro",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-251",
+    "norsk": "sammen med",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-252",
+    "norsk": "å snakke sammen",
+    "proposed_theme": "communication",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-253",
+    "norsk": "alle sammen",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-254", "norsk": "til sammen", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-259",
+    "norsk": "å skanne inn varer",
+    "proposed_theme": "shopping",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-261",
+    "norsk": "å sjekke ut",
+    "proposed_theme": "shopping",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-262",
+    "norsk": "å sjekke inn",
+    "proposed_theme": "shopping",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-263",
+    "norsk": "selv om",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-265",
+    "norsk": "slik at",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-266",
+    "norsk": "deg selv",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-267",
+    "norsk": "god service",
+    "proposed_theme": "shopping",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-270",
+    "norsk": "til slutt",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-271",
+    "norsk": "å ha dårlig smak",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-272", "norsk": "stakkars deg", "proposed_theme": "idioms", "confidence": "medium" },
+  {
+    "id": "u-a2-273",
+    "norsk": "etter en stund",
+    "proposed_theme": "time-expressions",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-274", "norsk": "to stykker", "proposed_theme": "shopping", "confidence": "medium" },
+  { "id": "u-a2-276", "norsk": "ikke så mye", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-277",
+    "norsk": "så hyggelig",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-278",
+    "norsk": "ha det bra så lenge",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-279",
+    "norsk": "å ta en kopp kaffe",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-280", "norsk": "å ta buss", "proposed_theme": "transport", "confidence": "high" },
+  {
+    "id": "u-a2-281",
+    "norsk": "å ta en dusj",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-283", "norsk": "takk for det", "proposed_theme": "idioms", "confidence": "medium" },
+  {
+    "id": "u-a2-284",
+    "norsk": "å ha dårlig tid",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-a2-285",
+    "norsk": "å komme tidsnok",
+    "proposed_theme": "time-expressions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-286",
+    "norsk": "en ting til",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-287",
+    "norsk": "å jobbe turnus",
+    "proposed_theme": "occupations",
+    "confidence": "high"
+  },
+  { "id": "u-a2-288", "norsk": "å gå ut", "proposed_theme": "social-life", "confidence": "medium" },
+  {
+    "id": "u-a2-289",
+    "norsk": "på venstre side",
+    "proposed_theme": "directions",
+    "confidence": "high"
+  },
+  { "id": "u-a2-290", "norsk": "vent litt", "proposed_theme": "idioms", "confidence": "medium" },
+  { "id": "u-a2-291", "norsk": "å gjøre vondt", "proposed_theme": "body", "confidence": "medium" },
+  { "id": "u-a2-292", "norsk": "vær så god", "proposed_theme": "idioms", "confidence": "high" },
+  {
+    "id": "u-a2-293",
+    "norsk": "personlig økonomi",
+    "proposed_theme": "money",
+    "confidence": "high"
+  },
+
+  { "id": "u-a2-015", "norsk": "å slå seg ned", "proposed_theme": "general", "confidence": "low" },
+  {
+    "id": "u-a2-068",
+    "norsk": "å bestemme seg",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-070", "norsk": "å pynte seg", "proposed_theme": "clothing", "confidence": "high" },
+  { "id": "u-a2-071", "norsk": "å ønske seg", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-073", "norsk": "å fylle ut", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-074", "norsk": "å ordne seg", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-087", "norsk": "å gi opp", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-088",
+    "norsk": "å melde seg inn",
+    "proposed_theme": "hobbies",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-090", "norsk": "holde på", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-092", "norsk": "komme på", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-093", "norsk": "legge til", "proposed_theme": "general", "confidence": "low" },
+  {
+    "id": "u-a2-096",
+    "norsk": "holde med",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-102", "norsk": "holde opp", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-103", "norsk": "komme over", "proposed_theme": "general", "confidence": "medium" },
+  { "id": "u-a2-105", "norsk": "legge på seg", "proposed_theme": "body", "confidence": "high" },
+  {
+    "id": "u-a2-106",
+    "norsk": "kjenne igjen",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-107",
+    "norsk": "holde til",
+    "proposed_theme": "directions",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-111", "norsk": "få med seg", "proposed_theme": "general", "confidence": "low" },
+  { "id": "u-a2-112", "norsk": "gå av", "proposed_theme": "transport", "confidence": "medium" },
+  {
+    "id": "u-a2-113",
+    "norsk": "gå med på",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  { "id": "u-a2-114", "norsk": "bli til", "proposed_theme": "general", "confidence": "low" },
+  { "id": "u-a2-115", "norsk": "være til", "proposed_theme": "general", "confidence": "low" },
+  {
+    "id": "u-a2-139",
+    "norsk": "søke på nett",
+    "proposed_theme": "technology",
+    "confidence": "high"
+  },
+  { "id": "u-a2-159", "norsk": "betale tilbake", "proposed_theme": "money", "confidence": "high" },
+  { "id": "u-a2-212", "norsk": "å klare seg", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-218",
+    "norsk": "komme fra",
+    "proposed_theme": "social-life",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-226", "norsk": "å bli lei seg", "proposed_theme": "general", "confidence": "high" },
+  {
+    "id": "u-a2-228",
+    "norsk": "å leve av",
+    "proposed_theme": "occupations",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-229", "norsk": "å like seg", "proposed_theme": "general", "confidence": "medium" },
+  {
+    "id": "u-a2-238",
+    "norsk": "å lete etter",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-a2-255",
+    "norsk": "å sminke seg",
+    "proposed_theme": "clothing",
+    "confidence": "medium"
+  },
+  { "id": "u-a2-257", "norsk": "å slå seg", "proposed_theme": "health", "confidence": "medium" },
+  { "id": "u-a2-282", "norsk": "å ta med seg", "proposed_theme": "general", "confidence": "medium" }
+]

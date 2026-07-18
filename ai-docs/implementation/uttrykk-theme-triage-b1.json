@@ -1,0 +1,1328 @@
+[
+  {
+    "id": "u-b1-001",
+    "norsk": "alvorlig talt",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-002",
+    "norsk": "annenhver uke",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-003",
+    "norsk": "av og til",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-004",
+    "norsk": "begge deler",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-005",
+    "norsk": "bestille time",
+    "proposed_theme": "healthcare",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-007",
+    "norsk": "betinget fengsel",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-009",
+    "norsk": "bli borte",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-010",
+    "norsk": "bli mobbet",
+    "proposed_theme": "relationships",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-011",
+    "norsk": "bli skuffet",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-012",
+    "norsk": "bli slutt",
+    "proposed_theme": "relationships",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-013",
+    "norsk": "bli straffet",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-014",
+    "norsk": "bli uvenner",
+    "proposed_theme": "relationships",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-015",
+    "norsk": "bli vant til",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-017",
+    "norsk": "bryte loven",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-021",
+    "norsk": "bærekraftig utvikling",
+    "proposed_theme": "sustainability",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-022",
+    "norsk": "Det gikk opp for meg",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-023",
+    "norsk": "det har mye å si",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-024",
+    "norsk": "Det nytter ikke",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-029",
+    "norsk": "dårlig stemning",
+    "proposed_theme": "relationships",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-030",
+    "norsk": "egen hånd",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-031",
+    "norsk": "en sosial magnet",
+    "proposed_theme": "relationships",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-032",
+    "norsk": "enig om",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-033",
+    "norsk": "er avhengig av",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-034",
+    "norsk": "Er det noe i veien?",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-035",
+    "norsk": "er nødt til",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-036",
+    "norsk": "et allsidig kosthold",
+    "proposed_theme": "health",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-037",
+    "norsk": "et bortskjemt barn",
+    "proposed_theme": "family",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-038",
+    "norsk": "et nasjonalt trekk",
+    "proposed_theme": "culture",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-039",
+    "norsk": "et par år",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-040",
+    "norsk": "etter hvert",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-041",
+    "norsk": "falle en inn",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-042",
+    "norsk": "fast jobb",
+    "proposed_theme": "work",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-045",
+    "norsk": "finne tonen",
+    "proposed_theme": "relationships",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-047",
+    "norsk": "For noe tull!",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-053",
+    "norsk": "fossil energi",
+    "proposed_theme": "environment",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-054",
+    "norsk": "fra hånd til munn",
+    "proposed_theme": "finance",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-056",
+    "norsk": "fri flyt",
+    "proposed_theme": "economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-057",
+    "norsk": "fryse i hjel",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-059",
+    "norsk": "få hverdagen til å gå rundt",
+    "proposed_theme": "finance",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-060",
+    "norsk": "få noen til å gjøre noe",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-062",
+    "norsk": "få viljen sin",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-065",
+    "norsk": "før i tida",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-067",
+    "norsk": "først og fremst",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-068",
+    "norsk": "i gang",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-069",
+    "norsk": "gi blaffen",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-073",
+    "norsk": "gi råd",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-077",
+    "norsk": "gjøre avtaler",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-078",
+    "norsk": "gjøre sitt",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-079",
+    "norsk": "glipp; gå glipp av",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-080",
+    "norsk": "gå galt",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-081",
+    "norsk": "gå glipp av",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-082",
+    "norsk": "gå i oppfyllelse",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-085",
+    "norsk": "gå sin vei",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-088",
+    "norsk": "ha ansvar for",
+    "proposed_theme": "family",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-089",
+    "norsk": "ha betydning",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-091",
+    "norsk": "ha dårlig samvittighet",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-092",
+    "norsk": "ha god helse",
+    "proposed_theme": "health",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-093",
+    "norsk": "ha godt av",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-094",
+    "norsk": "ha godt humør",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-095",
+    "norsk": "ha inntrykk av",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-096",
+    "norsk": "ha kontakt med",
+    "proposed_theme": "relationships",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-097",
+    "norsk": "ha rett",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-098",
+    "norsk": "ha rett til",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-099",
+    "norsk": "ha råd til",
+    "proposed_theme": "finance",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-100",
+    "norsk": "ha uflaks",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-101",
+    "norsk": "handle om",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-103",
+    "norsk": "god helse",
+    "proposed_theme": "health",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-106",
+    "norsk": "holde mål",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-107",
+    "norsk": "holde seg i form",
+    "proposed_theme": "fitness",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-108",
+    "norsk": "holde seg oppdatert",
+    "proposed_theme": "media",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-110",
+    "norsk": "holde tale",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-112",
+    "norsk": "holde ved like",
+    "proposed_theme": "language-learning",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-113",
+    "norsk": "det holdt ikke",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-114",
+    "norsk": "hver enkelt",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-115",
+    "norsk": "høre hjemme",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-117",
+    "norsk": "høres – ut",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-118",
+    "norsk": "høyere utdanning",
+    "proposed_theme": "education",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-119",
+    "norsk": "i alle fall",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-120",
+    "norsk": "i det siste",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-121",
+    "norsk": "i fred",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-122",
+    "norsk": "i hemmelighet",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-123",
+    "norsk": "i likhet med",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-124",
+    "norsk": "i området",
+    "proposed_theme": "city-life",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-125",
+    "norsk": "i regi av",
+    "proposed_theme": "arts-culture",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-126",
+    "norsk": "i ro og fred",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-127",
+    "norsk": "i stedet for",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-128",
+    "norsk": "i tillegg til",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-129",
+    "norsk": "i veien",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-130",
+    "norsk": "ikke bare bare",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-134",
+    "norsk": "kaste bort tid",
+    "proposed_theme": "time-expressions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-136",
+    "norsk": "bli kjent med",
+    "proposed_theme": "relationships",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-139",
+    "norsk": "komme i form",
+    "proposed_theme": "fitness",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-140",
+    "norsk": "komme i gang",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-141",
+    "norsk": "komme overens",
+    "proposed_theme": "relationships",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-142",
+    "norsk": "komme til bunns i",
+    "proposed_theme": "reasoning",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-145",
+    "norsk": "late som",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-147",
+    "norsk": "legge merke til",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-153",
+    "norsk": "ligge godt an",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-159",
+    "norsk": "midt i blinken",
+    "proposed_theme": "idioms",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-160",
+    "norsk": "min tur",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-161",
+    "norsk": "minne om",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-162",
+    "norsk": "nyte livet",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-163",
+    "norsk": "når det gjelder",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-165",
+    "norsk": "om det trengs",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-169",
+    "norsk": "pleie vennskap",
+    "proposed_theme": "relationships",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-171",
+    "norsk": "på egen hånd",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-172",
+    "norsk": "på forhånd",
+    "proposed_theme": "time-expressions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-173",
+    "norsk": "redd for",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-175",
+    "norsk": "reise kollektivt",
+    "proposed_theme": "travel",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-176",
+    "norsk": "rett og slett",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-177",
+    "norsk": "rett til",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-180",
+    "norsk": "ha dårlig råd",
+    "proposed_theme": "finance",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-182",
+    "norsk": "rødt kjøtt",
+    "proposed_theme": "health",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-185",
+    "norsk": "sette grenser",
+    "proposed_theme": "family",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-186",
+    "norsk": "sette pris på",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-193",
+    "norsk": "skulle til",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-194",
+    "norsk": "skyld i",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-195",
+    "norsk": "for – skyld",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-197",
+    "norsk": "slett; rett og slett",
+    "proposed_theme": "discourse-markers",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-200",
+    "norsk": "slippe å",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-201",
+    "norsk": "slå an",
+    "proposed_theme": "culture",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-204",
+    "norsk": "smertestillende tabletter",
+    "proposed_theme": "healthcare",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-205",
+    "norsk": "sosial magnet",
+    "proposed_theme": "relationships",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-206",
+    "norsk": "sosiale ferdigheter",
+    "proposed_theme": "communication-skills",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-208",
+    "norsk": "spise om kapp",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-210",
+    "norsk": "starte for seg selv",
+    "proposed_theme": "work",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-211",
+    "norsk": "starte på nytt",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-212",
+    "norsk": "sted; av sted",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-213",
+    "norsk": "Det stemmer",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-214",
+    "norsk": "stikke innom",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-216",
+    "norsk": "stotre og stamme",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-218",
+    "norsk": "tre stykker",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-219",
+    "norsk": "stå fram som",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-220",
+    "norsk": "stå på spill",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-221",
+    "norsk": "åpen søknad",
+    "proposed_theme": "work",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-222",
+    "norsk": "sørge for",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-223",
+    "norsk": "ta alvorlig",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-224",
+    "norsk": "ta del",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-225",
+    "norsk": "ta det med ro",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-226",
+    "norsk": "ta fatt på",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-227",
+    "norsk": "ta hensyn til",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-228",
+    "norsk": "ta initiativ",
+    "proposed_theme": "workplace",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-229",
+    "norsk": "ta kontroll",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-230",
+    "norsk": "ta mot til seg",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-232",
+    "norsk": "ta tak i",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-233",
+    "norsk": "ta vare på",
+    "proposed_theme": "health",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-234",
+    "norsk": "tenne bål",
+    "proposed_theme": "general",
+    "confidence": "low"
+  },
+  {
+    "id": "u-b1-235",
+    "norsk": "tie stille",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-236",
+    "norsk": "til havs",
+    "proposed_theme": "work",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-240",
+    "norsk": "trykte medier",
+    "proposed_theme": "media",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-241",
+    "norsk": "tykte medier",
+    "proposed_theme": "media",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-242",
+    "norsk": "ubetinget fengsel",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-247",
+    "norsk": "være borte",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-248",
+    "norsk": "være enige om",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-249",
+    "norsk": "være fleksibel",
+    "proposed_theme": "workplace",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-250",
+    "norsk": "være forberedt",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-251",
+    "norsk": "være lei",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-252",
+    "norsk": "være motivert",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-253",
+    "norsk": "være opptatt av",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-254",
+    "norsk": "være politisk aktiv",
+    "proposed_theme": "politics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-255",
+    "norsk": "være prinsippfast",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-256",
+    "norsk": "være på utkikk etter",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-257",
+    "norsk": "være redd for",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-258",
+    "norsk": "være skilt",
+    "proposed_theme": "family",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-259",
+    "norsk": "være sta",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-260",
+    "norsk": "være stresset",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-261",
+    "norsk": "være takknemlig",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-262",
+    "norsk": "være uenig",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-263",
+    "norsk": "å bli diskriminert",
+    "proposed_theme": "society",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-264",
+    "norsk": "å bli påvirket",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-265",
+    "norsk": "å bli undertrykt",
+    "proposed_theme": "society",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-266",
+    "norsk": "å føle seg inkludert",
+    "proposed_theme": "education",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-267",
+    "norsk": "å ha angst",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-268",
+    "norsk": "å ha god moral",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-269",
+    "norsk": "å ha omsorgen for noen",
+    "proposed_theme": "family",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-271",
+    "norsk": "å mestre livet",
+    "proposed_theme": "personal-growth",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-272",
+    "norsk": "å oppfylle et ønske",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-273",
+    "norsk": "å sitte i karantene",
+    "proposed_theme": "healthcare",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-274",
+    "norsk": "å stille en diagnose",
+    "proposed_theme": "healthcare",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-275",
+    "norsk": "å være voldelig",
+    "proposed_theme": "society",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-276",
+    "norsk": "å flytte inn",
+    "proposed_theme": "accommodation",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-277",
+    "norsk": "å flytte ut",
+    "proposed_theme": "accommodation",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-278",
+    "norsk": "å kjøpe bolig",
+    "proposed_theme": "accommodation",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-279",
+    "norsk": "å si opp leiekontrakten",
+    "proposed_theme": "accommodation",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-280",
+    "norsk": "å bo i by",
+    "proposed_theme": "city-life",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-281",
+    "norsk": "å be om hjelp",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-282",
+    "norsk": "å gi tilbakemelding",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-283",
+    "norsk": "å lytte aktivt",
+    "proposed_theme": "communication-skills",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-284",
+    "norsk": "å si i fra",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-285",
+    "norsk": "å gi slipp på",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-286",
+    "norsk": "å gå i balanse",
+    "proposed_theme": "economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-287",
+    "norsk": "å heve penger",
+    "proposed_theme": "finance",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-288",
+    "norsk": "å bli frisk",
+    "proposed_theme": "health",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-289",
+    "norsk": "å kommunisere på norsk",
+    "proposed_theme": "language-learning",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-290",
+    "norsk": "å lese høyt",
+    "proposed_theme": "language-learning",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-291",
+    "norsk": "å skrive ned",
+    "proposed_theme": "language-learning",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-292",
+    "norsk": "å ta en prøve",
+    "proposed_theme": "language-learning",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-293",
+    "norsk": "å bearbeide følelser",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-295",
+    "norsk": "å prate med noen",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-296",
+    "norsk": "å sove nok",
+    "proposed_theme": "health",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-297",
+    "norsk": "å støtte noen",
+    "proposed_theme": "relationships",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-298",
+    "norsk": "å søke hjelp",
+    "proposed_theme": "mental-wellbeing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-299",
+    "norsk": "å nå et mål",
+    "proposed_theme": "personal-growth",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-300",
+    "norsk": "å prøve igjen",
+    "proposed_theme": "personal-growth",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-301",
+    "norsk": "å realisere drømmer",
+    "proposed_theme": "personal-growth",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-302",
+    "norsk": "å ta risiko",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-303",
+    "norsk": "å gjøre rede for",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-304",
+    "norsk": "å ta hensyn til",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-305",
+    "norsk": "å være enig",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-306",
+    "norsk": "å være uenig",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-309",
+    "norsk": "å møte opp",
+    "proposed_theme": "general",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-311",
+    "norsk": "å laste opp",
+    "proposed_theme": "technology",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-312",
+    "norsk": "å ønske hverandre glad jul",
+    "proposed_theme": "traditions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-314",
+    "norsk": "å søke bolig",
+    "proposed_theme": "accommodation",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-315",
+    "norsk": "å bli oppsagt",
+    "proposed_theme": "work",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-317",
+    "norsk": "etter min mening",
+    "proposed_theme": "opinion-formulas",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-318",
+    "norsk": "på den andre siden",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-319",
+    "norsk": "på den ene siden",
+    "proposed_theme": "discourse-markers",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-320",
+    "norsk": "veksle penger",
+    "proposed_theme": "finance",
+    "confidence": "high"
+  },
+  {
+    "id": "u-b1-321",
+    "norsk": "blaffen",
+    "proposed_theme": "idioms",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-b1-322",
+    "norsk": "spørsmål og svar",
+    "proposed_theme": "communication-skills",
+    "confidence": "medium"
+  }
+]

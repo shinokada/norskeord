@@ -1,0 +1,3915 @@
+[
+  {
+    "id": "u-c-001",
+    "norsk": "å reflektere over",
+    "definition": "Å tenke dypt og nøye på noe for å forstå det bedre.",
+    "proposed_category": "academic",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-002",
+    "norsk": "å konkludere med at",
+    "definition": "Å komme fram til en endelig mening eller et svar etter å ha undersøkt eller diskutert noe.",
+    "proposed_category": "academic",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-003",
+    "norsk": "å argumentere for at",
+    "definition": "Å gi grunner og bevis for å overbevise andre om at noe er riktig eller sant.",
+    "proposed_category": "rhetoric",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-004",
+    "norsk": "å peke på",
+    "definition": "Å trekke oppmerksomhet mot noe viktig, slik at andre legger merke til det.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-005",
+    "norsk": "å lengte etter",
+    "definition": "Å ha en sterk og varm ønske om noe eller noen som ikke er der.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-006",
+    "norsk": "å rapportere til",
+    "definition": "Å ha en leder man er ansvarlig overfor og gir informasjon om sitt arbeid til.",
+    "proposed_category": "professional",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-007",
+    "norsk": "å stige ned i",
+    "definition": "Å gå eller bevege seg ned i noe, ofte brukt om en reise til et farlig eller mørkt sted i litteraturen.",
+    "proposed_category": "literary",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-008",
+    "norsk": "å arve mantel",
+    "definition": "Å overta en persons rolle, ansvar eller posisjon etter at de har sluttet eller dødd.",
+    "proposed_category": "archaic",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-009",
+    "norsk": "å feste tro til",
+    "definition": "Å tro på noe eller stole på at noe er sant.",
+    "proposed_category": "archaic",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-010",
+    "norsk": "å råde over",
+    "definition": "Å ha makt eller kontroll over noe eller noen.",
+    "proposed_category": "archaic",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-011",
+    "norsk": "å anmode om",
+    "definition": "Å be om noe på en formell og høflig måte, ofte skriftlig og i offentlig sammenheng.",
+    "proposed_category": "highly-formal",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-012",
+    "norsk": "å fremme en klage",
+    "definition": "Å levere en offisiell protest eller et formelt ønske om at noe skal vurderes på nytt.",
+    "proposed_category": "advanced-law-justice",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-013",
+    "norsk": "å avsi dom",
+    "definition": "Å offentlig kunngjøre den endelige avgjørelsen i en rettssak.",
+    "proposed_category": "advanced-law-justice",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-014",
+    "norsk": "med utgangspunkt i",
+    "definition": "Ved å bruke noe som grunnlag eller startpunkt for videre tenkning eller konklusjon.",
+    "proposed_category": "formal-writing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-015",
+    "norsk": "i lys av",
+    "definition": "Når man tar hensyn til ny eller relevant informasjon som påvirker hvordan man forstår noe.",
+    "proposed_category": "formal-writing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-016",
+    "norsk": "i henhold til",
+    "definition": "Brukes for å si at noe følger regler, lover eller avtaler som allerede er bestemt.",
+    "proposed_category": "formal-writing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-017",
+    "norsk": "Den som graver en grop for andre, faller selv i den.",
+    "definition": "Hvis du prøver å skade eller lure noen, risikerer du å skade deg selv i stedet.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-018",
+    "norsk": "Borte bra, hjemme best.",
+    "definition": "Selv om det er fint å reise og oppleve nye steder, er hjemmet alltid det beste stedet å være.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-019",
+    "norsk": "Ingen røyk uten ild.",
+    "definition": "Hvis det finnes rykter eller tegn på noe, er det som regel noe sant i det.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-020",
+    "norsk": "Den tidlig står opp, får mye gjort.",
+    "definition": "Hvis du begynner på arbeidet tidlig, rekker du å gjøre mer i løpet av dagen.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-021",
+    "norsk": "Mange bekker små gjør en stor å.",
+    "definition": "Mange små bidrag eller mengder kan til sammen bli noe stort og viktig.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-022",
+    "norsk": "Æren er bedre enn gull.",
+    "definition": "Det å ha et godt rykte og handle riktig er viktigere enn å være rik.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-023",
+    "norsk": "Livet er ikke noen dans på roser.",
+    "definition": "Livet er ofte vanskelig og fullt av utfordringer, ikke alltid lett og behagelig.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-024",
+    "norsk": "Det er ingen skam å snu.",
+    "definition": "Det er helt greit å endre mening eller gå tilbake hvis du ser at noe ikke fungerer.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-025",
+    "norsk": "Kjært barn har mange navn.",
+    "definition": "Noe eller noen som folk setter stor pris på, får ofte mange forskjellige navn eller betegnelser.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-026",
+    "norsk": "Man skal ikke selge skinnet før bjørnen er skutt.",
+    "definition": "Ikke anta at noe er sikkert før det faktisk har skjedd.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-027",
+    "norsk": "Den som tier, samtykker.",
+    "definition": "Hvis du ikke sier imot, regnes det som at du er enig.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-028",
+    "norsk": "Sannhet og tro er ikke det samme.",
+    "definition": "Det at noen tror noe er sant, betyr ikke at det faktisk er sant.",
+    "proposed_category": "proverbs",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-029",
+    "norsk": "Bedre sent enn aldri.",
+    "definition": "Det er bedre å gjøre noe for sent enn å ikke gjøre det i det hele tatt.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-030",
+    "norsk": "Ord er sølv, men taushet er gull.",
+    "definition": "Det er ofte klokere å holde seg stille enn å snakke mye.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-031",
+    "norsk": "Ensomhet er den vises selskap.",
+    "definition": "Kloke mennesker kan ha det godt alene og trenger ikke alltid andre rundt seg.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-032",
+    "norsk": "Den som lever skjult, lever godt.",
+    "definition": "Et stille liv uten mye oppmerksomhet fra andre kan være det beste livet.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-033",
+    "norsk": "Ingenting er nytt under solen.",
+    "definition": "Alt som skjer i dag, har skjedd før — verden gjentar seg.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-034",
+    "norsk": "Ende god, alt godt.",
+    "definition": "Hvis resultatet til slutt er bra, spiller det ingen rolle at veien dit var vanskelig.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-035",
+    "norsk": "Av skade blir man vis.",
+    "definition": "Man lærer best av egne feil og dårlige erfaringer.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-036",
+    "norsk": "Gammel vane er vond å vende.",
+    "definition": "Det er veldig vanskelig å forandre noe man har gjort på samme måte i lang tid.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-037",
+    "norsk": "Epler faller ikke langt fra stammen.",
+    "definition": "Barn ligner ofte foreldrene sine i måten de er eller oppfører seg på.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-038",
+    "norsk": "Tida leger alle sår.",
+    "definition": "Smerte og sorg blir mindre vanskelig å bære etter hvert som tiden går.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-039",
+    "norsk": "Uten mat og drikke duger helten ikke.",
+    "definition": "Selv de sterkeste og mest handlekraftige menneskene trenger mat og hvile.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-040",
+    "norsk": "Det er ikke gull alt som glimrer.",
+    "definition": "Noe som ser bra eller verdifullt ut på utsiden, er ikke alltid bra i virkeligheten.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-041",
+    "norsk": "i overensstemmelse med",
+    "definition": "På en måte som stemmer med eller følger regler, lover eller avtaler.",
+    "proposed_category": "formal-writing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-042",
+    "norsk": "det fremgår av",
+    "definition": "'Det fremgår av' brukes for å si at noe tydelig kommer frem eller kan leses ut av en kilde, for eksempel et dokument eller en tekst.",
+    "proposed_category": "formal-writing",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-043",
+    "norsk": "en ironi av skjebnen",
+    "definition": "'En ironi av skjebnen' beskriver en situasjon der noe merkelig eller paradoksalt skjer, som om skjebnen bevisst leker med mennesker.",
+    "proposed_category": "literary",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-044",
+    "norsk": "Øvelse gjør mester.",
+    "definition": "'Øvelse gjør mester' er et ordtak som betyr at man blir god på noe ved å øve mye og regelmessig.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-045",
+    "norsk": "å stå for døra",
+    "definition": "Brukes om noe som er nært forestående og snart vil skje.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-046",
+    "norsk": "forventningen rir ham",
+    "definition": "Brukes når noen kjenner forventningene så sterkt at det oppleves fysisk og litt overveldende.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-047",
+    "norsk": "om kapp",
+    "definition": "Når man gjør noe om kapp, konkurrerer man og prøver å bli best eller komme først.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-048",
+    "norsk": "å ta seg i (å gjøre) noe",
+    "definition": "Brukes når man oppdager at man gjør noe som er litt overraskende for en selv.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-049",
+    "norsk": "å røske opp",
+    "definition": "Betyr å dra eller trekke hardt opp, eller å åpne noe på en litt brutal måte.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-050",
+    "norsk": "å tyte fram",
+    "definition": "Betyr å stikke ut, piple eller sive.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-051",
+    "norsk": "i stier",
+    "definition": "Brukes om noe som beveger seg på rekker eller i små veier.",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-052",
+    "norsk": "riktig vanskelig",
+    "definition": "Brukes som en forsterker foran et adjektiv og betyr veldig.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-053",
+    "norsk": "å lede inn til",
+    "definition": "Betyr å føre inn til noe.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-054",
+    "norsk": "å kaste et stjålent blikk",
+    "definition": "Betyr å se på noen i det skjulte eller i hemmelighet.",
+    "proposed_category": "character-temperament",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-055",
+    "norsk": "prikk lik",
+    "definition": "Betyr helt lik eller identisk.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-056",
+    "norsk": "å lure noen trill rundt",
+    "definition": "Betyr å lure noen grundig, eller å narre noen slik at de blir forvirret.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-057",
+    "norsk": "det er få mennesker forunt",
+    "definition": "Brukes om noe som svært få mennesker får oppleve eller ta del i.",
+    "proposed_category": "existential-abstract",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-058",
+    "norsk": "skinnet bedrar",
+    "definition": "Brukes for å si at et fint eller vennlig ytre ikke nødvendigvis stemmer med virkeligheten.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-059",
+    "norsk": "i samme åndedrag",
+    "definition": "Betyr i samme øyeblikk eller samtidig.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-060",
+    "norsk": "å utfylle hverandre",
+    "definition": "Betyr å harmonere godt sammen, eller å passe bra sammen med ulike egenskaper.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-061",
+    "norsk": "å frastøte hverandre",
+    "definition": "Betyr å vekke motvilje hos hverandre, eller å kjenne gjensidig at man ikke ønsker å være sammen.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-062",
+    "norsk": "å dø i barsel",
+    "definition": "Betyr å dø mens man føder et barn, eller i etterkant av en fødsel.",
+    "proposed_category": "medicine-healthcare",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-063",
+    "norsk": "å bli tatt hånd om",
+    "definition": "Betyr å bli passet på av noen.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-064",
+    "norsk": "å havne i noens besittelse",
+    "definition": "Brukes når noe havner i en annens eie, og man dermed blir eier av det.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-065",
+    "norsk": "å ta ordet i sin makt",
+    "definition": "Betyr å bli flink til å uttrykke seg.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-066",
+    "norsk": "klingende sørlandsk",
+    "definition": "Betyr med klar og tydelig sørlandsdialekt.",
+    "proposed_category": "cultural-heritage",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-067",
+    "norsk": "å mane fram",
+    "definition": "Betyr å påkalle eller kalle fram noe.",
+    "proposed_category": "literary",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-068",
+    "norsk": "å vandre over til det hinsidige",
+    "definition": "Betyr å dø, med en religiøs hentydning.",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-069",
+    "norsk": "å være høyt og lavt",
+    "definition": "Betyr å være (for) aktiv, eller å være overalt.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-070",
+    "norsk": "å gå stille i dørene",
+    "definition": "Betyr å være stille for å unngå å lage bråk eller forstyrre.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-071",
+    "norsk": "å skrike og bære seg for noe",
+    "definition": "Betyr å klage og protestere høylytt over noe.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-072",
+    "norsk": "å gå i filler",
+    "definition": "Betyr å gå i stykker eller bli ødelagt.",
+    "proposed_category": "everyday-objects",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-073",
+    "norsk": "å ta på vei for noe",
+    "definition": "Betyr å bli sint, eller å fare opp for noe.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-074",
+    "norsk": "å sette seg på huk",
+    "definition": "Betyr å sette seg med bøyde knær og baken ned mot hælene.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-075",
+    "norsk": "før man får sukk for seg",
+    "definition": "Brukes når man vil si at noe går veldig raskt, før man rekker å sukke eller si noe.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-076",
+    "norsk": "ikke rikke seg av flekken",
+    "definition": "Betyr å ikke bevege seg i det hele tatt.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-077",
+    "norsk": "flunkende ny",
+    "definition": "Betyr splitter ny eller helt ny.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-078",
+    "norsk": "å strene av gårde",
+    "definition": "Betyr å gå fort, eller å farte av sted.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-079",
+    "norsk": "for lengst",
+    "definition": "Betyr for lenge siden.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-080",
+    "norsk": "å hive etter pusten",
+    "definition": "Betyr å være andpusten, eller å ha problemer med pusten.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-081",
+    "norsk": "fotfestet glipper",
+    "definition": "Når fotfestet glipper, sklir man.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-082",
+    "norsk": "å surre fast",
+    "definition": "Å binde fast.",
+    "proposed_category": "everyday-objects",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-083",
+    "norsk": "å være duket for",
+    "definition": "Å være lagt til rette for noe, eller å ha blitt klargjort for det.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-084",
+    "norsk": "stø kurs (en)",
+    "definition": "En fast og sikker retning som ikke vakler.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-085",
+    "norsk": "alderen biter ikke på henne",
+    "definition": "Hun ser ikke eldre ut selv om årene går.",
+    "proposed_category": "physical-appearance",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-086",
+    "norsk": "kloss ved",
+    "definition": "Like inntil eller nær noe.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-087",
+    "norsk": "å skyte i været",
+    "definition": "Å vokse fort og bli høy på kort tid.",
+    "proposed_category": "physical-appearance",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-089",
+    "norsk": "å vokte seg vel for",
+    "definition": "Å passe seg for noe.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-090",
+    "norsk": "med lua på snei",
+    "definition": "Med lua på skrå, ikke rett på hodet.",
+    "proposed_category": "physical-appearance",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-091",
+    "norsk": "å brase inn",
+    "definition": "Å gå rett inn i full fart.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-092",
+    "norsk": "uten nærmere overveielse (en)",
+    "definition": "Uten å tenke nærmere over saken.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-093",
+    "norsk": "å kverne rundt i hodet",
+    "definition": "Når man tenker de samme tankene om igjen og igjen, kverner det rundt i hodet.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-094",
+    "norsk": "å skvette til",
+    "definition": "Å rykke til eller bevege seg plutselig fordi man blir redd eller overrasket.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-095",
+    "norsk": "å bli tatt på fersken",
+    "definition": "Å bli oppdaget mens man gjør noe man vil skjule for andre.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-096",
+    "norsk": "skamrødmen melder seg",
+    "definition": "Når man blir veldig flau, kan skamrødmen melde seg, og man blir rød i ansiktet.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-097",
+    "norsk": "å gi til kjenne",
+    "definition": "Å vise noe åpent fram.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-098",
+    "norsk": "å komme som sendt fra oven",
+    "definition": "Å komme som en himmelens eller Guds gave.",
+    "proposed_category": "literary",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-099",
+    "norsk": "å riste av seg befippelsen",
+    "definition": "Å bli kvitt eller få bort følelsen av å være overrasket og overveldet.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-100",
+    "norsk": "fiskelykken står dem bi",
+    "definition": "Fiskelykken er med dem, og de får fisk.",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-101",
+    "norsk": "å sige på",
+    "definition": "Å komme litt etter litt, ofte i stor mengde.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-103",
+    "norsk": "å stille opp med",
+    "definition": "Å komme med noe, eller å bidra med noe.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-104",
+    "norsk": "å hagle med skjellsord (et)",
+    "definition": "Når det hagler med skjellsord, kommer det mange kritiske og sinte ord om noen.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-105",
+    "norsk": "å stramme en skrue",
+    "definition": "Å få en skrue til å sitte bedre eller være mer fast.",
+    "proposed_category": "everyday-objects",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-107",
+    "norsk": "det går ham på nervene",
+    "definition": "Det gjør ham irritabel.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-108",
+    "norsk": "å få gjennomgå",
+    "definition": "Å bli kritisert eller bli utsatt for fysisk vold.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-109",
+    "norsk": "å få endene til å møtes",
+    "definition": "Å klare seg økonomisk.",
+    "proposed_category": "finance-economics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-110",
+    "norsk": "å jobbe livet av seg",
+    "definition": "Å jobbe altfor mye.",
+    "proposed_category": "professional",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-111",
+    "norsk": "langt inne i granskauen",
+    "definition": "Avsides, langt borte fra steder der det bor folk.",
+    "proposed_category": "nature-landscape",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-112",
+    "norsk": "å gå i seg selv",
+    "definition": "Å reflektere over egne handlinger.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-114",
+    "norsk": "å sige nedover",
+    "definition": "Å gli nedover, eller å synke.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-116",
+    "norsk": "isen holder",
+    "definition": "Isen ødelegges ikke; den tåler vekten.",
+    "proposed_category": "nature-landscape",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-117",
+    "norsk": "isen svikter",
+    "definition": "Isen gir etter; isen ødelegges og tåler ikke vekten.",
+    "proposed_category": "nature-landscape",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-119",
+    "norsk": "isen bærer",
+    "definition": "Isen holder; den tåler vekten.",
+    "proposed_category": "nature-landscape",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-121",
+    "norsk": "å lesse på",
+    "definition": "Å legge på mye, eller å legge på et lass.",
+    "proposed_category": "everyday-objects",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-122",
+    "norsk": "å virvle seg inn i en spiral",
+    "definition": "Å komme inn i en negativ retning som det er vanskelig å komme seg ut av.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-124",
+    "norsk": "å legge sitt liv på vektskålen",
+    "definition": "Å evaluere sitt eget liv og sin egen rolle.",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-125",
+    "norsk": "gjøren og laden",
+    "definition": "Alt en gjør og alt en lar være å gjøre, altså ens oppførsel.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-126",
+    "norsk": "å gå seg selv etter i sømmene",
+    "definition": "Å undersøke seg selv og se på seg selv med et kritisk blikk.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-127",
+    "norsk": "Gjertruds mann fulgte på",
+    "definition": "Gjertruds mann døde kort tid etterpå.",
+    "proposed_category": "archaic",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-128",
+    "norsk": "å vandre heden",
+    "definition": "Å dø.",
+    "proposed_category": "archaic",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-129",
+    "norsk": "å ha blått blod i årene",
+    "definition": "Å være av kongelig eller adelig slekt.",
+    "proposed_category": "cultural-heritage",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-130",
+    "norsk": "å smatte med tungen",
+    "definition": "Å lage en smellende lyd med tungen, brukt som uttrykk for skepsis eller en fordømmende holdning.",
+    "proposed_category": "sensory-sound",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-131",
+    "norsk": "å knipe sammen",
+    "definition": "Å presse sammen.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-132",
+    "norsk": "ordene hagler",
+    "definition": "Når sinte ord kommer fort og ubehagelig.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-133",
+    "norsk": "å knytte nevene",
+    "definition": "Å lukke og stramme hendene.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-134",
+    "norsk": "å holde pusten",
+    "definition": "Å la være å puste.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-135",
+    "norsk": "i mils omkrets",
+    "definition": "Et stort område.",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-136",
+    "norsk": "å ta affære",
+    "definition": "Å gjøre noe aktivt; å gripe inn.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-138",
+    "norsk": "å gjøre seg gjeldende",
+    "definition": "Å bli lagt merke til; å hevde seg.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-139",
+    "norsk": "med strev og møye",
+    "definition": "Med vanskeligheter og utfordringer.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-141",
+    "norsk": "fra sans og samling",
+    "definition": "Nesten uten bevissthet.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-142",
+    "norsk": "å skratte i vilden sky",
+    "definition": "Å le eller skråle høyt, kanskje litt skjærende og ubehagelig.",
+    "proposed_category": "sensory-sound",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-143",
+    "norsk": "å ta overhånd",
+    "definition": "Å bli rådende; å få overmakt.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-144",
+    "norsk": "hensunket i seg selv",
+    "definition": "Å være fordypet i egne tanker.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-145",
+    "norsk": "å krible etter",
+    "definition": "Å vente på noe og glede seg til noe.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-146",
+    "norsk": "å låne øre til",
+    "definition": "Å høre velvillig på noen.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-147",
+    "norsk": "å tygge på ordene",
+    "definition": "Å tenke nøye gjennom det som sies.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-148",
+    "norsk": "å forstå noe til bunns",
+    "definition": "Å forstå noe på et dypt plan, ikke bare overfladisk.",
+    "proposed_category": "academic",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-149",
+    "norsk": "å late til å",
+    "definition": "Å se ut til å.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-150",
+    "norsk": "kraftsalver brer om seg",
+    "definition": "Sinte ord eller banneord faller.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-151",
+    "norsk": "å være sugen på",
+    "definition": "Å ha lyst på noe.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-153",
+    "norsk": "å le kneggende",
+    "definition": "Å le med en spesiell latter, som en hest.",
+    "proposed_category": "sensory-sound",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-154",
+    "norsk": "å kyle noe i veggen",
+    "definition": "Å kaste noe hardt i veggen.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-155",
+    "norsk": "å bli ertet",
+    "definition": "Å bli plaget eller terget.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-156",
+    "norsk": "å være tom for kjekke ord",
+    "definition": "Når man ikke klarer å være tøff eller frekk lenger, er man tom for kjekke ord.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-159",
+    "norsk": "å leve i fred og fordragelighet",
+    "definition": "Å leve uten å være i konflikt med andre.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-160",
+    "norsk": "fra høyere hold",
+    "definition": "Fra noen med makt høyere oppe i samfunnshierarkiet.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-161",
+    "norsk": "å bli var",
+    "definition": "Å bli oppmerksom på noe; å bli klar over noe.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-162",
+    "norsk": "å forsvinne i løse luften",
+    "definition": "Å forsvinne sporløst eller plutselig.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-163",
+    "norsk": "å stikke noe til noen",
+    "definition": "Å gi noen noe, raskt og kanskje litt skjult.",
+    "proposed_category": "everyday-objects",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-164",
+    "norsk": "å ta seg i å lure på noe",
+    "definition": "Å merke at man lurer på noe.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-165",
+    "norsk": "klok av skade",
+    "definition": "Når man er klok av skade, har man hatt dårlige erfaringer tidligere og lært av disse.",
+    "proposed_category": "proverbs",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-166",
+    "norsk": "å vokte seg vel",
+    "definition": "Å passe seg godt for noe.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-167",
+    "norsk": "rakt ut",
+    "definition": "Direkte.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-168",
+    "norsk": "i samme slengen",
+    "definition": "Samtidig.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-169",
+    "norsk": "nervene løper løpsk",
+    "definition": "Nervene kommer ut av kontroll.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-170",
+    "norsk": "ikke før",
+    "definition": "Akkurat i det øyeblikket.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-171",
+    "norsk": "å være ute av seg",
+    "definition": "Å være frustrert og lei seg.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-172",
+    "norsk": "å kvekke til",
+    "definition": "Å støkke; å bevege kroppen plutselig fordi man blir redd.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-173",
+    "norsk": "å feste seg ved noe",
+    "definition": "Å legge merke til noe.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-174",
+    "norsk": "i villrede",
+    "definition": "Usikker.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-175",
+    "norsk": "å dra kjensel på",
+    "definition": "Å kjenne igjen.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-176",
+    "norsk": "å sitte som spikret",
+    "definition": "Å sitte helt fast.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-177",
+    "norsk": "man kan høre en knappenål falle",
+    "definition": "Uttrykk som brukes for å uttrykke at det er svært stille.",
+    "proposed_category": "sensory-sound",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-178",
+    "norsk": "å hviske og tiske",
+    "definition": "Å snakke lavt og ivrig sammen.",
+    "proposed_category": "sensory-sound",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-179",
+    "norsk": "å holde styr på",
+    "definition": "Å holde kontroll på; å ha oversikt over.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-180",
+    "norsk": "å segne om",
+    "definition": "Å sige sammen; å falle rett ned.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-181",
+    "norsk": "å la skole være skole",
+    "definition": "Å ikke legge vekt på skolen; å glemme skolen litt.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-183",
+    "norsk": "å gjøre opprør",
+    "definition": "Å markere motstand mot myndigheter eller andre makthavere, som kan være voldelig.",
+    "proposed_category": "politics-democracy",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-184",
+    "norsk": "å gjøre seg flid med noe",
+    "definition": "Å jobbe hardt med noe.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-185",
+    "norsk": "med rubb og rake",
+    "definition": "Alt; hver eneste smule.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-186",
+    "norsk": "det går i ett",
+    "definition": "Alt skjer uten pause.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-187",
+    "norsk": "å synes synd på noen",
+    "definition": "Å føle medlidenhet med noen.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-188",
+    "norsk": "å lirke inn",
+    "definition": "Å prøve å få det slik en vil, litt etter litt.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-189",
+    "norsk": "selv den skarpeste",
+    "definition": "Til og med den mest intelligente.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-190",
+    "norsk": "å ta fyr",
+    "definition": "å miste kontrollen, eller å begynne å brenne.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-191",
+    "norsk": "propellen er i gang",
+    "definition": "prosessen har startet.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-192",
+    "norsk": "oppsatt kveld",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-193",
+    "norsk": "å gå inn for noe",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-194",
+    "norsk": "å få høre hvor skapet skal stå",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-195",
+    "norsk": "å få passet sitt påskrevet",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-196",
+    "norsk": "opp og i mente",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-197",
+    "norsk": "å svirre rundt",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-198",
+    "norsk": "å skrive seg noe bak øret",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-199",
+    "norsk": "å legge seg noe på sinne",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-200",
+    "norsk": "å ha fornemmelse av",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-201",
+    "norsk": "aldri så liten",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-202",
+    "norsk": "å lyde et navn",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-203",
+    "norsk": "å se opp til",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-204",
+    "norsk": "å få kalde føtter",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-205",
+    "norsk": "å være i ferd med å dø ut",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-206",
+    "norsk": "å skvette vann på gåsa",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-207",
+    "norsk": "å skjelve som et ospeløv",
+    "definition": "",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-208",
+    "norsk": "i nattens mulm og mørke",
+    "definition": "",
+    "proposed_category": "literary",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-209",
+    "norsk": "å rykke opp med rota",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-210",
+    "norsk": "å snu hver stein",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-211",
+    "norsk": "å flagge på halv stang",
+    "definition": "",
+    "proposed_category": "cultural-heritage",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-212",
+    "norsk": "å holde en knapp på",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-213",
+    "norsk": "å oppgi ånden",
+    "definition": "",
+    "proposed_category": "archaic",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-214",
+    "norsk": "å gå dukken",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-215",
+    "norsk": "å stryke med",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-216",
+    "norsk": "å gå til de evige jaktmarker",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-217",
+    "norsk": "å gå bort",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-218",
+    "norsk": "å sovne inn",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-219",
+    "norsk": "å ende sine dager",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-220",
+    "norsk": "å trekke sitt siste sukk",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-221",
+    "norsk": "å ta hånd om",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-222",
+    "norsk": "å dø for egen hånd",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-223",
+    "norsk": "å slå hånden av",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-224",
+    "norsk": "varig men",
+    "definition": "",
+    "proposed_category": "medicine-healthcare",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-225",
+    "norsk": "å toe sine hender",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-226",
+    "norsk": "å ha frie tøyler",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-227",
+    "norsk": "å bære noen på gullstol",
+    "definition": "",
+    "proposed_category": "cultural-heritage",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-228",
+    "norsk": "å være bekjent av",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-229",
+    "norsk": "å gi blanke blaffen",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-230",
+    "norsk": "like gjerne",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-231",
+    "norsk": "slike takter",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-232",
+    "norsk": "å utvinne olje",
+    "definition": "",
+    "proposed_category": "climate-environment-policy",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-233",
+    "norsk": "å være gjenstand for",
+    "definition": "",
+    "proposed_category": "formal-writing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-234",
+    "norsk": "alle monner drar",
+    "definition": "",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-235",
+    "norsk": "mange bekker små gjør en stor å",
+    "definition": "",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-236",
+    "norsk": "å lire av seg noe",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-237",
+    "norsk": "å lirke ut sannheten",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-238",
+    "norsk": "fryd og gammen",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-239",
+    "norsk": "å gå hen og bli pønker",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-240",
+    "norsk": "å bedrive sin gjerning i det stille bak kulissene",
+    "definition": "",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-241",
+    "norsk": "blank løgn",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-242",
+    "norsk": "å gripe i løgn",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-243",
+    "norsk": "fra ende til annen",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-244",
+    "norsk": "hvit løgn",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-245",
+    "norsk": "å holde hodet over vann",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-246",
+    "norsk": "land i sikte",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-247",
+    "norsk": "å gå på land",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-248",
+    "norsk": "å ro seg i land",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-249",
+    "norsk": "som fot i hose",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-250",
+    "norsk": "å hale i land en kontrakt",
+    "definition": "",
+    "proposed_category": "advanced-business-strategy",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-251",
+    "norsk": "å stå til liv",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-252",
+    "norsk": "å ønske noen til livs",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-253",
+    "norsk": "å sette noe til livs",
+    "definition": "",
+    "proposed_category": "gastronomy",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-254",
+    "norsk": "å ta noen i skole",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-255",
+    "norsk": "med tid og stunder",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-256",
+    "norsk": "all den tid",
+    "definition": "",
+    "proposed_category": "formal-writing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-257",
+    "norsk": "å sitte på gjerdet",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-258",
+    "norsk": "å være noe på sin hals",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-259",
+    "norsk": "å få øynene opp for",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-260",
+    "norsk": "grov feil",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-261",
+    "norsk": "å gå i bresjen for noe",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-262",
+    "norsk": "daglig tralt",
+    "definition": "",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-263",
+    "norsk": "hver især",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-264",
+    "norsk": "midt på svarte vinteren",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-265",
+    "norsk": "å komme over noe",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-266",
+    "norsk": "å slå til på noe",
+    "definition": "",
+    "proposed_category": "advanced-business-strategy",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-267",
+    "norsk": "å bli ved sin lest",
+    "definition": "",
+    "proposed_category": "proverbs",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-268",
+    "norsk": "å gå opp i liminga",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-269",
+    "norsk": "å sige ned",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-270",
+    "norsk": "å låne øre til noen",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-271",
+    "norsk": "å komme ut for en ulykke",
+    "definition": "",
+    "proposed_category": "medicine-healthcare",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-272",
+    "norsk": "å kose seg glugg i hjel",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-273",
+    "norsk": "hvorfor i huleste",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-274",
+    "norsk": "å rutte med",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-275",
+    "norsk": "slunken lommebok",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-276",
+    "norsk": "å hamle opp med",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-277",
+    "norsk": "å by imot",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-278",
+    "norsk": "å dra til noen",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-279",
+    "norsk": "å befinne seg i havsnød",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-280",
+    "norsk": "å ete noen ut av huset",
+    "definition": "",
+    "proposed_category": "gastronomy",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-281",
+    "norsk": "å drive noen til vanvidd",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-282",
+    "norsk": "å skjenne på noen",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-283",
+    "norsk": "å ligge på tvers",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-284",
+    "norsk": "forholdet ryker",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-285",
+    "norsk": "ikke fortrekke en mine",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-286",
+    "norsk": "på havsens bunn",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-287",
+    "norsk": "å dette så lang man er",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-288",
+    "norsk": "å svømme om kapp",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-289",
+    "norsk": "å stusse over",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-290",
+    "norsk": "å være på nippet til",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-291",
+    "norsk": "å være til å ta og føle på",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-292",
+    "norsk": "å sette noe på spissen",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-293",
+    "norsk": "å finne på mye sprell",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-294",
+    "norsk": "å spre seg som ild i tørt gress",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-295",
+    "norsk": "på fem minutter",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-296",
+    "norsk": "å bli satt fast av eksaminator",
+    "definition": "",
+    "proposed_category": "academic",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-297",
+    "norsk": "å sette huset på ende",
+    "definition": "",
+    "proposed_category": "everyday-objects",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-298",
+    "norsk": "å sette seg verk og betennelse",
+    "definition": "",
+    "proposed_category": "medicine-healthcare",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-299",
+    "norsk": "å sette himmel og jord i bevegelse",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-300",
+    "norsk": "å sette noen i sving",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-301",
+    "norsk": "å sette hunden på noen",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-302",
+    "norsk": "å sette noe inn med fett",
+    "definition": "",
+    "proposed_category": "everyday-objects",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-303",
+    "norsk": "å ha sine svin på skogen",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-304",
+    "norsk": "å gå i vasken",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-305",
+    "norsk": "å storme en by",
+    "definition": "",
+    "proposed_category": "literary",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-306",
+    "norsk": "å knipe av et blad",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-307",
+    "norsk": "å sige sammen",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-308",
+    "norsk": "å komme seg på fote igjen",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-309",
+    "norsk": "å bli ribbet",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-310",
+    "norsk": "å være prisgitt",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-311",
+    "norsk": "å gå løs på",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-312",
+    "norsk": "sanden gir etter",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-313",
+    "norsk": "å vanke ute",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-314",
+    "norsk": "å ta noen for seg",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-315",
+    "norsk": "å leve i sus og dus",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-316",
+    "norsk": "å kjenne lusa på gangen",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-317",
+    "norsk": "i rikt monn",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-318",
+    "norsk": "å skjelle ut etter noter",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-319",
+    "norsk": "det går så det suser",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-320",
+    "norsk": "å gråte over spilt melk",
+    "definition": "",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-321",
+    "norsk": "å springe ut",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-322",
+    "norsk": "å jenke kravene",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-323",
+    "norsk": "uforrettet sak",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-324",
+    "norsk": "å sverte hverandre",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-325",
+    "norsk": "spikkes opp i fliser",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-326",
+    "norsk": "antallet barnefødsler stuper",
+    "definition": "",
+    "proposed_category": "sociology-anthropology",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-327",
+    "norsk": "å rope et varsko",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-328",
+    "norsk": "å dysse ned noe",
+    "definition": "",
+    "proposed_category": "media-journalism",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-329",
+    "norsk": "å lete med lys og lykte",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-330",
+    "norsk": "å stryke noen med hårene",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-331",
+    "norsk": "å gjøre noen til lags",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-332",
+    "norsk": "å få kreditorene på nakken",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-333",
+    "norsk": "å ta beina på nakken",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-334",
+    "norsk": "å ta seg selv i nakken",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-335",
+    "norsk": "å henge etter med noe",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-336",
+    "norsk": "å ha øyne i nakken",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-337",
+    "norsk": "å gå på med krum hals",
+    "definition": "",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-338",
+    "norsk": "å synge av full hals",
+    "definition": "",
+    "proposed_category": "sensory-sound",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-339",
+    "norsk": "å frastøtes av hverandre",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-340",
+    "norsk": "å havne i en persons besittelse",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-341",
+    "norsk": "det hinsidige",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-342",
+    "norsk": "å være skikket til",
+    "definition": "",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-343",
+    "norsk": "å hinte om",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-344",
+    "norsk": "å fare opp for",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-345",
+    "norsk": "å klapse til noen",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-346",
+    "norsk": "på flyende flekken",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-347",
+    "norsk": "å avfinne seg med noe",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-348",
+    "norsk": "å få sving på sakene",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-349",
+    "norsk": "å ta en time på øret",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-350",
+    "norsk": "å stemme på øret",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-351",
+    "norsk": "å sitte med lange ører",
+    "definition": "",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-352",
+    "norsk": "å komme seg helskinnet gjennom / ut av noe",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-353",
+    "norsk": "å komme til bunns i noe",
+    "definition": "",
+    "proposed_category": "academic",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-354",
+    "norsk": "å sette sinnene i kok",
+    "definition": "",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-355",
+    "norsk": "å vegre seg for noe",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-356",
+    "norsk": "viden kjent",
+    "definition": "",
+    "proposed_category": "formal-writing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-357",
+    "norsk": "å skyte inn et par ord",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-358",
+    "norsk": "trange kår",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-359",
+    "norsk": "å ta til følge",
+    "definition": "",
+    "proposed_category": "advanced-law-justice",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-360",
+    "norsk": "å være stor i kjeften",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-361",
+    "norsk": "i store trekk",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-362",
+    "norsk": "å ta noe med fatning",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-363",
+    "norsk": "å ferdes til fots",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-364",
+    "norsk": "å gå i lære",
+    "definition": "",
+    "proposed_category": "professional",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-365",
+    "norsk": "å gå i gulvet med et knas",
+    "definition": "",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-366",
+    "norsk": "å gå i stå",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-367",
+    "norsk": "mot alle odds",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-368",
+    "norsk": "å slakke på barnas leggetider",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-369",
+    "norsk": "å ha overskudd",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-370",
+    "norsk": "å få rede på",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-371",
+    "norsk": "å ha en skrue løs",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-372",
+    "norsk": "å satse liv og lemmer",
+    "definition": "",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-373",
+    "norsk": "å støtte noen i tykt og tynt",
+    "definition": "",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-374",
+    "norsk": "å hinte frampå",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-375",
+    "norsk": "å få med noen å bestille",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-376",
+    "norsk": "å være forunt",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-377",
+    "norsk": "å runde førti",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-378",
+    "norsk": "å kalle en spade for en spade",
+    "definition": "",
+    "proposed_category": "rhetoric",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-385",
+    "norsk": "å måtte til",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-386",
+    "norsk": "å bøte med livet",
+    "definition": "",
+    "proposed_category": "existential-abstract",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-387",
+    "norsk": "å vanke premie på noen",
+    "definition": "",
+    "proposed_category": "advanced-law-justice",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-388",
+    "norsk": "«Grevinnen og hovmesteren»",
+    "definition": "",
+    "proposed_category": "cultural-heritage",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-389",
+    "norsk": "å befeste sin rolle",
+    "definition": "",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-390",
+    "norsk": "på deling",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-391",
+    "norsk": "å knipe inn på noe",
+    "definition": "",
+    "proposed_category": "finance-economics",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-392",
+    "norsk": "julebordet ryker",
+    "definition": "",
+    "proposed_category": "cultural-heritage",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-393",
+    "norsk": "å ha alt på stell",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-394",
+    "norsk": "etter sigende",
+    "definition": "",
+    "proposed_category": "formal-writing",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-395",
+    "norsk": "brede lag av folket",
+    "definition": "",
+    "proposed_category": "sociology-anthropology",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-396",
+    "norsk": "å holde hjulene i gang",
+    "definition": "Vi må holde bedriftens virksomhet oppe.",
+    "proposed_category": "professional",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-397",
+    "norsk": "ikke det minste",
+    "definition": "Moren er absolutt ikke trist.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-398",
+    "norsk": "å være som blåst bort",
+    "definition": "Verkende skuldre har blitt glemt.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-399",
+    "norsk": "å strekke seg så lang man er",
+    "definition": "Han strekker seg i sin fulle lengde.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-400",
+    "norsk": "dypest sett",
+    "definition": "I bunn og grunn, om man ser bort fra overflaten.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-401",
+    "norsk": "på gløtt",
+    "definition": "Karsten står med døra litt åpen.",
+    "proposed_category": "everyday-objects",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-402",
+    "norsk": "å komme i tak",
+    "definition": "Å opptre i bølger eller med jevne mellomrom (f.eks. om smerter).",
+    "proposed_category": "medicine-healthcare",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-403",
+    "norsk": "å komme for en dag",
+    "definition": "Snart vil alt bli avslørt.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-404",
+    "norsk": "å komme her og komme her",
+    "definition": "Å tro at man bare kan komme og ta over uten videre.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-379",
+    "norsk": "å se gjennom fingrene med noe",
+    "definition": "",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-380",
+    "norsk": "ikke henge på greip",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-381",
+    "norsk": "å bule ut",
+    "definition": "",
+    "proposed_category": "everyday-objects",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-382",
+    "norsk": "å herme etter noen",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-383",
+    "norsk": "å ape etter noen",
+    "definition": "",
+    "proposed_category": "character-temperament",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-384",
+    "norsk": "å gry av dag",
+    "definition": "",
+    "proposed_category": "nature-landscape",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-405",
+    "norsk": "å komme godt ut av det med noen",
+    "definition": "Å ha et godt forhold til noen; å være venner.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-406",
+    "norsk": "å komme seg til å",
+    "definition": "Å få seg til å gjøre eller si noe, særlig noe vanskelig.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-407",
+    "norsk": "å komme til",
+    "definition": "Å slippe til; å få mulighet til å delta eller bli hørt.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-408",
+    "norsk": "å komme godt med",
+    "definition": "En sovepose er nyttig å ha.",
+    "proposed_category": "everyday-objects",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-409",
+    "norsk": "å komme ut av det",
+    "definition": "Nå mistet jeg tråden!",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-410",
+    "norsk": "å gå fra vettet",
+    "definition": "Har du gått fra konseptene?",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-411",
+    "norsk": "det går kaldt nedover ryggen på en",
+    "definition": "Jeg gyste.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-412",
+    "norsk": "å gå på skinner",
+    "definition": "Nå går alt slik det skal.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-413",
+    "norsk": "å gå som smurt",
+    "definition": "Alt gikk etter planen.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-414",
+    "norsk": "hjulene går rundt",
+    "definition": "Virksomheten går sin gang; alt fungerer som det skal.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-415",
+    "norsk": "å gå av stabelen",
+    "definition": "Konserten fant sted i fjor sommer.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-416",
+    "norsk": "å gå så det suser",
+    "definition": "Dette går fint.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-417",
+    "norsk": "å gå den veien høna sparker",
+    "definition": "Dette går rakt ut i elendigheten.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-418",
+    "norsk": "å gå til verket",
+    "definition": "Skal vi begynne?",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-419",
+    "norsk": "å gå rett hjem hos noen",
+    "definition": "Programmet vant bifall hos mine naboer.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-420",
+    "norsk": "en rød tråd",
+    "definition": "Det finnes en sammenheng i boka.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-421",
+    "norsk": "å gjøre knefall for noen",
+    "definition": "Han fridde til henne.",
+    "proposed_category": "cultural-heritage",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-422",
+    "norsk": "nesegrus beundring",
+    "definition": "Hun føler en sterk beundring for ham.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-423",
+    "norsk": "å gi en pekepinn om noe",
+    "definition": "Drømmen skulle antyde hvem man skulle gifte seg med.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-424",
+    "norsk": "å se tiden an",
+    "definition": "Nå må vi bruke tiden og se hva som skjer.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-425",
+    "norsk": "å gjøre store øyne",
+    "definition": "De ble overrasket da rektoren plutselig stod i stua.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-426",
+    "norsk": "å gjøre en dårlig figur",
+    "definition": "Statsministeren ga et negativt inntrykk på møtet.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-427",
+    "norsk": "det er om å gjøre",
+    "definition": "Det er viktig at du tar den eksamenen.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-428",
+    "norsk": "å la gå",
+    "definition": "Jeg tillater det.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "low"
+  },
+  {
+    "id": "u-c-429",
+    "norsk": "å vippe noen av pinnen",
+    "definition": "Å kaste noen ut av balanse; å få noen ut av fatning.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-430",
+    "norsk": "å ta noen for gitt",
+    "definition": "Å behandle noen som en selvfølge, uten å verdsette dem.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-431",
+    "norsk": "å sette nesa mot et sted",
+    "definition": "De dro etter hvert til Norge.",
+    "proposed_category": "manner-of-motion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-432",
+    "norsk": "å gå noen på nervene",
+    "definition": "Dette plager ham sterkt.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-433",
+    "norsk": "å bli varm i trøya",
+    "definition": "Nå begynner jeg å bli vant til dette.",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-434",
+    "norsk": "å komme som julekvelden på kjerringa",
+    "definition": "Arrestasjonen kom som lyn fra klar himmel.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-435",
+    "norsk": "å kaste perler for svin",
+    "definition": "De vet ikke å verdsette alt du gir til dem.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-436",
+    "norsk": "å dra til sjøs",
+    "definition": "Han tok hyre på en båt da han var seksten år.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-437",
+    "norsk": "ikke ha en sjanse i havet",
+    "definition": "Du har ikke nubbesjanse.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-438",
+    "norsk": "det har rent mye vann i havet",
+    "definition": "Det har gått lang tid siden sist vi møttes.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-439",
+    "norsk": "som hund og katt",
+    "definition": "De to ryker i tottene på hverandre stadig vekk.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-440",
+    "norsk": "å skue hunden på hårene",
+    "definition": "Å dømme noen eller noe bare etter ytre inntrykk.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-441",
+    "norsk": "å gå over bekken etter vann",
+    "definition": "Noen har en tendens til å løse et problem på en unødig tungvint måte.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-442",
+    "norsk": "å kjøpe katta i sekken",
+    "definition": "Nå har jeg blitt tatt ved nesa!",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-443",
+    "norsk": "å slippe katta ut av sekken",
+    "definition": "Ministeren har for alvor lettet på sløret.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-444",
+    "norsk": "å gi en god dag i noe",
+    "definition": "Det er meg likegyldig om hun kommer.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-445",
+    "norsk": "å ta noe på sparket",
+    "definition": "Han likte å gjøre ting uten betenkningstid.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-446",
+    "norsk": "å smi mens jernet er varmt",
+    "definition": "Her gjelder det å være rådsnar.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-447",
+    "norsk": "å stikke noe under stol",
+    "definition": "Det var tydelig at kommunen forsøkte å fortie noe.",
+    "proposed_category": "media-journalism",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-448",
+    "norsk": "å føle noen på tennene",
+    "definition": "De målte hverandre.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-449",
+    "norsk": "å vise tenner",
+    "definition": "I går var det mange som viste sinne og tok igjen.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-450",
+    "norsk": "å gjøre sine hoser grønne",
+    "definition": "Han innsmigrer seg.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-451",
+    "norsk": "å leve på stor fot",
+    "definition": "Her er det overflod og luksus.",
+    "proposed_category": "finance-economics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-452",
+    "norsk": "med kaldt blod",
+    "definition": "De utførte ugjerningen uten omsyn til noe eller noen.",
+    "proposed_category": "advanced-law-justice",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-453",
+    "norsk": "å stå på god fot med noen",
+    "definition": "De to har lenge hatt et greit forhold til hverandre.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-454",
+    "norsk": "å trekke i trådene",
+    "definition": "Hun elsker å være litt manipulerende.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-455",
+    "norsk": "som kjerringa mot strømmen",
+    "definition": "Hun er egensindig.",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-456",
+    "norsk": "å henge i en tynn tråd",
+    "definition": "Nå står han i fare for å bli arbeidsledig.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-457",
+    "norsk": "å ta opp tråden",
+    "definition": "Kan vi gå videre med samtalen vår nå?",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-458",
+    "norsk": "å være lett på tråden",
+    "definition": "Å være løsslupen og lettsindig med menn (foreldet uttrykk om en kvinne).",
+    "proposed_category": "archaic",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-459",
+    "norsk": "å danse etter noens pipe",
+    "definition": "Å adlyde noens ordre ukritisk.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-460",
+    "norsk": "å sette sitt lys under en skjeppe",
+    "definition": "Han var falsk beskjeden.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-461",
+    "norsk": "å være en hund etter noe",
+    "definition": "Hun elsker blåbær.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-462",
+    "norsk": "krake søker make",
+    "definition": "Det stod i annonsen at en person ønsket å finne seg en likesinnet.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-463",
+    "norsk": "som man reder, ligger man",
+    "definition": "Man høster det man sår.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-464",
+    "norsk": "å gå i hundene",
+    "definition": "Han hadde forkommet.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-465",
+    "norsk": "ikke eie nåla i veggen",
+    "definition": "Hun er blakk – og vel så det.",
+    "proposed_category": "finance-economics",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-466",
+    "norsk": "å lete etter nåla i høystakken",
+    "definition": "Det å finne øreproppen føltes umulig.",
+    "proposed_category": "proverbs",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-467",
+    "norsk": "å gi katten i noe",
+    "definition": "Det liker jeg ikke!",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-468",
+    "norsk": "å legge seg i selen",
+    "definition": "De strever for å klare det.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-469",
+    "norsk": "å være mellom barken og veden",
+    "definition": "Hun følte seg presset fra ulike hold.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-470",
+    "norsk": "å ta noen på kornet",
+    "definition": "Komikeren traff spikeren på hodet når det gjaldt kongen.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-471",
+    "norsk": "å kaste blår i øynene på noen",
+    "definition": "De lurte henne trill rundt.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-472",
+    "norsk": "å ta noe på strak arm",
+    "definition": "Han gjorde det uten å nøle.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-473",
+    "norsk": "på stående fot",
+    "definition": "Her og nå, uten forberedelse.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-474",
+    "norsk": "å la humla suse",
+    "definition": "å nyte livet",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-475",
+    "norsk": "ha kort lunte",
+    "definition": "å være snarsint",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-476",
+    "norsk": "å rive i en drink",
+    "definition": "å spandere en drink",
+    "proposed_category": "gastronomy",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-477",
+    "norsk": "å mele sin egen kake",
+    "definition": "å sørge for at man selv får fordeler",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-478",
+    "norsk": "å gi noen på båten",
+    "definition": "å la noen fare",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-479",
+    "norsk": "å lukte lunta",
+    "definition": "å ane at noe er galt",
+    "proposed_category": "psychology-advanced",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-480",
+    "norsk": "å sitte med skjegget i postkassa",
+    "definition": "å bli lurt",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-481",
+    "norsk": "å være fyr og flamme",
+    "definition": "å være ivrig",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-482",
+    "norsk": "å stå på pinne for noen",
+    "definition": "å jobbe hardt for noen",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-483",
+    "norsk": "å sluke kameler",
+    "definition": "å godta noe en egentlig ikke vil godta – for å oppnå noe annet",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-484",
+    "norsk": "å gråte krokodilletårer",
+    "definition": "å hykle for å få trøst fra andre",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-485",
+    "norsk": "å sette kronen på verket",
+    "definition": "å sette prikken over i-en",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-486",
+    "norsk": "å lese noen teksten",
+    "definition": "å kjefte på noen",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-487",
+    "norsk": "å tråkke i salaten",
+    "definition": "å tabbe seg ut",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-488",
+    "norsk": "å pakke snippesken",
+    "definition": "å dra sin kos",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-489",
+    "norsk": "å hoppe etter Wirkola",
+    "definition": "å følge etter en usedvanlig begavet forgjenger",
+    "proposed_category": "cultural-heritage",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-490",
+    "norsk": "å være på en snei",
+    "definition": "å være litt beruset",
+    "proposed_category": "embodied-emotion",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-491",
+    "norsk": "under fire øyne",
+    "definition": "Nå må vi ha en samtale alene.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-492",
+    "norsk": "å få noen opp i halsen",
+    "definition": "Han er lut lei av læreren sin.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-493",
+    "norsk": "hals over hode",
+    "definition": "De dro hodekulls til Sverige.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-494",
+    "norsk": "kors på halsen",
+    "definition": "Jeg lover!",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-495",
+    "norsk": "å sette latteren i halsen",
+    "definition": "Guttene lo ikke mer da de hørte det knirke i døra.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-496",
+    "norsk": "å få hjertet i halsen",
+    "definition": "Damen fikk hjertebank da hun hørte noen tasse i gangen.",
+    "proposed_category": "embodied-emotion",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-497",
+    "norsk": "å ta seg i nakken",
+    "definition": "Nå må du ta deg sammen.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-498",
+    "norsk": "å få noen på nakken",
+    "definition": "Nå blir han forfulgt av politiet.",
+    "proposed_category": "advanced-law-justice",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-499",
+    "norsk": "storm i et vannglass",
+    "definition": "Hun gjør ofte mye ut av ingenting.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-500",
+    "norsk": "å se rødt",
+    "definition": "Nå er de rasende.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-501",
+    "norsk": "brent barn skyr ilden",
+    "definition": "En som har skadet seg tidligere, har fått seg en lærepenge.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-502",
+    "norsk": "egget vil lære høna å verpe",
+    "definition": "Den uerfarne vil belære den som kan noe.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-503",
+    "norsk": "å være en saga blott",
+    "definition": "Det er en glemt historie.",
+    "proposed_category": "literary",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-504",
+    "norsk": "det får stå sin prøve",
+    "definition": "Det går slik det vil.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-505",
+    "norsk": "det er ugler i mosen",
+    "definition": "Her er det noe som skurrer.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-506",
+    "norsk": "det blir sus i serken",
+    "definition": "Nå blir det liv.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-507",
+    "norsk": "å gjøre susen",
+    "definition": "Denne medisinen kan være det som skal til.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-508",
+    "norsk": "å bite på kroken",
+    "definition": "Han blir ofte lurt trill rundt.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-509",
+    "norsk": "det sorte får",
+    "definition": "Han er det familiemedlemmet som bringer skam over familien.",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-510",
+    "norsk": "hastverk er lastverk",
+    "definition": "Det som gjøres i full fart, utføres ofte ikke på den beste måten.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-511",
+    "norsk": "å begrave stridsøksa",
+    "definition": "Nå vil de slutte fred.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-512",
+    "norsk": "å falle mellom to stoler",
+    "definition": "Hun passer ikke inn noen steder.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-513",
+    "norsk": "saken er biff",
+    "definition": "Situasjonen er i orden.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-514",
+    "norsk": "å feie for egen dør",
+    "definition": "Du får ta hånd om dine egne problemer først.",
+    "proposed_category": "proverbs",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-515",
+    "norsk": "å føre noen bak lyset",
+    "definition": "Han har blitt narret.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-516",
+    "norsk": "å få bakoversveis",
+    "definition": "Jeg ble forbauset i går.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-517",
+    "norsk": "å feie noe under teppet",
+    "definition": "Hvorfor skjuler du ting?",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-518",
+    "norsk": "å få hatten passet",
+    "definition": "Hun fikk kjeft.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-519",
+    "norsk": "ikke være tapt bak ei vogn",
+    "definition": "Hun er rådsnar når det oppstår utfordringer.",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-520",
+    "norsk": "det skinner gjennom",
+    "definition": "Man kan ane at hun er bitter.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-521",
+    "norsk": "å bite i gresset",
+    "definition": "Fjorårets vinner måtte se seg slått i årets konkurranse.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-522",
+    "norsk": "å bite seg merke i noe",
+    "definition": "Hun la merke til at noe var annerledes.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-523",
+    "norsk": "å bite ordene i seg",
+    "definition": "Hun holdt tilbake ordene.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-524",
+    "norsk": "å drives fra skanse til skanse",
+    "definition": "De måtte stadig gi seg.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-525",
+    "norsk": "å bøye seg i støvet",
+    "definition": "Ydmykt aksepterte hun sjefens avgjørelse.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-526",
+    "norsk": "ikke være født i går",
+    "definition": "Min bror er slettes ikke dum.",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-527",
+    "norsk": "å gi seg ende over",
+    "definition": "Å gi fullstendig opp.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-528",
+    "norsk": "å gi noen inn",
+    "definition": "Han dengte løs på henne i går kveld.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-529",
+    "norsk": "å gå berserk",
+    "definition": "Fansen ble helt ustyrlige.",
+    "proposed_category": "complex-emotions",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-530",
+    "norsk": "å måle noen med øynene",
+    "definition": "Han så kritisk på henne.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-531",
+    "norsk": "å brenne inne med noe",
+    "definition": "Han fikk ikke sagt alt han ville si.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-532",
+    "norsk": "å veie sine ord",
+    "definition": "Nå gjelder det å holde tunga rett i munnen.",
+    "proposed_category": "rhetoric",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-533",
+    "norsk": "å slå seg i lag med noen",
+    "definition": "Hvem har han blitt sammen med nå?",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-534",
+    "norsk": "å være med på laget",
+    "definition": "Å høre til; å være en del av felleskapet.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-535",
+    "norsk": "en ulv i fåreklær",
+    "definition": "Han er en ondsinnet person som later som om han er god.",
+    "proposed_category": "character-temperament",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-536",
+    "norsk": "i grevens tid",
+    "definition": "Han kom i rette øyeblikk.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-537",
+    "norsk": "med glans",
+    "definition": "Hun bestod prøven på ypperlig vis.",
+    "proposed_category": "intensifiers-degree",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-538",
+    "norsk": "å gi noen det glatte lag",
+    "definition": "De hudflettet ham.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-539",
+    "norsk": "å gå på limpinnen",
+    "definition": "Hun har latt seg lure.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-540",
+    "norsk": "å gå fem på",
+    "definition": "Å gå rett i en felle; å bli lurt.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-541",
+    "norsk": "å stå ved lag",
+    "definition": "Står du fast på det du sa?",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-542",
+    "norsk": "å spille på lag med noen",
+    "definition": "Å samarbeide med noen i stedet for å motarbeide dem.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-543",
+    "norsk": "å bryte lag",
+    "definition": "De har bestemt seg for å gjøre det slutt med hverandre.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-544",
+    "norsk": "å komme i lag",
+    "definition": "Å bli kjæreste med noen; å innlede et forhold.",
+    "proposed_category": "complex-emotions",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-545",
+    "norsk": "å holde noe ved lag",
+    "definition": "Det er viktig å bevare de gamle trekirkene.",
+    "proposed_category": "cultural-heritage",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-546",
+    "norsk": "å skjære alle over én kam",
+    "definition": "å bedømme alle unyansert og sjablongmessig",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-547",
+    "norsk": "å slå seg på brystet",
+    "definition": "å vise stolthet",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-548",
+    "norsk": "å sitte med hendene i fanget",
+    "definition": "Å forholde seg passiv og ikke gjøre noe.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-549",
+    "norsk": "å stikke nesa si i noe",
+    "definition": "Å blande seg inn i noe som ikke angår en.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-550",
+    "norsk": "ikke løfte en finger",
+    "definition": "Jeg vil overhodet ikke gjøre noe mer for deg.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-551",
+    "norsk": "ikke la seg be to ganger",
+    "definition": "Det er lett å spørre meg om å gjøre noe.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-552",
+    "norsk": "å gå i forbønn for noen",
+    "definition": "De ber til Gud for henne.",
+    "proposed_category": "diplomacy-international",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-553",
+    "norsk": "å være bundet på hender og føtter",
+    "definition": "Hun føler at hun ikke har noen mulighet til å styre ting selv.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-554",
+    "norsk": "bordet fanger",
+    "definition": "bordet fanger",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-555",
+    "norsk": "å bite fra seg",
+    "definition": "Hun tok igjen.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-556",
+    "norsk": "å få fyken",
+    "definition": "Er det sant at han har fått fyken?",
+    "proposed_category": "professional",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-557",
+    "norsk": "å dra lasset",
+    "definition": "Hun føler at det er hun som må bære de tyngste byrdene hele tiden.",
+    "proposed_category": "professional",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-558",
+    "norsk": "å dra på det",
+    "definition": "Hun holdt litt igjen da hun ble bedt om å avgi forklaring.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-559",
+    "norsk": "å dra noe i tvil",
+    "definition": "Man følte skepsis mot det som ble sagt.",
+    "proposed_category": "rhetoric",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-560",
+    "norsk": "å dra på det ene beinet",
+    "definition": "Hun haltet på ett bein.",
+    "proposed_category": "physical-appearance",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-561",
+    "norsk": "å dra lærdom av noe",
+    "definition": "Er du klok av skade nå?",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-562",
+    "norsk": "å drive dank",
+    "definition": "Nå har sønnen min tatt det kuli i et halvt år.",
+    "proposed_category": "character-temperament",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-563",
+    "norsk": "å drive gjøn med noen",
+    "definition": "Hun følte at de fleipet med henne.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "high"
+  },
+  {
+    "id": "u-c-564",
+    "norsk": "å drive det langt",
+    "definition": "Datteren hans har nådd langt.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-565",
+    "norsk": "å drive noen på flukt",
+    "definition": "Kvinner og barn ble jaget av gårde.",
+    "proposed_category": "advanced-law-justice",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-566",
+    "norsk": "å drive det for langt",
+    "definition": "Hvorfor må den mannen alltid krysse grenser?",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-567",
+    "norsk": "å stå og falle med noe",
+    "definition": "Din stemme vil avgjøre alt.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-568",
+    "norsk": "å falle noen lang",
+    "definition": "Han følte at det varte og rakk hos svigermoren.",
+    "proposed_category": "interpersonal-conflict",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-569",
+    "norsk": "å falle i synd",
+    "definition": "Hun sa han hadde syndet.",
+    "proposed_category": "archaic",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-570",
+    "norsk": "å falle til jorden",
+    "definition": "De gode forslagene ble avvist.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-571",
+    "norsk": "å falle i god jord",
+    "definition": "Ordene hans ble tatt godt imot.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-572",
+    "norsk": "å falle på steingrunn",
+    "definition": "Talen hennes fikk ikke gehør.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  },
+  {
+    "id": "u-c-573",
+    "norsk": "å ha gjenklang",
+    "definition": "Sankthansfeiringen har appell hos folk i Sverige og Finland.",
+    "proposed_category": "abstract-concepts",
+    "confidence": "medium"
+  }
+]
