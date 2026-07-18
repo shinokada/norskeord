@@ -182,6 +182,15 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
       warns.push(`part is "${entry.part}" — uttrykk entries are typically "phrase"`);
     }
 
+    // theme — every full-file uttrykk entry should have a non-empty theme
+    // (ai-docs/implementation/uttrykk-category.md Phase 2). Preview files and
+    // draft/no-id entries are not required to have one yet.
+    if (!isPreview && !DRAFT && entry.category === 'uttrykk') {
+      if (entry.theme == null || entry.theme === '') {
+        errs.push('missing "theme" field (Phase 2 requires every uttrykk entry to be themed)');
+      }
+    }
+
     // lemma
     if (!entry.lemma || entry.lemma === '') {
       warns.push(`lemma field is missing or empty`);
