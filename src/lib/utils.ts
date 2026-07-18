@@ -52,11 +52,11 @@ export const randomNumberGenerator = (
       randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     } while (previousNumbers.includes(randomNumber));
 
-    if (previousNumbers.length >= windowSize) {
+    previousNumbers.push(randomNumber);
+
+    if (previousNumbers.length > windowSize) {
       previousNumbers.shift();
     }
-
-    previousNumbers.push(randomNumber);
 
     return randomNumber;
   };

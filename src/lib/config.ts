@@ -165,6 +165,61 @@ export const CATEGORIES_BY_LEVEL = {
   ]
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 
+/**
+ * Uttrykk theme taxonomy — see ai-docs/implementation/uttrykk-category.md,
+ * Phase 1. This is the decided taxonomy for the `theme` field that Phase 2's
+ * tagging pass writes into `uttrykk-{a1,a2,b1,b2}.json` entries. It never
+ * touches `category` (which stays `"uttrykk"` for every entry — see the
+ * Phase 1 "why not reuse `category`/`part`" rationale in the doc).
+ *
+ * C is intentionally excluded: Phase 4 folds C's uttrykk entries directly
+ * into `vocab-c.json` using C's existing category slugs instead of a
+ * separate `theme` field.
+ */
+export type UttrykkThemeLevel = Exclude<CEFRLevel, 'C'>;
+
+export const UTTRYKK_THEME_LEVELS: readonly UttrykkThemeLevel[] = ['A1', 'A2', 'B1', 'B2'];
+
+/**
+ * Fixed fallback themes for uttrykk entries that don't genuinely fit a
+ * topical category at their level — expected to cover the bulk of entries,
+ * since fixed formulas/connectives/idioms with no topical subject matter are
+ * what uttrykk is designed to capture. `discourse-markers` is already
+ * precedented by B2's `CATEGORIES_BY_LEVEL` entry.
+ */
+export const UTTRYKK_FUNCTIONAL_THEMES = [
+  'idioms',
+  'proverbs',
+  'discourse-markers',
+  'time-expressions',
+  'opinion-formulas'
+] as const;
+
+/** Catch-all for entries that don't cleanly fit a topical or functional theme. */
+export const UTTRYKK_CATCHALL_THEME = 'general' as const;
+
+/**
+ * Per-level set of allowed `theme` values: that level's real vocab category
+ * slugs (minus `uttrykk`/`uttrykk-preview` themselves, which are `category`
+ * values, not themes) plus the fixed functional themes plus the catch-all.
+ * `Set` dedupes cases like B2, where `discourse-markers` is both a topical
+ * category and a functional theme.
+ *
+ * Tagging precedence (Phase 1): topical fit from this level's own list
+ * first, functional theme second, `general` only as a last resort.
+ */
+export const UTTRYKK_THEMES_BY_LEVEL: Record<UttrykkThemeLevel, readonly string[]> =
+  UTTRYKK_THEME_LEVELS.reduce(
+    (acc, level) => {
+      const topical = CATEGORIES_BY_LEVEL[level].filter(
+        (c) => c !== 'uttrykk' && c !== 'uttrykk-preview'
+      );
+      acc[level] = [...new Set([...topical, ...UTTRYKK_FUNCTIONAL_THEMES, UTTRYKK_CATCHALL_THEME])];
+      return acc;
+    },
+    {} as Record<UttrykkThemeLevel, readonly string[]>
+  );
+
 export const LANGUAGES = {
   norwegian: { name: 'Norwegian', flag: '🇳🇴', code: 'nb', abbr: 'NO' },
   english: { name: 'English', flag: '🇬🇧', code: 'en', abbr: 'EN' },

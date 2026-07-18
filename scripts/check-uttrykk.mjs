@@ -64,6 +64,50 @@ const REQUIRED_FIELDS = [
 ];
 const VALID_CATEGORIES = new Set(['uttrykk', 'uttrykk-preview']);
 
+// C-level uttrykk entries carry a real C category slug instead of the
+// generic "uttrykk" placeholder (see ai-docs/implementation/uttrykk-category.md
+// Phase 4 — folded in via scripts/apply-uttrykk-c-triage.mjs). Mirrors
+// CATEGORIES_BY_LEVEL.C in src/lib/config.ts.
+const C_CATEGORIES = new Set([
+  'philosophy',
+  'academic',
+  'formal-writing',
+  'rhetoric',
+  'complex-emotions',
+  'professional',
+  'abstract-concepts',
+  'politics-democracy',
+  'linguistics',
+  'media-journalism',
+  'architecture-design',
+  'diplomacy-international',
+  'finance-economics',
+  'medicine-healthcare',
+  'psychology-advanced',
+  'literary',
+  'archaic',
+  'proverbs',
+  'highly-formal',
+  'technical',
+  'advanced-law-justice',
+  'neuroscience-cognition',
+  'climate-environment-policy',
+  'sociology-anthropology',
+  'advanced-business-strategy',
+  'existential-abstract',
+  'nature-landscape',
+  'sensory-sound',
+  'physical-appearance',
+  'everyday-objects',
+  'character-temperament',
+  'embodied-emotion',
+  'manner-of-motion',
+  'interpersonal-conflict',
+  'intensifiers-degree',
+  'gastronomy',
+  'cultural-heritage'
+]);
+
 // All translation languages the app supports. Entries may not have all of these
 // (e.g. a file that hasn't been translated yet), but if a language field is
 // present then its example_{lang} counterpart must also be present, and vice-versa.
@@ -168,9 +212,15 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
       errs.push(`level field "${entry.level}" does not match file level "${level.toUpperCase()}"`);
     }
 
-    // category
+    // category — C-level uttrykk entries carry a real C category slug
+    // (see C_CATEGORIES above) instead of the generic "uttrykk"/"uttrykk-preview"
+    // placeholder used by A1–B2.
     if (entry.category) {
-      if (!VALID_CATEGORIES.has(entry.category)) {
+      if (level === 'c') {
+        if (!C_CATEGORIES.has(entry.category)) {
+          errs.push(`category "${entry.category}" is not a valid C-level category slug`);
+        }
+      } else if (!VALID_CATEGORIES.has(entry.category)) {
         errs.push(`category "${entry.category}" is not "uttrykk" or "uttrykk-preview"`);
       } else if (entry.category !== expectedCategory) {
         warns.push(`category "${entry.category}" — expected "${expectedCategory}" for this file`);
@@ -180,6 +230,15 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
     // part — uttrykk entries should be "phrase"
     if (entry.part && entry.part !== 'phrase') {
       warns.push(`part is "${entry.part}" — uttrykk entries are typically "phrase"`);
+    }
+
+    // theme — every full-file uttrykk entry should have a non-empty theme
+    // (ai-docs/implementation/uttrykk-category.md Phase 2). Preview files and
+    // draft/no-id entries are not required to have one yet.
+    if (!isPreview && !DRAFT && entry.category === 'uttrykk') {
+      if (entry.theme == null || entry.theme === '') {
+        errs.push('missing "theme" field (Phase 2 requires every uttrykk entry to be themed)');
+      }
     }
 
     // lemma
