@@ -14,7 +14,7 @@
     "example_german": "Philosophen reflektieren über den Sinn des Lebens.",
     "definition": "Å tenke dypt og nøye på noe for å forstå det bedre.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "academic",
     "part": "phrase"
   },
   {
@@ -32,7 +32,7 @@
     "example_german": "Wir kommen zu dem Schluss, dass die Maßnahme eine Wirkung gehabt hat.",
     "definition": "Å komme fram til en endelig mening eller et svar etter å ha undersøkt eller diskutert noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "academic",
     "part": "phrase"
   },
   {
@@ -50,7 +50,7 @@
     "example_german": "Der Autor argumentiert dafür, dass die Politik geändert werden sollte.",
     "definition": "Å gi grunner og bevis for å overbevise andre om at noe er riktig eller sant.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -68,7 +68,7 @@
     "example_german": "Der Bericht weist auf drei zentrale Herausforderungen hin.",
     "definition": "Å trekke oppmerksomhet mot noe viktig, slik at andre legger merke til det.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -86,7 +86,7 @@
     "example_german": "Sie sehnte sich nach dem Land, das sie verlassen hatte.",
     "definition": "Å ha en sterk og varm ønske om noe eller noen som ikke er der.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -104,7 +104,7 @@
     "example_german": "Sie berichtet direkt an den Vorstand.",
     "definition": "Å ha en leder man er ansvarlig overfor og gir informasjon om sitt arbeid til.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -122,7 +122,7 @@
     "example_german": "Der Held steigt in die Unterwelt hinab, um seine Geliebte zu holen.",
     "definition": "Å gå eller bevege seg ned i noe, ofte brukt om en reise til et farlig eller mørkt sted i litteraturen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "literary",
     "part": "phrase"
   },
   {
@@ -140,7 +140,7 @@
     "example_german": "Er übernahm den Mantel seines gelehrten Vaters.",
     "definition": "Å overta en persons rolle, ansvar eller posisjon etter at de har sluttet eller dødd.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -158,7 +158,7 @@
     "example_german": "Niemand wollte den Worten des Propheten noch Glauben schenken.",
     "definition": "Å tro på noe eller stole på at noe er sant.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -176,7 +176,7 @@
     "example_german": "Der König herrschte über ein weites Reich.",
     "definition": "Å ha makt eller kontroll over noe eller noen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -194,7 +194,7 @@
     "example_german": "Das Ministerium ersucht um eine schriftliche Stellungnahme.",
     "definition": "Å be om noe på en formell og høflig måte, ofte skriftlig og i offentlig sammenheng.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "highly-formal",
     "part": "phrase"
   },
   {
@@ -212,7 +212,7 @@
     "example_german": "Die Bürger reichten eine Beschwerde bei der Aufsichtsbehörde ein.",
     "definition": "Å levere en offisiell protest eller et formelt ønske om at noe skal vurderes på nytt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-law-justice",
     "part": "phrase"
   },
   {
@@ -230,7 +230,7 @@
     "example_german": "Der Richter verkündet das Urteil in zwei Wochen.",
     "definition": "Å offentlig kunngjøre den endelige avgjørelsen i en rettssak.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-law-justice",
     "part": "phrase"
   },
   {
@@ -248,7 +248,7 @@
     "example_german": "Ausgehend von diesen Daten können wir Schlüsse ziehen.",
     "definition": "Ved å bruke noe som grunnlag eller startpunkt for videre tenkning eller konklusjon.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -266,7 +266,7 @@
     "example_german": "Im Lichte neuer Erkenntnisse muss die Theorie überarbeitet werden.",
     "definition": "Når man tar hensyn til ny eller relevant informasjon som påvirker hvordan man forstår noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -284,7 +284,7 @@
     "example_german": "Gemäß dem Gesetz hat jeder das Recht auf Verteidigung.",
     "definition": "Brukes for å si at noe følger regler, lover eller avtaler som allerede er bestemt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -302,7 +302,7 @@
     "example_german": "Er versuchte, den Kollegen bloßzustellen, wurde aber selbst entlarvt — wer anderen eine Grube gräbt, fällt selbst hinein.",
     "definition": "Hvis du prøver å skade eller lure noen, risikerer du å skade deg selv i stedet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -320,7 +320,7 @@
     "example_german": "Nach drei Monaten im Ausland spürte sie: Ost und West, daheim am best.",
     "definition": "Selv om det er fint å reise og oppleve nye steder, er hjemmet alltid det beste stedet å være.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -338,7 +338,7 @@
     "example_german": "Die Gerüchte verbreiten sich weiter — kein Rauch ohne Feuer.",
     "definition": "Hvis det finnes rykter eller tegn på noe, er det som regel noe sant i det.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -356,7 +356,7 @@
     "example_german": "Er beginnt seinen Arbeitstag immer um 6 Uhr — Morgenstund hat Gold im Mund.",
     "definition": "Hvis du begynner på arbeidet tidlig, rekker du å gjøre mer i løpet av dagen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -374,7 +374,7 @@
     "example_german": "Spar jeden Tag ein wenig — viele kleine Bäche ergeben einen großen Fluss.",
     "definition": "Mange små bidrag eller mengder kan til sammen bli noe stort og viktig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -392,7 +392,7 @@
     "example_german": "Er wählte Integrität statt Gehalt — Ehre ist besser als Gold.",
     "definition": "Det å ha et godt rykte og handle riktig er viktigere enn å være rik.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -410,7 +410,7 @@
     "example_german": "Niemand hatte ihr versprochen, dass es leicht sein würde — das Leben ist kein Wunschkonzert.",
     "definition": "Livet er ofte vanskelig og fullt av utfordringer, ikke alltid lett og behagelig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -428,7 +428,7 @@
     "example_german": "Auf halbem Weg den Berg hinauf kehrten sie um — es ist keine Schande umzukehren.",
     "definition": "Det er helt greit å endre mening eller gå tilbake hvis du ser at noe ikke fungerer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -446,7 +446,7 @@
     "example_german": "Das Cafe wird sowohl 'Stammlokal' als auch 'die Ecke' genannt — ein geliebtes Kind hat viele Namen.",
     "definition": "Noe eller noen som folk setter stor pris på, får ofte mange forskjellige navn eller betegnelser.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -464,7 +464,7 @@
     "example_german": "Feier den Sieg noch nicht — man soll das Fell des Bären nicht verkaufen, bevor man ihn erlegt hat.",
     "definition": "Ikke anta at noe er sikkert før det faktisk har skjedd.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -482,7 +482,7 @@
     "example_german": "Niemand protestierte, und der Leiter schloss daraus: wer schweigt, stimmt zu.",
     "definition": "Hvis du ikke sier imot, regnes det som at du er enig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -500,7 +500,7 @@
     "example_german": "Er glaubte, recht zu haben, aber Wahrheit und Glaube sind nicht dasselbe.",
     "definition": "Det at noen tror noe er sant, betyr ikke at det faktisk er sant.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -518,7 +518,7 @@
     "example_german": "Er tauchte zwei Stunden zu spät auf — aber besser spät als nie.",
     "definition": "Det er bedre å gjøre noe for sent enn å ikke gjøre det i det hele tatt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -536,7 +536,7 @@
     "example_german": "Er sagte nichts und gewann Respekt — Reden ist Silber, Schweigen ist Gold.",
     "definition": "Det er ofte klokere å holde seg stille enn å snakke mye.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -554,7 +554,7 @@
     "example_german": "Er war gern allein mit seinen Büchern — Einsamkeit ist die Gesellschaft des Weisen.",
     "definition": "Kloke mennesker kan ha det godt alene og trenger ikke alltid andre rundt seg.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -572,7 +572,7 @@
     "example_german": "Sie fanden ihr Glück in einem kleinen Dorf — wer im Verborgenen lebt, lebt gut.",
     "definition": "Et stille liv uten mye oppmerksomhet fra andre kan være det beste livet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -590,7 +590,7 @@
     "example_german": "Die Leute klagen über die Jugend wie immer — es gibt nichts Neues unter der Sonne.",
     "definition": "Alt som skjer i dag, har skjedd før — verden gjentar seg.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -608,7 +608,7 @@
     "example_german": "Es war aufregend zwischendurch, aber Ende gut, alles gut.",
     "definition": "Hvis resultatet til slutt er bra, spiller det ingen rolle at veien dit var vanskelig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -626,7 +626,7 @@
     "example_german": "Er wiederholte den Fehler nicht — durch Schaden wird man klug.",
     "definition": "Man lærer best av egne feil og dårlige erfaringer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -644,7 +644,7 @@
     "example_german": "Er versuchte, mit dem Rauchen aufzuhören, aber alte Gewohnheiten legt man schwer ab.",
     "definition": "Det er veldig vanskelig å forandre noe man har gjort på samme måte i lang tid.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -662,7 +662,7 @@
     "example_german": "Die Tochter ist genauso stur wie der Vater — der Apfel fällt nicht weit vom Stamm.",
     "definition": "Barn ligner ofte foreldrene sine i måten de er eller oppfører seg på.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -680,7 +680,7 @@
     "example_german": "Es tut jetzt weh, aber die Zeit heilt alle Wunden.",
     "definition": "Smerte og sorg blir mindre vanskelig å bære etter hvert som tiden går.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -698,7 +698,7 @@
     "example_german": "Die Pause war wohlverdient — ohne Essen und Trinken ist auch der Held nichts.",
     "definition": "Selv de sterkeste og mest handlekraftige menneskene trenger mat og hvile.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -716,7 +716,7 @@
     "example_german": "Das Angebot sah verlockend aus, aber es ist nicht alles Gold, was glänzt.",
     "definition": "Noe som ser bra eller verdifullt ut på utsiden, er ikke alltid bra i virkeligheten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -734,7 +734,7 @@
     "example_german": "Der Beschluss wurde in Übereinstimmung mit den geltenden Vorschriften gefasst.",
     "definition": "På en måte som stemmer med eller følger regler, lover eller avtaler.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -752,7 +752,7 @@
     "example_german": "Aus dem Bericht geht hervor, dass der Unfall hätte vermieden werden können.",
     "definition": "'Det fremgår av' brukes for å si at noe tydelig kommer frem eller kan leses ut av en kilde, for eksempel et dokument eller en tekst.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -770,7 +770,7 @@
     "example_german": "Es war eine Ironie des Schicksals, dass er genau an diesem Tag den Preis gewann.",
     "definition": "'En ironi av skjebnen' beskriver en situasjon der noe merkelig eller paradoksalt skjer, som om skjebnen bevisst leker med mennesker.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "literary",
     "part": "phrase"
   },
   {
@@ -788,7 +788,7 @@
     "example_german": "Gib die Gitarre noch nicht auf -- Übung macht den Meister.",
     "definition": "'Øvelse gjør mester' er et ordtak som betyr at man blir god på noe ved å øve mye og regelmessig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -806,7 +806,7 @@
     "example_german": "Der Sommer steht vor der Tur, und die Kinder freuen sich sehr.",
     "definition": "Brukes om noe som er nært forestående og snart vil skje.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -824,7 +824,7 @@
     "example_german": "Es ist nur noch ein Tag bis zur Premiere, und die Erwartung reitet ihn vollkommen.",
     "definition": "Brukes når noen kjenner forventningene så sterkt at det oppleves fysisk og litt overveldende.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -842,7 +842,7 @@
     "example_german": "Die Kinder liefen um die Wette zum Ziel und lachten den ganzen Weg.",
     "definition": "Når man gjør noe om kapp, konkurrerer man og prøver å bli best eller komme først.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -860,7 +860,7 @@
     "example_german": "Sie ertappte sich dabei, zu lacheln, als sie ihr altes Tagebuch las.",
     "definition": "Brukes når man oppdager at man gjør noe som er litt overraskende for en selv.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -878,7 +878,7 @@
     "example_german": "Er riss das Unkraut mit einem kraftigen Ruck heraus.",
     "definition": "Betyr å dra eller trekke hardt opp, eller å åpne noe på en litt brutal måte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -896,7 +896,7 @@
     "example_german": "Blut sickerte nach ein paar Minuten durch den Verband.",
     "definition": "Betyr å stikke ut, piple eller sive.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -914,7 +914,7 @@
     "example_german": "Die Ameisen bewegten sich in Reihen uber den Kuchenboden.",
     "definition": "Brukes om noe som beveger seg på rekker eller i små veier.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -932,7 +932,7 @@
     "example_german": "Die letzte Matheaufgabe war richtig schwierig, sogar fur den Lehrer.",
     "definition": "Brukes som en forsterker foran et adjektiv og betyr veldig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -950,7 +950,7 @@
     "example_german": "Der Weg fuhrte in eine kleine, versteckte Lichtung im Wald.",
     "definition": "Betyr å føre inn til noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -968,7 +968,7 @@
     "example_german": "Er warf ihr einen verstohlenen Blick von der anderen Seite des Zimmers zu.",
     "definition": "Betyr å se på noen i det skjulte eller i hemmelighet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -986,7 +986,7 @@
     "example_german": "Die beiden Schwestern sind haargenau gleich, es ist fast unmoglich, sie auseinanderzuhalten.",
     "definition": "Betyr helt lik eller identisk.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -1004,7 +1004,7 @@
     "example_german": "Der Betruger legte die aelteren Kunden mit seinem falschen Angebot gruendlich herein.",
     "definition": "Betyr å lure noen grundig, eller å narre noen slik at de blir forvirret.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -1022,7 +1022,7 @@
     "example_german": "Nur wenigen Menschen ist es vergonnt, einen solchen Sonnenaufgang vom Gipfel eines Berges zu erleben.",
     "definition": "Brukes om noe som svært få mennesker får oppleve eller ta del i.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -1040,7 +1040,7 @@
     "example_german": "Er wirkte beim ersten Treffen sehr freundlich, aber der Schein truegt - er stellte sich als unehrlich heraus.",
     "definition": "Brukes for å si at et fint eller vennlig ytre ikke nødvendigvis stemmer med virkeligheten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -1058,7 +1058,7 @@
     "example_german": "Sie lobte seine Arbeit und kritisierte sie im selben Atemzug.",
     "definition": "Betyr i samme øyeblikk eller samtidig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1076,7 +1076,7 @@
     "example_german": "Die beiden Kollegen erganzen sich perfekt - sie ist kreativ und er ist strukturiert.",
     "definition": "Betyr å harmonere godt sammen, eller å passe bra sammen med ulike egenskaper.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -1094,7 +1094,7 @@
     "example_german": "Die beiden Nachbarlander haben eine lange Geschichte gegenseitiger kultureller und politischer Abstossung.",
     "definition": "Betyr å vekke motvilje hos hverandre, eller å kjenne gjensidig at man ikke ønsker å være sammen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -1112,7 +1112,7 @@
     "example_german": "Im 19. Jahrhundert starben Frauen leider haufig im Kindbett, weil medizinische Versorgung fehlte.",
     "definition": "Betyr å dø mens man føder et barn, eller i etterkant av en fødsel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "medicine-healthcare",
     "part": "phrase"
   },
   {
@@ -1130,7 +1130,7 @@
     "example_german": "Im Krankenhaus wurde der Patient von den erfahrenen Pflegekraften gut versorgt.",
     "definition": "Betyr å bli passet på av noen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1148,7 +1148,7 @@
     "example_german": "Nach der Auktion gelangte das Gemalde in den Besitz eines reichen Sammlers.",
     "definition": "Brukes når noe havner i en annens eie, og man dermed blir eier av det.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1166,7 +1166,7 @@
     "example_german": "Im Laufe ihrer Jahre als Schriftstellerin lernte sie wirklich, das Wort in ihre Gewalt zu bekommen.",
     "definition": "Betyr å bli flink til å uttrykke seg.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -1184,7 +1184,7 @@
     "example_german": "Er erzahlte die Geschichte in einem klaren sudnorwegischen Dialekt, und alle wussten sofort, woher er kam.",
     "definition": "Betyr med klar og tydelig sørlandsdialekt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -1202,7 +1202,7 @@
     "example_german": "Die Musik rief Erinnerungen an ihre Kindheit herauf.",
     "definition": "Betyr å påkalle eller kalle fram noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "literary",
     "part": "phrase"
   },
   {
@@ -1220,7 +1220,7 @@
     "example_german": "Der Grossvater wanderte im Alter von zweiundneunzig Jahren ins Jenseits hinuber.",
     "definition": "Betyr å dø, med en religiøs hentydning.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -1238,7 +1238,7 @@
     "example_german": "Die Kinder waren den ganzen Tag uberall und wollten keine Sekunde stillsitzen.",
     "definition": "Betyr å være (for) aktiv, eller å være overalt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -1256,7 +1256,7 @@
     "example_german": "Nach dem Skandal entschied sich der Politiker, eine Weile ruhig zu bleiben.",
     "definition": "Betyr å være stille for å unngå å lage bråk eller forstyrre.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -1274,7 +1274,7 @@
     "example_german": "Er klagte und jammerte laut uber jede kleine Veranderung bei der Arbeit.",
     "definition": "Betyr å klage og protestere høylytt over noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -1292,7 +1292,7 @@
     "example_german": "Nach vielen Jahren des Gebrauchs begann der alte Stuhl auseinanderzufallen.",
     "definition": "Betyr å gå i stykker eller bli ødelagt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -1310,7 +1310,7 @@
     "example_german": "Sie regte sich sehr daruber auf, dass der Nachbar vor ihrer Einfahrt geparkt hatte.",
     "definition": "Betyr å bli sint, eller å fare opp for noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -1328,7 +1328,7 @@
     "example_german": "Er hockte sich hin, um die Blume genauer zu betrachten.",
     "definition": "Betyr å sette seg med bøyde knær og baken ned mot hælene.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -1346,7 +1346,7 @@
     "example_german": "Der Urlaub war vorbei, ehe man sich versah.",
     "definition": "Brukes når man vil si at noe går veldig raskt, før man rekker å sukke eller si noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -1364,7 +1364,7 @@
     "example_german": "Der Hund wollte sich keinen Millimeter bewegen, egal was wir sagten.",
     "definition": "Betyr å ikke bevege seg i det hele tatt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -1382,7 +1382,7 @@
     "example_german": "Er kam in einem funkelnageln neuen Auto angefahren.",
     "definition": "Betyr splitter ny eller helt ny.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -1400,7 +1400,7 @@
     "example_german": "Er eilte davon, ohne sich umzusehen.",
     "definition": "Betyr å gå fort, eller å farte av sted.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -1418,7 +1418,7 @@
     "example_german": "Die Gaste waren langst gegangen, als wir endlich nach Hause kamen.",
     "definition": "Betyr for lenge siden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1436,7 +1436,7 @@
     "example_german": "Nach dem Lauf stand er da und schnappte nach Luft.",
     "definition": "Betyr å være andpusten, eller å ha problemer med pusten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -1454,7 +1454,7 @@
     "example_german": "Als er den Halt verlor, fiel er vom Stein.",
     "definition": "Når fotfestet glipper, sklir man.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -1472,7 +1472,7 @@
     "example_german": "Sie zurten die Ladung am Autodach fest, damit sie nicht herunterfallen konnte.",
     "definition": "Å binde fast.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -1490,7 +1490,7 @@
     "example_german": "Mit dem warmen Wetter und guter Musik war alles bereit fur einen tollen Abend.",
     "definition": "Å være lagt til rette for noe, eller å ha blitt klargjort for det.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1508,7 +1508,7 @@
     "example_german": "Das Unternehmen hat uber viele Jahre der Marktturbulenzen einen stabilen Kurs gehalten.",
     "definition": "En fast og sikker retning som ikke vakler.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1526,7 +1526,7 @@
     "example_german": "Oma wird bald siebzig, aber das Alter macht ihr nichts aus.",
     "definition": "Hun ser ikke eldre ut selv om årene går.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "physical-appearance",
     "part": "phrase"
   },
   {
@@ -1544,7 +1544,7 @@
     "example_german": "Sie wohnen direkt neben der Schule, sodass die Kinder nicht weit laufen mussen.",
     "definition": "Like inntil eller nær noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1562,7 +1562,7 @@
     "example_german": "Mein Sohn ist diesen Sommer in die Hohe geschossen und ist fast so gross wie ich.",
     "definition": "Å vokse fort og bli høy på kort tid.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "physical-appearance",
     "part": "phrase"
   },
   {
@@ -1580,7 +1580,7 @@
     "example_german": "Du solltest dich gut in Acht nehmen davor, personliche Informationen online preiszugeben.",
     "definition": "Å passe seg for noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -1598,7 +1598,7 @@
     "example_german": "Er kam herein mit der Mutze schief aufgesetzt und einem breiten Lacheln im Gesicht.",
     "definition": "Med lua på skrå, ikke rett på hodet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "physical-appearance",
     "part": "phrase"
   },
   {
@@ -1616,7 +1616,7 @@
     "example_german": "Er platzte durch die Tur herein, ohne anzuklopfen, und uberraschte alle.",
     "definition": "Å gå rett inn i full fart.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -1634,7 +1634,7 @@
     "example_german": "Sie sagte ohne nahere Uberlegung ja zu dem Jobangebot.",
     "definition": "Uten å tenke nærmere over saken.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1652,7 +1652,7 @@
     "example_german": "Nach dem Meeting kreiste dieselbe Frage die ganze Nacht in seinem Kopf.",
     "definition": "Når man tenker de samme tankene om igjen og igjen, kverner det rundt i hodet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -1670,7 +1670,7 @@
     "example_german": "Sie zuckte zusammen, als das Telefon plotzlich mitten in der Stille klingelte.",
     "definition": "Å rykke til eller bevege seg plutselig fordi man blir redd eller overrasket.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -1688,7 +1688,7 @@
     "example_german": "Der Junge wurde auf frischer Tat ertappt, als er Kekse aus dem Schrank stahl.",
     "definition": "Å bli oppdaget mens man gjør noe man vil skjule for andre.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -1706,7 +1706,7 @@
     "example_german": "Als der Lehrer ihre Antwort vor der Klasse vorlas, stieg ihr sofort die Schamrote ins Gesicht.",
     "definition": "Når man blir veldig flau, kan skamrødmen melde seg, og man blir rød i ansiktet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -1724,7 +1724,7 @@
     "example_german": "Er gab zu erkennen, dass er nicht einverstanden war, indem er die Hand hob.",
     "definition": "Å vise noe åpent fram.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -1742,7 +1742,7 @@
     "example_german": "Das Geld vom Onkel kam wie ein Geschenk des Himmels, genau als sie es am meisten brauchten.",
     "definition": "Å komme som en himmelens eller Guds gave.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "literary",
     "part": "phrase"
   },
   {
@@ -1760,7 +1760,7 @@
     "example_german": "Es dauerte ein paar Sekunden, bis er die Bestürzung nach der unerwarteten Nachricht abgeschüttelt hatte.",
     "definition": "Å bli kvitt eller få bort følelsen av å være overrasket og overveldet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -1778,7 +1778,7 @@
     "example_german": "Sie sitzen den ganzen Tag am Fluss, und das Angelgluck ist auf ihrer Seite.",
     "definition": "Fiskelykken er med dem, og de får fisk.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -1796,7 +1796,7 @@
     "example_german": "Die Menge begann von allen Seiten heranzurucken, als das Konzert begann.",
     "definition": "Å komme litt etter litt, ofte i stor mengde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -1814,7 +1814,7 @@
     "example_german": "Die Gruppe schaffte es, genug Freiwillige fur die Veranstaltung bereitzustellen.",
     "definition": "Å komme med noe, eller å bidra med noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -1832,7 +1832,7 @@
     "example_german": "Nach dem Spiel hagelten Schimpfworter von den Zuschauern auf den Schiedsrichter ein.",
     "definition": "Når det hagler med skjellsord, kommer det mange kritiske og sinte ord om noen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -1850,7 +1850,7 @@
     "example_german": "Er benutzte den Schraubenzieher, um eine Schraube am Regal anzuziehen, damit es fest saß.",
     "definition": "Å få en skrue til å sitte bedre eller være mer fast.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -1868,7 +1868,7 @@
     "example_german": "Der Nachbar spielt spat abends laut Musik, und das geht ihm auf die Nerven.",
     "definition": "Det gjør ham irritabel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -1886,7 +1886,7 @@
     "example_german": "Der Minister bekam nach der gescheiterten Reform von der Presse sein Fett weg.",
     "definition": "Å bli kritisert eller bli utsatt for fysisk vold.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -1904,7 +1904,7 @@
     "example_german": "Bei einer so hohen Miete ist es schwierig, uber die Runden zu kommen.",
     "definition": "Å klare seg økonomisk.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -1922,7 +1922,7 @@
     "example_german": "Sie hat sich jahrelang abgerackert und verdient endlich eine gute Rente.",
     "definition": "Å jobbe altfor mye.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -1940,7 +1940,7 @@
     "example_german": "Ihre Hutte liegt tief in der Einode, und man braucht zwei Stunden zu Fuß dorthin.",
     "definition": "Avsides, langt borte fra steder der det bor folk.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -1958,7 +1958,7 @@
     "example_german": "Nach dem Konflikt mit seinem Kollegen entschied er sich, in sich zu gehen und uber sein Verhalten nachzudenken.",
     "definition": "Å reflektere over egne handlinger.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -1976,7 +1976,7 @@
     "example_german": "Der Rucksack begann an seinem Rucken nach unten zu gleiten, wahrend er ging.",
     "definition": "Å gli nedover, eller å synke.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -1994,7 +1994,7 @@
     "example_german": "Wir pruften vorsichtig, ob das Eis halt, und wagten uns aufs Wasser hinaus.",
     "definition": "Isen ødelegges ikke; den tåler vekten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -2012,7 +2012,7 @@
     "example_german": "Das Eis bricht ein, wenn man sich zu dieser Jahreszeit zu weit vom Ufer entfernt.",
     "definition": "Isen gir etter; isen ødelegges og tåler ikke vekten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -2030,7 +2030,7 @@
     "example_german": "Das Eis tragt heute, also konnen wir sicher auf die andere Seite hinuberlaufen.",
     "definition": "Isen holder; den tåler vekten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -2048,7 +2048,7 @@
     "example_german": "Er lud so viel Gepack auf, dass das Auto den Hugel kaum hochkam.",
     "definition": "Å legge på mye, eller å legge på et lass.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -2066,7 +2066,7 @@
     "example_german": "Nachdem er seinen Job verloren hatte, begann er in eine Spirale aus Depression und Isolation zu geraten.",
     "definition": "Å komme inn i en negativ retning som det er vanskelig å komme seg ut av.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2084,7 +2084,7 @@
     "example_german": "Nach dem Unfall begann er wirklich, sein Leben und seine Rolle abzuwagen.",
     "definition": "Å evaluere sitt eget liv og sin egen rolle.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -2102,7 +2102,7 @@
     "example_german": "Die Eltern beobachteten genau das gesamte Tun und Lassen des Kindes.",
     "definition": "Alt en gjør og alt en lar være å gjøre, altså ens oppførsel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -2120,7 +2120,7 @@
     "example_german": "Bevor du andere kritisierst, solltest du dich selbst kritisch hinterfragen.",
     "definition": "Å undersøke seg selv og se på seg selv med et kritisk blikk.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2138,7 +2138,7 @@
     "example_german": "Seine Frau starb im Januar, und wie man sagt, folgte Gertruds Mann nur wenige Wochen spater nach.",
     "definition": "Gjertruds mann døde kort tid etterpå.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -2156,7 +2156,7 @@
     "example_german": "Der alte Mann schied eines Novemberabends still von hinnen.",
     "definition": "Å dø.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -2174,7 +2174,7 @@
     "example_german": "Sie trug sich so wurde, dass man glauben konnte, sie habe blaues Blut in den Adern.",
     "definition": "Å være av kongelig eller adelig slekt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -2192,7 +2192,7 @@
     "example_german": "Sie schnalzte mit der Zunge, als sie horte, was der Nachbar getan hatte.",
     "definition": "Å lage en smellende lyd med tungen, brukt som uttrykk for skepsis eller en fordømmende holdning.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sensory-sound",
     "part": "phrase"
   },
   {
@@ -2210,7 +2210,7 @@
     "example_german": "Sie kniff die Lippen zusammen und sagte nichts.",
     "definition": "Å presse sammen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -2228,7 +2228,7 @@
     "example_german": "Wahrend des Streits hageln die Worte, und keiner gibt nach.",
     "definition": "Når sinte ord kommer fort og ubehagelig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -2246,7 +2246,7 @@
     "example_german": "Er ballte die Fäuste vor Wut, als er die Nachricht hörte.",
     "definition": "Å lukke og stramme hendene.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -2264,7 +2264,7 @@
     "example_german": "Wir hielten den Atem an, während der Richter das Ergebnis vorlas.",
     "definition": "Å la være å puste.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -2282,7 +2282,7 @@
     "example_german": "Es gab meilenweit in der Umgebung keinen Arzt.",
     "definition": "Et stort område.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -2300,7 +2300,7 @@
     "example_german": "Als die Lage sich verschlechterte, entschied der Chef zu handeln.",
     "definition": "Å gjøre noe aktivt; å gripe inn.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2318,7 +2318,7 @@
     "example_german": "Die Kälte machte sich wirklich bemerkbar, als die Nacht hereinbrach.",
     "definition": "Å bli lagt merke til; å hevde seg.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -2336,7 +2336,7 @@
     "example_german": "Mit Müh und Not schaffte sie es schließlich, ihre Ausbildung abzuschließen.",
     "definition": "Med vanskeligheter og utfordringer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2354,7 +2354,7 @@
     "example_german": "Nach dem Unfall war sie vor Schock fast besinnungslos.",
     "definition": "Nesten uten bevissthet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -2372,7 +2372,7 @@
     "example_german": "Das Publikum brach in lautes, schrilles Gelächter aus, als der Komiker den unerwarteten Witz brachte.",
     "definition": "Å le eller skråle høyt, kanskje litt skjærende og ubehagelig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sensory-sound",
     "part": "phrase"
   },
   {
@@ -2390,7 +2390,7 @@
     "example_german": "Die Angst begann die Oberhand zu gewinnen, als der Sturm naherkam.",
     "definition": "Å bli rådende; å få overmakt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2408,7 +2408,7 @@
     "example_german": "Er sas in sich versunken und horte nicht, was wir sagten.",
     "definition": "Å være fordypet i egne tanker.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2426,7 +2426,7 @@
     "example_german": "Die Kinder konnten es kaum erwarten, die Weihnachtsgeschenke zu offnen.",
     "definition": "Å vente på noe og glede seg til noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -2444,7 +2444,7 @@
     "example_german": "Sie schenkte Freunden, denen es schlecht ging, immer ein offenes Ohr.",
     "definition": "Å høre velvillig på noen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -2462,7 +2462,7 @@
     "example_german": "Er kaute lange an den Worten, bevor er die Frage beantwortete.",
     "definition": "Å tenke nøye gjennom det som sies.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2480,7 +2480,7 @@
     "example_german": "Es dauerte eine Weile, bis sie das Problem von Grund auf verstand.",
     "definition": "Å forstå noe på et dypt plan, ikke bare overfladisk.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "academic",
     "part": "phrase"
   },
   {
@@ -2498,7 +2498,7 @@
     "example_german": "Er scheint sich in der neuen Stelle wohlzufuhlen.",
     "definition": "Å se ut til å.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2516,7 +2516,7 @@
     "example_german": "Als die Mannschaft das Finale verlor, machten sich Schimpfworter in der Umkleide breit.",
     "definition": "Sinte ord eller banneord faller.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -2534,7 +2534,7 @@
     "example_german": "Nach der Wanderung hatte ich richtig Lust auf eine heisse Tasse Kaffee.",
     "definition": "Å ha lyst på noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -2552,7 +2552,7 @@
     "example_german": "Sie wieherte vor Lachen, als ihre Freundin uber ihren eigenen Schuh stolperte.",
     "definition": "Å le med en spesiell latter, som en hest.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sensory-sound",
     "part": "phrase"
   },
   {
@@ -2570,7 +2570,7 @@
     "example_german": "In einem Wutanfall schmiss er das Telefon gegen die Wand.",
     "definition": "Å kaste noe hardt i veggen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -2588,7 +2588,7 @@
     "example_german": "Als Kind wurde er oft wegen seiner Brille gehanselt.",
     "definition": "Å bli plaget eller terget.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -2606,7 +2606,7 @@
     "example_german": "Nach ihrer scharfen Antwort stand er da und hatte keine schlauen Sprüche mehr.",
     "definition": "Når man ikke klarer å være tøff eller frekk lenger, er man tom for kjekke ord.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -2624,7 +2624,7 @@
     "example_german": "Die Nachbarn hatten jahrelang nebeneinander gelebt und lebten in Frieden und Eintracht.",
     "definition": "Å leve uten å være i konflikt med andre.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -2642,7 +2642,7 @@
     "example_german": "Die Entscheidung, das Buro zu schließen, kam von höherer Stelle und war nicht verhandelbar.",
     "definition": "Fra noen med makt høyere oppe i samfunnshierarkiet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -2660,7 +2660,7 @@
     "example_german": "Sie bemerkte, dass ihr jemand auf der Strasse folgte.",
     "definition": "Å bli oppmerksom på noe; å bli klar over noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2678,7 +2678,7 @@
     "example_german": "Das Geld war einen Moment lang da und verschwand dann spurlos in der Luft.",
     "definition": "Å forsvinne sporløst eller plutselig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2696,7 +2696,7 @@
     "example_german": "Er steckte ihr unbemerkt einen Zettel unter dem Tisch zu.",
     "definition": "Å gi noen noe, raskt og kanskje litt skjult.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -2714,7 +2714,7 @@
     "example_german": "Ich ertappte mich dabei, mich zu fragen, ob er wirklich gemeint hatte, was er sagte.",
     "definition": "Å merke at man lurer på noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2732,7 +2732,7 @@
     "example_german": "Durch Schaden klug geworden, liest sie den Vertrag immer sorgfaltig durch, bevor sie unterschreibt.",
     "definition": "Når man er klok av skade, har man hatt dårlige erfaringer tidligere og lært av disse.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -2750,7 +2750,7 @@
     "example_german": "Du solltest dich sehr davor huten, Fremden im Internet blind zu vertrauen.",
     "definition": "Å passe seg godt for noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -2768,7 +2768,7 @@
     "example_german": "Sie sagte geradeheraus, dass ihr der Plan nicht gefiel.",
     "definition": "Direkte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2786,7 +2786,7 @@
     "example_german": "Ich gehe sowieso in den Laden, da kann ich das Paket gleich mitnehmen.",
     "definition": "Samtidig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2804,7 +2804,7 @@
     "example_german": "Kurz vor dem Auftritt gingen ihm die Nerven durch.",
     "definition": "Nervene kommer ut av kontroll.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -2822,7 +2822,7 @@
     "example_german": "Kaum hatte sie sich hingesetzt, klingelte das Telefon erneut.",
     "definition": "Akkurat i det øyeblikket.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -2840,7 +2840,7 @@
     "example_german": "Sie war vollig ausser sich, als sie horte, dass der Flug gestrichen worden war.",
     "definition": "Å være frustrert og lei seg.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -2858,7 +2858,7 @@
     "example_german": "Er fuhr zusammen, als das Telefon mitten in der Stille klingelte.",
     "definition": "Å støkke; å bevege kroppen plutselig fordi man blir redd.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -2876,7 +2876,7 @@
     "example_german": "Ich bemerkte ein seltsames Detail in dem Bericht.",
     "definition": "Å legge merke til noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2894,7 +2894,7 @@
     "example_german": "Nach den widersprechenden Ratschlagen war sie vollig ratlos.",
     "definition": "Usikker.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -2912,7 +2912,7 @@
     "example_german": "Ich erkannte seine Stimme sofort wieder, obwohl es viele Jahre her war, dass wir gesprochen hatten.",
     "definition": "Å kjenne igjen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -2930,7 +2930,7 @@
     "example_german": "Als die Horrorszene auf dem Bildschirm erschien, sassen alle wie angenagelt.",
     "definition": "Å sitte helt fast.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -2948,7 +2948,7 @@
     "example_german": "Als der Lehrer das Prufungsdatum bekanntgab, war es so still, dass man eine Stecknadel hatte fallen horen konnen.",
     "definition": "Uttrykk som brukes for å uttrykke at det er svært stille.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sensory-sound",
     "part": "phrase"
   },
   {
@@ -2966,7 +2966,7 @@
     "example_german": "Die Schuler begannen zu tuscheln und zu flusstern, als der neue Lehrer den Raum verliess.",
     "definition": "Å snakke lavt og ivrig sammen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sensory-sound",
     "part": "phrase"
   },
   {
@@ -2984,7 +2984,7 @@
     "example_german": "Es ist schwierig, den Uberblick uber alle seine Passworter zu behalten.",
     "definition": "Å holde kontroll på; å ha oversikt over.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3002,7 +3002,7 @@
     "example_german": "Laufer Nummer zwolf brach kurz vor der Ziellinie vor Erschopfung zusammen.",
     "definition": "Å sige sammen; å falle rett ned.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -3020,7 +3020,7 @@
     "example_german": "In den Sommerferien beschloss er, die Schule Schule sein zu lassen und einfach die Freiheit zu geniessen.",
     "definition": "Å ikke legge vekt på skolen; å glemme skolen litt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3038,7 +3038,7 @@
     "example_german": "Das Volk beschloss, gegen die ungerechte Regierung zu rebellieren.",
     "definition": "Å markere motstand mot myndigheter eller andre makthavere, som kan være voldelig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "politics-democracy",
     "part": "phrase"
   },
   {
@@ -3056,7 +3056,7 @@
     "example_german": "Er gab sich viel Muhe bei der Aufgabe und lieferte ein beeindruckendes Ergebnis.",
     "definition": "Å jobbe hardt med noe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -3074,7 +3074,7 @@
     "example_german": "Der Dieb nahm alles mit, als er in die Wohnung einbrach.",
     "definition": "Alt; hver eneste smule.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -3092,7 +3092,7 @@
     "example_german": "Bei der Arbeit passiert immer etwas - es geht in einem durch von morgens bis abends.",
     "definition": "Alt skjer uten pause.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3110,7 +3110,7 @@
     "example_german": "Ich bemitleide ihn, nachdem er seinen Job verloren hat.",
     "definition": "Å føle medlidenhet med noen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -3128,7 +3128,7 @@
     "example_german": "Er versuchte, seine Idee wahrend des Meetings schrittweise einzubringen, ohne dass es jemand bemerkte.",
     "definition": "Å prøve å få det slik en vil, litt etter litt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3146,7 +3146,7 @@
     "example_german": "Selbst der scharsinnigste Student hatte Schwierigkeiten mit dieser Prufung.",
     "definition": "Til og med den mest intelligente.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -3164,7 +3164,7 @@
     "example_german": "Er verlor die Beherrschung, als der Chef seine Arbeit vor allen Kollegen kritisierte.",
     "definition": "å miste kontrollen, eller å begynne å brenne.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -3182,7 +3182,7 @@
     "example_german": "Jetzt ist der Prozess in Gang, und wir konnen nicht mehr umkehren.",
     "definition": "prosessen har startet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3199,7 +3199,7 @@
     "example_spanish": "El teatro tiene una velada programada cada viernes en enero.",
     "example_german": "Das Theater hat jeden Freitag im Januar einen angesetzten Abend.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -3216,7 +3216,7 @@
     "example_spanish": "Si realmente quieres tener éxito, tienes que comprometerte con ello.",
     "example_german": "Wenn du wirklich erfolgreich sein willst, musst du dich voll dafür einsetzen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -3233,7 +3233,7 @@
     "example_spanish": "Al jefe le dijeron las cosas claras cuando los empleados finalmente protestaron.",
     "example_german": "Der Chef bekam endlich die Meinung gesagt, als die Mitarbeiter schließlich protestierten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -3250,7 +3250,7 @@
     "example_spanish": "Le dieron su merecido después de llegar tarde por tercera vez consecutiva.",
     "example_german": "Er bekam seinen Denkzettel, nachdem er zum dritten Mal in Folge zu spät kam.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -3267,7 +3267,7 @@
     "example_spanish": "Habló de sí misma ante los invitados extensamente y sin parar.",
     "example_german": "Sie erzählte den Gästen ausgiebig und in allen Einzelheiten von sich selbst.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -3284,7 +3284,7 @@
     "example_spanish": "Los pensamientos le daban vueltas en la cabeza toda la noche.",
     "example_german": "Die Gedanken schwirrten ihr die ganze Nacht im Kopf herum.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -3301,7 +3301,7 @@
     "example_spanish": "Deberías grabarte en la memoria que la honestidad siempre vale la pena.",
     "example_german": "Du solltest dir hinter die Ohren schreiben, dass sich Ehrlichkeit immer auszahlt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -3318,7 +3318,7 @@
     "example_spanish": "Se tomo la critica a pecho y trabajo duro para mejorar.",
     "example_german": "Er nahm die Kritik zu Herzen und arbeitete hart daran, sich zu verbessern.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -3335,7 +3335,7 @@
     "example_spanish": "Tengo la sensación de que algo importante está a punto de suceder.",
     "example_german": "Ich habe das Gefühl, dass gleich etwas Wichtiges passieren wird.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -3352,7 +3352,7 @@
     "example_spanish": "Por pequeño que sea un regalo, puede significar mucho para quien lo recibe.",
     "example_german": "Noch so ein kleines Geschenk kann für den Empfänger sehr viel bedeuten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -3369,7 +3369,7 @@
     "example_spanish": "El perro atiende al nombre de Rex y siempre acude cuando se le llama.",
     "example_german": "Der Hund hört auf den Namen Rex und kommt immer, wenn er gerufen wird.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3386,7 +3386,7 @@
     "example_spanish": "Muchos jóvenes admiran a los deportistas como modelos a seguir.",
     "example_german": "Viele junge Menschen schauen zu Sportlern als Vorbilder auf.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -3403,7 +3403,7 @@
     "example_spanish": "Se rajó justo antes de dar un discurso frente a toda la audiencia.",
     "example_german": "Er bekam kalte Füße kurz bevor er vor dem gesamten Publikum eine Rede halten sollte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -3420,7 +3420,7 @@
     "example_spanish": "Esta especie de ave está en vías de extinción debido a la destrucción de su hábitat.",
     "example_german": "Diese Vogelart ist aufgrund der Zerstörung ihres Lebensraums vom Aussterben bedroht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3437,7 +3437,7 @@
     "example_spanish": "Las críticas le resbalaban como el agua - no le importaban en absoluto.",
     "example_german": "Die Kritik perlte an ihm ab wie das Wasser an einer Gans - es ließ ihn völlig kalt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3454,7 +3454,7 @@
     "example_spanish": "Ella temblaba como una hoja cuando el médico anunció el resultado.",
     "example_german": "Sie zitterte wie Espenlaub, als der Arzt das Ergebnis verkündete.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -3471,7 +3471,7 @@
     "example_spanish": "Los ladrones se infiltraron al amparo de la noche para no ser descubiertos.",
     "example_german": "Die Diebe schlichen sich im Dunkel der Nacht hinein, um nicht entdeckt zu werden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "literary",
     "part": "phrase"
   },
   {
@@ -3488,7 +3488,7 @@
     "example_spanish": "Los políticos quieren arrancar la corrupción de raíz.",
     "example_german": "Die Politiker wollen die Korruption mit der Wurzel ausreißen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3505,7 +3505,7 @@
     "example_spanish": "La policía promete no dejar piedra sin mover para encontrar al niño desaparecido.",
     "example_german": "Die Polizei verspricht, jeden Stein umzudrehen, um den vermissten Jungen zu finden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3522,7 +3522,7 @@
     "example_spanish": "Todo el país ondeó la bandera a media asta tras la tragedia.",
     "example_german": "Das ganze Land hisste die Fahne auf halbmast nach der Tragödie.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -3539,7 +3539,7 @@
     "example_spanish": "No tengo ni idea de lo que ella quiere decir con eso.",
     "example_german": "Ich habe absolut keine Ahnung, was sie damit meint.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -3556,7 +3556,7 @@
     "example_spanish": "El anciano entregó el alma rodeado de su familia.",
     "example_german": "Der alte Mann gab den Geist auf, umgeben von seiner Familie.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -3573,7 +3573,7 @@
     "example_spanish": "Varias tiendas del centro se hundieron durante la pandemia.",
     "example_german": "Mehrere Geschäfte in der Innenstadt gingen während der Pandemie den Bach runter.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3590,7 +3590,7 @@
     "example_spanish": "Muchos soldados perecieron en el duro combate.",
     "example_german": "Viele Soldaten kamen in dem harten Kampf um.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3607,7 +3607,7 @@
     "example_spanish": "El legendario cazador se ha ido a los eternos campos de caza.",
     "example_german": "Der legendäre Jäger ist zu den ewigen Jagdgründen eingegangen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3624,7 +3624,7 @@
     "example_spanish": "Su abuela falleció tranquilamente la semana pasada.",
     "example_german": "Seine Großmutter ist letzte Woche friedlich von uns gegangen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3641,7 +3641,7 @@
     "example_spanish": "El abuelo falleció apaciblemente en su propia cama, rodeado de su familia.",
     "example_german": "Der Großvater schlief friedlich in seinem eigenen Bett ein, umgeben von der Familie.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3658,7 +3658,7 @@
     "example_spanish": "Terminó sus días como un anciano solitario en un pequeño pueblo.",
     "example_german": "Er beendete seine Tage als einsamer alter Mann in einer kleinen Stadt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3675,7 +3675,7 @@
     "example_spanish": "El viejo rey exhaló su último suspiro mientras todo el país estaba de luto.",
     "example_german": "Der alte König tat seinen letzten Atemzug, während das ganze Land trauerte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3692,7 +3692,7 @@
     "example_spanish": "Es importante que cuidemos de los ancianos en la sociedad.",
     "example_german": "Es ist wichtig, dass wir uns um die älteren Menschen in der Gesellschaft kümmern.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3709,7 +3709,7 @@
     "example_spanish": "La tragedia trataba de un joven que murió por mano propia después de muchos años de sufrimiento.",
     "example_german": "Die Tragödie handelte von einem jungen Mann, der nach vielen Jahren des Leidens durch eigene Hand starb.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -3726,7 +3726,7 @@
     "example_spanish": "Se desentendió de todo el proyecto cuando empezó a salir mal.",
     "example_german": "Er wusch seine Hände von dem gesamten Projekt, als es anfing, schiefzulaufen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -3743,7 +3743,7 @@
     "example_spanish": "El accidente le causó un daño duradero con el que tuvo que vivir el resto de su vida.",
     "example_german": "Der Unfall verursachte ihm einen bleibenden Schaden, mit dem er den Rest seines Lebens leben musste.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "medicine-healthcare",
     "part": "phrase"
   },
   {
@@ -3760,7 +3760,7 @@
     "example_spanish": "El político se lavó las manos y se negó a asumir la responsabilidad por el escándalo.",
     "example_german": "Der Politiker wusch seine Hände in Unschuld und weigerte sich, die Verantwortung für den Skandal zu übernehmen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -3777,7 +3777,7 @@
     "example_spanish": "El jefe le dio rienda suelta al diseñador para dar forma a la nueva campaña.",
     "example_german": "Der Chef gab dem Designer freie Hand, die neue Kampagne zu gestalten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3794,7 +3794,7 @@
     "example_spanish": "Trata a su novia como a una reina y hace todo por ella.",
     "example_german": "Er trägt seine Freundin auf Händen und tut alles für sie.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -3811,7 +3811,7 @@
     "example_spanish": "Eso no es algo que yo esté dispuesto a reconocer haber dicho.",
     "example_german": "Das ist nichts, wozu ich mich bekennen möchte, gesagt zu haben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3828,7 +3828,7 @@
     "example_spanish": "Le importa un bledo lo que otros piensen de él.",
     "example_german": "Es ist ihm völlig egal, was andere über ihn denken.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -3845,7 +3845,7 @@
     "example_spanish": "Podría haberme quedado en casa hoy con el mismo gusto.",
     "example_german": "Ich hätte genauso gut heute zu Hause bleiben können.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -3862,7 +3862,7 @@
     "example_spanish": "No aceptamos ese tipo de actitudes en este lugar de trabajo.",
     "example_german": "Solche Töne akzeptieren wir an diesem Arbeitsplatz nicht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -3879,7 +3879,7 @@
     "example_spanish": "Noruega ha extraído petróleo del Mar del Norte desde la década de 1970.",
     "example_german": "Norwegen fördert seit den 1970er Jahren Öl aus der Nordsee.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "climate-environment-policy",
     "part": "phrase"
   },
   {
@@ -3896,7 +3896,7 @@
     "example_spanish": "Ella se convirtió en objeto de los rumores de la gente.",
     "example_german": "Sie wurde zum Gegenstand von Klatsch und Tratsch.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -3913,7 +3913,7 @@
     "example_spanish": "Incluso diez coronas es una buena donación: todo suma.",
     "example_german": "Sogar zehn Kronen sind eine gute Spende — jeder Beitrag zählt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -3930,7 +3930,7 @@
     "example_spanish": "Ahorra un poco cada día: muchos pocos hacen un mucho.",
     "example_german": "Spare jeden Tag ein wenig — viele kleine Bäche machen einen großen Fluss.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -3947,7 +3947,7 @@
     "example_spanish": "Soltó la disculpa de carrerilla como si la hubiera ensayado.",
     "example_german": "Er rasselte die Entschuldigung herunter, als hätte er sie geübt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -3964,7 +3964,7 @@
     "example_spanish": "El detective tuvo que sonsacar la verdad al testigo tras horas de preguntas.",
     "example_german": "Der Detektiv musste die Wahrheit stundenlang durch Fragen aus dem Zeugen herauslocken.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -3981,7 +3981,7 @@
     "example_spanish": "La boda estuvo llena de alegría y regocijo de la mañana a la noche.",
     "example_german": "Die Hochzeit war von morgens bis abends erfüllt von Freude und Fröhlichkeit.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -3998,7 +3998,7 @@
     "example_spanish": "Nadie habría esperado que el chico tranquilo de las afueras acabara convirtiéndose en un punk.",
     "example_german": "Niemand hätte erwartet, dass der ruhige Junge aus den Vororten am Ende zum Punk werden würde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -4015,7 +4015,7 @@
     "example_spanish": "Ella hacía su labor en silencio entre bastidores, sin buscar reconocimiento.",
     "example_german": "Sie verrichtete ihre Arbeit still im Hintergrund, ohne Anerkennung zu suchen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -4032,7 +4032,7 @@
     "example_spanish": "Lo que dijo sobre haber estado en casa toda la noche era una mentira descarada.",
     "example_german": "Was er darüber sagte, den ganzen Abend zu Hause gewesen zu sein, war eine glatte Lüge.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4049,7 +4049,7 @@
     "example_spanish": "La periodista pilló al político en una mentira cuando verificó las cifras reales.",
     "example_german": "Die Journalistin ertappte den Politiker beim Lügen, als sie die tatsächlichen Zahlen überprüfte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4066,7 +4066,7 @@
     "example_spanish": "Cruzamos el bosque de un extremo al otro sin descansar.",
     "example_german": "Wir wanderten den Wald von einem Ende zum anderen, ohne zu rasten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4083,7 +4083,7 @@
     "example_spanish": "Le dijo una mentira piadosa para no herir sus sentimientos.",
     "example_german": "Er erzählte eine Notlüge, um ihre Gefühle nicht zu verletzen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4100,7 +4100,7 @@
     "example_spanish": "Después de perder su trabajo, le resultó difícil mantenerse a flote económicamente.",
     "example_german": "Nachdem er seinen Job verloren hatte, war es schwierig, finanziell den Kopf über Wasser zu halten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -4117,7 +4117,7 @@
     "example_spanish": "Tras meses de arduo trabajo, por fin hay tierra a la vista para el proyecto.",
     "example_german": "Nach monatelanger harter Arbeit ist für das Projekt endlich Land in Sicht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -4134,7 +4134,7 @@
     "example_spanish": "Después de muchas semanas en el mar, la tripulación tenía ganas de desembarcar.",
     "example_german": "Nach vielen Wochen auf See war die Besatzung begierig darauf, an Land zu gehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -4151,7 +4151,7 @@
     "example_spanish": "Tenia grandes problemas de deudas, pero finalmente logro salir adelante.",
     "example_german": "Er hatte große Schuldenprobleme, schaffte es aber schließlich, sich aus der Lage zu retten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4168,7 +4168,7 @@
     "example_spanish": "Los dos colegas colaboraron como anillo al dedo desde el primer día.",
     "example_german": "Die beiden Kollegen arbeiteten vom ersten Tag an perfekt zusammen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4185,7 +4185,7 @@
     "example_spanish": "Tras largas negociaciones, la empresa logro cerrar un contrato con el socio extranjero.",
     "example_german": "Nach langen Verhandlungen gelang es dem Unternehmen, einen Vertrag mit dem ausländischen Partner abzuschließen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-business-strategy",
     "part": "phrase"
   },
   {
@@ -4202,7 +4202,7 @@
     "example_spanish": "El médico dijo que estaba disponible si el paciente tenia preguntas.",
     "example_german": "Der Arzt sagte, er stehe zur Verfügung, falls der Patient Fragen habe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -4219,7 +4219,7 @@
     "example_spanish": "Estaba enojado con su vecino, pero no le deseaba ningun mal.",
     "example_german": "Er war wütend auf seinen Nachbarn, aber er wünschte ihm nicht wirklich Böses.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4236,7 +4236,7 @@
     "example_spanish": "Los niños se comieron todo el pastel en menos de una hora.",
     "example_german": "Die Kinder verputzten den ganzen Kuchen in weniger als einer Stunde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -4253,7 +4253,7 @@
     "example_spanish": "El jefe le dio una lección al nuevo empleado arrogante delante de todo el equipo.",
     "example_german": "Der Chef nahm den arroganten neuen Mitarbeiter vor dem ganzen Team in die Schule.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4270,7 +4270,7 @@
     "example_spanish": "Con el tiempo, aprendio a gustarle su nuevo trabajo.",
     "example_german": "Mit der Zeit lernte sie, ihre neue Arbeit zu mögen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4287,7 +4287,7 @@
     "example_spanish": "Mientras recibas apoyo de NAV, estas seguro.",
     "example_german": "Solange du Unterstützung vom NAV erhältst, bist du auf der sicheren Seite.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -4304,7 +4304,7 @@
     "example_spanish": "Él siempre se mantiene neutral cuando surgen conflictos en el trabajo.",
     "example_german": "Er sitzt immer auf dem Zaun, wenn es bei der Arbeit zu Konflikten kommt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4321,7 +4321,7 @@
     "example_spanish": "De repente, ella tenía tres proyectos extra encima.",
     "example_german": "Plötzlich hatte sie drei zusätzliche Projekte am Hals.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -4338,7 +4338,7 @@
     "example_spanish": "El viaje le hizo abrir los ojos a otras culturas.",
     "example_german": "Die Reise öffnete ihm die Augen für andere Kulturen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -4355,7 +4355,7 @@
     "example_spanish": "Fue un error grave enviar el informe sin revisar los números.",
     "example_german": "Es war ein grober Fehler, den Bericht zu senden, ohne die Zahlen zu überprüfen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4372,7 +4372,7 @@
     "example_spanish": "Ella encabezó la lucha por mejores condiciones laborales en el sector.",
     "example_german": "Sie setzte sich für bessere Arbeitsbedingungen in der Branche ein.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -4389,7 +4389,7 @@
     "example_spanish": "Es fácil quedar atrapado en la rutina diaria.",
     "example_german": "Man kann leicht im täglichen Trott stecken bleiben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -4406,7 +4406,7 @@
     "example_spanish": "Cada uno de nosotros debe asumir la responsabilidad de sus propios actos.",
     "example_german": "Wir müssen jeder für sich die Verantwortung für unsere Handlungen übernehmen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4423,7 +4423,7 @@
     "example_spanish": "En pleno invierno, es importante mantenerse activo.",
     "example_german": "Mitten im tiefsten Winter ist es wichtig, aktiv zu bleiben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -4440,7 +4440,7 @@
     "example_spanish": "Tardó mucho tiempo en superar la pérdida del trabajo.",
     "example_german": "Es dauerte lange, um über den Verlust der Arbeit hinwegzukommen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4457,7 +4457,7 @@
     "example_spanish": "Cuando bajaron los precios, decidió lanzarse a por el apartamento.",
     "example_german": "Als die Preise sanken, entschied er sich, bei der Wohnung zuzuschlagen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-business-strategy",
     "part": "phrase"
   },
   {
@@ -4474,7 +4474,7 @@
     "example_spanish": "El político debería zapatero a sus zapatos y no meterse en asuntos profesionales que no entiende.",
     "example_german": "Der Politiker sollte bei seinem Leisten bleiben und sich nicht in Fachfragen einmischen, die er nicht versteht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -4491,7 +4491,7 @@
     "example_spanish": "Tras una serie de malentendidos, toda la colaboración se vino abajo.",
     "example_german": "Nach einer Reihe von Missverständnissen fiel die gesamte Zusammenarbeit auseinander.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4508,7 +4508,7 @@
     "example_spanish": "Estaba tan agotado que simplemente se hundió en la silla y cerró los ojos.",
     "example_german": "Er war so erschöpft, dass er einfach in den Sessel sank und die Augen schloss.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -4525,7 +4525,7 @@
     "example_spanish": "Su amiga le prestó oídos cuando necesitaba a alguien con quien hablar.",
     "example_german": "Ihre Freundin lieh ihr ihr Ohr, als sie jemanden zum Reden brauchte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -4542,7 +4542,7 @@
     "example_spanish": "Sufrió un accidente en la autopista y tuvo que ir al hospital.",
     "example_german": "Er geriet auf der Autobahn in einen Unfall und musste ins Krankenhaus.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "medicine-healthcare",
     "part": "phrase"
   },
   {
@@ -4559,7 +4559,7 @@
     "example_spanish": "Los niños se lo pasaron en grande en el carnaval y no querían irse a casa.",
     "example_german": "Die Kinder amüsierten sich köstlich auf dem Karneval und wollten nicht nach Hause.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -4576,7 +4576,7 @@
     "example_spanish": "¿Por qué diablos no dijiste nada antes?",
     "example_german": "Warum um alles in der Welt hast du das nicht früher gesagt?",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -4593,7 +4593,7 @@
     "example_spanish": "No podía permitirse derrochar dinero después de perder su trabajo.",
     "example_german": "Er konnte es sich nicht leisten, das Geld zu verschwenden, nachdem er seinen Job verloren hatte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -4610,7 +4610,7 @@
     "example_spanish": "Con la billetera vacía, la familia tuvo que recortar todos los gastos innecesarios.",
     "example_german": "Mit einer dünnen Brieftasche musste die Familie alle unnötigen Ausgaben kürzen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -4627,7 +4627,7 @@
     "example_spanish": "Ninguno de los rivales fue capaz de medirse con el experimentado boxeador.",
     "example_german": "Keiner der Gegner schaffte es, es mit dem erfahrenen Boxer aufzunehmen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4644,7 +4644,7 @@
     "example_spanish": "Quería resistir, pero sabía que no tenía ninguna oportunidad.",
     "example_german": "Er wollte Widerstand leisten, wusste aber, dass er keine Chance hatte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -4661,7 +4661,7 @@
     "example_spanish": "Se enojó tanto que casi le pegó a su jefe.",
     "example_german": "Er wurde so wütend, dass er seinen Chef fast geschlagen hätte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4678,7 +4678,7 @@
     "example_spanish": "El barco estaba en peligro en el mar y emitió señales de socorro.",
     "example_german": "Das Schiff befand sich in Seenot und sendete Notsignale aus.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -4695,7 +4695,7 @@
     "example_spanish": "Sus hijos adolescentes la están dejando sin nada de comer.",
     "example_german": "Ihre Teenagersöhne fressen sie arm.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -4712,7 +4712,7 @@
     "example_spanish": "El ruido constante del vecino me está volviendo loco.",
     "example_german": "Der ständige Lärm vom Nachbarn treibt mich in den Wahnsinn.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4729,7 +4729,7 @@
     "example_spanish": "El profesor regañó a los alumnos que no habían hecho sus deberes.",
     "example_german": "Der Lehrer schimpfte die Schüler aus, die ihre Hausaufgaben nicht gemacht hatten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4746,7 +4746,7 @@
     "example_spanish": "Le gusta obstaculizar en las reuniones y dificultar las cosas a los demás.",
     "example_german": "Er liegt gerne quer in Meetings und macht es allen anderen schwer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4763,7 +4763,7 @@
     "example_spanish": "Si no empiezan a comunicarse mejor, la relación se romperá.",
     "example_german": "Wenn sie nicht besser kommunizieren, zerbricht die Beziehung.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -4780,7 +4780,7 @@
     "example_spanish": "Cuando recibió las noticias impactantes, no se inmutó.",
     "example_german": "Als sie die schockierenden Neuigkeiten erhielt, verzog sie keine Miene.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -4797,7 +4797,7 @@
     "example_spanish": "Los restos del barco yacen en el fondo del océano y llevan allí cien años.",
     "example_german": "Das Wrack des Schiffes liegt auf dem Meeresgrund und liegt dort seit hundert Jahren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -4814,7 +4814,7 @@
     "example_spanish": "Perdió el equilibrio en el hielo y cayó cuan largo era.",
     "example_german": "Er verlor das Gleichgewicht auf dem Eis und fiel der Länge nach hin.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -4831,7 +4831,7 @@
     "example_spanish": "Los niños compitieron nadando desde el muelle hasta la pequeña isla.",
     "example_german": "Die Kinder schwammen um die Wette vom Steg bis zur kleinen Insel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -4848,7 +4848,7 @@
     "example_spanish": "Me extrañó que nadie hubiera mencionado antes este detalle importante.",
     "example_german": "Ich wunderte mich darüber, dass niemand dieses wichtige Detail zuvor erwähnt hatte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -4865,7 +4865,7 @@
     "example_spanish": "Estaba a punto de rendirse cuando por fin consiguió el trabajo.",
     "example_german": "Sie war kurz davor aufzugeben, als sie endlich die Stelle bekam.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4882,7 +4882,7 @@
     "example_spanish": "La tensión en la sala era palpable mientras se leían los resultados.",
     "example_german": "Die Spannung im Raum war mit Händen zu greifen, als die Ergebnisse verlesen wurden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4899,7 +4899,7 @@
     "example_spanish": "Para decirlo de forma tajante, se podría afirmar que a nadie le importan ya las reglas.",
     "example_german": "Um es zuzuspitzen: Man könnte sagen, dass sich niemand mehr um die Regeln kümmert.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -4916,7 +4916,7 @@
     "example_spanish": "Los niños no paraban de hacer travesuras durante las vacaciones, manteniendo ocupados a sus padres.",
     "example_german": "Die Kinder stellten in den Ferien ständig allerlei Unfug an und hielten die Eltern auf Trab.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -4933,7 +4933,7 @@
     "example_spanish": "El rumor sobre el escándalo se extendió como la pólvora por todo el pueblo.",
     "example_german": "Das Gerücht über den Skandal verbreitete sich wie ein Lauffeuer durch das ganze Dorf.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -4950,7 +4950,7 @@
     "example_spanish": "Preparó la cena en cinco minutos porque lo había organizado todo de antemano.",
     "example_german": "Er machte das Abendessen in fünf Minuten, weil er alles im Voraus vorbereitet hatte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -4967,7 +4967,7 @@
     "example_spanish": "Quedó bloqueado por el examinador cuando no pudo responder la última pregunta.",
     "example_german": "Er wurde vom Prüfer in die Enge getrieben, als er die letzte Frage nicht beantworten konnte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "academic",
     "part": "phrase"
   },
   {
@@ -4984,7 +4984,7 @@
     "example_spanish": "Los niños pusieron la casa patas arriba mientras los padres estaban fuera.",
     "example_german": "Die Kinder stellten das Haus auf den Kopf, während die Eltern draußen waren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -5001,7 +5001,7 @@
     "example_spanish": "La herida empezó a desarrollar dolor e inflamación después de que se olvidó de curarla.",
     "example_german": "Die Wunde begann Schmerzen und Entzündungen zu entwickeln, nachdem er vergessen hatte, sie zu pflegen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "medicine-healthcare",
     "part": "phrase"
   },
   {
@@ -5018,7 +5018,7 @@
     "example_spanish": "Movió cielo y tierra para conseguir entradas para el concierto.",
     "example_german": "Sie setzte Himmel und Erde in Bewegung, um Karten für das Konzert zu finden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -5035,7 +5035,7 @@
     "example_spanish": "El jefe puso a todos en marcha temprano por la mañana para cumplir con el plazo.",
     "example_german": "Der Chef brachte alle früh am Morgen in Schwung, um die Frist einzuhalten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5052,7 +5052,7 @@
     "example_spanish": "El guardia de seguridad amenazó con echar el perro encima del ladrón.",
     "example_german": "Der Wachmann drohte damit, den Hund auf den Einbrecher zu hetzen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5069,7 +5069,7 @@
     "example_spanish": "Le untó grasa a los zapatos para que no se pusieran rígidos en invierno.",
     "example_german": "Er rieb die Schuhe mit Fett ein, damit sie im Winter nicht steif werden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -5086,7 +5086,7 @@
     "example_spanish": "No debería juzgar a los demás: él también tiene sus propios secretos oscuros.",
     "example_german": "Er sollte andere nicht verurteilen - er hat selbst genug Leichen im Keller.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5103,7 +5103,7 @@
     "example_spanish": "Los planes de vacaciones de verano se fueron al traste cuando se puso enfermo.",
     "example_german": "Die Urlaubspläne für den Sommer gingen den Bach runter, als er krank wurde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5120,7 +5120,7 @@
     "example_spanish": "Los soldados se prepararon para asaltar la ciudad al amanecer.",
     "example_german": "Die Soldaten bereiteten sich darauf vor, die Stadt bei Tagesanbruch zu stürmen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "literary",
     "part": "phrase"
   },
   {
@@ -5137,7 +5137,7 @@
     "example_spanish": "Ella pellizcó con cuidado una hoja de la planta para comprobar si estaba sana.",
     "example_german": "Sie zwickte vorsichtig ein Blatt von der Pflanze ab, um zu prüfen, ob sie gesund war.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -5154,7 +5154,7 @@
     "example_spanish": "Después de escuchar la mala noticia, se hundió en la silla y se desplomó.",
     "example_german": "Nachdem er die schlechte Nachricht gehört hatte, sank er in den Stuhl und sackte zusammen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -5171,7 +5171,7 @@
     "example_spanish": "Después de la quiebra le llevó tiempo, pero logró volver a ponerse de pie.",
     "example_german": "Nach dem Konkurs dauerte es eine Weile, aber er schaffte es, wieder auf die Beine zu kommen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5188,7 +5188,7 @@
     "example_spanish": "Los turistas fueron despojados de todos sus objetos de valor mientras paseaban.",
     "example_german": "Die Touristen wurden um alle ihre Wertsachen gebracht, während sie spazieren gingen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -5205,7 +5205,7 @@
     "example_spanish": "Los supervivientes estaban a merced de la buena voluntad de los rescatistas tras el accidente.",
     "example_german": "Die Überlebenden waren nach dem Unglück auf den guten Willen der Retter angewiesen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5222,7 +5222,7 @@
     "example_spanish": "Se lanzaron a la comida con buen apetito.",
     "example_german": "Sie stürzten sich mit gutem Appetit auf das Essen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5239,7 +5239,7 @@
     "example_spanish": "La arena cede bajo nuestros pies cuando caminamos por la playa.",
     "example_german": "Der Sand gibt unter unseren Füßen nach, wenn wir am Strand entlanggehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -5256,7 +5256,7 @@
     "example_spanish": "A los jóvenes les gustaba andar por el vecindario al aire libre por las noches.",
     "example_german": "Die Jugendlichen streiften abends gern im Viertel draußen herum.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5273,7 +5273,7 @@
     "example_spanish": "El profesor se llevó al alumno aparte después de clase para hablar sobre su comportamiento.",
     "example_german": "Der Lehrer nahm den Schüler nach dem Unterricht zur Seite, um über sein Verhalten zu sprechen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5290,7 +5290,7 @@
     "example_spanish": "Después de ganar la lotería, empezó a vivir a lo grande.",
     "example_german": "Nachdem er in der Lotterie gewonnen hatte, begann er, in Saus und Braus zu leben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -5307,7 +5307,7 @@
     "example_spanish": "Olió el truco cuando el jefe de repente se volvió muy amable.",
     "example_german": "Er roch den Braten, als der Chef plötzlich sehr freundlich wurde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -5324,7 +5324,7 @@
     "example_spanish": "La región está bendecida con recursos naturales en abundancia.",
     "example_german": "Die Region ist in reichem Maße mit natürlichen Ressourcen gesegnet.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -5341,7 +5341,7 @@
     "example_spanish": "El jefe les echó una bronca de campeonato a los empleados por llegar tarde a la reunión.",
     "example_german": "Der Chef schimpfte die Angestellten nach allen Regeln der Kunst aus, als sie zu spät zum Meeting kamen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5358,7 +5358,7 @@
     "example_spanish": "Las ventas han aumentado considerablemente este mes: las cosas van viento en popa para la empresa.",
     "example_german": "Der Umsatz ist diesen Monat stark gestiegen — für das Unternehmen läuft es wie geschmiert.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -5375,7 +5375,7 @@
     "example_spanish": "No tiene sentido llorar sobre la leche derramada — mejor busquemos una solución de cara al futuro.",
     "example_german": "Es hat keinen Sinn, über vergossene Milch zu weinen — wir sollten lieber eine Lösung für die Zukunft finden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -5392,7 +5392,7 @@
     "example_spanish": "Los cerezos empiezan a florecer ahora que ha llegado la primavera.",
     "example_german": "Die Kirschbäume beginnen aufzublühen, jetzt da der Frühling da ist.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -5409,7 +5409,7 @@
     "example_spanish": "El empleador tuvo que bajar los requisitos para conseguir suficientes candidatos para el puesto.",
     "example_german": "Der Arbeitgeber musste die Anforderungen senken, um genug Bewerber für die Stelle zu bekommen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5426,7 +5426,7 @@
     "example_spanish": "La delegación abandonó la reunión sin haber logrado nada tras el fracaso de las negociaciones.",
     "example_german": "Die Delegation verließ das Treffen unverrichteter Dinge, nachdem die Verhandlungen gescheitert waren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5443,7 +5443,7 @@
     "example_spanish": "Los dos políticos empezaron a difamarse mutuamente en lugar de debatir los asuntos.",
     "example_german": "Die beiden Politiker begannen, sich gegenseitig anzuschwärzen, anstatt sachlich zu diskutieren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5460,7 +5460,7 @@
     "example_spanish": "Su propuesta fue destrozada sin piedad por el panel de expertos durante el debate.",
     "example_german": "Sein Vorschlag wurde vom Expertengremium während der Debatte in der Luft zerrissen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5477,7 +5477,7 @@
     "example_spanish": "Los investigadores están preocupados porque el número de nacimientos se desploma en muchos países europeos.",
     "example_german": "Forscher sind besorgt, weil die Geburtenrate in vielen europäischen Ländern rapide sinkt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sociology-anthropology",
     "part": "phrase"
   },
   {
@@ -5494,7 +5494,7 @@
     "example_spanish": "Los médicos dan la voz de alarma sobre el uso cada vez mayor de antibióticos.",
     "example_german": "Ärzte schlagen Alarm wegen des ständig zunehmenden Einsatzes von Antibiotika.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -5511,7 +5511,7 @@
     "example_spanish": "La empresa intentó encubrir el escándalo antes de que llegara a la prensa.",
     "example_german": "Das Unternehmen versuchte, den Skandal zu vertuschen, bevor er die Presse erreichte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "media-journalism",
     "part": "phrase"
   },
   {
@@ -5528,7 +5528,7 @@
     "example_spanish": "Busqué mis llaves por todas partes, pero no las encontré.",
     "example_german": "Ich suchte überall nach meinen Schlüsseln, fand sie aber nicht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -5545,7 +5545,7 @@
     "example_spanish": "Al jefe no le gusta que le lleven la contraria y reacciona mal ante las críticas.",
     "example_german": "Der Chef mag es nicht, gegen den Strich gebürstet zu werden, und reagiert schlecht auf Kritik.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5562,7 +5562,7 @@
     "example_spanish": "Es imposible complacer a todos todo el tiempo.",
     "example_german": "Es ist unmöglich, es immer allen recht zu machen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5579,7 +5579,7 @@
     "example_spanish": "Después de que la tienda quebró, el dueño tuvo a los acreedores encima.",
     "example_german": "Nachdem das Geschäft in Konkurs ging, hatte der Eigentümer die Gläubiger im Nacken.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -5596,7 +5596,7 @@
     "example_spanish": "Cuando llegó la policía, los sospechosos pusieron pies en polvorosa.",
     "example_german": "Als die Polizei ankam, nahmen die Verdächtigen die Beine in die Hand.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -5613,7 +5613,7 @@
     "example_spanish": "Tienes que ponerte las pilas y empezar a trabajar más duro.",
     "example_german": "Du musst dich zusammenreißen und anfangen, härter zu arbeiten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -5630,7 +5630,7 @@
     "example_spanish": "Ella está atrasada con sus deberes y tiene que trabajar más este fin de semana.",
     "example_german": "Sie hängt mit ihren Hausaufgaben hinterher und muss dieses Wochenende extra arbeiten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5647,7 +5647,7 @@
     "example_spanish": "Un buen maestro debe tener ojos en la nuca para vigilar a toda la clase.",
     "example_german": "Ein guter Lehrer muss Augen im Hinterkopf haben, um die ganze Klasse im Blick zu behalten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -5664,7 +5664,7 @@
     "example_spanish": "El equipo se lanzó con gran ímpetu en el segundo tiempo y dio la vuelta al partido.",
     "example_german": "Das Team ging in der zweiten Halbzeit mit vollem Einsatz ran und drehte das Spiel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -5681,7 +5681,7 @@
     "example_spanish": "Los niños cantaron a pleno pulmón alrededor de la fogata.",
     "example_german": "Die Kinder sangen aus voller Kehle um das Lagerfeuer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sensory-sound",
     "part": "phrase"
   },
   {
@@ -5698,7 +5698,7 @@
     "example_spanish": "Los polos magnéticos iguales se repelen mutuamente.",
     "example_german": "Gleiche Magnetpole stoßen sich gegenseitig ab.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5715,7 +5715,7 @@
     "example_spanish": "El cuadro llegó a ser propiedad de una persona desconocida tras la subasta.",
     "example_german": "Das Gemälde gelangte nach der Auktion in den Besitz einer unbekannten Person.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5732,7 +5732,7 @@
     "example_spanish": "Se preguntaba si existía alguna vida en el más allá.",
     "example_german": "Er fragte sich, ob es im Jenseits ein Leben gebe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -5749,7 +5749,7 @@
     "example_spanish": "Ella está muy capacitada para trabajar con niños.",
     "example_german": "Sie ist gut geeignet, mit Kindern zu arbeiten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -5766,7 +5766,7 @@
     "example_spanish": "Insinuó que pronto dejaría su trabajo.",
     "example_german": "Er deutete an, dass er bald seinen Job kündigen würde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -5783,7 +5783,7 @@
     "example_spanish": "Ella defendió a su amigo cuando lo estaban intimidando.",
     "example_german": "Sie trat für ihren Freund ein, als er gemobbt wurde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -5800,7 +5800,7 @@
     "example_spanish": "Se enojó y le dio una bofetada a su rival.",
     "example_german": "Er wurde wütend und verpasste seinem Gegner eine Ohrfeige.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -5817,7 +5817,7 @@
     "example_spanish": "El jefe tomó la decisión en el acto.",
     "example_german": "Der Chef traf die Entscheidung auf der Stelle.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -5834,7 +5834,7 @@
     "example_spanish": "No le gustaba el nuevo arreglo, pero al final tuvo que resignarse a él.",
     "example_german": "Er mochte die neue Regelung nicht, musste sich aber schließlich damit abfinden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -5851,7 +5851,7 @@
     "example_spanish": "Después de un comienzo lento, el equipo finalmente logró poner las cosas en marcha.",
     "example_german": "Nach einem schleppenden Start gelang es dem Team endlich, die Dinge in Schwung zu bringen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5868,7 +5868,7 @@
     "example_spanish": "Estoy tan cansado después del viaje que necesito echar una cabezada.",
     "example_german": "Ich bin nach der Reise so müde, dass ich ein Nickerchen machen muss.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5885,7 +5885,7 @@
     "example_spanish": "No estoy del todo seguro del precio, pero 500 coronas suena más o menos bien.",
     "example_german": "Ich bin mir beim Preis nicht ganz sicher, aber 500 Kronen klingt ungefähr richtig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5902,7 +5902,7 @@
     "example_spanish": "Los niños escuchaban a escondidas mientras los padres hablaban de los regalos de Navidad.",
     "example_german": "Die Kinder lauschten heimlich, während die Eltern die Weihnachtsgeschenke besprachen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -5919,7 +5919,7 @@
     "example_spanish": "Contra todo pronóstico, logró salir del accidente ileso.",
     "example_german": "Gegen alle Erwartungen gelang es ihm, den Unfall unbeschadet zu überstehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -5936,7 +5936,7 @@
     "example_spanish": "La policía trabajó intensamente para llegar al fondo del caso.",
     "example_german": "Die Polizei arbeitete intensiv daran, dem Fall auf den Grund zu gehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "academic",
     "part": "phrase"
   },
   {
@@ -5953,7 +5953,7 @@
     "example_spanish": "La polémica declaración encendió los ánimos en las redes sociales.",
     "example_german": "Die kontroverse Aussage erhitzte die Gemüter in den sozialen Medien.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -5970,7 +5970,7 @@
     "example_spanish": "Él se resiste a tener la difícil conversación con su jefe.",
     "example_german": "Er sträubt sich davor, das schwierige Gespräch mit seinem Chef zu führen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -5987,7 +5987,7 @@
     "example_spanish": "Es ampliamente conocido que él es uno de los mejores cocineros del país.",
     "example_german": "Es ist weithin bekannt, dass er einer der besten Köche des Landes ist.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -6004,7 +6004,7 @@
     "example_spanish": "¿Puedo meter un par de palabras antes de que continúen la discusión?",
     "example_german": "Darf ich ein paar Worte einwerfen, bevor Sie die Diskussion fortsetzen?",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -6021,7 +6021,7 @@
     "example_spanish": "La familia creció en circunstancias difíciles, pero los niños se las arreglaron bien de todos modos.",
     "example_german": "Die Familie wuchs in ärmlichen Verhältnissen auf, aber die Kinder kamen trotzdem gut zurecht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -6038,7 +6038,7 @@
     "example_spanish": "La junta decidió atender la queja y reembolsó el importe.",
     "example_german": "Der Vorstand entschied, der Beschwerde nachzukommen, und erstattete den Betrag.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-law-justice",
     "part": "phrase"
   },
   {
@@ -6055,7 +6055,7 @@
     "example_spanish": "Habla mucho en las reuniones, pero nunca cumple lo que promete.",
     "example_german": "Er redet groß in den Meetings, aber hält nie, was er verspricht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -6072,7 +6072,7 @@
     "example_spanish": "En líneas generales, el plan es bueno, pero tenemos que seguir trabajando en los detalles.",
     "example_german": "In groben Zügen ist der Plan gut, aber wir müssen noch an den Details arbeiten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6089,7 +6089,7 @@
     "example_spanish": "Tomó la mala noticia con entereza y enseguida comenzó a planificar el siguiente paso.",
     "example_german": "Sie nahm die schlechte Nachricht gefasst hin und begann sofort, den nächsten Schritt zu planen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -6106,7 +6106,7 @@
     "example_spanish": "En las estrechas calles del casco antiguo, es más fácil desplazarse a pie.",
     "example_german": "In den engen Gassen der Altstadt ist es am einfachsten, zu Fuß unterwegs zu sein.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -6123,7 +6123,7 @@
     "example_spanish": "Después del bachillerato, decidió hacer un aprendizaje con un carpintero local.",
     "example_german": "Nach der weiterführenden Schule entschied er sich, bei einem lokalen Tischler in die Lehre zu gehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -6140,7 +6140,7 @@
     "example_spanish": "La empresa se derrumbó por completo cuando el escándalo se hizo público.",
     "example_german": "Das Unternehmen brach vollständig zusammen, als der Skandal bekannt wurde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -6157,7 +6157,7 @@
     "example_spanish": "Las negociaciones quedaron paralizadas después de que las partes no lograron llegar a un acuerdo.",
     "example_german": "Die Verhandlungen kamen zum Stillstand, nachdem die Parteien keine Einigung erzielen konnten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6174,7 +6174,7 @@
     "example_spanish": "Contra todo pronóstico, el pequeño equipo ganó el partido final.",
     "example_german": "Wider alle Erwartungen gewann die kleine Mannschaft das Finalspiel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -6191,7 +6191,7 @@
     "example_spanish": "Durante las vacaciones de verano, somos un poco más flexibles con los horarios de acostarse de los niños.",
     "example_german": "In den Sommerferien sind wir bei den Schlafenszeiten der Kinder etwas nachsichtiger.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6208,7 +6208,7 @@
     "example_spanish": "Después de una buena noche de sueño, tengo mucha más energía para afrontar el día a día.",
     "example_german": "Nach einer guten Nacht habe ich viel mehr Energie, um den Alltag zu bewältigen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6225,7 +6225,7 @@
     "example_spanish": "La policía intentó averiguar qué había pasado realmente.",
     "example_german": "Die Polizei versuchte herauszufinden, was tatsächlich passiert war.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6242,7 +6242,7 @@
     "example_spanish": "¡Debes faltarte un tornillo para tirarte en paracaídas por diversión!",
     "example_german": "Du musst eine Schraube locker haben, wenn du zum Spaß Fallschirm springst!",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -6259,7 +6259,7 @@
     "example_spanish": "Los bomberos arriesgan el pellejo para salvar a otros.",
     "example_german": "Feuerwehrleute riskieren Leib und Leben, um andere zu retten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -6276,7 +6276,7 @@
     "example_spanish": "Un verdadero amigo te apoya en las buenas y en las malas.",
     "example_german": "Ein echter Freund unterstützt dich durch dick und dünn.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -6293,7 +6293,7 @@
     "example_spanish": "Él está lanzando indirectas de que le gustaría recibir una bicicleta nueva para su cumpleaños.",
     "example_german": "Er deutet an, dass er sich ein neues Fahrrad zum Geburtstag wünscht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -6310,7 +6310,7 @@
     "example_spanish": "¿Puedes conseguir que un colega haga el pedido del almuerzo para todo el departamento?",
     "example_german": "Kannst du einen Kollegen dazu bringen, das Mittagessen für die ganze Abteilung zu bestellen?",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6327,7 +6327,7 @@
     "example_spanish": "No me está destinado ser dueño de mi propia casa.",
     "example_german": "Es ist mir nicht vergönnt, ein eigenes Haus zu besitzen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -6344,7 +6344,7 @@
     "example_spanish": "El año pasado cumplió cuarenta años y lo celebró con una gran fiesta.",
     "example_german": "Letztes Jahr wurde er vierzig und feierte das mit einer großen Party.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6361,7 +6361,7 @@
     "example_spanish": "No tiene miedo de llamar a las cosas por su nombre, aunque pueda resultar incómodo.",
     "example_german": "Sie scheut sich nicht, das Kind beim Namen zu nennen, auch wenn es unangenehm wirken kann.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -6378,7 +6378,7 @@
     "example_spanish": "El jefe solía hacer la vista gorda cuando los empleados llegaban un poco tarde los lunes.",
     "example_german": "Der Chef drückte gewöhnlich ein Auge zu, wenn die Mitarbeiter montags etwas zu spät kamen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6395,7 +6395,7 @@
     "example_spanish": "Su explicación no tiene sentido: no entiendo nada de lo que dice.",
     "example_german": "Seine Erklärung ergibt keinen Sinn - ich verstehe überhaupt nichts von dem, was er sagt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -6412,7 +6412,7 @@
     "example_spanish": "Sus bolsillos sobresalían por todas las cosas que había metido en ellos.",
     "example_german": "Seine Taschen beulten von all den Dingen aus, die er hineinstopft hatte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -6429,7 +6429,7 @@
     "example_spanish": "Los niños se rieron cuando su hermano pequeño imitó al maestro delante de toda la clase.",
     "example_german": "Die Kinder lachten, als ihr kleiner Bruder den Lehrer vor der ganzen Klasse nachahmte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -6446,7 +6446,7 @@
     "example_spanish": "El niño imitaba a su hermano mayor e intentaba hacer todo igual.",
     "example_german": "Das Kind äffte seinen älteren Bruder nach und versuchte, alles genauso zu machen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -6463,7 +6463,7 @@
     "example_spanish": "Caminaron toda la noche y llegaron al campamento cuando empezaba a amanecer.",
     "example_german": "Sie wanderten die ganze Nacht und erreichten das Lager, als es zu dämmern begann.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -6480,7 +6480,7 @@
     "example_spanish": "Fue duro, pero era necesario para resolver el problema.",
     "example_german": "Es war hart, aber es musste sein, um das Problem zu lösen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6497,7 +6497,7 @@
     "example_spanish": "Muchos soldados tuvieron que pagar con su vida durante la larga guerra.",
     "example_german": "Viele Soldaten mussten während des langen Krieges mit dem Leben bezahlen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -6514,7 +6514,7 @@
     "example_spanish": "Había una recompensa por el criminal buscado.",
     "example_german": "Auf den gesuchten Kriminellen war eine Prämie ausgesetzt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-law-justice",
     "part": "phrase"
   },
   {
@@ -6531,7 +6531,7 @@
     "example_spanish": "Era evidente que los colegas se habian vuelto demasiado cercanos: un tipico caso de pareja improbable.",
     "example_german": "Es war klar, dass die Kollegen sich etwas zu nahegekommen waren - ein typischer Fall von Grevinnen og hovmesteren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -6548,7 +6548,7 @@
     "example_spanish": "Con el nuevo contrato, ella consolidó su papel como la principal experta de la empresa.",
     "example_german": "Mit dem neuen Vertrag festigte sie ihre Rolle als führende Expertin des Unternehmens.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -6565,7 +6565,7 @@
     "example_spanish": "El apartamento es compartido entre los tres hermanos.",
     "example_german": "Die Wohnung wird unter den drei Geschwistern geteilt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6582,7 +6582,7 @@
     "example_spanish": "Necesitamos recortar gastos este mes para que el presupuesto cuadre.",
     "example_german": "Wir müssen diesen Monat bei den Ausgaben sparen, damit das Budget aufgeht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -6599,7 +6599,7 @@
     "example_spanish": "Si nadie se ofrece como voluntario para organizar la fiesta, la cena de Navidad se cancela este año.",
     "example_german": "Wenn sich niemand freiwillig meldet, die Feier zu organisieren, fällt die Weihnachtsfeier dieses Jahr aus.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -6616,7 +6616,7 @@
     "example_spanish": "Ella siempre está preparada y tiene todo en orden antes de que comiencen las reuniones.",
     "example_german": "Sie ist immer vorbereitet und hat alles im Griff, bevor die Meetings beginnen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6633,7 +6633,7 @@
     "example_spanish": "Según se dice, la empresa planea trasladar su sede central al extranjero.",
     "example_german": "Berichten zufolge plant das Unternehmen, seinen Hauptsitz ins Ausland zu verlegen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "formal-writing",
     "part": "phrase"
   },
   {
@@ -6650,7 +6650,7 @@
     "example_spanish": "La nueva reforma está pensada para beneficiar a amplios sectores de la población, no solo a los más ricos.",
     "example_german": "Die neue Reform soll breiten Bevölkerungsschichten zugutekommen, nicht nur den Wohlhabendsten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "sociology-anthropology",
     "part": "phrase"
   },
   {
@@ -6668,7 +6668,7 @@
     "example_spanish": "Debemos mantener la maquinaria en marcha incluso en tiempos difíciles.",
     "example_german": "Wir müssen den Laden auch in schwierigen Zeiten am Laufen halten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -6686,7 +6686,7 @@
     "example_spanish": "No estoy ni lo más mínimo preocupado por el resultado.",
     "example_german": "Ich bin nicht im Geringsten besorgt über das Ergebnis.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -6704,7 +6704,7 @@
     "example_spanish": "Después de la reunión, todo el desacuerdo desapareció como si el viento se lo hubiera llevado.",
     "example_german": "Nach dem Treffen war die ganze Uneinigkeit wie vom Winde verweht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -6722,7 +6722,7 @@
     "example_spanish": "Se tropezó en las escaleras y cayó cuan largo era.",
     "example_german": "Er stolperte auf der Treppe und fiel der Länge nach hin.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -6740,7 +6740,7 @@
     "example_spanish": "En el fondo, ambos sabemos que esto no funcionará.",
     "example_german": "Im Grunde genommen wissen wir beide, dass das nicht funktionieren wird.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6758,7 +6758,7 @@
     "example_spanish": "Dejó la puerta entreabierta para que el gato pudiera entrar.",
     "example_german": "Sie ließ die Tür einen Spalt geöffnet, damit die Katze hereinkommen konnte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -6776,7 +6776,7 @@
     "example_spanish": "El dolor de espalda le viene en oleadas, peor unos días que otros.",
     "example_german": "Die Rückenschmerzen kommen in Schüben, an manchen Tagen schlimmer als an anderen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "medicine-healthcare",
     "part": "phrase"
   },
   {
@@ -6794,7 +6794,7 @@
     "example_spanish": "La verdad salió a la luz después de muchos años de silencio.",
     "example_german": "Die Wahrheit kam nach vielen Jahren des Schweigens ans Licht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6812,7 +6812,7 @@
     "example_spanish": "¿Va a tener el descaro de venir aquí y decirme cómo criar a mis hijos?",
     "example_german": "Hat er die Frechheit, einfach so hier aufzukreuzen und mir zu sagen, wie ich meine Kinder erziehen soll?",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -6830,7 +6830,7 @@
     "example_spanish": "Nos llevamos muy bien con los nuevos vecinos.",
     "example_german": "Wir kommen sehr gut mit den neuen Nachbarn aus.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -6848,7 +6848,7 @@
     "example_spanish": "Hace tiempo que quiero pintar la casa, pero nunca llego a decidirme a hacerlo.",
     "example_german": "Ich wollte das Haus schon lange streichen, habe mich aber nie dazu aufgerafft.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -6866,7 +6866,7 @@
     "example_spanish": "El precio sube cuando se añaden los costes de envío.",
     "example_german": "Der Preis steigt, wenn die Versandkosten hinzukommen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -6884,7 +6884,7 @@
     "example_spanish": "El dinero extra vino muy bien este mes.",
     "example_german": "Das zusätzliche Geld kam diesen Monat sehr gelegen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -6902,7 +6902,7 @@
     "example_spanish": "Tenemos poco dinero, pero nos las arreglamos.",
     "example_german": "Wir haben wenig Geld, aber wir kommen zurecht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -6920,7 +6920,7 @@
     "example_spanish": "Casi perdió el juicio de la preocupación por su hija.",
     "example_german": "Er verlor beinahe den Verstand vor Sorge um seine Tochter.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -6938,7 +6938,7 @@
     "example_spanish": "Un escalofrío me recorrió la espalda cuando escuché la historia.",
     "example_german": "Es lief mir kalt den Rücken hinunter, als ich die Geschichte hörte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -6956,7 +6956,7 @@
     "example_spanish": "La planificación de la boda fue sobre ruedas.",
     "example_german": "Die Hochzeitsplanung lief wie am Schnürchen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6974,7 +6974,7 @@
     "example_spanish": "Después de un poco de práctica, el trabajo iba como la seda.",
     "example_german": "Nach etwas Übung lief die Arbeit wie geschmiert.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -6992,7 +6992,7 @@
     "example_spanish": "Mientras vengan los clientes, la maquinaria sigue funcionando.",
     "example_german": "Solange die Kunden kommen, drehen sich die Räder weiter.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -7010,7 +7010,7 @@
     "example_spanish": "El festival se celebra cada julio.",
     "example_german": "Das Festival findet jedes Jahr im Juli statt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7028,7 +7028,7 @@
     "example_spanish": "Las ventas iban a toda velocidad después de que bajamos los precios.",
     "example_german": "Der Verkauf ging rasant voran, nachdem wir die Preise gesenkt hatten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -7046,7 +7046,7 @@
     "example_spanish": "Después de perder su trabajo, las cosas fueron cuesta abajo.",
     "example_german": "Nachdem er seinen Job verloren hatte, ging es bergab.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7064,7 +7064,7 @@
     "example_spanish": "Nos pusimos manos a la obra en cuanto el plan estuvo listo.",
     "example_german": "Wir gingen ans Werk, sobald der Plan fertig war.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -7082,7 +7082,7 @@
     "example_spanish": "La historia del refugiado tocó la fibra sensible del público.",
     "example_german": "Die Geschichte des Flüchtlings ging dem Publikum sehr nahe.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7100,7 +7100,7 @@
     "example_spanish": "La honestidad es el hilo conductor a lo largo de todo el libro.",
     "example_german": "Ehrlichkeit ist der rote Faden, der sich durch das ganze Buch zieht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7118,7 +7118,7 @@
     "example_spanish": "Se negó a postrarse ante el jefe solo para conservar su trabajo.",
     "example_german": "Er weigerte sich, vor dem Chef zu katzbuckeln, nur um seinen Job zu behalten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -7136,7 +7136,7 @@
     "example_spanish": "Los fans miraban al artista con admiración rendida.",
     "example_german": "Die Fans blickten den Künstler mit demütiger Bewunderung an.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -7154,7 +7154,7 @@
     "example_spanish": "Los resultados dan una pista sobre hacia dónde va el mercado.",
     "example_german": "Die Ergebnisse geben einen Hinweis darauf, wohin sich der Markt bewegt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -7172,7 +7172,7 @@
     "example_spanish": "Decidimos esperar a ver cómo se desarrollaban las cosas antes de invertir más dinero.",
     "example_german": "Wir beschlossen, die Zeit abzuwarten, bevor wir mehr Geld investierten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7190,7 +7190,7 @@
     "example_spanish": "Los niños pusieron ojos como platos al ver el regalo.",
     "example_german": "Die Kinder machten große Augen, als sie das Geschenk sahen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -7208,7 +7208,7 @@
     "example_spanish": "Hizo un mal papel durante la entrevista.",
     "example_german": "Er machte während des Interviews eine schlechte Figur.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -7226,7 +7226,7 @@
     "example_spanish": "Lo importante es mantener la calma en una crisis.",
     "example_german": "Es kommt darauf an, in einer Krise ruhig zu bleiben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7244,7 +7244,7 @@
     "example_spanish": "Elegí dejarlo pasar esta vez, pero la próxima será diferente.",
     "example_german": "Ich habe es diesmal auf sich beruhen lassen, aber nächstes Mal wird es anders sein.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7262,7 +7262,7 @@
     "example_spanish": "La pregunta inesperada le hizo perder el equilibrio.",
     "example_german": "Die unerwartete Frage brachte ihn aus der Fassung.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -7280,7 +7280,7 @@
     "example_spanish": "Sentía que su pareja la daba por sentada.",
     "example_german": "Sie hatte das Gefühl, dass ihr Partner sie als selbstverständlich ansah.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7298,7 +7298,7 @@
     "example_spanish": "Después del examen, pusimos rumbo a la costa sur.",
     "example_german": "Nach der Prüfung steuerten wir auf die Südküste zu.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -7316,7 +7316,7 @@
     "example_spanish": "El golpeteo constante me puso los nervios de punta.",
     "example_german": "Das ständige Klopfen ging mir auf die Nerven.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -7334,7 +7334,7 @@
     "example_spanish": "Después de unas semanas, empezó a coger confianza en su puesto de líder.",
     "example_german": "Nach ein paar Wochen begann er, sich in seine Rolle als Anführer einzuleben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -7352,7 +7352,7 @@
     "example_spanish": "La noticia del despido cayó como llovida del cielo.",
     "example_german": "Die Nachricht von der Kündigung kam wie ein Blitz aus heiterem Himmel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7370,7 +7370,7 @@
     "example_spanish": "Darle buenos consejos es como echar perlas a los cerdos.",
     "example_german": "Ihm gute Ratschläge zu geben ist, als würde man Perlen vor die Säue werfen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -7388,7 +7388,7 @@
     "example_spanish": "Mi abuelo se hizo a la mar cuando tenía dieciocho años.",
     "example_german": "Mein Großvater fuhr mit achtzehn zur See.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -7406,7 +7406,7 @@
     "example_spanish": "Sin entrenamiento, no tienes ni la más mínima oportunidad contra él.",
     "example_german": "Ohne Training hast du gegen ihn keine Chance.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -7424,7 +7424,7 @@
     "example_spanish": "Ha llovido mucho desde la última vez que hablamos.",
     "example_german": "Seitdem wir zuletzt gesprochen haben, ist viel Wasser den Bach hinuntergeflossen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7442,7 +7442,7 @@
     "example_spanish": "Los hermanos se peleaban como el perro y el gato durante toda la infancia.",
     "example_german": "Die Geschwister stritten während ihrer ganzen Kindheit wie Hund und Katze.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7460,7 +7460,7 @@
     "example_spanish": "No hay que juzgar el libro por la portada, dijo ella sobre el nuevo colega.",
     "example_german": "Man sollte den Hund nicht nach dem Fell beurteilen, sagte sie über den neuen Kollegen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7478,7 +7478,7 @@
     "example_spanish": "¿Por qué pedir los productos del extranjero? Eso es complicarse la vida innecesariamente.",
     "example_german": "Warum die Waren aus dem Ausland bestellen? Das heißt, das Nächstliegende umständlich zu umgehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7496,7 +7496,7 @@
     "example_spanish": "Compró el coche sin verlo antes, y se arrepintió de haber comprado a ciegas.",
     "example_german": "Er kaufte das Auto, ohne es vorher gesehen zu haben, und bereute es, die Katze im Sack gekauft zu haben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7514,7 +7514,7 @@
     "example_spanish": "Ella descubrió el pastel y contó lo de la fiesta sorpresa.",
     "example_german": "Sie ließ die Katze aus dem Sack und erzählte von der Überraschungsparty.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -7532,7 +7532,7 @@
     "example_spanish": "A él le importaba un bledo lo que pensara la gente de él.",
     "example_german": "Ihm war es egal, was die Leute über ihn dachten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -7550,7 +7550,7 @@
     "example_spanish": "No había preparado el discurso, pero lo hizo sobre la marcha.",
     "example_german": "Er hatte die Rede nicht vorbereitet, sondern hielt sie aus dem Stegreif.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -7568,7 +7568,7 @@
     "example_spanish": "El cliente estaba interesado, así que aprovechamos y firmamos el contrato ese mismo día.",
     "example_german": "Der Kunde war interessiert, also schmiedeten wir das Eisen, solange es heiß war, und unterschrieben den Vertrag noch am selben Tag.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -7586,7 +7586,7 @@
     "example_spanish": "La dirección intentó esconder los problemas debajo de la alfombra.",
     "example_german": "Die Geschäftsleitung versuchte, die Probleme unter den Tisch zu kehren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "media-journalism",
     "part": "phrase"
   },
   {
@@ -7604,7 +7604,7 @@
     "example_spanish": "El oponente nos tanteó en la primera ronda.",
     "example_german": "Der Gegner fühlte uns in der ersten Runde auf den Zahn.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7622,7 +7622,7 @@
     "example_spanish": "Después de años de contención, la empresa finalmente empezó a enseñar los dientes a sus competidores.",
     "example_german": "Nach Jahren der Zurückhaltung begann das Unternehmen endlich, den Konkurrenten die Zähne zu zeigen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7640,7 +7640,7 @@
     "example_spanish": "Le hizo la corte al jefe para conseguir el ascenso.",
     "example_german": "Er schmeichelte sich beim Chef ein, um die Beförderung zu bekommen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7658,7 +7658,7 @@
     "example_spanish": "Después de ganar la lotería, empezó a vivir a lo grande.",
     "example_german": "Nachdem er im Lotto gewonnen hatte, begann er, auf großem Fuß zu leben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -7676,7 +7676,7 @@
     "example_spanish": "El crimen se cometió a sangre fría, sin remordimiento.",
     "example_german": "Das Verbrechen wurde kaltblütig, ohne Reue, begangen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-law-justice",
     "part": "phrase"
   },
   {
@@ -7694,7 +7694,7 @@
     "example_spanish": "Estamos en buenos términos con nuestros vecinos.",
     "example_german": "Wir stehen mit unseren Nachbarn auf gutem Fuß.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7712,7 +7712,7 @@
     "example_spanish": "Fue el director quien movió los hilos entre bastidores.",
     "example_german": "Es war der Direktor, der hinter den Kulissen die Fäden zog.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7730,7 +7730,7 @@
     "example_spanish": "Votó en contra de la propuesta, nadando contra corriente, sin importar lo que pensaran los demás.",
     "example_german": "Er stimmte gegen den Vorschlag, stur gegen den Strom, egal was die anderen dachten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -7748,7 +7748,7 @@
     "example_spanish": "Después del accidente, su vida pendía de un hilo.",
     "example_german": "Nach dem Unfall hing sein Leben an einem seidenen Faden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7766,7 +7766,7 @@
     "example_spanish": "Después del descanso, el profesor retomó el hilo de la clase anterior.",
     "example_german": "Nach der Pause nahm der Dozent den Faden der letzten Stunde wieder auf.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -7784,7 +7784,7 @@
     "example_spanish": "En el pueblo decían que era ligera de cascos, pero solo eran chismes.",
     "example_german": "Im Dorf hieß es, sie sei leichtfertig mit Männern, aber das war nur Klatsch.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -7802,7 +7802,7 @@
     "example_spanish": "Se negó a seguir bailando al son que le tocaba el jefe.",
     "example_german": "Er weigerte sich, weiterhin nach der Pfeife des Chefs zu tanzen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -7820,7 +7820,7 @@
     "example_spanish": "Es muy talentosa, pero siempre esconde su luz bajo un celemín.",
     "example_german": "Sie ist sehr talentiert, stellt aber immer ihr Licht unter den Scheffel.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -7838,7 +7838,7 @@
     "example_spanish": "Está loco por los dulces.",
     "example_german": "Er ist ganz wild auf Süßigkeiten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -7856,7 +7856,7 @@
     "example_spanish": "Los dos estafadores se encontraron enseguida - Dios los cría y ellos se juntan.",
     "example_german": "Die beiden Betrüger fanden sofort zueinander - gleich und gleich gesellt sich gern.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -7874,7 +7874,7 @@
     "example_spanish": "Se gastó todo el dinero de golpe, y ahora tiene que aceptar que como te acuestas, te levantas.",
     "example_german": "Er hat das ganze Geld auf einmal ausgegeben, und jetzt muss er akzeptieren: wie man sich bettet, so liegt man.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -7892,7 +7892,7 @@
     "example_spanish": "Después de que cerrara la fábrica, todo el pueblo se fue al garete.",
     "example_german": "Nachdem die Fabrik geschlossen hatte, ging die ganze Stadt vor die Hunde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -7910,7 +7910,7 @@
     "example_spanish": "Después de la quiebra, no tenía ni un céntimo.",
     "example_german": "Nach dem Bankrott besaß er nicht einmal einen Pfennig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "finance-economics",
     "part": "phrase"
   },
   {
@@ -7928,7 +7928,7 @@
     "example_spanish": "Encontrar el error en el código se sintió como buscar una aguja en un pajar.",
     "example_german": "Den Fehler im Code zu finden fühlte sich an wie die Nadel im Heuhaufen zu suchen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -7946,7 +7946,7 @@
     "example_spanish": "Le importaba un pito lo que pensaran los vecinos de su jardín.",
     "example_german": "Es kümmerte ihn einen Dreck, was die Nachbarn über seinen Rasen dachten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -7964,7 +7964,7 @@
     "example_spanish": "Todo el equipo se esforzó al máximo para cumplir con el plazo.",
     "example_german": "Das ganze Team legte sich ins Zeug, um die Frist einzuhalten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -7982,7 +7982,7 @@
     "example_spanish": "Se sentía entre la espada y la pared en el conflicto entre sus padres.",
     "example_german": "Sie fühlte sich im Konflikt zwischen ihren Eltern zwischen Baum und Borke.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8000,7 +8000,7 @@
     "example_spanish": "El crítico dio en el clavo con el autor gracias a su agudo análisis.",
     "example_german": "Der Rezensent traf den Autor mit seiner scharfen Analyse genau.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -8018,7 +8018,7 @@
     "example_spanish": "El vendedor intentó engañar descaradamente a los clientes con ofertas falsas.",
     "example_german": "Der Verkäufer versuchte, den Kunden mit falschen Angeboten Sand in die Augen zu streuen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8036,7 +8036,7 @@
     "example_spanish": "Ella se tomó la difícil tarea con calma y facilidad.",
     "example_german": "Sie meisterte die schwierige Aufgabe mit Leichtigkeit.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8054,7 +8054,7 @@
     "example_spanish": "Le pidieron que respondiera en el acto.",
     "example_german": "Er wurde gebeten, auf der Stelle zu antworten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -8072,7 +8072,7 @@
     "example_spanish": "Decidió dejar que las cosas siguieran su curso y no preocuparse por los detalles.",
     "example_german": "Er beschloss, fünfe gerade sein zu lassen und sich nicht um die Details zu kümmern.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8090,7 +8090,7 @@
     "example_spanish": "El jefe tiene mecha corta y se enfada rápido.",
     "example_german": "Der Chef hat eine kurze Zündschnur und wird schnell wütend.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8108,7 +8108,7 @@
     "example_spanish": "Se tomó una copa de un tirón antes de que empezara la fiesta.",
     "example_german": "Er kippte einen Drink runter, bevor die Party begann.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -8126,7 +8126,7 @@
     "example_spanish": "Acusaron al político de arrimar el ascua a su sardina con fondos públicos.",
     "example_german": "Dem Politiker wurde vorgeworfen, mit öffentlichen Geldern sein eigenes Süppchen zu kochen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8144,7 +8144,7 @@
     "example_spanish": "Dejó plantado a su novio después de solo dos semanas.",
     "example_german": "Sie servierte ihren Freund nach nur zwei Wochen ab.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8162,7 +8162,7 @@
     "example_spanish": "Se olió la tostada cuando el jefe se volvió tan amable de repente.",
     "example_german": "Er roch den Braten, als der Chef plötzlich so freundlich wurde.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -8180,7 +8180,7 @@
     "example_spanish": "Tras romper su promesa, el ministro quedó en una situación embarazosa.",
     "example_german": "Nach dem gebrochenen Versprechen saß der Minister in einer peinlichen Lage.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8198,7 +8198,7 @@
     "example_spanish": "Los estudiantes estaban entusiasmadísimos después de la visita al museo.",
     "example_german": "Die Schüler waren Feuer und Flamme nach dem Museumsbesuch.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -8216,7 +8216,7 @@
     "example_spanish": "El asistente tenía que estar a la entera disposición del jefe día y noche.",
     "example_german": "Der Assistent musste dem Chef Tag und Nacht zu Diensten sein.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8234,7 +8234,7 @@
     "example_spanish": "Para conservar su trabajo, tuvo que tragarse muchos sapos.",
     "example_german": "Um seinen Job zu behalten, musste er viele Kröten schlucken.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8252,7 +8252,7 @@
     "example_spanish": "Lloró lágrimas de cocodrilo cuando la pillaron en la mentira.",
     "example_german": "Sie weinte Krokodilstränen, als man sie bei der Lüge erwischte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8270,7 +8270,7 @@
     "example_spanish": "La medalla de oro puso la guinda al pastel tras una temporada fantástica.",
     "example_german": "Die Goldmedaille setzte einer fantastischen Saison die Krone auf.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8288,7 +8288,7 @@
     "example_spanish": "La profesora les cantó las cuarenta a los alumnos después del alboroto en clase.",
     "example_german": "Die Lehrerin las den Schülern nach dem Aufruhr im Unterricht die Leviten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8306,7 +8306,7 @@
     "example_spanish": "Metió la pata al mencionar el divorcio en la fiesta.",
     "example_german": "Er trat ins Fettnäpfchen, als er die Scheidung auf der Party erwähnte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8324,7 +8324,7 @@
     "example_spanish": "Después de la discusión, hizo las maletas y se marchó para siempre esa misma noche.",
     "example_german": "Nach dem Streit packte er seine Sachen und ging noch am selben Abend für immer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8342,7 +8342,7 @@
     "example_spanish": "El nuevo director tenía un listón muy alto que superar tras su popular predecesor.",
     "example_german": "Der neue Direktor musste nach dem beliebten Vorgänger in große Fußstapfen treten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -8360,7 +8360,7 @@
     "example_spanish": "Algo no iba del todo bien con las cuentas, así que revisaron los números otra vez.",
     "example_german": "Mit der Buchhaltung war etwas schräg, also überprüften sie die Zahlen erneut.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -8378,7 +8378,7 @@
     "example_spanish": "El jefe quería hablar con él en privado.",
     "example_german": "Der Chef wollte mit ihm unter vier Augen sprechen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8396,7 +8396,7 @@
     "example_spanish": "Después de tantas quejas, estaba hasta la coronilla de su compañero.",
     "example_german": "Nach all den Beschwerden konnte er seinen Kollegen nicht mehr ausstehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -8414,7 +8414,7 @@
     "example_spanish": "Salió corriendo de cabeza al oír las sirenas.",
     "example_german": "Er rannte Hals über Kopf davon, als er die Sirenen hörte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -8432,7 +8432,7 @@
     "example_spanish": "No se lo diré a nadie, ¡te lo juro!",
     "example_german": "Ich sage es niemandem, großes Indianerehrenwort!",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -8450,7 +8450,7 @@
     "example_spanish": "La triste noticia le cortó la risa a todos de golpe.",
     "example_german": "Die traurige Nachricht ließ allen das Lachen im Hals stecken bleiben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -8468,7 +8468,7 @@
     "example_spanish": "Se le subió el corazón a la garganta cuando el coche casi choca.",
     "example_german": "Ihr schlug das Herz bis zum Hals, als das Auto beinahe zusammenstieß.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -8486,7 +8486,7 @@
     "example_spanish": "Tuvo que ponerse las pilas y volver a estudiar.",
     "example_german": "Er musste sich am Riemen reißen und wieder anfangen zu lernen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8504,7 +8504,7 @@
     "example_spanish": "Se echó al jefe encima después de llegar tarde tres veces.",
     "example_german": "Er lud sich den Chef auf den Hals, nachdem er dreimal zu spät gekommen war.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-law-justice",
     "part": "phrase"
   },
   {
@@ -8522,7 +8522,7 @@
     "example_spanish": "Todo el alboroto resultó ser solo una tormenta en un vaso de agua.",
     "example_german": "Der ganze Aufruhr entpuppte sich nur als Sturm im Wasserglas.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8540,7 +8540,7 @@
     "example_spanish": "Vio todo rojo cuando descubrió que le habían robado el coche.",
     "example_german": "Er sah rot, als er entdeckte, dass das Auto gestohlen worden war.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -8558,7 +8558,7 @@
     "example_spanish": "Después de la relación fallida, ella era cautelosa - gato escaldado del agua fría huye.",
     "example_german": "Nach der gescheiterten Beziehung war sie vorsichtig - gebranntes Kind scheut das Feuer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -8576,7 +8576,7 @@
     "example_spanish": "No intentes explicarme cómo criar a los hijos - el huevo no debe enseñar a la gallina a poner.",
     "example_german": "Versuch nicht, mir zu erklären, wie man Kinder erzieht - das Ei will klüger sein als die Henne.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -8594,7 +8594,7 @@
     "example_spanish": "Las viejas fábricas ahora son cosa del pasado.",
     "example_german": "Die alten Fabriken gehören nun der Vergangenheit an.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "literary",
     "part": "phrase"
   },
   {
@@ -8612,7 +8612,7 @@
     "example_spanish": "Si el plan funciona, eso está por verse.",
     "example_german": "Ob der Plan funktioniert, wird sich zeigen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8630,7 +8630,7 @@
     "example_spanish": "Ella notó enseguida que había gato encerrado cuando las cifras no cuadraban.",
     "example_german": "Sie merkte schnell, dass etwas faul war, als die Zahlen nicht stimmten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8648,7 +8648,7 @@
     "example_spanish": "Cuando la banda suba al escenario, esto se va a animar.",
     "example_german": "Wenn die Band die Bühne betritt, geht's richtig rund.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -8666,7 +8666,7 @@
     "example_spanish": "Una taza de café por la mañana me hace el truco.",
     "example_german": "Eine Tasse Kaffee am Morgen ist bei mir genau das Richtige.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8684,7 +8684,7 @@
     "example_spanish": "Mordió el anzuelo y creyó en el anuncio falso.",
     "example_german": "Er biss auf den Köder an und glaubte der falschen Anzeige.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8702,7 +8702,7 @@
     "example_spanish": "Siempre se sintió como la oveja negra de la familia.",
     "example_german": "Er fühlte sich immer als das schwarze Schaf der Familie.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8720,7 +8720,7 @@
     "example_spanish": "Olvidó el pasaporte y los billetes porque tenía prisa - vísteme despacio que tengo prisa.",
     "example_german": "Er vergaß Pass und Tickets, weil er sich beeilte - Eile mit Weile.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -8738,7 +8738,7 @@
     "example_spanish": "Después de años de discusiones, decidieron enterrar el hacha de guerra.",
     "example_german": "Nach jahrelangem Streit beschlossen sie, das Kriegsbeil zu begraben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8756,7 +8756,7 @@
     "example_spanish": "La reforma se quedó entre dos aguas y no resolvió ninguno de los problemas.",
     "example_german": "Die Reform saß zwischen zwei Stühlen und löste keines der Probleme.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8774,7 +8774,7 @@
     "example_spanish": "Firmamos el contrato, así que ahora el asunto está resuelto.",
     "example_german": "Wir haben den Vertrag unterschrieben, jetzt ist die Sache geritzt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8792,7 +8792,7 @@
     "example_spanish": "Antes de criticar a los demás, deberías barrer delante de tu propia puerta.",
     "example_german": "Bevor du andere kritisierst, solltest du vor deiner eigenen Tür kehren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -8810,7 +8810,7 @@
     "example_spanish": "Se sintió engañado cuando descubrió la verdad.",
     "example_german": "Er fühlte sich hinters Licht geführt, als er die Wahrheit entdeckte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8828,7 +8828,7 @@
     "example_spanish": "Se quedó pasmada al ver el precio del apartamento.",
     "example_german": "Sie fiel aus allen Wolken, als sie den Preis der Wohnung sah.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -8846,7 +8846,7 @@
     "example_spanish": "La dirección intentó barrer el escándalo debajo de la alfombra.",
     "example_german": "Die Geschäftsführung versuchte, den Skandal unter den Teppich zu kehren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8864,7 +8864,7 @@
     "example_spanish": "Recibió una reprimenda por sus comentarios insolentes.",
     "example_german": "Er bekam die Leviten gelesen, weil er freche Kommentare machte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8882,7 +8882,7 @@
     "example_spanish": "No se chupa el dedo, siempre encuentra una solución.",
     "example_german": "Er ist nicht auf den Kopf gefallen, er findet immer eine Lösung.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -8900,7 +8900,7 @@
     "example_spanish": "Aunque trató de ocultarlo, se le notaba el nerviosismo.",
     "example_german": "Obwohl er es zu verbergen versuchte, schien seine Nervosität durch.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8918,7 +8918,7 @@
     "example_spanish": "Muchos soldados mordieron el polvo durante la batalla.",
     "example_german": "Viele Soldaten bissen während der Schlacht ins Gras.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8936,7 +8936,7 @@
     "example_spanish": "El médico tomó nota de los síntomas inusuales.",
     "example_german": "Der Arzt merkte sich die ungewöhnlichen Symptome.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8954,7 +8954,7 @@
     "example_spanish": "Tuvo que tragarse sus palabras al darse cuenta de que ella tenía razón.",
     "example_german": "Er musste seine Worte hinunterschlucken, als er merkte, dass sie recht hatte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -8972,7 +8972,7 @@
     "example_spanish": "La familia fue llevada de un lado a otro durante la guerra.",
     "example_german": "Die Familie wurde während des Krieges von einer Bastion zur nächsten getrieben.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -8990,7 +8990,7 @@
     "example_spanish": "Se negó a postrarse en el polvo ante el tirano.",
     "example_german": "Er weigerte sich, sich vor dem Tyrannen im Staub zu verneigen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9008,7 +9008,7 @@
     "example_spanish": "No nací ayer, sé que estás mintiendo.",
     "example_german": "Ich bin nicht von gestern, ich weiß, dass du lügst.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9026,7 +9026,7 @@
     "example_spanish": "Tras tres intentos fallidos, se rindió por completo.",
     "example_german": "Nach drei gescheiterten Versuchen gab er völlig auf.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -9044,7 +9044,7 @@
     "example_spanish": "El entrenador les dio una buena reprimenda a los jugadores tras el mal primer tiempo.",
     "example_german": "Der Trainer gab den Spielern nach der schlechten ersten Halbzeit ordentlich Bescheid.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9062,7 +9062,7 @@
     "example_spanish": "Se puso hecho una fiera cuando descubrió que le habían robado el coche.",
     "example_german": "Er drehte durch, als er entdeckte, dass das Auto gestohlen worden war.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -9080,7 +9080,7 @@
     "example_spanish": "Midió al nuevo compañero con la mirada antes de decir algo.",
     "example_german": "Er musterte den neuen Kollegen mit Blicken, bevor er etwas sagte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9098,7 +9098,7 @@
     "example_spanish": "Se quedó con la crítica dentro porque no se atrevió a decirla en voz alta.",
     "example_german": "Sie blieb auf ihrer Kritik sitzen, weil sie sich nicht traute, sie laut zu äußern.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -9116,7 +9116,7 @@
     "example_spanish": "Los diplomáticos siempre deben medir cuidadosamente sus palabras.",
     "example_german": "Diplomaten müssen ihre Worte immer sorgfältig abwägen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -9134,7 +9134,7 @@
     "example_spanish": "Las dos empresas se unieron para desarrollar la nueva tecnología.",
     "example_german": "Die beiden Firmen taten sich zusammen, um die neue Technologie zu entwickeln.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -9152,7 +9152,7 @@
     "example_spanish": "Todos los empleados estaban a bordo cuando la empresa iba a reorganizarse.",
     "example_german": "Alle Mitarbeiter waren mit im Boot, als das Unternehmen umstrukturiert werden sollte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -9170,7 +9170,7 @@
     "example_spanish": "Parecía amable, pero en realidad era un lobo con piel de oveja.",
     "example_german": "Er wirkte freundlich, war aber eigentlich ein Wolf im Schafspelz.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9188,7 +9188,7 @@
     "example_spanish": "Llegó justo a tiempo antes de que el tren saliera de la estación.",
     "example_german": "Er kam gerade noch rechtzeitig an, bevor der Zug den Bahnhof verließ.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -9206,7 +9206,7 @@
     "example_spanish": "Aprobó el examen con nota.",
     "example_german": "Sie bestand die Prüfung mit Bravour.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "intensifiers-degree",
     "part": "phrase"
   },
   {
@@ -9224,7 +9224,7 @@
     "example_spanish": "El jefe les echó una buena bronca a los empleados tras la entrega fallida.",
     "example_german": "Der Chef sagte den Mitarbeitern nach der missglückten Lieferung gehörig die Meinung.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9242,7 +9242,7 @@
     "example_spanish": "Cayó en la trampa y pagó por el producto falso.",
     "example_german": "Er ging dem Trick auf den Leim und bezahlte für das gefälschte Produkt.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9260,7 +9260,7 @@
     "example_spanish": "Cayeron en la trampa y se creyeron todo.",
     "example_german": "Sie fielen voll auf den Trick herein und glaubten alles.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9278,7 +9278,7 @@
     "example_spanish": "El acuerdo del año pasado sigue en pie.",
     "example_german": "Die Vereinbarung von letztem Jahr ist noch immer gültig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9296,7 +9296,7 @@
     "example_spanish": "Los dos departamentos finalmente empezaron a jugar en el mismo equipo.",
     "example_german": "Die beiden Abteilungen begannen endlich, an einem Strang zu ziehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -9314,7 +9314,7 @@
     "example_spanish": "Después de muchos años de amistad, separaron caminos.",
     "example_german": "Nach vielen Jahren Freundschaft trennten sie sich.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9332,7 +9332,7 @@
     "example_spanish": "¿Por fin se han hecho pareja esos dos?",
     "example_german": "Sind die beiden endlich ein Paar geworden?",
     "level": "C",
-    "category": "uttrykk",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -9350,7 +9350,7 @@
     "example_spanish": "Intentan mantener viva la tradición para las futuras generaciones.",
     "example_german": "Sie versuchen, die Tradition für kommende Generationen am Leben zu erhalten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "cultural-heritage",
     "part": "phrase"
   },
   {
@@ -9368,7 +9368,7 @@
     "example_spanish": "Es injusto meter a todos los políticos en el mismo saco.",
     "example_german": "Es ist unfair, alle Politiker über einen Kamm zu scheren.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9386,7 +9386,7 @@
     "example_spanish": "Se golpeó el pecho tras ganar la competición.",
     "example_german": "Er klopfte sich auf die Brust, nachdem er den Wettbewerb gewonnen hatte.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9404,7 +9404,7 @@
     "example_spanish": "Se quedó de brazos cruzados mientras los demás trabajaban.",
     "example_german": "Er legte die Hände in den Schoß, während die anderen arbeiteten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9422,7 +9422,7 @@
     "example_spanish": "Metía las narices en los asuntos de su vecino todo el tiempo.",
     "example_german": "Sie steckte ständig ihre Nase in die Angelegenheiten ihres Nachbarn.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9440,7 +9440,7 @@
     "example_spanish": "No movió un dedo para ayudar con la mudanza.",
     "example_german": "Er rührte keinen Finger, um beim Umzug zu helfen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9458,7 +9458,7 @@
     "example_spanish": "Cuando ella ofreció pastel, él no se hizo de rogar.",
     "example_german": "Als sie Kuchen anbot, ließ er sich nicht zweimal bitten.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9476,7 +9476,7 @@
     "example_spanish": "La profesora intercedió por el estudiante ante el director.",
     "example_german": "Die Lehrerin setzte sich beim Rektor für den Schüler ein.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "diplomacy-international",
     "part": "phrase"
   },
   {
@@ -9494,7 +9494,7 @@
     "example_spanish": "Se sentía atado de pies y manos por el contrato.",
     "example_german": "Er fühlte sich durch den Vertrag an Händen und Füßen gebunden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9512,7 +9512,7 @@
     "example_spanish": "Una vez firmado el contrato, ya no había nada que discutir - la suerte estaba echada.",
     "example_german": "Nachdem der Vertrag unterschrieben war, gab es nichts mehr zu diskutieren - die Würfel waren gefallen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9530,7 +9530,7 @@
     "example_spanish": "Se defendió con uñas y dientes cuando los críticos atacaron su película.",
     "example_german": "Sie setzte sich zur Wehr, als die Kritiker ihren Film angriffen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9548,7 +9548,7 @@
     "example_spanish": "Le dieron la patada después de solo tres meses en el trabajo.",
     "example_german": "Er flog nach nur drei Monaten im Job raus.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -9566,7 +9566,7 @@
     "example_spanish": "Siempre era ella quien cargaba con el peso del trabajo cuando los proyectos se complicaban.",
     "example_german": "Es war immer sie, die die Hauptlast trug, wenn die Projekte anspruchsvoll wurden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -9584,7 +9584,7 @@
     "example_spanish": "Se hizo de rogar durante mucho tiempo antes de responder a la invitación.",
     "example_german": "Er zögerte lange, bevor er auf die Einladung antwortete.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9602,7 +9602,7 @@
     "example_spanish": "Nadie se atrevió a poner en duda la conclusión del experto.",
     "example_german": "Niemand wagte es, die Schlussfolgerung des Experten in Zweifel zu ziehen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "rhetoric",
     "part": "phrase"
   },
   {
@@ -9620,7 +9620,7 @@
     "example_spanish": "Después de la caída, cojeó durante varias semanas.",
     "example_german": "Nach dem Sturz hinkte er mehrere Wochen lang.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "physical-appearance",
     "part": "phrase"
   },
   {
@@ -9638,7 +9638,7 @@
     "example_spanish": "La empresa sacó una lección de la pérdida del año pasado y cambió de estrategia.",
     "example_german": "Das Unternehmen zog eine Lehre aus dem Verlust des Vorjahres und änderte seine Strategie.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9656,7 +9656,7 @@
     "example_spanish": "En lugar de estudiar, holgazaneó todo el verano.",
     "example_german": "Anstatt zu lernen, faulenzte er den ganzen Sommer.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -9674,7 +9674,7 @@
     "example_spanish": "Los chicos del trabajo se burlaron del nuevo empleado toda la semana.",
     "example_german": "Die Kollegen machten sich die ganze Woche über den Neuen lustig.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9692,7 +9692,7 @@
     "example_spanish": "Con ese talento, ella va a llegar lejos.",
     "example_german": "Mit diesem Talent wird sie es weit bringen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9710,7 +9710,7 @@
     "example_spanish": "La policía puso en fuga a los manifestantes con gas lacrimógeno.",
     "example_german": "Die Polizei schlug die Demonstranten mit Tränengas in die Flucht.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "advanced-law-justice",
     "part": "phrase"
   },
   {
@@ -9728,7 +9728,7 @@
     "example_spanish": "Las bromas eran graciosas, pero al final se pasó de la raya.",
     "example_german": "Die Witze waren lustig, aber am Ende trieb er es zu weit.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9746,7 +9746,7 @@
     "example_spanish": "Todo el proyecto depende por completo de la financiación.",
     "example_german": "Das ganze Projekt steht und fällt mit der Finanzierung.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9764,7 +9764,7 @@
     "example_spanish": "Un solo golpe derribó al oponente.",
     "example_german": "Ein einziger Schlag streckte den Gegner zu Boden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -9782,7 +9782,7 @@
     "example_spanish": "El predicador advirtió a la congregación de no caer en pecado.",
     "example_german": "Der Prediger warnte die Gemeinde davor, in Sünde zu fallen.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "archaic",
     "part": "phrase"
   },
   {
@@ -9800,7 +9800,7 @@
     "example_spanish": "Los planes para un nuevo parque se vinieron abajo por falta de fondos.",
     "example_german": "Die Pläne für einen neuen Park fielen mangels Geld ins Wasser.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9818,7 +9818,7 @@
     "example_spanish": "Su propuesta cayó en terreno fértil entre la dirección.",
     "example_german": "Sein Vorschlag fiel bei der Geschäftsführung auf fruchtbaren Boden.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9836,7 +9836,7 @@
     "example_spanish": "Sus advertencias cayeron en terreno pedregoso - nadie quería escuchar.",
     "example_german": "Seine Warnungen fielen auf steinigen Boden - niemand wollte zuhören.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   },
   {
@@ -9854,7 +9854,7 @@
     "example_spanish": "Su discurso tuvo gran resonancia entre el público.",
     "example_german": "Seine Rede fand großen Anklang beim Publikum.",
     "level": "C",
-    "category": "uttrykk",
+    "category": "abstract-concepts",
     "part": "phrase"
   }
 ]

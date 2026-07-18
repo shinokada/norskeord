@@ -6,6 +6,8 @@
   import {
     buildQuizSession,
     levenshtein,
+    isQuizable,
+    isMonolingualLevel,
     type QuizQuestion,
     type MultipleChoiceQuestion,
     type FillBlankQuestion,
@@ -108,14 +110,18 @@
   );
 
   // Entries to quiz on — filtered from allEntries by picker selections so that
-  // changing the level picker always produces the correct word pool.
+  // changing the level picker always produces the correct word pool. Also
+  // excludes non-quizable entries (Phase 9: C-level entries with no
+  // `definition`) so the pool count/hint below reflects what a session can
+  // actually draw from, not a nominal total that includes entries the quiz
+  // will never select.
   let quizEntries = $derived.by(() => {
     let es = data.allEntries as import('$lib/types').VocabEntry[];
 
     if (selectedLevel) es = es.filter((e) => e.level === selectedLevel);
     if (selectedCategory) es = es.filter((e) => e.category === selectedCategory);
 
-    return es;
+    return es.filter(isQuizable);
   });
 
   onMount(() => {
@@ -510,7 +516,9 @@
           "{q.sentence}"
         </p>
         <p class="mb-6 text-sm text-indigo-500 dark:text-indigo-400">
-          {q.entry.english}
+          {isMonolingualLevel(q.entry.level)
+            ? (q.entry.definition ?? q.entry.english)
+            : q.entry.english}
         </p>
         <div class="flex gap-2">
           <input
@@ -689,9 +697,11 @@
         <p class="text-sm text-gray-700 italic dark:text-gray-300">
           {current.entry.example}
         </p>
-        <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-          {current.entry.example_english}
-        </p>
+        {#if !isMonolingualLevel(current.entry.level)}
+          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
+            {current.entry.example_english}
+          </p>
+        {/if}
         <div class="mt-2">
           <SpeakButton word={current.entry.example} label={m.speak_pronounce_sentence()} />
         </div>
@@ -747,7 +757,9 @@
               <p class="font-medium text-gray-800 dark:text-gray-100">
                 {result.question.entry.norsk}
                 <span class="ml-1 font-normal text-gray-600 dark:text-gray-300">
-                  — {result.question.entry.english}
+                  — {isMonolingualLevel(result.question.entry.level)
+                    ? (result.question.entry.definition ?? result.question.entry.english)
+                    : result.question.entry.english}
                 </span>
               </p>
               {#if !result.correct && result.userAnswer}

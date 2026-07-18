@@ -13,9 +13,14 @@
  *   - part      → "phrase"
  *   - id        → new sequential v-c-{category}-{NNN}, continuing from the
  *                 highest existing number already in that category in vocab-c.json
- *   - norsk/lemma/definition/example*/translations → copied as-is (no
- *     reformatting — unlike migrate-to-vocab.mjs, these are idioms/phrases,
- *     not verbs needing an "å " prefix)
+ *   - norsk       → "å " prefix stripped if present (vocab convention: only
+ *                 part: "verb" entries keep the "å " marker; uttrykk kept it
+ *                 on verb-phrases like "å ha gjenklang", but as part: "phrase"
+ *                 in vocab-c.json that must become "ha gjenklang" per
+ *                 check-vocab.mjs's checkNorsk rule)
+ *   - lemma/definition/example fields/translations → copied as-is (lemma in
+ *     uttrykk-c.json is already the bare form check-vocab.mjs expects for
+ *     non-verb/non-noun parts, so no lemma reformatting needed)
  *
  * By default this is a MOVE, not a copy: merged entries are removed from
  * uttrykk-c.json once appended to vocab-c.json, matching the doc's Phase 4
@@ -115,6 +120,12 @@ function pad3(n) {
   return String(n).padStart(3, '0');
 }
 
+/** Strip a leading "å " verb marker — vocab's phrase convention has no prefix,
+ *  unlike uttrykk's, where verb-shaped phrases keep it. */
+function stripVerbPrefix(norsk) {
+  return norsk.replace(/^å\s+/, '');
+}
+
 for (const p of [UTTRYKK_PATH, VOCAB_PATH, TRIAGE_PATH]) {
   if (!existsSync(p)) {
     console.error(`❌ Missing required file: ${p}`);
@@ -141,7 +152,9 @@ if (dupTriageIds.length > 0) {
 
 const invalidCategoryRows = triage.filter((t) => !VALID_C_CATEGORIES.has(t.proposed_category));
 if (invalidCategoryRows.length > 0) {
-  console.error(`❌ ${invalidCategoryRows.length} triage row(s) have an invalid proposed_category:`);
+  console.error(
+    `❌ ${invalidCategoryRows.length} triage row(s) have an invalid proposed_category:`
+  );
   for (const t of invalidCategoryRows) {
     console.error(`   ${t.id}  |  "${t.proposed_category}"`);
   }
@@ -179,7 +192,13 @@ for (const entry of uttrykEntries) {
   perCategoryAdded[category] = (perCategoryAdded[category] ?? 0) + 1;
   const newId = `v-c-${category}-${pad3(categoryCounters[category])}`;
 
-  const built = { ...entry, category, part: 'phrase', id: newId };
+  const built = {
+    ...entry,
+    norsk: stripVerbPrefix(entry.norsk),
+    category,
+    part: 'phrase',
+    id: newId
+  };
   const ordered = {};
   for (const field of VOCAB_FIELD_ORDER) {
     if (built[field] !== undefined) ordered[field] = built[field];
@@ -194,13 +213,17 @@ for (const entry of uttrykEntries) {
 
 // ── Report ───────────────────────────────────────────────────────────────
 
-console.log(`${DRY_RUN ? '🔍 DRY RUN — ' : ''}Merging ${newVocabEntries.length} uttrykk-c entries into vocab-c.json\n`);
+console.log(
+  `${DRY_RUN ? '🔍 DRY RUN — ' : ''}Merging ${newVocabEntries.length} uttrykk-c entries into vocab-c.json\n`
+);
 console.log('Per-category counts:');
 for (const [cat, count] of Object.entries(perCategoryAdded).sort((a, b) => b[1] - a[1])) {
   console.log(`  ${cat.padEnd(28)} +${count}`);
 }
 console.log(`\nTotal categories touched: ${Object.keys(perCategoryAdded).length}`);
-console.log(`vocab-c.json: ${vocabEntries.length} → ${vocabEntries.length + newVocabEntries.length} entries`);
+console.log(
+  `vocab-c.json: ${vocabEntries.length} → ${vocabEntries.length + newVocabEntries.length} entries`
+);
 console.log(
   `uttrykk-c.json: ${uttrykEntries.length} → ${KEEP_SOURCE ? uttrykEntries.length : 0} entries` +
     (KEEP_SOURCE ? ' (--keep-source: left untouched)' : '')

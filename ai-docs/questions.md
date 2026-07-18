@@ -2,44 +2,49 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-We are working on ai-docs/implementation/uttrykk-category.md. The following is from a previous session. You created ai-docs/implementation/uttrykk-theme-triage-b2.json, and I'm wondering if it is ready for node scripts/merge-uttrykk-theme.mjs b2 command.
+We are working on ai-docs/implementation/uttrykk-category.md.
+The following is from a previous session. Please continue implementing.
 
+ME: I think I need to update the /stats page. For example, Grammar has own section, so Vocab and Uttrykk should have own section as well.
+"By Level" shows only vocab progress. Do we need it? What do you think? Let's discuss about these points before touching the code.
 
-ME: I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.  We are working on ai-docs/implementation/uttrykk-category.md. The following is from a previous session. I'd like to continue to b2 using the same method, you create uttrykk-theme-triage-b2.json so that I can run `node scripts/merge-uttrykk-theme.mjs b2`.
+CLAUDE: Now, let's discuss the `/stats` restructuring before touching code.Lint errors are fixed — those three `Map`s (all transient, built and consumed within a function or `$derived`, never held in component state) now use `SvelteMap`.
 
+Now, on the `/stats` restructuring — good catch, and worth sorting out before I touch code.
 
-```markdown
+**What's actually happening today, first:** "By Level" isn't vocab-only — it's blended. `progressMap` stores _all_ card progress, vocab and uttrykk alike (an uttrykk card is just a `CardProgress` with `category: "uttrykk"`), so `allCards`/`levelStats` already lump uttrykk reviews into each level's bar. It looks vocab-only because there's no visual cue that some of a level's "582 seen" might be uttrykk cards. Grammar is the one thing genuinely walled off, since it lives in a separate `grammarMap`.
 
-ME: Output:
+So the real question isn't "vocab vs. uttrykk are miscounted," it's "uttrykk progress is invisible as its own thing at the top level" — you only see it once you scroll to the Plus-only "By Category" chart, where Phase 5 now at least breaks it into themes.
 
-```
-➜  norskeord git:(feat/uttrykk) ✗ node scripts/merge-a2-theme.mjs
-✅ Wrote 278 entries with theme → /Users/shinichiokada/Svelte/svelte-languages/norskeord/src/lib/data/uttrykk-a2.json
-```
+**My take:** mirror the Grammar pattern for both, i.e. three parallel sections — Vocabulary, Uttrykk, Grammar — each with its own summary stat cards and its own by-level (or by-theme) breakdown, in that order (matches the `/learn/[level]` hub's Vocabulary → Uttrykk → Grammar ordering, so the site stays consistent). Concretely that means:
 
-Can you continue b1?
+- Split `allCards` into vocab cards (`category !== 'uttrykk'`) and uttrykk cards (`category === 'uttrykk'`).
+- Retire the current generic "By Level" section — since it's blended, it doesn't map cleanly onto content-type sections. Its bars move _into_ the new Vocabulary and Uttrykk sections instead (vocab-only by-level bars in one, uttrykk-only by-level bars in the other).
+- The top "Summary cards" (seen/due/review/relearning) currently duplicate what per-section cards would show, and they're blended too — I'd cut them down to a small overall line (or drop them) rather than keep a second, differently-scoped set of numbers next to the section-level ones.
+- The existing Plus-only "By Category" chart currently mixes vocab category rows and (post-Phase 5) uttrykk theme rows in the same per-level accordion. If Uttrykk gets its own section, its theme breakdown belongs there instead — "By Category" would go back to vocab-only, so the theme data isn't shown in two places at once.
 
-CLAUDE: Let me verify the A2 file before moving on.Good — valid JSON, closes cleanly, 278 entries (up from the broken 158). A2 is done. Now let's start B1.This is a big batch (221 entries) — let me classify them systematically against B1's real theme list, then write the triage file.All 221 classified. Let me verify full ID coverage against the actual file and check theme validity before writing.Full coverage, all themes valid. Now writing the triage artifact and the small script to merge B1's themes.Now let me write this triage artifact to the project on the user's filesystem, and write the generic merge script for B1.Now let me generalize the merge script to handle any level, so you can run it for B1 (and later B2):Please run:
+A few things genuinely depend on your preference rather than being an obvious right answer, so before I touch anything:
 
-```
-node scripts/merge-uttrykk-theme.mjs b1
-```
+ME: Q: Should the blended "By Level" section be removed in favor of vocab-only and uttrykk-only by-level breakdowns inside their new sections?
+A: Yes, remove it — replace with per-section breakdowns
 
-This one is generalized (takes the level as an argument) so it'll also work for B2 later — I've kept `merge-a2-theme.mjs` as-is since it already did its job pulling from the `.bak`. Paste the output and I'll verify the result and update the doc status.
+Q: Should the uttrykk theme breakdown move out of the existing "By Category" chart and into the new dedicated Uttrykk section?
+A: Yes — Uttrykk section owns theme detail, "By Category" goes back to vocab-only
 
-ME: Here you are.
+Q: Should the new Vocabulary/Uttrykk sections' detailed breakdowns be Plus-only (matching today's "By Category" gating), or visible to everyone like today's "By Level" is?
+A: Plus-only, like "By Category" today
 
-```
-➜  norskeord git:(feat/uttrykk) ✗ node scripts/merge-uttrykk-theme.mjs b1
-✅ Wrote 221 entries with theme → /Users/shinichiokada/Svelte/svelte-languages/norskeord/src/lib/data/uttrykk-b1.json
-```
+CLAUDE: Good — let's implement that. First let me check how the paraglide message system works, since I'll need a couple of new section headings.Now German and Ukrainian.
 
+Session terminated.
+Me: continue.
 
-```
-
-CLAUDE: So B2's valid theme list = B2 topical categories (minus uttrykk/uttrykk-preview) + functional themes + general. Let me check the B1 triage artifact format and the B2 data file.679 entries. Let me get the full id + norsk list to classify systematically.Full coverage, all themes valid. Now let me write the triage artifact to the project.All 679 entries covered, all themes valid. Now writing the triage artifact to the project.
+CLAUDE: Now nb.json:Now es.json, uk.json, de.json:All five message files are updated. Now let's build the new `UttrykkThemeChart.svelte` component.Now let's create the new `UttrykkThemeChart.svelte` component, based on the theme-expansion logic currently living in `CategoryBarChart.svelte`:Now let's simplify `CategoryBarChart.svelte` back to vocab-only (removing the uttrykk theme-expansion, which now lives in `UttrykkThemeChart.svelte`):Given the scope of changes, I'll rewrite this file cleanly rather than patch incrementally:Now let's replace the `levelStats` block with the new vocab/uttrykk-scoped derivations:Now let's replace the template's blended "Summary cards" + "Per-level breakdown" section and the standalone "Per-category breakdown" section with the new Vocabulary and Uttrykk sections:Good, the script edits landed correctly. Let me view the template portion I need to replace next:Now let's view the rest to fix the closing `{/if}` and continue with Grammar/Per-category sections:Both edits landed successfully. Let's do a final full read to verify the file is coherent end-to-end:
 
 ==========
+http://localhost:5173/quiz?level=C questions have English. I think level C should have only Norwegian. What do you think?
+
+=======
 
 I have src/lib/grammar directory for the current /grammar page.
 
