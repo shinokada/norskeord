@@ -341,7 +341,7 @@
             {@const catLocked = cat ? !isPlus && cat.locked : false}
             {#if !catLocked}
               <a
-                href="/{data.level}/{t.theme}"
+                href="/{data.level}/{t.theme}?from=uttrykk"
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
                   border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
               >
