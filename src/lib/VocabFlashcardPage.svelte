@@ -140,10 +140,6 @@
     mode === 'defnor' && (!hasDefinitions || !isDefnorLevel) ? 'noreng' : mode
   );
 
-  // Step 5: Detect uttrykk-preview category for banner
-  let isUttrykkPreview = $derived(entries.length > 0 && entries[0].category === 'uttrykk-preview');
-  const UTTRYKK_FULL_COUNT = 310;
-
   // 3-A: plan from layout server data
   let plan = $derived(page.data.plan as 'free' | 'plus');
   let isPlus = $derived(plan === 'plus');
@@ -764,20 +760,6 @@
   {/if}
 
   <!-- 2-D: undo button removed from here; rendered near rating buttons to avoid layout shift -->
-
-  <!-- Step 5: uttrykk preview banner -->
-  {#if isUttrykkPreview}
-    <div
-      class="mb-3 w-full max-w-lg rounded-xl border border-indigo-200 bg-indigo-50 px-5 py-3 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
-    >
-      <p class="text-sm text-indigo-700 dark:text-indigo-300">
-        {m.plus_uttrykk_preview_banner({ count: String(entries.length) })}
-        <a href="/plus" class="ml-1 font-semibold underline hover:no-underline">
-          {m.plus_uttrykk_preview_cta({ total: String(UTTRYKK_FULL_COUNT) })}
-        </a>
-      </p>
-    </div>
-  {/if}
 
   <!-- Hint bar with counter on the right -->
   <div
