@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.54.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added theme-based access controls for Uttrykk study content, with selected themes available for free and others requiring Plus.
+    - Updated learning hubs to show free and locked themes with clear Plus upgrade links.
+    - Added persistent “Show more/less” states across learning hub navigation.
+  - **Improvements**
+    - Retired the separate Uttrykk preview experience and redirected existing links to the main Uttrykk area.
+    - Improved theme-specific navigation, including C-level expressions.
+    - Simplified Uttrykk administration to use a single deck per level.
+  - **Bug Fixes**
+    - Corrected category navigation and quiz category handling after preview retirement.
+
 ## 2.53.0
 
 ### Minor Changes
