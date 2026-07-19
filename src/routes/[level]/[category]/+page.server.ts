@@ -3,7 +3,9 @@ import type { PageServerLoad } from './$types';
 import type { VocabEntry } from '$lib/types';
 import { CATEGORIES_BY_LEVEL } from '$lib/config';
 import { isPlusCategory } from '$lib/access';
+import { isFreeUttrykkTheme } from '$lib/uttrykk-gating';
 import type { CEFRLevel } from '$lib/types';
+import type { UttrykkThemeLevel } from '$lib/config';
 import type { MetaProps } from 'runes-meta-tags';
 import { removeHyphensAndCapitalize } from '$lib/utils';
 import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
@@ -22,7 +24,10 @@ const vocabLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   c: () => import('$lib/data/vocab-c.json') as unknown as Promise<{ default: VocabEntry[] }>
 };
 
-// Full uttrykk decks — Plus users only
+// Full uttrykk decks — gated per-theme (see $lib/uttrykk-gating), not
+// per-category. A free user can only ever end up with entries from
+// FREE_UTTRYKK_THEMES for their level; everything else redirects to /plus
+// (see the gating check right after groupByTheme() is called, below).
 const uttrykkLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
   'a1/uttrykk': () =>
     import('$lib/data/uttrykk-a1.json') as unknown as Promise<{ default: VocabEntry[] }>,
@@ -43,18 +48,6 @@ const uttrykkLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> =
 const uttrykkCLoader = () =>
   import('$lib/data/uttrykk-c.json') as unknown as Promise<{ default: VocabEntry[] }>;
 
-// Preview decks — free users (10 entries each)
-const uttrykkPreviewLoaders: Record<string, () => Promise<{ default: VocabEntry[] }>> = {
-  'a1/uttrykk-preview': () =>
-    import('$lib/data/uttrykk-a1-preview.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  'a2/uttrykk-preview': () =>
-    import('$lib/data/uttrykk-a2-preview.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  'b1/uttrykk-preview': () =>
-    import('$lib/data/uttrykk-b1-preview.json') as unknown as Promise<{ default: VocabEntry[] }>,
-  'b2/uttrykk-preview': () =>
-    import('$lib/data/uttrykk-b2-preview.json') as unknown as Promise<{ default: VocabEntry[] }>
-};
-
 // ---------------------------------------------------------------------------
 // Server load — runs on every request; HTML is pre-rendered for Google.
 // locals.plan is set by hooks.server.ts before this runs.
@@ -69,6 +62,19 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     redirect(301, `/c/${category}`);
   }
 
+  // Phase 3 (ai-docs/implementation/uttrykk-gate.md): the old flat 10-item
+  // teaser deck is retired now that uttrykk is gated per-theme (Phase 1) —
+  // every old preview link/bookmark now points at the real deck instead.
+  // Applies to both free and Plus users; Plus was already silently
+  // redirected internally to the full deck when hitting this URL, this just
+  // makes that explicit and applies it to free users too. A free user
+  // landing on `/{level}/uttrykk` with no `?theme=` then hits the per-theme
+  // gate's own redirect to /plus below, same as any other "study all"
+  // request.
+  if (category === 'uttrykk-preview') {
+    redirect(301, `/${level.toLowerCase()}/uttrykk`);
+  }
+
   // Gate: redirect free users who try to open a Plus-only category directly
   if (!isPlus && isPlusCategory(level, category)) {
     redirect(302, '/plus?ref=category-lock');
@@ -79,17 +85,19 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
   const categoryName = removeHyphensAndCapitalize(category);
 
   // ── Prev / Next category navigation ────────────────────────────────────────
-  // Build the visible category list for this level: exclude uttrykk-preview
-  // for Plus users (they get the full uttrykk deck instead).
+  // Build the visible category list for this level. `uttrykk` itself is
+  // excluded for free users (same as any other locked stop) — the full deck
+  // (`/{level}/uttrykk` with no ?theme=) is still Plus-only even though
+  // individual free themes are reachable via the hub's per-pill links (see
+  // ai-docs/implementation/uttrykk-gate.md Phase 1) — prev/next nav only
+  // ever points at the plain, theme-less URL, so including it here would
+  // send a free user straight into the /plus redirect mid-flashcard-session.
   const allCats: string[] = [...(CATEGORIES_BY_LEVEL[levelUpper] ?? [])];
   const visibleCats: string[] = isPlus
-    ? allCats.filter((c) => c !== 'uttrykk-preview')
+    ? allCats
     : allCats.filter((c) => c !== 'uttrykk' && !isPlusCategory(level, c));
 
-  // Resolve the effective category slug (uttrykk-preview → uttrykk for Plus)
-  const effectiveCategory = isPlus && category === 'uttrykk-preview' ? 'uttrykk' : category;
-
-  const idx = visibleCats.indexOf(effectiveCategory);
+  const idx = visibleCats.indexOf(category);
   const prevSlug = idx > 0 ? visibleCats[idx - 1] : null;
   const nextSlug = idx !== -1 && idx < visibleCats.length - 1 ? visibleCats[idx + 1] : null;
 
@@ -108,8 +116,8 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
       }
     : null;
 
-  // When a free user reaches the end of the free list (uttrykk-preview), show
-  // a Plus badge for the level's locked categories instead of hiding the arrow.
+  // When a free user reaches the end of the visible category list, show a
+  // Plus badge for the level's locked categories instead of hiding the arrow.
   const nextLocked =
     !isPlus && !nextCategory
       ? (() => {
@@ -226,59 +234,85 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     return { entries, themes, selectedTheme };
   }
 
-  // uttrykk-preview: Plus users are silently redirected to the full deck.
-  // The preview stays a flat 10-item teaser — no theme breakdown here.
-  if (category === 'uttrykk-preview') {
-    if (isPlus) {
-      const fullKey = `${level.toLowerCase()}/uttrykk`;
-      const fullLoader = uttrykkLoaders[fullKey];
-      if (fullLoader) {
-        const data = await fullLoader();
-        const { entries, themes, selectedTheme } = groupByTheme(data.default);
-        return {
-          entries,
-          level: levelUpper,
-          category: 'uttrykk',
-          themes,
-          selectedTheme,
-          prevCategory,
-          nextCategory,
-          pageMetaTags,
-          learningResourceSchema
-        };
-      }
-    }
-    const previewLoader = uttrykkPreviewLoaders[key];
-    if (previewLoader) {
-      const data = await previewLoader();
-      return {
-        entries: data.default,
-        level: levelUpper,
-        category,
-        themes: [] as { theme: string; count: number }[],
-        selectedTheme: null as string | null,
-        prevCategory,
-        nextCategory,
-        nextLocked,
-        pageMetaTags,
-        learningResourceSchema
-      };
-    }
-  }
-
-  // Full uttrykk deck (Plus only — already gated above)
+  // Full uttrykk deck — gated per-theme, not per-category (see
+  // ai-docs/implementation/uttrykk-gate.md Phase 1). A free user may only
+  // ever land on a theme in FREE_UTTRYKK_THEMES for this level; "study all"
+  // (no ?theme=), the ?theme=others bucket, and any other single theme all
+  // redirect to /plus, same as the blanket category-lock redirect above
+  // does for every other Plus-only category.
   const uttrykkLoader = uttrykkLoaders[key];
   if (uttrykkLoader) {
     const data = await uttrykkLoader();
     const { entries, themes, selectedTheme } = groupByTheme(data.default);
+
+    if (!isPlus && !isFreeUttrykkTheme(levelUpper as UttrykkThemeLevel, selectedTheme)) {
+      redirect(302, '/plus?ref=uttrykk-theme-lock');
+    }
+
+    // Prev/next nav for a theme-filtered uttrykk page must step through
+    // *themes*, not the level's vocab category list — `prevCategory` /
+    // `nextCategory` above were built from `visibleCats` (indexOf('uttrykk')
+    // among vocab slugs), which pointed "back" at whatever vocab category
+    // happens to sit next to 'uttrykk' in CATEGORIES_BY_LEVEL (e.g.
+    // Communication) — a real bug, not a themed nav. Build the sequence from
+    // the same major-theme + Others ordering the hub pills use
+    // (partitionUttrykkThemes), so "previous/next" always lands on an
+    // adjacent theme pill instead. Free users only ever step through free
+    // themes here, mirroring how visibleCats above excludes locked vocab
+    // categories for them.
+    const { major: uttrykkMajor, minor: uttrykkMinor, othersCount } =
+      partitionUttrykkThemes(themes);
+    const uttrykkThemeList: { theme: string; count: number }[] = [...uttrykkMajor];
+    if (uttrykkMinor.length > 0) {
+      uttrykkThemeList.push({ theme: UTTRYKK_OTHERS_THEME, count: othersCount });
+    }
+    const uttrykkNavList = isPlus
+      ? uttrykkThemeList
+      : uttrykkThemeList.filter((t) =>
+          isFreeUttrykkTheme(levelUpper as UttrykkThemeLevel, t.theme)
+        );
+
+    const themeLabel = (theme: string) =>
+      theme === UTTRYKK_OTHERS_THEME ? 'Others' : removeHyphensAndCapitalize(theme);
+
+    const tIdx = selectedTheme ? uttrykkNavList.findIndex((t) => t.theme === selectedTheme) : -1;
+    const prevTheme = tIdx > 0 ? uttrykkNavList[tIdx - 1] : null;
+    const nextTheme =
+      tIdx !== -1 && tIdx < uttrykkNavList.length - 1 ? uttrykkNavList[tIdx + 1] : null;
+
+    const uttrykkPrevCategory = prevTheme
+      ? {
+          slug: prevTheme.theme,
+          label: themeLabel(prevTheme.theme),
+          href: `/${level.toLowerCase()}/uttrykk?theme=${prevTheme.theme}`
+        }
+      : null;
+    const uttrykkNextCategory = nextTheme
+      ? {
+          slug: nextTheme.theme,
+          label: themeLabel(nextTheme.theme),
+          href: `/${level.toLowerCase()}/uttrykk?theme=${nextTheme.theme}`
+        }
+      : null;
+    const uttrykkNextLocked =
+      !isPlus && !nextTheme
+        ? (() => {
+            const lockedCount = uttrykkThemeList.length - uttrykkNavList.length;
+            return lockedCount > 0
+              ? { count: lockedCount, href: '/plus?ref=uttrykk-nav-end' }
+              : null;
+          })()
+        : null;
+
     return {
       entries,
       level: levelUpper,
       category,
       themes,
       selectedTheme,
-      prevCategory,
-      nextCategory,
+      prevCategory: uttrykkPrevCategory,
+      nextCategory: uttrykkNextCategory,
+      nextLocked: uttrykkNextLocked,
       pageMetaTags,
       learningResourceSchema
     };
