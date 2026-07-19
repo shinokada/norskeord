@@ -4,8 +4,10 @@
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import { localeStore } from '$lib/localeStore.svelte';
   import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
+  import { isFreeUttrykkTheme } from '$lib/uttrykk-gating';
+  import { learnHubExpanded } from '$lib/stores/learnHubExpanded.svelte';
+  import type { UttrykkThemeLevel } from '$lib/config';
   import * as m from '$lib/paraglide/messages';
-  import type { Snapshot } from './$types';
 
   let { data } = $props();
 
@@ -73,10 +75,11 @@
     return removeHyphensAndCapitalize(slug);
   }
 
+  // Phase 3 (ai-docs/implementation/uttrykk-gate.md): 'uttrykk-preview' is
+  // retired (no longer a real category slug), so this only ever needs to
+  // exclude 'uttrykk' itself — it gets its own dedicated Section 2b below.
   const visibleCategories = $derived(
-    data.categories.filter(
-      (c: { slug: string; locked: boolean }) => c.slug !== 'uttrykk' && c.slug !== 'uttrykk-preview'
-    )
+    data.categories.filter((c: { slug: string; locked: boolean }) => c.slug !== 'uttrykk')
   );
 
   const uttrykkCategory = $derived(
@@ -98,26 +101,14 @@
   // at B1/B2/C.
   const VOCAB_INITIAL = 12;
   const UTTRYKK_INITIAL = 8;
-  let grammarExpanded = $state(false);
-  let blogExpanded = $state(false);
-  let vocabExpanded = $state(false);
-  let uttrykkExpanded = $state(false);
-
-  // Persist expanded state across back/forward navigation.
-  export const snapshot: Snapshot<{
-    grammarExpanded: boolean;
-    blogExpanded: boolean;
-    vocabExpanded: boolean;
-    uttrykkExpanded: boolean;
-  }> = {
-    capture: () => ({ grammarExpanded, blogExpanded, vocabExpanded, uttrykkExpanded }),
-    restore: (value) => {
-      grammarExpanded = value.grammarExpanded;
-      blogExpanded = value.blogExpanded;
-      vocabExpanded = value.vocabExpanded;
-      uttrykkExpanded = value.uttrykkExpanded;
-    }
-  };
+  // Backed by a shared, level-keyed store (see $lib/stores/learnHubExpanded)
+  // instead of local $state, so "Show more" stays expanded across ordinary
+  // client-side navigation — e.g. into a flashcard session and back via the
+  // main nav — not just SvelteKit history back/forward.
+  let grammarExpanded = $derived(learnHubExpanded.get('grammar', data.level));
+  let blogExpanded = $derived(learnHubExpanded.get('blog', data.level));
+  let vocabExpanded = $derived(learnHubExpanded.get('vocab', data.level));
+  let uttrykkExpanded = $derived(learnHubExpanded.get('uttrykk', data.level));
 
   const visibleGrammarTopics = $derived(
     grammarExpanded ? data.grammarTopics : data.grammarTopics.slice(0, GRAMMAR_INITIAL)
@@ -252,7 +243,7 @@
     </div>
     {#if hiddenVocabCount > 0 || vocabExpanded}
       <button
-        onclick={() => (vocabExpanded = !vocabExpanded)}
+        onclick={() => learnHubExpanded.toggle('vocab', data.level)}
         class="mt-4 text-sm font-medium {colors.accent} hover:underline"
       >
         {vocabExpanded
@@ -273,70 +264,62 @@
        page" option chosen over a single unclickable summary card or
        skipping the section entirely. -->
   {#if uttrykkCategory || (data.levelUpper === 'C' && data.uttrykkThemes.length > 0)}
-    {@const locked = uttrykkCategory ? !isPlus && uttrykkCategory.locked : false}
     <section class="mb-12">
       <h2 class="mb-4">💬 Uttrykk</h2>
-      {#if locked}
-        <a
-          href="/{data.level}/uttrykk-preview"
-          class="flex items-center justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
-        >
-          <div class="text-left">
-            <p class="font-semibold text-gray-800 dark:text-gray-100">
-              {data.levelStats?.uttrykk ?? 0} fixed expressions
-            </p>
-            <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
-              Idioms and set phrases used in everyday Norwegian · Preview free, full deck is Plus
-            </p>
-          </div>
-          <span
-            class="shrink-0 rounded-full bg-indigo-100 px-2 py-0.5 text-[10px] font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
-          >
-            🔒 Plus
-          </span>
-        </a>
-      {:else if uttrykkCategory}
-        <!-- Phase 3b: the count itself is the "study everything" entry point
-             (important for Plus users' daily due-card reviews, which pull
-             from the whole deck, not one theme) — so there's no separate
-             "All" pill below; the pills are purely a "browse by theme"
-             shortcut, with anything under UTTRYKK_OTHERS_THRESHOLD folded
-             into a single Others pill. -->
-        <a
-          href="/{data.level}/uttrykk"
-          class="block rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80"
-        >
-          <p class="font-semibold text-gray-800 dark:text-gray-100">
-            {data.levelStats?.uttrykk ?? 0} fixed expressions
-          </p>
-          <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
-            Idioms and set phrases used in everyday Norwegian
-          </p>
-        </a>
+      {#if uttrykkCategory}
+        <!-- Phase 1/2 (ai-docs/implementation/uttrykk-gate.md): uttrykk is
+             gated per-theme, not per-category, so this section never
+             collapses to a single locked teaser card anymore — 2–3 curated
+             themes (FREE_UTTRYKK_THEMES) are fully free for every free
+             user, every other theme pill stays visible but dimmed with a
+             🔒, same visual language Grammar already uses for its locked
+             topic cards (chosen over Vocabulary's hide-and-aggregate
+             pattern because there are only ~5–9 major theme pills here, not
+             20–30 — see uttrykk-gate.md Phase 4's "per-pill vs aggregate"
+             note). The "study the whole deck" overview card (fixed count +
+             explainer, no theme filter) has been removed for everyone —
+             it was a Plus-only shortcut that only ever duplicated what the
+             theme pills below already offer as direct entry points. -->
         {#if uttrykkThemeGroups.major.length > 0}
           <div class="mt-3 flex flex-wrap gap-2">
             {#each visibleUttrykkMajorThemes as t (t.theme)}
+              {@const themeLocked =
+                !isPlus && !isFreeUttrykkTheme(data.levelUpper as UttrykkThemeLevel, t.theme)}
               <a
-                href="/{data.level}/uttrykk?theme={t.theme}"
+                href={themeLocked
+                  ? '/plus?ref=hub-uttrykk-theme'
+                  : `/${data.level}/uttrykk?theme=${t.theme}`}
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
-                  border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+                  {themeLocked
+                  ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+                  : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
               >
-                {categoryLabel(data.level, t.theme)} ({t.count})
+                {categoryLabel(data.level, t.theme)} ({t.count}){#if themeLocked}
+                  🔒{/if}
               </a>
             {/each}
             {#if uttrykkThemeGroups.minor.length > 0}
+              <!-- Others is always locked for free users today — every free
+                   theme in FREE_UTTRYKK_THEMES is a major theme by
+                   construction (see uttrykk-gate.md's open question on
+                   whether a minor theme could ever be free). -->
               <a
-                href="/{data.level}/uttrykk?theme={UTTRYKK_OTHERS_THEME}"
+                href={isPlus
+                  ? `/${data.level}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}`
+                  : '/plus?ref=hub-uttrykk-theme'}
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
-                  border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+                  {isPlus
+                  ? 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
+                  : 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'}"
               >
-                Others ({uttrykkThemeGroups.othersCount})
+                Others ({uttrykkThemeGroups.othersCount}){#if !isPlus}
+                  🔒{/if}
               </a>
             {/if}
           </div>
           {#if hiddenUttrykkMajorCount > 0 || uttrykkExpanded}
             <button
-              onclick={() => (uttrykkExpanded = !uttrykkExpanded)}
+              onclick={() => learnHubExpanded.toggle('uttrykk', data.level)}
               class="mt-4 text-sm font-medium {colors.accent} hover:underline"
             >
               {uttrykkExpanded
@@ -347,10 +330,9 @@
         {/if}
       {:else}
         <!-- C branch: no separate deck, no lock state of its own — each
-             pill's lock state comes from the matching Vocabulary category. -->
-        <p class="mb-3 text-sm text-gray-600 dark:text-gray-300">
-          {data.levelStats?.uttrykk ?? 0} fixed expressions, folded into the Vocabulary categories above
-        </p>
+             pill's lock state comes from the matching Vocabulary category.
+             The summary line ("N fixed expressions, folded into...") was
+             removed — it duplicated what the pills below already show. -->
         <div class="flex flex-wrap gap-2">
           {#each visibleUttrykkCThemes as t (t.theme)}
             {@const cat = data.categories.find(
@@ -367,10 +349,28 @@
               </a>
             {/if}
           {/each}
+          {#if !isPlus}
+            {@const lockedUttrykkCount = data.uttrykkThemes.filter(
+              (t: { theme: string; count: number }) => {
+                const cat = data.categories.find(
+                  (c: { slug: string; locked: boolean }) => c.slug === t.theme
+                );
+                return cat ? cat.locked : false;
+              }
+            ).length}
+            {#if lockedUttrykkCount >= 3}
+              <a
+                href="/plus?ref=hub-uttrykk-badge"
+                class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-600 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-300"
+              >
+                {m.quiz_plus_only_count({ count: lockedUttrykkCount })}
+              </a>
+            {/if}
+          {/if}
         </div>
         {#if hiddenUttrykkCCount > 0 || uttrykkExpanded}
           <button
-            onclick={() => (uttrykkExpanded = !uttrykkExpanded)}
+            onclick={() => learnHubExpanded.toggle('uttrykk', data.level)}
             class="mt-4 text-sm font-medium {colors.accent} hover:underline"
           >
             {uttrykkExpanded
@@ -449,7 +449,7 @@
       </div>
       {#if hiddenGrammarCount > 0 || grammarExpanded}
         <button
-          onclick={() => (grammarExpanded = !grammarExpanded)}
+          onclick={() => learnHubExpanded.toggle('grammar', data.level)}
           class="mt-4 text-sm font-medium {colors.accent} hover:underline"
         >
           {grammarExpanded
@@ -541,7 +541,7 @@
       </div>
       {#if hiddenBlogCount > 0 || blogExpanded}
         <button
-          onclick={() => (blogExpanded = !blogExpanded)}
+          onclick={() => learnHubExpanded.toggle('blog', data.level)}
           class="mt-4 text-sm font-medium {colors.accent} hover:underline"
         >
           {blogExpanded

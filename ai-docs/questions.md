@@ -7,12 +7,16 @@ svelte mcp server is running.
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
 ---
+
 The following is from a previous session which was terminated due to session limit. Can you continue what you were doing?
 
+You created ai-docs/implementation/uttrykk-gate.md.
+
+Let's implement both phases. First, the new gating module:Now remove the now-obsolete `a1/uttrykk`, `a2/uttrykk`, `b1/uttrykk`, `b2/uttrykk` entries from `PLUS_CATEGORIES`:Now update the flashcard route's gating logic:Now the main markup change — remove the whole-section lock, add per-pill locking:Let's check for other places that assumed `uttrykk` was fully Plus-gated via `isPlusCategory`, to make sure nothing else breaks:
+
 ---
 
-No long paragraphs, academic-style explanations, and walls of text. Users on a learning app want quick, scannable answers, not essays.
----
+## No long paragraphs, academic-style explanations, and walls of text. Users on a learning app want quick, scannable answers, not essays.
 
 You should be able to use Edit_File. Use Edit_File when you are modifying a large file.
 Please do not use Write_file, it takes time. Instead can you write a script to update file(s) rather than rewrite whole file(s)? I can run the script locally and in that way, the session limit won't be over-used.
