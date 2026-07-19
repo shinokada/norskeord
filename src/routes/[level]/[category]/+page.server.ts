@@ -4,6 +4,7 @@ import type { VocabEntry } from '$lib/types';
 import { CATEGORIES_BY_LEVEL } from '$lib/config';
 import { isPlusCategory } from '$lib/access';
 import { isFreeUttrykkTheme } from '$lib/uttrykk-gating';
+import { uttrykkCCategoryCounts } from '$lib/uttrykk-c-stats';
 import type { CEFRLevel } from '$lib/types';
 import type { UttrykkThemeLevel } from '$lib/config';
 import type { MetaProps } from 'runes-meta-tags';
@@ -127,6 +128,61 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
             : null;
         })()
       : null;
+
+  // C's Uttrykk hub pills reuse this same /{level}/{category} page (see
+  // Phase 8 — C has no separate uttrykk route, its idioms are merged into
+  // the matching vocab category), so a click there and a click on the
+  // Vocabulary pill for the same category land on an identical URL. Without
+  // a marker, prevCategory/nextCategory above (built from the level's full,
+  // alphabetical CATEGORIES_BY_LEVEL order) silently take over regardless of
+  // which section the visitor actually came from — e.g. "Interpersonal
+  // Conflict", reached via its Uttrykk pill (sorted by entry count, matching
+  // the hub), would step Next into "Intensifiers Degree" (its alphabetical
+  // vocab neighbour) instead of "Character Temperament" (its Uttrykk-count
+  // neighbour) — the same class of bug fixed earlier for A1–B2's uttrykk
+  // theme nav. The hub tags its C Uttrykk pills with `?from=uttrykk` so this
+  // page can tell the two entry points apart and switch the nav sequence.
+  let prevCategoryFinal = prevCategory;
+  let nextCategoryFinal = nextCategory;
+  let nextLockedFinal = nextLocked;
+
+  if (levelUpper === 'C' && url.searchParams.get('from') === 'uttrykk') {
+    const uttrykkCList = [...uttrykkCCategoryCounts().entries()]
+      .map(([theme, count]) => ({ theme, count }))
+      .sort((a, b) => b.count - a.count);
+    const uttrykkCVisible = isPlus
+      ? uttrykkCList
+      : uttrykkCList.filter((t) => !isPlusCategory(level, t.theme));
+
+    const cIdx = uttrykkCVisible.findIndex((t) => t.theme === category);
+    const cPrev = cIdx > 0 ? uttrykkCVisible[cIdx - 1] : null;
+    const cNext =
+      cIdx !== -1 && cIdx < uttrykkCVisible.length - 1 ? uttrykkCVisible[cIdx + 1] : null;
+
+    prevCategoryFinal = cPrev
+      ? {
+          slug: cPrev.theme,
+          label: removeHyphensAndCapitalize(cPrev.theme),
+          href: `/${level.toLowerCase()}/${cPrev.theme}?from=uttrykk`
+        }
+      : null;
+    nextCategoryFinal = cNext
+      ? {
+          slug: cNext.theme,
+          label: removeHyphensAndCapitalize(cNext.theme),
+          href: `/${level.toLowerCase()}/${cNext.theme}?from=uttrykk`
+        }
+      : null;
+    nextLockedFinal =
+      !isPlus && !cNext
+        ? (() => {
+            const lockedCount = uttrykkCList.length - uttrykkCVisible.length;
+            return lockedCount > 0
+              ? { count: lockedCount, href: '/plus?ref=uttrykk-c-nav-end' }
+              : null;
+          })()
+        : null;
+  }
 
   // Build shared meta
   const ogImage = `https://norskeord.no/og/deck/${level.toLowerCase()}/${category}.png`;
@@ -356,9 +412,9 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     category,
     themes: [] as { theme: string; count: number }[],
     selectedTheme: null as string | null,
-    prevCategory,
-    nextCategory,
-    nextLocked,
+    prevCategory: prevCategoryFinal,
+    nextCategory: nextCategoryFinal,
+    nextLocked: nextLockedFinal,
     pageMetaTags,
     learningResourceSchema
   };
