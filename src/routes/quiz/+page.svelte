@@ -71,10 +71,11 @@
       ? data.allEntries.filter((e: { level: string }) => e.level === selectedLevel)
       : data.allEntries;
 
-    // Exclude uttrykk-preview from the quiz category list (flashcard-only)
-    return [...new Set(src.map((e: { category: string }) => e.category))]
-      .filter((c) => c !== 'uttrykk-preview')
-      .sort() as string[];
+    // (No uttrykk-preview filter needed here — quiz's data pool never loads
+    // the preview files to begin with, see quiz/+page.ts's vocabLoaders,
+    // and the preview deck itself was retired in Phase 3 of
+    // ai-docs/implementation/uttrykk-gate.md.)
+    return [...new Set(src.map((e: { category: string }) => e.category))].sort() as string[];
   });
 
   // Free users: categories visible in the picker for the selected level
