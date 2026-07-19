@@ -6,7 +6,6 @@
   type DraftEntry = VocabEntry & { _status?: 'added' | 'edited' | 'deleted'; _key: string };
 
   type UttrykkLevel = 'A1' | 'A2' | 'B1' | 'B2';
-  type DeckType = 'full' | 'preview';
 
   const LEVELS: UttrykkLevel[] = ['A1', 'A2', 'B1', 'B2'];
   const PARTS: PartOfSpeech[] = ['phrase', 'noun', 'verb', 'adjective', 'adverb', 'interjection'];
@@ -14,7 +13,6 @@
   // ── State ────────────────────────────────────────────────────────────────────
 
   let selectedLevel = $state<UttrykkLevel>('A1');
-  let deckType = $state<DeckType>('full');
   let published = $state<VocabEntry[]>([]);
   let draft = $state<DraftEntry[]>([]);
   let reviewed = $state<ReviewState['uttrykk']>({});
@@ -39,8 +37,6 @@
 
   const isDirty = $derived(draft.some((e) => e._status));
   const changeCount = $derived(draft.filter((e) => e._status).length);
-
-  const apiLevel = $derived(deckType === 'preview' ? `${selectedLevel}-PREVIEW` : selectedLevel);
 
   const reviewedCount = $derived(
     draft.filter((e) => e._status !== 'deleted' && reviewed[reviewKey(e)]).length
@@ -67,8 +63,9 @@
   // ── Helpers ──────────────────────────────────────────────────────────────────
 
   function reviewKey(e: Pick<VocabEntry, 'level' | 'norsk'>): string {
-    // Include deck type so full and preview entries don't share review state
-    return `${e.level}:${deckType}:${e.norsk}`;
+    // 'full' kept in the key for backwards compatibility with previously stored review state
+    // (preview-deck editing has been retired — see admin/uttrykk/+page.svelte history).
+    return `${e.level}:full:${e.norsk}`;
   }
 
   function makeKey(e: VocabEntry, index: number): string {
@@ -83,7 +80,7 @@
       example: '',
       example_english: '',
       level: selectedLevel,
-      category: deckType === 'preview' ? 'uttrykk-preview' : 'uttrykk',
+      category: 'uttrykk',
       part: 'phrase'
     };
   }
@@ -102,7 +99,7 @@
     searchQuery = '';
     try {
       const [uttrykkRes, reviewRes] = await Promise.all([
-        fetch(`/admin/uttrykk/api?level=${apiLevel}`),
+        fetch(`/admin/uttrykk/api?level=${selectedLevel}`),
         fetch('/admin/review-state/api')
       ]);
       if (!uttrykkRes.ok) throw new Error(`Failed to load: ${uttrykkRes.status}`);
@@ -121,10 +118,9 @@
     }
   }
 
-  async function switchTo(level: UttrykkLevel, deck: DeckType) {
-    if (isDirty && !confirm('You have unpublished changes. Switch deck and lose them?')) return;
+  async function switchTo(level: UttrykkLevel) {
+    if (isDirty && !confirm('You have unpublished changes. Switch level and lose them?')) return;
     selectedLevel = level;
-    deckType = deck;
     await load();
   }
 
@@ -228,7 +224,7 @@
     publishing = true;
     publishMessage = null;
     try {
-      const res = await fetch(`/admin/uttrykk/api?level=${apiLevel}`, {
+      const res = await fetch(`/admin/uttrykk/api?level=${selectedLevel}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(draft)
@@ -273,40 +269,25 @@
   <a href="/admin" class="text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; Admin</a>
   <h1 class="mt-2 text-2xl font-bold dark:text-white">Uttrykk</h1>
 
-  <!-- Level + deck tabs -->
+  <!-- Level tabs -->
   <div class="mt-4 flex flex-wrap gap-2">
     {#each LEVELS as lvl (lvl)}
-      <div class="flex overflow-hidden rounded border border-gray-300 dark:border-gray-600">
-        <button
-          class={[
-            'px-3 py-1.5 text-sm font-semibold',
-            selectedLevel === lvl && deckType === 'full'
-              ? 'bg-blue-600 text-white'
-              : 'hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800'
-          ].join(' ')}
-          onclick={() => switchTo(lvl, 'full')}
-        >
-          {lvl}
-        </button>
-        <button
-          class={[
-            'border-l border-gray-300 px-3 py-1.5 text-xs font-medium dark:border-gray-600',
-            selectedLevel === lvl && deckType === 'preview'
-              ? 'bg-blue-600 text-white'
-              : 'hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800'
-          ].join(' ')}
-          onclick={() => switchTo(lvl, 'preview')}
-        >
-          preview
-        </button>
-      </div>
+      <button
+        class={[
+          'rounded border border-gray-300 px-3 py-1.5 text-sm font-semibold dark:border-gray-600',
+          selectedLevel === lvl
+            ? 'bg-blue-600 text-white'
+            : 'hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800'
+        ].join(' ')}
+        onclick={() => switchTo(lvl)}
+      >
+        {lvl}
+      </button>
     {/each}
   </div>
 
   <p class="mt-1 text-xs text-gray-400">
-    Editing: <span class="font-mono"
-      >uttrykk-{selectedLevel.toLowerCase()}{deckType === 'preview' ? '-preview' : ''}.json</span
-    >
+    Editing: <span class="font-mono">uttrykk-{selectedLevel.toLowerCase()}.json</span>
   </p>
 
   {#if loading}
@@ -593,10 +574,10 @@
           <span class="block font-medium dark:text-gray-200">Category</span>
           <input
             type="text"
-            bind:value={modal.entry.category}
-            class="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+            value="uttrykk"
+            disabled
+            class="mt-1 w-full rounded border border-gray-300 bg-gray-100 px-2 py-1 text-sm text-gray-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400"
           />
-          <span class="text-xs text-gray-400">uttrykk or uttrykk-preview</span>
         </label>
       </div>
 

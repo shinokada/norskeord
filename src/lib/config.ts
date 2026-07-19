@@ -26,8 +26,7 @@ export const CATEGORIES_BY_LEVEL = {
     'places',
     'clothes',
     'actions',
-    'uttrykk',
-    'uttrykk-preview'
+    'uttrykk'
   ],
   A2: [
     'shopping',
@@ -50,8 +49,7 @@ export const CATEGORIES_BY_LEVEL = {
     'technology',
     'environment',
     'money',
-    'uttrykk',
-    'uttrykk-preview'
+    'uttrykk'
   ],
   B1: [
     'travel',
@@ -86,8 +84,7 @@ export const CATEGORIES_BY_LEVEL = {
     'politics',
     'language-learning',
     'healthcare',
-    'uttrykk',
-    'uttrykk-preview'
+    'uttrykk'
   ],
   B2: [
     'politics',
@@ -121,8 +118,7 @@ export const CATEGORIES_BY_LEVEL = {
     'work-career',
     'relationships',
     'communication',
-    'uttrykk',
-    'uttrykk-preview'
+    'uttrykk'
   ],
   C: [
     'philosophy',
@@ -200,8 +196,8 @@ export const UTTRYKK_CATCHALL_THEME = 'general' as const;
 
 /**
  * Per-level set of allowed `theme` values: that level's real vocab category
- * slugs (minus `uttrykk`/`uttrykk-preview` themselves, which are `category`
- * values, not themes) plus the fixed functional themes plus the catch-all.
+ * slugs (minus `uttrykk` itself, which is a `category` value, not a theme)
+ * plus the fixed functional themes plus the catch-all.
  * `Set` dedupes cases like B2, where `discourse-markers` is both a topical
  * category and a functional theme.
  *
@@ -211,9 +207,10 @@ export const UTTRYKK_CATCHALL_THEME = 'general' as const;
 export const UTTRYKK_THEMES_BY_LEVEL: Record<UttrykkThemeLevel, readonly string[]> =
   UTTRYKK_THEME_LEVELS.reduce(
     (acc, level) => {
-      const topical = CATEGORIES_BY_LEVEL[level].filter(
-        (c) => c !== 'uttrykk' && c !== 'uttrykk-preview'
-      );
+      // 'uttrykk-preview' is retired (ai-docs/implementation/uttrykk-gate.md
+      // Phase 3) and no longer a real CATEGORIES_BY_LEVEL member, so only
+      // 'uttrykk' itself needs excluding here.
+      const topical = CATEGORIES_BY_LEVEL[level].filter((c) => c !== 'uttrykk');
       acc[level] = [...new Set([...topical, ...UTTRYKK_FUNCTIONAL_THEMES, UTTRYKK_CATCHALL_THEME])];
       return acc;
     },
@@ -270,7 +267,7 @@ export const PLUS_CATEGORIES = new Set<string>([
   'b1/politics',
   'b1/language-learning',
   'b1/healthcare',
-  // B2 — plus-only (28 vocab + full uttrykk)
+  // B2 — plus-only (28 vocab; uttrykk gated per-theme, see below)
   'b2/arts',
   'b2/emotions',
   'b2/history',
@@ -298,11 +295,11 @@ export const PLUS_CATEGORIES = new Set<string>([
   'b2/work-career',
   'b2/relationships',
   'b2/communication',
-  'b2/uttrykk',
-  // uttrykk — full decks are Plus-only; preview is free
-  'a1/uttrykk',
-  'a2/uttrykk',
-  'b1/uttrykk',
+  // Full uttrykk decks are gated per-theme, not per-category — see
+  // src/lib/uttrykk-gating.ts / ai-docs/implementation/uttrykk-gate.md.
+  // Free users can study FREE_UTTRYKK_THEMES in full; everything else
+  // requires Plus, enforced in [level]/[category]/+page.server.ts rather
+  // than here.
   // C — first 5 free; rest plus-only.
   // Generated from CATEGORIES_BY_LEVEL.C (instead of hand-listed) so newly
   // added C categories are automatically gated instead of silently leaking

@@ -29,6 +29,15 @@ export const GET: RequestHandler = async () => {
     for (const cat of cats) {
       // Skip Plus-only categories
       if (PLUS_CATEGORIES.has(`${level}/${cat}`)) continue;
+      // Skip the full uttrykk deck route itself — it's gated per-theme now
+      // (see ai-docs/implementation/uttrykk-gate.md Phase 1), so it's no
+      // longer in PLUS_CATEGORIES, but /{level}/uttrykk with no ?theme=
+      // still redirects free users (and crawlers) to /plus. A sitemap entry
+      // can't carry a ?theme= query param, so there's no URL for this slug
+      // that both (a) matches what's actually in the sitemap param list and
+      // (b) never redirects for a logged-out crawler — omit it, same as it
+      // was omitted (via the PLUS_CATEGORIES check) before this change.
+      if (cat === 'uttrykk') continue;
       levelCategoryPairs.push([level, cat]);
     }
   }
