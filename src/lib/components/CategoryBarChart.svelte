@@ -12,9 +12,9 @@
   // (ai-docs/implementation/uttrykk-category.md), it now has its own
   // dedicated Uttrykk section on /stats with a theme-level breakdown
   // (UttrykkThemeChart.svelte). This chart is vocab-only, matching
-  // CATEGORIES_BY_LEVEL minus the uttrykk/uttrykk-preview slugs — and, for C,
-  // minus any studied entry that's actually sourced from uttrykk-c.json (see
-  // the allCards filter below and uttrykk-c-stats.ts).
+  // CATEGORIES_BY_LEVEL minus the uttrykk slug — and, for C, minus any
+  // studied entry that's actually sourced from uttrykk-c.json (see the
+  // allCards filter below and uttrykk-c-stats.ts).
   import vocabA1 from '$lib/data/vocab-a1.json';
   import vocabA2 from '$lib/data/vocab-a2.json';
   import vocabB1 from '$lib/data/vocab-b1.json';
@@ -97,11 +97,13 @@
       const now = new Date();
       const lvl = level.toLowerCase();
 
-      // 'uttrykk'/'uttrykk-preview' are excluded — they belong to the
-      // separate Uttrykk section's theme breakdown instead (see the
-      // header comment above). C never had either slug to begin with.
+      // 'uttrykk' is excluded — it belongs to the separate Uttrykk
+      // section's theme breakdown instead (see the header comment above).
+      // C never had that slug to begin with. ('uttrykk-preview' was
+      // retired in Phase 3 of ai-docs/implementation/uttrykk-gate.md and is
+      // no longer a real category slug here.)
       const cats: CatBarStat[] = CATEGORIES_BY_LEVEL[level]
-        .filter((c) => c !== 'uttrykk' && c !== 'uttrykk-preview')
+        .filter((c) => c !== 'uttrykk')
         .map((category): CatBarStat => {
           const catCards = allCards.filter((c) => c.level === level && c.category === category);
           return buildStat(
