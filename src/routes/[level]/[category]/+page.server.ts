@@ -260,8 +260,11 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     // adjacent theme pill instead. Free users only ever step through free
     // themes here, mirroring how visibleCats above excludes locked vocab
     // categories for them.
-    const { major: uttrykkMajor, minor: uttrykkMinor, othersCount } =
-      partitionUttrykkThemes(themes);
+    const {
+      major: uttrykkMajor,
+      minor: uttrykkMinor,
+      othersCount
+    } = partitionUttrykkThemes(themes);
     const uttrykkThemeList: { theme: string; count: number }[] = [...uttrykkMajor];
     if (uttrykkMinor.length > 0) {
       uttrykkThemeList.push({ theme: UTTRYKK_OTHERS_THEME, count: othersCount });
