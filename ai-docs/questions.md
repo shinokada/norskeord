@@ -10,9 +10,6 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 The following is from a previous session which was terminated due to session limit. Can you continue what you were doing?
 
-You created ai-docs/implementation/uttrykk-gate.md.
-
-Let's implement both phases. First, the new gating module:Now remove the now-obsolete `a1/uttrykk`, `a2/uttrykk`, `b1/uttrykk`, `b2/uttrykk` entries from `PLUS_CATEGORIES`:Now update the flashcard route's gating logic:Now the main markup change — remove the whole-section lock, add per-pill locking:Let's check for other places that assumed `uttrykk` was fully Plus-gated via `isPlusCategory`, to make sure nothing else breaks:
 
 ---
 
