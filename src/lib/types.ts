@@ -202,10 +202,7 @@ export interface GrammarRule {
 export interface GrammarQuestion {
   id: string; // stable key for FSRS, e.g. 'gq-ikke-001'
   topic: GrammarTopic;
-  cefr: CEFRLevel; // PRIMARY level — drives the free-tier budget + FSRS progress bucket
-  // Optional multi-level tag for display/filtering. A grammar point often spans
-  // bands (e.g. ["B2","C1"]). Defaults to [cefr] when absent — see questionLevels().
-  levels?: CEFRLevel[];
+  cefr: CEFRLevel; // level — drives the free-tier budget + FSRS progress bucket + /stats grouping
   type: 'fill' | 'order' | 'transform' | 'minimal-pair' | 'multiple-choice';
   // Per-question instruction shown above the stimulus, e.g.
   // "Embed in: «Jeg tror at …»" or "Translate into Norwegian:".

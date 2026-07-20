@@ -224,11 +224,11 @@ describe('freeGrammarQuestionIds', () => {
 // ── questionLevels / topicLevels ──────────────────────────────────────────────
 
 describe('questionLevels', () => {
-  it('returns the levels array when present', () => {
-    expect(questionLevels(makeQuestion({ cefr: 'B2', levels: ['B2', 'C'] }))).toEqual(['B2', 'C']);
+  it("always returns a single-item array of the question's cefr", () => {
+    expect(questionLevels(makeQuestion({ cefr: 'B2' }))).toEqual(['B2']);
   });
 
-  it('falls back to [cefr] when levels is absent', () => {
+  it('reflects cefr for every level', () => {
     expect(questionLevels(makeQuestion({ cefr: 'A2' }))).toEqual(['A2']);
   });
 });
@@ -237,10 +237,10 @@ describe('topicLevels', () => {
   it('returns the sorted, de-duplicated CEFR span of a question list', () => {
     const qs = [
       makeQuestion({ id: 'a', cefr: 'A2' }),
-      makeQuestion({ id: 'b', cefr: 'B2', levels: ['B2', 'C'] }),
+      makeQuestion({ id: 'b', cefr: 'C' }),
       makeQuestion({ id: 'c', cefr: 'B1' })
     ];
-    expect(topicLevels(qs)).toEqual(['A2', 'B1', 'B2', 'C']);
+    expect(topicLevels(qs)).toEqual(['A2', 'B1', 'C']);
   });
 });
 

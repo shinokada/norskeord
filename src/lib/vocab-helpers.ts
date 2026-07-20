@@ -28,9 +28,10 @@ export function getExampleTranslation(
 
 const CEFR_ORDER: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
 
-/** The CEFR levels a question is tagged with — its `levels` array, or `[cefr]`. */
+/** The CEFR level a question is tagged with, as a single-item array (kept for
+ * callers that aggregate across multiple questions, e.g. topicLevels). */
 export function questionLevels(q: GrammarQuestion): CEFRLevel[] {
-  return q.levels && q.levels.length ? q.levels : [q.cefr];
+  return [q.cefr];
 }
 
 /**

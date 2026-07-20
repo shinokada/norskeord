@@ -102,6 +102,13 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
   const prevSlug = idx > 0 ? visibleCats[idx - 1] : null;
   const nextSlug = idx !== -1 && idx < visibleCats.length - 1 ? visibleCats[idx + 1] : null;
 
+  // C's Uttrykk hub pills link to this same /{level}/{category} page (see
+  // Phase 8 — C has no separate uttrykk route, its idioms are merged into
+  // the matching vocab category), so this one boolean drives two things
+  // below: which prev/next sequence to use, and whether to show the
+  // "came from Uttrykk" breadcrumb on the page itself.
+  const fromUttrykk = levelUpper === 'C' && url.searchParams.get('from') === 'uttrykk';
+
   const prevCategory = prevSlug
     ? {
         slug: prevSlug,
@@ -146,7 +153,7 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
   let nextCategoryFinal = nextCategory;
   let nextLockedFinal = nextLocked;
 
-  if (levelUpper === 'C' && url.searchParams.get('from') === 'uttrykk') {
+  if (fromUttrykk) {
     const uttrykkCList = [...uttrykkCCategoryCounts().entries()]
       .map(([theme, count]) => ({ theme, count }))
       .sort((a, b) => b.count - a.count);
@@ -372,6 +379,7 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
       prevCategory: uttrykkPrevCategory,
       nextCategory: uttrykkNextCategory,
       nextLocked: uttrykkNextLocked,
+      uttrykkContext: null,
       pageMetaTags,
       learningResourceSchema
     };
@@ -389,6 +397,7 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
       prevCategory,
       nextCategory,
       nextLocked,
+      uttrykkContext: null,
       pageMetaTags,
       learningResourceSchema
     };
@@ -400,10 +409,21 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
   // C has no separate uttrykk route (see uttrykkCLoader above) — merge in
   // any uttrykk-c.json entries tagged with this category so they appear
   // alongside regular vocab entries for the same topic.
+  let uttrykkContext: { count: number; backHref: string } | null = null;
   if (level.toLowerCase() === 'c') {
     const uttrykkC = await uttrykkCLoader();
     const uttrykkEntries = uttrykkC.default.filter((e) => e.category === category);
     entries = [...entries, ...uttrykkEntries];
+
+    // Only show the "came from Uttrykk" breadcrumb when that's actually how
+    // the visitor got here — a plain Vocabulary-pill visit shouldn't
+    // advertise idiom content the visitor didn't ask about.
+    if (fromUttrykk && uttrykkEntries.length > 0) {
+      uttrykkContext = {
+        count: uttrykkEntries.length,
+        backHref: `/learn/${level.toLowerCase()}#uttrykk`
+      };
+    }
   }
 
   return {
@@ -415,6 +435,7 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     prevCategory: prevCategoryFinal,
     nextCategory: nextCategoryFinal,
     nextLocked: nextLockedFinal,
+    uttrykkContext,
     pageMetaTags,
     learningResourceSchema
   };

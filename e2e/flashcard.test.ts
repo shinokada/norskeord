@@ -95,6 +95,68 @@ test('free user is redirected from C linguistics to /plus', async ({ page }) => 
   await expect(page).toHaveURL(/\/plus/);
 });
 
+// Phase 9 (ai-docs/implementation/uttrykk-category.md): the virtual
+// "study all" deck over every uttrykk-c.json entry. Same Plus-gating
+// pattern as any other C category (see the linguistics test above), but
+// applied to the whole route rather than a single category slug.
+//
+// fixme: unlike /c/philosophy above (free-tier-accessible, no server
+// redirect), /c/uttrykk has no free slice at all — every request hits the
+// real `redirect(302, ...)` in +page.server.ts based on locals.plan, which
+// is derived server-side from an actual Supabase subscriptions-table
+// lookup (see hooks.server.ts). injectPlusPlan/injectLoggedInUser only
+// patch the HTML/__data.json *after* the real server response comes back,
+// so they can't prevent this redirect — the fake plan never has a chance
+// to matter. No seeded Plus test account exists in this e2e suite
+// (playwright.config.ts has no auth setup), so this is untestable today.
+// Re-enable once a real Plus test session mechanism exists.
+test.fixme('Plus member C uttrykk page loads and shows cards', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/c/uttrykk');
+
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Uttrykk');
+
+  // card counter is visible (format: "1/N") — wait for deck to build after onMount
+  await expect(page.getByText(/^\d+\/\d+$/)).toBeVisible({ timeout: 10000 });
+
+  // flip the card and confirm FSRS rating buttons appear
+  const flipCard = page.getByRole('button', { name: /flashcard showing question/i });
+  await expect(flipCard).toBeVisible({ timeout: 10000 });
+  await flipCard.click({ force: true });
+  await expect(page.getByRole('button', { name: /again|igjen|gjenta/i })).toBeVisible({
+    timeout: 10000
+  });
+});
+
+test('free user is redirected from C uttrykk to /plus', async ({ page }) => {
+  await page.goto('/c/uttrykk');
+  await page.waitForURL(/\/plus/, { timeout: 10000 });
+  await expect(page).toHaveURL(/\/plus/);
+});
+
+// fixme: same root cause as the test above — the breadcrumb only renders
+// once entries.length > 0, which requires the real Plus gate to pass.
+test.fixme('C uttrykk page links back to the /learn/c hub', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/c/uttrykk');
+  await expect(page.getByRole('link', { name: /back to uttrykk/i })).toHaveAttribute(
+    'href',
+    '/learn/c#uttrykk'
+  );
+});
+
+// /learn/c's Uttrykk section total-count line is a Phase 9 addition — it
+// used to be plain, unlinked text (see uttrykk-category.md Phase 8) since
+// there was no single C uttrykk deck to link to. Visible for every user
+// regardless of plan; only clicking it hits the Plus gate above.
+test('learn/c hub links to /c/uttrykk from the Uttrykk section', async ({ page }) => {
+  await page.goto('/learn/c');
+  await expect(page.getByRole('link', { name: /fixed expressions/i })).toHaveAttribute(
+    'href',
+    '/c/uttrykk'
+  );
+});
+
 test('about page has expected h1', async ({ page }) => {
   await page.goto('/about');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Guide to Norskeord');
