@@ -760,6 +760,87 @@ and Uttrykk, on every level (A1–C), not just C.
   UX decision — easy to retune later if a level's pill row still feels too
   long or collapses too eagerly.
 
+## Phase 9 — Virtual `/c/uttrykk` deck (no data/category changes) ✅ Done
+
+**Status: implemented, pending `pnpm check`/manual verification.**
+
+Follow-up to Phase 4/7/8, prompted by comparing C to A1–B2's `/{level}/uttrykk`
+route. C has no single "study all uttrykk" deck — Phase 4's read-time merge
+puts each of the 559 `uttrykk-c.json` entries on its matching `c/{category}`
+vocab page instead, so idioms/proverbs only ever show up mixed into a
+topical deck, never as their own drillable set.
+
+**Decided in conversation before implementation:** don't revert or touch
+Phase 4's merge, don't add a `theme` field to C, don't reclassify any
+`uttrykk-c.json` entry's `category` back to a generic `"uttrykk"` sentinel —
+all three were considered and rejected as reintroducing the exact
+data-integrity problem Phase 4's Status section already documents
+reverting once (folding phrase-part entries into a vocab-shaped bucket).
+Instead, add a **virtual, read-only filter route** that pulls every
+`uttrykk-c.json` entry regardless of category, purely at the routing layer:
+
+- `uttrykk-c.json` and `vocab-c.json` are both completely untouched — no
+  `category` reassignment, no new field, no `CATEGORIES_BY_LEVEL.C` entry.
+  The Phase 4 merge (idioms appearing inside `c/{category}` pages) keeps
+  working exactly as it does today; this is additive, not a replacement.
+- New route `src/routes/c/uttrykk/+page.server.ts` (+ `+page.svelte`, reusing
+  `VocabFlashcardPage.svelte` the same way every other `[level]/[category]`
+  route does) loads `uttrykk-c.json` wholesale (mirrors the existing
+  `uttrykkCLoader` already used by the Phase 4 merge — same data source, new
+  consumer) and passes the full 559-entry array in, no `category` filtering,
+  no `?theme=` param (C's categories already function as the fine-grained
+  browse dimension via the existing `c/{category}` pages — this route is
+  deliberately flat, matching what "study all" means on A1–B2's
+  `/{level}/uttrykk` before any theme filter is applied).
+- Gating: same Plus lock as every other C category (`.slice(5)` free-preview
+  pattern) — reuse whatever gating check the existing `c/{category}` route
+  uses rather than inventing a new one, since this is the same content,
+  just a different grouping.
+- Progress: no changes needed anywhere. `CardProgress` keys off `vocab_id`/
+  `norsk` (`vocabKey()` in `progress.ts`), not the route a card was studied
+  from, so a card reviewed via `/c/uttrykk` and the same card reviewed via
+  `/c/{category}` are one FSRS record, not two. `UTTRYKK_C_KEYS` (Phase 7's
+  `uttrykk-c-stats.ts`) already recognizes every one of these ids, so
+  `/stats`' vocab/uttrykk split keeps working with zero changes to that
+  module.
+
+### Two link-target updates (cosmetic, not structural)
+
+Both existing routes originally routed around the fact that no C-wide uttrykk
+deck existed:
+
+1. **`learn/c` (`src/routes/learn/[level]/+page.svelte`, Section 2b):** done.
+   The Phase 8 C-branch previously rendered a plain-text expressions count
+   (no link, since there was nothing to link to). It's now a link to
+   `/c/uttrykk`, matching how A1–B2's total-count line already links to
+   `/{level}/uttrykk` (Phase 3b). The per-category pills underneath are
+   unchanged — still linking to `/c/{category}` each, so both entry points
+   coexist.
+2. **`stats/+page.svelte`'s C per-level summary card:** turned out to be a
+   non-issue on inspection — the `/learn/c` link Phase 7 originally
+   documented for this card no longer exists in the codebase. The
+   stats-page-improvement.md Phase 3 tabs rewrite (done earlier, separately
+   from this doc) replaced the old per-level linked-card list with the
+   current tab UI, and the active-level Uttrykk summary block is now a
+   plain, unlinked div. Nothing to change here. The `uttrykkThemeStatsForLevel()`
+   per-category row breakdown in `stats.ts` (rendered via `LevelStatRows`)
+   still correctly links each C row to `/c/{category}` — also untouched,
+   also correct as-is.
+
+No other files in Phase 5/6/7's stats split need touching — `vocabCards`/
+`uttrykkCards`, `UTTRYKK_C_KEYS`, and `uttrykkCCategoryCounts()` are all
+keyed off card identity, not route, so they're already correct for cards
+studied via the new route.
+
+### Non-goal
+
+**Not** parity with A1–B2's `?theme=` query-param filtering. A1–B2 needed
+`?theme=` because their single `uttrykk` bucket has no other internal
+structure; C's internal structure is its 37 real categories, already
+browsable via the existing `c/{category}` pages, so `/c/uttrykk` only needs
+to answer "give me all of them, unfiltered" — the same thing A1–B2's route
+answers before any theme filter is applied.
+
 ## Rollout order
 
 Phase 4 (C) had no dependency on Phases 1–3 and shipped first, as a pure

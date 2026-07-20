@@ -6,10 +6,9 @@ svelte mcp server is running.
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
----
+I'm working on ai-docs/implementation/stats-page-improvement.md.
 
 The following is from a previous session which was terminated due to session limit. Can you continue what you were doing?
-
 
 ---
 

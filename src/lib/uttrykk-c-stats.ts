@@ -1,8 +1,9 @@
 // src/lib/uttrykk-c-stats.ts
-// Shared by /stats components (CategoryBarChart.svelte, UttrykkThemeChart.svelte,
-// stats/+page.svelte) so C-level uttrykk progress can be split out from vocab
-// progress consistently with A1–B2, even though C's data model has no
-// category: 'uttrykk' sentinel or theme field to filter on.
+// Shared by /stats (stats.ts and stats/+page.svelte; formerly also the now-
+// removed CategoryBarChart.svelte / UttrykkThemeChart.svelte) so C-level
+// uttrykk progress can be split out from vocab progress consistently with
+// A1–B2, even though C's data model has no category: 'uttrykk' sentinel or
+// theme field to filter on.
 //
 // Phase 4 (ai-docs/implementation/uttrykk-category.md) merges uttrykk-c.json's
 // 559 entries into the matching c/{category} vocab pages at read time, so a

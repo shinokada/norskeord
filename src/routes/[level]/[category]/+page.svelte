@@ -63,6 +63,32 @@
         Study all
       </a>
     </div>
+  {:else if data.uttrykkContext}
+    <!-- Phase 8 (ai-docs/implementation/uttrykk-category.md): C has no
+         separate uttrykk deck — this page is the same combined vocab+idiom
+         category deck whether reached via the Vocabulary pill or the
+         Uttrykk pill, so unlike the A1–B2 breadcrumb above it can't say
+         "Studying: {theme}" (there's no filter applied). It notes how many
+         of the cards are idioms and links back to the hub's Uttrykk section,
+         so a visitor who arrived via that pill still gets a "you're in
+         Uttrykk territory" cue instead of a plain, indistinguishable
+         Vocabulary page. -->
+    <div
+      class="mx-auto mt-4 flex w-full max-w-lg items-center justify-center gap-2 px-2 text-sm text-gray-600 dark:text-gray-300"
+    >
+      <span
+        >💬 Includes <strong class="font-semibold text-gray-800 dark:text-gray-100"
+          >{data.uttrykkContext.count} fixed expressions</strong
+        ></span
+      >
+      <span aria-hidden="true">·</span>
+      <a
+        href={data.uttrykkContext.backHref}
+        class="font-medium text-indigo-600 hover:underline dark:text-indigo-400"
+      >
+        Back to Uttrykk
+      </a>
+    </div>
   {/if}
   <VocabFlashcardPage
     entries={data.entries}
