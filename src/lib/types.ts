@@ -164,6 +164,26 @@ export type GrammarTopic =
   | 'helsetninger' // main clause structure: declarative, questions, ikke, det-subject
   | 'preposisjoner-tid' // time prepositions: i, om, for–siden, på, til
   | 'preposisjoner-sted' // place & relation prepositions: i/på, geography, hos/ved/til/fra, av/fra, compounds
+  // Nivå A1 topics (free) — see ai-docs/implementation/a1-quiz-and-grammar.md
+  | 'personlige-pronomen' // subject pronouns jeg/du/han/hun/vi/dere/de
+  | 'presens-verb' // regular presens (-er) conjugation
+  | 'pronomen-objektsform' // object pronouns meg/deg/ham/henne/oss/dere/dem
+  | 'og-men' // og (addition) vs men (contrast)
+  | 'adverb-sted-hjem' // inne/ute, inn/ut, hjem/hjemme
+  | 'refleksive-uttrykk' // reflexive verb+pronoun pattern: legge seg, like seg
+  | 'infinitiv-a1' // bare infinitive after modals vs. «å» after like/pleie/prøve
+  | 'substantiv-bestemt-form' // definite singular noun endings: -en/-a/-et
+  | 'pronomen-den-det-de' // den/det/de referring back to a noun
+  | 'denne-dette-disse' // demonstratives denne/dette/disse
+  | 'imperativ' // imperative = verb stem, no subject, no -r ending
+  | 'possessiver-min-din' // min/din/hans/hennes/vår/deres, post-nominal in spoken Norwegian
+  | 'refleksivt-possessiv-sin' // sin/sitt/sine vs. hans/hennes
+  | 'ja-jo' // jo — contradicting a negative question/statement, vs. plain ja
+  | 'preteritum-a1' // regular preteritum + common irregular verbs (var, hadde, gikk)
+  | 'for-a-fordi' // «for å» + infinitive (purpose) vs. «fordi» + clause (cause)
+  | 'vaer-det-subjekt' // impersonal/weather «det»: Det regner, Det blåser
+  | 'indirekte-tale-at-om' // reported statement with «at» vs. reported yes/no question with «om»
+  | 'synes-tror' // synes (opinion) vs. tror (belief/uncertainty)
   // Nivå C topics (Plus only) — see ai-docs/implementation/c-grammar.md
   | 'ubestemt-artikkel-c' // indefinite article — professions+adjective, uncountables, transport, uttrykk, optional article
   | 'substantiv-uttrykk-c' // noun forms inside fixed idioms (ta hånd om, stå til liv, gå som fot i hose)

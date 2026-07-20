@@ -351,6 +351,277 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Sammensatte preposisjoner: ved siden av, i nærheten av, i stedet for, på grunn av, ved hjelp av.'
   },
 
+  // ── Nivå A1 topics (free) ──────────────────────────────────────────────────────────────────
+
+  'personlige-pronomen': {
+    id: 'personlige-pronomen',
+    titleEn: 'Personal pronouns (subject form)',
+    titleNb: 'Personlige pronomen (subjektsform)',
+    explanationEn:
+      'Norwegian subject pronouns are jeg (I), du (you, sg.), han (he), hun (she), vi (we), ' +
+      'dere (you, pl.), and de (they). They replace a named subject and must match its person ' +
+      'and number: "Samira bor i Norge." → "Hun bor i Norge." "Boka og pennen ligger her." → ' +
+      '"De ligger her."',
+    explanationNb:
+      'Norske subjektspronomen er jeg, du, han, hun, vi, dere og de. De erstatter et navngitt ' +
+      'subjekt og må stemme med person og tall: "Samira bor i Norge." → "Hun bor i Norge." ' +
+      '"Boka og pennen ligger her." → "De ligger her."'
+  },
+
+  'presens-verb': {
+    id: 'presens-verb',
+    titleEn: 'Presens (present tense)',
+    titleNb: 'Presens',
+    explanationEn:
+      'Regular verbs add -r (or -er after a consonant) in presens, with ONE form for every ' +
+      'person: jeg/du/han/hun/vi/dere/de snakker. Unlike English, there is no extra "-s" for ' +
+      'third person singular and no separate continuous form — "snakker" alone covers both ' +
+      '"speaks" and "is speaking."',
+    explanationNb:
+      'Regelrette verb får -r (eller -er etter konsonant) i presens, med ÉN form for alle ' +
+      'personer: jeg/du/han/hun/vi/dere/de snakker. I motsetning til engelsk finnes det ingen ' +
+      'ekstra "-s" for tredje person entall, og ingen egen -ing-form.'
+  },
+
+  'pronomen-objektsform': {
+    id: 'pronomen-objektsform',
+    titleEn: 'Object pronouns',
+    titleNb: 'Pronomen: objektsform',
+    explanationEn:
+      'After a verb or a preposition, subject pronouns switch to their object form: jeg→meg, ' +
+      'du→deg, han→ham, hun→henne, vi→oss, dere→dere, de→dem. "Jeg liker deg." "Hun snakker med ' +
+      'ham." Note that dere stays the same in both forms.',
+    explanationNb:
+      'Etter et verb eller en preposisjon bytter subjektspronomen til objektsform: jeg→meg, ' +
+      'du→deg, han→ham, hun→henne, vi→oss, dere→dere, de→dem. "Jeg liker deg." "Hun snakker med ' +
+      'ham." Merk at dere er likt i begge former.'
+  },
+
+  'og-men': {
+    id: 'og-men',
+    titleEn: '«og» vs. «men»',
+    titleNb: '«og» og «men»',
+    explanationEn:
+      '«Og» joins two matching or additive ideas: "Hun bor i Oslo og jobber der." «Men» joins a ' +
+      'contrasting idea instead: "Hun bor i Oslo, men jobber i Bergen." Neither word changes the ' +
+      'word order of the clauses it joins.',
+    explanationNb:
+      '«Og» binder sammen to like eller supplerende ideer: "Hun bor i Oslo og jobber der." ' +
+      '«Men» binder sammen en motsetning: "Hun bor i Oslo, men jobber i Bergen." Ingen av dem ' +
+      'endrer ordstillingen i setningene de binder sammen.'
+  },
+
+  'adverb-sted-hjem': {
+    id: 'adverb-sted-hjem',
+    titleEn: 'Location vs. movement adverbs (inne/ute, inn/ut, hjem/hjemme)',
+    titleNb: 'Stedsadverb: inne/ute, inn/ut, hjem/hjemme',
+    explanationEn:
+      'Norwegian uses a different adverb form for BEING somewhere than for MOVING there: "Jeg er ' +
+      'ute" (I am outside) vs. "Jeg går ut" (I go/walk outside). The same pattern applies to ' +
+      'inne/inn and hjemme/hjem: "Vi er hjemme" vs. "Vi går hjem."',
+    explanationNb:
+      'Norsk bruker ulik adverbform for Å VÆRE et sted og Å BEVEGE SEG dit: "Jeg er ute" mot ' +
+      '"Jeg går ut." Samme mønster gjelder inne/inn og hjemme/hjem: "Vi er hjemme" mot "Vi går ' +
+      'hjem."'
+  },
+
+  'refleksive-uttrykk': {
+    id: 'refleksive-uttrykk',
+    titleEn: 'Reflexive verb expressions',
+    titleNb: 'Refleksive uttrykk',
+    explanationEn:
+      'Some Norwegian verbs are always paired with a reflexive pronoun (meg, deg, seg, oss, ' +
+      'dere, seg) that matches the subject\'s person: "Jeg legger meg klokka ti." "Hun liker seg ' +
+      'på hotellet." The reflexive pronoun always matches the SUBJECT, never a different person.',
+    explanationNb:
+      'Noen norske verb kombineres alltid med et refleksivt pronomen (meg, deg, seg, oss, dere, ' +
+      'seg) som samsvarer med subjektets person: "Jeg legger meg klokka ti." "Hun liker seg på ' +
+      'hotellet." Det refleksive pronomenet samsvarer alltid med SUBJEKTET.'
+  },
+
+  'infinitiv-a1': {
+    id: 'infinitiv-a1',
+    titleEn: 'The infinitive after modal verbs and «like å»',
+    titleNb: 'Infinitiv etter modalverb og «like å»',
+    explanationEn:
+      'A second verb right after a modal verb (kan, vil, skal, må) stays in the bare infinitive, ' +
+      'with no "å": "Jeg vil lære norsk." After verbs like «like», «pleie», «prøve», the ' +
+      'infinitive instead needs «å»: "Jeg liker å lære norsk."',
+    explanationNb:
+      'Et andre verb rett etter et modalverb (kan, vil, skal, må) står i naken infinitiv, uten ' +
+      '"å": "Jeg vil lære norsk." Etter verb som «like», «pleie», «prøve» trengs derimot «å»: ' +
+      '"Jeg liker å lære norsk."'
+  },
+
+  'substantiv-bestemt-form': {
+    id: 'substantiv-bestemt-form',
+    titleEn: 'Definite noun form (singular)',
+    titleNb: 'Substantiv i bestemt form (entall)',
+    explanationEn:
+      'To say "the X", Norwegian adds an ending to the noun instead of using a separate word: en ' +
+      'kopp → koppen, ei uke → uka, et eple → eplet. The ending matches the noun\'s gender, the ' +
+      'same gender as its indefinite article (en/ei/et).',
+    explanationNb:
+      'For å si "the X" legger norsk til en endelse på substantivet i stedet for å bruke et eget ' +
+      'ord: en kopp → koppen, ei uke → uka, et eple → eplet. Endelsen følger substantivets kjønn, ' +
+      'det samme kjønnet som den ubestemte artikkelen (en/ei/et).'
+  },
+
+  'pronomen-den-det-de': {
+    id: 'pronomen-den-det-de',
+    titleEn: '«den», «det», «de» referring back to a noun',
+    titleNb: '«den», «det», «de» som viser tilbake til et substantiv',
+    explanationEn:
+      'To refer back to something already named, Norwegian uses den (en/ei-nouns), det ' +
+      '(et-nouns), or de (plural) — matched to the ORIGINAL noun\'s gender/number: "Hvor er ' +
+      'osten? Den er i kjøleskapet." "Hvor er brødet? Det er på bordet."',
+    explanationNb:
+      'For å vise tilbake til noe som allerede er nevnt, bruker norsk den (en/ei-ord), det ' +
+      '(et-ord) eller de (flertall) — som samsvarer med det ORIGINALE substantivets kjønn/tall: ' +
+      '"Hvor er osten? Den er i kjøleskapet." "Hvor er brødet? Det er på bordet."'
+  },
+
+  'denne-dette-disse': {
+    id: 'denne-dette-disse',
+    titleEn: '«denne», «dette», «disse» (this/these)',
+    titleNb: '«denne», «dette», «disse»',
+    explanationEn:
+      'Demonstratives agree with the noun they point to: denne (en/ei-nouns, sg.), dette ' +
+      '(et-nouns, sg.), disse (all genders, pl.). "Denne genseren er fin." "Dette skjerfet er på ' +
+      'tilbud." "Disse skoene passer."',
+    explanationNb:
+      'Påpekende pronomen samsvarer med substantivet de peker på: denne (en/ei-ord, entall), ' +
+      'dette (et-ord, entall), disse (alle kjønn, flertall). "Denne genseren er fin." "Dette ' +
+      'skjerfet er på tilbud." "Disse skoene passer."'
+  },
+
+  imperativ: {
+    id: 'imperativ',
+    titleEn: 'The imperative',
+    titleNb: 'Imperativ',
+    explanationEn:
+      'The imperative is just the verb stem — the infinitive minus its final -e — with no ' +
+      'subject and no ending: "Du må huske stor bokstav." → "Husk stor bokstav!" "Dere må ' +
+      'snakke norsk." → "Snakk norsk!"',
+    explanationNb:
+      'Imperativ er bare verbstammen — infinitiv uten den siste -en — uten subjekt og uten ' +
+      'ending: "Du må huske stor bokstav." → "Husk stor bokstav!" "Dere må snakke norsk." → ' +
+      '"Snakk norsk!"'
+  },
+
+  'possessiver-min-din': {
+    id: 'possessiver-min-din',
+    titleEn: 'Possessives (min, din, hans, hennes, vår, deres)',
+    titleNb: 'Possessiver (eiendomsord)',
+    explanationEn:
+      'Possessives agree with the possessed noun\'s gender/number (min/mi/mitt/mine, ' +
+      'din/di/ditt/dine, vår/vårt/våre) and, in everyday spoken Norwegian, normally FOLLOW the ' +
+      'noun: "leiligheten min," not "min leilighet." hans, hennes, and deres never inflect.',
+    explanationNb:
+      'Possessiver samsvarer med det eide substantivets kjønn/tall (min/mi/mitt/mine, ' +
+      'din/di/ditt/dine, vår/vårt/våre) og står i vanlig talespråk normalt ETTER substantivet: ' +
+      '"leiligheten min," ikke "min leilighet." hans, hennes og deres bøyes aldri.'
+  },
+
+  'refleksivt-possessiv-sin': {
+    id: 'refleksivt-possessiv-sin',
+    titleEn: '«sin/sitt/sine» vs. «hans/hennes»',
+    titleNb: '«sin/sitt/sine» og «hans/hennes»',
+    explanationEn:
+      'Use sin/sitt/sine when the possessor IS the sentence\'s subject: "Bianca vasker ' +
+      'leiligheten sin" (her own apartment). Use hans/hennes when the possessor is someone ELSE: ' +
+      '"Bianca sitter i bilen hennes" (someone else\'s car).',
+    explanationNb:
+      'Bruk sin/sitt/sine når eieren ER setningens subjekt: "Bianca vasker leiligheten sin" (sin ' +
+      'egen leilighet). Bruk hans/hennes når eieren er noen ANNEN: "Bianca sitter i bilen ' +
+      'hennes" (en annens bil).'
+  },
+
+  'ja-jo': {
+    id: 'ja-jo',
+    titleEn: '«ja» vs. «jo»',
+    titleNb: '«ja» og «jo»',
+    explanationEn:
+      'Answer a positive question with «ja». Answer a NEGATIVE question, or contradict a ' +
+      'negative statement, affirmatively with «jo», never «ja»: "Er du ikke sulten?" → "Jo, det ' +
+      'er jeg." "Du liker ikke fisk." → "Jo, jeg liker fisk."',
+    explanationNb:
+      'Svar på et positivt spørsmål med «ja». Svar bekreftende på et NEGATIVT spørsmål, eller ' +
+      'motsi en negativ påstand, med «jo», aldri «ja»: "Er du ikke sulten?" → "Jo, det er jeg." ' +
+      '"Du liker ikke fisk." → "Jo, jeg liker fisk."'
+  },
+
+  'preteritum-a1': {
+    id: 'preteritum-a1',
+    titleEn: 'Preteritum (simple past) — introduction',
+    titleNb: 'Preteritum — introduksjon',
+    explanationEn:
+      'Regular verbs add -et, -te, or -a in preteritum: bodde, flyttet, lærte. A handful of very ' +
+      'common verbs are irregular and must simply be memorized: være→var, ha→hadde, gå→gikk, ' +
+      'komme→kom, ta→tok, si→sa.',
+    explanationNb:
+      'Regelrette verb får -et, -te eller -a i preteritum: bodde, flyttet, lærte. Noen svært ' +
+      'vanlige verb er uregelmessige og må pugges: være→var, ha→hadde, gå→gikk, komme→kom, ' +
+      'ta→tok, si→sa.'
+  },
+
+  'for-a-fordi': {
+    id: 'for-a-fordi',
+    titleEn: '«for å» vs. «fordi»',
+    titleNb: '«for å» og «fordi»',
+    explanationEn:
+      '«For å» + infinitive states a PURPOSE: "Jeg går til byen for å handle." «Fordi» + a full ' +
+      'clause with its own subject and verb states a CAUSE: "Jeg går til byen fordi jeg trenger ' +
+      'mat."',
+    explanationNb:
+      '«For å» + infinitiv uttrykker en HENSIKT: "Jeg går til byen for å handle." «Fordi» + en ' +
+      'hel setning med eget subjekt og verb uttrykker en ÅRSAK: "Jeg går til byen fordi jeg ' +
+      'trenger mat."'
+  },
+
+  'vaer-det-subjekt': {
+    id: 'vaer-det-subjekt',
+    titleEn: 'Impersonal «det» (weather, general statements)',
+    titleNb: 'Upersonlig «det» (vær, allmenne utsagn)',
+    explanationEn:
+      'Weather expressions and many general statements need a dummy subject «det», with no ' +
+      'real-world referent — it can never be dropped the way English sometimes drops "it": ' +
+      '"Det regner." "Det blåser." "Det er kaldt i dag."',
+    explanationNb:
+      'Vær og mange allmenne utsagn trenger et formelt subjekt «det», uten noen egentlig ' +
+      'referent — det kan aldri utelates: "Det regner." "Det blåser." "Det er kaldt i dag."'
+  },
+
+  'indirekte-tale-at-om': {
+    id: 'indirekte-tale-at-om',
+    titleEn: 'Reported speech: «at» vs. «om»',
+    titleNb: 'Referert tale: «at» og «om»',
+    explanationEn:
+      'Report a STATEMENT with «at»: "Det er kaldt ute." → "Han sier at det er kaldt ute." ' +
+      'Report a YES/NO QUESTION with «om»: "Skal du ut?" → "Han spør om hun skal ut." A ' +
+      'wh-question keeps its own question word instead of «om»: "Hvor bor du?" → "Han spør hvor ' +
+      'hun bor."',
+    explanationNb:
+      'Referer en PÅSTAND med «at»: "Det er kaldt ute." → "Han sier at det er kaldt ute." Referer ' +
+      'et JA/NEI-SPØRSMÅL med «om»: "Skal du ut?" → "Han spør om hun skal ut." Et ' +
+      'spørreordspørsmål beholder sitt eget spørreord i stedet for «om»: "Hvor bor du?" → "Han ' +
+      'spør hvor hun bor."'
+  },
+
+  'synes-tror': {
+    id: 'synes-tror',
+    titleEn: '«synes» vs. «tror»',
+    titleNb: '«synes» og «tror»',
+    explanationEn:
+      '«Synes» gives an OPINION about something you can directly perceive or judge — taste, ' +
+      'looks, quality: "Jeg synes kaka er god." «Tror» expresses a BELIEF or uncertainty about a ' +
+      'fact: "Jeg tror hun kommer senere."',
+    explanationNb:
+      '«Synes» gir en MENING om noe du kan sanse eller vurdere direkte — smak, utseende, ' +
+      'kvalitet: "Jeg synes kaka er god." «Tror» uttrykker TRO eller usikkerhet om et faktum: ' +
+      '"Jeg tror hun kommer senere."'
+  },
+
   // ── Nivå C topics (Plus only) ──────────────────────────────────────────────────────────────
 
   'ubestemt-artikkel-c': {
