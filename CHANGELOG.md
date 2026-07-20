@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.55.0
+
+### Minor Changes
+
+- - **New Features**
+    - Redesigned the Stats page with CEFR level tabs, summary metrics, and streamlined progress lists for vocabulary, fixed expressions, and grammar.
+    - Added a Plus-only C-level fixed expressions deck covering all entries.
+    - Added navigation between the C learning hub, fixed expressions, and category pages.
+  - **Bug Fixes**
+    - Improved C-level fixed-expression navigation and breadcrumb context.
+    - Corrected grammar topic assignment to use each question’s CEFR level consistently.
+  - **Tests**
+    - Expanded coverage for the new Stats layout and C-level fixed expressions route.
+
 ## 2.54.0
 
 ### Minor Changes
