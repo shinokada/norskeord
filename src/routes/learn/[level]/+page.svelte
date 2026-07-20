@@ -264,7 +264,7 @@
        page" option chosen over a single unclickable summary card or
        skipping the section entirely. -->
   {#if uttrykkCategory || (data.levelUpper === 'C' && data.uttrykkThemes.length > 0)}
-    <section class="mb-12">
+    <section id="uttrykk" class="mb-12">
       <h2 class="mb-4">💬 Uttrykk</h2>
       {#if uttrykkCategory}
         <!-- Phase 1/2 (ai-docs/implementation/uttrykk-gate.md): uttrykk is
@@ -329,10 +329,21 @@
           {/if}
         {/if}
       {:else}
-        <!-- C branch: no separate deck, no lock state of its own — each
-             pill's lock state comes from the matching Vocabulary category.
-             The summary line ("N fixed expressions, folded into...") was
-             removed — it duplicated what the pills below already show. -->
+        <!-- C branch: no per-category lock state of its own for the pills below —
+             each pill's lock state comes from the matching Vocabulary
+             category. Phase 9 (ai-docs/implementation/uttrykk-category.md)
+             added a virtual /c/uttrykk "study all" deck, matching A1–B2's
+             total-count line above the theme pills (Phase 3b) — clicking it
+             is Plus-gated the same way A1–B2's is, since it pulls from every
+             category at once rather than the free-preview slice. -->
+        <p class="mb-3 text-sm">
+          <a href="/c/uttrykk" class="font-medium {colors.accent} hover:underline">
+            {data.uttrykkThemes.reduce(
+              (sum: number, t: { theme: string; count: number }) => sum + t.count,
+              0
+            )} fixed expressions
+          </a>
+        </p>
         <div class="flex flex-wrap gap-2">
           {#each visibleUttrykkCThemes as t (t.theme)}
             {@const cat = data.categories.find(
