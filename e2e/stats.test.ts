@@ -36,12 +36,21 @@ test.describe('/stats page — free user (unauthenticated)', () => {
     await expect(page.getByRole('table')).not.toBeVisible();
   });
 
-  // 3-A: free users see the Plus upsell card instead
-  test('shows Plus upsell card with link to /plus', async ({ page }) => {
+  // 3-A: free users see the Plus upsell cards instead — one for
+  // Vocabulary's "By Category" breakdown, one for Uttrykk's "By Theme"
+  // breakdown (stats-page-improvement.md Phase 6 split the page into these
+  // two sections after this test was originally written for a single
+  // blended card — both reuse the same "Upgrade to Plus →" label, so a free
+  // user legitimately sees two matching links, not one).
+  test('shows Plus upsell cards with links to /plus', async ({ page }) => {
     await expect(page.getByText('Per-category breakdown is a Plus feature')).toBeVisible();
-    const upgradeLink = page.getByRole('link', { name: /upgrade to plus/i });
-    await expect(upgradeLink).toBeVisible();
-    await expect(upgradeLink).toHaveAttribute('href', '/plus');
+    await expect(page.getByText('Per-theme breakdown is a Plus feature')).toBeVisible();
+    const upgradeLinks = page.getByRole('link', { name: /upgrade to plus/i });
+    await expect(upgradeLinks).toHaveCount(2);
+    const hrefs = await upgradeLinks.evaluateAll((links) =>
+      links.map((l) => l.getAttribute('href'))
+    );
+    expect(hrefs).toEqual(['/plus', '/plus']);
   });
 
   // CEFR estimate is free for all users — must still be visible
