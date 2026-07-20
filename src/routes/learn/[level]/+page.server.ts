@@ -56,8 +56,7 @@ export const load: PageServerLoad = async ({ params }) => {
   // Build a set of topics that appear at this level
   const topicsAtLevel = new Set<GrammarTopic>();
   for (const q of questions) {
-    const levels = q.levels && q.levels.length ? q.levels : [q.cefr];
-    if (levels.includes(levelUpper)) {
+    if (q.cefr === levelUpper) {
       topicsAtLevel.add(q.topic);
     }
   }
