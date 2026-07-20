@@ -13,6 +13,7 @@ import type { CardProgress, CEFRLevel, GrammarQuestion, GrammarTopic } from '$li
 import { CATEGORIES_BY_LEVEL, UTTRYKK_CATCHALL_THEME } from '$lib/config';
 import { removeHyphensAndCapitalize } from '$lib/utils';
 import { UTTRYKK_C_KEYS, uttrykkCCategoryCounts } from '$lib/uttrykk-c-stats';
+import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME, type ThemeCount } from '$lib/vocab-helpers';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
 import grammarData from '$lib/data/grammar.json';
 
@@ -148,10 +149,24 @@ export function uttrykkThemeStatsForLevel(
       }
     }
     const keys = new Set<string>([...categoryCounts.keys(), ...cardsByCategory.keys()]);
-    return [...keys]
-      .map((category) => ({ category, count: categoryCounts.get(category) ?? 0 }))
+    const categoryList: ThemeCount[] = [...keys].map((theme) => ({
+      theme,
+      count: categoryCounts.get(theme) ?? 0
+    }));
+
+    // Same UTTRYKK_OTHERS_THRESHOLD bucketing the /learn/[level] hub uses
+    // (Phase 8, uttrykk-category.md) — C has 37 category slugs, many with
+    // only a handful of entries, so without this every one gets its own
+    // tiny row here. Unlike A1-B2's Others row, C has no per-theme
+    // query-param filter (Phase 9 deliberately didn't add one — C's real
+    // browse dimension is its categories, already linked individually
+    // below), so the combined row links to the /c/uttrykk "study all" deck
+    // instead of a filtered subset.
+    const { major, minor, othersCount } = partitionUttrykkThemes(categoryList);
+
+    const rows = major
       .sort((a, b) => b.count - a.count)
-      .map(({ category }) =>
+      .map(({ theme: category }) =>
         buildStatRow(
           category,
           removeHyphensAndCapitalize(category),
@@ -161,6 +176,22 @@ export function uttrykkThemeStatsForLevel(
           now
         )
       );
+
+    if (minor.length > 0) {
+      const othersCards = minor.flatMap(({ theme }) => cardsByCategory.get(theme) ?? []);
+      rows.push(
+        buildStatRow(
+          UTTRYKK_OTHERS_THEME,
+          removeHyphensAndCapitalize(UTTRYKK_OTHERS_THEME),
+          `/c/uttrykk`,
+          othersCount,
+          othersCards,
+          now
+        )
+      );
+    }
+
+    return rows;
   }
 
   const lvl = level.toLowerCase();
@@ -187,8 +218,21 @@ export function uttrykkThemeStatsForLevel(
   }
 
   const themeKeys = new Set<string>([...themeCounts.keys(), ...cardsByTheme.keys()]);
-  return [...themeKeys]
-    .map((theme) => ({ theme, count: themeCounts.get(theme) ?? 0 }))
+  const themeList: ThemeCount[] = [...themeKeys].map((theme) => ({
+    theme,
+    count: themeCounts.get(theme) ?? 0
+  }));
+
+  // Bucket small themes into one "Others" row, same UTTRYKK_OTHERS_THRESHOLD
+  // and UTTRYKK_OTHERS_THEME the /learn/[level] hub uses (Phase 3b,
+  // uttrykk-category.md) — keeps /stats consistent with the hub instead of
+  // listing a long tail of tiny rows. Links to `?theme=others`, which
+  // [level]/[category]/+page.server.ts already resolves via the same
+  // partitionUttrykkThemes() call, so the deep link works with no
+  // server-side changes.
+  const { major, minor, othersCount } = partitionUttrykkThemes(themeList);
+
+  const rows = major
     .sort((a, b) => b.count - a.count)
     .map(({ theme }) =>
       buildStatRow(
@@ -200,6 +244,22 @@ export function uttrykkThemeStatsForLevel(
         now
       )
     );
+
+  if (minor.length > 0) {
+    const othersCards = minor.flatMap(({ theme }) => cardsByTheme.get(theme) ?? []);
+    rows.push(
+      buildStatRow(
+        UTTRYKK_OTHERS_THEME,
+        removeHyphensAndCapitalize(UTTRYKK_OTHERS_THEME),
+        `/${lvl}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}`,
+        othersCount,
+        othersCards,
+        now
+      )
+    );
+  }
+
+  return rows;
 }
 
 // ── Grammar — topic rows for one level (new) ────────────────────────────────
