@@ -178,7 +178,7 @@
 >
   <div class="mx-auto max-w-3xl">
     <div class="flex flex-wrap items-baseline justify-center gap-3">
-      <h1 class="leading-none mb-0 {colors.heading}" style="letter-spacing:0.04em">
+      <h1 class="mb-0 leading-none {colors.heading}" style="letter-spacing:0.04em">
         {data.levelUpper}
       </h1>
       <span class="font-norse rounded-full px-3 py-1 text-xl font-semibold {colors.badge}">
@@ -219,8 +219,8 @@
         {#if !locked}
           <a
             href="/{data.level}/{cat.slug}"
-            class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
-              border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+            class="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm
+              font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
           >
             {categoryLabel(data.level, cat.slug)}
           </a>
@@ -353,8 +353,8 @@
             {#if !catLocked}
               <a
                 href="/{data.level}/{t.theme}?from=uttrykk"
-                class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
-                  border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+                class="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm
+                  font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
               >
                 {categoryLabel(data.level, t.theme)} ({t.count})
               </a>

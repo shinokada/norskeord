@@ -26,6 +26,8 @@ export const CATEGORIES_BY_LEVEL = {
     'places',
     'clothes',
     'actions',
+    'prepositions',
+    'housing',
     'uttrykk'
   ],
   A2: [
@@ -366,7 +368,12 @@ export const FREE_GRAMMAR_TOPICS = new Set<import('$lib/types').GrammarTopic>([
   'adj-agreement',
   'noun-possessives',
   'preposisjoner-tid',
-  'helsetninger'
+  'helsetninger',
+  // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md Phase 4.
+  'klokka-tid',
+  'preposisjoner-sted',
+  'ordenstall-dato',
+  'for-siden'
 ]);
 
 /**

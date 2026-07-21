@@ -606,7 +606,7 @@
 <div class="flex w-full flex-col items-center">
   <!-- Category header: level label + title -->
   <div class="mt-10 mb-0.5 flex w-full items-center justify-center px-2">
-    <h1 class="mb-0 leading-tight text-center">
+    <h1 class="mb-0 text-center leading-tight">
       {#if level}<span class="mr-1">{level} ·</span>{/if}{title}
     </h1>
   </div>
@@ -1042,7 +1042,7 @@
               {currentExampleTranslation}
             </p>
           {/if}
-          <div class="flex items-center gap-2 mx-3 mb-3">
+          <div class="mx-3 mb-3 flex items-center gap-2">
             <span
               class="shrink-0 rounded-lg bg-indigo-700 px-3 py-2 text-sm font-medium text-white dark:bg-indigo-800/50 dark:text-indigo-200"
             >

@@ -156,7 +156,7 @@
 </script>
 
 <section
-  class="rounded-xl border border-gray-200 bg-gray-50 px-6 pb-6 pt-4 dark:border-white/10 dark:bg-indigo-950/60"
+  class="rounded-xl border border-gray-200 bg-gray-50 px-6 pt-4 pb-6 dark:border-white/10 dark:bg-indigo-950/60"
 >
   <h2 class="mb-5 font-semibold text-gray-800 dark:text-gray-100">
     {m.profile_prefs_heading()}

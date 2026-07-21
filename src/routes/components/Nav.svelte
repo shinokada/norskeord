@@ -86,8 +86,7 @@
     // Keep the flashcard translation language in sync with the chosen locale.
     // Look up the language key (e.g. 'spanish') whose code matches (e.g. 'es').
     const matchedLang = Object.entries(LANGUAGES).find(([, v]) => v.code === code)?.[0] as
-      | FlashcardLanguage
-      | undefined;
+      FlashcardLanguage | undefined;
     if (matchedLang && matchedLang in FLASHCARD_LANGUAGES) {
       languageStore.set(matchedLang);
     }
@@ -187,7 +186,7 @@
       <button
         type="button"
         aria-label={m.nav_switch_language_aria()}
-        class="lang-trigger inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:hidden"
+        class="lang-trigger inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
       >
         {#if currentLangEntry}
           <span class="text-lg leading-none">{currentLangEntry[1].flag}</span>
@@ -202,7 +201,7 @@
       <button
         type="button"
         aria-label={m.nav_switch_language_aria()}
-        class="lang-trigger hidden items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm min-h-9 font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="lang-trigger hidden min-h-9 items-center gap-1 rounded-lg border border-gray-300 px-2 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 md:inline-flex dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {currentLangEntry?.[1].flag}
         {currentLangEntry?.[1].abbr}
@@ -230,13 +229,13 @@
     {#if !effectiveUser}
       <a
         href="/plus?checkout=1"
-        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-sm min-h-9 font-semibold text-white hover:bg-indigo-700 md:inline-block"
+        class="hidden min-h-9 rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-indigo-700 md:inline-block"
       >
         {m.nav_plus_badge()}
       </a>
       <a
         href="/auth/login"
-        class="hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm min-h-9 font-semibold text-gray-700 hover:bg-gray-100 md:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+        class="hidden min-h-9 rounded-lg border border-gray-300 px-3 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 md:inline-block dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         {m.nav_log_in()}
       </a>
@@ -263,7 +262,7 @@
             </span>
           {/if}
           <span
-            class="block text-xs text-gray-500 dark:text-gray-300 truncate {displayName
+            class="block truncate text-xs text-gray-500 dark:text-gray-300 {displayName
               ? 'mt-0.5'
               : ''}"
           >
@@ -380,7 +379,7 @@
       div: 'dark:bg-indigo-950'
     }}
     position="absolute"
-    class="z-50 h-screen md:hidden right-0 left-auto pt-6 w-full dark:bg-indigo-950"
+    class="right-0 left-auto z-50 h-screen w-full pt-6 md:hidden dark:bg-indigo-950"
   >
     <!-- Account (top) -->
     <SidebarGroup>

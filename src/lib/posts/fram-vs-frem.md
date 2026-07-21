@@ -73,7 +73,7 @@ Noen sammensatte former er mye vanligere med **frem** i skriftlig norsk:
 ❌ _Framover_ på en eksamen eller i et formelt brev.
 ⭕ _Fremover_ — den standard skriftlige formen.
 
-_Begge formene er teknisk sett korrekte på bokmål, men **frem-**formene er tryggere i formelle sammenhenger._
+_Begge formene er teknisk sett korrekte på bokmål, men \**frem-\**formene er tryggere i formelle sammenhenger._
 
 ---
 
