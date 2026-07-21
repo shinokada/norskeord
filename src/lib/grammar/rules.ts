@@ -459,7 +459,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     titleNb: 'Substantiv i bestemt form (entall)',
     explanationEn:
       'To say "the X", Norwegian adds an ending to the noun instead of using a separate word: en ' +
-      'kopp → koppen, ei uke → uka, et eple → eplet. The ending matches the noun\'s gender, the ' +
+      "kopp → koppen, ei uke → uka, et eple → eplet. The ending matches the noun's gender, the " +
       'same gender as its indefinite article (en/ei/et).',
     explanationNb:
       'For å si "the X" legger norsk til en endelse på substantivet i stedet for å bruke et eget ' +
@@ -514,7 +514,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     titleEn: 'Possessives (min, din, hans, hennes, vår, deres)',
     titleNb: 'Possessiver (eiendomsord)',
     explanationEn:
-      'Possessives agree with the possessed noun\'s gender/number (min/mi/mitt/mine, ' +
+      "Possessives agree with the possessed noun's gender/number (min/mi/mitt/mine, " +
       'din/di/ditt/dine, vår/vårt/våre) and, in everyday spoken Norwegian, normally FOLLOW the ' +
       'noun: "leiligheten min," not "min leilighet." hans, hennes, and deres never inflect.',
     explanationNb:

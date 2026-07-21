@@ -54,7 +54,27 @@
     'sterke-verb',
     'helsetninger',
     'preposisjoner-tid',
-    'preposisjoner-sted'
+    'preposisjoner-sted',
+    // Nivå A1 topics — see ai-docs/implementation/a1-quiz-and-grammar.md
+    'personlige-pronomen',
+    'presens-verb',
+    'pronomen-objektsform',
+    'og-men',
+    'adverb-sted-hjem',
+    'refleksive-uttrykk',
+    'infinitiv-a1',
+    'substantiv-bestemt-form',
+    'pronomen-den-det-de',
+    'denne-dette-disse',
+    'imperativ',
+    'possessiver-min-din',
+    'refleksivt-possessiv-sin',
+    'ja-jo',
+    'preteritum-a1',
+    'for-a-fordi',
+    'vaer-det-subjekt',
+    'indirekte-tale-at-om',
+    'synes-tror'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [
