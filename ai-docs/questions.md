@@ -9,13 +9,14 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 I just finished ai-docs/implementation/a1-quiz-and-grammar.md.
 
 ---
-Regarding Open questions in a1-quiz-and-grammar.md, I think  `FREE_GRAMMAR_TOPICS` and `FREE_GRAMMAR_PER_TOPIC` should be the same thing. What do you think? Do we need to keep both?
-
-
+ME: Continue with #26 first then Phase 3 please.
+Regarding Open questions in a1-quiz-and-grammar.md, Are  `FREE_GRAMMAR_TOPICS` and `FREE_GRAMMAR_PER_TOPIC` different? If they are different then they shuold have distinct naming. What do you think? Can you check?
 
 Regarding Chapter 10 onwards are in A2, so please ignore A2 for now.
 
-Can you update a1-quiz-and-grammar.md?
+Can you update a1-quiz-and-grammar.md?
+
+CLAUDE: Now let's fetch the current file tail and apply the append.Now let's validate the final file and update the plan checklist for #26.All 26 topic-touches confirmed present with A1 content. 852 total questions, no duplicates. Phase 2 content is now fully complete. Let's update the checklist.Phase 2 done. Now let's move to Phase 3 — the vocab verification script. First let's look at the existing C-level script to adapt it.Good, `uttrykk-a1.json` exists. Let's check its structure matches vocab-a1.json's `lemma` field convention.Good, same `lemma` field convention. Now let's write the A1 vocab-check script adapted from the C-level one, with the 26 A1 topics.
 ---
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
@@ -25,6 +26,7 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
  We are working on ai-docs/implementation/a1-quiz-and-grammar.md and in a previous session working on Phase 2, batch items 11–13: `modal-verb-order` (A1 entries), `substantiv-bestemt-form`, `pronomen-den-det-de` it was terminated. Can you continue to implement it?
 
+Work on a small number of batch, like one or two otherwise it takes time and session may end.
 ---
 
 The following is from a previous session which was terminated due to session limit. Can you continue what you were doing?

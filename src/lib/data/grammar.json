@@ -2094,6 +2094,84 @@
     "hint": "«For [tid] siden» = [time] ago. Use preteritum."
   },
   {
+    "id": "gq-prep-tid-017",
+    "topic": "preposisjoner-tid",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «om» or «i».",
+    "sentence": "_____ vinteren er det kaldt i Norge.",
+    "words": [
+      "Om",
+      "I"
+    ],
+    "answer": "Om",
+    "hint": "A general, habitual fact about winter → «om» + definite form (vinteren)."
+  },
+  {
+    "id": "gq-prep-tid-018",
+    "topic": "preposisjoner-tid",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «om» or «i».",
+    "sentence": "_____ vinter var det mye snø.",
+    "words": [
+      "I",
+      "Om"
+    ],
+    "answer": "I",
+    "hint": "«I vinter» points to one specific winter (this past or current one) → «i» + indefinite form."
+  },
+  {
+    "id": "gq-prep-tid-019",
+    "topic": "preposisjoner-tid",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «om» or «i».",
+    "sentence": "_____ sommeren liker hun å bade.",
+    "words": [
+      "Om",
+      "I"
+    ],
+    "answer": "Om",
+    "hint": "A general habit every summer → «om» + definite form (sommeren)."
+  },
+  {
+    "id": "gq-prep-tid-020",
+    "topic": "preposisjoner-tid",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «om» or «i».",
+    "sentence": "_____ sommer skal de reise til Spania.",
+    "words": [
+      "I",
+      "Om"
+    ],
+    "answer": "I",
+    "hint": "«I sommer» refers to one specific, upcoming summer → «i» + indefinite form."
+  },
+  {
+    "id": "gq-prep-tid-021",
+    "topic": "preposisjoner-tid",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Om vinteren går hun på ski.",
+    "optionB": "I vinteren går hun på ski.",
+    "answer": "A",
+    "explanation": "A general, habitual statement about winter needs «om» + the definite form (vinteren), not «i».",
+    "hint": "Habitual truths about a season use «om» + definite form."
+  },
+  {
+    "id": "gq-prep-tid-022",
+    "topic": "preposisjoner-tid",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "I høst har det regnet mye.",
+    "optionB": "Om høst har det regnet mye.",
+    "answer": "A",
+    "explanation": "Talking about this specific autumn needs «i høst» (indefinite form), not «om høst».",
+    "hint": "One specific season → «i» + indefinite form."
+  },
+  {
     "id": "gq-prep-sted-001",
     "topic": "preposisjoner-sted",
     "cefr": "A2",
@@ -8885,9 +8963,9 @@
     "cefr": "A1",
     "type": "transform",
     "prompt": "Write the plural form.",
-    "source": "en venn",
-    "answer": "venner",
-    "hint": "venn → venner (add -er)."
+    "source": "en sønn",
+    "answer": "sønner",
+    "hint": "sønn → sønner (add -er)."
   },
   {
     "id": "gq-advsted-001",
@@ -10304,5 +10382,699 @@
     "source": "barnet + bok",
     "answer": "barnets bok",
     "hint": "Add -s directly to the noun, no apostrophe."
+  },
+  {
+    "id": "gq-jajo-001",
+    "topic": "ja-jo",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «ja» or «jo».",
+    "sentence": "Er du ikke sulten? – _____, jeg er sulten.",
+    "words": [
+      "jo",
+      "ja"
+    ],
+    "answer": "jo",
+    "hint": "Contradicting a negative question needs «jo», not «ja»."
+  },
+  {
+    "id": "gq-jajo-002",
+    "topic": "ja-jo",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «ja» or «jo».",
+    "sentence": "Liker du kaffe? – _____, jeg liker kaffe.",
+    "words": [
+      "ja",
+      "jo"
+    ],
+    "answer": "ja",
+    "hint": "A plain positive question gets a plain «ja»."
+  },
+  {
+    "id": "gq-jajo-003",
+    "topic": "ja-jo",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «ja» or «jo».",
+    "sentence": "Har du ikke bil? – _____, jeg har bil.",
+    "words": [
+      "jo",
+      "ja"
+    ],
+    "answer": "jo",
+    "hint": "«Har du ikke...» is negative, so a positive answer needs «jo»."
+  },
+  {
+    "id": "gq-jajo-004",
+    "topic": "ja-jo",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «ja» or «jo».",
+    "sentence": "Kommer du i dag? – _____, jeg kommer.",
+    "words": [
+      "ja",
+      "jo"
+    ],
+    "answer": "ja",
+    "hint": "No «ikke» in the question, so it's a plain «ja»."
+  },
+  {
+    "id": "gq-jajo-005",
+    "topic": "ja-jo",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Er du ikke norsk? – Jo, jeg er norsk.",
+    "optionB": "Er du ikke norsk? – Ja, jeg er norsk.",
+    "answer": "A",
+    "explanation": "The question is negative («ikke norsk»), so contradicting it affirmatively needs «jo», not «ja».",
+    "hint": "Negative question + positive truth → «jo»."
+  },
+  {
+    "id": "gq-jajo-006",
+    "topic": "ja-jo",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Answer the question affirmatively, contradicting the «ikke».",
+    "source": "Snakker du ikke engelsk?",
+    "answer": "Jo, jeg snakker engelsk.",
+    "alternates": [
+      "Jo, jeg snakker engelsk"
+    ],
+    "hint": "The question assumes «no», so correct it with «jo»."
+  },
+  {
+    "id": "gq-preta1-001",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Write the verb in preteritum.",
+    "sentence": "I fjor _____ (bo) hun i Oslo.",
+    "words": [
+      "bodde",
+      "bor",
+      "bo"
+    ],
+    "answer": "bodde",
+    "hint": "Verbs ending in a vowel add -dde in preteritum: bo → bodde."
+  },
+  {
+    "id": "gq-preta1-002",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Write the verb in preteritum.",
+    "sentence": "Han _____ (lære) norsk i fjor.",
+    "words": [
+      "lærte",
+      "lærer",
+      "lære"
+    ],
+    "answer": "lærte",
+    "hint": "Regular -er verbs often take -te: lære → lærte."
+  },
+  {
+    "id": "gq-preta1-003",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Write the verb in preteritum.",
+    "sentence": "De _____ (flytte) til Bergen i fjor.",
+    "words": [
+      "flyttet",
+      "flytter",
+      "flytte"
+    ],
+    "answer": "flyttet",
+    "hint": "Regular verbs like flytte take -et in preteritum."
+  },
+  {
+    "id": "gq-preta1-004",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite in preteritum.",
+    "source": "Hun er trøtt.",
+    "answer": "Hun var trøtt.",
+    "alternates": [
+      "Hun var trøtt"
+    ],
+    "hint": "«være» is irregular in preteritum: er → var."
+  },
+  {
+    "id": "gq-preta1-005",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite in preteritum.",
+    "source": "Han har en bil.",
+    "answer": "Han hadde en bil.",
+    "alternates": [
+      "Han hadde en bil"
+    ],
+    "hint": "«ha» is irregular in preteritum: har → hadde."
+  },
+  {
+    "id": "gq-preta1-006",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite in preteritum.",
+    "source": "Vi går til byen.",
+    "answer": "Vi gikk til byen.",
+    "alternates": [
+      "Vi gikk til byen"
+    ],
+    "hint": "«gå» is irregular in preteritum: går → gikk."
+  },
+  {
+    "id": "gq-preta1-007",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite in preteritum.",
+    "source": "De tar bussen.",
+    "answer": "De tok bussen.",
+    "alternates": [
+      "De tok bussen"
+    ],
+    "hint": "«ta» is irregular in preteritum: tar → tok."
+  },
+  {
+    "id": "gq-preta1-008",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite in preteritum.",
+    "source": "Jeg sier ja.",
+    "answer": "Jeg sa ja.",
+    "alternates": [
+      "Jeg sa ja"
+    ],
+    "hint": "«si» is irregular in preteritum: sier → sa."
+  },
+  {
+    "id": "gq-preta1-009",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Write the verb in preteritum.",
+    "sentence": "Han _____ (komme) hjem klokka ti i går.",
+    "words": [
+      "kom",
+      "kommer",
+      "komme"
+    ],
+    "answer": "kom",
+    "hint": "«komme» is irregular in preteritum: kommer → kom."
+  },
+  {
+    "id": "gq-preta1-010",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "Hun",
+      "bodde",
+      "i",
+      "Norge",
+      "i",
+      "fjor"
+    ],
+    "answer": "Hun bodde i Norge i fjor.",
+    "alternates": [
+      "Hun bodde i Norge i fjor"
+    ],
+    "hint": "Subject – verb (preteritum) – rest of the sentence."
+  },
+  {
+    "id": "gq-preta1-011",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "I går spiste jeg fisk.",
+    "optionB": "I går spiser jeg fisk.",
+    "answer": "A",
+    "explanation": "«I går» (yesterday) points to the past, so the verb must be in preteritum: spiste, not spiser.",
+    "hint": "«I går» always needs preteritum."
+  },
+  {
+    "id": "gq-preta1-012",
+    "topic": "preteritum-a1",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Write the verb in preteritum.",
+    "sentence": "Vi _____ (være) glade i går.",
+    "words": [
+      "var",
+      "er",
+      "være"
+    ],
+    "answer": "var",
+    "hint": "«være» is irregular in preteritum: er → var."
+  },
+  {
+    "id": "gq-forafordi-001",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «for å» or «fordi».",
+    "sentence": "Hun går til byen _____ handle.",
+    "words": [
+      "for å",
+      "fordi"
+    ],
+    "answer": "for å",
+    "hint": "A purpose followed by an infinitive needs «for å»."
+  },
+  {
+    "id": "gq-forafordi-002",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «for å» or «fordi».",
+    "sentence": "Han spiser _____ han er sulten.",
+    "words": [
+      "fordi",
+      "for å"
+    ],
+    "answer": "fordi",
+    "hint": "A cause followed by a full clause needs «fordi»."
+  },
+  {
+    "id": "gq-forafordi-003",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «for å» or «fordi».",
+    "sentence": "Vi lærer norsk _____ bo i Norge.",
+    "words": [
+      "for å",
+      "fordi"
+    ],
+    "answer": "for å",
+    "hint": "Purpose + infinitive → «for å»."
+  },
+  {
+    "id": "gq-forafordi-004",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «for å» or «fordi».",
+    "sentence": "De blir hjemme _____ det regner.",
+    "words": [
+      "fordi",
+      "for å"
+    ],
+    "answer": "fordi",
+    "hint": "Cause + clause (subject + verb) → «fordi»."
+  },
+  {
+    "id": "gq-forafordi-005",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Join into one sentence using «for å» to express purpose.",
+    "source": "Jeg trener. Jeg vil bli sterk.",
+    "answer": "Jeg trener for å bli sterk.",
+    "alternates": [
+      "Jeg trener for å bli sterk"
+    ],
+    "hint": "Purpose + bare infinitive, no new subject → «for å»."
+  },
+  {
+    "id": "gq-forafordi-006",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Join into one sentence using «fordi» to express cause.",
+    "source": "Hun sover. Hun er trøtt.",
+    "answer": "Hun sover fordi hun er trøtt.",
+    "alternates": [
+      "Hun sover fordi hun er trøtt"
+    ],
+    "hint": "Cause needs its own subject and verb → «fordi»."
+  },
+  {
+    "id": "gq-forafordi-007",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Han jobber for å tjene penger.",
+    "optionB": "Han jobber fordi tjene penger.",
+    "answer": "A",
+    "explanation": "«Fordi» needs a full clause with its own subject and verb; a bare infinitive after it is wrong. Purpose here needs «for å».",
+    "hint": "«Fordi» + bare infinitive is never correct."
+  },
+  {
+    "id": "gq-forafordi-008",
+    "topic": "for-a-fordi",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "Hun",
+      "leser",
+      "fordi",
+      "hun",
+      "liker",
+      "bøker"
+    ],
+    "answer": "Hun leser fordi hun liker bøker.",
+    "alternates": [
+      "Hun leser fordi hun liker bøker"
+    ],
+    "hint": "«fordi» is followed by a full subject + verb clause."
+  },
+  {
+    "id": "gq-vaerdet-001",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Fill in the missing subject.",
+    "sentence": "_____ regner ute.",
+    "words": [
+      "Det",
+      "Den",
+      "Han"
+    ],
+    "answer": "Det",
+    "hint": "Weather statements always take the dummy subject «det»."
+  },
+  {
+    "id": "gq-vaerdet-002",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Fill in the missing subject.",
+    "sentence": "_____ blåser mye i dag.",
+    "words": [
+      "Det",
+      "Den"
+    ],
+    "answer": "Det",
+    "hint": "«Det» is the dummy subject in weather statements, with no real referent."
+  },
+  {
+    "id": "gq-vaerdet-003",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Fill in the missing subject.",
+    "sentence": "_____ er kaldt om vinteren.",
+    "words": [
+      "Det",
+      "Den"
+    ],
+    "answer": "Det",
+    "hint": "A general statement about the weather needs «det» as subject."
+  },
+  {
+    "id": "gq-vaerdet-004",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Fill in the missing subject.",
+    "sentence": "_____ snør i fjellene.",
+    "words": [
+      "Det",
+      "Den"
+    ],
+    "answer": "Det",
+    "hint": "«Snø» (snow) uses the dummy subject «det», like all weather verbs."
+  },
+  {
+    "id": "gq-vaerdet-005",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Describe the weather using «det» + the verb in presens.",
+    "source": "snø",
+    "answer": "Det snør.",
+    "alternates": [
+      "Det snør"
+    ],
+    "hint": "Weather verb + dummy subject «det»."
+  },
+  {
+    "id": "gq-vaerdet-006",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "Det",
+      "er",
+      "fint",
+      "vær",
+      "i",
+      "dag"
+    ],
+    "answer": "Det er fint vær i dag.",
+    "alternates": [
+      "Det er fint vær i dag"
+    ],
+    "hint": "«Det» comes first as the dummy subject, then the verb."
+  },
+  {
+    "id": "gq-vaerdet-007",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Det regner ute.",
+    "optionB": "Regner ute.",
+    "answer": "A",
+    "explanation": "Norwegian weather sentences always need the dummy subject «det» — unlike casual English, it can never be dropped.",
+    "hint": "Norwegian sentences need an explicit subject, even a dummy one."
+  },
+  {
+    "id": "gq-vaerdet-008",
+    "topic": "vaer-det-subjekt",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Fill in the missing subject.",
+    "sentence": "_____ er varmt og fint i dag.",
+    "words": [
+      "Det",
+      "Den"
+    ],
+    "answer": "Det",
+    "hint": "General weather description → dummy subject «det»."
+  },
+  {
+    "id": "gq-indirtale-001",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «at» or «om».",
+    "sentence": "Hun sier _____ hun er trøtt.",
+    "words": [
+      "at",
+      "om"
+    ],
+    "answer": "at",
+    "hint": "Reporting a statement → «at»."
+  },
+  {
+    "id": "gq-indirtale-002",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «at» or «om».",
+    "sentence": "Han spør _____ hun skal på kino.",
+    "words": [
+      "om",
+      "at"
+    ],
+    "answer": "om",
+    "hint": "Reporting a yes/no question → «om»."
+  },
+  {
+    "id": "gq-indirtale-003",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Report the statement using «at».",
+    "source": "Det er kaldt ute.",
+    "answer": "Hun sier at det er kaldt ute.",
+    "alternates": [
+      "Hun sier at det er kaldt ute"
+    ],
+    "hint": "Reported statement: subject + sier + at + the original clause."
+  },
+  {
+    "id": "gq-indirtale-004",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Report the yes/no question using «om».",
+    "source": "Kommer du i kveld?",
+    "answer": "Hun spør om han kommer i kveld.",
+    "alternates": [
+      "Hun spør om han kommer i kveld"
+    ],
+    "hint": "Reported yes/no question: subject + spør + om + the original clause (no question mark)."
+  },
+  {
+    "id": "gq-indirtale-005",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «at» or «om».",
+    "sentence": "Jeg spør _____ hun bor i Oslo.",
+    "words": [
+      "om",
+      "at"
+    ],
+    "answer": "om",
+    "hint": "A yes/no question reported indirectly needs «om»."
+  },
+  {
+    "id": "gq-indirtale-006",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «at» or «om».",
+    "sentence": "De sier _____ de kommer i morgen.",
+    "words": [
+      "at",
+      "om"
+    ],
+    "answer": "at",
+    "hint": "A plain statement reported indirectly needs «at»."
+  },
+  {
+    "id": "gq-indirtale-007",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Han spør om hun vil ha kaffe.",
+    "optionB": "Han spør at hun vil ha kaffe.",
+    "answer": "A",
+    "explanation": "Reporting a question requires «om», not «at» — «at» is only for reported statements.",
+    "hint": "«spørre» (to ask) pairs with «om», never «at»."
+  },
+  {
+    "id": "gq-indirtale-008",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "Hun",
+      "sier",
+      "at",
+      "hun",
+      "er",
+      "glad"
+    ],
+    "answer": "Hun sier at hun er glad.",
+    "alternates": [
+      "Hun sier at hun er glad"
+    ],
+    "hint": "sier + at + subject + verb + rest."
+  },
+  {
+    "id": "gq-synestror-001",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «synes» or «tror».",
+    "sentence": "Jeg _____ kaka er god.",
+    "words": [
+      "synes",
+      "tror"
+    ],
+    "answer": "synes",
+    "hint": "An opinion about taste you can perceive → «synes»."
+  },
+  {
+    "id": "gq-synestror-002",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «synes» or «tror».",
+    "sentence": "Jeg _____ hun kommer i morgen.",
+    "words": [
+      "tror",
+      "synes"
+    ],
+    "answer": "tror",
+    "hint": "A belief or guess about something uncertain → «tror»."
+  },
+  {
+    "id": "gq-synestror-003",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «synes» or «tror».",
+    "sentence": "Vi _____ filmen er kjedelig.",
+    "words": [
+      "synes",
+      "tror"
+    ],
+    "answer": "synes",
+    "hint": "A judgment about quality → «synes»."
+  },
+  {
+    "id": "gq-synestror-004",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «synes» or «tror».",
+    "sentence": "Han _____ det blir sol i morgen.",
+    "words": [
+      "tror",
+      "synes"
+    ],
+    "answer": "tror",
+    "hint": "Uncertainty about the future → «tror»."
+  },
+  {
+    "id": "gq-synestror-005",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «synes» or «tror».",
+    "sentence": "De _____ leiligheten er fin.",
+    "words": [
+      "synes",
+      "tror"
+    ],
+    "answer": "synes",
+    "hint": "A judgment about something you can see → «synes»."
+  },
+  {
+    "id": "gq-synestror-006",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «synes» or «tror».",
+    "sentence": "Jeg _____ hun er tretti år.",
+    "words": [
+      "tror",
+      "synes"
+    ],
+    "answer": "tror",
+    "hint": "A guess about a fact you're not sure of → «tror»."
+  },
+  {
+    "id": "gq-synestror-007",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Jeg synes maten smaker godt.",
+    "optionB": "Jeg tror maten smaker godt.",
+    "answer": "A",
+    "explanation": "Judging how something tastes is an opinion you perceive directly, so it needs «synes», not «tror».",
+    "hint": "Taste, looks, quality → «synes»."
+  },
+  {
+    "id": "gq-synestror-008",
+    "topic": "synes-tror",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Jeg tror hun bor i Bergen.",
+    "optionB": "Jeg synes hun bor i Bergen.",
+    "answer": "A",
+    "explanation": "Where someone lives is a fact, not something to judge — a guess or belief about it needs «tror», not «synes».",
+    "hint": "Facts you're unsure about → «tror»."
   }
 ]

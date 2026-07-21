@@ -426,18 +426,23 @@ a sanity check than the C-level triage exercise.
 17. `possessiver-min-din` ✅ Done
 18. `refleksivt-possessiv-sin` ✅ Done
 19. `noun-possessives` (A1 entries) ✅ Done
-20. `ja-jo`
-21. `preteritum-a1`
-22. `for-a-fordi`
-23. `vaer-det-subjekt`
-24. `preposisjoner-tid` (A1 entries)
-25. `indirekte-tale-at-om`
-26. `synes-tror`
+20. `ja-jo` ✅ Done
+21. `preteritum-a1` ✅ Done
+22. `for-a-fordi` ✅ Done
+23. `vaer-det-subjekt` ✅ Done
+24. `preposisjoner-tid` (A1 entries) ✅ Done
+25. `indirekte-tale-at-om` ✅ Done
+26. `synes-tror` ✅ Done
 
-### Phase 3 — Vocab verification
+### Phase 3 — Vocab verification ✅ Done
 
-Build/adapt `scripts/check-c-grammar-vocab.mjs` → `scripts/check-a1-grammar-vocab.mjs`, run after
-each topic.
+Built `scripts/check-a1-grammar-vocab.mjs` (adapted from `check-c-grammar-vocab.mjs`), scoped to
+the 26 A1 topic-touches (`cefr: 'A1'` entries only, so the 7 reused topics' A2+ entries aren't
+checked here). Ran against all 222 A1 questions: 1 unmatched initially — `gq-noun-pl-020` used
+"venn" as its example noun, but "venn" isn't a standalone `vocab-a1.json` headword (it only
+appears inside the uttrykk phrase "en venn av meg", which requires "meg" too to count as a
+match). Swapped the example to "sønn"/"sønner" (a real A1 vocab noun, same regular -er plural
+pattern). Re-ran: 222/222 matched, 0 unmatched.
 
 ### Phase 4 — Gating + wiring
 
