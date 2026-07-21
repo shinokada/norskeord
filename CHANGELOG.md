@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.56.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added extensive A1 grammar lessons and exercises covering chapters 1–9.
+    - Added A2 grammar and quiz content for chapters 10–16.
+    - Added new grammar topics, examples, explanations, and practice questions.
+    - Expanded free grammar access with additional A1 topics.
+    - Added Norwegian vocabulary coverage checks for A1 grammar content.
+  - **Documentation**
+    - Added chapter overviews and detailed grammar and quiz workbooks for A1 and A2 learners.
+  - **Tests**
+    - Updated grammar statistics checks to include newly available A1 content.
+
 ## 2.55.0
 
 ### Minor Changes
