@@ -399,27 +399,27 @@ a sanity check than the C-level triage exercise.
 
 ## Implementation phases
 
-### Phase 1 — Rules + types
+### Phase 1 — Rules + types ✅ Done
 
-1. Add 19 new topics to `GrammarTopic` in `src/lib/types.ts`.
+1. Add 19 new topics to `GrammarTopic` in `src/lib/types.ts`. ✅ Done
 2. Add 19 new `GrammarRule` entries to `src/lib/grammar/rules.ts` (drafted above — expand to the
-   fuller bilingual style used by existing entries).
+   fuller bilingual style used by existing entries). ✅ Done
 
 ### Phase 2 — Content, built in the same chapter order as `innhold.md` (1→9)
 
-1. `personlige-pronomen`
-2. `presens-verb`
-3. `helsetninger` (A1 entries)
-4. `pronomen-objektsform`
-5. `og-men`
-6. `noun-articles` (A1 entries)
-7. `noun-plurals` (A1 entries)
-8. `adverb-sted-hjem`
-9. `refleksive-uttrykk`
-10. `infinitiv-a1`
-11. `modal-verb-order` (A1 entries)
-12. `substantiv-bestemt-form`
-13. `pronomen-den-det-de`
+1. `personlige-pronomen` ✅ Done
+2. `presens-verb` ✅ Done
+3. `helsetninger` (A1 entries) ✅ Done
+4. `pronomen-objektsform` ✅ Done
+5. `og-men` ✅ Done
+6. `noun-articles` (A1 entries) ✅ Done
+7. `noun-plurals` (A1 entries) ✅ Done
+8. `adverb-sted-hjem` ✅ Done
+9. `refleksive-uttrykk` ✅ Done
+10. `infinitiv-a1` ✅ Done
+11. `modal-verb-order` (A1 entries) ✅ Done
+12. `substantiv-bestemt-form` ✅ Done
+13. `pronomen-den-det-de` ✅ Done
 14. `adj-agreement` (A1 entries)
 15. `denne-dette-disse`
 16. `imperativ`

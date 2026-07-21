@@ -7,7 +7,23 @@ svelte mcp server is running.
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
 I just finished ai-docs/implementation/a1-quiz-and-grammar.md.
-Can you start implementing Phase 1?
+
+---
+Regarding Open questions in a1-quiz-and-grammar.md, I think  `FREE_GRAMMAR_TOPICS` and `FREE_GRAMMAR_PER_TOPIC` should be the same thing. What do you think? Do we need to keep both?
+
+
+
+Regarding Chapter 10 onwards are in A2, so please ignore A2 for now.
+
+Can you update a1-quiz-and-grammar.md?
+---
+I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
+
+svelte mcp server is running.
+
+You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
+
+ We are working on ai-docs/implementation/a1-quiz-and-grammar.md and in a previous session working on Phase 2, batch items 11–13: `modal-verb-order` (A1 entries), `substantiv-bestemt-form`, `pronomen-den-det-de` it was terminated. Can you continue to implement it?
 
 ---
 
