@@ -335,7 +335,38 @@ export const FREE_GRAMMAR_TOPICS = new Set<import('$lib/types').GrammarTopic>([
   'ikke-placement',
   'v2-word-order',
   'det-er-ikke',
-  'modal-verb-order'
+  'modal-verb-order',
+  // Nivå A1 topics (free) — see ai-docs/implementation/a1-quiz-and-grammar.md Phase 4.
+  // 19 new topics:
+  'personlige-pronomen',
+  'presens-verb',
+  'pronomen-objektsform',
+  'og-men',
+  'adverb-sted-hjem',
+  'refleksive-uttrykk',
+  'infinitiv-a1',
+  'substantiv-bestemt-form',
+  'pronomen-den-det-de',
+  'denne-dette-disse',
+  'imperativ',
+  'possessiver-min-din',
+  'refleksivt-possessiv-sin',
+  'ja-jo',
+  'preteritum-a1',
+  'for-a-fordi',
+  'vaer-det-subjekt',
+  'indirekte-tale-at-om',
+  'synes-tror',
+  // 6 reused topics (modal-verb-order already listed above) — added so the
+  // new A1 entries in these topics are actually reachable via the /grammar
+  // picker for free users (without this, the picker links straight to
+  // /plus and free users never see the topic page at all).
+  'noun-articles',
+  'noun-plurals',
+  'adj-agreement',
+  'noun-possessives',
+  'preposisjoner-tid',
+  'helsetninger'
 ]);
 
 /**
