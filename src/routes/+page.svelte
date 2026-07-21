@@ -304,7 +304,7 @@
       >
         <div class="mb-2 flex items-baseline justify-center gap-3">
           <span
-            class="font-norse font-bold text-3xl leading-none {accent.heading}"
+            class="font-norse text-3xl leading-none font-bold {accent.heading}"
             style="letter-spacing:0.04em">{lvl.id}</span
           >
           <h3 class="font-norse text-xl font-semibold {accent.heading}">{lvl.shortLabel()}</h3>

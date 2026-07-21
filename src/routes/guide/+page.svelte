@@ -93,7 +93,7 @@
     {#each sections as { id, label } (id)}
       <a
         href="#{id}"
-        class="min-h-10 flex items-center rounded-xl border border-gray-200 bg-white px-3 py-1 text-sm text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-indigo-400 dark:hover:text-indigo-300"
+        class="flex min-h-10 items-center rounded-xl border border-gray-200 bg-white px-3 py-1 text-sm text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-indigo-400 dark:hover:text-indigo-300"
       >
         {label()}
       </a>

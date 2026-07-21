@@ -67,7 +67,7 @@
       class="mt-10 rounded-xl border border-blue-100 bg-blue-50 px-6 py-5 dark:border-blue-900 dark:bg-blue-950/40"
     >
       <p
-        class="mb-3 text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400"
+        class="mb-3 text-sm font-semibold tracking-wide text-blue-600 uppercase dark:text-blue-400"
       >
         {m.blog_post_practice_vocab()}
       </p>

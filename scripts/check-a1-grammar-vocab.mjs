@@ -42,11 +42,12 @@ const DATA_DIR = join(__dirname, '../src/lib/data');
 const STRICT = process.argv.includes('--strict');
 const topicFilter = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 
-// The 26 A1 topic-touches from ai-docs/implementation/a1-quiz-and-grammar.md:
-// 19 new topics + 7 reused topics (which also carry non-A1 entries elsewhere
-// in grammar.json — those are excluded below via the cefr === 'A1' filter).
+// The 26 A1 topic-touches from ai-docs/implementation/a1-quiz-and-grammar.md,
+// plus the 4 new topics from ai-docs/implementation/a1-update.md Phase 5:
+// 19 + 4 = 23 new topics + 7 reused topics (which also carry non-A1 entries
+// elsewhere in grammar.json — those are excluded below via the cefr === 'A1' filter).
 const A1_TOPICS = new Set([
-  // 19 new topics
+  // 19 new topics (a1-quiz-and-grammar.md)
   'personlige-pronomen',
   'presens-verb',
   'pronomen-objektsform',
@@ -66,6 +67,10 @@ const A1_TOPICS = new Set([
   'vaer-det-subjekt',
   'indirekte-tale-at-om',
   'synes-tror',
+  // 4 new topics (a1-update.md)
+  'klokka-tid',
+  'ordenstall-dato',
+  'for-siden',
   // 7 reused topics (A1-cefr entries only)
   'helsetninger',
   'modal-verb-order',
@@ -73,7 +78,8 @@ const A1_TOPICS = new Set([
   'noun-plurals',
   'adj-agreement',
   'noun-possessives',
-  'preposisjoner-tid'
+  'preposisjoner-tid',
+  'preposisjoner-sted'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────

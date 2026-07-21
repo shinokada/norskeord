@@ -217,7 +217,7 @@
       </a>
     {:else}
       <!-- ── Billing interval toggle ── -->
-      <div class="mb-6 mx-auto w-full max-w-sm space-y-2">
+      <div class="mx-auto mb-6 w-full max-w-sm space-y-2">
         <button
           type="button"
           onclick={() => (billingInterval = 'month')}

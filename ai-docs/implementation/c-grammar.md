@@ -2,7 +2,7 @@
 
 ## Overview
 
-Full reassessment after reading all of `draft/c/grammar/` (grammatikk.md,
+Full reassessment after reading all of `draft/c/Norsk-for-deg/grammar` (grammatikk.md,
 `1-11-substantiv-ubestemt-artikkel.md`, `12-24-adjektiv.md`, `25-39-verb.md`, `40-51.md`,
 `52-63.md`, `64-71.md`, `72-82.md`, `83-92.md`, `93-103.md`, `answers.md`, `innhold.md`). The
 earlier 5-topic, ~50-question plan covered only `grammatikk.md` and undersold what the textbook
@@ -263,14 +263,14 @@ part (exact size depends on the `uttrykk-c.json` matching script, likely ~40–6
     'Choosing between the bare infinitive (after modals, "pleier," "begynner") and the ' +
     'conjugated presens form is an A1/A2 rule, but applying it correctly across a long sentence ' +
     'with three or four verb slots at once is a genuine accuracy challenge at C level. ' +
-    'Questions use the actual C-level verbs from `draft/c/grammar/25-39-verb.md` items 25–27 ' +
+    'Questions use the actual C-level verbs from `draft/c/Norsk-for-deg/grammar25-39-verb.md` items 25–27 ' +
     '(cross-checked against `vocab-c.json`), not generic A1 verbs, so the vocabulary load ' +
     'matches the rest of the C-level content.',
   explanationNb:
     'Å velge mellom bar infinitiv (etter modale hjelpeverb, «pleier», «begynner») og bøyd ' +
     'presensform er en A1/A2-regel, men å bruke den riktig gjennom en lang setning med tre eller ' +
     'fire verbplasser samtidig er en reell presisjonsutfordring på nivå C. Spørsmålene bruker de ' +
-    'faktiske nivå C-verbene fra `draft/c/grammar/25-39-verb.md` punkt 25–27 (kryssjekket mot ' +
+    'faktiske nivå C-verbene fra `draft/c/Norsk-for-deg/grammar25-39-verb.md` punkt 25–27 (kryssjekket mot ' +
     '`vocab-c.json`), ikke generiske A1-verb, slik at ordforrådet passer med resten av ' +
     'nivå-C-innholdet.'
 },
@@ -527,7 +527,7 @@ Suggested type mix per topic: 4–6 `fill`, 2–3 `transform`, 1–2 `order` or 
 adjusted per topic (e.g. `leddsetning-som-fundament` and `koordinerende-konjunksjoner` lean
 heavily on `order`; `adj-farger-uboyelige` and `adj-partisipp-som-adjektiv` lean on `minimal-pair`
 and `fill`; `verbform-i-kontekst` sentences use real verbs pulled from
-`draft/c/grammar/25-39-verb.md` items 25–27). All three `uttrykk-gjenkjenning-c-*` topics are
+`draft/c/Norsk-for-deg/grammar25-39-verb.md` items 25–27). All three `uttrykk-gjenkjenning-c-*` topics are
 entirely `multiple-choice`.
 
 **Mining note (items 64–82):** while drafting each of the 21 non-idiom topics, check whether any
@@ -620,7 +620,7 @@ priority to debate:
     2–4-verb chains — modal/`pleier å`/`begynner å`/`prøve å`/`greier å`/`orker å`/`tør å` chains
     — anchored to real `vocab-c.json` words like `engasjere`, `fortrenge`, `utrette`, `bilegge`,
     `adlyde`, `vedgå`, `motstå`, `avsky`, `besinne seg`, `klamre seg til`; inspired by the pattern
-    in `draft/c/grammar/25-39-verb.md` items 25–27 rather than adapted from its sentences)
+    in `draft/c/Norsk-for-deg/grammar25-39-verb.md` items 25–27 rather than adapted from its sentences)
 
 ### Phase 3 — Vocab verification
 
@@ -654,7 +654,7 @@ under Content plan above.
 - `preposisjoner-kroppsdel-uttrykk` and `preposisjoner-generelt-c` stay separate — merging would
   make one topic too large.
 - `verbform-i-kontekst` stays in scope, sourced from real C-level verbs in
-  `draft/c/grammar/25-39-verb.md` items 25–27 (not generic/invented verbs).
+  `draft/c/Norsk-for-deg/grammar25-39-verb.md` items 25–27 (not generic/invented verbs).
 - Build order is alphabetical by topic name (see Phase 2) — no separate priority ranking needed.
 - `uttrykk-gjenkjenning-c` is split into 3 parts (items 83–89, 90–96, 97–103) and should aim for
   every idiom in each part with a real `uttrykk-c.json` match, not a fixed ~30–40 cap — likely
