@@ -74,7 +74,11 @@
     'for-a-fordi',
     'vaer-det-subjekt',
     'indirekte-tale-at-om',
-    'synes-tror'
+    'synes-tror',
+    // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md
+    'klokka-tid',
+    'ordenstall-dato',
+    'for-siden'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [

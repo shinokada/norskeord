@@ -150,7 +150,7 @@
     aria-label={m.onboarding_aria_label()}
   >
     <div
-      class="relative mx-4 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white px-8 py-10 shadow-2xl dark:bg-gray-900"
+      class="relative mx-4 max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white px-8 py-10 shadow-2xl dark:bg-gray-900"
     >
       <!-- Close button (completion screen only) -->
       {#if current === 6}
@@ -158,7 +158,7 @@
           type="button"
           onclick={dismissCompletion}
           aria-label={m.onboarding_close_aria_done()}
-          class="absolute right-4 top-4 rounded-full p-1.5 text-gray-700 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+          class="absolute top-4 right-4 rounded-full p-1.5 text-gray-700 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
         >
           <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -173,7 +173,7 @@
 
       <!-- Progress indicator (slides 1–4 only) -->
       {#if current <= TOTAL}
-        <div class="mb-6 mt-4 flex items-center gap-1.5">
+        <div class="mt-4 mb-6 flex items-center gap-1.5">
           {#each Array(TOTAL) as _, i (i)}
             <div
               class="h-1.5 flex-1 rounded-full transition-colors duration-300 {i + 1 <= current
@@ -233,7 +233,7 @@
           maxlength="40"
           placeholder={m.onboarding_s1_name_placeholder()}
           bind:value={displayName}
-          class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+          class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-white"
           onkeydown={(e) => {
             if (e.key === 'Enter') next();
           }}

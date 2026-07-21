@@ -497,9 +497,9 @@
             <tr class="border-b border-gray-100 opacity-50 dark:border-gray-800">
               <td class="py-2 pr-3"></td>
               <td class="py-2 pr-3 line-through dark:text-white">{e.norsk}</td>
-              <td class="py-2 pr-3 line-through text-gray-600 dark:text-gray-300">{e.english}</td>
-              <td class="py-2 pr-3 line-through text-gray-500">{e.category}</td>
-              <td class="py-2 pr-3 line-through text-gray-500">{e.part}</td>
+              <td class="py-2 pr-3 text-gray-600 line-through dark:text-gray-300">{e.english}</td>
+              <td class="py-2 pr-3 text-gray-500 line-through">{e.category}</td>
+              <td class="py-2 pr-3 text-gray-500 line-through">{e.part}</td>
               <td class="py-2 pr-3">
                 <span
                   class="rounded bg-red-100 px-2 py-0.5 text-xs text-red-700 dark:bg-red-900 dark:text-red-300"
