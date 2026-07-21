@@ -16,7 +16,7 @@ needs no new authored content. The static, hand-authored question format — `Gr
 content belongs. So **both** `draft/a1/grammar/pa-vei.md` (per-topic drills) and
 `draft/a1/quiz/pa-vei.md` (chapter-review exercises, more mixed) feed the same pipeline: new A1
 topics in `grammar.json`. They're complementary source material, not two output formats — quiz's
-chapter-review items are often a good source of a *second* sentence pattern for a topic already
+chapter-review items are often a good source of a _second_ sentence pattern for a topic already
 being drafted from the grammar file.
 
 **Copyright approach (unchanged from `c-grammar.md`):** every question is newly written, using
@@ -43,7 +43,7 @@ Two source strategies, used together:
   textbook item is the introductory version of the same rule (e.g. `noun-articles` already covers
   en/et/ei — the A1 "substantiv: ubestemt form" item is simpler versions of the same rule, not a
   different rule). This mirrors the existing precedent of topics spanning A2+B1
-  (`ikke-placement`, `preposisjoner-tid`, etc.) — a topic is one grammar *point*, not one CEFR
+  (`ikke-placement`, `preposisjoner-tid`, etc.) — a topic is one grammar _point_, not one CEFR
   level.
 - **New topics** for A1 grammar points that have no existing topic (subject/object pronouns,
   imperativ, denne/dette/disse, possessiver, preteritum, etc.).
@@ -55,7 +55,7 @@ each stays teachable in one sitting, consolidated enough to avoid near-duplicate
 
 **Recommendation: all new A1 content free (no `plusOnly`), and all 19 new A1-only topics added to
 `FREE_GRAMMAR_TOPICS`.** Rationale: A1 is the entry point for new users — currently `/grammar` has
-*nothing* to show them below A2, and gating the very first grammar content a beginner sees would
+_nothing_ to show them below A2, and gating the very first grammar content a beginner sees would
 undercut onboarding more than it protects revenue (the existing free/paid split already reserves
 plenty of depth at A2/B1/B2/C). The reused topics (`noun-articles`, `noun-plurals`,
 `adj-agreement`, `preposisjoner-tid`) already have all their existing questions non-`plusOnly`, so
@@ -66,7 +66,7 @@ the introductory versions) and leave the existing A2/B1 Plus questions as they a
 **Note found while reading `access.ts`/`config.ts`:** there are two independent gates —
 `FREE_GRAMMAR_TOPICS` (whether a topic is visible/free at all — currently just 4 topics:
 `ikke-placement`, `v2-word-order`, `det-er-ikke`, `modal-verb-order`) and `FREE_GRAMMAR_PER_TOPIC`
-= 3 (a global constant: free users get the first 3 non-`plusOnly` questions of *any* topic,
+= 3 (a global constant: free users get the first 3 non-`plusOnly` questions of _any_ topic,
 independent of the topic list above). How these two interact in the actual `/grammar` route
 (topic picker vs. in-session gating) should be confirmed in Phase 4 before assuming the
 recommendation above behaves as intended — the mechanism is a bit tangled and worth reading the
@@ -444,16 +444,43 @@ appears inside the uttrykk phrase "en venn av meg", which requires "meg" too to 
 match). Swapped the example to "sønn"/"sønner" (a real A1 vocab noun, same regular -er plural
 pattern). Re-ran: 222/222 matched, 0 unmatched.
 
-### Phase 4 — Gating + wiring
+### Phase 4 — Gating + wiring ✅ Done
 
-1. Confirm how `FREE_GRAMMAR_TOPICS` and `FREE_GRAMMAR_PER_TOPIC` actually interact in the
-   `/grammar` route loaders (see note under "Plus gating" above) before assuming the free-by-default
-   recommendation behaves as intended.
-2. Add all 19 new topics to `FREE_GRAMMAR_TOPICS` in `config.ts`; leave all new questions
-   (new + reused topics) `plusOnly: false`/omitted.
-3. Update the admin `+page.svelte` `TOPICS` constant so the new topics can be authored/edited
-   through the admin UI (same gap flagged in `c-grammar.md`'s Phase 1.5 note).
-4. Confirm `/grammar` and `/grammar/[topic]` pick up the new topics with no route changes.
+1. **Confirmed the `FREE_GRAMMAR_TOPICS` / `FREE_GRAMMAR_PER_TOPIC` interaction** by reading
+   `access.ts` and the `/grammar` + `/grammar/[topic]` route loaders directly:
+   - `FREE_GRAMMAR_TOPICS` only controls the **picker page** (`/grammar`). A topic in the set gets
+     a normal, clickable card; a topic _not_ in the set gets a locked card whose link goes straight
+     to `/plus` — for a non-Plus user, the picker never even links to `/grammar/[topic]` for a
+     topic outside this set.
+   - `FREE_GRAMMAR_PER_TOPIC` (= 3) is a _separate_, always-on cap applied inside
+     `/grammar/[topic]` itself (`freeGrammarQuestionIds`): regardless of `FREE_GRAMMAR_TOPICS`
+     membership, a non-Plus user who reaches the topic page only gets the first 3 non-`plusOnly`
+     questions (in file order) as playable — the rest require Plus. This is the existing
+     sample-then-upsell pattern (`modal-verb-order` already behaves this way).
+   - Net effect: `FREE_GRAMMAR_TOPICS` is a _discoverability_ gate (can a free user reach the topic
+     via the picker at all), `FREE_GRAMMAR_PER_TOPIC` is a _depth_ gate (how much of it they get
+     once there). Adding a topic to `FREE_GRAMMAR_TOPICS` does not grant unlimited free access —
+     it makes the topic reachable, still capped at 3 free questions per topic like everything else.
+2. **Gap found and resolved:** the plan as originally written only called for adding the 19 _new_
+   topics to `FREE_GRAMMAR_TOPICS`. But 6 of the 7 reused topics (`noun-articles`, `noun-plurals`,
+   `adj-agreement`, `noun-possessives`, `preposisjoner-tid`, `helsetninger`) were _not_ already in
+   `FREE_GRAMMAR_TOPICS` (only `modal-verb-order` was) — so their new A1 entries, while
+   `plusOnly: false`, would have been unreachable for free users (picker shows them locked, links
+   to `/plus`, never to the topic page). Confirmed with the user: added all 6 reused topics to
+   `FREE_GRAMMAR_TOPICS` as well, so their A1 content is actually discoverable. Side effect worth
+   noting: since `FREE_GRAMMAR_TOPICS` gates at the topic level (not per-`cefr`), this also makes
+   these 6 topics' pre-existing non-`plusOnly` A2+ entries reachable via the picker for the first
+   time — acceptable, since it doesn't loosen any individual question's own `plusOnly` flag, it
+   just exposes what was already flagged free.
+3. Added all 19 new topics + the 6 reused topics above to `FREE_GRAMMAR_TOPICS` in `config.ts`
+   (`modal-verb-order` was already present). All new questions (new + reused topics) are
+   `plusOnly: false`/omitted, unchanged.
+4. Updated the admin `+page.svelte` `TOPICS` constant to include the 19 new topics so they're
+   authorable/editable through the admin UI (same gap flagged in `c-grammar.md`'s Phase 1.5 note;
+   the pre-existing 24 C topics still aren't in this list either — out of scope here).
+5. Confirmed `/grammar` and `/grammar/[topic]` need **no route changes** — both derive their topic
+   list dynamically from `grammar.json` content (grouped by `q.topic` in file order), not from any
+   hardcoded topic array, so all 26 topic-touches are picked up automatically.
 
 ---
 
@@ -466,7 +493,6 @@ pattern). Re-ran: 222/222 matched, 0 unmatched.
 
 ## Open questions
 
-- Exact interaction of `FREE_GRAMMAR_TOPICS` vs. `FREE_GRAMMAR_PER_TOPIC` in the actual route
-  loaders — resolve in Phase 4 (see note above).
-- Chapter 10 has no source material in either draft file — confirm whether it's coming later or
-  genuinely out of scope before treating A1 grammar coverage as "complete."
+- Chapter 10 has no source material in either draft file — **resolved**: it's covered by
+  `ai-docs/implementation/a2-quiz-and-grammar.md` instead, as A2 content (chapters 10–16 of the
+  same textbook are a distinct, later CEFR level, not an extension of this A1 plan).
