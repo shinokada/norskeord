@@ -184,7 +184,7 @@
   <!-- svelte-ignore a11y_click_events_have_key_events -->
   <!-- svelte-ignore a11y_no_static_element_interactions -->
   <div
-    class="fixed inset-0 z-50 flex items-start justify-center bg-black/50 pt-[10vh] px-4"
+    class="fixed inset-0 z-50 flex items-start justify-center bg-black/50 px-4 pt-[10vh]"
     onclick={handleBackdropClick}
   >
     <!-- Modal panel -->
@@ -194,7 +194,7 @@
       aria-modal="true"
       tabindex="-1"
       aria-label={m.search_aria_label()}
-      class="w-full max-w-2xl rounded-xl bg-white shadow-2xl dark:bg-gray-900 overflow-hidden flex flex-col max-h-[80vh]"
+      class="flex max-h-[80vh] w-full max-w-2xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-gray-900"
       onkeydown={handleKeydown}
     >
       <!-- Search input -->
@@ -250,7 +250,7 @@
             </button>
           {/each}
         </div>
-        <div class="flex gap-1 flex-wrap" role="group" aria-label={m.search_filter_level()}>
+        <div class="flex flex-wrap gap-1" role="group" aria-label={m.search_filter_level()}>
           {#each LEVELS as lvl (lvl)}
             <button
               type="button"
@@ -269,7 +269,7 @@
       </div>
 
       <!-- Results -->
-      <div class="overflow-y-auto flex-1" role="listbox" aria-label={m.search_results_label()}>
+      <div class="flex-1 overflow-y-auto" role="listbox" aria-label={m.search_results_label()}>
         {#if loading}
           <div class="flex items-center justify-center py-10 text-gray-600 dark:text-gray-300">
             <svg class="mr-2 h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
@@ -330,7 +330,7 @@
                 {@html highlight(entry.english, query)}
               </div>
               {#if entry.example}
-                <div class="mt-0.5 text-xs italic text-gray-600 dark:text-gray-300 line-clamp-1">
+                <div class="mt-0.5 line-clamp-1 text-xs text-gray-600 italic dark:text-gray-300">
                   {entry.example}
                 </div>
               {/if}
@@ -347,7 +347,7 @@
       <!-- Footer hint -->
       {#if results.length > 0}
         <div
-          class="border-t border-gray-100 px-4 py-2 text-xs text-gray-400 dark:border-gray-800 dark:text-gray-300 flex gap-4"
+          class="flex gap-4 border-t border-gray-100 px-4 py-2 text-xs text-gray-400 dark:border-gray-800 dark:text-gray-300"
         >
           <span>↑↓ {m.search_hint_navigate()}</span>
           <span>↵ {m.search_hint_open()}</span>

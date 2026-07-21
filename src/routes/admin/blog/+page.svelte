@@ -557,8 +557,7 @@
                 <button class="mr-2 text-blue-600 hover:underline" onclick={() => openEdit(p)}
                   >✏</button
                 >
-                <button class="text-red-600 hover:underline" onclick={() => removePost(p)}
-                  >🗑</button
+                <button class="text-red-600 hover:underline" onclick={() => removePost(p)}>🗑</button
                 >
               </td>
             </tr>
@@ -574,7 +573,7 @@
               <td class="py-2 pr-3 font-mono text-xs line-through">{p.meta.slug}</td>
               <td class="py-2 pr-3 line-through">{cefrLabel(p.meta.cefr)}</td>
               <td class="py-2 pr-3 line-through">{p.meta.type ?? 'word'}</td>
-              <td class="py-2 pr-3 line-through whitespace-nowrap">{p.meta.publishedAt}</td>
+              <td class="py-2 pr-3 whitespace-nowrap line-through">{p.meta.publishedAt}</td>
               <td class="py-2 pr-3 line-through">{(p.meta.tags ?? []).join(', ')}</td>
               <td class="py-2 pr-3">
                 <span
@@ -630,7 +629,7 @@
             type="text"
             bind:value={modal.post.meta!.slug}
             placeholder="my-post-slug"
-            class="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm font-mono dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+            class="mt-1 w-full rounded border border-gray-300 px-2 py-1 font-mono text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
           />
           {#if modal.post.meta?.slug && !isValidSlug(modal.post.meta.slug)}
             <span class="text-xs text-red-600">lowercase letters, digits, and hyphens only</span>
@@ -643,9 +642,7 @@
             value={modal.post.meta?.type ?? 'word'}
             onchange={(e) =>
               (modal!.post.meta!.type = (e.currentTarget.value || undefined) as
-                | 'word'
-                | 'guide'
-                | undefined)}
+                'word' | 'guide' | undefined)}
             class="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
           >
             {#each TYPES as t (t)}
@@ -717,14 +714,14 @@
                 value={deck.level}
                 oninput={(e) => updateDeck(i, 'level', e.currentTarget.value)}
                 placeholder="a2"
-                class="w-20 rounded border border-gray-300 px-2 py-1 text-sm font-mono dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                class="w-20 rounded border border-gray-300 px-2 py-1 font-mono text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
               />
               <input
                 type="text"
                 value={deck.category}
                 oninput={(e) => updateDeck(i, 'category', e.currentTarget.value)}
                 placeholder="category-slug"
-                class="flex-1 rounded border border-gray-300 px-2 py-1 text-sm font-mono dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                class="flex-1 rounded border border-gray-300 px-2 py-1 font-mono text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
               />
               <input
                 type="text"

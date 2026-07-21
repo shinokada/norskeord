@@ -332,6 +332,9 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     titleEn: 'Place & relation prepositions',
     titleNb: 'Stedspreposisjoner og relasjonspreposisjoner',
     explanationEn:
+      'For a fixed spatial relationship — i (inside), på (on/at), bak (behind), foran (in front of), ' +
+      'under (under), over (above) — the choice stays the same whether something is standing still ' +
+      'or being placed: "Boka ligger på bordet." "Katten ligger under stolen." ' +
       '«I» = inside an enclosed space: i skapet, i skogen, i banken, i en butikk. ' +
       '«På» = on a surface or open area, and for most workplaces: på bordet, på fjellet, på kontor, på skolen, på kafé. ' +
       'Geography: «i» for countries, cities, and regions (i Japan, i Bergen, i Nord-Norge); «på» for islands (på Mallorca, på Island) and Norwegian districts (på Vestlandet). ' +
@@ -341,6 +344,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '«Av» = made of (material): «laget av tre.» «Fra» = coming from (origin): «fra hagen.» ' +
       'Compound prepositions: ved siden av (next to), i nærheten av (near), i stedet for (instead of), på grunn av (because of), ved hjelp av (with the help of).',
     explanationNb:
+      'For et fast romlig forhold — i, på, bak, foran, under, over — er valget det samme enten noe ' +
+      'står i ro eller blir plassert: «Boka ligger på bordet.» «Katten ligger under stolen.» ' +
       '«I» = innenfor et lukket rom: i skapet, i skogen, i banken, i en butikk. ' +
       '«På» = på overflaten eller et åpent område, og for de fleste arbeidsplasser: på bordet, på fjellet, på kontor, på skolen, på kafé. ' +
       'Geografi: «i» for land, byer og regioner (i Japan, i Bergen, i Nord-Norge); «på» for øyer (på Mallorca, på Island) og norske landsdeler (på Vestlandet). ' +
@@ -622,6 +627,47 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '"Jeg tror hun kommer senere."'
   },
 
+  // ── Nivå A1 topics (free), pt. 2 ── see ai-docs/implementation/a1-update.md ─────────────────
+
+  'klokka-tid': {
+    id: 'klokka-tid',
+    titleEn: 'Telling time',
+    titleNb: 'Klokka',
+    explanationEn:
+      '«Halv» + a number means half past the PREVIOUS hour: "halv åtte" = 7:30, not 8:30. ' +
+      '«Kvart over/på» and «N minutter over/på» work the same way, anchored to the nearest hour or ' +
+      'half-hour: "ti på halv sju" = 6:20, "fem over halv seks" = 5:35.',
+    explanationNb:
+      '«Halv» + et tall betyr halv time før timen: "halv åtte" = 7.30, ikke 8.30. «Kvart over/på» ' +
+      'og «N minutter over/på» fungerer på samme måte, forankret til nærmeste hele eller halve time.'
+  },
+
+  'ordenstall-dato': {
+    id: 'ordenstall-dato',
+    titleEn: 'Ordinal numbers and dates',
+    titleNb: 'Ordenstall og dato',
+    explanationEn:
+      'Ordinals (tredje, sjuende, syttende) mostly add -ende to the cardinal, with irregulars for ' +
+      '1st–4th (første, andre, tredje, fjerde). Dates combine day-ordinal + month-ordinal: "17.05." ' +
+      '= "syttende i femte", or day-ordinal + month name: "den 17. mai."',
+    explanationNb:
+      'Ordenstall (tredje, sjuende, syttende) legger for det meste til -ende til grunntallet, med ' +
+      'uregelmessige former for 1.–4. (første, andre, tredje, fjerde). Datoer kombinerer ' +
+      'dag-ordenstall + måned-ordenstall: "17.05." = "syttende i femte."'
+  },
+
+  'for-siden': {
+    id: 'for-siden',
+    titleEn: '«for … siden» (time ago)',
+    titleNb: '«for … siden»',
+    explanationEn:
+      'To say how long ago something happened, Norwegian frames the duration with «for» … «siden»: ' +
+      '"for to uker siden" (two weeks ago), "for en time siden" (an hour ago).',
+    explanationNb:
+      'For å si hvor lenge siden noe skjedde, rammer norsk inn tidsrommet med «for» … «siden»: ' +
+      '"for to uker siden," "for en time siden."'
+  },
+
   // ── Nivå C topics (Plus only) ──────────────────────────────────────────────────────────────
 
   'ubestemt-artikkel-c': {
@@ -749,14 +795,14 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Choosing between the bare infinitive (after modals, "pleier," "begynner") and the ' +
       'conjugated presens form is an A1/A2 rule, but applying it correctly across a long sentence ' +
       'with three or four verb slots at once is a genuine accuracy challenge at C level. ' +
-      'Questions use the actual C-level verbs from `draft/c/grammar/25-39-verb.md` items 25–27 ' +
+      'Questions use the actual C-level verbs from `draft/c/Norsk-for-deg/grammar25-39-verb.md` items 25–27 ' +
       '(cross-checked against `vocab-c.json`), not generic A1 verbs, so the vocabulary load ' +
       'matches the rest of the C-level content.',
     explanationNb:
       'Å velge mellom bar infinitiv (etter modale hjelpeverb, «pleier», «begynner») og bøyd ' +
       'presensform er en A1/A2-regel, men å bruke den riktig gjennom en lang setning med tre eller ' +
       'fire verbplasser samtidig er en reell presisjonsutfordring på nivå C. Spørsmålene bruker de ' +
-      'faktiske nivå C-verbene fra `draft/c/grammar/25-39-verb.md` punkt 25–27 (kryssjekket mot ' +
+      'faktiske nivå C-verbene fra `draft/c/Norsk-for-deg/grammar25-39-verb.md` punkt 25–27 (kryssjekket mot ' +
       '`vocab-c.json`), ikke generiske A1-verb, slik at ordforrådet passer med resten av ' +
       'nivå-C-innholdet.'
   },
