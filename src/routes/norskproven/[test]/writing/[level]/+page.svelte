@@ -134,8 +134,7 @@
           class="w-full resize-y rounded-xl border px-4 py-3 text-sm leading-relaxed text-gray-800 transition-colors focus:ring-2 focus:ring-blue-300 focus:outline-none dark:text-gray-200 dark:placeholder-gray-500
 						{writingState === 'revealed'
             ? 'border-gray-200 bg-gray-50 dark:border-gray-600 dark:bg-gray-900'
-            : 'border-gray-300 bg-white dark:border-gray-600 dark:bg-indigo-950/60'}"
-        ></textarea>
+            : 'border-gray-300 bg-white dark:border-gray-600 dark:bg-indigo-950/60'}"></textarea>
 
         <div class="mt-1 flex items-center justify-between">
           <span

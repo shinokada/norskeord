@@ -184,6 +184,10 @@ export type GrammarTopic =
   | 'vaer-det-subjekt' // impersonal/weather «det»: Det regner, Det blåser
   | 'indirekte-tale-at-om' // reported statement with «at» vs. reported yes/no question with «om»
   | 'synes-tror' // synes (opinion) vs. tror (belief/uncertainty)
+  // Nivå A1 topics (free), pt. 2 — see ai-docs/implementation/a1-update.md
+  | 'klokka-tid' // telling time: hel/halv + kvart på/over + N over/på halv
+  | 'ordenstall-dato' // ordinal formation + date phrasing (den 3. juni / tredje i sjette)
+  | 'for-siden' // «for + duration + siden» = time elapsed since an event
   // Nivå C topics (Plus only) — see ai-docs/implementation/c-grammar.md
   | 'ubestemt-artikkel-c' // indefinite article — professions+adjective, uncountables, transport, uttrykk, optional article
   | 'substantiv-uttrykk-c' // noun forms inside fixed idioms (ta hånd om, stå til liv, gå som fot i hose)
