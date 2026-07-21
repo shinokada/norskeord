@@ -9598,5 +9598,711 @@
     "answer": "A",
     "explanation": "Hus is an et-word, so it's referred back to with det, not den.",
     "hint": "Match the pronoun to the original noun's gender: hus → det."
+  },
+  {
+    "id": "gq-adj-021",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct adjective form.",
+    "sentence": "Jeg har en _____ bil.",
+    "words": [
+      "stor",
+      "stort",
+      "store"
+    ],
+    "answer": "stor",
+    "hint": "En-word, singular, indefinite: no ending on the adjective."
+  },
+  {
+    "id": "gq-adj-022",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct adjective form.",
+    "sentence": "Vi bor i et _____ hus.",
+    "words": [
+      "stort",
+      "stor",
+      "store"
+    ],
+    "answer": "stort",
+    "hint": "Et-word, singular, indefinite: adjective adds -t."
+  },
+  {
+    "id": "gq-adj-023",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct adjective form.",
+    "sentence": "De har _____ hunder.",
+    "words": [
+      "store",
+      "stor",
+      "stort"
+    ],
+    "answer": "store",
+    "hint": "Plural: adjective adds -e, for every gender."
+  },
+  {
+    "id": "gq-adj-024",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite correctly — fix the adjective ending.",
+    "source": "Hun har en gammelt bil.",
+    "answer": "Hun har en gammel bil.",
+    "hint": "En-word, singular, indefinite: no ending on the adjective."
+  },
+  {
+    "id": "gq-adj-025",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite correctly — fix the adjective ending.",
+    "source": "Han har et ny sykkel.",
+    "answer": "Han har en ny sykkel.",
+    "hint": "Sykkel is an en-word, not et — the article must match too."
+  },
+  {
+    "id": "gq-adj-026",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Vi har en liten katt.",
+    "optionB": "Vi har en lite katt.",
+    "answer": "A",
+    "explanation": "Liten is irregular: en-word singular takes liten, not lite.",
+    "hint": "Liten (en), lita (ei), lite (et), små (plural) — an irregular set."
+  },
+  {
+    "id": "gq-adj-027",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "har",
+      "Jeg",
+      "et",
+      "fint",
+      "hus"
+    ],
+    "answer": "Jeg har et fint hus.",
+    "alternates": [
+      "Jeg har et fint hus"
+    ],
+    "hint": "Et-word, singular, indefinite: adjective adds -t."
+  },
+  {
+    "id": "gq-adj-028",
+    "topic": "adj-agreement",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct adjective form.",
+    "sentence": "Barna er _____.",
+    "words": [
+      "glade",
+      "glad",
+      "glatt"
+    ],
+    "answer": "glade",
+    "hint": "Plural subject: adjective adds -e."
+  },
+  {
+    "id": "gq-dendisse-001",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «denne», «dette», or «disse».",
+    "sentence": "_____ genseren er fin.",
+    "words": [
+      "Denne",
+      "Dette",
+      "Disse"
+    ],
+    "answer": "Denne",
+    "hint": "Genser is an en-word, singular → denne."
+  },
+  {
+    "id": "gq-dendisse-002",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «denne», «dette», or «disse».",
+    "sentence": "_____ huset er nytt.",
+    "words": [
+      "Dette",
+      "Denne",
+      "Disse"
+    ],
+    "answer": "Dette",
+    "hint": "Hus is an et-word, singular → dette."
+  },
+  {
+    "id": "gq-dendisse-003",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «denne», «dette», or «disse».",
+    "sentence": "_____ skoene passer.",
+    "words": [
+      "Disse",
+      "Denne",
+      "Dette"
+    ],
+    "answer": "Disse",
+    "hint": "Skoene is plural → disse."
+  },
+  {
+    "id": "gq-dendisse-004",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «denne», «dette», or «disse».",
+    "sentence": "Liker du _____ jakken?",
+    "words": [
+      "denne",
+      "dette",
+      "disse"
+    ],
+    "answer": "denne",
+    "hint": "Jakke is an en-word, singular → denne."
+  },
+  {
+    "id": "gq-dendisse-005",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "er",
+      "Denne",
+      "boka",
+      "god"
+    ],
+    "answer": "Denne boka er god.",
+    "alternates": [
+      "Denne boka er god"
+    ],
+    "hint": "Bok is an en/ei-word, singular → denne."
+  },
+  {
+    "id": "gq-dendisse-006",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Dette skjerfet er på tilbud.",
+    "optionB": "Denne skjerfet er på tilbud.",
+    "answer": "A",
+    "explanation": "Skjerf is an et-word, so it takes dette, not denne.",
+    "hint": "Match the demonstrative to the noun's gender: skjerf → dette."
+  },
+  {
+    "id": "gq-dendisse-007",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Translate into Norwegian.",
+    "source": "This apple (et eple) is sweet.",
+    "answer": "Dette eplet er søtt.",
+    "alternates": [
+      "Dette eplet er søtt"
+    ],
+    "hint": "Eple is an et-word, singular → dette."
+  },
+  {
+    "id": "gq-dendisse-008",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «denne», «dette», or «disse».",
+    "sentence": "_____ barna er trette.",
+    "words": [
+      "Disse",
+      "Denne",
+      "Dette"
+    ],
+    "answer": "Disse",
+    "hint": "Barna is plural → disse."
+  },
+  {
+    "id": "gq-dendisse-009",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "kjøper",
+      "Jeg",
+      "denne",
+      "bilen"
+    ],
+    "answer": "Jeg kjøper denne bilen.",
+    "alternates": [
+      "Jeg kjøper denne bilen"
+    ],
+    "hint": "Bil is an en-word, singular → denne."
+  },
+  {
+    "id": "gq-dendisse-010",
+    "topic": "denne-dette-disse",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Disse hanskene er varme.",
+    "optionB": "Denne hanskene er varme.",
+    "answer": "A",
+    "explanation": "Hanskene is plural, so it takes disse, not denne.",
+    "hint": "A plural noun always takes disse, regardless of gender."
+  },
+  {
+    "id": "gq-imp-001",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Turn into an imperative.",
+    "source": "Du må huske stor bokstav.",
+    "answer": "Husk stor bokstav!",
+    "alternates": [
+      "Husk stor bokstav"
+    ],
+    "hint": "Imperative = infinitive minus the final -e: huske → husk."
+  },
+  {
+    "id": "gq-imp-002",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Turn into an imperative.",
+    "source": "Dere må snakke norsk.",
+    "answer": "Snakk norsk!",
+    "alternates": [
+      "Snakk norsk"
+    ],
+    "hint": "Imperative = infinitive minus the final -e: snakke → snakk."
+  },
+  {
+    "id": "gq-imp-003",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct imperative form.",
+    "sentence": "_____ boka!",
+    "words": [
+      "Les",
+      "Lese",
+      "Leser"
+    ],
+    "answer": "Les",
+    "hint": "lese → les (drop the final -e)."
+  },
+  {
+    "id": "gq-imp-004",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct imperative form.",
+    "sentence": "_____ vinduet!",
+    "words": [
+      "Lukk",
+      "Lukke",
+      "Lukker"
+    ],
+    "answer": "Lukk",
+    "hint": "lukke → lukk (drop the final -e)."
+  },
+  {
+    "id": "gq-imp-005",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Kom hit!",
+    "optionB": "Kommer hit!",
+    "answer": "A",
+    "explanation": "The imperative uses the bare stem (komme → kom), not the presens form.",
+    "hint": "Imperative never has an -r ending."
+  },
+  {
+    "id": "gq-imp-006",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Vær snill!",
+    "optionB": "Du vær snill!",
+    "answer": "A",
+    "explanation": "An imperative has no subject — «du» is dropped entirely.",
+    "hint": "Imperative sentences never include the subject."
+  },
+  {
+    "id": "gq-imp-007",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "Kjøp",
+      "brød"
+    ],
+    "answer": "Kjøp brød!",
+    "alternates": [
+      "Kjøp brød"
+    ],
+    "hint": "kjøpe → kjøp (drop the final -e)."
+  },
+  {
+    "id": "gq-imp-008",
+    "topic": "imperativ",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Turn into an imperative.",
+    "source": "Du må spise frokost.",
+    "answer": "Spis frokost!",
+    "alternates": [
+      "Spis frokost"
+    ],
+    "hint": "spise → spis (drop the final -e)."
+  },
+  {
+    "id": "gq-possmindin-001",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct possessive.",
+    "sentence": "Bilen _____ er ny.",
+    "words": [
+      "min",
+      "mi",
+      "mitt"
+    ],
+    "answer": "min",
+    "hint": "Bil is an en-word → min."
+  },
+  {
+    "id": "gq-possmindin-002",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct possessive.",
+    "sentence": "Huset _____ er stort.",
+    "words": [
+      "mitt",
+      "min",
+      "mi"
+    ],
+    "answer": "mitt",
+    "hint": "Hus is an et-word → mitt."
+  },
+  {
+    "id": "gq-possmindin-003",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct possessive.",
+    "sentence": "Skoene _____ er nye.",
+    "words": [
+      "mine",
+      "min",
+      "mitt"
+    ],
+    "answer": "mine",
+    "hint": "Skoene is plural → mine."
+  },
+  {
+    "id": "gq-possmindin-004",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite in everyday spoken order (noun first).",
+    "source": "min leilighet",
+    "answer": "leiligheten min",
+    "hint": "Spoken Norwegian usually puts the possessive after the noun."
+  },
+  {
+    "id": "gq-possmindin-005",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite in everyday spoken order (noun first).",
+    "source": "din bil",
+    "answer": "bilen din",
+    "hint": "Spoken Norwegian usually puts the possessive after the noun."
+  },
+  {
+    "id": "gq-possmindin-006",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct possessive.",
+    "sentence": "Er dette genseren _____?",
+    "words": [
+      "din",
+      "di",
+      "ditt"
+    ],
+    "answer": "din",
+    "hint": "Genser is an en-word → din."
+  },
+  {
+    "id": "gq-possmindin-007",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Dette er bilen hans.",
+    "optionB": "Dette er bilen hanses.",
+    "answer": "A",
+    "explanation": "Hans never takes an ending, unlike min/din.",
+    "hint": "hans, hennes, and deres are always the same form."
+  },
+  {
+    "id": "gq-possmindin-008",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "Jakken",
+      "er",
+      "fin",
+      "vår"
+    ],
+    "answer": "Jakken vår er fin.",
+    "alternates": [
+      "Jakken vår er fin"
+    ],
+    "hint": "Jakke is an en-word → vår, placed after the noun."
+  },
+  {
+    "id": "gq-possmindin-009",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct possessive.",
+    "sentence": "Barna _____ er glade.",
+    "words": [
+      "våre",
+      "vår",
+      "vårt"
+    ],
+    "answer": "våre",
+    "hint": "Barna is plural → våre."
+  },
+  {
+    "id": "gq-possmindin-010",
+    "topic": "possessiver-min-din",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct possessive.",
+    "sentence": "Er dette veska _____?",
+    "words": [
+      "deres",
+      "deress",
+      "derest"
+    ],
+    "answer": "deres",
+    "hint": "Deres never inflects."
+  },
+  {
+    "id": "gq-reflposs-001",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «sin» or «hans».",
+    "sentence": "Erik vasker bilen _____.",
+    "words": [
+      "sin",
+      "hans"
+    ],
+    "answer": "sin",
+    "hint": "The possessor (Erik) is the subject and owns his own car → sin."
+  },
+  {
+    "id": "gq-reflposs-002",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «sin» or «hans».",
+    "sentence": "Erik sitter i bilen _____ til broren.",
+    "words": [
+      "hans",
+      "sin"
+    ],
+    "answer": "hans",
+    "hint": "The car belongs to someone else, not the subject → hans."
+  },
+  {
+    "id": "gq-reflposs-003",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «sin» or «hennes».",
+    "sentence": "Ingrid tar på genseren _____.",
+    "words": [
+      "sin",
+      "hennes"
+    ],
+    "answer": "sin",
+    "hint": "Genser is an en-word, and it's her own sweater → sin."
+  },
+  {
+    "id": "gq-reflposs-004",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «sitt» or «hennes».",
+    "sentence": "Ingrid leser brevet _____.",
+    "words": [
+      "sitt",
+      "hennes"
+    ],
+    "answer": "sitt",
+    "hint": "Brev is an et-word, and the letter is her own → sitt."
+  },
+  {
+    "id": "gq-reflposs-005",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «sine» or «hennes».",
+    "sentence": "Ingrid henter bøkene _____.",
+    "words": [
+      "sine",
+      "hennes"
+    ],
+    "answer": "sine",
+    "hint": "Bøkene is plural, and the books are her own → sine."
+  },
+  {
+    "id": "gq-reflposs-006",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Petter vasker leiligheten sin.",
+    "optionB": "Petter vasker leiligheten hans.",
+    "answer": "A",
+    "explanation": "Petter is the subject and owns the apartment himself, so it's sin, not hans.",
+    "hint": "When the subject owns the object, use sin/sitt/sine."
+  },
+  {
+    "id": "gq-reflposs-007",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Ingrid kjører bilen til søsteren hennes.",
+    "optionB": "Ingrid kjører bilen til søsteren sin.",
+    "answer": "A",
+    "explanation": "The car belongs to the sister, someone else, so it's hennes, not sin.",
+    "hint": "When the owner is someone other than the subject, use hans/hennes."
+  },
+  {
+    "id": "gq-reflposs-008",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Rewrite correctly — the subject owns the object.",
+    "source": "Magnus leser boka hennes.",
+    "answer": "Magnus leser boka si.",
+    "alternates": [
+      "Magnus leser boka sin"
+    ],
+    "hint": "If Magnus owns the book himself, the possessive must be sin/si, not hennes."
+  },
+  {
+    "id": "gq-reflposs-009",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "Hun",
+      "vasker",
+      "hendene",
+      "sine"
+    ],
+    "answer": "Hun vasker hendene sine.",
+    "alternates": [
+      "Hun vasker hendene sine"
+    ],
+    "hint": "Hendene is plural and belongs to the subject → sine."
+  },
+  {
+    "id": "gq-reflposs-010",
+    "topic": "refleksivt-possessiv-sin",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose «sin» or «hans».",
+    "sentence": "Kari snakker med naboen _____ til Jonas.",
+    "words": [
+      "hans",
+      "sin"
+    ],
+    "answer": "hans",
+    "hint": "The neighbor belongs to Jonas, not to the subject Kari → hans."
+  },
+  {
+    "id": "gq-noun-pos-007",
+    "topic": "noun-possessives",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Write the possessive form.",
+    "source": "Ingrid + bil",
+    "answer": "Ingrids bil",
+    "hint": "Add -s directly, no apostrophe."
+  },
+  {
+    "id": "gq-noun-pos-008",
+    "topic": "noun-possessives",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Write the possessive form.",
+    "source": "Jonas + hund",
+    "answer": "Jonas' hund",
+    "hint": "A name already ending in -s just adds an apostrophe, no extra -s."
+  },
+  {
+    "id": "gq-noun-pos-009",
+    "topic": "noun-possessives",
+    "cefr": "A1",
+    "type": "minimal-pair",
+    "optionA": "Petters jakke er ny.",
+    "optionB": "Petter's jakke er ny.",
+    "answer": "A",
+    "explanation": "Norwegian genitive never uses an apostrophe before -s: Petters, not Petter's.",
+    "hint": "An apostrophe before -s is an English habit, not Norwegian."
+  },
+  {
+    "id": "gq-noun-pos-010",
+    "topic": "noun-possessives",
+    "cefr": "A1",
+    "type": "fill",
+    "prompt": "Choose the correct possessive form.",
+    "sentence": "Dette er _____ (mor) bil.",
+    "words": [
+      "mors",
+      "mor's",
+      "mor sin"
+    ],
+    "answer": "mors",
+    "hint": "Add -s directly to the noun, no apostrophe."
+  },
+  {
+    "id": "gq-noun-pos-011",
+    "topic": "noun-possessives",
+    "cefr": "A1",
+    "type": "order",
+    "tokens": [
+      "er",
+      "Dette",
+      "Karis",
+      "genser"
+    ],
+    "answer": "Dette er Karis genser.",
+    "alternates": [
+      "Dette er Karis genser"
+    ],
+    "hint": "Kari + s = Karis, no apostrophe."
+  },
+  {
+    "id": "gq-noun-pos-012",
+    "topic": "noun-possessives",
+    "cefr": "A1",
+    "type": "transform",
+    "prompt": "Write the possessive form.",
+    "source": "barnet + bok",
+    "answer": "barnets bok",
+    "hint": "Add -s directly to the noun, no apostrophe."
   }
 ]

@@ -420,12 +420,12 @@ a sanity check than the C-level triage exercise.
 11. `modal-verb-order` (A1 entries) ✅ Done
 12. `substantiv-bestemt-form` ✅ Done
 13. `pronomen-den-det-de` ✅ Done
-14. `adj-agreement` (A1 entries)
-15. `denne-dette-disse`
-16. `imperativ`
-17. `possessiver-min-din`
-18. `refleksivt-possessiv-sin`
-19. `noun-possessives` (A1 entries)
+14. `adj-agreement` (A1 entries) ✅ Done
+15. `denne-dette-disse` ✅ Done
+16. `imperativ` ✅ Done
+17. `possessiver-min-din` ✅ Done
+18. `refleksivt-possessiv-sin` ✅ Done
+19. `noun-possessives` (A1 entries) ✅ Done
 20. `ja-jo`
 21. `preteritum-a1`
 22. `for-a-fordi`
