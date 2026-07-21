@@ -74,9 +74,6 @@ describe('uttrykkThemeStatsForLevel', () => {
 describe('grammarTopicStatsForLevel', () => {
   const allQuestions = grammarData as GrammarQuestion[];
 
-  // Grammar content starts at A2 (see rules.ts / grammar.json — there are no
-  // A1 grammar topics today), so A2 is used for the "has real data" checks
-  // below, and A1 is checked separately as the "genuinely empty" case.
   it('only includes topics that have at least one question at this level', () => {
     const rows = grammarTopicStatsForLevel('A2', {}, false);
     const a2TopicsInData = new Set(allQuestions.filter((q) => q.cefr === 'A2').map((q) => q.topic));
@@ -87,10 +84,14 @@ describe('grammarTopicStatsForLevel', () => {
     }
   });
 
-  it('returns no rows for a level with no grammar questions at all (A1)', () => {
+  it('only includes topics that have at least one question at this level (A1)', () => {
+    const rows = grammarTopicStatsForLevel('A1', {}, false);
     const a1TopicsInData = new Set(allQuestions.filter((q) => q.cefr === 'A1').map((q) => q.topic));
-    expect(a1TopicsInData.size).toBe(0);
-    expect(grammarTopicStatsForLevel('A1', {}, false)).toEqual([]);
+    expect(a1TopicsInData.size).toBeGreaterThan(0);
+    expect(rows.length).toBe(a1TopicsInData.size);
+    for (const row of rows) {
+      expect(a1TopicsInData.has(row.key as GrammarTopic)).toBe(true);
+    }
   });
 
   it('never shows a C-only topic under a non-C level', () => {
