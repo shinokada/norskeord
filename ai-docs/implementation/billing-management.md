@@ -144,13 +144,13 @@ lets the user pick Monthly or Annual before hitting checkout.
 
 ```svelte
 <!-- Plan toggle -->
-<div class="mb-5 inline-flex rounded-lg border border-indigo-200 dark:border-indigo-700 p-1">
+<div class="mb-5 inline-flex rounded-lg border border-indigo-200 p-1 dark:border-indigo-700">
   <button
     type="button"
     onclick={() => (billingInterval = 'month')}
     class={billingInterval === 'month'
       ? 'rounded-md bg-indigo-600 px-4 py-1.5 text-sm font-semibold text-white'
-      : 'px-4 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'}
+      : 'px-4 py-1.5 text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'}
   >
     Monthly
   </button>
@@ -159,7 +159,7 @@ lets the user pick Monthly or Annual before hitting checkout.
     onclick={() => (billingInterval = 'year')}
     class={billingInterval === 'year'
       ? 'rounded-md bg-indigo-600 px-4 py-1.5 text-sm font-semibold text-white'
-      : 'px-4 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'}
+      : 'px-4 py-1.5 text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'}
   >
     Annual <span class="ml-1 text-xs font-medium text-green-600 dark:text-green-400"
       >2 months free</span

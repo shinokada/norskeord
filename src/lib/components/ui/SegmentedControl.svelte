@@ -51,7 +51,7 @@
       />
       <label
         for="{name}-{opt.value}"
-        class="cursor-pointer select-none rounded-md px-3 py-1.5 text-sm font-medium transition-colors duration-150
+        class="cursor-pointer rounded-md px-3 py-1.5 text-sm font-medium transition-colors duration-150 select-none
           {selected === opt.value
           ? 'bg-white text-indigo-700 shadow-sm dark:bg-indigo-600 dark:text-white'
           : 'text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200'}"

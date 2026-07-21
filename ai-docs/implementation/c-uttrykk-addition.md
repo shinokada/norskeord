@@ -3,14 +3,14 @@
 ## Background
 
 While planning `c-grammar.md`'s `uttrykk-gjenkjenning-c-1/2/3` topics, an overlap check found
-that of 396 bolded idiom sentences across `draft/c/grammar/83-92.md` and `93-103.md`, only ~20 of
+that of 396 bolded idiom sentences across `draft/c/Norsk-for-deg/grammar83-92.md` and `93-103.md`, only ~20 of
 381 existing `uttrykk-c.json` entries match something in that range — the textbook's idiom set
 (items 83–103) is a large, mostly-untapped source of C-level `uttrykk` material, separate from
 the items 1–8 idioms (ta hånd om, stå til liv, etc.) that `uttrykk-c.json` was originally built
 around.
 
 `ai-docs/implementation/c-uttrykk-missing-candidates.json` holds the raw candidate list, built by
-cross-referencing the bolded idiom sentences from items 83–103 against `draft/c/grammar/answers.md`
+cross-referencing the bolded idiom sentences from items 83–103 against `draft/c/Norsk-for-deg/grammaranswers.md`
 (for the correct paraphrase) and against `uttrykk-c.json` (to exclude anything already covered).
 
 **Note on the candidate count:** `c-uttrykk-missing-candidates-readme.json` records
@@ -58,7 +58,7 @@ Go through all 264 candidates and assign each one a bucket:
   of its own (e.g. _funkle → blinke_, _døsig → halvsove_); not worth a card in either file. Also
   skip anything whose Norwegian meaning can't be pinned down confidently from `sentence` +
   `correct_paraphrase` alone (the two `null`-paraphrase entries, and any borderline case) —
-  cross-check `draft/c/grammar/answers.md` directly rather than guessing.
+  cross-check `draft/c/Norsk-for-deg/grammaranswers.md` directly rather than guessing.
 
 Do this pass manually (or with a lightweight `.mjs` helper that just prints each candidate for
 review) rather than trying to automate the vocab/uttrykk judgment call — it's exactly the kind of
