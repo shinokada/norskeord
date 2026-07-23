@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.57.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added A1 practice for telling time, dates, spatial prepositions, and time-ago expressions.
+    - Expanded A1 vocabulary with prepositions, ordinal numbers, transportation, and housing terms.
+    - Added new A1 vocabulary categories for prepositions and housing.
+    - Added extensive Norwegian grammar exercises and answer keys covering levels A1–C.
+  - **Documentation**
+    - Expanded grammar implementation plans, reclassification guidance, and Norwegian-only content planning.
+    - Added reference material for abbreviations, grammar rules, and advanced exercises.
+  - **Style**
+    - Refined visual styling across navigation, onboarding, search, flashcards, and account screens.
+
 ## 2.56.0
 
 ### Minor Changes

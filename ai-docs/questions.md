@@ -6,10 +6,48 @@ svelte mcp server is running.
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
-I created ai-docs/implementation/grammar-with-only-norsk.md. 
-Can you start implementing Phase 1. Please use a small batch number to avoid no update due to session limits.
+---
+
+I created an empty ai-docs/implementation/quiz-with-only-norsk.md file to write implementation plan.
+
+1. Quiz category names should be norwegian or use i18n. We need to update `category` feild to Norwegian and related files, config.ts, test files, scripts directory files, src/routes/api/progress-report,
+
+2. Many quiz questions have English. How can I improve so that questions is only Norwegian. For Level A1/A2/B1, can we use spanish, ukrainian, german, norsk, english i18n fields for multiple choice and hints?
+   Or use the definition field?
+   Re
+
+```
+Skriv det norske ordet for
+
+"to fetch / pick up"
+```
+
+```
+å slutte — to finish / stop
+```
+
+```
+A
+warm / hot
+✓
+B
+a door
+C
+red
+✗
+D
+to want
+```
+
+```
+Skriv det norske ordet for
+
+"empty"
+```
 
 ---
+
+i18n cleanup script: script/cleanup-i18n.xxx should find items not used in src dir and clean up all files in messages directory.
 
 ---
 

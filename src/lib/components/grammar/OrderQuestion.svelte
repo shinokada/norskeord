@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { GrammarQuestion } from '$lib/types';
   import { shuffleTokens } from '$lib/grammar/session';
-  import * as m from '$lib/paraglide/messages';
 
   let { question, onsubmit }: { question: GrammarQuestion; onsubmit: (answer: string) => void } =
     $props();
@@ -21,14 +20,14 @@
 </script>
 
 <p class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300">
-  {m.grammar_order_prompt()}
+  Skriv setningen i riktig rekkefølge
 </p>
 
 {#if question.prompt}
   <p class="mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">{question.prompt}</p>
 {/if}
 
-<p class="mb-2 text-xs text-gray-600 dark:text-gray-300">{m.grammar_order_words()}</p>
+<p class="mb-2 text-xs text-gray-600 dark:text-gray-300">Ord du skal bruke</p>
 <div class="mb-4 flex flex-wrap gap-2">
   {#each chips as token, i (i)}
     <span
@@ -44,7 +43,7 @@
     bind:this={inputRef}
     type="text"
     bind:value
-    placeholder={m.grammar_input_placeholder()}
+    placeholder="Skriv svaret ditt…"
     onkeydown={(e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
@@ -58,7 +57,7 @@
     onclick={() => onsubmit(value)}
     class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
   >
-    {m.grammar_check()}
+    Sjekk
   </button>
 </div>
 <div class="mt-3">
@@ -67,6 +66,6 @@
     onclick={() => onsubmit('')}
     class="text-xs text-gray-400 hover:text-gray-600 hover:underline dark:hover:text-gray-300"
   >
-    {m.grammar_skip()}
+    Hopp over
   </button>
 </div>

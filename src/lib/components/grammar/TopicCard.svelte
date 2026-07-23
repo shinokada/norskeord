@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Badge } from 'flowbite-svelte';
   import type { CEFRLevel, GrammarRule, GrammarTopic } from '$lib/types';
-  import { localeStore } from '$lib/localeStore.svelte';
   import { cefrColors } from '$lib/blog';
   import * as m from '$lib/paraglide/messages';
 
@@ -17,14 +16,9 @@
     levels: CEFRLevel[];
   } = $props();
 
-  let isNb = $derived(localeStore.current === 'nb');
-  // Nivå C assumes near-native comprehension, so its topic cards are hardcoded
-  // to Norwegian — not locale-dependent at all. Same reasoning as the C-level
-  // question content (see ai-docs/implementation/c-grammar-norsk-instruksjoner.md).
-  let forceNb = $derived(levels.includes('C'));
-  let title = $derived(
-    rule ? (forceNb ? rule.titleNb : isNb ? rule.titleNb : rule.titleEn) : topic
-  );
+  // Grammar questions are Norwegian-only at every level (see
+  // ai-docs/implementation/grammar-with-only-norsk.md).
+  let title = $derived(rule ? rule.titleNb : topic);
 </script>
 
 <a
@@ -47,6 +41,6 @@
   </p>
 
   <p class="mt-1 line-clamp-2 text-sm text-gray-500 sm:line-clamp-2 dark:text-gray-400">
-    {rule ? (forceNb ? rule.explanationNb : isNb ? rule.explanationNb : rule.explanationEn) : ''}
+    {rule ? rule.explanationNb : ''}
   </p>
 </a>
