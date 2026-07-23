@@ -362,7 +362,7 @@ for`) added as uttrykk cards.
 
 ## Implementation phases
 
-### Phase 1 — Rules + types
+### Phase 1 — Rules + types ✅ Done
 
 1. Add 7 new topics to `GrammarTopic` in `src/lib/types.ts`: `presens-perfektum`, `derfor-fordi`,
    `kvantorer`, `modalverb-preteritum` (original 4) + `plassering-verb`, `refleksive-verb`,
