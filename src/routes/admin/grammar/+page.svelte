@@ -78,7 +78,15 @@
     // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md
     'klokka-tid',
     'ordenstall-dato',
-    'for-siden'
+    'for-siden',
+    // Nivå A2 topics — see ai-docs/implementation/a2-quiz-and-grammar.md
+    'presens-perfektum',
+    'derfor-fordi',
+    'kvantorer',
+    'modalverb-preteritum',
+    'plassering-verb',
+    'refleksive-verb',
+    'ha-vs-vaere'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [
