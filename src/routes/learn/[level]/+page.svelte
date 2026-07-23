@@ -2,7 +2,6 @@
   import { page } from '$app/state';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import { removeHyphensAndCapitalize } from '$lib/utils';
-  import { localeStore } from '$lib/localeStore.svelte';
   import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
   import { isFreeUttrykkTheme } from '$lib/uttrykk-gating';
   import { learnHubExpanded } from '$lib/stores/learnHubExpanded.svelte';
@@ -12,7 +11,6 @@
   let { data } = $props();
 
   let isPlus = $derived(page.data.plan === 'plus');
-  let isNb = $derived(localeStore.current === 'nb');
 
   const levelColors: Record<string, { heading: string; badge: string; accent: string }> = {
     a1: {
@@ -414,13 +412,7 @@
                   ? 'opacity-60 '
                   : ''}text-gray-800 dark:text-gray-100"
               >
-                {rule
-                  ? t.levels.includes('C')
-                    ? rule.titleNb
-                    : isNb
-                      ? rule.titleNb
-                      : rule.titleEn
-                  : t.topic}
+                {rule ? rule.titleNb : t.topic}
               </h3>
               {#if locked}
                 <span
@@ -446,13 +438,7 @@
                 ? 'opacity-60 '
                 : ''}text-gray-600 dark:text-gray-300"
             >
-              {rule
-                ? t.levels.includes('C')
-                  ? rule.explanationNb
-                  : isNb
-                    ? rule.explanationNb
-                    : rule.explanationEn
-                : ''}
+              {rule ? rule.explanationNb : ''}
             </p>
             <div class="mt-2 text-xs text-gray-600 dark:text-gray-300">{t.total} questions</div>
           </a>

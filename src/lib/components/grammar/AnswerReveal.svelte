@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { GrammarQuestion, GrammarRule } from '$lib/types';
-  import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages';
 
   let {
@@ -19,16 +18,10 @@
     onnext: () => void;
   } = $props();
 
-  let isNb = $derived(localeStore.current === 'nb');
-  // Nivå C is hardcoded to Norwegian, not locale-dependent (see
-  // ai-docs/implementation/c-grammar-norsk-instruksjoner.md).
-  let forceNb = $derived(question.cefr === 'C');
-  let ruleTitle = $derived(
-    rule ? (forceNb ? rule.titleNb : isNb ? rule.titleNb : rule.titleEn) : ''
-  );
-  let ruleText = $derived(
-    rule ? (forceNb ? rule.explanationNb : isNb ? rule.explanationNb : rule.explanationEn) : ''
-  );
+  // Grammar questions are Norwegian-only at every level (see
+  // ai-docs/implementation/grammar-with-only-norsk.md).
+  let ruleTitle = $derived(rule ? rule.titleNb : '');
+  let ruleText = $derived(rule ? rule.explanationNb : '');
 </script>
 
 <div
