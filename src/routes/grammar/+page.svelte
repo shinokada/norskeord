@@ -3,7 +3,6 @@
   import { Badge } from 'flowbite-svelte';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import TopicCard from '$lib/components/grammar/TopicCard.svelte';
-  import { localeStore } from '$lib/localeStore.svelte';
   import { cefrColors } from '$lib/blog';
   import type { CEFRLevel } from '$lib/types';
   import * as m from '$lib/paraglide/messages';
@@ -11,7 +10,6 @@
   let { data } = $props();
 
   let isPlus = $derived(page.data.plan === 'plus');
-  let isNb = $derived(localeStore.current === 'nb');
 
   // ── Filter state ────────────────────────────────────────────────────────────
   let searchQuery = $state('');
@@ -24,17 +22,10 @@
     const rule = GRAMMAR_RULES[t.topic];
     if (selectedLevel && !t.levels.includes(selectedLevel as CEFRLevel)) return false;
     if (searchTerm) {
-      // Nivå C is hardcoded to Norwegian, not locale-dependent (see TopicCard.svelte),
-      // so match against the same text the user actually sees.
-      const forceNb = t.levels.includes('C');
-      const title = rule ? (forceNb ? rule.titleNb : isNb ? rule.titleNb : rule.titleEn) : t.topic;
-      const explanation = rule
-        ? forceNb
-          ? rule.explanationNb
-          : isNb
-            ? rule.explanationNb
-            : rule.explanationEn
-        : '';
+      // Grammar questions are Norwegian-only at every level (see
+      // ai-docs/implementation/grammar-with-only-norsk.md).
+      const title = rule ? rule.titleNb : t.topic;
+      const explanation = rule ? rule.explanationNb : '';
       if (
         !title.toLowerCase().includes(searchTerm) &&
         !explanation.toLowerCase().includes(searchTerm)
@@ -221,23 +212,11 @@
             </div>
 
             <p class="font-semibold text-gray-900 dark:text-white" data-testid="topic-title">
-              {rule
-                ? t.levels.includes('C')
-                  ? rule.titleNb
-                  : isNb
-                    ? rule.titleNb
-                    : rule.titleEn
-                : t.topic}
+              {rule ? rule.titleNb : t.topic}
             </p>
 
             <p class="mt-1 line-clamp-2 text-sm text-gray-500 sm:line-clamp-2 dark:text-gray-400">
-              {rule
-                ? t.levels.includes('C')
-                  ? rule.explanationNb
-                  : isNb
-                    ? rule.explanationNb
-                    : rule.explanationEn
-                : ''}
+              {rule ? rule.explanationNb : ''}
             </p>
           </a>
         {/each}

@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { GrammarQuestion } from '$lib/types';
-  import * as m from '$lib/paraglide/messages';
 
   let { question, onsubmit }: { question: GrammarQuestion; onsubmit: (answer: string) => void } =
     $props();
@@ -9,7 +8,7 @@
 </script>
 
 <p class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300">
-  {m.grammar_multiple_choice_prompt()}
+  Hvilken omskriving betyr det samme?
 </p>
 
 {#if question.prompt}
@@ -38,6 +37,6 @@
     onclick={() => onsubmit('')}
     class="text-xs text-gray-400 hover:text-gray-600 hover:underline dark:hover:text-gray-300"
   >
-    {m.grammar_skip()}
+    Hopp over
   </button>
 </div>
