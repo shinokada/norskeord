@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { GrammarQuestion, GrammarRule } from '$lib/types';
-  import * as m from '$lib/paraglide/messages';
 
   let {
     question,
@@ -32,15 +31,15 @@
   <div class="mb-4 flex items-center gap-2">
     {#if isCorrect}
       <span class="text-2xl">✓</span>
-      <span class="font-semibold text-green-700 dark:text-green-300">{m.grammar_correct()}</span>
+      <span class="font-semibold text-green-700 dark:text-green-300">Riktig!</span>
     {:else}
       <span class="text-2xl">✗</span>
-      <span class="font-semibold text-red-700 dark:text-red-300">{m.grammar_incorrect()}</span>
+      <span class="font-semibold text-red-700 dark:text-red-300">Ikke helt.</span>
     {/if}
   </div>
 
   <p class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
-    {m.grammar_correct_answer()}
+    Riktig svar
   </p>
   {#if question.type === 'minimal-pair'}
     <p class="mb-1 text-xs font-semibold text-indigo-500 dark:text-indigo-400">
@@ -58,7 +57,7 @@
 
   {#if !isCorrect && userAnswer}
     <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
-      {m.grammar_you_wrote()}
+      Du skrev:
       <span class="font-medium text-gray-700 dark:text-gray-200">{userAnswer}</span>
     </p>
   {/if}
@@ -72,7 +71,7 @@
       <p
         class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400"
       >
-        {m.grammar_rule_label()} · {ruleTitle}
+        Hvorfor · {ruleTitle}
       </p>
       <p class="text-sm text-gray-700 dark:text-gray-300">{ruleText}</p>
       {#if rule.blogSlug}
@@ -80,7 +79,7 @@
           href={`/blog/${rule.blogSlug}`}
           class="mt-2 inline-block text-xs font-medium text-indigo-500 hover:text-indigo-700 hover:underline dark:text-indigo-400 dark:hover:text-indigo-300"
         >
-          {m.grammar_read_more()}
+          Les mer →
         </a>
       {/if}
     </div>
@@ -92,10 +91,10 @@
       onclick={onnext}
       class="rounded-lg bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
     >
-      {isLast ? m.grammar_see_results() : m.grammar_next()}
+      {isLast ? 'Se resultater' : 'Neste →'}
     </button>
   </div>
   <p class="mt-2 text-right text-xs text-gray-700 dark:text-gray-300">
-    {m.grammar_continue_hint()}
+    Mellomrom eller Enter for å fortsette
   </p>
 </div>
