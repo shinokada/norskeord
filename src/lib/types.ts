@@ -149,7 +149,7 @@ export type GrammarTopic =
   | 'det-er-ikke' // ordering det / er / ikke
   | 'modal-verb-order' // modal + infinitive position
   | 'subordinate-order' // general subordinate clause word order
-  | 'relative-som' // relative clauses with «som» (B2–C1)
+  | 'relative-som' // relative clauses with «som» (A2 intro; harder omission/fronting forms B2–C1)
   | 'setningsadverbial' // sentence adverbial placement
   | 'adverbial-fronting' // fronting adverbials with V2 inversion
   | 'svar-ja-jo-nei' // short answers: ja / jo / nei (B2–C1)
@@ -164,6 +164,14 @@ export type GrammarTopic =
   | 'helsetninger' // main clause structure: declarative, questions, ikke, det-subject
   | 'preposisjoner-tid' // time prepositions: i, om, for–siden, på, til
   | 'preposisjoner-sted' // place & relation prepositions: i/på, geography, hos/ved/til/fra, av/fra, compounds
+  // Nivå A2 topics — see ai-docs/implementation/a2-quiz-and-grammar.md
+  | 'presens-perfektum' // formation (har + perfektum partisipp), contrast with preteritum, duration questions
+  | 'derfor-fordi' // derfor (result, main-clause V2) vs. fordi (cause, subordinate clause)
+  | 'kvantorer' // mye/mange, mer/flere — countable vs. uncountable
+  | 'modalverb-preteritum' // modal preteritum forms: kan→kunne, vil→ville, skal→skulle, må→måtte, bør→burde
+  | 'plassering-verb' // sette/legge (movement, takes object) vs. stå/ligge (state, no object)
+  | 'refleksive-verb' // reflexive pronoun agreement: glede seg, grue seg, føle seg
+  | 'ha-vs-vaere' // «ha» for symptoms/possession-shaped states vs. «være» for adjective-shaped states
   // Nivå A1 topics (free) — see ai-docs/implementation/a1-quiz-and-grammar.md
   | 'personlige-pronomen' // subject pronouns jeg/du/han/hun/vi/dere/de
   | 'presens-verb' // regular presens (-er) conjugation
