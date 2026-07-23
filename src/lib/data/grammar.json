@@ -136,6 +136,92 @@
     "plusOnly": true
   },
   {
+    "id": "gq-ikke-013",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Hun sier at …»",
+    "source": "Jonas spiser aldri kjøtt.",
+    "answer": "Hun sier at Jonas aldri spiser kjøtt.",
+    "alternates": ["Hun sier at Jonas aldri spiser kjøtt"],
+    "hint": "Leddsetning etter «at»: «aldri» flytter seg til før verbet."
+  },
+  {
+    "id": "gq-ikke-014",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «De spør om …»",
+    "source": "Er læreren ikke fornøyd?",
+    "answer": "De spør om læreren ikke er fornøyd.",
+    "alternates": ["De spør om læreren ikke er fornøyd"],
+    "hint": "«om»-setningen er en leddsetning: «ikke» flytter seg til før verbet «er»."
+  },
+  {
+    "id": "gq-ikke-015",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["kaffe", "drikker", "Vi", "ikke", "om", "kvelden"],
+    "answer": "Vi drikker ikke kaffe om kvelden.",
+    "alternates": ["Vi drikker ikke kaffe om kvelden"],
+    "hint": "Helsetning: «ikke» kommer rett etter det finitte verbet «drikker»."
+  },
+  {
+    "id": "gq-ikke-016",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge.",
+    "sentence": "Jeg tror at hun _____ glad.",
+    "words": ["er", "alltid"],
+    "answer": "alltid er",
+    "hint": "Leddsetning etter «at»: «alltid» kommer før verbet «er»."
+  },
+  {
+    "id": "gq-ikke-017",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Hun spør om …»",
+    "source": "Er kunden alltid fornøyd?",
+    "answer": "Hun spør om kunden alltid er fornøyd.",
+    "alternates": ["Hun spør om kunden alltid er fornøyd"],
+    "hint": "«om»-setningen er en leddsetning: «alltid» flytter seg til før verbet «er»."
+  },
+  {
+    "id": "gq-ikke-018",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["på", "lurer", "Jeg", "om", "de", "aldri", "holder", "avtalen"],
+    "answer": "Jeg lurer på om de aldri holder avtalen.",
+    "alternates": ["Jeg lurer på om de aldri holder avtalen"],
+    "hint": "«om»-setningen er en leddsetning: «aldri» kommer før verbet «holder»."
+  },
+  {
+    "id": "gq-ikke-019",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge.",
+    "sentence": "De spør om vi _____ presanger.",
+    "words": ["kjøper", "ofte"],
+    "answer": "ofte kjøper",
+    "hint": "Leddsetning etter «om»: «ofte» kommer før verbet «kjøper»."
+  },
+  {
+    "id": "gq-ikke-020",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «De sier at …»",
+    "source": "Frisøren er ikke fornøyd med kunden.",
+    "answer": "De sier at frisøren ikke er fornøyd med kunden.",
+    "alternates": ["De sier at frisøren ikke er fornøyd med kunden"],
+    "hint": "Leddsetning etter «at»: «ikke» flytter seg til før verbet «er»."
+  },
+  {
     "id": "gq-det-001",
     "topic": "det-sentence",
     "cefr": "A2",
@@ -1222,9 +1308,9 @@
     "cefr": "A2",
     "type": "transform",
     "prompt": "Skriv flertallsformen.",
-    "source": "en regel",
-    "answer": "regler",
-    "hint": "Regel → regler (uregelrett: ubetont -el mister -e-en)."
+    "source": "en sykkel",
+    "answer": "sykler",
+    "hint": "Sykkel → sykler (uregelrett: ubetont -el mister -e-en)."
   },
   {
     "id": "gq-noun-pl-006",
@@ -2648,6 +2734,71 @@
     "answer": "A",
     "explanation": "«Over» beskriver en fast posisjon over noe. «Bak» ville betydd «bak», som ikke passer for en lampe over et bord.",
     "hint": "Over → «over»."
+  },
+  {
+    "id": "gq-prep-sted-029",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Biblioteket ligger til venstre _____ frisøren.",
+    "words": ["for", "til"],
+    "answer": "for",
+    "hint": "Preposisjonen etter venstre/høyre er alltid «for»: «til venstre for»."
+  },
+  {
+    "id": "gq-prep-sted-030",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Kafeen ligger til høyre _____ butikken.",
+    "words": ["for", "til"],
+    "answer": "for",
+    "hint": "Preposisjonen etter venstre/høyre er alltid «for»: «til høyre for»."
+  },
+  {
+    "id": "gq-prep-sted-031",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Apoteket ligger _____ kirken og banken.",
+    "words": ["mellom", "blant"],
+    "answer": "mellom",
+    "hint": "«mellom X og Y» = between X and Y."
+  },
+  {
+    "id": "gq-prep-sted-032",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["for", "Skolen", "venstre", "banken", "ligger", "til"],
+    "answer": "Skolen ligger til venstre for banken.",
+    "alternates": ["Skolen ligger til venstre for banken"],
+    "hint": "«ligger til venstre for» beskriver relativ posisjon mellom to bygninger."
+  },
+  {
+    "id": "gq-prep-sted-033",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["til", "Butikken", "apoteket", "høyre", "for", "ligger"],
+    "answer": "Butikken ligger til høyre for apoteket.",
+    "alternates": ["Butikken ligger til høyre for apoteket"],
+    "hint": "«ligger til høyre for» beskriver relativ posisjon mellom to bygninger."
+  },
+  {
+    "id": "gq-prep-sted-034",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Apoteket ligger til venstre for banken.",
+    "optionB": "Apoteket ligger til venstre av banken.",
+    "answer": "A",
+    "explanation": "«til venstre for» er det faste uttrykket for relativ posisjon — vi bruker «for», ikke «av».",
+    "hint": "Preposisjonen etter venstre/høyre er alltid «for»."
   },
   {
     "id": "gq-farger-001",
@@ -9034,6 +9185,69 @@
     "hint": "sønn → sønner (legg til -er)."
   },
   {
+    "id": "gq-noun-pl-021",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "en fot",
+    "answer": "føttene",
+    "hint": "fot → føttene (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-022",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "ei tann",
+    "answer": "tennene",
+    "hint": "tann → tennene (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-023",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "et øye",
+    "answer": "øynene",
+    "hint": "øye → øynene (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-024",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "et kne",
+    "answer": "knærne",
+    "hint": "kne → knærne (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-025",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig bestemt flertallsform.",
+    "sentence": "Han har vondt i _____.",
+    "words": ["skuldrene", "skuldre"],
+    "answer": "skuldrene",
+    "hint": "skulder → skuldrene i bestemt flertall."
+  },
+  {
+    "id": "gq-noun-pl-026",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg har vondt i føttene.",
+    "optionB": "Jeg har vondt i fotene.",
+    "answer": "A",
+    "explanation": "fot har uregelrett bestemt flertall: føttene, ikke fotene.",
+    "hint": "fot → føttene, ikke den regelrette formen."
+  },
+  {
     "id": "gq-advsted-001",
     "topic": "adverb-sted-hjem",
     "cefr": "A1",
@@ -11430,6 +11644,50 @@
     "hint": "«Om» brukes bare for ja/nei-spørsmål uten spørreord."
   },
   {
+    "id": "gq-indirtale-017",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «at» eller «om».",
+    "sentence": "Fredrik lurer på _____ det kommer mange gjester i morgen.",
+    "words": ["om", "at"],
+    "answer": "om",
+    "hint": "«lure på» + gjengitt ja/nei-spørsmål → «om»."
+  },
+  {
+    "id": "gq-indirtale-018",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «at» eller «om».",
+    "sentence": "Hun håper _____ hun finner en fin gave.",
+    "words": ["at", "om"],
+    "answer": "at",
+    "hint": "«håpe» + gjengitt utsagn (ikke spørsmål) → «at»."
+  },
+  {
+    "id": "gq-indirtale-019",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi utsagnet med «håper».",
+    "source": "Kunden blir fornøyd.",
+    "answer": "Frisøren håper at kunden blir fornøyd.",
+    "alternates": ["Frisøren håper at kunden blir fornøyd"],
+    "hint": "håper + at + det gjengitte utsagnet."
+  },
+  {
+    "id": "gq-indirtale-020",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «er usikker på».",
+    "source": "Kommer det mange gjester i morgen?",
+    "answer": "Han er usikker på om det kommer mange gjester i morgen.",
+    "alternates": ["Han er usikker på om det kommer mange gjester i morgen"],
+    "hint": "«være usikker på» + gjengitt ja/nei-spørsmål → «om»."
+  },
+  {
     "id": "gq-derforfordi-001",
     "topic": "derfor-fordi",
     "cefr": "A2",
@@ -11604,5 +11862,378 @@
     "answer": "De trenger flere stoler.",
     "alternates": ["De trenger flere stoler"],
     "hint": "«Stoler» er tellelig, så bruk «flere», ikke «mer»."
+  },
+  {
+    "id": "gq-modalpret-001",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "I går _____ jeg hjelpe naboen med bilen.",
+    "words": ["kan", "kunne"],
+    "answer": "kunne",
+    "hint": "Preteritum av «kan» er «kunne»."
+  },
+  {
+    "id": "gq-modalpret-002",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "Marte _____ gjerne reise til Bergen i fjor.",
+    "words": ["vil", "ville"],
+    "answer": "ville",
+    "hint": "Preteritum av «vil» er «ville»."
+  },
+  {
+    "id": "gq-modalpret-003",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "De _____ ta bussen klokka sju i morges.",
+    "words": ["skal", "skulle"],
+    "answer": "skulle",
+    "hint": "Preteritum av «skal» er «skulle»."
+  },
+  {
+    "id": "gq-modalpret-004",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "Vi _____ vente på bussen i to timer i går.",
+    "words": ["må", "måtte"],
+    "answer": "måtte",
+    "hint": "Preteritum av «må» er «måtte»."
+  },
+  {
+    "id": "gq-modalpret-005",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "Han _____ ha spørt læreren om hjelp før prøven.",
+    "words": ["bør", "burde"],
+    "answer": "burde",
+    "hint": "Preteritum av «bør» er «burde»."
+  },
+  {
+    "id": "gq-modalpret-006",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi utsagnet i fortid: «Marte sa at …»",
+    "source": "Jeg må jobbe i helgen.",
+    "answer": "Marte sa at hun måtte jobbe i helgen.",
+    "alternates": ["Marte sa at hun måtte jobbe i helgen"],
+    "hint": "Presens modalverb «må» blir «måtte» i referert tale i fortid."
+  },
+  {
+    "id": "gq-modalpret-007",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spørte».",
+    "source": "Skal jeg vente her?",
+    "answer": "Han spørte om han skulle vente her.",
+    "alternates": ["Han spørte om han skulle vente her"],
+    "hint": "«Skal» blir «skulle» når spørsmålet gjengis i fortid."
+  },
+  {
+    "id": "gq-modalpret-008",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «lurte på».",
+    "source": "Hvor kan jeg parkere?",
+    "answer": "Hun lurte på hvor hun kunne parkere.",
+    "alternates": ["Hun lurte på hvor hun kunne parkere"],
+    "hint": "«Kan» blir «kunne»; spørreordet hvor beholdes."
+  },
+  {
+    "id": "gq-modalpret-009",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["på", "Hun", "norskkurs", "ville", "gå", "gjerne"],
+    "answer": "Hun ville gjerne gå på norskkurs.",
+    "alternates": ["Hun ville gjerne gå på norskkurs"],
+    "hint": "Preteritum modalverb «ville» + «gjerne» + infinitiv."
+  },
+  {
+    "id": "gq-modalpret-010",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "I fjor kunne hun ikke svømme.",
+    "optionB": "I fjor kan hun ikke svømme.",
+    "answer": "A",
+    "explanation": "Tidsuttrykket «i fjor» krever preteritum av modalverbet: «kunne», ikke presens «kan».",
+    "hint": "Se etter tidsuttrykket som viser fortid."
+  },
+  {
+    "id": "gq-plassverb-001",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig verb.",
+    "sentence": "Jeg _____ boka på bordet.",
+    "words": ["legger", "setter"],
+    "answer": "legger",
+    "hint": "Boka ligger flatt — handlingen med et flatt objekt er «legge», ikke «sette»."
+  },
+  {
+    "id": "gq-plassverb-002",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig verb.",
+    "sentence": "Nøkkelen _____ på bordet.",
+    "words": ["ligger", "legger"],
+    "answer": "ligger",
+    "hint": "Dette er en tilstand uten objekt → «ligge», ikke «legge»."
+  },
+  {
+    "id": "gq-plassverb-003",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Beskriv resultatet med «stå».",
+    "source": "Hun setter lampen på hylla.",
+    "answer": "Lampen står på hylla.",
+    "alternates": ["Lampen står på hylla"],
+    "hint": "Etter handlingen «sette» beskriver vi resultatet (tilstanden) med «stå»."
+  },
+  {
+    "id": "gq-plassverb-004",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Beskriv resultatet med «ligge».",
+    "source": "Han legger telefonen på bordet.",
+    "answer": "Telefonen ligger på bordet.",
+    "alternates": ["Telefonen ligger på bordet"],
+    "hint": "Etter handlingen «legge» beskriver vi resultatet (tilstanden) med «ligge»."
+  },
+  {
+    "id": "gq-plassverb-005",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["glasset", "Jeg", "på", "bordet", "setter"],
+    "answer": "Jeg setter glasset på bordet.",
+    "alternates": ["Jeg setter glasset på bordet"],
+    "hint": "Glasset står oppreist — handlingen med et oppreist objekt er «sette»."
+  },
+  {
+    "id": "gq-plassverb-006",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["kniven", "Hun", "på", "bordet", "legger"],
+    "answer": "Hun legger kniven på bordet.",
+    "alternates": ["Hun legger kniven på bordet"],
+    "hint": "Kniven ligger flatt — handlingen med et flatt objekt er «legge», ikke «sette»."
+  },
+  {
+    "id": "gq-plassverb-007",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig verb.",
+    "sentence": "Koppen _____ på hylla.",
+    "words": ["står", "setter"],
+    "answer": "står",
+    "hint": "Dette er en tilstand uten objekt → «stå», ikke «sette»."
+  },
+  {
+    "id": "gq-plassverb-008",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Han legger boka i ryggsekken.",
+    "optionB": "Han ligger boka i ryggsekken.",
+    "answer": "A",
+    "explanation": "«Legge» er handlingsverbet og tar et objekt (boka); «ligge» er tilstandsverbet og tar aldri objekt.",
+    "hint": "Se etter objektet — et objekt krever handlingsverbet."
+  },
+  {
+    "id": "gq-reflverb-001",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Jeg gleder _____ til helgen.",
+    "words": ["meg", "deg"],
+    "answer": "meg",
+    "hint": "Jeg-formen av det refleksive pronomenet er «meg»."
+  },
+  {
+    "id": "gq-reflverb-002",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Du gleder _____ til helgen.",
+    "words": ["deg", "meg"],
+    "answer": "deg",
+    "hint": "Du-formen av det refleksive pronomenet er «deg»."
+  },
+  {
+    "id": "gq-reflverb-003",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Hun gruer _____ til vinteren.",
+    "words": ["seg", "dere"],
+    "answer": "seg",
+    "hint": "3. person entall (hun) tar refleksivt pronomen «seg»."
+  },
+  {
+    "id": "gq-reflverb-004",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Vi gruer _____ til prøven.",
+    "words": ["oss", "seg"],
+    "answer": "oss",
+    "hint": "Vi-formen av det refleksive pronomenet er «oss»."
+  },
+  {
+    "id": "gq-reflverb-005",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Dere føler _____ trøtte i dag.",
+    "words": ["dere", "oss"],
+    "answer": "dere",
+    "hint": "Dere-formen av det refleksive pronomenet er også «dere»."
+  },
+  {
+    "id": "gq-reflverb-006",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Fortell det samme om Fredrik.",
+    "source": "Jeg gleder meg til jobben.",
+    "answer": "Fredrik gleder seg til jobben.",
+    "alternates": ["Fredrik gleder seg til jobben"],
+    "hint": "3. person entall: det refleksive pronomenet blir «seg»."
+  },
+  {
+    "id": "gq-reflverb-007",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["til", "De", "gruer", "vinteren", "seg"],
+    "answer": "De gruer seg til vinteren.",
+    "alternates": ["De gruer seg til vinteren"],
+    "hint": "3. person flertall (de) tar refleksivt pronomen «seg»."
+  },
+  {
+    "id": "gq-reflverb-008",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Vi føler oss glade i dag.",
+    "optionB": "Vi føler seg glade i dag.",
+    "answer": "A",
+    "explanation": "«Vi» krever det refleksive pronomenet «oss» — «seg» brukes bare med 3. person (han/hun/de).",
+    "hint": "Se på subjektet: «vi» hører aldri sammen med «seg»."
+  },
+  {
+    "id": "gq-havsvaere-001",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Jeg _____ vondt i magen.",
+    "words": ["har", "er"],
+    "answer": "har",
+    "hint": "«ha vondt i» er et symptom-uttrykk med «ha»."
+  },
+  {
+    "id": "gq-havsvaere-002",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Hun _____ syk i dag.",
+    "words": ["er", "har"],
+    "answer": "er",
+    "hint": "«være syk» er en adjektiv-tilstand → «være»."
+  },
+  {
+    "id": "gq-havsvaere-003",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Vi _____ lyst på is.",
+    "words": ["har", "er"],
+    "answer": "har",
+    "hint": "«ha lyst på» tar alltid «ha»."
+  },
+  {
+    "id": "gq-havsvaere-004",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "De _____ sultne etter turen.",
+    "words": ["er", "har"],
+    "answer": "er",
+    "hint": "«være sulten» er en adjektiv-tilstand → «være»."
+  },
+  {
+    "id": "gq-havsvaere-005",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Han _____ i dårlig humør i dag.",
+    "words": ["er", "har"],
+    "answer": "er",
+    "hint": "«være i dårlig humør» bruker «være»."
+  },
+  {
+    "id": "gq-havsvaere-006",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Svar på spørsmålet med «ha det bra».",
+    "source": "Hvordan har du det?",
+    "answer": "Jeg har det bra.",
+    "alternates": ["Jeg har det bra"],
+    "hint": "«ha det bra/dårlig» bruker «ha», ikke «være»."
+  },
+  {
+    "id": "gq-havsvaere-007",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": ["vondt", "Hun", "i", "har", "hodet"],
+    "answer": "Hun har vondt i hodet.",
+    "alternates": ["Hun har vondt i hodet"],
+    "hint": "«ha vondt i» er et fast symptom-uttrykk med «ha»."
+  },
+  {
+    "id": "gq-havsvaere-008",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg er sulten, men jeg har ikke lyst på fisk.",
+    "optionB": "Jeg har sulten, men jeg er ikke lyst på fisk.",
+    "answer": "A",
+    "explanation": "«være sulten» (adjektiv-tilstand) og «ha lyst på» (ønske-uttrykk med «ha») — riktig kombinasjon er «er sulten» + «har lyst på».",
+    "hint": "To ulike uttrykk i samme setning — sjekk hvert av dem for seg."
   }
 ]
