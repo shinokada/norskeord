@@ -2,7 +2,6 @@
   import { page } from '$app/state';
   import { browser } from '$app/environment';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
-  import { localeStore } from '$lib/localeStore.svelte';
   import GrammarSession from '$lib/components/grammar/GrammarSession.svelte';
   import * as m from '$lib/paraglide/messages';
 
@@ -12,13 +11,9 @@
   let userId = $derived(isPlus ? (page.data.user?.id ?? null) : null);
 
   let rule = $derived(GRAMMAR_RULES[data.topic]);
-  let isNb = $derived(localeStore.current === 'nb');
-  // Nivå C is hardcoded to Norwegian, not locale-dependent (see
-  // ai-docs/implementation/c-grammar-norsk-instruksjoner.md).
-  let forceNb = $derived(data.questions.some((q) => q.cefr === 'C'));
-  let title = $derived(
-    rule ? (forceNb ? rule.titleNb : isNb ? rule.titleNb : rule.titleEn) : data.topic
-  );
+  // Grammar questions are Norwegian-only at every level (see
+  // ai-docs/implementation/grammar-with-only-norsk.md).
+  let title = $derived(rule ? rule.titleNb : data.topic);
 
   // Free users only get the free subset; Plus users get everything.
   let freeSet = $derived(new Set(data.freeQuestionIds));

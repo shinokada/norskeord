@@ -4,6 +4,11 @@ import type { GrammarRule } from '$lib/types';
  * Grammar rule definitions for the Grammar feature.
  * These are stored as a TS module (not JSON) because they contain
  * bilingual prose explanations that don't belong in the Paraglide catalogue.
+ *
+ * `titleEn`/`explanationEn` are unused at runtime everywhere (not just for
+ * Nivå C) — grammar questions are Norwegian-only at every level as of
+ * ai-docs/implementation/grammar-with-only-norsk.md. Kept only as a
+ * possible future fallback; no schema change, smallest possible diff.
  */
 export const GRAMMAR_RULES: Record<string, GrammarRule> = {
   'ikke-placement': {
