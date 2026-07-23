@@ -47,32 +47,8 @@ Skriv det norske ordet for
 
 ---
 
-I created ai-docs/implementation/grammar-with-only-norsk.md.
-In the last session we finished up to 2. `presens-verb` . Can you continue 3. `pronomen-objektsform` and when you finish please add ✅ Done.
-I prefer doing it one by one or small batch, like two items each time.
+i18n cleanup script: script/cleanup-i18n.xxx should find items not used in src dir and clean up all files in messages directory.
 
----
-
-"filesystem": {
-"command": "npx",
-"args": [
-"-y",
-"@modelcontextprotocol/server-filesystem",
-"/Users/shinichiokada/Svelte/svelte-languages/norskeord"
-]
-}
-
-A few options:
-
-If that "Filesystem" extension is managed entirely through the Extensions UI (not this config file), the issue may just be that it needs a full disconnect/reconnect rather than a restart — worth checking if there's a toggle to turn it off and back on.
-If it does rely on this config file, you'd add a filesystem block like above (with all your allowed paths) directly into mcpServers, save, and restart.
-
-Given I can't directly diagnose which system manages that "Filesystem" extension panel, could you check: in Claude Desktop, is "Filesystem" listed as a separate item under Settings → Extensions (as opposed to something you configure via this JSON)? If so, try toggling it off and back on (not just Save) and then restart Desktop fully.
-
-In the meantime — to keep us moving on the actual task — could you paste the contents of ai-docs/implementation/grammar-with-only-norsk.md? That'll let us get started on pronomen-objektsform right away rather than staying blocked on tooling.
-
-Failed to call tool "list_allowed_directories"
-Failed to call tool "list_directory"
 ---
 
 - http://localhost:5173/norskproven has A2 and B1. I think I need to add B2 as well.

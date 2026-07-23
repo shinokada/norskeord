@@ -29,6 +29,15 @@ verbatim — invent fresh names/sentences).
 **Vocab integration:** every question should use real A2 vocabulary (`vocab-a2.json` /
 `uttrykk-a2.json`), verified the same way as A1/C.
 
+**Language of new content (added 2026-07-23, cross-referencing
+`ai-docs/implementation/grammar-with-only-norsk.md`):** this plan predates that doc's decision
+that grammar `prompt`/`hint`/`explanation` text is Norwegian-only at every level, with no
+locale switching. Since none of this plan's topics have been implemented yet (checked directly
+against `rules.ts` and `grammar.json` — zero of the 7 new topics exist), there's no retroactive
+conversion needed here, unlike A1/C which had to be converted after the fact. Write all
+`prompt`/`hint`/`explanation` text directly in Norwegian from the start when Phase 2 content-writing
+begins — do not draft it in English first.
+
 **Question types:** `'fill' | 'order' | 'transform' | 'minimal-pair' | 'multiple-choice'` already
 cover everything needed — no schema changes required.
 
@@ -185,6 +194,13 @@ reused topics and the `relative-som` B2→A2 reclassification.
 
 Short drafts to seed Phase 1; expand to the fuller bilingual style used elsewhere in `rules.ts`
 when actually adding them.
+
+**Note (added 2026-07-23):** per `ai-docs/implementation/grammar-with-only-norsk.md`, only
+`titleNb`/`explanationNb` are ever rendered in the UI now — `titleEn`/`explanationEn` are dead
+code, kept only as a possible future fallback. Still fill them in for consistency with the rest of
+`rules.ts` and because they're useful as an internal gloss while drafting, but there's no need to
+spend extra effort polishing the English prose beyond what's needed for that — `titleNb`/
+`explanationNb` are the versions that actually matter and deserve the editing care.
 
 ```typescript
 'presens-perfektum': {
@@ -390,6 +406,12 @@ Build/adapt `scripts/check-a1-grammar-vocab.mjs` → `scripts/check-a2-grammar-v
 filtering. Run after each topic; fix any unmatched examples the way `gq-noun-pl-020` was fixed in
 the A1 plan (swap the example word for one that's actually a standalone A2/A1 vocab headword,
 rather than only appearing inside a multi-word uttrykk phrase).
+
+**Also run (added 2026-07-23):** `scripts/check-grammar-norwegian.mjs` (the generalized Norwegian-only
+checker from `ai-docs/implementation/grammar-with-only-norsk.md`) against each new topic as it's
+written, same workflow as that doc's Phase 1. Since content here is written in Norwegian from the
+start (see the language note in Overview above), this should report 0 flags by construction — it's
+a regression guard, not a conversion step.
 
 ### Phase 4 — Gating + wiring
 

@@ -227,3 +227,85 @@ counts).
 - **Timeline:** this is a large multi-session effort (459 questions vs. C's 425 — comparable
   size), same as the C-level conversion was. No rush; work through the tracker topic by topic
   across sessions same as before.
+
+---
+
+## Phase 2 — Grammar UI chrome goes Norwegian-only too
+
+**Status: ✅ Done (implemented 2026-07-23).**
+
+### Decision
+
+Phase 1 (above) made `GrammarRule`/`GrammarQuestion` _content_ Norwegian-only but deliberately left
+Paraglide UI chrome (buttons, labels, progress text) locale-translated, on the theory that content
+and chrome are separate concerns. Revisiting that: every printed Norwegian textbook from A1 to C2
+uses Norwegian as the instructional language throughout — not just for the exercises but for the
+rubrics around them ("Sett inn riktig verbform", "Skriv om setningen", etc.). Norskeord's Grammar
+(and later Quiz) sections are drilling grammatical competence, not vocabulary, and a learner doing
+a B1 word-order exercise can read "Skriv setningen i riktig rekkefolge" — leaving that one string
+in English while the rest of the exercise is Norwegian is inconsistent for no pedagogical reason.
+
+Flashcards are explicitly excluded from this reasoning: their whole mechanic is bilingual recall
+(Norwegian ↔ definition/translation), so locale-appropriate chrome serves the feature directly.
+Grammar and Quiz chrome does not serve a comparable purpose.
+
+### Scope
+
+**In scope — Norwegian-only, hardcoded (no `m.*()` call, no `localeStore` branch), text taken
+directly from the existing `nb.json` values so no new translation work is needed:**
+
+1. `OrderQuestion.svelte` — `grammar_order_prompt`, `grammar_order_words`,
+   `grammar_input_placeholder`, `grammar_check`, `grammar_skip`
+2. `FillQuestion.svelte` — `grammar_fill_prompt`, `grammar_input_placeholder`, `grammar_check`,
+   `grammar_skip`
+3. `TransformQuestion.svelte` — `grammar_transform_prompt`, `grammar_input_placeholder`,
+   `grammar_check`, `grammar_skip`
+4. `MultipleChoiceQuestion.svelte` — `grammar_multiple_choice_prompt`, `grammar_skip`
+5. `MinimalPairQuestion.svelte` — the prompt line here ("Which sentence is correct?") is a
+   **pre-existing bug**: it's hardcoded English, never wired to Paraglide at all, so it has never
+   respected the locale switcher. Fold the fix into this phase — hardcode it in Norwegian
+   ("Hvilken setning er riktig?") same as the other four components — rather than wiring it to a
+   new message key that would only need to be un-wired again immediately after.
+6. `AnswerReveal.svelte` — the chrome parts only (`grammar_correct`, `grammar_incorrect`,
+   `grammar_correct_answer`, `grammar_you_wrote`, `grammar_rule_label`, `grammar_read_more`,
+   `grammar_next`, `grammar_see_results`, `grammar_continue_hint`). `ruleTitle`/`ruleText` are
+   already hardcoded to `rule.titleNb`/`explanationNb` from Phase 1 — no change needed there.
+7. `GrammarSummary.svelte` — the "Session complete!" score screen: `grammar_session_done`,
+   `grammar_score`, `grammar_due_soon`, `grammar_you_wrote`, `grammar_restart`,
+   `grammar_restart_hint`. In scope because it's the direct continuation of the practice session,
+   not app navigation.
+
+**Stays locale-translated (i18n), unchanged:**
+
+- `GrammarSession.svelte` progress header — `grammar_question_count` ("Question X of Y"),
+  `grammar_correct_so_far` ("X correct so far"). This sits above the question card, functions like
+  a stats readout, not exercise content.
+- `routes/grammar/[topic]/+page.svelte` breadcrumbs ("← A1", "Grammar topics →") — app navigation
+  chrome, same bucket as nav/footer elsewhere in the app.
+- `grammar_empty` ("No questions available for this topic yet.", shown on the rare empty-topic
+  edge case in place of the question card) — a system/error state rather than instructional
+  content, closer to Plus-locked messaging than to a question prompt.
+- All Plus/paywall copy, explicitly kept as-is per this decision: `grammar_plus_locked_title`,
+  `grammar_plus_locked_desc`, `grammar_plus_cta`, `grammar_plus_topic`, `grammar_more_topics_plus`,
+  `grammar_plus_upsell_text`. Conversion/marketing copy is a different job than pedagogy — a free
+  user deciding whether to upgrade is making a purchasing decision, not practising Norwegian.
+- Everything already locale-translated outside the Grammar feature (nav, footer, Quiz, flashcards,
+  Norskprøven, blog, profile, etc.) — out of scope for this doc entirely.
+
+**Resolved (2026-07-23):** both open questions confirmed — `GrammarSummary.svelte` is in scope
+(Norwegian-only), `grammar_empty` stays i18n. Ready to implement.
+
+### Implementation notes
+
+- No message-catalogue changes needed — the Norwegian strings already exist in `nb.json` for every
+  key above except the `MinimalPairQuestion.svelte` bug fix, which was never a message key at all.
+  Leave `en.json`/`es.json`/`uk.json`/`de.json` entries in place, unused by Grammar, same "kept but
+  unused" treatment as `titleEn`/`explanationEn` in Phase 1 — smallest diff, no risk of breaking
+  another feature that might reference the same keys.
+- Per-component: delete the `import * as m from '$lib/paraglide/messages'` line only if nothing
+  else in that file still needs it (check remaining usages first — e.g. some components may keep
+  using `m.*()` for the CEFR badge or other bits not in scope here).
+- Spot-check after implementing: run through one full session (all 5 question types, both correct
+  and incorrect answers, through to the summary screen) with the interface locale set to something
+  other than `nb`, to confirm no English/Spanish/Ukrainian/German leaks through anywhere inside the
+  question box.
