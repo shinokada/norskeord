@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.58.0
+
+### Minor Changes
+
+- - **New Features**
+    - Expanded Norwegian grammar practice and vocabulary content across beginner to advanced levels.
+    - Added more hints, explanations, answer keys, and exercises.
+    - Grammar practice screens now consistently use Norwegian interface text and feedback.
+
+  - **Bug Fixes**
+    - Corrected remaining English text appearing in Norwegian grammar exercises and prompts.
+
+  - **Documentation**
+    - Updated guidance for creating, reviewing, and validating Norwegian-only learning content.
+    - Released version 2.57.0.
+
 ## 2.57.0
 
 ### Minor Changes
