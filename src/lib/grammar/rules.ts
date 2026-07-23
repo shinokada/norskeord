@@ -106,14 +106,16 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     titleNb: 'Relativsetninger med "som"',
     explanationEn:
       '"som" introduces a relative clause and stands for the subject or object of the embedded ' +
-      'sentence: "Mannen som bor her, er lege." When "som" is the object it can usually be ' +
-      'dropped: "Boka (som) jeg leste, var god." A relative clause is subordinate, so adverbs ' +
-      'like "ikke" come BEFORE the verb: "en venn som ikke kommer".',
+      'sentence: "Mannen som bor her, er lege." "Boka som jeg leste, var god." When "som" is the ' +
+      'object it can be dropped at a higher level ("Boka jeg leste, var god"), but at this level ' +
+      'we always write "som" out. A relative clause is subordinate, so adverbs like "ikke" come ' +
+      'BEFORE the verb: "en venn som ikke kommer".',
     explanationNb:
       '"som" innleder en relativsetning og står for subjektet eller objektet i den innfelte ' +
-      'setningen: "Mannen som bor her, er lege." Når "som" er objekt, kan det vanligvis sløyfes: ' +
-      '"Boka (som) jeg leste, var god." En relativsetning er en leddsetning, så adverb som ' +
-      '"ikke" kommer FØR verbet: "en venn som ikke kommer".'
+      'setningen: "Mannen som bor her, er lege." "Boka som jeg leste, var god." Når "som" er ' +
+      'objekt, kan det på et høyere nivå sløyfes ("Boka jeg leste, var god"), men på dette nivået ' +
+      'skriver vi alltid ut "som". En relativsetning er en leddsetning, så adverb som "ikke" ' +
+      'kommer FØR verbet: "en venn som ikke kommer".'
   },
 
   setningsadverbial: {
