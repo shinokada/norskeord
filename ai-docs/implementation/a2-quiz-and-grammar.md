@@ -381,15 +381,15 @@ for`) added as uttrykk cards.
 
 ### Phase 2 — Content, built in the same chapter order as `innhold.md` (10→16)
 
-1. `presens-perfektum` (ch. 10)
-2. `preposisjoner-tid` (A2 entries, ch. 10)
-3. `adj-definite` (A2 entries, ch. 11)
-4. `subordinate-order` (A2 entries, ch. 11)
-5. `indirekte-tale-at-om` (A2 entries, ch. 12 — wh-embedded reported questions)
-6. `adj-comparison` (A2 entries, ch. 13)
-7. `derfor-fordi` (ch. 13)
-8. `kvantorer` (ch. 14)
-9. `relative-som` (A2 entries, ch. 14)
+1. `presens-perfektum` (ch. 10) ✅ Done — 14 new entries (`gq-presperf-001`–`014`).
+2. `preposisjoner-tid` (A2 entries, ch. 10) ✅ Done — 6 new entries (`gq-prep-tid-023`–`028`).
+3. `adj-definite` (A2 entries, ch. 11) ✅ Done — 8 new entries (`gq-adj-029`–`036`).
+4. `subordinate-order` (A2 entries, ch. 11) ✅ Done — 8 new entries (`gq-sub-008`–`015`).
+5. `indirekte-tale-at-om` (A2 entries, ch. 12 — wh-embedded reported questions) ✅ Done — 8 new entries (`gq-indirtale-009`–`016`).
+6. `adj-comparison` (A2 entries, ch. 13) ✅ Done — 8 new entries (`gq-adj-037`–`044`), grounded in ch. 13's weather (Bergen/Tromsø/Finse temperatures) and place (mountain height, fjord/river length) comparison drills. Mix: 5 `fill`, 1 `minimal-pair`, 1 `transform`, 1 `order`. `grammar.json` now at 936 total, no duplicate IDs, no missing required fields, 0 English-tell hits on the new entries.
+7. `derfor-fordi` (ch. 13) ✅ Done — 8 new entries (`gq-derforfordi-001`–`008`), grounded in ch. 13's «Derfor eller fordi?» drill (fresh sentences: leilighet/selge, regn/buss, ny jobb, sulten). Even mix: 2 `fill`, 2 `minimal-pair` (V2-inversion after derfor vs. normal order after fordi), 2 `order`, 2 `transform`. `grammar.json` now at 944 total, no duplicate IDs, no missing required fields, 0 English-tell hits.
+8. `kvantorer` (ch. 14) ✅ Done — 8 new entries (`gq-kvantorer-001`–`008`), grounded in ch. 14's mye/mange and mer/flere drills (fresh sentences: mat/epler, melk/stoler, plass/bøker, gjester). Mix: 4 `fill`, 2 `minimal-pair`, 1 `order`, 1 `transform`. `grammar.json` now at 952 total, no duplicate IDs, no missing required fields, 0 English-tell hits.
+9. `relative-som` (A2 entries, ch. 14) ✅ Done — 8 new entries (`gq-rel-006`–`013`), grounded in ch. 14's som-setninger drills (fresh sentences: bestefar, søster, kollega, nabo, datter, lærer, venninne — avoiding the source's own names). Mix: 4 `transform` (som as subject/object, incl. preposition stranding «snakker med»/«jobber med»), 2 `order`, 1 `fill`, 1 `minimal-pair` (som vs. hvem). Also lightly reworded `relative-som`'s rule text in `rules.ts` so it leads with the A2 pattern (som always written out) before mentioning the higher-level om-dropping nuance, per the Phase 1 note. `grammar.json` now at 960 total (relative-som: 11 A2 + 2 B2), no duplicate IDs, no missing required fields, 0 English-tell hits.
 10. `ikke-placement` (A2 entries, ch. 15)
 11. `indirekte-tale-at-om` (more A2 entries, ch. 15 — at/om reporting)
 12. `modalverb-preteritum` (ch. 16)
