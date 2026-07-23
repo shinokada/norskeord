@@ -345,6 +345,11 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Geography: «i» for countries, cities, and regions (i Japan, i Bergen, i Nord-Norge); «på» for islands (på Mallorca, på Island) and Norwegian districts (på Vestlandet). ' +
       "«Hos» = at someone's place/premises (being there): «Jeg var hos legen.» To go TO someone, use «til»: «Jeg skal til legen.» " +
       '«Ved» = right next to: «De bor ved sjøen.» ' +
+      'Relative/comparative position between two things or people uses «til venstre for» (to the ' +
+      'left of), «til høyre for» (to the right of), and «mellom X og Y» (between X and Y): «Banken ' +
+      'ligger til venstre for kirken.» «Butikken ligger mellom apoteket og biblioteket.» These ' +
+      'behave like the fixed spatial prepositions above — same choice whether something is ' +
+      'standing still or being placed. ' +
       'Possession: «bilen til Frida» (belonging to a person → «til»); «kongen i Norge» (geographic → «i»); «fargen på bilen» (property of a thing → «på»). ' +
       '«Av» = made of (material): «laget av tre.» «Fra» = coming from (origin): «fra hagen.» ' +
       'Compound prepositions: ved siden av (next to), i nærheten av (near), i stedet for (instead of), på grunn av (because of), ved hjelp av (with the help of).',
@@ -356,9 +361,128 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Geografi: «i» for land, byer og regioner (i Japan, i Bergen, i Nord-Norge); «på» for øyer (på Mallorca, på Island) og norske landsdeler (på Vestlandet). ' +
       '«Hos» = hos noen (man er der): «Jeg var hos legen.» For bevegelse til noen brukes «til»: «Jeg skal til legen.» ' +
       '«Ved» = like ved siden av: «De bor ved sjøen.» ' +
+      'Relativ/sammenlignende plassering mellom to ting eller personer bruker «til venstre for», ' +
+      '«til høyre for» og «mellom X og Y»: «Banken ligger til venstre for kirken.» «Butikken ' +
+      'ligger mellom apoteket og biblioteket.» Dette følger samme mønster som de faste ' +
+      'stedspreposisjonene over — samme valg enten noe står i ro eller blir plassert. ' +
       'Tilhørighet: «bilen til Frida» (tilhører en person → «til»); «kongen i Norge» (geografisk → «i»); «fargen på bilen» (egenskap ved ting → «på»). ' +
       '«Av» = laget av (materiale): «laget av tre.» «Fra» = kommer fra (opprinnelse): «fra hagen.» ' +
       'Sammensatte preposisjoner: ved siden av, i nærheten av, i stedet for, på grunn av, ved hjelp av.'
+  },
+
+  // ── Nivå A2 topics — see ai-docs/implementation/a2-quiz-and-grammar.md ─────────────────────────────
+
+  'presens-perfektum': {
+    id: 'presens-perfektum',
+    titleEn: 'Presens perfektum (present perfect)',
+    titleNb: 'Presens perfektum',
+    explanationEn:
+      'Presens perfektum = har/har ikke + perfektum partisipp: "Jeg har lest boka." Use it for ' +
+      'completed actions relevant to an open/unfinished time frame (today, this week, "ever/never", ' +
+      '"how long have you…"). Use preteritum instead for a closed past moment, usually with "i går" ' +
+      'or "for … siden": "Jeg leste boka i går." Negative and never-answers: "Nei, jeg har ikke ' +
+      'lest den." / "Nei, jeg har aldri lest den."',
+    explanationNb:
+      'Presens perfektum = har/har ikke + perfektum partisipp: "Jeg har lest boka." Brukes om ' +
+      'avsluttede handlinger i en åpen/uavsluttet tidsramme (i dag, denne uka, "noen gang/aldri", ' +
+      '"hvor lenge har du…"). Bruk preteritum for et avsluttet tidspunkt i fortida, ofte med "i går" ' +
+      'eller "for … siden": "Jeg leste boka i går." Nekting og aldri-svar: "Nei, jeg har ikke lest ' +
+      'den." / "Nei, jeg har aldri lest den."'
+  },
+
+  'derfor-fordi': {
+    id: 'derfor-fordi',
+    titleEn: '«derfor» vs. «fordi»',
+    titleNb: '«derfor» og «fordi»',
+    explanationEn:
+      '«Derfor» ("therefore") starts a new main clause expressing a RESULT, and triggers V2 ' +
+      'inversion like any fronted adverbial: "Sofaen er for stor. Derfor vil hun selge den." ' +
+      '«Fordi» ("because") introduces a subordinate clause expressing a CAUSE, with normal ' +
+      'subject-before-verb order: "Hun vil selge sofaen fordi den er for stor."',
+    explanationNb:
+      '«Derfor» innleder en ny hovedsetning som uttrykker en FØLGE, og utløser V2-inversjon som ' +
+      'ethvert fundamentplassert adverbial: "Sofaen er for stor. Derfor vil hun selge den." «Fordi» ' +
+      'innleder en leddsetning som uttrykker en ÅRSAK, med vanlig subjekt-før-verb-rekkefølge: "Hun ' +
+      'vil selge sofaen fordi den er for stor."'
+  },
+
+  kvantorer: {
+    id: 'kvantorer',
+    titleEn: 'Quantifiers: mye/mange, mer/flere',
+    titleNb: 'Kvantorer (mengdeord)',
+    explanationEn:
+      'Use «mye»/«mer» with uncountable nouns (mat, tid, plass, arbeid): "Jeg har mye å gjøre." Use ' +
+      '«mange»/«flere» with countable plural nouns (venner, oppgaver, stoler): "Jeg har mange ' +
+      'venner." «Flere» also means "several more" (Vi trenger flere stoler), while «mer» means ' +
+      '"more" of an uncountable amount (Vi trenger mer plass).',
+    explanationNb:
+      'Bruk «mye»/«mer» med ikke-tellelige substantiv (mat, tid, plass, arbeid): "Jeg har mye å ' +
+      'gjøre." Bruk «mange»/«flere» med tellelige substantiv i flertall (venner, oppgaver, stoler): ' +
+      '"Jeg har mange venner." «Flere» betyr også "noen flere til" (Vi trenger flere stoler), mens ' +
+      '«mer» betyr en større mengde av noe ikke-tellelig (Vi trenger mer plass).'
+  },
+
+  'modalverb-preteritum': {
+    id: 'modalverb-preteritum',
+    titleEn: 'Modal verbs in preteritum',
+    titleNb: 'Modalverb i preteritum',
+    explanationEn:
+      'Modal verbs have irregular preteritum forms: kan→kunne, vil→ville, skal→skulle, må→måtte, ' +
+      'bør→burde. Used as plain past tense ("Jeg måtte jobbe i går") and constantly in reported ' +
+      'speech, where a present-tense modal statement or question shifts to its preteritum form: ' +
+      '"Jeg må vente." → "Hun sa at hun måtte vente." "Skal jeg hjelpe?" → "Hun spurte om hun skulle ' +
+      'hjelpe."',
+    explanationNb:
+      'Modalverb har uregelmessige preteritumsformer: kan→kunne, vil→ville, skal→skulle, må→måtte, ' +
+      'bør→burde. Brukes som vanlig fortid ("Jeg måtte jobbe i går") og svært ofte i referert tale, ' +
+      'der en presens-modalytring skifter til preteritumsform: "Jeg må vente." → "Hun sa at hun ' +
+      'måtte vente." "Skal jeg hjelpe?" → "Hun spurte om hun skulle hjelpe."'
+  },
+
+  'plassering-verb': {
+    id: 'plassering-verb',
+    titleEn: 'Placement verbs: sette/legge vs. stå/ligge',
+    titleNb: 'Plasseringsverb: sette/legge og stå/ligge',
+    explanationEn:
+      '"Sette" and "legge" describe the ACTION of placing something and take a direct object: ' +
+      '"Han setter vasen på bordet." "Hun legger boka på bordet." "Stå" and "ligge" describe the ' +
+      'resulting STATE afterwards and take no object: "Vasen står på bordet." "Boka ligger på ' +
+      'bordet." Use sette/stå for upright objects, legge/ligge for flat ones.',
+    explanationNb:
+      'Sette og legge beskriver HANDLINGEN å plassere noe, og tar et objekt: "Han setter vasen på ' +
+      'bordet." "Hun legger boka på bordet." Stå og ligge beskriver TILSTANDEN etterpå, og tar ikke ' +
+      'objekt: "Vasen står på bordet." "Boka ligger på bordet." Bruk sette/stå om stående objekter, ' +
+      'legge/ligge om liggende objekter.'
+  },
+
+  'refleksive-verb': {
+    id: 'refleksive-verb',
+    titleEn: 'Reflexive verbs: glede seg, grue seg, føle seg',
+    titleNb: 'Refleksive verb: glede seg, grue seg, føle seg',
+    explanationEn:
+      'Some Norwegian verbs pair with a reflexive pronoun that changes with the subject: jeg gleder ' +
+      'MEG, du gleder DEG, han/hun/de gleder SEG, vi gleder OSS, dere gleder DERE. Same pattern for ' +
+      'grue seg (to dread) and føle seg (to feel).',
+    explanationNb:
+      'Noen norske verb tar et refleksivt pronomen som endrer seg med subjektet: jeg gleder MEG, du ' +
+      'gleder DEG, han/hun/de gleder SEG, vi gleder OSS, dere gleder DERE. Samme mønster for grue ' +
+      'seg og føle seg.'
+  },
+
+  'ha-vs-vaere': {
+    id: 'ha-vs-vaere',
+    titleEn: '«ha» vs. «være» for states',
+    titleNb: '«ha» og «være» for tilstander',
+    explanationEn:
+      'Norwegian uses «ha» (to have) for symptoms/possession-shaped states — «ha vondt i» (to have ' +
+      'pain in), «ha lyst på» (to feel like), «ha det bra» (to be doing well) — and «være» (to be) ' +
+      'for adjective-shaped states: «være syk», «være sulten», «være i dårlig humør». Many ' +
+      'English "to be" phrases map to Norwegian «ha»: "I have a headache" = "Jeg har vondt i hodet," ' +
+      'not "Jeg er vondt."',
+    explanationNb:
+      'Norsk bruker «ha» for symptomer/eie-lignende tilstander — «ha vondt i», «ha lyst på», «ha ' +
+      'det bra» — og «være» for adjektiv-tilstander: «være syk», «være sulten», «være i dårlig ' +
+      'humør».'
   },
 
   // ── Nivå A1 topics (free) ──────────────────────────────────────────────────────────────────
