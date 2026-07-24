@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.60.1
+
+### Patch Changes
+
+- - **Updates**
+    - Revised Plus plan messaging across supported languages, including vocabulary ranges, category totals, phrase previews, and free grammar availability.
+    - Updated displayed Plus feature wording to reflect access through level C.
+
+  - **Bug Fixes**
+    - Improved blog filter and pagination test reliability by waiting for visible UI updates.
+
+  - **Tests**
+    - Updated Plus feature coverage to match the revised “Full B1 to C access” wording.
+
 ## 2.60.0
 
 ### Minor Changes
