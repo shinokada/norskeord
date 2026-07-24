@@ -1,4 +1,5 @@
-import type { VocabEntry, CardProgress } from '$lib/types';
+import type { VocabEntry, CardProgress, FlashcardLanguage } from '$lib/types';
+import { getTranslation } from '$lib/vocab-helpers';
 
 // ── Shuffle ───────────────────────────────────────────────────────────────────
 
@@ -19,13 +20,33 @@ function shuffle<T>(arr: T[]): T[] {
 // extends this to B2, on the same reasoning: both are advanced-enough levels
 // that an English crutch works against the level's own point.
 
-/** Levels whose quiz questions are monolingual (Norwegian-only) rather than
- *  translation-based. See isQuizable below for the per-entry exclusion this
- *  implies. */
+/** Levels whose quiz questions are ALWAYS monolingual (Norwegian-only)
+ *  rather than translation-based, regardless of category. See isQuizable
+ *  below for the per-entry exclusion this implies. B1 is deliberately not
+ *  included here — B1 can go monolingual too, but only per-category (see
+ *  isB1MonolingualEligible below), mirroring the same `hasDefinitions` /
+ *  `isDefnorLevel` cutoff VocabFlashcardPage already uses for its `defnor`
+ *  mode. See ai-docs/implementation/quiz-i18n-and-categories.md Phase 1. */
 const MONOLINGUAL_LEVELS = new Set(['B2', 'C']);
 
 export function isMonolingualLevel(level: string): boolean {
   return MONOLINGUAL_LEVELS.has(level);
+}
+
+/**
+ * Whether a B1 entry should be quizzed monolingually. True only when the
+ * entry itself has a `definition` AND the category it's being quizzed from
+ * has at least one entry with a `definition` (the `categoryHasDefinitions`
+ * flag buildQuizSession computes from its entry pool) — same two-part check
+ * flashcards use before offering `defnor` mode. A B1 entry without a
+ * `definition`, or one from a category where no entries have definitions
+ * yet, always falls back to translation-based quizzing.
+ */
+export function isB1MonolingualEligible(
+  entry: VocabEntry,
+  categoryHasDefinitions: boolean
+): boolean {
+  return entry.level === 'B1' && categoryHasDefinitions && !!entry.definition;
 }
 
 /**
@@ -54,18 +75,27 @@ export function isQuizable(entry: VocabEntry): boolean {
  * Pick `n` distractor entries for a multiple-choice question.
  *
  * Strategy:
- * 1. Same CEFR level, different word and different English translation
- *    (or, for a monolingual-level entry, different `definition` — see
- *    isQuizable above).
+ * 1. Same CEFR level, different word and different translation in the
+ *    chosen language (or, for a monolingual question, different
+ *    `definition` — see isQuizable above).
  * 2. If fewer than `n` remain after step 1, pad from adjacent levels.
+ *
+ * `monolingual` defaults to the always-monolingual levels (B2/C) but can be
+ * passed explicitly — buildQuizSession does this for B1 entries eligible
+ * per isB1MonolingualEligible above.
  */
-export function getDistractors(entry: VocabEntry, allEntries: VocabEntry[], n = 3): VocabEntry[] {
-  const monolingual = isMonolingualLevel(entry.level);
+export function getDistractors(
+  entry: VocabEntry,
+  allEntries: VocabEntry[],
+  n = 3,
+  monolingual = isMonolingualLevel(entry.level),
+  language: FlashcardLanguage = 'english'
+): VocabEntry[] {
   // When building distractors for a monolingual question, every candidate
   // (regardless of its own level) needs a `definition` to show as an option —
   // padding in a definition-less entry would render "undefined" as a choice.
   const usable = monolingual ? allEntries.filter((e) => !!e.definition) : allEntries;
-  const key = (e: VocabEntry) => (monolingual ? e.definition : e.english);
+  const key = (e: VocabEntry) => (monolingual ? e.definition : getTranslation(e, language));
 
   const sameLevel = usable.filter(
     (e) => e !== entry && e.level === entry.level && key(e) !== key(entry)
@@ -121,31 +151,40 @@ export type QuizQuestion = MultipleChoiceQuestion | FillBlankQuestion | TypeAnsw
 /**
  * Build a multiple-choice question.
  *
- * Default direction: Norwegian → English (show the Norwegian word, pick the
- * English translation). Pass `direction: 'engnor'` to reverse. At a
- * monolingual level (B2, C), direction is ignored: the question is always
- * Norwegian word → Norwegian definition (see isMonolingualLevel above).
+ * Default direction: Norwegian → chosen language (show the Norwegian word,
+ * pick the translation). Pass `direction: 'engnor'` to reverse. At a
+ * monolingual level (B2, C) — or a B1 entry eligible per
+ * isB1MonolingualEligible — direction and language are ignored: the
+ * question is always Norwegian word → Norwegian definition.
  */
 export function buildMCQuestion(
   entry: VocabEntry,
   allEntries: VocabEntry[],
-  direction: 'noreng' | 'engnor' = 'noreng'
+  direction: 'noreng' | 'engnor' = 'noreng',
+  language: FlashcardLanguage = 'english',
+  monolingualOverride = false
 ): MultipleChoiceQuestion {
-  const monolingual = isMonolingualLevel(entry.level);
-  const distractors = getDistractors(entry, allEntries, 3);
+  const monolingual = isMonolingualLevel(entry.level) || monolingualOverride;
+  const distractors = getDistractors(entry, allEntries, 3, monolingual, language);
+  const translation = getTranslation(entry, language);
   const correct = monolingual
-    ? (entry.definition ?? entry.english)
+    ? (entry.definition ?? translation)
     : direction === 'noreng'
-      ? entry.english
+      ? translation
       : entry.norsk;
-  const wrongOptions = distractors.map((d) =>
-    monolingual ? (d.definition ?? d.english) : direction === 'noreng' ? d.english : d.norsk
-  );
+  const wrongOptions = distractors.map((d) => {
+    const dTranslation = getTranslation(d, language);
+    return monolingual
+      ? (d.definition ?? dTranslation)
+      : direction === 'noreng'
+        ? dTranslation
+        : d.norsk;
+  });
   const options = shuffle([correct, ...wrongOptions]);
   return {
     type: 'mc',
     entry,
-    prompt: monolingual ? entry.norsk : direction === 'noreng' ? entry.norsk : entry.english,
+    prompt: monolingual ? entry.norsk : direction === 'noreng' ? entry.norsk : translation,
     options,
     correctIndex: options.indexOf(correct)
   };
@@ -156,34 +195,45 @@ export function buildMCQuestion(
  *
  * Replaces the first occurrence of `entry.norsk` in `entry.example` with
  * "________". If the word doesn't appear verbatim (e.g. it is inflected),
- * falls back to a direct prompt — in English normally, or (at a monolingual
- * level) a Norwegian "which word means this definition?" prompt, keeping the
+ * falls back to a direct prompt — in the chosen language normally, or (at a
+ * monolingual level, or a B1 entry eligible per isB1MonolingualEligible) a
+ * Norwegian "which word means this definition?" prompt, keeping the
  * monolingual question types consistent with each other.
  */
-export function buildFillQuestion(entry: VocabEntry): FillBlankQuestion {
+export function buildFillQuestion(
+  entry: VocabEntry,
+  language: FlashcardLanguage = 'english',
+  monolingualOverride = false
+): FillBlankQuestion {
   const blanked = entry.example.replace(entry.norsk, '________');
-  const monolingual = isMonolingualLevel(entry.level);
+  const monolingual = isMonolingualLevel(entry.level) || monolingualOverride;
   const sentence = blanked.includes('________')
     ? blanked
     : monolingual
-      ? `Hvilket ord betyr: «${entry.definition ?? entry.english}»?`
-      : `Hva er det norske ordet for "${entry.english}"?`;
+      ? `Hvilket ord betyr: «${entry.definition ?? getTranslation(entry, language)}»?`
+      : `Hva er det norske ordet for "${getTranslation(entry, language)}"?`;
   return { type: 'fill', entry, sentence, answer: entry.norsk };
 }
 
 /**
  * Build a type-the-answer question.
  *
- * Shows the English word (or, at a monolingual level, the Norwegian
- * definition — see isMonolingualLevel above); the user types the Norwegian
- * translation.
+ * Shows the translation in the chosen language (or, at a monolingual level,
+ * or a B1 entry eligible per isB1MonolingualEligible, the Norwegian
+ * definition); the user types the Norwegian word.
  */
-export function buildTypeQuestion(entry: VocabEntry): TypeAnswerQuestion {
-  const monolingual = isMonolingualLevel(entry.level);
+export function buildTypeQuestion(
+  entry: VocabEntry,
+  language: FlashcardLanguage = 'english',
+  monolingualOverride = false
+): TypeAnswerQuestion {
+  const monolingual = isMonolingualLevel(entry.level) || monolingualOverride;
   return {
     type: 'type',
     entry,
-    prompt: monolingual ? (entry.definition ?? entry.english) : entry.english,
+    prompt: monolingual
+      ? (entry.definition ?? getTranslation(entry, language))
+      : getTranslation(entry, language),
     answer: entry.norsk
   };
 }
@@ -200,15 +250,25 @@ export function buildTypeQuestion(entry: VocabEntry): TypeAnswerQuestion {
  *   0, 1 → multiple choice  (50 %)
  *   2    → fill-in-the-blank (25 %)
  *   3    → type-the-answer   (25 %)
+ *
+ * `language` drives A1/A2 (and non-eligible B1) translation-based questions
+ * — see getTranslation. Whether each B1 entry instead goes monolingual is
+ * decided per-entry via isB1MonolingualEligible, using a `categoryHasDefinitions`
+ * flag computed once from `entries` (the already-filtered category/level
+ * pool the caller passed in) — mirroring VocabFlashcardPage's `hasDefinitions`
+ * check for its `defnor` mode. B2/C entries are unaffected — always
+ * monolingual per isMonolingualLevel.
  */
 export function buildQuizSession(
   entries: VocabEntry[],
   allEntries: VocabEntry[],
   progressMap: Record<string, CardProgress>,
-  count = 10
+  count = 10,
+  language: FlashcardLanguage = 'english'
 ): QuizQuestion[] {
   const now = new Date();
   const quizable = entries.filter(isQuizable);
+  const categoryHasDefinitions = entries.some((e) => !!e.definition);
 
   const due = quizable.filter(
     (e) => progressMap[e.norsk] && new Date(progressMap[e.norsk].fsrs.due) <= now
@@ -218,10 +278,12 @@ export function buildQuizSession(
   const pool = [...shuffle(due), ...shuffle(newCards)].slice(0, count);
 
   return pool.map((entry, i) => {
+    const monolingualOverride = isB1MonolingualEligible(entry, categoryHasDefinitions);
     const mod = i % 4;
-    if (mod === 0 || mod === 1) return buildMCQuestion(entry, allEntries);
-    if (mod === 2) return buildFillQuestion(entry);
-    return buildTypeQuestion(entry);
+    if (mod === 0 || mod === 1)
+      return buildMCQuestion(entry, allEntries, 'noreng', language, monolingualOverride);
+    if (mod === 2) return buildFillQuestion(entry, language, monolingualOverride);
+    return buildTypeQuestion(entry, language, monolingualOverride);
   });
 }
 

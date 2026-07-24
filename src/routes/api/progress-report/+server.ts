@@ -11,87 +11,10 @@
 import type { RequestHandler } from './$types';
 import { State } from 'ts-fsrs';
 import { CATEGORIES_BY_LEVEL } from '$lib/config';
+import { categoryLabel } from '$lib/vocab-helpers';
 import type { CardProgress, CEFRLevel } from '$lib/types';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
-
-const CATEGORY_LABELS: Record<string, string> = {
-  greetings: 'Greetings',
-  numbers: 'Numbers',
-  colors: 'Colors',
-  family: 'Family',
-  body: 'Body',
-  food: 'Food',
-  animals: 'Animals',
-  home: 'Home',
-  'days-months': 'Days & Months',
-  classroom: 'Classroom',
-  'basic-adjectives': 'Basic Adjectives',
-  'basic-verbs': 'Basic Verbs',
-  'pronouns-and-questions': 'Pronouns & Questions',
-  feelings: 'Feelings',
-  weather: 'Weather',
-  transportation: 'Transportation',
-  shopping: 'Shopping',
-  transport: 'Transport',
-  clothing: 'Clothing',
-  hobbies: 'Hobbies',
-  directions: 'Directions',
-  occupations: 'Occupations',
-  sports: 'Sports',
-  'health-basic': 'Health — Basic',
-  time: 'Time',
-  'descriptive-adjectives': 'Descriptive Adjectives',
-  cooking: 'Cooking',
-  nature: 'Nature',
-  'house-chores': 'House & Chores',
-  communication: 'Communication',
-  travel: 'Travel',
-  environment: 'Environment',
-  media: 'Media',
-  culture: 'Culture',
-  technology: 'Technology',
-  relationships: 'Relationships',
-  education: 'Education',
-  work: 'Work',
-  'city-life': 'City Life',
-  traditions: 'Traditions',
-  'opinion-adjectives': 'Opinion Adjectives',
-  'food-cooking-advanced': 'Food & Cooking — Advanced',
-  'housing-renting': 'Housing & Renting',
-  'health-body-intermediate': 'Health & Body',
-  'finance-banking': 'Finance & Banking',
-  politics: 'Politics',
-  economics: 'Economics',
-  'social-issues': 'Social Issues',
-  arts: 'Arts',
-  science: 'Science',
-  emotions: 'Emotions',
-  history: 'History',
-  law: 'Law',
-  literature: 'Literature',
-  'advanced-adjectives': 'Advanced Adjectives',
-  philosophy: 'Philosophy',
-  medicine: 'Medicine',
-  psychology: 'Psychology',
-  business: 'Business',
-  religion: 'Religion',
-  uttrykk: 'Phrases (uttrykk)',
-  'uttrykk-preview': 'Phrases (preview)',
-  workplace: 'Workplace',
-  'mental-wellbeing': 'Mental Wellbeing',
-  'sports-fitness': 'Sports & Fitness',
-  'arts-culture': 'Arts & Culture',
-  'norwegian-society': 'Norwegian Society',
-  'politics-civics': 'Politics & Civics',
-  'health-system': 'Health System',
-  'language-learning': 'Language Learning',
-  'relationships-family': 'Relationships & Family'
-};
-
-function labelFor(cat: string): string {
-  return CATEGORY_LABELS[cat] ?? cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-}
 
 interface LevelStat {
   level: CEFRLevel;
@@ -197,7 +120,7 @@ function computeStats(progressMap: Record<string, CardProgress>) {
       catMap.set(key, {
         level: card.level,
         category: card.category,
-        label: labelFor(card.category),
+        label: categoryLabel(card.level, card.category),
         seen: 0,
         memorized: 0,
         due: 0

@@ -27,7 +27,10 @@ test('home page level cards link to /learn/[level]', async ({ page }) => {
 
 test('A1 greetings flashcard page loads and shows title', async ({ page }) => {
   await page.goto('/a1/greetings');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Greetings');
+  // Phase 3 (ai-docs/implementation/quiz-i18n-and-categories.md): the h1 is
+  // now a fixed Ord/Uttrykk mode label, not the category name — the
+  // category name moved to the "Studying: X" breadcrumb above it.
+  await expect(page.getByText(/studying:\s*greetings/i)).toBeVisible();
 });
 
 test('A1 greetings page has mode toggle buttons', async ({ page }) => {
@@ -62,7 +65,7 @@ test('free user sees no upsell banner when no cards are due', async ({ page }) =
 
 test('B1 travel flashcard page loads', async ({ page }) => {
   await page.goto('/b1/travel');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Travel');
+  await expect(page.getByText(/studying:\s*travel/i)).toBeVisible();
 });
 
 // Plus member: C philosophy page loads with cards and FSRS rating buttons
@@ -72,8 +75,11 @@ test('Plus member C philosophy flashcard page loads and shows cards', async ({ p
   await injectPlusPlan(page);
   await page.goto('/c/philosophy');
 
-  // heading shows correct category
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Philosophy');
+  // breadcrumb shows correct category (Phase 3: category name lives here,
+  // not in the h1 — see the A1 greetings test above). injectPlusPlan also
+  // sets the Norwegian locale cookie (see helpers.ts), so the category label
+  // itself renders in Norwegian ("Filosofi"), not English ("Philosophy").
+  await expect(page.getByText(/studying:\s*filosofi/i)).toBeVisible();
 
   // card counter is visible (format: "1/N") — wait for deck to build after onMount
   await expect(page.getByText(/^\d+\/\d+$/)).toBeVisible({ timeout: 10000 });
@@ -114,7 +120,11 @@ test.fixme('Plus member C uttrykk page loads and shows cards', async ({ page }) 
   await injectPlusPlan(page);
   await page.goto('/c/uttrykk');
 
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Uttrykk');
+  // Phase 3 (ai-docs/implementation/quiz-i18n-and-categories.md): the h1 is
+  // now a fixed Ord/Uttrykk mode label driven by cardType (default 'word',
+  // so 'Ord' here), not a static "Uttrykk" title — check the page's own
+  // "fixed expressions" breadcrumb instead, which is unaffected by Phase 3.
+  await expect(page.getByText(/fixed expressions/i)).toBeVisible();
 
   // card counter is visible (format: "1/N") — wait for deck to build after onMount
   await expect(page.getByText(/^\d+\/\d+$/)).toBeVisible({ timeout: 10000 });
