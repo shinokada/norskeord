@@ -15,6 +15,7 @@
   import type { SearchEntry } from '$lib/search';
   import type { SearchFilter } from '$lib/searchUtils';
   import { tick } from 'svelte';
+  import { categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages.js';
 
   interface Props {
@@ -322,7 +323,7 @@
                   {@html highlight(entry.norsk, query)}
                 </span>
                 <span class="shrink-0 text-xs text-gray-600 dark:text-gray-300">
-                  {entry.level} · {entry.category.replace(/-/g, ' ')}
+                  {entry.level} · {categoryLabel(entry.level, entry.category)}
                 </span>
               </div>
               <div class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">

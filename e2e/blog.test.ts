@@ -208,6 +208,12 @@ test.describe('Blog level filter', () => {
     const selectedLevel = 'A2';
     await levelBtn(page, selectedLevel).click();
 
+    // Wait for the active-filter summary to confirm the level filter has
+    // actually applied before reading card badges — asserting right after
+    // click() can race the reactive update and read the still-unfiltered,
+    // chronological card list (same fix as the Guide-pill tests below).
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
+
     // The filter includes posts whose cefr matches the selected level. Posts
     // may appear in groups below the selected level (e.g. an A1 group is shown
     // alongside A2 when the filter is "A2"). What must NOT appear is any post
@@ -229,6 +235,11 @@ test.describe('Blog level filter', () => {
         .then((ts) => ts.map((t) => t.trim()));
 
       // No card should have badges only from levels above the selection.
+      // (guard against the vacuous-true case: every([]) is always true, so a
+      // card with no cefr badges at all — which shouldn't happen here, since
+      // guides are excluded from a level-filtered grid — must not silently
+      // pass this check.)
+      expect(badgeTexts.length).toBeGreaterThan(0);
       const allHigher = badgeTexts.every((t) => higherLevels.has(t));
       expect(allHigher).toBe(false);
 
@@ -320,7 +331,17 @@ test.describe('Blog tag filter', () => {
     const allCount = await page.locator('a[href^="/blog/"]').count();
     const guideButton = page.getByRole('button', { name: 'Guide', exact: true });
     await guideButton.click();
+    // Wait for the guide-only filter to actually apply before deselecting —
+    // clicking twice back-to-back without waiting for the first reactive
+    // update to settle can race the second click's toggle, same fix as the
+    // 'guides are hidden when a level filter is active' test above.
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
     await guideButton.click();
+    // Wait for the active-filter summary to disappear, confirming the
+    // deselect actually took effect, before counting cards.
+    await expect(
+      page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))
+    ).not.toBeVisible();
     await expect(page.locator('a[href^="/blog/"]')).toHaveCount(allCount);
   });
 });
