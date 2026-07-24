@@ -322,6 +322,13 @@ test.describe('Blog tag filter', () => {
     await expect(guideButton).toBeVisible();
     await guideButton.click();
 
+    // Wait for the active-filter summary to confirm the Guide pill's state
+    // change has actually applied before reading card badges — asserting
+    // right after click() can race the reactive filter update and read the
+    // still-unfiltered, chronological card list (same fix as the other
+    // Guide-pill tests in this file).
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
+
     const cards = page.locator('a[href^="/blog/"]');
     await expect(cards.first()).toBeVisible();
     const count = await cards.count();
@@ -431,13 +438,21 @@ test.describe('Blog load more', () => {
     const loadMoreBtn = page.getByRole('button', { name: /load more|last inn/i });
     if (!(await loadMoreBtn.isVisible())) test.skip();
 
+    const cards = page.locator('div.grid a[href^="/blog/"]');
+    const before = await cards.count();
     await loadMoreBtn.click();
-    const expanded = await page.locator('div.grid a[href^="/blog/"]').count();
+
+    // Wait for the extra cards to actually render before counting — reading
+    // count() synchronously right after click() can race the reactive
+    // visibleCount update, same class of race as the Guide-pill tests above.
+    await expect.poll(() => cards.count()).toBeGreaterThan(before);
+    const expanded = await cards.count();
     expect(expanded).toBeGreaterThan(8);
 
     // Apply a filter — count should drop back to ≤ 8
     await levelBtn(page, 'A2').click();
-    const afterFilter = await page.locator('div.grid a[href^="/blog/"]').count();
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
+    const afterFilter = await cards.count();
     expect(afterFilter).toBeLessThanOrEqual(8);
   });
 });
