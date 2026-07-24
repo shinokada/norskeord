@@ -4,7 +4,12 @@
  *
  * Targeted completeness check for the one place in this codebase where a
  * missing messages/en.json key can ship silently: the dynamic category
- * label lookup in src/routes/learn/[level]/+page.svelte:
+ * label lookup in the shared `categoryLabel()` helper in
+ * src/lib/vocab-helpers.ts (consumed by progress-report/+server.ts,
+ * quiz/+page.svelte's formatCategory(), stats.ts, and the `themeLabel()`
+ * wrapper in src/routes/[level]/[category]/+page.svelte — see
+ * ai-docs/implementation/quiz-i18n-and-categories.md Phase 2/3 for how
+ * this got centralized):
  *
  *   const key = `category_${level}_${slug.replace(/-/g, '_')}` as keyof typeof m;
  *   const fn = m[key];
@@ -55,10 +60,16 @@ const messageKeys = new Set(Object.keys(messages).filter((k) => !k.startsWith('$
 
 // ── 1. Build the expected key set from CATEGORIES_BY_LEVEL ──────────────
 //
-// Mirrors the exact transform used at runtime in
-// src/routes/learn/[level]/+page.svelte's categoryLabel():
-//   `category_${level}_${slug.replace(/-/g, '_')}`
-// where `level` is the lowercased CEFR level (e.g. "a1", "c").
+// The RUNTIME lookup in src/lib/vocab-helpers.ts's categoryLabel() builds
+// its key as `category_${level}_${slug.replace(/-/g, '_')}` because that's
+// the paraglide-generated *property name* on `m`. But the SOURCE en.json
+// key itself keeps the slug's hyphens intact (e.g. "category_a1_days-months")
+// — paraglide only sanitizes hyphens→underscores when compiling JS
+// identifiers, not in the JSON. Since this script compares against en.json
+// directly (not the compiled `m` object), it must build the expected key
+// with hyphens preserved, or every hyphenated slug false-flags as both
+// MISSING and ORPHANED under two different spellings of the same key.
+// (`level` below is the lowercased CEFR level, e.g. "a1", "c".)
 
 type Expected = { level: string; slug: string; key: string };
 
@@ -66,7 +77,13 @@ const expected: Expected[] = [];
 for (const [level, slugs] of Object.entries(CATEGORIES_BY_LEVEL)) {
   const levelLower = level.toLowerCase();
   for (const slug of slugs) {
-    const key = `category_${levelLower}_${slug.replace(/-/g, '_')}`;
+    // en.json keeps hyphens in the slug portion of the key (e.g.
+    // "category_a1_days-months"). Paraglide only sanitizes hyphens to
+    // underscores when it compiles JS function/property names
+    // (m.category_a1_days_months()) — the source JSON itself is untouched.
+    // check-unused-keys.mjs already normalizes for this; mirror that here
+    // instead of stripping hyphens when building the expected key.
+    const key = `category_${levelLower}_${slug}`;
     expected.push({ level: levelLower, slug, key });
   }
 }

@@ -11,7 +11,11 @@
  * Most keys are referenced statically, e.g. `m.stats_title()` or even just
  * `m.stats_title` (no call, e.g. inside an object literal lookup table).
  * But some keys are referenced *dynamically*, built from a template literal
- * and used to index into `m`, e.g. (learn/[level]/+page.svelte):
+ * and used to index into `m`, e.g. (categoryLabel() in
+ * src/lib/vocab-helpers.ts, the shared helper consumed by
+ * progress-report/+server.ts, quiz/+page.svelte, stats.ts, and
+ * [level]/[category]/+page.svelte's themeLabel() wrapper — see
+ * ai-docs/implementation/quiz-i18n-and-categories.md Phase 2/3):
  *
  *   const key = `category_${level}_${slug.replace(/-/g, '_')}` as keyof typeof m;
  *   const fn = m[key];
