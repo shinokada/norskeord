@@ -30,7 +30,7 @@ test.describe('/plus page', () => {
 
   test('shows all Plus feature cards', async ({ page }) => {
     for (const title of [
-      'Full B1 to C2 access',
+      'Full B1 to C access',
       'Cross-device sync',
       'Per-category progress breakdown',
       'Quiz yourself, not just flip',
