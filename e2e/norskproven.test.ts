@@ -42,7 +42,11 @@ test.describe('/norskproven page', () => {
   test('A2 health link opens a page with vocab entries, not empty', async ({ page }) => {
     await page.goto('/a2/health');
     await expect(page).toHaveURL('/a2/health');
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Health');
+    // Phase 3 (ai-docs/implementation/quiz-i18n-and-categories.md): the h1 is
+    // now a fixed Ord/Uttrykk mode label, not the category name — the
+    // category name moved to the "Studying: X" breadcrumb above it (see the
+    // equivalent fix in e2e/flashcard.test.ts).
+    await expect(page.getByText(/studying:\s*health/i)).toBeVisible();
   });
 
   // ── B1 free categories are not plus-gated ────────────────────────────────
