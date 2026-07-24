@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.60.0
+
+### Minor Changes
+
+- - **New Features**
+    - A1 learners can now access all expression themes, including “Others” and study-all content, without restrictions.
+  - **Bug Fixes**
+    - Updated expression access handling so the “Others” option correctly reflects availability for each level.
+    - Improved blog filter test reliability under slower preview-server conditions.
+  - **Documentation**
+    - Clarified internationalization maintenance scripts, cleanup safeguards, and usage guidance.
+  - **Chores**
+    - Removed outdated generated reports and ignored generated output directories.
+    - Refreshed statistics metadata.
+
 ## 2.59.0
 
 ### Minor Changes
