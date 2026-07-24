@@ -212,7 +212,12 @@ test.describe('Blog level filter', () => {
     // actually applied before reading card badges — asserting right after
     // click() can race the reactive update and read the still-unfiltered,
     // chronological card list (same fix as the Guide-pill tests below).
-    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
+    // Generous timeout: this assertion runs against the built `preview`
+    // server (see playwright.config.ts), which can be slower to settle
+    // under parallel test load than the 5s default accounts for.
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible({
+      timeout: 10000
+    });
 
     // The filter includes posts whose cefr matches the selected level. Posts
     // may appear in groups below the selected level (e.g. an A1 group is shown
