@@ -15,6 +15,10 @@ static/data/search-index.json
 /.svelte-kit
 /build
 
+# Generated output directories
+scripts/output/
+scripts/outputs/
+
 # OS
 .DS_Store
 Thumbs.db
