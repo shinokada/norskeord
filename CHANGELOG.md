@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.59.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added seven A2 grammar topics and expanded exercises, vocabulary, and expressions.
+    - Quiz prompts, answers, and distractors now respect the selected translation language.
+    - Improved Norwegian-only quiz behavior for eligible content.
+    - Added consistent translated category labels across search, learning, statistics, and progress views.
+    - Updated flashcard breadcrumbs and mode labels for clearer navigation.
+  - **Bug Fixes**
+    - Corrected category translations, A2 vocabulary matching, and Norwegian-only hint content.
+  - **Documentation**
+    - Consolidated internationalization maintenance guidance and completion records.
+
 ## 2.58.0
 
 ### Minor Changes
