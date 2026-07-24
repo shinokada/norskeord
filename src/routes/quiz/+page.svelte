@@ -8,15 +8,18 @@
     levenshtein,
     isQuizable,
     isMonolingualLevel,
+    isB1MonolingualEligible,
     type QuizQuestion,
     type MultipleChoiceQuestion,
     type FillBlankQuestion,
     type TypeAnswerQuestion
   } from '$lib/quiz';
   import { loadProgressMap, loadProgressMapFromSupabase, saveProgress } from '$lib/progress';
-  import type { FSRSRating, CardProgress } from '$lib/types';
+  import type { FSRSRating, CardProgress, FlashcardLanguage } from '$lib/types';
   import { isFreeQuizCategory } from '$lib/access';
   import { FREE_QUIZ_CATEGORIES } from '$lib/config';
+  import { languageStore } from '$lib/stores/language.svelte';
+  import { getTranslation, getExampleTranslation, categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages';
 
   let { data } = $props();
@@ -125,6 +128,24 @@
     return es.filter(isQuizable);
   });
 
+  // Phase 1 (ai-docs/implementation/quiz-i18n-and-categories.md): quiz
+  // translation language reuses the same `languageStore` flashcards already
+  // use (src/lib/stores/language.svelte.ts) — a dedicated preference,
+  // independent of the interface locale, that already covers German. No
+  // interface-locale mapping needed.
+  let quizLanguage = $derived<FlashcardLanguage>(languageStore.current);
+
+  // Whether the current category pool has at least one entry with a
+  // `definition` — mirrors VocabFlashcardPage's `hasDefinitions`, and gates
+  // whether a B1 entry is quizzed monolingually (see isB1MonolingualEligible).
+  let categoryHasDefinitions = $derived(quizEntries.some((e) => !!e.definition));
+
+  function entryIsMonolingual(entry: import('$lib/types').VocabEntry): boolean {
+    return (
+      isMonolingualLevel(entry.level) || isB1MonolingualEligible(entry, categoryHasDefinitions)
+    );
+  }
+
   onMount(() => {
     if (browser) {
       // Plus users: load from Supabase; guest/free: load from localStorage
@@ -152,7 +173,7 @@
     // missing → 10. Cap to available entries.
     const raw = browser ? (localStorage.getItem('vocab-quiz-limit') ?? 'default') : 'default';
     const quizCount = raw === 'default' ? 10 : Math.max(1, parseInt(raw, 10) || 10);
-    questions = buildQuizSession(entries, data.allEntries, progressMap, quizCount);
+    questions = buildQuizSession(entries, data.allEntries, progressMap, quizCount, quizLanguage);
     currentIndex = 0;
     correctCount = 0;
     results = [];
@@ -286,9 +307,11 @@
     return String.fromCharCode(65 + i); // A, B, C, D
   }
 
+  // Phase 2 (ai-docs/implementation/quiz-i18n-and-categories.md): a single
+  // categoryLabel() lookup for every category, uttrykk included — no more
+  // special-cased m.quiz_category_uttrykk() or raw-slug title-case fallback.
   function formatCategory(cat: string): string {
-    if (cat === 'uttrykk') return m.quiz_category_uttrykk();
-    return cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+    return categoryLabel(selectedLevel, cat);
   }
 
   function formatLevel(level: string): string {
@@ -517,9 +540,9 @@
           "{q.sentence}"
         </p>
         <p class="mb-6 text-sm text-indigo-500 dark:text-indigo-400">
-          {isMonolingualLevel(q.entry.level)
-            ? (q.entry.definition ?? q.entry.english)
-            : q.entry.english}
+          {entryIsMonolingual(q.entry)
+            ? (q.entry.definition ?? getTranslation(q.entry, quizLanguage))
+            : getTranslation(q.entry, quizLanguage)}
         </p>
         <div class="flex gap-2">
           <input
@@ -698,9 +721,9 @@
         <p class="text-sm text-gray-700 italic dark:text-gray-300">
           {current.entry.example}
         </p>
-        {#if !isMonolingualLevel(current.entry.level)}
+        {#if !entryIsMonolingual(current.entry)}
           <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-            {current.entry.example_english}
+            {getExampleTranslation(current.entry, quizLanguage) ?? current.entry.example_english}
           </p>
         {/if}
         <div class="mt-2">
@@ -758,9 +781,10 @@
               <p class="font-medium text-gray-800 dark:text-gray-100">
                 {result.question.entry.norsk}
                 <span class="ml-1 font-normal text-gray-600 dark:text-gray-300">
-                  — {isMonolingualLevel(result.question.entry.level)
-                    ? (result.question.entry.definition ?? result.question.entry.english)
-                    : result.question.entry.english}
+                  — {entryIsMonolingual(result.question.entry)
+                    ? (result.question.entry.definition ??
+                      getTranslation(result.question.entry, quizLanguage))
+                    : getTranslation(result.question.entry, quizLanguage)}
                 </span>
               </p>
               {#if !result.correct && result.userAnswer}

@@ -11,9 +11,13 @@
 import { State } from 'ts-fsrs';
 import type { CardProgress, CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
 import { CATEGORIES_BY_LEVEL, UTTRYKK_CATCHALL_THEME } from '$lib/config';
-import { removeHyphensAndCapitalize } from '$lib/utils';
 import { UTTRYKK_C_KEYS, uttrykkCCategoryCounts } from '$lib/uttrykk-c-stats';
-import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME, type ThemeCount } from '$lib/vocab-helpers';
+import {
+  partitionUttrykkThemes,
+  UTTRYKK_OTHERS_THEME,
+  categoryLabel,
+  type ThemeCount
+} from '$lib/vocab-helpers';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
 import grammarData from '$lib/data/grammar.json';
 
@@ -106,7 +110,7 @@ export function vocabCategoryStatsForLevel(
       const total = vocabByLevel[level].filter((v) => v.category === category).length;
       return buildStatRow(
         category,
-        removeHyphensAndCapitalize(category),
+        categoryLabel(level, category),
         `/${lvl}/${category}`,
         total,
         catCards,
@@ -169,7 +173,7 @@ export function uttrykkThemeStatsForLevel(
       .map(({ theme: category }) =>
         buildStatRow(
           category,
-          removeHyphensAndCapitalize(category),
+          categoryLabel(level, category),
           `/c/${category}`,
           categoryCounts.get(category) ?? 0,
           cardsByCategory.get(category) ?? [],
@@ -182,7 +186,7 @@ export function uttrykkThemeStatsForLevel(
       rows.push(
         buildStatRow(
           UTTRYKK_OTHERS_THEME,
-          removeHyphensAndCapitalize(UTTRYKK_OTHERS_THEME),
+          categoryLabel(level, UTTRYKK_OTHERS_THEME),
           `/c/uttrykk`,
           othersCount,
           othersCards,
@@ -237,7 +241,7 @@ export function uttrykkThemeStatsForLevel(
     .map(({ theme }) =>
       buildStatRow(
         theme,
-        removeHyphensAndCapitalize(theme),
+        categoryLabel(level, theme),
         `/${lvl}/uttrykk?theme=${theme}`,
         themeCounts.get(theme) ?? 0,
         cardsByTheme.get(theme) ?? [],
@@ -250,7 +254,7 @@ export function uttrykkThemeStatsForLevel(
     rows.push(
       buildStatRow(
         UTTRYKK_OTHERS_THEME,
-        removeHyphensAndCapitalize(UTTRYKK_OTHERS_THEME),
+        categoryLabel(level, UTTRYKK_OTHERS_THEME),
         `/${lvl}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}`,
         othersCount,
         othersCards,
