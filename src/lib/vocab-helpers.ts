@@ -3,6 +3,8 @@
 // Kept separate from types.ts so types.ts stays declaration-only.
 
 import type { VocabEntry, FlashcardLanguage, GrammarQuestion, CEFRLevel } from '$lib/types';
+import * as m from '$lib/paraglide/messages.js';
+import { removeHyphensAndCapitalize } from '$lib/utils';
 
 // ── Vocab ────────────────────────────────────────────────────────────────────
 
@@ -22,6 +24,29 @@ export function getExampleTranslation(
 ): string | undefined {
   if (language === 'english') return entry.example_english;
   return entry[`example_${language}` as keyof VocabEntry] as string | undefined;
+}
+
+/**
+ * Phase 2 (ai-docs/implementation/quiz-i18n-and-categories.md): the single,
+ * centralized lookup for a category slug's display name. Reads the existing
+ * `category_{level}_{slug}` Paraglide keys — the same mechanism
+ * `themeLabel()` in `[level]/[category]/+page.svelte` already uses for the
+ * uttrykk theme breadcrumb — instead of a hand-maintained plain-object map.
+ * Every slug in `CATEGORIES_BY_LEVEL` has a key in all five locales; the
+ * raw-slug title-case fallback below is a last resort for a slug that isn't
+ * covered (which shouldn't happen once every level's slugs have keys).
+ *
+ * `level` is case-insensitive ('A1' or 'a1' both work). `slug` uses hyphens
+ * as stored in `CATEGORIES_BY_LEVEL` (e.g. 'days-months') — this function
+ * does the hyphen→underscore translation the generated message keys need.
+ */
+export function categoryLabel(level: string, slug: string): string {
+  const key = `category_${level.toLowerCase()}_${slug.replace(/-/g, '_')}` as keyof typeof m;
+  const fn = m[key];
+  if (typeof fn === 'function') {
+    return (fn as () => string)();
+  }
+  return removeHyphensAndCapitalize(slug);
 }
 
 // ── Grammar ──────────────────────────────────────────────────────────────────

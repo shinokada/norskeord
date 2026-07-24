@@ -1,8 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
-  import { removeHyphensAndCapitalize } from '$lib/utils';
-  import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
+  import { categoryLabel, partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
   import { isFreeUttrykkTheme } from '$lib/uttrykk-gating';
   import { learnHubExpanded } from '$lib/stores/learnHubExpanded.svelte';
   import type { UttrykkThemeLevel } from '$lib/config';
@@ -61,16 +60,6 @@
       });
     }
     return m.level_hub_words({ count: s.vocab.toLocaleString() });
-  }
-
-  /** Resolve a category slug to its i18n label, falling back to removeHyphensAndCapitalize. */
-  function categoryLabel(level: string, slug: string): string {
-    const key = `category_${level}_${slug.replace(/-/g, '_')}` as keyof typeof m;
-    const fn = m[key];
-    if (typeof fn === 'function') {
-      return (fn as () => string)();
-    }
-    return removeHyphensAndCapitalize(slug);
   }
 
   // Phase 3 (ai-docs/implementation/uttrykk-gate.md): 'uttrykk-preview' is

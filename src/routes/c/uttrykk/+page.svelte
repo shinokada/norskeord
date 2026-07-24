@@ -37,12 +37,7 @@
       Back to Uttrykk
     </a>
   </div>
-  <VocabFlashcardPage
-    entries={data.entries}
-    title="Uttrykk"
-    level={data.level}
-    language={languageStore.current}
-  />
+  <VocabFlashcardPage entries={data.entries} level={data.level} language={languageStore.current} />
 {:else}
   <div class="py-16 text-center">
     <h1 class="text-gray-700 dark:text-gray-300">Uttrykk</h1>
