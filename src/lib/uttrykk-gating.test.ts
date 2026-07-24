@@ -20,9 +20,14 @@ describe('FREE_UTTRYKK_THEMES', () => {
       }
     });
 
-    it(`${level} has at least one free theme`, () => {
-      expect(FREE_UTTRYKK_THEMES[level].length).toBeGreaterThan(0);
-    });
+    // A1's array is intentionally empty — it's opened fully via
+    // isFreeUttrykkTheme's level check instead of a curated allow-list,
+    // see uttrykk-gating.ts.
+    if (level !== 'A1') {
+      it(`${level} has at least one free theme`, () => {
+        expect(FREE_UTTRYKK_THEMES[level].length).toBeGreaterThan(0);
+      });
+    }
 
     it(`${level}'s free themes never include the catch-all "general" bucket`, () => {
       expect(FREE_UTTRYKK_THEMES[level]).not.toContain(UTTRYKK_CATCHALL_THEME);
@@ -32,17 +37,29 @@ describe('FREE_UTTRYKK_THEMES', () => {
 
 describe('isFreeUttrykkTheme', () => {
   it('returns true only for themes in the allow-list', () => {
-    expect(isFreeUttrykkTheme('A1', 'greetings')).toBe(true);
-    expect(isFreeUttrykkTheme('A1', 'classroom')).toBe(false);
+    expect(isFreeUttrykkTheme('A2', 'idioms')).toBe(true);
+    expect(isFreeUttrykkTheme('A2', 'directions')).toBe(false);
   });
 
-  it('returns false for null (no theme selected / "study all")', () => {
-    expect(isFreeUttrykkTheme('A1', null)).toBe(false);
+  it('returns false for null (no theme selected / "study all") at levels with a curated allow-list', () => {
+    expect(isFreeUttrykkTheme('A2', null)).toBe(false);
   });
 
-  it('returns false for the Others bucket and unknown slugs', () => {
+  it('returns false for the Others bucket and unknown slugs at levels with a curated allow-list', () => {
     expect(isFreeUttrykkTheme('B2', 'others')).toBe(false);
     expect(isFreeUttrykkTheme('B2', 'not-a-real-theme')).toBe(false);
+  });
+
+  // A1 is fully open (ai-docs/implementation/uttrykk-gate.md follow-up: A1
+  // vocab is already 100% free, so a partial Uttrykk wall there was an
+  // inconsistent first impression) — every theme, "study all" (null), and
+  // the Others bucket are all free, regardless of FREE_UTTRYKK_THEMES.A1.
+  it('is fully open for A1: any theme, null, and the Others bucket', () => {
+    expect(isFreeUttrykkTheme('A1', 'greetings')).toBe(true);
+    expect(isFreeUttrykkTheme('A1', 'classroom')).toBe(true);
+    expect(isFreeUttrykkTheme('A1', 'general')).toBe(true);
+    expect(isFreeUttrykkTheme('A1', null)).toBe(true);
+    expect(isFreeUttrykkTheme('A1', 'others')).toBe(true);
   });
 
   it("never treats B2's oversized idioms theme as free", () => {

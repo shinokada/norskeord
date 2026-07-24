@@ -286,20 +286,22 @@
               </a>
             {/each}
             {#if uttrykkThemeGroups.minor.length > 0}
-              <!-- Others is always locked for free users today — every free
-                   theme in FREE_UTTRYKK_THEMES is a major theme by
-                   construction (see uttrykk-gate.md's open question on
-                   whether a minor theme could ever be free). -->
+              <!-- Others is locked for free users except at A1, which is now
+                   fully open (see uttrykk-gating.ts) — so this defers to
+                   isFreeUttrykkTheme instead of a hardcoded !isPlus check. -->
+              {@const othersLocked =
+                !isPlus &&
+                !isFreeUttrykkTheme(data.levelUpper as UttrykkThemeLevel, UTTRYKK_OTHERS_THEME)}
               <a
-                href={isPlus
-                  ? `/${data.level}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}`
-                  : '/plus?ref=hub-uttrykk-theme'}
+                href={othersLocked
+                  ? '/plus?ref=hub-uttrykk-theme'
+                  : `/${data.level}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}`}
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
-                  {isPlus
-                  ? 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
-                  : 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'}"
+                  {othersLocked
+                  ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+                  : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
               >
-                Others ({uttrykkThemeGroups.othersCount}){#if !isPlus}
+                Others ({uttrykkThemeGroups.othersCount}){#if othersLocked}
                   🔒{/if}
               </a>
             {/if}
