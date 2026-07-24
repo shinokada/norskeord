@@ -362,7 +362,7 @@ for`) added as uttrykk cards.
 
 ## Implementation phases
 
-### Phase 1 — Rules + types
+### Phase 1 — Rules + types ✅ Done
 
 1. Add 7 new topics to `GrammarTopic` in `src/lib/types.ts`: `presens-perfektum`, `derfor-fordi`,
    `kvantorer`, `modalverb-preteritum` (original 4) + `plassering-verb`, `refleksive-verb`,
@@ -381,51 +381,72 @@ for`) added as uttrykk cards.
 
 ### Phase 2 — Content, built in the same chapter order as `innhold.md` (10→16)
 
-1. `presens-perfektum` (ch. 10)
-2. `preposisjoner-tid` (A2 entries, ch. 10)
-3. `adj-definite` (A2 entries, ch. 11)
-4. `subordinate-order` (A2 entries, ch. 11)
-5. `indirekte-tale-at-om` (A2 entries, ch. 12 — wh-embedded reported questions)
-6. `adj-comparison` (A2 entries, ch. 13)
-7. `derfor-fordi` (ch. 13)
-8. `kvantorer` (ch. 14)
-9. `relative-som` (A2 entries, ch. 14)
-10. `ikke-placement` (A2 entries, ch. 15)
-11. `indirekte-tale-at-om` (more A2 entries, ch. 15 — at/om reporting)
-12. `modalverb-preteritum` (ch. 16)
-13. `plassering-verb` (ch. 15, audit-driven)
-14. `refleksive-verb` (ch. 11/12, audit-driven)
-15. `ha-vs-vaere` (ch. 12, audit-driven)
-16. `preposisjoner-sted` (A2 entries, ch. 13, audit-driven)
-17. `noun-plurals` (A2 entries, ch. 12, audit-driven — irregular body-part plurals)
+1. `presens-perfektum` (ch. 10) ✅ Done — 14 new entries (`gq-presperf-001`–`014`).
+2. `preposisjoner-tid` (A2 entries, ch. 10) ✅ Done — 6 new entries (`gq-prep-tid-023`–`028`).
+3. `adj-definite` (A2 entries, ch. 11) ✅ Done — 8 new entries (`gq-adj-029`–`036`).
+4. `subordinate-order` (A2 entries, ch. 11) ✅ Done — 8 new entries (`gq-sub-008`–`015`).
+5. `indirekte-tale-at-om` (A2 entries, ch. 12 — wh-embedded reported questions) ✅ Done — 8 new entries (`gq-indirtale-009`–`016`).
+6. `adj-comparison` (A2 entries, ch. 13) ✅ Done — 8 new entries (`gq-adj-037`–`044`), grounded in ch. 13's weather (Bergen/Tromsø/Finse temperatures) and place (mountain height, fjord/river length) comparison drills. Mix: 5 `fill`, 1 `minimal-pair`, 1 `transform`, 1 `order`. `grammar.json` now at 936 total, no duplicate IDs, no missing required fields, 0 English-tell hits on the new entries.
+7. `derfor-fordi` (ch. 13) ✅ Done — 8 new entries (`gq-derforfordi-001`–`008`), grounded in ch. 13's «Derfor eller fordi?» drill (fresh sentences: leilighet/selge, regn/buss, ny jobb, sulten). Even mix: 2 `fill`, 2 `minimal-pair` (V2-inversion after derfor vs. normal order after fordi), 2 `order`, 2 `transform`. `grammar.json` now at 944 total, no duplicate IDs, no missing required fields, 0 English-tell hits.
+8. `kvantorer` (ch. 14) ✅ Done — 8 new entries (`gq-kvantorer-001`–`008`), grounded in ch. 14's mye/mange and mer/flere drills (fresh sentences: mat/epler, melk/stoler, plass/bøker, gjester). Mix: 4 `fill`, 2 `minimal-pair`, 1 `order`, 1 `transform`. `grammar.json` now at 952 total, no duplicate IDs, no missing required fields, 0 English-tell hits.
+9. `relative-som` (A2 entries, ch. 14) ✅ Done — 8 new entries (`gq-rel-006`–`013`), grounded in ch. 14's som-setninger drills (fresh sentences: bestefar, søster, kollega, nabo, datter, lærer, venninne — avoiding the source's own names). Mix: 4 `transform` (som as subject/object, incl. preposition stranding «snakker med»/«jobber med»), 2 `order`, 1 `fill`, 1 `minimal-pair` (som vs. hvem). Also lightly reworded `relative-som`'s rule text in `rules.ts` so it leads with the A2 pattern (som always written out) before mentioning the higher-level om-dropping nuance, per the Phase 1 note. `grammar.json` now at 960 total (relative-som: 11 A2 + 2 B2), no duplicate IDs, no missing required fields, 0 English-tell hits.
+10. `ikke-placement` (A2 entries, ch. 15) ✅ Done — 8 new entries (`gq-ikke-013`–`020`), grounded in ch. 15's leddsetninger drills ("Han sier at …", "De spør om …") testing ikke/alltid/aldri/ofte placement inside at- and om-clauses, plus one helsetning `order` item for contrast. Fresh sentences (Jonas, frisøren/kunden) avoiding the source's own characters. Mix: 4 `transform`, 2 `order`, 2 `fill`. `grammar.json` now at 968 total, no duplicate IDs, no missing required fields, all vocab (kjøtt, fornøyd, alltid, aldri, ofte, kunde, frisør, holde, avtale, presang) verified against `vocab-a1.json`/`vocab-a2.json`.
+11. `indirekte-tale-at-om` (more A2 entries, ch. 15 — at/om reporting) ✅ Done — 4 new entries (`gq-indirtale-017`–`020`), grounded in ch. 15's at/om-selection drill (Øyvind lurer på …, er usikker på …, håper …) — fresh name (Fredrik) in place of the source's own character. Extends the verb set beyond ch. 12's sier/spør to lure på/håpe/være usikker på. Mix: 2 `fill`, 2 `transform`. `grammar.json` now at 972 total (indirekte-tale-at-om: 20 total, 12 A2), no duplicate IDs, no missing required fields, all vocab (lure på, håpe, usikker, gjest, fornøyd, frisør, kunde) verified against `vocab-a1.json`/`vocab-a2.json`.
+12. `modalverb-preteritum` (ch. 16) ✅ Done — 10 new entries (`gq-modalpret-001`–`010`), grounded in ch. 16's modal-preteritum conjugation table and reported-speech drills (kan→kunne, vil→ville, skal→skulle, må→måtte, bør→burde). Fresh names (Marte) in place of the source's Lisa. Mix: 5 `fill` (plain conjugation), 3 `transform` (reported statement + wh-/yes-no questions), 1 `order`, 1 `minimal-pair`. `grammar.json` now at 982 total, no duplicate IDs, no missing required fields, all vocab (hjelpe, nabo, bil, reise, buss, vente, spørre, lærer, prøve, jobbe, helg, parkere, norskkurs, svømme) verified against `vocab-a1.json`/`vocab-a2.json`. Confirmed `modalverb-preteritum` was already registered in `GrammarTopic` (`types.ts`) and `GRAMMAR_RULES` (`rules.ts`) from Phase 1 — no code changes needed here, content-only.
+13. `plassering-verb` (ch. 15, audit-driven) ✅ Done — 8 new entries (`gq-plassverb-001`–`008`), grounded in ch. 15's «Setter, legger, ligger eller står?» drill (vase/duk/glass on the bord). Fresh objects (bok, nøkkel, lampe, telefon, kniv, kopp, ryggsekk) instead of the source's own props. Mix: 3 `fill`, 2 `transform` (action → resulting-state), 2 `order`, 1 `minimal-pair`. `grammar.json` now at 990 total, no duplicate IDs, no missing required fields, all vocab (bok, nøkkel, lampe, telefon, hylle, gulv, ryggsekk, kopp, glass, kniv) verified against `vocab-a1.json`/`vocab-a2.json`. Confirmed `plassering-verb` was already registered in `GrammarTopic` (`types.ts`) and `GRAMMAR_RULES` (`rules.ts`) from Phase 1 — content-only.
+14. `refleksive-verb` (ch. 11/12, audit-driven) ✅ Done — 8 new entries (`gq-reflverb-001`–`008`), grounded in ch. 11's glede seg/grue seg drills and ch. 12's føle seg drill, covering reflexive pronoun agreement across all persons (meg/deg/seg/oss/dere/seg). Fresh name (Fredrik) in place of the source's Karim. Mix: 5 `fill` (one per pronoun), 1 `transform` (person-shift jeg→Fredrik), 1 `order`, 1 `minimal-pair` (vi + oss vs. the 3rd-person-only seg). `grammar.json` now at 998 total, no duplicate IDs, no missing required fields, all vocab (helg, trøtt, glad, prøve) verified against `vocab-a1.json`/`vocab-a2.json`. Confirmed `refleksive-verb` was already registered in `GrammarTopic` (`types.ts`) and `GRAMMAR_RULES` (`rules.ts`) from Phase 1 — content-only.
+15. `ha-vs-vaere` (ch. 12, audit-driven) ✅ Done — 8 new entries (`gq-havsvaere-001`–`008`), grounded in ch. 12's «Har eller er?» dialogue (vondt i hodet/magen, syk, sulten, i dårlig humør, ha det bra) and the «Hvilke råd vil dere gi?» symptom list. «i dårlig humør» confirmed as an existing `uttrykk-a2.json` entry. Mix: 5 `fill` (one per state/symptom pattern), 1 `transform` (ha det bra), 1 `order`, 1 `minimal-pair` (er sulten + har lyst på combined in one sentence). `grammar.json` now at 1006 total, no duplicate IDs, no missing required fields, all vocab (vondt, mage, is, sulten, rygg, fisk) verified against `vocab-a1.json`/`vocab-a2.json`. Confirmed `ha-vs-vaere` was already registered in `GrammarTopic` (`types.ts`) and `GRAMMAR_RULES` (`rules.ts`) from Phase 1 — content-only.
+16. `preposisjoner-sted` (A2 entries, ch. 13, audit-driven) ✅ Done — 6 new entries (`gq-prep-sted-029`–`034`), grounded in ch. 13's «Hvor ligger bygningene?» drills (bank/kirke/apotek/bibliotek/kafé/butikk/skole/frisør), extending the relational forms (til venstre for, til høyre for, mellom X og Y) that were already added to the topic's rule text in Phase 1. Mix: 3 `fill` (the «for»/«mellom» choice), 2 `order`, 1 `minimal-pair` (for vs. av). `grammar.json` now at 1012 total (preposisjoner-sted: 34 total, 16 A2), no duplicate IDs, no missing required fields, all vocab (bibliotek, kafé, kirke, skole, bank, apotek, butikk, frisør) verified against `vocab-a1.json`/`vocab-a2.json`.
+17. `noun-plurals` (A2 entries, ch. 12, audit-driven — irregular body-part plurals) ✅ Done — 6 new entries (`gq-noun-pl-021`–`026`), grounded in ch. 12's irregular body-part plural drill (fot→føttene, tann→tennene, øye→øynene, kne→knærne, skulder→skuldrene). Mix: 4 `transform` (fot, tann, øye, kne), 1 `fill` (skulder, in "Han har vondt i skuldrene"), 1 `minimal-pair` (føttene vs. the regularized-but-wrong "fotene"). `grammar.json` now at 1018 total, no duplicate IDs, no missing required fields. `fot` and `øye` confirmed already present as standalone headwords in `vocab-a2.json` (`v-a2-body-033`, `v-a2-body-034`), alongside the already-present `tann`/`kne`/`skulder`, so no vocab additions were needed for this item.
 
-### Phase 3 — Vocab verification
+### Phase 3 — Vocab verification ✅ Done
 
-Build/adapt `scripts/check-a1-grammar-vocab.mjs` → `scripts/check-a2-grammar-vocab.mjs`, pointed at
-`vocab-a2.json`/`uttrykk-a2.json`, scoped to this plan's 16 topic-touches with `cefr: 'A2'`
-filtering. Run after each topic; fix any unmatched examples the way `gq-noun-pl-020` was fixed in
-the A1 plan (swap the example word for one that's actually a standalone A2/A1 vocab headword,
-rather than only appearing inside a multi-word uttrykk phrase).
+Built `scripts/check-a2-grammar-vocab.mjs`, adapted from `scripts/check-a1-grammar-vocab.mjs` (same
+lemma-matching logic — suffix stemming, irregular-verb-form map incl. the 5 modal preteritum forms,
+phrase-lemma handling), pointed at `vocab-a2.json`/`uttrykk-a2.json` with `vocab-a1.json`/
+`uttrykk-a1.json` as a fallback pool, scoped to the 16 A2 topic-touches with `cefr: 'A2'` filtering.
 
-**Also run (added 2026-07-23):** `scripts/check-grammar-norwegian.mjs` (the generalized Norwegian-only
-checker from `ai-docs/implementation/grammar-with-only-norsk.md`) against each new topic as it's
-written, same workflow as that doc's Phase 1. Since content here is written in Norwegian from the
-start (see the language note in Overview above), this should report 0 flags by construction — it's
-a regression guard, not a conversion step.
+Ran it against all 16 topics at once (184 A2 questions total): 15 of 16 topics clean at first pass.
+The 1 unmatched hit (`gq-noun-pl-005`, a pre-existing entry from before this plan started, ID range
+001–010, well outside this plan's new 021–026 range) used "en regel"/"regler" as its example, and
+`vocab-a2.json`/`vocab-a1.json` only had the compound `trafikkregel`, not bare `regel`, as a
+headword. Fixed by swapping the example noun to `sykkel`/`sykler` (same unstressed-`-el`-drop
+irregular pattern, and `sykkel` is already a real `vocab-a1.json` headword, `v-a1-transportation-
+004`) rather than adding a new vocab entry just to justify the old example. Re-ran after the fix:
+16/16 `noun-plurals` questions matched, 0 unmatched across all 16 topics.
 
-### Phase 4 — Gating + wiring
+**Also ran (added 2026-07-23):** `scripts/check-grammar-norwegian.mjs` (the generalized
+Norwegian-only checker from `ai-docs/implementation/grammar-with-only-norsk.md`) against all 16
+topics (250 questions across every CEFR level each topic carries, not just the new A2 entries).
+Found and fixed 2 genuine hits in `preposisjoner-sted`: `gq-prep-sted-029` and `gq-prep-sted-030`
+had English glosses ("= to the left of" / "= to the right of") leaked into their `hint` fields —
+reworded both to pure Norwegian ("Preposisjonen etter venstre/høyre er alltid «for»: «til venstre
+for»." / same for høyre). Re-ran both scripts after the fix: 250 questions checked, 0 flagged;
+`grammar.json` still at 1018 total, no duplicate IDs, no missing required fields.
 
-1. Set `plusOnly: false`/omitted on all new questions (7 new topics + 9 reused topics' A2
-   entries), matching the near-universal A2 pattern (only `helsetninger` and `sterke-verb`
-   currently buck it). Exception: `gq-rel-004`/`gq-rel-005` stay `plusOnly: true` (unchanged, B2).
-2. No `config.ts` change is needed — none of the 7 new topics are added to `FREE_GRAMMAR_TOPICS`
-   (confirmed decision), so they simply join the many already-locked A2 topics with non-`plusOnly`
-   questions.
-3. Update the admin `+page.svelte` `TOPICS` constant to include the 7 new topics so they're
-   authorable/editable through the admin UI.
-4. Confirm `/grammar` and `/grammar/[topic]` need no route changes (both derive their topic list
-   dynamically from `grammar.json` content — already confirmed generically true in the A1 plan's
-   Phase 4, applies here unchanged).
+### Phase 4 — Gating + wiring ✅ Done
+
+1. ✅ Verified `plusOnly: false`/omitted on all new questions (7 new topics + 9 reused topics' A2
+   entries) — every content-writing step in Phase 2 already set this correctly as it went; spot-
+   checked via `grammar.json` directly (e.g. all 6 `noun-plurals` A2 additions confirmed
+   `plusOnly: undefined`). `gq-rel-004`/`gq-rel-005` remain `plusOnly: true` (unchanged, B2), as
+   decided.
+2. ✅ Confirmed no `config.ts` change needed — checked `FREE_GRAMMAR_TOPICS` directly: none of the 7
+   new topics are members, so they join the many already-locked A2 topics with non-`plusOnly`
+   questions, as decided. (`preposisjoner-sted`, `ikke-placement`, `preposisjoner-tid`, and
+   `indirekte-tale-at-om` are already members from the A1 plan, so their new A2 entries are
+   reachable as intended — also unchanged.)
+3. ✅ Updated the admin `+page.svelte` `TOPICS` constant to add the 7 new topics
+   (`presens-perfektum`, `derfor-fordi`, `kvantorer`, `modalverb-preteritum`, `plassering-verb`,
+   `refleksive-verb`, `ha-vs-vaere`), so they're authorable/editable through the admin UI.
+4. ✅ Confirmed `/grammar` and `/grammar/[topic]` need no route changes — checked `+page.ts`
+   directly: both derive their topic list dynamically from `grammar.json` content via a
+   group-by-topic loop, with no hardcoded topic list to update.
+
+Also re-verified end-to-end: `presens-perfektum`, `derfor-fordi`, `kvantorer`,
+`modalverb-preteritum`, `plassering-verb`, `refleksive-verb`, `ha-vs-vaere` all confirmed present
+as `GrammarTopic` union members (`types.ts`) and as `GRAMMAR_RULES` entries (`rules.ts`) — no gaps
+between the three registration points (types, rules, admin picker).
 
 ---
 
