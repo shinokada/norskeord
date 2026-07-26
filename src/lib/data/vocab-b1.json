@@ -21927,6 +21927,24 @@
     "part": "verb"
   },
   {
+    "id": "v-b1-work-052",
+    "norsk": "uføretrygd (en)",
+    "lemma": "uføretrygd",
+    "english": "disability benefit",
+    "ukrainian": "пенсія по інвалідності",
+    "spanish": "pensión por incapacidad",
+    "german": "die Erwerbsunfähigkeitsrente",
+    "example": "Hun søkte om uføretrygd etter ulykken.",
+    "example_english": "She applied for disability benefit after the accident.",
+    "example_ukrainian": "Вона подала заяву на пенсію по інвалідності після аварії.",
+    "example_spanish": "Ella solicitó una pensión por incapacidad después del accidente.",
+    "example_german": "Sie beantragte eine Erwerbsunfähigkeitsrente nach dem Unfall.",
+    "definition": "Penger man mottar fast fra staten når man ikke kan jobbe på grunn av varig sykdom eller skade.",
+    "level": "B1",
+    "category": "work",
+    "part": "noun"
+  },
+  {
     "id": "v-b1-personal-growth-076",
     "norsk": "å skaffe seg",
     "lemma": "skaffe seg",

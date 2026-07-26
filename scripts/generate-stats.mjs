@@ -39,7 +39,7 @@ const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
 // Build per-level counts + optional category breakdown
 const byLevel = {};
 for (const level of LEVELS) {
-  byLevel[level] = { vocab: 0, uttrykk: 0, total: 0 };
+  byLevel[level] = { vocab: 0, uttrykk: 0, total: 0, grammar: 0, quiz: 0 };
 }
 
 // categoryByLevel[level][category] = count  (vocab only — uttrykk has no category)
@@ -64,6 +64,26 @@ for (const { level, type, file } of FILES) {
   }
 }
 
+// Grammar questions per level (grammar.json is a flat array with a `cefr` field,
+// not split into per-level files like vocab/uttrykk).
+try {
+  const grammarData = JSON.parse(readFileSync(resolve(DATA_DIR, 'grammar.json'), 'utf-8'));
+  for (const q of grammarData) {
+    if (LEVELS.includes(q.cefr)) {
+      byLevel[q.cefr].grammar += 1;
+    }
+  }
+} catch {
+  console.warn('  Warning: could not read grammar.json');
+}
+
+// Quiz mode draws its question pool directly from the same vocab + uttrykk
+// entries counted above (see routes/quiz/+page.ts) — there's no separate quiz
+// data file, so this is just an explicit alias of `total` for visibility.
+for (const level of LEVELS) {
+  byLevel[level].quiz = byLevel[level].total;
+}
+
 // Grand total
 const grandTotal = Object.values(byLevel).reduce((sum, l) => sum + l.total, 0);
 
@@ -76,15 +96,15 @@ const stats = {
 writeFileSync(OUT_FILE, JSON.stringify(stats, null, 2) + '\n');
 
 // ── Summary table (always printed) ──────────────────────────────────────────
-console.log('\nLevel       Vocab  Uttrykk    Total');
-console.log('─'.repeat(38));
+console.log('\nLevel       Vocab  Uttrykk    Total  Grammar     Quiz');
+console.log('─'.repeat(56));
 for (const level of LEVELS) {
-  const { vocab, uttrykk, total } = byLevel[level];
+  const { vocab, uttrykk, total, grammar, quiz } = byLevel[level];
   console.log(
-    `${level.padEnd(8)} ${String(vocab).padStart(7)} ${String(uttrykk).padStart(8)} ${String(total).padStart(8)}`
+    `${level.padEnd(8)} ${String(vocab).padStart(7)} ${String(uttrykk).padStart(8)} ${String(total).padStart(8)} ${String(grammar).padStart(9)} ${String(quiz).padStart(8)}`
   );
 }
-console.log('─'.repeat(38));
+console.log('─'.repeat(56));
 console.log(`${'TOTAL'.padEnd(8)} ${' '.repeat(16)} ${String(grandTotal).padStart(8)}`);
 console.log(`\nWritten to: ${OUT_FILE}`);
 
