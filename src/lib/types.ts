@@ -196,6 +196,16 @@ export type GrammarTopic =
   | 'klokka-tid' // telling time: hel/halv + kvart på/over + N over/på halv
   | 'ordenstall-dato' // ordinal formation + date phrasing (den 3. juni / tredje i sjette)
   | 'for-siden' // «for + duration + siden» = time elapsed since an event
+  // Nivå B1 topics (Plus only) — see ai-docs/implementation/b1-grammar.md
+  | 'framtid-uttrykk' // future expressions: skal/vil/kommer til å + har tenkt å/har lyst til å/håper (at)
+  | 'for-sa-arsak-folge' // «for» (cause, coordinating) vs. «så» (result, coordinating)
+  | 'da-naar' // «da» (single past event) vs. «når» (repeated/habitual, or present/future)
+  | 'hvis-om-betingelse' // «hvis» (condition) vs. «om» (embedded yes/no question)
+  | 'passiv-bli-s' // introductory passive voice: bli-passiv and s-passiv formation
+  | 'bade-og-verken-eller' // «både X og Y» / «verken X eller Y» correlative conjunctions
+  | 'adjektiv-eller-adverb' // adjective (agrees with noun) vs. neuter/adverb -t form (modifies verb)
+  | 'motsetning-selv-om-likevel' // «men» (coordinating) vs. «selv om» (subordinating) vs. «likevel» (adverb, V2)
+  | 'tidssekvens-etter-at-etterpaa' // «etter at» (subjunction) vs. «etterpå» (adverb, V2) vs. «så» (conjunction)
   // Nivå C topics (Plus only) — see ai-docs/implementation/c-grammar.md
   | 'ubestemt-artikkel-c' // indefinite article — professions+adjective, uncountables, transport, uttrykk, optional article
   | 'substantiv-uttrykk-c' // noun forms inside fixed idioms (ta hånd om, stå til liv, gå som fot i hose)
