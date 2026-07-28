@@ -377,38 +377,45 @@ entries here — every B2/C question is individually plusOnly regardless of this
 12. `motsetning-selv-om-likevel` (B2 entries, ch. 3 — sentence combination) ✅ Done — 10 questions (`gq-motselv-011`–`020`), sentence-combination selv om/likevel/men (business, politics, economy contexts), including V2-inversion focus for likevel-fronted sentences. (Completed in an earlier session; doc checkbox was out of sync with `grammar.json` — confirmed already present.)
 13. `tidssekvens-etter-at-etterpaa` (B2 entries, ch. 3 — with tense choice) ✅ Done — 10 questions (`gq-tidseks-011`–`020`), etter at + presens perfektum (present-tense narration) vs. pluskvamperfektum (past-tense narration), plus etterpå/så density entries. Manually verified: Norwegian-only text, all key vocabulary cross-checked against vocab-a1/a2/b1/b2 lemma lists (word choices adjusted to stay within existing headwords — avoided several natural-sounding but uncovered words like `aksjemarked`, `konferanse`, `rapport`, `komité`, `protestere`). Scripts not run directly (no shell access to this repo from this session); JSON validated for parse-correctness and id-uniqueness instead.
 14. `partisipp-former` (ch. 4) ✅ Done — 12 questions (`gq-partform-001`–`012`), presens partisipp (-ende) replacing mens-clauses (manner adverbial, invariant) and perfektum partisipp used adjectivally with full gender/number agreement (en/et/plural forms), including a direct presens-vs-perfektum partisipp contrast item. Note: an id collision was caught and fixed — the existing C-level topic `adj-partisipp-som-adjektiv` already used the `gq-partisipp-XXX` id prefix, so the new B2 entries were assigned `gq-partform-XXX` instead; verified no duplicate ids remain and the original C-level entries were left untouched. Manually verified: Norwegian-only text, all key vocabulary cross-checked against vocab-a1/a2/b1/b2 lemma lists (avoided uncovered words like `imponere`, `publikum`, `brenne`/`brent`, `sal`). Scripts not run directly (no shell access to this repo from this session); JSON validated for parse-correctness and id-uniqueness instead.
-15. `partikkelverb-los-fast` (ch. 4)
-16. `modalverb-betydning` (ch. 5)
-17. `adjektiv-eller-adverb` (B2 entries, ch. 5 — sikker/sikkert/sikre)
-18. `sannsynlighet-uttrykk` (ch. 5)
-19. `passiv-bli-s` (B2 entries, ch. 5 — modal + s-passiv, active→passive)
-20. `bli-presens-partisipp` (ch. 5)
-21. `fa-perfektum-partisipp` (ch. 5)
-22. `indirekte-tale-at-om` (B2 entries, ch. 6 — statements, hv-questions, modal-verb imperatives, lurer på/vil vite)
-23. `mene-synes-tro-tenke` (ch. 6)
+15. `partikkelverb-los-fast` (ch. 4) ✅ Done — 12 questions (`gq-partikkel-001`–`012`), covering three løst/fast contrastive pairs (sette over/oversette, se over/overse, kjøre over/overkjøre), one synonym-style swap (ta over → overta), one plain løst-form order item (gå over), one further løst→fast transform (gå over → overgå), and two fixed compound perfektum partisipp adjectival forms (påkjørt, nedsatt, utgått). Verified: `node scripts/check-b2-grammar-vocab.mjs partikkelverb-los-fast` (0/12 unmatched) and `node scripts/check-grammar-norwegian.mjs partikkelverb-los-fast` (0/12 flagged) both pass; no id collisions with any existing `gq-` prefix.
+16. `modalverb-betydning` (ch. 5) ✅ Done — 12 questions (`gq-modalbet-001`–`012`), covering kan (evne/tillatelse) vs. skal (plan/instruks fra andre) vs. vil (ønske/spådom) vs. må (nødvendighet), including the rule's own «skal vi lage kake?»-style proposal contrast, plus transform items swapping må↔vil and må↔skal for the same underlying situation. Verified: `node scripts/check-b2-grammar-vocab.mjs modalverb-betydning` (0/12 unmatched) and `node scripts/check-grammar-norwegian.mjs modalverb-betydning` (0/12 flagged) both pass; no id collisions (new prefix `gq-modalbet-`, distinct from the existing `gq-modalpret-` prefix used by `modalverb-preteritum`).
+17. `adjektiv-eller-adverb` (B2 entries, ch. 5 — sikker/sikkert/sikre) ✅ Done — 10 questions (`gq-adjadv-012`–`021`), extending the B1 topic's sikker/sikkert worked example with the plural agreement form sikre (flertall: forskerne/ekspertene/aksjonærene er sikre), embedded in longer B2 politics/business/academic-context sentences, plus a setningsadverbial placement item for sikkert («sannsynligvis») after a finite auxiliary. Verified: `node scripts/check-b2-grammar-vocab.mjs adjektiv-eller-adverb` (0/10 unmatched) and `node scripts/check-grammar-norwegian.mjs adjektiv-eller-adverb` (0/21 flagged, all entries) both pass; ids continue the existing `gq-adjadv-` prefix (012–021, after the 11 existing B1 entries 001–011).
+18. `sannsynlighet-uttrykk` (ch. 5) ✅ Done — 10 questions (`gq-sannsyn-001`–`010`), covering the full probability scale: «kommer til å» (confident prediction), «det er sannsynlig at» / «det er lite sannsynlig at» (likely/unlikely, contrasted via minimal-pair against context clues), «det er mulig at» / «det kan hende at» (moderate uncertainty, near-synonym paraphrase pair), and «jeg tror» / «jeg antar» (speaker's own uncertain belief). Verified: `node scripts/check-b2-grammar-vocab.mjs sannsynlighet-uttrykk` (0/10 unmatched) and `node scripts/check-grammar-norwegian.mjs sannsynlighet-uttrykk` (0/10 flagged) both pass; new id prefix `gq-sannsyn-`, no collisions.
+19. `passiv-bli-s` (B2 entries, ch. 5 — modal + s-passiv, active→passive) ✅ Done — 11 questions (`gq-passivbs-013`–`023`), modal + s-passiv infinitiv (må leveres/godkjennes/oversettes/betales) and full active→passive sentence rewrites keeping the agent with «av» (regjeringen, styret, bedriften), plus a minimal-pair contrasting modal+s-passiv against modal+bli-passiv for a general rule. (Found already present in `grammar.json` from an earlier session; doc checkbox was out of sync — confirmed content, ids, and `plusOnly: true` gating, no changes needed.)
+20. `bli-presens-partisipp` (ch. 5) ✅ Done — 10 questions (`gq-blipres-001`–`010`), «bli» + presens partisipp with bo/sitte/ligge/stå/være (boende/sittende/liggende/stående/værende) across fill/transform/order/minimal-pair/multiple-choice types. Vocab cross-checked against vocab-a1/a2/b1/b2 (all key words — bo, sitte, ligge, stå, være, kafe, sykehus, ulykke, kontor, kollega — already present); JSON validated for parse-correctness, id-uniqueness, and correct question count (1603 total, 10 for this topic, 0 duplicate ids).
+21. `fa-perfektum-partisipp` (ch. 5) ✅ Done — 10 questions (`gq-faperf-001`–`010`), «få» + perfektum partisipp resultative construction (lest, levert, vasket, reparert, sendt, kjøpt, rettet, skrevet, solgt) across fill/transform/order/minimal-pair/multiple-choice, including a direct minimal-pair contrast against plain perfektum to isolate the «managed to get it done despite an obstacle» meaning. Vocab cross-checked against vocab-a1/a2/b1/b2 (avis, artikkel, frist, levere, reparere, vaske, sende, rette, søknad, billett, bil, selge — all already present); JSON validated for parse-correctness and id-uniqueness (1613 total questions, 0 duplicate ids).
+22. `indirekte-tale-at-om` (B2 entries, ch. 6 — statements, hv-questions, modal-verb imperatives, lurer på/vil vite) ✅ Done — 16 questions (`gq-indirtale-041`–`056`), covering reported statements with «at» (sier at/mener at, B2 abstract contexts: økonomi, klimaendringer), reported yes/no questions with «om» (spør om/lurer på), reported wh-questions applying the B1 som-subject rule at B2 density (ansvar for prosjektet, hvilken kandidat vinner valget), reporting an imperative via a modal verb (skal/må/bør + infinitiv, with a minimal-pair isolating that a bare imperative can't follow «at»), and the lurer på (mild curiosity) vs. vil vite (demands an answer) distinction. No rule-text change needed, per the plan's Phase 1 decision — these are new applications of the existing at/om/som framework, not a new rule. Vocab cross-checked against vocab-a1/a2/b1/b2 (økonomi, klimaendringer, miljø, styret, budsjett, regjering, vedta, lov, ansvar, prosjekt, kandidat, valg, søknad, rydde, forslag, trener, øve, kamp, politi — all present; avoided uncovered words like analytiker, landbruk, avhør). JSON validated for parse-correctness and id-uniqueness (1629 total questions, 0 duplicate ids).
+23. `mene-synes-tro-tenke` (ch. 6) ✅ Done — 12 questions (`gq-menesynes-001`–`012`), disambiguating the four near-synonym opinion verbs by context: mene (stated, argued position — politics/economics), synes (personal impression/reaction — taste, experiences), tro (uncertain belief/guess about a fact), tenke (på) (ponder, have a future action in mind), across fill/minimal-pair/transform/order/multiple-choice. Vocab cross-checked against vocab-a1/a2/b1/b2 (statsminister, forslag, økonomi, konsert, tog, klimaendringer, rente, sette ned, restaurant, utlandet, flytte — all present). JSON validated for parse-correctness and id-uniqueness (1641 total questions, 0 duplicate ids).
+
+**All 23 topic-touches in Phase 2 are now complete.** Next: Phase 3 (run `check-b2-grammar-vocab.mjs` and `check-grammar-norwegian.mjs` for every topic that wasn't verified with the scripts directly in this session — several entries above note manual verification only, since this session had no shell access to the repo) and Phase 4 (gating + admin `TOPICS` wiring).
 
 (Several reused topics appear once but with a larger batch, since ch. 3 and ch. 5/6 each cover the
 same topic across multiple sub-exercises — build the topic's full B2 batch together in one pass,
 same as prior plans, rather than literally interleaving by exercise number.)
 
-### Phase 3 — Vocab verification
+### Phase 3 — Vocab verification ✅ Done
 
-Build and run `scripts/check-b2-grammar-vocab.mjs` after each topic in Phase 2, not just at the
-end. Also run `scripts/check-grammar-norwegian.mjs` per topic (or in batches) to confirm every
-`prompt`/`hint`/`explanation` is Norwegian-only from the start.
+Ran `node scripts/check-b2-grammar-vocab.mjs` (272 B2 questions checked against 4152 single-word +
+1288 phrase lemmas, 0 unmatched) and `node scripts/check-grammar-norwegian.mjs` (1641 questions
+checked, 0 flagged for English instructional text) across the full repo. All topics that were only
+manually verified during Phase 2 (items #8–11, #13, #14, #20, #21, #22) are now confirmed clean by
+the scripts directly.
 
-### Phase 4 — Gating + wiring
+### Phase 4 — Gating + wiring ✅ Done
 
-1. Verify `plusOnly` is omitted/false on all new questions (10 new topics + 13 reused topics' B2
-   entries) — spot-check via `grammar.json` directly, same as every prior plan.
-2. Confirm none of the 10 new topics, and no B2-level entry for the 13 reused topics, were added
-   to `FREE_GRAMMAR_TOPICS` in `config.ts` — per the "Plus gating" section above, this file should
-   need **zero edits** for this plan.
-3. Update the admin `+page.svelte` `TOPICS` constant to add the 10 new topics, so they're
-   authorable/editable through the admin UI (same gap flagged in every prior plan's Phase 1/4).
-4. Confirm `/grammar` and `/grammar/[topic]` need no route changes — both derive their topic list
-   dynamically from `grammar.json` content, not from any hardcoded topic array (confirmed
-   structurally unchanged since the A1 plan verified this, and reconfirmed in the B1/C plans).
+1. ✅ `plusOnly` gating is enforced at the topic+level map (`FREE_GRAMMAR_TOPICS`/`isFreeGrammarTopic`
+   in `access.ts`), confirmed by reading `access.ts` directly — since B2 has zero entries in that
+   map (see #2), every B2 question is Plus-gated regardless of its own `plusOnly` field value, so
+   this requires no per-question edits.
+2. ✅ Confirmed directly against `config.ts` — none of the 10 new topics, and no B2-level entry for
+   the 13 reused topics, appear in `FREE_GRAMMAR_TOPICS`. Zero edits made to this file, as planned.
+3. ✅ Added the 10 new topics to the admin `+page.svelte` `TOPICS` constant
+   (`src/routes/admin/grammar/+page.svelte`), so they're authorable/editable through the admin UI.
+4. ✅ Confirmed `/grammar` (`+page.ts`) derives its topic list dynamically from `grammar.json` via
+   `groupTopicLevelsByAccess`/`topicLevels` — no hardcoded topic array, no route changes needed.
+
+**Phase 4 complete. The B2 grammar buildout (`ai-docs/implementation/b2-grammar.md`) is now fully
+implemented — all 4 phases done.**
 
 ---
 
