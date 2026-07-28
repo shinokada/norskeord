@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.60.2
+
+### Patch Changes
+
+- - **Updates**
+    - Removed the “How smart review works” section from the Plus page, so pricing/support CTAs appear sooner.
+    - Grammar now respects the selected level scope consistently, including on topic pages (with a “showing this level only” indicator and an option to view all levels).
+  - **Localization**
+    - Updated Plus translations to remove the streamlined “how it works” content.
+    - Added a Ukrainian Plus priority support comparison row.
+  - **Maintenance**
+    - Refreshed displayed stats.
+    - Improved reliability of automated UI tests and data validation checks.
+
 ## 2.60.1
 
 ### Patch Changes
