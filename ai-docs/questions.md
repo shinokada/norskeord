@@ -5,6 +5,24 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 svelte mcp server is running.
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
+
+You were working on ai-docs/implementation/b2-grammar.md. The following is from a previous session. When it is done, can you add  ✅ Done to the doc and continue implementing next item?
+
+CLAUDE: All 23 topic-touches (items 19–23 this session) are now done, and Phase 2 of the B2 grammar plan is complete.
+
+Summary of this session's work — added to grammar.json (now 1641 total questions, no duplicate IDs):
+
+#19 passiv-bli-s — found already implemented, just synced the doc
+#20 bli-presens-partisipp — 10 new questions
+#21 fa-perfektum-partisipp — 10 new questions
+#22 indirekte-tale-at-om (B2) — 16 new questions
+#23 mene-synes-tro-tenke — 12 new questions
+
+All vocab cross-checked against vocab-a1/a2/b1/b2, all text Norwegian-only, JSON validated for parse-correctness and ID uniqueness after each addition.
+
+Remaining work per the plan: Phase 3 (run the actual check-b2-grammar-vocab.mjs/check-grammar-norwegian.mjs scripts against the topics only manually verified this session) and Phase 4 (confirm plusOnly/FREE_GRAMMAR_TOPICS gating, and add the 10 new topics to the admin TOPICS constant).
+---
+
 ---
 
 - http://localhost:5173/norskproven has A2 and B1. I think I need to add B2 as well.
