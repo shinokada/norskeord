@@ -99,7 +99,18 @@
     'tidssekvens-etter-at-etterpaa',
     // Extended down to B1 from their original C-only scope, per b1-grammar.md
     'ordfamilie-avledning',
-    'sammensatte-substantiv'
+    'sammensatte-substantiv',
+    // Nivå B2 topics — see ai-docs/implementation/b2-grammar.md
+    'substantivert-adjektiv',
+    'motsetning-prefiks',
+    'subjunksjon-oversikt',
+    'partisipp-former',
+    'partikkelverb-los-fast',
+    'modalverb-betydning',
+    'sannsynlighet-uttrykk',
+    'bli-presens-partisipp',
+    'fa-perfektum-partisipp',
+    'mene-synes-tro-tenke'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [
