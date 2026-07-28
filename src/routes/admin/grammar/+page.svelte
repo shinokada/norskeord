@@ -86,7 +86,20 @@
     'modalverb-preteritum',
     'plassering-verb',
     'refleksive-verb',
-    'ha-vs-vaere'
+    'ha-vs-vaere',
+    // Nivå B1 topics — see ai-docs/implementation/b1-grammar.md
+    'framtid-uttrykk',
+    'for-sa-arsak-folge',
+    'da-naar',
+    'hvis-om-betingelse',
+    'passiv-bli-s',
+    'bade-og-verken-eller',
+    'adjektiv-eller-adverb',
+    'motsetning-selv-om-likevel',
+    'tidssekvens-etter-at-etterpaa',
+    // Extended down to B1 from their original C-only scope, per b1-grammar.md
+    'ordfamilie-avledning',
+    'sammensatte-substantiv'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [

@@ -230,7 +230,18 @@ export type GrammarTopic =
   | 'preposisjoner-generelt-c' // general idiomatic preposition collocations
   | 'uttrykk-gjenkjenning-c-1' // idiom recognition, part 1 (items 83–89)
   | 'uttrykk-gjenkjenning-c-2' // idiom recognition, part 2 (items 90–96)
-  | 'uttrykk-gjenkjenning-c-3'; // idiom recognition, part 3 (items 97–103)
+  | 'uttrykk-gjenkjenning-c-3' // idiom recognition, part 3 (items 97–103)
+  // Nivå B2 topics (Plus only) — see ai-docs/implementation/b2-grammar.md
+  | 'substantivert-adjektiv' // adjective standing alone as a noun: de unge, de fattige, den ansatte
+  | 'motsetning-prefiks' // forming an antonym with a negative prefix: u-, mis-, van-
+  | 'subjunksjon-oversikt' // choosing among many subjunctions by meaning (da, fordi, hvis, selv om, …)
+  | 'partisipp-former' // presens partisipp (manner adverbial) + perfektum partisipp used adjectivally
+  | 'partikkelverb-los-fast' // particle verbs: loose vs. fixed compound, synonym swaps, fixed participles
+  | 'modalverb-betydning' // choosing kan/skal/vil/må by meaning (ability, plan, desire, necessity)
+  | 'sannsynlighet-uttrykk' // paraphrasing expressions of probability/likelihood
+  | 'bli-presens-partisipp' // «bli» + presens partisipp — durative/ongoing aspect
+  | 'fa-perfektum-partisipp' // «få» + perfektum partisipp — resultative aspect
+  | 'mene-synes-tro-tenke'; // near-synonym opinion verbs: mene/synes/tro/tenke
 
 export interface GrammarRule {
   id: GrammarTopic;
