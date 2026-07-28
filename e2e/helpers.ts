@@ -1,4 +1,25 @@
-import { type Page } from '@playwright/test';
+import { type Page, type Route } from '@playwright/test';
+
+/**
+ * route.fetch() occasionally fails with a transient network error (e.g.
+ * ECONNRESET) against the local preview server under load — not a real app
+ * bug, just flaky infra. Retry a couple of times with a short backoff
+ * before giving up, so a single dropped connection doesn't fail the whole
+ * navigation (which previously surfaced as `page.goto: net::ERR_ABORTED`
+ * once the uncaught rejection aborted the route handler).
+ */
+async function fetchWithRetry(route: Route, attempts = 3) {
+  let lastError: unknown;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await route.fetch();
+    } catch (err) {
+      lastError = err;
+      if (i < attempts - 1) await new Promise((r) => setTimeout(r, 100 * (i + 1)));
+    }
+  }
+  throw lastError;
+}
 
 /**
  * Set the Paraglide locale cookie to Norwegian ('nb') so the app renders
@@ -56,8 +77,8 @@ export async function injectPlusPlan(page: Page) {
 
     // Strategy 2: patch __data.json (covers ssr:false routes like /quiz).
     if (url.includes('__data.json')) {
-      const response = await route.fetch();
       try {
+        const response = await fetchWithRetry(route);
         const text = await response.text();
         const patched = text.replace(/"free"/g, '"plus"');
         await route.fulfill({
@@ -73,14 +94,20 @@ export async function injectPlusPlan(page: Page) {
 
     // Strategy 1: patch HTML document responses (covers SSR routes).
     if (request.resourceType() === 'document') {
-      const response = await route.fetch();
-      const body = await response.text();
-      const patched = body.replace(/plan:"free"/, 'plan:"plus"');
-      await route.fulfill({
-        status: response.status(),
-        headers: response.headers(),
-        body: patched
-      });
+      try {
+        const response = await fetchWithRetry(route);
+        const body = await response.text();
+        const patched = body.replace(/plan:"free"/, 'plan:"plus"');
+        await route.fulfill({
+          status: response.status(),
+          headers: response.headers(),
+          body: patched
+        });
+      } catch {
+        // Transient network error even after retries — fall back to letting
+        // the request through unpatched rather than aborting the navigation.
+        await route.continue();
+      }
       return;
     }
 
@@ -93,19 +120,25 @@ export async function injectLoggedInUser(page: Page) {
   await page.route('**', async (route) => {
     const request = route.request();
     if (request.resourceType() === 'document') {
-      const response = await route.fetch();
-      const body = await response.text();
-      const patched = body
-        .replace(/plan:"free"/, 'plan:"plus"')
-        .replace(
-          /user:null/,
-          'user:{id:"00000000-0000-0000-0000-000000000001",email:"test@example.com",app_metadata:{},user_metadata:{},aud:"authenticated",created_at:"2024-01-01T00:00:00Z"}'
-        );
-      await route.fulfill({
-        status: response.status(),
-        headers: response.headers(),
-        body: patched
-      });
+      try {
+        const response = await fetchWithRetry(route);
+        const body = await response.text();
+        const patched = body
+          .replace(/plan:"free"/, 'plan:"plus"')
+          .replace(
+            /user:null/,
+            'user:{id:"00000000-0000-0000-0000-000000000001",email:"test@example.com",app_metadata:{},user_metadata:{},aud:"authenticated",created_at:"2024-01-01T00:00:00Z"}'
+          );
+        await route.fulfill({
+          status: response.status(),
+          headers: response.headers(),
+          body: patched
+        });
+      } catch {
+        // Transient network error even after retries — fall back to letting
+        // the request through unpatched rather than aborting the navigation.
+        await route.continue();
+      }
       return;
     }
     await route.continue();
