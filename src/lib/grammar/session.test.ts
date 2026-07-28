@@ -6,11 +6,25 @@ import {
   GRAMMAR_LS_PREFIX,
   clearUserProgress
 } from '$lib/progress';
-import { FREE_GRAMMAR_PER_TOPIC } from '$lib/config';
 import { freeGrammarQuestionIds } from '$lib/access';
 import { questionLevels, topicLevels } from '$lib/vocab-helpers';
 import type { CardProgress, GrammarQuestion } from '$lib/types';
 import { createEmptyCard } from 'ts-fsrs';
+
+// $lib/config's real FREE_GRAMMAR_TOPICS has every listed topic set to 'all' today
+// (free at every level it spans). This test-only override adds one topic gated to a
+// single CEFR level, purely to exercise the per-(topic, cefr) branch of the gating
+// logic — see ai-docs/gating-rules.md "gate by topic × CEFR level, not by topic alone".
+vi.mock('$lib/config', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('$lib/config')>();
+  return {
+    ...actual,
+    FREE_GRAMMAR_TOPICS: {
+      ...actual.FREE_GRAMMAR_TOPICS,
+      'det-sentence': ['A2'] // free at A2 only, Plus-gated at B1 (real det-sentence spans both)
+    }
+  };
+});
 
 // ── localStorage mock ─────────────────────────────────────────────────────────
 
@@ -184,36 +198,45 @@ describe('shuffleTokens', () => {
 // ── freeGrammarQuestionIds ────────────────────────────────────────────────────
 
 describe('freeGrammarQuestionIds', () => {
-  it('frees the first N non-plusOnly questions per topic', () => {
+  it('frees every non-plusOnly question in a fully-free topic (no cap)', () => {
     const qs: GrammarQuestion[] = Array.from({ length: 8 }, (_, i) =>
-      makeQuestion({ id: `a2-${i}`, cefr: 'A2' })
+      makeQuestion({ id: `ikke-${i}`, topic: 'ikke-placement', cefr: 'A2' })
     );
     const free = freeGrammarQuestionIds(qs);
-    expect(free.size).toBe(FREE_GRAMMAR_PER_TOPIC);
-    expect(free.has('a2-0')).toBe(true);
-    expect(free.has(`a2-${FREE_GRAMMAR_PER_TOPIC}`)).toBe(false);
+    expect(free.size).toBe(8);
+    qs.forEach((q) => expect(free.has(q.id)).toBe(true));
   });
 
-  it('budgets per topic, so each topic gets its own free taste', () => {
-    // Two topics — each should get its own N free, not share.
+  it('gates topics independently: a topic not in FREE_GRAMMAR_TOPICS stays fully locked', () => {
     const qs: GrammarQuestion[] = [
-      ...Array.from({ length: 8 }, (_, i) =>
+      ...Array.from({ length: 4 }, (_, i) =>
         makeQuestion({ id: `ikke-${i}`, topic: 'ikke-placement', cefr: 'A2' })
       ),
-      ...Array.from({ length: 8 }, (_, i) =>
-        makeQuestion({ id: `det-${i}`, topic: 'det-er-ikke', cefr: 'A2' })
+      ...Array.from({ length: 4 }, (_, i) =>
+        makeQuestion({ id: `sterke-${i}`, topic: 'sterke-verb', cefr: 'A2' })
       )
     ];
     const free = freeGrammarQuestionIds(qs);
-    expect(free.size).toBe(FREE_GRAMMAR_PER_TOPIC * 2);
+    expect(free.size).toBe(4);
     expect(free.has('ikke-0')).toBe(true);
-    expect(free.has('det-0')).toBe(true);
+    expect(free.has('sterke-0')).toBe(false);
   });
 
-  it('never frees plusOnly questions', () => {
+  it('gates the same topic differently per CEFR level', () => {
+    // det-sentence is mocked above to be free at A2 only, Plus-gated at B1.
+    const qs: GrammarQuestion[] = [
+      makeQuestion({ id: 'det-a2', topic: 'det-sentence', cefr: 'A2' }),
+      makeQuestion({ id: 'det-b1', topic: 'det-sentence', cefr: 'B1' })
+    ];
+    const free = freeGrammarQuestionIds(qs);
+    expect(free.has('det-a2')).toBe(true);
+    expect(free.has('det-b1')).toBe(false);
+  });
+
+  it('never frees plusOnly questions, even in a free topic/level', () => {
     const qs = [
-      makeQuestion({ id: 'p1', cefr: 'B2', plusOnly: true }),
-      makeQuestion({ id: 'f1', cefr: 'B2' })
+      makeQuestion({ id: 'p1', topic: 'ikke-placement', cefr: 'A2', plusOnly: true }),
+      makeQuestion({ id: 'f1', topic: 'ikke-placement', cefr: 'A2' })
     ];
     const free = freeGrammarQuestionIds(qs);
     expect(free.has('p1')).toBe(false);

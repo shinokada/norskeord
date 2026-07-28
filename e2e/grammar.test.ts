@@ -122,23 +122,23 @@ test('back navigation: without ?from shows Grammar topics link', async ({ page }
   ).toBeVisible({ timeout: 5000 });
 });
 
-test('free user sees lock screen for a Plus-only topic (noun-plurals)', async ({ page }) => {
-  // noun-plurals has questions but they are all free-tier quota-exhausted or the topic
-  // itself is locked — the page renders the session (not a lock screen) but only shows
-  // the 3 free questions. Assert on what actually appears: a question counter.
-  // Wait for CSR hydration, then confirm the session loads correctly for a free user.
+test('free user sees an A1-only session for a topic that also has plusOnly items at other levels (noun-plurals)', async ({
+  page
+}) => {
+  // noun-plurals is free only at A1 per FREE_GRAMMAR_TOPICS (A1-only policy —
+  // see ai-docs/gating-rules.md); its A2/B1 content stays Plus-gated even
+  // though the topic itself spans A1/A2/B1. Gating is per (topic, cefr), not
+  // a fixed count — free users get every non-plusOnly A1 question, capped
+  // only by the session's own SESSION_SIZE (10) if the free pool exceeds it.
+  // noun-plurals has 8 free A1 questions (none plusOnly), so the free session
+  // here is 8 questions, not the full 10-question cap.
+  // The lock screen (🔒) only shows when playable.length === 0, i.e. when ALL
+  // questions are plusOnly:true, which isn't the case here.
   await page.goto('/grammar/noun-plurals');
-  // Wait for CSR — either the session counter (free questions available) or a lock screen.
   await page.waitForSelector('[data-testid], h1, .bg-amber-50', { timeout: 8000 }).catch(() => {});
-  // The page snapshot shows "Question 1 of 3" — free users do get 3 free questions.
-  // The lock screen (🔒) only shows when playable.length === 0, i.e. when ALL questions
-  // are plusOnly:true. noun-plurals has non-plusOnly questions so the lock screen won't
-  // show — instead the free subset is played. Restate the test intent correctly:
-  // free users see the session with the free question count, NOT the full set.
   const questionCounter = page.getByText(/question \d+ of|spørsmål \d+ av/i);
   await expect(questionCounter).toBeVisible({ timeout: 10000 });
-  // And the free counter is capped at FREE_GRAMMAR_PER_TOPIC (3), not the full topic count.
-  await expect(page.getByText(/of 3|av 3/i)).toBeVisible({ timeout: 5000 });
+  await expect(page.getByText(/of 8|av 8/i)).toBeVisible({ timeout: 5000 });
 });
 
 test('Plus user can answer a grammar question and progress is written to localStorage', async ({
@@ -165,6 +165,84 @@ test('Plus user can complete a grammar session and see the summary', async ({ pa
   await completeGrammarSession(page);
 
   await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible({ timeout: 15000 });
+});
+
+// ===========================================================================
+// Segment cards: a topic's free/locked status must not flip with the filter
+// (ai-docs/implementation/grammar-fix.md §7 regression tests)
+// ===========================================================================
+
+test('picker: a topic free only at A1 shows a free card unfiltered but no free card when filtered to a locked level', async ({
+  page
+}) => {
+  // noun-plurals is free at A1 only (FREE_GRAMMAR_TOPICS) and locked at
+  // A2/B1 — it produces two segments: {free, [A1]} and {locked, [A2, B1]}.
+  // Before the segment-card fix, the picker rendered one card per topic and
+  // that card flipped from free to locked depending on the active CEFR
+  // filter. Now each segment is its own fixed-access card, so the free A1
+  // segment must stay a free card unfiltered, and must not appear as a free
+  // card at all once filtered to B1 (only the locked segment matches).
+  await page.goto('/grammar');
+  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
+
+  // Unfiltered: the free segment renders as a direct link to the topic. Once
+  // a level pill is active, TopicCard forwards it as ?level= (see
+  // ai-docs/implementation/grammar-ux-update.md Step 2/3), so match on the
+  // path prefix rather than an exact href to cover both the plain link
+  // (unfiltered) and the scoped link (filtered to A1 below).
+  const freeCard = page.locator('a[href^="/grammar/noun-plurals"]');
+  await expect(freeCard).toBeVisible({ timeout: 5000 });
+  await expect(freeCard).toHaveAttribute('href', '/grammar/noun-plurals');
+
+  // Filter to B1 — noun-plurals' B1 segment is locked, so the free card
+  // (direct link) must disappear. It must not reappear as "free" just
+  // because the topic itself has some free content elsewhere (A1).
+  await page.getByRole('button', { name: 'B1', exact: true }).click();
+  await expect(freeCard).toHaveCount(0);
+
+  // The locked segment for noun-plurals should still be shown, but only as
+  // a Plus-gated card (linking to /plus, not straight into the topic).
+  const lockedLinks = page.locator('a[href="/plus?ref=grammar-topics"]');
+  await expect(lockedLinks.first()).toBeVisible({ timeout: 5000 });
+
+  // And filtering back to A1 restores the free card — now scoped with
+  // ?level=A1, since the active pill is forwarded into the link.
+  await page.getByRole('button', { name: 'B1', exact: true }).click(); // deselect
+  await page.getByRole('button', { name: 'A1', exact: true }).click();
+  await expect(freeCard).toBeVisible({ timeout: 5000 });
+  await expect(freeCard).toHaveAttribute('href', '/grammar/noun-plurals?level=A1');
+});
+
+// ===========================================================================
+// Level-scoped topic page: ?level= must gate free users to that level even
+// when the topic has free content at a different level
+// (ai-docs/implementation/grammar-fix.md §5/§7)
+// ===========================================================================
+
+test("free user hitting a locked segment via ?level= sees the paywall, not the topic's free content at another level", async ({
+  page
+}) => {
+  // noun-plurals is free at A1 but Plus-gated at B1. A locked-segment link
+  // or a level-hub link that points at ?level=B1 must show the paywall for
+  // a free user, instead of silently falling back to the free A1 questions.
+  await page.goto('/grammar/noun-plurals?level=B1');
+  await expect(page.getByText(/This topic is a Plus feature|Plus-funksjon/i)).toBeVisible({
+    timeout: 8000
+  });
+  // Confirm it's genuinely the lock screen, not a session that happens to
+  // also render some text — the question counter must not appear.
+  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toHaveCount(0);
+});
+
+test('free user hitting the same topic without ?level= still sees its free A1 content', async ({
+  page
+}) => {
+  // Sanity check for the above: omitting ?level= entirely preserves the
+  // pre-existing "any free level" behavior, so old links/bookmarks without
+  // the param don't regress.
+  await page.goto('/grammar/noun-plurals');
+  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({ timeout: 8000 });
+  await expect(page.getByText(/of 8|av 8/i)).toBeVisible({ timeout: 5000 });
 });
 
 test('unknown grammar topic shows a 404 error', async ({ page }) => {

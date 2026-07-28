@@ -53,29 +53,32 @@ export const load: PageServerLoad = async ({ params }) => {
   // Grammar topics that include this CEFR level
   const questions = grammarData as GrammarQuestion[];
 
-  // Build a set of topics that appear at this level
-  const topicsAtLevel = new Set<GrammarTopic>();
-  for (const q of questions) {
-    if (q.cefr === levelUpper) {
-      topicsAtLevel.add(q.topic);
-    }
-  }
-
-  // Group ALL questions by topic (not filtered by level) so the count matches
-  // what the user will actually practice on /grammar/[topic]
+  // Group this level's own questions by topic, so each card's badge/count
+  // reflects only what's actually playable from this hub (see
+  // ai-docs/implementation/grammar-ux-update.md Step 4). This used to
+  // group every level's questions for a topic appearing here — e.g. a topic
+  // spanning A2/B1/B2 showed all three badges even on the B2 hub, and its
+  // count included A2/B1 questions the B2 link would never actually play
+  // (fixed in Step 1: /grammar/[topic] now scopes to ?level= for everyone).
   const allTopicMap = new Map<GrammarTopic, GrammarQuestion[]>();
   for (const q of questions) {
-    if (topicsAtLevel.has(q.topic)) {
+    if (q.cefr === levelUpper) {
       if (!allTopicMap.has(q.topic)) allTopicMap.set(q.topic, []);
       allTopicMap.get(q.topic)!.push(q);
     }
   }
 
+  // Level-scoped, not "free at any level" — a topic free only at A1 (e.g.
+  // noun-plurals) must show as locked on the B1 hub even though it's a
+  // "free" topic overall. Using the any-level check here previously let a
+  // free user click through from e.g. /learn/b1 straight to a topic's B1
+  // content page and silently see its (unrelated) free A1 questions instead
+  // of a paywall. See ai-docs/implementation/grammar-fix.md §6.
   const grammarTopics = Array.from(allTopicMap.entries()).map(([topic, qs]) => ({
     topic,
     total: qs.length,
     levels: topicLevels(qs) as CEFRLevel[],
-    free: isFreeGrammarTopic(topic)
+    free: isFreeGrammarTopic(topic, levelUpper)
   }));
 
   // Level stats

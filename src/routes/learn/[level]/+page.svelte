@@ -391,7 +391,9 @@
           {@const rule = GRAMMAR_RULES[t.topic]}
           {@const locked = !isPlus && !t.free}
           <a
-            href={locked ? '/plus?ref=hub-grammar' : `/grammar/${t.topic}?from=${data.level}`}
+            href={locked
+              ? '/plus?ref=hub-grammar'
+              : `/grammar/${t.topic}?from=${data.level}&level=${data.levelUpper}`}
             class="group flex flex-col rounded-2xl border p-4 text-left transition
               {locked
               ? 'border-gray-200 bg-white dark:border-gray-700 dark:bg-indigo-950/40'
