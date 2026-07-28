@@ -1,7 +1,7 @@
 import type { PageLoad } from './$types';
 import grammarData from '$lib/data/grammar.json';
 import type { CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
-import { isFreeGrammarTopic } from '$lib/access';
+import { groupTopicLevelsByAccess } from '$lib/access';
 import { topicLevels } from '$lib/vocab-helpers';
 
 export const ssr = false;
@@ -11,28 +11,34 @@ export const load: PageLoad = async () => {
 
   // Group by topic, preserving first-seen order from grammar.json.
   const order: GrammarTopic[] = [];
-  const totals: Partial<Record<GrammarTopic, number>> = {};
   const byTopic: Partial<Record<GrammarTopic, GrammarQuestion[]>> = {};
 
   for (const q of questions) {
-    if (totals[q.topic] === undefined) {
-      totals[q.topic] = 0;
+    if (byTopic[q.topic] === undefined) {
       byTopic[q.topic] = [];
       order.push(q.topic);
     }
-    totals[q.topic]! += 1;
     byTopic[q.topic]!.push(q);
   }
 
-  const allTopics = order.map((topic) => ({
-    topic,
-    total: totals[topic] ?? 0,
-    levels: topicLevels(byTopic[topic] ?? []) as CEFRLevel[],
-    free: isFreeGrammarTopic(topic)
-  }));
+  // One entry per access *segment*, not per topic — a topic whose access
+  // status changes across its levels (e.g. free at A1, Plus at A2/B1)
+  // produces multiple segments, each with a fixed access state that never
+  // needs to be recomputed against the active CEFR filter. See
+  // ai-docs/implementation/grammar-fix.md and access.ts's
+  // groupTopicLevelsByAccess docstring.
+  const segments = order.flatMap((topic) => {
+    const levels = topicLevels(byTopic[topic] ?? []) as CEFRLevel[];
+    const topicSegments = groupTopicLevelsByAccess(topic, levels);
+    return topicSegments.map((seg) => ({
+      topic,
+      access: seg.access,
+      levels: seg.levels,
+      total: (byTopic[topic] ?? []).filter((q) => seg.levels.includes(q.cefr)).length
+    }));
+  });
 
   return {
-    freeTopics: allTopics.filter((t) => t.free),
-    lockedTopics: allTopics.filter((t) => !t.free)
+    segments
   };
 };

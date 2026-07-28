@@ -270,13 +270,15 @@ test.describe('Blog level filter', () => {
     const guideButton = page.getByRole('button', { name: 'Guide', exact: true });
     await guideButton.click();
 
-    // Wait for the active-filter summary to confirm the Guide pill's state
-    // change has actually applied before looking for the card — asserting on
-    // the href directly can race the reactive filter update.
-    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
-
+    // Wait directly on the guide card itself rather than on the intermediate
+    // "N articles" summary text as a synchronization checkpoint — that text
+    // locator was intermittently timing out under a loaded preview server
+    // even though the underlying filter change had applied. `toBeVisible`
+    // already polls/retries, so asserting on what we actually care about
+    // (the guide card appearing) is both more direct and more robust than
+    // gating on an unrelated locator first.
     const guideLink = page.locator('a[href="/blog/slik-bruker-du-norskeord"]');
-    await expect(guideLink).toBeVisible();
+    await expect(guideLink).toBeVisible({ timeout: 10000 });
 
     await levelBtn(page, 'A2').click();
     // Guides are excluded once a level filter is active, even though their own
@@ -326,8 +328,15 @@ test.describe('Blog tag filter', () => {
     // change has actually applied before reading card badges — asserting
     // right after click() can race the reactive filter update and read the
     // still-unfiltered, chronological card list (same fix as the other
-    // Guide-pill tests in this file).
-    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
+    // Guide-pill tests in this file). Generous timeout: this assertion runs
+    // against the built `preview` server (see playwright.config.ts), which
+    // can be slower to settle under parallel test load than the 5s default
+    // accounts for — same reasoning as the level-filter test above, and now
+    // more likely to matter since there are two guide posts to render
+    // instead of one.
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible({
+      timeout: 10000
+    });
 
     const cards = page.locator('a[href^="/blog/"]');
     await expect(cards.first()).toBeVisible();
@@ -346,14 +355,18 @@ test.describe('Blog tag filter', () => {
     // Wait for the guide-only filter to actually apply before deselecting —
     // clicking twice back-to-back without waiting for the first reactive
     // update to settle can race the second click's toggle, same fix as the
-    // 'guides are hidden when a level filter is active' test above.
-    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible();
+    // 'guides are hidden when a level filter is active' test above. Generous
+    // timeout for the same preview-server-under-load reason as the sibling
+    // Guide-pill test above.
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).toBeVisible({
+      timeout: 10000
+    });
     await guideButton.click();
     // Wait for the active-filter summary to disappear, confirming the
     // deselect actually took effect, before counting cards.
-    await expect(
-      page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))
-    ).not.toBeVisible();
+    await expect(page.getByText(/\d+ articles?/i).or(page.getByText(/\d+ artik/i))).not.toBeVisible(
+      { timeout: 10000 }
+    );
     await expect(page.locator('a[href^="/blog/"]')).toHaveCount(allCount);
   });
 });

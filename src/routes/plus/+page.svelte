@@ -112,27 +112,6 @@
     }
   ]);
 
-  const howItWorks = $derived([
-    {
-      icon: '👆',
-      title: m.plus_how_step1_title(),
-      body: m.plus_how_step1_body(),
-      isPlus: false
-    },
-    {
-      icon: '⏱️',
-      title: m.plus_how_step2_title(),
-      body: m.plus_how_step2_body(),
-      isPlus: false
-    },
-    {
-      icon: '✨',
-      title: m.plus_how_step3_title(),
-      body: m.plus_how_step3_body(),
-      isPlus: true
-    }
-  ]);
-
   const plusFeatures = $derived([
     {
       icon: '📚',
@@ -338,28 +317,6 @@
         <p class="mt-3 text-sm text-red-500">{checkoutError}</p>
       {/if}
     {/if}
-  </div>
-
-  <!-- ── How smart review works (moved up — key differentiator) ─────────────────── -->
-  <h2 class="mb-6">{m.plus_how_heading()}</h2>
-  <div class="mb-14 grid grid-cols-1 gap-5 sm:grid-cols-3">
-    {#each howItWorks as step (step.title)}
-      <div
-        class="rounded-xl border border-gray-200 bg-gray-50 p-5 dark:border-gray-700 dark:bg-indigo-950/60"
-      >
-        <div class="mb-2 flex items-center gap-2">
-          <span class="text-2xl">{step.icon}</span>
-          <h3>{step.title}</h3>
-          {#if step.isPlus}
-            <span
-              class="rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300"
-              >{m.nav_plus_badge()}</span
-            >
-          {/if}
-        </div>
-        <p class="text-base text-gray-600 dark:text-gray-300">{step.body}</p>
-      </div>
-    {/each}
   </div>
 
   <!-- ── Plus feature highlights ────────────────────────────────────────────────── -->

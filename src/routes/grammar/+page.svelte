@@ -13,18 +13,18 @@
 
   // ── Filter state ────────────────────────────────────────────────────────────
   let searchQuery = $state('');
-  let selectedLevel = $state<string | null>(null);
+  let selectedLevel = $state<CEFRLevel | null>(null);
 
   const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
   const searchTerm = $derived(searchQuery.trim().toLowerCase());
 
-  function topicMatches(t: (typeof data.freeTopics)[number]): boolean {
-    const rule = GRAMMAR_RULES[t.topic];
-    if (selectedLevel && !t.levels.includes(selectedLevel as CEFRLevel)) return false;
+  function segmentMatches(seg: (typeof data.segments)[number]): boolean {
+    const rule = GRAMMAR_RULES[seg.topic];
+    if (selectedLevel && !seg.levels.includes(selectedLevel as CEFRLevel)) return false;
     if (searchTerm) {
       // Grammar questions are Norwegian-only at every level (see
       // ai-docs/implementation/grammar-with-only-norsk.md).
-      const title = rule ? rule.titleNb : t.topic;
+      const title = rule ? rule.titleNb : seg.topic;
       const explanation = rule ? rule.explanationNb : '';
       if (
         !title.toLowerCase().includes(searchTerm) &&
@@ -35,12 +35,28 @@
     return true;
   }
 
-  const filteredFree = $derived(data.freeTopics.filter(topicMatches));
-  const filteredLocked = $derived(data.lockedTopics.filter(topicMatches));
+  // Each segment already carries a fixed access state (computed once in
+  // +page.ts via groupTopicLevelsByAccess), so filtering never changes what
+  // a card says — only whether it's shown. This replaces the old reactive
+  // isFreeForCurrentFilter() that recomputed a topic's free/locked status
+  // against the active level filter every render.
+  const visibleSegments = $derived(data.segments.filter(segmentMatches));
+  const filteredFree = $derived(visibleSegments.filter((s) => s.access === 'free'));
+  const filteredLocked = $derived(visibleSegments.filter((s) => s.access === 'locked'));
   const isFiltering = $derived(!!searchTerm || !!selectedLevel);
   const totalVisible = $derived(filteredFree.length + filteredLocked.length);
 
-  function toggleLevel(level: string) {
+  // Locked-segment count under the active level filter (search-independent,
+  // same semantics as the old lockedTopicsCount) — used for the upsell
+  // banner headline.
+  const lockedSegmentsCount = $derived(
+    data.segments.filter(
+      (s) =>
+        s.access === 'locked' && (!selectedLevel || s.levels.includes(selectedLevel as CEFRLevel))
+    ).length
+  );
+
+  function toggleLevel(level: CEFRLevel) {
     selectedLevel = selectedLevel === level ? null : level;
   }
 
@@ -51,6 +67,12 @@
 
   function gridClass(count: number) {
     return count === 1 ? 'grid gap-4' : 'grid gap-4 sm:grid-cols-2';
+  }
+
+  // Two segments of the same topic share a title, so a plain topic key
+  // isn't unique across the whole segment list — key on topic + access.
+  function segKey(seg: (typeof data.segments)[number]) {
+    return `${seg.topic}-${seg.access}`;
   }
 </script>
 
@@ -141,42 +163,44 @@
     {m.grammar_pick_topic()}
   </p>
 
-  <!-- Free topics -->
+  <!-- Free segments -->
   {#if filteredFree.length > 0}
     <div class={[gridClass(filteredFree.length), 'mb-8'].join(' ')}>
-      {#each filteredFree as t (t.topic)}
+      {#each filteredFree as seg (segKey(seg))}
         <TopicCard
-          topic={t.topic}
-          rule={GRAMMAR_RULES[t.topic]}
-          total={t.total}
-          levels={t.levels}
+          topic={seg.topic}
+          rule={GRAMMAR_RULES[seg.topic]}
+          total={seg.total}
+          levels={seg.levels}
+          level={selectedLevel}
         />
       {/each}
     </div>
   {/if}
 
-  <!-- Locked topics -->
+  <!-- Locked segments -->
   {#if filteredLocked.length > 0}
     {#if isPlus}
       <!-- Plus users see all topics unlocked -->
       <div class={gridClass(filteredLocked.length)}>
-        {#each filteredLocked as t (t.topic)}
+        {#each filteredLocked as seg (segKey(seg))}
           <TopicCard
-            topic={t.topic}
-            rule={GRAMMAR_RULES[t.topic]}
-            total={t.total}
-            levels={t.levels}
+            topic={seg.topic}
+            rule={GRAMMAR_RULES[seg.topic]}
+            total={seg.total}
+            levels={seg.levels}
+            level={selectedLevel}
           />
         {/each}
       </div>
     {:else}
-      <!-- Free users: upsell banner then locked topic cards -->
+      <!-- Free users: upsell banner then locked segment cards -->
       {#if !isFiltering}
         <div
           class="mb-6 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/20"
         >
           <p class="mb-1 text-base font-semibold text-indigo-800 dark:text-indigo-200">
-            {m.grammar_more_topics_plus({ count: data.lockedTopics.length })}
+            {m.grammar_more_topics_plus({ count: lockedSegmentsCount })}
           </p>
           <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
             {m.grammar_plus_upsell_text()}
@@ -191,15 +215,15 @@
       {/if}
 
       <div class={gridClass(filteredLocked.length)}>
-        {#each filteredLocked as t (t.topic)}
-          {@const rule = GRAMMAR_RULES[t.topic]}
+        {#each filteredLocked as seg (segKey(seg))}
+          {@const rule = GRAMMAR_RULES[seg.topic]}
           <a
             href="/plus?ref=grammar-topics"
             class="hover:border-primary-400 dark:hover:border-primary-500 flex flex-col rounded-xl border border-gray-200 px-5 py-4 transition hover:shadow-sm dark:border-gray-700"
           >
             <div class="mb-3 flex items-start justify-between gap-2">
               <div class="flex items-center gap-1">
-                {#each t.levels as level (level)}
+                {#each seg.levels as level (level)}
                   <Badge color={cefrColors[level] ?? 'blue'} data-testid="cefr-badge">{level}</Badge
                   >
                 {/each}
@@ -212,7 +236,7 @@
             </div>
 
             <p class="font-semibold text-gray-900 dark:text-white" data-testid="topic-title">
-              {rule ? rule.titleNb : t.topic}
+              {rule ? rule.titleNb : seg.topic}
             </p>
 
             <p class="mt-1 line-clamp-2 text-sm text-gray-500 sm:line-clamp-2 dark:text-gray-400">
