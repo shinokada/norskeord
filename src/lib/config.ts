@@ -331,52 +331,83 @@ export const FREE_QUIZ_CATEGORIES = new Set<string>([
 ]);
 
 /**
- * Grammar topics available to free users. Everything else requires Plus.
+ * Grammar topics available to free users, keyed by which CEFR level(s) of the
+ * topic are free. A topic is either:
+ *   - `'all'` — free at every level it has questions at, or
+ *   - an explicit array of levels — free only at the listed levels; any other
+ *     level the topic also has content at stays Plus-gated.
+ *
+ * This exists because a topic (e.g. `modal-verb-order`) can span multiple
+ * CEFR levels (A1, A2, B1), and the old `Set<GrammarTopic>` gate couldn't
+ * express "free at A1, Plus at A2/B1".
+ *
+ * **Current policy (see ai-docs/gating-rules.md): A1-only.** Free access is
+ * scoped to `['A1']` for every topic that has A1 content — including topics
+ * that also span A2/B1/B2/C, where only the A1 slice is free and the rest
+ * stays Plus-gated. A1 is the onboarding tier, so its content stays free
+ * even for multi-level topics. Topics with no A1 content at all (e.g. the
+ * former "teaser" topics `ikke-placement`, `v2-word-order`, `det-er-ikke`,
+ * which only ever had A2/B1 questions) are intentionally absent from this
+ * map — anything not listed here requires Plus at every level.
+ *
+ * `isFreeGrammarTopic(topic, cefr?)` in `access.ts` reads this map. See that
+ * file's docstring for how the picker (`/grammar`) and the topic detail page
+ * (`/grammar/[topic]`) use it differently — the picker's free/locked badge
+ * must be level-aware when a CEFR filter is active, or a topic free only at
+ * A1 will still show as "free" while filtered to B1.
  */
-export const FREE_GRAMMAR_TOPICS = new Set<import('$lib/types').GrammarTopic>([
-  'ikke-placement',
-  'v2-word-order',
-  'det-er-ikke',
-  'modal-verb-order',
+export const FREE_GRAMMAR_TOPICS: Partial<
+  Record<import('$lib/types').GrammarTopic, readonly import('$lib/types').CEFRLevel[] | 'all'>
+> = {
+  'modal-verb-order': ['A1'],
   // Nivå A1 topics (free) — see ai-docs/implementation/a1-quiz-and-grammar.md Phase 4.
   // 19 new topics:
-  'personlige-pronomen',
-  'presens-verb',
-  'pronomen-objektsform',
-  'og-men',
-  'adverb-sted-hjem',
-  'refleksive-uttrykk',
-  'infinitiv-a1',
-  'substantiv-bestemt-form',
-  'pronomen-den-det-de',
-  'denne-dette-disse',
-  'imperativ',
-  'possessiver-min-din',
-  'refleksivt-possessiv-sin',
-  'ja-jo',
-  'preteritum-a1',
-  'for-a-fordi',
-  'vaer-det-subjekt',
-  'indirekte-tale-at-om',
-  'synes-tror',
+  'personlige-pronomen': ['A1'],
+  'presens-verb': ['A1'],
+  'pronomen-objektsform': ['A1'],
+  'og-men': ['A1'],
+  'adverb-sted-hjem': ['A1'],
+  'refleksive-uttrykk': ['A1'],
+  'infinitiv-a1': ['A1'],
+  'substantiv-bestemt-form': ['A1'],
+  'pronomen-den-det-de': ['A1'],
+  'denne-dette-disse': ['A1'],
+  imperativ: ['A1'],
+  'possessiver-min-din': ['A1'],
+  'refleksivt-possessiv-sin': ['A1'],
+  'ja-jo': ['A1'],
+  'preteritum-a1': ['A1'],
+  'for-a-fordi': ['A1'],
+  'vaer-det-subjekt': ['A1'],
+  'indirekte-tale-at-om': ['A1'],
+  'synes-tror': ['A1'],
   // 6 reused topics (modal-verb-order already listed above) — added so the
   // new A1 entries in these topics are actually reachable via the /grammar
   // picker for free users (without this, the picker links straight to
-  // /plus and free users never see the topic page at all).
-  'noun-articles',
-  'noun-plurals',
-  'adj-agreement',
-  'noun-possessives',
-  'preposisjoner-tid',
-  'helsetninger',
+  // /plus and free users never see the topic page at all). Their A2/B1
+  // content stays Plus-gated under the A1-only policy above.
+  'noun-articles': ['A1'],
+  'noun-plurals': ['A1'],
+  'adj-agreement': ['A1'],
+  'noun-possessives': ['A1'],
+  'preposisjoner-tid': ['A1'],
+  helsetninger: ['A1'],
   // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md Phase 4.
-  'klokka-tid',
-  'preposisjoner-sted',
-  'ordenstall-dato',
-  'for-siden'
-]);
-
-/**
- * How many grammar questions are free per topic (total, across all CEFR levels).
- */
-export const FREE_GRAMMAR_PER_TOPIC = 3;
+  'klokka-tid': ['A1'],
+  'preposisjoner-sted': ['A1'],
+  'ordenstall-dato': ['A1'],
+  'for-siden': ['A1'],
+  // A2/B1 teaser topics — see ai-docs/implementation/grammar-fix.md
+  // "Policy decision" and ai-docs/gating-rules.md. Two topics per level,
+  // chosen for zero plusOnly questions at that level (so the whole level's
+  // content is actually playable) and no overlap with an already-free level
+  // of the same topic (so each is a genuinely new free topic, not just an
+  // extension of one that's already free at A1). B2/C intentionally have no
+  // entries here — every B2/C question is individually plusOnly regardless
+  // of this map, so adding entries for them would be a no-op; see
+  // gating-rules.md.
+  'ikke-placement': ['A2'],
+  'adj-comparison': ['A2'],
+  'ordfamilie-avledning': ['B1'],
+  'bade-og-verken-eller': ['B1']
+};

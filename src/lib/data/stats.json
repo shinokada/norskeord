@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-26T07:06:35.794Z",
-  "grandTotal": 7030,
+  "generatedAt": "2026-07-28T09:53:07.865Z",
+  "grandTotal": 7045,
   "byLevel": {
     "A1": {
       "vocab": 497,
@@ -20,15 +20,15 @@
       "vocab": 1239,
       "uttrykk": 221,
       "total": 1460,
-      "grammar": 226,
+      "grammar": 427,
       "quiz": 1460
     },
     "B2": {
-      "vocab": 1750,
+      "vocab": 1765,
       "uttrykk": 679,
-      "total": 2429,
-      "grammar": 7,
-      "quiz": 2429
+      "total": 2444,
+      "grammar": 103,
+      "quiz": 2444
     },
     "C": {
       "vocab": 729,

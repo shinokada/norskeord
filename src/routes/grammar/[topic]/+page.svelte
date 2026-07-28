@@ -15,10 +15,29 @@
   // ai-docs/implementation/grammar-with-only-norsk.md).
   let title = $derived(rule ? rule.titleNb : data.topic);
 
-  // Free users only get the free subset; Plus users get everything.
+  // Optional level scoping (ai-docs/implementation/grammar-fix.md §5,
+  // extended in ai-docs/implementation/grammar-ux-update.md Step 1): when a
+  // locked-segment card or a level hub links here with e.g. ?level=B1, a
+  // free user must see the paywall even if the topic has free content at a
+  // *different* level (e.g. A1) — otherwise they'd silently land on the
+  // wrong content instead of the lock screen. Plus users are now scoped by
+  // levelParam too (previously they saw every level combined regardless —
+  // that let a topic clicked from e.g. /learn/b2 show its A2/B1 questions
+  // as well, which is the bug grammar-ux-update.md Step 1 fixes).
+  const CEFR_LEVELS = new Set(['A1', 'A2', 'B1', 'B2', 'C']);
+  let levelParam = $derived(() => {
+    const raw = page.url.searchParams.get('level')?.toUpperCase() ?? '';
+    return CEFR_LEVELS.has(raw) ? (raw as (typeof data.questions)[number]['cefr']) : null;
+  });
+
+  // Free users get the free subset; Plus users get everything. Either way,
+  // the result is further scoped to levelParam when present, so a user
+  // coming from a specific level hub/pill only ever practices that level.
   let freeSet = $derived(new Set(data.freeQuestionIds));
   let playable = $derived(
-    isPlus ? data.questions : data.questions.filter((q) => freeSet.has(q.id))
+    (isPlus ? data.questions : data.questions.filter((q) => freeSet.has(q.id))).filter(
+      (q) => !levelParam() || q.cefr === levelParam()
+    )
   );
   let locked = $derived(!isPlus && playable.length === 0);
 
@@ -89,6 +108,17 @@
       </a>
     </div>
   {:else}
+    <!-- Active level-scope indicator + escape hatch (only once real content
+         is playing here — not shown on the locked/paywall view above, since
+         that intentionally hides other-level free content per
+         ai-docs/implementation/grammar-fix.md §5; see
+         ai-docs/implementation/grammar-ux-update.md Step 5). -->
+    {#if levelParam()}
+      <p class="-mt-4 mb-4 text-sm text-gray-500 dark:text-gray-400">
+        Showing {levelParam()} only ·
+        <a href="/grammar/{data.topic}" class="underline hover:text-indigo-500"> see all levels </a>
+      </p>
+    {/if}
     {#key data.topic}
       <GrammarSession questions={playable} {rule} {userId} />
     {/key}
