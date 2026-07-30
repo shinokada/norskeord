@@ -1455,7 +1455,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'løp hjem mens han skrek" → "Han løp skrikende hjem." It never inflects. Perfektum partisipp ' +
       'used adjectivally (den ansatte, en forberedt presentasjon) DOES inflect for agreement, like ' +
       'a normal adjective, unlike its use in perfektum tense (har ansatt) where it never inflects. ' +
-      'When a weak verb\'s perfektum partisipp ends in -et, the plural/definite form usually adds ' +
+      "When a weak verb's perfektum partisipp ends in -et, the plural/definite form usually adds " +
       '«-ete» or «-ede» (truet → de truede/truete), while a strong or irregular -et-verb instead ' +
       'takes «-ne» (stjålet → de stjålne). A handful of fixed sammensatte adjektiv are built the ' +
       'same way from a perfektum partisipp: halvspist, nymalt, bløtkokt.',
@@ -1653,7 +1653,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     titleEn: '«Det» as formal/dummy subject, incl. cleft sentences',
     titleNb: '«Det» som formelt subjekt, inkl. utbryting med «det er/var … som»',
     explanationEn:
-      'Norwegian sentences need a subject, and new or indefinite information usually shouldn\'t open ' +
+      "Norwegian sentences need a subject, and new or indefinite information usually shouldn't open " +
       'the sentence. «Det» fills the subject slot as an empty placeholder while the real (logical) ' +
       'subject — often indefinite — moves later in the sentence: "Det sitter noen elever i ' +
       'klasserommet," "Det ble utlyst en ledig stilling." The same construction applies to passive ' +
@@ -1681,10 +1681,10 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     titleNb: '«Det» som viser tilbake til en setning eller et predikat',
     explanationEn:
       'Beyond referring back to a specific neuter noun, «det» can point back to a whole clause, an ' +
-      'adjective, or a previous verb phrase, regardless of the gender of what\'s being referred to: ' +
+      "adjective, or a previous verb phrase, regardless of the gender of what's being referred to: " +
       '"Er hun flink? — Ja, det er hun." "Jeg synes politikk er kjedelig, men det er ikke han." "Hun ' +
       'har mange planer, og det har jeg også." This cuts across the normal den/det/de gender-' +
-      'agreement pattern, since «det» here isn\'t agreeing with a noun\'s gender at all.',
+      "agreement pattern, since «det» here isn't agreeing with a noun's gender at all.",
     explanationNb:
       'Utover å vise tilbake til et bestemt intetkjønnsord kan «det» vise tilbake til en hel ' +
       'setning, et adjektiv eller en tidligere verbalfrase, uavhengig av kjønnet til det det vises ' +
@@ -1700,7 +1700,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     explanationEn:
       '«Ingen»/«ikke noen» replace «ikke» + «noen» for countable nouns; «ingenting»/«ikke noe» for ' +
       'uncountable ones — but if another word splits «ikke» from «no(e/n)» (e.g. a two-part verb), ' +
-      'the ingen-forms can\'t be used. «All/alt» go with uncountable nouns (agreeing in gender), ' +
+      "the ingen-forms can't be used. «All/alt» go with uncountable nouns (agreeing in gender), " +
       '«alle» with plurals. «Hel/helt» go with countable singular indefinite nouns (agreeing in ' +
       'gender), «hele» with definite singular nouns — never with the den/det/de article. «Hver/hvert» ' +
       'go with countable singular nouns (agreeing in gender), always followed by indefinite form. ' +
@@ -1767,7 +1767,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'time, without any past-time meaning: "Kunne du hjelpe meg?" (softer than "Kan du..."), "Det ' +
       'hadde vært fint om du kunne komme," "Jeg lurte på om det var mulig å...", "Du burde/skulle ' +
       'prøve en gang til." This is a pragmatic use of the past tense, distinct from `modalverb-' +
-      'preteritum`\'s genuine past-time meaning.',
+      "preteritum`'s genuine past-time meaning.",
     explanationNb:
       'Preteritum av et modalverb eller hovedverb kan avdempe en forespørsel, et ønske eller et ' +
       'forslag i nåtid, uten noen fortidsbetydning: "Kunne du hjelpe meg?" (mildere enn "Kan du..."), ' +
