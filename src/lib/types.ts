@@ -241,7 +241,20 @@ export type GrammarTopic =
   | 'sannsynlighet-uttrykk' // paraphrasing expressions of probability/likelihood
   | 'bli-presens-partisipp' // «bli» + presens partisipp — durative/ongoing aspect
   | 'fa-perfektum-partisipp' // «få» + perfektum partisipp — resultative aspect
-  | 'mene-synes-tro-tenke'; // near-synonym opinion verbs: mene/synes/tro/tenke
+  | 'mene-synes-tro-tenke' // near-synonym opinion verbs: mene/synes/tro/tenke
+  // Nivå B2 topics, round 2 (Plus only) — see ai-docs/implementation/b2-grammar-2.md
+  | 'modale-adverb' // certainty/discourse-particle adverbs: nok, vel, jo, faktisk, egentlig, kanskje, sikkert, visst, neppe
+  | 'sammensatte-substantiv-b2' // compound noun linking forms (-s-/-e-/none) + adjective+noun vs. fixed compound
+  | 'preteritum-perfektum-og-futurum' // narrating before/after a past reference point: hadde + partisipp, skulle/ville + infinitiv
+  | 'det-formelt-subjekt' // «det» as formal/dummy subject (incl. passive) and «det er/var … som» cleft sentences
+  | 'det-referanse' // anaphoric «det» referring back to a clause, adjective, or predicate
+  | 'spesial-kvantorer' // ingen/ingenting, all/alt/alle, hel/helt/hele, hver/hvert, begge (to)/begge deler
+  | 'arsak-og-folge-uttrykk' // broader cause/effect/purpose toolkit: siden, ettersom, dermed, nemlig, føre til, for at
+  | 'kontrast-uttrykk' // broader contrast/concession toolkit: enda, til tross for at, imidlertid, derimot, tvert imot
+  | 'hoflig-preteritum' // preteritum used for politeness/hedging: kunne du, det hadde vært fint om
+  | 'hypotetiske-betingelsessetninger' // graded hypothetical/counterfactual conditionals + skulle ønske/tenk om
+  | 'stedsadverb-statisk-dynamisk' // location adverb pairs: hjemme/hjem, inne/inn, ute/ut, der/dit, her/hit
+  | 'man-en-upersonlig-pronomen'; // impersonal pronouns «man» (subject only) vs. «en» (subject or object)
 
 export interface GrammarRule {
   id: GrammarTopic;

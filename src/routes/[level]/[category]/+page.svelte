@@ -29,6 +29,17 @@
   // resolving for A1–B2's uttrykk-with-theme case as before.
   const studyingLabel = $derived(themeLabel(levelLower, data.selectedTheme ?? data.category));
 
+  /**
+   * Header label for VocabFlashcardPage's H1 ("B1 · Vocabulary" /
+   * "B1 · Uttrykk (Phrases)") — which section the deck belongs to, not the
+   * specific category (that's already shown by the "Studying: X" breadcrumb
+   * above). Reuses the existing i18n'd stats_vocabulary_heading /
+   * stats_uttrykk_heading keys rather than introducing new ones.
+   */
+  const sectionLabel = $derived(
+    data.section === 'uttrykk' ? m.stats_uttrykk_heading() : m.stats_vocabulary_heading()
+  );
+
   const selectedThemeCount = $derived(
     data.selectedTheme === UTTRYKK_OTHERS_THEME
       ? partitionUttrykkThemes(data.themes).othersCount
@@ -95,6 +106,7 @@
   <VocabFlashcardPage
     entries={data.entries}
     level={data.level}
+    {sectionLabel}
     language={languageStore.current}
     prevCategory={data.prevCategory}
     nextCategory={data.nextCategory}

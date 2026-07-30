@@ -36,6 +36,7 @@
     entries: VocabEntry[];
     language?: FlashcardLanguage;
     level?: string;
+    sectionLabel?: string;
     prevCategory?: CategoryNav | null;
     nextCategory?: CategoryNav | null;
     nextLocked?: LockedNav | null;
@@ -44,6 +45,7 @@
   let {
     entries,
     level = '',
+    sectionLabel = '',
     prevCategory = null,
     nextCategory = null,
     nextLocked = null,
@@ -136,16 +138,6 @@
   //  - the level is below B1 (A1/A2)
   let effectiveMode = $derived<Mode>(
     mode === 'defnor' && (!hasDefinitions || !isDefnorLevel) ? 'noreng' : mode
-  );
-
-  // Phase 3 (ai-docs/implementation/quiz-i18n-and-categories.md): the
-  // header's mode label is always the fixed Norwegian word ("Ord"/"Uttrykk"),
-  // regardless of interface locale, and tracks this component's own
-  // `cardType` state rather than the route's category slug — the card-type
-  // toggle is available on every category page (uttrykk included), so a
-  // label keyed off the URL would go stale the moment a learner toggles it.
-  let modeLabel = $derived(
-    cardType === 'phrase' ? m.flashcard_mode_uttrykk() : m.flashcard_mode_ord()
   );
 
   // 3-A: plan from layout server data
@@ -612,12 +604,10 @@
 </script>
 
 <div class="flex w-full flex-col items-center">
-  <!-- Category header: level label + fixed mode label (Phase 3: no longer
-       the category name — that moved to the parent route's "Studying: X"
-       breadcrumb; this line is always Norwegian regardless of locale). -->
+  <!-- Category header: level label + i18n section name (e.g. "B1 · Vocabulary"). -->
   <div class="mt-10 mb-0.5 flex w-full items-center justify-center px-2">
     <h1 class="mb-0 text-center leading-tight">
-      {#if level}<span class="mr-1">{level} ·</span>{/if}{modeLabel}
+      {#if level}<span class="mr-1">{level} ·</span>{/if}{sectionLabel}
     </h1>
   </div>
 
