@@ -553,7 +553,7 @@ node scripts/check-b2-grammar-vocab.mjs
 node scripts/check-grammar-norwegian.mjs
 ```
 
-### Phase 4 — Gating + wiring
+### Phase 4 — Gating + wiring ✅ Done
 
 1. Confirm `FREE_GRAMMAR_TOPICS`/`isFreeGrammarTopic` still gates all of B2 correctly with zero
    `config.ts` edits (should be automatic, per the Plus gating section above).
@@ -564,7 +564,7 @@ node scripts/check-grammar-norwegian.mjs
 
 ---
 
-## Testing
+## Testing ✅ Done
 
 - No new grading logic needed — same existing type-agnostic grading as every prior plan.
 - Extend/confirm `src/lib/grammar/grammar-data.test.ts`'s topic-resolves-to-`GRAMMAR_RULES` check

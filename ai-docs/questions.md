@@ -6,9 +6,6 @@ svelte mcp server is running.
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
-I have /Users/shinichiokada/Svelte/svelte-languages/norskeord/ai-docs/implementation/b2-grammar-2.md file. Continue implementing Phase 4.
-
----
 
 ---
 
