@@ -1270,7 +1270,11 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'it: "en produsent" (person) / "en produksjon" (process) / "et produkt" (result); "en baker" ' +
       '/ "en/ei baking" / "en bakst." Not every verb has all three as distinct words — some family ' +
       'members double up, e.g. "en/ei bygging" (process) vs. "en/ei bygning" (the physical ' +
-      "building) — so picking the right one depends on the sentence's meaning, not a fixed pattern.",
+      "building) — so picking the right one depends on the sentence's meaning, not a fixed pattern. " +
+      'A related pattern derives a noun from a compound verb (particle verb): «-ing» (dele ut → ' +
+      'utdeling), «-else» (oppleve → opplevelse), «-takelse/-tagelse» from «ta»-verbs (delta → ' +
+      'deltakelse), «-sigelse» from «si»-verbs (si opp → oppsigelse), «-givelse» from «gi»-verbs (gi ' +
+      'ut → utgivelse), and zero-derivation pairs (gå ut → en utgang, påstå → en påstand).',
     explanationNb:
       'Å avlede riktig substantiv, verb, adjektiv eller adverb fra et gitt ord i samme ordfamilie, ' +
       'tilpasset ønsket tid/form: fra «trygg» → trygghet (substantiv); fra «operere» → operasjon ' +
@@ -1281,7 +1285,11 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '(prosess) / «et produkt» (resultat); «en baker» / «en/ei baking» / «en bakst». Ikke alle verb ' +
       'har alle tre som egne ord — noen familiemedlemmer faller sammen, f.eks. «en/ei bygging» ' +
       '(prosess) mot «en/ei bygning» (selve bygget) — så riktig valg avhenger av setningens ' +
-      'betydning, ikke et fast mønster.'
+      'betydning, ikke et fast mønster. Et beslektet mønster avleder et substantiv fra et sammensatt ' +
+      'verb (partikkelverb): «-ing» (dele ut → utdeling), «-else» (oppleve → opplevelse), ' +
+      '«-takelse/-tagelse» fra «ta»-verb (delta → deltakelse), «-sigelse» fra «si»-verb (si opp → ' +
+      'oppsigelse), «-givelse» fra «gi»-verb (gi ut → utgivelse), og null-avledningspar (gå ut → en ' +
+      'utgang, påstå → en påstand).'
   },
 
   'omskriving-passiv': {
@@ -1446,12 +1454,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Presens partisipp (verb stem + -ende) can replace a «mens»-clause to describe manner: "Han ' +
       'løp hjem mens han skrek" → "Han løp skrikende hjem." It never inflects. Perfektum partisipp ' +
       'used adjectivally (den ansatte, en forberedt presentasjon) DOES inflect for agreement, like ' +
-      'a normal adjective, unlike its use in perfektum tense (har ansatt) where it never inflects.',
+      'a normal adjective, unlike its use in perfektum tense (har ansatt) where it never inflects. ' +
+      'When a weak verb\'s perfektum partisipp ends in -et, the plural/definite form usually adds ' +
+      '«-ete» or «-ede» (truet → de truede/truete), while a strong or irregular -et-verb instead ' +
+      'takes «-ne» (stjålet → de stjålne). A handful of fixed sammensatte adjektiv are built the ' +
+      'same way from a perfektum partisipp: halvspist, nymalt, bløtkokt.',
     explanationNb:
       'Presens partisipp (verbstamme + -ende) kan erstatte en «mens»-setning for å beskrive måte: ' +
       '«Han løp hjem mens han skrek» → «Han løp skrikende hjem.» Det bøyes aldri. Perfektum ' +
       'partisipp brukt som adjektiv (den ansatte, en forberedt presentasjon) BØYES i samsvar, som ' +
-      'et vanlig adjektiv — ulikt bruken i perfektum tid (har ansatt), der det aldri bøyes.'
+      'et vanlig adjektiv — ulikt bruken i perfektum tid (har ansatt), der det aldri bøyes. Når ' +
+      'perfektum partisipp av et svakt verb ender på -et, får flertalls-/bestemt form vanligvis ' +
+      '«-ete» eller «-ede» (truet → de truede/truete), mens et sterkt eller uregelmessig -et-verb i ' +
+      'stedet tar «-ne» (stjålet → de stjålne). Noen faste sammensatte adjektiv er bygget på samme ' +
+      'måte fra et perfektum partisipp: halvspist, nymalt, bløtkokt.'
   },
 
   'partikkelverb-los-fast': {
@@ -1560,6 +1576,264 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'med en viss usikkerhet om et faktum: «Jeg tror det blir sol i morgen.» «Tenke» = fundere, ha ' +
       'noe i tankene, eller være i ferd med å si noe: «Hva tenker du på?» «Jeg tenkte å ringe deg i ' +
       'kveld.»'
+  },
+
+  // ── Nivå B2 topics, round 2 (Plus only) — see ai-docs/implementation/b2-grammar-2.md ─────────
+
+  'modale-adverb': {
+    id: 'modale-adverb',
+    titleEn: 'Modal adverbs (nok, vel, jo, faktisk, egentlig...)',
+    titleNb: 'Modale adverb',
+    explanationEn:
+      'A small set of adverbs signal how certain the speaker is, or what they assume the listener ' +
+      'already knows, without changing the literal content of the sentence: «faktisk» marks a fact ' +
+      '(often a surprising one), «egentlig» signals a contrast between what was said and how things ' +
+      'really are, «nok» hedges an assumption ("I assume/guess"), «vel» is used in questions where ' +
+      'agreement is expected, «jo» signals shared knowledge between speaker and listener, «kanskje» ' +
+      'and «sikkert» mark degrees of certainty, «visst» marks something heard secondhand, and ' +
+      '«neppe» marks something judged unlikely. These sit in the midtfelt like other setningsadverbial.',
+    explanationNb:
+      'Et lite sett adverb signaliserer hvor sikker taleren er, eller hva taleren antar at ' +
+      'mottakeren allerede vet, uten å endre det bokstavelige innholdet i setningen: «faktisk» ' +
+      'markerer et faktum (ofte overraskende), «egentlig» signaliserer en motsetning mellom det som ' +
+      'er sagt og hvordan det egentlig er, «nok» avdemper en antakelse ("jeg antar/tror"), «vel» ' +
+      'brukes i spørsmål der vi forventer et bekreftende svar, «jo» signaliserer felles kunnskap ' +
+      'mellom taler og mottaker, «kanskje» og «sikkert» markerer sikkerhetsgrad, «visst» markerer at ' +
+      'noe er hørt fra andre, og «neppe» markerer at noe vurderes som usannsynlig. Disse står i ' +
+      'midtfeltet som andre setningsadverbial.'
+  },
+
+  'sammensatte-substantiv-b2': {
+    id: 'sammensatte-substantiv-b2',
+    titleEn: 'Compound nouns and adjective+noun vs. fixed compounds',
+    titleNb: 'Sammensatte substantiv',
+    explanationEn:
+      'In a compound noun, the last element (hovedordet) governs the gender and inflection; earlier ' +
+      'elements only describe it. A linking «-s-» is inserted after words ending in -sjon, -else, ' +
+      '-skap, -het, -dom, -tet, and most words ending in -ing/-ning (permisjonsordning, ' +
+      'forskningsartikkel); a linking «-e-» appears after many short, often person/animal-referring ' +
+      'words (barnebok, gutteskole); otherwise the elements simply join (familielivet). Separately, ' +
+      'an adjective + noun written as two words keeps normal adjective agreement and a literal ' +
+      'meaning (en brun ost), while the same words fused into one compound word narrow to a specific ' +
+      'meaning and the adjective-like first element no longer inflects (en brunost, to brunoster).',
+    explanationNb:
+      'I et sammensatt substantiv styrer det siste leddet (hovedordet) kjønn og bøyning; ' +
+      'tidligere ledd beskriver det bare. Det settes inn en bindings-«-s-» etter ord som ender på ' +
+      '-sjon, -else, -skap, -het, -dom, -tet, og de fleste ord som ender på -ing/-ning ' +
+      '(permisjonsordning, forskningsartikkel); en bindings-«-e-» dukker opp etter mange korte ord, ' +
+      'ofte om personer/dyr (barnebok, gutteskole); ellers settes leddene rett sammen (familielivet). ' +
+      'Adjektiv + substantiv skrevet som to ord beholder vanlig adjektivsamsvar og en bokstavelig ' +
+      'betydning (en brun ost), mens de samme ordene smeltet sammen til étt sammensatt ord får en ' +
+      'spesifikk betydning, og det adjektivliknende første leddet bøyes ikke lenger (en brunost, to ' +
+      'brunoster).'
+  },
+
+  'preteritum-perfektum-og-futurum': {
+    id: 'preteritum-perfektum-og-futurum',
+    titleEn: 'Sequencing before/after a past reference point',
+    titleNb: 'Preteritum perfektum og preteritum futurum',
+    explanationEn:
+      'When narrating in the past, «hadde» + perfektum partisipp (preteritum perfektum) marks what ' +
+      'had already happened before the reference point, while «skulle/ville» + infinitiv (preteritum ' +
+      'futurum) marks what was still to come from that same past vantage point: "Da de hadde funnet ' +
+      'olje (before), ville politikerne beholde kontrollen (after)." The unrealized/hypothetical ' +
+      'variant, preteritum futurum perfektum, adds «ha» + perfektum partisipp: "Jeg skulle ha gjort ' +
+      'dette for lenge siden" (but didn\'t).',
+    explanationNb:
+      'Når vi forteller i fortid, markerer «hadde» + perfektum partisipp (preteritum perfektum) det ' +
+      'som allerede hadde skjedd før referansepunktet, mens «skulle/ville» + infinitiv (preteritum ' +
+      'futurum) markerer det som fremdeles lå foran i tid fra det samme fortidige ståstedet: "Da de ' +
+      'hadde funnet olje (før), ville politikerne beholde kontrollen (etter)." Den ' +
+      'uoppfylte/hypotetiske varianten, preteritum futurum perfektum, legger til «ha» + perfektum ' +
+      'partisipp: "Jeg skulle ha gjort dette for lenge siden" (men gjorde det ikke).'
+  },
+
+  'det-formelt-subjekt': {
+    id: 'det-formelt-subjekt',
+    titleEn: '«Det» as formal/dummy subject, incl. cleft sentences',
+    titleNb: '«Det» som formelt subjekt, inkl. utbryting med «det er/var … som»',
+    explanationEn:
+      'Norwegian sentences need a subject, and new or indefinite information usually shouldn\'t open ' +
+      'the sentence. «Det» fills the subject slot as an empty placeholder while the real (logical) ' +
+      'subject — often indefinite — moves later in the sentence: "Det sitter noen elever i ' +
+      'klasserommet," "Det ble utlyst en ledig stilling." The same construction applies to passive ' +
+      'sentences with an indefinite logical subject: "Det snakkes mye om dette," "Det må gjøres ' +
+      'noe." A related use is the cleft/emphasis construction «Det er/var X som …», which fronts and ' +
+      'highlights one constituent: "Det var broren min som ringte" (not someone else). «Som» is ' +
+      'required when the fronted element is the subject, and is usually dropped otherwise ("Det er ' +
+      'deg jeg elsker"). The pattern is also common in spoken wh-questions: "Hvem var det som ' +
+      'ringte?"',
+    explanationNb:
+      'Norske setninger trenger et subjekt, og ny eller ubestemt informasjon skal vanligvis ikke stå ' +
+      'først i setningen. «Det» fyller subjektsplassen som en tom plassholder mens det virkelige ' +
+      '(logiske) subjektet — ofte ubestemt — flyttes lenger ut i setningen: "Det sitter noen elever i ' +
+      'klasserommet," "Det ble utlyst en ledig stilling." Samme konstruksjon gjelder passive ' +
+      'setninger med et ubestemt logisk subjekt: "Det snakkes mye om dette," "Det må gjøres noe." En ' +
+      'beslektet bruk er utbrytingskonstruksjonen «Det er/var X som …», som flytter fram og framhever ' +
+      'ett ledd: "Det var broren min som ringte" (ikke noen andre). «Som» er påkrevd når det ' +
+      'framhevede leddet er subjekt, og sløyfes vanligvis ellers ("Det er deg jeg elsker"). Mønsteret ' +
+      'er også vanlig i muntlige hv-spørsmål: "Hvem var det som ringte?"'
+  },
+
+  'det-referanse': {
+    id: 'det-referanse',
+    titleEn: '«Det» referring back to a clause or predicate',
+    titleNb: '«Det» som viser tilbake til en setning eller et predikat',
+    explanationEn:
+      'Beyond referring back to a specific neuter noun, «det» can point back to a whole clause, an ' +
+      'adjective, or a previous verb phrase, regardless of the gender of what\'s being referred to: ' +
+      '"Er hun flink? — Ja, det er hun." "Jeg synes politikk er kjedelig, men det er ikke han." "Hun ' +
+      'har mange planer, og det har jeg også." This cuts across the normal den/det/de gender-' +
+      'agreement pattern, since «det» here isn\'t agreeing with a noun\'s gender at all.',
+    explanationNb:
+      'Utover å vise tilbake til et bestemt intetkjønnsord kan «det» vise tilbake til en hel ' +
+      'setning, et adjektiv eller en tidligere verbalfrase, uavhengig av kjønnet til det det vises ' +
+      'til: "Er hun flink? — Ja, det er hun." "Jeg synes politikk er kjedelig, men det er ikke han." ' +
+      '"Hun har mange planer, og det har jeg også." Dette bryter med det vanlige den/det/de-' +
+      'kjønnssamsvaret, siden «det» her ikke samsvarer med et substantivs kjønn i det hele tatt.'
+  },
+
+  'spesial-kvantorer': {
+    id: 'spesial-kvantorer',
+    titleEn: 'ingen/alle/hel/hver/begge — specialized quantifier-pronouns',
+    titleNb: 'ingen, alle, hel, hver, begge',
+    explanationEn:
+      '«Ingen»/«ikke noen» replace «ikke» + «noen» for countable nouns; «ingenting»/«ikke noe» for ' +
+      'uncountable ones — but if another word splits «ikke» from «no(e/n)» (e.g. a two-part verb), ' +
+      'the ingen-forms can\'t be used. «All/alt» go with uncountable nouns (agreeing in gender), ' +
+      '«alle» with plurals. «Hel/helt» go with countable singular indefinite nouns (agreeing in ' +
+      'gender), «hele» with definite singular nouns — never with the den/det/de article. «Hver/hvert» ' +
+      'go with countable singular nouns (agreeing in gender), always followed by indefinite form. ' +
+      '«Begge (to)» is for two specific people/things in definite form; «begge deler» for something ' +
+      'general/uncountable or two different things; their negative counterparts are «ingen av dem» ' +
+      'and «ingen av delene».',
+    explanationNb:
+      '«Ingen»/«ikke noen» erstatter «ikke» + «noen» for tellelige substantiv; «ingenting»/«ikke noe» ' +
+      'for utellelige — men hvis et annet ord skiller «ikke» fra «no(e/n)» (f.eks. et sammensatt ' +
+      'verb), kan ikke ingen-formene brukes. «All/alt» står til utellelige substantiv (samsvarer i ' +
+      'kjønn), «alle» til flertall. «Hel/helt» står til tellelige substantiv i ubestemt entall ' +
+      '(samsvarer i kjønn), «hele» til bestemt entall — aldri sammen med artikkelen den/det/de. ' +
+      '«Hver/hvert» står til tellelige substantiv i entall (samsvarer i kjønn), alltid fulgt av ' +
+      'ubestemt form. «Begge (to)» brukes om to bestemte personer/ting i bestemt form; «begge deler» ' +
+      'om noe generelt/utellelig eller to ulike ting; de negative motstykkene er «ingen av dem» og ' +
+      '«ingen av delene».'
+  },
+
+  'arsak-og-folge-uttrykk': {
+    id: 'arsak-og-folge-uttrykk',
+    titleEn: 'A broader toolkit for cause, effect, and purpose',
+    titleNb: 'Flere måter å uttrykke årsak, følge og hensikt',
+    explanationEn:
+      'Beyond derfor/fordi, B2 texts draw on a fuller causation toolkit: subjunksjons «siden»/«i og ' +
+      'med at»/«ettersom» (cause, near-synonyms of fordi) and «slik at» (result); adverbs «dermed» ' +
+      '("as a result of this") and «nemlig» (explains the previous sentence, mid-position); ' +
+      'causative verbs «føre til», «skyldes», «gjøre at», «føre med seg», «henge sammen med»; nominal ' +
+      'expressions «grunn(en til)», «årsak(en til)», «følge(n)», often followed by «at»-clauses ' +
+      '("årsaken til at ..."); and hensikt (purpose) clauses with «for at», «slik at», «så» ("Hun ' +
+      'åpnet vinduet for at han skulle få frisk luft").',
+    explanationNb:
+      'Utover derfor/fordi bruker B2-tekster et fyldigere sett årsaksuttrykk: subjunksjonene «siden»/' +
+      '«i og med at»/«ettersom» (årsak, nær synonymt med fordi) og «slik at» (følge); adverbene ' +
+      '«dermed» ("som følge av dette") og «nemlig» (forklarer forrige setning, midtfeltplassering); ' +
+      'årsaksverb «føre til», «skyldes», «gjøre at», «føre med seg», «henge sammen med»; nominale ' +
+      'uttrykk «grunn(en til)», «årsak(en til)», «følge(n)», ofte fulgt av at-setninger ("årsaken til ' +
+      'at ..."); og hensiktssetninger med «for at», «slik at», «så» ("Hun åpnet vinduet for at han ' +
+      'skulle få frisk luft").'
+  },
+
+  'kontrast-uttrykk': {
+    id: 'kontrast-uttrykk',
+    titleEn: 'A broader toolkit for contrast and concession',
+    titleNb: 'Flere måter å uttrykke motsetning',
+    explanationEn:
+      'Beyond selv om/likevel, B2 texts draw on a fuller contrast toolkit: subjunksjons «enda» and ' +
+      '«til tross for at» (both near-synonyms of selv om); adverbs «til tross for det»/«ikke desto ' +
+      'mindre» ("nevertheless"), «imidlertid»/«derimot» ("however"), «tvert imot» ("on the ' +
+      'contrary"), «ellers» ("otherwise"), «i motsetning til» ("unlike"); and the correlative pair ' +
+      '«på den ene siden ... på den andre siden» ("on the one hand ... on the other hand").',
+    explanationNb:
+      'Utover selv om/likevel bruker B2-tekster et fyldigere sett motsetningsuttrykk: subjunksjonene ' +
+      '«enda» og «til tross for at» (begge nær synonymt med selv om); adverbene «til tross for det»/' +
+      '«ikke desto mindre», «imidlertid»/«derimot», «tvert imot», «ellers», «i motsetning til»; og ' +
+      'korrelatparet «på den ene siden ... på den andre siden».'
+  },
+
+  'hoflig-preteritum': {
+    id: 'hoflig-preteritum',
+    titleEn: 'Preteritum for politeness and softened suggestions',
+    titleNb: 'Preteritum for høflighet og avdempede forslag',
+    explanationEn:
+      'The preteritum of a modal or main verb can soften a request, wish, or suggestion in present ' +
+      'time, without any past-time meaning: "Kunne du hjelpe meg?" (softer than "Kan du..."), "Det ' +
+      'hadde vært fint om du kunne komme," "Jeg lurte på om det var mulig å...", "Du burde/skulle ' +
+      'prøve en gang til." This is a pragmatic use of the past tense, distinct from `modalverb-' +
+      'preteritum`\'s genuine past-time meaning.',
+    explanationNb:
+      'Preteritum av et modalverb eller hovedverb kan avdempe en forespørsel, et ønske eller et ' +
+      'forslag i nåtid, uten noen fortidsbetydning: "Kunne du hjelpe meg?" (mildere enn "Kan du..."), ' +
+      '"Det hadde vært fint om du kunne komme," "Jeg lurte på om det var mulig å...", "Du burde/' +
+      'skulle prøve en gang til." Dette er en pragmatisk bruk av fortidsformen, ulikt `modalverb-' +
+      'preteritum`s ekte fortidsbetydning.'
+  },
+
+  'hypotetiske-betingelsessetninger': {
+    id: 'hypotetiske-betingelsessetninger',
+    titleEn: 'Hypothetical and counterfactual conditionals',
+    titleNb: 'Hypotetiske betingelsessetninger',
+    explanationEn:
+      'Conditionals are graded by how (un)real the condition is. A real future possibility uses ' +
+      'presens throughout: "Hvis jeg vinner i Lotto, reiser jeg jorda rundt." An unlikely present/' +
+      'future hypothetical uses preteritum in the hvis-clause and ville/skulle + infinitiv in the ' +
+      'main clause: "Hvis jeg vant i Lotto, ville jeg reise jorda rundt." An unrealized past ' +
+      'counterfactual uses preteritum perfektum in the hvis-clause and ville (ha)/skulle (ha) + ' +
+      'perfektum partisipp in the main clause: "Hvis jeg hadde vunnet i Lotto, ville jeg (ha) reist ' +
+      'jorda rundt" — «hvis» can also be dropped with inversion: "Hadde jeg vunnet ..., ville jeg ..." ' +
+      'The related wish constructions «skulle ønske (at) + preteritum/preteritum perfektum» and ' +
+      '«tenk om + preteritum/preteritum perfektum/presens» use the same tense logic.',
+    explanationNb:
+      'Betingelsessetninger gradbøyes etter hvor (u)virkelig betingelsen er. En reell framtidig ' +
+      'mulighet bruker presens gjennomgående: "Hvis jeg vinner i Lotto, reiser jeg jorda rundt." Et ' +
+      'usannsynlig nåtidig/framtidig hypotetisk tilfelle bruker preteritum i hvis-setningen og ville/' +
+      'skulle + infinitiv i hovedsetningen: "Hvis jeg vant i Lotto, ville jeg reise jorda rundt." Et ' +
+      'uoppfylt fortidig tilfelle bruker preteritum perfektum i hvis-setningen og ville (ha)/skulle ' +
+      '(ha) + perfektum partisipp i hovedsetningen: "Hvis jeg hadde vunnet i Lotto, ville jeg (ha) ' +
+      'reist jorda rundt" — «hvis» kan også sløyfes med inversjon: "Hadde jeg vunnet ..., ville jeg ' +
+      '..." De beslæktede ønskeuttrykkene «skulle ønske (at) + preteritum/preteritum perfektum» og ' +
+      '«tenk om + preteritum/preteritum perfektum/presens» følger samme tempuslogikk.'
+  },
+
+  'stedsadverb-statisk-dynamisk': {
+    id: 'stedsadverb-statisk-dynamisk',
+    titleEn: 'Static vs. dynamic location adverbs',
+    titleNb: 'Statiske og dynamiske stedsadverb',
+    explanationEn:
+      'Several location adverbs have two forms: a static one for being at a place, and a dynamic one ' +
+      'for moving toward it: hjemme/hjem, inne/inn, ute/ut, oppe/opp, nede/ned, borte/bort, framme/' +
+      'fram, der/dit, her/hit. "Jeg er hjemme" (static — I am at home) vs. "Jeg skal hjem" (dynamic — ' +
+      'I\'m heading home); "Er du ute?" vs. "Jeg skal gå ut." The choice depends on whether the verb ' +
+      'describes a location/state or a movement toward that location.',
+    explanationNb:
+      'Flere stedsadverb har to former: en statisk for å være et sted, og en dynamisk for å bevege ' +
+      'seg mot det: hjemme/hjem, inne/inn, ute/ut, oppe/opp, nede/ned, borte/bort, framme/fram, der/' +
+      'dit, her/hit. "Jeg er hjemme" (statisk) mot "Jeg skal hjem" (dynamisk); "Er du ute?" mot "Jeg ' +
+      'skal gå ut." Valget avhenger av om verbet beskriver et sted/en tilstand eller en bevegelse mot ' +
+      'stedet.'
+  },
+
+  'man-en-upersonlig-pronomen': {
+    id: 'man-en-upersonlig-pronomen',
+    titleEn: 'Impersonal pronouns «man» and «en»',
+    titleNb: 'Upersonlige pronomen «man» og «en»',
+    explanationEn:
+      'To speak about people in general, Norwegian uses «man» (subject position only) or «en» ' +
+      '(subject or object position): "Man skal ikke tro alt man leser." "En kan ikke stole på alt en ' +
+      'finner på nett" (en as subject), "Sola gir en ny energi" (en as object). Colloquial «du» or ' +
+      '«folk» can be used the same way in informal register.',
+    explanationNb:
+      'For å snakke om mennesker generelt bruker norsk «man» (bare subjektsposisjon) eller «en» ' +
+      '(subjekts- eller objektsposisjon): "Man skal ikke tro alt man leser." "En kan ikke stole på alt ' +
+      'en finner på nett" (en som subjekt), "Sola gir en ny energi" (en som objekt). Muntlig «du» ' +
+      'eller «folk» kan brukes på samme måte i uformell stil.'
   }
 };
 
