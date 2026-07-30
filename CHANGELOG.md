@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.61.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added extensive Norwegian B2 grammar practice covering advanced topics such as modal adverbs, conditionals, contrast, quantifiers, formal “det”, and location expressions.
+    - Added expanded Norwegian vocabulary, phrases, idioms, grammar references, workbook exercises, and debate materials.
+    - Added clearer section labels distinguishing vocabulary from expressions.
+    - Expanded grammar statistics to show topic counts.
+
+  - **Documentation**
+    - Added implementation guidance for upcoming B2 grammar and punctuation-sensitive exercises.
+
+  - **Style**
+    - Standardized exercise answer blanks and simplified expression headings across translations.
+
 ## 2.60.2
 
 ### Patch Changes
