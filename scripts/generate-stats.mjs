@@ -39,8 +39,11 @@ const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
 // Build per-level counts + optional category breakdown
 const byLevel = {};
 for (const level of LEVELS) {
-  byLevel[level] = { vocab: 0, uttrykk: 0, total: 0, grammar: 0, quiz: 0 };
+  byLevel[level] = { vocab: 0, uttrykk: 0, total: 0, grammar: 0, grammar_topic: 0, quiz: 0 };
 }
+
+// topicsByLevel[level] = Set of distinct grammar topics
+const topicsByLevel = {};
 
 // categoryByLevel[level][category] = count  (vocab only — uttrykk has no category)
 const categoryByLevel = {};
@@ -71,7 +74,12 @@ try {
   for (const q of grammarData) {
     if (LEVELS.includes(q.cefr)) {
       byLevel[q.cefr].grammar += 1;
+      if (!topicsByLevel[q.cefr]) topicsByLevel[q.cefr] = new Set();
+      if (q.topic) topicsByLevel[q.cefr].add(q.topic);
     }
+  }
+  for (const level of LEVELS) {
+    byLevel[level].grammar_topic = topicsByLevel[level]?.size ?? 0;
   }
 } catch {
   console.warn('  Warning: could not read grammar.json');
@@ -96,15 +104,15 @@ const stats = {
 writeFileSync(OUT_FILE, JSON.stringify(stats, null, 2) + '\n');
 
 // ── Summary table (always printed) ──────────────────────────────────────────
-console.log('\nLevel       Vocab  Uttrykk    Total  Grammar     Quiz');
-console.log('─'.repeat(56));
+console.log('\nLevel       Vocab  Uttrykk    Total  Grammar  GrTopic     Quiz');
+console.log('─'.repeat(64));
 for (const level of LEVELS) {
-  const { vocab, uttrykk, total, grammar, quiz } = byLevel[level];
+  const { vocab, uttrykk, total, grammar, grammar_topic, quiz } = byLevel[level];
   console.log(
-    `${level.padEnd(8)} ${String(vocab).padStart(7)} ${String(uttrykk).padStart(8)} ${String(total).padStart(8)} ${String(grammar).padStart(9)} ${String(quiz).padStart(8)}`
+    `${level.padEnd(8)} ${String(vocab).padStart(7)} ${String(uttrykk).padStart(8)} ${String(total).padStart(8)} ${String(grammar).padStart(9)} ${String(grammar_topic).padStart(8)} ${String(quiz).padStart(8)}`
   );
 }
-console.log('─'.repeat(56));
+console.log('─'.repeat(64));
 console.log(`${'TOTAL'.padEnd(8)} ${' '.repeat(16)} ${String(grandTotal).padStart(8)}`);
 console.log(`\nWritten to: ${OUT_FILE}`);
 

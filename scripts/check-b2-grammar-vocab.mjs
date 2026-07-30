@@ -71,7 +71,22 @@ const B2_TOPICS = new Set([
   'tidssekvens-etter-at-etterpaa',
   'adjektiv-eller-adverb',
   'passiv-bli-s',
-  'indirekte-tale-at-om'
+  'indirekte-tale-at-om',
+  // Round 2 (ai-docs/implementation/b2-grammar-2.md): 12 new topics + 3
+  // reused topic-touches (partisipp-former/ordfamilie-avledning above already
+  // in this set; partikkelverb-los-fast too).
+  'modale-adverb',
+  'sammensatte-substantiv-b2',
+  'preteritum-perfektum-og-futurum',
+  'det-formelt-subjekt',
+  'det-referanse',
+  'spesial-kvantorer',
+  'arsak-og-folge-uttrykk',
+  'kontrast-uttrykk',
+  'hoflig-preteritum',
+  'hypotetiske-betingelsessetninger',
+  'stedsadverb-statisk-dynamisk',
+  'man-en-upersonlig-pronomen'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
