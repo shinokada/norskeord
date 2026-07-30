@@ -125,7 +125,7 @@ plan (freshly written sentences, real `vocab-b2.json`/`vocab-c.json` headwords).
 `grammar-with-only-norsk.md` — no exception for this topic.
 
 **Verification script caveat:** `scripts/check-grammar-norwegian.mjs` needs a look before running
-against this topic — it currently checks for English-tell *words*, not punctuation, so it should
+against this topic — it currently checks for English-tell _words_, not punctuation, so it should
 be unaffected, but confirm it doesn't choke on options that are near-duplicate strings (some
 existing dedup/lint logic elsewhere in the pipeline might assume distinct option text).
 
@@ -143,6 +143,7 @@ existing dedup/lint logic elsewhere in the pipeline might assume distinct option
 ## Implementation phases
 
 ### Phase 1 — Plumbing (no content yet)
+
 1. Add `'punctuation'` to `GrammarQuestion['type']` in `types.ts`.
 2. Add `normalizeAnswerKeepPunctuation` + the `gradeGrammarAnswer` branch in `session.ts`.
 3. Add `PunctuationQuestion.svelte`, wire into `GrammarSession.svelte`.
@@ -150,15 +151,17 @@ existing dedup/lint logic elsewhere in the pipeline might assume distinct option
    prove the plumbing end-to-end before content-writing starts.
 
 ### Phase 2 — Pilot content
+
 1. Add `kommaregler` to `GrammarTopic` (`types.ts`) and `GRAMMAR_RULES` (`rules.ts`) — Norwegian
    rule text per the sub-points above.
 2. Write ~10-12 pilot questions covering 2-3 of the sub-points (start with relative-clause comma
-   + list comma, the two most common patterns) to validate the format feels right before writing
-   the full set.
+   - list comma, the two most common patterns) to validate the format feels right before writing
+     the full set.
 3. Add `kommaregler` to the admin `TOPICS` constant and confirm `/grammar/kommaregler` renders and
    grades correctly end-to-end.
 
 ### Phase 3 — Full content
+
 1. Write the remaining sub-points (appositive comma, direct-speech comma, conjunction-joining
    comma) — target ~40-50 questions total across all sub-points.
 2. Run `check-grammar-norwegian.mjs kommaregler` and the vocab-check script, same as every other
@@ -176,5 +179,5 @@ existing dedup/lint logic elsewhere in the pipeline might assume distinct option
   wrong-but-plausible second distractor beyond "no comma at all" vs. "comma in the right place" —
   worth checking during the Phase 2 pilot whether 2 options (a `minimal-pair`-style A/B) reads
   better than 3 for some sub-points, even though the type is technically built for `options.length
-  === 3` like `multiple-choice`. If so, `punctuation` may need to accept 2 or 3 options rather than
+=== 3` like `multiple-choice`. If so, `punctuation` may need to accept 2 or 3 options rather than
   always 3.

@@ -110,7 +110,20 @@
     'sannsynlighet-uttrykk',
     'bli-presens-partisipp',
     'fa-perfektum-partisipp',
-    'mene-synes-tro-tenke'
+    'mene-synes-tro-tenke',
+    // Nivå B2 topics, round 2 — see ai-docs/implementation/b2-grammar-2.md
+    'modale-adverb',
+    'sammensatte-substantiv-b2',
+    'preteritum-perfektum-og-futurum',
+    'det-formelt-subjekt',
+    'det-referanse',
+    'spesial-kvantorer',
+    'arsak-og-folge-uttrykk',
+    'kontrast-uttrykk',
+    'hoflig-preteritum',
+    'hypotetiske-betingelsessetninger',
+    'stedsadverb-statisk-dynamisk',
+    'man-en-upersonlig-pronomen'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [

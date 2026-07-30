@@ -58,12 +58,12 @@ came from for that reason.
 
 | New topic                          | Source(s)                                                                                                                                            | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `modale-adverb`                    | HPB ch.1 ("Modale uttrykk"); GiN3 (adverb chapter, "Modale adverb")                                                                                  | The certainty/discourse-particle adverbs **faktisk, egentlig, nok, vel, jo**, extended with **kanskje, sikkert, visst, neppe, visstnok** from GiN3's fuller list. Distinct from `sannsynlighet-uttrykk` (which covers full *phrases* like "det er sannsynlig at"): this is single modal-particle placement and choice, e.g. distinguishing *vel* (expects agreement) from *jo* (shared knowledge) from *nok* (hedged assumption). Independently named as its own grammar point in **both** sources — strong signal.                                 |
-| `sammensatte-substantiv`           | HPB ch.4 ("Sammensatte substantiv", "Adjektiv + substantiv"); GiN3 tekstbok ("Orddanning")                                                           | Compound noun formation: which element is the *hovedord* (governs gender/inflection), when to insert a linking **-s-** (after -sjon/-else/-skap/-het/-dom/-tet/-ing/-ning) vs **-e-** (short person/animal nouns) vs nothing, plus the adjacent adjective+noun vs. fixed-compound distinction (en brun ost / en brunost) where meaning narrows and the adjective stops inflecting.                                                                                                                                                                  |
+| `modale-adverb`                    | HPB ch.1 ("Modale uttrykk"); GiN3 (adverb chapter, "Modale adverb")                                                                                  | The certainty/discourse-particle adverbs **faktisk, egentlig, nok, vel, jo**, extended with **kanskje, sikkert, visst, neppe, visstnok** from GiN3's fuller list. Distinct from `sannsynlighet-uttrykk` (which covers full _phrases_ like "det er sannsynlig at"): this is single modal-particle placement and choice, e.g. distinguishing _vel_ (expects agreement) from _jo_ (shared knowledge) from _nok_ (hedged assumption). Independently named as its own grammar point in **both** sources — strong signal.                                 |
+| `sammensatte-substantiv`           | HPB ch.4 ("Sammensatte substantiv", "Adjektiv + substantiv"); GiN3 tekstbok ("Orddanning")                                                           | Compound noun formation: which element is the _hovedord_ (governs gender/inflection), when to insert a linking **-s-** (after -sjon/-else/-skap/-het/-dom/-tet/-ing/-ning) vs **-e-** (short person/animal nouns) vs nothing, plus the adjacent adjective+noun vs. fixed-compound distinction (en brun ost / en brunost) where meaning narrows and the adjective stops inflecting.                                                                                                                                                                  |
 | `preteritum-perfektum-og-futurum`  | HPB ch.5 ("Preteritum perfektum og preteritum futurum"); GiN3 tekstbok (full presens-/preteritumssystem table, incl. "preteritum futurum perfektum") | Narrating **before** and **after** a point in the past within the same passage: preteritum perfektum (**hadde** + perfektum partisipp) for what happened earlier, preteritum futurum (**skulle/ville** + infinitiv) for what was still to come from that past vantage point, and preteritum futurum perfektum (**skulle/ville ha** + perfektum partisipp) for the unrealized/hypothetical variant. A distinctly B2 narrative-sequencing skill, not just tense-form drilling.                                                                        |
-| `det-formelt-subjekt`              | HPB ch.6 ("*Det* som formelt subjekt", "Verb – passiv i *det*-setninger"); GiN3 ("Det-setninger: presentering")                                      | **Det** as a contentless formal subject introducing new/indefinite information that would otherwise sound wrong sentence-initial: "Det sitter noen elever i klasserommet," "Det ble utlyst en stilling," "Det snakkes mye om dette." Includes the passive-specific case (formal subject + s-passiv/bli-passiv) as one construction family, since both sources treat it as the same underlying rule applied to passive vs. active.                                                                                                                   |
-| `det-er-var-som-utbryting`         | HPB ch.6 ("*Det er/var + som*-setning"); GiN3 ("Som i setninger med utbryting")                                                                      | Cleft/emphasis construction: **Det er/var X som ...** to front and highlight one constituent ("Det var broren min som ringte," not "jeg"). Covers tense choice (er vs. var), the *som*-requirement when the fronted element is the subject, and the common spoken-question pattern ("Hvem var det som ...?").                                                                                                                                                                                                                                       |
-| `det-referanse`                    | HPB ch.6 ("*Det* binder sammen setninger")                                                                                                           | Anaphoric **det** referring back not to a specific neuter noun but to a whole clause, an adjective, or a previous predicate ("Er hun flink? — Ja, det er hun." "Jeg synes X. — Det gjør jeg også."). A distinctly tricky B2 point since it cuts across normal den/det/de gender-agreement rules.                                                                                                                                                                                                                                                    |
+| `det-formelt-subjekt`              | HPB ch.6 ("_Det_ som formelt subjekt", "Verb – passiv i _det_-setninger"); GiN3 ("Det-setninger: presentering")                                      | **Det** as a contentless formal subject introducing new/indefinite information that would otherwise sound wrong sentence-initial: "Det sitter noen elever i klasserommet," "Det ble utlyst en stilling," "Det snakkes mye om dette." Includes the passive-specific case (formal subject + s-passiv/bli-passiv) as one construction family, since both sources treat it as the same underlying rule applied to passive vs. active.                                                                                                                   |
+| `det-er-var-som-utbryting`         | HPB ch.6 ("_Det er/var + som_-setning"); GiN3 ("Som i setninger med utbryting")                                                                      | Cleft/emphasis construction: **Det er/var X som ...** to front and highlight one constituent ("Det var broren min som ringte," not "jeg"). Covers tense choice (er vs. var), the _som_-requirement when the fronted element is the subject, and the common spoken-question pattern ("Hvem var det som ...?").                                                                                                                                                                                                                                       |
+| `det-referanse`                    | HPB ch.6 ("_Det_ binder sammen setninger")                                                                                                           | Anaphoric **det** referring back not to a specific neuter noun but to a whole clause, an adjective, or a previous predicate ("Er hun flink? — Ja, det er hun." "Jeg synes X. — Det gjør jeg også."). A distinctly tricky B2 point since it cuts across normal den/det/de gender-agreement rules.                                                                                                                                                                                                                                                    |
 | `spesial-kvantorer`                | HPB ch.8 ("Ingen og ingenting", "Alle – hel – hver", "Begge (to) – begge deler"); GiN3 (same set, "Hvilke mengdeord hvor?")                          | The specific quantifier-pronoun set not covered by the existing `kvantorer` topic (which handles mange/noen/flere plural determiners): **ingen/ikke noen** vs **ingenting/ikke noe** (tellelig/utellelig, and the "no insertion when a word splits ikke from no(e/n)" rule), **all/alt/alle** and **hel/helt/hele** and **hver/hvert** gender+countability agreement, and **begge (to)/begge deler** vs their negative counterparts **ingen av dem/ingen av delene**. Independently spelled out as multiple distinct grammar boxes in both sources. |
 | `arsak-og-folge-uttrykk`           | HPB ch.10 ("Sammenbinding av setninger: årsak og følge", "Mer om årsak og følge"); GiN3 ("Årsak og virkning")                                        | Broader than the existing `derfor-fordi` reused topic (which pairs derfor↔fordi specifically): the fuller B2 causation toolkit — subjunksjons siden/i og med at/ettersom/slik at, adverbs dermed/nemlig, causative verbs føre til/skyldes/gjøre at/føre med seg/henge sammen med, nominal grunn/årsak/følge (+ "grunnen til at"/"på grunn av at"), and hensikt (purpose) clauses with for at/slik at/så.                                                                                                                                            |
 | `kontrast-uttrykk`                 | HPB ch.10 ("Sammenbinding av setninger: motsetning"); GiN3 ("Motsetning")                                                                            | Broader than the existing `motsetning-selv-om-likevel` reused topic: the fuller contrast/concession toolkit — subjunksjons enda/til tross for at, adverbs til tross for det/ikke desto mindre/imidlertid/derimot/tvert imot/ellers/i motsetning til, and the correlative på den ene siden/på den andre siden.                                                                                                                                                                                                                                       |
@@ -76,7 +76,7 @@ came from for that reason.
 
 | Topic                    | Source(s)                                                                                                 | B2 addition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `partisipp-former`       | HPB ch.10 ("Partisipper"); GiN3 (perfektum partisipp declension)                                          | Add the specific declension nuance not yet in this topic's B2 entries: **-ete/-ede** for weak verbs ending in *-et* (truet → de truede/truete) vs **-ne** for strong/irregular *-et*-verbs (stjålet → de stjålne), plus fixed sammensatte adjektiv built from perfektum partisipp (halvspist, nymalt, bløtkokt). Needs a short `explanationNb` addition documenting the -ete/-ede vs -ne split (currently the rule text covers agreement generally but not this allomorphy).                                                                  |
+| `partisipp-former`       | HPB ch.10 ("Partisipper"); GiN3 (perfektum partisipp declension)                                          | Add the specific declension nuance not yet in this topic's B2 entries: **-ete/-ede** for weak verbs ending in _-et_ (truet → de truede/truete) vs **-ne** for strong/irregular _-et_-verbs (stjålet → de stjålne), plus fixed sammensatte adjektiv built from perfektum partisipp (halvspist, nymalt, bløtkokt). Needs a short `explanationNb` addition documenting the -ete/-ede vs -ne split (currently the rule text covers agreement generally but not this allomorphy).                                                                  |
 | `ordfamilie-avledning`   | HPB ch.12 ("Substantiv av sammensatte verb"); GiN3 tekstbok ("Ordlaging med forstavelser eller endinger") | Add the compound-verb-to-noun derivation patterns not yet in this topic's entries: **-ing** (dele ut → utdeling), **-else** (oppleve → opplevelse), **-takelse/-tagelse** from **ta**-verbs (delta → deltakelse), **-sigelse** from **si**-verbs (si opp → oppsigelse), **-givelse** from **gi**-verbs (gi ut → utgivelse), and zero-derivation pairs (gå ut → en utgang, påstå → en påstand).                                                                                                                                                |
 | `partikkelverb-los-fast` | HPB ch.12 ("Sammensatte verb", "Løst eller fast sammensatt verb?"); GiN3 (scattered examples)             | Both sources supply a much larger example set than the existing 12 B2 questions cover (skrive under/underskrive, sette i gang/igangsatt, legge fram/framlegge, gi ut/utgi, høre til/tilhøre, legge vekt på/vektlegge, ta del/delta, ta imot/motta, arbeide sammen/samarbeide, føre til/tilføre, stå opp/oppstå, sette ut/utsette, rette opp/opprette, dra opp/oppdra) — a modest additional batch (8-10 Qs) rounds out this topic with the concrete-vs-abstract-meaning-shift pattern the rule text already documents, using fresh sentences. |
 
@@ -487,25 +487,71 @@ Add "✅ Done" to an item when an item is implemented.
    back to an adjective, a whole verbal phrase, or an at-clause, contrasted with «den»/«han»/«hun»
    agreeing with a specific noun's gender; mix of fill, transform, minimal-pair, multiple-choice;
    vocab-match + Norwegian-only checks passed locally.)
-7. `partisipp-former` B2 addition (declension nuance) — ~6-8 questions.
-8. `spesial-kvantorer` (HPB ch.8 / GiN3) — ~12 questions (covers 4 sub-patterns).
-9. `arsak-og-folge-uttrykk` (HPB ch.10 / GiN3) — ~12 questions.
-10. `kontrast-uttrykk` (HPB ch.10 / GiN3) — ~10 questions.
-11. `ordfamilie-avledning` B2 addition (compound-verb-to-noun suffixes) — ~10 questions.
-12. `hoflig-preteritum` (HPB ch.11 / GiN3) — ~8-10 questions.
+7. `partisipp-former` B2 addition (declension nuance) — ~6-8 questions. ✅ Done (8 questions:
+   `gq-partform-013`–`gq-partform-020` covering -ete/-ede for weak -et verbs (truet → truede) vs
+   -ne for strong/irregular -et verbs (stjålet → stjålne), plus fixed sammensatte adjektiv from
+   perfektum partisipp (halvspist, nymalt, bløtkokt); mix of fill, transform, multiple-choice,
+   minimal-pair; vocab-match + Norwegian-only checks passed.)
+8. `spesial-kvantorer` (HPB ch.8 / GiN3) — ~12 questions (covers 4 sub-patterns). ✅ Done (14
+   questions: ingen/ikke noen vs ingenting/ikke noe incl. the ikke-noe-split rule, all/alt/alle
+   gender+number agreement, hel/helt/hele agreement incl. the bestemt-form-always-hele rule,
+   hver/hvert agreement, and begge (to)/begge deler vs. their negative counterparts; mix of fill,
+   transform, multiple-choice, minimal-pair; vocab-match + Norwegian-only checks passed.)
+9. `arsak-og-folge-uttrykk` (HPB ch.10 / GiN3) — ~12 questions. ✅ Done (14 questions: causal
+   subjunksjons siden/i og med at/ettersom vs. the result subjunksjon slik at, adverbs dermed/
+   nemlig, causative verbs føre til/skyldes/gjør at/fører med seg/henger sammen med, nominal
+   grunnen til at/årsaken til/følgen av, and a hensikt (purpose) clause with for at; mix of fill,
+   transform, multiple-choice, order; vocab-match + Norwegian-only checks passed.)
+10. `kontrast-uttrykk` (HPB ch.10 / GiN3) — ~10 questions. ✅ Done (12 questions: subjunksjons
+    enda/til tross for at, adverbs ikke desto mindre/imidlertid/derimot/tvert imot/ellers/i
+    motsetning til, and the på den ene siden/på den andre siden correlative; mix of fill,
+    transform, order, multiple-choice, minimal-pair; vocab-match + Norwegian-only checks passed
+    locally.)
+11. `ordfamilie-avledning` B2 addition (compound-verb-to-noun suffixes) — ~10 questions. ✅ Done
+    (10 questions: `gq-avled-069`–`gq-avled-078` covering -ing (dele ut → utdeling), -else
+    (oppleve → opplevelse, oppdage → oppdagelse), -takelse (delta → deltakelse), -sigelse (si
+    opp → oppsigelse), -givelse (gi ut → utgivelse), and zero-derivation pairs (gå ut → utgang,
+    påstå → påstand); mix of fill, transform, minimal-pair; vocab-match + Norwegian-only checks
+    passed locally.)
+12. `hoflig-preteritum` (HPB ch.11 / GiN3) — ~8-10 questions. ✅ Done (10 questions:
+    `gq-hoflig-001`–`gq-hoflig-010` covering the politeness preteritum of kan/vil/skal/bør
+    (kunne/ville/skulle/burde), «det hadde vært fint/lurt om», and «jeg lurte på om», contrasted
+    via minimal-pair/multiple-choice with genuine past-time preteritum; mix of transform, fill,
+    minimal-pair, multiple-choice; vocab-match + Norwegian-only checks passed locally.)
 13. `hypotetiske-betingelsessetninger` (HPB ch.11 / GiN3) — ~12 questions (richest topic; covers 3
-    reality grades + 2 wish constructions).
-14. `partikkelverb-los-fast` B2 addition (larger example set) — ~8-10 questions.
-15. `stedsadverb-statisk-dynamisk` (GiN3) — ~10 questions.
-16. `man-en-upersonlig-pronomen` (GiN3) — ~8 questions.
+    reality grades + 2 wish constructions). ✅ Done (12 questions: `gq-hypotetisk-001`–`012`
+    covering presens for a real future possibility, preteritum + ville/skulle for an unlikely
+    present/future, preteritum perfektum + ville ha for an unrealized past, hvis-dropped inversion,
+    skulle ønske + preteritum/preteritum perfektum, and tenk om + preteritum/presens; mix of fill,
+    transform, minimal-pair, multiple-choice, order; vocab-match + Norwegian-only checks passed.)
+14. `partikkelverb-los-fast` B2 addition (larger example set) — ~8-10 questions. ✅ Done (10
+    questions: `gq-partikkel-013`–`022` covering sette ut/utsette, rette opp/opprette, dra opp/
+    oppdra, stå opp/oppstå, and gi ut/utgi — the concrete-vs-abstract meaning-shift pattern; mix
+    of minimal-pair, fill, transform, order; vocab-match + Norwegian-only checks passed.)
+15. `stedsadverb-statisk-dynamisk` (GiN3) — ~10 questions. ✅ Done (10 questions:
+    `gq-stedsadv-001`–`010` covering all 9 static/dynamic pairs (hjemme/hjem, inne/inn, ute/ut,
+    oppe/opp, nede/ned, borte/bort, framme/fram, der/dit, her/hit); mix of fill, minimal-pair,
+    transform, order, multiple-choice; vocab-match + Norwegian-only checks passed.)
+16. `man-en-upersonlig-pronomen` (GiN3) — ~8 questions. ✅ Done (8 questions: `gq-man-001`–`008`
+    covering «man» as subject-only vs. «en» as subject or object, plus the informal «du» used
+    generically for people in general; mix of fill, transform, multiple-choice, minimal-pair,
+    order. Rule entry and `GrammarTopic` union already had this topic from Phase 1 — content-only
+    addition. Vocab-match + Norwegian-only checks not run locally in this session; please run
+    `node scripts/check-b2-grammar-vocab.mjs man-en-upersonlig-pronomen` and
+    `node scripts/check-grammar-norwegian.mjs man-en-upersonlig-pronomen` to confirm.)
 
 For each: write content → run `check-b2-grammar-vocab.mjs <topic>` → run
 `check-grammar-norwegian.mjs <topic>` → fix any flags → mark done.
 
-### Phase 3 — Vocab verification (full-repo pass)
+### Phase 3 — Vocab verification (full-repo pass) ✅ Done
 
 Run both scripts with no topic filter to confirm the whole B2 set (round 1 + round 2) is clean, the
 same closing step as round 1's Phase 3.
+
+```sh
+node scripts/check-b2-grammar-vocab.mjs
+node scripts/check-grammar-norwegian.mjs
+```
 
 ### Phase 4 — Gating + wiring
 
