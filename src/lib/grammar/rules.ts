@@ -1834,6 +1834,102 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '(subjekts- eller objektsposisjon): "Man skal ikke tro alt man leser." "En kan ikke stole på alt ' +
       'en finner på nett" (en som subjekt), "Sola gir en ny energi" (en som objekt). Muntlig «du» ' +
       'eller «folk» kan brukes på samme måte i uformell stil.'
+  },
+
+  // ── Nivå B2/C topic — punctuation — see ai-docs/implementation/punctuation.md ─────────────────
+
+  kommaregler: {
+    id: 'kommaregler',
+    titleEn: 'Comma rules (kommaregler)',
+    titleNb: 'Kommaregler',
+    explanationEn:
+      'Two common comma rules. 1) Subordinate clause comma: when a subordinate clause is fronted ' +
+      '(placed before the main clause), a comma goes right after it, before the main clause starts: ' +
+      '"Selv om det regnet, gikk vi en tur." When the subordinate clause instead follows the main ' +
+      'clause, no comma is needed: "Vi gikk en tur selv om det regnet." 2) List comma (oppramsing): ' +
+      'items in a list are separated by commas, but NOT before the final item when it is joined by ' +
+      '«og»/«eller»: "Hun kjøpte epler, bananer og pærer." — comma after «epler» and «bananer», but ' +
+      'no comma before «og pærer».',
+    explanationNb:
+      'To vanlige kommaregler. 1) Komma ved leddsetning: når en leddsetning er flyttet foran ' +
+      'helsetningen (fundamentplassert), settes det komma rett etter den, før helsetningen ' +
+      'fortsetter: "Selv om det regnet, gikk vi en tur." Når leddsetningen i stedet kommer etter ' +
+      'helsetningen, trengs det ikke komma: "Vi gikk en tur selv om det regnet." 2) Komma i ' +
+      'oppramsing: elementer i en liste skilles med komma, men IKKE foran det siste elementet når ' +
+      'det bindes sammen med «og»/«eller»: "Hun kjøpte epler, bananer og pærer." — komma etter ' +
+      '«epler» og «bananer», men ikke komma foran «og pærer».'
+  },
+
+  // ── Nivå B2/C topics — "Det går bra!" (see ai-docs/implementation/b2-c-grammar.md) ──
+
+  'nyanser-uttrykk': {
+    id: 'nyanser-uttrykk',
+    titleEn: 'Near-synonym discrimination',
+    titleNb: 'Nyanseforskjeller mellom lignende ord',
+    explanationEn:
+      'Norwegian has many word groups that translate similarly into English but carry a real ' +
+      'meaning difference in Norwegian, so only one fits a given context. Some pairs split by ' +
+      'countability or register («tid» = time in general vs. «time» = a clock-hour vs. «gang» = an ' +
+      'occurrence: «jeg har vært der mange ganger», not «mange tider»). Some are near-synonym ' +
+      'adjectives with a tone difference («alvorlig» = stern/serious-looking vs. «seriøs» = ' +
+      'sincere/professional). Some are single words with several unrelated senses that only context ' +
+      'disambiguates («ryke»: literally «to smoke/emit smoke», but also «to snap» (a rope, a tendon), ' +
+      '«to fall through» (a plan, a deal), or «to be knocked out» (a competition). An intensifying ' +
+      'adverb like «såpass» («that much/so much») works the same way — one word, many shades ' +
+      'depending on what it modifies. Getting these right means reading the whole sentence for ' +
+      'meaning, not pattern-matching the surface word.',
+    explanationNb:
+      'Norsk har mange ordgrupper som oversettes likt til engelsk, men som har en reell ' +
+      'betydningsforskjell på norsk, slik at bare étt av dem passer i en gitt sammenheng. Noen par ' +
+      'skiller seg på tellelighet eller register («tid» = tid generelt mot «time» = en klokketime mot ' +
+      '«gang» = en forekomst: «jeg har vært der mange ganger», ikke «mange tider»). Noen er ' +
+      'nær-synonyme adjektiv med ulik tone («alvorlig» = streng/dyster i uttrykket mot «seriøs» = ' +
+      'oppriktig/ordentlig). Noen er ett ord med flere urlånte betydninger som bare sammenhengen kan ' +
+      'skille («ryke»: bokstavelig «avgi røyk», men også «å ryke» (et tau, en sene), «å falle ' +
+      'gjennom» (en plan, en avtale), eller «å bli slått ut» (en konkurranse). Et forsterkende ' +
+      'adverb som «såpass» fungerer på samme måte — étt ord, mange nyanser avhengig av hva det ' +
+      'står til. Å treffe riktig krever å lese hele setningen for betydning, ikke å gjenkjenne ' +
+      'overflateordet.'
+  },
+
+  'preposisjoner-uttrykk-b2': {
+    id: 'preposisjoner-uttrykk-b2',
+    titleEn: 'Idiomatic B2 preposition collocations',
+    titleNb: 'Idiomatiske preposisjonsuttrykk på nivå B2',
+    explanationEn:
+      'Beyond the literal time/place rules, many common B2 verbs, nouns, and adjectives take a ' +
+      'fixed preposition that has to be learned per expression, not derived from a general rule: ' +
+      '«ta ansvar for», «ha inntrykk av», «være forberedt på», «komme på» (to remember), «kjempe ' +
+      'for», «sette pris på», «bestemme (seg) for/over», «stemme på». These sit a notch below the ' +
+      'more advanced/rarer idiomatic prepositions in `preposisjoner-generelt-c` — high-frequency ' +
+      'everyday collocations rather than literary or specialist ones.',
+    explanationNb:
+      'Utover de bokstavelige tids-/stedsreglene tar mange vanlige B2-verb, -substantiv og ' +
+      '-adjektiv en fast preposisjon som må læres per uttrykk, ikke utledes fra en generell regel: ' +
+      '«ta ansvar for», «ha inntrykk av», «være forberedt på», «komme på», «kjempe for», «sette ' +
+      'pris på», «bestemme (seg) for/over», «stemme på». Disse står et hakk under de mer avanserte/' +
+      'sjeldnere idiomatiske preposisjonene i `preposisjoner-generelt-c` — høyfrekvente ' +
+      'hverdagskollokasjoner snarere enn litterære eller fagspesifikke.'
+  },
+
+  'uttrykk-gjenkjenning-detgaarbra-c': {
+    id: 'uttrykk-gjenkjenning-detgaarbra-c',
+    titleEn: 'Idiom recognition — Det går bra!',
+    titleNb: 'Gjenkjenning av faste uttrykk — Det går bra!',
+    explanationEn:
+      'Recognizing what a fixed idiom or ordtak actually means and matching it to the correct ' +
+      'paraphrase — the same skill as `uttrykk-gjenkjenning-c-1/2/3`, drawn from a different, ' +
+      'smaller idiom set. Norwegian idioms rarely translate literally, so the goal is precise ' +
+      'recognition of the intended meaning, not guessing from individual words: «å få kalde ' +
+      'føtter» means getting nervous about a decision, not literally cold feet; «ikke selge ' +
+      'skinnet før bjørnen er skutt» means not promising something before it is certain.',
+    explanationNb:
+      'Å kjenne igjen hva et fast uttrykk eller ordtak faktisk betyr og matche det med riktig ' +
+      'omskriving — samme ferdighet som `uttrykk-gjenkjenning-c-1/2/3`, hentet fra et annet, ' +
+      'mindre uttrykkssett. Norske uttrykk kan sjelden oversettes direkte, så målet er presis ' +
+      'gjenkjenning av den tiltenkte betydningen, ikke gjetning ut fra enkeltord: «å få kalde ' +
+      'føtter» betyr å bli nervøs for en beslutning, ikke bokstavelig kalde føtter; «ikke selge ' +
+      'skinnet før bjørnen er skutt» betyr å ikke love noe før man er sikker.'
   }
 };
 

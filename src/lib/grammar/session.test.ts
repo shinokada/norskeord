@@ -155,6 +155,55 @@ describe('gradeGrammarAnswer', () => {
     });
     expect(gradeGrammarAnswer('Hun frøs på bryllupsdagen.', q).correct).toBe(false);
   });
+
+  // Placeholder content only, per punctuation.md Phase 1 step 4 — proves the
+  // plumbing end-to-end before real kommaregler content is written (Phase 2/3).
+  it('grades punctuation questions by exact match, preserving commas', () => {
+    const q = makeQuestion({
+      type: 'punctuation',
+      topic: 'kommaregler' as GrammarQuestion['topic'],
+      prompt: 'Hvilken setning har riktig tegnsetting?',
+      options: [
+        'Han sa at han, dessverre, ikke kunne komme.',
+        'Han sa at han dessverre ikke kunne komme.',
+        'Han sa, at han dessverre ikke kunne komme.'
+      ],
+      answer: 'Han sa at han dessverre ikke kunne komme.'
+    });
+    expect(gradeGrammarAnswer('Han sa at han dessverre ikke kunne komme.', q)).toEqual({
+      correct: true,
+      rating: 'good'
+    });
+    // Wrong comma placement must be rejected, not accepted as a nearby option.
+    expect(gradeGrammarAnswer('Han sa at han, dessverre, ikke kunne komme.', q).correct).toBe(
+      false
+    );
+  });
+
+  it('does not apply typo tolerance to a punctuation question (comma is a 1-char edit)', () => {
+    const q = makeQuestion({
+      type: 'punctuation',
+      topic: 'kommaregler' as GrammarQuestion['topic'],
+      options: ['Jeg vet ikke, om han kommer.', 'Jeg vet ikke om han kommer.'],
+      answer: 'Jeg vet ikke om han kommer.'
+    });
+    // Differs from the correct answer by exactly one comma — must NOT be
+    // accepted via the typo-tolerance path that other question types use.
+    expect(gradeGrammarAnswer('Jeg vet ikke, om han kommer.', q)).toEqual({
+      correct: false,
+      rating: 'again'
+    });
+  });
+
+  it('treats empty input as incorrect for punctuation questions', () => {
+    const q = makeQuestion({
+      type: 'punctuation',
+      topic: 'kommaregler' as GrammarQuestion['topic'],
+      options: ['Ja, det stemmer.', 'Ja det stemmer.'],
+      answer: 'Ja, det stemmer.'
+    });
+    expect(gradeGrammarAnswer('', q)).toEqual({ correct: false, rating: 'again' });
+  });
 });
 
 // ── buildGrammarSession ───────────────────────────────────────────────────────

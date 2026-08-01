@@ -123,7 +123,9 @@
     'hoflig-preteritum',
     'hypotetiske-betingelsessetninger',
     'stedsadverb-statisk-dynamisk',
-    'man-en-upersonlig-pronomen'
+    'man-en-upersonlig-pronomen',
+    // Nivå B2/C topic — punctuation — see ai-docs/implementation/punctuation.md
+    'kommaregler'
   ];
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [
@@ -131,7 +133,8 @@
     'order',
     'transform',
     'minimal-pair',
-    'multiple-choice'
+    'multiple-choice',
+    'punctuation'
   ];
 
   const filtered = $derived(
@@ -383,7 +386,7 @@
       case 'explanation':
         return type === 'minimal-pair';
       case 'options':
-        return type === 'multiple-choice';
+        return type === 'multiple-choice' || type === 'punctuation';
       default:
         return true;
     }
