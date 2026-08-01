@@ -21511,5 +21511,1196 @@
     "answer": "Reisen ga en mye ny innsikt.",
     "hint": "Bytt ut det personlige objektet «meg» med det upersonlige objektet «en».",
     "plusOnly": true
+  },
+  {
+    "id": "gq-komma-001",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Selv om det regnet, gikk vi en tur.",
+      "Selv om det regnet gikk vi en tur.",
+      "Selv om, det regnet, gikk vi en tur."
+    ],
+    "answer": "Selv om det regnet, gikk vi en tur.",
+    "hint": "Når leddsetningen står først i setningen, settes det komma rett etter den, før helsetningen fortsetter.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-002",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Vi gikk en tur selv om det regnet.",
+      "Vi gikk en tur, selv om det regnet.",
+      "Vi gikk, en tur selv om det regnet."
+    ],
+    "answer": "Vi gikk en tur selv om det regnet.",
+    "hint": "Når leddsetningen kommer etter helsetningen i stedet for før, trengs det ikke komma.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-003",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Fordi det regnet mye, ble konserten avlyst.",
+      "Fordi det regnet mye ble konserten avlyst.",
+      "Fordi det regnet, mye ble konserten avlyst."
+    ],
+    "answer": "Fordi det regnet mye, ble konserten avlyst.",
+    "hint": "Komma settes ved grensen mellom leddsetningen og helsetningen — rett etter hele leddsetningen «fordi det regnet mye», ikke midt inni den.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-004",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hvis du har tid, kan vi møtes i morgen.",
+      "Hvis du har tid kan vi møtes i morgen.",
+      "Hvis, du har tid, kan vi møtes i morgen."
+    ],
+    "answer": "Hvis du har tid, kan vi møtes i morgen.",
+    "hint": "«Hvis du har tid» er en fundamentplassert leddsetning — den skal ha komma rett etter seg, ikke etter subjunksjonen «hvis».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-005",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Etter at møtet var over, gikk alle hjem.",
+      "Etter at møtet var over gikk alle hjem.",
+      "Etter, at møtet var over, gikk alle hjem."
+    ],
+    "answer": "Etter at møtet var over, gikk alle hjem.",
+    "hint": "Subjunksjonen «etter at» innleder leddsetningen — komma skal stå etter hele leddsetningen, ikke rett etter «etter».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-006",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Når sommeren kommer, reiser vi til hytta.",
+      "Når sommeren kommer reiser vi til hytta.",
+      "Når, sommeren kommer, reiser vi til hytta."
+    ],
+    "answer": "Når sommeren kommer, reiser vi til hytta.",
+    "hint": "Fundamentplassert leddsetning + komma + helsetning — samme mønster som «selv om» og «hvis».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-007",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun kjøpte epler, bananer og pærer.",
+      "Hun kjøpte epler, bananer, og pærer.",
+      "Hun kjøpte epler bananer og pærer."
+    ],
+    "answer": "Hun kjøpte epler, bananer og pærer.",
+    "hint": "Komma mellom listeelementene, men ikke foran det siste elementet når det er bundet sammen med «og».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-008",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Vi trenger mel, sukker, egg og smør til kaken.",
+      "Vi trenger mel sukker egg og smør til kaken.",
+      "Vi trenger mel, sukker, egg, og smør til kaken."
+    ],
+    "answer": "Vi trenger mel, sukker, egg og smør til kaken.",
+    "hint": "Selv med fire listeelementer gjelder samme regel: ingen komma foran «og» + siste element.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-009",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Han snakker norsk, engelsk og litt tysk.",
+      "Han snakker norsk engelsk og litt tysk.",
+      "Han snakker norsk, engelsk, og litt tysk."
+    ],
+    "answer": "Han snakker norsk, engelsk og litt tysk.",
+    "hint": "«Litt tysk» er det siste elementet, bundet med «og» — ingen komma foran det.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-010",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "På reisen besøkte de Paris, Roma og Berlin.",
+      "På reisen besøkte de Paris Roma og Berlin.",
+      "På reisen besøkte de Paris, Roma, og Berlin."
+    ],
+    "answer": "På reisen besøkte de Paris, Roma og Berlin.",
+    "hint": "Stedsnavn i en liste følger samme regel som andre substantiv: komma mellom, ikke foran «og» + siste.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-011",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Barna lekte med ball, sykkel og hoppetau i parken.",
+      "Barna lekte med ball sykkel og hoppetau i parken.",
+      "Barna lekte med ball, sykkel, og hoppetau i parken."
+    ],
+    "answer": "Barna lekte med ball, sykkel og hoppetau i parken.",
+    "hint": "Tre elementer i en liste: komma etter de to første, ingen komma foran «og hoppetau».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-012",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun er både snill, morsom og klok.",
+      "Hun er både snill morsom og klok.",
+      "Hun er både snill, morsom, og klok."
+    ],
+    "answer": "Hun er både snill, morsom og klok.",
+    "hint": "Adjektiver i en liste følger samme kommaregel som substantiv — ingen komma foran «og klok».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-013",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Min bror, som bor i Bergen, jobber som lærer.",
+      "Min bror som bor i Bergen, jobber som lærer.",
+      "Min bror, som bor i Bergen jobber som lærer."
+    ],
+    "answer": "Min bror, som bor i Bergen, jobber som lærer.",
+    "hint": "En innskutt setning midt i setningen skal ha komma på begge sider, ikke bare én.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-014",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Oslo, hovedstaden i Norge, har mange museer.",
+      "Oslo hovedstaden i Norge, har mange museer.",
+      "Oslo, hovedstaden i Norge har mange museer."
+    ],
+    "answer": "Oslo, hovedstaden i Norge, har mange museer.",
+    "hint": "«Hovedstaden i Norge» er en apposisjon som forklarer «Oslo» — sett av med komma på begge sider.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-015",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Kari, søsteren min, kommer på besøk i morgen.",
+      "Kari søsteren min, kommer på besøk i morgen.",
+      "Kari, søsteren min kommer på besøk i morgen."
+    ],
+    "answer": "Kari, søsteren min, kommer på besøk i morgen.",
+    "hint": "Apposisjonen «søsteren min» skal ha komma både før og etter når den står midt i setningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-016",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Boken, som jeg leste i sommer, var fantastisk.",
+      "Boken som jeg leste i sommer, var fantastisk.",
+      "Boken, som jeg leste i sommer var fantastisk."
+    ],
+    "answer": "Boken, som jeg leste i sommer, var fantastisk.",
+    "hint": "Den innskutte relativsetningen «som jeg leste i sommer» skal ha komma på begge sider.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-017",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Læreren, en erfaren pedagog, forklarte reglene godt.",
+      "Læreren en erfaren pedagog, forklarte reglene godt.",
+      "Læreren, en erfaren pedagog forklarte reglene godt."
+    ],
+    "answer": "Læreren, en erfaren pedagog, forklarte reglene godt.",
+    "hint": "Apposisjonen «en erfaren pedagog» er skutt inn midt i setningen og skal derfor ha komma på begge sider.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-018",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun giftet seg med Per, en gammel venn av familien.",
+      "Hun giftet seg med Per en gammel venn av familien.",
+      "Hun giftet seg med Per, en gammel venn, av familien."
+    ],
+    "answer": "Hun giftet seg med Per, en gammel venn av familien.",
+    "hint": "Når apposisjonen står til slutt i setningen, trengs bare ett komma foran den — punktumet avslutter resten.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-019",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Byen ligger nær Bergen, den nest største byen i Norge.",
+      "Byen ligger nær Bergen den nest største byen i Norge.",
+      "Byen ligger nær Bergen, den nest største, byen i Norge."
+    ],
+    "answer": "Byen ligger nær Bergen, den nest største byen i Norge.",
+    "hint": "Apposisjonen «den nest største byen i Norge» hører sammen og skal ikke deles med et ekstra komma inni.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-020",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Vi besøkte Nidarosdomen, en av Norges mest kjente kirker.",
+      "Vi besøkte Nidarosdomen en av Norges mest kjente kirker.",
+      "Vi besøkte, Nidarosdomen en av Norges mest kjente kirker."
+    ],
+    "answer": "Vi besøkte Nidarosdomen, en av Norges mest kjente kirker.",
+    "hint": "Komma settes foran apposisjonen «en av Norges mest kjente kirker», ikke foran substantivet den forklarer.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-021",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun snakket med naboen, en hyggelig eldre mann.",
+      "Hun snakket med naboen en hyggelig eldre mann.",
+      "Hun snakket, med naboen en hyggelig eldre mann."
+    ],
+    "answer": "Hun snakket med naboen, en hyggelig eldre mann.",
+    "hint": "Apposisjonen «en hyggelig eldre mann» forklarer «naboen» og skal skilles ut med komma foran.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-022",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Forfatteren, som skrev boken i 1995, mottok flere priser.",
+      "Forfatteren som skrev boken i 1995, mottok flere priser.",
+      "Forfatteren, som skrev boken i 1995 mottok flere priser."
+    ],
+    "answer": "Forfatteren, som skrev boken i 1995, mottok flere priser.",
+    "hint": "Den innskutte leddsetningen skal lukkes med komma før hovedsetningen fortsetter — ikke bare åpnes.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-023",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "«Jeg kommer straks,» sa hun.",
+      "«Jeg kommer straks» sa hun.",
+      "«Jeg kommer, straks» sa hun."
+    ],
+    "answer": "«Jeg kommer straks,» sa hun.",
+    "hint": "Når en gjengivelse følger et direkte sitat, settes komma rett før det avsluttende anførselstegnet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-024",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun sa: «Jeg kommer straks.»",
+      "Hun sa «Jeg kommer straks.»",
+      "Hun sa, «Jeg kommer straks.»"
+    ],
+    "answer": "Hun sa: «Jeg kommer straks.»",
+    "hint": "Når den innledende setningen kommer først, brukes kolon foran sitatet — ikke komma.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-025",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "«Jeg tror,» sa hun, «at det blir sol i morgen.»",
+      "«Jeg tror» sa hun «at det blir sol i morgen.»",
+      "«Jeg tror,» sa hun «at det blir sol i morgen.»"
+    ],
+    "answer": "«Jeg tror,» sa hun, «at det blir sol i morgen.»",
+    "hint": "Når gjengivelsen splitter sitatet i to deler, skal den ha komma på begge sider av seg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-026",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "«Kan du hjelpe meg?» spurte han.",
+      "«Kan du hjelpe meg,» spurte han.",
+      "«Kan du hjelpe meg?,» spurte han."
+    ],
+    "answer": "«Kan du hjelpe meg?» spurte han.",
+    "hint": "Spørsmålstegnet avslutter allerede sitatet — det skal ikke i tillegg settes komma.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-027",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": ["«Se opp!» ropte hun.", "«Se opp,» ropte hun.", "«Se opp!,» ropte hun."],
+    "answer": "«Se opp!» ropte hun.",
+    "hint": "Utropstegnet avslutter sitatet på samme måte som spørsmålstegnet — ikke legg til komma i tillegg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-028",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Læreren sa: «Alle må levere oppgaven i morgen.»",
+      "Læreren sa, «Alle må levere oppgaven i morgen.»",
+      "Læreren sa «Alle må levere oppgaven i morgen.»"
+    ],
+    "answer": "Læreren sa: «Alle må levere oppgaven i morgen.»",
+    "hint": "En innledende gjengivelse foran et sitat markeres med kolon, ikke komma eller ingenting.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-029",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "«Vi drar klokka ti,» forklarte faren.",
+      "«Vi drar klokka ti» forklarte faren.",
+      "«Vi drar, klokka ti,» forklarte faren."
+    ],
+    "answer": "«Vi drar klokka ti,» forklarte faren.",
+    "hint": "Komma settes bare ved grensen mellom sitatet og gjengivelsen, ikke inni selve sitatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-030",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "«Jeg vet ikke,» svarte hun, «hvorfor det skjedde.»",
+      "«Jeg vet ikke» svarte hun «hvorfor det skjedde.»",
+      "«Jeg vet ikke,» svarte hun «hvorfor det skjedde.»"
+    ],
+    "answer": "«Jeg vet ikke,» svarte hun, «hvorfor det skjedde.»",
+    "hint": "En midtstilt gjengivelse som splitter sitatet, skal ha komma både foran og etter seg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-031",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Moren spurte: «Har du gjort leksene dine?»",
+      "Moren spurte, «Har du gjort leksene dine?»",
+      "Moren spurte «Har du gjort leksene dine?»"
+    ],
+    "answer": "Moren spurte: «Har du gjort leksene dine?»",
+    "hint": "Kolon innleder sitatet når gjengivelsen kommer først i setningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-032",
+    "topic": "kommaregler",
+    "cefr": "C",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "«Det er kaldt i dag,» sa naboen.",
+      "«Det er kaldt i dag» sa naboen.",
+      "«Det er, kaldt i dag,» sa naboen."
+    ],
+    "answer": "«Det er kaldt i dag,» sa naboen.",
+    "hint": "Komma hører hjemme ved grensen mellom sitatet og gjengivelsen, ikke midt inni sitatsetningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-033",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": ["Hun er trøtt, men glad.", "Hun er trøtt men glad.", "Hun er, trøtt men glad."],
+    "answer": "Hun er trøtt, men glad.",
+    "hint": "Komma settes alltid foran «men» når det binder sammen to ledd, selv i en kort setning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-034",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Han ble hjemme, for han var syk.",
+      "Han ble hjemme for han var syk.",
+      "Han ble hjemme, for, han var syk."
+    ],
+    "answer": "Han ble hjemme, for han var syk.",
+    "hint": "Komma settes alltid foran «for» når det innleder en årsak i en ny helsetning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-035",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Vi ville reise, men flyet ble kansellert.",
+      "Vi ville reise men flyet ble kansellert.",
+      "Vi ville, reise men flyet ble kansellert."
+    ],
+    "answer": "Vi ville reise, men flyet ble kansellert.",
+    "hint": "«Men» krever komma foran seg, uansett hvor lange eller korte helsetningene er.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-036",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun ringte ikke, for hun hadde glemt mobilen.",
+      "Hun ringte ikke for hun hadde glemt mobilen.",
+      "Hun ringte, ikke for hun hadde glemt mobilen."
+    ],
+    "answer": "Hun ringte ikke, for hun hadde glemt mobilen.",
+    "hint": "«For» som årsakskonjunksjon skal alltid ha komma foran seg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-037",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Han liker kaffe, men foretrekker te.",
+      "Han liker kaffe men foretrekker te.",
+      "Han liker, kaffe men foretrekker te."
+    ],
+    "answer": "Han liker kaffe, men foretrekker te.",
+    "hint": "Komma foran «men» er obligatorisk, også når begge sider deler samme subjekt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-038",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun spiste ikke frokost, for hun var for sen.",
+      "Hun spiste ikke frokost for hun var for sen.",
+      "Hun spiste, ikke frokost for hun var for sen."
+    ],
+    "answer": "Hun spiste ikke frokost, for hun var for sen.",
+    "hint": "«For» tar alltid komma foran seg når det binder sammen to helsetninger.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-039",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Jeg spiste eple og pære.",
+      "Jeg spiste eple, og pære.",
+      "Jeg, spiste eple og pære."
+    ],
+    "answer": "Jeg spiste eple og pære.",
+    "hint": "«Og» som binder sammen to enkle ord eller fraser, tar aldri komma foran seg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-040",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun kjøpte melk og brød.",
+      "Hun kjøpte melk, og brød.",
+      "Hun, kjøpte melk og brød."
+    ],
+    "answer": "Hun kjøpte melk og brød.",
+    "hint": "Ulikt «men»/«for» skal «og» mellom to enkle ledd aldri ha komma foran seg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-041",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Vil du ha te eller kaffe?",
+      "Vil du ha te, eller kaffe?",
+      "Vil du, ha te eller kaffe?"
+    ],
+    "answer": "Vil du ha te eller kaffe?",
+    "hint": "«Eller» mellom to enkle alternativer tar aldri komma foran seg, i motsetning til «men»/«for».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-042",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Barna lo og lekte hele dagen.",
+      "Barna lo, og lekte hele dagen.",
+      "Barna, lo og lekte hele dagen."
+    ],
+    "answer": "Barna lo og lekte hele dagen.",
+    "hint": "«Og» mellom to verbfraser med samme subjekt tar ikke komma foran seg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-001",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Vi har unngått forsinkelser hele sesongen så langt - «bank i bordet»!",
+    "options": [
+      "vi håper det fortsetter å gå bra, og banker i bordet for ikke å friste skjebnen",
+      "vi har testet alle bordene i lokalet for å se om de er solide",
+      "vi banker høyt for å tiltrekke oss oppmerksomhet"
+    ],
+    "answer": "vi håper det fortsetter å gå bra, og banker i bordet for ikke å friste skjebnen",
+    "hint": "«Bank i bordet» er et gammelt overtro-uttrykk man sier for at ikke noe vondt skal skje videre.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-002",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Kelneren fylte glasset helt til kanten og lo: «det er ikke fullt før det renner over»!",
+    "options": [
+      "et humoristisk uttrykk om at man fyller noe helt til randen, uansett om det er lurt",
+      "et uttrykk for at glasset aldri kan bli helt fullt",
+      "en advarsel om at man må drikke fort før det blir kaldt"
+    ],
+    "answer": "et humoristisk uttrykk om at man fyller noe helt til randen, uansett om det er lurt",
+    "hint": "Uttrykket brukes humoristisk når man fyller noe helt til randen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-003",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hun «falt i staver» da hun leste testamentet og forsto hvor mye hun hadde arvet.",
+    "options": [
+      "hun ble så overrasket at hun ikke klarte å si noe fornuftig",
+      "hun begynte å gråte av glede",
+      "hun skrev straks et takkebrev"
+    ],
+    "answer": "hun ble så overrasket at hun ikke klarte å si noe fornuftig",
+    "hint": "«Å falle i staver» betyr å bli så overrasket at man blir målløs.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-004",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Alle «gikk som på nåler» mens de ventet på eksamensresultatene.",
+    "options": [
+      "alle var svært anspente og nervøse",
+      "alle gikk sakte for å ikke skade beina",
+      "alle var i svært godt humør"
+    ],
+    "answer": "alle var svært anspente og nervøse",
+    "hint": "«Gå som på nåler» betyr å være svært anspent og nervøs.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-005",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Under forhandlingene måtte hun «holde tungen rett i munnen» for ikke å love for mye.",
+    "options": [
+      "hun måtte konsentrere seg svært nøye for ikke å gjøre feil",
+      "hun måtte snakke veldig sakte og tydelig",
+      "hun måtte holde pusten mens hun snakket"
+    ],
+    "answer": "hun måtte konsentrere seg svært nøye for ikke å gjøre feil",
+    "hint": "Uttrykket betyr å konsentrere seg nøye for ikke å gjøre feil når man sier noe vanskelig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-006",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Politikeren «lovet velgerne gull og grønne skoger» før valget.",
+    "options": [
+      "han lovet store, urealistiske ting som umulig kan innfris",
+      "han ga velgerne gaver av gull",
+      "han lovet å plante flere trær i landet"
+    ],
+    "answer": "han lovet store, urealistiske ting som umulig kan innfris",
+    "hint": "«Love gull og grønne skoger» betyr å love noe urealistisk som ikke kan holdes.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-007",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Da diskusjonen ble opphetet, valgte hun å tie - «å tale er sølv, å tie er gull».",
+    "options": [
+      "det er ofte klokere å være stille og lytte enn å snakke",
+      "sølv er mer verdt enn gull i denne sammenhengen",
+      "man bør alltid si sin mening høyt og tydelig"
+    ],
+    "answer": "det er ofte klokere å være stille og lytte enn å snakke",
+    "hint": "Ordtaket betyr at det ofte er klokere å være stille enn å snakke.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-008",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "På middagen med de to parene følte han seg «som femte hjul på vogna».",
+    "options": [
+      "han følte seg overflødig, som om han ikke egentlig trengtes der",
+      "han følte seg som den viktigste personen i selskapet",
+      "han var den femte gjesten som kom til middagen"
+    ],
+    "answer": "han følte seg overflødig, som om han ikke egentlig trengtes der",
+    "hint": "Uttrykket betyr å føle seg overflødig eller til overs.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-009",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Vennene deres merket at det var «knute på tråden» lenge før bruddet.",
+    "options": [
+      "et problem eller en konflikt i et forhold mellom to mennesker",
+      "en fysisk knute i en tråd de brukte til å sy",
+      "en plutselig lykke i forholdet"
+    ],
+    "answer": "et problem eller en konflikt i et forhold mellom to mennesker",
+    "hint": "«Knute på tråden» betyr et problem eller en konflikt i et forhold.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-010",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Billettene ble revet bort på minutter - «den som kommer først til mølla får først male».",
+    "options": [
+      "den som er tidligst ute, får fordelen eller muligheten først",
+      "den som maler kornet, må også betale mest",
+      "man må alltid vente på tur uansett hvor tidlig man kommer"
+    ],
+    "answer": "den som er tidligst ute, får fordelen eller muligheten først",
+    "hint": "Uttrykket betyr at den som er tidligst ute, får fordelen først.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-011",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hun angret på flyttingen - «gresset er ikke alltid grønnere på den andre siden av gjerdet».",
+    "options": [
+      "man skal ikke tro at andres liv nødvendigvis er bedre enn ens eget",
+      "gresset vokser alltid bedre i naboens hage",
+      "man bør alltid flytte dit gresset ser finere ut"
+    ],
+    "answer": "man skal ikke tro at andres liv nødvendigvis er bedre enn ens eget",
+    "hint": "Uttrykket minner om at andres situasjon ikke nødvendigvis er bedre enn ens egen, selv om den kan se slik ut.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-012",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Politiet fant ingen bevis mot ham - han «hadde rent mel i posen».",
+    "options": [
+      "å ikke ha gjort noe galt; å være uskyldig i en sak",
+      "å ha kjøpt godt mel til bakverk",
+      "å ha skjult noe ulovlig svært godt"
+    ],
+    "answer": "å ikke ha gjort noe galt; å være uskyldig i en sak",
+    "hint": "«Ha rent mel i posen» betyr å være uskyldig og ikke ha gjort noe galt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-013",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Legen sa at den smertefulle behandlingen var nødvendig - «ondt skal ondt fordrive».",
+    "options": [
+      "noen ganger må man bruke en smertefull eller ubehagelig løsning for å bli kvitt et problem",
+      "man skal aldri behandle vondt med noe som gjør enda mer vondt",
+      "onde mennesker driver andre onde mennesker bort"
+    ],
+    "answer": "noen ganger må man bruke en smertefull eller ubehagelig løsning for å bli kvitt et problem",
+    "hint": "Gammelt folketro-uttrykk brukt trøstende når en smertefull behandling er nødvendig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-014",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "De to kollegene bestemte seg for å «ta et oppgjør på kammeret» i stedet for foran hele avdelingen.",
+    "options": [
+      "å ta en alvorlig, privat samtale om et problem uten at andre er til stede",
+      "å møtes på et bestemt kontor for å signere papirer",
+      "å diskutere problemet åpent foran alle kollegene"
+    ],
+    "answer": "å ta en alvorlig, privat samtale om et problem uten at andre er til stede",
+    "hint": "«Ta et oppgjør på kammeret» betyr å ta en alvorlig og privat samtale om et problem.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-uttr-dgb-c-015",
+    "topic": "uttrykk-gjenkjenning-detgaarbra-c",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hun fortalte ham aldri om den lille bilulykken - «det man ikke vet, har man ikke vondt av».",
+    "options": [
+      "noen ganger er det bedre å ikke fortelle hele sannheten, fordi den kan skade mer enn den gjør godt",
+      "man bør alltid fortelle absolutt alt til partneren sin",
+      "det er umulig å skjule noe for lenge"
+    ],
+    "answer": "noen ganger er det bedre å ikke fortelle hele sannheten, fordi den kan skade mer enn den gjør godt",
+    "hint": "Uttrykket betyr at det noen ganger er bedre å ikke vite alt, fordi sannheten kan skade mer enn den gjør godt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-001",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig adjektiv.",
+    "sentence": "Han er en _____ skuespiller som tar arbeidet sitt på største alvor.",
+    "words": ["seriøs", "alvorlig"],
+    "answer": "seriøs",
+    "hint": "«Seriøs» beskriver noen som er profesjonell og tar noe på alvor i positiv forstand, mens «alvorlig» ofte betyr streng eller dyster i uttrykket.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-002",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig adjektiv.",
+    "sentence": "Læreren så _____ ut da hun leste opp karakterene.",
+    "words": ["alvorlig", "seriøs"],
+    "answer": "alvorlig",
+    "hint": "«Alvorlig» brukes om et ansiktsuttrykk eller en stemning som virker streng eller dyster.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-003",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig substantiv.",
+    "sentence": "Jeg har ikke _____ til å lage middag i kveld.",
+    "words": ["tid", "time", "gang"],
+    "answer": "tid",
+    "hint": "«Tid» brukes om tid generelt (utellelig), som her hvor det betyr «anledning/mulighet».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-004",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig substantiv.",
+    "sentence": "Møtet varte i over en _____.",
+    "words": ["time", "tid", "gang"],
+    "answer": "time",
+    "hint": "«Time» betyr en klokketime - en avgrenset periode på 60 minutter.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-005",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig substantiv.",
+    "sentence": "Vi har vært i Paris tre _____.",
+    "words": ["ganger", "tider", "timer"],
+    "answer": "ganger",
+    "hint": "«Gang» (her i flertall «ganger») brukes om antall forekomster, ikke om «tider».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-006",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig substantiv.",
+    "sentence": "Restauranten måtte søke om _____ for å kunne selge alkohol.",
+    "words": ["bevilling", "bevilgning"],
+    "answer": "bevilling",
+    "hint": "«Bevilling» er en offentlig tillatelse (f.eks. skjenkebevilling), mens «bevilgning» er en pengesum som blir tildelt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-007",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig substantiv.",
+    "sentence": "Kommunestyret vedtok en ny _____ til skolebygging.",
+    "words": ["bevilgning", "bevilling"],
+    "answer": "bevilgning",
+    "hint": "«Bevilgning» er penger som blir tildelt et formål, i motsetning til «bevilling» som er en tillatelse.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-008",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig substantiv.",
+    "sentence": "Vi hadde utrolig _____ som fant en parkeringsplass midt i sentrum.",
+    "words": ["flaks", "sjanse"],
+    "answer": "flaks",
+    "hint": "«Flaks» betyr hell/lykke, mens «sjanse» betyr mulighet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-009",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig substantiv.",
+    "sentence": "Dette er kanskje din siste _____ til å søke jobben.",
+    "words": ["sjanse", "flaks"],
+    "answer": "sjanse",
+    "hint": "«Sjanse» betyr mulighet/anledning, ikke hell.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-010",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Etter forhandlingsbruddet ryddet begge parter pultene sine - avtalen hadde «ryket».",
+    "options": [
+      "avtalen hadde falt igjennom / blitt kansellert",
+      "avtalen hadde begynt å brenne",
+      "avtalen hadde blitt fornyet"
+    ],
+    "answer": "avtalen hadde falt igjennom / blitt kansellert",
+    "hint": "«Ryke» kan bety at noe (en avtale, en plan) faller igjennom eller blir kansellert.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-011",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Han strakk seg for langt etter ballen, og senen i skulderen «røk».",
+    "options": ["senen sprakk / gikk i stykker", "senen begynte å brenne", "senen ble sterkere"],
+    "answer": "senen sprakk / gikk i stykker",
+    "hint": "«Ryke» kan også bety at noe fysisk (en snor, en sene) ryker/går i stykker.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-012",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Sola var så sterk at hun måtte _____ for å se stien.",
+    "words": ["myse", "glane"],
+    "answer": "myse",
+    "hint": "«Myse» betyr å se med halvlukkede øyne, ofte pga. sterkt lys, mens «glane» betyr å stirre nysgjerrig eller uhøflig på noen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-013",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Han _____ noe uforståelig i skjegget da han gikk forbi.",
+    "words": ["mumlet", "hvisket"],
+    "answer": "mumlet",
+    "hint": "«Mumle» betyr å snakke utydelig og lavt, ofte usammenhengende, mens «hviske» betyr å snakke bevisst lavt for ikke å bli hørt av andre.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-014",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Den gamle mannen _____ sakte bortover gangen med tøflene sine.",
+    "words": ["subbet", "spankulerte"],
+    "answer": "subbet",
+    "hint": "«Subbe» betyr å gå sakte og slepende, mens «spankulere» betyr å gå stolt og selvsikkert.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-015",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Barnet _____ av redsel da det så edderkoppen.",
+    "words": ["hylte", "brølte"],
+    "answer": "hylte",
+    "hint": "«Hyle» brukes ofte om et skarpt, høyt skrik av frykt eller smerte, mens «brøle» ofte brukes om en dyp, kraftig lyd.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-016",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Hele klassen «måpte» da læreren fortalte at prøven var avlyst.",
+    "options": [
+      "de ble målløse av overraskelse, med åpen munn",
+      "de rullet med øynene av irritasjon",
+      "de klappet entusiastisk"
+    ],
+    "answer": "de ble målløse av overraskelse, med åpen munn",
+    "hint": "«Måpe» betyr å stå med åpen munn av forbauselse.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-017",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Han _____ seg før han begynte talen, for å rydde stemmen.",
+    "words": ["harket", "hostet"],
+    "answer": "harket",
+    "hint": "«Harke» betyr å rydde halsen med en grov lyd før man snakker, mens «hoste» er en ufrivillig reaksjon, ofte ved forkjølelse.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-018",
+    "topic": "nyanser-uttrykk",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Jeg er «såpass» fornøyd med resultatet at jeg ikke vil klage.",
+    "options": [
+      "fornøyd nok, om enn ikke overveldende begeistret",
+      "ekstremt og overveldende fornøyd",
+      "overhodet ikke fornøyd"
+    ],
+    "answer": "fornøyd nok, om enn ikke overveldende begeistret",
+    "hint": "«Såpass» betyr «i hvert fall/i det minste denne graden av», ofte for å nedtone eller kvalifisere en påstand.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-001",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «ta ansvar for».",
+    "sentence": "Som prosjektleder må du ta ansvar _____ hele budsjettet.",
+    "words": ["for", "om", "over"],
+    "answer": "for",
+    "hint": "«Ta ansvar for» er et fast uttrykk og tar alltid «for».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-002",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «ha inntrykk av».",
+    "sentence": "Jeg har inntrykk _____ at hun trives godt i den nye jobben.",
+    "words": ["av", "om", "til"],
+    "answer": "av",
+    "hint": "«Ha inntrykk av» tar «av», ikke «om» eller «til».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-003",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «være forberedt på».",
+    "sentence": "Vi må være forberedt _____ at møtet kan bli flyttet på kort varsel.",
+    "words": ["på", "for", "til"],
+    "answer": "på",
+    "hint": "«Være forberedt på» tar alltid «på».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-004",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «komme på» (å huske noe).",
+    "sentence": "Jeg prøvde å huske navnet hennes, men kom rett og slett ikke _____ det.",
+    "words": ["på", "i", "over"],
+    "answer": "på",
+    "hint": "«Komme på» i betydningen å huske noe plutselig, tar «på».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-005",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «kjempe for».",
+    "sentence": "Fagforeningen kjempet _____ bedre lønnsvilkår i flere tiår.",
+    "words": ["for", "om", "mot"],
+    "answer": "for",
+    "hint": "«Kjempe for» (å arbeide iherdig for noe man ønsker) tar «for»; «kjempe mot» betyr det motsatte.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-006",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge, med det faste uttrykket «sette pris på» (V2-ordstilling).",
+    "tokens": ["Vi", "setter", "stor", "pris", "på", "at", "du", "hjalp", "oss"],
+    "answer": "Vi setter stor pris på at du hjalp oss.",
+    "alternates": ["Vi setter stor pris på at du hjalp oss"],
+    "hint": "«Sette pris på» (å verdsette) følger vanlig V2-ordstilling: subjekt, verb, deretter resten av setningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-007",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «bestemme seg for».",
+    "sentence": "Til slutt bestemte hun seg _____ å søke jobben i utlandet.",
+    "words": ["for", "om", "til"],
+    "answer": "for",
+    "hint": "«Bestemme seg for» tar «for» når man snakker om et valg man tar.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-008",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «stemme på».",
+    "sentence": "Mange unge har aldri stemt _____ et politisk parti før dette valget.",
+    "words": ["på", "for", "om"],
+    "answer": "på",
+    "hint": "«Stemme på» (i et valg) tar «på», ikke «for».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-009",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Naboene var svært skeptiske til planene om en ny motorvei gjennom bygda.",
+    "optionB": "Naboene var svært skeptiske for planene om en ny motorvei gjennom bygda.",
+    "answer": "A",
+    "explanation": "«Skeptisk til» er det faste uttrykket for å uttrykke tvil eller mistro overfor noe; «skeptisk for» brukes ikke.",
+    "hint": "Legg merke til hvilken preposisjon som følger adjektivet «skeptisk».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-010",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for det faste uttrykket «ta hånd om».",
+    "sentence": "Bestemor tok alltid godt hånd _____ barnebarna når foreldrene var på jobb.",
+    "words": ["om", "av", "for"],
+    "answer": "om",
+    "hint": "«Ta hånd om» (å ta seg av/passe på) tar «om».",
+    "plusOnly": true
   }
 ]

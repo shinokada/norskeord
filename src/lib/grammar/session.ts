@@ -20,6 +20,15 @@ export function normalizeAnswer(s: string): string {
 const TYPO_MIN_LEN = 4;
 
 /**
+ * Same as normalizeAnswer but keeps punctuation — used for 'punctuation' questions,
+ * where the punctuation is the thing being tested and must not be erased before
+ * comparing.
+ */
+export function normalizeAnswerKeepPunctuation(s: string): string {
+  return s.toLowerCase().replace(/\s+/g, ' ').trim();
+}
+
+/**
  * Grades a typed answer against a grammar question.
  * - exact (normalised) match against answer/alternates → correct, 'good'
  * - within 1 edit of a candidate that is at least TYPO_MIN_LEN chars → correct, 'hard'
@@ -29,11 +38,26 @@ const TYPO_MIN_LEN = 4;
  * full text of the tapped option (see MultipleChoiceQuestion.svelte), which is
  * matched against `answer` the same way as every other type — `answer` must be
  * one of the option strings verbatim.
+ *
+ * 'punctuation' questions are graded separately, preserving punctuation and
+ * disabling the typo-tolerance fallback entirely — a missing/misplaced comma is
+ * exactly a 1-character edit, so leniency here would defeat the question.
  */
 export function gradeGrammarAnswer(
   input: string,
   question: GrammarQuestion
 ): { correct: boolean; rating: FSRSRating } {
+  if (question.type === 'punctuation') {
+    const norm = normalizeAnswerKeepPunctuation(input);
+    if (!norm) return { correct: false, rating: 'again' };
+    const candidates = [question.answer, ...(question.alternates ?? [])].map(
+      normalizeAnswerKeepPunctuation
+    );
+    return candidates.includes(norm)
+      ? { correct: true, rating: 'good' }
+      : { correct: false, rating: 'again' };
+  }
+
   const norm = normalizeAnswer(input);
   if (!norm) return { correct: false, rating: 'again' };
 
