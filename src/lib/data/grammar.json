@@ -21908,11 +21908,7 @@
     "cefr": "C",
     "type": "punctuation",
     "prompt": "Velg setningen med riktig tegnsetting.",
-    "options": [
-      "«Se opp!» ropte hun.",
-      "«Se opp,» ropte hun.",
-      "«Se opp!,» ropte hun."
-    ],
+    "options": ["«Se opp!» ropte hun.", "«Se opp,» ropte hun.", "«Se opp!,» ropte hun."],
     "answer": "«Se opp!» ropte hun.",
     "hint": "Utropstegnet avslutter sitatet på samme måte som spørsmålstegnet — ikke legg til komma i tillegg.",
     "plusOnly": true
@@ -21998,11 +21994,7 @@
     "cefr": "B2",
     "type": "punctuation",
     "prompt": "Velg setningen med riktig tegnsetting.",
-    "options": [
-      "Hun er trøtt, men glad.",
-      "Hun er trøtt men glad.",
-      "Hun er, trøtt men glad."
-    ],
+    "options": ["Hun er trøtt, men glad.", "Hun er trøtt men glad.", "Hun er, trøtt men glad."],
     "answer": "Hun er trøtt, men glad.",
     "hint": "Komma settes alltid foran «men» når det binder sammen to ledd, selv i en kort setning.",
     "plusOnly": true
@@ -22374,10 +22366,7 @@
     "type": "fill",
     "prompt": "Velg riktig adjektiv.",
     "sentence": "Han er en _____ skuespiller som tar arbeidet sitt på største alvor.",
-    "words": [
-      "seriøs",
-      "alvorlig"
-    ],
+    "words": ["seriøs", "alvorlig"],
     "answer": "seriøs",
     "hint": "«Seriøs» beskriver noen som er profesjonell og tar noe på alvor i positiv forstand, mens «alvorlig» ofte betyr streng eller dyster i uttrykket.",
     "plusOnly": true
@@ -22389,10 +22378,7 @@
     "type": "fill",
     "prompt": "Velg riktig adjektiv.",
     "sentence": "Læreren så _____ ut da hun leste opp karakterene.",
-    "words": [
-      "alvorlig",
-      "seriøs"
-    ],
+    "words": ["alvorlig", "seriøs"],
     "answer": "alvorlig",
     "hint": "«Alvorlig» brukes om et ansiktsuttrykk eller en stemning som virker streng eller dyster.",
     "plusOnly": true
@@ -22404,11 +22390,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantiv.",
     "sentence": "Jeg har ikke _____ til å lage middag i kveld.",
-    "words": [
-      "tid",
-      "time",
-      "gang"
-    ],
+    "words": ["tid", "time", "gang"],
     "answer": "tid",
     "hint": "«Tid» brukes om tid generelt (utellelig), som her hvor det betyr «anledning/mulighet».",
     "plusOnly": true
@@ -22420,11 +22402,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantiv.",
     "sentence": "Møtet varte i over en _____.",
-    "words": [
-      "time",
-      "tid",
-      "gang"
-    ],
+    "words": ["time", "tid", "gang"],
     "answer": "time",
     "hint": "«Time» betyr en klokketime - en avgrenset periode på 60 minutter.",
     "plusOnly": true
@@ -22436,11 +22414,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantiv.",
     "sentence": "Vi har vært i Paris tre _____.",
-    "words": [
-      "ganger",
-      "tider",
-      "timer"
-    ],
+    "words": ["ganger", "tider", "timer"],
     "answer": "ganger",
     "hint": "«Gang» (her i flertall «ganger») brukes om antall forekomster, ikke om «tider».",
     "plusOnly": true
@@ -22452,10 +22426,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantiv.",
     "sentence": "Restauranten måtte søke om _____ for å kunne selge alkohol.",
-    "words": [
-      "bevilling",
-      "bevilgning"
-    ],
+    "words": ["bevilling", "bevilgning"],
     "answer": "bevilling",
     "hint": "«Bevilling» er en offentlig tillatelse (f.eks. skjenkebevilling), mens «bevilgning» er en pengesum som blir tildelt.",
     "plusOnly": true
@@ -22467,10 +22438,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantiv.",
     "sentence": "Kommunestyret vedtok en ny _____ til skolebygging.",
-    "words": [
-      "bevilgning",
-      "bevilling"
-    ],
+    "words": ["bevilgning", "bevilling"],
     "answer": "bevilgning",
     "hint": "«Bevilgning» er penger som blir tildelt et formål, i motsetning til «bevilling» som er en tillatelse.",
     "plusOnly": true
@@ -22482,10 +22450,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantiv.",
     "sentence": "Vi hadde utrolig _____ som fant en parkeringsplass midt i sentrum.",
-    "words": [
-      "flaks",
-      "sjanse"
-    ],
+    "words": ["flaks", "sjanse"],
     "answer": "flaks",
     "hint": "«Flaks» betyr hell/lykke, mens «sjanse» betyr mulighet.",
     "plusOnly": true
@@ -22497,10 +22462,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantiv.",
     "sentence": "Dette er kanskje din siste _____ til å søke jobben.",
-    "words": [
-      "sjanse",
-      "flaks"
-    ],
+    "words": ["sjanse", "flaks"],
     "answer": "sjanse",
     "hint": "«Sjanse» betyr mulighet/anledning, ikke hell.",
     "plusOnly": true
@@ -22526,11 +22488,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Han strakk seg for langt etter ballen, og senen i skulderen «røk».",
-    "options": [
-      "senen sprakk / gikk i stykker",
-      "senen begynte å brenne",
-      "senen ble sterkere"
-    ],
+    "options": ["senen sprakk / gikk i stykker", "senen begynte å brenne", "senen ble sterkere"],
     "answer": "senen sprakk / gikk i stykker",
     "hint": "«Ryke» kan også bety at noe fysisk (en snor, en sene) ryker/går i stykker.",
     "plusOnly": true
@@ -22542,10 +22500,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Sola var så sterk at hun måtte _____ for å se stien.",
-    "words": [
-      "myse",
-      "glane"
-    ],
+    "words": ["myse", "glane"],
     "answer": "myse",
     "hint": "«Myse» betyr å se med halvlukkede øyne, ofte pga. sterkt lys, mens «glane» betyr å stirre nysgjerrig eller uhøflig på noen.",
     "plusOnly": true
@@ -22557,10 +22512,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Han _____ noe uforståelig i skjegget da han gikk forbi.",
-    "words": [
-      "mumlet",
-      "hvisket"
-    ],
+    "words": ["mumlet", "hvisket"],
     "answer": "mumlet",
     "hint": "«Mumle» betyr å snakke utydelig og lavt, ofte usammenhengende, mens «hviske» betyr å snakke bevisst lavt for ikke å bli hørt av andre.",
     "plusOnly": true
@@ -22572,10 +22524,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Den gamle mannen _____ sakte bortover gangen med tøflene sine.",
-    "words": [
-      "subbet",
-      "spankulerte"
-    ],
+    "words": ["subbet", "spankulerte"],
     "answer": "subbet",
     "hint": "«Subbe» betyr å gå sakte og slepende, mens «spankulere» betyr å gå stolt og selvsikkert.",
     "plusOnly": true
@@ -22587,10 +22536,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Barnet _____ av redsel da det så edderkoppen.",
-    "words": [
-      "hylte",
-      "brølte"
-    ],
+    "words": ["hylte", "brølte"],
     "answer": "hylte",
     "hint": "«Hyle» brukes ofte om et skarpt, høyt skrik av frykt eller smerte, mens «brøle» ofte brukes om en dyp, kraftig lyd.",
     "plusOnly": true
@@ -22617,10 +22563,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Han _____ seg før han begynte talen, for å rydde stemmen.",
-    "words": [
-      "harket",
-      "hostet"
-    ],
+    "words": ["harket", "hostet"],
     "answer": "harket",
     "hint": "«Harke» betyr å rydde halsen med en grov lyd før man snakker, mens «hoste» er en ufrivillig reaksjon, ofte ved forkjølelse.",
     "plusOnly": true

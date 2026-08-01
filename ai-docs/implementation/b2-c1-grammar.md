@@ -11,7 +11,7 @@ Source: `draft/b2-c1-det-gaar-bra/` — `innhold.md`, `oppgaver-1-8.md` (kap. 1�
 **The core problem this plan solves:** the book is published as one combined "NIVÅ B2-C1"
 level — individual exercises aren't tagged B2 vs. C1. There's no difficulty signal in the
 exercise markup either: the 🙂 marks scattered on some exercise headers are explained in the
-author's own "Om å bruke *Det går bra!*" note — they flag pair-work exercises (one student
+author's own "Om å bruke _Det går bra!_" note — they flag pair-work exercises (one student
 reads the prompt from the book, the other answers without looking, then they check each
 other), a teaching-method/format marker with no relation to grammatical difficulty. So, same
 as every prior level plan, the split has to be done by reading each exercise and routing
@@ -27,7 +27,7 @@ model (B2, C) is sufficient.
 **Copyright approach (unchanged from every prior plan):** every question is newly written,
 using the textbook only to identify which rule/difficulty to target — never copying or closely
 paraphrasing its sentences. This matters especially here: several kap. 9–16 exercises are built
-around real excerpts from published fiction (confirmed: Kjell Askildsen, *Alt som før*, 1994,
+around real excerpts from published fiction (confirmed: Kjell Askildsen, _Alt som før_, 1994,
 in kap. 9's "Omgivelser" cloze) and named recurring characters. Same treatment as `c-grammar.md`
 gave the "Annemor" story — freshly invented, self-contained sentences, never adapted from the
 excerpt.
@@ -44,7 +44,7 @@ cover everything this book needs — no schema changes required.
 ## Chapter-by-chapter routing (kap. 1–8, `oppgaver-1-8.md`)
 
 Each chapter repeats roughly the same exercise-letter skeleton (a–k), so the routing is mostly
-per-*letter-type* rather than per-chapter. Based on the exercises read directly:
+per-_letter-type_ rather than per-chapter. Based on the exercises read directly:
 
 | Exercise type (recurring across kap. 1–8)                                               | Route                                                                                                                                                                                                                    | Notes                                                                                                                                                        |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -98,7 +98,7 @@ Proposed: **`uttrykk-gjenkjenning-detgaarbra-c`** (single topic — the list is 
 c-grammar.md idiom appendix, ~60 vs. ~400+, so one topic covers it rather than 3 parts). Requires
 checking each idiom against `uttrykk-c.json` first (same matching-script step as `c-grammar.md`
 Phase 2) — likely a good number of these classic ordtak (`Eplet faller ikke langt fra stammen`,
-`Bedre sent enn aldri`, etc.) are *not yet* in `uttrykk-c.json` and would need adding there first,
+`Bedre sent enn aldri`, etc.) are _not yet_ in `uttrykk-c.json` and would need adding there first,
 same resolved precedent as `c-uttrykk-addition.md`.
 
 ---
@@ -152,7 +152,7 @@ vocab-addition pass before any grammar questions can reference the new ~33 idiom
 
 Read in full: kap. 1–3 of `oppgaver-1-8.md`. For kap. 4–8 and all of `oppgaver-9-16.md`, read every
 exercise header/letter (confirms the chapter-by-chapter skeleton matches the original draft almost
-exactly) plus full text for every letter whose *type* hadn't already appeared verbatim elsewhere —
+exactly) plus full text for every letter whose _type_ hadn't already appeared verbatim elsewhere —
 i.e. skipped re-reading the Nth occurrence of an exercise-letter shape already fully seen (fill-in
 noun/adjective form, direkte→indirekte tale, bind setninger, preposisjon-cloze, verb tid/form —
 these repeat nearly identically every chapter and were confirmed, not assumed, from kap. 1–3 plus
@@ -190,7 +190,7 @@ spade`, `danse rundt gullkalven`, `ta opp hansken`, etc.) directly from Trollmor
 the grunnbok — collocations/idioms tied to those specific (likely copyrighted) essays, not a
 curated general-purpose idiom list like `idiomatiske-uttrykk.md`. Treat the same way as the kap.
 9–11 literary excerpts: mine the vocabulary pattern, write fresh example sentences, never lift the
-essay's own phrasing. Some of these are good candidates for entries in the *existing*
+essay's own phrasing. Some of these are good candidates for entries in the _existing_
 `preposisjoner-generelt-c` or `substantiv-uttrykk-c` topics rather than a new topic of their own.
 
 ### Everything else: no further routing changes
@@ -270,8 +270,8 @@ per-letter-type routing table into an actual per-topic item inventory. Findings 
 | ---- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------- |
 | 1    | d      | Genitiv (`Trollmors tanker`, `Hans' problemer`)                                                                                               | 10    | `noun-possessives` (B2 entries)                                                             |
 | 1    | i      | Preposisjon/adverb cloze (`behov for`, `anledning til`, `bruk til`)                                                                           | 33    | `preposisjoner-uttrykk-b2` — heavily fixed-collocation, not literal time/place              |
-| 3    | c      | *seriøs* vs. *alvorlig* — full mini-lesson + 10 fill-ins                                                                                      | 10    | `nyanser-uttrykk`                                                                           |
-| 5    | d      | 3 nuance sets: *tid/time/gang* (8), *bevilgning/bevilling* (6), *flaks/sjanse* (4)                                                            | 18    | `nyanser-uttrykk`                                                                           |
+| 3    | c      | _seriøs_ vs. _alvorlig_ — full mini-lesson + 10 fill-ins                                                                                      | 10    | `nyanser-uttrykk`                                                                           |
+| 5    | d      | 3 nuance sets: _tid/time/gang_ (8), _bevilgning/bevilling_ (6), _flaks/sjanse_ (4)                                                            | 18    | `nyanser-uttrykk`                                                                           |
 | 6    | c      | `begge deler` vs. `begge to`                                                                                                                  | 10    | `spesial-kvantorer` (B2 entries)                                                            |
 | 6    | d      | `visst` placement (setningsadverbial)                                                                                                         | 10    | `modale-adverb` (B2 entries)                                                                |
 | 6    | e      | `nok` placement                                                                                                                               | 10    | `modale-adverb` (B2 entries)                                                                |
@@ -290,14 +290,14 @@ the table above — no new topics surfaced there beyond what's listed.
 
 **kap. 9–16 mined material — concrete counts:**
 
-- **kap. 12e** — verb *ryke* polysemy, 14 sentences spanning literal ("det ryker fra skogholtet")
+- **kap. 12e** — verb _ryke_ polysemy, 14 sentences spanning literal ("det ryker fra skogholtet")
   through 6+ figurative senses (relationship ending, a deal falling through, a body part tearing,
   a job/place being lost). Feeds `nyanser-uttrykk` as a single-word polysemy set, not a pair.
 - **kap. 12k** — "Diskuter nyanseforskjellene i disse verbene": **6 full near-synonym clusters**,
-  ~50 verbs total — *se-cluster* (14: se, titte, kikke, myse, glane, stirre, glo, skimte, ane,
-  betrakte, saumfare med blikket, beskue, skotte, få øye på), *snakke-cluster* (11), *gå-cluster*
-  (11), *skrike-cluster* (8), *reaksjon-cluster* (9: måpe, himle med øynene, bite tennene sammen…),
-  *kroppslyd-cluster* (12: nyse, hoste, harke, hikke, rape, gulpe, kaste opp, spy, spytte, sikle,
+  ~50 verbs total — _se-cluster_ (14: se, titte, kikke, myse, glane, stirre, glo, skimte, ane,
+  betrakte, saumfare med blikket, beskue, skotte, få øye på), _snakke-cluster_ (11), _gå-cluster_
+  (11), _skrike-cluster_ (8), _reaksjon-cluster_ (9: måpe, himle med øynene, bite tennene sammen…),
+  _kroppslyd-cluster_ (12: nyse, hoste, harke, hikke, rape, gulpe, kaste opp, spy, spytte, sikle,
   sukke, stønne). **This alone roughly doubles the material available for `nyanser-uttrykk`**
   versus the six single-chapter mentions noted earlier in this doc — it's the single richest
   source for that topic.
@@ -307,11 +307,11 @@ the table above — no new topics surfaced there beyond what's listed.
   kondisjonalis contrast. This is the actual rule-text source for `futurum-referert` and
   `kondisjonalis-counterfactual` — use directly for explanation text, not just examples.
 - **kap. 13b** — 10 short news-style 2. futurum sentences (`skal ha tatt kvelertak`, `skal ha
-  blitt plaget`), confirms the "reported/sladder" register `futurum-referert` should model.
+blitt plaget`), confirms the "reported/sladder" register `futurum-referert` should model.
 - **kap. 13o** — `såpass`, 13 sentences, single-word intensifier ("så mye") — feeds
   `nyanser-uttrykk` as an adverb entry, confirming the word-class breadth already noted.
 - **kap. 14c** — confirmed: ~50 collocations/idioms across 9 short essay excerpts (`gi grobunn
-  for`, `kalle en spade for en spade`, `danse rundt gullkalven`, `ta opp hansken`, etc.). Per the
+for`, `kalle en spade for en spade`, `danse rundt gullkalven`, `ta opp hansken`, etc.). Per the
   existing decision, **not** routed to `uttrykk-gjenkjenning-detgaarbra-c` (essay-tied, not a
   curated general list) — mine individual collocations for fresh examples in
   `preposisjoner-generelt-c`/`substantiv-uttrykk-c`, never lift the essay phrasing.
@@ -365,7 +365,7 @@ rundt lillefingeren`, `øye for øye, tann for tann` (two candidates — `nesevi
   count. — ✅ Done: 10 questions written (`gq-prep-b2-001`–`010`, 8 `fill` + 1 `order` + 1
   `minimal-pair`), covering `ta ansvar for`, `ha inntrykk av`, `være forberedt på`, `komme på`
   (huske), `kjempe for`, `sette pris på`, `bestemme seg for`, `stemme på`, `skeptisk til`, `ta
-  hånd om` — the collocations named in the topic's own `rules.ts` explanation plus a couple
+hånd om` — the collocations named in the topic's own `rules.ts` explanation plus a couple
   more surfaced by kap.1i (`skeptisk til`, `ta hånd om`). Fresh sentences throughout, never
   adapted from the textbook's own kap.1i items. Merged into `grammar.json` (1894 total, no
   duplicate ids). `check-b2-grammar-vocab.mjs`/`check-grammar-norwegian.mjs` both 0
@@ -373,6 +373,7 @@ rundt lillefingeren`, `øye for øye, tann for tann` (two candidates — `nesevi
 
 **All 3 new topics from this plan are now content-complete: `nyanser-uttrykk` (18),
 `uttrykk-gjenkjenning-detgaarbra-c` (15), `preposisjoner-uttrykk-b2` (10) — 43 questions total.**
+
 - `uttrykk-gjenkjenning-detgaarbra-c`: 47 idioms in `idiomatiske-uttrykk.md`, all now present in
   `uttrykk-c.json` (Phase 1.5 done) — supports the originally planned single ~8–12 question topic,
   or could go higher (up to ~15–20) given the full idiom pool is larger than similar existing
@@ -391,7 +392,6 @@ Run existing `check-b2-grammar-vocab.mjs`/`check-c-grammar-vocab.mjs` and
 B2 and C are both already fully Plus-gated by level (per `b2-grammar.md`'s confirmed
 `FREE_GRAMMAR_TOPICS` policy) — no gating changes needed beyond adding new topic names to the
 admin `TOPICS` constant.
-
 
 ---
 
