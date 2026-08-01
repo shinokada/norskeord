@@ -86,7 +86,12 @@ const B2_TOPICS = new Set([
   'hoflig-preteritum',
   'hypotetiske-betingelsessetninger',
   'stedsadverb-statisk-dynamisk',
-  'man-en-upersonlig-pronomen'
+  'man-en-upersonlig-pronomen',
+  // ai-docs/implementation/b2-c1-grammar.md: 'nyanser-uttrykk' spans B2 + C
+  // (filtered to cefr === 'B2' below, same as every other reused topic here);
+  // 'preposisjoner-uttrykk-b2' is B2-only.
+  'nyanser-uttrykk',
+  'preposisjoner-uttrykk-b2'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────

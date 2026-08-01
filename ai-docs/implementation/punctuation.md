@@ -142,7 +142,7 @@ existing dedup/lint logic elsewhere in the pipeline might assume distinct option
 
 ## Implementation phases
 
-### Phase 1 — Plumbing (no content yet)
+### Phase 1 — Plumbing (no content yet) ✅ Done
 
 1. Add `'punctuation'` to `GrammarQuestion['type']` in `types.ts`.
 2. Add `normalizeAnswerKeepPunctuation` + the `gradeGrammarAnswer` branch in `session.ts`.
@@ -150,7 +150,7 @@ existing dedup/lint logic elsewhere in the pipeline might assume distinct option
 4. Add the unit tests above using 2-3 hand-written placeholder questions (not final content) to
    prove the plumbing end-to-end before content-writing starts.
 
-### Phase 2 — Pilot content
+### Phase 2 — Pilot content ✅ Done
 
 1. Add `kommaregler` to `GrammarTopic` (`types.ts`) and `GRAMMAR_RULES` (`rules.ts`) — Norwegian
    rule text per the sub-points above.
@@ -163,21 +163,26 @@ existing dedup/lint logic elsewhere in the pipeline might assume distinct option
 ### Phase 3 — Full content
 
 1. Write the remaining sub-points (appositive comma, direct-speech comma, conjunction-joining
-   comma) — target ~40-50 questions total across all sub-points.
+   comma) — target ~40-50 questions total across all sub-points. ✅ Done — `grammar.json` now
+   has 42 `kommaregler` entries (`gq-komma-001`…`042`), all `type: 'punctuation'`, all
+   `plusOnly: true`, split 22 B2 / 20 C, all with exactly 3 options and no duplicate IDs.
+   Plumbing confirmed wired end-to-end: `types.ts` (`GrammarTopic`), `rules.ts` (rule entry),
+   `admin/grammar/+page.svelte` (`TOPICS`/`TYPES`), `questionUtils.ts` (validation + `komma`
+   id prefix).
 2. Run `check-grammar-norwegian.mjs kommaregler` and the vocab-check script, same as every other
-   topic.
+   topic. ✅ Done — both re-run against the real on-disk `grammar.json`:
+   `node scripts/check-grammar-norwegian.mjs kommaregler --strict` → 0 flagged (42/42 clean).
+   A `kommaregler`-scoped vocab-match check (`scripts/check-kommaregler-vocab.mjs`, adapted from
+   `check-b2-grammar-vocab.mjs` to also pool `vocab-c.json`/`uttrykk-c.json` for the C-level
+   entries) → 0 unmatched (42/42 anchor to a real headword).
 3. Confirm Plus gating and topic listing on `/grammar` and `/learn/b2` (and `/learn/c` if any
-   sub-points land at C).
+   sub-points land at C). ✅ Done
 
-## Open questions
+## Open questions — resolved
 
-- **CEFR split:** should `kommaregler` be one B2/C-spanning topic (like several existing shared
-  topics) or two separate topics (`kommaregler` at B2 for the common cases, a harder
-  `kommaregler-c` for edge cases)? Lean toward one shared topic unless the C-level source material
-  turns out to need noticeably harder distinctions — decide once source content is reviewed.
-- **Distractor construction:** for some sub-points (e.g. list commas) it may be hard to write a
-  wrong-but-plausible second distractor beyond "no comma at all" vs. "comma in the right place" —
-  worth checking during the Phase 2 pilot whether 2 options (a `minimal-pair`-style A/B) reads
-  better than 3 for some sub-points, even though the type is technically built for `options.length
-=== 3` like `multiple-choice`. If so, `punctuation` may need to accept 2 or 3 options rather than
-  always 3.
+- **CEFR split:** resolved as one shared topic. `kommaregler` spans both `cefr: 'B2'` (22
+  questions) and `cefr: 'C'` (20 questions) rather than splitting into a separate
+  `kommaregler-c` topic.
+- **Distractor construction:** resolved as always 3 options. All 42 questions ended up with
+  exactly 3 `options` (matching `multiple-choice`'s shape) — the 2-option fallback was never
+  needed in practice, so `punctuation` did not need to accept a variable option count.
