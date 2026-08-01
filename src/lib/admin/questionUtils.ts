@@ -31,7 +31,8 @@ const TOPIC_PREFIXES: Record<string, string> = {
   'sterke-verb': 'sterke',
   helsetninger: 'hels',
   'preposisjoner-tid': 'prep-tid',
-  'preposisjoner-sted': 'prep-sted'
+  'preposisjoner-sted': 'prep-sted',
+  kommaregler: 'komma'
 };
 
 function topicPrefix(topic: string): string {
@@ -57,6 +58,13 @@ export function validateQuestion(q: Partial<GrammarQuestion>): string[] {
       errors.push('options must have exactly 3 entries for multiple-choice');
     } else if (!q.options.includes(q.answer ?? '')) {
       errors.push('answer must exactly match one of the options for multiple-choice');
+    }
+  }
+  if (q.type === 'punctuation') {
+    if (!q.options || q.options.length !== 3) {
+      errors.push('options must have exactly 3 entries for punctuation');
+    } else if (!q.options.includes(q.answer ?? '')) {
+      errors.push('answer must exactly match one of the options for punctuation');
     }
   }
   return errors;
