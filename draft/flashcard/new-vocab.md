@@ -225,3 +225,9 @@ spiss (en): striker
 å ydmyke
 ydmykende
 avsløring
+
+monument (et)
+billedhugger (en)
+å debutere
+utover (preposisjon)
+lovende
