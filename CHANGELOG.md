@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.63.0
+
+### Minor Changes
+
+- - **New Features**
+    - Grammar explanations now support clearer paragraphs, bullet lists, bold emphasis, and expandable content.
+    - Added new vocabulary entries for “monument,” “billedhugger,” “å debutere,” “utover,” and “lovende.”
+
+  - **Improvements**
+    - Grammar exercises now provide clearer instructions to write complete sentences and use the requested word forms.
+    - Updated explanations across the grammar rules with improved structure and readability.
+
+  - **Documentation**
+    - Added implementation notes and updated related documentation references.
+
 ## 2.62.0
 
 ### Minor Changes
