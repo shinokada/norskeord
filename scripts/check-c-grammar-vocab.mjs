@@ -65,7 +65,10 @@ const C_TOPICS = new Set([
   'preposisjoner-generelt-c',
   'uttrykk-gjenkjenning-c-1',
   'uttrykk-gjenkjenning-c-2',
-  'uttrykk-gjenkjenning-c-3'
+  'uttrykk-gjenkjenning-c-3',
+  // ai-docs/implementation/b2-c1-grammar.md
+  'uttrykk-gjenkjenning-detgaarbra-c',
+  'nyanser-uttrykk'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
@@ -78,7 +81,12 @@ const grammar = loadJson('grammar.json');
 const vocabC = loadJson('vocab-c.json');
 const uttrykkC = loadJson('uttrykk-c.json');
 
-const questions = grammar.filter((q) => C_TOPICS.has(q.topic));
+// 'nyanser-uttrykk' spans B2 + C (see check-b2-grammar-vocab.mjs for the B2
+// half) — restrict to cefr: 'C' here so this script only checks the C-level
+// entries against the C-only vocab pool.
+const questions = grammar.filter(
+  (q) => C_TOPICS.has(q.topic) && (q.topic !== 'nyanser-uttrykk' || q.cefr === 'C')
+);
 const targetQuestions =
   topicFilter.length > 0 ? questions.filter((q) => topicFilter.includes(q.topic)) : questions;
 
