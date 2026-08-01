@@ -48,20 +48,82 @@ if (questions.length === 0) {
 const SUFFIXES = ['ene', 'ane', 'ere', 'est', 'este', 'er', 'en', 'et', 'a', 'e', 't', 's'];
 
 const STOPWORDS = new Set([
-  'å','og','i','på','til','av','om','for','med','seg','som','er','den','det','en','et','de','noe','noen'
+  'å',
+  'og',
+  'i',
+  'på',
+  'til',
+  'av',
+  'om',
+  'for',
+  'med',
+  'seg',
+  'som',
+  'er',
+  'den',
+  'det',
+  'en',
+  'et',
+  'de',
+  'noe',
+  'noen'
 ]);
 
 const IRREGULAR_VERB_FORMS = {
-  hadde: 'ha', hatt: 'ha', gikk: 'gå', gått: 'gå', tok: 'ta', tatt: 'ta',
-  satte: 'sette', satt: 'sette', var: 'være', vært: 'være', er: 'være',
-  ga: 'gi', gav: 'gi', gitt: 'gi', la: 'legge', lagt: 'legge', fikk: 'få',
-  fått: 'få', ble: 'bli', blitt: 'bli', sa: 'si', sagt: 'si', visste: 'vite',
-  visst: 'vite', kom: 'komme', kommet: 'komme', sto: 'stå', stod: 'stå',
-  stått: 'stå', slo: 'slå', slått: 'slå', gjorde: 'gjøre', gjort: 'gjøre',
-  fant: 'finne', funnet: 'finne', holdt: 'holde', het: 'hete', løp: 'løpe',
-  løpt: 'løpe', falt: 'falle', bar: 'bære', båret: 'bære', dro: 'dra',
-  dratt: 'dra', så: 'se', sett: 'se', lot: 'la', bet: 'bite', drev: 'drive',
-  kunne: 'kan', ville: 'vil', skulle: 'skal', måtte: 'må', burde: 'bør'
+  hadde: 'ha',
+  hatt: 'ha',
+  gikk: 'gå',
+  gått: 'gå',
+  tok: 'ta',
+  tatt: 'ta',
+  satte: 'sette',
+  satt: 'sette',
+  var: 'være',
+  vært: 'være',
+  er: 'være',
+  ga: 'gi',
+  gav: 'gi',
+  gitt: 'gi',
+  la: 'legge',
+  lagt: 'legge',
+  fikk: 'få',
+  fått: 'få',
+  ble: 'bli',
+  blitt: 'bli',
+  sa: 'si',
+  sagt: 'si',
+  visste: 'vite',
+  visst: 'vite',
+  kom: 'komme',
+  kommet: 'komme',
+  sto: 'stå',
+  stod: 'stå',
+  stått: 'stå',
+  slo: 'slå',
+  slått: 'slå',
+  gjorde: 'gjøre',
+  gjort: 'gjøre',
+  fant: 'finne',
+  funnet: 'finne',
+  holdt: 'holde',
+  het: 'hete',
+  løp: 'løpe',
+  løpt: 'løpe',
+  falt: 'falle',
+  bar: 'bære',
+  båret: 'bære',
+  dro: 'dra',
+  dratt: 'dra',
+  så: 'se',
+  sett: 'se',
+  lot: 'la',
+  bet: 'bite',
+  drev: 'drive',
+  kunne: 'kan',
+  ville: 'vil',
+  skulle: 'skal',
+  måtte: 'må',
+  burde: 'bør'
 };
 
 function irregularCandidate(word) {
@@ -102,8 +164,16 @@ const singleWordLemmas = new Set();
 const phraseLemmas = [];
 
 for (const entry of [
-  ...vocabB2, ...uttrykkB2, ...vocabC, ...uttrykkC,
-  ...vocabA1, ...uttrykkA1, ...vocabA2, ...uttrykkA2, ...vocabB1, ...uttrykkB1
+  ...vocabB2,
+  ...uttrykkB2,
+  ...vocabC,
+  ...uttrykkC,
+  ...vocabA1,
+  ...uttrykkA1,
+  ...vocabA2,
+  ...uttrykkA2,
+  ...vocabB1,
+  ...uttrykkB1
 ]) {
   const lemma = (entry.lemma ?? '').toLowerCase().trim();
   if (!lemma) continue;
