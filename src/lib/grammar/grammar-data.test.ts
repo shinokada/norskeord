@@ -32,4 +32,19 @@ describe('grammar.json <-> GRAMMAR_RULES integrity', () => {
       .map(([key, rule]) => `${key} -> ${rule.id}`);
     expect(mismatched).toEqual([]);
   });
+
+  // Guardrail for ai-docs/implementation/grammar-explanation-update.md,
+  // "Problem B": a `transform` question always expects the full rewritten
+  // sentence as its answer (TransformQuestion.svelte's fixed header says
+  // "Skriv om setningen"). A prompt starting with "Fyll inn" reads like
+  // "just supply the missing word" and contradicts that header, which is
+  // exactly what caused learners to type only the blank word instead of
+  // the whole sentence. `fill`-type questions are unaffected — for those,
+  // "Fyll inn" is correct (see FillQuestion.svelte).
+  it('transform question prompts never start with "Fyll inn"', () => {
+    const offenders = questions
+      .filter((q) => q.type === 'transform' && q.prompt?.trim().startsWith('Fyll inn'))
+      .map((q) => q.id);
+    expect(offenders).toEqual([]);
+  });
 });

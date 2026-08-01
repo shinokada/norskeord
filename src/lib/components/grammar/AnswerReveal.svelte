@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { GrammarQuestion, GrammarRule } from '$lib/types';
+  import ExplanationText from './ExplanationText.svelte';
 
   let {
     question,
@@ -73,7 +74,7 @@
       >
         Hvorfor · {ruleTitle}
       </p>
-      <p class="text-sm text-gray-700 dark:text-gray-300">{ruleText}</p>
+      <ExplanationText text={ruleText} />
       {#if rule.blogSlug}
         <a
           href={`/blog/${rule.blogSlug}`}
