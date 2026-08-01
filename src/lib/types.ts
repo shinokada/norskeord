@@ -254,7 +254,13 @@ export type GrammarTopic =
   | 'hoflig-preteritum' // preteritum used for politeness/hedging: kunne du, det hadde vært fint om
   | 'hypotetiske-betingelsessetninger' // graded hypothetical/counterfactual conditionals + skulle ønske/tenk om
   | 'stedsadverb-statisk-dynamisk' // location adverb pairs: hjemme/hjem, inne/inn, ute/ut, der/dit, her/hit
-  | 'man-en-upersonlig-pronomen'; // impersonal pronouns «man» (subject only) vs. «en» (subject or object)
+  | 'man-en-upersonlig-pronomen' // impersonal pronouns «man» (subject only) vs. «en» (subject or object)
+  // Nivå B2/C topic — punctuation (see ai-docs/implementation/punctuation.md)
+  | 'kommaregler' // comma rules: subordinate-clause comma, list comma, and related conventions
+  // Nivå B2/C topics — Det går bra! (see ai-docs/implementation/b2-c-grammar.md)
+  | 'nyanser-uttrykk' // near-synonym/nuance discrimination across word classes (seriøs/alvorlig, tid/time/gang, ryke, såpass)
+  | 'preposisjoner-uttrykk-b2' // idiomatic/collocational B2 preposition choices (ta ansvar for, ha inntrykk av, forberedt på)
+  | 'uttrykk-gjenkjenning-detgaarbra-c'; // idiom recognition — idiomatiske-uttrykk.md ordtak/faste uttrykk
 
 export interface GrammarRule {
   id: GrammarTopic;
@@ -269,7 +275,7 @@ export interface GrammarQuestion {
   id: string; // stable key for FSRS, e.g. 'gq-ikke-001'
   topic: GrammarTopic;
   cefr: CEFRLevel; // level — drives the free-tier budget + FSRS progress bucket + /stats grouping
-  type: 'fill' | 'order' | 'transform' | 'minimal-pair' | 'multiple-choice';
+  type: 'fill' | 'order' | 'transform' | 'minimal-pair' | 'multiple-choice' | 'punctuation';
   // Per-question instruction shown above the stimulus, e.g.
   // "Embed in: «Jeg tror at …»" or "Translate into Norwegian:".
   // Lets transform/production items state the task that the generic type

@@ -15,6 +15,7 @@
   import TransformQuestion from './TransformQuestion.svelte';
   import MinimalPairQuestion from './MinimalPairQuestion.svelte';
   import MultipleChoiceQuestion from './MultipleChoiceQuestion.svelte';
+  import PunctuationQuestion from './PunctuationQuestion.svelte';
   import AnswerReveal from './AnswerReveal.svelte';
   import GrammarSummary from './GrammarSummary.svelte';
 
@@ -153,6 +154,8 @@
         <MinimalPairQuestion question={current} onsubmit={submit} />
       {:else if current.type === 'multiple-choice'}
         <MultipleChoiceQuestion question={current} onsubmit={submit} />
+      {:else if current.type === 'punctuation'}
+        <PunctuationQuestion question={current} onsubmit={submit} />
       {:else}
         <TransformQuestion question={current} onsubmit={submit} />
       {/if}
