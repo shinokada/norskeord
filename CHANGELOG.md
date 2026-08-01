@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.62.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added 48 advanced Norwegian grammar questions covering comma usage, idioms, nuance, and prepositional expressions.
+    - Added punctuation exercises with multiple-choice answers and skip support.
+    - Added new B2 and C-level idioms, phrases, vocabulary, and learning topics.
+  - **Documentation**
+    - Added comprehensive _Det går bra!_ workbooks for chapters 1–16.
+    - Added a Norwegian grammar reference and introductory guide.
+  - **Improvements**
+    - Updated course statistics and expanded grammar validation.
+
 ## 2.61.0
 
 ### Minor Changes
