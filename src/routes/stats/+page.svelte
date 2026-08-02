@@ -27,6 +27,7 @@
   } from '$lib/stats';
   import LevelStatRows from '$lib/components/LevelStatRows.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
+  import CollapsibleSection from '$lib/components/CollapsibleSection.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
@@ -170,6 +171,41 @@
     activeLevel = level;
     try {
       localStorage.setItem(ACTIVE_LEVEL_KEY, level);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  // ── Accordion sections (stats-page-update.md) ───────────────────────────────
+  // One global flag per content type — not per-level (see the doc's resolved
+  // Open questions). Defaults to expanded so first visit is pixel-for-pixel
+  // identical to the pre-accordion page (Goal 4).
+  type SectionKey = 'vocab' | 'uttrykk' | 'grammar';
+
+  const SECTION_STORAGE_KEYS: Record<SectionKey, string> = {
+    vocab: 'stats-section-vocab-open',
+    uttrykk: 'stats-section-uttrykk-open',
+    grammar: 'stats-section-grammar-open'
+  };
+
+  let vocabOpen = $state(true);
+  let uttrykkOpen = $state(true);
+  let grammarOpen = $state(true);
+
+  function toggleSection(key: SectionKey) {
+    let next: boolean;
+    if (key === 'vocab') {
+      vocabOpen = !vocabOpen;
+      next = vocabOpen;
+    } else if (key === 'uttrykk') {
+      uttrykkOpen = !uttrykkOpen;
+      next = uttrykkOpen;
+    } else {
+      grammarOpen = !grammarOpen;
+      next = grammarOpen;
+    }
+    try {
+      localStorage.setItem(SECTION_STORAGE_KEYS[key], String(next));
     } catch {
       /* ignore */
     }
@@ -319,6 +355,22 @@
         const match = cefrEstimate.match(/\b(A1|A2|B1|B2|C)\b/);
         if (match) activeLevel = match[0] as CEFRLevel;
       }
+    } catch {
+      /* ignore */
+    }
+
+    // Restore each section's collapse state — missing or invalid value
+    // (e.g. a user who never touched a toggle) defaults to expanded, so
+    // first-time-toggling users still see everything as before.
+    try {
+      const savedVocab = localStorage.getItem(SECTION_STORAGE_KEYS.vocab);
+      if (savedVocab === 'true' || savedVocab === 'false') vocabOpen = savedVocab === 'true';
+      const savedUttrykk = localStorage.getItem(SECTION_STORAGE_KEYS.uttrykk);
+      if (savedUttrykk === 'true' || savedUttrykk === 'false')
+        uttrykkOpen = savedUttrykk === 'true';
+      const savedGrammar = localStorage.getItem(SECTION_STORAGE_KEYS.grammar);
+      if (savedGrammar === 'true' || savedGrammar === 'false')
+        grammarOpen = savedGrammar === 'true';
     } catch {
       /* ignore */
     }
@@ -499,76 +551,156 @@
     </div>
 
     <!-- ── Vocabulary — active level ──────────────────────────────────────────── -->
-    <h2 class="mb-3">📖 {m.stats_vocabulary_heading()}</h2>
-    <div
-      class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-    >
-      <div class="mb-2 flex items-center justify-between">
-        <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
-        <span class="text-sm text-gray-500 dark:text-gray-300">
-          {activeVocabLevelStat.seen}
-          {m.stats_seen()} · {activeVocabLevelStat.due}
-          {m.stats_due_today_short()}
-        </span>
-      </div>
-      <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
-        {#if activeVocabLevelStat.seen > 0}
-          <div class="flex h-full">
-            {#if activeVocabLevelStat.learning > 0}
-              <div
-                class="bg-yellow-400"
-                style="width: {(activeVocabLevelStat.learning / activeVocabLevelStat.seen) * 100}%"
-                title={m.stats_tooltip_learning({ count: activeVocabLevelStat.learning })}
-              ></div>
+    <!-- Phase 3: only Plus users get the collapsible wrapper — free users'
+         collapsible content is just the small upsell box, which isn't worth
+         collapsing (see stats-page-update.md Phase 3). -->
+    {#if isPlus}
+      <CollapsibleSection
+        icon="📖"
+        title={m.stats_vocabulary_heading()}
+        open={vocabOpen}
+        onToggle={() => toggleSection('vocab')}
+        id="stats-vocab"
+      >
+        {#snippet summary()}
+          <div
+            class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+          >
+            <div class="mb-2 flex items-center justify-between">
+              <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-300">
+                {activeVocabLevelStat.seen}
+                {m.stats_seen()} · {activeVocabLevelStat.due}
+                {m.stats_due_today_short()}
+              </span>
+            </div>
+            <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
+              {#if activeVocabLevelStat.seen > 0}
+                <div class="flex h-full">
+                  {#if activeVocabLevelStat.learning > 0}
+                    <div
+                      class="bg-yellow-400"
+                      style="width: {(activeVocabLevelStat.learning / activeVocabLevelStat.seen) *
+                        100}%"
+                      title={m.stats_tooltip_learning({ count: activeVocabLevelStat.learning })}
+                    ></div>
+                  {/if}
+                  {#if activeVocabLevelStat.review > 0}
+                    <div
+                      class={levelColors[activeLevel]}
+                      style="width: {(activeVocabLevelStat.review / activeVocabLevelStat.seen) *
+                        100}%"
+                      title={m.stats_tooltip_review({ count: activeVocabLevelStat.review })}
+                    ></div>
+                  {/if}
+                  {#if activeVocabLevelStat.relearning > 0}
+                    <div
+                      class="bg-orange-400"
+                      style="width: {(activeVocabLevelStat.relearning / activeVocabLevelStat.seen) *
+                        100}%"
+                      title={m.stats_tooltip_relearning({
+                        count: activeVocabLevelStat.relearning
+                      })}
+                    ></div>
+                  {/if}
+                </div>
+              {/if}
+            </div>
+            {#if activeVocabLevelStat.seen === 0}
+              <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
+                {m.stats_no_cards_this_level()}
+              </p>
+            {:else}
+              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
+                  {m.stats_learning()}
+                  {activeVocabLevelStat.learning}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
+                  {m.stats_review()}
+                  {activeVocabLevelStat.review}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
+                  {m.stats_relearning()}
+                  {activeVocabLevelStat.relearning}
+                </span>
+              </div>
             {/if}
-            {#if activeVocabLevelStat.review > 0}
-              <div
-                class={levelColors[activeLevel]}
-                style="width: {(activeVocabLevelStat.review / activeVocabLevelStat.seen) * 100}%"
-                title={m.stats_tooltip_review({ count: activeVocabLevelStat.review })}
-              ></div>
-            {/if}
-            {#if activeVocabLevelStat.relearning > 0}
-              <div
-                class="bg-orange-400"
-                style="width: {(activeVocabLevelStat.relearning / activeVocabLevelStat.seen) *
-                  100}%"
-                title={m.stats_tooltip_relearning({ count: activeVocabLevelStat.relearning })}
-              ></div>
-            {/if}
+          </div>
+        {/snippet}
+        <div class="mb-8">
+          <LevelStatRows rows={vocabRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
+        </div>
+      </CollapsibleSection>
+    {:else}
+      <h2 class="mb-3">📖 {m.stats_vocabulary_heading()}</h2>
+      <div
+        class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+      >
+        <div class="mb-2 flex items-center justify-between">
+          <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
+          <span class="text-sm text-gray-500 dark:text-gray-300">
+            {activeVocabLevelStat.seen}
+            {m.stats_seen()} · {activeVocabLevelStat.due}
+            {m.stats_due_today_short()}
+          </span>
+        </div>
+        <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
+          {#if activeVocabLevelStat.seen > 0}
+            <div class="flex h-full">
+              {#if activeVocabLevelStat.learning > 0}
+                <div
+                  class="bg-yellow-400"
+                  style="width: {(activeVocabLevelStat.learning / activeVocabLevelStat.seen) *
+                    100}%"
+                  title={m.stats_tooltip_learning({ count: activeVocabLevelStat.learning })}
+                ></div>
+              {/if}
+              {#if activeVocabLevelStat.review > 0}
+                <div
+                  class={levelColors[activeLevel]}
+                  style="width: {(activeVocabLevelStat.review / activeVocabLevelStat.seen) * 100}%"
+                  title={m.stats_tooltip_review({ count: activeVocabLevelStat.review })}
+                ></div>
+              {/if}
+              {#if activeVocabLevelStat.relearning > 0}
+                <div
+                  class="bg-orange-400"
+                  style="width: {(activeVocabLevelStat.relearning / activeVocabLevelStat.seen) *
+                    100}%"
+                  title={m.stats_tooltip_relearning({ count: activeVocabLevelStat.relearning })}
+                ></div>
+              {/if}
+            </div>
+          {/if}
+        </div>
+        {#if activeVocabLevelStat.seen === 0}
+          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
+            {m.stats_no_cards_this_level()}
+          </p>
+        {:else}
+          <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
+            <span class="flex items-center gap-1">
+              <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
+              {m.stats_learning()}
+              {activeVocabLevelStat.learning}
+            </span>
+            <span class="flex items-center gap-1">
+              <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
+              {m.stats_review()}
+              {activeVocabLevelStat.review}
+            </span>
+            <span class="flex items-center gap-1">
+              <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
+              {m.stats_relearning()}
+              {activeVocabLevelStat.relearning}
+            </span>
           </div>
         {/if}
       </div>
-      {#if activeVocabLevelStat.seen === 0}
-        <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-          {m.stats_no_cards_this_level()}
-        </p>
-      {:else}
-        <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
-          <span class="flex items-center gap-1">
-            <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
-            {m.stats_learning()}
-            {activeVocabLevelStat.learning}
-          </span>
-          <span class="flex items-center gap-1">
-            <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
-            {m.stats_review()}
-            {activeVocabLevelStat.review}
-          </span>
-          <span class="flex items-center gap-1">
-            <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
-            {m.stats_relearning()}
-            {activeVocabLevelStat.relearning}
-          </span>
-        </div>
-      {/if}
-    </div>
-
-    {#if isPlus}
-      <div class="mb-8">
-        <LevelStatRows rows={vocabRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
-      </div>
-    {:else}
       <div
         class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
       >
@@ -588,78 +720,156 @@
     {/if}
 
     <!-- ── Uttrykk — active level ─────────────────────────────────────────────── -->
-    <h2 class="mb-3">💬 {m.stats_uttrykk_heading()}</h2>
-    <div
-      class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-    >
-      <div class="mb-2 flex items-center justify-between">
-        <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
-        <span class="text-sm text-gray-500 dark:text-gray-300">
-          {activeUttrykkLevelStat.seen}
-          {m.stats_seen()} · {activeUttrykkLevelStat.due}
-          {m.stats_due_today_short()}
-        </span>
-      </div>
-      <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
-        {#if activeUttrykkLevelStat.seen > 0}
-          <div class="flex h-full">
-            {#if activeUttrykkLevelStat.learning > 0}
-              <div
-                class="bg-yellow-400"
-                style="width: {(activeUttrykkLevelStat.learning / activeUttrykkLevelStat.seen) *
-                  100}%"
-                title={m.stats_tooltip_learning({ count: activeUttrykkLevelStat.learning })}
-              ></div>
+    {#if isPlus}
+      <CollapsibleSection
+        icon="💬"
+        title={m.stats_uttrykk_heading()}
+        open={uttrykkOpen}
+        onToggle={() => toggleSection('uttrykk')}
+        id="stats-uttrykk"
+      >
+        {#snippet summary()}
+          <div
+            class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+          >
+            <div class="mb-2 flex items-center justify-between">
+              <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-300">
+                {activeUttrykkLevelStat.seen}
+                {m.stats_seen()} · {activeUttrykkLevelStat.due}
+                {m.stats_due_today_short()}
+              </span>
+            </div>
+            <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
+              {#if activeUttrykkLevelStat.seen > 0}
+                <div class="flex h-full">
+                  {#if activeUttrykkLevelStat.learning > 0}
+                    <div
+                      class="bg-yellow-400"
+                      style="width: {(activeUttrykkLevelStat.learning /
+                        activeUttrykkLevelStat.seen) *
+                        100}%"
+                      title={m.stats_tooltip_learning({ count: activeUttrykkLevelStat.learning })}
+                    ></div>
+                  {/if}
+                  {#if activeUttrykkLevelStat.review > 0}
+                    <div
+                      class={levelColors[activeLevel]}
+                      style="width: {(activeUttrykkLevelStat.review / activeUttrykkLevelStat.seen) *
+                        100}%"
+                      title={m.stats_tooltip_review({ count: activeUttrykkLevelStat.review })}
+                    ></div>
+                  {/if}
+                  {#if activeUttrykkLevelStat.relearning > 0}
+                    <div
+                      class="bg-orange-400"
+                      style="width: {(activeUttrykkLevelStat.relearning /
+                        activeUttrykkLevelStat.seen) *
+                        100}%"
+                      title={m.stats_tooltip_relearning({
+                        count: activeUttrykkLevelStat.relearning
+                      })}
+                    ></div>
+                  {/if}
+                </div>
+              {/if}
+            </div>
+            {#if activeUttrykkLevelStat.seen === 0}
+              <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
+                {m.stats_no_cards_this_level()}
+              </p>
+            {:else}
+              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
+                  {m.stats_learning()}
+                  {activeUttrykkLevelStat.learning}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
+                  {m.stats_review()}
+                  {activeUttrykkLevelStat.review}
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
+                  {m.stats_relearning()}
+                  {activeUttrykkLevelStat.relearning}
+                </span>
+              </div>
             {/if}
-            {#if activeUttrykkLevelStat.review > 0}
-              <div
-                class={levelColors[activeLevel]}
-                style="width: {(activeUttrykkLevelStat.review / activeUttrykkLevelStat.seen) *
-                  100}%"
-                title={m.stats_tooltip_review({ count: activeUttrykkLevelStat.review })}
-              ></div>
-            {/if}
-            {#if activeUttrykkLevelStat.relearning > 0}
-              <div
-                class="bg-orange-400"
-                style="width: {(activeUttrykkLevelStat.relearning / activeUttrykkLevelStat.seen) *
-                  100}%"
-                title={m.stats_tooltip_relearning({ count: activeUttrykkLevelStat.relearning })}
-              ></div>
-            {/if}
+          </div>
+        {/snippet}
+        <div class="mb-8">
+          <LevelStatRows rows={uttrykkRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
+        </div>
+      </CollapsibleSection>
+    {:else}
+      <h2 class="mb-3">💬 {m.stats_uttrykk_heading()}</h2>
+      <div
+        class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+      >
+        <div class="mb-2 flex items-center justify-between">
+          <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
+          <span class="text-sm text-gray-500 dark:text-gray-300">
+            {activeUttrykkLevelStat.seen}
+            {m.stats_seen()} · {activeUttrykkLevelStat.due}
+            {m.stats_due_today_short()}
+          </span>
+        </div>
+        <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
+          {#if activeUttrykkLevelStat.seen > 0}
+            <div class="flex h-full">
+              {#if activeUttrykkLevelStat.learning > 0}
+                <div
+                  class="bg-yellow-400"
+                  style="width: {(activeUttrykkLevelStat.learning / activeUttrykkLevelStat.seen) *
+                    100}%"
+                  title={m.stats_tooltip_learning({ count: activeUttrykkLevelStat.learning })}
+                ></div>
+              {/if}
+              {#if activeUttrykkLevelStat.review > 0}
+                <div
+                  class={levelColors[activeLevel]}
+                  style="width: {(activeUttrykkLevelStat.review / activeUttrykkLevelStat.seen) *
+                    100}%"
+                  title={m.stats_tooltip_review({ count: activeUttrykkLevelStat.review })}
+                ></div>
+              {/if}
+              {#if activeUttrykkLevelStat.relearning > 0}
+                <div
+                  class="bg-orange-400"
+                  style="width: {(activeUttrykkLevelStat.relearning / activeUttrykkLevelStat.seen) *
+                    100}%"
+                  title={m.stats_tooltip_relearning({ count: activeUttrykkLevelStat.relearning })}
+                ></div>
+              {/if}
+            </div>
+          {/if}
+        </div>
+        {#if activeUttrykkLevelStat.seen === 0}
+          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
+            {m.stats_no_cards_this_level()}
+          </p>
+        {:else}
+          <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
+            <span class="flex items-center gap-1">
+              <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
+              {m.stats_learning()}
+              {activeUttrykkLevelStat.learning}
+            </span>
+            <span class="flex items-center gap-1">
+              <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
+              {m.stats_review()}
+              {activeUttrykkLevelStat.review}
+            </span>
+            <span class="flex items-center gap-1">
+              <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
+              {m.stats_relearning()}
+              {activeUttrykkLevelStat.relearning}
+            </span>
           </div>
         {/if}
       </div>
-      {#if activeUttrykkLevelStat.seen === 0}
-        <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-          {m.stats_no_cards_this_level()}
-        </p>
-      {:else}
-        <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
-          <span class="flex items-center gap-1">
-            <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
-            {m.stats_learning()}
-            {activeUttrykkLevelStat.learning}
-          </span>
-          <span class="flex items-center gap-1">
-            <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
-            {m.stats_review()}
-            {activeUttrykkLevelStat.review}
-          </span>
-          <span class="flex items-center gap-1">
-            <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
-            {m.stats_relearning()}
-            {activeUttrykkLevelStat.relearning}
-          </span>
-        </div>
-      {/if}
-    </div>
-
-    {#if isPlus}
-      <div class="mb-8">
-        <LevelStatRows rows={uttrykkRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
-      </div>
-    {:else}
       <div
         class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
       >
@@ -685,20 +895,29 @@
          has always been free (see routes/grammar/[topic] plusOnly gating,
          which is per-question, not per-topic-list). -->
     {#if grammarRowsForActiveLevel.length > 0}
-      <h2 class="mb-3">📐 {m.stats_grammar_heading()}</h2>
-      <div
-        class="mb-3 grid grid-cols-3 divide-x divide-gray-100 overflow-hidden rounded-xl border border-gray-200 dark:divide-white/10 dark:border-white/10"
+      <CollapsibleSection
+        icon="📐"
+        title={m.stats_grammar_heading()}
+        open={grammarOpen}
+        onToggle={() => toggleSection('grammar')}
+        id="stats-grammar"
       >
-        {#each [{ label: m.stats_grammar_practiced(), value: grammarSeenForActiveLevel, color: 'text-gray-800 dark:text-white' }, { label: m.stats_grammar_due(), value: grammarDueForActiveLevel, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_grammar_mastered(), value: grammarMasteredForActiveLevel, color: 'text-green-600 dark:text-green-400' }] as stat (stat.label)}
-          <div class="bg-white p-4 text-center dark:bg-indigo-950/60">
-            <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
-            <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
+        {#snippet summary()}
+          <div
+            class="mb-3 grid grid-cols-3 divide-x divide-gray-100 overflow-hidden rounded-xl border border-gray-200 dark:divide-white/10 dark:border-white/10"
+          >
+            {#each [{ label: m.stats_grammar_practiced(), value: grammarSeenForActiveLevel, color: 'text-gray-800 dark:text-white' }, { label: m.stats_grammar_due(), value: grammarDueForActiveLevel, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_grammar_mastered(), value: grammarMasteredForActiveLevel, color: 'text-green-600 dark:text-green-400' }] as stat (stat.label)}
+              <div class="bg-white p-4 text-center dark:bg-indigo-950/60">
+                <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
+                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
+              </div>
+            {/each}
           </div>
-        {/each}
-      </div>
-      <div class="mb-8">
-        <LevelStatRows rows={grammarRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
-      </div>
+        {/snippet}
+        <div class="mb-8">
+          <LevelStatRows rows={grammarRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
+        </div>
+      </CollapsibleSection>
     {/if}
 
     <!-- ── Reset ──────────────────────────────────────────────────────────────── -->
