@@ -237,5 +237,6 @@ ordfamilie-avledning:  gq-avled-014, gq-avled-024, gq-avled-033 (substantiv/adje
 - [x] Run `pnpm test:unit` / `pnpm check` again to confirm this session's edits still compile and pass — **confirmed, no problems**.
 
 Optional follow-ups (not blocking — doc is done):
+
 - Spot-check the 4 routes above in the browser at some point, just to eyeball the rendering.
 - Revisit the "Vis mer" collapse threshold (`LONG_THRESHOLD = 2`) if it ever feels like it's hiding too much in practice.
