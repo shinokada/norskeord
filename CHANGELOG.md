@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.64.0
+
+### Minor Changes
+
+- - **New Features**
+    - Plus users can independently collapse or expand Vocabulary, Uttrykk, and Grammar sections on the statistics page.
+    - Section states are remembered between visits.
+    - Grammar statistics now include a persistent summary while details are collapsed.
+    - Added accessible toggles with visual expand/collapse indicators.
+
+  - **Bug Fixes**
+    - Updated the displayed statistics data timestamp.
+
 ## 2.63.0
 
 ### Minor Changes
