@@ -142,8 +142,8 @@ if (!API_KEY && !dryRun) {
 
 const paths = {
   input: path.join(PROJECT_ROOT, 'scripts/outputs/arbeidsbok-resolved.json'),
-  outVocab: path.join(PROJECT_ROOT, 'draft/c/i-samme-baat-arbeidsbok/vocab-c-new.json'),
-  outUttrykk: path.join(PROJECT_ROOT, 'draft/c/i-samme-baat-arbeidsbok/uttrykk-c-new.json'),
+  outVocab: path.join(PROJECT_ROOT, 'draft/c/vocab-c-new.json'),
+  outUttrykk: path.join(PROJECT_ROOT, 'draft/c/uttrykk-c-new.json'),
   productionVocab: path.join(PROJECT_ROOT, 'src/lib/data/vocab-c.json'),
   productionUttrykk: path.join(PROJECT_ROOT, 'src/lib/data/uttrykk-c.json')
 };
