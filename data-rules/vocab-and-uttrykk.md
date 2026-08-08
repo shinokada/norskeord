@@ -9,6 +9,7 @@ The display form shown to learners.
 | `part`                | Format                                            | Example                         |
 | --------------------- | ------------------------------------------------- | ------------------------------- |
 | `noun`                | dictionary form + gender in parentheses           | `hus (et)`                      |
+| `noun` (variable gender) | dictionary form + `(en/ei)` (both accepted, e.g. `m/f` source dictionaries) | `elv (en/ei)`      |
 | `noun` (plural card)  | plural form + `(pl.)` or `(b.pl.)` in parentheses | `bøker (pl.)`, `bøkene (b.pl.)` |
 | `noun` (indeclinable) | dictionary form + `(ubøy.)` in parentheses        | `fjor (ubøy.)`                  |
 | `verb`                | infinitive with `å`                               | `å få`                          |
@@ -85,6 +86,28 @@ Use `phrase` only when the entry has **no single grammatical head** — greeting
 `v-{level}-{category}-{NNN}` where level is `a1|a2|b1|b2|c`, category matches `CATEGORIES_BY_LEVEL` in `config.ts`, and NNN is a zero-padded 3-digit number.
 
 Example: `v-a1-classroom-001`
+
+### `note` field (optional)
+
+Free-text usage note — supplementary context that doesn't belong in `definition`. `definition` is a monolingual Norwegian dictionary-style definition (B1+); `note` is looser: register/slang flags, related word-family members, a usage caveat, or a secondary sense. Written in whichever language is clearest (usually Norwegian, since it's typically sourced from Norwegian teaching material).
+
+Example:
+
+```
+"note": "Børst er et slangord som brukes av dem som drikker (for) mye selv."
+```
+
+### `verb_type` field (optional, `verb` entries only)
+
+Conjugation class, sourced from dictionary/textbook annotations like `(v1)`, `(v2)`, `(v3)`, `(ureg.)`. Value is one of `v1` | `v2` | `v3` | `ureg`, or a comma-separated combination when a source lists more than one accepted class, e.g. `"v1, v2"`.
+
+Example:
+
+```
+"norsk": "å subbe",
+"part": "verb",
+"verb_type": "v1"
+```
 
 ## Vocab vs Uttrykk
 
