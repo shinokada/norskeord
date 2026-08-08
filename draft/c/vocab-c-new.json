@@ -1,6 +1,6 @@
 [
   {
-    "id": "",
+    "id": "v-c-character-temperament-061",
     "norsk": "å drikke tett",
     "lemma": "drikke tett",
     "english": "to drink frequently/steadily",
@@ -20,7 +20,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-021",
     "norsk": "vanvittig",
     "lemma": "vanvittig",
     "english": "insane; crazy; wild; here: incredible, unbelievable",
@@ -39,7 +39,7 @@
     "note": "Van- er et negativt prefiks: vantrivsel, vanfør, vanhellige, vanstell, vantro"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-028",
     "norsk": "i sin fulle tyngde (en)",
     "lemma": "i sin fulle tyngde",
     "english": "with full force; with great weight",
@@ -58,7 +58,7 @@
     "note": "Verb: å tynge. Hva er det som tynger deg? = Hva er det som gjør deg trist og lei?"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-049",
     "norsk": "børst (en)",
     "lemma": "børst",
     "english": "booze; hard liquor; spirits (colloquial)",
@@ -77,7 +77,7 @@
     "note": "Børst er et slangord som brukes av dem som drikker (for) mye selv."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-062",
     "norsk": "å holde seg på matta",
     "lemma": "holde seg på matta",
     "english": "to keep oneself in check; to live a controlled, well-behaved life",
@@ -97,7 +97,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-063",
     "norsk": "edruelig",
     "lemma": "edruelig",
     "english": "sober; abstemious; generally abstaining from alcohol; temperate",
@@ -116,7 +116,7 @@
     "note": "Edruelig er litt formelt – og det kan brukes litt nedsettende om mennesker som ikke drikker alkohol. Det kan også brukes om en person som er rolig og kontrollert."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-064",
     "norsk": "anstendig",
     "lemma": "anstendig",
     "english": "decent; respectable; proper; behaving as one ought to according to social norms",
@@ -135,7 +135,7 @@
     "note": "Substantiv: anstand (m) = person som passer på at andre oppfører seg riktig og bra."
   },
   {
-    "id": "",
+    "id": "v-c-archaic-036",
     "norsk": "sporenstreks",
     "lemma": "sporenstreks",
     "english": "immediately; at once; right away",
@@ -153,7 +153,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-050",
     "norsk": "kåk (en)",
     "lemma": "kåk",
     "english": "dwelling; place to live (of somewhat low standard)",
@@ -172,7 +172,7 @@
     "note": "Andre ord for bolig (med lav standard / liten plass): rønne, hybel, hule, krypinn, rom på kvisten."
   },
   {
-    "id": "",
+    "id": "v-c-archaic-037",
     "norsk": "alskens",
     "lemma": "alskens",
     "english": "all sorts of; all kinds of; every possible type of",
@@ -190,7 +190,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-medicine-healthcare-005",
     "norsk": "tørrlagt",
     "lemma": "tørrlagt",
     "english": "sober; no longer drinking alcohol",
@@ -209,7 +209,7 @@
     "note": "En narkoman som slutter å bruke narkotika, er nykter."
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-018",
     "norsk": "skvett (en)",
     "lemma": "skvett",
     "english": "a splash; a small amount (of a drink); a drop",
@@ -228,7 +228,7 @@
     "note": "Det regnet en skvett = Det regnet litt."
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-031",
     "norsk": "fleis (en)",
     "lemma": "fleis",
     "english": "face; mug (colloquial)",
@@ -247,7 +247,7 @@
     "note": "Fleis er et folkelig ord for ansikt. Tryne er også folkelig (og mindre pent)."
   },
   {
-    "id": "",
+    "id": "v-c-professional-023",
     "norsk": "sosialarbeider (en)",
     "lemma": "sosialarbeider",
     "english": "social worker",
@@ -265,7 +265,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-035",
     "norsk": "krøket sammen",
     "lemma": "krøket sammen",
     "english": "hunched up; curled up; bent together",
@@ -284,7 +284,7 @@
     "note": "Ordtak: Den må tidlig krøkes som god krok skal bli = Den som skal bli flink i noe, må starte tidlig å lære."
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-030",
     "norsk": "slarv (et)",
     "lemma": "slarv",
     "english": "gossip; backbiting; tittle-tattle",
@@ -303,7 +303,7 @@
     "note": "Ikke bland slarv med slurv. Slurv = ikke ordentlig arbeid."
   },
   {
-    "id": "",
+    "id": "v-c-professional-024",
     "norsk": "å tre av",
     "lemma": "tre av",
     "english": "to clock off; to stop working (for the day or for good); to step down",
@@ -323,7 +323,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-031",
     "norsk": "slengbemerkning (en/ei)",
     "lemma": "slengbemerkning",
     "english": "a snide remark; a cheeky aside; a throwaway comment",
@@ -342,7 +342,7 @@
     "note": "Å slenge med leppa = å være småfrekk."
   },
   {
-    "id": "",
+    "id": "v-c-linguistics-003",
     "norsk": "skjellsord (et)",
     "lemma": "skjellsord",
     "english": "swear word; insult; abusive term",
@@ -361,7 +361,7 @@
     "note": "Å skjelle og smelle på noen = å kjefte på noen."
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-032",
     "norsk": "å frese",
     "lemma": "frese",
     "english": "to hiss; to snarl; to speak in an angry, seething manner",
@@ -381,7 +381,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-038",
     "norsk": "gud min santen",
     "lemma": "gud min santen",
     "english": "good gracious; good heavens; my goodness (mild oath)",
@@ -399,7 +399,7 @@
     "part": "interjection"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-051",
     "norsk": "gå på omgang (en/ei)",
     "lemma": "gå på omgang",
     "english": "to take turns; to rotate; to alternate",
@@ -418,7 +418,7 @@
     "note": "Omgangssyke = sykdom som sprer seg (som regel oppkast)."
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-022",
     "norsk": "ettertrykkelig",
     "lemma": "ettertrykkelig",
     "english": "emphatically; forcefully; with full weight",
@@ -436,8 +436,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "utnevnt til",
+    "id": "v-c-professional-025",
+    "norsk": "å bli utnevnt til",
     "lemma": "utnevne til",
     "english": "to appoint to (a position)",
     "ukrainian": "призначити на (посаду)",
@@ -454,7 +454,7 @@
     "part": "verb"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-010",
     "norsk": "å påberope seg respekt",
     "lemma": "påberope seg respekt",
     "english": "to claim / demand respect for oneself",
@@ -474,8 +474,8 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
-    "norsk": "pytt i panne",
+    "id": "v-c-gastronomy-019",
+    "norsk": "pytt i panne (ubøy.)",
     "lemma": "pytt i panne",
     "english": "pytt i panne (a traditional Scandinavian hash dish made of potatoes, onion and meat)",
     "ukrainian": "піт і панне (скандинавська страва з картоплі, цибулі та м'яса)",
@@ -493,7 +493,7 @@
     "note": "Pytt, pytt! = Det går bra. Pytt (m) = en søledam (vann etter regn)."
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-052",
     "norsk": "å slokne",
     "lemma": "slokne",
     "english": "here: to fall asleep; (also: to go out, of a flame)",
@@ -513,7 +513,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-033",
     "norsk": "å fotfølge",
     "lemma": "fotfølge",
     "english": "to shadow someone; to follow someone everywhere",
@@ -532,7 +532,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-065",
     "norsk": "å legge seg til en vane",
     "lemma": "legge seg til en vane",
     "english": "to adopt a habit; to get into the habit of doing something",
@@ -551,7 +551,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-022",
     "norsk": "ta hyre (en/ei)",
     "lemma": "ta hyre",
     "english": "to sign on / take a job aboard a ship",
@@ -569,7 +569,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-023",
     "norsk": "byssegutt (en)",
     "lemma": "byssegutt",
     "english": "cabin boy; boy who assists the cook on board a ship",
@@ -588,7 +588,7 @@
     "note": "Moren bysset babyen i søvn = Moren sang for babyen og vugget den slik at den kunne få sove."
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-067",
     "norsk": "grytidlig",
     "lemma": "grytidlig",
     "english": "very early (before most people are up); at the crack of dawn",
@@ -607,7 +607,7 @@
     "note": "Morgengry (n); daggry (n) = svært tidlig på morgenen."
   },
   {
-    "id": "",
+    "id": "v-c-professional-026",
     "norsk": "å bistå",
     "lemma": "bistå",
     "english": "to assist; to help; to aid",
@@ -626,7 +626,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-020",
     "norsk": "å skrelle",
     "lemma": "skrelle",
     "english": "to peel (the skin off fruit or vegetables)",
@@ -646,7 +646,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-021",
     "norsk": "kjøttslingse (en/ei)",
     "lemma": "kjøttslingse",
     "english": "a stringy or sinewy piece of meat; a tough scrap of meat",
@@ -664,7 +664,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-036",
     "norsk": "nostalgisk skjær (et)",
     "lemma": "nostalgisk skjær",
     "english": "a nostalgic tinge; viewing the past in a rosy, idealized light",
@@ -682,7 +682,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-024",
     "norsk": "landkrabbe (en/ei)",
     "lemma": "landkrabbe",
     "english": "landlubber; a person unaccustomed to being at sea (often used disparagingly by experienced sailors)",
@@ -700,7 +700,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-031",
     "norsk": "mirakuløs",
     "lemma": "mirakuløs",
     "english": "miraculous; incredible; supernatural",
@@ -718,7 +718,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-037",
     "norsk": "stormfull",
     "lemma": "stormfull",
     "english": "stormy; turbulent; full of challenges and upheaval",
@@ -736,7 +736,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-038",
     "norsk": "tungsinn (et)",
     "lemma": "tungsinn",
     "english": "melancholy; sadness; depression; low spirits",
@@ -755,7 +755,7 @@
     "note": "Vi kan også si: tung til sinns (eller: lett til sinns)."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-032",
     "norsk": "mislykket",
     "lemma": "mislykket",
     "english": "failed; unsuccessful; that did not turn out as hoped",
@@ -773,7 +773,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-034",
     "norsk": "å stryke på dør",
     "lemma": "stryke på dør",
     "english": "to storm out the door; to leave in a rush, usually in anger",
@@ -792,7 +792,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-066",
     "norsk": "drikkfeldig",
     "lemma": "drikkfeldig",
     "english": "given to drinking; prone to alcohol abuse",
@@ -810,7 +810,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-035",
     "norsk": "være vitne til (et)",
     "lemma": "være vitne til",
     "english": "to witness something; to see something (perhaps unintentionally)",
@@ -828,7 +828,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-036",
     "norsk": "overstadig beruset",
     "lemma": "overstadig beruset",
     "english": "extremely intoxicated; heavily drunk",
@@ -846,7 +846,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-036",
     "norsk": "fly forbannet",
     "lemma": "fly forbannet",
     "english": "absolutely furious; enraged",
@@ -865,7 +865,7 @@
     "note": "En forbannet historie = en trist/dum historie."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-033",
     "norsk": "grumsete",
     "lemma": "grumsete",
     "english": "murky; unclear; cloudy",
@@ -884,7 +884,7 @@
     "note": "Grumsete forhold = suspekte (kanskje kriminelle) forhold."
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-025",
     "norsk": "bule (en/ei)",
     "lemma": "bule",
     "english": "a dive bar; a type of bar serving alcohol, often without food, with a regular crowd of regulars",
@@ -902,7 +902,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-022",
     "norsk": "kro (en/ei)",
     "lemma": "kro",
     "english": "informal restaurant; pub; inn",
@@ -920,7 +920,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-032",
     "norsk": "å vanke",
     "lemma": "vanke",
     "english": "to frequent; to move about; to be found (in a place)",
@@ -939,7 +939,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-037",
     "norsk": "å betro",
     "lemma": "betro",
     "english": "to confide; to share something in confidence with another person",
@@ -958,7 +958,7 @@
     "verb_type": "v4"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-039",
     "norsk": "vemodig",
     "lemma": "vemodig",
     "english": "melancholy; wistful; sorrowful",
@@ -976,7 +976,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-053",
     "norsk": "å helle nedpå",
     "lemma": "helle nedpå",
     "english": "to drink heavily; to knock back a lot",
@@ -996,7 +996,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-finance-economics-005",
     "norsk": "å skrape sammen penger",
     "lemma": "skrape sammen penger",
     "english": "to scrape together money; to gather up the last of one's money",
@@ -1016,7 +1016,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-026",
     "norsk": "å bråke",
     "lemma": "bråke",
     "english": "to make noise; to be rowdy; to cause a racket",
@@ -1035,7 +1035,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-068",
     "norsk": "avkrok (en)",
     "lemma": "avkrok",
     "english": "out-of-the-way place; remote spot; backwater",
@@ -1053,7 +1053,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-038",
     "norsk": "å skjenne høylytt",
     "lemma": "skjenne høylytt",
     "english": "to scold loudly; to shout and berate at the top of one's voice",
@@ -1073,7 +1073,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-sociology-anthropology-007",
     "norsk": "samfunnsborger (en)",
     "lemma": "samfunnsborger",
     "english": "member of society; citizen",
@@ -1092,7 +1092,7 @@
     "note": "En borger = a) innbygger i en by, b) person som tilhører borgerklassen. Borgerlig = ikke-sosialistisk; politisk til høyre. Borgerlig = som ikke angår kirken. Eksempel: Hun skal konfirmere seg borgerlig."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-067",
     "norsk": "å snylte",
     "lemma": "snylte",
     "english": "to freeload; to sponge off others; to live at others' expense",
@@ -1111,7 +1111,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-011",
     "norsk": "innadvendt",
     "lemma": "innadvendt",
     "english": "introverted; withdrawn; reserved",
@@ -1129,7 +1129,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-029",
     "norsk": "å belære",
     "lemma": "belære",
     "english": "to lecture; to instruct someone in a condescending manner; to tell someone what to think",
@@ -1148,7 +1148,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-039",
     "norsk": "å slenge opp i ansiktet",
     "lemma": "slenge opp i ansiktet",
     "english": "to fling (critical/negative words) in someone's face; to hurl insults at someone",
@@ -1167,7 +1167,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-023",
     "norsk": "ustyrtelig morsomt",
     "lemma": "ustyrtelig morsomt",
     "english": "incredibly funny; hilarious",
@@ -1186,7 +1186,7 @@
     "note": "Ustyrtelig (som adj.) = svært stor. Ustyrtelig (som adv.) = forsterkende."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-068",
     "norsk": "å leve livet knirkefritt",
     "lemma": "leve livet knirkefritt",
     "english": "to live life without a hitch; to sail through life without problems",
@@ -1205,7 +1205,7 @@
     "verb_type": "v3"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-069",
     "norsk": "forståsegpåer (en)",
     "lemma": "forståsegpåer",
     "english": "a know-it-all; someone who thinks they understand everything",
@@ -1223,8 +1223,8 @@
     "part": "noun"
   },
   {
-    "id": "",
-    "norsk": "ta seg av noen/noe",
+    "id": "v-c-professional-027",
+    "norsk": "å ta seg av noen/noe",
     "lemma": "ta seg av noen/noe",
     "english": "to take care of someone/something; to look after someone/something",
     "ukrainian": "доглядати за кимось/чимось; піклуватися про когось/щось",
@@ -1242,7 +1242,7 @@
     "note": "Ta av seg klær = kle av seg."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-070",
     "norsk": "å duge til noe",
     "lemma": "duge til noe",
     "english": "to be good at something; to be competent at something",
@@ -1262,7 +1262,7 @@
     "verb_type": "v3"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-040",
     "norsk": "å slarve om løst og fast",
     "lemma": "slarve om løst og fast",
     "english": "to gossip and chat about all sorts of things; to talk idly about this and that",
@@ -1281,7 +1281,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-030",
     "norsk": "skjønt",
     "lemma": "skjønt",
     "english": "though; and yet; nevertheless; by the way",
@@ -1299,7 +1299,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-026",
     "norsk": "på løkka (ei)",
     "lemma": "på løkka",
     "english": "on the (local football) pitch; at the playing field",
@@ -1318,7 +1318,7 @@
     "note": "En/ei løkke kan også bety enden på et tau (som er knyttet sammen til en «ring»)."
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-023",
     "norsk": "sukkerspinn (et)",
     "lemma": "sukkerspinn",
     "english": "candy floss; cotton candy",
@@ -1336,8 +1336,8 @@
     "part": "noun"
   },
   {
-    "id": "",
-    "norsk": "få slengt etter seg",
+    "id": "v-c-interpersonal-conflict-041",
+    "norsk": "å få slengt etter seg",
     "lemma": "få slengt etter seg",
     "english": "to have (negative words or things) hurled after one; to be on the receiving end of insults",
     "ukrainian": "отримати слідом (образливі слова або предмети); почути образи вслід",
@@ -1355,7 +1355,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-039",
     "norsk": "tjuvradd (en)",
     "lemma": "tjuvradd",
     "english": "thief; crook",
@@ -1373,8 +1373,8 @@
     "part": "noun"
   },
   {
-    "id": "",
-    "norsk": "bli fôret med",
+    "id": "v-c-rhetoric-031",
+    "norsk": "å bli fôret med",
     "lemma": "bli fôret med",
     "english": "to be fed (something); here: to be made to listen to (something, repeatedly)",
     "ukrainian": "бути нагодованим (чимось); тут: постійно чути (щось)",
@@ -1393,7 +1393,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-037",
     "norsk": "å luske bort med halen mellom beina",
     "lemma": "luske bort med halen mellom beina",
     "english": "to slink away with one's tail between one's legs; to retreat in shame or fear",
@@ -1412,7 +1412,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-040",
     "norsk": "uten min fortjeneste (en/ei)",
     "lemma": "uten min fortjeneste",
     "english": "without any merit of my own; through no effort or credit of mine",
@@ -1430,7 +1430,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-071",
     "norsk": "treg",
     "lemma": "treg",
     "english": "slow; sluggish",
@@ -1448,7 +1448,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-054",
     "norsk": "hule (en/ei)",
     "lemma": "hule",
     "english": "den; hideaway; a place where one can be undisturbed",
@@ -1466,7 +1466,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-033",
     "norsk": "å tasse",
     "lemma": "tasse",
     "english": "to shuffle along; to walk slowly with dragging steps",
@@ -1485,7 +1485,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-034",
     "norsk": "å henge rundt",
     "lemma": "henge rundt",
     "english": "to hang around; to loiter without any particular purpose",
@@ -1504,7 +1504,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-042",
     "norsk": "å nå inn",
     "lemma": "nå inn",
     "english": "to get through to; to reach someone emotionally or intellectually",
@@ -1523,7 +1523,7 @@
     "verb_type": "v4"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-034",
     "norsk": "å slippe å gjøre noe",
     "lemma": "slippe å gjøre noe",
     "english": "to not have to do something; to be spared from doing something",
@@ -1542,7 +1542,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-072",
     "norsk": "mot (et)",
     "lemma": "mot",
     "english": "courage; bravery",
@@ -1561,8 +1561,8 @@
     "note": "Å være ved godt mot = å se lyst på en situasjon."
   },
   {
-    "id": "",
-    "norsk": "kunne noe til fingerspissene",
+    "id": "v-c-professional-028",
+    "norsk": "å kunne noe til fingerspissene",
     "lemma": "kunne noe til fingerspissene",
     "english": "to know something inside out; to master something completely",
     "ukrainian": "знати щось досконало; знати щось до кінчиків пальців",
@@ -1580,7 +1580,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-032",
     "norsk": "tiltalende",
     "lemma": "tiltalende",
     "english": "appealing; attractive; alluring",
@@ -1599,7 +1599,7 @@
     "note": "Han er tiltalt = Han har en juridisk anklage mot seg."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-035",
     "norsk": "kronglete",
     "lemma": "kronglete",
     "english": "complicated; winding; convoluted",
@@ -1618,7 +1618,7 @@
     "note": "Dette var en kronglete oppgave = Dette var en vanskelig oppgave."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-036",
     "norsk": "gåte (en/ei)",
     "lemma": "gåte",
     "english": "riddle; puzzle; mystery",
@@ -1637,7 +1637,7 @@
     "note": "Kan du gjette denne gåten? Er det lov å gifte seg med sin enkes søster? Svar: Nei, det er verken lov eller mulig å gifte seg etter at man er død. | Gåte: Hva er det som går og går og aldri kommer til døra? (Svar: Klokka.)"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-027",
     "norsk": "het/heit",
     "lemma": "het/heit",
     "english": "very hot; scalding; boiling",
@@ -1655,7 +1655,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-041",
     "norsk": "sjeleglad",
     "lemma": "sjeleglad",
     "english": "overjoyed; deeply relieved; extremely happy",
@@ -1673,7 +1673,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-037",
     "norsk": "å by seg en mulighet",
     "lemma": "by seg en mulighet",
     "english": "for an opportunity to present itself; to arise as a chance",
@@ -1692,7 +1692,7 @@
     "verb_type": "v4, ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-038",
     "norsk": "tomhendt",
     "lemma": "tomhendt",
     "english": "empty-handed; without possessions; owning nothing",
@@ -1710,7 +1710,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-032",
     "norsk": "å balansere på en skarp knivsegg",
     "lemma": "balansere på en skarp knivsegg",
     "english": "to walk a tightrope; to do something that can easily go wrong",
@@ -1730,7 +1730,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-professional-029",
     "norsk": "butikkslave (en)",
     "lemma": "butikkslave",
     "english": "shop slave; someone trapped in a dead-end retail job",
@@ -1748,7 +1748,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-035",
     "norsk": "å lure",
     "lemma": "lure",
     "english": "to lurk; to hide; to stay concealed",
@@ -1767,7 +1767,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-011",
     "norsk": "bestikkelse (en)",
     "lemma": "bestikkelse",
     "english": "bribe; bribery; corrupt payment",
@@ -1785,7 +1785,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-043",
     "norsk": "dragkamp (en)",
     "lemma": "dragkamp",
     "english": "tug of war; fierce competition; power struggle",
@@ -1803,7 +1803,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-044",
     "norsk": "kiving (en/ei)",
     "lemma": "kiving",
     "english": "squabbling; competitive bickering; rivalry-driven quarrelling",
@@ -1821,7 +1821,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-073",
     "norsk": "mistroisk",
     "lemma": "mistroisk",
     "english": "distrustful; suspicious; lacking trust in others",
@@ -1839,7 +1839,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-028",
     "norsk": "å dirre",
     "lemma": "dirre",
     "english": "to vibrate; to quiver; to tremble slightly",
@@ -1859,7 +1859,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-033",
     "norsk": "å sette fingeren på",
     "lemma": "sette fingeren på",
     "english": "to put one's finger on something; to pinpoint; to highlight",
@@ -1878,7 +1878,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-038",
     "norsk": "å ulme",
     "lemma": "ulme",
     "english": "to smoulder; to simmer beneath the surface (of a growing problem)",
@@ -1898,7 +1898,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-039",
     "norsk": "å vri seg i stolen",
     "lemma": "vri seg i stolen",
     "english": "to squirm in one's seat; to feel discomfort",
@@ -1918,7 +1918,7 @@
     "verb_type": "v4, ureg"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-039",
     "norsk": "å late til",
     "lemma": "late til",
     "english": "to seem; to appear; to give the impression of",
@@ -1938,7 +1938,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-034",
     "norsk": "å framtre som",
     "lemma": "framtre som",
     "english": "to present oneself as; to come across as; to appear as",
@@ -1957,7 +1957,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-042",
     "norsk": "bortkommen",
     "lemma": "bortkommen",
     "english": "lost; helpless; unable to find one's way",
@@ -1975,7 +1975,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-055",
     "norsk": "krok (en)",
     "lemma": "krok",
     "english": "hook; corner; remote spot",
@@ -1993,7 +1993,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-professional-030",
     "norsk": "oppsatt tid (en/ei)",
     "lemma": "oppsatt tid",
     "english": "scheduled time; agreed time",
@@ -2012,7 +2012,7 @@
     "note": "Jeg er oppsatt på å få dette til = Jeg er ivrig etter å få dette til."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-074",
     "norsk": "innpåsliten",
     "lemma": "innpåsliten",
     "english": "pushy; intrusive; overly familiar; not taking no for an answer",
@@ -2030,8 +2030,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "bli verdsatt",
+    "id": "v-c-psychology-advanced-012",
+    "norsk": "å bli verdsatt",
     "lemma": "bli verdsatt",
     "english": "to be appreciated; to be valued; to be regarded positively",
     "ukrainian": "бути оціненим; бути цінованим; користуватися повагою",
@@ -2049,7 +2049,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-040",
     "norsk": "å sitte fast som en/ei klo",
     "lemma": "sitte fast som en/ei klo",
     "english": "to be stuck fast; to hold on like a claw",
@@ -2068,7 +2068,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-040",
     "norsk": "bemerkelsesverdig",
     "lemma": "bemerkelsesverdig",
     "english": "remarkable; noteworthy; striking",
@@ -2086,7 +2086,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-013",
     "norsk": "å berolige",
     "lemma": "berolige",
     "english": "to calm; to reassure; to soothe",
@@ -2106,7 +2106,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-academic-015",
     "norsk": "foreteelse (en)",
     "lemma": "foreteelse",
     "english": "phenomenon; occurrence; event; happening",
@@ -2124,7 +2124,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-035",
     "norsk": "å forskanse seg bak",
     "lemma": "forskanse seg bak",
     "english": "to entrench oneself behind; to take cover behind; to hide behind",
@@ -2143,7 +2143,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-041",
     "norsk": "å smile bredt",
     "lemma": "smile bredt",
     "english": "to smile broadly (with genuine joy)",
@@ -2162,7 +2162,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-075",
     "norsk": "avvæpnende",
     "lemma": "avvæpnende",
     "english": "disarming; charming in a way that makes others warm and friendly",
@@ -2180,7 +2180,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sociology-anthropology-008",
     "norsk": "landsmann (en)",
     "lemma": "landsmann",
     "english": "compatriot; person from the same country as another",
@@ -2199,7 +2199,7 @@
     "note": "Ordet «landskvinne» eksisterer ikke, men uttrykket landsens kvinne betyr «en kvinne fra landet» (ikke fra byen)."
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-029",
     "norsk": "lavmælt",
     "lemma": "lavmælt",
     "english": "soft-spoken; speaking with a low, quiet voice",
@@ -2218,7 +2218,7 @@
     "note": "Å mæle = å snakke. Å miste munn og mæle = å ikke klare å snakke."
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-021",
     "norsk": "å tilkjennegi",
     "lemma": "tilkjennegi",
     "english": "to express; to make known (one's views, feelings, or intentions)",
@@ -2237,7 +2237,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-043",
     "norsk": "nervepirrende",
     "lemma": "nervepirrende",
     "english": "nerve-racking; causing nervousness or anxiety",
@@ -2255,8 +2255,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "inngis med frykt",
+    "id": "v-c-embodied-emotion-042",
+    "norsk": "å inngis med frykt",
     "lemma": "inngis med",
     "english": "to be filled with (fear); to become frightened",
     "ukrainian": "бути охопленим (страхом); злякатися",
@@ -2274,7 +2274,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-043",
     "norsk": "utmattende",
     "lemma": "utmattende",
     "english": "exhausting; dreadfully tiring",
@@ -2292,7 +2292,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-044",
     "norsk": "sliten inntil margen",
     "lemma": "sliten inntil margen",
     "english": "exhausted to the bone; completely worn out",
@@ -2310,8 +2310,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "bli spist opp innvendig",
+    "id": "v-c-complex-emotions-044",
+    "norsk": "å bli spist opp innvendig",
     "lemma": "bli spist opp innvendig",
     "english": "to be eaten up inside; to be drained of all energy and strength",
     "ukrainian": "бути з'їденим зсередини; бути позбавленим усіх сил",
@@ -2329,7 +2329,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-022",
     "norsk": "å framtre",
     "lemma": "framtre",
     "english": "to appear; to present oneself; to come across (in a certain way)",
@@ -2348,7 +2348,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-014",
     "norsk": "på sammenbruddets rand (en/ei)",
     "lemma": "på sammenbruddets rand",
     "english": "on the verge of a breakdown; at the point of losing control and balance",
@@ -2366,7 +2366,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-045",
     "norsk": "boblende glad",
     "lemma": "boblende glad",
     "english": "bubbling with joy; so happy that one can feel the joy fizzing through the body",
@@ -2384,7 +2384,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-045",
     "norsk": "mismodig",
     "lemma": "mismodig",
     "english": "despondent; dejected; lacking inspiration or motivation",
@@ -2402,7 +2402,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-045",
     "norsk": "å snakke morskt til noen",
     "lemma": "snakke morskt til noen",
     "english": "to speak harshly/sternly to someone",
@@ -2421,7 +2421,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-076",
     "norsk": "lystig",
     "lemma": "lystig",
     "english": "merry; cheerful; jolly",
@@ -2439,8 +2439,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "bli slått av noe",
+    "id": "v-c-complex-emotions-046",
+    "norsk": "å bli slått av noe",
     "lemma": "bli slått av noe",
     "english": "to be struck by something; to be greatly impressed by something",
     "ukrainian": "бути враженим чимось; звернути особливу увагу на щось",
@@ -2458,7 +2458,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-047",
     "norsk": "tilfredshet (en/ei)",
     "lemma": "tilfredshet",
     "english": "satisfaction; contentment",
@@ -2476,7 +2476,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-077",
     "norsk": "uanfektet",
     "lemma": "uanfektet",
     "english": "unaffected; undisturbed; unmoved",
@@ -2494,7 +2494,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-046",
     "norsk": "fadese (en)",
     "lemma": "fadese",
     "english": "blunder; embarrassing mistake; gaffe",
@@ -2512,7 +2512,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-015",
     "norsk": "fordypet",
     "lemma": "fordypet",
     "english": "absorbed; engrossed; deeply concentrated",
@@ -2530,7 +2530,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-078",
     "norsk": "uhemmet",
     "lemma": "uhemmet",
     "english": "uninhibited; unrestrained; free from inhibitions",
@@ -2548,7 +2548,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-056",
     "norsk": "å bryte opp",
     "lemma": "bryte opp",
     "english": "to leave; to break up a gathering and go home",
@@ -2568,7 +2568,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-030",
     "norsk": "humrende",
     "lemma": "humrende",
     "english": "chuckling; with a quiet, suppressed laugh",
@@ -2587,7 +2587,7 @@
     "note": "Hester knegger eller humrer."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-079",
     "norsk": "livlig",
     "lemma": "livlig",
     "english": "lively; vivacious; energetic",
@@ -2606,7 +2606,7 @@
     "note": "Hun har en livlig fantasi = Hun har mye fantasi."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-041",
     "norsk": "visstnok",
     "lemma": "visstnok",
     "english": "apparently; supposedly; presumably",
@@ -2624,7 +2624,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-036",
     "norsk": "å smette inn",
     "lemma": "smette inn",
     "english": "to slip in; to insert quietly or quickly",
@@ -2643,7 +2643,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-046",
     "norsk": "å tungebåndet løsner",
     "lemma": "tungebåndet løsner",
     "english": "one's tongue is loosened; to open up and speak more freely",
@@ -2663,7 +2663,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-047",
     "norsk": "å lettelsen farer gjennom kroppen",
     "lemma": "lettelsen farer gjennom kroppen",
     "english": "the feeling of relief rushes through the body; a wave of relief washes over one",
@@ -2682,7 +2682,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-080",
     "norsk": "pliktskyldig",
     "lemma": "pliktskyldig",
     "english": "dutiful; obedient; done out of a sense of duty",
@@ -2700,7 +2700,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-016",
     "norsk": "å venne seg til",
     "lemma": "venne seg til",
     "english": "to get used to; to accustom oneself to",
@@ -2719,7 +2719,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-proverbs-001",
     "norsk": "å bruke apostlenes hester",
     "lemma": "bruke apostlenes hester",
     "english": "to go on foot; to use shank's pony",
@@ -2738,7 +2738,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-037",
     "norsk": "å fare rundt",
     "lemma": "fare rundt",
     "english": "to rush around; to dash about",
@@ -2757,7 +2757,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-057",
     "norsk": "skritteller (en)",
     "lemma": "skritteller",
     "english": "pedometer; step counter",
@@ -2775,7 +2775,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-081",
     "norsk": "uting (en)",
     "lemma": "uting",
     "english": "bad habit; bad practice; something unfortunate or harmful",
@@ -2793,7 +2793,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-082",
     "norsk": "snakkesalig",
     "lemma": "snakkesalig",
     "english": "talkative; chatty; fond of talking",
@@ -2812,7 +2812,7 @@
     "note": "Hun er en salig troende = Hun er en kristen, troende kvinne. Han så salig ut da han fikk sjokoladekaken servert = Han så lykkelig ut da han fikk sjokoladekaken servert."
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-048",
     "norsk": "flir (et)",
     "lemma": "flir",
     "english": "grin; smile (often slightly mischievous, but can be positive)",
@@ -2830,7 +2830,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-047",
     "norsk": "erting (en/ei)",
     "lemma": "erting",
     "english": "teasing; playful ribbing (usually negative, but can be light-hearted and funny)",
@@ -2849,7 +2849,7 @@
     "note": "Barneregle: Erten og Furten satt på en haug. Furten han ønska at Erten var dau. Furten gikk foran og sippa og gråt. Erten kom bak for å høre åssen det låt. Uhhhh-huuuuu!"
   },
   {
-    "id": "",
+    "id": "v-c-literary-025",
     "norsk": "forunderlig",
     "lemma": "forunderlig",
     "english": "strange; peculiar; wondrous",
@@ -2867,7 +2867,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-highly-formal-026",
     "norsk": "anliggende (et)",
     "lemma": "anliggende",
     "english": "matter; concern; affair",
@@ -2885,7 +2885,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-professional-031",
     "norsk": "ha til rådighet (en/ei)",
     "lemma": "ha til rådighet",
     "english": "to have at one's disposal; to have available for use",
@@ -2903,7 +2903,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-083",
     "norsk": "misbilligende",
     "lemma": "misbilligende",
     "english": "disapproving; critical; not accepting",
@@ -2921,7 +2921,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-049",
     "norsk": "å smelle",
     "lemma": "smelle",
     "english": "here: to hit; to strike",
@@ -2941,7 +2941,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-033",
     "norsk": "rødmusset",
     "lemma": "rødmusset",
     "english": "ruddy; red-cheeked; with a reddish complexion",
@@ -2959,7 +2959,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-023",
     "norsk": "inntruffen/inntruffet",
     "lemma": "inntruffen/inntruffet",
     "english": "that has occurred; that has happened; which took place",
@@ -2978,7 +2978,7 @@
     "note": "I bestemt form: den inntrufne hendelsen."
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-048",
     "norsk": "delikat historie (en/ei)",
     "lemma": "delikat historie",
     "english": "embarrassing story; an incident one feels ashamed of",
@@ -2997,7 +2997,7 @@
     "note": "En delikat matrett = en lekker og god matrett."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-042",
     "norsk": "sparsom",
     "lemma": "sparsom",
     "english": "sparse; limited; scarce; not much",
@@ -3016,7 +3016,7 @@
     "note": "Jeg fikk sparsom informasjon = Jeg fikk knapp / lite informasjon. De er sparsomme folk = De bruker ikke mye penger."
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-034",
     "norsk": "grop (en/ei)",
     "lemma": "grop",
     "english": "dimple; small hollow; small pit (in skin)",
@@ -3035,7 +3035,7 @@
     "note": "Det var mange groper i veien = Det var mange hull i veien."
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-035",
     "norsk": "lite forskjønnende",
     "lemma": "lite forskjønnende",
     "english": "unflattering; showing someone's appearance in an unfortunate way",
@@ -3054,7 +3054,7 @@
     "note": "Det var jo lite bra = Det var jo veldig bra (slang basert på ironi)."
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-049",
     "norsk": "sørgelig",
     "lemma": "sørgelig",
     "english": "sad; sorrowful; that evokes grief",
@@ -3073,7 +3073,7 @@
     "note": "Å sørge = å være trist. Å sørge for = å passe på."
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-050",
     "norsk": "å gråte seg skakk",
     "lemma": "gråte seg skakk",
     "english": "to cry one's eyes out; to cry very much",
@@ -3093,7 +3093,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-048",
     "norsk": "å stikke nesen sin / nesa si i andres saker",
     "lemma": "stikke nesen sin / nesa si i andres saker",
     "english": "to stick one's nose into other people's business; to meddle in others' affairs",
@@ -3113,7 +3113,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-024",
     "norsk": "å uttale seg om",
     "lemma": "uttale seg om",
     "english": "to make a statement about; to comment on; to say something about",
@@ -3133,7 +3133,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-084",
     "norsk": "fordømmende",
     "lemma": "fordømmende",
     "english": "condemnatory; very critical; not accepting",
@@ -3152,7 +3152,7 @@
     "note": "Fordømt (adj.) = forbannet (som man ikke liker)."
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-017",
     "norsk": "å utfolde seg",
     "lemma": "utfolde seg",
     "english": "to express oneself; to unfold; to develop; to realize oneself",
@@ -3171,7 +3171,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-069",
     "norsk": "Guds utpost (en)",
     "lemma": "Guds utpost",
     "english": "a godforsaken place; a remote, peripheral location",
@@ -3189,7 +3189,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-036",
     "norsk": "sløret blikk (et)",
     "lemma": "sløret blikk",
     "english": "a glazed, dull, and unfocused gaze",
@@ -3207,7 +3207,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-literary-026",
     "norsk": "å fortære",
     "lemma": "fortære",
     "english": "to devour; to consume and destroy",
@@ -3227,7 +3227,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-085",
     "norsk": "stillferdig",
     "lemma": "stillferdig",
     "english": "quiet; unassuming; reserved; modest; without fuss",
@@ -3245,7 +3245,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-038",
     "norsk": "å strene ut",
     "lemma": "strene ut",
     "english": "to stride out quickly and purposefully; to march out briskly",
@@ -3264,7 +3264,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-086",
     "norsk": "skamløs",
     "lemma": "skamløs",
     "english": "shameless; brazen; impudent",
@@ -3282,7 +3282,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-087",
     "norsk": "vaklende",
     "lemma": "vaklende",
     "english": "wavering; unsteady; vacillating; uncertain",
@@ -3300,7 +3300,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-018",
     "norsk": "klarsynt",
     "lemma": "klarsynt",
     "english": "clear-sighted; perceptive; insightful; having sharp understanding",
@@ -3318,7 +3318,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-037",
     "norsk": "med skrevende ben (et)",
     "lemma": "med skrevende ben",
     "english": "with legs spread wide apart; with legs straddled",
@@ -3336,7 +3336,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-031",
     "norsk": "å smatte",
     "lemma": "smatte",
     "english": "to smack one's lips; to make small clicking or smacking sounds with the mouth",
@@ -3355,7 +3355,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-professional-032",
     "norsk": "med myndighet (en/ei)",
     "lemma": "med myndighet",
     "english": "with authority; with power and command",
@@ -3374,7 +3374,7 @@
     "note": "Myndighetene brukt i flertall referer ofte til regjeringen og Stortinget. Myndighet (i entall) = noen som har autoritet og makt."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-088",
     "norsk": "fordømt folkesky",
     "lemma": "fordømt folkesky",
     "english": "annoyingly afraid of people; insufferably antisocial",
@@ -3392,8 +3392,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "få has på",
+    "id": "v-c-abstract-concepts-043",
+    "norsk": "å få has på",
     "lemma": "få has på",
     "english": "to get a handle on; to gain control over; to get to grips with",
     "ukrainian": "взяти під контроль; впоратися з; розібратися в",
@@ -3411,7 +3411,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-036",
     "norsk": "å ytre frampå",
     "lemma": "ytre frampå",
     "english": "to venture to say something; to voice something (that may be somewhat difficult to say)",
@@ -3430,7 +3430,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-044",
     "norsk": "vekselvis",
     "lemma": "vekselvis",
     "english": "alternately; in turns; by turns",
@@ -3448,7 +3448,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-058",
     "norsk": "sprinkelbenk (en)",
     "lemma": "sprinkelbenk",
     "english": "slatted bench; bench made of narrow wooden planks with gaps between them",
@@ -3466,7 +3466,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-051",
     "norsk": "uten mine til (en/ei)",
     "lemma": "uten mine til",
     "english": "without showing any sign of; without any indication of",
@@ -3484,7 +3484,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-049",
     "norsk": "å bite på agnet",
     "lemma": "bite på agnet",
     "english": "to take the bait; to let oneself be tricked",
@@ -3504,7 +3504,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-089",
     "norsk": "forutsigbar",
     "lemma": "forutsigbar",
     "english": "predictable; foreseeable",
@@ -3522,7 +3522,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-technical-028",
     "norsk": "å spore tid og sted",
     "lemma": "spore tid og sted",
     "english": "to trace the time and place; to determine where and when something occurs",
@@ -3541,7 +3541,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-neuroscience-cognition-007",
     "norsk": "å bite seg merke i",
     "lemma": "bite seg merke i",
     "english": "to take careful note of; to pay close attention to; to make a mental note of",
@@ -3560,7 +3560,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-039",
     "norsk": "gange (en/ei)",
     "lemma": "gange",
     "english": "gait; manner of walking; the way one walks",
@@ -3578,7 +3578,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-050",
     "norsk": "å ense",
     "lemma": "ense",
     "english": "to care about; to take notice of; to pay attention to",
@@ -3597,7 +3597,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-proverbs-002",
     "norsk": "å seile sin egen sjø",
     "lemma": "seile sin egen sjø",
     "english": "to go one's own way; to sail off alone; to leave others behind and go it alone",
@@ -3617,7 +3617,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-059",
     "norsk": "loppemarked (et)",
     "lemma": "loppemarked",
     "english": "flea market; a market where second-hand goods are sold at affordable prices",
@@ -3636,7 +3636,7 @@
     "note": "Vanlig forkortelse: loppis. Andre eksempler på -is-ord: kompis, kjendis, kondis, tyggis, alkis, oldis, fjortis, doldis, frekkis, funkis, grovis, pakkis."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-045",
     "norsk": "å vite av",
     "lemma": "vite av",
     "english": "to know of; to be aware of",
@@ -3655,7 +3655,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-090",
     "norsk": "være hellig overbevist om",
     "lemma": "hellig overbevist om",
     "english": "absolutely convinced of; utterly certain about",
@@ -3673,7 +3673,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-052",
     "norsk": "å fornemme",
     "lemma": "fornemme",
     "english": "to sense; to perceive faintly; to feel dimly; to have a vague feeling of",
@@ -3692,7 +3692,7 @@
     "verb_type": "v1, ureg"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-037",
     "norsk": "tilslørt",
     "lemma": "tilslørt",
     "english": "veiled; hidden; concealed",
@@ -3711,7 +3711,7 @@
     "note": "Tilslørte bondepiker = dessert med bl.a. epler og krem."
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-053",
     "norsk": "å sitre i barnlig spenning",
     "lemma": "sitre i barnlig spenning",
     "english": "to quiver with childlike excitement; to tremble with anticipation and excitement",
@@ -3730,7 +3730,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-051",
     "norsk": "å det stikker noe under",
     "lemma": "det stikker noe under",
     "english": "something is wrong; there is something going on beneath the surface",
@@ -3750,7 +3750,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-professional-033",
     "norsk": "å huse",
     "lemma": "huse",
     "english": "to house; to provide accommodation or shelter for",
@@ -3769,7 +3769,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-040",
     "norsk": "bevares!",
     "lemma": "bevares!",
     "english": "good heavens!; good grief!; my goodness! (exclamation of surprise)",
@@ -3787,7 +3787,7 @@
     "part": "interjection"
   },
   {
-    "id": "",
+    "id": "v-c-linguistics-004",
     "norsk": "liksom",
     "lemma": "liksom",
     "english": "sort of; kind of; in a way; as it were",
@@ -3805,7 +3805,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-091",
     "norsk": "strevsom",
     "lemma": "strevsom",
     "english": "difficult; laborious; trying; demanding",
@@ -3823,7 +3823,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-092",
     "norsk": "sky",
     "lemma": "sky",
     "english": "shy; reserved; tending to avoid other people; withdrawn",
@@ -3841,7 +3841,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-093",
     "norsk": "storsinnet",
     "lemma": "storsinnet",
     "english": "magnanimous; generous and kind",
@@ -3859,7 +3859,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-032",
     "norsk": "sprukken/sprukket",
     "lemma": "sprukken/sprukket",
     "english": "rough; hoarse (of a voice)",
@@ -3877,7 +3877,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-033",
     "norsk": "å senke stemmen",
     "lemma": "senke stemmen",
     "english": "to lower one's voice",
@@ -3896,8 +3896,8 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
-    "norsk": "jeg har latt meg fortelle",
+    "id": "v-c-rhetoric-038",
+    "norsk": "å la seg fortelle",
     "lemma": "la seg fortelle",
     "english": "to have been told; to learn from others",
     "ukrainian": "дізнатися від інших; мені розповіли",
@@ -3916,7 +3916,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-052",
     "norsk": "å stifte bekjentskap med",
     "lemma": "stifte bekjentskap med",
     "english": "to make the acquaintance of; to get to know",
@@ -3936,8 +3936,8 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
-    "norsk": "være ute etter",
+    "id": "v-c-abstract-concepts-046",
+    "norsk": "å være ute etter",
     "lemma": "være ute etter",
     "english": "to be after; to want; to be seeking",
     "ukrainian": "прагнути; шукати; домагатися",
@@ -3955,7 +3955,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-070",
     "norsk": "mørkets frambrudd (et)",
     "lemma": "mørkets frambrudd",
     "english": "the onset of darkness; nightfall",
@@ -3973,7 +3973,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-media-journalism-004",
     "norsk": "furore (en)",
     "lemma": "furore",
     "english": "a sensation; something that attracts great attention",
@@ -3991,7 +3991,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-024",
     "norsk": "syrlig",
     "lemma": "syrlig",
     "english": "slightly sour; tart",
@@ -4009,7 +4009,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-019",
     "norsk": "å vri rundt hjernen på noen",
     "lemma": "vri rundt hjernen på noen",
     "english": "to make someone think in a completely different way than they normally do; to twist someone's mind",
@@ -4029,7 +4029,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-054",
     "norsk": "måpende",
     "lemma": "måpende",
     "english": "gaping; staring open-mouthed (in astonishment or incomprehension)",
@@ -4047,7 +4047,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-071",
     "norsk": "ildtunge (en/ei)",
     "lemma": "ildtunge",
     "english": "tongue of flame; flame",
@@ -4066,7 +4066,7 @@
     "note": "Ildtungene slikket seg oppetter veggene. Det var brann."
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-040",
     "norsk": "å trippe",
     "lemma": "trippe",
     "english": "to trot; to patter; to run with short quick steps",
@@ -4086,7 +4086,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-094",
     "norsk": "å det ligger til hennes natur",
     "lemma": "det ligger til hennes natur",
     "english": "it is in her nature; she is that way by nature",
@@ -4105,7 +4105,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-038",
     "norsk": "strupe (en)",
     "lemma": "strupe",
     "english": "throat; the front part of the neck",
@@ -4124,7 +4124,7 @@
     "note": "Han fikk kniven på strupen = Han ble gitt et ultimatum. De fløy i strupen på hverandre = De angrep hverandre (både fysisk og verbalt)."
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-034",
     "norsk": "å låte",
     "lemma": "låte",
     "english": "to sound; to be heard",
@@ -4143,7 +4143,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-027",
     "norsk": "varseltårn (et)",
     "lemma": "varseltårn",
     "english": "warning tower; watchtower used to signal danger",
@@ -4161,7 +4161,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-035",
     "norsk": "ljomende",
     "lemma": "ljomende",
     "english": "resounding; booming; producing a loud, echoing sound",
@@ -4179,7 +4179,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-036",
     "norsk": "latterskrall (et)",
     "lemma": "latterskrall",
     "english": "burst of laughter; a loud peal of laughter",
@@ -4197,7 +4197,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-039",
     "norsk": "rødflammet",
     "lemma": "rødflammet",
     "english": "red-blotched; with red patches or streaks",
@@ -4215,7 +4215,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-041",
     "norsk": "å krumme",
     "lemma": "krumme",
     "english": "to bend; to curve; to bow into an arc",
@@ -4234,7 +4234,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-053",
     "norsk": "stikkende blikk (et)",
     "lemma": "stikkende blikk",
     "english": "piercing look; a sharp, uncomfortable stare",
@@ -4252,7 +4252,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-095",
     "norsk": "skarp tunge (en/ei)",
     "lemma": "skarp tunge",
     "english": "sharp tongue; a cutting, blunt manner of speaking",
@@ -4270,7 +4270,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-060",
     "norsk": "å rive av",
     "lemma": "rive av",
     "english": "to tear off; to pull off",
@@ -4290,7 +4290,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-061",
     "norsk": "slitesterk",
     "lemma": "slitesterk",
     "english": "durable; able to withstand a good deal of wear",
@@ -4308,7 +4308,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-062",
     "norsk": "hampetau (et)",
     "lemma": "hampetau",
     "english": "hemp rope; a rope made from hemp (a particular plant)",
@@ -4326,7 +4326,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-039",
     "norsk": "å bedyre",
     "lemma": "bedyre",
     "english": "to assert earnestly; to insist that one is telling the truth",
@@ -4346,7 +4346,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-042",
     "norsk": "å sprade",
     "lemma": "sprade",
     "english": "to strut; to walk around showing off and looking pleased with oneself",
@@ -4365,7 +4365,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-055",
     "norsk": "inntullet",
     "lemma": "inntullet",
     "english": "wrapped up in; bundled into (e.g. a blanket)",
@@ -4383,7 +4383,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-041",
     "norsk": "å krype til køys",
     "lemma": "krype til køys",
     "english": "to turn in; to go and lie down in one's bunk or bed",
@@ -4402,7 +4402,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-024",
     "norsk": "å ta skammelig feil",
     "lemma": "ta skammelig feil",
     "english": "to be completely wrong; to be utterly mistaken",
@@ -4421,7 +4421,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-054",
     "norsk": "utroskap (et)",
     "lemma": "utroskap",
     "english": "infidelity; being sexually involved with someone while having another partner",
@@ -4439,7 +4439,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-040",
     "norsk": "stram",
     "lemma": "stram",
     "english": "tight; taut; set in a hard line (here: of a mouth expressing displeasure or anger)",
@@ -4458,7 +4458,7 @@
     "note": "Hun ble stram i maska / Hun fikk et stramt drag om munnen = Hun ble stiv i ansiktet (fordi hun var sur eller sint)."
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-072",
     "norsk": "flodbølge (en/ei)",
     "lemma": "flodbølge",
     "english": "tidal wave; tsunami; a large wave caused by an earthquake or explosion",
@@ -4476,7 +4476,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-056",
     "norsk": "å hytte i været",
     "lemma": "hytte i været",
     "english": "to shake one's fist in the air; to raise and wave one's arm in a threatening manner",
@@ -4495,7 +4495,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-057",
     "norsk": "å bruse",
     "lemma": "bruse",
     "english": "to surge; to seethe; to rush (figuratively: to feel strong inner emotions; to fizz, foam, or roar)",
@@ -4515,7 +4515,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-096",
     "norsk": "uslitelig",
     "lemma": "uslitelig",
     "english": "inexhaustible; indestructible; that does not wear out no matter how much it is used",
@@ -4533,7 +4533,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-043",
     "norsk": "å bakse",
     "lemma": "bakse",
     "english": "to struggle; to flail; to heave; to move with large, laborious movements of the arms",
@@ -4552,7 +4552,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-058",
     "norsk": "neve (en)",
     "lemma": "neve",
     "english": "fist; hand (colloquial, often in set phrases referring to small size or striking)",
@@ -4571,7 +4571,7 @@
     "note": "Siden jeg var en neve stor … = Siden jeg var liten. Han slo til med knyttneven = Han slo med knyttet (lukket) hånd. | Fra jeg var en neve stor = fra jeg var liten."
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-025",
     "norsk": "råtnende",
     "lemma": "råtnende",
     "english": "rotting, decaying (used of food that has gone bad)",
@@ -4589,7 +4589,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-044",
     "norsk": "å snike seg bort",
     "lemma": "snike seg bort",
     "english": "to slip away, to sneak off (without being noticed)",
@@ -4608,7 +4608,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-055",
     "norsk": "sammensvoren",
     "lemma": "sammensvoren",
     "english": "conspiring, having joined a conspiracy or secret plot",
@@ -4626,7 +4626,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-037",
     "norsk": "klam",
     "lemma": "klam",
     "english": "clammy, damp, moist",
@@ -4645,7 +4645,7 @@
     "note": "Fortiden ligger som en klam hånd over familien = Fortiden plager og preger familien."
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-063",
     "norsk": "å rigge seg til",
     "lemma": "rigge seg til",
     "english": "to get set up, to settle in with everything one needs around oneself",
@@ -4665,7 +4665,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-028",
     "norsk": "hekkletøy (et)",
     "lemma": "hekkletøy",
     "english": "crochet work; needlework done with a crochet hook and yarn",
@@ -4683,7 +4683,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-041",
     "norsk": "innen rekkevidde (en/ei)",
     "lemma": "innen rekkevidde",
     "english": "within reach; close enough to be touched or grabbed with one's hands",
@@ -4702,7 +4702,7 @@
     "note": "Hun ante ikke rekkevidden av sin handling = Hun ante ikke hvilke konsekvenser handlingen hennes kunne få."
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-045",
     "norsk": "langflat",
     "lemma": "langflat",
     "english": "stretched out flat, lying at full length on the ground",
@@ -4720,7 +4720,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-026",
     "norsk": "avsilt",
     "lemma": "avsilt",
     "english": "drained, strained (of food from which the cooking water has been removed)",
@@ -4738,7 +4738,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-038",
     "norsk": "bjelle (en/ei)",
     "lemma": "bjelle",
     "english": "small bell (typically made of metal)",
@@ -4756,7 +4756,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-046",
     "norsk": "å vasse",
     "lemma": "vasse",
     "english": "to wade (walking through water up to the calves or knees)",
@@ -4776,7 +4776,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-073",
     "norsk": "hengemyr (en/ei)",
     "lemma": "hengemyr",
     "english": "quagmire, floating bog (wet, vegetated marshland that can suddenly cause a person to sink)",
@@ -4794,7 +4794,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-074",
     "norsk": "synkebunn (en)",
     "lemma": "synkebunn",
     "english": "sinking ground, quicksand-like bottom (not solid, but a surface that shifts and causes one to sink)",
@@ -4812,7 +4812,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-047",
     "norsk": "å bestige",
     "lemma": "bestige",
     "english": "to climb (something high or elevated); to ascend",
@@ -4832,7 +4832,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-039",
     "norsk": "glohet",
     "lemma": "glohet",
     "english": "scorching hot; blazing hot",
@@ -4850,7 +4850,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-040",
     "norsk": "å suse i ørene",
     "lemma": "suse i ørene",
     "english": "to have a ringing or rushing sound in one's ears; to hear a faint whooshing sound in the ears",
@@ -4869,7 +4869,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-042",
     "norsk": "å blunke",
     "lemma": "blunke",
     "english": "to blink; to close and open one's eyes quickly",
@@ -4888,7 +4888,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-056",
     "norsk": "slengkommentar (en)",
     "lemma": "slengkommentar",
     "english": "a throwaway remark; an offhand comment (often slightly cheeky or provocative)",
@@ -4906,7 +4906,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-050",
     "norsk": "olm",
     "lemma": "olm",
     "english": "angry; furious",
@@ -4924,7 +4924,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-064",
     "norsk": "glasskår (et)",
     "lemma": "glasskår",
     "english": "shards of glass; broken pieces of glass",
@@ -4942,7 +4942,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-057",
     "norsk": "å flire",
     "lemma": "flire",
     "english": "to sneer; to grin maliciously; to laugh mockingly",
@@ -4961,7 +4961,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-058",
     "norsk": "hånlig",
     "lemma": "hånlig",
     "english": "contemptuous; scornful; disdainful; showing a lack of respect",
@@ -4979,7 +4979,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-065",
     "norsk": "paljett (en)",
     "lemma": "paljett",
     "english": "sequin; a small decorative disc of glass or metal sewn onto fabric",
@@ -4997,7 +4997,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-043",
     "norsk": "øyekrok (en)",
     "lemma": "øyekrok",
     "english": "the inner corner of the eye; the part of the eye closest to the nose",
@@ -5015,7 +5015,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-059",
     "norsk": "døsig",
     "lemma": "døsig",
     "english": "drowsy; sleepy; sluggish",
@@ -5033,7 +5033,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-060",
     "norsk": "å det knytter seg i magen",
     "lemma": "det knytter seg i magen",
     "english": "to get a knot in one's stomach; to feel a painful emotional sensation manifesting in the stomach",
@@ -5053,7 +5053,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-097",
     "norsk": "seig",
     "lemma": "seig",
     "english": "tough; tenacious; resilient; (of food) chewy, hard to chew; (of a person) enduring, hard to bring down",
@@ -5072,7 +5072,7 @@
     "note": "Han er seig = Han lever lenge og dør ikke lett. Kjøttet er seigt = Kjøttet er vanskelig å tygge."
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-059",
     "norsk": "bebreidende",
     "lemma": "bebreidende",
     "english": "reproachful; blaming; critical",
@@ -5090,7 +5090,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-025",
     "norsk": "tung som bly (et)",
     "lemma": "tung som bly",
     "english": "heavy as lead; extremely heavy",
@@ -5108,7 +5108,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-medicine-healthcare-006",
     "norsk": "å det svimler for henne",
     "lemma": "det svimler for henne",
     "english": "she feels dizzy; she becomes dizzy",
@@ -5127,7 +5127,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-048",
     "norsk": "å vifte med armene",
     "lemma": "vifte med armene",
     "english": "to wave one's arms; to make quick, small movements with the arms",
@@ -5147,7 +5147,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-051",
     "norsk": "opprømt",
     "lemma": "opprømt",
     "english": "elated; in high spirits; cheerful; excited",
@@ -5165,7 +5165,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-047",
     "norsk": "surr (et)",
     "lemma": "surr",
     "english": "muddle; confusion; chaos",
@@ -5184,7 +5184,7 @@
     "note": "Det gikk i surr for henne = Alt ble kaos for henne."
   },
   {
-    "id": "",
+    "id": "v-c-linguistics-005",
     "norsk": "å tygge på et ord",
     "lemma": "tygge på et ord",
     "english": "to chew on a word; to turn a word over in one's mind and feel out its meaning",
@@ -5203,7 +5203,7 @@
     "verb_type": "v1, v3"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-052",
     "norsk": "forlegenhet (en/ei)",
     "lemma": "forlegenhet",
     "english": "embarrassment; shyness; self-consciousness",
@@ -5221,7 +5221,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-026",
     "norsk": "gedigen",
     "lemma": "gedigen",
     "english": "enormous; massive; very large indeed",
@@ -5239,7 +5239,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-075",
     "norsk": "eik (en/ei)",
     "lemma": "eik",
     "english": "oak; oak tree",
@@ -5257,7 +5257,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-076",
     "norsk": "trekrone (en/ei)",
     "lemma": "trekrone",
     "english": "tree crown; treetop; canopy of a tree",
@@ -5275,7 +5275,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-077",
     "norsk": "løvverk (et)",
     "lemma": "løvverk",
     "english": "foliage; the leaves of a tree collectively",
@@ -5293,7 +5293,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-041",
     "norsk": "sus (et)",
     "lemma": "sus",
     "english": "a soft, rushing sound; a gentle whoosh or murmur (often of the wind)",
@@ -5312,7 +5312,7 @@
     "note": "De lever i sus og dus = De lever i velstand."
   },
   {
-    "id": "",
+    "id": "v-c-medicine-healthcare-007",
     "norsk": "lindring (en/ei)",
     "lemma": "lindring",
     "english": "relief; alleviation (of pain or distress)",
@@ -5330,7 +5330,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-053",
     "norsk": "å trenge så sårt",
     "lemma": "trenge så sårt",
     "english": "to need desperately; to be in great need of",
@@ -5350,7 +5350,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-060",
     "norsk": "å slenge med leppa",
     "lemma": "slenge med leppa",
     "english": "to talk back cheekily; to make impertinent remarks",
@@ -5369,7 +5369,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-027",
     "norsk": "formelig",
     "lemma": "formelig",
     "english": "practically; virtually; quite simply; almost",
@@ -5388,8 +5388,8 @@
     "note": "Det lyste formelig av henne. Hun løp formelig forbi dem. Hun føler seg formelig som ansatt i bedriften."
   },
   {
-    "id": "",
-    "norsk": "rekke",
+    "id": "v-c-everyday-objects-066",
+    "norsk": "å rekke",
     "lemma": "rekke",
     "english": "to manage to do something in time; to have time for",
     "ukrainian": "встигнути; мати час на щось",
@@ -5408,7 +5408,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-049",
     "norsk": "å romstere",
     "lemma": "romstere",
     "english": "to move around heavily; to bustle about noisily",
@@ -5427,7 +5427,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-050",
     "norsk": "å fare forbi",
     "lemma": "fare forbi",
     "english": "to rush past; to pass by quickly",
@@ -5447,7 +5447,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-020",
     "norsk": "å uten å ense",
     "lemma": "uten å ense",
     "english": "without noticing; without paying attention to",
@@ -5466,7 +5466,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-061",
     "norsk": "å slå følge",
     "lemma": "slå følge",
     "english": "to join someone; to go together in the same direction",
@@ -5486,7 +5486,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-054",
     "norsk": "minnene ligger badet i et nostalgisk skjær (et)",
     "lemma": "minnene ligger badet i et nostalgisk skjær",
     "english": "the memories appear in a nostalgic glow; the memories seem finer than they perhaps were in reality",
@@ -5504,7 +5504,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-048",
     "norsk": "skjellsettende",
     "lemma": "skjellsettende",
     "english": "epoch-making; decisive; marking a turning point",
@@ -5523,7 +5523,7 @@
     "note": "Det falt skjell fra hans øyne = Han forstod hvordan det hang sammen."
   },
   {
-    "id": "",
+    "id": "v-c-formal-writing-025",
     "norsk": "å inntreffe",
     "lemma": "inntreffe",
     "english": "to occur suddenly; to happen; to take place",
@@ -5542,7 +5542,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-049",
     "norsk": "skjebnesvanger",
     "lemma": "skjebnesvanger",
     "english": "fateful; with grave consequences for the future",
@@ -5560,7 +5560,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-050",
     "norsk": "ufattelig",
     "lemma": "ufattelig",
     "english": "incomprehensible; inconceivable; beyond understanding",
@@ -5578,7 +5578,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-055",
     "norsk": "grufull",
     "lemma": "grufull",
     "english": "horrifying; dreadful; terrible",
@@ -5596,7 +5596,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-040",
     "norsk": "gullkantede ord",
     "lemma": "gullkantede ord",
     "english": "gilded words; fine-sounding phrases (perhaps too fine to reflect reality)",
@@ -5614,8 +5614,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "ta til å",
+    "id": "v-c-abstract-concepts-051",
+    "norsk": "å ta til å",
     "lemma": "ta til å",
     "english": "to begin; to start",
     "ukrainian": "починати; розпочинати",
@@ -5633,7 +5633,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-021",
     "norsk": "etterpåklokskap (en)",
     "lemma": "etterpåklokskap",
     "english": "hindsight; wisdom after the fact",
@@ -5652,7 +5652,7 @@
     "note": "I etterpåklokskapens navn må jeg si at statsråden burde ha tenkt før hun snakket."
   },
   {
-    "id": "",
+    "id": "v-c-politics-democracy-009",
     "norsk": "undertrykkelse (en)",
     "lemma": "undertrykkelse",
     "english": "oppression; suppression; tyranny",
@@ -5670,7 +5670,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-022",
     "norsk": "indoktrinering (en/ei)",
     "lemma": "indoktrinering",
     "english": "indoctrination; systematic one-sided influence",
@@ -5688,7 +5688,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-098",
     "norsk": "enestående",
     "lemma": "enestående",
     "english": "unique; exceptional; outstanding",
@@ -5706,8 +5706,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "tre fram for noen",
+    "id": "v-c-literary-027",
+    "norsk": "å tre fram for noen",
     "lemma": "tre fram for noen",
     "english": "to appear before someone; to present itself to someone",
     "ukrainian": "з'являтися перед кимось; поставати перед кимось",
@@ -5726,7 +5726,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-literary-028",
     "norsk": "min barndoms rike (et)",
     "lemma": "min barndoms rike",
     "english": "the realm of my childhood; the world of my childhood years",
@@ -5744,7 +5744,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-078",
     "norsk": "oase (en)",
     "lemma": "oase",
     "english": "oasis; paradise; a fertile and beautiful place",
@@ -5762,7 +5762,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-061",
     "norsk": "fnisende",
     "lemma": "fnisende",
     "english": "giggling; tittering; laughing in a suppressed way",
@@ -5780,7 +5780,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-099",
     "norsk": "vilter",
     "lemma": "vilter",
     "english": "boisterous; unruly; wild; uncontrollable; lively",
@@ -5798,7 +5798,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-062",
     "norsk": "å holde noen unna noe",
     "lemma": "holde noen unna noe",
     "english": "to keep someone away from something; to prevent someone from going somewhere or doing something",
@@ -5818,7 +5818,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-067",
     "norsk": "slengtau (et)",
     "lemma": "slengtau",
     "english": "rope swing; a rope one swings on to cross a river or for fun",
@@ -5836,7 +5836,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-044",
     "norsk": "smidig",
     "lemma": "smidig",
     "english": "supple; flexible; agile; elastic",
@@ -5854,7 +5854,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-068",
     "norsk": "rep (et)",
     "lemma": "rep",
     "english": "rope",
@@ -5872,7 +5872,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-100",
     "norsk": "lunken",
     "lemma": "lunken",
     "english": "lukewarm (approximately 30-40 degrees); also: indifferent, half-hearted",
@@ -5891,7 +5891,7 @@
     "note": "Jeg føler meg ganske lunken til det som skjer = Jeg er litt likegyldig til det som skjer."
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-069",
     "norsk": "møkkete",
     "lemma": "møkkete",
     "english": "dirty, filthy",
@@ -5910,7 +5910,7 @@
     "note": "Brusen solgte som hakka møkk = Det ble solgt mye brus."
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-027",
     "norsk": "å slurpe i seg",
     "lemma": "slurpe i seg",
     "english": "to slurp; to drink noisily",
@@ -5929,7 +5929,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-079",
     "norsk": "livgivende",
     "lemma": "livgivende",
     "english": "life-giving; that which gives life",
@@ -5947,7 +5947,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-080",
     "norsk": "å skue",
     "lemma": "skue",
     "english": "to gaze, to behold (over a wide area from a vantage point)",
@@ -5966,7 +5966,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-052",
     "norsk": "brå",
     "lemma": "brå",
     "english": "sudden, abrupt",
@@ -5984,7 +5984,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-053",
     "norsk": "forvarsel (et)",
     "lemma": "forvarsel",
     "english": "forewarning, advance warning, omen",
@@ -6002,7 +6002,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-056",
     "norsk": "å rive opp med røttene",
     "lemma": "rive opp med røttene",
     "english": "to uproot; to be removed from the place where one grew up",
@@ -6021,7 +6021,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-063",
     "norsk": "uglesett",
     "lemma": "uglesett",
     "english": "looked upon with disapproval; regarded with a critical eye",
@@ -6040,8 +6040,8 @@
     "note": "Her er det ugler i mosen = Her er det noe som ikke stemmer = Her er det noe muffens."
   },
   {
-    "id": "",
-    "norsk": "gå i ett for noen",
+    "id": "v-c-psychology-advanced-023",
+    "norsk": "å gå i ett for noen",
     "lemma": "gå i ett for noen",
     "english": "to blur together for someone; to become confused or indistinguishable in someone's mind",
     "ukrainian": "зливатися в одне для когось; бути нерозрізненим",
@@ -6060,7 +6060,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-042",
     "norsk": "å skrattle",
     "lemma": "skrattle",
     "english": "to cackle; to laugh loudly with an open mouth",
@@ -6079,7 +6079,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-062",
     "norsk": "sviende",
     "lemma": "sviende",
     "english": "stinging, burning; that which hurts sharply",
@@ -6097,7 +6097,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-063",
     "norsk": "å stikke som nåler",
     "lemma": "stikke som nåler",
     "english": "to sting like needles; to hurt very much",
@@ -6116,7 +6116,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-064",
     "norsk": "avskum (et)",
     "lemma": "avskum",
     "english": "scum; a despicable or morally reprehensible person",
@@ -6135,7 +6135,7 @@
     "note": "Synonym: utskudd, pakk, lømmel"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-065",
     "norsk": "utskudd (et)",
     "lemma": "utskudd",
     "english": "scoundrel; lowlife; person of low moral character",
@@ -6154,7 +6154,7 @@
     "note": "Synonym: avskum, pakk, lømmel"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-066",
     "norsk": "pakk (et)",
     "lemma": "pakk",
     "english": "riffraff; rabble; person who disregards laws and rules",
@@ -6173,7 +6173,7 @@
     "note": "Synonym: avskum, utskudd, lømmel"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-101",
     "norsk": "lømmel (en)",
     "lemma": "lømmel",
     "english": "lout; ruffian; inconsiderate young man",
@@ -6192,7 +6192,7 @@
     "note": "Synonym: avskum, utskudd, pakk"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-067",
     "norsk": "pøbel (en)",
     "lemma": "pøbel",
     "english": "hooligan; troublemaker; person who acts badly",
@@ -6210,7 +6210,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-081",
     "norsk": "å forpeste",
     "lemma": "forpeste",
     "english": "to pollute; to contaminate; to make something smell bad or unpleasant for others",
@@ -6229,7 +6229,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-064",
     "norsk": "å snappe etter pusten",
     "lemma": "snappe etter pusten",
     "english": "to gasp for breath; to breathe rapidly and hard to get air into the lungs",
@@ -6249,7 +6249,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-054",
     "norsk": "være myntet på",
     "lemma": "myntet på",
     "english": "aimed at; intended for; designed for",
@@ -6268,7 +6268,7 @@
     "note": "Eksempler: Reglene var myntet på dem. Spørsmålene er myntet på elevene. Prosjektet var myntet på elever i skolen."
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-055",
     "norsk": "å rakne",
     "lemma": "rakne",
     "english": "to come apart at the seams; to unravel; to fall apart (of textiles or relationships)",
@@ -6288,7 +6288,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-065",
     "norsk": "å gynge",
     "lemma": "gynge",
     "english": "to sway; to rock back and forth; to be uncertain or unstable",
@@ -6308,7 +6308,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-066",
     "norsk": "å svimle for en",
     "lemma": "svimle for en",
     "english": "to feel dizzy; to feel as though everything is spinning",
@@ -6327,7 +6327,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-051",
     "norsk": "å famle i blinde",
     "lemma": "famle i blinde",
     "english": "to grope in the dark; to search for something without being able to see",
@@ -6346,7 +6346,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-056",
     "norsk": "fotfeste (et)",
     "lemma": "fotfeste",
     "english": "foothold; firm footing; stable position in life",
@@ -6365,7 +6365,7 @@
     "note": "Hun har mistet fotfestet = Hun har mistet kontrollen og balansen."
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-043",
     "norsk": "å ljome",
     "lemma": "ljome",
     "english": "to resound; to echo; to ring out loudly",
@@ -6384,7 +6384,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-067",
     "norsk": "å rase gjennom en",
     "lemma": "rase gjennom en",
     "english": "to rush through someone; (of emotions) to surge through a person with great force and speed",
@@ -6403,7 +6403,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-012",
     "norsk": "begrunnet frykt (en)",
     "lemma": "begrunnet frykt",
     "english": "justified fear; well-founded fear; fear one had good reason to feel",
@@ -6421,8 +6421,8 @@
     "part": "noun"
   },
   {
-    "id": "",
-    "norsk": "snike seg forbi",
+    "id": "v-c-manner-of-motion-052",
+    "norsk": "å snike seg forbi",
     "lemma": "snike seg forbi",
     "english": "to slip past unnoticed; to sneak by quietly",
     "ukrainian": "прослизнути повз; непомітно пройти мимо",
@@ -6440,7 +6440,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-070",
     "norsk": "dra kjensel på noen (en)",
     "lemma": "dra kjensel på noen",
     "english": "to recognize someone",
@@ -6459,7 +6459,7 @@
     "note": "Ungdommene dro seg til klokka 12.00 = Ungdommene sov til klokka 12.00. Faren dro på det da han svarte = Faren svarte ikke med en gang."
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-045",
     "norsk": "lugg (en)",
     "lemma": "lugg",
     "english": "fringe; bangs; hair hanging down over the forehead",
@@ -6477,7 +6477,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-057",
     "norsk": "skadefro",
     "lemma": "skadefro",
     "english": "schadenfreude; gleeful at another's misfortune",
@@ -6495,7 +6495,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-diplomacy-international-005",
     "norsk": "landflyktighet (en/ei)",
     "lemma": "landflyktighet",
     "english": "exile; the life of a refugee or exile",
@@ -6513,7 +6513,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-041",
     "norsk": "ha bind for øynene (et)",
     "lemma": "ha bind for øynene",
     "english": "to have a blindfold on; to be blind to reality (literally or figuratively)",
@@ -6531,7 +6531,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-professional-034",
     "norsk": "å brødfø",
     "lemma": "brødfø",
     "english": "to feed; to provide sustenance for; to support financially",
@@ -6551,7 +6551,7 @@
     "verb_type": "v4"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-068",
     "norsk": "skrekkinngytende",
     "lemma": "skrekkinngytende",
     "english": "terrifying; horrifying; that which instills great fear",
@@ -6569,7 +6569,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-057",
     "norsk": "skall (et)",
     "lemma": "skall",
     "english": "shell; outer layer; husk; casing",
@@ -6588,7 +6588,7 @@
     "note": "Hun trekker seg inn i skallet sitt = Hun isolerer seg for omverdenen."
   },
   {
-    "id": "",
+    "id": "v-c-architecture-design-010",
     "norsk": "reisverk (et)",
     "lemma": "reisverk",
     "english": "timber frame; half-timbering; the structural wooden framework of a building",
@@ -6606,7 +6606,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-042",
     "norsk": "urgammel",
     "lemma": "urgammel",
     "english": "ancient; primordial; extremely old",
@@ -6625,7 +6625,7 @@
     "note": "Utgammel = eldgammel = svært gammel."
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-068",
     "norsk": "slagen",
     "lemma": "slagen",
     "english": "defeated; vanquished; overcome",
@@ -6644,7 +6644,7 @@
     "note": "Hun følger den slagne landevei = Hun holder seg til det som er kjært og kjært."
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-102",
     "norsk": "kuet",
     "lemma": "kuet",
     "english": "suppressed; oppressed",
@@ -6662,7 +6662,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-103",
     "norsk": "barnlig",
     "lemma": "barnlig",
     "english": "childlike; naive; credulous",
@@ -6680,7 +6680,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-071",
     "norsk": "å slippe",
     "lemma": "slippe",
     "english": "to be spared from; to not have to (do something)",
@@ -6700,8 +6700,8 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
-    "norsk": "stikke seg inn i noen",
+    "id": "v-c-embodied-emotion-069",
+    "norsk": "å stikke seg inn i noen",
     "lemma": "stikke seg inn i noen",
     "english": "to sting; to pierce someone (of hurtful words)",
     "ukrainian": "вколоти; боляче вразити когось (про слова)",
@@ -6720,7 +6720,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-literary-029",
     "norsk": "utlest",
     "lemma": "utlest",
     "english": "finished reading; read through (of a book)",
@@ -6738,7 +6738,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-archaic-043",
     "norsk": "svunnen",
     "lemma": "svunnen",
     "english": "vanished; gone (especially from a distant past)",
@@ -6757,7 +6757,7 @@
     "note": "Den er forsvunnet = Den er borte (nær i tid). Den er svunnen = Den er borte (i en mer fjern tid)."
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-053",
     "norsk": "å tråkke",
     "lemma": "tråkke",
     "english": "to tread; to step on (something)",
@@ -6777,7 +6777,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-013",
     "norsk": "å vende tilbake til åstedet",
     "lemma": "vende tilbake til åstedet",
     "english": "to return to the scene of the crime",
@@ -6796,7 +6796,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-069",
     "norsk": "berøvet",
     "lemma": "berøvet",
     "english": "robbed of; deprived of",
@@ -6814,7 +6814,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-literary-030",
     "norsk": "å forbanne",
     "lemma": "forbanne",
     "english": "to curse; to call down a punishment upon someone",
@@ -6833,7 +6833,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-054",
     "norsk": "å slynge",
     "lemma": "slynge",
     "english": "to hurl; to fling; to cast",
@@ -6852,7 +6852,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-058",
     "norsk": "å utsette seg for noe",
     "lemma": "utsette seg for noe",
     "english": "to expose oneself to something; to risk something",
@@ -6871,7 +6871,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-042",
     "norsk": "narrespill (et)",
     "lemma": "narrespill",
     "english": "mockery; farce; a sham performance that ridicules something",
@@ -6889,8 +6889,8 @@
     "part": "noun"
   },
   {
-    "id": "",
-    "norsk": "sitte som spikret fast",
+    "id": "v-c-embodied-emotion-070",
+    "norsk": "å sitte som spikret fast",
     "lemma": "sitte som spikret fast",
     "english": "to stick in one's mind forever; (of words) impossible to forget",
     "ukrainian": "врізатися в пам'ять назавжди; (про слова) неможливо забути",
@@ -6909,7 +6909,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-071",
     "norsk": "å gnage seg inn i sjelen",
     "lemma": "gnage seg inn i sjelen",
     "english": "to gnaw its way into one's soul; (of words or events) to leave a deep and lasting negative mark on a person",
@@ -6929,7 +6929,7 @@
     "verb_type": "v1, v3, ureg"
   },
   {
-    "id": "",
+    "id": "v-c-neuroscience-cognition-008",
     "norsk": "å sanse",
     "lemma": "sanse",
     "english": "to perceive; to notice; to become aware of through the senses",
@@ -6948,7 +6948,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-medicine-healthcare-008",
     "norsk": "i villelse (en)",
     "lemma": "i villelse",
     "english": "in a state of delirium; in a confused, disoriented state",
@@ -6967,7 +6967,7 @@
     "note": "Hun snakker i villelse = Hun vet ikke hva hun sier."
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-055",
     "norsk": "skyndsom",
     "lemma": "skyndsom",
     "english": "hasty; swift; done in a hurry",
@@ -6985,7 +6985,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-070",
     "norsk": "forsonende",
     "lemma": "forsonende",
     "english": "conciliatory; peace-seeking; mild and reconciling in tone or manner",
@@ -7003,7 +7003,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-linguistics-006",
     "norsk": "vending (en/ei)",
     "lemma": "vending",
     "english": "turn; change; (also) a turn of phrase or expression",
@@ -7022,7 +7022,7 @@
     "note": "Han kunne mange uttrykk og vendinger = Han kunne mange uttrykk og talemåter."
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-024",
     "norsk": "innskytelse (en)",
     "lemma": "innskytelse",
     "english": "sudden impulse; whim; sudden idea that comes to mind",
@@ -7040,7 +7040,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-072",
     "norsk": "å gispe",
     "lemma": "gispe",
     "english": "to gasp; to catch one's breath (out of fear, shock, surprise, or breathlessness)",
@@ -7059,7 +7059,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-082",
     "norsk": "busk (en)",
     "lemma": "busk",
     "english": "bush; shrub; a small tree or other relatively low-growing plant",
@@ -7077,7 +7077,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-059",
     "norsk": "uføre (et)",
     "lemma": "uføre",
     "english": "predicament; difficult or inextricable situation; impassable terrain",
@@ -7095,7 +7095,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-056",
     "norsk": "å dra til",
     "lemma": "dra til",
     "english": "to pull towards oneself; to draw in",
@@ -7114,7 +7114,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-083",
     "norsk": "gjørme (en/ei)",
     "lemma": "gjørme",
     "english": "mud; a mixture of water and earth",
@@ -7132,7 +7132,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-057",
     "norsk": "å puffe",
     "lemma": "puffe",
     "english": "to push; to shove (gently or with a nudge)",
@@ -7151,7 +7151,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-060",
     "norsk": "krafttak (et)",
     "lemma": "krafttak",
     "english": "a major effort; an all-out push; full commitment to a task",
@@ -7169,7 +7169,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-084",
     "norsk": "buskas (et)",
     "lemma": "buskas",
     "english": "bushes and shrubs; undergrowth",
@@ -7187,7 +7187,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-085",
     "norsk": "skråning (en/ei)",
     "lemma": "skråning",
     "english": "slope; incline (where it can be difficult to walk)",
@@ -7205,7 +7205,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-104",
     "norsk": "sløv",
     "lemma": "sløv",
     "english": "inattentive; dull; not sharp; listless",
@@ -7223,7 +7223,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-086",
     "norsk": "bortenfor",
     "lemma": "bortenfor",
     "english": "beyond; farther away than",
@@ -7241,7 +7241,7 @@
     "part": "preposition"
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-014",
     "norsk": "å påføre noen en skade",
     "lemma": "påføre noen en skade",
     "english": "to inflict harm on someone; to cause someone an injury",
@@ -7260,7 +7260,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-087",
     "norsk": "bratt",
     "lemma": "bratt",
     "english": "steep (of a hill or slope with a strong incline)",
@@ -7278,7 +7278,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-intensifiers-degree-028",
     "norsk": "såre enkelt",
     "lemma": "såre enkelt",
     "english": "extremely easy; absolutely not difficult",
@@ -7296,7 +7296,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-025",
     "norsk": "få utløp (et)",
     "lemma": "få utløp",
     "english": "outlet; release (of energy, emotions, etc.)",
@@ -7315,7 +7315,7 @@
     "note": "Hunden har mye energi. Den får utløp for energien når den løper i skogen."
   },
   {
-    "id": "",
+    "id": "v-c-professional-035",
     "norsk": "å varte opp",
     "lemma": "varte opp",
     "english": "to wait on; to serve; to attend to",
@@ -7334,7 +7334,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-071",
     "norsk": "å skjemme bort",
     "lemma": "skjemme bort",
     "english": "to spoil; to pamper (someone excessively); to do someone a disservice by being too kind",
@@ -7354,7 +7354,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-072",
     "norsk": "å overøse",
     "lemma": "overøse",
     "english": "to overwhelm; to shower with; to heap upon",
@@ -7373,7 +7373,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-088",
     "norsk": "trolsk",
     "lemma": "trolsk",
     "english": "magical; enchanting; with a quality of sorcery or fairy-tale mystique",
@@ -7391,7 +7391,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-046",
     "norsk": "matt",
     "lemma": "matt",
     "english": "dull; lustreless; without shine or gloss",
@@ -7410,7 +7410,7 @@
     "note": "Hun har et matt uttrykk i øynene = Hun ser trett og trist ut."
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-073",
     "norsk": "omslynget",
     "lemma": "omslynget",
     "english": "entwined; embraced; wrapped around each other",
@@ -7429,7 +7429,7 @@
     "note": "De stod tett omslynget = De omfavnet/klemte hverandre."
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-044",
     "norsk": "dus",
     "lemma": "dus",
     "english": "soft; muted; subdued (of colours, light, etc.)",
@@ -7448,7 +7448,7 @@
     "note": "Er du dus eller dis med kong Harald? = Sier du «du» eller «De» til kong Harald?"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-105",
     "norsk": "omhu (en)",
     "lemma": "omhu",
     "english": "care; diligence; thoroughness; carefulness",
@@ -7467,7 +7467,7 @@
     "note": "Hun gjør alt med omhu = Hun gjør alt på en grundig måte. Hun viser omhu = Hun viser omsorg."
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-045",
     "norsk": "smektende",
     "lemma": "smektende",
     "english": "alluring; seductive; enticing (often of rhythms or melodies)",
@@ -7485,7 +7485,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-gastronomy-028",
     "norsk": "stettglass (et)",
     "lemma": "stettglass",
     "english": "stemmed glass; wine glass (a glass with a stem or base)",
@@ -7503,7 +7503,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-073",
     "norsk": "fortrolig",
     "lemma": "fortrolig",
     "english": "confidential; intimate; trusted (describing someone one confides in or shares personal matters with)",
@@ -7521,8 +7521,8 @@
     "part": "adjective"
   },
   {
-    "id": "",
-    "norsk": "være inngitt med",
+    "id": "v-c-complex-emotions-058",
+    "norsk": "å være inngitt med",
     "lemma": "inngi med",
     "english": "to be filled with; to be imbued with",
     "ukrainian": "бути наповненим чимось; бути пройнятим",
@@ -7541,7 +7541,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-existential-abstract-006",
     "norsk": "visshet (en/ei)",
     "lemma": "visshet",
     "english": "certainty; the state of knowing something for sure",
@@ -7559,7 +7559,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-psychology-advanced-026",
     "norsk": "likevekt (en/ei)",
     "lemma": "likevekt",
     "english": "equanimity; balance; inner equilibrium; composure",
@@ -7577,7 +7577,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-cultural-heritage-029",
     "norsk": "pilspiss (en)",
     "lemma": "pilspiss",
     "english": "arrowhead; the tip or point of an arrow",
@@ -7595,7 +7595,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-058",
     "norsk": "å bore seg inn",
     "lemma": "bore seg inn",
     "english": "to bore into; to force or drill one's way in; to penetrate by pressing in",
@@ -7615,7 +7615,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-rhetoric-043",
     "norsk": "innstendig",
     "lemma": "innstendig",
     "english": "urgent; insistent; earnest; pressing",
@@ -7633,7 +7633,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-059",
     "norsk": "gnist (en)",
     "lemma": "gnist",
     "english": "spark; inspiration; a flash of creative energy",
@@ -7651,7 +7651,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-089",
     "norsk": "piskende",
     "lemma": "piskende",
     "english": "lashing; whipping; beating hard (as of rain or wind)",
@@ -7669,7 +7669,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-059",
     "norsk": "kavende",
     "lemma": "kavende",
     "english": "flailing; struggling helplessly; thrashing about",
@@ -7687,7 +7687,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-061",
     "norsk": "å tillegge betydning",
     "lemma": "tillegge betydning",
     "english": "to attach importance to; to regard something as significant; to ascribe weight to",
@@ -7707,8 +7707,8 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
-    "norsk": "gi lyd fra seg",
+    "id": "v-c-sensory-sound-046",
+    "norsk": "å gi lyd fra seg",
     "lemma": "gi lyd fra seg",
     "english": "to make a sound; to let oneself be heard; to give a sign of life",
     "ukrainian": "подавати звук; давати про себе знати; подавати ознаки життя",
@@ -7726,7 +7726,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-090",
     "norsk": "flommende",
     "lemma": "flommende",
     "english": "flowing abundantly; streaming; coming in great quantities",
@@ -7744,7 +7744,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-091",
     "norsk": "fossende",
     "lemma": "fossende",
     "english": "gushing; rushing; flowing so abundantly that the water foams, as in a waterfall",
@@ -7762,7 +7762,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-092",
     "norsk": "stryk (et)",
     "lemma": "stryk",
     "english": "rapids; section of a river with a strong current",
@@ -7781,7 +7781,7 @@
     "note": "Han fikk stryk på eksamen = Han bestod ikke eksamen. Gutten fikk stryk av sin far = Gutten ble slått av sin far."
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-074",
     "norsk": "å stagge",
     "lemma": "stagge",
     "english": "to try to stop; to calm; to restrain",
@@ -7800,7 +7800,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-062",
     "norsk": "ubetinget",
     "lemma": "ubetinget",
     "english": "unconditional; without reservation; absolute",
@@ -7819,7 +7819,7 @@
     "note": "Han har fått en ubetinget dom = Han har fått en dom han må sone i fengsel. Betinget dom = Dom som må sones i fengsel hvis hun begår en ny forbrytelse i løpet av prøvetiden."
   },
   {
-    "id": "",
+    "id": "v-c-advanced-law-justice-015",
     "norsk": "ransakelse (en)",
     "lemma": "ransakelse",
     "english": "thorough search; search (often conducted by the police)",
@@ -7837,7 +7837,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-047",
     "norsk": "perlende",
     "lemma": "perlende",
     "english": "pearlescent; sparkling; bubbling; brilliantly white and fine",
@@ -7856,8 +7856,8 @@
     "note": "De drakk perlende champagne = De drakk champagne med bobler (kullsyre)."
   },
   {
-    "id": "",
-    "norsk": "gå opp for noen",
+    "id": "v-c-neuroscience-cognition-009",
+    "norsk": "å gå opp for noen",
     "lemma": "gå opp for noen",
     "english": "to dawn on someone; to realize; to suddenly understand",
     "ukrainian": "дійти до когось; раптово зрозуміти; усвідомити",
@@ -7876,7 +7876,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-093",
     "norsk": "å spire",
     "lemma": "spire",
     "english": "to sprout; to begin to grow; to germinate",
@@ -7895,7 +7895,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-063",
     "norsk": "omsider",
     "lemma": "omsider",
     "english": "finally; at last; in the end",
@@ -7913,7 +7913,7 @@
     "part": "adverb"
   },
   {
-    "id": "",
+    "id": "v-c-sensory-sound-048",
     "norsk": "bitende",
     "lemma": "bitende",
     "english": "piercing; biting; penetrating",
@@ -7931,7 +7931,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-064",
     "norsk": "gryende",
     "lemma": "gryende",
     "english": "dawning; beginning; nascent; emerging",
@@ -7949,7 +7949,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-physical-appearance-047",
     "norsk": "å flette",
     "lemma": "flette",
     "english": "to braid; to plait; to intertwine; to weave together",
@@ -7968,7 +7968,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-diplomacy-international-006",
     "norsk": "å utveksle",
     "lemma": "utveksle",
     "english": "to exchange; to share mutually; to give to one another",
@@ -7987,7 +7987,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-everyday-objects-072",
     "norsk": "grep (et)",
     "lemma": "grep",
     "english": "grip; hold; grasp",
@@ -8006,7 +8006,7 @@
     "note": "Dattera mi har et godt grep på matematikken = dattera mi forstår matematikk godt."
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-060",
     "norsk": "å papiret lyser mot henne",
     "lemma": "papiret lyser mot henne",
     "english": "what is written on the paper makes a strong impression on her",
@@ -8025,7 +8025,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-065",
     "norsk": "havn (en/ei)",
     "lemma": "havn",
     "english": "refuge; safe haven; resting place",
@@ -8044,7 +8044,7 @@
     "note": "Hvor har vi havnet nå? = Hvor har vi kommet nå?"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-060",
     "norsk": "å vende tilbake til",
     "lemma": "vende tilbake til",
     "english": "to return to; to go back to",
@@ -8064,7 +8064,7 @@
     "verb_type": "v2"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-066",
     "norsk": "opphav (et)",
     "lemma": "opphav",
     "english": "origin; source; starting point",
@@ -8083,7 +8083,7 @@
     "note": "Han spør alltid opphavet om lov = Han spør alltid foreldrene om lov."
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-061",
     "norsk": "etterlengtet",
     "lemma": "etterlengtet",
     "english": "long-awaited; eagerly desired",
@@ -8101,7 +8101,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-061",
     "norsk": "å kave seg gjennom",
     "lemma": "kave seg gjennom",
     "english": "to struggle through; to fight one's way through",
@@ -8121,7 +8121,7 @@
     "verb_type": "v1, v3"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-106",
     "norsk": "fryktinngytende",
     "lemma": "fryktinngytende",
     "english": "frightening; terrifying; awe-inspiring",
@@ -8139,7 +8139,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-074",
     "norsk": "å deise",
     "lemma": "deise",
     "english": "to slam; to fling hard; to hurl",
@@ -8158,7 +8158,7 @@
     "verb_type": "v1, v2"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-075",
     "norsk": "gå i tusen knas (et)",
     "lemma": "gå i tusen knas",
     "english": "to shatter into a thousand pieces; to be completely destroyed or broken",
@@ -8176,7 +8176,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-067",
     "norsk": "å fri seg fra",
     "lemma": "fri seg fra",
     "english": "to free oneself from; to break free from; to extricate oneself from",
@@ -8195,7 +8195,7 @@
     "verb_type": "v4"
   },
   {
-    "id": "",
+    "id": "v-c-character-temperament-107",
     "norsk": "hemningsløs",
     "lemma": "hemningsløs",
     "english": "uninhibited; unrestrained; without inhibition",
@@ -8213,7 +8213,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-manner-of-motion-062",
     "norsk": "luntende",
     "lemma": "luntende",
     "english": "ambling; strolling leisurely; plodding along calmly",
@@ -8232,7 +8232,7 @@
     "note": "Hesten gikk og luntet = Hesten travet og gikk rolig."
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-075",
     "norsk": "på ertende vis (et)",
     "lemma": "på ertende vis",
     "english": "in a teasing manner; in a playfully provocative way",
@@ -8250,8 +8250,8 @@
     "part": "noun"
   },
   {
-    "id": "",
-    "norsk": "gi seg hen",
+    "id": "v-c-complex-emotions-062",
+    "norsk": "å gi seg hen",
     "lemma": "gi seg hen",
     "english": "to devote oneself; to give of one's time and energy; to surrender oneself to",
     "ukrainian": "віддаватися; присвячувати себе; поринати в",
@@ -8270,7 +8270,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-nature-landscape-094",
     "norsk": "lava (en)",
     "lemma": "lava",
     "english": "lava; molten rock ejected from a volcano",
@@ -8288,7 +8288,7 @@
     "part": "noun"
   },
   {
-    "id": "",
+    "id": "v-c-complex-emotions-063",
     "norsk": "forspilt",
     "lemma": "forspilt",
     "english": "ruined, wasted, squandered",
@@ -8306,7 +8306,7 @@
     "part": "adjective"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-068",
     "norsk": "å renne ut i sanden",
     "lemma": "renne ut i sanden",
     "english": "to fizzle out, to peter out, to come to nothing",
@@ -8325,7 +8325,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-abstract-concepts-069",
     "norsk": "å smuldre opp",
     "lemma": "smuldre opp",
     "english": "to crumble apart, to disintegrate into small pieces",
@@ -8344,8 +8344,8 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
-    "norsk": "si alt og mer til",
+    "id": "v-c-interpersonal-conflict-076",
+    "norsk": "å si alt og mer til",
     "lemma": "si alt og mer til",
     "english": "to say more than enough, to say a great deal and then some",
     "ukrainian": "сказати все і навіть більше, наговорити з лишком",
@@ -8364,7 +8364,7 @@
     "verb_type": "ureg"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-076",
     "norsk": "å flomme over",
     "lemma": "flomme over",
     "english": "to overflow, to flood over, to spill over",
@@ -8384,7 +8384,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-interpersonal-conflict-077",
     "norsk": "å gneldre",
     "lemma": "gneldre",
     "english": "to scold, to nag, to snap at someone",
@@ -8403,7 +8403,7 @@
     "verb_type": "v1"
   },
   {
-    "id": "",
+    "id": "v-c-embodied-emotion-077",
     "norsk": "å flekke tenner",
     "lemma": "flekke tenner",
     "english": "to bare one's teeth (in anger)",
@@ -8760,7 +8760,7 @@
   },
   {
     "id": "",
-    "norsk": "bli slått av en innsikt",
+    "norsk": "å bli slått av en innsikt",
     "lemma": "bli slått av en innsikt",
     "english": "to be struck by an insight; to suddenly understand something new",
     "ukrainian": "осягнути щось нове раптово; бути вражений осяянням",
@@ -8982,7 +8982,7 @@
   },
   {
     "id": "",
-    "norsk": "gjøre rede for seg",
+    "norsk": "å gjøre rede for seg",
     "lemma": "gjøre rede for seg",
     "english": "to account for oneself; to explain what one thinks and believes",
     "ukrainian": "пояснити свою позицію; розповісти, що думаєш і у що віриш",
@@ -9706,7 +9706,7 @@
   },
   {
     "id": "",
-    "norsk": "bli tildelt",
+    "norsk": "å bli tildelt",
     "lemma": "bli tildelt",
     "english": "to be awarded; to be allocated; to receive",
     "ukrainian": "бути нагородженим; отримувати; бути призначеним",
@@ -9889,7 +9889,7 @@
   },
   {
     "id": "",
-    "norsk": "uttrykke patos og etos",
+    "norsk": "å uttrykke patos og etos",
     "lemma": "uttrykke patos og etos",
     "english": "to express pathos and ethos; to convey feeling and moral character",
     "ukrainian": "виражати пафос і етос; передавати почуття та моральний характер",
@@ -9926,7 +9926,7 @@
   },
   {
     "id": "",
-    "norsk": "utgjøre en trussel",
+    "norsk": "å utgjøre en trussel",
     "lemma": "utgjøre en trussel",
     "english": "to constitute a threat; to pose a danger",
     "ukrainian": "становити загрозу; являти собою небезпеку",
@@ -9983,7 +9983,7 @@
   },
   {
     "id": "",
-    "norsk": "anlegge en fontene",
+    "norsk": "å anlegge en fontene",
     "lemma": "anlegge en fontene",
     "english": "to install/build a fountain",
     "ukrainian": "встановити фонтан; збудувати фонтан",
@@ -10094,7 +10094,7 @@
   {
     "id": "",
     "norsk": "hengsel (en/et)",
-    "lemma": "hengsel (en/et)",
+    "lemma": "hengsel",
     "english": "hinge (fitting used to attach doors or windows)",
     "ukrainian": "завіса; петля (для кріплення дверей або вікон)",
     "spanish": "bisagra (herraje para fijar puertas y ventanas)",
@@ -10404,7 +10404,7 @@
   },
   {
     "id": "",
-    "norsk": "få seg en lærepenge",
+    "norsk": "å få seg en lærepenge",
     "lemma": "få seg en lærepenge",
     "english": "to learn one's lesson; to gain insight through having first made a mistake",
     "ukrainian": "отримати урок; навчитися на власній помилці",
@@ -10441,7 +10441,7 @@
   },
   {
     "id": "",
-    "norsk": "slå ned på",
+    "norsk": "å slå ned på",
     "lemma": "slå ned på",
     "english": "to crack down on; to attempt to stop or suppress",
     "ukrainian": "боротися з; намагатися зупинити або придушити",
@@ -10515,7 +10515,7 @@
   },
   {
     "id": "",
-    "norsk": "fnyse misbilligende",
+    "norsk": "å fnyse misbilligende",
     "lemma": "fnyse misbilligende",
     "english": "to snort disapprovingly; to exhale through the nose to show displeasure or criticism",
     "ukrainian": "фиркати зневажливо; фиркати з несхваленням",
@@ -10608,7 +10608,7 @@
   },
   {
     "id": "",
-    "norsk": "gå for seg",
+    "norsk": "å gå for seg",
     "lemma": "gå for seg",
     "english": "to happen; to take place; to go on",
     "ukrainian": "відбуватися; мати місце",
@@ -11144,7 +11144,7 @@
   {
     "id": "",
     "norsk": "aner (pl.)",
-    "lemma": "aner (pl.)",
+    "lemma": "aner",
     "english": "ancestors; forebears",
     "ukrainian": "предки; пращури",
     "spanish": "antepasados; ancestros",
@@ -11647,7 +11647,7 @@
   },
   {
     "id": "",
-    "norsk": "hvetebrødsdagene",
+    "norsk": "hvetebrødsdagene (b.pl.)",
     "lemma": "hvetebrødsdagene",
     "english": "the honeymoon period; the first blissful days of a marriage",
     "ukrainian": "медовий місяць; перший щасливий час подружнього життя",
@@ -11665,7 +11665,7 @@
   },
   {
     "id": "",
-    "norsk": "gjøre sitt inntog",
+    "norsk": "å gjøre sitt inntog",
     "lemma": "gjøre sitt inntog",
     "english": "to make one's entrance; to arrive in a ceremonious or stately manner",
     "ukrainian": "урочисто з'явитися; зробити свій вихід",
@@ -11946,7 +11946,7 @@
   },
   {
     "id": "",
-    "norsk": "ense noen/noe",
+    "norsk": "å ense noen/noe",
     "lemma": "ense noen/noe",
     "english": "to notice someone/something; to pay attention to",
     "ukrainian": "помічати когось/щось; звертати увагу на когось/щось",
@@ -11985,7 +11985,7 @@
   {
     "id": "",
     "norsk": "klo (en/ei)",
-    "lemma": "klo (en/ei)",
+    "lemma": "klo",
     "english": "claw; talon (of a bird)",
     "ukrainian": "кіготь (у птахів)",
     "spanish": "garra; zarpa (de un ave)",
@@ -12149,27 +12149,9 @@
     "category": "intensifiers-degree",
     "part": "noun"
   },
-  {
+    {
     "id": "",
-    "norsk": "et sjenerøst hodekast",
-    "lemma": "et sjenerøst hodekast",
-    "english": "a generous toss of the head; a head gesture signalling that another person may approach",
-    "ukrainian": "великодушний кивок головою; рух головою, що дозволяє іншій людині наблизитися",
-    "spanish": "un generoso movimiento de cabeza que indica que otra persona puede acercarse",
-    "german": "eine großzügige Kopfbewegung, die einer anderen Person signalisiert, dass sie näherkommen darf",
-    "example": "Med et sjenerøst hodekast signaliserte han til den fremmede at hun var velkommen til å sette seg ved bordet hans.",
-    "example_english": "With a generous toss of his head he signalled to the stranger that she was welcome to sit at his table.",
-    "example_ukrainian": "Великодушним кивком голови він дав зрозуміти незнайомій жінці, що вона може сісти за його столик.",
-    "example_spanish": "Con un generoso movimiento de cabeza, le indicó a la desconocida que era bienvenida a sentarse en su mesa.",
-    "example_german": "Mit einer großzügigen Kopfbewegung signalisierte er der Fremden, dass sie herzlich willkommen war, sich an seinen Tisch zu setzen.",
-    "definition": "en bevegelse med hodet som forteller at en annen person kan få lov til å nærme seg",
-    "level": "C",
-    "category": "embodied-emotion",
-    "part": "noun"
-  },
-  {
-    "id": "",
-    "norsk": "gå rakt inn i margen",
+    "norsk": "å gå rakt inn i margen",
     "lemma": "gå rakt inn i margen",
     "english": "to go straight to the bone; to touch one deeply; to hit right to the core of one's emotions",
     "ukrainian": "пронизувати до мозку кісток; зворушувати до глибини душі",
@@ -12486,7 +12468,7 @@
   },
   {
     "id": "",
-    "norsk": "overfalles av en sterk lyst",
+    "norsk": "å overfalles av en sterk lyst",
     "lemma": "overfalles av en sterk lyst",
     "english": "to be suddenly overcome by a strong urge; to suddenly feel a powerful desire",
     "ukrainian": "раптово відчути сильне бажання; бути охопленим раптовою сильною пристрастю",
@@ -12917,7 +12899,7 @@
   },
   {
     "id": "",
-    "norsk": "stå rett til værs",
+    "norsk": "å stå rett til værs",
     "lemma": "stå rett til værs",
     "english": "to stand straight up; to stick straight up into the air",
     "ukrainian": "стирчати прямо вгору",
@@ -13121,7 +13103,7 @@
   },
   {
     "id": "",
-    "norsk": "gi etter for",
+    "norsk": "å gi etter for",
     "lemma": "gi etter for",
     "english": "to give way, to collapse under pressure",
     "ukrainian": "поступитися, здатися, зламатися",
@@ -13858,7 +13840,7 @@
   },
   {
     "id": "",
-    "norsk": "leke gjemsel",
+    "norsk": "å leke gjemsel",
     "lemma": "leke gjemsel",
     "english": "to play hide-and-seek",
     "ukrainian": "грати в хованки",
@@ -15091,7 +15073,7 @@
   },
   {
     "id": "",
-    "norsk": "burde gjøre sitt til at …",
+    "norsk": "å burde gjøre sitt til at …",
     "lemma": "gjøre sitt til at",
     "english": "to do one's part to ensure that; to be enough to ensure that",
     "ukrainian": "зробити своє для того, щоб; сприяти тому, щоб",
@@ -15498,28 +15480,10 @@
     "part": "noun",
     "note": "Hun gjør gode miner til slett spill = Hun later som ingenting. Han fortrekker ikke en mine = Han viser ikke hva han føler."
   },
-  {
-    "id": "",
-    "norsk": "en svunnen tid",
-    "lemma": "en svunnen tid",
-    "english": "a bygone era; a time that feels distant, far back in time",
-    "ukrainian": "минула епоха; час, що відійшов у далеке минуле",
-    "spanish": "una época pasada; un tiempo que se siente lejano, muy atrás en el tiempo",
-    "german": "eine vergangene Zeit; eine Zeit, die weit zurückliegt",
-    "example": "Fotografiene på veggen minner oss om en svunnen tid da livet i bygda var enkelt og forutsigbart.",
-    "example_english": "The photographs on the wall remind us of a bygone era when life in the village was simple and predictable.",
-    "example_ukrainian": "Фотографії на стіні нагадують нам про минулу епоху, коли життя в селі було простим і передбачуваним.",
-    "example_spanish": "Las fotografías en la pared nos recuerdan una época pasada en la que la vida en el pueblo era sencilla y predecible.",
-    "example_german": "Die Fotografien an der Wand erinnern uns an eine vergangene Zeit, als das Leben im Dorf einfach und vorhersehbar war.",
-    "definition": "en tid som føles fjern; langt tilbake i tid",
-    "level": "C",
-    "category": "literary",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "brokker (pl.)",
-    "lemma": "brokker (pl.)",
+    "lemma": "brokker",
     "english": "fragments; scattered pieces that do not form a whole",
     "ukrainian": "уривки; розрізнені частини, що не складають цілого",
     "spanish": "fragmentos; piezas sueltas que no forman un todo",
@@ -16366,7 +16330,7 @@
   },
   {
     "id": "",
-    "norsk": "la seg drive med",
+    "norsk": "å la seg drive med",
     "lemma": "la seg drive med",
     "english": "to go along with what is happening; to be swept along; to yield without resistance",
     "ukrainian": "піддаватися плину подій; пливти за течією без спротиву",
@@ -16493,8 +16457,8 @@
   },
   {
     "id": "",
-    "norsk": "renningen på en spent vev",
-    "lemma": "renningen på en spent vev",
+    "norsk": "renning (en)",
+    "lemma": "renning",
     "english": "the warp threads on a stretched loom (threads held taut in preparation for weaving)",
     "ukrainian": "основа на натягнутому ткацькому верстаті (натягнуті нитки, готові до ткання)",
     "spanish": "la urdimbre en un telar tensado (hilos tensos listos para tejer)",
@@ -16619,7 +16583,7 @@
   },
   {
     "id": "",
-    "norsk": "ta til",
+    "norsk": "å ta til",
     "lemma": "ta til",
     "english": "to start; to begin",
     "ukrainian": "починати; розпочинати",
@@ -17604,25 +17568,7 @@
     "part": "verb",
     "verb_type": "ureg"
   },
-  {
-    "id": "",
-    "norsk": "det aller helligste",
-    "lemma": "det aller helligste",
-    "english": "the holy of holies; a place of special reverence and awe",
-    "ukrainian": "святая святих; особливе місце, що викликає пошану й трепет",
-    "spanish": "el sanctasanctórum; un lugar de especial reverencia y veneración",
-    "german": "das Allerheiligste; ein ganz besonderer Ort, dem man mit Respekt und Ehrfurcht begegnet",
-    "example": "For de ansatte var direktørens kontor det aller helligste, et rom ingen turde entre uten invitasjon.",
-    "example_english": "For the employees, the director's office was the holy of holies, a room no one dared enter without an invitation.",
-    "example_ukrainian": "Для співробітників кабінет директора був святая святих — кімнатою, куди ніхто не наважувався зайти без запрошення.",
-    "example_spanish": "Para los empleados, el despacho del director era el sanctasanctórum, una sala a la que nadie se atrevía a entrar sin invitación.",
-    "example_german": "Für die Mitarbeiter war das Büro des Direktors das Allerheiligste, ein Raum, den niemand ohne Einladung zu betreten wagte.",
-    "definition": "her: et helt spesielt sted hvor man føler respekt og ærefrykt",
-    "level": "C",
-    "category": "cultural-heritage",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "vid",
     "lemma": "vid",
@@ -17825,7 +17771,7 @@
   },
   {
     "id": "",
-    "norsk": "overveldes av",
+    "norsk": "å overveldes av",
     "lemma": "overveldes av",
     "english": "to be overwhelmed by, to be overcome by; to feel something intensely or be deeply impressed by",
     "ukrainian": "бути переповненим чимось, бути охопленим; відчувати щось дуже сильно або бути глибоко враженим",
@@ -17842,25 +17788,7 @@
     "part": "verb",
     "verb_type": "ureg"
   },
-  {
-    "id": "",
-    "norsk": "leven og spetakkel",
-    "lemma": "leven og spetakkel",
-    "english": "noise and nonsense, ruckus and commotion",
-    "ukrainian": "галас і безладдя, гамір і метушня",
-    "spanish": "alboroto y barullo, escándalo y jaleo",
-    "german": "Lärm und Spektakel, Krach und Unsinn",
-    "example": "Naboene klaget over leven og spetakkel fra ungdommene som holdt fest natt til søndag.",
-    "example_english": "The neighbours complained about the noise and ruckus from the young people who were partying on Saturday night.",
-    "example_ukrainian": "Сусіди скаржилися на галас і безладдя від молоді, яка влаштувала вечірку в ніч на неділю.",
-    "example_spanish": "Los vecinos se quejaron del alboroto y el jaleo de los jóvenes que estaban de fiesta la noche del sábado.",
-    "example_german": "Die Nachbarn beschwerten sich über den Lärm und das Spektakel der Jugendlichen, die in der Nacht zum Sonntag feierten.",
-    "definition": "bråk og tull",
-    "level": "C",
-    "category": "interpersonal-conflict",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "å holde noen i ånde",
     "lemma": "holde noen i ånde",
@@ -18061,26 +17989,7 @@
     "category": "rhetoric",
     "part": "adverb"
   },
-  {
-    "id": "",
-    "norsk": "det går trill rundt for ham",
-    "lemma": "det går trill rundt for ham",
-    "english": "he cannot make heads or tails of it; he is completely confused and understands nothing",
-    "ukrainian": "він нічого не розуміє; у нього все перемішалося в голові",
-    "spanish": "no entiende absolutamente nada; está totalmente confundido",
-    "german": "er blickt überhaupt nicht durch; er versteht rein gar nichts",
-    "example": "Læreren forklarte algebraen tre ganger, men det gikk trill rundt for gutten som aldri hadde vært glad i matematikk.",
-    "example_english": "The teacher explained the algebra three times, but the boy who had never been fond of mathematics could not make heads or tails of it.",
-    "example_ukrainian": "Вчитель пояснював алгебру тричі, але хлопець, який ніколи не любив математику, так нічого і не зрозумів.",
-    "example_spanish": "El profesor explicó el álgebra tres veces, pero el chico que nunca había sido aficionado a las matemáticas no entendía absolutamente nada.",
-    "example_german": "Der Lehrer erklärte die Algebra dreimal, doch der Junge, der Mathematik noch nie gemocht hatte, blickte überhaupt nicht durch.",
-    "definition": "han forstår ingenting",
-    "level": "C",
-    "category": "interpersonal-conflict",
-    "part": "verb",
-    "verb_type": "ureg"
-  },
-  {
+    {
     "id": "",
     "norsk": "gjennomsyret av sykdom",
     "lemma": "gjennomsyret av sykdom",
@@ -18135,26 +18044,7 @@
     "part": "verb",
     "verb_type": "v1"
   },
-  {
-    "id": "",
-    "norsk": "et rødt øre",
-    "lemma": "et rødt øre",
-    "english": "not a red cent; not a penny (to be completely broke)",
-    "ukrainian": "ні шеляга; ні копійки (бути зовсім без грошей)",
-    "spanish": "ni un céntimo; sin un duro (estar completamente sin dinero)",
-    "german": "keinen roten Heller; völlig pleite sein",
-    "example": "Etter at lønnen tok slutt midt i måneden, hadde han ikke et rødt øre igjen på kontoen.",
-    "example_english": "After his wages ran out in the middle of the month, he did not have a red cent left in his account.",
-    "example_ukrainian": "Після того як зарплата скінчилася в середині місяця, на рахунку не залишилося ні копійки.",
-    "example_spanish": "Cuando el sueldo se le acabó a mediados de mes, no le quedaba ni un céntimo en la cuenta.",
-    "example_german": "Nachdem sein Gehalt Mitte des Monats aufgebraucht war, hatte er keinen roten Heller mehr auf dem Konto.",
-    "definition": "ikke ha penger (ikke engang så mye som 5 øre, som før var rød i fargen); være blakk",
-    "level": "C",
-    "category": "finance-economics",
-    "part": "noun",
-    "note": "brukes bare med ikke"
-  },
-  {
+    {
     "id": "",
     "norsk": "uflidd",
     "lemma": "uflidd",
@@ -18341,7 +18231,7 @@
   },
   {
     "id": "",
-    "norsk": "ikke være sen om å gjøre noe",
+    "norsk": "å ikke være sen om å gjøre noe",
     "lemma": "ikke være sen om å gjøre noe",
     "english": "to seize the first opportunity to do something, to be quick to act",
     "ukrainian": "не гаяти першої нагоди щось зробити, одразу скористатися можливістю",
@@ -18491,7 +18381,7 @@
   },
   {
     "id": "",
-    "norsk": "finne utløp",
+    "norsk": "å finne utløp",
     "lemma": "finne utløp",
     "english": "to find an outlet; to find a way to release or escape",
     "ukrainian": "знайти вихід; знайти розрядку",
@@ -18656,7 +18546,7 @@
   },
   {
     "id": "",
-    "norsk": "kappes om",
+    "norsk": "å kappes om",
     "lemma": "kappes om",
     "english": "to compete for; to vie for",
     "ukrainian": "змагатися за; конкурувати за",
@@ -18894,7 +18784,7 @@
   },
   {
     "id": "",
-    "norsk": "løpe rundt som en strikkball",
+    "norsk": "å løpe rundt som en strikkball",
     "lemma": "løpe rundt som en strikkball",
     "english": "to run around like a headless chicken, to be extremely busy",
     "ukrainian": "крутитися як дзиґа, бути надзвичайно зайнятим",
@@ -18968,7 +18858,7 @@
   },
   {
     "id": "",
-    "norsk": "lykkes med sitt forsett",
+    "norsk": "å lykkes med sitt forsett",
     "lemma": "lykkes med sitt forsett",
     "english": "to succeed in carrying out one's plan, to achieve one's intention",
     "ukrainian": "досягти своєї мети, здійснити свій намір",
@@ -19299,7 +19189,7 @@
   },
   {
     "id": "",
-    "norsk": "bli satt ut av spill",
+    "norsk": "å bli satt ut av spill",
     "lemma": "bli satt ut av spill",
     "english": "to be rendered incapable of acting; to be put out of action",
     "ukrainian": "бути виведеним з ладу; виявитися нездатним діяти",
@@ -19575,25 +19465,7 @@
     "part": "verb",
     "verb_type": "v1"
   },
-  {
-    "id": "",
-    "norsk": "slekters gang",
-    "lemma": "slekters gang",
-    "english": "the passage of generations; the course of generations",
-    "ukrainian": "хід поколінь; зміна поколінь",
-    "spanish": "el transcurso de las generaciones; el paso de las generaciones",
-    "german": "der Gang der Generationen; das Kommen und Gehen der Generationen",
-    "example": "Gjennom slekters gang har denne tradisjonen blitt videreført fra foreldre til barn i bygda.",
-    "example_english": "Through the passage of generations, this tradition has been passed down from parents to children in the village.",
-    "example_ukrainian": "Упродовж зміни поколінь ця традиція передавалася від батьків до дітей у селі.",
-    "example_spanish": "A través del transcurso de las generaciones, esta tradición ha pasado de padres a hijos en el pueblo.",
-    "example_german": "Durch den Gang der Generationen wurde diese Tradition im Dorf von Eltern an Kinder weitergegeben.",
-    "definition": "generasjoners utvikling",
-    "level": "C",
-    "category": "cultural-heritage",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "oppofrende",
     "lemma": "oppofrende",
@@ -19999,7 +19871,7 @@
   },
   {
     "id": "",
-    "norsk": "være på pletten",
+    "norsk": "å være på pletten",
     "lemma": "være på pletten",
     "english": "to be on the spot / to arrive very quickly",
     "ukrainian": "бути тут як тут / прибути миттєво",
@@ -20090,7 +19962,7 @@
   },
   {
     "id": "",
-    "norsk": "være egnet til",
+    "norsk": "å være egnet til",
     "lemma": "være egnet til",
     "english": "to be suited to; to be capable of doing something (well)",
     "ukrainian": "бути придатним до; підходити для чогось",
@@ -20128,7 +20000,7 @@
   },
   {
     "id": "",
-    "norsk": "fatte en beslutning",
+    "norsk": "å fatte en beslutning",
     "lemma": "fatte en beslutning",
     "english": "to make a decision; to reach a resolution",
     "ukrainian": "прийняти рішення",
@@ -20147,7 +20019,7 @@
   },
   {
     "id": "",
-    "norsk": "gå opp for en",
+    "norsk": "å gå opp for en",
     "lemma": "gå opp for en",
     "english": "to suddenly realize something; to dawn on someone",
     "ukrainian": "раптово усвідомити щось; до когось доходить щось",
@@ -20293,7 +20165,7 @@
   },
   {
     "id": "",
-    "norsk": "ikke forstå bæret/bæra av",
+    "norsk": "å ikke forstå bæret/bæra av",
     "lemma": "ikke forstå bæret/bæra av",
     "english": "to not understand a single thing of; to be completely lost regarding something",
     "ukrainian": "абсолютно нічого не розуміти з; не второпати ні слова",
@@ -20403,7 +20275,7 @@
   },
   {
     "id": "",
-    "norsk": "gjøre seg rede til",
+    "norsk": "å gjøre seg rede til",
     "lemma": "gjøre seg rede til",
     "english": "to prepare oneself for; to get ready for",
     "ukrainian": "готуватися до чогось",
@@ -20422,7 +20294,7 @@
   },
   {
     "id": "",
-    "norsk": "rekke",
+    "norsk": "å rekke",
     "lemma": "rekke",
     "english": "to hand (something to someone); to pass",
     "ukrainian": "подавати; простягати",
@@ -20516,7 +20388,7 @@
   },
   {
     "id": "",
-    "norsk": "få nyss om noe",
+    "norsk": "å få nyss om noe",
     "lemma": "få nyss om noe",
     "english": "to get wind of something; to find out about something",
     "ukrainian": "дізнатися про щось; пронюхати про щось",
@@ -20590,8 +20462,8 @@
   },
   {
     "id": "",
-    "norsk": "rekkevidden av",
-    "lemma": "rekkevidden av",
+    "norsk": "rekkevidde (en)",
+    "lemma": "rekkevidde",
     "english": "the scope of; the reach of; the full extent of",
     "ukrainian": "масштаб чогось; охоплення; повний обсяг",
     "spanish": "el alcance de; la magnitud de",
@@ -20664,7 +20536,7 @@
   },
   {
     "id": "",
-    "norsk": "få frarøvet",
+    "norsk": "å få frarøvet",
     "lemma": "få frarøvet",
     "english": "to have something stolen from one; to be robbed of something",
     "ukrainian": "бути пограбованим; мати щось украдене",
@@ -21248,7 +21120,7 @@
   },
   {
     "id": "",
-    "norsk": "være/bli ribbet for",
+    "norsk": "å være/bli ribbet for",
     "lemma": "være/bli ribbet for",
     "english": "to be/become stripped of; to be robbed of; to be bereft of",
     "ukrainian": "бути/стати пограбованим; бути позбавленим чогось",
@@ -21302,25 +21174,7 @@
     "category": "psychology-advanced",
     "part": "noun"
   },
-  {
-    "id": "",
-    "norsk": "på randen",
-    "lemma": "på randen",
-    "english": "on the brink; on the edge (just before possibly falling or failing)",
-    "ukrainian": "на межі; на краю (ось-ось впадеш або зазнаєш краху)",
-    "spanish": "al borde; en el límite; a punto de caer",
-    "german": "am Rand; am Rande (kurz vor dem Absturz oder Scheitern)",
-    "example": "Etter måneder med overarbeid befant hun seg på randen av et sammenbrudd.",
-    "example_english": "After months of overwork, she found herself on the brink of a breakdown.",
-    "example_ukrainian": "Після місяців перевантаження вона опинилася на межі зриву.",
-    "example_spanish": "Tras meses de exceso de trabajo, ella se encontraba al borde de un colapso.",
-    "example_german": "Nach monatelanger Überarbeitung befand sie sich am Rande eines Zusammenbruchs.",
-    "definition": "på kanten (like før man kanskje faller); på kanten",
-    "level": "C",
-    "category": "existential-abstract",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "på måfå",
     "lemma": "på måfå",
@@ -21447,26 +21301,7 @@
     "category": "everyday-objects",
     "part": "noun"
   },
-  {
-    "id": "",
-    "norsk": "magen vrenger seg",
-    "lemma": "magen vrenger seg",
-    "english": "the stomach turns; (here: he vomits; his stomach heaves)",
-    "ukrainian": "шлунок вивертає; (тут: він блює; нудота перемагає)",
-    "spanish": "el estómago se revuelve; (aquí: vomita; se le revuelven las tripas)",
-    "german": "der Magen dreht sich um; (hier: er übergibt sich; der Magen kehrt sich um)",
-    "example": "Da han så skadene etter ulykken, vrenger magen seg og han måtte snu seg bort.",
-    "example_english": "When he saw the injuries from the accident, his stomach turned and he had to look away.",
-    "example_ukrainian": "Коли він побачив поранення після аварії, шлунок вивернуло і йому довелося відвернутися.",
-    "example_spanish": "Cuando vio las heridas del accidente, el estómago se le revolvió y tuvo que girarse.",
-    "example_german": "Als er die Verletzungen nach dem Unfall sah, drehte sich ihm der Magen um und er musste wegsehen.",
-    "definition": "her: han kaster opp",
-    "level": "C",
-    "category": "embodied-emotion",
-    "part": "verb",
-    "verb_type": "ureg"
-  },
-  {
+    {
     "id": "",
     "norsk": "å suse av gårde",
     "lemma": "suse av gårde",
@@ -21523,7 +21358,7 @@
   },
   {
     "id": "",
-    "norsk": "ha til overs",
+    "norsk": "å ha til overs",
     "lemma": "ha til overs",
     "english": "to have to spare; to have extra",
     "ukrainian": "мати у надлишку; мати зайве",
@@ -21704,25 +21539,7 @@
     "category": "nature-landscape",
     "part": "noun"
   },
-  {
-    "id": "",
-    "norsk": "Erkjennelsen ved havet",
-    "lemma": "erkjennelsen ved havet",
-    "english": "the insight or admission by the sea; the realization at the seaside",
-    "ukrainian": "усвідомлення біля моря; визнання на березі",
-    "spanish": "el reconocimiento junto al mar; la toma de conciencia a orillas del mar",
-    "german": "die Erkenntnis am Meer; das Eingeständnis am Meer",
-    "example": "Diktet skildrer erkjennelsen ved havet som det øyeblikket da hun endelig innrømmet for seg selv at hun aldri ville vende tilbake.",
-    "example_english": "The poem depicts the realization by the sea as the moment she finally admitted to herself that she would never return.",
-    "example_ukrainian": "Вірш змальовує усвідомлення біля моря як мить, коли вона нарешті визнала собі, що ніколи не повернеться.",
-    "example_spanish": "El poema describe el reconocimiento junto al mar como el momento en que ella finalmente se admitio a si misma que nunca volveria.",
-    "example_german": "Das Gedicht schildert die Erkenntnis am Meer als den Moment, in dem sie sich schließlich eingestand, dass sie niemals zurückkehren würde.",
-    "definition": "innsikten/innrømmelsen ved havet",
-    "level": "C",
-    "category": "literary",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "fyrig",
     "lemma": "fyrig",
@@ -21740,25 +21557,7 @@
     "category": "character-temperament",
     "part": "adjective"
   },
-  {
-    "id": "",
-    "norsk": "uminnelige tider",
-    "lemma": "uminnelige tider",
-    "english": "time immemorial; ages past",
-    "ukrainian": "сиві часи; незапам'ятні часи",
-    "spanish": "tiempos inmemoriales",
-    "german": "seit undenklichen Zeiten; uralte Zeiten",
-    "example": "Denne skogen har vært bebodd siden uminnelige tider og bærer spor av generasjoner som levde her.",
-    "example_english": "This forest has been inhabited since time immemorial and bears traces of generations who lived here.",
-    "example_ukrainian": "Цей ліс був заселений із незапам'ятних часів і несе сліди поколінь, які жили тут.",
-    "example_spanish": "Este bosque ha estado habitado desde tiempos inmemoriales y lleva las huellas de generaciones que vivieron aquí.",
-    "example_german": "Dieser Wald ist seit undenklichen Zeiten bewohnt und trägt die Spuren von Generationen, die hier lebten.",
-    "definition": "lange tider (stort tidsrom)",
-    "level": "C",
-    "category": "archaic",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "å fortiden glipper",
     "lemma": "fortiden glipper",
@@ -21779,7 +21578,7 @@
   },
   {
     "id": "",
-    "norsk": "være i besittelse av",
+    "norsk": "å være i besittelse av",
     "lemma": "være i besittelse av",
     "english": "to be in possession of; to own; to have at one's disposal",
     "ukrainian": "мати у власності; володіти; розпоряджатися",
@@ -21854,7 +21653,7 @@
   },
   {
     "id": "",
-    "norsk": "være i flyt",
+    "norsk": "å være i flyt",
     "lemma": "være i flyt",
     "english": "to be in flow; to be in harmony; to be developing well",
     "ukrainian": "бути в потоці; перебувати в гармонії; розвиватися добре",
@@ -21873,7 +21672,7 @@
   },
   {
     "id": "",
-    "norsk": "leve og ånde for",
+    "norsk": "å leve og ånde for",
     "lemma": "leve og ånde for",
     "english": "to live and breathe for; to be passionately devoted to",
     "ukrainian": "жити і дихати чимось; бути пристрасно відданим чомусь",
@@ -21892,7 +21691,7 @@
   },
   {
     "id": "",
-    "norsk": "sette noen ut av spill",
+    "norsk": "å sette noen ut av spill",
     "lemma": "sette noen ut av spill",
     "english": "to put someone out of action; to force someone to give up",
     "ukrainian": "вивести когось із гри; змусити когось відступити",
@@ -22114,7 +21913,7 @@
   },
   {
     "id": "",
-    "norsk": "ta seg selv i noe",
+    "norsk": "å ta seg selv i noe",
     "lemma": "ta seg selv i noe",
     "english": "to catch oneself doing something; to notice or criticize oneself for something",
     "ukrainian": "зловити себе на чомусь; помітити або докорити собі за щось",
@@ -22133,7 +21932,7 @@
   },
   {
     "id": "",
-    "norsk": "sitte på baken",
+    "norsk": "å sitte på baken",
     "lemma": "sitte på baken",
     "english": "to sit on one's backside; to be passive and lazy",
     "ukrainian": "сидіти склавши руки; бути пасивним і ледачим",
@@ -22481,8 +22280,8 @@
   },
   {
     "id": "",
-    "norsk": "et sett av",
-    "lemma": "et sett av",
+    "norsk": "sett (et)",
+    "lemma": "sett",
     "english": "a set of; several; a number of",
     "ukrainian": "набір; кілька; ряд",
     "spanish": "un conjunto de; varios; una serie de",
@@ -22516,25 +22315,7 @@
     "part": "verb",
     "verb_type": "ureg"
   },
-  {
-    "id": "",
-    "norsk": "onde tunger",
-    "lemma": "onde tunger",
-    "english": "malicious gossips; spiteful people who spread lies about others",
-    "ukrainian": "злі язики; пліткарі; люди, що зловмисно говорять про інших",
-    "spanish": "malas lenguas; personas maliciosas que mienten sobre los demás",
-    "german": "böse Zungen; üble Nachredner",
-    "example": "Onde tunger påstod at hun hadde skaffet seg stillingen gjennom bekjentskaper snarere enn egne kvalifikasjoner.",
-    "example_english": "Malicious gossips claimed she had obtained the position through connections rather than her own qualifications.",
-    "example_ukrainian": "Злі язики стверджували, що вона отримала посаду через знайомства, а не завдяки власним кваліфікаціям.",
-    "example_spanish": "Las malas lenguas afirmaban que había conseguido el puesto gracias a sus contactos y no a sus propias cualificaciones.",
-    "example_german": "Böse Zungen behaupteten, sie habe die Stelle durch Beziehungen und nicht durch eigene Qualifikationen bekommen.",
-    "definition": "brukes om ondsinnede, slemme mennesker (som ofte lyver om andre)",
-    "level": "C",
-    "category": "interpersonal-conflict",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "sørgmodig",
     "lemma": "sørgmodig",
@@ -22682,7 +22463,7 @@
   },
   {
     "id": "",
-    "norsk": "innpass",
+    "norsk": "innpass (et)",
     "lemma": "innpass",
     "english": "access; admittance; the act of being let in",
     "ukrainian": "доступ; можливість увійти",
@@ -22737,7 +22518,7 @@
   },
   {
     "id": "",
-    "norsk": "gå på konsentrasjonen løs",
+    "norsk": "å gå på konsentrasjonen løs",
     "lemma": "gå på konsentrasjonen løs",
     "english": "to take a toll on one's concentration; to impair the ability to stay focused",
     "ukrainian": "шкодити концентрації; підривати здатність зосередитися",
@@ -22756,7 +22537,7 @@
   },
   {
     "id": "",
-    "norsk": "ta seg ut for noen",
+    "norsk": "å ta seg ut for noen",
     "lemma": "ta seg ut for noen",
     "english": "to look one's best for someone; to dress up or present oneself well for someone",
     "ukrainian": "доглянути себе для когось; причепуритися для когось",
@@ -22941,7 +22722,7 @@
   },
   {
     "id": "",
-    "norsk": "være hinsides",
+    "norsk": "å være hinsides",
     "lemma": "være hinsides",
     "english": "to be beyond all that is normal; to be completely beyond the pale",
     "ukrainian": "бути за межею норми; бути абсолютно неприйнятним",
@@ -23304,7 +23085,7 @@
   },
   {
     "id": "",
-    "norsk": "komme rekende på ei fjøl",
+    "norsk": "å komme rekende på ei fjøl",
     "lemma": "komme rekende på ei fjøl",
     "english": "to turn up out of nowhere (often something very positive, like a stroke of luck)",
     "ukrainian": "з'явитися зненацька (часто про щось дуже позитивне)",
@@ -23342,7 +23123,7 @@
   },
   {
     "id": "",
-    "norsk": "domene",
+    "norsk": "domene (et)",
     "lemma": "domene",
     "english": "domain; area over which one has control or authority",
     "ukrainian": "домен; сфера, над якою хтось має владу або контроль",
@@ -23615,25 +23396,7 @@
     "part": "verb",
     "verb_type": "ureg"
   },
-  {
-    "id": "",
-    "norsk": "et vell av",
-    "lemma": "et vell av",
-    "english": "a wealth of; an abundance of; a great many",
-    "ukrainian": "безліч; велика кількість; багатство чогось",
-    "spanish": "una gran cantidad de; un sinfin de; una abundancia de",
-    "german": "eine Fülle von; eine Vielzahl von",
-    "example": "Utstillingen byr på et vell av kunstneriske uttrykk fra hele verden.",
-    "example_english": "The exhibition offers a wealth of artistic expressions from around the world.",
-    "example_ukrainian": "Виставка пропонує безліч художніх виразів з усього світу.",
-    "example_spanish": "La exposicion ofrece una gran cantidad de expresiones artisticas de todo el mundo.",
-    "example_german": "Die Ausstellung bietet eine Fülle künstlerischer Ausdrucksformen aus aller Welt.",
-    "definition": "mange",
-    "level": "C",
-    "category": "intensifiers-degree",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "fjæring (en/ei)",
     "lemma": "fjæring",
@@ -24059,7 +23822,7 @@
   },
   {
     "id": "",
-    "norsk": "få fatt i",
+    "norsk": "å få fatt i",
     "lemma": "få fatt i",
     "english": "to get hold of; to obtain; to acquire",
     "ukrainian": "дістати; роздобути; отримати",
@@ -24094,25 +23857,7 @@
     "category": "rhetoric",
     "part": "adverb"
   },
-  {
-    "id": "",
-    "norsk": "(halv)kriminell bane",
-    "lemma": "(halv)kriminell bane",
-    "english": "a (semi-)criminal path",
-    "ukrainian": "(напів)кримінальний шлях",
-    "spanish": "una trayectoria (semi)criminal",
-    "german": "eine (halb)kriminelle Laufbahn",
-    "example": "Etter gjentatte småforseelser havnet han på en halvkriminell bane som det var vanskelig å komme seg ut av.",
-    "example_english": "After repeated minor offences, he ended up on a semi-criminal path that was hard to escape from.",
-    "example_ukrainian": "Після неодноразових дрібних правопорушень він опинився на напівкримінальному шляху, з якого важко було вибратися.",
-    "example_spanish": "Tras repetidas faltas menores, acabó en una trayectoria semicriminal de la que era difícil salir.",
-    "example_german": "Nach wiederholten Kleindelikten geriet er auf eine halbkriminelle Laufbahn, aus der es schwer war herauszukommen.",
-    "definition": "straffbar vei",
-    "level": "C",
-    "category": "interpersonal-conflict",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "å begi seg ut på",
     "lemma": "begi seg ut på",
@@ -24168,28 +23913,10 @@
     "part": "verb",
     "verb_type": "ureg"
   },
-  {
+    {
     "id": "",
-    "norsk": "neste post på programmet",
-    "lemma": "neste post på programmet",
-    "english": "the next item on the agenda; the next thing to do",
-    "ukrainian": "наступний пункт програми; те, що потрібно зробити далі",
-    "spanish": "el siguiente punto del programa; lo próximo que hay que hacer",
-    "german": "der nächste Punkt auf dem Programm; das Nächste, was zu tun ist",
-    "example": "Etter lunsjen er neste post på programmet en grundig gjennomgang av budsjettet for neste kvartal.",
-    "example_english": "After lunch, the next item on the agenda is a thorough review of next quarter's budget.",
-    "example_ukrainian": "Після обіду наступним пунктом програми є детальний розгляд бюджету на наступний квартал.",
-    "example_spanish": "Después del almuerzo, el siguiente punto del programa es una revision exhaustiva del presupuesto para el próximo trimestre.",
-    "example_german": "Nach dem Mittagessen steht als nächster Punkt auf dem Programm eine gründliche Durchsicht des Budgets für das nächste Quartal.",
-    "definition": "det neste man skal gjøre",
-    "level": "C",
-    "category": "professional",
-    "part": "noun"
-  },
-  {
-    "id": "",
-    "norsk": "tyveriet",
-    "lemma": "tyveriet",
+    "norsk": "tyveri (et)",
+    "lemma": "tyveri",
     "english": "the theft; the act of stealing",
     "ukrainian": "крадіжка",
     "spanish": "el robo; el hurto",
@@ -24299,7 +24026,7 @@
   },
   {
     "id": "",
-    "norsk": "bli satt bak lås og slå",
+    "norsk": "å bli satt bak lås og slå",
     "lemma": "bli satt bak lås og slå",
     "english": "to be put behind bars; to be imprisoned",
     "ukrainian": "бути ув'язненим; опинитися за ґратами",
@@ -24372,7 +24099,7 @@
   },
   {
     "id": "",
-    "norsk": "gi seg hen til",
+    "norsk": "å gi seg hen til",
     "lemma": "gi seg hen til",
     "english": "to devote oneself to",
     "ukrainian": "віддаватися чомусь; присвячувати себе",
@@ -24702,7 +24429,7 @@
   },
   {
     "id": "",
-    "norsk": "ta med storm",
+    "norsk": "å ta med storm",
     "lemma": "ta med storm",
     "english": "to sweep someone off their feet; to captivate someone completely",
     "ukrainian": "підкорити когось; захопити когось без тями; завоювати серце",
@@ -24849,7 +24576,7 @@
   },
   {
     "id": "",
-    "norsk": "revelje",
+    "norsk": "revelje (en)",
     "lemma": "revelje",
     "english": "reveille; military morning signal to wake soldiers",
     "ukrainian": "ревейль; військовий ранковий сигнал підйому",
@@ -25087,7 +24814,7 @@
   },
   {
     "id": "",
-    "norsk": "søke ly",
+    "norsk": "å søke ly",
     "lemma": "søke ly",
     "english": "to seek shelter; to try to find protection",
     "ukrainian": "шукати притулок; намагатися знайти захист",
@@ -25162,7 +24889,7 @@
   },
   {
     "id": "",
-    "norsk": "ta/drikke på styrten",
+    "norsk": "å ta/drikke på styrten",
     "lemma": "ta/drikke på styrten",
     "english": "to knock back (a drink); to drink quickly, barely swallowing",
     "ukrainian": "випити залпом; пити швидко, майже не ковтаючи",
@@ -25274,7 +25001,7 @@
   },
   {
     "id": "",
-    "norsk": "innsyn",
+    "norsk": "innsyn (et)",
     "lemma": "innsyn",
     "english": "insight; access; transparency; the ability to see into something",
     "ukrainian": "доступ до інформації; прозорість; можливість зазирнути всередину",
@@ -25418,25 +25145,7 @@
     "category": "abstract-concepts",
     "part": "noun"
   },
-  {
-    "id": "",
-    "norsk": "det forjettede land",
-    "lemma": "det forjettede land",
-    "english": "the promised land; the utopian, most wonderful country (originally from the Bible, referring to Canaan)",
-    "ukrainian": "земля обітована; утопічна, найчудовіша країна",
-    "spanish": "la tierra prometida; el país utópico e ideal",
-    "german": "das gelobte Land; das utopische Wunschland",
-    "example": "For mange innvandrere fremsto det nye landet som det forjettede land, fylt med muligheter de aldri hadde hatt hjemme.",
-    "example_english": "For many immigrants, the new country appeared as the promised land, filled with opportunities they had never had at home.",
-    "example_ukrainian": "Для багатьох іммігрантів нова країна здавалася землею обітованою, сповненою можливостей, яких вони ніколи не мали вдома.",
-    "example_spanish": "Para muchos inmigrantes, el nuevo país se presentaba como la tierra prometida, llena de oportunidades que nunca habían tenido en casa.",
-    "example_german": "Für viele Einwanderer erschien das neue Land als das gelobte Land, erfüllt von Möglichkeiten, die sie zu Hause nie gehabt hatten.",
-    "definition": "det utopiske, mest fantastiske landet (egentlig fra Bibelen om landet Kanaan som Gud lovet Israelsfolket)",
-    "level": "C",
-    "category": "literary",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "å risikere liv og lemmer",
     "lemma": "risikere liv og lemmer",
@@ -25621,7 +25330,7 @@
   },
   {
     "id": "",
-    "norsk": "skulk",
+    "norsk": "skulk (en)",
     "lemma": "skulk",
     "english": "truancy; skipping school; unauthorized absence from school",
     "ukrainian": "прогул (школи); самовільна відсутність на уроках",
@@ -25732,7 +25441,7 @@
   },
   {
     "id": "",
-    "norsk": "gi seg hen til grublerier",
+    "norsk": "å gi seg hen til grublerier",
     "lemma": "gi seg hen til grublerier",
     "english": "to indulge in brooding; to lose oneself in (often unproductive) rumination",
     "ukrainian": "віддаватися роздумам; занурюватися у похмурі думки",
@@ -25917,7 +25626,7 @@
   },
   {
     "id": "",
-    "norsk": "være viklet inn i",
+    "norsk": "å være viklet inn i",
     "lemma": "være viklet inn i",
     "english": "to be entangled in; to be bound up with; to be intertwined with",
     "ukrainian": "бути заплутаним у; бути тісно пов'язаним із",
@@ -26102,7 +25811,7 @@
   },
   {
     "id": "",
-    "norsk": "gi noen huden full",
+    "norsk": "å gi noen huden full",
     "lemma": "gi noen huden full",
     "english": "to give someone a severe telling-off; to scold someone harshly",
     "ukrainian": "влаштувати комусь прочухана; суворо відлаяти когось",
@@ -26194,7 +25903,7 @@
   },
   {
     "id": "",
-    "norsk": "bli forvist",
+    "norsk": "å bli forvist",
     "lemma": "bli forvist",
     "english": "to be banished; to be ordered to leave a place",
     "ukrainian": "бути вигнаним; отримати наказ покинути місце",
@@ -26250,7 +25959,7 @@
   },
   {
     "id": "",
-    "norsk": "være rede til",
+    "norsk": "å være rede til",
     "lemma": "være rede til",
     "english": "to be ready to; to be prepared to",
     "ukrainian": "бути готовим до; бути готовим на",
@@ -26874,7 +26583,7 @@
   },
   {
     "id": "",
-    "norsk": "ha krefter å gå på",
+    "norsk": "å ha krefter å gå på",
     "lemma": "ha krefter å gå på",
     "english": "to have energy in reserve; to have extra strength left",
     "ukrainian": "мати запас сил; мати зайву енергію",
@@ -26893,7 +26602,7 @@
   },
   {
     "id": "",
-    "norsk": "være lutter øre",
+    "norsk": "å være lutter øre",
     "lemma": "være lutter øre",
     "english": "to be all ears; to listen attentively",
     "ukrainian": "бути весь увага; слухати уважно",
@@ -26912,7 +26621,7 @@
   },
   {
     "id": "",
-    "norsk": "løsrivelse",
+    "norsk": "løsrivelse (en)",
     "lemma": "løsrivelse",
     "english": "liberation; detachment; emancipation",
     "ukrainian": "визволення; відокремлення; емансипація",
@@ -27022,7 +26731,7 @@
   },
   {
     "id": "",
-    "norsk": "halvfordøyd sannhet",
+    "norsk": "halvfordøyd sannhet (en)",
     "lemma": "halvfordøyd sannhet",
     "english": "a half-digested truth; something only partially true",
     "ukrainian": "напівзасвоєна правда; щось лише частково правдиве",
@@ -27130,7 +26839,7 @@
   },
   {
     "id": "",
-    "norsk": "forledes til",
+    "norsk": "å forledes til",
     "lemma": "forledes til",
     "english": "to be lured/tempted into; to be led astray into",
     "ukrainian": "бути спокушеним до; бути заведеним у; піддатися спокусі",
@@ -27240,7 +26949,7 @@
   },
   {
     "id": "",
-    "norsk": "kollektivt nag",
+    "norsk": "kollektivt nag (et)",
     "lemma": "kollektivt nag",
     "english": "collective grudge; shared bitterness",
     "ukrainian": "колективна образа; спільна гіркота",
@@ -27349,7 +27058,7 @@
   },
   {
     "id": "",
-    "norsk": "hale og dra ut informasjon",
+    "norsk": "å hale og dra ut informasjon",
     "lemma": "hale og dra ut informasjon",
     "english": "to drag out information; to extract information by repeated questioning",
     "ukrainian": "витягувати інформацію (шляхом багаторазових запитань)",
@@ -27405,7 +27114,7 @@
   },
   {
     "id": "",
-    "norsk": "søken",
+    "norsk": "søken (en)",
     "lemma": "søken",
     "english": "search; quest; seeking",
     "ukrainian": "пошук; прагнення",
@@ -27530,25 +27239,7 @@
     "category": "abstract-concepts",
     "part": "noun"
   },
-  {
-    "id": "",
-    "norsk": "et slag under beltestedet",
-    "lemma": "et slag under beltestedet",
-    "english": "a blow below the belt; something that goes too far or cannot be tolerated; an unfair method",
-    "ukrainian": "удар нижче пояса; щось нестерпне; заборонений прийом",
-    "spanish": "un golpe por debajo del cinturón; algo intolerable; un método no permitido",
-    "german": "ein Schlag unter die Gürtellinie; etwas Unzumutbares; eine unfaire Methode",
-    "example": "Å bringe barnets sykdom inn i den politiske debatten var et slag under beltestedet som sjokkerte alle tilstedeværende.",
-    "example_english": "Bringing the child's illness into the political debate was a blow below the belt that shocked everyone present.",
-    "example_ukrainian": "Залучення хвороби дитини до політичної дискусії було ударом нижче пояса, який шокував усіх присутніх.",
-    "example_spanish": "Traer la enfermedad del niño al debate político fue un golpe por debajo del cinturón que escandalizó a todos los presentes.",
-    "example_german": "Die Krankheit des Kindes in die politische Debatte einzubringen war ein Schlag unter die Gürtellinie, der alle Anwesenden schockierte.",
-    "definition": "noe som blir for mye / som man ikke kan tåle; ikke tillatt metode",
-    "level": "C",
-    "category": "interpersonal-conflict",
-    "part": "noun"
-  },
-  {
+    {
     "id": "",
     "norsk": "avskallet",
     "lemma": "avskallet",
@@ -27586,7 +27277,7 @@
   },
   {
     "id": "",
-    "norsk": "komme feiende inn",
+    "norsk": "å komme feiende inn",
     "lemma": "komme feiende inn",
     "english": "to sweep in; to enter quickly and with a self-confident air",
     "ukrainian": "влетіти; увійти стрімко й самовпевнено",
@@ -27621,26 +27312,7 @@
     "category": "character-temperament",
     "part": "noun"
   },
-  {
-    "id": "",
-    "norsk": "forventingen blir innfridd",
-    "lemma": "forventingen blir innfridd",
-    "english": "the expectation is met; what one expects to happen actually happens",
-    "ukrainian": "очікування виправдовується; те, на що сподіваються, справді відбувається",
-    "spanish": "la expectativa se cumple; lo que se espera que ocurra efectivamente ocurre",
-    "german": "die Erwartung wird erfüllt; das, was man erwartet, tritt tatsächlich ein",
-    "example": "Etter mange år med hardt arbeid ble endelig forventingen innfridd da hun fikk den stillingen hun hadde drømt om.",
-    "example_english": "After many years of hard work, the expectation was finally met when she got the position she had dreamed of.",
-    "example_ukrainian": "Після багатьох років наполегливої праці очікування нарешті виправдалося, коли вона отримала посаду своєї мрії.",
-    "example_spanish": "Tras muchos años de arduo trabajo, la expectativa se cumplió por fin cuando ella obtuvo el puesto con el que había soñado.",
-    "example_german": "Nach vielen Jahren harter Arbeit wurde die Erwartung schließlich erfüllt, als sie die Stelle bekam, von der sie geträumt hatte.",
-    "definition": "forventningen blir oppfylt (det man forventer skal skje, skjer)",
-    "level": "C",
-    "category": "abstract-concepts",
-    "part": "verb",
-    "verb_type": "ureg"
-  },
-  {
+    {
     "id": "",
     "norsk": "hemningsløst",
     "lemma": "hemningsløst",

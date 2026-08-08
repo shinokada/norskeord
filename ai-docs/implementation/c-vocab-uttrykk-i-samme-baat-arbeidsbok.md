@@ -100,53 +100,96 @@ For each entry's `norsk` field:
 
 **Phase 3 complete.**
 
-## Phase 4 — Split into vocab / uttrykk 🔄 In progress
+## Phase 4 — Split into vocab / uttrykk ✅ Done
 
 **Note (2026-08-07):** a first attempt at this phase ran in a previous
 session using an ad hoc `enrich-arbeidsbok.mjs` written directly to Claude's
 sandbox (`/home/claude/work/`). That sandbox is wiped between sessions and
 the script/output were never copied into the project, so ~97/106 batches of
-progress were lost when the session ended. Restarting from scratch below —
-this time the script lives in and writes directly to the real project via
-the Filesystem connector, so progress survives session boundaries.
+progress were lost when the session ended.
+
+**Note (2026-08-08):** restarted from scratch. `scripts/enrich-arbeidsbok.mjs`
+was rewritten (adapted from `scripts/enrich-vocab.mjs`) and written directly
+to the real project via the Filesystem connector. Key differences from the
+original plan below:
+
+- Output paths are **flat** — `draft/c/vocab-c-new.json` / `draft/c/
+  uttrykk-c-new.json` — not nested under `draft/c/i-samme-baat-arbeidsbok/`.
+  This matches what `check-vocab.mjs --draft`, `check-uttrykk.mjs --draft`,
+  and `assign-ids.mjs` all expect; the nested path was a deviation that had
+  to be corrected mid-run (files moved, script's `paths.outVocab`/
+  `outUttrykk` updated).
+- No intermediate `batches/*.json` files — the script writes the combined
+  `vocab-c-new.json`/`uttrykk-c-new.json` directly, flushing to disk after
+  **every single batch** (not just at the end of a run), so a `Ctrl+C` or
+  crash only costs the in-flight batch. Resumable by `lemma` — rerunning
+  the same command picks up wherever it left off.
+- Run **locally by the user** (`node scripts/enrich-arbeidsbok.mjs`,
+  reading `ANTHROPIC_API_KEY` from `.env`), not batch-by-batch through
+  Claude's sandbox — far cheaper and avoids sandbox timeouts entirely.
+  Total cost for the full run: ~$5.
+- `max_tokens` had to be raised from 4096 → 8192 after batch 1 hit a
+  truncated-JSON parse failure (entries here produce richer, multi-sense
+  translations than the original `enrich-vocab.mjs` prompt assumed).
 
 - [x] Split `scripts/outputs/arbeidsbok-resolved.json` (1585 entries) by
       `part`: `part == 'phrase'` → 79 uttrykk candidates, `part != 'phrase'`
-      → 1506 vocab candidates. (Split happens inside the enrichment script
-      below, not as a separate file.)
-- [x] Built `scripts/enrich-arbeidsbok.mjs` (adapted from
-      `scripts/enrich-vocab.mjs`): reads `arbeidsbok-resolved.json`,
-      calls the Claude API per batch (~15 entries) for `category` (vocab
-      only, from the 37 C-level slugs), `english`/`ukrainian`/`spanish`/
-      `german`, and `example` + its 4 translations. Preserves existing
-      `note`/`definition`/`lemma`/`verb_type`/`part` fields as-is. Writes
-      each completed batch to `draft/c/i-samme-baat-arbeidsbok/batches/
-      vocab-batch-NNN.json` / `uttrykk-batch-NNN.json`; skips lemmas
-      already present in any existing batch file on rerun
-      (`--max-batches N`, `--type vocab|uttrykk`, `--dry-run`).
-- [ ] 🔄 Run the script to completion (107 batches total: 101 vocab +
-      6 uttrykk, at batch size 15). Progress: **2/101 vocab batches done**
-      (vocab-batch-001, vocab-batch-002 — 30 entries), 0/6 uttrykk.
-      Workflow per batch (since Claude has no shell access to the user's
-      machine): run the script in Claude's own sandbox with the project's
-      `ANTHROPIC_API_KEY`, spot-check output quality, then write the
-      resulting batch file into the real project via the Filesystem
-      connector so it survives the session. ~1 batch/tool-call is reliable
-      (2+ batches in one call risks a sandbox timeout). Note: the script's
-      automatic diacritic correction only catches headword/common-word
-      mismatches, not every stray missing accent in generated Spanish
-      example sentences — batches 001–002 needed a few manual Spanish
-      accent fixes (e.g. salió, habitación, sofá, hábito) before being
-      written to the project; worth a full `find-diacritic-issues-all.mjs`
-      pass in Phase 5 regardless.
-- [ ] Merge all `batches/batch-*.json` → split into
-      `draft/c/i-samme-baat-arbeidsbok/vocab-c-new.json` (part != phrase)
-      and `uttrykk-c-new.json` (part == phrase).
-- [ ] Assign `id` (`v-c-{category}-NNN` / `u-c-NNN`, continuing from the
-      current max — confirm with `assign-ids.mjs c --dry-run`) and
-      `category` (from `CATEGORIES_BY_LEVEL.C` in `config.ts`).
-- [ ] Fill remaining required `VocabEntry` fields so the files are valid
-      against the type.
+      → 1506 vocab candidates. (Split happens inside the enrichment script,
+      not as a separate file.)
+- [x] Built `scripts/enrich-arbeidsbok.mjs` — see notes above for the
+      as-built design (differs from the original plan in output path,
+      flush frequency, and execution location).
+- [x] Ran the script to completion: 1584/1585 enriched in the main run,
+      1 entry (`ymte frampå`) silently dropped by a batch-response mismatch
+      and picked up on a targeted rerun (resumable-by-lemma made this a
+      1-line fix, not a re-run of everything). Final: **1505 vocab-
+      candidate entries in `draft/c/vocab-c-new.json`, 79 in
+      `draft/c/uttrykk-c-new.json`** (1584 total — `rekke` legitimately
+      appears twice as two distinct verb senses, see Phase 3 notes).
+- [x] `category` (from the 37 C-level slugs) assigned to vocab **and**
+      uttrykk entries alike, per `data-rules/vocab-and-uttrykk.md` (C has
+      no generic `uttrykk` category — confirmed via `check-uttrykk.mjs`'s
+      own category-validation logic before building the prompt).
+- [ ] Assign `id` (`v-c-{category}-NNN` / `u-c-NNN`) — next up, after
+      Phase 4.5 cleanup below and a clean `check-vocab.mjs`/
+      `check-uttrykk.mjs --draft c` pass.
+
+## Phase 4.5 — Post-enrichment norsk/lemma cleanup 🔄 In progress
+
+`check-uttrykk.mjs --draft c` came back clean (0 errors, 0 warnings, all 79
+entries). `check-vocab.mjs c --draft c` found 121 errors + 8 warnings across
+1505 entries — all pre-existing formatting gaps from the Phase 2/3 `norsk`/
+`lemma` extraction, not enrichment bugs. Two categories:
+
+1. **Mechanical formatting fixes (stay in vocab)** — ~85 `verb` entries
+   missing the `å ` prefix (e.g. `gjøre rede for seg` → `å gjøre rede for
+   seg`), ~14 `noun` entries missing a gender marker (e.g. `domene` →
+   `domene (et)`), a few needing an extraction-artifact trim first
+   (`rekkevidden av` → `rekkevidde (en)`, `tyveriet` → `tyveri (et)`, `et
+   sett av` → `sett (et)`, `renningen på en spent vev` → `renning (en)`),
+   and 4 `lemma`-only warnings (strip gender/plural marker from `lemma`,
+   e.g. `hengsel (en/et)` → `hengsel`). Two verb entries needed more than a
+   prefix: `utnevnt til` → `å bli utnevnt til` (bare participle needed
+   `bli`), `jeg har latt meg fortelle` → `å la seg fortelle` (lemma was
+   already correctly reduced; `norsk` wasn't).
+2. **Reclassify `vocab` → `uttrykk`** (`part: 'phrase'`, entry moved from
+   `vocab-c-new.json` to `uttrykk-c-new.json`) — 19 entries with no single
+   grammatical head or citable dictionary form, per the
+   `vocab-and-uttrykk.md` decision rule: `det går trill rundt for ham`,
+   `magen vrenger seg`, `forventingen blir innfridd` (full clauses with a
+   baked-in subject/pronoun), `det aller helligste`, `en svunnen tid`, `et
+   sjenerøst hodekast`, `et rødt øre` (note explicitly says "brukes bare
+   med ikke" — negation-bound idiom), `leven og spetakkel` (coordinated
+   pair, no single head), `på randen`, `uminnelige tider`, `onde tunger`,
+   `et vell av`, `(halv)kriminell bane`, `neste post på programmet`, `det
+   forjettede land`, `slekters gang`, `et slag under beltestedet`, and
+   `erkjennelsen ved havet` (lowercased per user decision — reads like a
+   fixed literary/textbook reference, not a general vocab item).
+
+- [ ] Apply both categories of fixes to `draft/c/vocab-c-new.json` /
+      `draft/c/uttrykk-c-new.json`.
+- [ ] Re-run `check-vocab.mjs c --draft c` / `check-uttrykk.mjs --draft c`
+      — confirm 0 errors before moving to `assign-ids.mjs`.
 
 ## Phase 5 — Merge & validate
 
