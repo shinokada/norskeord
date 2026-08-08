@@ -323,23 +323,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-001",
-    "norsk": "holdeplass (en)",
-    "lemma": "holdeplass",
-    "english": "a bus stop",
-    "ukrainian": "автобусна зупинка",
-    "spanish": "una parada de autobús",
-    "german": "die Bushaltestelle",
-    "example": "Holdeplassen er rett rundt hjørnet.",
-    "example_english": "The bus stop is just around the corner.",
-    "example_ukrainian": "Автобусна зупинка одразу за рогом.",
-    "example_spanish": "La parada de autobús está justo a la vuelta de la esquina.",
-    "example_german": "Die Bushaltestelle ist gleich um die Ecke.",
-    "level": "A2",
-    "category": "transport",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-transport-002",
     "norsk": "sen",
     "lemma": "sen",
@@ -2659,23 +2642,6 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-018",
-    "norsk": "minutt (et)",
-    "lemma": "minutt",
-    "english": "a minute",
-    "ukrainian": "хвилина",
-    "spanish": "un minuto",
-    "german": "die Minute",
-    "example": "Vent ett minutt, vær så snill.",
-    "example_english": "Wait one minute, please.",
-    "example_ukrainian": "Зачекайте одну хвилину, будь ласка.",
-    "example_spanish": "Espera un minuto, por favor.",
-    "example_german": "Warte bitte eine Minute.",
-    "level": "A2",
-    "category": "time",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-descriptive-adjectives-001",
     "norsk": "pen",
     "lemma": "pen",
@@ -4512,7 +4478,8 @@
     "example_german": "Er hustet viel im Winter.",
     "level": "A2",
     "category": "body",
-    "part": "verb"
+    "part": "verb",
+    "definition": "en ufrivillig reaksjon fra lungene, ofte ved forkjølelse eller irritasjon i halsen"
   },
   {
     "id": "v-a2-body-014",
@@ -6229,23 +6196,6 @@
     "level": "A2",
     "category": "shopping",
     "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-018",
-    "norsk": "bak",
-    "lemma": "bak",
-    "english": "behind, at the back of",
-    "ukrainian": "позаду, за",
-    "spanish": "detras de",
-    "german": "hinter",
-    "example": "Bilen star bak huset.",
-    "example_english": "The car is standing behind the house.",
-    "example_ukrainian": "Машина стоїть за будинком.",
-    "example_spanish": "El coche está detrás de la casa.",
-    "example_german": "Das Auto steht hinter dem Haus.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
   },
   {
     "id": "v-a2-sports-024",
@@ -8220,23 +8170,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-025",
-    "norsk": "foran",
-    "lemma": "foran",
-    "english": "in front of",
-    "ukrainian": "перед",
-    "spanish": "delante de",
-    "german": "vor",
-    "example": "Bussen stopper foran skolen.",
-    "example_english": "The bus stops in front of the school.",
-    "example_ukrainian": "Автобус зупиняється перед школою.",
-    "example_spanish": "El autobús para delante de la escuela.",
-    "example_german": "Der Bus hält vor der Schule.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-descriptive-adjectives-030",
     "norsk": "å forandre",
     "lemma": "forandre",
@@ -8900,23 +8833,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-030",
-    "norsk": "i",
-    "lemma": "i",
-    "english": "in",
-    "ukrainian": "в, у",
-    "spanish": "en",
-    "german": "in",
-    "example": "Hun bor i Oslo.",
-    "example_english": "She lives in Oslo.",
-    "example_ukrainian": "Вона живе в Осло.",
-    "example_spanish": "Ella vive en Oslo.",
-    "example_german": "Sie wohnt in Oslo.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-communication-042",
     "norsk": "ikke",
     "lemma": "ikke",
@@ -9135,23 +9051,6 @@
     "example_german": "Kann ich zwei Kilogramm Äpfel haben, bitte?",
     "level": "A2",
     "category": "shopping",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-033",
-    "norsk": "kilometer (en)",
-    "lemma": "kilometer",
-    "english": "kilometer",
-    "ukrainian": "кілометр",
-    "spanish": "kilómetro",
-    "german": "Kilometer",
-    "example": "Skolen ligger tre kilometer fra hjemmet mitt.",
-    "example_english": "The school is three kilometers from my home.",
-    "example_ukrainian": "Школа знаходиться за три кілометри від мого будинку.",
-    "example_spanish": "La escuela está a tres kilómetros de mi casa.",
-    "example_german": "Die Schule liegt drei Kilometer von meinem Zuhause entfernt.",
-    "level": "A2",
-    "category": "directions",
     "part": "noun"
   },
   {
@@ -11756,23 +11655,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-041",
-    "norsk": "over",
-    "lemma": "over",
-    "english": "over, above, across",
-    "ukrainian": "над, через, поверх",
-    "spanish": "sobre, encima de, por encima de",
-    "german": "über, oberhalb",
-    "example": "Fuglen fløy over husene i nabolaget.",
-    "example_english": "The bird flew over the houses in the neighbourhood.",
-    "example_ukrainian": "Птах летів над будинками в районі.",
-    "example_spanish": "El pájaro voló sobre las casas del vecindario.",
-    "example_german": "Der Vogel flog über die Häuser in der Nachbarschaft.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-transport-015",
     "norsk": "å overnatte",
     "lemma": "overnatte",
@@ -12487,23 +12369,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-044",
-    "norsk": "på",
-    "lemma": "på",
-    "english": "on, at, in",
-    "ukrainian": "на, у, при",
-    "spanish": "en, sobre",
-    "german": "auf, an, in",
-    "example": "Boken ligger på bordet.",
-    "example_english": "The book is on the table.",
-    "example_ukrainian": "Книга лежить на столі.",
-    "example_spanish": "El libro está sobre la mesa.",
-    "example_german": "Das Buch liegt auf dem Tisch.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-cooking-047",
     "norsk": "pålegg (et)",
     "lemma": "pålegg",
@@ -13113,23 +12978,6 @@
     "example_german": "Kannst du mir bitte den Senf reichen?",
     "level": "A2",
     "category": "cooking",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-046",
-    "norsk": "sentrum (et)",
-    "lemma": "sentrum",
-    "english": "city centre, downtown",
-    "ukrainian": "центр міста, центр",
-    "spanish": "centro de la ciudad, centro",
-    "german": "Stadtzentrum, Innenstadt, Zentrum",
-    "example": "Butikken ligger rett i sentrum av byen.",
-    "example_english": "The shop is located right in the city centre.",
-    "example_ukrainian": "Магазин розташований прямо в центрі міста.",
-    "example_spanish": "La tienda está ubicada justo en el centro de la ciudad.",
-    "example_german": "Das Geschäft liegt direkt im Stadtzentrum.",
-    "level": "A2",
-    "category": "directions",
     "part": "noun"
   },
   {
@@ -14595,23 +14443,6 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-053",
-    "norsk": "tredje",
-    "lemma": "tredje",
-    "english": "third",
-    "ukrainian": "третій",
-    "spanish": "tercero",
-    "german": "dritte",
-    "example": "Han kom i mål som den tredje.",
-    "example_english": "He finished in third place.",
-    "example_ukrainian": "Він фінішував третім.",
-    "example_spanish": "Él llego en tercer lugar.",
-    "example_german": "Er kam als Dritter ins Ziel.",
-    "level": "A2",
-    "category": "time",
-    "part": "adjective"
-  },
-  {
     "id": "v-a2-social-life-094",
     "norsk": "å treffe",
     "lemma": "treffe",
@@ -14848,23 +14679,6 @@
     "level": "A2",
     "category": "time",
     "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-051",
-    "norsk": "under",
-    "lemma": "under",
-    "english": "under",
-    "ukrainian": "під",
-    "spanish": "debajo de",
-    "german": "unter",
-    "example": "Katten sov under bordet hele ettermiddagen.",
-    "example_english": "The cat slept under the table all afternoon.",
-    "example_ukrainian": "Кіт спав під столом цілий вечір.",
-    "example_spanish": "El gato durmio debajo de la mesa toda la tarde.",
-    "example_german": "Die Katze schlief den ganzen Nachmittag unter dem Tisch.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
   },
   {
     "id": "v-a2-occupations-072",
@@ -16075,57 +15889,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-house-chores-048",
-    "norsk": "å legge",
-    "lemma": "legge",
-    "english": "to lay / put (something flat) down",
-    "ukrainian": "класти (щось пласке)",
-    "spanish": "poner / colocar (algo plano)",
-    "german": "legen",
-    "example": "Hun legger boka på bordet.",
-    "example_english": "She puts the book on the table.",
-    "example_ukrainian": "Вона кладе книгу на стіл.",
-    "example_spanish": "Ella pone el libro en la mesa.",
-    "example_german": "Sie legt das Buch auf den Tisch.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "verb"
-  },
-  {
-    "id": "v-a2-house-chores-049",
-    "norsk": "å stå",
-    "lemma": "stå",
-    "english": "to stand",
-    "ukrainian": "стояти",
-    "spanish": "estar de pie / estar situado",
-    "german": "stehen",
-    "example": "Vasen står på bordet.",
-    "example_english": "The vase is standing on the table.",
-    "example_ukrainian": "Ваза стоїть на столі.",
-    "example_spanish": "El jarrón está sobre la mesa.",
-    "example_german": "Die Vase steht auf dem Tisch.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "verb"
-  },
-  {
-    "id": "v-a2-house-chores-050",
-    "norsk": "å ligge",
-    "lemma": "ligge",
-    "english": "to lie (flat)",
-    "ukrainian": "лежати",
-    "spanish": "estar tumbado / estar situado",
-    "german": "liegen",
-    "example": "Boka ligger på bordet.",
-    "example_english": "The book is lying on the table.",
-    "example_ukrainian": "Книга лежить на столі.",
-    "example_spanish": "El libro está sobre la mesa.",
-    "example_german": "Das Buch liegt auf dem Tisch.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "verb"
-  },
-  {
     "id": "v-a2-directions-058",
     "norsk": "til venstre for",
     "lemma": "til venstre for",
@@ -16160,40 +15923,6 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-body-033",
-    "norsk": "fot (en)",
-    "lemma": "fot",
-    "english": "a foot",
-    "ukrainian": "нога / стопа",
-    "spanish": "un pie",
-    "german": "der Fuß",
-    "example": "Jeg har vondt i foten.",
-    "example_english": "My foot hurts.",
-    "example_ukrainian": "У мене болить нога.",
-    "example_spanish": "Me duele el pie.",
-    "example_german": "Mein Fuß tut weh.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-body-034",
-    "norsk": "øye (et)",
-    "lemma": "øye",
-    "english": "an eye",
-    "ukrainian": "око",
-    "spanish": "un ojo",
-    "german": "das Auge",
-    "example": "Hun har blå øyne.",
-    "example_english": "She has blue eyes.",
-    "example_ukrainian": "У неї блакитні очі.",
-    "example_spanish": "Ella tiene los ojos azules.",
-    "example_german": "Sie hat blaue Augen.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-social-life-111",
     "norsk": "å glede seg",
     "lemma": "glede seg",
@@ -16225,6 +15954,7 @@
     "example_german": "Sie fürchtet sich vor der Prüfung.",
     "level": "A2",
     "category": "social-life",
-    "part": "verb"
+    "part": "verb",
+    "definition": "være nervøs, føle ulyst"
   }
 ]

@@ -287,7 +287,7 @@ function checkIdFormat(id, level, category) {
 }
 
 /** Gender parenthetical: (en), (et), (ei), or combinations */
-const GENDER_PATTERN = /\s*\((en|et|ei|en\/ei|en\/et|en\/men)\)$/i;
+const GENDER_PATTERN = /\s*\((en|et|ei|en\/ei|en\/et|en\/men|en\/ei\/et)\)$/i;
 /** Plural parenthetical: (pl.) = ubestemt flertall, (b.pl.) = bestemt flertall */
 const PLURAL_PATTERN = /\s*\((b\.)?pl\.\)$/i;
 /** Indeclinable parenthetical: (ubøy.) = ubøyelig — noun takes no gender/plural/bestemt inflection at all */

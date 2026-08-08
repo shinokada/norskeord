@@ -8381,7 +8381,8 @@
     "example_german": "Die Miete beträgt zehntausend Kronen im Monat.",
     "level": "A1",
     "category": "housing",
-    "part": "noun"
+    "part": "noun",
+    "definition": "Det månedlige beløpet en leietaker betaler til utleier."
   },
   {
     "id": "v-a1-housing-002",
@@ -8398,7 +8399,8 @@
     "example_german": "Sie nahmen einen Kredit auf, um eine Wohnung zu kaufen.",
     "level": "A1",
     "category": "housing",
-    "part": "noun"
+    "part": "noun",
+    "definition": "Penger man låner og forplikter seg til å betale tilbake."
   },
   {
     "id": "v-a1-housing-003",
@@ -8415,7 +8417,8 @@
     "example_german": "Wir mieten eine Wohnung in der Stadt.",
     "level": "A1",
     "category": "housing",
-    "part": "verb"
+    "part": "verb",
+    "definition": "Å betale penger for å bruke noe, for eksempel en bolig eller en bil, som tilhører en annen person."
   },
   {
     "id": "v-a1-housing-004",
@@ -8432,7 +8435,8 @@
     "example_german": "Er besitzt das Haus selbst.",
     "level": "A1",
     "category": "housing",
-    "part": "verb"
+    "part": "verb",
+    "definition": "Å ha noe som tilhører deg, for eksempel en bil, et hus eller en gjenstand."
   },
   {
     "id": "v-a1-housing-005",
@@ -8449,6 +8453,7 @@
     "example_german": "Wir sparen Geld für ein neues Auto.",
     "level": "A1",
     "category": "housing",
-    "part": "verb"
+    "part": "verb",
+    "definition": "Å ikke bruke alle pengene eller ressursene man har, men legge dem til side til senere."
   }
 ]

@@ -1,0 +1,399 @@
+# Clean review — I samme båt vocabularliste
+
+Auto-processed: 1766 / 2118
+
+- verb: 649
+- adjective: 521
+- adverb: 46
+- preposition: 4
+- noun: 546
+
+Needs manual review: 352 entries with no marker / multiple markers / an unrecognized marker (these are left untouched in the clean file — `part` is missing), plus any multi-word `noun` entries flagged below for a vocab-vs-uttrykk sanity check.
+
+## Review items
+
+- `i sin fulle tyngde (m)` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `den daglige tralten` — no marker
+- `Beritmor` — no marker
+- `fra sans og samling` — no marker
+- `ha alt på stell (n)` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `være på kjøret` — no marker
+- `krøket sammen` — no marker
+- `ikke en kjeft` — no marker
+- `gud min santen` — no marker
+- `gå på omgang (m/f)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `det er politikere det går i` — no marker
+- `utnevnt til` — no marker
+- `himmelen hadde ramlet i hodet på meg` — no marker
+- `ta på ramme alvor` — no marker
+- `pytt i panne` — no marker
+- `strengt tatt` — no marker
+- `være vitne (n) til` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `bli kastet på dør` — no marker
+- `være til bry` — no marker
+- `se til å finne en annen vei i livet` — no marker
+- `leve (v3) livet knirkefritt (adv.)` — 2 parenthetical groups
+- `hvordan gikk det til?` — no marker
+- `ta seg av noen/noe` — no marker
+- `få slengt etter seg` — no marker
+- `bli fôret med` — no marker
+- `i grunnen` — no marker
+- `på magisk vis` — no marker
+- `uten min fortjeneste (m/f)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `utpå dagen` — no marker
+- `det unner jeg ingen` — no marker
+- `gråt og tenners gnissel` — no marker
+- `kunne noe til fingerspissene` — no marker
+- `lykken på jord` — no marker
+- `hvor blir de av?` — no marker
+- `bli verdsatt` — no marker
+- `bli svar skyldig` — no marker
+- `inngis med frykt` — no marker
+- `sliten inntil margen` — no marker
+- `bli spist opp innvendig` — no marker
+- `på sammenbruddets rand (m/f)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `boblende glad` — no marker
+- `bli slått av noe` — no marker
+- `i ett sett` — no marker
+- `se langt etter` — no marker
+- `gå over hodet på henne` — no marker
+- `en hel masse` — no marker
+- `få med seg` — no marker
+- `ved synet av` — no marker
+- `ha til rådighet (m/f)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `på et blunk` — no marker
+- `være talende for` — no marker
+- `ikke en kjeft` — no marker
+- `strengt tatt` — no marker
+- `det ligger for lavt for henne` — no marker
+- `rett som det er` — no marker
+- `være ille ute` — no marker
+- `ved sine fulle fem` — no marker
+- `med skrevende ben (n)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `være ei hard nøtt (å knekke)` — unrecognized marker: (å knekke)
+- `få has på` — no marker
+- `uten mine (m/f) til` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `feit (adj.) gevinst (m)` — 2 parenthetical groups
+- `ve (n) og vel (n)` — 2 parenthetical groups
+- `for sitt bare liv` — no marker
+- `til det er hun altfor mystisk` — no marker
+- `være hellig overbevist om` — no marker
+- `komme for en dag` — no marker
+- `i påvente av` — no marker
+- `bevares!` — no marker
+- `de er ikke snauere enn at …` — no marker
+- `det gikk an` — no marker
+- `i sitt ess skål få tre` — no marker
+- `som mange vil ha det til` — no marker
+- `jeg har latt meg fortelle` — no marker
+- `vel å merke` — no marker
+- `være ute etter` — no marker
+- `på utspekulert vis` — no marker
+- `til gjengjeld` — no marker
+- `ingen kan gjøre noe fra eller til` — no marker
+- `sprøyt fra ende til annen` — no marker
+- `det var livet om å gjøre` — no marker
+- `dag ut og dag inn` — no marker
+- `tung som bly (n)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `det svimler for henne` — no marker
+- `hun får ikke med seg et kvidder` — no marker
+- `rekke (ureg.: rekke – rekker – rakk – har rukket)` — unrecognized marker: (ureg.: rekke – rekker – rakk – har rukket)
+- `minnene ligger badet i et nostalgisk skjær (n)` — multi-word noun (7 words) — check vocab vs uttrykk in Phase 4
+- `ta til å` — no marker
+- `tre (trer – trådte – har trådt) fram for meg` — unrecognized marker: (trer – trådte – har trådt)
+- `min barndoms rike (n)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `det var fritt fram for oss alle` — no marker
+- `til enhver tid` — no marker
+- `alle gikk i ett for meg` — no marker
+- `helt og holdent` — no marker
+- `avskum (n); utskudd (n); pakk (n); lømmel (m)` — 4 parenthetical groups
+- `være myntet på` — no marker
+- `snike (ureg.) seg forbi (snek – har sneket)` — 2 parenthetical groups
+- `lyde (ureg.) (lød – har lydt)` — 2 parenthetical groups
+- `dra kjensel (m) på noen` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `i ett sett` — no marker
+- `hver bidige dag` — no marker
+- `i bunn og grunn` — no marker
+- `når alt kom til alt` — no marker
+- `ha bind (n) for øynene` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `stikke seg inn i en (her: om ord)` — unrecognized marker: (her: om ord)
+- `på gamle stier` — no marker
+- `som revet ut av livets kalender` — no marker
+- `ta beina på nakken` — no marker
+- `sitte (ureg.) som spikret fast (om ord)` — 2 parenthetical groups
+- `såre enkelt` — no marker
+- `være inngitt med` — no marker
+- `før man får sukk for seg` — no marker
+- `gå glipp av` — no marker
+- `gi lyd fra seg` — no marker
+- `det går opp for henne` — no marker
+- `gå i tusen knas (n)` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `på ertende vis (n)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `gi seg hen` — no marker
+- `hun sier alt og mer til` — no marker
+- `ta fatt på` — no marker
+- `i tide og utide` — no marker
+- `bli slått av en innsikt` — no marker
+- `sleng (m) i hofta` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `gjøre rede for seg` — no marker
+- `være blottet for` — no marker
+- `bli tildelt` — no marker
+- `være tilbøyelig til` — no marker
+- `uttrykke patos og etos` — no marker
+- `utgjøre en trussel` — no marker
+- `slik seg hør og bør` — no marker
+- `anlegge (ureg.) fontene (m)` — 2 parenthetical groups
+- `ikke se ut i måneskinn` — no marker
+- `hengsel (m, f, n)` — unrecognized marker: (m, f, n)
+- `en salig blanding (m/f)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `ve (n) og vel (n)` — 2 parenthetical groups
+- `få seg en lærepenge` — no marker
+- `gi noen inn` — no marker
+- `få rede på` — no marker
+- `slå ned på` — no marker
+- `være dømt til` — no marker
+- `drive (ureg.) noen til vanvidd (m)` — 2 parenthetical groups
+- `fnyse (v2, ureg.) misbilligende (adj.)` — 2 parenthetical groups
+- `være på gang` — no marker
+- `få nyss om` — no marker
+- `være i gjære` — no marker
+- `ta til motmæle (n)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `gå for seg` — no marker
+- `stå på spill` — no marker
+- `være fordypet` — no marker
+- `i ørska` — no marker
+- `i overensstemmelse med` — no marker
+- `aner (m, pl)` — unrecognized marker: (m, pl)
+- `gleden boblet aldri` — no marker
+- `i det ytre` — no marker
+- `i vid omkrets (m)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `frådende (adj.) sjalusi (m)` — 2 parenthetical groups
+- `være pinlig klar over noe` — no marker
+- `hvetebrødsdagene` — no marker
+- `gjøre sitt inntog` — no marker
+- `til gagns` — no marker
+- `ulastelig kledd` — no marker
+- `ense (v1, v2) noe(n)` — 2 parenthetical groups
+- `klo (m/f) – klør (flertall)` — 2 parenthetical groups
+- `for godt` — no marker
+- `etter tur` — no marker
+- `uten den minste antydning (m/f) til` — multi-word noun (5 words) — check vocab vs uttrykk in Phase 4
+- `et sjenerøst hodekast` — no marker
+- `gå rakt inn i margen` — no marker
+- `for lengst` — no marker
+- `overfalles av en sterk lyst` — no marker
+- `stå rett til værs` — no marker
+- `gi etter for` — no marker
+- `uten nærmere overveielse (m)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `i selvsamme øyeblikk (n)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `ved hårfestet` — no marker
+- `hva hvis` — no marker
+- `stenk (n) av gråt` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `leke (v2) gjemsel (n)` — 2 parenthetical groups
+- `på skakke` — no marker
+- `taus som en østers` — no marker
+- `ved det vante` — no marker
+- `ut på sidelinjen` — no marker
+- `ved et trylleslag` — no marker
+- `gjøre mine (m/f) til` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `på forhånd` — no marker
+- `være ved sine fulle fem` — no marker
+- `gå opp i røyk` — no marker
+- `burde gjøre sitt til at …` — no marker
+- `jeg overveldes av` — no marker
+- `en svunnen tid` — no marker
+- `brokker (m, pl.)` — unrecognized marker: (m, pl.)
+- `klemt inne` — no marker
+- `det lenge fryktede` — no marker
+- `i roten av sjelen` — no marker
+- `overlatt til seg selv` — no marker
+- `på tvers av` — no marker
+- `hvor skal jeg gjøre av meg?` — no marker
+- `gå an` — no marker
+- `inn med deg!` — no marker
+- `så snart` — no marker
+- `la (ureg.) seg drive (ureg.) med` — 2 parenthetical groups
+- `renningen på en spent vev` — no marker
+- `på lik linje (m/f) med` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `ta til` — no marker
+- `hakk i hæl (m)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `sølet(e) (adj.)` — 2 parenthetical groups
+- `få frysninger og gåsehud (m/f)` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `stengel (m) – stengler` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `det aller helligste` — no marker
+- `kriker og kroker` — no marker
+- `ha en finger med i spillet` — no marker
+- `være blottet for` — no marker
+- `i korte ordelag (n)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `overveldes av` — no marker
+- `leven (n) og spetakkel (n)` — 2 parenthetical groups
+- `det går trill rundt for ham` — no marker
+- `et rødt øre` — no marker
+- `ikke være sen om å gjøre noe` — no marker
+- `eitrende sint` — no marker
+- `finne (ureg.) utløp (n)` — 2 parenthetical groups
+- `ene og alene` — no marker
+- `kappes om (kappes – kaptes – har kappes)` — unrecognized marker: (kappes – kaptes – har kappes)
+- `dårlig stemt` — no marker
+- `løpe (ureg.) rundt som en strikkball (m)` — 2 parenthetical groups
+- `til mine dagers ende` — no marker
+- `om kapp` — no marker
+- `lykkes med sitt forsett (lykkes – lyktes – har lyktes)` — unrecognized marker: (lykkes – lyktes – har lyktes)
+- `helt og holdent` — no marker
+- `bli satt ut av spill` — no marker
+- `ikke være sen om` — no marker
+- `hulter til bulter` — no marker
+- `ta seg selv i` — no marker
+- `i særdeleshet` — no marker
+- `slekters gang` — no marker
+- `til stadighet` — no marker
+- `være til bry` — no marker
+- `gå fra all forstand (m)` — multi-word noun (4 words) — check vocab vs uttrykk in Phase 4
+- `være på pletten` — no marker
+- `mot alle odds` — no marker
+- `være egnet til` — no marker
+- `fatte (v1) en beslutning (m/f)` — 2 parenthetical groups
+- `gå opp for en` — no marker
+- `ikke forstå bæret/bæra av` — no marker
+- `gjøre seg rede til` — no marker
+- `rekker – rakte – har rakt` — no marker
+- `få nyss om noe` — no marker
+- `i tråd med` — no marker
+- `rekkevidden av` — no marker
+- `få frarøvet` — no marker
+- `Avgrunn` — no marker
+- `i påvente av` — no marker
+- `Det siste håpet` — no marker
+- `dyende våt` — no marker
+- `være/bli ribbet for` — no marker
+- `På randen` — no marker
+- `på randen` — no marker
+- `på måfå` — no marker
+- `Virkelighet` — no marker
+- `tappet for krefter` — no marker
+- `magen vrenger seg` — no marker
+- `rakt ut` — no marker
+- `På vei bort` — no marker
+- `Intet nytt` — no marker
+- `ha til overs` — no marker
+- `Glattpolert liv` — no marker
+- `ved et trylleslag` — no marker
+- `sot (m/f/n)` — unrecognized marker: (m/f/n)
+- `Erkjennelsen ved havet` — no marker
+- `uminnelige tider` — no marker
+- `bli var` — no marker
+- `være i besittelse av` — no marker
+- `Å legge lokk på fortiden` — no marker
+- `være i flyt` — no marker
+- `leve (v3) og ånde (v1) for` — 2 parenthetical groups
+- `sette noen ut av spill` — no marker
+- `ta seg selv i noe` — no marker
+- `sitte på baken` — no marker
+- `Forfølgelse` — no marker
+- `gjøre seg gjeldende` — no marker
+- `et sett av` — no marker
+- `onde tunger` — no marker
+- `Metode` — no marker
+- `for ditt bare liv` — no marker
+- `det var likevel så rart med det` — no marker
+- `Innpass` — no marker
+- `gå på konsentrasjonen løs` — no marker
+- `i tide og utide` — no marker
+- `ta seg ut for noen` — no marker
+- `Vennskap` — no marker
+- `med blikk (n) og fakter (m/f)` — 2 parenthetical groups
+- `kysten er klar` — no marker
+- `Reaksjon` — no marker
+- `islett (n) av regn` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `med ett` — no marker
+- `bli var noe` — no marker
+- `være hinsides` — no marker
+- `På åpent hav` — no marker
+- `alt er på stell` — no marker
+- `Savn møter savn` — no marker
+- `tappet for krefter` — no marker
+- `fra barnsben av` — no marker
+- `i ny og ne` — no marker
+- `for sen i vendinga` — no marker
+- `komme rekende på ei fjøl` — no marker
+- `Domene` — no marker
+- `et vell av` — no marker
+- `Carpe diem` — no marker
+- `så det rekker` — no marker
+- `Åpning` — no marker
+- `Plan` — no marker
+- `bli unnfanget` — no marker
+- `kysten er klar` — no marker
+- `få fatt i` — no marker
+- `helt uten videre` — no marker
+- `i korte trekk` — no marker
+- `(halv)kriminell bane (m)` — 2 parenthetical groups
+- `neste post på programmet` — no marker
+- `Tyveriet` — no marker
+- `i det lange løp` — no marker
+- `bli satt bak lås og slå` — no marker
+- `i det store og det hele` — no marker
+- `gi seg hen til` — no marker
+- `fra oven` — no marker
+- `Enkefru Milonga` — no marker
+- `ikke rare greiene` — no marker
+- `fra ingensteds hen` — no marker
+- `ta med storm` — no marker
+- `på gløtt` — no marker
+- `Nostalgiens pris` — no marker
+- `Klikk` — no marker
+- `Revelje` — no marker
+- `for egen maskin (m)` — multi-word noun (3 words) — check vocab vs uttrykk in Phase 4
+- `samtlige` — no marker
+- `søke (v2) ly (n)` — 2 parenthetical groups
+- `ta/drikke på styrten` — no marker
+- `På plass` — no marker
+- `Innsyn` — no marker
+- `i kraft av` — no marker
+- `I skyggen av et tre` — no marker
+- `det forjettede land` — no marker
+- `Et nytt fall` — no marker
+- `Skulk` — no marker
+- `med strev og møye` — no marker
+- `På bar bakke` — no marker
+- `gi seg hen til grublerier` — no marker
+- `rusten (adj.) spansk (m)` — 2 parenthetical groups
+- `ta seg (selv) i` — unrecognized marker: (selv)
+- `Et fordømt håp` — no marker
+- `på en armlengdes avstand` — no marker
+- `være viklet inn i` — no marker
+- `Røtter` — no marker
+- `på full guffe` — no marker
+- `gi noen huden full` — no marker
+- `bli forvist` — no marker
+- `være rede til` — no marker
+- `giftig edder (m) og galle (m)` — 2 parenthetical groups
+- `Risiko` — no marker
+- `Ny utsikt` — no marker
+- `Løsning` — no marker
+- `Beslutning` — no marker
+- `Stopp` — no marker
+- `ha krefter å gå på` — no marker
+- `være lutter øre` — no marker
+- `Løsrivelse` — no marker
+- `støtt og stadig` — no marker
+- `gå i seg selv` — no marker
+- `Bakenfor` — no marker
+- `halvfordøyd sannhet` — no marker
+- `Ro` — no marker
+- `sin sedvane tro` — no marker
+- `forledes til` — no marker
+- `Kollektivt nag` — no marker
+- `Styrke` — no marker
+- `kastet hodekulls av gårde` — no marker
+- `hale (v1, v2) og dra (ureg.) ut informasjon` — 2 parenthetical groups
+- `Søken` — no marker
+- `et slag under beltestedet` — no marker
+- `histen og pisten` — no marker
+- `Hygge` — no marker
+- `komme feiende inn` — no marker
+- `forventingen blir innfridd` — no marker
+- `Grantrær` — no marker
+- `ved veis ende` — no marker
+- `Gråten kommer` — no marker
+- `Rosebusk` — no marker
