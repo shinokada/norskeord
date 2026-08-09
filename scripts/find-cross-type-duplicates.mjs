@@ -20,8 +20,8 @@
  * lemma rather than the bare lemma itself.
  *
  * Outputs:
- *   scripts/output/cross-type-duplicates.json
- *   scripts/output/cross-type-duplicates.md
+ *   scripts/outputs/cross-type-duplicates.json
+ *   scripts/outputs/cross-type-duplicates.md
  *
  * Usage:
  *   node scripts/find-cross-type-duplicates.mjs
@@ -34,7 +34,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(PROJECT_ROOT, 'src/lib/data');
-const OUTPUT_DIR = path.join(PROJECT_ROOT, 'scripts/output');
+const OUTPUT_DIR = path.join(PROJECT_ROOT, 'scripts/outputs');
 
 const VOCAB_FILES = [
   'vocab-a1.json',
