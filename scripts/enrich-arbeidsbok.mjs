@@ -470,13 +470,17 @@ async function main() {
         continue;
       }
       if (item.category && !C_CATEGORIES.includes(item.category)) {
-        console.warn(`\n    ⚠️  Invalid category "${item.category}" for lemma="${item.lemma}" — skipping`);
+        console.warn(
+          `\n    ⚠️  Invalid category "${item.category}" for lemma="${item.lemma}" — skipping`
+        );
         continue;
       }
 
       const extractedEntry = batchByLemma.get(item.lemma);
       if (!extractedEntry) {
-        console.warn(`\n    ⚠️  Result lemma="${item.lemma}" doesn't match any entry in this batch — skipping`);
+        console.warn(
+          `\n    ⚠️  Result lemma="${item.lemma}" doesn't match any entry in this batch — skipping`
+        );
         continue;
       }
 
@@ -521,7 +525,9 @@ async function main() {
 
   console.log(`\n✅  Appended ${newVocab.length} vocab + ${newUttrykk.length} uttrykk entries.`);
   console.log(`    Vocab total now: ${existingVocab.length + newVocab.length} → ${paths.outVocab}`);
-  console.log(`    Uttrykk total now: ${existingUttrykk.length + newUttrykk.length} → ${paths.outUttrykk}`);
+  console.log(
+    `    Uttrykk total now: ${existingUttrykk.length + newUttrykk.length} → ${paths.outUttrykk}`
+  );
 
   const remaining = batches.length - batchesThisRun.length;
   if (remaining > 0) {

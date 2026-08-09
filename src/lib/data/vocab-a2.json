@@ -323,7 +323,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-002",
+    "id": "v-a2-transport-001",
     "norsk": "sen",
     "lemma": "sen",
     "english": "late",
@@ -340,7 +340,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-003",
+    "id": "v-a2-transport-002",
     "norsk": "avgang (en)",
     "lemma": "avgang",
     "english": "a departure",
@@ -357,7 +357,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-004",
+    "id": "v-a2-transport-003",
     "norsk": "ankomst (en)",
     "lemma": "ankomst",
     "english": "an arrival",
@@ -374,7 +374,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-005",
+    "id": "v-a2-transport-004",
     "norsk": "ferge (en)",
     "lemma": "ferge",
     "english": "a ferry",
@@ -2438,7 +2438,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-005",
+    "id": "v-a2-time-004",
     "norsk": "forrige uke",
     "lemma": "forrige uke",
     "english": "last week",
@@ -2455,7 +2455,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-006",
+    "id": "v-a2-time-005",
     "norsk": "neste år",
     "lemma": "neste år",
     "english": "next year",
@@ -2472,7 +2472,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-007",
+    "id": "v-a2-time-006",
     "norsk": "alltid",
     "lemma": "alltid",
     "english": "always",
@@ -2489,7 +2489,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-008",
+    "id": "v-a2-time-007",
     "norsk": "ofte",
     "lemma": "ofte",
     "english": "often",
@@ -2506,7 +2506,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-009",
+    "id": "v-a2-time-008",
     "norsk": "sjelden",
     "lemma": "sjelden",
     "english": "rarely / seldom",
@@ -2523,7 +2523,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-010",
+    "id": "v-a2-time-009",
     "norsk": "aldri",
     "lemma": "aldri",
     "english": "never",
@@ -2540,7 +2540,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-012",
+    "id": "v-a2-time-010",
     "norsk": "vanligvis",
     "lemma": "vanligvis",
     "english": "usually",
@@ -2557,7 +2557,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-013",
+    "id": "v-a2-time-011",
     "norsk": "snart",
     "lemma": "snart",
     "english": "soon",
@@ -2574,7 +2574,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-014",
+    "id": "v-a2-time-012",
     "norsk": "allerede",
     "lemma": "allerede",
     "english": "already",
@@ -2591,7 +2591,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-015",
+    "id": "v-a2-time-013",
     "norsk": "ennå",
     "lemma": "ennå",
     "english": "yet / still",
@@ -2608,7 +2608,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-016",
+    "id": "v-a2-time-014",
     "norsk": "nylig",
     "lemma": "nylig",
     "english": "recently",
@@ -2625,7 +2625,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-017",
+    "id": "v-a2-time-015",
     "norsk": "siden",
     "lemma": "siden",
     "english": "since / ago",
@@ -6249,7 +6249,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-006",
+    "id": "v-a2-transport-005",
     "norsk": "barnevogn (en/ei)",
     "lemma": "barnevogn",
     "english": "pram, baby stroller",
@@ -6266,7 +6266,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-021",
+    "id": "v-a2-time-016",
     "norsk": "begynnelse (en)",
     "lemma": "begynnelse",
     "english": "beginning, start",
@@ -6453,7 +6453,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-007",
+    "id": "v-a2-transport-006",
     "norsk": "bilnøkkel (en)",
     "lemma": "bilnøkkel",
     "english": "car key",
@@ -6742,7 +6742,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-008",
+    "id": "v-a2-transport-007",
     "norsk": "busstasjon (en)",
     "lemma": "busstasjon",
     "english": "bus station",
@@ -6776,7 +6776,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-019",
+    "id": "v-a2-directions-018",
     "norsk": "by (en)",
     "lemma": "by",
     "english": "city",
@@ -6844,7 +6844,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-022",
+    "id": "v-a2-time-017",
     "norsk": "da",
     "lemma": "da",
     "english": "then / when",
@@ -6946,7 +6946,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-directions-020",
+    "id": "v-a2-directions-019",
     "norsk": "der",
     "lemma": "der",
     "english": "there",
@@ -6963,7 +6963,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-023",
+    "id": "v-a2-time-018",
     "norsk": "deretter",
     "lemma": "deretter",
     "english": "after that, then, afterwards",
@@ -7082,7 +7082,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-directions-021",
+    "id": "v-a2-directions-020",
     "norsk": "dit",
     "lemma": "dit",
     "english": "there, to that place",
@@ -7099,7 +7099,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-009",
+    "id": "v-a2-transport-008",
     "norsk": "å dra",
     "lemma": "dra",
     "english": "to go, to leave, to travel",
@@ -7184,7 +7184,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-024",
+    "id": "v-a2-time-019",
     "norsk": "døgn (et)",
     "lemma": "døgn",
     "english": "a full day, 24 hours",
@@ -7473,7 +7473,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-025",
+    "id": "v-a2-time-020",
     "norsk": "etter",
     "lemma": "etter",
     "english": "after",
@@ -7490,7 +7490,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-026",
+    "id": "v-a2-time-021",
     "norsk": "ettermiddag (en)",
     "lemma": "ettermiddag",
     "english": "afternoon",
@@ -7507,7 +7507,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-027",
+    "id": "v-a2-time-022",
     "norsk": "etterpå",
     "lemma": "etterpå",
     "english": "afterwards",
@@ -7609,7 +7609,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-036",
+    "id": "v-a2-communication-035",
     "norsk": "feil (en)",
     "lemma": "feil",
     "english": "mistake",
@@ -7694,7 +7694,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-037",
+    "id": "v-a2-communication-036",
     "norsk": "forklaring (en/ei)",
     "lemma": "forklaring",
     "english": "explanation",
@@ -7728,7 +7728,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-028",
+    "id": "v-a2-time-023",
     "norsk": "formiddag (en)",
     "lemma": "formiddag",
     "english": "morning, forenoon",
@@ -7796,7 +7796,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-010",
+    "id": "v-a2-transport-009",
     "norsk": "fort",
     "lemma": "fort",
     "english": "quickly, fast",
@@ -7864,7 +7864,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-022",
+    "id": "v-a2-directions-021",
     "norsk": "å følge",
     "lemma": "følge",
     "english": "to follow",
@@ -7881,7 +7881,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-038",
+    "id": "v-a2-communication-037",
     "norsk": "for",
     "lemma": "for",
     "english": "for",
@@ -7898,7 +7898,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-023",
+    "id": "v-a2-directions-022",
     "norsk": "å føre",
     "lemma": "føre",
     "english": "to lead",
@@ -7915,7 +7915,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-011",
+    "id": "v-a2-transport-010",
     "norsk": "førerkort (et)",
     "lemma": "førerkort",
     "english": "driving licence",
@@ -7932,7 +7932,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-029",
+    "id": "v-a2-time-024",
     "norsk": "først",
     "lemma": "først",
     "english": "first",
@@ -7983,7 +7983,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-030",
+    "id": "v-a2-time-025",
     "norsk": "gang (en)",
     "lemma": "gang",
     "english": "time (occurrence); hallway",
@@ -8034,7 +8034,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-024",
+    "id": "v-a2-directions-023",
     "norsk": "gate (en/ei)",
     "lemma": "gate",
     "english": "street",
@@ -8051,7 +8051,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-039",
+    "id": "v-a2-communication-038",
     "norsk": "generell",
     "lemma": "generell",
     "english": "general",
@@ -8085,7 +8085,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-031",
+    "id": "v-a2-time-026",
     "norsk": "fjor (ubøy.)",
     "lemma": "fjor",
     "english": "last year (i fjor = last year)",
@@ -8187,7 +8187,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-026",
+    "id": "v-a2-directions-024",
     "norsk": "fra",
     "lemma": "fra",
     "english": "from",
@@ -8204,7 +8204,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-032",
+    "id": "v-a2-time-027",
     "norsk": "framtid (en/ei)",
     "lemma": "framtid",
     "english": "future",
@@ -8238,7 +8238,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-033",
+    "id": "v-a2-time-028",
     "norsk": "fridag (en)",
     "lemma": "fridag",
     "english": "day off",
@@ -8391,7 +8391,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-027",
+    "id": "v-a2-directions-025",
     "norsk": "gjennom",
     "lemma": "gjennom",
     "english": "through",
@@ -8408,7 +8408,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-communication-040",
+    "id": "v-a2-communication-039",
     "norsk": "gjerne",
     "lemma": "gjerne",
     "english": "gladly / willingly / with pleasure",
@@ -8646,7 +8646,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-028",
+    "id": "v-a2-directions-026",
     "norsk": "hit",
     "lemma": "hit",
     "english": "here (direction towards speaker)",
@@ -8663,7 +8663,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-communication-041",
+    "id": "v-a2-communication-040",
     "norsk": "hjelp (en/ei)",
     "lemma": "hjelp",
     "english": "help",
@@ -8697,7 +8697,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-029",
+    "id": "v-a2-directions-027",
     "norsk": "hjem",
     "lemma": "hjem",
     "english": "home (direction, going home)",
@@ -8833,7 +8833,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-042",
+    "id": "v-a2-communication-041",
     "norsk": "ikke",
     "lemma": "ikke",
     "english": "not",
@@ -8850,7 +8850,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-communication-043",
+    "id": "v-a2-communication-042",
     "norsk": "informasjon (en)",
     "lemma": "informasjon",
     "english": "information",
@@ -8867,7 +8867,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-031",
+    "id": "v-a2-directions-028",
     "norsk": "inne",
     "lemma": "inne",
     "english": "inside, indoors",
@@ -8884,7 +8884,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-directions-032",
+    "id": "v-a2-directions-029",
     "norsk": "innenfor",
     "lemma": "innenfor",
     "english": "within, inside",
@@ -8901,7 +8901,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-communication-044",
+    "id": "v-a2-communication-043",
     "norsk": "innkalling (en)",
     "lemma": "innkalling",
     "english": "summons, notice, call-up",
@@ -8969,7 +8969,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-045",
+    "id": "v-a2-communication-044",
     "norsk": "kanskje",
     "lemma": "kanskje",
     "english": "maybe, perhaps",
@@ -9224,7 +9224,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-046",
+    "id": "v-a2-communication-045",
     "norsk": "ham",
     "lemma": "ham",
     "english": "him",
@@ -9258,7 +9258,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-047",
+    "id": "v-a2-communication-046",
     "norsk": "heldigvis",
     "lemma": "heldigvis",
     "english": "fortunately, luckily",
@@ -9275,7 +9275,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-034",
+    "id": "v-a2-time-029",
     "norsk": "helg (en/ei)",
     "lemma": "helg",
     "english": "weekend",
@@ -9326,7 +9326,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-034",
+    "id": "v-a2-directions-030",
     "norsk": "her",
     "lemma": "her",
     "english": "here",
@@ -9428,7 +9428,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-035",
+    "id": "v-a2-time-030",
     "norsk": "hver",
     "lemma": "hver",
     "english": "every / each",
@@ -9479,7 +9479,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-048",
+    "id": "v-a2-communication-047",
     "norsk": "hvilken",
     "lemma": "hvilken",
     "english": "which",
@@ -9496,7 +9496,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-communication-049",
+    "id": "v-a2-communication-048",
     "norsk": "hvis",
     "lemma": "hvis",
     "english": "if",
@@ -9615,7 +9615,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-050",
+    "id": "v-a2-communication-049",
     "norsk": "å håpe",
     "lemma": "håpe",
     "english": "to hope",
@@ -9870,7 +9870,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-051",
+    "id": "v-a2-communication-050",
     "norsk": "å konsentrere seg",
     "lemma": "konsentrere seg",
     "english": "to concentrate, to focus",
@@ -9887,7 +9887,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-052",
+    "id": "v-a2-communication-051",
     "norsk": "å kontakte",
     "lemma": "kontakte",
     "english": "to contact, to get in touch with",
@@ -10023,7 +10023,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-036",
+    "id": "v-a2-time-031",
     "norsk": "kveld (en)",
     "lemma": "kveld",
     "english": "evening",
@@ -10193,7 +10193,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-directions-035",
+    "id": "v-a2-directions-031",
     "norsk": "langt",
     "lemma": "langt",
     "english": "far",
@@ -10210,7 +10210,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-012",
+    "id": "v-a2-transport-011",
     "norsk": "lastebil (en)",
     "lemma": "lastebil",
     "english": "truck",
@@ -10244,7 +10244,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-037",
+    "id": "v-a2-time-032",
     "norsk": "ledig",
     "lemma": "ledig",
     "english": "free, available, vacant",
@@ -10329,7 +10329,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-053",
+    "id": "v-a2-communication-052",
     "norsk": "lekse (en/ei)",
     "lemma": "lekse",
     "english": "homework, lesson",
@@ -10346,7 +10346,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-038",
+    "id": "v-a2-time-033",
     "norsk": "lenge",
     "lemma": "lenge",
     "english": "for a long time, long",
@@ -10499,7 +10499,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-054",
+    "id": "v-a2-communication-053",
     "norsk": "å love",
     "lemma": "love",
     "english": "to promise",
@@ -10567,7 +10567,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-039",
+    "id": "v-a2-time-034",
     "norsk": "lunsj (en)",
     "lemma": "lunsj",
     "english": "lunch",
@@ -10584,7 +10584,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-055",
+    "id": "v-a2-communication-054",
     "norsk": "å lure på",
     "lemma": "lure på",
     "english": "to wonder about",
@@ -10703,7 +10703,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-056",
+    "id": "v-a2-communication-055",
     "norsk": "man",
     "lemma": "man",
     "english": "one, you (impersonal)",
@@ -10720,7 +10720,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-communication-057",
+    "id": "v-a2-communication-056",
     "norsk": "å mase",
     "lemma": "mase",
     "english": "to nag, to pester",
@@ -10788,7 +10788,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-058",
+    "id": "v-a2-communication-057",
     "norsk": "med",
     "lemma": "med",
     "english": "with",
@@ -10856,7 +10856,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-059",
+    "id": "v-a2-communication-058",
     "norsk": "men",
     "lemma": "men",
     "english": "but",
@@ -10873,7 +10873,7 @@
     "part": "conjunction"
   },
   {
-    "id": "v-a2-communication-060",
+    "id": "v-a2-communication-059",
     "norsk": "å mene",
     "lemma": "mene",
     "english": "to think / to mean / to believe",
@@ -10907,7 +10907,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-061",
+    "id": "v-a2-communication-060",
     "norsk": "mens",
     "lemma": "mens",
     "english": "while, whereas",
@@ -10975,7 +10975,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-040",
+    "id": "v-a2-time-035",
     "norsk": "midnatt (en)",
     "lemma": "midnatt",
     "english": "midnight",
@@ -11009,7 +11009,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-036",
+    "id": "v-a2-directions-032",
     "norsk": "mil (en/ei)",
     "lemma": "mil",
     "english": "Norwegian mile (10 km)",
@@ -11060,7 +11060,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-041",
+    "id": "v-a2-time-036",
     "norsk": "morgen (en)",
     "lemma": "morgen",
     "english": "morning",
@@ -11077,7 +11077,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-013",
+    "id": "v-a2-transport-012",
     "norsk": "motor (en)",
     "lemma": "motor",
     "english": "engine, motor",
@@ -11094,7 +11094,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-062",
+    "id": "v-a2-communication-061",
     "norsk": "muntlig",
     "lemma": "muntlig",
     "english": "oral, verbal, spoken",
@@ -11162,7 +11162,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-063",
+    "id": "v-a2-communication-062",
     "norsk": "å måtte",
     "lemma": "måtte",
     "english": "to have to, must",
@@ -11179,7 +11179,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-042",
+    "id": "v-a2-time-037",
     "norsk": "natt (en/ei)",
     "lemma": "natt",
     "english": "night",
@@ -11196,7 +11196,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-037",
+    "id": "v-a2-directions-033",
     "norsk": "ned",
     "lemma": "ned",
     "english": "down, downward",
@@ -11298,7 +11298,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-064",
+    "id": "v-a2-communication-063",
     "norsk": "norskkurs (et)",
     "lemma": "norskkurs",
     "english": "Norwegian language course",
@@ -11366,7 +11366,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-043",
+    "id": "v-a2-time-038",
     "norsk": "nå",
     "lemma": "nå",
     "english": "now",
@@ -11383,7 +11383,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-014",
+    "id": "v-a2-transport-013",
     "norsk": "offentlig",
     "lemma": "offentlig",
     "english": "public / official",
@@ -11417,7 +11417,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-065",
+    "id": "v-a2-communication-064",
     "norsk": "også",
     "lemma": "også",
     "english": "also",
@@ -11468,7 +11468,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-066",
+    "id": "v-a2-communication-065",
     "norsk": "om",
     "lemma": "om",
     "english": "about / in (time) / if",
@@ -11485,7 +11485,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-038",
+    "id": "v-a2-directions-034",
     "norsk": "omkring",
     "lemma": "omkring",
     "english": "around / approximately",
@@ -11502,7 +11502,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-044",
+    "id": "v-a2-time-039",
     "norsk": "omtrent",
     "lemma": "omtrent",
     "english": "approximately / about",
@@ -11536,7 +11536,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-039",
+    "id": "v-a2-directions-035",
     "norsk": "oppe",
     "lemma": "oppe",
     "english": "up / upstairs / awake",
@@ -11570,7 +11570,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-067",
+    "id": "v-a2-communication-066",
     "norsk": "opplysning (en/ei)",
     "lemma": "opplysning",
     "english": "information",
@@ -11604,7 +11604,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-040",
+    "id": "v-a2-directions-036",
     "norsk": "oppover",
     "lemma": "oppover",
     "english": "upward, upwards",
@@ -11655,7 +11655,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-015",
+    "id": "v-a2-transport-014",
     "norsk": "å overnatte",
     "lemma": "overnatte",
     "english": "to stay overnight, to spend the night",
@@ -11757,7 +11757,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-016",
+    "id": "v-a2-transport-015",
     "norsk": "å parkere",
     "lemma": "parkere",
     "english": "to park",
@@ -11774,7 +11774,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-017",
+    "id": "v-a2-transport-016",
     "norsk": "parkering (en/ei)",
     "lemma": "parkering",
     "english": "parking",
@@ -11876,7 +11876,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-068",
+    "id": "v-a2-communication-067",
     "norsk": "å peke",
     "lemma": "peke",
     "english": "to point",
@@ -11961,7 +11961,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-042",
+    "id": "v-a2-directions-037",
     "norsk": "plass (en)",
     "lemma": "plass",
     "english": "place, space, seat",
@@ -11978,7 +11978,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-043",
+    "id": "v-a2-directions-038",
     "norsk": "plassering (en/ei)",
     "lemma": "plassering",
     "english": "placement, position, location",
@@ -12148,7 +12148,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-069",
+    "id": "v-a2-communication-068",
     "norsk": "prat (en)",
     "lemma": "prat",
     "english": "chat, conversation",
@@ -12165,7 +12165,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-070",
+    "id": "v-a2-communication-069",
     "norsk": "å prate",
     "lemma": "prate",
     "english": "to chat, to talk",
@@ -12250,7 +12250,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-071",
+    "id": "v-a2-communication-070",
     "norsk": "problem (et)",
     "lemma": "problem",
     "english": "problem",
@@ -12420,7 +12420,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-072",
+    "id": "v-a2-communication-071",
     "norsk": "regjering (en/ei)",
     "lemma": "regjering",
     "english": "government",
@@ -12556,7 +12556,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-045",
+    "id": "v-a2-directions-039",
     "norsk": "rett fram",
     "lemma": "rett fram",
     "english": "straight ahead",
@@ -12624,7 +12624,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-073",
+    "id": "v-a2-communication-072",
     "norsk": "å rope",
     "lemma": "rope",
     "english": "to shout / to call out",
@@ -12879,7 +12879,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-communication-074",
+    "id": "v-a2-communication-073",
     "norsk": "selvfølgelig",
     "lemma": "selvfølgelig",
     "english": "of course, naturally, obviously",
@@ -12896,7 +12896,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-045",
+    "id": "v-a2-time-040",
     "norsk": "semester (et)",
     "lemma": "semester",
     "english": "semester",
@@ -12913,7 +12913,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-046",
+    "id": "v-a2-time-041",
     "norsk": "senere",
     "lemma": "senere",
     "english": "later, afterwards",
@@ -13032,7 +13032,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-075",
+    "id": "v-a2-communication-074",
     "norsk": "setning (en/ei)",
     "lemma": "setning",
     "english": "sentence",
@@ -13066,7 +13066,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-076",
+    "id": "v-a2-communication-075",
     "norsk": "å si",
     "lemma": "si",
     "english": "to say",
@@ -13083,7 +13083,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-047",
+    "id": "v-a2-directions-040",
     "norsk": "side (en/ei)",
     "lemma": "side",
     "english": "side, page",
@@ -13168,7 +13168,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-077",
+    "id": "v-a2-communication-076",
     "norsk": "å skulle",
     "lemma": "skulle",
     "english": "to be going to / to be supposed to",
@@ -13236,7 +13236,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-018",
+    "id": "v-a2-transport-017",
     "norsk": "skip (et)",
     "lemma": "skip",
     "english": "ship",
@@ -13270,7 +13270,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-078",
+    "id": "v-a2-communication-077",
     "norsk": "å skje",
     "lemma": "skje",
     "english": "to happen",
@@ -13304,7 +13304,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-079",
+    "id": "v-a2-communication-078",
     "norsk": "å skjønne",
     "lemma": "skjønne",
     "english": "to understand",
@@ -13338,7 +13338,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-047",
+    "id": "v-a2-time-042",
     "norsk": "skoletime (en)",
     "lemma": "skoletime",
     "english": "school lesson",
@@ -13355,7 +13355,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-080",
+    "id": "v-a2-communication-079",
     "norsk": "skriftlig",
     "lemma": "skriftlig",
     "english": "written",
@@ -13491,7 +13491,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-081",
+    "id": "v-a2-communication-080",
     "norsk": "som",
     "lemma": "som",
     "english": "who, which, that",
@@ -13542,7 +13542,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-082",
+    "id": "v-a2-communication-081",
     "norsk": "spansk",
     "lemma": "spansk",
     "english": "Spanish",
@@ -13610,7 +13610,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-083",
+    "id": "v-a2-communication-082",
     "norsk": "språk (et)",
     "lemma": "språk",
     "english": "language",
@@ -13627,7 +13627,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-084",
+    "id": "v-a2-communication-083",
     "norsk": "språkpraksis (en)",
     "lemma": "språkpraksis",
     "english": "language practice",
@@ -13661,7 +13661,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-048",
+    "id": "v-a2-time-043",
     "norsk": "å starte",
     "lemma": "starte",
     "english": "to start",
@@ -13678,7 +13678,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-085",
+    "id": "v-a2-communication-084",
     "norsk": "å stave",
     "lemma": "stave",
     "english": "to spell",
@@ -13712,7 +13712,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-048",
+    "id": "v-a2-directions-041",
     "norsk": "sted (et)",
     "lemma": "sted",
     "english": "place",
@@ -14001,7 +14001,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-086",
+    "id": "v-a2-communication-085",
     "norsk": "å synes",
     "lemma": "synes",
     "english": "to think, to find, to have an opinion",
@@ -14086,7 +14086,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-087",
+    "id": "v-a2-communication-086",
     "norsk": "så",
     "lemma": "så",
     "english": "so, then",
@@ -14120,7 +14120,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-088",
+    "id": "v-a2-communication-087",
     "norsk": "tanke (en)",
     "lemma": "tanke",
     "english": "thought, idea",
@@ -14188,7 +14188,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-089",
+    "id": "v-a2-communication-088",
     "norsk": "tavle (en/ei)",
     "lemma": "tavle",
     "english": "blackboard, whiteboard, board",
@@ -14205,7 +14205,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-090",
+    "id": "v-a2-communication-089",
     "norsk": "å tenke",
     "lemma": "tenke",
     "english": "to think",
@@ -14239,7 +14239,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-049",
+    "id": "v-a2-time-044",
     "norsk": "tid (en/ei)",
     "lemma": "tid",
     "english": "time",
@@ -14256,7 +14256,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-050",
+    "id": "v-a2-time-045",
     "norsk": "tidlig",
     "lemma": "tidlig",
     "english": "early",
@@ -14273,7 +14273,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-051",
+    "id": "v-a2-time-046",
     "norsk": "tidsnok",
     "lemma": "tidsnok",
     "english": "in time, early enough",
@@ -14290,7 +14290,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-directions-049",
+    "id": "v-a2-directions-042",
     "norsk": "til",
     "lemma": "til",
     "english": "to, for, until",
@@ -14307,7 +14307,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-050",
+    "id": "v-a2-directions-043",
     "norsk": "tilbake",
     "lemma": "tilbake",
     "english": "back, return",
@@ -14324,7 +14324,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-communication-091",
+    "id": "v-a2-communication-090",
     "norsk": "ting (en)",
     "lemma": "ting",
     "english": "thing, object",
@@ -14392,7 +14392,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-019",
+    "id": "v-a2-transport-018",
     "norsk": "trafikkregel (en)",
     "lemma": "trafikkregel",
     "english": "traffic rule",
@@ -14426,7 +14426,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-052",
+    "id": "v-a2-time-047",
     "norsk": "travelt",
     "lemma": "travelt",
     "english": "busy",
@@ -14494,7 +14494,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-092",
+    "id": "v-a2-communication-091",
     "norsk": "å tro",
     "lemma": "tro",
     "english": "to believe, to think",
@@ -14562,7 +14562,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-093",
+    "id": "v-a2-communication-092",
     "norsk": "tysk",
     "lemma": "tysk",
     "english": "German",
@@ -14664,7 +14664,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-054",
+    "id": "v-a2-time-048",
     "norsk": "uke (en/ei)",
     "lemma": "uke",
     "english": "week",
@@ -14749,7 +14749,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-directions-052",
+    "id": "v-a2-directions-044",
     "norsk": "ut",
     "lemma": "ut",
     "english": "out",
@@ -14834,7 +14834,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-094",
+    "id": "v-a2-communication-093",
     "norsk": "uten",
     "lemma": "uten",
     "english": "without",
@@ -14851,7 +14851,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-053",
+    "id": "v-a2-directions-045",
     "norsk": "utenfor",
     "lemma": "utenfor",
     "english": "outside, outside of",
@@ -14919,7 +14919,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-095",
+    "id": "v-a2-communication-094",
     "norsk": "uttrykk (et)",
     "lemma": "uttrykk",
     "english": "expression",
@@ -14987,7 +14987,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-020",
+    "id": "v-a2-transport-019",
     "norsk": "varebil (en)",
     "lemma": "varebil",
     "english": "van",
@@ -15038,7 +15038,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-054",
+    "id": "v-a2-directions-046",
     "norsk": "ved",
     "lemma": "ved",
     "english": "by",
@@ -15106,7 +15106,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-055",
+    "id": "v-a2-directions-047",
     "norsk": "venstre",
     "lemma": "venstre",
     "english": "left",
@@ -15157,7 +15157,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-096",
+    "id": "v-a2-communication-095",
     "norsk": "å ville",
     "lemma": "ville",
     "english": "to want / to be willing to",
@@ -15310,7 +15310,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-097",
+    "id": "v-a2-communication-096",
     "norsk": "å ønske",
     "lemma": "ønske",
     "english": "to wish",
@@ -15344,7 +15344,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-056",
+    "id": "v-a2-directions-048",
     "norsk": "øverst",
     "lemma": "øverst",
     "english": "at the top",
@@ -15361,7 +15361,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-055",
+    "id": "v-a2-time-049",
     "norsk": "øyeblikk (et)",
     "lemma": "øyeblikk",
     "english": "moment",
@@ -15514,7 +15514,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-098",
+    "id": "v-a2-communication-097",
     "norsk": "å komme på",
     "lemma": "komme på",
     "english": "to think of, to remember",
@@ -15531,7 +15531,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-099",
+    "id": "v-a2-communication-098",
     "norsk": "å legge til",
     "lemma": "legge til",
     "english": "to add",
@@ -15565,7 +15565,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-100",
+    "id": "v-a2-communication-099",
     "norsk": "å holde opp",
     "lemma": "holde opp",
     "english": "to stop, to cease",
@@ -15616,7 +15616,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-101",
+    "id": "v-a2-communication-100",
     "norsk": "å kjenne igjen",
     "lemma": "kjenne igjen",
     "english": "to recognise",
@@ -15633,7 +15633,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-057",
+    "id": "v-a2-directions-049",
     "norsk": "å holde til",
     "lemma": "holde til",
     "english": "to be located, to be based",
@@ -15650,7 +15650,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-102",
+    "id": "v-a2-communication-101",
     "norsk": "å få med seg",
     "lemma": "få med seg",
     "english": "to catch, to follow, to understand",
@@ -15667,7 +15667,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-021",
+    "id": "v-a2-transport-020",
     "norsk": "å gå av",
     "lemma": "gå av",
     "english": "to step down, to get off",
@@ -15872,7 +15872,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-022",
+    "id": "v-a2-transport-021",
     "norsk": "å ta med seg",
     "lemma": "ta med seg",
     "english": "to bring / to take along",
@@ -15889,7 +15889,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-058",
+    "id": "v-a2-directions-050",
     "norsk": "til venstre for",
     "lemma": "til venstre for",
     "english": "to the left of",
@@ -15906,7 +15906,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-059",
+    "id": "v-a2-directions-051",
     "norsk": "til høyre for",
     "lemma": "til høyre for",
     "english": "to the right of",

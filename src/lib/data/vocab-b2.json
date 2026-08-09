@@ -6354,7 +6354,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-argumentation-004",
+    "id": "v-b2-argumentation-003",
     "norsk": "analogi (en)",
     "lemma": "analogi",
     "english": "an analogy",
@@ -6372,7 +6372,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-005",
+    "id": "v-b2-argumentation-004",
     "norsk": "appell (en)",
     "lemma": "appell",
     "english": "an appeal (rhetoric)",
@@ -6390,7 +6390,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-006",
+    "id": "v-b2-argumentation-005",
     "norsk": "dobbeltmoral (en)",
     "lemma": "dobbeltmoral",
     "english": "double standard",
@@ -6408,7 +6408,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-007",
+    "id": "v-b2-argumentation-006",
     "norsk": "ethos (en)",
     "lemma": "ethos",
     "english": "ethos (credibility)",
@@ -6426,7 +6426,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-008",
+    "id": "v-b2-argumentation-007",
     "norsk": "fallasje (en)",
     "lemma": "fallasje",
     "english": "a fallacy",
@@ -6444,7 +6444,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-009",
+    "id": "v-b2-argumentation-008",
     "norsk": "gjendrivelse (en)",
     "lemma": "gjendrivelse",
     "english": "a rebuttal",
@@ -6462,7 +6462,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-010",
+    "id": "v-b2-argumentation-009",
     "norsk": "innrømmelse (en)",
     "lemma": "innrømmelse",
     "english": "a concession",
@@ -6480,7 +6480,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-011",
+    "id": "v-b2-argumentation-010",
     "norsk": "logikk (en)",
     "lemma": "logikk",
     "english": "logic",
@@ -6498,7 +6498,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-012",
+    "id": "v-b2-argumentation-011",
     "norsk": "logos (en)",
     "lemma": "logos",
     "english": "logos (logic)",
@@ -6516,7 +6516,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-013",
+    "id": "v-b2-argumentation-012",
     "norsk": "motargument (et)",
     "lemma": "motargument",
     "english": "a counter-argument",
@@ -6534,7 +6534,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-014",
+    "id": "v-b2-argumentation-013",
     "norsk": "overbevisning (en)",
     "lemma": "overbevisning",
     "english": "a conviction / a belief",
@@ -6552,7 +6552,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-015",
+    "id": "v-b2-argumentation-014",
     "norsk": "pathos (en)",
     "lemma": "pathos",
     "english": "pathos (emotion)",
@@ -6570,7 +6570,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-016",
+    "id": "v-b2-argumentation-015",
     "norsk": "slutning (en)",
     "lemma": "slutning",
     "english": "an inference / a deduction",
@@ -6588,7 +6588,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-017",
+    "id": "v-b2-argumentation-016",
     "norsk": "sluttpåstand (en)",
     "lemma": "sluttpåstand",
     "english": "a conclusion / final claim",
@@ -6606,7 +6606,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-018",
+    "id": "v-b2-argumentation-017",
     "norsk": "stråmann (en)",
     "lemma": "stråmann",
     "english": "a straw man (fallacy)",
@@ -6624,7 +6624,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-019",
+    "id": "v-b2-argumentation-018",
     "norsk": "tese (en)",
     "lemma": "tese",
     "english": "a thesis / a proposition",
@@ -6642,7 +6642,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-021",
+    "id": "v-b2-argumentation-019",
     "norsk": "åpen drøfting (en)",
     "lemma": "åpen drøfting",
     "english": "an open discussion",
@@ -6660,7 +6660,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-022",
+    "id": "v-b2-argumentation-020",
     "norsk": "årsakssammenheng (en)",
     "lemma": "årsakssammenheng",
     "english": "a causal connection",
@@ -6678,7 +6678,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-023",
+    "id": "v-b2-argumentation-021",
     "norsk": "falskt dilemma (et)",
     "lemma": "falskt dilemma",
     "english": "a false dilemma",
@@ -6696,7 +6696,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-024",
+    "id": "v-b2-argumentation-022",
     "norsk": "kjensgjerning (en)",
     "lemma": "kjensgjerning",
     "english": "a fact / an established truth",
@@ -6714,7 +6714,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-025",
+    "id": "v-b2-argumentation-023",
     "norsk": "premiss (et)",
     "lemma": "premiss",
     "english": "a premise",
@@ -6732,7 +6732,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-026",
+    "id": "v-b2-argumentation-024",
     "norsk": "syllogisme (en)",
     "lemma": "syllogisme",
     "english": "a syllogism",
@@ -6750,7 +6750,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-027",
+    "id": "v-b2-argumentation-025",
     "norsk": "forsvarsposisjon (en)",
     "lemma": "forsvarsposisjon",
     "english": "a defensive position",
@@ -6768,7 +6768,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-028",
+    "id": "v-b2-argumentation-026",
     "norsk": "induktiv",
     "lemma": "induktiv",
     "english": "inductive",
@@ -6786,7 +6786,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-argumentation-029",
+    "id": "v-b2-argumentation-027",
     "norsk": "omdiskutert",
     "lemma": "omdiskutert",
     "english": "controversial / widely debated",
@@ -6804,7 +6804,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-argumentation-030",
+    "id": "v-b2-argumentation-028",
     "norsk": "ståsted (et)",
     "lemma": "ståsted",
     "english": "a standpoint / a position",
@@ -6822,7 +6822,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-031",
+    "id": "v-b2-argumentation-029",
     "norsk": "å understreke",
     "lemma": "understreke",
     "english": "to emphasize",
@@ -6840,7 +6840,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-032",
+    "id": "v-b2-argumentation-030",
     "norsk": "uvesentlig",
     "lemma": "uvesentlig",
     "english": "irrelevant / insignificant",
@@ -6858,7 +6858,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-argumentation-033",
+    "id": "v-b2-argumentation-031",
     "norsk": "velbegrunnet",
     "lemma": "velbegrunnet",
     "english": "well-founded, well-reasoned",
@@ -6876,7 +6876,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-argumentation-034",
+    "id": "v-b2-argumentation-032",
     "norsk": "å hevde",
     "lemma": "hevde",
     "english": "to claim / to assert",
@@ -6894,7 +6894,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-035",
+    "id": "v-b2-argumentation-033",
     "norsk": "å imøtekomme",
     "lemma": "imøtekomme",
     "english": "to accommodate / to address (an argument)",
@@ -6912,7 +6912,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-036",
+    "id": "v-b2-argumentation-034",
     "norsk": "å motbevise",
     "lemma": "motbevise",
     "english": "to disprove / to refute",
@@ -6930,7 +6930,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-037",
+    "id": "v-b2-argumentation-035",
     "norsk": "å nyansere",
     "lemma": "nyansere",
     "english": "to nuance / to qualify",
@@ -6948,7 +6948,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-038",
+    "id": "v-b2-argumentation-036",
     "norsk": "å problematisere",
     "lemma": "problematisere",
     "english": "to problematise / to raise issues about",
@@ -6966,7 +6966,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-039",
+    "id": "v-b2-argumentation-037",
     "norsk": "å underbygge",
     "lemma": "underbygge",
     "english": "to support / to substantiate",
@@ -6984,7 +6984,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-040",
+    "id": "v-b2-argumentation-038",
     "norsk": "poeng (et)",
     "lemma": "poeng",
     "english": "point / argument",
@@ -7002,7 +7002,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-041",
+    "id": "v-b2-argumentation-039",
     "norsk": "syn (et)",
     "lemma": "syn",
     "english": "view / perspective",
@@ -7020,7 +7020,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-042",
+    "id": "v-b2-argumentation-040",
     "norsk": "å utdype",
     "lemma": "utdype",
     "english": "to elaborate / to deepen",
@@ -7038,7 +7038,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-043",
+    "id": "v-b2-argumentation-041",
     "norsk": "å påpeke",
     "lemma": "påpeke",
     "english": "to point out",
@@ -7056,7 +7056,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-argumentation-044",
+    "id": "v-b2-argumentation-042",
     "norsk": "påstand (en)",
     "lemma": "påstand",
     "english": "claim, assertion",
@@ -7074,7 +7074,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-045",
+    "id": "v-b2-argumentation-043",
     "norsk": "ensidig",
     "lemma": "ensidig",
     "english": "one-sided, biased",
@@ -7092,7 +7092,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-argumentation-046",
+    "id": "v-b2-argumentation-044",
     "norsk": "motstemme (en)",
     "lemma": "motstemme",
     "english": "dissenting voice, opposing view",
@@ -7110,7 +7110,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-047",
+    "id": "v-b2-argumentation-045",
     "norsk": "ordskifte (et)",
     "lemma": "ordskifte",
     "english": "debate, exchange of words",
@@ -7128,7 +7128,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-argumentation-048",
+    "id": "v-b2-argumentation-046",
     "norsk": "å slå fast",
     "lemma": "slå fast",
     "english": "establish, state firmly, determine",
@@ -8514,7 +8514,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-011",
+    "id": "v-b2-communication-010",
     "norsk": "kode (en)",
     "lemma": "kode",
     "english": "a code (linguistic)",
@@ -8532,7 +8532,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-012",
+    "id": "v-b2-communication-011",
     "norsk": "kontekst (en)",
     "lemma": "kontekst",
     "english": "context",
@@ -8550,7 +8550,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-013",
+    "id": "v-b2-communication-012",
     "norsk": "lytteferdigheter (en)",
     "lemma": "lytteferdigheter",
     "english": "listening skills",
@@ -8568,7 +8568,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-014",
+    "id": "v-b2-communication-013",
     "norsk": "mottaker (en)",
     "lemma": "mottaker",
     "english": "a receiver / a recipient",
@@ -8586,7 +8586,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-015",
+    "id": "v-b2-communication-014",
     "norsk": "muntlig kommunikasjon (en)",
     "lemma": "muntlig kommunikasjon",
     "english": "oral communication",
@@ -8604,7 +8604,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-016",
+    "id": "v-b2-communication-015",
     "norsk": "retorikk (en)",
     "lemma": "retorikk",
     "english": "rhetoric",
@@ -8622,7 +8622,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-017",
+    "id": "v-b2-communication-016",
     "norsk": "skriftlig kommunikasjon (en)",
     "lemma": "skriftlig kommunikasjon",
     "english": "written communication",
@@ -8640,7 +8640,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-018",
+    "id": "v-b2-communication-017",
     "norsk": "taleteknikk (en)",
     "lemma": "taleteknikk",
     "english": "a speaking technique",
@@ -8658,7 +8658,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-019",
+    "id": "v-b2-communication-018",
     "norsk": "toveis kommunikasjon (en)",
     "lemma": "toveis kommunikasjon",
     "english": "two-way communication",
@@ -8676,7 +8676,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-020",
+    "id": "v-b2-communication-019",
     "norsk": "tvetydighet (en)",
     "lemma": "tvetydighet",
     "english": "ambiguity",
@@ -8694,7 +8694,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-021",
+    "id": "v-b2-communication-020",
     "norsk": "underforstått",
     "lemma": "underforstått",
     "english": "implied / implicit",
@@ -8712,7 +8712,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-communication-022",
+    "id": "v-b2-communication-021",
     "norsk": "budskap (et)",
     "lemma": "budskap",
     "english": "a message",
@@ -8730,7 +8730,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-023",
+    "id": "v-b2-communication-022",
     "norsk": "misforståelsespotensial (et)",
     "lemma": "misforståelsespotensial",
     "english": "potential for misunderstanding",
@@ -8748,7 +8748,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-024",
+    "id": "v-b2-communication-023",
     "norsk": "å forhåne",
     "lemma": "forhåne",
     "english": "to mock / to taunt",
@@ -8766,7 +8766,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-025",
+    "id": "v-b2-communication-024",
     "norsk": "formell kommunikasjon (en)",
     "lemma": "formell kommunikasjon",
     "english": "formal communication",
@@ -8784,7 +8784,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-026",
+    "id": "v-b2-communication-025",
     "norsk": "forum (et)",
     "lemma": "forum",
     "english": "a forum / fora",
@@ -8802,7 +8802,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-027",
+    "id": "v-b2-communication-026",
     "norsk": "jungeltelegraf (en)",
     "lemma": "jungeltelegraf",
     "english": "the grapevine / word of mouth",
@@ -8820,7 +8820,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-028",
+    "id": "v-b2-communication-027",
     "norsk": "nonverbal kommunikasjon (en)",
     "lemma": "nonverbal kommunikasjon",
     "english": "non-verbal communication",
@@ -8838,7 +8838,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-029",
+    "id": "v-b2-communication-028",
     "norsk": "å oppfatte",
     "lemma": "oppfatte",
     "english": "to perceive, to understand, to interpret",
@@ -8856,7 +8856,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-030",
+    "id": "v-b2-communication-029",
     "norsk": "passiv-aggressiv",
     "lemma": "passiv-aggressiv",
     "english": "passive-aggressive",
@@ -8874,7 +8874,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-communication-031",
+    "id": "v-b2-communication-030",
     "norsk": "å provosere",
     "lemma": "provosere",
     "english": "to provoke",
@@ -8892,7 +8892,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-032",
+    "id": "v-b2-communication-031",
     "norsk": "å raljere",
     "lemma": "raljere",
     "english": "to mock; to scoff; to jeer",
@@ -8910,7 +8910,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-033",
+    "id": "v-b2-communication-032",
     "norsk": "respons (en)",
     "lemma": "respons",
     "english": "a response",
@@ -8928,7 +8928,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-034",
+    "id": "v-b2-communication-033",
     "norsk": "skravling (en)",
     "lemma": "skravling",
     "english": "a chatter, chatting",
@@ -8946,7 +8946,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-035",
+    "id": "v-b2-communication-034",
     "norsk": "å skryte",
     "lemma": "skryte",
     "english": "to boast, to brag",
@@ -8964,7 +8964,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-036",
+    "id": "v-b2-communication-035",
     "norsk": "uformell kommunikasjon (en)",
     "lemma": "uformell kommunikasjon",
     "english": "informal communication",
@@ -8982,7 +8982,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-037",
+    "id": "v-b2-communication-036",
     "norsk": "utsagn (et)",
     "lemma": "utsagn",
     "english": "a statement",
@@ -9000,7 +9000,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-038",
+    "id": "v-b2-communication-037",
     "norsk": "å videreformidle",
     "lemma": "videreformidle",
     "english": "to pass on, to relay, to convey",
@@ -9018,7 +9018,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-039",
+    "id": "v-b2-communication-038",
     "norsk": "å parafrasere",
     "lemma": "parafrasere",
     "english": "to paraphrase",
@@ -9036,7 +9036,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-040",
+    "id": "v-b2-communication-039",
     "norsk": "å reformulere",
     "lemma": "reformulere",
     "english": "to reformulate / to rephrase",
@@ -9054,7 +9054,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-041",
+    "id": "v-b2-communication-040",
     "norsk": "å tydeliggjøre",
     "lemma": "tydeliggjøre",
     "english": "to clarify",
@@ -9072,7 +9072,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-042",
+    "id": "v-b2-communication-041",
     "norsk": "blikk (et)",
     "lemma": "blikk",
     "english": "glance / look",
@@ -9090,7 +9090,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-043",
+    "id": "v-b2-communication-042",
     "norsk": "gest (en)",
     "lemma": "gest",
     "english": "gesture",
@@ -9108,7 +9108,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-044",
+    "id": "v-b2-communication-043",
     "norsk": "å nikke",
     "lemma": "nikke",
     "english": "to nod",
@@ -9126,7 +9126,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-045",
+    "id": "v-b2-communication-044",
     "norsk": "oppfordring (en)",
     "lemma": "oppfordring",
     "english": "appeal / call to action / urge",
@@ -9144,7 +9144,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-046",
+    "id": "v-b2-communication-045",
     "norsk": "tilrop (et)",
     "lemma": "tilrop",
     "english": "shout, exclamation, cheer",
@@ -9162,7 +9162,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-047",
+    "id": "v-b2-communication-046",
     "norsk": "å klage",
     "lemma": "klage",
     "english": "to complain",
@@ -9180,7 +9180,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-048",
+    "id": "v-b2-communication-047",
     "norsk": "å omtale",
     "lemma": "omtale",
     "english": "to mention, to speak of, to review",
@@ -9198,7 +9198,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-049",
+    "id": "v-b2-communication-048",
     "norsk": "å orientere",
     "lemma": "orientere",
     "english": "to inform, to brief",
@@ -9216,7 +9216,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-050",
+    "id": "v-b2-communication-049",
     "norsk": "å antyde",
     "lemma": "antyde",
     "english": "to imply, to suggest, to hint",
@@ -9234,7 +9234,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-051",
+    "id": "v-b2-communication-050",
     "norsk": "å oppfordre",
     "lemma": "oppfordre",
     "english": "to encourage, urge",
@@ -9252,7 +9252,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-052",
+    "id": "v-b2-communication-051",
     "norsk": "varsel (et)",
     "lemma": "varsel",
     "english": "notice, warning",
@@ -9270,7 +9270,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-053",
+    "id": "v-b2-communication-052",
     "norsk": "å oppgi",
     "lemma": "oppgi",
     "english": "to state, state information, give up",
@@ -9288,7 +9288,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-054",
+    "id": "v-b2-communication-053",
     "norsk": "henvendelse (en)",
     "lemma": "henvendelse",
     "english": "inquiry, request",
@@ -9306,7 +9306,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-055",
+    "id": "v-b2-communication-054",
     "norsk": "å mistenkeliggjøre",
     "lemma": "mistenkeliggjøre",
     "english": "to cast suspicion on, disparage",
@@ -9324,7 +9324,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-056",
+    "id": "v-b2-communication-055",
     "norsk": "løgn (en)",
     "lemma": "løgn",
     "english": "lie",
@@ -9342,7 +9342,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-communication-057",
+    "id": "v-b2-communication-056",
     "norsk": "synspunkt (et)",
     "lemma": "synspunkt",
     "english": "point of view, opinion",
@@ -10512,7 +10512,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-012",
+    "id": "v-b2-discourse-markers-011",
     "norsk": "snarere",
     "lemma": "snarere",
     "english": "rather / more precisely",
@@ -10530,7 +10530,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-013",
+    "id": "v-b2-discourse-markers-012",
     "norsk": "åpenbart",
     "lemma": "åpenbart",
     "english": "obviously / clearly / evidently",
@@ -10548,7 +10548,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-014",
+    "id": "v-b2-discourse-markers-013",
     "norsk": "muligens",
     "lemma": "muligens",
     "english": "possibly / perhaps",
@@ -10566,7 +10566,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-015",
+    "id": "v-b2-discourse-markers-014",
     "norsk": "omvendt",
     "lemma": "omvendt",
     "english": "opposite / vice versa",
@@ -10584,7 +10584,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-016",
+    "id": "v-b2-discourse-markers-015",
     "norsk": "vel",
     "lemma": "vel",
     "english": "probably / presumably",
@@ -10602,7 +10602,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-018",
+    "id": "v-b2-discourse-markers-016",
     "norsk": "hovedsakelig",
     "lemma": "hovedsakelig",
     "english": "mainly, mostly, chiefly",
@@ -10620,7 +10620,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-019",
+    "id": "v-b2-discourse-markers-017",
     "norsk": "forhåpentlig",
     "lemma": "forhåpentlig",
     "english": "hopefully",
@@ -10638,7 +10638,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-020",
+    "id": "v-b2-discourse-markers-018",
     "norsk": "akkurat",
     "lemma": "akkurat",
     "english": "exactly, precisely",
@@ -10656,7 +10656,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-021",
+    "id": "v-b2-discourse-markers-019",
     "norsk": "ialfall",
     "lemma": "ialfall",
     "english": "at least, in any case",
@@ -10674,7 +10674,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-discourse-markers-022",
+    "id": "v-b2-discourse-markers-020",
     "norsk": "knapt nok",
     "lemma": "knapt nok",
     "english": "hardly, scarcely",
@@ -24354,7 +24354,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-psychology-006",
+    "id": "v-b2-psychology-005",
     "norsk": "disiplin (en)",
     "lemma": "disiplin",
     "english": "discipline",
@@ -24372,7 +24372,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-007",
+    "id": "v-b2-psychology-006",
     "norsk": "dømmende",
     "lemma": "dømmende",
     "english": "judgmental",
@@ -24390,7 +24390,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-psychology-008",
+    "id": "v-b2-psychology-007",
     "norsk": "mekanisme (en)",
     "lemma": "mekanisme",
     "english": "a mechanism",
@@ -24408,7 +24408,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-009",
+    "id": "v-b2-psychology-008",
     "norsk": "personlighet (en)",
     "lemma": "personlighet",
     "english": "a personality",
@@ -24426,7 +24426,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-010",
+    "id": "v-b2-psychology-009",
     "norsk": "projeksjon (en)",
     "lemma": "projeksjon",
     "english": "a projection",
@@ -24444,7 +24444,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-011",
+    "id": "v-b2-psychology-010",
     "norsk": "mønster (et)",
     "lemma": "mønster",
     "english": "a pattern",
@@ -24462,7 +24462,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-012",
+    "id": "v-b2-psychology-011",
     "norsk": "traume (et)",
     "lemma": "traume",
     "english": "a trauma",
@@ -24480,7 +24480,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-013",
+    "id": "v-b2-psychology-012",
     "norsk": "ettertenksomhet (en)",
     "lemma": "ettertenksomhet",
     "english": "the thoughtfulness / reflectiveness",
@@ -24498,7 +24498,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-014",
+    "id": "v-b2-psychology-013",
     "norsk": "å fundere",
     "lemma": "fundere",
     "english": "to ponder, to reflect, to mull over",
@@ -24516,7 +24516,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-psychology-015",
+    "id": "v-b2-psychology-014",
     "norsk": "holdningsendring (en)",
     "lemma": "holdningsendring",
     "english": "a change of attitude",
@@ -24534,7 +24534,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-016",
+    "id": "v-b2-psychology-015",
     "norsk": "hukommelse (en)",
     "lemma": "hukommelse",
     "english": "memory",
@@ -24552,7 +24552,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-017",
+    "id": "v-b2-psychology-016",
     "norsk": "identitet (en)",
     "lemma": "identitet",
     "english": "identity",
@@ -24570,7 +24570,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-018",
+    "id": "v-b2-psychology-017",
     "norsk": "kognitiv",
     "lemma": "kognitiv",
     "english": "cognitive",
@@ -24588,7 +24588,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-psychology-019",
+    "id": "v-b2-psychology-018",
     "norsk": "å manipulere",
     "lemma": "manipulere",
     "english": "to manipulate",
@@ -24606,7 +24606,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-psychology-020",
+    "id": "v-b2-psychology-019",
     "norsk": "mindreverdig",
     "lemma": "mindreverdig",
     "english": "inferior / of lesser value",
@@ -24624,7 +24624,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-psychology-021",
+    "id": "v-b2-psychology-020",
     "norsk": "mistenksomhet (en)",
     "lemma": "mistenksomhet",
     "english": "suspicion / distrust",
@@ -24642,7 +24642,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-022",
+    "id": "v-b2-psychology-021",
     "norsk": "motivasjon (en)",
     "lemma": "motivasjon",
     "english": "motivation",
@@ -24660,7 +24660,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-023",
+    "id": "v-b2-psychology-022",
     "norsk": "overbeskyttende",
     "lemma": "overbeskyttende",
     "english": "overprotective",
@@ -24678,7 +24678,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-psychology-024",
+    "id": "v-b2-psychology-023",
     "norsk": "resiliens (en)",
     "lemma": "resiliens",
     "english": "resilience",
@@ -24696,7 +24696,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-025",
+    "id": "v-b2-psychology-024",
     "norsk": "selvbilde (et)",
     "lemma": "selvbilde",
     "english": "self-image",
@@ -24714,7 +24714,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-026",
+    "id": "v-b2-psychology-025",
     "norsk": "selvrefleksjon (en)",
     "lemma": "selvrefleksjon",
     "english": "self-reflection",
@@ -24732,7 +24732,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-027",
+    "id": "v-b2-psychology-026",
     "norsk": "skambelagt",
     "lemma": "skambelagt",
     "english": "shame-laden, stigmatized",
@@ -24750,7 +24750,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-psychology-028",
+    "id": "v-b2-psychology-027",
     "norsk": "tilknytning (en)",
     "lemma": "tilknytning",
     "english": "attachment / bonding",
@@ -24768,7 +24768,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-029",
+    "id": "v-b2-psychology-028",
     "norsk": "tunnelsyn (et)",
     "lemma": "tunnelsyn",
     "english": "tunnel vision",
@@ -24786,7 +24786,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-030",
+    "id": "v-b2-psychology-029",
     "norsk": "utbrent",
     "lemma": "utbrent",
     "english": "burned out",
@@ -24804,7 +24804,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-psychology-031",
+    "id": "v-b2-psychology-030",
     "norsk": "å bearbeide",
     "lemma": "bearbeide",
     "english": "to process (emotionally)",
@@ -24822,7 +24822,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-psychology-032",
+    "id": "v-b2-psychology-031",
     "norsk": "å fordøye",
     "lemma": "fordøye",
     "english": "to digest / to come to terms with",
@@ -24840,7 +24840,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-psychology-033",
+    "id": "v-b2-psychology-032",
     "norsk": "væremåte (en)",
     "lemma": "væremåte",
     "english": "behavior / demeanor",
@@ -24858,7 +24858,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-034",
+    "id": "v-b2-psychology-033",
     "norsk": "å surre",
     "lemma": "surre",
     "english": "to buzz / wander aimlessly",
@@ -24876,7 +24876,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-psychology-035",
+    "id": "v-b2-psychology-034",
     "norsk": "holdning (en)",
     "lemma": "holdning",
     "english": "attitude",
@@ -24894,7 +24894,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-036",
+    "id": "v-b2-psychology-035",
     "norsk": "å kverne",
     "lemma": "kverne",
     "english": "to grind / churn",
@@ -24912,7 +24912,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-psychology-037",
+    "id": "v-b2-psychology-036",
     "norsk": "innimellom",
     "lemma": "innimellom",
     "english": "occasionally / sometimes",
@@ -24930,7 +24930,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b2-psychology-038",
+    "id": "v-b2-psychology-037",
     "norsk": "sjel (en)",
     "lemma": "sjel",
     "english": "soul",
@@ -24948,7 +24948,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-039",
+    "id": "v-b2-psychology-038",
     "norsk": "sunn fornuft (en)",
     "lemma": "sunn fornuft",
     "english": "common sense",
@@ -24966,7 +24966,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-040",
+    "id": "v-b2-psychology-039",
     "norsk": "å mestre",
     "lemma": "mestre",
     "english": "to master, cope with",
@@ -24984,7 +24984,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-psychology-041",
+    "id": "v-b2-psychology-040",
     "norsk": "skepsis (en)",
     "lemma": "skepsis",
     "english": "skepticism, doubt",
@@ -25002,7 +25002,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-042",
+    "id": "v-b2-psychology-041",
     "norsk": "belastning (en)",
     "lemma": "belastning",
     "english": "strain, burden, load",
@@ -25020,7 +25020,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-psychology-043",
+    "id": "v-b2-psychology-042",
     "norsk": "impuls (en)",
     "lemma": "impuls",
     "english": "impulse, brainwave",
@@ -30258,7 +30258,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-058",
+    "id": "v-b2-communication-057",
     "norsk": "å henvende seg til",
     "lemma": "henvende seg til",
     "english": "to address / to turn to / to contact",
@@ -30420,7 +30420,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-120",
+    "id": "v-b2-advanced-verbs-119",
     "norsk": "å overlate til noen",
     "lemma": "overlate til noen",
     "english": "to leave something to someone, to entrust to someone",
@@ -30438,7 +30438,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-121",
+    "id": "v-b2-advanced-verbs-120",
     "norsk": "å rakke ned på",
     "lemma": "rakke ned på",
     "english": "to badmouth, to run down",
@@ -30456,7 +30456,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-122",
+    "id": "v-b2-advanced-verbs-121",
     "norsk": "å sette seg inn i",
     "lemma": "sette seg inn i",
     "english": "to familiarize oneself with, to study thoroughly",
@@ -30474,7 +30474,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-123",
+    "id": "v-b2-advanced-verbs-122",
     "norsk": "å sikte til",
     "lemma": "sikte til",
     "english": "to refer to, to allude to",
@@ -30491,7 +30491,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-124",
+    "id": "v-b2-advanced-verbs-123",
     "norsk": "å sirkle rundt",
     "lemma": "sirkle rundt",
     "english": "to circle around, to hover around",
@@ -30509,7 +30509,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-125",
+    "id": "v-b2-advanced-verbs-124",
     "norsk": "å skifte ut",
     "lemma": "skifte ut",
     "english": "to replace, to swap out",
@@ -30527,7 +30527,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-126",
+    "id": "v-b2-advanced-verbs-125",
     "norsk": "å skjelle ut",
     "lemma": "skjelle ut",
     "english": "to scold, to berate, to yell at",
@@ -30545,7 +30545,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-127",
+    "id": "v-b2-advanced-verbs-126",
     "norsk": "å skjerpe seg",
     "lemma": "skjerpe seg",
     "english": "to shape up, to pull oneself together",
@@ -30563,7 +30563,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-128",
+    "id": "v-b2-advanced-verbs-127",
     "norsk": "å skli ut",
     "lemma": "skli ut",
     "english": "to slip up, to go off track, to get out of control",
@@ -30581,7 +30581,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-129",
+    "id": "v-b2-advanced-verbs-128",
     "norsk": "å slutte seg til",
     "lemma": "slutte seg til",
     "english": "to join, to adhere to, to agree with",
@@ -30599,7 +30599,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-130",
+    "id": "v-b2-advanced-verbs-129",
     "norsk": "å slå gjennom",
     "lemma": "slå gjennom",
     "english": "to break through, to make it, to achieve success",
@@ -30617,7 +30617,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-131",
+    "id": "v-b2-advanced-verbs-130",
     "norsk": "å stikke seg ut",
     "lemma": "stikke seg ut",
     "english": "to stand out",
@@ -30635,7 +30635,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-132",
+    "id": "v-b2-advanced-verbs-131",
     "norsk": "å ta av",
     "lemma": "ta av",
     "english": "to take off / to boom / to skyrocket",
@@ -30653,7 +30653,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-133",
+    "id": "v-b2-advanced-verbs-132",
     "norsk": "å ta opp",
     "lemma": "ta opp",
     "english": "to bring up, to raise (a topic)",
@@ -30670,7 +30670,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-134",
+    "id": "v-b2-advanced-verbs-133",
     "norsk": "å tilby seg",
     "lemma": "tilby seg",
     "english": "to volunteer, to offer to do something",
@@ -30688,7 +30688,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-135",
+    "id": "v-b2-advanced-verbs-134",
     "norsk": "å trekke seg tilbake",
     "lemma": "trekke seg tilbake",
     "english": "to withdraw, to retreat, to step back",
@@ -30706,7 +30706,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-136",
+    "id": "v-b2-advanced-verbs-135",
     "norsk": "å utpeke seg",
     "lemma": "utpeke seg",
     "english": "to stand out / to distinguish oneself",
@@ -30724,7 +30724,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-137",
+    "id": "v-b2-advanced-verbs-136",
     "norsk": "å vedde på",
     "lemma": "vedde på",
     "english": "to bet on",
@@ -30742,7 +30742,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-138",
+    "id": "v-b2-advanced-verbs-137",
     "norsk": "å vie seg til",
     "lemma": "vie seg til",
     "english": "to dedicate oneself to / to devote oneself to",
@@ -30760,7 +30760,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-139",
+    "id": "v-b2-advanced-verbs-138",
     "norsk": "å vise seg",
     "lemma": "vise seg",
     "english": "to turn out / to prove to be",
@@ -30778,7 +30778,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-059",
+    "id": "v-b2-communication-058",
     "norsk": "å ytre seg",
     "lemma": "ytre seg",
     "english": "to express oneself, to speak out",
@@ -30830,7 +30830,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-141",
+    "id": "v-b2-advanced-verbs-139",
     "norsk": "å jukse seg til",
     "lemma": "jukse seg til",
     "english": "to cheat one's way to, to obtain by cheating",
@@ -30847,7 +30847,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-143",
+    "id": "v-b2-advanced-verbs-140",
     "norsk": "å trekke seg unna",
     "lemma": "trekke seg unna",
     "english": "to withdraw, to pull away, to distance oneself",
@@ -30864,7 +30864,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-144",
+    "id": "v-b2-advanced-verbs-141",
     "norsk": "å befinne seg",
     "lemma": "befinne seg",
     "english": "to be located / find oneself",
@@ -30882,7 +30882,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-145",
+    "id": "v-b2-advanced-verbs-142",
     "norsk": "å skryte av",
     "lemma": "skryte av",
     "english": "to boast about / praise",
@@ -30900,7 +30900,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-146",
+    "id": "v-b2-advanced-verbs-143",
     "norsk": "å føre til",
     "lemma": "føre til",
     "english": "to lead to / result in",
@@ -30918,7 +30918,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-147",
+    "id": "v-b2-advanced-verbs-144",
     "norsk": "å støtte seg til",
     "lemma": "støtte seg til",
     "english": "to rely on / lean on",
@@ -30936,7 +30936,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-148",
+    "id": "v-b2-advanced-verbs-145",
     "norsk": "å finne ut av",
     "lemma": "finne ut av",
     "english": "to find out, to figure out",
@@ -30954,7 +30954,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-149",
+    "id": "v-b2-advanced-verbs-146",
     "norsk": "å fokusere på",
     "lemma": "fokusere på",
     "english": "to focus on",
@@ -30972,7 +30972,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-150",
+    "id": "v-b2-advanced-verbs-147",
     "norsk": "å henge etter",
     "lemma": "henge etter",
     "english": "to lag behind",
@@ -30990,7 +30990,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-151",
+    "id": "v-b2-advanced-verbs-148",
     "norsk": "å stille opp",
     "lemma": "stille opp",
     "english": "to participate, to show up, to support",
@@ -31008,7 +31008,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-emotions-068",
+    "id": "v-b2-emotions-067",
     "norsk": "å kjede seg",
     "lemma": "kjede seg",
     "english": "to be bored",
@@ -31026,7 +31026,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-152",
+    "id": "v-b2-advanced-verbs-149",
     "norsk": "å ende med",
     "lemma": "ende med",
     "english": "to end up with / to result in",
@@ -31062,7 +31062,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-153",
+    "id": "v-b2-advanced-verbs-150",
     "norsk": "å risse inn",
     "lemma": "risse inn",
     "english": "carve into, engrave",
@@ -31080,7 +31080,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-154",
+    "id": "v-b2-advanced-verbs-151",
     "norsk": "å slite bort",
     "lemma": "slite bort",
     "english": "wear away, erode",
@@ -31098,7 +31098,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-155",
+    "id": "v-b2-advanced-verbs-152",
     "norsk": "å gå inn for",
     "lemma": "gå inn for",
     "english": "to advocate, to support, to go for",
@@ -31116,7 +31116,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-156",
+    "id": "v-b2-advanced-verbs-153",
     "norsk": "å jevne ut",
     "lemma": "jevne ut",
     "english": "to smooth out, to level, to equalize",
@@ -31170,7 +31170,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-157",
+    "id": "v-b2-advanced-verbs-154",
     "norsk": "å slite med",
     "lemma": "slite med",
     "english": "to struggle with",
@@ -31188,7 +31188,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-emotions-069",
+    "id": "v-b2-emotions-068",
     "norsk": "å se fram til",
     "lemma": "se fram til",
     "english": "look forward to",
@@ -31206,7 +31206,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-158",
+    "id": "v-b2-advanced-verbs-155",
     "norsk": "å forberede seg",
     "lemma": "forberede seg",
     "english": "prepare oneself",
@@ -31242,7 +31242,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-emotions-070",
+    "id": "v-b2-emotions-069",
     "norsk": "å føle seg vel",
     "lemma": "føle seg vel",
     "english": "feel good/comfortable",
@@ -31260,7 +31260,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-159",
+    "id": "v-b2-advanced-verbs-156",
     "norsk": "å foreta seg noe",
     "lemma": "foreta seg noe",
     "english": "to do something, take action",
@@ -31278,7 +31278,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-160",
+    "id": "v-b2-advanced-verbs-157",
     "norsk": "å ha seg",
     "lemma": "ha seg",
     "english": "to have sex (slang)",
@@ -31296,7 +31296,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-161",
+    "id": "v-b2-advanced-verbs-158",
     "norsk": "å fordype seg",
     "lemma": "fordype seg",
     "english": "to immerse oneself, delve deeply into",
@@ -31314,7 +31314,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-emotions-071",
+    "id": "v-b2-emotions-070",
     "norsk": "å gremme seg",
     "lemma": "gremme seg",
     "english": "to grieve, fret, feel bitter",
@@ -31332,7 +31332,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-162",
+    "id": "v-b2-advanced-verbs-159",
     "norsk": "å løfte fram",
     "lemma": "løfte fram",
     "english": "to highlight, bring forward, promote",
@@ -31350,7 +31350,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-163",
+    "id": "v-b2-advanced-verbs-160",
     "norsk": "å prelle av",
     "lemma": "prelle av",
     "english": "to bounce off, have no effect",
@@ -31368,7 +31368,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-communication-060",
+    "id": "v-b2-communication-059",
     "norsk": "å si fra om noe",
     "lemma": "si fra om noe",
     "english": "to speak up about something, notify about something",
@@ -31386,7 +31386,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-164",
+    "id": "v-b2-advanced-verbs-161",
     "norsk": "å ty til",
     "lemma": "ty til",
     "english": "to resort to",
@@ -31422,7 +31422,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-165",
+    "id": "v-b2-advanced-verbs-162",
     "norsk": "å skylde på noen",
     "lemma": "skylde på noen",
     "english": "blame someone",
@@ -31440,7 +31440,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-166",
+    "id": "v-b2-advanced-verbs-163",
     "norsk": "å overgi seg",
     "lemma": "overgi seg",
     "english": "surrender",
@@ -31458,7 +31458,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-advanced-verbs-167",
+    "id": "v-b2-advanced-verbs-164",
     "norsk": "å bøte på",
     "lemma": "bøte på",
     "english": "remedy, make up for, repair",
@@ -31548,7 +31548,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-work-career-056",
+    "id": "v-b2-work-career-055",
     "norsk": "organisasjon (en)",
     "lemma": "organisasjon",
     "english": "an organization",
@@ -31566,7 +31566,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-work-career-057",
+    "id": "v-b2-work-career-056",
     "norsk": "organisering (en/ei)",
     "lemma": "organisering",
     "english": "organizing (the process)",
@@ -31584,7 +31584,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-work-career-058",
+    "id": "v-b2-work-career-057",
     "norsk": "arbeider (en)",
     "lemma": "arbeider",
     "english": "a worker",
@@ -31602,7 +31602,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-education-055",
+    "id": "v-b2-education-054",
     "norsk": "læring (en/ei)",
     "lemma": "læring",
     "english": "learning (the process)",
@@ -31620,7 +31620,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-education-056",
+    "id": "v-b2-education-055",
     "norsk": "lærdom (en)",
     "lemma": "lærdom",
     "english": "a lesson learned, wisdom gained",
@@ -31638,7 +31638,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-education-057",
+    "id": "v-b2-education-056",
     "norsk": "lærerik",
     "lemma": "lærerik",
     "english": "instructive, educational",
@@ -31656,7 +31656,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b2-abstract-nouns-069",
+    "id": "v-b2-abstract-nouns-068",
     "norsk": "funksjon (en)",
     "lemma": "funksjon",
     "english": "a function",
@@ -31674,7 +31674,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-education-058",
+    "id": "v-b2-education-057",
     "norsk": "lærerutdanning (en)",
     "lemma": "lærerutdanning",
     "english": "teacher education/training",
@@ -31692,7 +31692,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-work-career-059",
+    "id": "v-b2-work-career-058",
     "norsk": "arbeidskrav (et)",
     "lemma": "arbeidskrav",
     "english": "coursework requirement",
@@ -31710,7 +31710,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-geography-056",
+    "id": "v-b2-geography-055",
     "norsk": "hjemby (en)",
     "lemma": "hjemby",
     "english": "hometown",
@@ -31728,7 +31728,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-abstract-nouns-070",
+    "id": "v-b2-abstract-nouns-069",
     "norsk": "flaks (en)",
     "lemma": "flaks",
     "english": "luck, good fortune",
@@ -31746,7 +31746,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-abstract-nouns-071",
+    "id": "v-b2-abstract-nouns-070",
     "norsk": "sjanse (en)",
     "lemma": "sjanse",
     "english": "chance, opportunity",

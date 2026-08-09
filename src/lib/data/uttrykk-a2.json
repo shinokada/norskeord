@@ -2918,7 +2918,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-163",
+    "id": "u-a2-162",
     "norsk": "avhengig av",
     "lemma": "avhengig av",
     "english": "dependent on",
@@ -2936,7 +2936,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-164",
+    "id": "u-a2-163",
     "norsk": "å dekke bordet",
     "lemma": "dekke bordet",
     "english": "to set the table",
@@ -2954,7 +2954,7 @@
     "theme": "house-chores"
   },
   {
-    "id": "u-a2-165",
+    "id": "u-a2-164",
     "norsk": "dårlig humor",
     "lemma": "dårlig humor",
     "english": "bad mood",
@@ -2972,7 +2972,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-166",
+    "id": "u-a2-165",
     "norsk": "dårlig tid",
     "lemma": "dårlig tid",
     "english": "little time, in a hurry",
@@ -2990,7 +2990,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-167",
+    "id": "u-a2-166",
     "norsk": "dårlige veier",
     "lemma": "dårlige veier",
     "english": "bad roads",
@@ -3008,7 +3008,7 @@
     "theme": "transport"
   },
   {
-    "id": "u-a2-168",
+    "id": "u-a2-167",
     "norsk": "å jobbe ekstra",
     "lemma": "jobbe ekstra",
     "english": "to work extra, to put in extra work",
@@ -3026,7 +3026,7 @@
     "theme": "occupations"
   },
   {
-    "id": "u-a2-169",
+    "id": "u-a2-168",
     "norsk": "ekstra flott",
     "lemma": "ekstra flott",
     "english": "extra nice, especially great",
@@ -3044,7 +3044,7 @@
     "theme": "descriptive-adjectives"
   },
   {
-    "id": "u-a2-170",
+    "id": "u-a2-169",
     "norsk": "en fast jobb",
     "lemma": "en fast jobb",
     "english": "a permanent job",
@@ -3062,7 +3062,7 @@
     "theme": "occupations"
   },
   {
-    "id": "u-a2-171",
+    "id": "u-a2-170",
     "norsk": "å gå feil",
     "lemma": "gå feil",
     "english": "to go wrong",
@@ -3080,7 +3080,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-173",
+    "id": "u-a2-171",
     "norsk": "å føre regnskap",
     "lemma": "føre regnskap",
     "english": "to keep accounts",
@@ -3098,7 +3098,7 @@
     "theme": "money"
   },
   {
-    "id": "u-a2-174",
+    "id": "u-a2-172",
     "norsk": "å få tak i",
     "lemma": "få tak i",
     "english": "to get hold of",
@@ -3116,7 +3116,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-175",
+    "id": "u-a2-173",
     "norsk": "Er det noe galt?",
     "lemma": "det er noe galt",
     "english": "Is something wrong?",
@@ -3134,7 +3134,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-176",
+    "id": "u-a2-174",
     "norsk": "noen ganger",
     "lemma": "noen ganger",
     "english": "sometimes",
@@ -3152,7 +3152,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-177",
+    "id": "u-a2-175",
     "norsk": "en gang til",
     "lemma": "en gang til",
     "english": "one more time",
@@ -3170,7 +3170,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-178",
+    "id": "u-a2-176",
     "norsk": "med én gang",
     "lemma": "med én gang",
     "english": "at once, immediately",
@@ -3188,7 +3188,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-179",
+    "id": "u-a2-177",
     "norsk": "i fjor",
     "lemma": "i fjor",
     "english": "last year",
@@ -3206,7 +3206,7 @@
     "theme": "time"
   },
   {
-    "id": "u-a2-180",
+    "id": "u-a2-178",
     "norsk": "for ... siden",
     "lemma": "for siden",
     "english": "ago",
@@ -3224,7 +3224,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-181",
+    "id": "u-a2-179",
     "norsk": "for stor",
     "lemma": "for stor",
     "english": "too big",
@@ -3242,7 +3242,7 @@
     "theme": "descriptive-adjectives"
   },
   {
-    "id": "u-a2-182",
+    "id": "u-a2-180",
     "norsk": "Det er rart for meg",
     "lemma": "det er rart for meg",
     "english": "it feels strange to me",
@@ -3260,7 +3260,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-183",
+    "id": "u-a2-181",
     "norsk": "For en dag!",
     "lemma": "for en dag",
     "english": "what a day!",
@@ -3278,7 +3278,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-184",
+    "id": "u-a2-182",
     "norsk": "å gå rett fram",
     "lemma": "gå rett fram",
     "english": "to go straight ahead",
@@ -3296,7 +3296,7 @@
     "theme": "directions"
   },
   {
-    "id": "u-a2-185",
+    "id": "u-a2-183",
     "norsk": "å ha fri",
     "lemma": "ha fri",
     "english": "to have a day off / to be off work",
@@ -3314,7 +3314,7 @@
     "theme": "occupations"
   },
   {
-    "id": "u-a2-186",
+    "id": "u-a2-184",
     "norsk": "hotellet er fullt",
     "lemma": "hotellet er fullt",
     "english": "the hotel is fully booked",
@@ -3332,7 +3332,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-187",
+    "id": "u-a2-185",
     "norsk": "De er gift",
     "lemma": "de er gift",
     "english": "they are married",
@@ -3350,7 +3350,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-188",
+    "id": "u-a2-186",
     "norsk": "Jeg vil gjerne ...",
     "lemma": "jeg vil gjerne",
     "english": "I would like to ...",
@@ -3368,7 +3368,7 @@
     "theme": "shopping"
   },
   {
-    "id": "u-a2-189",
+    "id": "u-a2-187",
     "norsk": "å gjøre lekser",
     "lemma": "gjøre lekser",
     "english": "to do homework",
@@ -3386,7 +3386,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-190",
+    "id": "u-a2-188",
     "norsk": "De ser glade ut",
     "lemma": "de ser glade ut",
     "english": "They look happy",
@@ -3404,7 +3404,7 @@
     "theme": "descriptive-adjectives"
   },
   {
-    "id": "u-a2-191",
+    "id": "u-a2-189",
     "norsk": "god mat",
     "lemma": "god mat",
     "english": "good food",
@@ -3422,7 +3422,7 @@
     "theme": "cooking"
   },
   {
-    "id": "u-a2-192",
+    "id": "u-a2-190",
     "norsk": "en god idé",
     "lemma": "en god idé",
     "english": "a good idea",
@@ -3440,7 +3440,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-193",
+    "id": "u-a2-191",
     "norsk": "Godt jobba.",
     "lemma": "godt jobba",
     "english": "Well done.",
@@ -3458,7 +3458,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-194",
+    "id": "u-a2-192",
     "norsk": "Vær så god.",
     "lemma": "vær så god",
     "english": "here you go / you are welcome",
@@ -3476,7 +3476,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-195",
+    "id": "u-a2-193",
     "norsk": "God morgen.",
     "lemma": "god morgen",
     "english": "Good morning.",
@@ -3494,7 +3494,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-196",
+    "id": "u-a2-194",
     "norsk": "Gratulerer med dagen",
     "lemma": "gratulerer med dagen",
     "english": "Happy birthday.",
@@ -3512,7 +3512,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-197",
+    "id": "u-a2-195",
     "norsk": "å gå på norskkurs",
     "lemma": "gå på norskkurs",
     "english": "to attend a Norwegian course",
@@ -3530,7 +3530,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-198",
+    "id": "u-a2-196",
     "norsk": "Det går fint.",
     "lemma": "det går fint",
     "english": "It's going fine. / That works.",
@@ -3548,7 +3548,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-200",
+    "id": "u-a2-197",
     "norsk": "å gå hjem",
     "lemma": "gå hjem",
     "english": "to go home",
@@ -3566,7 +3566,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-201",
+    "id": "u-a2-198",
     "norsk": "å være hjemme",
     "lemma": "være hjemme",
     "english": "to be at home",
@@ -3584,7 +3584,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-202",
+    "id": "u-a2-199",
     "norsk": "i dårlig humør",
     "lemma": "i dårlig humør",
     "english": "in a bad mood",
@@ -3602,7 +3602,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-203",
+    "id": "u-a2-200",
     "norsk": "i godt humør",
     "lemma": "i godt humør",
     "english": "in a good mood",
@@ -3620,7 +3620,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-204",
+    "id": "u-a2-201",
     "norsk": "Ha det.",
     "lemma": "ha det",
     "english": "Goodbye.",
@@ -3638,7 +3638,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-205",
+    "id": "u-a2-202",
     "norsk": "å ha mye å gjøre",
     "lemma": "ha mye å gjøre",
     "english": "to have a lot to do",
@@ -3656,7 +3656,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-207",
+    "id": "u-a2-203",
     "norsk": "i to år",
     "lemma": "i to år",
     "english": "for two years",
@@ -3674,7 +3674,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-208",
+    "id": "u-a2-204",
     "norsk": "i like måte",
     "lemma": "i like måte",
     "english": "likewise",
@@ -3692,7 +3692,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-209",
+    "id": "u-a2-205",
     "norsk": "å snakke høyt",
     "lemma": "snakke høyt",
     "english": "to speak loudly",
@@ -3710,7 +3710,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-210",
+    "id": "u-a2-206",
     "norsk": "å ta til høyre",
     "lemma": "ta til høyre",
     "english": "to turn right",
@@ -3728,7 +3728,7 @@
     "theme": "directions"
   },
   {
-    "id": "u-a2-211",
+    "id": "u-a2-207",
     "norsk": "ha fri",
     "lemma": "ha fri",
     "english": "to have a day off / to be off work",
@@ -3746,7 +3746,7 @@
     "theme": "occupations"
   },
   {
-    "id": "u-a2-212",
+    "id": "u-a2-208",
     "norsk": "å klare seg",
     "lemma": "klare seg",
     "english": "to manage / to get by on one's own",
@@ -3764,7 +3764,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-214",
+    "id": "u-a2-209",
     "norsk": "å klippe hår",
     "lemma": "klippe hår",
     "english": "to cut hair / to get a haircut",
@@ -3782,7 +3782,7 @@
     "theme": "body"
   },
   {
-    "id": "u-a2-215",
+    "id": "u-a2-210",
     "norsk": "å knekke brød",
     "lemma": "knekke brød",
     "english": "crispbread / to break crispbread (knekkebrød)",
@@ -3800,7 +3800,7 @@
     "theme": "cooking"
   },
   {
-    "id": "u-a2-216",
+    "id": "u-a2-211",
     "norsk": "jo",
     "lemma": "jo",
     "english": "yes (contradicting a negative statement) / of course / well",
@@ -3818,7 +3818,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a2-217",
+    "id": "u-a2-212",
     "norsk": "Klart det",
     "lemma": "klart det",
     "english": "of course / sure / obviously",
@@ -3836,7 +3836,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-218",
+    "id": "u-a2-213",
     "norsk": "komme fra",
     "lemma": "komme fra",
     "english": "to come from / to be from",
@@ -3854,7 +3854,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-219",
+    "id": "u-a2-214",
     "norsk": "å gå på kurs",
     "lemma": "gå på kurs",
     "english": "to take a course / to attend a class",
@@ -3872,7 +3872,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-220",
+    "id": "u-a2-215",
     "norsk": "kvart på",
     "lemma": "kvart på",
     "english": "quarter to (the hour)",
@@ -3890,7 +3890,7 @@
     "theme": "time"
   },
   {
-    "id": "u-a2-221",
+    "id": "u-a2-216",
     "norsk": "kvart over",
     "lemma": "kvart over",
     "english": "quarter past (the hour)",
@@ -3908,7 +3908,7 @@
     "theme": "time"
   },
   {
-    "id": "u-a2-222",
+    "id": "u-a2-217",
     "norsk": "på landet",
     "lemma": "på landet",
     "english": "in the countryside",
@@ -3926,7 +3926,7 @@
     "theme": "nature"
   },
   {
-    "id": "u-a2-223",
+    "id": "u-a2-218",
     "norsk": "hvor langt",
     "lemma": "hvor langt",
     "english": "how far",
@@ -3944,7 +3944,7 @@
     "theme": "directions"
   },
   {
-    "id": "u-a2-224",
+    "id": "u-a2-219",
     "norsk": "langt borte",
     "lemma": "langt borte",
     "english": "far away",
@@ -3962,7 +3962,7 @@
     "theme": "directions"
   },
   {
-    "id": "u-a2-226",
+    "id": "u-a2-220",
     "norsk": "å bli lei seg",
     "lemma": "bli lei seg",
     "english": "to become sad, to get upset",
@@ -3980,7 +3980,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-227",
+    "id": "u-a2-221",
     "norsk": "hvor lenge",
     "lemma": "hvor lenge",
     "english": "how long (duration)",
@@ -3998,7 +3998,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-228",
+    "id": "u-a2-222",
     "norsk": "å leve av",
     "lemma": "leve av",
     "english": "to live on, to make a living from",
@@ -4016,7 +4016,7 @@
     "theme": "occupations"
   },
   {
-    "id": "u-a2-229",
+    "id": "u-a2-223",
     "norsk": "å like seg",
     "lemma": "like seg",
     "english": "to enjoy oneself, to feel comfortable",
@@ -4034,7 +4034,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-230",
+    "id": "u-a2-224",
     "norsk": "å ha lyst på",
     "lemma": "ha lyst på",
     "english": "to want, to feel like having",
@@ -4052,7 +4052,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-232",
+    "id": "u-a2-225",
     "norsk": "å ta med",
     "lemma": "ta med",
     "english": "to bring, to take along",
@@ -4070,7 +4070,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-233",
+    "id": "u-a2-226",
     "norsk": "midt på vinteren",
     "lemma": "midt på vinteren",
     "english": "in the middle of winter",
@@ -4088,7 +4088,7 @@
     "theme": "weather"
   },
   {
-    "id": "u-a2-234",
+    "id": "u-a2-227",
     "norsk": "å miste balansen",
     "lemma": "miste balansen",
     "english": "to lose one's balance",
@@ -4106,7 +4106,7 @@
     "theme": "body"
   },
   {
-    "id": "u-a2-236",
+    "id": "u-a2-228",
     "norsk": "neste uke",
     "lemma": "neste uke",
     "english": "next week",
@@ -4124,7 +4124,7 @@
     "theme": "time"
   },
   {
-    "id": "u-a2-237",
+    "id": "u-a2-229",
     "norsk": "på nettet",
     "lemma": "på nettet",
     "english": "online, on the internet",
@@ -4142,7 +4142,7 @@
     "theme": "technology"
   },
   {
-    "id": "u-a2-238",
+    "id": "u-a2-230",
     "norsk": "å lete etter",
     "lemma": "lete etter",
     "english": "to look for, to search for",
@@ -4160,7 +4160,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-239",
+    "id": "u-a2-231",
     "norsk": "å fortelle om",
     "lemma": "fortelle om",
     "english": "to tell about, to talk about",
@@ -4178,7 +4178,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-240",
+    "id": "u-a2-232",
     "norsk": "å spørre om",
     "lemma": "spørre om",
     "english": "to ask about",
@@ -4196,7 +4196,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-241",
+    "id": "u-a2-233",
     "norsk": "om tre dager",
     "lemma": "om tre dager",
     "english": "in three days",
@@ -4214,7 +4214,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-242",
+    "id": "u-a2-234",
     "norsk": "sånn passe",
     "lemma": "sånn passe",
     "english": "so-so, fairly okay",
@@ -4232,7 +4232,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-243",
+    "id": "u-a2-235",
     "norsk": "god plass",
     "lemma": "god plass",
     "english": "plenty of room, lots of space",
@@ -4250,7 +4250,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-244",
+    "id": "u-a2-236",
     "norsk": "å pusse tennene",
     "lemma": "pusse tennene",
     "english": "to brush one's teeth",
@@ -4268,7 +4268,7 @@
     "theme": "body"
   },
   {
-    "id": "u-a2-245",
+    "id": "u-a2-237",
     "norsk": "på norsk",
     "lemma": "på norsk",
     "english": "in Norwegian",
@@ -4286,7 +4286,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-246",
+    "id": "u-a2-238",
     "norsk": "på norskkurs",
     "lemma": "på norskkurs",
     "english": "at a Norwegian language course",
@@ -4304,7 +4304,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-247",
+    "id": "u-a2-239",
     "norsk": "så rart",
     "lemma": "så rart",
     "english": "so strange, how odd",
@@ -4322,7 +4322,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-248",
+    "id": "u-a2-240",
     "norsk": "å se rart ut",
     "lemma": "se rart ut",
     "english": "to look strange, to look odd",
@@ -4340,7 +4340,7 @@
     "theme": "descriptive-adjectives"
   },
   {
-    "id": "u-a2-249",
+    "id": "u-a2-241",
     "norsk": "å skrive rett fram",
     "lemma": "skrive rett fram",
     "english": "to write straightforwardly, to write directly",
@@ -4358,7 +4358,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-250",
+    "id": "u-a2-242",
     "norsk": "å sitte i ro",
     "lemma": "sitte i ro",
     "english": "to sit still",
@@ -4376,7 +4376,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-251",
+    "id": "u-a2-243",
     "norsk": "sammen med",
     "lemma": "sammen med",
     "english": "together with",
@@ -4394,7 +4394,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-252",
+    "id": "u-a2-244",
     "norsk": "å snakke sammen",
     "lemma": "snakke sammen",
     "english": "to talk to each other",
@@ -4412,7 +4412,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-253",
+    "id": "u-a2-245",
     "norsk": "alle sammen",
     "lemma": "alle sammen",
     "english": "all of you, all of them, everyone",
@@ -4430,7 +4430,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-254",
+    "id": "u-a2-246",
     "norsk": "til sammen",
     "lemma": "til sammen",
     "english": "in total, altogether",
@@ -4448,7 +4448,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-255",
+    "id": "u-a2-247",
     "norsk": "å sminke seg",
     "lemma": "sminke seg",
     "english": "to put on makeup",
@@ -4466,7 +4466,7 @@
     "theme": "clothing"
   },
   {
-    "id": "u-a2-257",
+    "id": "u-a2-248",
     "norsk": "å slå seg",
     "lemma": "slå seg",
     "english": "to hurt oneself (by hitting)",
@@ -4484,7 +4484,7 @@
     "theme": "health"
   },
   {
-    "id": "u-a2-259",
+    "id": "u-a2-249",
     "norsk": "å skanne inn varer",
     "lemma": "skanne inn varer",
     "english": "to scan items (at checkout)",
@@ -4502,7 +4502,7 @@
     "theme": "shopping"
   },
   {
-    "id": "u-a2-261",
+    "id": "u-a2-250",
     "norsk": "å sjekke ut",
     "lemma": "sjekke ut",
     "english": "to check out",
@@ -4520,7 +4520,7 @@
     "theme": "shopping"
   },
   {
-    "id": "u-a2-262",
+    "id": "u-a2-251",
     "norsk": "å sjekke inn",
     "lemma": "sjekke inn",
     "english": "to check in",
@@ -4538,7 +4538,7 @@
     "theme": "shopping"
   },
   {
-    "id": "u-a2-263",
+    "id": "u-a2-252",
     "norsk": "selv om",
     "lemma": "selv om",
     "english": "even though",
@@ -4556,7 +4556,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a2-265",
+    "id": "u-a2-253",
     "norsk": "slik at",
     "lemma": "slik at",
     "english": "so that",
@@ -4574,7 +4574,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a2-266",
+    "id": "u-a2-254",
     "norsk": "deg selv",
     "lemma": "deg selv",
     "english": "yourself",
@@ -4592,7 +4592,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-267",
+    "id": "u-a2-255",
     "norsk": "god service",
     "lemma": "god service",
     "english": "good service",
@@ -4610,7 +4610,7 @@
     "theme": "shopping"
   },
   {
-    "id": "u-a2-270",
+    "id": "u-a2-256",
     "norsk": "til slutt",
     "lemma": "til slutt",
     "english": "finally / in the end",
@@ -4628,7 +4628,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a2-271",
+    "id": "u-a2-257",
     "norsk": "å ha dårlig smak",
     "lemma": "ha dårlig smak",
     "english": "to have bad taste",
@@ -4646,7 +4646,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-272",
+    "id": "u-a2-258",
     "norsk": "stakkars deg",
     "lemma": "stakkars deg",
     "english": "poor you / you poor thing",
@@ -4664,7 +4664,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-273",
+    "id": "u-a2-259",
     "norsk": "etter en stund",
     "lemma": "etter en stund",
     "english": "after a while",
@@ -4682,7 +4682,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-274",
+    "id": "u-a2-260",
     "norsk": "to stykker",
     "lemma": "to stykker",
     "english": "two pieces / two of them",
@@ -4700,7 +4700,7 @@
     "theme": "shopping"
   },
   {
-    "id": "u-a2-276",
+    "id": "u-a2-261",
     "norsk": "ikke så mye",
     "lemma": "ikke så mye",
     "english": "not that much",
@@ -4718,7 +4718,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-277",
+    "id": "u-a2-262",
     "norsk": "så hyggelig",
     "lemma": "så hyggelig",
     "english": "how nice / so lovely",
@@ -4736,7 +4736,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a2-278",
+    "id": "u-a2-263",
     "norsk": "ha det bra så lenge",
     "lemma": "ha det bra så lenge",
     "english": "take care for now / goodbye for now",
@@ -4754,7 +4754,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-279",
+    "id": "u-a2-264",
     "norsk": "å ta en kopp kaffe",
     "lemma": "ta en kopp kaffe",
     "english": "to have a cup of coffee",
@@ -4772,7 +4772,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-280",
+    "id": "u-a2-265",
     "norsk": "å ta buss",
     "lemma": "ta buss",
     "english": "to take the bus",
@@ -4790,7 +4790,7 @@
     "theme": "transport"
   },
   {
-    "id": "u-a2-281",
+    "id": "u-a2-266",
     "norsk": "å ta en dusj",
     "lemma": "ta en dusj",
     "english": "to take a shower",
@@ -4808,7 +4808,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-282",
+    "id": "u-a2-267",
     "norsk": "å ta med seg",
     "lemma": "ta med seg",
     "english": "to bring / to take along",
@@ -4826,7 +4826,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-283",
+    "id": "u-a2-268",
     "norsk": "takk for det",
     "lemma": "takk for det",
     "english": "thanks for that / thank you for it",
@@ -4844,7 +4844,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-284",
+    "id": "u-a2-269",
     "norsk": "å ha dårlig tid",
     "lemma": "ha dårlig tid",
     "english": "to be in a hurry / to be short on time",
@@ -4862,7 +4862,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-285",
+    "id": "u-a2-270",
     "norsk": "å komme tidsnok",
     "lemma": "komme tidsnok",
     "english": "to arrive on time / to make it in time",
@@ -4880,7 +4880,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a2-286",
+    "id": "u-a2-271",
     "norsk": "en ting til",
     "lemma": "en ting til",
     "english": "one more thing",
@@ -4898,7 +4898,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a2-287",
+    "id": "u-a2-272",
     "norsk": "å jobbe turnus",
     "lemma": "jobbe turnus",
     "english": "to work shifts",
@@ -4916,7 +4916,7 @@
     "theme": "occupations"
   },
   {
-    "id": "u-a2-288",
+    "id": "u-a2-273",
     "norsk": "å gå ut",
     "lemma": "gå ut",
     "english": "to go out",
@@ -4934,7 +4934,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-289",
+    "id": "u-a2-274",
     "norsk": "på venstre side",
     "lemma": "på venstre side",
     "english": "on the left side",
@@ -4952,7 +4952,7 @@
     "theme": "directions"
   },
   {
-    "id": "u-a2-290",
+    "id": "u-a2-275",
     "norsk": "vent litt",
     "lemma": "vent litt",
     "english": "wait a moment",
@@ -4970,7 +4970,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-291",
+    "id": "u-a2-276",
     "norsk": "å gjøre vondt",
     "lemma": "gjøre vondt",
     "english": "to hurt",
@@ -4988,7 +4988,7 @@
     "theme": "body"
   },
   {
-    "id": "u-a2-292",
+    "id": "u-a2-277",
     "norsk": "vær så god",
     "lemma": "vær så god",
     "english": "here you go / you are welcome",
@@ -5006,7 +5006,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a2-293",
+    "id": "u-a2-278",
     "norsk": "personlig økonomi",
     "lemma": "personlig økonomi",
     "english": "personal finance",
@@ -5024,7 +5024,7 @@
     "theme": "money"
   },
   {
-    "id": "u-a2-294",
+    "id": "u-a2-279",
     "norsk": "glad i",
     "lemma": "glad i",
     "english": "fond of",
@@ -5043,7 +5043,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-295",
+    "id": "u-a2-280",
     "norsk": "interessert i",
     "lemma": "interessert i",
     "english": "interested in",
@@ -5062,7 +5062,7 @@
     "theme": "hobbies"
   },
   {
-    "id": "u-a2-296",
+    "id": "u-a2-281",
     "norsk": "stole på",
     "lemma": "stole på",
     "english": "to trust",
@@ -5081,7 +5081,7 @@
     "theme": "social-life"
   },
   {
-    "id": "u-a2-297",
+    "id": "u-a2-282",
     "norsk": "ha rett til",
     "lemma": "ha rett til",
     "english": "to have the right to",
@@ -5100,7 +5100,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a2-298",
+    "id": "u-a2-283",
     "norsk": "legge merke til",
     "lemma": "legge merke til",
     "english": "to notice",
@@ -5119,7 +5119,7 @@
     "theme": "communication"
   },
   {
-    "id": "u-a2-299",
+    "id": "u-a2-284",
     "norsk": "ansvar for",
     "lemma": "ansvar for",
     "english": "responsibility for",

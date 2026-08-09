@@ -1,0 +1,528 @@
+Entry counts: {'A1': 497, 'A1-uttrykk': 119, 'A2': 937, 'A2-uttrykk': 284, 'B1': 1234, 'B1-uttrykk': 221, 'B2': 1765, 'B2-uttrykk': 692, 'C': 740, 'C-uttrykk': 833, 'ARBEIDSBOK-draft': 2118}
+
+=== DRAFT vs PRODUCTION — EXACT MATCHES (295) ===
+
+  'spetakkel (et)'                         draft-def='bråk; støy; leven'                      →  C [sensory-sound]
+  'å adlyde'                               draft-def='høre på; gjøre det noen sier man skal gjøre' →  C [interpersonal-conflict]
+  'å subbe'                                draft-def='gå tungt og slepende'                   →  C [manner-of-motion]
+  'fra sans og samling'                    draft-def='(nesten) bevisstløs'                    →  C-uttrykk [embodied-emotion]
+  'hersens'                                draft-def='irriterende'                            →  C [intensifiers-degree]
+  'frodig'                                 draft-def='blomstrende'                            →  C [nature-landscape]
+  'slant (en)'                             draft-def='her: småpenger'                         →  C [everyday-objects]
+  'å hige etter'                           draft-def='trakte etter; lengte etter og ønske seg noe sterkt' →  B2 [advanced-verbs]
+  'å love bot og bedring'                  draft-def='gi et løfte om at noe skal bli bedre'   →  C-uttrykk [interpersonal-conflict]
+  'å kime'                                 draft-def='her: ringe sterkt og vedvarende'        →  C [sensory-sound]
+  'å svikte'                               draft-def='her: slå feil; gjøre en feil'           →  B2 [relationships]
+  'å verdsette'                            draft-def='sette pris på'                          →  B2 [emotions]
+  'i grunnen'                              draft-def='egentlig; i bunn og grunn'              →  B2-uttrykk [uttrykk]
+  'derimot'                                draft-def='på den annen side; i motsetning til'    →  B2 [discourse-markers]
+  'elendig'                                draft-def='dårlig'                                 →  B2 [advanced-adjectives]
+  'omfattende'                             draft-def='stor; betydelig'                        →  B2 [advanced-adjectives]
+  'å skremme'                              draft-def='gjøre redd'                             →  B1 [mental-wellbeing]
+  'lojalitet (en)'                         draft-def='en venn som er til å stole på, er lojal – og da viser man lojalitet; troskap' →  B1 [relationships]
+  'svik (et)'                              draft-def='bedrageri'                              →  B2 [relationships]
+  'å komme til kort'                       draft-def='ikke klare det man vil klare; mislykkes; være utilstrekkelig' →  B2-uttrykk [uttrykk]
+  'å oppsøke'                              draft-def='gå og hilse på (ofte for å få informasjon/råd/hjelp)' →  B2 [advanced-verbs]
+  'å forfølge'                             draft-def='følge etter og plage'                   →  B2 [law]
+  'å anstrenge seg'                        draft-def='prøve hardt; streve'                    →  B2 [advanced-verbs]
+  'å forutse'                              draft-def='forstå på forhånd; skjønne før noe skjer' →  B2 [abstract-nouns]
+  'å ta seg sammen'                        draft-def='skjerpe seg; gjøre noe bedre enn før; prøve enda hardere' →  B2-uttrykk [uttrykk]
+  'å skjerpe seg'                          draft-def='ta seg sammen; være mer oppmerksom'     →  B2 [advanced-verbs]
+  'å plystre'                              draft-def='lage toner/lyd med leppene'             →  C [sensory-sound]
+  'hjørne (et)'                            draft-def='stedet hvor to vegger (eller linjer) møtes' →  A2 [directions]
+  'se langt etter'                         draft-def='her: akseptere at noe ikke kommer til å skje' →  B2-uttrykk [uttrykk]
+  'ledig'                                  draft-def='her: fri; naturlig'                     →  A2 [time]
+  'få med seg'                             draft-def='forstå; oppfatte'                       →  A2-uttrykk [uttrykk]
+  'å surre'                                draft-def='her: svirre; gå rundt og rundt'         →  B2 [psychology]
+  'utilslørt'                              draft-def='åpenlys; tydelig'                       →  C [nature-landscape]
+  'hes'                                    draft-def='når man er forkjølet eller har vondt i halsen, er stemmen ofte hes; rusten i stemmen' →  C [physical-appearance]
+  'heftig'                                 draft-def='her: intens'                            →  B2 [advanced-adjectives]
+  'utsagn (et)'                            draft-def='påstand; noe som er sagt'               →  B2 [communication]
+  'å vedde på'                             draft-def='her: talemåte for å uttrykke at man er helt sikker på noe' →  B2 [advanced-verbs]
+  'rett som det er'                        draft-def='ofte'                                   →  B2-uttrykk [uttrykk]
+  'lag (et)'                               draft-def='dekke; belegg'                          →  A2 [sports]
+  'å låne øre til'                         draft-def='lytte'                                  →  C-uttrykk [rhetoric]
+  'å følge opp'                            draft-def='her: gjøre det samme mot noen som andre har gjort mot dem først' →  B1 [workplace]
+  'utadvendt'                              draft-def='åpen; ekstrovert'                       →  B1 [personal-growth]
+  'sær'                                    draft-def='rar; spesiell'                          →  C [character-temperament]
+  'raus'                                   draft-def='snill; som gir mye'                     →  B2 [emotions]
+  'å stille opp'                           draft-def='støtte; komme for å vise sympati og gi hjelp' →  B2 [advanced-verbs]
+  'å knipe sammen'                         draft-def='presse sammen'                          →  C-uttrykk [manner-of-motion]
+  'å motstå'                               draft-def='si nei til; stå imot'                   →  C [character-temperament]
+  'å gjalle'                               draft-def='runge; høres veldig høyt'               →  C [sensory-sound]
+  'til gjengjeld'                          draft-def='i stedet; som erstatning'               →  B2-uttrykk [uttrykk]
+  'å forutse'                              draft-def='forstå på forhånd (før noe skjer)'      →  B2 [abstract-nouns]
+  'utmattet'                               draft-def='veldig sliten; helt uten krefter'       →  C [embodied-emotion]
+  'sambygding (en)'                        draft-def='to personer som bor i samme bygd, er sambygdinger' →  C [sociology-anthropology]
+  'å piple'                                draft-def='sive/komme ut litt og litt (brukt om væske som kommer i dråper)' →  C [nature-landscape]
+  'å heie fram'                            draft-def='støtte (gjennom å rope bestemte ord i en idrettskonkurranse – for eksempel heia, heia)' →  B2 [advanced-verbs]
+  'sirlig'                                 draft-def='pyntelig; elegant'                      →  C [character-temperament]
+  'å holde ut'                             draft-def='tåle; ikke gi seg'                      →  B1 [personal-growth]  |  C-uttrykk [abstract-concepts]
+  'uberørt'                                draft-def='følelsesmessig upåvirket; oppføre seg som om ingenting har hendt' →  B2 [advanced-adjectives]
+  'å krydre'                               draft-def='her: sette farge på'                    →  B1 [cooking]
+  'fregne (en/ei)'                         draft-def='brun pigmentprikk'                      →  C [physical-appearance]
+  'sildrende'                              draft-def='som renner sakte og forsiktig (og gir lyd fra seg)' →  C [sensory-sound]
+  'innsikt (en)'                           draft-def='forståelse; kjennskap; skjønn'          →  B2 [science]
+  'å høre til'                             draft-def='føle identitet knyttet til et sted; være med i et fellesskap' →  B1 [society]
+  'følgelig'                               draft-def='derfor; ergo'                           →  B2 [discourse-markers]
+  'til enhver tid'                         draft-def='hele tiden'                             →  B2-uttrykk [uttrykk]
+  'å gjalle'                               draft-def='ljome; runge'                           →  C [sensory-sound]
+  'stri'                                   draft-def='glatt; uten krøller'                    →  C [physical-appearance]
+  'øde'                                    draft-def='forlatt sted'                           →  C [nature-landscape]
+  'forbryter (en)'                         draft-def='person som gjør en nokså grov kriminell handling' →  B2 [law]
+  'omtåket'                                draft-def='fortumlet; forvirret'                   →  C [embodied-emotion]
+  'å se seg for'                           draft-def='se hvor man går'                        →  C [manner-of-motion]
+  'å trille'                               draft-def='gå rundt (om hjul)'                     →  A2 [house-chores]
+  'stø'                                    draft-def='fast; sikker'                           →  C [character-temperament]
+  'å pryde'                                draft-def='pynte; forskjønne'                      →  C [literary]
+  'knapt'                                  draft-def='bare så vidt; nesten ikke'              →  B1 [expressing-opinions]
+  'før man får sukk for seg'               draft-def='før man rekker å tenke'                 →  C-uttrykk [intensifiers-degree]
+  'gå glipp av'                            draft-def='ikke få med seg'                        →  B1-uttrykk [uttrykk]
+  'dvale (en)'                             draft-def='dyp søvn (gjelder ofte dyr om vinteren)' →  C [nature-landscape]
+  'bikkje (en/ei)'                         draft-def='hund'                                   →  B2 [language]
+  'bebreidelse (en)'                       draft-def='kritikk; anklage'                       →  C [interpersonal-conflict]
+  'ta fatt på'                             draft-def='starte'                                 →  B1-uttrykk [uttrykk]
+  'å måpe'                                 draft-def='stirre med åpen munn (fordi man ikke forstår)' →  C [embodied-emotion]
+  'å luske'                                draft-def='gå forsiktig (for å ikke bli oppdaget)' →  C [manner-of-motion]
+  'stri'                                   draft-def='her: stiv; strittende (om skjegg/hår)'  →  C [physical-appearance]
+  'sta'                                    draft-def='bestemt; som ønsker å følge sin egen vilje (ikke andres)' →  B1 [personal-growth]
+  'grådig'                                 draft-def='grisk; som vil ha mye'                  →  C [character-temperament]
+  'å oppfatte'                             draft-def='høre; forstå; begripe'                  →  B2 [communication]
+  'å stamme'                               draft-def='snakke hakkende; ha vansker med å si et ord; stotre' →  B2 [language]
+  'å betrakte'                             draft-def='se; vurdere'                            →  B2 [academic-language]
+  'vesen (et)'                             draft-def='væremåte; natur'                        →  B1 [culture]
+  'å stryke'                               draft-def='her: berøre; ta på'                     →  A2 [house-chores]
+  'å verne'                                draft-def='beskytte'                               →  B1 [environment]
+  'å skyve'                                draft-def='dytte; få til å bevege seg framover'    →  A1 [actions]
+  'nummen'                                 draft-def='følelsesløs'                            →  C [embodied-emotion]
+  'å innse'                                draft-def='bli klar over; forstå'                  →  B1 [reasoning]
+  'å kose seg glugg i hjel'                draft-def='kose seg veldig mye; ha det veldig fint' →  C-uttrykk [complex-emotions]
+  'utpost (en)'                            draft-def='usentralt sted'                         →  C [nature-landscape]
+  'gründer (en)'                           draft-def='grunnlegger; person som setter i gang sitt eget firma' →  B1 [work]
+  'lekker'                                 draft-def='flott; elegant'                         →  A2 [cooking]
+  'sågar'                                  draft-def='til og med'                             →  C [intensifiers-degree]
+  'å minke'                                draft-def='bli mindre; gå nedover'                 →  B2 [environment]
+  'kvist (en)'                             draft-def='liten, tynn gren'                       →  C [everyday-objects]
+  'bugnende'                               draft-def='når det er veldig mye av noe, er det bugnende' →  C [nature-landscape]
+  'frodig'                                 draft-def='blomstrende; fruktbar; med mye vekst (av planter og blomster)' →  C [nature-landscape]
+  'iherdig'                                draft-def='energisk'                               →  C [character-temperament]
+  'å hisse seg opp'                        draft-def='bli sint'                               →  B1 [mental-wellbeing]
+  'gudsbespottelse (en)'                   draft-def='blasfemi; manglende respekt for Gud'    →  C [advanced-law-justice]
+  'opprør (et)'                            draft-def='motstand; protest (ofte voldelig)'      →  B2 [politics]
+  'å spre seg som ild i tørt gress'        draft-def='gå raskt videre (ofte om sladder og ting folk har sagt)' →  C-uttrykk [abstract-concepts]
+  'såpass'                                 draft-def='så mye'                                 →  C [intensifiers-degree]
+  'innbydende'                             draft-def='som frister; som ser fin ut'            →  C [physical-appearance]
+  'stå på spill'                           draft-def='være i fare for å gå tapt; når noe står på spill, risikerer man å miste mye' →  B1-uttrykk [uttrykk]
+  'simpelthen'                             draft-def='bare; rent ut sagt'                     →  C [intensifiers-degree]
+  'å trekke ut'                            draft-def='her: fortsette; drøye'                  →  B2 [science]
+  'ellers'                                 draft-def='her: hvis ikke'                         →  A2 [communication]
+  'målløs'                                 draft-def='som ikke kan snakke (fordi man er forskrekket)' →  B2 [emotions]
+  'yndig'                                  draft-def='søt'                                    →  C [physical-appearance]
+  'voldsomt'                               draft-def='veldig'                                 →  B2 [advanced-adjectives]
+  'oppslukt'                               draft-def='svært interessert i'                    →  C [embodied-emotion]
+  'i overensstemmelse med'                 draft-def='i samsvar med; ifølge'                  →  C-uttrykk [formal-writing]
+  'dyster'                                 draft-def='trist; alvorlig'                        →  B2 [advanced-adjectives]
+  'å holde ut'                             draft-def='tåle; klare'                            →  B1 [personal-growth]  |  C-uttrykk [abstract-concepts]
+  'yndig'                                  draft-def='søt'                                    →  C [physical-appearance]
+  'syssel (en)'                            draft-def='gjøremål'                               →  C [archaic]
+  'å anmode om'                            draft-def='be om (bestemt, men høflig)'            →  C-uttrykk [highly-formal]
+  'å skyve'                                draft-def='skubbe; dytte (forsiktig og med en jevn bevegelse)' →  A1 [actions]
+  'å skrape'                               draft-def='her: stryke mot noe (og lage en ubehagelig lyd)' →  C [manner-of-motion]
+  'glatt'                                  draft-def='her: jevn (om overflate)'               →  A2 [weather]
+  'knoke (en)'                             draft-def='del av skjelettet (som stikker fram, slik man for eksempel ser det på hendene)' →  C [physical-appearance]
+  'å våge'                                 draft-def='tørre; ikke være redd'                  →  B1 [personal-growth]
+  'for lengst'                             draft-def='for lenge siden'                        →  C-uttrykk [abstract-concepts]
+  'lenke (en/ei)'                          draft-def='bånd/kjede med ting som er festet sammen' →  C [everyday-objects]
+  'imidlertid'                             draft-def='men; likevel'                           →  B1 [reasoning]
+  'fang (et)'                              draft-def='område mellom brystet og knærne på en person som sitter' →  A2 [body]
+  'beruset'                                draft-def='full (på alkohol)'                      →  B2 [medicine]
+  'slant (en)'                             draft-def='her: den siste resten som er igjen av en drikk' →  C [everyday-objects]
+  'larmende'                               draft-def='bråkende; støyende'                     →  C [sensory-sound]
+  'skjør'                                  draft-def='som lett går i stykker'                 →  C [physical-appearance]
+  'å skvette til'                          draft-def='støkke; rykke til i kroppen fordi man blir skremt av noe' →  C-uttrykk [embodied-emotion]
+  'å surre'                                draft-def='binde fast'                             →  B2 [psychology]
+  'flik (en)'                              draft-def='hjørne/kant (av en duk eller et plagg)' →  C [everyday-objects]
+  'lyssky'                                 draft-def='som ikke tåler eller ikke liker skarpt lys' →  C [character-temperament]
+  'vitebegjærlig'                          draft-def='som har lyst til å vite «alt mulig»'    →  C [character-temperament]
+  'å myse'                                 draft-def='knipe øynene sammen (fordi man ser etter noe lenger framme, eller fordi man ser mot lyset)' →  C [sensory-sound]
+  'skikkelse (en)'                         draft-def='vesen; skapning'                        →  B2 [culture]
+  'å dunke'                                draft-def='banke'                                  →  B2 [advanced-verbs]
+  'uten nærmere overveielse (en)'          draft-def='uten å tenke spesielt over'             →  C-uttrykk [abstract-concepts]
+  'å buldre'                               draft-def='lage høy lyd (som ligner på lyden fra havets bølger)' →  B2 [advanced-verbs]
+  'å le'                                   draft-def='skratte; flire'                         →  A1 [feelings]
+  'varsel (et)'                            draft-def='beskjed gitt på forhånd'                →  B2 [communication]
+  'å sno seg'                              draft-def='her: bukte; slynge; bevege seg (i svinger)' →  C [manner-of-motion]
+  'lubben'                                 draft-def='litt tykk; rund i kroppsfiguren'        →  C [physical-appearance]
+  'å fundere'                              draft-def='spekulere; lure på'                     →  B2 [psychology]
+  'å glane'                                draft-def='stirre; glo'                            →  C [sensory-sound]
+  'å utspille seg'                         draft-def='skje; foregå'                           →  C [abstract-concepts]
+  'overgang (en)'                          draft-def='kortvarig tilstand mellom to ulike perioder/tider' →  B2 [abstract-nouns]
+  'å hamre'                                draft-def='banke'                                  →  B2 [advanced-verbs]
+  'å fyke'                                 draft-def='drive gjennom lufta'                    →  C [manner-of-motion]
+  'å forutse'                              draft-def='skjønne noe på forhånd (før det skjer)' →  B2 [abstract-nouns]
+  'på forhånd'                             draft-def='tidligere; i forveien'                  →  B1-uttrykk [uttrykk]
+  'fuktig'                                 draft-def='litt våt'                               →  A2 [weather]
+  'å berømme'                              draft-def='rose; gi fine ord til noen (for noe man har gjort)' →  C [rhetoric]
+  'dunk (et)'                              draft-def='bankende lyd'                           →  C [sensory-sound]
+  'varsom'                                 draft-def='forsiktig'                              →  C [character-temperament]
+  'utspring (et)'                          draft-def='her: begynnelse'                        →  C [abstract-concepts]
+  'å angå'                                 draft-def='være av betydning for'                  →  B2 [advanced-verbs]
+  'skogholt (et)'                          draft-def='liten skog; liten del av en skog'       →  C [nature-landscape]
+  'å måpe'                                 draft-def='stirre med åpen munn (fordi det er noe man ikke forstår)' →  C [embodied-emotion]
+  'på tvers av'                            draft-def='her: gjennom (og forbi)'                →  B2-uttrykk [uttrykk]
+  'å grøsse'                               draft-def='plutselig skjelve (fordi man blir redd)' →  B2 [emotions]
+  'å utspille seg'                         draft-def='skje'                                   →  C [abstract-concepts]
+  'å våge'                                 draft-def='tørre; gjøre noe uten å være redd'      →  B1 [personal-growth]
+  'spinkel'                                draft-def='veldig tynn; sped'                      →  C [physical-appearance]
+  'gå an'                                  draft-def='være mulig; kunne aksepteres'           →  A2-uttrykk [uttrykk]
+  'å fyke'                                 draft-def='her: forsvinne; dra raskt'              →  C [manner-of-motion]
+  'å komme på'                             draft-def='huske'                                  →  A2 [communication]
+  'å avsløre'                              draft-def='vise fram; avdekke'                     →  B1 [journalism]
+  'å stryke'                               draft-def='berøre'                                 →  A2 [house-chores]
+  'å stige'                                draft-def='bevege seg oppover'                     →  B1 [economics]
+  'tofte (en/ei)'                          draft-def='tverrsete i en robåt'                   →  C [everyday-objects]
+  'skogholt (et)'                          draft-def='kanten av en skog; lite skogstykke'     →  C [nature-landscape]
+  'å myse'                                 draft-def='knipe øynene sammen; se med sammenknepne øyne' →  C [sensory-sound]
+  'innsjø (en)'                            draft-def='vann som er større enn et tjern'        →  A2 [environment]
+  'imidlertid'                             draft-def='likevel'                                →  B1 [reasoning]
+  'hellig'                                 draft-def='Gud er hellig; guddommelig'             →  B2 [religion]
+  'jammen'                                 draft-def='ja så men; sannelig; det er sant!'      →  A1 [greetings]
+  'forheng (et)'                           draft-def='teppe som henger foran noe'             →  C [everyday-objects]
+  'forbannelse (en)'                       draft-def='det som er grunnen til et vanskelig liv, kan oppleves som en forbannelse (for eksempel fra Gud)' →  C [literary]
+  'akse (en)'                              draft-def='midtlinje; sentralt fokus'              →  B2 [science]
+  'høvding (en)'                           draft-def='leder; sjef'                            →  B2 [history]
+  'å stryke'                               draft-def='her: berøre'                            →  A2 [house-chores]
+  'ruvende'                                draft-def='diger, mektig'                          →  C [nature-landscape]
+  'nådig'                                  draft-def='som tilgir andres feil og er god'       →  B2 [advanced-adjectives]
+  'heftig'                                 draft-def='intens; voldsom'                        →  B2 [advanced-adjectives]
+  'å erklære'                              draft-def='tilkjennegi; si høyt foran andre (på en høytidelig måte)' →  B2 [politics]
+  'omtåket'                                draft-def='forvirret'                              →  C [embodied-emotion]
+  'verkende'                               draft-def='smertefull'                             →  C [medicine-healthcare]
+  'mopp (en)'                              draft-def='redskap brukt til gulvvask'             →  A2 [house-chores]
+  'innbitt'                                draft-def='stri; sta'                              →  C [embodied-emotion]
+  'simpelthen'                             draft-def='rett og slett'                          →  C [intensifiers-degree]
+  'å lyde'                                 draft-def='høres'                                  →  C [archaic]
+  'uunngåelig'                             draft-def='som man ikke kan unngå; uavvendelig'    →  B2 [advanced-adjectives]
+  'vanvidd (et)'                           draft-def='galskap; uforstand'                     →  C [complex-emotions]
+  'formidabel'                             draft-def='stor; flott'                            →  B2 [advanced-adjectives]
+  'å mane fram'                            draft-def='påkalle; kalle fram'                    →  C-uttrykk [literary]
+  'å adlyde'                               draft-def='høre på og gjøre det noen sier man skal gjøre' →  C [interpersonal-conflict]
+  'å klamre seg til'                       draft-def='gripe hardt fast i'                     →  C [embodied-emotion]
+  'om kapp'                                draft-def='i kappestrid; i konkurranse med'        →  C-uttrykk [manner-of-motion]
+  'steppe (en)'                            draft-def='slette; prærie; flatt og stort område'  →  C [nature-landscape]
+  'å overgå'                               draft-def='her: være verre enn'                    →  B2 [advanced-verbs]
+  'rå'                                     draft-def='her: brutal'                            →  A2 [cooking]
+  'iherdig'                                draft-def='energisk'                               →  C [character-temperament]
+  'å utspille seg'                         draft-def='skje; foregå'                           →  C [abstract-concepts]
+  'nødtvungen'                             draft-def='drevet/presset av nødvendighet'         →  B2 [advanced-adjectives]
+  'oppfarende'                             draft-def='som lett blir sint'                     →  B2 [emotions]
+  'sågar'                                  draft-def='til og med'                             →  C [intensifiers-degree]
+  'å adlyde'                               draft-def='høre på; gjøre det andre sier'          →  C [interpersonal-conflict]
+  'å luske'                                draft-def='gå stille; snike'                       →  C [manner-of-motion]
+  'mot alle odds'                          draft-def='å klare noe til tross for dårlige sjanser' →  C-uttrykk [intensifiers-degree]
+  'stråmatte (en/ei)'                      draft-def='teppe laget av strå (tørt gress / halm)' →  C [everyday-objects]
+  'kjapp'                                  draft-def='rask'                                   →  C [intensifiers-degree]
+  'iherdig'                                draft-def='energisk; sterk'                        →  C [character-temperament]
+  'å skåne'                                draft-def='beskytte'                               →  B2 [medicine]
+  'å stryke med'                           draft-def='dø'                                     →  C-uttrykk [existential-abstract]
+  'å surre'                                draft-def='her: beskrivelse av lav, summende lyd'  →  B2 [psychology]
+  'rakt ut'                                draft-def='rett ut'                                →  C-uttrykk [abstract-concepts]
+  'overdådig'                              draft-def='overdrevet; når det er for mye av noe (som er godt eller vakkert), kan det virke overdådig' →  C [character-temperament]
+  'bugnende'                               draft-def='når det er mye av noe'                  →  C [nature-landscape]
+  'innbydende'                             draft-def='som frister'                            →  C [physical-appearance]
+  'å dunke'                                draft-def='banke'                                  →  B2 [advanced-verbs]
+  'stilltiende'                            draft-def='taus'                                   →  C [formal-writing]
+  'å koble av'                             draft-def='slappe av'                              →  B2 [advanced-verbs]
+  'å holde av noen'                        draft-def='være glad i noen'                       →  C-uttrykk [complex-emotions]
+  'verdig'                                 draft-def='respektabel'                            →  C [abstract-concepts]
+  'arm'                                    draft-def='stakkars'                               →  C [archaic]
+  'å utspille seg'                         draft-def='skje; hende'                            →  C [abstract-concepts]
+  'mangfoldig'                             draft-def='svært mange; variert'                   →  B1 [city-life]
+  'vag'                                    draft-def='uklar'                                  →  C [linguistics]
+  'malplassert'                            draft-def='plassert feil; som ikke passer'         →  C [abstract-concepts]
+  'vant'                                   draft-def='vanlig; sedvanlig; erfaren'             →  B1 [personal-growth]
+  'å skvette til'                          draft-def='bevege seg plutselig (fordi man blir litt redd)' →  C-uttrykk [embodied-emotion]
+  'å hive etter pusten'                    draft-def='være andpusten; prøve å få tilbake pusten' →  C-uttrykk [embodied-emotion]
+  'ubarmhjertig'                           draft-def='nådeløs; som ikke tar hensyn'           →  C [character-temperament]
+  'å dunke'                                draft-def='banke'                                  →  B2 [advanced-verbs]
+  'forheng (et)'                           draft-def='gardin'                                 →  C [everyday-objects]
+  'håndsrekning (en/ei)'                   draft-def='hjelp'                                  →  C [interpersonal-conflict]
+  'knøttliten'                             draft-def='veldig liten'                           →  C [intensifiers-degree]
+  'skeptisk'                               draft-def='kritisk; mistroisk'                     →  B1 [expressing-opinions]
+  'flyktig'                                draft-def='kortvarig'                              →  B2 [advanced-adjectives]
+  'å by imot'                              draft-def='vekke ubehag'                           →  C-uttrykk [complex-emotions]
+  'selvskreven'                            draft-def='naturlig; selvfølgelig'                 →  C [rhetoric]
+  'rev (en)'                               draft-def='her: lur person'                        →  A1 [animals]
+  'helt uten videre'                       draft-def='helt enkelt; uten styr og stress'       →  C-uttrykk [abstract-concepts]
+  'i det store og det hele'                draft-def='generelt sett'                          →  B2-uttrykk [uttrykk]
+  'berøvelse (en)'                         draft-def='det å stjele'                           →  B2 [law]
+  'prekær'                                 draft-def='viktig'                                 →  C [abstract-concepts]
+  'å kverne'                               draft-def='her: gå rundt og rundt'                 →  B2 [psychology]
+  'på gløtt'                               draft-def='litt åpen'                              →  C-uttrykk [everyday-objects]
+  'å utløse'                               draft-def='være årsak til'                         →  B2 [medicine]
+  'byrde (en)'                             draft-def='noe som er tungt å bære; ansvar og forpliktelser' →  B2 [abstract-nouns]
+  'drastisk'                               draft-def='ekstrem'                                →  B2 [advanced-adjectives]
+  'opphisselse (en)'                       draft-def='følelse av adrenalin i kroppen'         →  C [embodied-emotion]
+  'rimelig'                                draft-def='her: ganske'                            →  B1 [expressing-opinions]
+  'å yte'                                  draft-def='prestere; bidra med'                    →  B2 [advanced-verbs]
+  'å sige ned'                             draft-def='bevege seg langsomt nedover'            →  C-uttrykk [manner-of-motion]
+  'rå'                                     draft-def='her: fuktig (og kald)'                  →  A2 [cooking]
+  'tømmer (et)'                            draft-def='trestammer som er hogget ned'           →  B1 [science-nature]
+  'å kave'                                 draft-def='gjøre ubehjelpelige bevegelser'         →  C [embodied-emotion]
+  'rasende'                                draft-def='sint'                                   →  B1 [expressing-opinions]
+  'omtåket'                                draft-def='forvirret'                              →  C [embodied-emotion]
+  'med strev og møye'                      draft-def='med vanskeligheter og anstrengelse'     →  C-uttrykk [abstract-concepts]
+  'dannelse (en)'                          draft-def='når man oppfører seg i henhold til normer, skikk og bruk, har man dannelse' →  B2 [politics]
+  'selskapssyk'                            draft-def='ha behov for å være sammen med folk'    →  B1 [mental-wellbeing]
+  'å kue'                                  draft-def='tvinge til lydighet'                    →  B2 [politics]
+  'å gjalle'                               draft-def='runge; en høy lyd som gir gjenklang'    →  C [sensory-sound]
+  'jammer (en)'                            draft-def='det å utsi klagerop'                    →  C [embodied-emotion]
+  'lamslått'                               draft-def='rystet; sterkt påvirket'                →  C [embodied-emotion]
+  'å smette'                               draft-def='fare; bevege seg raskt'                 →  C [everyday-objects]
+  'å valse'                                draft-def='her: kjøre tungt'                       →  C [manner-of-motion]
+  'flik (en)'                              draft-def='liten del'                              →  C [everyday-objects]
+  'nett'                                   draft-def='pen'                                    →  C [physical-appearance]
+  'å smette'                               draft-def='smyge seg raskt av sted'                →  C [everyday-objects]
+  'å skåne'                                draft-def='spare for noe ubehagelig'               →  B2 [medicine]
+  'å sprike'                               draft-def='være uten sammenheng (for alt går i ulike retninger)' →  C [abstract-concepts]
+  'fortapt'                                draft-def='som det ikke er håp for'                →  C [complex-emotions]
+  'skrot (et)'                             draft-def='skrap; ubrukelige ting'                 →  C [everyday-objects]
+  'fortumlet'                              draft-def='forvirret'                              →  C [embodied-emotion]
+  'å stryke med'                           draft-def='dø'                                     →  C-uttrykk [existential-abstract]
+  'spetakkel (et)'                         draft-def='leven; bråk'                            →  C [sensory-sound]
+  'hes'                                    draft-def='med rusten stemme'                      →  C [physical-appearance]
+  'utilslørt'                              draft-def='åpenlyst; uten å skjule det'            →  C [nature-landscape]
+  'overveldende'                           draft-def='som griper sterkt; som gjør sterkt inntrykk' →  C [embodied-emotion]
+  'å pryde'                                draft-def='pynte; forskjønne'                      →  C [literary]
+  'troverdig'                              draft-def='pålitelig; verdig til å få andres tillit' →  B1 [media]
+  'stri'                                   draft-def='her: sterk'                             →  C [physical-appearance]
+  'stø kurs (en)'                          draft-def='uendret retning'                        →  C-uttrykk [abstract-concepts]
+
+=== DRAFT vs PRODUCTION — NORMALIZED MATCHES (55) ===
+
+  'på slep (et)'                           →  'på slep' [B2-uttrykk/uttrykk]
+  'å bli kvitt'                            →  'bli kvitt' [B2-uttrykk/uttrykk]
+  'ha alt på stell (et)'                   →  'å ha alt på stell' [C-uttrykk/abstract-concepts]
+  'å slå av en prat'                       →  'slå av en prat' [B2-uttrykk/uttrykk]
+  'fordypning (en/ei)'                     →  'fordypning (en)' [B2/education]
+  'være ille ute'                          →  'å være ille ute' [C-uttrykk/abstract-concepts]
+  'komme for en dag'                       →  'å komme for en dag' [C-uttrykk/abstract-concepts]
+  'sky'                                    →  'sky (en)' [A2/weather]  |  'å sky' [C/character-temperament]
+  'beretning (en/ei)'                      →  'beretning (en)' [B2/history]
+  'å late som'                             →  'late som' [B1-uttrykk/uttrykk]
+  'skam (en/ei)'                           →  'skam (en)' [B1/mental-wellbeing]
+  'å stemme overens med'                   →  'stemme overens med' [B2-uttrykk/uttrykk]
+  'å skue'                                 →  'skue (et)' [C/nature-landscape]
+  'kappe (en/ei)'                          →  'kappe (en)' [B2/culture]
+  'slette (en/ei)'                         →  'slette (en)' [B2/geography]
+  'ta beina på nakken'                     →  'å ta beina på nakken' [C-uttrykk/manner-of-motion]
+  'å utsette noen for noe'                 →  'utsette noen for noe' [B2-uttrykk/uttrykk]
+  'forestilling (en/ei)'                   →  'forestilling (en)' [B1/culture]
+  'singel (en)'                            →  'singel' [B1/relationships]
+  'gi noen inn'                            →  'å gi noen inn' [C-uttrykk/interpersonal-conflict]
+  'få rede på'                             →  'å få rede på' [C-uttrykk/abstract-concepts]
+  'ta affære (en)'                         →  'å ta affære' [C-uttrykk/abstract-concepts]
+  'stamme (en)'                            →  'å stamme' [B2/language]
+  'å ikke eie nåla i veggen'               →  'ikke eie nåla i veggen' [C-uttrykk/finance-economics]
+  'forsoning (en/ei)'                      →  'forsoning (en)' [C/complex-emotions]
+  'å nå'                                   →  'nå' [A2/time]
+  'gå opp i røyk'                          →  'å gå opp i røyk' [C-uttrykk/abstract-concepts]
+  'på slep (et)'                           →  'på slep' [B2-uttrykk/uttrykk]
+  'samhørighet (en/ei)'                    →  'samhørighet (en)' [B2/abstract-nouns]
+  'streng (en)'                            →  'streng' [A2/descriptive-adjectives]
+  'bar'                                    →  'bar (en)' [A2/social-life]
+  'ha en finger med i spillet'             →  'å ha en finger med i spillet' [C-uttrykk/interpersonal-conflict]
+  'likegyldighet (en/ei)'                  →  'likegyldighet (en)' [B2/emotions]
+  'å samtykke'                             →  'samtykke (et)' [B2/law]
+  'avsky (en)'                             →  'å avsky' [C/complex-emotions]
+  'verdighet (en/ei)'                      →  'verdighet (en)' [B2/abstract-nouns]
+  'bli var'                                →  'å bli var' [C-uttrykk/psychology-advanced]
+  'Forfølgelse'                            →  'forfølgelse (en)' [B2/politics]
+  'gjøre seg gjeldende'                    →  'å gjøre seg gjeldende' [C-uttrykk/character-temperament]
+  'Metode'                                 →  'metode (en)' [B2/science]
+  'Vennskap'                               →  'vennskap (et)' [A2/social-life]
+  'Reaksjon'                               →  'reaksjon (en)' [B1/science-nature]
+  'bytte (et)'                             →  'å bytte' [A2/shopping]
+  'forsoning (en/ei)'                      →  'forsoning (en)' [C/complex-emotions]
+  'å stue seg sammen'                      →  'stue seg sammen' [B2-uttrykk/uttrykk]
+  'Plan'                                   →  'plan (en)' [B1/personal-growth]
+  'bytte (et)'                             →  'å bytte' [A2/shopping]
+  'kjensgjerning (en/ei)'                  →  'kjensgjerning (en)' [B2/argumentation]
+  'å finne seg til rette'                  →  'finne seg til rette' [B2-uttrykk/uttrykk]
+  'Risiko'                                 →  'risiko (en)' [B1/reasoning]
+  'streng (en)'                            →  'streng' [A2/descriptive-adjectives]
+  'gå i seg selv'                          →  'å gå i seg selv' [C-uttrykk/psychology-advanced]
+  'Ro'                                     →  'ro (en)' [B1/mental-wellbeing]
+  'Styrke'                                 →  'styrke (en)' [B2/abstract-nouns]  |  'å styrke' [B2/advanced-verbs]
+  'myr (en/ei)'                            →  'myr (en)' [B2/geography]
+
+=== WITHIN-DRAFT DUPLICATES (168) ===
+
+  'adlyde'                       →  [6] 'å adlyde'  |  [1400] 'å adlyde'  |  [1477] 'å adlyde'
+  'alskens'                      →  [19] 'alskens'  |  [276] 'alskens'  |  [1508] 'alskens'  |  [1766] 'alskens'  |  [1967] 'alskens'
+  'avgrunn'                      →  [1548] 'Avgrunn'  |  [1560] 'avgrunn (en)'  |  [1579] 'avgrunn (en)'
+  'avkrok'                       →  [78] 'avkrok (en)'  |  [1404] 'avkrok (en)'  |  [1846] 'avkrok (en)'
+  'bakse'                        →  [352] 'å bakse'  |  [1767] 'å bakse'
+  'begi seg ut på'               →  [1813] 'å begi seg ut på'  |  [1946] 'å begi seg ut på'
+  'betvile'                      →  [724] 'å betvile'  |  [1107] 'å betvile'
+  'bivåne'                       →  [1426] 'å bivåne'  |  [2039] 'å bivåne'
+  'bli unnfanget'                →  [817] 'bli unnfanget'  |  [1802] 'bli unnfanget'
+  'brokete'                      →  [1090] 'brokete'  |  [1399] 'brokete'
+  'bruse'                        →  [349] 'å bruse'  |  [700] 'å bruse'  |  [1031] 'å bruse'
+  'bugnende'                     →  [754] 'bugnende'  |  [1608] 'bugnende'
+  'bytte'                        →  [1746] 'bytte (et)'  |  [1808] 'bytte (et)'
+  'det svimler for henne'        →  [390] 'det svimler for henne'  |  [1714] 'å det svimler for henne'
+  'dirre'                        →  [138] 'å dirre'  |  [526] 'å dirre'
+  'dunke'                        →  [985] 'å dunke'  |  [1629] 'å dunke'  |  [1731] 'å dunke'
+  'dus'                          →  [553] 'dus'  |  [910] 'dus'  |  [1689] 'dus'
+  'dvele'                        →  [1638] 'å dvele'  |  [1683] 'å dvele'
+  'døsig'                        →  [383] 'døsig'  |  [2032] 'døsig'
+  'ense'                         →  [273] 'å ense'  |  [522] 'å ense'  |  [903] 'å ense'  |  [1160] 'å ense'  |  [2038] 'å ense'
+  'ettertrykkelig'               →  [39] 'ettertrykkelig'  |  [1468] 'ettertrykkelig'
+  'fager'                        →  [846] 'fager'  |  [2040] 'fager'
+  'flakkende'                    →  [1194] 'flakkende'  |  [1505] 'flakkende'
+  'flette'                       →  [589] 'å flette'  |  [1197] 'flette (en/ei)'
+  'flik'                         →  [960] 'flik (en)'  |  [2027] 'flik (en)'
+  'flimre over netthinnen'       →  [1135] 'å flimre over netthinnen'  |  [1414] 'å flimre over netthinnen'  |  [1652] 'å flimre over netthinnen'
+  'flire'                        →  [378] 'å flire'  |  [480] 'å flire'
+  'flommende'                    →  [576] 'flommende'  |  [1318] 'flommende'
+  'foreteelse'                   →  [157] 'foreteelse (en)'  |  [226] 'foreteelse (en)'  |  [1713] 'foreteelse (en)'
+  'forheng'                      →  [1296] 'forheng (et)'  |  [1742] 'forheng (et)'
+  'formanende'                   →  [1627] 'formanende'  |  [2072] 'formanende'
+  'formelig'                     →  [409] 'formelig'  |  [1150] 'formelig'  |  [1326] 'formelig'
+  'fornedrelse'                  →  [1492] 'fornedrelse (en)'  |  [1863] 'fornedrelse (en)'  |  [1952] 'fornedrelse (en)'
+  'fornemme'                     →  [282] 'å fornemme'  |  [573] 'å fornemme'  |  [631] 'å fornemme'  |  [1542] 'å fornemme'
+  'forsoning'                    →  [1077] 'forsoning (en/ei)'  |  [1773] 'forsoning (en/ei)'
+  'fortrolig'                    →  [558] 'fortrolig'  |  [1702] 'fortrolig'
+  'forutse'                      →  [166] 'å forutse'  |  [342] 'å forutse'  |  [1078] 'å forutse'
+  'forutsigbar'                  →  [266] 'forutsigbar'  |  [406] 'forutsigbar'
+  'frese'                        →  [34] 'å frese'  |  [613] 'å frese'
+  'fri seg fra'                  →  [602] 'å fri seg fra'  |  [683] 'å fri seg fra'
+  'frodig'                       →  [21] 'frodig'  |  [755] 'frodig'
+  'fyke'                         →  [1073] 'å fyke'  |  [1199] 'å fyke'
+  'få nyss om'                   →  [780] 'få nyss om'  |  [1344] 'å få nyss om'
+  'gedigen'                      →  [400] 'gedigen'  |  [436] 'gedigen'
+  'gjalle'                       →  [322] 'å gjalle'  |  [472] 'å gjalle'  |  [1963] 'å gjalle'
+  'gjennomtrengende'             →  [701] 'gjennomtrengende'  |  [899] 'gjennomtrengende'
+  'gjære'                        →  [1536] 'å gjære'  |  [1861] 'å gjære'
+  'gjøremål'                     →  [868] 'gjøremål (et)'  |  [1774] 'gjøremål (et)'
+  'gjørme'                       →  [533] 'gjørme (en/ei)'  |  [1245] 'gjørme (en/ei)'
+  'gnisse'                       →  [940] 'å gnisse'  |  [1258] 'å gnisse'
+  'gryende'                      →  [588] 'gryende'  |  [781] 'gryende'
+  'grånende'                     →  [676] 'grånende'  |  [1553] 'grånende'
+  'gynge'                        →  [468] 'å gynge'  |  [2047] 'å gynge'
+  'gåte'                         →  [123] 'gåte (en/ei)'  |  [268] 'gåte (en/ei)'
+  'heftig'                       →  [221] 'heftig'  |  [1331] 'heftig'
+  'helt og holdent'              →  [460] 'helt og holdent'  |  [1433] 'helt og holdent'
+  'hengi seg til'                →  [832] 'å hengi seg til'  |  [1132] 'å hengi seg til'
+  'hes'                          →  [214] 'hes'  |  [2083] 'hes'
+  'holde ut'                     →  [391] 'å holde ut'  |  [835] 'å holde ut'
+  'hånlig'                       →  [379] 'hånlig'  |  [481] 'hånlig'  |  [775] 'hånlig'
+  'i ett sett'                   →  [188] 'i ett sett'  |  [484] 'i ett sett'
+  'i påvente av'                 →  [286] 'i påvente av'  |  [1549] 'i påvente av'
+  'i tide og utide'              →  [638] 'i tide og utide'  |  [1693] 'i tide og utide'
+  'iherdig'                      →  [761] 'iherdig'  |  [1418] 'iherdig'  |  [1538] 'iherdig'
+  'ikke en kjeft'                →  [32] 'ikke en kjeft'  |  [234] 'ikke en kjeft'
+  'imidlertid'                   →  [913] 'imidlertid'  |  [1284] 'imidlertid'
+  'innbydende'                   →  [785] 'innbydende'  |  [1610] 'innbydende'
+  'innpåsliten'                  →  [152] 'innpåsliten'  |  [435] 'innpåsliten'
+  'inntreden'                    →  [1048] 'inntreden (en)'  |  [1872] 'inntreden (en)'
+  'inntullet'                    →  [339] 'inntullet'  |  [1696] 'inntullet'
+  'jage'                         →  [969] 'å jage'  |  [1014] 'å jage'
+  'kammer'                       →  [1149] 'kammer (et)'  |  [1547] 'kammer (et)'
+  'klam'                         →  [358] 'klam'  |  [572] 'klam'
+  'klemme til'                   →  [892] 'å klemme til'  |  [1236] 'å klemme til'
+  'klirre'                       →  [1068] 'å klirre'  |  [1360] 'å klirre'
+  'klynk'                        →  [1545] 'klynk (et)'  |  [1583] 'klynk (et)'
+  'krampetrekning'               →  [946] 'krampetrekning (en/ei)'  |  [1128] 'krampetrekning (en/ei)'
+  'krok'                         →  [147] 'krok (en)'  |  [1248] 'krok (en)'
+  'kysten er klar'               →  [1703] 'kysten er klar'  |  [1807] 'kysten er klar'
+  'late til'                     →  [142] 'å late til'  |  [557] 'å late til'  |  [911] 'å late til'
+  'lavmælt'                      →  [162] 'lavmælt'  |  [474] 'lavmælt'  |  [1158] 'lavmælt'
+  'ljome'                        →  [473] 'å ljome'  |  [1964] 'å ljome'
+  'lokk'                         →  [1551] 'lokk (en)'  |  [1927] 'lokk (en)'
+  'lugg'                         →  [482] 'lugg (en)'  |  [559] 'lugg (en)'  |  [1252] 'lugg (en)'
+  'lunefull'                     →  [1280] 'lunefull'  |  [1462] 'lunefull'
+  'luske'                        →  [644] 'å luske'  |  [1478] 'å luske'
+  'lystig'                       →  [179] 'lystig'  |  [912] 'lystig'  |  [1973] 'lystig'
+  'løvverk'                      →  [403] 'løvverk (et)'  |  [459] 'løvverk (et)'
+  'matt'                         →  [550] 'matt'  |  [926] 'matt'  |  [1460] 'matt'
+  'misbilligende'                →  [218] 'misbilligende'  |  [318] 'misbilligende'
+  'myse'                         →  [975] 'å myse'  |  [1271] 'å myse'
+  'måpe'                         →  [630] 'å måpe'  |  [1146] 'å måpe'
+  'måpende'                      →  [316] 'måpende'  |  [1347] 'måpende'
+  'neve'                         →  [353] 'neve (en)'  |  [385] 'neve (en)'  |  [1474] 'neve (en)'
+  'nevneverdig'                  →  [1782] 'nevneverdig'  |  [1849] 'nevneverdig'
+  'nyskurt'                      →  [1760] 'nyskurt'  |  [2086] 'nyskurt'
+  'nøle'                         →  [664] 'å nøle'  |  [1741] 'å nøle'
+  'omtåket'                      →  [521] 'omtåket'  |  [1336] 'omtåket'  |  [1928] 'omtåket'
+  'opphav'                       →  [595] 'opphav (et)'  |  [1367] 'opphav (et)'
+  'opprømt'                      →  [394] 'opprømt'  |  [950] 'opprømt'  |  [1201] 'opprømt'
+  'oppspilt'                     →  [1025] 'oppspilt'  |  [1163] 'oppspilt'
+  'pryde'                        →  [552] 'å pryde'  |  [2103] 'å pryde'
+  'på randen'                    →  [1576] 'På randen'  |  [1578] 'på randen'
+  'på slep'                      →  [10] 'på slep (et)'  |  [1110] 'på slep (et)'
+  'påfallende'                   →  [997] 'påfallende'  |  [1119] 'påfallende'  |  [1814] 'påfallende'
+  'påtrengende'                  →  [1079] 'påtrengende'  |  [1577] 'påtrengende'
+  'rave'                         →  [1532] 'å rave'  |  [1836] 'å rave'
+  'romme'                        →  [945] 'å romme'  |  [1302] 'å romme'  |  [1625] 'å romme'
+  'rusten'                       →  [741] 'rusten'  |  [1501] 'rusten'
+  'rå'                           →  [1413] 'rå'  |  [1903] 'rå'
+  'saumfare'                     →  [1573] 'å saumfare'  |  [1938] 'å saumfare'
+  'seig'                         →  [387] 'seig'  |  [1300] 'seig'  |  [1679] 'seig'
+  'sile'                         →  [953] 'å sile'  |  [1736] 'å sile'
+  'simpelthen'                   →  [792] 'simpelthen'  |  [1352] 'simpelthen'
+  'sjeleglad'                    →  [125] 'sjeleglad'  |  [270] 'sjeleglad'
+  'skarp tunge'                  →  [333] 'skarp tunge (en/ei)'  |  [1372] 'skarp tunge (en/ei)'
+  'skjellsord'                   →  [33] 'skjellsord (et)'  |  [1980] 'skjellsord (et)'
+  'skogholt'                     →  [1137] 'skogholt (et)'  |  [1268] 'skogholt (et)'
+  'skvette til'                  →  [947] 'å skvette til'  |  [1726] 'å skvette til'
+  'skyve'                        →  [681] 'å skyve'  |  [887] 'å skyve'
+  'skåne'                        →  [1555] 'å skåne'  |  [2041] 'å skåne'
+  'slamre'                       →  [1081] 'å slamre'  |  [1343] 'å slamre'
+  'slant'                        →  [24] 'slant (en)'  |  [933] 'slant (en)'
+  'slynge'                       →  [513] 'å slynge'  |  [1167] 'å slynge'
+  'smette'                       →  [2007] 'å smette'  |  [2034] 'å smette'
+  'smidig'                       →  [440] 'smidig'  |  [1067] 'smidig'  |  [2035] 'smidig'
+  'smuldre opp'                  →  [610] 'å smuldre opp'  |  [742] 'å smuldre opp'
+  'smyge seg'                    →  [642] 'å smyge seg'  |  [2036] 'å smyge seg'
+  'spetakkel'                    →  [4] 'spetakkel (et)'  |  [2082] 'spetakkel (et)'
+  'stamme'                       →  [658] 'å stamme'  |  [871] 'stamme (en)'
+  'stillferdig'                  →  [247] 'stillferdig'  |  [632] 'stillferdig'
+  'streife'                      →  [1543] 'å streife'  |  [1550] 'å streife'
+  'streng'                       →  [1234] 'streng (en)'  |  [1991] 'streng (en)'
+  'strengt tatt'                 →  [47] 'strengt tatt'  |  [238] 'strengt tatt'
+  'stri'                         →  [483] 'stri'  |  [646] 'stri'  |  [2115] 'stri'
+  'stryk'                        →  [578] 'stryk (et)'  |  [1775] 'stryk (et)'
+  'stryke'                       →  [670] 'å stryke'  |  [1230] 'å stryke'  |  [1315] 'å stryke'
+  'stryke med'                   →  [1556] 'å stryke med'  |  [2080] 'å stryke med'
+  'stryke på dør'                →  [63] 'å stryke på dør'  |  [1437] 'å stryke på dør'
+  'strå'                         →  [916] 'strå (et)'  |  [1242] 'strå (et)'
+  'stubbe'                       →  [1224] 'stubbe (en)'  |  [2023] 'stubbe (en)'
+  'surre'                        →  [208] 'å surre'  |  [955] 'å surre'  |  [1575] 'å surre'
+  'sviende'                      →  [458] 'sviende'  |  [1133] 'sviende'
+  'svunnen'                      →  [505] 'svunnen'  |  [1015] 'svunnen'
+  'sågar'                        →  [722] 'sågar'  |  [1458] 'sågar'
+  'tappet for krefter'           →  [1588] 'tappet for krefter'  |  [1740] 'tappet for krefter'
+  'tilkjennegi'                  →  [165] 'å tilkjennegi'  |  [660] 'å tilkjennegi'
+  'tiltalende'                   →  [120] 'tiltalende'  |  [624] 'tiltalende'
+  'tråkke'                       →  [506] 'å tråkke'  |  [1504] 'å tråkke'
+  'uføre'                        →  [531] 'uføre (et)'  |  [2104] 'uføre (et)'
+  'ugjenkallelig'                →  [1138] 'ugjenkallelig'  |  [1651] 'ugjenkallelig'  |  [1686] 'ugjenkallelig'
+  'uhemmet'                      →  [187] 'uhemmet'  |  [1131] 'uhemmet'
+  'ullen'                        →  [1093] 'ullen'  |  [2107] 'ullen'
+  'usigelig'                     →  [829] 'usigelig'  |  [1085] 'usigelig'
+  'ussel'                        →  [1448] 'ussel'  |  [1584] 'ussel'
+  'utfolde seg'                  →  [240] 'å utfolde seg'  |  [640] 'å utfolde seg'
+  'utilslørt'                    →  [210] 'utilslørt'  |  [2091] 'utilslørt'
+  'utspille seg'                 →  [1044] 'å utspille seg'  |  [1173] 'å utspille seg'  |  [1446] 'å utspille seg'  |  [1671] 'å utspille seg'
+  'vantro'                       →  [1675] 'vantro (en/ei)'  |  [1792] 'vantro (en/ei)'
+  'vanvittig'                    →  [1] 'vanvittig'  |  [1401] 'vanvittig'  |  [1607] 'vanvittig'
+  've (n) og vel (n)'            →  [275] 've (n) og vel (n)'  |  [758] 've (n) og vel (n)'
+  'ved et trylleslag'            →  [1050] 'ved et trylleslag'  |  [1602] 'ved et trylleslag'
+  'vekselvis'                    →  [262] 'vekselvis'  |  [1695] 'vekselvis'
+  'vilter'                       →  [434] 'vilter'  |  [826] 'vilter'
+  'våge'                         →  [894] 'å våge'  |  [1177] 'å våge'
+  'være blottet for'             →  [708] 'være blottet for'  |  [1313] 'være blottet for'
+  'være til bry'                 →  [79] 'være til bry'  |  [1467] 'være til bry'
+  'yndig'                        →  [801] 'yndig'  |  [847] 'yndig'
