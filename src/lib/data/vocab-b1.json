@@ -1,23 +1,5 @@
 [
   {
-    "id": "v-b1-accommodation-001",
-    "norsk": "blokk (en)",
-    "lemma": "blokk",
-    "english": "block / apartment building",
-    "ukrainian": "багатоквартирний будинок / блок",
-    "spanish": "bloque / edificio de apartamentos",
-    "german": "der Wohnblock / das Hochhaus",
-    "example": "De bor i en stor blokk med tjue leiligheter.",
-    "example_english": "They live in a large apartment building with twenty flats.",
-    "example_ukrainian": "Вони живуть у великому будинку з двадцятьма квартирами.",
-    "example_spanish": "Viven en un gran edificio de apartamentos con veinte pisos.",
-    "example_german": "Sie wohnen in einem großen Wohnblock mit zwanzig Wohnungen.",
-    "definition": "En stor bygning med mange leiligheter, eller et stykke av et materiale som er firkantet og solid.",
-    "level": "B1",
-    "category": "accommodation",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-accommodation-002",
     "norsk": "bolig (en)",
     "lemma": "bolig",
@@ -967,24 +949,6 @@
     "example_spanish": "El ayuntamiento es un edificio histórico.",
     "example_german": "Das Rathaus ist ein historisches Gebäude.",
     "definition": "En konstruksjon av stein, betong eller tre som mennesker bruker til ulike formål.",
-    "level": "B1",
-    "category": "city-life",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-city-life-008",
-    "norsk": "kafé (en)",
-    "lemma": "kafé",
-    "english": "a café",
-    "ukrainian": "кафе",
-    "spanish": "un café",
-    "german": "Café",
-    "example": "Vi møtes på kafeen.",
-    "example_english": "We meet at the café.",
-    "example_ukrainian": "Ми зустрічаємося в кафе.",
-    "example_spanish": "Quedamos en el café.",
-    "example_german": "Wir treffen uns im Café.",
-    "definition": "Et sted der man kan drikke kaffe, spise lett mat og slappe av.",
     "level": "B1",
     "category": "city-life",
     "part": "noun"
@@ -7686,24 +7650,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-fitness-011",
-    "norsk": "form (en)",
-    "lemma": "form",
-    "english": "shape, form, condition",
-    "ukrainian": "форма (фізична)",
-    "spanish": "forma física / condición",
-    "german": "Form (die) / Kondition (die)",
-    "example": "Han er i veldig god form etter mange måneder med trening.",
-    "example_english": "He is in very good shape after many months of training.",
-    "example_ukrainian": "Він у дуже гарній формі після багатьох місяців тренувань.",
-    "example_spanish": "Él está en muy buena forma después de muchos meses de entrenamiento.",
-    "example_german": "Er ist nach vielen Monaten Training in sehr guter Form.",
-    "definition": "Måten noe ser ut på, eller den fysiske eller mentale tilstanden til en person.",
-    "level": "B1",
-    "category": "fitness",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-fitness-012",
     "norsk": "friidrett (en)",
     "lemma": "friidrett",
@@ -10366,24 +10312,6 @@
     "level": "B1",
     "category": "media",
     "part": "adjective"
-  },
-  {
-    "id": "v-b1-media-004",
-    "norsk": "avis (en)",
-    "lemma": "avis",
-    "english": "a newspaper",
-    "ukrainian": "газета",
-    "spanish": "un periódico",
-    "german": "die Zeitung",
-    "example": "Han leser avisen om morgenen.",
-    "example_english": "He reads the newspaper in the morning.",
-    "example_ukrainian": "Він читає газету вранці.",
-    "example_spanish": "Él lee el periódico por la mañana.",
-    "example_german": "Er liest morgens die Zeitung.",
-    "definition": "Et trykt eller digitalt blad med nyheter og artikler.",
-    "level": "B1",
-    "category": "media",
-    "part": "noun"
   },
   {
     "id": "v-b1-media-005",
@@ -16038,24 +15966,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-society-011",
-    "norsk": "bot (en)",
-    "lemma": "bot",
-    "english": "fine / penalty",
-    "ukrainian": "штраф",
-    "spanish": "multa",
-    "german": "die Geldstrafe",
-    "example": "Han fikk en bot fordi han parkerte på feil sted.",
-    "example_english": "He received a fine because he parked in the wrong place.",
-    "example_ukrainian": "Він отримав штраф, бо припаркувався не в тому місці.",
-    "example_spanish": "Le pusieron una multa porque aparcó en el lugar equivocado.",
-    "example_german": "Er bekam eine Geldstrafe, weil er falsch geparkt hatte.",
-    "definition": "Et pengebeløp man må betale til myndighetene som straff for å ha brutt en regel.",
-    "level": "B1",
-    "category": "society",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-society-012",
     "norsk": "bygd (en)",
     "lemma": "bygd",
@@ -20520,24 +20430,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-workplace-005",
-    "norsk": "avdeling (en)",
-    "lemma": "avdeling",
-    "english": "department / ward / division",
-    "ukrainian": "відділ / відділення",
-    "spanish": "departamento / sala / división",
-    "german": "Abteilung / Station",
-    "example": "Hun jobber på barneavdelingen på sykehuset.",
-    "example_english": "She works in the children's ward at the hospital.",
-    "example_ukrainian": "Вона працює у дитячому відділенні лікарні.",
-    "example_spanish": "Ella trabaja en el departamento de pediatría del hospital.",
-    "example_german": "Sie arbeitet auf der Kinderstation im Krankenhaus.",
-    "definition": "En del av en større organisasjon, for eksempel et sykehus, en skole eller et firma, som har et spesielt ansvar eller oppgave.",
-    "level": "B1",
-    "category": "workplace",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-workplace-006",
     "norsk": "å avslutte",
     "lemma": "avslutte",
@@ -21171,23 +21063,6 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-workplace-026",
-    "norsk": "å fylle ut",
-    "lemma": "fylle ut",
-    "english": "to fill in, to fill out",
-    "ukrainian": "заповнити, заповнювати",
-    "spanish": "rellenar, completar",
-    "german": "ausfüllen",
-    "example": "Du må fylle ut skjemaet før du sender det.",
-    "example_english": "You need to fill out the form before sending it.",
-    "example_ukrainian": "Ти повинен заповнити бланк перед тим, як відправити його.",
-    "example_spanish": "Tienes que rellenar el formulario antes de enviarlo.",
-    "example_german": "Du musst das Formular ausfüllen, bevor du es abschickst.",
-    "level": "B1",
-    "category": "workplace",
-    "part": "verb"
-  },
-  {
     "id": "v-b1-personal-growth-060",
     "norsk": "å få til",
     "lemma": "få til",
@@ -21287,23 +21162,6 @@
     "example_german": "Er gab seine Stelle nach vielen Jahren ab.",
     "level": "B1",
     "category": "communication-skills",
-    "part": "verb"
-  },
-  {
-    "id": "v-b1-personal-growth-062",
-    "norsk": "å gi opp",
-    "lemma": "gi opp",
-    "english": "to give up, to surrender",
-    "ukrainian": "здатися, відмовитися",
-    "spanish": "rendirse, abandonar",
-    "german": "aufgeben",
-    "example": "Han ville ikke gi opp drømmen om å bli lege.",
-    "example_english": "He refused to give up on his dream of becoming a doctor.",
-    "example_ukrainian": "Він не хотів відмовлятися від мрії стати лікарем.",
-    "example_spanish": "No quería abandonar su sueño de ser médico.",
-    "example_german": "Er wollte seinen Traum, Arzt zu werden, nicht aufgeben.",
-    "level": "B1",
-    "category": "personal-growth",
     "part": "verb"
   },
   {

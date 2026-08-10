@@ -11376,24 +11376,6 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-economics-039",
-    "norsk": "avgift (en)",
-    "lemma": "avgift",
-    "english": "fee, tax, duty",
-    "ukrainian": "збір, мито, податок",
-    "spanish": "tasa, impuesto, tarifa",
-    "german": "die Gebühr / die Abgabe / die Steuer",
-    "example": "Staten krever inn en egen avgift på plastposer.",
-    "example_english": "The state collects a specific fee on plastic bags.",
-    "example_ukrainian": "Держава стягує окремий збір за пластикові пакети.",
-    "example_spanish": "El estado cobra una tasa específica por las bolsas de plástico.",
-    "example_german": "Der Staat erhebt eine eigene Abgabe auf Plastiktüten.",
-    "definition": "takst, skatt",
-    "level": "B2",
-    "category": "economics",
-    "part": "noun"
-  },
-  {
     "id": "v-b2-economics-040",
     "norsk": "handel (en)",
     "lemma": "handel",
@@ -14812,24 +14794,6 @@
     "level": "B2",
     "category": "environment",
     "part": "verb"
-  },
-  {
-    "id": "v-b2-environment-060",
-    "norsk": "gjenbruk (en)",
-    "lemma": "gjenbruk",
-    "english": "reuse, recycling",
-    "ukrainian": "повторне використання, переробка",
-    "spanish": "reutilización, reciclaje",
-    "german": "die Wiederverwendung / das Recycling",
-    "example": "Gjenbruk av materialer reduserer behovet for nye ressurser.",
-    "example_english": "Reuse of materials reduces the need for new resources.",
-    "example_ukrainian": "Повторне використання матеріалів зменшує потребу в нових ресурсах.",
-    "example_spanish": "La reutilización de materiales reduce la necesidad de nuevos recursos.",
-    "example_german": "Die Wiederverwendung von Materialien reduziert den Bedarf an neuen Rohstoffen.",
-    "definition": "det å bruke om igjen, resirkulasjon",
-    "level": "B2",
-    "category": "environment",
-    "part": "noun"
   },
   {
     "id": "v-b2-environment-061",
@@ -29070,24 +29034,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b2-work-career-007",
-    "norsk": "arbeidstid (en)",
-    "lemma": "arbeidstid",
-    "english": "working hours",
-    "ukrainian": "робочий час",
-    "spanish": "jornada laboral",
-    "german": "die Arbeitszeit",
-    "example": "Norsk arbeidstid er regulert av loven.",
-    "example_english": "Norwegian working hours are regulated by law.",
-    "example_ukrainian": "Робочий час у Норвегії регулюється законом.",
-    "example_spanish": "La jornada laboral en Noruega está regulada por la ley.",
-    "example_german": "Die norwegische Arbeitszeit ist gesetzlich geregelt.",
-    "definition": "Timene i løpet av dagen eller uken når man skal være på jobb.",
-    "level": "B2",
-    "category": "work-career",
-    "part": "noun"
-  },
-  {
     "id": "v-b2-work-career-008",
     "norsk": "etterlønn (en)",
     "lemma": "etterlønn",
@@ -31477,7 +31423,7 @@
   },
   {
     "id": "v-b2-law-096",
-    "norsk": "arbeidsmiljøloven",
+    "norsk": "arbeidsmiljøloven (ubøy.)",
     "lemma": "arbeidsmiljøloven",
     "english": "the Working Environment Act (Norwegian labor law)",
     "ukrainian": "закон про умови праці (Норвегія)",

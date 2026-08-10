@@ -864,24 +864,6 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-049",
-    "norsk": "å røske opp",
-    "lemma": "røske opp",
-    "english": "to yank up; to wrench open; to pull out roughly",
-    "ukrainian": "смикнути вгору; вирвати; рiзко вiдчинити",
-    "spanish": "arrancar; abrir de golpe; tirar con fuerza",
-    "german": "herausreißen; aufreißen; grob herausziehen",
-    "example": "Han roskte opp ugrastuften med et kraftig rykk.",
-    "example_english": "He yanked the weed out with one strong pull.",
-    "example_ukrainian": "Вiн вирвав бур'ян одним рiзким ривком.",
-    "example_spanish": "Arranco la mala hierba de un solo tiron fuerte.",
-    "example_german": "Er riss das Unkraut mit einem kraftigen Ruck heraus.",
-    "definition": "Betyr å dra eller trekke hardt opp, eller å åpne noe på en litt brutal måte.",
-    "level": "C",
-    "category": "manner-of-motion",
-    "part": "phrase"
-  },
-  {
     "id": "u-c-050",
     "norsk": "å tyte fram",
     "lemma": "tyte fram",
@@ -1890,24 +1872,6 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-106",
-    "norsk": "å få endene til å møtes",
-    "lemma": "få endene til å møtes",
-    "english": "to make ends meet",
-    "ukrainian": "зводити кiнцi з кiнцями",
-    "spanish": "llegar a fin de mes, cubrir los gastos",
-    "german": "uber die Runden kommen, mit dem Geld auskommen",
-    "example": "Med sa hoy husleie er det vanskelig a fa endene til a motes.",
-    "example_english": "With such high rent, it is difficult to make ends meet.",
-    "example_ukrainian": "При такiй високiй орендi важко зводити кiнцi з кiнцями.",
-    "example_spanish": "Con un alquiler tan alto, es dificil llegar a fin de mes.",
-    "example_german": "Bei einer so hohen Miete ist es schwierig, uber die Runden zu kommen.",
-    "definition": "Å klare seg økonomisk.",
-    "level": "C",
-    "category": "finance-economics",
-    "part": "phrase"
-  },
-  {
     "id": "u-c-107",
     "norsk": "å jobbe livet av seg",
     "lemma": "jobbe livet av seg",
@@ -2895,24 +2859,6 @@
     "definition": "Usikker.",
     "level": "C",
     "category": "complex-emotions",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-162",
-    "norsk": "å dra kjensel på",
-    "lemma": "dra kjensel på",
-    "english": "to recognise; to identify someone or something",
-    "ukrainian": "впізнати; розпізнати когось або щось",
-    "spanish": "reconocer; identificar a alguien o algo",
-    "german": "wiedererkennen; jemanden oder etwas erkennen",
-    "example": "Jeg dro straks kjensel pa stemmen hans, selv om det var mange ar siden vi snakket.",
-    "example_english": "I immediately recognised his voice, even though it had been many years since we last spoke.",
-    "example_ukrainian": "Я одразу впізнав його голос, хоча минуло багато років з нашої останньої розмови.",
-    "example_spanish": "Reconoci su voz de inmediato, aunque habian pasado muchos anos desde que hablamos.",
-    "example_german": "Ich erkannte seine Stimme sofort wieder, obwohl es viele Jahre her war, dass wir gesprochen hatten.",
-    "definition": "Å kjenne igjen.",
-    "level": "C",
-    "category": "psychology-advanced",
     "part": "phrase"
   },
   {
@@ -5202,24 +5148,6 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-290",
-    "norsk": "å gå i vasken",
-    "lemma": "gå i vasken",
-    "english": "to go down the drain; to fall through; to come to nothing",
-    "ukrainian": "піти нанівець; зазнати невдачі; зійти ні на що",
-    "spanish": "irse al traste; fracasar; quedar en nada",
-    "german": "den Bach runtergehen; scheitern; zunichte werden",
-    "example": "Planene om sommerferien gikk i vasken da han ble syk.",
-    "example_english": "The summer holiday plans went down the drain when he got sick.",
-    "example_ukrainian": "Плани на літні канікули пішли нанівець, коли він захворів.",
-    "example_spanish": "Los planes de vacaciones de verano se fueron al traste cuando se puso enfermo.",
-    "example_german": "Die Urlaubspläne für den Sommer gingen den Bach runter, als er krank wurde.",
-    "definition": "Å mislykkes fullstendig, at noe ikke blir noe av.",
-    "level": "C",
-    "category": "abstract-concepts",
-    "part": "phrase"
-  },
-  {
     "id": "u-c-291",
     "norsk": "å storme en by",
     "lemma": "storme en by",
@@ -5323,24 +5251,6 @@
     "example_spanish": "Los supervivientes estaban a merced de la buena voluntad de los rescatistas tras el accidente.",
     "example_german": "Die Überlebenden waren nach dem Unglück auf den guten Willen der Retter angewiesen.",
     "definition": "Å være fullstendig avhengig av noe eller noen, uten kontroll selv.",
-    "level": "C",
-    "category": "abstract-concepts",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-297",
-    "norsk": "å gå løs på",
-    "lemma": "gå løs på",
-    "english": "to go at something, to tackle something energetically",
-    "ukrainian": "братися до чогось енергійно, набрасуватися на щось",
-    "spanish": "lanzarse a algo, atacar algo con energía",
-    "german": "sich auf etwas stürzen, etwas energisch in Angriff nehmen",
-    "example": "De gikk løs på maten med god appetitt.",
-    "example_english": "They went at the food with a good appetite.",
-    "example_ukrainian": "Вони набросилися на їжу з великим апетитом.",
-    "example_spanish": "Se lanzaron a la comida con buen apetito.",
-    "example_german": "Sie stürzten sich mit gutem Appetit auf das Essen.",
-    "definition": "Å ta fatt på noe med stor energi.",
     "level": "C",
     "category": "abstract-concepts",
     "part": "phrase"
@@ -6675,24 +6585,6 @@
     "definition": "Å være nødvendig for at noe skal skje.",
     "level": "C",
     "category": "abstract-concepts",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-372",
-    "norsk": "å bøte med livet",
-    "lemma": "bøte med livet",
-    "english": "to pay with one's life",
-    "ukrainian": "поплатитися життям",
-    "spanish": "pagar con la vida",
-    "german": "mit dem Leben bezahlen",
-    "example": "Mange soldater måtte bøte med livet under den lange krigen.",
-    "example_english": "Many soldiers had to pay with their lives during the long war.",
-    "example_ukrainian": "Багато солдатів поплатилися життям під час тривалої війни.",
-    "example_spanish": "Muchos soldados tuvieron que pagar con su vida durante la larga guerra.",
-    "example_german": "Viele Soldaten mussten während des langen Krieges mit dem Leben bezahlen.",
-    "definition": "Å miste livet som en konsekvens av noe.",
-    "level": "C",
-    "category": "existential-abstract",
     "part": "phrase"
   },
   {
@@ -10818,24 +10710,6 @@
     "part": "phrase"
   },
   {
-    "norsk": "å ha is i magen",
-    "lemma": "ha is i magen",
-    "definition": "Å forbli rolig, tålmodig og fattet, selv i en presset eller stressende situasjon.",
-    "id": "u-c-602",
-    "english": "to keep one's nerve / to have nerves of steel (literally: to have ice in one's stomach)",
-    "ukrainian": "мати сталеві нерви, залишатися спокійним",
-    "spanish": "tener sangre fría",
-    "german": "einen kühlen Kopf bzw. Nerven wie Drahtseile haben",
-    "example": "Målvakten måtte ha is i magen for å redde straffesparket i finalen.",
-    "example_english": "The goalkeeper had to keep his nerve to save the penalty in the final.",
-    "example_ukrainian": "Воротар мав зберігати спокій, щоб відбити пенальті у фіналі.",
-    "example_spanish": "El portero tuvo que tener sangre fría para parar el penalti en la final.",
-    "example_german": "Der Torwart musste einen kühlen Kopf bewahren, um den Elfmeter im Finale zu halten.",
-    "level": "C",
-    "category": "character-temperament",
-    "part": "phrase"
-  },
-  {
     "norsk": "å være en hard negl",
     "lemma": "være en hard negl",
     "definition": "Å være en tøff, bestemt og ettergivenhetsløs person.",
@@ -11318,7 +11192,7 @@
     "example_german": "Der Großvater steckte seinen Enkeln immer heimlich etwas Geld zu, wenn sie zu Besuch kamen.",
     "definition": "Å gi noen litt penger, gjerne diskré og som en vennlig gest.",
     "level": "C",
-    "category": "family-relationships",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -11354,7 +11228,7 @@
     "example_german": "Der morsche Balken gab nach, und der Junge krachte durchs Dach in den Keller.",
     "definition": "Å falle plutselig og brått gjennom taket.",
     "level": "C",
-    "category": "accidents-safety",
+    "category": "manner-of-motion",
     "part": "phrase"
   },
   {
@@ -11372,7 +11246,7 @@
     "example_german": "Jeden Frühling behandelt er die Terrassendielen mit Öl, um sie vor Regen zu schützen.",
     "definition": "Å behandle eller smøre inn en overflate, for eksempel tre, med olje.",
     "level": "C",
-    "category": "household",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -11498,7 +11372,7 @@
     "example_german": "Nach dem dritten Teller spürte sie richtig, wie sie immer satter wurde.",
     "definition": "Man kjenner at man blir stadig mer mett.",
     "level": "C",
-    "category": "food-drink",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -11516,7 +11390,7 @@
     "example_german": "Du hast schon vier Waffeln gegessen - hast du keinen Boden?",
     "definition": "Blir du aldri mett? (sagt spøkefullt til noen som spiser mye).",
     "level": "C",
-    "category": "food-drink",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -11534,7 +11408,7 @@
     "example_german": "Die Enkelkinder erhellen wirklich das Dasein des alten Witwers.",
     "definition": "Å gi glede i livet.",
     "level": "C",
-    "category": "family-relationships",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -11570,7 +11444,7 @@
     "example_german": "Im Sommer verbringt er seine Zeit mit Angeln und Gartenarbeit.",
     "definition": "Å gjøre noe, ofte brukt om fritid.",
     "level": "C",
-    "category": "leisure-hobbies",
+    "category": "highly-formal",
     "part": "phrase"
   },
   {
@@ -11588,7 +11462,7 @@
     "example_german": "Omas Fleischklößchen waren wirklich ein wahrer Gaumenschmaus.",
     "definition": "God mat.",
     "level": "C",
-    "category": "food-drink",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -11606,7 +11480,7 @@
     "example_german": "Sie ist so gut in der Küche, dass sie fast aus nichts ein Essen zaubern kann.",
     "definition": "Å lage mat ut av få ingredienser.",
     "level": "C",
-    "category": "food-drink",
+    "category": "proverbs",
     "part": "phrase"
   },
   {
@@ -11624,7 +11498,7 @@
     "example_german": "Er musste sich etwas Mut antrinken, bevor er es wagte, sie zum Tanzen aufzufordern.",
     "definition": "Å drikke alkohol for å tørre å være mer åpen eller frimodig.",
     "level": "C",
-    "category": "social-life",
+    "category": "embodied-emotion",
     "part": "phrase"
   },
   {
@@ -11894,7 +11768,7 @@
     "example_german": "Die Schwestern haben seit der Beerdigung etwas Unausgesprochenes zwischen sich.",
     "definition": "Å ha noe man burde ha snakket om, men som er vanskelig å ta opp.",
     "level": "C",
-    "category": "family-relationships",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -11930,7 +11804,7 @@
     "example_german": "Sie ließen das Buch in der Klasse reihum gehen.",
     "definition": "Å bytte på å gjøre/bruke noe.",
     "level": "C",
-    "category": "social-life",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -11948,7 +11822,7 @@
     "example_german": "Er ging unvorsichtig mit Streichhölzern in der Nähe des Benzins um.",
     "definition": "Å ikke være forsiktig med noe.",
     "level": "C",
-    "category": "accidents-safety",
+    "category": "everyday-objects",
     "part": "phrase"
   },
   {
@@ -11966,7 +11840,7 @@
     "example_german": "Der Schlüssel kam beim Umzug abhanden.",
     "definition": "Å miste eller forsvinne bort.",
     "level": "C",
-    "category": "household",
+    "category": "character-temperament",
     "part": "phrase"
   },
   {
@@ -12092,7 +11966,7 @@
     "example_german": "Gestern bekam Brasilien bei der Fußball-WM Prügel von Deutschland.",
     "definition": "Å bli slått; å få juling.",
     "level": "C",
-    "category": "sports",
+    "category": "interpersonal-conflict",
     "part": "phrase"
   },
   {
@@ -12110,7 +11984,7 @@
     "example_german": "Als das Team in letzter Minute traf, kannte die Freude keine Grenzen.",
     "definition": "Når jubelen står i taket, er alle veldig glade og roper og skriker av glede.",
     "level": "C",
-    "category": "sports",
+    "category": "sensory-sound",
     "part": "phrase"
   },
   {
@@ -12254,7 +12128,7 @@
     "example_german": "Sie trägt ihre Mütze gern schief, wenn sie ausgeht.",
     "definition": "Å ha lua skrått, ikke rett.",
     "level": "C",
-    "category": "leisure-hobbies",
+    "category": "physical-appearance",
     "part": "phrase"
   },
   {
@@ -12272,7 +12146,7 @@
     "example_german": "Das Haus ist schön gelegen, direkt am Wald.",
     "definition": "Å ha bra beliggenhet.",
     "level": "C",
-    "category": "household",
+    "category": "nature-landscape",
     "part": "phrase"
   },
   {
@@ -12506,7 +12380,7 @@
     "example_german": "Bei der Prüfung griff er bei der Aufgabe völlig daneben.",
     "definition": "Å svare helt feil på en oppgave; å skrive om noe annet enn det man skal.",
     "level": "C",
-    "category": "education",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -12614,7 +12488,7 @@
     "example_german": "Wer ging gestern Abend als Sieger hervor?",
     "definition": "Å vinne.",
     "level": "C",
-    "category": "sports",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -12632,7 +12506,7 @@
     "example_german": "Das Team ging siegreich aus dem Spiel gegen die Rivalen hervor.",
     "definition": "Å vinne.",
     "level": "C",
-    "category": "sports",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -12740,7 +12614,7 @@
     "example_german": "Du musst dich nach den Worten des Lehrers richten.",
     "definition": "Å gjøre det andre sier; å gjøre det man får beskjed om.",
     "level": "C",
-    "category": "education",
+    "category": "professional",
     "part": "phrase"
   },
   {
@@ -12776,7 +12650,7 @@
     "example_german": "Nach der Scheidung griff er zur Flasche.",
     "definition": "Å begynne å drikke for mye alkohol.",
     "level": "C",
-    "category": "health",
+    "category": "complex-emotions",
     "part": "phrase"
   },
   {
@@ -13032,24 +12906,6 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-725",
-    "norsk": "å holde ut",
-    "lemma": "holde ut",
-    "english": "to endure / hold out",
-    "ukrainian": "витримувати / триматися",
-    "spanish": "aguantar / resistir",
-    "german": "durchhalten / aushalten",
-    "example": "Vi måtte holde ut regnet i flere timer.",
-    "example_english": "We had to endure the rain for several hours.",
-    "example_ukrainian": "Нам довелося витримувати дощ кілька годин.",
-    "example_spanish": "Tuvimos que aguantar la lluvia durante varias horas.",
-    "example_german": "Wir mussten den Regen mehrere Stunden lang aushalten.",
-    "definition": "Å klare å fortsette eller tåle noe vanskelig over tid.",
-    "level": "C",
-    "category": "abstract-concepts",
-    "part": "phrase"
-  },
-  {
     "id": "u-c-726",
     "norsk": "å holde tritt med",
     "lemma": "holde tritt med",
@@ -13082,7 +12938,7 @@
     "example_german": "Rühre das Mehl in etwas kalter Milch ein, bevor du es zur Soße gibst.",
     "definition": "Å blande noe, ofte pulver, ut i en væske ved å røre, slik at det løser seg opp.",
     "level": "C",
-    "category": "food-drink",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -13154,7 +13010,7 @@
     "example_german": "Denk daran, den Brei umzurühren, damit er nicht anbrennt.",
     "definition": "Å blande eller bevege innholdet i noe, ofte mat, med en skje eller lignende.",
     "level": "C",
-    "category": "food-drink",
+    "category": "gastronomy",
     "part": "phrase"
   },
   {
@@ -13968,42 +13824,6 @@
     "part": "phrase"
   },
   {
-    "id": "u-c-777",
-    "norsk": "å gi etter",
-    "lemma": "gi etter",
-    "english": "to give in / yield",
-    "ukrainian": "поступатися, здаватися",
-    "spanish": "ceder / rendirse",
-    "german": "nachgeben",
-    "example": "Til slutt ga han etter for barnas pressende bønner om godteri.",
-    "example_english": "In the end, he gave in to the children's insistent pleas for candy.",
-    "example_ukrainian": "Врешті він поступився наполегливим проханням дітей про цукерки.",
-    "example_spanish": "Al final, cedió a los insistentes ruegos de los niños por caramelos.",
-    "example_german": "Am Ende gab er den beharrlichen Bitten der Kinder um Süßigkeiten nach.",
-    "definition": "Å slutte å motsette seg noe og la den andre parten få det som den vil.",
-    "level": "C",
-    "category": "interpersonal-conflict",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-778",
-    "norsk": "å gi opp",
-    "lemma": "gi opp",
-    "english": "to give up",
-    "ukrainian": "здаватися, кидати",
-    "spanish": "rendirse / darse por vencido",
-    "german": "aufgeben",
-    "example": "Ikke gi opp nå, du er så nær målet!",
-    "example_english": "Don't give up now, you're so close to the goal!",
-    "example_ukrainian": "Не здавайся зараз, ти вже так близько до мети!",
-    "example_spanish": "¡No te rindas ahora, estás tan cerca de la meta!",
-    "example_german": "Gib jetzt nicht auf, du bist so nah am Ziel!",
-    "definition": "Å slutte å prøve eller kjempe for noe.",
-    "level": "C",
-    "category": "abstract-concepts",
-    "part": "phrase"
-  },
-  {
     "id": "u-c-779",
     "norsk": "å skjelve i buksene",
     "lemma": "skjelve i buksene",
@@ -14487,24 +14307,6 @@
     "definition": "Å oppfylle de forventningene eller kravene som er stilt.",
     "level": "C",
     "category": "abstract-concepts",
-    "part": "phrase"
-  },
-  {
-    "id": "u-c-806",
-    "norsk": "å komme til orde",
-    "lemma": "komme til orde",
-    "english": "to get a chance to speak",
-    "ukrainian": "отримати слово, можливість висловитися",
-    "spanish": "poder tomar la palabra",
-    "german": "zu Wort kommen",
-    "example": "Det var så mange som ville snakke at hun knapt fikk komme til orde.",
-    "example_english": "So many people wanted to speak that she barely got a chance to say anything.",
-    "example_ukrainian": "Бажаючих висловитися було так багато, що вона ледве отримала слово.",
-    "example_spanish": "Había tantas personas que querían hablar que ella apenas pudo tomar la palabra.",
-    "example_german": "So viele wollten sprechen, dass sie kaum zu Wort kam.",
-    "definition": "Å få mulighet til å si noe i en samtale eller debatt.",
-    "level": "C",
-    "category": "rhetoric",
     "part": "phrase"
   },
   {

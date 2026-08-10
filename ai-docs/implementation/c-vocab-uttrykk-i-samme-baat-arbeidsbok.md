@@ -2,7 +2,7 @@
 title: C vocab and uttrykk from I samme båt arbeidsbok
 resources: draft/c/i-samme-baat-arbeidsbok/extracted-vocabularliste.json, forklaring-av-ord-og-uttrykk.md
 date_started: 2026-08-06
-date_completed:
+date_completed: 2026-08-09
 ---
 
 ## Decisions

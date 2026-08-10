@@ -5790,23 +5790,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-020",
-    "norsk": "adresse (en/ei)",
-    "lemma": "adresse",
-    "english": "address",
-    "ukrainian": "адреса",
-    "spanish": "dirección",
-    "german": "Adresse",
-    "example": "Kan du gi meg adressen din?",
-    "example_english": "Can you give me your address?",
-    "example_ukrainian": "Чи можеш ти дати мені свою адресу?",
-    "example_spanish": "¿Puedes darme tu dirección?",
-    "example_german": "Kannst du mir deine Adresse geben?",
-    "level": "A2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-hobbies-015",
     "norsk": "å aktivisere",
     "lemma": "aktivisere",
@@ -6334,23 +6317,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-social-life-030",
-    "norsk": "bestemor (en/ei)",
-    "lemma": "bestemor",
-    "english": "grandmother",
-    "ukrainian": "бабуся",
-    "spanish": "abuela",
-    "german": "Großmutter",
-    "example": "Bestemor lager alltid deilig middag når vi besøker henne.",
-    "example_english": "Grandmother always makes a delicious dinner when we visit her.",
-    "example_ukrainian": "Бабуся завжди готує смачну вечерю, коли ми її відвідуємо.",
-    "example_spanish": "La abuela siempre prepara una cena deliciosa cuando la visitamos.",
-    "example_german": "Großmutter kocht immer ein leckeres Abendessen, wenn wir sie besuchen.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-cooking-023",
     "norsk": "bestikk (et)",
     "lemma": "bestikk",
@@ -6550,6 +6516,7 @@
     "example_ukrainian": "Вони живуть у великому багатоквартирному будинку в центрі міста.",
     "example_spanish": "Viven en un gran bloque de pisos en el centro de la ciudad.",
     "example_german": "Sie wohnen in einem grossen Wohnblock mitten in der Stadt.",
+    "definition": "En stor bygning med mange leiligheter, eller et stykke av et materiale som er firkantet og solid.",
     "level": "A2",
     "category": "environment",
     "part": "noun"
@@ -6589,23 +6556,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-hobbies-017",
-    "norsk": "bok (en/ei)",
-    "lemma": "bok",
-    "english": "book",
-    "ukrainian": "книга",
-    "spanish": "libro",
-    "german": "Buch",
-    "example": "Jeg leser en spennende bok om norsk historie.",
-    "example_english": "I am reading an exciting book about Norwegian history.",
-    "example_ukrainian": "Я читаю захопливу книгу про норвезьку історію.",
-    "example_spanish": "Estoy leyendo un libro emocionante sobre la historia noruega.",
-    "example_german": "Ich lese ein spannendes Buch über norwegische Geschichte.",
-    "level": "A2",
-    "category": "hobbies",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-money-015",
     "norsk": "bot (en/ei)",
     "lemma": "bot",
@@ -6618,6 +6568,7 @@
     "example_ukrainian": "Він отримав штраф, бо припаркувався неправильно.",
     "example_spanish": "Le pusieron una multa porque estacionó mal.",
     "example_german": "Er bekam ein Bussgeld, weil er falsch geparkt hatte.",
+    "definition": "Et pengeæløp man må betale til myndighetene som straff for å ha brutt en regel.",
     "level": "A2",
     "category": "money",
     "part": "noun"
@@ -6705,23 +6656,6 @@
     "example_german": "Kann ich eine Brotscheibe mit Butter haben?",
     "level": "A2",
     "category": "cooking",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-clothing-009",
-    "norsk": "bukse (en/ei)",
-    "lemma": "bukse",
-    "english": "trousers / pants",
-    "ukrainian": "штани",
-    "spanish": "pantalón",
-    "german": "Hose",
-    "example": "Han tok på seg en ny bukse til festen.",
-    "example_english": "He put on a new pair of trousers for the party.",
-    "example_ukrainian": "Він одягнув нові штани на вечірку.",
-    "example_spanish": "Se puso un pantalón nuevo para la fiesta.",
-    "example_german": "Er zog eine neue Hose für die Party an.",
-    "level": "A2",
-    "category": "clothing",
     "part": "noun"
   },
   {
@@ -6873,23 +6807,6 @@
     "example_ukrainian": "Літня жінка допомогла мені знайти дорогу.",
     "example_spanish": "Una señora mayor me ayudó a encontrar el camino.",
     "example_german": "Eine ältere Dame half mir, den Weg zu finden.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-social-life-035",
-    "norsk": "datter (en/ei)",
-    "lemma": "datter",
-    "english": "daughter",
-    "ukrainian": "донька",
-    "spanish": "hija",
-    "german": "Tochter",
-    "example": "Datteren hans begynte på skolen i år.",
-    "example_english": "His daughter started school this year.",
-    "example_ukrainian": "Його донька пішла до школи цього року.",
-    "example_spanish": "Su hija empezó la escuela este año.",
-    "example_german": "Seine Tochter hat dieses Jahr mit der Schule begonnen.",
     "level": "A2",
     "category": "social-life",
     "part": "noun"
@@ -7198,23 +7115,6 @@
     "example_german": "Die Apotheke ist rund um die Uhr geoffnet.",
     "level": "A2",
     "category": "time",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-house-chores-024",
-    "norsk": "dør (en/ei)",
-    "lemma": "dør",
-    "english": "door",
-    "ukrainian": "двері",
-    "spanish": "puerta",
-    "german": "Tür",
-    "example": "Kan du lukke døren når du går ut?",
-    "example_english": "Can you close the door when you leave?",
-    "example_ukrainian": "Можеш зачинити двері, коли виходиш?",
-    "example_spanish": "¿Puedes cerrar la puerta cuando salgas?",
-    "example_german": "Kannst du die Tür schließen, wenn du gehst?",
-    "level": "A2",
-    "category": "house-chores",
     "part": "noun"
   },
   {
@@ -7723,6 +7623,7 @@
     "example_ukrainian": "Вона у дуже хорошій формі після всіх тренувань.",
     "example_spanish": "Ella está en muy buena forma después de todo el entrenamiento.",
     "example_german": "Sie ist nach dem ganzen Training in sehr guter Form.",
+    "definition": "Måten noe ser ut på, eller den fysiske eller mentale tilstanden til en person.",
     "level": "A2",
     "category": "health",
     "part": "noun"
@@ -8031,23 +7932,6 @@
     "example_german": "Sie kaufte buntes Garn, um einen Pullover zu stricken.",
     "level": "A2",
     "category": "hobbies",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-023",
-    "norsk": "gate (en/ei)",
-    "lemma": "gate",
-    "english": "street",
-    "ukrainian": "вулиця",
-    "spanish": "calle",
-    "german": "Straße",
-    "example": "Butikken ligger i den neste gaten til venstre.",
-    "example_english": "The shop is on the next street to the left.",
-    "example_ukrainian": "Магазин знаходиться на наступній вулиці ліворуч.",
-    "example_spanish": "La tienda está en la próxima calle a la izquierda.",
-    "example_german": "Das Geschäft befindet sich in der nächsten Straße links.",
-    "level": "A2",
-    "category": "directions",
     "part": "noun"
   },
   {
@@ -9729,6 +9613,7 @@
     "example_ukrainian": "Ми зустрілися в кафе в центрі міста.",
     "example_spanish": "Nos encontramos en un café en el centro de la ciudad.",
     "example_german": "Wir trafen uns in einem Café in der Innenstadt.",
+    "definition": "Et sted der man kan drikke kaffe, spise lett mat og slappe av.",
     "level": "A2",
     "category": "social-life",
     "part": "noun"
