@@ -179,6 +179,18 @@ med utgangspunkt i
 i lys av
 ```
 
+### `norsk` / `lemma` fields
+
+Same as vocab: `norsk` is the display form, `lemma` is the canonical/dictionary form used for dedup. For uttrykk, both fields are normally identical — the whole fixed chunk, in its citation form.
+
+**Verb-initial uttrykk use the bare verb form — no `å` prefix.** Unlike vocab verbs (which use `å` in `norsk`), an uttrykk headed by a verb is written the way a dictionary would cite the idiom, not as an infinitive clause.
+
+| lemma               | not                    |
+| -------------------- | ---------------------- |
+| `ta vare på`          | ~~`å ta vare på`~~        |
+| `ha lyst til`         | ~~`å ha lyst til`~~       |
+| `bli oppfordret til`  | ~~`å bli oppfordret til`~~ |
+
 ...and all proverbs.
 
 ### Decision rule
