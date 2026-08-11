@@ -23961,5 +23961,519 @@
     ],
     "hint": "Hvis + hadde senket (pluskvamperfektum) setter opp betingelsen; ville + ha + forsvunnet gir det kontrafaktiske resultatet.",
     "plusOnly": true
+  },
+  {
+    "id": "gq-avled-079",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform av «skjære» (i betydningen: gi et visst preg/lys over noe).",
+    "sentence": "Et nostalgisk _____ lå over hele barndomshjemmet da hun kom tilbake.",
+    "words": [
+      "skjær",
+      "skjæring",
+      "skåret"
+    ],
+    "answer": "skjær",
+    "hint": "Substantivet «et skjær» betyr her et bestemt lys eller preg som legger seg over noe — minnene ligger badet i et nostalgisk skjær.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-080",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig ord fra samme ordfamilie som «skjær» (denne gangen i betydningen: en skår/demper i gleden).",
+    "sentence": "Nyheten var en _____ i gleden — nå ble alle likevel litt bekymret.",
+    "words": [
+      "skjær",
+      "skjæring",
+      "skjærende"
+    ],
+    "answer": "skjær",
+    "hint": "«Et skjær i gleden» er et fast uttrykk for noe som demper en ellers god stemning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-081",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning med adjektivet avledet av «inntreffe».",
+    "options": [
+      "De inntrufne hendelsene forandret alt for familien.",
+      "De inntreffende hendelsene forandret alt for familien.",
+      "De inntreffelser forandret alt for familien."
+    ],
+    "answer": "De inntrufne hendelsene forandret alt for familien.",
+    "hint": "Perfektum partisipp av det sterke verbet «inntreffe» er «inntruffet» → adjektivform «inntrufne».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-082",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig superlativform av «grufull».",
+    "sentence": "Synet som møtte dem, var det aller _____ de hadde opplevd.",
+    "words": [
+      "grufulleste",
+      "grufullere",
+      "gru"
+    ],
+    "answer": "grufulleste",
+    "hint": "Adjektivet «grufull» bøyes regelrett: grufull – grufullere – grufulleste.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-083",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «grufull» (skrekk og …).",
+    "sentence": "Skrekk og _____! Katastrofen var et faktum.",
+    "words": [
+      "gru",
+      "grusomhet",
+      "grufullhet"
+    ],
+    "answer": "gru",
+    "hint": "«Skrekk og gru» er et fast uttrykk der substantivet «gru» (redsel) er roten til adjektivet «grufull».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-084",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig verbform av «fnisende» (partisippformen av verbet).",
+    "sentence": "Jentene _____ hele veien til skolen og klarte ikke å stoppe.",
+    "words": [
+      "fniste",
+      "fnisende",
+      "fnis"
+    ],
+    "answer": "fniste",
+    "hint": "Preteritum av verbet «å fnise» er «fniste»; «fnisende» er presens partisipp brukt som adjektiv.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-085",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «gynge».",
+    "sentence": "Han kjente en _____ følelse i kroppen lenge etter turen på det gyngende dekket.",
+    "words": [
+      "gyngende",
+      "gynging",
+      "gynge"
+    ],
+    "answer": "gyngende",
+    "hint": "Presens partisipp «gyngende» brukes her som adjektiv foran substantivet «følelse».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-086",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om setningen med substantivet «gynging» i stedet for verbet «gynge».",
+    "source": "Dekket gynget kraftig i stormen, og passasjerene ble sjøsyke.",
+    "answer": "Gyngingen på dekket i stormen gjorde passasjerene sjøsyke.",
+    "hint": "Verb på «-e» kan danne substantiv med «-ing»: gynge → gynging.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-087",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «spikret» (verbet «å slå spiker»).",
+    "sentence": "Etter all _____ satt hun igjen med bare en blå tommel.",
+    "words": [
+      "spikringen",
+      "spikret",
+      "spikre"
+    ],
+    "answer": "spikringen",
+    "hint": "Substantivet av verbet «å spikre» dannes med «-ing»: spikre → spikring.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-088",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «har gnagd» (om dårlig samvittighet).",
+    "sentence": "All den _____ gikk til slutt utover nattesøvnen hans.",
+    "words": [
+      "gnagingen",
+      "gnaget",
+      "gnage"
+    ],
+    "answer": "gnagingen",
+    "hint": "Verbet «å gnage» danner substantivet «gnaging» med «-ing»; her i bestemt form «gnagingen».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-089",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig verbform (infinitiv) i ordfamilien til «forsonende».",
+    "sentence": "Han ønsket å _____ med sin gamle venn før det var for sent.",
+    "words": [
+      "forsone seg",
+      "forsoning",
+      "forsonlig"
+    ],
+    "answer": "forsone seg",
+    "hint": "Verbet «å forsone seg» (med noen) er roten til adjektivet «forsonende» og substantivet «forsoning».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-090",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «forsonende».",
+    "sentence": "Etter mange års konflikt vokste det sjelden fram noen ekte _____ mellom familiene.",
+    "words": [
+      "forsoning",
+      "forsonelse",
+      "forsonende"
+    ],
+    "answer": "forsoning",
+    "hint": "Substantivet dannes med «-ing»: forsone seg → forsoning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-091",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om setningen med substantivet «gisp» i stedet for verbet «gispe».",
+    "source": "Hun gispet høyt da hun så synet som møtte henne på kjøkkenet.",
+    "answer": "Et høyt gisp slapp ut av henne da hun så synet som møtte henne på kjøkkenet.",
+    "hint": "Verbet «å gispe» har substantivformen «et gisp».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-092",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig adjektivform i ordfamilien til «gjørmen» (substantivet «gjørme»).",
+    "sentence": "Etter regnet ble stien helt _____, og støvlene sank ned i søla.",
+    "words": [
+      "gjørmete",
+      "gjørmen",
+      "gjørming"
+    ],
+    "answer": "gjørmete",
+    "hint": "Substantivet «gjørme» danner adjektivet med «-ete»: gjørme → gjørmete.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-093",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «puffer» (verbet «å puffe»).",
+    "sentence": "Han trengte bare en liten _____ i riktig retning for å komme videre.",
+    "words": [
+      "puff",
+      "puffing",
+      "puffer"
+    ],
+    "answer": "puff",
+    "hint": "Verbet «å puffe» danner substantivet «et puff».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-094",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning med verbet avledet av «makt» (ikke «makte», men «å mektes» i refleksiv form finnes ikke — velg riktig verb i ordfamilien).",
+    "options": [
+      "Vil han virkelig makte å bringe landet videre etter krisen?",
+      "Vil han virkelig makt å bringe landet videre etter krisen?",
+      "Vil han virkelig maktig å bringe landet videre etter krisen?"
+    ],
+    "answer": "Vil han virkelig makte å bringe landet videre etter krisen?",
+    "hint": "Verbet i ordfamilien til «makt» er «å makte» (klare, greie), ikke det tidligere sette makt→mektig-paret.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-095",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig ord fra ordfamilien varte opp – oppvartning.",
+    "sentence": "Hun elsket å _____ gjestene sine med hjemmelaget mat hver helg.",
+    "words": [
+      "varte opp",
+      "oppvartning",
+      "oppvartet"
+    ],
+    "answer": "varte opp",
+    "hint": "Verbet «å varte opp» (å yte service/stelle med noen) danner substantivet «oppvartning».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-096",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om setningen med substantivet «oppvartning» i stedet for verbet «varte opp».",
+    "source": "Kelneren vartet flittig opp gjestene med drikke og snacks hele kvelden.",
+    "answer": "Kelnerens flittige oppvartning av gjestene med drikke og snacks varte hele kvelden.",
+    "hint": "«Å varte opp» → substantivet «oppvartning».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-097",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig adjektivform i ordfamilien til «skjemme bort».",
+    "sentence": "Barnebarna hennes var svært _____ etter alle besøkene hos bestemor.",
+    "words": [
+      "bortskjemte",
+      "skjemmende",
+      "bortskjemming"
+    ],
+    "answer": "bortskjemte",
+    "hint": "Perfektum partisipp av «å skjemme bort» brukt som adjektiv: bortskjemt (flertall: bortskjemte).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-098",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «gå opp» (i betydningen: bli klart, forstått).",
+    "sentence": "Til slutt fikk hun en _____ opplevelse da alt gikk opp for henne på én gang.",
+    "words": [
+      "gikk opp for henne",
+      "oppgang",
+      "oppgåing"
+    ],
+    "answer": "gikk opp for henne",
+    "hint": "Uttrykket «å gå opp for noen» (bli forstått) brukes ofte direkte, uten et eget substantiv i vanlig bruk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-099",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om setningen med substantivet «bitt» i stedet for verbet «bite».",
+    "source": "Hunden bet ham hardt i armen under angrepet.",
+    "answer": "Bittet i armen fra hunden var svært alvorlig under angrepet.",
+    "hint": "Verbet «å bite» har substantivformen «et bitt».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-100",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig adjektivform av verbet «bite» (i betydningen: skarp, kald).",
+    "sentence": "En _____ kulde møtte dem da de gikk ut av flyet.",
+    "words": [
+      "bitende",
+      "bitt",
+      "bitsk"
+    ],
+    "answer": "bitende",
+    "hint": "Presens partisipp «bitende» brukes som adjektiv om noe skarpt eller ekstremt kaldt/kritisk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-101",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «gripe».",
+    "sentence": "_____ etter makten kom overraskende på alle i partiet.",
+    "words": [
+      "Grepet",
+      "Gripingen",
+      "Gripen"
+    ],
+    "answer": "Grepet",
+    "hint": "Substantivet av «å gripe» er «et grep», ofte brukt i uttrykket «gripe etter/gripe makten».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-102",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning med adjektivet avledet av «gripe» (i overført betydning: rørende).",
+    "options": [
+      "Talen hennes var svært gripende, og flere i salen gråt.",
+      "Talen hennes var svært grepet, og flere i salen gråt.",
+      "Talen hennes var svært gripelig, og flere i salen gråt."
+    ],
+    "answer": "Talen hennes var svært gripende, og flere i salen gråt.",
+    "hint": "Presens partisipp «gripende» beskriver noe som gjør sterkt inntrykk følelsesmessig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-103",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «smuldre opp».",
+    "sentence": "Kjærligheten deres endte i en langsom _____ over flere år.",
+    "words": [
+      "oppsmuldring",
+      "smuldringen",
+      "smulder"
+    ],
+    "answer": "oppsmuldring",
+    "hint": "Verbet «å smuldre opp» danner substantivet med «-ing»: smuldre opp → oppsmuldring.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-104",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig adjektivform i ordfamilien til «smuldre opp».",
+    "sentence": "Kittet på det gamle vinduet var helt _____ og falt av i biter.",
+    "words": [
+      "oppsmuldret",
+      "smuldrende",
+      "smuldret"
+    ],
+    "answer": "smuldret",
+    "hint": "Perfektum partisipp av «å smuldre» brukt som adjektiv: smuldret.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-105",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «forkle».",
+    "sentence": "Bak den vennlige _____ skjulte det seg en helt annen agenda.",
+    "words": [
+      "forkledningen",
+      "forklet",
+      "forkledd"
+    ],
+    "answer": "forkledningen",
+    "hint": "Verbet «å forkle seg» danner substantivet «forkledning».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-106",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning med adjektivet avledet av «forkle».",
+    "options": [
+      "Alt handlet egentlig om et forkledd savn han aldri hadde snakket om.",
+      "Alt handlet egentlig om et forkledning savn han aldri hadde snakket om.",
+      "Alt handlet egentlig om et forkler savn han aldri hadde snakket om."
+    ],
+    "answer": "Alt handlet egentlig om et forkledd savn han aldri hadde snakket om.",
+    "hint": "Perfektum partisipp av «å forkle» brukt som adjektiv er «forkledd» (skjult, tilsløret).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-107",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «ransake».",
+    "sentence": "Politiet gjennomførte en grundig _____ av leiligheten etter innbruddet.",
+    "words": [
+      "ransakelse",
+      "ransaking",
+      "ransaker"
+    ],
+    "answer": "ransakelse",
+    "hint": "Verbet «å ransake» danner substantivet «ransakelse».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-108",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om setningen med substantivet «ransakelse» i stedet for verbet «ransake».",
+    "source": "Politiet ransaket huset i flere timer uten å finne bevis.",
+    "answer": "Politiets ransakelse av huset varte i flere timer uten at det ga bevis.",
+    "hint": "Verbet «å ransake» → substantivet «ransakelse».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-109",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «flomme».",
+    "sentence": "Etter det kraftige regnet var det stor fare for _____ i dalen.",
+    "words": [
+      "flom",
+      "flomming",
+      "flommende"
+    ],
+    "answer": "flom",
+    "hint": "Verbet «å flomme» har substantivformen «en flom».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-110",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning med adjektivet avledet av «flomme».",
+    "options": [
+      "Følelsene hennes var flommende, og hun klarte ikke å holde dem tilbake.",
+      "Følelsene hennes var flom, og hun klarte ikke å holde dem tilbake.",
+      "Følelsene hennes var flomt, og hun klarte ikke å holde dem tilbake."
+    ],
+    "answer": "Følelsene hennes var flommende, og hun klarte ikke å holde dem tilbake.",
+    "hint": "Presens partisipp «flommende» brukes som adjektiv om noe som strømmer eller flyter over.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-111",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig substantivform i ordfamilien til «trenge» (i betydningen: presse seg fram).",
+    "sentence": "Han måtte gjøre en real _____ for å komme seg fram gjennom folkemengden.",
+    "words": [
+      "trengsel",
+      "trenging",
+      "trengt"
+    ],
+    "answer": "trengsel",
+    "hint": "Verbet «å trenge (seg)» danner substantivet «trengsel» (om det å trenge seg fram i en mengde).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-avled-112",
+    "topic": "ordfamilie-avledning",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Fyll inn riktig adjektivform i ordfamilien til «trenge» (om et blikk som gransker inngående).",
+    "sentence": "Faren så på henne med et _____ blikk som fikk henne til å tilstå alt.",
+    "words": [
+      "gjennomtrengende",
+      "trengende",
+      "trengt"
+    ],
+    "answer": "gjennomtrengende",
+    "hint": "Adjektivet «gjennomtrengende» (om blikk, lyd) er avledet av verbet «å trenge gjennom».",
+    "plusOnly": true
   }
 ]
