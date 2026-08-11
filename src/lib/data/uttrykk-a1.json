@@ -378,7 +378,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a1-023",
+    "id": "u-a1-022",
     "norsk": "har lyst på",
     "lemma": "har lyst på",
     "english": "want / feel like",
@@ -396,7 +396,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a1-024",
+    "id": "u-a1-023",
     "norsk": "mye å gjøre",
     "lemma": "mye å gjøre",
     "english": "a lot to do",
@@ -414,7 +414,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a1-025",
+    "id": "u-a1-024",
     "norsk": "har fri",
     "lemma": "har fri",
     "english": "have a day off",
@@ -432,7 +432,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-026",
+    "id": "u-a1-025",
     "norsk": "er gift",
     "lemma": "er gift",
     "english": "is married",
@@ -450,7 +450,7 @@
     "theme": "family"
   },
   {
-    "id": "u-a1-027",
+    "id": "u-a1-026",
     "norsk": "om morgenen",
     "lemma": "om morgenen",
     "english": "in the morning",
@@ -468,7 +468,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-028",
+    "id": "u-a1-027",
     "norsk": "om natta",
     "lemma": "om natta",
     "english": "at night",
@@ -486,7 +486,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-029",
+    "id": "u-a1-028",
     "norsk": "på fredager",
     "lemma": "på fredager",
     "english": "on Fridays",
@@ -504,7 +504,7 @@
     "theme": "days-months"
   },
   {
-    "id": "u-a1-031",
+    "id": "u-a1-029",
     "norsk": "tar en dusj",
     "lemma": "tar en dusj",
     "english": "takes a shower",
@@ -522,7 +522,7 @@
     "theme": "actions"
   },
   {
-    "id": "u-a1-032",
+    "id": "u-a1-030",
     "norsk": "pusser tennene",
     "lemma": "pusser tennene",
     "english": "brushes teeth",
@@ -540,7 +540,7 @@
     "theme": "actions"
   },
   {
-    "id": "u-a1-033",
+    "id": "u-a1-031",
     "norsk": "rer senger",
     "lemma": "rer senger",
     "english": "makes the bed",
@@ -558,7 +558,7 @@
     "theme": "actions"
   },
   {
-    "id": "u-a1-034",
+    "id": "u-a1-032",
     "norsk": "er skilt",
     "lemma": "er skilt",
     "english": "is divorced",
@@ -576,7 +576,7 @@
     "theme": "family"
   },
   {
-    "id": "u-a1-035",
+    "id": "u-a1-033",
     "norsk": "litt etter/før klokka tolv",
     "lemma": "litt etter/før klokka tolv",
     "english": "a little after/before twelve o'clock",
@@ -594,7 +594,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-036",
+    "id": "u-a1-034",
     "norsk": "gjør lekser",
     "lemma": "gjør lekser",
     "english": "does homework",
@@ -612,7 +612,7 @@
     "theme": "classroom"
   },
   {
-    "id": "u-a1-037",
+    "id": "u-a1-035",
     "norsk": "å gjenta",
     "lemma": "å gjenta",
     "english": "to repeat",
@@ -630,7 +630,7 @@
     "theme": "classroom"
   },
   {
-    "id": "u-a1-038",
+    "id": "u-a1-036",
     "norsk": "å snakke langsomt",
     "lemma": "å snakke langsomt",
     "english": "to speak slowly",
@@ -648,7 +648,7 @@
     "theme": "classroom"
   },
   {
-    "id": "u-a1-039",
+    "id": "u-a1-037",
     "norsk": "en gang tilØ Kan du si det en gang til?",
     "lemma": "en gang tilØ Kan du si det en gang til?",
     "english": "one more time: Can you say that one more time?",
@@ -666,7 +666,7 @@
     "theme": "classroom"
   },
   {
-    "id": "u-a1-040",
+    "id": "u-a1-038",
     "norsk": "å vite",
     "lemma": "å vite",
     "english": "to know",
@@ -684,7 +684,7 @@
     "theme": "verbs"
   },
   {
-    "id": "u-a1-041",
+    "id": "u-a1-039",
     "norsk": "å komme til å",
     "lemma": "å komme til å",
     "english": "going to (future)",
@@ -702,7 +702,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a1-042",
+    "id": "u-a1-040",
     "norsk": "å gå på tur",
     "lemma": "å gå på tur",
     "english": "to go for a walk / hike",
@@ -720,7 +720,7 @@
     "theme": "actions"
   },
   {
-    "id": "u-a1-043",
+    "id": "u-a1-041",
     "norsk": "en tur",
     "lemma": "en tur",
     "english": "a trip",
@@ -738,7 +738,7 @@
     "theme": "actions"
   },
   {
-    "id": "u-a1-044",
+    "id": "u-a1-042",
     "norsk": "å bli med",
     "lemma": "å bli med",
     "english": "to come along",
@@ -756,7 +756,7 @@
     "theme": "actions"
   },
   {
-    "id": "u-a1-045",
+    "id": "u-a1-043",
     "norsk": "å pleie",
     "lemma": "å pleie",
     "english": "to usually do",
@@ -774,7 +774,7 @@
     "theme": "verbs"
   },
   {
-    "id": "u-a1-046",
+    "id": "u-a1-044",
     "norsk": "å være glad i",
     "lemma": "å være glad i",
     "english": "to be fond of",
@@ -792,7 +792,7 @@
     "theme": "feelings"
   },
   {
-    "id": "u-a1-047",
+    "id": "u-a1-045",
     "norsk": "å få besøk",
     "lemma": "å få besøk",
     "english": "to have visitors",
@@ -810,7 +810,7 @@
     "theme": "family"
   },
   {
-    "id": "u-a1-048",
+    "id": "u-a1-046",
     "norsk": "å ha lyst til å",
     "lemma": "å ha lyst til å",
     "english": "to feel like doing",
@@ -828,7 +828,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a1-049",
+    "id": "u-a1-047",
     "norsk": "å ha tid til å",
     "lemma": "å ha tid til å",
     "english": "to have time to",
@@ -846,7 +846,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-050",
+    "id": "u-a1-048",
     "norsk": "både – og",
     "lemma": "både – og",
     "english": "both – and",
@@ -864,7 +864,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a1-051",
+    "id": "u-a1-049",
     "norsk": "blant annet",
     "lemma": "blant annet",
     "english": "among other things",
@@ -882,7 +882,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a1-052",
+    "id": "u-a1-050",
     "norsk": "Jeg er så trøtt. Jeg vil sove.",
     "lemma": "Jeg er så trøtt. Jeg vil sove.",
     "english": "I am so tired. I want to sleep.",
@@ -900,7 +900,7 @@
     "theme": "feelings"
   },
   {
-    "id": "u-a1-053",
+    "id": "u-a1-051",
     "norsk": "Jeg er sulten. Jeg vil ha mat.",
     "lemma": "Jeg er sulten. Jeg vil ha mat.",
     "english": "I am hungry. I want food.",
@@ -918,7 +918,7 @@
     "theme": "feelings"
   },
   {
-    "id": "u-a1-054",
+    "id": "u-a1-052",
     "norsk": "Jeg er tørst. Jeg vil ha melk.",
     "lemma": "Jeg er tørst. Jeg vil ha melk.",
     "english": "I am thirsty. I want milk.",
@@ -936,7 +936,7 @@
     "theme": "feelings"
   },
   {
-    "id": "u-a1-055",
+    "id": "u-a1-053",
     "norsk": "De har dårlig tid. De har det travelt.",
     "lemma": "De har dårlig tid. De har det travelt.",
     "english": "They are short on time. They are in a hurry.",
@@ -954,7 +954,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-056",
+    "id": "u-a1-054",
     "norsk": "God morgen!",
     "lemma": "God morgen!",
     "english": "Good morning!",
@@ -972,7 +972,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-057",
+    "id": "u-a1-055",
     "norsk": "Vil du ha mer mat? Neitakk, jeg er mett.",
     "lemma": "Vil du ha mer mat? Neitakk, jeg er mett.",
     "english": "Do you want more food? No thank you, I am full.",
@@ -990,7 +990,7 @@
     "theme": "food"
   },
   {
-    "id": "u-a1-058",
+    "id": "u-a1-056",
     "norsk": "Jeg har lyst på kaffe. Den er snart ferdig.",
     "lemma": "Jeg har lyst på kaffe. Den er snart ferdig.",
     "english": "I would like some coffee. It will be ready soon.",
@@ -1008,7 +1008,7 @@
     "theme": "food"
   },
   {
-    "id": "u-a1-059",
+    "id": "u-a1-057",
     "norsk": "å ha tid til",
     "lemma": "å ha tid til",
     "english": "to have time to",
@@ -1026,7 +1026,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-060",
+    "id": "u-a1-058",
     "norsk": "å kle på",
     "lemma": "å kle på",
     "english": "to dress",
@@ -1044,7 +1044,7 @@
     "theme": "clothes"
   },
   {
-    "id": "u-a1-061",
+    "id": "u-a1-059",
     "norsk": "Trenger dere hjelp? Nei takk, vi vil bare kikke litt.",
     "lemma": "Trenger dere hjelp? Nei takk, vi vil bare kikke litt.",
     "english": "Do you need help? No thank you, we just want to look around.",
@@ -1062,7 +1062,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a1-062",
+    "id": "u-a1-060",
     "norsk": "Hvor finner jeg sitron? Gå rett fram, og så til høyre.",
     "lemma": "Hvor finner jeg sitron? Gå rett fram, og så til høyre.",
     "english": "Where can I find lemons? Go straight ahead and then turn right.",
@@ -1080,7 +1080,7 @@
     "theme": "food"
   },
   {
-    "id": "u-a1-063",
+    "id": "u-a1-061",
     "norsk": "Hvor finner jeg olivenolje?Ved siden av ketchup og sennep.",
     "lemma": "Hvor finner jeg olivenolje?Ved siden av ketchup og sennep.",
     "english": "Where can I find olive oil? Next to the ketchup and mustard.",
@@ -1098,7 +1098,7 @@
     "theme": "food"
   },
   {
-    "id": "u-a1-064",
+    "id": "u-a1-062",
     "norsk": "Hva koster det? 99,90.",
     "lemma": "Hva koster det? 99,90.",
     "english": "How much does it cost? 99.90.",
@@ -1116,7 +1116,7 @@
     "theme": "numbers"
   },
   {
-    "id": "u-a1-065",
+    "id": "u-a1-063",
     "norsk": "Tusen takk for hjelpen. Bare hyggelig.",
     "lemma": "Tusen takk for hjelpen. Bare hyggelig.",
     "english": "Thanks a lot for the help. You're welcome.",
@@ -1134,7 +1134,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-066",
+    "id": "u-a1-064",
     "norsk": "Vil du ha pose?,Ja takk. Nei takk.",
     "lemma": "Vil du ha pose?,Ja takk. Nei takk.",
     "english": "Would you like a bag? Yes please. No thank you.",
@@ -1152,7 +1152,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a1-067",
+    "id": "u-a1-065",
     "norsk": "Velkommen tilbake. Takk for det.",
     "lemma": "Velkommen tilbake. Takk for det.",
     "english": "Welcome back. Thank you.",
@@ -1170,7 +1170,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-068",
+    "id": "u-a1-066",
     "norsk": "Ha en fin dag. I like måte.",
     "lemma": "Ha en fin dag. I like måte.",
     "english": "Have a nice day. Likewise.",
@@ -1188,7 +1188,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-069",
+    "id": "u-a1-067",
     "norsk": "Hvorfor ikke?",
     "lemma": "Hvorfor ikke?",
     "english": "Why not?",
@@ -1206,7 +1206,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a1-070",
+    "id": "u-a1-068",
     "norsk": "Synes du det?",
     "lemma": "Synes du det?",
     "english": "Do you think so?",
@@ -1224,7 +1224,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a1-071",
+    "id": "u-a1-069",
     "norsk": "Hvordan blir været i morgen? Det blir regn. Det blir sol.",
     "lemma": "Hvordan blir været i morgen? Det blir regn. Det blir sol.",
     "english": "What will the weather be like tomorrow? It will rain. It will be sunny.",
@@ -1242,7 +1242,7 @@
     "theme": "weather"
   },
   {
-    "id": "u-a1-072",
+    "id": "u-a1-070",
     "norsk": "Hvordan lukter det? Det lukter godt.",
     "lemma": "Hvordan lukter det? Det lukter godt.",
     "english": "What does it smell like? It smells good.",
@@ -1260,7 +1260,7 @@
     "theme": "adjectives"
   },
   {
-    "id": "u-a1-073",
+    "id": "u-a1-071",
     "norsk": "Hvordan ser katten ut? Den er brun og veldig søt.",
     "lemma": "Hvordan ser katten ut? Den er brun og veldig søt.",
     "english": "What does the cat look like? It is brown and very cute.",
@@ -1278,7 +1278,7 @@
     "theme": "animals"
   },
   {
-    "id": "u-a1-074",
+    "id": "u-a1-072",
     "norsk": "Hvor stopper bussen? På den andre siden av gata.",
     "lemma": "Hvor stopper bussen? På den andre siden av gata.",
     "english": "Where does the bus stop? On the other side of the street.",
@@ -1296,7 +1296,7 @@
     "theme": "transportation"
   },
   {
-    "id": "u-a1-075",
+    "id": "u-a1-073",
     "norsk": "Hvor ofte går den? Hvert kvarter.",
     "lemma": "Hvor ofte går den? Hvert kvarter.",
     "english": "How often does it go? Every quarter of an hour.",
@@ -1314,7 +1314,7 @@
     "theme": "transportation"
   },
   {
-    "id": "u-a1-076",
+    "id": "u-a1-074",
     "norsk": "Hvor langt er det til sentrum? Tre kilometer.",
     "lemma": "Hvor langt er det til sentrum? Tre kilometer.",
     "english": "How far is it to the city centre? Three kilometres.",
@@ -1332,7 +1332,7 @@
     "theme": "places"
   },
   {
-    "id": "u-a1-077",
+    "id": "u-a1-075",
     "norsk": "Hvor lang tid tar det? Det tar sju minutter med buss.",
     "lemma": "Hvor lang tid tar det? Det tar sju minutter med buss.",
     "english": "How long does it take? It takes seven minutes by bus.",
@@ -1350,7 +1350,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-078",
+    "id": "u-a1-076",
     "norsk": "Hva skal de feire? De skal feire 17. mai.",
     "lemma": "Hva skal de feire? De skal feire 17. mai.",
     "english": "What are they going to celebrate? They are going to celebrate the 17th of May.",
@@ -1368,7 +1368,7 @@
     "theme": "days-months"
   },
   {
-    "id": "u-a1-079",
+    "id": "u-a1-077",
     "norsk": "Har hun dårlig råd? Ja, hun har lite penger.",
     "lemma": "Har hun dårlig råd? Ja, hun har lite penger.",
     "english": "Is she short of money? Yes, she has little money.",
@@ -1386,7 +1386,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a1-080",
+    "id": "u-a1-078",
     "norsk": "Hvor stor er boligen? Den er på 68 kvm.",
     "lemma": "Hvor stor er boligen? Den er på 68 kvm.",
     "english": "How big is the home? It is 68 square metres.",
@@ -1404,7 +1404,7 @@
     "theme": "home"
   },
   {
-    "id": "u-a1-081",
+    "id": "u-a1-079",
     "norsk": "Trives du her? Ja, jeg liker meg godt her.",
     "lemma": "Trives du her? Ja, jeg liker meg godt her.",
     "english": "Do you like it here? Yes, I like it very much here.",
@@ -1422,7 +1422,7 @@
     "theme": "feelings"
   },
   {
-    "id": "u-a1-082",
+    "id": "u-a1-080",
     "norsk": "Er det min skyld? Nei, det er det ikke.",
     "lemma": "Er det min skyld? Nei, det er det ikke.",
     "english": "Is it my fault? No, it is not.",
@@ -1440,7 +1440,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a1-083",
+    "id": "u-a1-081",
     "norsk": "Du må kjøre med én gang! Ja, nå kjører jeg.",
     "lemma": "Du må kjøre med én gang! Ja, nå kjører jeg.",
     "english": "You must drive right away! Yes, I am driving now.",
@@ -1458,7 +1458,7 @@
     "theme": "actions"
   },
   {
-    "id": "u-a1-084",
+    "id": "u-a1-082",
     "norsk": "den første",
     "lemma": "den første",
     "english": "the first",
@@ -1476,7 +1476,7 @@
     "theme": "numbers"
   },
   {
-    "id": "u-a1-085",
+    "id": "u-a1-083",
     "norsk": "for – siden",
     "lemma": "for – siden",
     "english": "ago",
@@ -1494,7 +1494,7 @@
     "theme": "time-expressions"
   },
   {
-    "id": "u-a1-087",
+    "id": "u-a1-084",
     "norsk": "å bli forelsket",
     "lemma": "å bli forelsket",
     "english": "to fall in love",
@@ -1512,7 +1512,7 @@
     "theme": "feelings"
   },
   {
-    "id": "u-a1-088",
+    "id": "u-a1-085",
     "norsk": "å bli gravid",
     "lemma": "å bli gravid",
     "english": "to become pregnant",
@@ -1530,7 +1530,7 @@
     "theme": "family"
   },
   {
-    "id": "u-a1-090",
+    "id": "u-a1-086",
     "norsk": "å leve av noe",
     "lemma": "å leve av noe",
     "english": "to make a living from something",
@@ -1548,12 +1548,12 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a1-091",
+    "id": "u-a1-087",
     "norsk": "å bli kjent med",
     "lemma": "å bli kjent med",
     "english": "to get to know",
     "ukrainian": "познайомитися з",
-    "spanish": "conocer a alguien",
+    "spanish": "llegar a conocer, conocer mejor",
     "german": "jemanden kennenlernen",
     "example": "Jeg ble kjent med mange nye mennesker på kurset.",
     "example_english": "I got to know many new people at the course.",
@@ -1566,7 +1566,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-092",
+    "id": "u-a1-088",
     "norsk": "en venn av meg",
     "lemma": "en venn av meg",
     "english": "a friend of mine",
@@ -1584,7 +1584,7 @@
     "theme": "general"
   },
   {
-    "id": "u-a1-093",
+    "id": "u-a1-089",
     "norsk": "Er det sant!",
     "lemma": "Er det sant!",
     "english": "Is that true! / Really!",
@@ -1602,7 +1602,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a1-094",
+    "id": "u-a1-090",
     "norsk": "Så spennende!",
     "lemma": "Så spennende!",
     "english": "How exciting!",
@@ -1620,7 +1620,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a1-095",
+    "id": "u-a1-091",
     "norsk": "Stakkars deg!",
     "lemma": "Stakkars deg!",
     "english": "Poor you!",
@@ -1638,7 +1638,7 @@
     "theme": "opinion-formulas"
   },
   {
-    "id": "u-a1-096",
+    "id": "u-a1-092",
     "norsk": "for å",
     "lemma": "for å",
     "english": "in order to",
@@ -1656,7 +1656,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a1-097",
+    "id": "u-a1-093",
     "norsk": "si ifra",
     "lemma": "si ifra",
     "english": "to let someone know, to speak up",
@@ -1674,7 +1674,7 @@
     "theme": "idioms"
   },
   {
-    "id": "u-a1-102",
+    "id": "u-a1-094",
     "norsk": "god morgen",
     "lemma": "god morgen",
     "english": "good morning",
@@ -1692,7 +1692,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-103",
+    "id": "u-a1-095",
     "norsk": "god helg",
     "lemma": "god helg",
     "english": "Have a good weekend",
@@ -1710,7 +1710,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-104",
+    "id": "u-a1-096",
     "norsk": "god kveld",
     "lemma": "god kveld",
     "english": "good evening",
@@ -1728,7 +1728,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-105",
+    "id": "u-a1-097",
     "norsk": "god natt",
     "lemma": "god natt",
     "english": "good night",
@@ -1746,7 +1746,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-106",
+    "id": "u-a1-098",
     "norsk": "ha det bra",
     "lemma": "ha det bra",
     "english": "goodbye / take care",
@@ -1764,7 +1764,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-107",
+    "id": "u-a1-099",
     "norsk": "ha det",
     "lemma": "ha det",
     "english": "bye",
@@ -1782,7 +1782,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-108",
+    "id": "u-a1-100",
     "norsk": "vær så snill",
     "lemma": "vær så snill",
     "english": "please",
@@ -1800,7 +1800,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-109",
+    "id": "u-a1-101",
     "norsk": "hvordan har du det?",
     "lemma": "hvordan har du det?",
     "english": "How are you?",
@@ -1818,7 +1818,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-110",
+    "id": "u-a1-102",
     "norsk": "jeg har det bra",
     "lemma": "jeg har det bra",
     "english": "I'm fine",
@@ -1836,7 +1836,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-111",
+    "id": "u-a1-103",
     "norsk": "Hva heter du?",
     "lemma": "Hva heter du?",
     "english": "What is your name?",
@@ -1854,7 +1854,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-112",
+    "id": "u-a1-104",
     "norsk": "hyggelig å møte deg",
     "lemma": "hyggelig å møte deg",
     "english": "nice to meet you",
@@ -1872,7 +1872,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-113",
+    "id": "u-a1-105",
     "norsk": "på gjensyn",
     "lemma": "på gjensyn",
     "english": "goodbye (formal)",
@@ -1890,7 +1890,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-114",
+    "id": "u-a1-106",
     "norsk": "Hvor er du fra?",
     "lemma": "Hvor er du fra?",
     "english": "Where are you from?",
@@ -1908,7 +1908,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-115",
+    "id": "u-a1-107",
     "norsk": "Jeg kommer fra ...",
     "lemma": "Jeg kommer fra ...",
     "english": "I am from ...",
@@ -1926,7 +1926,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-116",
+    "id": "u-a1-108",
     "norsk": "Snakker du norsk?",
     "lemma": "Snakker du norsk?",
     "english": "Do you speak Norwegian?",
@@ -1944,7 +1944,7 @@
     "theme": "greetings"
   },
   {
-    "id": "u-a1-117",
+    "id": "u-a1-109",
     "norsk": "Kan du gjenta det?",
     "lemma": "Kan du gjenta det?",
     "english": "Can you repeat that?",
@@ -1962,7 +1962,7 @@
     "theme": "classroom"
   },
   {
-    "id": "u-a1-118",
+    "id": "u-a1-110",
     "norsk": "til fots",
     "lemma": "til fots",
     "english": "on foot",
@@ -1980,7 +1980,7 @@
     "theme": "transportation"
   },
   {
-    "id": "u-a1-119",
+    "id": "u-a1-111",
     "norsk": "til høyre",
     "lemma": "til høyre",
     "english": "to the right",
@@ -1998,7 +1998,7 @@
     "theme": "places"
   },
   {
-    "id": "u-a1-120",
+    "id": "u-a1-112",
     "norsk": "til venstre",
     "lemma": "til venstre",
     "english": "to the left",
@@ -2016,7 +2016,7 @@
     "theme": "places"
   },
   {
-    "id": "u-a1-121",
+    "id": "u-a1-113",
     "norsk": "for eksempel",
     "lemma": "for eksempel",
     "english": "for example",
@@ -2035,7 +2035,7 @@
     "theme": "discourse-markers"
   },
   {
-    "id": "u-a1-122",
+    "id": "u-a1-114",
     "norsk": "tusen takk",
     "lemma": "tusen takk",
     "english": "thank you very much",
@@ -2054,7 +2054,7 @@
     "definition": "'Tusen takk' betyr en stor og hjertelig takk. Det brukes når man vil uttrykke sterk takknemlighet."
   },
   {
-    "id": "u-a1-123",
+    "id": "u-a1-115",
     "norsk": "Jeg heter ...",
     "lemma": "Jeg heter ...",
     "english": "My name is ...",
@@ -2073,7 +2073,7 @@
     "definition": "'Jeg heter ...' brukes til å presentere seg selv og si hva man heter. Det tilsvarer 'mitt navn er' på norsk."
   },
   {
-    "id": "u-a1-124",
+    "id": "u-a1-116",
     "norsk": "vi ses",
     "lemma": "vi ses",
     "english": "see you later",
@@ -2092,7 +2092,7 @@
     "definition": "'Vi ses' er en uformell avskjedshilsen som betyr at man forventer å møtes igjen. Det brukes på samme måte som 'ha det' eller 'på gjensyn'."
   },
   {
-    "id": "u-a1-125",
+    "id": "u-a1-117",
     "norsk": "Jeg forstår ikke",
     "lemma": "Jeg forstår ikke",
     "english": "I don't understand",
@@ -2111,7 +2111,7 @@
     "definition": "'Jeg forstår ikke' brukes når man ikke klarer å forstå hva noen sier eller mener. Det er en viktig setning når man lærer et nytt språk."
   },
   {
-    "id": "u-a1-126",
+    "id": "u-a1-118",
     "norsk": "rett frem",
     "lemma": "rett frem",
     "english": "straight ahead",
@@ -2130,7 +2130,7 @@
     "definition": "'Rett frem' betyr i en rett linje fremover uten å svinge. Det brukes ofte når man gir noen veibeskrivelse."
   },
   {
-    "id": "u-a1-127",
+    "id": "u-a1-119",
     "norsk": "sol og skyer",
     "lemma": "sol og skyer",
     "english": "partly cloudy",

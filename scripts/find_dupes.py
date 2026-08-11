@@ -4,6 +4,13 @@ find_dupes.py
 Scans all vocab-XX.json files in the norskeord project and reports
 duplicate 'norsk' entries — both within a single file and across files.
 
+Also runs a second, normalized pass: strips the gender marker
+((en)/(et)/(ei)/(en/ei)/etc.), plural marker ((pl.)/(b.pl.)), (ubøy.)
+marker, and verb 'å ' prefix before comparing, so e.g. 'elv (en)' and
+'elv (en/ei)' are caught as the same underlying word even though the
+exact-'norsk' pass above treats them as distinct strings. Only reports
+normalized groups that the exact-match pass didn't already catch.
+
 Usage:
     python scripts/find_dupes.py
     python scripts/find_dupes.py --details   # also write full side-by-side entry pairs
@@ -11,7 +18,24 @@ Usage:
 import argparse
 import json
 import os
+import re
 from collections import defaultdict
+
+# Mirrors the marker patterns in scripts/check-vocab.mjs
+GENDER_PATTERN = re.compile(r'\s*\((en|et|ei|en/ei|en/et|en/men)\)$', re.IGNORECASE)
+PLURAL_PATTERN = re.compile(r'\s*\((b\.)?pl\.\)$', re.IGNORECASE)
+UBOYELIG_PATTERN = re.compile(r'\s*\(ubøy\.\)$', re.IGNORECASE)
+VERB_PREFIX = re.compile(r'^å\s+')
+
+
+def normalize_norsk(s):
+    """Lowercase + strip gender/plural/ubøy. marker and verb 'å ' prefix."""
+    s = (s or '').strip().lower()
+    s = GENDER_PATTERN.sub('', s)
+    s = PLURAL_PATTERN.sub('', s)
+    s = UBOYELIG_PATTERN.sub('', s)
+    s = VERB_PREFIX.sub('', s)
+    return s.strip()
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -38,16 +62,16 @@ files = {
     'B2-uttrykk': os.path.join(base, 'uttrykk-b2.json'),
     'C': os.path.join(base, 'vocab-c.json'),
     'C-uttrykk': os.path.join(base, 'uttrykk-c.json'),
-    'A1-draft': os.path.join(project_root, 'draft', 'a1', 'vocab-a1-new.json'),
-    'A1-uttrykk-draft': os.path.join(project_root, 'draft', 'a1', 'uttrykk-a1-new.json'),
-    'A2-draft': os.path.join(project_root, 'draft', 'a2', 'vocab-a2-new.json'),
-    'A2-uttrykk-draft': os.path.join(project_root, 'draft', 'a2', 'uttrykk-a2-new.json'),
-    'B1-draft': os.path.join(project_root, 'draft', 'b1', 'vocab-b1-new.json'),
-    'B1-uttrykk-draft': os.path.join(project_root, 'draft', 'b1', 'uttrykk-b1-new.json'),
-    'B2-draft': os.path.join(project_root, 'draft', 'b2', 'vocab-b2-new.json'),
-    'B2-uttrykk-draft': os.path.join(project_root, 'draft', 'b2', 'uttrykk-b2-new.json'),
-    'C-draft': os.path.join(project_root, 'draft', 'c', 'vocab-c-new.json'),
-    'C-draft-uttrykk': os.path.join(project_root, 'draft', 'c', 'uttrykk-c-new.json'),
+    # 'A1-draft': os.path.join(project_root, 'draft', 'a1', 'vocab-a1-new.json'),
+    # 'A1-uttrykk-draft': os.path.join(project_root, 'draft', 'a1', 'uttrykk-a1-new.json'),
+    # 'A2-draft': os.path.join(project_root, 'draft', 'a2', 'vocab-a2-new.json'),
+    # 'A2-uttrykk-draft': os.path.join(project_root, 'draft', 'a2', 'uttrykk-a2-new.json'),
+    # 'B1-draft': os.path.join(project_root, 'draft', 'b1', 'vocab-b1-new.json'),
+    # 'B1-uttrykk-draft': os.path.join(project_root, 'draft', 'b1', 'uttrykk-b1-new.json'),
+    # 'B2-draft': os.path.join(project_root, 'draft', 'b2', 'vocab-b2-new.json'),
+    # 'B2-uttrykk-draft': os.path.join(project_root, 'draft', 'b2', 'uttrykk-b2-new.json'),
+    # 'C-draft': os.path.join(project_root, 'draft', 'c', 'vocab-c-new.json'),
+    # 'C-draft-uttrykk': os.path.join(project_root, 'draft', 'c', 'uttrykk-c-new.json'),
     # 'C-extracted-vocab': os.path.join(project_root, 'draft', 'c', 'extracted-vocab-c.json'),
     # 'C-extracted-uttrykk': os.path.join(project_root, 'draft', 'c', 'extracted-uttrykk-c.json'),
 }
@@ -70,6 +94,9 @@ print(f"Total entries: {total}\n")
 # full_norsk_map: norsk_lower -> list of (level, entry_dict), used by --details
 norsk_map = defaultdict(list)
 full_norsk_map = defaultdict(list)
+# normalized_key -> list of (original_norsk, level, category) / (level, entry_dict)
+normalized_map = defaultdict(list)
+full_normalized_map = defaultdict(list)
 for level, entries in data_by_file.items():
     for entry in entries:
         norsk = entry.get('norsk', '').strip()
@@ -77,6 +104,9 @@ for level, entries in data_by_file.items():
         key = norsk.lower()
         norsk_map[key].append((norsk, level, cat))
         full_norsk_map[key].append((level, entry))
+        norm_key = normalize_norsk(norsk)
+        normalized_map[norm_key].append((norsk, level, cat))
+        full_normalized_map[norm_key].append((level, entry))
 
 within = {}
 cross = {}
@@ -88,6 +118,18 @@ for k, entries in norsk_map.items():
         within[k] = entries
     else:
         cross[k] = entries
+
+# Normalized duplicates: same word once gender/plural/ubøy./å- markers are
+# stripped, but NOT already caught above (i.e. the raw 'norsk' strings
+# actually differ — otherwise it's just a re-report of an exact dupe).
+normalized_dupes = {}
+for k, entries in normalized_map.items():
+    if len(entries) < 2:
+        continue
+    raw_variants = set(e[0].lower() for e in entries)
+    if len(raw_variants) < 2:
+        continue
+    normalized_dupes[k] = entries
 
 output = []
 output.append(f"=== CROSS-FILE DUPLICATES ({len(cross)}) ===")
@@ -106,6 +148,17 @@ for k in sorted(within.keys()):
     entries = within[k]
     parts = "  |  ".join(f"{e[1]} [{e[2]}]" for e in entries)
     output.append(f"  {entries[0][0]!r:45s}  →  {parts}")
+
+output.append("")
+output.append(f"=== NORMALIZED DUPLICATES ({len(normalized_dupes)}) ===")
+output.append("(Same word once gender/(pl.)/(b.pl.)/(ubøy.)/'å ' markers are stripped, "
+              "but the raw 'norsk' text differs — not caught by the exact-match "
+              "sections above, e.g. 'elv (en)' vs 'elv (en/ei)')")
+output.append("")
+for k in sorted(normalized_dupes.keys()):
+    entries = normalized_dupes[k]
+    parts = "  |  ".join(f"{e[0]!r} [{e[1]}/{e[2]}]" for e in entries)
+    output.append(f"  {k!r:30s}  →  {parts}")
 
 result_text = "\n".join(output)
 print(result_text)
@@ -162,6 +215,13 @@ if args.details:
     idx = 1
     for k in sorted(within.keys()):
         details_output.append(format_group(k, full_norsk_map[k], idx))
+        idx += 1
+
+    details_output.append(f"=== NORMALIZED DUPLICATES ({len(normalized_dupes)}) — full side-by-side entries ===")
+    details_output.append("")
+    idx = 1
+    for k in sorted(normalized_dupes.keys()):
+        details_output.append(format_group(k, full_normalized_map[k], idx))
         idx += 1
 
     details_text = "\n".join(details_output)

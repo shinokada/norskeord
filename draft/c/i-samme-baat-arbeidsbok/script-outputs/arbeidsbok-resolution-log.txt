@@ -1,0 +1,916 @@
+Draft entries loaded:            2118
+Dropped (exact prod match):      295
+Within-draft groups merged:      129
+Entries removed by merging:      159
+Final resolved entry count:      1664
+Draft entries loaded: 2118
+
+=== STEP 1: Dropped exact production matches (295) ===
+
+  DROPPED 'spetakkel (et)'                         (already in C[sensory-sound])
+  DROPPED 'å adlyde'                               (already in C[interpersonal-conflict])
+  DROPPED 'å subbe'                                (already in C[manner-of-motion])
+  DROPPED 'fra sans og samling'                    (already in C-uttrykk[embodied-emotion])
+  DROPPED 'hersens'                                (already in C[intensifiers-degree])
+  DROPPED 'frodig'                                 (already in C[nature-landscape])
+  DROPPED 'slant (en)'                             (already in C[everyday-objects])
+  DROPPED 'å hige etter'                           (already in B2[advanced-verbs])
+  DROPPED 'å love bot og bedring'                  (already in C-uttrykk[interpersonal-conflict])
+  DROPPED 'å kime'                                 (already in C[sensory-sound])
+  DROPPED 'å svikte'                               (already in B2[relationships])
+  DROPPED 'å verdsette'                            (already in B2[emotions])
+  DROPPED 'i grunnen'                              (already in B2-uttrykk[uttrykk])
+  DROPPED 'derimot'                                (already in B2[discourse-markers])
+  DROPPED 'elendig'                                (already in B2[advanced-adjectives])
+  DROPPED 'omfattende'                             (already in B2[advanced-adjectives])
+  DROPPED 'å skremme'                              (already in B1[mental-wellbeing])
+  DROPPED 'lojalitet (en)'                         (already in B1[relationships])
+  DROPPED 'svik (et)'                              (already in B2[relationships])
+  DROPPED 'å komme til kort'                       (already in B2-uttrykk[uttrykk])
+  DROPPED 'å oppsøke'                              (already in B2[advanced-verbs])
+  DROPPED 'å forfølge'                             (already in B2[law])
+  DROPPED 'å anstrenge seg'                        (already in B2[advanced-verbs])
+  DROPPED 'å forutse'                              (already in B2[abstract-nouns])
+  DROPPED 'å ta seg sammen'                        (already in B2-uttrykk[uttrykk])
+  DROPPED 'å skjerpe seg'                          (already in B2[advanced-verbs])
+  DROPPED 'å plystre'                              (already in C[sensory-sound])
+  DROPPED 'hjørne (et)'                            (already in A2[directions])
+  DROPPED 'se langt etter'                         (already in B2-uttrykk[uttrykk])
+  DROPPED 'ledig'                                  (already in A2[time])
+  DROPPED 'få med seg'                             (already in A2-uttrykk[uttrykk])
+  DROPPED 'å surre'                                (already in B2[psychology])
+  DROPPED 'utilslørt'                              (already in C[nature-landscape])
+  DROPPED 'hes'                                    (already in C[physical-appearance])
+  DROPPED 'heftig'                                 (already in B2[advanced-adjectives])
+  DROPPED 'utsagn (et)'                            (already in B2[communication])
+  DROPPED 'å vedde på'                             (already in B2[advanced-verbs])
+  DROPPED 'rett som det er'                        (already in B2-uttrykk[uttrykk])
+  DROPPED 'lag (et)'                               (already in A2[sports])
+  DROPPED 'å låne øre til'                         (already in C-uttrykk[rhetoric])
+  DROPPED 'å følge opp'                            (already in B1[workplace])
+  DROPPED 'utadvendt'                              (already in B1[personal-growth])
+  DROPPED 'sær'                                    (already in C[character-temperament])
+  DROPPED 'raus'                                   (already in B2[emotions])
+  DROPPED 'å stille opp'                           (already in B2[advanced-verbs])
+  DROPPED 'å knipe sammen'                         (already in C-uttrykk[manner-of-motion])
+  DROPPED 'å motstå'                               (already in C[character-temperament])
+  DROPPED 'å gjalle'                               (already in C[sensory-sound])
+  DROPPED 'til gjengjeld'                          (already in B2-uttrykk[uttrykk])
+  DROPPED 'å forutse'                              (already in B2[abstract-nouns])
+  DROPPED 'utmattet'                               (already in C[embodied-emotion])
+  DROPPED 'sambygding (en)'                        (already in C[sociology-anthropology])
+  DROPPED 'å piple'                                (already in C[nature-landscape])
+  DROPPED 'å heie fram'                            (already in B2[advanced-verbs])
+  DROPPED 'sirlig'                                 (already in C[character-temperament])
+  DROPPED 'å holde ut'                             (already in B1[personal-growth], C-uttrykk[abstract-concepts])
+  DROPPED 'uberørt'                                (already in B2[advanced-adjectives])
+  DROPPED 'å krydre'                               (already in B1[cooking])
+  DROPPED 'fregne (en/ei)'                         (already in C[physical-appearance])
+  DROPPED 'sildrende'                              (already in C[sensory-sound])
+  DROPPED 'innsikt (en)'                           (already in B2[science])
+  DROPPED 'å høre til'                             (already in B1[society])
+  DROPPED 'følgelig'                               (already in B2[discourse-markers])
+  DROPPED 'til enhver tid'                         (already in B2-uttrykk[uttrykk])
+  DROPPED 'å gjalle'                               (already in C[sensory-sound])
+  DROPPED 'stri'                                   (already in C[physical-appearance])
+  DROPPED 'øde'                                    (already in C[nature-landscape])
+  DROPPED 'forbryter (en)'                         (already in B2[law])
+  DROPPED 'omtåket'                                (already in C[embodied-emotion])
+  DROPPED 'å se seg for'                           (already in C[manner-of-motion])
+  DROPPED 'å trille'                               (already in A2[house-chores])
+  DROPPED 'stø'                                    (already in C[character-temperament])
+  DROPPED 'å pryde'                                (already in C[literary])
+  DROPPED 'knapt'                                  (already in B1[expressing-opinions])
+  DROPPED 'før man får sukk for seg'               (already in C-uttrykk[intensifiers-degree])
+  DROPPED 'gå glipp av'                            (already in B1-uttrykk[uttrykk])
+  DROPPED 'dvale (en)'                             (already in C[nature-landscape])
+  DROPPED 'bikkje (en/ei)'                         (already in B2[language])
+  DROPPED 'bebreidelse (en)'                       (already in C[interpersonal-conflict])
+  DROPPED 'ta fatt på'                             (already in B1-uttrykk[uttrykk])
+  DROPPED 'å måpe'                                 (already in C[embodied-emotion])
+  DROPPED 'å luske'                                (already in C[manner-of-motion])
+  DROPPED 'stri'                                   (already in C[physical-appearance])
+  DROPPED 'sta'                                    (already in B1[personal-growth])
+  DROPPED 'grådig'                                 (already in C[character-temperament])
+  DROPPED 'å oppfatte'                             (already in B2[communication])
+  DROPPED 'å stamme'                               (already in B2[language])
+  DROPPED 'å betrakte'                             (already in B2[academic-language])
+  DROPPED 'vesen (et)'                             (already in B1[culture])
+  DROPPED 'å stryke'                               (already in A2[house-chores])
+  DROPPED 'å verne'                                (already in B1[environment])
+  DROPPED 'å skyve'                                (already in A1[actions])
+  DROPPED 'nummen'                                 (already in C[embodied-emotion])
+  DROPPED 'å innse'                                (already in B1[reasoning])
+  DROPPED 'å kose seg glugg i hjel'                (already in C-uttrykk[complex-emotions])
+  DROPPED 'utpost (en)'                            (already in C[nature-landscape])
+  DROPPED 'gründer (en)'                           (already in B1[work])
+  DROPPED 'lekker'                                 (already in A2[cooking])
+  DROPPED 'sågar'                                  (already in C[intensifiers-degree])
+  DROPPED 'å minke'                                (already in B2[environment])
+  DROPPED 'kvist (en)'                             (already in C[everyday-objects])
+  DROPPED 'bugnende'                               (already in C[nature-landscape])
+  DROPPED 'frodig'                                 (already in C[nature-landscape])
+  DROPPED 'iherdig'                                (already in C[character-temperament])
+  DROPPED 'å hisse seg opp'                        (already in B1[mental-wellbeing])
+  DROPPED 'gudsbespottelse (en)'                   (already in C[advanced-law-justice])
+  DROPPED 'opprør (et)'                            (already in B2[politics])
+  DROPPED 'å spre seg som ild i tørt gress'        (already in C-uttrykk[abstract-concepts])
+  DROPPED 'såpass'                                 (already in C[intensifiers-degree])
+  DROPPED 'innbydende'                             (already in C[physical-appearance])
+  DROPPED 'stå på spill'                           (already in B1-uttrykk[uttrykk])
+  DROPPED 'simpelthen'                             (already in C[intensifiers-degree])
+  DROPPED 'å trekke ut'                            (already in B2[science])
+  DROPPED 'ellers'                                 (already in A2[communication])
+  DROPPED 'målløs'                                 (already in B2[emotions])
+  DROPPED 'yndig'                                  (already in C[physical-appearance])
+  DROPPED 'voldsomt'                               (already in B2[advanced-adjectives])
+  DROPPED 'oppslukt'                               (already in C[embodied-emotion])
+  DROPPED 'i overensstemmelse med'                 (already in C-uttrykk[formal-writing])
+  DROPPED 'dyster'                                 (already in B2[advanced-adjectives])
+  DROPPED 'å holde ut'                             (already in B1[personal-growth], C-uttrykk[abstract-concepts])
+  DROPPED 'yndig'                                  (already in C[physical-appearance])
+  DROPPED 'syssel (en)'                            (already in C[archaic])
+  DROPPED 'å anmode om'                            (already in C-uttrykk[highly-formal])
+  DROPPED 'å skyve'                                (already in A1[actions])
+  DROPPED 'å skrape'                               (already in C[manner-of-motion])
+  DROPPED 'glatt'                                  (already in A2[weather])
+  DROPPED 'knoke (en)'                             (already in C[physical-appearance])
+  DROPPED 'å våge'                                 (already in B1[personal-growth])
+  DROPPED 'for lengst'                             (already in C-uttrykk[abstract-concepts])
+  DROPPED 'lenke (en/ei)'                          (already in C[everyday-objects])
+  DROPPED 'imidlertid'                             (already in B1[reasoning])
+  DROPPED 'fang (et)'                              (already in A2[body])
+  DROPPED 'beruset'                                (already in B2[medicine])
+  DROPPED 'slant (en)'                             (already in C[everyday-objects])
+  DROPPED 'larmende'                               (already in C[sensory-sound])
+  DROPPED 'skjør'                                  (already in C[physical-appearance])
+  DROPPED 'å skvette til'                          (already in C-uttrykk[embodied-emotion])
+  DROPPED 'å surre'                                (already in B2[psychology])
+  DROPPED 'flik (en)'                              (already in C[everyday-objects])
+  DROPPED 'lyssky'                                 (already in C[character-temperament])
+  DROPPED 'vitebegjærlig'                          (already in C[character-temperament])
+  DROPPED 'å myse'                                 (already in C[sensory-sound])
+  DROPPED 'skikkelse (en)'                         (already in B2[culture])
+  DROPPED 'å dunke'                                (already in B2[advanced-verbs])
+  DROPPED 'uten nærmere overveielse (en)'          (already in C-uttrykk[abstract-concepts])
+  DROPPED 'å buldre'                               (already in B2[advanced-verbs])
+  DROPPED 'å le'                                   (already in A1[feelings])
+  DROPPED 'varsel (et)'                            (already in B2[communication])
+  DROPPED 'å sno seg'                              (already in C[manner-of-motion])
+  DROPPED 'lubben'                                 (already in C[physical-appearance])
+  DROPPED 'å fundere'                              (already in B2[psychology])
+  DROPPED 'å glane'                                (already in C[sensory-sound])
+  DROPPED 'å utspille seg'                         (already in C[abstract-concepts])
+  DROPPED 'overgang (en)'                          (already in B2[abstract-nouns])
+  DROPPED 'å hamre'                                (already in B2[advanced-verbs])
+  DROPPED 'å fyke'                                 (already in C[manner-of-motion])
+  DROPPED 'å forutse'                              (already in B2[abstract-nouns])
+  DROPPED 'på forhånd'                             (already in B1-uttrykk[uttrykk])
+  DROPPED 'fuktig'                                 (already in A2[weather])
+  DROPPED 'å berømme'                              (already in C[rhetoric])
+  DROPPED 'dunk (et)'                              (already in C[sensory-sound])
+  DROPPED 'varsom'                                 (already in C[character-temperament])
+  DROPPED 'utspring (et)'                          (already in C[abstract-concepts])
+  DROPPED 'å angå'                                 (already in B2[advanced-verbs])
+  DROPPED 'skogholt (et)'                          (already in C[nature-landscape])
+  DROPPED 'å måpe'                                 (already in C[embodied-emotion])
+  DROPPED 'på tvers av'                            (already in B2-uttrykk[uttrykk])
+  DROPPED 'å grøsse'                               (already in B2[emotions])
+  DROPPED 'å utspille seg'                         (already in C[abstract-concepts])
+  DROPPED 'å våge'                                 (already in B1[personal-growth])
+  DROPPED 'spinkel'                                (already in C[physical-appearance])
+  DROPPED 'gå an'                                  (already in A2-uttrykk[uttrykk])
+  DROPPED 'å fyke'                                 (already in C[manner-of-motion])
+  DROPPED 'å komme på'                             (already in A2[communication])
+  DROPPED 'å avsløre'                              (already in B1[journalism])
+  DROPPED 'å stryke'                               (already in A2[house-chores])
+  DROPPED 'å stige'                                (already in B1[economics])
+  DROPPED 'tofte (en/ei)'                          (already in C[everyday-objects])
+  DROPPED 'skogholt (et)'                          (already in C[nature-landscape])
+  DROPPED 'å myse'                                 (already in C[sensory-sound])
+  DROPPED 'innsjø (en)'                            (already in A2[environment])
+  DROPPED 'imidlertid'                             (already in B1[reasoning])
+  DROPPED 'hellig'                                 (already in B2[religion])
+  DROPPED 'jammen'                                 (already in A1[greetings])
+  DROPPED 'forheng (et)'                           (already in C[everyday-objects])
+  DROPPED 'forbannelse (en)'                       (already in C[literary])
+  DROPPED 'akse (en)'                              (already in B2[science])
+  DROPPED 'høvding (en)'                           (already in B2[history])
+  DROPPED 'å stryke'                               (already in A2[house-chores])
+  DROPPED 'ruvende'                                (already in C[nature-landscape])
+  DROPPED 'nådig'                                  (already in B2[advanced-adjectives])
+  DROPPED 'heftig'                                 (already in B2[advanced-adjectives])
+  DROPPED 'å erklære'                              (already in B2[politics])
+  DROPPED 'omtåket'                                (already in C[embodied-emotion])
+  DROPPED 'verkende'                               (already in C[medicine-healthcare])
+  DROPPED 'mopp (en)'                              (already in A2[house-chores])
+  DROPPED 'innbitt'                                (already in C[embodied-emotion])
+  DROPPED 'simpelthen'                             (already in C[intensifiers-degree])
+  DROPPED 'å lyde'                                 (already in C[archaic])
+  DROPPED 'uunngåelig'                             (already in B2[advanced-adjectives])
+  DROPPED 'vanvidd (et)'                           (already in C[complex-emotions])
+  DROPPED 'formidabel'                             (already in B2[advanced-adjectives])
+  DROPPED 'å mane fram'                            (already in C-uttrykk[literary])
+  DROPPED 'å adlyde'                               (already in C[interpersonal-conflict])
+  DROPPED 'å klamre seg til'                       (already in C[embodied-emotion])
+  DROPPED 'om kapp'                                (already in C-uttrykk[manner-of-motion])
+  DROPPED 'steppe (en)'                            (already in C[nature-landscape])
+  DROPPED 'å overgå'                               (already in B2[advanced-verbs])
+  DROPPED 'rå'                                     (already in A2[cooking])
+  DROPPED 'iherdig'                                (already in C[character-temperament])
+  DROPPED 'å utspille seg'                         (already in C[abstract-concepts])
+  DROPPED 'nødtvungen'                             (already in B2[advanced-adjectives])
+  DROPPED 'oppfarende'                             (already in B2[emotions])
+  DROPPED 'sågar'                                  (already in C[intensifiers-degree])
+  DROPPED 'å adlyde'                               (already in C[interpersonal-conflict])
+  DROPPED 'å luske'                                (already in C[manner-of-motion])
+  DROPPED 'mot alle odds'                          (already in C-uttrykk[intensifiers-degree])
+  DROPPED 'stråmatte (en/ei)'                      (already in C[everyday-objects])
+  DROPPED 'kjapp'                                  (already in C[intensifiers-degree])
+  DROPPED 'iherdig'                                (already in C[character-temperament])
+  DROPPED 'å skåne'                                (already in B2[medicine])
+  DROPPED 'å stryke med'                           (already in C-uttrykk[existential-abstract])
+  DROPPED 'å surre'                                (already in B2[psychology])
+  DROPPED 'rakt ut'                                (already in C-uttrykk[abstract-concepts])
+  DROPPED 'overdådig'                              (already in C[character-temperament])
+  DROPPED 'bugnende'                               (already in C[nature-landscape])
+  DROPPED 'innbydende'                             (already in C[physical-appearance])
+  DROPPED 'å dunke'                                (already in B2[advanced-verbs])
+  DROPPED 'stilltiende'                            (already in C[formal-writing])
+  DROPPED 'å koble av'                             (already in B2[advanced-verbs])
+  DROPPED 'å holde av noen'                        (already in C-uttrykk[complex-emotions])
+  DROPPED 'verdig'                                 (already in C[abstract-concepts])
+  DROPPED 'arm'                                    (already in C[archaic])
+  DROPPED 'å utspille seg'                         (already in C[abstract-concepts])
+  DROPPED 'mangfoldig'                             (already in B1[city-life])
+  DROPPED 'vag'                                    (already in C[linguistics])
+  DROPPED 'malplassert'                            (already in C[abstract-concepts])
+  DROPPED 'vant'                                   (already in B1[personal-growth])
+  DROPPED 'å skvette til'                          (already in C-uttrykk[embodied-emotion])
+  DROPPED 'å hive etter pusten'                    (already in C-uttrykk[embodied-emotion])
+  DROPPED 'ubarmhjertig'                           (already in C[character-temperament])
+  DROPPED 'å dunke'                                (already in B2[advanced-verbs])
+  DROPPED 'forheng (et)'                           (already in C[everyday-objects])
+  DROPPED 'håndsrekning (en/ei)'                   (already in C[interpersonal-conflict])
+  DROPPED 'knøttliten'                             (already in C[intensifiers-degree])
+  DROPPED 'skeptisk'                               (already in B1[expressing-opinions])
+  DROPPED 'flyktig'                                (already in B2[advanced-adjectives])
+  DROPPED 'å by imot'                              (already in C-uttrykk[complex-emotions])
+  DROPPED 'selvskreven'                            (already in C[rhetoric])
+  DROPPED 'rev (en)'                               (already in A1[animals])
+  DROPPED 'helt uten videre'                       (already in C-uttrykk[abstract-concepts])
+  DROPPED 'i det store og det hele'                (already in B2-uttrykk[uttrykk])
+  DROPPED 'berøvelse (en)'                         (already in B2[law])
+  DROPPED 'prekær'                                 (already in C[abstract-concepts])
+  DROPPED 'å kverne'                               (already in B2[psychology])
+  DROPPED 'på gløtt'                               (already in C-uttrykk[everyday-objects])
+  DROPPED 'å utløse'                               (already in B2[medicine])
+  DROPPED 'byrde (en)'                             (already in B2[abstract-nouns])
+  DROPPED 'drastisk'                               (already in B2[advanced-adjectives])
+  DROPPED 'opphisselse (en)'                       (already in C[embodied-emotion])
+  DROPPED 'rimelig'                                (already in B1[expressing-opinions])
+  DROPPED 'å yte'                                  (already in B2[advanced-verbs])
+  DROPPED 'å sige ned'                             (already in C-uttrykk[manner-of-motion])
+  DROPPED 'rå'                                     (already in A2[cooking])
+  DROPPED 'tømmer (et)'                            (already in B1[science-nature])
+  DROPPED 'å kave'                                 (already in C[embodied-emotion])
+  DROPPED 'rasende'                                (already in B1[expressing-opinions])
+  DROPPED 'omtåket'                                (already in C[embodied-emotion])
+  DROPPED 'med strev og møye'                      (already in C-uttrykk[abstract-concepts])
+  DROPPED 'dannelse (en)'                          (already in B2[politics])
+  DROPPED 'selskapssyk'                            (already in B1[mental-wellbeing])
+  DROPPED 'å kue'                                  (already in B2[politics])
+  DROPPED 'å gjalle'                               (already in C[sensory-sound])
+  DROPPED 'jammer (en)'                            (already in C[embodied-emotion])
+  DROPPED 'lamslått'                               (already in C[embodied-emotion])
+  DROPPED 'å smette'                               (already in C[everyday-objects])
+  DROPPED 'å valse'                                (already in C[manner-of-motion])
+  DROPPED 'flik (en)'                              (already in C[everyday-objects])
+  DROPPED 'nett'                                   (already in C[physical-appearance])
+  DROPPED 'å smette'                               (already in C[everyday-objects])
+  DROPPED 'å skåne'                                (already in B2[medicine])
+  DROPPED 'å sprike'                               (already in C[abstract-concepts])
+  DROPPED 'fortapt'                                (already in C[complex-emotions])
+  DROPPED 'skrot (et)'                             (already in C[everyday-objects])
+  DROPPED 'fortumlet'                              (already in C[embodied-emotion])
+  DROPPED 'å stryke med'                           (already in C-uttrykk[existential-abstract])
+  DROPPED 'spetakkel (et)'                         (already in C[sensory-sound])
+  DROPPED 'hes'                                    (already in C[physical-appearance])
+  DROPPED 'utilslørt'                              (already in C[nature-landscape])
+  DROPPED 'overveldende'                           (already in C[embodied-emotion])
+  DROPPED 'å pryde'                                (already in C[literary])
+  DROPPED 'troverdig'                              (already in B1[media])
+  DROPPED 'stri'                                   (already in C[physical-appearance])
+  DROPPED 'stø kurs (en)'                          (already in C-uttrykk[abstract-concepts])
+
+=== STEP 2: Resolved within-draft duplicate groups (129) ===
+
+  GROUP 'vanvittig'
+    KEPT   'vanvittig'  note='Van- er et negativt prefiks: vantrivsel, vanfør, vanhellige, vanstell, vantro'  def='sinnssvak; sprø; vill; sinnssyk; fra vettet; her: utrolig'
+    MERGED 'vanvittig'  note=''  def='sinnssyk; fra vettet'
+    MERGED 'vanvittig'  note=''  def='her: utrolig'
+
+  GROUP 'på slep'
+    KEPT   'på slep (et)'  note='Slep kan også bety del av en brudekjole (som er festet til hodet og som går helt ned til gulvet).'  def='ha noe etter seg som en «hale»; som henger/går bak en person hele tiden'
+    MERGED 'på slep (et)'  note=''  def='som henger/går bak en person hele tiden'
+
+  GROUP 'alskens'
+    KEPT   'alskens'  note=''  def='allslags; alt mulig; alle mulige; allslags; alle mulige typer; allslags'
+    MERGED 'alskens'  note=''  def='allslags; alle mulige typer'
+    MERGED 'alskens'  note=''  def='allslags'
+    MERGED 'alskens'  note=''  def='allslags'
+    MERGED 'alskens'  note=''  def='allslags'
+
+  GROUP 'ikke en kjeft'
+    KEPT   'ikke en kjeft'  note='Å være stor i kjeften = å skryte. Hold kjeft! (ufint) = vær stille! Stopp kjeften hans = få ham til å være stille! | Å være stor i kjeften = å skryte. Å få kjeft = å få sterk kritikk; å bli kraftig irettesatt.'  def='ingen; ikke en eneste; ingen; ikke en sjel'
+    MERGED 'ikke en kjeft'  note='Å være stor i kjeften = å skryte. Å få kjeft = å få sterk kritikk; å bli kraftig irettesatt.'  def='ingen; ikke en sjel'
+
+  GROUP 'skjellsord'
+    KEPT   'skjellsord (et)'  note='Å skjelle og smelle på noen = å kjefte på noen.'  def='ufint, uhøflig ord; ord man bruker når man kjefter på noen og kritiserer noen; ord en bruker for å kjefte på noen'
+    MERGED 'skjellsord (et)'  note=''  def='ord en bruker for å kjefte på noen'
+
+  GROUP 'frese'
+    KEPT   'å frese'  note='Smøret freser i panna. Han bruker snøfreser for å få bort all snøen. | Å frese fisk i olje = å steke fisk i olje på sterk varme.'  def='her: snakke på en sint måte; her: være sint'
+    MERGED 'å frese'  note='Å frese fisk i olje = å steke fisk i olje på sterk varme.'  def='her: være sint'
+
+  GROUP 'ettertrykkelig'
+    KEPT   'ettertrykkelig'  note=''  def='kraftig; grundig; med full tyngde'
+    MERGED 'ettertrykkelig'  note=''  def='med full tyngde'
+
+  GROUP 'strengt tatt'
+    KEPT   'strengt tatt'  note=''  def='egentlig; i grunnen; egentlig'
+    MERGED 'strengt tatt'  note=''  def='egentlig'
+
+  GROUP 'stryke på dør'
+    KEPT   'å stryke på dør'  note=''  def='dra ut av døra i full fart (gjerne i sinne); fare ut i sinne'
+    MERGED 'å stryke på dør'  note=''  def='fare ut i sinne'
+
+  GROUP 'avkrok'
+    KEPT   'avkrok (en)'  note=''  def='sted som ligger avsides; usentralt sted; sted som ligger avsides; usentralt sted; avsidesliggende sted'
+    MERGED 'avkrok (en)'  note=''  def='sted som ligger avsides'
+    MERGED 'avkrok (en)'  note=''  def='usentralt sted; avsidesliggende sted'
+
+  GROUP 'være til bry'
+    KEPT   'være til bry'  note='Jeg bryr meg om deg = Jeg er glad i deg. Jeg vil ikke være til bry = Jeg vil ikke være til besvær (problem). Unnskyld at jeg bryr deg = Unnskyld at jeg forstyrrer deg. Jeg har fått mye igjen for bryet = Jeg har hatt fordel av å gjøre det jeg gjorde.'  def='være et problem; være til besvær; være plagsom; utgjøre et problem'
+    MERGED 'være til bry'  note=''  def='være plagsom; utgjøre et problem'
+
+  GROUP 'tiltalende'
+    KEPT   'tiltalende'  note='Han er tiltalt = Han har en juridisk anklage mot seg.'  def='tiltrekkende; attraktiv; attraktiv; forlokkende'
+    MERGED 'tiltalende'  note=''  def='attraktiv; forlokkende'
+
+  GROUP 'gåte'
+    KEPT   'gåte (en/ei)'  note='Kan du gjette denne gåten? Er det lov å gifte seg med sin enkes søster? Svar: Nei, det er verken lov eller mulig å gifte seg etter at man er død. | Gåte: Hva er det som går og går og aldri kommer til døra? (Svar: Klokka.)'  def='vanskelig sak; her: vanskelig eller mystisk sak'
+    MERGED 'gåte (en/ei)'  note='Gåte: Hva er det som går og går og aldri kommer til døra? (Svar: Klokka.)'  def='her: vanskelig eller mystisk sak'
+
+  GROUP 'sjeleglad'
+    KEPT   'sjeleglad'  note=''  def='veldig glad; lettet; svært glad'
+    MERGED 'sjeleglad'  note=''  def='svært glad'
+
+  GROUP 'dirre'
+    KEPT   'å dirre'  note='Dirre og vibrere har omtrent samme styrke. Skjelve er litt sterkere – og riste er enda sterkere.'  def='vibrere'
+    MERGED 'å dirre'  note=''  def='vibrere'
+
+  GROUP 'late til'
+    KEPT   'å late til'  note='Ikke bland å late til med å late som: Hun later som hun sover = Hun sover ikke, men hun har lukkede øyne. | I går latet vi oss hele dagen = I går slappet vi av hele dagen.'  def='se ut til; virke som; se ut til; gi inntrykk av; se ut til'
+    MERGED 'å late til'  note='I går latet vi oss hele dagen = I går slappet vi av hele dagen.'  def='se ut til; gi inntrykk av'
+    MERGED 'å late til'  note=''  def='se ut til'
+
+  GROUP 'krok'
+    KEPT   'krok (en)'  note=''  def='bøyd gjenstand man kan henge noe på / fiske med; hjørne; avsides sted'
+    MERGED 'krok (en)'  note=''  def='hjørne; avsides sted'
+
+  GROUP 'innpåsliten'
+    KEPT   'innpåsliten'  note=''  def='pågående; som ikke gir seg og som vil komme nær; påtrengende; som kommer for nær'
+    MERGED 'innpåsliten'  note=''  def='påtrengende; som kommer for nær'
+
+  GROUP 'foreteelse'
+    KEPT   'foreteelse (en)'  note=''  def='hendelse; handling; hendelse'
+    MERGED 'foreteelse (en)'  note=''  def='hendelse'
+    MERGED 'foreteelse (en)'  note=''  def='hendelse'
+
+  GROUP 'lavmælt'
+    KEPT   'lavmælt'  note='Å mæle = å snakke. Å miste munn og mæle = å ikke klare å snakke.'  def='med lav stemme; lav stemme; et mæle = stemme; taleevne'
+    MERGED 'lavmælt'  note=''  def='lav stemme; et mæle = stemme; taleevne'
+    MERGED 'lavmælt'  note=''  def='med lav stemme'
+
+  GROUP 'tilkjennegi'
+    KEPT   'å tilkjennegi'  note=''  def='gi uttrykk for'
+    MERGED 'å tilkjennegi'  note=''  def='gi uttrykk for'
+
+  GROUP 'lystig'
+    KEPT   'lystig'  note=''  def='glad; munter; glad'
+    MERGED 'lystig'  note=''  def='glad'
+    MERGED 'lystig'  note=''  def='glad'
+
+  GROUP 'uhemmet'
+    KEPT   'uhemmet'  note=''  def='fri; hemningsløs; uten å føle seg styrt av noe; uten hemninger; fullstendig frigjort'
+    MERGED 'uhemmet'  note=''  def='uten hemninger; fullstendig frigjort'
+
+  GROUP 'i ett sett'
+    KEPT   'i ett sett'  note=''  def='hele tiden; ustanselig; stadig'
+    MERGED 'i ett sett'  note=''  def='stadig'
+
+  GROUP 'misbilligende'
+    KEPT   'misbilligende'  note=''  def='kritiserende; ikke anerkjennende; som ikke anerkjenner/godtar'
+    MERGED 'misbilligende'  note=''  def='som ikke anerkjenner/godtar'
+
+  GROUP 'utfolde seg'
+    KEPT   'å utfolde seg'  note=''  def='la komme til uttrykk; vise seg; utvikle seg; utvikle seg; realisere seg'
+    MERGED 'å utfolde seg'  note=''  def='utvikle seg; realisere seg'
+
+  GROUP 'stillferdig'
+    KEPT   'stillferdig'  note=''  def='beskjeden; tilbakeholden; beskjeden; uten bråk'
+    MERGED 'stillferdig'  note=''  def='beskjeden; uten bråk'
+
+  GROUP 'vekselvis'
+    KEPT   'vekselvis'  note=''  def='skiftevis (jeg ser på deg og du ser på meg – men ikke samtidig = vi ser vekselvis på hverandre); skiftevis'
+    MERGED 'vekselvis'  note=''  def='skiftevis'
+
+  GROUP 'forutsigbar'
+    KEPT   'forutsigbar'  note=''  def='som man kan forutsi; når man kan si hva som vil skje, er det forutsigbart; som man lett kan forstå/forutse tankene til; forutsigelig'
+    MERGED 'forutsigbar'  note=''  def='som man lett kan forstå/forutse tankene til; forutsigelig'
+
+  GROUP 'ense'
+    KEPT   'å ense'  note=''  def='bry seg om; legge merke til; bry seg om; legge merke til'
+    MERGED 'å ense'  note=''  def='bry seg om'
+    MERGED 'å ense'  note=''  def='legge merke til'
+    MERGED 'å ense'  note=''  def='bry seg om'
+    MERGED 'å ense'  note=''  def='legge merke til'
+
+  GROUP 've (n) og vel (n)'
+    KEPT   've (n) og vel (n)'  note='Borettslagets vel har møte i dag = Borettslagets forening har møte i dag.'  def='velferd'
+    MERGED 've (n) og vel (n)'  note=''  def='velferd'
+
+  GROUP 'fornemme'
+    KEPT   'å fornemme'  note=''  def='oppfatte; ha en svak følelse av; oppfatte; føle; føle svakt; oppfatte; føle svakt; ane'
+    MERGED 'å fornemme'  note=''  def='oppfatte; føle'
+    MERGED 'å fornemme'  note=''  def='føle svakt; oppfatte'
+    MERGED 'å fornemme'  note=''  def='føle svakt; ane'
+
+  GROUP 'i påvente av'
+    KEPT   'i påvente av'  note=''  def='mens man venter på'
+    MERGED 'i påvente av'  note=''  def='mens man venter på'
+
+  GROUP 'måpende'
+    KEPT   'måpende'  note=''  def='når man stirrer på noe/noen med åpen munn, er man måpende; når man stirrer uforstående med åpen munn, er man måpende'
+    MERGED 'måpende'  note=''  def='når man stirrer uforstående med åpen munn, er man måpende'
+
+  GROUP 'skarp tunge'
+    KEPT   'skarp tunge (en/ei)'  note=''  def='en person som har en skarp tunge, er direkte og kanskje frekk; frekk talemåte'
+    MERGED 'skarp tunge (en/ei)'  note=''  def='frekk talemåte'
+
+  GROUP 'inntullet'
+    KEPT   'inntullet'  note=''  def='«pakket» inn i; når man har et pledd godt rundt seg, er man inntullet i pleddet; pakket inn i'
+    MERGED 'inntullet'  note=''  def='pakket inn i'
+
+  GROUP 'bruse'
+    KEPT   'å bruse'  note='De bruste seg kraftig opp på møtet = De ble veldig sinte på møtet.'  def='når blodet bruser, kjenner man sterke følelser og indre bevegelse; her: storme; koke (billedlig, om å ha sterke følelser); suse sterkt; syde; skumme'
+    MERGED 'å bruse'  note=''  def='her: storme; koke (billedlig, om å ha sterke følelser)'
+    MERGED 'å bruse'  note=''  def='suse sterkt; syde; skumme'
+
+  GROUP 'bakse'
+    KEPT   'å bakse'  note=''  def='her: hytte med armen; bruke armen med store, slitsomme bevegelser; streve; bevege seg med tunge/vanskelige bevegelser'
+    MERGED 'å bakse'  note=''  def='streve; bevege seg med tunge/vanskelige bevegelser'
+
+  GROUP 'neve'
+    KEPT   'neve (en)'  note='Siden jeg var en neve stor … = Siden jeg var liten. Han slo til med knyttneven = Han slo med knyttet (lukket) hånd. | Fra jeg var en neve stor = fra jeg var liten.'  def='hånd'
+    MERGED 'neve (en)'  note='Fra jeg var en neve stor = fra jeg var liten.'  def='hånd'
+    MERGED 'neve (en)'  note=''  def='hånd'
+
+  GROUP 'klam'
+    KEPT   'klam'  note='Fortiden ligger som en klam hånd over familien = Fortiden plager og preger familien.'  def='fuktig'
+    MERGED 'klam'  note=''  def='fuktig'
+
+  GROUP 'flire'
+    KEPT   'å flire'  note=''  def='le ondskapsfullt; le og vise tenner; le (ofte ondskapsfullt)'
+    MERGED 'å flire'  note=''  def='le (ofte ondskapsfullt)'
+
+  GROUP 'hånlig'
+    KEPT   'hånlig'  note=''  def='foraktelig; når man viser at det er noen man ikke respekterer, kan man være hånlig; spottende; med forakt (mangel på respekt); respektløs; diskriminerende'
+    MERGED 'hånlig'  note=''  def='spottende; med forakt (mangel på respekt)'
+    MERGED 'hånlig'  note=''  def='respektløs; diskriminerende'
+
+  GROUP 'døsig'
+    KEPT   'døsig'  note=''  def='søvnig; dorsk'
+    MERGED 'døsig'  note=''  def='søvnig; dorsk'
+
+  GROUP 'seig'
+    KEPT   'seig'  note='Han er seig = Han lever lenge og dør ikke lett. Kjøttet er seigt = Kjøttet er vanskelig å tygge.'  def='tykk; klebrig; som fester seg sammen; her: som overlever lenge; som ikke gir seg lett; utholdende'
+    MERGED 'seig'  note=''  def='her: som overlever lenge; som ikke gir seg lett'
+    MERGED 'seig'  note=''  def='utholdende'
+
+  GROUP 'det svimler for henne'
+    KEPT   'å det svimler for henne'  note=''  def='hun blir svimmel; hun blir svimmel/uvel'
+    MERGED 'det svimler for henne'  note=''  def='hun blir svimmel/uvel'
+
+  GROUP 'opprømt'
+    KEPT   'opprømt'  note=''  def='glad; i god stemning; glad; glad; litt gira'
+    MERGED 'opprømt'  note=''  def='glad'
+    MERGED 'opprømt'  note=''  def='glad; litt gira'
+
+  GROUP 'gedigen'
+    KEPT   'gedigen'  note=''  def='kjempestor'
+    MERGED 'gedigen'  note=''  def='kjempestor'
+
+  GROUP 'løvverk'
+    KEPT   'løvverk (et)'  note=''  def='alle bladene / alt løvet på et tre; bladene på et tre'
+    MERGED 'løvverk (et)'  note=''  def='bladene på et tre'
+
+  GROUP 'formelig'
+    KEPT   'formelig'  note='Det lyste formelig av henne. Hun løp formelig forbi dem. Hun føler seg formelig som ansatt i bedriften.'  def='nesten; omtrent; rent; nesten; omtrent; nesten; likefram'
+    MERGED 'formelig'  note=''  def='nesten; omtrent'
+    MERGED 'formelig'  note=''  def='nesten; likefram'
+
+  GROUP 'vilter'
+    KEPT   'vilter'  note=''  def='uregjerlig; ustyrlig; aktiv; vill'
+    MERGED 'vilter'  note=''  def='aktiv; vill'
+
+  GROUP 'smidig'
+    KEPT   'smidig'  note=''  def='myk; spenstig; myk; elastisk; elastisk'
+    MERGED 'smidig'  note=''  def='myk; elastisk'
+    MERGED 'smidig'  note=''  def='elastisk'
+
+  GROUP 'sviende'
+    KEPT   'sviende'  note=''  def='som svir; som gjør vondt; vond; brennende'
+    MERGED 'sviende'  note=''  def='vond; brennende'
+
+  GROUP 'helt og holdent'
+    KEPT   'helt og holdent'  note=''  def='fullstendig; totalt; fullstendig'
+    MERGED 'helt og holdent'  note=''  def='fullstendig'
+
+  GROUP 'gynge'
+    KEPT   'å gynge'  note='Hun følte seg på gyngende grunn = Hun var i en usikker situasjon.'  def='svaie; bevege seg fram og tilbake; vogge, svaie; her: være usikker'
+    MERGED 'å gynge'  note=''  def='vogge, svaie; her: være usikker'
+
+  GROUP 'ljome'
+    KEPT   'å ljome'  note=''  def='gi lyd; gjalle; gjalle; runge'
+    MERGED 'å ljome'  note=''  def='gjalle; runge'
+
+  GROUP 'lugg'
+    KEPT   'lugg (en)'  note=''  def='hår som henger ned i pannen; pannehår; hår som henger ned i pannen'
+    MERGED 'lugg (en)'  note=''  def='hår som henger ned i pannen'
+    MERGED 'lugg (en)'  note=''  def='hår som henger ned i pannen'
+
+  GROUP 'svunnen'
+    KEPT   'svunnen'  note='Den er forsvunnet = Den er borte (nær i tid). Den er svunnen = Den er borte (i en mer fjern tid).'  def='som er blitt borte; som har blitt borte'
+    MERGED 'svunnen'  note=''  def='som har blitt borte'
+
+  GROUP 'tråkke'
+    KEPT   'å tråkke'  note='Jeg føler meg tråkket på = Jeg føler meg dårlig behandlet. Han følte de tråkket ham på tærne = Han følte de fornærmet ham. Nå har jeg tråkket i salaten = Nå har jeg gjort noe upassende.'  def='gå på noe; sette foten på'
+    MERGED 'å tråkke'  note=''  def='sette foten på'
+
+  GROUP 'slynge'
+    KEPT   'å slynge'  note=''  def='kaste'
+    MERGED 'å slynge'  note=''  def='kaste'
+
+  GROUP 'uføre'
+    KEPT   'uføre (et)'  note=''  def='uframkommelig område; vanskelig situasjon; vanskelig situasjon'
+    MERGED 'uføre (et)'  note=''  def='vanskelig situasjon'
+
+  GROUP 'gjørme'
+    KEPT   'gjørme (en/ei)'  note=''  def='jord og vann blandet sammen; blanding av vann og jord'
+    MERGED 'gjørme (en/ei)'  note=''  def='blanding av vann og jord'
+
+  GROUP 'matt'
+    KEPT   'matt'  note='Hun har et matt uttrykk i øynene = Hun ser trett og trist ut.'  def='glansløs; her: uten glans; glansløs; uten skinn'
+    MERGED 'matt'  note=''  def='her: uten glans'
+    MERGED 'matt'  note=''  def='glansløs; uten skinn'
+
+  GROUP 'dus'
+    KEPT   'dus'  note='Er du dus eller dis med kong Harald? = Sier du «du» eller «De» til kong Harald?'  def='mild; avdempet; mild; dempet; avdempet; mild (om farger, lys, etc.)'
+    MERGED 'dus'  note=''  def='mild; dempet'
+    MERGED 'dus'  note=''  def='avdempet; mild (om farger, lys, etc.)'
+
+  GROUP 'fortrolig'
+    KEPT   'fortrolig'  note=''  def='som en betror seg til; som en forteller personlige ting til; tillitsfull'
+    MERGED 'fortrolig'  note=''  def='tillitsfull'
+
+  GROUP 'flommende'
+    KEPT   'flommende'  note=''  def='som strømmer rikelig (som vannet i ei elv); strømmende; som kommer i stor mengde'
+    MERGED 'flommende'  note=''  def='strømmende; som kommer i stor mengde'
+
+  GROUP 'stryk'
+    KEPT   'stryk (et)'  note='Han fikk stryk på eksamen = Han bestod ikke eksamen. Gutten fikk stryk av sin far = Gutten ble slått av sin far.'  def='her: del av en elv der det er sterk strøm; her: elv med sterk strøm'
+    MERGED 'stryk (et)'  note=''  def='her: elv med sterk strøm'
+
+  GROUP 'gryende'
+    KEPT   'gryende'  note=''  def='begynnende'
+    MERGED 'gryende'  note=''  def='begynnende'
+
+  GROUP 'flette'
+    KEPT   'å flette'  note=''  def='tvinne; slynge sammen; når tre (eller flere) deler av håret er festet sammen i hverandre på en spesiell måte, har man laget en flette'
+    MERGED 'flette (en/ei)'  note=''  def='når tre (eller flere) deler av håret er festet sammen i hverandre på en spesiell måte, har man laget en flette'
+
+  GROUP 'opphav'
+    KEPT   'opphav (et)'  note='Han spør alltid opphavet om lov = Han spør alltid foreldrene om lov.'  def='opprinnelse (m); utgangspunkt; opprinnelse'
+    MERGED 'opphav (et)'  note=''  def='utgangspunkt; opprinnelse'
+
+  GROUP 'fri seg fra'
+    KEPT   'å fri seg fra'  note=''  def='gjøre seg fri og uavhengig av; komme seg løs fra'
+    MERGED 'å fri seg fra'  note=''  def='komme seg løs fra'
+
+  GROUP 'smuldre opp'
+    KEPT   'å smuldre opp'  note=''  def='løse seg opp i små deler; løse seg opp i smådeler'
+    MERGED 'å smuldre opp'  note=''  def='løse seg opp i smådeler'
+
+  GROUP 'i tide og utide'
+    KEPT   'i tide og utide'  note=''  def='både når det passer, og når det ikke passer; når det passer og når det ikke passer'
+    MERGED 'i tide og utide'  note=''  def='når det passer og når det ikke passer'
+
+  GROUP 'smyge seg'
+    KEPT   'å smyge seg'  note=''  def='liste seg; bevege seg stille; bevege seg stille'
+    MERGED 'å smyge seg'  note=''  def='bevege seg stille'
+
+  GROUP 'nøle'
+    KEPT   'å nøle'  note=''  def='vakle; ikke vite helt hva man skal gjøre; være ubesluttsom'
+    MERGED 'å nøle'  note=''  def='være ubesluttsom'
+
+  GROUP 'grånende'
+    KEPT   'grånende'  note=''  def='som begynner å bli grått; som begynner å bli grå'
+    MERGED 'grånende'  note=''  def='som begynner å bli grå'
+
+  GROUP 'gjennomtrengende'
+    KEPT   'gjennomtrengende'  note=''  def='som går gjennom (i billedlig betydning); som går gjennom marg og ben'
+    MERGED 'gjennomtrengende'  note=''  def='som går gjennom marg og ben'
+
+  GROUP 'være blottet for'
+    KEPT   'være blottet for'  note=''  def='være fri for; ikke ha; mangle fullstendig'
+    MERGED 'være blottet for'  note=''  def='mangle fullstendig'
+
+  GROUP 'betvile'
+    KEPT   'å betvile'  note=''  def='tvile på'
+    MERGED 'å betvile'  note=''  def='tvile på'
+
+  GROUP 'rusten'
+    KEPT   'rusten'  note=''  def='angrepet av rødbrunt jernoksid (som kommer på stål i fuktig luft); angrepet av jernoksid'
+    MERGED 'rusten'  note=''  def='angrepet av jernoksid'
+
+  GROUP 'få nyss om'
+    KEPT   'å få nyss om'  note=''  def='få rede på; få vite om; få vite; få rede på'
+    MERGED 'få nyss om'  note=''  def='få vite; få rede på'
+
+  GROUP 'bli unnfanget'
+    KEPT   'bli unnfanget'  note=''  def='bli skapt/avlet; her: bli uttenkt (om plan)'
+    MERGED 'bli unnfanget'  note=''  def='her: bli uttenkt (om plan)'
+
+  GROUP 'usigelig'
+    KEPT   'usigelig'  note=''  def='som ikke kan beskrives med ord; ubeskrivelig'
+    MERGED 'usigelig'  note=''  def='ubeskrivelig'
+
+  GROUP 'hengi seg til'
+    KEPT   'å hengi seg til'  note=''  def='vie/bruke all sin tid og energi på noe; bruke sin tid og sin energi på'
+    MERGED 'å hengi seg til'  note=''  def='bruke sin tid og sin energi på'
+
+  GROUP 'fager'
+    KEPT   'fager'  note=''  def='vakker; nydelig; vakker'
+    MERGED 'fager'  note=''  def='vakker'
+
+  GROUP 'gjøremål'
+    KEPT   'gjøremål (et)'  note=''  def='arbeidsoppgave; noe man må gjøre; noe man må gjøre; arbeidsoppgave'
+    MERGED 'gjøremål (et)'  note=''  def='noe man må gjøre; arbeidsoppgave'
+
+  GROUP 'klemme til'
+    KEPT   'å klemme til'  note=''  def='presse og holde hardt; presse'
+    MERGED 'å klemme til'  note=''  def='presse'
+
+  GROUP 'strå'
+    KEPT   'strå (et)'  note='Han føler seg høyt på strå = Han føler han har en høy sosial stilling.'  def='halm; tørket gress; stengel av gress; langt gresstrå'
+    MERGED 'strå (et)'  note=''  def='stengel av gress; langt gresstrå'
+
+  GROUP 'gnisse'
+    KEPT   'å gnisse'  note=''  def='skurre; lage lyd fordi noe gnis mot hverandre; gni mot hverandre; skure'
+    MERGED 'å gnisse'  note=''  def='gni mot hverandre; skure'
+
+  GROUP 'romme'
+    KEPT   'å romme'  note=''  def='ha plass til; inneholde'
+    MERGED 'å romme'  note=''  def='inneholde'
+    MERGED 'å romme'  note=''  def='inneholde'
+
+  GROUP 'krampetrekning'
+    KEPT   'krampetrekning (en/ei)'  note='Krampetrekning = muskelsammentrekning (som kan være smertefull)'  def='her: «krampetrekning» refererer til solen som holder på å gå ned; muskelsammentrekning; spasme'
+    MERGED 'krampetrekning (en/ei)'  note=''  def='muskelsammentrekning; spasme'
+
+  GROUP 'sile'
+    KEPT   'å sile'  note=''  def='her: renne i en liten strøm; renne'
+    MERGED 'å sile'  note=''  def='renne'
+
+  GROUP 'jage'
+    KEPT   'å jage'  note=''  def='fare fort; bevege seg fort; forfølge; skremme bort'
+    MERGED 'å jage'  note=''  def='forfølge; skremme bort'
+
+  GROUP 'påfallende'
+    KEPT   'påfallende'  note=''  def='iøynefallende; som er lett å legge merke til (fordi det er uvanlig/spesielt); uvanlig; som man lett legger merke til (fordi det er annerledes); iøynefallende; lett å se'
+    MERGED 'påfallende'  note=''  def='uvanlig; som man lett legger merke til (fordi det er annerledes)'
+    MERGED 'påfallende'  note=''  def='iøynefallende; lett å se'
+
+  GROUP 'oppspilt'
+    KEPT   'oppspilt'  note=''  def='spent; nervøs; her: spent'
+    MERGED 'oppspilt'  note=''  def='her: spent'
+
+  GROUP 'inntreden'
+    KEPT   'inntreden (en)'  note=''  def='det å gå inn (et sted); det å komme inn i'
+    MERGED 'inntreden (en)'  note=''  def='det å komme inn i'
+
+  GROUP 'ved et trylleslag'
+    KEPT   'ved et trylleslag'  note=''  def='plutselig (som om noe magisk har skjedd); plutselig (om noe positivt som skjer)'
+    MERGED 'ved et trylleslag'  note=''  def='plutselig (om noe positivt som skjer)'
+
+  GROUP 'klirre'
+    KEPT   'å klirre'  note=''  def='lage en klingende lyd (av for eksempel metall eller glass mot en hard overflate); lage en klirrende/singlende lyd (f.eks. metallbiter eller glass)'
+    MERGED 'å klirre'  note=''  def='lage en klirrende/singlende lyd (f.eks. metallbiter eller glass)'
+
+  GROUP 'forsoning'
+    KEPT   'forsoning (en/ei)'  note=''  def='avtale om å bli venner igjen; forlik; avtale om fred/ro'
+    MERGED 'forsoning (en/ei)'  note=''  def='forlik; avtale om fred/ro'
+
+  GROUP 'påtrengende'
+    KEPT   'påtrengende'  note=''  def='nærgående; som kommer for nær; noe man ikke kan se bort fra; nærgående; som kommer for nær'
+    MERGED 'påtrengende'  note=''  def='nærgående; som kommer for nær'
+
+  GROUP 'slamre'
+    KEPT   'å slamre'  note=''  def='smelle; lage høy og støyende lyd; smelle; lage høy lyd'
+    MERGED 'å slamre'  note=''  def='smelle; lage høy lyd'
+
+  GROUP 'brokete'
+    KEPT   'brokete'  note=''  def='som er sammensatt av mange ulike elementer'
+    MERGED 'brokete'  note=''  def='som er sammensatt av mange ulike elementer'
+
+  GROUP 'ullen'
+    KEPT   'ullen'  note='Gutten hadde på seg en ullen genser = Gutten hadde på seg en «hårete» genser.'  def='her: uklar; uklar'
+    MERGED 'ullen'  note=''  def='uklar'
+
+  GROUP 'flimre over netthinnen'
+    KEPT   'å flimre over netthinnen'  note=''  def='bevege seg urolig over det indre øyet (der hvor synsbildet dannes); bevege seg urolig over det indre øyet'
+    MERGED 'å flimre over netthinnen'  note=''  def='bevege seg urolig over det indre øyet (der hvor synsbildet dannes)'
+    MERGED 'å flimre over netthinnen'  note=''  def='bevege seg urolig over det indre øyet'
+
+  GROUP 'ugjenkallelig'
+    KEPT   'ugjenkallelig'  note=''  def='som ikke kan endres'
+    MERGED 'ugjenkallelig'  note=''  def='som ikke kan endres'
+    MERGED 'ugjenkallelig'  note=''  def='som ikke kan endres'
+
+  GROUP 'kammer'
+    KEPT   'kammer (et)'  note='Spiskammer = rom hvor man har mat. Lønnkammer = rom hvor man er for seg selv / hvor man er privat. Gravkammer = rom hvor døde mennesker ligger. Hjertekammer = det innerste rommet i hver hjertehalvdel. Politikammer = politihus. På kammerset = i det mest private.'  def='rom; værelse; rom'
+    MERGED 'kammer (et)'  note=''  def='værelse; rom'
+
+  GROUP 'flakkende'
+    KEPT   'flakkende'  note=''  def='som beveger seg urolig'
+    MERGED 'flakkende'  note=''  def='som beveger seg urolig'
+
+  GROUP 'stubbe'
+    KEPT   'stubbe (en)'  note=''  def='gjenstående del av et tre som er hogd; rest av et hogget tre'
+    MERGED 'stubbe (en)'  note=''  def='rest av et hogget tre'
+
+  GROUP 'streng'
+    KEPT   'streng (en)'  note=''  def='snor; billedlig: bånd mellom mennesker; snor; også billedlig: forbindelse'
+    MERGED 'streng (en)'  note=''  def='snor; også billedlig: forbindelse'
+
+  GROUP 'lunefull'
+    KEPT   'lunefull'  note=''  def='uberegnelig; en lunefull person endrer humør raskt; som raskt endrer humør (fra glad til sint)'
+    MERGED 'lunefull'  note=''  def='som raskt endrer humør (fra glad til sint)'
+
+  GROUP 'bivåne'
+    KEPT   'å bivåne'  note=''  def='være vitne til'
+    MERGED 'å bivåne'  note=''  def='være vitne til'
+
+  GROUP 'ussel'
+    KEPT   'ussel'  note=''  def='fattigslig; smålig; tarvelig; fattigslig; elendig'
+    MERGED 'ussel'  note=''  def='fattigslig; elendig'
+
+  GROUP 'fornedrelse'
+    KEPT   'fornedrelse (en)'  note=''  def='skam; med manglende respekt; forfall; skam'
+    MERGED 'fornedrelse (en)'  note=''  def='forfall; skam'
+    MERGED 'fornedrelse (en)'  note=''  def='forfall; skam'
+
+  GROUP 'rave'
+    KEPT   'å rave'  note=''  def='sjangle; gå hit og dit uten god balanse; sjangle; gå ustødig'
+    MERGED 'å rave'  note=''  def='sjangle; gå ustødig'
+
+  GROUP 'gjære'
+    KEPT   'å gjære'  note=''  def='ulme; være i bevegelse (på grunn av uro); være i bevegelse; ulme'
+    MERGED 'å gjære'  note=''  def='være i bevegelse; ulme'
+
+  GROUP 'streife'
+    KEPT   'å streife'  note=''  def='berøre. Tanken har ikke streifet ham = Tanken har ikke falt ham inn.; gå formålsløst omkring'
+    MERGED 'å streife'  note=''  def='gå formålsløst omkring'
+
+  GROUP 'klynk'
+    KEPT   'klynk (et)'  note=''  def='lyd (grunnet smerte eller klage); lyd man utstøter ved smerte'
+    MERGED 'klynk (et)'  note=''  def='lyd man utstøter ved smerte'
+
+  GROUP 'avgrunn'
+    KEPT   'avgrunn (en)'  note=''  def='bratt stup ned mot et dyp; svært dyp kløft (nedover); bratt stup nedover som man ser ikke hvor slutter; bratt stup nedover'
+    MERGED 'Avgrunn'  note=''  def='svært dyp kløft (nedover); bratt stup nedover som man ser ikke hvor slutter'
+    MERGED 'avgrunn (en)'  note=''  def='bratt stup nedover'
+
+  GROUP 'lokk'
+    KEPT   'lokk (en)'  note=''  def='krøllete del av håret; del av menneskehår'
+    MERGED 'lokk (en)'  note=''  def='del av menneskehår'
+
+  GROUP 'saumfare'
+    KEPT   'å saumfare'  note=''  def='undersøke; sjekke; undersøke nøye'
+    MERGED 'å saumfare'  note=''  def='undersøke nøye'
+
+  GROUP 'på randen'
+    KEPT   'på randen'  note=''  def='på kanten (like før man kanskje faller); på kanten'
+    MERGED 'På randen'  note=''  def='på kanten'
+
+  GROUP 'tappet for krefter'
+    KEPT   'tappet for krefter'  note=''  def='gått tom for energi; tom for energi'
+    MERGED 'tappet for krefter'  note=''  def='tom for energi'
+
+  GROUP 'formanende'
+    KEPT   'formanende'  note=''  def='advarende; sterkt oppfordrende; irettesettende; oppfordrende'
+    MERGED 'formanende'  note=''  def='irettesettende; oppfordrende'
+
+  GROUP 'dvele'
+    KEPT   'å dvele'  note=''  def='stoppe opp ved i tankene (og kanskje tenke litt for mye på)'
+    MERGED 'å dvele'  note=''  def='stoppe opp ved i tankene (og kanskje tenke litt for mye på)'
+
+  GROUP 'vantro'
+    KEPT   'vantro (en/ei)'  note=''  def='tvil'
+    MERGED 'vantro (en/ei)'  note=''  def='tvil'
+
+  GROUP 'kysten er klar'
+    KEPT   'kysten er klar'  note=''  def='det er ingen fare; man kan gjøre det man vil når kysten er klar; man kan gjøre det man vil (og være fri)'
+    MERGED 'kysten er klar'  note=''  def='man kan gjøre det man vil (og være fri)'
+
+  GROUP 'bytte'
+    KEPT   'bytte (et)'  note=''  def='her: noe som er tatt med makt / stjålet; her: noe man har stjålet'
+    MERGED 'bytte (et)'  note=''  def='her: noe man har stjålet'
+
+  GROUP 'nyskurt'
+    KEPT   'nyskurt'  note=''  def='nettopp vasket og skrubbet; nyvasket; nettopp skrubbet'
+    MERGED 'nyskurt'  note=''  def='nyvasket; nettopp skrubbet'
+
+  GROUP 'nevneverdig'
+    KEPT   'nevneverdig'  note=''  def='som det er verdt å nevne / snakke om; som det er verdt å snakke om'
+    MERGED 'nevneverdig'  note=''  def='som det er verdt å snakke om'
+
+  GROUP 'begi seg ut på'
+    KEPT   'å begi seg ut på'  note=''  def='starte en reise; reise av sted'
+    MERGED 'å begi seg ut på'  note=''  def='reise av sted'
+
+=== Phase 3: 55 normalized matches vs. production — resolution ===
+
+DROPPED (35 — confirmed 1:1 duplicate of existing production entry by
+lemma match, removed from arbeidsbok-resolved.json):
+på slep, bli kvitt, ha alt på stell, slå av en prat, fordypning,
+være ille ute, komme for en dag, beretning, late som, skam,
+stemme overens med, kappe, slette, ta beina på nakken,
+utsette noen for noe, forestilling, singel, gi noen inn, få rede på,
+ta affære, ikke eie nåla i veggen, forsoning, gå opp i røyk,
+samhørighet, ha en finger med i spillet, likegyldighet, verdighet,
+forfølgelse, gjøre seg gjeldende, stue seg sammen, kjensgjerning,
+finne seg til rette, gå i seg selv, myr, bli var noe
+(1626 → 1591 entries)
+
+KEPT AS DISTINCT SENSE (9 — different part of speech / meaning than the
+production match with the same lemma, left in arbeidsbok-resolved.json):
+sky (adj., shy — vs. production noun), å skue (verb, to gaze — vs.
+production noun 'a view'), stamme (en) (noun, trunk/core — vs. production
+verb 'to stutter'), å nå (verb, to reach — vs. production adverb 'now'),
+streng (en) (noun, cord/bond — vs. production adjective 'strict'),
+bar (adj., bare — vs. production noun 'a bar/pub'), å samtykke (verb —
+vs. production noun 'consent'), avsky (en) (noun, disgust — vs.
+production verb 'to despise'), bytte (et) (noun — vs. production verb
+'to trade').
+
+Status: all 55 normalized matches resolved.
+
+=== Phase 3: remaining duplicates, resolved by hand ===
+
+Re-ran a lemma-based check of arbeidsbok-resolved.json (1591 entries,
+all lemmas now filled) against all production vocab-*.json/uttrykk-*.json
+files. This catches anything missed by the original report, which ran
+before the 312 entries got their lemma filled in during batch review.
+
+DROPPED (3 — confirmed duplicate of existing production entry, same
+lemma and same core meaning):
+- 'gå over hodet på noen' (dup of u-c-628 / u-c-665 in uttrykk-c.json)
+- 'lyde' (dup of v-c-archaic-010 'lyde' in vocab-c.json)
+- 'drive noen til vanvidd' (dup of u-c-281 in uttrykk-c.json)
+(1591 → 1588 entries)
+
+MERGED (3 within-draft pairs — same word/lemma, same sense, found under
+two separate arbeidsbok entries; combined into one entry each with a
+combined definition):
+- 'pakk (et)' + 'pakk (et)' → one entry, definition combines
+  '«lav kategori»; «dårlig» menneske' and 'pøbel; person som ikke følger
+  lover og regler'
+- 'lømmel (en)' + 'lømmel (en)' → one entry, definition combines
+  '«lav kategori»; «dårlig» menneske' and 'hensynsløs ung mann'
+- 'fordypet' + 'være fordypet' → one entry ('fordypet', matching the
+  no-prefix adjective convention), definition combines 'konsentrert;
+  fokusert' and 'være konsentrert om; tenke veldig hardt på noe'
+(1588 → 1585 entries)
+
+KEPT AS DISTINCT SENSE (1 — genuine homograph, not a duplicate):
+- 'rekke' (verb) appears twice: sense 1 'her: få tid til' (to manage/
+  have time — irregular rekker–rakk–har rukket) and sense 2 'her: gi'
+  (to hand/pass something — weak rekker–rakte–har rakt). These are two
+  distinct Norwegian verbs that share the infinitive spelling; both kept.
+
+Final arbeidsbok-resolved.json: 1585 entries, 0 missing lemma, no
+remaining unexplained lemma+part collisions. Phase 3 duplicate check
+complete.

@@ -1,6 +1,6 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /**
- * check-uttrykk.mjs
+ * check-uttrykk.ts
  *
  * Validates all uttrykk-{level}.json and uttrykk-{level}-preview.json files
  * in src/lib/data against canonical rules.
@@ -23,12 +23,12 @@
  *  11. Preview cross-check — entries in preview should also exist in full file (by norsk)
  *
  * Usage:
- *   node scripts/check-uttrykk.mjs            # check all uttrykk files
- *   node scripts/check-uttrykk.mjs a1         # check only uttrykk-a1 files
- *   node scripts/check-uttrykk.mjs --strict   # exit 1 if any errors found
- *   node scripts/check-uttrykk.mjs --no-cross # skip preview cross-check
- *   node scripts/check-uttrykk.mjs --draft    # check draft/{level}/uttrykk-{level}-new.json instead
- *   node scripts/check-uttrykk.mjs c --draft  # check only draft/c/uttrykk-c-new.json
+ *   npx tsx scripts/check-uttrykk.ts            # check all uttrykk files
+ *   npx tsx scripts/check-uttrykk.ts a1         # check only uttrykk-a1 files
+ *   npx tsx scripts/check-uttrykk.ts --strict   # exit 1 if any errors found
+ *   npx tsx scripts/check-uttrykk.ts --no-cross # skip preview cross-check
+ *   npx tsx scripts/check-uttrykk.ts --draft    # check draft/{level}/uttrykk-{level}-new.json instead
+ *   npx tsx scripts/check-uttrykk.ts c --draft  # check only draft/c/uttrykk-c-new.json
  *
  * --draft mode (Step 3B in work-flow.md, run BEFORE Step 4 assigns real IDs):
  *   - Reads draft/{level}/uttrykk-{level}-new.json instead of src/lib/data/uttrykk-{level}.json
@@ -40,6 +40,7 @@
 import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { CATEGORIES_BY_LEVEL } from '../src/lib/config.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../src/lib/data');
@@ -66,47 +67,9 @@ const VALID_CATEGORIES = new Set(['uttrykk', 'uttrykk-preview']);
 
 // C-level uttrykk entries carry a real C category slug instead of the
 // generic "uttrykk" placeholder (see ai-docs/implementation/uttrykk-category.md
-// Phase 4 — folded in via scripts/apply-uttrykk-c-triage.mjs). Mirrors
-// CATEGORIES_BY_LEVEL.C in src/lib/config.ts.
-const C_CATEGORIES = new Set([
-  'philosophy',
-  'academic',
-  'formal-writing',
-  'rhetoric',
-  'complex-emotions',
-  'professional',
-  'abstract-concepts',
-  'politics-democracy',
-  'linguistics',
-  'media-journalism',
-  'architecture-design',
-  'diplomacy-international',
-  'finance-economics',
-  'medicine-healthcare',
-  'psychology-advanced',
-  'literary',
-  'archaic',
-  'proverbs',
-  'highly-formal',
-  'technical',
-  'advanced-law-justice',
-  'neuroscience-cognition',
-  'climate-environment-policy',
-  'sociology-anthropology',
-  'advanced-business-strategy',
-  'existential-abstract',
-  'nature-landscape',
-  'sensory-sound',
-  'physical-appearance',
-  'everyday-objects',
-  'character-temperament',
-  'embodied-emotion',
-  'manner-of-motion',
-  'interpersonal-conflict',
-  'intensifiers-degree',
-  'gastronomy',
-  'cultural-heritage'
-]);
+// Phase 4 — folded in via scripts/apply-uttrykk-c-triage.mjs). Real import
+// from CATEGORIES_BY_LEVEL.C in src/lib/config.ts — no more hand-copied set.
+const C_CATEGORIES = new Set(CATEGORIES_BY_LEVEL.C);
 
 // All translation languages the app supports. Entries may not have all of these
 // (e.g. a file that hasn't been translated yet), but if a language field is

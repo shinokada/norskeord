@@ -2,17 +2,114 @@
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
+When you do work, always keep what you have done in ai-docs/logs directory.
+
 svelte mcp server is running.
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
-I'm working on ai-docs/implementation/grammar-explanation-update.md. The following is from a previous session. Can you continue implementation.
+Transcribe attached Norwegian image(s) to markdown. Ignore any illustrations and hand-writings.
+
+---
+
+I was working on ai-docs/implementation/fix-vocab-uttrykk.md.
+
+The following is from the previous session. Continue where you left.
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+CLAUDE:
+
+ME:
+
+---
+
+I have draft/c/i-samme-baat-arbeidsbok/vocablarliste.json. The `norsk` field's value has (m/f), (adj.), (n), (v1), etc.
+I'd like to list all of these without duplicates. Can you create a m
+---
+
+When I click a search result, it goes to flashcards where it may be the word I was looking for.
+What can I improve it? More content in the search results using i18n or something else?
+
+---
+
+Search has arrow up and down to navigate but in the dark-mode, it is hard to see the heighlighted row.
+
+---
+
+In http://localhost:5173/blog, if I click one of level and click a post and come back, the level and the posts should be have the same status.
+
+---
+
+Transcribe attached Norwegian image(s) to markdown and append it to /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/c/i-samme-baat-arbeidsbok/questions.md.
 
 ---
 
 Transcribe attached images without fill up or write answers. Attached images are Norwegian.
 
 Ignore images, illustrations, image captions, and hand-writing.
+---
+
+Solve results of dedup-cross-file.mjs.
+
 ---
 
 - http://localhost:5173/norskproven has A2 and B1. I think I need to add B2 as well.

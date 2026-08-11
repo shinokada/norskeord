@@ -1,23 +1,5 @@
 [
   {
-    "id": "v-b1-accommodation-001",
-    "norsk": "blokk (en)",
-    "lemma": "blokk",
-    "english": "block / apartment building",
-    "ukrainian": "багатоквартирний будинок / блок",
-    "spanish": "bloque / edificio de apartamentos",
-    "german": "der Wohnblock / das Hochhaus",
-    "example": "De bor i en stor blokk med tjue leiligheter.",
-    "example_english": "They live in a large apartment building with twenty flats.",
-    "example_ukrainian": "Вони живуть у великому будинку з двадцятьма квартирами.",
-    "example_spanish": "Viven en un gran edificio de apartamentos con veinte pisos.",
-    "example_german": "Sie wohnen in einem großen Wohnblock mit zwanzig Wohnungen.",
-    "definition": "En stor bygning med mange leiligheter, eller et stykke av et materiale som er firkantet og solid.",
-    "level": "B1",
-    "category": "accommodation",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-accommodation-002",
     "norsk": "bolig (en)",
     "lemma": "bolig",
@@ -127,24 +109,6 @@
   },
   {
     "id": "v-b1-accommodation-008",
-    "norsk": "husleie (en)",
-    "lemma": "husleie",
-    "english": "rent (monthly payment)",
-    "ukrainian": "орендна плата",
-    "spanish": "el alquiler",
-    "german": "die Miete",
-    "example": "Husleien øker hvert år.",
-    "example_english": "The rent increases every year.",
-    "example_ukrainian": "Орендна плата зростає щороку.",
-    "example_spanish": "El alquiler sube cada año.",
-    "example_german": "Die Miete steigt jedes Jahr.",
-    "definition": "Det månedlige beløpet en leietaker betaler til utleier.",
-    "level": "B1",
-    "category": "accommodation",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-accommodation-009",
     "norsk": "kontrakt (en)",
     "lemma": "kontrakt",
     "english": "a contract",
@@ -162,7 +126,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-010",
+    "id": "v-b1-accommodation-009",
     "norsk": "leietaker (en)",
     "lemma": "leietaker",
     "english": "a tenant",
@@ -180,7 +144,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-011",
+    "id": "v-b1-accommodation-010",
     "norsk": "megler (en)",
     "lemma": "megler",
     "english": "an estate agent / a broker",
@@ -198,7 +162,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-012",
+    "id": "v-b1-accommodation-011",
     "norsk": "utleier (en)",
     "lemma": "utleier",
     "english": "a landlord / a landlady",
@@ -216,7 +180,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-013",
+    "id": "v-b1-accommodation-012",
     "norsk": "visning (en)",
     "lemma": "visning",
     "english": "a viewing / an open house",
@@ -234,7 +198,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-014",
+    "id": "v-b1-accommodation-013",
     "norsk": "boliglån (et)",
     "lemma": "boliglån",
     "english": "a mortgage",
@@ -252,7 +216,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-015",
+    "id": "v-b1-accommodation-014",
     "norsk": "borettslag (et)",
     "lemma": "borettslag",
     "english": "a housing cooperative",
@@ -270,7 +234,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-016",
+    "id": "v-b1-accommodation-015",
     "norsk": "depositum (et)",
     "lemma": "depositum",
     "english": "a deposit",
@@ -288,7 +252,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-017",
+    "id": "v-b1-accommodation-016",
     "norsk": "nabolag (et)",
     "lemma": "nabolag",
     "english": "a neighbourhood",
@@ -306,7 +270,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-018",
+    "id": "v-b1-accommodation-017",
     "norsk": "felleskostnad (en)",
     "lemma": "felleskostnad",
     "english": "common costs, shared expenses (in housing)",
@@ -324,7 +288,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-019",
+    "id": "v-b1-accommodation-018",
     "norsk": "å henge",
     "lemma": "henge",
     "english": "to hang",
@@ -342,25 +306,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-accommodation-020",
-    "norsk": "å leie",
-    "lemma": "leie",
-    "english": "to rent / rent",
-    "ukrainian": "орендувати / знімати",
-    "spanish": "alquilar / el alquiler",
-    "german": "mieten",
-    "example": "Vi ønsker å leie en leilighet i nærheten av sentrum.",
-    "example_english": "We want to rent an apartment close to the city centre.",
-    "example_ukrainian": "Ми хочемо орендувати квартиру поблизу центру.",
-    "example_spanish": "Queremos alquilar un apartamento cerca del centro.",
-    "example_german": "Wir möchten eine Wohnung in der Nähe des Stadtzentrums mieten.",
-    "definition": "Å betale penger for å bruke noe, for eksempel en bolig eller en bil, som tilhører en annen person.",
-    "level": "B1",
-    "category": "accommodation",
-    "part": "verb"
-  },
-  {
-    "id": "v-b1-accommodation-021",
+    "id": "v-b1-accommodation-019",
     "norsk": "møblert",
     "lemma": "møblert",
     "english": "furnished",
@@ -378,7 +324,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-accommodation-022",
+    "id": "v-b1-accommodation-020",
     "norsk": "røykvarsler (en)",
     "lemma": "røykvarsler",
     "english": "smoke detector",
@@ -396,7 +342,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-accommodation-023",
+    "id": "v-b1-accommodation-021",
     "norsk": "umøblert",
     "lemma": "umøblert",
     "english": "unfurnished",
@@ -1008,24 +954,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-city-life-008",
-    "norsk": "café (en)",
-    "lemma": "café",
-    "english": "a café",
-    "ukrainian": "кафе",
-    "spanish": "un café",
-    "german": "Café",
-    "example": "Vi møtes på kafeen.",
-    "example_english": "We meet at the café.",
-    "example_ukrainian": "Ми зустрічаємося в кафе.",
-    "example_spanish": "Quedamos en el café.",
-    "example_german": "Wir treffen uns im Café.",
-    "definition": "Et sted der man kan drikke kaffe, spise lett mat og slappe av.",
-    "level": "B1",
-    "category": "city-life",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-city-life-009",
     "norsk": "infrastruktur (en)",
     "lemma": "infrastruktur",
@@ -1620,7 +1548,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-017",
+    "id": "v-b1-communication-skills-016",
     "norsk": "flytende",
     "lemma": "flytende",
     "english": "fluent",
@@ -1638,7 +1566,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-communication-skills-018",
+    "id": "v-b1-communication-skills-017",
     "norsk": "å foreslå",
     "lemma": "foreslå",
     "english": "to suggest / to propose",
@@ -1656,7 +1584,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-019",
+    "id": "v-b1-communication-skills-018",
     "norsk": "forhånd (et)",
     "lemma": "forhånd",
     "english": "advance, beforehand",
@@ -1674,7 +1602,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-020",
+    "id": "v-b1-communication-skills-019",
     "norsk": "forleden",
     "lemma": "forleden",
     "english": "the other day, recently",
@@ -1692,7 +1620,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-communication-skills-021",
+    "id": "v-b1-communication-skills-020",
     "norsk": "formell",
     "lemma": "formell",
     "english": "formal",
@@ -1710,7 +1638,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-communication-skills-022",
+    "id": "v-b1-communication-skills-021",
     "norsk": "forresten",
     "lemma": "forresten",
     "english": "by the way, besides",
@@ -1728,7 +1656,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-communication-skills-023",
+    "id": "v-b1-communication-skills-022",
     "norsk": "forrige",
     "lemma": "forrige",
     "english": "previous, last",
@@ -1746,7 +1674,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-communication-skills-024",
+    "id": "v-b1-communication-skills-023",
     "norsk": "å forstyrre",
     "lemma": "forstyrre",
     "english": "to disturb, to interrupt",
@@ -1764,7 +1692,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-025",
+    "id": "v-b1-communication-skills-024",
     "norsk": "å godta",
     "lemma": "godta",
     "english": "to accept, to approve",
@@ -1782,7 +1710,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-026",
+    "id": "v-b1-communication-skills-025",
     "norsk": "hemmelig",
     "lemma": "hemmelig",
     "english": "secret",
@@ -1800,7 +1728,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-communication-skills-027",
+    "id": "v-b1-communication-skills-026",
     "norsk": "hemmelighet (en)",
     "lemma": "hemmelighet",
     "english": "secret",
@@ -1818,7 +1746,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-028",
+    "id": "v-b1-communication-skills-027",
     "norsk": "å hviske",
     "lemma": "hviske",
     "english": "to whisper",
@@ -1836,7 +1764,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-029",
+    "id": "v-b1-communication-skills-028",
     "norsk": "ifølge",
     "lemma": "ifølge",
     "english": "according to",
@@ -1854,7 +1782,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-b1-communication-skills-030",
+    "id": "v-b1-communication-skills-029",
     "norsk": "innlegg (et)",
     "lemma": "innlegg",
     "english": "post, entry, contribution, speech",
@@ -1872,7 +1800,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-031",
+    "id": "v-b1-communication-skills-030",
     "norsk": "inntrykk (et)",
     "lemma": "inntrykk",
     "english": "impression",
@@ -1890,7 +1818,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-032",
+    "id": "v-b1-communication-skills-031",
     "norsk": "å kalle",
     "lemma": "kalle",
     "english": "to call / to name",
@@ -1908,7 +1836,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-033",
+    "id": "v-b1-communication-skills-032",
     "norsk": "å karakterisere",
     "lemma": "karakterisere",
     "english": "to characterize / to describe",
@@ -1926,7 +1854,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-034",
+    "id": "v-b1-communication-skills-033",
     "norsk": "å kikke",
     "lemma": "kikke",
     "english": "to peek, to have a look",
@@ -1944,7 +1872,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-035",
+    "id": "v-b1-communication-skills-034",
     "norsk": "kommunikasjon (en)",
     "lemma": "kommunikasjon",
     "english": "communication",
@@ -1962,7 +1890,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-036",
+    "id": "v-b1-communication-skills-035",
     "norsk": "kroppsspråk (et)",
     "lemma": "kroppsspråk",
     "english": "body language",
@@ -1980,7 +1908,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-037",
+    "id": "v-b1-communication-skills-036",
     "norsk": "latter (en)",
     "lemma": "latter",
     "english": "laughter",
@@ -1998,7 +1926,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-038",
+    "id": "v-b1-communication-skills-037",
     "norsk": "å reagere",
     "lemma": "reagere",
     "english": "to react, to respond",
@@ -2016,7 +1944,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-039",
+    "id": "v-b1-communication-skills-038",
     "norsk": "råd (et)",
     "lemma": "råd",
     "english": "advice; council; means/solution",
@@ -2034,7 +1962,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-040",
+    "id": "v-b1-communication-skills-039",
     "norsk": "å sjekke",
     "lemma": "sjekke",
     "english": "to check",
@@ -2052,7 +1980,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-041",
+    "id": "v-b1-communication-skills-040",
     "norsk": "å skjule",
     "lemma": "skjule",
     "english": "to hide, to conceal",
@@ -2070,7 +1998,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-042",
+    "id": "v-b1-communication-skills-041",
     "norsk": "å skrike",
     "lemma": "skrike",
     "english": "to scream, to shout",
@@ -2088,7 +2016,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-043",
+    "id": "v-b1-communication-skills-042",
     "norsk": "slutt (en)",
     "lemma": "slutt",
     "english": "end / finish",
@@ -2106,7 +2034,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-044",
+    "id": "v-b1-communication-skills-043",
     "norsk": "spøk (en)",
     "lemma": "spøk",
     "english": "joke, prank",
@@ -2124,7 +2052,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-045",
+    "id": "v-b1-communication-skills-044",
     "norsk": "å stirre",
     "lemma": "stirre",
     "english": "to stare",
@@ -2142,7 +2070,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-046",
+    "id": "v-b1-communication-skills-045",
     "norsk": "stund (en)",
     "lemma": "stund",
     "english": "a while / a moment",
@@ -2160,7 +2088,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-047",
+    "id": "v-b1-communication-skills-046",
     "norsk": "taus",
     "lemma": "taus",
     "english": "silent / quiet",
@@ -2178,7 +2106,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-communication-skills-048",
+    "id": "v-b1-communication-skills-047",
     "norsk": "å tilby",
     "lemma": "tilby",
     "english": "to offer",
@@ -2196,7 +2124,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-049",
+    "id": "v-b1-communication-skills-048",
     "norsk": "tips (et)",
     "lemma": "tips",
     "english": "tip / advice / hint",
@@ -2214,7 +2142,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-050",
+    "id": "v-b1-communication-skills-049",
     "norsk": "tull (et)",
     "lemma": "tull",
     "english": "nonsense, rubbish",
@@ -2232,7 +2160,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-051",
+    "id": "v-b1-communication-skills-050",
     "norsk": "å tulle",
     "lemma": "tulle",
     "english": "to joke, to fool around",
@@ -2250,7 +2178,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-052",
+    "id": "v-b1-communication-skills-051",
     "norsk": "uformell",
     "lemma": "uformell",
     "english": "informal",
@@ -2268,7 +2196,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-communication-skills-053",
+    "id": "v-b1-communication-skills-052",
     "norsk": "unna",
     "lemma": "unna",
     "english": "away, out of the way",
@@ -2286,7 +2214,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-communication-skills-054",
+    "id": "v-b1-communication-skills-053",
     "norsk": "utkikk (en)",
     "lemma": "utkikk",
     "english": "lookout, watch",
@@ -2304,7 +2232,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-communication-skills-055",
+    "id": "v-b1-communication-skills-054",
     "norsk": "å virke",
     "lemma": "virke",
     "english": "to seem / to work / to function",
@@ -2322,7 +2250,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-056",
+    "id": "v-b1-communication-skills-055",
     "norsk": "å vise",
     "lemma": "vise",
     "english": "to show",
@@ -2340,7 +2268,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-057",
+    "id": "v-b1-communication-skills-056",
     "norsk": "å avkrefte",
     "lemma": "avkrefte",
     "english": "to deny / refute",
@@ -2358,7 +2286,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-058",
+    "id": "v-b1-communication-skills-057",
     "norsk": "å bekrefte",
     "lemma": "bekrefte",
     "english": "to confirm",
@@ -2376,7 +2304,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-059",
+    "id": "v-b1-communication-skills-058",
     "norsk": "å formidle",
     "lemma": "formidle",
     "english": "to convey / communicate",
@@ -2394,7 +2322,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-060",
+    "id": "v-b1-communication-skills-059",
     "norsk": "å formulere",
     "lemma": "formulere",
     "english": "to formulate",
@@ -2412,7 +2340,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-061",
+    "id": "v-b1-communication-skills-060",
     "norsk": "å oppklare",
     "lemma": "oppklare",
     "english": "to clarify",
@@ -2430,7 +2358,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-062",
+    "id": "v-b1-communication-skills-061",
     "norsk": "å oppsummere",
     "lemma": "oppsummere",
     "english": "to summarise",
@@ -2448,7 +2376,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-063",
+    "id": "v-b1-communication-skills-062",
     "norsk": "å overtale",
     "lemma": "overtale",
     "english": "to persuade",
@@ -2466,7 +2394,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-064",
+    "id": "v-b1-communication-skills-063",
     "norsk": "å rose",
     "lemma": "rose",
     "english": "to praise",
@@ -2484,7 +2412,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-065",
+    "id": "v-b1-communication-skills-064",
     "norsk": "å uttrykke seg",
     "lemma": "uttrykke seg",
     "english": "to express oneself",
@@ -4333,24 +4261,6 @@
     "example_spanish": "Oslo es una ciudad universitaria.",
     "example_german": "Oslo ist eine Studentenstadt.",
     "definition": "En person som studerer ved en skole, høyskole eller et universitet.",
-    "level": "B1",
-    "category": "education",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-education-013",
-    "norsk": "utdanning (en)",
-    "lemma": "utdanning",
-    "english": "an education",
-    "ukrainian": "освіта",
-    "spanish": "una educación / unos estudios",
-    "german": "die Ausbildung / das Studium",
-    "example": "Utdanning er gratis i Norge.",
-    "example_english": "Education is free in Norway.",
-    "example_ukrainian": "Освіта в Норвегії безкоштовна.",
-    "example_spanish": "La educación es gratuita en Noruega.",
-    "example_german": "Bildung ist in Norwegen kostenlos.",
-    "definition": "Det å lære faglig kunnskap og ferdigheter gjennom skole, studier eller kurs.",
     "level": "B1",
     "category": "education",
     "part": "noun"
@@ -7165,24 +7075,6 @@
   },
   {
     "id": "v-b1-finance-006",
-    "norsk": "å eie",
-    "lemma": "eie",
-    "english": "to own",
-    "ukrainian": "володіти / мати у власності",
-    "spanish": "tener / poseer",
-    "german": "besitzen / gehören",
-    "example": "De ønsker å eie sin egen bolig før de fyller tretti år.",
-    "example_english": "They want to own their own home before they turn thirty.",
-    "example_ukrainian": "Вони хочуть мати власне житло до тридцяти років.",
-    "example_spanish": "Quieren tener su propia vivienda antes de cumplir treinta años.",
-    "example_german": "Sie wollen ihre eigene Wohnung besitzen, bevor sie dreißig werden.",
-    "definition": "Å ha noe som tilhører deg, for eksempel en bil, et hus eller en gjenstand.",
-    "level": "B1",
-    "category": "finance",
-    "part": "verb"
-  },
-  {
-    "id": "v-b1-finance-007",
     "norsk": "bankkonto (en)",
     "lemma": "bankkonto",
     "english": "a bank account",
@@ -7200,7 +7092,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-008",
+    "id": "v-b1-finance-007",
     "norsk": "gjeld (en)",
     "lemma": "gjeld",
     "english": "a debt",
@@ -7218,7 +7110,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-009",
+    "id": "v-b1-finance-008",
     "norsk": "konto (en)",
     "lemma": "konto",
     "english": "an account",
@@ -7236,7 +7128,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-010",
+    "id": "v-b1-finance-009",
     "norsk": "kontoutskrift (en)",
     "lemma": "kontoutskrift",
     "english": "a bank statement",
@@ -7254,7 +7146,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-011",
+    "id": "v-b1-finance-010",
     "norsk": "minibank (en)",
     "lemma": "minibank",
     "english": "an ATM / a cash machine",
@@ -7272,7 +7164,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-012",
+    "id": "v-b1-finance-011",
     "norsk": "overføring (en)",
     "lemma": "overføring",
     "english": "a transfer",
@@ -7290,7 +7182,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-013",
+    "id": "v-b1-finance-012",
     "norsk": "regning (en)",
     "lemma": "regning",
     "english": "a bill",
@@ -7308,7 +7200,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-014",
+    "id": "v-b1-finance-013",
     "norsk": "rente (en)",
     "lemma": "rente",
     "english": "an interest rate",
@@ -7326,25 +7218,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-015",
-    "norsk": "lån (et)",
-    "lemma": "lån",
-    "english": "a loan",
-    "ukrainian": "кредит / позика",
-    "spanish": "un préstamo",
-    "german": "Darlehen (das) / Kredit (der)",
-    "example": "Vi søkte om et lån i banken.",
-    "example_english": "We applied for a loan at the bank.",
-    "example_ukrainian": "Ми подали заявку на кредит у банку.",
-    "example_spanish": "Solicitamos un préstamo en el banco.",
-    "example_german": "Wir haben einen Kredit bei der Bank beantragt.",
-    "definition": "Penger man låner og forplikter seg til å betale tilbake.",
-    "level": "B1",
-    "category": "finance",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-finance-016",
+    "id": "v-b1-finance-014",
     "norsk": "fellesgjeld (en)",
     "lemma": "fellesgjeld",
     "english": "shared debt, joint debt (in a housing cooperative)",
@@ -7362,7 +7236,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-017",
+    "id": "v-b1-finance-015",
     "norsk": "fellesutgift (en)",
     "lemma": "fellesutgift",
     "english": "shared expense, common expense",
@@ -7380,7 +7254,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-018",
+    "id": "v-b1-finance-016",
     "norsk": "folketrygd (en)",
     "lemma": "folketrygd",
     "english": "national insurance / social security",
@@ -7398,7 +7272,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-019",
+    "id": "v-b1-finance-017",
     "norsk": "forsikring (en)",
     "lemma": "forsikring",
     "english": "insurance",
@@ -7416,7 +7290,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-020",
+    "id": "v-b1-finance-018",
     "norsk": "inflasjon (en)",
     "lemma": "inflasjon",
     "english": "inflation",
@@ -7434,7 +7308,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-021",
+    "id": "v-b1-finance-019",
     "norsk": "investering (en)",
     "lemma": "investering",
     "english": "investment",
@@ -7452,7 +7326,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-022",
+    "id": "v-b1-finance-020",
     "norsk": "kostnad (en)",
     "lemma": "kostnad",
     "english": "cost, expense",
@@ -7470,7 +7344,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-023",
+    "id": "v-b1-finance-021",
     "norsk": "kredittkort (et)",
     "lemma": "kredittkort",
     "english": "credit card",
@@ -7488,7 +7362,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-024",
+    "id": "v-b1-finance-022",
     "norsk": "skatteregel (en)",
     "lemma": "skatteregel",
     "english": "tax rule",
@@ -7506,25 +7380,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-025",
-    "norsk": "å spare",
-    "lemma": "spare",
-    "english": "to save (money or resources)",
-    "ukrainian": "заощаджувати",
-    "spanish": "ahorrar",
-    "german": "sparen",
-    "example": "Jeg prøver å spare penger hver måned til en ferie.",
-    "example_english": "I try to save money every month for a holiday.",
-    "example_ukrainian": "Я намагаюся заощаджувати гроші щомісяця на відпустку.",
-    "example_spanish": "Intento ahorrar dinero cada mes para unas vacaciones.",
-    "example_german": "Ich versuche jeden Monat Geld für einen Urlaub zu sparen.",
-    "definition": "Å ikke bruke alle pengene eller ressursene man har, men legge dem til side til senere.",
-    "level": "B1",
-    "category": "finance",
-    "part": "verb"
-  },
-  {
-    "id": "v-b1-finance-026",
+    "id": "v-b1-finance-023",
     "norsk": "valuta (en)",
     "lemma": "valuta",
     "english": "currency / foreign exchange",
@@ -7542,7 +7398,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-finance-027",
+    "id": "v-b1-finance-024",
     "norsk": "å investere",
     "lemma": "investere",
     "english": "to invest",
@@ -7560,7 +7416,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-finance-028",
+    "id": "v-b1-finance-025",
     "norsk": "å nedbetale",
     "lemma": "nedbetale",
     "english": "to pay off / to repay",
@@ -7578,7 +7434,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-finance-029",
+    "id": "v-b1-finance-026",
     "norsk": "økonomi (en)",
     "lemma": "økonomi",
     "english": "economy / finances",
@@ -7771,24 +7627,6 @@
     "example_spanish": "El entrenador crea un programa de entrenamiento.",
     "example_german": "Der Trainer erstellt ein Trainingsprogramm.",
     "definition": "En strukturert plan for hvilke øvelser man skal gjøre og når.",
-    "level": "B1",
-    "category": "fitness",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-fitness-011",
-    "norsk": "form (en)",
-    "lemma": "form",
-    "english": "shape, form, condition",
-    "ukrainian": "форма (фізична)",
-    "spanish": "forma física / condición",
-    "german": "Form (die) / Kondition (die)",
-    "example": "Han er i veldig god form etter mange måneder med trening.",
-    "example_english": "He is in very good shape after many months of training.",
-    "example_ukrainian": "Він у дуже гарній формі після багатьох місяців тренувань.",
-    "example_spanish": "Él está en muy buena forma después de muchos meses de entrenamiento.",
-    "example_german": "Er ist nach vielen Monaten Training in sehr guter Form.",
-    "definition": "Måten noe ser ut på, eller den fysiske eller mentale tilstanden til en person.",
     "level": "B1",
     "category": "fitness",
     "part": "noun"
@@ -8005,24 +7843,6 @@
     "example_spanish": "En invierno vamos a patinar sobre hielo.",
     "example_german": "Im Winter gehen wir Schlittschuhlaufen.",
     "definition": "En vinteraktivitet der man glir over is på sko med metallblad.",
-    "level": "B1",
-    "category": "fitness",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-fitness-024",
-    "norsk": "styrketrening (en)",
-    "lemma": "styrketrening",
-    "english": "strength training",
-    "ukrainian": "силові тренування",
-    "spanish": "entrenamiento de fuerza",
-    "german": "Krafttraining (das)",
-    "example": "Han driver med styrketrening tre ganger i uken.",
-    "example_english": "He does strength training three times a week.",
-    "example_ukrainian": "Він займається силовими тренуваннями тричі на тиждень.",
-    "example_spanish": "Él hace entrenamiento de fuerza tres veces a la semana.",
-    "example_german": "Er macht dreimal pro Woche Krafttraining.",
-    "definition": "Øvelser der man bruker motstand for å gjøre musklene sterkere.",
     "level": "B1",
     "category": "fitness",
     "part": "noun"
@@ -9450,24 +9270,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-healthcare-027",
-    "norsk": "taushetsplikt (en)",
-    "lemma": "taushetsplikt",
-    "english": "duty of confidentiality / professional secrecy",
-    "ukrainian": "обов'язок зберігати таємницю / лікарська таємниця",
-    "spanish": "deber de confidencialidad / secreto profesional",
-    "german": "Schweigepflicht",
-    "example": "Legen har taushetsplikt og kan ikke fortelle andre om pasientens sykdom.",
-    "example_english": "The doctor has a duty of confidentiality and cannot tell others about the patient's illness.",
-    "example_ukrainian": "Лікар зобов'язаний зберігати таємницю і не може розповідати іншим про хворобу пацієнта.",
-    "example_spanish": "El médico tiene deber de confidencialidad y no puede contarles a otros sobre la enfermedad del paciente.",
-    "example_german": "Der Arzt hat Schweigepflicht und darf anderen nichts über die Krankheit des Patienten sagen.",
-    "definition": "En regel eller lov som sier at visse personer ikke har lov til å dele privat informasjon de får gjennom jobben sin.",
-    "level": "B1",
-    "category": "healthcare",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-healthcare-028",
     "norsk": "ufør",
     "lemma": "ufør",
@@ -9990,24 +9792,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-012",
-    "norsk": "setning (en)",
-    "lemma": "setning",
-    "english": "a sentence",
-    "ukrainian": "речення",
-    "spanish": "una oración / una frase",
-    "german": "Satz (der)",
-    "example": "Skriv en setning med det nye ordet.",
-    "example_english": "Write a sentence with the new word.",
-    "example_ukrainian": "Склади речення з новим словом.",
-    "example_spanish": "Escribe una oración con la nueva palabra.",
-    "example_german": "Schreib einen Satz mit dem neuen Wort.",
-    "definition": "En samling ord som uttrykker en fullstendig tanke.",
-    "level": "B1",
-    "category": "language-learning",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-language-learning-013",
     "norsk": "avsnitt (et)",
     "lemma": "avsnitt",
@@ -10098,7 +9882,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-019",
+    "id": "v-b1-language-learning-018",
     "norsk": "flerspråklig",
     "lemma": "flerspråklig",
     "english": "multilingual",
@@ -10116,7 +9900,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-language-learning-020",
+    "id": "v-b1-language-learning-019",
     "norsk": "flyt (en)",
     "lemma": "flyt",
     "english": "flow, fluency",
@@ -10134,7 +9918,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-021",
+    "id": "v-b1-language-learning-020",
     "norsk": "gjentakelse (en)",
     "lemma": "gjentakelse",
     "english": "repetition",
@@ -10152,7 +9936,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-022",
+    "id": "v-b1-language-learning-021",
     "norsk": "grammatikk (en)",
     "lemma": "grammatikk",
     "english": "grammar",
@@ -10170,7 +9954,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-023",
+    "id": "v-b1-language-learning-022",
     "norsk": "kun",
     "lemma": "kun",
     "english": "only, just",
@@ -10188,7 +9972,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-b1-language-learning-024",
+    "id": "v-b1-language-learning-023",
     "norsk": "morsmål (et)",
     "lemma": "morsmål",
     "english": "mother tongue / native language",
@@ -10206,7 +9990,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-025",
+    "id": "v-b1-language-learning-024",
     "norsk": "sammenheng (en)",
     "lemma": "sammenheng",
     "english": "context",
@@ -10224,7 +10008,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-026",
+    "id": "v-b1-language-learning-025",
     "norsk": "tegnsetting (en)",
     "lemma": "tegnsetting",
     "english": "punctuation",
@@ -10242,7 +10026,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-027",
+    "id": "v-b1-language-learning-026",
     "norsk": "tolk (en)",
     "lemma": "tolk",
     "english": "interpreter",
@@ -10260,7 +10044,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-028",
+    "id": "v-b1-language-learning-027",
     "norsk": "tospråklig",
     "lemma": "tospråklig",
     "english": "bilingual",
@@ -10278,7 +10062,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-language-learning-029",
+    "id": "v-b1-language-learning-028",
     "norsk": "utfordrende",
     "lemma": "utfordrende",
     "english": "challenging, demanding",
@@ -10296,7 +10080,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-language-learning-030",
+    "id": "v-b1-language-learning-029",
     "norsk": "uttale (en)",
     "lemma": "uttale",
     "english": "pronunciation",
@@ -10314,7 +10098,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-031",
+    "id": "v-b1-language-learning-030",
     "norsk": "å glemme",
     "lemma": "glemme",
     "english": "to forget",
@@ -10332,7 +10116,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-language-learning-032",
+    "id": "v-b1-language-learning-031",
     "norsk": "å huske",
     "lemma": "huske",
     "english": "to remember",
@@ -10350,7 +10134,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-language-learning-033",
+    "id": "v-b1-language-learning-032",
     "norsk": "å oversette",
     "lemma": "oversette",
     "english": "to translate",
@@ -10368,7 +10152,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-language-learning-034",
+    "id": "v-b1-language-learning-033",
     "norsk": "å repetere",
     "lemma": "repetere",
     "english": "to revise / repeat",
@@ -10386,7 +10170,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-language-learning-035",
+    "id": "v-b1-language-learning-034",
     "norsk": "å øve",
     "lemma": "øve",
     "english": "to practise",
@@ -10456,24 +10240,6 @@
     "level": "B1",
     "category": "media",
     "part": "adjective"
-  },
-  {
-    "id": "v-b1-media-004",
-    "norsk": "avis (en)",
-    "lemma": "avis",
-    "english": "a newspaper",
-    "ukrainian": "газета",
-    "spanish": "un periódico",
-    "german": "die Zeitung",
-    "example": "Han leser avisen om morgenen.",
-    "example_english": "He reads the newspaper in the morning.",
-    "example_ukrainian": "Він читає газету вранці.",
-    "example_spanish": "Él lee el periódico por la mañana.",
-    "example_german": "Er liest morgens die Zeitung.",
-    "definition": "Et trykt eller digitalt blad med nyheter og artikler.",
-    "level": "B1",
-    "category": "media",
-    "part": "noun"
   },
   {
     "id": "v-b1-media-005",
@@ -12078,7 +11844,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-016",
+    "id": "v-b1-personal-growth-015",
     "norsk": "tilbakeskritt (et)",
     "lemma": "tilbakeskritt",
     "english": "a setback",
@@ -12096,7 +11862,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-017",
+    "id": "v-b1-personal-growth-016",
     "norsk": "evne (en)",
     "lemma": "evne",
     "english": "ability, skill",
@@ -12114,7 +11880,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-018",
+    "id": "v-b1-personal-growth-017",
     "norsk": "ferdighet (en)",
     "lemma": "ferdighet",
     "english": "skill, ability",
@@ -12132,7 +11898,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-019",
+    "id": "v-b1-personal-growth-018",
     "norsk": "forandring (en)",
     "lemma": "forandring",
     "english": "change",
@@ -12150,7 +11916,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-020",
+    "id": "v-b1-personal-growth-019",
     "norsk": "fortid (en)",
     "lemma": "fortid",
     "english": "the past",
@@ -12168,7 +11934,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-021",
+    "id": "v-b1-personal-growth-020",
     "norsk": "å fortjene",
     "lemma": "fortjene",
     "english": "to deserve, to merit",
@@ -12186,7 +11952,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-022",
+    "id": "v-b1-personal-growth-021",
     "norsk": "fremtid (en)",
     "lemma": "fremtid",
     "english": "the future",
@@ -12204,7 +11970,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-023",
+    "id": "v-b1-personal-growth-022",
     "norsk": "fristelse (en)",
     "lemma": "fristelse",
     "english": "temptation",
@@ -12222,7 +11988,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-024",
+    "id": "v-b1-personal-growth-023",
     "norsk": "hjemmekjær",
     "lemma": "hjemmekjær",
     "english": "homebody / home-loving",
@@ -12240,7 +12006,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-025",
+    "id": "v-b1-personal-growth-024",
     "norsk": "initiativ (et)",
     "lemma": "initiativ",
     "english": "initiative",
@@ -12258,7 +12024,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-026",
+    "id": "v-b1-personal-growth-025",
     "norsk": "innsats (en)",
     "lemma": "innsats",
     "english": "effort, contribution",
@@ -12276,7 +12042,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-027",
+    "id": "v-b1-personal-growth-026",
     "norsk": "inspirasjon (en)",
     "lemma": "inspirasjon",
     "english": "inspiration",
@@ -12294,7 +12060,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-028",
+    "id": "v-b1-personal-growth-027",
     "norsk": "å kjempe",
     "lemma": "kjempe",
     "english": "to fight, to struggle",
@@ -12312,7 +12078,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-029",
+    "id": "v-b1-personal-growth-028",
     "norsk": "kreativitet (en)",
     "lemma": "kreativitet",
     "english": "creativity",
@@ -12330,7 +12096,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-030",
+    "id": "v-b1-personal-growth-029",
     "norsk": "lat",
     "lemma": "lat",
     "english": "lazy",
@@ -12348,7 +12114,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-031",
+    "id": "v-b1-personal-growth-030",
     "norsk": "personlig utvikling (en)",
     "lemma": "personlig utvikling",
     "english": "personal development",
@@ -12366,7 +12132,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-032",
+    "id": "v-b1-personal-growth-031",
     "norsk": "å reflektere",
     "lemma": "reflektere",
     "english": "to reflect, to think deeply",
@@ -12384,7 +12150,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-033",
+    "id": "v-b1-personal-growth-032",
     "norsk": "rutine (en)",
     "lemma": "rutine",
     "english": "routine",
@@ -12402,7 +12168,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-034",
+    "id": "v-b1-personal-growth-033",
     "norsk": "å samle",
     "lemma": "samle",
     "english": "to collect, to gather",
@@ -12420,7 +12186,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-035",
+    "id": "v-b1-personal-growth-034",
     "norsk": "selvstendig",
     "lemma": "selvstendig",
     "english": "independent, self-reliant",
@@ -12438,7 +12204,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-036",
+    "id": "v-b1-personal-growth-035",
     "norsk": "selvtillit (en)",
     "lemma": "selvtillit",
     "english": "self-confidence",
@@ -12456,7 +12222,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-037",
+    "id": "v-b1-personal-growth-036",
     "norsk": "å slite",
     "lemma": "slite",
     "english": "to struggle / to wear out / to toil",
@@ -12474,7 +12240,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-038",
+    "id": "v-b1-personal-growth-037",
     "norsk": "sta",
     "lemma": "sta",
     "english": "stubborn, obstinate",
@@ -12492,7 +12258,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-039",
+    "id": "v-b1-personal-growth-038",
     "norsk": "å stimulere",
     "lemma": "stimulere",
     "english": "to stimulate",
@@ -12510,7 +12276,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-040",
+    "id": "v-b1-personal-growth-039",
     "norsk": "å streve",
     "lemma": "streve",
     "english": "to struggle, to strive",
@@ -12528,7 +12294,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-041",
+    "id": "v-b1-personal-growth-040",
     "norsk": "suksess (en)",
     "lemma": "suksess",
     "english": "success",
@@ -12546,7 +12312,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-042",
+    "id": "v-b1-personal-growth-041",
     "norsk": "taper (en)",
     "lemma": "taper",
     "english": "loser",
@@ -12564,7 +12330,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-043",
+    "id": "v-b1-personal-growth-042",
     "norsk": "trekk (et)",
     "lemma": "trekk",
     "english": "feature / trait / move / draft",
@@ -12582,7 +12348,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-044",
+    "id": "v-b1-personal-growth-043",
     "norsk": "tålmodig",
     "lemma": "tålmodig",
     "english": "patient",
@@ -12600,7 +12366,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-045",
+    "id": "v-b1-personal-growth-044",
     "norsk": "å tørre",
     "lemma": "tørre",
     "english": "to dare, to have the courage to",
@@ -12618,7 +12384,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-046",
+    "id": "v-b1-personal-growth-045",
     "norsk": "uavhengig",
     "lemma": "uavhengig",
     "english": "independent",
@@ -12636,7 +12402,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-047",
+    "id": "v-b1-personal-growth-046",
     "norsk": "uflaks (en)",
     "lemma": "uflaks",
     "english": "bad luck, misfortune",
@@ -12654,7 +12420,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-048",
+    "id": "v-b1-personal-growth-047",
     "norsk": "utadvendt",
     "lemma": "utadvendt",
     "english": "extroverted, outgoing",
@@ -12672,7 +12438,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-049",
+    "id": "v-b1-personal-growth-048",
     "norsk": "utholdenhet (en)",
     "lemma": "utholdenhet",
     "english": "perseverance",
@@ -12690,7 +12456,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-050",
+    "id": "v-b1-personal-growth-049",
     "norsk": "utseende (et)",
     "lemma": "utseende",
     "english": "appearance, looks",
@@ -12708,7 +12474,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-051",
+    "id": "v-b1-personal-growth-050",
     "norsk": "vane (en)",
     "lemma": "vane",
     "english": "habit",
@@ -12726,7 +12492,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-052",
+    "id": "v-b1-personal-growth-051",
     "norsk": "vant",
     "lemma": "vant",
     "english": "used to / accustomed to",
@@ -12744,7 +12510,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-b1-personal-growth-053",
+    "id": "v-b1-personal-growth-052",
     "norsk": "vilje (en)",
     "lemma": "vilje",
     "english": "will / determination",
@@ -12762,7 +12528,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-054",
+    "id": "v-b1-personal-growth-053",
     "norsk": "å våge",
     "lemma": "våge",
     "english": "to dare / to venture",
@@ -12780,7 +12546,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-055",
+    "id": "v-b1-personal-growth-054",
     "norsk": "å forbedre seg",
     "lemma": "forbedre seg",
     "english": "to improve oneself",
@@ -12798,7 +12564,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-056",
+    "id": "v-b1-personal-growth-055",
     "norsk": "å lykkes",
     "lemma": "lykkes",
     "english": "to succeed",
@@ -12816,7 +12582,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-057",
+    "id": "v-b1-personal-growth-056",
     "norsk": "å mislykkes",
     "lemma": "mislykkes",
     "english": "to fail",
@@ -12834,7 +12600,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-058",
+    "id": "v-b1-personal-growth-057",
     "norsk": "å motivere seg",
     "lemma": "motivere seg",
     "english": "to motivate oneself",
@@ -12852,7 +12618,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-059",
+    "id": "v-b1-personal-growth-058",
     "norsk": "å planlegge",
     "lemma": "planlegge",
     "english": "to plan",
@@ -13243,24 +13009,6 @@
     "example_spanish": "El gobierno propone una reforma del sistema de salud.",
     "example_german": "Die Regierung schlägt eine Reform des Gesundheitssystems vor.",
     "definition": "En endring i lover eller systemer for å forbedre noe i samfunnet.",
-    "level": "B1",
-    "category": "politics",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-politics-022",
-    "norsk": "regjering (en)",
-    "lemma": "regjering",
-    "english": "a government",
-    "ukrainian": "уряд",
-    "spanish": "un gobierno",
-    "german": "die Regierung",
-    "example": "Regjeringen styrer landet.",
-    "example_english": "The government governs the country.",
-    "example_ukrainian": "Уряд керує країною.",
-    "example_spanish": "El gobierno dirige el país.",
-    "example_german": "Die Regierung regiert das Land.",
-    "definition": "Den gruppen av politikere som styrer landet og tar viktige beslutninger.",
     "level": "B1",
     "category": "politics",
     "part": "noun"
@@ -16128,24 +15876,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-society-011",
-    "norsk": "bot (en)",
-    "lemma": "bot",
-    "english": "fine / penalty",
-    "ukrainian": "штраф",
-    "spanish": "multa",
-    "german": "die Geldstrafe",
-    "example": "Han fikk en bot fordi han parkerte på feil sted.",
-    "example_english": "He received a fine because he parked in the wrong place.",
-    "example_ukrainian": "Він отримав штраф, бо припаркувався не в тому місці.",
-    "example_spanish": "Le pusieron una multa porque aparcó en el lugar equivocado.",
-    "example_german": "Er bekam eine Geldstrafe, weil er falsch geparkt hatte.",
-    "definition": "Et pengebeløp man må betale til myndighetene som straff for å ha brutt en regel.",
-    "level": "B1",
-    "category": "society",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-society-012",
     "norsk": "bygd (en)",
     "lemma": "bygd",
@@ -18540,24 +18270,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-traditions-009",
-    "norsk": "høytid (en)",
-    "lemma": "høytid",
-    "english": "a public holiday / a festive period",
-    "ukrainian": "свято / святковий період",
-    "spanish": "una festividad / un período festivo",
-    "german": "der Feiertag / die Festzeit",
-    "example": "Julaften er en viktig høytid.",
-    "example_english": "Christmas Eve is an important festive occasion.",
-    "example_ukrainian": "Різдвяний вечір — важливе свято.",
-    "example_spanish": "La Nochebuena es una festividad importante.",
-    "example_german": "Heiligabend ist eine wichtige Festzeit.",
-    "definition": "En spesiell religiøs eller nasjonal festdag da folk feirer og har fri.",
-    "level": "B1",
-    "category": "traditions",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-traditions-010",
     "norsk": "nissefigur (en)",
     "lemma": "nissefigur",
@@ -18805,24 +18517,6 @@
     "example_spanish": "Comemos pinnekjøtt en Navidad.",
     "example_german": "Wir essen Pinnekjøtt zu Weihnachten.",
     "definition": "Tradisjonell norsk julemat av tørkede eller saltede lammeribbe.",
-    "level": "B1",
-    "category": "traditions",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-traditions-024",
-    "norsk": "påske (en)",
-    "lemma": "påske",
-    "english": "Easter",
-    "ukrainian": "Великдень",
-    "spanish": "Semana Santa / Pascua",
-    "german": "Ostern",
-    "example": "Mange nordmenn er i fjellet i påsken.",
-    "example_english": "Many Norwegians are in the mountains at Easter.",
-    "example_ukrainian": "Багато норвежців їдуть у гори на Великдень.",
-    "example_spanish": "Muchos noruegos van a la montaña en Semana Santa.",
-    "example_german": "Viele Norweger sind in den Bergen zu Ostern.",
-    "definition": "En kristen høytid om våren som markerer Jesu oppstandelse, feiret med ferie og egg.",
     "level": "B1",
     "category": "traditions",
     "part": "noun"
@@ -19926,24 +19620,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-work-013",
-    "norsk": "overtid (en)",
-    "lemma": "overtid",
-    "english": "overtime",
-    "ukrainian": "понаднормова робота",
-    "spanish": "horas extra",
-    "german": "die Überstunden",
-    "example": "Han jobber mye overtid.",
-    "example_english": "He works a lot of overtime.",
-    "example_ukrainian": "Він багато працює понаднормово.",
-    "example_spanish": "Él trabaja muchas horas extra.",
-    "example_german": "Er macht viele Überstunden.",
-    "definition": "Arbeid utover avtalt arbeidstid, som regel betalt ekstra.",
-    "level": "B1",
-    "category": "work",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-work-014",
     "norsk": "pause (en)",
     "lemma": "pause",
@@ -20610,24 +20286,6 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-workplace-005",
-    "norsk": "avdeling (en)",
-    "lemma": "avdeling",
-    "english": "department / ward / division",
-    "ukrainian": "відділ / відділення",
-    "spanish": "departamento / sala / división",
-    "german": "Abteilung / Station",
-    "example": "Hun jobber på barneavdelingen på sykehuset.",
-    "example_english": "She works in the children's ward at the hospital.",
-    "example_ukrainian": "Вона працює у дитячому відділенні лікарні.",
-    "example_spanish": "Ella trabaja en el departamento de pediatría del hospital.",
-    "example_german": "Sie arbeitet auf der Kinderstation im Krankenhaus.",
-    "definition": "En del av en større organisasjon, for eksempel et sykehus, en skole eller et firma, som har et spesielt ansvar eller oppgave.",
-    "level": "B1",
-    "category": "workplace",
-    "part": "noun"
-  },
-  {
     "id": "v-b1-workplace-006",
     "norsk": "å avslutte",
     "lemma": "avslutte",
@@ -20659,42 +20317,6 @@
     "example_spanish": "Todos tienen derecho a vacaciones.",
     "example_german": "Alle haben das Recht auf Urlaub.",
     "definition": "En periode med fri fra jobben der man kan hvile og reise.",
-    "level": "B1",
-    "category": "workplace",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-workplace-008",
-    "norsk": "opplæring (en)",
-    "lemma": "opplæring",
-    "english": "training / induction",
-    "ukrainian": "навчання / підготовка",
-    "spanish": "una capacitación / formación",
-    "german": "Ausbildung / Einarbeitung",
-    "example": "Opplæringen varer to uker.",
-    "example_english": "The training lasts two weeks.",
-    "example_ukrainian": "Навчання триває два тижні.",
-    "example_spanish": "La capacitación dura dos semanas.",
-    "example_german": "Die Einarbeitung dauert zwei Wochen.",
-    "definition": "Undervisning og veiledning for å lære seg en ny jobb eller ferdighet.",
-    "level": "B1",
-    "category": "workplace",
-    "part": "noun"
-  },
-  {
-    "id": "v-b1-workplace-009",
-    "norsk": "stilling (en)",
-    "lemma": "stilling",
-    "english": "a position / post",
-    "ukrainian": "посада",
-    "spanish": "un puesto / cargo",
-    "german": "Stelle / Position",
-    "example": "Stillingen krever fem års erfaring.",
-    "example_english": "The position requires five years of experience.",
-    "example_ukrainian": "Посада вимагає п'яти років досвіду.",
-    "example_spanish": "El puesto requiere cinco años de experiencia.",
-    "example_german": "Die Stelle erfordert fuenf Jahre Erfahrung.",
-    "definition": "En bestemt jobb eller funksjon i en organisasjon.",
     "level": "B1",
     "category": "workplace",
     "part": "noun"
@@ -20988,7 +20610,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-language-learning-036",
+    "id": "v-b1-language-learning-035",
     "norsk": "å bestå av",
     "lemma": "bestå av",
     "english": "to consist of, to be made up of",
@@ -21090,7 +20712,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-066",
+    "id": "v-b1-communication-skills-065",
     "norsk": "å dreie seg om",
     "lemma": "dreie seg om",
     "english": "to be about, to concern",
@@ -21227,7 +20849,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-060",
+    "id": "v-b1-personal-growth-059",
     "norsk": "å forholde seg til",
     "lemma": "forholde seg til",
     "english": "to deal with, to relate to, to handle",
@@ -21261,24 +20883,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-workplace-026",
-    "norsk": "å fylle ut",
-    "lemma": "fylle ut",
-    "english": "to fill in, to fill out",
-    "ukrainian": "заповнити, заповнювати",
-    "spanish": "rellenar, completar",
-    "german": "ausfüllen",
-    "example": "Du må fylle ut skjemaet før du sender det.",
-    "example_english": "You need to fill out the form before sending it.",
-    "example_ukrainian": "Ти повинен заповнити бланк перед тим, як відправити його.",
-    "example_spanish": "Tienes que rellenar el formulario antes de enviarlo.",
-    "example_german": "Du musst das Formular ausfüllen, bevor du es abschickst.",
-    "level": "B1",
-    "category": "workplace",
-    "part": "verb"
-  },
-  {
-    "id": "v-b1-personal-growth-061",
+    "id": "v-b1-personal-growth-060",
     "norsk": "å få til",
     "lemma": "få til",
     "english": "to manage, to succeed in, to pull off",
@@ -21346,7 +20951,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-062",
+    "id": "v-b1-personal-growth-061",
     "norsk": "å gi etter",
     "lemma": "gi etter",
     "english": "to give in, to yield",
@@ -21363,7 +20968,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-067",
+    "id": "v-b1-communication-skills-066",
     "norsk": "å gi fra seg",
     "lemma": "gi fra seg",
     "english": "to give away, to hand over, to let go of",
@@ -21381,23 +20986,6 @@
   },
   {
     "id": "v-b1-personal-growth-063",
-    "norsk": "å gi opp",
-    "lemma": "gi opp",
-    "english": "to give up, to surrender",
-    "ukrainian": "здатися, відмовитися",
-    "spanish": "rendirse, abandonar",
-    "german": "aufgeben",
-    "example": "Han ville ikke gi opp drømmen om å bli lege.",
-    "example_english": "He refused to give up on his dream of becoming a doctor.",
-    "example_ukrainian": "Він не хотів відмовлятися від мрії стати лікарем.",
-    "example_spanish": "No quería abandonar su sueño de ser médico.",
-    "example_german": "Er wollte seinen Traum, Arzt zu werden, nicht aufgeben.",
-    "level": "B1",
-    "category": "personal-growth",
-    "part": "verb"
-  },
-  {
-    "id": "v-b1-personal-growth-064",
     "norsk": "å gi seg",
     "lemma": "gi seg",
     "english": "to give up, to stop, to quit",
@@ -21414,7 +21002,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-065",
+    "id": "v-b1-personal-growth-064",
     "norsk": "å gjemme seg",
     "lemma": "gjemme seg",
     "english": "to hide, to conceal oneself",
@@ -21465,7 +21053,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-068",
+    "id": "v-b1-communication-skills-067",
     "norsk": "å går ut på",
     "lemma": "går ut på",
     "english": "to be about, to involve, to consist in",
@@ -21499,7 +21087,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-066",
+    "id": "v-b1-personal-growth-065",
     "norsk": "å holde seg unna",
     "lemma": "holde seg unna",
     "english": "to stay away from, to keep one's distance",
@@ -21516,7 +21104,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-067",
+    "id": "v-b1-personal-growth-066",
     "norsk": "å holde ut",
     "lemma": "holde ut",
     "english": "to endure, to hold on, to persevere",
@@ -21586,7 +21174,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-068",
+    "id": "v-b1-personal-growth-067",
     "norsk": "å kjenne seg igjen",
     "lemma": "kjenne seg igjen",
     "english": "to recognise oneself, to relate to, to identify with",
@@ -21620,7 +21208,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-070",
+    "id": "v-b1-personal-growth-068",
     "norsk": "å legge bort",
     "lemma": "legge bort",
     "english": "to put away, to set aside, to put down",
@@ -21671,7 +21259,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-071",
+    "id": "v-b1-personal-growth-069",
     "norsk": "å lete etter",
     "lemma": "lete etter",
     "english": "to look for, to search for",
@@ -21722,7 +21310,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-finance-030",
+    "id": "v-b1-finance-027",
     "norsk": "å lønne seg",
     "lemma": "lønne seg",
     "english": "to be worth it, to pay off",
@@ -21773,7 +21361,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-072",
+    "id": "v-b1-personal-growth-070",
     "norsk": "å nærme seg",
     "lemma": "nærme seg",
     "english": "to approach, to get closer to",
@@ -21790,7 +21378,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-073",
+    "id": "v-b1-personal-growth-071",
     "norsk": "å ombestemme seg",
     "lemma": "ombestemme seg",
     "english": "to change one's mind",
@@ -21807,7 +21395,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-074",
+    "id": "v-b1-personal-growth-072",
     "norsk": "å oppføre seg",
     "lemma": "oppføre seg",
     "english": "to behave, to conduct oneself",
@@ -21858,7 +21446,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-finance-031",
+    "id": "v-b1-finance-028",
     "norsk": "å satse på",
     "lemma": "satse på",
     "english": "to invest in, to bet on, to focus on",
@@ -21892,7 +21480,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-069",
+    "id": "v-b1-communication-skills-068",
     "norsk": "å si fra",
     "lemma": "si fra",
     "english": "to speak up, to let someone know, to report",
@@ -21945,7 +21533,7 @@
     "part": "noun"
   },
   {
-    "id": "v-b1-personal-growth-076",
+    "id": "v-b1-personal-growth-073",
     "norsk": "å skaffe seg",
     "lemma": "skaffe seg",
     "english": "to obtain, to get hold of, to acquire",
@@ -21979,7 +21567,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-077",
+    "id": "v-b1-personal-growth-074",
     "norsk": "å skynde seg",
     "lemma": "skynde seg",
     "english": "to hurry, to rush",
@@ -21997,7 +21585,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-070",
+    "id": "v-b1-communication-skills-069",
     "norsk": "å slippe til",
     "lemma": "slippe til",
     "english": "to get a chance to speak, to be given access",
@@ -22031,7 +21619,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-personal-growth-078",
+    "id": "v-b1-personal-growth-075",
     "norsk": "å slå til",
     "lemma": "slå til",
     "english": "to strike, to happen suddenly, to work out",
@@ -22099,7 +21687,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-071",
+    "id": "v-b1-communication-skills-070",
     "norsk": "å trekke fram",
     "lemma": "trekke fram",
     "english": "to highlight, to point out, to draw attention to",
@@ -22116,7 +21704,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-072",
+    "id": "v-b1-communication-skills-071",
     "norsk": "å trekke frem",
     "lemma": "trekke frem",
     "english": "to highlight, to bring up, to point out",
@@ -22150,7 +21738,7 @@
     "part": "verb"
   },
   {
-    "id": "v-b1-communication-skills-073",
+    "id": "v-b1-communication-skills-072",
     "norsk": "å uttale seg",
     "lemma": "uttale seg",
     "english": "to express an opinion, to comment, to make a statement",

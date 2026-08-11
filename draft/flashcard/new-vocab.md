@@ -231,3 +231,9 @@ billedhugger (en)
 å debutere
 utover (preposisjon)
 lovende
+treskjærer (en)
+atelier (et)
+hittil
+å akte
+å utstede
+høytrykk (et)

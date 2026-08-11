@@ -324,23 +324,6 @@
   },
   {
     "id": "v-a2-transport-001",
-    "norsk": "holdeplass (en)",
-    "lemma": "holdeplass",
-    "english": "a bus stop",
-    "ukrainian": "автобусна зупинка",
-    "spanish": "una parada de autobús",
-    "german": "die Bushaltestelle",
-    "example": "Holdeplassen er rett rundt hjørnet.",
-    "example_english": "The bus stop is just around the corner.",
-    "example_ukrainian": "Автобусна зупинка одразу за рогом.",
-    "example_spanish": "La parada de autobús está justo a la vuelta de la esquina.",
-    "example_german": "Die Bushaltestelle ist gleich um die Ecke.",
-    "level": "A2",
-    "category": "transport",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-transport-002",
     "norsk": "sen",
     "lemma": "sen",
     "english": "late",
@@ -357,7 +340,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-003",
+    "id": "v-a2-transport-002",
     "norsk": "avgang (en)",
     "lemma": "avgang",
     "english": "a departure",
@@ -374,7 +357,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-004",
+    "id": "v-a2-transport-003",
     "norsk": "ankomst (en)",
     "lemma": "ankomst",
     "english": "an arrival",
@@ -391,7 +374,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-005",
+    "id": "v-a2-transport-004",
     "norsk": "ferge (en)",
     "lemma": "ferge",
     "english": "a ferry",
@@ -1498,23 +1481,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-005",
-    "norsk": "treningssenter (et)",
-    "lemma": "treningssenter",
-    "english": "a gym",
-    "ukrainian": "спортивний зал / фітнес-центр",
-    "spanish": "un gimnasio",
-    "german": "das Fitnessstudio",
-    "example": "Jeg har meldt meg inn på treningssenteret.",
-    "example_english": "I have joined the gym.",
-    "example_ukrainian": "Я записався до спортивного залу.",
-    "example_spanish": "Me he apuntado al gimnasio.",
-    "example_german": "Ich habe mich im Fitnessstudio angemeldet.",
-    "level": "A2",
-    "category": "sports",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-sports-006",
     "norsk": "kamp (en)",
     "lemma": "kamp",
@@ -2100,7 +2066,7 @@
     "id": "v-a2-health-018",
     "norsk": "hoste (en)",
     "lemma": "hoste",
-    "english": "a cough / to cough",
+    "english": "a cough",
     "ukrainian": "кашель / кашляти",
     "spanish": "tos / toser",
     "german": "der Husten",
@@ -2455,7 +2421,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-005",
+    "id": "v-a2-time-004",
     "norsk": "forrige uke",
     "lemma": "forrige uke",
     "english": "last week",
@@ -2472,7 +2438,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-006",
+    "id": "v-a2-time-005",
     "norsk": "neste år",
     "lemma": "neste år",
     "english": "next year",
@@ -2489,7 +2455,7 @@
     "part": "phrase"
   },
   {
-    "id": "v-a2-time-007",
+    "id": "v-a2-time-006",
     "norsk": "alltid",
     "lemma": "alltid",
     "english": "always",
@@ -2506,7 +2472,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-008",
+    "id": "v-a2-time-007",
     "norsk": "ofte",
     "lemma": "ofte",
     "english": "often",
@@ -2523,7 +2489,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-009",
+    "id": "v-a2-time-008",
     "norsk": "sjelden",
     "lemma": "sjelden",
     "english": "rarely / seldom",
@@ -2540,7 +2506,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-010",
+    "id": "v-a2-time-009",
     "norsk": "aldri",
     "lemma": "aldri",
     "english": "never",
@@ -2557,7 +2523,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-012",
+    "id": "v-a2-time-010",
     "norsk": "vanligvis",
     "lemma": "vanligvis",
     "english": "usually",
@@ -2574,7 +2540,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-013",
+    "id": "v-a2-time-011",
     "norsk": "snart",
     "lemma": "snart",
     "english": "soon",
@@ -2591,7 +2557,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-014",
+    "id": "v-a2-time-012",
     "norsk": "allerede",
     "lemma": "allerede",
     "english": "already",
@@ -2608,7 +2574,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-015",
+    "id": "v-a2-time-013",
     "norsk": "ennå",
     "lemma": "ennå",
     "english": "yet / still",
@@ -2625,7 +2591,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-016",
+    "id": "v-a2-time-014",
     "norsk": "nylig",
     "lemma": "nylig",
     "english": "recently",
@@ -2642,7 +2608,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-017",
+    "id": "v-a2-time-015",
     "norsk": "siden",
     "lemma": "siden",
     "english": "since / ago",
@@ -2657,23 +2623,6 @@
     "level": "A2",
     "category": "time",
     "part": "preposition"
-  },
-  {
-    "id": "v-a2-time-018",
-    "norsk": "minutt (et)",
-    "lemma": "minutt",
-    "english": "a minute",
-    "ukrainian": "хвилина",
-    "spanish": "un minuto",
-    "german": "die Minute",
-    "example": "Vent ett minutt, vær så snill.",
-    "example_english": "Wait one minute, please.",
-    "example_ukrainian": "Зачекайте одну хвилину, будь ласка.",
-    "example_spanish": "Espera un minuto, por favor.",
-    "example_german": "Warte bitte eine Minute.",
-    "level": "A2",
-    "category": "time",
-    "part": "noun"
   },
   {
     "id": "v-a2-descriptive-adjectives-001",
@@ -4512,7 +4461,8 @@
     "example_german": "Er hustet viel im Winter.",
     "level": "A2",
     "category": "body",
-    "part": "verb"
+    "part": "verb",
+    "definition": "en ufrivillig reaksjon fra lungene, ofte ved forkjølelse eller irritasjon i halsen"
   },
   {
     "id": "v-a2-body-014",
@@ -5823,23 +5773,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-020",
-    "norsk": "adresse (en/ei)",
-    "lemma": "adresse",
-    "english": "address",
-    "ukrainian": "адреса",
-    "spanish": "dirección",
-    "german": "Adresse",
-    "example": "Kan du gi meg adressen din?",
-    "example_english": "Can you give me your address?",
-    "example_ukrainian": "Чи можеш ти дати мені свою адресу?",
-    "example_spanish": "¿Puedes darme tu dirección?",
-    "example_german": "Kannst du mir deine Adresse geben?",
-    "level": "A2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-hobbies-015",
     "norsk": "å aktivisere",
     "lemma": "aktivisere",
@@ -6231,23 +6164,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-018",
-    "norsk": "bak",
-    "lemma": "bak",
-    "english": "behind, at the back of",
-    "ukrainian": "позаду, за",
-    "spanish": "detras de",
-    "german": "hinter",
-    "example": "Bilen star bak huset.",
-    "example_english": "The car is standing behind the house.",
-    "example_ukrainian": "Машина стоїть за будинком.",
-    "example_spanish": "El coche está detrás de la casa.",
-    "example_german": "Das Auto steht hinter dem Haus.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-sports-024",
     "norsk": "ball (en)",
     "lemma": "ball",
@@ -6299,7 +6215,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-006",
+    "id": "v-a2-transport-005",
     "norsk": "barnevogn (en/ei)",
     "lemma": "barnevogn",
     "english": "pram, baby stroller",
@@ -6316,7 +6232,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-021",
+    "id": "v-a2-time-016",
     "norsk": "begynnelse (en)",
     "lemma": "begynnelse",
     "english": "beginning, start",
@@ -6382,23 +6298,6 @@
     "level": "A2",
     "category": "communication",
     "part": "verb"
-  },
-  {
-    "id": "v-a2-social-life-030",
-    "norsk": "bestemor (en/ei)",
-    "lemma": "bestemor",
-    "english": "grandmother",
-    "ukrainian": "бабуся",
-    "spanish": "abuela",
-    "german": "Großmutter",
-    "example": "Bestemor lager alltid deilig middag når vi besøker henne.",
-    "example_english": "Grandmother always makes a delicious dinner when we visit her.",
-    "example_ukrainian": "Бабуся завжди готує смачну вечерю, коли ми її відвідуємо.",
-    "example_spanish": "La abuela siempre prepara una cena deliciosa cuando la visitamos.",
-    "example_german": "Großmutter kocht immer ein leckeres Abendessen, wenn wir sie besuchen.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
   },
   {
     "id": "v-a2-cooking-023",
@@ -6503,7 +6402,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-007",
+    "id": "v-a2-transport-006",
     "norsk": "bilnøkkel (en)",
     "lemma": "bilnøkkel",
     "english": "car key",
@@ -6600,6 +6499,7 @@
     "example_ukrainian": "Вони живуть у великому багатоквартирному будинку в центрі міста.",
     "example_spanish": "Viven en un gran bloque de pisos en el centro de la ciudad.",
     "example_german": "Sie wohnen in einem grossen Wohnblock mitten in der Stadt.",
+    "definition": "En stor bygning med mange leiligheter, eller et stykke av et materiale som er firkantet og solid.",
     "level": "A2",
     "category": "environment",
     "part": "noun"
@@ -6639,23 +6539,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-hobbies-017",
-    "norsk": "bok (en/ei)",
-    "lemma": "bok",
-    "english": "book",
-    "ukrainian": "книга",
-    "spanish": "libro",
-    "german": "Buch",
-    "example": "Jeg leser en spennende bok om norsk historie.",
-    "example_english": "I am reading an exciting book about Norwegian history.",
-    "example_ukrainian": "Я читаю захопливу книгу про норвезьку історію.",
-    "example_spanish": "Estoy leyendo un libro emocionante sobre la historia noruega.",
-    "example_german": "Ich lese ein spannendes Buch über norwegische Geschichte.",
-    "level": "A2",
-    "category": "hobbies",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-money-015",
     "norsk": "bot (en/ei)",
     "lemma": "bot",
@@ -6668,6 +6551,7 @@
     "example_ukrainian": "Він отримав штраф, бо припаркувався неправильно.",
     "example_spanish": "Le pusieron una multa porque estacionó mal.",
     "example_german": "Er bekam ein Bussgeld, weil er falsch geparkt hatte.",
+    "definition": "Et pengeæløp man må betale til myndighetene som straff for å ha brutt en regel.",
     "level": "A2",
     "category": "money",
     "part": "noun"
@@ -6758,23 +6642,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-clothing-009",
-    "norsk": "bukse (en/ei)",
-    "lemma": "bukse",
-    "english": "trousers / pants",
-    "ukrainian": "штани",
-    "spanish": "pantalón",
-    "german": "Hose",
-    "example": "Han tok på seg en ny bukse til festen.",
-    "example_english": "He put on a new pair of trousers for the party.",
-    "example_ukrainian": "Він одягнув нові штани на вечірку.",
-    "example_spanish": "Se puso un pantalón nuevo para la fiesta.",
-    "example_german": "Er zog eine neue Hose für die Party an.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-social-life-033",
     "norsk": "bursdagsfest (en)",
     "lemma": "bursdagsfest",
@@ -6792,7 +6659,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-008",
+    "id": "v-a2-transport-007",
     "norsk": "busstasjon (en)",
     "lemma": "busstasjon",
     "english": "bus station",
@@ -6826,7 +6693,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-019",
+    "id": "v-a2-directions-018",
     "norsk": "by (en)",
     "lemma": "by",
     "english": "city",
@@ -6894,7 +6761,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-022",
+    "id": "v-a2-time-017",
     "norsk": "da",
     "lemma": "da",
     "english": "then / when",
@@ -6923,23 +6790,6 @@
     "example_ukrainian": "Літня жінка допомогла мені знайти дорогу.",
     "example_spanish": "Una señora mayor me ayudó a encontrar el camino.",
     "example_german": "Eine ältere Dame half mir, den Weg zu finden.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-social-life-035",
-    "norsk": "datter (en/ei)",
-    "lemma": "datter",
-    "english": "daughter",
-    "ukrainian": "донька",
-    "spanish": "hija",
-    "german": "Tochter",
-    "example": "Datteren hans begynte på skolen i år.",
-    "example_english": "His daughter started school this year.",
-    "example_ukrainian": "Його донька пішла до школи цього року.",
-    "example_spanish": "Su hija empezó la escuela este año.",
-    "example_german": "Seine Tochter hat dieses Jahr mit der Schule begonnen.",
     "level": "A2",
     "category": "social-life",
     "part": "noun"
@@ -6996,7 +6846,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-directions-020",
+    "id": "v-a2-directions-019",
     "norsk": "der",
     "lemma": "der",
     "english": "there",
@@ -7013,7 +6863,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-023",
+    "id": "v-a2-time-018",
     "norsk": "deretter",
     "lemma": "deretter",
     "english": "after that, then, afterwards",
@@ -7132,7 +6982,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-directions-021",
+    "id": "v-a2-directions-020",
     "norsk": "dit",
     "lemma": "dit",
     "english": "there, to that place",
@@ -7149,7 +6999,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-009",
+    "id": "v-a2-transport-008",
     "norsk": "å dra",
     "lemma": "dra",
     "english": "to go, to leave, to travel",
@@ -7234,7 +7084,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-024",
+    "id": "v-a2-time-019",
     "norsk": "døgn (et)",
     "lemma": "døgn",
     "english": "a full day, 24 hours",
@@ -7248,23 +7098,6 @@
     "example_german": "Die Apotheke ist rund um die Uhr geoffnet.",
     "level": "A2",
     "category": "time",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-house-chores-024",
-    "norsk": "dør (en/ei)",
-    "lemma": "dør",
-    "english": "door",
-    "ukrainian": "двері",
-    "spanish": "puerta",
-    "german": "Tür",
-    "example": "Kan du lukke døren når du går ut?",
-    "example_english": "Can you close the door when you leave?",
-    "example_ukrainian": "Можеш зачинити двері, коли виходиш?",
-    "example_spanish": "¿Puedes cerrar la puerta cuando salgas?",
-    "example_german": "Kannst du die Tür schließen, wenn du gehst?",
-    "level": "A2",
-    "category": "house-chores",
     "part": "noun"
   },
   {
@@ -7523,7 +7356,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-025",
+    "id": "v-a2-time-020",
     "norsk": "etter",
     "lemma": "etter",
     "english": "after",
@@ -7540,7 +7373,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-026",
+    "id": "v-a2-time-021",
     "norsk": "ettermiddag (en)",
     "lemma": "ettermiddag",
     "english": "afternoon",
@@ -7557,7 +7390,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-027",
+    "id": "v-a2-time-022",
     "norsk": "etterpå",
     "lemma": "etterpå",
     "english": "afterwards",
@@ -7659,7 +7492,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-036",
+    "id": "v-a2-communication-035",
     "norsk": "feil (en)",
     "lemma": "feil",
     "english": "mistake",
@@ -7744,7 +7577,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-037",
+    "id": "v-a2-communication-036",
     "norsk": "forklaring (en/ei)",
     "lemma": "forklaring",
     "english": "explanation",
@@ -7773,12 +7606,13 @@
     "example_ukrainian": "Вона у дуже хорошій формі після всіх тренувань.",
     "example_spanish": "Ella está en muy buena forma después de todo el entrenamiento.",
     "example_german": "Sie ist nach dem ganzen Training in sehr guter Form.",
+    "definition": "Måten noe ser ut på, eller den fysiske eller mentale tilstanden til en person.",
     "level": "A2",
     "category": "health",
     "part": "noun"
   },
   {
-    "id": "v-a2-time-028",
+    "id": "v-a2-time-023",
     "norsk": "formiddag (en)",
     "lemma": "formiddag",
     "english": "morning, forenoon",
@@ -7846,7 +7680,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-010",
+    "id": "v-a2-transport-009",
     "norsk": "fort",
     "lemma": "fort",
     "english": "quickly, fast",
@@ -7914,7 +7748,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-022",
+    "id": "v-a2-directions-021",
     "norsk": "å følge",
     "lemma": "følge",
     "english": "to follow",
@@ -7931,7 +7765,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-038",
+    "id": "v-a2-communication-037",
     "norsk": "for",
     "lemma": "for",
     "english": "for",
@@ -7948,7 +7782,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-023",
+    "id": "v-a2-directions-022",
     "norsk": "å føre",
     "lemma": "føre",
     "english": "to lead",
@@ -7965,7 +7799,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-011",
+    "id": "v-a2-transport-010",
     "norsk": "førerkort (et)",
     "lemma": "førerkort",
     "english": "driving licence",
@@ -7982,7 +7816,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-029",
+    "id": "v-a2-time-024",
     "norsk": "først",
     "lemma": "først",
     "english": "first",
@@ -8033,7 +7867,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-030",
+    "id": "v-a2-time-025",
     "norsk": "gang (en)",
     "lemma": "gang",
     "english": "time (occurrence); hallway",
@@ -8084,24 +7918,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-024",
-    "norsk": "gate (en/ei)",
-    "lemma": "gate",
-    "english": "street",
-    "ukrainian": "вулиця",
-    "spanish": "calle",
-    "german": "Straße",
-    "example": "Butikken ligger i den neste gaten til venstre.",
-    "example_english": "The shop is on the next street to the left.",
-    "example_ukrainian": "Магазин знаходиться на наступній вулиці ліворуч.",
-    "example_spanish": "La tienda está en la próxima calle a la izquierda.",
-    "example_german": "Das Geschäft befindet sich in der nächsten Straße links.",
-    "level": "A2",
-    "category": "directions",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-communication-039",
+    "id": "v-a2-communication-038",
     "norsk": "generell",
     "lemma": "generell",
     "english": "general",
@@ -8135,7 +7952,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-031",
+    "id": "v-a2-time-026",
     "norsk": "fjor (ubøy.)",
     "lemma": "fjor",
     "english": "last year (i fjor = last year)",
@@ -8220,23 +8037,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-025",
-    "norsk": "foran",
-    "lemma": "foran",
-    "english": "in front of",
-    "ukrainian": "перед",
-    "spanish": "delante de",
-    "german": "vor",
-    "example": "Bussen stopper foran skolen.",
-    "example_english": "The bus stops in front of the school.",
-    "example_ukrainian": "Автобус зупиняється перед школою.",
-    "example_spanish": "El autobús para delante de la escuela.",
-    "example_german": "Der Bus hält vor der Schule.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-descriptive-adjectives-030",
     "norsk": "å forandre",
     "lemma": "forandre",
@@ -8254,7 +8054,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-026",
+    "id": "v-a2-directions-024",
     "norsk": "fra",
     "lemma": "fra",
     "english": "from",
@@ -8271,7 +8071,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-032",
+    "id": "v-a2-time-027",
     "norsk": "framtid (en/ei)",
     "lemma": "framtid",
     "english": "future",
@@ -8305,7 +8105,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-033",
+    "id": "v-a2-time-028",
     "norsk": "fridag (en)",
     "lemma": "fridag",
     "english": "day off",
@@ -8458,7 +8258,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-027",
+    "id": "v-a2-directions-025",
     "norsk": "gjennom",
     "lemma": "gjennom",
     "english": "through",
@@ -8475,7 +8275,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-communication-040",
+    "id": "v-a2-communication-039",
     "norsk": "gjerne",
     "lemma": "gjerne",
     "english": "gladly / willingly / with pleasure",
@@ -8713,7 +8513,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-028",
+    "id": "v-a2-directions-026",
     "norsk": "hit",
     "lemma": "hit",
     "english": "here (direction towards speaker)",
@@ -8730,7 +8530,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-communication-041",
+    "id": "v-a2-communication-040",
     "norsk": "hjelp (en/ei)",
     "lemma": "hjelp",
     "english": "help",
@@ -8764,7 +8564,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-029",
+    "id": "v-a2-directions-027",
     "norsk": "hjem",
     "lemma": "hjem",
     "english": "home (direction, going home)",
@@ -8900,24 +8700,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-030",
-    "norsk": "i",
-    "lemma": "i",
-    "english": "in",
-    "ukrainian": "в, у",
-    "spanish": "en",
-    "german": "in",
-    "example": "Hun bor i Oslo.",
-    "example_english": "She lives in Oslo.",
-    "example_ukrainian": "Вона живе в Осло.",
-    "example_spanish": "Ella vive en Oslo.",
-    "example_german": "Sie wohnt in Oslo.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
-    "id": "v-a2-communication-042",
+    "id": "v-a2-communication-041",
     "norsk": "ikke",
     "lemma": "ikke",
     "english": "not",
@@ -8934,7 +8717,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-communication-043",
+    "id": "v-a2-communication-042",
     "norsk": "informasjon (en)",
     "lemma": "informasjon",
     "english": "information",
@@ -8951,7 +8734,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-031",
+    "id": "v-a2-directions-028",
     "norsk": "inne",
     "lemma": "inne",
     "english": "inside, indoors",
@@ -8968,7 +8751,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-directions-032",
+    "id": "v-a2-directions-029",
     "norsk": "innenfor",
     "lemma": "innenfor",
     "english": "within, inside",
@@ -8985,7 +8768,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-communication-044",
+    "id": "v-a2-communication-043",
     "norsk": "innkalling (en)",
     "lemma": "innkalling",
     "english": "summons, notice, call-up",
@@ -9053,7 +8836,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-045",
+    "id": "v-a2-communication-044",
     "norsk": "kanskje",
     "lemma": "kanskje",
     "english": "maybe, perhaps",
@@ -9138,23 +8921,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-033",
-    "norsk": "kilometer (en)",
-    "lemma": "kilometer",
-    "english": "kilometer",
-    "ukrainian": "кілометр",
-    "spanish": "kilómetro",
-    "german": "Kilometer",
-    "example": "Skolen ligger tre kilometer fra hjemmet mitt.",
-    "example_english": "The school is three kilometers from my home.",
-    "example_ukrainian": "Школа знаходиться за три кілометри від мого будинку.",
-    "example_spanish": "La escuela está a tres kilómetros de mi casa.",
-    "example_german": "Die Schule liegt drei Kilometer von meinem Zuhause entfernt.",
-    "level": "A2",
-    "category": "directions",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-shopping-031",
     "norsk": "kilopris (en)",
     "lemma": "kilopris",
@@ -9186,23 +8952,6 @@
     "example_german": "Wir gehen heute Abend ins Kino, um einen neuen Film zu sehen.",
     "level": "A2",
     "category": "hobbies",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-social-life-051",
-    "norsk": "kirke (en/ei)",
-    "lemma": "kirke",
-    "english": "church",
-    "ukrainian": "церква",
-    "spanish": "iglesia",
-    "german": "Kirche",
-    "example": "Familien går i kirken hver søndag morgen.",
-    "example_english": "The family goes to church every Sunday morning.",
-    "example_ukrainian": "Родина ходить до церкви кожного недільного ранку.",
-    "example_spanish": "La familia va a la iglesia cada domingo por la mañana.",
-    "example_german": "Die Familie geht jeden Sonntagmorgen in die Kirche.",
-    "level": "A2",
-    "category": "social-life",
     "part": "noun"
   },
   {
@@ -9325,7 +9074,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-046",
+    "id": "v-a2-communication-045",
     "norsk": "ham",
     "lemma": "ham",
     "english": "him",
@@ -9359,7 +9108,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-047",
+    "id": "v-a2-communication-046",
     "norsk": "heldigvis",
     "lemma": "heldigvis",
     "english": "fortunately, luckily",
@@ -9376,7 +9125,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-034",
+    "id": "v-a2-time-029",
     "norsk": "helg (en/ei)",
     "lemma": "helg",
     "english": "weekend",
@@ -9427,7 +9176,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-034",
+    "id": "v-a2-directions-030",
     "norsk": "her",
     "lemma": "her",
     "english": "here",
@@ -9529,7 +9278,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-035",
+    "id": "v-a2-time-030",
     "norsk": "hver",
     "lemma": "hver",
     "english": "every / each",
@@ -9580,7 +9329,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-048",
+    "id": "v-a2-communication-047",
     "norsk": "hvilken",
     "lemma": "hvilken",
     "english": "which",
@@ -9597,7 +9346,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-communication-049",
+    "id": "v-a2-communication-048",
     "norsk": "hvis",
     "lemma": "hvis",
     "english": "if",
@@ -9682,23 +9431,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-body-025",
-    "norsk": "hånd (en/ei)",
-    "lemma": "hånd",
-    "english": "hand",
-    "ukrainian": "долоня / кисть руки",
-    "spanish": "mano",
-    "german": "Hand",
-    "example": "Hun rekker opp hånden for å svare på spørsmålet.",
-    "example_english": "She raises her hand to answer the question.",
-    "example_ukrainian": "Вона піднімає руку, щоб відповісти на запитання.",
-    "example_spanish": "Ella levanta la mano para responder la pregunta.",
-    "example_german": "Sie hebt die Hand, um die Frage zu beantworten.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-sports-026",
     "norsk": "håndball (en)",
     "lemma": "håndball",
@@ -9716,7 +9448,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-050",
+    "id": "v-a2-communication-049",
     "norsk": "å håpe",
     "lemma": "håpe",
     "english": "to hope",
@@ -9830,6 +9562,7 @@
     "example_ukrainian": "Ми зустрілися в кафе в центрі міста.",
     "example_spanish": "Nos encontramos en un café en el centro de la ciudad.",
     "example_german": "Wir trafen uns in einem Café in der Innenstadt.",
+    "definition": "Et sted der man kan drikke kaffe, spise lett mat og slappe av.",
     "level": "A2",
     "category": "social-life",
     "part": "noun"
@@ -9954,24 +9687,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-062",
-    "norsk": "kone (en/ei)",
-    "lemma": "kone",
-    "english": "wife",
-    "ukrainian": "дружина",
-    "spanish": "esposa",
-    "german": "Ehefrau",
-    "example": "Han kjøpte blomster til kona si på bryllupsdagen deres.",
-    "example_english": "He bought flowers for his wife on their wedding anniversary.",
-    "example_ukrainian": "Він купив квіти для своєї дружини в день їхнього річниці одруження.",
-    "example_spanish": "El le compro flores a su esposa en su aniversario de boda.",
-    "example_german": "Er kaufte seiner Frau Blumen zu ihrem Hochzeitstag.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-communication-051",
+    "id": "v-a2-communication-050",
     "norsk": "å konsentrere seg",
     "lemma": "konsentrere seg",
     "english": "to concentrate, to focus",
@@ -9988,7 +9704,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-052",
+    "id": "v-a2-communication-051",
     "norsk": "å kontakte",
     "lemma": "kontakte",
     "english": "to contact, to get in touch with",
@@ -10073,23 +9789,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-064",
-    "norsk": "kusine (en/ei)",
-    "lemma": "kusine",
-    "english": "female cousin",
-    "ukrainian": "двоюрідна сестра",
-    "spanish": "prima",
-    "german": "Cousine",
-    "example": "Kusinen min bor i Bergen og studerer medisin.",
-    "example_english": "My cousin lives in Bergen and studies medicine.",
-    "example_ukrainian": "Моя двоюрідна сестра живе в Бергені і вчиться на медика.",
-    "example_spanish": "Mi prima vive en Bergen y estudia medicina.",
-    "example_german": "Meine Cousine lebt in Bergen und studiert Medizin.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-health-039",
     "norsk": "å kutte ut",
     "lemma": "kutte ut",
@@ -10124,7 +9823,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-036",
+    "id": "v-a2-time-031",
     "norsk": "kveld (en)",
     "lemma": "kveld",
     "english": "evening",
@@ -10226,23 +9925,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-house-chores-034",
-    "norsk": "lampe (en/ei)",
-    "lemma": "lampe",
-    "english": "lamp, light",
-    "ukrainian": "лампа, світильник",
-    "spanish": "lampara",
-    "german": "Lampe",
-    "example": "Lampen på nattbordet gir et koselig lys på soverommet.",
-    "example_english": "The lamp on the bedside table gives a cosy light in the bedroom.",
-    "example_ukrainian": "Лампа на тумбочці дає затишне світло в спальні.",
-    "example_spanish": "La lampara de la mesita de noche da una luz acogedora en el dormitorio.",
-    "example_german": "Die Lampe auf dem Nachttisch spendet ein gemütliches Licht im Schlafzimmer.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-environment-010",
     "norsk": "land (et)",
     "lemma": "land",
@@ -10294,7 +9976,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-directions-035",
+    "id": "v-a2-directions-031",
     "norsk": "langt",
     "lemma": "langt",
     "english": "far",
@@ -10311,7 +9993,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-012",
+    "id": "v-a2-transport-011",
     "norsk": "lastebil (en)",
     "lemma": "lastebil",
     "english": "truck",
@@ -10345,7 +10027,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-037",
+    "id": "v-a2-time-032",
     "norsk": "ledig",
     "lemma": "ledig",
     "english": "free, available, vacant",
@@ -10396,23 +10078,6 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-social-life-066",
-    "norsk": "leilighet (en/ei)",
-    "lemma": "leilighet",
-    "english": "apartment, flat",
-    "ukrainian": "квартира",
-    "spanish": "apartamento",
-    "german": "Wohnung",
-    "example": "De leier en leilighet i sentrum av Oslo.",
-    "example_english": "They rent an apartment in the centre of Oslo.",
-    "example_ukrainian": "Вони орендують квартиру в центрі Осло.",
-    "example_spanish": "Alquilan un apartamento en el centro de Oslo.",
-    "example_german": "Sie mieten eine Wohnung im Zentrum von Oslo.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-cooking-035",
     "norsk": "lekker",
     "lemma": "lekker",
@@ -10430,24 +10095,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-053",
-    "norsk": "lekse (en/ei)",
-    "lemma": "lekse",
-    "english": "homework, lesson",
-    "ukrainian": "домашнє завдання, урок",
-    "spanish": "tarea, lección",
-    "german": "Hausaufgabe, Lektion",
-    "example": "Jeg glemte å gjøre leksen min i går.",
-    "example_english": "I forgot to do my homework yesterday.",
-    "example_ukrainian": "Я забув зробити домашнє завдання вчора.",
-    "example_spanish": "Olvidé hacer mi tarea ayer.",
-    "example_german": "Ich habe gestern vergessen, meine Hausaufgaben zu machen.",
-    "level": "A2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-time-038",
+    "id": "v-a2-time-033",
     "norsk": "lenge",
     "lemma": "lenge",
     "english": "for a long time, long",
@@ -10600,7 +10248,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-054",
+    "id": "v-a2-communication-053",
     "norsk": "å love",
     "lemma": "love",
     "english": "to promise",
@@ -10615,23 +10263,6 @@
     "level": "A2",
     "category": "communication",
     "part": "verb"
-  },
-  {
-    "id": "v-a2-clothing-014",
-    "norsk": "lue (en/ei)",
-    "lemma": "lue",
-    "english": "hat (knitted or woollen cap)",
-    "ukrainian": "шапка",
-    "spanish": "gorro",
-    "german": "Mütze",
-    "example": "Hun tok på seg en varm lue før hun gikk ut i kulden.",
-    "example_english": "She put on a warm hat before going out into the cold.",
-    "example_ukrainian": "Вона надягла теплу шапку перед тим, як вийти на холод.",
-    "example_spanish": "Se puso un gorro caliente antes de salir al frio.",
-    "example_german": "Sie zog eine warme Mütze an, bevor sie in die Kälte ging.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "noun"
   },
   {
     "id": "v-a2-body-026",
@@ -10668,7 +10299,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-039",
+    "id": "v-a2-time-034",
     "norsk": "lunsj (en)",
     "lemma": "lunsj",
     "english": "lunch",
@@ -10685,7 +10316,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-055",
+    "id": "v-a2-communication-054",
     "norsk": "å lure på",
     "lemma": "lure på",
     "english": "to wonder about",
@@ -10804,7 +10435,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-056",
+    "id": "v-a2-communication-055",
     "norsk": "man",
     "lemma": "man",
     "english": "one, you (impersonal)",
@@ -10821,7 +10452,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-communication-057",
+    "id": "v-a2-communication-056",
     "norsk": "å mase",
     "lemma": "mase",
     "english": "to nag, to pester",
@@ -10889,7 +10520,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-058",
+    "id": "v-a2-communication-057",
     "norsk": "med",
     "lemma": "med",
     "english": "with",
@@ -10940,24 +10571,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-shopping-034",
-    "norsk": "melk (en/ei)",
-    "lemma": "melk",
-    "english": "milk",
-    "ukrainian": "молоко",
-    "spanish": "leche",
-    "german": "Milch",
-    "example": "Kan du kjope en liter melk på butikken?",
-    "example_english": "Can you buy a litre of milk at the shop?",
-    "example_ukrainian": "Чи можеш ти купити літр молока в магазині?",
-    "example_spanish": "¿Puedes comprar un litro de leche en la tienda?",
-    "example_german": "Kannst du einen Liter Milch im Laden kaufen?",
-    "level": "A2",
-    "category": "shopping",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-communication-059",
+    "id": "v-a2-communication-058",
     "norsk": "men",
     "lemma": "men",
     "english": "but",
@@ -10974,7 +10588,7 @@
     "part": "conjunction"
   },
   {
-    "id": "v-a2-communication-060",
+    "id": "v-a2-communication-059",
     "norsk": "å mene",
     "lemma": "mene",
     "english": "to think / to mean / to believe",
@@ -11008,7 +10622,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-061",
+    "id": "v-a2-communication-060",
     "norsk": "mens",
     "lemma": "mens",
     "english": "while, whereas",
@@ -11076,7 +10690,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-040",
+    "id": "v-a2-time-035",
     "norsk": "midnatt (en)",
     "lemma": "midnatt",
     "english": "midnight",
@@ -11110,7 +10724,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-036",
+    "id": "v-a2-directions-032",
     "norsk": "mil (en/ei)",
     "lemma": "mil",
     "english": "Norwegian mile (10 km)",
@@ -11161,7 +10775,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-041",
+    "id": "v-a2-time-036",
     "norsk": "morgen (en)",
     "lemma": "morgen",
     "english": "morning",
@@ -11178,7 +10792,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-013",
+    "id": "v-a2-transport-012",
     "norsk": "motor (en)",
     "lemma": "motor",
     "english": "engine, motor",
@@ -11195,7 +10809,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-062",
+    "id": "v-a2-communication-061",
     "norsk": "muntlig",
     "lemma": "muntlig",
     "english": "oral, verbal, spoken",
@@ -11263,7 +10877,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-063",
+    "id": "v-a2-communication-062",
     "norsk": "å måtte",
     "lemma": "måtte",
     "english": "to have to, must",
@@ -11280,7 +10894,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-time-042",
+    "id": "v-a2-time-037",
     "norsk": "natt (en/ei)",
     "lemma": "natt",
     "english": "night",
@@ -11297,7 +10911,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-037",
+    "id": "v-a2-directions-033",
     "norsk": "ned",
     "lemma": "ned",
     "english": "down, downward",
@@ -11399,7 +11013,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-064",
+    "id": "v-a2-communication-063",
     "norsk": "norskkurs (et)",
     "lemma": "norskkurs",
     "english": "Norwegian language course",
@@ -11467,7 +11081,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-043",
+    "id": "v-a2-time-038",
     "norsk": "nå",
     "lemma": "nå",
     "english": "now",
@@ -11484,7 +11098,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-transport-014",
+    "id": "v-a2-transport-013",
     "norsk": "offentlig",
     "lemma": "offentlig",
     "english": "public / official",
@@ -11518,7 +11132,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-065",
+    "id": "v-a2-communication-064",
     "norsk": "også",
     "lemma": "også",
     "english": "also",
@@ -11569,7 +11183,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-066",
+    "id": "v-a2-communication-065",
     "norsk": "om",
     "lemma": "om",
     "english": "about / in (time) / if",
@@ -11586,7 +11200,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-038",
+    "id": "v-a2-directions-034",
     "norsk": "omkring",
     "lemma": "omkring",
     "english": "around / approximately",
@@ -11603,7 +11217,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-time-044",
+    "id": "v-a2-time-039",
     "norsk": "omtrent",
     "lemma": "omtrent",
     "english": "approximately / about",
@@ -11637,7 +11251,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-039",
+    "id": "v-a2-directions-035",
     "norsk": "oppe",
     "lemma": "oppe",
     "english": "up / upstairs / awake",
@@ -11671,7 +11285,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-067",
+    "id": "v-a2-communication-066",
     "norsk": "opplysning (en/ei)",
     "lemma": "opplysning",
     "english": "information",
@@ -11705,7 +11319,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-040",
+    "id": "v-a2-directions-036",
     "norsk": "oppover",
     "lemma": "oppover",
     "english": "upward, upwards",
@@ -11756,24 +11370,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-041",
-    "norsk": "over",
-    "lemma": "over",
-    "english": "over, above, across",
-    "ukrainian": "над, через, поверх",
-    "spanish": "sobre, encima de, por encima de",
-    "german": "über, oberhalb",
-    "example": "Fuglen fløy over husene i nabolaget.",
-    "example_english": "The bird flew over the houses in the neighbourhood.",
-    "example_ukrainian": "Птах летів над будинками в районі.",
-    "example_spanish": "El pájaro voló sobre las casas del vecindario.",
-    "example_german": "Der Vogel flog über die Häuser in der Nachbarschaft.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
-    "id": "v-a2-transport-015",
+    "id": "v-a2-transport-014",
     "norsk": "å overnatte",
     "lemma": "overnatte",
     "english": "to stay overnight, to spend the night",
@@ -11875,7 +11472,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-transport-016",
+    "id": "v-a2-transport-015",
     "norsk": "å parkere",
     "lemma": "parkere",
     "english": "to park",
@@ -11892,7 +11489,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-017",
+    "id": "v-a2-transport-016",
     "norsk": "parkering (en/ei)",
     "lemma": "parkering",
     "english": "parking",
@@ -11943,23 +11540,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-078",
-    "norsk": "passe",
-    "lemma": "passe",
-    "english": "to suit; to fit; to look after",
-    "ukrainian": "підходити; доглядати",
-    "spanish": "quedar bien; cuidar",
-    "german": "passen; aufpassen auf",
-    "example": "Kan du passe på katten min mens jeg er på ferie?",
-    "example_english": "Can you look after my cat while I am on holiday?",
-    "example_ukrainian": "Чи можеш ти доглядати за моїм котом, поки я у відпустці?",
-    "example_spanish": "¿Puedes cuidar a mi gato mientras estoy de vacaciones?",
-    "example_german": "Kannst du auf meine Katze aufpassen, während ich im Urlaub bin?",
-    "level": "A2",
-    "category": "social-life",
-    "part": "adjective"
-  },
-  {
     "id": "v-a2-social-life-079",
     "norsk": "å passe",
     "lemma": "passe",
@@ -11994,7 +11574,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-068",
+    "id": "v-a2-communication-067",
     "norsk": "å peke",
     "lemma": "peke",
     "english": "to point",
@@ -12079,7 +11659,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-042",
+    "id": "v-a2-directions-037",
     "norsk": "plass (en)",
     "lemma": "plass",
     "english": "place, space, seat",
@@ -12096,7 +11676,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-043",
+    "id": "v-a2-directions-038",
     "norsk": "plassering (en/ei)",
     "lemma": "plassering",
     "english": "placement, position, location",
@@ -12266,7 +11846,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-069",
+    "id": "v-a2-communication-068",
     "norsk": "prat (en)",
     "lemma": "prat",
     "english": "chat, conversation",
@@ -12283,7 +11863,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-070",
+    "id": "v-a2-communication-069",
     "norsk": "å prate",
     "lemma": "prate",
     "english": "to chat, to talk",
@@ -12368,7 +11948,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-071",
+    "id": "v-a2-communication-070",
     "norsk": "problem (et)",
     "lemma": "problem",
     "english": "problem",
@@ -12487,23 +12067,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-044",
-    "norsk": "på",
-    "lemma": "på",
-    "english": "on, at, in",
-    "ukrainian": "на, у, при",
-    "spanish": "en, sobre",
-    "german": "auf, an, in",
-    "example": "Boken ligger på bordet.",
-    "example_english": "The book is on the table.",
-    "example_ukrainian": "Книга лежить на столі.",
-    "example_spanish": "El libro está sobre la mesa.",
-    "example_german": "Das Buch liegt auf dem Tisch.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-cooking-047",
     "norsk": "pålegg (et)",
     "lemma": "pålegg",
@@ -12555,7 +12118,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-072",
+    "id": "v-a2-communication-071",
     "norsk": "regjering (en/ei)",
     "lemma": "regjering",
     "english": "government",
@@ -12691,7 +12254,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-045",
+    "id": "v-a2-directions-039",
     "norsk": "rett fram",
     "lemma": "rett fram",
     "english": "straight ahead",
@@ -12759,7 +12322,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-073",
+    "id": "v-a2-communication-072",
     "norsk": "å rope",
     "lemma": "rope",
     "english": "to shout / to call out",
@@ -13014,7 +12577,7 @@
     "part": "pronoun"
   },
   {
-    "id": "v-a2-communication-074",
+    "id": "v-a2-communication-073",
     "norsk": "selvfølgelig",
     "lemma": "selvfølgelig",
     "english": "of course, naturally, obviously",
@@ -13031,7 +12594,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-time-045",
+    "id": "v-a2-time-040",
     "norsk": "semester (et)",
     "lemma": "semester",
     "english": "semester",
@@ -13048,7 +12611,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-046",
+    "id": "v-a2-time-041",
     "norsk": "senere",
     "lemma": "senere",
     "english": "later, afterwards",
@@ -13063,23 +12626,6 @@
     "level": "A2",
     "category": "time",
     "part": "adverb"
-  },
-  {
-    "id": "v-a2-house-chores-041",
-    "norsk": "seng (en/ei)",
-    "lemma": "seng",
-    "english": "bed",
-    "ukrainian": "ліжко",
-    "spanish": "cama",
-    "german": "Bett",
-    "example": "Han husket å re opp sengen sin om morgenen.",
-    "example_english": "He remembered to make his bed in the morning.",
-    "example_ukrainian": "Він не забув застелити своє ліжко вранці.",
-    "example_spanish": "Él recordó tender su cama por la mañana.",
-    "example_german": "Er dachte daran, morgens sein Bett zu machen.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "noun"
   },
   {
     "id": "v-a2-house-chores-042",
@@ -13113,23 +12659,6 @@
     "example_german": "Kannst du mir bitte den Senf reichen?",
     "level": "A2",
     "category": "cooking",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-046",
-    "norsk": "sentrum (et)",
-    "lemma": "sentrum",
-    "english": "city centre, downtown",
-    "ukrainian": "центр міста, центр",
-    "spanish": "centro de la ciudad, centro",
-    "german": "Stadtzentrum, Innenstadt, Zentrum",
-    "example": "Butikken ligger rett i sentrum av byen.",
-    "example_english": "The shop is located right in the city centre.",
-    "example_ukrainian": "Магазин розташований прямо в центрі міста.",
-    "example_spanish": "La tienda está ubicada justo en el centro de la ciudad.",
-    "example_german": "Das Geschäft liegt direkt im Stadtzentrum.",
-    "level": "A2",
-    "category": "directions",
     "part": "noun"
   },
   {
@@ -13184,7 +12713,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-075",
+    "id": "v-a2-communication-074",
     "norsk": "setning (en/ei)",
     "lemma": "setning",
     "english": "sentence",
@@ -13218,7 +12747,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-076",
+    "id": "v-a2-communication-075",
     "norsk": "å si",
     "lemma": "si",
     "english": "to say",
@@ -13235,7 +12764,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-047",
+    "id": "v-a2-directions-040",
     "norsk": "side (en/ei)",
     "lemma": "side",
     "english": "side, page",
@@ -13320,7 +12849,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-077",
+    "id": "v-a2-communication-076",
     "norsk": "å skulle",
     "lemma": "skulle",
     "english": "to be going to / to be supposed to",
@@ -13388,7 +12917,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-018",
+    "id": "v-a2-transport-017",
     "norsk": "skip (et)",
     "lemma": "skip",
     "english": "ship",
@@ -13422,7 +12951,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-078",
+    "id": "v-a2-communication-077",
     "norsk": "å skje",
     "lemma": "skje",
     "english": "to happen",
@@ -13439,24 +12968,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-clothing-018",
-    "norsk": "skjorte (en/ei)",
-    "lemma": "skjorte",
-    "english": "shirt",
-    "ukrainian": "сорочка",
-    "spanish": "camisa",
-    "german": "Hemd",
-    "example": "Han hadde på seg en hvit skjorte til intervjuet.",
-    "example_english": "He wore a white shirt to the interview.",
-    "example_ukrainian": "Він одягнув білу сорочку на співбесіду.",
-    "example_spanish": "Llevó una camisa blanca a la entrevista.",
-    "example_german": "Er trug ein weißes Hemd zum Vorstellungsgespräch.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-communication-079",
+    "id": "v-a2-communication-078",
     "norsk": "å skjønne",
     "lemma": "skjønne",
     "english": "to understand",
@@ -13473,24 +12985,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-clothing-019",
-    "norsk": "skjørt (et)",
-    "lemma": "skjørt",
-    "english": "skirt",
-    "ukrainian": "спідниця",
-    "spanish": "falda",
-    "german": "Rock",
-    "example": "Hun hadde på seg et rødt skjørt på festen.",
-    "example_english": "She was wearing a red skirt at the party.",
-    "example_ukrainian": "Вона була в червоній спідниці на вечірці.",
-    "example_spanish": "Llevaba una falda roja en la fiesta.",
-    "example_german": "Sie trug einen roten Rock auf der Party.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-time-047",
+    "id": "v-a2-time-042",
     "norsk": "skoletime (en)",
     "lemma": "skoletime",
     "english": "school lesson",
@@ -13507,7 +13002,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-080",
+    "id": "v-a2-communication-079",
     "norsk": "skriftlig",
     "lemma": "skriftlig",
     "english": "written",
@@ -13592,23 +13087,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-weather-019",
-    "norsk": "sol (en/ei)",
-    "lemma": "sol",
-    "english": "sun",
-    "ukrainian": "сонце",
-    "spanish": "sol",
-    "german": "Sonne",
-    "example": "Solen skinner sterkt i dag, og det er varmt ute.",
-    "example_english": "The sun is shining brightly today and it is warm outside.",
-    "example_ukrainian": "Сьогодні яскраво світить сонце, і надворі тепло.",
-    "example_spanish": "El sol brilla con fuerza hoy y hace calor afuera.",
-    "example_german": "Die Sonne scheint heute stark und es ist warm draußen.",
-    "level": "A2",
-    "category": "weather",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-clothing-021",
     "norsk": "solbriller (pl.)",
     "lemma": "solbrille",
@@ -13643,7 +13121,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-081",
+    "id": "v-a2-communication-080",
     "norsk": "som",
     "lemma": "som",
     "english": "who, which, that",
@@ -13694,7 +13172,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-082",
+    "id": "v-a2-communication-081",
     "norsk": "spansk",
     "lemma": "spansk",
     "english": "Spanish",
@@ -13762,7 +13240,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-083",
+    "id": "v-a2-communication-082",
     "norsk": "språk (et)",
     "lemma": "språk",
     "english": "language",
@@ -13779,7 +13257,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-084",
+    "id": "v-a2-communication-083",
     "norsk": "språkpraksis (en)",
     "lemma": "språkpraksis",
     "english": "language practice",
@@ -13813,7 +13291,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-048",
+    "id": "v-a2-time-043",
     "norsk": "å starte",
     "lemma": "starte",
     "english": "to start",
@@ -13830,7 +13308,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-085",
+    "id": "v-a2-communication-084",
     "norsk": "å stave",
     "lemma": "stave",
     "english": "to spell",
@@ -13864,7 +13342,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-048",
+    "id": "v-a2-directions-041",
     "norsk": "sted (et)",
     "lemma": "sted",
     "english": "place",
@@ -13966,23 +13444,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-house-chores-045",
-    "norsk": "stue (en/ei)",
-    "lemma": "stue",
-    "english": "living room",
-    "ukrainian": "вітальня",
-    "spanish": "sala de estar",
-    "german": "Wohnzimmer",
-    "example": "Familien sitter sammen i stuen om kvelden.",
-    "example_english": "The family sits together in the living room in the evening.",
-    "example_ukrainian": "Сім'я сидить разом у вітальні ввечері.",
-    "example_spanish": "La familia se sienta junta en la sala de estar por la noche.",
-    "example_german": "Die Familie sitzt abends gemeinsam im Wohnzimmer.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-occupations-066",
     "norsk": "styrer (en)",
     "lemma": "styrer",
@@ -14049,23 +13510,6 @@
     "level": "A2",
     "category": "descriptive-adjectives",
     "part": "adjective"
-  },
-  {
-    "id": "v-a2-cooking-056",
-    "norsk": "suppe (en/ei)",
-    "lemma": "suppe",
-    "english": "soup",
-    "ukrainian": "суп",
-    "spanish": "sopa",
-    "german": "Suppe",
-    "example": "Mamma lager alltid hjemmelaget tomatsuppe om vinteren.",
-    "example_english": "Mum always makes homemade tomato soup in winter.",
-    "example_ukrainian": "Мама завжди готує домашній томатний суп взимку.",
-    "example_spanish": "Mama siempre hace sopa de tomate casera en invierno.",
-    "example_german": "Mama kocht im Winter immer selbstgemachte Tomatensuppe.",
-    "level": "A2",
-    "category": "cooking",
-    "part": "noun"
   },
   {
     "id": "v-a2-social-life-090",
@@ -14153,7 +13597,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-086",
+    "id": "v-a2-communication-085",
     "norsk": "å synes",
     "lemma": "synes",
     "english": "to think, to find, to have an opinion",
@@ -14204,23 +13648,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-social-life-091",
-    "norsk": "søster (en/ei)",
-    "lemma": "søster",
-    "english": "sister",
-    "ukrainian": "сестра",
-    "spanish": "hermana",
-    "german": "Schwester",
-    "example": "Søsteren min bor i Bergen og jobber som lærer.",
-    "example_english": "My sister lives in Bergen and works as a teacher.",
-    "example_ukrainian": "Моя сестра живе в Бергені та працює вчителькою.",
-    "example_spanish": "Mi hermana vive en Bergen y trabaja como profesora.",
-    "example_german": "Meine Schwester lebt in Bergen und arbeitet als Lehrerin.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-descriptive-adjectives-073",
     "norsk": "søt",
     "lemma": "søt",
@@ -14238,7 +13665,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-087",
+    "id": "v-a2-communication-086",
     "norsk": "så",
     "lemma": "så",
     "english": "so, then",
@@ -14272,7 +13699,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-communication-088",
+    "id": "v-a2-communication-087",
     "norsk": "tanke (en)",
     "lemma": "tanke",
     "english": "thought, idea",
@@ -14286,40 +13713,6 @@
     "example_german": "Auf diesen Gedanken war ich noch nicht gekommen.",
     "level": "A2",
     "category": "communication",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-body-028",
-    "norsk": "tann (en/ei)",
-    "lemma": "tann",
-    "english": "tooth",
-    "ukrainian": "зуб",
-    "spanish": "diente",
-    "german": "Zahn",
-    "example": "Legen sa at jeg må passe bedre på tennene mine.",
-    "example_english": "The dentist said I need to take better care of my teeth.",
-    "example_ukrainian": "Стоматолог сказав, що мені потрібно краще доглядати за зубами.",
-    "example_spanish": "El dentista dijo que debo cuidar mejor mis dientes.",
-    "example_german": "Der Zahnarzt sagte, ich muss besser auf meine Zähne achten.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-social-life-092",
-    "norsk": "tante (en/ei)",
-    "lemma": "tante",
-    "english": "aunt",
-    "ukrainian": "тітка",
-    "spanish": "tía",
-    "german": "Tante",
-    "example": "Tanten min bor i Bergen og besøker oss hver sommer.",
-    "example_english": "My aunt lives in Bergen and visits us every summer.",
-    "example_ukrainian": "Моя тітка живе в Бергені і відвідує нас щоліта.",
-    "example_spanish": "Mi tía vive en Bergen y nos visita cada verano.",
-    "example_german": "Meine Tante lebt in Bergen und besucht uns jeden Sommer.",
-    "level": "A2",
-    "category": "social-life",
     "part": "noun"
   },
   {
@@ -14341,23 +13734,6 @@
   },
   {
     "id": "v-a2-communication-089",
-    "norsk": "tavle (en/ei)",
-    "lemma": "tavle",
-    "english": "blackboard, whiteboard, board",
-    "ukrainian": "дошка (класна)",
-    "spanish": "pizarra, pizarron",
-    "german": "Tafel",
-    "example": "Læreren skrev nye ord på tavla slik at alle kunne se dem.",
-    "example_english": "The teacher wrote new words on the board so that everyone could see them.",
-    "example_ukrainian": "Вчитель написав нові слова на дошці, щоб усі могли їх побачити.",
-    "example_spanish": "El profesor escribió palabras nuevas en la pizarra para que todos pudieran verlas.",
-    "example_german": "Die Lehrerin schrieb neue Wörter an die Tafel, damit alle sie sehen konnten.",
-    "level": "A2",
-    "category": "communication",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-communication-090",
     "norsk": "å tenke",
     "lemma": "tenke",
     "english": "to think",
@@ -14391,7 +13767,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-049",
+    "id": "v-a2-time-044",
     "norsk": "tid (en/ei)",
     "lemma": "tid",
     "english": "time",
@@ -14408,7 +13784,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-050",
+    "id": "v-a2-time-045",
     "norsk": "tidlig",
     "lemma": "tidlig",
     "english": "early",
@@ -14425,7 +13801,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-051",
+    "id": "v-a2-time-046",
     "norsk": "tidsnok",
     "lemma": "tidsnok",
     "english": "in time, early enough",
@@ -14442,7 +13818,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-directions-049",
+    "id": "v-a2-directions-042",
     "norsk": "til",
     "lemma": "til",
     "english": "to, for, until",
@@ -14459,7 +13835,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-050",
+    "id": "v-a2-directions-043",
     "norsk": "tilbake",
     "lemma": "tilbake",
     "english": "back, return",
@@ -14476,7 +13852,7 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-communication-091",
+    "id": "v-a2-communication-090",
     "norsk": "ting (en)",
     "lemma": "ting",
     "english": "thing, object",
@@ -14544,7 +13920,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-019",
+    "id": "v-a2-transport-018",
     "norsk": "trafikkregel (en)",
     "lemma": "trafikkregel",
     "english": "traffic rule",
@@ -14578,7 +13954,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-052",
+    "id": "v-a2-time-047",
     "norsk": "travelt",
     "lemma": "travelt",
     "english": "busy",
@@ -14590,23 +13966,6 @@
     "example_ukrainian": "Цього тижня я був дуже зайнятий.",
     "example_spanish": "He estado muy ocupado esta semana.",
     "example_german": "Ich hatte diese Woche sehr viel zu tun.",
-    "level": "A2",
-    "category": "time",
-    "part": "adjective"
-  },
-  {
-    "id": "v-a2-time-053",
-    "norsk": "tredje",
-    "lemma": "tredje",
-    "english": "third",
-    "ukrainian": "третій",
-    "spanish": "tercero",
-    "german": "dritte",
-    "example": "Han kom i mål som den tredje.",
-    "example_english": "He finished in third place.",
-    "example_ukrainian": "Він фінішував третім.",
-    "example_spanish": "Él llego en tercer lugar.",
-    "example_german": "Er kam als Dritter ins Ziel.",
     "level": "A2",
     "category": "time",
     "part": "adjective"
@@ -14663,7 +14022,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-092",
+    "id": "v-a2-communication-091",
     "norsk": "å tro",
     "lemma": "tro",
     "english": "to believe, to think",
@@ -14731,7 +14090,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-093",
+    "id": "v-a2-communication-092",
     "norsk": "tysk",
     "lemma": "tysk",
     "english": "German",
@@ -14833,40 +14192,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-time-054",
-    "norsk": "uke (en/ei)",
-    "lemma": "uke",
-    "english": "week",
-    "ukrainian": "тиждень",
-    "spanish": "semana",
-    "german": "Woche",
-    "example": "Vi skal dra på ferie neste uke.",
-    "example_english": "We are going on holiday next week.",
-    "example_ukrainian": "Наступного тижня ми їдемо у відпустку.",
-    "example_spanish": "La semana que viene nos vamos de vacaciones.",
-    "example_german": "Nächste Woche fahren wir in den Urlaub.",
-    "level": "A2",
-    "category": "time",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-directions-051",
-    "norsk": "under",
-    "lemma": "under",
-    "english": "under",
-    "ukrainian": "під",
-    "spanish": "debajo de",
-    "german": "unter",
-    "example": "Katten sov under bordet hele ettermiddagen.",
-    "example_english": "The cat slept under the table all afternoon.",
-    "example_ukrainian": "Кіт спав під столом цілий вечір.",
-    "example_spanish": "El gato durmio debajo de la mesa toda la tarde.",
-    "example_german": "Die Katze schlief den ganzen Nachmittag unter dem Tisch.",
-    "level": "A2",
-    "category": "directions",
-    "part": "preposition"
-  },
-  {
     "id": "v-a2-occupations-072",
     "norsk": "å undervise",
     "lemma": "undervise",
@@ -14935,7 +14260,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-directions-052",
+    "id": "v-a2-directions-044",
     "norsk": "ut",
     "lemma": "ut",
     "english": "out",
@@ -15020,7 +14345,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-094",
+    "id": "v-a2-communication-093",
     "norsk": "uten",
     "lemma": "uten",
     "english": "without",
@@ -15037,7 +14362,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-053",
+    "id": "v-a2-directions-045",
     "norsk": "utenfor",
     "lemma": "utenfor",
     "english": "outside, outside of",
@@ -15105,7 +14430,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-095",
+    "id": "v-a2-communication-094",
     "norsk": "uttrykk (et)",
     "lemma": "uttrykk",
     "english": "expression",
@@ -15173,7 +14498,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-transport-020",
+    "id": "v-a2-transport-019",
     "norsk": "varebil (en)",
     "lemma": "varebil",
     "english": "van",
@@ -15224,7 +14549,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-054",
+    "id": "v-a2-directions-046",
     "norsk": "ved",
     "lemma": "ved",
     "english": "by",
@@ -15292,7 +14617,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-055",
+    "id": "v-a2-directions-047",
     "norsk": "venstre",
     "lemma": "venstre",
     "english": "left",
@@ -15343,7 +14668,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-096",
+    "id": "v-a2-communication-095",
     "norsk": "å ville",
     "lemma": "ville",
     "english": "to want / to be willing to",
@@ -15496,7 +14821,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-communication-097",
+    "id": "v-a2-communication-096",
     "norsk": "å ønske",
     "lemma": "ønske",
     "english": "to wish",
@@ -15530,7 +14855,7 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-directions-056",
+    "id": "v-a2-directions-048",
     "norsk": "øverst",
     "lemma": "øverst",
     "english": "at the top",
@@ -15547,7 +14872,7 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-time-055",
+    "id": "v-a2-time-049",
     "norsk": "øyeblikk (et)",
     "lemma": "øyeblikk",
     "english": "moment",
@@ -15700,7 +15025,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-098",
+    "id": "v-a2-communication-097",
     "norsk": "å komme på",
     "lemma": "komme på",
     "english": "to think of, to remember",
@@ -15717,7 +15042,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-099",
+    "id": "v-a2-communication-098",
     "norsk": "å legge til",
     "lemma": "legge til",
     "english": "to add",
@@ -15751,7 +15076,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-100",
+    "id": "v-a2-communication-099",
     "norsk": "å holde opp",
     "lemma": "holde opp",
     "english": "to stop, to cease",
@@ -15802,7 +15127,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-101",
+    "id": "v-a2-communication-100",
     "norsk": "å kjenne igjen",
     "lemma": "kjenne igjen",
     "english": "to recognise",
@@ -15819,7 +15144,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-directions-057",
+    "id": "v-a2-directions-049",
     "norsk": "å holde til",
     "lemma": "holde til",
     "english": "to be located, to be based",
@@ -15836,7 +15161,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-communication-102",
+    "id": "v-a2-communication-101",
     "norsk": "å få med seg",
     "lemma": "få med seg",
     "english": "to catch, to follow, to understand",
@@ -15853,7 +15178,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-021",
+    "id": "v-a2-transport-020",
     "norsk": "å gå av",
     "lemma": "gå av",
     "english": "to step down, to get off",
@@ -16058,7 +15383,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-transport-022",
+    "id": "v-a2-transport-021",
     "norsk": "å ta med seg",
     "lemma": "ta med seg",
     "english": "to bring / to take along",
@@ -16075,58 +15400,7 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-house-chores-048",
-    "norsk": "å legge",
-    "lemma": "legge",
-    "english": "to lay / put (something flat) down",
-    "ukrainian": "класти (щось пласке)",
-    "spanish": "poner / colocar (algo plano)",
-    "german": "legen",
-    "example": "Hun legger boka på bordet.",
-    "example_english": "She puts the book on the table.",
-    "example_ukrainian": "Вона кладе книгу на стіл.",
-    "example_spanish": "Ella pone el libro en la mesa.",
-    "example_german": "Sie legt das Buch auf den Tisch.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "verb"
-  },
-  {
-    "id": "v-a2-house-chores-049",
-    "norsk": "å stå",
-    "lemma": "stå",
-    "english": "to stand",
-    "ukrainian": "стояти",
-    "spanish": "estar de pie / estar situado",
-    "german": "stehen",
-    "example": "Vasen står på bordet.",
-    "example_english": "The vase is standing on the table.",
-    "example_ukrainian": "Ваза стоїть на столі.",
-    "example_spanish": "El jarrón está sobre la mesa.",
-    "example_german": "Die Vase steht auf dem Tisch.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "verb"
-  },
-  {
-    "id": "v-a2-house-chores-050",
-    "norsk": "å ligge",
-    "lemma": "ligge",
-    "english": "to lie (flat)",
-    "ukrainian": "лежати",
-    "spanish": "estar tumbado / estar situado",
-    "german": "liegen",
-    "example": "Boka ligger på bordet.",
-    "example_english": "The book is lying on the table.",
-    "example_ukrainian": "Книга лежить на столі.",
-    "example_spanish": "El libro está sobre la mesa.",
-    "example_german": "Das Buch liegt auf dem Tisch.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "verb"
-  },
-  {
-    "id": "v-a2-directions-058",
+    "id": "v-a2-directions-050",
     "norsk": "til venstre for",
     "lemma": "til venstre for",
     "english": "to the left of",
@@ -16143,7 +15417,7 @@
     "part": "preposition"
   },
   {
-    "id": "v-a2-directions-059",
+    "id": "v-a2-directions-051",
     "norsk": "til høyre for",
     "lemma": "til høyre for",
     "english": "to the right of",
@@ -16158,40 +15432,6 @@
     "level": "A2",
     "category": "directions",
     "part": "preposition"
-  },
-  {
-    "id": "v-a2-body-033",
-    "norsk": "fot (en)",
-    "lemma": "fot",
-    "english": "a foot",
-    "ukrainian": "нога / стопа",
-    "spanish": "un pie",
-    "german": "der Fuß",
-    "example": "Jeg har vondt i foten.",
-    "example_english": "My foot hurts.",
-    "example_ukrainian": "У мене болить нога.",
-    "example_spanish": "Me duele el pie.",
-    "example_german": "Mein Fuß tut weh.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-body-034",
-    "norsk": "øye (et)",
-    "lemma": "øye",
-    "english": "an eye",
-    "ukrainian": "око",
-    "spanish": "un ojo",
-    "german": "das Auge",
-    "example": "Hun har blå øyne.",
-    "example_english": "She has blue eyes.",
-    "example_ukrainian": "У неї блакитні очі.",
-    "example_spanish": "Ella tiene los ojos azules.",
-    "example_german": "Sie hat blaue Augen.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
   },
   {
     "id": "v-a2-social-life-111",
@@ -16225,6 +15465,7 @@
     "example_german": "Sie fürchtet sich vor der Prüfung.",
     "level": "A2",
     "category": "social-life",
-    "part": "verb"
+    "part": "verb",
+    "definition": "være nervøs, føle ulyst"
   }
 ]

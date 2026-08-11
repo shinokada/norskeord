@@ -109,6 +109,7 @@ Denne versjonen er basert på:
 - slå an: become popular
 - stå på: keep going, work hard
 - skulle til: what is required
+- å arte
 
 ## B2
 
