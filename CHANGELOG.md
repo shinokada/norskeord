@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.65.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added extensive Norwegian C-level vocabulary, idioms, expressions, translations, examples, and definitions.
+    - Added more than 1,000 C-level preposition and fixed-expression exercises in varied formats.
+    - Added complete Norwegian workbooks, answer keys, grammar guides, and vocabulary learning materials.
+    - Added an article explaining distinctions between _oppføre seg_, _opptre_, and _arte seg_.
+  - **Improvements**
+    - Refined A1–B2 vocabulary and expression content, translations, definitions, categorization, and identifiers.
+    - Added support for vocabulary notes and verb-type information.
+  - **Bug Fixes**
+    - Improved search test reliability and duplicate-content cleanup.
+
 ## 2.64.0
 
 ### Minor Changes
