@@ -151,11 +151,51 @@ None needed — nivå C is already all-Plus gated.
 
 | Batch | Scope | Status |
 | ----- | ----- | ------ |
-| A     | 4.3 + 11.2 (pluskvamperfektum/2. kondisjonalis) | Not started |
+| A     | 4.3 + 11.2 (pluskvamperfektum/2. kondisjonalis) | ✅ Done 2026-08-11 (redrafted once — see "Batch A/B recovery incident" note below) — 16 new questions (`gq-kond-010`–`gq-kond-025`), all in `kondisjonalis-counterfactual` (11.2's 12 pairs folded in too; see note below on why `perfektum-pluskvamperfektum` wasn't used). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged. **Committed to git** right after writing. |
 | B     | 6.3 + 7.3 (ordfamilie) | Not started |
 | C     | 18.3 (sammensatte substantiv) | Not started |
 | D     | 5.3 (adjektiv bøying, new C topic) | Not started |
 | E     | 17.4 (mixed cloze, stretch) | Not started |
+
+## Batch A/B recovery incident (2026-08-11)
+
+A prior session's `write_file` call accidentally overwrote `grammar.json` with
+placeholder text while merging Batch B. The recovery used `git checkout --
+grammar.json`, but neither Batch A (16 questions) nor Batch B (19 questions)
+had been git-committed yet, so the checkout reverted the file all the way
+back to the pre-Batch-A baseline (1976 entries) — silently discarding both
+batches, not just B. This was only caught at the start of the next session by
+diffing actual entry counts against this doc's "Done" claims.
+
+**Batch A was redrafted from scratch** (the original content wasn't
+recoverable — only this doc's prose summary survived, not the raw JSON) and
+re-verified clean with both check scripts before being written back via a
+targeted `edit_file` append (not `write_file`), then git-committed
+immediately. **Batch B still needs to be redrafted** — not yet done as of
+this note.
+
+**Lesson for future batches:** commit to git right after each batch passes
+verification, before starting the next one. Don't rely on this doc alone as
+the recovery mechanism — git history is the actual safety net.
+
+## Batch A notes (discovered during drafting)
+
+- **`perfektum-pluskvamperfektum` wasn't used after all.** Inspecting its 10 existing entries showed
+  the topic actually drills adverbial placement (`har allerede ratifisert` vs. `har ratifisert
+  allerede`) and perfektum-vs-preteritum tense choice — not hvis-setninger with 2. kondisjonalis.
+  All 16 new questions (covering both ch. 4.3's 10 pairs and ch. 11.2's 12 pairs) went into
+  `kondisjonalis-counterfactual` instead, which already contained that exact construction
+  (`gq-kond-005`–`008`). No new `perfektum-pluskvamperfektum` items were added.
+- **Every C-level grammar question needs a real vocab-c/uttrykk-c anchor word** —
+  `check-c-grammar-vocab.mjs` enforces this (not just `check-grammar-norwegian.mjs`, which only
+  checks for leftover English). 3 of the first 16 drafted items used invented content words
+  (kilde, målt, rømningsveier) with no match in `vocab-c.json`/`uttrykk-c.json` and had to be
+  reworded around real C-vocab (`beskyldningen`, `skissen`, `konstruksjonen`) before they passed.
+  **Action for Batches C–E:** run `check-c-grammar-vocab.mjs <topic>` after drafting, not just
+  `check-grammar-norwegian.mjs` — both were only informally mentioned in Phase 3 above, but the
+  vocab one is the one that actually catches un-anchored content.
+- Both check scripts live in `scripts/` and only need `grammar.json` (+ `vocab-c.json` /
+  `uttrykk-c.json` for the vocab check) — run directly with `node scripts/<name>.mjs <topic>`.
 
 ## Open questions
 

@@ -23706,5 +23706,260 @@
     "answer": "mot",
     "hint": "«Kjempe mot gråten» (prøve å ikke gråte) tar alltid «mot», aldri «med» eller «over».",
     "plusOnly": true
+  },
+  {
+    "id": "gq-kond-010",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med «Hvis … hadde …, ville … ha …».",
+    "source": "Hun senket ikke stemmen på møtet, og sjefen la merke til den skarpe tonen hennes.",
+    "answer": "Hvis hun hadde senket stemmen på møtet, ville sjefen ikke ha lagt merke til den skarpe tonen hennes.",
+    "alternates": [
+      "Hvis hun hadde senket stemmen på møtet, hadde sjefen ikke lagt merke til den skarpe tonen hennes."
+    ],
+    "hint": "Hvis + pluskvamperfektum (hadde senket) setter opp betingelsen; ville + ha + perfektum partisipp (ha lagt merke til) gir det kontrafaktiske resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-011",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
+    "sentence": "Hvis han hadde forstått rekkevidden av avgjørelsen, _____ han aldri ha signert kontrakten.",
+    "words": [
+      "ville",
+      "skulle",
+      "har"
+    ],
+    "answer": "ville",
+    "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha signert) uttrykker det kontrafaktiske utfallet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-012",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med pluskvamperfektum og 2. kondisjonalis.",
+    "source": "Hun var ikke boblende glad da resultatet kom, og vennene hennes stilte spørsmål ved reaksjonen.",
+    "answer": "Hvis hun hadde vært boblende glad da resultatet kom, ville vennene hennes ikke ha stilt spørsmål ved reaksjonen.",
+    "alternates": [
+      "Hvis hun hadde vært boblende glad da resultatet kom, hadde vennene hennes ikke stilt spørsmål ved reaksjonen."
+    ],
+    "hint": "Hvis + hadde vært (pluskvamperfektum) angir betingelsen; ville + ha + stilt gir det kontrafaktiske resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-013",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "order",
+    "tokens": [
+      "Hvis",
+      "hun",
+      "ikke",
+      "hadde",
+      "forsvunnet",
+      "i",
+      "løse",
+      "luften",
+      "ville",
+      "vi",
+      "ha",
+      "funnet",
+      "henne",
+      "med",
+      "en gang"
+    ],
+    "answer": "Hvis hun ikke hadde forsvunnet i løse luften, ville vi ha funnet henne med en gang.",
+    "alternates": [
+      "Hvis hun ikke hadde forsvunnet i løse luften ville vi ha funnet henne med en gang"
+    ],
+    "hint": "Hvis + pluskvamperfektum (hadde forsvunnet) setter opp betingelsen; ville + ha + perfektum partisipp (ha funnet) gir resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-014",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
+    "sentence": "Om han hadde vist en mer upålitelig forteller respekt, _____ historien hans blitt trodd.",
+    "words": [
+      "ville",
+      "skulle",
+      "hadde"
+    ],
+    "answer": "ville",
+    "hint": "2. kondisjonalis: ville + ha/bli + perfektum partisipp uttrykker det kontrafaktiske utfallet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-015",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med «Om … hadde …, ville … ha …».",
+    "source": "De forstod ikke rekkevidden av krisen, og de tok ingen forholdsregler.",
+    "answer": "Om de hadde forstått rekkevidden av krisen, ville de ha tatt forholdsregler.",
+    "alternates": [
+      "Om de hadde forstått rekkevidden av krisen, hadde de tatt forholdsregler."
+    ],
+    "hint": "Om + hadde forstått (pluskvamperfektum) angir den uvirkelige betingelsen; ville + ha + tatt gir det kontrafaktiske resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-016",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "minimal-pair",
+    "optionA": "Hvis hun hadde jobbet livet av seg for prosjektet, ville sjefen ha lagt merke til det.",
+    "optionB": "Hvis hun hadde jobbet livet av seg for prosjektet, ville sjefen lagt merke til det.",
+    "answer": "A",
+    "explanation": "2. kondisjonalis trenger «ha» før perfektum partisipp — ville ha lagt merke til, ikke ville lagt merke til.",
+    "hint": "Se etter den manglende «ha» rett etter «ville».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-017",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med pluskvamperfektum og 2. kondisjonalis.",
+    "source": "Vi våget ikke å ta sjansen, og vi vant ingenting den kvelden.",
+    "answer": "Hvis vi hadde våget å ta sjansen, ville vi ha vunnet noe den kvelden.",
+    "alternates": [
+      "Hvis vi hadde våget å ta sjansen, hadde vi vunnet noe den kvelden."
+    ],
+    "hint": "Hvis + hadde våget (pluskvamperfektum) setter opp betingelsen; ville + ha + vunnet gir det kontrafaktiske resultatet. «Den som intet våger, intet vinner» er ordtaket bak setningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-018",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
+    "sentence": "Hvis hun hadde vært sjeleglad for barnebarnas besøk, _____ hun ha smilt gjennom hele middagen.",
+    "words": [
+      "ville",
+      "skulle",
+      "er"
+    ],
+    "answer": "ville",
+    "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha smilt) uttrykker det kontrafaktiske utfallet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-019",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med «Hvis … ikke hadde …, ville … ha …».",
+    "source": "Han unnlot å senke stemmen i det stille rommet, og de andre stilte spørsmål ved oppførselen hans.",
+    "answer": "Hvis han ikke hadde unnlatt å senke stemmen i det stille rommet, ville de andre ikke ha stilt spørsmål ved oppførselen hans.",
+    "alternates": [
+      "Hvis han ikke hadde unnlatt å senke stemmen i det stille rommet, hadde de andre ikke stilt spørsmål ved oppførselen hans."
+    ],
+    "hint": "Hvis + ikke hadde unnlatt (pluskvamperfektum) setter opp betingelsen; ville + ha + stilt gir resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-020",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "order",
+    "tokens": [
+      "Om",
+      "de",
+      "hadde",
+      "forstått",
+      "bæret",
+      "av",
+      "situasjonen",
+      "ville",
+      "de",
+      "ha",
+      "reagert",
+      "annerledes"
+    ],
+    "answer": "Om de hadde forstått bæret av situasjonen, ville de ha reagert annerledes.",
+    "alternates": [
+      "Om de hadde forstått bæret av situasjonen ville de ha reagert annerledes"
+    ],
+    "hint": "Om + pluskvamperfektum (hadde forstått) angir betingelsen; ville + ha + reagert gir det kontrafaktiske resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-021",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med pluskvamperfektum og 2. kondisjonalis.",
+    "source": "Hun lot seg ikke fortelle av de andre, og hun endte opp helt alene i saken.",
+    "answer": "Hvis hun hadde latt seg fortelle av de andre, ville hun ikke ha endt opp helt alene i saken.",
+    "alternates": [
+      "Hvis hun hadde latt seg fortelle av de andre, hadde hun ikke endt opp helt alene i saken."
+    ],
+    "hint": "Hvis + hadde latt (pluskvamperfektum) setter opp betingelsen; ville + ha + endt gir det kontrafaktiske resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-022",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
+    "sentence": "Hvis de hadde vært glad til sinns hele reisen, _____ de aldri ha klaget over været.",
+    "words": [
+      "ville",
+      "skulle",
+      "kan"
+    ],
+    "answer": "ville",
+    "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha klaget) uttrykker det kontrafaktiske utfallet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-023",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med «Hvis … hadde …, ville … ha …».",
+    "source": "Han grep ikke sjansen han fikk, og han angret resten av livet.",
+    "answer": "Hvis han hadde grepet sjansen han fikk, ville han ikke ha angret resten av livet.",
+    "alternates": [
+      "Hvis han hadde grepet sjansen han fikk, hadde han ikke angret resten av livet."
+    ],
+    "hint": "Hvis + hadde grepet (pluskvamperfektum) setter opp betingelsen; ville + ha + angret gir det kontrafaktiske resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-024",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "minimal-pair",
+    "optionA": "Om hun hadde forstått bæret av advarselen, ville hun ha handlet annerledes.",
+    "optionB": "Om hun hadde forstått bæret av advarselen, ville hun handlet annerledes.",
+    "answer": "A",
+    "explanation": "2. kondisjonalis trenger «ha» før perfektum partisipp — ville ha handlet, ikke ville handlet.",
+    "hint": "Se etter den manglende «ha» rett etter «ville».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-kond-025",
+    "topic": "kondisjonalis-counterfactual",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv som en kontrafaktisk setning med pluskvamperfektum og 2. kondisjonalis.",
+    "source": "Faren senket ikke stemmen sin under middagen, og barnebarna forsvant i løse luften ut av rommet.",
+    "answer": "Hvis faren hadde senket stemmen sin under middagen, ville barnebarna ikke ha forsvunnet i løse luften ut av rommet.",
+    "alternates": [
+      "Hvis faren hadde senket stemmen sin under middagen, hadde barnebarna ikke forsvunnet i løse luften ut av rommet."
+    ],
+    "hint": "Hvis + hadde senket (pluskvamperfektum) setter opp betingelsen; ville + ha + forsvunnet gir det kontrafaktiske resultatet.",
+    "plusOnly": true
   }
 ]

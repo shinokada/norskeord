@@ -28,3 +28,4 @@ Må jo det, vet du: Have to do that, you know.: Skal du jobbe i helga? Må jo de
 for tiden: currently
 å være skrevet ut av sykehuset: discharged from the hospital
 uten sidestykke: unparalleled, Uten sidestykke i norsk 
+somle bort noe: to procrastinate something
