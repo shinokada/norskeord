@@ -1,5 +1,5 @@
 ---
-date-completed: 
+date-completed: 2026-08-11
 ---
 
 # Fix: vocab/uttrykk validation errors + cross-file/cross-type duplicates
