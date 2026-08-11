@@ -202,7 +202,7 @@ confusion when reviewing that list).
   215 normalized duplicates (the whole reason `find_dupes.py` added a
   separate normalized pass — see its docstring)
 - pick a winner by **level rank or category size alone**, with no check
-  that the two entries are actually the same *sense* of the word
+  that the two entries are actually the same _sense_ of the word
 
 That second point is the real danger. Confirmed real examples from this
 run:
@@ -257,9 +257,9 @@ deletions):
 
 - **13 were already stale** — one side of the pair was one of the 34
   cross-type losers deleted in Phase 3 (e.g. `bli lei seg`, `dra kjensel
-  på`, `gi etter`/`gå løs på`/`holde ut`/`røske opp` in `uttrykk-c.json`,
+på`, `gi etter`/`gå løs på`/`holde ut`/`røske opp` in `uttrykk-c.json`,
   `klare seg`/`lete etter`/`leve av`/`like seg`/`slå seg`/`sminke seg`/`ta
-  med seg` in `uttrykk-a2.json`). No action needed — confirmed only one
+med seg` in `uttrykk-a2.json`). No action needed — confirmed only one
   side remains.
 - **13 were genuine, straightforward duplicates** — resolved:
   - Uttrykk/uttrykk, keep lower level: `ha rett til` (kept `u-a2-282`,
@@ -273,7 +273,7 @@ deletions):
   - Vocab vs uttrykk, same level → vocab wins (type rule, same as Phase
     3): `bestemme seg` (kept vocab `v-a2-social-life-100`, deleted uttrykk
     `u-a2-068`), `melde seg inn` (kept vocab, deleted `u-a2-088`), `ordne
-    seg` (kept vocab, deleted `u-a2-074`), `pynte seg` (kept vocab,
+seg` (kept vocab, deleted `u-a2-074`), `pynte seg` (kept vocab,
     deleted `u-a2-070`), `slå seg ned` (kept vocab, deleted `u-a2-015`),
     `ønske seg` (kept vocab, deleted `u-a2-071`).
 - **2 were mixed-type across different levels** (`fylle ut`: A2 uttrykk vs
@@ -514,7 +514,7 @@ Recommended workflow:
 
 - [x] `python scripts/find_dupes.py --details` — confirmed after the final
       9-merge triage batch: 1 cross-file keep-both (`tid (en/ei)`, A2 vs
-      C — now shows as an *exact* cross-file match rather than
+      C — now shows as an _exact_ cross-file match rather than
       normalized-only, simply because both sides carry the same
       `(en/ei)` marker post-relabel; same intentional keep-both case as
       before, not a new issue), 1 within-file keep-both (`å rekke`), 43
@@ -607,7 +607,7 @@ untouched, no action needed. 9 were real duplicates and were merged:
 - `premiss` — two B2 entries, identical meaning, different categories
   (argumentation vs. philosophy); philosophy copy deleted arbitrarily.
 - `passe` — two A2 entries, identical content, one mistagged `part:
-  "adjective"` (a data-entry error); the mistagged copy deleted, the
+"adjective"` (a data-entry error); the mistagged copy deleted, the
   correctly-tagged `part: "verb"` entry kept.
 
 Post-batch validation (mirrored copy, all 10 files): JSON valid, entry
