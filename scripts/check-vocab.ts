@@ -1,6 +1,6 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /**
- * check-vocab.mjs
+ * check-vocab.ts
  *
  * Validates all vocab-{level}.json files in src/lib/data against the
  * canonical rules for VocabEntry IDs and norsk/lemma field formatting.
@@ -32,12 +32,12 @@
  * decide whether to add it to the type or reclassify those entries.
  *
  * Usage:
- *   node scripts/check-vocab.mjs           # check all vocab files
- *   node scripts/check-vocab.mjs a1        # check only vocab-a1.json
- *   node scripts/check-vocab.mjs a1 a2     # check multiple levels
- *   node scripts/check-vocab.mjs --strict  # exit 1 if any errors found
- *   node scripts/check-vocab.mjs --draft    # check draft/{level}/vocab-{level}-new.json instead
- *   node scripts/check-vocab.mjs c --draft  # check only draft/c/vocab-c-new.json
+ *   npx tsx scripts/check-vocab.ts           # check all vocab files
+ *   npx tsx scripts/check-vocab.ts a1        # check only vocab-a1.json
+ *   npx tsx scripts/check-vocab.ts a1 a2     # check multiple levels
+ *   npx tsx scripts/check-vocab.ts --strict  # exit 1 if any errors found
+ *   npx tsx scripts/check-vocab.ts --draft    # check draft/{level}/vocab-{level}-new.json instead
+ *   npx tsx scripts/check-vocab.ts c --draft  # check only draft/c/vocab-c-new.json
  *
  * --draft mode (Step 3B in work-flow.md, run BEFORE Step 4 assigns real IDs):
  *   - Reads draft/{level}/vocab-{level}-new.json instead of src/lib/data/vocab-{level}.json
@@ -48,173 +48,18 @@
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { CATEGORIES_BY_LEVEL as CATEGORIES_BY_LEVEL_RAW } from '../src/lib/config.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../src/lib/data');
 const DRAFT_DIR = join(__dirname, '../draft');
 
-// ── Config (mirrors config.ts) ────────────────────────────────────────────────
+// ── Config (real import from config.ts, keys lower-cased — no more
+// hand-copied constant that can silently drift out of sync) ──────────────────
 
-const CATEGORIES_BY_LEVEL = {
-  a1: [
-    'greetings',
-    'numbers',
-    'colors',
-    'family',
-    'body',
-    'food',
-    'animals',
-    'home',
-    'days-months',
-    'classroom',
-    'adjectives',
-    'verbs',
-    'pronouns-and-questions',
-    'feelings',
-    'weather',
-    'transportation',
-    'household-items',
-    'places',
-    'clothes',
-    'actions',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  a2: [
-    'shopping',
-    'transport',
-    'clothing',
-    'hobbies',
-    'directions',
-    'occupations',
-    'sports',
-    'health',
-    'weather',
-    'time',
-    'descriptive-adjectives',
-    'cooking',
-    'nature',
-    'house-chores',
-    'communication',
-    'body',
-    'social-life',
-    'technology',
-    'environment',
-    'money',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  b1: [
-    'travel',
-    'environment',
-    'media',
-    'culture',
-    'technology',
-    'relationships',
-    'education',
-    'work',
-    'city-life',
-    'traditions',
-    'expressing-opinions',
-    'cooking',
-    'accommodation',
-    'health',
-    'finance',
-    'personal-growth',
-    'reasoning',
-    'society',
-    'communication-skills',
-    'urban-life',
-    'mental-wellbeing',
-    'fitness',
-    'arts-culture',
-    'economics',
-    'sustainability',
-    'science-nature',
-    'journalism',
-    'workplace',
-    'family',
-    'politics',
-    'language-learning',
-    'healthcare',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  b2: [
-    'politics',
-    'economics',
-    'social-issues',
-    'arts',
-    'science',
-    'emotions',
-    'history',
-    'law',
-    'literature',
-    'advanced-adjectives',
-    'philosophy',
-    'medicine',
-    'psychology',
-    'business',
-    'religion',
-    'environment',
-    'technology',
-    'media',
-    'education',
-    'language',
-    'argumentation',
-    'abstract-nouns',
-    'advanced-verbs',
-    'geography',
-    'culture',
-    'global-issues',
-    'academic-language',
-    'discourse-markers',
-    'work-career',
-    'relationships',
-    'communication',
-    'uttrykk',
-    'uttrykk-preview'
-  ],
-  c: [
-    'philosophy',
-    'academic',
-    'formal-writing',
-    'rhetoric',
-    'complex-emotions',
-    'professional',
-    'abstract-concepts',
-    'politics-democracy',
-    'linguistics',
-    'media-journalism',
-    'architecture-design',
-    'diplomacy-international',
-    'finance-economics',
-    'medicine-healthcare',
-    'psychology-advanced',
-    'literary',
-    'archaic',
-    'proverbs',
-    'highly-formal',
-    'technical',
-    'advanced-law-justice',
-    'neuroscience-cognition',
-    'climate-environment-policy',
-    'sociology-anthropology',
-    'advanced-business-strategy',
-    'existential-abstract',
-    'nature-landscape',
-    'sensory-sound',
-    'physical-appearance',
-    'everyday-objects',
-    'character-temperament',
-    'embodied-emotion',
-    'manner-of-motion',
-    'interpersonal-conflict',
-    'intensifiers-degree',
-    'gastronomy',
-    'cultural-heritage'
-  ]
-};
+const CATEGORIES_BY_LEVEL: Record<string, readonly string[]> = Object.fromEntries(
+  Object.entries(CATEGORIES_BY_LEVEL_RAW).map(([level, cats]) => [level.toLowerCase(), cats])
+);
 
 // Parts declared in types.ts PartOfSpeech
 const VALID_PARTS = new Set([
@@ -287,7 +132,7 @@ function checkIdFormat(id, level, category) {
 }
 
 /** Gender parenthetical: (en), (et), (ei), or combinations */
-const GENDER_PATTERN = /\s*\((en|et|ei|en\/ei|en\/et|en\/men)\)$/i;
+const GENDER_PATTERN = /\s*\((en|et|ei|en\/ei|en\/et|en\/men|en\/ei\/et)\)$/i;
 /** Plural parenthetical: (pl.) = ubestemt flertall, (b.pl.) = bestemt flertall */
 const PLURAL_PATTERN = /\s*\((b\.)?pl\.\)$/i;
 /** Indeclinable parenthetical: (ubøy.) = ubøyelig — noun takes no gender/plural/bestemt inflection at all */

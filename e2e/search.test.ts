@@ -79,9 +79,10 @@ test('typing a query shows results', async ({ page }) => {
   await page.goto('/');
   await page.getByTestId('search-button').click();
   await page.getByRole('searchbox').pressSequentially('hei');
-  // Wait for debounce (150 ms) + results to render
-  await page.waitForTimeout(500);
-  await expect(page.getByRole('option').first()).toBeVisible();
+  // Wait for debounce (150 ms) + results to render. Use an assertion-level
+  // timeout instead of a fixed sleep so this doesn't flake under load when
+  // run alongside the full suite (parallel workers sharing one server).
+  await expect(page.getByRole('option').first()).toBeVisible({ timeout: 10000 });
 });
 
 test('short query (1 char) shows no results', async ({ page }) => {
