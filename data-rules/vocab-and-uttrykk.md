@@ -185,11 +185,11 @@ Same as vocab: `norsk` is the display form, `lemma` is the canonical/dictionary 
 
 **Verb-initial uttrykk use the bare verb form — no `å` prefix.** Unlike vocab verbs (which use `å` in `norsk`), an uttrykk headed by a verb is written the way a dictionary would cite the idiom, not as an infinitive clause.
 
-| lemma               | not                    |
-| -------------------- | ---------------------- |
-| `ta vare på`          | ~~`å ta vare på`~~        |
-| `ha lyst til`         | ~~`å ha lyst til`~~       |
-| `bli oppfordret til`  | ~~`å bli oppfordret til`~~ |
+| lemma                | not                        |
+| -------------------- | -------------------------- |
+| `ta vare på`         | ~~`å ta vare på`~~         |
+| `ha lyst til`        | ~~`å ha lyst til`~~        |
+| `bli oppfordret til` | ~~`å bli oppfordret til`~~ |
 
 ...and all proverbs.
 
