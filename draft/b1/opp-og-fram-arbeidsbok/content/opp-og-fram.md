@@ -678,12 +678,27 @@ Cecilie Lønn
 
 *Opp og fram!* grunnbok har totalt 40 kapitler, og grunnboka er delt inn i seks ulike deler: personlig domene, offentlig domene, opplæringsdomene og yrkes- og arbeidslivsdomene – samt en del som inneholder to lengre intervjuer. Den sjette og siste delen av boka består av sju fortellende tekster.
 
+## Trollmor
 
+Trollmor er en figur noen vil gjenkjenne fra *Nå begynner vi!* eller *Det går bra!.* Trollmor er dette læreverkets subjektive stemme. Hun formidler forfatterens underliggende oppfatning: Å skrive et læreverk som presenterer virkeligheten «slik den er i Norge» er en umulig – og heller ikke nødvendig – oppgave.
 
+Jeg har tro på at det er viktig å gi studentene mulighet til å undre seg, stille spørsmål og være kritisk til ulike sider ved den norske virkeligheten. En grunnleggende del av norskstudenters opplevelse av livet i Norge forblir ofte en taus erkjennelse – uavhengig av språklig nivå. Mange tanker som studentene har, er tanker de må ha for seg selv – på sitt morsmål. Ofte tror jeg de mangler språklige rollemodeller som stiller kritiske spørsmål. Trollmor representerer forhåpentligvis en røst som kan lede noen framover mot å forme slike grunnleggende spørsmål. Håpet er at Trollmor kan uttrykke vanskelige tema i et enkelt og forståelig språk. Ideen som ligger til grunn for dette er at selv om emnet i seg selv er stort, kompleks og med mange lag, så trenger ikke språket å være komplisert, vanskelig og ugjennomtrengelig. Noen ganger er det kanskje såre enkelt? Slik ser i hvert fall Trollmor på den saken – og så får hver enkelt lærer ta opp saken til diskusjon med damen selv – i samspill med sine studenter. ☺
 
+## Grammatikken i arbeidsboka
 
+Grammatikken i arbeidsboka fokuserer på spesielle tema som dukker opp i kapitlene. I tillegg fokuseres det spesielt på verb etterfulgt av ulike preposisjoner og adverb, og ord det kan være vanskelig å forstå forskjellen på. Grammatikken er ikke utfyllende, men temaene er utvalgt spesielt med tanke på hva studenter på dette nivået ofte synes er utfordrende. Derfor presenteres ulike grammatiske tema som små «drypp», og de blir presentert så kort og konsist som mulig.
 
+---
 
+## ☺☺-oppgavene
+
+Når man starter med oppgavetypen merket ☺☺, vil man som lærer sannsynligvis legge merke til at studentene velger å gjøre oppgaven på ulike måter. Noen vil lese både spørsmålene og svarene, mens noen vil dekke over kolonnen med svarene og lese spørsmålene for hverandre. Andre vil klare å løsrive seg fra teksten og bare lytte til hva medstudenten sier. Målet med disse ☺☺-oppgavene er at så mange som mulig skal klare å gjøre oppgaven kun ved at én student lytter og den andre studenten leser og sjekker medstudentens svar. Studentene blir slik gitt muligheten til å bli hverandres «lærere». I virkelighetens klasserom finner studentene fort ut hvilken vanskelighetsgrad som passer dem. Studenter som ikke løsriver seg fra teksten, vil i noen tilfeller ikke oppleve stor nok utfordring. Noen trenger hjelp til å forstå hvor annerledes oppgaven er når de må *lytte* til en setning og gi et svar, til forskjell fra å lese en setning selv og gi et svar ut ifra det. ☺☺-oppgavene er med andre ord godt egnet for tilpasset opplæring. Alternativt kan studentene få gjøre ☺☺-oppgavene to ganger; én gang hvor de begge to leser setningene, og én gang hvor bare den ene studenten ser på teksten.
+
+Min erfaring gjennom utprøvingen av *Opp og fram!* er at studentene trenes opp og mestrer oppgaveformen stadig bedre gjennom å gjøre oppgavetypen jevnlig. Studentene finner ut hvordan de vil løse oppgaven, og de trenes også i å utvikle forklaringsmodeller for hverandre. Noen ganger når studentene bedre fram med forklaringer til sine medstudenter enn læreren. ☺
+
+## Vokabularlistene i arbeidsboka
+
+Ord markert med fete typer er ord man finner igjen i vokabularlister – enten i arbeidsboka eller på nettsiden. Man kan jobbe med vokabularet på ulike måter. Enten kan man gi i lekse at studentene skal lære seg vokabularet hjemme. I klassen kan studentene så få i oppgave å skrive ned vokabularet (enten høyre eller venstre kolonne) – som i en slags test. Men man kan også gi studentene i oppgave å jobbe parvis eller i små grupper med vokabularet, der de kan spørre hverandre.
 
 Å tenke norsk på norsk er et viktig ledd i en innlæringsfase. Passivt vokabular kan bli aktivt gjennom gjennomgående fokus på synonymer. Man lærer flere ord, man lærer strategier for innlæring og man trenes opp til å forstå forklaringer – alt på norsk.
 
@@ -1174,10 +1189,62 @@ Kjenner du disse uttrykkene med *la* som hjelpeverb? Du finner kommentarer til d
 12. mageknip  13. kroppsvarme  14. å bære  15. overalt  16. en rygg  17. honning
 18. å begripe  19. å fatte  20. en lungebetennelse
 
+# 3 Mormor Birgitta hopper i fallskjerm
 
+## Grammatikk, ord og uttrykk
 
+### Fire måter å bruke adverbet *ellers* på
 
+1. vanligvis
+   *Ellers på fødselsdager pleier de å dekke pent på bordet.*
+2. hvis ikke
+   *Gjør som jeg sier, ellers går det galt.*
+3. i tillegg
+   *Butikkdamen: Var det ellers noe du ville kjøpe?*
+4. i parentes bemerket
+   *Ellers er hun fri og frank.* (Han bare nevner kort at hun ikke har kjæreste, uten å legge stor vekt på det.)
 
+### Å glede seg til/over – å være glad (i) – det gleder meg – det er en glede
+
+1. *Jeg gleder meg til alt dette er over.*
+2. *Jeg gleder meg over at du er blitt frisk.*
+3. *Jeg er glad fordi sola skinner nå.*
+4. *Jeg er glad i deg.*
+5. *Det gleder meg å møte deg.*
+6. *Det er en stor glede å være til stede her i kveld.*
+
+### Preposisjonen *utfor*
+
+1. *Utfor* kan vi bruke ved bevegelser som går nedover:
+   *Skiløperen satte utfor bakken.* (Skiløperen kjørte nedover bakken.)
+2. *Utfor* kan også brukes ved bevegelse som går *utenfor*:
+   *Bilen kjørte utfor veien.* (Bilen kjørte nedover og utenfor veien.)
+
+### Man – en/ens
+
+Når vi uttaler oss om mennesker generelt, uten å tenke på bestemte personer, kan vi bruke *man* eller *en*. Både *man* og *en* kan brukes som subjekt:
+*Når man/en er sliten, er det godt å legge seg og hvile litt.*
+
+*Man* kan **bare** brukes som subjekt. *En* kan brukes i andre setningsledd også:
+*Man bør ikke høre på alt det folk sier til en.*
+
+Eieformen av *en* er *ens*: *Det er fint når ens egne barn gjør det godt på skolen.*
+
+## Bestemt eller ubestemt form av substantivet?
+
+| Vi har ubestemt form:                     | Vi har en bestemt form:              |
+| ----------------------------------------- | ------------------------------------ |
+| a) Etter ubestemt artikkel (*en, ei, et*) | a) Foran eiendomspronomen            |
+| b) Etter genitiv-*s*                      | b) Ved henvisning til bestemt person |
+| c) Etter eiendomspronomen                 | c) Etter mengdeord + *av*            |
+| d) Etter mengdeord (uten *av*)            |                                      |
+
+|                                                          |                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------ |
+| a) *Jeg kjenner en lærer.*                               | a) *Jeg kjenner læreren min.*                                |
+| b) *Lærerens hus er gult.*                               | b) *Jeg hører at læreren kommer nå.*                         |
+| c) *Hennes bok er ny.*                                   | c) *Mange / noen / en del / få av lærerne kommer på festen.* |
+| d) *Mange / noen / en del / få lærere kommer på festen.* |                                                              |
 
 ## Vokabular
 
@@ -1353,7 +1420,7 @@ Noen synes at adverbet *liksom* brukes for mye i muntlig norsk, som et «fyllord
 
 4. Tekstsammenbindende forklaring: *Denne avisen er så god, liksom alltid med masse ekstrastoff og interessante analyser.*
 
-**Sikker (adverb og adjektiv)**
+### Sikker (adverb og adjektiv)
 
 Som adverb betyr *sikker* sannsynlig, trolig (kanskje).
 Som adjektiv betyr *sikker* overbevist, fast.
@@ -1363,7 +1430,7 @@ Som adjektiv betyr *sikker* overbevist, fast.
 | *Jeg kommer sikkert.*                             | *Det er sikkert at jeg kommer.*                                |
 | *Han vil sikkert kjøpe en flott presang til deg.* | *Han er sikker på at han skal kjøpe en fin presang til henne.* |
 
-**Ingen – ikke noen, ingenting – ikke noe**
+### Ingen – ikke noen, ingenting – ikke noe
 
 Det går fint å sette *ingen* eller *ingenting* først i setningen:
 1. *Ingen kom på forelesningen.*
@@ -1409,4 +1476,18 @@ Substantiv som slutter på *-er* og som betegner personer, får *-e* i flertall:
 
 Vil du vite hvilke substantiv som slutter på *-el* og *-er* i *Opp og fram!* grunnbok?
 Du finner liste over disse substantivene og kommentarer på nettkurset.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

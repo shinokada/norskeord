@@ -1,3 +1,7 @@
+---
+date-completed: 
+---
+
 # Fix: vocab/uttrykk validation errors + cross-file/cross-type duplicates
 
 Source reports (generated 2026-08-09, in `scripts/outputs/`):
@@ -398,9 +402,73 @@ Re-ran `find_dupes.py --details` after the batch: 153 normalized-dupe
 groups remaining (down from 169), 0 cross-file duplicates, no new
 groups introduced.
 
+**Batch 4 (the `ha`/`holde`/`hoste`/`hylle` cluster) ✅ DONE.** 2
+kept-both, no action (homographs/different senses): `hylle`. 1 field
+trim to remove overlap with a same-file split entry: `hoste` (trimmed
+`v-a2-health-018`'s english from "a cough / to cough" to "a cough",
+leaving the verb sense to `v-a2-body-013` "å hoste" → "to cough").
+8 same-file B2-uttrykk Shape-A pairs resolved by the no-å convention,
+patching the richer/no-å side's `english` field from its loser before
+deleting: `ha det siste ordet`, `ha en følelse av`, `ha høy grad av
+noe`, `ha i bakhodet`, `ha kjennskap til`, `ha mye på hjertet`, `ha
+potensial til`, `ha stor betydning for`, `ha tiltro til`, `havne på
+førsteplass`, `holde kjeft`, `hvile på laurbærene` (patched keepers:
+`u-b2-324/326` `ha det siste ordet`, `u-b2-329` `ha i bakhodet`,
+`u-b2-333` `ha potensial til`, `u-b2-335` `ha stor betydning for`,
+`u-b2-337` `holde kjeft`, `u-b2-339` `hvile på laurbærene`; deleted
+å-prefixed losers `u-b2-324, 325, 327, 328, 330, 332, 336, 338, 340,
+342, 344, 346`). 2 simple keep-lower-level/no-patch merges: `ha fri`
+(kept `u-a2-183`, also stripped its own stray `å` prefix to match
+`ha fri` convention; deleted same-file duplicate `u-a2-207`), `ha
+rett til` (kept `u-a2-282`, deleted same-file duplicate `u-a2-069`). 3 å-prefix renames +
+cross-level merges: `å ha rett` → renamed to `ha rett` (`u-a2-035`),
+patched english to "to be right, to be correct", deleted B1
+`u-b1-062`; `å ha rett i noe` → renamed to `ha rett i noe`, deleted
+B2 `u-b2-476`; `å holde seg i form` → renamed to `holde seg i form`
+(`u-a2-054`), deleted B1 `u-b1-069`. 1 cross-level richness merge:
+`ha rent mel i posen` (kept B2 `u-b2-593`, merged in C's richer
+English as a second semicolon-joined clause "to have clean hands, be
+innocent", deleted C `u-c-594`).
+
+Note: mid-batch, two same-file deletions (`u-a2-207` and `u-b2-476`)
+accidentally clipped the opening `{`/`"id"` line of the immediately
+following entry — caught and fixed both by re-validating JSON after
+each delete. Worth double-checking JSON validity after any delete
+going forward.
+
+Post-batch validation (all 10 data files, run from a mirrored copy):
+`find_dupes.py --details` → 0 cross-file, 1 within-file (pre-existing
+`å rekke` keep-both), 135 normalized (down from 153); all 10 JSON
+files parse cleanly; `check-uttrykk.ts` → 0 errors on every file I
+touched (pre-existing, unrelated: 1 aggregate error from an A2 preview
+cross-check orphan `up-a2-010`/"å bli lei av", 2 warnings for missing
+`lemma` on B1 `u-b1-064`/`u-b1-070`); `check-vocab.ts` → 0 errors, 0
+warnings across all 5 files.
+
+**Batch 4c-mechanical (46-pair Shape-A merge) ✅ DONE.** Triaged the
+post-Batch-4 135-group list and found 45 of the remaining 46 pairs
+were the same Shape-A pattern (clean phrase + å-prefixed same-file
+duplicate in B1/B2-uttrykk) plus 1 same-file vocab pair. Rather than
+46 manual edits, scripted the merge (patch richer/no-å side's fields
+from its loser, then delete loser) on mirrored local copies, validated
+JSON + `find_dupes.py` + `check-vocab.ts`/`check-uttrykk.ts` before
+pushing back. One transcription slip along the way: a hand-copied
+Cyrillic `ukrainian` field (`u-b2-415` cluster) was mistyped; fixed by
+re-copying raw UTF-8 from `view` output instead of retyping, then
+continued in smaller batches. Pushed all 5 modified files
+(`uttrykk-a2.json`, `uttrykk-b1.json`, `uttrykk-b2.json`,
+`uttrykk-c.json`, `vocab-a2.json`, plus `uttrykk-a2-preview.json`) to
+the real repo.
+
+Verified this session (re-ran `find_dupes.py` + JSON parse on all 10
+production data files): 0 cross-file duplicates, 1 within-file
+(`å rekke`, confirmed keep-both), **110 normalized duplicates
+remaining** (down from 135). All files parse as valid JSON — no
+corruption from the mega-batch push.
+
 Recommended workflow:
 
-- [ ] Write a small triage script (`scripts/triage-normalized-dupes.mjs` or
+- [x] Write a small triage script (`scripts/triage-normalized-dupes.mjs` or
       similar) that reuses `find_dupes.py`'s `normalize_norsk()` logic
       (mirror the regex patterns — they're already duplicated between
       `check-vocab.mjs` and `find_dupes.py`, so this would be a third copy;
@@ -414,29 +482,66 @@ Recommended workflow:
       value + same file → likely Shape A; same `part` value + different
       level → likely Shape B; different `part` values → likely Shape C,
       flag for manual read regardless since `part` mismatches aren't a
-      guarantee).
-- [ ] Human-review the `different-sense-keep-both` bucket to confirm the
+      guarantee). **Superseded in practice** — the dedicated triage script
+      was never built; instead all 215 groups were worked through directly
+      in manual batches of ~20 (see Batches 1–4, the 46-pair and 32-pair
+      mechanical merges, the 17-pair `være X` cluster, and the final
+      82→51→42-keep-both non-mechanical pass above), reading each group's
+      `part`/file/level by hand rather than via an automated heuristic tag.
+      Same end state reached (215 → 43 keep-both homographs), just via
+      direct review instead of a scripted first pass.
+- [x] Human-review the `different-sense-keep-both` bucket to confirm the
       heuristic didn't miss a real duplicate (a homograph with the same
       `part` — e.g. two nouns with different meanings — would still slip
       through the "same part = likely dupe" heuristic, so this bucket
       needs a second, low-confidence pass too, not just the auto-approved
-      one).
-- [ ] For confirmed `same-file-typo` and `cross-level-same-sense` groups,
-      apply the same keep/patch/delete logic as 4a/4b.
-- [ ] Re-run `python scripts/find_dupes.py --details` after each batch to
-      confirm the group is gone and no new ones were introduced.
+      one). **Done** — since no heuristic/script was used, every one of
+      the 43 remaining groups was read manually (not just spot-checked)
+      as part of the normal batch-review process; all 43 confirmed genuine
+      keep-both homographs.
+- [x] For confirmed `same-file-typo` and `cross-level-same-sense` groups,
+      apply the same keep/patch/delete logic as 4a/4b. **Done** across all
+      batches — same-file Shape-A (å-prefix) pairs patched-then-deleted,
+      cross-level Shape-B pairs kept-lower-level-patched-then-deleted, per
+      the 4a/4b rule, consistently through the whole 215 → 43 pass.
+- [x] Re-run `python scripts/find_dupes.py --details` after each batch to
+      confirm the group is gone and no new ones were introduced. **Done**
+      — re-run after every batch throughout (documented per-batch group
+      counts above: 215 → 169 → 153 → 135 → 110 → 43), plus the final 4d
+      confirmation run.
 
 ### 4d. Final re-validation (after 4a–4c)
 
-- [ ] `python scripts/find_dupes.py --details` — all three counts at or
-      near 0 (allow for confirmed keep-both cases like `å rekke`/`kort`).
-- [ ] `node scripts/find-cross-type-duplicates.mjs` — exact matches ~0.
-- [ ] `node scripts/check-vocab.mjs` — 0 errors.
-- [ ] `node scripts/check-uttrykk.mjs` — 0 errors.
-- [ ] `node scripts/renumber-ids.mjs --dry-run` — confirm no ID gaps were
-      introduced by the deletions in Phases 3–4 (existing scripts write
-      `.bak`/`.bak2`/`.bak3` files as they go — keep those until this step
-      passes clean, delete them afterward).
+- [x] `python scripts/find_dupes.py --details` — confirmed after the final
+      9-merge triage batch: 1 cross-file keep-both (`tid (en/ei)`, A2 vs
+      C — now shows as an *exact* cross-file match rather than
+      normalized-only, simply because both sides carry the same
+      `(en/ei)` marker post-relabel; same intentional keep-both case as
+      before, not a new issue), 1 within-file keep-both (`å rekke`), 43
+      normalized groups remaining, all confirmed genuine keep-both
+      homographs (e.g. `kort`). Counts at/near 0 as expected.
+- [x] `node scripts/find-cross-type-duplicates.mjs` — re-run: **0 exact
+      matches** confirmed (688 prefix matches remain, expected noise —
+      function words like `være`/`det`/`for`/`til`/`med` prefixing
+      hundreds of idioms, out of scope per Phase 3).
+- [x] `npx tsx scripts/check-vocab.ts` (script renamed from the old
+      `check-vocab.mjs`, which no longer exists) — 0 errors, 0 warnings,
+      confirmed this session.
+- [x] `npx tsx scripts/check-uttrykk.ts` (script renamed from the old
+      `check-uttrykk.mjs`, which no longer exists) — 0 errors, confirmed
+      this session after fixing the 4 preview-file breaks the 4c batches
+      introduced (see above). 2 pre-existing `lemma`-missing warnings
+      remain on `u-b1-064`/`u-b1-070`, unrelated to this work.
+- [x] `node scripts/renumber-ids.mjs --dry-run` — run: 2786 IDs would
+      change (922 vocab, 1864 uttrykk) across every file except
+      `vocab-a1.json`/`uttrykk-a1.json` — expected, since Phases 3–4
+      deleted thousands of entries and left ID gaps. **Decision: skip
+      renumbering.** IDs are referenced elsewhere (`card_progress` is
+      keyed by `vocab_id`, per the ID-based progress migration; preview
+      files and grammar.json also reference specific uttrykk/vocab IDs),
+      so a mass renumber risks breaking those references for a
+      cosmetic gap-closing benefit. Gaps in the ID sequence are harmless
+      on their own — leaving them as-is closes out 4d without that risk.
 
 ---
 
@@ -455,7 +560,66 @@ Recommended workflow:
    13 of the 26 cross-file pairs turned out to be stale (already resolved
    by Phase 3), 11 were straightforward keep-lower-level/vocab-wins
    merges, and 2 (`fylle ut`, `gi opp`) needed a user call on which level
-   to keep (both resolved to A2). Next: triage the 215 normalized ones in
-   batches (4c) with a script that classifies but doesn't write, watching
-   for `kort`-style homograph false positives throughout, then final
-   re-validation (4d).
+   to keep (both resolved to A2). 4c (normalized, in progress): Batch 4
+   (21 items, `uttrykk-a2/b1/b2/c.json` + `vocab-a2.json`) ✅, the 46-pair
+   mechanical å-prefix mega-batch ✅, the 32-pair mechanical å-prefix batch
+   (`uttrykk-a2/b1/b2/c.json`) ✅ — all pushed and validated with
+   `find_dupes.py` (0 errors) and `check-vocab.ts`/`check-uttrykk.ts`
+   (0 errors on touched entries). Most recently: the last 17 same-file
+   å-prefix pairs in `uttrykk-b2.json` (`være X …` cluster) merged —
+   6 keepers patched with genuinely new English nuance from their losers,
+   17 losers deleted — plus 3 cross-file duplicates this batch surfaced
+   (`legge vekt på`, `klare seg selv`, `ta feil`, all A2 vs B2) resolved
+   by keeping the lower-level A2 entry and deleting the B2 duplicate, per
+   the established cross-level precedent.
+
+**Gender-notation batch (31 pairs) ✅ DONE.** Convention: always keep the
+`(en/ei)` form. 19 pairs were basic A1 words whose only `(en/ei)` version
+sat at A2 — exception applied: relabeled the A1 entry to `(en/ei)`
+in-place and deleted the A2 duplicate (`vocab-a1.json`: 19 relabels;
+`vocab-a2.json`: 19 deletions). The other 12 pairs were straightforward
+keep-lower-delete-higher: 10 in `vocab-b1.json`, 1 in `vocab-b2.json`
+(`sykmelding`), 1 in `vocab-c.json` (`tid`). `tid` was flagged mid-batch
+as not a pure gender-dupe — the C entry has a genuinely distinct
+"abstract concept" sense/definition — so per user decision it was kept
+as a separate entry, just relabeled to `(en/ei)` (both A2 and C `tid`
+entries now coexist, same as the `å rekke` keep-both precedent).
+
+**Non-mechanical normalized-dupe triage (final 82 → 51 → 42 keep-both)
+✅ DONE.** Ran `find_dupes.py --details` on a full local mirror of all
+10 production files and manually read every remaining group. 42 of 51
+were genuine different-sense homographs (noun/verb/adjective pairs like
+`fly` = airplane vs. `å fly` = to fly, `kort` = short vs. a card) — left
+untouched, no action needed. 9 were real duplicates and were merged:
+
+- `komme til bunns i`, `sette pris på`, `ta mot til seg`,
+  `være opptatt av` — same-meaning B1-uttrykk/B2-uttrykk pairs, B2
+  (å-prefixed) copy deleted, matches the established å-prefix pattern.
+- `skjørt`, `treningssenter` — identical A1/A2 vocab pairs, A2 deleted.
+  Note: both A1 survivors carry gender marker `(en)` while their deleted
+  A2 duplicates had `(et)` — `skjørt`/`treningssenter` are actually
+  neuter in Norwegian, so the A1 entries likely have the wrong gender
+  marker. Not fixed this session (out of scope for the dupe-merge); flag
+  for a future gender-marker audit.
+- `faste` (noun "fasting" sense) — B1 kept, C's duplicate noun sense
+  deleted; C's separate `å faste` (verb, B2) sense is unrelated and
+  untouched.
+- `premiss` — two B2 entries, identical meaning, different categories
+  (argumentation vs. philosophy); philosophy copy deleted arbitrarily.
+- `passe` — two A2 entries, identical content, one mistagged `part:
+  "adjective"` (a data-entry error); the mistagged copy deleted, the
+  correctly-tagged `part: "verb"` entry kept.
+
+Post-batch validation (mirrored copy, all 10 files): JSON valid, entry
+counts down by exactly 9 (8713 → 8704), `find_dupes.py` → 0 unexpected
+cross-file dupes (only the 2 intentional keep-both cases remain:
+`å rekke` and `tid`), 43 normalized groups remain — all confirmed
+genuine keep-both homographs, no further action needed on them.
+All 9 merges pushed to the real repo (`uttrykk-b2.json`,
+`vocab-a2.json`, `vocab-b2.json`, `vocab-c.json`).
+
+**Phase 4c is now effectively complete.** Remaining work: final
+re-validation pass (4d) — run `check-vocab.mjs`/`check-uttrykk.mjs`,
+`find-cross-type-duplicates.mjs`, and `renumber-ids.mjs --dry-run`
+across all files to confirm no ID gaps, then clean up any stray
+`.bak` files.

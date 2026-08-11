@@ -1481,23 +1481,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-sports-005",
-    "norsk": "treningssenter (et)",
-    "lemma": "treningssenter",
-    "english": "a gym",
-    "ukrainian": "спортивний зал / фітнес-центр",
-    "spanish": "un gimnasio",
-    "german": "das Fitnessstudio",
-    "example": "Jeg har meldt meg inn på treningssenteret.",
-    "example_english": "I have joined the gym.",
-    "example_ukrainian": "Я записався до спортивного залу.",
-    "example_spanish": "Me he apuntado al gimnasio.",
-    "example_german": "Ich habe mich im Fitnessstudio angemeldet.",
-    "level": "A2",
-    "category": "sports",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-sports-006",
     "norsk": "kamp (en)",
     "lemma": "kamp",
@@ -2083,7 +2066,7 @@
     "id": "v-a2-health-018",
     "norsk": "hoste (en)",
     "lemma": "hoste",
-    "english": "a cough / to cough",
+    "english": "a cough",
     "ukrainian": "кашель / кашляти",
     "spanish": "tos / toser",
     "german": "der Husten",
@@ -8972,23 +8955,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-051",
-    "norsk": "kirke (en/ei)",
-    "lemma": "kirke",
-    "english": "church",
-    "ukrainian": "церква",
-    "spanish": "iglesia",
-    "german": "Kirche",
-    "example": "Familien går i kirken hver søndag morgen.",
-    "example_english": "The family goes to church every Sunday morning.",
-    "example_ukrainian": "Родина ходить до церкви кожного недільного ранку.",
-    "example_spanish": "La familia va a la iglesia cada domingo por la mañana.",
-    "example_german": "Die Familie geht jeden Sonntagmorgen in die Kirche.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-descriptive-adjectives-035",
     "norsk": "kjempefin",
     "lemma": "kjempefin",
@@ -9465,23 +9431,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-body-025",
-    "norsk": "hånd (en/ei)",
-    "lemma": "hånd",
-    "english": "hand",
-    "ukrainian": "долоня / кисть руки",
-    "spanish": "mano",
-    "german": "Hand",
-    "example": "Hun rekker opp hånden for å svare på spørsmålet.",
-    "example_english": "She raises her hand to answer the question.",
-    "example_ukrainian": "Вона піднімає руку, щоб відповісти на запитання.",
-    "example_spanish": "Ella levanta la mano para responder la pregunta.",
-    "example_german": "Sie hebt die Hand, um die Frage zu beantworten.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-sports-026",
     "norsk": "håndball (en)",
     "lemma": "håndball",
@@ -9738,23 +9687,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-social-life-062",
-    "norsk": "kone (en/ei)",
-    "lemma": "kone",
-    "english": "wife",
-    "ukrainian": "дружина",
-    "spanish": "esposa",
-    "german": "Ehefrau",
-    "example": "Han kjøpte blomster til kona si på bryllupsdagen deres.",
-    "example_english": "He bought flowers for his wife on their wedding anniversary.",
-    "example_ukrainian": "Він купив квіти для своєї дружини в день їхнього річниці одруження.",
-    "example_spanish": "El le compro flores a su esposa en su aniversario de boda.",
-    "example_german": "Er kaufte seiner Frau Blumen zu ihrem Hochzeitstag.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-communication-050",
     "norsk": "å konsentrere seg",
     "lemma": "konsentrere seg",
@@ -9854,23 +9786,6 @@
     "example_german": "Heute Nacht waren es zehn Grad Kälte draußen.",
     "level": "A2",
     "category": "weather",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-social-life-064",
-    "norsk": "kusine (en/ei)",
-    "lemma": "kusine",
-    "english": "female cousin",
-    "ukrainian": "двоюрідна сестра",
-    "spanish": "prima",
-    "german": "Cousine",
-    "example": "Kusinen min bor i Bergen og studerer medisin.",
-    "example_english": "My cousin lives in Bergen and studies medicine.",
-    "example_ukrainian": "Моя двоюрідна сестра живе в Бергені і вчиться на медика.",
-    "example_spanish": "Mi prima vive en Bergen y estudia medicina.",
-    "example_german": "Meine Cousine lebt in Bergen und studiert Medizin.",
-    "level": "A2",
-    "category": "social-life",
     "part": "noun"
   },
   {
@@ -10007,23 +9922,6 @@
     "example_german": "Ich habe den Lachs mit Zitrone und Krautern zum Abendessen gebraten.",
     "level": "A2",
     "category": "cooking",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-house-chores-034",
-    "norsk": "lampe (en/ei)",
-    "lemma": "lampe",
-    "english": "lamp, light",
-    "ukrainian": "лампа, світильник",
-    "spanish": "lampara",
-    "german": "Lampe",
-    "example": "Lampen på nattbordet gir et koselig lys på soverommet.",
-    "example_english": "The lamp on the bedside table gives a cosy light in the bedroom.",
-    "example_ukrainian": "Лампа на тумбочці дає затишне світло в спальні.",
-    "example_spanish": "La lampara de la mesita de noche da una luz acogedora en el dormitorio.",
-    "example_german": "Die Lampe auf dem Nachttisch spendet ein gemütliches Licht im Schlafzimmer.",
-    "level": "A2",
-    "category": "house-chores",
     "part": "noun"
   },
   {
@@ -10180,23 +10078,6 @@
     "part": "adjective"
   },
   {
-    "id": "v-a2-social-life-066",
-    "norsk": "leilighet (en/ei)",
-    "lemma": "leilighet",
-    "english": "apartment, flat",
-    "ukrainian": "квартира",
-    "spanish": "apartamento",
-    "german": "Wohnung",
-    "example": "De leier en leilighet i sentrum av Oslo.",
-    "example_english": "They rent an apartment in the centre of Oslo.",
-    "example_ukrainian": "Вони орендують квартиру в центрі Осло.",
-    "example_spanish": "Alquilan un apartamento en el centro de Oslo.",
-    "example_german": "Sie mieten eine Wohnung im Zentrum von Oslo.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-cooking-035",
     "norsk": "lekker",
     "lemma": "lekker",
@@ -10212,23 +10093,6 @@
     "level": "A2",
     "category": "cooking",
     "part": "adjective"
-  },
-  {
-    "id": "v-a2-communication-052",
-    "norsk": "lekse (en/ei)",
-    "lemma": "lekse",
-    "english": "homework, lesson",
-    "ukrainian": "домашнє завдання, урок",
-    "spanish": "tarea, lección",
-    "german": "Hausaufgabe, Lektion",
-    "example": "Jeg glemte å gjøre leksen min i går.",
-    "example_english": "I forgot to do my homework yesterday.",
-    "example_ukrainian": "Я забув зробити домашнє завдання вчора.",
-    "example_spanish": "Olvidé hacer mi tarea ayer.",
-    "example_german": "Ich habe gestern vergessen, meine Hausaufgaben zu machen.",
-    "level": "A2",
-    "category": "communication",
-    "part": "noun"
   },
   {
     "id": "v-a2-time-033",
@@ -10399,23 +10263,6 @@
     "level": "A2",
     "category": "communication",
     "part": "verb"
-  },
-  {
-    "id": "v-a2-clothing-014",
-    "norsk": "lue (en/ei)",
-    "lemma": "lue",
-    "english": "hat (knitted or woollen cap)",
-    "ukrainian": "шапка",
-    "spanish": "gorro",
-    "german": "Mütze",
-    "example": "Hun tok på seg en varm lue før hun gikk ut i kulden.",
-    "example_english": "She put on a warm hat before going out into the cold.",
-    "example_ukrainian": "Вона надягла теплу шапку перед тим, як вийти на холод.",
-    "example_spanish": "Se puso un gorro caliente antes de salir al frio.",
-    "example_german": "Sie zog eine warme Mütze an, bevor sie in die Kälte ging.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "noun"
   },
   {
     "id": "v-a2-body-026",
@@ -10722,23 +10569,6 @@
     "level": "A2",
     "category": "hobbies",
     "part": "verb"
-  },
-  {
-    "id": "v-a2-shopping-034",
-    "norsk": "melk (en/ei)",
-    "lemma": "melk",
-    "english": "milk",
-    "ukrainian": "молоко",
-    "spanish": "leche",
-    "german": "Milch",
-    "example": "Kan du kjope en liter melk på butikken?",
-    "example_english": "Can you buy a litre of milk at the shop?",
-    "example_ukrainian": "Чи можеш ти купити літр молока в магазині?",
-    "example_spanish": "¿Puedes comprar un litro de leche en la tienda?",
-    "example_german": "Kannst du einen Liter Milch im Laden kaufen?",
-    "level": "A2",
-    "category": "shopping",
-    "part": "noun"
   },
   {
     "id": "v-a2-communication-058",
@@ -11708,23 +11538,6 @@
     "level": "A2",
     "category": "occupations",
     "part": "noun"
-  },
-  {
-    "id": "v-a2-social-life-078",
-    "norsk": "passe",
-    "lemma": "passe",
-    "english": "to suit; to fit; to look after",
-    "ukrainian": "підходити; доглядати",
-    "spanish": "quedar bien; cuidar",
-    "german": "passen; aufpassen auf",
-    "example": "Kan du passe på katten min mens jeg er på ferie?",
-    "example_english": "Can you look after my cat while I am on holiday?",
-    "example_ukrainian": "Чи можеш ти доглядати за моїм котом, поки я у відпустці?",
-    "example_spanish": "¿Puedes cuidar a mi gato mientras estoy de vacaciones?",
-    "example_german": "Kannst du auf meine Katze aufpassen, während ich im Urlaub bin?",
-    "level": "A2",
-    "category": "social-life",
-    "part": "adjective"
   },
   {
     "id": "v-a2-social-life-079",
@@ -12815,23 +12628,6 @@
     "part": "adverb"
   },
   {
-    "id": "v-a2-house-chores-041",
-    "norsk": "seng (en/ei)",
-    "lemma": "seng",
-    "english": "bed",
-    "ukrainian": "ліжко",
-    "spanish": "cama",
-    "german": "Bett",
-    "example": "Han husket å re opp sengen sin om morgenen.",
-    "example_english": "He remembered to make his bed in the morning.",
-    "example_ukrainian": "Він не забув застелити своє ліжко вранці.",
-    "example_spanish": "Él recordó tender su cama por la mañana.",
-    "example_german": "Er dachte daran, morgens sein Bett zu machen.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-house-chores-042",
     "norsk": "sengetøy (et)",
     "lemma": "sengetøy",
@@ -13172,23 +12968,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-clothing-018",
-    "norsk": "skjorte (en/ei)",
-    "lemma": "skjorte",
-    "english": "shirt",
-    "ukrainian": "сорочка",
-    "spanish": "camisa",
-    "german": "Hemd",
-    "example": "Han hadde på seg en hvit skjorte til intervjuet.",
-    "example_english": "He wore a white shirt to the interview.",
-    "example_ukrainian": "Він одягнув білу сорочку на співбесіду.",
-    "example_spanish": "Llevó una camisa blanca a la entrevista.",
-    "example_german": "Er trug ein weißes Hemd zum Vorstellungsgespräch.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-communication-078",
     "norsk": "å skjønne",
     "lemma": "skjønne",
@@ -13204,23 +12983,6 @@
     "level": "A2",
     "category": "communication",
     "part": "verb"
-  },
-  {
-    "id": "v-a2-clothing-019",
-    "norsk": "skjørt (et)",
-    "lemma": "skjørt",
-    "english": "skirt",
-    "ukrainian": "спідниця",
-    "spanish": "falda",
-    "german": "Rock",
-    "example": "Hun hadde på seg et rødt skjørt på festen.",
-    "example_english": "She was wearing a red skirt at the party.",
-    "example_ukrainian": "Вона була в червоній спідниці на вечірці.",
-    "example_spanish": "Llevaba una falda roja en la fiesta.",
-    "example_german": "Sie trug einen roten Rock auf der Party.",
-    "level": "A2",
-    "category": "clothing",
-    "part": "noun"
   },
   {
     "id": "v-a2-time-042",
@@ -13322,23 +13084,6 @@
     "example_german": "Der Tischler hat einen neuen Küchenschrank für uns gebaut.",
     "level": "A2",
     "category": "occupations",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-weather-019",
-    "norsk": "sol (en/ei)",
-    "lemma": "sol",
-    "english": "sun",
-    "ukrainian": "сонце",
-    "spanish": "sol",
-    "german": "Sonne",
-    "example": "Solen skinner sterkt i dag, og det er varmt ute.",
-    "example_english": "The sun is shining brightly today and it is warm outside.",
-    "example_ukrainian": "Сьогодні яскраво світить сонце, і надворі тепло.",
-    "example_spanish": "El sol brilla con fuerza hoy y hace calor afuera.",
-    "example_german": "Die Sonne scheint heute stark und es ist warm draußen.",
-    "level": "A2",
-    "category": "weather",
     "part": "noun"
   },
   {
@@ -13699,23 +13444,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-house-chores-045",
-    "norsk": "stue (en/ei)",
-    "lemma": "stue",
-    "english": "living room",
-    "ukrainian": "вітальня",
-    "spanish": "sala de estar",
-    "german": "Wohnzimmer",
-    "example": "Familien sitter sammen i stuen om kvelden.",
-    "example_english": "The family sits together in the living room in the evening.",
-    "example_ukrainian": "Сім'я сидить разом у вітальні ввечері.",
-    "example_spanish": "La familia se sienta junta en la sala de estar por la noche.",
-    "example_german": "Die Familie sitzt abends gemeinsam im Wohnzimmer.",
-    "level": "A2",
-    "category": "house-chores",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-occupations-066",
     "norsk": "styrer (en)",
     "lemma": "styrer",
@@ -13782,23 +13510,6 @@
     "level": "A2",
     "category": "descriptive-adjectives",
     "part": "adjective"
-  },
-  {
-    "id": "v-a2-cooking-056",
-    "norsk": "suppe (en/ei)",
-    "lemma": "suppe",
-    "english": "soup",
-    "ukrainian": "суп",
-    "spanish": "sopa",
-    "german": "Suppe",
-    "example": "Mamma lager alltid hjemmelaget tomatsuppe om vinteren.",
-    "example_english": "Mum always makes homemade tomato soup in winter.",
-    "example_ukrainian": "Мама завжди готує домашній томатний суп взимку.",
-    "example_spanish": "Mama siempre hace sopa de tomate casera en invierno.",
-    "example_german": "Mama kocht im Winter immer selbstgemachte Tomatensuppe.",
-    "level": "A2",
-    "category": "cooking",
-    "part": "noun"
   },
   {
     "id": "v-a2-social-life-090",
@@ -13937,23 +13648,6 @@
     "part": "verb"
   },
   {
-    "id": "v-a2-social-life-091",
-    "norsk": "søster (en/ei)",
-    "lemma": "søster",
-    "english": "sister",
-    "ukrainian": "сестра",
-    "spanish": "hermana",
-    "german": "Schwester",
-    "example": "Søsteren min bor i Bergen og jobber som lærer.",
-    "example_english": "My sister lives in Bergen and works as a teacher.",
-    "example_ukrainian": "Моя сестра живе в Бергені та працює вчителькою.",
-    "example_spanish": "Mi hermana vive en Bergen y trabaja como profesora.",
-    "example_german": "Meine Schwester lebt in Bergen und arbeitet als Lehrerin.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-descriptive-adjectives-073",
     "norsk": "søt",
     "lemma": "søt",
@@ -14022,40 +13716,6 @@
     "part": "noun"
   },
   {
-    "id": "v-a2-body-028",
-    "norsk": "tann (en/ei)",
-    "lemma": "tann",
-    "english": "tooth",
-    "ukrainian": "зуб",
-    "spanish": "diente",
-    "german": "Zahn",
-    "example": "Legen sa at jeg må passe bedre på tennene mine.",
-    "example_english": "The dentist said I need to take better care of my teeth.",
-    "example_ukrainian": "Стоматолог сказав, що мені потрібно краще доглядати за зубами.",
-    "example_spanish": "El dentista dijo que debo cuidar mejor mis dientes.",
-    "example_german": "Der Zahnarzt sagte, ich muss besser auf meine Zähne achten.",
-    "level": "A2",
-    "category": "body",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-social-life-092",
-    "norsk": "tante (en/ei)",
-    "lemma": "tante",
-    "english": "aunt",
-    "ukrainian": "тітка",
-    "spanish": "tía",
-    "german": "Tante",
-    "example": "Tanten min bor i Bergen og besøker oss hver sommer.",
-    "example_english": "My aunt lives in Bergen and visits us every summer.",
-    "example_ukrainian": "Моя тітка живе в Бергені і відвідує нас щоліта.",
-    "example_spanish": "Mi tía vive en Bergen y nos visita cada verano.",
-    "example_german": "Meine Tante lebt in Bergen und besucht uns jeden Sommer.",
-    "level": "A2",
-    "category": "social-life",
-    "part": "noun"
-  },
-  {
     "id": "v-a2-occupations-069",
     "norsk": "taushetsplikt (en/ei)",
     "lemma": "taushetsplikt",
@@ -14070,23 +13730,6 @@
     "example_german": "Der Arzt hat Schweigepflicht und darf keine Informationen über seine Patienten weitergeben.",
     "level": "A2",
     "category": "occupations",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-communication-088",
-    "norsk": "tavle (en/ei)",
-    "lemma": "tavle",
-    "english": "blackboard, whiteboard, board",
-    "ukrainian": "дошка (класна)",
-    "spanish": "pizarra, pizarron",
-    "german": "Tafel",
-    "example": "Læreren skrev nye ord på tavla slik at alle kunne se dem.",
-    "example_english": "The teacher wrote new words on the board so that everyone could see them.",
-    "example_ukrainian": "Вчитель написав нові слова на дошці, щоб усі могли їх побачити.",
-    "example_spanish": "El profesor escribió palabras nuevas en la pizarra para que todos pudieran verlas.",
-    "example_german": "Die Lehrerin schrieb neue Wörter an die Tafel, damit alle sie sehen konnten.",
-    "level": "A2",
-    "category": "communication",
     "part": "noun"
   },
   {
@@ -14546,23 +14189,6 @@
     "example_german": "Er hatte einen kleinen Unfall in der Küche und schnitt sich in den Finger.",
     "level": "A2",
     "category": "health",
-    "part": "noun"
-  },
-  {
-    "id": "v-a2-time-048",
-    "norsk": "uke (en/ei)",
-    "lemma": "uke",
-    "english": "week",
-    "ukrainian": "тиждень",
-    "spanish": "semana",
-    "german": "Woche",
-    "example": "Vi skal dra på ferie neste uke.",
-    "example_english": "We are going on holiday next week.",
-    "example_ukrainian": "Наступного тижня ми їдемо у відпустку.",
-    "example_spanish": "La semana que viene nos vamos de vacaciones.",
-    "example_german": "Nächste Woche fahren wir in den Urlaub.",
-    "level": "A2",
-    "category": "time",
     "part": "noun"
   },
   {
