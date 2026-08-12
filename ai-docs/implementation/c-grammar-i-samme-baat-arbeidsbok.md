@@ -154,7 +154,7 @@ None needed — nivå C is already all-Plus gated.
 | A     | 4.3 + 11.2 (pluskvamperfektum/2. kondisjonalis) | ✅ Done 2026-08-11 (redrafted once — see "Batch A/B recovery incident" note below) — 16 new questions (`gq-kond-010`–`gq-kond-025`), all in `kondisjonalis-counterfactual` (11.2's 12 pairs folded in too; see note below on why `perfektum-pluskvamperfektum` wasn't used). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged. **Committed to git** right after writing. |
 | B     | 6.3 + 7.3 (ordfamilie) | ✅ Done 2026-08-12 (redrafted after the recovery incident below) — 34 new questions (`gq-avled-079`–`gq-avled-112`), all in `ordfamilie-avledning`, covering all 15 ch. 6.3 headwords and all 10 ch. 7.3 verb triples. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (19 pre-existing B1/B2 unmatched items are unrelated to this batch). **Committed to git** (`d1ea892`) right after writing. |
 | C     | 18.3 (sammensatte substantiv) | ✅ Done 2026-08-12 — 10 new questions (`gq-samset-021`–`gq-samset-030`), all in `sammensatte-substantiv`, covering all 10 ch. 18.3 compounds from Phase 0. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (3 pre-existing B1 unmatched items are unrelated to this batch). |
-| D     | 5.3 (adjektiv bøying, new C topic) | Not started |
+| D     | 5.3 (adjektiv bøying, new C topic) | ✅ Done 2026-08-12 (redrafted from scratch in a new session — the raw JSON from the session that drafted it was never persisted anywhere, only this doc's prose summary; see "Batch D redraft note" below) — new topic `adj-boying-c` added to `types.ts`/`rules.ts`, 10 new questions (`gq-adj-075`–`gq-adj-084`). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` (after adding `adj-boying-c` to the checker's `C_TOPICS` set) — 0 flagged, 0 unmatched. **Not yet committed to git** — commit next. |
 | E     | 17.4 (mixed cloze, stretch) | Not started |
 
 ## Batch A/B recovery incident (2026-08-11)
@@ -197,10 +197,31 @@ the recovery mechanism — git history is the actual safety net.
 - Both check scripts live in `scripts/` and only need `grammar.json` (+ `vocab-c.json` /
   `uttrykk-c.json` for the vocab check) — run directly with `node scripts/<name>.mjs <topic>`.
 
+## Batch D redraft note (2026-08-12)
+
+The session that first drafted Batch D wrote the `types.ts`/`rules.ts` topic setup directly to the
+real files, but only kept the 10 drafted questions in that session's local sandbox copy of
+`grammar.json` — it ran out of turns before appending them to the real file, and the sandbox
+content doesn't survive between sessions. The next session found only this doc's prose summary of
+what the 10 items covered (the six grammar sub-patterns + which vocab words they'd be anchored to),
+not the actual JSON, and had to redraft the 10 questions from scratch against that summary.
+
+**Lesson (same as the Batch A/B recovery incident, generalized):** a batch isn't safe until it's
+written to the real file on the user's disk — an in-progress batch sitting only in local sandbox
+state is one session-limit cutoff away from needing a full redraft. Where a batch's drafting and
+its real-file append can't happen in the same turn budget, prefer writing smaller sub-batches
+straight to the real file over holding a fully-drafted large batch in sandbox-only state.
+
+**Final topic id:** `adj-boying-c` (not `adj-comparison-c` — the topic covers more than
+comparison, including predikativ agreement and weak/definite plural forms, so a broader name fit
+better; see the open question below, now resolved).
+
 ## Open questions
 
-- **Batch D topic id/name** — not finalized; decide during drafting (`adj-comparison-c` vs. a
-  broader `adj-c` if bestemt-form items don't cleanly separate from comparison items).
+- **Batch D topic id/name** — ✅ resolved: `adj-boying-c`, covering irregular -en-stem
+  comparison/agreement (gedigen, hoven, skrekkslagen), -ig/-lig superlative -st (døsig, hånlig),
+  periphrastic mer/mest for participial adjectives (utkjørt, sønderknust), predikativ
+  no-ending (olm, grådig), and weak/definite plural agreement (opprømt).
 - **Batch E scope** — may end up partially or fully deferred; not committed to a question-count
   target given the per-blank triage overhead.
 - **Språkhjørnet sections** — intentionally left out of scope (see above); revisit only as a

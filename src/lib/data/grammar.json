@@ -24625,5 +24625,156 @@
     ],
     "hint": "Krig + s + herjet: bindes- etter «krig», og partisippet «herjet» brukes som adjektiv foran substantivet «land».",
     "plusOnly": true
+  },
+  {
+    "id": "gq-adj-075",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "Den _____ oppdagelsen forandret hele forskningsfeltet.",
+    "words": [
+      "gedigne",
+      "gedigen"
+    ],
+    "answer": "gedigne",
+    "hint": "«Gedigen» mister -en foran endelsen i bestemt form: gedigen → gedigne (som åpen → åpne).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-076",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig komparativform av adjektivet.",
+    "sentence": "Etter løpeturen var ankelen enda _____ enn dagen før.",
+    "words": [
+      "hovnere",
+      "hovenere"
+    ],
+    "answer": "hovnere",
+    "hint": "«Hoven» mister -en foran komparativendelsen: hoven → hovnere, ikke hovenere.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-077",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig superlativform av adjektivet.",
+    "sentence": "Han var den _____ av alle etter nattevakten.",
+    "words": [
+      "døsigste",
+      "døsigeste"
+    ],
+    "answer": "døsigste",
+    "hint": "Adjektiv på -ig tar -st, ikke -est, i superlativ: døsig → døsigst → (bestemt) døsigste.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-078",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig superlativform av adjektivet.",
+    "sentence": "Det var det _____ smilet jeg noen gang hadde sett.",
+    "words": [
+      "hånligste",
+      "hånligeste"
+    ],
+    "answer": "hånligste",
+    "hint": "Adjektiv på -lig følger samme mønster som -ig: hånlig → hånligst → (bestemt) hånligste, ikke hånligeste.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-079",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig gradbøyningsform.",
+    "sentence": "Etter tre netter uten søvn var hun _____ enn noensinne.",
+    "words": [
+      "mer utkjørt",
+      "utkjørtere"
+    ],
+    "answer": "mer utkjørt",
+    "hint": "Perfektum partisipp brukt som adjektiv gradbøyes periferistisk med mer/mest, ikke med -ere/-est: mer utkjørt, ikke utkjørtere.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-080",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig gradbøyningsform.",
+    "sentence": "Av alle de sørgende var hun _____ .",
+    "words": [
+      "mest sønderknust",
+      "sønderknustest"
+    ],
+    "answer": "mest sønderknust",
+    "hint": "Samme mønster som «mer utkjørt»: perfektum partisipp som adjektiv gradbøyes med mer/mest, ikke -ere/-est.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-081",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig predikativ form av adjektivet.",
+    "sentence": "Sjefen var _____ etter møtet.",
+    "words": [
+      "olm",
+      "olmt",
+      "olme"
+    ],
+    "answer": "olm",
+    "hint": "Et predikativt adjektiv uten substantiv etter seg får ingen endelse her: Sjefen var olm, ikke olmt/olme.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-082",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig predikativ form av adjektivet.",
+    "sentence": "Barnet var _____ etter smågodtet.",
+    "words": [
+      "grådig",
+      "grådigt"
+    ],
+    "answer": "grådig",
+    "hint": "Adjektiv på -ig/-lig får ikke ekstra -t i intetkjønn: grådig, ikke grådigt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-083",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig bestemt flertallsform av adjektivet.",
+    "sentence": "De _____ gjestene danset til langt på natt.",
+    "words": [
+      "opprømte",
+      "opprømt"
+    ],
+    "answer": "opprømte",
+    "hint": "Bestemt/flertallsform av adjektiv får svak -e-ending: opprømt → de opprømte gjestene.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adj-084",
+    "topic": "adj-boying-c",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig bestemt flertallsform av adjektivet.",
+    "sentence": "De _____ barna gjemte seg bak sofaen.",
+    "words": [
+      "skrekkslagne",
+      "skrekkslagene"
+    ],
+    "answer": "skrekkslagne",
+    "hint": "«Skrekkslagen» mister -en foran flertallsendelsen, samme mønster som gedigen → gedigne: skrekkslagen → skrekkslagne.",
+    "plusOnly": true
   }
 ]
