@@ -233,6 +233,7 @@ export type GrammarTopic =
   | 'uttrykk-gjenkjenning-c-1' // idiom recognition, part 1 (items 83–89)
   | 'uttrykk-gjenkjenning-c-2' // idiom recognition, part 2 (items 90–96)
   | 'uttrykk-gjenkjenning-c-3' // idiom recognition, part 3 (items 97–103)
+  | 'adj-boying-c' // adjective comparison (incl. irregular -en stems) + weak/definite agreement, C level
   // Nivå B2 topics (Plus only) — see ai-docs/implementation/b2-grammar.md
   | 'substantivert-adjektiv' // adjective standing alone as a noun: de unge, de fattige, den ansatte
   | 'motsetning-prefiks' // forming an antonym with a negative prefix: u-, mis-, van-
