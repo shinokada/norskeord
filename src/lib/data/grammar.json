@@ -23728,11 +23728,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Hvis han hadde forstått rekkevidden av avgjørelsen, _____ han aldri ha signert kontrakten.",
-    "words": [
-      "ville",
-      "skulle",
-      "har"
-    ],
+    "words": ["ville", "skulle", "har"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha signert) uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -23787,11 +23783,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Om han hadde vist en mer upålitelig forteller respekt, _____ historien hans blitt trodd.",
-    "words": [
-      "ville",
-      "skulle",
-      "hadde"
-    ],
+    "words": ["ville", "skulle", "hadde"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha/bli + perfektum partisipp uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -23804,9 +23796,7 @@
     "prompt": "Omskriv som en kontrafaktisk setning med «Om … hadde …, ville … ha …».",
     "source": "De forstod ikke rekkevidden av krisen, og de tok ingen forholdsregler.",
     "answer": "Om de hadde forstått rekkevidden av krisen, ville de ha tatt forholdsregler.",
-    "alternates": [
-      "Om de hadde forstått rekkevidden av krisen, hadde de tatt forholdsregler."
-    ],
+    "alternates": ["Om de hadde forstått rekkevidden av krisen, hadde de tatt forholdsregler."],
     "hint": "Om + hadde forstått (pluskvamperfektum) angir den uvirkelige betingelsen; ville + ha + tatt gir det kontrafaktiske resultatet.",
     "plusOnly": true
   },
@@ -23830,9 +23820,7 @@
     "prompt": "Omskriv som en kontrafaktisk setning med pluskvamperfektum og 2. kondisjonalis.",
     "source": "Vi våget ikke å ta sjansen, og vi vant ingenting den kvelden.",
     "answer": "Hvis vi hadde våget å ta sjansen, ville vi ha vunnet noe den kvelden.",
-    "alternates": [
-      "Hvis vi hadde våget å ta sjansen, hadde vi vunnet noe den kvelden."
-    ],
+    "alternates": ["Hvis vi hadde våget å ta sjansen, hadde vi vunnet noe den kvelden."],
     "hint": "Hvis + hadde våget (pluskvamperfektum) setter opp betingelsen; ville + ha + vunnet gir det kontrafaktiske resultatet. «Den som intet våger, intet vinner» er ordtaket bak setningen.",
     "plusOnly": true
   },
@@ -23843,11 +23831,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Hvis hun hadde vært sjeleglad for barnebarnas besøk, _____ hun ha smilt gjennom hele middagen.",
-    "words": [
-      "ville",
-      "skulle",
-      "er"
-    ],
+    "words": ["ville", "skulle", "er"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha smilt) uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -23886,9 +23870,7 @@
       "annerledes"
     ],
     "answer": "Om de hadde forstått bæret av situasjonen, ville de ha reagert annerledes.",
-    "alternates": [
-      "Om de hadde forstått bæret av situasjonen ville de ha reagert annerledes"
-    ],
+    "alternates": ["Om de hadde forstått bæret av situasjonen ville de ha reagert annerledes"],
     "hint": "Om + pluskvamperfektum (hadde forstått) angir betingelsen; ville + ha + reagert gir det kontrafaktiske resultatet.",
     "plusOnly": true
   },
@@ -23913,11 +23895,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Hvis de hadde vært glad til sinns hele reisen, _____ de aldri ha klaget over været.",
-    "words": [
-      "ville",
-      "skulle",
-      "kan"
-    ],
+    "words": ["ville", "skulle", "kan"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha klaget) uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -23969,11 +23947,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «skjære» (i betydningen: gi et visst preg/lys over noe).",
     "sentence": "Et nostalgisk _____ lå over hele barndomshjemmet da hun kom tilbake.",
-    "words": [
-      "skjær",
-      "skjæring",
-      "skåret"
-    ],
+    "words": ["skjær", "skjæring", "skåret"],
     "answer": "skjær",
     "hint": "Substantivet «et skjær» betyr her et bestemt lys eller preg som legger seg over noe — minnene ligger badet i et nostalgisk skjær.",
     "plusOnly": true
@@ -23985,11 +23959,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig ord fra samme ordfamilie som «skjær» (denne gangen i betydningen: en skår/demper i gleden).",
     "sentence": "Nyheten var en _____ i gleden — nå ble alle likevel litt bekymret.",
-    "words": [
-      "skjær",
-      "skjæring",
-      "skjærende"
-    ],
+    "words": ["skjær", "skjæring", "skjærende"],
     "answer": "skjær",
     "hint": "«Et skjær i gleden» er et fast uttrykk for noe som demper en ellers god stemning.",
     "plusOnly": true
@@ -24016,11 +23986,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig superlativform av «grufull».",
     "sentence": "Synet som møtte dem, var det aller _____ de hadde opplevd.",
-    "words": [
-      "grufulleste",
-      "grufullere",
-      "gru"
-    ],
+    "words": ["grufulleste", "grufullere", "gru"],
     "answer": "grufulleste",
     "hint": "Adjektivet «grufull» bøyes regelrett: grufull – grufullere – grufulleste.",
     "plusOnly": true
@@ -24032,11 +23998,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «grufull» (skrekk og …).",
     "sentence": "Skrekk og _____! Katastrofen var et faktum.",
-    "words": [
-      "gru",
-      "grusomhet",
-      "grufullhet"
-    ],
+    "words": ["gru", "grusomhet", "grufullhet"],
     "answer": "gru",
     "hint": "«Skrekk og gru» er et fast uttrykk der substantivet «gru» (redsel) er roten til adjektivet «grufull».",
     "plusOnly": true
@@ -24048,11 +24010,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig verbform av «fnisende» (partisippformen av verbet).",
     "sentence": "Jentene _____ hele veien til skolen og klarte ikke å stoppe.",
-    "words": [
-      "fniste",
-      "fnisende",
-      "fnis"
-    ],
+    "words": ["fniste", "fnisende", "fnis"],
     "answer": "fniste",
     "hint": "Preteritum av verbet «å fnise» er «fniste»; «fnisende» er presens partisipp brukt som adjektiv.",
     "plusOnly": true
@@ -24064,11 +24022,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «gynge».",
     "sentence": "Han kjente en _____ følelse i kroppen lenge etter turen på det gyngende dekket.",
-    "words": [
-      "gyngende",
-      "gynging",
-      "gynge"
-    ],
+    "words": ["gyngende", "gynging", "gynge"],
     "answer": "gyngende",
     "hint": "Presens partisipp «gyngende» brukes her som adjektiv foran substantivet «følelse».",
     "plusOnly": true
@@ -24091,11 +24045,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «spikret» (verbet «å slå spiker»).",
     "sentence": "Etter all _____ satt hun igjen med bare en blå tommel.",
-    "words": [
-      "spikringen",
-      "spikret",
-      "spikre"
-    ],
+    "words": ["spikringen", "spikret", "spikre"],
     "answer": "spikringen",
     "hint": "Substantivet av verbet «å spikre» dannes med «-ing»: spikre → spikring.",
     "plusOnly": true
@@ -24107,11 +24057,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «har gnagd» (om dårlig samvittighet).",
     "sentence": "All den _____ gikk til slutt utover nattesøvnen hans.",
-    "words": [
-      "gnagingen",
-      "gnaget",
-      "gnage"
-    ],
+    "words": ["gnagingen", "gnaget", "gnage"],
     "answer": "gnagingen",
     "hint": "Verbet «å gnage» danner substantivet «gnaging» med «-ing»; her i bestemt form «gnagingen».",
     "plusOnly": true
@@ -24123,11 +24069,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig verbform (infinitiv) i ordfamilien til «forsonende».",
     "sentence": "Han ønsket å _____ med sin gamle venn før det var for sent.",
-    "words": [
-      "forsone seg",
-      "forsoning",
-      "forsonlig"
-    ],
+    "words": ["forsone seg", "forsoning", "forsonlig"],
     "answer": "forsone seg",
     "hint": "Verbet «å forsone seg» (med noen) er roten til adjektivet «forsonende» og substantivet «forsoning».",
     "plusOnly": true
@@ -24139,11 +24081,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «forsonende».",
     "sentence": "Etter mange års konflikt vokste det sjelden fram noen ekte _____ mellom familiene.",
-    "words": [
-      "forsoning",
-      "forsonelse",
-      "forsonende"
-    ],
+    "words": ["forsoning", "forsonelse", "forsonende"],
     "answer": "forsoning",
     "hint": "Substantivet dannes med «-ing»: forsone seg → forsoning.",
     "plusOnly": true
@@ -24166,11 +24104,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «gjørmen» (substantivet «gjørme»).",
     "sentence": "Etter regnet ble stien helt _____, og støvlene sank ned i søla.",
-    "words": [
-      "gjørmete",
-      "gjørmen",
-      "gjørming"
-    ],
+    "words": ["gjørmete", "gjørmen", "gjørming"],
     "answer": "gjørmete",
     "hint": "Substantivet «gjørme» danner adjektivet med «-ete»: gjørme → gjørmete.",
     "plusOnly": true
@@ -24182,11 +24116,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «puffer» (verbet «å puffe»).",
     "sentence": "Han trengte bare en liten _____ i riktig retning for å komme videre.",
-    "words": [
-      "puff",
-      "puffing",
-      "puffer"
-    ],
+    "words": ["puff", "puffing", "puffer"],
     "answer": "puff",
     "hint": "Verbet «å puffe» danner substantivet «et puff».",
     "plusOnly": true
@@ -24213,11 +24143,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig ord fra ordfamilien varte opp – oppvartning.",
     "sentence": "Hun elsket å _____ gjestene sine med hjemmelaget mat hver helg.",
-    "words": [
-      "varte opp",
-      "oppvartning",
-      "oppvartet"
-    ],
+    "words": ["varte opp", "oppvartning", "oppvartet"],
     "answer": "varte opp",
     "hint": "Verbet «å varte opp» (å yte service/stelle med noen) danner substantivet «oppvartning».",
     "plusOnly": true
@@ -24240,11 +24166,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «skjemme bort».",
     "sentence": "Barnebarna hennes var svært _____ etter alle besøkene hos bestemor.",
-    "words": [
-      "bortskjemte",
-      "skjemmende",
-      "bortskjemming"
-    ],
+    "words": ["bortskjemte", "skjemmende", "bortskjemming"],
     "answer": "bortskjemte",
     "hint": "Perfektum partisipp av «å skjemme bort» brukt som adjektiv: bortskjemt (flertall: bortskjemte).",
     "plusOnly": true
@@ -24256,11 +24178,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «gå opp» (i betydningen: bli klart, forstått).",
     "sentence": "Til slutt fikk hun en _____ opplevelse da alt gikk opp for henne på én gang.",
-    "words": [
-      "gikk opp for henne",
-      "oppgang",
-      "oppgåing"
-    ],
+    "words": ["gikk opp for henne", "oppgang", "oppgåing"],
     "answer": "gikk opp for henne",
     "hint": "Uttrykket «å gå opp for noen» (bli forstått) brukes ofte direkte, uten et eget substantiv i vanlig bruk.",
     "plusOnly": true
@@ -24283,11 +24201,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av verbet «bite» (i betydningen: skarp, kald).",
     "sentence": "En _____ kulde møtte dem da de gikk ut av flyet.",
-    "words": [
-      "bitende",
-      "bitt",
-      "bitsk"
-    ],
+    "words": ["bitende", "bitt", "bitsk"],
     "answer": "bitende",
     "hint": "Presens partisipp «bitende» brukes som adjektiv om noe skarpt eller ekstremt kaldt/kritisk.",
     "plusOnly": true
@@ -24299,11 +24213,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «gripe».",
     "sentence": "_____ etter makten kom overraskende på alle i partiet.",
-    "words": [
-      "Grepet",
-      "Gripingen",
-      "Gripen"
-    ],
+    "words": ["Grepet", "Gripingen", "Gripen"],
     "answer": "Grepet",
     "hint": "Substantivet av «å gripe» er «et grep», ofte brukt i uttrykket «gripe etter/gripe makten».",
     "plusOnly": true
@@ -24330,11 +24240,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «smuldre opp».",
     "sentence": "Kjærligheten deres endte i en langsom _____ over flere år.",
-    "words": [
-      "oppsmuldring",
-      "smuldringen",
-      "smulder"
-    ],
+    "words": ["oppsmuldring", "smuldringen", "smulder"],
     "answer": "oppsmuldring",
     "hint": "Verbet «å smuldre opp» danner substantivet med «-ing»: smuldre opp → oppsmuldring.",
     "plusOnly": true
@@ -24346,11 +24252,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «smuldre opp».",
     "sentence": "Kittet på det gamle vinduet var helt _____ og falt av i biter.",
-    "words": [
-      "oppsmuldret",
-      "smuldrende",
-      "smuldret"
-    ],
+    "words": ["oppsmuldret", "smuldrende", "smuldret"],
     "answer": "smuldret",
     "hint": "Perfektum partisipp av «å smuldre» brukt som adjektiv: smuldret.",
     "plusOnly": true
@@ -24362,11 +24264,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «forkle».",
     "sentence": "Bak den vennlige _____ skjulte det seg en helt annen agenda.",
-    "words": [
-      "forkledningen",
-      "forklet",
-      "forkledd"
-    ],
+    "words": ["forkledningen", "forklet", "forkledd"],
     "answer": "forkledningen",
     "hint": "Verbet «å forkle seg» danner substantivet «forkledning».",
     "plusOnly": true
@@ -24393,11 +24291,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «ransake».",
     "sentence": "Politiet gjennomførte en grundig _____ av leiligheten etter innbruddet.",
-    "words": [
-      "ransakelse",
-      "ransaking",
-      "ransaker"
-    ],
+    "words": ["ransakelse", "ransaking", "ransaker"],
     "answer": "ransakelse",
     "hint": "Verbet «å ransake» danner substantivet «ransakelse».",
     "plusOnly": true
@@ -24420,11 +24314,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «flomme».",
     "sentence": "Etter det kraftige regnet var det stor fare for _____ i dalen.",
-    "words": [
-      "flom",
-      "flomming",
-      "flommende"
-    ],
+    "words": ["flom", "flomming", "flommende"],
     "answer": "flom",
     "hint": "Verbet «å flomme» har substantivformen «en flom».",
     "plusOnly": true
@@ -24451,11 +24341,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «trenge» (i betydningen: presse seg fram).",
     "sentence": "Han måtte gjøre en real _____ for å komme seg fram gjennom folkemengden.",
-    "words": [
-      "trengsel",
-      "trenging",
-      "trengt"
-    ],
+    "words": ["trengsel", "trenging", "trengt"],
     "answer": "trengsel",
     "hint": "Verbet «å trenge (seg)» danner substantivet «trengsel» (om det å trenge seg fram i en mengde).",
     "plusOnly": true
@@ -24467,11 +24353,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «trenge» (om et blikk som gransker inngående).",
     "sentence": "Faren så på henne med et _____ blikk som fikk henne til å tilstå alt.",
-    "words": [
-      "gjennomtrengende",
-      "trengende",
-      "trengt"
-    ],
+    "words": ["gjennomtrengende", "trengende", "trengt"],
     "answer": "gjennomtrengende",
     "hint": "Adjektivet «gjennomtrengende» (om blikk, lyd) er avledet av verbet «å trenge gjennom».",
     "plusOnly": true
@@ -24484,9 +24366,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "personer som tilhører samme familie",
     "answer": "familiemedlemmer",
-    "alternates": [
-      "familiemedlemmene"
-    ],
+    "alternates": ["familiemedlemmene"],
     "hint": "Familie + medlem: ingen bindes- er nødvendig, siden «familie» allerede ender på en vokal.",
     "plusOnly": true
   },
@@ -24497,11 +24377,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Solen skinte gjennom det tunge _____ i stuen.",
-    "words": [
-      "fløyelsforhenget",
-      "fløyelforhenget",
-      "fløyels forhenget"
-    ],
+    "words": ["fløyelsforhenget", "fløyelforhenget", "fløyels forhenget"],
     "answer": "fløyelsforhenget",
     "hint": "Fløyel + s + forheng: bindes- kobler de to substantivene, og sammensetningen skrives alltid som ett ord.",
     "plusOnly": true
@@ -24514,9 +24390,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en bolig der flere generasjoner av samme familie bor sammen",
     "answer": "en generasjonsbolig",
-    "alternates": [
-      "generasjonsbolig"
-    ],
+    "alternates": ["generasjonsbolig"],
     "hint": "Generasjon + s + bolig: bindes- etter «generasjon».",
     "plusOnly": true
   },
@@ -24527,11 +24401,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Legene startet _____ så snart svulsten var oppdaget.",
-    "words": [
-      "cellegiftbehandlingen",
-      "cellegifts behandlingen",
-      "cellegiftsbehandlingen"
-    ],
+    "words": ["cellegiftbehandlingen", "cellegifts behandlingen", "cellegiftsbehandlingen"],
     "answer": "cellegiftbehandlingen",
     "hint": "Cellegift + behandling: ingen bindes- brukes etter «cellegift».",
     "plusOnly": true
@@ -24544,9 +24414,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en sønn som er født som den første av søsknene i familien",
     "answer": "en førstefødt sønn",
-    "alternates": [
-      "førstefødtsønn"
-    ],
+    "alternates": ["førstefødtsønn"],
     "hint": "Førstefødt beskriver sønnen — her skrives det som to ord, siden «førstefødt» er et adjektiv foran substantivet «sønn», ikke en sammensetning.",
     "plusOnly": true
   },
@@ -24569,11 +24437,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Pasienten måtte signere en _____ før operasjonen kunne starte.",
-    "words": [
-      "samtykkeerklæring",
-      "samtykkeserklæring",
-      "samtykke erklæring"
-    ],
+    "words": ["samtykkeerklæring", "samtykkeserklæring", "samtykke erklæring"],
     "answer": "samtykkeerklæring",
     "hint": "Samtykke + erklæring: ingen bindes- er nødvendig, siden «samtykke» allerede ender på en vokal.",
     "plusOnly": true
@@ -24586,9 +24450,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en stor beholder som brukes til å lagre gass",
     "answer": "en gassbeholder",
-    "alternates": [
-      "gassbeholder"
-    ],
+    "alternates": ["gassbeholder"],
     "hint": "Gass + beholder: ingen bindes- er nødvendig i denne sammensetningen.",
     "plusOnly": true
   },
@@ -24597,18 +24459,9 @@
     "topic": "sammensatte-substantiv",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Prioriteringslisten",
-      "ble",
-      "diskutert",
-      "grundig",
-      "på",
-      "møtet"
-    ],
+    "tokens": ["Prioriteringslisten", "ble", "diskutert", "grundig", "på", "møtet"],
     "answer": "Prioriteringslisten ble diskutert grundig på møtet.",
-    "alternates": [
-      "Prioriteringslisten ble diskutert grundig på møtet"
-    ],
+    "alternates": ["Prioriteringslisten ble diskutert grundig på møtet"],
     "hint": "Prioritering + s + liste: bindes- etter et substantiv som ender på -ing.",
     "plusOnly": true
   },
@@ -24620,9 +24473,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv/adjektivuttrykk.",
     "source": "et land som er sterkt preget og ødelagt av krig",
     "answer": "et krigsherjet land",
-    "alternates": [
-      "krigsherjet land"
-    ],
+    "alternates": ["krigsherjet land"],
     "hint": "Krig + s + herjet: bindes- etter «krig», og partisippet «herjet» brukes som adjektiv foran substantivet «land».",
     "plusOnly": true
   },
@@ -24633,10 +24484,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av adjektivet.",
     "sentence": "Den _____ oppdagelsen forandret hele forskningsfeltet.",
-    "words": [
-      "gedigne",
-      "gedigen"
-    ],
+    "words": ["gedigne", "gedigen"],
     "answer": "gedigne",
     "hint": "«Gedigen» mister -en foran endelsen i bestemt form: gedigen → gedigne (som åpen → åpne).",
     "plusOnly": true
@@ -24648,10 +24496,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av adjektivet.",
     "sentence": "Etter løpeturen var ankelen enda _____ enn dagen før.",
-    "words": [
-      "hovnere",
-      "hovenere"
-    ],
+    "words": ["hovnere", "hovenere"],
     "answer": "hovnere",
     "hint": "«Hoven» mister -en foran komparativendelsen: hoven → hovnere, ikke hovenere.",
     "plusOnly": true
@@ -24663,10 +24508,7 @@
     "type": "fill",
     "prompt": "Velg riktig superlativform av adjektivet.",
     "sentence": "Han var den _____ av alle etter nattevakten.",
-    "words": [
-      "døsigste",
-      "døsigeste"
-    ],
+    "words": ["døsigste", "døsigeste"],
     "answer": "døsigste",
     "hint": "Adjektiv på -ig tar -st, ikke -est, i superlativ: døsig → døsigst → (bestemt) døsigste.",
     "plusOnly": true
@@ -24678,10 +24520,7 @@
     "type": "fill",
     "prompt": "Velg riktig superlativform av adjektivet.",
     "sentence": "Det var det _____ smilet jeg noen gang hadde sett.",
-    "words": [
-      "hånligste",
-      "hånligeste"
-    ],
+    "words": ["hånligste", "hånligeste"],
     "answer": "hånligste",
     "hint": "Adjektiv på -lig følger samme mønster som -ig: hånlig → hånligst → (bestemt) hånligste, ikke hånligeste.",
     "plusOnly": true
@@ -24693,10 +24532,7 @@
     "type": "fill",
     "prompt": "Velg riktig gradbøyningsform.",
     "sentence": "Etter tre netter uten søvn var hun _____ enn noensinne.",
-    "words": [
-      "mer utkjørt",
-      "utkjørtere"
-    ],
+    "words": ["mer utkjørt", "utkjørtere"],
     "answer": "mer utkjørt",
     "hint": "Perfektum partisipp brukt som adjektiv gradbøyes periferistisk med mer/mest, ikke med -ere/-est: mer utkjørt, ikke utkjørtere.",
     "plusOnly": true
@@ -24708,10 +24544,7 @@
     "type": "fill",
     "prompt": "Velg riktig gradbøyningsform.",
     "sentence": "Av alle de sørgende var hun _____ .",
-    "words": [
-      "mest sønderknust",
-      "sønderknustest"
-    ],
+    "words": ["mest sønderknust", "sønderknustest"],
     "answer": "mest sønderknust",
     "hint": "Samme mønster som «mer utkjørt»: perfektum partisipp som adjektiv gradbøyes med mer/mest, ikke -ere/-est.",
     "plusOnly": true
@@ -24723,11 +24556,7 @@
     "type": "fill",
     "prompt": "Velg riktig predikativ form av adjektivet.",
     "sentence": "Sjefen var _____ etter møtet.",
-    "words": [
-      "olm",
-      "olmt",
-      "olme"
-    ],
+    "words": ["olm", "olmt", "olme"],
     "answer": "olm",
     "hint": "Et predikativt adjektiv uten substantiv etter seg får ingen endelse her: Sjefen var olm, ikke olmt/olme.",
     "plusOnly": true
@@ -24739,10 +24568,7 @@
     "type": "fill",
     "prompt": "Velg riktig predikativ form av adjektivet.",
     "sentence": "Barnet var _____ etter smågodtet.",
-    "words": [
-      "grådig",
-      "grådigt"
-    ],
+    "words": ["grådig", "grådigt"],
     "answer": "grådig",
     "hint": "Adjektiv på -ig/-lig får ikke ekstra -t i intetkjønn: grådig, ikke grådigt.",
     "plusOnly": true
@@ -24754,10 +24580,7 @@
     "type": "fill",
     "prompt": "Velg riktig bestemt flertallsform av adjektivet.",
     "sentence": "De _____ gjestene danset til langt på natt.",
-    "words": [
-      "opprømte",
-      "opprømt"
-    ],
+    "words": ["opprømte", "opprømt"],
     "answer": "opprømte",
     "hint": "Bestemt/flertallsform av adjektiv får svak -e-ending: opprømt → de opprømte gjestene.",
     "plusOnly": true
@@ -24769,10 +24592,7 @@
     "type": "fill",
     "prompt": "Velg riktig bestemt flertallsform av adjektivet.",
     "sentence": "De _____ barna gjemte seg bak sofaen.",
-    "words": [
-      "skrekkslagne",
-      "skrekkslagene"
-    ],
+    "words": ["skrekkslagne", "skrekkslagene"],
     "answer": "skrekkslagne",
     "hint": "«Skrekkslagen» mister -en foran flertallsendelsen, samme mønster som gedigen → gedigne: skrekkslagen → skrekkslagne.",
     "plusOnly": true
@@ -24796,10 +24616,7 @@
     "type": "fill",
     "prompt": "Velg riktig gradbøyningsform av «møkkete».",
     "sentence": "Etter regnværet var stien enda _____ enn dagen før.",
-    "words": [
-      "mer møkkete",
-      "møkketere"
-    ],
+    "words": ["mer møkkete", "møkketere"],
     "answer": "mer møkkete",
     "hint": "Adjektiv på -ete tar alltid mer/mest, aldri -ere/-est.",
     "plusOnly": true
@@ -24811,10 +24628,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (perfektum med setningsadverbial).",
     "sentence": "Fargen på veggen har _____ i sollyset.",
-    "words": [
-      "bleknet",
-      "allerede"
-    ],
+    "words": ["bleknet", "allerede"],
     "answer": "allerede bleknet",
     "hint": "Perfektum med adverbialet «allerede»: har + allerede + bleknet — adverbialet står mellom hjelpeverbet og partisippet.",
     "plusOnly": true
@@ -24851,9 +24665,7 @@
     "prompt": "Omskriv til én setning: sett innrømmelsesleddsetningen med «selv om» fremst, og behold setningsadverbialene i riktig posisjon.",
     "source": "Fristen er faktisk presserende. Teamet jobber jo overtid hver kveld.",
     "answer": "Selv om fristen faktisk er presserende, jobber teamet jo overtid hver kveld.",
-    "alternates": [
-      "Selv om fristen faktisk er presserende jobber teamet jo overtid hver kveld"
-    ],
+    "alternates": ["Selv om fristen faktisk er presserende jobber teamet jo overtid hver kveld"],
     "hint": "Leddsetning: adverbial (faktisk) før verbet (er). Helsetningen inverterer: verb (jobber) — subjekt (teamet) — adverbial (jo) — resten.",
     "plusOnly": true
   },
@@ -24901,11 +24713,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: adjektiv eller adverb?",
     "sentence": "Regnet smalt _____ mot vinduet hele natten.",
-    "words": [
-      "hardt",
-      "hard",
-      "harde"
-    ],
+    "words": ["hardt", "hard", "harde"],
     "answer": "hardt",
     "hint": "Adverbet «hardt» beskriver verbet «smalt» og bøyes derfor med -t, uavhengig av kjønn eller tall.",
     "plusOnly": true
@@ -24926,19 +24734,9 @@
     "topic": "predikativ-agreement",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Løftene",
-      "hans",
-      "var",
-      "avslørt",
-      "allerede",
-      "i",
-      "forkant"
-    ],
+    "tokens": ["Løftene", "hans", "var", "avslørt", "allerede", "i", "forkant"],
     "answer": "Løftene hans var avslørt allerede i forkant.",
-    "alternates": [
-      "Løftene hans var avslørt allerede i forkant"
-    ],
+    "alternates": ["Løftene hans var avslørt allerede i forkant"],
     "hint": "«Avslørt» er et partisipp som fungerer som predikativ, og forblir ubøyd uansett flertallssubjektet løftene — aldri avslørte.",
     "plusOnly": true
   }

@@ -21,27 +21,27 @@ comprehension, not grammar rules, and are already in scope of the vocab/uttrykk 
 
 The genuinely grammar-focused exercises are:
 
-| Chapter | Exercise | Grammar point | Raw items |
-| ------- | -------- | -------------- | --------- |
-| 4       | 4.3      | Pluskvamperfektum + 2. kondisjonalis (hvis han hadde …, ville han ha …) | 10 |
-| 11      | 11.2     | Same — hvis-setninger, pluskvamperfektum + 2. kondisjonalis | 12 |
-| 5       | 5.3      | Adjective bøying: komparasjon (inkl. irregular: seig, olm, våken) + bestemt form | 10 |
-| 6       | 6.3      | Ordfamilie (substantiv/verb/adjektiv avledning) | 15 |
-| 7       | 7.3      | Ordfamilie (table format, 10 headwords × 3 word-class columns) | 10 rows |
-| 17      | 17.4     | Mixed cloze: bøy verb/substantiv/adjektiv riktig + riktig ordstilling | 15 |
-| 18      | 18.3     | Sammensatte substantiv (compound nouns from definitions) | 10 |
+| Chapter | Exercise | Grammar point                                                                    | Raw items |
+| ------- | -------- | -------------------------------------------------------------------------------- | --------- |
+| 4       | 4.3      | Pluskvamperfektum + 2. kondisjonalis (hvis han hadde …, ville han ha …)          | 10        |
+| 11      | 11.2     | Same — hvis-setninger, pluskvamperfektum + 2. kondisjonalis                      | 12        |
+| 5       | 5.3      | Adjective bøying: komparasjon (inkl. irregular: seig, olm, våken) + bestemt form | 10        |
+| 6       | 6.3      | Ordfamilie (substantiv/verb/adjektiv avledning)                                  | 15        |
+| 7       | 7.3      | Ordfamilie (table format, 10 headwords × 3 word-class columns)                   | 10 rows   |
+| 17      | 17.4     | Mixed cloze: bøy verb/substantiv/adjektiv riktig + riktig ordstilling            | 15        |
+| 18      | 18.3     | Sammensatte substantiv (compound nouns from definitions)                         | 10        |
 
 **Copyright approach (unchanged from every prior plan):** fresh sentences per grammar point;
 source sentences/definitions used only to identify which grammar form is tested, never copied.
 
 **Out of scope for this plan — flagged, not actioned:** the `Språkhjørnet` nuance sections
-(8.3 *glatt*, 9.3 *bare – kun – utelukkende*, 10.3 *bane*, 11.3 *å late*, 14.3 *an*,
-15.3 *å senke – å synke*, 16.3 *å drive*, 17.3 *idet – imens – mens*, 18.4 *blant og mellom*).
+(8.3 _glatt_, 9.3 _bare – kun – utelukkende_, 10.3 _bane_, 11.3 _å late_, 14.3 _an_,
+15.3 _å senke – å synke_, 16.3 _å drive_, 17.3 _idet – imens – mens_, 18.4 _blant og mellom_).
 Most of these are single-word polysemy/usage notes (glatt, bane, late, an, drive) that fit
 `uttrykk-c.json`/vocab territory better than `grammar.json` question format — no clean testable
 rule, more a set of fixed collocations per word. Two exceptions genuinely are grammar and could be
-mined later: *idet – imens – mens* (subjunction vs. adverb distinction — `subjunksjon-oversikt` is
-an existing B2 topic that could take C-level extensions) and *blant – mellom* (preposition
+mined later: _idet – imens – mens_ (subjunction vs. adverb distinction — `subjunksjon-oversikt` is
+an existing B2 topic that could take C-level extensions) and _blant – mellom_ (preposition
 nuance — fits `preposisjoner-generelt-c`, already the target of the completed preposition plan).
 Decision: leave both out of this plan's scope; revisit as a small follow-up only if the two
 pluskvamperfektum/kondisjonalis + ordfamilie + sammensatte-substantiv batches below don't fill the
@@ -53,14 +53,14 @@ session budget.
 
 Checked directly against `grammar.json` (1976 questions total):
 
-| Source item              | Existing topic                  | Current CEFR mix          | Current count | Decision |
-| ------------------------- | -------------------------------- | -------------------------- | -------------- | -------- |
-| 4.3, 11.2 (pluskv. + 2. kond.) | `kondisjonalis-counterfactual`   | C only                      | 9              | **Reuse** — already C-level, thin, exact skill match |
-| 4.3, 11.2 (pluskv. + 2. kond.) | `perfektum-pluskvamperfektum`    | C only                      | 10             | **Reuse** — split each hvis-sentence's two clauses across both topics as appropriate (kondisjonalis topic for the whole conditional construction, perfektum topic if a question isolates just the pluskvamperfektum clause) |
-| 6.3, 7.3 (ordfamilie)     | `ordfamilie-avledning`           | B1 26 / B2 42 / C 10        | 78             | **Reuse** — already has a C-level slice, room to extend it rather than fork |
-| 18.3 (sammensatte ord)    | `sammensatte-substantiv`         | B1 9 / C 11                 | 20             | **Reuse** — already has a C-level slice |
-| 5.3 (adjektiv bøying)     | `adj-comparison` / `adj-definite`| A2/B1 only (no C)           | 63 / 12        | **New C-level topic** — same precedent as `preposisjoner-uttrykk-b2` in the preposition plan: extending an A2/B1 topic with C-level irregular-comparative + bestemt-form items would blur its level; propose `adj-comparison-c` (or fold into a single new `adj-c` topic if the batch turns out small — decide after drafting) |
-| 17.4 (mixed cloze)        | *(none — spans multiple topics)* | —                            | —              | **Split by blank**, not a single topic — see Phase 2 below |
+| Source item                    | Existing topic                    | Current CEFR mix     | Current count | Decision                                                                                                                                                                                                                                                                                                                       |
+| ------------------------------ | --------------------------------- | -------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 4.3, 11.2 (pluskv. + 2. kond.) | `kondisjonalis-counterfactual`    | C only               | 9             | **Reuse** — already C-level, thin, exact skill match                                                                                                                                                                                                                                                                           |
+| 4.3, 11.2 (pluskv. + 2. kond.) | `perfektum-pluskvamperfektum`     | C only               | 10            | **Reuse** — split each hvis-sentence's two clauses across both topics as appropriate (kondisjonalis topic for the whole conditional construction, perfektum topic if a question isolates just the pluskvamperfektum clause)                                                                                                    |
+| 6.3, 7.3 (ordfamilie)          | `ordfamilie-avledning`            | B1 26 / B2 42 / C 10 | 78            | **Reuse** — already has a C-level slice, room to extend it rather than fork                                                                                                                                                                                                                                                    |
+| 18.3 (sammensatte ord)         | `sammensatte-substantiv`          | B1 9 / C 11          | 20            | **Reuse** — already has a C-level slice                                                                                                                                                                                                                                                                                        |
+| 5.3 (adjektiv bøying)          | `adj-comparison` / `adj-definite` | A2/B1 only (no C)    | 63 / 12       | **New C-level topic** — same precedent as `preposisjoner-uttrykk-b2` in the preposition plan: extending an A2/B1 topic with C-level irregular-comparative + bestemt-form items would blur its level; propose `adj-comparison-c` (or fold into a single new `adj-c` topic if the batch turns out small — decide after drafting) |
+| 17.4 (mixed cloze)             | _(none — spans multiple topics)_  | —                    | —             | **Split by blank**, not a single topic — see Phase 2 below                                                                                                                                                                                                                                                                     |
 
 ---
 
@@ -93,7 +93,7 @@ Checked directly against `grammar.json` (1976 questions total):
   `substantiv-bestemt-form`, `adj-*`, `v2-word-order`/`subordinate-order`, etc.) rather than one
   batch write. Treat as a stretch batch — do Batches A–D first, revisit E only if there's session
   budget left; the source sentences here are also unusually mangled/gapped (`(smelle igjen – dør –
-  min – far – av)` style multi-word parentheticals), so expect this batch to take longer per item
+min – far – av)` style multi-word parentheticals), so expect this batch to take longer per item
   than A–D.
 
 ---
@@ -115,10 +115,11 @@ cellegiftbehandling, førstefødt sønn, gråtkvalt, samtykkeerklæring, gassbeh
 prioriteringsliste, krigsherjet land.
 
 **Dedup result:**
+
 - **Only one collision:** `makt` (ch. 6.3 #15) — already a headword in `gq-avled-028` ("Velg
-  riktig adjektivform av «makt»" → *mektig*). The ch. 6.3 exercise drills a fuller family (makt,
+  riktig adjektivform av «makt»" → _mektig_). The ch. 6.3 exercise drills a fuller family (makt,
   mektig, makte/makter) across four blanks in one item, so there's room to write a
-  non-duplicate question (different derivation, e.g. the verb *å makte*) — just don't repeat the
+  non-duplicate question (different derivation, e.g. the verb _å makte_) — just don't repeat the
   exact makt→mektig pair from `gq-avled-028`.
 - All other ch. 6.3 headwords, all ch. 7.3 verbs, and all ch. 18.3 compounds are new — zero
   overlap with the existing 78 `ordfamilie-avledning` / 20 `sammensatte-substantiv` entries.
@@ -149,13 +150,13 @@ None needed — nivå C is already all-Plus gated.
 
 ## Progress log
 
-| Batch | Scope | Status |
-| ----- | ----- | ------ |
-| A     | 4.3 + 11.2 (pluskvamperfektum/2. kondisjonalis) | ✅ Done 2026-08-11 (redrafted once — see "Batch A/B recovery incident" note below) — 16 new questions (`gq-kond-010`–`gq-kond-025`), all in `kondisjonalis-counterfactual` (11.2's 12 pairs folded in too; see note below on why `perfektum-pluskvamperfektum` wasn't used). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged. **Committed to git** right after writing. |
-| B     | 6.3 + 7.3 (ordfamilie) | ✅ Done 2026-08-12 (redrafted after the recovery incident below) — 34 new questions (`gq-avled-079`–`gq-avled-112`), all in `ordfamilie-avledning`, covering all 15 ch. 6.3 headwords and all 10 ch. 7.3 verb triples. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (19 pre-existing B1/B2 unmatched items are unrelated to this batch). **Committed to git** (`d1ea892`) right after writing. |
-| C     | 18.3 (sammensatte substantiv) | ✅ Done 2026-08-12 — 10 new questions (`gq-samset-021`–`gq-samset-030`), all in `sammensatte-substantiv`, covering all 10 ch. 18.3 compounds from Phase 0. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (3 pre-existing B1 unmatched items are unrelated to this batch). |
-| D     | 5.3 (adjektiv bøying, new C topic) | ✅ Done 2026-08-12 (redrafted from scratch in a new session — the raw JSON from the session that drafted it was never persisted anywhere, only this doc's prose summary; see "Batch D redraft note" below) — new topic `adj-boying-c` added to `types.ts`/`rules.ts`, 10 new questions (`gq-adj-075`–`gq-adj-084`). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` (after adding `adj-boying-c` to the checker's `C_TOPICS` set) — 0 flagged, 0 unmatched. **Not yet committed to git** — commit next. |
-| E     | 17.4 (mixed cloze, stretch) | ✅ Done 2026-08-12 — 12 new questions, split by blank across 8 existing topics per Phase 2's design (not one topic): `gq-vik-c-012` (verbform-i-kontekst), `gq-mermest-011` (adj-mer-mest), `gq-perf-011` (perfektum-pluskvamperfektum), `gq-setadv-029` (setningsadverbial), `gq-modaladv-013` (modale-adverb), `gq-ledd-011` (leddsetning-som-fundament), `gq-omskriv-011` (omskriving-passiv), `gq-komma-043` (kommaregler), `gq-noun-pos-033` (noun-possessives), `gq-adjadv-022` (adjektiv-eller-adverb), `gq-partform-021` (partisipp-former), `gq-predikativ-011` (predikativ-agreement). Verified against the real file with `check-grammar-norwegian.mjs` (0 flagged across all 12) and `check-c-grammar-vocab.mjs` on the 6 C-level topics among them (0 unmatched). Total `grammar.json` now **2,058 entries, all unique**. **Not yet committed to git** — commit next (this also covers Batch D's uncommitted `adj-boying-c` work). |
+| Batch | Scope                                           | Status                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A     | 4.3 + 11.2 (pluskvamperfektum/2. kondisjonalis) | ✅ Done 2026-08-11 (redrafted once — see "Batch A/B recovery incident" note below) — 16 new questions (`gq-kond-010`–`gq-kond-025`), all in `kondisjonalis-counterfactual` (11.2's 12 pairs folded in too; see note below on why `perfektum-pluskvamperfektum` wasn't used). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged. **Committed to git** right after writing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| B     | 6.3 + 7.3 (ordfamilie)                          | ✅ Done 2026-08-12 (redrafted after the recovery incident below) — 34 new questions (`gq-avled-079`–`gq-avled-112`), all in `ordfamilie-avledning`, covering all 15 ch. 6.3 headwords and all 10 ch. 7.3 verb triples. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (19 pre-existing B1/B2 unmatched items are unrelated to this batch). **Committed to git** (`d1ea892`) right after writing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| C     | 18.3 (sammensatte substantiv)                   | ✅ Done 2026-08-12 — 10 new questions (`gq-samset-021`–`gq-samset-030`), all in `sammensatte-substantiv`, covering all 10 ch. 18.3 compounds from Phase 0. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (3 pre-existing B1 unmatched items are unrelated to this batch).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| D     | 5.3 (adjektiv bøying, new C topic)              | ✅ Done 2026-08-12 (redrafted from scratch in a new session — the raw JSON from the session that drafted it was never persisted anywhere, only this doc's prose summary; see "Batch D redraft note" below) — new topic `adj-boying-c` added to `types.ts`/`rules.ts`, 10 new questions (`gq-adj-075`–`gq-adj-084`). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` (after adding `adj-boying-c` to the checker's `C_TOPICS` set) — 0 flagged, 0 unmatched. **Not yet committed to git** — commit next.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| E     | 17.4 (mixed cloze, stretch)                     | ✅ Done 2026-08-12 — 12 new questions, split by blank across 8 existing topics per Phase 2's design (not one topic): `gq-vik-c-012` (verbform-i-kontekst), `gq-mermest-011` (adj-mer-mest), `gq-perf-011` (perfektum-pluskvamperfektum), `gq-setadv-029` (setningsadverbial), `gq-modaladv-013` (modale-adverb), `gq-ledd-011` (leddsetning-som-fundament), `gq-omskriv-011` (omskriving-passiv), `gq-komma-043` (kommaregler), `gq-noun-pos-033` (noun-possessives), `gq-adjadv-022` (adjektiv-eller-adverb), `gq-partform-021` (partisipp-former), `gq-predikativ-011` (predikativ-agreement). Verified against the real file with `check-grammar-norwegian.mjs` (0 flagged across all 12) and `check-c-grammar-vocab.mjs` on the 6 C-level topics among them (0 unmatched). Total `grammar.json` now **2,058 entries, all unique**. **Not yet committed to git** — commit next (this also covers Batch D's uncommitted `adj-boying-c` work). |
 
 ## Batch A/B recovery incident (2026-08-11)
 
@@ -182,7 +183,7 @@ the recovery mechanism — git history is the actual safety net.
 
 - **`perfektum-pluskvamperfektum` wasn't used after all.** Inspecting its 10 existing entries showed
   the topic actually drills adverbial placement (`har allerede ratifisert` vs. `har ratifisert
-  allerede`) and perfektum-vs-preteritum tense choice — not hvis-setninger with 2. kondisjonalis.
+allerede`) and perfektum-vs-preteritum tense choice — not hvis-setninger with 2. kondisjonalis.
   All 16 new questions (covering both ch. 4.3's 10 pairs and ch. 11.2's 12 pairs) went into
   `kondisjonalis-counterfactual` instead, which already contained that exact construction
   (`gq-kond-005`–`008`). No new `perfektum-pluskvamperfektum` items were added.

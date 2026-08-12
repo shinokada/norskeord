@@ -8,7 +8,7 @@ A few concerns before going that route:
 2. **Naming clashes with existing convention** — current topics are narrow-and-specific (`adj-comparison`, `adj-definite`, `sterke-verb-c`, `ordfamilie-avledning`), not broad per-word-class buckets. A flat `c-adjective`/`c-verb`/`c-noun` topic would mix comparison, bestemt form, irregular forms, etc. into one bucket — could hurt if the app filters/serves practice by topic for focused drilling.
 3. **Overlap** — `adj-comparison`/`adj-definite` (A2/B1) and `sterke-verb-c` already exist; a new `c-adjective`/`c-verb` scheme would need to either subsume or coexist with these.
 
-One clarifying question before I go further 
+One clarifying question before I go further
 
 Is this vocab-driven bøyning idea meant to replace the workbook-based Batch D (adjective) plan, or is it a separate, bigger initiative we'd plan after finishing the current workbook batches?
 Separate/bigger — park it, keep going with Phase 0 + Batches A-E as planned
