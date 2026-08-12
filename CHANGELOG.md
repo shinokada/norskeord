@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.66.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added 73 advanced Norwegian grammar exercises for B1–C levels, including adjective agreement, verb forms, passives, punctuation, possessives, and compound words.
+    - Expanded grammar coverage across multiple textbook-based topics and added advanced adjective comparison guidance.
+    - Added nine vocabulary items and the expression “somle bort noe.”
+    - Added Norwegian learning articles explaining _feil/galt_, _planlegge_, and _-vern_.
+  - **Bug Fixes**
+    - Corrected a Norwegian example from “det filmen” to “den filmen.”
+  - **Updates**
+    - Refreshed grammar statistics and expanded C-level validation coverage.
+
 ## 2.65.0
 
 ### Minor Changes
