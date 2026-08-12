@@ -24475,5 +24475,155 @@
     "answer": "gjennomtrengende",
     "hint": "Adjektivet «gjennomtrengende» (om blikk, lyd) er avledet av verbet «å trenge gjennom».",
     "plusOnly": true
+  },
+  {
+    "id": "gq-samset-021",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
+    "source": "personer som tilhører samme familie",
+    "answer": "familiemedlemmer",
+    "alternates": [
+      "familiemedlemmene"
+    ],
+    "hint": "Familie + medlem: ingen bindes- er nødvendig, siden «familie» allerede ender på en vokal.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-022",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg det riktig stavede sammensatte substantivet.",
+    "sentence": "Solen skinte gjennom det tunge _____ i stuen.",
+    "words": [
+      "fløyelsforhenget",
+      "fløyelforhenget",
+      "fløyels forhenget"
+    ],
+    "answer": "fløyelsforhenget",
+    "hint": "Fløyel + s + forheng: bindes- kobler de to substantivene, og sammensetningen skrives alltid som ett ord.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-023",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
+    "source": "en bolig der flere generasjoner av samme familie bor sammen",
+    "answer": "en generasjonsbolig",
+    "alternates": [
+      "generasjonsbolig"
+    ],
+    "hint": "Generasjon + s + bolig: bindes- etter «generasjon».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-024",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg det riktig stavede sammensatte substantivet.",
+    "sentence": "Legene startet _____ så snart svulsten var oppdaget.",
+    "words": [
+      "cellegiftbehandlingen",
+      "cellegifts behandlingen",
+      "cellegiftsbehandlingen"
+    ],
+    "answer": "cellegiftbehandlingen",
+    "hint": "Cellegift + behandling: ingen bindes- brukes etter «cellegift».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-025",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
+    "source": "en sønn som er født som den første av søsknene i familien",
+    "answer": "en førstefødt sønn",
+    "alternates": [
+      "førstefødtsønn"
+    ],
+    "hint": "Førstefødt beskriver sønnen — her skrives det som to ord, siden «førstefødt» er et adjektiv foran substantivet «sønn», ikke en sammensetning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-026",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "minimal-pair",
+    "optionA": "Hun sto gråtkvalt igjen på perrongen da toget kjørte fra stasjonen.",
+    "optionB": "Hun sto gråt kvalt igjen på perrongen da toget kjørte fra stasjonen.",
+    "answer": "A",
+    "explanation": "«Gråtkvalt» er ett sammensatt ord (adjektiv) og skrives alltid samlet, aldri delt i to.",
+    "hint": "Sjekk om det sammensatte ordet er skrevet som ett ord.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-027",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg det riktig stavede sammensatte substantivet.",
+    "sentence": "Pasienten måtte signere en _____ før operasjonen kunne starte.",
+    "words": [
+      "samtykkeerklæring",
+      "samtykkeserklæring",
+      "samtykke erklæring"
+    ],
+    "answer": "samtykkeerklæring",
+    "hint": "Samtykke + erklæring: ingen bindes- er nødvendig, siden «samtykke» allerede ender på en vokal.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-028",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
+    "source": "en stor beholder som brukes til å lagre gass",
+    "answer": "en gassbeholder",
+    "alternates": [
+      "gassbeholder"
+    ],
+    "hint": "Gass + beholder: ingen bindes- er nødvendig i denne sammensetningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-029",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "order",
+    "tokens": [
+      "Prioriteringslisten",
+      "ble",
+      "diskutert",
+      "grundig",
+      "på",
+      "møtet"
+    ],
+    "answer": "Prioriteringslisten ble diskutert grundig på møtet.",
+    "alternates": [
+      "Prioriteringslisten ble diskutert grundig på møtet"
+    ],
+    "hint": "Prioritering + s + liste: bindes- etter et substantiv som ender på -ing.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-030",
+    "topic": "sammensatte-substantiv",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv/adjektivuttrykk.",
+    "source": "et land som er sterkt preget og ødelagt av krig",
+    "answer": "et krigsherjet land",
+    "alternates": [
+      "krigsherjet land"
+    ],
+    "hint": "Krig + s + herjet: bindes- etter «krig», og partisippet «herjet» brukes som adjektiv foran substantivet «land».",
+    "plusOnly": true
   }
 ]

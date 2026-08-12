@@ -153,7 +153,7 @@ None needed — nivå C is already all-Plus gated.
 | ----- | ----- | ------ |
 | A     | 4.3 + 11.2 (pluskvamperfektum/2. kondisjonalis) | ✅ Done 2026-08-11 (redrafted once — see "Batch A/B recovery incident" note below) — 16 new questions (`gq-kond-010`–`gq-kond-025`), all in `kondisjonalis-counterfactual` (11.2's 12 pairs folded in too; see note below on why `perfektum-pluskvamperfektum` wasn't used). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged. **Committed to git** right after writing. |
 | B     | 6.3 + 7.3 (ordfamilie) | ✅ Done 2026-08-12 (redrafted after the recovery incident below) — 34 new questions (`gq-avled-079`–`gq-avled-112`), all in `ordfamilie-avledning`, covering all 15 ch. 6.3 headwords and all 10 ch. 7.3 verb triples. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (19 pre-existing B1/B2 unmatched items are unrelated to this batch). **Committed to git** (`d1ea892`) right after writing. |
-| C     | 18.3 (sammensatte substantiv) | Not started |
+| C     | 18.3 (sammensatte substantiv) | ✅ Done 2026-08-12 — 10 new questions (`gq-samset-021`–`gq-samset-030`), all in `sammensatte-substantiv`, covering all 10 ch. 18.3 compounds from Phase 0. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (3 pre-existing B1 unmatched items are unrelated to this batch). |
 | D     | 5.3 (adjektiv bøying, new C topic) | Not started |
 | E     | 17.4 (mixed cloze, stretch) | Not started |
 
