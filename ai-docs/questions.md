@@ -16,6 +16,7 @@ I was working on ai-docs/implementation/c-grammar-i-samme-baat-arbeidsbok.md.
 
 Mind that a session can finish any time and outputs what you found or decided or write in the doc so that a next session can start from there.
 Or work in a small batch where it is necessary so that your work won't be lost due to session limit.
+Use `edit_file` to reduce risk rather than `write_file`. 
 
 The following is from the previous session. Continue where you left.
 
@@ -67,15 +68,52 @@ Now continuing with **Batch B (ordfamilie, ch. 6.3 + 7.3)**. Let me pull the sou
 
 ME: Continue.
 
-CLAUDE: 
+CLAUDE: Good — I can copy grammar.json onto my own filesystem and grep it there. Let me do that.Confirmed: 78 avled entries (next id `gq-avled-079`), 20 samset entries (next id `gq-samset-021`). Let me look at sample entries to match format, plus the `makt` collision and CEFR distribution.Good, the check pipeline works locally. Let me look at the vocab-c-check script requirements and vocab-c.json content near the relevant themes.Now let's search vocab-c and uttrykk-c for candidate anchor words relevant to the ch. 6.3/7.3 headwords I'll draft with.Now let's merge these into grammar.json and run both verification scripts.All 19 new entries passed both checks cleanly (the 19 flags are all pre-existing B1/B2 items unrelated to this batch). Let me write the updated grammar.json back to your computer and update the plan doc.I shouldn't dump the whole 900KB file through a single write — let me use a targeted line-based edit instead (append before the closing bracket).I made an error — that write_file call overwrote your grammar.json with placeholder text. I need to restore it immediately using the corrected version I have locally. Let me fix this now via chunked appends (the file is too large for one write).Good — my local corrected copy is intact (2011 entries). Now let's restore the user's file in chunks.This chunk-by-chunk approach is too risky for a 900KB JSON file (one typo corrupts it). Let me check if bash_tool can see the user's filesystem directly.Let me check if this is a git repo — if so, I can restore from git history instead of manually reconstructing 900KB.I need to stop the manual reconstruction — it's too risky for a 900KB file and I've already made this worse than it needed to be. Let me be straightforward about what happened and give you the fastest, safest fix.
 
-ME: 
+**What happened:** I made a tool-call error and overwrote your `grammar.json` with placeholder text, then made it worse by manually re-typing only part of the file back (up through `gq-dei-008`) trying to fix it live. **Your file is currently in a broken, incomplete state.**
 
-CLAUDE: 
+**The fix (this is fast and safe):** Since your project is a git repo, please run this yourself in the project root:Confirmed it's a git repo. Please run this in your terminal, in the project root:
 
-ME: 
+```bash
+git status src/lib/data/grammar.json
+git checkout -- src/lib/data/grammar.json
+```
 
-CLAUDE: 
+The first command shows you the damage (should show it modified/broken). The second restores it to the last commit — undoing my mistake completely, instantly, with zero risk of transcription errors.
+
+**Important caveat:** this only works cleanly if your last commit already had Batch A's 1992 entries (no uncommitted work sitting in that file before I touched it). If `git status` shows other uncommitted changes to that file from before this session, let me know before you run `checkout` — we'd want to handle that differently so nothing real gets lost.
+
+Once you've restored it, tell me and I'll reapply just the 19 new Batch B-1 questions (`gq-avled-079`–`097`) as a small, safe `edit_file` append — verified content, ~9KB, not the whole file. Sorry for the detour — I should have used `edit_file` (append) from the start instead of `write_file` (full overwrite).
+
+ME: Here is the outputs:
+
+```
+➜  norskeord git:(feat/c-uttrykk-addition-norsk-for-deg) ✗ git status src/lib/data/grammar.json
+On branch feat/c-uttrykk-addition-norsk-for-deg
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/lib/data/grammar.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  norskeord git:(feat/c-uttrykk-addition-norsk-for-deg) ✗ git checkout -- src/lib/data/grammar.json
+```
+
+CLAUDE: Good — my sandbox still has the complete correct data (2011 entries = 1976 original + Batch A's 16 + Batch B's 19). Now I'll do this safely: extract just the new 35 entries and append them via a small, targeted edit — not a full rewrite.
+
+ME: Continue.
+
+CLAUDE: Good — I have the source material (ch. 4.3 and 11.2). Now let me check the existing question format and available C-level vocab for anchoring.Now let me draft the 22 items (10 from ch.4.3 + 12 from ch.11.2) as fresh hvis-setninger for `kondisjonalis-counterfactual`, continuing from `gq-kond-010`.Now let's merge into the local test copy and run both checkers.All 16 anchored cleanly. Now the Norwegian language check:Clean — 1992 total, no dupes, both checks pass. Now writing the 16 new entries to the user's actual `grammar.json` via a targeted append (not a full overwrite).Good, the file is fine (just a terminal display quirk). Now I'll use the Filesystem edit_file tool to append it to the user's real file, before the closing `]`.Now appending this to the user's actual `grammar.json` via edit_file (targeted, not a full rewrite):Applied cleanly. Let me verify the user's file directly and re-run both check scripts against it.Confirmed — the user's actual `grammar.json` now has 1992 valid, unique entries, and both checks pass clean. Now let's update the implementation doc and instruct you to git commit before we move to Batch B.Doc updated. **Batch A is done and verified** (1992 entries, both checks pass clean). Now please commit it before we touch Batch B:
+
+Q&A: Q: Please run these in your terminal, in the project root, then let me know when done:
+
+git add src/lib/data/grammar.json ai-docs/implementation/c-grammar-i-samme-baat-arbeidsbok.md
+git commit -m "C grammar: add Batch A kondisjonalis questions (gq-kond-010–025)"
+
+Once committed, how should I proceed?
+A: Committed — start Batch B now
+
+CLAUDE: Now let me draft Batch B: ch. 6.3 (15 headwords) + ch. 7.3 (10 verb→noun/adj triples), continuing from `gq-avled-079`.Good coverage. Now drafting Batch B — 15 items from ch. 6.3 (ordfamilie fill-blanks) + 10 items from ch. 7.3 (verb→noun/adjective triples).There's a trailing comma in gq-avled-102's options array. Let me fix it.All 19 flagged items are pre-existing B1/B2 entries — none from my new Batch B (079–112). Batch B is clean on both checks.Clean — 2026 total, no dupes. Now appending Batch B to the user's actual `grammar.json` file.Good — matches what I expect. Given the file's large size, I'll break this into a couple of smaller `edit_file` calls to reduce risk, anchoring on this exact unique tail.Good split point. Now applying two sequential edit_file calls, appending before the closing `]`.First half applied. Now appending the second half (gq-avled-097 through 112).
 
 ME: 
 
