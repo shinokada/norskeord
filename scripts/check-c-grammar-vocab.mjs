@@ -68,7 +68,8 @@ const C_TOPICS = new Set([
   'uttrykk-gjenkjenning-c-3',
   // ai-docs/implementation/b2-c1-grammar.md
   'uttrykk-gjenkjenning-detgaarbra-c',
-  'nyanser-uttrykk'
+  'nyanser-uttrykk',
+  'adj-boying-c'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
