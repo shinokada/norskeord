@@ -2,7 +2,7 @@
 title: C grammar I Samme Båt Arbeidsbok
 reference: draft/c/i-samme-baat-arbeidsbok
 data-started: 2026-08-11
-data-completed:
+data-completed: 2026-08-12
 ---
 
 # Nivå C Grammar — "I samme båt!" Arbeidsbok (non-preposition exercises)
@@ -155,7 +155,7 @@ None needed — nivå C is already all-Plus gated.
 | B     | 6.3 + 7.3 (ordfamilie) | ✅ Done 2026-08-12 (redrafted after the recovery incident below) — 34 new questions (`gq-avled-079`–`gq-avled-112`), all in `ordfamilie-avledning`, covering all 15 ch. 6.3 headwords and all 10 ch. 7.3 verb triples. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (19 pre-existing B1/B2 unmatched items are unrelated to this batch). **Committed to git** (`d1ea892`) right after writing. |
 | C     | 18.3 (sammensatte substantiv) | ✅ Done 2026-08-12 — 10 new questions (`gq-samset-021`–`gq-samset-030`), all in `sammensatte-substantiv`, covering all 10 ch. 18.3 compounds from Phase 0. Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` — 0 flagged (3 pre-existing B1 unmatched items are unrelated to this batch). |
 | D     | 5.3 (adjektiv bøying, new C topic) | ✅ Done 2026-08-12 (redrafted from scratch in a new session — the raw JSON from the session that drafted it was never persisted anywhere, only this doc's prose summary; see "Batch D redraft note" below) — new topic `adj-boying-c` added to `types.ts`/`rules.ts`, 10 new questions (`gq-adj-075`–`gq-adj-084`). Verified with `check-grammar-norwegian.mjs` and `check-c-grammar-vocab.mjs` (after adding `adj-boying-c` to the checker's `C_TOPICS` set) — 0 flagged, 0 unmatched. **Not yet committed to git** — commit next. |
-| E     | 17.4 (mixed cloze, stretch) | Not started |
+| E     | 17.4 (mixed cloze, stretch) | ✅ Done 2026-08-12 — 12 new questions, split by blank across 8 existing topics per Phase 2's design (not one topic): `gq-vik-c-012` (verbform-i-kontekst), `gq-mermest-011` (adj-mer-mest), `gq-perf-011` (perfektum-pluskvamperfektum), `gq-setadv-029` (setningsadverbial), `gq-modaladv-013` (modale-adverb), `gq-ledd-011` (leddsetning-som-fundament), `gq-omskriv-011` (omskriving-passiv), `gq-komma-043` (kommaregler), `gq-noun-pos-033` (noun-possessives), `gq-adjadv-022` (adjektiv-eller-adverb), `gq-partform-021` (partisipp-former), `gq-predikativ-011` (predikativ-agreement). Verified against the real file with `check-grammar-norwegian.mjs` (0 flagged across all 12) and `check-c-grammar-vocab.mjs` on the 6 C-level topics among them (0 unmatched). Total `grammar.json` now **2,058 entries, all unique**. **Not yet committed to git** — commit next (this also covers Batch D's uncommitted `adj-boying-c` work). |
 
 ## Batch A/B recovery incident (2026-08-11)
 
@@ -222,7 +222,7 @@ better; see the open question below, now resolved).
   comparison/agreement (gedigen, hoven, skrekkslagen), -ig/-lig superlative -st (døsig, hånlig),
   periphrastic mer/mest for participial adjectives (utkjørt, sønderknust), predikativ
   no-ending (olm, grådig), and weak/definite plural agreement (opprømt).
-- **Batch E scope** — may end up partially or fully deferred; not committed to a question-count
-  target given the per-blank triage overhead.
+- **Batch E scope** — ✅ resolved: all 12 items from ch. 17.4 were used (no deferral needed), split
+  by blank across 8 existing topics as planned in Phase 2, rather than forced into one topic.
 - **Språkhjørnet sections** — intentionally left out of scope (see above); revisit only as a
   follow-up decision, not part of this plan's batches.

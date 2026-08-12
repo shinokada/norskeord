@@ -24776,5 +24776,170 @@
     "answer": "skrekkslagne",
     "hint": "«Skrekkslagen» mister -en foran flertallsendelsen, samme mønster som gedigen → gedigne: skrekkslagen → skrekkslagne.",
     "plusOnly": true
+  },
+  {
+    "id": "gq-vik-c-012",
+    "topic": "verbform-i-kontekst",
+    "cefr": "C",
+    "type": "minimal-pair",
+    "optionA": "Vitnet klarte ikke å slutte å sitre under avhøret.",
+    "optionB": "Vitnet klarte ikke å slutte å sitrer under avhøret.",
+    "answer": "A",
+    "explanation": "Selv om flere verb stables opp i kjeden (klarte - å slutte - å sitre), forblir det siste verbet i bar infinitiv etter «å»: sitre, aldri sitrer.",
+    "hint": "Sjekk formen til verbet helt til slutt i kjeden.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-mermest-011",
+    "topic": "adj-mer-mest",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Velg riktig gradbøyningsform av «møkkete».",
+    "sentence": "Etter regnværet var stien enda _____ enn dagen før.",
+    "words": [
+      "mer møkkete",
+      "møkketere"
+    ],
+    "answer": "mer møkkete",
+    "hint": "Adjektiv på -ete tar alltid mer/mest, aldri -ere/-est.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-perf-011",
+    "topic": "perfektum-pluskvamperfektum",
+    "cefr": "C",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge (perfektum med setningsadverbial).",
+    "sentence": "Fargen på veggen har _____ i sollyset.",
+    "words": [
+      "bleknet",
+      "allerede"
+    ],
+    "answer": "allerede bleknet",
+    "hint": "Perfektum med adverbialet «allerede»: har + allerede + bleknet — adverbialet står mellom hjelpeverbet og partisippet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-setadv-029",
+    "topic": "setningsadverbial",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Sett inn i: «Treneren sa at …», og bruk «aldri».",
+    "source": "Laget ga opp kampen.",
+    "answer": "Treneren sa at laget aldri ga opp kampen.",
+    "hint": "Leddsetningsordstilling: adverbialet «aldri» kommer FØR verbet «ga».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-013",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Du minner en kollega på noe dere begge allerede vet. Velg riktig setning.",
+    "optionA": "Møtet er jo flyttet til fredag, husker du?",
+    "optionB": "Møtet er nok flyttet til fredag, husker du?",
+    "answer": "A",
+    "explanation": "«Jo» signaliserer felles, allerede kjent kunnskap mellom taler og mottaker. «Nok» ville i stedet avdempe det som en usikker antakelse fra taleren selv.",
+    "hint": "Er dette noe dere begge allerede vet, eller en usikker antakelse?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-011",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv til én setning: sett innrømmelsesleddsetningen med «selv om» fremst, og behold setningsadverbialene i riktig posisjon.",
+    "source": "Fristen er faktisk presserende. Teamet jobber jo overtid hver kveld.",
+    "answer": "Selv om fristen faktisk er presserende, jobber teamet jo overtid hver kveld.",
+    "alternates": [
+      "Selv om fristen faktisk er presserende jobber teamet jo overtid hver kveld"
+    ],
+    "hint": "Leddsetning: adverbial (faktisk) før verbet (er). Helsetningen inverterer: verb (jobber) — subjekt (teamet) — adverbial (jo) — resten.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-omskriv-011",
+    "topic": "omskriving-passiv",
+    "cefr": "C",
+    "type": "transform",
+    "prompt": "Omskriv til en s-passivsetning, og fjern det generiske subjektet «man».",
+    "source": "Man kunngjør resultatene av den gjeve konkurransen i morgen.",
+    "answer": "Resultatene av den gjeve konkurransen kunngjøres i morgen.",
+    "hint": "En generisk «man»-setning blir ofte en renere, mer formell s-passiv ved å droppe «man» og legge til «-s» på verbet: kunngjør → kunngjøres.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-komma-043",
+    "topic": "kommaregler",
+    "cefr": "B2",
+    "type": "punctuation",
+    "prompt": "Velg setningen med riktig tegnsetting.",
+    "options": [
+      "Hun kjøpte melk, brød og ost.",
+      "Hun kjøpte melk, brød, og ost.",
+      "Hun kjøpte, melk, brød og ost."
+    ],
+    "answer": "Hun kjøpte melk, brød og ost.",
+    "hint": "Komma mellom elementene i lista, men IKKE foran «og» før det siste elementet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-033",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen slik at hytta tilhører søsknene til Marius, ikke bare broren hans.",
+    "source": "Marius bodde i hytta hans.",
+    "answer": "Marius bodde i hytta deres.",
+    "hint": "Når eieren er flere personer (søsknene), brukes «deres» i stedet for «hans».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-adjadv-022",
+    "topic": "adjektiv-eller-adverb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form: adjektiv eller adverb?",
+    "sentence": "Regnet smalt _____ mot vinduet hele natten.",
+    "words": [
+      "hardt",
+      "hard",
+      "harde"
+    ],
+    "answer": "hardt",
+    "hint": "Adverbet «hardt» beskriver verbet «smalt» og bøyes derfor med -t, uavhengig av kjønn eller tall.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partform-021",
+    "topic": "partisipp-former",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om med presens partisipp for å beskrive måte, i stedet for en «mens»-setning.",
+    "source": "Barna løp inn i huset mens de lo.",
+    "answer": "Barna løp leende inn i huset.",
+    "hint": "Presens partisipp (verbstamme + -ende) erstatter «mens»-setningen og beskriver måte. Det bøyes aldri: leende.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-predikativ-011",
+    "topic": "predikativ-agreement",
+    "cefr": "C",
+    "type": "order",
+    "tokens": [
+      "Løftene",
+      "hans",
+      "var",
+      "avslørt",
+      "allerede",
+      "i",
+      "forkant"
+    ],
+    "answer": "Løftene hans var avslørt allerede i forkant.",
+    "alternates": [
+      "Løftene hans var avslørt allerede i forkant"
+    ],
+    "hint": "«Avslørt» er et partisipp som fungerer som predikativ, og forblir ubøyd uansett flertallssubjektet løftene — aldri avslørte.",
+    "plusOnly": true
   }
 ]
