@@ -9,7 +9,7 @@ svelte mcp server is running.
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
 Transcribe attached Norwegian image(s) to markdown. Ignore any illustrations and hand-writings.
-
+The images are HEIC files.
 ---
 
 
