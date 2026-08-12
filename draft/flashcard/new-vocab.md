@@ -237,3 +237,12 @@ hittil
 å akte
 å utstede
 høytrykk (et)
+pinnsvin (et)
+lommelykt (en/ei)
+diamant (en)
+skjærebrett (et)
+kjevle (en/ei/et)
+plagg (et)
+festplagg (et)
+hjort (en)
+svin (et)

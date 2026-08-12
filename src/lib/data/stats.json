@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T06:48:56.115Z",
+  "generatedAt": "2026-08-12T05:30:50.682Z",
   "grandTotal": 8704,
   "byLevel": {
     "A1": {
@@ -22,7 +22,7 @@
       "vocab": 1216,
       "uttrykk": 211,
       "total": 1427,
-      "grammar": 427,
+      "grammar": 428,
       "grammar_topic": 41,
       "quiz": 1427
     },
@@ -30,7 +30,7 @@
       "vocab": 1760,
       "uttrykk": 608,
       "total": 2368,
-      "grammar": 488,
+      "grammar": 493,
       "grammar_topic": 40,
       "quiz": 2368
     },
@@ -38,8 +38,8 @@
       "vocab": 2221,
       "uttrykk": 915,
       "total": 3136,
-      "grammar": 551,
-      "grammar_topic": 27,
+      "grammar": 627,
+      "grammar_topic": 28,
       "quiz": 3136
     }
   }

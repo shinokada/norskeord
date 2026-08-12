@@ -12,12 +12,15 @@ Transcribe attached Norwegian image(s) to markdown. Ignore any illustrations and
 
 ---
 
-I was working on ai-docs/implementation/fix-vocab-uttrykk.md.
+I am working on ai-docs/implementation/c-grammar-i-samme-baat-arbeidsbok.md.
+
+- Mind that a session can finish any time and outputs what you found or decided or write in the doc so that a next session can start from there.
+- Or work in a small batch where it is necessary so that your work won't be lost due to session limit.
+- Use `edit_file` to reduce risk rather than `write_file`.
+- Always update your progress in the doc we are working.
 
 The following is from the previous session. Continue where you left.
 
-CLAUDE:
-
 ME:
 
 CLAUDE:
@@ -36,49 +39,9 @@ CLAUDE:
 
 ME:
 
-CLAUDE:
+---
 
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
+Flashcard has Repeat/review, Hard/6 min, Good/10 min, Easy/8 days. Since there are many vocab and uttrykk, Hard/6 min and Good/10 min, accumulate and there are too many to review. What do you think to set Hard/1 day, Good/4 days, Easy/30 days?
 
 ---
 
