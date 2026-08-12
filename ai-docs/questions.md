@@ -12,7 +12,7 @@ Transcribe attached Norwegian image(s) to markdown. Ignore any illustrations and
 
 ---
 
-I am working on ai-docs/implementation/c-grammar-i-samme-baat-arbeidsbok.md.
+
 
 - Mind that a session can finish any time and outputs what you found or decided or write in the doc so that a next session can start from there.
 - Or work in a small batch where it is necessary so that your work won't be lost due to session limit.

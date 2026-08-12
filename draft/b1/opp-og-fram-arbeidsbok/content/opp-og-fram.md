@@ -1477,9 +1477,884 @@ Substantiv som slutter på *-er* og som betegner personer, får *-e* i flertall:
 Vil du vite hvilke substantiv som slutter på *-el* og *-er* i *Opp og fram!* grunnbok?
 Du finner liste over disse substantivene og kommentarer på nettkurset.
 
+## Vokabular
 
+| Ord i teksten:              | Forklaring på norsk:                                                                  |
+| --------------------------- | ------------------------------------------------------------------------------------- |
+| allerede (adv.)             | Har han kommet allerede? = Har han kommet så fort / så tidlig?                        |
+| du verden                   | *Du verden!* brukes for å uttrykke overraskelse                                       |
+| for enhver pris             | for alt i verden (det er veldig viktig)                                               |
+| forhold (n)                 | relasjon                                                                              |
+| fri og frank                | uten kjæreste/ektefelle                                                               |
+| halvsøster (f/m)            | søster som bare har felles mor eller felles far                                       |
+| i for- og etterkant         | før og etter                                                                          |
+| overskudd (n)               | ekstra energi                                                                         |
+| på én gang                  | samtidig                                                                              |
+| rett som det er             | ofte                                                                                  |
+| sjokk (n)                   | stor overraskelse                                                                     |
+| verden står ikke til påske  | uttrykket brukes for å vise overraskelse og tro på at «alt» kan skje                  |
+| Volvo                       | svensk bilmerke                                                                       |
+| å betro seg (v4)            | å fortelle noe til noen i tillit                                                      |
+| å gi uttrykk for (ureg.)    | å uttrykke; å si                                                                      |
+| å gjelde (ureg.)            | å angå; å dreie seg om                                                                |
+| å ha mye på hjertet         | når du har mange ting du tenker på som du gjerne vil ha sagt, har du *mye på hjertet* |
+| å skille seg (v2)           | å gå fra ektefellen og avslutte ekteskapet                                            |
+| å skravle i vei (v1)        | å snakke så mye man har lyst til                                                      |
+| å stole på noen (v2)        | å føle tillit og fortrolighet til noen                                                |
+| å ta skammelig feil (ureg.) | å ta veldig feil                                                                      |
+| å venne seg til (v1, v2)    | når noe har blitt en vane (noe som er normalt), har du *vent deg til* noe             |
 
+## a) Fra perfektum til preteritum.
 
+1. Heidi har fått sitt tredje barn. — *Heidi fikk sitt tredje barn.*
+2. De har funnet et tidspunkt. — *De fant et tidspunkt.*
+3. De har fortalt hverandre mye. — *De fortalte hverandre mye.*
+4. De har ikke visst noe. — *De visste ikke noe.*
+5. Det har kommet som et sjokk. — *Det kom som et sjokk.*
+6. De har aldri gitt uttrykk for noe annet. — *De ga/gav aldri uttrykk for noe annet.*
+7. De har tatt skammelig feil. — *De tok skammelig feil.*
+8. De har visst slitt med forholdet lenge. — *De slet visst med forholdet lenge.*
+9. Det har liksom gått veldig fort. — *Det gikk liksom veldig fort.*
+10. Hun har bare truffet henne én gang. — *Hun traff henne bare én gang.*
+11. Elina har alltid gjort mye forskjellig. — *Elina gjorde alltid mye forskjellig.*
+12. Hun har ofte sett litt mørkt på det. — *Hun så ofte litt mørkt på det.*
+13. De har alltid holdt sammen. — *De holdt alltid sammen.*
+
+## b) Finn ord og uttrykk fra teksten.
+
+1. Elina har verken barn eller kjæreste. — *Elina er fri og frank.*
+2. Heidi bor sammen med Reza. — *Heidi er samboer med Reza.*
+3. Elina ønsker å treffe Heidi ofte. — *Elina ønsker å treffe Heidi rett som det er.*
+4. Heidi og Elina kan snakke veldig mye. — *Heidi og Elina kan skravle i vei.*
+5. Heidi har mye å fortelle Elina. Elina har mye å fortelle Heidi. — *De har mye å fortelle hverandre.*
+6. Spesielt Elina har mye å fortelle. — *Spesielt Elina har mye på hjertet.*
+7. Det er litt vanskelig å åpne seg og fortelle om det hun tenker på. — *Det er litt vanskelig å betro seg.*
+8. Elinas foreldre skal gå fra hverandre. — *Elinas foreldre skal skille seg.*
+9. De har hatt problemer med forholdet lenge. — *De har slitt med forholdet lenge.*
+10. De har på en måte bare bodd sammen uten å være sammen. — *De har liksom bare bodd under samme tak.*
+
+## c) Bruk *kommer til å* + infinitiv. *Elina sier at …*
+
+1. Elina er uten barn. — *Elina sier at hun kommer til å være uten barn.*
+2. Heidi og Elina er venninner. — *Elina sier at de kommer til å være venninner.*
+3. Heidi og Elina møter hverandre på kafé. — *Elina sier at de kommer til å møte hverandre på kafé.*
+4. Faren til Elina skiller seg. — *Elina sier at faren hennes kommer til å skille seg.*
+5. Faren til Elina får nytt hus. — *Elina sier at faren hennes kommer til å få nytt hus.*
+6. Eva føder et barn. — *Elina sier at hun kommer til å føde et barn.*
+7. Faren til Elina fyller 57 om en måned. — *Elina sier at faren hennes kommer til å fylle 57 om en måned.*
+8. Elina tar tiden til hjelp. — *Elina sier at hun kommer til å ta tiden til hjelp.*
+9. Elina savner ofte Polen. — *Elina sier at hun kommer til å savne Polen ofte / Elina sier at hun ofte kommer til å savne Polen.*
+10. Elina er redd for å binde seg. — *Elina sier at hun kommer til å være redd for å binde seg.*
+11. Elina føler seg trist av og til. — *Elina sier at hun kommer til å føle seg trist av og til.*
+
+I hvilke av disse setningene passer det også å bruke *skal* + infinitiv?
+
+## d) Samme, sammen, nest, neste, nesten, sist eller siste?
+
+*Tips: Les om to ulike betydninger av nesten i grammatikken til kapittel 6.*
+
+1. Jeg føler ____ at han ikke tror på det jeg sier.
+2. Jeg liker ikke å komme på ____ plass. Hvordan er det for deg å tape?
+3. Det er det ____ hvilken restaurant vi går på. Det er uansett veldig koselig å gå ut ____ med venninnene mine.
+4. Kommer du på besøk til meg denne uka eller ____ uke?
+5. Nå er det ____ gangen jeg snakker til deg. Hvorfor kan du ikke gjøre som jeg sier?
+6. ____ vinter var vi på Kanariøyene. Men vi var ikke fornøyde, så det er ____ gang vi reiser dit.
+7. Unnskyld at jeg sier det, men jeg tror ____ at jeg må takke for meg nå.
+8. Han fikk ti sjanser. Han klarte det den niende gangen, på ____ ____ sjanse.
+9. Vi bor ____ i ____ hus.
+10. Hva skal det ____ barnet som kommer hete? Skal dere ha flere barn senere, eller blir dette det ____ barnet?
+11. Det er fint å gjøre ting ____. Jeg husker ____ gang vi var på tur. Jeg gleder meg allerede til ____ gang.
+12. Ja, det var gøy! Jeg håper det ikke blir ____ gangen vi drar på tur sammen.
+13. Dronningen var ____ på gråten da hun mottok de flotte gavene.
+14. Festivalen var den ____ største i Skandinavia. Den ____ festivalen blir organisert til neste år også.
+
+## e) Mye eller mange?
+
+1. Hun har hatt ____ overskudd i det siste.
+2. Det er så ____ tidspunkt som passer dårlig for Heidi.
+3. De snakker om ____ ulike ting. De snakker om veldig ____.
+4. De har ikke hatt så ____ kontakt med hverandre.
+5. Det er viktig å ha ____ kontakter når man leter etter jobb.
+6. I denne oppgaven var det ikke så ____ feil.
+7. Heidi hadde ikke hatt så ____ forhold til andre menn før hun traff Reza.
+8. Heidi har ____ husarbeid å gjøre.
+9. Det tas ut ____ skilsmisser i Norge.
+10. Elina føler ____ usikkerhet overfor farens nye dame.
+11. Elina har opplevd ____ sjokk i det siste.
+
+## f) Ulike betydninger av å gjelde.
+
+*Å gjelde kan bety å være viktig, å handle om, å være gyldig, å telle med / å være inkludert. Hvilken av betydningene blir brukt i disse setningene? Prøv først å finne ut hva setningene betyr. Deretter kan du lytte til kommentarer om dette på nettkurset.*
+
+1. Nå gjelder det å løpe fort!
+2. Det jeg skal fortelle, gjelder min far.
+3. Denne billetten gjelder ikke.
+4. Det gjelder ikke livet!
+5. Denne omgangen gjelder ikke.
+6. Hva gjelder det?
+7. Det gjelder å ikke miste motet.
+8. Det ligger seks brikker i dette spillet. To av brikkene gjelder ikke.
+9. Denne reservasjonen gjelder ikke.
+10. Besøket hans gjaldt ikke forretninger.
+
+## g) I vei, i veien, på vei eller på veien?
+
+1. De snakket ____ hele kvelden.
+2. Han er ____ hjem.
+3. De ble stående og snakke ute ____.
+4. De la ____ på den lange reisen.
+5. Han tok fatt ____ hjem.
+6. Læreren pratet ____ om ord og uttrykk.
+7. Elevene var ____ til skolen.
+8. Ute ____ stod det parkert mange biler.
+9. De fektet ____ med armene mens de pratet.
+10. Hva er ____ med deg? Er det noe galt?
+
+## h) Orddiktat.
+
+1. å fortelle 2. en samboer 3. et overskudd 4. omsider 5. å skravle 6. et hjerte 7. å gifte seg 8. å gjelde 9. å skille seg 10. et sjokk 11. å gi uttrykk for 12. en begynnelse 13. allerede 14. en halvsøster 15. samtidig 16. å savne 17. stakkars deg 18. en krangel 19. å venne seg til 20. en ektefelle
+
+---
+
+# 5 Petters bror kommer ut av skapet
+
+## Grammatikk, ord og uttrykk
+
+### Da – når
+
+*Da* og *når* forteller noe om tid.
+
+*Da* bruker vi om noe som allerede har skjedd.
+
+*Når* bruker vi om noe som kan skje i framtiden, og om noe som gjentar seg ofte (både i nåtiden og fortiden).
+
+### Sammensatte ord
+
+Et substantiv som forteller mer om et annet substantiv, skrives sammen i ett ord:
+
+Substantiv + substantiv: *slektstreff, familiemedlem, hjembygd, nattbord, medisinflaske, asylmottak, lyspunkt, krisesenter, arbeidsliv.*
+
+Andre kombinasjoner:
+
+Verb + substantiv: *spisebord, kjøpekraft, ryddeordning, gåtur, skiløp.*
+
+Adjektiv + substantiv: *sykehjem, høytaler, likestilling, særbehandling.*
+
+Sammensatte ord bøyes som siste del av ordet. Eksempel: *slektstreff* bøyes som *treff* og er intetkjønn fordi *treff* er intetkjønn.
+
+Alle ord som ender på *-dom, -skap, -het* og *-sjon*, får *-s* i sammensetninger: *barndomsminner, kjøleskapsdør, kjærlighetssorg, informasjonskanal.*
+
+En del enstavelsesord får -e i sammensetninger: *barneselskap, julegran.*
+
+Mange sammensatte ord får -s: *sportsbegivenhet, ekteskapskontrakt.*
+
+Reglene for om sammensatte ord får -e, -s eller ingen bindebokstav, er nokså kompliserte.¹ ☺
+
+### Moro (adjektiv)
+
+Ordet *moro* beskriver en opplevelse: *Jeg har det moro. / Det var så moro på kurset!* (Riktig.)
+
+Ordet *moro* beskriver ikke en persons egenskaper: **Han er moro.* (Feil.) Men vi kan si: *Han er morsom.*
+
+### Heller (adverb)
+
+1. *Heller* er komparativformen til *gjerne*: gjerne – heller – helst.
+*Jeg blir gjerne med deg ut, men jeg vil heller bli hjemme. Hva vil du helst?*
+2. nokså: *Hun ser heller sliten ut.*
+3. ved nektende ord: *Jeg vil heller ikke gå ut nå.* (Vi kan ikke si: *Jeg vil ikke også gå ut.*)
+
+### Under – i løpet av
+
+Når noe skjer samtidig med at noe annet foregår, kan vi uttrykke det med *under* eller *i løpet av*. Vi bruker *i løpet av* når verbalhandlingen har fokuset på at noe er avsluttet eller er oppsummerende. Vi bruker *under* når verbhandlingen har fokuset på en tilstand.
+
+| Under:                                                               | I løpet av:                                         | Fokus:                                 |
+| -------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------- |
+|                                                                      | To gutter ble skadet i løpet av helgen.             | Oppsummerende om helgen.               |
+| Mange mennesker sultet under krigen.                                 |                                                     | Tilstanden for de sultende menneskene. |
+|                                                                      | Butikken ble tømt av tyvene i løpet av ti minutter. | Avsluttet etter ti minutter.           |
+| Under overfallet i banken lå det mange livredde mennesker på gulvet. |                                                     | Tilstanden til de livredde menneskene. |
+
+### Å være enig i/med/om
+
+1. *Å være enig i en sak.* (Man tenker likt i en sak på forhånd, uten at man har diskutert seg fram til det.)
+2. *Å være enige om et forslag/en idé/en løsning.* (Når man har diskutert fram og tilbake om noe, og har blitt enige, er man enige *om* et forslag/en idé/en løsning.)
+3. *Å komme til enighet om noe.* (Samme som nr. 2.)
+4. *Å være enig med en person.* (Man er enig *med* en person.)
+
+## Vokabular ☺☺
+
+| Ord i teksten:           | Forklaring på norsk:                         |
+| ------------------------ | -------------------------------------------- |
+| bakgrunn (m)             | oppvekstmiljø                                |
+| det kommer an på (ureg.) | det er avhengig av                           |
+| dyp (adj.)               | her: veldig. Dypt religiøs = veldig religiøs |
+
+---
+¹ For gjennomgang av sammensatte ord henvises det til Ruth Fjeld og Jan Engh: *Språkvett.* Kunnskapsforlaget, 2010, s. 67–72.
+
+## Vokabular (fortsettelse)
+
+| Ord i teksten:        | Forklaring på norsk:                                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| grisevær (n)          | veldig dårlig vær (vått, kaldt og med vind)                                                                               |
+| gudstjeneste (m)      | seremonielt møte i kirka                                                                                                  |
+| i bunn og grunn       | når alt kommer til alt, slik noe *egentlig* er                                                                            |
+| i hvert fall (adv.)   | i alle tilfeller; i det minste                                                                                            |
+| innimellom (adv.)     | noen ganger; av og til                                                                                                    |
+| merkelig (adj.)       | rar                                                                                                                       |
+| omkring (adv.)        | rundt til alle kanter                                                                                                     |
+| område (n)            | her: felt                                                                                                                 |
+| omsider (adv.)        | til slutt                                                                                                                 |
+| personlighet (m)      | særtrekk ved en person viser en persons *personlighet*                                                                    |
+| pietisme (m)          | *pietisme* er en retning innenfor kristendommen (som noen synes er litt trangsynt); *pietistisk* = adjektiv av *pietisme* |
+| predikant (m)         | religiøs taler                                                                                                            |
+| regnet pøser ned (v2) | det regner veldig mye                                                                                                     |
+| strålende (adj.)      | her: veldig bra                                                                                                           |
+| støy (m)              | bråk; uro                                                                                                                 |
+| taus (adj.)           | som ikke snakker                                                                                                          |
+| tålmodighet (m)       | når man er flink til å vente rolig, har man *tålmodighet*; du må smøre deg med *tålmodighet*                              |
+
+| Ord i teksten:                   | Forklaring på norsk:                                           |
+| -------------------------------- | -------------------------------------------------------------- |
+| voldsom (adj.)                   | svært sterk                                                    |
+| å be                             | her: å holde en bønn til Gud                                   |
+| å bryte sammen (ureg.)           | å få et sammenbrudd; å falle fra hverandre                     |
+| å bære på en hemmelighet (ureg.) | å vite noe man ikke vil fortelle til andre                     |
+| å finne ut av noe sammen (ureg.) | her: å få forholdet til å fungere fint                         |
+| å gjengi (ureg.)                 | å oppsummere; å referere                                       |
+| å grunne over noe (v1)           | å tenke veldig mye over noe; å meditere                        |
+| å kikke (v1)                     | å se; å titte                                                  |
+| å lure på                        | å spekulere; å ønske å få informasjon om noe                   |
+| å løse seg (v2)                  | å ordne seg                                                    |
+| å overreagere (v2)               | å reagere mer enn andre synes er nødvendig                     |
+| å sluke (v2)                     | å svelge fort                                                  |
+| å smugtitte (v1)                 | å se på noen når personen man ser på ikke legger merke til det |
+| å smyge seg av gårde (ureg.)     | å gå veldig stille bort                                        |
+| å strikke                        | å lage f.eks. en genser ved hjelp av garn og pinner            |
+| å vandre (v1)                    | å gå fra sted til sted                                         |
+
+## a) Fra presens til preteritum.
+
+1. Babyen ligger og sover. — *Babyen lå og sov.*
+2. Ingen av dem har lyst til å gå ut. — *Ingen av dem hadde lyst til å gå ut.*
+3. Melissa sitter i sofaen. — *Melissa satt i sofaen.*
+4. Hun spør ham om alt er bra. — *Hun spurte ham om alt var bra.*
+5. Går Petter og tenker på noe? — *Gikk Petter og tenkte på noe?*
+6. Melissa forstår ingenting. — *Melissa forstod ingenting.*
+7. Petter forteller Melissa om middagen. — *Petter fortalte Melissa om middagen.*
+8. Melissa treffer Ingebjørg på kafé. — *Melissa traff Ingebjørg på kafé.*
+9. Hun vet ikke om hun kan huske det. — *Hun visste ikke om hun kunne huske det.*
+10. Familien sitter og spiser middag. — *Familien satt og spiste middag.*
+11. Petter spør Roger om han er ok. — *Petter spurte Roger om han var ok.*
+12. Roger sier at alt er ok. — *Roger sa at alt var ok.*
+13. Til slutt kommer desserten. — *Til slutt kom desserten.*
+14. Roger forteller sin hemmelighet. — *Roger fortalte sin hemmelighet.*
+15. Roger smyger seg av gårde etter desserten. — *Roger smøg seg av gårde etter desserten.*
+16. Moren til Petter gråter. — *Moren til Petter gråt.*
+17. Roger bærer på en hemmelighet. — *Roger bar på en hemmelighet.*
+18. Moren hans bryter sammen. — *Moren hans brøt sammen.*
+19. Moren og faren finner ut av problemet. — *Moren og faren fant ut av problemet.*
+20. Forstår moren til Petter sin sønn? — *Forstod moren til Petter sin sønn?*
+
+## b) Fra direkte til indirekte tale. *Han sier at …*
+
+1. Jeg tenker ikke på noe spesielt. — *Han sier at han ikke tenker på noe spesielt.*
+2. Jeg tenker på noe som skjedde i går. — *Han sier at han tenker på noe som skjedde i går.*
+3. Vi var ganske tause under middagen. — *Han sier at de var ganske tause under middagen.*
+4. Moren min er ofte litt dramatisk. — *Han sier at moren hans ofte er litt dramatisk.*
+5. Moren min har alltid vært religiøs. — *Han sier at moren hans alltid har vært religiøs.*
+6. Min far og jeg tenker ikke som min mor. — *Han sier at hans far og han ikke tenker som hans mor.*
+7. Broren min er homofil. — *Han sier at broren hans er homofil.*
+8. Det er ikke noe problem for meg. — *Han sier at det ikke er noe problem for ham.*
+9. Mette og jeg ble selvfølgelig litt overrasket. — *Han sier at de selvfølgelig ble litt overrasket.*
+10. Det er moren min som har et problem. — *Han sier at det er moren hans som har et problem.*
+
+## c) Sett inn preposisjoner eller adverb som passer.
+
+1. Jeg er enig ____ det du sier.
+2. Er du enig ____ meg?
+3. Ja. Jeg er enig ____ deg ____ det.
+4. Er du enig ____ det statsministeren sier?
+5. Er finansministeren enig ____ statsministeren?
+6. Politikerne ble ikke enige ____ hverandre.
+7. Politikerne ble ikke enige ____ en løsning.
+8. Høyrepolitikerne var ikke enige ____ det sentrumspolitikerne la fram.
+9. Ap-politikerne var kanskje ikke helt enige ____ hverandre.
+10. I dag ved midnatt klarte megleren å få partene til å bli enige ____ et forslag.
+11. De er blitt enige ____ å gjøre noe nytt.
+
+## d) Sett inn riktig ord i riktig form.
+
+*en bekymring, å bekymre seg, bekymret*
+
+1. Han er ganske ____.
+2. Hun har en del ____.
+3. Dere ____ ofte.
+4. Du bør prøve å unngå å ____ så mye.
+5. Det tjener ikke til noe å være ____.
+6. Den som ____ mye, blir kanskje nervøs.
+7. Å leve et liv med ____, kan være slitsomt.
+8. De ____ for mye.
+9. La ____ ligge.
+10. ____ ikke. Det går bra for dere til slutt!
+
+## e) Sett inn adjektiv som passer, i riktig form.
+
+*taus, spesiell, voldsom, kulturell, rar, typisk*
+
+1. Et ____ uvær rammet Nicaragua i går. Orkanen hadde en styrke på 5.
+2. Han er et ____ barn. Han sier nesten ingenting.
+3. Familien hadde et helt ____ familietreff i går. Treffet var slik det pleier å være.
+4. Hun fikk en ____ reaksjon etter overfallet. Hun reagerte sterkt.
+5. Hun fikk et ____ epileptisk anfall. Anfallet varte lenge.
+6. ____ konflikter kan løses hvis man går i dialog.
+7. Det er ____ at ingen har hentet premiene.
+
+## f) Sett inn adjektivene i riktig form.
+
+*vakker*
+
+1. En ____ kveld, ei ____ forestilling, et ____ møte, ____ kvelder, den ____ natten.
+
+*moden*
+
+2. En ____ mann, ei ____ dame, et ____ barn, ____ mennesker, den ____ kvinnen.
+
+*sulten*
+
+3. En ____ hund, ei ____ dame, et ____ menneske, ____ folk, den ____ apekatten.
+
+*stresset*
+
+4. En ____ gutt, ei ____ jente, et ____ barn, ____ elever, den ____ læreren.
+*trist*
+
+5. En ____ dag, ei ____ natt, et ____ regnvær, ____ dager, den ____ morgenen.
+
+## g) Sett inn substantivene i riktig form.
+
+1. Det er søndag (formiddag) ____. Det er midt på (formiddag) ____.
+2. Melissa og Petter har spist en sen (frokost) ____. (Frokost) ____ var god.
+3. Ute pøser (regn) ____ ned. Det har vært mye (regn) ____ i det siste. Petter er lei av (regn) ____. Nå har han fått nok av (regn) ____ og (grisevær) ____.
+4. I dag vandrer Petter urolig omkring på (stuegulv) ____.
+5. Melissa sitter i (sofa) ____ og ser på sin (mann) ____. Hun spør om det er noe i (vei) ____.
+6. Petter forteller om (besøk) ____ hos sine (forelder) ____ (dag) ____ før. (Søster) ____ hans og (bror) ____ hans var der også, sammen med (forelder) ____.
+7. De spiste (middag) ____. (Måltid) ____ var godt, men da (dessert) ____ stod på (bord) ____, sa Roger at (øyeblikk) ____ var kommet.
+8. Petters (mor) ____ ble sjokkert da Roger fortalte (hemmelighet) ____. (Familiemiddag) ____ ble et eneste (kaos) ____!
+9. (Mor) ____ til Petter ble hysterisk, og Petters (far) ____ ble taus og usikker.
+
+## h) Orddiktat.
+
+1. å pøse ned 2. å kikke 3. bekymret 4. å gjengi 5. å smugtitte 6. en dessert 7. omsider 8. en gelé 9. taus 10. religiøs 11. å bære på en hemmelighet 12. en oppvekst 13. å bryte sammen 14. å overreagere 15. en gudstjeneste 16. en bakgrunn 17. innimellom 18. en berikelse 19. tålmodighet 20. en kulturkollisjon
+
+# 6 Heidi er lei av å rydde og vaske
+
+## Grammatikk, ord og uttrykk
+
+### Å være lei seg – det er leit – å være lei av
+
+1. *Jeg er lei meg fordi du skal flytte.* (Jeg er trist fordi du skal flytte.)
+2. *Det er leit at du skal flytte.* (Det er trist at du skal flytte.)
+3. *Jeg er lei av å vaske og rydde. / Jeg er lei av å se på tv.*
+
+*Å være lei av noe* betyr å være sliten, trøtt eller kjed av noe (men ikke trist).
+
+### Hver dag – hverdag – helligdag
+
+**Hver dag:**
+1. *Han tar tran hver dag.* (Sju dager i uka.)
+2. *Han kommer på skolen hver dag.* (Alle dager det er skole.)
+
+*Hverdag* = alle ukedagene unntatt lørdag, søndag og helligdager:
+*På hverdagene tar han bussen til jobb.*
+
+*Helligdag:*
+En helligdag er en seremoniell dag / nasjonal fest eller en kirkelig høytidsdag.
+
+### På jobb – på jobben – i jobb
+
+*På jobb / på jobben* brukes med samme betydning:
+1. *Jeg er på jobb. / Jeg er på jobben.*
+2. Å være *i jobb* betyr at man har et arbeid: *Jeg er i jobb nå etter å ha gått arbeidsledig i ett år.*
+
+### Et humør – en humor
+
+*Humør*² betyr sinnsstemning:
+1. *Han var i dårlig humør.* (Han var sur og kanskje trist.)
+2. *Hun var i godt humør.* (Hun lo og hadde det fint med seg selv.)
+
+*Humor* betyr å ha sans for (forståelse for) det komiske:
+1. *Hun hadde god humor.* (Hun visste hva som fikk folk til å le. De lo av det hun fortalte.)
+2. *Han hadde dårlig humor.* (Han prøvde å være morsom, men det han sa, var ikke morsomt.)
+
+### Simpelthen (adverb)
+
+*Simpelthen* betyr *rent ut sagt/ganske enkelt/bare.*
+1. *Han er simpelthen helt fantastisk.*
+2. *Han kan simpelthen ikke få nok av å se fotball på tv.*
+3. *Jeg måtte simpelthen kjøpe den kjolen jeg så.*
+
+### To betydninger av *nesten*
+
+1. omtrent; så godt som: *Nå er vi nesten framme. / Jeg har nesten spist opp maten min. / Han falt nesten ned i et hull i bakken.*
+2. Vi bruker også *nesten* for å gjøre noe litt mindre bestemt / litt mer høflig / litt mindre strengt:
+*Unnskyld meg, men jeg må nesten bli ferdig med dette. / Nå må vi nesten si farvel til hverandre. / Nå må du nesten spise opp maten, for vi skal gå nå.*
+
+---
+² Trykket er ulikt i disse to ordene: *humør, humor.*
+
+## Vokabular
+
+| Ord i teksten:                          | Forklaring på norsk:                                                                 |
+| --------------------------------------- | ------------------------------------------------------------------------------------ |
+| dråpen som får begeret til å renne over | det siste som får en person til å føle at *nå er det nok*                            |
+| dørhåndtak (n)                          | ting som hånden kan ta tak i for å åpne en dør                                       |
+| ektefelle (m)                           | den ene av to som er gift med hverandre                                              |
+| for tiden                               | nå                                                                                   |
+| forskrekket (adj.)                      | forbauset; overrasket                                                                |
+| fullstendig (adv.)                      | total; hel                                                                           |
+| fødselspermisjon (m)                    | periode etter en fødsel hvor man ikke jobber, men likevel mottar penger (fra staten) |
+| hastig (adj.)                           | rask                                                                                 |
+| hjemmeværende (adj.)                    | som ikke er ute i arbeidslivet                                                       |
+| hodepine (m)                            | vondt i hodet                                                                        |
+| humør (n)                               | sinnsstemning                                                                        |
+| idet (konj.)                            | i samme øyeblikk som                                                                 |
+| ivrig (adj.)                            | aktiv og interessert                                                                 |
+| simpelthen (adv.)                       | bare; rent ut sagt                                                                   |
+| slitsom (adj.)                          | tung; strevsom                                                                       |
+| susende (adj.)                          | den typen lyd som for eksempel kommer fra en støvsuger eller fra vind                |
+| utbrenthet (m)                          | å være totalt utslitt                                                                |
+| utslitt (adj.)                          | veldig sliten                                                                        |
+
+| Ord i teksten:                     | Forklaring på norsk:                                                |
+| ---------------------------------- | ------------------------------------------------------------------- |
+| å benytte seg av (v1)              | å bruke                                                             |
+| å brette (v1)                      | å legge sammen                                                      |
+| å få kabalen til å gå opp          | uttrykk: å klare å rekke alle oppgavene og aktivitetene i hverdagen |
+| å ikke eie nåla i veggen (v3)      | å ikke ha noen økonomiske ressurser                                 |
+| å komme seg på beina igjen (ureg.) | å bli frisk igjen                                                   |
+| å lystre (v1)                      | å være lydig mot                                                    |
+| å peke (v2)                        | å rette en finger (oftest pekefingeren) mot noe                     |
+| å pusse (v1)                       | vaske ren og blank                                                  |
+| å ramme (v1)                       | å få innvirkning på                                                 |
+| å se dagens lys (ureg.)            | å bli født                                                          |
+| å se fram til                      | å glede seg til                                                     |
+| å skrike (ureg.)                   | her: å gråte                                                        |
+| å sovne (v1)                       | å falle i søvn                                                      |
+| å spare (v2)                       | når man har penger uten å bruke dem, *sparer* man penger            |
+| å stige over (ureg.)               | å løfte beinet over                                                 |
+| å strekke til (ureg.)              | å være nok                                                          |
+| å verke (v1)                       | å gjøre vondt                                                       |
+| å være i full sving                | å være veldig aktiv                                                 |
+
+## a) Fra presens til 2. kondisjonalis.
+
+1. Han er hjemme halv fem. — *Han skulle ha vært hjemme halv fem.*
+2. Han slapper av hjemme. — *Han skulle ha slappet av hjemme.*
+3. Heidi støvsuger i stua. — *Heidi skulle ha støvsuget i stua.*
+4. Heidi sier «hei». — *Heidi skulle ha sagt «hei».*
+5. Heidi lager middag. — *Heidi skulle ha laget middag.*
+6. Reza slår av støvsugeren. — *Reza skulle ha slått av støvsugeren.*
+7. De spiser ikke middag. — *De skulle ikke ha spist middag.*
+8. Hun vasker ferdig. — *Hun skulle ha vasket ferdig.*
+9. De setter seg ikke ved bordet. — *De skulle ikke ha satt seg ved bordet.*
+10. Heidi ligger og hviler. — *Heidi skulle ha ligget og hvilt.*
+11. De sitter og spiser. — *De skulle ha sittet og spist.*
+12. De spiser og drikker. — *De skulle ha spist og drukket.*
+
+## b) Sett inn preposisjoner eller adverb som passer.
+
+1. Klokka er halv fem ____ ettermiddagen.
+2. De ser fram ____ ferien.
+3. Babyen kom ____ verden ____ fjor.
+4. Heidi er hjemme ____ tiden.
+5. De sparer litt ____ å ikke benytte seg ____ SFO.
+6. Heidi er ____ gang ____ å lage mat.
+7. Her er det noe merkelig ____ gang. Hva skjer?
+8. Nå setter de ____ gang.
+9. Heidi er ____ full sving ____ støvsugingen.
+10. Hun er lei ____ å drive ____ husarbeid dag ut og dag ____.
+11. De må stige ____ alt rotet ____ gulvet.
+12. Heidi peker ____ maten som står ____ kjøkkenet.
+13. Reza roper ____ barna.
+14. Heidi er rød ____ ansiktet.
+15. Reza prøver å få Heidi ____ bedre humør.
+16. Har Reza gjort nok husarbeid ____ det siste?
+17. Hvordan får man hverdagens kabal ____ å gå opp?
+18. Flere strever ____ å komme seg ____ beina etter utbrenthet.
+
+## c) Sett inn adjektivene og substantivene i bestemt form entall eller flertall, med bestemt artikkel.
+
+1. Han sitter alltid i (gammel, stol) ____ sin.
+2. (svimmel, menneske) ____ kom leende ut sammen av berg- og dalbanen.
+3. (spinkel, katt) ____ leter etter mat i en container.
+4. (sliten, flyvertinne) ____ snakket strengt til (sulten, passasjer) ____.
+5. Alle (moden, pære) ____ hadde falt ned fra treet.
+6. De bor i (gedigen, villa) ____ på hjørnet.
+7. (vakker, dame) ____ enset ikke (plystrende, mann) ____.
+8. (bitter, dame) ____ på benken stirrer ned på (gammel, fot) ____ sine.
+9. (diger, måltid) ____ gjorde at han sovnet.
+10. (mager, gatehund) ____ snek seg inn i bakgården og tok med seg (råtten, kjøttstykke) ____ som lå der.
+
+## d) Sett inn de refleksive verbene i riktig tid/form.
+
+1. Vi (kose seg) ____ i Tyrkia nå.
+2. De (benytte seg av) ____ det gode tilbudet i fjor.
+3. Du må (ta av seg) ____ jakka nå.
+4. Han (ta seg av) ____ henne nå fordi hun er syk.
+5. (sette seg) ____! Dere kan ikke bare bli stående.
+6. Han klarte ikke å (bestemme seg) ____.
+7. (legge seg) ____ han ____ allerede?
+8. De (kjenne seg) ____ ikke friske i forrige uke.
+9. Hun (komme seg) ____ ikke etter sykdommen. Hun døde på lørdag.
+10. (reise seg) ____ opp! Ikke (sette seg) ____ igjen. Det får du ikke lov til.
+
+## e) Sin, si, sitt, sine, hans, hennes eller deres?
+
+1. Reza gleder seg til å komme hjem til kona (til Reza) ____.
+2. Kona (til Reza) ____ er visst litt sliten i dag.
+3. Reza snakker til barna (til Reza) ____.
+4. Reza og Heidi har tre barn. Barna (til Reza og Heidi) ____ er snille.
+5. Reza hører en høy lyd idet han tar i dørhåndtaket til huset (til Reza og Heidi) ____.
+6. Reza har vondt i hodet. Hodet (til Reza) ____ verker.
+7. Heidi smiler litt mot ham når han kommer, men smilet (til Heidi) ____ ser så rart ut.
+8. Heidi forsøker å fortelle litt om tankene (til Heidi) ____.
+9. Barna rydder opp i lekene (til barna) ____ før de setter seg for å spise.
+10. Lekene (til barna) ____ ligger nå på rommet (til barna) ____.
+11. Heidi kjenner at kroppen (til Heidi) ____ er sliten.
+12. Heidi ser mot barna (til Heidi) ____. Barna (til Heidi) ____ er litt større nå.
+13. Barna ser mot (til barna) ____ mor. Moren (til barna) ____ er snill.
+14. Alle mennesker må takle (til menneskene) ____ egne problemer. Problemene (til menneskene) ____ kan ikke løses av andre.
+15. Norge har (til Norge) ____ utfordringer.
+16. Hverdagen (til Heidi) ____ har mange utfordringer.
+
+## f) Fra direkte til indirekte tale. *Heidi sier at …*
+
+1. Jeg vil ikke vaske. — *Heidi sier at hun ikke vil vaske.*
+2. Jeg vil ikke spise. — ____
+3. Jeg vil alltid kose med babyen. — ____
+4. Jeg vil ofte sove. ____
+5. Jeg er sjelden sint. ____
+6. Jeg er dessverre syk. ____
+7. Jeg er heldigvis ikke sint nå. ____
+8. Jeg er ikke så glad og fornøyd. ____
+9. Jeg er ikke sulten lenger. ____
+10. Jeg kan ikke sove nå. ____
+
+## g) Sett inn adjektivene og substantivene i riktig form.
+
+| Ubestemt form entall | Bestemt form entall | Ubestemt form flertall | Bestemt form flertall |
+| -------------------- | ------------------- | ---------------------- | --------------------- |
+| en slitsom dag       |                     |                        |                       |
+|                      | den susende lyden   |                        |                       |
+|                      |                     | små barn               |                       |
+|                      |                     |                        | de store problemene   |
+| et rikt samfunn      |                     |                        |                       |
+|                      | det fattige landet  |                        |                       |
+|                      |                     | slitne kvinner         |                       |
+|                      |                     |                        | de travle dagene      |
+
+## h) Orddiktat.
+
+1. en fødselspermisjon 2. hjemmeværende 3. å benytte seg av 4. et dørhåndtak 5. å støvsuge 6. selvfølgelig 7. en hodepinetablett 8. å peke 9. hastig 10. unnskyld 11. forskrekket 12. humør 13. lammekoteletter 14. søppel 15. å hvile 16. en utfordring 17. utbrenthet 18. en diagnose 19. et behandlingsopplegg 20. simpelthen
+
+# 7 Hus, hytte og pensjonat
+
+## Grammatikk, ord og uttrykk
+
+### Litt – lite
+
+*Litt* er adjektiv og betyr *noe, en del*:
+*Jeg har litt penger.* (Jeg har en del penger; ikke veldig mye, men heller ikke veldig lite.)
+
+*Lite* er adverb og betyr *ikke mye* (*lite* er mindre enn *litt*):
+*Jeg har lite penger.* (Jeg har nesten ingen penger.)
+
+*Lite* kan også være adjektiv bøyd i intetkjønn:
+*en liten blomst, ei lita jente, et lite hus, små barn, den lille blomsten.*
+
+*Lite* (som adverb) uttales trykktungt [liite], og *lite* (som adjektiv) uttales trykklett [lite].
+
+### Enhver – ethvert
+
+*Enhver/ethvert* betyr *alle; hver og en; hvem som helst*:
+1. *I denne vanskelige situasjonen må enhver passe på seg selv.*
+2. *Ethvert menneske har ansvar for seg selv.*
+
+### Bakenfor – bak
+
+*Bakenfor* betyr *bak noe annet*. *Bakenfor* og *bak* kan bety det samme, men ikke alltid. I disse setningene kan man bare bruke *bak* (ikke *bakenfor*):
+*Hun så bak i boka. Buksa har hull bak. Han stod for langt bak til å kunne høre noe.*
+
+Men *bak* og *bakenfor* kan også bety det samme, slik som her:
+*Du finner stigen bakenfor/bak huset.*
+
+### Innenfor – inne – innunder
+
+*Innenfor* betyr *på innsiden av* noe eller *bak* noe:
+*Soveplassen ligger innenfor stua.* (Soveplassen ligger lenger inne i huset enn stua/bak stua.)
+
+*Inne* betyr *det indre av* noe:
+*Soverommet ligger inne i stua.* (Soveplassen er en del av stua.)
+
+*Innunder* betyr *inne* – men også med referanse til noe som befinner seg *under* noe annet:
+*Han la seg innunder dyna fordi han frøs. Innunder genseren har jeg klær av ull.*
+(I disse eksemplene kan vi ikke bruke *inne* eller *innenfor*.)
+
+## Vokabular ☺☺
+
+| Ord i teksten:      | Forklaring på norsk:       |
+| ------------------- | -------------------------- |
+| armbånd (n)         | lenke til å ha rundt armen |
+| artig (adj.)        | morsom                     |
+| døgn (n)            | 24 timer                   |
+| ethvert (pron.)     | alle                       |
+| etterlengtet (adj.) | noe man har ventet på      |
+| fabelaktig (adj.)   | fantastisk                 |
+| feilaktig (adj.)    | ikke riktig                |
+| folketom (adj.)     | uten folk                  |
+
+## Vokabular (fortsettelse)
+
+| Ord i teksten:    | Forklaring på norsk:                                                   |
+| ----------------- | ---------------------------------------------------------------------- |
+| fordom (m)        | en mening man har på forhånd, uten at man egentlig vet så mye om saken |
+| fornuftig (adj.)  | klok; intelligent                                                      |
+| fredelig (adj.)   | rolig                                                                  |
+| gjeld (f/m)       | penger man skylder og skal betale tilbake                              |
+| gjenstand (m)     | ting; objekt                                                           |
+| inntrykk (n)      | følelse; forestilling                                                  |
+| levesett (n)      | måte å leve på                                                         |
+| muligens (adv.)   | kanskje                                                                |
+| nisje (m)         | her: en posisjon som passer spesielt godt, er en *nisje*               |
+| nysgjerrig (adj.) | vitebegjærlig; ivrig etter å få vite ting                              |
+| original (adj.)   | her: særpreget; spesiell og som ikke så mange andre har                |
+| rem (m)           | strimmel av f.eks. lær eller skinn                                     |
+| rettferdig (adj.) | moralsk riktig                                                         |
+| rikelig (adj.)    | mye                                                                    |
+| sjel (f/m)        | kraft hos et menneske som gjør at det f.eks. kan tenke                 |
+| smug (n)          | trang gate                                                             |
+| svipptur (m)      | kort tur                                                               |
+| så mangt          | så mye forskjellig                                                     |
+| tilbygg (n)       | nytt bygg i tilknytning til et eldre bygg                              |
+
+| Ord i teksten:                         | Forklaring på norsk:                                             |
+| -------------------------------------- | ---------------------------------------------------------------- |
+| utmerket (adj.)                        | perfekt, meget god                                               |
+| værelse (n)                            | rom                                                              |
+| å arve (v1)                            | å overta noe av en person som er død (eller som gir noe fra seg) |
+| å beslutte (v1)                        | å bestemme                                                       |
+| å dukke opp (v1)                       | å komme fram (kanskje litt plutselig)                            |
+| å dumpe innom (v1)                     | å komme inn (kanskje litt plutselig)                             |
+| å få seg (ureg.)                       | å anskaffe; å skaffe seg                                         |
+| å ha fore                              | å gjøre; å drive med                                             |
+| å ha lite/mye å rutte med              | å ha få/mange penger man kan bruke                               |
+| å innta en bedre frokost (ureg.)       | å spise en god frokost                                           |
+| å investere (v2)                       | å plassere kapital i noe                                         |
+| å kjøpe for en slikk og ingenting (v2) | å kjøpe noe nesten gratis                                        |
+| å oppsøke (v2)                         | å henvende seg til                                               |
+| å se for seg (ureg.)                   | å forestille seg                                                 |
+| å sette pris på (ureg.)                | å like og være takknemlig for                                    |
+| å stå på døgnet rundt (ureg.)          | å være aktiv / jobbe hele tiden                                  |
+| å tilbringe tid (ureg.)                | å bruke tid                                                      |
+
+## a) Hva heter det motsatte?
+
+1. yngre — *eldre* | tidlig — *sent/seint*
+2. mye — *lite* | privat — *offentlig*
+3. først — *sist* | full — *tom*
+4. mange — *få* | god — *dårlig*
+5. fornuftig — *ufornuftig* | rettferdig — *urettferdig*
+6. fra — *til* | rik — *fattig*
+
+## b) Lag setninger som starter med *Det var han/hun som …*
+
+1. Han finner katten. — *Det var han som fant katten.*
+2. Hun treffer damen. — *Det var hun som traff damen.*
+3. Han hjelper barnet. — *Det var han som hjalp barnet.*
+4. Hun drikker all kaffen. — *Det var hun som drakk all kaffen.*
+5. Han forstår testen. — *Det var han som forstod testen.*
+6. Hun består testen. — *Det var hun som bestod testen.*
+7. Han vet alt. — *Det var han som visste alt.*
+8. Hun møter prinsen. — *Det var hun som møtte prinsen.*
+9. Han kommer presis. — *Det var han som kom presis.*
+10. Hun løper til bussen. — *Det var hun som løp til bussen.*
+11. Han ser filmen. — *Det var han som så filmen.*
+12. Hun får premien. — *Det var hun som fikk premien.*
+13. Han skriver ei bok. — *Det var han som skrev ei bok.*
+14. Hun går til filmen. — *Det var hun som gikk til filmen.*
+15. Han forteller et eventyr. — *Det var han som fortalte et eventyr.*
+16. Hun gjør alt galt. — *Det var hun som gjorde alt galt.*
+17. Han griper sjansen. — *Det var han som grep sjansen.*
+18. Hun ligger i sengen. — *Det var hun som lå i sengen.*
+19. Han setter ny rekord. — *Det var han som satte ny rekord.*
+20. Hun sitter på stolen. — *Det var hun som satt på stolen.*
+
+## c) Sett inn adjektivene i riktig form.
+
+1. De ønsker å leve et (annerledes) ____ liv.
+2. Han har tatt mange (fornuftig) ____ valg.
+3. Den (utmerket) ____ vinen ble drukket fort opp.
+4. Han tilbrakte den (fredelig) ____ morgenen alene.
+5. Det var en (fabelaktig) ____ aften.
+6. Det var et (artig) ____ påfunn.
+7. Den (etterlengtet) ____ ferien ble ikke slik han hadde tenkt.
+8. Mange (nysgjerrig) ____ barn stod og så på turistene.
+9. Norge er et (flerkulturell) ____ land.
+10. Han måtte rette opp det (feilaktig) ____ inntrykket han hadde gitt.
+11. Mange (reiselysten) ____ bestiller billetter om vinteren.
+
+## d) Sett inn preposisjoner eller adverb som passer.
+
+1. De har ikke så mye å rutte ____.
+2. De har investert ____ noe de har hatt lyst ____ lenge.
+3. Han reiser fire ganger ____ året.
+4. Han liker best å reise ____ høsten.
+5. Jeg setter pris ____ stillheten her.
+6. Det dumper ____ mange mennesker ____ pensjonatet.
+7. Han har funnet seg en nisje ____ Tyrkia som passer godt ____ ham.
+8. Nå har de tid ____ å nyte livet ____ fullt.
+9. Mange er opptatt ____ å leve et rolig liv.
+10. Han er opptatt ____ å skrive en reportasje.
+11. Har du et godt råd ____ meg?
+12. Har du råd ____ dette?
+13. Vi har mye å lære ____ hverandre!
+
+## e) Hel, helt eller hele?
+
+1. Han har reist over ____ verden.
+2. Dette føles ____ galt.
+3. Jeg vil gjerne spise et ____ brød.
+4. Jeg så ____ filmen.
+5. Du har ____ rett.
+6. Han har vært inne en ____ dag.
+7. Han har vært inne ____ dagen.
+8. Hvorfor vil du i det ____ tatt være med på prosjektet?
+9. Han leste ut ____ boka på én dag.
+10. ____ prosjektet ble mislykket.
+11. Det tok et ____ år å gjøre ferdig jobben.
+12. Han tok ____ av. Han ble veldig engasjert.
+13. ____ Norge deltok i minnestunden.
+14. Dette er ____ sykt.
+15. Hva går ____ denne ideen ut på?
+
+## f) Sett inn substantiv som passer i riktig form.
+
+*gjeld, tilbygg, værelse, svipptur, smug, døgn, nisje, fordom, inntrykk*
+
+1. Jeg har høy ____. Jeg skylder masse penger.
+2. Vi trenger mer plass. Derfor skal vi bygge et ____.
+3. Jeg ønsker et ____ med havutsikt.
+4. Vi tok en ____ til Danmark. Vi reiste opp og ned på dagen.
+5. Han liker å gå og rusle i de trange ____.
+6. Han har ikke sovet på et ____.
+7. Her har han funnet seg en egen liten ____. Han føler han har funnet sin plass i livet.
+8. Mennesker har ofte ____ uten å vite om det.
+9. Jeg har et veldig godt ____ av den nye statsministeren.
+
+## g) Orddiktat.
+
+1. ei gjeld 2. en pensjonist 3. annerledes 4. fornuftig 5. å beslutte 6. et værelse 7. en journalist 8. en gjenstand 9. artig 10. å dukke opp 11. et smug 12. et døgn 13. en gjest 14. en liten nisje 15. en nysgjerrig sjel 16. en fordom 17. reiselystne nordmenn 18. en turistattraksjon 19. forskjellige levesett 20. en etterlengtet ferie
+
+# 8 Livet i en kommunal bygård i Oslo
+
+## Grammatikk, ord og uttrykk
+
+### S-genitiv + adjektiv og substantiv
+
+Etter genitiv skal substantivet stå i ubestemt form: *Petters jente.*
+
+Hvis det står et adjektiv imellom, skal adjektivet stå i bestemt form:
+*Petters store jente.*
+
+### Perfektum med *å være* eller *å ha*?
+
+*Hun er kommet* og *Hun har kommet* er riktige setninger.
+
+Man kan bruke *å være* i perfektum ved bevegelsesverb og overgangsverb. Det er en liten forskjell mellom uttrykksmåtene:
+
+*Hun har kommet.* (Denne setningen fokuserer litt mer på selve verbhandlingen å komme.)
+
+*Hun er kommet.* (Denne setningen fokuserer litt mer på resultatet av verbhandlingen, hun er her.)
+
+### Partisipper av sterke verb som ender på -et
+
+Partisipper av sterke verb på *-et* bøyes som adjektiv som ender på *-en* (samme som *en gammel – den gamle*):
+
+| Partisipper av sterke verb på -et | Bestemt form entall og flertall |
+| --------------------------------- | ------------------------------- |
+| en brukket fot                    | den brukne foten                |
+| en revet lapp                     | den revne lappen                |
+| en fordrukket mann                | den fordrukne mannen            |
+| en fordrevet flyktning            | den fordrevne flyktningen       |
+| en frosset kylling                | den frosne kyllingen            |
+| en skrevet regel                  | den skrevne regelen             |
+| en forkommen katt                 | den forkomne katten             |
+| et sprukket speil                 | det sprukne speilet             |
+
+### Gammel, ung, ny, lett, tung, vanskelig
+
+Mennesker er *gamle* eller *unge*.
+Ting er *gamle* eller *nye*.
+Ting er *lette* eller *tunge*.
+Oppgaver er *lette* eller *vanskelige*.
+
+## Vokabular ☺☺
+
+| Ord i teksten:   | Forklaring på norsk:                     |
+| ---------------- | ---------------------------------------- |
+| blek (adj.)      | fargeløs eller hvitaktig i ansiktet      |
+| bygård (m)       | boligblokk i en by                       |
+| båre (m)         | en slags seng man bærer syke mennesker i |
+| ekko (n)         | gjenlyd                                  |
+| forvirret (adj.) | usikker                                  |
+| gårdsplass (m)   | åpen plass mellom hus                    |
+
+## Vokabular (fortsettelse)
+
+| Ord i teksten:      | Forklaring på norsk:                                                             |
+| ------------------- | -------------------------------------------------------------------------------- |
+| hengslete (adj.)    | tynn person som har en slapp holdning med kroppen                                |
+| kommunal (adj.)     | her: som eies av kommunen                                                        |
+| krokrygget (adj.)   | som har kroket rygg (ryggen er ikke rett, men i en bue)                          |
+| leppestift (m)      | sminke til å farge leppene                                                       |
+| mager (adj.)        | veldig tynn                                                                      |
+| pils (m)            | lyst og lett øl                                                                  |
+| porselen (n)        | hard keramikk                                                                    |
+| sirlig (adj.)       | pyntelig; som er pyntet                                                          |
+| skipsreder (m)      | person som eier ett eller flere skip eller båter                                 |
+| skitt (m)           | søle, sand eller annet som gjør at det ikke er rent                              |
+| sporløs (adj.)      | uten spor; uten merker                                                           |
+| stokk (m)           | stav («trepinne») man støtter seg til hvis man har problemer med å gå            |
+| styre (n)           | ledelse                                                                          |
+| styrtrik (adj.)     | veldig rik                                                                       |
+| støv (adj.)         | små partikler som gjør at det blir skittent                                      |
+| subbende skritt (n) | tunge og slepende skritt (man løfter ikke foten helt opp fra gulvet når man går) |
+| takknemlig (adj.)   | som føler takk                                                                   |
+| tilbakevending (m)  | det å komme eller dra tilbake                                                    |
+| tøffel (m)          | myke sko man bruker inne                                                         |
+
+| Ord i teksten:              | Forklaring på norsk:                                                               |
+| --------------------------- | ---------------------------------------------------------------------------------- |
+| tørrlagt (adj.)             | her: en som har sluttet å drikke for mye alkohol, er *tørrlagt*                    |
+| å avlegge en visitt (ureg.) | å besøke                                                                           |
+| å gjalle (v1)               | å ljome (når man hører ekko, *gjaller* det)                                        |
+| å gjennomføre (v2)          | å realisere; å få gjort                                                            |
+| å klage (v1, v3)            | å gi uttrykk for at man ikke er fornøyd                                            |
+| å klirre (v1)               | å lage klingende lyder (lyd som kommer når f.eks. glassflasker slår mot hverandre) |
+| å klistre opp (v1)          | å henge opp med lim                                                                |
+| å mimre (v1)                | å minnes gamle dager                                                               |
+| å sive ut (v1)              | å komme sakte ut                                                                   |
+| å sladre (v1)               | å snakke med noen om mennesker som ikke er til stede                               |
+| å slakte (v1)               | her: å kritisere sterkt                                                            |
+| å slokne (v1)               | her: å sovne                                                                       |
+| å slynge seg (ureg.)        | å vikle seg                                                                        |
+| å spasere (v2)              | å gå                                                                               |
+| å springe (ureg.)           | å løpe                                                                             |
+| å stikke innom (ureg.)      | å komme på et kort besøk                                                           |
+| å tilegne seg (v1)          | å skaffe seg                                                                       |
+| å tusle (v1)                | å gå rolig og med litt subbende skritt                                             |
+| å unngå (ureg.)             | å forsøke å slippe unna                                                            |
 
 
 
