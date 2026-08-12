@@ -280,6 +280,37 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Bruk «enn» etter komparativ: Oslo er større enn Bergen.'
   },
 
+  'adj-boying-c': {
+    id: 'adj-boying-c',
+    titleEn: 'Adjective comparison and agreement (advanced)',
+    titleNb: 'Adjektiv: gradbøying og samsvarsbøying (avansert)',
+    explanationEn:
+      'Two trickier adjective patterns at this level, beyond the basic -ere/-est rules:\n\n' +
+      '1) Adjectives ending in unstressed -en (våken, gedigen, åpen) drop the -en before any ' +
+      'ending: comparative våken → våknere, superlative våknest / (bestemt) våkneste; ' +
+      'weak/definite form gedigen → gedigne (like åpen → åpne).\n\n' +
+      '2) Adjectives ending in -ig (or -lig, -som) take -st rather than -est in the superlative: ' +
+      'døsig → døsigst → (bestemt) døsigste, hånlig → hånligst → hånligste.\n\n' +
+      'Perfektum partisipp used as an adjective (utslitt, irritert, opprømt) generally forms ' +
+      'comparison periphrastically with mer/mest rather than -ere/-est: mer utslitt, ' +
+      'not utslittere.\n\n' +
+      'As always, a definite noun phrase needs both the article (den/det/de) and the weak ' +
+      '-e ending on the adjective, and a predicative adjective with no following noun ' +
+      'takes no ending at all: Sjefen var olm (not olmt/olme).',
+    explanationNb:
+      'To vanskeligere adjektivmønstre på dette nivået, utover de vanlige -ere/-est-reglene:\n\n' +
+      '1) Adjektiv som ender på trykklett -en (våken, gedigen, åpen) mister -en før enhver ' +
+      'endelse: komparativ våken → våknere, superlativ våknest / (bestemt) våkneste; ' +
+      'svak/bestemt form gedigen → gedigne (som åpen → åpne).\n\n' +
+      '2) Adjektiv som ender på -ig (eller -lig, -som) får -st i stedet for -est i superlativ: ' +
+      'døsig → døsigst → (bestemt) døsigste, hånlig → hånligst → hånligste.\n\n' +
+      'Perfektum partisipp brukt som adjektiv (utslitt, irritert, opprømt) gradbøyes ' +
+      'som regel med mer/mest, ikke -ere/-est: mer utslitt, ikke utslittere.\n\n' +
+      'Husk ellers: en bestemt substantivfrase trenger både artikkelen (den/det/de) og svak ' +
+      '-e-ending på adjektivet, mens et predikativt adjektiv uten substantiv etter seg ' +
+      'ikke får noen endelse i det hele tatt: Sjefen var olm (ikke olmt/olme).'
+  },
+
   'sterke-verb': {
     id: 'sterke-verb',
     titleEn: 'Strong verbs (irregular past tense)',

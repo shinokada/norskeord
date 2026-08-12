@@ -115,11 +115,26 @@ A: Committed — start Batch B now
 
 CLAUDE: Now let me draft Batch B: ch. 6.3 (15 headwords) + ch. 7.3 (10 verb→noun/adj triples), continuing from `gq-avled-079`.Good coverage. Now drafting Batch B — 15 items from ch. 6.3 (ordfamilie fill-blanks) + 10 items from ch. 7.3 (verb→noun/adjective triples).There's a trailing comma in gq-avled-102's options array. Let me fix it.All 19 flagged items are pre-existing B1/B2 entries — none from my new Batch B (079–112). Batch B is clean on both checks.Clean — 2026 total, no dupes. Now appending Batch B to the user's actual `grammar.json` file.Good — matches what I expect. Given the file's large size, I'll break this into a couple of smaller `edit_file` calls to reduce risk, anchoring on this exact unique tail.Good split point. Now applying two sequential edit_file calls, appending before the closing `]`.First half applied. Now appending the second half (gq-avled-097 through 112).
 
-ME: 
+ME: I run the following but I'm not sure if you have completed the work or not.
 
-CLAUDE: 
+```
+➜  norskeord git:(feat/c-uttrykk-addition-norsk-for-deg) ✗ ga .
+➜  norskeord git:(feat/c-uttrykk-addition-norsk-for-deg) ✗ git commit -m "C grammar: add Batch B kondisjonalis questions (gq-avled-097–112)" 
+[feat/c-uttrykk-addition-norsk-for-deg d1ea892] C grammar: add Batch B kondisjonalis questions (gq-avled-097–112)
+ 1 file changed, 514 insertions(+)
+```
 
-ME: 
+If it is good, then continue.
+
+CLAUDE: Good, format understood. Now let me check vocab anchors for the 10 compounds and draft Batch C.Let me draft the 10 Batch C items, then verify and fix any unanchored ones with the checker (established workflow).All 3 unmatched are pre-existing B1 entries (015, 018, 020) — none from my new Batch C (021–030). Batch C is fully clean.Clean — 2036 total, no dupes. Now appending Batch C to the user's actual file.Matches expected tail. Now applying the append.Applied cleanly. Now verifying the user's actual file:Confirmed clean: **2,036 total entries, all unique**, Batch C (`gq-samset-021`–`030`, 10 entries) present and correct. Both checks pass on all 10 new entries. Now updating the doc.**Batch C done** (10 new questions, both checks clean). Please commit it now, then let me know how to proceed:
+
+ME: Q&A: Q: Please run in the project root, then let me know when done:
+
+git add src/lib/data/grammar.json ai-docs/implementation/c-grammar-i-samme-baat-arbeidsbok.md
+git commit -m "C grammar: add Batch C sammensatte substantiv questions (gq-samset-021–030)"
+
+How should I proceed?
+A: Committed — start Batch D now
 
 CLAUDE: 
 
