@@ -190,7 +190,9 @@ export const UTTRYKK_FUNCTIONAL_THEMES = [
   'proverbs',
   'discourse-markers',
   'time-expressions',
-  'opinion-formulas'
+  'opinion-formulas',
+  'necessity-formulas',
+  'fixed-prepositional-phrases'
 ] as const;
 
 /** Catch-all for entries that don't cleanly fit a topical or functional theme. */
