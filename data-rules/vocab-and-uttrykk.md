@@ -143,6 +143,18 @@ kunstig intelligens
 biologisk mangfold
 ```
 
+This also covers ordinary verb + preposition collocations where the object slot is freely swappable — the preposition is fixed but the verb is the productive head, so the whole thing inflects/conjugates like any other verb. The test is the same as above: can a learner freely substitute the object and conjugate the verb across tenses?
+
+```
+sørge for
+ta hensyn til
+minne om
+ha godt av
+ta tak i
+```
+
+Not every verb-initial multi-word entry qualifies, though — if the noun/adjective after the verb doesn't function as a normal grammatical object (e.g. it needs a different verb like `være` to make sense, as in `være skyld i`), the fixed word isn't a verb complement and the entry likely belongs in `uttrykk` instead, or as its own `noun`/`adjective` vocab entry.
+
 ### Uttrykk (`uttrykk-xx.json`)
 
 Use **uttrykk** for fixed expressions that learners memorize as complete chunks rather than as ordinary lexical items — the entry doesn't have a single grammatical head, and learners don't productively inflect or recombine its parts.

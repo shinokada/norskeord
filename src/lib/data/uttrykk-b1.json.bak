@@ -216,6 +216,24 @@
     "theme": "relationships"
   },
   {
+    "id": "u-b1-013",
+    "norsk": "bli vant til",
+    "lemma": "bli vant til",
+    "english": "to get used to, to become accustomed to",
+    "ukrainian": "звикати до",
+    "spanish": "acostumbrarse a, adaptarse a",
+    "german": "sich gewohnen an",
+    "example": "Det tar tid å bli vant til det kalde klimaet.",
+    "example_english": "It takes time to get used to the cold climate.",
+    "example_ukrainian": "Потрібен час, щоб звикнути до холодного клімату.",
+    "example_spanish": "Lleva tiempo acostumbrarse al clima frío.",
+    "example_german": "Es braucht Zeit, sich an das kalte Klima zu gewohnen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-014",
     "norsk": "bryte loven",
     "lemma": "bryte loven",
@@ -396,7 +414,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "necessity-formulas"
+    "theme": "general"
   },
   {
     "id": "u-b1-024",
@@ -432,7 +450,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "necessity-formulas"
+    "theme": "general"
   },
   {
     "id": "u-b1-026",
@@ -688,6 +706,42 @@
     "theme": "finance"
   },
   {
+    "id": "u-b1-040",
+    "norsk": "få noen til å gjøre noe",
+    "lemma": "få noen til å gjøre noe",
+    "english": "to get someone to do something",
+    "ukrainian": "змусити когось зробити щось",
+    "spanish": "conseguir que alguien haga algo",
+    "german": "jemanden dazu bringen, etwas zu tun",
+    "example": "Kan du få ham til å rydde rommet sitt?",
+    "example_english": "Can you get him to tidy his room?",
+    "example_ukrainian": "Можеш змусити його прибрати в своїй кімнаті?",
+    "example_spanish": "¿Puedes conseguir que él ordene su habitación?",
+    "example_german": "Kannst du ihn dazu bringen, sein Zimmer aufzuräumen?",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-041",
+    "norsk": "få viljen sin",
+    "lemma": "få viljen sin",
+    "english": "to get one's way",
+    "ukrainian": "досягти свого, поставити на своєму",
+    "spanish": "salirse con la suya",
+    "german": "seinen Willen bekommen, seinen Kopf durchsetzen",
+    "example": "Han er vant til å få viljen sin og liker ikke å bli avvist.",
+    "example_english": "He is used to getting his own way and does not like being refused.",
+    "example_ukrainian": "Він звик ставити на своєму і не любить, коли йому відмовляють.",
+    "example_spanish": "Está acostumbrado a salirse con la suya y no le gusta que lo rechacen.",
+    "example_german": "Er ist es gewohnt, seinen Willen zu bekommen, und mag es nicht, abgewiesen zu werden.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-042",
     "norsk": "før i tida",
     "lemma": "før i tida",
@@ -740,7 +794,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "fixed-prepositional-phrases"
+    "theme": "general"
   },
   {
     "id": "u-b1-045",
@@ -777,6 +831,24 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "communication-skills"
+  },
+  {
+    "id": "u-b1-047",
+    "norsk": "gjøre avtaler",
+    "lemma": "gjøre avtaler",
+    "english": "to make arrangements, to schedule appointments",
+    "ukrainian": "домовлятися, призначати зустрічі",
+    "spanish": "hacer arreglos, concertar citas",
+    "german": "Termine machen, Verabredungen treffen",
+    "example": "Det er viktig å gjøre avtaler i god tid.",
+    "example_english": "It is important to make arrangements well in advance.",
+    "example_ukrainian": "Важливо домовлятися заздалегідь.",
+    "example_spanish": "Es importante hacer arreglos con bastante tiempo de anticipación.",
+    "example_german": "Es ist wichtig, Termine rechtzeitig zu machen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-048",
@@ -828,6 +900,24 @@
     "example_ukrainian": "Щось пішло не так із машиною під час виробництва.",
     "example_spanish": "Algo salió mal con la máquina durante la producción.",
     "example_german": "Waehrend der Produktion ging etwas mit der Maschine schief.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-051",
+    "norsk": "gå glipp av",
+    "lemma": "gå glipp av",
+    "english": "to miss out on, to miss",
+    "ukrainian": "пропустити, упустити",
+    "spanish": "perderse algo, no poder asistir a algo",
+    "german": "etwas verpassen",
+    "example": "Jeg gikk glipp av konserten fordi jeg var syk.",
+    "example_english": "I missed the concert because I was ill.",
+    "example_ukrainian": "Я пропустив концерт, бо був хворий.",
+    "example_spanish": "Me perdí el concierto porque estaba enfermo.",
+    "example_german": "Ich verpasste das Konzert, weil ich krank war.",
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
@@ -924,6 +1014,24 @@
     "theme": "health"
   },
   {
+    "id": "u-b1-058",
+    "norsk": "ha godt av",
+    "lemma": "ha godt av",
+    "english": "to benefit from, to do one good",
+    "ukrainian": "мати користь від, піти на користь",
+    "spanish": "beneficiarse de, venirle bien a uno",
+    "german": "gut tun, von etwas profitieren",
+    "example": "Det ville ha godt av deg å hvile litt.",
+    "example_english": "It would do you good to rest for a while.",
+    "example_ukrainian": "Тобі б пішло на користь трохи відпочити.",
+    "example_spanish": "Te vendría bien descansar un poco.",
+    "example_german": "Es wuerde dir gut tun, ein wenig auszuruhen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-059",
     "norsk": "ha godt humør",
     "lemma": "ha godt humør",
@@ -1013,6 +1121,24 @@
     "theme": "general"
   },
   {
+    "id": "u-b1-066",
+    "norsk": "handle om",
+    "lemma": "handle om",
+    "english": "to be about, to deal with",
+    "ukrainian": "бути про, розповідати про",
+    "spanish": "tratar de, ser sobre",
+    "german": "handeln von, sich drehen um",
+    "example": "Filmen handler om en familie som mister alt under krigen.",
+    "example_english": "The film is about a family that loses everything during the war.",
+    "example_ukrainian": "Фільм розповідає про сім'ю, яка втрачає все під час війни.",
+    "example_spanish": "La película trata de una familia que lo pierde todo durante la guerra.",
+    "example_german": "Der Film handelt von einer Familie, die im Krieg alles verliert.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-067",
     "norsk": "god helse",
     "lemma": "god helse",
@@ -1030,6 +1156,24 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "health"
+  },
+  {
+    "id": "u-b1-068",
+    "norsk": "holde mål",
+    "lemma": "holde mål",
+    "english": "to meet the standard, to hold up",
+    "ukrainian": "відповідати стандарту, бути на рівні",
+    "spanish": "estar a la altura, cumplir el estándar",
+    "german": "den Anforderungen genuegen, gut genug sein",
+    "example": "Kvaliteten på arbeidet hans holder ikke mål.",
+    "example_english": "The quality of his work does not meet the standard.",
+    "example_ukrainian": "Якість його роботи не відповідає стандарту.",
+    "example_spanish": "La calidad de su trabajo no está a la altura.",
+    "example_german": "Die Qualitaet seiner Arbeit genuegt nicht den Anforderungen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-070",
@@ -1116,6 +1260,24 @@
     "example_ukrainian": "Кожен із нас несе відповідальність за довкілля.",
     "example_spanish": "Cada uno de nosotros tiene una responsabilidad con el medio ambiente.",
     "example_german": "Jeder Einzelne von uns trägt eine Verantwortung für die Umwelt.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-075",
+    "norsk": "høre hjemme",
+    "lemma": "høre hjemme",
+    "english": "to belong, to be in the right place",
+    "ukrainian": "бути доречним, бути на своєму місці",
+    "spanish": "pertenecer, ser el lugar adecuado",
+    "german": "hingehoeren, am richtigen Platz sein",
+    "example": "Denne diskusjonen hører hjemme i et styremøte, ikke her.",
+    "example_english": "This discussion belongs in a board meeting, not here.",
+    "example_ukrainian": "Ця дискусія доречна на засіданні ради, а не тут.",
+    "example_spanish": "Esta discusión pertenece a una reunión de la junta, no aquí.",
+    "example_german": "Diese Diskussion gehoert in eine Vorstandssitzung, nicht hierher.",
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
@@ -1210,7 +1372,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "fixed-prepositional-phrases"
+    "theme": "general"
   },
   {
     "id": "u-b1-081",
@@ -1228,7 +1390,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "fixed-prepositional-phrases"
+    "theme": "general"
   },
   {
     "id": "u-b1-082",
@@ -1300,7 +1462,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "fixed-prepositional-phrases"
+    "theme": "general"
   },
   {
     "id": "u-b1-086",
@@ -1355,7 +1517,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "fixed-prepositional-phrases"
+    "theme": "general"
   },
   {
     "id": "u-b1-089",
@@ -1412,6 +1574,24 @@
     "theme": "fitness"
   },
   {
+    "id": "u-b1-093",
+    "norsk": "komme i gang",
+    "lemma": "komme i gang",
+    "english": "to get started, to get going",
+    "ukrainian": "розпочати, взятися за справу",
+    "spanish": "empezar, ponerse en marcha",
+    "german": "anfangen, loslegen",
+    "example": "Det var vanskelig å komme i gang med oppgaven.",
+    "example_english": "It was difficult to get started with the task.",
+    "example_ukrainian": "Було важко взятися за виконання завдання.",
+    "example_spanish": "Fue difícil ponerse en marcha con la tarea.",
+    "example_german": "Es war schwer, mit der Aufgabe anzufangen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-094",
     "norsk": "komme overens",
     "lemma": "komme overens",
@@ -1448,6 +1628,42 @@
     "theme": "reasoning"
   },
   {
+    "id": "u-b1-096",
+    "norsk": "late som",
+    "lemma": "late som",
+    "english": "to pretend, to act as if",
+    "ukrainian": "вдавати, робити вигляд",
+    "spanish": "fingir, actuar como si",
+    "german": "so tun als ob, vortauschen",
+    "example": "Han later som ingenting er galt.",
+    "example_english": "He pretends nothing is wrong.",
+    "example_ukrainian": "Він вдає, ніби все гаразд.",
+    "example_spanish": "Él finge que nada está mal.",
+    "example_german": "Er tut so, als ob nichts falsch wäre.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-098",
+    "norsk": "ligge godt an",
+    "lemma": "ligge godt an",
+    "english": "to be in a good position, to be on track",
+    "ukrainian": "бути у хорошій позиції, бути на правильному шляху",
+    "spanish": "estar en buena posición, ir por buen camino",
+    "german": "gut dastehen, auf einem guten Weg sein",
+    "example": "Vi ligger godt an til å nå målet.",
+    "example_english": "We are in a good position to reach the target.",
+    "example_ukrainian": "Ми на правильному шляху до досягнення мети.",
+    "example_spanish": "Vamos por buen camino para alcanzar el objetivo.",
+    "example_german": "Wir sind auf einem guten Weg, das Ziel zu erreichen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-099",
     "norsk": "midt i blinken",
     "lemma": "midt i blinken",
@@ -1479,6 +1695,24 @@
     "example_spanish": "Ahora es mi turno de hablar en la reunión.",
     "example_german": "Jetzt bin ich dran, im Meeting zu sprechen.",
     "definition": "Uttrykket brukes når det er din mulighet til å gjøre noe etter at andre har gjort det samme.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-101",
+    "norsk": "minne om",
+    "lemma": "minne om",
+    "english": "to remind of, to resemble",
+    "ukrainian": "нагадувати про, нагадувати щось",
+    "spanish": "recordar a, parecerse a",
+    "german": "erinnern an, ähneln",
+    "example": "Denne lukten minner meg om barndomshjemmet mitt.",
+    "example_english": "This smell reminds me of my childhood home.",
+    "example_ukrainian": "Цей запах нагадує мені про мій дитячий будинок.",
+    "example_spanish": "Este olor me recuerda a la casa de mi infancia.",
+    "example_german": "Dieser Geruch erinnert mich an mein Elternhaus.",
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
@@ -1536,7 +1770,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "necessity-formulas"
+    "theme": "general"
   },
   {
     "id": "u-b1-105",
@@ -1756,7 +1990,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "necessity-formulas"
+    "theme": "general"
   },
   {
     "id": "u-b1-117",
@@ -1774,7 +2008,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "society"
+    "theme": "general"
   },
   {
     "id": "u-b1-118",
@@ -1831,7 +2065,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "necessity-formulas"
+    "theme": "general"
   },
   {
     "id": "u-b1-121",
@@ -1907,6 +2141,24 @@
     "theme": "communication-skills"
   },
   {
+    "id": "u-b1-125",
+    "norsk": "spise om kapp",
+    "lemma": "spise om kapp",
+    "english": "to have an eating contest, to compete at eating",
+    "ukrainian": "змагатися в їжі, їсти навперегонки",
+    "spanish": "competir a ver quién come más rápido",
+    "german": "um die Wette essen",
+    "example": "Barna spiste om kapp for å se hvem som ble ferst ferdig.",
+    "example_english": "The children had an eating contest to see who would finish first.",
+    "example_ukrainian": "Діти їли навперегонки, щоб побачити, хто закінчить першим.",
+    "example_spanish": "Los niños compitieron a ver quién terminaba de comer primero.",
+    "example_german": "Die Kinder assen um die Wette, um zu sehen, wer zuerst fertig wird.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-127",
     "norsk": "starte på nytt",
     "lemma": "starte på nytt",
@@ -1941,7 +2193,7 @@
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
-    "theme": "fixed-prepositional-phrases"
+    "theme": "general"
   },
   {
     "id": "u-b1-129",
@@ -1961,6 +2213,24 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "opinion-formulas"
+  },
+  {
+    "id": "u-b1-130",
+    "norsk": "stikke innom",
+    "lemma": "stikke innom",
+    "english": "to drop by, to pop in",
+    "ukrainian": "заскочити, забігти (до когось)",
+    "spanish": "pasarse por, hacer una visita rápida",
+    "german": "vorbeischauen, kurz reinschauen",
+    "example": "Kan du stikke innom meg etter jobb?",
+    "example_english": "Can you drop by my place after work?",
+    "example_ukrainian": "Чи можеш ти заскочити до мене після роботи?",
+    "example_spanish": "¿Puedes pasarte por mi casa después del trabajo?",
+    "example_german": "Kannst du nach der Arbeit bei mir vorbeischauen?",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-131",
@@ -1994,6 +2264,24 @@
     "example_spanish": "¿Me puede dar tres trozos de ese pastel, por favor?",
     "example_german": "Kann ich bitte drei Stuck von dem Kuchen haben?",
     "definition": "Et stykke er en del av noe større, eller det kan brukes for å telle enkeltobjekter. Vi bruker det ofte når vi snakker om mat eller gjenstander.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-133",
+    "norsk": "stå fram som",
+    "lemma": "stå fram som",
+    "english": "to come out as, to present oneself as",
+    "ukrainian": "постати як, представити себе як",
+    "spanish": "presentarse como, mostrarse como",
+    "german": "sich als etwas zeigen, sich als etwas präsentieren",
+    "example": "Han står fram som en tydelig leder.",
+    "example_english": "He presents himself as a clear leader.",
+    "example_ukrainian": "Він постає як чіткий лідер.",
+    "example_spanish": "Se presenta como un líder claro.",
+    "example_german": "Er tritt als klare Führungsperson auf.",
     "level": "B1",
     "category": "uttrykk",
     "part": "phrase",
@@ -2037,6 +2325,24 @@
     "theme": "work"
   },
   {
+    "id": "u-b1-136",
+    "norsk": "sørge for",
+    "lemma": "sørge for",
+    "english": "to make sure, to ensure, to see to it",
+    "ukrainian": "подбати про те, щоб; забезпечити",
+    "spanish": "asegurarse de, encargarse de",
+    "german": "dafür sorgen, sicherstellen",
+    "example": "Sørg for at alle har fått informasjonen.",
+    "example_english": "Make sure that everyone has received the information.",
+    "example_ukrainian": "Подбай про те, щоб усі отримали інформацію.",
+    "example_spanish": "Asegúrate de que todos hayan recibido la información.",
+    "example_german": "Sorge dafür, dass alle die Information bekommen haben.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-137",
     "norsk": "ta alvorlig",
     "lemma": "ta alvorlig",
@@ -2073,6 +2379,42 @@
     "theme": "society"
   },
   {
+    "id": "u-b1-140",
+    "norsk": "ta fatt på",
+    "lemma": "ta fatt på",
+    "english": "to embark on, to set about",
+    "ukrainian": "братися до, розпочинати",
+    "spanish": "emprender, ponerse a",
+    "german": "sich an etwas machen, etwas in Angriff nehmen",
+    "example": "Vi tok fatt på den lange vandringen tidlig om morgenen.",
+    "example_english": "We embarked on the long hike early in the morning.",
+    "example_ukrainian": "Ми взялися до тривалого походу рано-вранці.",
+    "example_spanish": "Emprendimos la larga caminata temprano por la mañana.",
+    "example_german": "Wir machten uns früh am Morgen an die lange Wanderung.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-141",
+    "norsk": "ta hensyn til",
+    "lemma": "ta hensyn til",
+    "english": "to take into consideration, to show consideration for",
+    "ukrainian": "брати до уваги, зважати на",
+    "spanish": "tener en cuenta, considerar",
+    "german": "Rücksicht nehmen auf, berücksichtigen",
+    "example": "Vi må ta hensyn til alle i gruppen.",
+    "example_english": "We must take everyone in the group into consideration.",
+    "example_ukrainian": "Ми повинні зважати на всіх у групі.",
+    "example_spanish": "Debemos tener en cuenta a todos los miembros del grupo.",
+    "example_german": "Wir müssen auf alle in der Gruppe Rücksicht nehmen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-142",
     "norsk": "ta initiativ",
     "lemma": "ta initiativ",
@@ -2089,6 +2431,24 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "workplace"
+  },
+  {
+    "id": "u-b1-143",
+    "norsk": "ta kontroll",
+    "lemma": "ta kontroll",
+    "english": "to take control, to take charge",
+    "ukrainian": "брати контроль, взяти ситуацію під контроль",
+    "spanish": "tomar el control, hacerse cargo",
+    "german": "die Kontrolle übernehmen",
+    "example": "Hun tok kontroll over situasjonen raskt og effektivt.",
+    "example_english": "She took control of the situation quickly and effectively.",
+    "example_ukrainian": "Вона швидко й ефективно взяла ситуацію під контроль.",
+    "example_spanish": "Tomó el control de la situación de forma rápida y eficaz.",
+    "example_german": "Sie übernahm schnell und effektiv die Kontrolle über die Situation.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-144",
@@ -2109,6 +2469,24 @@
     "theme": "personal-growth"
   },
   {
+    "id": "u-b1-145",
+    "norsk": "ta tak i",
+    "lemma": "ta tak i",
+    "english": "to address, to tackle, to deal with",
+    "ukrainian": "взятися за, вирішувати (проблему)",
+    "spanish": "abordar, hacer frente a, tratar",
+    "german": "sich einer Sache annehmen, ein Problem angehen",
+    "example": "Vi må ta tak i dette problemet nå.",
+    "example_english": "We need to tackle this problem now.",
+    "example_ukrainian": "Нам потрібно взятися за цю проблему зараз.",
+    "example_spanish": "Tenemos que abordar este problema ahora.",
+    "example_german": "Wir müssen dieses Problem jetzt angehen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-146",
     "norsk": "ta vare på",
     "lemma": "ta vare på",
@@ -2125,6 +2503,24 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "health"
+  },
+  {
+    "id": "u-b1-147",
+    "norsk": "tenne bål",
+    "lemma": "tenne bål",
+    "english": "to light a bonfire, to make a fire",
+    "ukrainian": "розпалити багаття",
+    "spanish": "encender una hoguera, hacer una fogata",
+    "german": "ein Lagerfeuer machen, ein Feuer anzünden",
+    "example": "Vi tente bål på stranden og grillet pølser.",
+    "example_english": "We lit a bonfire on the beach and grilled sausages.",
+    "example_ukrainian": "Ми розпалили багаття на пляжі й смажили ковбаски.",
+    "example_spanish": "Encendimos una hoguera en la playa y asamos salchichas.",
+    "example_german": "Wir machten am Strand ein Lagerfeuer und grillten Würstchen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-148",
@@ -2526,6 +2922,24 @@
     "theme": "society"
   },
   {
+    "id": "u-b1-170",
+    "norsk": "å bli påvirket",
+    "lemma": "å bli påvirket",
+    "english": "to be influenced, to be affected",
+    "ukrainian": "зазнавати впливу",
+    "spanish": "ser influenciado/a, verse afectado/a",
+    "german": "beeinflusst werden",
+    "example": "Vi blir alle påvirket av de menneskene vi omgir oss med.",
+    "example_english": "We are all influenced by the people we surround ourselves with.",
+    "example_ukrainian": "На нас усіх впливають люди, які нас оточують.",
+    "example_spanish": "Todos nos vemos influenciados por las personas que nos rodean.",
+    "example_german": "Wir alle werden von den Menschen beeinflusst, mit denen wir uns umgeben.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-171",
     "norsk": "å bli undertrykt",
     "lemma": "å bli undertrykt",
@@ -2632,6 +3046,24 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "personal-growth"
+  },
+  {
+    "id": "u-b1-177",
+    "norsk": "å oppfylle et ønske",
+    "lemma": "å oppfylle et ønske",
+    "english": "to fulfil a wish, to grant a wish",
+    "ukrainian": "здійснити бажання",
+    "spanish": "cumplir un deseo, hacer realidad un deseo",
+    "german": "einen Wunsch erfüllen",
+    "example": "Det var hennes drøm å reise til Japan, og til slutt fikk hun oppfylt ønsket.",
+    "example_english": "It was her dream to travel to Japan, and in the end she had her wish fulfilled.",
+    "example_ukrainian": "Її мрією було поїхати до Японії, і зрештою їй вдалося здійснити це бажання.",
+    "example_spanish": "Era su sueño viajar a Japón, y al final pudo cumplir ese deseo.",
+    "example_german": "Es war ihr Traum, nach Japan zu reisen, und schließlich konnte sie sich diesen Wunsch erfüllen.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-178",
@@ -3163,6 +3595,44 @@
     "theme": "personal-growth"
   },
   {
+    "id": "u-b1-206",
+    "norsk": "å ta risiko",
+    "lemma": "å ta risiko",
+    "english": "to take a risk",
+    "ukrainian": "ризикувати",
+    "spanish": "tomar un riesgo, arriesgarse",
+    "german": "ein Risiko eingehen",
+    "example": "Noen ganger må man ta en risiko.",
+    "example_english": "Sometimes one must take a risk.",
+    "example_ukrainian": "Іноді треба ризикувати.",
+    "example_spanish": "A veces hay que arriesgarse.",
+    "example_german": "Manchmal muss man ein Risiko eingehen.",
+    "definition": "Å gjøre noe der utfallet er usikkert, og der det kan gå galt.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
+    "id": "u-b1-207",
+    "norsk": "å gjøre rede for",
+    "lemma": "å gjøre rede for",
+    "english": "to account for",
+    "ukrainian": "звітувати / пояснювати",
+    "spanish": "dar cuenta de, explicar",
+    "german": "Rechenschaft ablegen über / erklären",
+    "example": "Han gjør rede for utgiftene.",
+    "example_english": "He accounts for the expenses.",
+    "example_ukrainian": "Він звітує про витрати.",
+    "example_spanish": "Él da cuenta de los gastos.",
+    "example_german": "Er legt Rechenschaft über die Ausgaben ab.",
+    "definition": "Å forklare noe grundig og vise at man forstår det.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
+  },
+  {
     "id": "u-b1-209",
     "norsk": "å være enig",
     "lemma": "å være enig",
@@ -3180,6 +3650,25 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "opinion-formulas"
+  },
+  {
+    "id": "u-b1-211",
+    "norsk": "å møte opp",
+    "lemma": "å møte opp",
+    "english": "to show up / to meet",
+    "ukrainian": "з'явитися / прийти",
+    "spanish": "aparecer / presentarse",
+    "german": "erscheinen / auftauchen",
+    "example": "Det betyr mye at du møtte opp.",
+    "example_english": "It means a lot that you showed up.",
+    "example_ukrainian": "Дуже важливо, що ти прийшов.",
+    "example_spanish": "Significa mucho que hayas venido.",
+    "example_german": "Es bedeutet viel, dass du erschienen bist.",
+    "definition": "Å komme til et sted eller en avtale slik man har lovet.",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "general"
   },
   {
     "id": "u-b1-212",
