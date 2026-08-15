@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "",
+    "norsk": "i forgårs",
+    "lemma": "i forgårs",
+    "definition": "dagen før i går",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "på det viset",
+    "lemma": "på det viset",
+    "definition": "på den måten",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "du verden",
+    "lemma": "du verden",
+    "definition": "Du verden! brukes for å uttrykke overraskelse",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "for enhver pris",
+    "lemma": "for enhver pris",
+    "definition": "for alt i verden (det er veldig viktig)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "fri og frank",
+    "lemma": "fri og frank",
+    "definition": "uten kjæreste/ektefelle",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i for- og etterkant",
+    "lemma": "i for- og etterkant",
+    "definition": "før og etter",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "på én gang",
+    "lemma": "på én gang",
+    "definition": "samtidig",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "verden står ikke til påske",
+    "lemma": "verden står ikke til påske",
+    "definition": "uttrykket brukes for å vise overraskelse og tro på at «alt» kan skje",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "dråpen som får begeret til å renne over",
+    "lemma": "dråpen som får begeret til å renne over",
+    "definition": "det siste som får en person til å føle at nå er det nok",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "for tiden",
+    "lemma": "for tiden",
+    "definition": "nå",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "så mangt",
+    "lemma": "så mangt",
+    "definition": "så mye forskjellig",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "ingen dans på roser",
+    "lemma": "ingen dans på roser",
+    "definition": "ikke enkelt; vanskelig",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "rett som det var",
+    "lemma": "rett som det var",
+    "definition": "ganske ofte",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "så som så",
+    "lemma": "så som så",
+    "definition": "sånn passe; ikke så god",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i den andre enden",
+    "lemma": "i den andre enden",
+    "definition": "den personen man snakker med i telefonen",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "inntil videre",
+    "lemma": "inntil videre",
+    "definition": "enn så lenge; for en stund til",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "på trykk",
+    "lemma": "på trykk",
+    "definition": "trykket i en avis",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "fra ulike hold",
+    "lemma": "fra ulike hold",
+    "definition": "fra ulike grupper",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "optimalt sett",
+    "lemma": "optimalt sett",
+    "definition": "på best mulig måte",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "«mannen i gata»",
+    "lemma": "«mannen i gata»",
+    "definition": "folk flest",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "knapt med tid",
+    "lemma": "knapt med tid",
+    "definition": "lite tid",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "det er/var på tide",
+    "lemma": "det er/var på tide",
+    "definition": "tiden var inne",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "smått om senn",
+    "lemma": "smått om senn",
+    "definition": "litt etter litt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "en god porsjon",
+    "lemma": "en god porsjon",
+    "definition": "som uttrykk: en stor del",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "lite egnet",
+    "lemma": "lite egnet",
+    "definition": "som ikke passer så bra",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i kjølvannet av",
+    "lemma": "i kjølvannet av",
+    "definition": "i etterkant av",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "så vidt",
+    "lemma": "så vidt",
+    "definition": "bare nesten; kun",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "ytterste fattigdom",
+    "lemma": "ytterste fattigdom",
+    "definition": "verste fattigdom",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "den godeste",
+    "lemma": "den godeste",
+    "definition": "den beste («den godeste» er ugrammatikalsk, men det brukes i dette uttrykket)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "latteren lå og lurte",
+    "lemma": "latteren lå og lurte",
+    "definition": "hun kjente at hun måtte le – og da lå latteren og lurte",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "ett tema om gangen",
+    "lemma": "ett tema om gangen",
+    "definition": "ett og ett tema (ikke flere tema samtidig)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "det hjalp ikke et kvidder",
+    "lemma": "det hjalp ikke et kvidder",
+    "definition": "det hjalp ikke noe",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "riv ruskende galt",
+    "lemma": "riv ruskende galt",
+    "definition": "helt feil",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "en smule",
+    "lemma": "en smule",
+    "definition": "litt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i ett strekk",
+    "lemma": "i ett strekk",
+    "definition": "hele tiden",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "er det på 'n igjen",
+    "lemma": "er det på 'n igjen",
+    "definition": "så begynner man på nytt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "kronen på verket",
+    "lemma": "kronen på verket",
+    "definition": "«prikken over i-en»; det fineste som kommer til slutt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "det brede laget",
+    "lemma": "det brede laget",
+    "definition": "folk flest",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "Dommens dag",
+    "lemma": "Dommens dag",
+    "definition": "dagen da alle mennesker skal dømmes, ifølge kristendommen",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "i ro og mak",
+    "lemma": "i ro og mak",
+    "definition": "i fred og ro",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "flunkende ny",
+    "lemma": "flunkende ny",
+    "definition": "helt ny; skinnende ny",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "på lykke og fromme",
+    "lemma": "på lykke og fromme",
+    "definition": "når man gjøre noe på lykke og fromme, håper man det skal gå bra (selv om man ikke har noen plan)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "til fulle",
+    "lemma": "til fulle",
+    "definition": "hundre prosent",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "det står ikke på viljen",
+    "lemma": "det står ikke på viljen",
+    "definition": "man mangler ikke vilje",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "livets forunderlige gang",
+    "lemma": "livets forunderlige gang",
+    "definition": "livets merkelige prosess",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "nåde meg",
+    "lemma": "nåde meg",
+    "definition": "stakkars meg",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "grensen var nådd",
+    "lemma": "grensen var nådd",
+    "definition": "man var kommet til slutten av det som var mulig",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "like etter",
+    "lemma": "like etter",
+    "definition": "rett etterpå",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "sludder og vrøvl",
+    "lemma": "sludder og vrøvl",
+    "definition": "tull og tøys",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "sørpe full",
+    "lemma": "sørpe full",
+    "definition": "svært alkoholpåvirket",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bli varm om hjertet",
+    "lemma": "bli varm om hjertet",
+    "definition": "å bli veldig glad og ha det godt inni seg",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ta seg en liten runde",
+    "lemma": "ta seg en liten runde",
+    "definition": "å gå en liten tur",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å fylle år",
+    "lemma": "fylle år",
+    "definition": "å bli ett år mer; ha fødselsdag",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å få lov til",
+    "lemma": "få lov til",
+    "definition": "å få tillatelse til",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gi uttrykk for",
+    "lemma": "gi uttrykk for",
+    "definition": "å uttrykke; å si",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å skravle i vei",
+    "lemma": "skravle i vei",
+    "definition": "å snakke så mye man har lyst til",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "det kommer an på",
+    "lemma": "det kommer an på",
+    "definition": "det er avhengig av",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "regnet pøser ned",
+    "lemma": "regnet pøser ned",
+    "definition": "det regner veldig mye",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å få kabalen til å gå opp",
+    "lemma": "få kabalen til å gå opp",
+    "definition": "uttrykk: å klare å rekke alle oppgavene og aktivitetene i hverdagen",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å komme seg på beina igjen",
+    "lemma": "komme seg på beina igjen",
+    "definition": "å bli frisk igjen",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å se dagens lys",
+    "lemma": "se dagens lys",
+    "definition": "å bli født",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å være i full sving",
+    "lemma": "være i full sving",
+    "definition": "å være veldig aktiv",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å dumpe innom",
+    "lemma": "dumpe innom",
+    "definition": "å komme inn (kanskje litt plutselig)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ha fore",
+    "lemma": "ha fore",
+    "definition": "å gjøre; å drive med",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å kjøpe for en slikk og ingenting",
+    "lemma": "kjøpe for en slikk og ingenting",
+    "definition": "å kjøpe noe nesten gratis",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å stå på døgnet rundt",
+    "lemma": "stå på døgnet rundt",
+    "definition": "å være aktiv / jobbe hele tiden",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å få kjennskap til",
+    "lemma": "få kjennskap til",
+    "definition": "å få vite om",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å pusle med sitt",
+    "lemma": "pusle med sitt",
+    "definition": "å drive på med noe for seg selv",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å trekke på skuldrene",
+    "lemma": "trekke på skuldrene",
+    "definition": "å uttrykke at man ikke vet svaret på noe",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å hogge i vei",
+    "lemma": "hogge i vei",
+    "definition": "å angripe",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å skrive seg fra",
+    "lemma": "skrive seg fra",
+    "definition": "å stamme/komme fra (ikke brukt om personer)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å tenke i samme baner",
+    "lemma": "tenke i samme baner",
+    "definition": "å tenke på samme måte",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å stå i samsvar med",
+    "lemma": "stå i samsvar med",
+    "definition": "å være i overensstemmelse med; å passe sammen med",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å sette i gang med",
+    "lemma": "sette i gang med",
+    "definition": "å starte med",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å si rett ut",
+    "lemma": "si rett ut",
+    "definition": "å snakke direkte",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å få igjen på skatten",
+    "lemma": "få igjen på skatten",
+    "definition": "penger man får tilbake fordi man har betalt inn for mye skatt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å få inn med morsmelka",
+    "lemma": "få inn med morsmelka",
+    "definition": "det man lærer helt fra man er liten, får man inn med morsmelka",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å rekke opp hånda",
+    "lemma": "rekke opp hånda",
+    "definition": "å løfte hånda for å svare eller kommentere",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å sperre øynene opp",
+    "lemma": "sperre øynene opp",
+    "definition": "å åpne øynene vidt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å stå i spissen for",
+    "lemma": "stå i spissen for",
+    "definition": "å være leder for",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ta seg til",
+    "lemma": "ta seg til",
+    "definition": "å gjøre",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bli noe av",
+    "lemma": "bli noe av",
+    "definition": "å bli realisert",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å se seg nødt til",
+    "lemma": "se seg nødt til",
+    "definition": "å forstå at man må",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ha en skrøne på lager",
+    "lemma": "ha en skrøne på lager",
+    "definition": "å ha en morsom (ofte usann) historie man kan fortelle",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å sitte hensunket i sine egne tanker",
+    "lemma": "sitte hensunket i sine egne tanker",
+    "definition": "å være veldig konsentrert om sine egne tanker",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gripe fatt i",
+    "lemma": "gripe fatt i",
+    "definition": "å ta tak i",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å klø seg i hodet",
+    "lemma": "klø seg i hodet",
+    "definition": "å tenke hardt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å stå på hodet",
+    "lemma": "stå på hodet",
+    "definition": "å anstrenge seg for å klare noe",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å sy puter under armene på noen",
+    "lemma": "sy puter under armene på noen",
+    "definition": "å hjelpe noen for mye",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "gulvet ga etter",
+    "lemma": "gulvet ga etter",
+    "definition": "gulvet «forsvant» under henne",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å forsvinne som dugg for solen",
+    "lemma": "forsvinne som dugg for solen",
+    "definition": "å forsvinne veldig fort",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å snu opp ned",
+    "lemma": "snu opp ned",
+    "definition": "å snu på hodet",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å synke ned i et sort hull",
+    "lemma": "synke ned i et sort hull",
+    "definition": "når man opplever en stor sorg, kan man føle at man synker ned i et sort hull",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å få en merkelapp festet på seg",
+    "lemma": "få en merkelapp festet på seg",
+    "definition": "å bli stemplet/kategorisert",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gå helhjertet inn i et forhold",
+    "lemma": "gå helhjertet inn i et forhold",
+    "definition": "å mene alvor når man innleder en ny relasjon",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gå i glemmeboka",
+    "lemma": "gå i glemmeboka",
+    "definition": "å glemme",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å løpe med halen mellom beina",
+    "lemma": "løpe med halen mellom beina",
+    "definition": "å forsvinne fra et sted fordi man er redd eller flau",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å fatte seg i korthet",
+    "lemma": "fatte seg i korthet",
+    "definition": "å ikke si mer enn nødvendig",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å gå fra sans og samling",
+    "lemma": "gå fra sans og samling",
+    "definition": "å bli gal",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ha på tapetet",
+    "lemma": "ha på tapetet",
+    "definition": "å ha på programmet; ha planer om",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å leve i pakt med naturen",
+    "lemma": "leve i pakt med naturen",
+    "definition": "å leve i balanse med naturen",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å stupe i seng",
+    "lemma": "stupe i seng",
+    "definition": "å legge seg raskt",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å vippe noen av pinnen",
+    "lemma": "vippe noen av pinnen",
+    "definition": "å gjøre noen forvirret og overrasket",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bli vartet opp",
+    "lemma": "bli vartet opp",
+    "definition": "å bli passet godt på",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å snakke i tunger",
+    "lemma": "snakke i tunger",
+    "definition": "å snakke på fremmede språk (uten at man har lært språket)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ta for god fisk",
+    "lemma": "ta for god fisk",
+    "definition": "å tro på at noe er sant",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å vri på ordene",
+    "lemma": "vri på ordene",
+    "definition": "å tolke ordene på en annen måte enn slik de var ment",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "smerten rev gjennom meg",
+    "lemma": "smerten rev gjennom meg",
+    "definition": "det gjorde vondt i hele meg",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bringe noen ut av fatning",
+    "lemma": "bringe noen ut av fatning",
+    "definition": "å få noen til å miste kontrollen",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å se til å",
+    "lemma": "se til å",
+    "definition": "å måtte",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å falle på plass",
+    "lemma": "falle på plass",
+    "definition": "å bli bra",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ligge til rette for",
+    "lemma": "ligge til rette for",
+    "definition": "å være klart for",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å starte på ny frisk",
+    "lemma": "starte på ny frisk",
+    "definition": "å starte på nytt (med nye sjanser)",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "et langt lerret å bleke",
+    "lemma": "et langt lerret å bleke",
+    "definition": "en lang vei å gå",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å slippe taket",
+    "lemma": "slippe taket",
+    "definition": "å gå sin vei",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å dra dit pepperen gror",
+    "lemma": "dra dit pepperen gror",
+    "definition": "å dra veldig langt bort",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å holde munn",
+    "lemma": "holde munn",
+    "definition": "å være stille",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å pakke snippesken sin",
+    "lemma": "pakke snippesken sin",
+    "definition": "å pakke tingene sine",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å tie stille",
+    "lemma": "tie stille",
+    "definition": "å være stille",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å be tynt for seg",
+    "lemma": "be tynt for seg",
+    "definition": "å be på en insisterende måte",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å bære seg så det ikke er måte på",
+    "lemma": "bære seg så det ikke er måte på",
+    "definition": "å være veldig dramatisk",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å koke over for noen",
+    "lemma": "koke over for noen",
+    "definition": "å bli for sint; komme ut av kontroll",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å smelle til rett i ansiktet",
+    "lemma": "smelle til rett i ansiktet",
+    "definition": "å slå midt i fjeset",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å være ute på en snurr",
+    "lemma": "være ute på en snurr",
+    "definition": "å være ute for å drikke",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  },
+  {
+    "id": "",
+    "norsk": "å ville noen vel",
+    "lemma": "ville noen vel",
+    "definition": "å ønske at det går bra for noen",
+    "level": "B1",
+    "category": "uttrykk",
+    "part": "phrase"
+  }
+]

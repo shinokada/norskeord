@@ -2,7 +2,7 @@
 title: B1 Vocab Uttrykk Opp og Fram Arbeidsbok
 reference: draft/b1/opp-og-fram-arbeidsbok
 data-started: 2026-08-12
-data-completed: 2026-
+data-completed: 2026-08-14
 ---
 
 # Plan: Vocab & uttrykk extraction from *Opp og fram!* arbeidsbok
@@ -81,12 +81,12 @@ Once you've spot-checked `candidates-near-duplicate.json`, next step is step 3 i
 
 All of `candidates-new.json` (855) has now been classified using `data-rules/vocab-and-uttrykk.md`:
 
-| Output file | Count | What it is |
-|---|---|---|
-| `candidates-uttrykk.json` | 50 | reflexive/idiom-shaped phrases → uttrykk-b1.json target |
-| `candidates-review-idiom-verbs.json` | 139 | verb phrases that look idiomatic rather than a productive verb+object (e.g. `å bli varm om hjertet`) — needs your yes/no per item before either file |
-| `candidates-excluded.json` | 4 | proper nouns / curriculum jargon (`Volvo`, `RLE`, `femte gym`, a garbled participle note) — drop entirely |
-| `candidates-vocab.json` | 756 | vocab-b1.json target (see below) |
+| Output file                          | Count | What it is                                                                                                                                           |
+| ------------------------------------ | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `candidates-uttrykk.json`            | 50    | reflexive/idiom-shaped phrases → uttrykk-b1.json target                                                                                              |
+| `candidates-review-idiom-verbs.json` | 139   | verb phrases that look idiomatic rather than a productive verb+object (e.g. `å bli varm om hjertet`) — needs your yes/no per item before either file |
+| `candidates-excluded.json`           | 4     | proper nouns / curriculum jargon (`Volvo`, `RLE`, `femte gym`, a garbled participle note) — drop entirely                                            |
+| `candidates-vocab.json`              | 756   | vocab-b1.json target (see below)                                                                                                                     |
 
 Key decisions applied:
 - **Particle verbs (løst sammensatt) → vocab**, not uttrykk — followed `data-rules/vocab-and-uttrykk.md` (its own example: `slå av`), overriding the original step-1 boundary rule. This moved ~58 particle verbs into vocab.
@@ -114,38 +114,38 @@ It assembles: 673 base (855 − 50 uttrykk − 139 review − 4 excluded) + 12 k
 
 ### Decisions log (going through `candidates-review-idiom-verbs.json` in batches of 15)
 
-| # | raw_term (ch.) | Decision |
-|---|---|---|
-| 1 | å bli varm om hjertet (1) | uttrykk |
-| 2 | å ha krefter til (1) | vocab |
-| 3 | å ta seg en liten runde (1) | uttrykk |
-| 4 | å fylle år (2) | uttrykk |
-| 5 | å tåle kulde (2) | vocab |
-| 6 | å folde seg ut (3) | vocab |
-| 7 | å få lov til (3) | uttrykk |
-| 8 | å utforske tilværelsen (3) | vocab |
-| 9 | å gi uttrykk for (4) | uttrykk |
-| 10 | å skravle i vei (4) | uttrykk |
-| 11 | det kommer an på (5) | uttrykk |
-| 12 | regnet pøser ned (5) | uttrykk |
-| 13 | å bære på en hemmelighet (5) | vocab |
-| 14 | å få kabalen til å gå opp (6) | uttrykk |
-| 15 | å komme seg på beina igjen (6) | uttrykk |
-| 16 | å se dagens lys (6) | uttrykk |
-| 17 | å være i full sving (6) | uttrykk |
-| 18 | å dumpe innom (7) | uttrykk |
-| 19 | å ha fore (7) | uttrykk |
-| 20 | å innta en bedre frokost (7) | vocab |
-| 21 | å kjøpe for en slikk og ingenting (7) | uttrykk |
-| 22 | å stå på døgnet rundt (7) | uttrykk |
-| 23 | å avlegge en visitt (8) | vocab |
-| 24 | å få kjennskap til (10) | uttrykk |
-| 25 | å pusle med sitt (10) | uttrykk |
-| 26 | å tvinge seg på (10) | vocab |
-| 27 | å stride mot loven (12) | vocab |
-| 28 | å trekke på skuldrene (12) | uttrykk |
-| 29 | å hogge i vei (13) | uttrykk |
-| 30 | å skrive seg fra (13) | uttrykk |
+| #   | raw_term (ch.)                        | Decision |
+| --- | ------------------------------------- | -------- |
+| 1   | å bli varm om hjertet (1)             | uttrykk  |
+| 2   | å ha krefter til (1)                  | vocab    |
+| 3   | å ta seg en liten runde (1)           | uttrykk  |
+| 4   | å fylle år (2)                        | uttrykk  |
+| 5   | å tåle kulde (2)                      | vocab    |
+| 6   | å folde seg ut (3)                    | vocab    |
+| 7   | å få lov til (3)                      | uttrykk  |
+| 8   | å utforske tilværelsen (3)            | vocab    |
+| 9   | å gi uttrykk for (4)                  | uttrykk  |
+| 10  | å skravle i vei (4)                   | uttrykk  |
+| 11  | det kommer an på (5)                  | uttrykk  |
+| 12  | regnet pøser ned (5)                  | uttrykk  |
+| 13  | å bære på en hemmelighet (5)          | vocab    |
+| 14  | å få kabalen til å gå opp (6)         | uttrykk  |
+| 15  | å komme seg på beina igjen (6)        | uttrykk  |
+| 16  | å se dagens lys (6)                   | uttrykk  |
+| 17  | å være i full sving (6)               | uttrykk  |
+| 18  | å dumpe innom (7)                     | uttrykk  |
+| 19  | å ha fore (7)                         | uttrykk  |
+| 20  | å innta en bedre frokost (7)          | vocab    |
+| 21  | å kjøpe for en slikk og ingenting (7) | uttrykk  |
+| 22  | å stå på døgnet rundt (7)             | uttrykk  |
+| 23  | å avlegge en visitt (8)               | vocab    |
+| 24  | å få kjennskap til (10)               | uttrykk  |
+| 25  | å pusle med sitt (10)                 | uttrykk  |
+| 26  | å tvinge seg på (10)                  | vocab    |
+| 27  | å stride mot loven (12)               | vocab    |
+| 28  | å trekke på skuldrene (12)            | uttrykk  |
+| 29  | å hogge i vei (13)                    | uttrykk  |
+| 30  | å skrive seg fra (13)                 | uttrykk  |
 
 | 31 | å tenke i samme baner (13) | uttrykk |
 | 32 | å stå i samsvar med (14) | uttrykk |
@@ -308,3 +308,112 @@ Net effect: `general` theme count 58 → ~14 (state/condition cluster + genuine 
 - ✅ **Run on the real repo** — dry-run confirmed exact match with sandbox, then run for real: `uttrykk-b1.json` 211 → 184, `vocab-b1.json` 1,216 → 1,243. `.bak` backups written automatically.
 
 ✅ **Section 11 complete.** `general` theme count reduced from 58 to ~14. Ready to commit.
+
+## 12. Step 4 — Schema enrichment: parsing candidates into Step-1 shape
+
+Instead of a bespoke enrichment script, this project already has a reusable pipeline (`ai-docs/instructions/work-flow.md` + `scripts/enrich-vocab.mjs --level {level}` + `scripts/assign-ids.mjs` + `scripts/merge-to-production.mjs`) that just needs Step 1 input in the shape `{id, norsk, lemma, definition, level, part, category}` at `draft/{level}/extracted-vocab-{level}.json` / `extracted-uttrykk-{level}.json`.
+
+Wrote `scripts/parse-opp-og-fram-candidates.mjs` — a deterministic, non-API "Step 1" script that reads `candidates-vocab.json`/`candidates-uttrykk.json` (§8/§9 above) and applies the same conventions as `image-converter-c.md` Rules 2/4/5 (gender shorthand → (en)/(et)/(pl.), verb shorthand → part: verb with marker stripped, å-prefix handling, lemma derivation, markdown/`her:` cleanup on definitions). Full rule breakdown is in the script's header comment.
+
+Two things it caught that weren't previously flagged:
+- **2 genuine cross-file duplicates**: "å bli varm om hjertet" and "å ta seg en liten runde" each existed in *both* `candidates-vocab.json` (as a bold-markdown near-duplicate copy) and `candidates-uttrykk.json` (via the §9 review decision, correctly "uttrykk"). Dropped from the vocab side.
+- `candidates-uttrykk.json` has a leftover `"part": "verb"` artifact from `apply-review-decisions.mjs` on 75 of its 125 entries — ignored; every uttrykk entry is written with `part: "phrase"`, `category: "uttrykk"`, matching production.
+
+For the ~180 compound-verb-table/derived-noun entries with no real dictionary definition in the source (only a cross-reference), auto-generated a simple Bokmål gloss per the user's decision: `"Betyr det samme som å X."` for fast/løst sammensatt pairs, `"Substantivet av å X."` for derived nouns.
+
+✅ **Verified in sandbox** (Python prototype + Node port produced byte-identical output) and **run on the real repo**:
+
+```
+node scripts/parse-opp-og-fram-candidates.mjs --dry-run   # 811→809 vocab, 125→125 uttrykk, 4 flags
+node scripts/parse-opp-og-fram-candidates.mjs
+```
+
+Output: `draft/b1/extracted-vocab-b1.json` (809), `draft/b1/extracted-uttrykk-b1.json` (125), `draft/b1/opp-og-fram-arbeidsbok/data/parse-flags.json` (4 minor edge cases, all resolved with a sensible default — not blocking):
+- `å minnes (-ntes, -ntes)` — unrecognized marker, defaulted to verb (already å-prefixed) — correct.
+- `rot (f/m) – røtter` — dropped trailing irregular-plural note "røtter" (not stored, matches schema) — correct.
+- `nedbrytning`, `utlysing` — derived nouns missing a gender marker in the source table, defaulted to `(en)` — worth a quick manual check against ordbokene.no before merge, but not urgent.
+
+### Step 2 — enrichment (API, run locally by the user) — ✅ COMPLETE
+
+- `vocab-b1-new.json`: 807 entries (all 809 extracted lemmas accounted for — 2 are a duplicate pair within `extracted-vocab-b1.json` itself, to be resolved by `find_dupes.py` in Step 3).
+- `uttrykk-b1-new.json`: 125/125 entries. `«mannen i gata»` succeeded after the guillemet-regex fix below.
+
+🐛 **Bug found: `callClaude()`'s quote-cleanup regex was corrupting guillemets.** It stripped `„ “ ” « » ‘ ’` → `'` from the raw API response before parsing — intended to normalize stray smart quotes in model-generated text, but it also hit `« »` (U+00AB/00BB), which appear verbatim in real lemmas like `«mannen i gata»`. The model returned the lemma correctly; the cleanup step then turned it into `'mannen i gata'`, which no longer matched the batch entry. **Fixed:** removed `« »` from the regex.
+
+🛠️ **Other hardening done during this step** (in `scripts/enrich-vocab.mjs`):
+1. Checkpoint-per-batch writes (was: written once at the very end — a Ctrl+C mid-run would have lost all completed batches' API spend with nothing saved).
+2. `max_tokens` 4096 → 8192 (batches were close to the ceiling — truncation risk).
+3. Guard against a model-returned `lemma` with no match in the batch (previously silently fell back to `{}`).
+4. Step-1 parser artifact fixed in `extracted-uttrykk-b1.json`: `å be tynt for seg – har bedt)` → `å be tynt for seg`.
+
+### Step 3 — dedupe + validation
+
+⚠️ **Correction to my earlier instructions**: `find_dupes.py` takes no file argument — it scans a hardcoded file list in the script, with draft files commented out. Uncommented the `B1-draft` / `B1-uttrykk-draft` lines so it now also scans the new files (remember to re-comment after merging so future runs don't scan a stale file). Also: the validation scripts are `check-vocab.ts` / `check-uttrykk.ts` (TypeScript, via `npx tsx`), not `.mjs` — corrected in commands below.
+
+✅ **`find_dupes.py` results** (9636 entries across all production files + B1 draft):
+- Cross-file (9): mostly expected — same word appearing at B1 and a higher level (e.g. `å anstrenge seg`, `å forestille seg`) or pre-existing production overlap (`søkemotor`). Not necessarily bugs — project may allow a word to recur at multiple levels with different depth/context.
+- Within-file (2): `å rekke` (pre-existing in C, unrelated to this batch) and **`å by på` appears twice in B1-draft** (`cooking` vs `communication-skills` category) — needs review: two genuine senses, or a dupe to merge?
+- Normalized (45): mostly expected cross-level noun/verb-form pairs. Two involve the B1 draft specifically and need review: **`snu opp ned` (B2-uttrykk) vs `å snu opp ned` (B1-uttrykk-draft)**, and **`tie stille` (existing B1-uttrykk) vs `å tie stille` (B1-uttrykk-draft)** — likely true duplicates via the å-prefix convention.
+
+⏳ **Not yet resolved**: the 3 B1-draft-specific dupes above (`å by på`, `snu opp ned`/`å snu opp ned`, `tie stille`/`å tie stille`). Next session: pull full side-by-side entries from `scripts/outputs/find-dupes-details.txt` and decide keep/merge/drop for each before proceeding to Step 4.
+
+✅ **`check-vocab.ts b1 --draft`**: found and fixed 2 errors — `glansdager` and `uskrevne lover` are plurale tantum (no natural singular sense) missing the `(pl.)` marker required by the norsk-field formatting rule. Fixed to `glansdager (pl.)` / `uskrevne lover (pl.)` (lemma stays bare plural, matching the established `forfedre (pl.)` convention). Re-run to confirm clean:
+```
+npx tsx scripts/check-vocab.ts b1 --draft
+```
+
+✅ **`check-uttrykk.ts b1 --draft`**: 0 errors, 0 warnings — clean.
+
+### Next
+1. Confirm `check-vocab.ts b1 --draft` now passes clean.
+2. Resolve the 3 outstanding dupes above.
+3. Re-comment the `B1-draft` lines in `find_dupes.py` once B1 is merged.
+4. Step 4: `node scripts/assign-ids.mjs b1` → Step 5: `node scripts/merge-to-production.mjs` (see `work-flow.md`).
+
+---
+
+### Dupe resolution — ✅ COMPLETE
+
+Decision (per user): remove all 3 categories of B1-draft-specific duplicates rather than keep any.
+
+**Vocab (807 → 801, 6 removed from `vocab-b1-new.json`):**
+- `å by på` (cooking sense, category `cooking`) — within-file dupe; kept the broader `communication-skills` sense ("to offer/provide an opportunity for"), dropped the narrower food-specific one.
+- `å anstrenge seg`, `å forestille seg`, `å rykke til`, `å segne om`, `å tilegne seg` — cross-level near-duplicates, same core meaning already covered at B2/C. Dropped from B1-draft per user decision (keep the higher-level entry only).
+
+**Uttrykk (125 → 121, 4 removed from `uttrykk-b1-new.json`):**
+- `flunkende ny`, `snu opp ned`, `vippe noen av pinnen` — cross-level near-duplicates (C-uttrykk / B2-uttrykk already cover these).
+- `tie stille` — exact duplicate, already exists in production `uttrykk-b1.json` (u-b1-148); this was leftover from an earlier session's verb+prep migration work, not new content.
+
+🐛 **New finding, worth a broader sweep later**: the removed `å segne om` entry had **Cyrillic homoglyph characters** (`е` U+0435, `г` U+0433) silently substituted into its Norwegian example sentence — `sегnet` instead of `segnet`. Invisible in normal viewing, byte-identical-looking, but would break exact-string search/FSRS lookups if it reached production. Since this specific entry is now deleted it's not a live issue, but the same corruption could exist elsewhere in enrichment output from this or earlier sessions. Recommend a dedicated non-ASCII-in-Norwegian-field scanner across `vocab-b1-new.json` / `uttrykk-b1-new.json` (and ideally production files) before or shortly after merge.
+
+### Post-removal re-validation — ✅ COMPLETE
+
+- `check-vocab.ts b1 --draft`: 801 entries, 0 errors, 0 warnings. ✅
+- `check-uttrykk.ts b1 --draft`: 121 entries, 0 errors, 0 warnings. ✅
+- `find_dupes.py` re-run (9626 entries across production + B1 draft): cross-file dupes down to 2, within-file down to 1 — **neither involves B1-draft** (both are pre-existing production overlaps: `søkemotor` B1/B2, `tid` A2/C, `å rekke` within C). Normalized dupes (43) scanned — none involve B1-draft either. **All 3 previously-flagged B1-draft dupes are confirmed resolved; no B1-draft duplicates remain.**
+
+✅ **Step 3 (dedupe + validation) is now fully complete.**
+
+### Steps 4 — assign-ids, diacritic check, Step 5 dry-run — ✅ COMPLETE
+
+- `assign-ids.mjs b1`: ran clean (confirmed indirectly — merge dry-run below shows all entries have valid ids, which assign-ids.mjs is required to have set; merge would abort otherwise).
+- `find-diacritic-issues-all.mjs b1 --dir prod`: **0 flagged** across both files. Clean.
+- `merge-to-production.mjs b1 --dry-run`:
+  - `vocab-b1-new.json` (801) → `vocab-b1.json` (1243 → 2044)
+  - `uttrykk-b1-new.json` (121) → `uttrykk-b1.json` (184 → 305)
+  - No id collisions, no lemma-collision warnings. All 922 entries ready to merge.
+
+### Merge — ✅ COMPLETE (2026-08-14)
+
+```
+node scripts/merge-to-production.mjs b1
+```
+- `vocab-b1.json`: 1243 → **2044** entries. `.bak` written. `vocab-b1-new.json` → `.merged`.
+- `uttrykk-b1.json`: 184 → **305** entries. `.bak` written. `uttrykk-b1-new.json` → `.merged`.
+- Re-commented the `B1-draft` / `B1-uttrykk-draft` lines in `find_dupes.py` (both now inactive again, matching the other levels).
+
+### Remaining (optional, not blocking)
+1. Spot-check a few of the newly merged entries in the running app.
+2. Cyrillic-homoglyph sweep (non-ASCII lookalike chars found once in enrichment output, in an entry that was since deleted) — worth a dedicated scanner across production files at some point, separate session.
+
+✅ **Project complete.** The "Opp og fram!" arbeidsbok B1 vocab/uttrykk extraction — from textbook mining (§1–9) through category decisions (§10), uttrykk `general`-bucket cleanup (§11), schema enrichment (§12), dedupe/validation, ID assignment, and production merge — is done.

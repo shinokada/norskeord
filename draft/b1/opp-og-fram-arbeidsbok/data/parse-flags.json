@@ -1,0 +1,18 @@
+[
+  {
+    "raw_term": "**å minnes** (-ntes, -ntes)",
+    "reason": "unrecognized marker \"-ntes, -ntes\", defaulted to verb (already å-prefixed)"
+  },
+  {
+    "raw_term": "rot (f/m) – røtter",
+    "reason": "dropped trailing alt-form \"røtter\""
+  },
+  {
+    "raw_term": "nedbrytning",
+    "reason": "derived-noun missing gender marker, defaulted to en"
+  },
+  {
+    "raw_term": "utlysing",
+    "reason": "derived-noun missing gender marker, defaulted to en"
+  }
+]
