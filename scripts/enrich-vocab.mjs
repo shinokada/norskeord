@@ -440,7 +440,11 @@ async function callClaude(prompt) {
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
-      max_tokens: 4096,
+      // Headroom for a batch of 10 words, each with up to 11 fields
+      // (4 translations + 5 example_* translations + category + example).
+      // 4096 was tight enough to risk truncation -> JSON.parse failure ->
+      // a wasted retry of the whole batch; 8192 gives real margin.
+      max_tokens: 8192,
       messages: [{ role: 'user', content: prompt }]
     })
   });
@@ -455,7 +459,14 @@ async function callClaude(prompt) {
   const clean = text
     .replace(/^```(?:json)?\n?/m, '')
     .replace(/\n?```$/m, '')
-    .replace(/[„\u201C\u201D\u00AB\u00BB\u2018\u2019]/g, "'")
+    // Only normalize actual "smart"/curly quotes the model might slip in
+    // for NEW text (translations/examples) per the prompt's ASCII-quotes
+    // rule. Guillemets (« », U+00AB/00BB) are deliberately excluded —
+    // they're legitimate Norwegian punctuation that appears verbatim in
+    // source lemmas (e.g. «mannen i gata»), and converting them to straight
+    // quotes here silently corrupted the lemma so it no longer matched the
+    // batch entry, causing a false "doesn't match any entry" skip.
+    .replace(/[„\u201C\u201D\u2018\u2019]/g, "'")
     .trim();
 
   try {
@@ -657,6 +668,13 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
   }
 
   const results = new Map();
+  // Checkpoint array — starts as whatever was already on disk, grows by one
+  // batch's worth at a time, and is flushed to outPath after EVERY batch
+  // (not just once at the end). This means a Ctrl+C or crash mid-run only
+  // loses the single in-flight batch — everything already written is safe,
+  // and the next invocation's alreadyEnriched() lemma-skip picks up right
+  // where this one stopped, without re-paying for completed batches.
+  const combined = [...existingOutput];
 
   for (let i = 0; i < batches.length; i++) {
     const batch = batches[i];
@@ -668,6 +686,7 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
     const batchByLemma = new Map(batch.map((e) => [e.lemma, e]));
     let hits = 0;
     let autoFixed = 0;
+    const batchMerged = [];
     for (const item of generated) {
       if (!item.lemma) {
         console.warn(`\n    ⚠️  Result missing "lemma" — cannot match to an entry, skipping`);
@@ -682,11 +701,17 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
       }
 
       const extractedEntry = batchByLemma.get(item.lemma);
+      if (!extractedEntry) {
+        console.warn(
+          `\n    ⚠️  Result lemma="${item.lemma}" doesn't match any entry in this batch — skipping`
+        );
+        continue;
+      }
       const {
         item: correctedItem,
         fixedNotes,
         ambiguousNotes
-      } = correctGeneratedItem(extractedEntry ?? {}, item);
+      } = correctGeneratedItem(extractedEntry, item);
       if (fixedNotes.length > 0) {
         autoFixed++;
         console.warn(`\n    🔧  Auto-corrected lemma="${item.lemma}":`);
@@ -698,11 +723,19 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
       }
 
       results.set(item.lemma, correctedItem);
+      batchMerged.push(mergeEntry(extractedEntry, correctedItem, isExpression));
       hits++;
     }
     console.log(
       `✓ (${hits}/${batch.length} enriched${autoFixed > 0 ? `, ${autoFixed} auto-corrected` : ''})`
     );
+
+    // Checkpoint write — persist this batch's results immediately.
+    if (batchMerged.length > 0) {
+      combined.push(...batchMerged);
+      fs.mkdirSync(path.dirname(outPath), { recursive: true });
+      fs.writeFileSync(outPath, JSON.stringify(combined, null, 2) + '\n', 'utf8');
+    }
 
     // Update running category counts so later batches in the same run
     // still favor under-represented categories.
@@ -719,22 +752,14 @@ async function processSet({ label, extractedPath, outPath, isExpression, buildPr
     }
   }
 
-  const merged = [];
   const missing = [];
   for (const e of toEnrich) {
-    const generated = results.get(e.lemma);
-    if (!generated) {
-      missing.push(e.lemma);
-      continue;
-    }
-    merged.push(mergeEntry(e, generated, isExpression));
+    if (!results.has(e.lemma)) missing.push(e.lemma);
   }
 
-  const combined = [...existingOutput, ...merged];
-  fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, JSON.stringify(combined, null, 2) + '\n', 'utf8');
-
-  console.log(`    ✅  Appended ${merged.length} entries. Total in file now: ${combined.length}.`);
+  console.log(
+    `    ✅  Appended ${combined.length - existingOutput.length} entries. Total in file now: ${combined.length}.`
+  );
   console.log(`    → ${outPath}`);
 
   if (missing.length > 0) {
