@@ -149,7 +149,10 @@ function parseVokabularEntry(rawTerm, isUttrykk) {
   const text = stripMarkdown(rawTerm);
   const groups = [...text.matchAll(/\(([^)]*)\)/g)].map((m) => classifyGroup(m[1]));
 
-  let noParen = text.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+  let noParen = text
+    .replace(/\([^)]*\)/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 
   // Drop a stray trailing alt-form after an en-dash outside any parens,
   // e.g. "rot  – røtter" -> "rot" (irregular plural, not stored). Only
@@ -290,7 +293,10 @@ function buildVocab(candidates) {
           });
         }
       } else {
-        FLAGS.push({ raw_term: raw, reason: 'derived-noun missing gender marker, defaulted to en' });
+        FLAGS.push({
+          raw_term: raw,
+          reason: 'derived-noun missing gender marker, defaulted to en'
+        });
       }
       const norsk = `${base} (${gender})`;
       const lemma = base;
@@ -337,7 +343,9 @@ function main() {
     console.log(`    Dropped as cross-file duplicates (see header note):`);
     for (const s of skipped) console.log(`      - ${s}`);
   }
-  console.log(`📄  candidates-uttrykk.json: ${candidatesUttrykk.length} in -> ${uttrykk.length} out`);
+  console.log(
+    `📄  candidates-uttrykk.json: ${candidatesUttrykk.length} in -> ${uttrykk.length} out`
+  );
 
   if (FLAGS.length) {
     console.log(`\n🟡  ${FLAGS.length} entries flagged for manual spot-check:`);
@@ -353,8 +361,12 @@ function main() {
   fs.writeFileSync(paths.outUttrykk, JSON.stringify(uttrykk, null, 2) + '\n', 'utf8');
   fs.writeFileSync(paths.flags, JSON.stringify(FLAGS, null, 2) + '\n', 'utf8');
 
-  console.log(`\n✅  Wrote ${vocab.length} entries -> ${path.relative(PROJECT_ROOT, paths.outVocab)}`);
-  console.log(`✅  Wrote ${uttrykk.length} entries -> ${path.relative(PROJECT_ROOT, paths.outUttrykk)}`);
+  console.log(
+    `\n✅  Wrote ${vocab.length} entries -> ${path.relative(PROJECT_ROOT, paths.outVocab)}`
+  );
+  console.log(
+    `✅  Wrote ${uttrykk.length} entries -> ${path.relative(PROJECT_ROOT, paths.outUttrykk)}`
+  );
   console.log(`✅  Wrote ${FLAGS.length} flags -> ${path.relative(PROJECT_ROOT, paths.flags)}`);
   console.log('\nNext: node scripts/enrich-vocab.mjs --level b1');
 }

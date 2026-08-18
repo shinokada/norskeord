@@ -67,6 +67,7 @@ CREATE TABLE public.profiles (
   onboarding_done boolean NOT NULL DEFAULT false,
   onboarding_snoozed_at timestamp with time zone,
   flashcard_language text NOT NULL DEFAULT 'english'::text CHECK (flashcard_language = ANY (ARRAY['english'::text, 'spanish'::text, 'ukrainian'::text, 'german'::text])),
+  fsrs_retention numeric CHECK (fsrs_retention IS NULL OR (fsrs_retention = ANY (ARRAY[0.80, 0.90, 0.95]))),
   CONSTRAINT profiles_pkey PRIMARY KEY (id),
   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
 );

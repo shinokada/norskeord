@@ -4,32 +4,70 @@ import type { FSRSRating, CardProgress } from '$lib/types';
 import type { VocabEntry, GrammarQuestion } from '$lib/types';
 import { supabase } from '$lib/supabase';
 
-const DEFAULT_FSRS = new FSRS(generatorParameters());
+// enable_short_term: false disables ts-fsrs's sub-day (re)learning steps for every
+// instance below. Without it, a first-time "Hard"/"Good" rating on a brand-new card
+// reschedules in minutes and re-enters the same session's queue almost immediately —
+// across many topics in one sitting those re-queues pile up. With it disabled, even a
+// first rating is scheduled by the main FSRS formula (day-scale), computed per-card
+// from difficulty/stability rather than a fixed short-term step.
+//
+// BASE_W overrides only the initial-stability weights (indices 1–3: hard/good/easy —
+// index 0/"again" is left at ts-fsrs's default, which floors at 1 day regardless) so a
+// brand-new card's very first rating lands at Hard=3d/Good=5d/Easy=8d under the Standard
+// (0.90) retention preset, instead of ts-fsrs's stock ~2d/3d/8d. This flattens the
+// Good→Easy jump (was 2.67x, now 1.6x) so "Easy" doesn't disappear from the deck for
+// disproportionately longer than "Good". Verified against ts-fsrs 5.4.1 — see
+// ai-docs/implementation/fsrs-update.md. Only affects a card's *first* interval; growth
+// on subsequent reviews (from real stability/difficulty) is untouched. The Relaxed/
+// Intensive presets scale proportionally from this same baseline via request_retention,
+// so no separate tuning is needed per preset.
+const BASE_W = (() => {
+  const w = [...generatorParameters().w];
+  w[1] = 3; // hard
+  w[2] = 5; // good
+  w[3] = 8; // easy
+  return w;
+})();
 
-// Per-user FSRS instance cache. Keyed by userId, rebuilt when weights change.
+const DEFAULT_FSRS = new FSRS(generatorParameters({ enable_short_term: false, w: BASE_W }));
+
+// Per-user FSRS instance cache. Keyed by `${userId}:${retention}` so a user who
+// changes their review-intensity preset mid-session gets a fresh instance rather
+// than a stale cached one built for a different retention value.
 const fsrsCache = new Map<string, FSRS>();
 
 /**
  * Returns an FSRS instance using the user's personal weights if available,
- * falling back to default weights. Cached in memory for the session.
+ * falling back to default weights, with `request_retention` set from the
+ * user's `fsrs_retention` preset (0.8 Relaxed / 0.9 Standard / 0.95 Intensive;
+ * null/undefined falls back to ts-fsrs's own default of 0.9). Cached in memory
+ * per userId+retention combination for the session.
+ *
+ * Previously defined but never called — saveProgress/saveGrammarProgress/
+ * previewIntervals all used DEFAULT_FSRS directly, so a user's optimised weights
+ * (written by the optimise-fsrs-weights Edge Function) never actually affected
+ * scheduling. Now wired into all three call sites.
  */
-export async function getFsrs(userId?: string | null): Promise<FSRS> {
+export async function getFsrs(userId?: string | null, retention?: number | null): Promise<FSRS> {
   if (!userId) return DEFAULT_FSRS;
-  if (fsrsCache.has(userId)) return fsrsCache.get(userId)!;
+  const cacheKey = `${userId}:${retention ?? 'default'}`;
+  if (fsrsCache.has(cacheKey)) return fsrsCache.get(cacheKey)!;
   const weights = await loadFsrsWeights(userId);
-  if (weights) {
-    const params: Partial<FSRSParameters> = { w: weights as FSRSParameters['w'] };
-    const instance = new FSRS(generatorParameters(params));
-    fsrsCache.set(userId, instance);
-    return instance;
-  }
-  fsrsCache.set(userId, DEFAULT_FSRS);
-  return DEFAULT_FSRS;
+  const params: Partial<FSRSParameters> = {
+    enable_short_term: false,
+    ...(retention != null && { request_retention: retention }),
+    w: (weights as FSRSParameters['w'] | null) ?? (BASE_W as FSRSParameters['w'])
+  };
+  const instance = new FSRS(generatorParameters(params));
+  fsrsCache.set(cacheKey, instance);
+  return instance;
 }
 
 /** Call after optimisation completes to force a fresh FSRS instance next rating. */
 export function invalidateFsrsCache(userId: string) {
-  fsrsCache.delete(userId);
+  for (const key of fsrsCache.keys()) {
+    if (key.startsWith(`${userId}:`)) fsrsCache.delete(key);
+  }
 }
 
 export const LS_PREFIX = 'progress-';
@@ -303,14 +341,16 @@ export async function saveProgress(
   entry: VocabEntry,
   rating: FSRSRating,
   progressMap: Record<string, CardProgress>,
-  userId?: string | null
+  userId?: string | null,
+  retention?: number | null
 ): Promise<Record<string, CardProgress>> {
   const key = vocabKey(entry);
   const now = new Date();
   const existing = progressMap[key] ?? null;
   const card = existing ? existing.fsrs : createEmptyCard(now);
 
-  const result = DEFAULT_FSRS.next(card, now, RATING_MAP[rating]);
+  const fsrs = await getFsrs(userId, retention);
+  const result = fsrs.next(card, now, RATING_MAP[rating]);
 
   const updated: CardProgress = {
     fsrs: result.card,
@@ -469,13 +509,15 @@ export async function saveGrammarProgress(
   question: GrammarQuestion,
   rating: FSRSRating,
   progressMap: Record<string, CardProgress>,
-  userId?: string | null
+  userId?: string | null,
+  retention?: number | null
 ): Promise<Record<string, CardProgress>> {
   const now = new Date();
   const existing = progressMap[question.id] ?? null;
   const card = existing ? existing.fsrs : createEmptyCard(now);
 
-  const result = DEFAULT_FSRS.next(card, now, RATING_MAP[rating]);
+  const fsrs = await getFsrs(userId, retention);
+  const result = fsrs.next(card, now, RATING_MAP[rating]);
 
   const updated: CardProgress = {
     fsrs: result.card,

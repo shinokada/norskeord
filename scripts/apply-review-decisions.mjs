@@ -39,32 +39,145 @@ function loadJSON(name) {
 // ---------------------------------------------------------------------------
 const DECISIONS = [
   // Batch 1 (1-15)
-  'uttrykk', 'vocab', 'uttrykk', 'uttrykk', 'vocab', 'vocab', 'uttrykk', 'vocab',
-  'uttrykk', 'uttrykk', 'uttrykk', 'uttrykk', 'vocab', 'uttrykk', 'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
   // Batch 2 (16-30)
-  'uttrykk', 'uttrykk', 'uttrykk', 'uttrykk', 'vocab', 'uttrykk', 'uttrykk', 'vocab',
-  'uttrykk', 'uttrykk', 'vocab', 'vocab', 'uttrykk', 'uttrykk', 'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
   // Batch 3 (31-45)
-  'uttrykk', 'uttrykk', 'vocab', 'uttrykk', 'uttrykk', 'uttrykk', 'uttrykk', 'uttrykk',
-  'vocab', 'vocab', 'vocab', 'uttrykk', 'uttrykk', 'uttrykk', 'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
   // Batch 4 (46-60)
-  'vocab', 'uttrykk', 'vocab', 'vocab', 'vocab', 'vocab', 'uttrykk', 'uttrykk',
-  'vocab', 'vocab', 'vocab', 'uttrykk', 'uttrykk', 'vocab', 'uttrykk',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
   // Batch 5 (61-75)
-  'uttrykk', 'uttrykk', 'uttrykk', 'vocab', 'vocab', 'vocab', 'uttrykk', 'vocab',
-  'uttrykk', 'vocab', 'uttrykk', 'vocab', 'vocab', 'uttrykk', 'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
   // Batch 6 (76-90)
-  'uttrykk', 'vocab', 'uttrykk', 'vocab', 'vocab', 'vocab', 'vocab', 'uttrykk',
-  'uttrykk', 'uttrykk', 'vocab', 'uttrykk', 'uttrykk', 'vocab', 'vocab',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'vocab',
   // Batch 7 (91-105)
-  'vocab', 'uttrykk', 'vocab', 'vocab', 'uttrykk', 'uttrykk', 'uttrykk', 'uttrykk',
-  'vocab', 'uttrykk', 'uttrykk', 'vocab', 'vocab', 'uttrykk', 'uttrykk',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
   // Batch 8 (106-120)
-  'vocab', 'uttrykk', 'vocab', 'uttrykk', 'uttrykk', 'uttrykk', 'vocab', 'uttrykk',
-  'uttrykk', 'uttrykk', 'uttrykk', 'vocab', 'uttrykk', 'vocab', 'vocab',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'vocab',
   // Batch 9 (121-131)
-  'vocab', 'uttrykk', 'uttrykk', 'uttrykk', 'drop', 'vocab', 'uttrykk', 'vocab',
-  'vocab', 'vocab', 'vocab'
+  'vocab',
+  'uttrykk',
+  'uttrykk',
+  'uttrykk',
+  'drop',
+  'vocab',
+  'uttrykk',
+  'vocab',
+  'vocab',
+  'vocab',
+  'vocab'
 ];
 
 // ---------------------------------------------------------------------------
@@ -107,7 +220,9 @@ const finalUttrykk = [...existingUttrykk, ...newUttrykk];
 console.log(`Review file total                : ${review.length}`);
 console.log(`  -> vocab                        : ${newVocab.length}`);
 console.log(`  -> uttrykk                      : ${newUttrykk.length}`);
-console.log(`  -> dropped (duplicate)          : ${dropped.length} (${dropped.map((d) => d.raw_term).join(', ')})`);
+console.log(
+  `  -> dropped (duplicate)          : ${dropped.length} (${dropped.map((d) => d.raw_term).join(', ')})`
+);
 console.log(`candidates-vocab.json   : ${existingVocab.length} -> ${finalVocab.length}`);
 console.log(`candidates-uttrykk.json : ${existingUttrykk.length} -> ${finalUttrykk.length}`);
 
@@ -116,6 +231,16 @@ if (DRY_RUN) {
   process.exit(0);
 }
 
-writeFileSync(resolve(OUT_DIR, 'candidates-vocab.json'), JSON.stringify(finalVocab, null, 2) + '\n', 'utf-8');
-writeFileSync(resolve(OUT_DIR, 'candidates-uttrykk.json'), JSON.stringify(finalUttrykk, null, 2) + '\n', 'utf-8');
-console.log(`\nWrote candidates-vocab.json (${finalVocab.length}) and candidates-uttrykk.json (${finalUttrykk.length})`);
+writeFileSync(
+  resolve(OUT_DIR, 'candidates-vocab.json'),
+  JSON.stringify(finalVocab, null, 2) + '\n',
+  'utf-8'
+);
+writeFileSync(
+  resolve(OUT_DIR, 'candidates-uttrykk.json'),
+  JSON.stringify(finalUttrykk, null, 2) + '\n',
+  'utf-8'
+);
+console.log(
+  `\nWrote candidates-vocab.json (${finalVocab.length}) and candidates-uttrykk.json (${finalUttrykk.length})`
+);
