@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.68.0
+
+### Minor Changes
+
+- - **New Features**
+    - Blog filters for level, tag, and search now persist in the URL, making filtered views easier to share and revisit.
+    - Search updates are reflected automatically while typing, with a short delay to keep the experience responsive.
+
+  - **Improvements**
+    - Updated search result styling makes active selections clearer in light and dark modes.
+    - Refined blog navigation behavior when applying or clearing filters.
+
+  - **Documentation**
+    - Added instructions for listing blog posts, including all available posts.
+
 ## 2.67.0
 
 ### Minor Changes
