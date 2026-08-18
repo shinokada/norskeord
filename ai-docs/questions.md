@@ -22,17 +22,6 @@ Note the followings:
 
 The attached is from the previous session. Continue where you left.
 
-
-
-
----
-
-Search has arrow up and down to navigate but in the dark-mode, it is hard to see the heighlighted row.
-
----
-
-In http://localhost:5173/blog, if I click one of level and click a post and come back, the level and the posts should be have the same status. Is it a good idea? What do you think?
-
 ---
 Transcribe attached Norwegian image(s) to markdown. Ignore any illustrations and hand-writings.
 The images are HEIC files.
