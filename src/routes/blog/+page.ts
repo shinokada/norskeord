@@ -1,8 +1,6 @@
 import { parsePosts, type RawPostModule } from '$lib/blog';
 import type { PageLoad } from './$types';
 
-export const prerender = true;
-
 export const load: PageLoad = async () => {
   const modules = import.meta.glob('/src/lib/posts/*.md', { eager: true }) as Record<
     string,

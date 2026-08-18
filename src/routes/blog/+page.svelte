@@ -3,17 +3,32 @@
   import type { PageData } from './$types';
   import * as m from '$lib/paraglide/messages.js';
   import { cefrLevels, cefrColors } from '$lib/blog';
+  import { page } from '$app/state';
+  import { goto } from '$app/navigation';
 
   let { data }: { data: PageData } = $props();
 
   const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C'];
 
-  // --- filter state ---
-  let selectedLevel = $state<string | null>(null);
-  let selectedTag = $state<string | null>(null);
-  let searchQuery = $state('');
+  // --- filter state, sourced from the URL so it survives back-navigation ---
+  const selectedLevel = $derived(page.url.searchParams.get('level'));
+  const selectedTag = $derived(page.url.searchParams.get('tag'));
+
+  // Search stays local for responsive typing, synced to the URL on a debounce.
+  let searchQuery = $state(page.url.searchParams.get('q') ?? '');
+  let searchDebounceTimer: ReturnType<typeof setTimeout>;
 
   const searchTerm = $derived(searchQuery.trim().toLowerCase());
+
+  function updateParam(key: string, value: string | null) {
+    const url = new URL(page.url);
+    if (value) {
+      url.searchParams.set(key, value);
+    } else {
+      url.searchParams.delete(key);
+    }
+    goto(url, { replaceState: true, keepFocus: true, noScroll: true });
+  }
 
   // All unique tags across non-guide posts, sorted alphabetically
   const allTags = $derived(
@@ -81,19 +96,18 @@
   }
 
   function toggleLevel(level: string) {
-    selectedLevel = selectedLevel === level ? null : level;
+    updateParam('level', selectedLevel === level ? null : level);
     visibleCount = PAGE_SIZE;
   }
 
   function toggleTag(tag: string) {
-    selectedTag = selectedTag === tag ? null : tag;
+    updateParam('tag', selectedTag === tag ? null : tag);
     visibleCount = PAGE_SIZE;
   }
 
   function clearFilters() {
-    selectedLevel = null;
-    selectedTag = null;
     searchQuery = '';
+    goto(page.url.pathname, { replaceState: true, keepFocus: true, noScroll: true });
     visibleCount = PAGE_SIZE;
   }
 
@@ -120,6 +134,10 @@
         bind:value={searchQuery}
         oninput={() => {
           visibleCount = PAGE_SIZE;
+          clearTimeout(searchDebounceTimer);
+          searchDebounceTimer = setTimeout(() => {
+            updateParam('q', searchQuery.trim() || null);
+          }, 300);
         }}
         placeholder={m.blog_search_placeholder()}
         aria-label={m.blog_search_aria()}
