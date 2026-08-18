@@ -1,5 +1,22 @@
 # norske-flashcard
 
+## 2.67.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added Relaxed, Standard, and Intensive review-intensity preferences across supported languages.
+    - Review scheduling now adapts to the selected intensity and provides day-scale intervals.
+    - Search results can open a targeted flashcard deck with the selected word first.
+    - Added new B1 vocabulary, expressions, and grammar content, plus expanded C-level exercises.
+    - Added four grammar topics and improved grammar explanations.
+
+  - **Improvements**
+    - Grammar topic cards now show counts for the selected proficiency level.
+    - Added Norwegian grammar guidance and learning articles.
+
+  - fix: pnpm optional-dependency resolution issue
+
 ## 2.66.0
 
 ### Minor Changes
