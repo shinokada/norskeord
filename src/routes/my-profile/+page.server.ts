@@ -125,6 +125,11 @@ export const actions: Actions = {
       quiz_limit_raw === null || quiz_limit_raw === 'default' ? null : parseInt(quiz_limit_raw, 10);
     // show_example checkbox: present with value 'true' when checked, absent when unchecked
     const show_example = data.get('show_example') === 'true';
+    const fsrs_retention_raw = data.get('fsrs_retention') as string | null;
+    const fsrs_retention =
+      fsrs_retention_raw === null || fsrs_retention_raw === 'default'
+        ? null
+        : parseFloat(fsrs_retention_raw);
 
     const validLevels = ['A1', 'A2', 'B1', 'B2', 'C'];
     const validLanguages = ['en', 'nb', 'es', 'uk', 'de'];
@@ -135,6 +140,7 @@ export const actions: Actions = {
     const validPitches = [0.7, 1.0, 1.3];
     const validLimits = [10, 20, 30, 50, null];
     const validQuizLimits = [5, 10, 15, 20, null];
+    const validRetentions = [0.8, 0.9, 0.95, null];
 
     if (current_level && !validLevels.includes(current_level)) {
       return fail(422, { field: 'current_level', message: 'Invalid level.' });
@@ -163,6 +169,9 @@ export const actions: Actions = {
     if (!validQuizLimits.includes(quiz_limit)) {
       return fail(422, { field: 'quiz_limit', message: 'Invalid quiz limit.' });
     }
+    if (!validRetentions.includes(fsrs_retention)) {
+      return fail(422, { field: 'fsrs_retention', message: 'Invalid review intensity.' });
+    }
 
     const update: ProfileUpdate = {
       ...(current_level && { current_level }),
@@ -174,7 +183,8 @@ export const actions: Actions = {
       ...(voice_pitch !== null && { voice_pitch }),
       session_limit,
       quiz_limit,
-      show_example
+      show_example,
+      fsrs_retention
     };
 
     const { error } = await upsertProfile(locals.supabase, locals.user.id, update);

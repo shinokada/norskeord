@@ -1,5 +1,11 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { loadProgressMap, saveProgress, countDueToday, previewIntervals } from './progress';
+import {
+  loadProgressMap,
+  saveProgress,
+  countDueToday,
+  previewIntervals,
+  getFsrs
+} from './progress';
 import type { VocabEntry } from '$lib/types';
 
 // ── localStorage mock ─────────────────────────────────────────────────────────
@@ -116,6 +122,33 @@ describe('saveProgress', () => {
   });
 });
 
+// ── getFsrs ───────────────────────────────────────────────────────────────────
+
+describe('getFsrs', () => {
+  // Only the no-userId path is tested here — a real userId would make getFsrs hit the
+  // live Supabase client (no mock exists for it in this suite), same reason saveProgress
+  // is never tested elsewhere in this file with a userId argument.
+  it('returns an FSRS instance for a guest (no userId)', async () => {
+    const f = await getFsrs(null);
+    expect(f).toBeDefined();
+    expect(typeof f.next).toBe('function');
+  });
+
+  it('returns the same cached instance shape on repeated guest calls', async () => {
+    const a = await getFsrs(undefined);
+    const b = await getFsrs(undefined);
+    expect(a).toBe(b); // guest path always returns the module-level DEFAULT_FSRS
+  });
+
+  it('ignores the retention argument for guests (no userId)', async () => {
+    // Guests always get DEFAULT_FSRS regardless of retention — the preset only
+    // applies once a userId is present (Phase 2 wiring).
+    const a = await getFsrs(null, 0.8);
+    const b = await getFsrs(null, 0.95);
+    expect(a).toBe(b);
+  });
+});
+
 // ── countDueToday ─────────────────────────────────────────────────────────────
 
 describe('countDueToday', () => {
@@ -187,10 +220,13 @@ describe('previewIntervals', () => {
     expect(() => previewIntervals(map[KEY], now)).not.toThrow();
   });
 
-  it('formats minutes correctly (< 60 min)', () => {
-    // "again" on a new card is always a short re-learning interval (minutes)
+  it('formats "again" as a day-scale interval, not minutes (enable_short_term: false)', () => {
+    // With short-term scheduling disabled, even "again" on a new card is scheduled by
+    // the main FSRS formula (day-scale) rather than a fixed short-term minute step —
+    // this is the fix for cards reappearing within the same session.
     const result = previewIntervals(null, now);
-    expect(result.again).toMatch(/^\d+m$/);
+    expect(result.again).toMatch(/^\d+(m|h|d)$/);
+    expect(result.again).not.toBe('0m');
   });
 
   it('formats days correctly for a well-reviewed card', async () => {

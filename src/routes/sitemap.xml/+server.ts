@@ -1,5 +1,5 @@
 // /src/routes/sitemap.xml/+server.ts
-import * as sitemap from 'super-sitemap';
+import * as sitemap from 'super-sitemap/sveltekit';
 import type { RequestHandler } from '@sveltejs/kit';
 import { CATEGORIES_BY_LEVEL, PLUS_CATEGORIES, FREE_GRAMMAR_TOPICS } from '$lib/config';
 import { parsePosts, type RawPostModule } from '$lib/blog';
@@ -60,22 +60,22 @@ export const GET: RequestHandler = async () => {
       '/learn/[level]': learnLevels
     },
     excludeRoutePatterns: [
-      '^/admin.*',
-      '^/api.*',
-      '^/auth.*',
-      '^/daily.*',
-      '^/my-profile.*',
-      '^/stats.*',
-      '^/quiz.*',
-      '^/norskproven/.*',
-      '^/plus.*'
+      /^\/admin.*/,
+      /^\/api.*/,
+      /^\/auth.*/,
+      /^\/daily.*/,
+      /^\/my-profile.*/,
+      /^\/stats.*/,
+      /^\/quiz.*/,
+      /^\/norskproven\/.*/,
+      /^\/plus.*/
     ],
     processPaths: (paths) => {
       return paths.map((p) => ({
         ...p,
         alternates: [
-          { lang: 'en', path: p.path },
-          { lang: 'x-default', path: p.path }
+          { hreflang: 'en', path: p.path },
+          { hreflang: 'x-default', path: p.path }
         ]
       }));
     }

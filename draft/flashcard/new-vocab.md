@@ -246,3 +246,7 @@ plagg (et)
 festplagg (et)
 hjort (en)
 svin (et)
+due (en)
+å sløse
+å skylde
+å forstå

@@ -1,0 +1,282 @@
+[
+  {
+    "chapter": 1,
+    "chapterTitle": "Hilsen fra tante Adele",
+    "source": "vokabular-table",
+    "raw_term": "**å dvele ved noe** (v2)",
+    "context": "å stoppe opp ved noe og tenke nøye over det",
+    "matchedExisting": "dvele ved"
+  },
+  {
+    "chapter": 1,
+    "chapterTitle": "Hilsen fra tante Adele",
+    "source": "vokabular-table",
+    "raw_term": "**å holde opp med** (ureg.)",
+    "context": "å stoppe med",
+    "matchedExisting": "holde opp"
+  },
+  {
+    "chapter": 2,
+    "chapterTitle": "Melissa, Petter og Cindy",
+    "source": "vokabular-table",
+    "raw_term": "å komme til verden",
+    "context": "å bli født",
+    "matchedExisting": "komme til"
+  },
+  {
+    "chapter": 2,
+    "chapterTitle": "Melissa, Petter og Cindy",
+    "source": "vokabular-table",
+    "raw_term": "å sette i (ureg.)",
+    "context": "å begynne",
+    "matchedExisting": "sette i sentrum"
+  },
+  {
+    "chapter": 3,
+    "chapterTitle": "Mormor Birgitta hopper i fallskjerm",
+    "source": "vokabular-table",
+    "raw_term": "å grue seg for (v4)",
+    "context": "å være nervøs for",
+    "matchedExisting": "grue seg"
+  },
+  {
+    "chapter": 4,
+    "chapterTitle": "Elina forteller om sin far",
+    "source": "vokabular-table",
+    "raw_term": "å betro seg (v4)",
+    "context": "å fortelle noe til noen i tillit",
+    "matchedExisting": "betro seg til"
+  },
+  {
+    "chapter": 5,
+    "chapterTitle": "Petters bror kommer ut av skapet",
+    "source": "vokabular-table",
+    "raw_term": "å finne ut av noe sammen (ureg.)",
+    "context": "her: å få forholdet til å fungere fint",
+    "matchedExisting": "finne ut av"
+  },
+  {
+    "chapter": 5,
+    "chapterTitle": "Petters bror kommer ut av skapet",
+    "source": "vokabular-table",
+    "raw_term": "å løse seg (v2)",
+    "context": "å ordne seg",
+    "matchedExisting": "løse seg opp"
+  },
+  {
+    "chapter": 5,
+    "chapterTitle": "Petters bror kommer ut av skapet",
+    "source": "vokabular-table",
+    "raw_term": "å smyge seg av gårde (ureg.)",
+    "context": "å gå veldig stille bort",
+    "matchedExisting": "smyge seg"
+  },
+  {
+    "chapter": 7,
+    "chapterTitle": "Hus, hytte og pensjonat",
+    "source": "vokabular-table",
+    "raw_term": "å få seg (ureg.)",
+    "context": "å anskaffe; å skaffe seg",
+    "matchedExisting": "få seg en lærepenge"
+  },
+  {
+    "chapter": 10,
+    "chapterTitle": "Monica på krisesenter",
+    "source": "vokabular-table",
+    "raw_term": "å gå løs på noen (ureg.)",
+    "context": "å angripe noen",
+    "matchedExisting": "gå løs på"
+  },
+  {
+    "chapter": 10,
+    "chapterTitle": "Monica på krisesenter",
+    "source": "vokabular-table",
+    "raw_term": "å slå på tråden (ureg.)",
+    "context": "å ringe i telefonen",
+    "matchedExisting": "slå på"
+  },
+  {
+    "chapter": 12,
+    "chapterTitle": "Johanne og Ernesto snakker om ytringsfrihet",
+    "source": "vokabular-table",
+    "raw_term": "å se gjennom fingrene med (ureg.)",
+    "context": "å se bort fra noe (man later som om man ikke ser det)",
+    "matchedExisting": "se gjennom fingrene med noe"
+  },
+  {
+    "chapter": 14,
+    "chapterTitle": "Presentasjon av noen norske aviser og medier",
+    "source": "vokabular-table",
+    "raw_term": "å ta stilling (ureg.)",
+    "context": "å gjøre seg opp en mening",
+    "matchedExisting": "ta stilling til"
+  },
+  {
+    "chapter": 17,
+    "chapterTitle": "Norge før og nå: fra bondesamfunn til velferdssamfunn",
+    "source": "vokabular-table",
+    "raw_term": "å gå av tronen",
+    "context": "å gi fra seg kongstittelen",
+    "matchedExisting": "gå av"
+  },
+  {
+    "chapter": 17,
+    "chapterTitle": "Norge før og nå: fra bondesamfunn til velferdssamfunn",
+    "source": "vokabular-table",
+    "raw_term": "å legge til kai (m)",
+    "context": "å plassere en båt eller et skip ved en brygge (brygge = sted hvor båter og skip kan losse og losse)",
+    "matchedExisting": "legge til"
+  },
+  {
+    "chapter": 17,
+    "chapterTitle": "Norge før og nå: fra bondesamfunn til velferdssamfunn",
+    "source": "vokabular-table",
+    "raw_term": "å ta seg av noen",
+    "context": "å passe på noen",
+    "matchedExisting": "ta seg av"
+  },
+  {
+    "chapter": 23,
+    "chapterTitle": "Ernesto bytter skole",
+    "source": "vokabular-table",
+    "raw_term": "å kle seg ut (v4)",
+    "context": "å ta på seg kostyme",
+    "matchedExisting": "kle seg"
+  },
+  {
+    "chapter": 24,
+    "chapterTitle": "Joseph på norskkurs",
+    "source": "vokabular-table",
+    "raw_term": "å føle seg satt ut (v2)",
+    "context": "å bli sjokkert og overrasket",
+    "matchedExisting": "føle seg"
+  },
+  {
+    "chapter": 24,
+    "chapterTitle": "Joseph på norskkurs",
+    "source": "vokabular-table",
+    "raw_term": "å late som om (ureg.)",
+    "context": "å simulere; å gi inntrykk av; å se ut som",
+    "matchedExisting": "late som"
+  },
+  {
+    "chapter": 25,
+    "chapterTitle": "Etterutdanning og livslang læring",
+    "source": "vokabular-table",
+    "raw_term": "å droppe ut av (v1)",
+    "context": "å slutte",
+    "matchedExisting": "droppe ut"
+  },
+  {
+    "chapter": 27,
+    "chapterTitle": "Reza skaper sin egen jobb",
+    "source": "vokabular-table",
+    "raw_term": "å hviske og tiske i krokene (v1, v1)",
+    "context": "å snakke lavt om noe sammen, uten at andre skal høre det som blir sagt",
+    "matchedExisting": "hviske og tiske"
+  },
+  {
+    "chapter": 34,
+    "chapterTitle": "Under hviskende trær",
+    "source": "vokabular-table",
+    "raw_term": "å henge rundt med venner",
+    "context": "å være sammen med venner",
+    "matchedExisting": "henge rundt"
+  },
+  {
+    "chapter": 35,
+    "chapterTitle": "Med blanke ark og fargestifter til",
+    "source": "vokabular-table",
+    "raw_term": "å legge seg opp i (la – har lagt)",
+    "context": "å blande seg inn i",
+    "matchedExisting": "legge seg"
+  },
+  {
+    "chapter": 36,
+    "chapterTitle": "Hjemland",
+    "source": "vokabular-table",
+    "raw_term": "å legge til side (la – har lagt)",
+    "context": "her: å glemme",
+    "matchedExisting": "legge til"
+  },
+  {
+    "chapter": 40,
+    "chapterTitle": "Prinsessen på Lykketoppen",
+    "source": "vokabular-table",
+    "raw_term": "omgitt av",
+    "context": "som ligger rundt",
+    "matchedExisting": "omgitt av hav"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "fyre av",
+    "context": "fast sammensatt: avfyre; avledet substantiv: avfyring (f/m)",
+    "matchedExisting": "fyre av mot noen"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "sette inn",
+    "context": "fast sammensatt: innsette; avledet substantiv: innsettelse (m)",
+    "matchedExisting": "sette inn med olje"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "tre fram",
+    "context": "fast sammensatt: framtre; avledet substantiv: framtreden (m)",
+    "matchedExisting": "tre fram for noen"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "lyse opp",
+    "context": "fast sammensatt: opplyse; avledet substantiv: opplysning (f/m)",
+    "matchedExisting": "lyse opp tilværelsen"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "rive opp",
+    "context": "fast sammensatt: opprive; avledet substantiv: oppriving (f/m); opprivning (f/m)",
+    "matchedExisting": "rive opp med røttene"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "gå på",
+    "context": "fast sammensatt: pågå; avledet substantiv: pågang (m)",
+    "matchedExisting": "gå på veggen"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "se på",
+    "context": "fast sammensatt: påse; avledet substantiv: påsyn (n)",
+    "matchedExisting": "se på film"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "stå på",
+    "context": "fast sammensatt: påstå; avledet substantiv: påstand (m)",
+    "matchedExisting": "stå på egne bein"
+  },
+  {
+    "chapter": null,
+    "chapterTitle": "Fast og løst sammensatte verb",
+    "source": "compound-verb-table",
+    "raw_term": "sette ut",
+    "context": "fast sammensatt: utsette; avledet substantiv: utsettelse (m)",
+    "matchedExisting": "sette ut på anbud"
+  }
+]

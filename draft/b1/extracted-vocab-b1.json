@@ -1,0 +1,6474 @@
+[
+  {
+    "id": "",
+    "norsk": "begeistret",
+    "lemma": "begeistret",
+    "definition": "inspirert; entusiastisk",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "bekymring (en)",
+    "lemma": "bekymring",
+    "definition": "hvis man er redd for noe, har man en bekymring",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fjern",
+    "lemma": "fjern",
+    "definition": "som er langt borte",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "flerfoldig",
+    "lemma": "flerfoldig",
+    "definition": "veldig mange",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "gård (en)",
+    "lemma": "gård",
+    "definition": "landeiendom (offte med dyr og f.eks. frukt- og grønnsakproduksjon)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "helsesko (en)",
+    "lemma": "helsesko",
+    "definition": "spesiell type sko som sitter godt på foten og som hjelper mot f.eks. vondt i ryggen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hjelpsom",
+    "lemma": "hjelpsom",
+    "definition": "som vil hjelpe",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "klokkeslett (et)",
+    "lemma": "klokkeslett",
+    "definition": "tidspunkt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "rotekte norsk",
+    "lemma": "rotekte norsk",
+    "definition": "urnorsk; «veldig» norsk",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "slektstreff (et)",
+    "lemma": "slektstreff",
+    "definition": "møτε med storfamilien",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vittig",
+    "lemma": "vittig",
+    "definition": "morsom",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å bosette seg",
+    "lemma": "bosette seg",
+    "definition": "å begynne å bo et sted; å slå seg ned",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ha krefter til",
+    "lemma": "ha krefter til",
+    "definition": "å ha energi til",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kjase",
+    "lemma": "kjase",
+    "definition": "å snakke (mye)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å minnes",
+    "lemma": "minnes",
+    "definition": "å huske",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stable",
+    "lemma": "stable",
+    "definition": "å legge flere ting oppå hverandre",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "bleie (en)",
+    "lemma": "bleie",
+    "definition": "tøy- eller papirstykke som suger opp urin og avføring",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fatter (en)",
+    "lemma": "fatter",
+    "definition": "far",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forskrekket",
+    "lemma": "forskrekket",
+    "definition": "forbauset; overrasket",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "honning (en)",
+    "lemma": "honning",
+    "definition": "søt væske som biene produserer",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hud (en)",
+    "lemma": "hud",
+    "definition": "det som dekker kroppen til et menneske (eller et dyr) er hud",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innad",
+    "lemma": "innad",
+    "definition": "innover",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "kar (en)",
+    "lemma": "kar",
+    "definition": "fyr; mann",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kjekk",
+    "lemma": "kjekk",
+    "definition": "grei/pen",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "lungebetennelse (en)",
+    "lemma": "lungebetennelse",
+    "definition": "inflammasjon i lungevevet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mageknip (en)",
+    "lemma": "mageknip",
+    "definition": "vondt i magen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å begripe",
+    "lemma": "begripe",
+    "definition": "å forstå",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å fatte",
+    "lemma": "fatte",
+    "definition": "å forstå",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å grine",
+    "lemma": "grine",
+    "definition": "å gråte",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å oppdra",
+    "lemma": "oppdra",
+    "definition": "å undervise, danne og oppfostre barn",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "bakke (en)",
+    "lemma": "bakke",
+    "definition": "mark; jord",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fallskjerm (en)",
+    "lemma": "fallskjerm",
+    "definition": "stort stykke av tøy som folder seg ut som en paraply og som brukes når man hopper fra f.eks. fly",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gyngestol (en)",
+    "lemma": "gyngestol",
+    "definition": "stol med meier man kan gynge fram og tilbake på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hjelm (en)",
+    "lemma": "hjelm",
+    "definition": "noe man har på hodet til beskyttelse mot slag og fall",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kvikk",
+    "lemma": "kvikk",
+    "definition": "rask; våken; livlig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "markert",
+    "lemma": "markert",
+    "definition": "tydelig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "mas (et)",
+    "lemma": "mas",
+    "definition": "strev; slit",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "mysterium (et)",
+    "lemma": "mysterium",
+    "definition": "uforklarlig fenomen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "prikk (en)",
+    "lemma": "prikk",
+    "definition": "flekk; punkt; lite merke",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "slank",
+    "lemma": "slank",
+    "definition": "tynn",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "spreking (en)",
+    "lemma": "spreking",
+    "definition": "person som er sterk og i god form",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sprø",
+    "lemma": "sprø",
+    "definition": "gal",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "strålende",
+    "lemma": "strålende",
+    "definition": "perfekt; utmerket",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å feste",
+    "lemma": "feste",
+    "definition": "å gjøre fast",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å lande",
+    "lemma": "lande",
+    "definition": "å nå bakken når man kommer fra lufta",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "halvsøster (en)",
+    "lemma": "halvsøster",
+    "definition": "søster som bare har felles mor eller felles far",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sjokk (et)",
+    "lemma": "sjokk",
+    "definition": "stor overraskelse",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "dyp",
+    "lemma": "dyp",
+    "definition": "veldig. Dypt religiøs = veldig religiøs",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "grisevær (et)",
+    "lemma": "grisevær",
+    "definition": "veldig dårlig vær (vått, kaldt og med vind)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gudstjeneste (en)",
+    "lemma": "gudstjeneste",
+    "definition": "seremonielt møte i kirka",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "merkelig",
+    "lemma": "merkelig",
+    "definition": "rar",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "pietisme (en)",
+    "lemma": "pietisme",
+    "definition": "pietisme er en retning innenfor kristendommen (som noen synes er litt trangsynt); pietistisk = adjektiv av pietisme",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "predikant (en)",
+    "lemma": "predikant",
+    "definition": "religiøs taler",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tålmodighet (en)",
+    "lemma": "tålmodighet",
+    "definition": "når man er flink til å vente rolig, har man tålmodighet; du må smøre deg med tålmodighet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å be",
+    "lemma": "be",
+    "definition": "å holde en bønn til Gud",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bryte sammen",
+    "lemma": "bryte sammen",
+    "definition": "å få et sammenbrudd; å falle fra hverandre",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gjengi",
+    "lemma": "gjengi",
+    "definition": "å oppsummere; å referere",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sluke",
+    "lemma": "sluke",
+    "definition": "å svelge fort",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å smugtitte",
+    "lemma": "smugtitte",
+    "definition": "å se på noen når personen man ser på ikke legger merke til det",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å vandre",
+    "lemma": "vandre",
+    "definition": "å gå fra sted til sted",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "dørhåndtak (et)",
+    "lemma": "dørhåndtak",
+    "definition": "ting som hånden kan ta tak i for å åpne en dør",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ektefelle (en)",
+    "lemma": "ektefelle",
+    "definition": "den ene av to som er gift med hverandre",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fødselspermisjon (en)",
+    "lemma": "fødselspermisjon",
+    "definition": "periode etter en fødsel hvor man ikke jobber, men likevel mottar penger (fra staten)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hastig",
+    "lemma": "hastig",
+    "definition": "rask",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "hjemmeværende",
+    "lemma": "hjemmeværende",
+    "definition": "som ikke er ute i arbeidslivet",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "hodepine (en)",
+    "lemma": "hodepine",
+    "definition": "vondt i hodet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "susende",
+    "lemma": "susende",
+    "definition": "den typen lyd som for eksempel kommer fra en støvsuger eller fra vind",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å brette",
+    "lemma": "brette",
+    "definition": "å legge sammen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stige over",
+    "lemma": "stige over",
+    "definition": "å løfte beinet over",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å verke",
+    "lemma": "verke",
+    "definition": "å gjøre vondt",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "armbånd (et)",
+    "lemma": "armbånd",
+    "definition": "lenke til å ha rundt armen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "artig",
+    "lemma": "artig",
+    "definition": "morsom",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ethvert",
+    "lemma": "ethvert",
+    "definition": "alle",
+    "level": "B1",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "fabelaktig",
+    "lemma": "fabelaktig",
+    "definition": "fantastisk",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "folketom",
+    "lemma": "folketom",
+    "definition": "uten folk",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "gjenstand (en)",
+    "lemma": "gjenstand",
+    "definition": "ting; objekt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "levesett (et)",
+    "lemma": "levesett",
+    "definition": "måte å leve på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nisje (en)",
+    "lemma": "nisje",
+    "definition": "en posisjon som passer spesielt godt, er en nisje",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "original",
+    "lemma": "original",
+    "definition": "særpreget; spesiell og som ikke så mange andre har",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "rikelig",
+    "lemma": "rikelig",
+    "definition": "mye",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "svipptur (en)",
+    "lemma": "svipptur",
+    "definition": "kort tur",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilbygg (et)",
+    "lemma": "tilbygg",
+    "definition": "nytt bygg i tilknytning til et eldre bygg",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utmerket",
+    "lemma": "utmerket",
+    "definition": "perfekt, meget god",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "værelse (et)",
+    "lemma": "værelse",
+    "definition": "rom",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å beslutte",
+    "lemma": "beslutte",
+    "definition": "å bestemme",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "ekko (et)",
+    "lemma": "ekko",
+    "definition": "gjenlyd",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gårdsplass (en)",
+    "lemma": "gårdsplass",
+    "definition": "åpen plass mellom hus",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hengslete",
+    "lemma": "hengslete",
+    "definition": "tynn person som har en slapp holdning med kroppen",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kommunal",
+    "lemma": "kommunal",
+    "definition": "som eies av kommunen",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "krokrygget",
+    "lemma": "krokrygget",
+    "definition": "som har kroket rygg (ryggen er ikke rett, men i en bue)",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "leppestift (en)",
+    "lemma": "leppestift",
+    "definition": "sminke til å farge leppene",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "pils (en)",
+    "lemma": "pils",
+    "definition": "lyst og lett øl",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "porselen (et)",
+    "lemma": "porselen",
+    "definition": "hard keramikk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skipsreder (en)",
+    "lemma": "skipsreder",
+    "definition": "person som eier ett eller flere skip eller båter",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skitt (en)",
+    "lemma": "skitt",
+    "definition": "søle, sand eller annet som gjør at det ikke er rent",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sporløs",
+    "lemma": "sporløs",
+    "definition": "uten spor; uten merker",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stokk (en)",
+    "lemma": "stokk",
+    "definition": "stav («trepinne») man støtter seg til hvis man har problemer med å gå",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "styrtrik",
+    "lemma": "styrtrik",
+    "definition": "veldig rik",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "støv",
+    "lemma": "støv",
+    "definition": "små partikler som gjør at det blir skittent",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "subbende skritt (et)",
+    "lemma": "subbende skritt",
+    "definition": "tunge og slepende skritt (man løfter ikke foten helt opp fra gulvet når man går)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilbakevending (en)",
+    "lemma": "tilbakevending",
+    "definition": "det å komme eller dra tilbake",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tøffel (en)",
+    "lemma": "tøffel",
+    "definition": "myke sko man bruker inne",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å klistre opp",
+    "lemma": "klistre opp",
+    "definition": "å henge opp med lim",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å mimre",
+    "lemma": "mimre",
+    "definition": "å minnes gamle dager",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sive ut",
+    "lemma": "sive ut",
+    "definition": "å komme sakte ut",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sladre",
+    "lemma": "sladre",
+    "definition": "å snakke med noen om mennesker som ikke er til stede",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å slakte",
+    "lemma": "slakte",
+    "definition": "å kritisere sterkt",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å spasere",
+    "lemma": "spasere",
+    "definition": "å gå",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å springe",
+    "lemma": "springe",
+    "definition": "å løpe",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "asylmottak (et)",
+    "lemma": "asylmottak",
+    "definition": "sted hvor man tar imot asylsøkere og gir dem opphold for en stund",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avslag (et)",
+    "lemma": "avslag",
+    "definition": "å få nei på en søknad",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "beboer (en)",
+    "lemma": "beboer",
+    "definition": "en person som bor i en bolig, er en beboer",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "campingvogn (en)",
+    "lemma": "campingvogn",
+    "definition": "husvogn man kan henge bak på en bil",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kummerlig",
+    "lemma": "kummerlig",
+    "definition": "dårlig og fattigslig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "plen (en)",
+    "lemma": "plen",
+    "definition": "gress",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "aldeles",
+    "lemma": "aldeles",
+    "definition": "helt; fullstendig",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "dempet",
+    "lemma": "dempet",
+    "definition": "ikke høy",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "dyktig",
+    "lemma": "dyktig",
+    "definition": "flink",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "høytaler (en)",
+    "lemma": "høytaler",
+    "definition": "elektrisk apparat hvor det kommer ut lyd (f.eks. musikk)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "knust",
+    "lemma": "knust",
+    "definition": "veldig trist og deprimert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "krisesenter (et)",
+    "lemma": "krisesenter",
+    "definition": "sted hvor man kan søke hjelp i vanskelige situasjoner",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "midtveis",
+    "lemma": "midtveis",
+    "definition": "halvveis",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "mishandling (en)",
+    "lemma": "mishandling",
+    "definition": "å skade noen fysisk eller psykisk (og man har ønske om å gjøre det)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skramme (en)",
+    "lemma": "skramme",
+    "definition": "sår i huden",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sukk (et)",
+    "lemma": "sukk",
+    "definition": "dypt pust; lite stønn",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ubegripelig",
+    "lemma": "ubegripelig",
+    "definition": "som man ikke kan forstå",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ulykke (en)",
+    "lemma": "ulykke",
+    "definition": "skade eller uheldig situasjon som har oppstått plutselig; uhell",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "underlig",
+    "lemma": "underlig",
+    "definition": "rar",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å skumme gjennom",
+    "lemma": "skumme gjennom",
+    "definition": "å lese noe raskt for å få en oversikt over innholdet",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å snufse",
+    "lemma": "snufse",
+    "definition": "å trekke luft inn gjennom nesa når nesa er litt tett (f.eks. fordi man har grått eller er forkjølet)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "betegnelse (en)",
+    "lemma": "betegnelse",
+    "definition": "navn",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "folkeskole (en)",
+    "lemma": "folkeskole",
+    "definition": "skolesystemet i Norge i perioden 1889–1969 kaltes folkeskole",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forfekter (en)",
+    "lemma": "forfekter",
+    "definition": "person som forsvarer en idé med ord",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ombud (et)",
+    "lemma": "ombud",
+    "definition": "person som har som jobb å sikre folk mot urettferdig behandling",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "redskap (et)",
+    "lemma": "redskap",
+    "definition": "verktøy; hjelpemiddel",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skjev",
+    "lemma": "skjev",
+    "definition": "skakk; skrå; ikke rett",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "tilsatt",
+    "lemma": "tilsatt",
+    "definition": "ansatt",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å falle gjennom",
+    "lemma": "falle gjennom",
+    "definition": "å ikke klare seg; å ikke hevde seg",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å forutsette",
+    "lemma": "forutsette",
+    "definition": "å anta; å gå ut fra",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å omhandle",
+    "lemma": "omhandle",
+    "definition": "å drøfte; å diskutere; å behandle",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å rette opp",
+    "lemma": "rette opp",
+    "definition": "å korrigere",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "begrunnelse (en)",
+    "lemma": "begrunnelse",
+    "definition": "argument",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kladdebok (en)",
+    "lemma": "kladdebok",
+    "definition": "skrivebok",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "molefonken",
+    "lemma": "molefonken",
+    "definition": "trist",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "trakasserende",
+    "lemma": "trakasserende",
+    "definition": "diskriminert; sjikanert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å fjerne",
+    "lemma": "fjerne",
+    "definition": "å ta bort",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å fornærme",
+    "lemma": "fornærme",
+    "definition": "å krenke",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å nekte",
+    "lemma": "nekte",
+    "definition": "å si nei til",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utøve",
+    "lemma": "utøve",
+    "definition": "å praktisere",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ydmyke",
+    "lemma": "ydmyke",
+    "definition": "å gjøre noe mot en annen slik at den andre personen mister sin stolthet",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "fellesferie (en)",
+    "lemma": "fellesferie",
+    "definition": "sommerferie som personer på en arbeidsplass tar samtidig",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fremragende",
+    "lemma": "fremragende",
+    "definition": "veldig bra; mesterlig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "gjerning (en)",
+    "lemma": "gjerning",
+    "definition": "handling",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "grusom",
+    "lemma": "grusom",
+    "definition": "fryktelig; hensynsløs",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "hjerne (en)",
+    "lemma": "hjerne",
+    "definition": "den delen av sentralnervesystemet som ligger i hodeskallen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kvartal (et)",
+    "lemma": "kvartal",
+    "definition": "husgruppe som begrenses av fire gater",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ledd (et)",
+    "lemma": "ledd",
+    "definition": "del",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppskaket",
+    "lemma": "oppskaket",
+    "definition": "rystet; sjokkert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "psykotisk",
+    "lemma": "psykotisk",
+    "definition": "en type sinnslidelse (mental sykdom)",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sakkyndig (en)",
+    "lemma": "sakkyndig",
+    "definition": "som har sakskunnskap om noe; en ekspert",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "schizofreni (en)",
+    "lemma": "schizofreni",
+    "definition": "alvorlig psykisk forstyrrelse som kjennetegnes av spaltet personlighet og av tvangstanker, tilbaketrekning fra kontakt og opplevelse av å bli forfulgt (jaget)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skråsikker",
+    "lemma": "skråsikker",
+    "definition": "helt sikker",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stiv",
+    "lemma": "stiv",
+    "definition": "ufri",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "strafferettslig tilregnelig",
+    "lemma": "strafferettslig tilregnelig",
+    "definition": "kan straffes fordi personen er frisk nok til å ta ansvar for sine handlinger",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sviktende",
+    "lemma": "sviktende",
+    "definition": "som uteblir/ikke kommer",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ugjerning (en)",
+    "lemma": "ugjerning",
+    "definition": "ond handling",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vill",
+    "lemma": "vill",
+    "definition": "uten styring; ukontrollert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "vrangforestilling (en)",
+    "lemma": "vrangforestilling",
+    "definition": "uriktig oppfatning/forståelse av noe",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å egge fram",
+    "lemma": "egge fram",
+    "definition": "å lokke fram; å prøve å få fram",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å forårsake",
+    "lemma": "forårsake",
+    "definition": "å være årsak/grunn til",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å oppfordre til",
+    "lemma": "oppfordre til",
+    "definition": "å be om",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å pågripe",
+    "lemma": "pågripe",
+    "definition": "å arrestere",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å skånes",
+    "lemma": "skånes",
+    "definition": "å beskyttes",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "akademia (et)",
+    "lemma": "akademia",
+    "definition": "universiteter og høyskoler",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avgrenset område (et)",
+    "lemma": "avgrenset område",
+    "definition": "et bestemt område",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "brødtekst (en)",
+    "lemma": "brødtekst",
+    "definition": "hovedteksten i f.eks. artikkel",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "dekkende",
+    "lemma": "dekkende",
+    "definition": "beskrivende",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "forskudd (et)",
+    "lemma": "forskudd",
+    "definition": "betaling på forhånd",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ingress (en)",
+    "lemma": "ingress",
+    "definition": "innledning til reportasje",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kunngjøring (en)",
+    "lemma": "kunngjøring",
+    "definition": "offentlig melding",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "leserinnlegg (et)",
+    "lemma": "leserinnlegg",
+    "definition": "brev fra en leser som sier sin mening om en sak",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lettfattelig",
+    "lemma": "lettfattelig",
+    "definition": "lett forståelig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "motspørsmål (et)",
+    "lemma": "motspørsmål",
+    "definition": "kritisk spørsmål",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "redigert",
+    "lemma": "redigert",
+    "definition": "tilrettelagt; gjennomarbeidet",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sensasjon (en)",
+    "lemma": "sensasjon",
+    "definition": "spesiell hendelse",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tettsted (et)",
+    "lemma": "tettsted",
+    "definition": "sted med over 200 innbyggere",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tidsskrift (et)",
+    "lemma": "tidsskrift",
+    "definition": "blad som kommer ut f.eks. hver måned og som ofte inneholder stoff om et bestemt tema eller fagfelt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilsynelatende",
+    "lemma": "tilsynelatende",
+    "definition": "slik det ser ut (ved første øyekast)",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "trolig",
+    "lemma": "trolig",
+    "definition": "sannsynlig",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "underholdning (en)",
+    "lemma": "underholdning",
+    "definition": "moro, f.eks. film, teater eller show",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utdypende",
+    "lemma": "utdypende",
+    "definition": "som forklarer grundigere",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "vinkling (en)",
+    "lemma": "vinkling",
+    "definition": "synsvinkel; side en velger å presentere en sak fra",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å distribuere",
+    "lemma": "distribuere",
+    "definition": "å sende rundt",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å flyte over",
+    "lemma": "flyte over",
+    "definition": "å bre seg utover; her: når det er veldig mye av noe",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å nevne",
+    "lemma": "nevne",
+    "definition": "å si",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "blomsterbed (et)",
+    "lemma": "blomsterbed",
+    "definition": "stykke jord hvor man planter blomster",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forkynnende",
+    "lemma": "forkynnende",
+    "definition": "noe man kunngjør (sier på en høytidelig måte), er forkynnende",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "himmel (en)",
+    "lemma": "himmel",
+    "definition": "verdensrom; Guds bolig (religiøst)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innføring (en)",
+    "lemma": "innføring",
+    "definition": "introduksjon",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kors (et)",
+    "lemma": "kors",
+    "definition": "en vannrett og en loddrett linje som krysser hverandre (symbol for de kristne)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "krakk (en)",
+    "lemma": "krakk",
+    "definition": "møbel til å sitte på som ikke har støtte i ryggen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "negl (en)",
+    "lemma": "negl",
+    "definition": "den ytterste delen av fingrene og tærne har negler",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "storslagen",
+    "lemma": "storslagen",
+    "definition": "fantastisk; imponerende",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ånd (en)",
+    "lemma": "ånd",
+    "definition": "bevissthet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "alderdom (en)",
+    "lemma": "alderdom",
+    "definition": "når man er gammel",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "baksmell (en)",
+    "lemma": "baksmell",
+    "definition": "restskatt (penger du må betale)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "frikort (et)",
+    "lemma": "frikort",
+    "definition": "skattekort for folk som arbeider og som ikke skal betale skatt (fordi de ikke tjener nok til å betale skatt)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "i kor (et)",
+    "lemma": "i kor",
+    "definition": "når en gruppe snakker eller synger samtidig, snakker/synger man i kor",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innskudd (et)",
+    "lemma": "innskudd",
+    "definition": "penger som er satt i banken",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "merverdiavgift (en)",
+    "lemma": "merverdiavgift",
+    "definition": "avgift (penger) til staten på salg av varer og tjenester",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "moms (en)",
+    "lemma": "moms",
+    "definition": "vanlig forkortelse for omsetningsavgift / merverdiavgift",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "næringsvirksomhet (en)",
+    "lemma": "næringsvirksomhet",
+    "definition": "å drive forretninger",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "restskatt (en)",
+    "lemma": "restskatt",
+    "definition": "skatt man skylder og må betale inn i etterkant av skatteoppgjøret",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "spleiselag (et)",
+    "lemma": "spleiselag",
+    "definition": "i et spleiselag går man sammen om å betale noe",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "straffbart",
+    "lemma": "straffbart",
+    "definition": "som etter loven er forbudt og som man kan få straff for",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "tilnærmet gratis",
+    "lemma": "tilnærmet gratis",
+    "definition": "nesten gratis; veldig billig",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "uførhet (en)",
+    "lemma": "uførhet",
+    "definition": "å være ufør; å ikke være i stand til å arbeide",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "virkedag (en)",
+    "lemma": "virkedag",
+    "definition": "arbeidsdag; hverdag",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ytelse (en)",
+    "lemma": "ytelse",
+    "definition": "bidrag; støtte",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "av alle slag (et)",
+    "lemma": "av alle slag",
+    "definition": "alle typer",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "barsel (en)",
+    "lemma": "barsel",
+    "definition": "barnefødsel",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "blonde (en)",
+    "lemma": "blonde",
+    "definition": "heklet pyntekant på f.eks. duker eller klær",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "boligkrakk (et)",
+    "lemma": "boligkrakk",
+    "definition": "økonomisk sammenbrudd på boligmarkedet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "embetsmann (en)",
+    "lemma": "embetsmann",
+    "definition": "person som har en høy stilling i staten",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fjong",
+    "lemma": "fjong",
+    "definition": "flott; elegant",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "gevinst (en)",
+    "lemma": "gevinst",
+    "definition": "vinning; fortjeneste",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gjenreising (en)",
+    "lemma": "gjenreising",
+    "definition": "oppbygging av noe som er blitt ødelagt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "husmann (en)",
+    "lemma": "husmann",
+    "definition": "person som får bruke et stykke jordstykke av en gårdbruker mot visse plikter",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kabal (en)",
+    "lemma": "kabal",
+    "definition": "kortspill for en person",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kaffetår (en)",
+    "lemma": "kaffetår",
+    "definition": "kopp kaffe",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lett og ledig",
+    "lemma": "lett og ledig",
+    "definition": "enkel og uten problemer",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "løsarbeider (en)",
+    "lemma": "løsarbeider",
+    "definition": "person som tar strøjobber/korte oppdrag",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nasjonsbygging (en)",
+    "lemma": "nasjonsbygging",
+    "definition": "arbeid for å bygge opp og styrke en nasjon",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nedgangstid (en)",
+    "lemma": "nedgangstid",
+    "definition": "økonomisk vanskelig periode",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nu (et)",
+    "lemma": "nu",
+    "definition": "nå; øyeblikk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "pandemi (en)",
+    "lemma": "pandemi",
+    "definition": "sykdom som brer seg fra land til land",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "saga (en)",
+    "lemma": "saga",
+    "definition": "norrøn fortelling med en del historiske detaljer",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "staselig",
+    "lemma": "staselig",
+    "definition": "flott; elegant",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "svunne tider",
+    "lemma": "svunne tider",
+    "definition": "tidligere tider",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ydmyk",
+    "lemma": "ydmyk",
+    "definition": "beskjeden",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å alliere seg",
+    "lemma": "alliere seg",
+    "definition": "å avtale samarbeid med",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å by på",
+    "lemma": "by på",
+    "definition": "å gi; å tilby",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å forsørge",
+    "lemma": "forsørge",
+    "definition": "å ha økonomisk ansvar for",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å mønstre på",
+    "lemma": "mønstre på",
+    "definition": "å gå om bord (på et skip)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sperre",
+    "lemma": "sperre",
+    "definition": "å stenge",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "avdød",
+    "lemma": "avdød",
+    "definition": "død",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "bånd (et)",
+    "lemma": "bånd",
+    "definition": "noe som knytter sammen: Peter har bånd til Norge på grunn av sin norske slekt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forfedre (pl.)",
+    "lemma": "forfedre",
+    "definition": "tidligere generasjoner; avdøde slektninger",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opprinnelig",
+    "lemma": "opprinnelig",
+    "definition": "først; i utgangspunktet",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "oppvokst",
+    "lemma": "oppvokst",
+    "definition": "som er vokst opp",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "rikdom (en)",
+    "lemma": "rikdom",
+    "definition": "det å være rik",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "rotfestet",
+    "lemma": "rotfestet",
+    "definition": "med følelse av tilhørighet",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "vidde (en)",
+    "lemma": "vidde",
+    "definition": "flatt og åpent fjellområde",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å ane",
+    "lemma": "ane",
+    "definition": "å ha en følelse av; å ha en tanke om",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å etablere seg",
+    "lemma": "etablere seg",
+    "definition": "å stifte familie, få fast jobb, bolig, etc.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "anbefaling (en)",
+    "lemma": "anbefaling",
+    "definition": "tilråding; når man sier at andre bør prøve eller gjøre noe, gir man en anbefaling",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fruktbar",
+    "lemma": "fruktbar",
+    "definition": "produktiv; jord som gir stor avkastning",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "haugianer (en)",
+    "lemma": "haugianer",
+    "definition": "kristen person som er tilhenger av haugianisme (en gren av den kristne tro), stiftet av nordmannen Hans Nielsen Hauge",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kveker (en)",
+    "lemma": "kveker",
+    "definition": "medlem av kirkesamfunn som oppstod i England i 1649",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "overfart (en)",
+    "lemma": "overfart",
+    "definition": "reise over vann",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "rykte (et)",
+    "lemma": "rykte",
+    "definition": "opplysning (ikke nødvendigvis sann) som fortelles fra en person til en annen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "seilskute (en)",
+    "lemma": "seilskute",
+    "definition": "stor båt som bruker seil",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tonn (et)",
+    "lemma": "tonn",
+    "definition": "1000 kilo",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utvandringsbølge (en)",
+    "lemma": "utvandringsbølge",
+    "definition": "når veldig mange utvandrer i en periode, kan man snakke om en utvandringsbølge",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utvandringspioner (en)",
+    "lemma": "utvandringspioner",
+    "definition": "nybygger som dro ut fra Norge",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "velberget",
+    "lemma": "velberget",
+    "definition": "uskadd (ikke skadet)",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "barrikade (en)",
+    "lemma": "barrikade",
+    "definition": "forskansning",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "bunnløs",
+    "lemma": "bunnløs",
+    "definition": "uten bunn",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "etterkommer (en)",
+    "lemma": "etterkommer",
+    "definition": "person som er i slekt (i rett nedstigende slektslinje)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forholdsvis",
+    "lemma": "forholdsvis",
+    "definition": "ganske; temmelig",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "forkastelig",
+    "lemma": "forkastelig",
+    "definition": "som ikke kan godtas og som må fordømmes",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "grotesk",
+    "lemma": "grotesk",
+    "definition": "overdrevet; forferdelig; grusom",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "hovedtrekk (et)",
+    "lemma": "hovedtrekk",
+    "definition": "grunntrekk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "håndverker (en)",
+    "lemma": "håndverker",
+    "definition": "person som har et håndverk til yrke (snekker, rørlegger, murer, etc.)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "i sitt stille sinn (et)",
+    "lemma": "i sitt stille sinn",
+    "definition": "tanker man tenker for seg selv, er tanker man har i sitt stille sinn",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "selvtilfreds",
+    "lemma": "selvtilfreds",
+    "definition": "fornøyd med seg selv",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skjevfordeling (en)",
+    "lemma": "skjevfordeling",
+    "definition": "urettferdig fordeling (av ressursene)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "synlig",
+    "lemma": "synlig",
+    "definition": "som kan ses",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sysselsetting (en)",
+    "lemma": "sysselsetting",
+    "definition": "å sysselsette = å holde folk i arbeid",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "terskel (en)",
+    "lemma": "terskel",
+    "definition": "grense; overgang",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilpasning (en)",
+    "lemma": "tilpasning",
+    "definition": "det å tilpasse/innrette seg",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å føye til",
+    "lemma": "føye til",
+    "definition": "å legge til",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å regnes",
+    "lemma": "regnes",
+    "definition": "å anses; å bli betraktet som",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å synke ned",
+    "lemma": "synke ned",
+    "definition": "å gli nedover",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utholde",
+    "lemma": "utholde",
+    "definition": "å tåle",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "blunk (et)",
+    "lemma": "blunk",
+    "definition": "øyeblikk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fanteri (et)",
+    "lemma": "fanteri",
+    "definition": "spøk; tull",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "føyelig",
+    "lemma": "føyelig",
+    "definition": "mild og snill; som gjør som andre ønsker",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "glansdager",
+    "lemma": "glansdager",
+    "definition": "den tiden når man føler seg på topp i livet, kan man kalle «glansdager»",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kavaler (en)",
+    "lemma": "kavaler",
+    "definition": "høflig og galant mann",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "makeløs",
+    "lemma": "makeløs",
+    "definition": "enestående; unik",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "paff",
+    "lemma": "paff",
+    "definition": "veldig overrasket",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "på vidt gap (et)",
+    "lemma": "på vidt gap",
+    "definition": "helt åpen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "rynkete",
+    "lemma": "rynkete",
+    "definition": "en eldre person har rynker i ansiktet; huden er rynkete",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skinn (et)",
+    "lemma": "skinn",
+    "definition": "lysskjær",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skrytepave (en)",
+    "lemma": "skrytepave",
+    "definition": "en som forteller fantastiske historier om seg selv, er en skrytepave",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skøyerfant (en)",
+    "lemma": "skøyerfant",
+    "definition": "tullekopp",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tyll (en)",
+    "lemma": "tyll",
+    "definition": "lett, nesten gjennomsiktig stoff",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å glimte",
+    "lemma": "glimte",
+    "definition": "lyse i korte øyeblikk",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "livssyn (et)",
+    "lemma": "livssyn",
+    "definition": "måte å se menneskelivet på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "pugging (en)",
+    "lemma": "pugging",
+    "definition": "mekanisk læring",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "påbygging (en)",
+    "lemma": "påbygging",
+    "definition": "fag man tar i tillegg for å oppnå studiekompetanse",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stigmatiserende",
+    "lemma": "stigmatiserende",
+    "definition": "som er merket som noe som er mindre bra",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "terping (en)",
+    "lemma": "terping",
+    "definition": "gjentatt, mekanisk læring",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilpasset opplæring (en)",
+    "lemma": "tilpasset opplæring",
+    "definition": "undervisning som er spesielt laget for elevens nivå",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "valgfag (et)",
+    "lemma": "valgfag",
+    "definition": "skolefag som velges i tillegg til obligatoriske fag",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å unne seg",
+    "lemma": "unne seg",
+    "definition": "å gi seg selv noe ekstra, f.eks. litt luksus",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "befruktning (en)",
+    "lemma": "befruktning",
+    "definition": "sammensmeltning av to kjønnsceller",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "brøk (en)",
+    "lemma": "brøk",
+    "definition": "tall som angir deler av en enhet, f.eks. 1/4",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "heltesagn (et)",
+    "lemma": "heltesagn",
+    "definition": "kort, muntlig overlevert fortelling om en helt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "note (en)",
+    "lemma": "note",
+    "definition": "skrifttegn som angir en tones høyde og varighet ♪",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "replikk (en)",
+    "lemma": "replikk",
+    "definition": "ytring; svar",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å dale ned",
+    "lemma": "dale ned",
+    "definition": "å falle langsomt ned",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "innesluttet",
+    "lemma": "innesluttet",
+    "definition": "taus; tilbakeholden",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "krumspring (et)",
+    "lemma": "krumspring",
+    "definition": "komisk hopp; en uvanlig handling",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opplysende",
+    "lemma": "opplysende",
+    "definition": "forklarende",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "ordentlig",
+    "lemma": "ordentlig",
+    "definition": "skikkelig",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "syvsover (en)",
+    "lemma": "syvsover",
+    "definition": "person som sover dypt og lenge",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tiltaksløs",
+    "lemma": "tiltaksløs",
+    "definition": "slapp; uten energi",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å raute",
+    "lemma": "raute",
+    "definition": "å brøle / lage høy lyd (om kyr)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "avbrutt",
+    "lemma": "avbrutt",
+    "definition": "stoppet; stanset",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "bredt samarbeid (et)",
+    "lemma": "bredt samarbeid",
+    "definition": "utstrakt (mye) samarbeid",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "curlinggenerasjonen (en)",
+    "lemma": "curlinggenerasjonen",
+    "definition": "en generasjon mennesker som har fått for mye hjelp av foreldrene",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "dagligtale (en)",
+    "lemma": "dagligtale",
+    "definition": "hverdagsspråk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "grav (en)",
+    "lemma": "grav",
+    "definition": "sted der en avdød person er gravlagt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "luksus (en)",
+    "lemma": "luksus",
+    "definition": "overdrevet forbruk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "maner (en)",
+    "lemma": "maner",
+    "definition": "oppførsel",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "resterende",
+    "lemma": "resterende",
+    "definition": "det som er igjen; resten",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "spisskompetanse (en)",
+    "lemma": "spisskompetanse",
+    "definition": "høy kompetanse på et felt/tema",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tyrann (en)",
+    "lemma": "tyrann",
+    "definition": "dominerende og brutal person",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vugge (en)",
+    "lemma": "vugge",
+    "definition": "seng for babyer som kan gynges fram og tilbake",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å marginalisere",
+    "lemma": "marginalisere",
+    "definition": "å holde utenfor",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "aktet",
+    "lemma": "aktet",
+    "definition": "respektert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "den siste hvile (en)",
+    "lemma": "den siste hvile",
+    "definition": "døden",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forfinet",
+    "lemma": "forfinet",
+    "definition": "aristokratisk; kultivert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "fure (en)",
+    "lemma": "fure",
+    "definition": "smal fordypning i jorda",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "i fellesskap (et)",
+    "lemma": "i fellesskap",
+    "definition": "sammen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "knoklete",
+    "lemma": "knoklete",
+    "definition": "med knokler som synes gjennom huden (knokler = bein i kroppen)",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kraftløs",
+    "lemma": "kraftløs",
+    "definition": "uten energi",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "magisk",
+    "lemma": "magisk",
+    "definition": "mystisk; overnaturlig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "majestetisk",
+    "lemma": "majestetisk",
+    "definition": "opphøyd; kongelig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "pinefull",
+    "lemma": "pinefull",
+    "definition": "smertefull",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "trått",
+    "lemma": "trått",
+    "definition": "vanskelig; tung",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å fostre",
+    "lemma": "fostre",
+    "definition": "å gi mat til og passe på",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å lindre",
+    "lemma": "lindre",
+    "definition": "å gjøre smerter mindre vonde",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å rykke til",
+    "lemma": "rykke til",
+    "definition": "å bevege seg hurtig",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å segne om",
+    "lemma": "segne om",
+    "definition": "å falle ned fordi man er veldig sliten eller besvimer",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å slippe løs",
+    "lemma": "slippe løs",
+    "definition": "å bli fri",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tilgi",
+    "lemma": "tilgi",
+    "definition": "å la noe være glemt",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å trenge gjennom",
+    "lemma": "trenge gjennom",
+    "definition": "å komme/gå gjennom",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "gjerningsmann (en)",
+    "lemma": "gjerningsmann",
+    "definition": "person som gjør en ugjerning (= en kriminell handling)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "overgrep (et)",
+    "lemma": "overgrep",
+    "definition": "krenking av andres rettigheter",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "talerør (et)",
+    "lemma": "talerør",
+    "definition": "representant",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tankekors (et)",
+    "lemma": "tankekors",
+    "definition": "noe som gir en overraskende konklusjon; noe man bør tenke gjennom",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tornefull",
+    "lemma": "tornefull",
+    "definition": "vanskelig; smertefull; utfordrende",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å begå",
+    "lemma": "begå",
+    "definition": "å utøve; å gjøre; å begå et lovbrudd = å gjøre en kriminell handling",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bone",
+    "lemma": "bone",
+    "definition": "å polere gulvet med et middel som gjør at det blir blankt og fint",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å florere",
+    "lemma": "florere",
+    "definition": "å vokse fram",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å snyte",
+    "lemma": "snyte",
+    "definition": "å lure; å svindle",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stigmatisere",
+    "lemma": "stigmatisere",
+    "definition": "å sette et «stempel» på noe eller noen og si hvordan noe er – uten at man har grunnlag for det",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å yngle",
+    "lemma": "yngle",
+    "definition": "å få unger (brukt om dyr. Det er respektløst å bruke å yngle om mennesker)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "pussig",
+    "lemma": "pussig",
+    "definition": "rar",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "slektstre (et)",
+    "lemma": "slektstre",
+    "definition": "illustrasjon som viser en oversikt over generasjonene i en slekt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å binde seg",
+    "lemma": "binde seg",
+    "definition": "å bli kjæreste, samboer eller gifte seg",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "data (en)",
+    "lemma": "data",
+    "definition": "opplysninger",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forhør (et)",
+    "lemma": "forhør",
+    "definition": "utspørring",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lapp (en)",
+    "lemma": "lapp",
+    "definition": "papirstykke",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "målrettet",
+    "lemma": "målrettet",
+    "definition": "rettet mot et bestemt mål",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "oversiktlig",
+    "lemma": "oversiktlig",
+    "definition": "som det er lett å få perspektiv over",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "sivil status (en)",
+    "lemma": "sivil status",
+    "definition": "ugift, gift, separert, skilt eller enke/enkemann",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å innkalle til",
+    "lemma": "innkalle til",
+    "definition": "å invitere til møte",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utlyse",
+    "lemma": "utlyse",
+    "definition": "å kunngjøre; å gjøre offentlig",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "andpusten",
+    "lemma": "andpusten",
+    "definition": "som trekker pusten hektisk og ujevnt",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "beger (et)",
+    "lemma": "beger",
+    "definition": "liten skål",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "dundrende",
+    "lemma": "dundrende",
+    "definition": "bankende",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "inntil",
+    "lemma": "inntil",
+    "definition": "bort til",
+    "level": "B1",
+    "part": "adverb"
+  },
+  {
+    "id": "",
+    "norsk": "knagg (en)",
+    "lemma": "knagg",
+    "definition": "noe man henger klær på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "logo (en)",
+    "lemma": "logo",
+    "definition": "firma- eller varemerke",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lydløs",
+    "lemma": "lydløs",
+    "definition": "uten lyd",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "morgenkåpe (en)",
+    "lemma": "morgenkåpe",
+    "definition": "plagg man kan ha på seg f.eks. om morgenen før man kler på seg",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppgitt",
+    "lemma": "oppgitt",
+    "definition": "som mangler mot; resignert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "oppkast (et)",
+    "lemma": "oppkast",
+    "definition": "mageinnhold som er kastet opp",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppslått",
+    "lemma": "oppslått",
+    "definition": "som er åpen",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "pult (en)",
+    "lemma": "pult",
+    "definition": "møbel til å lese eller skrive ved",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "svangerskapspermisjon (en)",
+    "lemma": "svangerskapspermisjon",
+    "definition": "fri fra jobb med lønn når man har fått et barn",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "søkkvåt",
+    "lemma": "søkkvåt",
+    "definition": "våt tvers gjennom klærne",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "uskrevne lover",
+    "lemma": "uskrevne lover",
+    "definition": "«lover» og «regler» som ikke står nedskrevet noe sted",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å gripe",
+    "lemma": "gripe",
+    "definition": "å ta",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kalle på",
+    "lemma": "kalle på",
+    "definition": "å rope",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å konversere",
+    "lemma": "konversere",
+    "definition": "å snakke",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å puste ut",
+    "lemma": "puste ut",
+    "definition": "å være lettet",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å styrtregne",
+    "lemma": "styrtregne",
+    "definition": "å regne veldig kraftig",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å vrenge",
+    "lemma": "vrenge",
+    "definition": "å snu innsiden ut",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "A4-liv (et)",
+    "lemma": "A4-liv",
+    "definition": "vanlig liv med mange rutiner",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "bitende kulde (en)",
+    "lemma": "bitende kulde",
+    "definition": "sterk kulde",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "elendighet (en)",
+    "lemma": "elendighet",
+    "definition": "fattigdom, lidelse og nød",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "etter beste evne (en)",
+    "lemma": "etter beste evne",
+    "definition": "så godt man kan",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "triks (et)",
+    "lemma": "triks",
+    "definition": "noe smart man finner på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "uskyldig",
+    "lemma": "uskyldig",
+    "definition": "når man ikke har gjort noe galt, er man uskyldig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "uthvilt",
+    "lemma": "uthvilt",
+    "definition": "våken og med energi (fordi man har sovet nok)",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "uvitenhet (en)",
+    "lemma": "uvitenhet",
+    "definition": "det å ikke vite",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vidunderlig",
+    "lemma": "vidunderlig",
+    "definition": "fantastisk",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å anstrenge seg",
+    "lemma": "anstrenge seg",
+    "definition": "å prøve veldig mye",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bysse",
+    "lemma": "bysse",
+    "definition": "når man bærer en baby for at den skal sove, bysser man babyen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kaldsvette",
+    "lemma": "kaldsvette",
+    "definition": "å svette og fryse nesten samtidig",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å lulle med",
+    "lemma": "lulle med",
+    "definition": "å synge for å få et barn til å sove",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å skyte",
+    "lemma": "skyte",
+    "definition": "å avfyre pistolskudd",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "adskilt",
+    "lemma": "adskilt",
+    "definition": "separat",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "affære (en)",
+    "lemma": "affære",
+    "definition": "sak",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "berikelse (en)",
+    "lemma": "berikelse",
+    "definition": "noe man blir «rik» av (ikke nødvendigvis rik på penger)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "dragning (en)",
+    "lemma": "dragning",
+    "definition": "tiltrekning",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "forenlig med",
+    "lemma": "forenlig med",
+    "definition": "som kan passe sammen med",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "fredsmegler (en)",
+    "lemma": "fredsmegler",
+    "definition": "en mellommann som prøver å skape fred i en konflikt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gjensidig",
+    "lemma": "gjensidig",
+    "definition": "felles; som gjelder to eller flere",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "hard kost (en)",
+    "lemma": "hard kost",
+    "definition": "noe som er vanskelig å akseptere",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "henging (en)",
+    "lemma": "henging",
+    "definition": "det å ta livet av noen ved å henge dem",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "honnørord (et)",
+    "lemma": "honnørord",
+    "definition": "positive ord",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "implisitt",
+    "lemma": "implisitt",
+    "definition": "på en indirekte måte",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kallelse (en)",
+    "lemma": "kallelse",
+    "definition": "indre stemme som sier at man bør gjøre noe",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "konsentrasjonsleir (en)",
+    "lemma": "konsentrasjonsleir",
+    "definition": "sterkt bevoktet fangeleir med brutal disiplin",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lynnedslag (et)",
+    "lemma": "lynnedslag",
+    "definition": "det at lyn treffer jorden; her: noe som kom veldig plutselig og sterkt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "spådom (en)",
+    "lemma": "spådom",
+    "definition": "varsel om framtiden",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tau (et)",
+    "lemma": "tau",
+    "definition": "rep; snor; noe du bruker for å binde sammen noe eller til å henge noe i",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utbytting (en)",
+    "lemma": "utbytting",
+    "definition": "å bruke andres energi til sin egen fordel",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vertsland (et)",
+    "lemma": "vertsland",
+    "definition": "land som tar imot utlendinger",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "æresmord (et)",
+    "lemma": "æresmord",
+    "definition": "drap som blir begått for å opprettholde æren (respekten) for en familie",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å røre",
+    "lemma": "røre",
+    "definition": "å få sterke følelser",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å suge",
+    "lemma": "suge",
+    "definition": "ta til seg på egoistisk måte",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tilegne seg",
+    "lemma": "tilegne seg",
+    "definition": "å lære seg",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "akt (en)",
+    "lemma": "akt",
+    "definition": "seksuell aktivitet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "arvegods (et)",
+    "lemma": "arvegods",
+    "definition": "ting som går i arv gjennom flere generasjoner",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avgudsdyrkelse (en)",
+    "lemma": "avgudsdyrkelse",
+    "definition": "tilbedelse av fremmede, falske guder",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "beskjeden",
+    "lemma": "beskjeden",
+    "definition": "reservert",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "buffer (en)",
+    "lemma": "buffer",
+    "definition": "frisone",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "bølgedal (en)",
+    "lemma": "bølgedal",
+    "definition": "nedgangsperiode",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "dyrebar",
+    "lemma": "dyrebar",
+    "definition": "verdifull",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "enevelde (et)",
+    "lemma": "enevelde",
+    "definition": "styringsform der én person har all makt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fortolkning (en)",
+    "lemma": "fortolkning",
+    "definition": "forklaring; måte å forstå noe på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fremmedfrykt (en)",
+    "lemma": "fremmedfrykt",
+    "definition": "redsel for det som er annerledes",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fromhet (en)",
+    "lemma": "fromhet",
+    "definition": "å være ydmyk, mild og snill (i en religiøs sammenheng)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gjestfrihet (en)",
+    "lemma": "gjestfrihet",
+    "definition": "det å passe godt på mennesker som er på besøk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "indre",
+    "lemma": "indre",
+    "definition": "som er inne i",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "juvel (en)",
+    "lemma": "juvel",
+    "definition": "viktig og kjær person",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kalif (en)",
+    "lemma": "kalif",
+    "definition": "overhode for det muslimske samfunnet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lærd",
+    "lemma": "lærd",
+    "definition": "kunnskapsrik",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "mirakel (et)",
+    "lemma": "mirakel",
+    "definition": "under; uforståelig hendelse",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "misvisende",
+    "lemma": "misvisende",
+    "definition": "uriktig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "nestforstander (en)",
+    "lemma": "nestforstander",
+    "definition": "leder nummer to i et religiøst samfunn",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ordre (en)",
+    "lemma": "ordre",
+    "definition": "befaling",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stridighet (en)",
+    "lemma": "stridighet",
+    "definition": "konflikt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilsynsvakt (en)",
+    "lemma": "tilsynsvakt",
+    "definition": "vakt som passer på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "trone (en)",
+    "lemma": "trone",
+    "definition": "opphøyet sete/stol som brukes mest av kongelige",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utukt (en)",
+    "lemma": "utukt",
+    "definition": "seksuell handling som går imot moralen som gjelder i samfunnet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "veiledning (en)",
+    "lemma": "veiledning",
+    "definition": "råd; hjelp",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vers (et)",
+    "lemma": "vers",
+    "definition": "del av et kapittel i en religiøs tekst",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å forsømme",
+    "lemma": "forsømme",
+    "definition": "å ikke gjøre pliktene sine",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å forvrenge",
+    "lemma": "forvrenge",
+    "definition": "å gi falskt bilde av",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gjengjelde",
+    "lemma": "gjengjelde",
+    "definition": "å betale/gi tilbake",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å heve",
+    "lemma": "heve",
+    "definition": "å løfte",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å opphøre",
+    "lemma": "opphøre",
+    "definition": "å slutte; å stanse",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å opphøye",
+    "lemma": "opphøye",
+    "definition": "å gjøre høyere",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å skrelle bort",
+    "lemma": "skrelle bort",
+    "definition": "å fjerne",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "rampete",
+    "lemma": "rampete",
+    "definition": "frekk; som gjør noen gale ting",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "revet",
+    "lemma": "revet",
+    "definition": "delt; ødelagt",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skrøpelig",
+    "lemma": "skrøpelig",
+    "definition": "dårlig / ikke i god stand",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "splittet",
+    "lemma": "splittet",
+    "definition": "delt",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å angi",
+    "lemma": "angi",
+    "definition": "å melde",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å furte",
+    "lemma": "furte",
+    "definition": "å være sur og fornærmet",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gli bort",
+    "lemma": "gli bort",
+    "definition": "å forsvinne bort fra",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å henge igjen",
+    "lemma": "henge igjen",
+    "definition": "å sitte fast i",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å røpe",
+    "lemma": "røpe",
+    "definition": "å avsløre; gjøre kjent",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å skrøne",
+    "lemma": "skrøne",
+    "definition": "å fortelle historier som ikke er sanne",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sveve",
+    "lemma": "sveve",
+    "definition": "å gli i lufta",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tore",
+    "lemma": "tore",
+    "definition": "å våge; å ikke være redd",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "ammetåke (en)",
+    "lemma": "ammetåke",
+    "definition": "psykisk ubalanse etter en fødsel",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "blank",
+    "lemma": "blank",
+    "definition": "hvit; ubrukt",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "desperat",
+    "lemma": "desperat",
+    "definition": "fortvilt; som ikke vet hva han/hun skal gjøre",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "diger",
+    "lemma": "diger",
+    "definition": "stor",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "fargestift (en)",
+    "lemma": "fargestift",
+    "definition": "farge til å tegne med",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innredning (en)",
+    "lemma": "innredning",
+    "definition": "utstyr inne i et hus",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innslag (et)",
+    "lemma": "innslag",
+    "definition": "del av nyhetssending",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "motbakke (en)",
+    "lemma": "motbakke",
+    "definition": "oppoverbakke; tung bakke",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "målbevisst",
+    "lemma": "målbevisst",
+    "definition": "som er fokusert på å nå en plan",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "nybakt mamma",
+    "lemma": "nybakt mamma",
+    "definition": "kvinne som nettopp har blitt mor",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "overflatisk",
+    "lemma": "overflatisk",
+    "definition": "ikke dyp; ikke grundig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skjebne (en)",
+    "lemma": "skjebne",
+    "definition": "livets vei",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skjelvende",
+    "lemma": "skjelvende",
+    "definition": "ristende",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skyhøy",
+    "lemma": "skyhøy",
+    "definition": "veldig høy",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stikk (et)",
+    "lemma": "stikk",
+    "definition": "plutselig smerte",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stål (et)",
+    "lemma": "stål",
+    "definition": "jern; metall",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "søvnløs",
+    "lemma": "søvnløs",
+    "definition": "som ikke får sove",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å blinke",
+    "lemma": "blinke",
+    "definition": "å lyse (av og til)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ruve",
+    "lemma": "ruve",
+    "definition": "å virke stor",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å spandere",
+    "lemma": "spandere",
+    "definition": "å bruke (om penger)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å telle",
+    "lemma": "telle",
+    "definition": "si 1, 2, 3 …",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "bekjentskap (et)",
+    "lemma": "bekjentskap",
+    "definition": "med en venn har du et vennskap – med en du kjenner litt, har du et bekjentskap",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gradestokk (en)",
+    "lemma": "gradestokk",
+    "definition": "termometer",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kamin (en)",
+    "lemma": "kamin",
+    "definition": "peislignende ovn",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "rot (en)",
+    "lemma": "rot",
+    "definition": "opprinnelige identitet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "talerstol (en)",
+    "lemma": "talerstol",
+    "definition": "høyt sted der man står og snakker til andre",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ullsokk (en)",
+    "lemma": "ullsokk",
+    "definition": "strømpe laget av ull (fra sauen)",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "vedovn (en)",
+    "lemma": "vedovn",
+    "definition": "ovn til å fyre med ved",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "velvillig",
+    "lemma": "velvillig",
+    "definition": "ønsket; han ble velvillig med (han ønsket det)",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "yndlingsstol (en)",
+    "lemma": "yndlingsstol",
+    "definition": "favorittstol",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å blokkere",
+    "lemma": "blokkere",
+    "definition": "å stenge for",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å forestille seg",
+    "lemma": "forestille seg",
+    "definition": "å se for seg",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å svinne hen",
+    "lemma": "svinne hen",
+    "definition": "å forsvinne",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "berg (et)",
+    "lemma": "berg",
+    "definition": "fjell",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "blind",
+    "lemma": "blind",
+    "definition": "som ikke kan se",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "henlagt",
+    "lemma": "henlagt",
+    "definition": "å bli lagt til side",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "stempel (et)",
+    "lemma": "stempel",
+    "definition": "merke",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "terreng (et)",
+    "lemma": "terreng",
+    "definition": "område",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "undergang (en)",
+    "lemma": "undergang",
+    "definition": "det å bli ødelagt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "øvrighet (en)",
+    "lemma": "øvrighet",
+    "definition": "myndighet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å by på",
+    "lemma": "by på",
+    "definition": "å gi mulighet til",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gli over",
+    "lemma": "gli over",
+    "definition": "å gå over; å forsvinne",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å medføre",
+    "lemma": "medføre",
+    "definition": "å føre med seg; ha som konsekvens",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stryke ut",
+    "lemma": "stryke ut",
+    "definition": "å slette; å ta bort; å eliminere",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "episode (et)",
+    "lemma": "episode",
+    "definition": "hendelse",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "havutsikt (en)",
+    "lemma": "havutsikt",
+    "definition": "plass der en kan se utover sjøen",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "hjerteskjærende",
+    "lemma": "hjerteskjærende",
+    "definition": "som gjør en veldig vondt",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "kjennskap (et)",
+    "lemma": "kjennskap",
+    "definition": "det å kjenne til",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opparbeidet",
+    "lemma": "opparbeidet",
+    "definition": "bygd opp",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "port (en)",
+    "lemma": "port",
+    "definition": "dør",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "raseri (et)",
+    "lemma": "raseri",
+    "definition": "sinne; aggresjon",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "signal (et)",
+    "lemma": "signal",
+    "definition": "indikasjon",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "sjalu",
+    "lemma": "sjalu",
+    "definition": "misunnelig",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skremt",
+    "lemma": "skremt",
+    "definition": "redd",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "staude (en)",
+    "lemma": "staude",
+    "definition": "plante som lever i flere år",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tast (en)",
+    "lemma": "tast",
+    "definition": "knapp på f.eks. en mobiltelefon",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tegn (et)",
+    "lemma": "tegn",
+    "definition": "indikasjon",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "unnskyldning (en)",
+    "lemma": "unnskyldning",
+    "definition": "hvis du sier unnskyld, ber du om unnskyldning / tilgivelse for noe",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å skli",
+    "lemma": "skli",
+    "definition": "å gli",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å trygle",
+    "lemma": "trygle",
+    "definition": "å be veldig innstendig",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "dynetrekk (et)",
+    "lemma": "dynetrekk",
+    "definition": "det man tar utenpå en dyne, er et dynetrekk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "bly (et)",
+    "lemma": "bly",
+    "definition": "metallstoff",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gjennomborende",
+    "lemma": "gjennomborende",
+    "definition": "som går inn og gjennom noe",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "hoggorm (en)",
+    "lemma": "hoggorm",
+    "definition": "giftig slange",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "høylytt",
+    "lemma": "høylytt",
+    "definition": "som tydelig kan høres",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "lynsnar",
+    "lemma": "lynsnar",
+    "definition": "veldig rask",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "madrass (en)",
+    "lemma": "madrass",
+    "definition": "underlag til å sove på",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "myggstikk (et)",
+    "lemma": "myggstikk",
+    "definition": "når myggen (insekt) biter et mennesket, får man et myggstikk",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "pille (en)",
+    "lemma": "pille",
+    "definition": "tablett",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "rede (et)",
+    "lemma": "rede",
+    "definition": "hjem; sted hvor fugler holder til",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skarp",
+    "lemma": "skarp",
+    "definition": "sterk",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "skritt (et)",
+    "lemma": "skritt",
+    "definition": "steg; når man går, tar man flere skritt",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "slintre (en)",
+    "lemma": "slintre",
+    "definition": "liten del av tannkjøttet",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "stripe (en)",
+    "lemma": "stripe",
+    "definition": "strek; linje",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "svett",
+    "lemma": "svett",
+    "definition": "når man blir varm, blir man våt og svett",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "trassig",
+    "lemma": "trassig",
+    "definition": "sta; veldig bestemt",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "å holde sammen",
+    "lemma": "holde sammen",
+    "definition": "å være sammen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å slåss",
+    "lemma": "slåss",
+    "definition": "å kjempe",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å surkle",
+    "lemma": "surkle",
+    "definition": "når vann gir fra seg en spesiell lyd, surkler det",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "barbent",
+    "lemma": "barbent",
+    "definition": "uten sko eller strømper",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "bleket",
+    "lemma": "bleket",
+    "definition": "gjort lysere",
+    "level": "B1",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "grønn lunge (en)",
+    "lemma": "grønn lunge",
+    "definition": "grønt område; park",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "isbitmaskin (en)",
+    "lemma": "isbitmaskin",
+    "definition": "maskin som lager isbiter",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "krøtter (et)",
+    "lemma": "krøtter",
+    "definition": "kuer, okser, geiter og sauer",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "kull (et)",
+    "lemma": "kull",
+    "definition": "ulike karbonrike stoffer",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "lyspære (en)",
+    "lemma": "lyspære",
+    "definition": "glasspære for elektrisk lys",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "messing (en)",
+    "lemma": "messing",
+    "definition": "metallstoff",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nylonstrømpe (en)",
+    "lemma": "nylonstrømpe",
+    "definition": "tynn strømpe",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "røykring (en)",
+    "lemma": "røykring",
+    "definition": "ring av røyk som dannes av person som røyker en sigarett",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "slag (et)",
+    "lemma": "slag",
+    "definition": "type",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "smell (et)",
+    "lemma": "smell",
+    "definition": "kort, høy lyd",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tørketrommel (en)",
+    "lemma": "tørketrommel",
+    "definition": "maskin som tørker klær",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utfall (et)",
+    "lemma": "utfall",
+    "definition": "resultat",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å slenge",
+    "lemma": "slenge",
+    "definition": "å kaste",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å varsle",
+    "lemma": "varsle",
+    "definition": "å gi beskjed",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avblomstre",
+    "lemma": "avblomstre",
+    "definition": "Betyr det samme som å blomstre av.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å blomstre av",
+    "lemma": "blomstre av",
+    "definition": "Betyr det samme som å avblomstre.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bryte av",
+    "lemma": "bryte av",
+    "definition": "Betyr det samme som å avbryte.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avdele",
+    "lemma": "avdele",
+    "definition": "Betyr det samme som å dele av.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dele av",
+    "lemma": "dele av",
+    "definition": "Betyr det samme som å avdele.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avfyre",
+    "lemma": "avfyre",
+    "definition": "Betyr det samme som å fyre av.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avløse",
+    "lemma": "avløse",
+    "definition": "Betyr det samme som å løse av.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å løse av",
+    "lemma": "løse av",
+    "definition": "Betyr det samme som å avløse.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å slutte av",
+    "lemma": "slutte av",
+    "definition": "Betyr det samme som å avslutte.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avvenne",
+    "lemma": "avvenne",
+    "definition": "Betyr det samme som å venne av.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å venne av",
+    "lemma": "venne av",
+    "definition": "Betyr det samme som å avvenne.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å framlegge",
+    "lemma": "framlegge",
+    "definition": "Betyr det samme som å legge fram.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å legge fram",
+    "lemma": "legge fram",
+    "definition": "Betyr det samme som å framlegge.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å framsette",
+    "lemma": "framsette",
+    "definition": "Betyr det samme som å sette fram.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sette fram",
+    "lemma": "sette fram",
+    "definition": "Betyr det samme som å framsette.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innbetale",
+    "lemma": "innbetale",
+    "definition": "Betyr det samme som å betale inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å betale inn",
+    "lemma": "betale inn",
+    "definition": "Betyr det samme som å innbetale.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innbringe",
+    "lemma": "innbringe",
+    "definition": "Betyr det samme som å bringe inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bringe inn",
+    "lemma": "bringe inn",
+    "definition": "Betyr det samme som å innbringe.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å inndele",
+    "lemma": "inndele",
+    "definition": "Betyr det samme som å dele inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dele inn",
+    "lemma": "dele inn",
+    "definition": "Betyr det samme som å inndele.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å føre inn",
+    "lemma": "føre inn",
+    "definition": "Betyr det samme som å innføre.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å hente inn",
+    "lemma": "hente inn",
+    "definition": "Betyr det samme som å innhente.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kalle inn",
+    "lemma": "kalle inn",
+    "definition": "Betyr det samme som å innkalle.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innkreve",
+    "lemma": "innkreve",
+    "definition": "Betyr det samme som å kreve inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kreve inn",
+    "lemma": "kreve inn",
+    "definition": "Betyr det samme som å innkreve.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innlevere",
+    "lemma": "innlevere",
+    "definition": "Betyr det samme som å levere inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å levere inn",
+    "lemma": "levere inn",
+    "definition": "Betyr det samme som å innlevere.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innmelde",
+    "lemma": "innmelde",
+    "definition": "Betyr det samme som å melde inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å melde inn",
+    "lemma": "melde inn",
+    "definition": "Betyr det samme som å innmelde.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innpakke",
+    "lemma": "innpakke",
+    "definition": "Betyr det samme som å pakke inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å pakke inn",
+    "lemma": "pakke inn",
+    "definition": "Betyr det samme som å innpakke.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innramme",
+    "lemma": "innramme",
+    "definition": "Betyr det samme som å ramme inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ramme inn",
+    "lemma": "ramme inn",
+    "definition": "Betyr det samme som å innramme.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innrapportere",
+    "lemma": "innrapportere",
+    "definition": "Betyr det samme som å rapportere inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å rapportere inn",
+    "lemma": "rapportere inn",
+    "definition": "Betyr det samme som å innrapportere.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innsette",
+    "lemma": "innsette",
+    "definition": "Betyr det samme som å sette inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innstramme",
+    "lemma": "innstramme",
+    "definition": "Betyr det samme som å stramme inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innvirke",
+    "lemma": "innvirke",
+    "definition": "Betyr det samme som å virke inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å virke inn",
+    "lemma": "virke inn",
+    "definition": "Betyr det samme som å innvirke.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å nedbryte",
+    "lemma": "nedbryte",
+    "definition": "Betyr det samme som å bryte ned.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bryte ned",
+    "lemma": "bryte ned",
+    "definition": "Betyr det samme som å nedbryte.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å nedlegge",
+    "lemma": "nedlegge",
+    "definition": "Betyr det samme som å legge ned.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å legge ned",
+    "lemma": "legge ned",
+    "definition": "Betyr det samme som å nedlegge.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å oppfinne",
+    "lemma": "oppfinne",
+    "definition": "Betyr det samme som å finne opp.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å oppruste",
+    "lemma": "oppruste",
+    "definition": "Betyr det samme som å ruste opp.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ruste opp",
+    "lemma": "ruste opp",
+    "definition": "Betyr det samme som å oppruste.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å summere opp",
+    "lemma": "summere opp",
+    "definition": "Betyr det samme som å oppsummere.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å opptrappe",
+    "lemma": "opptrappe",
+    "definition": "Betyr det samme som å trappe opp.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å trappe opp",
+    "lemma": "trappe opp",
+    "definition": "Betyr det samme som å opptrappe.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å oppvigle",
+    "lemma": "oppvigle",
+    "definition": "Betyr det samme som å vigle opp.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å vigle opp",
+    "lemma": "vigle opp",
+    "definition": "Betyr det samme som å oppvigle.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ta over",
+    "lemma": "ta over",
+    "definition": "Betyr det samme som å overta.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å påløpe",
+    "lemma": "påløpe",
+    "definition": "Betyr det samme som å løpe på.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å løpe på",
+    "lemma": "løpe på",
+    "definition": "Betyr det samme som å påløpe.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å påtenne",
+    "lemma": "påtenne",
+    "definition": "Betyr det samme som å tenne på.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tenne på",
+    "lemma": "tenne på",
+    "definition": "Betyr det samme som å påtenne.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å virke på",
+    "lemma": "virke på",
+    "definition": "Betyr det samme som å påvirke.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utbetale",
+    "lemma": "utbetale",
+    "definition": "Betyr det samme som å betale ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å betale ut",
+    "lemma": "betale ut",
+    "definition": "Betyr det samme som å utbetale.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utdele",
+    "lemma": "utdele",
+    "definition": "Betyr det samme som å dele ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dele ut",
+    "lemma": "dele ut",
+    "definition": "Betyr det samme som å utdele.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utestenge",
+    "lemma": "utestenge",
+    "definition": "Betyr det samme som å stenge ute.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utgi",
+    "lemma": "utgi",
+    "definition": "Betyr det samme som å gi ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gi ut",
+    "lemma": "gi ut",
+    "definition": "Betyr det samme som å utgi.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å lyse ut",
+    "lemma": "lyse ut",
+    "definition": "Betyr det samme som å utlyse.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utspørre",
+    "lemma": "utspørre",
+    "definition": "Betyr det samme som å spørre ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å spørre ut",
+    "lemma": "spørre ut",
+    "definition": "Betyr det samme som å utspørre.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utstå",
+    "lemma": "utstå",
+    "definition": "Betyr det samme som å stå ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stå ut",
+    "lemma": "stå ut",
+    "definition": "Betyr det samme som å utstå.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tilføye",
+    "lemma": "tilføye",
+    "definition": "Betyr det samme som å føye til.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dekke av",
+    "lemma": "dekke av",
+    "definition": "Betyr det samme som å avdekke.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avslå",
+    "lemma": "avslå",
+    "definition": "Betyr det samme som å slå av.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å framgå",
+    "lemma": "framgå",
+    "definition": "Betyr det samme som å gå fram.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gå fram",
+    "lemma": "gå fram",
+    "definition": "Betyr det samme som å framgå.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å framkalle",
+    "lemma": "framkalle",
+    "definition": "Betyr det samme som å kalle fram.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kalle fram",
+    "lemma": "kalle fram",
+    "definition": "Betyr det samme som å framkalle.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å frasi",
+    "lemma": "frasi",
+    "definition": "Betyr det samme som å si fra.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gi igjen",
+    "lemma": "gi igjen",
+    "definition": "Betyr det samme som å gjengi.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å inndra",
+    "lemma": "inndra",
+    "definition": "Betyr det samme som å dra inn.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dra inn",
+    "lemma": "dra inn",
+    "definition": "Betyr det samme som å inndra.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dele med",
+    "lemma": "dele med",
+    "definition": "Betyr det samme som å meddele.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å komme ned",
+    "lemma": "komme ned",
+    "definition": "Betyr det samme som å nedkomme.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dra opp",
+    "lemma": "dra opp",
+    "definition": "Betyr det samme som å oppdra.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å føre opp",
+    "lemma": "føre opp",
+    "definition": "Betyr det samme som å oppføre.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å fylle opp",
+    "lemma": "fylle opp",
+    "definition": "Betyr det samme som å oppfylle.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å løse opp",
+    "lemma": "løse opp",
+    "definition": "Betyr det samme som å oppløse.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å opplyse",
+    "lemma": "opplyse",
+    "definition": "Betyr det samme som å lyse opp.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å muntre opp",
+    "lemma": "muntre opp",
+    "definition": "Betyr det samme som å oppmuntre.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å nå opp",
+    "lemma": "nå opp",
+    "definition": "Betyr det samme som å oppnå.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å opprive",
+    "lemma": "opprive",
+    "definition": "Betyr det samme som å rive opp.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sette over",
+    "lemma": "sette over",
+    "definition": "Betyr det samme som å oversette.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å føre på",
+    "lemma": "føre på",
+    "definition": "Betyr det samme som å påføre.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å pågå",
+    "lemma": "pågå",
+    "definition": "Betyr det samme som å gå på.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å påse",
+    "lemma": "påse",
+    "definition": "Betyr det samme som å se på.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tilkomme",
+    "lemma": "tilkomme",
+    "definition": "Betyr det samme som å komme til.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å passe til",
+    "lemma": "passe til",
+    "definition": "Betyr det samme som å tilpasse.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tilta",
+    "lemma": "tilta",
+    "definition": "Betyr det samme som å ta til.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utfolde",
+    "lemma": "utfolde",
+    "definition": "Betyr det samme som å folde ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å folde ut",
+    "lemma": "folde ut",
+    "definition": "Betyr det samme som å utfolde.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utgå",
+    "lemma": "utgå",
+    "definition": "Betyr det samme som å gå ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utsette",
+    "lemma": "utsette",
+    "definition": "Betyr det samme som å sette ut.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å komme til verden",
+    "lemma": "komme til verden",
+    "definition": "å bli født",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å sette i",
+    "lemma": "sette i",
+    "definition": "å begynne",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å løse seg",
+    "lemma": "løse seg",
+    "definition": "å ordne seg",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å smyge seg av gårde",
+    "lemma": "smyge seg av gårde",
+    "definition": "å gå veldig stille bort",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å få seg",
+    "lemma": "få seg",
+    "definition": "å anskaffe; å skaffe seg",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å slå på tråden",
+    "lemma": "slå på tråden",
+    "definition": "å ringe i telefonen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kle seg ut",
+    "lemma": "kle seg ut",
+    "definition": "å ta på seg kostyme",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å føle seg satt ut",
+    "lemma": "føle seg satt ut",
+    "definition": "å bli sjokkert og overrasket",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å legge seg opp i",
+    "lemma": "legge seg opp i",
+    "definition": "å blande seg inn i",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å legge til side",
+    "lemma": "legge til side",
+    "definition": "å glemme",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å gå på",
+    "lemma": "gå på",
+    "definition": "Betyr det samme som å pågå.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stå på",
+    "lemma": "stå på",
+    "definition": "Betyr det samme som å påstå.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "avblomstring (en)",
+    "lemma": "avblomstring",
+    "definition": "Substantivet av å avblomstre.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avbrytelse (en)",
+    "lemma": "avbrytelse",
+    "definition": "Substantivet av å avbryte.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avfyring (en)",
+    "lemma": "avfyring",
+    "definition": "Substantivet av å avfyre.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avløsning (en)",
+    "lemma": "avløsning",
+    "definition": "Substantivet av å avløse.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avvenning (en)",
+    "lemma": "avvenning",
+    "definition": "Substantivet av å avvenne.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "framleggelse (en)",
+    "lemma": "framleggelse",
+    "definition": "Substantivet av å framlegge.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "framsettelse (en)",
+    "lemma": "framsettelse",
+    "definition": "Substantivet av å framsette.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innbetaling (en)",
+    "lemma": "innbetaling",
+    "definition": "Substantivet av å innbetale.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innbringing (en)",
+    "lemma": "innbringing",
+    "definition": "Substantivet av å innbringe.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "inndeling (en)",
+    "lemma": "inndeling",
+    "definition": "Substantivet av å inndele.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innføring (en)",
+    "lemma": "innføring",
+    "definition": "Substantivet av å innføre.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innhenting (en)",
+    "lemma": "innhenting",
+    "definition": "Substantivet av å innhente.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innkreving (en)",
+    "lemma": "innkreving",
+    "definition": "Substantivet av å innkreve.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innlevering (en)",
+    "lemma": "innlevering",
+    "definition": "Substantivet av å innlevere.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innmelding (en)",
+    "lemma": "innmelding",
+    "definition": "Substantivet av å innmelde.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innpakking (en)",
+    "lemma": "innpakking",
+    "definition": "Substantivet av å innpakke.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innpakning (en)",
+    "lemma": "innpakning",
+    "definition": "Substantivet av å innpakke.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innramming (en)",
+    "lemma": "innramming",
+    "definition": "Substantivet av å innramme.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innrapportering (en)",
+    "lemma": "innrapportering",
+    "definition": "Substantivet av å innrapportere.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innsettelse (en)",
+    "lemma": "innsettelse",
+    "definition": "Substantivet av å innsette.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "innstramming (en)",
+    "lemma": "innstramming",
+    "definition": "Substantivet av å innstramme.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nedbryting (en)",
+    "lemma": "nedbryting",
+    "definition": "Substantivet av å nedbryte.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nedbrytning (en)",
+    "lemma": "nedbrytning",
+    "definition": "Substantivet av å nedbryte.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nedleggelse (en)",
+    "lemma": "nedleggelse",
+    "definition": "Substantivet av å nedlegge.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppfinnelse (en)",
+    "lemma": "oppfinnelse",
+    "definition": "Substantivet av å oppfinne.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opprustning (en)",
+    "lemma": "opprustning",
+    "definition": "Substantivet av å oppruste.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppsummering (en)",
+    "lemma": "oppsummering",
+    "definition": "Substantivet av å oppsummere.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opptrapping (en)",
+    "lemma": "opptrapping",
+    "definition": "Substantivet av å opptrappe.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppvigler (en)",
+    "lemma": "oppvigler",
+    "definition": "Substantivet av å oppvigle.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "overtakelse (en)",
+    "lemma": "overtakelse",
+    "definition": "Substantivet av å overta.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "påtenning (en)",
+    "lemma": "påtenning",
+    "definition": "Substantivet av å påtenne.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "påvirkning (en)",
+    "lemma": "påvirkning",
+    "definition": "Substantivet av å påvirke.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "planlegging (en)",
+    "lemma": "planlegging",
+    "definition": "Substantivet av å planlegge.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "understreking (en)",
+    "lemma": "understreking",
+    "definition": "Substantivet av å understreke.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "understrekning (en)",
+    "lemma": "understrekning",
+    "definition": "Substantivet av å understreke.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utbetaling (en)",
+    "lemma": "utbetaling",
+    "definition": "Substantivet av å utbetale.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utdeling (en)",
+    "lemma": "utdeling",
+    "definition": "Substantivet av å utdele.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utestenging (en)",
+    "lemma": "utestenging",
+    "definition": "Substantivet av å utestenge.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utgivelse (en)",
+    "lemma": "utgivelse",
+    "definition": "Substantivet av å utgi.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utlysing (en)",
+    "lemma": "utlysing",
+    "definition": "Substantivet av å utlyse.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utspørring (en)",
+    "lemma": "utspørring",
+    "definition": "Substantivet av å utspørre.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilføyelse (en)",
+    "lemma": "tilføyelse",
+    "definition": "Substantivet av å tilføye.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "anseelse (en)",
+    "lemma": "anseelse",
+    "definition": "Substantivet av å anse.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "avdekking (en)",
+    "lemma": "avdekking",
+    "definition": "Substantivet av å avdekke.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "framgang (en)",
+    "lemma": "framgang",
+    "definition": "Substantivet av å framgå.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "framkalling (en)",
+    "lemma": "framkalling",
+    "definition": "Substantivet av å framkalle.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "frasigelse (en)",
+    "lemma": "frasigelse",
+    "definition": "Substantivet av å frasi.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "gjengivelse (en)",
+    "lemma": "gjengivelse",
+    "definition": "Substantivet av å gjengi.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "inndragelse (en)",
+    "lemma": "inndragelse",
+    "definition": "Substantivet av å inndra.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "meddelelse (en)",
+    "lemma": "meddelelse",
+    "definition": "Substantivet av å meddele.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "nedkomst (en)",
+    "lemma": "nedkomst",
+    "definition": "Substantivet av å nedkomme.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppdragelse (en)",
+    "lemma": "oppdragelse",
+    "definition": "Substantivet av å oppdra.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppføring (en)",
+    "lemma": "oppføring",
+    "definition": "Substantivet av å oppføre.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppfyllelse (en)",
+    "lemma": "oppfyllelse",
+    "definition": "Substantivet av å oppfylle.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppmuntring (en)",
+    "lemma": "oppmuntring",
+    "definition": "Substantivet av å oppmuntre.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppstand (en)",
+    "lemma": "oppstand",
+    "definition": "Substantivet av å oppstå.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppstandelse (en)",
+    "lemma": "oppstandelse",
+    "definition": "Substantivet av å oppstå.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppnåelse (en)",
+    "lemma": "oppnåelse",
+    "definition": "Substantivet av å oppnå.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opprettelse (en)",
+    "lemma": "opprettelse",
+    "definition": "Substantivet av å opprette.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "oppriving (en)",
+    "lemma": "oppriving",
+    "definition": "Substantivet av å opprive.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "opprivning (en)",
+    "lemma": "opprivning",
+    "definition": "Substantivet av å opprive.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "påføring (en)",
+    "lemma": "påføring",
+    "definition": "Substantivet av å påføre.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "pågang (en)",
+    "lemma": "pågang",
+    "definition": "Substantivet av å pågå.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "påpekning (en)",
+    "lemma": "påpekning",
+    "definition": "Substantivet av å påpeke.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "påsyn (et)",
+    "lemma": "påsyn",
+    "definition": "Substantivet av å påse.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilkomst (en)",
+    "lemma": "tilkomst",
+    "definition": "Substantivet av å tilkomme.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tilpassing (en)",
+    "lemma": "tilpassing",
+    "definition": "Substantivet av å tilpasse.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utbryting (en)",
+    "lemma": "utbryting",
+    "definition": "Substantivet av å utbryte.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utfoldelse (en)",
+    "lemma": "utfoldelse",
+    "definition": "Substantivet av å utfolde.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utgang (en)",
+    "lemma": "utgang",
+    "definition": "Substantivet av å utgå.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "utsettelse (en)",
+    "lemma": "utsettelse",
+    "definition": "Substantivet av å utsette.",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å ha krefter til",
+    "lemma": "ha krefter til",
+    "definition": "å ha energi til",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tåle kulde",
+    "lemma": "tåle kulde",
+    "definition": "å klare seg fint når det er kaldt",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å folde seg ut",
+    "lemma": "folde seg ut",
+    "definition": "å brette seg ut",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utforske tilværelsen",
+    "lemma": "utforske tilværelsen",
+    "definition": "å studere livet",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bære på en hemmelighet",
+    "lemma": "bære på en hemmelighet",
+    "definition": "å vite noe man ikke vil fortelle til andre",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å innta en bedre frokost",
+    "lemma": "innta en bedre frokost",
+    "definition": "å spise en god frokost",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avlegge en visitt",
+    "lemma": "avlegge en visitt",
+    "definition": "å besøke",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å tvinge seg på",
+    "lemma": "tvinge seg på",
+    "definition": "å presse seg på",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stride mot loven",
+    "lemma": "stride mot loven",
+    "definition": "når noe er imot loven",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å vie plass",
+    "lemma": "vie plass",
+    "definition": "å gi plass",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å trekke skatt",
+    "lemma": "trekke skatt",
+    "definition": "å betale skatt",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å inngå våpenhvile",
+    "lemma": "inngå våpenhvile",
+    "definition": "å legge ned våpnene",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å klatre oppover",
+    "lemma": "klatre oppover",
+    "definition": "å komme seg oppover",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bryte et forhold",
+    "lemma": "bryte et forhold",
+    "definition": "å avslutte en relasjon, som f.eks. et kjæresteforhold",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stifte familie",
+    "lemma": "stifte familie",
+    "definition": "å etablere familie",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å flakke omkring",
+    "lemma": "flakke omkring",
+    "definition": "å dra urolig rundt fra sted til sted",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å drive rundt",
+    "lemma": "drive rundt",
+    "definition": "å vandre/gå rundt uten å ha et bestemt mål",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å fomle etter",
+    "lemma": "fomle etter",
+    "definition": "å gjøre noe klosset med hendene (klosset = uelegant)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å avlegge et besøk",
+    "lemma": "avlegge et besøk",
+    "definition": "å besøke",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å plukke opp litt norsk",
+    "lemma": "plukke opp litt norsk",
+    "definition": "å lære seg litt norsk her og der",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å rette på noen",
+    "lemma": "rette på noen",
+    "definition": "å korrigere noen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å satse hardt på",
+    "lemma": "satse hardt på",
+    "definition": "å jobbe hardt for",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å føle seg slått ut",
+    "lemma": "føle seg slått ut",
+    "definition": "å være veldig sliten og trist",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å måle seg med",
+    "lemma": "måle seg med",
+    "definition": "å være like god som",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å slite for",
+    "lemma": "slite for",
+    "definition": "å jobbe hardt for",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stabbe av gårde",
+    "lemma": "stabbe av gårde",
+    "definition": "å gå bortover med litt dårlig balanse",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å versere flere versjoner",
+    "lemma": "versere flere versjoner",
+    "definition": "når en hendelse blir fortalt på flere måter av ulike folk, verserer det flere versjoner av den samme hendelsen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å slenge ut en påstand",
+    "lemma": "slenge ut en påstand",
+    "definition": "å si noe uten å ha dokumentasjon for det man sier",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å fatte interesse for",
+    "lemma": "fatte interesse for",
+    "definition": "å bli interessert i (her: fatte = å få)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dryppe av seg",
+    "lemma": "dryppe av seg",
+    "definition": "å la vannet falle av i dråper",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å kaste seg ut",
+    "lemma": "kaste seg ut",
+    "definition": "å bevege seg raskt ut (av et rom)",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å komme ut av rutiner",
+    "lemma": "komme ut av rutiner",
+    "definition": "å glemme rutiner",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å snike seg ut",
+    "lemma": "snike seg ut",
+    "definition": "å gå stille slik at ingen merker at man går",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å utveksle et par ord",
+    "lemma": "utveksle et par ord",
+    "definition": "å snakke litt sammen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å oppnå en drøm",
+    "lemma": "oppnå en drøm",
+    "definition": "å realisere en drøm",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å virke som",
+    "lemma": "virke som",
+    "definition": "å arbeide som",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å vri seg i pine",
+    "lemma": "vri seg i pine",
+    "definition": "å bevege seg raskt på grunn av smerte",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bedrive utukt (en)",
+    "lemma": "å bedrive utukt",
+    "definition": "å gjøre umoralske seksuelle handlinger",
+    "level": "B1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "å framsette en tolkning",
+    "lemma": "framsette en tolkning",
+    "definition": "å presentere en forståelsesmåte",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å nedfelle i",
+    "lemma": "nedfelle i",
+    "definition": "skrevet i",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bre utover",
+    "lemma": "bre utover",
+    "definition": "å spre utover; å legge utover",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å være satt ut",
+    "lemma": "være satt ut",
+    "definition": "når man er satt ut, vet man ikke hva man skal gjøre",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å dyrke kjærligheten",
+    "lemma": "dyrke kjærligheten",
+    "definition": "å være opptatt av kjærligheten",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ofre en tanke",
+    "lemma": "ofre en tanke",
+    "definition": "å gi en tanke; å tenke på",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å ta rollen på alvor",
+    "lemma": "ta rollen på alvor",
+    "definition": "å være seriøs i en oppgave",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å heve seg over noe",
+    "lemma": "heve seg over noe",
+    "definition": "å gjøre seg selv høyere enn andre; å ikke ta seg nær av noe",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å bære preg av",
+    "lemma": "bære preg av",
+    "definition": "å være merket av",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å fabrikkere en historie",
+    "lemma": "fabrikkere en historie",
+    "definition": "å fortelle en usann historie",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å klamre seg til noen",
+    "lemma": "klamre seg til noen",
+    "definition": "å holde seg godt fast i noen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å klynge seg til noen",
+    "lemma": "klynge seg til noen",
+    "definition": "å holde godt fast i noen",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å trekke inn en lukt",
+    "lemma": "trekke inn en lukt",
+    "definition": "å lukte",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å legge en plan",
+    "lemma": "legge en plan",
+    "definition": "Betyr det samme som å planlegge.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å streke under",
+    "lemma": "streke under",
+    "definition": "Betyr det samme som å understreke.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å stenge ute",
+    "lemma": "stenge ute",
+    "definition": "Betyr det samme som å utestenge.",
+    "level": "B1",
+    "part": "verb"
+  },
+  {
+    "id": "",
+    "norsk": "å legge øde",
+    "lemma": "legge øde",
+    "definition": "Betyr det samme som å ødelegge.",
+    "level": "B1",
+    "part": "verb"
+  }
+]
