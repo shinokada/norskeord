@@ -74,6 +74,15 @@
   function segKey(seg: (typeof data.segments)[number]) {
     return `${seg.topic}-${seg.access}`;
   }
+
+  // Scope the displayed count to the active level filter, matching
+  // /learn/[level] (which only ever counts questions where q.cefr equals
+  // that exact level). With no filter active, fall back to the segment's
+  // full total across all its levels — same as before.
+  function segTotal(seg: (typeof data.segments)[number]): number {
+    if (selectedLevel) return seg.countsByLevel[selectedLevel] ?? 0;
+    return seg.total;
+  }
 </script>
 
 <svelte:head>
@@ -170,7 +179,7 @@
         <TopicCard
           topic={seg.topic}
           rule={GRAMMAR_RULES[seg.topic]}
-          total={seg.total}
+          total={segTotal(seg)}
           levels={seg.levels}
           level={selectedLevel}
         />
@@ -187,7 +196,7 @@
           <TopicCard
             topic={seg.topic}
             rule={GRAMMAR_RULES[seg.topic]}
-            total={seg.total}
+            total={segTotal(seg)}
             levels={seg.levels}
             level={selectedLevel}
           />

@@ -153,9 +153,14 @@
 
   async function navigateTo(entry: SearchEntry) {
     close();
+    // Carry the exact word into the flashcard deck via ?word= so the target
+    // page can surface it first instead of wherever it lands in the shuffle
+    // (see ai-docs/implementation/search-jump-to-card.md).
+    const separator = entry.href.includes('?') ? '&' : '?';
+    const href = `${entry.href}${separator}word=${encodeURIComponent(entry.norsk)}`;
     // entry.href values are valid app routes generated at build time
     // eslint-disable-next-line svelte/no-navigation-without-resolve
-    await goto(entry.href);
+    await goto(href);
   }
 
   // ── Highlight helper ───────────────────────────────────────────────────────
