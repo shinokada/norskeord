@@ -52,12 +52,13 @@ export const load = async ({ url, locals }) => {
   let onboardingDone: boolean = false;
   let onboardingSnoozedAt: string | null = null;
   let flashcardLanguage: string | null = null;
+  let fsrsRetention: number | null = null;
 
   if (locals.user) {
     const { data } = await locals.supabase
       .from('profiles')
       .select(
-        'display_name, current_level, session_limit, show_example, onboarding_done, onboarding_snoozed_at, flashcard_language'
+        'display_name, current_level, session_limit, show_example, onboarding_done, onboarding_snoozed_at, flashcard_language, fsrs_retention'
       )
       .eq('id', locals.user.id)
       .maybeSingle();
@@ -68,6 +69,7 @@ export const load = async ({ url, locals }) => {
     onboardingDone = data?.onboarding_done ?? false;
     onboardingSnoozedAt = data?.onboarding_snoozed_at ?? null;
     flashcardLanguage = data?.flashcard_language ?? null;
+    fsrsRetention = data?.fsrs_retention ?? null;
   }
 
   return {
@@ -83,6 +85,7 @@ export const load = async ({ url, locals }) => {
     // Onboarding
     onboardingDone,
     onboardingSnoozedAt,
-    flashcardLanguage
+    flashcardLanguage,
+    fsrsRetention
   };
 };

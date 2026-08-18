@@ -28656,24 +28656,6 @@
     "part": "verb"
   },
   {
-    "id": "v-b2-technology-038",
-    "norsk": "søkemotor (en)",
-    "lemma": "søkemotor",
-    "english": "a search engine",
-    "ukrainian": "пошукова система",
-    "spanish": "motor de búsqueda",
-    "german": "eine Suchmaschine",
-    "example": "De fleste bruker en søkemotor for å finne informasjon raskt på internett.",
-    "example_english": "Most people use a search engine to find information quickly on the internet.",
-    "example_ukrainian": "Більшість людей використовують пошукову систему, щоб швидко знайти інформацію в інтернеті.",
-    "example_spanish": "La mayoría de la gente usa un motor de búsqueda para encontrar información rápidamente en internet.",
-    "example_german": "Die meisten Menschen nutzen eine Suchmaschine, um schnell Informationen im Internet zu finden.",
-    "definition": "Et digitalt verktøy på internett som hjelper deg å finne nettsider og informasjon.",
-    "level": "B2",
-    "category": "technology",
-    "part": "noun"
-  },
-  {
     "id": "v-b2-technology-039",
     "norsk": "turbin (en)",
     "lemma": "turbin",

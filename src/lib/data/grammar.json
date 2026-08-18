@@ -2544,6 +2544,129 @@
     "plusOnly": true
   },
   {
+    "id": "gq-sv-017",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn partisippet i bestemt form (som adjektiv).",
+    "sentence": "Legen så på den _____ armen hans.",
+    "words": ["brukne", "brukket"],
+    "answer": "brukne",
+    "hint": "Partisipp på -et som adjektiv bøyes som «gammel → gamle»: brukket → brukne.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-018",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn partisippet i bestemt form (som adjektiv).",
+    "sentence": "Det _____ beinet gjorde veldig vondt.",
+    "words": ["brukne", "brukket"],
+    "answer": "brukne",
+    "hint": "Bestemt form: brukket → brukne, uansett kjønn (et bein → det brukne beinet).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-019",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Hun så det sprukne vinduet.",
+    "optionB": "Hun så det sprukket vinduet.",
+    "answer": "A",
+    "explanation": "Partisippet «sprukket» bøyes som adjektiv i bestemt form: sprukne, ikke sprukket.",
+    "hint": "Bestemt form dropper -et og legger til -ne.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-020",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Glasset falt i gulvet og fikk en sprekk. Velg riktig setning.",
+    "options": [
+      "Det sprukne glasset ligger på bordet.",
+      "Det sprukket glasset ligger på bordet.",
+      "Det sprukne glass ligger på bordet."
+    ],
+    "answer": "Det sprukne glasset ligger på bordet.",
+    "hint": "Bestemt form av substantiv (glasset) + partisipp i bestemt adjektivform (sprukne).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-021",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningene til én setning med partisippet foran substantivet, i bestemt form.",
+    "source": "Katten var forkommen. Vi tok den med hjem.",
+    "answer": "Vi tok den forkomne katten med hjem.",
+    "hint": "«Forkommen» er allerede en -en-adjektivform (ikke -et), men bøyningsmønsteret er det samme: forkomne i bestemt form.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-022",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn partisippet i bestemt form (som adjektiv).",
+    "sentence": "Han fulgte den _____ regelen nøye.",
+    "words": ["skrevne", "skrevet"],
+    "answer": "skrevne",
+    "hint": "skrevet (partisipp) → skrevne i bestemt form, som adjektiv foran substantivet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-023",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Den", "brukne", "foten", "gjorde", "vondt"],
+    "answer": "Den brukne foten gjorde vondt.",
+    "alternates": ["Den brukne foten gjorde vondt"],
+    "hint": "Partisipp i bestemt adjektivform (brukne) står foran substantivet (foten), som andre adjektiv.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-024",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningene til én setning med partisippet foran substantivet, i bestemt form.",
+    "source": "Kyllingen var frosset. Vi kjøpte den på tilbud.",
+    "answer": "Vi kjøpte den frosne kyllingen på tilbud.",
+    "hint": "frosset (partisipp) → frosne i bestemt form, som adjektiv foran substantivet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-025",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig preteritumsform.",
+    "sentence": "De _____ toget til Bergen i går.",
+    "words": ["tok", "tar", "tatt"],
+    "answer": "tok",
+    "hint": "ta er et sterkt verb: ta → tok (preteritum).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-026",
+    "topic": "sterke-verb",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg har funnet nøkkelen.",
+    "optionB": "Jeg har fant nøkkelen.",
+    "answer": "A",
+    "explanation": "finne → fant (preteritum), → har funnet (perfektum). Etter «har» trenger du perfektum partisipp: funnet.",
+    "hint": "Etter «har» brukes perfektum partisipp, ikke preteritum.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-hels-001",
     "topic": "helsetninger",
     "cefr": "A2",
@@ -3494,6 +3617,120 @@
     "answer": "Skogen ligger bakenfor huset.",
     "alternates": ["Skogen ligger bakenfor huset"],
     "hint": "«ligger bakenfor» beskriver noe som ligger lengre bak enn et annet fast punkt."
+  },
+  {
+    "id": "gq-prep-sted-045",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Bildet henger ovenfor bordet.",
+    "optionB": "Bildet henger overfor bordet.",
+    "answer": "A",
+    "explanation": "«Ovenfor» = høyere oppe enn noe, i fysisk/romlig forstand. «Overfor» betyr «rett imot» og passer ikke når noe bare henger høyere oppe.",
+    "hint": "Om noe henger høyere oppe enn noe annet: «ovenfor»."
+  },
+  {
+    "id": "gq-prep-sted-046",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Banken ligger overfor kirken.",
+    "optionB": "Banken ligger ovenfor kirken.",
+    "answer": "A",
+    "explanation": "«Overfor» = rett imot, på den andre siden av noe. Banken ligger her rett imot kirken, ikke høyere oppe.",
+    "hint": "Om noe ligger rett imot noe annet: «overfor»."
+  },
+  {
+    "id": "gq-prep-sted-047",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Hun stod _____ sjefen og forklarte problemet.",
+    "words": ["overfor", "ovenfor"],
+    "answer": "overfor",
+    "hint": "«Overfor» = ansikt til ansikt med noen."
+  },
+  {
+    "id": "gq-prep-sted-048",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Vinduet er _____ døren, litt høyere oppe på veggen.",
+    "words": ["ovenfor", "overfor"],
+    "answer": "ovenfor",
+    "hint": "«Litt høyere oppe» viser til vertikal posisjon: «ovenfor»."
+  },
+  {
+    "id": "gq-prep-sted-049",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["bordet", "Bildet", "henger", "ovenfor"],
+    "answer": "Bildet henger ovenfor bordet.",
+    "alternates": ["Bildet henger ovenfor bordet"],
+    "hint": "«henge ovenfor» = være plassert høyere oppe enn noe."
+  },
+  {
+    "id": "gq-prep-sted-050",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["naboen", "Hun", "stod", "overfor"],
+    "answer": "Hun stod overfor naboen.",
+    "alternates": ["Hun stod overfor naboen"],
+    "hint": "«stå overfor» = stå ansikt til ansikt med noen."
+  },
+  {
+    "id": "gq-prep-sted-051",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Broren uttrykte sterke følelser overfor søsteren sin etter krangelen. Velg riktig forklaring på hvordan «overfor» brukes her.",
+    "options": [
+      "«Overfor» viser til en følelse rettet mot en person.",
+      "«Overfor» viser til en fysisk posisjon høyere oppe.",
+      "«Overfor» viser til noe nevnt tidligere i teksten."
+    ],
+    "answer": "«Overfor» viser til en følelse rettet mot en person.",
+    "hint": "«Følelser overfor noen» = følelser rettet mot den personen."
+  },
+  {
+    "id": "gq-prep-sted-052",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Velg setningen der «ovenfor» er brukt riktig.",
+    "options": [
+      "Han hilste vennlig ovenfor naboen på gaten.",
+      "Fjellet ligger ovenfor byen, godt synlig fra torget.",
+      "De sto ovenfor hverandre og diskuterte høylytt."
+    ],
+    "answer": "Fjellet ligger ovenfor byen, godt synlig fra torget.",
+    "hint": "«Ovenfor» beskriver kun fysisk/vertikal posisjon, ikke følelser eller det å stå ansikt til ansikt."
+  },
+  {
+    "id": "gq-prep-sted-053",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Det er tydelig at …»",
+    "source": "Hun står overfor et vanskelig problem.",
+    "answer": "Det er tydelig at hun står overfor et vanskelig problem.",
+    "alternates": ["Det er tydelig at hun står overfor et vanskelig problem"],
+    "hint": "«stå overfor et problem» = måtte håndtere/møte et problem."
+  },
+  {
+    "id": "gq-prep-sted-054",
+    "topic": "preposisjoner-sted",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Hun følte stor respekt overfor læreren sin.",
+    "optionB": "Hun følte stor respekt ovenfor læreren sin.",
+    "answer": "A",
+    "explanation": "Følelser rettet mot en person bruker «overfor», ikke «ovenfor» (som kun beskriver fysisk posisjon).",
+    "hint": "Følelser rettet mot noen: «overfor»."
   },
   {
     "id": "gq-farger-001",
@@ -9172,6 +9409,134 @@
     "plusOnly": true
   },
   {
+    "id": "gq-fa-b1-001",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig form av «få».",
+    "sentence": "Hun _____ mange gaver på bursdagen sin i går.",
+    "words": ["fikk", "ga"],
+    "answer": "fikk",
+    "hint": "Å motta noe = å få det, ikke å gi (ga) det.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-002",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig form av «få».",
+    "sentence": "De _____ en hund forrige sommer.",
+    "words": ["fikk", "tok"],
+    "answer": "fikk",
+    "hint": "«Få» kan også bety å skaffe seg noe, som et kjæledyr.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-003",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig form av «få».",
+    "sentence": "Hun _____ vondt i magen etter middagen.",
+    "words": ["fikk", "var"],
+    "answer": "fikk",
+    "hint": "Å bli rammet av noe ubehagelig (smerte, sykdom) = å få det.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-004",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig form av «få».",
+    "sentence": "Barna _____ leke ute til klokka åtte i kveld.",
+    "words": ["får", "skal"],
+    "answer": "får",
+    "hint": "«Få + infinitiv» kan uttrykke tillatelse til å gjøre noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-005",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «få + perfektum partisipp» for å vise at noe ble gjennomført.",
+    "source": "Vi vasket bilen i går.",
+    "answer": "Vi fikk vasket bilen i går.",
+    "alternates": ["Vi fikk vasket bilen i går"],
+    "hint": "«Få + perfektum partisipp» viser at noe ble utført/gjennomført.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-006",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med uttrykket «få med seg» i nektende form.",
+    "source": "Hun forsto ikke hva læreren sa.",
+    "answer": "Hun fikk ikke med seg hva læreren sa.",
+    "alternates": ["Hun fikk ikke med seg hva læreren sa"],
+    "hint": "«Ikke få med seg» = ikke forstå/oppfatte noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-007",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "En journalist var til stede og så hele filmpremieren. Velg riktig setning.",
+    "options": [
+      "Journalisten fikk med seg hele filmpremieren.",
+      "Journalisten fikk hele filmpremieren med hjem.",
+      "Journalisten tok med seg filmpremieren."
+    ],
+    "answer": "Journalisten fikk med seg hele filmpremieren.",
+    "hint": "«Få med seg» en hendelse = å være til stede og oppleve den.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-008",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Elevene forstod grammatikken godt i timen. Velg riktig setning.",
+    "options": [
+      "Elevene fikk med seg grammatikken.",
+      "Elevene tok med seg grammatikken.",
+      "Elevene fikk grammatikken hjem."
+    ],
+    "answer": "Elevene fikk med seg grammatikken.",
+    "hint": "«Få med seg» informasjon = å forstå/oppfatte den.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-009",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Familien tok bøkene med seg da de dro hjem fra biblioteket. Velg riktig setning.",
+    "options": [
+      "De fikk med seg bøkene hjem.",
+      "De fikk med seg bøkene om.",
+      "De fikk forstått bøkene hjem."
+    ],
+    "answer": "De fikk med seg bøkene hjem.",
+    "hint": "«Få med seg» en gjenstand = å ta den med seg fysisk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-fa-b1-010",
+    "topic": "verbet-a-fa",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Hun", "fikk", "med", "seg", "hele", "filmen"],
+    "answer": "Hun fikk med seg hele filmen.",
+    "alternates": ["Hun fikk med seg hele filmen"],
+    "hint": "Hun var til stede og så hele filmen.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-vik-c-001",
     "topic": "verbform-i-kontekst",
     "cefr": "C",
@@ -10316,7 +10681,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Velg riktig setning.",
-    "options": ["Onkelen min er pensjonist nå.", "Onkelen min er en pensjonist nå.", "Onkelen min er pensjonisten nå."],
+    "options": [
+      "Onkelen min er pensjonist nå.",
+      "Onkelen min er en pensjonist nå.",
+      "Onkelen min er pensjonisten nå."
+    ],
     "answer": "Onkelen min er pensjonist nå.",
     "hint": "Identitetsutsagn om subjektet, uten adjektiv: ingen artikkel og ikke bestemt form."
   },
@@ -12759,6 +13128,128 @@
     "hint": "Fakta du er usikker på → «tror»."
   },
   {
+    "id": "gq-synestror-009",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg «synes» eller «tror».",
+    "sentence": "Jeg _____ det blir kaldt i morgen.",
+    "words": ["tror", "synes"],
+    "answer": "tror",
+    "hint": "«Synes» kan ikke brukes om framtiden — bruk «tror».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-010",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg «synes» eller «tror».",
+    "sentence": "Sjefen _____ prosjektet blir vellykket neste år.",
+    "words": ["tror", "synes"],
+    "answer": "tror",
+    "hint": "En uttalelse om noe som ennå ikke har skjedd, krever «tror».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-011",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon for å uttrykke tillit.",
+    "sentence": "Jeg tror _____ deg — du klarer eksamen!",
+    "words": ["på", "om"],
+    "answer": "på",
+    "hint": "«Tro på» = ha tillit til noen eller noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-012",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Jeg tror det blir sol i helgen.",
+    "optionB": "Jeg synes det blir sol i helgen.",
+    "answer": "A",
+    "explanation": "Været i helgen ligger i framtiden, og «synes» kan ikke brukes om noe som ennå ikke har skjedd — kun «tror».",
+    "hint": "Framtid → «tror», aldri «synes».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-013",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Jeg synes det bør bli varmere til sommeren.",
+    "optionB": "Jeg synes det blir varmere til sommeren.",
+    "answer": "A",
+    "explanation": "«Synes» kan kombineres med «bør» for å uttrykke en mening om hvordan framtiden BØR bli — men uten «bør» kan «synes» ikke brukes om framtiden.",
+    "hint": "Unntaket er «synes» + «bør» om framtiden.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-014",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Rett opp setningen slik at den blir grammatisk riktig.",
+    "source": "Jeg synes konserten blir bra i kveld.",
+    "answer": "Jeg tror konserten blir bra i kveld.",
+    "alternates": ["Jeg tror konserten blir bra i kveld"],
+    "hint": "Konserten har ikke skjedd ennå, så «synes» må byttes ut med «tror».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-015",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Rett opp setningen slik at den blir grammatisk riktig.",
+    "source": "Vi synes møtet blir langt i morgen.",
+    "answer": "Vi tror møtet blir langt i morgen.",
+    "alternates": ["Vi tror møtet blir langt i morgen"],
+    "hint": "En antakelse om noe i framtiden krever «tror», ikke «synes».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-016",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Jeg", "tror", "vinner", "hun", "konkurransen"],
+    "answer": "Jeg tror hun vinner konkurransen.",
+    "alternates": ["Jeg tror hun vinner konkurransen"],
+    "hint": "En gjetning om et framtidig resultat → «tror», satt først i setningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-017",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Elena skal på jobbintervju neste uke og er nervøs. Hun vet ikke hvordan det går, men er optimistisk. Velg setningen som passer best.",
+    "options": [
+      "Jeg tror jeg får jobben.",
+      "Jeg synes jeg får jobben.",
+      "Jeg synes jeg bør få jobben."
+    ],
+    "answer": "Jeg tror jeg får jobben.",
+    "hint": "En gjetning om et framtidig resultat (jobbintervjuet) krever «tror».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-synestror-018",
+    "topic": "synes-tror",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Jeg tror på Gud.",
+    "optionB": "Jeg synes om Gud.",
+    "answer": "A",
+    "explanation": "«Tro på» (med «på») betyr å ha tillit til eller tro på noen/noe — «synes om» finnes ikke i denne betydningen.",
+    "hint": "Tillit/tro på noen eller noe → «tro på».",
+    "plusOnly": true
+  },
+  {
     "id": "gq-klokka-001",
     "topic": "klokka-tid",
     "cefr": "A1",
@@ -15030,11 +15521,7 @@
     "type": "fill",
     "prompt": "Velg riktig uttrykk: kan subjektet selv bestemme utfallet?",
     "sentence": "Vi _____ bygge nytt hus neste år. Det er en fast plan.",
-    "words": [
-      "skal",
-      "kommer til å",
-      "håper at"
-    ],
+    "words": ["skal", "kommer til å", "håper at"],
     "answer": "skal",
     "hint": "Å bygge hus er noe man selv planlegger og bestemmer — bruk «skal».",
     "plusOnly": true
@@ -15046,11 +15533,7 @@
     "type": "fill",
     "prompt": "Velg riktig uttrykk: et utfall ingen kan planlegge eller bestemme.",
     "sentence": "Denne boka _____ selge veldig mye, tror forfatteren.",
-    "words": [
-      "kommer til å",
-      "skal",
-      "har tenkt å"
-    ],
+    "words": ["kommer til å", "skal", "har tenkt å"],
     "answer": "kommer til å",
     "hint": "Ingen kan bestemme hvor mye en bok selger, så «skal» passer ikke her.",
     "plusOnly": true
@@ -15090,9 +15573,7 @@
     "prompt": "Skriv om setningen med «kommer til å», siden dette er noe ingen kan bestemme over.",
     "source": "Værmeldingen viser mye snø denne uka.",
     "answer": "Det kommer til å snø mye denne uka.",
-    "alternates": [
-      "Det kommer til å snø mye denne uken."
-    ],
+    "alternates": ["Det kommer til å snø mye denne uken."],
     "hint": "Været er ikke noe man planlegger eller bestemmer.",
     "plusOnly": true
   },
@@ -15103,11 +15584,7 @@
     "type": "fill",
     "prompt": "Velg riktig uttrykk for en klar, avtalt plan.",
     "sentence": "Firmaet _____ åpne en ny butikk i sentrum til høsten. Avtalen er allerede klar.",
-    "words": [
-      "skal",
-      "kommer til å",
-      "vil"
-    ],
+    "words": ["skal", "kommer til å", "vil"],
     "answer": "skal",
     "hint": "En avtale som allerede er klar betyr at firmaet selv har bestemt og planlagt dette.",
     "plusOnly": true
@@ -15117,23 +15594,9 @@
     "topic": "framtid-uttrykk",
     "cefr": "B1",
     "type": "order",
-    "tokens": [
-      "Elever",
-      "som",
-      "kommer",
-      "til",
-      "å",
-      "stå",
-      "på",
-      "eksamen",
-      "har",
-      "øvd",
-      "mye"
-    ],
+    "tokens": ["Elever", "som", "kommer", "til", "å", "stå", "på", "eksamen", "har", "øvd", "mye"],
     "answer": "Elever som har øvd mye kommer til å stå på eksamen.",
-    "alternates": [
-      "Elever som har øvd mye, kommer til å stå på eksamen."
-    ],
+    "alternates": ["Elever som har øvd mye, kommer til å stå på eksamen."],
     "hint": "«Kommer til å» + infinitiv brukes om en spådom basert på innsats/bevis, ikke en plan.",
     "plusOnly": true
   },
@@ -15156,11 +15619,7 @@
     "type": "fill",
     "prompt": "Velg riktig uttrykk for en generell antakelse om framtiden.",
     "sentence": "Jeg tror markedet _____ bli bedre neste år, men ingen vet sikkert.",
-    "words": [
-      "vil",
-      "skal",
-      "har lyst til å"
-    ],
+    "words": ["vil", "skal", "har lyst til å"],
     "answer": "vil",
     "hint": "«Vil» brukes om en generell spådom eller antakelse, ikke en avtalt plan.",
     "plusOnly": true
@@ -15486,7 +15945,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Velg setningen med riktig ord.",
-    "options": ["Det var på bursdagsfesten da jeg møtte mannen min for første gang.", "Det var på bursdagsfesten når jeg møtte mannen min for første gang.", "Det var på bursdagsfesten at jeg møtte mannen min for første gang."],
+    "options": [
+      "Det var på bursdagsfesten da jeg møtte mannen min for første gang.",
+      "Det var på bursdagsfesten når jeg møtte mannen min for første gang.",
+      "Det var på bursdagsfesten at jeg møtte mannen min for første gang."
+    ],
     "answer": "Det var på bursdagsfesten da jeg møtte mannen min for første gang.",
     "explanation": "Substantiv («bursdagsfesten») som navngir en bestemt anledning i fortiden følges av «da».",
     "plusOnly": true
@@ -15966,7 +16429,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Familien har bare to biler, og bare en av dem kan brukes om gangen. Velg riktig setning.",
-    "options": ["Vi kjører enten den røde bilen eller den blå bilen.", "Vi kjører både den røde bilen og den blå bilen.", "Vi kjører verken den røde bilen eller den blå bilen."],
+    "options": [
+      "Vi kjører enten den røde bilen eller den blå bilen.",
+      "Vi kjører både den røde bilen og den blå bilen.",
+      "Vi kjører verken den røde bilen eller den blå bilen."
+    ],
     "answer": "Vi kjører enten den røde bilen eller den blå bilen.",
     "explanation": "Situasjonen beskriver et valg mellom to muligheter, ikke begge deler eller ingen av delene.",
     "hint": "Tenk på hva som skiller «både», «enten» og «verken» i betydning."
@@ -16019,7 +16486,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Nora liker både kaffe og te, hun drikker gjerne begge deler hver dag. Velg riktig setning om Nora.",
-    "options": ["Nora drikker både kaffe og te.", "Nora drikker enten kaffe eller te.", "Nora drikker verken kaffe eller te."],
+    "options": [
+      "Nora drikker både kaffe og te.",
+      "Nora drikker enten kaffe eller te.",
+      "Nora drikker verken kaffe eller te."
+    ],
     "answer": "Nora drikker både kaffe og te.",
     "explanation": "Siden hun liker og drikker begge deler, er det «både … og» som passer, ikke et valg mellom dem.",
     "hint": "Tenk på om setningen beskriver begge deler, et valg, eller ingen av delene."
@@ -16034,6 +16505,130 @@
     "words": ["enten", "verken"],
     "answer": "enten",
     "hint": "Han vurderer to muligheter, ikke avviser begge."
+  },
+  {
+    "id": "gq-badeverken-023",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Jeg liker fotball. Jeg liker _____ ski.",
+    "words": ["også", "heller"],
+    "answer": "også",
+    "hint": "«Også» brukes for å legge til i en bekreftende setning."
+  },
+  {
+    "id": "gq-badeverken-024",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Jeg liker ikke fotball. Jeg liker ikke ski _____.",
+    "words": ["heller", "også"],
+    "answer": "heller",
+    "hint": "I en nektende setning må «også» byttes ut med «heller», plassert til slutt."
+  },
+  {
+    "id": "gq-badeverken-025",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen til nektende form med «heller».",
+    "source": "Hun drikker kaffe. Hun drikker også te.",
+    "answer": "Hun drikker ikke kaffe. Hun drikker ikke te heller.",
+    "alternates": ["Hun drikker ikke kaffe. Hun drikker ikke te heller"],
+    "hint": "«Også» kan ikke stå i en nektende setning; bytt til «(ikke) ... heller»."
+  },
+  {
+    "id": "gq-badeverken-026",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Jeg liker ikke sjokolade. Jeg liker ikke kake heller.",
+    "optionB": "Jeg liker ikke sjokolade. Jeg liker også ikke kake.",
+    "answer": "Jeg liker ikke sjokolade. Jeg liker ikke kake heller.",
+    "explanation": "«Også» kan ikke brukes i en nektende setning for å uttrykke enighet — riktig ord er «heller», plassert til slutt.",
+    "hint": "Se etter hvilken setning som bruker «heller» riktig i nektende form."
+  },
+  {
+    "id": "gq-badeverken-027",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Petter sykler ikke til jobben. Han svømmer heller ikke om morgenen. Velg riktig setning som oppsummerer dette.",
+    "options": [
+      "Petter sykler ikke til jobben, og han svømmer ikke heller.",
+      "Petter sykler ikke til jobben, og han svømmer også ikke.",
+      "Petter sykler ikke til jobben, og han svømmer ikke også."
+    ],
+    "answer": "Petter sykler ikke til jobben, og han svømmer ikke heller.",
+    "hint": "«Heller» kommer etter «ikke» i den andre nektende setningen."
+  },
+  {
+    "id": "gq-badeverken-028",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Vi dro til fjellet i sommer. Vi dro _____ til sjøen.",
+    "words": ["også", "heller"],
+    "answer": "også",
+    "hint": "Setningen er bekreftende, så «også» er riktig."
+  },
+  {
+    "id": "gq-badeverken-029",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": [
+      "Hun",
+      "spiser",
+      "ikke",
+      "fisk",
+      ",",
+      "og",
+      "hun",
+      "spiser",
+      "ikke",
+      "kjøtt",
+      "heller"
+    ],
+    "answer": "Hun spiser ikke fisk, og hun spiser ikke kjøtt heller.",
+    "alternates": ["Hun spiser ikke fisk, og hun spiser ikke kjøtt heller"],
+    "hint": "«Heller» avslutter den andre nektende setningen."
+  },
+  {
+    "id": "gq-badeverken-030",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen til bekreftende form med «også».",
+    "source": "Han reiser ikke til Oslo i helgen. Han reiser ikke til Bergen heller.",
+    "answer": "Han reiser til Oslo i helgen. Han reiser også til Bergen.",
+    "alternates": ["Han reiser til Oslo i helgen. Han reiser også til Bergen"],
+    "hint": "I en bekreftende setning brukes «også», ikke «heller»."
+  },
+  {
+    "id": "gq-badeverken-031",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Barna liker å synge. De liker _____ å danse.",
+    "words": ["også", "heller"],
+    "answer": "også",
+    "hint": "Bekreftende setning = «også»."
+  },
+  {
+    "id": "gq-badeverken-032",
+    "topic": "bade-og-verken-eller",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Kaia liker ikke å løpe. Marius liker ikke å løpe heller.",
+    "optionB": "Kaia liker ikke å løpe. Marius liker også ikke å løpe.",
+    "answer": "Kaia liker ikke å løpe. Marius liker ikke å løpe heller.",
+    "explanation": "Når det andre subjektet også er negert, må «heller» brukes til slutt i setningen, ikke «også».",
+    "hint": "Begge setninger er nektende — hvilken bruker riktig ord for enighet?"
   },
   {
     "id": "gq-adj-055",
@@ -16254,6 +16849,121 @@
     "hint": "Uten en egen artikkel («det»/«de») kan ikke superlativet stå alene i bestemt form; bruk enten ubestemt form («finest») eller sett inn artikkelen («det fineste»)."
   },
   {
+    "id": "gq-adj-104",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Broren min er _____ enn faren min.",
+    "words": ["lengre", "lenger"],
+    "answer": "lengre",
+    "hint": "«Lang» (fysisk lengde/høyde) gradbøyes lang → lengre → lengst."
+  },
+  {
+    "id": "gq-adj-105",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Han bor _____ unna skolen enn meg.",
+    "words": ["lengre", "lenger"],
+    "answer": "lengre",
+    "hint": "«Langt» (avstand) gradbøyes på samme måte som «lang»: langt → lengre → lengst."
+  },
+  {
+    "id": "gq-adj-106",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Jeg har bodd i denne byen _____ enn deg.",
+    "words": ["lenger", "lengre"],
+    "answer": "lenger",
+    "hint": "«Lenge» (varighet/tid) har sin egen gradbøyning: lenge → lenger → lengst."
+  },
+  {
+    "id": "gq-adj-107",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Jeg vil ikke vente _____ i denne køen.",
+    "words": ["lenger", "lengre"],
+    "answer": "lenger",
+    "hint": "«Ikke lenger» handler om tid, ikke fysisk lengde."
+  },
+  {
+    "id": "gq-adj-108",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Jeg orker ikke stå i denne køen lenger.",
+    "optionB": "Jeg orker ikke stå i denne køen lengre.",
+    "answer": "A",
+    "explanation": "Her er det snakk om tid/varighet (hvor lenge man orker å stå), så «lenger» er riktig, ikke «lengre».",
+    "hint": "Handler setningen om tid eller fysisk avstand?"
+  },
+  {
+    "id": "gq-adj-109",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Denne veien er lengre enn den andre.",
+    "optionB": "Denne veien er lenger enn den andre.",
+    "answer": "A",
+    "explanation": "Her er det snakk om fysisk lengde/avstand, så «lengre» er riktig, ikke «lenger».",
+    "hint": "Handler setningen om avstand eller tid?"
+  },
+  {
+    "id": "gq-adj-110",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hvilken setning er riktig?",
+    "options": [
+      "Vi må gå litt lengre for å komme til stranda.",
+      "Vi må gå litt lenger for å komme til stranda.",
+      "Vi må gå litt lengst for å komme til stranda."
+    ],
+    "answer": "Vi må gå litt lengre for å komme til stranda.",
+    "hint": "Her handler det om avstand (hvor langt man må gå), ikke tid, så komparativen av «langt» – «lengre» – skal brukes."
+  },
+  {
+    "id": "gq-adj-111",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hvilken setning er IKKE riktig?",
+    "options": [
+      "Jeg kan ikke jobbe lenger i dag.",
+      "Jeg kan ikke jobbe lengre i dag.",
+      "Jeg orker ikke jobbe lenger i dag."
+    ],
+    "answer": "Jeg kan ikke jobbe lengre i dag.",
+    "hint": "«Jobbe» lenge handler her om tid, så «lengre» er feil – riktig ord er «lenger»."
+  },
+  {
+    "id": "gq-adj-112",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["jeg", "har", "bodd", "her", "lenger", "enn", "deg"],
+    "answer": "Jeg har bodd her lenger enn deg.",
+    "alternates": ["Jeg har bodd her lenger enn deg"],
+    "hint": "Handler om varighet (hvor lenge), så bruk «lenger», ikke «lengre»."
+  },
+  {
+    "id": "gq-adj-113",
+    "topic": "adj-comparison",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Dette huset er _____ enn det andre huset.",
+    "words": ["lengre", "lenger"],
+    "answer": "lengre",
+    "hint": "Her sammenlignes fysisk lengde/størrelse på to hus, så bruk «lengre»."
+  },
+  {
     "id": "gq-rel-014",
     "topic": "relative-som",
     "cefr": "B1",
@@ -16373,6 +17083,131 @@
     ],
     "answer": "Jeg har en venninne som jeg alltid gleder meg til å besøke.",
     "hint": "Sjekk relativpronomenet og plasseringen av adverbialet «alltid» i leddsetningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-024",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn «der» eller «som».",
+    "sentence": "Dette er landsbyen _____ jeg vokste opp.",
+    "words": ["der", "som"],
+    "answer": "der",
+    "hint": "Stedssubstantiv + preposisjon kan erstattes med «der».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-025",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med «der».",
+    "source": "Dette er hotellet. Vi bodde der i sommer.",
+    "answer": "Dette er hotellet der vi bodde i sommer.",
+    "alternates": ["Dette er hotellet der vi bodde i sommer"],
+    "hint": "«Der» peker tilbake på stedet og innleder relativsetningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-026",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Byen der jeg bor, er liten.",
+    "optionB": "Byen der jeg bor i, er liten.",
+    "answer": "A",
+    "explanation": "«Der» erstatter hele «som … i» — det trengs ingen ekstra preposisjon etterpå.",
+    "hint": "Sjekk om preposisjonen «i» er overflødig når «der» brukes.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-027",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Kombiner setningene riktig: «Dette er biblioteket. Jeg lånte boka der.»",
+    "options": [
+      "Dette er biblioteket der jeg lånte boka.",
+      "Dette er biblioteket som jeg lånte boka.",
+      "Dette er biblioteket jeg der lånte boka."
+    ],
+    "answer": "Dette er biblioteket der jeg lånte boka.",
+    "hint": "«Der» tar plassen til «(som) … i/på/ved» for stedet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-028",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Fjellet", "der", "vi", "gikk", "på", "tur", "er", "høyt"],
+    "answer": "Fjellet der vi gikk på tur, er høyt.",
+    "alternates": ["Fjellet der vi gikk på tur, er høyt"],
+    "hint": "Stedsnavn + «der» + subjekt + verb.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-029",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn «der» eller «som».",
+    "sentence": "Kafeen _____ vi møttes, ligger midt i sentrum.",
+    "words": ["der", "som"],
+    "answer": "der",
+    "hint": "«Møttes der» er et stedsuttrykk, ikke et objekt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-030",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med «der».",
+    "source": "Dette er restauranten. Vi spiste middag der i går.",
+    "answer": "Dette er restauranten der vi spiste middag i går.",
+    "alternates": ["Dette er restauranten der vi spiste middag i går"],
+    "hint": "Et alternativ ville vært «som … på», men bruk «der» her.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-031",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med en relativsetning med «som».",
+    "source": "Jeg kjenner en mann. Mannen har bodd på øya i tjue år.",
+    "answer": "Jeg kjenner en mann som har bodd på øya i tjue år.",
+    "alternates": ["Jeg kjenner en mann som har bodd på øya i tjue år"],
+    "hint": "«Som» er subjekt i relativsetningen her, ikke et stedsuttrykk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-032",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Leiligheten", "som", "vi", "ikke", "har", "sett", "er", "dyr"],
+    "answer": "Leiligheten som vi ikke har sett, er dyr.",
+    "alternates": ["Leiligheten som vi ikke har sett, er dyr"],
+    "hint": "«Ikke» kommer før verbet i en leddsetning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-rel-033",
+    "topic": "relative-som",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Kombiner setningene riktig: «Jeg har en nabo. Jeg stoler alltid på naboen.»",
+    "options": [
+      "Jeg har en nabo som jeg alltid stoler på.",
+      "Jeg har en nabo som jeg stoler alltid på.",
+      "Jeg har en nabo hvem jeg alltid stoler på."
+    ],
+    "answer": "Jeg har en nabo som jeg alltid stoler på.",
+    "hint": "«Alltid» står mellom subjekt og verb i leddsetningen; preposisjonen (stole på) blir stående til slutt.",
     "plusOnly": true
   },
   {
@@ -16644,7 +17479,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Hvilken setning er riktig?",
-    "options": ["Det er fint å sove lenge i helgene.", "Det er fint for å sove lenge i helgene.", "Det er fint til å sove lenge i helgene."],
+    "options": [
+      "Det er fint å sove lenge i helgene.",
+      "Det er fint for å sove lenge i helgene.",
+      "Det er fint til å sove lenge i helgene."
+    ],
     "answer": "Det er fint å sove lenge i helgene.",
     "explanation": "Etter «det er + adjektiv» (fint, hyggelig osv.) kommer «å» + infinitiv direkte, uten preposisjon.",
     "hint": "Noen adjektiv tar «å» + infinitiv helt uten preposisjon."
@@ -17238,7 +18077,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Sindre har bestemt seg og planlagt å flytte til Bergen neste år. Hvilket modalverb passer best?",
-    "options": ["Sindre skal flytte til Bergen neste år.", "Sindre vil flytte til Bergen neste år.", "Sindre bør flytte til Bergen neste år."],
+    "options": [
+      "Sindre skal flytte til Bergen neste år.",
+      "Sindre vil flytte til Bergen neste år.",
+      "Sindre bør flytte til Bergen neste år."
+    ],
     "answer": "Sindre skal flytte til Bergen neste år.",
     "explanation": "«Skal» brukes om personer med en fastsatt plan. «Vil» ville uttrykke et ønske, ikke en avgjort plan.",
     "hint": "Tenk på hovedregelen: «skal» om personer med en plan, «vil» om ønsker."
@@ -17249,7 +18092,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Nora tror at været blir bedre om noen dager, men det er ikke sikkert. Hvilket modalverb passer best?",
-    "options": ["Været vil bli bedre om noen dager.", "Været skal bli bedre om noen dager.", "Været bør bli bedre om noen dager."],
+    "options": [
+      "Været vil bli bedre om noen dager.",
+      "Været skal bli bedre om noen dager.",
+      "Været bør bli bedre om noen dager."
+    ],
     "answer": "Været vil bli bedre om noen dager.",
     "explanation": "«Vil» brukes om ting og situasjoner (ikke personer) for å uttrykke det sannsynlige.",
     "hint": "Tenk på hovedregelen: «vil» om ting/situasjoner, «skal» om personer."
@@ -17304,7 +18151,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Hva betyr «Vi må lære norsk» best?",
-    "options": ["Det er nødvendig for oss å lære norsk.", "Vi har lyst til å lære norsk.", "Det er best for oss å lære norsk."],
+    "options": [
+      "Det er nødvendig for oss å lære norsk.",
+      "Vi har lyst til å lære norsk.",
+      "Det er best for oss å lære norsk."
+    ],
     "answer": "Det er nødvendig for oss å lære norsk.",
     "explanation": "«Må» uttrykker nødvendighet, ikke ønske eller anbefaling.",
     "hint": "Se på definisjonen av «må» i regelen."
@@ -18725,6 +19576,119 @@
     ],
     "answer": "Kommunen har mindre gjeld enn i fjor.",
     "hint": "«Gjeld» er et ikke-tellelig substantiv som ikke har flertallsform, så vi bruker «mindre», ikke «færre»."
+  },
+  {
+    "id": "gq-kvantorer-029",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «litt» eller «lite».",
+    "sentence": "Vi har _____ tid før bussen kommer, det er nok til en kort prat.",
+    "words": ["litt", "lite"],
+    "answer": "litt",
+    "hint": "«Litt» betyr en grei/moderat mengde — nok til en kort prat."
+  },
+  {
+    "id": "gq-kvantorer-030",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «lite» eller «litt».",
+    "sentence": "Vi har _____ tid før bussen kommer, vi må skynde oss.",
+    "words": ["lite", "litt"],
+    "answer": "lite",
+    "hint": "«Lite» betyr nesten ingenting — derfor må vi skynde oss."
+  },
+  {
+    "id": "gq-kvantorer-031",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Han har litt is til dessert i kveld, nok til alle gjestene.",
+    "optionB": "Han har lite is til dessert i kveld, nok til alle gjestene.",
+    "answer": "A",
+    "explanation": "«Nok til alle gjestene» viser at det er en tilstrekkelig mengde, så vi bruker «litt» (en grei mengde), ikke «lite» (nesten ingenting).",
+    "hint": "Se etter et ord i setningen som forteller om mengden er tilstrekkelig eller nesten fraværende."
+  },
+  {
+    "id": "gq-kvantorer-032",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv en setning som sier at det er nesten ingen penger igjen på kontoen, med riktig kvantor.",
+    "source": "Kontoen hans er nesten tom.",
+    "answer": "Han har lite penger på kontoen.",
+    "alternates": ["Han har lite penger på kontoen"],
+    "hint": "«Nesten ingen» = «lite», ikke «litt»."
+  },
+  {
+    "id": "gq-kvantorer-033",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Familien skal bygge et lite hus ved sjøen. Velg riktig setning.",
+    "options": [
+      "De skal bygge et lite hus ved sjøen.",
+      "De skal bygge en lite hus ved sjøen.",
+      "De skal bygge et litt hus ved sjøen."
+    ],
+    "answer": "De skal bygge et lite hus ved sjøen.",
+    "hint": "Her er «lite» adjektiv — intetkjønnsform av «liten» — og må samsvare med «et hus»."
+  },
+  {
+    "id": "gq-kvantorer-034",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig form: «mange» eller «mange av».",
+    "sentence": "_____ studentene i klassen har allerede bestått eksamen.",
+    "words": ["Mange av", "Mange"],
+    "answer": "Mange av",
+    "hint": "«Studentene» står i bestemt form flertall, så kvantoren trenger «av» foran."
+  },
+  {
+    "id": "gq-kvantorer-035",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig form: «mange» eller «mange av».",
+    "sentence": "_____ studenter har allerede bestått eksamen.",
+    "words": ["Mange", "Mange av"],
+    "answer": "Mange",
+    "hint": "«Studenter» står i ubestemt form flertall — en generell mengde, uten «av»."
+  },
+  {
+    "id": "gq-kvantorer-036",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Flere av bøkene på hylla er utlånt.",
+    "optionB": "Flere bøkene på hylla er utlånt.",
+    "answer": "A",
+    "explanation": "«Bøkene» står i bestemt form (en kjent gruppe), så kvantoren «flere» trenger «av» foran substantivet.",
+    "hint": "Sjekk om substantivet står i bestemt eller ubestemt form."
+  },
+  {
+    "id": "gq-kvantorer-037",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen slik at den peker på en del av en kjent, spesifikk gruppe elever.",
+    "source": "Elevene i klassen. Noen har allerede levert oppgaven.",
+    "answer": "Noen av elevene har allerede levert oppgaven.",
+    "alternates": ["Noen av elevene har allerede levert oppgaven"],
+    "hint": "En kjent, spesifikk gruppe (elevene i klassen) krever «av» + bestemt form."
+  },
+  {
+    "id": "gq-kvantorer-038",
+    "topic": "kvantorer",
+    "cefr": "B1",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge for å lage en setning med «mange av».",
+    "tokens": ["Mange", "av", "gjestene", "kom", "for", "sent", "til", "festen"],
+    "answer": "Mange av gjestene kom for sent til festen.",
+    "alternates": ["Mange av gjestene kom for sent til festen"],
+    "hint": "«Gjestene» er en kjent gruppe i bestemt form, så kvantoren «mange» trenger «av» foran."
   },
   {
     "id": "gq-noun-art-029",
@@ -20545,7 +21509,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Velg riktig perfektumsform av være-passiv for et hus som har eksistert lenge.",
-    "options": ["Huset har vært bygget i mange år.", "Huset har blitt bygget i mange år.", "Huset har vært bygd for mange år."],
+    "options": [
+      "Huset har vært bygget i mange år.",
+      "Huset har blitt bygget i mange år.",
+      "Huset har vært bygd for mange år."
+    ],
     "answer": "Huset har vært bygget i mange år.",
     "hint": "Perfektum av være-passiv: har vært + perfektum partisipp, brukt om en tilstand som har vart over tid."
   },
@@ -20560,6 +21528,116 @@
     "answer": "A",
     "explanation": "Pluskvamperfektum av være-passiv (hadde vært malt) beskriver en tilstand som allerede gjaldt før et annet tidspunkt i fortiden. «Hadde blitt malt» fokuserer i stedet på selve malingshendelsen.",
     "hint": "Se etter om setningen fokuserer på tilstand eller på selve hendelsen."
+  },
+  {
+    "id": "gq-passivbs-034",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Vinduet står åpent akkurat nå og det er ingen som gjør noe med det. Hvilken setning beskriver dette riktig?",
+    "optionA": "Vinduet er åpent.",
+    "optionB": "Vinduet er åpnet.",
+    "answer": "A",
+    "explanation": "Adjektivet «åpent» beskriver en ren tilstand uten noen underforstått aktør. «Åpnet» er perfektum partisipp av «å åpne» og antyder at noen har utført en handling.",
+    "hint": "Se etter om det er en aktør involvert eller bare en tilstand."
+  },
+  {
+    "id": "gq-passivbs-035",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn riktig form: perfektum partisipp av «å åpne», brukt i passiv.",
+    "sentence": "Døren _____ av vaktmesteren klokken sju.",
+    "words": ["ble åpnet", "var åpen"],
+    "answer": "ble åpnet",
+    "hint": "Bli-passiv med partisippet «åpnet» beskriver at noen utførte handlingen."
+  },
+  {
+    "id": "gq-passivbs-036",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn riktig adjektivform.",
+    "sentence": "Butikken er _____ til klokken ni i kveld.",
+    "words": ["åpen", "åpnet"],
+    "answer": "åpen",
+    "hint": "Adjektivet «åpen» beskriver en tilstand (butikken er ikke stengt), ikke en handling."
+  },
+  {
+    "id": "gq-passivbs-037",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning: noen har nettopp utført handlingen å åpne vinduet.",
+    "options": ["Vinduet er blitt åpnet.", "Vinduet er åpent.", "Vinduet er åpen."],
+    "answer": "Vinduet er blitt åpnet.",
+    "hint": "Perfektum partisipp «åpnet» i passiv peker på selve handlingen, ikke bare tilstanden."
+  },
+  {
+    "id": "gq-passivbs-038",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig, om et intetkjønnsord (et-ord)?",
+    "optionA": "Vinduet er åpent.",
+    "optionB": "Vinduet er åpen.",
+    "answer": "A",
+    "explanation": "Adjektivet «åpen» bøyes i intetkjønn som «åpent»: et vindu → vinduet er åpent.",
+    "hint": "Sjekk kjønnsbøyningen av adjektivet «åpen»."
+  },
+  {
+    "id": "gq-passivbs-039",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Butikkene", "blir", "åpnet", "klokken", "ti"],
+    "answer": "Butikkene blir åpnet klokken ti.",
+    "alternates": ["Butikkene blir åpnet klokken ti"],
+    "hint": "Bli-passiv (blir + partisipp) beskriver handlingen som skjer."
+  },
+  {
+    "id": "gq-passivbs-040",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn riktig form (adjektivet i flertall/bestemt form).",
+    "sentence": "Alle dørene i huset er _____.",
+    "words": ["åpne", "åpnet"],
+    "answer": "åpne",
+    "hint": "Adjektivet «åpen» i flertall er «åpne»: dørene er åpne (en tilstand)."
+  },
+  {
+    "id": "gq-passivbs-041",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning forklarer HVORFOR vinduet er åpent akkurat nå?",
+    "optionA": "Vinduet ble åpnet av naboen for ti minutter siden.",
+    "optionB": "Vinduet var åpent for ti minutter siden.",
+    "answer": "A",
+    "explanation": "Bli-passiv med «åpnet» peker på den handlingen som forårsaket tilstanden — naboen utførte handlingen. «Var åpent» beskriver bare en tidligere tilstand uten å si hvorfor.",
+    "hint": "Se etter hvilken setning nevner hvem som gjorde noe."
+  },
+  {
+    "id": "gq-passivbs-042",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning som beskriver en ren tilstand, uten noen aktør.",
+    "options": ["Vinduet er åpent.", "Vinduet er blitt åpnet.", "Vinduet ble åpnet."],
+    "answer": "Vinduet er åpent.",
+    "hint": "Adjektivet «åpen»/«åpent» beskriver bare tilstanden, ikke hvem som gjorde noe."
+  },
+  {
+    "id": "gq-passivbs-043",
+    "topic": "passiv-bli-s",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen slik at den beskriver HANDLINGEN (bli-passiv med partisippet «åpnet»), ikke bare tilstanden.",
+    "source": "Døren er åpen.",
+    "answer": "Døren blir åpnet.",
+    "hint": "Bytt ut adjektivet «åpen» med bli-passiv og partisippet «åpnet»: blir åpnet."
   },
   {
     "id": "gq-blipres-001",
@@ -20986,6 +22064,123 @@
     "source": "Kommer hun i morgen?",
     "answer": "Jeg lurer på om hun kommer i morgen.",
     "hint": "En uformell, nysgjerrig tone betyr at «lurer på» + «om» for et ja/nei-spørsmål passer best.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-057",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Gjengi utsagnet med «sa» (preteritum).",
+    "source": "Jeg er veldig trett i dag.",
+    "answer": "Hun sa at hun var veldig trett den dagen.",
+    "hint": "«Sa» står i preteritum, så «er» skiftes til «var».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-058",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Gjengi utsagnet med «sier» (presens).",
+    "source": "Jeg er veldig trett i dag.",
+    "answer": "Hun sier at hun er veldig trett i dag.",
+    "hint": "«Sier» står i presens, så tiden i den refererte setningen forblir uendret.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-059",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Han sa at han var sulten.",
+    "optionB": "Han sa at han er sulten.",
+    "answer": "A",
+    "explanation": "Når gjengivelsesverbet «sa» står i preteritum, skiftes presens «er» vanligvis til preteritum «var» i den refererte setningen.",
+    "hint": "Sjekk om tiden i den refererte setningen samsvarer med preteritumsverbet «sa».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-060",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Gjengi utsagnet med «sa».",
+    "source": "Vi er glade for å være her.",
+    "answer": "De sa at de var glade for å være der.",
+    "hint": "Presens «er» skiftes til preteritum «var» siden «sa» er preteritum.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-061",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn riktig verbform.",
+    "sentence": "Legen sa at pasienten _____ syk.",
+    "words": ["var", "er"],
+    "answer": "var",
+    "hint": "«Sa» er preteritum, så «er» skiftes til «var».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-062",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn riktig verbform.",
+    "sentence": "Læreren sier at eleven _____ fornøyd med resultatet.",
+    "words": ["er", "var"],
+    "answer": "er",
+    "hint": "«Sier» er presens, så tiden i den refererte setningen forblir uendret.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-063",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spurte».",
+    "source": "Er du redd for mørket?",
+    "answer": "Hun spurte om han var redd for mørket.",
+    "hint": "«Spurte» er preteritum, så «er» skiftes til «var», og ja/nei-spørsmålet gjengis med «om».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-064",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spør».",
+    "source": "Er du redd for mørket?",
+    "answer": "Hun spør om han er redd for mørket.",
+    "hint": "«Spør» er presens, så tiden i den refererte setningen forblir uendret.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-065",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Hun", "sa", "at", "hun", "ikke", "var", "sint"],
+    "answer": "Hun sa at hun ikke var sint.",
+    "alternates": ["Hun sa at hun ikke var sint"],
+    "hint": "«Ikke» kommer før verbet i leddsetningen, og «er» skiftes til «var» siden «sa» er preteritum.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-indirtale-066",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig gjengivelse: Marta sa: «Jeg er ikke opptatt i kveld.»",
+    "options": [
+      "Marta sa at hun ikke var opptatt den kvelden.",
+      "Marta sa at hun ikke er opptatt i kveld.",
+      "Marta sier at hun ikke var opptatt i kveld."
+    ],
+    "answer": "Marta sa at hun ikke var opptatt den kvelden.",
+    "hint": "Preteritum «sa» krever at «er» skiftes til «var», og «i kveld» blir «den kvelden» i referert tale.",
     "plusOnly": true
   },
   {
@@ -21652,7 +22847,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Mia glemte paraplyen hjemme, og derfor ble hun kald i regnet. Velg riktig hypotetisk setning om dette.",
-    "options": ["Hvis Mia hadde tatt med paraplyen, ville hun ikke ha blitt kald i regnet.", "Hvis Mia tar med paraplyen, blir hun ikke kald i regnet.", "Hvis Mia tok med paraplyen, blir hun ikke kald i regnet."],
+    "options": [
+      "Hvis Mia hadde tatt med paraplyen, ville hun ikke ha blitt kald i regnet.",
+      "Hvis Mia tar med paraplyen, blir hun ikke kald i regnet.",
+      "Hvis Mia tok med paraplyen, blir hun ikke kald i regnet."
+    ],
     "answer": "Hvis Mia hadde tatt med paraplyen, ville hun ikke ha blitt kald i regnet.",
     "explanation": "En hypotetisk situasjon i fortid, som ikke ble oppfylt, krever pluskvamperfektum i hvis-leddet og «ville ha» + perfektum partisipp i hovedsetningen.",
     "hint": "Tenk på tidsforholdet: dette handler om noe som allerede er i fortid og som ikke skjedde."
@@ -22180,7 +23379,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Velg riktig form til «regel».",
-    "options": ["Enhver regel har unntak.", "Ethvert regel har unntak.", "Enhvert regel har unntak."],
+    "options": [
+      "Enhver regel har unntak.",
+      "Ethvert regel har unntak.",
+      "Enhvert regel har unntak."
+    ],
     "answer": "Enhver regel har unntak.",
     "explanation": "«Regel» er et en-ord, så det stemmer med «enhver».",
     "hint": "Sjekk kjønnet til «regel» først."
@@ -22415,6 +23618,131 @@
     "plusOnly": true
   },
   {
+    "id": "gq-arsak-015",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "_____ til at veien var glatt, var snøen som falt om natten.",
+    "words": ["Grunnen", "Følgen"],
+    "answer": "Grunnen",
+    "hint": "«Grunnen til at …» spør etter årsaken, ikke resultatet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-016",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Forsinkelsen _____ dårlig vær.",
+    "words": ["skyldes", "fører til"],
+    "answer": "skyldes",
+    "hint": "«Skyldes» = forårsakes av; etterfølges direkte av årsaken (ikke «til»).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-017",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig uttrykk.",
+    "sentence": "Mye regn kan _____ oversvømmelse.",
+    "words": ["føre til", "skyldes"],
+    "answer": "føre til",
+    "hint": "«Føre til» = forårsake noe; etterfølges av resultatet, ikke årsaken.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-018",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "_____ hun var syk, gikk hun ikke på skolen.",
+    "words": ["Siden", "Dermed"],
+    "answer": "Siden",
+    "hint": "«Siden» kan bety «fordi» når det innleder en årsakssetning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-019",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «årsaken til at …».",
+    "source": "Hun sluttet i jobben fordi hun flyttet til en annen by.",
+    "answer": "Årsaken til at hun sluttet i jobben, var at hun flyttet til en annen by.",
+    "alternates": ["Årsaken til at hun sluttet i jobben var at hun flyttet til en annen by."],
+    "hint": "«Årsaken til at + setning, var at + setning» uttrykker årsak nominalt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-020",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningene med «for at» for å uttrykke hensikt.",
+    "source": "Hun åpnet vinduet. Hun ville ha frisk luft.",
+    "answer": "Hun åpnet vinduet for at hun skulle få frisk luft.",
+    "alternates": ["Hun åpnet vinduet for at hun skulle få frisk luft"],
+    "hint": "«For at» + subjekt + skulle/ville uttrykker hensikten med handlingen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-021",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Ulykken skjedde fordi veien var glatt. Velg riktig setning.",
+    "options": [
+      "Ulykken skyldes glatt vei.",
+      "Ulykken fører til glatt vei.",
+      "Glatt vei skyldes ulykken."
+    ],
+    "answer": "Ulykken skyldes glatt vei.",
+    "hint": "«Skyldes» etterfølges av årsaken (glatt vei var årsaken til ulykken).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-022",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Det regnet mye om natten. Velg setningen som beskriver FØLGEN (resultatet), ikke årsaken.",
+    "options": [
+      "Følgen av regnet var en oversvømmelse.",
+      "Årsaken til oversvømmelsen var regnet.",
+      "Oversvømmelsen fører til regn."
+    ],
+    "answer": "Følgen av regnet var en oversvømmelse.",
+    "hint": "«Følgen av X var Y» plasserer resultatet (Y) etter årsaken (X).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-023",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Hun", "var", "trøtt", ",", "ettersom", "hun", "jobbet", "hele", "natten"],
+    "answer": "Hun var trøtt, ettersom hun jobbet hele natten.",
+    "alternates": ["Hun var trøtt, ettersom hun jobbet hele natten"],
+    "hint": "«Ettersom» = fordi/siden; innleder årsaken til at hun var trøtt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-arsak-024",
+    "topic": "arsak-og-folge-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig uttrykk.",
+    "sentence": "Han studerte hardt _____ han skulle bestå eksamen.",
+    "words": ["for at", "slik at"],
+    "answer": "for at",
+    "hint": "«For at» uttrykker hensikt/intensjon (målet med handlingen).",
+    "plusOnly": true
+  },
+  {
     "id": "gq-kontrast-001",
     "topic": "kontrast-uttrykk",
     "cefr": "B2",
@@ -22561,7 +23889,12 @@
     "type": "multiple-choice",
     "prompt": "Hva betyr «enda» i denne setningen?",
     "sentence": "Kan jeg få enda en kopp kaffe?",
-    "options": ["fremdeles (still)", "i tillegg, én til (one more)", "høyere grad (foran komparativ)", "til tross for at (selv om)"],
+    "options": [
+      "fremdeles (still)",
+      "i tillegg, én til (one more)",
+      "høyere grad (foran komparativ)",
+      "til tross for at (selv om)"
+    ],
     "answer": "i tillegg, én til (one more)",
     "explanation": "Her står «enda» rett foran et tallord (en) og betyr «i tillegg» / «én til».",
     "hint": "Se på ordet rett etter «enda»: det er et tallord."
@@ -22573,7 +23906,12 @@
     "type": "multiple-choice",
     "prompt": "Hva betyr «enda» i denne setningen?",
     "sentence": "Hun ønsket seg en enda finere leilighet.",
-    "options": ["fremdeles (still)", "i tillegg, én til (one more)", "høyere grad (foran komparativ)", "til tross for at (selv om)"],
+    "options": [
+      "fremdeles (still)",
+      "i tillegg, én til (one more)",
+      "høyere grad (foran komparativ)",
+      "til tross for at (selv om)"
+    ],
     "answer": "høyere grad (foran komparativ)",
     "explanation": "Her står «enda» rett foran en komparativ (finere) og forsterker graden.",
     "hint": "Se på ordet rett etter «enda»: det er en komparativform."
@@ -22585,7 +23923,12 @@
     "type": "multiple-choice",
     "prompt": "Hva betyr «enda» i denne setningen?",
     "sentence": "Hun spiste middag, enda hun ikke var sulten.",
-    "options": ["fremdeles (still)", "i tillegg, én til (one more)", "høyere grad (foran komparativ)", "til tross for at (selv om)"],
+    "options": [
+      "fremdeles (still)",
+      "i tillegg, én til (one more)",
+      "høyere grad (foran komparativ)",
+      "til tross for at (selv om)"
+    ],
     "answer": "til tross for at (selv om)",
     "explanation": "Her innleder «enda» en motsetningssetning, nær synonymt med «selv om».",
     "hint": "«Enda» innleder her en hel bisetning med subjekt og verb."
@@ -22630,7 +23973,12 @@
     "type": "multiple-choice",
     "prompt": "Hvilke(t) ord passer i denne setningen, som betyr «fremdeles»?",
     "sentence": "Bor dere _____ i den gamle leiligheten?",
-    "options": ["bare «enda»", "bare «ennå»", "både «enda» og «ennå»", "verken «enda» eller «ennå»"],
+    "options": [
+      "bare «enda»",
+      "bare «ennå»",
+      "både «enda» og «ennå»",
+      "verken «enda» eller «ennå»"
+    ],
     "answer": "både «enda» og «ennå»",
     "explanation": "I betydningen «fremdeles» er «enda» og «ennå» synonyme, og begge kan brukes her.",
     "hint": "Dette er den ene betydningen de to ordene faktisk deler."
@@ -23375,7 +24723,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Velg riktig setning i uformell stil.",
-    "options": ["I Norge drikker du mye kaffe.", "I Norge drikker de mye kaffe.", "I Norge drikker jeg mye kaffe."],
+    "options": [
+      "I Norge drikker du mye kaffe.",
+      "I Norge drikker de mye kaffe.",
+      "I Norge drikker jeg mye kaffe."
+    ],
     "answer": "I Norge drikker du mye kaffe.",
     "hint": "Uformelt «du» kan brukes om folk generelt; «de» viser til bestemte personer."
   },
@@ -23446,7 +24798,11 @@
     "cefr": "B1",
     "type": "multiple-choice",
     "prompt": "Velg riktig setning.",
-    "options": ["Ens oppdragelse former ofte vanene.", "Sin oppdragelse former ofte vanene.", "Hans oppdragelse former ofte vanene."],
+    "options": [
+      "Ens oppdragelse former ofte vanene.",
+      "Sin oppdragelse former ofte vanene.",
+      "Hans oppdragelse former ofte vanene."
+    ],
     "answer": "Ens oppdragelse former ofte vanene.",
     "hint": "Uten et nevnt subjekt i setningen brukes den upersonlige eieformen «ens», ikke det refleksive «sin» eller det personlige «hans»."
   },
@@ -24543,10 +25899,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "Julaften er en _____, men en vanlig mandag er en _____.",
-    "words": [
-      "helligdag",
-      "hverdag"
-    ],
+    "words": ["helligdag", "hverdag"],
     "answer": "helligdag",
     "hint": "«Helligdag» er en høytidsdag, «hverdag» er en vanlig ukedag (ikke lørdag, søndag eller helligdag).",
     "plusOnly": true
@@ -24571,10 +25924,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "Frida smilte hele dagen. Hun var tydelig i godt _____.",
-    "words": [
-      "humør",
-      "humor"
-    ],
+    "words": ["humør", "humor"],
     "answer": "humør",
     "hint": "«Humør» betyr sinnsstemning (godt/dårlig humør). «Humor» betyr sans for det komiske.",
     "plusOnly": true
@@ -24614,10 +25964,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "Tobias er _____ av å rydde rommet sitt hver dag.",
-    "words": [
-      "lei",
-      "leit"
-    ],
+    "words": ["lei", "leit"],
     "answer": "lei",
     "hint": "«Å være lei av noe» betyr å være sliten/kjed av noe. «Det er leit» brukes om noe trist som har skjedd, ikke etterfulgt av «av».",
     "plusOnly": true
@@ -24629,11 +25976,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Er du enig _____ meg i denne saken?",
-    "words": [
-      "med",
-      "i",
-      "om"
-    ],
+    "words": ["med", "i", "om"],
     "answer": "med",
     "hint": "«Å være enig med en person» — man er enig med en person. «Enig i» brukes om en sak, «enig om» om noe man har diskutert seg fram til.",
     "plusOnly": true
@@ -24645,10 +25988,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "Kulturen i Norge er ganske _____ fra kulturen i hjemlandet mitt.",
-    "words": [
-      "forskjellig",
-      "annerledes"
-    ],
+    "words": ["forskjellig", "annerledes"],
     "answer": "forskjellig",
     "hint": "Vi bruker «forskjellig fra» og «annerledes enn» — begge kan sammenlikne to ting. Her passer «forskjellig» fordi setningen bruker «fra».",
     "plusOnly": true
@@ -24660,10 +26000,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Hva er egentlig forskjellen _____ de to søstrene?",
-    "words": [
-      "mellom",
-      "på"
-    ],
+    "words": ["mellom", "på"],
     "answer": "mellom",
     "hint": "Substantivet «forskjell» kan brukes med enten «mellom» eller «på» — begge er riktige og betyr det samme.",
     "plusOnly": true
@@ -24688,13 +26025,874 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Laget til Aksel _____ kampen med 2–1 i går kveld.",
-    "words": [
-      "tapte",
-      "mistet"
-    ],
+    "words": ["tapte", "mistet"],
     "answer": "tapte",
     "hint": "«Å tape» brukes om å lide nederlag i en kamp/konkurranse. «Å miste» passer ikke her.",
     "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-031",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Silje var veldig _____ som fant lommeboken sin igjen.",
+    "words": ["heldig", "flaks"],
+    "answer": "heldig",
+    "hint": "«Heldig» er et adjektiv som beskriver en person. «Flaks» er et substantiv, ikke et adjektiv, og kan ikke stå direkte foran «som».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-032",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Det var bare _____ at vi møttes på kafeen akkurat da.",
+    "words": ["flaks", "heldig"],
+    "answer": "flaks",
+    "hint": "Her trengs substantivet som navngir selve hell-fenomenet, ikke adjektivet som beskriver en person.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-033",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr «sjanse» i denne setningen: «Jeg fikk en sjanse til å vise hva jeg kunne»?",
+    "options": ["en mulighet", "selve hellet", "en tilstand av å være klar"],
+    "answer": "en mulighet",
+    "hint": "«Sjanse» er en mulighet man får eller tar — ikke selve hell-fenomenet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-034",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig? Kristian fikk endelig muligheten til å vise hva han kunne på jobbintervjuet.",
+    "optionA": "Kristian fikk en sjanse på jobbintervjuet.",
+    "optionB": "Kristian fikk flaks på jobbintervjuet.",
+    "answer": "A",
+    "explanation": "«Sjanse» er en mulighet man kan få og bruke aktivt. «Flaks» er ikke noe man «får» for å gjøre noe bestemt — det er selve tilfeldighets-hellet.",
+    "hint": "Sjekk hvilket ord som betyr «mulighet».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-035",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Jeg må _____ meg godt til eksamen i morgen.",
+    "words": ["forberede", "forbedre"],
+    "answer": "forberede",
+    "hint": "«Å forberede seg» = å gjøre seg klar til noe som skal skje. «Å forbedre seg» betyr noe helt annet — å bli bedre på noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-036",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Ola vil _____ seg i norsk før neste prøve.",
+    "words": ["forbedre", "forberede"],
+    "answer": "forbedre",
+    "hint": "Her handler det om å bli bedre på noe (norsk-ferdighetene), ikke om å gjøre seg klar til en hendelse.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-037",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva beskriver setningen «Jeg er forberedt»?",
+    "options": [
+      "en tilstand — jeg har allerede gjort meg klar",
+      "en handling som skjer akkurat nå",
+      "at jeg blir bedre på noe over tid"
+    ],
+    "answer": "en tilstand — jeg har allerede gjort meg klar",
+    "hint": "«Forberedt» er et adjektiv som beskriver en tilstand, ikke selve forberedelsen som handling.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-038",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «forberede seg».",
+    "source": "Hun gjør seg klar til jobbintervjuet.",
+    "answer": "Hun forbereder seg til jobbintervjuet.",
+    "alternates": ["Hun forbereder seg til jobbintervjuet"],
+    "hint": "«Å forberede seg til noe» erstatter «å gjøre seg klar til noe».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-039",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig uttrykk.",
+    "sentence": "_____ møtet ringte telefonen hans plutselig.",
+    "words": ["Under", "I løpet av"],
+    "answer": "Under",
+    "hint": "«Under» peker på et enkelt tidspunkt INNENFOR møtet, ikke hele møtets varighet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-040",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig uttrykk.",
+    "sentence": "_____ dette prosjektet må vi holde tre møter.",
+    "words": ["I løpet av", "Under"],
+    "answer": "I løpet av",
+    "hint": "«I løpet av» rammer inn HELE perioden som et spenn — her handler det om alt som skal skje gjennom hele prosjektet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-041",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig? Historien beskriver alt som skjedde fra start til slutt av ferien.",
+    "optionA": "I løpet av ferien besøkte de fem byer.",
+    "optionB": "Under ferien besøkte de fem byer.",
+    "answer": "A",
+    "explanation": "Siden setningen understreker HELE perioden fra start til slutt, passer «i løpet av» best. «Under» ville bare pekt på ett tidspunkt i ferien, ikke hele spennet.",
+    "hint": "Sjekk hvilket uttrykk som rammer inn en hel periode som et spenn.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-042",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Jeg _____ ikke hva som skjedde på møtet i går.",
+    "words": ["fatter", "finner"],
+    "answer": "fatter",
+    "hint": "«Å fatte» betyr «å forstå/skjønne», f.eks. «jeg fatter det ikke». «Å finne» betyr noe helt annet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-043",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Etter kurset _____ hun stor interesse for norsk historie.",
+    "words": ["fattet", "fant"],
+    "answer": "fattet",
+    "hint": "«Å fatte interesse for» er et fast uttrykk som betyr «å bli interessert i». «Å finne» passer ikke i dette uttrykket.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-044",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr «å fatte» i setningen: «Styret fattet vedtaket i går»?",
+    "options": ["å forstå", "å ta/vedta", "å finne", "å feste"],
+    "answer": "å ta/vedta",
+    "explanation": "I den faste kollokasjonen «å fatte et vedtak» betyr «å fatte» «å ta en offisiell avgjørelse», ikke «å forstå».",
+    "hint": "Tenk på hva et styre gjør med et vedtak."
+  },
+  {
+    "id": "gq-nyanser-045",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg fatter ikke hvorfor han er sint.",
+    "optionB": "Jeg finner ikke hvorfor han er sint.",
+    "answer": "A",
+    "explanation": "«Å fatte» i grunnbetydningen betyr «å forstå», så det passer her. «Å finne» gir ikke mening i denne sammenhengen.",
+    "hint": "Hvilket verb betyr «å forstå»?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-046",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «fatte vedtak».",
+    "source": "Styret bestemte seg offisielt for planen i går.",
+    "answer": "Styret fattet vedtak om planen i går.",
+    "alternates": ["Styret fattet vedtak om planen offisielt i går."],
+    "hint": "«Å fatte vedtak om noe» er den faste, formelle måten å si dette på.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-047",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Etter samtalen med legen _____ hun nytt håp.",
+    "words": ["fattet", "fant"],
+    "answer": "fattet",
+    "hint": "«Å fatte håp» = å få håp. Dette faste uttrykket bruker «fatte», ikke «finne».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-048",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr setningen «Han fattet raskt hva som hadde skjedd»?",
+    "options": [
+      "Han forsto raskt situasjonen",
+      "Han bestemte seg raskt",
+      "Han ble interessert raskt",
+      "Han håpet raskt"
+    ],
+    "answer": "Han forsto raskt situasjonen",
+    "explanation": "Her brukes «å fatte» i grunnbetydningen «å forstå/skjønne».",
+    "hint": "Dette er grunnbetydningen av «å fatte», ikke en av de faste kollokasjonene."
+  },
+  {
+    "id": "gq-nyanser-049",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["hun", "fattet", "interesse", "for", "kunst", "tidlig"],
+    "answer": "Hun fattet interesse for kunst tidlig.",
+    "alternates": ["Hun fattet interesse for kunst tidlig"],
+    "hint": "«Å fatte interesse for noe» følger vanlig verb-objekt-rekkefølge."
+  },
+  {
+    "id": "gq-nyanser-050",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Jeg _____ ikke helt hva læreren forklarte.",
+    "words": ["fattet", "fant"],
+    "answer": "fattet",
+    "hint": "Grunnbetydningen av «å fatte» er «å forstå/skjønne».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-051",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Styret fattet vedtaket etter lang diskusjon.",
+    "optionB": "Styret fant vedtaket etter lang diskusjon.",
+    "answer": "A",
+    "explanation": "«Å fatte et vedtak» er et fast uttrykk for å ta en offisiell avgjørelse. «Å finne et vedtak» gir ikke mening her.",
+    "hint": "Hvilket verb hører sammen med «vedtak» i dette faste uttrykket?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-052",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Mamma _____ på oss fra vinduet da middagen var klar.",
+    "words": ["kalte", "ropte"],
+    "answer": "kalte",
+    "hint": "«Å kalle på noen» betyr «å rope på noen» for å få oppmerksomheten deres.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-053",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr «å kalle» i setningen: «Alle kaller henne tante Adele»?",
+    "options": ["å rope", "å gi navn/omtale som", "å bli vant til", "å vente på"],
+    "answer": "å gi navn/omtale som",
+    "explanation": "Her brukes «å kalle» i betydningen «å omtale noen som», ikke «å rope».",
+    "hint": "Legg merke til at det ikke er noe rop involvert her."
+  },
+  {
+    "id": "gq-nyanser-054",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig for å beskrive at noen bruker et annet navn på seg selv enn det ekte navnet?",
+    "optionA": "Han kaller seg Toto, men han heter Torstein.",
+    "optionB": "Han roper seg Toto, men han heter Torstein.",
+    "answer": "A",
+    "explanation": "«Å kalle seg noe» er det refleksive uttrykket for å bruke et navn på seg selv. «Å rope seg» finnes ikke.",
+    "hint": "Hvilket verb brukes refleksivt om å bruke et navn på seg selv?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-055",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Læreren _____ elevene inn i klasserommet igjen.",
+    "words": ["kalte", "vente"],
+    "answer": "kalte",
+    "hint": "«Å kalle inn» betyr å be noen komme, gjerne ved å rope eller gi beskjed.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-056",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Etter noen måneder _____ hun vant til å bo alene.",
+    "words": ["blir", "venner"],
+    "answer": "blir",
+    "hint": "«Å bli vant til noe» beskriver en tilstand som gradvis oppstår. «Venner» passer ikke her siden det mangler «seg».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-057",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «venne seg til» i perfektum.",
+    "source": "Hun er vant til å bo på hybel nå.",
+    "answer": "Hun har vennet seg til å bo på hybel nå.",
+    "alternates": ["Hun har vennet seg til å bo på hybel nå"],
+    "hint": "«Å venne seg til» i perfektum viser at prosessen med å bli vant til noe er fullført.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-058",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning beskriver TILSTANDEN av å ha blitt vant til noe, ikke selve prosessen?",
+    "optionA": "Hun er vant til å stå opp tidlig.",
+    "optionB": "Hun har vennet seg til å stå opp tidlig.",
+    "answer": "A",
+    "explanation": "«Vant til» (adjektivuttrykk) beskriver en tilstand. «Å venne seg til» (verb) beskriver selve prosessen/handlingen med å bli vant til noe.",
+    "hint": "Tenk på hvilken setning bruker et adjektiv, og hvilken bruker et verb."
+  },
+  {
+    "id": "gq-nyanser-059",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Vi flyttet til en ny by, og barna måtte _____ seg til den nye skolen.",
+    "words": ["venne", "vane"],
+    "answer": "venne",
+    "hint": "«Å venne seg til noe» er det refleksive verbet for prosessen med å bli vant til noe nytt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-060",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["hun", "har", "vennet", "seg", "til", "den", "nye", "jobben"],
+    "answer": "Hun har vennet seg til den nye jobben.",
+    "alternates": ["Hun har vennet seg til den nye jobben"],
+    "hint": "«Å venne seg til noe» er refleksivt: verb + seg + til + substantiv."
+  },
+  {
+    "id": "gq-nyanser-061",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hvilken setning bruker «å kalle» i den refleksive betydningen (å bruke et navn på seg selv)?",
+    "options": [
+      "Politiet kalte inn ekstra folk til møtet.",
+      "Han kaller seg for kunstner, selv om han har et annet yrke.",
+      "Barna kalte på hunden i parken.",
+      "Vi kaller henne alltid tante Adele."
+    ],
+    "answer": "Han kaller seg for kunstner, selv om han har et annet yrke.",
+    "explanation": "«Å kalle seg for noe» er den refleksive bruken, der subjektet gir seg selv et navn/en betegnelse.",
+    "hint": "Se etter «seg» i setningen — det signaliserer den refleksive betydningen."
+  },
+  {
+    "id": "gq-nyanser-062",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Barna _____ steiner med hverandre i friminuttet.",
+    "words": ["byttet", "skiftet"],
+    "answer": "byttet",
+    "hint": "Når fokuset er på å gi fra seg noe og få noe ANNET tilbake (bytting/utveksling), kan bare «å bytte» brukes.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-063",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig? Hun skal levere varen tilbake til butikken og få en annen vare i stedet.",
+    "optionA": "Hun kan bytte varen hun kjøpte i butikken.",
+    "optionB": "Hun kan skifte varen hun kjøpte i butikken.",
+    "answer": "A",
+    "explanation": "Å levere tilbake en vare og få en annen vare er en gjensidig utveksling, så bare «å bytte» kan brukes her, ikke «å skifte».",
+    "hint": "Er dette en utveksling der man gir noe og får noe tilbake?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-064",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Hun _____ ofte klær før hun går ut om kvelden.",
+    "words": ["skifter", "kaller"],
+    "answer": "skifter",
+    "hint": "Å bytte til noe av samme type (klær) kan uttrykkes med «å skifte». («Kaller» gir ikke mening her.)",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-065",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hvilken setning beskriver en gjensidig utveksling der man IKKE kan bruke «å skifte» i stedet for «å bytte»?",
+    "options": [
+      "Han skifter/bytter klær før festen.",
+      "I gamle dager byttet folk varer med hverandre.",
+      "Hun skifter/bytter sko når hun kommer hjem.",
+      "Han skifter/bytter frisyre av og til."
+    ],
+    "answer": "I gamle dager byttet folk varer med hverandre.",
+    "explanation": "Her er fokuset på å gi fra seg én vare og få en annen tilbake — en ekte utveksling. Da kan bare «å bytte» brukes, ikke «å skifte».",
+    "hint": "Se etter setningen der man gir fra seg noe og får noe annet tilbake."
+  },
+  {
+    "id": "gq-nyanser-066",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «å bytte» for å understreke den gjensidige utvekslingen.",
+    "source": "Barna ga hverandre steiner og fikk andre steiner tilbake.",
+    "answer": "Barna byttet steiner med hverandre.",
+    "alternates": ["Barna byttet steiner med hverandre"],
+    "hint": "«Å bytte noe med noen» er den faste måten å uttrykke en gjensidig utveksling på.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-067",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Man kan _____ varen man kjøper i butikken, ti dager etter at varen er betalt.",
+    "words": ["bytte", "skifte"],
+    "answer": "bytte",
+    "hint": "Å levere tilbake en vare og få en annen er en utveksling, så bare «å bytte» passer her.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-068",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig? Han er bare interessert i å forandre til en ny farge på bilen, ikke å gi bilen bort.",
+    "optionA": "Han vil skifte farge på bilen.",
+    "optionB": "Han vil bytte farge på bilen med noen.",
+    "answer": "A",
+    "explanation": "Å forandre/veksle til noe av samme type (en farge) kan uttrykkes med «å skifte», siden det ikke er noen utveksling med en annen person involvert.",
+    "hint": "Er noen andre involvert i en gjensidig utveksling her, eller forandrer han bare noe selv?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-069",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "I gamle dager _____ folk varer med hverandre i stedet for å bruke penger.",
+    "words": ["byttet", "skiftet"],
+    "answer": "byttet",
+    "hint": "Å utveksle varer med andre mennesker er en gjensidig handel — bare «å bytte» passer her.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-070",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["barna", "byttet", "steiner", "med", "hverandre"],
+    "answer": "Barna byttet steiner med hverandre.",
+    "alternates": ["Barna byttet steiner med hverandre"],
+    "hint": "«Å bytte noe med noen» følger vanlig verb-objekt-preposisjon-rekkefølge."
+  },
+  {
+    "id": "gq-nyanser-071",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva er forskjellen mellom «å bytte» og «å skifte» i disse to setningene: «Hun bytter klær» og «Hun skifter klær»?",
+    "options": [
+      "Ingen forskjell — begge betyr det samme her",
+      "«Bytte» betyr å utveksle klærne med en annen person",
+      "«Skifte» betyr at hun gir bort klærne for godt",
+      "«Bytte» kan bare brukes om penger"
+    ],
+    "answer": "Ingen forskjell — begge betyr det samme her",
+    "explanation": "Når man bytter/skifter til noe av samme type (her: klær), kan «å bytte» og «å skifte» brukes synonymt.",
+    "hint": "Tenk på at klær er samme type ting — hun tar av étt sett og tar på et annet sett klær."
+  },
+  {
+    "id": "gq-nyanser-072",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Jeg _____ alltid nøklene når jeg har det travelt.",
+    "words": ["mister", "taper", "skifter"],
+    "answer": "mister",
+    "hint": "«Å miste» brukes om å rote bort ting, som nøkler.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-073",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Laget _____ kampen med 3-1 i går kveld.",
+    "words": ["tapte", "mistet", "byttet"],
+    "answer": "tapte",
+    "hint": "Nederlag i en kamp eller konkurranse uttrykkes med «å tape».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-074",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Hun _____ mye penger på et dårlig aksjekjøp.",
+    "words": ["tapte", "mistet", "fant"],
+    "answer": "tapte",
+    "hint": "Økonomisk tap uttrykkes med «å tape», ikke «å miste».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-075",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Han løp så fort han kunne, men _____ likevel bussen.",
+    "words": ["mistet", "tapte", "skiftet"],
+    "answer": "mistet",
+    "hint": "Å komme for sent til et transportmiddel er «å miste bussen», ikke «å tape bussen».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-076",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Etter så mange skuffelser begynte hun å _____ håpet.",
+    "words": ["miste", "tape", "skifte"],
+    "answer": "miste",
+    "hint": "Abstrakte ting man en gang hadde (håp, tålmodighet, mot) «mistes», de «tapes» ikke.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-077",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig: Manchester United led et nederlag mot Liverpool i går.",
+    "optionA": "Manchester United tapte kampen mot Liverpool.",
+    "optionB": "Manchester United mistet kampen mot Liverpool.",
+    "answer": "A",
+    "explanation": "En kamp «tapes» ved nederlag — man «mister» den ikke, siden man ikke roter den bort.",
+    "hint": "Tenk på at et lag lider et nederlag, ikke roter bort noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-078",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning beskriver best at noen har blitt tynnere og mindre opplagt med årene?",
+    "optionA": "Hun har tapt seg de siste årene.",
+    "optionB": "Hun har mistet seg de siste årene.",
+    "answer": "A",
+    "explanation": "«Å tape seg» er et fast, refleksivt uttrykk som betyr å miste utseendet/kreftene over tid. Uttrykket finnes ikke med «miste».",
+    "hint": "Det er et fast, refleksivt uttrykk med «tape», ikke «miste».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-079",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «miste».",
+    "source": "Han rotet bort nøklene sine på vei til jobb.",
+    "answer": "Han mistet nøklene sine på vei til jobb.",
+    "alternates": ["Han mistet nøklene sine på vei til jobb"],
+    "hint": "«Å rote bort noe» kan erstattes med «å miste noe».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-nyanser-080",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["vi", "har", "ingen", "tid", "å", "miste"],
+    "answer": "Vi har ingen tid å miste.",
+    "alternates": ["Vi har ingen tid å miste"],
+    "hint": "«Å ha ingen tid å miste» betyr å ikke ha noe å unnvære av tid."
+  },
+  {
+    "id": "gq-nyanser-081",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr det når noen sier: «Etter operasjonen mistet han synet på det ene øyet»?",
+    "options": [
+      "Han ble blind på det ene øyet",
+      "Han tapte en konkurranse med det ene øyet",
+      "Han byttet det ene øyet mot noe annet"
+    ],
+    "answer": "Han ble blind på det ene øyet",
+    "hint": "«Å miste synet» betyr å bli blind — det er en abstrakt ting man en gang hadde."
+  },
+  {
+    "id": "gq-nyanser-082",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "De to vennene bodde i _____ by hele livet.",
+    "words": ["samme", "like"],
+    "answer": "samme",
+    "hint": "«Samme» + substantiv uttrykker identitet/likhet."
+  },
+  {
+    "id": "gq-nyanser-083",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Boken var _____ spennende som filmen, syntes jeg.",
+    "words": ["like", "samme"],
+    "answer": "like",
+    "hint": "«Like» + adjektiv uttrykker samme grad."
+  },
+  {
+    "id": "gq-nyanser-084",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Vi gikk på _____ skole da vi var barn.",
+    "words": ["samme", "like"],
+    "answer": "samme",
+    "hint": "«Samme» står foran et substantiv, her «skole»."
+  },
+  {
+    "id": "gq-nyanser-085",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Det har regnet _____ mye i år som i fjor.",
+    "words": ["like", "samme"],
+    "answer": "like",
+    "hint": "«Like» + adverb («mye») uttrykker samme grad."
+  },
+  {
+    "id": "gq-nyanser-086",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Søsknene har _____ farge på øynene — begge har blå.",
+    "words": ["samme", "like"],
+    "answer": "samme",
+    "hint": "«Samme» + substantiv («farge») uttrykker at det er identisk, ikke bare i like stor grad."
+  },
+  {
+    "id": "gq-nyanser-087",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig for å si at to brødre er like høye?",
+    "optionA": "Han er like høy som broren sin.",
+    "optionB": "Han er samme høy som broren sin.",
+    "answer": "A",
+    "explanation": "«Like» kombineres med et adjektiv («høy»); «samme» kombineres ikke direkte med et adjektiv.",
+    "hint": "Tenk på hva slags ord som følger — et adjektiv eller et substantiv."
+  },
+  {
+    "id": "gq-nyanser-088",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning uttrykker riktig at et par giftet seg i det samme året?",
+    "optionA": "De giftet seg samme år.",
+    "optionB": "De giftet seg like år.",
+    "answer": "A",
+    "explanation": "«Samme» kombineres med et substantiv («år»); «like» kan ikke stå direkte foran et bart substantiv på denne måten.",
+    "hint": "«År» er et substantiv her, ikke et adjektiv eller adverb."
+  },
+  {
+    "id": "gq-nyanser-089",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «samme».",
+    "source": "De to bøkene har identisk farge på omslaget.",
+    "answer": "De to bøkene har samme farge på omslaget.",
+    "alternates": ["De to bøkene har samme farge på omslaget"],
+    "hint": "«Identisk» kan erstattes med «samme» + substantiv."
+  },
+  {
+    "id": "gq-nyanser-090",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["hun", "er", "like", "gammel", "som", "meg"],
+    "answer": "Hun er like gammel som meg.",
+    "alternates": ["Hun er like gammel som meg"],
+    "hint": "«Like» + adjektiv («gammel») + «som» uttrykker samme grad."
+  },
+  {
+    "id": "gq-nyanser-091",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr det når noen sier: «Vi tok samme buss til jobb i dag»?",
+    "options": [
+      "De tok den samme, identiske bussen sammen",
+      "De tok busser i samme farge",
+      "De tok hver sin forskjellige buss"
+    ],
+    "answer": "De tok den samme, identiske bussen sammen",
+    "hint": "«Samme» + substantiv («buss») betyr at det var én og samme buss, ikke bare en type buss."
+  },
+  {
+    "id": "gq-nyanser-092",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr det når noen sier: «Denne billetten gjelder ikke»?",
+    "options": ["Billetten er ugyldig", "Billetten handler om noe annet", "Billetten er borte"],
+    "answer": "Billetten er ugyldig",
+    "hint": "«Å gjelde» kan bety å være gyldig."
+  },
+  {
+    "id": "gq-nyanser-093",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr det når noen sier: «Det jeg skal fortelle, gjelder min far»?",
+    "options": [
+      "Det jeg forteller handler om faren min",
+      "Det jeg forteller er gyldig for faren min",
+      "Det jeg forteller er veldig viktig for faren min"
+    ],
+    "answer": "Det jeg forteller handler om faren min",
+    "hint": "«Å gjelde» kan bety å handle om."
+  },
+  {
+    "id": "gq-nyanser-094",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr det når noen sier: «Nå gjelder det å løpe fort!»?",
+    "options": [
+      "Nå er det veldig viktig å løpe fort",
+      "Nå er løpingen ugyldig",
+      "Nå handler historien om løping"
+    ],
+    "answer": "Nå er det veldig viktig å løpe fort",
+    "hint": "«Å gjelde» kan bety å være viktig/stå på spill."
+  },
+  {
+    "id": "gq-nyanser-095",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr det når noen sier: «To av brikkene i spillet gjelder ikke»?",
+    "options": [
+      "To av brikkene telles ikke med",
+      "To av brikkene er borte",
+      "To av brikkene handler om noe annet"
+    ],
+    "answer": "To av brikkene telles ikke med",
+    "hint": "«Å gjelde» kan bety å telle med/være inkludert."
+  },
+  {
+    "id": "gq-nyanser-096",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Denne billetten ______ ikke lenger, du må kjøpe en ny.",
+    "words": ["gjelder", "handler"],
+    "answer": "gjelder",
+    "hint": "«Å gjelde» her betyr å være gyldig."
+  },
+  {
+    "id": "gq-nyanser-097",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Denne historien ______ faren min og barndommen hans.",
+    "words": ["gjelder", "teller"],
+    "answer": "gjelder",
+    "hint": "«Å gjelde» her betyr å handle om."
+  },
+  {
+    "id": "gq-nyanser-098",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning betyr at billetten er ugyldig?",
+    "optionA": "Billetten gjelder ikke.",
+    "optionB": "Billetten handler ikke.",
+    "answer": "A",
+    "explanation": "«Å gjelde» kan bety å være gyldig; «å handle» betyr noe annet (å gjøre noe, eller å handle om noe).",
+    "hint": "Tenk på hvilket verb som brukes om gyldighet."
+  },
+  {
+    "id": "gq-nyanser-099",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning betyr at to av brikkene ikke telles med i spillet?",
+    "optionA": "To av brikkene gjelder ikke.",
+    "optionB": "To av brikkene er dyre.",
+    "answer": "A",
+    "explanation": "«Å gjelde» kan bety å telle med/være inkludert; det andre alternativet handler om pris, ikke om å telle med.",
+    "hint": "Tenk på hvilken setning som handler om å telle noe med eller ikke."
+  },
+  {
+    "id": "gq-nyanser-100",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «gjelder».",
+    "source": "Det er veldig viktig å løpe fort nå!",
+    "answer": "Nå gjelder det å løpe fort!",
+    "alternates": ["Det gjelder å løpe fort nå!"],
+    "hint": "«Det gjelder å» + infinitiv uttrykker at noe er veldig viktig."
+  },
+  {
+    "id": "gq-nyanser-101",
+    "topic": "nyanser-uttrykk",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["denne", "billetten", "gjelder", "ikke"],
+    "answer": "Denne billetten gjelder ikke.",
+    "alternates": ["Denne billetten gjelder ikke"],
+    "hint": "«Gjelder ikke» betyr at billetten er ugyldig."
   },
   {
     "id": "gq-prep-b2-001",
@@ -26591,6 +28789,124 @@
     "plusOnly": true
   },
   {
+    "id": "gq-samset-031",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg det riktig stavede sammensatte substantivet.",
+    "sentence": "Hun leste en _____ for barnet før leggetid.",
+    "words": ["barnebok", "barnbok", "barnsbok"],
+    "answer": "barnebok",
+    "hint": "Barn + e + bok: kort ord som navngir en person tar ofte en bindings-e.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-032",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
+    "source": "en skole der elevene bare er gutter",
+    "answer": "en gutteskole",
+    "alternates": ["gutteskole"],
+    "hint": "Gutt + e + skole: bindings-e etter det korte person-ordet «gutt».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-033",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "optionA": "Hunden sover i hundehuset om natta.",
+    "optionB": "Hunden sover i hundhuset om natta.",
+    "answer": "A",
+    "explanation": "Hund + e + hus: dyreord som «hund» tar som regel en bindings-e foran neste ledd.",
+    "hint": "Sjekk om det mangler en -e- mellom «hund» og «hus».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-034",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Fuglereiret", "lå", "høyt", "oppe", "i", "treet"],
+    "answer": "Fuglereiret lå høyt oppe i treet.",
+    "alternates": ["Fuglereiret lå høyt oppe i treet"],
+    "hint": "Fugl + e + rede/reir: bindings-e etter dyreordet «fugl».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-035",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg det riktig stavede sammensatte substantivet.",
+    "sentence": "Vi kjøpte en stor sekk med _____ til valpen.",
+    "words": ["hundemat", "hundmat", "hundsmat"],
+    "answer": "hundemat",
+    "hint": "Hund + e + mat: samme bindings-e-mønster som i «hundehus».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-036",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
+    "source": "barnet til en katt",
+    "answer": "en kattunge",
+    "alternates": ["kattunge"],
+    "hint": "Katt + unge: ingen bindeledd er nødvendig i denne sammensetningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-037",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg det riktig stavede sammensatte substantivet.",
+    "sentence": "Barna lekte fotball på _____ i friminuttet.",
+    "words": ["skolegården", "skoles gården", "skolesgården"],
+    "answer": "skolegården",
+    "hint": "Skole + gård: ingen bindes- brukes, siden «skole» allerede ender på en vokal.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-038",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "order",
+    "tokens": ["Geitosten", "smaker", "sterkt", "og", "litt", "søtt"],
+    "answer": "Geitosten smaker sterkt og litt søtt.",
+    "alternates": ["Geitosten smaker sterkt og litt søtt"],
+    "hint": "Geit + ost: ingen bindeledd er nødvendig i denne faste sammensetningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-039",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Velg det riktig stavede sammensatte substantivet.",
+    "sentence": "Kelneren viste oss til _____ ved vinduet.",
+    "words": ["restaurantbordet", "restaurantsbordet", "restaurant bordet"],
+    "answer": "restaurantbordet",
+    "hint": "Restaurant + bord: ingen bindeledd er nødvendig i denne sammensetningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-samset-040",
+    "topic": "sammensatte-substantiv",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
+    "source": "en bok som er lånt fra biblioteket",
+    "answer": "en bibliotekbok",
+    "alternates": ["bibliotekbok"],
+    "hint": "Bibliotek + bok: ingen bindeledd er nødvendig i denne sammensetningen.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-adj-075",
     "topic": "adj-boying-c",
     "cefr": "C",
@@ -26926,6 +29242,253 @@
     "source": "Marius bodde i hytta hans.",
     "answer": "Marius bodde i hytta deres.",
     "hint": "Når eieren er flere personer (søsknene), brukes «deres» i stedet for «hans».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-034",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn adjektivet i riktig form.",
+    "sentence": "Har du sett Ninas _____ hund?",
+    "words": ["nye", "ny"],
+    "answer": "nye",
+    "hint": "Adjektiv mellom genitiv-s og substantiv står alltid i bestemt form.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-035",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn adjektivet i riktig form.",
+    "sentence": "Det er Larsas _____ hus, ikke det gamle.",
+    "words": ["store", "stort"],
+    "answer": "store",
+    "hint": "Adjektivets bestemte form er alltid -e, uansett kjønn: store, ikke stort.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-036",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Dette er Toms fine katt.",
+    "optionB": "Dette er Toms fint katt.",
+    "answer": "A",
+    "explanation": "Adjektivet mellom genitiv-s og substantivet skal stå i bestemt form: «fine», ikke «fint» — selv om katt er et en-ord.",
+    "hint": "Bestemt form av adjektiv har alltid -e-endelse.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-037",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Kari har fått en ny jobb hos et stort firma. Velg riktig setning.",
+    "options": [
+      "Karis nye jobb er hos et stort firma.",
+      "Karis ny jobb er hos et stort firma.",
+      "Karis nyeste jobb er hos et stort firma."
+    ],
+    "answer": "Karis nye jobb er hos et stort firma.",
+    "hint": "Adjektivet etter genitiv-s skal stå i bestemt form: nye, ikke ny.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-038",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Kombiner setningene med genitiv-s og adjektivet i bestemt form.",
+    "source": "Emma har en gammel bil. Bilen er ødelagt.",
+    "answer": "Emmas gamle bil er ødelagt.",
+    "hint": "Genitiv-s + adjektiv i bestemt form + substantiv i ubestemt form: Emmas gamle bil.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-039",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn substantivet i riktig form.",
+    "sentence": "Har du sett Idas _____?",
+    "words": ["hund", "hunden"],
+    "answer": "hund",
+    "hint": "Substantivet etter genitiv-s står i ubestemt form: hund, ikke hunden.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-040",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Det er Olas hus.",
+    "optionB": "Det er Olas huset.",
+    "answer": "A",
+    "explanation": "Substantivet etter genitiv-s står i ubestemt form: hus, ikke huset — selv uten adjektiv.",
+    "hint": "Sjekk formen på substantivet rett etter genitiv-s.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-041",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Dette", "er", "Idas", "nye", "venn"],
+    "answer": "Dette er Idas nye venn.",
+    "alternates": ["Dette er Idas nye venn"],
+    "hint": "Genitiv-s + adjektiv i bestemt form + substantiv i ubestemt form.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-042",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn adjektivet i riktig form.",
+    "sentence": "Er dette Sofies _____ datter?",
+    "words": ["store", "stor"],
+    "answer": "store",
+    "hint": "Adjektiv mellom genitiv-s og substantiv står alltid i bestemt form: store.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-043",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Kombiner setningene med genitiv-s og adjektivet i bestemt form.",
+    "source": "Jon har en fin bil. Bilen er rød.",
+    "answer": "Jons fine bil er rød.",
+    "hint": "Genitiv-s + adjektiv i bestemt form + substantiv i ubestemt form: Jons fine bil.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-044",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn riktig genitiv-s-form for varighet.",
+    "sentence": "Vi skal ha _____ ferie i sommer.",
+    "words": ["to ukers", "to uker"],
+    "answer": "to ukers",
+    "hint": "Genitiv-s på tidsmåleordet uttrykker varighet: to ukers ferie = en ferie som varer i to uker.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-045",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Vi tar en times pause.",
+    "optionB": "Vi tar en time's pause.",
+    "answer": "A",
+    "explanation": "Genitiv-s har aldri apostrof på norsk, heller ikke i varighetsuttrykk: en times pause, ikke en time's pause.",
+    "hint": "Sjekk om det er apostrof foran -s.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-046",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn substantivet i riktig form.",
+    "sentence": "Hun søkte om ti måneders _____.",
+    "words": ["permisjon", "permisjonen"],
+    "answer": "permisjon",
+    "hint": "Substantivet etter genitiv-s står i ubestemt form, også i varighetsuttrykk: permisjon, ikke permisjonen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-047",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Han", "tok", "seg", "en", "ukers", "fri"],
+    "answer": "Han tok seg en ukers fri.",
+    "alternates": ["Han tok seg en ukers fri"],
+    "hint": "Genitiv-s på tidsmåleordet foran substantivet: en ukers fri.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-048",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "transform",
+    "prompt": "Skriv om setningen med genitiv-s for å uttrykke varighet.",
+    "source": "Ferien varer i to uker.",
+    "answer": "Det er en to ukers ferie.",
+    "hint": "Tidsmåleord + genitiv-s + substantiv: to ukers ferie.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-049",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "multiple-choice",
+    "prompt": "Hvilken setning uttrykker varighet riktig?",
+    "options": [
+      "Vi hadde en times samtale på telefonen.",
+      "Vi hadde en time samtale på telefonen.",
+      "Vi hadde en time's samtale på telefonen."
+    ],
+    "answer": "Vi hadde en times samtale på telefonen.",
+    "hint": "Genitiv-s uten apostrof på tidsmåleordet: en times samtale.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-050",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn riktig genitiv-s-form for varighet.",
+    "sentence": "Etter _____ stillhet begynte hun å snakke igjen.",
+    "words": ["ti minutters", "ti minutter"],
+    "answer": "ti minutters",
+    "hint": "Genitiv-s på tidsmåleordet uttrykker hvor lenge noe varte: ti minutters stillhet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-051",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Hun tok tre måneders permisjon fra jobben.",
+    "optionB": "Hun tok tre måneders permisjonen fra jobben.",
+    "answer": "A",
+    "explanation": "Substantivet etter genitiv-s står i ubestemt form: permisjon, ikke permisjonen — samme regel som ved vanlig eiendomsgenitiv.",
+    "hint": "Se på formen av substantivet rett etter genitiv-s.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-052",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["De", "planla", "en", "tre", "måneders", "reise"],
+    "answer": "De planla en tre måneders reise.",
+    "alternates": ["De planla en tre måneders reise"],
+    "hint": "Tallord + tidsmåleord + genitiv-s foran substantivet: tre måneders reise.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-053",
+    "topic": "noun-possessives",
+    "cefr": "B1",
+    "type": "fill",
+    "prompt": "Sett inn substantivet i riktig form.",
+    "sentence": "Etter en lang uke trengte han en times _____ i sofaen.",
+    "words": ["pause", "pausen"],
+    "answer": "pause",
+    "hint": "Substantivet etter genitiv-s står i ubestemt form: pause, ikke pausen.",
     "plusOnly": true
   },
   {
@@ -27606,11 +30169,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: perfektum partisipp etter «etter å ha».",
     "sentence": "Etter å ha _____ (kjøpe) billettene, gikk de rett til perrongen.",
-    "words": [
-      "kjøpt",
-      "kjøpte",
-      "kjøper"
-    ],
+    "words": ["kjøpt", "kjøpte", "kjøper"],
     "answer": "kjøpt",
     "hint": "Etter «etter å ha» bruker vi perfektum partisipp (kjøpt), ikke preteritum eller presens.",
     "plusOnly": true
@@ -27622,11 +30181,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: perfektum partisipp etter «etter å ha».",
     "sentence": "Etter å ha _____ (betale) regningen, følte Sindre seg lettet.",
-    "words": [
-      "betalt",
-      "betalte",
-      "betaler"
-    ],
+    "words": ["betalt", "betalte", "betaler"],
     "answer": "betalt",
     "hint": "Perfektum partisipp av «å betale» er «betalt» — samme form uansett kjønn eller tall.",
     "plusOnly": true
@@ -27638,11 +30193,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: perfektum partisipp etter «etter å ha».",
     "sentence": "Etter å ha _____ (rydde) rommet, satte Mia seg ned og hvilte.",
-    "words": [
-      "ryddet",
-      "rydde",
-      "rydder"
-    ],
+    "words": ["ryddet", "rydde", "rydder"],
     "answer": "ryddet",
     "hint": "«Rydde» er et svakt verb: rydder – ryddet – har ryddet. Perfektum partisipp er «ryddet».",
     "plusOnly": true
@@ -27652,17 +30203,7 @@
     "topic": "partisipp-former",
     "cefr": "B1",
     "type": "order",
-    "tokens": [
-      "Etter",
-      "å",
-      "ha",
-      "pakket",
-      "koffertene,",
-      "dro",
-      "de",
-      "til",
-      "flyplassen"
-    ],
+    "tokens": ["Etter", "å", "ha", "pakket", "koffertene,", "dro", "de", "til", "flyplassen"],
     "answer": "Etter å ha pakket koffertene, dro de til flyplassen.",
     "hint": "Setningen åpner med «etter å ha» + perfektum partisipp (pakket); hovedsetningen følger med vanlig V2-ordstilling (dro de).",
     "plusOnly": true
@@ -27672,19 +30213,7 @@
     "topic": "partisipp-former",
     "cefr": "B1",
     "type": "order",
-    "tokens": [
-      "Etter",
-      "å",
-      "ha",
-      "øvd",
-      "i",
-      "flere",
-      "timer,",
-      "følte",
-      "Nora",
-      "seg",
-      "klar"
-    ],
+    "tokens": ["Etter", "å", "ha", "øvd", "i", "flere", "timer,", "følte", "Nora", "seg", "klar"],
     "answer": "Etter å ha øvd i flere timer, følte Nora seg klar.",
     "hint": "«Øve» mister -e- i perfektum partisipp: øver – øvde – har øvd.",
     "plusOnly": true
@@ -27735,11 +30264,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: perfektum partisipp etter «etter å ha».",
     "sentence": "Etter å ha _____ (miste) jobben, begynte han å lete etter noe nytt.",
-    "words": [
-      "mistet",
-      "miste",
-      "mister"
-    ],
+    "words": ["mistet", "miste", "mister"],
     "answer": "mistet",
     "hint": "Perfektum partisipp av «å miste» er «mistet».",
     "plusOnly": true
@@ -27751,11 +30276,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av «varme».",
     "sentence": "Kaffen var fortsatt _____ da jeg kom hjem.",
-    "words": [
-      "varm",
-      "varme",
-      "varmt"
-    ],
+    "words": ["varm", "varme", "varmt"],
     "answer": "varm",
     "hint": "Noen adjektiv dannes helt uten endelse: substantivet/verbet «varme» → adjektivet «varm»."
   },
@@ -27766,11 +30287,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av substantivet «liv» (om en person full av energi).",
     "sentence": "Barnebarna er alltid så _____ og fulle av energi.",
-    "words": [
-      "livlig",
-      "levelig",
-      "liv"
-    ],
+    "words": ["livlig", "levelig", "liv"],
     "answer": "livlig",
     "hint": "«Livlig» (full av liv/energi) dannes fra substantivet «liv» + -lig. Ikke forveksle med «levelig», som dannes fra verbet «leve»."
   },
@@ -27781,11 +30298,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av verbet «leve» (om noe man kan leve med/i).",
     "sentence": "Etter oppussingen ble huset mye mer _____.",
-    "words": [
-      "levelig",
-      "livlig",
-      "levende"
-    ],
+    "words": ["levelig", "livlig", "levende"],
     "answer": "levelig",
     "hint": "«Levelig» (til å leve i/med) dannes fra verbet «leve» + -lig, i motsetning til «livlig» fra substantivet «liv»."
   },
@@ -27796,11 +30309,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av verbet «streve».",
     "sentence": "Det var en lang og _____ tur opp fjellet.",
-    "words": [
-      "strevsom",
-      "streve",
-      "strev"
-    ],
+    "words": ["strevsom", "streve", "strev"],
     "answer": "strevsom",
     "hint": "Endelsen -som gir adjektiv av typen «strevsom» (som krever mye strev)."
   },
@@ -27811,11 +30320,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av verbet «forstå».",
     "sentence": "Læreren var veldig _____ da jeg forklarte hvorfor jeg var sen.",
-    "words": [
-      "forståelsesfull",
-      "forstå",
-      "forståelse"
-    ],
+    "words": ["forståelsesfull", "forstå", "forståelse"],
     "answer": "forståelsesfull",
     "hint": "Substantivet «forståelse» + -full gir adjektivet «forståelsesfull» (full av forståelse)."
   },
@@ -27826,11 +30331,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av verbet «hjelpe» (om noen som ikke klarer seg selv).",
     "sentence": "Uten mobilen følte han seg helt _____.",
-    "words": [
-      "hjelpeløs",
-      "hjelpe",
-      "hjelp"
-    ],
+    "words": ["hjelpeløs", "hjelpe", "hjelp"],
     "answer": "hjelpeløs",
     "hint": "Endelsen -løs betyr «uten»: «hjelpeløs» = uten hjelp, klarer seg ikke selv."
   },
@@ -27841,11 +30342,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av substantivet «gjest».",
     "sentence": "Familien var kjent for å være _____ og ønsket alle velkommen.",
-    "words": [
-      "gjestfri",
-      "gjest",
-      "gjeste"
-    ],
+    "words": ["gjestfri", "gjest", "gjeste"],
     "answer": "gjestfri",
     "hint": "Endelsen -fri gir adjektivet «gjestfri» (som tar godt imot gjester)."
   },
@@ -27867,11 +30364,7 @@
     "type": "fill",
     "prompt": "Fyll inn presens partisipp (adjektivform) av verbet «danse».",
     "sentence": "De _____ barna underholdt alle på festen.",
-    "words": [
-      "dansende",
-      "danser",
-      "danset"
-    ],
+    "words": ["dansende", "danser", "danset"],
     "answer": "dansende",
     "hint": "Presens partisipp brukt som adjektiv dannes med -ende: danse → dansende."
   },
@@ -27882,11 +30375,7 @@
     "type": "fill",
     "prompt": "Fyll inn perfektum partisipp (adjektivform) av verbet «bruke».",
     "sentence": "Han kjøpte en _____ bil for å spare penger.",
-    "words": [
-      "brukt",
-      "bruke",
-      "bruk"
-    ],
+    "words": ["brukt", "bruke", "bruk"],
     "answer": "brukt",
     "hint": "Noen verb får perfektum partisipp med bare -t: bruke → brukt."
   }

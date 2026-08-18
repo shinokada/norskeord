@@ -175,7 +175,9 @@ function main() {
   }
   console.log(`📌 Retag: ${Object.keys(GROUP1_RETAG).length} → fixed-prepositional-phrases`);
   console.log(`📌 Retag: ${Object.keys(GROUP2_RETAG).length} → necessity-formulas`);
-  console.log(`📌 Retag: ${Object.keys(SKYLD_I_RETAG).length} → society (skyld i — not verb-headed)`);
+  console.log(
+    `📌 Retag: ${Object.keys(SKYLD_I_RETAG).length} → society (skyld i — not verb-headed)`
+  );
 
   // 3: migrate to vocab
   const categoryCounters = {};

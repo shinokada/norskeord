@@ -249,3 +249,4 @@ svin (et)
 due (en)
 å sløse
 å skylde
+å forstå

@@ -136,7 +136,10 @@ function loadExistingKeys() {
 function splitTableRow(line) {
   const t = line.trim();
   if (!t.startsWith('|')) return null;
-  return t.split('|').slice(1, -1).map((c) => c.trim());
+  return t
+    .split('|')
+    .slice(1, -1)
+    .map((c) => c.trim());
 }
 function isSeparatorRow(cells) {
   return cells.every((c) => /^:?-+:?$/.test(c) || c === '');
@@ -169,7 +172,10 @@ function extractDerivedNouns(md, existingKeys) {
         const [fastRaw, lost, derivedCell] = cells;
         const fast = fastRaw.replace(/^\d+\.\s*/, '');
         if (derivedCell && derivedCell !== '–' && derivedCell !== '-') {
-          for (const noun of derivedCell.split(';').map((s) => s.trim()).filter(Boolean)) {
+          for (const noun of derivedCell
+            .split(';')
+            .map((s) => s.trim())
+            .filter(Boolean)) {
             raw.push({ fast, lost, noun });
           }
         }
@@ -215,9 +221,12 @@ const vocabFinal = [...merged, ...dedupedDerived];
 // ---------------------------------------------------------------------------
 console.log(`Base pool (855 - uttrykk - review - excluded) : ${base.length}`);
 console.log(`Kept near-duplicates                          : ${keptNearDup.length}`);
-if (missingKeepTerms.length) console.log(`  WARNING - keep terms not found: ${missingKeepTerms.join(', ')}`);
+if (missingKeepTerms.length)
+  console.log(`  WARNING - keep terms not found: ${missingKeepTerms.join(', ')}`);
 console.log(`New derived-noun candidates (deduped vs DB)   : ${derivedNew.length}`);
-console.log(`  (dropped as raw_term collision with base)   : ${derivedCandidates.length - dedupedDerived.length}`);
+console.log(
+  `  (dropped as raw_term collision with base)   : ${derivedCandidates.length - dedupedDerived.length}`
+);
 console.log(`FINAL vocab candidate count                   : ${vocabFinal.length}`);
 
 if (DRY_RUN) {
@@ -225,5 +234,9 @@ if (DRY_RUN) {
   process.exit(0);
 }
 
-writeFileSync(resolve(OUT_DIR, 'candidates-vocab.json'), JSON.stringify(vocabFinal, null, 2) + '\n', 'utf-8');
+writeFileSync(
+  resolve(OUT_DIR, 'candidates-vocab.json'),
+  JSON.stringify(vocabFinal, null, 2) + '\n',
+  'utf-8'
+);
 console.log(`\nWrote ${OUT_DIR}/candidates-vocab.json (${vocabFinal.length} entries)`);

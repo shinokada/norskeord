@@ -35,14 +35,8 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = resolve(__dirname, '../src/lib/data');
-const SOURCE_MD = resolve(
-  __dirname,
-  '../draft/b1/opp-og-fram-arbeidsbok/content/opp-og-fram.md'
-);
-const OUTPUT_DIR = resolve(
-  __dirname,
-  '../draft/b1/opp-og-fram-arbeidsbok/data'
-);
+const SOURCE_MD = resolve(__dirname, '../draft/b1/opp-og-fram-arbeidsbok/content/opp-og-fram.md');
+const OUTPUT_DIR = resolve(__dirname, '../draft/b1/opp-og-fram-arbeidsbok/data');
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
@@ -100,13 +94,17 @@ function loadExistingKeys() {
 // 3. Parse the textbook markdown
 // ---------------------------------------------------------------------------
 
-const HEADER_CELL_RE = /^(ord i teksten:?|forklaring på norsk:?|oversatt til ditt språk:?|fast sammensatt|løst sammensatt|avledete? substantiv|substantiv)$/i;
+const HEADER_CELL_RE =
+  /^(ord i teksten:?|forklaring på norsk:?|oversatt til ditt språk:?|fast sammensatt|løst sammensatt|avledete? substantiv|substantiv)$/i;
 
 function splitTableRow(line) {
   // "| a | b | c |" -> ["a","b","c"]; tolerate missing leading/trailing pipe
   const trimmed = line.trim();
   if (!trimmed.startsWith('|')) return null;
-  const parts = trimmed.split('|').slice(1, -1).map((c) => c.trim());
+  const parts = trimmed
+    .split('|')
+    .slice(1, -1)
+    .map((c) => c.trim());
   return parts;
 }
 
@@ -356,7 +354,9 @@ writeFileSync(
 );
 
 console.log(`\nWrote ${OUTPUT_DIR}/candidates-new.json (${newCandidates.length} entries)`);
-console.log(`Wrote ${OUTPUT_DIR}/candidates-duplicate.json (${duplicateCandidates.length} entries)`);
+console.log(
+  `Wrote ${OUTPUT_DIR}/candidates-duplicate.json (${duplicateCandidates.length} entries)`
+);
 console.log(
   `Wrote ${OUTPUT_DIR}/candidates-near-duplicate.json (${nearDuplicateCandidates.length} entries)`
 );

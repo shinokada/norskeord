@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@11.15.1",
+  "packageManager": "pnpm@11.22.0",
   "scripts": {
     "dev": "vite dev",
     "build": "pnpm stats && vite build",
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.117.1",
+    "@types/node": "^24.0.0",
     "@changesets/cli": "^3.0.0",
     "@eslint/compat": "^2.1.0",
     "@eslint/js": "^10.0.1",

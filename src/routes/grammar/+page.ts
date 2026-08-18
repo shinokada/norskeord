@@ -30,12 +30,25 @@ export const load: PageLoad = async () => {
   const segments = order.flatMap((topic) => {
     const levels = topicLevels(byTopic[topic] ?? []) as CEFRLevel[];
     const topicSegments = groupTopicLevelsByAccess(topic, levels);
-    return topicSegments.map((seg) => ({
-      topic,
-      access: seg.access,
-      levels: seg.levels,
-      total: (byTopic[topic] ?? []).filter((q) => seg.levels.includes(q.cefr)).length
-    }));
+    return topicSegments.map((seg) => {
+      const segQuestions = (byTopic[topic] ?? []).filter((q) => seg.levels.includes(q.cefr));
+      // Per-level breakdown so the picker can show a count scoped to the
+      // active CEFR filter (matching /learn/[level], which only ever counts
+      // q.cefr === that level) instead of always summing every level in the
+      // segment — a segment can span multiple levels (e.g. B1+B2 sharing the
+      // same locked access) even though only one is selected.
+      const countsByLevel: Partial<Record<CEFRLevel, number>> = {};
+      for (const l of seg.levels) {
+        countsByLevel[l] = segQuestions.filter((q) => q.cefr === l).length;
+      }
+      return {
+        topic,
+        access: seg.access,
+        levels: seg.levels,
+        total: segQuestions.length,
+        countsByLevel
+      };
+    });
   });
 
   return {

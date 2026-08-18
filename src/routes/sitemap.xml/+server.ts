@@ -60,22 +60,22 @@ export const GET: RequestHandler = async () => {
       '/learn/[level]': learnLevels
     },
     excludeRoutePatterns: [
-      '^/admin.*',
-      '^/api.*',
-      '^/auth.*',
-      '^/daily.*',
-      '^/my-profile.*',
-      '^/stats.*',
-      '^/quiz.*',
-      '^/norskproven/.*',
-      '^/plus.*'
+      /^\/admin.*/,
+      /^\/api.*/,
+      /^\/auth.*/,
+      /^\/daily.*/,
+      /^\/my-profile.*/,
+      /^\/stats.*/,
+      /^\/quiz.*/,
+      /^\/norskproven\/.*/,
+      /^\/plus.*/
     ],
     processPaths: (paths) => {
       return paths.map((p) => ({
         ...p,
         alternates: [
-          { lang: 'en', path: p.path },
-          { lang: 'x-default', path: p.path }
+          { hreflang: 'en', path: p.path },
+          { hreflang: 'x-default', path: p.path }
         ]
       }));
     }
