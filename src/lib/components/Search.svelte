@@ -312,11 +312,11 @@
               role="option"
               aria-selected={activeIndex === results.indexOf(entry)}
               tabindex="-1"
-              class="cursor-pointer border-b border-gray-100 px-4 py-3 last:border-0
+              class="cursor-pointer border-b border-gray-100 border-l-2 px-4 py-3 last:border-b-0
                   dark:border-gray-800
                   {activeIndex === results.indexOf(entry)
-                ? 'bg-indigo-50 dark:bg-indigo-950/40'
-                : 'hover:bg-gray-50 dark:hover:bg-gray-800/50'}"
+                ? 'border-l-indigo-500 bg-indigo-50 dark:bg-indigo-900/60'
+                : 'border-l-transparent hover:bg-gray-50 dark:hover:bg-gray-800/50'}"
               onclick={() => navigateTo(entry)}
               onmouseenter={() => {
                 activeIndex = results.indexOf(entry);
