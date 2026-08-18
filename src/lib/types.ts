@@ -208,6 +208,10 @@ export type GrammarTopic =
   | 'adjektiv-eller-adverb' // adjective (agrees with noun) vs. neuter/adverb -t form (modifies verb)
   | 'motsetning-selv-om-likevel' // «men» (coordinating) vs. «selv om» (subordinating) vs. «likevel» (adverb, V2)
   | 'tidssekvens-etter-at-etterpaa' // «etter at» (subjunction) vs. «etterpå» (adverb, V2) vs. «så» (conjunction)
+  | 'transitiv-intransitiv-verb' // transitive/intransitive verb pairs: sette/sitte, legge/ligge, henge, brenne, senke/synke
+  | 's-verb' // reciprocal/deponent -s verbs: møtes, sees, synes, trives — no non-s counterpart, or a different meaning
+  | 'verbprefiks-be-an-mis' // verb-forming prefixes be-/an-/mis- changing a base verb's meaning/valency
+  | 'adverb-setningsbinding' // connective adverbs linking two sentences: så (time), derfor (årsak), likevel (motsetning), dessuten (tillegg)
   // Nivå C topics (Plus only) — see ai-docs/implementation/c-grammar.md
   | 'ubestemt-artikkel-c' // indefinite article — professions+adjective, uncountables, transport, uttrykk, optional article
   | 'substantiv-uttrykk-c' // noun forms inside fixed idioms (ta hånd om, stå til liv, gå som fot i hose)

@@ -57,6 +57,9 @@
     untrack(() => (profile?.quiz_limit != null ? String(profile.quiz_limit) : 'default'))
   );
   let showExample = $state(untrack(() => profile?.show_example ?? false));
+  let fsrsRetention = $state(
+    untrack(() => (profile?.fsrs_retention != null ? String(profile.fsrs_retention) : 'default'))
+  );
 
   const sessionLimitOptions = [
     { value: '10', label: m.profile_prefs_session_10() },
@@ -71,6 +74,12 @@
     { value: 'default', label: m.profile_prefs_quiz_10_default() },
     { value: '15', label: m.profile_prefs_quiz_15() },
     { value: '20', label: m.profile_prefs_quiz_20() }
+  ];
+
+  const reviewIntensityOptions = [
+    { value: '0.8', label: m.profile_prefs_review_intensity_relaxed() },
+    { value: 'default', label: m.profile_prefs_review_intensity_standard() },
+    { value: '0.95', label: m.profile_prefs_review_intensity_intensive() }
   ];
 
   let cardDirectionOptions = $derived.by(() => {
@@ -122,6 +131,7 @@
     body.append('session_limit', sessionLimit);
     body.append('quiz_limit', quizLimit);
     if (showExample) body.append('show_example', 'true');
+    body.append('fsrs_retention', fsrsRetention);
 
     try {
       const res = await fetch('?/updatePreferences', { method: 'POST', body });
@@ -145,7 +155,8 @@
       voicePitch,
       sessionLimit,
       quizLimit,
-      showExample
+      showExample,
+      fsrsRetention
     ];
     if (!mounted) {
       mounted = true;
@@ -330,6 +341,15 @@
       label={m.profile_prefs_show_example_label()}
       bind:checked={showExample}
       hint={m.profile_prefs_show_example_hint()}
+    />
+
+    <!-- FSRS review intensity -->
+    <SegmentedControl
+      name="fsrs_retention"
+      label={m.profile_prefs_review_intensity()}
+      options={reviewIntensityOptions}
+      bind:selected={fsrsRetention}
+      hint={m.profile_prefs_review_intensity_hint()}
     />
   </div>
 </section>

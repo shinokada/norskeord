@@ -19,6 +19,7 @@ export interface Profile {
   session_limit: number | null;
   quiz_limit: number | null; // null = default (10)
   show_example: boolean; // show example translation below the card by default
+  fsrs_retention: number | null; // FSRS request_retention preset: 0.8/0.9/0.95, null = default (0.9)
   // Onboarding fields
   study_goals: string[] | null; // ['vocab','grammar','speaking','listening','writing']
   onboarding_done: boolean;
@@ -49,6 +50,7 @@ export type ProfileUpdate = Partial<
     | 'session_limit'
     | 'quiz_limit'
     | 'show_example'
+    | 'fsrs_retention'
   >
 >;
 

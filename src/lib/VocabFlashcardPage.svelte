@@ -16,9 +16,10 @@
     countDueToday,
     previewIntervals,
     restoreProgressToLocalStorage,
-    vocabKey
+    vocabKey,
+    getFsrs
   } from '$lib/progress';
-  import { State } from 'ts-fsrs';
+  import { State, type FSRS } from 'ts-fsrs';
   import * as m from '$lib/paraglide/messages.js';
 
   interface CategoryNav {
@@ -122,6 +123,12 @@
   // localStorage fallback — read synchronously at init (browser only), kept reactive for storage events
   let localSessionLimit = $state<number | null>(browser ? getSessionLimit(localStorage) : 20);
 
+  // Per-user FSRS instance (personal weights + enable_short_term: false), resolved once on
+  // mount so previewIntervals() matches what saveProgress() will actually schedule. Falls
+  // back to the module default (undefined → previewIntervals uses its own DEFAULT_FSRS)
+  // until this resolves.
+  let fsrsInstance = $state<FSRS | undefined>(undefined);
+
   // touch
   let isTouch = $state(false);
   let touchStartX = 0;
@@ -153,6 +160,11 @@
   // show_example from layout server (cross-device default)
   let showExample = $derived((page.data.showExample as boolean) ?? false);
 
+  // FSRS review-intensity preset from layout server (0.8/0.9/0.95, or null for
+  // default Standard). Only meaningful for Plus users — getFsrs()/saveProgress()
+  // ignore it when userId is null.
+  let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
+
   // session limit — DB value (cross-device) takes priority; localStorage is the fallback for
   // unauthenticated users or when no profile value is set.
   // Uses $derived so it stays in sync if the prop changes (e.g. navigation).
@@ -176,6 +188,12 @@
       progressMap = loadProgressMap();
       dueCount = countDueToday(progressMap);
     }
+
+    // Resolve the per-user FSRS instance (personal weights for Plus users, module default
+    // otherwise) so the interval preview below matches actual scheduling.
+    getFsrs(isPlus ? (page.data.user?.id ?? null) : null, fsrsRetention).then((f) => {
+      fsrsInstance = f;
+    });
 
     // Seed showExampleDefault from the layout server value for logged-in users,
     // so it syncs across devices. localStorage remains the fallback for guests.
@@ -278,14 +296,39 @@
     return limited.map((e) => makeDeckItem(e, mo, ct));
   }
 
-  function buildDeck(es: VocabEntry[], mo: Mode, ct: CardType, dm: DeckMode, limit: number | null) {
+  function buildDeck(
+    es: VocabEntry[],
+    mo: Mode,
+    ct: CardType,
+    dm: DeckMode,
+    limit: number | null,
+    targetNorsk: string | null = null
+  ) {
     const source = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
-    const items =
-      dm === 'due'
-        ? buildDueDeck(es, mo, ct, progressMap, limit)
-        : shuffle(source)
-            .slice(0, limit ?? source.length)
-            .map((e) => makeDeckItem(e, mo, ct));
+    const targetEntry = targetNorsk ? source.find((e) => e.norsk === targetNorsk) : undefined;
+
+    let items: DeckItem[];
+    if (targetEntry) {
+      // Jumped in from search: put the searched word first, then fill the
+      // rest of the deck as usual (shuffled, session-limit aware) — bypasses
+      // due-mode filtering so the word is guaranteed to show even if it
+      // isn't due yet, since the person explicitly asked to see it.
+      const rest = source.filter((e) => e !== targetEntry);
+      const shuffledRest = shuffle(rest);
+      const restLimit = limit != null ? Math.max(limit - 1, 0) : shuffledRest.length;
+      items = [
+        makeDeckItem(targetEntry, mo, ct),
+        ...shuffledRest.slice(0, restLimit).map((e) => makeDeckItem(e, mo, ct))
+      ];
+    } else {
+      items =
+        dm === 'due'
+          ? buildDueDeck(es, mo, ct, progressMap, limit)
+          : shuffle(source)
+              .slice(0, limit ?? source.length)
+              .map((e) => makeDeckItem(e, mo, ct));
+    }
+
     deck = items;
     currentIndex = 0;
     completed = false;
@@ -376,7 +419,7 @@
 
   let intervals = $derived.by(() => {
     if (!current || !showCardBack) return null;
-    return previewIntervals(progressMap[vocabKey(current.entry)] ?? null, new Date());
+    return previewIntervals(progressMap[vocabKey(current.entry)] ?? null, new Date(), fsrsInstance);
   });
 
   // ── 2-B: requeue "Again" cards in due mode ───────────────────────────────────
@@ -435,7 +478,8 @@
           entry,
           previousProgress.lastRating ?? 'good',
           previousMap,
-          userId
+          userId,
+          fsrsRetention
         );
       }
     } else {
@@ -452,6 +496,12 @@
 
   // ── Rebuild deck when entries / mode / cardType / deckMode changes ───────────
 
+  // Word to jump straight to in the deck, e.g. arriving from a search result
+  // (?word=<norsk>). Read reactively from the URL, so restart() (which calls
+  // buildDeck without this arg) naturally reverts to a full shuffle, and a
+  // fresh search navigation with a new ?word= rebuilds the deck again.
+  let targetWord = $derived(page.url.searchParams.get('word'));
+
   $effect(() => {
     const e = entries;
     // Read effectiveMode so the effect re-runs when mode or hasDefinitions changes.
@@ -460,6 +510,7 @@
     const ct = cardType;
     const dm = deckMode;
     const lim = sessionLimit;
+    const target = targetWord;
     untrack(() => {
       if (e.length === 0) {
         deck = [];
@@ -469,7 +520,7 @@
         clearUndo();
         return;
       }
-      buildDeck(e, mo, ct, dm, lim);
+      buildDeck(e, mo, ct, dm, lim, target);
     });
   });
 
@@ -564,7 +615,7 @@
 
     next();
 
-    progressMap = await saveProgress(entry, rating, progressMap, userId);
+    progressMap = await saveProgress(entry, rating, progressMap, userId, fsrsRetention);
     dueCount = countDueToday(progressMap);
   }
 

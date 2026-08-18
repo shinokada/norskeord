@@ -89,6 +89,19 @@ pnpm stats
 pnpm stats -- --detail
 ```
 
+## build-vocab-candidates.mjs
+
+Assembles the final `candidates-vocab.json` for the Opp og fram! arbeidsbok
+extraction (step 3, vocab side) from the already-classified candidate files
+plus freshly-extracted derived nouns from the compound-verb tables. See
+`draft/b1/opp-og-fram-arbeidsbok/implementation/b1-vocab-uttrykk-opp-og-fram-arbeidsbok.md`
+section 8 for details.
+
+```
+node scripts/build-vocab-candidates.mjs
+node scripts/build-vocab-candidates.mjs --dry-run   # counts only, no write
+```
+
 ## add-b2-fields.mjs
 
 ```
