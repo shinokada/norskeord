@@ -21,58 +21,58 @@
 
 ### Minor Changes
 
-- - **New Features**
-    - Added 73 advanced Norwegian grammar exercises for B1–C levels, including adjective agreement, verb forms, passives, punctuation, possessives, and compound words.
-    - Expanded grammar coverage across multiple textbook-based topics and added advanced adjective comparison guidance.
-    - Added nine vocabulary items and the expression “somle bort noe.”
-    - Added Norwegian learning articles explaining _feil/galt_, _planlegge_, and _-vern_.
-  - **Bug Fixes**
-    - Corrected a Norwegian example from “det filmen” to “den filmen.”
-  - **Updates**
-    - Refreshed grammar statistics and expanded C-level validation coverage.
+- **New Features**
+  - Added 73 advanced Norwegian grammar exercises for B1–C levels, including adjective agreement, verb forms, passives, punctuation, possessives, and compound words.
+  - Expanded grammar coverage across multiple textbook-based topics and added advanced adjective comparison guidance.
+  - Added nine vocabulary items and the expression “somle bort noe.”
+  - Added Norwegian learning articles explaining _feil/galt_, _planlegge_, and _-vern_.
+- **Bug Fixes**
+  - Corrected a Norwegian example from “det filmen” to “den filmen.”
+- **Updates**
+  - Refreshed grammar statistics and expanded C-level validation coverage.
 
 ## 2.65.0
 
 ### Minor Changes
 
-- - **New Features**
-    - Added extensive Norwegian C-level vocabulary, idioms, expressions, translations, examples, and definitions.
-    - Added more than 1,000 C-level preposition and fixed-expression exercises in varied formats.
-    - Added complete Norwegian workbooks, answer keys, grammar guides, and vocabulary learning materials.
-    - Added an article explaining distinctions between _oppføre seg_, _opptre_, and _arte seg_.
-  - **Improvements**
-    - Refined A1–B2 vocabulary and expression content, translations, definitions, categorization, and identifiers.
-    - Added support for vocabulary notes and verb-type information.
-  - **Bug Fixes**
-    - Improved search test reliability and duplicate-content cleanup.
+- **New Features**
+  - Added extensive Norwegian C-level vocabulary, idioms, expressions, translations, examples, and definitions.
+  - Added more than 1,000 C-level preposition and fixed-expression exercises in varied formats.
+  - Added complete Norwegian workbooks, answer keys, grammar guides, and vocabulary learning materials.
+  - Added an article explaining distinctions between _oppføre seg_, _opptre_, and _arte seg_.
+- **Improvements**
+  - Refined A1–B2 vocabulary and expression content, translations, definitions, categorization, and identifiers.
+  - Added support for vocabulary notes and verb-type information.
+- **Bug Fixes**
+  - Improved search test reliability and duplicate-content cleanup.
 
 ## 2.64.0
 
 ### Minor Changes
 
-- - **New Features**
-    - Plus users can independently collapse or expand Vocabulary, Uttrykk, and Grammar sections on the statistics page.
-    - Section states are remembered between visits.
-    - Grammar statistics now include a persistent summary while details are collapsed.
-    - Added accessible toggles with visual expand/collapse indicators.
+- **New Features**
+  - Plus users can independently collapse or expand Vocabulary, Uttrykk, and Grammar sections on the statistics page.
+  - Section states are remembered between visits.
+  - Grammar statistics now include a persistent summary while details are collapsed.
+  - Added accessible toggles with visual expand/collapse indicators.
 
-  - **Bug Fixes**
-    - Updated the displayed statistics data timestamp.
+- **Bug Fixes**
+  - Updated the displayed statistics data timestamp.
 
 ## 2.63.0
 
 ### Minor Changes
 
-- - **New Features**
-    - Grammar explanations now support clearer paragraphs, bullet lists, bold emphasis, and expandable content.
-    - Added new vocabulary entries for “monument,” “billedhugger,” “å debutere,” “utover,” and “lovende.”
+- **New Features**
+  - Grammar explanations now support clearer paragraphs, bullet lists, bold emphasis, and expandable content.
+  - Added new vocabulary entries for “monument,” “billedhugger,” “å debutere,” “utover,” and “lovende.”
 
-  - **Improvements**
-    - Grammar exercises now provide clearer instructions to write complete sentences and use the requested word forms.
-    - Updated explanations across the grammar rules with improved structure and readability.
+- **Improvements**
+  - Grammar exercises now provide clearer instructions to write complete sentences and use the requested word forms.
+  - Updated explanations across the grammar rules with improved structure and readability.
 
-  - **Documentation**
-    - Added implementation notes and updated related documentation references.
+- **Documentation**
+  - Added implementation notes and updated related documentation references.
 
 ## 2.62.0
 
