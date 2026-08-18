@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+  import { page } from '$app/state';
   import type { CardProgress, GrammarQuestion, GrammarRule } from '$lib/types';
   import {
     loadGrammarProgressMap,
@@ -48,6 +49,10 @@
   let isCorrect = $state<boolean | null>(null);
   let userAnswer = $state('');
 
+  // FSRS review-intensity preset from layout server (0.8/0.9/0.95, or null for
+  // default Standard). Only meaningful when userId is set (Plus users).
+  let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
+
   let current = $derived(questions[currentIndex]);
   let progress = $derived(
     questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0
@@ -82,7 +87,7 @@
     isCorrect = correct;
     if (correct) correctCount++;
     results = [...results, { question: current, correct, userAnswer }];
-    progressMap = await saveGrammarProgress(current, rating, progressMap, userId);
+    progressMap = await saveGrammarProgress(current, rating, progressMap, userId, fsrsRetention);
     sessionState = 'revealing';
   }
 
