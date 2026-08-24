@@ -53,12 +53,17 @@
     },
     {
       id: 9,
+      question: m.guide_faq_intensity_q(),
+      answer: m.guide_faq_intensity_a()
+    },
+    {
+      id: 10,
       question: m.guide_faq_download_q(),
       answer: m.guide_faq_download_a(),
       badge: m.faq_badge_plus()
     },
     {
-      id: 10,
+      id: 11,
       question: m.guide_faq_contact_q(),
       answer: m.guide_faq_contact_a(),
       cta: {
