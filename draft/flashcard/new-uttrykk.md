@@ -29,3 +29,20 @@ for tiden: currently
 å være skrevet ut av sykehuset: discharged from the hospital
 uten sidestykke: unparalleled, Uten sidestykke i norsk 
 somle bort noe: to procrastinate something
+
+## A1
+å lage mat — to cook
+å spise — to eat
+å drikke — to drink
+å vaske — to wash
+å koke — to boil
+å steke — to fry / bake
+å skjære — to cut
+
+## A2
+dekke på bordet — set the table
+rydde av bordet — clear the table
+sette oppvasken i oppvaskmaskinen — put the dishes in the dishwasher
+vaske opp — wash the dishes
+skru på komfyren — turn on the stove
+skru av ovnen — turn off the oven

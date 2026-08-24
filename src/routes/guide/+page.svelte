@@ -137,8 +137,11 @@
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     <p class="mb-4 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_1()}</p>
     <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_scheduling_2()}</p>
+    <p class="mb-4 text-gray-700 dark:text-gray-300">{m.guide_scheduling_3()}</p>
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-    <p class="mb-6 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_4()}</p>
+    <p class="mb-4 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_4()}</p>
+    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+    <p class="mb-6 text-gray-700 dark:text-gray-300">{@html m.guide_scheduling_5()}</p>
 
     <!-- Rating buttons + Card states combined -->
     <h3 class={h3class}>{m.guide_buttons_heading()}</h3>
