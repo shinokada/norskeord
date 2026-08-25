@@ -2597,3 +2597,638 @@ g) fint — Så ________________ du synger! Har du tatt sangtimer, eller er du b
 
 h) ofte — Kan du ikke besøke oss litt ________________? Det hadde vært så hyggelig!
 
+## PREPOSISJONER
+
+### 1 HVILKE ORD HØRER PREPOSISJONEN TIL?
+
+Se på eksemplet. Sett pil, og skriv spørreord.
+
+> **Eksempel:**
+> Ligger boka på bordet? Spørreord: HVOR (Hvor ligger boka? På bordet.)
+
+a) Kan du sette blomstene i vann? Spørreord: ________________________________
+
+b) Gir du meg blyanten som ligger under den boka der?
+Spørreord: ________________________________
+
+c) Har du lagt søppelet på tilhengeren?
+Spørreord: ________________________________
+
+d) Hvem skal ta bilder i bryllupet deres?
+Spørreord: ________________________________
+
+e) Kommer du innom på fredag? Spørreord: ________________________________
+
+f) Han har time hos tannlegen klokka ni.
+Spørreord: ________________________________
+
+g) Kommer du med buss eller tog?
+Spørreord: ________________________________
+
+h) Det er noe som beveger seg mellom buskene der borte!
+Spørreord: ________________________________
+
+i) Ta med paraply i tilfelle regn.
+Spørreord: ________________________________
+
+j) Han gikk på biblioteket for å låne noen bøker.
+Spørreord: ________________________________
+
+k) Er du like gammel som meg?
+Spørreord: ________________________________
+
+### 2 I UNION MED DANMARK 🎧
+
+Sett preposisjonene på rett sted i setningene.
+
+Lytt og gjenta.
+
+a) i, i, med — ________ 1380 kom Norge ________ union ________ Danmark.
+________________________________________________
+
+b) i, til — Unionen skulle vare ________ 400 år, helt ________ 1814.
+________________________________________________
+
+c) i, i — ________ 1536 ble Norges stilling ________ unionen kraftig svekket politisk.
+________________________________________________
+
+d) til, uten, for — Da ble Norge redusert ________ en koloni ________ noen form ________ selvstyre.
+________________________________________________
+
+e) til — Den danske kongen tvang Norge ________ å bli protestantisk.
+________________________________________________
+
+f) på, over — ________ den måten fikk kongen mer makt ________ kirken.
+________________________________________________
+
+g) til, til — Bibelen ble oversatt ________ dansk, men ikke ________ norsk.
+________________________________________________
+
+h) til — Det førte ________ at det norske skriftspråket forsvant helt.
+________________________________________________
+
+i) under, på, av, på — ________ napoleonskrigene ________ begynnelsen ________ 1800-tallet, var Danmark-Norge ________ fransk side.
+________________________________________________
+
+j) fra, til — Etter at Napoleon tapte, måtte Danmark gi ________ seg Norge ________ Sverige.
+________________________________________________
+
+k) i, med — ________ unionen ________ Sverige fikk Norge en friere stilling.
+________________________________________________
+
+l) i — Men først ________ 1905 ble Norge et selvstendig land igjen.
+________________________________________________
+
+m) av, i — Da hadde Norge vært styrt ________ andre land ________ 525 år.
+________________________________________________
+
+### 3 PREPOSISJONER FOR TID 🎧
+
+Sett inn riktig preposisjon i setningene: *av, siden, om, til, i* eller *på*.
+
+Lytt og gjenta.
+
+a) Kommer du en tur ________________ lørdag?
+
+b) Hva pleier du å gjøre ________________ helgene?
+
+c) Hadde du fri ________________ mandag?
+
+d) Hva skal du gjøre ________________ høsten?
+
+e) Har du bursdag ________________ desember eller ________________ januar?
+
+f) Vi ses ________________ fredag!
+
+g) Vi pleier å treffes ________________ jula.
+
+h) Middagen er klar ________________ fem minutter.
+
+i) ________________ sommer var været helt elendig!
+
+j) Det er aldri fint vær ________________ sommeren lenger!
+
+k) ________________ jul kommer hele familien hennes på besøk.
+
+l) Jeg skal jobbe her fram til slutten ________________ april.
+
+m) Tok han mastergraden sin ________________ normert tid?
+
+n) Jeg kommer innom ________________ løpet ________________ neste uke.
+
+o) Jeg har ikke sett ham ________________ forrige uke.
+
+p) Jeg har ikke sett ham ________________ fire dager.
+
+### 4 OLAS ARBEID
+
+Sett inn riktige preposisjoner i teksten: *i, på, av, fra, til, for* eller *om*.
+
+> Ola er lærer. Han arbeider ________ en videregående skole. Han er lærer ________ naturfag og engelsk. Før han ble lærer, var Ola oljeingeniør. Men ________ et tidspunkt sluttet han å synes at det var interessant. Tvert imot ble Ola motstander ________ oljeboring og alt forbruk ________ fossilt brennstoff. Han sluttet å kjøre bil annet enn ________ og ________ hytta, og han bestemte seg ________ å bli lærer.
+>
+> «Det er viktig at neste generasjon lærer å ta vare ________ naturen,» sa han. Ola trives veldig godt ________ jobben som lærer. Ungdommene ________ dag er mye mer reflekterte enn vi var, pleier han å si. De er opptatt ________ miljø, og de er flinke ________ å holde seg orientert ________ hva som skjer ________ verden.
+
+### 5 EN VANLIG DAG FOR PETRA
+
+Sett inn riktige preposisjoner i teksten.
+
+> Petra starter ________ jobb klokka ni hver morgen, men hun åpner sjelden butikken ________ klokka 12. Disse timene sitter hun ________ arbeidsrommet ________ butikklokalet og lager nye hatter. Hun spiser formiddagsmat halv tolv, og etterpå åpner hun dørene. ________ døra har hun ei lita bjelle. Hvis det kommer kunder inn ________ butikken, plinger det ________ bjella. Da går Petra ut ________ butikken ________ å se om kunden trenger hjelp. Vanligvis holder hun åpent ________ halv fem ________ hverdager. ________ lørdager er butikken åpen ________ ti og to.
+>
+> Da pleier hun ikke å komme tidligere ________ å arbeide.
+>
+> ________ stengetid pleier tante Petra å ta bussen hjem. Petra og Selma spiser middag sammen og prater ________ løst og fast og ________ hvordan dagen har vært. Det er hyggelig å ha noen å dele livet ________. ________ middag tar Petra en liten blund ________ sofaen ________ stua. Selma liker best å krype ________ dyna en times tid. Da er det helt stille ________ leiligheten. Etterpå ser de nyhetene ________ TV, og noen ganger finner Petra fram skisseblokka si og setter seg ________ kjøkkenbordet for å lage skisser ________ nye hatter.
+
+### 6 UBESTEMT ELLER BESTEMT FORM?
+
+I setningene under står preposisjonen foran et substantiv. Skal det stå i ubestemt eller bestemt form? Er det valgmuligheter?
+
+> Hvis du er usikker på substantivets kjønn, sjekk ordbok.uib.no
+
+a) by — Vi kan kjøre deg til ________________.
+
+b) vinter — Om ________________ pleier de å være på fjellet og gå på ski.
+
+c) sommer — Til ________________ skal de til Danmark.
+
+d) klokke — Kommer du hjem før ________________ tre?
+
+e) påske — Hvor var dere i ________________?
+
+f) sommer — Hvor var dere i ________________?
+
+g) bilde, ferie — Han har laget ei bok med ________________ fra ________________ i USA.
+
+h) middag, dag — Skal vi ha fisk til ________________ i ________________?
+
+### 7 I ELLER PÅ?
+
+Bruk områderegelen og kantstedsregelen til å sette inn rett preposisjon i setningene under.
+
+a) Hvor trives du best – ________________ landet eller ________________ byen?
+
+b) Skal jeg legge brødet ________________ disken eller ________________ brødboksen?
+
+c) Ligger barbersakene dine ________________ skuffen, eller står de ________________ hylla over vasken?
+
+d) Hvorfor har du ikke satt melka inn ________________ kjøleskapet? Den blir dårlig hvis den står ________________ benken i denne varmen!
+
+e) Katten har klatret opp ________________ lampa som henger ________________ taket. Nå kommer den seg ikke ned.
+
+f) Ballen lå og vippet ________________ kanten før den falt ned ________________ kurven.
+
+g) Pølsene ligger ________________ nettet, og brødene ligger ________________ kurven. Ketsjup og sennep står ________________ bordet.
+
+h) Kan du sette steken inn ________________ ovnen halv fem? Nå står den ________________ kjøleskapet.
+
+i) Blir du med ut ________________ sjøen en tur i ettermiddag? Det er jo så fint vær! Vi kan gå i land ________________ en av de små holmene. Ta med et teppe og litt lesestoff!
+
+### 8 DET MOTSATTE 🎧
+
+Sett inn riktige preposisjoner i setningene.
+
+Lytt og gjenta.
+
+a) Vil du sitte ________________ Petter eller bak ham?
+
+b) Du har på genseren ________________ fram!
+
+c) Går veien utenom eller ________________ Flekkefjord?
+
+d) Kommer vi til å fly over eller ________________ skyene i dag?
+
+e) Vil du ha kaffe ________________ eller uten melk?
+
+f) Skal lampa henge ________________ eller til venstre for speilet?
+
+g) Nedkom du ________________ eller etter termindatoen?
+
+h) Er denne gaven til mor eller ________________ mor?
+
+i) Bor du i nærheten av eller ________________ Oslo?
+
+### 9 SAMMENSATTE PREPOSISJONER
+
+Hvilke preposisjoner mangler i setningene? Sett inn riktige preposisjoner i de sammensatte preposisjonene.
+
+a) Du finner litt informasjon om forfatteren ________________ baksiden ________________ boka.
+
+b) Du må være ferdig ________________ utgangen ________________ neste uke.
+
+c) Tyvene ble sist sett da de kjørte ________________ retning ________________ flyplassen.
+
+d) Han klarte eksamen ________________ tross ________________ at han nesten ikke hadde lest.
+
+e) De bor like ________________ nærheten ________________ oss.
+
+f) ________________ motsetning ________________ broren har hun overhodet ingen hemninger.
+
+g) Det er mulig jeg kommer innom ________________ løpet ________________ dagen.
+
+h) Du burde drikke te ________________ stedet ________________ kaffe.
+
+### 10 FOR ELLER TIL? 🎧
+
+Sett inn *for* eller *til* i setningene under.
+
+Lytt og gjenta.
+
+a) Preposisjoner er vanskelige ________________ innvandrere som lærer norsk.
+
+b) Bruk nøkkelkort ________________ å åpne døra.
+
+c) Disse blomstene er ________________ deg. Jeg håper du liker dem.
+
+d) Genseren din er ________________ lang på armene.
+
+e) Han skal flytte ________________ Lillehammer ________________ høsten.
+
+f) Denne boka kom ut ________________ fire år siden.
+
+g) Oppgaven er ________________ vanskelig ________________ meg.
+
+h) Du er ________________ liten ________________ å reise alene med fly.
+
+i) Nøkkelen passer ________________ baderomsdøra.
+
+j) Denne filmen passer ikke ________________ barn under 12 år.
+
+k) Hun flyttet ________________ Bergen ________________ å studere.
+
+### 11 KAN DU LEGGE PÅ, ER DU SNILL?
+
+Noen ganger har preposisjonene abstrakt betydning. Sett inn riktige preposisjoner i setningene under.
+
+a) Jeg tror ikke at du gjorde det ________ vilje, men jeg synes at du kan be ________ unnskyldning likevel.
+
+b) Hvis du har tenkt å sitte lenge ________ sola, er det viktig å ta ________ solkrem. Bruk gjerne en solhatt også.
+
+c) På grunn av arbeid med skinnegangen blir det buss ________ tog mellom Stavanger og Moi. Dette gjelder også ________ reisende ________ Jærbanen. Det blir buss ________ tog også mellom Stavanger og Egersund.
+
+d) Kan du legge ________ nå, er du snill? Det er viktig at andre også får en mulighet ________ å komme ________ til oss.
+
+### 12 FASTE UTTRYKK
+
+Preposisjonene i disse setningene er *en del av et fast uttrykk*. Sett inn rett preposisjon.
+
+> Skriv uttrykkene på en lapp og legg lappen i lomma. Øv på uttrykkene mens du venter på bussen eller sitter på toget eller trikken.
+
+a) Denne boligen er ________ god stand. Dere kan flytte rett inn!
+
+b) Vi er ________ jakt ________ en liten enebolig et stykke utenfor sentrum.
+
+c) Hjemme hos oss må alle hjelpe ________.
+
+d) Nå gleder jeg meg ________ ferien!
+
+e) Du vet ikke hva du snakker ________!
+
+f) Kan du være så snill å rydde opp ________ deg?
+
+g) Du er utrolig flink ________ å spare! Hvor mye har du på konto nå?
+
+h) De setter stor pris ________ at du kommer på besøk.
+
+Oversett uttrykkene til morsmålet ditt:
+
+å være ________ god stand = ________________________________
+
+å være ________ jakt ________ = ________________________________
+
+å glede seg ________ noe = ________________________________
+
+å vite hva man snakker ________ = ________________________________
+
+å rydde opp ________ seg = ________________________________
+
+å være flink ________ noe = ________________________________
+
+å sette pris ________ noe/noen = ________________________________
+
+### 13 KONGEBOLIGEN I BERGEN: GAMLEHAUGEN
+
+Sett inn preposisjoner i setningene. Velg fra preposisjonene i ordskyen. Du kan bruke preposisjonene flere ganger.
+
+Ordsky: for, fra, på, med, rundt, i, av
+
+Gamlehaugen er navnet ________ den offisielle kongeboligen ________ Bergen. Gamlehaugen er en nasjonaleiendom.
+
+________ 1898 ble Gamlehaugen kjøpt ________ skipsreder og politiker Christian Michelsen. Før Michelsen kjøpte stedet, ble det drevet gårdsdrift der. Michelsen rev hovedbygningen ________ gården ________ å bygge den nåværende bygningen ________ mur. Bygningen, som likner ________ et slott, ble tegnet ________ arkitekt Kielland ________ Stavanger. ________ 1925 ble Gamlehaugen kongebolig.
+
+Bygningen er staselig. Hallen har store dobbeltdører ________ stolper ________ dyrehoder utskåret ________ tre. Trappegelendere og rekkverk er dekorerte ________ motiver ________ saga og mytologi. Parken ________ Gamlehaugen er cirka 120 dekar.
+
+Parken er anlagt ________ engelsk landskapsstil ________ gartner Olav Moen. Parken er åpen ________ besøkende unntatt når kongefamilien er ________ Bergen.
+
+### 14 KJENTE NORDMENN: CECILIA BRÆKHUS
+
+Sett inn riktige preposisjoner i teksten om Cecilia Brækhus.
+
+Cecilia Brækhus er verdensmester ________ proffboksing i klassen weltervekt. Det er en vektklasse der kvinnelige boksere må være ________ 63,5 og 66,7 kilo hvis de er profesjonelle. Cecilia veier 66,5 kilo og er 171 centimeter høy.
+
+Cecilia begynte ________ kickboksing da hun var 14 år. Først bokset hun ________ at foreldrene visste det, men etter hvert skjønte de at hun drev på ________ noe. De ble bekymret, men da Cecilia tok dem ________ til treningsstudioet, ble de beroliget. Cecilia arbeidet hardt og trente mye. Da hun var 16 år, kom hun inn ________ landslaget som amatørbokser. Hun vant gull både ________ EM og i VM i sin vektklasse.
+
+Cecilia er født ________ Colombia. Hun ble adoptert ________ Norge da hun var to år gammel. Hun har vokst opp ________ Bergen. Nå bor hun ________ Berlin.
+
+1. oktober 2016 fikk Cecilia bokse proffkamp i Norge ________ første gang. Proffboksing var nemlig forbudt ________ Norge før. Hun bokset ________ den franske bokseren Mathis, og Cecilia slo Mathis på knockout i andre runde. Ennå er det ingen som har vunnet ________ Cecilia i hennes tid som proffbokser.
+
+*(Kilde: no.wikipedia.org, vg.no, nettavisen.no)*
+
+### KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg vet hva en preposisjon er, og kan kjenne den igjen når jeg lytter eller leser.<br>*(I know what a preposition is and can recognize it when I listen or read.)* | | |
+| Jeg kan plassere preposisjonen på riktig sted i setningen.<br>*(I can place a preposition in the correct place in a sentence.)* | | |
+| Jeg kan bruke en rekke preposisjoner riktig hvis preposisjonen har beholdt grunnbetydningen sin for sted og tid.<br>*(I can use several prepositions correctly if the preposition has maintained its basic meaning of place and time.)* | | |
+| Jeg kan bruke områderegelen og kantstedsregelen for å vite om jeg skal bruke *i* eller *på*.<br>*(I can use the area rule and the edge location rule to determine whether to use i or på.)* | | |
+| Jeg kan bruke riktig form av substantivet når substantivet står etter en preposisjon hvis uttrykket er frekvent.<br>*(I can use the correct form of a noun when the noun is following a preposition, if the expression is frequent.)* | | |
+| Jeg kan bruke noen preposisjoner i preposisjonsfraser der de har abstrakt betydning.<br>*(I can use some prepositions in phrases where the meaning of the preposition is abstract.)* | | |
+| Jeg kan bruke noen faste uttrykk med verb og preposisjon.<br>*(I can use some idiomatic expressions containing a verb and a preposition.)* | | |
+| Jeg kan bruke en del sammensatte preposisjoner som er vanlige, slik som *i løpet av, ved siden av, i nærheten av* osv.<br>*(I can use several common compound prepositions such as i løpet av, ved siden av, i nærheten av etc.)* | | |
+
+## KONJUNKSJONER
+
+### 1 KONJUNKSJONER
+
+Sett inn konjunksjoner i setningene: *og, eller, men, for, så*.
+
+> Muzzi kommer opprinnelig fra Tyrkia, ________ nå bor han i Bergen. Muzzi er gift med Mari, ________ de har ett barn. For snart et år siden kjøpte Mari ________ Muzzi et gammelt hus, ________ Muzzi har mye å gjøre nå. Han arbeider i huset om ettermiddagene, om kveldene ________ i helgene, ________ han har full jobb. Noen ganger blir han veldig sliten, ________ han synes at det er verdt det. I det nye huset får de tre soverom, ________ det er bra, ________ Mari og Muzzi ønsker seg flere barn. ________ ikke ennå. Først må de bli ferdige med oppussingen.
+
+### 2 FOR ELLER FORDI?
+
+Sett inn rett ord i setningene: *for* eller *fordi*.
+
+> ➜ *For* kan være både konjunksjon og preposisjon.
+> ➜ Konjunksjonen *for* binder sammen to setninger med komma mellom.
+> ➜ Subjunksjonen *fordi* binder sammen en helsetning og en leddsetning.
+
+a) Han flyktet ________ han ikke ville bli soldat.
+
+b) De reiste ________ å prøve å få et bedre liv.
+
+c) Han må klare B2-nivå ________ han vil begynne å studere.
+
+d) Noen politikere vil senke skattene ________ å skape flere arbeidsplasser.
+
+e) Hun er litt ensom, ________ hun kjenner ikke noen her.
+
+f) Dattera vår trenger tospråklig fagopplæring ________ hun ikke snakker så godt norsk ennå.
+
+g) De går på kurs ________ å lære å danse tango.
+
+h) Hun har lett ________ å få nye venner.
+
+i) De har flyttet mye ________ mora deres arbeider i Forsvaret.
+
+j) Han har flyttet hjem igjen, ________ han trivdes ikke så godt i England.
+
+### 3 KLIMAENDRINGER
+
+Sett inn riktig konjunksjon i teksten slik at sammenhengen blir god: *eller, så, for*.
+
+Klimaet har endret seg mye de siste årene. Værforholdene har blitt mer ekstreme, ________ mange lurer på hvordan dette kommer til å fortsette. Hva kan konsekvensene bli for folk i Norge? Vil vi få stadig varmere somre, ________ vil det etter hvert bli umulig å bo her? Mange steder er folk urolige, ________ det har vært både flom og orkaner. Langvarig varme og tørke er også problematisk, ________ bøndene får problemer med avlingene sine. Kornet tørker, ________ det slutter å vokse. Begge deler er like problematiske. Mange mener at myndighetene må komme på banen nå, ________ det er politikerne som skal planlegge for framtida.
+
+### 4 SAMMENSATTE KONJUNKSJONER (1) 🎧
+
+Bruk *både … og* for å skape sammenheng i setningene.
+
+Lytt og bruk *både … og* for å skape sammenheng i setningene.
+
+a) Politikerne arbeider med saken din, og byråkratene arbeider også med den.
+________________________________________________
+
+b) Avdelingslederen har sett på søknaden din, og rektor har også sett på den.
+________________________________________________
+
+c) Det koster penger å studere, og å bo er heller ikke gratis.
+________________________________________________
+
+d) Det brygger opp til storm, og det blir nok tordenvær også.
+________________________________________________
+
+e) Han har jobbet som avisbud, og han har vært lagersjef også.
+________________________________________________
+
+f) Vi har flyttet den gamle sofaen opp på loftet, og vi flyttet skapet også dit.
+________________________________________________
+
+### 5 SAMMENSATTE KONJUNKSJONER (2) 🎧
+
+Bruk *verken … eller* for å skape sammenheng i setningene.
+
+Lytt og bruk *verken … eller* for å skape sammenheng i setningene.
+
+a) Vi dro ikke til Madrid, og vi var ikke i Barcelona heller.
+________________________________________________
+
+b) Jeg har ikke sett filmen, og jeg har ikke lest boka heller.
+________________________________________________
+
+c) Det regnet hele helga, så vi fikk ikke gått på tur. Vi fikk ikke malt noe heller.
+________________________________________________
+
+d) Han er veganer, så han spiser ikke kjøtt. Han spiser ikke fisk eller egg heller.
+________________________________________________
+
+e) Det ser ikke ut i stua, og det er veldig rotete på badet også.
+________________________________________________
+
+### KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan binde sammen ord eller setninger med konjunksjoner.<br>*(I can combine words or simple sentences using conjunctions.)* | | |
+| Jeg kan bruke sammensatte konjunksjoner for å binde sammen ord eller setninger.<br>*(I can use compound conjunctions to combine word or sentences.)* | | |
+| Jeg kan bruke konjunksjoner for å skape sammenheng mellom setninger (i en tekst).<br>*(I can use conjunctions to create cohesion between sentences (in a text).)* | | |
+
+## SUBJUNKSJONER
+
+### 1 AT, OM ELLER Å?
+
+Sett inn rett subjunksjon i setningene: *at, om* eller *å*.
+
+a) Jeg er enig i ________ denne saken er vanskelig.
+
+b) Det er viktig ________ legge vekt på ________ alle skal komme til orde.
+
+c) Hun vil vite ________ du er enig eller uenig med henne.
+
+d) Statsministeren prøver alltid ________ snakke tydelig og forståelig.
+
+e) Erfaringen viser ________ arbeid i kollokviegrupper kan gi gode resultater.
+
+f) Synes du ________ lønnsforskjellene i Norge er for små?
+
+g) Når man skal snakke ________ sosiale medier, er det viktig ________ tenke på ________ mange trenger slike medier for ________ holde kontakt med familien.
+
+h) Kan du forklare hva du mener med ________ man ikke kan stole på politikere?
+
+i) Det er viktig ________ skille mellom eiendom og aksjer.
+
+j) Jeg lurer på ________ jeg kan få komme til orde nå.
+
+k) Skal du ikke spørre ________ jeg klarte meg på eksamen?
+
+### 2 DET SKJØNNER JEG IKKE! 🎧
+
+*At* innleder en nominal leddsetning. Inverter setningene ved å sette den nominale leddsetningen først.
+
+Lytt, inverter setningene og gjenta.
+
+a) Jeg skjønner ikke at han kan oppføre seg sånn.
+________________________________________________
+
+b) Jeg liker ikke at du er så negativ hele tida.
+________________________________________________
+
+c) Jeg skjønner ikke at du kan oppføre deg sånn mot ham.
+________________________________________________
+
+d) Jeg begriper ikke at han kan ha råd til en sånn bil.
+________________________________________________
+
+e) Jeg kan absolutt ikke forstå at dette er noe å lage en sak av.
+________________________________________________
+
+f) Jeg liker ikke at hun alltid vil sladre om andre.
+________________________________________________
+
+g) Jeg forstår rett og slett ikke at du fortsatt henger sammen!
+________________________________________________
+
+### 3 JA, DEN SOM VISSTE DET! 🎧
+
+Sett den nominale leddsetningen først som et spørsmål, og føy til: *Ja, den som visste det!*
+
+Lytt, gjør om setningene og gjenta.
+
+a) Den som visste om det blir noe av ferieturen vår.
+________________________________________________
+
+b) Den som visste om han har tenkt å fortsette på denne måten.
+________________________________________________
+
+c) Den som visste om gulrøtter er så sunt som de sier.
+________________________________________________
+
+d) Den som visste om de kommer eller ikke.
+________________________________________________
+
+e) Den som visste om han egentlig har kompetansen som trengs.
+________________________________________________
+
+f) Den som visste om jeg får fri i påsken.
+________________________________________________
+
+### 4 HVA FORTELLER LEDDSETNINGEN OM?
+
+Subjunksjoner innleder leddsetninger. Vi deler de adverbiale subjunksjonene i grupper etter hva leddsetningen forteller om: *tid, årsak, motsetning, hensikt, følge og resultat, betingelse* eller *sammenlikning*.
+
+Hva forteller de **markerte** leddsetningene om?
+
+a) De gikk ut **selv om det høljet ned**.
+Leddsetningen forteller om: ________________________________
+
+b) Hun gikk og la seg **fordi hun var helt utslitt etter en lang dag på jobb**.
+Leddsetningen forteller om: ________________________________
+
+c) **Når du ringer**, tar jeg alltid telefonen!
+Leddsetningen forteller om: ________________________________
+
+d) Jeg bader ikke **med mindre det er over 20 grader i vannet**.
+Leddsetningen forteller om: ________________________________
+
+e) Han vil gjøre alt arbeidet selv **slik at det ikke blir så dyrt**.
+Leddsetningen forteller om: ________________________________
+
+f) Du kan ta en kopp kaffe **mens du venter**.
+Leddsetningen forteller om: ________________________________
+
+g) Jeg kommer innom en tur i ettermiddag **hvis jeg får tid**.
+Leddsetningen forteller om: ________________________________
+
+h) Det er ikke så lett å få jobb **som mange tror**.
+Leddsetningen forteller om: ________________________________
+
+i) Han må klippe plenen **før vi kan dra**.
+Leddsetningen forteller om: ________________________________
+
+j) Dere spiser pannekakene **fortere enn jeg klarer å steke dem**!
+Leddsetningen forteller om: ________________________________
+
+### 5 HVIS, SOM, AT ELLER FORDI?
+
+Sett inn rett subjunksjon i setningene: *hvis, som, at* eller *fordi*.
+
+a) ________________ jeg hadde vunnet i lotto, ville jeg ha nedbetalt all gjelda mi.
+
+b) Kjenner du noen ________________ snakker russisk?
+
+c) Jeg forstår ikke ________________ du gidder å holde på med den strikkinga!
+
+d) ________________ du fortsetter på denne måten, går det galt til slutt!
+
+e) Hun har lyst til å begynne å studere nå ________________ hun er ferdig på norskkurset.
+
+f) De snakker sammen ________________ om de har kjent hverandre hele livet!
+
+g) Det er et mirakel ________________ du ikke strøk på prøven så lite ________________ du har lest!
+
+h) Bare sett deg her ________________ du vil. Hun ________________ pleier å sitte her, kommer ikke i dag.
+
+i) Hun gråter ________________ hun ikke får viljen sin.
+
+### 6 ETTER AT FESTEN VAR SLUTT 🎧
+
+To og to av setningene under passer sammen. Bind setningene sammen med *etter at*. Du kan velge om du vil ha leddsetningen først eller sist i helsetningen.
+
+Lytt og bind setningene sammen med *etter at*.
+
+Setningsbrokker:
+
+- De tok siste buss hjem.
+- Festen var slutt.
+- Flere trekkfugler blir værende i Norge gjennom vinteren.
+- Han ble utsatt for en ulykke på jobben.
+- Klimaet har endret seg.
+- Han har ikke kunnet arbeide.
+- Mange har mistet jobben.
+- Hun begynte i ny jobb i april.
+- Vi har ikke sett så mye til henne.
+- Oljeindustrien fikk problemer.
+
+________________________________________________
+
+________________________________________________
+
+________________________________________________
+
+________________________________________________
+
+________________________________________________
+
+### 7 SAMMENHENG (1)
+
+Hva er sammenhengen mellom handlingene? Skjer handlingene *etter hverandre i tid*, eller er det et *årsaksforhold* mellom handlingene? Bruk subjunksjoner for å binde sammen setningene. Se på eksempelet.
+
+> **Eksempel:**
+>
+> Han vil søke om familiegjenforening. Han har fått oppholdstillatelse.
+> ➜ Handlingene skjer etter hverandre i tid: Han vil søke om familiegjenforening så snart han har fått oppholdstillatelse.
+> ➜ Det er et årsaksforhold mellom handlingene: Han vil søke om familiegjenforening fordi han har fått oppholdstillatelse.
+
+a) Presidenten måtte gå av. Han tapte valget.
+
+➜ Handlingene skjer etter hverandre i tid: ________________________________
+________________________________
+
+➜ Det er et årsaksforhold mellom handlingene: ________________________________
+________________________________
+
+b) Programmet ble ikke sendt i reprise likevel. Mange seere klaget på det.
+
+➜ Handlingene skjer etter hverandre i tid: ________________________________
+________________________________
+
+➜ Det er et årsaksforhold mellom handlingene: ________________________________
+________________________________
+
