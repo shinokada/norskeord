@@ -33,6 +33,8 @@ The attached is from the previous session. Continue where you left.
 ---
 
 Transcribe attached Norwegian image(s) to markdown. Ignore any illustrations and hand-writings.
+If an image is related to a question and it is word(s), then include it in the question.
+
 The images are HEIC files.
 
 Transcribe attached Norwegian image(s) to markdown and append only the content to /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/paa-nivaa/arbeidsbok-b2.md.

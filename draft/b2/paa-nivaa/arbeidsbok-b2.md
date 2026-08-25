@@ -737,3 +737,1252 @@ ________________________________________________
 b) Vi må snakke om noen stort utfordringene på møtet seinere i dag.
 ________________________________________________
 
+c) Jeg vil gjerne gi deg ny adresse mi.
+________________________________________________
+
+d) Skal du ikke søke utlyste den stillingen?
+________________________________________________
+
+e) I sommer har vi leid et koselige hus i Danmark.
+________________________________________________
+
+f) Hun har en stort familien.
+________________________________________________
+
+g) Hennes forrige kjæresten var ganske hyggelig, synes jeg.
+________________________________________________
+
+h) Neste helgen får vi besøk fra Levanger.
+________________________________________________
+
+i) Kan vi snakke om dette problemene?
+________________________________________________
+
+### 18 UTVANDRINGEN TIL AMERIKA
+
+Sett inn adjektivene under linja i riktig tall, form og grad.
+
+På slutten av 1800-tallet og begynnelsen av 1900-tallet valgte mange nordmenn å emigrere til USA. Fattigdommen i Norge var ____________________ (stor) på den tida. Mange steder var gårdene for ____________________ (liten) til å bli delt mellom barna, og derfor var det den ____________________ (gammel) som overtok gården. Med mindre familien var ____________________ (rik) og kunne betale en utdanning, sto de ____________________ (ung) søsknene uten noe å leve av. Emigrantene håpet at de skulle få et ____________________ (god) liv og ei ____________________ (fin) framtid i USA. De var ____________________ (håpefull) da de dro, men mange ble dessverre skuffet. Det som møtte dem, var en ____________________ (brutal) virkelighet med ____________________ (lovløs) tilstander og ____________________ (hard) arbeid. Dette vet vi fordi mange av emigrantene skrev brev til slekt og venner i Norge. I brevene fortalte de om den ____________________ (lang) reisen til det ____________________ (ny) landet, og om hvordan de trivdes eller ikke.
+
+### KAN DU DET?
+
+| Oppgave: | Jeg kan det. 😐 | Jeg må øve mer. 😐 |
+|---|---|---|
+| Jeg kan identifisere hvilket substantiv adjektivet beskriver.<br>*(I can identify which noun the adjective describes.)* | | |
+| Jeg kan bøye adjektivet til substantivet det står til.<br>*(I can decline the adjective correctly according to the noun it describes.)* | | |
+| Jeg kan bruke riktig bestemt artikkel foran adjektivet når substantivet står i bestemt form.<br>*(I can use the definite article correctly with the adjective when the noun is in definite form.)* | | |
+| Jeg kan gradbøye adjektiv som følger regelen for gradbøyning.<br>*(I can decline an adjective if it is regular.)* | | |
+| Jeg kan gradbøye vanlige uregelrette adjektiv.<br>*(I can decline common irregular adjectives.)* | | |
+| Jeg kan bruke adjektiv til å sammenlikne substantiv ved å gradbøye adjektivene.<br>*(I can use adjectives to compare nouns by declining the adjectives.)* | | |
+| Jeg kan bøye adjektivet i superlativ form til et substantiv i bestemt form.<br>*(I can decline an adjective in the superlative when it describes a noun in the definite form.)* | | |
+| Jeg kan kjenne igjen substantiverte adjektiv når jeg leser eller lytter.<br>*(I can recognize a substantive adjective when I read or listen.)* | | |
+| Jeg kan bruke substantiverte adjektiv riktig.<br>*(I can use substantive adjectives correctly.)* | | |
+
+## DETERMINATIVER
+
+### 1 DETERMINATIVENES ROLLE
+
+Denne ordskyen inneholder determinativer. Hvilken rolle har determinativene? Skriv determinativene i riktig kolonne.
+
+Ordsky: selv, deres, hvilket, tolv, hver, hennes, begge, denne, sånn, min, egen, ingen, annen, alle, mange
+
+| DEMONSTRATIVER<br>(de peker ut substantivet) | KVANTOR<br>(de forteller hvor mange eller hvor mye det er av noe) | EIENDOMSORD<br>(de forteller hvem som eier noe, eller hvem noe tilhører) | FORSTERKERE<br>(de understreker noe, gjør et forhold sterkere eller tydeligere) |
+|---|---|---|---|
+| | | | |
+
+### 2 EIER OG EIENDEL
+
+Hvilket *eiendomsord* må du bruke? Se i tabellen og fyll ut i tekstene. Husk å bøye eiendomsordet.
+
+| EIER | «EIENDELER» |
+|---|---|
+| Even | TV, leilighet, verktøy, kollegaer |
+| Ola | bror, sykkel, bøker, kone, hytte, sønn |
+| Solrun | sykkel, foreldre |
+
+**TEKST A**
+
+I helgen var Ola på besøk hos broren ________ i Stavanger. Ola kommer fra derfra, men han flyttet til Bergen for mange år siden. Han reiste for å studere, men under studiene traff han kona ________, Solrun, og så ble han boende.
+
+**TEKST B**
+
+– Kan jeg låne sykkelen ________, Solrun? Jeg skal levere bilen på verksted i ettermiddag.
+
+– Dessverre, Ola, jeg trenger sykkelen ________ selv i morgen. Jeg skal jo på jobb.
+
+**TEKST C**
+
+Even kjøpte leiligheten ________ for tre år siden. Nå har han kjøpt ny TV til leiligheten.
+
+Den nye TV-en ________ er kjempestor. Den dekker nesten en hel vegg i stua. Han liker å sitte foran TV-en ________ og se på fotball – eller en spennende film.
+
+**TEKST D**
+
+Even leter etter verktøykassa ________. Tok han den ikke med seg hjem i går? Han blir usikker. Han ringer til en av kollegaene ________, men kollegaen aner selvfølgelig ikke hvor Even har gjort av verktøyet ________.
+
+**TEKST E**
+
+– Hvor ligger hytta ________, Ola?
+
+– Et stykke inn i Osterfjorden. Det er Solruns barndomsparadis. Vi arvet hytta etter foreldrene ________.
+
+– Reiser dere dit ofte?
+
+– Ja, så ofte vi kan. Sønnen ________ pleier å bli med. Det er veldig hyggelig, synes vi.
+
+**TEKST F**
+
+Ola rydder i bøkene ________. Solrun har sagt at bøkene ________ tar altfor mye plass, og Ola er for så vidt enig i det. Derfor har de bestemt at han må sortere bort 20 prosent av bøkene ________ i løpet av sommeren. Noen av bøkene ________ kan de gi til Fretex, men noen må nok bli papiravfall.
+
+### 3 PERSONLIG PRONOMEN ELLER EIENDOMSORD?
+
+Sett inn rett ord i setningen.
+
+a) jeg — Kan du hjelpe ________ litt, er du snill?
+
+Jeg finner ikke jakka ________.
+
+Hvorfor ligger klærne dine på rommet ________?
+
+b) du — Hvordan går det med studiene ________?
+
+Vi kommer til å savne ________.
+
+________ må skynde ________ hvis du skal rekke bussen.
+
+c) han — Den siste boka ________ er den beste ________ har skrevet, synes jeg.
+
+Jeg gikk i klasse med ________ på barneskolen.
+
+________ kjeder ________ i timene.
+
+d) hun — Du kan vel besøke ________ av og til?
+
+Foreldrene ________ kommer fra Tyrkia, men ________ er født i Norge.
+
+________ vasker klærne ________ selv.
+
+e) vi — ________ ses utenfor kinoen halv fem, da?
+
+Hun vil ikke bo sammen med ________, for hun synes at ________ roter for mye på kjøkkenet.
+
+Vaskemaskinen ________ brøt sammen i går.
+
+f) dere — Hvor kommer ________ fra?
+
+Hvor ofte treffes ________?
+
+Er dette ________ bøker?
+
+g) de — ________ holder kontakt med familien ________ på Facebook.
+
+Jeg kjenner ________ fra før. ________ var naboene mine i blokka der jeg vokste opp.
+
+Sønnen ________ studerer i London. ________ er fryktelig stolte av ham.
+
+### 4 DEN SNILLE FARMORA MI 🎧
+
+Skriv substantivfrasen med substantivet i bestemt form.
+
+Lytt og gjenta.
+
+a) mi snille farmor — Når jeg flytter til Bergen, skal jeg bo hos ________________________________.
+
+b) di grønne bukse — Fant du ________________________________?
+
+c) min nye sykkel — Etter sommeren skal jeg begynne å bruke ________________________________.
+
+d) sine forrige naboer — Han likte ikke ________________________________.
+
+e) vår nye stue — ________________________________ er mindre enn den gamle.
+
+f) våre dyre kopper — Vi bruker nesten aldri ________________________________.
+
+g) deres nye tilbygg — Vi er misfornøyde med ________________________________.
+
+h) din yngste sønn — Hvordan går det med ________________________________?
+
+i) hans siste bøker — Har du lest ________________________________?
+
+### 5 FAKTA OM VERDEN 🎧
+
+Skriv den markerte substantivfrasen med substantivet i bestemt form.
+
+Lytt og lag setninger med substantivet i bestemt form.
+
+a) Mount Everest er **verdens høyeste fjell**.
+________________________________________________
+
+b) Marianegropa i Stillehavet er **verdens dypeste sted**.
+________________________________________________
+
+c) Nilen er verdens **nest lengste elv**.
+________________________________________________
+
+d) **Verdens lengste elv** heter Amazonas.
+________________________________________________
+
+e) Foreløpig er Kina **verdens mest folkerike land**.
+________________________________________________
+
+f) Men FN tror at India vil være **verdens mest folkerike land** i 2022.
+________________________________________________
+
+g) **Verdens største land** er Russland.
+________________________________________________
+
+h) Visste du at **verdens minste land** bare har 836 innbyggere?
+________________________________________________
+
+i) Norge er **verdens sjette rikeste land**.
+________________________________________________
+
+j) **Verdens aller rikeste land** er Qatar.
+________________________________________________
+
+k) **Verdens varmeste sted** er Death Valley i USA.
+________________________________________________
+
+l) Men hvor ligger **verdens vakreste sted**?
+________________________________________________
+
+### 6 SÅNN SKAL DU GJØRE! 🎧
+
+Sett inn demonstrativet *sånn* på rett plass i utsagnene. Bøy demonstrativet riktig.
+
+Lytt og gjenta.
+
+a) Tenk å ha snille foreldre!
+
+b) Du har flinke barn!
+
+c) En kjole vil jeg også ha!
+
+d) Skyer har jeg aldri sett før!
+
+e) Kan du sy et nett til meg også?
+
+f) En bil ønsker jeg meg også.
+
+### 7 LITT ELLER LITE? 🎧
+
+Sett inn *litt* eller *lite* i setningene.
+
+Lytt og gjenta.
+
+a) Vil du ha ________ å spise?
+
+b) Jeg beklager, det er ________ jeg kan gjøre med denne saken.
+
+c) Ikke noe problem, det var så ________!
+
+d) Jeg forstår bare ________ av det dere sier. Kan dere snakke ________ saktere?
+
+e) Han forstår ________ og ingenting av det de skriver i avisa.
+
+f) Kan du ikke la være å erte søstera di? Det skal så ________ til før hun begynner å gråte!
+
+g) Det er ________ ________ melk igjen. Vi må kjøpe mer.
+
+h) Han snakker ________ annerledes enn det jeg er vant til.
+
+i) Unnskyld, kan du gjenta? Jeg snakker bare ________ norsk.
+
+j) Det er ________ for seint til å gå ut nå, synes jeg.
+
+### 8 INGEN ELLER NOEN 🎧
+
+Sett inn *ingen* eller *noen/noe* i setningene.
+
+Lytt og gjenta.
+
+a) Vi har ________ ledige timer i dag, dessverre.
+
+b) Vi har mange barn, men ________ å miste.
+
+c) Det er ikke ________ å gjøre med dette, tror jeg.
+
+d) ________ kjenner dagen før sola går ned.
+
+e) Han synes ikke at han har fått ________ fornuftige svar.
+
+f) Har du ikke gjort ________ av oppgavene?
+
+g) Vil du ikke ha ________ i kaffen?
+
+h) Uten ________ frivillige kan vi ikke arrangere konserten.
+
+i) ________ vil ta ansvar for denne saken, dessverre.
+
+j) Jeg kjenner ________ som er så glad i pannekaker som du er!
+
+k) Han hadde ikke ________ godt svar.
+
+### 9 ALLE ELLER HVER? 🎧
+
+Sett inn *alle* eller *hver (hvert)* i setningene.
+
+Lytt og gjenta.
+
+a) ________ lærerne har ferie nå.
+
+b) Hun sykler til skolen ________ eneste dag.
+
+c) Han reiser til Tyrkia en gang ________ år.
+
+d) ________ veier fører til Roma, sies det.
+
+e) Får ________ studentene ________ sin individuelle oppgave på eksamen?
+
+f) Ikke ________ fugler flyr sørover om vinteren. Noen overvintrer i Norge.
+
+g) Ikke ________ dag er en hverdag!
+
+h) Kjenner du ________ naboene dine?
+
+i) Jeg tar ________ de rundstykkene der, takk.
+
+j) Jeg har hørt ________ eneste ord du har sagt.
+
+### 10 HELE ELLER ALL? 🎧
+
+Sett inn *hele* eller *all (alt)* i setningene.
+
+Lytt og gjenta.
+
+a) Har du tenkt å bli borte ________ helgen?
+
+b) ________ staben har fri i dag.
+
+c) Vakuumpakning vil si at ________ lufta har blitt sugd ut av pakken.
+
+d) Det har regnet omtrent hver eneste dag ________ sommeren.
+
+e) Jeg har brukt ________ dagen på denne dumme oppgaven.
+
+f) Vi må flytte, for vi blir gale av ________ bråket her i gata.
+
+g) Nå er ________ ferien ødelagt, og ________ sammen er din feil!
+
+h) Nå som du har blitt pensjonist, skal du vel være i Italia ________ vinteren?
+
+i) De har drukket opp ________ melka og spist opp ________ brødet.
+
+j) Fikk dere malt ________ huset i sommer?
+
+k) Fikk du slått ________ gresset før det begynte å regne?
+
+l) Så du ferdig ________ filmen før du la deg?
+
+m) Raneren ble borte i ________ kaoset.
+
+n) I dag handler ________ avisa om valget i Frankrike.
+
+### 11 BEGGE DELER, TAKK! 🎧
+
+Svar på spørsmålene med enten *begge deler* eller *begge to*.
+
+Lytt og svar på spørsmålene.
+
+a) Snakker du norsk eller engelsk? ________________________________
+
+b) Har dere hytte eller campingvogn? ________________________________
+
+c) Drikker du kaffe eller te? ________________________________
+
+d) Kjenner du Ada eller Frida? ________________________________
+
+e) Skal du vaske kjøkkenet eller stua? ________________________________
+
+f) Har du fast telefon eller mobiltelefon? ________________________________
+
+g) Har du sett filmen, eller har du lest boka? ________________________________
+
+h) Likte du filmen eller boka? ________________________________
+
+i) Skriver du på mobilen, eller hører du etter? ________________________________
+
+j) Kjøpte du saga eller boremaskinen? ________________________________
+
+k) Kjøpte du sag eller boremaskin? ________________________________
+
+l) Fikk du kjeft eller ros? ________________________________
+
+### 12 SPRÅKDETEKTIV
+
+Bare fire av setningene er riktig norsk. Hvilke? Sett kryss.
+
+☐ Han sover all dagen.
+☐ Du må vente noen uker på resultatet.
+☐ Har dere drukket hele brusen?
+☐ Jeg har ikke ingen vinduer i stua.
+☐ Kan vi få hvert vårt rommet?
+☐ Forstår du ingenting?
+☐ Han har spist mye skiver i dag.
+☐ Har du hilst på min mor?
+
+Hvordan skal de andre setningene være? Skriv dem riktig her:
+
+________________________________________________________________
+
+________________________________________________________________
+
+________________________________________________________________
+
+________________________________________________________________
+
+### 13 EGEN
+
+Sett inn riktig form av *egen* i setningene: egen, eget, egne.
+
+a) I Sauda finnes det ei gate som heter «________ hjem».
+
+b) Jeg håper at du har ________ PC, for det trenger du i denne jobben.
+
+c) Hvis du bruker ________ bil, kan du få bilgodtgjørelse. Det finnes et ________ skjema for det på hjemmesidene våre.
+
+d) Hadde du tenkt å lese dine ________ dikt høyt?
+
+e) Hun har sannelig sin ________ stil!
+
+f) Jeg hører hva du sier, men jeg har min ________ oppfatning om den saken.
+
+g) Anna har ønsket seg noe ________ i mange år, og endelig fant hun et koselig krypinn midt i sentrum!
+
+### 14 HVA BETYR SELV? (B2+)
+
+*Selv (selve)* kan brukes på forskjellige måter (se teoriboka, s. 60):
+
+1) For å fortelle at noen er i stand til noe på egen hånd eller uten hjelp
+2) For å understreke at noen er alene
+3) For å understreke at noen gjør noe, men ikke andre
+4) For å fortelle at noe er utenom det vanlige
+
+Hvilken betydning brukes i setningene under? Skriv riktig nummer foran setningene.
+
+☐ Dere må ordne opp i problemene deres selv.
+
+☐ Dette er selve livet!
+
+☐ Ungdom mellom 16 og 18 år kan stemme ved kommunevalg, men de kan ikke selv stille til valg.
+
+☐ Barna våre er store og klarer seg selv nå.
+
+☐ Jeg forstår hvordan du har det. Jeg har følt det slik selv mange ganger.
+
+☐ Studentene selv vil helst ha hjemmeeksamen.
+
+☐ Kan du rette på deg selv hvis du gjør grammatiske feil?
+
+☐ Han mistet jobben for et år siden, men nå har han startet opp for seg selv.
+
+☐ Studentene har selv ansvar for kollokviegruppene.
+
+☐ Hadde du tenkt å spise hele kaka selv?
+
+### 15 ENESTE 🎧
+
+Sett inn *eneste* på rett sted i setningene for å forsterke utsagnene.
+
+Lytt og gjenta.
+
+a) Må du bråke sånn hver gang du kommer hjem?
+________________________________________________
+
+b) Han synes ikke at hun har en feil.
+________________________________________________
+
+c) Det jeg ber om, er litt ro og fred etter klokka ti.
+________________________________________________
+
+d) De har ikke sagt et ord til hverandre i hele pausen.
+________________________________________________
+
+e) Skal du bare ha en potet? Jeg har jo kokt minst tre til hver!
+________________________________________________
+
+f) Nå er det bare en dag igjen på skolen før ferien.
+________________________________________________
+
+g) Hun er den jenta han vil ha.
+________________________________________________
+
+h) Dette er de stolene som er igjen.
+________________________________________________
+
+i) Du er den studenten som fikk A på eksamen.
+________________________________________________
+
+j) Hver gang hun prøver å si noe, blir hun avbrutt.
+________________________________________________
+
+### 16 KJENTE NORDMENN: THOR HEYERDAHL
+
+Sett inn determinativene i ordskyen på rett sted i teksten.
+
+Ordsky: noen andre, hans, den, slike, en, hele, de, 8000, mange, noen, en, hele, andre, mange
+
+Thor Heyerdahl (1914–2002) var etnograf og zoolog. Han interesserte seg tidlig for natur, mennesker og dyr, og allerede før han fylte 10 år, bestemte han seg for å bli oppdagelsesreisende.
+
+Heyerdahls navn ble kjent over ________________________ verden i 1947. Da seilte han ________________________ kilometer over Stillehavet fra Sør-Amerika til Polynesia. Han seilte sammen med fem ________________________ menn på en balsaflåte. ________________________ trodde at flåten kom til å synke, men det gjorde den ikke. Med turen ville Heyerdahl bevise at folk kunne ha reist her for lenge siden, og at innbyggerne på Polynesia kunne stamme fra Amerika, ikke Asia. Heyerdahl mente at mennesker alltid har reist over hav likeså vel som over land. Han laget ________________________ dokumentarfilm fra turen, og ________________________ filmen fikk han en Oscar for i 1951.
+
+Heyerdahl foretok flere ________________________ reiser. ________________________ var suksesser, ________________________ gikk ikke fullt så bra. Samtidig skrev Heyerdahl ________________________ bøker og artikler om ekspedisjonene sine og om det han fant ut. Han fikk både æresdoktorgrader og andre priser, men i ________________________ akademiske miljøene var det også mange som ikke trodde på teoriene ________________________.
+
+Heyerdahl døde i 2002, og i 2011 ble ________________________ arkivet ________________________ ført opp på UNESCOs liste over verdensarvminner.
+
+*(Kilde: https://no.wikipedia.org/wiki/Thor_Heyerdahl)*
+
+### KAN DU DET?
+
+| Oppgave: | Jeg kan det. 😐 | Jeg må øve mer. 😐 |
+|---|---|---|
+| Jeg kan identifisere de ulike rollene determinativer har.<br>*(I can identify the different roles of determinatives.)* | | |
+| Jeg kan bruke demonstrativene *den/denne, det/dette* og *de/disse* riktig.<br>*(I can use the demonstratives den/denne, det/dette and de/disse correctly.)* | | |
+| Jeg kan bruke kvantorene *all, hel, ingen, mange* og *mye* riktig i frekvente setninger.<br>*(I can use the quantifiers all, hel, ingen, mange and mye correctly in frequent sentences.)* | | |
+| Jeg kan bruke eiendomsord riktig og bøye dem til substantivet de forteller om.<br>*(I can use possessives correctly and decline them according to the nouns they belong to.)* | | |
+| Jeg blander ikke personlige pronomen og eiendomsord når jeg snakker og skriver.<br>*(I do not mix personal pronouns and possessives when I speak or write.)* | | |
+| Jeg kan bruke forsterkeren *egen/eget/egne* riktig i frekvente setninger.<br>*(I can use the emphasizer egen/eget/egne correctly in frequent sentences.)* | | |
+| Jeg kan bruke forsterkeren *selv/selve/selveste* riktig i frekvente setninger.<br>*(I can use the emphasizer selv/selve/selveste correctly in frequent sentences.)* | | |
+| Jeg kan bruke forsterkeren *eneste* riktig i frekvente setninger.<br>*(I can use the emphasizer eneste correctly in frequent sentences.)* | | |
+
+## VERB
+
+### 1 UREGELRETTE VERB
+
+Det er 15 uregelrette verb og 10 regelrette verb i ordskyen. Finn de *uregelrette* verbene.
+
+Bøy de uregelrette verbene *a verbo* i tabellen. Hvor mange verb klarer du uten å se i ordboka eller i lista med uregelrette verb (tillegg 1 i teoriboka)?
+
+Ordsky: gjøre, reise, spise, stå, ligge, være, lage, drikke, tenke, sette, bli, selge, se, leve, snakke, velge, sitte, høre, sove, føle, gå, puste, kjøpe, hjelpe, spørre
+
+| INFINITIV | PRETERITUM | PERFEKTUM PARTISIPP |
+|---|---|---|
+| | | |
+
+**1–10 verb:** Øv mer! (Tips: Ha alltid ei liste med fem uregelrette verb i lomma!)
+
+**11–13 verb:** Du er på rett vei, men det mangler fortsatt litt. Disse verbene er ganske vanlige, og på B2 bør du kunne dem!
+
+**14 verb:** Ikke verst. Stå på! Ikke slutt å øve.
+
+**15 verb:** Veldig bra! 🎉
+
+### 2 ÉN SVALE GJØR INGEN SOMMER
+
+Denne fabelen finner vi i *Æsops fabler*.
+
+Fyll ut med verbene i riktig form.
+
+> Usikker på bøyningen av de uregelrette verbene? Sjekk ordbok.uib.no
+
+Det var en gang en ung mann. Da faren ________ (å dø, uv) ________ (å arve, vg1) han en stor formue etter ham. Men i stedet for å ________ (å spare, vg2) pengene, ________ (å bruke, vg2) han alt med en gang. Det eneste han ________ (å ha, uv) igjen, ________ (å være, uv) de tykke vinterklærne sine. Han ________ (å eie, vg4) en flott frakk, fine støvler og skinnhansker. Det ________ (å være, uv) en veldig kald vinter, så han ________ (å være, uv) glad for de varme klærne.
+
+En dag tidlig om våren ________ (å sitte, uv) han ved vinduet på loftsrommet sitt. Da ________ (å se, uv) han en svale som ________ (å fly, uv) rundt utenfor vinduet.
+
+«Svalen ________ (å være, uv) et sommertegn», ________ (å si, uv) han til seg selv. «Nå ________ (å kunne, uv) jeg ________ (å selge, uv) vinterklærne mine. Jeg ________ (å trenge, vg2) pengene.»
+
+Han ________ (å løpe, uv) ned i byen og ________ (å selge, uv) klærne. Det var fine og gode klær, så han ________ (å få, uv) mange penger for dem. Men den unge mannen var fremdeles glad i å ________ (å bruke, vg2) penger, og da kvelden ________ (å komme, uv), ________ (å ha, uv) han ingen penger igjen.
+
+Neste dag ________ (å våkne, vg1) mannen tidlig fordi han ________ (å fryse, uv). Været ________ (å være, uv) kaldt, og det ________ (å snø, vg4) ute. Nå var de varme klærne borte, og han ________ (å ha, uv) bare ei tynn skjorte og et par gamle bukser. Han ________ (å åpne, vg1) vinduet for å ________ (å se, uv) ut. Der, i vinduskarmen, ________ (å ligge, uv) svalen, og den var stiv av kulde.
+
+«Stakkars lille venn!» ________ (å si, uv) mannen og ________ (å ta, uv) svalen forsiktig i hånda. «Vi to ________ (å tro, uv) at sommeren var her, men ________ (å se, uv) på oss nå!»
+
+Moral: Én svale gjør ingen sommer.
+
+*Kilde: http://www.nb.no/nbsok/nb/78e4b08105ebdd9d0d185dea0e5afd51?lang=no#63*
+*Tilrettelagt av forfatteren.*
+
+### 3 PRESENS PERFEKTUM ELLER PRETERITUM?
+
+Sett inn rett form i dialogene: *presens perfektum* eller *preteritum*.
+
+**DIALOG 1**
+
+– Blir du og dattera di med på kino i kveld?
+
+– Hvilken film, da?
+
+– Askeladden i Dovregubbens hall.
+
+å se – Nei, vi ________________________ den.
+
+å se – Når ________________________ dere den?
+
+å være – Vi ________________________ på premieren i forgårs.
+
+å like – ________________________ dere den, da?
+
+å like – Tja … Dattera mi ________________________ den veldig godt, iallfall.
+
+**DIALOG 2**
+
+– Må vi ikke snart kjøpe flybilletter til i sommer?
+
+å kjøpe – Jeg ________________________ flybilletter allerede.
+
+– Uten å snakke med meg?
+
+å være, å være – Ja, men vi ________________ jo enige om datoene, ________________ vi ikke?
+
+**DIALOG 3**
+
+å regne – Det ________________________ i fire dager nå. Jeg er så lei!
+
+å se – Enig. Og ________________ du ________________________ værmeldingen?
+
+– Nei?
+
+– Ingen bedring i sikte, dessverre.
+
+**DIALOG 4**
+
+– Ola skal på jobbintervju i morgen!
+
+å være – Nei, men det ________________________ gode nyheter, må jeg si!
+
+å søke – Ikke sant? Han ________________________ over sju forskjellige jobber den siste måneden, tror jeg.
+
+å få – Men nå ________________ han endelig ________________ napp?
+
+– Ja, det er en stilling som kommunikasjonsansvarlig hos Svingen AS.
+
+**DIALOG 5**
+
+– Er du sulten?
+
+å spise, å spise – Nei, jeg ________________________________. Jeg ________________
+
+å dra før jeg ________________________ hjemmefra.
+
+**DIALOG 6**
+
+å høre – ________________ du ________________ at Petter og Lotte skal skilles?
+
+å fortelle – Ja, Ola ________________________ det i går.
+
+å være – Hvor lenge ________________ de ________________ gift, vet du det?
+
+å gifte seg – Tja, jeg tror de ________________________ i ’87 eller ’88, så det blir jo noen år, da.
+
+### 4 Å VÆRE ELLER Å BLI? 🎧
+
+Skriv inn *å være* eller *å bli* i setningene i riktig tempus.
+
+Lytt og gjenta.
+
+a) Uff, så sinna hun ________________________ da jeg protesterte på avgjørelsen hennes!
+
+b) Dattera mi ________________________ syk i ei uke nå! Jeg lurer på om det ________________________ på tide å ta henne med til legen.
+
+c) ________________________ det noe galt? Kan jeg hjelpe deg med noe?
+
+d) Det skal ________________________ fint å ses igjen etter så lang tid!
+
+e) ________________________ du enig eller uenig med meg?
+
+f) Saksbehandleren ________________________ lenge borte, synes jeg. Nå har vi ventet i snart en halv time.
+
+g) Vasen ________________________ knust da jeg vasket den, dessverre. Det tålte den ikke.
+
+h) Nå må alle ________________________ stille og konsentrere seg om oppgaven. Shhh!
+
+### 5 SPRÅKDETEKTIV
+
+Hvilken form av verbet er riktig? Hvorfor?
+
+Skriv setningen en gang til slik den skal være.
+
+a) Har du sett/så bilen min? → ________________________________________________
+Fordi: ________________________________________________
+
+b) Truffet/Traff du noen kjente i byen i går? → ________________________________________________
+Fordi: ________________________________________________
+
+c) Hva skal du gjør/gjøre i ferien? → ________________________________________________
+Fordi: ________________________________________________
+
+d) Gått/Gikk du rett hjem etter skolen i går? → ________________________________________________
+Fordi: ________________________________________________
+
+e) Har du lest/leste e-posten fra læreren? → ________________________________________________
+Fordi: ________________________________________________
+
+f) Har du fått/fikk resultatet på prøven? → ________________________________________________
+Fordi: ________________________________________________
+
+g) Kan du hjelper/hjelpe meg med leksene? → ________________________________________________
+Fordi: ________________________________________________
+
+h) Hvem skal lager/lager middag i dag? → ________________________________________________
+Fordi: ________________________________________________
+
+i) Hadde du tenkt/tenkte å dra på hytta i helgen? → ________________________________________________
+Fordi: ________________________________________________
+
+j) Kan du se/sett over leksene til Ivan? → ________________________________________________
+Fordi: ________________________________________________
+
+### 6 VERBSYSTEMENE
+
+Sett inn verbene til venstre i riktig tempus i tekstene: I *Petra vender nesa hjemover* skal du bruke presenssystemet. I *En ekte hattemaker i Strandgata* og *Bussturen* skal du bruke preteritumssystemet.
+
+De regelrette verbgruppene er oppgitt i parentes.
+
+> Usikker på bøyningen av de uregelrette verbene? Sjekk ordbok.uib.no
+
+**PETRA VENDER NESA HJEMOVER**
+
+Petra trives godt med å arbeide for fru Sevré, men en dag
+
+å komme (uv), å vise (vg2) — ________ ikke fruen på arbeid. Det ________ seg
+
+å sovne (vg1) — at hun ________________ inn i løpet av natta. Butikken
+
+å bli (uv), å vite (uv) — ________________ stengt, og Petra ________________
+
+å gjøre (uv) — ikke hva hun ________________. Foreldrene hennes
+
+å leve (vg3) — ________________ ikke lenger, og hun har for lengst solgt
+
+å lengte (vg1) — huset deres i Bergen. Men likevel. Hun ________________
+
+å være (uv) — hjem til Bergen. Kanskje ________________ det på tide å
+
+vende nesa hjemover igjen?
+
+**EN EKTE HATTEMAKER I STRANDGATA**
+
+Etter mange år i Paris bestemte Petra seg for å flytte tilbake
+
+å ha (uv) — til Bergen. Hun ________________ litt sparepenger, så hun
+
+å åpne (vg1) — ________________ en hattebutikk i Strandgata. I starten
+
+å ha (uv) — ________________ hun bare en liten, fast kundekrets, men
+
+å bli (uv) — etter hvert ________________ Petras hatter mer og mer
+
+å få (uv) — populære. Hun ________________ mange kunder, og hun
+
+å ha (uv) — ________________ alltid mye å gjøre.
+
+**BUSSTUREN**
+
+å være (uv) — Petra og Selma ble kjent da de ________________ på en
+
+å sitte (uv) — busstur sammen. De ________________ ved siden av
+
+å finne (uv) — hverandre, og de ________________ raskt tonen. Petra
+
+å være (uv) — ________________ både bereist og verdensvant, syntes Selma.
+
+å komme (uv), å overta (uv) — Da de ________________ til Paris, ________________ Petra
+
+å bo (vg4) — rollen som guide for reiseselskapet. Hun ________________
+
+å kjenne (vg2) — mange år i Paris i sin ungdom, og hun ________________
+
+byen godt. Egentlig hadde hun reist til Paris for å studere
+
+å få (uv) — fransk, men så ________________ hun jobb i en hatte-
+
+å bli (uv) — butikk. Hun ________________ så fasinert av hatter at hun
+
+å slutte (vg1) — ________________ på universitetet.
+
+### 7 AKTIV ELLER PASSIV?
+
+Avisene bruker ofte setninger som står i passiv. Her er eksempler på setninger som vi kan finne i aviser. Står setningene i aktiv eller passiv? Sett kryss.
+
+| | AKTIV | PASSIV |
+|---|---|---|
+| a) Saken ble henlagt. | | |
+| b) Den dømte kommer til å anke saken. | | |
+| c) Direktøren fikk sparken. | | |
+| d) Bedriften ble slått konkurs. | | |
+| e) Den skyldige vil bli funnet. | | |
+| f) Mye tyder på at den omtalte sjåføren vil miste jobben. | | |
+| g) Leiligheten ble totalskadd i brannen. | | |
+| h) Huset ble solgt til prisantydning. | | |
+| i) De ansatte har gått til streik. | | |
+| j) Han ble dømt til å betale saksomkostninger. | | |
+| k) Politikerne klarer ikke å bli enige. | | |
+
+### 8 AKTIV OG PASSIV (1) 🎧
+
+Skriv om fra aktiv til passiv. I passivsetningen trenger du ikke å fortelle hvem som gjorde det.
+
+Lytt og lag passivsetninger.
+
+a) De må rive det gamle sykehuset. ________________________________
+
+b) De skal legge om veien ei ukes tid. ________________________________
+
+c) De stengte av vannet. ________________________________
+
+d) De la ned skolen i fjor høst. ________________________________
+
+e) De stoppet trafikken. ________________________________
+
+f) De så ranerne. ________________________________
+
+g) De kjørte oss til flyplassen. ________________________________
+
+h) De forsto meg ikke. ________________________________
+
+i) De glemte ham. ________________________________
+
+j) De overhørte samtalen vår. ________________________________
+
+### 9 AKTIV OG PASSIV (2) 🎧
+
+Skriv om fra passiv til aktiv. Bruk *noen* som subjekt i aktivsetningene.
+
+Lytt og lag setninger i aktiv med *noen* som subjekt.
+
+a) Skruene må festes. Noen må ________________________________
+
+b) Bordet må dekkes. ________________________________
+
+c) Huset males. ________________________________
+
+d) Direktøren ble sagt opp. ________________________________
+
+e) Varene har blitt levert. ________________________________
+
+f) Bilen ble stjålet mens eieren sov. ________________________________
+
+g) Samtalen ble tatt opp på bånd. ________________________________
+
+h) Vi ble underholdt. ________________________________
+
+i) Huset ble revet. ________________________________
+
+j) Bjørnen ble skutt. ________________________________
+
+### 10 ORDSTILLING
+
+Disse setningene står i passiv. Skriv setningene med riktig ordstilling. Start med det **markerte** ordet.
+
+a) reprise **Filmen** blir i sendt fredag på ________________________________
+
+b) bør **Alle klær** vaskes bruk før ________________________________
+
+c) kommer **Bordet** skal før dekkes gjestene ________________________________
+
+d) **Bilen** stjålet ble eieren mens sov ________________________________
+
+e) ble **Veien** lagt om helgen i av løpet ________________________________
+
+f) med **Disse glassene** forsiktighet må behandles ________________________________
+
+g) løsnes **Skruene** må bordet før demonteres ________________________________
+
+h) over **Boka hans** hele verden utgis ________________________________
+
+i) i løpet av **Terrassen** males sommeren må ________________________________
+
+j) av **Hun** sønnens ble kontaktlærer oppringt ________________________________
+
+k) etter dømt **Han** ble tiltalen ________________________________
+
+l) ble dagen **De** opp på sagt ________________________________
+
+m) betales innen **Regningen** torsdag må ________________________________
+
+### 11 EN OPPSKRIFT: EPLECHIPS
+
+Skriv om instruksjonen fra *imperativ* til *passiv*. Vær oppmerksom på at ikke alle setningene bør stå i passiv.
+
+| | |
+|---|---|
+| Tørk epler med et rent kjøkkenhåndkle og skjær dem i tynne skiver (3 mm) med en skarp kniv. Fjern kjernehuset om du synes det er for grovt og stort. | |
+| Sett stekeovnen på varmluft og 90 °C. Legg epleskivene tett i tett (men ikke oppå hverandre) på bakepapir og plasser dem i ovnen. Du kan steke minst tre brett på en gang. | |
+| Stek eplene i ca. 1 time. Snu skivene og stek videre i 1 time til. | |
+| Senk varmen til 50 °C, og tørk eplechipsen til den er helt tørr og sprø. Dette kan ta hele natten. | |
+| Oppbevar eplechipsen i tette glass eller plastpose. De har lang holdbarhetstid. | |
+
+(Kilde: https://www.matprat.no/oppskrifter/familien/eplechips/)
+
+### 12 EN HJELPENDE HÅND
+
+Sett inn presens partisipp i setningene.
+
+Er partisippet *adjektiv* eller *adverb* i setningene? Skriv riktig svar i kolonnen til høyre.
+
+| | | ADJEKTIV ELLER ADVERB? |
+|---|---|---|
+| a) å stråle | Hun gikk ut av videregående med ________________ karakterer. | |
+| b) å skuffe | Han fikk et ________________ resultat på eksamen. | |
+| c) å rase | Bilen kom mot oss i en ________________ fart. | |
+| d) å krype | Han kom ________________ over målstreken, fullstendig utkjørt! | |
+| e) å rase | Hun ble ________________ da jeg prøvde å protestere. | |
+| f) å leke | Dette var ________________ lett! | |
+| g) å tvile | Jeg stiller meg ________________ til det du sier. | |
+| h) å hjelpe | Kan du gi meg en ________________ hånd? | |
+
+> Presens partisipp er ofte en del av et fast uttrykk (et idiom). Dette gjelder særlig de tre siste setningene i denne oppgaven (setning f-h). Hvordan vil du oversette disse setningene til morsmålet ditt?
+>
+> ________________________________
+>
+> ________________________________
+>
+> ________________________________
+
+### 13 ET NYMALT HUS
+
+Vi bruker ofte perfektum partisipp som *adjektiv*.
+
+Sett inn perfektum partisipp i rett form i setningene.
+
+a) nymalt Ikke sitt på de ________________ benkene!
+
+Hvilken vegg er ________________, sa du?
+
+b) utgått Denne osten er ________________ på dato.
+
+Du finner alle de ________________ varene i kurven der borte.
+
+c) ansatt Hvor mange ________________ er det i bedriften?
+
+Han er ________________ i et reklamebyrå.
+
+d) opptatt Jeg beklager, men dette setet er ________________.
+
+Hvorfor er du så ________________ hele tida?
+
+e) håndskrevet Hun har fått et ________________ brev.
+
+Hvem sender ________________ brev nå for tida?
+
+f) kokt Er det stekte eller ________________ poteter til middag i dag?
+
+Jeg er ikke så glad i ________________ kjøtt.
+
+g) utslitt Jeg er fullstendig ________________ i dag.
+
+Jeg kastet de ________________ skoene dine i søpla.
+
+h) brukt Sønnen min kjøper nesten bare ________________ klær.
+
+Jeg har sagt at han ikke skal kjøpe ________________ sko.
+
+### 14 I ARBEIDSLIVET
+
+Vi bruker ofte modalverb i *formelle situasjoner*. Fyll ut med modalverb i setningene under:
+
+**Ved sykdom**
+
+Hvis du blir syk, ________________ du ta kontakt med arbeidsgiver så snart du ________________ og melde fra om at du er syk.
+
+**Egenmelding**
+
+Du ________________ skrive egenmelding så snart du er tilbake på arbeid igjen.
+
+**Er du medlem?**
+
+Når fagforeningene oppnår goder i sentrale forhandlinger, ________________ alle arbeidstakere nyte godt av det.
+
+**HMS**
+
+Arbeidstaker har plikt til å medvirke til et godt arbeidsmiljø. Det ________________ si at arbeidstakeren ________________ melde fra om alle skader, feil eller mangler som han eller hun oppdager.
+
+### 15 PARSETNINGER: MODALE UTTRYKKSMÅTER
+
+Fyll ut setning B slik at den betyr det samme eller omtrent det samme som setning A.
+
+1 A Må du gå allerede?
+
+B Er du ________________________________ gå allerede?
+
+2 A Du kan ikke gå ut før du har gjort leksene.
+
+B Du får ikke ________________________________ å gå ut før du har gjort leksene.
+
+3 A Nå hadde det vært godt med en kopp kaffe!
+
+B Nå ________________________________ tenkt meg en kopp kaffe!
+
+4 A Jeg klarer ikke å hjelpe deg med den oppgaven.
+
+B Jeg er ikke ________________________________ å hjelpe deg med den oppgaven.
+
+5 A Vi har planer om en ferietur rett over nyttår.
+
+B Vi har ________________________________ på en ferietur rett over nyttår.
+
+6 A Jeg synes det er unødvendig at jeg må forklare dette så mange ganger.
+
+B Det ________________________________ nødvendig å forklare dette så mange ganger.
+
+7 A Vil du klare eksamen, tror du?
+
+B ________________________________ å klare eksamen, tror du?
+
+8 A De vil helst gifte seg om våren.
+
+B De har mest ________________________________ seg om våren.
+
+### 16 ALLE MÅ HA LEST DENNE BOKA INNEN TORSDAG 🎧
+
+Skriv setningene med tidsadverbialet først.
+
+Lytt og lag setninger med tidsadverbialet først.
+
+a) Alle må ha lest denne boka innen torsdag.
+
+________________________________
+
+b) Jeg må ha vasket gulvet før de kommer.
+
+________________________________
+
+c) Vi må ha reparert taket før vinteren.
+
+________________________________
+
+d) Barna må ha sovnet før barnevakten kommer.
+
+________________________________
+
+e) Han må ha vært full da han skrev dette!
+
+________________________________
+
+f) Vinden må ha stilnet i løpet av natta.
+
+________________________________
+
+g) Hun må ha øvd seg mer før hun prøver igjen.
+
+________________________________
+
+h) Du må ha spist minst åtte brødskiver i dag!
+
+________________________________
+
+### 17 SAMMENSATTE VERB
+
+Presens og preteritum er *ikke* sammensatte verb. De består av ett ord: går/gikk, leser/leste, snakker/snakket osv.
+
+De andre formene av verbet er sammensatte. Da kaller vi det første verbet for *verb 1* og det andre verbet for *verb 2*: skal gå, skal lese, har gått, har lest osv. Hvis verbet er sammensatt av tre verb, står det andre og det tredje verbet sammen på plassen for verb 2. I den sammensatte tida *skulle ha lest*, er *skulle* verb 1, og *ha lest* verb 2.
+
+Les setningene, og skriv verbene i riktig kolonne. Hvilket tempus står verbet i?
+
+| | VERB 1 | VERB 2 | TEMPUS |
+|---|---|---|---|
+| a) Etter at vi hadde spist, tok vi en tur til byen. | | | |
+| b) Hvis du vil, kan vi treffes seinere i dag. | | | |
+| c) Bilen ble stjålet mens eieren var på ferie. | | | |
+| d) Huset må ryddes før gjestene kommer. | | | |
+| e) Hvis jeg hadde fått en invitasjon, hadde jeg selvfølgelig kommet. | | | |
+| f) Bilen skal ha tilhørt kameratens mor. | | | |
+| g) Hun hadde ikke forstått spørsmålet mitt, så jeg måtte forklare alt en gang til. | | | |
+| h) Dette er en interessant problemstilling som vi må se nærmere på etter hvert. | | | |
+| i) Skulle det være noe mer, er det bare å ringe! | | | |
+
+### 18 JEG HAR HØRT AT ...
+
+Du vil referere noe andre har sagt eller opplevd, så det er viktig å vise at du tar forbehold om innholdet i utsagnet. Hvordan kan du uttrykke deg? Finnes det flere måter å si det på?
+
+a) «De ansatte i denne matbutikken var veldig hjelpsomme.»
+
+________________________________
+
+b) «Nå har Eva fått jobb som frisør!»
+
+________________________________
+
+c) «Raneren var middels høy og snakket bergensk.»
+
+________________________________
+
+d) «Konkursen skyldes dårlig økonomistyring.»
+
+________________________________
+
+e) «Gruvearbeiderne streiket på grunn av farlige arbeidsforhold.»
+
+________________________________
+
+### 19 HVA SKULLE DU HA GJORT, SA DU? 🎧
+
+Velg fire av situasjonene og lag setninger der du forteller hva du *skulle ha gjort*, og hva som *faktisk skjedde* eller forklarer hvorfor du ikke gjorde det. Skriv i snakkeboblene.
+
+Lytt og gjenta.
+
+å lage mat - sovnet på sofaen | å arbeide med norsken - fikk besøk
+
+å legge seg tidlig - ble sittende og se på TV | å pusse opp - blakk
+
+å begynne å studere - måtte jobbe | å reise på ferie - blakk
+
+å male huset - det begynte å regne | å holde en tale for mor - sjenert
+
+### 20 HVA MENER DU?
+
+Lag én setning til hver problemstilling. Setningen må vise at dette er din mening om saken.
+
+(+) betyr at setningen skal være positiv (du er enig).
+
+(–) betyr at setningen skal være negativ (du er uenig).
+
+a) øke prisen på flybilletter (+) ________________________________
+
+b) innføre skoleuniformer (–) ________________________________
+
+c) sende mer sport på TV (+) ________________________________
+
+d) senke skattene (–) ________________________________
+
+e) øke antall ansatte (+) ________________________________
+
+f) utvinne mer olje (–) ________________________________
+
+### 21 NEI, DET ER HELT I DET BLÅ! (B2+) 🎧
+
+Hvordan kan du uttrykke at noe er hypotetisk? Bruk situasjonene i rammen og lag utsagn. Finnes det flere måter å si det på?
+
+Lytt og gjenta.
+
+at det ble fred i verden | at man kunne avskaffe dårlig vær
+
+at jeg kunne vinne i lotto | at hvalfangst ble forbudt
+
+### 22 FIKK DU GJORT DET? (B2+) 🎧
+
+Skriv om setningene slik at handlingens *resultat* er i fokus. Pass på at verbene er bøyd i riktig tempus. Se på eksemplene.
+
+Lytt og gjenta.
+
+Eksempler:
+
+Hun tar ikke lappen i år. → Hun får ikke tatt lappen i år.
+
+Du må vaske huset før hun kommer. → Du må få vasket huset før hun kommer.
+
+a) Setter du på vaskemaskinen før du går?
+
+________________________________
+
+b) Tok du eksamen?
+
+________________________________
+
+c) Handlet du på veien hjem?
+
+________________________________
+
+d) Jeg leste ikke nok før prøven.
+
+________________________________
+
+e) De tok inn klærne før det begynte å regne.
+
+________________________________
+
+f) Bestiller du billetter?
+
+________________________________
+
+g) Han har ikke solgt bilen.
+
+________________________________
+
+h) Hun søkte ikke innen fristen.
+
+________________________________
+
+i) De besøkte oss ikke i ferien likevel.
+
+________________________________
+
+j) De tok farvel på en skikkelig måte.
+
+________________________________
+
+### 23 DE BLE SITTENDE OG SNAKKE 🎧
+
+Fyll ut slik at setningen får et aspekt som viser at handlingen er utstrakt i tid. Pass på at verbene er bøyd i riktig tempus. Se på eksemplene.
+
+Lytt og lag setninger med et aspekt som viser at handlingen er utstrakt i tid.
+
+Eksempel:
+
+Hun sitter nok og leser hele dagen. → Hun blir nok sittende og lese hele dagen.
+
+Hun studerer. → Hun holder på å studere.
+
+a) Han skal nok bo her en stund.
+
+________________________________
+
+b) De pusser opp huset.
+
+________________________________
+
+c) Han sto og ventet på bussen.
+
+________________________________
+
+d) Jeg satt faktisk og så på TV hele kvelden.
+
+________________________________
+
+e) Hun lå til sengs ei hel uke.
+
+________________________________
+
+f) Han sto og vasket opp en hel time!
+
+________________________________
+
+g) De satt og snakket sammen hele natta.
+
+________________________________
+
+h) De gikk uten noe å gjøre.
+
+________________________________
+
+### 24 HVILKET PARTIKKELVERB?
+
+Finn et fast sammensatt *partikkelverb* som betyr det samme eller omtrent det samme som forklaringen, og fyll ut. Du har én bokstav fra hvert ord som hjelp.
+
+- si nei til
+- føde, få barn
+- signere
+- lære barn om hva som er rett og galt
+- skje, være i gang
+- ignorere, ikke bry seg om
+- bestemme, fatte en beslutning
+- tolke fra ett språk til et annet
+- innrømme at man har gjort noe
+- leve videre, klare seg
+- publisere
+- ha innflytelse på
+- fjerne, gjøre noe forbudt
+- få noen til å gjøre noe du vil
+
+### 25 ET AVSLAG – Å AVSLÅ
+
+Hvilken ordklasse er det **markerte** ordet? Hvilket partikkelverb (løst eller fast sammensatt) er det laget av?
+
+| | | ORDKLASSE | PARTIKKELVERB |
+|---|---|---|---|
+| a) | Hvordan tok han **avslaget**? | | |
+| b) | Mange selgere er veldig **pågående**. | | |
+| c) | Jeg trenger **underskriften** din her … og her. | | |
+| d) | **Oppmøtet** er veldig godt i dag. | | |
+| e) | Skjønner du **sammenhengen**? | | |
+| f) | Møtet er **utsatt**. | | |
+| g) | Diderot var en av **opplysningstidas** store filosofer. | | |
+| i) | **Utgangen** er stengt. | | |
+| j) | Det har vært en stor **overgang** for henne å begynne på ny skole. | | |
+| k) | **Påkjørselen** bakfra skyldes uoppmerksomhet fra førerens side. | | |
+| l) | Det blir **diktopplesning** på biblioteket klokka fire. | | |
+| m) | Dette var ikke **avtalen**! | | |
+| n) | Hva mener du om **påstandene** hans? | | |
+| o) | Har du hilst på hans **tilkommende**? | | |
+| p) | Hun skrev under med **påholden** penn. | | |
+
