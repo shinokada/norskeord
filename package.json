@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@11.22.0",
+  "packageManager": "pnpm@11.23.0",
   "scripts": {
     "dev": "vite dev",
     "build": "pnpm stats && vite build",
@@ -37,12 +37,15 @@
     "search:index": "npx tsx scripts/build-search-index.ts",
     "check:languages": "node scripts/check-language-sync.mjs",
     "check:unused-keys": "node scripts/check-unused-keys.mjs",
-    "check:category-keys": "npx tsx scripts/check-category-keys.ts"
+    "check:category-keys": "npx tsx scripts/check-category-keys.ts",
+    "check:spelling": "npx tsx scripts/check-spelling.ts"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.117.1",
     "@types/node": "^24.0.0",
     "@changesets/cli": "^3.0.0",
+    "dictionary-nb": "^3.0.0",
+    "nspell": "^2.1.5",
     "@eslint/compat": "^2.1.0",
     "@eslint/js": "^10.0.1",
     "@inlang/paraglide-js": "^2.24.0",

@@ -5,6 +5,7 @@
   import { cefrLevels, cefrColors } from '$lib/blog';
   import { page } from '$app/state';
   import { goto } from '$app/navigation';
+  import { resolve } from '$app/paths';
 
   let { data }: { data: PageData } = $props();
 
@@ -27,7 +28,12 @@
     } else {
       url.searchParams.delete(key);
     }
-    goto(url, { replaceState: true, keepFocus: true, noScroll: true });
+    const query = url.searchParams.toString();
+    goto(resolve(query ? `/blog?${query}` : '/blog'), {
+      replaceState: true,
+      keepFocus: true,
+      noScroll: true
+    });
   }
 
   // All unique tags across non-guide posts, sorted alphabetically
@@ -107,7 +113,7 @@
 
   function clearFilters() {
     searchQuery = '';
-    goto(page.url.pathname, { replaceState: true, keepFocus: true, noScroll: true });
+    goto(resolve('/blog'), { replaceState: true, keepFocus: true, noScroll: true });
     visibleCount = PAGE_SIZE;
   }
 
