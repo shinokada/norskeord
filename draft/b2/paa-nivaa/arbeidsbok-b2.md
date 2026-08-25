@@ -2525,3 +2525,75 @@ Lytt og gjenta.
 | c) | Det er mulig hun skal flytte over sommeren. | Hun skal ________________ flytte over sommeren. |
 | d) | Alle vet at dette går bra. | ________________ går dette bra. |
 
+e) Jeg tviler på at han blir frisk til i morgen. → Han blir ________________ ikke frisk til i morgen.
+
+f) Jeg tror ikke det gikk så bra i helgen. → Det gikk ________________ ikke så bra i helgen.
+
+g) Muligens kom tyven seg inn gjennom terrassedøra. → ________________ kom tyven seg inn gjennom terrassedøra.
+
+### 13 JEG KAN KANSKJE KOMME
+
+Sett strek slik at setningene blir logiske.
+
+Lytt og gjenta.
+
+a) Jeg kan kanskje — muligens bli utsatt ei uke.
+
+b) Eksamen vil — innse at slaget er tapt.
+
+c) Nå må — bare slenge ut sånne påstander i øst og vest!
+
+d) Vi ses — komme på festen din likevel.
+
+e) Du kan da ikke — pass til byturen vår, dessverre.
+
+f) Jeg kan vel ikke si — kanskje i morgen?
+
+g) Jeg må nok melde — jeg nok gå, dessverre.
+
+h) Vi kan kanskje — deg hvis jeg får tid.
+
+i) Du må nok bare — at jeg er enig med deg i det.
+
+j) Jeg skal selvfølgelig hjelpe — treffes i morgen i stedet?
+
+### 14 LIKEVEL, DERFOR ELLER DESSUTEN?
+
+Bruk *likevel, derfor* eller *dessuten* for å binde sammen setningene på en logisk måte.
+
+a) Hun har hatt mye å gjøre, men ________________ har hun tatt seg tid til å ringe til meg.
+
+b) Bilen er ikke klar. Vi måtte skifte bremseklosser, og ________________ var det noe galt med det høyre blinklyset.
+
+c) Du kan ikke gå ut nå! Vi skal spise middag snart, og ________________ må du gjøre lekser etterpå.
+
+d) Han var veldig fin med langt hår. ________________ klippet han seg i forrige uke.
+
+e) De var utsolgt for torsk. ________________ ble det laks i stedet.
+
+f) Hun fikk godt bestått på leseprøven. ________________ var hun ikke fornøyd.
+
+g) Bussen var full og kjørte forbi. ________________ kom vi for seint på skolen.
+
+h) Jeg forstår ikke hvorfor du er så irritert. Jeg har bedt om unnskyldning, og ________________ var det faktisk et uhell.
+
+### 15 GRADBØYNING AV ADVERB
+
+Sett inn rett form av adverbet i setningene.
+
+a) gjerne — Jeg tar ________________ det stykket til venstre. Det ser finest ut.
+
+b) gjerne — Hva vil du ________________ gjøre i ferien? Dra på biltur eller slappe av hjemme?
+
+c) sakte — Du må kjøre litt ________________, ellers kommer du til å få en klekkelig fartsbot!
+
+d) lenge — Han liker å sove ________________ om morgenen i helgene.
+
+e) bak — Det er en ledig plass ________________ i klasserommet. Du kan sette deg der.
+
+f) fort — Han løper ________________ av alle i klassen.
+
+g) fint — Så ________________ du synger! Har du tatt sangtimer, eller er du bare så flink?
+
+h) ofte — Kan du ikke besøke oss litt ________________? Det hadde vært så hyggelig!
+
