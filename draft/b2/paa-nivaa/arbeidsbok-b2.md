@@ -3949,3 +3949,258 @@ h) Vi må kjøpe ny **oppvaskmaskin**. = ________________________________
 | Jeg kan skille mellom et verbalsubstantiv som forteller om en person og et verbalsubstantiv som forteller om en prosess, et resultat eller en ting. *(I can distinguish between a verbal noun that describes a person and one that describes a process, result or thing.)* | | |
 | Jeg kan forstå sammensatte ord som er laget av partikkelverb hvis de andre ordene i sammensetningen er kjent for meg. *(I can understand compound words formed from a phrasal verb if the surrounding words are known to me.)* | | |
 
+## MER OM ORD
+
+### 1 KVINNE, MANN ELLER BARN?
+
+Sett substantivene i ordskyen i rett kolonne.
+
+Ord i ordskyen: kis, gubbe, husbond, brud, kone, tass, madam, kar, nurk, smårolling, frue, kjerring
+
+| KVINNE | MANN | BARN |
+| --- | --- | --- |
+| | | |
+
+### 2 KRYSSORD
+
+*Synonymer* er ord som betyr det samme eller omtrent det samme. I kryssord bruker vi vanligvis synonymer. Fyll ut kryssordet med synonymer.
+
+1 gøy, artig, komisk
+2 solid, holdbar, kraftig
+3 bitter, kald, misfornøyd, grinete
+4 grei, sympatisk, hyggelig
+5 vis, kunnskapsrik, forstandig
+6 skjønn, veldig pen, nydelig
+7 engstelig, skremt, bekymret
+8 enkel, mild, ukomplisert
+9 tilfreds, glad,
+10 lang
+
+11 Løsningsord: ________________________________
+
+### 3 HVA SKAL UT?
+
+Hvilket ord passer ikke inn sammen med de andre? Hvorfor?
+
+a) kjærlighet - bord - luft - lys: bord (konkret, de andre ordene er abstrakte)
+
+b) Gustav - Vik - Pedro - Ali ________________________________
+
+c) jente - gutt - søsken - okse ________________________________
+
+d) kopp - krus - glass - tallerken ________________________________
+
+e) lege - lærer - innsjø - rørlegger ________________________________
+
+f) hytte - hus - villa - vei ________________________________
+
+g) eple - frukt - banan - pære ________________________________
+
+h) søster - mor - venninne - kusine ________________________________
+
+i) stor - snill - svær - enorm ________________________________
+
+j) snø - regn - sky - hagl ________________________________
+
+### 4 ADJEKTIV OG SUBSTANTIV
+
+Noen adjektiv brukes ofte sammen med bestemte substantiv. Sett inn adjektivene i rammen i rett form i setningene.
+
+Lytt og gjenta.
+
+Ord i rammen: dypest, interessant, lang, liten, nydelig, tvilsom, vanlig, oppriktig
+
+- Vil du høre min ________________________________ mening? Er du sikker på det?
+
+- For en ________________________________ kake! Har du bakt den selv?
+
+- Ja, dette er virkelig et ________________________________ problem!
+
+- I dag har det vært en helt ________________________________ dag på jobben.
+
+- Nei, jeg blir ikke med på dette. Hele greia er en ________________________________ affære!
+
+- Uff, denne forelesningen var et ________________________________ gjesp, spør du meg!
+
+- Vi sender vår ________________________________ medfølelse i forbindelse med Kirstens bortgang.
+
+- Møtes utenfor kinoen om en ________________________________ time?
+
+### 5 HOMONYMER (1): SÅ
+
+Ordet SÅ kan bety mange ting, og det kan være et *adverb*, et *verb*, en *subjunksjon* eller en *konjunksjon*:
+
+1) adverb: så (gradsadverb): Så høyt! Så fint! Så godt!
+2) adverb: så = deretter, etterpå (tidsadverb): Først spiste de, og så vasket Frida opp.
+3) verb: å se - så (preteritum)
+4) verb: å så = å plante
+5) subjunksjon: så = slik at: Hun tok på seg regntøy så hun ikke skulle bli våt.
+6) konjunksjon: så = derfor: Hun lå og sov, så hun hørte ikke telefonen.
+
+Se på setningene under. Hvilket SÅ bruker vi? Skriv riktig nummer i rutene.
+
+- Så du nyhetene på TV i går? □
+
+- Ja, først så jeg nyhetene, og så så jeg □ □ en film sammen med kona mi.
+
+- Eksamen var vanskelig, så det gikk ikke □ så bra, dessverre.
+
+- Strøk du?
+
+- Ja, jeg gjorde det.
+
+- Uff, så trist! □
+
+- Så fin hage du har! □
+
+- Takk skal du ha! Så hyggelig at du liker □ den! Og se her, her borte skal jeg så □ ringblomster.
+
+- Er du ferdig på badet snart så vi kan gå? □
+
+- Ja, jeg kommer snart.
+
+- Skynd deg litt, da! Du bruker så utrolig □ lang tid! Hva holder du på med, egentlig?
+
+### 6 HOMONYMER (2): STEMME
+
+Ordet STEMME kan bety flere ting:
+
+1) substantiv: en stemme = taleorgan
+2) substantiv: en stemme = en avgjørelse ved et valg
+3) verb: å stemme = å ta en avgjørelse ved et valg
+4) verb: å stemme = å få noe til å bli riktig
+
+Se på setningene under. Hvilket STEMME bruker vi? Skriv riktig nummer i rutene.
+
+a) Politikerne sier alltid at hver eneste stemme teller, men jeg vet ikke om jeg kommer □ til å stemme ved valget til høsten likevel. □
+
+b) Hun har en nydelig stemme. □
+
+c) Kan du hjelpe meg med dette regnestykket? Jeg får det ikke til å stemme. □
+
+d) Kan det stemme at du har vunnet prisen «Årets stemme»? □
+
+### 7 HOMONYMER (3): SKILT
+
+Ordet SKILT kan bety flere ting:
+
+1) substantiv: et skilt = et oppslag, et trafikkskilt
+2) adjektiv: skilt = har vært gift (en sivilstand)
+3) verb: skilt = perfektum partisipp av 'å skille (seg)' = å dele, å gå fra hverandre
+
+Se på setningene under. Hvilket SKILT bruker vi? Skriv riktig nummer i rutene.
+
+a) Fredrik ble skilt i fjor. Han var ganske deprimert en stund, men jeg tror det går bedre nå. □
+
+b) Jeg har ikke brillene på meg. Det står et skilt der borte, ikke sant? Kan du lese hva som står på det? □
+
+c) Vi må sette opp noen skilt her, slik at alle ser at det er røyking forbudt utenfor skolen. □
+
+d) Sausen har skilt seg. Æsj, jeg tror vi bare må kaste den. Vi kan ikke servere dette her! □
+
+### 8 I GODT HUMØR
+
+Noen uttrykk beskriver egenskaper eller tilstander. Disse uttrykkene er ofte predikativer i en setning. Skriv inn uttrykk i riktige setninger. Du kan bare bruke hvert uttrykk én gang.
+
+Lytt og gjenta.
+
+Uttrykk i rammen: fra vettet, i god stand, i godt humør, i slekt med, langt nede, ute av seg, ute å kjøre
+
+a) Even er nesten alltid ________________________________.
+
+b) Tante Petra ble helt ________________________________ da leiligheten hennes brant ned.
+
+c) Visste du at Pedro er ________________________________ Antonio Banderas?
+
+d) TV selges billig! Den er nesten ubrukt og ________________________________.
+
+e) Økonomien i landet er ________________________________ for tida.
+
+f) Jeg tror ikke eksamen går så bra. Jeg er skikkelig ________________________________!
+
+g) Er du ________________________________? Du kan ikke klatre opp her uten sikring!
+
+### 9 METAFORER
+
+Hva betyr det? Sett kryss ved riktig forklaring.
+
+1) Hun fikk øye på ham med det samme hun kom inn i rommet.
+□ Hun fikk noe på øyet.
+□ Hun så ham.
+□ Hun forsto hvordan han hadde det.
+
+2) Det kribler i magen når jeg tenker på ferien vår til sommeren!
+□ Jeg gleder meg til ferien.
+□ Jeg gruer meg til ferien.
+□ Jeg får vondt i magen når jeg tenker på ferien.
+
+3) Kan du gi meg en hjelpende hånd, er du snill?
+□ Kan jeg holde deg i hånda?
+□ Kan du hjelpe meg?
+□ Har du et håndtak?
+
+4) Selv om situasjonen var alvorlig, klarte Simon å holde hodet kaldt.
+□ Simon hadde alt under kontroll.
+□ Situasjonen ga Simon hodepine.
+□ Simon visste ikke hva han skulle gjøre.
+
+5) Kan du ta i et tak her?
+□ Kan du hjelpe meg?
+□ Du kan ta fri.
+□ Kan du hjelpe meg med å reparere taket?
+
+6) Jeg setter jeg virkelig pris på at du kunne komme.
+□ Hva koster det for deg å komme?
+□ Jeg vil gjerne betale deg for at du kom.
+□ Jeg er veldig glad for at du kom.
+
+7) Nå synes jeg at du må ta deg sammen og rydde på rommet ditt.
+□ Vi kan rydde rommet ditt sammen.
+□ Du må skjerpe deg og rydde rommet.
+□ Du kan ta fri, synes jeg.
+
+8) Hva er på gang her, da?
+□ Er gangen langt unna?
+□ Er dette inngangen?
+□ Hva skjer?
+
+9) Jeg tenker så det knaker!
+□ Jeg har vondt i hodet.
+□ Jeg konsentrerer meg veldig mye.
+□ Jeg har problemer med hukommelsen.
+
+10) Firmaet går så det suser for tida.
+□ Det blåser mye i firmaets lokaler.
+□ Firmaet har store problemer.
+□ Firmaet går med overskudd.
+
+11) Hun vil ikke gå glipp av noe.
+□ Hun vil forstå alt som skjer.
+□ Hun holder på å sovne.
+□ Hun er redd for å slippe taket.
+
+12) Jeg kan ikke svare deg på stående fot.
+□ Jeg står på ett bein. Derfor kan jeg ikke svare.
+□ Jeg kan ikke svare deg akkurat nå.
+□ Jeg skal til å gå, så jeg kan ikke svare deg.
+
+13) Søstera mi snakker alltid rett fra leveren.
+□ Søstera mi har problemer med leveren.
+□ Søstera min snakker veldig mye.
+□ Søstera min er veldig ærlig.
+
+14) Bestefar er et oppkomme av historier.
+□ Bestefar finner på mye rart.
+□ Bestefar pleier ofte å lure oss.
+□ Bestefar kan mange historier.
+
+15) Sønnen hennes prater som en foss.
+□ Sønnen hennes snakker hele tida.
+□ Sønnen hennes lyver mye.
+□ Det er vanskelig å forstå hva sønnen hennes sier.
+
+16) Det gjelder å holde tunga beint i munnen.
+□ Man må ikke snakke så mye.
+□ Man må vite hva som er riktig å gjøre.
+□ Det er viktig å ha mange venner.
+
