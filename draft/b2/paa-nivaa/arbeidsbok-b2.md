@@ -3593,3 +3593,87 @@ n) Vokser ukeblader på trær? ________________
 | Jeg kan noen regler for hvilken fugeformativ et sammensatt ord skal ha. *(I know some of the rules for which letter (s, e or nothing) a compound word uses.)* | | |
 | Jeg kan dele opp et sammensatt ord og dermed forklare hva det betyr. *(I can divide a compound word into its parts and explain its meaning.)* | | |
 
+## AVLEDNINGER
+
+### 1 PREFIKS ELLER SUFFIKS?
+
+Ordene under er avledninger. Har ordene blitt laget med prefiks eller suffiks eller begge deler?
+
+a) ulykke: prefiks: u-
+
+b) ulykkelig: ________________________________
+
+c) forstå: ________________________________
+
+d) forståelse: ________________________________
+
+e) samarbeid: ________________________________
+
+f) betale: ________________________________
+
+g) betaling: ________________________________
+
+h) forelske: ________________________________
+
+i) forelskelse: ________________________________
+
+j) ugift: ________________________________
+
+k) utrolig: ________________________________
+
+l) uansvarlig: ________________________________
+
+m) samtidig: ________________________________
+
+### 2 HVA ER DET MOTSATTE?
+
+Bruk prefikser og lag ord som betyr det motsatte.
+
+a) lykke ↔ ________________________________
+
+b) gift ↔ ________________________________
+
+c) forstå ↔ ________________________________
+
+d) trives ↔ ________________________________
+
+e) hell ↔ ________________________________
+
+f) flaks ↔ ________________________________
+
+g) spiselig ↔ ________________________________
+
+### 3 SUFFIKS OG ORDKLASSE
+
+Hvilket suffiks har ordene? Hvilken ordklasse gir disse suffiksene til ordene?
+
+forelskelse: suffiks = -else = substantiv (en)
+
+grenseløs: ________________________________
+
+arbeidsom: ________________________________
+
+hyggelig: ________________________________
+
+kostnad: ________________________________
+
+syltetøy: ________________________________
+
+alvorlig: ________________________________
+
+forfatterskap: ________________________________
+
+visjonær: ________________________________
+
+aktiv: ________________________________
+
+rikdom: ________________________________
+
+trygghet: ________________________________
+
+fordelaktig: ________________________________
+
+ressursvak: ________________________________
+
+verdifull: ________________________________
+
