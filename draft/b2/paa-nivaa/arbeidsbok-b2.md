@@ -3232,3 +3232,89 @@ ________________________________
 ➜ Det er et årsaksforhold mellom handlingene: ________________________________
 ________________________________
 
+c) Ministeren ble ikke tatt seriøst. Han hadde deltatt i et underholdningsprogram.
+
+➜ Handlingene skjer etter hverandre i tid: ________________________________
+________________________________
+
+➜ Det er et årsaksforhold mellom handlingene: ________________________________
+________________________________
+
+d) Legen mistet jobben. Han hadde brutt taushetsplikten.
+
+➜ Handlingene skjer etter hverandre i tid: ________________________________
+________________________________
+
+➜ Det er et årsaksforhold mellom handlingene: ________________________________
+________________________________
+
+### 8 SAMMENHENG (2)
+
+Hva kan være konteksten for disse utsagnene? Sett kryss.
+
+a) Går du ut hvis det regner?
+☐ Det øser ned, og du er på vei ut.
+☐ Jeg vil vite om du er villig til å gå ut i regnvær.
+☐ Jeg er forbauset over at du aldri går ut.
+
+b) Går du ut selv om det regner?
+☐ Det øser ned, og du er på vei ut.
+☐ Jeg vil vite om du er villig til å gå ut i regnvær.
+☐ Jeg er forbauset over at du aldri går ut.
+
+c) Jeg vil ikke snakke med deg når du er i det humøret!
+☐ Jeg legger vekt på at vi ikke er gode venner.
+☐ Du er sint og irritert og sier kanskje ting du ikke mener.
+☐ Jeg klager på at det er lenge siden vi har snakket sammen.
+
+d) I dag kom du før jeg ventet deg!
+☐ Jeg synes at du er tidlig ute.
+☐ Jeg klager på at du alltid kommer for seint.
+☐ Jeg vil påpeke at det er viktig å være presis.
+
+e) Du må kjøre idet det blir grønt, ikke lenge etterpå!
+☐ Jeg synes du er en flink sjåfør og vil rose deg.
+☐ Jeg er redd for å sitte på med deg.
+☐ Jeg klager på kjøringen din og synes at du er for treg.
+
+### 9 SAMMENLIKNING
+
+Sett inn rett ord i setningene: *som* eller *enn*.
+
+a) Det er kaldere i dag ________ i går. Jeg håper ikke denne sommeren blir like kald ________ den vi hadde i fjor!
+
+b) Det bor nesten dobbelt så mange mennesker i Sverige ________ i Norge. Og selv om Danmark er mye, mye mindre ________ Norge i areal, bor det omtrent like mange mennesker i Norge ________ i Danmark.
+
+c) Hvordan går det med dattera di på universitetet? Klarer hun seg like godt ________ hun gjorde på videregående? Da fikk hun jo bedre karakterer ________ alle de andre i klassen, hørte jeg!
+
+d) Hvordan trives dere? Liker dere dere bedre her ________ der dere bodde før?
+
+e) Denne ferien ble bedre ________ jeg hadde forventet. Vi har hatt det nesten like moro ________ vi hadde det på ferien i London.
+
+f) Sønnen deres er høyere ________ jeg hadde trodd. Jeg ble overrasket da jeg så ham. Han er jo snart like høy ________ faren sin!
+
+g) Tror du at det er vanskeligere å lære norsk ________ å lære engelsk? Engelsk er omtrent like komplisert ________ norsk, ja, hvis vi sammenlikner grammatikken i de to språkene, da.
+
+### 10 KJENTE NORDMENN: MAGNUS CARLSEN
+
+Sett inn subjunksjoner som passer i teksten om Magnus Carlsen.
+
+Magnus Carlsen er en norsk sjakkspiller ________ ble verdensmester i sjakk for første gang i november 2013. Han er den mest berømte sjakkspilleren i Norge, og for tida kanskje også i verden? Carlsen forsvarte mestertittelen i 2014, 2016 og 2018, i tillegg til ________ han har vunnet VM i lynsjakk og hurtigsjakk en rekke ganger.
+
+Magnus viste tidlig ________ han likte intellektuelle utfordringer. Han deltok i sitt første norgesmesterskap i sjakk ________ han var åtte, nesten ni år. Etter det begynte han å spille i flere turneringer, og ________ han var 13 år, 4 måneder og 26 dager, ble han stormester i sjakk. Det er en tittel ________ tildeles av Verdenssjakkforbundet.
+
+________ han hadde fullført barneskolen, tok Magnus fri i et år for å spille sjakk på ulike turneringer rundt om i Europa. Magnus gikk på toppidrettsgymnaset i Bærum, og ________ han var 17 år, ble han rangert som en av verdens ti beste sjakkspillere.
+
+*(Kilde: wikipedia.org)*
+
+### KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan binde sammen setninger med nominale subjunksjoner.<br>*(I can combine sentences with nominal subordinating conjunctions.)* | | |
+| Jeg kan binde sammen setninger med adjektivisk subjunksjon.<br>*(I can combine sentences with adjective subordinating conjunctions.)* | | |
+| Jeg kan bruke de mest frekvente adverbiale subjunksjonene riktig.<br>*(I can use the most frequent adverbial subordinating conjunctions correctly.)* | | |
+| Jeg kan plassere nominale leddsetninger først i helsetningen.<br>*(I can begin a complete sentence with a nominal subordinated clause.)* | | |
+| Jeg kan plassere adverbiale leddsetninger først i helsetningen.<br>*(I can begin a complete sentence with an adverbial subordinated clause.)* | | |
+| Jeg vet hva de fleste adverbiale subjunksjonene betyr på mitt morsmål.<br>*(I know what most of the adverbial subordinating conjunctions mean in my language.)* | | |
+
