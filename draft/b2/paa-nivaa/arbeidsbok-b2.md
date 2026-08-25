@@ -3813,3 +3813,97 @@ l) forståelsesfull = ________________________________
 
 m) forståelig = ________________________________
 
+### 10 ORDFAMILIER
+
+Sett ordene i ordskyen i riktig kolonne.
+
+Ord i ordskyen: nymalt, slå, skrift, forståelsesfull, forstå, lærer, skriftlig, muntlig, lærerik, hjelpsom, blodig, blø, student, munn, se, male, blod, hørsel, høre, maling, slag, skrive, hjelpe, hjelp, forståelig
+
+| SUBSTANTIV | VERB | ADJEKTIV |
+| --- | --- | --- |
+| | | |
+
+### 11 SUBSTANTIV, VERB ELLER ADJEKTIV?
+
+Skriv inn rett ord i dialogene. Husk å bøye ordene.
+
+**en økonomi - økonomisk**
+
+- Hvordan er ________________________________ deres?
+
+- Ikke så bra. Den ________________________________ situasjonen er vanskelig for tida.
+
+- Ja, mange sliter med ________________________________ for tida, har jeg hørt.
+
+- Det stemmer.
+
+**en høyde - høy**
+
+- Nå skal vi måle ________________________________ din. Kan du stå her?
+
+- Ja. Sånn?
+
+- Det er fint, ja. Skal vi se … Du er 1,34 centimeter ________________________________.
+
+**en mekaniker - mekanisk**
+
+- Jeg vil bli ________________________________.
+
+- Sier du det? Hvor skal du arbeide da?
+
+- Jeg vil arbeide på et ________________________________ verksted. Da kan jeg skru på ting hele dagen!
+
+**et ansvar - ansvarlig**
+
+- Hvem er ________________________________ for å kjøpe inn kopper til kaffeautomaten?
+
+- Jeg vet ikke. Jeg kan gjerne ta ________________________________ for det, jeg.
+
+- Kan du? Det hadde vært supert! Da er det ditt ________________________________ fra nå av.
+
+- Det er greit.
+
+**å søke - en søknad**
+
+- Skal du ________________________________ den utlyste stillingen som avdelingsleder?
+
+- Ja, jeg har allerede levert ________________________________ min.
+
+**å kjøpe - et kjøp**
+
+- Skal vi ________________________________ den sofaen som her?
+
+- Ja, hvorfor ikke? Jeg tror at det er et godt ________________________________.
+
+**kjærlig - en kjæreste**
+
+Lotte og Nils har blitt ________________________________. De er så ________________________________ mot hverandre at det er en fryd å se.
+
+**å tvile - en tvil**
+
+Jeg har mine ________________________________ om at det han sier, er sant. Han er kjent for å smøre tjukt på, så det er ikke så rart om jeg ________________________________ på det han sier.
+
+**å hoppe - hoppende**
+
+Haren kom ________________________________ over marka. Det er helt utrolig hvor fort harer kan ________________________________!
+
+**en økonomi - økonomisk**
+
+________________________________ vår er ganske dårlig for tida. Jeg tror vi trenger ________________________________ hjelp.
+
+**å hjelpe - hjelpsom**
+
+Sønnen min har reist for ________________________________ besteforeldrene sine. De er glade for at han alltid er så ________________________________ og har tid til ________________________________ dem.
+
+### 12 VERBALSUBSTANTIV
+
+Verbalsubstantiv kan være *personen* som gjør verbet (en maler) eller *sak*. Saken kan for eksempel være *resultatet* av handlingen (et maleri) eller *det man bruker* for å gjøre handlingen (en maling).
+
+Sett substantivene i ordskyen i rett kolonne. Husk artikkel.
+
+Ord i ordskyen: seer, dom, leder, dommer, syn, begynnelse, trening, salg, leser, læring, trener, guiuns, ledelse, arbeider, baker, tviler, selger, tvil, lærer, baking
+
+| PERSON | SAK |
+| --- | --- |
+| | |
+
