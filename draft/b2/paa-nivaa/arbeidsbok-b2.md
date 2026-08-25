@@ -3677,3 +3677,139 @@ ressursvak: ________________________________
 
 verdifull: ________________________________
 
+### 4 VERBAVLEDNINGER
+
+Finnes disse verbene på norsk? Sett kryss ved verbene som finnes.
+
+a) samordne
+b) beorke
+c) bedra
+d) angå
+e) befordre
+f) betale
+g) anvente
+h) medgi
+i) medlyse
+j) fortelle
+k) forstå
+l) medfylle
+m) forgå
+n) forsnakke
+o) anstråle
+p) forgripe
+q) beskrike
+r) belyse
+s) informere
+t) introdusere
+u) invertere
+v) forhøre
+w) anløpe
+x) medgreie
+
+### 5 Å SNEKRE – EN SNEKKER
+
+Fyll ut tabellen.
+
+| | VERB | SUBSTANTIV |
+| --- | --- | --- |
+| a) | å snekre | |
+| b) | å fiske | |
+| c) | | et syn |
+| d) | | en hørsel |
+| e) | | en maler |
+| f) | å bygge | |
+| g) | å håpe | |
+| h) | | en tvil |
+| i) | å trene | |
+| j) | å lære | |
+
+### 6 Å GLEMME – GLEMSOM
+
+Fyll ut tabellen.
+
+| | VERB | ADJEKTIV |
+| --- | --- | --- |
+| a) | å glemme | |
+| b) | å sulte | |
+| c) | | forståelsesfull |
+| d) | | bærbar |
+| e) | | lesbar |
+| f) | å produsere | |
+| g) | | spiselig |
+| h) | å blø | |
+| i) | å lede | |
+| j) | | rasende |
+
+### 7 EN STEIN – STEINETE
+
+Fyll ut tabellen.
+
+| | SUBSTANTIV | ADJEKTIV |
+| --- | --- | --- |
+| a) | en stein | |
+| b) | en visjon | |
+| c) | en ungdom | |
+| d) | | blodig |
+| e) | | vanskelig |
+| f) | en hjelp | |
+| g) | et arbeid | |
+| h) | en gift | |
+| i) | | isete |
+| j) | | kremaktig |
+| k) | | fantasifull |
+| l) | en idé | |
+
+### 8 HVA BETYR DET? (1)
+
+Forklar hva substantivene betyr.
+
+a) hørsel = ________________________________
+
+b) galskap = ________________________________
+
+c) fattigdom = ________________________________
+
+d) kjøretøy = ________________________________
+
+e) vaskeri = ________________________________
+
+f) matlaging = ________________________________
+
+g) produksjon = ________________________________
+
+h) ledelse = ________________________________
+
+i) maleri = ________________________________
+
+j) trussel = ________________________________
+
+### 9 HVA BETYR DET? (2)
+
+Forklar hva adjektivene betyr.
+
+a) fantasifull = ________________________________
+
+b) verdiløs = ________________________________
+
+c) formmessig = ________________________________
+
+d) blodig = ________________________________
+
+e) klorholdig = ________________________________
+
+f) kalorifattig = ________________________________
+
+g) grenseløs = ________________________________
+
+h) leselig = ________________________________
+
+i) solrik = ________________________________
+
+j) rotete = ________________________________
+
+k) informativ = ________________________________
+
+l) forståelsesfull = ________________________________
+
+m) forståelig = ________________________________
+
