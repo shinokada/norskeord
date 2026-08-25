@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.69.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added Norwegian learning articles covering common grammar, vocabulary, and word distinctions.
+    - Added cooking and kitchen vocabulary and expressions from A1 through B2.
+    - Added guidance on review intensity and how it affects flashcard scheduling in multiple languages.
+  - **Improvements**
+    - Improved flashcard pronunciation by prioritizing vocabulary lemmas.
+    - Improved blog filter navigation and added a review-intensity FAQ entry.
+  - **Bug Fixes**
+    - Corrected numerous Norwegian spelling, accent, spacing, and example-text errors.
+
 ## 2.68.0
 
 ### Minor Changes
