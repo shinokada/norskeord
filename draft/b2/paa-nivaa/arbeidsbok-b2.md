@@ -3901,9 +3901,51 @@ Verbalsubstantiv kan være *personen* som gjør verbet (en maler) eller *sak*. S
 
 Sett substantivene i ordskyen i rett kolonne. Husk artikkel.
 
-Ord i ordskyen: seer, dom, leder, dommer, syn, begynnelse, trening, salg, leser, læring, trener, guiuns, ledelse, arbeider, baker, tviler, selger, tvil, lærer, baking
+Ord i ordskyen: seer, dom, leder, dommer, syn, begynnelse, trening, salg, leser, læring, trener, [uklart ord], ledelse, arbeider, baker, tviler, selger, tvil, lærer, baking
 
 | PERSON | SAK |
 | --- | --- |
 | | |
+
+### 13 ORDLAGING AV PARTIKKELVERB
+
+Forklar hva de **markerte** ordene i setningene betyr.
+
+Hvilket partikkelverb (løst eller fast sammensatt) er ordet laget av? Skriv riktig nummer ved siden av setningene.
+
+1) delta
+2) oppdra
+3) underskrive
+4) avdra
+5) selge ut
+6) nedkomme
+7) flytte inn
+8) vaske opp
+
+a) Når er **nedkomstdatoen** din? = ________________________________
+
+b) I morgen starter **utsalgsfinalen**. = ________________________________
+
+c) Tusen takk for **innflytningspresangen**! = ________________________________
+
+d) Vil du delta i denne **underskriftskampanjen**? = ________________________________
+
+e) Synes du **oppdragerrollen** er vanskelig? = ________________________________
+
+f) Dette lånet er **avdragsfritt** de fem første årene. = ________________________________
+
+g) Jeg kan ikke se at du har betalt **deltakeravgiften**. = ________________________________
+
+h) Vi må kjøpe ny **oppvaskmaskin**. = ________________________________
+
+## KAN DU DET?
+
+| Oppgave | Jeg kan det. | Jeg må øve mer. |
+| --- | --- | --- |
+| Jeg kan forstå betydningen av noen vanlige prefikser på norsk, slik som *u-, mis-* og *sam-*. *(I can understand the meanings of some common prefixes in Norwegian, such as u-, mis- and sam-.)* | | |
+| Jeg kan noen vanlige suffikser for å lage substantiv. *(I know a few common suffixes that create nouns.)* | | |
+| Jeg kan noen vanlige suffikser for å lage adjektiv. *(I know a few common suffixes that create adjectives.)* | | |
+| Jeg kan kjenne igjen ord fra samme ordfamilie hvis grunnordet er kjent for meg. *(I can recognize words that belong to the same family if the basic word is known to me.)* | | |
+| Jeg kan skille mellom et verbalsubstantiv som forteller om en person og et verbalsubstantiv som forteller om en prosess, et resultat eller en ting. *(I can distinguish between a verbal noun that describes a person and one that describes a process, result or thing.)* | | |
+| Jeg kan forstå sammensatte ord som er laget av partikkelverb hvis de andre ordene i sammensetningen er kjent for meg. *(I can understand compound words formed from a phrasal verb if the surrounding words are known to me.)* | | |
 
