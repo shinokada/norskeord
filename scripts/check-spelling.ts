@@ -44,8 +44,7 @@ const NORSK_FIELDS = ['norsk', 'lemma', 'example', 'definition', 'note'];
 
 // Markers that legitimately appear in norsk/lemma but aren't Norwegian words —
 // stripped before tokenizing so they don't need to live in the allowlist.
-const MARKER_PATTERN =
-  /\((en\/ei\/et|en\/ei|en\/et|en\/men|en|et|ei|b\.pl\.|pl\.|ubøy\.)\)/gi;
+const MARKER_PATTERN = /\((en\/ei\/et|en\/ei|en\/et|en\/men|en|et|ei|b\.pl\.|pl\.|ubøy\.)\)/gi;
 
 // ── CLI args ──────────────────────────────────────────────────────────────────
 
@@ -129,7 +128,9 @@ function checkFile(filename: string) {
   }
 
   const status = fileFlagCount === 0 ? '✅' : '⚠️ ';
-  console.log(`${status}  ${filename}  (${entries.length} entries) — ${fileFlagCount} flagged word(s)`);
+  console.log(
+    `${status}  ${filename}  (${entries.length} entries) — ${fileFlagCount} flagged word(s)`
+  );
 }
 
 console.log('Norwegian spelling check (nb Hunspell dictionary)');
