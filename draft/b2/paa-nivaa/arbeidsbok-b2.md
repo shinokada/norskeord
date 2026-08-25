@@ -3568,3 +3568,28 @@ e) Er det reker i rekesalat? ________________
 
 f) Suger en støvsuger støv? ________________
 
+g) Er gitarkasse en type gitar? ________________
+
+h) Er en trekrone toppen av et tre? ________________
+
+i) Kan oversvømmelser svømme? ________________
+
+j) Er en avisholder det samme som en abonnent? ________________
+
+k) Er målmann det samme som keeper? ________________
+
+l) Er det tillatt å sitte i en sovesofa? ________________
+
+m) Er frokostblanding en blanding av frokoster? ________________
+
+n) Vokser ukeblader på trær? ________________
+
+## KAN DU DET?
+
+| Oppgave | Jeg kan det. | Jeg må øve mer. |
+| --- | --- | --- |
+| Jeg vet at etterleddet i et sammensatt ord bestemmer ordets ordklasse og bøyning. *(I know that the last part of a compound word defines the word's part of speech and its declension.)* | | |
+| Jeg vet at forleddet i et sammensatt ord vanligvis fungerer som en beskrivelse av etterleddet. *(I know that the first part of a compound word normally provides a description of the last word.)* | | |
+| Jeg kan noen regler for hvilken fugeformativ et sammensatt ord skal ha. *(I know some of the rules for which letter (s, e or nothing) a compound word uses.)* | | |
+| Jeg kan dele opp et sammensatt ord og dermed forklare hva det betyr. *(I can divide a compound word into its parts and explain its meaning.)* | | |
+
