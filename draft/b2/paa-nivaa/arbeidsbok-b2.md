@@ -3318,3 +3318,253 @@ ________ han hadde fullført barneskolen, tok Magnus fri i et år for å spille 
 | Jeg kan plassere adverbiale leddsetninger først i helsetningen.<br>*(I can begin a complete sentence with an adverbial subordinated clause.)* | | |
 | Jeg vet hva de fleste adverbiale subjunksjonene betyr på mitt morsmål.<br>*(I know what most of the adverbial subordinating conjunctions mean in my language.)* | | |
 
+## KAPITTEL 2 ORDLAGING
+
+## SAMMENSATTE ORD
+
+### 1 FORLEDD OG ETTERLEDD (1)
+
+Hva er etterleddet i disse sammensatte ordene?
+
+Hvilken ordklasse (og bøyning) har etterleddet?
+
+a) bruktbutikk: ________________________________
+
+b) sofapute: ________________________________
+
+c) gardinstang: ________________________________
+
+d) lysestake: ________________________________
+
+e) sovesal: ________________________________
+
+f) adgangskort: ________________________________
+
+g) skogbunn: ________________________________
+
+h) burgunderrød: ________________________________
+
+i) lyseblå: ________________________________
+
+j) verdifull: ________________________________
+
+k) underskrive: ________________________________
+
+l) overtale: ________________________________
+
+### 2 FORLEDD OG ETTERLEDD (2)
+
+Hva er forleddet i disse sammensatte ordene?
+
+> Bildeeksempler: gravemaskin, fjellgeit
+
+a) utsiktspunkt: ________________________________
+
+b) grusvei: ________________________________
+
+c) makspris: ________________________________
+
+d) etterledd: ________________________________
+
+e) dropspose: ________________________________
+
+f) tørkestativ: ________________________________
+
+g) gammeldags: ________________________________
+
+h) gravemaskin: ________________________________
+
+i) arbeidsklær: ________________________________
+
+j) fjellgeit: ________________________________
+
+k) overflate: ________________________________
+
+### 3 HVOR MANGE ORD?
+
+Hvor mange ord er disse sammensatte ordene laget av?
+
+Del opp ordene og identifiser det endelige etterleddet (det som bestemmer ordets ordklasse og bøyning).
+
+a) vaskemaskinpulver = ________________________________
+➜ Endelig etterledd: ________________________________
+
+b) sengetøyutsalg = ________________________________
+➜ Endelig etterledd: ________________________________
+
+c) arbeidsgiverforeningsmøte = ________________________________
+➜ Endelig etterledd: ________________________________
+
+d) bildelbutikk = ________________________________
+➜ Endelig etterledd: ________________________________
+
+e) brødbakemaskin = ________________________________
+➜ Endelig etterledd: ________________________________
+
+f) lysstoffrør = ________________________________
+➜ Endelig etterledd: ________________________________
+
+g) hjørnesteinsbedrift = ________________________________
+➜ Endelig etterledd: ________________________________
+
+h) miljøvernbevegelse = ________________________________
+➜ Endelig etterledd: ________________________________
+
+i) inngangsbillett = ________________________________
+➜ Endelig etterledd: ________________________________
+
+j) livsstilssykdom = ________________________________
+➜ Endelig etterledd: ________________________________
+
+k) barnehageplassfordelingsmøte = ________________________________
+➜ Endelig etterledd: ________________________________
+
+l) blodsukkermåler = ________________________________
+➜ Endelig etterledd: ________________________________
+
+### 4 HVA BETYR DET?
+
+Forklar de sammensatte ordene.
+
+a) trebenk = ________________________________
+
+b) matjord = ________________________________
+
+c) familieliv = ________________________________
+
+d) naturressurs = ________________________________
+
+e) vindmølle = ________________________________
+
+f) retningslinje = ________________________________
+
+g) overvåke = ________________________________
+
+h) stemmerett = ________________________________
+
+i) halvpart = ________________________________
+
+j) tredjedel = ________________________________
+
+k) vannkraft = ________________________________
+
+l) naturvern = ________________________________
+
+m) fredsmekler = ________________________________
+
+n) morsmål = ________________________________
+
+o) undergang = ________________________________
+
+p) dyrehage = ________________________________
+
+q) kaffemaskin = ________________________________
+
+r) adgangskort = ________________________________
+
+s) medlemskontingent = ________________________________
+
+t) stupebrett = ________________________________
+
+### 5 OVERFØRT BETYDNING
+
+Noen ganger bruker vi sammensatte ord i en overført (metaforisk) betydning.
+
+Sett strek mellom ord og betydning.
+
+Ord:
+
+a) en linselus
+
+b) en plageånd
+
+c) et hekseskudd
+
+d) ei lommebok
+
+e) et levebrød
+
+Betydninger (i tilfeldig rekkefølge):
+
+- En person som er ekkel mot andre, som man ikke blir kvitt
+- Et yrke, en jobb, noe som gir inntekter
+- En person som alltid vil være med på bilder
+- En plutselig smerte i ryggen
+- En liten mappe som man kan oppbevare penger i
+
+### 6 ANANAS RINGER ELLER ANANASRINGER?
+
+Sett kryss ved det som er rett.
+
+a) ☐ reise veske
+
+b) ☐ sminkebord
+
+c) ☐ nedgang
+
+d) ☐ opp tur
+
+e) ☐ lese sal
+
+f) ☐ røykskader
+
+g) ☐ håndkrem
+
+h) ☐ verdens berømt
+
+i) ☐ hund biter
+
+j) ☐ sommer vær
+
+k) ☐ påskevarer
+
+l) ☐ fly letter
+
+### 7 FUGEFORMATIV?
+
+Lag sammensatte ord. Hvilken fugeformativ må disse ordene ha når de settes sammen?
+
+Hva betyr ordene?
+
+a) barn + vogn: ________________________________
+
+b) data + maskin: ________________________________
+
+c) motor + båt: ________________________________
+
+d) vin + flaske: ________________________________
+
+e) garderobe + skap: ________________________________
+
+f) arbeid + dag: ________________________________
+
+g) skog + arbeider: ________________________________
+
+h) kjønn + forskjell: ________________________________
+
+i) næring + rik: ________________________________
+
+j) folk + gruppe: ________________________________
+
+k) skrift + språk: ________________________________
+
+l) kostnad + effektiv: ________________________________
+
+m) frokost + blanding: ________________________________
+
+### 8 GÅR DET AN? (2)
+
+Svar ja eller nei.
+
+a) Kan terrassedører dø? ________________
+
+b) Kan man sy klær av lesestoff? ________________
+
+c) Er en spiseskje større enn en teskje? ________________
+
+d) Kan man bo i et sandslott? ________________
+
+e) Er det reker i rekesalat? ________________
+
+f) Suger en støvsuger støv? ________________
+
