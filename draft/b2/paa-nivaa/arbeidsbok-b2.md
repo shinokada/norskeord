@@ -60,14 +60,6 @@ Sett inn stor eller liten bokstav, punktum og komma.
 
 _______________________________________________
 
-_______________________________________________
-
-_______________________________________________
-
-_______________________________________________
-
-_______________________________________________
-
 ### 3 HANKJØNN, HUNKJØNN ELLER INTETKJØNN?
 
 Her er 20 substantiv. Hvilket kjønn har substantivene? Sett inn ubestemt artikkel: *en, ei* eller *et*. Kan noen av substantivene ha både artikkel *en* og artikkel *ei*?
@@ -1985,4 +1977,214 @@ Hvilken ordklasse er det **markerte** ordet? Hvilket partikkelverb (løst eller 
 | n) | Hva mener du om **påstandene** hans? | | |
 | o) | Har du hilst på hans **tilkommende**? | | |
 | p) | Hun skrev under med **påholden** penn. | | |
+
+### 26 PARTIKKEL OG PARTISIPP
+
+Lag fast sammensatt perfektum partisipp av disse partikkelverbene og bruk partisippene i setningene.
+
+**å si opp**
+
+De ________________________________ arbeiderne har varslet aksjoner.
+
+Han ble ________________________________ på dagen.
+
+**å vende om**
+
+Nei, det er ikke sånn det er! Det er ________________________________!
+
+Etter at han ble ________________________________, har han gått i kirka flere ganger i uka.
+
+**å sende inn**
+
+Det har skjedd en feil, og ikke alle de ________________________________ svarene kom med i trekningen, dessverre.
+
+**å slite ut**
+
+Alle klærne hans er ________________________________.
+
+Klærne er så ________________________________ at vi ikke kan levere dem på Fretex.
+
+Jeg har arbeidet i hagen hele dagen, og nå er jeg helt ________________________________, særlig i ryggen.
+
+**å bruke opp**
+
+Spar på kreftene, så de ikke blir ________________________________ i starten av løpet.
+
+Nå er tålmodigheten min ________________________________, og det er like før jeg sprekker!
+
+All 4G-en min er ________________________________. Kan jeg få mer?
+
+### 27 LØST ELLER FAST SAMMENSATT PARTIKKELVERB?
+
+Fire av disse setningene fungerer ikke. Hvilke? Sett kryss.
+
+☐ Har du oppsagt leiligheten din?
+
+☐ Parkering er kun tillatt på oppmerkete plasser.
+
+☐ Hun er skikkelig dårlig og har oppkastet flere ganger i dag.
+
+☐ Han følte seg fullstendig overkjørt i diskusjonen.
+
+☐ Har du endelig innsett at du må lese mer?
+
+☐ Dette firmaet tilhører i Bergen.
+
+☐ Oldemora mi fikk elleve barn, men bare åtte av dem oppvokste.
+
+Hvordan må setningene som er feil, være? Skriv setningene korrekt her:
+
+________________________________
+
+________________________________
+
+________________________________
+
+________________________________
+
+### 28 KJENTE NORDMENN: INGRID ESPELID HOVIG
+
+Sett verbene i rammen i rett form på rett sted i teksten.
+
+ansette · fylle · føde · få · gi · ha · hedre · huske · lage · reise · tilberede · utdanne · vise · vokse · være
+
+Ingrid Espelid Hovig ble ________________ på Askøy utenfor Bergen i 1924. Etter å ha ________________ seg innenfor husstell, ________________ hun land og strand rundt og demonstrerte hvordan man kunne ________________ næringsrik, sunn og billig mat. Så ble hun ________________ i NRK. Der ________________ hun ansvar for TV-kjøkkenprogrammer. Programmene ble veldig populære. Hovig ________________ flink til å presentere matlaging på en enkel måte. Dessuten ________________ hun sin egen stil. Alle som har ________________ opp med Hovigs programmer, ________________ at alt ble *fenomenalt godt*. Hun måtte ofte lage i stand maten på forhånd for å få ________________ alt, og da sa hun: *Og no har eg juksa litt!* Hovig har ________________ ut mange kokebøker, og den smårutete kokeboka hennes finnes i mange norske hjem. Da Hovig ________________ 90 år, ble hun ________________ med en kokebok med 90 retter ________________ av nasjonale og internasjonale kokker, som Jamie Oliver, Gordon Ramsey og Arne Brimi - for å nevne noen. Ingrid Espelid Hovig døde 3. august 2018, 94 år gammel.
+
+(Kilde: Blant annet https://no.wikipedia.org/wiki/Ingrid_Espelid_Hovig, https://nbl.snl.no/Ingrid_Espelid_Hovig)
+
+### KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan veksle mellom presens og preteritum på riktig måte når jeg snakker eller skriver.<br>*(I can switch between the present and past tenses in an adequate way when I speak or write.)* | | |
+| Jeg kan bruke presens perfektum riktig i enkle kontekster for presens perfektum.<br>*(I can use the present perfect correctly in simple contexts for present perfect.)* | | |
+| Jeg kan identifisere hva som er det finitte verbet og det infinitte verbet i en setning.<br>*(I can identify what is the finite verb and the nonfinite verb in a sentence.)* | | |
+| Jeg kan skrive om setninger fra aktiv til passiv.<br>*(I can convert simple sentences from the active form to the passive form.)* | | |
+| Jeg kan skrive om setninger fra passiv til aktiv.<br>*(I can convert simple sentences from the passive form to the active form.)* | | |
+| Jeg kan bruke presens partisipp som adjektiv og som adverb.<br>*(I can use the present participle as an adjective and an adverb.)* | | |
+| Jeg kan bruke perfektum partisipp som adjektiv.<br>*(I can use the past participle as an adjective.)* | | |
+
+---
+
+## ADVERB
+
+### 1 ADVERB ELLER ADJEKTIV?
+
+Se på de **markerte** ordene i teksten. Er det *adverb* eller *adjektiv*?
+
+**SJUENDE FAR I HUSET**
+
+Det var en gang en vandringsmann som var **ute** og gikk. **Så** kom han til en **stor** gård. Han var sulten og **trøtt**. Utenfor gården sto det en mann.
+
+«God kveld», sa vandringsmannen. «Kan jeg sove her i natt?»
+
+«Jeg er **ikke** far i huset», svarte mannen. «Gå **inn** og snakk med faren min. Han sitter på kjøkkenet.»
+
+Vandringsmannen gikk inn på kjøkkenet. **Der** satt det en gammel mann.
+
+«God kveld», sa vandringsmannen. «Kan jeg sove her i natt?»
+
+«Jeg er ikke far i huset», svarte mannen. «Gå inn i stua og snakk med faren min.»
+
+**Dermed** gikk vandringsmannen inn i stua. Der satt det en gammel mann og leste i ei **tykk** bok.
+
+«God kveld», sa vandringsmannen. «Kan jeg sove **her** i natt?»
+
+«Å nei, jeg er ikke far i huset», svarte den gamle mannen. «Snakk med faren min. Han ligger i senga.»
+
+Vandringsmannen gikk **bort** til senga. Der lå det en **veldig** gammel mann.
+
+«God kveld», sa vandringsmannen. «Kan jeg sove her i natt?»
+
+«Hæ?» sa mannen i senga.
+
+«God kveld», sa vandringsmannen **høyt** en gang til. «Kan jeg sove her i natt?»
+
+«Å», svarte mannen i senga. «Du må snakke med faren min. Han ligger i vogga der **inne**.»
+
+Vandringsmannen ble veldig **forbauset**, men han gikk inn i rommet ved siden av. Der sto det ei vogge. I vogga lå det en veldig, veldig **gammel** mann.
+
+«God kveld», sa vandringsmannen. «Kan jeg sove her i natt?»
+
+Det tok **lang** tid før mannen svarte. Til slutt pep han:
+
+«Du må snakke med faren min. Han henger i hornet der **oppe** på veggen!»
+
+Vandringsmannen så opp på veggen. Der hang det et **lite** horn. I det lille hornet lå det en bitte liten mann.
+
+Vandringsmannen ropte **opp** til mannen i hornet:
+
+«God kveld, far! Jeg er sulten og **trøtt**. Jeg har gått **langt**. Kan jeg sove her i natt?»
+
+En **lang** stund hørte ikke vandringsmannen noe, men så kom det et pip fra hornet:
+
+«Ja, barnet mitt!»
+
+**Først** kom det inn et bord med mye **god** mat. Vandringsmannen spiste **fort**, for han var veldig **sulten**. **Så** kom det inn ei seng til vandringsmannen. Ja, **endelig** fant han den som var far i huset!
+
+*(Etter Asbjørnsen og Moe: Samlede eventyr (første bind), Den norske bokklubben 1982, 2. opplag, tilrettelagt av forfatteren)*
+
+Svar (adverb eller adjektiv):
+
+ute ________________
+
+så ________________
+
+stor ________________
+
+trøtt ________________
+
+ikke ________________
+
+inn ________________
+
+der ________________
+
+god ________________
+
+dermed ________________
+
+tykk ________________
+
+her ________________
+
+bort ________________
+
+veldig ________________
+
+høyt ________________
+
+inne ________________
+
+inne ________________
+
+forbauset ________________
+
+gammel ________________
+
+lang ________________
+
+oppe ________________
+
+lite ________________
+
+opp ________________
+
+trøtt ________________
+
+langt ________________
+
+lang ________________
+
+først ________________
+
+god ________________
+
+fort ________________
+
+sulten ________________
+
+så ________________
+
+endelig ________________
 
