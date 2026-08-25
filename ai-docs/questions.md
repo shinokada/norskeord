@@ -8,6 +8,14 @@ svelte mcp server is running.
 
 You can find db schema in supabase/current-schema.sql, current-functions.sql and current-cron-push-notification.sql. You can find all the db migration files in supabase/migrations directory.
 
+---
+
+In a previous session we created scripts/check-spelling.ts and I'm working on check-spelling-c-vocab.txt and scripts/outputs/check-spelling-c-vocab-fix.md and you can find check-spelling-c-vocab-changelog.md for all the change so far.
+The following/attached is from previous sessions. Continue where you left.
+
+ME:
+
+CLAUDE:
 
 ---
 
@@ -23,11 +31,13 @@ Note the followings:
 The attached is from the previous session. Continue where you left.
 
 ---
+
 Transcribe attached Norwegian image(s) to markdown. Ignore any illustrations and hand-writings.
 The images are HEIC files.
 
-Transcribe attached Norwegian image(s) to markdown and append it to /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/c/i-samme-baat-arbeidsbok/questions.md.
-Transcribe attached images without fill up or write answers. 
+Transcribe attached Norwegian image(s) to markdown and append only the content to /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/paa-nivaa/arbeidsbok-b2.md.
+
+Transcribe attached images without fill up or write answers.
 Ignore images, illustrations, image captions, and hand-writing.
 
 ---
@@ -36,7 +46,6 @@ Ignore images, illustrations, image captions, and hand-writing.
 - For mobile, bottom navigation can be used?
 - Mobile check
 - How about Start free button rather than login?
-
 
 ## Vocab AI conversion
 
@@ -73,8 +82,6 @@ Format:
 8. Fill up lemma with a dictionary form of `norsk` field with out `(en)`, `(et)`, `(en/ei)` or `å`, etc. Only one word if it is not a expression (more than one word).
 9. If norsk is an expression, the `norsk` and `lemma` fields are the same without any `(xx)`.
 
-
-
 ME:
 
 CLAUDE:
@@ -146,77 +153,3 @@ CLAUDE:
 ME:
 
 CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME: 
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:
-
-CLAUDE:
-
-ME:

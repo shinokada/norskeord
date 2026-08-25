@@ -412,7 +412,11 @@
   );
   // Always the Norwegian text for TTS — regardless of card direction.
   let currentExampleNorsk = $derived(
-    current ? (cardType === 'phrase' ? current.entry.norsk : current.entry.example) : ''
+    current
+      ? cardType === 'phrase'
+        ? (current.entry.lemma ?? current.entry.norsk)
+        : current.entry.example
+      : ''
   );
 
   // ── 2-C: interval preview ────────────────────────────────────────────────────
@@ -1059,7 +1063,9 @@
       <div class="flex-1">
         <SpeakButton
           bind:this={speakButtonRef}
-          word={cardType === 'word' ? current.entry.norsk : current.entry.example}
+          word={cardType === 'word'
+            ? (current.entry.lemma ?? current.entry.norsk)
+            : current.entry.example}
           variant="icon-lg"
           label="Pronounce"
         />
