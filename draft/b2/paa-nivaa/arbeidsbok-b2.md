@@ -2188,3 +2188,340 @@ så ________________
 
 endelig ________________
 
+### 2 ORDTAK
+
+Sett strek under *adverbene* i ordtakene. Hva forteller adverbene om?
+
+Eksempel:
+
+En ulykke kommer sjelden alene.
+
+→ SJELDEN forteller hvor ofte ulykkene kommer, ALENE forteller hvordan ulykkene kommer
+
+b) Bak skyene er himmelen alltid blå.
+
+________________________________________________
+
+________________________________________________
+
+c) Når sola går ned i vest, arbeider den late best.
+
+________________________________________________
+
+________________________________________________
+
+d) Når uhellet er ute, er det best å være inne.
+
+________________________________________________
+
+________________________________________________
+
+e) En kan reise hvor en vil, men aldri fra seg selv.
+
+________________________________________________
+
+________________________________________________
+
+f) Fram og tilbake er like langt.
+
+________________________________________________
+
+________________________________________________
+
+### 3 HVILKEN TYPE ADVERB ER DET?
+
+Vi deler adverb i forskjellige undergrupper etter hva de beskriver. Hvilken *gruppe* tilhører disse adverbene?
+
+a) Jeg tror **ikke** at denne saken blir et tema på møtet i morgen. nektingsadverb
+
+b) De er **vanvittig** opptatt av miljøsaken. ________________________________
+
+c) Han sitter **altfor** lenge oppe om kvelden. ________________________________
+
+d) Han sitter altfor **lenge** oppe om kvelden. ________________________________
+
+e) **Nå** er det ikke mulig å gå ut. Regnet øser ned! ________________________________
+
+f) **Sannsynligvis** blir det bedre vær i morgen. ________________________________
+
+g) Jeg har **aldri** sett noe så søtt i hele mitt liv som denne kattungen! ________________________________
+
+h) Jeg har aldri sett noe **så** søtt i hele mitt liv som denne kattungen! ________________________________
+
+i) Hvorfor kommer du så seint? Du vet **jo** at vi spiser klokka fire! ________________________________
+
+j) Hvorfor kommer du så **seint**? Du vet jo at vi spiser klokka fire! ________________________________
+
+k) Hun må lære å skrive referat. **Derfor** har hun begynt på kurs. ________________________________
+
+### 4 HVA FORTELLER ADVERBET OM?
+
+Adverb kan ha forskjellige funksjoner:
+
+1) Adverb kan fortelle om verbet i setningen.
+
+2) Adverb kan fortelle om et annet adverb eller om et adjektiv.
+
+3) Adverb kan fortelle om innholdet i hele setningen.
+
+4) Adverb kan binde sammen to setninger.
+
+Hvilken funksjon har det **markerte** adverbet i setningene under? Sett kryss.
+
+| | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| a) Hun snakker **utrolig** fort. Jeg får ikke med meg noe av det hun sier! | | | | |
+| b) **Så** fin kjole du har! Hvor har du kjøpt den? | | | | |
+| c) Dette huset har vi ikke råd til. Det er **altfor** dyrt. | | | | |
+| d) Jeg har **aldri** vært i Russland. | | | | |
+| e) Hun studerer sykepleie. **Samtidig** arbeider hun på et sykehjem. | | | | |
+| f) Han bor ganske **sentralt**. | | | | |
+| g) De drar alltid **sørover** i ferien. | | | | |
+| h) Naboene våre er ikke hjemme. **Derfor** tar vi inn posten deres. | | | | |
+| i) Nå har hun snakket **lenge**, synes jeg. | | | | |
+| j) **Nå** har hun snakket lenge, synes jeg. | | | | |
+| k) Jeg vil **gjerne** komme på festen din. | | | | |
+
+### 5 STEDSADVERB (1)
+
+Sett stedsadverbene i rammen inn i teksten. Hvert adverb kan bare brukes én gang.
+
+borte · borte · dit · inn · ned · tilbake · ut · vestover
+
+**SOMMERØYA VÅR**
+
+Hver sommer er vi tre uker på Sicilia. Det er et fantastisk sted. Tidlig om morgenen drar fiskebåtene ________________ på sjøen. De drar ________________ i morgentåken og blir ________________. Sola står høyt på himmelen hele dagen. Den beveger seg langsomt ________________, og til slutt forsvinner den ________________ i havet. Da er fiskebåtene for lengst ________________. Vi har spist god middag og slappet av ________________ i hagen til familien Silva. Vi pleier å være på øya til midten av august. Det er fantastisk, og vi lengter tilbake ________________ hele året.
+
+### 6 STEDSADVERB (2)
+
+Sett adverbene i rammen inn i de setningene der de passer. Hvert adverb kan bare brukes én gang.
+
+bakerst · bort · innerst · nederst · nordover · tilbake · øverst
+
+a) Han sitter alltid ________________ i klasserommet.
+
+b) Koppene lå ________________ i esken.
+
+c) Skoene sto ________________ i skapet.
+
+d) Hvorfor henger de små størrelsene alltid ________________? Jeg rekker ikke opp!
+
+e) Skal dere reise ________________ i ferien?
+
+f) Fram og ________________ er like langt, sier de.
+
+g) Kan du komme ________________ hit litt, er du snill?
+
+### 7 HUN ER HOPPENDE GLAD!
+
+Hva betyr setningene? Sett kryss.
+
+a) Hun er hoppende glad!
+
+☐ Hun liker å hoppe når hun er glad.
+
+☐ Hun er veldig glad.
+
+☐ Hun er glad i å hoppe.
+
+b) De sitter aller bakerst.
+
+☐ Det sitter ingen bak dem.
+
+☐ De sitter på gulvet.
+
+☐ Det finnes stoler til alle.
+
+c) Han kommer sikkert på festen.
+
+☐ Selvfølgelig kommer han på festen!
+
+☐ Det er mulig at han kommer på festen.
+
+☐ Jeg tror ikke at han kommer på festen.
+
+d) Læreren er visstnok syk.
+
+☐ Læreren har sagt at hun er syk.
+
+☐ Læreren er ofte syk.
+
+☐ Noen har sagt at læreren er syk.
+
+e) De kommer altfor sjelden på besøk.
+
+☐ De besøker oss ganske ofte.
+
+☐ Jeg vil gjerne at de besøker oss mer.
+
+☐ Vi liker ikke å ha besøk av dem.
+
+f) Han sitter nok og leser.
+
+☐ Jeg tror at han sitter og leser.
+
+☐ Han sitter neppe og leser.
+
+☐ Han fikk nok av å sitte og lese.
+
+### 8 SKOLEARBEID 🎧
+
+Skriv setningene med adverbene på rett sted i setningene.
+
+Lytt og gjenta.
+
+a) nederst — Ukeplanen ligger i sekken.
+
+________________________________________________
+
+b) egentlig — Hva skal vi gjøre i denne oppgaven?
+
+________________________________________________
+
+c) kort — Du skal svare på spørsmålene.
+
+________________________________________________
+
+d) altfor — Disse oppgavene er vanskelige.
+
+________________________________________________
+
+e) bedre — Du konsentrerer deg hvis du legger vekk telefonen.
+
+________________________________________________
+
+f) fullstendig — Jeg synes at dette temaet er uinteressant.
+
+________________________________________________
+
+g) stille — Ingen klarer å sitte så lenge om gangen!
+
+________________________________________________
+
+h) fort — Hvis du blir ferdig, kan du gå ut etterpå.
+
+________________________________________________
+
+### 9 HVORDAN KOM DE?
+
+Lag presens partisipp av verbene i rammen. Bruk disse partisippene som adverb i setningene der de passer.
+
+å fly · å galoppere · å gråte · å hoie · å hoppe · å klatre · å krype · å marsjere · å spankulere · å stavre · å trille
+
+a) Ballen kom ________________ sakte inn i mål mens keeperen lå nede.
+
+b) Hesten kom ________________ over enga.
+
+c) Babyen kom ________________ over stuegulvet.
+
+d) Den gamle mannen kom ________________ oppover gata.
+
+e) Edderkoppen kom ________________ oppover ryggen hans.
+
+f) Haren kom ________________ gjennom skogen.
+
+g) Den rike mannen kom ________________ inn i hotellets resepsjon med spaserstokk, flosshatt og det hele.
+
+h) Russen kom ________________ nedover Karl Johan.
+
+i) Og nå er det Rodeløkka skoles tur til å komme ________________ forbi slottsbalkongen.
+
+j) Den lille jenta kom ________________ inn med et stort kutt på det ene kneet.
+
+k) I går så jeg en flokk gjess komme ________________ sørfra, så nå er det snart vår.
+
+### 10 NEI, OVERHODET IKKE!
+
+Svar nektende på spørsmålene. Bruk disse adverbene i svarene:
+
+aldri · i hvert fall · aldri · neppe · sjelden · slett ikke · helt sikkert ikke
+
+a) Hva skal du gjøre i morgen?
+
+Jeg vet ikke, men jeg kommer neppe til å ________________________________
+
+b) Går du ofte på kino?
+
+________________________________________________
+
+c) Tror du at du kommer til å vinne i lotto noen gang?
+
+________________________________________________
+
+d) Skal du dra til Stockholm i år?
+
+________________________________________________
+
+e) Liker du å gå på restaurant?
+
+________________________________________________
+
+f) Kommer du til å kjøpe hund, tror du?
+
+________________________________________________
+
+g) Hvor ofte skriver du i kommentarfelt på Internett?
+
+________________________________________________
+
+h) Pleier du å delta i svømmekonkurranser?
+
+________________________________________________
+
+### 11 NÅR VI HAR FÅTT INFORMASJON AV ANDRE
+
+Du får informasjon av andre og skal gjengi informasjonen. Bruk adverbene *visst, visstnok* eller *trolig* når du refererer utsagnet.
+
+a) «Denne filmen er skikkelig spennende!»
+
+________________________________________________
+
+b) «Resultatet blir offentliggjort på fredag.»
+
+________________________________________________
+
+c) «Pettersen blir ny trener for kvinnelandslaget.»
+
+________________________________________________
+
+d) «Det blir sol i morgen.»
+
+________________________________________________
+
+e) «Stillingen ble uavgjort.»
+
+________________________________________________
+
+f) «Neste sesong starter i oktober.»
+
+________________________________________________
+
+g) «Hyttefeltet blir utvidet med 8 hytter.»
+
+________________________________________________
+
+h) «Veien over Suleskar er stengt inntil videre.»
+
+________________________________________________
+
+i) «Det har vært ei ulykke på E39 i nærheten av Flekkefjord.»
+
+________________________________________________
+
+j) «Eksamen har blitt utsatt.»
+
+________________________________________________
+
+### 12 KANSKJE, SELVFØLGELIG ELLER NOK? 🎧
+
+Sett inn *kanskje, selvfølgelig* eller *nok* i setning B slik at den betyr omtrent det samme som setning A.
+
+Lytt og gjenta.
+
+| | A | B |
+|---|---|---|
+| a) | Det er klart du skal bli med oss på ferie! | ________________ skal du bli med oss på ferie! |
+| b) | Jeg er ganske sikker på at det blir bra vær i morgen. | Det blir ________________ bra vær i morgen. |
+| c) | Det er mulig hun skal flytte over sommeren. | Hun skal ________________ flytte over sommeren. |
+| d) | Alle vet at dette går bra. | ________________ går dette bra. |
+
