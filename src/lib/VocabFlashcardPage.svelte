@@ -1063,7 +1063,9 @@
       <div class="flex-1">
         <SpeakButton
           bind:this={speakButtonRef}
-          word={cardType === 'word' ? (current.entry.lemma ?? current.entry.norsk) : current.entry.example}
+          word={cardType === 'word'
+            ? (current.entry.lemma ?? current.entry.norsk)
+            : current.entry.example}
           variant="icon-lg"
           label="Pronounce"
         />
