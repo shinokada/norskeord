@@ -4458,3 +4458,128 @@ B ______________________________ på mørke høstkvelder.
 | Jeg kan kjenne igjen vanlige norske metaforer når jeg leser eller lytter.<br>*(I can recognize common metaphors used in Norwegian when I read or listen.)* | | |
 | Jeg kan bruke en del norske metaforer når jeg skriver eller snakker.<br>*(I can use some common Norwegian metaphors when I write or speak.)* | | |
 
+# KAPITTEL 3 SETNINGER
+
+## SETNINGSLEDD
+
+### 1 SETNINGSLEDD (1)
+
+Hva heter setningsleddene på morsmålet ditt?
+
+**Eksempel:** Frida + har + kjøpt + et fint sengeteppe + på Fretex.
+(SUBJEKT + VERBAL + VERBAL 2 + OBJEKT + ADVERBIAL)
+
+subjekt ______________________________
+
+verbal 1 ______________________________
+
+verbal 2 ______________________________
+
+objekt ______________________________
+
+adverbial ______________________________
+
+**Eksempel:** Sengeteppet + var + nesten helt nytt.
+(SUBJEKT + VERBAL + PREDIKATIV)
+
+predikativ ______________________________
+
+**Eksempel:** Hun + har + ikke + kjæreste.
+(SUBJEKT + VERBAL + SETNINGSADVERBIAL + OBJEKT)
+
+setningsadverbial ______________________________
+
+**Eksempel:** Petra + viser + kunden + de nyeste hattene.
+(SUBJEKT + VERBAL + INDIREKTE OBJEKT + OBJEKT)
+
+indirekte objekt ______________________________
+
+### 2 SETNINGSLEDD (2)
+
+Hvilket setningsledd står med **feit skrift**?
+
+a) **I mange år** arbeidet Selma som lærer på en barneskole. ______________________________
+
+b) Men **nå** er hun pensjonist. ______________________________
+
+c) Hun liker **de lange og fredelige morgenene**. ______________________________
+
+d) **Da** drikker hun kaffe og leser avisa. ______________________________
+
+e) Hun liker **også** å reise. ______________________________
+
+f) Selma liker best **å reise på ferie i Europa**. ______________________________
+
+g) Til sommeren skal hun **til Kroatia** sammen med Petra. ______________________________
+
+h) De **har leid** en leilighet i en liten by ved kysten. ______________________________
+
+i) Byen heter **Vrsar**. ______________________________
+
+j) **De** gleder seg til å reise dit. ______________________________
+
+k) Vanligvis **pleier** Selma å være på hytta om sommeren. ______________________________
+
+l) **Men etter at hun ble pensjonist,** bruker hun hytta ofte ellers i året. ______________________________
+
+m) Derfor synes hun **at hun kan unne seg en sommerferie utenlands i år**. ______________________________
+
+### 3 SETNINGSLEDD (3)
+
+Sett strek mellom setningsleddene i helsetningene. Se på eksemplet.
+
+**Eksempel:**
+Han | rydder | aldri | i leiligheten sin.
+
+a) Foreldrene hennes kan ikke komme på besøk til dem i sommer.
+
+b) Nå for tida kjøper mange el-sykkel.
+
+c) Petter vil vite om du kan komme i morgen.
+
+d) Jeg synes at han er en tufs.
+
+e) Hvis du ikke kan komme, må du gi beskjed innen fredag.
+
+f) Etter min mening er dette den beste boka han har skrevet.
+
+g) Han ble veldig glad da han fikk eksamensresultatet.
+
+h) Må jeg lese denne boka før eksamen?
+
+i) Før du går, må du huske å låse døra.
+
+j) Legen har sagt at han må holde senga i fire dager.
+
+k) Alle jeg kjenner, spiser fisk minst to ganger i uka.
+
+### 4 Å GJØRE ET VERB
+
+Hvilke subjekter passer med disse verbalene? Skriv inn subjektene fra ordskyen i passende setninger. Du kan bare bruke hvert subjekt én gang.
+
+Lytt og gjenta.
+
+Ordsky: klærne, flagget, brødet, leiligheten, vaskemaskinen, bøkene, teksten, suppa, kattene, Ola, flyturen
+
+a) ______________________________ må ikke overskride 500 ord.
+
+b) ______________________________ stekes i 30 minutter på 200 grader.
+
+c) ______________________________ spiller både gitar og trommer.
+
+d) ______________________________ sloss i bakgården.
+
+e) ______________________________ passer ikke.
+
+f) ______________________________ vaier i vinden.
+
+g) ______________________________ smaker kjempegodt!
+
+h) ______________________________ ligger på bordet i stua.
+
+i) ______________________________ tar 40 minutter.
+
+j) ______________________________ kostet et sted mellom tre og fire millioner.
+
+k) ______________________________ er ferdig om 20 minutter.
+
