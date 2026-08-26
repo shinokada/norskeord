@@ -6133,3 +6133,217 @@ Så: ___
 
 Med det resultat at: ___
 
+e) Alle må gjøre sitt beste. Vi unngår klager.
+
+Dermed: ___
+
+På den måten: ___
+
+f) Han må gå på en streng diett. Han skal ikke bli syk.
+
+For at: ___
+
+Hensikten med å … er å: ___
+
+## 14 MOTSETNING
+
+Bind sammen setningene med bindeord som uttrykker et motsetningsforhold.
+
+a) De tjener ikke så mye. De klager aldri.
+
+likevel: ___
+
+selv om: ___
+
+imidlertid: ___
+
+b) Brannvesenet kom så fort de kunne. Huset brant ned til grunnen.
+
+men … likevel: ___
+
+til tross for at: ___
+
+selv om: ___
+
+c) Rettssaken starter i morgen. Den tiltalte har ikke tilstått.
+
+til tross for at: ___
+
+likevel: ___
+
+men … likevel: ___
+
+## 15 HVIS DU VIL ...
+
+Lag et betingelsesforhold mellom setningene med *hvis*.
+
+Lytt og lag et betingelsesforhold mellom setningene med *hvis*.
+
+a) Du vil bestå eksamen. Du må lese mer.
+
+___
+
+b) Dere skal ikke komme for seint til båten. Dere må dra nå.
+
+___
+
+c) Dere begynner å krangle. Jeg går hjem.
+
+___
+
+d) Du vil ha dessert. Du må spise opp hele middagen din.
+
+___
+
+e) Du vil lære italiensk. Du kan ta et kveldskurs.
+
+___
+
+f) Du vil lære å strikke. Jeg kan gjerne hjelpe deg.
+
+___
+
+g) Dere gjør ikke leksene. Dere kommer ikke til å få gode karakterer.
+
+___
+
+## 16 BARE DET KUNNE BEGYNNE Å SNØ ...
+
+Sett inn ord i setningene slik at de uttrykker et betingelsesforhold eller et ønske om at noe skal skje.
+
+a) ___ det kunne begynne å snø så vi kan få en hvit jul!
+
+b) Så ___ jeg får fast jobb, kan vi søke om lån for å kjøpe leilighet!
+
+c) Med ___ du skriver en klage, blir det ingen bedring i forholdene.
+
+d) Hvis du ___ kommer til poenget snart, må jeg gi ordet til den neste på talerlisten.
+
+e) ___ du har oppdatert CV-en din, kan du ikke levere denne søknaden.
+
+f) Jeg håper direktøren kommer i morgen. ___ får vi ikke vite noe om den planlagte HR-prosessen.
+
+## 17 PARSETNINGER
+
+Fyll ut setning B slik at den betyr omtrent det samme som setning A.
+
+1 A Selv om konserten ble avlyst, fikk de ikke pengene tilbake.
+
+B De fikk ikke pengene tilbake til ___ konserten ble avlyst.
+
+2 A Jeg tviler på om denne saken lar seg løse så enkelt.
+
+B Jeg stiller ___ om denne saken lar seg løse så enkelt.
+
+3 A Mange har installert vedovn for å slippe å bruke så mye strøm.
+
+B Mange har installert vedovn ___ ikke vil bruke så mye strøm.
+
+4 A De fikk en gratis overnatting i London fordi flyet var innstilt.
+
+B I ___ flyet var innstilt, fikk de en gratis overnatting i London.
+
+5 A Vi skal på ferie i juli hvis både mannen min og jeg får fri da.
+
+B Så ___ i juli, skal vi på ferie da.
+
+6 A Jeg klarer ikke å konsentrere meg hvis det ikke er ro rundt meg.
+
+B Med ___, klarer jeg ikke å konsentrere meg.
+
+7 A Han fikk ikke sove på grunn av alt bråket fra naboene.
+
+B Alt bråket fra naboene ___ i at han ikke fikk sove.
+
+8 A Jeg har kjøpt el-sykkel slik at jeg kan sykle til jobb uten å bli helt utslitt.
+
+B ___ kjøpe el-sykkel er å kunne sykle til jobb uten å bli helt utslitt.
+
+9 A Maskinen hans fikk et virus fordi han klikket på en lenke i en e-post.
+
+B Han klikket på en lenke i en e-post ___ resultat at maskinen hans fikk et virus.
+
+10 A Hvis det blir fint vær i helgen, kan vi ta en tur på hytta.
+
+B Jeg ___ det blir fint vær i helgen så vi kan dra på hytta!!
+
+## KAN DU DET?
+
+| Oppgave | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan bruke indirekte tale for å referere det noen har sagt eller spurt om. *(I can use indirect speech to report what someone has said or asked.)* | | |
+| Jeg kan bruke regelen om preteritums-samsvar når jeg lager indirekte tale. *(I can use the rule about past tense compliance when I use indirect speech.)* | | |
+| Jeg kan bruke ulike uttrykk for å referere det noen har sagt, slik som *legge vekt på noe*, *understreke noe* eller *være usikker på noe*. *(I can use various kinds of expressions to report what someone has said, such as legge vekt på noe, understreke noe or være usikker på noe.)* | | |
+| Jeg kan få fram at informasjonen jeg formidler, er andrehåndsinformasjon. *(I can make it clear that the information I am passing on is second-hand information.)* | | |
+| Jeg kan binde sammen setninger i et årsak-/virkningsforhold. *(I can combine sentences in order to express a relation between cause and effect.)* | | |
+| Jeg kan binde sammen setninger i et årsak-/hensiktsforhold. *(I can combine sentences in order to express a relation between cause and intention.)* | | |
+| Jeg kan binde sammen setninger som står i et motsetningsforhold til hverandre. *(I can combine sentences in order to express opposition or a contrary view.)* | | |
+| Jeg kan binde sammen setninger der den ene setningen er en betingelse for den andre. *(I can combine sentences where one sentence is a condition for the other.)* | | |
+
+## TEKSTER
+
+### 1 HVILKEN TYPE TEKST ER DET?
+
+Skriv riktig nummer foran tekstutklippene.
+
+1) brosjyre
+2) søknad
+3) klage
+4) rapport
+5) annonse
+6) instruksjon
+
+- [ ] Du må være utadvendt og glad i utfordringer. Du må ha evne til å arbeide selvstendig og til å se hva som må gjøres. Du kan bidra positivt til arbeidsmiljøet.
+
+- [ ] På ferie i Oslo? Ta en tur til Vigelandsparken! Skulpturparken er en av Oslos (og Norges!) mest besøkte attraksjoner med over en million besøkende hvert år. Parken har fått navnet sitt etter kunstneren som laget den: Gustav Vigeland.
+
+- [ ] Først settes rørene til vannlåsen sammen. Sørg for at O-ringer og gummipakninger sitter riktig. Unngå å bruke verktøy, og spenn skjøtene sammen med fingrene.
+
+- [ ] Pasienten på rom 502 har vært våken fire ganger i løpet av natta (kl. 00.30, 02.33, 04.20 og 06.15). Blodtrykk 111/67 kl. 07.35.
+
+- [ ] Jeg avsluttet arbeidet mitt med mastergraden sommeren 2012. Deretter arbeidet jeg fire år i Soltoppen teknologiutvikling. Da ble bedriften dessverre lagt ned, og etter det har jeg hatt en del vikarjobber i skolen, særlig i 9. og 10. klasse. Jeg har trivdes godt med det, men jeg vil helst arbeide innenfor teknologi siden det er det jeg har utdanning i.
+
+- [ ] 4. mai satte naboen vår i Sandstølen 4B opp et tilbygg som skygger for utsikten vår østover. Naboens tilbygg fører til en vesentlig forringelse av utsikten vår, og derfor kan vi ikke forstå at det skal være mulig å gjøre dette uten noen form for kontroll. Vi ønsker at naboen fjerner tilbygget.
+
+(Kilder: https://gjoerdetselv.com/haandverker-teknikker/roerlegger/avloep-slik-setter-du-sammen-og-vedlikeholder-avloepsroer, https://no.wikipedia.org/wiki/Vigelandsanlegget)
+
+### 2 FAKTATEKST: KLIMASONER
+
+Det er tre forskjellige ord eller uttrykk til hver luke i teksten. Bare ett av disse svaralternativene er riktig i sammenhengen. Sett kryss ved det ordet eller uttrykket du mener er riktig.
+
+**KLIMASONER**
+
+Verden er delt inn i fire hovedklimasoner. Det er arktisk klimasone, temperert klimasone, subtropisk klimasone og tropisk klimasone. [Eks.] for denne inndelingen er variasjon i vær, vegetasjon, lufttrykk og gjennomsnittlig temperatur. I Norge finner vi [1] arktisk sone og flere varianter av temperert sone.
+
+Det arktiske klimaet kjennetegnes ved at normaltemperaturen [2] under +10 grader celsius i årets varmeste måned. Dessuten [3] denne klimasonen av høytrykk som får den [4] lufta til å stige opp over den kalde lufta. Når dette skjer, blir det ikke mye nedbør, og mange steder får vi permafrost. Det vil si at bakken er frossen [5]. Permafrost, lav temperatur og lite nedbør fører til at den arktiske klimasonen har lite [6], og hvis det vokser noe her, vokser det [7]. Lave busker, men ikke trær, kan vokse i de minst hardføre delene av arktisk klimasone.
+
+I Norge vil vi kunne plassere store deler av Finnmark i den arktiske klimasonen, men slike geografiske grenser er naturligvis ikke absolutte. Også [8] fjellpartiene i Sør-Norge kan sies å ha arktisk klima. Resten av Norge har temperert klima.
+
+Den tempererte klimasonen [9] i et belte rundt hele jordkloden: sør for den arktiske sonen i nord og nord for den arktiske sonen i sør. I denne klimasonen er det en gradvis veksling [10] fire årstider. Det er vår, sommer, høst og vinter, men tidspunktene for de ulike årstidene kan variere. I den tempererte klimasonen kan vegetasjonen være ganske frodig. Det er mer nedbør i den tempererte klimasonen [11] i den arktiske. Hvor mye nedbør det kan komme, [12] havstrømmer, geografien på stedet og luftstrømmer fra de tilgrensende klimasonene.
+
+I Norge deler vi klimaet [13] inn i kystklima (havklima) og innlandsklima (kontinentalt klima). Kystklimaet har våte og kjølige somre og milde vintre. Vestlandet har typisk kystklima. Der kan det regne ganske mye: [14] er Vestlandet et av de våteste områdene i verden utenfor tropene! Innlandsklima har tørre og varme somre og kalde vintre. Østlandet har innlandsklima, og det kan bli veldig kaldt på Østlandet om vinteren, kanskje ned i -30 grader. Kulderekorden i Norge er det [15] Karasjok i Finnmark som har. Den rekorden ble satt i 1. januar 1886. Da var det -51,4 grader der!
+
+(Kilder: http://www.coldclimategarden.com/nb/de-forskjellige-klimasonene/, https://no.wikipedia.org/wiki/Norges_klima, https://no.wikipedia.org/wiki/Norske_værrekorder#Høyeste_og_laveste_temperatur)
+
+#### SVARALTERNATIVER
+
+(Eksempelet [Eks.] i teksten har riktig svar under **Grunnlaget**.)
+
+| Eks. | Årsaken | Grunnlaget | Resultatet |
+|---|---|---|---|
+| 1 | enten | fortsatt | både |
+| 2 | ligger | består | stiger |
+| 3 | preges | fjernes | ordnes |
+| 4 | forurensete | kjølige | varme |
+| 5 | noen ganger | som oftest | hele året |
+| 6 | bebyggelse | vegetasjon | arbeid |
+| 7 | langsomt | fort | ubegrenset |
+| 8 | utbredt i | avgrenset av | deler av |
+| 9 | strekker seg | brukes | bøyer seg |
+| 10 | mellom | gjennom | under |
+| 11 | som | for | enn |
+| 12 | vil bestå av | er avhengig av | går utover |
+| 13 | videre | alltid | selvfølgelig |
+| 14 | Uansett | Ganske enkelt | Faktisk |
+| 15 | normalt | imidlertid | heldigvis |
+
