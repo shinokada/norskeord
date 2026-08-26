@@ -5042,8 +5042,6 @@ ______________________________
 
 ______________________________
 
-______________________________
-
 ### 10 SPØRREORD
 
 Sett inn riktig spørreord i spørresetningene. Husk å lese svarene før du skriver inn spørreordet.
@@ -5808,4 +5806,330 @@ samtidig: ______________________________
 | Jeg kan referere hv-spørsmål. (I can report questions that start with an interrogative word.) | | |
 | Jeg kan bruke som riktig når jeg refererer hv-spørsmål. (I can use som correctly when reporting interrogative sentences.) | | |
 | Jeg kan lage adjektiviske leddsetninger med korrekt bruk av som. (I can form adjectival subordinate clauses and use som correctly when doing so.) | | |
+| Jeg kan lage vilkårssetninger ved å invertere setningen i stedet for å bruke subjunksjon. (I can make conditional sentences by inverting the sentence instead of using a subordinating conjunction.) | | |
+| Jeg kan sette leddsetninger inn i et setningsskjema. (I can place the phrases of a subordinate clause in correct order according to the 'sentence frame'.) | | |
+| Jeg kan plassere setningsadverbialet på rett sted i leddsetningen. (I can place the sentence adverbial correctly within the subordinate clause.) | | |
+| Jeg kan identifisere leddsetningens funksjon i helsetningen. (I can identify which function the subordinate clause has in the complete sentence.) | | |
+| Jeg kan variere mellom å bruke frekvente subjunksjoner og adverb for å binde sammen setninger. (I can vary between using frequent subordinating conjunctions and adverbs to combine sentences.) | | |
+
+## KAPITTEL 4 TEKSTER OG TEKSTBINDING
+
+### TEKSTBINDING
+
+### 1 DETTE ER NYHETENE
+
+Skriv riktig nummer foran setningene.
+
+☐ Nedgangen skyldes den lave oljeprisen.
+
+☐ Så til ny stamvei mellom vest og øst.
+
+[1] Dette er nyhetene. Klokka er 16.
+
+[8] Nå har Stortinget vedtatt å sette i gang bygging av ny stamvei.
+
+☐ Byggingen vil starte allerede om et år.
+
+☐ Dette var nyhetene. Tilbake til studio.
+
+☐ Finansministeren har uttalt at nedgangen har blitt noe større enn forventet.
+
+☐ Samtidig understreker ministeren at nedgangen ikke får betydning for statsbudsjettet inneværende år.
+
+[3] Først i dag skal vi høre at statens inntekter har gått kraftig ned det siste året.
+
+☐ Hovedsakene i dag er inntektstap for staten og bygging av stamvei mellom Vestlandet og Østlandet.
+
+### 2 TIDSFORHOLD
+
+Sett inn *etter at*, *etterpå* eller *etter* i setningene.
+
+a) Skal vi ta en tur på kafé ______________________________ vi har vært på kino?
+
+b) Først skal vi ha en lytteøving, og ______________________________ skal dere skrive en kort tekst.
+
+c) Hva skal du gjøre ______________________________ jobb i dag?
+
+d) ______________________________ sommeren skal han flytte til Lillehammer for å studere.
+
+e) ______________________________ han hadde søkt mange forskjellige jobber, fikk han endelig tilbud om jobb i en klesbutikk i sentrum.
+
+### 3 HVA SPURTE HUN OSS OM?
+
+*Preteritumssamsvar* betyr at verbtida i helsetningen bestemmer hvilken verbtid som er tillatt i leddsetningen. Les om preteritumssamsvar på side 172 i teoriboka.
+
+Gjør om utsagnene i snakkeboblene til indirekte tale. Start setningene i indirekte tale med *Hun spurte oss om …* og følg reglene for preteritumssamsvar.
+
+Kan dere ta oppvasken etter middag? Har dere vært i byen helt til nå? Hvem skal dere besøke i kveld? Hvorfor kommer dere først nå? Vil dere ikke ha noe å spise?
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+### 4 HVA SA HUN TIL OSS?
+
+*Preteritumssamsvar* betyr at verbtida i helsetningen bestemmer hvilken verbtid som er tillatt i leddsetningen. Les om preteritumssamsvar på side 172 i teoriboka.
+
+Gjør om utsagnene i snakkeboblene til indirekte tale. Start setningene i indirekte tale med *Hun sa at …* og følg reglene for preteritumssamsvar.
+
+Jeg skal bare en liten tur til Larvik. Husk å vanne blomstene mens jeg er borte! Dere kommer til å klare dere alene noen dager. Ikke glem å sette ut søppelet! Jeg vil være tilbake på tirsdag.
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+### 5 VANSKELIGE BUDSJETTFORHANDLINGER
+
+Vi kan bruke ulike verb for å referere utsagn. Skriv om setningene til indirekte tale. Start med: *Jeg må få understreke at …*
+
+Lytt og lag setninger i indirekte tale.
+
+a) Budsjettforhandlingene har vært svært vanskelige i år.
+
+______________________________
+
+b) Det har vært utfordrende å bli enige.
+
+______________________________
+
+c) Diskusjonene har vært lange og harde.
+
+______________________________
+
+d) Det er vanskelig å gjøre alle til lags.
+
+______________________________
+
+e) Flertallet må tross alt få siste ord.
+
+______________________________
+
+### 6 HVEM SKAL VI ANSETTE?
+
+Vi kan bruke ulike verb for å referere utsagn. Skriv om setningene til indirekte tale. Start med: *Jeg er usikker på om …*
+
+Lytt og lag setninger i indirekte tale.
+
+a) Er han virkelig den beste kandidaten?
+
+______________________________
+
+b) Er han egentlig egnet til stillingen?
+
+______________________________
+
+c) Har han faktisk de kvalifikasjonene vi ønsker oss?
+
+______________________________
+
+d) Vil han bli værende i jobben?
+
+______________________________
+
+e) Kommer han til å bidra positivt til arbeidsmiljøet?
+
+______________________________
+
+f) Vil de ansatte bli fornøyde?
+
+______________________________
+
+### 7 IFØLGE FAR VIL MOR AT …
+
+Noen ganger refererer vi noe som andre har referert. Vi kaller det *andrehåndsinformasjon*. Da er det viktig at det kommer tydelig fram at dette er noe vi har hørt andre referere.
+
+Hvis Even skal fortelle Frida hva faren har sagt til ham, hvordan kan han uttrykke seg da?
+
+Mor sier at du og jeg må male hytta i sommer. Mor mener at du og jeg må ta opp båten i løpet av helgen. Mor synes at du og jeg bør ta en tur til Stavanger og besøke tante i løpet av høsten.
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+### 8 HVORFOR SKJER DET?
+
+Bind sammen setningene slik at *årsaksforholdet* mellom dem blir tydelig.
+
+a) Halvparten av plantene har visnet. Du har ikke vannet dem.
+
+fordi: ______________________________
+
+derfor: ______________________________
+
+for: ______________________________
+
+b) Butikken har gått konkurs. Kundegrunnlaget var for dårlig.
+
+ettersom: ______________________________
+
+nemlig: ______________________________
+
+så … at: ______________________________
+
+c) Filmen var utrolig spennende. Han ble sittende oppe hele natta.
+
+for: ______________________________
+
+så … at: ______________________________
+
+så: ______________________________
+
+c) De lå til sengs med influensa. De kunne ikke komme på festen.
+
+for: ______________________________
+
+så: ______________________________
+
+d) Han fikk ikke ta eksamen. Han besto ikke alle arbeidskravene.
+
+for: ______________________________
+
+så: ______________________________
+
+### 9 FOR OG SÅ
+
+Bind sammen setningene med konjunksjonene *for* (årsak) og *så* (resultat).
+
+a) Jeg kan ikke snakke med deg nå. Jeg sitter i telefonen.
+
+for: ______________________________
+
+så: ______________________________
+
+b) Jeg kunne ikke sykle til jobben i går. Det var klink is på veiene!
+
+for: ______________________________
+
+så: ______________________________
+
+### 10 HVA ER HENSIKTEN?
+
+Sett strek slik at setningene blir logiske.
+
+Sett 1 (kolonne A / kolonne B):
+
+a) Styret har vedtatt nedskjæringer — På den måten håper de å redde bedriften fra konkurs.
+
+b) Hensikten med nedskjæringene — har styret vedtatt noen nedskjæringer.
+
+c) Styret har vedtatt nedskjæringer. — er at bedriften ikke skal gå konkurs.
+
+d) For at bedriften ikke skal gå konkurs, — så bedriften ikke skal gå konkurs.
+
+Sett 2 (kolonne A / kolonne B):
+
+a) Jeg bruker denne kremen — er at huden skal holde seg myk.
+
+b) Formålet med å bruke denne kremen — Dermed holder huden seg myk.
+
+c) Jeg bruker denne kremen hver dag. — så huden holder seg myk.
+
+d) Jeg bruker denne kremen — for at huden skal holde seg myk.
+
+Sett 3 (kolonne A / kolonne B):
+
+a) Hensikten med å bruke refleks — for å bli sett i trafikken!
+
+b) Bruk refleks — slik at du blir sett i trafikken.
+
+c) Du bør bruke refleks — er å bli sett i trafikken.
+
+d) Bruk refleks. — På den måten blir du sett i trafikken.
+
+## 11 MED MINDRE DU ...
+
+Finn setningene som uttrykker et *motsetningsforhold*, og bind dem sammen. Bruk uttrykket *med mindre*.
+
+- Du kan ikke klage på valgresultatet.
+- Du har nøkkel.
+- Du skriver noen søknader.
+- Du kommer ikke inn.
+- Du har lest boka.
+- Du får ikke jobb.
+- Du kan ikke uttale deg.
+- Du har brukt stemmeretten din.
+
+## 12 ÅRSAKSFORHOLD (1): VIRKNING ELLER RESULTAT?
+
+Bind sammen setningene slik at årsaksforholdet blir tydelig.
+
+a) Klimaforholdene blir mer ekstreme. Politikerne må gjøre noe.
+
+Derfor: ___
+
+På grunn av at: ___
+
+b) Stortinget stilte mistillitsforslag mot en minister. Regjeringen valgte å gå av.
+
+Følgen av at: ___
+
+Å resultere i: ___
+
+c) Norge har en lang kystlinje. Alle barn bør lære å svømme.
+
+Ettersom: ___
+
+Grunnen til at: ___
+
+d) Store cruiseskip forurenser mye. Bruk av landstrøm må bli obligatorisk for cruiseskip som ligger til kai.
+
+Å være skyld i: ___
+
+Altså: ___
+
+e) Vindmøller og solenergi produserer fornybar energi. Politikerne må bevilge mer penger til slike miljøtiltak.
+
+Så: ___
+
+Ettersom: ___
+
+f) Han er svært allergisk. Han må gå på en streng diett.
+
+Fordi: ___
+
+Så … at: ___
+
+## 13 ÅRSAKSFORHOLD (2): FORMÅL ELLER HENSIKT?
+
+Bind sammen setningene slik at årsaksforholdet blir tydelig.
+
+a) Han har pusset opp. Han får en god pris for leiligheten.
+
+Slik at: ___
+
+Så: ___
+
+b) Mange pensjonister drar til Spania om vinteren. De slipper kulden i Norge.
+
+For å: ___
+
+For at: ___
+
+c) Ledelsen skal si opp sju ansatte. Bedriften unngår konkurs.
+
+Hensikten med å … er å: ___
+
+For at: ___
+
+d) Lærerne streiket hele sommeren. Elevene fikk ikke ta eksamen.
+
+Så: ___
+
+Med det resultat at: ___
 
