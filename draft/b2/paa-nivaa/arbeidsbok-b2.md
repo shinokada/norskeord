@@ -4204,3 +4204,257 @@ Hva betyr det? Sett kryss ved riktig forklaring.
 □ Man må vite hva som er riktig å gjøre.
 □ Det er viktig å ha mange venner.
 
+## 10 80 PARSETNINGER
+
+Fyll ut setning B slik at den betyr omtrent det samme som setning A.
+
+1) A En sak har alltid flere sider.
+B En sak har alltid mer ______________________________.
+
+2) A Han er veldig forelsket i henne.
+B Han er på ______________________________ etter henne.
+
+3) A Han har forsvunnet helt.
+B Han er ______________________________ vekk.
+
+4) A Denne veien er veldig humpete!
+B Denne veien er full ______________________________.
+
+5) A Hun har god fantasi.
+B Hun er ______________________________.
+
+6) A Dette regnestykket har ingen løsning.
+B Dette regnestykket ______________________________ opp.
+
+7) A Han er ugift.
+B Han er ______________________________ gift.
+
+8) A Så hjelpsom dattera di er!
+B Så flink dattera di er ______________________________!
+
+9) A De har ikke barn.
+B De er ______________________________.
+
+10) A Denne bedriften produserer veldig mye.
+B Denne bedriften er veldig ______________________________.
+
+11) A Liker du politikken til den nye regjeringen i landet?
+B Liker du politikken til landets ______________________________?
+
+12) A Evens foreldre har en stor enebolig utenfor sentrum.
+B ______________________________ Even har en stor enebolig utenfor sentrum.
+
+13) A Han reiser alltid til London om sommeren.
+B Han reiser til London ______________________________ sommer.
+
+14) A Kjenner du den lyshårete jenta?
+B Kjenner du jenta med ______________________________ håret?
+
+15) A Denne teen er helt smakløs!
+B Denne teen smaker absolutt ______________________________!
+
+16) A Hvor ofte trener du hver uke?
+B Hvor ______________________________ ganger trener du hver uke?
+
+17) A Jeg synes de bråkete naboene er irriterende.
+B ______________________________ fra naboene irriterer meg.
+
+18) A Jeg synes at du har hyggelige foreldre.
+B Jeg synes at ______________________________ er hyggelige.
+
+19) A Denne oppgaven er ganske vanskelig.
+B Denne oppgaven er ______________________________, akkurat!
+
+20) A Linda er den flinkeste læreren på skolen, synes jeg.
+B Ingen andre lærere på skolen er ______________________________ som Linda, synes jeg.
+
+21) A Jeg har aldri smakt en så god pizza før.
+B Dette er ______________________________ jeg har smakt noen gang.
+
+22) A Sofie er yngre enn Frida.
+B Sofie er ikke ______________________________ som Frida.
+
+23) A Han arbeider ikke her.
+B Han er ikke ______________________________ her.
+
+24) A Han tar aldri ansvar for noen ting.
+B Han er veldig ______________________________.
+
+25) A Kan du ta av deg de våte klærne?
+B Kan du ta på deg ______________________________ klær?
+
+26) A Butikkene er stengt på skjærtorsdag og langfredag.
+B Butikkene er ikke ______________________________ på skjærtorsdag og langfredag.
+
+27) A Jeg fatter ikke hva hun ser i ham.
+B Jeg ______________________________ forstå hva hun ser i ham.
+
+28) A Du må lese mer.
+B Du er ______________________________ å lese mer.
+
+29) A Kan vi gå på butikken i pausen?
+B Får vi ______________________________ gå på butikken i pausen?
+
+30) A Vil du lære å strikke?
+B Har du ______________________________ lære å strikke?
+
+31) A Snakk norsk i pausen!
+B ______________________________ snakke norsk i pausen.
+
+32) A Pedro kom til Norge for 8 måneder siden.
+B Pedro ______________________________ i Norge i 8 måneder.
+
+33) A Hun har vært her i tre timer nå.
+B Hun ______________________________ tre timer siden.
+
+34) A De malte huset i forrige uke.
+B Huset ______________________________ i forrige uke.
+
+35) A Kommer du på festen på fredag?
+B ______________________________ vi på festen på fredag?
+
+36) A Du må vaske, skrelle og koke potetene.
+B Potetene må ______________________________.
+
+37) A Jeg har veldig lyst til å komme på festen din.
+B Jeg vil ______________________________ komme på festen din.
+
+38) A Ikke snakk så fort, er du snill!
+B Kan du snakke ______________________________, er du snill?
+
+39) A Sjefen sier at du godt kan gå hjem nå hvis du vil.
+B Sjefen sier at det ______________________________ hvis du vil gå hjem nå.
+
+40) A Han går ut selv om det regner.
+B Det regner. ______________________________ ut.
+
+41) A Han løper stadig fortere. Jeg tror at han klarer OL-kravet snart.
+B Han løper ______________________________ og fortere. Jeg tror at han klarer OL-kravet snart.
+
+42) A Det kan være at vi får vikar i morgen.
+B Vi får ______________________________ vikar i morgen.
+
+43) A Jeg tror neppe at jeg har klart eksamen.
+B Det er lite ______________________________ at jeg har klart eksamen.
+
+44) A Synes du at du blir bedre i norsk?
+B Synes du at det ______________________________ med norsken?
+
+45) A Spør læreren. Det er mulig at han kan hjelpe deg.
+B Spør læreren. Han ______________________________ hjelpe deg.
+
+46) A De bor ikke så langt fra Stjørdal.
+B De bor ______________________________ av Stjørdal.
+
+47) A Hun kommer hjem til jul.
+B Hun skal være ______________________________ jula.
+
+48) A Kjæresten hans er eldre enn han er.
+B Han er ikke like ______________________________ kjæresten sin.
+
+49) A Det er fire dager siden jeg så henne.
+B Jeg har ikke ______________________________ fire dager.
+
+50) A Du skal til tannlegen i morgen.
+B Du har ______________________________ tannlegen i morgen.
+
+51) A Dere må dessverre flytte innen utgangen av denne måneden.
+B Dere må dessverre flytte ______________________________ denne måneden er slutt.
+
+52) A Nå skjer det noe like utenfor her!
+B Nå er det ______________________________ gang like utenfor her!
+
+53) A Hun har reist på landet for å slappe av noen dager.
+B Hun har reist på landet ______________________________ vil slappe av noen dager.
+
+54) A Det var veldig mange folk i byen i dag.
+B Det var fullt ______________________________ i byen i dag.
+
+55) A Hvor mye koster denne buksa?
+B Hva er ______________________________ denne buksa?
+
+56) A De pleier å møtes rundt klokka fire.
+B De pleier å møtes ______________________________ firetida.
+
+57) A Du trenger ikke å svare meg på stående fot.
+B Du trenger ikke å svare meg med ______________________________.
+
+58) A Politiet mener det var to ungdommer på 17 og 18 år som begikk innbruddet.
+B Politiet mener at det var to ungdommer på 17 og 18 år som sto ______________________________ innbruddet.
+
+59) A Hun prøver å være en god rollemodell.
+B Hun prøver å gå foran med et ______________________________.
+
+60) A Situasjonen har spisset seg kraftig til.
+B Situasjonen har blitt mye ______________________________.
+
+61) A Det regner. Derfor går han ikke ut i dag.
+B Han går ikke ut i dag ______________________________.
+
+62) A Han snakker ikke så mye norsk. Likevel har han fått jobb.
+B Han har fått jobb ______________________________ snakker så mye norsk.
+
+63) A De tar en tur på kjøpesenteret for å se på nye klær.
+B De tar en tur på kjøpesenteret fordi ______________________________ på nye klær.
+
+64) A Du må prøve denne osten. Den er fransk.
+B Du må prøve denne osten ______________________________ Frankrike.
+
+65) A Tromsø er en vakker by. Verdens nordligste universitet ligger der.
+B Tromsø, ______________________________ verdens nordligste universitet, er en vakker by.
+
+66) A Pennen du ga meg, virker ikke.
+B Du ga meg en penn ______________________________ virker.
+
+67) A På fritida liker hun å male.
+B Når ______________________________, liker hun å male.
+
+68) A Etter min mening er ikke dette en vanskelig sak.
+B Jeg mener ______________________________ en vanskelig sak.
+
+69) A Har du vært våken hele natta?
+B Har du sittet ______________________________ hele natta?
+
+70) A «Dere trenger ikke å ta oppvasken likevel», sa far.
+B Far sa at ______________________________ å ta oppvasken likevel.
+
+71) A Nå må du ta deg sammen!
+B Nå må du ______________________________ opp!
+
+72) A Nå er det ikke så kaldt lenger.
+B Nå har det blitt ganske ______________________________.
+
+73) A «Vask hendene før dere setter dere!» sa alltid mor.
+B Mor sa alltid at vi ______________________________.
+
+74) A Dette bordet er opptatt.
+B Dette bordet er ikke ______________________________.
+
+75) A Han er alltid til å stole på.
+B Han er alltid svært ______________________________.
+
+76) A Kommer du snart?
+B Er det ______________________________ du kommer?
+
+77) A Hun forventer mye av sønnen sin.
+B Hun har store ______________________________ til sønnen sin.
+
+78) A Skal du si noe i bryllupet deres?
+B Skal du holde ______________________________ i bryllupet deres?
+
+79) A Per knuste ruta, ikke Gunnar.
+B Det ______________________________, ikke Gunnar.
+
+80) A Å bruke refleks på mørke høstkvelder er viktig.
+B ______________________________ på mørke høstkvelder.
+
+## KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan forklare et ord eller et begrep ved å bruke synonymer eller antonymer, eller ved å beskrive egenskaper ved ordet.<br>*(I can explain a word or a concept by using synonyms or antonyms, or by describing the characteristics of the word or concept.)* | | |
+| Jeg vet hva et homonym er.<br>*(I know what a homonym is.)* | | |
+| Jeg kan noen vanlige norske homonymer.<br>*(I am familiar with some common Norwegian homonyms.)* | | |
+| Jeg kan kjenne igjen vanlige norske metaforer når jeg leser eller lytter.<br>*(I can recognize common metaphors used in Norwegian when I read or listen.)* | | |
+| Jeg kan bruke en del norske metaforer når jeg skriver eller snakker.<br>*(I can use some common Norwegian metaphors when I write or speak.)* | | |
+
