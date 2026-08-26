@@ -4749,3 +4749,195 @@ Det er fint om du gir beskjed om du kommer eller ikke.
 
 Vi håper at du kan komme.
 
+## KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan kjenne igjen setningsleddene subjekt, verbal, direkte objekt, indirekte objekt, predikativ og adverbial.<br>*(I can recognize the subject, verbal, direct object, indirect object, predicative and adverbial of the parts of a sentence.)* | | |
+| Jeg vet hvilke ord som hører til hvilke ledd i en setning.<br>*(I know which words belong to which parts of a sentence.)* | | |
+| Jeg kan skille mellom direkte objekt, indirekte objekt og predikativ.<br>*(I can distinguish between the direct object, indirect object and predicative.)* | | |
+| Jeg kan invertere en setning ved å flytte adverbialet fremst.<br>*(I can invert a sentence by placing the adverbial at the beginning.)* | | |
+| Jeg kan analysere en setning.<br>*(I can analyze a simple sentence.)* | | |
+
+## HELSETNINGER
+
+### 1 KULTURELLE UTTRYKK
+
+Ordne ordene i de fortellende setningene i riktig rekkefølge. Start setning med ordet i **feit skrift**.
+
+a) norsk **Amandaprisen** er filmprisutdeling en
+______________________________
+
+b) 1985 **Amandaprisen** første ble ut delt gang i
+______________________________
+
+c) finner **Prisutdelingen** i en gang Haugesund i året sted
+______________________________
+
+d) den verdensberømte omtrent **Kategoriene** er de som kjenner vi samme fra Oscar-utdelingen
+______________________________
+
+e) prisen **Den gjeveste prisen** for er beste kinofilm norske
+______________________________
+
+f) denne **I 2016** gikk filmen prisen «Bølgen» til
+______________________________
+
+g) på kino **Over 830 000 personer** «Bølgen» da gikk den så
+______________________________
+
+h) prisen **Samme år** kvinnelige Liv Bernhoft Osa fikk for beste hovedrolle
+______________________________
+
+i) i «Pyromanen» **Hun** fikk for rollen prisen sin filmen
+______________________________
+
+j) fikk **Anders Baasmo Christensen** prisen for hovedrolle beste mannlige
+______________________________
+
+k) for fikk **Han** prisen innsatsen i filmen «Welcome to Norway» sin
+______________________________
+
+(Kilde: https://www.nrk.no/kultur/dette-er-arets-amanda-vinnere-1.13108060)
+
+### 2 UTBRYTNING (1)
+
+Bryt ut **subjektet (S)** i setningene.
+
+Lytt og lag setninger med utbrutt subjekt.
+
+a) Politikerne diskuterte julefesten på møtet, ikke byråkratene.
+______________________________
+
+b) Far steker pannekaker hver lørdag, ikke mor.
+______________________________
+
+c) Hanne glemte brillene sine hos oss, ikke Peder.
+______________________________
+
+d) Legen la fra seg stetoskopet på kontoret, ikke sykepleieren.
+______________________________
+
+e) Familien Nilsen fikk solgt leiligheten i forrige uke, ikke familien Olsen.
+______________________________
+
+f) Trude kjøper alltid klær på høstsalget, ikke Anne.
+______________________________
+
+g) Ali ga ut ei barnebok nå nettopp, ikke Fiona.
+______________________________
+
+h) Sønnen hennes studerer psykologi på Lillehammer, ikke dattera.
+______________________________
+
+### 3 UTBRYTNING (2)
+
+Bryt ut **det direkte objektet (DO)** i setningene.
+
+Lytt og lag setninger med utbrutt objekt.
+
+a) Politikerne diskuterte julefesten på møtet, ikke sommeravslutningen.
+______________________________
+
+b) Far steker pannekaker hver lørdag, ikke kjøttkaker.
+______________________________
+
+c) Hanne glemte brillene sine hos oss, ikke telefonen.
+______________________________
+
+d) Legen la fra seg stetoskopet på kontoret, ikke journalen.
+______________________________
+
+e) Familien Nilsen fikk solgt leiligheten i forrige uke, ikke hytta.
+______________________________
+
+f) Trude kjøper alltid klær på høstsalget, ikke møbler.
+______________________________
+
+g) Ali ga ut ei barnebok nå nettopp, ikke ei diktsamling.
+______________________________
+
+h) Sønnen hennes studerer psykologi på Lillehammer, ikke historie.
+______________________________
+
+### 4 UTBRYTNING (3)
+
+Bryt ut **adverbialet (A)** i setningene.
+
+Lytt og lag setninger med utbrutt adverbial.
+
+a) Politikerne diskuterte julefesten på møtet, ikke i lunsjen.
+______________________________
+
+b) Far steker pannekaker hver lørdag, ikke hver onsdag.
+______________________________
+
+c) Hanne glemte brillene sine hos oss, ikke på jobben.
+______________________________
+
+d) Legen la fra seg stetoskopet på kontoret, ikke hos pasienten.
+______________________________
+
+e) Familien Nilsen fikk solgt leiligheten i forrige uke, ikke i går.
+______________________________
+
+f) Trude kjøper alltid klær på høstsalget, ikke ellers i året.
+______________________________
+
+g) Ali ga ut ei barnebok nå nettopp, ikke i fjor.
+______________________________
+
+h) Sønnen hennes studerer psykologi på Lillehammer, ikke i Oslo.
+______________________________
+
+### 5 PRESENTERING
+
+Lag presenteringssetninger av setningene.
+
+Lytt og lag presenteringssetninger.
+
+a) To hus er til salgs i gata vår.
+______________________________
+
+b) Noen gutter sto og hang utenfor butikken.
+______________________________
+
+c) Mange nye biler kjører på veiene for tida.
+______________________________
+
+d) Fire kråker har sittet og skreket på taket hele natta.
+______________________________
+
+e) En buss går fra sentrum hvert tjuende minutt.
+______________________________
+
+f) En interessant artikkel sto i avisa i dag.
+______________________________
+
+g) En fremmed mann ligger og sover på terrassen vår!
+______________________________
+
+h) Bare fire studenter kom på forelesningen på fredag.
+______________________________
+
+### 6 ER DET NOEN HJEMME?
+
+Lag spørsmål som er det-setninger. Merk at disse spørsmålene har bedre flyt når vi setter inn *det*.
+
+Lytt og lag det-setninger.
+
+a) Er noen hjemme?
+______________________________
+
+b) Ligger en mann i veien?
+______________________________
+
+c) Står noen utenfor?
+______________________________
+
+d) Ble noen endringer gjort?
+______________________________
+
+e) Ble ikke noen nye blokker likevel bygd?
+______________________________
+
