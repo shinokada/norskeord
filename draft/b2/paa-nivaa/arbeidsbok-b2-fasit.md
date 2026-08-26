@@ -1538,3 +1538,239 @@ f) Det er på høstsalget (at) Trude alltid kjøper …
 g) Det var nå nettopp (at) Ali ga ut …
 h) Det er på Lillehammer (at) sønnen hennes studerer …
 
+#### 5 PRESENTERING
+
+a) Det er to hus til salgs …
+b) Det sto noen gutter og hang …
+c) Det kjører mange nye biler …
+d) Det har sittet fire kråker og skreket …
+e) Det går en buss fra sentrum …
+f) Det sto en interessant artikkel i avisa …
+g) Det ligger en fremmed mann og sover …
+h) Det kom bare fire studenter …
+
+#### 6 ER DET NOEN HJEMME?
+
+a) Er det noen hjemme?
+b) Ligger det en mann i veien?
+c) Står det noen utenfor?
+d) Ble det gjort noen endringer?
+e) Ble det ikke bygd noen nye blokker likevel?
+f) Sitter det en mann på benken?
+g) Ligger det noen på sofaen?
+h) Ble det bestilt billetter til forestillingen?
+i) Ble det sagt noe om nedskjæringene i bedriften?
+j) Har det kommet noen henvendelser om leilighetene?
+
+#### 7 DET OG PASSIV
+
+a) Det ble ikke bygd noen nye blokker her likevel.
+b) Det vil bli lyst ut fire ledige stillinger etter jul.
+c) Det kan sies mye om den forrige direktøren.
+d) Det vil bli hengt opp lys overalt på senteret i førjulstida.
+e) Det har blitt skrevet mange bøker om Einar Gerhardsen.
+f) Det vil bli lagt ut informasjon om eksamen i god tid.
+g) Det blir fortalt en rekke skrekkhistorier om denne tannlegen.
+h) Det må drikkes mye vann til denne maten.
+
+#### 8 INVERSJON AV DET-SETNINGER
+
+a) Foreløpig er det valgfritt å ta eksamen.
+b) I skolen kommer det reformer på løpende bånd.
+c) Om sommeren kryr det av turister overalt.
+d) Nå brygger det opp til tordenvær.
+e) Hele helgen skal det bli nydelig vær.
+f) I det siste har det ikke blitt skrevet så mye om denne saken.
+g) Hver dag ble det bygd tre nye hus.
+h) I dag sto det en interessant artikkel i avisa.
+i) I våre dager er det enkelt å holde seg oppdatert.
+
+#### 9 DET-SETNINGER
+
+**Riktige setninger:**
+Er det kaffe på kannen, tro?
+Nå brygger det opp til uvær!
+Å spise frukt hver dag er viktig.
+Foreløpig vil det være valgfritt å ta eksamen.
+
+**Rettinger:**
+Banker det på døra nå?
+At du kunne komme på festen, var hyggelig.
+Hver dag ble det bygd nye hus.
+Skal det være noe mer før vi stenger?
+Om sommeren er det fint å kunne dra på ferie.
+Det var politikerne som fattet dette vedtaket, ikke byråkratene.
+
+#### 10 SPØRREORD
+
+a) Hvor lenge, b) Hvordan, c) Hva, d) Hvor, e) Hvor mange, f) Hva, g) Hvor, h) Hvorfor, i) Hvordan, j) Hvor, k) Hvorfor, l) Hvordan, m) Når
+
+#### 11 SETNINGSSKJEMA
+
+| | FORF. | v1 | MIDTF. | V2 | SLUTTF. |
+| --- | --- | --- | --- | --- | --- |
+| a) | Jeg | har | ikke | sett | henne på to dager. |
+| b) | I Bergen | regner | det stadig | | like mye som før. |
+| c) | Sist, men ikke minst, | vil | jeg | understreke | at trening er viktig. |
+| d) | Etter min mening | har | alle de involverte | | et ansvar i denne saken. |
+| e) | | Kan | du | sette | koppen din inn i oppvaskmaskinen? |
+| f) | Hvor lenge | kan | de | fortsette | på denne måten? |
+| g) | De gale kattene til naboen | har | visst | tenkt | å hyle hele natta. |
+| h) | Siden jeg går på norskkurs, | er | jeg ikke | | på jobbjakt akkurat nå. |
+| i) | Nå | hadde | det | vært | godt med litt kaffe. |
+
+#### 12 SLUTTFELTET: STED, TID OG ÅRSAK
+
+a) Legg klærne dine til vask før du går.
+b) Vi blir nok værende på hytta hele sommeren.
+c) Historien handler om noe som skjedde langt herfra for lenge siden.
+d) Huset har stått og ristet hele dagen på grunn av det forferdelige uværet.
+e) Jeg ble ferdig med søknaden innen fristen fordi du hjalp meg.
+f) Jeg har ikke hatt blund på øyet hele natta takket være alt bråket.
+
+#### 13 TRYKKTUNGT *DET*
+
+a)–j) Nei, jeg tror ikke det.
+
+#### 14 TRYKKLETT PRONOMEN OG *IKKE*
+
+a) De bruker dem ikke.
+b) De har ikke glemt henne.
+c) De har ikke lest den.
+d) De hilste ikke på henne.
+e) De klarte den ikke.
+f) De leste den ikke.
+g) De likte den ikke.
+h) De rakk den ikke.
+i) De skal ikke treffe henne.
+j) De så henne ikke.
+k) De tror ikke på henne.
+
+#### 15 HVA SKJEDDE I GÅR?
+
+a) I går kom ikke Frida hjem.
+b) I går kom hun ikke hjem.
+c) I går rakk ikke farmor å lage middag.
+d) I går rakk hun ikke å lage middag.
+e) I går fikk ikke tante Petra solgt noen hatter.
+f) I går fikk hun ikke solgt noen hatter.
+g) I går gikk ikke Selma og Petra søndagstur.
+h) I går gikk de ikke søndagstur.
+i) I går rakk ikke Frida og Ada forelesningen.
+j) I går rakk de ikke forelesningen.
+
+#### 16 SPRÅKDETEKTIV
+
+Nei, jeg vil ikke spørre naboene. Jeg kjenner dem ikke.
+Neste gang klarer du eksamen, tror du ikke det?
+Du må hjelpe meg. Jeg greier det ikke alene.
+
+*Rettinger:*
+
+Han skulle egentlig ta bussen klokka tre, men han nådde den ikke.
+Så flink du har blitt i norsk! – Nei, jeg synes ikke det.
+I går formiddag regnet det ikke i det hele tatt.
+Har vi ikke kjøpt poteter? Hvorfor husket du det ikke?
+
+#### 17 IMPERATIVSETNINGER
+
+a) Ikke gå inn dit! Jeg har nettopp vasket der.
+b) Ta oppvasken i dag, er du snill!
+c) Lag dere litt frokost!
+d) Husk tannlegetimen din i morgen!
+e) Ikke stå her og røyk! Det er forbudt.
+f) Kle godt på deg! Det er skikkelig kaldt ute i dag.
+g) Skriv om dette avsnittet! Det fungerer dårlig.
+h) Ikke kopier mer enn ett kapittel av boka.
+i) Ikke skriv pinkoden på bankkortet ditt!
+j) Ikke oppgi personnummeret ditt med mindre det er helt nødvendig.
+
+## LEDDSETNINGER
+
+#### 1 LEDDSETNINGER (1)
+
+| | Nominal leddsetning | Adjektivisk leddsetning | Adverbial leddsetning |
+| --- | --- | --- | --- |
+| a) | x | | |
+| b) | x | | |
+| c) | | | x |
+| d) | | | x |
+| e) | | x | |
+| f) | x | | |
+| g) | | x | |
+| h) | | | x |
+
+#### 2 NOMINALE LEDDSETNINGER
+
+a) At han ikke har sagt noe, er helt utrolig. – subjekt
+b) Jeg skjønner ikke hvordan hun får det til! – objekt
+c) Kan du fortelle hvor du bor? – objekt
+d) Problemet er at ingen vil si noe. – predikativ
+e) Han spør hvem som knuste ruta. – del av objekt
+f) Å holde på en hemmelighet kan være vanskelig. – subjekt
+g) Alle vet at det er sjefen som er problemet! – del av predikativ
+
+#### 3 Å REFERERE SPØRSMÅL (1)
+
+a) Frida vil vite om du kommer alene på festen.
+b) … om ikke Ada kan komme likevel.
+c) … om dere kan ta en tur på kino i kveld.
+d) … om du har tenkt å lese hele ettermiddagen.
+e) … om du allerede er ferdig med hjemmeksamen.
+f) … om du har funnet et sted å bo.
+g) … om du ikke kjenner noen her i byen.
+h) … om du skal på konserten i kveld.
+i) … om du ofte går ut på fredagene.
+
+#### 4 Å REFERERE SPØRSMÅL (2)
+
+a) Jeg lurer på hva klokka er.
+b) … hvor lenge jeg skal vente.
+c) … hvor du har vært.
+d) … hvorfor du ikke har ringt til meg.
+e) … hvem du snakker med.
+f) … hva du driver med.
+g) … hvordan det skal gå med oss.
+h) … når du kommer tilbake.
+i) … hvilken forklaring du har denne gangen.
+
+#### 5 HVA SIER SIMON?
+
+*Forslag:*
+
+Simon forteller at arbeidsledigheten i Sverige er ganske høy, særlig blant ungdom.
+Simon sier at det var grunnen til at han flyttet til Norge.
+Simon forteller at han bodde i Oslo først.
+Simon sier at han fikk jobb i Bergen etter et halvt års tid.
+Simon forteller at lønna var bedre i Bergen enn i Oslo.
+Simon sier at han bestemte seg for å flytte.
+
+#### 6 SOM? (1)
+
+a) hvem som, b) hva som, c) hvem, d) hvem som, e) hva, f) hva (hvis hun tenker på 'noe')/hvem (hvis hun tenker på 'noen'), g) hva, h) hvem som, i) hvem som, j) hvem, k) hvem som, l) hva
+
+#### 7 SOM? (2)
+
+a) Naboene hadde et problem de ikke klarte å løse.
+b) Jeg ønsker meg ei bok som er lett å lese.
+c) De har en hund som elsker å gjemme seg under sofaen.
+d) Vi har funnet et koselig hus vi gjerne vil kjøpe.
+e) På treningen i går traff jeg en mann jeg kjente fra før.
+f) Har du sett den nyeste filmen hans som hadde premiere i går?
+g) Hun protesterer mot den nye veien som kommer til å gå like forbi huset hennes.
+h) De har fattet et vedtak jeg mener at de ikke kan stå inne for.
+i) Miljøbevegelsen mener at de nye vindmøllene, som skal bygges på Sande, vil forstyrre dyrelivet.
+
+#### 8 HVA VIL DE?
+
+a) Han leser avisa fordi han vil holde seg oppdatert.
+b) De flytter fordi de vil ha bedre plass.
+c) Han drikker kaffe fordi han vil holde seg våken.
+d) Han arbeider hardt fordi han vil bli ferdig før sommeren.
+e) Hun har dratt på kjøpesenteret fordi hun vil se etter ei ny bukse.
+
+#### 9 DRAR DU NÅ, KAN JEG IKKE HJELPE DEG!
+
+a) Drar du nå, kan jeg ikke hjelpe deg.
+b) Deler du på 12, tror jeg stykket ditt går opp.
+
