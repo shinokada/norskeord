@@ -49,8 +49,8 @@ Skriv inn substantivene i riktig kolonne i tabellen.
 Hvilket kjønn har substantivene: hankjønn, hunkjønn eller intetkjønn?
 
 | ABSTRAKTER | KONKRETER |
-|---|---|
-| | |
+| ---------- | --------- |
+|            |           |
 
 ### 2 STOR ELLER LITEN BOKSTAV?
 
@@ -91,18 +91,18 @@ Hvordan bøyer vi disse substantivene?
 
 Fyll ut tabellen.
 
-| | ENTALL ubestemt form | ENTALL bestemt form | FLERTALL ubestemt form | FLERTALL bestemt form |
-|---|---|---|---|---|
-| 1 | | øyet | | |
-| 2 | en vaffel | | | |
-| 3 | ei datter | | | |
-| 4 | | | brødre | |
-| 5 | | dollaren | | |
-| 6 | ei and | | | |
-| 7 | | kneet | | |
-| 8 | | tåa | | |
-| 9 | et tre | | | |
-| 10 | en meter | | | |
+|     | ENTALL ubestemt form | ENTALL bestemt form | FLERTALL ubestemt form | FLERTALL bestemt form |
+| --- | -------------------- | ------------------- | ---------------------- | --------------------- |
+| 1   |                      | øyet                |                        |                       |
+| 2   | en vaffel            |                     |                        |                       |
+| 3   | ei datter            |                     |                        |                       |
+| 4   |                      |                     | brødre                 |                       |
+| 5   |                      | dollaren            |                        |                       |
+| 6   | ei and               |                     |                        |                       |
+| 7   |                      | kneet               |                        |                       |
+| 8   |                      | tåa                 |                        |                       |
+| 9   | et tre               |                     |                        |                       |
+| 10  | en meter             |                     |                        |                       |
 
 ### 5 UREGELRETTE SUBSTANTIV (2)
 
@@ -215,26 +215,26 @@ Hvilken regel gjelder for setningene? Skriv riktig nummer ved setningene.
 >
 > **Regel 4:** Vi bruker ubestemt artikkel hvis substantivet beskriver en persons egenskaper.
 
-| Regel | Setning |
-|---|---|
-| ___ | Er det sant at faren din er ateist? |
-| ___ | Petter er en grineunge! |
-| ___ | Pedro er spanjol. |
-| ___ | Maradona er en levende legende. |
-| ___ | Onkelen min var murer, men nå er han pensjonist. |
-| ___ | Hvem var rektor på denne skolen i 2010? |
-| ___ | Fikk du jobben som assisterende trener? |
-| ___ | Søstera hans er en skrytepave! |
-| ___ | Jorunn er katolikk. |
-| ___ | Laila er personlig kristen. |
-| ___ | Hun spiser som en gris. |
-| ___ | Vil du bli sykepleier? |
-| ___ | Leo er en lojal venn. |
-| ___ | Før var Jørn rektor, men nå er han skolesjef. |
-| ___ | Hallgeir er bonde, akkurat som faren. |
-| ___ | Naboen vår er oppfinner. |
-| ___ | Naboen vår er en gal oppfinner. |
-| ___ | Ikke vær redd! Jensen er en dyktig kirurg. |
+| Regel | Setning                                          |
+| ----- | ------------------------------------------------ |
+| ___   | Er det sant at faren din er ateist?              |
+| ___   | Petter er en grineunge!                          |
+| ___   | Pedro er spanjol.                                |
+| ___   | Maradona er en levende legende.                  |
+| ___   | Onkelen min var murer, men nå er han pensjonist. |
+| ___   | Hvem var rektor på denne skolen i 2010?          |
+| ___   | Fikk du jobben som assisterende trener?          |
+| ___   | Søstera hans er en skrytepave!                   |
+| ___   | Jorunn er katolikk.                              |
+| ___   | Laila er personlig kristen.                      |
+| ___   | Hun spiser som en gris.                          |
+| ___   | Vil du bli sykepleier?                           |
+| ___   | Leo er en lojal venn.                            |
+| ___   | Før var Jørn rektor, men nå er han skolesjef.    |
+| ___   | Hallgeir er bonde, akkurat som faren.            |
+| ___   | Naboen vår er oppfinner.                         |
+| ___   | Naboen vår er en gal oppfinner.                  |
+| ___   | Ikke vær redd! Jensen er en dyktig kirurg.       |
 
 ### 9 UBESTEMT ARTIKKEL
 
@@ -444,18 +444,18 @@ Det finnes ____________________, veier og plasser oppkalt etter Fridtjof Nansen 
 
 ## KAN DU DET?
 
-| Oppgave | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan skille mellom egennavn og fellesnavn, og jeg vet at vi skriver egennavn med stor forbokstav og fellesnavn med liten forbokstav.<br>*(I can distinguish between proper names and common names, and I know that we use capital letters when writing proper names, and lower case when writing common names.)* | | |
-| Jeg kan artikkelen på vanlige substantiv.<br>*(I know which article to use for common nouns.)* | | |
-| Jeg kan reglene for når vi bruker ubestemt artikkel foran substantivet når substantivet er predikativ i en setning.<br>*(I know the rules for when to use the indefinite article with the noun when the noun is predicative in a sentence.)* | | |
-| Jeg bruker ubestemt artikkel riktig foran substantivet i setninger der substantivet er predikativ.<br>*(I use the indefinite article correctly with the noun when the noun is predicative in a sentence.)* | | |
-| Jeg kan bøye substantiv i entall og flertall, ubestemt og bestemt form i et bøyningsskjema, både regelrette og uregelrette substantiv.<br>*(I can decline both regular and irregular nouns in singular and plural, indefinite and definite forms, using a noun declension chart.)* | | |
-| Jeg kan kjenne igjen substantivets kjønn, tall og form når jeg leser eller lytter.<br>*(I can recognize a noun's gender, number and form when I read or listen.)* | | |
-| Jeg kan bøye substantivet riktig i kjønn, tall og form når jeg snakker om kjente tema.<br>*(I can decline a noun correctly when talking about a familiar subject.)* | | |
-| Jeg kan forklare hvorfor det skal være ubestemt eller bestemt form ut fra andre ord i setningen.<br>*(I can explain why one should use the indefinite or definite form depending on other words in the sentence.)* | | |
-| Jeg kan identifisere en substantivfrase.<br>*(I can identify a noun phrase.)* | | |
-| Jeg kan identifisere kjernen i en substantivfrase.<br>*(I can identify the core of a noun phrase.)* | | |
+| Oppgave                                                                                                                                                                                                                                                                                                             | Jeg kan det. | Jeg må øve mer. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan skille mellom egennavn og fellesnavn, og jeg vet at vi skriver egennavn med stor forbokstav og fellesnavn med liten forbokstav.<br>*(I can distinguish between proper names and common names, and I know that we use capital letters when writing proper names, and lower case when writing common names.)* |              |                 |
+| Jeg kan artikkelen på vanlige substantiv.<br>*(I know which article to use for common nouns.)*                                                                                                                                                                                                                      |              |                 |
+| Jeg kan reglene for når vi bruker ubestemt artikkel foran substantivet når substantivet er predikativ i en setning.<br>*(I know the rules for when to use the indefinite article with the noun when the noun is predicative in a sentence.)*                                                                        |              |                 |
+| Jeg bruker ubestemt artikkel riktig foran substantivet i setninger der substantivet er predikativ.<br>*(I use the indefinite article correctly with the noun when the noun is predicative in a sentence.)*                                                                                                          |              |                 |
+| Jeg kan bøye substantiv i entall og flertall, ubestemt og bestemt form i et bøyningsskjema, både regelrette og uregelrette substantiv.<br>*(I can decline both regular and irregular nouns in singular and plural, indefinite and definite forms, using a noun declension chart.)*                                  |              |                 |
+| Jeg kan kjenne igjen substantivets kjønn, tall og form når jeg leser eller lytter.<br>*(I can recognize a noun's gender, number and form when I read or listen.)*                                                                                                                                                   |              |                 |
+| Jeg kan bøye substantivet riktig i kjønn, tall og form når jeg snakker om kjente tema.<br>*(I can decline a noun correctly when talking about a familiar subject.)*                                                                                                                                                 |              |                 |
+| Jeg kan forklare hvorfor det skal være ubestemt eller bestemt form ut fra andre ord i setningen.<br>*(I can explain why one should use the indefinite or definite form depending on other words in the sentence.)*                                                                                                  |              |                 |
+| Jeg kan identifisere en substantivfrase.<br>*(I can identify a noun phrase.)*                                                                                                                                                                                                                                       |              |                 |
+| Jeg kan identifisere kjernen i en substantivfrase.<br>*(I can identify the core of a noun phrase.)*                                                                                                                                                                                                                 |              |                 |
 
 ---
 
@@ -468,15 +468,15 @@ Sett strek under adjektivene i teksten. Hvilket substantiv forteller adjektivene
 > Ved første smaksprove kan det norske kjøkkenet kanskje virke traust og smakløst. Går det ikke for det meste i saltet kjøtt, kjedelige rotgrønnsaker og poteter? Alltid poteter! Men slik trenger det ikke å være. Det finnes mange spennende smaker som kan sette en pikant spiss på norsk mat. Har du prøvd med tørkete einerbær? Eller frisk, selvplukket ramsløk? Ramsløk er Nordens svar på hvitløk, og med litt ramsløk blir en norsk grønnsaksuppe minst like spennende som en italiensk minestronesuppe!
 
 | Dette adjektivet / Disse adjektivene | forteller om dette substantivet |
-|---|---|
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
+| ------------------------------------ | ------------------------------- |
+|                                      |                                 |
+|                                      |                                 |
+|                                      |                                 |
+|                                      |                                 |
+|                                      |                                 |
+|                                      |                                 |
+|                                      |                                 |
+|                                      |                                 |
 
 ### 2 BROSJYRE: TUREN GÅR TIL SAN ANDRÉS!
 
@@ -632,21 +632,21 @@ Finn adjektivene i teksten. Hvordan er de bøyd? Fyll ut tabellen.
 
 > Evens foreldre har ei koselig hytte. Den ligger ved sjøen, og det hører med et naust til hytta. Det lå et lite naust der før, men Evens far, Ola, rev det ned og bygde et større og bedre naust. Det nye naustet har et loft. Ola har isolert loftet, og i en ende av loftet har Ola satt inn to store vinduer. Ola liker å sitte på loftet sammen med Solrun og nyte den vakre utsikten. Jeg har den peneste kona og det fineste loftet, i alle fall langs denne fjorden, sier Ola med et glimt i øyet.
 
-| Adjektiv | | | | | |
-|---|---|---|---|---|---|
-| Kjønn | | | | | |
-| Tall | | | | | |
-| Form | | | | | |
-| Grad | | | | | |
-| Grunnform | | | | | |
+| Adjektiv  |     |     |     |     |     |
+| --------- | --- | --- | --- | --- | --- |
+| Kjønn     |     |     |     |     |     |
+| Tall      |     |     |     |     |     |
+| Form      |     |     |     |     |     |
+| Grad      |     |     |     |     |     |
+| Grunnform |     |     |     |     |     |
 
-| Adjektiv | | | | | |
-|---|---|---|---|---|---|
-| Kjønn | | | | | |
-| Tall | | | | | |
-| Form | | | | | |
-| Grad | | | | | |
-| Grunnform | | | | | |
+| Adjektiv  |     |     |     |     |     |
+| --------- | --- | --- | --- | --- | --- |
+| Kjønn     |     |     |     |     |     |
+| Tall      |     |     |     |     |     |
+| Form      |     |     |     |     |     |
+| Grad      |     |     |     |     |     |
+| Grunnform |     |     |     |     |     |
 
 ### 13 SUPERLATIV PÅ FORSKJELLIGE MÅTER
 
@@ -758,17 +758,17 @@ På slutten av 1800-tallet og begynnelsen av 1900-tallet valgte mange nordmenn �
 
 ### KAN DU DET?
 
-| Oppgave: | Jeg kan det. 😐 | Jeg må øve mer. 😐 |
-|---|---|---|
-| Jeg kan identifisere hvilket substantiv adjektivet beskriver.<br>*(I can identify which noun the adjective describes.)* | | |
-| Jeg kan bøye adjektivet til substantivet det står til.<br>*(I can decline the adjective correctly according to the noun it describes.)* | | |
-| Jeg kan bruke riktig bestemt artikkel foran adjektivet når substantivet står i bestemt form.<br>*(I can use the definite article correctly with the adjective when the noun is in definite form.)* | | |
-| Jeg kan gradbøye adjektiv som følger regelen for gradbøyning.<br>*(I can decline an adjective if it is regular.)* | | |
-| Jeg kan gradbøye vanlige uregelrette adjektiv.<br>*(I can decline common irregular adjectives.)* | | |
-| Jeg kan bruke adjektiv til å sammenlikne substantiv ved å gradbøye adjektivene.<br>*(I can use adjectives to compare nouns by declining the adjectives.)* | | |
-| Jeg kan bøye adjektivet i superlativ form til et substantiv i bestemt form.<br>*(I can decline an adjective in the superlative when it describes a noun in the definite form.)* | | |
-| Jeg kan kjenne igjen substantiverte adjektiv når jeg leser eller lytter.<br>*(I can recognize a substantive adjective when I read or listen.)* | | |
-| Jeg kan bruke substantiverte adjektiv riktig.<br>*(I can use substantive adjectives correctly.)* | | |
+| Oppgave:                                                                                                                                                                                           | Jeg kan det. 😐 | Jeg må øve mer. 😐 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------- |
+| Jeg kan identifisere hvilket substantiv adjektivet beskriver.<br>*(I can identify which noun the adjective describes.)*                                                                            |                |                   |
+| Jeg kan bøye adjektivet til substantivet det står til.<br>*(I can decline the adjective correctly according to the noun it describes.)*                                                            |                |                   |
+| Jeg kan bruke riktig bestemt artikkel foran adjektivet når substantivet står i bestemt form.<br>*(I can use the definite article correctly with the adjective when the noun is in definite form.)* |                |                   |
+| Jeg kan gradbøye adjektiv som følger regelen for gradbøyning.<br>*(I can decline an adjective if it is regular.)*                                                                                  |                |                   |
+| Jeg kan gradbøye vanlige uregelrette adjektiv.<br>*(I can decline common irregular adjectives.)*                                                                                                   |                |                   |
+| Jeg kan bruke adjektiv til å sammenlikne substantiv ved å gradbøye adjektivene.<br>*(I can use adjectives to compare nouns by declining the adjectives.)*                                          |                |                   |
+| Jeg kan bøye adjektivet i superlativ form til et substantiv i bestemt form.<br>*(I can decline an adjective in the superlative when it describes a noun in the definite form.)*                    |                |                   |
+| Jeg kan kjenne igjen substantiverte adjektiv når jeg leser eller lytter.<br>*(I can recognize a substantive adjective when I read or listen.)*                                                     |                |                   |
+| Jeg kan bruke substantiverte adjektiv riktig.<br>*(I can use substantive adjectives correctly.)*                                                                                                   |                |                   |
 
 ## DETERMINATIVER
 
@@ -779,18 +779,18 @@ Denne ordskyen inneholder determinativer. Hvilken rolle har determinativene? Skr
 Ordsky: selv, deres, hvilket, tolv, hver, hennes, begge, denne, sånn, min, egen, ingen, annen, alle, mange
 
 | DEMONSTRATIVER<br>(de peker ut substantivet) | KVANTOR<br>(de forteller hvor mange eller hvor mye det er av noe) | EIENDOMSORD<br>(de forteller hvem som eier noe, eller hvem noe tilhører) | FORSTERKERE<br>(de understreker noe, gjør et forhold sterkere eller tydeligere) |
-|---|---|---|---|
-| | | | |
+| -------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+|                                              |                                                                   |                                                                          |                                                                                 |
 
 ### 2 EIER OG EIENDEL
 
 Hvilket *eiendomsord* må du bruke? Se i tabellen og fyll ut i tekstene. Husk å bøye eiendomsordet.
 
-| EIER | «EIENDELER» |
-|---|---|
-| Even | TV, leilighet, verktøy, kollegaer |
-| Ola | bror, sykkel, bøker, kone, hytte, sønn |
-| Solrun | sykkel, foreldre |
+| EIER   | «EIENDELER»                            |
+| ------ | -------------------------------------- |
+| Even   | TV, leilighet, verktøy, kollegaer      |
+| Ola    | bror, sykkel, bøker, kone, hytte, sønn |
+| Solrun | sykkel, foreldre                       |
 
 **TEKST A**
 
@@ -1226,16 +1226,16 @@ Heyerdahl døde i 2002, og i 2011 ble ________________________ arkivet _________
 
 ### KAN DU DET?
 
-| Oppgave: | Jeg kan det. 😐 | Jeg må øve mer. 😐 |
-|---|---|---|
-| Jeg kan identifisere de ulike rollene determinativer har.<br>*(I can identify the different roles of determinatives.)* | | |
-| Jeg kan bruke demonstrativene *den/denne, det/dette* og *de/disse* riktig.<br>*(I can use the demonstratives den/denne, det/dette and de/disse correctly.)* | | |
-| Jeg kan bruke kvantorene *all, hel, ingen, mange* og *mye* riktig i frekvente setninger.<br>*(I can use the quantifiers all, hel, ingen, mange and mye correctly in frequent sentences.)* | | |
-| Jeg kan bruke eiendomsord riktig og bøye dem til substantivet de forteller om.<br>*(I can use possessives correctly and decline them according to the nouns they belong to.)* | | |
-| Jeg blander ikke personlige pronomen og eiendomsord når jeg snakker og skriver.<br>*(I do not mix personal pronouns and possessives when I speak or write.)* | | |
-| Jeg kan bruke forsterkeren *egen/eget/egne* riktig i frekvente setninger.<br>*(I can use the emphasizer egen/eget/egne correctly in frequent sentences.)* | | |
-| Jeg kan bruke forsterkeren *selv/selve/selveste* riktig i frekvente setninger.<br>*(I can use the emphasizer selv/selve/selveste correctly in frequent sentences.)* | | |
-| Jeg kan bruke forsterkeren *eneste* riktig i frekvente setninger.<br>*(I can use the emphasizer eneste correctly in frequent sentences.)* | | |
+| Oppgave:                                                                                                                                                                                  | Jeg kan det. 😐 | Jeg må øve mer. 😐 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------- |
+| Jeg kan identifisere de ulike rollene determinativer har.<br>*(I can identify the different roles of determinatives.)*                                                                    |                |                   |
+| Jeg kan bruke demonstrativene *den/denne, det/dette* og *de/disse* riktig.<br>*(I can use the demonstratives den/denne, det/dette and de/disse correctly.)*                               |                |                   |
+| Jeg kan bruke kvantorene *all, hel, ingen, mange* og *mye* riktig i frekvente setninger.<br>*(I can use the quantifiers all, hel, ingen, mange and mye correctly in frequent sentences.)* |                |                   |
+| Jeg kan bruke eiendomsord riktig og bøye dem til substantivet de forteller om.<br>*(I can use possessives correctly and decline them according to the nouns they belong to.)*             |                |                   |
+| Jeg blander ikke personlige pronomen og eiendomsord når jeg snakker og skriver.<br>*(I do not mix personal pronouns and possessives when I speak or write.)*                              |                |                   |
+| Jeg kan bruke forsterkeren *egen/eget/egne* riktig i frekvente setninger.<br>*(I can use the emphasizer egen/eget/egne correctly in frequent sentences.)*                                 |                |                   |
+| Jeg kan bruke forsterkeren *selv/selve/selveste* riktig i frekvente setninger.<br>*(I can use the emphasizer selv/selve/selveste correctly in frequent sentences.)*                       |                |                   |
+| Jeg kan bruke forsterkeren *eneste* riktig i frekvente setninger.<br>*(I can use the emphasizer eneste correctly in frequent sentences.)*                                                 |                |                   |
 
 ## VERB
 
@@ -1248,8 +1248,8 @@ Bøy de uregelrette verbene *a verbo* i tabellen. Hvor mange verb klarer du uten
 Ordsky: gjøre, reise, spise, stå, ligge, være, lage, drikke, tenke, sette, bli, selge, se, leve, snakke, velge, sitte, høre, sove, føle, gå, puste, kjøpe, hjelpe, spørre
 
 | INFINITIV | PRETERITUM | PERFEKTUM PARTISIPP |
-|---|---|---|
-| | | |
+| --------- | ---------- | ------------------- |
+|           |            |                     |
 
 **1–10 verb:** Øv mer! (Tips: Ha alltid ei liste med fem uregelrette verb i lomma!)
 
@@ -1486,19 +1486,19 @@ byen godt. Egentlig hadde hun reist til Paris for å studere
 
 Avisene bruker ofte setninger som står i passiv. Her er eksempler på setninger som vi kan finne i aviser. Står setningene i aktiv eller passiv? Sett kryss.
 
-| | AKTIV | PASSIV |
-|---|---|---|
-| a) Saken ble henlagt. | | |
-| b) Den dømte kommer til å anke saken. | | |
-| c) Direktøren fikk sparken. | | |
-| d) Bedriften ble slått konkurs. | | |
-| e) Den skyldige vil bli funnet. | | |
-| f) Mye tyder på at den omtalte sjåføren vil miste jobben. | | |
-| g) Leiligheten ble totalskadd i brannen. | | |
-| h) Huset ble solgt til prisantydning. | | |
-| i) De ansatte har gått til streik. | | |
-| j) Han ble dømt til å betale saksomkostninger. | | |
-| k) Politikerne klarer ikke å bli enige. | | |
+|                                                           | AKTIV | PASSIV |
+| --------------------------------------------------------- | ----- | ------ |
+| a) Saken ble henlagt.                                     |       |        |
+| b) Den dømte kommer til å anke saken.                     |       |        |
+| c) Direktøren fikk sparken.                               |       |        |
+| d) Bedriften ble slått konkurs.                           |       |        |
+| e) Den skyldige vil bli funnet.                           |       |        |
+| f) Mye tyder på at den omtalte sjåføren vil miste jobben. |       |        |
+| g) Leiligheten ble totalskadd i brannen.                  |       |        |
+| h) Huset ble solgt til prisantydning.                     |       |        |
+| i) De ansatte har gått til streik.                        |       |        |
+| j) Han ble dømt til å betale saksomkostninger.            |       |        |
+| k) Politikerne klarer ikke å bli enige.                   |       |        |
 
 ### 8 AKTIV OG PASSIV (1) 🎧
 
@@ -1586,13 +1586,13 @@ m) betales innen **Regningen** torsdag må ________________________________
 
 Skriv om instruksjonen fra *imperativ* til *passiv*. Vær oppmerksom på at ikke alle setningene bør stå i passiv.
 
-| | |
-|---|---|
-| Tørk epler med et rent kjøkkenhåndkle og skjær dem i tynne skiver (3 mm) med en skarp kniv. Fjern kjernehuset om du synes det er for grovt og stort. | |
-| Sett stekeovnen på varmluft og 90 °C. Legg epleskivene tett i tett (men ikke oppå hverandre) på bakepapir og plasser dem i ovnen. Du kan steke minst tre brett på en gang. | |
-| Stek eplene i ca. 1 time. Snu skivene og stek videre i 1 time til. | |
-| Senk varmen til 50 °C, og tørk eplechipsen til den er helt tørr og sprø. Dette kan ta hele natten. | |
-| Oppbevar eplechipsen i tette glass eller plastpose. De har lang holdbarhetstid. | |
+|                                                                                                                                                                            |     |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| Tørk epler med et rent kjøkkenhåndkle og skjær dem i tynne skiver (3 mm) med en skarp kniv. Fjern kjernehuset om du synes det er for grovt og stort.                       |     |
+| Sett stekeovnen på varmluft og 90 °C. Legg epleskivene tett i tett (men ikke oppå hverandre) på bakepapir og plasser dem i ovnen. Du kan steke minst tre brett på en gang. |     |
+| Stek eplene i ca. 1 time. Snu skivene og stek videre i 1 time til.                                                                                                         |     |
+| Senk varmen til 50 °C, og tørk eplechipsen til den er helt tørr og sprø. Dette kan ta hele natten.                                                                         |     |
+| Oppbevar eplechipsen i tette glass eller plastpose. De har lang holdbarhetstid.                                                                                            |     |
 
 (Kilde: https://www.matprat.no/oppskrifter/familien/eplechips/)
 
@@ -1602,16 +1602,16 @@ Sett inn presens partisipp i setningene.
 
 Er partisippet *adjektiv* eller *adverb* i setningene? Skriv riktig svar i kolonnen til høyre.
 
-| | | ADJEKTIV ELLER ADVERB? |
-|---|---|---|
-| a) å stråle | Hun gikk ut av videregående med ________________ karakterer. | |
-| b) å skuffe | Han fikk et ________________ resultat på eksamen. | |
-| c) å rase | Bilen kom mot oss i en ________________ fart. | |
-| d) å krype | Han kom ________________ over målstreken, fullstendig utkjørt! | |
-| e) å rase | Hun ble ________________ da jeg prøvde å protestere. | |
-| f) å leke | Dette var ________________ lett! | |
-| g) å tvile | Jeg stiller meg ________________ til det du sier. | |
-| h) å hjelpe | Kan du gi meg en ________________ hånd? | |
+|             |                                                                | ADJEKTIV ELLER ADVERB? |
+| ----------- | -------------------------------------------------------------- | ---------------------- |
+| a) å stråle | Hun gikk ut av videregående med ________________ karakterer.   |                        |
+| b) å skuffe | Han fikk et ________________ resultat på eksamen.              |                        |
+| c) å rase   | Bilen kom mot oss i en ________________ fart.                  |                        |
+| d) å krype  | Han kom ________________ over målstreken, fullstendig utkjørt! |                        |
+| e) å rase   | Hun ble ________________ da jeg prøvde å protestere.           |                        |
+| f) å leke   | Dette var ________________ lett!                               |                        |
+| g) å tvile  | Jeg stiller meg ________________ til det du sier.              |                        |
+| h) å hjelpe | Kan du gi meg en ________________ hånd?                        |                        |
 
 > Presens partisipp er ofte en del av et fast uttrykk (et idiom). Dette gjelder særlig de tre siste setningene i denne oppgaven (setning f-h). Hvordan vil du oversette disse setningene til morsmålet ditt?
 >
@@ -1761,17 +1761,17 @@ De andre formene av verbet er sammensatte. Da kaller vi det første verbet for *
 
 Les setningene, og skriv verbene i riktig kolonne. Hvilket tempus står verbet i?
 
-| | VERB 1 | VERB 2 | TEMPUS |
-|---|---|---|---|
-| a) Etter at vi hadde spist, tok vi en tur til byen. | | | |
-| b) Hvis du vil, kan vi treffes seinere i dag. | | | |
-| c) Bilen ble stjålet mens eieren var på ferie. | | | |
-| d) Huset må ryddes før gjestene kommer. | | | |
-| e) Hvis jeg hadde fått en invitasjon, hadde jeg selvfølgelig kommet. | | | |
-| f) Bilen skal ha tilhørt kameratens mor. | | | |
-| g) Hun hadde ikke forstått spørsmålet mitt, så jeg måtte forklare alt en gang til. | | | |
-| h) Dette er en interessant problemstilling som vi må se nærmere på etter hvert. | | | |
-| i) Skulle det være noe mer, er det bare å ringe! | | | |
+|                                                                                    | VERB 1 | VERB 2 | TEMPUS |
+| ---------------------------------------------------------------------------------- | ------ | ------ | ------ |
+| a) Etter at vi hadde spist, tok vi en tur til byen.                                |        |        |        |
+| b) Hvis du vil, kan vi treffes seinere i dag.                                      |        |        |        |
+| c) Bilen ble stjålet mens eieren var på ferie.                                     |        |        |        |
+| d) Huset må ryddes før gjestene kommer.                                            |        |        |        |
+| e) Hvis jeg hadde fått en invitasjon, hadde jeg selvfølgelig kommet.               |        |        |        |
+| f) Bilen skal ha tilhørt kameratens mor.                                           |        |        |        |
+| g) Hun hadde ikke forstått spørsmålet mitt, så jeg måtte forklare alt en gang til. |        |        |        |
+| h) Dette er en interessant problemstilling som vi må se nærmere på etter hvert.    |        |        |        |
+| i) Skulle det være noe mer, er det bare å ringe!                                   |        |        |        |
 
 ### 18 JEG HAR HØRT AT ...
 
@@ -1960,23 +1960,23 @@ Finn et fast sammensatt *partikkelverb* som betyr det samme eller omtrent det sa
 
 Hvilken ordklasse er det **markerte** ordet? Hvilket partikkelverb (løst eller fast sammensatt) er det laget av?
 
-| | | ORDKLASSE | PARTIKKELVERB |
-|---|---|---|---|
-| a) | Hvordan tok han **avslaget**? | | |
-| b) | Mange selgere er veldig **pågående**. | | |
-| c) | Jeg trenger **underskriften** din her … og her. | | |
-| d) | **Oppmøtet** er veldig godt i dag. | | |
-| e) | Skjønner du **sammenhengen**? | | |
-| f) | Møtet er **utsatt**. | | |
-| g) | Diderot var en av **opplysningstidas** store filosofer. | | |
-| i) | **Utgangen** er stengt. | | |
-| j) | Det har vært en stor **overgang** for henne å begynne på ny skole. | | |
-| k) | **Påkjørselen** bakfra skyldes uoppmerksomhet fra førerens side. | | |
-| l) | Det blir **diktopplesning** på biblioteket klokka fire. | | |
-| m) | Dette var ikke **avtalen**! | | |
-| n) | Hva mener du om **påstandene** hans? | | |
-| o) | Har du hilst på hans **tilkommende**? | | |
-| p) | Hun skrev under med **påholden** penn. | | |
+|     |                                                                    | ORDKLASSE | PARTIKKELVERB |
+| --- | ------------------------------------------------------------------ | --------- | ------------- |
+| a)  | Hvordan tok han **avslaget**?                                      |           |               |
+| b)  | Mange selgere er veldig **pågående**.                              |           |               |
+| c)  | Jeg trenger **underskriften** din her … og her.                    |           |               |
+| d)  | **Oppmøtet** er veldig godt i dag.                                 |           |               |
+| e)  | Skjønner du **sammenhengen**?                                      |           |               |
+| f)  | Møtet er **utsatt**.                                               |           |               |
+| g)  | Diderot var en av **opplysningstidas** store filosofer.            |           |               |
+| i)  | **Utgangen** er stengt.                                            |           |               |
+| j)  | Det har vært en stor **overgang** for henne å begynne på ny skole. |           |               |
+| k)  | **Påkjørselen** bakfra skyldes uoppmerksomhet fra førerens side.   |           |               |
+| l)  | Det blir **diktopplesning** på biblioteket klokka fire.            |           |               |
+| m)  | Dette var ikke **avtalen**!                                        |           |               |
+| n)  | Hva mener du om **påstandene** hans?                               |           |               |
+| o)  | Har du hilst på hans **tilkommende**?                              |           |               |
+| p)  | Hun skrev under med **påholden** penn.                             |           |               |
 
 ### 26 PARTIKKEL OG PARTISIPP
 
@@ -2054,15 +2054,15 @@ Ingrid Espelid Hovig ble ________________ på Askøy utenfor Bergen i 1924. Ette
 
 ### KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan veksle mellom presens og preteritum på riktig måte når jeg snakker eller skriver.<br>*(I can switch between the present and past tenses in an adequate way when I speak or write.)* | | |
-| Jeg kan bruke presens perfektum riktig i enkle kontekster for presens perfektum.<br>*(I can use the present perfect correctly in simple contexts for present perfect.)* | | |
-| Jeg kan identifisere hva som er det finitte verbet og det infinitte verbet i en setning.<br>*(I can identify what is the finite verb and the nonfinite verb in a sentence.)* | | |
-| Jeg kan skrive om setninger fra aktiv til passiv.<br>*(I can convert simple sentences from the active form to the passive form.)* | | |
-| Jeg kan skrive om setninger fra passiv til aktiv.<br>*(I can convert simple sentences from the passive form to the active form.)* | | |
-| Jeg kan bruke presens partisipp som adjektiv og som adverb.<br>*(I can use the present participle as an adjective and an adverb.)* | | |
-| Jeg kan bruke perfektum partisipp som adjektiv.<br>*(I can use the past participle as an adjective.)* | | |
+| Oppgave:                                                                                                                                                                                    | Jeg kan det. | Jeg må øve mer. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan veksle mellom presens og preteritum på riktig måte når jeg snakker eller skriver.<br>*(I can switch between the present and past tenses in an adequate way when I speak or write.)* |              |                 |
+| Jeg kan bruke presens perfektum riktig i enkle kontekster for presens perfektum.<br>*(I can use the present perfect correctly in simple contexts for present perfect.)*                     |              |                 |
+| Jeg kan identifisere hva som er det finitte verbet og det infinitte verbet i en setning.<br>*(I can identify what is the finite verb and the nonfinite verb in a sentence.)*                |              |                 |
+| Jeg kan skrive om setninger fra aktiv til passiv.<br>*(I can convert simple sentences from the active form to the passive form.)*                                                           |              |                 |
+| Jeg kan skrive om setninger fra passiv til aktiv.<br>*(I can convert simple sentences from the passive form to the active form.)*                                                           |              |                 |
+| Jeg kan bruke presens partisipp som adjektiv og som adverb.<br>*(I can use the present participle as an adjective and an adverb.)*                                                          |              |                 |
+| Jeg kan bruke perfektum partisipp som adjektiv.<br>*(I can use the past participle as an adjective.)*                                                                                       |              |                 |
 
 ---
 
@@ -2268,19 +2268,19 @@ Adverb kan ha forskjellige funksjoner:
 
 Hvilken funksjon har det **markerte** adverbet i setningene under? Sett kryss.
 
-| | 1 | 2 | 3 | 4 |
-|---|---|---|---|---|
-| a) Hun snakker **utrolig** fort. Jeg får ikke med meg noe av det hun sier! | | | | |
-| b) **Så** fin kjole du har! Hvor har du kjøpt den? | | | | |
-| c) Dette huset har vi ikke råd til. Det er **altfor** dyrt. | | | | |
-| d) Jeg har **aldri** vært i Russland. | | | | |
-| e) Hun studerer sykepleie. **Samtidig** arbeider hun på et sykehjem. | | | | |
-| f) Han bor ganske **sentralt**. | | | | |
-| g) De drar alltid **sørover** i ferien. | | | | |
-| h) Naboene våre er ikke hjemme. **Derfor** tar vi inn posten deres. | | | | |
-| i) Nå har hun snakket **lenge**, synes jeg. | | | | |
-| j) **Nå** har hun snakket lenge, synes jeg. | | | | |
-| k) Jeg vil **gjerne** komme på festen din. | | | | |
+|                                                                            | 1   | 2   | 3   | 4   |
+| -------------------------------------------------------------------------- | --- | --- | --- | --- |
+| a) Hun snakker **utrolig** fort. Jeg får ikke med meg noe av det hun sier! |     |     |     |     |
+| b) **Så** fin kjole du har! Hvor har du kjøpt den?                         |     |     |     |     |
+| c) Dette huset har vi ikke råd til. Det er **altfor** dyrt.                |     |     |     |     |
+| d) Jeg har **aldri** vært i Russland.                                      |     |     |     |     |
+| e) Hun studerer sykepleie. **Samtidig** arbeider hun på et sykehjem.       |     |     |     |     |
+| f) Han bor ganske **sentralt**.                                            |     |     |     |     |
+| g) De drar alltid **sørover** i ferien.                                    |     |     |     |     |
+| h) Naboene våre er ikke hjemme. **Derfor** tar vi inn posten deres.        |     |     |     |     |
+| i) Nå har hun snakket **lenge**, synes jeg.                                |     |     |     |     |
+| j) **Nå** har hun snakket lenge, synes jeg.                                |     |     |     |     |
+| k) Jeg vil **gjerne** komme på festen din.                                 |     |     |     |     |
 
 ### 5 STEDSADVERB (1)
 
@@ -2518,12 +2518,12 @@ Sett inn *kanskje, selvfølgelig* eller *nok* i setning B slik at den betyr omtr
 
 Lytt og gjenta.
 
-| | A | B |
-|---|---|---|
-| a) | Det er klart du skal bli med oss på ferie! | ________________ skal du bli med oss på ferie! |
-| b) | Jeg er ganske sikker på at det blir bra vær i morgen. | Det blir ________________ bra vær i morgen. |
-| c) | Det er mulig hun skal flytte over sommeren. | Hun skal ________________ flytte over sommeren. |
-| d) | Alle vet at dette går bra. | ________________ går dette bra. |
+|     | A                                                     | B                                               |
+| --- | ----------------------------------------------------- | ----------------------------------------------- |
+| a)  | Det er klart du skal bli med oss på ferie!            | ________________ skal du bli med oss på ferie!  |
+| b)  | Jeg er ganske sikker på at det blir bra vær i morgen. | Det blir ________________ bra vær i morgen.     |
+| c)  | Det er mulig hun skal flytte over sommeren.           | Hun skal ________________ flytte over sommeren. |
+| d)  | Alle vet at dette går bra.                            | ________________ går dette bra.                 |
 
 e) Jeg tviler på at han blir frisk til i morgen. → Han blir ________________ ikke frisk til i morgen.
 
@@ -2934,16 +2934,16 @@ Cecilia er født ________ Colombia. Hun ble adoptert ________ Norge da hun var t
 
 ### KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg vet hva en preposisjon er, og kan kjenne den igjen når jeg lytter eller leser.<br>*(I know what a preposition is and can recognize it when I listen or read.)* | | |
-| Jeg kan plassere preposisjonen på riktig sted i setningen.<br>*(I can place a preposition in the correct place in a sentence.)* | | |
-| Jeg kan bruke en rekke preposisjoner riktig hvis preposisjonen har beholdt grunnbetydningen sin for sted og tid.<br>*(I can use several prepositions correctly if the preposition has maintained its basic meaning of place and time.)* | | |
-| Jeg kan bruke områderegelen og kantstedsregelen for å vite om jeg skal bruke *i* eller *på*.<br>*(I can use the area rule and the edge location rule to determine whether to use i or på.)* | | |
-| Jeg kan bruke riktig form av substantivet når substantivet står etter en preposisjon hvis uttrykket er frekvent.<br>*(I can use the correct form of a noun when the noun is following a preposition, if the expression is frequent.)* | | |
-| Jeg kan bruke noen preposisjoner i preposisjonsfraser der de har abstrakt betydning.<br>*(I can use some prepositions in phrases where the meaning of the preposition is abstract.)* | | |
-| Jeg kan bruke noen faste uttrykk med verb og preposisjon.<br>*(I can use some idiomatic expressions containing a verb and a preposition.)* | | |
-| Jeg kan bruke en del sammensatte preposisjoner som er vanlige, slik som *i løpet av, ved siden av, i nærheten av* osv.<br>*(I can use several common compound prepositions such as i løpet av, ved siden av, i nærheten av etc.)* | | |
+| Oppgave:                                                                                                                                                                                                                                | Jeg kan det. | Jeg må øve mer. |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg vet hva en preposisjon er, og kan kjenne den igjen når jeg lytter eller leser.<br>*(I know what a preposition is and can recognize it when I listen or read.)*                                                                      |              |                 |
+| Jeg kan plassere preposisjonen på riktig sted i setningen.<br>*(I can place a preposition in the correct place in a sentence.)*                                                                                                         |              |                 |
+| Jeg kan bruke en rekke preposisjoner riktig hvis preposisjonen har beholdt grunnbetydningen sin for sted og tid.<br>*(I can use several prepositions correctly if the preposition has maintained its basic meaning of place and time.)* |              |                 |
+| Jeg kan bruke områderegelen og kantstedsregelen for å vite om jeg skal bruke *i* eller *på*.<br>*(I can use the area rule and the edge location rule to determine whether to use i or på.)*                                             |              |                 |
+| Jeg kan bruke riktig form av substantivet når substantivet står etter en preposisjon hvis uttrykket er frekvent.<br>*(I can use the correct form of a noun when the noun is following a preposition, if the expression is frequent.)*   |              |                 |
+| Jeg kan bruke noen preposisjoner i preposisjonsfraser der de har abstrakt betydning.<br>*(I can use some prepositions in phrases where the meaning of the preposition is abstract.)*                                                    |              |                 |
+| Jeg kan bruke noen faste uttrykk med verb og preposisjon.<br>*(I can use some idiomatic expressions containing a verb and a preposition.)*                                                                                              |              |                 |
+| Jeg kan bruke en del sammensatte preposisjoner som er vanlige, slik som *i løpet av, ved siden av, i nærheten av* osv.<br>*(I can use several common compound prepositions such as i løpet av, ved siden av, i nærheten av etc.)*       |              |                 |
 
 ## KONJUNKSJONER
 
@@ -3034,11 +3034,11 @@ ________________________________________________
 
 ### KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan binde sammen ord eller setninger med konjunksjoner.<br>*(I can combine words or simple sentences using conjunctions.)* | | |
-| Jeg kan bruke sammensatte konjunksjoner for å binde sammen ord eller setninger.<br>*(I can use compound conjunctions to combine word or sentences.)* | | |
-| Jeg kan bruke konjunksjoner for å skape sammenheng mellom setninger (i en tekst).<br>*(I can use conjunctions to create cohesion between sentences (in a text).)* | | |
+| Oppgave:                                                                                                                                                          | Jeg kan det. | Jeg må øve mer. |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan binde sammen ord eller setninger med konjunksjoner.<br>*(I can combine words or simple sentences using conjunctions.)*                                    |              |                 |
+| Jeg kan bruke sammensatte konjunksjoner for å binde sammen ord eller setninger.<br>*(I can use compound conjunctions to combine word or sentences.)*              |              |                 |
+| Jeg kan bruke konjunksjoner for å skape sammenheng mellom setninger (i en tekst).<br>*(I can use conjunctions to create cohesion between sentences (in a text).)* |              |                 |
 
 ## SUBJUNKSJONER
 
@@ -3309,14 +3309,14 @@ ________ han hadde fullført barneskolen, tok Magnus fri i et år for å spille 
 
 ### KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan binde sammen setninger med nominale subjunksjoner.<br>*(I can combine sentences with nominal subordinating conjunctions.)* | | |
-| Jeg kan binde sammen setninger med adjektivisk subjunksjon.<br>*(I can combine sentences with adjective subordinating conjunctions.)* | | |
-| Jeg kan bruke de mest frekvente adverbiale subjunksjonene riktig.<br>*(I can use the most frequent adverbial subordinating conjunctions correctly.)* | | |
-| Jeg kan plassere nominale leddsetninger først i helsetningen.<br>*(I can begin a complete sentence with a nominal subordinated clause.)* | | |
-| Jeg kan plassere adverbiale leddsetninger først i helsetningen.<br>*(I can begin a complete sentence with an adverbial subordinated clause.)* | | |
-| Jeg vet hva de fleste adverbiale subjunksjonene betyr på mitt morsmål.<br>*(I know what most of the adverbial subordinating conjunctions mean in my language.)* | | |
+| Oppgave:                                                                                                                                                        | Jeg kan det. | Jeg må øve mer. |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan binde sammen setninger med nominale subjunksjoner.<br>*(I can combine sentences with nominal subordinating conjunctions.)*                              |              |                 |
+| Jeg kan binde sammen setninger med adjektivisk subjunksjon.<br>*(I can combine sentences with adjective subordinating conjunctions.)*                           |              |                 |
+| Jeg kan bruke de mest frekvente adverbiale subjunksjonene riktig.<br>*(I can use the most frequent adverbial subordinating conjunctions correctly.)*            |              |                 |
+| Jeg kan plassere nominale leddsetninger først i helsetningen.<br>*(I can begin a complete sentence with a nominal subordinated clause.)*                        |              |                 |
+| Jeg kan plassere adverbiale leddsetninger først i helsetningen.<br>*(I can begin a complete sentence with an adverbial subordinated clause.)*                   |              |                 |
+| Jeg vet hva de fleste adverbiale subjunksjonene betyr på mitt morsmål.<br>*(I know what most of the adverbial subordinating conjunctions mean in my language.)* |              |                 |
 
 ## KAPITTEL 2 ORDLAGING
 
@@ -3586,12 +3586,12 @@ n) Vokser ukeblader på trær? ________________
 
 ## KAN DU DET?
 
-| Oppgave | Jeg kan det. | Jeg må øve mer. |
-| --- | --- | --- |
-| Jeg vet at etterleddet i et sammensatt ord bestemmer ordets ordklasse og bøyning. *(I know that the last part of a compound word defines the word's part of speech and its declension.)* | | |
-| Jeg vet at forleddet i et sammensatt ord vanligvis fungerer som en beskrivelse av etterleddet. *(I know that the first part of a compound word normally provides a description of the last word.)* | | |
-| Jeg kan noen regler for hvilken fugeformativ et sammensatt ord skal ha. *(I know some of the rules for which letter (s, e or nothing) a compound word uses.)* | | |
-| Jeg kan dele opp et sammensatt ord og dermed forklare hva det betyr. *(I can divide a compound word into its parts and explain its meaning.)* | | |
+| Oppgave                                                                                                                                                                                            | Jeg kan det. | Jeg må øve mer. |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg vet at etterleddet i et sammensatt ord bestemmer ordets ordklasse og bøyning. *(I know that the last part of a compound word defines the word's part of speech and its declension.)*           |              |                 |
+| Jeg vet at forleddet i et sammensatt ord vanligvis fungerer som en beskrivelse av etterleddet. *(I know that the first part of a compound word normally provides a description of the last word.)* |              |                 |
+| Jeg kan noen regler for hvilken fugeformativ et sammensatt ord skal ha. *(I know some of the rules for which letter (s, e or nothing) a compound word uses.)*                                      |              |                 |
+| Jeg kan dele opp et sammensatt ord og dermed forklare hva det betyr. *(I can divide a compound word into its parts and explain its meaning.)*                                                      |              |                 |
 
 ## AVLEDNINGER
 
@@ -3710,54 +3710,54 @@ x) medgreie
 
 Fyll ut tabellen.
 
-| | VERB | SUBSTANTIV |
-| --- | --- | --- |
-| a) | å snekre | |
-| b) | å fiske | |
-| c) | | et syn |
-| d) | | en hørsel |
-| e) | | en maler |
-| f) | å bygge | |
-| g) | å håpe | |
-| h) | | en tvil |
-| i) | å trene | |
-| j) | å lære | |
+|     | VERB     | SUBSTANTIV |
+| --- | -------- | ---------- |
+| a)  | å snekre |            |
+| b)  | å fiske  |            |
+| c)  |          | et syn     |
+| d)  |          | en hørsel  |
+| e)  |          | en maler   |
+| f)  | å bygge  |            |
+| g)  | å håpe   |            |
+| h)  |          | en tvil    |
+| i)  | å trene  |            |
+| j)  | å lære   |            |
 
 ### 6 Å GLEMME – GLEMSOM
 
 Fyll ut tabellen.
 
-| | VERB | ADJEKTIV |
-| --- | --- | --- |
-| a) | å glemme | |
-| b) | å sulte | |
-| c) | | forståelsesfull |
-| d) | | bærbar |
-| e) | | lesbar |
-| f) | å produsere | |
-| g) | | spiselig |
-| h) | å blø | |
-| i) | å lede | |
-| j) | | rasende |
+|     | VERB        | ADJEKTIV        |
+| --- | ----------- | --------------- |
+| a)  | å glemme    |                 |
+| b)  | å sulte     |                 |
+| c)  |             | forståelsesfull |
+| d)  |             | bærbar          |
+| e)  |             | lesbar          |
+| f)  | å produsere |                 |
+| g)  |             | spiselig        |
+| h)  | å blø       |                 |
+| i)  | å lede      |                 |
+| j)  |             | rasende         |
 
 ### 7 EN STEIN – STEINETE
 
 Fyll ut tabellen.
 
-| | SUBSTANTIV | ADJEKTIV |
-| --- | --- | --- |
-| a) | en stein | |
-| b) | en visjon | |
-| c) | en ungdom | |
-| d) | | blodig |
-| e) | | vanskelig |
-| f) | en hjelp | |
-| g) | et arbeid | |
-| h) | en gift | |
-| i) | | isete |
-| j) | | kremaktig |
-| k) | | fantasifull |
-| l) | en idé | |
+|     | SUBSTANTIV | ADJEKTIV    |
+| --- | ---------- | ----------- |
+| a)  | en stein   |             |
+| b)  | en visjon  |             |
+| c)  | en ungdom  |             |
+| d)  |            | blodig      |
+| e)  |            | vanskelig   |
+| f)  | en hjelp   |             |
+| g)  | et arbeid  |             |
+| h)  | en gift    |             |
+| i)  |            | isete       |
+| j)  |            | kremaktig   |
+| k)  |            | fantasifull |
+| l)  | en idé     |             |
 
 ### 8 HVA BETYR DET? (1)
 
@@ -3820,8 +3820,8 @@ Sett ordene i ordskyen i riktig kolonne.
 Ord i ordskyen: nymalt, slå, skrift, forståelsesfull, forstå, lærer, skriftlig, muntlig, lærerik, hjelpsom, blodig, blø, student, munn, se, male, blod, hørsel, høre, maling, slag, skrive, hjelpe, hjelp, forståelig
 
 | SUBSTANTIV | VERB | ADJEKTIV |
-| --- | --- | --- |
-| | | |
+| ---------- | ---- | -------- |
+|            |      |          |
 
 ### 11 SUBSTANTIV, VERB ELLER ADJEKTIV?
 
@@ -3904,8 +3904,8 @@ Sett substantivene i ordskyen i rett kolonne. Husk artikkel.
 Ord i ordskyen: seer, dom, leder, dommer, syn, begynnelse, trening, salg, leser, læring, trener, [uklart ord], ledelse, arbeider, baker, tviler, selger, tvil, lærer, baking
 
 | PERSON | SAK |
-| --- | --- |
-| | |
+| ------ | --- |
+|        |     |
 
 ### 13 ORDLAGING AV PARTIKKELVERB
 
@@ -3940,14 +3940,14 @@ h) Vi må kjøpe ny **oppvaskmaskin**. = ________________________________
 
 ## KAN DU DET?
 
-| Oppgave | Jeg kan det. | Jeg må øve mer. |
-| --- | --- | --- |
-| Jeg kan forstå betydningen av noen vanlige prefikser på norsk, slik som *u-, mis-* og *sam-*. *(I can understand the meanings of some common prefixes in Norwegian, such as u-, mis- and sam-.)* | | |
-| Jeg kan noen vanlige suffikser for å lage substantiv. *(I know a few common suffixes that create nouns.)* | | |
-| Jeg kan noen vanlige suffikser for å lage adjektiv. *(I know a few common suffixes that create adjectives.)* | | |
-| Jeg kan kjenne igjen ord fra samme ordfamilie hvis grunnordet er kjent for meg. *(I can recognize words that belong to the same family if the basic word is known to me.)* | | |
-| Jeg kan skille mellom et verbalsubstantiv som forteller om en person og et verbalsubstantiv som forteller om en prosess, et resultat eller en ting. *(I can distinguish between a verbal noun that describes a person and one that describes a process, result or thing.)* | | |
-| Jeg kan forstå sammensatte ord som er laget av partikkelverb hvis de andre ordene i sammensetningen er kjent for meg. *(I can understand compound words formed from a phrasal verb if the surrounding words are known to me.)* | | |
+| Oppgave                                                                                                                                                                                                                                                                    | Jeg kan det. | Jeg må øve mer. |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan forstå betydningen av noen vanlige prefikser på norsk, slik som *u-, mis-* og *sam-*. *(I can understand the meanings of some common prefixes in Norwegian, such as u-, mis- and sam-.)*                                                                           |              |                 |
+| Jeg kan noen vanlige suffikser for å lage substantiv. *(I know a few common suffixes that create nouns.)*                                                                                                                                                                  |              |                 |
+| Jeg kan noen vanlige suffikser for å lage adjektiv. *(I know a few common suffixes that create adjectives.)*                                                                                                                                                               |              |                 |
+| Jeg kan kjenne igjen ord fra samme ordfamilie hvis grunnordet er kjent for meg. *(I can recognize words that belong to the same family if the basic word is known to me.)*                                                                                                 |              |                 |
+| Jeg kan skille mellom et verbalsubstantiv som forteller om en person og et verbalsubstantiv som forteller om en prosess, et resultat eller en ting. *(I can distinguish between a verbal noun that describes a person and one that describes a process, result or thing.)* |              |                 |
+| Jeg kan forstå sammensatte ord som er laget av partikkelverb hvis de andre ordene i sammensetningen er kjent for meg. *(I can understand compound words formed from a phrasal verb if the surrounding words are known to me.)*                                             |              |                 |
 
 ## MER OM ORD
 
@@ -3958,8 +3958,8 @@ Sett substantivene i ordskyen i rett kolonne.
 Ord i ordskyen: kis, gubbe, husbond, brud, kone, tass, madam, kar, nurk, smårolling, frue, kjerring
 
 | KVINNE | MANN | BARN |
-| --- | --- | --- |
-| | | |
+| ------ | ---- | ---- |
+|        |      |      |
 
 ### 2 KRYSSORD
 
@@ -4450,13 +4450,13 @@ B ______________________________ på mørke høstkvelder.
 
 ## KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan forklare et ord eller et begrep ved å bruke synonymer eller antonymer, eller ved å beskrive egenskaper ved ordet.<br>*(I can explain a word or a concept by using synonyms or antonyms, or by describing the characteristics of the word or concept.)* | | |
-| Jeg vet hva et homonym er.<br>*(I know what a homonym is.)* | | |
-| Jeg kan noen vanlige norske homonymer.<br>*(I am familiar with some common Norwegian homonyms.)* | | |
-| Jeg kan kjenne igjen vanlige norske metaforer når jeg leser eller lytter.<br>*(I can recognize common metaphors used in Norwegian when I read or listen.)* | | |
-| Jeg kan bruke en del norske metaforer når jeg skriver eller snakker.<br>*(I can use some common Norwegian metaphors when I write or speak.)* | | |
+| Oppgave:                                                                                                                                                                                                                                                       | Jeg kan det. | Jeg må øve mer. |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan forklare et ord eller et begrep ved å bruke synonymer eller antonymer, eller ved å beskrive egenskaper ved ordet.<br>*(I can explain a word or a concept by using synonyms or antonyms, or by describing the characteristics of the word or concept.)* |              |                 |
+| Jeg vet hva et homonym er.<br>*(I know what a homonym is.)*                                                                                                                                                                                                    |              |                 |
+| Jeg kan noen vanlige norske homonymer.<br>*(I am familiar with some common Norwegian homonyms.)*                                                                                                                                                               |              |                 |
+| Jeg kan kjenne igjen vanlige norske metaforer når jeg leser eller lytter.<br>*(I can recognize common metaphors used in Norwegian when I read or listen.)*                                                                                                     |              |                 |
+| Jeg kan bruke en del norske metaforer når jeg skriver eller snakker.<br>*(I can use some common Norwegian metaphors when I write or speak.)*                                                                                                                   |              |                 |
 
 # KAPITTEL 3 SETNINGER
 
@@ -4660,8 +4660,8 @@ Foreløpig er det **valgfritt** å ta eksamen.
 De kjørte bilen **tom for bensin**.
 
 | Predikativet står til setningens SUBJEKT | Predikativet står til setningens OBJEKT |
-|---|---|
-| | |
+| ---------------------------------------- | --------------------------------------- |
+|                                          |                                         |
 
 ### 8 ER DET TRYGT Å FLY?
 
@@ -4751,13 +4751,13 @@ Vi håper at du kan komme.
 
 ## KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan kjenne igjen setningsleddene subjekt, verbal, direkte objekt, indirekte objekt, predikativ og adverbial.<br>*(I can recognize the subject, verbal, direct object, indirect object, predicative and adverbial of the parts of a sentence.)* | | |
-| Jeg vet hvilke ord som hører til hvilke ledd i en setning.<br>*(I know which words belong to which parts of a sentence.)* | | |
-| Jeg kan skille mellom direkte objekt, indirekte objekt og predikativ.<br>*(I can distinguish between the direct object, indirect object and predicative.)* | | |
-| Jeg kan invertere en setning ved å flytte adverbialet fremst.<br>*(I can invert a sentence by placing the adverbial at the beginning.)* | | |
-| Jeg kan analysere en setning.<br>*(I can analyze a simple sentence.)* | | |
+| Oppgave:                                                                                                                                                                                                                                           | Jeg kan det. | Jeg må øve mer. |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan kjenne igjen setningsleddene subjekt, verbal, direkte objekt, indirekte objekt, predikativ og adverbial.<br>*(I can recognize the subject, verbal, direct object, indirect object, predicative and adverbial of the parts of a sentence.)* |              |                 |
+| Jeg vet hvilke ord som hører til hvilke ledd i en setning.<br>*(I know which words belong to which parts of a sentence.)*                                                                                                                          |              |                 |
+| Jeg kan skille mellom direkte objekt, indirekte objekt og predikativ.<br>*(I can distinguish between the direct object, indirect object and predicative.)*                                                                                         |              |                 |
+| Jeg kan invertere en setning ved å flytte adverbialet fremst.<br>*(I can invert a sentence by placing the adverbial at the beginning.)*                                                                                                            |              |                 |
+| Jeg kan analysere en setning.<br>*(I can analyze a simple sentence.)*                                                                                                                                                                              |              |                 |
 
 ## HELSETNINGER
 
@@ -5254,17 +5254,17 @@ ______________________________
 
 ## KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan invertere helsetninger, også når de inneholder en leddsetning.<br>*(I can invert complete sentences, also when they contain a subordinate clause.)* | | |
-| Jeg kan lage presenteringssetninger (det-setninger).<br>*(I can form presentation sentences (a kind of det sentences).)* | | |
-| Jeg kan lage det-setninger av setninger som ellers starter med en infinitivskonstruksjon eller en at-setning.<br>*(I can make simple det sentences from that otherwise would start with a nominal subordinate clause initiated by an å or an at.)* | | |
-| Jeg kan bryte ut subjektet, objektet eller adverbialet (lage en det-setning).<br>*(I can extrapose the subject, the object or the adverbial (make a det sentence).)* | | |
-| Jeg kan sette en helsetning inn i et setningsskjema.<br>*(I can place the phrases of a complete sentence in correct order according to the 'sentence frame'.)* | | |
-| Jeg vet at det er mest naturlig å plassere stedsledd før tidsledd og tidsledd før ledd som forteller om årsak i sluttfeltet i en setning.<br>*(I know that in the final part of a sentence it is more natural to place a phrase indicating place before a phrase indicating time, and a phrase indicating time before a phrase providing an explanation.)* | | |
-| Jeg kan plassere *ikke* riktig i helsetninger med trykklett objekt.<br>*(I can place ikke correctly in complete sentences when the object is not stressed.)* | | |
-| Jeg kan plassere *ikke* riktig i inverterte helsetninger med trykklett objekt.<br>*(I can place ikke correctly in inverted sentences containing a non-stressed pronoun.)* | | |
-| Jeg kan variere mellom helsetninger med modalverb og imperativsetninger.<br>*(I can vary between sentences using modal verbs and sentences in the imperative.)* | | |
+| Oppgave:                                                                                                                                                                                                                                                                                                                                                   | Jeg kan det. | Jeg må øve mer. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan invertere helsetninger, også når de inneholder en leddsetning.<br>*(I can invert complete sentences, also when they contain a subordinate clause.)*                                                                                                                                                                                                |              |                 |
+| Jeg kan lage presenteringssetninger (det-setninger).<br>*(I can form presentation sentences (a kind of det sentences).)*                                                                                                                                                                                                                                   |              |                 |
+| Jeg kan lage det-setninger av setninger som ellers starter med en infinitivskonstruksjon eller en at-setning.<br>*(I can make simple det sentences from that otherwise would start with a nominal subordinate clause initiated by an å or an at.)*                                                                                                         |              |                 |
+| Jeg kan bryte ut subjektet, objektet eller adverbialet (lage en det-setning).<br>*(I can extrapose the subject, the object or the adverbial (make a det sentence).)*                                                                                                                                                                                       |              |                 |
+| Jeg kan sette en helsetning inn i et setningsskjema.<br>*(I can place the phrases of a complete sentence in correct order according to the 'sentence frame'.)*                                                                                                                                                                                             |              |                 |
+| Jeg vet at det er mest naturlig å plassere stedsledd før tidsledd og tidsledd før ledd som forteller om årsak i sluttfeltet i en setning.<br>*(I know that in the final part of a sentence it is more natural to place a phrase indicating place before a phrase indicating time, and a phrase indicating time before a phrase providing an explanation.)* |              |                 |
+| Jeg kan plassere *ikke* riktig i helsetninger med trykklett objekt.<br>*(I can place ikke correctly in complete sentences when the object is not stressed.)*                                                                                                                                                                                               |              |                 |
+| Jeg kan plassere *ikke* riktig i inverterte helsetninger med trykklett objekt.<br>*(I can place ikke correctly in inverted sentences containing a non-stressed pronoun.)*                                                                                                                                                                                  |              |                 |
+| Jeg kan variere mellom helsetninger med modalverb og imperativsetninger.<br>*(I can vary between sentences using modal verbs and sentences in the imperative.)*                                                                                                                                                                                            |              |                 |
 
 # LEDDSETNINGER
 
@@ -5797,20 +5797,20 @@ samtidig: ______________________________
 
 ### KAN DU DET?
 
-| Oppgave: | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan bruke leddsetninger når jeg snakker, samtaler eller skriver. (I can use subordinate clauses when I speak, converse or write.) | | |
-| Jeg kan skille mellom nominale, adjektiviske og adverbiale leddsetninger. (I can distinguish between nominal, adjectival and adverbial subordinate clauses.) | | |
-| Jeg kan variere mellom å sette leddsetningen i forfeltet eller i sluttfeltet. (I can vary between placing the subordinate clause in the sentence's first part or final part.) | | |
-| Jeg kan referere setningsspørsmål. (I can report questions that are answered by yes or no.) | | |
-| Jeg kan referere hv-spørsmål. (I can report questions that start with an interrogative word.) | | |
-| Jeg kan bruke som riktig når jeg refererer hv-spørsmål. (I can use som correctly when reporting interrogative sentences.) | | |
-| Jeg kan lage adjektiviske leddsetninger med korrekt bruk av som. (I can form adjectival subordinate clauses and use som correctly when doing so.) | | |
-| Jeg kan lage vilkårssetninger ved å invertere setningen i stedet for å bruke subjunksjon. (I can make conditional sentences by inverting the sentence instead of using a subordinating conjunction.) | | |
-| Jeg kan sette leddsetninger inn i et setningsskjema. (I can place the phrases of a subordinate clause in correct order according to the 'sentence frame'.) | | |
-| Jeg kan plassere setningsadverbialet på rett sted i leddsetningen. (I can place the sentence adverbial correctly within the subordinate clause.) | | |
-| Jeg kan identifisere leddsetningens funksjon i helsetningen. (I can identify which function the subordinate clause has in the complete sentence.) | | |
-| Jeg kan variere mellom å bruke frekvente subjunksjoner og adverb for å binde sammen setninger. (I can vary between using frequent subordinating conjunctions and adverbs to combine sentences.) | | |
+| Oppgave:                                                                                                                                                                                             | Jeg kan det. | Jeg må øve mer. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan bruke leddsetninger når jeg snakker, samtaler eller skriver. (I can use subordinate clauses when I speak, converse or write.)                                                                |              |                 |
+| Jeg kan skille mellom nominale, adjektiviske og adverbiale leddsetninger. (I can distinguish between nominal, adjectival and adverbial subordinate clauses.)                                         |              |                 |
+| Jeg kan variere mellom å sette leddsetningen i forfeltet eller i sluttfeltet. (I can vary between placing the subordinate clause in the sentence's first part or final part.)                        |              |                 |
+| Jeg kan referere setningsspørsmål. (I can report questions that are answered by yes or no.)                                                                                                          |              |                 |
+| Jeg kan referere hv-spørsmål. (I can report questions that start with an interrogative word.)                                                                                                        |              |                 |
+| Jeg kan bruke som riktig når jeg refererer hv-spørsmål. (I can use som correctly when reporting interrogative sentences.)                                                                            |              |                 |
+| Jeg kan lage adjektiviske leddsetninger med korrekt bruk av som. (I can form adjectival subordinate clauses and use som correctly when doing so.)                                                    |              |                 |
+| Jeg kan lage vilkårssetninger ved å invertere setningen i stedet for å bruke subjunksjon. (I can make conditional sentences by inverting the sentence instead of using a subordinating conjunction.) |              |                 |
+| Jeg kan sette leddsetninger inn i et setningsskjema. (I can place the phrases of a subordinate clause in correct order according to the 'sentence frame'.)                                           |              |                 |
+| Jeg kan plassere setningsadverbialet på rett sted i leddsetningen. (I can place the sentence adverbial correctly within the subordinate clause.)                                                     |              |                 |
+| Jeg kan identifisere leddsetningens funksjon i helsetningen. (I can identify which function the subordinate clause has in the complete sentence.)                                                    |              |                 |
+| Jeg kan variere mellom å bruke frekvente subjunksjoner og adverb for å binde sammen setninger. (I can vary between using frequent subordinating conjunctions and adverbs to combine sentences.)      |              |                 |
 
 ## KAPITTEL 4 TEKSTER OG TEKSTBINDING
 
@@ -6269,16 +6269,16 @@ B Jeg ___ det blir fint vær i helgen så vi kan dra på hytta!!
 
 ## KAN DU DET?
 
-| Oppgave | Jeg kan det. | Jeg må øve mer. |
-|---|---|---|
-| Jeg kan bruke indirekte tale for å referere det noen har sagt eller spurt om. *(I can use indirect speech to report what someone has said or asked.)* | | |
-| Jeg kan bruke regelen om preteritums-samsvar når jeg lager indirekte tale. *(I can use the rule about past tense compliance when I use indirect speech.)* | | |
-| Jeg kan bruke ulike uttrykk for å referere det noen har sagt, slik som *legge vekt på noe*, *understreke noe* eller *være usikker på noe*. *(I can use various kinds of expressions to report what someone has said, such as legge vekt på noe, understreke noe or være usikker på noe.)* | | |
-| Jeg kan få fram at informasjonen jeg formidler, er andrehåndsinformasjon. *(I can make it clear that the information I am passing on is second-hand information.)* | | |
-| Jeg kan binde sammen setninger i et årsak-/virkningsforhold. *(I can combine sentences in order to express a relation between cause and effect.)* | | |
-| Jeg kan binde sammen setninger i et årsak-/hensiktsforhold. *(I can combine sentences in order to express a relation between cause and intention.)* | | |
-| Jeg kan binde sammen setninger som står i et motsetningsforhold til hverandre. *(I can combine sentences in order to express opposition or a contrary view.)* | | |
-| Jeg kan binde sammen setninger der den ene setningen er en betingelse for den andre. *(I can combine sentences where one sentence is a condition for the other.)* | | |
+| Oppgave                                                                                                                                                                                                                                                                                   | Jeg kan det. | Jeg må øve mer. |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| Jeg kan bruke indirekte tale for å referere det noen har sagt eller spurt om. *(I can use indirect speech to report what someone has said or asked.)*                                                                                                                                     |              |                 |
+| Jeg kan bruke regelen om preteritums-samsvar når jeg lager indirekte tale. *(I can use the rule about past tense compliance when I use indirect speech.)*                                                                                                                                 |              |                 |
+| Jeg kan bruke ulike uttrykk for å referere det noen har sagt, slik som *legge vekt på noe*, *understreke noe* eller *være usikker på noe*. *(I can use various kinds of expressions to report what someone has said, such as legge vekt på noe, understreke noe or være usikker på noe.)* |              |                 |
+| Jeg kan få fram at informasjonen jeg formidler, er andrehåndsinformasjon. *(I can make it clear that the information I am passing on is second-hand information.)*                                                                                                                        |              |                 |
+| Jeg kan binde sammen setninger i et årsak-/virkningsforhold. *(I can combine sentences in order to express a relation between cause and effect.)*                                                                                                                                         |              |                 |
+| Jeg kan binde sammen setninger i et årsak-/hensiktsforhold. *(I can combine sentences in order to express a relation between cause and intention.)*                                                                                                                                       |              |                 |
+| Jeg kan binde sammen setninger som står i et motsetningsforhold til hverandre. *(I can combine sentences in order to express opposition or a contrary view.)*                                                                                                                             |              |                 |
+| Jeg kan binde sammen setninger der den ene setningen er en betingelse for den andre. *(I can combine sentences where one sentence is a condition for the other.)*                                                                                                                         |              |                 |
 
 ## TEKSTER
 
@@ -6329,23 +6329,23 @@ I Norge deler vi klimaet [13] inn i kystklima (havklima) og innlandsklima (konti
 
 (Eksempelet [Eks.] i teksten har riktig svar under **Grunnlaget**.)
 
-| Eks. | Årsaken | Grunnlaget | Resultatet |
-|---|---|---|---|
-| 1 | enten | fortsatt | både |
-| 2 | ligger | består | stiger |
-| 3 | preges | fjernes | ordnes |
-| 4 | forurensete | kjølige | varme |
-| 5 | noen ganger | som oftest | hele året |
-| 6 | bebyggelse | vegetasjon | arbeid |
-| 7 | langsomt | fort | ubegrenset |
-| 8 | utbredt i | avgrenset av | deler av |
-| 9 | strekker seg | brukes | bøyer seg |
-| 10 | mellom | gjennom | under |
-| 11 | som | for | enn |
-| 12 | vil bestå av | er avhengig av | går utover |
-| 13 | videre | alltid | selvfølgelig |
-| 14 | Uansett | Ganske enkelt | Faktisk |
-| 15 | normalt | imidlertid | heldigvis |
+| Eks. | Årsaken      | Grunnlaget     | Resultatet   |
+| ---- | ------------ | -------------- | ------------ |
+| 1    | enten        | fortsatt       | både         |
+| 2    | ligger       | består         | stiger       |
+| 3    | preges       | fjernes        | ordnes       |
+| 4    | forurensete  | kjølige        | varme        |
+| 5    | noen ganger  | som oftest     | hele året    |
+| 6    | bebyggelse   | vegetasjon     | arbeid       |
+| 7    | langsomt     | fort           | ubegrenset   |
+| 8    | utbredt i    | avgrenset av   | deler av     |
+| 9    | strekker seg | brukes         | bøyer seg    |
+| 10   | mellom       | gjennom        | under        |
+| 11   | som          | for            | enn          |
+| 12   | vil bestå av | er avhengig av | går utover   |
+| 13   | videre       | alltid         | selvfølgelig |
+| 14   | Uansett      | Ganske enkelt  | Faktisk      |
+| 15   | normalt      | imidlertid     | heldigvis    |
 
 ### 3 VEILEDNING: HVA MÅ DU GJØRE?
 
@@ -6378,14 +6378,14 @@ Les annonsen og svar kort på spørsmålene.
 
 Vi skal utvide installasjonsavdelingen vår. I dag består avdelingen av fire elektrikere, en installatør og en ingeniør. Vi søker en dyktig elektriker med særlig interesse for miljøriktige løsninger innen elektrobransjen. Vi betjener både privatkunder, entreprenørfirma og bedrifter. Vårt motto er: *Med fokus på framtidas løsninger!*
 
-| Felt | Verdi |
-|---|---|
-| Arbeidsgiver | Miljøstrøm AS |
-| Stillingstittel | Elektriker |
-| Sted | Oppegård |
-| Frist | 15.5.2019 |
-| Stillingsstørrelse | 100 % |
-| Varighet | Fast |
+| Felt               | Verdi         |
+| ------------------ | ------------- |
+| Arbeidsgiver       | Miljøstrøm AS |
+| Stillingstittel    | Elektriker    |
+| Sted               | Oppegård      |
+| Frist              | 15.5.2019     |
+| Stillingsstørrelse | 100 %         |
+| Varighet           | Fast          |
 
 **Arbeidsoppgaver:**
 - installasjon i samarbeid med autorisert installatør
@@ -6651,9 +6651,9 @@ Skriv argumentene i rett kolonne.
 - Muligheten til å drive fritidsaktiviteter og til å tilbringe tid sammen med familie og venner er viktig for folks psykiske og fysiske helse.
 
 | 2 ARGUMENTER FOR | 1 ARGUMENT MOT |
-|---|---|
-| | |
-| | |
+| ---------------- | -------------- |
+|                  |                |
+|                  |                |
 
 ### 12 2 + 1 (2)
 
@@ -6729,705 +6729,12 @@ ___
 
 ## KAN DU DET?
 
-| Oppgave | Jeg kan det. | Jeg må øve mer. |
-| --- | --- | --- |
-| Jeg kan kjenne igjen ulike typer tekster. *(I can recognize some text types.)* | | |
-| Jeg kan lese og forstå og finne relevant informasjon i forskjellige typer tekster. *(I can read, understand and find relevant information in different kinds of texts.)* | | |
-| Jeg kan noen faste ord og uttrykk som brukes i offentlige brev. *(I know some standard phrases and idioms that are used in letters from public authorities.)* | | |
-| Jeg kan presentere argumenter *for* en sak og argumenter *mot* en sak på en relevant måte. *(I can present arguments pro and contra a topic in a relevant manner.)* | | |
-| Jeg kan bruke ulike typer bindeord for å skape sammenheng i et argument for eller mot en sak. *(I can use different kinds of linking words to create cohesion in an argument pro or contra a topic.)* | | |
-| Jeg vet hva som karakteriserer en innledning og en avslutning i en argumenterende eller resonnerende tekst. *(I know what characterizes an introduction and a conclusion to an argumentative or expository text.)* | | |
-
-# FASIT
-
-## 1 ORDKLASSER
-
-### SUBSTANTIV
-
-#### 1 PETRAS PARIS
-
-| ABSTRAKTER | KONKRETER |
-| --- | --- |
-| utsikten, kveld, varmen, kveldssola, plass | rommet, lenestolen, vindu – vinduet, dør – dørene, balkong, rekkverk – rekkverket, blomsterkasse, bad, kjøkken |
-
-#### 2 STOR ELLER LITEN BOKSTAV?
-
-Det er tre klimasoner i Norge. Vi har kystklima, innlandsklima og arktisk klima. Arktisk klima betyr at normaltemperaturen er under 10 grader celsius i årets varmeste måned. Det vokser ikke trær i arktiske områder. Likevel kan det bli varmt. For eksempel har Vardø i Nord-Norge arktisk klima, men der var det 27 grader en dag i juli i 1987.
-
-#### 3 HANKJØNN, HUNKJØNN ELLER INTETKJØNN?
-
-a) ei/en lærebok, b) et kurs, c) en sofa, d) et problem, e) ei/en utfordring, f) ei/en oppgave, g) ei/en husleie, h) et spisebord, i) ei/en pute, j) ei/en sak, k) en motorvei, l) et kjøkken, m) et supermarked, n) ei/en utdanning, o) en skog, p) ei/en kyst, q) et klima, r) ei/en forurensning, s) et miljø, t) en kollega
-
-#### 4 UREGELRETTE SUBSTANTIV (1)
-
-| ENTALL – ubestemt form | ENTALL – bestemt form | FLERTALL – ubestemt form | FLERTALL – bestemt form |
-| --- | --- | --- | --- |
-| et øye | øyet | øyne | øynene |
-| en vaffel | vaffelen | vafler | vaflene |
-| ei datter | dattera | døtre/døtrer | døtrene |
-| en bror | broren | brødre | brødrene |
-
-| ENTALL – ubestemt form | ENTALL – bestemt form | FLERTALL – ubestemt form | FLERTALL – bestemt form |
-| --- | --- | --- | --- |
-| en dollar | dollaren | dollar | dollarene |
-| ei and | anda | ender | endene |
-| et kne | kneet | knær | knærne |
-| ei tå | tåa | tær | tærne |
-| et tre | treet | trær | trærne |
-| en meter | meteren | meter | meterne |
-
-#### 5 UREGELRETTE SUBSTANTIV (2)
-
-a) endene, b) bøker, c) brødre, d) bestefedrene, e) fetterne, f) hendene, g) knærne, h) lærere, i) mødre, j) onkler, k) sko, l) sommere/somre, m) Strendene, n) syklene, o) ting, p) trær, q) tærne, r) vafler
-
-#### 6 FRA ENTALL TIL FLERTALL
-
-a) bøkene, b) oppgavene, c) kollegaene dine, d) brødrene dine, e) Disse buksene, f) Naboene våre, g) Ungene, h) plantene, i) disse sakene, j) mailene mine
-
-#### 7 FRA FLERTALL TIL ENTALL
-
-a) Denne oppgaven, b) Boka, c) bilen sin, d) jobb, e) søknaden, f) Dattera, g) barnebarnet sitt, h) ei/en kake, i) den gamle radioen, j) vinduet
-
-#### 8 HVILKEN REGEL?
-
-1. Er det sant at faren din er ateist?
-4. Petter er en grineunge!
-1. Pedro er spanjol.
-3. Maradona er en levende legende.
-1. Onkelen min var murer, men nå er han pensjonist.
-1. Hvem var rektor på denne skolen i 2010?
-1. Fikk du jobben som assisterende trener?
-2. Søstera hans er en skrytepave!
-1. Jorunn er katolikk.
-2. Laila er personlig kristen.
-4. Hun spiser som en gris.
-1. Vil du bli sykepleier?
-3. Leo er en lojal venn.
-1. Før var Jørn rektor, men nå er han skolesjef.
-1. Hallgeir er bonde, akkurat som faren.
-1. Naboen vår er oppfinner.
-3. Naboen vår er en gal oppfinner.
-3. Ikke vær redd! Jensen er en dyktig kirurg.
-
-#### 9 UBESTEMT ARTIKKEL
-
-a) –, en, b) –, –, –, c) –, –, –, d) –/ei/en, –/ei/en, e) –, –, –, f) en, g) et
-
-#### 10 LEDIG STILLING?
-
-a) den utlyste stillingen, b) kontorsjefen, c) fem søkere, d) ledige stillingen, e) vil gjerne, intervju, f) jobber, tidligere, g) den forrige jobben din, h) den forrige jobben min, konkurs, i) bidra, et godt arbeidsmiljø
-
-#### 11 RETT FORM (1)
-
-**utfordring:** ei/en utfordring, utfordringer, utfordringer, utfordring
-**vindu:** vinduet, vinduet, vindu
-**kontrakt:** kontrakt / en kontrakt, kontrakt / en kontrakt, Kontrakten, kontrakt /en kontrakt
-**miljø:** miljøet, miljø/miljøet, miljøet, miljøet, miljø
-**ferie:** ferie, en ferie, ferien
-
-#### 12 RETT FORM (2)
-
-a) arbeidsgivere, b) bestemora, c) boligmarkedet, d) fjell, e) flyktning, f) gafler, g) halsen, h) håret, i) inntekt/inntekter, j) krigen, k) nøklene, l) leksene, m) brødre, n) oppgave/oppgaven, o) hendene, p) bussen/buss, q) briller, r) sykkelen, s) en snekker, t) jula/julen, u) bøker, biblioteket, v) kjøkkenet, stua/stuen, w) vafler, besøket, x) sommeren, ferie, y) hytta, sommeren, år, z) lønna, æ) mobbing, ø) naturressurser, å) nettet, aa) olja/oljen, bb) pensjonist, cc) romanen, dd) ski, ee) skolegang, ff) en time, gg) utgiftene, hh) verden, ii) vinduet/vinduene, jj) øret, kk) ei øy
-
-#### 13 SPRÅKDETEKTIV
-
-a) huset: 'det hvite' står foran substantivet = bestemt form, entall
-b) venner: 'mange nye' står foran substantivet = ubestemt form, flertall (alltid ubestemt form, flertall etter 'mange')
-c) radio: 'å høre på' + substantiv i ubestemt form – handling og substantiv danner et uttrykk
-d) kvelden/kveldene: etter 'om' bruker vi bestemt form entall eller flertall, her kan det være begge deler
-e) slektningene: 'dine' står etter substantivet = bestemt form, flertall
-f) morsmål: 'Hvilket' står foran substantivet = ubestemt form (alltid ubestemt form etter 'hvilken', 'hvilket' eller 'hvilke')
-g) lege: 'lege' er yrket til en person = entall, vi bruker ubestemt form uten artikkel fordi det er ei gruppe
-h) klokka: fast uttrykk
-i) Maten: referansen er til 'til bords': Hva gjør man ved bordet? Man spiser. = Kjent informasjon = bestemt form. Mengdeord = entall.
-
-#### 14 SUBSTANTIVFRASEN
-
-a) Substantivfrase (SF): det nye tapetet i stua, Kjerne (K): tapetet
-b) SF: et eget atelier, K: atelier
-c) SF: Hele denne teksten, K: teksten
-d) SF: Den muslimske fastemåneden, K: fastemåneden
-e) SF: ramadan, K: ramadan
-SF: Sognefjorden, K: Sognefjorden
-SF: Norges dypeste fjord, K: fjord
-f) SF: Europas lengste tunneler, K: tunneler
-SF: Alpene, K: Alpene
-g) SF: humoren på Vestlandet, K: humoren
-SF: humoren på Østlandet, K: humoren
-
-#### 15 KJENTE NORDMENN: FRIDTJOF NANSEN (1861-1930)
-
-polfarer, fredspris, flyktninger, medisin, arbeidet, ski, stillingen, flyktninger/flyktningene, pengene, bosettinger, gater, byer, verden
-
-## ADJEKTIV
-
-#### 1 TRAUST OG SMAKLØST?
-
-| Dette adjektivet / Disse adjektivene: | | dette substantivet: |
-| --- | --- | --- |
-| første | | smakssprøve |
-| (det) norske | | kjøkkenet |
-| traust og smakløst (= objektspredikativ) | | (det norske) kjøkkenet |
-| saltet | | kjøtt |
-| kjedelige | forteller om | rotgrønnsaker |
-| (mange) spennende | forteller om | smaker |
-| (en) pikant | | spiss |
-| norsk | | mat |
-| tørkete | | einerbær |
-| frisk, selvplukket | | ramsløk |
-| norsk | | grønnsaksuppe |
-| spennende | | (en norsk) grønnsaksuppe |
-| (en) italiensk | | minestronesuppe |
-
-#### 2 BROSJYRE: TUREN GÅR TIL SAN ANDRÉS!
-
-| Dette/Disse adj.: | | dette subst. | som står i: |
-| --- | --- | --- | --- |
-| utrolige | | reiser | ubest. form, flert. |
-| nydelige | | strender | ubest. form, flert. |
-| varme | | netter | ubest. form, flert. |
-| avslappende | | dager | ubest. form, flert. |
-| (ei) vakker | | øy | ubest. form, ent. |
-| (Det) karibiske | forteller om | hav | entall* |
-| (denne) lille | forteller om | perlen | best. form, ent. |
-| (sin) fasinerende | | historie | ubest. form, ent. |
-| skumle | | pirater | ubest. form, flert. |
-| lange og hvite (predikativ) | | strendene | best. form, flert. |
-| varmt og behagelig | | vann | ubest. form, ent. |
-| latinske og kreolske | | smaker | ubest. form, flert. |
-
-\* Her er det enkel bestemthet, som er en gammel (og formell) måte å gi navn på. Andre eksempler er: De norske lover, Den norske kirke – 'hav' står i ubestemt form, men vi må si at hele substantivfrasen er i bestemt form.
-
-#### 3 EI LITA HYTTE
-
-lita, lille, lite, lille, små, liten, små, lite, små, liten, lille, lita, små, liten
-
-#### 4 HVOR VIL DU BO?
-
-*Forslag:*
-
-fine/koselige, Det lille, stor/fin, det store, det lille, kreativ/fargerik, den blå, den lille, store/gamle, kreativt, det store, fargerik, det lille, Det store, en koselig, fint/koselig, en varm, det store, Det lille, trangt
-
-#### 5 DET DYRE SKJØRTET ER NYTT
-
-a) Den nye telefonen er stilig. De nye telefonene er stilige.
-b) Det høye treet er gammelt. De høye trærne er gamle.
-c) Den rutete sofaen er stygg. De rutete sofaene er stygge.
-d) Det lille vinduet er skittent. De små vinduene er skitne.
-e) Den grønne frosken er giftig. De grønne froskene er giftige.
-f) Den grå sneglen er ekkel. De grå sneglene er ekle.
-g) Det billige brødet er muggent. De billige brødene er mugne.
-h) Det første spørsmålet er vanskelig. De første spørsmålene er vanskelige.
-
-#### 6 ARTIKKEL I BESTEMT FORM
-
-den (artikkel, bestemt form), Det, den, det (artikkel, bestemt form), de (artikkel, bestemt form), det, De (artikkel, bestemt form), det, de
-
-#### 7 POSITIV ELLER KOMPARATIV FORM?
-
-a) høy, b) kortere, c) fortere, d) bedre, e) godt, f) koselig, g) bedre, h) god, i) flinkere
-
-#### 8 FJORD OG FJELL
-
-Den dypeste/lengste, lengste/dypeste, lengste, Det høyeste, høyeste, høyest
-
-#### 9 GRADBØYNING MED MER OG MEST
-
-a) mest fantastiske, b) et mer langvarig, c) de mest kompliserte, d) mer innviklet, e) en mer spennende, f) den mest forvirrende, g) mer bråkete, h) mer hullete
-
-#### 10 POSITIV ELLER SUPERLATIV?
-
-a) varmt, b) kald, c) dårligste, d) dårlig, e) høy, f) seineste, g) mest spennende, h) flink/flinke, i) korteste
-
-#### 11 DEN KOSELIGSTE HYTTA DU KAN TENKE DEG!
-
-a) Ja, det er den koseligste hytta du kan tenke deg.
-b) … den søteste valpen du kan tenke deg.
-c) … den nydeligste stranda du kan tenke deg.
-d) … den koseligste stua du kan tenke deg
-e) … de lengste togene du kan tenke deg
-f) … de beste eplene du kan tenke deg.
-g) … fineste glassene du kan tenke deg.
-h) … den beste lasagnen du kan tenke deg.
-i) … den mest spennende filmen du kan tenke deg.
-
-#### 12 KJØNN, TALL, FORM OG GRAD
-
-| Adj. | Kjønn | Tall | Form | Grad | Grunnform |
-| --- | --- | --- | --- | --- | --- |
-| koselig | hunkj. | ent. | ubest. | pos. | koselig |
-| lite | intetkj. | ent. | ubest. | pos. | liten |
-| større | intetkj. | ent. | ubest. | komp. | stor |
-| bedre | intetkj. | ent. | ubest. | komp. | god |
-| nye | intetkj. | ent. | best. | pos. | ny |
-| store | intetkj. | flert. | ubest. | pos. | stor |
-| vakre | hankj. | ent. | best. | pos. | vakker |
-| peneste | hunkj. | ent. | best. | superl. | pen |
-| fineste | intetkj. | ent. | best. | superl. | fin |
-
-#### 13 SUPERLATIV PÅ FORSKJELLIGE MÅTER
-
-a) Denne kattungen er den søteste i kullet, spør du meg!
-b) De har den flotteste hagen i gata.
-c) Anna er den hyggeligste læreren i verden.
-d) Vi har feltets flotteste utsikt.
-e) Vi har den beste kaffen i byen!
-f) 21. desember er den korteste dagen i året.
-g) Vi har fått det hyggeligste bordet i hele kafeen, synes jeg.
-
-#### 14 UREGELRETTE ADJEKTIV
-
-a) morsomme, b) blått, c) vakreste, d) billigste, e) yngste, f) eldre, g) verre/vondere, h) tyngre, i) små, j) rosa, k) nydeligste
-
-#### 15 ENDA ELLER ALLER?
-
-a) aller, enda, b) enda, c) aller, enda, d) aller, e) enda, f) enda, g) aller
-
-#### 16 SUBSTANTIVERTE ADJEKTIV
-
-a) eldre, eldre, b) ansatte / av de ansatte, ansatte / de ansatte, ansatte /de ansatte, c) høyeste, d) beste, e) viktigste, f) voksne, voksen, g) minste, minste, h) streikende, i) Reisende
-
-#### 17 SUBSTANTIVFRASEN
-
-a) Liker du den nye jakka mi?
-b) Vi må snakke om noen store utfordringer på møtet seinere i dag. / Vi må snakke om de store utfordringene på møtet seinere i dag.
-c) Jeg vil gjerne gi deg ny få adressa mi.
-d) Skal du ikke søke den utlyste stillingen?
-e) I sommer infinitiv (i leid) et koselig hus i Danmark.
-f) Hun har en stor familie.
-g) Hennes forrige kjæreste var ganske hyggelig, synes jeg. / Den forrige kjæresten hennes var ganske hyggelig, synes jeg.
-h) Neste helg får vi besøk fra Levanger.
-i) Partisan vi snakke om disse problemene / dette problemet?
-
-#### 18 UTVANDRINGEN TIL AMERIKA
-
-stor, små, eldste, rik, yngre/yngste, godt, fin, håpfulle, brutal, lovløse, hardt, lange, nye
-
-## DETERMINATIVER
-
-#### 1 DETERMINATIVENES ROLLE
-
-| DEMONSTRATIVER | KVANTOR | EIENDOMSORD | FORSTERKERE |
-| --- | --- | --- | --- |
-| denne, hvilket, sånn, hver, annen | mange, tolv, ingen, begge, alle | min, deres, hennes | selv, egen |
-
-#### 2 EIER OG EIENDEL
-
-Tekst A: sin, si
-Tekst B: din, min
-Tekst C: sin, hans, sin
-Tekst D: si, sine, sitt
-Tekst E: deres, hennes, vår
-Tekst F: sine, hans, sine, hans
-
-#### 3 PERSONLIG PRONOMEN ELLER EIENDOMSORD?
-
-a) meg, mi, mitt, b) dine, deg, Du, deg, c) hans, han, ham/han, Han, seg, d) henne, hennes, hun, Hun, sine, e) Vi, oss, vi, vår, f) dere, dere, deres, g) De, sin, dem, De, deres, De
-
-#### 4 DEN SNILLE FARMORA MI
-
-a) den snille skal farmora mi, b) den grønne buksa di, c) den nye sykkelen min, d) de forrige naboene sine, e) Den nye stua vår, f) de dyre koppene våre, g) det nye tilbygget deres, h) den yngste sønnen din, i) de siste bøkene hans
-
-#### 5 FAKTA OM VERDEN
-
-a) Mount Everest er det høyeste fjellet i verden.
-b) Marianegropa i Stillehavet er det dypeste stedet i verden.
-c) Nilen er den nest lengste elva/elven i verden.
-d) Den lengste elva/elven i verden heter Amazonas.
-e) Foreløpig er Kina det mest folkerike landet i verden.
-f) Men FN tror at India vil være det mest folkerike landet i 2022.
-g) Det største landet i verden er Russland.
-h) Visste du at det minste landet i verden bare har 836 innbyggere?
-i) Norge er det sjette rikeste landet i verden.
-j) Det aller rikeste landet i verden er Qatar.
-k) Det varmeste stedet i verden er Death Valley i USA.
-l) Men hvor ligger det vakreste stedet i verden?
-
-#### 6 SÅNN SKAL DU GJØRE!
-
-a) Tenk å ha sånne snille foreldre!
-b) Du har sånne flinke barn!
-c) En sånn kjole vil jeg også ha!
-d) Sånne skyer har jeg aldri sett før!
-e) Kan du sy et sånt nett til meg også?
-f) En sånn bil ønsker jeg meg også.
-
-#### 7 LITT ELLER LITE?
-
-a) litt, b) lite, c) lite, d) litt, litt, e) lite, f) lite, g) litt lite, h) litt, i) litt, j) litt
-
-#### 8 INGEN ELLER NOEN
-
-a) ingen, b) ingen, c) noe, d) Ingen, e) noen, f) noen, g) noe, h) noen, i) Ingen, j) ingen, k) noe
-
-#### 9 ALLE ELLER HVER?
-
-a) Alle, b) hver, c) hvert, d) Alle, e) alle, hver, f) alle, g) hver, h) alle, i) alle, j) hvert
-
-#### 10 HELE ELLER ALL?
-
-a) hele, b) Hele, c) all, d) hele, e) hele, f) alt, g) hele, alt, h) hele, i) all, alt (hele, hele: hvis vi tenker på ett brød eller en melkekartong, og all, alt: hvis vi tenker på mengden melk og brød som vi har), j) hele, k) alt, l) hele, m) alt, n) hele
-
-#### 11 BEGGE DELER, TAKK!
-
-a), b), c), e), f), g), i), k), l) Begge deler. d), h), j) Begge to.
-
-#### 12 SPRÅKDETEKTIV
-
-**Riktige setninger:**
-Har dere drukket hele brusen?
-Du må vente noen uker på resultatet.
-Forstår du ingenting?
-Har du hilst på min mor?
-
-**Rettinger:**
-Han sover hele dagen.
-Kan vi få hvert vårt rom?
-Han har spist mange skiver i dag.
-Jeg har ikke noen vinduer i stua.
-
-#### 13 EGEN
-
-a) Egne, b) egen, c) egen, eget, d) egne, e) egen, f) egen, g) eget
-
-#### 14 HVA BETYR *SELV*?
-
-(Siden betydningene noen ganger kan gå litt over i hverandre, er dette forslag som du gjerne kan diskutere med andre.)
-
-3. Dere må ordne opp i …
-4. Dette er selve livet!
-3. Ungdom mellom 16 og 18 år kan …
-1. Barna våre er store og …
-1. Hun ønsker å leve ut …
-2. Jeg forstår hvordan du …
-3. Studentene selv vil …
-4. Selve undervisningen er håpløs …
-1. Kan du rette på deg selv …
-4. Kollegaene er hyggelige, men …
-1. Han mistet jobben for et år siden …
-2. Studentene har selv …
-2. (3) Hadde du tenkt å spise …
-
-#### 15 ENESTE
-
-a) hver eneste gang, b) en eneste feil, c) Det eneste jeg ber om, d) et eneste ord, e) en eneste potet, f) en eneste dag, g) den eneste jenta, h) de eneste stolene, i) den eneste studenten, j) Hver eneste gang
-
-#### 16 KJENTE NORDMENN: THOR HEYERDAHL
-
-hele, 8000, andre, mange, en, den, slike, noen, andre, mange, de, hans, hele, hans
-
-## VERB
-
-#### 1 UREGELRETTE VERB
-
-| INFINITIV | PRETERITUM | PERFEKTUM PARTISIPP |
-| --- | --- | --- |
-| ligge | lå | ligget |
-| stå | sto/stod | stått |
-| se | så | sett |
-| bli | ble | blitt |
-| sette | satte | satt |
-| spørre | spurte | spurt |
-| selge | solgte | solgt |
-| gå | gikk | gått |
-| sove | sov | sovet |
-| sitte | satt | sittet |
-| gjøre | gjorde | gjort |
-| drikke | drakk | drukket |
-| være | var | vært |
-| hjelpe | hjalp | hjulpet |
-| velge | valgte | valgt |
-
-#### 2 ÉN SVALE GJØR INGEN SOMMER
-
-døde, arvet, å spare, brukte, hadde, var, eide, var, var, satt, så, fløy, er, sa, kan, selge, trenger, løp, solgte, fikk, å bruke, kom, hadde, våknet, frøs, var, snødde, hadde, åpnet, å se, lå, sa, tok, trodde, se
-
-#### 3 PRESENS PERFEKTUM ELLER PRETERITUM?
-
-**Dialog 1:** har sett, så, var, Likte, likte
-**Dialog 2:** har kjøpt, var, var
-**Dialog 3:** har regnet, har … sett
-**Dialog 4:** var, har søkt, har … fått
-**Dialog 5:** har spist, spiste, dro
-**Dialog 6:** Har … hørt, fortalte, har … vært, giftet seg
-
-#### 4 Å VÆRE ELLER Å BLI?
-
-a) ble, b) har vært, er, c) Er, d) bli, e) Er, f) ble, g) ble, h) være
-
-#### 5 SPRÅKDETEKTIV
-
-a) **sett** – Fordi: Det er presens perfektum i setningen (har + perfektum partisipp), og 'sett' er perfektum partisipp av 'å se'.
-b) **Traff** – Fordi: Det er preteritum i setningen, og 'traff' er preteritum av 'å treffe'.
-c) **gjøre** – Fordi: Det er presens futurum i setningen (skal + infinitiv uten å), og 'gjøre' er infinitiv (uten å) av 'å gjøre'.
-d) **Gikk** – Fordi: Det er preteritum i setningen, og 'gikk' er preteritum av 'å gå'.
-e) **lest** – Fordi: Det er presens perfektum i setningen (har + perfektum partisipp), og 'lest' er perfektum partisipp av 'å lese'.
-f) **fått** – Fordi: Fordi: Det er presens perfektum i setningen (har + perfektum partisipp), og 'fått' er perfektum partisipp av 'å få'.
-g) **hjelpe** – Fordi: Sammen med det modale verbet 'kan' bruker vi infinitiv (uten å), og 'hjelpe' er infinitiv.
-h) **lage** – Fordi: Det er presens futurum i setningen (skal + infinitiv uten å), og 'lage' er infinitiv (uten å) av 'å lage'.
-i) **tenkt** – Fordi: Det er preteritum perfektum i setningen (hadde + perfektum partisipp), og 'sett' er perfektum partisipp av 'å se'.
-j) **se** – Fordi: Sammen med det modale verbet 'kan' bruker vi infinitiv (uten å), og 'se' er infinitiv.
-
-#### 6 VERBSYSTEMENE
-
-**Petra vender nesa hjemover:** kommer, viser, har sovnet, blir, vet, skal gjøre, lever, lengter, er
-**En ekte hattemaker i Strandgata:** hadde, åpnet, hadde, ble, fikk, hadde
-**Bussturen:** var, satt, fant, var, kom, overtok, hadde bodd, kjente, fikk, ble, sluttet
-
-#### 7 AKTIV ELLER PASSIV?
-
-| | AKTIV | PASSIV |
-| --- | --- | --- |
-| a) | | x |
-| b) | x | |
-| c) | x | |
-| d) | | x |
-| e) | | x |
-| f) | x | |
-| g) | | x |
-| h) | | x |
-| i) | x | |
-| j) | | x |
-| k) | x | |
-
-#### 8 AKTIV OG PASSIV (1)
-
-a) Det gamle sykehuset må rives.
-b) Veien skal legges om ei ukes tid.
-c) Vannet ble stengt av.
-d) Skolen ble lagt ned i fjor høst.
-e) Trafikken ble stoppet.
-f) Ranerne ble sett.
-g) Vi ble kjørt til flyplassen.
-h) Jeg ble ikke forstått.
-i) Han ble glemt.
-j) Samtalen vår ble overhørt.
-
-#### 9 AKTIV OG PASSIV (2)
-
-a) Noen må feste skruene.
-b) Noen må dekke bordet.
-c) Noen malet huset.
-d) Noen sa opp direktøren.
-e) Noen har levert varene.
-f) Noen stjal bilen mens eieren sov.
-g) Noen tok opp samtalen på bånd.
-h) Noen underholdt oss.
-i) Noen rev huset.
-j) Noen skjøt bjørnen.
-
-#### 10 ORDSTILLING
-
-a) Filmen blir sendt i reprise på fredag.
-b) Alle klær bør vaskes før bruk.
-c) Bordet skal dekkes før gjestene kommer.
-d) Bilen ble stjålet mens eieren sov.
-e) Veien ble lagt om i av løpet helgen.
-f) Gjøre glassene må behandles med forsiktighet.
-g) Skruene må løsnes før bordet demonteres.
-h) Boka hans utgis over hele verden.
-i) Terrassen må males i løpet av sommeren.
-j) Hun ble oppringt av sønnens kontaktlærer.
-k) Ordklarken ble dømt etter tiltalen.
-l) De ble sagt opp på dagen.
-m) Regningen må betales innen torsdag.
-
-#### 11 EN OPPSKRIFT: EPLECHIPS
-
-Eplene tørkes med et rent kjøkkenhåndkle og skjæres i tynne skiver (3 mm) med en skarp kniv. Kjernehuset fjernes om du synes det er for grovt og stort.
-
-Stekeovnen settes på varmluft og 90 °C. Epleskivene legges tett i tett (men ikke oppå hverandre) på bakepapir på stekebrett og plasseres i ovnen. Minst tre brett kan stekes på en gang. / Du kan steke minst tre brett på en gang.
-
-Eplene stekes i ca. 1 time. Skivene snus og stekes videre i 1 time til.
-
-Varmen senkes til 50 °C, og eplechipsen tørkes til den er helt tørr og sprø. Dette kan ta hele natten.
-
-Eplechipsen oppbevares i tette glass eller plastpose. De har lang holdbarhetstid.
-
-#### 12 EN HJELPENDE HÅND
-
-| | | ADJEKTIV ELLER ADVERB? |
-| --- | --- | --- |
-| a) | strålende | adjektiv |
-| b) | pres. skuffende | adjektiv |
-| c) | rasende | adjektiv |
-| d) | krypende | adverb |
-| e) | rasende | adjektiv |
-| f) | lekende | adjektiv |
-| g) | oppsagte | adverb |
-| h) | hjelpende | adjektiv |
-
-#### 13 ET NYMALT HUS
-
-a) nymalte, nymalt, b) utgått, utgåtte, c) ansatte, ansatt, d) opptatt, opptatt, e) håndskrevet, håndskrevne, f) kokte, kokt, g) utslitt, utslitte, h) brukte, brukte
-
-#### 14 I ARBEIDSLIVET
-
-**Ved sykdom:** må, kan
-**Egenmelding:** må/skal/bør
-**Er du medlem:** vil
-**HMS:** vil, må/skal
-
-#### 15 PARSETNINGER: MODALE UTTRYKKSMÅTER
-
-1. nødt til å
-2. lov til
-3. kunne jeg ha
-4. i stand til
-5. tenkt (å dra/reise)
-6. burde ikke være
-7. Kommer du til
-8. lyst til å gifte
-
-#### 16 ALLE MÅ HA LEST DENNE BOKA INNEN TORSDAG
-
-a) Innen torsdag må alle ha lest denne boka.
-b) Før de kommer, må jeg ha vasket gulvet.
-c) Før vinteren må vi ha reparert taket.
-d) Før barnevakten kommer, må barna ha sovnet.
-e) Da han skrev dette, må han ha vært full!
-f) I løpet av natta må vinden ha stilnet.
-g) Før hun prøver igjen, må hun ha øvd seg mer.
-h) I dag må du ha spist minst åtte brødskiver!
-
-#### 17 SAMMENSATTE VERB
-
-| | verb 1 | verb 2 | Tempus |
-| --- | --- | --- | --- |
-| a) | hadde | spist | preteritum perfektum |
-| | tok | - | preteritum |
-| b) | vil | - | presens |
-| | kan | treffes | presens (modalverb) + infinitiv (s-verb) |
-| c) | ble | stjålet | passiv preteritum |
-| | var | - | preteritum |
-| d) | må | ryddes | passiv presens (modalverb) + infinitiv |
-| | kommer | - | presens |
-| e) | hadde | fått | preteritum perfektum |
-| | hadde | kommet | preteritum perfektum |
-| f) | skal | ha tilhørt | presens perfektum futurum |
-| g) | hadde | forstått | preteritum perfektum |
-| | måtte | forklare | preteritum (modalverb) + infinitiv |
-| h) | er | - | presens |
-| | må | se | presens (modalverb) + infinitiv |
-| i) | skulle | være | preteritum futurum |
-| | er | - | presens |
-
-#### 18 JEG HAR HØRT AT …
-
-*Forslag:*
-
-a) De ansatte i denne matbutikken skal ha vært veldig hjelpsomme.
-b) Eva skal ha fått (seg) jobb som frisør.
-c) Raneren skal ha vært middels høy og (skal ha) snakket bergensk.
-d) Konkursen skal ha skyldtes økonomistyring.
-e) Gruvearbeiderne skal ha streiket på grunn av farlige arbeidsforhold.
-
-#### 19 HVA SKULLE DU HA GJORT, SA DU?
-
-*Forslag:*
-
-Jeg skulle ha laget mat, men jeg sovnet på sofaen.
-Jeg skulle ha lagt meg tidlig, men jeg ble sittende og se på TV.
-Jeg skulle gjerne ha begynt å studere, men jeg måtte jobbe.
-Jeg skulle ha malt huset, men det begynte å regne.
-Jeg skulle ha arbeidet med norsken, men jeg fikk besøk.
-Jeg skulle ha pusset opp huset, men jeg er blakk.
-Jeg skulle gjerne ha reist på ferie, men jeg er blakk.
-Jeg skulle gjerne ha holdt en tale for mor, men jeg er så sjenert.
-
-#### 20 HVA MENER DU?
-
-*Forslag:*
-
-a) Etter min mening skulle prisen på flybilletter ha vært økt.
-b) Etter min mening burde/bør det ikke innføres skoleuniformer.
-c) Etter min mening skulle det ha vært sendt mer sport på TV.
-d) Etter min mening burde/bør ikke skattene senkes.
-e) Etter min mening skulle antall ansatte ha vært økt.
-f) Etter min mening burde/bør det ikke utvinnes mer olje.
-
-#### 21 NEI, DET ER HELT I DET BLÅ!
-
-*Forslag:*
-
-Hvis jeg hadde fått bestemme, hadde det blitt fred i verden.
-Jeg skulle ønske at det ble fred i verden.
-Hadde jeg fått bestemme, hadde det blitt fred i verden!
-Jeg skulle ønske at jeg kunne vinne i lotto!
-Hadde det ikke vært fint hvis jeg hadde vunnet i lotto?
-Jeg skulle ønske at man kunne avskaffe dårlig vær.
-Hadde jeg fått bestemme, hadde dårlig vær vært avskaffet.
-Dårlig vær burde ha vært avskaffet!
-Hvis jeg hadde fått bestemme, hadde hvalfangst blitt forbudt.
-Jeg skulle ønske at hvalfangst ble forbudt.
-Hvalfangst burde ha vært forbudt!
-
-#### 22 FIKK DU GJORT DET?
-
-a) Får du satt på vaskemaskinen før du går?
-b) Fikk du tatt eksamen?
-c) Fikk du handlet på veien hjem?
-d) Jeg fikk ikke lest nok før prøven.
-e) De fikk tatt inn klærne før det begynte å regne.
-f) Får du bestilt billetter?
-g) Han har ikke fått solgt bilen.
-h) Hun fikk ikke søkt innen fristen.
-i) De fikk ikke besøkt oss i ferien likevel.
-j) De fikk tatt farvel på en skikkelig måte.
-
-#### 23 DE BLE SITTENDE OG SNAKKE
-
-a) Han blir nok boende her en stund.
-b) De driver og pusser opp huset. / De holder på (med) å pusse opp huset.
-c) Han ble stående og vente på bussen.
-d) Jeg ble faktisk sittende og se på TV hele kvelden.
-e) Hun ble liggende til sengs ei hel uke.
-f) Han ble stående og vaske opp en hel time!
-g) De ble sittende og snakke sammen hele natta.
-h) De ble gående uten noe å gjøre.
-
-#### 24 HVILKET PARTIKKELVERB?
-
-si nei til: avslå
-føde, få barn: nedkomme
-signere: underskrive
-lære barn om hva som er rett og galt: oppdra
-skje, være i gang: pågå
-ignorere, ikke bry seg om: overse
-bestemme, fatte en beslutning: avgjøre
-tolke fra ett språk til et annet: oversette
-innrømme at man har gjort noe: tilstå
-leve videre, klare seg: overleve
-publisere: utgi
-ha innflytelse på: påvirke
-fjerne, gjøre noe forbudt: avskaffe
-få noen til å gjøre noe du vil: overtale
-
-#### 25 ET AVSLAG – Å AVSLÅ
-
-| | Ordklasse | Partikkelverb |
-| --- | --- | --- |
-| a) | subst. | å avslå |
-| b) | adj. (av pres. part.) | å gå på (å pågå = å skje, å gå på = å insistere eller å fortsette med uforminsket styrke) |
-| c) | subst. | å underskrive |
-| d) | subst. | å møte opp |
-| e) | subst. | å henge sammen |
-| f) | adj. (av perf. part.) | å utsette |
-| g) | subst. | å opplyse (+ tid) |
-| i) | subst. | å gå ut |
-| j) | subst. | å gå over (å overgå = å gjøre noe bedre enn andre, å gå over = å krysse eller å ta slutt) |
-| k) | subst. | å kjøre på |
-| l) | subst. | å lese opp (+ dikt) |
-| m) | subst. | å avtale |
-| n) | subst. | å påstå |
-| o) | adj. (substantivert adj. av pres. part.) | å komme til (tilkommende er overført betydning, fast uttrykk) |
-| p) | adj. | å holde på (påholden penn er fast uttrykk) |
-
-#### 26 PARTIKKEL OG PARTISIPP
-
-å si opp: oppsagte, oppsagt
-å vende om: omvendt, omvendt
-å sende inn: innsendte
-å slite ut: utslitt (utslitte), utslitt (utslitte), utslitt
-å bruke opp: oppbrukt, oppbrukt, oppbrukt
+| Oppgave                                                                                                                                                                                                            | Jeg kan det. | Jeg må øve mer. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- |
+| Jeg kan kjenne igjen ulike typer tekster. *(I can recognize some text types.)*                                                                                                                                     |              |                 |
+| Jeg kan lese og forstå og finne relevant informasjon i forskjellige typer tekster. *(I can read, understand and find relevant information in different kinds of texts.)*                                           |              |                 |
+| Jeg kan noen faste ord og uttrykk som brukes i offentlige brev. *(I know some standard phrases and idioms that are used in letters from public authorities.)*                                                      |              |                 |
+| Jeg kan presentere argumenter *for* en sak og argumenter *mot* en sak på en relevant måte. *(I can present arguments pro and contra a topic in a relevant manner.)*                                                |              |                 |
+| Jeg kan bruke ulike typer bindeord for å skape sammenheng i et argument for eller mot en sak. *(I can use different kinds of linking words to create cohesion in an argument pro or contra a topic.)*              |              |                 |
+| Jeg vet hva som karakteriserer en innledning og en avslutning i en argumenterende eller resonnerende tekst. *(I know what characterizes an introduction and a conclusion to an argumentative or expository text.)* |              |                 |
 
