@@ -1956,3 +1956,184 @@ c) **for:** De kunne ikke komme på festen. De lå til sengs med influensa.
 d) **for:** Han fikk ikke ta eksamen, for han besto ikke alle arbeidskravene.
 **så:** Han besto ikke alle arbeidskravene, så han fikk ikke ta eksamen.
 
+#### 10 HVA ER HENSIKTEN?
+
+a) Styret har vedtatt nedskjæringer så bedriften ikke skal gå konkurs.
+b) Hensikten med nedskjæringene er at bedriften ikke skal gå konkurs.
+c) Styret har vedtatt nedskjæringer. På den måten håper de å redde bedriften fra konkurs.
+d) For at bedriften ikke skal gå konkurs, har styret vedtatt noen utskjæringer.
+
+a) Jeg bruker denne kremen for at huden skal holde seg myk.
+b) Formålet med å bruke denne kremen er at huden skal holde seg myk.
+c) Jeg bruker denne kremen hver dag. Dermed holder huden seg myk.
+d) Jeg bruker denne kremen så huden holder seg myk.
+
+a) Hensikten med å bruke refleks er å bli sett i trafikken.
+b) Bruk refleks for å bli sett i trafikken!
+c) Du bør bruke refleks slik at du blir sett i trafikken.
+d) Bruk refleks. På den måten blir du sett i trafikken.
+
+#### 11 MED MINDRE DU …
+
+Du kan ikke klage på valgresultatet med mindre du har brukt stemmeretten din.
+Som kommer ikke inn med mindre du har nøkkel.
+Ulikheter kan ikke uttale deg med mindre du har lest boka.
+Du får ikke jobb med mindre du skriver noen søknader.
+
+#### 12 ÅRSAKSFORHOLD (1): VIRKNING ELLER RESULTAT?
+
+*Forslag:*
+
+a) **Derfor:** Klimaforholdene blir mer ekstreme. Derfor må politikerne gjøre noe.
+**På grunn av at:** Politikerne må gjøre noe på grunn av at klimaforholdene blir mer ekstreme.
+b) **Følgen av:** Følgen av at Stortinget stilte mistillitsforslag mot en minister, var at regjeringen valgte å gå av.
+**Å resultere i:** Stortinget stilte mistillitsforslag mot en minister. Det resulterte i at regjeringen valgte å gå av.
+c) **Ettersom:** Ettersom Norge har en lang kystlinje, bør alle barn lære å svømme.
+**Grunnen til at:** Grunnen til at alle barn bør lære å svømme, er at Norge har en lang kystlinje.
+d) **Å være skyld i:** Store cruiseskip er skyld i mye forurensning, og bruk av landstrøm må bli obligatorisk for cruiseskip som ligger til kai.
+**Altså:** Store cruiseskip forurenser mye. Altså må bruk av landstrøm bli obligatorisk for cruiseskip som ligger til kai.
+e) **Så:** Vindmøller og solenergi produserer fornybar energi, så politikerne må bevilge mer penger til slike miljøtiltak.
+**Ettersom:** Ettersom vindmøller og solenergi produserer fornybar energi, må politikerne bevilge mer penger til slike miljøtiltak.
+f) **Fordi:** Han må gå på en streng diett fordi han er svært allergisk.
+**Så … at:** Han er så allergisk at han må gå på en streng diett.
+
+#### 13 ÅRSAKSFORHOLD (2): FORMÅL ELLER HENSIKT?
+
+*Forslag:*
+
+a) **Slik at:** Han har pusset opp slik at han skal få en god pris for leiligheten.
+**Så:** Han har pusset opp, så han får (skal få) en god pris for leiligheten.
+b) **For å:** Mange pensjonister drar til Spania om vinteren for å slippe kulden i Norge.
+**For at:** Mange pensjonister drar til Spania om vinteren for at de skal slippe kulden i Norge.
+c) **Hensikten med å … er å:** Ledelsens hensikt med å si opp sju ansatte er å unngå konkurs for bedriften.
+**For at:** Ledelsen skal si opp sju ansatte for at bedriften skal unngå konkurs.
+d) **Så:** Lærerne streiket hele sommeren, så elevene fikk ikke ta eksamen.
+**Med det resultat at:** Lærerne streiket hele sommeren med det resultat at elevene ikke fikk ta eksamen.
+e) **Dermed:** Alle må gjøre sitt beste. Dermed unngår vi klager.
+**På den måten:** Alle må gjøre sitt beste. På den måten unngår vi klager.
+f) **For at:** Han må gå på en streng diett for at han ikke skal bli syk.
+**Hensikten med å … er å:** Hensikten (hans) med å gå på en streng diett er å ikke bli syk.
+
+#### 14 MOTSETNING
+
+*Forslag:*
+
+a) **likevel:** De tjener ikke så mye. Likevel klager de aldri.
+**selv om:** De klager aldri selv om de ikke tjener så mye.
+**imidlertid:** De tjener ikke så mye. Imidlertid klager de aldri.
+b) **men … likevel:** Brannvesenet kom så fort de kunne. Men huset brant ned til grunnen likevel.
+**til tross for at:** Til tross for at brannvesenet kom så fort de kunne, brant huset ned til grunnen.
+**selv om:** Huset brant ned til grunnen, selv om brannvesenet kom så fort de kunne.
+c) **til tross for at:** Til tross for at rettssaken starter i morgen, har ikke den tiltalte tilstått.
+**likevel:** Den tiltalte har ikke tilstått. Likevel starter rettssaken i morgen.
+**men … likevel:** Den tiltalte har ikke tilstått, men rettssaken starter i morgen likevel.
+
+#### 15 HVIS DU VIL …
+
+a) Hvis du vil bestå eksamen, må du lese mer.
+b) Hvis dere ikke skal komme for seint til båten, må dere dra nå.
+c) Hvis dere begynner å krangle, går jeg hjem.
+d) Hvis du vil ha dessert, må du spise opp hele middagen din.
+e) Hvis du vil lære italiensk, kan du ta et kveldskurs.
+f) Hvis du vil lære å strikke, kan jeg gjerne hjelpe deg.
+g) Hvis dere ikke gjør leksene, kommer dere ikke til å få gode karakterer.
+
+#### 16 BARE DET KUNNE BEGYNNE Å SNØ …
+
+a) Bare, b) snart, c) mindre, d) ikke, e) Med mindre, f) Ellers / Hvis ikke
+
+#### 17 PARSETNINGER
+
+1) tross for at, 2) meg tvilende til, 3) fordi de, 4) og med at, 5) sant vi får fri, 6) mindre det er ro rundt meg, 7) resulterte, 8) Hensikten med å eller Grunnen til å, 9) med det, 10) håper (at)
+
+### TEKSTER
+
+#### 1 HVILKEN TYPE TEKST ER DET?
+
+| Type | Tekst |
+| --- | --- |
+| 5 | • Du må være utadvendt og glad i utfordringer. • Du må ha evne til å arbeide selvstendig og til å se hva som må gjøres. • Du kan bidra positivt til arbeidsmiljøet. |
+| 1 | På ferie i Oslo? Ta en tur til Vigelandsparken! Skulpturparken er en av Oslos (og Norges!) mest besøkte attraksjoner med over en million besøkende hvert år. Parken har fått navnet sitt etter kunstneren som laget den: Gustav Vigeland. |
+| 6 | Først settes rørene til vannlåsen sammen. Sørg for at O-ringer og gummipakninger sitter riktig. Unngå å bruke verktøy, og spenn skjøtene sammen med fingrene. |
+| 4 | Pasienten på rom 502 har vært våken fire ganger i løpet av natta (kl. 00.30, 02.33, 04.20 og 06.15). Blodtrykk 111/67 kl. 07.35. |
+| 2 | Jeg avsluttet arbeidet mitt med mastergraden sommeren 2012. Deretter arbeidet jeg fire år i Soltoppen teknologiutvikling. Da ble bedriften dessverre lagt ned, og etter det har jeg hatt en del vikarjobber i skolen, særlig i 9. og 10. klasse. Jeg har trivdes godt med det, men jeg vil helst arbeide innenfor teknologi siden det er det jeg har utdanning i. |
+| 3 | 4. mai satte naboen vår i Sandstølen 4B opp et tilbygg som skygger for utsikten vår østover. Naboens tilbygg fører til en vesentlig forringelse av utsikten vår, og derfor kan vi ikke forstå at det skal være mulig å gjøre dette uten noen form for kontroll. Vi ønsker at naboen fjerner tilbygget. |
+
+#### 2 FAKTATEKST: KLIMASONER
+
+1) både, 2) ligger, 3) preges, 4) varme, 5) hele året, 6) vegetasjon, 7) langsomt, 8) deler av, 9) strekker seg, 10) mellom, 11) enn, 12) er avhengig av, 13) videre, 14) Faktisk, 15) imidlertid
+
+#### 3 VEILEDNING: HVA MÅ DU GJØRE?
+
+1) skylle kannen grundig
+2) fylle kannen til randen med vann
+3) tømme vannet fra kannen over i beholderen
+4) sette kannen på maskinens varmeplate
+5) fukte et nytt kaffefilter
+6) legge det nye kaffefilteret i holderen
+7) ha 12,5 strøkne skjeer kaffe i filteret
+8) skyve filterholderen på plass
+9) slå på kaffemaskinen
+10) tømme den ferske kaffen over på termokannen
+
+#### 4 LEDIG STILLING: ELEKTRIKER
+
+*Forslag:*
+
+a) 100 %. / Det er en full stilling.
+b) De er elektrikere, installatører og ingeniører. / Man skal arbeide sammen med en installatør, men det er også andre elektrikere der og en ingeniør.
+c) Det er en fast stilling.
+d) Man kan eventuelt være energioperatør i tillegg til å ha fagbrev (i elektro).
+e) Nei. / Nei, men de tilbyr konkurransedyktig lønn og gode pensjons- og forsikringsavtaler.
+f) Nei, det står det ikke noe om.
+g) Nei, det står det ikke noe om.
+h) Ja. / Ja, man må være flink til å omgås kunder.
+i) Man må sende skriftlig søknad med CV på e-post til ottar.johansen@miljostrom.no.
+
+#### 5 FORMELT BREV: KLAGE
+
+a) I Øvrebø 20A på Fastlandet.
+b) Fordi naboen hans har satt opp et tilbygg som skygger for utsikten hans.
+c) Til utvalget for bolig og bygging i Fastlandet kommune.
+d) Finn Totland.
+e) Det er under 15 m².
+f) Ja, det har han.
+g) Han vil at kommunen skal be naboen om å fjerne tilbygget.
+
+#### 6 POLITISKE PARTIER I NORGE
+
+1) så bra som det går an = best mulig
+2) kategorisere, dele inn, ordne = sortere
+3) linje = akse
+4) vise, eksemplifisere = illustrere
+5) ganske, nokså = relativt
+6) som motytelse = Til gjengjeld
+7) ulikheter = forskjeller
+8) få til, klare = oppnå
+9) skaffe, yte = levere
+10) gå med på = akseptere
+
+#### 7 ANMELDELSE: EN UTROLIG REISE!
+
+1) Den nåværende situasjonen i Turkmenistan, Kasakhstan, Tadsjikistan, Kirgisistan og Usbekistan, landenes historie og forfatterens opplevelser på reisen sin i disse landene.
+2) De er diktaturer (i større eller mindre grad).
+3) Landenes nåværende ledelse.
+4) Man står i fare for å beskrive alt som eksotisk og rart.
+5) Anmelderen skryter av Fatlands formidlingsevne, og vedkommende sier at Fatland skriver godt og medrivende slik at leseren får en følelse av å ha vært med på reisen hennes.
+
+#### 8 OFFENTLIGE BREV
+
+a) dette … om, b) bli … snart … innen, c) holder … betydning, d) se … snarest/omgående, e) ønsker
+
+#### 9 REDEGJØRELSE
+
+**Fiske for turister**
+
+I Norge er fisking en del av kulturarven. For å ta vare på fiskebestanden finnes det spesielle regler som utenlandske turister må følge når de fisker langs kysten.
+
+Turister kan bare bruke håndholdt redskap. Det vil for eksempel si fiskestang. De har ikke lov til å bruke garn, teiner, ruser eller liknende.
+
+Turister har ikke lov til å selge fangsten sin. De kan bare fiske til eget bruk, og de kan bare ta med 15 kilo fisk per person ut av Norge. Turister har også lov til å ta med en troféfisk, men den må være hel, for ellers teller den som en del av kvoten på 15 kilo.
+
+For en del fiskearter har myndighetene bestemt et minstemål for å beskytte bestandene. For turister er det forbudt å fange fisk som ikke oppfyller minstemålet. For eksempel skal torsk, nord for 62. breddegrad, være over 44 centimeter. Sør for 62. breddegrad må den være over 40
+
