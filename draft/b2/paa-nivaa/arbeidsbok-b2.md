@@ -5364,3 +5364,272 @@ h) Når kommer du tilbake? → Jeg lurer på ______________________________
 
 i) Hvilken forklaring har du denne gangen? → Jeg lurer på ______________________________
 
+### 5 HVA SIER SIMON?
+
+Skriv om fra direkte til indirekte tale.
+
+Lytt og gjør om fra direkte til indirekte tale.
+
+Arbeidsledigheten i Sverige er ganske høy, særlig blant ungdom. Først bodde jeg i Oslo. Lønna var bedre i Bergen enn i Oslo. Det var grunnen til at jeg flyttet til Norge. Etter et halvt års tid fikk jeg jobb i Bergen. Så da bestemte jeg meg for å flytte.
+
+Simon forteller at arbeidsledigheten ______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+### 6 SOM? (1)
+
+Skriv inn *hva*, *hva som*, *hvem* eller *hvem som* i setningene under.
+
+a) Han lurer på ______________________________ har lest denne boka.
+
+b) Jeg så ikke ______________________________ skjedde, dessverre.
+
+c) Jeg vet ikke ______________________________ hun er.
+
+d) Jeg vet ikke ______________________________ har pyntet juletreet.
+
+e) Ser du ______________________________ de holder på med?
+
+f) Hun vil vite ______________________________ du tenker på.
+
+g) Det er ikke alltid så lett å vite ______________________________ du vil!
+
+h) Det er viktig at du forteller meg ______________________________ gjorde det.
+
+i) Er det noen som vet ______________________________ har skrevet denne teksten?
+
+j) Du kan spørre ______________________________ du vil, men ingen kommer til å si noe.
+
+k) Du kan spørre ______________________________ helst, men ingen kommer til å si noe.
+
+l) Han har fortalt meg ______________________________ jeg skal gjøre.
+
+### 7 SOM? (2)
+
+Bind sammen setningene med *som*. Du bruker bare *som* hvis det er grammatisk nødvendig.
+
+Lytt og bind sammen setningene med *som*.
+
+a) Naboene hadde et problem. De klarte ikke å løse det.
+
+______________________________
+
+b) Jeg ønsker meg ei bok. Den er lett å lese.
+
+______________________________
+
+c) De har en hund. Den elsker å gjemme seg under sofaen.
+
+______________________________
+
+d) Vi har funnet et koselig hus. Vi vil gjerne kjøpe det.
+
+______________________________
+
+e) På treningen i går traff jeg en mann. Jeg kjente ham fra før.
+
+______________________________
+
+f) Har du sett den nyeste filmen hans? Den hadde premiere i går.
+
+______________________________
+
+g) Hun protesterer mot den nye veien. Den kommer til å gå like forbi huset hennes.
+
+______________________________
+
+h) De har fattet et vedtak. Jeg mener at de ikke kan stå inne for det.
+
+______________________________
+
+i) Miljøbevegelsen mener at de nye vindmøllene vil forstyrre dyrelivet. Vindmøllene skal bygges på Sande.
+
+______________________________
+
+### 8 HVA VIL DE?
+
+Skriv om setningene fra helsetninger med *for å* til helsetning og leddsetning som er bundet sammen med *fordi*. Se på eksemplet.
+
+Lytt og lag setninger med *fordi*.
+
+Eksempel:
+Hun arbeider med grammatikk for å bli bedre i norsk.
+➜ Hun arbeider med grammatikk fordi hun vil bli bedre i norsk.
+
+a) Han leser avisa for å holde seg orientert.
+➜ Han leser avisa ______________________________
+
+b) De flytter for å få bedre plass.
+➜ De flytter ______________________________
+
+c) Han drikker kaffe for å holde seg våken.
+➜ Han drikker kaffe ______________________________
+
+d) Han arbeider hardt for å bli ferdig før sommeren.
+➜ Han arbeider hardt ______________________________
+
+e) Hun har dratt på kjøpesenteret for å se etter ei ny bukse.
+➜ Hun har dratt på kjøpesenteret ______________________________
+
+### 9 DRAR DU NÅ, KAN JEG IKKE HJELPE DEG!
+
+Lag vilkårssetninger eller betingelsessetninger uten å bruke subjunksjon.
+
+Lytt og lag vilkårssetninger eller betingelsessetninger uten å bruke subjunksjon.
+
+a) Hvis du drar nå, kan jeg ikke hjelpe deg.
+Drar du ______________________________
+
+b) Hvis du deler på 12, tror jeg stykket ditt går opp.
+______________________________
+
+c) Hvis du ikke kler godt på deg, kommer du til å bli syk.
+______________________________
+
+d) Hvis du ikke føler deg helt pigg, må du holde senga.
+______________________________
+
+e) Dersom konserten blir avlyst, vil alle få pengene tilbake.
+______________________________
+
+f) Hvis du liker syltetøyet mitt, kan du gjerne få flere glass!
+______________________________
+
+g) Dersom det blir kaldt, må du bare skru opp temperaturen på ovnene.
+______________________________
+
+h) Hvis du synes det er for mørkt, er det bare å tenne lampa over bordet.
+______________________________
+
+i) Dersom du mener det går for tregt, er du velkommen til å ta i et tak!
+______________________________
+
+### 10 TUR OVER VIDDEN
+
+Sett strek under leddsetningene i teksten.
+
+Sett *setningsadverbialet* på rett sted i *leddsetningene* slik at teksten blir logisk.
+
+Sist lørdag hadde Frida og Ada planlagt en tur over Vidden.
+
+**aldri** — Det passet godt fordi Ada hadde gått over Vidden før.
+Vidden er strekningen mellom to av byfjellene i Bergen.
+
+**ikke** — Siden det blåste den dagen, bestemte de seg for å gå fra Ulriken til Fløyen.
+Da har man fin utsikt over øyene utenfor Bergen.
+
+**ikke** — Ettersom hun hadde brukt turskoene sine før, fikk Frida gnagsår allerede etter den første kilometeren.
+
+**egentlig** — Dermed ble ikke turen slik de hadde tenkt.
+I stedet dro de hjem til Ada og slappet av foran TV-en.
+
+**ikke** — Heldigvis var det langrenn på TV slik at de kjedet seg.
+
+### 11 SPRÅKDETEKTIV
+
+Det er (1), (2) eller (3) ordstillingsfeil i hver setning. Finn feilene og skriv setningene uten feil.
+
+a) (1) Vet du når begynner konserten i kveld?
+
+______________________________
+
+b) (2) Hvis du vil ikke bli med, du kan sende meg en SMS.
+
+______________________________
+
+c) (1) Nå er mulig det å kjøpe billetter på Internett.
+
+______________________________
+
+d) (1) Hvis vil du, kan vi møtes på forhånd.
+
+______________________________
+
+e) (3) Kan det være vanskelig å finne parkering. Derfor det er lurt å være ute tidlig.
+
+______________________________
+
+f) (2) Jeg håper spiller de noen gamle låter også, bare ikke ny musikk.
+
+______________________________
+
+### 12 SETNINGSSKJEMA FOR LEDDSETNINGER
+
+Finn leddsetningen i helsetningen.
+
+Skriv leddsetningen inn i skjemaet.
+
+a) Jeg driver og søker jobb fordi norskkurset snart slutter.
+
+b) I går gikk han en lang tur fordi han var så rastløs.
+
+c) De har begynt å investere i den nye idrettsparken selv om politikerne ikke har fattet noe vedtak ennå.
+
+d) Det er ikke tvil om at nedgangen i oljeindustrien har representert en utfordring for næringslivet.
+
+e) Er du enig i at den enkelte bør ha ansvar for sin egen helsesituasjon?
+
+Skjema (kolonner): FORBINDERFELT (subjunksjon) | MIDTFELT (subjekt) | setnings-adverbial (a) | VERBAL 1 (v1) | VERBAL 2 (V2) | SLUTTFELT (predikativ (Pt), objekt (IO før DO), adverbial (A) (sted før tid))
+
+a)
+
+b)
+
+c)
+
+d)
+
+e)
+
+### 13 HVIS DU TRENGER HJELP, ER DET BARE Å SPØRRE
+
+Inverter helsetningen slik at leddsetningen står i forfeltet. Se på eksempelet.
+
+Lytt og gjenta med leddsetningen i forfeltet.
+
+Eksempel:
+Det er bare å spørre hvis du trenger hjelp.
+➜ Hvis du trenger hjelp, er det bare å spørre.
+
+a) Han fikk ikke jobben selv om han var eneste søker.
+
+______________________________
+
+b) Ingen skoler vil bli nedlagt hvis jeg får bestemme.
+
+______________________________
+
+c) De flyttet til London like før barna skulle begynne på skolen.
+
+______________________________
+
+d) Det er hyggelig at hun alltid er i godt humør.
+
+______________________________
+
+e) Det er fint at du har tid til å hjelpe oss.
+
+______________________________
+
+f) Det er viktig å bruke refleks.
+
+______________________________
+
+g) Det er forbudt å sykle på motorveien.
+
+______________________________
+
+h) Politiet kan få tillatelse til å bære våpen hvis det er fare for liv og helse.
+
+______________________________
+
+i) Øya blir selvforsynt med elektrisitet så snart alle vindmøllene har kommet i drift.
+
+______________________________
+
