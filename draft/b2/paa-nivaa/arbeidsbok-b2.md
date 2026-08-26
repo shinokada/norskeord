@@ -5633,3 +5633,179 @@ i) Øya blir selvforsynt med elektrisitet så snart alle vindmøllene har kommet
 
 ______________________________
 
+### 14 SKAL VI TA EN KAFFE DA?
+
+Inverter helsetningen slik at leddsetningen står i forfeltet. Se på eksempelet.
+
+Lytt og gjenta med leddsetningen i forfeltet.
+
+Eksempel:
+Skal vi ta en kopp kaffe sammen når vi får pause?
+➜ Når vi får pause, skal vi ta en kopp kaffe sammen da?
+
+a) Hvor gammel var du da Norge slo Brasil 2-1 i fotball?
+
+______________________________
+
+b) Var du født da Ronald Reagan var president i USA?
+
+______________________________
+
+c) Blir du med ut hvis det regner?
+
+______________________________ på TV?
+
+d) Skal du søke jobb når du er ferdig med norskkurset?
+
+______________________________
+
+e) Hvordan kommer du til jobben siden du ikke kan kjøre bil lenger?
+
+______________________________
+
+f) Hvem kan jeg spørre hvis jeg trenger hjelp?
+
+______________________________
+
+g) Hvor mye kaffe drikker du når du ikke har sovet?
+
+______________________________
+
+### 15 KOMMA?
+
+Skal det være komma i disse setningene? Sett inn komma hvis det mangler.
+
+a) Hele byen har stoppet opp fordi det har falt 40 cm snø i løpet av natta.
+
+b) Plutselig tenkte hun en tanke som hun aldri hadde tenkt før.
+
+c) Til tross for regnvær ble ikke konserten avlyst.
+
+d) Til tross for at regnet øste ned valgte arrangøren å avholde konserten.
+
+e) Sykkelen som har stått ubrukt i garasjen det siste året har endelig blitt solgt.
+
+f) Kjenner du mannen som bor i hjørneleiligheten og som har blitt valgt til ny leder i borettslaget?
+
+g) Den nye ordføreren mener at kollektivtrafikk varm skolelunsj og økt lærertetthet er budsjettvinnere.
+
+h) Blir du med ut eller vil du heller være inne og se på TV?
+
+### 16 HVA SIER HUN?
+
+Noen ganger, og særlig *muntlig*, kan vi invertere leddsetninger. Referer hva Frida sier. Inverter leddsetningene slik at *tidsleddene* kommer først.
+
+Lytt og gjenta.
+
+Jeg var ikke hjemme i går. Jeg kommer ikke på lesesalen i morgen. Jeg skal på hytta neste helg. Det passer best på torsdag. Mora mi kommer på besøk i påsken. Jeg kan ta oppvasken etter middag.
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+### 17 EN LEDDSETNING I EN HELSETNING
+
+Hvilken funksjon har leddsetningene i disse helsetningene: *subjekt*, *objekt* eller *adverbial*?
+
+a) Etter at Frida dro til Bergen for å studere, har ikke foreldrene sett så mye til henne. ______________________________
+
+b) Frida drar ikke hjem så ofte fordi reisen er for dyr. ______________________________
+
+c) Hun vil heller at mora skal besøke henne. ______________________________
+
+d) Mora kommer gjerne på besøk hvis hun har noen ekstra fridager. ______________________________
+
+e) Frida sender alltid en SMS til mora før hun legger seg. ______________________________
+
+f) At Frida er en flittig student, er tydelig for alle. ______________________________
+
+g) Nå vil mora vite om Frida kommer hjem til påske. ______________________________
+
+h) Men Frida kan ikke komme i påsken fordi hun har eksamen bare noen uker etterpå. ______________________________
+
+### 18 FORDI OG DERFOR
+
+Bind sammen setningene med *fordi* og *derfor*.
+
+En dag forsvant vannet. Farmor ringte etter en rørlegger.
+
+fordi: ______________________________
+
+derfor: ______________________________
+
+Farmor likte rørleggeren. Hun inviterte ham på kaffe og pannekaker.
+
+fordi: ______________________________
+
+derfor: ______________________________
+
+Even hadde ikke flere jobber den dagen. Han takket ja til invitasjonen.
+
+fordi: ______________________________
+
+derfor: ______________________________
+
+### 19 SELV OM OG LIKEVEL
+
+Bind sammen setningene med *selv om* og *likevel*.
+
+Frida drar på hyttetur med Even. Hun burde egentlig lese.
+
+selv om: ______________________________
+
+likevel: ______________________________
+
+Frida avtaler en kinotur med Ada. Hun vil helst gå på kino med Even.
+
+selv om: ______________________________
+
+likevel: ______________________________
+
+Ada skjønner at Frida er forelsket. Hun lar ikke venninna være i fred.
+
+selv om: ______________________________
+
+likevel: ______________________________
+
+### 20 MENS OG SAMTIDIG
+
+Bind sammen setningene med *mens* og *samtidig*.
+
+Frida tenker på Even. Hun vasker opp.
+
+mens: ______________________________
+
+samtidig: ______________________________
+
+Hver morgen hører farmor Nitimen på radio. Hun leser avisa og drikker kaffe.
+
+mens: ______________________________
+
+samtidig: ______________________________
+
+Tante Petra arbeider med hattene sine. Hun venter på kunder.
+
+mens: ______________________________
+
+samtidig: ______________________________
+
+### KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan bruke leddsetninger når jeg snakker, samtaler eller skriver. (I can use subordinate clauses when I speak, converse or write.) | | |
+| Jeg kan skille mellom nominale, adjektiviske og adverbiale leddsetninger. (I can distinguish between nominal, adjectival and adverbial subordinate clauses.) | | |
+| Jeg kan variere mellom å sette leddsetningen i forfeltet eller i sluttfeltet. (I can vary between placing the subordinate clause in the sentence's first part or final part.) | | |
+| Jeg kan referere setningsspørsmål. (I can report questions that are answered by yes or no.) | | |
+| Jeg kan referere hv-spørsmål. (I can report questions that start with an interrogative word.) | | |
+| Jeg kan bruke som riktig når jeg refererer hv-spørsmål. (I can use som correctly when reporting interrogative sentences.) | | |
+| Jeg kan lage adjektiviske leddsetninger med korrekt bruk av som. (I can form adjectival subordinate clauses and use som correctly when doing so.) | | |
+
