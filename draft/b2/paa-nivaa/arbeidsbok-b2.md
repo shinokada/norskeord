@@ -5130,3 +5130,237 @@ b) Skal dere til Litauen i sommer? ______________________________
 
 c) Må du arbeide overtid i dag? ______________________________
 
+d) Ble hun innkalt til intervju? ______________________________
+
+e) Fikk han tak i sjefen? ______________________________
+
+f) Har melka gått ut på dato? ______________________________
+
+g) Har han fått tatt lappen nå? ______________________________
+
+h) Kommer du inn på medisinstudiet til høsten? ______________________________
+
+i) Har hun sluttet å røyke? ______________________________
+
+j) Fikk han dekket utgiftene sine? ______________________________
+
+### 14 TRYKKLETT PRONOMEN OG IKKE
+
+Plassering av *ikke* varierer ettersom vi har et finitt eller et infinitt verb, og ettersom verbet er et partikkelverb eller ikke. Erstatt substantivene i disse setningene med et trykklett pronomen. Hvordan blir plasseringen av pronomenet og *ikke*?
+
+Lytt og lag setninger med trykklette pronomen.
+
+a) De bruker ikke klærne. → De bruker ______________________________.
+
+b) De har ikke glemt Hanne. → De har ______________________________.
+
+c) De har ikke lest boka. → De har ______________________________.
+
+d) De hilste ikke på Hanne. → De hilste ______________________________.
+
+e) De klarte ikke eksamen. → De klarte ______________________________.
+
+f) De leste ikke oppgaven. → De leste ______________________________.
+
+g) De likte ikke maten. → De likte ______________________________.
+
+h) De rakk ikke bussen. → De rakk ______________________________.
+
+i) De skal ikke treffe Hanne. → De skal ______________________________.
+
+j) De så ikke Hanne. → De så ______________________________.
+
+k) De tror ikke på mora. → De tror ______________________________.
+
+### 15 HVA SKJEDDE I GÅR?
+
+Lag inverterte setninger med *ikke* på rett plass.
+
+Lytt og lag inverterte setninger med *ikke* på rett plass.
+
+a) Frida kom ikke hjem i går. → I går ______________________________.
+
+b) Hun kom ikke hjem i går. → I går ______________________________.
+
+c) Farmor rakk ikke å lage middag i går. → I går ______________________________.
+
+d) Hun rakk ikke å lage middag i går. → I går ______________________________.
+
+e) Tante Petra fikk ikke solgt noen hatter i går. → I går ______________________________.
+
+f) Hun fikk ikke solgt noen hatter i går. → I går ______________________________.
+
+g) Selma og Petra gikk ikke søndagstur i går. → I går ______________________________.
+
+h) De gikk ikke søndagstur i går. → I går ______________________________.
+
+i) Frida og Ada rakk ikke forelesningen i går. → I går ______________________________.
+
+j) De rakk ikke forelesningen i går. → I går ______________________________.
+
+### 16 SPRÅKDETEKTIV
+
+Sett kryss ved setningene som har *ikke* på den mest logiske plassen i sammenhengen.
+
+Lytt og gjenta.
+
+□ Nei, jeg vil ikke spørre naboene. Jeg kjenner dem ikke.
+
+□ Han skulle egentlig ta bussen klokka tre, men han nådde ikke den.
+
+□ Så flink du har blitt i norsk! – Nei, jeg synes det ikke.
+
+□ Neste gang klarer du eksamen, tror du ikke det?
+
+□ I går formiddag regnet ikke det i det hele tatt.
+
+□ Du må hjelpe meg. Jeg greier det ikke alene.
+
+□ Har vi ikke kjøpt poteter? Hvorfor ikke husket du det?
+
+### 17 IMPERATIVSETNINGER
+
+Skriv setningene som imperativsetninger.
+
+Lytt og lag imperativsetninger.
+
+a) Dere kan ikke gå inn dit! Jeg har nettopp vasket der.
+______________________________
+
+b) Kan du ta oppvasken i dag, er du snill?
+______________________________
+
+c) Skal dere ikke lage dere litt frokost?
+______________________________
+
+d) Du må huske tannlegetimen din i morgen.
+______________________________
+
+e) Dere kan ikke stå her og røyke. Det er forbudt.
+______________________________
+
+f) Du må kle godt på deg! Det er skikkelig kaldt ute i dag.
+______________________________
+
+g) Du må skrive om dette avsnittet. Det fungerer dårlig.
+______________________________
+
+h) Du har ikke lov til å kopiere mer enn ett kapittel av boka.
+______________________________
+
+i) Du må ikke skrive pinkoden på bankkortet ditt!
+______________________________
+
+j) Du bør ikke oppgi personnummeret ditt med mindre det er helt nødvendig.
+______________________________
+
+## KAN DU DET?
+
+| Oppgave: | Jeg kan det. | Jeg må øve mer. |
+|---|---|---|
+| Jeg kan invertere helsetninger, også når de inneholder en leddsetning.<br>*(I can invert complete sentences, also when they contain a subordinate clause.)* | | |
+| Jeg kan lage presenteringssetninger (det-setninger).<br>*(I can form presentation sentences (a kind of det sentences).)* | | |
+| Jeg kan lage det-setninger av setninger som ellers starter med en infinitivskonstruksjon eller en at-setning.<br>*(I can make simple det sentences from that otherwise would start with a nominal subordinate clause initiated by an å or an at.)* | | |
+| Jeg kan bryte ut subjektet, objektet eller adverbialet (lage en det-setning).<br>*(I can extrapose the subject, the object or the adverbial (make a det sentence).)* | | |
+| Jeg kan sette en helsetning inn i et setningsskjema.<br>*(I can place the phrases of a complete sentence in correct order according to the 'sentence frame'.)* | | |
+| Jeg vet at det er mest naturlig å plassere stedsledd før tidsledd og tidsledd før ledd som forteller om årsak i sluttfeltet i en setning.<br>*(I know that in the final part of a sentence it is more natural to place a phrase indicating place before a phrase indicating time, and a phrase indicating time before a phrase providing an explanation.)* | | |
+| Jeg kan plassere *ikke* riktig i helsetninger med trykklett objekt.<br>*(I can place ikke correctly in complete sentences when the object is not stressed.)* | | |
+| Jeg kan plassere *ikke* riktig i inverterte helsetninger med trykklett objekt.<br>*(I can place ikke correctly in inverted sentences containing a non-stressed pronoun.)* | | |
+| Jeg kan variere mellom helsetninger med modalverb og imperativsetninger.<br>*(I can vary between sentences using modal verbs and sentences in the imperative.)* | | |
+
+# LEDDSETNINGER
+
+### 1 LEDDSETNINGER (1)
+
+Hvilken type leddsetning inneholder disse setningene? Sett kryss.
+
+(Kolonner: NOMINAL LEDDSETNING | ADJEKTIVISK LEDDSETNING | ADVERBIAL LEDDSETNING)
+
+a) Frida sier at hun trives i Bergen.
+
+b) Ada lurer på om hun vil bli med på kino i dag.
+
+c) Farmor har laget middag når Frida kommer hjem.
+
+d) Frida trenger en rullegardin fordi det er så lyst om kvelden.
+
+e) De ser på et program som handler om flyktningsituasjonen i Europa.
+
+f) Frida sier at hun kan ta oppvasken.
+
+g) Frida elsker kjøttkakene som farmor lager.
+
+h) Etter at Petras hus brant ned, flyttet Petra inn hos Selma.
+
+### 2 NOMINALE LEDDSETNINGER
+
+Sett strek under den nominale leddsetningen.
+
+Skriv hvilken funksjon den nominale leddsetningen har i helsetningen: *subjekt*, *objekt* eller *predikativ*.
+
+a) At han ikke har sagt noe, er helt utrolig. ______________________________
+
+b) Jeg skjønner ikke hvordan hun får det til! ______________________________
+
+c) Kan du fortelle hvor du bor? ______________________________
+
+d) Problemet er at ingen vil si noe. ______________________________
+
+e) Han spør hvem som knuste ruta. ______________________________
+
+f) Å holde på en hemmelighet kan være vanskelig. ______________________________
+
+g) Alle vet at det er sjefen som er problemet! ______________________________
+
+### 3 Å REFERERE SPØRSMÅL (1)
+
+Referer setningsspørsmålene.
+
+Lytt og referer setningsspørsmålene. Start med *Frida vil vite …*
+
+(DIREKTE TALE → INDIREKTE TALE)
+
+a) Kommer du alene på festen? → Frida vil vite ______________________________
+
+b) Kan ikke Ada komme likevel? → Frida vil vite ______________________________
+
+c) Kan vi ta en tur på kino i kveld? → Frida vil vite ______________________________
+
+d) Har du tenkt å lese hele ettermiddagen? → Frida vil vite ______________________________
+
+e) Er du allerede ferdig med hjemmeeksamen? → Frida vil vite ______________________________
+
+f) Har du funnet et sted å bo? → Frida vil vite ______________________________
+
+g) Kjenner du ingen her i byen? → Frida vil vite ______________________________
+
+h) Skal du på konserten i kveld? → Frida vil vite ______________________________
+
+i) Går du ofte ut på fredagene? → Frida vil vite ______________________________
+
+### 4 Å REFERERE SPØRSMÅL (2)
+
+Referer hv-spørsmålene. Start med *Jeg lurer på …*
+
+Lytt og referer hv-spørsmålene. Start med *Jeg lurer på …*
+
+(DIREKTE TALE → INDIREKTE TALE)
+
+a) Hva er klokka? → Jeg lurer på ______________________________
+
+b) Hvor lenge skal jeg vente? → Jeg lurer på ______________________________
+
+c) Hvor har du vært? → Jeg lurer på ______________________________
+
+d) Hvorfor har du ikke ringt til meg? → Jeg lurer på ______________________________
+
+e) Hvem snakker du med? → Jeg lurer på ______________________________
+
+f) Hva driver du på med? → Jeg lurer på ______________________________
+
+g) Hvordan skal det gå med oss? → Jeg lurer på ______________________________
+
+h) Når kommer du tilbake? → Jeg lurer på ______________________________
+
+i) Hvilken forklaring har du denne gangen? → Jeg lurer på ______________________________
+
