@@ -1774,3 +1774,185 @@ e) Hun har dratt på kjøpesenteret fordi hun vil se etter ei ny bukse.
 a) Drar du nå, kan jeg ikke hjelpe deg.
 b) Deler du på 12, tror jeg stykket ditt går opp.
 
+#### 10 TUR OVER VIDDEN
+
+… fordi Ada aldri hadde gått over Vidden før.
+Siden det ble blåste den dagen, …
+Ettersom hun ikke hadde brukt turskoene sine før, …
+… slik de egentlig hadde tenkt.
+… slik at de ikke kjedet seg
+
+#### 11 SPRÅKDETEKTIV
+
+a) Vet du når konserten begynner i kveld? / Vet du når konserten i kveld begynner?
+b) Hvis du ikke vil bli med, kan du sende meg en SMS.
+c) Nå er det mulig å kjøpe billetter på Internett.
+d) Hvis visst vil, kan vi møtes på forhånd.
+e) Det kan være vanskelig å finne parkering. Derfor er det lurt å være tidlig ute.
+f) Jeg håper de spiller noen gamle låter også, ikke bare ny musikk.
+
+#### 12 SETNINGSSKJEMA FOR LEDDSETNINGER
+
+| | FORB. | MIDTFELT | (v1) | VERBAL 2 (V2) | SLUTTFELT |
+| --- | --- | --- | --- | --- | --- |
+| a) | fordi | norskkurset | snart | slutter | |
+| b) | fordi | han | | var | så rastløs |
+| c) | selv om | politikerne | ikke | har fattet | noe vedtak ennå |
+| d) | at | nedgangen i oljeindustrien | | har representert | en utfordring for næringslivet |
+| e) | at | den enkelte | | bør ha | ansvar for sin egen helsesituasjon |
+
+#### 13 HVIS DU TRENGER HJELP, ER DET BARE Å SPØRRE
+
+a) Selv om han var eneste søker, fikk han ikke jobben.
+b) Hvis jeg får bestemme, vil ingen skoler bli nedlagt.
+c) Like før barna skulle begynne på skolen, flyttet de til London.
+d) At hun alltid er i godt humør, er hyggelig.
+e) At du har tid til å hjelpe oss, er fint.
+f) Å bruke refleks er viktig.
+g) Å sykle på motorveien er forbudt.
+h) Hvis det er fare for liv og helse, kan politiet få tillatelse til å bære våpen.
+i) Så snart alle vindmøllene har kommet i drift, blir øya selvforsynt med elektrisitet.
+
+#### 14 SKAL VI TA EN KAFFE DA?
+
+a) Da Norge slo Brasil 2-1 i fotball, hvor gammel var du da?
+b) Da Ronald Reagan var president i USA, var du født da?
+c) Hvis det regner, blir du med ut da?
+d) Når du er ferdig med norskkurset, skal du søke jobb da?
+e) Siden du ikke kan kjøre bil lenger, hvordan kommer du til jobben da?
+f) Hvis jeg trenger hjelp, hvem kan jeg spørre da?
+g) Når du ikke har sovet, hvor mye kaffe drikker du da?
+
+#### 15 KOMMA?
+
+a) Hele byen har stoppet opp fordi det har falt 40 cm snø i løpet av natta.
+b) Plutselig tenkte hun en tanke som hun aldri hadde tenkt før.
+c) Til tross for regnvær ble ikke konserten avlyst.
+d) Til tross for at regnet øste ned, valgte arrangøren å avholde konserten.
+e) Sykkelen, som har stått ubrukt i garasjen det siste året, har endelig blitt solgt.
+f) Kjenner du mannen som bor i hjørneleiligheten, og som har blitt valgt til ny leder i borettslaget?
+g) Den nye ordføreren mener at kollektivtrafikk, varm skolelunsj og økt lærertetthet er budsjettvinnere.
+h) Blir du med ut, eller vil du heller være inne og se på TV?
+
+#### 16 HVA SIER HUN?
+
+Hun sier at i går var hun ikke hjemme.
+… i morgen kommer hun ikke på lesesalen.
+… neste helg skal hun på hytta.
+… på torsdag passer det best.
+… i påsken kommer mora hennes på besøk.
+… etter middag kan hun ta oppvasken.
+
+#### 17 EN LEDDSETNING I EN HELSETNING
+
+a) adverbial, b) adverbial, c) objekt, d) adverbial, e) adverbial, f) subjekt, g) objekt, h) adverbial
+
+#### 18 FORDI OG DERFOR
+
+*Forslag:*
+
+**fordi:** En dag ringte farmor etter en rørlegger fordi vannet forsvant.
+**derfor:** En dag forsvant vannet. Derfor ringte farmor etter en rørlegger.
+**fordi:** Farmor inviterte rørleggeren på kaffe og pannekaker fordi hun likte ham.
+**derfor:** Farmor likte rørleggeren. Derfor inviterte hun ham på kaffe og pannekaker.
+**fordi:** Even takket ja til invitasjonen fordi han ikke hadde flere jobber den dagen.
+**derfor:** Even hadde ikke flere jobber den dagen. Derfor takket han ja til invitasjonen.
+
+#### 19 SELV OM OG LIKEVEL
+
+*Forslag:*
+
+**selv om:** Frida drar på hyttetur med Even selv om hun egentlig burde lese.
+**likevel:** Frida burde egentlig lese. Likevel drar hun på hyttetur med Even.
+**selv om:** Frida avtaler en kinotur med Ada selv om hun vil helst gå på kino med Even.
+**likevel:** Frida vil helst gå på kino med Even. Likevel avtaler hun en kinotur med Ada.
+**selv om:** Ada lar ikke Frida være i fred selv om hun skjønner at venninna er forelsket.
+**likevel:** Ada skjønner at Frida er forelsket. Likevel lar hun ikke venninna være i fred.
+
+#### 20 MENS OG SAMTIDIG
+
+*Forslag:*
+
+**mens:** Frida tenker på Even mens hun vasker opp.
+**samtidig:** Frida vasker opp. Samtidig tenker hun på Even. (Frida tenker på Even. Samtidig vasker hun opp.)
+**mens:** Hver morgen hører farmor Nitimen på radio mens hun leser avisa og drikker kaffe.
+**samtidig:** Hver morgen hører farmor Nitimen på radio. Samtidig leser hun avisa og drikker kaffe.
+**mens:** Tante Petra arbeider med hattene sine mens hun venter på kunder.
+**samtidig:** Tante Petra venter på kunder. Samtidig arbeider hun med hattene sine. (Tante Petra arbeider med hattene sine. Samtidig venter hun på kunder.)
+
+## 4 TEKSTER OG TEKSTBINDING
+
+### TEKSTBINDING
+
+#### 1 DETTE ER NYHETENE
+
+Dette er nyhetene. Klokka er 16. Hovedsakene i dag er inntektstap for staten og bygging av stamvei mellom Vestlandet og Østlandet. Først i dag skal vi høre at statens inntekter har gått kraftig ned det siste året. Nedgangen skyldes den lave oljeprisen. Finansministeren har uttalt at nedgangen har blitt noe større enn forventet. Samtidig understreker ministeren at nedgangen ikke får betydning for statsbudsjettet inneværende år. Så til ny stamvei mellom vest og øst. Nå har Stortinget vedtatt å sette i gang bygging av ny stamvei. Byggingen vil starte allerede om et år. Dette var nyhetene. Tilbake til studio.
+
+#### 2 TIDSFORHOLD
+
+a) etter at, b) etterpå, c) etter, d) Etter, e) Etter at
+
+#### 3 HVA SPURTE HUN OSS OM?
+
+Hun spurte oss om vi kunne ta oppvasken etter middag.
+… om vi hadde vært i byen helt til nå.
+… hvem vi skulle besøke den kvelden.
+… hvorfor vi kom først nå (da).
+… om vi ikke ville ha noe å spise.
+
+#### 4 HVA SA HUN TIL OSS?
+
+Hun sa at hun bare skulle en liten tur til Larvik.
+… hun ville være tilbake på tirsdag.
+… vi måtte huske å vanne blomstene mens hun var borte.
+… vi ikke måtte glemme å sette ut søppelet.
+… vi kom til å klare oss alene noen dager.
+
+#### 5 VANSKELIGE BUDSJETTFORHANDLINGER
+
+a) Jeg må få understreke at budsjettforhandlingene har vært svært vanskelige i år.
+b) Jeg må få understreke at det har vært utfordrende å bli enige.
+c) Jeg må få understreke at diskusjonene har vært lange og harde.
+d) Jeg må få understreke at det er vanskelig å gjøre alle til lags.
+e) Jeg må få understreke at flertallet tross alt må få siste ord.
+
+#### 6 HVEM SKAL VI ANSETTE?
+
+a) Jeg er usikker på om han virkelig er den beste kandidaten.
+b) … om han egentlig er egnet til stillingen.
+c) … om han faktisk har de kvalifikasjonene vi ønsker oss.
+d) … om han vil bli værende i jobben.
+e) … på om han kommer til å bidra positivt til arbeidsmiljøet.
+f) … om de ansatte vil bli fornøyde.
+
+#### 7 IFØLGE FAR VIL MOR AT …
+
+*Forslag:*
+
+Ifølge far vil mor at han og jeg skal male hytta i sommer. / Mor vil visst at far og jeg skal …
+Ifølge far vil mor at han og jeg skal ta opp båten i løpet av helgen. / Mor vil visst at far og jeg …
+Ifølge far vil mor at han og jeg skal ta en tur til Stavanger og besøke tante i løpet av høsten. / Mor vil visst at far og jeg …
+
+#### 8 HVORFOR SKJER DET?
+
+a) **fordi:** Halvparten av plantene har visnet fordi du ikke har vannet dem.
+**derfor:** Du har ikke vannet plantene. Derfor har halvparten visnet.
+**for:** Halvparten av plantene har visnet, for du har ikke vannet dem.
+b) **ettersom:** Butikken har gått konkurs ettersom kundegrunnlaget var for dårlig.
+**nemlig:** Butikken har gått konkurs. Kundegrunnlaget var nemlig for dårlig.
+**så … at:** Kundegrunnlaget var så dårlig at butikken har gått konkurs.
+c) **for:** Han ble sittende oppe hele natta, for filmen var utrolig spennende.
+**så … at:** Filmen var så utrolig spennende at han ble sittende oppe hele natta.
+**så:** Filmen var utrolig spennende, så han ble sittende oppe hele natta.
+
+#### 9 FOR – SÅ
+
+a) **for:** Jeg kan ikke snakke med deg nå, for jeg sitter i telefonen.
+**så:** Jeg sitter i telefonen, så jeg kan ikke snakke med deg nå.
+b) **for:** Jeg kunne ikke sykle til jobben i går, for det var klink is på veiene!
+**så:** Det var klink is på veiene i går, så jeg kunne ikke sykle til jobben.
+c) **for:** De kunne ikke komme på festen. De lå til sengs med influensa.
+**så:** De lå til sengs med influensa, så de kunne ikke komme på festen.
+d) **for:** Han fikk ikke ta eksamen, for han besto ikke alle arbeidskravene.
+**så:** Han besto ikke alle arbeidskravene, så han fikk ikke ta eksamen.
+
