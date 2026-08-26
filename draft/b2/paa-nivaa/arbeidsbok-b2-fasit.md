@@ -1337,3 +1337,204 @@ e) innsjø (et naturfenomen, de andre ordene referer til mennesker)
 f) vei (et sted man transporterer ting på, de andre ordene er ulike boligtyper)
 g) frukt (et overbegrep, de andre ordene er eksempler på dette overbegrepet – de er underbegreper)
 
+#### 4 ADJEKTIV OG SUBSTANTIV
+
+min oppriktige mening, en nydelig kake, et interessant problem, en helt vanlig dag på jobben, en tvilsom affære, et langt gjesp, vår dypeste medfølelse, en liten time
+
+#### 5 HOMONYMER (1): SÅ
+
+Så (3) du nyhetene … Ja, først så (3) jeg … så (2) så (3) jeg
+… så (6) det gikk ikke så (1) bra … så (1) trist
+… så (1) fin hage … Så (1) hyggelig … skal jeg så (4) ringblomster
+… så (5) vi kan gå? … så (1) utrolig lang tid …
+
+#### 6 HOMONYMER (2): STEMME
+
+a) hver eneste stemme (2) … å stemme (3) ved valget …
+b) … en nydelig stemme (1).
+c) 2016 får det ikke til å stemme (4).
+d) Kan det stemme (4) … «Årets stemme (1)»?
+
+#### 7 HOMONYMER (3): SKILT
+
+a) Hun ble skilt (2) …
+b) … et skilt (1) der borte …
+c) … noen skilt (1) her …
+d) … har skilt (3) seg …
+
+#### 8 I GODT HUMØR
+
+a) i godt humør, b) ute av seg, c) i slekt med, d) i god stand, e) langt nede (her kunne vi også ha brukt: ute å kjøre), f) ute å kjøre (her kunne vi også ha brukt: langt nede), g) fra vettet
+
+#### 9 METAFORER
+
+1) Hun så ham.
+2) Var jeg gleder meg til ferien.
+3) Kan du hjelpe meg?
+4) Simon hadde alt under kontroll.
+5) Kan du hjelpe meg?
+6) Jeg er veldig glad for at du kom.
+7) Du må skjerpe deg og rydde rommet.
+8) Hva skjer?
+9) Jeg konsentrerer meg veldig mye.
+10) Firmaet går med overskudd.
+11) Hun vil forstå alt som skjer.
+12) Jeg kan ikke svare deg akkurat nå.
+13) Søstera mi er veldig ærlig.
+14) Bestefar kan mange historier.
+15) Sønnen hennes snakker hele tida.
+16) Man må vite hva som er riktig å gjøre.
+
+#### 10 80 PARSETNINGER
+
+1) enn én side, 2) knærne, 3) borte, 4) av humper, 5) fantasifull, kreativ, full av fantasi, 6) går ikke, 7) ikke, 8) (til) å hjelpe til, 9) barnløse, uten barn, 10) produktiv, 11) nye regjerings, 12) Foreldrene til, 13) hver (eneste), 14) det lyse, 15) ingenting, 16) mange, 17) Bråket, 18) foreldrene dine, 19) ikke lett, ikke enkel, 20) så flinke, 21) den beste pizzaen, 22) så gammel, 23) ansatt, 24) ansvarsløs, 25) tørre, 26) åpne, 27) kan ikke, 28) nødt til, 29) lov (til) å, tillatelse til å, 30) lyst til å, 31) Dere må, Dere bør, Dere skal, 32) har vært, 33) kom for, 34) ble malt, 35) Ses, Treffes, Møtes, 36) vaskes, skrelles og kokes, 37) veldig gjerne, svært gjerne, 38) (litt) saktere, (litt) langsommere, 39) er (helt) i orden, er (helt) greit, 40) Likevel går han, 41) fortere, 42) kanskje, muligens, 43) sannsynlig, 44) går bedre, 45) kan kanskje, kan muligens, 46) i nærheten, 47) hjemme i, 48) gammel som, 49) sett henne på, 50) time hos, 51) før, 52) noe på, 53) fordi hun, 54) av folk, 55) prisen på, 56) i/ved, 57) en gang, det samme, 58) bak, 59) godt eksempel, 60) mer alvorlig, 61) fordi det regner, 62) til tross for at han ikke, selv om han ikke, 63) de vil se, 64) fra, 65) som har, 66) som ikke, 67) hun har fri, hun ikke arbeider, 68) at dette ikke er, 69) oppe, 70) vi ikke trengte, de ikke trengte, 71) stramme, 72) varmt, mildt, 73) måtte vaske hendene før vi satte oss, skulle vaske hendene før vi satte oss, 74) ledig, 75) pålitelig, 76) lenge til, 77) forventninger, 78) (en) tale, 79) var Per som knuste ruta, 80) Det er viktig å bruke refleks
+
+## 3 SETNINGER
+
+### SETNINGSLEDD
+
+#### 2 SETNINGSLEDD (2)
+
+a) adverbial, b) adverbial, c) objekt, d) adverbial, e) setningsadverbial, f) objekt, g) adverbial, h) verbal, i) predikativ, j) subjekt, k) verbal, l) adverbial, m) objekt
+
+#### 3 SETNINGSLEDD (3)
+
+a) Foreldrene hennes | kan | ikke | komme | på besøk | til dem | i sommer.
+b) Nå for tida | kjøper | mange | elsykkel.
+c) Petter | vil | vite | om du kan komme i morgen.
+d) Jeg | synes | at han er en tufs.
+e) Hvis du ikke kan komme, | må | du | gi | beskjed | innen fredag.
+f) Etter min mening | er | dette | den beste boka han har skrevet.
+g) Han | ble | veldig glad | da han fikk eksamensresultatet.
+h) Må | jeg | lese | denne boka | før eksamen?
+i) Før du går, | må | du | huske | å låse døra.
+j) Legen | har | sagt | at han må holde senga i fire dager.
+k) Alle jeg kjenner, | spiser | fisk | minst to ganger i uka.
+
+#### 4 Å GJØRE ET VERB
+
+a) Teksten, b) Brødet, c) Ola, d) Kattene, e) Klærne, f) Flagget, g) Suppa, h) Bøkene, i) Flyturen, j) Leiligheten, k) Vaskemaskinen
+
+#### 5 OBJEKT ELLER PREDIKATIV?
+
+| | Direkte objekt | Indirekte objekt | Predikativ |
+| --- | --- | --- | --- |
+| a) | x | | |
+| b) | | x | |
+| c) | x | | |
+| d) | x | | |
+| e) | x | | |
+
+| | Direkte objekt | Indirekte objekt | Predikativ |
+| --- | --- | --- | --- |
+| f) | | | x |
+| g) | | | x |
+| h) | x | | |
+| i) | | x | |
+| j) | x | | |
+| k) | | | x |
+| l) | x | | |
+| m) | | | x |
+| n) | x | | |
+
+#### 6 DE TO GALE KATTENE TIL NABOEN
+
+*Forslag:*
+
+a) Den fornuftige naboen vår klipper den høye hekken sin en gang i uka.
+b) De smarte politikerne diskuterer den kjedelige saken.
+c) Den mørke og skumle skogen er full av store, gale flaggermus.
+d) De hyggelige turistene vil gjerne se mange norske fjorder og fjell.
+e) Denne fine middagen kostet en liten formue.
+f) Den fornuftige dattera hennes har kjøpt en liten, smart og fin leilighet.
+
+#### 7 OBJEKTSPREDIKATIV OG SUBJEKTSPREDIKATIV
+
+| Predikativet står til setningens SUBJEKT | Predikativet står til setningens OBJEKT |
+| --- | --- |
+| Den nye klokka hennes var ikke billig. | De malte bordet blått. |
+| Jeg blir så frustrert av denne oppgaven! | Disse nyhetene gjør meg bare trist. |
+| Foreløpig er det valgfritt å ta eksamen. | De kjørte bilen tom for bensin. |
+| Å røyke utenfor skolen er strengt forbudt. | |
+
+#### 8 ER DET TRYGT Å FLY?
+
+i løpet av livet, For det første, Av den grunn, jevnt og trutt, Historisk sett, Men nå, enn tidligere, av sted, Inntil videre
+
+#### 9 HVOR GAMLE BLIR VI?
+
+a) Levealderen i Norge har økt jevnt siden 1846.
+b) I 1900 var forventet levealder 52 år.
+c) I 2015 var forventet levealder for norske kvinner 84 år.
+d) For mennene var forventet levealder 80 år.
+e) Men det er store forskjeller mellom fylkene.
+f) Finnmark kommer dårligst ut i landet.
+g) Det gjelder både kvinner og menn.
+h) Forventet levealder er også avhengig av utdanning.
+i) Personer med høyere utdanning lever i gjennomsnitt lengst.
+j) På verdensbasis ser japanske kvinner ut til å leve lengst.
+
+#### 10 SETNINGSANALYSE
+
+*Fargekoder: subjekt, v1, V2, direkte objekt, indirekte objekt, adverbial, setningsadverbial, predikativ*
+
+Hvis noen har noen allergier, må de ta med mat selv.
+Vi skal lage ei stor gryte med biff stroganoff.
+Gryteretten serveres med salat, ris og brød.
+Vi kommer til å servere kaffe, te, brus og saft.
+De som vil ha alkohol, må ta med det selv.
+Vi skal sitte utendørs hvis været tillater det.
+Derfor må alle ta med varme klær.
+Det er fint om du gir beskjed om du kommer eller ikke.
+Vi håper at du kan komme.
+Husk å ta med det gode humøret ditt!
+
+### HELSETNINGER
+
+#### 1 KULTURELLE UTTRYKK
+
+a) Amandaprisen er en norsk filmprisutdeling.
+b) Amandaprisen ble delt ut første gang i 1985.
+c) Prisutdelingen finner sted i Haugesund en gang i året.
+d) Kategoriene er omtrent de samme som vi kjenner fra den verdensberømte Oscar-utdelingen.
+e) Den gjeveste prisen er prisen for beste norske kinofilm.
+f) I 2016 gikk denne prisen til filmen «Bølgen».
+g) Over 830 000 personer så «Bølgen» da den gikk på kino.
+h) Samme år fikk Liv Bernhoft Osa prisen for beste kvinnelige hovedrolle.
+i) Hun fikk prisen for rollen sin i filmen «Pyromanen».
+j) Anders Baasmo Christensen fikk prisen for beste mannlige hovedrolle.
+k) Han fikk prisen for innsatsen sin i filmen «Welcome to Norway».
+
+#### 2 UTBRYTNING (1)
+
+a) Det var politikerne som diskuterte …
+b) Det er far som steker …
+c) Det var Hanne som glemte …
+d) Det var legen som la fra seg …
+e) Det var familien Nilsen som fikk solgt …
+f) Det er Trude som alltid kjøper …
+g) Det var Ali som ga ut …
+h) Det er sønnen hennes som studerer …
+
+#### 3 UTBRYTNING (2)
+
+a) Det var julefesten politikerne diskuterte …
+b) Det er pannekaker far steker …
+c) Det var brillene sine Hanne glemte …
+d) Det var stetoskopet legen la fra seg …
+e) Det var leiligheten familien Nilsen fikk solgt …
+f) Det er klær Trude alltid kjøper …
+g) Det var ei barnebok Ali ga ut …
+h) Det er psykologi sønnen hennes studerer …
+
+#### 4 UTBRYTNING (3)
+
+a) Det var på møtet (at) politikerne diskuterte …
+b) Det er hver lørdag (at) far steker …
+c) Det var hos oss (at) Hanne glemte …
+d) Det var på kontoret (at) legen la fra seg …
+e) Det var i forrige uke (at) familien Nilsen fikk solgt …
+f) Det er på høstsalget (at) Trude alltid kjøper …
+g) Det var nå nettopp (at) Ali ga ut …
+h) Det er på Lillehammer (at) sønnen hennes studerer …
+

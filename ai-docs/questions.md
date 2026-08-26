@@ -12,7 +12,7 @@ You can find db schema in supabase/current-schema.sql, current-functions.sql and
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord.
 
-Transcribe attached Norwegian image(s) to markdown and append only the content to /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/paa-nivaa/arbeidsbok-b2.md.
+Transcribe attached Norwegian image(s) to markdown and append only the content to /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/paa-nivaa/arbeidsbok-b2-fasit.md.
 
 Ignore any illustrations. But if an image is related to a question and it is word(s), then include it in the question.
 
