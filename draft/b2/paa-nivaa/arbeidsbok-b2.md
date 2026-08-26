@@ -4583,3 +4583,169 @@ j) ______________________________ kostet et sted mellom tre og fire millioner.
 
 k) ______________________________ er ferdig om 20 minutter.
 
+### 5 OBJEKT ELLER PREDIKATIV?
+
+Se på leddet i **feit skrift**. Er det et direkte objekt, et indirekte objekt eller et predikativ? Sett kryss.
+
+(Kolonner: DIREKTE OBJEKT | INDIREKTE OBJEKT | PREDIKATIV)
+
+a) Vi blir nødt til å kjøpe **ny vaskemaskin**, dessverre.
+
+b) Nå ga du **meg** en skikkelig overraskelse!
+
+c) Hvem eier **bilen som står feilparkert utenfor blokka**?
+
+d) Jeg så **deg** utenfor skolen i går.
+
+e) Hun liker ikke **politikken deres**.
+
+f) Denne avgjørelsen er **helt feil**, spør du meg.
+
+g) Hun ble **skikkelig skuffet** over oppførselen hans.
+
+h) Hvem har vist henne **den hemmelige koden til døra**?
+
+i) Har du bedt **naboen** om å ta inn posten?
+
+j) Hvor ofte pleier du **å trene**?
+
+k) Han måler **1,90** på strømpelesten.
+
+l) Jeg prøver å forstå **hva du mener**.
+
+m) Den buksa der er da **altfor stor til deg**!
+
+n) Jeg aner ikke **hva du snakker om**.
+
+### 6 DE TO GALE KATTENE TIL NABOEN
+
+Bygg ut *de nominale leddene* i setningene. Velg determinativer og adjektiv fra boksene. Se på eksemplet.
+
+**Eksempel:**
+Kattene til naboen sloss i bakgården
+→ De to gale kattene til naboen sloss i den mørke bakgården.
+
+**DETERMINATIVER:** en, to, tre, fire … / den, det, de, denne, dette, disse / min, din, vår … / mange, noen, hver, alle
+
+**ADJEKTIV:** gal, mørk, skummel, fornuftig, smart, liten, dyr, fin, høy, lav, hyggelig, kjedelig, stor, billig
+
+a) Naboen klipper hekken en gang i uka.
+______________________________
+
+b) Politikerne diskuterer saken.
+______________________________
+
+c) Skogen er full av flaggermus.
+______________________________
+
+d) Turistene vil gjerne se norske fjorder og fjell.
+______________________________
+
+e) Middagen kostet en formue.
+______________________________
+
+f) Dattera hennes har kjøpt leilighet.
+______________________________
+
+### 7 OBJEKTSPREDIKATIV OG SUBJEKTSPREDIKATIV
+
+Hvilket setningsledd hører **predikativet** til? Skriv setningene i rett kolonne.
+
+De malte bordet **blått**.
+Den nye klokka hennes var **ikke billig**.
+Disse nyhetene gjør meg **bare trist**.
+Jeg blir **så frustrert** av denne oppgaven!
+Foreløpig er det **valgfritt** å ta eksamen.
+Å røyke utenfor skolen er **strengt forbudt**.
+De kjørte bilen **tom for bensin**.
+
+| Predikativet står til setningens SUBJEKT | Predikativet står til setningens OBJEKT |
+|---|---|
+| | |
+
+### 8 ER DET TRYGT Å FLY?
+
+Sett adverbialene på rett sted i teksten.
+
+**Adverbialer:** av den grunn, av sted, enn tidligere, for det første, historisk sett, i løpet av livet, inntil videre, jevnt og trutt, men nå
+
+De fleste av oss setter seg på et fly ganske mange ganger ______________________________ men ikke alle er like komfortable med denne reisemåten. ______________________________ skal man bevege seg høyt opp i lufta og sveve kanskje 10 000 meter over bakken. For det andre er man helt overlatt til piloten og pilotens ferdigheter. ______________________________ er det godt å vite at alle piloter må trene ______________________________ for å holde ferdighetene sine ved like.
+
+______________________________ har det å være pilot vært et høystatusyrke. Piloter har hatt god lønn og ganske gode arbeidsforhold. ______________________________ konkurrerer mange flyselskaper om å tilby billige flyreiser, og det har ført til at piloter og kabinpersonale har fått dårligere lønns- og arbeidsforhold ______________________________. Mange er bekymret for om det hele bærer galt ______________________________.
+
+______________________________ velger jeg likevel å stole på at pilotene også gjerne vil trygt hjem, og på forskerne som hevder at det er mye tryggere å fly enn å kjøre bil!
+
+### 9 HVOR GAMLE BLIR VI?
+
+Skriv setningene med riktig ordstilling. Start med det markerte leddet.
+
+a) siden har **Levealderen i Norge** jevnt 1846 økt
+______________________________
+
+b) år **I 1900** forventet var 52 levealder
+______________________________
+
+c) 84 var **I 2015** levealder kvinner for år norske forventet
+______________________________
+
+d) var **For mennene** levealder år forventet 80
+______________________________
+
+e) fylkene det **Men** mellom er forskjeller store
+______________________________
+
+f) dårligst kommer **Finnmark** landet i ut
+______________________________
+
+g) kvinner **Det** både gjelder og menn
+______________________________
+
+h) av også **Forventet levealder** utdanning avhengig er
+______________________________
+
+i) i lever **Personer med høyere utdanning** lengst gjennomsnitt
+______________________________
+
+j) ser **På verdensbasis** kvinner japanske til å lengst ut leve
+______________________________
+
+(Kilde: https://www.fhi.no/nettpub/hin/befolkning-og-levealder/levealderen-i-norge---folkehelserap/)
+
+### 10 SETNINGSANALYSE
+
+Kan du analysere setningene under? Se på eksemplet.
+
+subjekt = S
+verbal = V (v1, v2)
+objekt = O
+predikativ = Pt
+setningsadverbial = a
+adverbial = A
+
+**Eksempel:**
+Vi(S) skal(v1) ikke(a) spise(v2) middag(O) hjemme(A) i dag(A).
+
+Analyser setningene:
+
+På lørdag blir det fest hjemme hos oss.
+
+Festen starter klokka sju.
+
+Hvis noen har noen allergier, må de ta med mat selv.
+
+Vi skal lage ei stor gryte med biff stroganoff.
+
+Gryteretten serveres med salat, ris og brød.
+
+Vi kommer til å servere kaffe, te, brus og saft.
+
+De som vil ha alkohol, må ta med det selv.
+
+Vi skal sitte utendørs hvis været tillater det.
+
+Derfor må alle ta med varme klær.
+
+Det er fint om du gir beskjed om du kommer eller ikke.
+
+Vi håper at du kan komme.
+
