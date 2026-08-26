@@ -6675,3 +6675,526 @@ Sett inn bindeord slik at argumentasjonen blir logisk.
 
 ___ mange elever synes at karakterene i orden og atferd er unødvendige, er det nettopp disse karakterene ___ er viktige for mange potensielle arbeidsgivere. Gjennom disse karakterene får en arbeidsgiver vite ___ en arbeidssøker er til å stole på ___ ikke. ___ er god orden og atferd minst like viktig ___ en god karakter i norsk eller engelsk. Arbeidsgivere vil ha framtidige arbeidstakere som er pliktoppfyllende og ___ kommer på jobb, ___ det er slike egenskaper karakterene i orden og atferd sier noe om. Mange elever skal ut i yrker ___ dette er etterspurte egenskaper, ___ disse elevene har god bruk for karakterene i orden og atferd.
 
+### 15 TEST DEG SELV: HVA VET DU OM FORSKJELLIGE TEKSTTYPER?
+
+Svar kort på spørsmålene.
+
+1) I hvilken type tekst finner vi disse ordene: *forfall, referent, ordstyrer* og *eventuelt*?
+
+___
+
+2) Hvilke språklige virkemidler kan vi bruke i kreative tekster, men bør være forsiktige med når vi skriver en tekst i en såkalt bunden sjanger?
+
+___
+
+3) Hva kaller vi tekster som kunngjør noe, for eksempel en ledig jobb eller at noe er til salgs?
+
+___
+
+4) Hva kalles en bruksanvisning som forteller hvordan man *installerer* eller *monterer* noe?
+
+___
+
+5) En e-postadresse inneholder ofte dette tegnet: @ Hva kalles det på norsk?
+
+___
+
+6) Hvilken adresse skal stå øverst på et formelt brev: avsenderens adresse eller mottakerens adresse?
+
+___
+
+7) Hva står forkortelsen CV for?
+
+___
+
+8) Hva står forkortelsen mvh for?
+
+___
+
+9) Kjennetegnes en rapport av korte eller lange setninger?
+
+___
+
+10) Hvilken type tekst inneholder sannsynligvis flest adjektiver: en anmeldelse eller en klage?
+
+___
+
+11) Ordet *argument* kommer fra latin. Hva betyr det?
+
+___
+
+12) Hvilke tre deler består en argumenterende eller resonnerende tekst av?
+
+___
+
+## KAN DU DET?
+
+| Oppgave | Jeg kan det. | Jeg må øve mer. |
+| --- | --- | --- |
+| Jeg kan kjenne igjen ulike typer tekster. *(I can recognize some text types.)* | | |
+| Jeg kan lese og forstå og finne relevant informasjon i forskjellige typer tekster. *(I can read, understand and find relevant information in different kinds of texts.)* | | |
+| Jeg kan noen faste ord og uttrykk som brukes i offentlige brev. *(I know some standard phrases and idioms that are used in letters from public authorities.)* | | |
+| Jeg kan presentere argumenter *for* en sak og argumenter *mot* en sak på en relevant måte. *(I can present arguments pro and contra a topic in a relevant manner.)* | | |
+| Jeg kan bruke ulike typer bindeord for å skape sammenheng i et argument for eller mot en sak. *(I can use different kinds of linking words to create cohesion in an argument pro or contra a topic.)* | | |
+| Jeg vet hva som karakteriserer en innledning og en avslutning i en argumenterende eller resonnerende tekst. *(I know what characterizes an introduction and a conclusion to an argumentative or expository text.)* | | |
+
+# FASIT
+
+## 1 ORDKLASSER
+
+### SUBSTANTIV
+
+#### 1 PETRAS PARIS
+
+| ABSTRAKTER | KONKRETER |
+| --- | --- |
+| utsikten, kveld, varmen, kveldssola, plass | rommet, lenestolen, vindu – vinduet, dør – dørene, balkong, rekkverk – rekkverket, blomsterkasse, bad, kjøkken |
+
+#### 2 STOR ELLER LITEN BOKSTAV?
+
+Det er tre klimasoner i Norge. Vi har kystklima, innlandsklima og arktisk klima. Arktisk klima betyr at normaltemperaturen er under 10 grader celsius i årets varmeste måned. Det vokser ikke trær i arktiske områder. Likevel kan det bli varmt. For eksempel har Vardø i Nord-Norge arktisk klima, men der var det 27 grader en dag i juli i 1987.
+
+#### 3 HANKJØNN, HUNKJØNN ELLER INTETKJØNN?
+
+a) ei/en lærebok, b) et kurs, c) en sofa, d) et problem, e) ei/en utfordring, f) ei/en oppgave, g) ei/en husleie, h) et spisebord, i) ei/en pute, j) ei/en sak, k) en motorvei, l) et kjøkken, m) et supermarked, n) ei/en utdanning, o) en skog, p) ei/en kyst, q) et klima, r) ei/en forurensning, s) et miljø, t) en kollega
+
+#### 4 UREGELRETTE SUBSTANTIV (1)
+
+| ENTALL – ubestemt form | ENTALL – bestemt form | FLERTALL – ubestemt form | FLERTALL – bestemt form |
+| --- | --- | --- | --- |
+| et øye | øyet | øyne | øynene |
+| en vaffel | vaffelen | vafler | vaflene |
+| ei datter | dattera | døtre/døtrer | døtrene |
+| en bror | broren | brødre | brødrene |
+
+| ENTALL – ubestemt form | ENTALL – bestemt form | FLERTALL – ubestemt form | FLERTALL – bestemt form |
+| --- | --- | --- | --- |
+| en dollar | dollaren | dollar | dollarene |
+| ei and | anda | ender | endene |
+| et kne | kneet | knær | knærne |
+| ei tå | tåa | tær | tærne |
+| et tre | treet | trær | trærne |
+| en meter | meteren | meter | meterne |
+
+#### 5 UREGELRETTE SUBSTANTIV (2)
+
+a) endene, b) bøker, c) brødre, d) bestefedrene, e) fetterne, f) hendene, g) knærne, h) lærere, i) mødre, j) onkler, k) sko, l) sommere/somre, m) Strendene, n) syklene, o) ting, p) trær, q) tærne, r) vafler
+
+#### 6 FRA ENTALL TIL FLERTALL
+
+a) bøkene, b) oppgavene, c) kollegaene dine, d) brødrene dine, e) Disse buksene, f) Naboene våre, g) Ungene, h) plantene, i) disse sakene, j) mailene mine
+
+#### 7 FRA FLERTALL TIL ENTALL
+
+a) Denne oppgaven, b) Boka, c) bilen sin, d) jobb, e) søknaden, f) Dattera, g) barnebarnet sitt, h) ei/en kake, i) den gamle radioen, j) vinduet
+
+#### 8 HVILKEN REGEL?
+
+1. Er det sant at faren din er ateist?
+4. Petter er en grineunge!
+1. Pedro er spanjol.
+3. Maradona er en levende legende.
+1. Onkelen min var murer, men nå er han pensjonist.
+1. Hvem var rektor på denne skolen i 2010?
+1. Fikk du jobben som assisterende trener?
+2. Søstera hans er en skrytepave!
+1. Jorunn er katolikk.
+2. Laila er personlig kristen.
+4. Hun spiser som en gris.
+1. Vil du bli sykepleier?
+3. Leo er en lojal venn.
+1. Før var Jørn rektor, men nå er han skolesjef.
+1. Hallgeir er bonde, akkurat som faren.
+1. Naboen vår er oppfinner.
+3. Naboen vår er en gal oppfinner.
+3. Ikke vær redd! Jensen er en dyktig kirurg.
+
+#### 9 UBESTEMT ARTIKKEL
+
+a) –, en, b) –, –, –, c) –, –, –, d) –/ei/en, –/ei/en, e) –, –, –, f) en, g) et
+
+#### 10 LEDIG STILLING?
+
+a) den utlyste stillingen, b) kontorsjefen, c) fem søkere, d) ledige stillingen, e) vil gjerne, intervju, f) jobber, tidligere, g) den forrige jobben din, h) den forrige jobben min, konkurs, i) bidra, et godt arbeidsmiljø
+
+#### 11 RETT FORM (1)
+
+**utfordring:** ei/en utfordring, utfordringer, utfordringer, utfordring
+**vindu:** vinduet, vinduet, vindu
+**kontrakt:** kontrakt / en kontrakt, kontrakt / en kontrakt, Kontrakten, kontrakt /en kontrakt
+**miljø:** miljøet, miljø/miljøet, miljøet, miljøet, miljø
+**ferie:** ferie, en ferie, ferien
+
+#### 12 RETT FORM (2)
+
+a) arbeidsgivere, b) bestemora, c) boligmarkedet, d) fjell, e) flyktning, f) gafler, g) halsen, h) håret, i) inntekt/inntekter, j) krigen, k) nøklene, l) leksene, m) brødre, n) oppgave/oppgaven, o) hendene, p) bussen/buss, q) briller, r) sykkelen, s) en snekker, t) jula/julen, u) bøker, biblioteket, v) kjøkkenet, stua/stuen, w) vafler, besøket, x) sommeren, ferie, y) hytta, sommeren, år, z) lønna, æ) mobbing, ø) naturressurser, å) nettet, aa) olja/oljen, bb) pensjonist, cc) romanen, dd) ski, ee) skolegang, ff) en time, gg) utgiftene, hh) verden, ii) vinduet/vinduene, jj) øret, kk) ei øy
+
+#### 13 SPRÅKDETEKTIV
+
+a) huset: 'det hvite' står foran substantivet = bestemt form, entall
+b) venner: 'mange nye' står foran substantivet = ubestemt form, flertall (alltid ubestemt form, flertall etter 'mange')
+c) radio: 'å høre på' + substantiv i ubestemt form – handling og substantiv danner et uttrykk
+d) kvelden/kveldene: etter 'om' bruker vi bestemt form entall eller flertall, her kan det være begge deler
+e) slektningene: 'dine' står etter substantivet = bestemt form, flertall
+f) morsmål: 'Hvilket' står foran substantivet = ubestemt form (alltid ubestemt form etter 'hvilken', 'hvilket' eller 'hvilke')
+g) lege: 'lege' er yrket til en person = entall, vi bruker ubestemt form uten artikkel fordi det er ei gruppe
+h) klokka: fast uttrykk
+i) Maten: referansen er til 'til bords': Hva gjør man ved bordet? Man spiser. = Kjent informasjon = bestemt form. Mengdeord = entall.
+
+#### 14 SUBSTANTIVFRASEN
+
+a) Substantivfrase (SF): det nye tapetet i stua, Kjerne (K): tapetet
+b) SF: et eget atelier, K: atelier
+c) SF: Hele denne teksten, K: teksten
+d) SF: Den muslimske fastemåneden, K: fastemåneden
+e) SF: ramadan, K: ramadan
+SF: Sognefjorden, K: Sognefjorden
+SF: Norges dypeste fjord, K: fjord
+f) SF: Europas lengste tunneler, K: tunneler
+SF: Alpene, K: Alpene
+g) SF: humoren på Vestlandet, K: humoren
+SF: humoren på Østlandet, K: humoren
+
+#### 15 KJENTE NORDMENN: FRIDTJOF NANSEN (1861-1930)
+
+polfarer, fredspris, flyktninger, medisin, arbeidet, ski, stillingen, flyktninger/flyktningene, pengene, bosettinger, gater, byer, verden
+
+## ADJEKTIV
+
+#### 1 TRAUST OG SMAKLØST?
+
+| Dette adjektivet / Disse adjektivene: | | dette substantivet: |
+| --- | --- | --- |
+| første | | smakssprøve |
+| (det) norske | | kjøkkenet |
+| traust og smakløst (= objektspredikativ) | | (det norske) kjøkkenet |
+| saltet | | kjøtt |
+| kjedelige | forteller om | rotgrønnsaker |
+| (mange) spennende | forteller om | smaker |
+| (en) pikant | | spiss |
+| norsk | | mat |
+| tørkete | | einerbær |
+| frisk, selvplukket | | ramsløk |
+| norsk | | grønnsaksuppe |
+| spennende | | (en norsk) grønnsaksuppe |
+| (en) italiensk | | minestronesuppe |
+
+#### 2 BROSJYRE: TUREN GÅR TIL SAN ANDRÉS!
+
+| Dette/Disse adj.: | | dette subst. | som står i: |
+| --- | --- | --- | --- |
+| utrolige | | reiser | ubest. form, flert. |
+| nydelige | | strender | ubest. form, flert. |
+| varme | | netter | ubest. form, flert. |
+| avslappende | | dager | ubest. form, flert. |
+| (ei) vakker | | øy | ubest. form, ent. |
+| (Det) karibiske | forteller om | hav | entall* |
+| (denne) lille | forteller om | perlen | best. form, ent. |
+| (sin) fasinerende | | historie | ubest. form, ent. |
+| skumle | | pirater | ubest. form, flert. |
+| lange og hvite (predikativ) | | strendene | best. form, flert. |
+| varmt og behagelig | | vann | ubest. form, ent. |
+| latinske og kreolske | | smaker | ubest. form, flert. |
+
+\* Her er det enkel bestemthet, som er en gammel (og formell) måte å gi navn på. Andre eksempler er: De norske lover, Den norske kirke – 'hav' står i ubestemt form, men vi må si at hele substantivfrasen er i bestemt form.
+
+#### 3 EI LITA HYTTE
+
+lita, lille, lite, lille, små, liten, små, lite, små, liten, lille, lita, små, liten
+
+#### 4 HVOR VIL DU BO?
+
+*Forslag:*
+
+fine/koselige, Det lille, stor/fin, det store, det lille, kreativ/fargerik, den blå, den lille, store/gamle, kreativt, det store, fargerik, det lille, Det store, en koselig, fint/koselig, en varm, det store, Det lille, trangt
+
+#### 5 DET DYRE SKJØRTET ER NYTT
+
+a) Den nye telefonen er stilig. De nye telefonene er stilige.
+b) Det høye treet er gammelt. De høye trærne er gamle.
+c) Den rutete sofaen er stygg. De rutete sofaene er stygge.
+d) Det lille vinduet er skittent. De små vinduene er skitne.
+e) Den grønne frosken er giftig. De grønne froskene er giftige.
+f) Den grå sneglen er ekkel. De grå sneglene er ekle.
+g) Det billige brødet er muggent. De billige brødene er mugne.
+h) Det første spørsmålet er vanskelig. De første spørsmålene er vanskelige.
+
+#### 6 ARTIKKEL I BESTEMT FORM
+
+den (artikkel, bestemt form), Det, den, det (artikkel, bestemt form), de (artikkel, bestemt form), det, De (artikkel, bestemt form), det, de
+
+#### 7 POSITIV ELLER KOMPARATIV FORM?
+
+a) høy, b) kortere, c) fortere, d) bedre, e) godt, f) koselig, g) bedre, h) god, i) flinkere
+
+#### 8 FJORD OG FJELL
+
+Den dypeste/lengste, lengste/dypeste, lengste, Det høyeste, høyeste, høyest
+
+#### 9 GRADBØYNING MED MER OG MEST
+
+a) mest fantastiske, b) et mer langvarig, c) de mest kompliserte, d) mer innviklet, e) en mer spennende, f) den mest forvirrende, g) mer bråkete, h) mer hullete
+
+#### 10 POSITIV ELLER SUPERLATIV?
+
+a) varmt, b) kald, c) dårligste, d) dårlig, e) høy, f) seineste, g) mest spennende, h) flink/flinke, i) korteste
+
+#### 11 DEN KOSELIGSTE HYTTA DU KAN TENKE DEG!
+
+a) Ja, det er den koseligste hytta du kan tenke deg.
+b) … den søteste valpen du kan tenke deg.
+c) … den nydeligste stranda du kan tenke deg.
+d) … den koseligste stua du kan tenke deg
+e) … de lengste togene du kan tenke deg
+f) … de beste eplene du kan tenke deg.
+g) … fineste glassene du kan tenke deg.
+h) … den beste lasagnen du kan tenke deg.
+i) … den mest spennende filmen du kan tenke deg.
+
+#### 12 KJØNN, TALL, FORM OG GRAD
+
+| Adj. | Kjønn | Tall | Form | Grad | Grunnform |
+| --- | --- | --- | --- | --- | --- |
+| koselig | hunkj. | ent. | ubest. | pos. | koselig |
+| lite | intetkj. | ent. | ubest. | pos. | liten |
+| større | intetkj. | ent. | ubest. | komp. | stor |
+| bedre | intetkj. | ent. | ubest. | komp. | god |
+| nye | intetkj. | ent. | best. | pos. | ny |
+| store | intetkj. | flert. | ubest. | pos. | stor |
+| vakre | hankj. | ent. | best. | pos. | vakker |
+| peneste | hunkj. | ent. | best. | superl. | pen |
+| fineste | intetkj. | ent. | best. | superl. | fin |
+
+#### 13 SUPERLATIV PÅ FORSKJELLIGE MÅTER
+
+a) Denne kattungen er den søteste i kullet, spør du meg!
+b) De har den flotteste hagen i gata.
+c) Anna er den hyggeligste læreren i verden.
+d) Vi har feltets flotteste utsikt.
+e) Vi har den beste kaffen i byen!
+f) 21. desember er den korteste dagen i året.
+g) Vi har fått det hyggeligste bordet i hele kafeen, synes jeg.
+
+#### 14 UREGELRETTE ADJEKTIV
+
+a) morsomme, b) blått, c) vakreste, d) billigste, e) yngste, f) eldre, g) verre/vondere, h) tyngre, i) små, j) rosa, k) nydeligste
+
+#### 15 ENDA ELLER ALLER?
+
+a) aller, enda, b) enda, c) aller, enda, d) aller, e) enda, f) enda, g) aller
+
+#### 16 SUBSTANTIVERTE ADJEKTIV
+
+a) eldre, eldre, b) ansatte / av de ansatte, ansatte / de ansatte, ansatte /de ansatte, c) høyeste, d) beste, e) viktigste, f) voksne, voksen, g) minste, minste, h) streikende, i) Reisende
+
+#### 17 SUBSTANTIVFRASEN
+
+a) Liker du den nye jakka mi?
+b) Vi må snakke om noen store utfordringer på møtet seinere i dag. / Vi må snakke om de store utfordringene på møtet seinere i dag.
+c) Jeg vil gjerne gi deg ny få adressa mi.
+d) Skal du ikke søke den utlyste stillingen?
+e) I sommer infinitiv (i leid) et koselig hus i Danmark.
+f) Hun har en stor familie.
+g) Hennes forrige kjæreste var ganske hyggelig, synes jeg. / Den forrige kjæresten hennes var ganske hyggelig, synes jeg.
+h) Neste helg får vi besøk fra Levanger.
+i) Partisan vi snakke om disse problemene / dette problemet?
+
+#### 18 UTVANDRINGEN TIL AMERIKA
+
+stor, små, eldste, rik, yngre/yngste, godt, fin, håpfulle, brutal, lovløse, hardt, lange, nye
+
+## DETERMINATIVER
+
+#### 1 DETERMINATIVENES ROLLE
+
+| DEMONSTRATIVER | KVANTOR | EIENDOMSORD | FORSTERKERE |
+| --- | --- | --- | --- |
+| denne, hvilket, sånn, hver, annen | mange, tolv, ingen, begge, alle | min, deres, hennes | selv, egen |
+
+#### 2 EIER OG EIENDEL
+
+Tekst A: sin, si
+Tekst B: din, min
+Tekst C: sin, hans, sin
+Tekst D: si, sine, sitt
+Tekst E: deres, hennes, vår
+Tekst F: sine, hans, sine, hans
+
+#### 3 PERSONLIG PRONOMEN ELLER EIENDOMSORD?
+
+a) meg, mi, mitt, b) dine, deg, Du, deg, c) hans, han, ham/han, Han, seg, d) henne, hennes, hun, Hun, sine, e) Vi, oss, vi, vår, f) dere, dere, deres, g) De, sin, dem, De, deres, De
+
+#### 4 DEN SNILLE FARMORA MI
+
+a) den snille skal farmora mi, b) den grønne buksa di, c) den nye sykkelen min, d) de forrige naboene sine, e) Den nye stua vår, f) de dyre koppene våre, g) det nye tilbygget deres, h) den yngste sønnen din, i) de siste bøkene hans
+
+#### 5 FAKTA OM VERDEN
+
+a) Mount Everest er det høyeste fjellet i verden.
+b) Marianegropa i Stillehavet er det dypeste stedet i verden.
+c) Nilen er den nest lengste elva/elven i verden.
+d) Den lengste elva/elven i verden heter Amazonas.
+e) Foreløpig er Kina det mest folkerike landet i verden.
+f) Men FN tror at India vil være det mest folkerike landet i 2022.
+g) Det største landet i verden er Russland.
+h) Visste du at det minste landet i verden bare har 836 innbyggere?
+i) Norge er det sjette rikeste landet i verden.
+j) Det aller rikeste landet i verden er Qatar.
+k) Det varmeste stedet i verden er Death Valley i USA.
+l) Men hvor ligger det vakreste stedet i verden?
+
+#### 6 SÅNN SKAL DU GJØRE!
+
+a) Tenk å ha sånne snille foreldre!
+b) Du har sånne flinke barn!
+c) En sånn kjole vil jeg også ha!
+d) Sånne skyer har jeg aldri sett før!
+e) Kan du sy et sånt nett til meg også?
+f) En sånn bil ønsker jeg meg også.
+
+#### 7 LITT ELLER LITE?
+
+a) litt, b) lite, c) lite, d) litt, litt, e) lite, f) lite, g) litt lite, h) litt, i) litt, j) litt
+
+#### 8 INGEN ELLER NOEN
+
+a) ingen, b) ingen, c) noe, d) Ingen, e) noen, f) noen, g) noe, h) noen, i) Ingen, j) ingen, k) noe
+
+#### 9 ALLE ELLER HVER?
+
+a) Alle, b) hver, c) hvert, d) Alle, e) alle, hver, f) alle, g) hver, h) alle, i) alle, j) hvert
+
+#### 10 HELE ELLER ALL?
+
+a) hele, b) Hele, c) all, d) hele, e) hele, f) alt, g) hele, alt, h) hele, i) all, alt (hele, hele: hvis vi tenker på ett brød eller en melkekartong, og all, alt: hvis vi tenker på mengden melk og brød som vi har), j) hele, k) alt, l) hele, m) alt, n) hele
+
+#### 11 BEGGE DELER, TAKK!
+
+a), b), c), e), f), g), i), k), l) Begge deler. d), h), j) Begge to.
+
+#### 12 SPRÅKDETEKTIV
+
+**Riktige setninger:**
+Har dere drukket hele brusen?
+Du må vente noen uker på resultatet.
+Forstår du ingenting?
+Har du hilst på min mor?
+
+**Rettinger:**
+Han sover hele dagen.
+Kan vi få hvert vårt rom?
+Han har spist mange skiver i dag.
+Jeg har ikke noen vinduer i stua.
+
+#### 13 EGEN
+
+a) Egne, b) egen, c) egen, eget, d) egne, e) egen, f) egen, g) eget
+
+#### 14 HVA BETYR *SELV*?
+
+(Siden betydningene noen ganger kan gå litt over i hverandre, er dette forslag som du gjerne kan diskutere med andre.)
+
+3. Dere må ordne opp i …
+4. Dette er selve livet!
+3. Ungdom mellom 16 og 18 år kan …
+1. Barna våre er store og …
+1. Hun ønsker å leve ut …
+2. Jeg forstår hvordan du …
+3. Studentene selv vil …
+4. Selve undervisningen er håpløs …
+1. Kan du rette på deg selv …
+4. Kollegaene er hyggelige, men …
+1. Han mistet jobben for et år siden …
+2. Studentene har selv …
+2. (3) Hadde du tenkt å spise …
+
+#### 15 ENESTE
+
+a) hver eneste gang, b) en eneste feil, c) Det eneste jeg ber om, d) et eneste ord, e) en eneste potet, f) en eneste dag, g) den eneste jenta, h) de eneste stolene, i) den eneste studenten, j) Hver eneste gang
+
+#### 16 KJENTE NORDMENN: THOR HEYERDAHL
+
+hele, 8000, andre, mange, en, den, slike, noen, andre, mange, de, hans, hele, hans
+
+## VERB
+
+#### 1 UREGELRETTE VERB
+
+| INFINITIV | PRETERITUM | PERFEKTUM PARTISIPP |
+| --- | --- | --- |
+| ligge | lå | ligget |
+| stå | sto/stod | stått |
+| se | så | sett |
+| bli | ble | blitt |
+| sette | satte | satt |
+| spørre | spurte | spurt |
+| selge | solgte | solgt |
+| gå | gikk | gått |
+| sove | sov | sovet |
+| sitte | satt | sittet |
+| gjøre | gjorde | gjort |
+| drikke | drakk | drukket |
+| være | var | vært |
+| hjelpe | hjalp | hjulpet |
+| velge | valgte | valgt |
+
+#### 2 ÉN SVALE GJØR INGEN SOMMER
+
+døde, arvet, å spare, brukte, hadde, var, eide, var, var, satt, så, fløy, er, sa, kan, selge, trenger, løp, solgte, fikk, å bruke, kom, hadde, våknet, frøs, var, snødde, hadde, åpnet, å se, lå, sa, tok, trodde, se
+
+#### 3 PRESENS PERFEKTUM ELLER PRETERITUM?
+
+**Dialog 1:** har sett, så, var, Likte, likte
+**Dialog 2:** har kjøpt, var, var
+**Dialog 3:** har regnet, har … sett
+**Dialog 4:** var, har søkt, har … fått
+**Dialog 5:** har spist, spiste, dro
+**Dialog 6:** Har … hørt, fortalte, har … vært, giftet seg
+
+#### 4 Å VÆRE ELLER Å BLI?
+
+a) ble, b) har vært, er, c) Er, d) bli, e) Er, f) ble, g) ble, h) være
+
+#### 5 SPRÅKDETEKTIV
+
+a) **sett** – Fordi: Det er presens perfektum i setningen (har + perfektum partisipp), og 'sett' er perfektum partisipp av 'å se'.
+b) **Traff** – Fordi: Det er preteritum i setningen, og 'traff' er preteritum av 'å treffe'.
+c) **gjøre** – Fordi: Det er presens futurum i setningen (skal + infinitiv uten å), og 'gjøre' er infinitiv (uten å) av 'å gjøre'.
+d) **Gikk** – Fordi: Det er preteritum i setningen, og 'gikk' er preteritum av 'å gå'.
+e) **lest** – Fordi: Det er presens perfektum i setningen (har + perfektum partisipp), og 'lest' er perfektum partisipp av 'å lese'.
+f) **fått** – Fordi: Fordi: Det er presens perfektum i setningen (har + perfektum partisipp), og 'fått' er perfektum partisipp av 'å få'.
+g) **hjelpe** – Fordi: Sammen med det modale verbet 'kan' bruker vi infinitiv (uten å), og 'hjelpe' er infinitiv.
+h) **lage** – Fordi: Det er presens futurum i setningen (skal + infinitiv uten å), og 'lage' er infinitiv (uten å) av 'å lage'.
+i) **tenkt** – Fordi: Det er preteritum perfektum i setningen (hadde + perfektum partisipp), og 'sett' er perfektum partisipp av 'å se'.
+j) **se** – Fordi: Sammen med det modale verbet 'kan' bruker vi infinitiv (uten å), og 'se' er infinitiv.
+
+#### 6 VERBSYSTEMENE
+
+**Petra vender nesa hjemover:** kommer, viser, har sovnet, blir, vet, skal gjøre, lever, lengter, er
+**En ekte hattemaker i Strandgata:** hadde, åpnet, hadde, ble, fikk, hadde
+**Bussturen:** var, satt, fant, var, kom, overtok, hadde bodd, kjente, fikk, ble, sluttet
+
+#### 7 AKTIV ELLER PASSIV?
+
+| | AKTIV | PASSIV |
+| --- | --- | --- |
+| a) | | x |
+| b) | x | |
+| c) | x | |
+| d) | | x |
+| e) | | x |
+| f) | x | |
+| g) | | x |
+| h) | | x |
+| i) | x | |
+| j) | | x |
+| k) | x | |
+
+#### 8 AKTIV OG PASSIV (1)
+
+a) Det gamle sykehuset må rives.
+b) Veien skal legges om ei ukes tid.
+c) Vannet ble stengt av.
+d) Skolen ble lagt ned i fjor høst.
+e) Trafikken ble stoppet.
+
