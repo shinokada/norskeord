@@ -4941,3 +4941,192 @@ ______________________________
 e) Ble ikke noen nye blokker likevel bygd?
 ______________________________
 
+f) Sitter en mann på benken?
+______________________________
+
+g) Ligger noen på sofaen?
+______________________________
+
+h) Ble billetter bestilt til forestillingen?
+______________________________
+
+i) Ble noe sagt om nedskjæringene i bedriften?
+______________________________
+
+j) Har noen henvendelser om leilighetene kommet?
+______________________________
+
+### 7 DET OG PASSIV
+
+Skriv passivsetningene som det-setninger.
+
+Lytt og lag det-setninger av passivsetningene.
+
+a) Noen nye blokker ble ikke bygd her likevel.
+______________________________
+
+b) Fire ledige stillinger vil bli lyst ut etter jul.
+______________________________
+
+c) Mye kan sies om den forrige direktøren.
+______________________________
+
+d) Lys vil bli hengt opp overalt på senteret i førjulstida.
+______________________________
+
+e) Mange bøker har blitt skrevet om Einar Gerhardsen.
+______________________________
+
+f) Informasjon om eksamen vil bli lagt ut i god tid.
+______________________________
+
+g) En rekke skrekkhistorier blir fortalt om denne tannlegen.
+______________________________
+
+h) Mye vann må drikkes til denne maten.
+______________________________
+
+### 8 INVERSJON AV DET-SETNINGER
+
+Inverter det-setningene ved å sette *tidsleddet* først.
+
+Lytt og lag inverterte det-setninger.
+
+a) Det er valgfritt å ta eksamen foreløpig.
+______________________________
+
+b) Det kommer reformer på løpende bånd i skolen.
+______________________________
+
+c) Det kryr av turister overalt om sommeren.
+______________________________
+
+d) Det brygger opp til tordenvær nå.
+______________________________
+
+e) Det skal være nydelig vær hele helgen.
+______________________________
+
+f) Det har ikke blitt skrevet så mye om denne saken i det siste.
+______________________________
+
+g) Det ble bygd tre nye hus hver dag.
+______________________________
+
+h) Det sto en interessant artikkel i avisa i dag.
+______________________________
+
+i) Det er enkelt å holde seg oppdatert i våre dager.
+______________________________
+
+### 9 DET-SETNINGER
+
+Hvilke setninger er riktige? Sett kryss.
+
+□ Banker på døra nå?
+□ Er det kaffe på kannen, tro?
+□ Nå brygger det opp til uvær!
+□ At du kunne komme på festen, var det hyggelig.
+□ Hver dag ble bygd nye hus.
+□ Å spise frukt hver dag er viktig.
+□ Skal være noe mer før vi stenger?
+□ Om sommeren er fint å kunne dra på ferie.
+□ Foreløpig vil det være valgfritt å ta eksamen.
+□ Det var politikerne fattet dette vedtaket, ikke byråkratene.
+
+Rett setningene som er feil, og skriv dem her:
+
+______________________________
+
+______________________________
+
+______________________________
+
+______________________________
+
+### 10 SPØRREORD
+
+Sett inn riktig spørreord i spørresetningene. Husk å lese svarene før du skriver inn spørreordet.
+
+a) ______________________________ blir du boende her, tror du? — I alle fall et års tid, hadde jeg tenkt.
+
+b) ______________________________ blir været i helgen, vet du det? — Nei, jeg aner ikke!
+
+c) ______________________________ har du tenkt å studere? — Historie og engelsk.
+
+d) ______________________________ pleier du å trene? — På et treningsstudio like i nærheten av jobben.
+
+e) ______________________________ blir vi? — Skal vi se … Det er din mor og far, oss fem og Ingunn og Rolf. Kommer din bror og kona?
+
+f) ______________________________ tenker du på? — Året som har gått.
+
+g) ______________________________ skal dere treffes? — Utenfor vinmonopolet.
+
+h) ______________________________ kom du for seint til timen? — Fordi det var så mye trafikk på veiene i dag.
+
+i) ______________________________ skal dere reise? — Det blir bil denne gangen.
+
+j) ______________________________ skal dere reise? — Til Øresund. Vi skal besøke noen gamle venner.
+
+k) ______________________________ tok du det siste eplet? — Jeg ble så sulten!
+
+l) ______________________________ lager man sangria? — Ikke vet jeg, men du finner sikkert en oppskrift på Internett.
+
+m) ______________________________ går du? — Snart.
+
+### 11 SETNINGSSKJEMA
+
+Skriv setningene inn i skjemaet.
+
+**Skjema:** FORFELT (subjekt (S) eller adverbial (A)) | VERBAL (v1) | MIDTFELT (subjekt (S), setningsadverbial (a)) | VERBAL (V2) | SLUTTFELT (predikativ (Pt), objekt (IO før DO), adverbial (A) (sted foran tid))
+
+Setninger å føre inn:
+
+a) Jeg har ikke sett henne på to dager.
+
+b) I Bergen regner det stadig like mye som før.
+
+c) Sist, men ikke minst, vil jeg understreke at trening er viktig.
+
+d) Etter min mening har alle de involverte et ansvar i denne saken.
+
+e) Kan du sette koppen din inn i oppvaskmaskinen?
+
+f) Hvor lenge kan de fortsette på denne måten?
+
+g) De gale kattene til naboen har visst tenkt å hyle hele natta.
+
+h) Siden jeg går på norskkurs, er jeg ikke på jobbjakt akkurat nå.
+
+i) Nå hadde det vært godt med litt kaffe.
+
+### 12 SLUTTFELTET: STED, TID OG ÅRSAK
+
+I sluttfeltet setter vi vanligvis *sted før tid* og *tid før årsak*. Hvilke ledd skal du bruke i hvilke setninger? Hvert ledd kan bare brukes én gang.
+
+**Ledd å velge mellom:** for lenge siden, fordi du hjalp meg, før du går, hele dagen, hele natta, hele sommeren, innen fristen, langt herfra, på grunn av det forferdelige uværet, på hytta, takket være alt bråket, til vask
+
+a) Legg klærne dine ______________________________ ______________________________.
+
+b) Vi blir nok værende ______________________________ ______________________________.
+
+c) Historien handler om noe som skjedde ______________________________ ______________________________.
+
+d) Huset har stått og ristet ______________________________ ______________________________.
+
+e) Jeg ble ferdig med søknaden ______________________________ ______________________________.
+
+f) Jeg har ikke hatt blund på øyet ______________________________ ______________________________.
+
+### 13 TRYKKTUNGT DET
+
+Svar negativt på utsagnene med *Nei, jeg tror …*
+
+Lytt og svar negativt på spørsmålene.
+
+a) Blir du med til byen? ______________________________
+
+b) Skal dere til Litauen i sommer? ______________________________
+
+c) Må du arbeide overtid i dag? ______________________________
+
