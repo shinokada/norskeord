@@ -6595,3 +6595,83 @@ ___
 
 ___
 
+### 8 OFFENTLIGE BREV
+
+Skriv inn ord og uttrykk som mangler i setningene.
+
+a) Vi vil med ___ bekrefte at vi 14.4.18 har mottatt søknaden din ___ norsk statsborgerskap.
+
+b) Søknaden vil ___ behandlet så ___ som mulig og senest ___ 4 måneder.
+
+c) Vi ber om at du ___ oss orientert om forhold som kan ha ___ for avgjørelsen av søknaden din.
+
+d) Vi kan ikke ___ å ha mottatt alle relevante opplysninger, og vi ber deg ___ om å ettersende følgende …
+
+e) Dersom du ___ å klage på vedtaket, kan du gjøre det via …
+
+### 9 REDEGJØRELSE
+
+Teksten under er en redegjørelse for fiskerettigheter for turister langs norskekysten.
+
+Les teksten og del den inn i seks avsnitt. Sett et merke der avsnittet skal være.
+
+**FISKE FOR TURISTER**
+
+I Norge er fisking en del av kulturarven. For å ta vare på fiskebestanden finnes det spesielle regler som utenlandske turister må følge når de fisker langs kysten. Turister kan bare bruke håndholdt redskap. Det vil for eksempel si fiskestang. De har ikke lov til å bruke garn, teiner, ruser eller liknende. Turister har ikke lov til å selge fangsten sin. De kan bare fiske til eget bruk, og de kan bare ta med 15 kilo fisk per person ut av Norge. Turister har også lov til å ta med en troféfisk, men den må være hel, for ellers teller den som en del av kvoten på 15 kilo. For en del fiskearter har myndighetene bestemt et minstemål for å beskytte bestandene. For turister er det forbudt å fange fisk som ikke oppfyller minstemålet. For eksempel skal torsk, nord for 62. breddegrad, være over 44 centimeter. Sør for 62. breddegrad må den være over 40 centimeter. Hvis fisken ikke er stor nok til å fanges, skal den settes varsomt tilbake i vannet. Noen fiskearter er delvis fredet, slik som kveite. Den kan man bare fange visse tider av året. Andre er totalfredet, slik som for eksempel pigghå, ål og brugde. Disse fiskeartene skal alltid settes tilbake i vannet om man får dem på kroken. Turister som ikke følger reglene, kan bøtelegges. I tillegg vil de få inndratt det de har fanget for mye.
+
+(Kilde: https://www.fiskeridir.no/Fritidsfiske/Turistfiske-i-Norge)
+
+### 10 INNLEDNING ELLER AVSLUTNING?
+
+I hvilken del av teksten passer disse utdragene? Skriv 1 foran tekstutdragene du mener hører til i en *innledning*, og 2 foran tekstutdragene du mener hører til i en *avslutning*. Hvilket utdrag passer verken i en innledning eller en avslutning?
+
+- [ ] I denne teksten vil jeg ta for meg studiefinansieringen i Norge: Er den for god, eller bør den tvert imot bli bedre?
+
+- [ ] Vanligvis får man behandling på et sykehus eller hos en lege, ofte med medisiner, hvis man blir syk. Slik behandling finansieres i stor grad av offentlige midler. Men mange mener at man også kan bli frisk av å bruke alternative behandlingsmåter. Det kan for eksempel være akupunktur, fotsoneterapi eller homøopati. Utgifter til slik behandling blir imidlertid ikke refundert av det offentlige.
+
+- [ ] Slik jeg ser det, er det altså god grunn til å si at Internett kan bidra til en mer demokratisk verden. Jo mer orientert vi mennesker blir om hva som skjer rundt oss, jo større forståelse får vi, forhåpentligvis, for den situasjonen andre befinner seg i.
+
+- [ ] Dessverre opplever mange av oss å få en eller annen psykisk sykdom i løpet av livet. Da kan man ha behov for å søke profesjonell hjelp, for eksempel psykolog. Mange av oss vil ønske å snakke med en psykolog av samme kjønn som en selv. Da kan det være et problem at det nå nesten bare er kvinnelige studenter på psykologistudiet.
+
+- [ ] Jeg synes altså ikke at det er grunnlag for å hevde at fengselsstraffene i Norge bør bli strengere. Selve lengden på fengselsstraffen er ikke en garanti for at lovbryteren blir rehabilitert og kan komme tilbake til samfunnet.
+
+- [ ] Etter min mening kan det ikke være tvil om at språksituasjonen i Norge hadde blitt enklere hvis det bare hadde vært ett skriftspråk her til lands. Hvis jeg hadde fått bestemme, hadde ikke ett av skriftspråkene blitt avskaffet. I stedet hadde det blitt laget et nytt skriftspråk med utgangspunkt i både nynorsk og bokmål. På den måten kunne alle ha blitt fornøyd.
+
+- [ ] På grunn av medisinske framskritt har gjennomsnittlig levealder økt i moderne tid, og folk blir fortsatt stadig eldre. Det betyr at eldre folk har en annen type sykdommer nå enn de hadde tidligere. Tidligere slet mange eldre med fysiske plager, men nå holder eldre folk seg i god form. Når de så blir syke, er det gjerne psykiske sykdommer som rammer dem, slik som for eksempel demens eller Alzheimer.
+
+### 11 2 + 1 (1)
+
+Tenk at du skal skrive en tekst om påstanden under. Du er enig i påstanden. Derfor vil du ha med to argumenter *for* det som påstanden hevder. Samtidig vil du ha med ett argument *mot* påstanden for å vise at du kan se en sak fra flere sider og nyansere synet ditt.
+
+Skriv argumentene i rett kolonne.
+
+**DET BØR INNFØRES SEKS TIMERS ARBEIDSDAG.**
+- Prosjekter med seks timers arbeidsdag i enkelte bedrifter viser at de ansatte blir mer effektive når de bare er på arbeid i seks timer hver dag.
+- Samfunnet trenger mer arbeidskraft, ikke mindre.
+- Muligheten til å drive fritidsaktiviteter og til å tilbringe tid sammen med familie og venner er viktig for folks psykiske og fysiske helse.
+
+| 2 ARGUMENTER FOR | 1 ARGUMENT MOT |
+|---|---|
+| | |
+| | |
+
+### 12 2 + 1 (2)
+
+Finn 3 argumenter (2+1) som du kan bruke hvis du skal skrive om disse påstandene. Bestem selv om du skal være for eller mot og lag kolonner for argumentene.
+
+- Kontantstøtten bør avskaffes.
+- Skoleflinke barn bør gå i egne klasser.
+- Norskkurs bør bli gratis for alle innvandrere.
+
+### 13 ET ARGUMENT FOR EN SAK: BØR KARAKTERENE I ORDEN OG ATFERD FJERNES?
+
+Sett inn bindeord slik at argumentasjonen blir logisk.
+
+Karakterene i orden og atferd må sies å være en arv fra en skolehverdag ___ ikke lenger finnes. Før var forholdet mellom lærere og elever preget av avstand og tvang ___ det i dag er mye mer demokratisk ___ preget av tillit og respekt. Heller ___ å true en elev med nedsatt ordenskarakter bruker skolen i dag andre virkemidler ___ lærerne opplever at en elev ikke møter på skolen ___ sliter med skolehverdagen. ___ skal det utrolig mye til for at ordenskarakteren settes ned, og ___ kan man spørre seg hvor mye den ___ har å si, og ___ den ikke like godt kunne ha vært avskaffet.
+
+### 14 ET ARGUMENT MOT EN SAK: BØR KARAKTERENE I ORDEN OG ATFERD FJERNES?
+
+Sett inn bindeord slik at argumentasjonen blir logisk.
+
+___ mange elever synes at karakterene i orden og atferd er unødvendige, er det nettopp disse karakterene ___ er viktige for mange potensielle arbeidsgivere. Gjennom disse karakterene får en arbeidsgiver vite ___ en arbeidssøker er til å stole på ___ ikke. ___ er god orden og atferd minst like viktig ___ en god karakter i norsk eller engelsk. Arbeidsgivere vil ha framtidige arbeidstakere som er pliktoppfyllende og ___ kommer på jobb, ___ det er slike egenskaper karakterene i orden og atferd sier noe om. Mange elever skal ut i yrker ___ dette er etterspurte egenskaper, ___ disse elevene har god bruk for karakterene i orden og atferd.
+
