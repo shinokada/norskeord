@@ -6347,3 +6347,251 @@ I Norge deler vi klimaet [13] inn i kystklima (havklima) og innlandsklima (konti
 | 14 | Uansett | Ganske enkelt | Faktisk |
 | 15 | normalt | imidlertid | heldigvis |
 
+### 3 VEILEDNING: HVA MÅ DU GJØRE?
+
+Les veiledningen og skriv hvilken rekkefølge du må gjøre tingene i.
+
+**TOMT FOR KAFFE? SETT PÅ NY, DA VEL!**
+
+Etter at du har skylt kannen grundig, fyller du den helt opp (til randen). Tøm vannet i beholderen, og sett kannen på plass på maskinens varmeplate. Legg nytt filter i filterholderen. Du kan gjerne fukte det litt før du legger det i. (Det fjerner papirsmaken.) Hvis det er tomt for kaffe i kaffeboksen, åpner du en ny pose. Se i tredje skuff! Når du har hatt 12,5 strøkne skjeer kaffe i filteret, skyver du filterholderen på plass. (Pass på at du skyver den helt inn!) Slå på maskinen. Hvis lampen ikke lyser, må du sjekke tidsbryteren på kontakten. Hvis du har tid til å vente noen minutter, kan du gjerne tømme det ferske brygget over på termokannen.
+
+**Alle blir glade når de får varm kaffe!**
+
+- [ ] ha 12,5 strøkne skjeer kaffe i filteret.
+- [ ] skyve filterholderen på plass
+- [ ] skylle kannen grundig
+- [ ] slå på kaffemaskinen
+- [ ] fukte et nytt kaffefilter
+- [ ] legge det nye kaffefilteret i holderen
+- [ ] sette kannen på maskinens varmeplate
+- [ ] fylle kannen til randen med vann
+- [ ] tømme den ferske kaffen over på termokannen
+- [ ] tømme vannet fra kannen over i beholderen
+
+### 4 LEDIG STILLING: ELEKTRIKER
+
+Les annonsen og svar kort på spørsmålene.
+
+**JOBB**
+
+**ELEKTRIKER**
+
+Vi skal utvide installasjonsavdelingen vår. I dag består avdelingen av fire elektrikere, en installatør og en ingeniør. Vi søker en dyktig elektriker med særlig interesse for miljøriktige løsninger innen elektrobransjen. Vi betjener både privatkunder, entreprenørfirma og bedrifter. Vårt motto er: *Med fokus på framtidas løsninger!*
+
+| Felt | Verdi |
+|---|---|
+| Arbeidsgiver | Miljøstrøm AS |
+| Stillingstittel | Elektriker |
+| Sted | Oppegård |
+| Frist | 15.5.2019 |
+| Stillingsstørrelse | 100 % |
+| Varighet | Fast |
+
+**Arbeidsoppgaver:**
+- installasjon i samarbeid med autorisert installatør
+- drift og vedlikehold
+- bidra i planlegging og gjennomføring av prosjekter
+
+**Ønskede kvalifikasjoner:**
+- fagbrev elektro, eventuelt energioperatør i tillegg
+- god muntlig og skriftlig framstillingsevne på norsk
+- grunnleggende kunnskaper i engelsk
+
+**Personlige egenskaper:**
+- serviceinnstilt og samarbeidsorientert
+- utadvendt, imøtekommende og fleksibel
+- flink til å omgås kunder
+- ryddig, nøyaktig og ansvarsfull
+
+**Vi tilbyr:**
+- fast ansettelse
+- varierte og spennende arbeidsoppgaver
+- konkurransedyktig lønn og gode pensjons- og forsikringsavtaler
+
+Velkommen til et spennende arbeidsfellesskap med fokus på framtidas løsninger!
+
+**Kontakt**
+
+Er du interessert? Skriftlig søknad med CV sendes på e-post til ottar.johansen@miljostrom.no
+
+SØK PÅ STILLINGEN
+
+a) Hvor stor er stillingen?
+
+___
+
+b) Hvilke yrker har de man skal arbeide sammen med?
+
+___
+
+c) Dreier det seg om et vikariat eller en fast stilling?
+
+___
+
+d) Bør søkeren ha noen særlige interesser innenfor elektrofaget?
+
+___
+
+e) Er det lønn etter gjeldende tariffavtaler?
+
+___
+
+f) Må man ha førerkort for å kunne søke jobben?
+
+___
+
+g) Er det krav til arbeidserfaring?
+
+___
+
+h) Må man forholde seg til kunder i jobben?
+
+___
+
+i) Hvordan søker man på stillingen?
+
+___
+
+### 5 FORMELT BREV: KLAGE
+
+Les klagen og svar kort på spørsmålene.
+
+**Fra**
+Ole Olsen
+Øvrebø 20A
+2000 Fastlandet
+
+Fastlandet, 23.9.2018
+
+**Til**
+Fastlandet kommune
+Utvalg for bolig og bygging
+
+**Angående: Naboens tilbygg**
+
+Jeg viser til samtale angående tilbygg på Øvrebø 20B. Jeg snakket med konsulent Finn Totland 22.9.2018, kl. 15.15. Jeg vil med dette rette en skriftlig klage på naboens tilbygg.
+
+4. mai satte naboen vår i Sandstølen 4B opp et tilbygg som skygger for utsikten vår østover. Vi er fullstendig klar over at reglene ikke krever søknad om å få sette opp tilbygg hvis tilbygget er under 15 m² og ligger minst 4 meter fra tomtegrensen. Selv om naboens tilbygg oppfyller disse kravene, fører tilbygget til *vesentlig* forringelse av utsikten vår. Derfor kan vi ikke forstå at det skal være mulig å sette opp et slikt tilbygg uten noen form for søknad, varsling eller kontroll.
+
+Vi har snakket med naboen om dette og bedt ham om å fjerne tilbygget. Han avviser henstillingen vår og sier at han har retten på sin side. Vi ønsker at utvalget for bolig og bygging ser på saken. Vi ønsker at kommunen krever at naboen fjerner tilbygget. Vi mener tilbygget er både skjemmende og urimelig.
+
+Vi ser fram til å høre fra dere.
+
+Mvh
+Ole Olsen
+
+a) Hvor bor Ole Olsen?
+
+___
+
+b) Hvorfor klager han?
+
+___
+
+c) Hvem klager han til?
+
+___
+
+d) Hvilken konsulent snakket han med hos kommunen?
+
+___
+
+e) Er tilbygget over eller under 15 m2?
+
+___
+
+f) Har Ole Olsen snakket med naboen sin?
+
+___
+
+g) Hva vil han at kommunen skal gjøre?
+
+___
+
+### 6 POLITISKE PARTIER I NORGE
+
+Finn ord eller uttrykk i teksten som betyr det samme som ordene eller uttrykkene under.
+
+1) så bra som det går an
+2) kategorisere, dele inn, ordne
+3) linje
+4) vise, eksemplifisere
+5) ganske, nokså
+6) som motytelse
+7) ulikheter
+8) få til, klare
+9) skaffe, yte
+10) gå med på
+
+**POLITISKE PARTIER**
+
+Når vi går til valg, gir vi stemmen vår til et politisk parti. Alle partier har et mål om et best mulig samfunn, men de er ofte uenige om hvilken vei som er den beste til målet.
+
+Norge har et flerpartisystem, og i stortingsvalget i 2017 ble ni partier valgt inn på Stortinget. Det er et høyt antall sammenliknet med de fleste andre parlamenter. Det største partiet har 49 seter, mens de to minste bare har ett hver. (…)
+
+**VENSTRE- OG HØYRESIDEN**
+
+Ofte sorterer vi de politiske partiene langs en akse med en «venstreside», en «høyreside» og et «sentrum». Denne aksen er en sterk forenkling av virkeligheten, og mange saker går på tvers av aksen. Vi kan se på økonomisk politikk for å illustrere forskjellene mellom partiene på venstresiden og høyresiden.
+
+Partiene på venstresiden ønsker ofte et relativt høyt nivå på skatter og avgifter. Til gjengjeld skal staten sørge for velferdsgoder som gratis sykehus, utdanning og kulturtilbud. De ønsker å utjevne økonomiske forskjeller mellom grupper i samfunnet og er villige til å skattlegge dem med høyest inntekt mer for å oppnå dette. Av de ni partiene på Stortinget plasserer vi gjerne Rødt (R), Sosialistisk Venstreparti (SV) og Arbeiderpartiet (A) på venstresiden.
+
+Partiene på høyresiden ønsker lavere skatter og mener at private bedrifter kan levere mange av velferdstjenestene på en mer effektiv måte enn staten. De snakker mindre om sosial utjevning og er i større grad villige til å akseptere økonomiske forskjeller mellom grupper i samfunnet. Av de ni partiene på Stortinget plasserer vi gjerne Høyre (H) og Fremskrittspartiet (FrP) på høyresiden.
+
+**SENTRUM I POLITIKKEN**
+
+I det politiske sentrum, mellom høyre- og venstreblokkene, plasserer vi som regel Kristelig Folkeparti (KrF), Venstre (V) og Senterpartiet (Sp). Miljøpartiet De Grønne (MDG) kaller seg «blokkuavhengig» og ønsker ikke å bli plassert i noen av «blokkene». (…)
+
+(Utdraget er hentet fra: https://www.stortinget.no/no/Stortinget-og-demokratiet/stortinget-undervisning/videregaende-skole/politiske-partier/)
+
+1. ___
+2. ___
+3. ___
+4. ___
+5. ___
+6. ___
+7. ___
+8. ___
+9. ___
+10. ___
+
+### 7 ANMELDELSE: EN UTROLIG REISE!
+
+Les anmeldelsen og svar kort på spørsmålene.
+
+**EN UTROLIG REISE!**
+
+Anmeldt bok: *Sovjetistan*
+Forfatter: Erika Fatland
+Utgiver: Kagge Forlag
+År: 2014
+
+I boka *Sovjetistan* tar Erika Fatland oss med på en reise gjennom Turkmenistan, Kasakhstan, Tadsjikistan, Kirgisistan og Usbekistan. Dette er land som tidligere var en del av Sovjetunionen, men som ble selvstendige i 1991. I boka tar Fatland for seg både den nåværende situasjonen i landene og landenes historie samtidig som hun forteller om sine opplevelser der.
+
+I dag er disse landene diktaturer i større eller mindre grad. Fatland reiser rundt i landene og kommer i kontakt med lokalbefolkningen. De fleste stedene blir hun tatt godt imot. Lokalbefolkningen forteller om livet sitt før og nå, men mange tør ikke å si hva de mener om landets nåværende ledelse. Vi får en innføring i gamle skikker og seder, og vi får vite at noen av dem fortsatt lever videre noen steder, slik som for eksempel bruderov og jakt med og på ørner.
+
+Når man foretar en reise i et landområde så forskjellig fra det en selv kommer fra og er vant til, står man i fare for å beskrive alt som eksotisk og rart. Men Fatland gjør ikke den feilen. Hun skriver godt og interessant, og måten hun fletter inn historiske fakta på, gjør framstillingen spennende og lærerik. Vi får høre om et område som for bare noen hundre år siden var viktige handelssentre med dyktige vitenskapsmenn. Vi lar oss imponere over en standhaftig museumsdirektør og over miljøaktivister.
+
+Fatland skriver godt og medrivende, og måten hun henvender seg til leseren på, får en til å føle at en er med på reisen hennes. Hun klarer å beskrive opplevelsene sine på en måte som gjør at en etterpå sitter igjen med en følelse av å ha vært på de stedene en har lest om. Og det er det ikke mange forfattere som klarer!
+
+**Spørsmål til teksten:**
+
+1) Hva handler boka om?
+
+___
+
+2) Hvilket styresett er det i landene som det fortelles om i boka?
+
+___
+
+3) Hva kunne det være vanskelig for Fatland å få lokalbefolkningen til å si noe om?
+
+___
+
+4) Hva mener anmelderen kan være en utfordring når man skriver en reiseskildring fra et område som er svært forskjellig fra det en selv kommer fra?
+
+___
+
+5) Hvordan karakteriserer anmelderen Fatlands formidlingsevne?
+
+___
+
