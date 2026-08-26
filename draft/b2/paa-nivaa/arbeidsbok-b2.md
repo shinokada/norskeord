@@ -7197,4 +7197,237 @@ b) Veien skal legges om ei ukes tid.
 c) Vannet ble stengt av.
 d) Skolen ble lagt ned i fjor høst.
 e) Trafikken ble stoppet.
+f) Ranerne ble sett.
+g) Vi ble kjørt til flyplassen.
+h) Jeg ble ikke forstått.
+i) Han ble glemt.
+j) Samtalen vår ble overhørt.
+
+#### 9 AKTIV OG PASSIV (2)
+
+a) Noen må feste skruene.
+b) Noen må dekke bordet.
+c) Noen malet huset.
+d) Noen sa opp direktøren.
+e) Noen har levert varene.
+f) Noen stjal bilen mens eieren sov.
+g) Noen tok opp samtalen på bånd.
+h) Noen underholdt oss.
+i) Noen rev huset.
+j) Noen skjøt bjørnen.
+
+#### 10 ORDSTILLING
+
+a) Filmen blir sendt i reprise på fredag.
+b) Alle klær bør vaskes før bruk.
+c) Bordet skal dekkes før gjestene kommer.
+d) Bilen ble stjålet mens eieren sov.
+e) Veien ble lagt om i av løpet helgen.
+f) Gjøre glassene må behandles med forsiktighet.
+g) Skruene må løsnes før bordet demonteres.
+h) Boka hans utgis over hele verden.
+i) Terrassen må males i løpet av sommeren.
+j) Hun ble oppringt av sønnens kontaktlærer.
+k) Ordklarken ble dømt etter tiltalen.
+l) De ble sagt opp på dagen.
+m) Regningen må betales innen torsdag.
+
+#### 11 EN OPPSKRIFT: EPLECHIPS
+
+Eplene tørkes med et rent kjøkkenhåndkle og skjæres i tynne skiver (3 mm) med en skarp kniv. Kjernehuset fjernes om du synes det er for grovt og stort.
+
+Stekeovnen settes på varmluft og 90 °C. Epleskivene legges tett i tett (men ikke oppå hverandre) på bakepapir på stekebrett og plasseres i ovnen. Minst tre brett kan stekes på en gang. / Du kan steke minst tre brett på en gang.
+
+Eplene stekes i ca. 1 time. Skivene snus og stekes videre i 1 time til.
+
+Varmen senkes til 50 °C, og eplechipsen tørkes til den er helt tørr og sprø. Dette kan ta hele natten.
+
+Eplechipsen oppbevares i tette glass eller plastpose. De har lang holdbarhetstid.
+
+#### 12 EN HJELPENDE HÅND
+
+| | | ADJEKTIV ELLER ADVERB? |
+| --- | --- | --- |
+| a) | strålende | adjektiv |
+| b) | pres. skuffende | adjektiv |
+| c) | rasende | adjektiv |
+| d) | krypende | adverb |
+| e) | rasende | adjektiv |
+| f) | lekende | adjektiv |
+| g) | oppsagte | adverb |
+| h) | hjelpende | adjektiv |
+
+#### 13 ET NYMALT HUS
+
+a) nymalte, nymalt, b) utgått, utgåtte, c) ansatte, ansatt, d) opptatt, opptatt, e) håndskrevet, håndskrevne, f) kokte, kokt, g) utslitt, utslitte, h) brukte, brukte
+
+#### 14 I ARBEIDSLIVET
+
+**Ved sykdom:** må, kan
+**Egenmelding:** må/skal/bør
+**Er du medlem:** vil
+**HMS:** vil, må/skal
+
+#### 15 PARSETNINGER: MODALE UTTRYKKSMÅTER
+
+1. nødt til å
+2. lov til
+3. kunne jeg ha
+4. i stand til
+5. tenkt (å dra/reise)
+6. burde ikke være
+7. Kommer du til
+8. lyst til å gifte
+
+#### 16 ALLE MÅ HA LEST DENNE BOKA INNEN TORSDAG
+
+a) Innen torsdag må alle ha lest denne boka.
+b) Før de kommer, må jeg ha vasket gulvet.
+c) Før vinteren må vi ha reparert taket.
+d) Før barnevakten kommer, må barna ha sovnet.
+e) Da han skrev dette, må han ha vært full!
+f) I løpet av natta må vinden ha stilnet.
+g) Før hun prøver igjen, må hun ha øvd seg mer.
+h) I dag må du ha spist minst åtte brødskiver!
+
+#### 17 SAMMENSATTE VERB
+
+| | verb 1 | verb 2 | Tempus |
+| --- | --- | --- | --- |
+| a) | hadde | spist | preteritum perfektum |
+| | tok | - | preteritum |
+| b) | vil | - | presens |
+| | kan | treffes | presens (modalverb) + infinitiv (s-verb) |
+| c) | ble | stjålet | passiv preteritum |
+| | var | - | preteritum |
+| d) | må | ryddes | passiv presens (modalverb) + infinitiv |
+| | kommer | - | presens |
+| e) | hadde | fått | preteritum perfektum |
+| | hadde | kommet | preteritum perfektum |
+| f) | skal | ha tilhørt | presens perfektum futurum |
+| g) | hadde | forstått | preteritum perfektum |
+| | måtte | forklare | preteritum (modalverb) + infinitiv |
+| h) | er | - | presens |
+| | må | se | presens (modalverb) + infinitiv |
+| i) | skulle | være | preteritum futurum |
+| | er | - | presens |
+
+#### 18 JEG HAR HØRT AT …
+
+*Forslag:*
+
+a) De ansatte i denne matbutikken skal ha vært veldig hjelpsomme.
+b) Eva skal ha fått (seg) jobb som frisør.
+c) Raneren skal ha vært middels høy og (skal ha) snakket bergensk.
+d) Konkursen skal ha skyldtes økonomistyring.
+e) Gruvearbeiderne skal ha streiket på grunn av farlige arbeidsforhold.
+
+#### 19 HVA SKULLE DU HA GJORT, SA DU?
+
+*Forslag:*
+
+Jeg skulle ha laget mat, men jeg sovnet på sofaen.
+Jeg skulle ha lagt meg tidlig, men jeg ble sittende og se på TV.
+Jeg skulle gjerne ha begynt å studere, men jeg måtte jobbe.
+Jeg skulle ha malt huset, men det begynte å regne.
+Jeg skulle ha arbeidet med norsken, men jeg fikk besøk.
+Jeg skulle ha pusset opp huset, men jeg er blakk.
+Jeg skulle gjerne ha reist på ferie, men jeg er blakk.
+Jeg skulle gjerne ha holdt en tale for mor, men jeg er så sjenert.
+
+#### 20 HVA MENER DU?
+
+*Forslag:*
+
+a) Etter min mening skulle prisen på flybilletter ha vært økt.
+b) Etter min mening burde/bør det ikke innføres skoleuniformer.
+c) Etter min mening skulle det ha vært sendt mer sport på TV.
+d) Etter min mening burde/bør ikke skattene senkes.
+e) Etter min mening skulle antall ansatte ha vært økt.
+f) Etter min mening burde/bør det ikke utvinnes mer olje.
+
+#### 21 NEI, DET ER HELT I DET BLÅ!
+
+*Forslag:*
+
+Hvis jeg hadde fått bestemme, hadde det blitt fred i verden.
+Jeg skulle ønske at det ble fred i verden.
+Hadde jeg fått bestemme, hadde det blitt fred i verden!
+Jeg skulle ønske at jeg kunne vinne i lotto!
+Hadde det ikke vært fint hvis jeg hadde vunnet i lotto?
+Jeg skulle ønske at man kunne avskaffe dårlig vær.
+Hadde jeg fått bestemme, hadde dårlig vær vært avskaffet.
+Dårlig vær burde ha vært avskaffet!
+Hvis jeg hadde fått bestemme, hadde hvalfangst blitt forbudt.
+Jeg skulle ønske at hvalfangst ble forbudt.
+Hvalfangst burde ha vært forbudt!
+
+#### 22 FIKK DU GJORT DET?
+
+a) Får du satt på vaskemaskinen før du går?
+b) Fikk du tatt eksamen?
+c) Fikk du handlet på veien hjem?
+d) Jeg fikk ikke lest nok før prøven.
+e) De fikk tatt inn klærne før det begynte å regne.
+f) Får du bestilt billetter?
+g) Han har ikke fått solgt bilen.
+h) Hun fikk ikke søkt innen fristen.
+i) De fikk ikke besøkt oss i ferien likevel.
+j) De fikk tatt farvel på en skikkelig måte.
+
+#### 23 DE BLE SITTENDE OG SNAKKE
+
+a) Han blir nok boende her en stund.
+b) De driver og pusser opp huset. / De holder på (med) å pusse opp huset.
+c) Han ble stående og vente på bussen.
+d) Jeg ble faktisk sittende og se på TV hele kvelden.
+e) Hun ble liggende til sengs ei hel uke.
+f) Han ble stående og vaske opp en hel time!
+g) De ble sittende og snakke sammen hele natta.
+h) De ble gående uten noe å gjøre.
+
+#### 24 HVILKET PARTIKKELVERB?
+
+si nei til: avslå
+føde, få barn: nedkomme
+signere: underskrive
+lære barn om hva som er rett og galt: oppdra
+skje, være i gang: pågå
+ignorere, ikke bry seg om: overse
+bestemme, fatte en beslutning: avgjøre
+tolke fra ett språk til et annet: oversette
+innrømme at man har gjort noe: tilstå
+leve videre, klare seg: overleve
+publisere: utgi
+ha innflytelse på: påvirke
+fjerne, gjøre noe forbudt: avskaffe
+få noen til å gjøre noe du vil: overtale
+
+#### 25 ET AVSLAG – Å AVSLÅ
+
+| | Ordklasse | Partikkelverb |
+| --- | --- | --- |
+| a) | subst. | å avslå |
+| b) | adj. (av pres. part.) | å gå på (å pågå = å skje, å gå på = å insistere eller å fortsette med uforminsket styrke) |
+| c) | subst. | å underskrive |
+| d) | subst. | å møte opp |
+| e) | subst. | å henge sammen |
+| f) | adj. (av perf. part.) | å utsette |
+| g) | subst. | å opplyse (+ tid) |
+| i) | subst. | å gå ut |
+| j) | subst. | å gå over (å overgå = å gjøre noe bedre enn andre, å gå over = å krysse eller å ta slutt) |
+| k) | subst. | å kjøre på |
+| l) | subst. | å lese opp (+ dikt) |
+| m) | subst. | å avtale |
+| n) | subst. | å påstå |
+| o) | adj. (substantivert adj. av pres. part.) | å komme til (tilkommende er overført betydning, fast uttrykk) |
+| p) | adj. | å holde på (påholden penn er fast uttrykk) |
+
+#### 26 PARTIKKEL OG PARTISIPP
+
+å si opp: oppsagte, oppsagt
+å vende om: omvendt, omvendt
+å sende inn: innsendte
+å slite ut: utslitt (utslitte), utslitt (utslitte), utslitt
+å bruke opp: oppbrukt, oppbrukt, oppbrukt
 
