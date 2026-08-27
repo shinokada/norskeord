@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * dedup_vocab.mjs
+ * dedup-vocab.mjs
  *
  * Removes within-file duplicate entries (same `norsk` value) from vocab/uttrykk JSON files.
  * When a duplicate exists in two categories, we KEEP the entry in the smaller category
@@ -8,7 +8,8 @@
  * If the counts are equal, keeps the first occurrence and logs a warning.
  *
  * Usage (from the scripts/ directory):
- *   node dedup_vocab.mjs [--dry-run]
+ *   node dedup-vocab.mjs [--dry-run]
+ *   node scripts/dedup-vocab.mjs --dry-run
  *
  * With --dry-run it only prints what it would do without writing files.
  */
