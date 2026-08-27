@@ -19353,6 +19353,114 @@
     "hint": "Etter «den» må adjektivet ha svak (-e) ending: «arbeidsledige», ikke ubestemt «arbeidsledig» eller genitiv «arbeidslediges»."
   },
   {
+    "id": "gq-substadj-013",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "fill",
+    "sentence": "_____ betaler ofte en større andel av inntekten sin i skatt.",
+    "words": ["De rike", "Rik", "Rike"],
+    "answer": "De rike",
+    "hint": "Substantivert adjektiv i flertall krever «de» foran + svak adjektivending: «de rike»."
+  },
+  {
+    "id": "gq-substadj-014",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "fill",
+    "sentence": "_____ brukte førerhund for å komme seg trygt gjennom trafikken.",
+    "words": ["Den blinde", "Blind", "Blinde"],
+    "answer": "Den blinde",
+    "hint": "Om én bestemt person: entall «den» + svak adjektivending."
+  },
+  {
+    "id": "gq-substadj-015",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "fill",
+    "sentence": "Kommunen åpnet en ny varmestue for _____ i vinter.",
+    "words": ["de hjemløse", "hjemløse", "det hjemløse"],
+    "answer": "de hjemløse",
+    "hint": "Gruppe mennesker i flertall: «de» + svak adjektivending — «de hjemløse»."
+  },
+  {
+    "id": "gq-substadj-016",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen med substantivert adjektiv i stedet for «mennesker».",
+    "source": "Sultne mennesker sto i lang kø utenfor matsentralen.",
+    "answer": "De sultne sto i lang kø utenfor matsentralen.",
+    "hint": "«sultne mennesker» → «de sultne»: dropp substantivet, behold «de» + svak adjektivending."
+  },
+  {
+    "id": "gq-substadj-017",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen med substantivert adjektiv i stedet for «mennesker».",
+    "source": "Modige mennesker tør ofte å si imot sjefen sin.",
+    "answer": "De modige tør ofte å si imot sjefen sin.",
+    "hint": "«modige mennesker» → «de modige»."
+  },
+  {
+    "id": "gq-substadj-018",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Landsbyen har én eldre kvinne som alle spør til råds. Velg riktig setning.",
+    "options": [
+      "Den kloke gir alltid gode råd.",
+      "De kloke gir alltid gode råd.",
+      "Klok gir alltid gode råd."
+    ],
+    "answer": "Den kloke gir alltid gode råd.",
+    "hint": "Det gjelder én bestemt person, så entall «den» + svak adjektivending, ikke flertall eller ubestemt form."
+  },
+  {
+    "id": "gq-substadj-019",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": ["De", "raskt", "friske", "ble", "utskrevet", "fra", "sykehuset"],
+    "answer": "De friske ble raskt utskrevet fra sykehuset.",
+    "hint": "Flertallsgruppe: «de» + svak adjektivending «friske»."
+  },
+  {
+    "id": "gq-substadj-020",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "fill",
+    "sentence": "Kunstneren var alltid på jakt etter _____ i hverdagen.",
+    "words": ["det vakre", "de vakre", "vakre"],
+    "answer": "det vakre",
+    "hint": "Entall «det» + adjektiv kan vise til en abstrakt egenskap («det vakre» = skjønnhet), ikke bare mennesker."
+  },
+  {
+    "id": "gq-substadj-021",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Triste trenger noen å snakke med.",
+    "optionB": "De triste trenger noen å snakke med.",
+    "answer": "B",
+    "explanation": "Substantivert adjektiv kan ikke stå helt alene — det trenger den bestemte artikkelen (den/det/de) foran seg.",
+    "hint": "Se etter om artikkelen mangler foran adjektivet."
+  },
+  {
+    "id": "gq-substadj-022",
+    "topic": "substantivert-adjektiv",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig substantivert form.",
+    "options": [
+      "De sterke må hjelpe de svake.",
+      "De sterk må hjelpe de svak.",
+      "De sterkes må hjelpe de svakes."
+    ],
+    "answer": "De sterke må hjelpe de svake.",
+    "hint": "Etter «de» må adjektivet ha svak (-e) ending, ikke ubestemt form eller genitiv."
+  },
+  {
     "id": "gq-noun-pl-037",
     "topic": "noun-plurals",
     "cefr": "B2",

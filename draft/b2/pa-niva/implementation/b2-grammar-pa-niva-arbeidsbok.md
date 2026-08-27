@@ -683,3 +683,16 @@ highest-value touch (grows a 2-question topic), fully direct-match, zero groundw
   unmatched across 21 B2 questions; `check-grammar-norwegian.mjs motsetning-prefiks` → 0 flagged
   across all 21 questions. Applied to the real `grammar.json` via `Filesystem:edit_file`,
   re-verified: 2610 total questions file-wide, no duplicate IDs.
+- ✅ **Done — `substantivert-adjektiv`** (Adjektiv §16 — nominalized adjectives, e.g. «de unge»,
+  «den ansatte», «det gode»). Confirmed direct match against the existing rule text (foranstilt
+  bestemmer + weak adjective ending, singular «den»/«det» for one person or an abstract quality,
+  plural «de» for a group — all already covered, no rule-text gap). Added 10 new B2 questions
+  (`gq-substadj-013`–`gq-substadj-022`: fill/transform/multiple-choice/order/minimal-pair mix)
+  using fresh vocabulary beyond the existing fattige/ansatte/eldre/arbeidsledige/unge/syke/uføre/
+  gode/gamle set — rike, blinde, hjemløse, sultne, modige, kloke, friske, and a second abstract-
+  quality singular «det vakre» alongside the existing «det gode», plus triste and sterke/svake.
+  Topic now has 22 total questions (12 → 22, all B2). Validated:
+  `check-b2-grammar-vocab.mjs substantivert-adjektiv` → 0 unmatched across 22 B2 questions;
+  `check-grammar-norwegian.mjs substantivert-adjektiv` → 0 flagged across all 22 questions.
+  Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2620 total questions
+  file-wide, no duplicate IDs.
