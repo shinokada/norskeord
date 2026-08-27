@@ -606,3 +606,43 @@ highest-value touch (grows a 2-question topic), fully direct-match, zero groundw
   place nouns to avoid a stranded preposition). Added 9 new B2 questions (`gq-rel-034`–`gq-rel-042`:
   fill/transform/minimal-pair/multiple-choice mix) to `grammar.json`. Topic now has 11 B2 questions
   (was 2). JSON validated: no duplicate IDs, 2551 total questions in file.
+- ✅ **Done — `det-formelt-subjekt`** (Helsetninger §2–9: utbrytning/cleft subject/object/adverbial,
+  presentering/existential «det», «det»+passiv, inversjon, det-setninger grammaticality). Added 9
+  new B2 questions (`gq-detform-013`–`gq-detform-021`: transform/fill/minimal-pair/multiple-choice/
+  order mix covering cleft-subject, cleft-object, cleft-adverbial (sted/tid) constructions). Topic
+  now has 21 B2 questions (was 12).
+- ✅ **Done — `det-referanse`** (Helsetninger §13, trykktungt det — «det» standing in for a whole
+  predicate/clause, e.g. «Ja, det er hun»). Added 12 new B2 questions (`gq-detref-001`–`gq-detref-012`:
+  fill/transform/minimal-pair/multiple-choice mix). Topic now has 12 B2 questions (was 0 — first B2
+  content for this topic).
+  - Note: this session found and fixed a JSON corruption left over from the prior session's
+    `det-referanse` insertion (a duplicated `{ "id": "gq-detref-001",` opening fragment had been
+    left in `grammar.json`, breaking JSON parsing). Fixed via `Filesystem:edit_file`, re-verified:
+    2560 total questions, no duplicate IDs.
+  - Both touches validated: `check-b2-grammar-vocab.mjs det-formelt-subjekt det-referanse` → 0
+    unmatched across 33 questions; `check-grammar-norwegian.mjs det-formelt-subjekt det-referanse
+    relative-som` → 0 flagged across 75 questions.
+- ✅ **Done — `partisipp-former`** (Adverb §9, «Hvordan kom de?» — presens partisipp as
+  manner-of-motion adverb after «komme»/«løpe», e.g. «komme galopperende»). Confirmed direct
+  match against the existing rule text (already gives «Han løp skrikende hjem» as an example, no
+  rule-text gap). Added 10 new B2 questions (`gq-partform-033`–`gq-partform-042`: fill/transform/
+  multiple-choice/minimal-pair/order mix) using fresh characters/sentences (not the book's own
+  scenarios), drawing on the same manner-of-motion verb class (trille, hoppe, klatre, marsjere,
+  rope, sveve, stavre, spasere, snike) the exercise itself uses. Topic now has 42 total questions
+  (32 → 42; 21 B2 → 31 B2). Validated: `check-b2-grammar-vocab.mjs partisipp-former` → 0
+  unmatched across 31 B2 questions; `check-grammar-norwegian.mjs partisipp-former` → 0 flagged
+  across all 42 questions. Applied to the real `grammar.json` via `Filesystem:edit_file`,
+  re-verified: 2570 total questions file-wide, no duplicate IDs.
+- ✅ **Done — `stedsadverb-statisk-dynamisk`** (Adverb §5–6, «Sommerøya vår» narrative +
+  positional/compass adverb drill). Found a small rule-text gap: §6's bakerst/innerst/nederst/
+  øverst (static-only relative-position adverbs) and nordover-type compass adverbs (dynamic-only)
+  weren't covered by the existing static/dynamic-pair rule text, so added a new paragraph to both
+  `explanationEn`/`explanationNb` describing both sub-patterns before writing questions. Added 10
+  new B2 questions (`gq-stedsadv-021`–`gq-stedsadv-030`: fill/multiple-choice/minimal-pair/order/
+  transform mix) covering fremst/bakerst, øverst/nederst, innerst, and nordover/sørover/østover/
+  vestover, with fresh scenarios (not the book's own sentences). Topic now has 30 total questions
+  (20 → 30; 10 B2 → 20 B2, 10 B1 unchanged). Validated:
+  `check-b2-grammar-vocab.mjs stedsadverb-statisk-dynamisk` → 0 unmatched across 20 B2 questions;
+  `check-grammar-norwegian.mjs stedsadverb-statisk-dynamisk` → 0 flagged across all 30 questions.
+  Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2580 total questions
+  file-wide, no duplicate IDs.

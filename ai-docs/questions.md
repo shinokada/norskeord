@@ -25,40 +25,9 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord. 
 
 
-Please read through draft/pa-niva/implementation/b2-grammar-pa-niva-arbeidsbok.md. You can find src/lib/data/grammar.json for grammar related json files.
+I'm working on draft/pa-niva/implementation/b2-grammar-pa-niva-arbeidsbok.md. You can find src/lib/data/grammar.json for grammar related json files.
 Please update draft/pa-niva/implementation/b2-grammar-pa-niva-arbeidsbok.md when you finish one item and update the track progress.
 
-
-CLAUDE: Found it — it's `draft/b2/pa-niva`, not `draft/pa-niva`.Now let me read the plan doc to see current state and find Kapittel 3.Kapittel 3 spans lines 4495–5849. Let me view it along with its section headers.Good, Kapittel 3 fasit spans lines 1392–1883. Now let's read the SETNINGSLEDD subsection in both files.It's `cefr` not `level`. Let me get the full B2 topic list.Now the fasit for HELSETNINGER:There's a `grammar` directory - that's likely where rules.ts lives now.Here's where I've gotten to on Kapittel 3 triage before hitting the tool limit — I'll finish the writeup and save it to the doc next turn.
-
-**SETNINGSLEDD (10 exercises)** — no existing topic covers sentence-element identification/labeling (subjekt/verbal/objekt/indirekte objekt/predikativ, NP-building with determiners+adjectives, full sentence analysis). This looks like a genuine **🆕 new topic** — nothing in the 39-topic B2 list or cross-level list touches this skill. Exercises 6 (NP-building) and 10 (full sentence-field analysis) might split into their own touch or fold together.
-
-**HELSETNINGER (17 exercises)** — mostly reuse, better than expected:
-- §2–4 (utbrytning/cleft: subject, object, adverbial) → 🔁 `det-formelt-subjekt` — its rule text *already* explicitly covers the "Det er/var X som…" cleft pattern
-- §6–9 (det+existential, det+passive, inversion, det-setninger grammaticality) → 🔁 `det-formelt-subjekt` / `det-referanse`
-- §10 (spørreord/question words) → 🆕 candidate — no existing topic
-- §11 (setningsskjema) → same skill as Setningsledd §10, likely merges with that new topic
-- §12 (sluttfelt sted/tid/årsak ordering) → 🔁 `adverbial-fronting` or `setningsadverbial`, needs a closer look
-- §13 (trykktungt det) → 🆕 small candidate, or fold into `det-referanse`
-- §14–16 (trykklett pronomen + ikke-placement combo) → 🔀 `ikke-placement` (currently A2/B1) extend to B2, absorbing `pronomen-objektsform` (A1) as supporting skill
-- §17 (imperativsetninger, incl. negative imperative) → 🔀 `imperativ` (currently A1 only) extend to B2
-- §1 (kulturelle uttrykk / Amanda-prisen word-order scramble) → ⏭️ skip, likely vocab-plan territory (cultural reading text)
-
-**Still to do:** LEDDSETNINGER (20 exercises, not yet read) — I was mid-way through checking `rules.ts` entries when I ran out of tool calls this turn. 
-
-Want me to continue with LEDDSETNINGER now?
-
-ME: Continue
-
-CLAUDE: Now let's read the LEDDSETNINGER fasit for confirmation of specifics.Now let me write the Kapittel 3 findings into the doc.Kapittel 3 (Setninger) triage is done and logged. Summary:
-
-- **Setningsledd** — mostly a genuinely new skill: sentence-element identification/labeling (subjekt/verbal/objekt/predikativ/adverbial, NP-building, full-sentence analysis). Proposed a new topic, **`setningsledd-identifikasjon`**. Only §8–9 map to existing topics (`adverbial-fronting`/`setningsadverbial`, `v2-word-order`).
-- **Helsetninger** — reuses far more than expected: §2–9 (utbrytning/cleft + all the "det" exercises) all map directly onto `det-formelt-subjekt`, since that topic's rule text already describes the exact "Det er/var X som…" construction. §14–17 extend `ikke-placement` and `imperativ` to B2. §10–13 are smaller open items (spørreord, setningsskjema, sluttfelt ordering, trykktungt det).
-- **Leddsetninger** — also reuses heavily: reported speech (§3–6, 16) → `indirekte-tale-at-om`; relative clauses (§7) → `relative-som` (great chance to grow this 2-question topic); §9–11 extend `hypotetiske-betingelsessetninger`/`subordinate-order`/`v2-word-order`; §13–14 → `adverbial-fronting`; §15 → `kommaregler`; §18–19 are exact-name matches (`derfor-fordi`, `motsetning-selv-om-likevel`). §1, 2, 12, 17 fold into the new `setningsledd-identifikasjon` topic; §20 (mens/samtidig) is a small leftover.
-
-Only **Kapittel 4** (Tekster og tekstbinding) remains untriaged. Want me to continue Phase 1 into Kapittel 4, or switch to Phase 2 content-writing on the many direct-match topics already surfaced across Kapittel 1–3?
-
-ME: Can you update the doc?
 
 CLAUDE: The doc is already fully updated with Kapittel 3 — I can see the Kapittel 3 section and the revised "Next session starting point" both landed correctly in the last edit. There's just one leftover stale line in the Process section that still says "Kapittel 3–4 not yet triaged." Let me fix that so the status line is consistent.Done — the doc now fully reflects Kapittel 1–3 as triaged, with only Kapittel 4 (Tekster og tekstbinding) left open, and the stale "Kapittel 3–4 not yet triaged" line in the Process section is fixed to match.
 
@@ -109,11 +78,24 @@ ME: Contune.
 
 CLAUDE: Found it. Let me read the plan doc.Everything from last session is confirmed applied and valid: JSON has no duplicate IDs (2551 total questions), and `relative-som` now has 9 new B2 questions (gq-rel-034–042) plus the 2 originals, with the rule text updated in `rules.ts`. Now let me update the plan doc to mark this touch done, then move to the next item.Good, applying it now.Doc updated. Now let's move to the next Phase 2 touch. I'll pick a small, direct-match item next — `det-referanse` (Helsetninger §13, trykktungt det) is tiny, or I'll go with `derfor-fordi` / `motsetning-selv-om-likevel` which are exact matches. Let me check current question counts to pick a sensible next target.IDs are free. Now let's find the insertion point (end of the `det-formelt-subjekt` block, after `gq-detform-012`).Now I'll view the actual user file at that same line range to use exact text for the edit (since I'm editing on the user's computer, not the copy).Good, I have the exact block. Now let's construct the new questions and insert via edit_file on the user's filesystem using the unique old_str = the gq-detform-012 block, appending new entries right after it.Diff looks correct. Applying it.
 
-ME: 
+ME: Continue.
 
-CLAUDE: 
+CLAUDE: Found it. Let's read the plan doc.This confirms the file on the user's disk has a broken duplicate insertion from the prior session. Let me fix that first before continuing.Now let me set up the sandbox with the needed data files and run the checks.Now let me get the vocab/uttrykk data files needed for the B2 vocab check.I'll copy the required vocab/uttrykk files over for the check script.Now copy the check scripts into place.Diff looks correct. Applying it.Let me verify the real file now parses correctly.Fixed and verified. Now let me update the plan doc to log this properly, then move to the next touch.Good, the doc is updated and the file corruption is fixed. Now let's move to the next touch. Let's check what's a good next pick — `partisipp-former` (Adverb §9, manerandverb) is small and direct-match with no groundwork needed.Here's where things stand after this session:
 
-ME: 
+**Fixed a bug from your last session:** `grammar.json` on disk had broken JSON — a duplicated `{ "id": "gq-detref-001",` fragment left over from an incomplete edit, which made the whole file unparseable. I traced it, fixed it via `Filesystem:edit_file`, and reverified: 2,560 total questions, no duplicate IDs, valid JSON.
+
+**Confirmed complete (and now logged in the plan doc):**
+- `det-formelt-subjekt` (Helsetninger §2–9) — 9 new B2 questions, now 21 total (was 12)
+- `det-referanse` (Helsetninger §13) — 12 new B2 questions, now 12 total (was 0)
+- Both validated: `check-b2-grammar-vocab.mjs` → 0 unmatched across 33 questions; `check-grammar-norwegian.mjs` → 0 flagged across 75 questions (including `relative-som` from the session before)
+
+The plan doc (`b2-grammar-pa-niva-arbeidsbok.md`) is updated with all of this in the Phase 2 progress log.
+
+**Next up:** I was scoping `partisipp-former` (Adverb §9, "komme løpende" manerandverb usage) as a candidate next touch — it already has 32 questions (21 B2 + 11 B1) covering presens/perfektum partisipp as adjective/adverb, compound-adjective building, and bestemt-flertall forms. I hit the tool-use limit before confirming whether §9's specific manerandverb angle is already covered or needs a fresh addition.
+
+Want me to continue with `partisipp-former` next, or would you rather I pick a different item from the "ready to go" list (e.g. `passiv-bli-s`, `stedsadverb-statisk-dynamisk`, `arsak-og-folge-uttrykk`)?
+
+ME: Let's do `partisipp-former` next.
 
 CLAUDE: 
 
