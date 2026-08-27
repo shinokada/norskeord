@@ -2100,7 +2100,16 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'form for movement AWAY from a place: «hjemmefra» ("from home"): "Jeg kjørte hjemmefra klokka ' +
       'åtte," "Han dro hjemmefra som sekstenåring." So the three-way pattern is dynamic-toward ' +
       '(hjem) / static (hjemme) / dynamic-away (hjemmefra) — the same «-fra» pattern also appears ' +
-      'with other adverbs (ovenfra, nedenfra, utenfra, innenfra).',
+      'with other adverbs (ovenfra, nedenfra, utenfra, innenfra).\n\n' +
+      'A related set of adverbs is static-only, marking relative position within a group or space ' +
+      'rather than a place name: fremst/bakerst (front/back), øverst/nederst (top/bottom), ' +
+      'innerst/ytterst (innermost/outermost). Unlike the pairs above, these have no matching ' +
+      'dynamic form built on the same root — movement toward them is expressed with a verb + ' +
+      'directional adverb instead: "Han satte seg bakerst" (static position) vs. "Han gikk bakover" ' +
+      '(movement, different root). Compass-direction adverbs (nordover, sørover, østover, vestover) ' +
+      'work the other way — they are dynamic-only, describing movement in a direction; the static ' +
+      'equivalent uses a prepositional phrase instead of a matching adverb: "i nord," not a word ' +
+      'ending in -over.',
     explanationNb:
       'Flere stedsadverb har to former: en statisk for å være et sted, og en dynamisk for å bevege ' +
       'seg mot det:\n\n' +
@@ -2111,7 +2120,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• "Jeg kjørte hjemmefra klokka åtte."\n' +
       '• "Han dro hjemmefra som sekstenåring."\n\n' +
       'Mønsteret blir dermed tredelt: dynamisk-mot (hjem) / statisk (hjemme) / dynamisk-vekk (hjemmefra). ' +
-      'Samme «-fra»-mønster finnes også hos andre adverb (ovenfra, nedenfra, utenfra, innenfra).'
+      'Samme «-fra»-mønster finnes også hos andre adverb (ovenfra, nedenfra, utenfra, innenfra).\n\n' +
+      'En beslektet gruppe adverb er rent statiske og markerer relativ posisjon i en gruppe eller et rom, ikke et stedsnavn: fremst/bakerst, øverst/nederst, innerst/ytterst. I motsetning til parene over har disse ingen tilsvarende dynamisk form med samme rot — bevegelse mot dem uttrykkes heller med verb + retningsadverb: «Han satte seg bakerst» (statisk posisjon) mot «Han gikk bakover» (bevegelse, annen rot). Kompassretningsadverb (nordover, sørover, østover, vestover) fungerer motsatt vei — de er rent dynamiske og beskriver bevegelse i en retning; den statiske motsvarigheten er en preposisjonsfrase, ikke et tilsvarende adverb: «i nord», ikke et ord som ender på -over.'
   },
 
   'man-en-upersonlig-pronomen': {
