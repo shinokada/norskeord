@@ -116,17 +116,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     explanationEn:
       '"som" introduces a relative clause and stands for the subject or object of the embedded ' +
       'sentence: "Mannen som bor her, er lege." "Boka som jeg leste, var god." When "som" is the ' +
-      'object it can be dropped at a higher level ("Boka jeg leste, var god"), but at this level ' +
-      'we always write "som" out. A relative clause is subordinate, so adverbs like "ikke" come ' +
-      'BEFORE the verb: "en venn som ikke kommer". For a PLACE noun, «der» can replace «som … ' +
-      '[preposition]», avoiding a stranded preposition at the end of the clause — more typical ' +
-      'of formal/written style: "byen der jeg bor" = "byen som jeg bor i". «Der» only works for ' +
-      'places, never for people or things.',
+      'SUBJECT of the embedded clause it is always required ("en venn som ikke kommer" — "som" ' +
+      'stands for "vennen"). When "som" is instead the OBJECT, it becomes optional at this level ' +
+      'and both versions are correct: "Boka som jeg leste, var god" = "Boka jeg leste, var god." ' +
+      'A relative clause is subordinate, so adverbs like "ikke" come BEFORE the verb regardless of ' +
+      'whether "som" is written out: "en venn som ikke kommer", "en bok jeg ikke har lest". For a ' +
+      'PLACE noun, «der» can replace «som … [preposition]», avoiding a stranded preposition at the ' +
+      'end of the clause — more typical of formal/written style: "byen der jeg bor" = "byen som ' +
+      'jeg bor i". «Der» only works for places, never for people or things.',
     explanationNb:
       '«Som» innleder en relativsetning og står for subjektet eller objektet i den innfelte ' +
       'setningen: "Mannen som bor her, er lege." "Boka som jeg leste, var god."\n\n' +
-      '• Når «som» er objekt, kan det på et høyere nivå sløyfes ("Boka jeg leste, var god"), men på dette nivået skriver vi alltid ut «som».\n' +
-      '• En relativsetning er en leddsetning, så adverb som «ikke» kommer FØR verbet: "en venn som ikke kommer".\n' +
+      '• Når «som» er SUBJEKT i leddsetningen, er det alltid obligatorisk: "en venn som ikke kommer" ("som" står for "vennen").\n' +
+      '• Når «som» i stedet er OBJEKT, blir det valgfritt på dette nivået, og begge versjoner er riktige: "Boka som jeg leste, var god" = "Boka jeg leste, var god."\n' +
+      '• En relativsetning er en leddsetning, så adverb som «ikke» kommer FØR verbet uansett om «som» skrives ut eller ikke: "en venn som ikke kommer", "en bok jeg ikke har lest".\n' +
       '• Foran et STEDSSUBSTANTIV kan «der» erstatte «som … [preposisjon]» og unngå en etterhengt preposisjon til slutt i setningen — mer typisk for formelt/skriftlig språk: "byen der jeg bor" = "byen som jeg bor i". «Der» fungerer bare om steder, aldri om personer eller ting.'
   },
 
@@ -160,7 +163,12 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Modal + infinitive: "Det skal være konsert her i mai." → "I mai skal det være konsert her." ' +
       'With a setningsadverbial: the adverbial fronts, subject/verb invert, but the sentential ' +
       'adverb (alltid, aldri, ofte …) stays between subject and verb as always: ' +
-      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri."',
+      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri." ' +
+      'The mirror-image question is what happens at the OTHER end of the sentence, the sluttfelt, ' +
+      'when several adverbials of different types stack up there instead of fronting: the default ' +
+      'order is STED before TID before ÅRSAK: "Historien handler om noe som skjedde langt herfra ' +
+      '(sted) for lenge siden (tid)." "Jeg ble ferdig med søknaden innen fristen (tid) fordi du ' +
+      'hjalp meg (årsak)."',
     explanationNb:
       'Når du flytter et adverbial (tid, sted, måte) til BEGYNNELSEN av en norsk hovedsetning, ' +
       'må subjektet og verbet bytte plass for å holde verbet på andreplass (V2-regelen).\n\n' +
@@ -168,7 +176,11 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **hjelpeverb + infinitiv**: "Det skal være konsert her i mai." → "I mai skal det være konsert her."\n' +
       '• **med setningsadverbial**: adverbialet flyttes, subjekt/verb inverterer, men setningsadverbialet ' +
       '(alltid, aldri, ofte …) blir alltid stående mellom subjekt og verb: ' +
-      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri."'
+      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri."\n\n' +
+      'Det motsatte spørsmålet er hva som skjer i den ANDRE enden av setningen, sluttfeltet, når flere ' +
+      'ulike adverbial hoper seg opp der i stedet for å fronte: standardrekkefølgen er STED før TID før ' +
+      'ÅRSAK: "Historien handler om noe som skjedde langt herfra (sted) for lenge siden (tid)." ' +
+      '"Jeg ble ferdig med søknaden innen fristen (tid) fordi du hjalp meg (årsak)."'
   },
 
   'svar-ja-jo-nei': {
@@ -933,14 +945,21 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '(no shift, presens stays), but "Alt er ok" + "Roger sa" → "Roger sa at alt var ok" ' +
       "(shift, matching the preteritum reporting verb). The reported clause's tense mirrors " +
       'whether the ORIGINAL statement is still true/current (no shift needed) or is being ' +
-      'reported purely as something said in the past (shift to match «sa»/«spurte»).',
+      'reported purely as something said in the past (shift to match «sa»/«spurte»). Besides a full ' +
+      '«at»/«om»-clause, Norwegian also marks that information is SECONDHAND (hearsay, not verified ' +
+      'firsthand) with «ifølge X» (according to X) placed before the clause, or with the modal ' +
+      'adverb «visstnok» inside it: "Ifølge far vil mor at vi skal male hytta" (according to father, ' +
+      'mother wants...), "Mor vil visstnok at vi skal male hytta" (mother apparently wants...). ' +
+      'Both can combine with an ordinary «at»-clause and behave like any other fronted adverbial or ' +
+      'setningsadverbial for word order.',
     explanationNb:
       'Norsk skiller mellom flere typer referert tale, avhengig av hva som refereres:\n\n' +
       '• **påstand** → «at»: "Det er kaldt ute." → "Han sier at det er kaldt ute."\n' +
       '• **ja/nei-spørsmål** → «om»: "Skal du ut?" → "Han spør om hun skal ut."\n' +
       '• **spørreordspørsmål** → beholder sitt eget spørreord i stedet for «om»: "Hvor bor du?" → "Han spør hvor hun bor."\n\n' +
       'Når spørreordet (hvem, hva, hvilken X) selv er SUBJEKTET i den innfelte setningen, setter norsk inn «som» rett etter: "Jeg vet ikke hvem som kommer i dag." "Han lurte på hva som hadde skjedd." Det legges ikke til «som» når spørreordet i stedet er OBJEKTET: "Jeg vet ikke hva han sier."\n\n' +
-      'Hvis SELVE GJENGIVELSESVERBET (sier/sa, spør/spurte) står i preteritum, flyttes vanligvis også tiden i den refererte setningen ett hakk bakover — presens → preteritum: "Alt er ok" + "Roger sier" → "Roger sier at alt er ok" (ingen forskyvning, presens forblir), men "Alt er ok" + "Roger sa" → "Roger sa at alt var ok" (forskyvning, samsvarer med preteritumsverbet). Tiden i den refererte setningen følger av om det opprinnelige utsagnet fortsatt gjelder/er aktuelt (ingen forskyvning nødvendig) eller om det bare refereres som noe som ble sagt i fortiden (forskyvning for å samsvare med «sa»/«spurte»).'
+      'Hvis SELVE GJENGIVELSESVERBET (sier/sa, spør/spurte) står i preteritum, flyttes vanligvis også tiden i den refererte setningen ett hakk bakover — presens → preteritum: "Alt er ok" + "Roger sier" → "Roger sier at alt er ok" (ingen forskyvning, presens forblir), men "Alt er ok" + "Roger sa" → "Roger sa at alt var ok" (forskyvning, samsvarer med preteritumsverbet). Tiden i den refererte setningen følger av om det opprinnelige utsagnet fortsatt gjelder/er aktuelt (ingen forskyvning nødvendig) eller om det bare refereres som noe som ble sagt i fortiden (forskyvning for å samsvare med «sa»/«spurte»).\n\n' +
+      'Utenom en hel «at»/«om»-setning markerer norsk også at informasjonen er ANDREHÅNDS (hørt fra andre, ikke bekreftet selv) med «ifølge X» (ifølge noen) foran setningen, eller med det modale adverbet «visstnok» inne i den: "Ifølge far vil mor at vi skal male hytta" (ifølge det far sier, vil mor ...), "Mor vil visstnok at vi skal male hytta" (mor vil visstnok/antakelig ...). Begge kan kombineres med en vanlig «at»-setning og oppfører seg som ethvert annet fundamentplassert adverbial eller setningsadverbial i ordstillingen.'
   },
 
   'synes-tror': {
@@ -2054,13 +2073,18 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'perfektum partisipp in the main clause: "Hvis jeg hadde vunnet i Lotto, ville jeg (ha) reist ' +
       'jorda rundt" — «hvis» can also be dropped with inversion: "Hadde jeg vunnet ..., ville jeg ..." ' +
       'The related wish constructions «skulle ønske (at) + preteritum/preteritum perfektum» and ' +
-      '«tenk om + preteritum/preteritum perfektum/presens» use the same tense logic.',
+      '«tenk om + preteritum/preteritum perfektum/presens» use the same tense logic. «Hvis» can be ' +
+      'dropped with subject/verb inversion in a REAL, presens condition too, not just the ' +
+      'counterfactual branches above: "Hvis du drar nå, kan jeg ikke hjelpe deg" → "Drar du nå, kan ' +
+      'jeg ikke hjelpe deg." The main clause stays presens throughout, unlike the ville/skulle main ' +
+      'clause used with the hypothetical and counterfactual branches.',
     explanationNb:
       'Betingelsessetninger gradbøyes etter hvor (u)virkelig betingelsen er:\n\n' +
       '• **reell framtidig mulighet** = presens gjennomgående: "Hvis jeg vinner i Lotto, reiser jeg jorda rundt."\n' +
       '• **usannsynlig nåtidig/framtidig hypotetisk tilfelle** = preteritum i hvis-setningen og ville/skulle + infinitiv i hovedsetningen: "Hvis jeg vant i Lotto, ville jeg reise jorda rundt."\n' +
       '• **uoppfylt fortidig tilfelle** = preteritum perfektum i hvis-setningen og ville (ha)/skulle (ha) + perfektum partisipp i hovedsetningen: "Hvis jeg hadde vunnet i Lotto, ville jeg (ha) reist jorda rundt" — «hvis» kan også sløyfes med inversjon: "Hadde jeg vunnet ..., ville jeg ..."\n\n' +
-      'De beslæktede ønskeuttrykkene «skulle ønske (at) + preteritum/preteritum perfektum» og «tenk om + preteritum/preteritum perfektum/presens» følger samme tempuslogikk.'
+      'De beslæktede ønskeuttrykkene «skulle ønske (at) + preteritum/preteritum perfektum» og «tenk om + preteritum/preteritum perfektum/presens» følger samme tempuslogikk.\n\n' +
+      '«Hvis» kan sløyfes med subjekt/verb-inversjon også i en REELL presens-betingelse, ikke bare i de kontrafaktiske variantene over: "Hvis du drar nå, kan jeg ikke hjelpe deg" → "Drar du nå, kan jeg ikke hjelpe deg." Hovedsetningen forblir presens gjennomgående, ulikt ville/skulle-hovedsetningen som brukes i de hypotetiske og kontrafaktiske variantene.'
   },
 
   'stedsadverb-statisk-dynamisk': {
