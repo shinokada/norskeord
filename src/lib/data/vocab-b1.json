@@ -22354,7 +22354,7 @@
     "example_ukrainian": "На фермі вони тримали корів, курей і вирощували овочі в городі.",
     "example_spanish": "En la granja tenían vacas, gallinas y verduras en el huerto.",
     "example_german": "Auf dem Bauernhof hielten sie Kühe, Hühner und züchteten Gemüse im Garten.",
-    "definition": "landeiendom (ofte med dyr og f.eks. frukt- og grønnsakproduksjon)",
+    "definition": "landeiendom (ofte med dyr og f.eks. frukt- og grønnsaksproduksjon)",
     "level": "B1",
     "category": "sustainability",
     "part": "noun"
@@ -24392,24 +24392,6 @@
     "level": "B1",
     "category": "workplace",
     "part": "adjective"
-  },
-  {
-    "id": "v-b1-technology-030",
-    "norsk": "høyttaler (en)",
-    "lemma": "høyttaler",
-    "english": "speaker, loudspeaker",
-    "ukrainian": "гучномовець, динамік",
-    "spanish": "altavoz, parlante",
-    "german": "Lautsprecher",
-    "example": "Høyttaleren på telefonen hans var ødelagt, så han hørte ingenting.",
-    "example_english": "The speaker on his phone was broken, so he could not hear anything.",
-    "example_ukrainian": "Динамік на його телефоні був зламаний, тому він нічого не чув.",
-    "example_spanish": "El altavoz de su teléfono estaba roto, así que no oía nada.",
-    "example_german": "Der Lautsprecher seines Telefons war kaputt, deshalb hörte er nichts.",
-    "definition": "elektrisk apparat hvor det kommer ut lyd (f.eks. musikk)",
-    "level": "B1",
-    "category": "technology",
-    "part": "noun"
   },
   {
     "id": "v-b1-mental-wellbeing-061",

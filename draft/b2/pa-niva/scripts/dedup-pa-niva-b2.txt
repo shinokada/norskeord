@@ -1,0 +1,46 @@
+Loading existing terms from 15 files:
+  - norske_metaforiske_uttrykk_B1_B2.json
+  - uttrykk-a1-preview.json
+  - uttrykk-a1.json
+  - uttrykk-a2-preview.json
+  - uttrykk-a2.json
+  - uttrykk-b1-preview.json
+  - uttrykk-b1.json
+  - uttrykk-b2-preview.json
+  - uttrykk-b2.json
+  - uttrykk-c.json
+  - vocab-a1.json
+  - vocab-a2.json
+  - vocab-b1.json
+  - vocab-b2.json
+  - vocab-c.json
+
+Total candidates (raw)          : 151
+No raw_term (needs manual term) : 4
+With raw_term                   : 147
+Unique candidates (by norm key)  : 145
+Already in vocab/uttrykk (dup)   : 40
+Near-duplicate (needs review)    : 3
+New candidates                   : 102
+
+New candidates per section:
+  15 PARSETNINGER: MODALE UTTRYKKSMÅTER: 8
+  10 80 PARSETNINGER: 66
+  17 PARSETNINGER: 10
+  12 FASTE UTTRYKK: 4
+  24 HVILKET PARTIKKELVERB?: 1
+  25 ET AVSLAG – Å AVSLÅ: 2
+  26 PARTIKKEL OG PARTISIPP: 4
+  13 ORDLAGING AV PARTIKKELVERB: 7
+
+Duplicate candidates per section:
+  10 80 PARSETNINGER: 14
+  24 HVILKET PARTIKKELVERB?: 13
+  25 ET AVSLAG – Å AVSLÅ: 11
+  26 PARTIKKEL OG PARTISIPP: 1
+  13 ORDLAGING AV PARTIKKELVERB: 1
+
+Wrote /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/pa-niva/data/candidates-new.json (102 entries)
+Wrote /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/pa-niva/data/candidates-duplicate.json (40 entries)
+Wrote /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/pa-niva/data/candidates-near-duplicate.json (3 entries)
+Wrote /Users/shinichiokada/Svelte/svelte-languages/norskeord/draft/b2/pa-niva/data/candidates-no-term.json (4 entries)

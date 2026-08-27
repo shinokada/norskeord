@@ -2135,5 +2135,53 @@ Turister kan bare bruke håndholdt redskap. Det vil for eksempel si fiskestang. 
 
 Turister har ikke lov til å selge fangsten sin. De kan bare fiske til eget bruk, og de kan bare ta med 15 kilo fisk per person ut av Norge. Turister har også lov til å ta med en troféfisk, men den må være hel, for ellers teller den som en del av kvoten på 15 kilo.
 
-For en del fiskearter har myndighetene bestemt et minstemål for å beskytte bestandene. For turister er det forbudt å fange fisk som ikke oppfyller minstemålet. For eksempel skal torsk, nord for 62. breddegrad, være over 44 centimeter. Sør for 62. breddegrad må den være over 40
+For en del fiskearter har myndighetene bestemt et minstemål for å beskytte bestandene. For turister er det forbudt å fange fisk som ikke oppfyller minstemålet. For eksempel skal torsk, nord for 62. breddegrad, være over 44 centimeter. Sør for 62. breddegrad må den være over 40 centimeter. Hvis fisken ikke er stor nok til å fanges, skal den settes varsomt tilbake i vannet.
+
+Noen fiskearter er delvis fredet, slik som kveite. Den kan man bare fange visse tider av året. Andre er totalfredet, slik som for eksempel pigghå, ål og brugde. Disse fiskeartene skal alltid settes tilbake i vannet om man får dem på kroken.
+
+Turister som ikke følger reglene, kan bøtelegges. I tillegg vil de få inndratt det de har fanget for mye.
+
+#### 10 INNLEDNING ELLER AVSLUTNING?
+
+| | |
+| --- | --- |
+| 1 | I denne teksten vil jeg ta for meg studiefinansieringen i Norge: Er den for god, eller bør den tvert imot bli bedre? |
+| | Vanligvis får man behandling på et sykehus eller hos en lege, ofte med medisiner, hvis man blir syk. Slik behandling finansieres i stor grad av offentlige midler. Men mange mener at man også kan bli frisk av å bruke alternative behandlingsmåter. Det kan for eksempel være akupunktur, fotsoneterapi eller homøopati. Utgifter til slik behandling blir imidlertid ikke refundert av det offentlige. |
+| 2 | Slik jeg ser det, er det altså god grunn til å si at Internett kan bidra til en mer demokratisk verden. Jo mer orientert vi mennesker blir om hva som skjer rundt oss, jo større forståelse får vi, forhåpentligvis, for den situasjonen andre befinner seg i. |
+| 1 | Dessverre opplever mange av oss å få en eller annen psykisk sykdom i løpet av livet. Da kan man ha behov for å søke profesjonell hjelp, for eksempel psykolog. Mange av oss vil ønske å snakke med en psykolog av samme kjønn som en selv. Da kan det være et problem at det nå nesten bare er kvinnelige studenter på psykologistudiet. |
+| 2 | Jeg synes altså ikke at det er grunnlag for å hevde at fengselsstraffene i Norge bør bli strengere. Selve lengden på fengselsstraffen er ikke en garanti for at lovbryteren blir rehabilitert og kan komme tilbake til samfunnet. |
+| 2 | Etter min mening kan det ikke være tvil om at språksituasjonen i Norge hadde blitt enklere hvis det bare hadde vært ett skriftspråk her til lands. Hvis jeg hadde fått bestemme, hadde ikke ett av skriftspråkene blitt avskaffet. I stedet hadde det blitt laget et nytt skriftspråk med utgangspunkt i både nynorsk og bokmål. På den måten kunne alle ha blitt fornøyd. |
+| 1 | På grunn av medisinske framskritt har gjennomsnittlig levealder økt i moderne tid, og folk blir fortsatt stadig eldre. Det betyr at eldre folk har en annen type sykdommer nå enn de hadde tidligere. Tidligere slet mange eldre med fysiske plager, men nå holder eldre folk seg i god form. Når de så blir syke, er det gjerne psykiske sykdommer som rammer dem, slik som for eksempel demens eller Alzheimer. |
+
+#### 11 2 + 1 (1)
+
+**Det bør innføres seks timers arbeidsdag.**
+
+| 2 argumenter for | 1 argument mot |
+| --- | --- |
+| Prosjekter med seks timers arbeidsdag i enkelte bedrifter viser at de ansatte blir mer effektive når de bare er på arbeid i seks timer hver dag. | Samfunnet trenger mer arbeidskraft, ikke mindre. |
+| Muligheten til å drive fritidsaktiviteter og til å tilbringe tid sammen med familie og venner er viktig for folks psykiske og fysiske helse. | |
+
+#### 13 ET ARGUMENT *FOR* EN SAK: BØR KARAKTERENE I ORDEN OG ATFERD FJERNES?
+
+som, mens, og, enn, når, eller, Samtidig, derfor, egentlig, om
+
+#### 14 ET ARGUMENT *MOT* EN SAK: BØR KARAKTERENE I ORDEN OG ATFERD FJERNES?
+
+Selv om, som, om, eller, Faktisk, som, som, og, der, og
+
+#### 15 TEST DEG SELV: HVA VET DU OM FORSKJELLIGE TEKSTTYPER?
+
+1) Møtereferat.
+2) For eksempel humor, ironi, følelser og en subjektiv framstilling.
+3) En annonse.
+4) Veiledning eller instruksjon.
+5) Alfakrøll.
+6) Avsenderens adresse.
+7) Curriculum Vitae.
+8) Med vennlig hilsen.
+9) Korte.
+10) En anmeldelse.
+11) Bevis.
+12) Innledning, hoveddel og avslutning.
 

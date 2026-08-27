@@ -1,4 +1,38 @@
+---
+title: På Nivå Arbeidsbok B2
+author: Gølin Kaurin Nilsen
+subTitle: Grammatikk i Norsk som andrespråk. Besert på det felles Europeiske rammeverket for språk (CEFR)
+---
+
 # På Nivå Arbeidsbok B2
+
+## IKONER
+
+I teoribøkene og arbeidsbøkene kan du finne følgende ikoner:
+
+**✏️ (penn)**
+Dette ikonet finner du i kapitlene om tekster i *teoribøkene*: Læringsmålet i Læreplanen er at du skal kunne **skrive** slike tekster.
+
+**👤 (person)**
+Dette ikonet finner du i kapitlene om tekster i *teoribøkene*: Læringsmålet i Læreplanen er at du skal kunne **lese** og **forstå** slike tekster.
+
+**👂 (øre)**
+Dette ikonet viser at stoffet finnes som lydfil på verkets hjemmeside.
+
+**❗ (utropstegn)**
+Dette ikonet finner du både i teoribøkene og i arbeidsbøkene sammen med tips til praktiske huskeregler om grammatikk.
+
+**❓ (spørsmålstegn med piler)**
+Dette ikonet finner du en del steder i *teoribøkene* sammen med spørsmål som hjelper deg med å sammenlikne morsmålet ditt (eller andre språk du kan) med norsk. Noen ganger kan sammenlikning av språk gjøre det lettere å forstå og huske grammatiske regler.
+
+**🦉 (ugle)**
+Sammen med dette ikonet finner du kommentarer som går litt videre enn resten av teorien i teoribøkene. Det kan for eksempel være en forklaring som du ikke trenger å kunne, men som gjør det lettere å huske hvorfor noe er som det er på norsk.
+
+**B (bok)**
+Dette ikonet betyr at du kan lese mer om temaet i enten A1/A2- eller B1/B2-teoriboka (A eller B). Sidetallet viser hvor i boka du skal slå opp.
+
+**A-Å (bok)**
+Noen steder i B1/B2-boka kan en ordforklaring være til hjelp for å forstå et grammatisk begrep.
 
 ## INNHOLD
 
