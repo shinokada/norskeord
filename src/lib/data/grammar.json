@@ -20028,6 +20028,109 @@
     "hint": "Sjekk om ordet allerede har et prefiks, slik at et ekstra prefiks blir feil."
   },
   {
+    "id": "gq-motpre-012",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen til det motsatte ved å bruke prefikset «u-».",
+    "source": "Det var rent hell at de fant nøkkelen igjen.",
+    "answer": "Det var rent uhell at de fant nøkkelen igjen.",
+    "hint": "«u-»: hell → uhell."
+  },
+  {
+    "id": "gq-motpre-013",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen til det motsatte ved å bruke prefikset «u-».",
+    "source": "Laget vant kampen på ren flaks.",
+    "answer": "Laget tapte kampen på ren uflaks.",
+    "hint": "«u-»: flaks → uflaks."
+  },
+  {
+    "id": "gq-motpre-014",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form med prefiks.",
+    "sentence": "Soppen så fin ut, men den var faktisk helt _____.",
+    "words": ["uspiselig", "misspiselig", "vanspiselig"],
+    "answer": "uspiselig",
+    "hint": "«u-»: spiselig → uspiselig."
+  },
+  {
+    "id": "gq-motpre-015",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen slik at journalisten forsto uttalelsen feil.",
+    "source": "Journalisten tolket uttalelsen riktig.",
+    "answer": "Journalisten mistolket uttalelsen.",
+    "hint": "«mis-»: tolke → mistolke."
+  },
+  {
+    "id": "gq-motpre-016",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen slik at hun forsto beskjeden feil.",
+    "source": "Hun oppfattet beskjeden korrekt.",
+    "answer": "Hun misoppfattet beskjeden.",
+    "hint": "«mis-»: oppfatte → misoppfatte."
+  },
+  {
+    "id": "gq-motpre-017",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Filmen fikk dårlig kritikk fordi den ble sett på som et helt _____ prosjekt. Velg riktig setning.",
+    "options": ["Filmen fikk dårlig kritikk fordi den ble sett på som et helt mislykket prosjekt.", "Filmen fikk dårlig kritikk fordi den ble sett på som et helt umislykket prosjekt.", "Filmen fikk dårlig kritikk fordi den ble sett på som et helt vanlykket prosjekt."],
+    "answer": "Filmen fikk dårlig kritikk fordi den ble sett på som et helt mislykket prosjekt.",
+    "hint": "Adjektivet dannes med «mis-»: lykket → mislykket, uten noe ekstra prefiks foran."
+  },
+  {
+    "id": "gq-motpre-018",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen til det motsatte ved å bruke prefikset «u-».",
+    "source": "Hun var heldig og vant hovedpremien i lotteriet.",
+    "answer": "Hun var uheldig og tapte alt i lotteriet.",
+    "hint": "«u-»: heldig → uheldig."
+  },
+  {
+    "id": "gq-motpre-019",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form med prefiks.",
+    "sentence": "Nye medarbeidere _____ ofte instruksjonene den første uken, før de blir kjent med rutinene.",
+    "words": ["misforstår", "uforstår", "vanforstår"],
+    "answer": "misforstår",
+    "hint": "«mis-»: forstå → misforstå (presens: misforstår)."
+  },
+  {
+    "id": "gq-motpre-020",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen til det motsatte ved å bruke det faste prefikset «van-».",
+    "source": "Foreldrene tok godt vare på hagen gjennom hele sommeren.",
+    "answer": "Foreldrene vanskjøttet hagen gjennom hele sommeren.",
+    "hint": "«van-» finnes i faste former som «vanskjøtte» (motsatt av å ta godt vare på noe)."
+  },
+  {
+    "id": "gq-motpre-021",
+    "topic": "motsetning-prefiks",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Barnet ble vanskjøttet av foreldrene i flere år før naboene varslet barnevernet.",
+    "optionB": "Barnet ble uskjøttet av foreldrene i flere år før naboene varslet barnevernet.",
+    "answer": "A",
+    "explanation": "«Vanskjøtte» er en fast form med prefikset «van-». Verbet «skjøtte» finnes ikke sammen med prefikset «u-».",
+    "hint": "Sjekk hvilket prefiks som faktisk finnes sammen med dette bestemte verbet."
+  },
+  {
     "id": "gq-avled-037",
     "topic": "ordfamilie-avledning",
     "cefr": "B2",

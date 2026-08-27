@@ -670,3 +670,16 @@ highest-value touch (grows a 2-question topic), fully direct-match, zero groundw
   22 B2 questions; `check-grammar-norwegian.mjs sammensatte-substantiv-b2` → 0 flagged across all
   22 questions. Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2600
   total questions file-wide, no duplicate IDs.
+- ✅ **Done — `motsetning-prefiks`** (Avledninger §2, «Hva er det motsatte?» — forming opposites
+  with u-/mis-/van- prefixes). Confirmed direct match against the existing rule text (all three
+  prefixes already covered, no rule-text gap). Added 10 new B2 questions (`gq-motpre-012`–
+  `gq-motpre-021`: transform/fill/multiple-choice/minimal-pair mix) using fresh vocabulary beyond
+  the existing set — hell/uhell, flaks/uflaks, spiselig/uspiselig, tolke/mistolke,
+  oppfatte/misoppfatte, lykket/mislykket (adjective form), heldig/uheldig, misforstår (fresh
+  tense/context) — plus, notably, the topic's first-ever questions using the «van-» prefix
+  (vanskjøtte, mentioned in the rule text but previously unquizzed): one transform and one
+  minimal-pair (correct «vanskjøttet» vs. the wrong prefix «uskjøttet»). Topic now has 21 total
+  questions (11 → 21, all B2). Validated: `check-b2-grammar-vocab.mjs motsetning-prefiks` → 0
+  unmatched across 21 B2 questions; `check-grammar-norwegian.mjs motsetning-prefiks` → 0 flagged
+  across all 21 questions. Applied to the real `grammar.json` via `Filesystem:edit_file`,
+  re-verified: 2610 total questions file-wide, no duplicate IDs.
