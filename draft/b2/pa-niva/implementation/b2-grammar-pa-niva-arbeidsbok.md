@@ -646,3 +646,27 @@ highest-value touch (grows a 2-question topic), fully direct-match, zero groundw
   `check-grammar-norwegian.mjs stedsadverb-statisk-dynamisk` → 0 flagged across all 30 questions.
   Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2580 total questions
   file-wide, no duplicate IDs.
+- ✅ **Done — `adjektiv-eller-adverb`** (Adverb §1, «Sjuende far i huset» fable text — spotting
+  adjective vs. adverb forms). Confirmed direct match against the existing rule text (sikker/
+  sikkert, god/godt contrast already fully covered, no rule-text gap). Added 10 new B2 questions
+  (`gq-adjadv-033`–`gq-adjadv-042`: fill/minimal-pair/multiple-choice/transform/order mix) using
+  fresh adjective/adverb pairs beyond the existing sikker-heavy set — god/godt, pen/pent, høy/høyt,
+  klar/klart, vakker/vakre, rar/rart, gal/galt — with fresh characters/scenarios (Ingrid, koret,
+  journalisten, etc.), not the book's own fable text. Topic now has 42 total questions (32 → 42;
+  11 B2 → 21 B2). Validated: `check-b2-grammar-vocab.mjs adjektiv-eller-adverb` → 0 unmatched
+  across 21 B2 questions; `check-grammar-norwegian.mjs adjektiv-eller-adverb` → 0 flagged across
+  all 42 questions. Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified:
+  2590 total questions file-wide, no duplicate IDs.
+- ✅ **Done — `sammensatte-substantiv-b2`** (Sammensatte ord §1–3, 7–8 — forledd/etterledd,
+  fugeformativ regler, ett/to ord). Confirmed direct match against the existing rule text (bindings-s
+  after -sjon/-else/-skap/-het/-dom/-tet/-ing/-ning, bindings-e after short person/animal words, no
+  binding otherwise, plus the adjective+noun-vs-fused-compound distinction — all already covered, no
+  rule-text gap). Added 10 new B2 questions (`gq-samset2-013`–`gq-samset2-022`: transform/fill/
+  multiple-choice/minimal-pair mix) using fresh compound pairs beyond the existing set —
+  diskusjonsgrunnlag, barndomsminne, kvalitetskontroll, søvnløshetsproblem, kattemat, kvinneavdeling,
+  sofabordet, stuevindu, plus a new storby/stor-by minimal-pair pair (fixed-term vs. literal-size
+  contrast, same structure as the existing brunost pair). Topic now has 22 total questions (12 → 22,
+  all B2). Validated: `check-b2-grammar-vocab.mjs sammensatte-substantiv-b2` → 0 unmatched across
+  22 B2 questions; `check-grammar-norwegian.mjs sammensatte-substantiv-b2` → 0 flagged across all
+  22 questions. Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2600
+  total questions file-wide, no duplicate IDs.
