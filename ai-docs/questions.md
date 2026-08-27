@@ -24,73 +24,96 @@ I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should b
 
 I have added the path, /Users/shinichiokada/Svelte to Filesystem so you should be able to access /Users/shinichiokada/Svelte/svelte-languages/norskeord. 
 
-I created draft/b2/pa-niva/implementation/b2-vocab-uttrykk-pa-niva-arbeidsbok.md. 
 
-The following is from a previous session. Can you continue where you left?
+Please read through draft/pa-niva/implementation/b2-grammar-pa-niva-arbeidsbok.md. You can find src/lib/data/grammar.json for grammar related json files.
+Please update draft/pa-niva/implementation/b2-grammar-pa-niva-arbeidsbok.md when you finish one item and update the track progress.
 
-CLAUDE: Written to `draft/b2/pa-niva/implementation/b2-grammar-pa-niva-arbeidsbok.md`. It's a skeleton mirroring the B1 doc's structure: overview, copyright/vocab/question-type conventions, the book's own kapittel/subsection table of contents (from the actual TOC I pulled), a division-of-labor note against the vocab/uttrykk plan (grammar mechanics here vs. idiom/paraphrase sections there), cross-checks against existing B2 topics and the B1 plan's shared topic IDs, and the same 5-step process. Phase 1 (chapter-by-chapter triage) is explicitly marked **not started**, with "Next session starting point" pointing at Kapittel 1 → Substantiv first, in TOC order. ME: I just added data and scripts directories under pa-niva directory for future use. I'd like to start b2-vocab-uttrykk-pa-niva-arbeidsbok.md first. Is the first step "1. Why this source is fundamentally different from the B1 "Opp og fram" extraction"?Can you add to Step 1,2,etc. and mention to add ✅  Done to show the progress in case of session termination? CLAUDE: No — §1 and §2 are background/context (already done in the last session: source analysis and in-scope/out-of-scope triage). The actual first *actionable* step is what's currently tucked away at the bottom in §8: writing and dry-running `scripts/extract-pa-niva-b2.mjs`. I'll restructure the doc so that's obvious, and add a progress tracker plus status tags on each section so a session cutoff doesn't lose the thread.Diff looks right — applying for real.
 
-Me: Continue.
+CLAUDE: Found it — it's `draft/b2/pa-niva`, not `draft/pa-niva`.Now let me read the plan doc to see current state and find Kapittel 3.Kapittel 3 spans lines 4495–5849. Let me view it along with its section headers.Good, Kapittel 3 fasit spans lines 1392–1883. Now let's read the SETNINGSLEDD subsection in both files.It's `cefr` not `level`. Let me get the full B2 topic list.Now the fasit for HELSETNINGER:There's a `grammar` directory - that's likely where rules.ts lives now.Here's where I've gotten to on Kapittel 3 triage before hitting the tool limit — I'll finish the writeup and save it to the doc next turn.
 
-CLAUDE: Found it — it's in the repo-root `scripts/`, not under the B1 draft folder. Let me look at it plus the source files' structure before writing the extraction script.uploads is read-only. Let me write output to /home/claude instead.All 7 FASTE UTTRYKK entries now match correctly. Let me spot-check the paraphrase candidates too.Excellent, these reconstruct cleanly. The extraction logic is solid. Now let me write the finalized script into the real repo and produce the real output file there.Now let me build the final script with real repo paths and write it, plus write the candidate output files.Good, that matches the B1 convention (`scripts/` at repo root, output under `draft/.../data/`). Let's verify it's syntactically correct, then write it to the real repo.This looks good. Now writing it to the real repo, plus the candidate output files (already validated identical content via the sandbox run).Now writing this to the repo's `scripts/` directory:Now write the candidate output files (already generated and verified in the sandbox run):Now writing both output files to the real repo's `draft/b2/pa-niva/data/` directory:Here's where things stand:
+**SETNINGSLEDD (10 exercises)** — no existing topic covers sentence-element identification/labeling (subjekt/verbal/objekt/indirekte objekt/predikativ, NP-building with determiners+adjectives, full sentence analysis). This looks like a genuine **🆕 new topic** — nothing in the 39-topic B2 list or cross-level list touches this skill. Exercises 6 (NP-building) and 10 (full sentence-field analysis) might split into their own touch or fold together.
 
-**Done this session:**
-- Wrote `scripts/extract-pa-niva-b2.mjs` — parses `arbeidsbok-b2.md` + `arbeidsbok-b2-fasit.md` in parallel and reconstructs candidates from two section types:
-  - **paraphrase** (numbered A/B reconstruction): `15 PARSETNINGER: MODALE UTTRYKKSMÅTER`, `10 80 PARSETNINGER`, `17 PARSETNINGER` → 98 candidates
-  - **faste-uttrykk** (lettered sentences + "Oversett" idiom templates): `12 FASTE UTTRYKK` → 7 candidates, all matched cleanly
-- Total: **105 candidates, 0 flagged needs_review**. Wrote `draft/b2/pa-niva/data/candidates-raw.json`.
-- Tested the logic against copies of the real source files before writing anything, so the output is verified, not speculative.
+**HELSETNINGER (17 exercises)** — mostly reuse, better than expected:
+- §2–4 (utbrytning/cleft: subject, object, adverbial) → 🔁 `det-formelt-subjekt` — its rule text *already* explicitly covers the "Det er/var X som…" cleft pattern
+- §6–9 (det+existential, det+passive, inversion, det-setninger grammaticality) → 🔁 `det-formelt-subjekt` / `det-referanse`
+- §10 (spørreord/question words) → 🆕 candidate — no existing topic
+- §11 (setningsskjema) → same skill as Setningsledd §10, likely merges with that new topic
+- §12 (sluttfelt sted/tid/årsak ordering) → 🔁 `adverbial-fronting` or `setningsadverbial`, needs a closer look
+- §13 (trykktungt det) → 🆕 small candidate, or fold into `det-referanse`
+- §14–16 (trykklett pronomen + ikke-placement combo) → 🔀 `ikke-placement` (currently A2/B1) extend to B2, absorbing `pronomen-objektsform` (A1) as supporting skill
+- §17 (imperativsetninger, incl. negative imperative) → 🔀 `imperativ` (currently A1 only) extend to B2
+- §1 (kulturelle uttrykk / Amanda-prisen word-order scramble) → ⏭️ skip, likely vocab-plan territory (cultural reading text)
 
-**Found and need your input on:**
-- `17 SAMMENSATTE VERB` — the plan's §2 listed this as a particle-verb section, but it's actually about compound **tense** mechanics (verb1/verb2 auxiliary structure), not particle verbs. I excluded it rather than extract garbage.
-- The other particle-verb sections (`24 HVILKET PARTIKKELVERB?`, `25 ET AVSLAG`, `26 PARTIKKEL OG PARTISIPP`, `27 LØST ELLER FAST SAMMENSATT PARTIKKELVERB?`, `13 ORDLAGING AV PARTIKKELVERB`) each have a different, less regular format (checkbox sentences, fill-in text) that needs per-item verb identification rather than a generic parser. I left these unimplemented and logged them in `draft/b2/pa-niva/data/sections-skipped.json` with reasons, rather than guess.
+**Still to do:** LEDDSETNINGER (20 exercises, not yet read) — I was mid-way through checking `rules.ts` entries when I ran out of tool calls this turn. 
 
-**Not yet done:** I haven't updated the plan doc's progress tracker or Step 1 status yet — want me to mark it ✅ Done with these results and note the particle-verb sections as a follow-up sub-step?
+Want me to continue with LEDDSETNINGER now?
 
-ME: I can't find `draft/b2/pa-niva/data/sections-skipped.json`.
+ME: Continue
 
-CLAUDE: You're right — I generated it in my sandbox but only wrote `candidates-raw.json` to the real repo. Let me fix that now.
+CLAUDE: Now let's read the LEDDSETNINGER fasit for confirmation of specifics.Now let me write the Kapittel 3 findings into the doc.Kapittel 3 (Setninger) triage is done and logged. Summary:
 
-ME: Continue.
+- **Setningsledd** — mostly a genuinely new skill: sentence-element identification/labeling (subjekt/verbal/objekt/predikativ/adverbial, NP-building, full-sentence analysis). Proposed a new topic, **`setningsledd-identifikasjon`**. Only §8–9 map to existing topics (`adverbial-fronting`/`setningsadverbial`, `v2-word-order`).
+- **Helsetninger** — reuses far more than expected: §2–9 (utbrytning/cleft + all the "det" exercises) all map directly onto `det-formelt-subjekt`, since that topic's rule text already describes the exact "Det er/var X som…" construction. §14–17 extend `ikke-placement` and `imperativ` to B2. §10–13 are smaller open items (spørreord, setningsskjema, sluttfelt ordering, trykktungt det).
+- **Leddsetninger** — also reuses heavily: reported speech (§3–6, 16) → `indirekte-tale-at-om`; relative clauses (§7) → `relative-som` (great chance to grow this 2-question topic); §9–11 extend `hypotetiske-betingelsessetninger`/`subordinate-order`/`v2-word-order`; §13–14 → `adverbial-fronting`; §15 → `kommaregler`; §18–19 are exact-name matches (`derfor-fordi`, `motsetning-selv-om-likevel`). §1, 2, 12, 17 fold into the new `setningsledd-identifikasjon` topic; §20 (mens/samtidig) is a small leftover.
 
-CLAUDE: It's already there — must have been written before the session ended. Let me verify its contents and check the plan doc's progress tracker state.Good — it's already on disk, matching what was described. Now let's check the plan doc's progress tracker to see if it needs updating.Confirmed: `extract-pa-niva-b2.mjs` and both data files are already in the real repo. Step 1's work is actually done — the tracker just hasn't caught up. Let me verify the candidates file quickly, then update the plan doc.Progress tracker updated — Step 1 was already actually done and just needed marking. Everything from last session (script, `candidates-raw.json`, `sections-skipped.json`) is confirmed on disk in the real repo.
+Only **Kapittel 4** (Tekster og tekstbinding) remains untriaged. Want me to continue Phase 1 into Kapittel 4, or switch to Phase 2 content-writing on the many direct-match topics already surfaced across Kapittel 1–3?
 
-**Next step:** Step 2 — dedup the 105 candidates against all existing `vocab-*.json`/`uttrykk-*.json` files. One open call first:
+ME: Can you update the doc?
 
-The 5 particle-verb sections need a different extraction approach (not yet written). Should I:
-- **(a)** Dedup the 105 now, handle particle-verbs as a later sub-step, or
-- **(b)** Write particle-verb extraction first, dedup everything together?
+CLAUDE: The doc is already fully updated with Kapittel 3 — I can see the Kapittel 3 section and the revised "Next session starting point" both landed correctly in the last edit. There's just one leftover stale line in the Process section that still says "Kapittel 3–4 not yet triaged." Let me fix that so the status line is consistent.Done — the doc now fully reflects Kapittel 1–3 as triaged, with only Kapittel 4 (Tekster og tekstbinding) left open, and the stale "Kapittel 3–4 not yet triaged" line in the Process section is fixed to match.
 
-ME: Let's do (b) Write particle-verb extraction first, dedup everything together.
+ME: Continue and update the doc when it is done.
 
-CLAUDE: Good, I now have all 4 formats + their fasit pairings. Let me check the existing script's structure before extending it.Good. Let me draft the extended script in the sandbox first, test it against the copied source files, then write the verified version to the real repo.All 5 new sections parsed cleanly with expected counts (14, 15, 5, 4, 8). Let's spot-check the actual output for correctness before writing to the real repo.All 5 new types check out correctly against the source text. Now writing the verified files to the real repo.Now let's copy the verified output files to the real repo.Now update `sections-skipped.json` (now only the one truly-excluded section) and the plan doc's progress tracker.Now let's verify the real repo script runs correctly against the real files too, as a final sanity check.56288 bytes — matches the sandbox-verified file exactly. Now updating the plan doc's progress tracker and Step 1 detail.Done. Summary:
+CLAUDE: Kapittel 4 spans lines 5849–6774. Let's read TEKSTBINDING first (5849–6317).Now let's append the Kapittel 4 findings and rewrite the "Next session starting point" as a full Phase 2 kickoff pointer.Kapittel 4 (Tekster og tekstbinding) triage is done and the doc is fully updated. Summary:
 
-**Extended `scripts/extract-pa-niva-b2.mjs`** with 5 new parsers for the particle-verb sections, tested in a sandbox against copies of the real source files before writing anything:
+- **Tekstbinding** turned out to be almost entirely reuse of the connective-toolkit topics already grown across Kapittel 1–3 (`arsak-og-folge-uttrykk`, `kontrast-uttrykk`, `derfor-fordi`, `motsetning-selv-om-likevel`, `subjunksjon-oversikt`, `indirekte-tale-at-om`, `hypotetiske-betingelsessetninger`, `tidssekvens-etter-at-etterpaa`) — no new topics needed, just a few small rule-text gaps (a hearsay-marking nuance for "ifølge"/"visstnok" in `indirekte-tale-at-om`, and a second confirmation of the real-condition-inversion gap in `hypotetiske-betingelsessetninger` first flagged in Kapittel 3).
+- **Tekster** is almost entirely reading-comprehension/genre-recognition/vocabulary content — out of scope for this grammar plan, with only §13–14 (connector fill-ins) overlapping.
 
-| Section                       | Type             | Count                        |
-| ----------------------------- | ---------------- | ---------------------------- |
-| 24 HVILKET PARTIKKELVERB?     | explain-list     | 14                           |
-| 25 ET AVSLAG – Å AVSLÅ        | table            | 15                           |
-| 26 PARTIKKEL OG PARTISIPP     | partisipp        | 5                            |
-| 27 LØST/FAST PARTIKKELVERB?   | correction pairs | 4 (all flagged needs_review) |
-| 13 ORDLAGING AV PARTIKKELVERB | nominalization   | 8                            |
+**Phase 1 is now fully complete across all four kapittel.** The doc's "Next session starting point" now lays out a short pre-Phase-2 checklist (confirm 🆕 candidates against `rules.ts`, decide question-type for `setningsledd-identifikasjon`, make the flagged rule-text additions) followed by a long list of direct-match topics ready for Phase 2 content-writing with no further groundwork needed.
 
-Only `17 SAMMENSATTE VERB` stays excluded (it's compound tense, not particle verbs).
+Want me to start on that pre-Phase-2 checklist now (checking the `rules.ts` entries for the new-topic candidates), or jump straight into Phase 2 content-writing on one of the highest-confidence direct-match topics?
 
-**Total: 151 candidates** (105 from before + 46 new), written to `candidates-raw.json`. Plan doc's progress tracker and Step 1 detail updated with a breakdown table and per-parser notes.
+ME: Yes please.
 
-The 4 `needs_review` items from §27 are sentence pairs (e.g. "Har du oppsagt..." → "Har du sagt opp...") where pinning down the exact fast/løst verb pair is a judgment call I left for you rather than guessed.
+CLAUDE: Let me check the specific candidates one by one, starting with the Kapittel 1 new-topic candidates.
 
-**Next: Step 2 — dedup** all 151 against the existing `vocab-*.json`/`uttrykk-*.json` files. Ready when you are.
+Found it. Now let me check the specific new-topic candidates against `rules.ts`, starting with the ones flagged in Kapittel 1.Now let me update the plan doc with the rules.ts confirmation findings, replacing the "Next session starting point" section.Doc updated. Summary of this session's work:
 
-ME: I have scripts/check-spelling.ts and I think it is a good idea to check spelling before finding duplicates. what do you think? Can you update the doc?
+**Pre-Phase-2 checklist — done.** I read `src/lib/grammar/rules.ts` in full and checked every 🆕/small candidate from Kapittel 1–4 against the actual rule text:
 
-CLAUDE: Good idea in principle — catching source typos before dedup matters, since a misspelled candidate won't normalize-match against existing entries and you'd get false "new" results.
+- **4 confirmed new topics** (nothing in rules.ts covers them): `setningsledd-identifikasjon`, `determinativ-forsterkere` (narrowed to egen/selv/eneste), `sammensatt-verbtid`, `adverb-gradboying`.
+- **6 candidates reclassified** from 🆕 to fold-into-existing once I read the actual rule text (not just topic titles) — e.g. `vaere-vs-bli` → `passiv-bli-s`, `verbalsubstantiv-person-sak` → `ordfamilie-avledning` (verbatim match), trykktungt det → `det-referanse` (exact example already there).
+- **3 genuine rule-text gaps** confirmed needing small additions before content-writing: real-condition inversion (`hypotetiske-betingelsessetninger`), hearsay-marking ifølge/visstnok (`indirekte-tale-at-om`), sluttfelt sted→tid→årsak ordering.
+- **4 small items** resolved by folding into existing planned extensions with no groundwork needed.
+- **Question-type decision** made for `setningsledd-identifikasjon`.
 
-One wrinkle: `check-spelling.ts` currently reads production files (`vocab-{level}.json`/`uttrykk-{level}.json`) and checks fields named `norsk`/`lemma`/`example`/etc. Your candidates are in `candidates-raw.json` with a different shape (`raw_term`, not `norsk`).
+Doc now has a clear "Next session starting point" with a recommended first touch: `relative-som` (Leddsetninger §7) — smallest, zero groundwork, grows a 2-question topic.
 
-ME (Q&A): How should spell-check fit against candidates-raw.json?
-Write a small one-off variant script just for candidates-raw.json.
+Want me to continue now — either draft the three rule-text-gap additions, or start Phase 2 content-writing on `relative-som`?
+
+ME: draft the three rule-text-gap additions please.
+
+CLAUDE: Good — confirmed. Now let's check the fasit for the exact answer form.Now let's check Tekstbinding §7 (ifølge/visstnok) and §15 (real conditions) and Helsetninger §12 (sluttfelt).Now Tekstbinding §15 (real conditionals) and Helsetninger §12 (sluttfelt).Excellent, found the exact rule stated in the book itself: "sted før tid" og "tid før årsak". Let's read both sections fully.Now let's check Tekstbinding §15 for real-condition examples.Now I'll make the edit for the real-condition inversion addition.Now the hearsay-marking addition to `indirekte-tale-at-om`.Now the sluttfelt sted→tid→årsak ordering addition to `setningsadverbial`.This fits well here — it's about adverbial placement structurally. Let me add the sluttfelt ordering rule.Now let's verify the file is still syntactically valid by checking balanced braces/quotes with node, and update the plan doc's tracking.All three rule-text-gap additions are made directly in `rules.ts`. Let me update the plan doc's tracking.Let me clean up that small redundant sentence.Done. All three rule-text gaps are filled directly in `rules.ts`, grounded in the actual arbeidsbok/fasit examples:
+
+1. **`hypotetiske-betingelsessetninger`** — added the real (presens) condition + dropped-«hvis»-with-inversion case, using the exact Leddsetninger §9 sentence.
+2. **`indirekte-tale-at-om`** — added hearsay-marking with «ifølge X» / «visstnok», using the exact Tekstbinding §7 sentence.
+3. **`adverbial-fronting`** — added the sluttfelt sted→tid→årsak ordering rule (the book states this rule itself), using two Helsetninger §12 fasit examples.
+
+The plan doc now records exactly what was added and where, and confirms no groundwork remains before Phase 2. Ready to start content-writing whenever you'd like — `relative-som` (Leddsetninger §7) is still the smallest, zero-groundwork starting point if you want to keep going.
+
+ME: Go ahead.
+
+CLAUDE: I need to look at grammar.json now to see the schema and existing relative-som questions.Now let me update the `relative-som` rule text to reflect the B2-level nuance (drop «som» when optional/object, keep when required/subject), since the current text says "at this level we always write som out."Now let's add the 9 new B2-level questions to `grammar.json`. First, let me find the exact insertion point.Found the exact insertion point — right after `gq-rel-033`, before the next topic block starts. Let me insert the 9 new questions there.Now let's validate the JSON is well-formed and check for duplicate IDs.
+
+ME: Contune.
+
+CLAUDE: Found it. Let me read the plan doc.Everything from last session is confirmed applied and valid: JSON has no duplicate IDs (2551 total questions), and `relative-som` now has 9 new B2 questions (gq-rel-034–042) plus the 2 originals, with the rule text updated in `rules.ts`. Now let me update the plan doc to mark this touch done, then move to the next item.Good, applying it now.Doc updated. Now let's move to the next Phase 2 touch. I'll pick a small, direct-match item next — `det-referanse` (Helsetninger §13, trykktungt det) is tiny, or I'll go with `derfor-fordi` / `motsetning-selv-om-likevel` which are exact matches. Let me check current question counts to pick a sensible next target.IDs are free. Now let's find the insertion point (end of the `det-formelt-subjekt` block, after `gq-detform-012`).Now I'll view the actual user file at that same line range to use exact text for the edit (since I'm editing on the user's computer, not the copy).Good, I have the exact block. Now let's construct the new questions and insert via edit_file on the user's filesystem using the unique old_str = the gq-detform-012 block, appending new entries right after it.Diff looks correct. Applying it.
+
+ME: 
+
+CLAUDE: 
+
+ME: 
 
 CLAUDE: 
 
@@ -100,14 +123,7 @@ CLAUDE:
 
 ME: 
 
----
-
-In a previous session we created scripts/check-spelling.ts and I'm working on check-spelling-c-vocab.txt and scripts/outputs/check-spelling-c-vocab-fix.md and you can find check-spelling-c-vocab-changelog.md for all the change so far.
-The following/attached is from previous sessions. Continue where you left.
-
-ME:
-
-CLAUDE:
+CLAUDE: 
 
 ---
 
