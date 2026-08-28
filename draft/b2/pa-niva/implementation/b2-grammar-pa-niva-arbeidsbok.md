@@ -696,3 +696,376 @@ highest-value touch (grows a 2-question topic), fully direct-match, zero groundw
   `check-grammar-norwegian.mjs substantivert-adjektiv` → 0 flagged across all 22 questions.
   Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2620 total questions
   file-wide, no duplicate IDs.
+- ✅ **Done — `bli-presens-partisipp`** («bli» + presens partisipp, durative aspect — e.g. «ble
+  boende», «ble sittende»). Confirmed direct match against the existing rule text (durative/
+  ongoing-action meaning, common verb set bo/sitte/ligge/stå, presens partisipp never inflects —
+  all already covered, no rule-text gap). Added 10 new B2 questions (`gq-blipres-011`–
+  `gq-blipres-020`: fill/transform/minimal-pair/order/multiple-choice mix) using fresh scenarios
+  with the same core verb set the rule text names (bo, sitte, ligge, stå, være) — hytta, en
+  forelesning, en katt på verandaen, turister i regnet, en pasient på sykehuset, barn i parken,
+  vakter ved en inngang — not the book's own sentences, and each question also carries the
+  existing topic's `plusOnly: true` field. Topic now has 20 total questions (10 → 20, all B2).
+  Validated: `check-b2-grammar-vocab.mjs bli-presens-partisipp` → 0 unmatched across 20 B2
+  questions; `check-grammar-norwegian.mjs bli-presens-partisipp` → 0 flagged across all 20
+  questions. Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2630
+  total questions file-wide, no duplicate IDs.
+- ✅ **Done — `passiv-bli-s`** (bli-passiv, s-passiv, and være-passiv — Verb §7–11). Confirmed
+  direct match against the existing rule text (three passive forms, s-passiv common with modals,
+  være-passiv describing a resulting state vs. bli-passiv describing the action in progress, plus
+  the åpne/åpen trap — all already covered, no rule-text gap). The existing 11 B2 questions were
+  almost entirely modal + s-passiv drills, so the new batch targets the under-covered corners:
+  aktiv → bli-passiv transforms (with and without kept agent), være- vs. bli-passiv state/action
+  contrast, imperativ → s-passiv (oppskrift-style instruction), and a bli-passiv partisipp-vs-
+  infinitiv minimal pair. Added 10 new B2 questions (`gq-passivbs-044`–`gq-passivbs-053`:
+  transform/fill/minimal-pair/multiple-choice/order mix); one draft (åpen/åpnet trap) was swapped
+  out during drafting since that exact contrast was already covered at B1 (`gq-passivbs-038`–
+  `043`) — replaced with a fresh være-passiv contrast ("Kontrakten er underskrevet"). Topic now
+  has 53 total questions (43 → 53; B2 count 11 → 21). Validated:
+  `check-b2-grammar-vocab.mjs passiv-bli-s` → 0 unmatched across 21 B2 questions;
+  `check-grammar-norwegian.mjs passiv-bli-s` → 0 flagged across all 53 questions. Applied to the
+  real `grammar.json` via `Filesystem:edit_file`, re-verified: 2640 total questions file-wide, no
+  duplicate IDs.
+- ✅ **Done — `derfor-fordi`** («derfor» V2-inversion vs. «fordi» normal leddsetningsrekkefølge).
+  Confirmed direct match against the existing rule text (no rule-text gap). Added 10 new B2
+  questions (`gq-derforfordi-025`–`gq-derforfordi-034`: fill/minimal-pair/order/transform/
+  multiple-choice mix) with fresh domains not yet used in the existing B2 set (which already
+  covered inflasjon/rente, klima/forsikring, studenter/budsjett, permittering, strømpriser,
+  produktklage, politikerkritikk) — helsekø, boligmarked/distriktsflytting, trafikk/sykkelvei,
+  digitalisering, konsertavlysning, strømnett-oppgradering, fjelltur, og en ny permitteringssak
+  med utenlandske ordre. Topic now has 34 total questions (24 → 34; B2 count 10 → 20). Validated:
+  `check-b2-grammar-vocab.mjs derfor-fordi` → 0 unmatched across 20 B2 questions;
+  `check-grammar-norwegian.mjs derfor-fordi` → 0 flagged across all 34 questions. Applied to the
+  real `grammar.json` via `Filesystem:edit_file`, re-verified: 2650 total questions file-wide, no
+  duplicate IDs.
+- ✅ **Done — `arsak-og-folge-uttrykk`** (broader årsak/følge/hensikt toolkit beyond derfor/
+  fordi — siden/i og med at/ettersom, dermed/nemlig, føre til/skyldes/gjør at/føre med seg/henge
+  sammen med, grunnen/årsaken/følgen, for at/slik at/så). Confirmed direct match against the
+  existing rule text (no rule-text gap; the rule text already covers all the expressions drawn on
+  below). The existing 14 B2 questions covered most subjunksjoner, adverb, and årsaksverb pairs
+  well, so the new batch targeted the under-covered corners: hensikt (purpose) clauses with «for
+  at» vs. «så» vs. plain «fordi», the «for at» + modalverb vs. «for å» + infinitiv same-subject/
+  different-subject trap, the fixed expression «dermed basta!», «følgen» used alone (not just in
+  «følgen av»), a «henger sammen med» (correlation) vs. «skyldes»/«fører til» (direct causation)
+  contrast, and a fresh «i og med at» + «grunnen til at» reinforcement with new scenarios. Added
+  10 new B2 questions (`gq-arsak-025`–`gq-arsak-034`: fill/minimal-pair/transform/multiple-choice/
+  order mix). Topic now has 34 total questions (24 → 34; B2 count 14 → 24). Validated:
+  `check-b2-grammar-vocab.mjs arsak-og-folge-uttrykk` → 0 unmatched across 24 B2 questions;
+  `check-grammar-norwegian.mjs arsak-og-folge-uttrykk` → 0 flagged across all 34 questions.
+  Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2660 total questions
+  file-wide, no duplicate IDs.
+- ✅ **Done — `kontrast-uttrykk`** (sibling topic to `arsak-og-folge-uttrykk` — subjunksjoner,
+  adverb, korrelatpar, and the multi-meaning «enda» vs. «ennå» distinction). Confirmed direct
+  match against the existing rule text (no rule-text gap). Added 10 new B2 questions
+  (`gq-kontrast-023`–`gq-kontrast-032`: fill/multiple-choice/minimal-pair/transform/order mix)
+  covering «enda» as an intensifier ("enda en kaffe", "enda bedre") vs. its concessive use,
+  «derimot», the korrelatpar «på den ene siden ... på den andre siden», «til tross for det»,
+  and «ikke desto mindre». Topic now has 32 total questions (22 → 32; B2 count 12 → 22).
+  Validated: `check-b2-grammar-vocab.mjs kontrast-uttrykk` → 0 unmatched across 22 B2 questions;
+  `check-grammar-norwegian.mjs kontrast-uttrykk` → 0 flagged across all 32 questions. Applied to
+  the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2670 total questions
+  file-wide, no duplicate IDs.
+- ✅ **Done — `fa-perfektum-partisipp`** («få» + perfektum partisipp, resultative construction —
+  e.g. «fikk reparert», «fikk levert»). Confirmed direct match against the existing rule text (no
+  rule-text gap). Added 10 new B2 questions (`gq-faperf-011`–`gq-faperf-020`: fill/transform/
+  minimal-pair/order/multiple-choice mix) using fresh verbs beyond the existing lese/levere/vaske/
+  reparere/sende/kjøpe/rette/skrive/selge set — fikse, rydde, male, bygge, betale, hente, sy,
+  pakke, oversette, and stryke (strøket), with fresh scenarios/characters. Topic now has 20 total
+  questions (10 → 20, all B2). Validated: `check-b2-grammar-vocab.mjs fa-perfektum-partisipp` →
+  0 unmatched across 20 B2 questions; `check-grammar-norwegian.mjs fa-perfektum-partisipp` → 0
+  flagged across all 20 questions. Applied to the real `grammar.json` via `Filesystem:edit_file`,
+  re-verified: 2680 total questions file-wide, no duplicate IDs.
+- ✅ **Done — `tidssekvens-etter-at-etterpaa`** («etter at» vs. «etterpå» vs. «så», plus the
+  Kapittel 3/4 fold-ins: mens/samtidig simultaneity pair and plain preposition «etter» vs. the
+  subjunksjon «etter at»). Found the confirmed rule-text gap: the existing rule text covered
+  only the sequence trio (etter at / etterpå / så), not the simultaneity pair «mens»
+  (subjunksjon) vs. «samtidig» (setningsadverb, same V2-triggering mechanic as «etterpå»), nor
+  the plain-preposition-vs-subjunksjon contrast for «etter» itself — added both to
+  `explanationEn`/`explanationNb` before writing questions. Added 10 new B2 questions
+  (`gq-tidseks-021`–`gq-tidseks-030`: fill/transform/minimal-pair/order/multiple-choice mix)
+  covering «etter» (preposition) vs. «etter at» (subjunksjon), and «mens» vs. «samtidig»
+  ordstilling contrasts, with fresh scenarios. Topic now has 30 total questions (20 → 30; B2
+  count 10 → 20, B1 10 unchanged). Validated: `check-b2-grammar-vocab.mjs
+  tidssekvens-etter-at-etterpaa` → 0 unmatched across 20 B2 questions;
+  `check-grammar-norwegian.mjs tidssekvens-etter-at-etterpaa` → 0 flagged across all 30
+  questions. Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2690
+  total questions file-wide, no duplicate IDs.
+- ✅ **Done — `motsetning-selv-om-likevel`** (sibling topic to `tidssekvens-etter-at-etterpaa` —
+  «men» coordinating vs. «selv om» subordinating vs. «likevel» V2-triggering sentence adverb).
+  Confirmed direct match against the existing rule text (no rule-text gap). The existing 20
+  questions (10 B1 + 10 B2) already covered a range of economic/political scenarios (renta,
+  marked, skepsis, prosjekt, salg, ansatte, reform, arbeidsledighet, fagforening, uenig/vedtak),
+  so the new batch used fresh domains: legevakt/pasient (helse), klimaforskning/utslipp, skole/
+  elever, app/brukere, boligpriser/unge, idrettslag/utstyr, museum/åpningstider, bedrift/konkurs,
+  allergi, strømpriser/husholdninger. Added 10 new B2 questions (`gq-motselv-021`–`gq-motselv-030`:
+  transform/order/minimal-pair/fill mix). Topic now has 30 total questions (20 → 30; B2 count
+  10 → 20, B1 10 unchanged). Validated: `check-b2-grammar-vocab.mjs motsetning-selv-om-likevel`
+  → 0 unmatched across 20 B2 questions; `check-grammar-norwegian.mjs
+  motsetning-selv-om-likevel` → 0 flagged across all 30 questions. Applied to the real
+  `grammar.json` via `Filesystem:edit_file`, re-verified: 2700 total questions file-wide, no
+  duplicate IDs.
+- ✅ **Done — `indirekte-tale-at-om`** (Leddsetninger §3–6, 16; Tekstbinding §3–7 — at/om reported
+  speech, wh-question reporting with som-insertion, preteritumssamsvar, and the «ifølge X»/
+  «visstnok» hearsay-marking rule-text addition made two sessions ago). Confirmed direct match
+  against the existing rule text (no further rule-text gap — the «ifølge»/«visstnok» paragraph
+  was already added). The existing 16 B2 questions covered at/om reporting, som-insertion,
+  imperativ→modalverb, and the lurer-på-vs-vil-vite nuance well, but had zero questions on the
+  hearsay-marking construction itself, so the new batch targeted that gap directly: «ifølge X»
+  fronting with V2 inversion, «visstnok» as an in-clause setningsadverbial, an «ifølge»+at-setning
+  combination (per the rule text's note that both can combine with an ordinary at-clause), plus
+  a few fresh reporting-verb questions (understreke, er usikker på, benekte) to widen the
+  reporting-verb set beyond si/mene/spørre/lure på. Added 10 new B2 questions
+  (`gq-indirtale-067`–`gq-indirtale-076`: transform/minimal-pair/fill/order mix). Topic now has
+  76 total questions (66 → 76; B2 count 16 → 26). Validated: `check-b2-grammar-vocab.mjs
+  indirekte-tale-at-om` → 0 unmatched across 26 B2 questions; `check-grammar-norwegian.mjs
+  indirekte-tale-at-om` → 0 flagged across all 76 questions. Applied to the real `grammar.json`
+  via `Filesystem:edit_file`, re-verified: 2710 total questions file-wide, no duplicate IDs.
+- ✅ **Done — `kommaregler`** (Leddsetninger §15 — comma placement with subordinate clauses, incl.
+  non-restrictive relative clauses). Confirmed direct match against the existing rule text (no
+  rule-text gap — the two documented rules, fronted-leddsetning comma and list comma, already
+  cover this exercise's material; the existing C-level content separately handles the
+  innskutt-setning/apposisjon pattern). The existing 23 B2 questions covered fronted-vs-trailing
+  leddsetning comma (selv om/fordi/hvis/etter at/når), 3-item lists, and the men/for/og
+  coordinating-conjunction comma contrast well, so the new batch widened the scenario pool with
+  fresh domains — veterinær/hund, mens-simultaneity, teknologi (telefon/skjerm/mus), adjektiv-liste
+  (spennende/morsom/lærerik), stedsnavn (Kyoto/Osaka/Tokyo), og a fresh hvis-betingelse (sol/strand)
+  — plus one more each of the og-no-comma, men-comma, and for-comma minimal pairs. Added 10 new B2
+  questions (`gq-komma-044`–`gq-komma-053`, all `punctuation` type). Topic now has 53 total
+  questions (43 → 53; B2 count 23 → 33, C count 20 unchanged). Validated:
+  `check-b2-grammar-vocab.mjs kommaregler` → 0 unmatched across 33 B2 questions;
+  `check-grammar-norwegian.mjs kommaregler` → 0 flagged across all 53 questions. Applied to the
+  real `grammar.json` via `Filesystem:edit_file`, re-verified: 2720 total questions file-wide, no
+  duplicate IDs.
+- ✅ **Done — `preposisjoner-sted`** (Preposisjoner §2–6 — i/på for enclosed space vs. surface/
+  workplace, geography, sammensatte preposisjoner). Confirmed direct match against the existing
+  rule text (no rule-text gap needed — i/på, hos/til, ved, geografi, and the compound-preposition
+  list are all already documented; the book's own «områderegelen/kantstedsregelen» terms aren't
+  named verbatim in `rules.ts`, but the underlying i/på distinction is). This topic had zero B2
+  content before this touch (only A1/A2/B1, all physical-placement drills, plus a heavy B1
+  ovenfor/overfor cluster), so the new batch targeted the under-covered corners at B2 level: i/på
+  for enclosed space vs. workplace (skuffen vs. forsikringsselskap), geography exceptions (Kreta
+  as an island vs. Canada as a country, på Vestlandet as a landsdel), and the more abstract
+  sammensatte preposisjoner (på grunn av, i stedet for, ved hjelp av) and relative-position/
+  tilhørighet patterns (mellom X og Y, fargen på bilen) that the rule text lists but no B1/A2
+  question had drilled yet. Added 10 new B2 questions (`gq-prep-sted-055`–`gq-prep-sted-064`:
+  fill/minimal-pair/multiple-choice mix). Topic now has 64 total questions (54 → 64; B2 count
+  0 → 10 — first B2 content for this topic). Validated: `check-b2-grammar-vocab.mjs
+  preposisjoner-sted` → 0 unmatched across 10 B2 questions; `check-grammar-norwegian.mjs
+  preposisjoner-sted` → 0 flagged across all 64 questions. Applied to the real `grammar.json`
+  via `Filesystem:edit_file`, re-verified: 2730 total questions file-wide, no duplicate IDs.
+- ✅ **Done — `noun-articles`** (Substantiv §8–9, ubestemt artikkel som predikativ — 4-rule
+  identity-statement article system). Confirmed direct match against the existing rule text (the
+  yrke/nasjonalitet/livsfase article-drop pattern already covered, no rule-text gap). This topic
+  already had 10 B2 questions from a prior round, so the new batch widened coverage of the
+  4-rule predikativ system and the surrounding kjønn/bøying drills with fresh scenarios/
+  characters. Added 10 new B2 questions (`gq-noun-art-049`–`gq-noun-art-058`: fill/transform/
+  multiple-choice/minimal-pair mix). Topic now has 58 total questions (48 → 58; B2 count
+  10 → 20). Validated: `check-b2-grammar-vocab.mjs noun-articles` → 0 unmatched across 20 B2
+  questions; `check-grammar-norwegian.mjs noun-articles` → 0 flagged across all 58 questions.
+  Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2740 total
+  questions file-wide, no duplicate IDs.
+- ✅ **Done — `determinativ-forsterkere`** (Determinativer §13–15 — egen/eget/egne, selv, selve,
+  eneste). First of the four confirmed brand-new topics. Added a `GrammarTopic` union member to
+  `types.ts` and a new `GrammarRule` entry (`explanationEn`/`explanationNb`) to `rules.ts`
+  covering three sub-rules: **egen/eget/egne** (agrees with noun gender/number, follows a
+  possessive rather than an indefinite article), **selv** (invariant, postposed emphatic pronoun)
+  vs. **selve** (invariant, prenominal intensifier before a definite-form noun), and **eneste**
+  (invariant, requires the following noun in definite form with a definite article). Note:
+  «sånn» (Determinativer §6) was excluded per the earlier rules.ts check — it folds into
+  `adj-agreement` instead, narrowing this topic to egen/selv/eneste only. Added 10 new B2
+  questions (`gq-detfork-001`–`gq-detfork-010`: fill/order/minimal-pair/transform/
+  multiple-choice mix), fresh characters (Marte, Fredrik, Jonas, Ingrid). Topic now has 10 total
+  questions (all B2, first content for this topic). Validated: `check-b2-grammar-vocab.mjs
+  determinativ-forsterkere` → 0 unmatched across 10 B2 questions; `check-grammar-norwegian.mjs
+  determinativ-forsterkere` → 0 flagged across all 10 questions. Applied to the real
+  `types.ts`, `rules.ts`, and `grammar.json` via `Filesystem:edit_file`, re-verified: 2750 total
+  questions file-wide, no duplicate IDs.
+- ✅ **Done — `adverb-gradboying`** (Adverb §15 — adverb comparison: regular -ere/-est for
+  manner/frequency adverbs, plus the irregular suppletive trio gjerne→heller→helst). Second of
+  the four confirmed brand-new topics. Added the `GrammarTopic` union member to `types.ts` and a
+  new `GrammarRule` entry to `rules.ts` covering the regular pattern (sakte→saktere, fort→fortere→
+  fortest, ofte→oftere→oftest, tidlig→tidligere→tidligst, comparative always followed by «enn»)
+  plus the irregular trio's semantics (gjerne = positive/willing, heller = comparative used with
+  «enn» when preferring one thing over another, helst = superlative, preferred most among several
+  options, no «enn»). Added 10 new B2 questions (`gq-advgrad-001`–`010`: fill/order/transform/
+  minimal-pair/multiple-choice mix), fresh characters/scenarios (Emma, Marte, Kari, a pasient),
+  covering both the regular -ere/-est forms (saktere, fortest, oftere, senest) and the
+  gjerne/heller/helst trio. Topic now has 10 total questions (all B2, first content for this
+  topic). Applied to the real `types.ts`, `rules.ts`, and `grammar.json` via `Filesystem:edit_file`,
+  re-verified against the file tail: 2760 total questions file-wide (2750 + 10), no duplicate IDs
+  (fresh `gq-advgrad-` prefix, confirmed unused). Note: `check-b2-grammar-vocab.mjs`/
+  `check-grammar-norwegian.mjs` were not run this session (no script-execution access to the
+  user's machine with this session's toolset, only file read/edit) — flagging for a validation
+  pass next session before starting new content.
+- ✅ **Done — `sammensatt-verbtid`** (Verb §17 — naming verb 1 / verb 2 / tempus in compound verb
+  forms). Third of the four confirmed brand-new topics. Added the `GrammarTopic` union member to
+  `types.ts` and a new `GrammarRule` entry to `rules.ts` defining verb 1 (finite auxiliary,
+  carries tense, plass 2) vs. verb 2 (non-finite main verb, infinitiv or perfektum partisipp,
+  never inflects) and naming the four compound tempus: presens perfektum (har + partisipp),
+  preteritum perfektum (hadde + partisipp), futurum (skal/vil + infinitiv), futurum i fortid
+  (skulle/ville + infinitiv). Added 10 new B2 questions (`gq-samverbtid-001`–`010`:
+  multiple-choice/fill/transform/order/minimal-pair mix) covering tempus-naming,
+  verb1/verb2-identification, verb2-form selection (infinitiv vs. partisipp), tense-shift
+  transforms (presens perfektum→preteritum perfektum, futurum→futurum i fortid), and a
+  minimal-pair on verb 2 never taking a finite ending. Topic now has 10 total questions (all B2,
+  first content for this topic). Applied to the real `types.ts`, `rules.ts`, and `grammar.json`
+  via `Filesystem:edit_file`, re-verified against the file tail: 2770 total questions file-wide
+  (2760 + 10), no duplicate IDs (fresh `gq-samverbtid-` prefix, confirmed unused). Note:
+  `check-b2-grammar-vocab.mjs`/`check-grammar-norwegian.mjs` again not run this session (no
+  script-execution access with this session's toolset) — still flagged for a validation pass.
+- ✅ **Done — `setningsledd-identifikasjon`** (the fourth and largest confirmed brand-new
+  topic — absorbs Setningsledd §1–3/5–7/10, Helsetninger §11, Leddsetninger §1/2/12/17, and
+  Preposisjoner §1). Worked step by step so progress survived a session break; each sub-step was
+  checkpointed immediately after being applied to the real files.
+  - [x] **Step 1 — `types.ts`**: added the `GrammarTopic` union member (with doc comment covering
+    element-naming/labeling, NP-building, and clause-function analysis). Applied via
+    `Filesystem:edit_file`.
+  - [x] **Step 2 — `rules.ts`**: added the `GrammarRule` entry (`explanationEn`/`explanationNb`)
+    covering the core element set (subjekt, verbal, direkte/indirekte objekt, subjekts-/
+    objektspredikativ with the «være + X» substitution test vs. objekt, adverbial,
+    setningsadverbial with its placement contrast in hel- vs. leddsetning), NP-building
+    (determinativ + adjektiv + substantiv agreement, worked example «de to gamle kattene»),
+    clause-function analysis (a leddsetning filling a subjekt/objekt/adverbial slot, one worked
+    example each), and the forfelt/midtfelt/sluttfelt setningsskjema (folded in here rather than
+    a separate topic, per the plan doc's original note). Applied via `Filesystem:edit_file`.
+  - [x] **Step 3, batch 1 of 2 — `grammar.json`** (element-labeling, 6 questions): added
+    `gq-setnledd-001`–`006` (all `multiple-choice`) covering subjekt-identification, direkte vs.
+    indirekte objekt (same sentence, two questions), subjektspredikativ vs. objekt, an
+    objektspredikativ example, and setningsadverbial identification («ikke»). Fresh characters/
+    scenarios (legen/pasienten, naboen/kake, broren/tannlege). Applied via `Filesystem:edit_file`.
+    Running total: 6 questions in this topic so far (all B2). File-wide total not yet
+    re-verified this session (no script/count access) — was 2770 before this topic started, so
+    should now be 2776 after this batch (2770 + 6).
+  - [x] **Step 3, batch 2 of 2 — `grammar.json`** (NP-building, clause-function analysis,
+    setningsskjema, 6 questions): added `gq-setnledd-007`–`012` — fill (adjektiv agreement in a
+    flertall/bestemt NP, «De tre små barna»), order (subjektsfrase-first sentence build, «Den
+    gamle læreren»), three multiple-choice questions on leddsetning clause-function (subjekt/
+    objekt/adverbial, one worked example each mirroring the three `rules.ts` examples), and a
+    transform question on sluttfelt sted-før-årsak ordering. Fresh scenarios throughout (børn i
+    hagen, læreren/regelen, møtet i Bergen). Applied via `Filesystem:edit_file`.
+
+  **Topic complete: `setningsledd-identifikasjon` now has 12 total questions (all B2, first
+  content for this topic) — `gq-setnledd-001`–`012`.** File-wide total not re-verified by script
+  this session (no script/count access), but should now be 2782 (2770 before this topic + 12).
+  **Validation still outstanding for this whole topic** (`check-b2-grammar-vocab.mjs
+  setningsledd-identifikasjon` and `check-grammar-norwegian.mjs setningsledd-identifikasjon`) —
+  run these first next session, alongside the other three topics from this session
+  (`adverb-gradboying`, `sammensatt-verbtid`) that are also still unvalidated by script.
+
+  **Validation update:** `check-b2-grammar-vocab.mjs` had a hardcoded `B2_TOPICS` whitelist that
+  didn't include any of this session's four new topics, so it would have silently reported "no
+  matching questions" rather than actually checking them. Added `determinativ-forsterkere`,
+  `adverb-gradboying`, `sammensatt-verbtid`, and `setningsledd-identifikasjon` to that whitelist
+  (all `cefr: 'B2'` only, matching how every other topic in that list is scoped). Applied via
+  `Filesystem:edit_file`. `check-grammar-norwegian.mjs` needed no update — it has no topic
+  whitelist, and the user ran it and confirmed no issues (all four new topics' Norwegian
+  instructional text passes clean). Still outstanding: actually running
+  `check-b2-grammar-vocab.mjs` against the four new topics (no script-execution access with this
+  session's toolset) — run `node scripts/check-b2-grammar-vocab.mjs determinativ-forsterkere
+  adverb-gradboying sammensatt-verbtid setningsledd-identifikasjon` next session to confirm the
+  new questions are anchored to real B2 (or earlier-level) vocabulary.
+
+  **Validation complete:** the user ran `check-b2-grammar-vocab.mjs` against all four new topics
+  — clean, zero flagged/unmatched questions. Combined with the earlier clean
+  `check-grammar-norwegian.mjs` run, both validators now pass for `determinativ-forsterkere`,
+  `adverb-gradboying`, `sammensatt-verbtid`, and `setningsledd-identifikasjon`. No outstanding
+  validation work remains for this session's content.
+
+  **This completes all four confirmed brand-new topics** from the Pre-Phase-2 checklist
+  (`determinativ-forsterkere`, `adverb-gradboying`, `sammensatt-verbtid`,
+  `setningsledd-identifikasjon`). Remaining Phase 2 work is the large list of direct-match/
+  fold-in touches to existing topics noted in “Next session starting point” above that haven't
+  been done yet: e.g. `spesial-kvantorer`, `subjunksjon-oversikt`, `modale-adverb`,
+  `modalverb-betydning`, `sannsynlighet-uttrykk`, `hoflig-preteritum`,
+  `man-en-upersonlig-pronomen`, `mene-synes-tro-tenke`, `preteritum-perfektum-og-futurum`,
+  `partikkelverb-los-fast`, `adj-agreement`, `adj-comparison` (B2 extension),
+  `noun-possessives` (B2 extension), `v2-word-order` (B2 extension), `subordinate-order` (B2
+  extension), `koordinerende-konjunksjoner` (B2 extension), `bade-og-verken-eller` (B2 extension),
+  `leddsetning-som-fundament` (B2 extension), `verbprefiks-be-an-mis` (B2 extension),
+  `sterke-verb`/`partisipp-former` (Verb §1), `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and
+  the `ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus a few small
+  remaining rule-text folds noted inline in the Kapittel summaries (e.g. «mens/samtidig» into
+  `tidssekvens-etter-at-etterpaa`, already done; «som/enn» into `adj-comparison`; «for/fordi» into
+  `koordinerende-konjunksjoner`).
+- ✅ **Done — `kvantorer`** (Determinativer §7–12 — litt/lite, ingen/noen, alle/hver, hele/all,
+  begge deler/begge to, plus the broader mye/mange/mer/flere toolkit already in the rule text).
+  Confirmed direct match against the existing rule text (no rule-text gap — mye/mange, mer/flere,
+  få/lite, noen/noe, de fleste/det meste, mindre/færre, litt/lite, and the av+bestemt-form vs.
+  ubestemt-form generality distinction were all already covered). Note on process: since this is
+  an existing topic (not a brand-new one), the highest existing question number and the
+  established `plusOnly` convention had to be confirmed by asking the user to run `grep`/a small
+  Python script against the real `grammar.json` — no content-search tool is available for the
+  user's filesystem in this session's toolset (only whole-file/head/tail reads), so mid-file
+  lookups for existing-topic extensions need this kind of user-run check going forward. Confirmed:
+  38 existing `kvantorer` B2 questions (highest ID `gq-kvantorer-038`), and none of them carry a
+  `plusOnly` field — B2 gating apparently happens elsewhere (by topic/cefr) for this topic, not
+  per-question, so the new questions matched that and also omit `plusOnly`. Added 10 new B2
+  questions (`gq-kvantorer-039`–`048`: fill/minimal-pair/multiple-choice/transform mix) covering
+  mye/mange, mer/flere (two contexts — utellelig vs. tellelig), få/lite, litt vs. lite, de
+  fleste/det meste, noen/noe, the mengdeord+av+bestemt-form transform, and mindre/færre (two
+  contexts). Topic now has 48 total B2 questions (38 → 48). Applied to the real `grammar.json` via
+  `Filesystem:edit_file`. Not yet run this session: `check-b2-grammar-vocab.mjs kvantorer` and
+  `check-grammar-norwegian.mjs kvantorer` — run these next before starting a new topic.
+
+  **Validation complete:** user ran both — `check-b2-grammar-vocab.mjs kvantorer` → 0 unmatched
+  across 20 B2 questions; `check-grammar-norwegian.mjs kvantorer` → 0 flagged across all 48
+  questions (all cefr levels). `kvantorer` touch is fully done and validated.
+- ✅ **Done — `spesial-kvantorer`** (Determinativer §7, §12 — ingen/ikke noen, all/alt/alle,
+  hel/helt/hele, hver/hvert, enhver/ethvert, begge (to)/begge deler). Confirmed direct match
+  against the existing rule text (no rule-text gap — all six sub-rules already documented).
+  Process followed per the note from last session: confirmed existing count (24 total: 14 B2 +
+  10 B1, highest ID `gq-speskvant-024`) and `plusOnly` convention (all existing B2 questions use
+  `plusOnly: true`) via a user-run Python check before drafting. Read the B1 set (015–024) too,
+  which revealed `enhver`/`ethvert` was already drilled at B1 (elev, menneske, bok/regel,
+  regning, bibliotek, person) but had **zero** B2 questions — the existing B2 batch (001–014)
+  only covered ingen/ingenting, all/alt/alle, hel/hele/helt, hver/hvert, and begge — so the new
+  batch targeted that gap directly, plus fresh reinforcement for the other sub-rules with new
+  vocabulary/characters not used in either the B1 or B2 sets (medlem, borger, ansatt, bøkene,
+  kunnskap, sommer/hytte, barn/klasse, Marte og Sindre, sommer/vinter). Added 10 new B2 questions
+  (`gq-speskvant-025`–`034`: fill/multiple-choice/transform/minimal-pair mix), each with
+  `plusOnly: true` matching the topic's convention. Topic now has 34 total questions (24 → 34;
+  B2 count 14 → 24). Applied to the real `grammar.json` via `Filesystem:edit_file` (dry-run
+  diff confirmed, then applied for real). Not yet run this session: `check-b2-grammar-vocab.mjs
+  spesial-kvantorer` and `check-grammar-norwegian.mjs spesial-kvantorer` — run these next before
+  starting a new topic.
+
+  **Validation complete:** user ran both — `check-b2-grammar-vocab.mjs spesial-kvantorer` → 0
+  unmatched across 24 B2 questions; `check-grammar-norwegian.mjs spesial-kvantorer` → 0 flagged
+  across all 24 questions. `spesial-kvantorer` touch is fully done and validated.
+
+## Next session starting point (session ending — read this first)
+
+Session budget is nearly exhausted. Everything above is confirmed applied and validated up to
+and including `kvantorer`. No in-progress/uncommitted work remains — every topic in the Phase 2
+progress log ends in a ✅ **Done** with both validators run clean, so the next session can start
+a fresh topic-touch with no cleanup needed first.
+
+**Process note learned this session, apply going forward:** this session's toolset has no
+content-search (grep) tool for the user's filesystem — only whole-file reads (too large for
+`grammar.json`'s 1.2MB+) and head/tail reads. For any topic that already has existing content
+(i.e. everything except brand-new topics), before writing new questions:
+1. Ask the user to run a quick `grep`/Python snippet to get (a) the current question count for
+   the topic and (b) the highest existing ID number, so new IDs don't collide.
+2. Also confirm whether existing questions for that topic use a `plusOnly` field at all (varies by
+   topic — `kvantorer`'s B2 questions have none; some other topics do use `plusOnly: true` on
+   `fill`/`order`/`transform` types). Match whatever the topic already does; don't assume.
+3. Read the relevant `rules.ts` entry in full (the whole file can be read at once — it's ~190KB,
+   manageable in one call) to confirm no rule-text gap before drafting questions.
+
+**Remaining candidates** (direct-match/fold-in touches to existing topics, per the "Next session
+starting point" list earlier in this doc, minus `kvantorer` which is now done): `spesial-
+kvantorer`, `subjunksjon-oversikt`, `modale-adverb`, `modalverb-betydning`,
+`sannsynlighet-uttrykk`, `hoflig-preteritum`, `man-en-upersonlig-pronomen`,
+`mene-synes-tro-tenke`, `preteritum-perfektum-og-futurum`, `partikkelverb-los-fast`,
+`adj-agreement`, `adj-comparison` (B2 extension), `noun-possessives` (B2 extension),
+`v2-word-order` (B2 extension), `subordinate-order` (B2 extension),
+`koordinerende-konjunksjoner` (B2 extension), `bade-og-verken-eller` (B2 extension),
+`leddsetning-som-fundament` (B2 extension), `verbprefiks-be-an-mis` (B2 extension),
+`sterke-verb`/`partisipp-former` (Verb §1), `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and
+the `ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus the small remaining
+rule-text folds noted inline in the Kapittel summaries («som/enn» into `adj-comparison`;
+«for/fordi» into `koordinerende-konjunksjoner`).
+
+**Recommended starting point next session:** `spesial-kvantorer` — natural sibling to the
+just-finished `kvantorer` touch (same Determinativer chapter, ingen/alle/hel/hver/enhver/begge),
+rule text already confirmed direct-match in the Pre-Phase-2 checklist, no groundwork needed
+beyond the user-run existing-count/ID check described above.
