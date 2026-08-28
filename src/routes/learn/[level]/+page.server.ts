@@ -4,7 +4,7 @@ import { CATEGORIES_BY_LEVEL } from '$lib/config';
 import { isPlusCategory, isFreeGrammarTopic } from '$lib/access';
 import { topicLevels } from '$lib/vocab-helpers';
 import { uttrykkCCategoryCounts } from '$lib/uttrykk-c-stats';
-import grammarData from '$lib/data/grammar.json';
+import { grammarLevelLoaders } from '$lib/grammar/level-loader';
 import stats from '$lib/data/stats.json';
 import type { CEFRLevel, GrammarQuestion, GrammarTopic, VocabEntry } from '$lib/types';
 import { parsePosts, type RawPostModule, cefrLevels } from '$lib/blog';
@@ -50,8 +50,11 @@ export const load: PageServerLoad = async ({ params }) => {
     locked: isPlusCategory(levelUpper, cat)
   }));
 
-  // Grammar topics that include this CEFR level
-  const questions = grammarData as GrammarQuestion[];
+  // Grammar topics that include this CEFR level — load only this level's
+  // split file (src/lib/data/grammar-{level}.json), a derived artifact of
+  // grammar.json built by scripts/build-grammar-level-index.mjs. See
+  // draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md.
+  const levelQuestions = (await grammarLevelLoaders[levelUpper]()).default;
 
   // Group this level's own questions by topic, so each card's badge/count
   // reflects only what's actually playable from this hub (see
@@ -60,12 +63,12 @@ export const load: PageServerLoad = async ({ params }) => {
   // spanning A2/B1/B2 showed all three badges even on the B2 hub, and its
   // count included A2/B1 questions the B2 link would never actually play
   // (fixed in Step 1: /grammar/[topic] now scopes to ?level= for everyone).
+  // Every entry in levelQuestions is already this level (the split file is
+  // pre-filtered), so no per-question cefr check is needed here anymore.
   const allTopicMap = new Map<GrammarTopic, GrammarQuestion[]>();
-  for (const q of questions) {
-    if (q.cefr === levelUpper) {
-      if (!allTopicMap.has(q.topic)) allTopicMap.set(q.topic, []);
-      allTopicMap.get(q.topic)!.push(q);
-    }
+  for (const q of levelQuestions) {
+    if (!allTopicMap.has(q.topic)) allTopicMap.set(q.topic, []);
+    allTopicMap.get(q.topic)!.push(q);
   }
 
   // Level-scoped, not "free at any level" — a topic free only at A1 (e.g.

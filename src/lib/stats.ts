@@ -9,7 +9,7 @@
 // single CEFRLevel, and all three return the same StatRow shape so Phase 2's
 // shared row-list component can render any of them identically.
 import { State } from 'ts-fsrs';
-import type { CardProgress, CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
+import type { CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
 import { CATEGORIES_BY_LEVEL, UTTRYKK_CATCHALL_THEME } from '$lib/config';
 import { UTTRYKK_C_KEYS, uttrykkCCategoryCounts } from '$lib/uttrykk-c-stats';
 import {
@@ -19,7 +19,7 @@ import {
   type ThemeCount
 } from '$lib/vocab-helpers';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
-import grammarData from '$lib/data/grammar.json';
+import grammarTopicIndex from '$lib/data/grammar-topic-index.json';
 
 import vocabA1 from '$lib/data/vocab-a1.json';
 import vocabA2 from '$lib/data/vocab-a2.json';
@@ -268,14 +268,20 @@ export function uttrykkThemeStatsForLevel(
 
 // ── Grammar — topic rows for one level (new) ────────────────────────────────
 
-const allGrammarQuestions = grammarData as GrammarQuestion[];
+type GrammarTopicIndexEntry = {
+  levels: CEFRLevel[];
+  countsByLevel: Partial<Record<CEFRLevel, number>>;
+  total: number;
+};
 
 /**
- * Total question count per topic, per CEFR level — built once at module
- * load from grammar.json. Drives both `total` (the row's denominator) and
- * which topics even appear under a given level tab: a topic with zero
- * questions at this level (e.g. 'ubestemt-artikkel-c', C-only) is omitted
- * rather than shown as an empty row.
+ * Total question count per topic, per CEFR level — derived from the
+ * grammar-topic-index.json build artifact (scripts/build-grammar-level-index.mjs)
+ * instead of loading every question from grammar.json, since only the counts
+ * are needed here. Drives both `total` (the row's denominator) and which
+ * topics even appear under a given level tab: a topic with zero questions at
+ * this level (e.g. 'ubestemt-artikkel-c', C-only) is omitted rather than
+ * shown as an empty row.
  */
 const grammarTotalsByLevel: Record<CEFRLevel, Partial<Record<GrammarTopic, number>>> = {
   A1: {},
@@ -284,9 +290,12 @@ const grammarTotalsByLevel: Record<CEFRLevel, Partial<Record<GrammarTopic, numbe
   B2: {},
   C: {}
 };
-for (const q of allGrammarQuestions) {
-  const bucket = grammarTotalsByLevel[q.cefr];
-  bucket[q.topic] = (bucket[q.topic] ?? 0) + 1;
+for (const [topic, entry] of Object.entries(
+  grammarTopicIndex as Record<string, GrammarTopicIndexEntry>
+)) {
+  for (const [level, count] of Object.entries(entry.countsByLevel) as [CEFRLevel, number][]) {
+    grammarTotalsByLevel[level][topic as GrammarTopic] = count;
+  }
 }
 
 /**
