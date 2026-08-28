@@ -91,7 +91,13 @@ const B2_TOPICS = new Set([
   // (filtered to cefr === 'B2' below, same as every other reused topic here);
   // 'preposisjoner-uttrykk-b2' is B2-only.
   'nyanser-uttrykk',
-  'preposisjoner-uttrykk-b2'
+  'preposisjoner-uttrykk-b2',
+  // Session continuing from b2-grammar-pa-niva-arbeidsbok.md — 4 confirmed brand-new topics,
+  // all cefr: 'B2' only (first content for each of these topics):
+  'determinativ-forsterkere',
+  'adverb-gradboying',
+  'sammensatt-verbtid',
+  'setningsledd-identifikasjon'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
