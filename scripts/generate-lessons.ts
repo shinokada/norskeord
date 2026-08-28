@@ -1,6 +1,6 @@
 /**
  * generate-lessons.ts
- *
+ * This is not used any more.
  * Generates upcoming lesson content via Claude API and stores in daily_lessons.
  * Run manually whenever you want to top up the buffer (aim for 6 weeks ahead).
  *

@@ -1,7 +1,8 @@
 ---
 title: Lazy-load grammar questions per CEFR level
-status: draft
+status: done
 data-started: 2026-08-28
+data-completed: 2026-08-28
 ---
 
 # Lazy-load `grammar.json` per CEFR level
@@ -184,5 +185,14 @@ than relying solely on the silent build-time overwrite to mask it.
 
 ## Status
 
-Not started — plan only. Next session (or later in this one, if there's
-budget) should start at Migration step 1.
+Done. All 9 migration steps complete, verified locally: `pnpm check`,
+`pnpm test:unit` (including the new reconciliation suite in
+`grammar-data.test.ts`), and `pnpm build` all pass; `pnpm lint` clean
+(one unrelated pre-existing warning in `dedup-pa-niva-b2.mjs` fixed along
+the way). Manual smoke test of `/grammar`, `/grammar/spesial-kvantorer`
+(cross-level B1+B2), `/learn/b2`, and `/stats` all confirmed correct.
+
+Remaining process note (step 9): `grammar.json` stays the canonical edit
+target for content sessions — no change to that workflow. After a content
+session, run `pnpm grammar:split` (or `pnpm build`) to regenerate the split
+files before `pnpm dev`, since `pnpm dev` does not trigger `build`.

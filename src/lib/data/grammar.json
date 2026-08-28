@@ -3739,10 +3739,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Nøklene ligger _____ skuffen, ikke oppå skrivebordet.",
-    "words": [
-      "i",
-      "på"
-    ],
+    "words": ["i", "på"],
     "answer": "i",
     "hint": "En skuff er et lukket rom — bruk «i»."
   },
@@ -3753,10 +3750,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Hun jobber _____ et forsikringsselskap i sentrum.",
-    "words": [
-      "på",
-      "i"
-    ],
+    "words": ["på", "i"],
     "answer": "på",
     "hint": "De fleste arbeidsplasser bruker «på», ikke «i»."
   },
@@ -3778,10 +3772,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Han vokste opp _____ Vestlandet, nær fjordene.",
-    "words": [
-      "på",
-      "i"
-    ],
+    "words": ["på", "i"],
     "answer": "på",
     "hint": "Norske landsdeler bruker «på»: på Vestlandet, på Sørlandet."
   },
@@ -3792,10 +3783,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Familien bosatte seg _____ Canada for ti år siden.",
-    "words": [
-      "i",
-      "på"
-    ],
+    "words": ["i", "på"],
     "answer": "i",
     "hint": "Land bruker «i»: i Canada, i Japan, i Bergen."
   },
@@ -3834,10 +3822,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Han fant løsningen _____ hjelp av en kollega.",
-    "words": [
-      "ved",
-      "med"
-    ],
+    "words": ["ved", "med"],
     "answer": "ved",
     "hint": "«ved hjelp av» = ved bruk av noens/noes assistanse."
   },
@@ -3859,10 +3844,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon.",
     "sentence": "Fargen _____ bilen er mørkeblå.",
-    "words": [
-      "på",
-      "i"
-    ],
+    "words": ["på", "i"],
     "answer": "på",
     "hint": "En egenskap ved en ting: «fargen på bilen»."
   },
@@ -15134,7 +15116,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Boligprisene i byen har steget mye det siste året. Velg riktig fortsettelse.",
-    "options": ["Derfor vurderer flere å flytte til distriktene.", "Derfor flere vurderer å flytte til distriktene.", "Fordi flere vurderer å flytte til distriktene."],
+    "options": [
+      "Derfor vurderer flere å flytte til distriktene.",
+      "Derfor flere vurderer å flytte til distriktene.",
+      "Fordi flere vurderer å flytte til distriktene."
+    ],
     "answer": "Derfor vurderer flere å flytte til distriktene.",
     "hint": "«Derfor» uttrykker følgen og krever V2-rekkefølge: finitt verb før subjekt.",
     "plusOnly": true
@@ -19377,7 +19363,17 @@
     "topic": "motsetning-selv-om-likevel",
     "cefr": "B2",
     "type": "order",
-    "tokens": ["Selv", "om", "skolen", "manglet", "ressurser,", "oppnådde", "elevene", "gode", "resultater"],
+    "tokens": [
+      "Selv",
+      "om",
+      "skolen",
+      "manglet",
+      "ressurser,",
+      "oppnådde",
+      "elevene",
+      "gode",
+      "resultater"
+    ],
     "answer": "Selv om skolen manglet ressurser, oppnådde elevene gode resultater.",
     "hint": "Selv om-leddsetningen kommer først, med komma foran hovedsetningen; V2-regelen gjelder i hovedsetningen: finitt verb (oppnådde) før subjekt (elevene).",
     "plusOnly": true
@@ -19811,7 +19807,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Fabrikken innførte nye rutiner, og produksjonen økte i samme periode. Velg riktig setning.",
-    "options": ["Fabrikken innførte nye rutiner. Samtidig økte produksjonen.", "Fabrikken innførte nye rutiner. Samtidig produksjonen økte.", "Fabrikken innførte nye rutiner. Mens økte produksjonen."],
+    "options": [
+      "Fabrikken innførte nye rutiner. Samtidig økte produksjonen.",
+      "Fabrikken innførte nye rutiner. Samtidig produksjonen økte.",
+      "Fabrikken innførte nye rutiner. Mens økte produksjonen."
+    ],
     "answer": "Fabrikken innførte nye rutiner. Samtidig økte produksjonen.",
     "hint": "«Samtidig» som setningsåpner krever V2-inversjon (økte produksjonen), og kan ikke brukes som subjunksjon slik «mens» kan.",
     "plusOnly": true
@@ -20784,7 +20784,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Filmen fikk dårlig kritikk fordi den ble sett på som et helt _____ prosjekt. Velg riktig setning.",
-    "options": ["Filmen fikk dårlig kritikk fordi den ble sett på som et helt mislykket prosjekt.", "Filmen fikk dårlig kritikk fordi den ble sett på som et helt umislykket prosjekt.", "Filmen fikk dårlig kritikk fordi den ble sett på som et helt vanlykket prosjekt."],
+    "options": [
+      "Filmen fikk dårlig kritikk fordi den ble sett på som et helt mislykket prosjekt.",
+      "Filmen fikk dårlig kritikk fordi den ble sett på som et helt umislykket prosjekt.",
+      "Filmen fikk dårlig kritikk fordi den ble sett på som et helt vanlykket prosjekt."
+    ],
     "answer": "Filmen fikk dårlig kritikk fordi den ble sett på som et helt mislykket prosjekt.",
     "hint": "Adjektivet dannes med «mis-»: lykket → mislykket, uten noe ekstra prefiks foran."
   },
@@ -22618,7 +22622,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Kontrakten ble underskrevet av begge parter i går. Velg riktig setning som beskriver resultatet i dag.",
-    "options": ["Kontrakten er underskrevet.", "Kontrakten blir underskrevet.", "Kontrakten underskrives."],
+    "options": [
+      "Kontrakten er underskrevet.",
+      "Kontrakten blir underskrevet.",
+      "Kontrakten underskrives."
+    ],
     "answer": "Kontrakten er underskrevet.",
     "hint": "Være-passiv (er underskrevet) beskriver resultatet/tilstanden etter at handlingen er fullført.",
     "plusOnly": true
@@ -23133,7 +23141,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Kontrakten skal sendes til den utenlandske kunden i morgen, og oversetteren jobber fortsatt. Velg riktig setning.",
-    "options": ["Han må få oversatt kontrakten innen i morgen.", "Han må få oversette kontrakten innen i morgen.", "Han må fått oversatt kontrakten innen i morgen."],
+    "options": [
+      "Han må få oversatt kontrakten innen i morgen.",
+      "Han må få oversette kontrakten innen i morgen.",
+      "Han må fått oversatt kontrakten innen i morgen."
+    ],
     "answer": "Han må få oversatt kontrakten innen i morgen.",
     "hint": "Må + få (infinitiv) + perfektum partisipp: få oversatt.",
     "plusOnly": true
@@ -24595,7 +24607,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Velg den grammatisk riktige setningen.",
-    "options": ["Det bør sies noe om dette snart.", "Det bør si noe om dette snart.", "Noe bør det sies om dette snart."],
+    "options": [
+      "Det bør sies noe om dette snart.",
+      "Det bør si noe om dette snart.",
+      "Noe bør det sies om dette snart."
+    ],
     "answer": "Det bør sies noe om dette snart.",
     "hint": "S-passiv etter modalverbet «bør», med «det» som formelt subjekt fremst, og det ubestemte logiske subjektet (noe) lenger ut i setningen.",
     "plusOnly": true
@@ -24629,7 +24645,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Velg den grammatisk riktige setningen.",
-    "options": ["Det sitter en katt i vinduet.", "Sitter en katt i vinduet.", "En katt det sitter i vinduet."],
+    "options": [
+      "Det sitter en katt i vinduet.",
+      "Sitter en katt i vinduet.",
+      "En katt det sitter i vinduet."
+    ],
     "answer": "Det sitter en katt i vinduet.",
     "hint": "Det formelle subjektet «det» kan ikke sløyfes i denne konstruksjonen, og det ubestemte subjektet kan ikke stå fremst i setningen.",
     "plusOnly": true
@@ -25064,10 +25084,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "_____ medlem må betale kontingenten innen 1. mars.",
-    "words": [
-      "Ethvert",
-      "Enhver"
-    ],
+    "words": ["Ethvert", "Enhver"],
     "answer": "Ethvert",
     "hint": "«Medlem» er et intetkjønnsord (et medlem), så vi bruker «ethvert», ikke «enhver».",
     "plusOnly": true
@@ -25079,10 +25096,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "_____ borger har rett til å stemme ved valg.",
-    "words": [
-      "Enhver",
-      "Ethvert"
-    ],
+    "words": ["Enhver", "Ethvert"],
     "answer": "Enhver",
     "hint": "«Borger» er et hankjønns-/hunkjønnsord (en borger), så vi bruker «enhver», ikke «ethvert».",
     "plusOnly": true
@@ -25120,10 +25134,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "_____ bøkene i hyllen var dekket av støv.",
-    "words": [
-      "Alle",
-      "All"
-    ],
+    "words": ["Alle", "All"],
     "answer": "Alle",
     "hint": "«Bøkene» står i bestemt flertall, så vi bruker «alle», ikke «all».",
     "plusOnly": true
@@ -25135,10 +25146,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "_____ kunnskapen han hadde samlet gjennom årene, kom godt med i den nye jobben.",
-    "words": [
-      "All",
-      "Alt"
-    ],
+    "words": ["All", "Alt"],
     "answer": "All",
     "hint": "«Kunnskap» er et hankjønns-/hunkjønnsord (en kunnskap), så vi bruker «all», ikke «alt».",
     "plusOnly": true
@@ -25162,10 +25170,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord.",
     "sentence": "_____ barn i klassen fikk sitt eget diplom på den siste skoledagen.",
-    "words": [
-      "Hvert",
-      "Hver"
-    ],
+    "words": ["Hvert", "Hver"],
     "answer": "Hvert",
     "hint": "«Barn» er et intetkjønnsord, så vi bruker «hvert», ikke «hver».",
     "plusOnly": true
@@ -25177,10 +25182,7 @@
     "type": "fill",
     "prompt": "Velg riktig uttrykk.",
     "sentence": "Marte og Sindre kom begge for sent til møtet, og _____ måtte vente utenfor.",
-    "words": [
-      "begge to",
-      "begge deler"
-    ],
+    "words": ["begge to", "begge deler"],
     "answer": "begge to",
     "hint": "«Begge to» viser til to bestemte, navngitte personer — Marte og Sindre.",
     "plusOnly": true
@@ -25191,11 +25193,7 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Du blir spurt om du foretrekker sommer eller vinter, men du liker egentlig ingen av dem like godt. Velg riktig svar.",
-    "options": [
-      "Ingen av delene, egentlig.",
-      "Ingen av dem, egentlig.",
-      "Ingen deler, egentlig."
-    ],
+    "options": ["Ingen av delene, egentlig.", "Ingen av dem, egentlig.", "Ingen deler, egentlig."],
     "answer": "Ingen av delene, egentlig.",
     "hint": "«Sommer» og «vinter» er generelle kategorier her, ikke to bestemte, navngitte ting, så vi bruker «ingen av delene».",
     "plusOnly": true
@@ -25762,7 +25760,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Velg riktig setning.",
-    "options": ["Kan jeg få enda en kaffe?", "Kan jeg få ennå en kaffe?", "Kan jeg få en enda kaffe?"],
+    "options": [
+      "Kan jeg få enda en kaffe?",
+      "Kan jeg få ennå en kaffe?",
+      "Kan jeg få en enda kaffe?"
+    ],
     "answer": "Kan jeg få enda en kaffe?",
     "hint": "«Enda» + tallord betyr «én til»; «ennå» kan ikke brukes slik, og «enda» må stå foran tallordet.",
     "plusOnly": true
@@ -25843,7 +25845,20 @@
     "topic": "kontrast-uttrykk",
     "cefr": "B2",
     "type": "order",
-    "tokens": ["Til", "tross", "for", "at", "hun", "var", "nervøs", "holdt", "hun", "en", "utmerket", "tale"],
+    "tokens": [
+      "Til",
+      "tross",
+      "for",
+      "at",
+      "hun",
+      "var",
+      "nervøs",
+      "holdt",
+      "hun",
+      "en",
+      "utmerket",
+      "tale"
+    ],
     "answer": "Til tross for at hun var nervøs, holdt hun en utmerket tale.",
     "hint": "«Til tross for at» innleder leddsetningen; hovedsetningen som følger krever inversjon (finitt verb før subjekt).",
     "plusOnly": true
@@ -26630,7 +26645,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Velg riktig setning.",
-    "options": ["Fjellvandrerne gikk sørover mot hytta.", "Fjellvandrerne gikk i sør mot hytta.", "Fjellvandrerne gikk sør mot hytta."],
+    "options": [
+      "Fjellvandrerne gikk sørover mot hytta.",
+      "Fjellvandrerne gikk i sør mot hytta.",
+      "Fjellvandrerne gikk sør mot hytta."
+    ],
     "answer": "Fjellvandrerne gikk sørover mot hytta.",
     "hint": "Bevegelse i en kompassretning uttrykkes med adverb på -over (sørover), ikke en preposisjonsfrase eller bart retningsord.",
     "plusOnly": true
@@ -26676,7 +26695,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Velg riktig setning.",
-    "options": ["Han sto fremst i køen og ventet utålmodig.", "Han sto fram i køen og ventet utålmodig.", "Han sto frem i køen og ventet utålmodig."],
+    "options": [
+      "Han sto fremst i køen og ventet utålmodig.",
+      "Han sto fram i køen og ventet utålmodig.",
+      "Han sto frem i køen og ventet utålmodig."
+    ],
     "answer": "Han sto fremst i køen og ventet utålmodig.",
     "hint": "«Fremst» beskriver en fast posisjon lengst fram i en gruppe; «fram/frem» er den dynamiske bevegelsesformen og passer ikke her.",
     "plusOnly": true
@@ -32426,7 +32449,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Naboene klaget fordi musikken spilte altfor _____ langt utover natten. Velg riktig setning.",
-    "options": ["Naboene klaget fordi musikken spilte altfor høyt langt utover natten.", "Naboene klaget fordi musikken spilte altfor høy langt utover natten.", "Naboene klaget fordi musikken spilte altfor høye langt utover natten."],
+    "options": [
+      "Naboene klaget fordi musikken spilte altfor høyt langt utover natten.",
+      "Naboene klaget fordi musikken spilte altfor høy langt utover natten.",
+      "Naboene klaget fordi musikken spilte altfor høye langt utover natten."
+    ],
     "answer": "Naboene klaget fordi musikken spilte altfor høyt langt utover natten.",
     "hint": "Adverbet «høyt» beskriver hvordan musikken spilte (volumet), og bøyes derfor med -t.",
     "plusOnly": true
@@ -32494,7 +32521,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Journalisten mente at politikeren svarte helt _____ på spørsmålet fra publikum. Velg riktig setning.",
-    "options": ["Journalisten mente at politikeren svarte helt galt på spørsmålet fra publikum.", "Journalisten mente at politikeren svarte helt gal på spørsmålet fra publikum.", "Journalisten mente at politikeren svarte helt gale på spørsmålet fra publikum."],
+    "options": [
+      "Journalisten mente at politikeren svarte helt galt på spørsmålet fra publikum.",
+      "Journalisten mente at politikeren svarte helt gal på spørsmålet fra publikum.",
+      "Journalisten mente at politikeren svarte helt gale på spørsmålet fra publikum."
+    ],
     "answer": "Journalisten mente at politikeren svarte helt galt på spørsmålet fra publikum.",
     "hint": "Adverbet «galt» beskriver hvordan politikeren svarte (verbet), og bøyes derfor med -t.",
     "plusOnly": true
@@ -32691,7 +32722,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Velg den grammatisk riktige setningen.",
-    "options": ["Ballongen kom svevende ned fra himmelen.", "Ballongen kom svever ned fra himmelen.", "Ballongen kom å sveve ned fra himmelen."],
+    "options": [
+      "Ballongen kom svevende ned fra himmelen.",
+      "Ballongen kom svever ned fra himmelen.",
+      "Ballongen kom å sveve ned fra himmelen."
+    ],
     "answer": "Ballongen kom svevende ned fra himmelen.",
     "hint": "Etter «komme» følger presens partisipp (-ende), ikke presensform eller infinitiv.",
     "plusOnly": true
@@ -32702,7 +32737,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Hvilken setning bruker presens partisipp riktig for å beskrive måte?",
-    "options": ["Barnet kom stavrende bort til bordet.", "Barnet kom stavret bort til bordet.", "Barnet kom å stavre bort til bordet."],
+    "options": [
+      "Barnet kom stavrende bort til bordet.",
+      "Barnet kom stavret bort til bordet.",
+      "Barnet kom å stavre bort til bordet."
+    ],
     "answer": "Barnet kom stavrende bort til bordet.",
     "hint": "Presens partisipp dannes av verbstammen + -ende: stavre → stavrende.",
     "plusOnly": true
