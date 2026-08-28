@@ -196,6 +196,7 @@ if (DRY_RUN) {
 }
 
 const strip = (c) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { _key, _matchedExisting, ...rest } = c;
   return rest;
 };

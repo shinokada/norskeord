@@ -2423,7 +2423,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     explanationEn:
       'Three determinatives add emphasis to a noun phrase, each with its own placement and ' +
       'agreement pattern.\n\n' +
-      '• **egen/eget/egne** (own) — agrees with the noun\'s gender/number like a normal adjective ' +
+      "• **egen/eget/egne** (own) — agrees with the noun's gender/number like a normal adjective " +
       '(en-word → egen, et-word → eget, plural → egne), and normally follows a possessive instead ' +
       'of an indefinite article: "sin egen leilighet", "sitt eget hus", "sine egne regler".\n' +
       '• **selv** (invariant) — placed AFTER the word it emphasizes (a subject, object, or pronoun) ' +
@@ -2489,8 +2489,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'A compound (sammensatt) verb form has two parts: **verb 1** is the finite (bøyd) auxiliary ' +
       'verb — it carries the tense marking and is always in 2nd position in a statement — and ' +
       '**verb 2** is the non-finite main verb, either an infinitive or a perfektum partisipp, and ' +
-      'never changes form regardless of subject. The combination of verb 1\'s tense and verb 2\'s ' +
-      'form together name the whole verb phrase\'s **tempus** (tense):\n\n' +
+      "never changes form regardless of subject. The combination of verb 1's tense and verb 2's " +
+      "form together name the whole verb phrase's **tempus** (tense):\n\n" +
       '• **presens perfektum**: har/har (presens) + perfektum partisipp — "har spist", "har reist"\n' +
       '• **preteritum perfektum**: hadde (preteritum) + perfektum partisipp — "hadde spist"\n' +
       '• **futurum**: skal/vil (presens) + infinitiv — "skal spise", "vil reise"\n' +
