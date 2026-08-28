@@ -1052,8 +1052,8 @@ content-search (grep) tool for the user's filesystem — only whole-file reads (
    manageable in one call) to confirm no rule-text gap before drafting questions.
 
 **Remaining candidates** (direct-match/fold-in touches to existing topics, per the "Next session
-starting point" list earlier in this doc, minus `kvantorer` which is now done): `spesial-
-kvantorer`, `subjunksjon-oversikt`, `modale-adverb`, `modalverb-betydning`,
+starting point" list earlier in this doc, minus `kvantorer` and `spesial-kvantorer`, both now
+done): `subjunksjon-oversikt`, `modale-adverb`, `modalverb-betydning`,
 `sannsynlighet-uttrykk`, `hoflig-preteritum`, `man-en-upersonlig-pronomen`,
 `mene-synes-tro-tenke`, `preteritum-perfektum-og-futurum`, `partikkelverb-los-fast`,
 `adj-agreement`, `adj-comparison` (B2 extension), `noun-possessives` (B2 extension),
@@ -1065,7 +1065,15 @@ the `ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus
 rule-text folds noted inline in the Kapittel summaries («som/enn» into `adj-comparison`;
 «for/fordi» into `koordinerende-konjunksjoner`).
 
-**Recommended starting point next session:** `spesial-kvantorer` — natural sibling to the
-just-finished `kvantorer` touch (same Determinativer chapter, ingen/alle/hel/hver/enhver/begge),
-rule text already confirmed direct-match in the Pre-Phase-2 checklist, no groundwork needed
-beyond the user-run existing-count/ID check described above.
+**Recommended starting point next session:** `subjunksjon-oversikt` — direct-match content per
+the Pre-Phase-2 checklist, no groundwork needed beyond the user-run existing-count/ID check
+described above.
+
+**Unrelated infra note for future sessions:** a separate task (not part of this content plan) is
+now scoped in `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` — splitting
+`grammar.json` into per-CEFR-level files for lazy-loading, triggered by this session's file-size
+pain. Plan-only so far, not implemented. Two things matter for *this* doc's workflow if/when it
+lands: (1) `grammar.json` stays the single file this plan edits — no change to the process above;
+(2) the split files become generated artifacts, so after a content session someone will need to
+run the (not-yet-written) regeneration script before `/grammar`, `/learn/[level]`, or `/stats`
+reflect the new content in dev/prod. Check that doc's status before assuming this applies yet.

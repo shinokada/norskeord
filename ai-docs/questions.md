@@ -194,12 +194,52 @@ CLAUDE: No — `b2-grammar-pa-niva-arbeidsbok.md` is **not** finished. It's a la
 
 That's roughly 20+ touches still to go. The doc's front matter has a `data-completed:` field that's still empty — that gets filled in once every item above is done. No estimate on remaining sessions, but each touch is a fairly self-contained ~10-question batch, so it's steady, bounded work rather than open-ended.
 
-ME: 
+ME: Continue.
 
-CLAUDE:
+CLAUDE: Rule text for `spesial-kvantorer` is already complete (confirmed direct-match, no gap). Before drafting questions, can you run this in the project directory?
+
+```bash
+python3 -c "
+import json
+data = json.load(open('src/lib/data/grammar.json'))
+sk = [q for q in data if q.get('topic') == 'spesial-kvantorer']
+print('count:', len(sk))
+for q in sk:
+    print(q['id'], q['cefr'], q['type'], q.get('plusOnly'))
+"
+```
+
+This gives me the current count, highest ID, and whether `plusOnly` is used for this topic.
 
 
-ME: 
+ME: Here is outputs: 
+```
+count: 24
+gq-speskvant-001 B2 fill True
+gq-speskvant-002 B2 fill True
+gq-speskvant-003 B2 minimal-pair True
+gq-speskvant-004 B2 fill True
+gq-speskvant-005 B2 fill True
+gq-speskvant-006 B2 fill True
+gq-speskvant-007 B2 fill True
+gq-speskvant-008 B2 transform True
+gq-speskvant-009 B2 multiple-choice True
+gq-speskvant-010 B2 fill True
+gq-speskvant-011 B2 fill True
+gq-speskvant-012 B2 minimal-pair True
+gq-speskvant-013 B2 fill True
+gq-speskvant-014 B2 multiple-choice True
+gq-speskvant-015 B1 fill None
+gq-speskvant-016 B1 fill None
+gq-speskvant-017 B1 transform None
+gq-speskvant-018 B1 multiple-choice None
+gq-speskvant-019 B1 minimal-pair None
+gq-speskvant-020 B1 fill None
+gq-speskvant-021 B1 order None
+gq-speskvant-022 B1 minimal-pair None
+gq-speskvant-023 B1 fill None
+gq-speskvant-024 B1 transform None
+```
 
 CLAUDE: 
 
