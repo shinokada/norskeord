@@ -50,12 +50,7 @@ const DRY_RUN = process.argv.includes('--dry-run');
 // ---------------------------------------------------------------------------
 
 function normalizeTitle(t) {
-  return t
-    .replace(/🎧/g, '')
-    .replace(/–/g, '-')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .toUpperCase();
+  return t.replace(/🎧/g, '').replace(/–/g, '-').replace(/\s+/g, ' ').trim().toUpperCase();
 }
 
 function splitSections(text) {
@@ -66,7 +61,12 @@ function splitSections(text) {
     const m = /^(#{1,4})\s+(.*)$/.exec(line);
     if (m) {
       if (current) sections.push(current);
-      current = { level: m[1].length, rawTitle: m[2].trim(), title: normalizeTitle(m[2]), lines: [] };
+      current = {
+        level: m[1].length,
+        rawTitle: m[2].trim(),
+        title: normalizeTitle(m[2]),
+        lines: []
+      };
       continue;
     }
     if (current) current.lines.push(line);
@@ -113,7 +113,11 @@ const PARTICLE_VERB_NOMINALIZATION_SECTIONS = ['13 ORDLAGING AV PARTIKKELVERB'];
 
 // Sections named in the plan's §2 as "particle-verb" that stay excluded.
 const SKIPPED_SECTIONS = [
-  { title: '17 SAMMENSATTE VERB', reason: 'Not a particle-verb section — drills compound tense (verb1/verb2), not lexical particle verbs. Exclude from this plan.' }
+  {
+    title: '17 SAMMENSATTE VERB',
+    reason:
+      'Not a particle-verb section — drills compound tense (verb1/verb2), not lexical particle verbs. Exclude from this plan.'
+  }
 ];
 
 // ---------------------------------------------------------------------------
@@ -206,9 +210,41 @@ function extractParaphrase(section, fasitSection) {
 // ---------------------------------------------------------------------------
 
 const STOPWORDS = new Set([
-  'å', 'man', 'seg', 'noe', 'noen', 'jeg', 'du', 'meg', 'er', 'det', 'den', 'de',
-  'være', 'var', 'har', 'ha', 'kan', 'må', 'vil', 'skal', 'en', 'ei', 'et',
-  'som', 'på', 'til', 'av', 'om', 'i', 'for', 'med', 'og', 'så', 'ikke', 'du'
+  'å',
+  'man',
+  'seg',
+  'noe',
+  'noen',
+  'jeg',
+  'du',
+  'meg',
+  'er',
+  'det',
+  'den',
+  'de',
+  'være',
+  'var',
+  'har',
+  'ha',
+  'kan',
+  'må',
+  'vil',
+  'skal',
+  'en',
+  'ei',
+  'et',
+  'som',
+  'på',
+  'til',
+  'av',
+  'om',
+  'i',
+  'for',
+  'med',
+  'og',
+  'så',
+  'ikke',
+  'du'
 ]);
 
 // Word match: exact, or a >=4-char prefix match (crude stemming for inflected
@@ -312,7 +348,11 @@ function parseMarkdownTable(lines) {
   const tableLines = lines.map((l) => l.trim()).filter((l) => l.startsWith('|'));
   if (tableLines.length < 2) return null;
   const rows = tableLines.map((l) =>
-    l.replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => c.trim())
+    l
+      .replace(/^\|/, '')
+      .replace(/\|$/, '')
+      .split('|')
+      .map((c) => c.trim())
   );
   const header = rows[0];
   // rows[1] is the "---" separator row
@@ -563,7 +603,13 @@ console.log('Skipped sections (not particle verbs / not implemented):');
 for (const s of SKIPPED_SECTIONS) console.log(`  - ${s.title}: ${s.reason}`);
 
 if (!DRY_RUN) {
-  writeFileSync(resolve(OUT_DIR, 'candidates-raw.json'), JSON.stringify(allCandidates, null, 2) + '\n');
-  writeFileSync(resolve(OUT_DIR, 'sections-skipped.json'), JSON.stringify(SKIPPED_SECTIONS, null, 2) + '\n');
+  writeFileSync(
+    resolve(OUT_DIR, 'candidates-raw.json'),
+    JSON.stringify(allCandidates, null, 2) + '\n'
+  );
+  writeFileSync(
+    resolve(OUT_DIR, 'sections-skipped.json'),
+    JSON.stringify(SKIPPED_SECTIONS, null, 2) + '\n'
+  );
   console.log('\nWrote candidates-raw.json and sections-skipped.json');
 }

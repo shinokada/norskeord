@@ -28,10 +28,7 @@ import dictionary from 'dictionary-nb';
 import nspell from 'nspell';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const CANDIDATES_PATH = join(
-  __dirname,
-  '../draft/b2/pa-niva/data/candidates-raw.json'
-);
+const CANDIDATES_PATH = join(__dirname, '../draft/b2/pa-niva/data/candidates-raw.json');
 const ALLOWLIST_PATH = join(__dirname, 'spelling-allowlist.txt');
 
 const FIELDS_TO_CHECK = [
@@ -46,7 +43,7 @@ const FIELDS_TO_CHECK = [
   'sentence',
   'marked_word',
   'partikkelverb_raw',
-  'verb_raw',
+  'verb_raw'
 ];
 
 // Array-valued fields (checked separately from FIELDS_TO_CHECK, which assumes strings).
@@ -99,9 +96,7 @@ if (!existsSync(CANDIDATES_PATH)) {
   process.exit(1);
 }
 
-const candidates: Record<string, unknown>[] = JSON.parse(
-  readFileSync(CANDIDATES_PATH, 'utf8')
-);
+const candidates: Record<string, unknown>[] = JSON.parse(readFileSync(CANDIDATES_PATH, 'utf8'));
 
 console.log('Norwegian spelling check — candidates-raw.json (nb Hunspell dictionary)');
 console.log(`Allowlist: ${allowlist.size} word(s) loaded from ${ALLOWLIST_PATH.split('/').pop()}`);
@@ -123,7 +118,7 @@ candidates.forEach((candidate, index) => {
         index,
         field,
         word,
-        context: val,
+        context: val
       });
       const key = word.toLowerCase();
       wordCounts.set(key, (wordCounts.get(key) ?? 0) + 1);
@@ -143,7 +138,7 @@ candidates.forEach((candidate, index) => {
           index,
           field,
           word,
-          context: item,
+          context: item
         });
         const key = word.toLowerCase();
         wordCounts.set(key, (wordCounts.get(key) ?? 0) + 1);

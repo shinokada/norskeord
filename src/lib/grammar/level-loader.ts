@@ -12,20 +12,19 @@
 
 import type { CEFRLevel, GrammarQuestion } from '$lib/types';
 
-export const grammarLevelLoaders: Record<
-  CEFRLevel,
-  () => Promise<{ default: GrammarQuestion[] }>
-> = {
-  A1: () =>
-    import('$lib/data/grammar-a1.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
-  A2: () =>
-    import('$lib/data/grammar-a2.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
-  B1: () =>
-    import('$lib/data/grammar-b1.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
-  B2: () =>
-    import('$lib/data/grammar-b2.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
-  C: () => import('$lib/data/grammar-c.json') as unknown as Promise<{ default: GrammarQuestion[] }>
-};
+export const grammarLevelLoaders: Record<CEFRLevel, () => Promise<{ default: GrammarQuestion[] }>> =
+  {
+    A1: () =>
+      import('$lib/data/grammar-a1.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
+    A2: () =>
+      import('$lib/data/grammar-a2.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
+    B1: () =>
+      import('$lib/data/grammar-b1.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
+    B2: () =>
+      import('$lib/data/grammar-b2.json') as unknown as Promise<{ default: GrammarQuestion[] }>,
+    C: () =>
+      import('$lib/data/grammar-c.json') as unknown as Promise<{ default: GrammarQuestion[] }>
+  };
 
 /** Load and merge questions for a set of levels (order-preserving, level order). */
 export async function loadGrammarLevels(levels: CEFRLevel[]): Promise<GrammarQuestion[]> {
