@@ -102,7 +102,8 @@ const B2_TOPICS = new Set([
   'v2-word-order',
   'subordinate-order',
   'koordinerende-konjunksjoner',
-  'bade-og-verken-eller'
+  'bade-og-verken-eller',
+  'leddsetning-som-fundament'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
