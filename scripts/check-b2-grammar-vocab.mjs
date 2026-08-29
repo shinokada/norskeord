@@ -100,7 +100,9 @@ const B2_TOPICS = new Set([
   'setningsledd-identifikasjon',
   // Missed when added: both cefr: 'B2' only (first B2 content for each).
   'v2-word-order',
-  'subordinate-order'
+  'subordinate-order',
+  'koordinerende-konjunksjoner',
+  'bade-og-verken-eller'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
