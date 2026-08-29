@@ -105,7 +105,8 @@ const B2_TOPICS = new Set([
   'bade-og-verken-eller',
   'leddsetning-som-fundament',
   'verbprefiks-be-an-mis',
-  'sterke-verb'
+  'sterke-verb',
+  'preposisjoner-tid'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
