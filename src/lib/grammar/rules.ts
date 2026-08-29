@@ -73,11 +73,33 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'In Norwegian main clauses the finite verb must be the SECOND element. ' +
       'When the sentence starts with an adverbial, the subject and verb swap: ' +
       '"I går gikk jeg til butikken." (Yesterday I went to the store.) ' +
-      'Compare English: subject stays first. Norwegian: verb stays second.',
+      'Compare English: subject stays first. Norwegian: verb stays second. ' +
+      'This V2 inversion is NOT limited to adverbials — ANY element fronted for emphasis triggers ' +
+      'the same swap: a fronted OBJECT ("Den boken har jeg lest" = THAT book, I have read), a ' +
+      'fronted PREDICATIVE/COMPLEMENT ("Gladere har jeg aldri vært" = happier I have never been), ' +
+      'or a whole fronted SUBORDINATE CLAUSE acting as a single adverbial ("Når jeg kommer hjem, ' +
+      'spiser jeg middag" — the comma marks the end of the fronted clause, and the main clause ' +
+      'still inverts: "spiser jeg", not "jeg spiser"). ' +
+      'A common learner error is forgetting the inversion after ANY of these frontings and leaving ' +
+      'the subject first (*"I går jeg gikk..."), or after a fronted clause (*"Når jeg kommer hjem, ' +
+      'jeg spiser..."). Sentence adverbs like "aldri"/"alltid"/"ikke" still take their normal ' +
+      'mid-field position AFTER the inverted subject: "Dette har jeg aldri sett før" (not ' +
+      '"Dette har aldri jeg sett før").',
     explanationNb:
       'I norske hovedsetninger må det bøyde verbet alltid stå på ANDRE PLASS.\n\n' +
       'Når setningen begynner med et adverbial, bytter subjektet og verbet plass: "I går gikk jeg til butikken."\n\n' +
-      'Sammenlign med engelsk: subjektet er alltid først. Norsk: verbet er alltid på andreplass.'
+      'Sammenlign med engelsk: subjektet er alltid først. Norsk: verbet er alltid på andreplass.\n\n' +
+      'Denne V2-inversjonen gjelder ikke bare adverbial — ETHVERT ledd som flyttes fremst for å ' +
+      'fremheves, utløser samme ombytting: et fremflyttet **objekt** ("Den boken har jeg lest" = ' +
+      'DEN boken har jeg lest), et fremflyttet **predikativ** ("Gladere har jeg aldri vært"), eller ' +
+      'en hel fremflyttet **leddsetning** som fungerer som ett samlet adverbial ("Når jeg kommer ' +
+      'hjem, spiser jeg middag" — kommaet markerer slutten på den fremflyttede leddsetningen, og ' +
+      'helsetningen inverteres fortsatt: "spiser jeg", ikke "jeg spiser").\n\n' +
+      'En vanlig feil er å glemme inversjonen etter noen av disse fremflyttingene og la subjektet ' +
+      'stå først (*"I går jeg gikk..."), eller etter en fremflyttet leddsetning (*"Når jeg kommer ' +
+      'hjem, jeg spiser..."). Setningsadverb som "aldri"/"alltid"/"ikke" behold sin vanlige ' +
+      'plass midtfeltet ETTER det inverterte subjektet: "Dette har jeg aldri sett før" (ikke ' +
+      '"Dette har aldri jeg sett før").'
   },
 
   'modal-verb-order': {
@@ -256,7 +278,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'time-measure word before a noun, meaning "an X-long Y" or "an X-long period of Y": ' +
       '"to ukers ferie" (a two-week vacation), "en times pause" (a one-hour break), "ti ' +
       'måneders permisjon" (ten months of leave). This still follows the same genitive -s rule ' +
-      '— no apostrophe, the following noun stays indefinite.',
+      '— no apostrophe, the following noun stays indefinite. ' +
+      'POSSESSIVE PRONOUNS (eiendomsord) inflect for the gender/number of the noun they mark, ' +
+      'like an adjective: min/mi/mitt/mine (my), din/di/ditt/dine (your, singular), ' +
+      'sin/si/sitt/sine (his/her/its/their own — REFLEXIVE, see below), vår/vårt/våre (our), ' +
+      'deres (your, plural). Third person also has non-reflexive hans (his), hennes (her), ' +
+      "dens/dets (its, matching the noun's gender) and deres (their). " +
+      'Two word orders are both correct: PRENOMINAL with an indefinite noun (min bil, hennes hus) ' +
+      'or POSTPOSED with the noun in DEFINITE form (bilen min, huset hennes) — the postposed ' +
+      'form is more common in everyday speech. ' +
+      'The REFLEXIVE vs. NON-REFLEXIVE distinction is the trickiest part: sin/si/sitt/sine can ' +
+      'ONLY refer back to the SUBJECT of the same clause — "Hun tar bilen sin" = she takes HER ' +
+      'OWN car. If the possessor is someone OTHER than the subject, use hans/hennes/deres instead: ' +
+      '"Hun tar bilen hennes" = she takes ANOTHER WOMAN\'S car. This mirrors the plural pattern ' +
+      "already covered above (sine = the subject's own, deres = belonging to someone else).",
     explanationNb:
       'Norsk genitiv legger -s direkte til substantivet eller navnet UTEN apostrof: Eriks bil, Annes jobb, barnets leker.\n\n' +
       'Apostrof før -s er en engelsk vane — bruk den aldri på norsk: Erik’s → Eriks.\n\n' +
@@ -267,7 +302,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'substantiv, og betyr da "en X lang Y" eller "en periode på X med Y": "to ukers ferie" ' +
       '(ferie som varer i to uker), "en times pause" (en pause som varer i en time), "ti ' +
       'måneders permisjon" (permisjon som varer i ti måneder). Dette følger fortsatt samme ' +
-      'genitiv-s-regel — ingen apostrof, og substantivet som følger står i ubestemt form.'
+      'genitiv-s-regel — ingen apostrof, og substantivet som følger står i ubestemt form.\n\n' +
+      '**Eierpronomen (possessivpronomen)** bøyes etter kjønn/tall på substantivet, som et ' +
+      'adjektiv: min/mi/mitt/mine (min), din/di/ditt/dine (din), sin/si/sitt/sine (sin — ' +
+      '**REFLEKSIV**, se under), vår/vårt/våre (vår), deres (deres). Tredje person har ' +
+      'i tillegg ikke-refleksivt hans, hennes, dens/dets (samsvarer med substantivets kjønn) ' +
+      'og deres.\n\n' +
+      'To ordstillinger er begge riktige: **foranstilt** med substantiv i ubestemt form ' +
+      '(min bil, hennes hus), eller **etterstilt** med substantiv i BESTEMT form (bilen min, ' +
+      'huset hennes) — den etterstilte formen er vanligst i dagligtale.\n\n' +
+      'Det vanskeligste er skillet mellom **refleksivt og ikke-refleksivt**: sin/si/sitt/sine ' +
+      'kan BARE vise tilbake til SUBJEKTET i samme setning — "Hun tar bilen sin" = hun tar sin ' +
+      'EGEN bil. Hvis eieren er NOEN ANNEN enn subjektet, brukes hans/hennes/deres i stedet: ' +
+      '"Hun tar bilen hennes" = hun tar EN ANNEN KVINNES bil. Dette er samme mønster som ' +
+      'flertallskontrasten omtalt over (sine = subjektets egne, deres = tilhører noen andre).'
   },
 
   'adj-agreement': {
@@ -1783,7 +1831,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'A fifth modal verb, «bør» (past tense «burde»), expresses a RECOMMENDATION or piece of advice ' +
       '— what would be wise or advisable — and is noticeably weaker than «må»: "Du bør sove mer" ' +
       '(you should sleep more, a recommendation) is softer than "Du må sove mer" (you have to/must ' +
-      'sleep more, a real necessity, e.g. doctor\'s orders). «Bør» is also common with «synes» to give ' +
+      "sleep more, a real necessity, e.g. doctor's orders). «Bør» is also common with «synes» to give " +
       'a stated opinion about how things should be: "Jeg synes vi bør endre planen" (I think we ' +
       'should change the plan).',
     explanationNb:
