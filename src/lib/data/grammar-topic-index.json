@@ -821,12 +821,14 @@
   },
   "bade-og-verken-eller": {
     "levels": [
-      "B1"
+      "B1",
+      "B2"
     ],
     "countsByLevel": {
-      "B1": 32
+      "B1": 32,
+      "B2": 10
     },
-    "total": 32
+    "total": 42
   },
   "adjektiv-eller-adverb": {
     "levels": [

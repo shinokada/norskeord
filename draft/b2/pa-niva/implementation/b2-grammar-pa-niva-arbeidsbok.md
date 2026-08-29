@@ -1344,23 +1344,81 @@ adj-agreement`) confirmed clean at the start of the next session: 2902/2902 spli
   `check-grammar-norwegian.mjs v2-word-order subordinate-order` → 0 flagged across 54 questions
   (19 + 35). Both topics fully done and validated.
 
+- ✅ **Done — `koordinerende-konjunksjoner`** (Konjunksjoner §1, 3–4: og/eller/men/for/så
+  identification by meaning, the comma rule — comma before a coordinating conjunction only when
+  it joins two full main clauses, not two phrases sharing a subject — and the folded-in
+  «for»-vs-«fordi» frontability contrast from Konjunksjon §2, per the plan's note to fold that
+  distinction into this topic rather than treat it separately). This topic already had 10
+  C-level questions (`gq-koord-001`–`010`) covering all of this exact ground with literary/formal
+  vocabulary (soldat, bønnfalte, besørget, permittert) — zero B2 content. Added 10 new B2
+  questions (`gq-koord-011`–`020`) reusing the same rule-text skills at simpler, everyday B2
+  vocabulary (paraply, buss, middag, vær, frokost, jobb): 5 fill (for-causal, eller-alternative,
+  men-contrast, så-as-tidsadverb-triggering-V2, så-as-subjunksjon-å-slik-at), 3 minimal-pair
+  (comma-not-needed for shared-subject verb phrases, comma-needed for two full clauses, and the
+  for-vs-fordi frontability contrast), 1 transform (join two sentences with «for»), 1 order
+  (two full clauses joined with «og» requiring a comma). All `plusOnly: true`, `cefr: 'B2'`.
+  Fresh scenarios throughout, not the C-level set's sentences. Topic now has 20 total questions
+  (10 → 20; B2 count 0 → 10 — first B2 content for this topic). Applied to the real
+  `grammar.json` via `Filesystem:edit_file`, re-verified: 2942 total questions file-wide, no
+  duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** added `koordinerende-konjunksjoner`
+  (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set, same fix as the previous
+  two topics.
+
+  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs koordinerende-konjunksjoner`,
+  `check-grammar-norwegian.mjs koordinerende-konjunksjoner`) not yet run this session** — run
+  these next before starting a new topic.
+
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs koordinerende-konjunksjoner` → 0 unmatched;
+  `check-grammar-norwegian.mjs koordinerende-konjunksjoner` → 0 flagged).
+
+- ✅ **Done — `bade-og-verken-eller`** (Konjunksjoner §5: både...og / verken...eller). This
+  topic already had 32 B1 questions (`gq-badeverken-001`–`032`) covering both/verken/enten with
+  nouns/adjectives/verbs, the no-extra-«ikke» rule, fronted-«enten» V2 inversion, and the
+  «også»/«heller» agreement pattern — zero B2 content. Checked all 32 first: fronted-«enten» V2
+  was tested three times (`017`/`019`/`020`), but the same fronting-triggers-V2 pattern was never
+  tested for «både» or «verken», and every «både»/«verken» example joined single words or
+  phrases sharing one subject, never two full leddsetninger (e.g. indirect questions) or two
+  full main clauses with different subjects. Added 10 new B2 questions (`gq-badeverken-033`–
+  `042`): 2 order + 2 minimal-pair testing fronted-«verken» and fronted-«både» V2 (mirroring the
+  existing «enten» pattern), 2 fill testing «verken»/«både» joining two leddsetninger (hvor/hva,
+  hvor/hvorfor indirect questions), 1 transform collapsing two «ikke … heller» leddsetning-
+  sentences into one economical «verken … eller» sentence, 1 transform building a fronted
+  «verken … eller» sentence from two different-subject clauses, 1 multiple-choice testing
+  fronted-V2 + correct pairing word («eller» not «og») together in a financial-hardship scenario,
+  and 1 minimal-pair testing the no-extra-«ikke» rule at leddsetning level (not just single
+  words, as B1 tested it). All `plusOnly: true`, `cefr: 'B2'`. Fresh scenarios throughout. Topic
+  now has 42 total questions (32 → 42; B2 count 0 → 10 — first B2 content for this topic).
+  Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2952 total
+  questions file-wide, no duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** added `bade-og-verken-eller`
+  (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set, same fix as the previous
+  three topics.
+
+  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs bade-og-verken-eller`,
+  `check-grammar-norwegian.mjs bade-og-verken-eller`) not yet run this session** — run these
+  next before starting a new topic.
+
 ## Next session starting point (session ending — read this first)
 
 Everything above is applied to the real `grammar.json`/`rules.ts` up to and including
-`subordinate-order`, and fully validated (`pnpm grammar:split` reconciled, both validators
-clean for `v2-word-order` and `subordinate-order`).
+`bade-og-verken-eller`. **Validators not yet run this session** — run `pnpm grammar:split`,
+`check-b2-grammar-vocab.mjs bade-og-verken-eller`, and `check-grammar-norwegian.mjs
+bade-og-verken-eller` first thing next session before starting new content.
 
 **Remaining candidates** (direct-match/fold-in touches to existing topics, minus everything done
-above through `subordinate-order`): `koordinerende-konjunksjoner` (B2 extension),
-`bade-og-verken-eller` (B2 extension), `leddsetning-som-fundament` (B2 extension),
+above through `bade-og-verken-eller`): `leddsetning-som-fundament` (B2 extension),
 `verbprefiks-be-an-mis` (B2 extension), `sterke-verb`/`partisipp-former` (Verb §1),
 `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and the `ikke-placement`/`imperativ` B2
-extensions (Helsetninger §14–17) — plus the small remaining rule-text folds noted inline in the
-Kapittel summaries («som/enn» into `adj-comparison`; «for/fordi» into
-`koordinerende-konjunksjoner`).
+extensions (Helsetninger §14–17) — plus the small remaining rule-text fold noted inline in the
+Kapittel summaries («som/enn» into `adj-comparison`).
 
-**Recommended starting point next session:** `koordinerende-konjunksjoner` — currently C-only,
-extend down to B2/B1 (Konjunksjoner §1, 3–5: og/eller/men/for/så, både...og, verken...eller).
+**Recommended starting point next session:** `leddsetning-som-fundament` — currently C-only per
+the earlier Kapittel notes, similar shape to the `koordinerende-konjunksjoner` extension just
+done (reuse the existing rule text at simpler B2-appropriate vocabulary/scenarios).
 
 **Infra note:** `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` is now done and
 landed (see the "Process note: workflow now uses grammar-b2.json + grammar:split" section above
