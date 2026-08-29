@@ -1402,23 +1402,56 @@ adj-agreement`) confirmed clean at the start of the next session: 2902/2902 spli
   `check-grammar-norwegian.mjs bade-og-verken-eller`) not yet run this session** — run these
   next before starting a new topic.
 
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs bade-og-verken-eller` → 0 unmatched;
+  `check-grammar-norwegian.mjs bade-og-verken-eller` → 0 flagged).
+
+- ✅ **Done — `leddsetning-som-fundament`** (a subordinate clause filling the sentence's front
+  field, verb still second, plus setningsadverbial placement both inside the fronted leddsetning
+  and inside the resulting main clause — and the same skill for an INNSKUTT/embedded
+  leddsetning, i.e. an indirect question that isn't fronted at all). This topic already had 11
+  C-level questions (`gq-ledd-001`–`011`) covering exactly this ground with literary/abstract
+  vocabulary (kritikerne, fagfolk, hegemoni, forhandlingene, formaner barna) — zero B2 content;
+  direct match to the rule text, no gap. Added 10 new B2 questions (`gq-ledd-012`–`021`) reusing
+  the same skills at everyday B2 vocabulary (buss/tog forsinket, regning, strøm, lærer streng,
+  pris, produkt): 4 fill (adverbial-before-verb in a fronted fordi-/selv om-leddsetning, the
+  3-word main-clause-after-fronted-leddsetning order, and adverbial-before-verb inside an
+  innskutt hvorfor-leddsetning), 2 transform (join two sentences with fordi/selv om fremst,
+  keeping both clauses' adverbials in place), 2 order (fronted fordi + V2 main clause; innskutt
+  hvorfor-leddsetning adverbial placement), 2 minimal-pair (adverbial-before-verb correctness in
+  a fronted leddsetning; same check inside an innskutt leddsetning). All `plusOnly: true`,
+  `cefr: 'B2'`. Fresh scenarios throughout, not the C-level set's sentences. Topic now has 21
+  total questions (11 → 21; B2 count 0 → 10 — first B2 content for this topic). Applied to the
+  real `grammar.json` via `Filesystem:edit_file`, re-verified: 2962 total questions file-wide, no
+  duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** added `leddsetning-som-fundament`
+  (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set, same fix as the previous
+  four topics.
+
+  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs leddsetning-som-fundament`,
+  `check-grammar-norwegian.mjs leddsetning-som-fundament`) not yet run this session** — run
+  these next before starting a new topic.
+
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs leddsetning-som-fundament` → 0 unmatched;
+  `check-grammar-norwegian.mjs leddsetning-som-fundament` → 0 flagged).
+
 ## Next session starting point (session ending — read this first)
 
 Everything above is applied to the real `grammar.json`/`rules.ts` up to and including
-`bade-og-verken-eller`. **Validators not yet run this session** — run `pnpm grammar:split`,
-`check-b2-grammar-vocab.mjs bade-og-verken-eller`, and `check-grammar-norwegian.mjs
-bade-og-verken-eller` first thing next session before starting new content.
+`leddsetning-som-fundament`. **Validators not yet run this session** — run `pnpm grammar:split`,
+`check-b2-grammar-vocab.mjs leddsetning-som-fundament`, and `check-grammar-norwegian.mjs
+leddsetning-som-fundament` first thing next session before starting new content.
 
 **Remaining candidates** (direct-match/fold-in touches to existing topics, minus everything done
-above through `bade-og-verken-eller`): `leddsetning-som-fundament` (B2 extension),
-`verbprefiks-be-an-mis` (B2 extension), `sterke-verb`/`partisipp-former` (Verb §1),
-`preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and the `ikke-placement`/`imperativ` B2
-extensions (Helsetninger §14–17) — plus the small remaining rule-text fold noted inline in the
-Kapittel summaries («som/enn» into `adj-comparison`).
+above through `leddsetning-som-fundament`): `verbprefiks-be-an-mis` (B2 extension),
+`sterke-verb`/`partisipp-former` (Verb §1), `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and
+the `ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus the small remaining
+rule-text fold noted inline in the Kapittel summaries («som/enn» into `adj-comparison`).
 
-**Recommended starting point next session:** `leddsetning-som-fundament` — currently C-only per
-the earlier Kapittel notes, similar shape to the `koordinerende-konjunksjoner` extension just
-done (reuse the existing rule text at simpler B2-appropriate vocabulary/scenarios).
+**Recommended starting point next session:** `verbprefiks-be-an-mis` — likely a similar
+direct-match B2 extension.
 
 **Infra note:** `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` is now done and
 landed (see the "Process note: workflow now uses grammar-b2.json + grammar:split" section above

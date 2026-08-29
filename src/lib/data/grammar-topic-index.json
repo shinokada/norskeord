@@ -320,12 +320,14 @@
   },
   "leddsetning-som-fundament": {
     "levels": [
+      "B2",
       "C"
     ],
     "countsByLevel": {
-      "C": 11
+      "C": 11,
+      "B2": 10
     },
-    "total": 11
+    "total": 21
   },
   "omskriving-passiv": {
     "levels": [

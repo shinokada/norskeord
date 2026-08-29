@@ -11358,6 +11358,167 @@
     "plusOnly": true
   },
   {
+    "id": "gq-ledd-012",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge (leddsetningsrekkefølge).",
+    "sentence": "Fordi hun _____ har dårlig tid, drar hun tidlig hjem.",
+    "words": [
+      "alltid",
+      "har"
+    ],
+    "answer": "alltid har",
+    "hint": "I en leddsetning (fordi-setning) kommer setningsadverbialet «alltid» før det finitte verbet: alltid har, ikke har alltid.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-013",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge (leddsetningsrekkefølge).",
+    "sentence": "Selv om han _____ er syk, går han på jobb.",
+    "words": [
+      "egentlig",
+      "er"
+    ],
+    "answer": "egentlig er",
+    "hint": "Leddsetning: setningsadverbialet «egentlig» kommer før det finitte verbet «er», ikke etter.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-014",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Omskriv til én setning: sett årsaksleddsetningen med «fordi» fremst, og behold setningsadverbialene i riktig posisjon.",
+    "source": "Bussen kommer sjelden i tide. Folk blir faktisk irriterte.",
+    "answer": "Fordi bussen sjelden kommer i tide, blir folk faktisk irriterte.",
+    "alternates": [
+      "Fordi bussen sjelden kommer i tide blir folk faktisk irriterte"
+    ],
+    "hint": "Leddsetning som fundament: fordi + subjekt + adverbial (sjelden) + verb (kommer). Helsetningen inverterer fortsatt: verb (blir) + subjekt (folk) + adverbial (faktisk) + resten.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-015",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Fordi",
+      "ingen",
+      "betaler",
+      "regningen",
+      "mister",
+      "de",
+      "faktisk",
+      "strømmen"
+    ],
+    "answer": "Fordi ingen betaler regningen, mister de faktisk strømmen.",
+    "alternates": [
+      "Fordi ingen betaler regningen mister de faktisk strømmen"
+    ],
+    "hint": "Fordi-setningen fyller forfeltet; helsetningens verb (mister) kommer fortsatt på andreplass, etterfulgt av subjektet (de) og deretter setningsadverbialet (faktisk).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-016",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Fordi hun aldri ringer hjem, blir foreldrene bekymret.",
+    "optionB": "Fordi hun ringer aldri hjem, blir foreldrene bekymret.",
+    "answer": "A",
+    "explanation": "I en leddsetning (fordi-setning) må setningsadverbialet «aldri» komme før det finitte verbet: hun aldri ringer, ikke hun ringer aldri — den rekkefølgen er forbeholdt helsetninger.",
+    "hint": "Sjekk plasseringen av «aldri» i forhold til verbet i fordi-setningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-017",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Sett de tre ordene i riktig rekkefølge (helsetning etter en fremskutt leddsetning).",
+    "sentence": "Fordi toget er forsinket, _____ hjem sent.",
+    "words": [
+      "kommer",
+      "folk",
+      "ofte"
+    ],
+    "answer": "kommer folk ofte",
+    "hint": "Etter den fremskutte fordi-setningen følger helsetningen fortsatt V2: verb (kommer) — subjekt (folk) — setningsadverbial (ofte).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-018",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Ingen",
+      "vet",
+      "hvorfor",
+      "hun",
+      "alltid",
+      "kommer",
+      "for",
+      "sent"
+    ],
+    "answer": "Ingen vet hvorfor hun alltid kommer for sent.",
+    "alternates": [
+      "Ingen vet hvorfor hun alltid kommer for sent"
+    ],
+    "hint": "Inni den innskutte hvorfor-setningen står setningsadverbialet «alltid» rett før det finitte verbet «kommer» — leddsetningsrekkefølge gjelder selv uten å skyve hele setningen fremst.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-019",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Ingen forstår hvorfor han egentlig slutter i jobben.",
+    "optionB": "Ingen forstår hvorfor han slutter egentlig i jobben.",
+    "answer": "A",
+    "explanation": "Inni den innskutte hvorfor-setningen må setningsadverbialet «egentlig» stå før det finitte verbet «slutter» — leddsetningsrekkefølge gjelder også for innskutte spørsmål, ikke bare fremskutte leddsetninger.",
+    "hint": "Sjekk plasseringen av «egentlig» i forhold til verbet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-020",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Omskriv til én setning: sett innrømmelsesleddsetningen med «selv om» fremst, og behold setningsadverbialene i riktig posisjon.",
+    "source": "Prisen er egentlig høy. Folk kjøper jo produktet likevel.",
+    "answer": "Selv om prisen egentlig er høy, kjøper folk jo produktet likevel.",
+    "alternates": [
+      "Selv om prisen egentlig er høy kjøper folk jo produktet likevel"
+    ],
+    "hint": "Leddsetning: adverbial (egentlig) før verbet (er). Helsetningen inverterer: verb (kjøper) — subjekt (folk) — adverbial (jo) — resten.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ledd-021",
+    "topic": "leddsetning-som-fundament",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge (innskutt leddsetning).",
+    "sentence": "Ingen skjønner hvorfor hun _____ sent på jobb.",
+    "words": [
+      "ofte",
+      "kommer"
+    ],
+    "answer": "ofte kommer",
+    "hint": "Selv om denne hvorfor-setningen ikke står fremst, er den likevel en leddsetning: adverbialet «ofte» står før verbet «kommer».",
+    "plusOnly": true
+  },
+  {
     "id": "gq-komma-043",
     "topic": "kommaregler",
     "cefr": "B2",
