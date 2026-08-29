@@ -1701,7 +1701,16 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'condition = "unless"), «selv om» (concession), «for at» (purpose, distinct from «fordi»), ' +
       '«før»/«etter at» (sequence), «som» (relative). Choosing correctly means reading the whole ' +
       'sentence for meaning first, then picking the subjunction that matches — several of these ' +
-      'can superficially look interchangeable but express a completely different logical relation.',
+      'can superficially look interchangeable but express a completely different logical relation.\n\n' +
+      'Two more categories complete the set: a RESULT clause uses «så + adjective/adverb + at» to ' +
+      'say what consequence followed from a degree: "Hun var så trøtt at hun sovnet på bussen" ' +
+      '(She was so tired that she fell asleep on the bus) — distinct from a pure cause clause with ' +
+      '«fordi», since the leddsetning here states an effect of an intensity, not a reason. A ' +
+      'COMPARISON clause uses «som» after words like «akkurat»/«nøyaktig», or after a verb ' +
+      'describing an expectation/plan, to compare the actual situation to another one: "Det gikk ' +
+      'som planlagt" (It went as planned), "Hun gjorde akkurat som han sa" (She did exactly as he ' +
+      'said) — this «som» is a subjunction introducing a full clause of comparison, not the ' +
+      'relative pronoun «som» that replaces a noun (see the separate `relative-som` topic).',
     explanationNb:
       'Norsk har mange subjunksjoner som hver innleder en leddsetning med en bestemt betydning:\n\n' +
       '• **da / når** = tid\n' +
@@ -1711,7 +1720,10 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **for at** = hensikt, ulikt «fordi»\n' +
       '• **før / etter at** = rekkefølge\n' +
       '• **som** = relativ\n\n' +
-      'Å velge riktig betyr å lese hele setningen for betydning først, og så velge subjunksjonen som passer — flere av disse kan se like ut ved første blikk, men uttrykker en helt ulik logisk sammenheng.'
+      'Å velge riktig betyr å lese hele setningen for betydning først, og så velge subjunksjonen som passer — flere av disse kan se like ut ved første blikk, men uttrykker en helt ulik logisk sammenheng.\n\n' +
+      'To kategorier til fullfører settet:\n\n' +
+      '• **følge**: «så + adjektiv/adverb + at» uttrykker en konsekvens av en grad: «Hun var så trøtt at hun sovnet på bussen» — ulikt en ren årsakssetning med «fordi», siden leddsetningen her sier hva som fulgte AV graden, ikke hvorfor noe skjedde.\n' +
+      '• **sammenlikning**: «som» etter «akkurat»/«nøyaktig», eller etter et verb som uttrykker en forventning/plan, sammenlikner den faktiske situasjonen med en annen: «Det gikk som planlagt», «Hun gjorde akkurat som han sa». Dette «som» er en subjunksjon som innleder en hel sammenlikningssetning — ikke det relative pronomenet «som» som erstatter et substantiv (se den egne `relative-som`-emnet).'
   },
 
   'partisipp-former': {
@@ -1767,7 +1779,13 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'from someone else, «vil» expresses desire or a prediction, «må» expresses necessity or ' +
       'obligation. In context, several can superficially seem to fit, but only one matches the ' +
       'actual meaning intended — e.g. "Skal vi lage kake?" (proposal) is different from "Vil du ' +
-      'lage kake?" (asking about desire) and "Kan du lage kake?" (asking about ability/willingness).',
+      'lage kake?" (asking about desire) and "Kan du lage kake?" (asking about ability/willingness).\n\n' +
+      'A fifth modal verb, «bør» (past tense «burde»), expresses a RECOMMENDATION or piece of advice ' +
+      '— what would be wise or advisable — and is noticeably weaker than «må»: "Du bør sove mer" ' +
+      '(you should sleep more, a recommendation) is softer than "Du må sove mer" (you have to/must ' +
+      'sleep more, a real necessity, e.g. doctor\'s orders). «Bør» is also common with «synes» to give ' +
+      'a stated opinion about how things should be: "Jeg synes vi bør endre planen" (I think we ' +
+      'should change the plan).',
     explanationNb:
       'Fire modalverb dekker ulike betydninger:\n\n' +
       '• **kan** — uttrykker evne eller tillatelse\n' +
@@ -1776,7 +1794,12 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **må** — uttrykker nødvendighet eller plikt\n\n' +
       'I sammenheng kan flere se ut til å passe, men bare ett stemmer med den faktiske betydningen ' +
       'som er ment — f.eks. er «Skal vi lage kake?» (forslag) noe annet enn «Vil du lage kake?» ' +
-      '(spør om ønske) og «Kan du lage kake?» (spør om evne/vilje).'
+      '(spør om ønske) og «Kan du lage kake?» (spør om evne/vilje).\n\n' +
+      'Et femte modalverb, **bør** (preteritum **burde**), uttrykker en ANBEFALING — noe som ville vært ' +
+      'lurt eller rådelig — og er merkbart svakere enn **må**: «Du bør sove mer» (en anbefaling) er ' +
+      'mildere enn «Du må sove mer» (en reell nødvendighet, f.eks. legens ordre). «Bør» brukes ofte ' +
+      'sammen med «synes» for å uttrykke en mening om hvordan noe bør være: «Jeg synes vi bør endre ' +
+      'planen».'
   },
 
   'sannsynlighet-uttrykk': {
@@ -1787,15 +1810,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Several expressions cover different degrees of certainty about something happening: «det er ' +
       'mulig at» (possible), «det er sannsynlig at» / «det er lite sannsynlig at» (likely/unlikely), ' +
       '«det kommer til å» (prediction, fairly confident), «det kan hende at» (might), «jeg tror»/«jeg ' +
-      "antar» (I think/assume — speaker's own uncertain belief). Paraphrasing between them means " +
-      'keeping the same degree of certainty, not just swapping in any probability phrase.',
+      "antar» (I think/assume — speaker's own uncertain belief). «Trolig» and «antakelig» are " +
+      'single-adverb paraphrases of «det er sannsynlig at» — same degree of certainty, just ' +
+      'compressed into one sentence adverb: "Det er sannsynlig at hun kommer" = "Hun kommer ' +
+      'trolig/antakelig." Paraphrasing between them means keeping the same degree of certainty, ' +
+      'not just swapping in any probability phrase.',
     explanationNb:
       'Flere uttrykk dekker ulike grader av sikkerhet om at noe skal skje:\n\n' +
       '• **det er mulig at** = mulig\n' +
       '• **det er sannsynlig at / det er lite sannsynlig at** = sannsynlig/usannsynlig\n' +
       '• **det kommer til å** = spådom, ganske sikker\n' +
       '• **det kan hende at** = kan skje\n' +
-      '• **jeg tror / jeg antar** = talerens egen usikre oppfatning\n\n' +
+      '• **jeg tror / jeg antar** = talerens egen usikre oppfatning\n' +
+      '• **trolig / antakelig** = ettordsomskrivning av «det er sannsynlig at», samme grad av ' +
+      'sikkerhet: «Det er sannsynlig at hun kommer» = «Hun kommer trolig/antakelig.»\n\n' +
       'Å skrive om mellom dem betyr å beholde samme grad av sikkerhet, ikke bare bytte inn et hvilket som helst sannsynlighetsuttrykk.'
   },
 
