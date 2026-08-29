@@ -1437,21 +1437,72 @@ adj-agreement`) confirmed clean at the start of the next session: 2902/2902 spli
   `check-b2-grammar-vocab.mjs leddsetning-som-fundament` → 0 unmatched;
   `check-grammar-norwegian.mjs leddsetning-som-fundament` → 0 flagged).
 
+- ✅ **Done — `verbprefiks-be-an-mis`** (Verb-forstavelser: be-/an-/mis- meaning-shift pairs from
+  the source rule text). This topic already had 12 B1 questions (`gq-verbprefiks-001`–`012`)
+  covering misforstå/mislykkes (mis-), beslutte (be-), and ansette/angi (an-) — zero B2 content,
+  and zero C content either (checked both first). Added 10 new B2 questions
+  (`gq-verbprefiks-013`–`022`) covering five fresh be-/an-/mis- verb pairs not touched at B1:
+  `anta` vs `ta` (fill), `bekrefte` vs `benekte` (minimal-pair, courtroom/witness scenario),
+  `beskytte` vs the unrelated look-alike `skyte` (fill), `anmelde` vs `melde` (fill, filing a
+  police report), `anerkjenne` vs `kjenne` (minimal-pair, union/workplace scenario), `mistenke`
+  vs `tenke` (fill, police investigation), `bevise` (transform — preteritum), `benytte` vs the
+  intransitive `nytte` (fill), `anbefale` (order — indirect-object + infinitiv-med-å pattern),
+  and `mishandle` vs `handle` (minimal-pair, animal-welfare scenario). All `plusOnly: true`,
+  `cefr: 'B2'`. Fresh professional/everyday B2 scenarios throughout (courtroom, police,
+  workplace, animal welfare), not the B1 set's sentences. Topic now has 22 total questions
+  (12 → 22; B2 count 0 → 10 — first B2 content for this topic). Applied to the real
+  `grammar.json` via `Filesystem:edit_file`, re-verified: 2972 total questions file-wide, no
+  duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** added `verbprefiks-be-an-mis`
+  (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set, same fix as the previous
+  six topics.
+
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs verbprefiks-be-an-mis` → 0 unmatched;
+  `check-grammar-norwegian.mjs verbprefiks-be-an-mis` → 0 flagged).
+
+- ✅ **Done — `sterke-verb`** (Verb §1, Uregelrette verb / bøyingstabell — the irregular-verb
+  conjugation exercise). This topic already had 10 A2 questions (`gq-sv-001`–`010`, basic
+  preteritum of gå/komme/se/ta/få/gi/sove/drikke/treffe/sitte) and 16 B1 questions
+  (`gq-sv-011`–`026`, presens perfektum with «har» + partisipp, and partisipp-as-definite-
+  adjective for brukket/sprukket/forkommen/skrevet/frosset) — zero B2 content. Checked C level
+  too: separate `sterke-verb-c` topic (12 questions, rare literary verbs like gale/briste/by/
+  sige/fyke/kvekke) — no overlap risk, distinct topic id. The plan noted a fold-into-
+  `partisipp-former` alternative, but that topic's 31 B2 questions all come from an unrelated
+  rule (Adverb §9, presens partisipp/«hvordan kom de?»), so extended `sterke-verb` directly
+  instead. Added 10 new B2 questions (`gq-sv-027`–`036`) covering ten fresh strong verbs not
+  touched at A2/B1: `binde` (fill), `bære` (transform, perfektum), `henge` intransitivt/sterkt
+  (hang) vs. transitivt/svakt (hengte) (minimal-pair — the classic same-participle-different-
+  preteritum trap), `stjele` (fill), `synge` (transform), `hjelpe` vs. the common overregularized
+  error «hjelpet» (minimal-pair), `dra` (fill), `be`→`bedt` (order, with setningsadverbial
+  placement), `forstå` (transform, preteritum), and `skyte` (multiple-choice). All
+  `plusOnly: true`, `cefr: 'B2'`. Fresh everyday/narrative scenarios throughout (løpetur,
+  koffert, bilde på veggen, hagearbeid, fjelltur, unnskyldning, jeger). Topic now has 36 total
+  questions (26 → 36; B2 count 0 → 10 — first B2 content for this topic). Applied to the real
+  `grammar.json` via `Filesystem:edit_file`, re-verified: 2982 total questions file-wide, no
+  duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** added `sterke-verb`
+  (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set, same fix as the previous
+  seven topics.
+
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs sterke-verb` → 0 unmatched;
+  `check-grammar-norwegian.mjs sterke-verb` → 0 flagged).
+
 ## Next session starting point (session ending — read this first)
 
 Everything above is applied to the real `grammar.json`/`rules.ts` up to and including
-`leddsetning-som-fundament`. **Validators not yet run this session** — run `pnpm grammar:split`,
-`check-b2-grammar-vocab.mjs leddsetning-som-fundament`, and `check-grammar-norwegian.mjs
-leddsetning-som-fundament` first thing next session before starting new content.
+`sterke-verb`, and validators have been run and pass clean.
 
 **Remaining candidates** (direct-match/fold-in touches to existing topics, minus everything done
-above through `leddsetning-som-fundament`): `verbprefiks-be-an-mis` (B2 extension),
-`sterke-verb`/`partisipp-former` (Verb §1), `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and
-the `ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus the small remaining
+above through `sterke-verb`): `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and the
+`ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus the small remaining
 rule-text fold noted inline in the Kapittel summaries («som/enn» into `adj-comparison`).
 
-**Recommended starting point next session:** `verbprefiks-be-an-mis` — likely a similar
-direct-match B2 extension.
+**Recommended starting point next session:** `preposisjoner-tid` — likely a similar direct-match
+B2 extension.
 
 **Infra note:** `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` is now done and
 landed (see the "Process note: workflow now uses grammar-b2.json + grammar:split" section above

@@ -541,6 +541,159 @@
     "plusOnly": true
   },
   {
+    "id": "gq-sv-027",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn preteritumsformen.",
+    "sentence": "Han _____ skolissene før løpeturen. (binde)",
+    "words": [
+      "bandt",
+      "bundet",
+      "binder"
+    ],
+    "answer": "bandt",
+    "hint": "binde er et sterkt verb: binde → bandt (preteritum) → har bundet (perfektum).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-028",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om til presens perfektum (bruk «har» + perfektum partisipp).",
+    "source": "Hun bærer den tunge kofferten opp trappen.",
+    "answer": "Hun har båret den tunge kofferten opp trappen.",
+    "alternates": [
+      "Hun har båret den tunge kofferten opp trappen"
+    ],
+    "hint": "bære er et sterkt verb: bære → bar (preteritum) → har båret (perfektum).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-029",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Bildet hang skjevt på veggen i flere år.",
+    "optionB": "Bildet hengte skjevt på veggen i flere år.",
+    "answer": "A",
+    "explanation": "Intransitivt «henge» (å være opphengt) er sterkt: henge → hang → har hengt. Transitivt «henge» (å henge noe opp) er svakt: hengte → har hengt. Siden bildet selv henger, uten objekt, skal du bruke den sterke formen «hang».",
+    "hint": "Uten objekt (bildet henger av seg selv) er «henge» sterkt: hang, ikke hengte.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-030",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn preteritumsformen.",
+    "sentence": "Tyven _____ smykkene fra utstillingsvinduet. (stjele)",
+    "words": [
+      "stjal",
+      "stjålet",
+      "stjeler"
+    ],
+    "answer": "stjal",
+    "hint": "stjele er et sterkt verb: stjele → stjal (preteritum) → har stjålet (perfektum).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-031",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om til presens perfektum (bruk «har» + perfektum partisipp).",
+    "source": "Koret synger julesanger på torget.",
+    "answer": "Koret har sunget julesanger på torget.",
+    "alternates": [
+      "Koret har sunget julesanger på torget"
+    ],
+    "hint": "synge er et sterkt verb: synge → sang (preteritum) → har sunget (perfektum).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-032",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Hun hjalp naboen med hagearbeidet i går.",
+    "optionB": "Hun hjelpet naboen med hagearbeidet i går.",
+    "answer": "A",
+    "explanation": "hjelpe er et sterkt verb: hjelpe → hjalp (preteritum), ikke den svakt-bøyde formen «hjelpet».",
+    "hint": "Preteritum av hjelpe er hjalp, ikke hjelpet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-033",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn preteritumsformen.",
+    "sentence": "Vi _____ til fjells tidlig lørdag morgen. (dra)",
+    "words": [
+      "dro",
+      "drar",
+      "dratt"
+    ],
+    "answer": "dro",
+    "hint": "dra er et sterkt verb: dra → dro (preteritum) → har dratt (perfektum).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-034",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "har",
+      "Han",
+      "aldri",
+      "bedt",
+      "om",
+      "unnskyldning"
+    ],
+    "answer": "Han har aldri bedt om unnskyldning.",
+    "alternates": [
+      "Han har aldri bedt om unnskyldning"
+    ],
+    "hint": "be er et sterkt verb: be → ba (preteritum) → har bedt (perfektum). Setningsadverbet «aldri» plasseres mellom har og partisippet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-035",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om til preteritum.",
+    "source": "Jeg forstår ikke instruksjonene.",
+    "answer": "Jeg forsto ikke instruksjonene.",
+    "alternates": [
+      "Jeg forsto ikke instruksjonene",
+      "Jeg forstod ikke instruksjonene"
+    ],
+    "hint": "forstå er et sterkt verb: forstå → forsto/forstod (preteritum) → har forstått (perfektum).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-036",
+    "topic": "sterke-verb",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Jegeren løftet geværet og siktet på elgen i skogen. Velg riktig setning.",
+    "options": [
+      "Han skjøt, men bommet.",
+      "Han skyter, men bommet.",
+      "Han skutt, men bommet."
+    ],
+    "answer": "Han skjøt, men bommet.",
+    "hint": "skyte er et sterkt verb: skyte → skjøt (preteritum) → har skutt (perfektum).",
+    "plusOnly": true
+  },
+  {
     "id": "gq-prep-sted-055",
     "topic": "preposisjoner-sted",
     "cefr": "B2",
@@ -11850,6 +12003,144 @@
     "source": "Barna løp inn i huset mens de lo.",
     "answer": "Barna løp leende inn i huset.",
     "hint": "Presens partisipp (verbstamme + -ende) erstatter «mens»-setningen og beskriver måte. Det bøyes aldri: leende.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-013",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Vi _____ at prisene vil stige videre neste år.",
+    "words": [
+      "antar",
+      "tar"
+    ],
+    "answer": "antar",
+    "hint": "«Å anta» (an- + ta) betyr å tro eller gå ut fra noe uten sikker bekreftelse — en annen betydning enn det konkrete «å ta».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-014",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Vitnet bekreftet historien fordi han hadde sett alt med egne øyne.",
+    "optionB": "Vitnet benektet historien fordi han hadde sett alt med egne øyne.",
+    "answer": "Vitnet bekreftet historien fordi han hadde sett alt med egne øyne.",
+    "explanation": "«Å bekrefte» betyr å stadfeste at noe stemmer. Siden vitnet faktisk så alt selv, gir det mening at han bekreftet, ikke benektet, historien.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-015",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Politiet skal _____ vitnet mot eventuelle trusler.",
+    "words": [
+      "beskytte",
+      "skyte"
+    ],
+    "answer": "beskytte",
+    "hint": "«Å beskytte» betyr å verne/passe på noen. Ikke forveksle det med det likelydende, men helt ulike, verbet «å skyte» (avfyre et våpen).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-016",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Hun bestemte seg for å _____ tyveriet til politiet.",
+    "words": [
+      "anmelde",
+      "melde"
+    ],
+    "answer": "anmelde",
+    "hint": "«Å anmelde» (an- + melde) betyr å formelt melde fra om en straffbar handling til politiet — mer presist enn det generelle «å melde» (å gi beskjed).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-017",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Fagforeningen anerkjente til slutt kravet fra de ansatte.",
+    "optionB": "Fagforeningen kjente til slutt kravet fra de ansatte.",
+    "answer": "Fagforeningen anerkjente til slutt kravet fra de ansatte.",
+    "explanation": "«Å anerkjenne» betyr å godta eller akseptere noe som gyldig — noe det enkle verbet «å kjenne» (å ha kunnskap om) ikke uttrykker.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-018",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Politiet _____ at innbruddet var planlagt på forhånd.",
+    "words": [
+      "mistenker",
+      "tenker"
+    ],
+    "answer": "mistenker",
+    "hint": "«Å mistenke» (mis- + tenke) betyr å tro at noen har gjort noe galt, uten sikre bevis — en mer spesifikk betydning enn «å tenke».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-019",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv setningen i preteritum.",
+    "source": "Forskerne beviser teorien med nye data.",
+    "answer": "Forskerne beviste teorien med nye data.",
+    "hint": "«Å bevise» (be- + vise) bøyes som et vanlig svakt verb: beviste i preteritum.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-020",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Du bør _____ sjansen til å presentere ideen din for ledelsen.",
+    "words": [
+      "benytte",
+      "nytte"
+    ],
+    "answer": "benytte",
+    "hint": "«Å benytte» er et transitivt verb som tar objekt (benytte sjansen); «å nytte» brukes gjerne upersonlig, som i «det nytter ikke».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-021",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": [
+      "Legen",
+      "anbefalte",
+      "pasienten",
+      "å",
+      "hvile"
+    ],
+    "answer": "Legen anbefalte pasienten å hvile.",
+    "hint": "«Å anbefale» tar indirekte objekt + infinitiv med «å»: anbefale noen å gjøre noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-verbprefiks-022",
+    "topic": "verbprefiks-be-an-mis",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Dyrevernorganisasjonen avslørte at hundene hadde blitt mishandlet i flere år.",
+    "optionB": "Dyrevernorganisasjonen avslørte at hundene hadde blitt handlet i flere år.",
+    "answer": "Dyrevernorganisasjonen avslørte at hundene hadde blitt mishandlet i flere år.",
+    "explanation": "«Å mishandle» (mis- + handle) betyr å behandle noen grusomt eller skadelig — helt ulikt «å handle» (å foreta en handling, eller å kjøpe varer).",
     "plusOnly": true
   },
   {

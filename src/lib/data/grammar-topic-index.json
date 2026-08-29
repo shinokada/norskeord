@@ -204,13 +204,15 @@
   "sterke-verb": {
     "levels": [
       "A2",
-      "B1"
+      "B1",
+      "B2"
     ],
     "countsByLevel": {
       "A2": 10,
-      "B1": 16
+      "B1": 16,
+      "B2": 10
     },
-    "total": 26
+    "total": 36
   },
   "helsetninger": {
     "levels": [
@@ -1150,12 +1152,14 @@
   },
   "verbprefiks-be-an-mis": {
     "levels": [
-      "B1"
+      "B1",
+      "B2"
     ],
     "countsByLevel": {
-      "B1": 12
+      "B1": 12,
+      "B2": 10
     },
-    "total": 12
+    "total": 22
   },
   "adverb-setningsbinding": {
     "levels": [

@@ -103,7 +103,9 @@ const B2_TOPICS = new Set([
   'subordinate-order',
   'koordinerende-konjunksjoner',
   'bade-og-verken-eller',
-  'leddsetning-som-fundament'
+  'leddsetning-som-fundament',
+  'verbprefiks-be-an-mis',
+  'sterke-verb'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
