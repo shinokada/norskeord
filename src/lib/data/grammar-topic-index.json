@@ -231,14 +231,16 @@
     "levels": [
       "A1",
       "A2",
-      "B1"
+      "B1",
+      "B2"
     ],
     "countsByLevel": {
       "A2": 16,
       "B1": 16,
-      "A1": 6
+      "A1": 6,
+      "B2": 10
     },
-    "total": 38
+    "total": 48
   },
   "preposisjoner-sted": {
     "levels": [

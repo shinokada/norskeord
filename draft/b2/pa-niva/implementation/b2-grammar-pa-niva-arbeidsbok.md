@@ -1491,18 +1491,56 @@ adj-agreement`) confirmed clean at the start of the next session: 2902/2902 spli
   `check-b2-grammar-vocab.mjs sterke-verb` → 0 unmatched;
   `check-grammar-norwegian.mjs sterke-verb` → 0 flagged).
 
+- ✅ **Done — `preposisjoner-tid`** (Preposisjoner §2–6, Preposisjoner for tid — cloze-style
+  time-preposition drills). This topic already had 6 A1 questions (årstid: om/i vinteren/sommeren
+  habitual vs. specific), 16 A2 questions (i/om/på for duration with perfektum, født i + årstall,
+  i kveld, om/til + årstid), and 16 B1 questions (på vs. i for fullførelse/varighet, til + årstid
+  for framtid, i + årstid for nåværende, om + tid vs. for … siden, i julen/påsken habitual vs.
+  bestemt år, and special expressions i forfjor/i morges/i overmorgen/i forgårs) — zero B2
+  content. Confirmed `preposisjoner-uttrykk-b2` (already B2, 10 questions) is a distinct topic
+  covering verb+preposisjon faste uttrykk (ta ansvar for, ha inntrykk av …), not time
+  prepositions, and that the plan's «i løpet av» point is assigned there — so no overlap risk.
+  Added 10 new B2 questions (`gq-prep-tid-039`–`048`) covering ten fresh time-preposition points
+  not touched at A1/A2/B1: `på` + ukedag entall for a specific/kommende day vs. `om` + ukedag
+  bestemt flertall for a weekly habit (two fill questions, minimal-pair style contrast split
+  across separate sentences), `under` for an event with a clear start/end, `ved` for a momentary
+  point in time (daggry), `innen` (deadline) vs. `om` (simple future point) (minimal-pair),
+  the frequency rule `i uken/måneden/året` (per) and its exception `om dagen` (two fill
+  questions), `midt i` (transform, replacing a clock time with a vaguer mid-period point),
+  `innen` again in an order exercise, and the fixed adverbial `for tiden` (currently) tested via
+  multiple-choice. All `cefr: 'B2'`; no `plusOnly` field, matching this topic's existing
+  convention (none of its 38 prior questions use `plusOnly` either). Fresh everyday scenarios
+  throughout (tannlege, bibliotek, forestilling, fiskere, rapport-frist, trening, kaffe,
+  telefonoppringning, hjemmekontor). Topic now has 48 total questions (38 → 48; B2 count
+  0 → 10 — first B2 content for this topic). Applied to the real `grammar.json` via
+  `Filesystem:edit_file`, re-verified: 2992 total questions file-wide, no duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** added `preposisjoner-tid`
+  (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set, same fix as the previous
+  eight topics.
+
+  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs preposisjoner-tid`,
+  `check-grammar-norwegian.mjs preposisjoner-tid`) not yet run this session** — run these next
+  before starting a new topic.
+
 ## Next session starting point (session ending — read this first)
 
 Everything above is applied to the real `grammar.json`/`rules.ts` up to and including
-`sterke-verb`, and validators have been run and pass clean.
+`preposisjoner-tid`, but validators for `preposisjoner-tid` have not yet been run/confirmed —
+run `pnpm grammar:split`, `check-b2-grammar-vocab.mjs preposisjoner-tid`, and
+`check-grammar-norwegian.mjs preposisjoner-tid` first before starting a new topic.
 
 **Remaining candidates** (direct-match/fold-in touches to existing topics, minus everything done
-above through `sterke-verb`): `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and the
-`ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus the small remaining
-rule-text fold noted inline in the Kapittel summaries («som/enn» into `adj-comparison`).
+above through `preposisjoner-tid`): `preposisjoner-uttrykk-b2` (Preposisjoner §7–11, 13 —
+områderegelen/kantstedsregelen i/på, motsatte preposisjoner, sammensatte preposisjoner, for/til,
+abstrakt preposisjonsbetydning, Kongeboligen-cloze), and the `ikke-placement`/`imperativ` B2
+extensions (Helsetninger §14–17) — plus the small remaining rule-text fold noted inline in the
+Kapittel summaries («som/enn» into `adj-comparison`).
 
-**Recommended starting point next session:** `preposisjoner-tid` — likely a similar direct-match
-B2 extension.
+**Recommended starting point next session:** finish validating `preposisjoner-tid`, then
+`preposisjoner-uttrykk-b2` — note the plan flags a possible new standalone topic
+(`omraaderegelen-kantstedsregelen`) for the i/på rule system, worth confirming before folding it
+in.
 
 **Infra note:** `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` is now done and
 landed (see the "Process note: workflow now uses grammar-b2.json + grammar:split" section above

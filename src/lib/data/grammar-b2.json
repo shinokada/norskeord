@@ -1116,6 +1116,151 @@
     "hint": "Yrke uten adjektiv foran: ingen artikkel, selv i preteritum."
   },
   {
+    "id": "gq-prep-tid-039",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Tannlegen har en ledig time _____ torsdag denne uken.",
+    "words": [
+      "på",
+      "om",
+      "i"
+    ],
+    "answer": "på",
+    "hint": "«På» + ukedag i entall viser til en bestemt, kommende dag (denne torsdagen)."
+  },
+  {
+    "id": "gq-prep-tid-040",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Biblioteket har åpent lenger _____ torsdagene.",
+    "words": [
+      "om",
+      "på",
+      "i"
+    ],
+    "answer": "om",
+    "hint": "«Om» + ukedag i bestemt flertall (torsdagene) uttrykker noe som gjentar seg hver uke."
+  },
+  {
+    "id": "gq-prep-tid-041",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Alle mobiltelefoner må slås av _____ forestillingen.",
+    "words": [
+      "under",
+      "ved",
+      "til"
+    ],
+    "answer": "under",
+    "hint": "«Under» brukes om noe som skjer samtidig med en hendelse som har en klar begynnelse og slutt (forestillingen)."
+  },
+  {
+    "id": "gq-prep-tid-042",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Fiskerne dro ut _____ daggry.",
+    "words": [
+      "ved",
+      "under",
+      "i"
+    ],
+    "answer": "ved",
+    "hint": "«Ved» + tidspunkt viser til et bestemt øyeblikk (daggry, midnatt, ankomst), ikke en varighet."
+  },
+  {
+    "id": "gq-prep-tid-043",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig når fredag er den absolutte fristen?",
+    "optionA": "Rapporten må leveres innen fredag.",
+    "optionB": "Rapporten må leveres om fredag.",
+    "answer": "A",
+    "explanation": "«Innen» + tidspunkt uttrykker en frist (senest da). «Om» + tidspunkt viser bare til et fremtidig tidspunkt, uten fristbetydning.",
+    "hint": "Frist (senest da) → «innen». Et enkelt fremtidig tidspunkt → «om»."
+  },
+  {
+    "id": "gq-prep-tid-044",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Hun trener tre ganger _____ uken.",
+    "words": [
+      "i",
+      "om",
+      "på"
+    ],
+    "answer": "i",
+    "hint": "For å uttrykke hyppighet («per») brukes vanligvis «i» + bestemt form: i uken, i måneden, i året."
+  },
+  {
+    "id": "gq-prep-tid-045",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Han drikker fire kopper kaffe _____ dagen.",
+    "words": [
+      "om",
+      "i",
+      "på"
+    ],
+    "answer": "om",
+    "hint": "Unntak fra regelen «i uken/i måneden/i året»: for «dagen» brukes «om» — om dagen, ikke i dagen."
+  },
+  {
+    "id": "gq-prep-tid-046",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen med «midt i natten» i stedet for klokkeslettet.",
+    "source": "Telefonen ringte klokka tre om natten.",
+    "answer": "Telefonen ringte midt i natten.",
+    "hint": "«Midt i» + periode viser til et punkt inne i perioden, uten at man oppgir et nøyaktig klokkeslett."
+  },
+  {
+    "id": "gq-prep-tid-047",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "må",
+      "Svaret",
+      "komme",
+      "innen",
+      "mandag"
+    ],
+    "answer": "Svaret må komme innen mandag.",
+    "alternates": [
+      "Svaret må komme innen mandag"
+    ],
+    "hint": "«Innen mandag» = senest mandag; fristen står til slutt i setningen."
+  },
+  {
+    "id": "gq-prep-tid-048",
+    "topic": "preposisjoner-tid",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr «for tiden» i denne setningen: «Han jobber hjemmefra for tiden.»?",
+    "options": [
+      "Akkurat nå, i denne perioden",
+      "For alltid, uten unntak",
+      "En gang tidligere, men ikke lenger"
+    ],
+    "answer": "Akkurat nå, i denne perioden",
+    "hint": "«For tiden» er et fast tidsuttrykk som betyr «akkurat nå» eller «i denne perioden», ikke en permanent tilstand."
+  },
+  {
     "id": "gq-sub-026",
     "topic": "subordinate-order",
     "cefr": "B2",
