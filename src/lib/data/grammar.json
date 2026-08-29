@@ -521,6 +521,126 @@
     "plusOnly": true
   },
   {
+    "id": "gq-v2-010",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Den", "boken", "har", "jeg", "lest"],
+    "answer": "Den boken har jeg lest.",
+    "alternates": ["Den boken har jeg lest"],
+    "hint": "Fremflyttet objekt (den boken) utløser samme V2-inversjon som et adverbial: verb før subjekt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-011",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om og fremhev objektet ved å flytte det fremst.",
+    "source": "Jeg har lest den boken.",
+    "answer": "Den boken har jeg lest.",
+    "hint": "Objektet flyttes fremst for å fremheves; subjekt og verb bytter plass (V2).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-012",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om og start med leddsetningen «Når jeg kommer hjem».",
+    "source": "Jeg spiser middag når jeg kommer hjem.",
+    "answer": "Når jeg kommer hjem, spiser jeg middag.",
+    "hint": "En fremflyttet leddsetning teller som ett samlet ledd — helsetningen inverteres fortsatt: spiser jeg.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-013",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om og start med leddsetningen «Etter at hun hadde spist».",
+    "source": "Hun gikk en tur etter at hun hadde spist.",
+    "answer": "Etter at hun hadde spist, gikk hun en tur.",
+    "hint": "Fremflyttet leddsetning → komma, deretter V2-inversjon i helsetningen: gikk hun.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-014",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "I går gikk jeg til butikken.",
+    "optionB": "I går jeg gikk til butikken.",
+    "answer": "A",
+    "explanation": "Etter et fremflyttet adverbial må verbet stå på andreplass: gikk jeg, ikke jeg gikk.",
+    "hint": "Sjekk hva som kommer rett etter det fremflyttede leddet: verbet eller subjektet?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-015",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Når jeg kommer hjem, spiser jeg middag.",
+    "optionB": "Når jeg kommer hjem, jeg spiser middag.",
+    "answer": "A",
+    "explanation": "Den fremflyttede leddsetningen fungerer som ett ledd — helsetningen som følger må fortsatt ha V2-inversjon: spiser jeg.",
+    "hint": "Se på ordstillingen rett etter kommaet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-016",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Dette", "har", "jeg", "aldri", "sett", "før"],
+    "answer": "Dette har jeg aldri sett før.",
+    "alternates": ["Dette har jeg aldri sett før"],
+    "hint": "Fremflyttet objekt (dette) → V2: har jeg. Setningsadverbet «aldri» kommer etter det inverterte subjektet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-017",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om og fremhev predikativet ved å flytte det fremst.",
+    "source": "Jeg har aldri vært gladere.",
+    "answer": "Gladere har jeg aldri vært.",
+    "hint": "Et fremflyttet predikativ utløser samme V2-inversjon som et adverbial eller objekt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-018",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Rett opp ordstillingsfeilen.",
+    "source": "I fjor jeg flyttet til Bergen.",
+    "answer": "I fjor flyttet jeg til Bergen.",
+    "hint": "Etter det fremflyttede adverbialet «i fjor» må verbet komme før subjektet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-v2-019",
+    "topic": "v2-word-order",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning.",
+    "options": [
+      "Denne filmen har jeg sett to ganger.",
+      "Denne filmen jeg har sett to ganger.",
+      "Har denne filmen jeg sett to ganger."
+    ],
+    "answer": "Denne filmen har jeg sett to ganger.",
+    "hint": "Fremflyttet objekt (denne filmen) → verb på andreplass, deretter subjekt: har jeg.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-mod-001",
     "topic": "modal-verb-order",
     "cefr": "A2",
@@ -4657,6 +4777,129 @@
     "optionB": "For hun nektet å adlyde ordren, ble hun permittert.",
     "answer": "A",
     "explanation": "«For» kan bare binde sammen to fullstendige helsetninger — det kan ikke stå fremst i setningen slik en subjunksjon kan. «Fordi» kan stå fremst i leddsetningen, noe som utløser V2-inversjon i helsetningen som følger (ble hun).",
+    "hint": "Hvilken konjunksjon kan stå i begynnelsen av en setning?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-011",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sideordnende konjunksjon (årsak, helsetning).",
+    "sentence": "Jeg tar med paraply, _____ det skal regne i dag.",
+    "words": ["for", "fordi", "og"],
+    "answer": "for",
+    "hint": "«For» innleder en ny helsetning som gir en årsak, alltid med komma foran. «Fordi» ville krevd leddsetningsrekkefølge i stedet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-012",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Hun lagde middag og vasket opp.",
+    "optionB": "Hun lagde middag, og vasket opp.",
+    "answer": "A",
+    "explanation": "Ikke komma før «og» når det binder sammen to verbfraser som deler ett subjekt (Hun), ikke to fullstendige helsetninger.",
+    "hint": "Sjekk om begge sidene av «og» har sitt eget subjekt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-013",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Hun lagde middag, og barna dekket bordet.",
+    "optionB": "Hun lagde middag og barna dekket bordet.",
+    "answer": "A",
+    "explanation": "Komma kreves før «og» når det binder sammen to fullstendige helsetninger, hver med sitt eget subjekt (Hun … / barna …).",
+    "hint": "Har hver side av «og» sitt eget subjekt?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-014",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sideordnende konjunksjon (alternativ, spørsmål).",
+    "sentence": "Skal vi ta bussen, _____ skal vi gå?",
+    "words": ["eller", "og", "men"],
+    "answer": "eller",
+    "hint": "«Eller» presenterer et alternativ — vanlig i enten/eller-spørsmål.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-015",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sideordnende konjunksjon (kontrast).",
+    "sentence": "Han er trøtt, _____ han fortsetter å jobbe.",
+    "words": ["men", "for", "så"],
+    "answer": "men",
+    "hint": "«Men» uttrykker kontrast: til tross for at han er trøtt, jobber han videre.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-016",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «så» som tidsadverb («deretter»).",
+    "sentence": "Hun spiste frokost. _____ gikk hun til jobben.",
+    "words": ["Så", "Og", "For"],
+    "answer": "Så",
+    "hint": "«Så» som tidsadverb i starten av en ny helsetning utløser V2-inversjon: «gikk hun», ikke «hun gikk».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-017",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «så» som subjunksjon (≈ «slik at»).",
+    "sentence": "Han snakket sakte, _____ alle skulle forstå ham.",
+    "words": ["så", "og", "men"],
+    "answer": "så",
+    "hint": "Her er «så» en subjunksjon (≈ «slik at») som innleder en hensiktsleddsetning — vanlig leddsetningsrekkefølge, ingen V2-inversjon.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-018",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «for» (årsak i helsetning, ikke «fordi»).",
+    "source": "Vi avlyste turen. Det var dårlig vær den dagen.",
+    "answer": "Vi avlyste turen, for det var dårlig vær den dagen.",
+    "alternates": ["Vi avlyste turen for det var dårlig vær den dagen."],
+    "hint": "«For» binder sammen to fullstendige helsetninger og beholder alltid vanlig SV-rekkefølge, med komma foran.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-019",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Hun", "lagde", "middag", "og", "barna", "dekket", "bordet"],
+    "answer": "Hun lagde middag, og barna dekket bordet.",
+    "alternates": ["Hun lagde middag og barna dekket bordet."],
+    "hint": "To fullstendige helsetninger bundet sammen med «og» (hver har sitt eget subjekt: Hun / barna) — komma kreves.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-koord-020",
+    "topic": "koordinerende-konjunksjoner",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Fordi det regnet, ble turen avlyst.",
+    "optionB": "For det regnet, ble turen avlyst.",
+    "answer": "A",
+    "explanation": "«For» kan bare binde sammen to fullstendige helsetninger — det kan ikke stå fremst i setningen slik en subjunksjon kan. «Fordi» kan stå fremst i leddsetningen, noe som utløser V2-inversjon i helsetningen som følger (ble turen).",
     "hint": "Hvilken konjunksjon kan stå i begynnelsen av en setning?",
     "plusOnly": true
   },
@@ -14488,6 +14731,128 @@
     "plusOnly": true
   },
   {
+    "id": "gq-sub-026",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Jeg", "vet", "at", "hun", "aldri", "lyver"],
+    "answer": "Jeg vet at hun aldri lyver.",
+    "alternates": ["Jeg vet at hun aldri lyver"],
+    "hint": "I leddsetningen («at hun …») kommer setningsadverbet «aldri» FØR verbet, ikke etter.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-027",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Læreren tror at eleven kanskje har glemt boken.",
+    "optionB": "Læreren tror at eleven har kanskje glemt boken.",
+    "answer": "A",
+    "explanation": "I leddsetninger kommer setningsadverb som «kanskje» FØR det finitte verbet (har), ikke etter.",
+    "hint": "Sjekk hvor «kanskje» står i forhold til verbet «har».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-028",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning.",
+    "options": [
+      "Hun fortalte at de ofte spiste sammen om kvelden.",
+      "Hun fortalte at de spiste ofte sammen om kvelden.",
+      "Hun fortalte at ofte de spiste sammen om kvelden."
+    ],
+    "answer": "Hun fortalte at de ofte spiste sammen om kvelden.",
+    "hint": "I leddsetningen kommer «ofte» mellom subjekt og verb: de ofte spiste.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-029",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Rett opp ordstillingsfeilen.",
+    "source": "Han mener at de kommer aldri i tide.",
+    "answer": "Han mener at de aldri kommer i tide.",
+    "hint": "I leddsetningen («at de …») skal «aldri» stå FØR verbet «kommer», ikke etter.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-030",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Rett opp ordstillingsfeilen.",
+    "source": "Fordi hun var syk, hun ikke gikk på jobb.",
+    "answer": "Fordi hun var syk, gikk hun ikke på jobb.",
+    "hint": "Leddsetningen «fordi hun var syk» står FØRST, så hovedsetningen som følger må ha V2-inversjon (gikk hun); der plasseres «ikke» ETTER det finitte verbet, som vanlig i en hovedsetning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-031",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Siden", "det", "regnet", "hele", "dagen", "ble", "turen", "avlyst"],
+    "answer": "Siden det regnet hele dagen, ble turen avlyst.",
+    "alternates": ["Siden det regnet hele dagen ble turen avlyst"],
+    "hint": "«Siden» uttrykker årsak, som «fordi», men er mer formelt/skriftlig. Leddsetningen står FØRST → hovedsetningen inverteres: ble turen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-032",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «siden» og plasser leddsetningen først.",
+    "source": "Butikken stengte tidlig. Det var få kunder denne dagen.",
+    "answer": "Siden det var få kunder denne dagen, stengte butikken tidlig.",
+    "hint": "«Siden» uttrykker årsak, som «fordi», men brukes mer i formelt/skriftlig språk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-033",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Vi", "ventet", "til", "bussen", "endelig", "kom"],
+    "answer": "Vi ventet til bussen endelig kom.",
+    "alternates": ["Vi ventet til bussen endelig kom"],
+    "hint": "«Til» betyr her «until». I leddsetningen kommer subjektet («bussen») FØR verbet («kom»), og adverbet «endelig» plasseres mellom dem.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-034",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg trodde at hun visste at hun ikke hadde rett.",
+    "optionB": "Jeg trodde at hun visste at hun hadde ikke rett.",
+    "answer": "A",
+    "explanation": "Begge leddsetningene («at hun visste …» og «at hun … hadde rett») følger samme regel: «ikke» kommer FØR verbet, uansett hvor dypt leddsetningen er innfelt i en annen leddsetning.",
+    "hint": "Se på den innerste leddsetningen «at hun … hadde rett» — hvor står «ikke» der?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sub-035",
+    "topic": "subordinate-order",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig konjunksjon.",
+    "sentence": "_____ det ikke fantes flere billetter, dro de hjem igjen.",
+    "words": ["Siden", "Til", "Mens"],
+    "answer": "Siden",
+    "hint": "Årsak: det fantes IKKE flere billetter → derfor dro de hjem. «Siden» uttrykker årsak her, som «fordi».",
+    "plusOnly": true
+  },
+  {
     "id": "gq-indirtale-009",
     "topic": "indirekte-tale-at-om",
     "cefr": "A2",
@@ -20280,6 +20645,117 @@
     "hint": "Intetkjønn: streng → strengt."
   },
   {
+    "id": "gq-adj-114",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "Til tross for at bedriften bare er en _____ aktør i markedet, har den stor innflytelse.",
+    "words": ["liten", "lita"],
+    "answer": "liten",
+    "hint": "En-ord: «liten» er hankjønnsformen av det uregelmessige adjektivet."
+  },
+  {
+    "id": "gq-adj-115",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "Han vokste opp i ei _____ bygd langt nord i landet.",
+    "words": ["lita", "liten"],
+    "answer": "lita",
+    "hint": "Ei-ord (hunkjønn): «liten» bøyes uregelmessig til «lita»."
+  },
+  {
+    "id": "gq-adj-116",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "Selv et _____ avvik i budsjettet kan få store konsekvenser.",
+    "words": ["lite", "liten"],
+    "answer": "lite",
+    "hint": "Intetkjønn: «liten» bøyes uregelmessig til «lite»."
+  },
+  {
+    "id": "gq-adj-117",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg setningen med riktig samsvarsbøying av «liten».",
+    "options": [
+      "Flere små selskaper har slått seg sammen for å konkurrere med de store.",
+      "Flere lite selskaper har slått seg sammen for å konkurrere med de store.",
+      "Flere litte selskaper har slått seg sammen for å konkurrere med de store."
+    ],
+    "answer": "Flere små selskaper har slått seg sammen for å konkurrere med de store.",
+    "hint": "Flertall: «liten» bøyes uregelmessig til «små», ikke «lite» eller «litte»."
+  },
+  {
+    "id": "gq-adj-118",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "De _____ tradisjonene lever fortsatt videre i lokalsamfunnet.",
+    "words": ["gamle", "gammel"],
+    "answer": "gamle",
+    "hint": "Adjektiv på -el mister -e- i flertall: gammel → gamle."
+  },
+  {
+    "id": "gq-adj-119",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "Etter en lang forhandlingsrunde var partene tydelig _____.",
+    "words": ["slitne", "sliten"],
+    "answer": "slitne",
+    "hint": "Adjektiv på -en mister -e- i flertall: sliten → slitne."
+  },
+  {
+    "id": "gq-adj-120",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "De nye bygningene i sentrum er usedvanlig _____.",
+    "words": ["vakre", "vakker"],
+    "answer": "vakre",
+    "hint": "Adjektiv på -er mister -e- i flertall: vakker → vakre."
+  },
+  {
+    "id": "gq-adj-121",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Selskapet har digre planer for utvidelse neste år.",
+    "optionB": "Selskapet har diger planer for utvidelse neste år.",
+    "answer": "A",
+    "explanation": "«Planer» er flertall, og adjektiv på -er (diger) mister -e- i flertall: diger → digre, ikke diger.",
+    "hint": "Sjekk om substantivet er entall eller flertall."
+  },
+  {
+    "id": "gq-adj-122",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form av adjektivet.",
+    "sentence": "Jeg har aldri møtt en _____ engasjert frivillig før.",
+    "words": ["sånn", "sånt"],
+    "answer": "sånn",
+    "hint": "En-ord: «sånn» (eller «slik») står i grunnformen."
+  },
+  {
+    "id": "gq-adj-123",
+    "topic": "adj-agreement",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": ["Slike", "utfordringer", "krever", "langsiktige", "løsninger"],
+    "answer": "Slike utfordringer krever langsiktige løsninger.",
+    "hint": "Flertall: «slik» bøyes til «slike»."
+  },
+  {
     "id": "gq-kvantorer-019",
     "topic": "kvantorer",
     "cefr": "B2",
@@ -21527,7 +22003,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Hvilken setning er et høflig, avdempet spørsmål om nåtiden på biblioteket, ikke en beskrivelse av noe som faktisk skjedde i fortid?",
-    "options": ["Måtte du levere boken tilbake i går?", "Jeg lurte på om jeg kunne forlenge lånetiden.", "Hun kunne ikke finne boken i går."],
+    "options": [
+      "Måtte du levere boken tilbake i går?",
+      "Jeg lurte på om jeg kunne forlenge lånetiden.",
+      "Hun kunne ikke finne boken i går."
+    ],
     "answer": "Jeg lurte på om jeg kunne forlenge lånetiden.",
     "hint": "«Jeg lurte på om» + preteritum er den pragmatiske, høflige bruken; de andre to viser til konkrete fortidige hendelser.",
     "plusOnly": true
@@ -22240,7 +22720,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Kollegaen din spør om råd angående presentasjonen. Du synes hun bør øve mer før møtet. Velg riktig setning.",
-    "options": ["Du bør øve mer før møtet.", "Du kan øve mer før møtet.", "Du skal øve mer før møtet."],
+    "options": [
+      "Du bør øve mer før møtet.",
+      "Du kan øve mer før møtet.",
+      "Du skal øve mer før møtet."
+    ],
     "answer": "Du bør øve mer før møtet.",
     "hint": "Dette er et råd om hva som ville vært lurt, ikke en tillatelse eller en instruks.",
     "plusOnly": true
@@ -22610,7 +23094,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Legen har sett symptomene før, men venter fortsatt på prøvesvar. Velg riktig setning.",
-    "options": ["Det kan hende at det er en allergi.", "Det er sikkert at det er en allergi.", "Det kommer til å bli en allergi."],
+    "options": [
+      "Det kan hende at det er en allergi.",
+      "Det er sikkert at det er en allergi.",
+      "Det kommer til å bli en allergi."
+    ],
     "answer": "Det kan hende at det er en allergi.",
     "hint": "Uten prøvesvar er dette bare en mulighet, ikke en sikker spådom eller en trolig konklusjon.",
     "plusOnly": true
@@ -22667,7 +23155,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Klimaforskerne har lenge advart om utviklingen, og de nyeste målingene bekrefter mønsteret. Velg riktig setning.",
-    "options": ["Havnivået kommer til å stige videre.", "Det kan hende at havnivået stiger videre.", "Det er lite sannsynlig at havnivået stiger videre."],
+    "options": [
+      "Havnivået kommer til å stige videre.",
+      "Det kan hende at havnivået stiger videre.",
+      "Det er lite sannsynlig at havnivået stiger videre."
+    ],
     "answer": "Havnivået kommer til å stige videre.",
     "hint": "Gjentatte advarsler og bekreftende målinger peker mot en sikker spådom, uttrykt med «kommer til å».",
     "plusOnly": true
@@ -25099,7 +25591,17 @@
     "cefr": "B2",
     "type": "order",
     "prompt": "Sett ordene i riktig rekkefølge.",
-    "tokens": ["Da", "de", "hadde", "signert", "kontrakten", "skulle", "arbeidet", "starte", "umiddelbart"],
+    "tokens": [
+      "Da",
+      "de",
+      "hadde",
+      "signert",
+      "kontrakten",
+      "skulle",
+      "arbeidet",
+      "starte",
+      "umiddelbart"
+    ],
     "answer": "Da de hadde signert kontrakten, skulle arbeidet starte umiddelbart.",
     "alternates": ["Da de hadde signert kontrakten skulle arbeidet starte umiddelbart."],
     "hint": "Preteritum perfektum (hadde signert) markerer det som skjedde først; preteritum futurum (skulle starte) markerer det som fortsatt lå foran i tid.",
@@ -32369,7 +32871,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Du er nesten sikker på at vennen din husker bursdagen din, men spør likevel for å få bekreftelse. Velg riktig spørsmål.",
-    "options": ["Du husker vel bursdagen min?", "Du husker jo bursdagen min?", "Du husker faktisk bursdagen min?"],
+    "options": [
+      "Du husker vel bursdagen min?",
+      "Du husker jo bursdagen min?",
+      "Du husker faktisk bursdagen min?"
+    ],
     "answer": "Du husker vel bursdagen min?",
     "hint": "Dette er et spørsmål der taleren venter et bekreftende svar.",
     "plusOnly": true
@@ -32818,6 +33324,125 @@
     "words": ["pause", "pausen"],
     "answer": "pause",
     "hint": "Substantivet etter genitiv-s står i ubestemt form: pause, ikke pausen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-054",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig eierpronomen.",
+    "sentence": "Ola liker å leke med katten _____ hver kveld.",
+    "words": ["sin", "hans"],
+    "answer": "sin",
+    "hint": "Katten tilhører Ola selv, subjektet i setningen, så refleksivt «sin» er riktig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-055",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Venninnen er Martes egen venninne. Hvilken setning er riktig?",
+    "optionA": "Marte hjelper venninnen sin med flyttingen.",
+    "optionB": "Marte hjelper venninnen hennes med flyttingen.",
+    "answer": "A",
+    "explanation": "«Sin» viser tilbake til subjektet (Marte), så venninnen er hennes egen. «Hennes» ville betydd en annen kvinnes venninne.",
+    "hint": "Sjekk hvem venninnen tilhører: subjektet, eller noen andre?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-056",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen slik at venninnen tilhører Kari, ikke Marte selv.",
+    "source": "Marte hjelper venninnen sin med flyttingen.",
+    "answer": "Marte hjelper venninnen hennes med flyttingen.",
+    "hint": "Når eieren er noen andre enn subjektet, brukes «hennes» i stedet for «sin».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-057",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig eierpronomen.",
+    "sentence": "Per glemte _____ skjerf hjemme i dag.",
+    "words": ["sitt", "sin"],
+    "answer": "sitt",
+    "hint": "«Skjerf» er et intetkjønnsord (et skjerf), og refleksivt possessiv bøyes deretter: sitt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-058",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig eierpronomen.",
+    "sentence": "Kari er syk hjemme. Broren henter middagen _____ til henne.",
+    "words": ["hennes", "sin"],
+    "answer": "hennes",
+    "hint": "Middagen tilhører Kari, ikke subjektet (broren), så ikke-refleksivt «hennes» er riktig. «Sin» ville betydd broren sin egen middag.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-059",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig eierpronomen.",
+    "sentence": "Se på den gamle boka! Omslaget _____ er revet i stykker.",
+    "words": ["dens", "dets"],
+    "answer": "dens",
+    "hint": "«Boka» er et en-ord (ei bok/en bok), så det ikke-refleksive possessivet blir «dens», ikke «dets».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-060",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": ["Er", "dette", "huset", "ditt"],
+    "answer": "Er dette huset ditt?",
+    "alternates": ["Er dette huset ditt"],
+    "hint": "Etterstilt eierpronomen: substantiv i bestemt form + possessiv: huset ditt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-061",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om med etterstilt eierpronomen.",
+    "source": "Dette er min bil.",
+    "answer": "Dette er bilen min.",
+    "hint": "Etterstilt form: substantiv i bestemt form + possessiv (bilen min), vanligst i dagligtale.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-062",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Har du sett _____ bok? (ei bok)",
+    "options": ["mi", "min", "mitt"],
+    "answer": "mi",
+    "hint": "«Bok» er et hunkjønnsord (ei bok), så den feminine formen av eierpronomenet er «mi».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-noun-pos-063",
+    "topic": "noun-possessives",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Har du sett bilen min?",
+    "optionB": "Har du sett bil min?",
+    "answer": "A",
+    "explanation": "I etterstilt possessiv må substantivet stå i bestemt form: bilen min, ikke bil min.",
+    "hint": "Sjekk formen på substantivet foran possessivet.",
     "plusOnly": true
   },
   {

@@ -1228,32 +1228,139 @@ re-verified: 2892 total questions file-wide, no duplicate IDs. **`pnpm grammar:s
 validators (`check-b2-grammar-vocab.mjs partikkelverb-los-fast`, `check-grammar-norwegian.mjs
 partikkelverb-los-fast`) not yet run this session** — run these next before starting a new topic.
 
+- ✅ **Done — `adj-agreement`** (Adjective agreement in gender/number: en/ei/et, plural, «liten»
+irregular, -el/-er/-en stem-drop, «sånn/slik»). Confirmed direct match against the existing
+rule text — all patterns already covered somewhere in the topic, no rule-text gap. This topic
+spans A1–B2 and shares its `gq-adj-` ID prefix with `adj-comparison`/`adj-definite`/`adj-boying-c`
+(global ID search needed, not just within-topic), and its B2 batch doesn't use `plusOnly` at all
+(unlike every pa-niva-project topic touched so far this session) — followed that existing
+convention for the new questions rather than the plusOnly pattern. Checked all 44 existing
+questions across levels before drafting: the B2 batch (10 questions) only tested the basic
+en/et/plural pattern with abstract B2 vocabulary (kompleks, alvorlig, avansert, streng) plus a
+few ending-specific exceptions (-ig, -isk, already-in-t). Three rule-text patterns — **«liten»**
+(irregular: liten/lita/lite/små), the **-el/-er/-en stem-drop** (gammel→gamle, vakker→vakre,
+sliten→slitne, diger→digre), and **«sånn/slik»** agreement — were all thoroughly tested at
+A1/A2/B1 but had zero B2-level questions. Added 10 new B2 questions (`gq-adj-114`–`123`:
+fill/multiple-choice/minimal-pair/order mix) — 4 targeting «liten» across all four forms
+(aktør/marked, bygd, budsjettavvik, selskaper), 4 targeting the stem-drop pattern with fresh
+domains not used at B1 (tradisjoner, forhandlingsrunde, bygninger, ekspansjonsplaner), and 2
+targeting «sånn/slik» (frivillig, utfordringer/løsninger). Topic now has 54 total questions
+(44 → 54; B2 count 10 → 20). Applied to the real `grammar.json` via `Filesystem:edit_file`,
+re-verified: 2902 total questions file-wide, no duplicate IDs. `pnpm grammar:split` and both
+validators (`check-b2-grammar-vocab.mjs adj-agreement`, `check-grammar-norwegian.mjs
+adj-agreement`) confirmed clean at the start of the next session: 2902/2902 split reconciled,
+20 B2 questions/0 unmatched, 54 questions/0 flagged.
+
+- ✅ **Done — `noun-possessives`** (Determinativer §2–4: Eiendomsord/possessives, dobbel
+  bestemthet, Personlig pronomen vs. eiendomsord). Found a substantial rule-text gap: the
+  existing rule text only ever documented genitiv-s (Eriks bil); it never mentioned personal
+  possessive pronouns (eierpronomen) at all, even though the topic's 53 existing questions (A1/
+  A2/B1) already test `vår/vårt/våre`/`deres` extensively. Confirmed by reading every existing
+  question that the full singular paradigm — `min/mi/mitt`, `din/di/ditt`, `sin/si/sitt`
+  (reflexive), `hans`/`hennes`/`dens`/`dets` (non-reflexive) — and the reflexive-vs-non-reflexive
+  contrast (the classic B2 confusable pair, e.g. «bilen sin» vs «bilen hennes») had never been
+  tested anywhere in the topic. Added a new paragraph to `explanationEn`/`explanationNb` covering
+  the full pronoun paradigm, the two word orders (prenominal with indefinite noun vs. postposed
+  with definite noun — dobbel bestemthet), and the reflexive/non-reflexive distinction, before
+  drafting questions. Added 10 new B2 questions (`gq-noun-pos-054`–`063`: fill/minimal-pair/
+  transform/order/multiple-choice mix, all `plusOnly: true` matching the topic's convention) —
+  4 targeting the reflexive/non-reflexive contrast directly (sin-vs-hans with an established-
+  possessor context, sin-vs-hennes, a transform flipping the possessor, plus a `sitt`
+  gender-agreement example), one on `dens` (non-reflexive «it» form), one on `mi` (feminine
+  paradigm form), and three on the postposed/dobbel-bestemthet word order (order, transform,
+  minimal-pair against the indefinite-noun error). Fresh characters (Ola, Marte, Kari, Per)
+  throughout, not the book's own sentences. Topic now has 63 total questions (53 → 63; B2 count
+  0 → 10 — first B2 content for this topic). Applied to the real `grammar.json` via
+  `Filesystem:edit_file`, re-verified: 2912 total questions file-wide, no duplicate IDs.
+  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs noun-possessives`,
+  `check-grammar-norwegian.mjs noun-possessives`) not yet run this session** — run these next
+  before starting a new topic.
+
+- ✅ **Done — `v2-word-order`** (Setningsledd §9, Leddsetninger §10–11 — the basic V2 rule
+  extended beyond simple adverbial fronting). Found a genuine rule-text gap: the existing rule
+  text only ever described fronting a single adverbial («I går gikk jeg»); the existing 9
+  questions (A2/B1) test nothing else. Confirmed the rule genuinely extends further — a fronted
+  OBJECT, a fronted PREDICATIVE/COMPLEMENT, or a whole fronted SUBORDINATE CLAUSE all trigger the
+  same V2 inversion — so added a new paragraph to `explanationEn`/`explanationNb` covering all
+  three, plus the mid-field placement of setningsadverb (aldri/alltid/ikke) after the inverted
+  subject, before drafting questions. Added 10 new B2 questions (`gq-v2-010`–`019`: order/
+  transform/minimal-pair/multiple-choice mix, all `plusOnly: true` matching the topic's
+  convention) — 2 on object fronting (order + transform), 2 on a fronted leddsetning triggering
+  main-clause inversion («Når jeg kommer hjem, spiser jeg» / «Etter at hun hadde spist, gikk
+  hun»), 2 minimal-pairs contrasting correct inversion vs. the classic learner error of leaving
+  the subject first (one for simple adverbial fronting, one for a fronted clause), one on
+  setningsadverb placement after a fronted object («Dette har jeg aldri sett før»), one on
+  predicative fronting («Gladere har jeg aldri vært»), one error-correction transform, and one
+  multiple-choice on object fronting. Fresh domains throughout (bok, film, Bergen), not the
+  book's own sentences. Topic now has 19 total questions (9 → 19; B2 count 0 → 10 — first B2
+  content for this topic). Applied to the real `grammar.json` via `Filesystem:edit_file`,
+  re-verified: 2922 total questions file-wide, no duplicate IDs. **`pnpm grammar:split` and
+  validators (`check-b2-grammar-vocab.mjs v2-word-order`, `check-grammar-norwegian.mjs
+  v2-word-order`) not yet run this session** — run these next before starting a new topic.
+
+  **Correction (caught while starting `subordinate-order`):** the earlier "Validation complete"
+  note above is wrong about the vocab check. `check-b2-grammar-vocab.mjs` has a hardcoded
+  `B2_TOPICS` whitelist (in the script itself) that never included `v2-word-order` — the actual
+  terminal output was "No matching B2-topic questions found in grammar.json. (Filter:
+  v2-word-order — check the topic name matches types.ts exactly.)", i.e. the vocab check never
+  ran against these 19 questions at all. Only `check-grammar-norwegian.mjs` (no whitelist) ran
+  clean. Fixed by adding `v2-word-order` to the whitelist alongside `subordinate-order` (see
+  below) — rerun `check-b2-grammar-vocab.mjs v2-word-order` next session to get a real result.
+
+- ✅ **Done — `subordinate-order`** (Leddsetninger §10–11 — setningsadverbial placement inside a
+  leddsetning beyond «ikke», plus error-correction mixing main-/subordinate-clause ordstilling).
+  Confirmed direct match against the existing rule text (no inversion + adverb-between-subject-
+  and-verb, no rule-text gap). Checked all 25 existing questions (11 A2 + 14 B1) first: every one
+  of them only ever tested «ikke» as the adverb-in-leddsetning example — «aldri», «kanskje»,
+  «ofte» were never drilled — and no question mixed main-clause and subordinate-clause ordstilling
+  errors in the same sentence, or used a conjunction pair beyond fordi/selv om/mens/hvis/når/da/
+  at/uten at. Added 10 new B2 questions (`gq-sub-026`–`035`: order/minimal-pair/multiple-choice/
+  transform/fill mix, all `plusOnly: true` matching the topic's B1 convention) — 3 targeting
+  aldri/kanskje/ofte placement directly, 2 error-correction transforms (one single-clause, one
+  mixed main+subordinate: a fronted «fordi»-leddsetning triggering main-clause V2 inversion
+  together with correct «ikke» placement in the main clause), 2 introducing a fresh conjunction
+  «siden» (causal, more formal/written than «fordi») via order + join-transform, 1 on «til»
+  (until) combined with the adverb «endelig», 1 minimal-pair on a doubly-embedded leddsetning
+  («at hun visste at hun ikke hadde rett» — «ikke» placement holds regardless of embedding depth),
+  and 1 fill reinforcing «siden» in context. Fresh characters/scenarios throughout, not the
+  book's own sentences. Topic now has 35 total questions (25 → 35; B2 count 0 → 10 — first B2
+  content for this topic). Applied to the real `grammar.json` via `Filesystem:edit_file`,
+  re-verified: 2932 total questions file-wide, no duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** `check-b2-grammar-vocab.mjs`'s hardcoded
+  `B2_TOPICS` set was missing both `v2-word-order` (added last session, never added to the
+  whitelist — see the correction note above) and `subordinate-order`. Added both (each
+  `cefr: 'B2'` only) via `Filesystem:edit_file` before running any validators this session.
+
+  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs v2-word-order
+  subordinate-order`, `check-grammar-norwegian.mjs v2-word-order subordinate-order`) not yet run
+  this session** — run these next before starting a new topic; this also finally closes out the
+  real vocab-check for `v2-word-order`, which never actually ran last session.
+
+  **Validation complete:** `pnpm grammar:split` re-run — 2932/2932 reconciled across all five
+  level files (a1: 254, a2: 256, b1: 912, b2: 883, c: 627). `check-b2-grammar-vocab.mjs
+  v2-word-order subordinate-order` → 0 unmatched across 20 B2 questions (10 each); this is the
+  first real run of the vocab check against `v2-word-order` — it passes clean.
+  `check-grammar-norwegian.mjs v2-word-order subordinate-order` → 0 flagged across 54 questions
+  (19 + 35). Both topics fully done and validated.
+
 ## Next session starting point (session ending — read this first)
 
 Everything above is applied to the real `grammar.json`/`rules.ts` up to and including
-`partikkelverb-los-fast`. **`pnpm grammar:split` has not been re-run since the
-`partikkelverb-los-fast` touch, and its validators were not confirmed run this session** —
-run `pnpm grammar:split`, `check-b2-grammar-vocab.mjs partikkelverb-los-fast`, and
-`check-grammar-norwegian.mjs partikkelverb-los-fast` first thing next session before starting
-new content.
+`subordinate-order`, and fully validated (`pnpm grammar:split` reconciled, both validators
+clean for `v2-word-order` and `subordinate-order`).
 
-**Remaining candidates** (direct-match/fold-in touches to existing topics, per the "Next session
-starting point" list earlier in this doc, minus `kvantorer`, `spesial-kvantorer`,
-`subjunksjon-oversikt`, `modale-adverb`, `modalverb-betydning`, `sannsynlighet-uttrykk`,
-`hoflig-preteritum`, `man-en-upersonlig-pronomen`, `mene-synes-tro-tenke`,
-`preteritum-perfektum-og-futurum`, and `partikkelverb-los-fast`, all now done):
-`adj-agreement`, `adj-comparison` (B2 extension), `noun-possessives` (B2 extension),
-`v2-word-order` (B2 extension), `subordinate-order` (B2 extension),
-`koordinerende-konjunksjoner` (B2 extension), `bade-og-verken-eller` (B2 extension),
-`leddsetning-som-fundament` (B2 extension), `verbprefiks-be-an-mis` (B2 extension),
-`sterke-verb`/`partisipp-former` (Verb §1), `preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and
-the `ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus the small remaining
-rule-text folds noted inline in the Kapittel summaries («som/enn» into `adj-comparison`;
-«for/fordi» into `koordinerende-konjunksjoner`).
+**Remaining candidates** (direct-match/fold-in touches to existing topics, minus everything done
+above through `subordinate-order`): `koordinerende-konjunksjoner` (B2 extension),
+`bade-og-verken-eller` (B2 extension), `leddsetning-som-fundament` (B2 extension),
+`verbprefiks-be-an-mis` (B2 extension), `sterke-verb`/`partisipp-former` (Verb §1),
+`preposisjoner-tid`, `preposisjoner-uttrykk-b2`, and the `ikke-placement`/`imperativ` B2
+extensions (Helsetninger §14–17) — plus the small remaining rule-text folds noted inline in the
+Kapittel summaries («som/enn» into `adj-comparison`; «for/fordi» into
+`koordinerende-konjunksjoner`).
 
-**Recommended starting point next session:** `man-en-upersonlig-pronomen` or
-`mene-synes-tro-tenke` — both direct-match content per the Pre-Phase-2 checklist, no groundwork
-needed beyond reading the topic's current `grammar-b2.json` slice and its `rules.ts` entry.
+**Recommended starting point next session:** `koordinerende-konjunksjoner` — currently C-only,
+extend down to B2/B1 (Konjunksjoner §1, 3–5: og/eller/men/for/så, både...og, verken...eller).
 
 **Infra note:** `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` is now done and
 landed (see the "Process note: workflow now uses grammar-b2.json + grammar:split" section above

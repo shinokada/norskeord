@@ -97,7 +97,10 @@ const B2_TOPICS = new Set([
   'determinativ-forsterkere',
   'adverb-gradboying',
   'sammensatt-verbtid',
-  'setningsledd-identifikasjon'
+  'setningsledd-identifikasjon',
+  // Missed when added: both cefr: 'B2' only (first B2 content for each).
+  'v2-word-order',
+  'subordinate-order'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────
