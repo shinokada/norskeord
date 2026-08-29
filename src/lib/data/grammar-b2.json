@@ -3417,6 +3417,136 @@
     "plusOnly": true
   },
   {
+    "id": "gq-hoflig-011",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Gjør spørsmålet høfligere ved å bruke preteritum av modalverbet.",
+    "source": "Kan dere bytte bordet vårt til et med utsikt?",
+    "answer": "Kunne dere bytte bordet vårt til et med utsikt?",
+    "hint": "Preteritum av «kan» («kunne») avdemper forespørselen på en restaurant, uten å vise til fortid.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-012",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig setning i en høflig henvendelse til utleieren.",
+    "sentence": "_____ fint om du kunne fikse varmtvannsberederen denne uken?",
+    "words": [
+      "Det hadde vært",
+      "Det er"
+    ],
+    "answer": "Det hadde vært",
+    "hint": "«Det hadde vært fint om...» avdemper forespørselen til utleieren, ikke en påstand om nåtiden.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-013",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om som et høflig, avdempet spørsmål med «lurte på om».",
+    "source": "Er det mulig å utsette innleveringsfristen?",
+    "answer": "Jeg lurte på om det var mulig å utsette innleveringsfristen.",
+    "hint": "«Jeg lurte på om» + preteritum avdemper spørsmålet til læreren eller sjefen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-014",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Du gir en venn et vennlig, avdempet råd om å søke på jobben. Velg riktig setning.",
+    "optionA": "Du burde søke på den stillingen.",
+    "optionB": "Du bør søke på den stillingen.",
+    "answer": "A",
+    "explanation": "«Burde» (preteritum av «bør») gjør rådet mildere og mer forsiktig enn det mer direkte «bør».",
+    "hint": "Hvilken form av modalverbet gir et mildere, mer forsiktig råd?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-015",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig form. En kunde henvender seg høflig til en bankansatt.",
+    "sentence": "_____ du forklare meg hvordan denne kontoen fungerer?",
+    "words": [
+      "Kunne",
+      "Kan"
+    ],
+    "answer": "Kunne",
+    "hint": "I en høflig henvendelse i banken brukes ofte preteritum av modalverbet, selv om det ikke handler om fortid.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-016",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om som en høflig anmodning med preteritum av «ville».",
+    "source": "Vil du bekrefte bestillingen på e-post?",
+    "answer": "Ville du bekrefte bestillingen på e-post?",
+    "hint": "Preteritum av «vil» («ville») gjør anmodningen til flyselskapet mykere og mer høflig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-017",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Frisoren forteller om en kunde som faktisk fikk time i går, etter lang venting. Velg riktig setning.",
+    "optionA": "Hun måtte vente tre uker på timen hun fikk i går.",
+    "optionB": "Hun måtte gjerne vente litt, om det passet bedre for salongen.",
+    "answer": "A",
+    "explanation": "I setning A viser «måtte» til en faktisk fortidig hendelse (ekte fortidsbetydning), mens setning B er en høflig, avdempet formulering uten fortidsbetydning.",
+    "hint": "Hvilken setning beskriver noe som allerede har skjedd?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-018",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig setning i en høflig e-post fra forsikringsselskapet.",
+    "sentence": "_____ interessert i å sende oss dokumentasjonen innen fredag?",
+    "words": [
+      "Skulle du være",
+      "Skal du være"
+    ],
+    "answer": "Skulle du være",
+    "hint": "«Skulle» (preteritum av «skal») brukes her for å stille et høflig, avdempet spørsmål.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-019",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om som et høflig forslag med «Det hadde vært lurt om».",
+    "source": "Du bør lese gjennom søknaden en gang til før du sender den.",
+    "answer": "Det hadde vært lurt om du leste gjennom søknaden en gang til før du sendte den.",
+    "hint": "«Det hadde vært lurt om» + preteritum gir et mykt, høflig forslag i stedet for en direkte formaning.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hoflig-020",
+    "topic": "hoflig-preteritum",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Hvilken setning er et høflig, avdempet spørsmål om nåtiden på biblioteket, ikke en beskrivelse av noe som faktisk skjedde i fortid?",
+    "options": [
+      "Måtte du levere boken tilbake i går?",
+      "Jeg lurte på om jeg kunne forlenge lånetiden.",
+      "Hun kunne ikke finne boken i går."
+    ],
+    "answer": "Jeg lurte på om jeg kunne forlenge lånetiden.",
+    "hint": "«Jeg lurte på om» + preteritum er den pragmatiske, høflige bruken; de andre to viser til konkrete fortidige hendelser.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-subj-001",
     "topic": "subjunksjon-oversikt",
     "cefr": "B2",
@@ -3579,6 +3709,151 @@
     "source": "Det blir ikke streik i barnehagen. Partene blir enige om en ny tariffavtale innen fredag.",
     "answer": "Det blir ikke streik i barnehagen hvis partene blir enige om en ny tariffavtale innen fredag.",
     "hint": "Fravær av streik er avhengig av at partene blir enige — en positiv betingelse, altså «hvis», ikke «med mindre»."
+  },
+  {
+    "id": "gq-subj-012",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn riktig subjunksjon.",
+    "sentence": "Sykehuset hadde så mange pasienter _____ de måtte sette opp ekstra senger i korridoren.",
+    "words": [
+      "at",
+      "som",
+      "fordi",
+      "hvis"
+    ],
+    "answer": "at",
+    "hint": "«Så mange ... at» uttrykker en følge av en grad — bruk «at», ikke «som» eller «fordi»."
+  },
+  {
+    "id": "gq-subj-013",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Bind sammen setningene med riktig subjunksjon fra sammenhengen.",
+    "source": "Det regnet kraftig. Turen måtte avlyses.",
+    "answer": "Det regnet så kraftig at turen måtte avlyses.",
+    "hint": "Bruk «så + adverb + at» for å uttrykke en følge av en grad."
+  },
+  {
+    "id": "gq-subj-014",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn riktig subjunksjon.",
+    "sentence": "Konserten gikk _____ planlagt, uten noen problemer.",
+    "words": [
+      "som",
+      "at",
+      "fordi",
+      "mens"
+    ],
+    "answer": "som",
+    "hint": "«Som» sammenlikner det som skjedde med det som var planlagt."
+  },
+  {
+    "id": "gq-subj-015",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Hvilken funksjon har «som» i denne setningen: «Hun gjorde akkurat som læreren hadde forklart»?",
+    "options": [
+      "Sammenlikning (subjunksjon)",
+      "Relativt pronomen som erstatter et substantiv",
+      "Betingelse",
+      "Årsak"
+    ],
+    "answer": "Sammenlikning (subjunksjon)",
+    "hint": "Her sammenlikner «som» handlingen med noe annet — det erstatter ikke et substantiv, slik det relative pronomenet gjør."
+  },
+  {
+    "id": "gq-subj-016",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn riktig subjunksjon.",
+    "sentence": "Skolen stenger ikke _____ smittetallene stiger kraftig igjen.",
+    "words": [
+      "med mindre",
+      "hvis",
+      "selv om",
+      "fordi"
+    ],
+    "answer": "med mindre",
+    "hint": "«Med mindre» er en negativ betingelse: skolen holder åpent, unntatt hvis smittetallene stiger."
+  },
+  {
+    "id": "gq-subj-017",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Bind sammen setningene med riktig subjunksjon fra sammenhengen.",
+    "source": "Bedriften gikk med underskudd i fjor. Ledelsen valgte å ikke si opp noen ansatte.",
+    "answer": "Selv om bedriften gikk med underskudd i fjor, valgte ledelsen å ikke si opp noen ansatte.",
+    "hint": "«Selv om» innleder en innrømmelse: noe skjer på tross av noe annet."
+  },
+  {
+    "id": "gq-subj-018",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg setningen som uttrykker hensikt, ikke årsak.",
+    "options": [
+      "Hun trente hver dag for at hun skulle klare maratonet.",
+      "Hun trente hver dag fordi hun elsket å løpe.",
+      "Hun trente hver dag, selv om hun var sliten.",
+      "Hun trente hver dag da hun var yngre."
+    ],
+    "answer": "Hun trente hver dag for at hun skulle klare maratonet.",
+    "hint": "«For at» uttrykker et mål/en hensikt, ikke en grunn som allerede finnes."
+  },
+  {
+    "id": "gq-subj-019",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn riktig subjunksjon.",
+    "sentence": "_____ toget hadde forlatt stasjonen, oppdaget hun at billetten lå igjen hjemme.",
+    "words": [
+      "Etter at",
+      "Før",
+      "Med mindre",
+      "Når"
+    ],
+    "answer": "Etter at",
+    "hint": "Oppdagelsen skjedde etter avgangen — bruk «etter at», ikke «før»."
+  },
+  {
+    "id": "gq-subj-020",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Fyll inn riktig subjunksjon.",
+    "sentence": "_____ forskerne oppdager nye data, oppdaterer de klimamodellene sine.",
+    "words": [
+      "Når",
+      "Da",
+      "For at",
+      "Med mindre"
+    ],
+    "answer": "Når",
+    "hint": "Dette skjer gjentatte ganger (hver gang nye data dukker opp), ikke én bestemt hendelse — derfor «når», ikke «da»."
+  },
+  {
+    "id": "gq-subj-021",
+    "topic": "subjunksjon-oversikt",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Hvilken kategori subjunksjon innleder leddsetningen i: «Hun løp så fort at hun vant løpet»?",
+    "options": [
+      "Følge (resultat)",
+      "Årsak",
+      "Betingelse",
+      "Sammenlikning"
+    ],
+    "answer": "Følge (resultat)",
+    "hint": "«Så fort at» uttrykker konsekvensen av farten — det er en følgesetning."
   },
   {
     "id": "gq-partform-001",
@@ -4085,6 +4360,151 @@
     "plusOnly": true
   },
   {
+    "id": "gq-modalbet-013",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig modalverb ut fra sammenhengen.",
+    "sentence": "Ifølge ekspertene _____ man sove minst åtte timer hver natt, men det er ikke farlig å sove litt mindre av og til.",
+    "words": [
+      "bør",
+      "må"
+    ],
+    "answer": "bør",
+    "hint": "Dette er en anbefaling, ikke en absolutt nødvendighet — det er «ikke farlig» å avvike fra den.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-014",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Du bør spise mer grønnsaker for å få i deg nok vitaminer.",
+    "optionB": "Du må spise mer grønnsaker for å få i deg nok vitaminer.",
+    "answer": "A",
+    "explanation": "«Bør» uttrykker en anbefaling — det ville vært lurt. «Må» ville uttrykt en streng nødvendighet, noe som er for sterkt for et generelt kostholdsråd.",
+    "hint": "Er dette en anbefaling eller en streng nødvendighet?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-015",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Sett inn i: «Legen sa at …», og bruk preteritum av modalverbet.",
+    "source": "Jeg bør trene mer.",
+    "answer": "Legen sa at jeg burde trene mer.",
+    "hint": "I referert tale brukes preteritum av modalverbet: bør → burde.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-016",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig modalverb ut fra sammenhengen.",
+    "sentence": "Du _____ pakke en varm jakke, selv om det ikke er bestemt at du trenger den.",
+    "words": [
+      "bør",
+      "skal"
+    ],
+    "answer": "bør",
+    "hint": "Dette er et råd, ikke en avtalt plan eller instruks.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-017",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Kollegaen din spør om råd angående presentasjonen. Du synes hun bør øve mer før møtet. Velg riktig setning.",
+    "options": [
+      "Du bør øve mer før møtet.",
+      "Du kan øve mer før møtet.",
+      "Du skal øve mer før møtet."
+    ],
+    "answer": "Du bør øve mer før møtet.",
+    "hint": "Dette er et råd om hva som ville vært lurt, ikke en tillatelse eller en instruks.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-018",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig modalverb ut fra sammenhengen.",
+    "sentence": "Etter tre år i Norge _____ hun snakke flytende norsk.",
+    "words": [
+      "kan",
+      "må"
+    ],
+    "answer": "kan",
+    "hint": "Dette handler om evne, ikke plikt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-019",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig modalverb ut fra sammenhengen.",
+    "sentence": "Sjefen har bestemt at alle ansatte _____ møte på kontoret tre dager i uken.",
+    "words": [
+      "skal",
+      "vil"
+    ],
+    "answer": "skal",
+    "hint": "Dette er en instruks/beslutning fra en annen, ikke et personlig ønske.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-020",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig modalverb ut fra sammenhengen.",
+    "sentence": "Analytikerne tror renten _____ øke igjen neste år.",
+    "words": [
+      "vil",
+      "skal"
+    ],
+    "answer": "vil",
+    "hint": "En spådom om fremtiden uttrykkes med «vil», ikke «skal».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-021",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Du må stoppe for rødt lys, ellers får du bot.",
+    "optionB": "Du bør stoppe for rødt lys, ellers får du bot.",
+    "answer": "A",
+    "explanation": "Å stoppe for rødt lys er en juridisk plikt (nødvendighet), ikke bare et råd — derfor «må», ikke «bør».",
+    "hint": "Er dette en juridisk plikt eller bare et råd?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modalbet-022",
+    "topic": "modalverb-betydning",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Du",
+      "bør",
+      "drikke",
+      "mer",
+      "vann"
+    ],
+    "answer": "Du bør drikke mer vann.",
+    "alternates": [
+      "Du bør drikke mer vann"
+    ],
+    "hint": "«Bør» er et modalverb og står i verbal-posisjon (V2), etterfulgt av hovedverbet i infinitiv.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-adjadv-012",
     "topic": "adjektiv-eller-adverb",
     "cefr": "B2",
@@ -4367,6 +4787,136 @@
     "source": "Det er sannsynlig at møtet blir flyttet på grunn av været.",
     "answer": "Møtet kommer sannsynligvis til å bli flyttet på grunn av været.",
     "hint": "Begge uttrykk beholder samme grad av sikkerhet, bare med ulik setningsstruktur.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-011",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen: bruk «trolig» i stedet for «det er sannsynlig at».",
+    "source": "Det er sannsynlig at flyet blir forsinket på grunn av snøen.",
+    "answer": "Flyet blir trolig forsinket på grunn av snøen.",
+    "hint": "«Trolig» er et setningsadverb med samme grad av sikkerhet, plassert midtfelt rett etter det finitte verbet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-012",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen: bruk «antakelig» i stedet for «det er sannsynlig at».",
+    "source": "Det er sannsynlig at styret godkjenner budsjettet i morgen.",
+    "answer": "Styret godkjenner antakelig budsjettet i morgen.",
+    "hint": "«Antakelig» beholder samme grad av sikkerhet som «det er sannsynlig at», bare komprimert til ett adverb.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-013",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig uttrykk ut fra sammenhengen.",
+    "sentence": "Skyene har lettet og vinden har løyet, så det blir _____ sol i ettermiddag.",
+    "words": [
+      "trolig",
+      "lite sannsynlig",
+      "kan hende"
+    ],
+    "answer": "trolig",
+    "hint": "Klare tegn på bedre vær peker mot en høy grad av sikkerhet, uttrykt med setningsadverbet «trolig».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-014",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Salget har økt hver måned i år, så omsetningen blir trolig høyere enn i fjor.",
+    "optionB": "Salget har økt hver måned i år, så det er lite sannsynlig at omsetningen blir høyere enn i fjor.",
+    "answer": "A",
+    "explanation": "En jevn salgsøkning peker mot en høy grad av sikkerhet, så «trolig» passer — ikke «det er lite sannsynlig at», som uttrykker det motsatte.",
+    "hint": "Se etter hvilken sannsynlighetsgrad som stemmer med den jevne salgsøkningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-015",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Legen har sett symptomene før, men venter fortsatt på prøvesvar. Velg riktig setning.",
+    "options": [
+      "Det kan hende at det er en allergi.",
+      "Det er sikkert at det er en allergi.",
+      "Det kommer til å bli en allergi."
+    ],
+    "answer": "Det kan hende at det er en allergi.",
+    "hint": "Uten prøvesvar er dette bare en mulighet, ikke en sikker spådom eller en trolig konklusjon.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-016",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen: bruk «det er sannsynlig at» i stedet for «trolig».",
+    "source": "Prisene på strøm faller trolig igjen neste vinter.",
+    "answer": "Det er sannsynlig at prisene på strøm faller igjen neste vinter.",
+    "hint": "Begge uttrykker samme grad av sikkerhet — omskrivningen går like gjerne fra adverb til det-setning som motsatt vei.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-017",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig uttrykk ut fra sammenhengen.",
+    "sentence": "Han har trent hardt hele sesongen, så han vinner _____ konkurransen i helgen.",
+    "words": [
+      "antakelig",
+      "er mulig at han",
+      "kan hende"
+    ],
+    "answer": "antakelig",
+    "hint": "Hardt treningsarbeid gir grunn til høy sikkerhet, uttrykt med setningsadverbet «antakelig».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-018",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Toget kommer trolig for sent i dag.",
+    "optionB": "Toget trolig kommer for sent i dag.",
+    "answer": "A",
+    "explanation": "Setningsadverbet «trolig» følger det finitte verbet i midtfeltet (kommer trolig), ikke plasseres foran det.",
+    "hint": "Se etter riktig plassering av setningsadverbet i forhold til det finitte verbet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-019",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen: bruk «antakelig» i stedet for «jeg tror».",
+    "source": "Jeg tror konserten blir utsolgt før helgen.",
+    "answer": "Konserten blir antakelig utsolgt før helgen.",
+    "hint": "«Jeg tror» uttrykker talerens egen oppfatning, mens «antakelig» flytter samme usikkerhet inn i selve setningen som et adverb.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sannsyn-020",
+    "topic": "sannsynlighet-uttrykk",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Klimaforskerne har lenge advart om utviklingen, og de nyeste målingene bekrefter mønsteret. Velg riktig setning.",
+    "options": [
+      "Havnivået kommer til å stige videre.",
+      "Det kan hende at havnivået stiger videre.",
+      "Det er lite sannsynlig at havnivået stiger videre."
+    ],
+    "answer": "Havnivået kommer til å stige videre.",
+    "hint": "Gjentatte advarsler og bekreftende målinger peker mot en sikker spådom, uttrykt med «kommer til å».",
     "plusOnly": true
   },
   {
@@ -5729,6 +6279,147 @@
     "plusOnly": true
   },
   {
+    "id": "gq-menesynes-013",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Jeg _____ å reise til Spania i sommer, men billettene ble for dyre.",
+    "words": [
+      "tenkte",
+      "tenker"
+    ],
+    "answer": "tenkte",
+    "hint": "«Tenkte» + infinitiv uttrykker en tidligere intensjon - noe man hadde planlagt, men kanskje ikke gjorde.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-014",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Uttrykk en tidligere intensjon med riktig verbform.",
+    "source": "Jeg planla å ringe deg i går kveld.",
+    "answer": "Jeg tenkte å ringe deg i går kveld.",
+    "hint": "En tidligere intensjon om å gjøre noe uttrykkes med «tenkte» + infinitiv.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-015",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg tenkte å overraske henne med blomster, men glemte det.",
+    "optionB": "Jeg tenker på å overraske henne med blomster, men glemte det.",
+    "answer": "A",
+    "explanation": "«Glemte det» viser at intensjonen lå i fortiden og ikke ble gjennomført - da passer «tenkte å», ikke «tenker på å», som beskriver en pågående vurdering.",
+    "hint": "Ligger intensjonen i fortiden, eller vurderes den fortsatt?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-016",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": [
+      "Hun",
+      "tenkte",
+      "å",
+      "overraske",
+      "oss",
+      "med",
+      "kaken"
+    ],
+    "answer": "Hun tenkte å overraske oss med kaken.",
+    "hint": "«Tenkte å» + infinitiv uttrykker en tidligere plan eller intensjon.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-017",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Fagforeningen _____ at lønningene bør økes neste år.",
+    "words": [
+      "mener",
+      "synes"
+    ],
+    "answer": "mener",
+    "hint": "En stilt, begrunnet posisjon fra en organisasjon uttrykkes med «mener».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-018",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Jeg _____ den nye filmen var ganske kjedelig.",
+    "words": [
+      "synes",
+      "mener"
+    ],
+    "answer": "synes",
+    "hint": "En personlig reaksjon på noe man har opplevd, som en film, uttrykkes med «synes».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-019",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb.",
+    "sentence": "Jeg _____ det blir regn i morgen, men jeg har ikke sjekket værmeldingen.",
+    "words": [
+      "tror",
+      "synes"
+    ],
+    "answer": "tror",
+    "hint": "En usikker gjetning om et fremtidig faktum uttrykkes med «tro».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-020",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Du gjetter på resultatet av kampen i morgen, uten å være sikker. Velg riktig setning.",
+    "options": [
+      "Jeg tror laget vårt vinner i morgen.",
+      "Jeg mener laget vårt vinner i morgen.",
+      "Jeg synes laget vårt vinner i morgen."
+    ],
+    "answer": "Jeg tror laget vårt vinner i morgen.",
+    "hint": "En usikker gjetning om noe fremtidig uttrykkes med «tro», ikke «mene» eller «synes».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-021",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Partiet mener at skattene bør senkes.",
+    "optionB": "Partiet synes at skattene bør senkes.",
+    "answer": "A",
+    "explanation": "Et parti som tar et politisk standpunkt bruker «mener»; «synes» ville signalisert en mer personlig, følelsesbasert reaksjon, ikke en offisiell posisjon.",
+    "hint": "Er dette en offisiell posisjon eller en personlig følelse?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-menesynes-022",
+    "topic": "mene-synes-tro-tenke",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Uttrykk en personlig reaksjon på boken med riktig verb.",
+    "source": "Boken var overraskende spennende.",
+    "answer": "Jeg synes boken var overraskende spennende.",
+    "hint": "En personlig leseopplevelse uttrykkes med «synes».",
+    "plusOnly": true
+  },
+  {
     "id": "gq-modaladv-001",
     "topic": "modale-adverb",
     "cefr": "B2",
@@ -6376,6 +7067,162 @@
     ],
     "answer": "skulle",
     "hint": "Sett fra et fortidig ståsted lå utsettelsen fortsatt foran i tid — preteritum futurum: skulle bli utsatt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-023",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig hjelpeverb.",
+    "sentence": "Fra sitt kontor visste statsministeren at regjeringen _____ møte sterk motstand i Stortinget.",
+    "words": [
+      "ville",
+      "vil"
+    ],
+    "answer": "ville",
+    "hint": "Sett fra et fortidig ståsted lå motstanden fortsatt foran i tid — preteritum futurum: ville møte.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-024",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Slå sammen de to setningene til én. Bruk preteritum perfektum for det som skjedde tidligere, og preteritum futurum for det som fortsatt lå foran i tid.",
+    "source": "Bedriften hadde lansert et nytt produkt. Konkurrentene ville reagere raskt.",
+    "answer": "Da bedriften hadde lansert et nytt produkt, ville konkurrentene reagere raskt.",
+    "hint": "«Da» innleder det som allerede var skjedd (hadde lansert); hovedsetningen bruker ville + infinitiv for det som fortsatt lå foran i tid.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-025",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Forskerne visste allerede den gangen hva som fortsatt lå foran i tid. Velg riktig setning.",
+    "options": [
+      "Forskerne ante at havnivået ville stige de neste tiårene.",
+      "Forskerne ante at havnivået hadde steget de neste tiårene.",
+      "Forskerne ante at havnivået ville ha steget de neste tiårene."
+    ],
+    "answer": "Forskerne ante at havnivået ville stige de neste tiårene.",
+    "hint": "Det som fortsatt lå foran i tid fra et fortidig ståsted, bruker skulle/ville + infinitiv, ikke hadde + partisipp eller ville ha + partisipp.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-026",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Hun",
+      "visste",
+      "at",
+      "hun",
+      "ville",
+      "flytte",
+      "til",
+      "en",
+      "annen",
+      "by"
+    ],
+    "answer": "Hun visste at hun ville flytte til en annen by.",
+    "hint": "Preteritum futurum (ville flytte) markerer det som fortsatt lå foran i tid fra hennes daværende ståsted.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-027",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig hjelpeverb.",
+    "sentence": "Da dommen falt, _____ tiltalte allerede tilstått alt.",
+    "words": [
+      "hadde",
+      "har"
+    ],
+    "answer": "hadde",
+    "hint": "Tilståelsen skjedde før referansepunktet (dommen falt) — preteritum perfektum: hadde tilstått.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-028",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Han øvde ekstra og bestod til slutt. Velg riktig setning om hva som ville skjedd uten øvingen.",
+    "optionA": "Uten den ekstra kjøretimen ville han aldri ha bestått førerprøven.",
+    "optionB": "Uten den ekstra kjøretimen bestod han aldri førerprøven.",
+    "answer": "A",
+    "explanation": "Dette er en uoppfylt hypotese om fortiden — han øvde faktisk og bestod, så et scenario UTEN øvingen er hypotetisk og krever preteritum futurum perfektum: ville ha bestått, ikke vanlig preteritum.",
+    "hint": "Er dette et faktisk hendelsesforløp eller en hypotese om noe som ikke skjedde?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-029",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig hjelpeverb.",
+    "sentence": "Uten forsinkelsen _____ vi ha rukket flyet med god margin.",
+    "words": [
+      "ville",
+      "vil"
+    ],
+    "answer": "ville",
+    "hint": "Dette er en uoppfylt hypotese om fortiden — preteritum futurum perfektum: ville ha rukket.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-030",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Slå sammen setningene til én, og uttrykk at det første aldri ble noe av.",
+    "source": "Jeg planla å ringe legen. Jeg glemte det.",
+    "answer": "Jeg skulle ha ringt legen, men jeg glemte det.",
+    "hint": "En uoppfylt intensjon uttrykkes med skulle ha + partisipp.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-031",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig hjelpeverb.",
+    "sentence": "Da konserten startet, _____ vi allerede funnet plassene våre.",
+    "words": [
+      "hadde",
+      "har"
+    ],
+    "answer": "hadde",
+    "hint": "Det å finne plassene skjedde før referansepunktet (konserten startet) — preteritum perfektum: hadde funnet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-pretfutur-032",
+    "topic": "preteritum-perfektum-og-futurum",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Da",
+      "de",
+      "hadde",
+      "signert",
+      "kontrakten",
+      "skulle",
+      "arbeidet",
+      "starte",
+      "umiddelbart"
+    ],
+    "answer": "Da de hadde signert kontrakten, skulle arbeidet starte umiddelbart.",
+    "alternates": [
+      "Da de hadde signert kontrakten skulle arbeidet starte umiddelbart."
+    ],
+    "hint": "Preteritum perfektum (hadde signert) markerer det som skjedde først; preteritum futurum (skulle starte) markerer det som fortsatt lå foran i tid.",
     "plusOnly": true
   },
   {
@@ -8282,6 +9129,149 @@
     "plusOnly": true
   },
   {
+    "id": "gq-partikkel-023",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Hun slo av lyset før hun gikk og la seg.",
+    "optionB": "Hun avslo lyset før hun gikk og la seg.",
+    "answer": "A",
+    "explanation": "«Slå av» (løst sammensatt) betyr bokstavelig å skru av noe, som lys eller en maskin. «Avslå» (fast sammensatt) betyr å si nei til noe, som et tilbud eller en søknad.",
+    "hint": "Handler det om å skru av noe fysisk, eller om å si nei til noe?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-024",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb ut fra sammenhengen.",
+    "sentence": "Banken _____ søknaden hans om lån.",
+    "words": [
+      "avslo",
+      "slo av",
+      "slo ut"
+    ],
+    "answer": "avslo",
+    "hint": "Å si nei til noe, som en søknad, uttrykkes med det faste sammensatte verbet «avslå».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-025",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": [
+      "Han",
+      "slo",
+      "av",
+      "radioen",
+      "og",
+      "gikk",
+      "ut"
+    ],
+    "answer": "Han slo av radioen og gikk ut.",
+    "hint": "Løst sammensatt «slå av» beskriver den bokstavelige handlingen å skru av noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-026",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen: bruk det faste sammensatte verbet i stedet for «si nei til».",
+    "source": "Hun sa nei til jobbtilbudet fordi lønnen var for lav.",
+    "answer": "Hun avslo jobbtilbudet fordi lønnen var for lav.",
+    "hint": "«Avslå» er den faste, idiomatiske formen for å si nei til noe formelt, som et tilbud.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-027",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Jeg kom over en gammel bok på loftet i går.",
+    "optionB": "Jeg overkom en gammel bok på loftet i går.",
+    "answer": "A",
+    "explanation": "«Komme over» (løst sammensatt) betyr bokstavelig å finne noe tilfeldig, som en gammel bok. «Overkomme» (fast sammensatt) betyr å klare å overvinne noe vanskelig, som en utfordring eller frykt.",
+    "hint": "Handler det om å finne noe tilfeldig, eller om å overvinne noe vanskelig?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-028",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb ut fra sammenhengen.",
+    "sentence": "Laget måtte _____ store utfordringer for å nå finalen.",
+    "words": [
+      "overkomme",
+      "komme over",
+      "komme forbi"
+    ],
+    "answer": "overkomme",
+    "hint": "Å klare å overvinne noe vanskelig uttrykkes med det faste sammensatte verbet «overkomme».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-029",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": [
+      "Vi",
+      "kom",
+      "over",
+      "en",
+      "sjelden",
+      "plate",
+      "på",
+      "loppemarkedet"
+    ],
+    "answer": "Vi kom over en sjelden plate på loppemarkedet.",
+    "hint": "Løst sammensatt «komme over» beskriver den bokstavelige handlingen å finne noe tilfeldig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-030",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Han satte inn penger på kontoen før ferien.",
+    "optionB": "Han innsatte penger på kontoen før ferien.",
+    "answer": "A",
+    "explanation": "«Sette inn» (løst sammensatt) betyr bokstavelig å plassere noe inn i noe, som penger på en konto. «Innsette» (fast sammensatt) betyr å formelt gi noen en stilling eller et embete, som en president.",
+    "hint": "Handler det om å plassere noe fysisk, eller om å gi noen en formell stilling?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-031",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig verb ut fra sammenhengen.",
+    "sentence": "Regjeringen skal _____ den nye ambassadøren neste uke.",
+    "words": [
+      "innsette",
+      "sette inn",
+      "sette opp"
+    ],
+    "answer": "innsette",
+    "hint": "Å formelt gi noen en stilling eller et embete uttrykkes med det faste sammensatte verbet «innsette».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-partikkel-032",
+    "topic": "partikkelverb-los-fast",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen: bruk det løse sammensatte verbet i stedet for «plassere».",
+    "source": "Hun plasserte nye batterier i fjernkontrollen.",
+    "answer": "Hun satte inn nye batterier i fjernkontrollen.",
+    "hint": "«Sette inn» er den løse, bokstavelige formen for å plassere noe inni noe annet, som batterier.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-stedsadv-001",
     "topic": "stedsadverb-statisk-dynamisk",
     "cefr": "B2",
@@ -8680,6 +9670,157 @@
     "source": "Reisen ga meg mye ny innsikt.",
     "answer": "Reisen ga en mye ny innsikt.",
     "hint": "Bytt ut det personlige objektet «meg» med det upersonlige objektet «en».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-019",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning (formell stil).",
+    "options": [
+      "En bør alltid dobbeltsjekke tallene før en sender rapporten.",
+      "Man bør alltid dobbeltsjekke tallene før en sender rapporten.",
+      "En bør alltid dobbeltsjekke tallene før man sender rapporten."
+    ],
+    "answer": "En bør alltid dobbeltsjekke tallene før en sender rapporten.",
+    "hint": "Det upersonlige subjektet må være det samme gjennom hele setningen - ikke bland «man» og «en».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-020",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "En bør lese avtalen nøye før en signerer.",
+    "optionB": "En bør lese avtalen nøye før man signerer.",
+    "answer": "En bør lese avtalen nøye før en signerer.",
+    "explanation": "Når «en» først er valgt som upersonlig subjekt, må samme pronomen brukes resten av setningen - ikke byttes til «man».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-021",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": [
+      "En",
+      "bør",
+      "spise",
+      "variert",
+      "hvis",
+      "en",
+      "vil",
+      "holde",
+      "seg",
+      "frisk"
+    ],
+    "answer": "En bør spise variert hvis en vil holde seg frisk.",
+    "hint": "Begge forekomstene av det upersonlige subjektet skal være «en», ikke en blanding av «en» og «man».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-022",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om til en generell påstand med «en».",
+    "source": "Du bør varme opp skikkelig før du løper langt.",
+    "answer": "En bør varme opp skikkelig før en løper langt.",
+    "hint": "Bytt ut hvert «du» med «en», og hold samme pronomen gjennom hele setningen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-023",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig upersonlig ord.",
+    "sentence": "I Danmark spiser _____ ofte varmt måltid til lunsj.",
+    "words": [
+      "folk",
+      "de"
+    ],
+    "answer": "folk",
+    "hint": "«Folk» kan brukes uformelt om mennesker generelt, på samme måte som «du»; «de» viser til bestemte, navngitte personer.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-024",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning i uformell stil.",
+    "options": [
+      "I Japan tar folk skoene av seg før de går inn i et hjem.",
+      "I Japan tar de skoene av seg før de går inn i et hjem.",
+      "I Japan tar jeg skoene av seg før de går inn i et hjem."
+    ],
+    "answer": "I Japan tar folk skoene av seg før de går inn i et hjem.",
+    "hint": "«Folk» viser til mennesker generelt; «de» uten en tidligere nevnt referanse er uklart, og «jeg» er ikke upersonlig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-025",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig upersonlig pronomen.",
+    "sentence": "Et godt jobbintervju gir _____ en god følelse av bedriften.",
+    "words": [
+      "en",
+      "man"
+    ],
+    "answer": "en",
+    "hint": "Pronomenet er objekt for «gir», og «man» kan aldri stå som objekt - bruk «en».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-026",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "optionA": "Legen ga en gode råd om kosthold og trening.",
+    "optionB": "Legen ga seg gode råd om kosthold og trening.",
+    "answer": "Legen ga en gode råd om kosthold og trening.",
+    "explanation": "Her er det upersonlige pronomenet objekt for «ga» og viser til folk generelt, ikke til legen selv (refleksivt «seg») - da må «en» brukes.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-027",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": [
+      "Man",
+      "bør",
+      "tenke",
+      "seg",
+      "om",
+      "før",
+      "man",
+      "deler",
+      "noe",
+      "på",
+      "nett"
+    ],
+    "answer": "Man bør tenke seg om før man deler noe på nett.",
+    "hint": "Begge forekomstene av det upersonlige subjektet er «man», ikke en blanding av «man» og «en».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-man-028",
+    "topic": "man-en-upersonlig-pronomen",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Velg riktig setning i uformell stil.",
+    "options": [
+      "I rushtiden bruker du gjerne dobbelt så lang tid i bilkø.",
+      "I rushtiden bruker de gjerne dobbelt så lang tid i bilkø.",
+      "I rushtiden bruker jeg gjerne dobbelt så lang tid i bilkø."
+    ],
+    "answer": "I rushtiden bruker du gjerne dobbelt så lang tid i bilkø.",
+    "hint": "Uformelt «du» brukes om folk generelt/i en typisk situasjon; «de» viser til bestemte personer, og «jeg» er ikke upersonlig.",
     "plusOnly": true
   },
   {
@@ -9336,6 +10477,153 @@
     "answer": "A",
     "explanation": "«Jo» signaliserer felles, allerede kjent kunnskap mellom taler og mottaker. «Nok» ville i stedet avdempe det som en usikker antakelse fra taleren selv.",
     "hint": "Er dette noe dere begge allerede vet, eller en usikker antakelse?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-024",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Meteorologene har lovet strålende sol hele uken, så du er nesten helt sikker. Velg riktig setning.",
+    "optionA": "Det blir sikkert fint vær i morgen.",
+    "optionB": "Det blir nok fint vær i morgen.",
+    "answer": "A",
+    "explanation": "«Sikkert» uttrykker høyere grad av sikkerhet enn «nok», som heller passer til en mer forsiktig, personlig antakelse uten sterk bekreftelse utenfra.",
+    "hint": "Er dette en sterk, bekreftet forventning, eller en forsiktig personlig antakelse?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-025",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig adverb.",
+    "sentence": "Du husker _____ at prøven er i morgen — vi snakket om det i går.",
+    "words": [
+      "jo",
+      "vel"
+    ],
+    "answer": "jo",
+    "hint": "Dette viser til noe dere allerede har snakket om sammen — felles kunnskap.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-026",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig adverb.",
+    "sentence": "Ferien så avslappende ut på bildene, men vi var _____ stresset hele tiden.",
+    "words": [
+      "egentlig",
+      "faktisk"
+    ],
+    "answer": "egentlig",
+    "hint": "Dette markerer en motsetning mellom inntrykket og hvordan det egentlig var.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-027",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig adverb.",
+    "sentence": "Til alles overraskelse kom toget _____ presis i dag, uten forsinkelse.",
+    "words": [
+      "faktisk",
+      "egentlig"
+    ],
+    "answer": "faktisk",
+    "hint": "Dette markerer et overraskende faktum, ikke en motsetning til et inntrykk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-028",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig adverb.",
+    "sentence": "Himmelen er helt overskyet, så vi kan _____ ha hagefest ute i dag.",
+    "words": [
+      "neppe",
+      "kanskje"
+    ],
+    "answer": "neppe",
+    "hint": "Basert på et konkret tegn vurderes dette som usannsynlig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-029",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig adverb.",
+    "sentence": "Mekanikeren er usikker, men bilen er _____ klar til henting i morgen.",
+    "words": [
+      "kanskje",
+      "neppe"
+    ],
+    "answer": "kanskje",
+    "hint": "Dette uttrykker en mulighet, verken sikker viten eller noe usannsynlig.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-030",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Du minner vennen din på noe dere begge allerede har avtalt tidligere. Velg riktig setning.",
+    "optionA": "Vi har jo avtalt å møtes på kafeen klokka ti.",
+    "optionB": "Vi har vel avtalt å møtes på kafeen klokka ti.",
+    "answer": "A",
+    "explanation": "«Jo» viser til felles, allerede kjent kunnskap. «Vel» ville i stedet søke bekreftelse eller uttrykke en antakelse, ikke en påminnelse om noe alt avtalt.",
+    "hint": "Handler dette om en påminnelse om felles kunnskap, eller om en bekreftelse/antakelse?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-031",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge. Det modale adverbet står i midtfeltet, rett etter det bøyde verbet.",
+    "tokens": [
+      "Konserten",
+      "blir",
+      "nok",
+      "utsolgt",
+      "raskt"
+    ],
+    "answer": "Konserten blir nok utsolgt raskt.",
+    "alternates": [
+      "Konserten blir nok utsolgt raskt"
+    ],
+    "hint": "I en hovedsetning kommer det modale adverbet rett etter det bøyde verbet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-032",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen slik at den viser at informasjonen er hørt fra andre, ikke bekreftet selv.",
+    "source": "Biblioteket er stengt på søndager.",
+    "answer": "Biblioteket er visst stengt på søndager.",
+    "hint": "Bruk «visst» i midtfeltet for å markere at informasjonen er hørt fra andre.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-modaladv-033",
+    "topic": "modale-adverb",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Du er nesten sikker på at vennen din husker bursdagen din, men spør likevel for å få bekreftelse. Velg riktig spørsmål.",
+    "options": [
+      "Du husker vel bursdagen min?",
+      "Du husker jo bursdagen min?",
+      "Du husker faktisk bursdagen min?"
+    ],
+    "answer": "Du husker vel bursdagen min?",
+    "hint": "Dette er et spørsmål der taleren venter et bekreftende svar.",
     "plusOnly": true
   },
   {

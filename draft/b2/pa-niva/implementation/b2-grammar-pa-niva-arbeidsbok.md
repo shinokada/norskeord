@@ -1031,31 +1031,217 @@ highest-value touch (grows a 2-question topic), fully direct-match, zero groundw
   **Validation complete:** user ran both — `check-b2-grammar-vocab.mjs spesial-kvantorer` → 0
   unmatched across 24 B2 questions; `check-grammar-norwegian.mjs spesial-kvantorer` → 0 flagged
   across all 24 questions. `spesial-kvantorer` touch is fully done and validated.
+- ✅ **Done — `subjunksjon-oversikt`** (Subjunksjoner §1/4/5/8/11, Leddsetninger §2–3/8 — at/om/å
+  reported speech (already covered by `indirekte-tale-at-om`, not retouched here), adverbiale
+  subjunksjonskategorier, hvis/som/at/fordi, «med mindre» negative condition). Found a rule-text
+  gap: the exercise's own subjunksjon-category list (tid/årsak/betingelse/motsetning/hensikt/
+  følge/sammenlikning) includes two categories the rule text never covered — **følge** (result:
+  «så + adjektiv/adverb + at») and **sammenlikning** (comparison: «som» as a subjunction, distinct
+  from the relative pronoun «som» covered by `relative-som`) — added both to
+  `explanationEn`/`explanationNb` before drafting questions. The existing 11 B2 questions covered
+  da/når/fordi/for at/hvis/med mindre/selv om/før/etter at well but had zero følge/sammenlikning
+  content, so the new batch targeted that gap directly (4 questions) plus fresh reinforcement of
+  the existing categories with new domains not yet used (sykehus, skole/smittetall, bedrift/
+  underskudd, tog/billett, klimaforskere). Added 10 new B2 questions (`gq-subj-012`–`021`: fill/
+  transform/multiple-choice mix). Topic now has 21 total B2 questions (11 → 21). Validated:
+  `check-b2-grammar-vocab.mjs subjunksjon-oversikt` → 0 unmatched across 21 B2 questions;
+  `check-grammar-norwegian.mjs subjunksjon-oversikt` → 0 flagged across all 21 questions. Applied
+  to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2812 total questions
+  file-wide, no duplicate IDs. `pnpm grammar:split` re-run and reconciled (2812/2812).
+- ✅ **Done — `modale-adverb`** (Adverb §10–14 — nektende adverb, visst/visstnok/trolig, kanskje/
+  selvfølgelig/nok, likevel/derfor/dessuten). Checked the existing B1 set (10 questions,
+  `gq-modaladv-014`–`023`) before drafting and found it already thoroughly covers «vel»-as-
+  probability and «visst»-as-emphatic-front-position, so no rule-text gap and no need to re-test
+  those specific nuances at B2 — instead targeted fresh-domain reinforcement of the well-covered
+  B2 nuances (jo, egentlig/faktisk contrast, neppe, kanskje, sikkert/nok) plus one new
+  fine-grained minimal-pair not tested anywhere yet: «sikkert» (high certainty, external
+  confirmation) vs. «nok» (a hedged personal guess) — a genuine distinction the rule text
+  describes but no prior question isolated. Added 10 new B2 questions
+  (`gq-modaladv-024`–`033`: minimal-pair/fill/order/transform/multiple-choice mix, all
+  `plusOnly: true` matching the topic's existing convention), fresh domains not used in either
+  the B1 or existing B2 set (vær/meteorologene, skole/prøve, ferie/reise, tog, hage/fest,
+  bilverksted, kafé, konsert, bibliotek, bursdag). Topic now has 33 total questions (23 → 33;
+  B2 count 13 → 23, B1 10 unchanged). Applied to the real `grammar.json` via
+  `Filesystem:edit_file` — an initial edit introduced a JSON corruption (a malformed duplicate
+  fragment merged into the following `gq-ledd-011` entry), caught immediately by a JSON-validity
+  check and fixed with a follow-up `Filesystem:edit_file` before proceeding. Re-verified: 2822
+  total questions file-wide, no duplicate IDs. User ran `pnpm grammar:split` to regenerate the
+  split files/index. **Validators not confirmed run this session** — run
+  `check-b2-grammar-vocab.mjs modale-adverb` / `check-grammar-norwegian.mjs modale-adverb`
+  before trusting this content in prod.
+- ✅ **Done — `modalverb-betydning`** (kan/skal/vil/må meaning contrasts, Verb §14 — modalverb i
+  formelle situasjoner). Found a rule-text gap: the existing rule text only documented four
+  modal verbs (kan/skal/vil/må); **bør** (past tense **burde**) — a fifth modal verb expressing
+  a recommendation, weaker than «må» — appeared only in passing elsewhere in `rules.ts` (the
+  preteritum-verb list, `mene-synes-tro-tenke`, `hoflig-preteritum`) but was never taught as its
+  own modal meaning here. Added a new paragraph to `explanationEn`/`explanationNb` covering
+  bør/burde (recommendation vs. må's necessity, plus its common pairing with «synes») before
+  drafting questions. The existing 12 B2 questions covered kan/skal/vil/må well with zero bør
+  content, so the new batch targeted that gap directly (6 questions: fill/minimal-pair/
+  transform/multiple-choice/order covering bør-vs-må, bør-vs-skal, preteritum burde in
+  reported speech, and V2 placement) plus fresh reinforcement of kan/skal/vil with new domains
+  (språk, bedrift, økonomi, trafikkregler). Added 10 new B2 questions
+  (`gq-modalbet-013`–`022`, all `plusOnly: true` matching the topic's convention). Topic now has
+  22 total questions (12 → 22, all B2). Applied to the real `grammar.json` via
+  `Filesystem:edit_file` (clean edit this time, no corruption), re-verified: 2832 total questions
+  file-wide, no duplicate IDs. **Validators not confirmed run this session** — run
+  `check-b2-grammar-vocab.mjs modale-adverb modalverb-betydning` /
+  `check-grammar-norwegian.mjs modale-adverb modalverb-betydning` next, alongside the
+  still-outstanding `modale-adverb` validation above, before starting a new topic.
+
+## Process note: workflow now uses grammar-b2.json + grammar:split (adopted this session)
+
+Since `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` landed, the per-topic
+existing-count/highest-ID/`plusOnly` lookup no longer needs an ad-hoc user-run Python/grep against
+the 1.2MB+ `grammar.json`. New workflow, going forward for every existing-topic touch:
+1. Copy `src/lib/data/grammar-b2.json` (or the relevant level file) via
+   `Filesystem:copy_file_user_to_claude` — small enough to read/query directly with the computer's
+   own Python, no user round-trip needed for this step anymore.
+2. Still edit `src/lib/data/grammar.json` directly via `Filesystem:edit_file` (unchanged — it
+   remains the single source of truth per the lazy-load plan's decision).
+3. After applying, ask the user to run `pnpm grammar:split` so the split files/index catch up,
+   then the two validators (`check-b2-grammar-vocab.mjs`, `check-grammar-norwegian.mjs`) as
+   before.
+4. Copy the fresh `grammar.json` back afterward only to confirm JSON validity, total count, and no
+   duplicate IDs (still needed since `grammar.json` itself is the edit target, not the split
+   files).
+
+- ✅ **Done — `sannsynlighet-uttrykk`** (Adverb §10–11 — visst/visstnok/trolig hedging).
+  Found a genuine rule-text gap: the existing rule text covered mulig/sannsynlig/lite
+  sannsynlig/kommer til å/kan hende/tror/antar, but never mentioned **trolig**/**antakelig** as
+  single-adverb paraphrases of «det er sannsynlig at» (matching the book's own Adverb §11
+  target, visst/visstnok/**trolig**) — added a new bullet to `explanationEn`/`explanationNb`
+  before drafting questions. The existing 10 B2 questions covered the full degree-of-certainty
+  ladder (mulig/sannsynlig/lite sannsynlig/kommer til å/kan hende/tror/antar) but had zero
+  trolig/antakelig content, so the new batch targeted that gap directly — transforms in both
+  directions (det er sannsynlig at ↔ trolig/antakelig), a fill and multiple-choice pair testing
+  the right certainty level for the context, a minimal-pair on degree calibration (trolig vs.
+  det er lite sannsynlig at), and a minimal-pair on setningsadverb placement (trolig follows the
+  finite verb in midtfelt). Added 10 new B2 questions (`gq-sannsyn-011`–`020`:
+  transform/fill/minimal-pair/multiple-choice mix, all `plusOnly: true` matching the topic's
+  convention), fresh domains not used in the existing set (fly, styremøte, vær, salgstall, lege,
+  strømpris, idrett, tog, konsert, klimaforskning). Topic now has 20 total questions (10 → 20,
+  all B2). Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2842
+  total questions file-wide, no duplicate IDs. User ran `pnpm grammar:split` (2842/2842
+  reconciled). Validated: `check-b2-grammar-vocab.mjs modale-adverb modalverb-betydning
+  sannsynlighet-uttrykk` → 0 unmatched across 65 B2 questions; `check-grammar-norwegian.mjs
+  modale-adverb modalverb-betydning sannsynlighet-uttrykk` → 0 flagged across 75 questions.
+  This clears the validation debt carried over from last session's `modale-adverb` and
+  `modalverb-betydning` touches as well — all three topics are now fully done and validated.
+
+- ✅ **Done — `hoflig-preteritum`** (Verb §14 — modalverb i formelle situasjoner). Confirmed
+  direct match against the existing rule text (kunne/ville/skulle/burde as pragmatic softeners,
+  «det hadde vært fint/lurt om», «jeg lurte på om», all already covered, no rule-text gap). The
+  existing 10 B2 questions covered kan→kunne, vil→ville, skal→skulle, bør→burde, both
+  «hadde vært» constructions, «lurte på om», and two genuine-past-vs-pragmatic-past minimal/
+  multiple-choice contrasts well, so the new batch reinforced the same pattern set with fresh
+  service-encounter domains not yet used — restaurant, utleier, bank, flyselskap, frisor,
+  forsikringsselskap, bibliotek — plus one more genuine-past-vs-pragmatic-past minimal pair (måtte
+  at a frisor, past event vs. hypothetical). Added 10 new B2 questions
+  (`gq-hoflig-011`–`020`: transform/fill/minimal-pair/multiple-choice mix, all `plusOnly: true`
+  matching the topic's convention). Topic now has 20 total questions (10 → 20, all B2). Applied
+  to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 2852 total questions
+  file-wide, no duplicate IDs. **Validators/`pnpm grammar:split` not yet run this session** —
+  run `pnpm grammar:split`, `check-b2-grammar-vocab.mjs hoflig-preteritum` and
+  `check-grammar-norwegian.mjs hoflig-preteritum` next before starting a new topic.
+
+- ✅ **Done — `man-en-upersonlig-pronomen`** (Pronomen — upersonlige pronomen «man»/«en»/«ens»).
+  Confirmed direct match against the existing rule text (man = subject-only, en = subject or
+  object, en's genitive «ens», colloquial du/folk — all already covered, no rule-text gap).
+  Checked the existing set (8 B2 + 10 B1 = 18 questions) before drafting: B1 already thoroughly
+  tests «ens» (4 questions) and the man/en subject-object contrast, so no need to re-test that
+  nuance at B2 — instead found two genuine gaps untested at *either* level: **«en» as subject**
+  (only tested as object at B2; the rule text's own «en»-as-subject example was never turned into
+  a question) and **«folk»** as a colloquial alternative (only «du» had been tested, never
+  «folk»). Added 10 new B2 questions (`gq-man-019`–`028`: multiple-choice/minimal-pair/order/
+  transform/fill mix, all `plusOnly: true` matching the topic's B2 convention) — 3 targeting
+  «en»-as-subject consistency (en...en, not mixed with man), 2 targeting «folk» vs «de» vs
+  «jeg»/«du», plus 5 fresh-domain reinforcement of the well-covered man/en object contrast and
+  man...man consistency, using domains not yet used anywhere in the topic (rapport/avtale,
+  trening/kosthold, jobbintervju, helsevesen, sosiale medier, bilkø, Danmark, Japan). Topic now
+  has 28 total questions (18 → 28; B2 count 8 → 18, B1 10 unchanged). Applied to the real
+  `grammar.json` via `Filesystem:edit_file`, re-verified: 2862 total questions file-wide, no
+  duplicate IDs. **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs
+  man-en-upersonlig-pronomen`, `check-grammar-norwegian.mjs man-en-upersonlig-pronomen`) not yet
+  run this session** — run these next before starting a new topic.
+
+- ✅ **Done — `mene-synes-tro-tenke`** («mene»/«synes»/«tro»/«tenke» near-synonym «think» verbs).
+  Confirmed direct match against the existing rule text (mene = stated position, synes =
+  impression/reaction, tro = uncertain guess, tenke = ponder/have in mind — all already covered,
+  no rule-text gap). Checked the existing 12 B2 questions before drafting: an even 3/3/3/3 split
+  across the four verbs, well balanced, but the rule text's own second sense of «tenke» — «be
+  about to say/do something», illustrated by its own example «Jeg tenkte å ringe deg i kveld»
+  (preteritum «tenkte å» + infinitiv = a past intention, not yet carried out) — had zero
+  questions; all three existing «tenke» items tested only the other sense, «tenke på» (ongoing
+  pondering/considering). Added 10 new B2 questions (`gq-menesynes-013`–`022`: fill/transform/
+  minimal-pair/order/multiple-choice mix, all `plusOnly: true` matching the topic's convention)
+  — 4 targeting the «tenkte å» gap directly, including a minimal-pair isolating it against the
+  already-tested «tenker på å», plus 6 fresh-domain reinforcement of the well-covered
+  mene/synes/tro three-way contrast, using domains not yet used in the topic (fagforening/lønn,
+  film, vær, fotballkamp, politikk/skatt, bok, ferie/Spania). Topic now has 22 total questions
+  (12 → 22, all B2). Applied to the real `grammar.json` via `Filesystem:edit_file`,
+  re-verified: 2872 total questions file-wide, no duplicate IDs. **`pnpm grammar:split` and
+  validators (`check-b2-grammar-vocab.mjs mene-synes-tro-tenke`, `check-grammar-norwegian.mjs
+  mene-synes-tro-tenke`) not yet run this session** — run these next before starting a new topic.
+
+- ✅ **Done — `preteritum-perfektum-og-futurum`** (Sequencing before/after a past reference point:
+  preteritum perfektum / preteritum futurum / preteritum futurum perfektum). Confirmed direct
+  match against the existing rule text — all three constructs already covered, no rule-text gap.
+  Checked the existing 12 B2 questions before drafting: thorough coverage of all three
+  constructs, but every plain preteritum-futurum item (`skulle` + infinitiv, testing what still
+  lay ahead from a past vantage point) used **only «skulle»** — never «ville», even though the
+  rule text's own model sentence ("Da de hadde funnet olje, ville politikerne beholde
+  kontrollen") uses «ville». Added 10 new B2 questions (`gq-pretfutur-023`–`032`: fill/transform/
+  multiple-choice/order/minimal-pair mix, all `plusOnly: true` matching the topic's B2
+  convention) — 4 targeting plain preteritum futurum with «ville» specifically (including a
+  transform that mirrors the rule's own hadde+ville compound-sentence pattern), plus 6
+  fresh-domain reinforcement of preteritum perfektum and preteritum futurum perfektum, using
+  domains not yet used in the topic (politikk/Storting, bedrift/marked, klima/havnivå,
+  rettssak, førerprøve, fly/reise, legetime, konsert, byggeprosjekt). Topic now has 32 total
+  questions (22 → 32; B2 count 12 → 22, B1 10 unchanged). Applied to the real `grammar.json`
+  via `Filesystem:edit_file`, re-verified: 2882 total questions file-wide, no duplicate IDs.
+  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs
+  preteritum-perfektum-og-futurum`, `check-grammar-norwegian.mjs
+  preteritum-perfektum-og-futurum`) not yet run this session** — run these next before starting
+  a new topic.
+
+- ✅ **Done — `partikkelverb-los-fast`** (Particle verbs — loose vs. fixed compound, e.g. «sette
+over» vs «oversette»). Confirmed direct match against the existing rule text — loose=literal,
+fixed=idiomatic, plus the adjectival fixed-compound perfektum partisipp pattern (påkjørt,
+nedsatt, utgått) — all already covered, no rule-text gap. Checked the existing 22 B2 questions
+(all B2, no B1) before drafting: unusually thorough already, with 13 distinct verb pairs each
+tested from 1–2 fresh angles (sette over/oversette, se over/overse, ta over/overta, kjøre
+over/overkjøre, gå over/overgå, kjøre på/påkjørt, sette ned/nedsatt, sette ut/utsette, rette
+opp/opprette, dra opp/oppdra, stå opp/oppstå, gi ut/utgi). The rule text's mention of a spoken
+stress-pattern difference (emphasis on the particle in the loose form) isn't testable in this
+text-only quiz format — checked the app's question corpus for any established convention for
+testing spoken stress and found none, so this isn't a viable gap to fill. Instead targeted the
+genuinely open space: fresh, common verb pairs not yet covered at all. Added 10 new B2 questions
+(`gq-partikkel-023`–`032`: minimal-pair/fill/order/transform mix, all `plusOnly: true` matching
+the topic's convention) covering 3 new pairs — **slå av/avslå** (turn off, literal, vs decline/
+refuse, idiomatic), **komme over/overkomme** (come across by chance, literal, vs overcome a
+difficulty, idiomatic), and **sette inn/innsette** (insert something physical, literal, vs
+formally instate someone in a position, idiomatic) — with fresh domains (lys/radio, søknad,
+jobbtilbud, bok/loppemarked, utfordring/lag, konto, ambassadør, batteri). Topic now has 32
+total questions (22 → 32, all B2). Applied to the real `grammar.json` via `Filesystem:edit_file`,
+re-verified: 2892 total questions file-wide, no duplicate IDs. **`pnpm grammar:split` and
+validators (`check-b2-grammar-vocab.mjs partikkelverb-los-fast`, `check-grammar-norwegian.mjs
+partikkelverb-los-fast`) not yet run this session** — run these next before starting a new topic.
 
 ## Next session starting point (session ending — read this first)
 
-Session budget is nearly exhausted. Everything above is confirmed applied and validated up to
-and including `kvantorer`. No in-progress/uncommitted work remains — every topic in the Phase 2
-progress log ends in a ✅ **Done** with both validators run clean, so the next session can start
-a fresh topic-touch with no cleanup needed first.
-
-**Process note learned this session, apply going forward:** this session's toolset has no
-content-search (grep) tool for the user's filesystem — only whole-file reads (too large for
-`grammar.json`'s 1.2MB+) and head/tail reads. For any topic that already has existing content
-(i.e. everything except brand-new topics), before writing new questions:
-1. Ask the user to run a quick `grep`/Python snippet to get (a) the current question count for
-   the topic and (b) the highest existing ID number, so new IDs don't collide.
-2. Also confirm whether existing questions for that topic use a `plusOnly` field at all (varies by
-   topic — `kvantorer`'s B2 questions have none; some other topics do use `plusOnly: true` on
-   `fill`/`order`/`transform` types). Match whatever the topic already does; don't assume.
-3. Read the relevant `rules.ts` entry in full (the whole file can be read at once — it's ~190KB,
-   manageable in one call) to confirm no rule-text gap before drafting questions.
+Everything above is applied to the real `grammar.json`/`rules.ts` up to and including
+`partikkelverb-los-fast`. **`pnpm grammar:split` has not been re-run since the
+`partikkelverb-los-fast` touch, and its validators were not confirmed run this session** —
+run `pnpm grammar:split`, `check-b2-grammar-vocab.mjs partikkelverb-los-fast`, and
+`check-grammar-norwegian.mjs partikkelverb-los-fast` first thing next session before starting
+new content.
 
 **Remaining candidates** (direct-match/fold-in touches to existing topics, per the "Next session
-starting point" list earlier in this doc, minus `kvantorer` and `spesial-kvantorer`, both now
-done): `subjunksjon-oversikt`, `modale-adverb`, `modalverb-betydning`,
-`sannsynlighet-uttrykk`, `hoflig-preteritum`, `man-en-upersonlig-pronomen`,
-`mene-synes-tro-tenke`, `preteritum-perfektum-og-futurum`, `partikkelverb-los-fast`,
+starting point" list earlier in this doc, minus `kvantorer`, `spesial-kvantorer`,
+`subjunksjon-oversikt`, `modale-adverb`, `modalverb-betydning`, `sannsynlighet-uttrykk`,
+`hoflig-preteritum`, `man-en-upersonlig-pronomen`, `mene-synes-tro-tenke`,
+`preteritum-perfektum-og-futurum`, and `partikkelverb-los-fast`, all now done):
 `adj-agreement`, `adj-comparison` (B2 extension), `noun-possessives` (B2 extension),
 `v2-word-order` (B2 extension), `subordinate-order` (B2 extension),
 `koordinerende-konjunksjoner` (B2 extension), `bade-og-verken-eller` (B2 extension),
@@ -1065,15 +1251,10 @@ the `ikke-placement`/`imperativ` B2 extensions (Helsetninger §14–17) — plus
 rule-text folds noted inline in the Kapittel summaries («som/enn» into `adj-comparison`;
 «for/fordi» into `koordinerende-konjunksjoner`).
 
-**Recommended starting point next session:** `subjunksjon-oversikt` — direct-match content per
-the Pre-Phase-2 checklist, no groundwork needed beyond the user-run existing-count/ID check
-described above.
+**Recommended starting point next session:** `man-en-upersonlig-pronomen` or
+`mene-synes-tro-tenke` — both direct-match content per the Pre-Phase-2 checklist, no groundwork
+needed beyond reading the topic's current `grammar-b2.json` slice and its `rules.ts` entry.
 
-**Unrelated infra note for future sessions:** a separate task (not part of this content plan) is
-now scoped in `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` — splitting
-`grammar.json` into per-CEFR-level files for lazy-loading, triggered by this session's file-size
-pain. Plan-only so far, not implemented. Two things matter for *this* doc's workflow if/when it
-lands: (1) `grammar.json` stays the single file this plan edits — no change to the process above;
-(2) the split files become generated artifacts, so after a content session someone will need to
-run the (not-yet-written) regeneration script before `/grammar`, `/learn/[level]`, or `/stats`
-reflect the new content in dev/prod. Check that doc's status before assuming this applies yet.
+**Infra note:** `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` is now done and
+landed (see the "Process note: workflow now uses grammar-b2.json + grammar:split" section above
+for what changed in this plan's workflow as a result).

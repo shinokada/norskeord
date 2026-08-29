@@ -876,18 +876,18 @@
       "B2"
     ],
     "countsByLevel": {
-      "B2": 10
+      "B2": 20
     },
-    "total": 10
+    "total": 20
   },
   "subjunksjon-oversikt": {
     "levels": [
       "B2"
     ],
     "countsByLevel": {
-      "B2": 11
+      "B2": 21
     },
-    "total": 11
+    "total": 21
   },
   "partisipp-former": {
     "levels": [
@@ -905,27 +905,27 @@
       "B2"
     ],
     "countsByLevel": {
-      "B2": 22
+      "B2": 32
     },
-    "total": 22
+    "total": 32
   },
   "modalverb-betydning": {
     "levels": [
       "B2"
     ],
     "countsByLevel": {
-      "B2": 12
+      "B2": 22
     },
-    "total": 12
+    "total": 22
   },
   "sannsynlighet-uttrykk": {
     "levels": [
       "B2"
     ],
     "countsByLevel": {
-      "B2": 10
+      "B2": 20
     },
-    "total": 10
+    "total": 20
   },
   "bli-presens-partisipp": {
     "levels": [
@@ -950,9 +950,9 @@
       "B2"
     ],
     "countsByLevel": {
-      "B2": 12
+      "B2": 22
     },
-    "total": 12
+    "total": 22
   },
   "modale-adverb": {
     "levels": [
@@ -960,10 +960,10 @@
       "B2"
     ],
     "countsByLevel": {
-      "B2": 13,
+      "B2": 23,
       "B1": 10
     },
-    "total": 23
+    "total": 33
   },
   "sammensatte-substantiv-b2": {
     "levels": [
@@ -980,10 +980,10 @@
       "B2"
     ],
     "countsByLevel": {
-      "B2": 12,
+      "B2": 22,
       "B1": 10
     },
-    "total": 22
+    "total": 32
   },
   "det-formelt-subjekt": {
     "levels": [
@@ -1062,10 +1062,10 @@
       "B2"
     ],
     "countsByLevel": {
-      "B2": 8,
+      "B2": 18,
       "B1": 10
     },
-    "total": 18
+    "total": 28
   },
   "kommaregler": {
     "levels": [
